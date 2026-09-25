@@ -1050,7 +1050,7 @@ class Settings(
     }
 
     private val openingScreenDefault: OpeningScreenOption
-        get() = FxNimbus.features.homepageOpeningScreenDefault.value().defaultOption
+        get() = OpeningScreenOption.HOMEPAGE
 
     /** Indicates if the user has selected the option to start on the home screen after four hours of inactivity. */
     var openHomepageAfterFourHoursOfInactivity by

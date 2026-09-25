@@ -160,6 +160,8 @@ import org.mozilla.fenix.home.ui.Homepage
 import org.mozilla.fenix.home.ui.WallpaperBackground
 import org.mozilla.fenix.ipprotection.store.Surface as IPProtectionSurface
 import org.mozilla.fenix.ipprotection.ui.IPProtectionBottomSheetFragment
+import org.mozilla.fenix.kaizen.home.isKaizenHomeEnabled
+import org.mozilla.fenix.kaizen.home.setKaizenHomeContent
 import org.mozilla.fenix.messaging.DefaultMessageController
 import org.mozilla.fenix.messaging.FenixMessageSurfaceId
 import org.mozilla.fenix.messaging.MessagingFeature
@@ -652,6 +654,19 @@ class HomeFragment : Fragment(), UserInteractionHandler, OnLongPressedListener {
 
     @Suppress("LongMethod", "CognitiveComplexMethod")
     private fun initComposeHomepage(view: ComposeView) {
+        if (isKaizenHomeEnabled(browsingModeManager.mode.isPrivate)) {
+            view.setKaizenHomeContent(
+                searchToolbar = { toolbarView.Content() },
+                onOpenTab = { tabId ->
+                    requireComponents.useCases.tabsUseCases.selectTab(tabId)
+                    (requireActivity() as HomeActivity).openToBrowser(BrowserDirection.FromHome)
+                },
+                onDownloadsClick = { findNavController().navigate(NavGraphDirections.actionGlobalDownloadsFragment()) },
+                onFirstFrameDrawn = ::onFirstHomepageFrameDrawn,
+            )
+            return
+        }
+
         view.setContent {
             FirefoxTheme {
                 val settings = components.settings
