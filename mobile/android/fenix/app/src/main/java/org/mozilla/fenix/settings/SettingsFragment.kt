@@ -400,8 +400,12 @@ class SettingsFragment : PreferenceFragmentCompat(), SystemInsetsPaddedFragment 
                     SettingsFragmentDirections.actionSettingsFragmentToHomeSettingsFragment()
                 }
 
-                resources.getString(R.string.pref_key_kaizen) -> {
-                    ActionOnlyNavDirections(R.id.kaizen_settings_graph)
+                resources.getString(R.string.pref_key_kaizen_tab_actions) -> {
+                    ActionOnlyNavDirections(R.id.kaizen_tab_actions_graph)
+                }
+
+                resources.getString(R.string.pref_key_kaizen_containers) -> {
+                    ActionOnlyNavDirections(R.id.kaizen_containers_graph)
                 }
 
                 resources.getString(R.string.pref_key_customize) -> {

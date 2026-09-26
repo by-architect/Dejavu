@@ -24,6 +24,18 @@ data class PinSource(
     val containerId: String?,
 )
 
+/** Where dropped items go in a workspace's pinned section. */
+sealed interface PinPlacement {
+    /** At the end of [folderId]. */
+    data class Into(val folderId: String) : PinPlacement
+
+    /** Next to [itemId], as its sibling. */
+    data class Next(val itemId: String, val after: Boolean) : PinPlacement
+
+    /** At the start or the end of the top level. */
+    data class Edge(val atEnd: Boolean) : PinPlacement
+}
+
 /**
  * Keeps workspaces, pinned tabs, folders and tab assignments, and persists them in [SharedPreferences].
  */
@@ -74,11 +86,96 @@ class WorkspaceRepository private constructor(context: Context) {
         )
     }
 
-    /** Drops every reference to a deleted container. */
-    fun forgetContainer(containerId: String) = mutate { state ->
+    /** Points every workspace and pinned tab using container [oldId] to [newId], or to no container. */
+    fun replaceContainer(oldId: String, newId: String?) = mutate { state ->
+        val now = now()
         state.copy(
-            workspaces = state.workspaces.map { if (it.containerId == containerId) it.copy(containerId = null) else it },
-            pins = state.pins.map { if (it.containerId == containerId) it.copy(containerId = null) else it },
+            workspaces = state.workspaces.map {
+                if (it.containerId == oldId) it.copy(containerId = newId, updatedAt = now) else it
+            },
+            pins = state.pins.map { if (it.containerId == oldId) it.copy(containerId = newId, updatedAt = now) else it },
+        )
+    }
+
+    /** Removes the pinned tabs of container [containerId] or backed by one of [tabIds]. */
+    fun removePinsOf(containerId: String, tabIds: Set<String>) = mutate { state ->
+        state.copy(
+            pins = state.pins.filterNot { !it.isFolder && (it.containerId == containerId || it.tabId in tabIds) },
+        )
+    }
+
+    /** Hands the workspace and pin of tab [oldTabId] over to [newTabId], which replaces it. */
+    fun replaceTab(oldTabId: String, newTabId: String) = mutate { state ->
+        val workspaceId = state.assignments[oldTabId] ?: state.pinOf(oldTabId)?.workspaceId
+        state.copy(
+            pins = state.pins.map { if (it.tabId == oldTabId) it.copy(tabId = newTabId) else it },
+            assignments = (state.assignments - oldTabId).let { if (workspaceId != null) it + (newTabId to workspaceId) else it },
+        )
+    }
+
+    /**
+     * Moves pinned items [itemIds] of [workspaceId] and pins the open tabs [newPins] at [placement]. Folders that would
+     * end up inside themselves or deeper than [MAX_FOLDER_DEPTH] stay where they are.
+     */
+    fun placePins(
+        workspaceId: String,
+        itemIds: Set<String>,
+        newPins: List<PinSource>,
+        placement: PinPlacement,
+    ) = mutate { state ->
+        val parentId = when (placement) {
+            is PinPlacement.Into -> placement.folderId
+            is PinPlacement.Next -> state.pins.firstOrNull { it.id == placement.itemId }?.parentId
+            is PinPlacement.Edge -> null
+        }
+        if (parentId != null && state.pins.none { it.id == parentId && it.isFolder && it.workspaceId == workspaceId }) {
+            return@mutate state
+        }
+        val moving = state.pins.filter { item ->
+            item.id in itemIds &&
+                item.workspaceId == workspaceId &&
+                !(
+                    item.isFolder && parentId != null && (
+                        parentId == item.id ||
+                            parentId in state.descendantIds(item.id) ||
+                            state.folderDepth(parentId) + state.folderHeight(item.id) > MAX_FOLDER_DEPTH
+                        )
+                    )
+        }
+        val now = now()
+        val alreadyPinned = state.pins.mapNotNull { it.tabId }.toSet()
+        val created = newPins.filter { it.tabId !in alreadyPinned }.distinctBy { it.tabId }.map { source ->
+            PinnedItem(
+                id = newId(),
+                workspaceId = workspaceId,
+                parentId = parentId,
+                kind = PinKind.TAB,
+                title = source.title.ifBlank { source.url },
+                url = source.url,
+                containerId = source.containerId,
+                tabId = source.tabId,
+                createdAt = now,
+                updatedAt = now,
+            )
+        }
+        val placed = moving.map { it.copy(parentId = parentId, updatedAt = now) } + created
+        if (placed.isEmpty()) return@mutate state
+
+        val movingIds = moving.map { it.id }.toSet()
+        val rest = state.pins.filterNot { it.id in movingIds }
+        val index = when (placement) {
+            is PinPlacement.Next -> rest.indexOfFirst { it.id == placement.itemId }
+                .let { if (it < 0) rest.size else if (placement.after) it + 1 else it }
+            is PinPlacement.Edge -> if (placement.atEnd) {
+                rest.size
+            } else {
+                rest.indexOfFirst { it.workspaceId == workspaceId && it.parentId == null }.let { if (it < 0) rest.size else it }
+            }
+            is PinPlacement.Into -> rest.size
+        }
+        state.copy(
+            pins = rest.toMutableList().apply { addAll(index, placed) },
+            assignments = state.assignments + created.associate { it.tabId!! to workspaceId },
         )
     }
 

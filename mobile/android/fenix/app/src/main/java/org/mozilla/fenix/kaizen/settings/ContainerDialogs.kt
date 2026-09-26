@@ -5,6 +5,9 @@
 package org.mozilla.fenix.kaizen.settings
 
 import androidx.compose.foundation.background
+import androidx.compose.foundation.verticalScroll
+import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
@@ -19,6 +22,8 @@ import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.AlertDialog
+import androidx.compose.material3.RadioButton
+import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.OutlinedTextField
@@ -38,6 +43,9 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import mozilla.components.browser.state.state.ContainerState
 import org.mozilla.fenix.R
+import org.mozilla.fenix.kaizen.containers.NoContainerIcon
+import org.mozilla.fenix.kaizen.containers.ContainerRemoval
+import org.mozilla.fenix.kaizen.containers.ContainerIcon
 import org.mozilla.fenix.kaizen.containers.ContainerColor
 import org.mozilla.fenix.kaizen.containers.ContainerRecord
 import org.mozilla.fenix.kaizen.containers.color
@@ -121,19 +129,56 @@ fun ContainerEditorDialog(
     )
 }
 
-/** Asks before a container is deleted together with its tabs and site data. */
+/**
+ * Asks what happens to the tabs of a container before deleting it: close them, pinned tabs included, or reopen them
+ * in another container or without one. Its cookies and site data are always deleted.
+ */
+@Suppress("LongMethod")
 @Composable
 fun DeleteContainerDialog(
-    name: String,
-    onConfirm: () -> Unit,
+    record: ContainerRecord,
+    otherContainers: List<ContainerRecord>,
+    onConfirm: (ContainerRemoval) -> Unit,
     onDismiss: () -> Unit,
 ) {
+    var removal by remember { mutableStateOf<ContainerRemoval>(ContainerRemoval.CloseTabs) }
+
     AlertDialog(
         onDismissRequest = onDismiss,
-        title = { Text(stringResource(R.string.kaizen_container_delete_title, name)) },
-        text = { Text(stringResource(R.string.kaizen_container_delete_message)) },
+        title = { Text(stringResource(R.string.kaizen_container_delete_title, record.name)) },
+        text = {
+            Column(modifier = Modifier.verticalScroll(rememberScrollState())) {
+                Text(stringResource(R.string.kaizen_container_delete_message))
+                Spacer(Modifier.height(12.dp))
+                RemovalOption(
+                    label = stringResource(R.string.kaizen_container_delete_close_tabs),
+                    selected = removal == ContainerRemoval.CloseTabs,
+                    onClick = { removal = ContainerRemoval.CloseTabs },
+                )
+                Text(
+                    text = stringResource(R.string.kaizen_container_delete_move_tabs),
+                    style = MaterialTheme.typography.labelLarge,
+                    modifier = Modifier.padding(top = 12.dp, bottom = 4.dp),
+                )
+                RemovalOption(
+                    label = stringResource(R.string.kaizen_workspace_no_container),
+                    selected = removal == ContainerRemoval.MoveTabs(null),
+                    onClick = { removal = ContainerRemoval.MoveTabs(null) },
+                    icon = { NoContainerIcon() },
+                )
+                if (otherContainers.isNotEmpty()) HorizontalDivider(modifier = Modifier.padding(vertical = 4.dp))
+                otherContainers.forEach { container ->
+                    RemovalOption(
+                        label = container.name,
+                        selected = removal == ContainerRemoval.MoveTabs(container.contextId),
+                        onClick = { removal = ContainerRemoval.MoveTabs(container.contextId) },
+                        icon = { ContainerIcon(container) },
+                    )
+                }
+            }
+        },
         confirmButton = {
-            TextButton(onClick = onConfirm) {
+            TextButton(onClick = { onConfirm(removal) }) {
                 Text(stringResource(R.string.kaizen_delete), color = MaterialTheme.colorScheme.error)
             }
         },
@@ -141,6 +186,26 @@ fun DeleteContainerDialog(
             TextButton(onClick = onDismiss) { Text(stringResource(R.string.kaizen_cancel)) }
         },
     )
+}
+
+@Composable
+private fun RemovalOption(
+    label: String,
+    selected: Boolean,
+    onClick: () -> Unit,
+    icon: (@Composable () -> Unit)? = null,
+) {
+    Row(
+        verticalAlignment = Alignment.CenterVertically,
+        modifier = Modifier.fillMaxWidth().clip(RoundedCornerShape(12.dp)).clickable(onClick = onClick),
+    ) {
+        RadioButton(selected = selected, onClick = onClick)
+        if (icon != null) {
+            icon()
+            Spacer(Modifier.width(10.dp))
+        }
+        Text(text = label, style = MaterialTheme.typography.bodyLarge)
+    }
 }
 
 @Composable

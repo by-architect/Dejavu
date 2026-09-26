@@ -3,12 +3,16 @@
    - License, v. 2.0. If a copy of the MPL was not distributed with this
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
-    <string name="pref_key_kaizen" translatable="false">pref_key_kaizen</string>
+    <string name="pref_key_kaizen_tab_actions" translatable="false">pref_key_kaizen_tab_actions</string>
+    <string name="pref_key_kaizen_containers" translatable="false">pref_key_kaizen_containers</string>
 
     <!-- Home screen -->
     <string name="kaizen_workspace_default_name">Home</string>
     <string name="kaizen_new_tab">New Tab</string>
     <string name="kaizen_downloads">Downloads</string>
+    <string name="kaizen_history">History</string>
+    <string name="kaizen_new_tab_in_container">New tab in a container</string>
+    <string name="kaizen_new_tab_no_container">New tab without container</string>
     <string name="kaizen_add_workspace">New workspace</string>
     <string name="kaizen_workspace_name">Name</string>
     <string name="kaizen_create">Create</string>
@@ -39,7 +43,7 @@
     <string name="kaizen_workspace_delete">Delete workspace</string>
     <string name="kaizen_workspace_delete_title">Delete “%1$s”?</string>
     <string name="kaizen_workspace_delete_message">Its tabs, pinned tabs and folders move to the neighbouring workspace.</string>
-    <string name="kaizen_workspace_container">Container</string>
+    <string name="kaizen_workspace_container">Default container</string>
     <string name="kaizen_workspace_container_hint">New tabs of this workspace open in this container.</string>
     <string name="kaizen_workspace_no_container">No container</string>
 
@@ -69,27 +73,53 @@
 
     <!-- Settings -->
     <string name="kaizen_settings_title">Kaizen</string>
-    <string name="kaizen_settings_entry">Kaizen settings</string>
-    <string name="kaizen_settings_entry_summary">Home page, tab actions and containers</string>
-    <string name="kaizen_settings_home_page">Home page</string>
     <string name="kaizen_settings_tab_actions">Tab actions</string>
-    <string name="kaizen_settings_tab_actions_summary">Pinned: %1$s · Unpinned: %2$s</string>
-    <string name="kaizen_settings_no_actions">none</string>
+    <string name="kaizen_settings_tab_actions_entry_summary">Buttons on the tabs of the home page</string>
     <string name="kaizen_settings_tab_actions_hint">Choose up to %1$d buttons for each kind of tab row. Long-press a tab on the home page to select several tabs and use every action.</string>
     <string name="kaizen_settings_pinned_tabs">Pinned tabs</string>
     <string name="kaizen_settings_unpinned_tabs">Unpinned tabs</string>
     <string name="kaizen_settings_containers">Containers</string>
-    <string name="kaizen_settings_manage_containers">Manage containers</string>
-    <plurals name="kaizen_settings_containers_count">
-        <item quantity="one">%1$d container</item>
-        <item quantity="other">%1$d containers</item>
-    </plurals>
-    <string name="kaizen_settings_containers_hint">Tabs in a container keep their own cookies and site data. To open a workspace’s new tabs in a container, pick it in the workspace menu on the home page.</string>
+    <string name="kaizen_settings_containers_entry_summary">Add, edit and delete containers</string>
+    <string name="kaizen_settings_containers_hint">Tabs in a container keep their own cookies and site data. Long-press New Tab on the home page to open a tab in a container, or give a whole workspace a container from its menu.</string>
     <string name="kaizen_container_add">Add container</string>
     <string name="kaizen_container_edit">Edit container</string>
     <string name="kaizen_container_name">Name</string>
     <string name="kaizen_container_color">Color</string>
     <string name="kaizen_container_icon">Icon</string>
     <string name="kaizen_container_delete_title">Delete “%1$s”?</string>
-    <string name="kaizen_container_delete_message">Its open tabs are closed and its cookies and site data are deleted.</string>
+    <string name="kaizen_container_delete_message">Its cookies and site data are deleted. Choose what happens to its tabs.</string>
+
+    <!-- Home: sections and undo -->
+    <string name="kaizen_clear_unpinned">Clear</string>
+    <string name="kaizen_undo">Undo</string>
+    <plurals name="kaizen_tabs_closed">
+        <item quantity="one">Tab closed</item>
+        <item quantity="other">%1$d tabs closed</item>
+    </plurals>
+
+    <!-- Containers: delete options -->
+    <string name="kaizen_container_delete_close_tabs">Close its tabs, pinned tabs included</string>
+    <string name="kaizen_container_delete_move_tabs">Or move its tabs to</string>
+
+    <!-- Custom actions -->
+    <string name="kaizen_custom_action">Custom action</string>
+    <string name="kaizen_custom_actions">Custom actions</string>
+    <string name="kaizen_custom_action_add">Add action</string>
+    <string name="kaizen_custom_action_name">Name</string>
+    <string name="kaizen_custom_action_method">Method</string>
+    <string name="kaizen_custom_action_url">URL</string>
+    <string name="kaizen_custom_action_headers">Headers</string>
+    <string name="kaizen_custom_action_header_name">Header</string>
+    <string name="kaizen_custom_action_header_value">Value</string>
+    <string name="kaizen_custom_action_add_header">Add header</string>
+    <string name="kaizen_custom_action_remove_header">Remove header</string>
+    <string name="kaizen_custom_action_body">Body</string>
+    <string name="kaizen_custom_action_variables">Variables</string>
+    <string name="kaizen_custom_action_variables_hint">Tap a variable to insert it into the field you are editing.</string>
+    <string name="kaizen_custom_action_hint">The request is sent once for every tab the action runs on. Cookies are not sent and the answer is not shown. Values are URL encoded in the URL and JSON escaped in a JSON body.</string>
+    <string name="kaizen_custom_action_sent">Sent: %1$s</string>
+    <plurals name="kaizen_custom_action_failed">
+        <item quantity="one">%2$s failed (status %3$s)</item>
+        <item quantity="other">%2$s failed for %1$d tabs (last status %3$s)</item>
+    </plurals>
 </resources>

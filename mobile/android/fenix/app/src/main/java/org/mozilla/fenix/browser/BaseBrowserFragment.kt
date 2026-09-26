@@ -228,6 +228,7 @@ import org.mozilla.fenix.ext.runIfFragmentIsAttached
 import org.mozilla.fenix.ext.secure
 import org.mozilla.fenix.ext.tabClosedUndoMessage
 import org.mozilla.fenix.ext.updateMicrosurveyPromptForConfigurationChange
+import org.mozilla.fenix.kaizen.browser.handleKaizenBackPressed
 import org.mozilla.fenix.messaging.FenixMessageSurfaceId
 import org.mozilla.fenix.messaging.MessagingFeature
 import org.mozilla.fenix.microsurvey.ui.MicrosurveyRequestPrompt
@@ -2110,6 +2111,7 @@ abstract class BaseBrowserFragment :
             fullScreenFeature.onBackPressed() ||
             promptsFeature.onBackPressed() ||
             sessionFeature.onBackPressed() ||
+            handleKaizenBackPressed(customTabSessionId) ||
             lastTabFeature.onBackPressed()
     }
 

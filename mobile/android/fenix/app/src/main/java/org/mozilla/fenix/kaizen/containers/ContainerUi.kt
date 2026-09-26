@@ -7,10 +7,12 @@ package org.mozilla.fenix.kaizen.containers
 import androidx.annotation.DrawableRes
 import androidx.compose.foundation.layout.size
 import androidx.compose.material3.Icon
+import androidx.compose.material3.MaterialTheme
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 import mozilla.components.browser.state.state.ContainerState
@@ -49,6 +51,20 @@ fun ContainerIcon(
         painter = painterResource(record.icon.drawable),
         contentDescription = record.name,
         tint = record.color.color,
+        modifier = modifier.size(size),
+    )
+}
+
+/** Stands for "no container" wherever containers can be picked, so it never looks like one of them. */
+@Composable
+fun NoContainerIcon(
+    modifier: Modifier = Modifier,
+    size: Dp = 20.dp,
+) {
+    Icon(
+        painter = painterResource(R.drawable.kaizen_ic_no_container_24),
+        contentDescription = stringResource(R.string.kaizen_workspace_no_container),
+        tint = MaterialTheme.colorScheme.onSurfaceVariant,
         modifier = modifier.size(size),
     )
 }

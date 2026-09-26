@@ -18,6 +18,7 @@ import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.AlertDialog
+import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.OutlinedTextField
@@ -39,6 +40,7 @@ import androidx.compose.ui.unit.dp
 import org.mozilla.fenix.R
 import org.mozilla.fenix.kaizen.containers.ContainerIcon
 import org.mozilla.fenix.kaizen.containers.ContainerRecord
+import org.mozilla.fenix.kaizen.containers.NoContainerIcon
 import org.mozilla.fenix.kaizen.workspaces.MAX_FOLDER_DEPTH
 import org.mozilla.fenix.kaizen.workspaces.WorkspaceState
 import mozilla.components.ui.icons.R as iconsR
@@ -151,7 +153,7 @@ internal fun HomeDialogs(
                     label = workspace.name,
                     leading = {
                         val container = workspace.containerId?.let { containers[it] }
-                        if (container != null) ContainerIcon(container) else Spacer(Modifier.size(20.dp))
+                        if (container != null) ContainerIcon(container) else NoContainerIcon()
                     },
                     onClick = {
                         interactor.onMoveToWorkspace(dialog.targets, dialog.folderIds, workspace.id)
@@ -199,13 +201,15 @@ private fun WorkspaceDialog(
                     label = stringResource(R.string.kaizen_workspace_no_container),
                     selected = containerId == null,
                     onClick = { containerId = null },
+                    leading = { NoContainerIcon() },
                 )
+                if (containers.isNotEmpty()) HorizontalDivider(modifier = Modifier.padding(vertical = 4.dp))
                 containers.forEach { container ->
                     RadioRow(
                         label = container.name,
                         selected = containerId == container.contextId,
                         onClick = { containerId = container.contextId },
-                        trailing = { ContainerIcon(container) },
+                        leading = { ContainerIcon(container) },
                     )
                 }
             }
@@ -375,13 +379,15 @@ private fun RadioRow(
     label: String,
     selected: Boolean,
     onClick: () -> Unit,
-    trailing: @Composable () -> Unit = {},
+    leading: @Composable () -> Unit,
 ) {
     Row(
         verticalAlignment = Alignment.CenterVertically,
         modifier = Modifier.fillMaxWidth().clip(RoundedCornerShape(12.dp)).clickable(onClick = onClick),
     ) {
         RadioButton(selected = selected, onClick = onClick)
+        leading()
+        Spacer(Modifier.width(10.dp))
         Text(
             text = label,
             style = MaterialTheme.typography.bodyLarge,
@@ -389,7 +395,5 @@ private fun RadioRow(
             overflow = TextOverflow.Ellipsis,
             modifier = Modifier.weight(1f),
         )
-        trailing()
-        Spacer(Modifier.width(8.dp))
     }
 }

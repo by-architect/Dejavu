@@ -5,6 +5,8 @@
 package org.mozilla.fenix.kaizen.home
 
 import mozilla.components.browser.state.state.TabSessionState
+import org.mozilla.fenix.kaizen.actions.CustomAction
+import org.mozilla.fenix.kaizen.actions.RowAction
 import org.mozilla.fenix.kaizen.actions.TabAction
 import org.mozilla.fenix.kaizen.workspaces.PinnedItem
 import org.mozilla.fenix.kaizen.workspaces.WorkspaceState
@@ -83,15 +85,51 @@ fun TabAction.appliesTo(targets: ActionTargets): Boolean = when (this) {
     else -> !targets.isEmpty()
 }
 
+/** Whether [this] action can do anything for [targets]. */
+fun RowAction.appliesTo(targets: ActionTargets): Boolean = when (this) {
+    is RowAction.BuiltIn -> action.appliesTo(targets)
+    is RowAction.Custom -> !targets.isEmpty()
+}
+
 /**
  * The buttons of one tab row: the user's choice, where Close becomes Unpin on a pinned tab that is closed, without
  * the actions that do nothing for this tab.
  */
-fun rowActions(configured: List<TabAction>, targets: ActionTargets, isPinned: Boolean): List<TabAction> =
+fun rowActions(configured: List<RowAction>, targets: ActionTargets, isPinned: Boolean): List<RowAction> =
     configured
-        .map { if (it == TabAction.CLOSE && isPinned && targets.openTabs.isEmpty()) TabAction.UNPIN else it }
-        .distinct()
+        .map {
+            val closesClosedPin = it is RowAction.BuiltIn && it.action == TabAction.CLOSE && isPinned &&
+                targets.openTabs.isEmpty()
+            if (closesClosedPin) RowAction.BuiltIn(TabAction.UNPIN) else it
+        }
+        .distinctBy { it.key }
         .filter { it.appliesTo(targets) }
+
+/** Every action of the selection bar that applies to [targets]: Kaizen's, the custom ones, then Close. */
+fun selectionActions(customActions: List<CustomAction>, targets: ActionTargets): List<RowAction> =
+    (
+        TabAction.forSelection.filter { it != TabAction.CLOSE }.map { RowAction.BuiltIn(it) } +
+            customActions.map { RowAction.Custom(it) } +
+            RowAction.BuiltIn(TabAction.CLOSE)
+        ).filter { it.appliesTo(targets) }
+
+/** Where dragged tabs and pinned items are dropped. */
+sealed interface DropTarget {
+    /** Into a folder of the pinned section. */
+    data class IntoFolder(val folderId: String) : DropTarget
+
+    /** Next to a pinned tab or folder, as its sibling. */
+    data class NextToPin(val pinId: String, val after: Boolean) : DropTarget
+
+    /** At the start or the end of the pinned section's top level. */
+    data class PinnedEdge(val atEnd: Boolean) : DropTarget
+
+    /** Next to an unpinned tab. */
+    data class NextToTab(val tabId: String, val after: Boolean) : DropTarget
+
+    /** At the start or the end of the unpinned tabs. */
+    data class UnpinnedEdge(val atEnd: Boolean) : DropTarget
+}
 
 /** A pinned item and how deep it is nested in folders. */
 data class PinnedEntry(val item: PinnedItem, val depth: Int)

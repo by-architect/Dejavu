@@ -148,6 +148,7 @@ import org.mozilla.fenix.components.usecases.ShareUseCases
 import org.mozilla.fenix.ext.canGoBackInHistoryOrToStories
 import org.mozilla.fenix.ext.nav
 import org.mozilla.fenix.ext.navigateSafe
+import org.mozilla.fenix.kaizen.browser.KaizenToolbar
 import org.mozilla.fenix.nimbus.FxNimbus
 import org.mozilla.fenix.settings.ShortcutType
 import org.mozilla.fenix.summarization.SummarizationNavigator
@@ -840,7 +841,7 @@ class BrowserToolbarMiddleware(
                     }
                 },
                 ToolbarActionConfig(ToolbarAction.TabCounter) {
-                    !shouldUseExpandedToolbar || !isTallWindow || isWideWindow
+                    KaizenToolbar.showTabCounter && (!shouldUseExpandedToolbar || !isTallWindow || isWideWindow)
                 },
                 ToolbarActionConfig(ToolbarAction.Menu) {
                     !shouldUseExpandedToolbar || !isTallWindow || isWideWindow
@@ -884,7 +885,7 @@ class BrowserToolbarMiddleware(
                 ToolbarActionConfig(ToolbarAction.Share) { shouldUseExpandedToolbar && isTallWindow && !isWideWindow },
                 ToolbarActionConfig(ToolbarAction.NewTab) { shouldUseExpandedToolbar && isTallWindow && !isWideWindow },
                 ToolbarActionConfig(ToolbarAction.TabCounter) {
-                    shouldUseExpandedToolbar && isTallWindow && !isWideWindow
+                    KaizenToolbar.showTabCounter && shouldUseExpandedToolbar && isTallWindow && !isWideWindow
                 },
                 ToolbarActionConfig(ToolbarAction.Menu) { shouldUseExpandedToolbar && isTallWindow && !isWideWindow },
             )

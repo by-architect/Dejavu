@@ -12,6 +12,7 @@ import android.view.ViewGroup
 import androidx.annotation.StringRes
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
@@ -31,23 +32,23 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.ComposeView
 import androidx.compose.ui.platform.ViewCompositionStrategy
 import androidx.compose.ui.res.painterResource
-import androidx.compose.ui.res.pluralStringResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import kotlinx.coroutines.launch
-import mozilla.components.browser.state.action.ContainerAction
+import mozilla.components.compose.base.button.FilledButton
 import org.mozilla.fenix.R
 import org.mozilla.fenix.compose.list.IconListItem
 import org.mozilla.fenix.compose.list.SwitchListItem
-import org.mozilla.fenix.compose.list.TextListItem
 import org.mozilla.fenix.compose.settings.SettingsSectionHeader
 import org.mozilla.fenix.e2e.SystemInsetsPaddedFragment
 import org.mozilla.fenix.ext.requireComponents
 import org.mozilla.fenix.ext.showToolbar
-import org.mozilla.fenix.kaizen.actions.TabAction
+import org.mozilla.fenix.kaizen.actions.RowAction
+import org.mozilla.fenix.kaizen.actions.label
 import org.mozilla.fenix.kaizen.containers.ContainerRecord
+import org.mozilla.fenix.kaizen.containers.ContainerRemover
 import org.mozilla.fenix.kaizen.containers.KaizenContainerStorage
 import org.mozilla.fenix.kaizen.containers.color
 import org.mozilla.fenix.kaizen.containers.drawable
@@ -63,7 +64,7 @@ abstract class KaizenComposeFragment(@param:StringRes private val title: Int) :
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View =
         ComposeView(requireContext()).apply {
             setViewCompositionStrategy(ViewCompositionStrategy.DisposeOnViewTreeLifecycleDestroyed)
-            setContent { FirefoxTheme { Content() } }
+            setContent { FirefoxTheme { KaizenScreen() } }
         }
 
     override fun onResume() {
@@ -71,98 +72,87 @@ abstract class KaizenComposeFragment(@param:StringRes private val title: Int) :
         showToolbar(getString(title))
     }
 
+    /** The screen below the toolbar. Not named `Content` so it cannot resolve to [ComposeView.Content]. */
     @Composable
-    abstract fun Content()
+    abstract fun KaizenScreen()
 }
 
-/** Entry point of the Kaizen settings. */
-class KaizenSettingsFragment : KaizenComposeFragment(R.string.kaizen_settings_title) {
-    @Composable
-    override fun Content() {
-        val settings = remember { kaizenSettings() }
-        val pinned by settings.pinnedRowActions.collectAsState()
-        val unpinned by settings.unpinnedRowActions.collectAsState()
-        val storage = remember { KaizenContainerStorage.get(requireContext()) }
-        val containers by storage.records.collectAsState()
-        LaunchedEffect(Unit) { storage.load() }
-
-        Column(modifier = Modifier.fillMaxSize().verticalScroll(rememberScrollState())) {
-            SettingsSectionHeader(
-                text = stringResource(R.string.kaizen_settings_home_page),
-                modifier = Modifier.padding(start = 16.dp, top = 16.dp, end = 16.dp),
-            )
-            TextListItem(
-                label = stringResource(R.string.kaizen_settings_tab_actions),
-                description = stringResource(
-                    R.string.kaizen_settings_tab_actions_summary,
-                    pinned.labels(),
-                    unpinned.labels(),
-                ),
-                maxDescriptionLines = 2,
-                onClick = { findNavController().navigate(R.id.kaizenTabActionsFragment) },
-            )
-
-            SettingsSectionHeader(
-                text = stringResource(R.string.kaizen_settings_containers),
-                modifier = Modifier.padding(start = 16.dp, top = 16.dp, end = 16.dp),
-            )
-            val count = containers?.size ?: 0
-            TextListItem(
-                label = stringResource(R.string.kaizen_settings_manage_containers),
-                description = pluralStringResource(R.plurals.kaizen_settings_containers_count, count, count),
-                onClick = { findNavController().navigate(R.id.kaizenContainersFragment) },
-            )
-        }
-    }
-
-    @Composable
-    private fun List<TabAction>.labels(): String =
-        if (isEmpty()) stringResource(R.string.kaizen_settings_no_actions) else map { stringResource(it.label) }.joinToString()
-}
-
-/** Chooses the buttons shown on pinned and unpinned tab rows of the home page. */
+/** Chooses the buttons of pinned and unpinned tab rows, and lists the custom actions. */
 class KaizenTabActionsFragment : KaizenComposeFragment(R.string.kaizen_settings_tab_actions) {
     @Composable
-    override fun Content() {
+    override fun KaizenScreen() {
         val settings = remember { kaizenSettings() }
-        val pinned by settings.pinnedRowActions.collectAsState()
-        val unpinned by settings.unpinnedRowActions.collectAsState()
+        val customActions by settings.customActions.collectAsState()
+        val pinnedKeys by settings.pinnedRowKeys.collectAsState()
+        val unpinnedKeys by settings.unpinnedRowKeys.collectAsState()
 
         Column(modifier = Modifier.fillMaxSize().verticalScroll(rememberScrollState())) {
+            FilledButton(
+                text = stringResource(R.string.kaizen_custom_action_add),
+                icon = painterResource(iconsR.drawable.mozac_ic_plus_24),
+                modifier = Modifier.fillMaxWidth().padding(start = 16.dp, end = 16.dp, top = 16.dp),
+                onClick = { openEditor(null) },
+            )
             Text(
                 text = stringResource(R.string.kaizen_settings_tab_actions_hint, KaizenSettings.MAX_ROW_ACTIONS),
                 style = MaterialTheme.typography.bodyMedium,
                 color = MaterialTheme.colorScheme.onSurfaceVariant,
                 modifier = Modifier.padding(16.dp),
             )
-            ActionSection(R.string.kaizen_settings_pinned_tabs, TabAction.forPinnedRows, pinned) { action, on ->
-                settings.setRowAction(pinned = true, action = action, enabled = on)
-            }
-            ActionSection(R.string.kaizen_settings_unpinned_tabs, TabAction.forUnpinnedRows, unpinned) { action, on ->
-                settings.setRowAction(pinned = false, action = action, enabled = on)
+            ActionSection(
+                title = R.string.kaizen_settings_pinned_tabs,
+                available = RowAction.available(pinned = true, customActions = customActions),
+                enabledKeys = pinnedKeys,
+            ) { key, on -> settings.setRowAction(pinned = true, key = key, enabled = on) }
+            ActionSection(
+                title = R.string.kaizen_settings_unpinned_tabs,
+                available = RowAction.available(pinned = false, customActions = customActions),
+                enabledKeys = unpinnedKeys,
+            ) { key, on -> settings.setRowAction(pinned = false, key = key, enabled = on) }
+            if (customActions.isNotEmpty()) {
+                SettingsSectionHeader(
+                    text = stringResource(R.string.kaizen_custom_actions),
+                    modifier = Modifier.padding(start = 16.dp, top = 16.dp, end = 16.dp),
+                )
+                customActions.forEach { action ->
+                    IconListItem(
+                        label = action.name,
+                        description = "${action.method.name} ${action.url}",
+                        beforeIconPainter = painterResource(iconsR.drawable.mozac_ic_lightning_24),
+                        onClick = { openEditor(action.id) },
+                    )
+                }
             }
         }
+    }
+
+    private fun openEditor(actionId: String?) {
+        findNavController().navigate(
+            R.id.kaizenCustomActionFragment,
+            Bundle().apply { putString(KaizenCustomActionFragment.ARG_ACTION_ID, actionId) },
+        )
     }
 
     @Composable
     private fun ActionSection(
         @StringRes title: Int,
-        available: List<TabAction>,
-        enabled: List<TabAction>,
-        onChange: (TabAction, Boolean) -> Unit,
+        available: List<RowAction>,
+        enabledKeys: List<String>,
+        onChange: (String, Boolean) -> Unit,
     ) {
         SettingsSectionHeader(
             text = stringResource(title),
             modifier = Modifier.padding(start = 16.dp, top = 16.dp, end = 16.dp),
         )
+        val enabledCount = available.count { it.key in enabledKeys }
         available.forEach { action ->
-            val checked = action in enabled
+            val checked = action.key in enabledKeys
             SwitchListItem(
-                label = stringResource(action.label),
+                label = action.label,
                 checked = checked,
-                enabled = checked || enabled.size < KaizenSettings.MAX_ROW_ACTIONS,
+                enabled = checked || enabledCount < KaizenSettings.MAX_ROW_ACTIONS,
                 showSwitchAfter = true,
-                onClick = { onChange(action, it) },
+                onClick = { onChange(action.key, it) },
             )
         }
     }
@@ -171,7 +161,7 @@ class KaizenTabActionsFragment : KaizenComposeFragment(R.string.kaizen_settings_
 /** Lists, adds, edits and deletes containers. */
 class KaizenContainersFragment : KaizenComposeFragment(R.string.kaizen_settings_containers) {
     @Composable
-    override fun Content() {
+    override fun KaizenScreen() {
         val storage = remember { KaizenContainerStorage.get(requireContext()) }
         val containers by storage.records.collectAsState()
         val scope = rememberCoroutineScope()
@@ -228,28 +218,19 @@ class KaizenContainersFragment : KaizenComposeFragment(R.string.kaizen_settings_
 
         deleting?.let { record ->
             DeleteContainerDialog(
-                name = record.name,
-                onConfirm = {
-                    deleteContainer(record)
+                record = record,
+                otherContainers = containers.orEmpty().filter { it.contextId != record.contextId },
+                onConfirm = { removal ->
+                    ContainerRemover(requireComponents, WorkspaceRepository.peek()).remove(record, removal)
                     deleting = null
                 },
                 onDismiss = { deleting = null },
             )
         }
     }
-
-    private fun deleteContainer(record: ContainerRecord) {
-        val components = requireComponents
-        val store = components.core.store
-        val tabIds = store.state.tabs.filter { it.contextId == record.contextId }.map { it.id }
-        if (tabIds.isNotEmpty()) components.useCases.tabsUseCases.removeTabs(tabIds)
-        components.core.geckoRuntime.storageController.clearDataForSessionContext(record.contextId)
-        WorkspaceRepository.peek()?.forgetContainer(record.contextId)
-        store.dispatch(ContainerAction.RemoveContainerAction(record.contextId))
-    }
 }
 
-private fun Fragment.kaizenSettings(): KaizenSettings =
+internal fun Fragment.kaizenSettings(): KaizenSettings =
     requireComponents.strictMode.allowViolation(StrictMode::allowThreadDiskReads) {
         KaizenSettings.get(requireContext())
     }

@@ -39,9 +39,15 @@
         android:layout="@layout/preference_category_no_icon_style">
         <androidx.preference.Preference
             app:iconSpaceReserved="false"
-            android:key="@string/pref_key_kaizen"
-            android:title="@string/kaizen_settings_entry"
-            android:summary="@string/kaizen_settings_entry_summary" />
+            android:key="@string/pref_key_kaizen_tab_actions"
+            android:title="@string/kaizen_settings_tab_actions"
+            android:summary="@string/kaizen_settings_tab_actions_entry_summary" />
+
+        <androidx.preference.Preference
+            app:iconSpaceReserved="false"
+            android:key="@string/pref_key_kaizen_containers"
+            android:title="@string/kaizen_settings_containers"
+            android:summary="@string/kaizen_settings_containers_entry_summary" />
     </androidx.preference.PreferenceCategory>
 
     <androidx.preference.PreferenceCategory

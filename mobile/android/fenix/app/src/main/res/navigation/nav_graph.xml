@@ -9,7 +9,8 @@
     android:id="@+id/nav_graph"
     app:startDestination="@id/startupFragment">
 
-    <include app:graph="@navigation/kaizen_nav_graph" />
+    <include app:graph="@navigation/kaizen_tab_actions_graph" />
+    <include app:graph="@navigation/kaizen_containers_graph" />
 
     <action
         android:id="@+id/action_startup_home"

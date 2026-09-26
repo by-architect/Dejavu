@@ -9,46 +9,71 @@ import androidx.core.content.edit
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
+import org.json.JSONArray
+import org.mozilla.fenix.kaizen.actions.CustomAction
+import org.mozilla.fenix.kaizen.actions.RowAction
 import org.mozilla.fenix.kaizen.actions.TabAction
 
 /**
- * Device local Kaizen preferences. They are not synced.
+ * Device local Kaizen preferences: the buttons of tab rows and the custom actions. They are not synced.
  */
 class KaizenSettings private constructor(context: Context) {
     private val prefs = context.getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE)
 
-    private val _pinnedRowActions =
-        MutableStateFlow(readActions(KEY_PINNED_ROW_ACTIONS, DEFAULT_PINNED_ROW_ACTIONS, TabAction.forPinnedRows))
-    private val _unpinnedRowActions =
-        MutableStateFlow(readActions(KEY_UNPINNED_ROW_ACTIONS, DEFAULT_UNPINNED_ROW_ACTIONS, TabAction.forUnpinnedRows))
+    private val _customActions = MutableStateFlow(readCustomActions())
+    private val _pinnedRowKeys = MutableStateFlow(readKeys(KEY_PINNED_ROW_ACTIONS, DEFAULT_PINNED_ROW_ACTIONS))
+    private val _unpinnedRowKeys = MutableStateFlow(readKeys(KEY_UNPINNED_ROW_ACTIONS, DEFAULT_UNPINNED_ROW_ACTIONS))
 
-    /** Buttons shown on pinned tab rows. */
-    val pinnedRowActions: StateFlow<List<TabAction>> = _pinnedRowActions.asStateFlow()
+    /** Actions the user defined, in creation order. */
+    val customActions: StateFlow<List<CustomAction>> = _customActions.asStateFlow()
 
-    /** Buttons shown on unpinned tab rows. */
-    val unpinnedRowActions: StateFlow<List<TabAction>> = _unpinnedRowActions.asStateFlow()
+    /** Keys of the [RowAction]s shown on pinned tab rows. */
+    val pinnedRowKeys: StateFlow<List<String>> = _pinnedRowKeys.asStateFlow()
 
-    /**
-     * Enables or disables [action] on pinned or unpinned rows. At most [MAX_ROW_ACTIONS] actions can be enabled; the
-     * stored order always follows [TabAction.forPinnedRows] / [TabAction.forUnpinnedRows].
-     */
-    fun setRowAction(pinned: Boolean, action: TabAction, enabled: Boolean) {
-        val flow = if (pinned) _pinnedRowActions else _unpinnedRowActions
-        val available = if (pinned) TabAction.forPinnedRows else TabAction.forUnpinnedRows
-        val current = flow.value.toSet()
-        val updated = if (enabled) current + action else current - action
-        if (updated.size > MAX_ROW_ACTIONS || action !in available) return
-        val ordered = available.filter { it in updated }
-        flow.value = ordered
-        prefs.edit {
-            putString(if (pinned) KEY_PINNED_ROW_ACTIONS else KEY_UNPINNED_ROW_ACTIONS, ordered.joinToString(",") { it.key })
-        }
+    /** Keys of the [RowAction]s shown on unpinned tab rows. */
+    val unpinnedRowKeys: StateFlow<List<String>> = _unpinnedRowKeys.asStateFlow()
+
+    /** Enables or disables a row button. At most [MAX_ROW_ACTIONS] can be enabled. */
+    fun setRowAction(pinned: Boolean, key: String, enabled: Boolean) {
+        val flow = if (pinned) _pinnedRowKeys else _unpinnedRowKeys
+        val updated = if (enabled) flow.value + key else flow.value - key
+        if (updated.distinct().size > MAX_ROW_ACTIONS) return
+        flow.value = updated.distinct()
+        prefs.edit { putString(if (pinned) KEY_PINNED_ROW_ACTIONS else KEY_UNPINNED_ROW_ACTIONS, flow.value.joinToString(",")) }
     }
 
-    private fun readActions(key: String, default: List<TabAction>, available: List<TabAction>): List<TabAction> {
-        val chosen = prefs.getString(key, null)?.split(",")?.mapNotNull { TabAction.fromKey(it) }?.toSet()
-            ?: default.toSet()
-        return available.filter { it in chosen }.take(MAX_ROW_ACTIONS)
+    /** Adds [action], or replaces the custom action with the same id. */
+    fun saveCustomAction(action: CustomAction) {
+        val current = _customActions.value
+        _customActions.value = if (current.any { it.id == action.id }) {
+            current.map { if (it.id == action.id) action else it }
+        } else {
+            current + action
+        }
+        writeCustomActions()
+    }
+
+    /** Deletes a custom action and removes it from the tab rows. */
+    fun deleteCustomAction(id: String) {
+        _customActions.value = _customActions.value.filterNot { it.id == id }
+        writeCustomActions()
+        val key = RowAction.keyOf(id)
+        setRowAction(pinned = true, key = key, enabled = false)
+        setRowAction(pinned = false, key = key, enabled = false)
+    }
+
+    private fun readKeys(key: String, default: List<TabAction>): List<String> =
+        prefs.getString(key, null)?.split(",")?.filter { it.isNotBlank() } ?: default.map { it.key }
+
+    private fun readCustomActions(): List<CustomAction> {
+        val array = prefs.getString(KEY_CUSTOM_ACTIONS, null)?.let { runCatching { JSONArray(it) }.getOrNull() }
+            ?: return emptyList()
+        return (0 until array.length()).mapNotNull { CustomAction.fromJson(array.getJSONObject(it)) }
+    }
+
+    private fun writeCustomActions() {
+        val array = JSONArray().apply { _customActions.value.forEach { put(it.toJson()) } }
+        prefs.edit { putString(KEY_CUSTOM_ACTIONS, array.toString()) }
     }
 
     companion object {
@@ -58,6 +83,7 @@ class KaizenSettings private constructor(context: Context) {
         private const val PREFS_NAME = "kaizen_settings"
         private const val KEY_PINNED_ROW_ACTIONS = "pinned_row_actions"
         private const val KEY_UNPINNED_ROW_ACTIONS = "unpinned_row_actions"
+        private const val KEY_CUSTOM_ACTIONS = "custom_actions"
         private val DEFAULT_PINNED_ROW_ACTIONS = listOf(TabAction.CLOSE)
         private val DEFAULT_UNPINNED_ROW_ACTIONS = listOf(TabAction.PIN, TabAction.CLOSE)
 
@@ -71,3 +97,7 @@ class KaizenSettings private constructor(context: Context) {
             }
     }
 }
+
+/** The row buttons chosen with [keys], in display order. */
+fun resolveRowActions(keys: List<String>, pinned: Boolean, customActions: List<CustomAction>): List<RowAction> =
+    RowAction.available(pinned, customActions).filter { it.key in keys }.take(KaizenSettings.MAX_ROW_ACTIONS)
