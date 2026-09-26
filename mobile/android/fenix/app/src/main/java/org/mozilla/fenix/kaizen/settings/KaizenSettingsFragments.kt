@@ -280,6 +280,8 @@ class KaizenContainersFragment : KaizenComposeFragment(R.string.kaizen_settings_
     @Composable
     override fun KaizenScreen() {
         val storage = remember { KaizenContainerStorage.get(requireContext()) }
+        val settings = remember { kaizenSettings() }
+        val essentialsPerContainer by settings.essentialsPerContainer.collectAsState()
         val containers by storage.records.collectAsState()
         val scope = rememberCoroutineScope()
         var editing by remember { mutableStateOf<ContainerRecord?>(null) }
@@ -294,6 +296,16 @@ class KaizenContainersFragment : KaizenComposeFragment(R.string.kaizen_settings_
                     style = MaterialTheme.typography.bodyMedium,
                     color = MaterialTheme.colorScheme.onSurfaceVariant,
                     modifier = Modifier.padding(16.dp),
+                )
+            }
+            item {
+                SwitchListItem(
+                    label = stringResource(R.string.kaizen_essentials_per_container),
+                    description = stringResource(R.string.kaizen_essentials_per_container_summary),
+                    maxDescriptionLines = 3,
+                    checked = essentialsPerContainer,
+                    showSwitchAfter = true,
+                    onClick = settings::setEssentialsPerContainer,
                 )
             }
             items(containers.orEmpty(), key = { it.contextId }) { record ->

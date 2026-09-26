@@ -5,7 +5,11 @@
 package org.mozilla.fenix.kaizen.home
 
 import androidx.annotation.StringRes
+import androidx.compose.foundation.background
+import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
+import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
@@ -14,7 +18,10 @@ import androidx.compose.foundation.layout.heightIn
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
+import androidx.compose.foundation.lazy.LazyRow
+import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.AlertDialog
@@ -23,6 +30,7 @@ import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.RadioButton
+import androidx.compose.material3.Slider
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
@@ -33,17 +41,22 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.pluralStringResource
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 import org.mozilla.fenix.R
 import org.mozilla.fenix.kaizen.containers.ContainerIcon
 import org.mozilla.fenix.kaizen.containers.ContainerRecord
 import org.mozilla.fenix.kaizen.containers.NoContainerIcon
 import org.mozilla.fenix.kaizen.workspaces.MAX_FOLDER_DEPTH
+import org.mozilla.fenix.kaizen.workspaces.Workspace
 import org.mozilla.fenix.kaizen.workspaces.WorkspaceState
+import org.mozilla.fenix.kaizen.workspaces.WorkspaceTheme
 import mozilla.components.ui.icons.R as iconsR
 
 /** Shows [dialog] and forwards the user's choice to [interactor]. */
@@ -60,12 +73,10 @@ internal fun HomeDialogs(
         is HomeDialog.EditWorkspace -> {
             val workspace = state.workspaces.firstOrNull { it.id == dialog.workspaceId }
             WorkspaceDialog(
-                initialName = workspace?.name.orEmpty(),
-                initialContainerId = workspace?.containerId,
-                isNew = workspace == null,
+                workspace = workspace,
                 containers = containers.values.toList(),
-                onSave = { name, containerId ->
-                    interactor.onSaveWorkspace(workspace?.id, name, containerId)
+                onSave = { name, containerId, icon, theme ->
+                    interactor.onSaveWorkspace(workspace?.id, name, containerId, icon, theme)
                     onDismiss()
                 },
                 onDismiss = onDismiss,
@@ -211,31 +222,80 @@ internal fun HomeDialogs(
     }
 }
 
-@Suppress("LongParameterList")
+/** Creates or edits a workspace: its icon, name, theme and default container. */
+@Suppress("LongMethod")
 @Composable
 private fun WorkspaceDialog(
-    initialName: String,
-    initialContainerId: String?,
-    isNew: Boolean,
+    workspace: Workspace?,
     containers: List<ContainerRecord>,
-    onSave: (name: String, containerId: String?) -> Unit,
+    onSave: (name: String, containerId: String?, icon: String?, theme: WorkspaceTheme?) -> Unit,
     onDismiss: () -> Unit,
 ) {
-    var name by remember { mutableStateOf(initialName) }
-    var containerId by remember { mutableStateOf(initialContainerId) }
+    var name by remember { mutableStateOf(workspace?.name.orEmpty()) }
+    var containerId by remember { mutableStateOf(workspace?.containerId) }
+    var icon by remember { mutableStateOf(workspace?.icon) }
+    var theme by remember { mutableStateOf(workspace?.theme) }
+    val isNew = workspace == null
 
     AlertDialog(
         onDismissRequest = onDismiss,
         title = { Text(stringResource(if (isNew) R.string.kaizen_add_workspace else R.string.kaizen_workspace_edit)) },
         text = {
             Column(modifier = Modifier.verticalScroll(rememberScrollState())) {
-                OutlinedTextField(
-                    value = name,
-                    onValueChange = { name = it },
-                    singleLine = true,
-                    label = { Text(stringResource(R.string.kaizen_workspace_name)) },
-                    modifier = Modifier.fillMaxWidth(),
-                )
+                Row(verticalAlignment = Alignment.CenterVertically) {
+                    OutlinedTextField(
+                        value = icon.orEmpty(),
+                        onValueChange = { icon = lastGrapheme(it) },
+                        singleLine = true,
+                        label = { Text(stringResource(R.string.kaizen_workspace_icon)) },
+                        textStyle = MaterialTheme.typography.titleLarge.copy(textAlign = TextAlign.Center),
+                        modifier = Modifier.width(76.dp),
+                    )
+                    Spacer(Modifier.width(8.dp))
+                    OutlinedTextField(
+                        value = name,
+                        onValueChange = { name = it },
+                        singleLine = true,
+                        label = { Text(stringResource(R.string.kaizen_workspace_name)) },
+                        modifier = Modifier.weight(1f),
+                    )
+                }
+                Spacer(Modifier.size(8.dp))
+                LazyRow(horizontalArrangement = Arrangement.spacedBy(4.dp)) {
+                    item { IconChoice(text = null, selected = icon == null, onClick = { icon = null }) }
+                    items(iconSuggestions) { suggestion ->
+                        IconChoice(text = suggestion, selected = icon == suggestion, onClick = { icon = suggestion })
+                    }
+                }
+
+                Spacer(Modifier.size(16.dp))
+                Text(stringResource(R.string.kaizen_workspace_theme), style = MaterialTheme.typography.labelLarge)
+                Spacer(Modifier.size(8.dp))
+                LazyRow(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+                    item { ThemeChoice(colors = null, selected = theme == null, onClick = { theme = null }) }
+                    items(themePresets) { colors ->
+                        ThemeChoice(
+                            colors = colors,
+                            selected = theme?.colors == colors,
+                            onClick = {
+                                theme = WorkspaceTheme(
+                                    colors = colors,
+                                    opacity = theme?.opacity ?: WorkspaceTheme.DEFAULT_OPACITY,
+                                    texture = theme?.texture ?: 0f,
+                                )
+                            },
+                        )
+                    }
+                }
+                theme?.let { current ->
+                    SliderRow(R.string.kaizen_workspace_theme_intensity, current.opacity, MIN_THEME_OPACITY..1f) {
+                        theme = current.copy(opacity = it)
+                    }
+                    SliderRow(R.string.kaizen_workspace_theme_grain, current.texture, 0f..1f) {
+                        theme = current.copy(texture = it)
+                    }
+                }
+
                 Spacer(Modifier.size(16.dp))
                 Text(stringResource(R.string.kaizen_workspace_container), style = MaterialTheme.typography.labelLarge)
                 Text(
@@ -261,7 +321,7 @@ private fun WorkspaceDialog(
             }
         },
         confirmButton = {
-            TextButton(onClick = { onSave(name, containerId) }) {
+            TextButton(onClick = { onSave(name, containerId, icon, theme) }) {
                 Text(stringResource(if (isNew) R.string.kaizen_create else R.string.kaizen_save))
             }
         },
@@ -269,6 +329,67 @@ private fun WorkspaceDialog(
             TextButton(onClick = onDismiss) { Text(stringResource(R.string.kaizen_cancel)) }
         },
     )
+}
+
+private const val MIN_THEME_OPACITY = 0.1f
+
+/** A choice of workspace icon: an emoji, or no icon when [text] is `null`. */
+@Composable
+private fun IconChoice(text: String?, selected: Boolean, onClick: () -> Unit) {
+    Box(
+        contentAlignment = Alignment.Center,
+        modifier = Modifier
+            .size(40.dp)
+            .clip(CircleShape)
+            .background(if (selected) MaterialTheme.colorScheme.secondaryContainer else Color.Transparent)
+            .clickable(onClick = onClick),
+    ) {
+        if (text == null) {
+            NoContainerIcon(size = 20.dp)
+        } else {
+            Text(text = text, fontSize = 20.sp)
+        }
+    }
+}
+
+/** A choice of workspace theme: a gradient of [colors], or no theme when it is `null`. */
+@Composable
+private fun ThemeChoice(colors: List<Int>?, selected: Boolean, onClick: () -> Unit) {
+    Box(
+        contentAlignment = Alignment.Center,
+        modifier = Modifier
+            .size(40.dp)
+            .border(2.dp, if (selected) MaterialTheme.colorScheme.primary else Color.Transparent, CircleShape)
+            .padding(4.dp)
+            .clip(CircleShape)
+            .then(
+                if (colors == null) {
+                    Modifier.background(MaterialTheme.colorScheme.surfaceContainerHighest)
+                } else {
+                    Modifier.background(themeBrush(colors.map { Color(it) }, opacity = 1f))
+                },
+            )
+            .clickable(onClick = onClick),
+    ) {
+        if (colors == null) NoContainerIcon(size = 18.dp)
+    }
+}
+
+@Composable
+private fun SliderRow(
+    @StringRes label: Int,
+    value: Float,
+    range: ClosedFloatingPointRange<Float>,
+    onChange: (Float) -> Unit,
+) {
+    Row(verticalAlignment = Alignment.CenterVertically) {
+        Text(
+            text = stringResource(label),
+            style = MaterialTheme.typography.bodyMedium,
+            modifier = Modifier.width(88.dp),
+        )
+        Slider(value = value, onValueChange = onChange, valueRange = range, modifier = Modifier.weight(1f))
+    }
 }
 
 @Suppress("LongParameterList")

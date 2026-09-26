@@ -10,7 +10,8 @@ package org.mozilla.fenix.kaizen.workspaces
  * @property id Stable identifier, shared with other devices when syncing.
  * @property name User visible name.
  * @property containerId Container (GeckoView context ID) new tabs of this workspace open in, or `null`.
- * @property icon Emoji or icon name, as Zen stores it for spaces. Not shown yet.
+ * @property icon Emoji shown with the name, or the file name of one of Zen's built-in icons as Zen stores it.
+ * @property theme Background of the workspace, or `null` for the plain background.
  * @property createdAt Creation time in milliseconds.
  * @property updatedAt Last change time in milliseconds, used to resolve sync conflicts.
  */
@@ -19,9 +20,27 @@ data class Workspace(
     val name: String,
     val containerId: String? = null,
     val icon: String? = null,
+    val theme: WorkspaceTheme? = null,
     val createdAt: Long,
     val updatedAt: Long,
 )
+
+/**
+ * A workspace background, like Zen's space themes: a gradient of one to three colors.
+ *
+ * @property colors ARGB colors of the gradient.
+ * @property opacity How strongly the gradient covers the background, from 0 to 1.
+ * @property texture Strength of the grain drawn over the gradient, from 0 to 1.
+ */
+data class WorkspaceTheme(
+    val colors: List<Int>,
+    val opacity: Float = DEFAULT_OPACITY,
+    val texture: Float = 0f,
+) {
+    companion object {
+        const val DEFAULT_OPACITY = 0.35f
+    }
+}
 
 /** Deepest folder nesting allowed, matching Zen's default `zen.folders.max-subfolders`. */
 const val MAX_FOLDER_DEPTH = 5
@@ -74,16 +93,26 @@ data class PinnedItem(
 }
 
 /**
+ * Two tabs shown together in the browser, like Zen's split views. Local to this device, like tab assignments.
+ *
+ * @property id Stable identifier.
+ * @property tabIds The two browser tabs of the split.
+ */
+data class SplitView(val id: String, val tabIds: List<String>)
+
+/**
  * @property workspaces Workspaces in display order. Never empty.
  * @property pins Pinned tabs and folders of all workspaces.
  * @property activeWorkspaceId The workspace shown on the home screen. New tabs are assigned to it.
  * @property assignments Tab ID to workspace ID. Local to this device.
+ * @property splits Tabs shown together in the browser. Local to this device.
  */
 data class WorkspaceState(
     val workspaces: List<Workspace>,
     val pins: List<PinnedItem>,
     val activeWorkspaceId: String,
     val assignments: Map<String, String>,
+    val splits: List<SplitView> = emptyList(),
 ) {
     val activeIndex: Int
         get() = workspaces.indexOfFirst { it.id == activeWorkspaceId }.coerceAtLeast(0)
@@ -95,11 +124,21 @@ data class WorkspaceState(
     val essentials: List<PinnedItem>
         get() = pins.filter { it.essential }
 
+    /**
+     * The essentials shown in a workspace with default container [containerId]: all of them, or with [perContainer]
+     * only those of that container, like Zen's container-specific essentials.
+     */
+    fun essentialsFor(containerId: String?, perContainer: Boolean): List<PinnedItem> =
+        if (perContainer) essentials.filter { it.containerId == containerId } else essentials
+
     /** Returns the workspace ID for [tabId], falling back to the active workspace for unassigned tabs. */
     fun workspaceOf(tabId: String): String = assignments[tabId] ?: activeWorkspaceId
 
     /** Returns the pin backed by the open tab [tabId], if any. */
     fun pinOf(tabId: String): PinnedItem? = pins.firstOrNull { it.tabId == tabId }
+
+    /** Returns the split view tab [tabId] is part of, if any. */
+    fun splitOf(tabId: String): SplitView? = splits.firstOrNull { tabId in it.tabIds }
 
     /** Returns the direct children of [parentId] in [workspaceId], in display order. */
     fun children(workspaceId: String, parentId: String?): List<PinnedItem> =

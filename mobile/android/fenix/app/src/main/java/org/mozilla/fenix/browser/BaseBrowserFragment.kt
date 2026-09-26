@@ -229,6 +229,7 @@ import org.mozilla.fenix.ext.secure
 import org.mozilla.fenix.ext.tabClosedUndoMessage
 import org.mozilla.fenix.ext.updateMicrosurveyPromptForConfigurationChange
 import org.mozilla.fenix.kaizen.browser.handleKaizenBackPressed
+import org.mozilla.fenix.kaizen.browser.installKaizenSplitView
 import org.mozilla.fenix.messaging.FenixMessageSurfaceId
 import org.mozilla.fenix.messaging.MessagingFeature
 import org.mozilla.fenix.microsurvey.ui.MicrosurveyRequestPrompt
@@ -1219,6 +1220,10 @@ abstract class BaseBrowserFragment :
             owner = this,
             view = view,
         )
+
+        installKaizenSplitView(binding.browserLayout, binding.swipeRefresh, binding.engineView, customTabSessionId) {
+            getContextMenuCandidates(context, binding.dynamicSnackbarContainer)
+        }
 
         val isCoverEnabled = TabReloadCoverGating.isCoverEnabled(settings)
         val isScrollAwareEnabled = TabReloadCoverGating.isScrollAwareEnabled(settings)

@@ -42,6 +42,7 @@ data class Selection(
  * @property folderPins Pinned tabs anywhere inside [folders].
  * @property folderTabs Open browser tabs backing [folderPins].
  * @property canAddSubfolder Whether [folders] is a single folder that can hold one more level of folders.
+ * @property splitTabIds Open tabs among the targets that are part of a split view.
  */
 data class ActionTargets(
     val tabs: List<TabSessionState> = emptyList(),
@@ -51,6 +52,7 @@ data class ActionTargets(
     val folderPins: List<PinnedItem> = emptyList(),
     val folderTabs: List<TabSessionState> = emptyList(),
     val canAddSubfolder: Boolean = false,
+    val splitTabIds: Set<String> = emptySet(),
 ) {
     /** Every pinned tab the action reaches, the ones inside [folders] included. */
     val allPins: List<PinnedItem>
@@ -111,7 +113,7 @@ data class ActionTargets(
             val folders = selectedFolders.filter { it.id !in nested }
             val pins = state.pins.filter { !it.isFolder && it.id in selection.pinIds && it.id !in nested }
             val folderPins = state.pins.filter { !it.isFolder && it.id in nested }
-            return ActionTargets(
+            val targets = ActionTargets(
                 tabs = tabs.filter { it.id in selection.tabIds },
                 pins = pins,
                 pinnedTabs = tabs.backing(pins),
@@ -120,6 +122,7 @@ data class ActionTargets(
                 folderTabs = tabs.backing(folderPins),
                 canAddSubfolder = folders.singleOrNull()?.let { state.folderDepth(it.id) < MAX_FOLDER_DEPTH } == true,
             )
+            return targets.copy(splitTabIds = targets.openTabs.map { it.id }.filter { state.splitOf(it) != null }.toSet())
         }
 
         /** A pinned tab or essential with its open tab, if any. */
@@ -161,6 +164,8 @@ fun TabAction.appliesTo(targets: ActionTargets): Boolean = when (this) {
     TabAction.DELETE -> targets.pins.isNotEmpty() || targets.folders.isNotEmpty()
     TabAction.MOVE_TO_FOLDER, TabAction.MOVE_TO_WORKSPACE -> !targets.isEmpty()
     TabAction.CHANGE_CONTAINER -> targets.tabs.isNotEmpty() || targets.allPins.isNotEmpty()
+    TabAction.SPLIT_VIEW -> targets.folders.isEmpty() && (targets.tabs + targets.pinnedTabs).size == 2
+    TabAction.UNSPLIT -> targets.splitTabIds.isNotEmpty()
 }
 
 /** Whether [this] action can do anything for [targets]. */

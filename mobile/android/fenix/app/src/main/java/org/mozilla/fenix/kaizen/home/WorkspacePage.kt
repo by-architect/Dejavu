@@ -113,6 +113,8 @@ data class WorkspacePageCallbacks(
     val onNewWorkspace: () -> Unit,
     val onEditWorkspace: () -> Unit,
     val onDeleteWorkspace: () -> Unit,
+    /** Moves the workspace [delta] places, negative to the left. */
+    val onMoveWorkspace: (delta: Int) -> Unit,
     val onNewTabClick: () -> Unit,
     val onNewTabInContainer: (String?) -> Unit,
     val onManageContainers: () -> Unit,
@@ -165,11 +167,14 @@ internal fun WorkspacePage(
     selection: Selection?,
     callbacks: WorkspacePageCallbacks,
     canDeleteWorkspace: Boolean,
+    canMoveLeft: Boolean,
+    canMoveRight: Boolean,
 ) {
     val tabsById = tabs.associateBy { it.id }
     val pinned = state.pinnedTree(workspace.id)
     val pinnedTabIds = state.pins.mapNotNull { it.tabId }.toSet()
     val otherTabs = tabs.filterNot { it.id in pinnedTabIds }
+    val splitTabIds = state.splits.flatMap { it.tabIds }.toSet()
 
     val listState = rememberLazyListState()
     var drag by remember { mutableStateOf<DragState?>(null) }
@@ -255,10 +260,13 @@ internal fun WorkspacePage(
                     workspace = workspace,
                     container = workspace.containerId?.let { containers[it] },
                     canDelete = canDeleteWorkspace,
+                    canMoveLeft = canMoveLeft,
+                    canMoveRight = canMoveRight,
                     onNewFolder = callbacks.onNewFolder,
                     onNewWorkspace = callbacks.onNewWorkspace,
                     onEdit = callbacks.onEditWorkspace,
                     onDelete = callbacks.onDeleteWorkspace,
+                    onMove = callbacks.onMoveWorkspace,
                     modifier = Modifier.dropLine(dropLines?.of(KEY_HEADER), lineColor, insideColor),
                 )
             }
@@ -289,6 +297,7 @@ internal fun WorkspacePage(
                         isOpen = tab != null,
                         isAwake = tab?.isAwake == true,
                         isCurrent = tab != null && tab.id == selectedTabId,
+                        isSplit = tab != null && tab.id in splitTabIds,
                         selection = selection?.let { item.id in it.pinIds },
                         actions = rowActions(pinnedRowActions, targets, isPinned = true),
                         onAction = { callbacks.onRowAction(it, targets) },
@@ -328,6 +337,7 @@ internal fun WorkspacePage(
                     isOpen = true,
                     isAwake = tab.isAwake,
                     isCurrent = tab.id == selectedTabId,
+                    isSplit = tab.id in splitTabIds,
                     selection = selection?.let { tab.id in it.tabIds },
                     actions = rowActions(unpinnedRowActions, targets, isPinned = false),
                     onAction = { callbacks.onRowAction(it, targets) },
@@ -591,17 +601,20 @@ private fun NewTabRow(
     }
 }
 
-/** Workspace name with its default container on the left; tapping the name edits the workspace. */
+/** Workspace name with its default container and icon on the left; tapping the name edits the workspace. */
 @Suppress("LongParameterList", "LongMethod")
 @Composable
 private fun WorkspaceHeader(
     workspace: Workspace,
     container: ContainerRecord?,
     canDelete: Boolean,
+    canMoveLeft: Boolean,
+    canMoveRight: Boolean,
     onNewFolder: () -> Unit,
     onNewWorkspace: () -> Unit,
     onEdit: () -> Unit,
     onDelete: () -> Unit,
+    onMove: (delta: Int) -> Unit,
     modifier: Modifier = Modifier,
 ) {
     var menuOpen by remember { mutableStateOf(false) }
@@ -620,6 +633,10 @@ private fun WorkspaceHeader(
             if (container != null) {
                 ContainerIcon(container, size = 18.dp)
                 Spacer(Modifier.width(8.dp))
+            }
+            workspace.icon?.let { icon ->
+                Text(text = icon, style = MaterialTheme.typography.titleSmall)
+                Spacer(Modifier.width(6.dp))
             }
             Text(
                 text = workspace.name,
@@ -648,6 +665,22 @@ private fun WorkspaceHeader(
                     onClick = {
                         menuOpen = false
                         onEdit()
+                    },
+                )
+                DropdownMenuItem(
+                    text = { Text(stringResource(R.string.kaizen_workspace_move_left)) },
+                    enabled = canMoveLeft,
+                    onClick = {
+                        menuOpen = false
+                        onMove(-1)
+                    },
+                )
+                DropdownMenuItem(
+                    text = { Text(stringResource(R.string.kaizen_workspace_move_right)) },
+                    enabled = canMoveRight,
+                    onClick = {
+                        menuOpen = false
+                        onMove(1)
                     },
                 )
                 DropdownMenuItem(
@@ -731,6 +764,7 @@ private fun TabRow(
     isOpen: Boolean,
     isAwake: Boolean,
     isCurrent: Boolean,
+    isSplit: Boolean,
     selection: Boolean?,
     actions: List<RowAction>,
     onAction: (RowAction) -> Unit,
@@ -779,6 +813,14 @@ private fun TabRow(
             overflow = TextOverflow.Ellipsis,
             modifier = Modifier.weight(1f),
         )
+        if (isSplit) {
+            Icon(
+                painter = painterResource(R.drawable.kaizen_ic_split_24),
+                contentDescription = stringResource(R.string.kaizen_split_view),
+                tint = MaterialTheme.colorScheme.primary,
+                modifier = Modifier.padding(horizontal = 6.dp).size(16.dp),
+            )
+        }
         if (selection == null) {
             actions.forEach { action ->
                 IconButton(onClick = { onAction(action) }) {

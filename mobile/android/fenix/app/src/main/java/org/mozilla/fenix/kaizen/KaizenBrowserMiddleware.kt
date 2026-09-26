@@ -18,6 +18,7 @@ import mozilla.components.browser.state.state.TabSessionState
 import mozilla.components.feature.containers.ContainerMiddleware
 import mozilla.components.lib.state.Middleware
 import mozilla.components.lib.state.Store
+import org.mozilla.fenix.kaizen.browser.SplitViewMiddleware
 import org.mozilla.fenix.kaizen.containers.KaizenContainerStorage
 import org.mozilla.fenix.kaizen.workspaces.WorkspaceRepository
 import java.util.concurrent.ConcurrentHashMap
@@ -35,6 +36,7 @@ fun kaizenBrowserMiddleware(context: Context): List<Middleware<BrowserState, Bro
         ContainerMiddleware(context, containerStorage = KaizenContainerStorage.get(context)),
         WorkspaceContainerMiddleware(),
         SilentlyClosedTabsMiddleware(),
+        SplitViewMiddleware(),
     )
 }
 

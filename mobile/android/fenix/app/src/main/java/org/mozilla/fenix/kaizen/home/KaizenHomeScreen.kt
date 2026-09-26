@@ -61,6 +61,7 @@ import org.mozilla.fenix.kaizen.workspaces.PinSource
 import org.mozilla.fenix.kaizen.workspaces.PinnedItem
 import org.mozilla.fenix.kaizen.workspaces.WorkspaceRepository
 import org.mozilla.fenix.kaizen.workspaces.WorkspaceState
+import org.mozilla.fenix.kaizen.workspaces.WorkspaceTheme
 import org.mozilla.fenix.theme.FirefoxTheme
 import java.text.SimpleDateFormat
 import java.util.Date
@@ -96,6 +97,7 @@ fun ComposeView.setKaizenHomeContent(
                     context = context,
                     components = fenix,
                     repository = repository,
+                    settings = settings,
                     containerStorage = containerStorage,
                     navController = navController,
                     scope = scope,
@@ -109,6 +111,7 @@ fun ComposeView.setKaizenHomeContent(
             val pinnedKeys by settings.pinnedRowKeys.collectAsState()
             val unpinnedKeys by settings.unpinnedRowKeys.collectAsState()
             val hiddenSelectionKeys by settings.hiddenSelectionKeys.collectAsState()
+            val essentialsPerContainer by settings.essentialsPerContainer.collectAsState()
             val containerRecords by containerStorage.records.collectAsState()
             val containers = remember(containerRecords) { containerRecords.orEmpty().associateBy { it.contextId } }
             val tabs by fenix.core.store.observeAsComposableState { it.normalTabs }
@@ -146,6 +149,7 @@ fun ComposeView.setKaizenHomeContent(
                     pinnedRowActions = resolveRowActions(pinnedKeys, pinned = true, customActions = customActions),
                     unpinnedRowActions = resolveRowActions(unpinnedKeys, pinned = false, customActions = customActions),
                     selectionActions = resolveSelectionActions(hiddenSelectionKeys, customActions),
+                    essentialsPerContainer = essentialsPerContainer,
                     interactor = interactor,
                 )
 
@@ -182,6 +186,7 @@ private class DefaultKaizenHomeInteractor(
     private val context: Context,
     private val components: Components,
     private val repository: WorkspaceRepository,
+    private val settings: KaizenSettings,
     private val containerStorage: KaizenContainerStorage,
     private val navController: NavController,
     private val scope: CoroutineScope,
@@ -194,15 +199,23 @@ private class DefaultKaizenHomeInteractor(
 
     override fun onWorkspaceSelected(workspaceId: String) = repository.selectWorkspace(workspaceId)
 
-    override fun onSaveWorkspace(workspaceId: String?, name: String, containerId: String?) {
+    override fun onSaveWorkspace(
+        workspaceId: String?,
+        name: String,
+        containerId: String?,
+        icon: String?,
+        theme: WorkspaceTheme?,
+    ) {
         if (workspaceId == null) {
-            repository.addWorkspace(name, containerId)
+            repository.addWorkspace(name, containerId, icon, theme)
         } else {
-            repository.updateWorkspace(workspaceId, name, containerId)
+            repository.updateWorkspace(workspaceId, name, containerId, icon, theme)
         }
     }
 
     override fun onDeleteWorkspace(workspaceId: String) = repository.deleteWorkspace(workspaceId)
+
+    override fun onMoveWorkspace(workspaceId: String, index: Int) = repository.moveWorkspace(workspaceId, index)
 
     override fun onTabClick(tabId: String) = openTab(tabId)
 
@@ -242,6 +255,8 @@ private class DefaultKaizenHomeInteractor(
             TabAction.REMOVE_FROM_ESSENTIALS -> removeFromEssentials(targets.pins.filter { it.essential }, workspaceId)
             TabAction.UNPACK_FOLDER -> targets.folders.forEach { repository.unpackFolder(it.id) }
             TabAction.DELETE -> onDeleteItems(targets)
+            TabAction.SPLIT_VIEW -> split(targets)
+            TabAction.UNSPLIT -> repository.unsplit(targets.splitTabIds)
             TabAction.MOVE_TO_WORKSPACE, TabAction.MOVE_TO_FOLDER, TabAction.NEW_FOLDER, TabAction.NEW_SUBFOLDER,
             TabAction.RENAME_FOLDER, TabAction.CHANGE_CONTAINER,
             -> Unit
@@ -303,7 +318,8 @@ private class DefaultKaizenHomeInteractor(
         }
     }
 
-    override fun onMoveEssential(pinId: String, index: Int) = repository.moveEssential(pinId, index)
+    override fun onMoveEssential(pinId: String, index: Int) =
+        repository.moveEssential(pinId, index, settings.essentialsPerContainer.value)
 
     override fun onClearUnpinned(workspaceId: String) {
         val state = repository.state.value
@@ -408,6 +424,16 @@ private class DefaultKaizenHomeInteractor(
         if (open.isNotEmpty()) tabsUseCases.removeTabs(open)
     }
 
+    /** Shows the two open tabs of [targets] together, next to each other when they are both unpinned. */
+    private fun split(targets: ActionTargets) {
+        val (first, second) = (targets.tabs + targets.pinnedTabs).takeIf { it.size == 2 } ?: return
+        repository.createSplit(first.id, second.id)
+        if (targets.pinnedTabs.isEmpty()) {
+            store.dispatch(TabListAction.MoveTabsAction(listOf(second.id), first.id, placeAfter = true))
+        }
+        openTab(first.id)
+    }
+
     /** Opens the closed ones of [pins] again without loading them, and returns the new tabs. */
     private fun reopenClosed(pins: List<PinnedItem>): List<String> =
         pins.filter { pin -> pin.tabId == null || store.state.findTab(pin.tabId) == null }.mapNotNull { pin ->
@@ -425,9 +451,13 @@ private class DefaultKaizenHomeInteractor(
 
     private fun addToEssentials(targets: ActionTargets) {
         val candidates = targets.tabs.size + targets.pins.count { !it.essential }
-        val room = MAX_ESSENTIALS - repository.state.value.essentials.size
-        repository.addToEssentials(targets.tabs.map { it.toPinSource() }, targets.pins.map { it.id }.toSet())
-        if (candidates > 0 && candidates > room) {
+        val before = repository.state.value.essentials.size
+        repository.addToEssentials(
+            sources = targets.tabs.map { it.toPinSource() },
+            pinIds = targets.pins.map { it.id }.toSet(),
+            perContainer = settings.essentialsPerContainer.value,
+        )
+        if (repository.state.value.essentials.size - before < candidates) {
             scope.launch { snackbar.showSnackbar(context.getString(R.string.kaizen_essentials_full, MAX_ESSENTIALS)) }
         }
     }

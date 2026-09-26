@@ -53,24 +53,44 @@ class WorkspaceRepository private constructor(context: Context) {
         if (state.workspaces.none { it.id == id }) state else state.copy(activeWorkspaceId = id)
     }
 
-    fun addWorkspace(name: String, containerId: String?) = mutate { state ->
+    fun addWorkspace(name: String, containerId: String?, icon: String?, theme: WorkspaceTheme?) = mutate { state ->
         val now = now()
         val workspace = Workspace(
             id = WorkspaceSerializer.newWorkspaceId(),
             name = name.trim().ifEmpty { defaultName },
             containerId = containerId,
+            icon = icon,
+            theme = theme,
             createdAt = now,
             updatedAt = now,
         )
         state.copy(workspaces = state.workspaces + workspace, activeWorkspaceId = workspace.id)
     }
 
-    fun updateWorkspace(id: String, name: String, containerId: String?) = mutate { state ->
-        state.copy(
-            workspaces = state.workspaces.map {
-                if (it.id == id) it.copy(name = name.trim().ifEmpty { it.name }, containerId = containerId, updatedAt = now()) else it
-            },
-        )
+    fun updateWorkspace(id: String, name: String, containerId: String?, icon: String?, theme: WorkspaceTheme?) =
+        mutate { state ->
+            state.copy(
+                workspaces = state.workspaces.map {
+                    if (it.id == id) {
+                        it.copy(
+                            name = name.trim().ifEmpty { it.name },
+                            containerId = containerId,
+                            icon = icon,
+                            theme = theme,
+                            updatedAt = now(),
+                        )
+                    } else {
+                        it
+                    }
+                },
+            )
+        }
+
+    /** Moves workspace [id] to position [index] among the workspaces. */
+    fun moveWorkspace(id: String, index: Int) = mutate { state ->
+        val workspace = state.workspaces.firstOrNull { it.id == id } ?: return@mutate state
+        val others = state.workspaces - workspace
+        state.copy(workspaces = others.toMutableList().apply { add(index.coerceIn(0, others.size), workspace) })
     }
 
     /** Deletes a workspace, moving its tabs and pinned items to a neighbouring workspace. The last one is kept. */
@@ -118,13 +138,28 @@ class WorkspaceRepository private constructor(context: Context) {
         )
     }
 
-    /** Hands the workspace and pin of tab [oldTabId] over to [newTabId], which replaces it. */
+    /** Hands the workspace, pin and split view of tab [oldTabId] over to [newTabId], which replaces it. */
     fun replaceTab(oldTabId: String, newTabId: String) = mutate { state ->
         val workspaceId = state.assignments[oldTabId] ?: state.pinOf(oldTabId)?.workspaceId
         state.copy(
             pins = state.pins.map { if (it.tabId == oldTabId) it.copy(tabId = newTabId) else it },
             assignments = (state.assignments - oldTabId).let { if (workspaceId != null) it + (newTabId to workspaceId) else it },
+            splits = state.splits.map { split ->
+                split.copy(tabIds = split.tabIds.map { if (it == oldTabId) newTabId else it })
+            },
         )
+    }
+
+    /** Shows tabs [first] and [second] together in the browser. They leave any split view they were in. */
+    fun createSplit(first: String, second: String) = mutate { state ->
+        if (first == second) return@mutate state
+        val others = state.splits.filterNot { first in it.tabIds || second in it.tabIds }
+        state.copy(splits = others + SplitView(newId(), listOf(first, second)))
+    }
+
+    /** Ends the split views that any of [tabIds] is part of. */
+    fun unsplit(tabIds: Set<String>) = mutate { state ->
+        state.copy(splits = state.splits.filterNot { split -> split.tabIds.any { it in tabIds } })
     }
 
     /**
@@ -199,18 +234,25 @@ class WorkspaceRepository private constructor(context: Context) {
 
     /**
      * Makes pinned tabs [pinIds] and the open tabs [sources] essentials, shown in every workspace, as long as there is
-     * room for them below [MAX_ESSENTIALS].
+     * room for them below [MAX_ESSENTIALS]. With [perContainer] every container has its own essentials and its own
+     * limit.
      */
-    fun addToEssentials(sources: List<PinSource>, pinIds: Set<String>) = mutate { state ->
+    fun addToEssentials(sources: List<PinSource>, pinIds: Set<String>, perContainer: Boolean) = mutate { state ->
         val now = now()
-        val room = (MAX_ESSENTIALS - state.essentials.size).coerceAtLeast(0)
+        val counts = state.essentials.groupingBy { it.containerId.takeIf { perContainer } }.eachCount().toMutableMap()
+        fun takeRoom(containerId: String?): Boolean {
+            val group = containerId.takeIf { perContainer }
+            val count = counts[group] ?: 0
+            if (count >= MAX_ESSENTIALS) return false
+            counts[group] = count + 1
+            return true
+        }
         val converted = state.pins
-            .filter { it.id in pinIds && !it.isFolder && !it.essential }
-            .take(room)
+            .filter { it.id in pinIds && !it.isFolder && !it.essential && takeRoom(it.containerId) }
             .map { it.copy(essential = true, workspaceId = null, parentId = null, updatedAt = now) }
         val alreadyPinned = state.pins.mapNotNull { it.tabId }.toSet()
         val fresh = sources.filter { it.tabId !in alreadyPinned }.distinctBy { it.tabId }
-        val created = fresh.take(room - converted.size).map { source ->
+        val created = fresh.filter { takeRoom(it.containerId) }.map { source ->
             PinnedItem(
                 id = newId(),
                 workspaceId = null,
@@ -241,12 +283,18 @@ class WorkspaceRepository private constructor(context: Context) {
         )
     }
 
-    /** Moves essential [pinId] to position [index] among the essentials. */
-    fun moveEssential(pinId: String, index: Int) = mutate { state ->
-        val essentials = state.essentials.toMutableList()
-        val item = essentials.firstOrNull { it.id == pinId } ?: return@mutate state
-        essentials.remove(item)
-        essentials.add(index.coerceIn(0, essentials.size), item)
+    /**
+     * Moves essential [pinId] to position [index] among the essentials, or with [perContainer] among the essentials of
+     * its container. The other essentials keep their places.
+     */
+    fun moveEssential(pinId: String, index: Int, perContainer: Boolean) = mutate { state ->
+        val item = state.essentials.firstOrNull { it.id == pinId } ?: return@mutate state
+        val inGroup = { other: PinnedItem -> !perContainer || other.containerId == item.containerId }
+        val group = state.essentials.filter(inGroup).toMutableList()
+        group.remove(item)
+        group.add(index.coerceIn(0, group.size), item)
+        val reordered = group.iterator()
+        val essentials = state.essentials.map { if (inGroup(it)) reordered.next() else it }
         state.copy(pins = state.pins.filterNot { it.essential } + essentials)
     }
 
@@ -355,7 +403,8 @@ class WorkspaceRepository private constructor(context: Context) {
         } else {
             state.pins
         }
-        state.copy(pins = pins, assignments = kept + added)
+        val splits = if (restoreComplete) state.splits.filter { split -> split.tabIds.all { it in tabIds } } else state.splits
+        state.copy(pins = pins, assignments = kept + added, splits = splits)
     }
 
     private fun WorkspaceState.withPins(sources: List<PinSource>, parentId: String?): WorkspaceState {

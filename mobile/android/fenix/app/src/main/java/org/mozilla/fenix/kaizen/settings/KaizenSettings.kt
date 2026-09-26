@@ -23,6 +23,7 @@ class KaizenSettings private constructor(context: Context) {
     private val _customActions = MutableStateFlow(readCustomActions())
     private val _pinnedRowKeys = MutableStateFlow(readKeys(KEY_PINNED_ROW_ACTIONS, DEFAULT_PINNED_ROW_ACTIONS))
     private val _unpinnedRowKeys = MutableStateFlow(readKeys(KEY_UNPINNED_ROW_ACTIONS, DEFAULT_UNPINNED_ROW_ACTIONS))
+    private val _essentialsPerContainer = MutableStateFlow(prefs.getBoolean(KEY_ESSENTIALS_PER_CONTAINER, false))
     private val _hiddenSelectionKeys = MutableStateFlow(
         prefs.getString(KEY_HIDDEN_SELECTION_ACTIONS, null)?.split(",")?.filter { it.isNotBlank() }?.toSet().orEmpty(),
     )
@@ -36,6 +37,9 @@ class KaizenSettings private constructor(context: Context) {
     /** Keys of the [RowAction]s shown on unpinned tab rows. */
     val unpinnedRowKeys: StateFlow<List<String>> = _unpinnedRowKeys.asStateFlow()
 
+    /** Whether every container has its own essentials, shown in the workspaces using that container. */
+    val essentialsPerContainer: StateFlow<Boolean> = _essentialsPerContainer.asStateFlow()
+
     /** Keys of the [RowAction]s left out of the selection bar. Every other action, new ones included, is shown. */
     val hiddenSelectionKeys: StateFlow<Set<String>> = _hiddenSelectionKeys.asStateFlow()
 
@@ -46,6 +50,11 @@ class KaizenSettings private constructor(context: Context) {
         if (updated.distinct().size > MAX_ROW_ACTIONS) return
         flow.value = updated.distinct()
         prefs.edit { putString(if (pinned) KEY_PINNED_ROW_ACTIONS else KEY_UNPINNED_ROW_ACTIONS, flow.value.joinToString(",")) }
+    }
+
+    fun setEssentialsPerContainer(enabled: Boolean) {
+        _essentialsPerContainer.value = enabled
+        prefs.edit { putBoolean(KEY_ESSENTIALS_PER_CONTAINER, enabled) }
     }
 
     /** Shows or hides an action of the selection bar. */
@@ -98,6 +107,7 @@ class KaizenSettings private constructor(context: Context) {
         private const val KEY_UNPINNED_ROW_ACTIONS = "unpinned_row_actions"
         private const val KEY_CUSTOM_ACTIONS = "custom_actions"
         private const val KEY_HIDDEN_SELECTION_ACTIONS = "hidden_selection_actions"
+        private const val KEY_ESSENTIALS_PER_CONTAINER = "essentials_per_container"
         private val DEFAULT_PINNED_ROW_ACTIONS = listOf(TabAction.CLOSE)
         private val DEFAULT_UNPINNED_ROW_ACTIONS = listOf(TabAction.PIN, TabAction.CLOSE)
 

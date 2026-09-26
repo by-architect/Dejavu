@@ -46,6 +46,12 @@
     <string name="kaizen_workspace_container">Default container</string>
     <string name="kaizen_workspace_container_hint">New tabs of this workspace open in this container.</string>
     <string name="kaizen_workspace_no_container">No container</string>
+    <string name="kaizen_workspace_icon">Icon</string>
+    <string name="kaizen_workspace_theme">Theme</string>
+    <string name="kaizen_workspace_theme_intensity">Intensity</string>
+    <string name="kaizen_workspace_theme_grain">Grain</string>
+    <string name="kaizen_workspace_move_left">Move left</string>
+    <string name="kaizen_workspace_move_right">Move right</string>
 
     <!-- Folders -->
     <string name="kaizen_folder_new_subfolder">New subfolder</string>
@@ -56,6 +62,8 @@
     <!-- Essentials -->
     <string name="kaizen_essentials_drop">Drop here to add to essentials</string>
     <string name="kaizen_essentials_full">Essentials hold up to %1$d tabs</string>
+    <string name="kaizen_essentials_per_container">Essentials per container</string>
+    <string name="kaizen_essentials_per_container_summary">Each container keeps its own essentials. A workspace shows the essentials of its default container.</string>
 
     <!-- Deleting pinned tabs, essentials and folders -->
     <string name="kaizen_delete_item_title">Delete “%1$s”?</string>
@@ -78,6 +86,13 @@
     <string name="kaizen_action_move_to_folder">Move to folder</string>
     <string name="kaizen_action_new_folder">New folder</string>
     <string name="kaizen_action_change_container">Change container</string>
+    <string name="kaizen_action_split_view">Split view</string>
+    <string name="kaizen_action_unsplit">Unsplit</string>
+
+    <!-- Split view -->
+    <string name="kaizen_split_view">Split view</string>
+    <string name="kaizen_split_show_on_top">Show on top</string>
+    <string name="kaizen_split_close">Close split view</string>
     <string name="kaizen_action_reset_pin">Reset pinned tab</string>
     <string name="kaizen_action_add_to_essentials">Add to essentials</string>
     <string name="kaizen_action_remove_from_essentials">Remove from essentials</string>

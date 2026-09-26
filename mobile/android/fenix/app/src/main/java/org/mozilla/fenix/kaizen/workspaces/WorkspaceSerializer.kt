@@ -14,6 +14,8 @@ import java.util.UUID
  */
 internal object WorkspaceSerializer {
     private const val VERSION = 2
+    private const val MAX_THEME_COLORS = 3
+    private const val SPLIT_SIZE = 2
 
     fun read(json: String?, defaultName: String, now: Long): WorkspaceState {
         val root = json?.let { runCatching { JSONObject(it) }.getOrNull() }
@@ -25,6 +27,7 @@ internal object WorkspaceSerializer {
                 name = item.getString("name"),
                 containerId = item.optStringOrNull("containerId"),
                 icon = item.optStringOrNull("icon"),
+                theme = item.optJSONObject("theme")?.toTheme(),
                 createdAt = item.optLong("createdAt", now),
                 updatedAt = item.optLong("updatedAt", now),
             )
@@ -43,7 +46,12 @@ internal object WorkspaceSerializer {
 
         val activeId = root?.optStringOrNull("active")?.takeIf { it in workspaceIds } ?: workspaces.first().id
 
-        return WorkspaceState(workspaces, pins, activeId, assignments)
+        val splits = root?.optJSONArray("splits").objects().mapNotNull { item ->
+            val tabIds = item.optJSONArray("tabIds")?.let { ids -> (0 until ids.length()).map { ids.getString(it) } }
+            tabIds?.takeIf { it.size == SPLIT_SIZE }?.let { SplitView(item.getString("id"), it) }
+        }
+
+        return WorkspaceState(workspaces, pins, activeId, assignments, splits)
     }
 
     fun write(state: WorkspaceState): String = JSONObject().apply {
@@ -59,6 +67,7 @@ internal object WorkspaceSerializer {
                             .put("name", ws.name)
                             .putOpt("containerId", ws.containerId)
                             .putOpt("icon", ws.icon)
+                            .putOpt("theme", ws.theme?.toJson())
                             .put("createdAt", ws.createdAt)
                             .put("updatedAt", ws.updatedAt),
                     )
@@ -89,6 +98,14 @@ internal object WorkspaceSerializer {
             },
         )
         put("assignments", JSONObject(state.assignments))
+        put(
+            "splits",
+            JSONArray().apply {
+                state.splits.forEach { split ->
+                    put(JSONObject().put("id", split.id).put("tabIds", JSONArray(split.tabIds)))
+                }
+            },
+        )
     }.toString()
 
     private fun JSONObject.toPinnedItem(now: Long) = PinnedItem(
@@ -106,6 +123,22 @@ internal object WorkspaceSerializer {
         createdAt = optLong("createdAt", now),
         updatedAt = optLong("updatedAt", now),
     )
+
+    private fun WorkspaceTheme.toJson() = JSONObject()
+        .put("colors", JSONArray(colors))
+        .put("opacity", opacity.toDouble())
+        .put("texture", texture.toDouble())
+
+    private fun JSONObject.toTheme(): WorkspaceTheme? {
+        val colors = optJSONArray("colors") ?: return null
+        val values = (0 until colors.length()).map { colors.getInt(it) }.take(MAX_THEME_COLORS)
+        if (values.isEmpty()) return null
+        return WorkspaceTheme(
+            colors = values,
+            opacity = optDouble("opacity", WorkspaceTheme.DEFAULT_OPACITY.toDouble()).toFloat(),
+            texture = optDouble("texture", 0.0).toFloat(),
+        )
+    }
 
     private fun JSONObject.toV1Pin(workspaceId: String, now: Long) = PinnedItem(
         id = getString("id"),
