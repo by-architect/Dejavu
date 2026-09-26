@@ -69,24 +69,30 @@ interface KaizenHomeInteractor {
     fun onTabClick(tabId: String)
     fun onPinClick(pin: PinnedItem)
 
-    /** Runs a built-in action that needs no further input from the user. */
-    fun onTabAction(action: TabAction, targets: ActionTargets)
+    /** Runs a built-in action that needs no further input from the user, from the page of [workspaceId]. */
+    fun onTabAction(action: TabAction, targets: ActionTargets, workspaceId: String)
 
     /** Sends the requests of a custom action for [targets]. */
     fun onCustomAction(action: CustomAction, targets: ActionTargets)
 
-    /** Moves dragged tabs and pinned items, or a dragged folder, to [target] in [workspaceId]. */
-    fun onDrop(workspaceId: String, selection: Selection, folderId: String?, target: DropTarget)
+    /** Moves dragged tabs, pinned items and folders to [target] in [workspaceId]. */
+    fun onDrop(workspaceId: String, selection: Selection, target: DropTarget)
+
+    /** Moves essential [pinId] to position [index] among the essentials. */
+    fun onMoveEssential(pinId: String, index: Int)
 
     /** Closes the unpinned tabs of [workspaceId], with a way to undo. */
     fun onClearUnpinned(workspaceId: String)
     fun onCreateFolder(workspaceId: String, parentId: String?, name: String, targets: ActionTargets)
     fun onRenameFolder(folderId: String, name: String)
     fun onToggleFolder(folderId: String)
-    fun onMoveToFolder(targets: ActionTargets, folderIds: Set<String>, destinationId: String?)
-    fun onUnpackFolder(folderId: String)
-    fun onDeleteFolder(folderId: String)
-    fun onMoveToWorkspace(targets: ActionTargets, folderIds: Set<String>, workspaceId: String)
+
+    /** Pins [targets] in [workspaceId], inside [folderId] or at the end of the top level when it is `null`. */
+    fun onMoveToFolder(workspaceId: String, targets: ActionTargets, folderId: String?)
+
+    /** Removes pinned tabs, essentials and folders with everything inside them, and closes every tab of [targets]. */
+    fun onDeleteItems(targets: ActionTargets)
+    fun onMoveToWorkspace(targets: ActionTargets, workspaceId: String)
     fun onSearchClick()
 
     /** Starts a new tab in [containerId], or without a container when it is `null`. */
@@ -99,9 +105,9 @@ interface KaizenHomeInteractor {
 }
 
 /**
- * Workspace based home screen. Each workspace is a page with its pinned tabs and folders, then its other tabs;
- * swiping horizontally switches workspace. Long-pressing a tab starts selection mode; keeping the finger down and
- * moving drags the selected tabs.
+ * Workspace based home screen. The essentials sit on top of every workspace. Each workspace is a page with its pinned
+ * tabs and folders, then its other tabs; swiping horizontally switches workspace. Long-pressing a tab or folder starts
+ * selection mode; keeping the finger down and moving drags the selection.
  */
 @Suppress("LongMethod", "LongParameterList", "CognitiveComplexMethod")
 @Composable
@@ -119,7 +125,9 @@ fun KaizenHome(
     val pagerState = rememberPagerState(initialPage = state.activeIndex) { state.workspaces.size }
     var selection by remember { mutableStateOf<Selection?>(null) }
     var dialog by remember { mutableStateOf<HomeDialog?>(null) }
+    var essentialsDrop by remember { mutableStateOf(EssentialsDrop.NONE) }
     val currentWorkspace = state.workspaces.getOrNull(pagerState.currentPage) ?: state.workspaces.first()
+    val tabsById = remember(tabs) { tabs.associateBy { it.id } }
 
     LaunchedEffect(pagerState.settledPage) {
         state.workspaces.getOrNull(pagerState.settledPage)?.let { interactor.onWorkspaceSelected(it.id) }
@@ -134,30 +142,47 @@ fun KaizenHome(
     LaunchedEffect(tabs, state.pins) {
         val current = selection ?: return@LaunchedEffect
         val tabIds = tabs.map { it.id }.toSet()
-        val pinIds = state.pins.map { it.id }.toSet()
-        val cleaned = Selection(current.tabIds.filter { it in tabIds }.toSet(), current.pinIds.filter { it in pinIds }.toSet())
+        val (folders, pins) = state.pins.partition { it.isFolder }
+        val pinIds = pins.map { it.id }.toSet()
+        val folderIds = folders.map { it.id }.toSet()
+        val cleaned = Selection(
+            tabIds = current.tabIds.filter { it in tabIds }.toSet(),
+            pinIds = current.pinIds.filter { it in pinIds }.toSet(),
+            folderIds = current.folderIds.filter { it in folderIds }.toSet(),
+        )
         selection = cleaned.takeIf { it.size > 0 }
     }
 
     BackHandler(enabled = selection != null) { selection = null }
 
     fun runAction(action: RowAction, targets: ActionTargets, workspaceId: String) {
-        when {
-            action is RowAction.Custom -> interactor.onCustomAction(action.action, targets)
-            action !is RowAction.BuiltIn -> Unit
-            action.action == TabAction.MOVE_TO_WORKSPACE -> dialog = HomeDialog.MoveToWorkspace(workspaceId, targets)
-            action.action == TabAction.MOVE_TO_FOLDER -> dialog = HomeDialog.MoveToFolder(workspaceId, targets)
-            action.action == TabAction.NEW_FOLDER ->
-                dialog = HomeDialog.NewFolder(workspaceId, parentId = null, targets = targets)
-            else -> interactor.onTabAction(action.action, targets)
+        when (action) {
+            is RowAction.Custom -> interactor.onCustomAction(action.action, targets)
+            is RowAction.BuiltIn -> when (action.action) {
+                TabAction.MOVE_TO_WORKSPACE -> dialog = HomeDialog.MoveToWorkspace(workspaceId, targets)
+                TabAction.MOVE_TO_FOLDER -> dialog = HomeDialog.MoveToFolder(workspaceId, targets)
+                TabAction.NEW_FOLDER -> dialog = HomeDialog.NewFolder(workspaceId, state.newFolderParent(targets), targets)
+                TabAction.NEW_SUBFOLDER ->
+                    targets.folders.singleOrNull()?.let { dialog = HomeDialog.NewFolder(workspaceId, parentId = it.id) }
+                TabAction.RENAME_FOLDER -> targets.folders.singleOrNull()?.let { dialog = HomeDialog.RenameFolder(it) }
+                TabAction.DELETE -> dialog = HomeDialog.DeleteItems(targets)
+                else -> interactor.onTabAction(action.action, targets, workspaceId)
+            }
         }
         selection = null
+    }
+
+    fun onPinClick(pin: PinnedItem) {
+        val current = selection
+        if (current != null) selection = current.togglePin(pin.id).takeIf { it.size > 0 } else interactor.onPinClick(pin)
     }
 
     Column(modifier = modifier.fillMaxSize().background(MaterialTheme.colorScheme.surface)) {
         val activeSelection = selection
         if (activeSelection == null) {
             TopBar(interactor)
+        } else if (essentialsDrop != EssentialsDrop.NONE) {
+            EssentialsDropBar(active = essentialsDrop == EssentialsDrop.ACTIVE)
         } else {
             SelectionTopBar(
                 count = activeSelection.size,
@@ -170,6 +195,24 @@ fun KaizenHome(
                             .map { it.id }.toSet(),
                     )
                 },
+            )
+        }
+
+        if (state.essentials.isNotEmpty()) {
+            EssentialsGrid(
+                essentials = state.essentials,
+                tabsById = tabsById,
+                selectedTabId = selectedTabId,
+                containers = containers,
+                selection = activeSelection,
+                isDropTarget = essentialsDrop == EssentialsDrop.ACTIVE,
+                onClick = ::onPinClick,
+                onStartDrag = { pin -> selection = (selection ?: Selection()) + Selection(pinIds = setOf(pin.id)) },
+                onMove = { pinId, index ->
+                    interactor.onMoveEssential(pinId, index)
+                    selection = null
+                },
+                modifier = Modifier.padding(bottom = 4.dp),
             )
         }
 
@@ -194,39 +237,24 @@ fun KaizenHome(
                         val current = selection
                         if (current != null) selection = current.toggleTab(tab.id).takeIf { it.size > 0 } else interactor.onTabClick(tab.id)
                     },
-                    onPinClick = { pin ->
-                        val current = selection
-                        if (current != null) selection = current.togglePin(pin.id).takeIf { it.size > 0 } else interactor.onPinClick(pin)
-                    },
-                    onStartDrag = { tabId, pinId ->
-                        val base = selection ?: Selection()
-                        val started = base.copy(
-                            tabIds = base.tabIds + listOfNotNull(tabId),
-                            pinIds = base.pinIds + listOfNotNull(pinId),
-                        )
+                    onPinClick = ::onPinClick,
+                    onStartDrag = { picked ->
+                        val started = (selection ?: Selection()) + picked
                         selection = started
                         started
                     },
-                    onDrop = { dragged, folderId, target ->
-                        interactor.onDrop(workspace.id, dragged, folderId, target)
+                    onDrop = { dragged, target ->
+                        interactor.onDrop(workspace.id, dragged, target)
                         selection = null
                     },
+                    onEssentialsDrop = { essentialsDrop = it },
                     onRowAction = { action, targets -> runAction(action, targets, workspace.id) },
-                    onFolderClick = { interactor.onToggleFolder(it.id) },
-                    onFolderMenu = { folder, item ->
-                        when (item) {
-                            FolderMenuItem.NEW_SUBFOLDER -> dialog = HomeDialog.NewFolder(workspace.id, parentId = folder.id)
-                            FolderMenuItem.RENAME -> dialog = HomeDialog.RenameFolder(folder)
-                            FolderMenuItem.SLEEP_ALL ->
-                                interactor.onTabAction(TabAction.SLEEP, ActionTargets.ofFolder(state, tabs, folder.id))
-                            FolderMenuItem.SHARE ->
-                                interactor.onTabAction(TabAction.SHARE, ActionTargets.ofFolder(state, tabs, folder.id))
-                            FolderMenuItem.MOVE_TO_FOLDER ->
-                                dialog = HomeDialog.MoveToFolder(workspace.id, ActionTargets(), setOf(folder.id))
-                            FolderMenuItem.MOVE_TO_WORKSPACE ->
-                                dialog = HomeDialog.MoveToWorkspace(workspace.id, ActionTargets(), setOf(folder.id))
-                            FolderMenuItem.UNPACK -> interactor.onUnpackFolder(folder.id)
-                            FolderMenuItem.DELETE -> dialog = HomeDialog.DeleteFolder(folder)
+                    onFolderClick = { folder ->
+                        val current = selection
+                        if (current != null) {
+                            selection = current.toggleFolder(folder.id).takeIf { it.size > 0 }
+                        } else {
+                            interactor.onToggleFolder(folder.id)
                         }
                     },
                     onNewFolder = { dialog = HomeDialog.NewFolder(workspace.id, parentId = null) },
@@ -317,6 +345,39 @@ private fun TopBar(interactor: KaizenHomeInteractor) {
     }
 }
 
+/** Replaces the selection bar on top while dragged tabs can be dropped into the essentials. */
+@Composable
+private fun EssentialsDropBar(active: Boolean) {
+    Box(
+        contentAlignment = Alignment.Center,
+        modifier = Modifier.fillMaxWidth().height(64.dp).padding(horizontal = 12.dp, vertical = 8.dp),
+    ) {
+        Row(
+            verticalAlignment = Alignment.CenterVertically,
+            horizontalArrangement = Arrangement.Center,
+            modifier = Modifier
+                .fillMaxSize()
+                .clip(RoundedCornerShape(16.dp))
+                .background(
+                    if (active) MaterialTheme.colorScheme.primaryContainer else MaterialTheme.colorScheme.surfaceContainerHigh,
+                ),
+        ) {
+            Icon(
+                painter = painterResource(iconsR.drawable.mozac_ic_grid_add_24),
+                contentDescription = null,
+                tint = MaterialTheme.colorScheme.onSurface,
+                modifier = Modifier.size(20.dp),
+            )
+            Spacer(Modifier.width(10.dp))
+            Text(
+                text = stringResource(R.string.kaizen_essentials_drop),
+                style = MaterialTheme.typography.labelLarge,
+                color = MaterialTheme.colorScheme.onSurface,
+            )
+        }
+    }
+}
+
 @Composable
 private fun SelectionTopBar(
     count: Int,
@@ -374,8 +435,8 @@ private fun SelectionAction(
     onAction: (RowAction) -> Unit,
     modifier: Modifier = Modifier,
 ) {
-    val isClose = action is RowAction.BuiltIn && action.action == TabAction.CLOSE
-    val color = if (isClose) MaterialTheme.colorScheme.error else MaterialTheme.colorScheme.onSurface
+    val isDestructive = action is RowAction.BuiltIn && (action.action == TabAction.CLOSE || action.action == TabAction.DELETE)
+    val color = if (isDestructive) MaterialTheme.colorScheme.error else MaterialTheme.colorScheme.onSurface
     Column(
         horizontalAlignment = Alignment.CenterHorizontally,
         modifier = modifier

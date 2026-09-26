@@ -33,20 +33,36 @@ enum class TabAction(
     MOVE_TO_WORKSPACE("move_to_workspace", R.string.kaizen_action_move_to_workspace, iconsR.drawable.mozac_ic_forward_24),
     MOVE_TO_FOLDER("move_to_folder", R.string.kaizen_action_move_to_folder, iconsR.drawable.mozac_ic_folder_arrow_right_24),
     NEW_FOLDER("new_folder", R.string.kaizen_action_new_folder, iconsR.drawable.mozac_ic_folder_add_24),
+    RESET_PIN("reset_pin", R.string.kaizen_action_reset_pin, iconsR.drawable.mozac_ic_arrow_counter_clockwise_24),
+    ADD_TO_ESSENTIALS("add_to_essentials", R.string.kaizen_action_add_to_essentials, iconsR.drawable.mozac_ic_grid_add_24),
+    REMOVE_FROM_ESSENTIALS(
+        "remove_from_essentials",
+        R.string.kaizen_action_remove_from_essentials,
+        iconsR.drawable.mozac_ic_tab_ungroup_24,
+    ),
+    NEW_SUBFOLDER("new_subfolder", R.string.kaizen_folder_new_subfolder, iconsR.drawable.mozac_ic_folder_add_24),
+    RENAME_FOLDER("rename_folder", R.string.kaizen_folder_rename, iconsR.drawable.mozac_ic_edit_24),
+    UNPACK_FOLDER("unpack_folder", R.string.kaizen_folder_unpack, iconsR.drawable.mozac_ic_tab_ungroup_24),
+    DELETE("delete", R.string.kaizen_action_delete, iconsR.drawable.mozac_ic_delete_24),
     ;
 
     companion object {
         /** Actions the user can put on pinned tab rows, in display order. */
-        val forPinnedRows =
-            listOf(UNPIN, SLEEP, BOOKMARK, SHARE, COPY_LINK, DUPLICATE, MOVE_TO_FOLDER, MOVE_TO_WORKSPACE, CLOSE)
+        val forPinnedRows = listOf(
+            UNPIN, RESET_PIN, ADD_TO_ESSENTIALS, SLEEP, BOOKMARK, SHARE, COPY_LINK, DUPLICATE, MOVE_TO_FOLDER,
+            MOVE_TO_WORKSPACE, CLOSE,
+        )
 
         /** Actions the user can put on unpinned tab rows, in display order. */
-        val forUnpinnedRows =
-            listOf(PIN, SLEEP, BOOKMARK, SHARE, COPY_LINK, DUPLICATE, MOVE_TO_FOLDER, MOVE_TO_WORKSPACE, CLOSE)
+        val forUnpinnedRows = listOf(
+            PIN, ADD_TO_ESSENTIALS, SLEEP, BOOKMARK, SHARE, COPY_LINK, DUPLICATE, MOVE_TO_FOLDER, MOVE_TO_WORKSPACE, CLOSE,
+        )
 
         /** Actions of the selection bar, in display order. */
         val forSelection = listOf(
-            SHARE, SLEEP, BOOKMARK, COPY_LINK, PIN, UNPIN, NEW_FOLDER, MOVE_TO_FOLDER, MOVE_TO_WORKSPACE, DUPLICATE, CLOSE,
+            SHARE, SLEEP, BOOKMARK, COPY_LINK, PIN, UNPIN, RESET_PIN, ADD_TO_ESSENTIALS, REMOVE_FROM_ESSENTIALS,
+            NEW_FOLDER, NEW_SUBFOLDER, RENAME_FOLDER, MOVE_TO_FOLDER, MOVE_TO_WORKSPACE, UNPACK_FOLDER, DUPLICATE, DELETE,
+            CLOSE,
         )
 
         fun fromKey(key: String): TabAction? = entries.firstOrNull { it.key == key }

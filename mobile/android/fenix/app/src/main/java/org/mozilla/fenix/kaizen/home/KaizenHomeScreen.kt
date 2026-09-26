@@ -50,10 +50,10 @@ import org.mozilla.fenix.kaizen.actions.ActionContext
 import org.mozilla.fenix.kaizen.actions.CustomAction
 import org.mozilla.fenix.kaizen.actions.CustomActionRunner
 import org.mozilla.fenix.kaizen.actions.TabAction
-import org.mozilla.fenix.kaizen.browser.PendingTabLeave
 import org.mozilla.fenix.kaizen.containers.KaizenContainerStorage
 import org.mozilla.fenix.kaizen.settings.KaizenSettings
 import org.mozilla.fenix.kaizen.settings.resolveRowActions
+import org.mozilla.fenix.kaizen.workspaces.MAX_ESSENTIALS
 import org.mozilla.fenix.kaizen.workspaces.PinPlacement
 import org.mozilla.fenix.kaizen.workspaces.PinSource
 import org.mozilla.fenix.kaizen.workspaces.PinnedItem
@@ -115,7 +115,6 @@ fun ComposeView.setKaizenHomeContent(
 
             LaunchedEffect(Unit) {
                 containerStorage.load()
-                PendingTabLeave.consume()?.let { interactor.onTabLeft(it) }
             }
 
             LaunchedEffect(isSearchActive) {
@@ -222,27 +221,27 @@ private class DefaultKaizenHomeInteractor(
         openTab(tabId)
     }
 
-    /** Unloads a pinned tab the user left with Back, or closes an unpinned one. */
-    fun onTabLeft(leave: PendingTabLeave.Leave) {
-        if (store.state.findTab(leave.tabId) == null) return
-        if (leave.sleep) {
-            store.dispatch(EngineAction.SuspendEngineSessionAction(leave.tabId))
-        } else {
-            tabsUseCases.removeTab(leave.tabId)
-        }
-    }
-
-    override fun onTabAction(action: TabAction, targets: ActionTargets) {
+    @Suppress("CyclomaticComplexMethod")
+    override fun onTabAction(action: TabAction, targets: ActionTargets, workspaceId: String) {
         when (action) {
             TabAction.CLOSE -> closeTabs(targets.openTabs.map { it.id })
             TabAction.PIN -> repository.pinTabs(targets.tabs.map { it.toPinSource() })
-            TabAction.UNPIN -> repository.unpin(targets.pins.map { it.id }.toSet())
+            TabAction.UNPIN -> repository.unpin(targets.pins.filterNot { it.essential }.map { it.id }.toSet())
             TabAction.SLEEP -> targets.awakeTabs.forEach { store.dispatch(EngineAction.SuspendEngineSessionAction(it.id)) }
             TabAction.BOOKMARK -> bookmark(targets.links)
             TabAction.SHARE -> share(targets.links)
             TabAction.COPY_LINK -> copyLinks(targets.links)
             TabAction.DUPLICATE -> duplicate(targets)
-            TabAction.MOVE_TO_WORKSPACE, TabAction.MOVE_TO_FOLDER, TabAction.NEW_FOLDER -> Unit
+            TabAction.RESET_PIN -> targets.changedPins.forEach { (pin, tab) ->
+                pin.url?.let { components.useCases.sessionUseCases.loadUrl(it, tab.id) }
+            }
+            TabAction.ADD_TO_ESSENTIALS -> addToEssentials(targets)
+            TabAction.REMOVE_FROM_ESSENTIALS -> removeFromEssentials(targets.pins.filter { it.essential }, workspaceId)
+            TabAction.UNPACK_FOLDER -> targets.folders.forEach { repository.unpackFolder(it.id) }
+            TabAction.DELETE -> onDeleteItems(targets)
+            TabAction.MOVE_TO_WORKSPACE, TabAction.MOVE_TO_FOLDER, TabAction.NEW_FOLDER, TabAction.NEW_SUBFOLDER,
+            TabAction.RENAME_FOLDER,
+            -> Unit
         }
     }
 
@@ -266,58 +265,42 @@ private class DefaultKaizenHomeInteractor(
         }
     }
 
-    @Suppress("LongMethod")
-    override fun onDrop(workspaceId: String, selection: Selection, folderId: String?, target: DropTarget) {
+    override fun onDrop(workspaceId: String, selection: Selection, target: DropTarget) {
         val state = repository.state.value
-        val pins = state.pins.filter { it.id in selection.pinIds && !it.isFolder }
-        val tabs = selection.tabIds.mapNotNull { store.state.findTab(it) }.filter { state.pinOf(it.id) == null }
+        val targets = ActionTargets.of(state, store.state.normalTabs, selection)
         val placement = when (target) {
             is DropTarget.IntoFolder -> PinPlacement.Into(target.folderId)
             is DropTarget.NextToPin -> PinPlacement.Next(target.pinId, target.after)
             is DropTarget.PinnedEdge -> PinPlacement.Edge(target.atEnd)
-            is DropTarget.NextToTab, is DropTarget.UnpinnedEdge -> null
+            DropTarget.Essentials -> {
+                addToEssentials(targets)
+                return
+            }
+            is DropTarget.NextToTab, DropTarget.UnpinnedStart -> null
         }
         if (placement != null) {
-            repository.placePins(
-                workspaceId = workspaceId,
-                itemIds = pins.map { it.id }.toSet() + listOfNotNull(folderId),
-                newPins = tabs.map { it.toPinSource() },
-                placement = placement,
-            )
+            repository.placePins(workspaceId, targets.itemIds, targets.tabs.map { it.toPinSource() }, placement)
             return
         }
-        if (folderId != null) return
+        if (targets.folders.isNotEmpty()) return
 
         // Unpinning: open pinned tabs become normal tabs, closed ones are reopened without loading.
-        val livePinnedTabs = pins.mapNotNull { pin -> pin.tabId?.takeIf { store.state.findTab(it) != null } }
-        val reopened = pins.filter { pin -> pin.tabId == null || store.state.findTab(pin.tabId) == null }.mapNotNull { pin ->
-            pin.url?.let { url ->
-                tabsUseCases.addTab(
-                    url = url,
-                    selectTab = false,
-                    startLoading = false,
-                    title = pin.title,
-                    contextId = pin.containerId,
-                    source = SessionState.Source.Internal.None,
-                )
-            }
-        }
-        repository.unpin(pins.map { it.id }.toSet())
-
-        val moving = tabs.map { it.id } + livePinnedTabs + reopened
+        val moving = targets.tabs.map { it.id } + targets.pinnedTabs.map { it.id } + reopenClosed(targets.pins)
+        repository.unpin(targets.pins.map { it.id }.toSet())
+        repository.moveToWorkspace(tabIds = moving.toSet(), itemIds = emptySet(), workspaceId = workspaceId)
         val others = store.state.normalTabs.filter {
             it.id !in moving && state.workspaceOf(it.id) == workspaceId && state.pinOf(it.id) == null
         }
         val (anchor, after) = when (target) {
             is DropTarget.NextToTab -> target.tabId to target.after
-            is DropTarget.UnpinnedEdge ->
-                if (target.atEnd) others.lastOrNull()?.id to true else others.firstOrNull()?.id to false
-            else -> null to false
+            else -> others.firstOrNull()?.id to false
         }
         if (anchor != null && moving.isNotEmpty()) {
             store.dispatch(TabListAction.MoveTabsAction(moving, anchor, after))
         }
     }
+
+    override fun onMoveEssential(pinId: String, index: Int) = repository.moveEssential(pinId, index)
 
     override fun onClearUnpinned(workspaceId: String) {
         val state = repository.state.value
@@ -341,7 +324,7 @@ private class DefaultKaizenHomeInteractor(
             workspaceId = workspaceId,
             parentId = parentId,
             name = name,
-            itemIds = targets.pins.map { it.id }.toSet(),
+            itemIds = targets.itemIds,
             newPins = targets.tabs.map { it.toPinSource() },
         )
     }
@@ -350,26 +333,25 @@ private class DefaultKaizenHomeInteractor(
 
     override fun onToggleFolder(folderId: String) = repository.toggleFolder(folderId)
 
-    override fun onMoveToFolder(targets: ActionTargets, folderIds: Set<String>, destinationId: String?) {
-        if (targets.tabs.isNotEmpty()) repository.pinTabs(targets.tabs.map { it.toPinSource() }, destinationId)
-        val itemIds = targets.pins.map { it.id }.toSet() + folderIds
-        if (itemIds.isNotEmpty()) repository.moveToFolder(itemIds, destinationId)
+    override fun onMoveToFolder(workspaceId: String, targets: ActionTargets, folderId: String?) {
+        repository.placePins(
+            workspaceId = workspaceId,
+            itemIds = targets.itemIds,
+            newPins = targets.tabs.map { it.toPinSource() },
+            placement = folderId?.let { PinPlacement.Into(it) } ?: PinPlacement.Edge(atEnd = true),
+        )
     }
 
-    override fun onUnpackFolder(folderId: String) = repository.unpackFolder(folderId)
-
-    override fun onDeleteFolder(folderId: String) {
-        val state = repository.state.value
-        val removed = state.descendantIds(folderId)
-        val tabIds = state.pins.filter { it.id in removed }.mapNotNull { it.tabId }
-        repository.deleteFolder(folderId)
+    override fun onDeleteItems(targets: ActionTargets) {
+        val tabIds = targets.openTabs.map { it.id }
+        repository.deleteItems(targets.itemIds)
         closeTabs(tabIds)
     }
 
-    override fun onMoveToWorkspace(targets: ActionTargets, folderIds: Set<String>, workspaceId: String) {
+    override fun onMoveToWorkspace(targets: ActionTargets, workspaceId: String) {
         repository.moveToWorkspace(
             tabIds = targets.tabs.map { it.id }.toSet(),
-            itemIds = targets.pins.map { it.id }.toSet() + folderIds,
+            itemIds = targets.itemIds,
             workspaceId = workspaceId,
         )
     }
@@ -414,6 +396,36 @@ private class DefaultKaizenHomeInteractor(
         if (open.isNotEmpty()) tabsUseCases.removeTabs(open)
     }
 
+    /** Opens the closed ones of [pins] again without loading them, and returns the new tabs. */
+    private fun reopenClosed(pins: List<PinnedItem>): List<String> =
+        pins.filter { pin -> pin.tabId == null || store.state.findTab(pin.tabId) == null }.mapNotNull { pin ->
+            pin.url?.let { url ->
+                tabsUseCases.addTab(
+                    url = url,
+                    selectTab = false,
+                    startLoading = false,
+                    title = pin.title,
+                    contextId = pin.containerId,
+                    source = SessionState.Source.Internal.None,
+                ).also { repository.attachPinned(pin.id, it) }
+            }
+        }
+
+    private fun addToEssentials(targets: ActionTargets) {
+        val candidates = targets.tabs.size + targets.pins.count { !it.essential }
+        val room = MAX_ESSENTIALS - repository.state.value.essentials.size
+        repository.addToEssentials(targets.tabs.map { it.toPinSource() }, targets.pins.map { it.id }.toSet())
+        if (candidates > 0 && candidates > room) {
+            scope.launch { snackbar.showSnackbar(context.getString(R.string.kaizen_essentials_full, MAX_ESSENTIALS)) }
+        }
+    }
+
+    /** Turns essentials back into normal tabs of [workspaceId]; closed ones are opened again without loading. */
+    private fun removeFromEssentials(essentials: List<PinnedItem>, workspaceId: String) {
+        reopenClosed(essentials)
+        repository.removeFromEssentials(essentials.map { it.id }.toSet(), workspaceId)
+    }
+
     private fun bookmark(links: List<Pair<String, String>>) {
         val valid = links.filter { it.first.isNotBlank() }
         if (valid.isEmpty()) return
@@ -441,7 +453,7 @@ private class DefaultKaizenHomeInteractor(
     }
 
     private fun duplicate(targets: ActionTargets) {
-        targets.openTabs.forEach { tabsUseCases.duplicateTab(it, selectNewTab = false) }
+        (targets.tabs + targets.pinnedTabs).forEach { tabsUseCases.duplicateTab(it, selectNewTab = false) }
         targets.pins.filter { pin -> targets.pinnedTabs.none { it.id == pin.tabId } }.forEach { pin ->
             val url = pin.url ?: return@forEach
             tabsUseCases.addTab(
@@ -471,13 +483,14 @@ private class DefaultKaizenHomeInteractor(
                 date = date,
             )
         }
-        val pinContexts = targets.pins.map { pin ->
-            val tab = targets.pinnedTabs.firstOrNull { it.id == pin.tabId }
+        val pinnedTabs = targets.pinnedTabs + targets.folderTabs
+        val pinContexts = targets.allPins.map { pin ->
+            val tab = pinnedTabs.firstOrNull { it.id == pin.tabId }
             ActionContext(
                 url = tab?.content?.url ?: pin.url.orEmpty(),
                 title = tab?.content?.title?.ifBlank { null } ?: pin.title,
                 container = (tab?.contextId ?: pin.containerId)?.let { containerNames[it] }.orEmpty(),
-                workspace = workspaceName(pin.workspaceId),
+                workspace = workspaceName(pin.workspaceId ?: state.activeWorkspaceId),
                 folderPath = state.folderPathOf(pin),
                 date = date,
             )

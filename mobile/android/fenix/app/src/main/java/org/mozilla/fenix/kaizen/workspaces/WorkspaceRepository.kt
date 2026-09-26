@@ -114,8 +114,9 @@ class WorkspaceRepository private constructor(context: Context) {
     }
 
     /**
-     * Moves pinned items [itemIds] of [workspaceId] and pins the open tabs [newPins] at [placement]. Folders that would
-     * end up inside themselves or deeper than [MAX_FOLDER_DEPTH] stay where they are.
+     * Moves pinned items [itemIds] of [workspaceId] and pins the open tabs [newPins] at [placement]. Essentials among
+     * [itemIds] leave the essentials and become pinned tabs of [workspaceId], like in Zen. Folders that would end up
+     * inside themselves or deeper than [MAX_FOLDER_DEPTH] stay where they are.
      */
     fun placePins(
         workspaceId: String,
@@ -133,7 +134,7 @@ class WorkspaceRepository private constructor(context: Context) {
         }
         val moving = state.pins.filter { item ->
             item.id in itemIds &&
-                item.workspaceId == workspaceId &&
+                (item.workspaceId == workspaceId || item.essential) &&
                 !(
                     item.isFolder && parentId != null && (
                         parentId == item.id ||
@@ -158,7 +159,9 @@ class WorkspaceRepository private constructor(context: Context) {
                 updatedAt = now,
             )
         }
-        val placed = moving.map { it.copy(parentId = parentId, updatedAt = now) } + created
+        val placed = moving.map {
+            it.copy(parentId = parentId, workspaceId = workspaceId, essential = false, updatedAt = now)
+        } + created
         if (placed.isEmpty()) return@mutate state
 
         val movingIds = moving.map { it.id }.toSet()
@@ -173,10 +176,73 @@ class WorkspaceRepository private constructor(context: Context) {
             }
             is PinPlacement.Into -> rest.size
         }
+        val placedTabs = placed.mapNotNull { it.tabId }
         state.copy(
             pins = rest.toMutableList().apply { addAll(index, placed) },
-            assignments = state.assignments + created.associate { it.tabId!! to workspaceId },
+            assignments = state.assignments + placedTabs.associateWith { workspaceId },
         )
+    }
+
+    /**
+     * Makes pinned tabs [pinIds] and the open tabs [sources] essentials, shown in every workspace, as long as there is
+     * room for them below [MAX_ESSENTIALS].
+     */
+    fun addToEssentials(sources: List<PinSource>, pinIds: Set<String>) = mutate { state ->
+        val now = now()
+        val room = (MAX_ESSENTIALS - state.essentials.size).coerceAtLeast(0)
+        val converted = state.pins
+            .filter { it.id in pinIds && !it.isFolder && !it.essential }
+            .take(room)
+            .map { it.copy(essential = true, workspaceId = null, parentId = null, updatedAt = now) }
+        val alreadyPinned = state.pins.mapNotNull { it.tabId }.toSet()
+        val fresh = sources.filter { it.tabId !in alreadyPinned }.distinctBy { it.tabId }
+        val created = fresh.take(room - converted.size).map { source ->
+            PinnedItem(
+                id = newId(),
+                workspaceId = null,
+                parentId = null,
+                kind = PinKind.TAB,
+                title = source.title.ifBlank { source.url },
+                url = source.url,
+                containerId = source.containerId,
+                essential = true,
+                tabId = source.tabId,
+                createdAt = now,
+                updatedAt = now,
+            )
+        }
+        if (converted.isEmpty() && created.isEmpty()) return@mutate state
+        val convertedIds = converted.map { it.id }.toSet()
+        state.copy(pins = state.pins.filterNot { it.id in convertedIds } + converted + created)
+    }
+
+    /** Removes essentials [pinIds]; their open tabs stay open as normal tabs of [workspaceId]. */
+    fun removeFromEssentials(pinIds: Set<String>, workspaceId: String) = mutate { state ->
+        val removed = state.pins.filter { it.id in pinIds && it.essential }
+        if (removed.isEmpty()) return@mutate state
+        val removedIds = removed.map { it.id }.toSet()
+        state.copy(
+            pins = state.pins.filterNot { it.id in removedIds },
+            assignments = state.assignments + removed.mapNotNull { it.tabId }.associateWith { workspaceId },
+        )
+    }
+
+    /** Moves essential [pinId] to position [index] among the essentials. */
+    fun moveEssential(pinId: String, index: Int) = mutate { state ->
+        val essentials = state.essentials.toMutableList()
+        val item = essentials.firstOrNull { it.id == pinId } ?: return@mutate state
+        essentials.remove(item)
+        essentials.add(index.coerceIn(0, essentials.size), item)
+        state.copy(pins = state.pins.filterNot { it.essential } + essentials)
+    }
+
+    /**
+     * Removes pinned items: folders with everything inside them, pinned tabs and essentials. The caller closes the
+     * open tabs of the removed pins.
+     */
+    fun deleteItems(itemIds: Set<String>) = mutate { state ->
+        val removed = itemIds + itemIds.flatMap { state.descendantIds(it) }
+        state.copy(pins = state.pins.filterNot { it.id in removed })
     }
 
     /** Pins open tabs in their workspaces, optionally inside [parentId]. Tabs that are already pinned are skipped. */
@@ -192,7 +258,7 @@ class WorkspaceRepository private constructor(context: Context) {
         val pin = state.pins.firstOrNull { it.id == pinId } ?: return@mutate state
         state.copy(
             pins = state.pins.map { if (it.id == pinId) it.copy(tabId = tabId) else it },
-            assignments = state.assignments + (tabId to pin.workspaceId),
+            assignments = state.assignments + (tabId to (pin.workspaceId ?: state.activeWorkspaceId)),
         )
     }
 
@@ -233,9 +299,6 @@ class WorkspaceRepository private constructor(context: Context) {
         state.copy(pins = state.pins.map { if (it.id == folderId) it.copy(collapsed = !it.collapsed) else it })
     }
 
-    /** Moves pinned items and folders into [folderId], or to the top of the pinned section when it is `null`. */
-    fun moveToFolder(itemIds: Set<String>, folderId: String?) = mutate { state -> state.moved(itemIds, folderId) }
-
     /** Removes a folder and moves its content one level up, to where the folder was, like Zen's "Unpack Folder". */
     fun unpackFolder(folderId: String) = mutate { state ->
         val folder = state.pins.firstOrNull { it.id == folderId && it.isFolder } ?: return@mutate state
@@ -245,15 +308,6 @@ class WorkspaceRepository private constructor(context: Context) {
         state.copy(
             pins = state.pins.filterNot { it.id in childIds }.flatMap { if (it.id == folderId) children else listOf(it) },
         )
-    }
-
-    /**
-     * Removes a folder with everything inside it, like Zen's "Delete Folder". The caller closes the open tabs of the
-     * removed pins.
-     */
-    fun deleteFolder(folderId: String) = mutate { state ->
-        val removed = state.descendantIds(folderId) + folderId
-        state.copy(pins = state.pins.filterNot { it.id in removed })
     }
 
     /** Moves unpinned tabs and pinned items (with everything inside folders) to another workspace. */
@@ -266,7 +320,7 @@ class WorkspaceRepository private constructor(context: Context) {
         state.copy(
             pins = state.pins.map { pin ->
                 when (pin.id) {
-                    in itemIds -> pin.copy(workspaceId = workspaceId, parentId = null, updatedAt = now)
+                    in itemIds -> pin.copy(workspaceId = workspaceId, parentId = null, essential = false, updatedAt = now)
                     in nested -> pin.copy(workspaceId = workspaceId, updatedAt = now)
                     else -> pin
                 }
@@ -311,7 +365,7 @@ class WorkspaceRepository private constructor(context: Context) {
         }
         return copy(
             pins = pins + added,
-            assignments = assignments + added.associate { it.tabId!! to it.workspaceId },
+            assignments = assignments + added.associate { it.tabId!! to (it.workspaceId ?: activeWorkspaceId) },
         )
     }
 
@@ -334,7 +388,9 @@ class WorkspaceRepository private constructor(context: Context) {
         val workspaceId = folder?.workspaceId
         val movingIds = moving.map { it.id }.toSet()
         val nested = movingIds.flatMap { descendantIds(it) }.toSet()
-        val updated = moving.map { it.copy(parentId = folderId, workspaceId = workspaceId ?: it.workspaceId, updatedAt = now) }
+        val updated = moving.map {
+            it.copy(parentId = folderId, workspaceId = workspaceId ?: it.workspaceId, essential = false, updatedAt = now)
+        }
         val rest = pins.filterNot { it.id in movingIds }.map {
             if (workspaceId != null && it.id in nested && it.workspaceId != workspaceId) it.copy(workspaceId = workspaceId) else it
         }

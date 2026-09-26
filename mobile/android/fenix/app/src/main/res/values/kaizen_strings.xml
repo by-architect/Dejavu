@@ -50,13 +50,20 @@
     <!-- Folders -->
     <string name="kaizen_folder_new_subfolder">New subfolder</string>
     <string name="kaizen_folder_rename">Rename folder</string>
-    <string name="kaizen_folder_sleep_all">Sleep all tabs</string>
-    <string name="kaizen_folder_share">Share folder</string>
     <string name="kaizen_folder_unpack">Unpack folder</string>
-    <string name="kaizen_folder_delete">Delete folder</string>
-    <string name="kaizen_folder_delete_title">Delete “%1$s”?</string>
-    <string name="kaizen_folder_delete_message">The folder, its subfolders and its pinned tabs are removed, and their open tabs are closed.</string>
     <string name="kaizen_folder_top_level">Pinned tabs, no folder</string>
+
+    <!-- Essentials -->
+    <string name="kaizen_essentials_drop">Drop here to add to essentials</string>
+    <string name="kaizen_essentials_full">Essentials hold up to %1$d tabs</string>
+
+    <!-- Deleting pinned tabs, essentials and folders -->
+    <string name="kaizen_delete_item_title">Delete “%1$s”?</string>
+    <plurals name="kaizen_delete_items_title">
+        <item quantity="one">Delete %1$d item?</item>
+        <item quantity="other">Delete %1$d items?</item>
+    </plurals>
+    <string name="kaizen_delete_items_message">Pinned tabs, essentials and folders with everything inside them are removed, and their open tabs are closed.</string>
 
     <!-- Tab actions -->
     <string name="kaizen_action_close">Close</string>
@@ -70,12 +77,16 @@
     <string name="kaizen_action_move_to_workspace">Move to workspace</string>
     <string name="kaizen_action_move_to_folder">Move to folder</string>
     <string name="kaizen_action_new_folder">New folder</string>
+    <string name="kaizen_action_reset_pin">Reset pinned tab</string>
+    <string name="kaizen_action_add_to_essentials">Add to essentials</string>
+    <string name="kaizen_action_remove_from_essentials">Remove from essentials</string>
+    <string name="kaizen_action_delete">Delete</string>
 
     <!-- Settings -->
     <string name="kaizen_settings_title">Kaizen</string>
     <string name="kaizen_settings_tab_actions">Tab actions</string>
     <string name="kaizen_settings_tab_actions_entry_summary">Buttons on the tabs of the home page</string>
-    <string name="kaizen_settings_tab_actions_hint">Choose up to %1$d buttons for each kind of tab row. Long-press a tab on the home page to select several tabs and use every action.</string>
+    <string name="kaizen_settings_tab_actions_hint">Choose up to %1$d buttons for each kind of tab row. Long-press a tab, essential or folder on the home page to select several and use every action.</string>
     <string name="kaizen_settings_pinned_tabs">Pinned tabs</string>
     <string name="kaizen_settings_unpinned_tabs">Unpinned tabs</string>
     <string name="kaizen_settings_containers">Containers</string>
@@ -122,4 +133,13 @@
         <item quantity="one">%2$s failed (status %3$s)</item>
         <item quantity="other">%2$s failed for %1$d tabs (last status %3$s)</item>
     </plurals>
+    <string name="kaizen_custom_action_examples">Examples</string>
+    <string name="kaizen_custom_action_examples_hint">Tap an example to fill in the fields above. Then put your own server in place of example.com, and your own keys and IDs in place of the parts in capitals.</string>
+    <string name="kaizen_example_bookmark">Save the page as a bookmark</string>
+    <string name="kaizen_example_read_later">Save the page to read later</string>
+    <string name="kaizen_example_note">Save the page as a note</string>
+    <string name="kaizen_example_notification">Send the page as a notification</string>
+    <string name="kaizen_example_chat">Post the page to a chat</string>
+    <string name="kaizen_example_automation">Start an automation with the page</string>
+    <string name="kaizen_example_webhook">Send every variable as JSON, for n8n, Node-RED and similar tools</string>
 </resources>

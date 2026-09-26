@@ -75,7 +75,6 @@ import org.mozilla.fenix.kaizen.containers.ContainerIcon
 import org.mozilla.fenix.kaizen.containers.ContainerRecord
 import org.mozilla.fenix.kaizen.containers.NoContainerIcon
 import org.mozilla.fenix.kaizen.containers.color
-import org.mozilla.fenix.kaizen.workspaces.MAX_FOLDER_DEPTH
 import org.mozilla.fenix.kaizen.workspaces.PinnedItem
 import org.mozilla.fenix.kaizen.workspaces.Workspace
 import org.mozilla.fenix.kaizen.workspaces.WorkspaceState
@@ -98,29 +97,18 @@ private const val KEY_NEW_TAB = "new_tab"
 private const val PIN_PREFIX = "pin:"
 private const val TAB_PREFIX = "tab:"
 
-/** Entries of a folder's long-press menu. */
-enum class FolderMenuItem(@param:StringRes val label: Int) {
-    RENAME(R.string.kaizen_folder_rename),
-    NEW_SUBFOLDER(R.string.kaizen_folder_new_subfolder),
-    SLEEP_ALL(R.string.kaizen_folder_sleep_all),
-    SHARE(R.string.kaizen_folder_share),
-    MOVE_TO_FOLDER(R.string.kaizen_action_move_to_folder),
-    MOVE_TO_WORKSPACE(R.string.kaizen_action_move_to_workspace),
-    UNPACK(R.string.kaizen_folder_unpack),
-    DELETE(R.string.kaizen_folder_delete),
-}
-
 /** Callbacks of [WorkspacePage]. */
 data class WorkspacePageCallbacks(
     val onTabClick: (TabSessionState) -> Unit,
     val onPinClick: (PinnedItem) -> Unit,
-    /** A long press on a tab or pinned tab selects it; returns the selection a drag starting now moves. */
-    val onStartDrag: (tabId: String?, pinId: String?) -> Selection,
-    /** Drops the dragged [Selection], or the dragged folder, on a [DropTarget]. */
-    val onDrop: (selection: Selection, folderId: String?, target: DropTarget) -> Unit,
+    /** A long press on a row adds [picked] to the selection; returns the whole selection a drag starting now moves. */
+    val onStartDrag: (picked: Selection) -> Selection,
+    /** Drops the dragged [Selection] on a [DropTarget]. */
+    val onDrop: (selection: Selection, target: DropTarget) -> Unit,
+    /** Tells whether the drag in progress can be dropped into the essentials, above the page. */
+    val onEssentialsDrop: (EssentialsDrop) -> Unit,
     val onRowAction: (RowAction, ActionTargets) -> Unit,
     val onFolderClick: (PinnedItem) -> Unit,
-    val onFolderMenu: (PinnedItem, FolderMenuItem) -> Unit,
     val onNewFolder: () -> Unit,
     val onNewWorkspace: () -> Unit,
     val onEditWorkspace: () -> Unit,
@@ -134,9 +122,9 @@ data class WorkspacePageCallbacks(
 /**
  * What is being dragged and where it would land.
  *
- * @property selection Tabs and pinned tabs being dragged.
- * @property folderId Folder being dragged, instead of [selection].
+ * @property selection Tabs, pinned tabs and folders being dragged.
  * @property label Text of the floating row that follows the finger.
+ * @property isFolder Whether the long-pressed row is a folder.
  * @property pointerY Finger position, relative to the list.
  * @property startY Where the long press happened.
  * @property moved Whether the finger moved enough to be a drag rather than a long press.
@@ -144,8 +132,8 @@ data class WorkspacePageCallbacks(
  */
 private data class DragState(
     val selection: Selection,
-    val folderId: String?,
     val label: String,
+    val isFolder: Boolean,
     val pointerY: Float,
     val startY: Float,
     val moved: Boolean = false,
@@ -185,7 +173,6 @@ internal fun WorkspacePage(
 
     val listState = rememberLazyListState()
     var drag by remember { mutableStateOf<DragState?>(null) }
-    var menuFolderId by remember { mutableStateOf<String?>(null) }
     val content by rememberUpdatedState(PageContent(state, otherTabs))
     val latestCallbacks by rememberUpdatedState(callbacks)
     val haptics = LocalHapticFeedback.current
@@ -200,6 +187,7 @@ internal fun WorkspacePage(
             val current = drag ?: break
             val height = listState.layoutInfo.viewportSize.height
             val step = when {
+                current.pointerY < 0f -> 0f
                 current.pointerY < autoScrollEdge -> -AUTO_SCROLL_STEP
                 current.pointerY > height - autoScrollEdge -> AUTO_SCROLL_STEP
                 else -> 0f
@@ -213,10 +201,18 @@ internal fun WorkspacePage(
 
     val dropLines = drag?.takeIf { it.moved }?.target?.let { dropLinesFor(it) }
     val draggedKeys = drag?.let { current ->
+        val folderIds = current.selection.folderIds
         current.selection.tabIds.map { TAB_PREFIX + it } +
-            current.selection.pinIds.map { PIN_PREFIX + it } +
-            listOfNotNull(current.folderId?.let { PIN_PREFIX + it })
+            (current.selection.pinIds + folderIds + folderIds.flatMap { state.descendantIds(it) }).map { PIN_PREFIX + it }
     }.orEmpty().toSet()
+    val essentialsDrop = drag.let { current ->
+        when {
+            current == null || !current.moved || current.selection.folderIds.isNotEmpty() -> EssentialsDrop.NONE
+            current.target == DropTarget.Essentials -> EssentialsDrop.ACTIVE
+            else -> EssentialsDrop.AVAILABLE
+        }
+    }
+    LaunchedEffect(essentialsDrop) { latestCallbacks.onEssentialsDrop(essentialsDrop) }
     val lineColor = MaterialTheme.colorScheme.primary
     val insideColor = MaterialTheme.colorScheme.primaryContainer
 
@@ -246,11 +242,8 @@ internal fun WorkspacePage(
                             val current = drag
                             drag = null
                             val target = current?.target
-                            when {
-                                current == null -> Unit
-                                current.moved && target != null ->
-                                    latestCallbacks.onDrop(current.selection, current.folderId, target)
-                                !current.moved && current.folderId != null -> menuFolderId = current.folderId
+                            if (current != null && current.moved && target != null) {
+                                latestCallbacks.onDrop(current.selection, target)
                             }
                         },
                         onDragCancel = { drag = null },
@@ -281,19 +274,13 @@ internal fun WorkspacePage(
                         folder = item,
                         depth = entry.depth,
                         childCount = state.pins.count { it.parentId == item.id },
-                        canAddSubfolder = state.folderDepth(item.id) < MAX_FOLDER_DEPTH,
-                        menuOpen = menuFolderId == item.id,
-                        onDismissMenu = { menuFolderId = null },
+                        selection = selection?.let { item.id in it.folderIds },
                         onClick = { if (drag == null) callbacks.onFolderClick(item) },
-                        onMenu = {
-                            menuFolderId = null
-                            callbacks.onFolderMenu(item, it)
-                        },
                         modifier = rowModifier,
                     )
                 } else {
                     val tab = item.tabId?.let { tabsById[it] }
-                    val targets = ActionTargets(pins = listOf(item), pinnedTabs = listOfNotNull(tab))
+                    val targets = ActionTargets.ofPin(item, tab)
                     TabRow(
                         title = tab?.displayTitle ?: item.title.ifBlank { item.url.orEmpty() },
                         url = tab?.content?.url ?: item.url.orEmpty(),
@@ -319,6 +306,17 @@ internal fun WorkspacePage(
                 )
             }
 
+            item(key = KEY_NEW_TAB) {
+                NewTabRow(
+                    enabled = selection == null,
+                    containers = containers.values.toList(),
+                    onClick = callbacks.onNewTabClick,
+                    onNewTabInContainer = callbacks.onNewTabInContainer,
+                    onManageContainers = callbacks.onManageContainers,
+                    modifier = Modifier.dropLine(dropLines?.of(KEY_NEW_TAB), lineColor, insideColor),
+                )
+            }
+
             items(otherTabs, key = { TAB_PREFIX + it.id }) { tab ->
                 val key = TAB_PREFIX + tab.id
                 val targets = ActionTargets(tabs = listOf(tab))
@@ -339,45 +337,37 @@ internal fun WorkspacePage(
                         .alpha(if (key in draggedKeys) DRAGGED_ALPHA else 1f),
                 )
             }
-
-            item(key = KEY_NEW_TAB) {
-                NewTabRow(
-                    enabled = selection == null,
-                    containers = containers.values.toList(),
-                    onClick = callbacks.onNewTabClick,
-                    onNewTabInContainer = callbacks.onNewTabInContainer,
-                    onManageContainers = callbacks.onManageContainers,
-                    modifier = Modifier.dropLine(dropLines?.of(KEY_NEW_TAB), lineColor, insideColor),
-                )
-            }
         }
 
         drag?.takeIf { it.moved }?.let { current ->
-            DragGhost(label = current.label, isFolder = current.folderId != null, pointerY = current.pointerY)
+            DragGhost(label = current.label, isFolder = current.isFolder, pointerY = current.pointerY)
         }
     }
 }
 
-/** Starts dragging the row with [key]: a folder on its own, or a tab together with the other selected ones. */
-private fun startDrag(key: String, y: Float, content: PageContent, callbacks: WorkspacePageCallbacks): DragState? =
+/** Selects the row with [key] and starts dragging it together with the rest of the selection. */
+private fun startDrag(key: String, y: Float, content: PageContent, callbacks: WorkspacePageCallbacks): DragState? {
+    val picked: Selection
+    val title: String
+    val isFolder: Boolean
     when {
         key.startsWith(PIN_PREFIX) -> {
-            val pin = content.state.pins.firstOrNull { it.id == key.removePrefix(PIN_PREFIX) }
-            when {
-                pin == null -> null
-                pin.isFolder -> DragState(Selection(), pin.id, pin.title, y, y)
-                else -> {
-                    val dragged = callbacks.onStartDrag(null, pin.id)
-                    DragState(dragged, null, dragLabel(pin.title, dragged), y, y)
-                }
-            }
+            val pin = content.state.pins.firstOrNull { it.id == key.removePrefix(PIN_PREFIX) } ?: return null
+            picked = if (pin.isFolder) Selection(folderIds = setOf(pin.id)) else Selection(pinIds = setOf(pin.id))
+            title = pin.title
+            isFolder = pin.isFolder
         }
-        key.startsWith(TAB_PREFIX) -> content.otherTabs.firstOrNull { it.id == key.removePrefix(TAB_PREFIX) }?.let {
-            val dragged = callbacks.onStartDrag(it.id, null)
-            DragState(dragged, null, dragLabel(it.displayTitle, dragged), y, y)
+        key.startsWith(TAB_PREFIX) -> {
+            val tab = content.otherTabs.firstOrNull { it.id == key.removePrefix(TAB_PREFIX) } ?: return null
+            picked = Selection(tabIds = setOf(tab.id))
+            title = tab.displayTitle
+            isFolder = false
         }
-        else -> null
+        else -> return null
     }
+    val dragged = callbacks.onStartDrag(picked)
+    return DragState(dragged, dragLabel(title, dragged), isFolder, y, y)
+}
 
 private fun dragLabel(title: String, selection: Selection): String =
     if (selection.size > 1) "$title  +${selection.size - 1}" else title
@@ -386,24 +376,26 @@ private fun dragLabel(title: String, selection: Selection): String =
 private fun itemKeyAt(listState: LazyListState, y: Float): String? =
     listState.layoutInfo.visibleItemsInfo.firstOrNull { y >= it.offset && y < it.offset + it.size }?.key as? String
 
-/** Where the dragged items would land at [y], or `null` when they cannot go there. */
+/**
+ * Where the dragged items would land at [y], or `null` when they cannot go there. Above the list lie the essentials,
+ * which take tabs but no folders.
+ */
 @Suppress("CyclomaticComplexMethod", "ReturnCount")
 private fun targetAt(listState: LazyListState, y: Float, drag: DragState, state: WorkspaceState): DropTarget? {
+    val movingFolders = drag.selection.folderIds
+    if (y < 0f) return DropTarget.Essentials.takeIf { movingFolders.isEmpty() }
     val items = listState.layoutInfo.visibleItemsInfo
     if (items.isEmpty()) return null
     val info = items.firstOrNull { y >= it.offset && y < it.offset + it.size }
         ?: if (y < items.first().offset) items.first() else items.last()
     val fraction = ((y - info.offset) / info.size.toFloat()).coerceIn(0f, 1f)
     val key = info.key as? String ?: return null
-    val movingFolder = drag.folderId
-    val blockedPins = drag.selection.pinIds + listOfNotNull(movingFolder) +
-        (movingFolder?.let { state.descendantIds(it) } ?: emptySet())
+    val blockedPins = drag.selection.pinIds + movingFolders + movingFolders.flatMap { state.descendantIds(it) }
 
     val target = when {
         key == KEY_HEADER -> DropTarget.PinnedEdge(atEnd = false)
-        key == KEY_DIVIDER ->
-            if (fraction < 0.5f) DropTarget.PinnedEdge(atEnd = true) else DropTarget.UnpinnedEdge(atEnd = false)
-        key == KEY_NEW_TAB -> DropTarget.UnpinnedEdge(atEnd = true)
+        key == KEY_DIVIDER -> DropTarget.PinnedEdge(atEnd = true)
+        key == KEY_NEW_TAB -> DropTarget.UnpinnedStart
         key.startsWith(PIN_PREFIX) -> {
             val id = key.removePrefix(PIN_PREFIX)
             val item = state.pins.firstOrNull { it.id == id } ?: return null
@@ -421,18 +413,19 @@ private fun targetAt(listState: LazyListState, y: Float, drag: DragState, state:
         }
         else -> null
     }
-    val unpinsFolder = movingFolder != null && (target is DropTarget.NextToTab || target is DropTarget.UnpinnedEdge)
+    val unpinsFolder = movingFolders.isNotEmpty() &&
+        (target is DropTarget.NextToTab || target == DropTarget.UnpinnedStart)
     return target?.takeUnless { unpinsFolder }
 }
 
-private fun dropLinesFor(target: DropTarget): DropLines = when (target) {
+private fun dropLinesFor(target: DropTarget): DropLines? = when (target) {
     is DropTarget.IntoFolder -> DropLines(PIN_PREFIX + target.folderId, DropLine.INSIDE)
     is DropTarget.NextToPin -> DropLines(PIN_PREFIX + target.pinId, if (target.after) DropLine.BOTTOM else DropLine.TOP)
     is DropTarget.PinnedEdge ->
         if (target.atEnd) DropLines(KEY_DIVIDER, DropLine.TOP) else DropLines(KEY_HEADER, DropLine.BOTTOM)
     is DropTarget.NextToTab -> DropLines(TAB_PREFIX + target.tabId, if (target.after) DropLine.BOTTOM else DropLine.TOP)
-    is DropTarget.UnpinnedEdge ->
-        if (target.atEnd) DropLines(KEY_NEW_TAB, DropLine.TOP) else DropLines(KEY_DIVIDER, DropLine.BOTTOM)
+    DropTarget.UnpinnedStart -> DropLines(KEY_NEW_TAB, DropLine.BOTTOM)
+    DropTarget.Essentials -> null
 }
 
 private fun Modifier.dropLine(line: DropLine?, lineColor: Color, insideColor: Color): Modifier =
@@ -670,69 +663,60 @@ private fun WorkspaceHeader(
     }
 }
 
-@Suppress("LongParameterList")
+/** A folder of the pinned section. Tapping it folds it, or selects it in selection mode. */
 @Composable
 private fun FolderRow(
     folder: PinnedItem,
     depth: Int,
     childCount: Int,
-    canAddSubfolder: Boolean,
-    menuOpen: Boolean,
-    onDismissMenu: () -> Unit,
+    selection: Boolean?,
     onClick: () -> Unit,
-    onMenu: (FolderMenuItem) -> Unit,
     modifier: Modifier = Modifier,
 ) {
-    Box(modifier = modifier) {
-        Row(
-            verticalAlignment = Alignment.CenterVertically,
-            modifier = Modifier
-                .fillMaxWidth()
-                .padding(vertical = 2.dp)
-                .clip(RowShape)
-                .clickable(onClick = onClick)
-                .padding(start = 12.dp + IndentPerLevel * depth, top = 12.dp, bottom = 12.dp, end = 12.dp),
-        ) {
-            Icon(
-                painter = painterResource(
-                    if (folder.collapsed) iconsR.drawable.mozac_ic_chevron_right_16 else iconsR.drawable.mozac_ic_chevron_down_16,
-                ),
-                contentDescription = null,
-                tint = MaterialTheme.colorScheme.onSurfaceVariant,
-                modifier = Modifier.size(16.dp),
-            )
-            Spacer(Modifier.width(6.dp))
-            Icon(
-                painter = painterResource(iconsR.drawable.mozac_ic_folder_24),
-                contentDescription = null,
-                tint = MaterialTheme.colorScheme.onSurfaceVariant,
-                modifier = Modifier.size(20.dp),
-            )
-            Spacer(Modifier.width(12.dp))
+    Row(
+        verticalAlignment = Alignment.CenterVertically,
+        modifier = modifier
+            .fillMaxWidth()
+            .height(52.dp)
+            .padding(vertical = 2.dp)
+            .clip(RowShape)
+            .background(if (selection == true) MaterialTheme.colorScheme.secondaryContainer else Color.Transparent)
+            .clickable(onClick = onClick)
+            .padding(start = 12.dp + IndentPerLevel * depth),
+    ) {
+        Icon(
+            painter = painterResource(
+                if (folder.collapsed) iconsR.drawable.mozac_ic_chevron_right_16 else iconsR.drawable.mozac_ic_chevron_down_16,
+            ),
+            contentDescription = null,
+            tint = MaterialTheme.colorScheme.onSurfaceVariant,
+            modifier = Modifier.size(16.dp),
+        )
+        Spacer(Modifier.width(6.dp))
+        Icon(
+            painter = painterResource(iconsR.drawable.mozac_ic_folder_24),
+            contentDescription = null,
+            tint = MaterialTheme.colorScheme.onSurfaceVariant,
+            modifier = Modifier.size(20.dp),
+        )
+        Spacer(Modifier.width(12.dp))
+        Text(
+            text = folder.title,
+            style = MaterialTheme.typography.bodyLarge,
+            color = MaterialTheme.colorScheme.onSurface,
+            maxLines = 1,
+            overflow = TextOverflow.Ellipsis,
+            modifier = Modifier.weight(1f),
+        )
+        if (selection != null) {
+            SelectionMark(selected = selection)
+        } else if (folder.collapsed && childCount > 0) {
             Text(
-                text = folder.title,
-                style = MaterialTheme.typography.bodyLarge,
-                color = MaterialTheme.colorScheme.onSurface,
-                maxLines = 1,
-                overflow = TextOverflow.Ellipsis,
-                modifier = Modifier.weight(1f),
+                text = childCount.toString(),
+                style = MaterialTheme.typography.labelMedium,
+                color = MaterialTheme.colorScheme.onSurfaceVariant,
+                modifier = Modifier.padding(end = 14.dp),
             )
-            if (folder.collapsed && childCount > 0) {
-                Text(
-                    text = childCount.toString(),
-                    style = MaterialTheme.typography.labelMedium,
-                    color = MaterialTheme.colorScheme.onSurfaceVariant,
-                )
-            }
-        }
-        DropdownMenu(expanded = menuOpen, onDismissRequest = onDismissMenu) {
-            FolderMenuItem.entries.forEach { item ->
-                DropdownMenuItem(
-                    text = { Text(stringResource(item.label)) },
-                    enabled = item != FolderMenuItem.NEW_SUBFOLDER || canAddSubfolder,
-                    onClick = { onMenu(item) },
-                )
-            }
         }
     }
 }

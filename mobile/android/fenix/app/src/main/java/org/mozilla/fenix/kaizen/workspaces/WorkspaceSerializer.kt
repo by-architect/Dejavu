@@ -35,7 +35,7 @@ internal object WorkspaceSerializer {
             root.optJSONArray("pins").objects().map { it.toPinnedItem(now) }
         } else {
             workspaceArray.objects().flatMap { ws -> ws.optJSONArray("pinned").objects().map { it.toV1Pin(ws.getString("id"), now) } }
-        }.filter { it.workspaceId in workspaceIds }
+        }.filter { it.essential || it.workspaceId in workspaceIds }
 
         val assignments = root?.optJSONObject("assignments")?.let { obj ->
             obj.keys().asSequence().associateWith { obj.getString(it) }
@@ -72,7 +72,7 @@ internal object WorkspaceSerializer {
                     put(
                         JSONObject()
                             .put("id", pin.id)
-                            .put("workspaceId", pin.workspaceId)
+                            .putOpt("workspaceId", pin.workspaceId)
                             .putOpt("parentId", pin.parentId)
                             .put("kind", pin.kind.key)
                             .put("title", pin.title)
@@ -80,6 +80,7 @@ internal object WorkspaceSerializer {
                             .putOpt("containerId", pin.containerId)
                             .put("collapsed", pin.collapsed)
                             .putOpt("icon", pin.icon)
+                            .put("essential", pin.essential)
                             .putOpt("tabId", pin.tabId)
                             .put("createdAt", pin.createdAt)
                             .put("updatedAt", pin.updatedAt),
@@ -92,7 +93,7 @@ internal object WorkspaceSerializer {
 
     private fun JSONObject.toPinnedItem(now: Long) = PinnedItem(
         id = getString("id"),
-        workspaceId = getString("workspaceId"),
+        workspaceId = optStringOrNull("workspaceId"),
         parentId = optStringOrNull("parentId"),
         kind = PinKind.entries.firstOrNull { it.key == optString("kind") } ?: PinKind.TAB,
         title = optString("title"),
@@ -100,6 +101,7 @@ internal object WorkspaceSerializer {
         containerId = optStringOrNull("containerId"),
         collapsed = optBoolean("collapsed"),
         icon = optStringOrNull("icon"),
+        essential = optBoolean("essential"),
         tabId = optStringOrNull("tabId"),
         createdAt = optLong("createdAt", now),
         updatedAt = optLong("updatedAt", now),

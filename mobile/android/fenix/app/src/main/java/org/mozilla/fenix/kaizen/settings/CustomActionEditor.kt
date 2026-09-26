@@ -31,6 +31,7 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateListOf
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
+import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -44,12 +45,15 @@ import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.input.TextFieldValue
 import androidx.compose.ui.unit.dp
 import androidx.navigation.fragment.findNavController
+import kotlinx.coroutines.launch
 import mozilla.components.compose.base.button.FilledButton
 import org.mozilla.fenix.R
 import org.mozilla.fenix.kaizen.actions.ActionVariable
 import org.mozilla.fenix.kaizen.actions.CustomAction
+import org.mozilla.fenix.kaizen.actions.CustomActionExample
 import org.mozilla.fenix.kaizen.actions.CustomHeader
 import org.mozilla.fenix.kaizen.actions.HttpMethod
+import org.mozilla.fenix.kaizen.actions.customActionExamples
 import java.util.UUID
 import mozilla.components.ui.icons.R as iconsR
 
@@ -113,6 +117,8 @@ private fun CustomActionEditor(
         }
     }
     var focused by remember { mutableStateOf<EditorField>(EditorField.Url) }
+    val scrollState = rememberScrollState()
+    val scope = rememberCoroutineScope()
 
     fun insert(token: String) {
         when (val field = focused) {
@@ -127,11 +133,21 @@ private fun CustomActionEditor(
         }
     }
 
+    fun fill(example: CustomActionExample) {
+        name = example.name
+        method = example.method
+        url = TextFieldValue(example.url)
+        body = TextFieldValue(example.body)
+        headers.clear()
+        headers.addAll(example.headers.map { HeaderFields(TextFieldValue(it.name), TextFieldValue(it.value)) })
+        scope.launch { scrollState.animateScrollTo(0) }
+    }
+
     val trimmedUrl = url.text.trim()
     val isValid = name.isNotBlank() && (trimmedUrl.startsWith("https://") || trimmedUrl.startsWith("http://"))
 
     Column(
-        modifier = Modifier.fillMaxSize().verticalScroll(rememberScrollState()).padding(16.dp),
+        modifier = Modifier.fillMaxSize().verticalScroll(scrollState).padding(16.dp),
         verticalArrangement = Arrangement.spacedBy(12.dp),
     ) {
         OutlinedTextField(
@@ -248,7 +264,41 @@ private fun CustomActionEditor(
                 },
             )
         }
+
+        if (initial == null) {
+            SectionLabel(R.string.kaizen_custom_action_examples)
+            Text(
+                text = stringResource(R.string.kaizen_custom_action_examples_hint),
+                style = MaterialTheme.typography.bodySmall,
+                color = MaterialTheme.colorScheme.onSurfaceVariant,
+            )
+            customActionExamples.forEach { example -> ExampleRow(example, onClick = { fill(example) }) }
+        }
         Spacer(Modifier.height(24.dp))
+    }
+}
+
+@Composable
+private fun ExampleRow(example: CustomActionExample, onClick: () -> Unit) {
+    val shape = RoundedCornerShape(12.dp)
+    Column(
+        modifier = Modifier
+            .fillMaxWidth()
+            .clip(shape)
+            .border(1.dp, MaterialTheme.colorScheme.outlineVariant, shape)
+            .clickable(onClick = onClick)
+            .padding(horizontal = 14.dp, vertical = 10.dp),
+    ) {
+        Text(
+            text = example.name,
+            style = MaterialTheme.typography.titleSmall,
+            color = MaterialTheme.colorScheme.onSurface,
+        )
+        Text(
+            text = stringResource(example.description),
+            style = MaterialTheme.typography.bodySmall,
+            color = MaterialTheme.colorScheme.onSurfaceVariant,
+        )
     }
 }
 

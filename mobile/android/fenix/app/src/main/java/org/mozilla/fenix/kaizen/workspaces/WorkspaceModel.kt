@@ -26,6 +26,9 @@ data class Workspace(
 /** Deepest folder nesting allowed, matching Zen's default `zen.folders.max-subfolders`. */
 const val MAX_FOLDER_DEPTH = 5
 
+/** Most essentials allowed, matching Zen's default `zen.tabs.essentials.max`. */
+const val MAX_ESSENTIALS = 12
+
 /** Kind of a [PinnedItem]. */
 enum class PinKind(val key: String) {
     TAB("tab"),
@@ -38,7 +41,7 @@ enum class PinKind(val key: String) {
  * The order of the list is the display order among siblings.
  *
  * @property id Stable identifier, shared with other devices when syncing.
- * @property workspaceId Workspace the item belongs to.
+ * @property workspaceId Workspace the item belongs to, or `null` for essentials, which every workspace shows.
  * @property parentId Folder containing the item, or `null` at the top of the pinned section.
  * @property kind Whether this is a pinned tab or a folder.
  * @property title Folder name, or the pinned tab's title.
@@ -46,13 +49,14 @@ enum class PinKind(val key: String) {
  * @property containerId Container a pinned tab reopens in; `null` for folders and tabs without a container.
  * @property collapsed Whether a folder is collapsed. Local to this device, like in Zen.
  * @property icon Folder icon name, as Zen stores it. Not shown yet.
+ * @property essential Whether this pinned tab is one of the essentials shared by all workspaces, like in Zen.
  * @property tabId Open browser tab currently backing a pinned tab. Local to this device and never synced.
  * @property createdAt Creation time in milliseconds.
  * @property updatedAt Last change time in milliseconds, used to resolve sync conflicts.
  */
 data class PinnedItem(
     val id: String,
-    val workspaceId: String,
+    val workspaceId: String?,
     val parentId: String?,
     val kind: PinKind,
     val title: String,
@@ -60,6 +64,7 @@ data class PinnedItem(
     val containerId: String? = null,
     val collapsed: Boolean = false,
     val icon: String? = null,
+    val essential: Boolean = false,
     val tabId: String? = null,
     val createdAt: Long,
     val updatedAt: Long,
@@ -85,6 +90,10 @@ data class WorkspaceState(
 
     val activeWorkspace: Workspace?
         get() = workspaces.firstOrNull { it.id == activeWorkspaceId }
+
+    /** Essentials in display order. */
+    val essentials: List<PinnedItem>
+        get() = pins.filter { it.essential }
 
     /** Returns the workspace ID for [tabId], falling back to the active workspace for unassigned tabs. */
     fun workspaceOf(tabId: String): String = assignments[tabId] ?: activeWorkspaceId

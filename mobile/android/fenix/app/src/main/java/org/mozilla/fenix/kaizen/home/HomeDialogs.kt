@@ -34,6 +34,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.res.pluralStringResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
@@ -105,16 +106,25 @@ internal fun HomeDialogs(
             onDismiss = onDismiss,
         )
 
-        is HomeDialog.DeleteFolder -> ConfirmDialog(
-            title = stringResource(R.string.kaizen_folder_delete_title, dialog.folder.title),
-            message = stringResource(R.string.kaizen_folder_delete_message),
-            confirm = stringResource(R.string.kaizen_delete),
-            onConfirm = {
-                interactor.onDeleteFolder(dialog.folder.id)
-                onDismiss()
-            },
-            onDismiss = onDismiss,
-        )
+        is HomeDialog.DeleteItems -> {
+            val targets = dialog.targets
+            val single = (targets.pins + targets.folders).singleOrNull()?.takeIf { targets.tabs.isEmpty() }
+            val count = targets.pins.size + targets.folders.size + targets.tabs.size
+            ConfirmDialog(
+                title = if (single != null) {
+                    stringResource(R.string.kaizen_delete_item_title, single.title)
+                } else {
+                    pluralStringResource(R.plurals.kaizen_delete_items_title, count, count)
+                },
+                message = stringResource(R.string.kaizen_delete_items_message),
+                confirm = stringResource(R.string.kaizen_delete),
+                onConfirm = {
+                    interactor.onDeleteItems(targets)
+                    onDismiss()
+                },
+                onDismiss = onDismiss,
+            )
+        }
 
         is HomeDialog.MoveToFolder -> {
             var naming by remember { mutableStateOf(false) }
@@ -132,10 +142,9 @@ internal fun HomeDialogs(
                 FolderPickerDialog(
                     state = state,
                     workspaceId = dialog.workspaceId,
-                    movingFolderIds = dialog.folderIds,
-                    canCreate = dialog.folderIds.isEmpty(),
+                    movingFolderIds = dialog.targets.folders.map { it.id }.toSet(),
                     onPick = { folderId ->
-                        interactor.onMoveToFolder(dialog.targets, dialog.folderIds, folderId)
+                        interactor.onMoveToFolder(dialog.workspaceId, dialog.targets, folderId)
                         onDismiss()
                     },
                     onNewFolder = { naming = true },
@@ -148,7 +157,9 @@ internal fun HomeDialogs(
             title = R.string.kaizen_action_move_to_workspace,
             onDismiss = onDismiss,
         ) {
-            state.workspaces.filter { it.id != dialog.workspaceId }.forEach { workspace ->
+            // Essentials can also go to the workspace they are looked at from, as its pinned tabs.
+            val hasEssentials = dialog.targets.pins.any { it.essential }
+            state.workspaces.filter { hasEssentials || it.id != dialog.workspaceId }.forEach { workspace ->
                 PickerRow(
                     label = workspace.name,
                     leading = {
@@ -156,7 +167,7 @@ internal fun HomeDialogs(
                         if (container != null) ContainerIcon(container) else NoContainerIcon()
                     },
                     onClick = {
-                        interactor.onMoveToWorkspace(dialog.targets, dialog.folderIds, workspace.id)
+                        interactor.onMoveToWorkspace(dialog.targets, workspace.id)
                         onDismiss()
                     },
                 )
@@ -231,7 +242,6 @@ private fun FolderPickerDialog(
     state: WorkspaceState,
     workspaceId: String,
     movingFolderIds: Set<String>,
-    canCreate: Boolean,
     onPick: (String?) -> Unit,
     onNewFolder: () -> Unit,
     onDismiss: () -> Unit,
@@ -256,13 +266,11 @@ private fun FolderPickerDialog(
                 onClick = { onPick(entry.item.id) },
             )
         }
-        if (canCreate) {
-            PickerRow(
-                label = stringResource(R.string.kaizen_action_new_folder),
-                leading = { PickerIcon(iconsR.drawable.mozac_ic_folder_add_24) },
-                onClick = onNewFolder,
-            )
-        }
+        PickerRow(
+            label = stringResource(R.string.kaizen_action_new_folder),
+            leading = { PickerIcon(iconsR.drawable.mozac_ic_folder_add_24) },
+            onClick = onNewFolder,
+        )
     }
 }
 
