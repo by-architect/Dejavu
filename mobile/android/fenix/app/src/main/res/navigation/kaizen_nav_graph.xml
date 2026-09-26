@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/kaizen_settings_graph"
+    app:startDestination="@id/kaizenSettingsFragment">
+
+    <fragment
+        android:id="@+id/kaizenSettingsFragment"
+        android:name="org.mozilla.fenix.kaizen.settings.KaizenSettingsFragment"
+        android:label="@string/kaizen_settings_title" />
+
+    <fragment
+        android:id="@+id/kaizenTabActionsFragment"
+        android:name="org.mozilla.fenix.kaizen.settings.KaizenTabActionsFragment"
+        android:label="@string/kaizen_settings_tab_actions" />
+
+    <fragment
+        android:id="@+id/kaizenContainersFragment"
+        android:name="org.mozilla.fenix.kaizen.settings.KaizenContainersFragment"
+        android:label="@string/kaizen_settings_containers" />
+</navigation>

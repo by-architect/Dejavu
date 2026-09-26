@@ -11,100 +11,171 @@ import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.update
-import org.json.JSONArray
-import org.json.JSONObject
 import org.mozilla.fenix.R
 import java.util.UUID
 
 /**
- * A tab pinned to the top of a workspace. It survives closing its browser tab.
- *
- * @property id Stable identifier of the pin.
- * @property url URL the pin reopens when it has no open tab.
- * @property title Title shown while the pin has no open tab.
- * @property tabId The open browser tab backing this pin, or `null` when it is closed.
+ * What is needed to pin an open tab.
  */
-data class PinnedTab(
-    val id: String,
+data class PinSource(
+    val tabId: String,
     val url: String,
     val title: String,
-    val tabId: String?,
+    val containerId: String?,
 )
 
 /**
- * A workspace groups normal tabs. Every tab belongs to exactly one workspace.
- *
- * @property id Stable identifier of the workspace.
- * @property name User visible name of the workspace.
- * @property pinned Pinned tabs, shown above the other tabs.
+ * Keeps workspaces, pinned tabs, folders and tab assignments, and persists them in [SharedPreferences].
  */
-data class Workspace(
-    val id: String,
-    val name: String,
-    val pinned: List<PinnedTab> = emptyList(),
-)
-
-/**
- * @property workspaces Workspaces in display order. Never empty.
- * @property activeWorkspaceId The workspace currently shown on the home screen. New tabs are assigned to it.
- * @property assignments Tab ID to workspace ID.
- */
-data class WorkspaceState(
-    val workspaces: List<Workspace>,
-    val activeWorkspaceId: String,
-    val assignments: Map<String, String>,
-) {
-    val activeIndex: Int
-        get() = workspaces.indexOfFirst { it.id == activeWorkspaceId }.coerceAtLeast(0)
-
-    /** Returns the workspace ID for [tabId], falling back to the active workspace for unassigned tabs. */
-    fun workspaceOf(tabId: String): String = assignments[tabId] ?: activeWorkspaceId
-}
-
-/**
- * Persists workspaces, pinned tabs and tab assignments in [SharedPreferences].
- */
-class WorkspaceRepository(context: Context) {
+@Suppress("TooManyFunctions")
+class WorkspaceRepository private constructor(context: Context) {
     private val prefs = context.getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE)
     private val defaultName = context.getString(R.string.kaizen_workspace_default_name)
-    private val _state = MutableStateFlow(load())
+    private val _state = MutableStateFlow(
+        WorkspaceSerializer.read(prefs.getString(KEY_STATE, null), defaultName, System.currentTimeMillis()),
+    )
 
     val state: StateFlow<WorkspaceState> = _state.asStateFlow()
 
     fun selectWorkspace(id: String) = mutate { state ->
-        if (state.activeWorkspaceId == id || state.workspaces.none { it.id == id }) {
-            state
-        } else {
-            state.copy(activeWorkspaceId = id)
-        }
+        if (state.workspaces.none { it.id == id }) state else state.copy(activeWorkspaceId = id)
     }
 
-    fun addWorkspace(name: String) = mutate { state ->
-        val workspace = Workspace(UUID.randomUUID().toString(), name.trim().ifEmpty { defaultName })
+    fun addWorkspace(name: String, containerId: String?) = mutate { state ->
+        val now = now()
+        val workspace = Workspace(
+            id = WorkspaceSerializer.newWorkspaceId(),
+            name = name.trim().ifEmpty { defaultName },
+            containerId = containerId,
+            createdAt = now,
+            updatedAt = now,
+        )
         state.copy(workspaces = state.workspaces + workspace, activeWorkspaceId = workspace.id)
     }
 
-    fun pinTab(tabId: String, url: String, title: String) = mutate { state ->
-        val workspaceId = state.workspaceOf(tabId)
-        if (state.workspaces.any { ws -> ws.pinned.any { it.tabId == tabId } }) {
-            state
-        } else {
-            state.updateWorkspace(workspaceId) { ws ->
-                ws.copy(pinned = ws.pinned + PinnedTab(UUID.randomUUID().toString(), url, title, tabId))
-            }
-        }
+    fun updateWorkspace(id: String, name: String, containerId: String?) = mutate { state ->
+        state.copy(
+            workspaces = state.workspaces.map {
+                if (it.id == id) it.copy(name = name.trim().ifEmpty { it.name }, containerId = containerId, updatedAt = now()) else it
+            },
+        )
     }
 
-    fun unpin(pinnedId: String) = mutate { state ->
-        state.copy(workspaces = state.workspaces.map { ws -> ws.copy(pinned = ws.pinned.filterNot { it.id == pinnedId }) })
+    /** Deletes a workspace, moving its tabs and pinned items to a neighbouring workspace. The last one is kept. */
+    fun deleteWorkspace(id: String) = mutate { state ->
+        val index = state.workspaces.indexOfFirst { it.id == id }
+        if (index < 0 || state.workspaces.size == 1) return@mutate state
+        val target = state.workspaces[if (index > 0) index - 1 else 1].id
+        state.copy(
+            workspaces = state.workspaces.filterNot { it.id == id },
+            pins = state.pins.map { if (it.workspaceId == id) it.copy(workspaceId = target, updatedAt = now()) else it },
+            assignments = state.assignments.mapValues { (_, ws) -> if (ws == id) target else ws },
+            activeWorkspaceId = if (state.activeWorkspaceId == id) target else state.activeWorkspaceId,
+        )
+    }
+
+    /** Drops every reference to a deleted container. */
+    fun forgetContainer(containerId: String) = mutate { state ->
+        state.copy(
+            workspaces = state.workspaces.map { if (it.containerId == containerId) it.copy(containerId = null) else it },
+            pins = state.pins.map { if (it.containerId == containerId) it.copy(containerId = null) else it },
+        )
+    }
+
+    /** Pins open tabs in their workspaces, optionally inside [parentId]. Tabs that are already pinned are skipped. */
+    fun pinTabs(sources: List<PinSource>, parentId: String? = null) = mutate { state -> state.withPins(sources, parentId) }
+
+    /** Removes pinned tabs. Their open tabs stay open as normal tabs. */
+    fun unpin(pinIds: Set<String>) = mutate { state ->
+        state.copy(pins = state.pins.filterNot { it.id in pinIds && !it.isFolder })
     }
 
     /** Links a reopened browser tab to its pin and keeps it in the pin's workspace. */
-    fun attachPinned(pinnedId: String, tabId: String) = mutate { state ->
-        val workspace = state.workspaces.firstOrNull { ws -> ws.pinned.any { it.id == pinnedId } } ?: return@mutate state
-        state.updateWorkspace(workspace.id) { ws ->
-            ws.copy(pinned = ws.pinned.map { if (it.id == pinnedId) it.copy(tabId = tabId) else it })
-        }.copy(assignments = state.assignments + (tabId to workspace.id))
+    fun attachPinned(pinId: String, tabId: String) = mutate { state ->
+        val pin = state.pins.firstOrNull { it.id == pinId } ?: return@mutate state
+        state.copy(
+            pins = state.pins.map { if (it.id == pinId) it.copy(tabId = tabId) else it },
+            assignments = state.assignments + (tabId to pin.workspaceId),
+        )
+    }
+
+    /**
+     * Creates a folder in [workspaceId] below [parentId], then moves the pinned items [itemIds] into it and pins
+     * [newPins] inside it.
+     */
+    fun createFolder(
+        workspaceId: String,
+        parentId: String?,
+        name: String,
+        itemIds: Set<String> = emptySet(),
+        newPins: List<PinSource> = emptyList(),
+    ) = mutate { state ->
+        if (state.folderDepth(parentId) >= MAX_FOLDER_DEPTH) return@mutate state
+        val now = now()
+        val folder = PinnedItem(
+            id = newId(),
+            workspaceId = workspaceId,
+            parentId = parentId,
+            kind = PinKind.FOLDER,
+            title = name.trim().ifEmpty { defaultName },
+            createdAt = now,
+            updatedAt = now,
+        )
+        state.copy(pins = state.pins + folder).moved(itemIds, folder.id).withPins(newPins, folder.id)
+    }
+
+    fun renameFolder(folderId: String, name: String) = mutate { state ->
+        state.copy(
+            pins = state.pins.map {
+                if (it.id == folderId && name.isNotBlank()) it.copy(title = name.trim(), updatedAt = now()) else it
+            },
+        )
+    }
+
+    fun toggleFolder(folderId: String) = mutate { state ->
+        state.copy(pins = state.pins.map { if (it.id == folderId) it.copy(collapsed = !it.collapsed) else it })
+    }
+
+    /** Moves pinned items and folders into [folderId], or to the top of the pinned section when it is `null`. */
+    fun moveToFolder(itemIds: Set<String>, folderId: String?) = mutate { state -> state.moved(itemIds, folderId) }
+
+    /** Removes a folder and moves its content one level up, to where the folder was, like Zen's "Unpack Folder". */
+    fun unpackFolder(folderId: String) = mutate { state ->
+        val folder = state.pins.firstOrNull { it.id == folderId && it.isFolder } ?: return@mutate state
+        val now = now()
+        val children = state.pins.filter { it.parentId == folderId }.map { it.copy(parentId = folder.parentId, updatedAt = now) }
+        val childIds = children.map { it.id }.toSet()
+        state.copy(
+            pins = state.pins.filterNot { it.id in childIds }.flatMap { if (it.id == folderId) children else listOf(it) },
+        )
+    }
+
+    /**
+     * Removes a folder with everything inside it, like Zen's "Delete Folder". The caller closes the open tabs of the
+     * removed pins.
+     */
+    fun deleteFolder(folderId: String) = mutate { state ->
+        val removed = state.descendantIds(folderId) + folderId
+        state.copy(pins = state.pins.filterNot { it.id in removed })
+    }
+
+    /** Moves unpinned tabs and pinned items (with everything inside folders) to another workspace. */
+    fun moveToWorkspace(tabIds: Set<String>, itemIds: Set<String>, workspaceId: String) = mutate { state ->
+        if (state.workspaces.none { it.id == workspaceId }) return@mutate state
+        val nested = itemIds.flatMap { state.descendantIds(it) }.toSet()
+        val movedPins = itemIds + nested
+        val movedTabs = tabIds + state.pins.filter { it.id in movedPins }.mapNotNull { it.tabId }
+        val now = now()
+        state.copy(
+            pins = state.pins.map { pin ->
+                when (pin.id) {
+                    in itemIds -> pin.copy(workspaceId = workspaceId, parentId = null, updatedAt = now)
+                    in nested -> pin.copy(workspaceId = workspaceId, updatedAt = now)
+                    else -> pin
+                }
+            },
+            assignments = state.assignments + movedTabs.associateWith { workspaceId },
+        )
     }
 
     /**
@@ -114,83 +185,78 @@ class WorkspaceRepository(context: Context) {
     fun syncWithTabs(tabIds: Set<String>, restoreComplete: Boolean) = mutate { state ->
         val kept = if (restoreComplete) state.assignments.filterKeys { it in tabIds } else state.assignments
         val added = tabIds.filterNot { it in kept }.associateWith { state.activeWorkspaceId }
-        val workspaces = if (restoreComplete) {
-            state.workspaces.map { ws ->
-                ws.copy(pinned = ws.pinned.map { if (it.tabId != null && it.tabId !in tabIds) it.copy(tabId = null) else it })
-            }
+        val pins = if (restoreComplete) {
+            state.pins.map { if (it.tabId != null && it.tabId !in tabIds) it.copy(tabId = null) else it }
         } else {
-            state.workspaces
+            state.pins
         }
-        state.copy(workspaces = workspaces, assignments = kept + added)
+        state.copy(pins = pins, assignments = kept + added)
     }
 
-    private fun WorkspaceState.updateWorkspace(id: String, transform: (Workspace) -> Workspace) =
-        copy(workspaces = workspaces.map { if (it.id == id) transform(it) else it })
+    private fun WorkspaceState.withPins(sources: List<PinSource>, parentId: String?): WorkspaceState {
+        val now = now()
+        val alreadyPinned = pins.mapNotNull { it.tabId }.toSet()
+        val parent = parentId?.let { id -> pins.firstOrNull { it.id == id && it.isFolder } }
+        val added = sources.filter { it.tabId !in alreadyPinned }.distinctBy { it.tabId }.map { source ->
+            val workspaceId = parent?.workspaceId ?: workspaceOf(source.tabId)
+            PinnedItem(
+                id = newId(),
+                workspaceId = workspaceId,
+                parentId = parent?.id,
+                kind = PinKind.TAB,
+                title = source.title.ifBlank { source.url },
+                url = source.url,
+                containerId = source.containerId,
+                tabId = source.tabId,
+                createdAt = now,
+                updatedAt = now,
+            )
+        }
+        return copy(
+            pins = pins + added,
+            assignments = assignments + added.associate { it.tabId!! to it.workspaceId },
+        )
+    }
+
+    private fun WorkspaceState.moved(itemIds: Set<String>, folderId: String?): WorkspaceState {
+        val folder = folderId?.let { id -> pins.firstOrNull { it.id == id && it.isFolder } }
+        if (folderId != null && folder == null) return this
+        val blocked = if (folder == null) {
+            emptySet()
+        } else {
+            itemIds.filter { id ->
+                val item = pins.firstOrNull { it.id == id }
+                folder.id == id ||
+                    folder.id in descendantIds(id) ||
+                    (item?.isFolder == true && folderDepth(folder.id) + folderHeight(id) > MAX_FOLDER_DEPTH)
+            }
+        }
+        val moving = pins.filter { it.id in itemIds && it.id !in blocked }
+        if (moving.isEmpty()) return this
+        val now = now()
+        val workspaceId = folder?.workspaceId
+        val movingIds = moving.map { it.id }.toSet()
+        val nested = movingIds.flatMap { descendantIds(it) }.toSet()
+        val updated = moving.map { it.copy(parentId = folderId, workspaceId = workspaceId ?: it.workspaceId, updatedAt = now) }
+        val rest = pins.filterNot { it.id in movingIds }.map {
+            if (workspaceId != null && it.id in nested && it.workspaceId != workspaceId) it.copy(workspaceId = workspaceId) else it
+        }
+        val movedTabs = (updated + rest.filter { it.id in nested }).mapNotNull { it.tabId }
+        return copy(
+            pins = rest + updated,
+            assignments = if (workspaceId == null) assignments else assignments + movedTabs.associateWith { workspaceId },
+        )
+    }
 
     private fun mutate(transform: (WorkspaceState) -> WorkspaceState) {
         var changed: WorkspaceState? = null
         _state.update { old -> transform(old).also { if (it != old) changed = it } }
-        changed?.let(::save)
+        changed?.let { prefs.edit { putString(KEY_STATE, WorkspaceSerializer.write(it)) } }
     }
 
-    private fun load(): WorkspaceState {
-        val json = prefs.getString(KEY_STATE, null)?.let { runCatching { JSONObject(it) }.getOrNull() }
-        val workspaces = json?.optJSONArray("workspaces")?.let { array ->
-            (0 until array.length()).map { i -> array.getJSONObject(i).toWorkspace() }
-        }.orEmpty().ifEmpty { listOf(Workspace(UUID.randomUUID().toString(), defaultName)) }
+    private fun now() = System.currentTimeMillis()
 
-        val assignments = json?.optJSONObject("assignments")?.let { obj ->
-            obj.keys().asSequence().associateWith { obj.getString(it) }
-        }.orEmpty().filterValues { id -> workspaces.any { it.id == id } }
-
-        val activeId = json?.optString("active")?.takeIf { id -> workspaces.any { it.id == id } }
-            ?: workspaces.first().id
-
-        return WorkspaceState(workspaces, activeId, assignments)
-    }
-
-    private fun save(state: WorkspaceState) {
-        val json = JSONObject().apply {
-            put("active", state.activeWorkspaceId)
-            put("workspaces", JSONArray().apply { state.workspaces.forEach { put(it.toJson()) } })
-            put("assignments", JSONObject(state.assignments))
-        }
-        prefs.edit { putString(KEY_STATE, json.toString()) }
-    }
-
-    private fun JSONObject.toWorkspace(): Workspace {
-        val pinned = optJSONArray("pinned")?.let { array ->
-            (0 until array.length()).map { i ->
-                val item = array.getJSONObject(i)
-                PinnedTab(
-                    id = item.getString("id"),
-                    url = item.getString("url"),
-                    title = item.optString("title"),
-                    tabId = item.optString("tabId").ifEmpty { null },
-                )
-            }
-        }.orEmpty()
-        return Workspace(getString("id"), getString("name"), pinned)
-    }
-
-    private fun Workspace.toJson() = JSONObject().apply {
-        put("id", id)
-        put("name", name)
-        put(
-            "pinned",
-            JSONArray().apply {
-                pinned.forEach { pin ->
-                    put(
-                        JSONObject()
-                            .put("id", pin.id)
-                            .put("url", pin.url)
-                            .put("title", pin.title)
-                            .put("tabId", pin.tabId ?: ""),
-                    )
-                }
-            },
-        )
-    }
+    private fun newId() = UUID.randomUUID().toString()
 
     companion object {
         private const val PREFS_NAME = "kaizen_workspaces"
@@ -199,10 +265,13 @@ class WorkspaceRepository(context: Context) {
         @Volatile
         private var instance: WorkspaceRepository? = null
 
-        /** Returns the process wide [WorkspaceRepository]. */
+        /** Returns the process wide [WorkspaceRepository]. Reads from disk on first use. */
         fun get(context: Context): WorkspaceRepository =
             instance ?: synchronized(this) {
                 instance ?: WorkspaceRepository(context.applicationContext).also { instance = it }
             }
+
+        /** Returns the repository if it has already been loaded, without touching the disk. */
+        fun peek(): WorkspaceRepository? = instance
     }
 }

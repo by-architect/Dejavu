@@ -130,6 +130,7 @@ import org.mozilla.fenix.gecko.GeckoProvider
 import org.mozilla.fenix.historymetadata.DefaultHistoryMetadataService
 import org.mozilla.fenix.historymetadata.HistoryMetadataMiddleware
 import org.mozilla.fenix.historymetadata.HistoryMetadataService
+import org.mozilla.fenix.kaizen.kaizenBrowserMiddleware
 import org.mozilla.fenix.longfox.LongFoxFeature
 import org.mozilla.fenix.media.MediaSessionService
 import org.mozilla.fenix.nimbus.BaselineFpp
@@ -398,7 +399,7 @@ class Core(
                 AboutHomeMiddleware(homepageTitle = context.getString(R.string.tab_tray_homepage_tab)),
                 BrowserVisualCompletenessMiddleware(visualCompletenessQueue),
                 TabGroupMiddleware(tabGroupRepository = tabGroupRepository),
-            )
+            ) + kaizenBrowserMiddleware(context)
 
         BrowserStore(
                 middleware =

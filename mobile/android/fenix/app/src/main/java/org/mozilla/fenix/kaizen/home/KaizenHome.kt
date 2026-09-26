@@ -4,10 +4,9 @@
 
 package org.mozilla.fenix.kaizen.home
 
+import androidx.activity.compose.BackHandler
 import androidx.annotation.DrawableRes
-import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.background
-import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.horizontalScroll
 import androidx.compose.foundation.layout.Arrangement
@@ -21,21 +20,15 @@ import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
-import androidx.compose.foundation.lazy.LazyColumn
-import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.pager.HorizontalPager
 import androidx.compose.foundation.pager.rememberPagerState
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
-import androidx.compose.material3.AlertDialog
-import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Text
-import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
@@ -45,35 +38,42 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
-import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.RectangleShape
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.res.pluralStringResource
 import androidx.compose.ui.res.stringResource
-import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import mozilla.components.browser.state.state.TabSessionState
-import mozilla.components.compose.base.theme.success
 import org.mozilla.fenix.R
-import org.mozilla.fenix.compose.Favicon
-import org.mozilla.fenix.kaizen.workspaces.PinnedTab
+import org.mozilla.fenix.kaizen.actions.TabAction
+import org.mozilla.fenix.kaizen.containers.ContainerRecord
+import org.mozilla.fenix.kaizen.containers.color
+import org.mozilla.fenix.kaizen.workspaces.PinnedItem
 import org.mozilla.fenix.kaizen.workspaces.Workspace
 import org.mozilla.fenix.kaizen.workspaces.WorkspaceState
 import mozilla.components.ui.icons.R as iconsR
 
-private val TabShape = RoundedCornerShape(16.dp)
-
 /**
- * User actions on the Kaizen home screen.
+ * User actions on the Kaizen home screen that leave the screen's own UI state.
  */
+@Suppress("TooManyFunctions")
 interface KaizenHomeInteractor {
     fun onWorkspaceSelected(workspaceId: String)
-    fun onAddWorkspace(name: String)
+    fun onSaveWorkspace(workspaceId: String?, name: String, containerId: String?)
+    fun onDeleteWorkspace(workspaceId: String)
     fun onTabClick(tabId: String)
-    fun onTabClose(tabId: String)
-    fun onTabPin(tab: TabSessionState)
-    fun onPinnedClick(pinned: PinnedTab)
-    fun onUnpin(pinnedId: String)
+    fun onPinClick(pin: PinnedItem)
+
+    /** Runs an action that needs no further input from the user. */
+    fun onTabAction(action: TabAction, targets: ActionTargets)
+    fun onCreateFolder(workspaceId: String, parentId: String?, name: String, targets: ActionTargets)
+    fun onRenameFolder(folderId: String, name: String)
+    fun onToggleFolder(folderId: String)
+    fun onMoveToFolder(targets: ActionTargets, folderIds: Set<String>, destinationId: String?)
+    fun onUnpackFolder(folderId: String)
+    fun onDeleteFolder(folderId: String)
+    fun onMoveToWorkspace(targets: ActionTargets, folderIds: Set<String>, workspaceId: String)
     fun onSearchClick()
     fun onAccountClick()
     fun onSettingsClick()
@@ -81,19 +81,25 @@ interface KaizenHomeInteractor {
 }
 
 /**
- * Workspace based home screen. Each workspace is a page listing its pinned tabs and then its other tabs; swiping
- * horizontally switches workspace.
+ * Workspace based home screen. Each workspace is a page with its pinned tabs and folders, then its other tabs;
+ * swiping horizontally switches workspace. Long-pressing a tab starts selection mode.
  */
+@Suppress("LongMethod", "LongParameterList")
 @Composable
 fun KaizenHome(
     state: WorkspaceState,
     tabs: List<TabSessionState>,
     selectedTabId: String?,
+    containers: Map<String, ContainerRecord>,
+    pinnedRowActions: List<TabAction>,
+    unpinnedRowActions: List<TabAction>,
     interactor: KaizenHomeInteractor,
     modifier: Modifier = Modifier,
 ) {
     val pagerState = rememberPagerState(initialPage = state.activeIndex) { state.workspaces.size }
-    var showAddDialog by remember { mutableStateOf(false) }
+    var selection by remember { mutableStateOf<Selection?>(null) }
+    var dialog by remember { mutableStateOf<HomeDialog?>(null) }
+    val currentWorkspace = state.workspaces.getOrNull(pagerState.currentPage) ?: state.workspaces.first()
 
     LaunchedEffect(pagerState.settledPage) {
         state.workspaces.getOrNull(pagerState.settledPage)?.let { interactor.onWorkspaceSelected(it.id) }
@@ -105,39 +111,122 @@ fun KaizenHome(
         }
     }
 
+    LaunchedEffect(tabs, state.pins) {
+        val current = selection ?: return@LaunchedEffect
+        val tabIds = tabs.map { it.id }.toSet()
+        val pinIds = state.pins.map { it.id }.toSet()
+        val cleaned = Selection(current.tabIds.filter { it in tabIds }.toSet(), current.pinIds.filter { it in pinIds }.toSet())
+        selection = cleaned.takeIf { it.size > 0 }
+    }
+
+    BackHandler(enabled = selection != null) { selection = null }
+
+    fun runAction(action: TabAction, targets: ActionTargets, workspaceId: String) {
+        when (action) {
+            TabAction.MOVE_TO_WORKSPACE -> dialog = HomeDialog.MoveToWorkspace(workspaceId, targets)
+            TabAction.MOVE_TO_FOLDER -> dialog = HomeDialog.MoveToFolder(workspaceId, targets)
+            TabAction.NEW_FOLDER -> dialog = HomeDialog.NewFolder(workspaceId, parentId = null, targets = targets)
+            else -> interactor.onTabAction(action, targets)
+        }
+        selection = null
+    }
+
     Column(modifier = modifier.fillMaxSize().background(MaterialTheme.colorScheme.surface)) {
-        TopBar(interactor)
+        val activeSelection = selection
+        if (activeSelection == null) {
+            TopBar(interactor)
+        } else {
+            SelectionTopBar(
+                count = activeSelection.size,
+                onClose = { selection = null },
+                onSelectAll = {
+                    selection = Selection(
+                        tabIds = tabs.filter { state.workspaceOf(it.id) == currentWorkspace.id && state.pinOf(it.id) == null }
+                            .map { it.id }.toSet(),
+                        pinIds = state.pins.filter { it.workspaceId == currentWorkspace.id && !it.isFolder }
+                            .map { it.id }.toSet(),
+                    )
+                },
+            )
+        }
 
         HorizontalPager(
             state = pagerState,
+            userScrollEnabled = activeSelection == null,
             modifier = Modifier.weight(1f).fillMaxWidth(),
             key = { state.workspaces[it].id },
         ) { page ->
             val workspace = state.workspaces[page]
             WorkspacePage(
+                state = state,
                 workspace = workspace,
                 tabs = tabs.filter { state.workspaceOf(it.id) == workspace.id },
                 selectedTabId = selectedTabId,
-                interactor = interactor,
+                containers = containers,
+                pinnedRowActions = pinnedRowActions,
+                unpinnedRowActions = unpinnedRowActions,
+                selection = activeSelection,
+                callbacks = WorkspacePageCallbacks(
+                    onTabClick = { tab ->
+                        if (activeSelection != null) selection = activeSelection.toggleTab(tab.id) else interactor.onTabClick(tab.id)
+                    },
+                    onTabLongClick = { tab -> selection = (activeSelection ?: Selection()).toggleTab(tab.id) },
+                    onPinClick = { pin ->
+                        if (activeSelection != null) selection = activeSelection.togglePin(pin.id) else interactor.onPinClick(pin)
+                    },
+                    onPinLongClick = { pin -> selection = (activeSelection ?: Selection()).togglePin(pin.id) },
+                    onRowAction = { action, targets -> runAction(action, targets, workspace.id) },
+                    onFolderClick = { interactor.onToggleFolder(it.id) },
+                    onFolderMenu = { folder, item ->
+                        when (item) {
+                            FolderMenuItem.NEW_SUBFOLDER -> dialog = HomeDialog.NewFolder(workspace.id, parentId = folder.id)
+                            FolderMenuItem.RENAME -> dialog = HomeDialog.RenameFolder(folder)
+                            FolderMenuItem.SLEEP_ALL ->
+                                interactor.onTabAction(TabAction.SLEEP, ActionTargets.ofFolder(state, tabs, folder.id))
+                            FolderMenuItem.SHARE ->
+                                interactor.onTabAction(TabAction.SHARE, ActionTargets.ofFolder(state, tabs, folder.id))
+                            FolderMenuItem.MOVE_TO_FOLDER ->
+                                dialog = HomeDialog.MoveToFolder(workspace.id, ActionTargets(), setOf(folder.id))
+                            FolderMenuItem.MOVE_TO_WORKSPACE ->
+                                dialog = HomeDialog.MoveToWorkspace(workspace.id, ActionTargets(), setOf(folder.id))
+                            FolderMenuItem.UNPACK -> interactor.onUnpackFolder(folder.id)
+                            FolderMenuItem.DELETE -> dialog = HomeDialog.DeleteFolder(folder)
+                        }
+                    },
+                    onNewFolder = { dialog = HomeDialog.NewFolder(workspace.id, parentId = null) },
+                    onEditWorkspace = { dialog = HomeDialog.EditWorkspace(workspace.id) },
+                    onDeleteWorkspace = { dialog = HomeDialog.DeleteWorkspace(workspace.id) },
+                    onNewTabClick = interactor::onSearchClick,
+                ),
+                canDeleteWorkspace = state.workspaces.size > 1,
             )
         }
 
-        WorkspaceBar(
-            workspaces = state.workspaces,
-            activeIndex = pagerState.currentPage,
-            onDotClick = { index -> interactor.onWorkspaceSelected(state.workspaces[index].id) },
-            onAddClick = { showAddDialog = true },
-            onDownloadsClick = interactor::onDownloadsClick,
-        )
+        if (activeSelection == null) {
+            WorkspaceBar(
+                workspaces = state.workspaces,
+                containers = containers,
+                activeIndex = pagerState.currentPage,
+                onDotClick = { index -> interactor.onWorkspaceSelected(state.workspaces[index].id) },
+                onAddClick = { dialog = HomeDialog.EditWorkspace(null) },
+                onDownloadsClick = interactor::onDownloadsClick,
+            )
+        } else {
+            val targets = ActionTargets.of(state, tabs, activeSelection)
+            SelectionBar(
+                actions = TabAction.forSelection.filter { it.appliesTo(targets) },
+                onAction = { runAction(it, targets, currentWorkspace.id) },
+            )
+        }
     }
 
-    if (showAddDialog) {
-        AddWorkspaceDialog(
-            onConfirm = { name ->
-                showAddDialog = false
-                interactor.onAddWorkspace(name)
-            },
-            onDismiss = { showAddDialog = false },
+    dialog?.let { current ->
+        HomeDialogs(
+            dialog = current,
+            state = state,
+            containers = containers,
+            interactor = interactor,
+            onDismiss = { dialog = null },
         )
     }
 }
@@ -189,175 +278,78 @@ private fun TopBar(interactor: KaizenHomeInteractor) {
 }
 
 @Composable
-private fun WorkspacePage(
-    workspace: Workspace,
-    tabs: List<TabSessionState>,
-    selectedTabId: String?,
-    interactor: KaizenHomeInteractor,
-) {
-    val tabsById = tabs.associateBy { it.id }
-    val pinnedTabIds = workspace.pinned.mapNotNull { it.tabId }.toSet()
-    val otherTabs = tabs.filterNot { it.id in pinnedTabIds }
-
-    LazyColumn(modifier = Modifier.fillMaxSize().padding(horizontal = 8.dp)) {
-        item(key = "header") {
-            Text(
-                text = workspace.name,
-                style = MaterialTheme.typography.titleSmall,
-                fontWeight = FontWeight.Bold,
-                color = MaterialTheme.colorScheme.onSurfaceVariant,
-                modifier = Modifier.padding(horizontal = 12.dp, vertical = 16.dp),
-            )
-        }
-
-        items(workspace.pinned, key = { "pin-${it.id}" }) { pinned ->
-            val tab = pinned.tabId?.let { tabsById[it] }
-            if (tab != null) {
-                TabItem(
-                    title = tab.displayTitle,
-                    url = tab.content.url,
-                    isOpen = true,
-                    isSelected = tab.id == selectedTabId,
-                    onClick = { interactor.onTabClick(tab.id) },
-                ) {
-                    RowIconButton(iconsR.drawable.mozac_ic_cross_24, R.string.kaizen_close_tab) {
-                        interactor.onTabClose(tab.id)
-                    }
-                }
-            } else {
-                TabItem(
-                    title = pinned.title.ifBlank { pinned.url },
-                    url = pinned.url,
-                    isOpen = false,
-                    isSelected = false,
-                    onClick = { interactor.onPinnedClick(pinned) },
-                ) {
-                    RowIconButton(iconsR.drawable.mozac_ic_pin_slash_24, R.string.kaizen_unpin_tab) {
-                        interactor.onUnpin(pinned.id)
-                    }
-                }
-            }
-        }
-
-        if (workspace.pinned.isNotEmpty()) {
-            item(key = "pinned-divider") {
-                HorizontalDivider(
-                    modifier = Modifier.padding(horizontal = 12.dp, vertical = 8.dp),
-                    color = MaterialTheme.colorScheme.outlineVariant,
-                )
-            }
-        }
-
-        items(otherTabs, key = { it.id }) { tab ->
-            TabItem(
-                title = tab.displayTitle,
-                url = tab.content.url,
-                isOpen = true,
-                isSelected = tab.id == selectedTabId,
-                onClick = { interactor.onTabClick(tab.id) },
-            ) {
-                RowIconButton(iconsR.drawable.mozac_ic_pin_24, R.string.kaizen_pin_tab) {
-                    interactor.onTabPin(tab)
-                }
-                RowIconButton(iconsR.drawable.mozac_ic_cross_24, R.string.kaizen_close_tab) {
-                    interactor.onTabClose(tab.id)
-                }
-            }
-        }
-
-        item(key = "new_tab") {
-            Row(
-                verticalAlignment = Alignment.CenterVertically,
-                modifier = Modifier
-                    .fillMaxWidth()
-                    .clip(TabShape)
-                    .clickable(onClick = interactor::onSearchClick)
-                    .padding(horizontal = 12.dp, vertical = 14.dp),
-            ) {
-                Icon(
-                    painter = painterResource(iconsR.drawable.mozac_ic_plus_24),
-                    contentDescription = null,
-                    tint = MaterialTheme.colorScheme.onSurfaceVariant,
-                    modifier = Modifier.size(20.dp),
-                )
-                Spacer(Modifier.width(16.dp))
-                Text(
-                    text = stringResource(R.string.kaizen_new_tab),
-                    style = MaterialTheme.typography.bodyLarge,
-                    color = MaterialTheme.colorScheme.onSurfaceVariant,
-                )
-            }
-        }
-    }
-}
-
-private val TabSessionState.displayTitle: String
-    get() = content.title.ifBlank { content.url }
-
-@Suppress("LongParameterList")
-@Composable
-private fun TabItem(
-    title: String,
-    url: String,
-    isOpen: Boolean,
-    isSelected: Boolean,
-    onClick: () -> Unit,
-    actions: @Composable () -> Unit,
+private fun SelectionTopBar(
+    count: Int,
+    onClose: () -> Unit,
+    onSelectAll: () -> Unit,
 ) {
     Row(
         verticalAlignment = Alignment.CenterVertically,
+        modifier = Modifier.fillMaxWidth().height(64.dp).padding(horizontal = 4.dp),
+    ) {
+        BarIconButton(
+            icon = iconsR.drawable.mozac_ic_cross_24,
+            contentDescription = stringResource(R.string.kaizen_selection_exit),
+            onClick = onClose,
+        )
+        Text(
+            text = pluralStringResource(R.plurals.kaizen_selection_count, count, count),
+            style = MaterialTheme.typography.titleMedium,
+            color = MaterialTheme.colorScheme.onSurface,
+            modifier = Modifier.weight(1f).padding(start = 8.dp),
+        )
+        BarIconButton(
+            icon = iconsR.drawable.mozac_ic_select_all_24,
+            contentDescription = stringResource(R.string.kaizen_selection_select_all),
+            onClick = onSelectAll,
+        )
+    }
+}
+
+@Composable
+private fun SelectionBar(
+    actions: List<TabAction>,
+    onAction: (TabAction) -> Unit,
+) {
+    Row(
+        horizontalArrangement = Arrangement.Center,
         modifier = Modifier
             .fillMaxWidth()
-            .padding(vertical = 2.dp)
-            .clip(TabShape)
-            .background(
-                if (isSelected) MaterialTheme.colorScheme.surfaceContainerHighest else Color.Transparent,
-            )
-            .clickable(onClick = onClick)
-            .padding(start = 12.dp, top = 4.dp, bottom = 4.dp),
+            .background(MaterialTheme.colorScheme.surfaceContainer)
+            .horizontalScroll(rememberScrollState())
+            .padding(horizontal = 4.dp, vertical = 6.dp),
     ) {
-        Box(
-            contentAlignment = Alignment.Center,
-            modifier = Modifier
-                .size(26.dp)
-                .border(
-                    BorderStroke(1.5.dp, if (isOpen) MaterialTheme.colorScheme.success else Color.Transparent),
-                    RectangleShape,
-                ),
-        ) {
-            Favicon(url = url, size = 18.dp, shape = RectangleShape)
+        actions.forEach { action ->
+            Column(
+                horizontalAlignment = Alignment.CenterHorizontally,
+                modifier = Modifier
+                    .width(76.dp)
+                    .clip(RoundedCornerShape(12.dp))
+                    .clickable { onAction(action) }
+                    .padding(vertical = 8.dp),
+            ) {
+                Icon(
+                    painter = painterResource(action.icon),
+                    contentDescription = null,
+                    tint = if (action == TabAction.CLOSE) MaterialTheme.colorScheme.error else MaterialTheme.colorScheme.onSurface,
+                    modifier = Modifier.size(22.dp),
+                )
+                Spacer(Modifier.height(4.dp))
+                Text(
+                    text = stringResource(action.label),
+                    style = MaterialTheme.typography.labelSmall,
+                    color = MaterialTheme.colorScheme.onSurface,
+                    textAlign = TextAlign.Center,
+                    maxLines = 2,
+                    overflow = TextOverflow.Ellipsis,
+                )
+            }
         }
-        Spacer(Modifier.width(14.dp))
-        Text(
-            text = title,
-            style = MaterialTheme.typography.bodyLarge,
-            color = if (isOpen) MaterialTheme.colorScheme.onSurface else MaterialTheme.colorScheme.onSurfaceVariant,
-            maxLines = 1,
-            overflow = TextOverflow.Ellipsis,
-            modifier = Modifier.weight(1f),
-        )
-        actions()
     }
 }
 
 @Composable
-private fun RowIconButton(
-    @DrawableRes icon: Int,
-    contentDescription: Int,
-    onClick: () -> Unit,
-) {
-    IconButton(onClick = onClick) {
-        Icon(
-            painter = painterResource(icon),
-            contentDescription = stringResource(contentDescription),
-            tint = MaterialTheme.colorScheme.onSurfaceVariant,
-            modifier = Modifier.size(20.dp),
-        )
-    }
-}
-
-@Composable
-private fun BarIconButton(
+internal fun BarIconButton(
     @DrawableRes icon: Int,
     contentDescription: String,
     onClick: () -> Unit,
@@ -371,9 +363,11 @@ private fun BarIconButton(
     }
 }
 
+@Suppress("LongParameterList")
 @Composable
 private fun WorkspaceBar(
     workspaces: List<Workspace>,
+    containers: Map<String, ContainerRecord>,
     activeIndex: Int,
     onDotClick: (Int) -> Unit,
     onAddClick: () -> Unit,
@@ -396,6 +390,8 @@ private fun WorkspaceBar(
         ) {
             workspaces.forEachIndexed { index, workspace ->
                 val isActive = index == activeIndex
+                val containerColor = workspace.containerId?.let { containers[it] }?.color?.color
+                val base = containerColor ?: MaterialTheme.colorScheme.onSurface
                 Box(
                     contentAlignment = Alignment.Center,
                     modifier = Modifier
@@ -407,13 +403,7 @@ private fun WorkspaceBar(
                         modifier = Modifier
                             .size(if (isActive) 10.dp else 8.dp)
                             .clip(CircleShape)
-                            .background(
-                                if (isActive) {
-                                    MaterialTheme.colorScheme.onSurface
-                                } else {
-                                    MaterialTheme.colorScheme.onSurfaceVariant.copy(alpha = 0.5f)
-                                },
-                            ),
+                            .background(if (isActive) base else base.copy(alpha = 0.45f)),
                     )
                 }
             }
@@ -425,35 +415,4 @@ private fun WorkspaceBar(
             onClick = onAddClick,
         )
     }
-}
-
-@Composable
-private fun AddWorkspaceDialog(
-    onConfirm: (String) -> Unit,
-    onDismiss: () -> Unit,
-) {
-    var name by remember { mutableStateOf("") }
-
-    AlertDialog(
-        onDismissRequest = onDismiss,
-        title = { Text(stringResource(R.string.kaizen_add_workspace)) },
-        text = {
-            OutlinedTextField(
-                value = name,
-                onValueChange = { name = it },
-                singleLine = true,
-                label = { Text(stringResource(R.string.kaizen_workspace_name)) },
-            )
-        },
-        confirmButton = {
-            TextButton(onClick = { onConfirm(name) }) {
-                Text(stringResource(R.string.kaizen_create))
-            }
-        },
-        dismissButton = {
-            TextButton(onClick = onDismiss) {
-                Text(stringResource(R.string.kaizen_cancel))
-            }
-        },
-    )
 }

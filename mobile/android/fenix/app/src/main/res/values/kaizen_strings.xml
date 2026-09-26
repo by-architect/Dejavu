@@ -2,18 +2,94 @@
 <!-- This Source Code Form is subject to the terms of the Mozilla Public
    - License, v. 2.0. If a copy of the MPL was not distributed with this
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
-<resources>
-    <string name="kaizen_workspace_default_name" translatable="false">Home</string>
-    <string name="kaizen_new_tab" translatable="false">New Tab</string>
-    <string name="kaizen_downloads" translatable="false">Downloads</string>
-    <string name="kaizen_add_workspace" translatable="false">New workspace</string>
-    <string name="kaizen_workspace_name" translatable="false">Name</string>
-    <string name="kaizen_create" translatable="false">Create</string>
-    <string name="kaizen_cancel" translatable="false">Cancel</string>
-    <string name="kaizen_account" translatable="false">Account</string>
-    <string name="kaizen_settings" translatable="false">Settings</string>
-    <string name="kaizen_search_hint" translatable="false">Search or enter address</string>
-    <string name="kaizen_pin_tab" translatable="false">Pin tab</string>
-    <string name="kaizen_unpin_tab" translatable="false">Unpin tab</string>
-    <string name="kaizen_close_tab" translatable="false">Close tab</string>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="pref_key_kaizen" translatable="false">pref_key_kaizen</string>
+
+    <!-- Home screen -->
+    <string name="kaizen_workspace_default_name">Home</string>
+    <string name="kaizen_new_tab">New Tab</string>
+    <string name="kaizen_downloads">Downloads</string>
+    <string name="kaizen_add_workspace">New workspace</string>
+    <string name="kaizen_workspace_name">Name</string>
+    <string name="kaizen_create">Create</string>
+    <string name="kaizen_save">Save</string>
+    <string name="kaizen_delete">Delete</string>
+    <string name="kaizen_cancel">Cancel</string>
+    <string name="kaizen_account">Account</string>
+    <string name="kaizen_settings">Settings</string>
+    <string name="kaizen_search_hint">Search or enter address</string>
+    <string name="kaizen_selection_exit">Exit selection</string>
+    <string name="kaizen_selection_select_all">Select all</string>
+    <plurals name="kaizen_selection_count">
+        <item quantity="one">%1$d selected</item>
+        <item quantity="other">%1$d selected</item>
+    </plurals>
+    <plurals name="kaizen_bookmarked">
+        <item quantity="one">Saved to bookmarks</item>
+        <item quantity="other">%1$d tabs saved to bookmarks</item>
+    </plurals>
+    <plurals name="kaizen_links_copied">
+        <item quantity="one">Link copied</item>
+        <item quantity="other">%1$d links copied</item>
+    </plurals>
+
+    <!-- Workspaces -->
+    <string name="kaizen_workspace_menu">Workspace menu</string>
+    <string name="kaizen_workspace_edit">Edit workspace</string>
+    <string name="kaizen_workspace_delete">Delete workspace</string>
+    <string name="kaizen_workspace_delete_title">Delete “%1$s”?</string>
+    <string name="kaizen_workspace_delete_message">Its tabs, pinned tabs and folders move to the neighbouring workspace.</string>
+    <string name="kaizen_workspace_container">Container</string>
+    <string name="kaizen_workspace_container_hint">New tabs of this workspace open in this container.</string>
+    <string name="kaizen_workspace_no_container">No container</string>
+
+    <!-- Folders -->
+    <string name="kaizen_folder_new_subfolder">New subfolder</string>
+    <string name="kaizen_folder_rename">Rename folder</string>
+    <string name="kaizen_folder_sleep_all">Sleep all tabs</string>
+    <string name="kaizen_folder_share">Share folder</string>
+    <string name="kaizen_folder_unpack">Unpack folder</string>
+    <string name="kaizen_folder_delete">Delete folder</string>
+    <string name="kaizen_folder_delete_title">Delete “%1$s”?</string>
+    <string name="kaizen_folder_delete_message">The folder, its subfolders and its pinned tabs are removed, and their open tabs are closed.</string>
+    <string name="kaizen_folder_top_level">Pinned tabs, no folder</string>
+
+    <!-- Tab actions -->
+    <string name="kaizen_action_close">Close</string>
+    <string name="kaizen_action_pin">Pin</string>
+    <string name="kaizen_action_unpin">Unpin</string>
+    <string name="kaizen_action_sleep">Sleep</string>
+    <string name="kaizen_action_bookmark">Bookmark</string>
+    <string name="kaizen_action_share">Share</string>
+    <string name="kaizen_action_copy_link">Copy link</string>
+    <string name="kaizen_action_duplicate">Duplicate</string>
+    <string name="kaizen_action_move_to_workspace">Move to workspace</string>
+    <string name="kaizen_action_move_to_folder">Move to folder</string>
+    <string name="kaizen_action_new_folder">New folder</string>
+
+    <!-- Settings -->
+    <string name="kaizen_settings_title">Kaizen</string>
+    <string name="kaizen_settings_entry">Kaizen settings</string>
+    <string name="kaizen_settings_entry_summary">Home page, tab actions and containers</string>
+    <string name="kaizen_settings_home_page">Home page</string>
+    <string name="kaizen_settings_tab_actions">Tab actions</string>
+    <string name="kaizen_settings_tab_actions_summary">Pinned: %1$s · Unpinned: %2$s</string>
+    <string name="kaizen_settings_no_actions">none</string>
+    <string name="kaizen_settings_tab_actions_hint">Choose up to %1$d buttons for each kind of tab row. Long-press a tab on the home page to select several tabs and use every action.</string>
+    <string name="kaizen_settings_pinned_tabs">Pinned tabs</string>
+    <string name="kaizen_settings_unpinned_tabs">Unpinned tabs</string>
+    <string name="kaizen_settings_containers">Containers</string>
+    <string name="kaizen_settings_manage_containers">Manage containers</string>
+    <plurals name="kaizen_settings_containers_count">
+        <item quantity="one">%1$d container</item>
+        <item quantity="other">%1$d containers</item>
+    </plurals>
+    <string name="kaizen_settings_containers_hint">Tabs in a container keep their own cookies and site data. To open a workspace’s new tabs in a container, pick it in the workspace menu on the home page.</string>
+    <string name="kaizen_container_add">Add container</string>
+    <string name="kaizen_container_edit">Edit container</string>
+    <string name="kaizen_container_name">Name</string>
+    <string name="kaizen_container_color">Color</string>
+    <string name="kaizen_container_icon">Icon</string>
+    <string name="kaizen_container_delete_title">Delete “%1$s”?</string>
+    <string name="kaizen_container_delete_message">Its open tabs are closed and its cookies and site data are deleted.</string>
 </resources>

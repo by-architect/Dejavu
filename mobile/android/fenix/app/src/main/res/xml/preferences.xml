@@ -35,6 +35,16 @@
         app:isPreferenceVisible="false" />
 
     <androidx.preference.PreferenceCategory
+        android:title="@string/kaizen_settings_title"
+        android:layout="@layout/preference_category_no_icon_style">
+        <androidx.preference.Preference
+            app:iconSpaceReserved="false"
+            android:key="@string/pref_key_kaizen"
+            android:title="@string/kaizen_settings_entry"
+            android:summary="@string/kaizen_settings_entry_summary" />
+    </androidx.preference.PreferenceCategory>
+
+    <androidx.preference.PreferenceCategory
         android:title="@string/preferences_category_general"
         android:layout="@layout/preference_category_no_icon_style">
         <androidx.preference.Preference
