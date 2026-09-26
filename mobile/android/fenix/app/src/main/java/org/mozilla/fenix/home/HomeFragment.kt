@@ -656,12 +656,12 @@ class HomeFragment : Fragment(), UserInteractionHandler, OnLongPressedListener {
     private fun initComposeHomepage(view: ComposeView) {
         if (isKaizenHomeEnabled(browsingModeManager.mode.isPrivate)) {
             view.setKaizenHomeContent(
+                navController = findNavController(),
                 searchToolbar = { toolbarView.Content() },
                 onOpenTab = { tabId ->
                     requireComponents.useCases.tabsUseCases.selectTab(tabId)
                     (requireActivity() as HomeActivity).openToBrowser(BrowserDirection.FromHome)
                 },
-                onDownloadsClick = { findNavController().navigate(NavGraphDirections.actionGlobalDownloadsFragment()) },
                 onFirstFrameDrawn = ::onFirstHomepageFrameDrawn,
             )
             return

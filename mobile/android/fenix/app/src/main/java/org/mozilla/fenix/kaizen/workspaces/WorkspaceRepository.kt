@@ -17,14 +17,31 @@ import org.mozilla.fenix.R
 import java.util.UUID
 
 /**
+ * A tab pinned to the top of a workspace. It survives closing its browser tab.
+ *
+ * @property id Stable identifier of the pin.
+ * @property url URL the pin reopens when it has no open tab.
+ * @property title Title shown while the pin has no open tab.
+ * @property tabId The open browser tab backing this pin, or `null` when it is closed.
+ */
+data class PinnedTab(
+    val id: String,
+    val url: String,
+    val title: String,
+    val tabId: String?,
+)
+
+/**
  * A workspace groups normal tabs. Every tab belongs to exactly one workspace.
  *
  * @property id Stable identifier of the workspace.
  * @property name User visible name of the workspace.
+ * @property pinned Pinned tabs, shown above the other tabs.
  */
 data class Workspace(
     val id: String,
     val name: String,
+    val pinned: List<PinnedTab> = emptyList(),
 )
 
 /**
@@ -45,7 +62,7 @@ data class WorkspaceState(
 }
 
 /**
- * Persists workspaces and tab assignments in [SharedPreferences].
+ * Persists workspaces, pinned tabs and tab assignments in [SharedPreferences].
  */
 class WorkspaceRepository(context: Context) {
     private val prefs = context.getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE)
@@ -67,19 +84,48 @@ class WorkspaceRepository(context: Context) {
         state.copy(workspaces = state.workspaces + workspace, activeWorkspaceId = workspace.id)
     }
 
+    fun pinTab(tabId: String, url: String, title: String) = mutate { state ->
+        val workspaceId = state.workspaceOf(tabId)
+        if (state.workspaces.any { ws -> ws.pinned.any { it.tabId == tabId } }) {
+            state
+        } else {
+            state.updateWorkspace(workspaceId) { ws ->
+                ws.copy(pinned = ws.pinned + PinnedTab(UUID.randomUUID().toString(), url, title, tabId))
+            }
+        }
+    }
+
+    fun unpin(pinnedId: String) = mutate { state ->
+        state.copy(workspaces = state.workspaces.map { ws -> ws.copy(pinned = ws.pinned.filterNot { it.id == pinnedId }) })
+    }
+
+    /** Links a reopened browser tab to its pin and keeps it in the pin's workspace. */
+    fun attachPinned(pinnedId: String, tabId: String) = mutate { state ->
+        val workspace = state.workspaces.firstOrNull { ws -> ws.pinned.any { it.id == pinnedId } } ?: return@mutate state
+        state.updateWorkspace(workspace.id) { ws ->
+            ws.copy(pinned = ws.pinned.map { if (it.id == pinnedId) it.copy(tabId = tabId) else it })
+        }.copy(assignments = state.assignments + (tabId to workspace.id))
+    }
+
     /**
      * Assigns tabs that have no workspace yet to the active workspace, and forgets tabs that no longer exist once
-     * the browser state has been restored.
+     * the browser state has been restored. Pins whose tab was closed stay pinned without a tab.
      */
     fun syncWithTabs(tabIds: Set<String>, restoreComplete: Boolean) = mutate { state ->
         val kept = if (restoreComplete) state.assignments.filterKeys { it in tabIds } else state.assignments
         val added = tabIds.filterNot { it in kept }.associateWith { state.activeWorkspaceId }
-        if (added.isEmpty() && kept.size == state.assignments.size) {
-            state
+        val workspaces = if (restoreComplete) {
+            state.workspaces.map { ws ->
+                ws.copy(pinned = ws.pinned.map { if (it.tabId != null && it.tabId !in tabIds) it.copy(tabId = null) else it })
+            }
         } else {
-            state.copy(assignments = kept + added)
+            state.workspaces
         }
+        state.copy(workspaces = workspaces, assignments = kept + added)
     }
+
+    private fun WorkspaceState.updateWorkspace(id: String, transform: (Workspace) -> Workspace) =
+        copy(workspaces = workspaces.map { if (it.id == id) transform(it) else it })
 
     private fun mutate(transform: (WorkspaceState) -> WorkspaceState) {
         var changed: WorkspaceState? = null
@@ -90,10 +136,7 @@ class WorkspaceRepository(context: Context) {
     private fun load(): WorkspaceState {
         val json = prefs.getString(KEY_STATE, null)?.let { runCatching { JSONObject(it) }.getOrNull() }
         val workspaces = json?.optJSONArray("workspaces")?.let { array ->
-            (0 until array.length()).map { i ->
-                val item = array.getJSONObject(i)
-                Workspace(item.getString("id"), item.getString("name"))
-            }
+            (0 until array.length()).map { i -> array.getJSONObject(i).toWorkspace() }
         }.orEmpty().ifEmpty { listOf(Workspace(UUID.randomUUID().toString(), defaultName)) }
 
         val assignments = json?.optJSONObject("assignments")?.let { obj ->
@@ -109,15 +152,44 @@ class WorkspaceRepository(context: Context) {
     private fun save(state: WorkspaceState) {
         val json = JSONObject().apply {
             put("active", state.activeWorkspaceId)
-            put(
-                "workspaces",
-                JSONArray().apply {
-                    state.workspaces.forEach { put(JSONObject().put("id", it.id).put("name", it.name)) }
-                },
-            )
+            put("workspaces", JSONArray().apply { state.workspaces.forEach { put(it.toJson()) } })
             put("assignments", JSONObject(state.assignments))
         }
         prefs.edit { putString(KEY_STATE, json.toString()) }
+    }
+
+    private fun JSONObject.toWorkspace(): Workspace {
+        val pinned = optJSONArray("pinned")?.let { array ->
+            (0 until array.length()).map { i ->
+                val item = array.getJSONObject(i)
+                PinnedTab(
+                    id = item.getString("id"),
+                    url = item.getString("url"),
+                    title = item.optString("title"),
+                    tabId = item.optString("tabId").ifEmpty { null },
+                )
+            }
+        }.orEmpty()
+        return Workspace(getString("id"), getString("name"), pinned)
+    }
+
+    private fun Workspace.toJson() = JSONObject().apply {
+        put("id", id)
+        put("name", name)
+        put(
+            "pinned",
+            JSONArray().apply {
+                pinned.forEach { pin ->
+                    put(
+                        JSONObject()
+                            .put("id", pin.id)
+                            .put("url", pin.url)
+                            .put("title", pin.title)
+                            .put("tabId", pin.tabId ?: ""),
+                    )
+                }
+            },
+        )
     }
 
     companion object {

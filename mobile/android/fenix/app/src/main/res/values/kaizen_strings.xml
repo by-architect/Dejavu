@@ -10,4 +10,10 @@
     <string name="kaizen_workspace_name" translatable="false">Name</string>
     <string name="kaizen_create" translatable="false">Create</string>
     <string name="kaizen_cancel" translatable="false">Cancel</string>
+    <string name="kaizen_account" translatable="false">Account</string>
+    <string name="kaizen_settings" translatable="false">Settings</string>
+    <string name="kaizen_search_hint" translatable="false">Search or enter address</string>
+    <string name="kaizen_pin_tab" translatable="false">Pin tab</string>
+    <string name="kaizen_unpin_tab" translatable="false">Unpin tab</string>
+    <string name="kaizen_close_tab" translatable="false">Close tab</string>
 </resources>
