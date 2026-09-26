@@ -51,8 +51,10 @@ import org.mozilla.fenix.kaizen.actions.CustomAction
 import org.mozilla.fenix.kaizen.actions.CustomActionRunner
 import org.mozilla.fenix.kaizen.actions.TabAction
 import org.mozilla.fenix.kaizen.containers.KaizenContainerStorage
+import org.mozilla.fenix.kaizen.containers.reopenInContainer
 import org.mozilla.fenix.kaizen.settings.KaizenSettings
 import org.mozilla.fenix.kaizen.settings.resolveRowActions
+import org.mozilla.fenix.kaizen.settings.resolveSelectionActions
 import org.mozilla.fenix.kaizen.workspaces.MAX_ESSENTIALS
 import org.mozilla.fenix.kaizen.workspaces.PinPlacement
 import org.mozilla.fenix.kaizen.workspaces.PinSource
@@ -106,6 +108,7 @@ fun ComposeView.setKaizenHomeContent(
             val customActions by settings.customActions.collectAsState()
             val pinnedKeys by settings.pinnedRowKeys.collectAsState()
             val unpinnedKeys by settings.unpinnedRowKeys.collectAsState()
+            val hiddenSelectionKeys by settings.hiddenSelectionKeys.collectAsState()
             val containerRecords by containerStorage.records.collectAsState()
             val containers = remember(containerRecords) { containerRecords.orEmpty().associateBy { it.contextId } }
             val tabs by fenix.core.store.observeAsComposableState { it.normalTabs }
@@ -142,7 +145,7 @@ fun ComposeView.setKaizenHomeContent(
                     containers = containers,
                     pinnedRowActions = resolveRowActions(pinnedKeys, pinned = true, customActions = customActions),
                     unpinnedRowActions = resolveRowActions(unpinnedKeys, pinned = false, customActions = customActions),
-                    customActions = customActions,
+                    selectionActions = resolveSelectionActions(hiddenSelectionKeys, customActions),
                     interactor = interactor,
                 )
 
@@ -240,7 +243,7 @@ private class DefaultKaizenHomeInteractor(
             TabAction.UNPACK_FOLDER -> targets.folders.forEach { repository.unpackFolder(it.id) }
             TabAction.DELETE -> onDeleteItems(targets)
             TabAction.MOVE_TO_WORKSPACE, TabAction.MOVE_TO_FOLDER, TabAction.NEW_FOLDER, TabAction.NEW_SUBFOLDER,
-            TabAction.RENAME_FOLDER,
+            TabAction.RENAME_FOLDER, TabAction.CHANGE_CONTAINER,
             -> Unit
         }
     }
@@ -354,6 +357,15 @@ private class DefaultKaizenHomeInteractor(
             itemIds = targets.itemIds,
             workspaceId = workspaceId,
         )
+    }
+
+    override fun onChangeContainer(targets: ActionTargets, contextId: String?) {
+        repository.setPinContainer(targets.allPins.map { it.id }.toSet(), contextId)
+        val selectedTabId = store.state.selectedTabId
+        targets.openTabs.filter { it.contextId != contextId }.forEach { tab ->
+            val selected = tab.id == selectedTabId
+            components.reopenInContainer(tab, contextId, repository, selected = selected, load = selected || tab.isAwake)
+        }
     }
 
     override fun onSearchClick() {

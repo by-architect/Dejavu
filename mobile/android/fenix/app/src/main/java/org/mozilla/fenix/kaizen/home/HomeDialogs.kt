@@ -153,6 +153,41 @@ internal fun HomeDialogs(
             }
         }
 
+        is HomeDialog.ChangeContainer -> {
+            val current = dialog.targets.containerIds.singleOrNull()
+            val allInNoContainer = dialog.targets.containerIds == setOf(null)
+            fun pick(contextId: String?) {
+                interactor.onChangeContainer(dialog.targets, contextId)
+                onDismiss()
+            }
+            PickerDialog(title = R.string.kaizen_action_change_container, onDismiss = onDismiss) {
+                PickerRow(
+                    label = stringResource(R.string.kaizen_workspace_no_container),
+                    selected = allInNoContainer,
+                    leading = { NoContainerIcon() },
+                    onClick = { pick(null) },
+                )
+                if (containers.isNotEmpty()) HorizontalDivider(modifier = Modifier.padding(vertical = 4.dp))
+                containers.values.forEach { container ->
+                    PickerRow(
+                        label = container.name,
+                        selected = current == container.contextId,
+                        leading = { ContainerIcon(container) },
+                        onClick = { pick(container.contextId) },
+                    )
+                }
+                HorizontalDivider(modifier = Modifier.padding(vertical = 4.dp))
+                PickerRow(
+                    label = stringResource(R.string.kaizen_container_add),
+                    leading = { PickerIcon(iconsR.drawable.mozac_ic_plus_24) },
+                    onClick = {
+                        onDismiss()
+                        interactor.onManageContainers()
+                    },
+                )
+            }
+        }
+
         is HomeDialog.MoveToWorkspace -> PickerDialog(
             title = R.string.kaizen_action_move_to_workspace,
             onDismiss = onDismiss,
@@ -351,6 +386,7 @@ private fun PickerRow(
     label: String,
     onClick: () -> Unit,
     depth: Int = 0,
+    selected: Boolean = false,
     leading: @Composable () -> Unit,
 ) {
     Row(
@@ -368,7 +404,16 @@ private fun PickerRow(
             style = MaterialTheme.typography.bodyLarge,
             maxLines = 1,
             overflow = TextOverflow.Ellipsis,
+            modifier = Modifier.weight(1f),
         )
+        if (selected) {
+            Icon(
+                painter = painterResource(iconsR.drawable.mozac_ic_checkmark_24),
+                contentDescription = null,
+                tint = MaterialTheme.colorScheme.primary,
+                modifier = Modifier.size(20.dp),
+            )
+        }
     }
 }
 

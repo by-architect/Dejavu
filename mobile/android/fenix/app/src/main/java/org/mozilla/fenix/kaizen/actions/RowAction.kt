@@ -37,6 +37,15 @@ sealed interface RowAction {
                 customActions.map { Custom(it) } +
                 BuiltIn(TabAction.CLOSE)
         }
+
+        /**
+         * Everything the selection bar can show, in display order: Kaizen's actions, the custom ones, then Delete and
+         * Close.
+         */
+        fun selectionBar(customActions: List<CustomAction>): List<RowAction> {
+            val (last, first) = TabAction.forSelection.partition { it == TabAction.DELETE || it == TabAction.CLOSE }
+            return first.map { BuiltIn(it) } + customActions.map { Custom(it) } + last.map { BuiltIn(it) }
+        }
     }
 }
 

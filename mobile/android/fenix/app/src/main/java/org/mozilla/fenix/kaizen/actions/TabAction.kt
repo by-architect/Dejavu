@@ -31,6 +31,7 @@ enum class TabAction(
     COPY_LINK("copy_link", R.string.kaizen_action_copy_link, iconsR.drawable.mozac_ic_link_24),
     DUPLICATE("duplicate", R.string.kaizen_action_duplicate, iconsR.drawable.mozac_ic_copy_24),
     MOVE_TO_WORKSPACE("move_to_workspace", R.string.kaizen_action_move_to_workspace, iconsR.drawable.mozac_ic_forward_24),
+    CHANGE_CONTAINER("change_container", R.string.kaizen_action_change_container, R.drawable.kaizen_ic_container_24),
     MOVE_TO_FOLDER("move_to_folder", R.string.kaizen_action_move_to_folder, iconsR.drawable.mozac_ic_folder_arrow_right_24),
     NEW_FOLDER("new_folder", R.string.kaizen_action_new_folder, iconsR.drawable.mozac_ic_folder_add_24),
     RESET_PIN("reset_pin", R.string.kaizen_action_reset_pin, iconsR.drawable.mozac_ic_arrow_counter_clockwise_24),
@@ -50,19 +51,20 @@ enum class TabAction(
         /** Actions the user can put on pinned tab rows, in display order. */
         val forPinnedRows = listOf(
             UNPIN, RESET_PIN, ADD_TO_ESSENTIALS, SLEEP, BOOKMARK, SHARE, COPY_LINK, DUPLICATE, MOVE_TO_FOLDER,
-            MOVE_TO_WORKSPACE, CLOSE,
+            MOVE_TO_WORKSPACE, CHANGE_CONTAINER, CLOSE,
         )
 
         /** Actions the user can put on unpinned tab rows, in display order. */
         val forUnpinnedRows = listOf(
-            PIN, ADD_TO_ESSENTIALS, SLEEP, BOOKMARK, SHARE, COPY_LINK, DUPLICATE, MOVE_TO_FOLDER, MOVE_TO_WORKSPACE, CLOSE,
+            PIN, ADD_TO_ESSENTIALS, SLEEP, BOOKMARK, SHARE, COPY_LINK, DUPLICATE, MOVE_TO_FOLDER, MOVE_TO_WORKSPACE,
+            CHANGE_CONTAINER, CLOSE,
         )
 
         /** Actions of the selection bar, in display order. */
         val forSelection = listOf(
             SHARE, SLEEP, BOOKMARK, COPY_LINK, PIN, UNPIN, RESET_PIN, ADD_TO_ESSENTIALS, REMOVE_FROM_ESSENTIALS,
-            NEW_FOLDER, NEW_SUBFOLDER, RENAME_FOLDER, MOVE_TO_FOLDER, MOVE_TO_WORKSPACE, UNPACK_FOLDER, DUPLICATE, DELETE,
-            CLOSE,
+            NEW_FOLDER, NEW_SUBFOLDER, RENAME_FOLDER, MOVE_TO_FOLDER, MOVE_TO_WORKSPACE, CHANGE_CONTAINER, UNPACK_FOLDER,
+            DUPLICATE, DELETE, CLOSE,
         )
 
         fun fromKey(key: String): TabAction? = entries.firstOrNull { it.key == key }

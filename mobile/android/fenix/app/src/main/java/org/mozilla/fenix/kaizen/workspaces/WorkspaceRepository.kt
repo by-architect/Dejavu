@@ -97,6 +97,20 @@ class WorkspaceRepository private constructor(context: Context) {
         )
     }
 
+    /** Makes pinned tabs [pinIds] reopen in container [containerId], or without a container when it is `null`. */
+    fun setPinContainer(pinIds: Set<String>, containerId: String?) = mutate { state ->
+        val now = now()
+        state.copy(
+            pins = state.pins.map {
+                if (it.id in pinIds && !it.isFolder && it.containerId != containerId) {
+                    it.copy(containerId = containerId, updatedAt = now)
+                } else {
+                    it
+                }
+            },
+        )
+    }
+
     /** Removes the pinned tabs of container [containerId] or backed by one of [tabIds]. */
     fun removePinsOf(containerId: String, tabIds: Set<String>) = mutate { state ->
         state.copy(

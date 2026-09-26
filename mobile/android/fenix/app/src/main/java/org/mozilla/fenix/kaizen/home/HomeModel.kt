@@ -5,7 +5,6 @@
 package org.mozilla.fenix.kaizen.home
 
 import mozilla.components.browser.state.state.TabSessionState
-import org.mozilla.fenix.kaizen.actions.CustomAction
 import org.mozilla.fenix.kaizen.actions.RowAction
 import org.mozilla.fenix.kaizen.actions.TabAction
 import org.mozilla.fenix.kaizen.workspaces.MAX_FOLDER_DEPTH
@@ -81,6 +80,17 @@ data class ActionTargets(
             }
         }
 
+    /** Containers the targets are in; `null` stands for no container. */
+    val containerIds: Set<String?>
+        get() {
+            val open = (pinnedTabs + folderTabs).associateBy { it.id }
+            val pinContainers = allPins.map { pin ->
+                val tab = pin.tabId?.let { open[it] }
+                if (tab != null) tab.contextId else pin.containerId
+            }
+            return (tabs.map { it.contextId } + pinContainers).toSet()
+        }
+
     /** Pinned tabs whose open tab has left the pinned page, with that tab. */
     val changedPins: List<Pair<PinnedItem, TabSessionState>>
         get() {
@@ -150,6 +160,7 @@ fun TabAction.appliesTo(targets: ActionTargets): Boolean = when (this) {
     TabAction.UNPACK_FOLDER -> targets.folders.isNotEmpty() && targets.tabs.isEmpty() && targets.pins.isEmpty()
     TabAction.DELETE -> targets.pins.isNotEmpty() || targets.folders.isNotEmpty()
     TabAction.MOVE_TO_FOLDER, TabAction.MOVE_TO_WORKSPACE -> !targets.isEmpty()
+    TabAction.CHANGE_CONTAINER -> targets.tabs.isNotEmpty() || targets.allPins.isNotEmpty()
 }
 
 /** Whether [this] action can do anything for [targets]. */
@@ -171,16 +182,6 @@ fun rowActions(configured: List<RowAction>, targets: ActionTargets, isPinned: Bo
         }
         .distinctBy { it.key }
         .filter { it.appliesTo(targets) }
-
-/** Every action of the selection bar that applies to [targets]: Kaizen's, the custom ones, then Delete and Close. */
-fun selectionActions(customActions: List<CustomAction>, targets: ActionTargets): List<RowAction> {
-    val (destructive, others) = TabAction.forSelection.partition { it == TabAction.DELETE || it == TabAction.CLOSE }
-    return (
-        others.map { RowAction.BuiltIn(it) } +
-            customActions.map { RowAction.Custom(it) } +
-            destructive.map { RowAction.BuiltIn(it) }
-        ).filter { it.appliesTo(targets) }
-}
 
 /** Folder that a new folder grouping [targets] goes in: their common parent, while it can hold one more level. */
 fun WorkspaceState.newFolderParent(targets: ActionTargets): String? =
@@ -249,4 +250,5 @@ sealed interface HomeDialog {
     data class DeleteItems(val targets: ActionTargets) : HomeDialog
     data class MoveToFolder(val workspaceId: String, val targets: ActionTargets) : HomeDialog
     data class MoveToWorkspace(val workspaceId: String, val targets: ActionTargets) : HomeDialog
+    data class ChangeContainer(val targets: ActionTargets) : HomeDialog
 }

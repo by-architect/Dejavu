@@ -45,6 +45,7 @@ import org.mozilla.fenix.compose.settings.SettingsSectionHeader
 import org.mozilla.fenix.e2e.SystemInsetsPaddedFragment
 import org.mozilla.fenix.ext.requireComponents
 import org.mozilla.fenix.ext.showToolbar
+import org.mozilla.fenix.kaizen.actions.CustomAction
 import org.mozilla.fenix.kaizen.actions.RowAction
 import org.mozilla.fenix.kaizen.actions.label
 import org.mozilla.fenix.kaizen.containers.ContainerRecord
@@ -59,8 +60,13 @@ import mozilla.components.ui.icons.R as iconsR
 /**
  * Base for the Kaizen settings screens: a Compose screen below the settings toolbar.
  */
-abstract class KaizenComposeFragment(@param:StringRes private val title: Int) :
+abstract class KaizenComposeFragment(@param:StringRes private val defaultTitle: Int) :
     Fragment(), SystemInsetsPaddedFragment {
+    /** Title of the settings toolbar. */
+    @get:StringRes
+    protected open val title: Int
+        get() = defaultTitle
+
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View =
         ComposeView(requireContext()).apply {
             setViewCompositionStrategy(ViewCompositionStrategy.DisposeOnViewTreeLifecycleDestroyed)
@@ -77,7 +83,19 @@ abstract class KaizenComposeFragment(@param:StringRes private val title: Int) :
     abstract fun KaizenScreen()
 }
 
-/** Chooses the buttons of pinned and unpinned tab rows, and lists the custom actions. */
+/** A list of actions to choose from in the tab actions settings. */
+enum class ActionList(@param:StringRes val title: Int) {
+    /** The buttons of pinned tab rows. */
+    PINNED(R.string.kaizen_settings_pinned_tabs),
+
+    /** The buttons of unpinned tab rows. */
+    UNPINNED(R.string.kaizen_settings_unpinned_tabs),
+
+    /** The actions of the selection bar. */
+    ALL(R.string.kaizen_settings_all_actions),
+}
+
+/** Leads to the three [ActionList]s: pinned tab rows, unpinned tab rows and the selection bar. */
 class KaizenTabActionsFragment : KaizenComposeFragment(R.string.kaizen_settings_tab_actions) {
     @Composable
     override fun KaizenScreen() {
@@ -85,44 +103,162 @@ class KaizenTabActionsFragment : KaizenComposeFragment(R.string.kaizen_settings_
         val customActions by settings.customActions.collectAsState()
         val pinnedKeys by settings.pinnedRowKeys.collectAsState()
         val unpinnedKeys by settings.unpinnedRowKeys.collectAsState()
+        val hiddenKeys by settings.hiddenSelectionKeys.collectAsState()
+        val allActions = RowAction.selectionBar(customActions)
 
         Column(modifier = Modifier.fillMaxSize().verticalScroll(rememberScrollState())) {
-            FilledButton(
-                text = stringResource(R.string.kaizen_custom_action_add),
-                icon = painterResource(iconsR.drawable.mozac_ic_plus_24),
-                modifier = Modifier.fillMaxWidth().padding(start = 16.dp, end = 16.dp, top = 16.dp),
-                onClick = { openEditor(null) },
-            )
             Text(
-                text = stringResource(R.string.kaizen_settings_tab_actions_hint, KaizenSettings.MAX_ROW_ACTIONS),
+                text = stringResource(R.string.kaizen_settings_tab_actions_hint),
                 style = MaterialTheme.typography.bodyMedium,
                 color = MaterialTheme.colorScheme.onSurfaceVariant,
                 modifier = Modifier.padding(16.dp),
             )
-            ActionSection(
-                title = R.string.kaizen_settings_pinned_tabs,
-                available = RowAction.available(pinned = true, customActions = customActions),
-                enabledKeys = pinnedKeys,
-            ) { key, on -> settings.setRowAction(pinned = true, key = key, enabled = on) }
-            ActionSection(
-                title = R.string.kaizen_settings_unpinned_tabs,
-                available = RowAction.available(pinned = false, customActions = customActions),
-                enabledKeys = unpinnedKeys,
-            ) { key, on -> settings.setRowAction(pinned = false, key = key, enabled = on) }
-            if (customActions.isNotEmpty()) {
-                SettingsSectionHeader(
-                    text = stringResource(R.string.kaizen_custom_actions),
-                    modifier = Modifier.padding(start = 16.dp, top = 16.dp, end = 16.dp),
-                )
-                customActions.forEach { action ->
-                    IconListItem(
-                        label = action.name,
-                        description = "${action.method.name} ${action.url}",
-                        beforeIconPainter = painterResource(iconsR.drawable.mozac_ic_lightning_24),
-                        onClick = { openEditor(action.id) },
+            IconListItem(
+                label = stringResource(R.string.kaizen_settings_pinned_tabs),
+                description = rowSummary(resolveRowActions(pinnedKeys, pinned = true, customActions = customActions)),
+                beforeIconPainter = painterResource(iconsR.drawable.mozac_ic_pin_24),
+                onClick = { openList(ActionList.PINNED) },
+            )
+            IconListItem(
+                label = stringResource(R.string.kaizen_settings_unpinned_tabs),
+                description = rowSummary(resolveRowActions(unpinnedKeys, pinned = false, customActions = customActions)),
+                beforeIconPainter = painterResource(iconsR.drawable.mozac_ic_tab_24),
+                onClick = { openList(ActionList.UNPINNED) },
+            )
+            IconListItem(
+                label = stringResource(R.string.kaizen_settings_all_actions),
+                description = stringResource(
+                    R.string.kaizen_settings_all_actions_summary,
+                    allActions.count { it.key !in hiddenKeys },
+                    allActions.size,
+                ),
+                beforeIconPainter = painterResource(iconsR.drawable.mozac_ic_select_all_24),
+                onClick = { openList(ActionList.ALL) },
+            )
+        }
+    }
+
+    @Composable
+    private fun rowSummary(actions: List<RowAction>): String =
+        if (actions.isEmpty()) {
+            stringResource(R.string.kaizen_settings_no_buttons)
+        } else {
+            actions.map { it.label }.joinToString(", ")
+        }
+
+    private fun openList(list: ActionList) {
+        findNavController().navigate(
+            R.id.kaizenActionListFragment,
+            Bundle().apply { putString(KaizenActionListFragment.ARG_LIST, list.name) },
+        )
+    }
+}
+
+/** Chooses the actions of one [ActionList], below the custom actions and the button that adds one. */
+class KaizenActionListFragment : KaizenComposeFragment(R.string.kaizen_settings_tab_actions) {
+    private val list: ActionList
+        get() = arguments?.getString(ARG_LIST)?.let { name -> ActionList.entries.firstOrNull { it.name == name } }
+            ?: ActionList.ALL
+
+    override val title: Int
+        get() = list.title
+
+    @Composable
+    override fun KaizenScreen() {
+        val settings = remember { kaizenSettings() }
+        val customActions by settings.customActions.collectAsState()
+
+        Column(modifier = Modifier.fillMaxSize().verticalScroll(rememberScrollState())) {
+            AddActionSection(customActions)
+            when (val current = list) {
+                ActionList.PINNED, ActionList.UNPINNED -> {
+                    val pinned = current == ActionList.PINNED
+                    val keys by (if (pinned) settings.pinnedRowKeys else settings.unpinnedRowKeys).collectAsState()
+                    val available = RowAction.available(pinned, customActions)
+                    val enabledCount = available.count { it.key in keys }
+                    val hint = if (pinned) {
+                        R.string.kaizen_settings_pinned_actions_hint
+                    } else {
+                        R.string.kaizen_settings_unpinned_actions_hint
+                    }
+                    ActionSwitches(
+                        title = R.string.kaizen_settings_buttons,
+                        hint = stringResource(hint, KaizenSettings.MAX_ROW_ACTIONS),
+                        actions = available,
+                        isChecked = { it.key in keys },
+                        canCheckMore = enabledCount < KaizenSettings.MAX_ROW_ACTIONS,
+                        onChange = { key, on -> settings.setRowAction(pinned = pinned, key = key, enabled = on) },
+                    )
+                }
+                ActionList.ALL -> {
+                    val hiddenKeys by settings.hiddenSelectionKeys.collectAsState()
+                    ActionSwitches(
+                        title = R.string.kaizen_settings_actions,
+                        hint = stringResource(R.string.kaizen_settings_all_actions_hint),
+                        actions = RowAction.selectionBar(customActions),
+                        isChecked = { it.key !in hiddenKeys },
+                        canCheckMore = true,
+                        onChange = { key, on -> settings.setSelectionAction(key, enabled = on) },
                     )
                 }
             }
+        }
+    }
+
+    /** The button that adds a custom action, and the custom actions to edit. */
+    @Composable
+    private fun AddActionSection(customActions: List<CustomAction>) {
+        FilledButton(
+            text = stringResource(R.string.kaizen_custom_action_add),
+            icon = painterResource(iconsR.drawable.mozac_ic_plus_24),
+            modifier = Modifier.fillMaxWidth().padding(start = 16.dp, end = 16.dp, top = 16.dp),
+            onClick = { openEditor(null) },
+        )
+        if (customActions.isNotEmpty()) {
+            SettingsSectionHeader(
+                text = stringResource(R.string.kaizen_custom_actions),
+                modifier = Modifier.padding(start = 16.dp, top = 16.dp, end = 16.dp),
+            )
+            customActions.forEach { action ->
+                IconListItem(
+                    label = action.name,
+                    description = "${action.method.name} ${action.url}",
+                    beforeIconPainter = painterResource(iconsR.drawable.mozac_ic_lightning_24),
+                    onClick = { openEditor(action.id) },
+                )
+            }
+        }
+    }
+
+    @Suppress("LongParameterList")
+    @Composable
+    private fun ActionSwitches(
+        @StringRes title: Int,
+        hint: String,
+        actions: List<RowAction>,
+        isChecked: (RowAction) -> Boolean,
+        canCheckMore: Boolean,
+        onChange: (String, Boolean) -> Unit,
+    ) {
+        SettingsSectionHeader(
+            text = stringResource(title),
+            modifier = Modifier.padding(start = 16.dp, top = 24.dp, end = 16.dp),
+        )
+        Text(
+            text = hint,
+            style = MaterialTheme.typography.bodyMedium,
+            color = MaterialTheme.colorScheme.onSurfaceVariant,
+            modifier = Modifier.padding(horizontal = 16.dp, vertical = 8.dp),
+        )
+        actions.forEach { action ->
+            val checked = isChecked(action)
+            SwitchListItem(
+                label = action.label,
+                checked = checked,
+                enabled = checked || canCheckMore,
+                showSwitchAfter = true,
+                onClick = { onChange(action.key, it) },
+            )
         }
     }
 
@@ -133,28 +269,9 @@ class KaizenTabActionsFragment : KaizenComposeFragment(R.string.kaizen_settings_
         )
     }
 
-    @Composable
-    private fun ActionSection(
-        @StringRes title: Int,
-        available: List<RowAction>,
-        enabledKeys: List<String>,
-        onChange: (String, Boolean) -> Unit,
-    ) {
-        SettingsSectionHeader(
-            text = stringResource(title),
-            modifier = Modifier.padding(start = 16.dp, top = 16.dp, end = 16.dp),
-        )
-        val enabledCount = available.count { it.key in enabledKeys }
-        available.forEach { action ->
-            val checked = action.key in enabledKeys
-            SwitchListItem(
-                label = action.label,
-                checked = checked,
-                enabled = checked || enabledCount < KaizenSettings.MAX_ROW_ACTIONS,
-                showSwitchAfter = true,
-                onClick = { onChange(action.key, it) },
-            )
-        }
+    companion object {
+        /** Name of the [ActionList] to show. */
+        const val ARG_LIST = "list"
     }
 }
 

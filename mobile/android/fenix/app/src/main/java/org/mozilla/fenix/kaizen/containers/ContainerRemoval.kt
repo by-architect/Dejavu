@@ -10,6 +10,7 @@ import mozilla.components.browser.state.state.SessionState
 import mozilla.components.browser.state.state.TabSessionState
 import mozilla.components.concept.engine.utils.ABOUT_HOME_URL
 import org.mozilla.fenix.components.Components
+import org.mozilla.fenix.kaizen.SilentlyClosedTabs
 import org.mozilla.fenix.kaizen.workspaces.WorkspaceRepository
 
 /** What happens to the tabs of a container that is deleted. */
@@ -46,26 +47,45 @@ class ContainerRemover(
             }
             is ContainerRemoval.MoveTabs -> {
                 val selectedTabId = store.state.selectedTabId
-                tabs.forEach { reopen(it, removal.contextId, selected = it.id == selectedTabId) }
+                tabs.forEach {
+                    val selected = it.id == selectedTabId
+                    components.reopenInContainer(it, removal.contextId, repository, selected = selected, load = selected)
+                }
                 repository?.replaceContainer(record.contextId, removal.contextId)
             }
         }
         components.core.geckoRuntime.storageController.clearDataForSessionContext(record.contextId)
         store.dispatch(ContainerAction.RemoveContainerAction(record.contextId))
     }
+}
 
-    /** A tab cannot change its context, so it is reopened next to itself in [contextId] and the old one is closed. */
-    private fun reopen(tab: TabSessionState, contextId: String?, selected: Boolean) {
-        val newTabId = tabsUseCases.addTab(
-            url = tab.content.url,
-            selectTab = selected,
-            startLoading = selected,
-            title = tab.content.title,
-            contextId = contextId,
-            source = SessionState.Source.Internal.None,
-        )
-        store.dispatch(TabListAction.MoveTabsAction(listOf(newTabId), tab.id, placeAfter = true))
-        repository?.replaceTab(tab.id, newTabId)
-        tabsUseCases.removeTab(tab.id)
-    }
+/**
+ * Moves [tab] to container [contextId], or out of any container when it is `null`. A tab cannot change its context,
+ * so it is reopened next to itself in [contextId] and the old one is closed; its back and forward history is lost.
+ *
+ * @param selected Whether [tab] is the selected tab; the new tab then takes its place.
+ * @param load Whether the new tab loads its page right away rather than when it is first shown.
+ * @return The id of the new tab.
+ */
+fun Components.reopenInContainer(
+    tab: TabSessionState,
+    contextId: String?,
+    repository: WorkspaceRepository?,
+    selected: Boolean,
+    load: Boolean,
+): String {
+    val tabsUseCases = useCases.tabsUseCases
+    val newTabId = tabsUseCases.addTab(
+        url = tab.content.url,
+        selectTab = selected,
+        startLoading = load,
+        title = tab.content.title,
+        contextId = contextId,
+        source = SessionState.Source.Internal.None,
+    )
+    core.store.dispatch(TabListAction.MoveTabsAction(listOf(newTabId), tab.id, placeAfter = true))
+    repository?.replaceTab(tab.id, newTabId)
+    SilentlyClosedTabs.add(tab.id)
+    tabsUseCases.removeTab(tab.id)
+    return newTabId
 }

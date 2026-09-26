@@ -23,6 +23,9 @@ class KaizenSettings private constructor(context: Context) {
     private val _customActions = MutableStateFlow(readCustomActions())
     private val _pinnedRowKeys = MutableStateFlow(readKeys(KEY_PINNED_ROW_ACTIONS, DEFAULT_PINNED_ROW_ACTIONS))
     private val _unpinnedRowKeys = MutableStateFlow(readKeys(KEY_UNPINNED_ROW_ACTIONS, DEFAULT_UNPINNED_ROW_ACTIONS))
+    private val _hiddenSelectionKeys = MutableStateFlow(
+        prefs.getString(KEY_HIDDEN_SELECTION_ACTIONS, null)?.split(",")?.filter { it.isNotBlank() }?.toSet().orEmpty(),
+    )
 
     /** Actions the user defined, in creation order. */
     val customActions: StateFlow<List<CustomAction>> = _customActions.asStateFlow()
@@ -33,6 +36,9 @@ class KaizenSettings private constructor(context: Context) {
     /** Keys of the [RowAction]s shown on unpinned tab rows. */
     val unpinnedRowKeys: StateFlow<List<String>> = _unpinnedRowKeys.asStateFlow()
 
+    /** Keys of the [RowAction]s left out of the selection bar. Every other action, new ones included, is shown. */
+    val hiddenSelectionKeys: StateFlow<Set<String>> = _hiddenSelectionKeys.asStateFlow()
+
     /** Enables or disables a row button. At most [MAX_ROW_ACTIONS] can be enabled. */
     fun setRowAction(pinned: Boolean, key: String, enabled: Boolean) {
         val flow = if (pinned) _pinnedRowKeys else _unpinnedRowKeys
@@ -40,6 +46,12 @@ class KaizenSettings private constructor(context: Context) {
         if (updated.distinct().size > MAX_ROW_ACTIONS) return
         flow.value = updated.distinct()
         prefs.edit { putString(if (pinned) KEY_PINNED_ROW_ACTIONS else KEY_UNPINNED_ROW_ACTIONS, flow.value.joinToString(",")) }
+    }
+
+    /** Shows or hides an action of the selection bar. */
+    fun setSelectionAction(key: String, enabled: Boolean) {
+        _hiddenSelectionKeys.value = if (enabled) _hiddenSelectionKeys.value - key else _hiddenSelectionKeys.value + key
+        prefs.edit { putString(KEY_HIDDEN_SELECTION_ACTIONS, _hiddenSelectionKeys.value.joinToString(",")) }
     }
 
     /** Adds [action], or replaces the custom action with the same id. */
@@ -53,13 +65,14 @@ class KaizenSettings private constructor(context: Context) {
         writeCustomActions()
     }
 
-    /** Deletes a custom action and removes it from the tab rows. */
+    /** Deletes a custom action and forgets where it was shown. */
     fun deleteCustomAction(id: String) {
         _customActions.value = _customActions.value.filterNot { it.id == id }
         writeCustomActions()
         val key = RowAction.keyOf(id)
         setRowAction(pinned = true, key = key, enabled = false)
         setRowAction(pinned = false, key = key, enabled = false)
+        setSelectionAction(key, enabled = true)
     }
 
     private fun readKeys(key: String, default: List<TabAction>): List<String> =
@@ -84,6 +97,7 @@ class KaizenSettings private constructor(context: Context) {
         private const val KEY_PINNED_ROW_ACTIONS = "pinned_row_actions"
         private const val KEY_UNPINNED_ROW_ACTIONS = "unpinned_row_actions"
         private const val KEY_CUSTOM_ACTIONS = "custom_actions"
+        private const val KEY_HIDDEN_SELECTION_ACTIONS = "hidden_selection_actions"
         private val DEFAULT_PINNED_ROW_ACTIONS = listOf(TabAction.CLOSE)
         private val DEFAULT_UNPINNED_ROW_ACTIONS = listOf(TabAction.PIN, TabAction.CLOSE)
 
@@ -101,3 +115,7 @@ class KaizenSettings private constructor(context: Context) {
 /** The row buttons chosen with [keys], in display order. */
 fun resolveRowActions(keys: List<String>, pinned: Boolean, customActions: List<CustomAction>): List<RowAction> =
     RowAction.available(pinned, customActions).filter { it.key in keys }.take(KaizenSettings.MAX_ROW_ACTIONS)
+
+/** The actions of the selection bar in display order, without the ones hidden with [hiddenKeys]. */
+fun resolveSelectionActions(hiddenKeys: Set<String>, customActions: List<CustomAction>): List<RowAction> =
+    RowAction.selectionBar(customActions).filter { it.key !in hiddenKeys }

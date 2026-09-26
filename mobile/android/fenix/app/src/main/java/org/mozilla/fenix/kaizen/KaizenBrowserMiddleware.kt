@@ -11,6 +11,7 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import mozilla.components.browser.state.action.BrowserAction
 import mozilla.components.browser.state.action.TabListAction
+import mozilla.components.browser.state.action.UndoAction
 import mozilla.components.browser.state.state.BrowserState
 import mozilla.components.browser.state.state.SessionState
 import mozilla.components.browser.state.state.TabSessionState
@@ -19,6 +20,7 @@ import mozilla.components.lib.state.Middleware
 import mozilla.components.lib.state.Store
 import org.mozilla.fenix.kaizen.containers.KaizenContainerStorage
 import org.mozilla.fenix.kaizen.workspaces.WorkspaceRepository
+import java.util.concurrent.ConcurrentHashMap
 
 /**
  * Middleware Kaizen adds to Fenix's browser store: android-components' container support backed by Kaizen's storage,
@@ -32,7 +34,43 @@ fun kaizenBrowserMiddleware(context: Context): List<Middleware<BrowserState, Bro
     return listOf(
         ContainerMiddleware(context, containerStorage = KaizenContainerStorage.get(context)),
         WorkspaceContainerMiddleware(),
+        SilentlyClosedTabsMiddleware(),
     )
+}
+
+/**
+ * Tabs Kaizen closes on its own, like the old copy of a tab reopened in another container. They are kept out of undo
+ * and so never show up in the recently closed tabs.
+ */
+object SilentlyClosedTabs {
+    private val tabIds: MutableSet<String> = ConcurrentHashMap.newKeySet()
+
+    /** Marks [tabId], which is about to be closed, as closed by Kaizen. */
+    fun add(tabId: String) {
+        tabIds.add(tabId)
+    }
+
+    internal fun contains(tabId: String) = tabId in tabIds
+
+    internal fun consume(tabId: String) = tabIds.remove(tabId)
+}
+
+/**
+ * Removes [SilentlyClosedTabs] from the tabs remembered for undo. Tabs left in undo end up in the recently closed tabs,
+ * so this has to happen before that list and its storage see them.
+ */
+internal class SilentlyClosedTabsMiddleware : Middleware<BrowserState, BrowserAction> {
+    override fun invoke(
+        store: Store<BrowserState, BrowserAction>,
+        next: (BrowserAction) -> Unit,
+        action: BrowserAction,
+    ) {
+        if (action is UndoAction.AddRecoverableTabs && action.tabs.any { SilentlyClosedTabs.contains(it.state.id) }) {
+            next(action.copy(tabs = action.tabs.filterNot { SilentlyClosedTabs.consume(it.state.id) }))
+        } else {
+            next(action)
+        }
+    }
 }
 
 /**

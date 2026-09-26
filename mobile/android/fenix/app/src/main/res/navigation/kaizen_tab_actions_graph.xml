@@ -14,6 +14,16 @@
         android:label="@string/kaizen_settings_tab_actions" />
 
     <fragment
+        android:id="@+id/kaizenActionListFragment"
+        android:name="org.mozilla.fenix.kaizen.settings.KaizenActionListFragment"
+        android:label="@string/kaizen_settings_tab_actions">
+        <argument
+            android:name="list"
+            android:defaultValue="ALL"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
         android:id="@+id/kaizenCustomActionFragment"
         android:name="org.mozilla.fenix.kaizen.settings.KaizenCustomActionFragment"
         android:label="@string/kaizen_custom_action">

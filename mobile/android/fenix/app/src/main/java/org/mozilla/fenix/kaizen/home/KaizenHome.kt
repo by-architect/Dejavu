@@ -93,6 +93,9 @@ interface KaizenHomeInteractor {
     /** Removes pinned tabs, essentials and folders with everything inside them, and closes every tab of [targets]. */
     fun onDeleteItems(targets: ActionTargets)
     fun onMoveToWorkspace(targets: ActionTargets, workspaceId: String)
+
+    /** Moves the tabs of [targets] to container [contextId], or out of any container when it is `null`. */
+    fun onChangeContainer(targets: ActionTargets, contextId: String?)
     fun onSearchClick()
 
     /** Starts a new tab in [containerId], or without a container when it is `null`. */
@@ -118,7 +121,7 @@ fun KaizenHome(
     containers: Map<String, ContainerRecord>,
     pinnedRowActions: List<RowAction>,
     unpinnedRowActions: List<RowAction>,
-    customActions: List<CustomAction>,
+    selectionActions: List<RowAction>,
     interactor: KaizenHomeInteractor,
     modifier: Modifier = Modifier,
 ) {
@@ -166,6 +169,7 @@ fun KaizenHome(
                     targets.folders.singleOrNull()?.let { dialog = HomeDialog.NewFolder(workspaceId, parentId = it.id) }
                 TabAction.RENAME_FOLDER -> targets.folders.singleOrNull()?.let { dialog = HomeDialog.RenameFolder(it) }
                 TabAction.DELETE -> dialog = HomeDialog.DeleteItems(targets)
+                TabAction.CHANGE_CONTAINER -> dialog = HomeDialog.ChangeContainer(targets)
                 else -> interactor.onTabAction(action.action, targets, workspaceId)
             }
         }
@@ -282,7 +286,7 @@ fun KaizenHome(
         } else {
             val targets = ActionTargets.of(state, tabs, activeSelection)
             SelectionBar(
-                actions = selectionActions(customActions, targets),
+                actions = selectionActions.filter { it.appliesTo(targets) },
                 onAction = { runAction(it, targets, currentWorkspace.id) },
             )
         }
@@ -456,7 +460,7 @@ private fun SelectionAction(
             style = MaterialTheme.typography.labelSmall,
             color = color,
             textAlign = TextAlign.Center,
-            maxLines = 2,
+            maxLines = 3,
             overflow = TextOverflow.Ellipsis,
         )
     }
