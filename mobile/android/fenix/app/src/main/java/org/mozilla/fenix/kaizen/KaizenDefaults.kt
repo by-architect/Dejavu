@@ -15,20 +15,34 @@ import org.mozilla.fenix.settings.ShortcutType
 internal object KaizenDefaults {
     private const val PREFS_NAME = "kaizen_settings"
     private const val KEY_VERSION = "defaults_version"
-    private const val VERSION = 1
+    private const val VERSION = 3
 
     /** Applies the defaults the first time this Kaizen version runs. Reads and writes preferences, so call off the main thread. */
     fun applyOnce(context: Context) {
         val prefs = context.getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE)
-        if (prefs.getInt(KEY_VERSION, 0) >= VERSION) return
+        val applied = prefs.getInt(KEY_VERSION, 0)
+        if (applied >= VERSION) return
 
         with(context.components.settings) {
-            // New tabs start from the Kaizen home screen instead of an about:home tab.
-            enableHomepageAsNewTab = false
-            // The toolbar shortcut of the browser becomes a button back to the home screen.
-            toolbarSimpleShortcutKey = ShortcutType.HOMEPAGE.value
-            toolbarTabStripShortcutKey = ShortcutType.HOMEPAGE.value
-            toolbarExpandedShortcutKey = ShortcutType.HOMEPAGE.value
+            if (applied < 1) {
+                // New tabs start from the Kaizen home screen instead of an about:home tab.
+                enableHomepageAsNewTab = false
+                toolbarExpandedShortcutKey = ShortcutType.HOMEPAGE.value
+            }
+            if (applied < 2) {
+                // One toolbar row: the shortcut left of the address bar is Back, and home is always on its right.
+                shouldUseExpandedToolbar = false
+                toolbarSimpleShortcutKey = ShortcutType.BACK.value
+                toolbarTabStripShortcutKey = ShortcutType.BACK.value
+            }
+            if (applied < 3) {
+                // Kaizen has no shortcuts, collections, inactive tabs or tab groups; workspaces and pins replace them.
+                showTopSitesFeature = false
+                showContileFeature = false
+                hideCollectionsUi = true
+                inactiveTabsAreEnabled = false
+                tabGroupsEnabled = false
+            }
         }
         prefs.edit { putInt(KEY_VERSION, VERSION) }
     }

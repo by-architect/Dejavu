@@ -101,6 +101,8 @@ private fun Modifier.awesomeBarContentWidth(useAddressBarFocusMode: Boolean) =
  * @param showScrimWhenNoSuggestions Whether to show a scrim when no suggestions are available.
  * @param searchAccessPoint Where search was started from.
  * @param isEdgeToEdgeBackgroundEnabled Whether the Edge2Edge background is enabled.
+ * @param suggestionsAtBottom Whether the suggestions start at the bottom, next to an address bar shown there while
+ *   searching. Defaults to the position of the address bar.
  */
 @Suppress("LongParameterList")
 class AwesomeBarComposable(
@@ -116,6 +118,7 @@ class AwesomeBarComposable(
     private val showScrimWhenNoSuggestions: Boolean = false,
     private val searchAccessPoint: MetricsUtils.Source = MetricsUtils.Source.NONE,
     private val isEdgeToEdgeBackgroundEnabled: Boolean = false,
+    private val suggestionsAtBottom: Boolean? = null,
 ) {
     private val searchStore by initializeSearchStore()
 
@@ -138,7 +141,7 @@ class AwesomeBarComposable(
         val orientation by
             remember(state.searchSuggestionsOrientedAtBottom) {
                 derivedStateOf {
-                    when (searchStore.state.searchSuggestionsOrientedAtBottom) {
+                    when (suggestionsAtBottom ?: searchStore.state.searchSuggestionsOrientedAtBottom) {
                         true -> AwesomeBarOrientation.BOTTOM
                         false -> AwesomeBarOrientation.TOP
                     }

@@ -11,6 +11,8 @@
 
     <include app:graph="@navigation/kaizen_tab_actions_graph" />
     <include app:graph="@navigation/kaizen_containers_graph" />
+    <include app:graph="@navigation/kaizen_external_links_graph" />
+    <include app:graph="@navigation/kaizen_more_menu_graph" />
 
     <action
         android:id="@+id/action_startup_home"
@@ -172,9 +174,25 @@
         app:exitAnim="@anim/slide_out_left"
         app:popEnterAnim="@anim/slide_in_left"
         app:popExitAnim="@anim/slide_out_right" />
+    <!-- Kaizen: tabs are managed on the home screen, so every way to the tabs tray leads there. -->
     <action
         android:id="@+id/action_global_tabManagementFragment"
-        app:destination="@id/tabManagementFragment" />
+        app:destination="@id/homeFragment"
+        app:popUpTo="@id/homeFragment"
+        app:popUpToInclusive="true">
+        <argument
+            android:name="enterMultiselect"
+            android:defaultValue="false"
+            app:argType="boolean" />
+        <argument
+            android:name="page"
+            android:defaultValue="NormalTabs"
+            app:argType="org.mozilla.fenix.tabstray.redux.state.Page" />
+        <argument
+            android:name="accessPoint"
+            android:defaultValue="None"
+            app:argType="org.mozilla.fenix.tabstray.ui.AccessPoint" />
+    </action>
     <action
         android:id="@+id/action_global_savedLoginsAuthFragment"
         app:destination="@id/savedLoginsAuthFragment" />

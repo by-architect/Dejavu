@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<!-- Kaizen's version of the android-components icon with this name. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <group
+        android:pivotY="12"
+        android:scaleY="-1">
+        <path
+            android:pathData="M8 10.5 L11.3 4.8 A1.6 1.6 0 0 1 14.2 6.1 L13.4 9.5 H18 A2 2 0 0 1 19.9 12 L18.6 17.7 A2 2 0 0 1 16.7 19.3 H8 Z"
+            android:fillColor="@color/mozac_ui_icons_fill" />
+        <path
+            android:pathData="M8 10.5 L11.3 4.8 A1.6 1.6 0 0 1 14.2 6.1 L13.4 9.5 H18 A2 2 0 0 1 19.9 12 L18.6 17.7 A2 2 0 0 1 16.7 19.3 H8 Z"
+            android:strokeWidth="1.75"
+            android:strokeColor="@color/mozac_ui_icons_fill"
+            android:strokeLineCap="round"
+            android:strokeLineJoin="round" />
+        <path
+            android:pathData="M5.30 10.50 H6.80 A1.2 1.2 0 0 1 8.00 11.70 V18.10 A1.2 1.2 0 0 1 6.80 19.30 H5.30 A1.2 1.2 0 0 1 4.10 18.10 V11.70 A1.2 1.2 0 0 1 5.30 10.50 Z"
+            android:fillColor="@color/mozac_ui_icons_fill" />
+        <path
+            android:pathData="M5.30 10.50 H6.80 A1.2 1.2 0 0 1 8.00 11.70 V18.10 A1.2 1.2 0 0 1 6.80 19.30 H5.30 A1.2 1.2 0 0 1 4.10 18.10 V11.70 A1.2 1.2 0 0 1 5.30 10.50 Z"
+            android:strokeWidth="1.75"
+            android:strokeColor="@color/mozac_ui_icons_fill"
+            android:strokeLineCap="round"
+            android:strokeLineJoin="round" />
+    </group>
+</vector>

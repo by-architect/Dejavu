@@ -69,6 +69,8 @@ enum class PinKind(val key: String) {
  * @property collapsed Whether a folder is collapsed. Local to this device, like in Zen.
  * @property icon Folder icon name, as Zen stores it. Not shown yet.
  * @property essential Whether this pinned tab is one of the essentials shared by all workspaces, like in Zen.
+ * @property staticLabel Whether [title] was given by the user and is shown instead of the page title, like Zen's
+ *   renamed tabs.
  * @property tabId Open browser tab currently backing a pinned tab. Local to this device and never synced.
  * @property createdAt Creation time in milliseconds.
  * @property updatedAt Last change time in milliseconds, used to resolve sync conflicts.
@@ -84,6 +86,7 @@ data class PinnedItem(
     val collapsed: Boolean = false,
     val icon: String? = null,
     val essential: Boolean = false,
+    val staticLabel: Boolean = false,
     val tabId: String? = null,
     val createdAt: Long,
     val updatedAt: Long,
@@ -106,6 +109,7 @@ data class SplitView(val id: String, val tabIds: List<String>)
  * @property activeWorkspaceId The workspace shown on the home screen. New tabs are assigned to it.
  * @property assignments Tab ID to workspace ID. Local to this device.
  * @property splits Tabs shown together in the browser. Local to this device.
+ * @property tabTitles Titles the user gave to tabs that are not pinned, by tab ID. Local to this device.
  */
 data class WorkspaceState(
     val workspaces: List<Workspace>,
@@ -113,6 +117,7 @@ data class WorkspaceState(
     val activeWorkspaceId: String,
     val assignments: Map<String, String>,
     val splits: List<SplitView> = emptyList(),
+    val tabTitles: Map<String, String> = emptyMap(),
 ) {
     val activeIndex: Int
         get() = workspaces.indexOfFirst { it.id == activeWorkspaceId }.coerceAtLeast(0)

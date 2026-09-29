@@ -104,6 +104,7 @@ private fun ActionButtonItem(
             onLongClick = action.onLongClick,
             onInteraction = { event -> onInteraction(event) },
             testTag = action.testTag,
+            shouldTint = action.shouldTint,
         )
     }
 }

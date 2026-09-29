@@ -204,7 +204,7 @@ private fun EssentialTile(
     onClick: () -> Unit,
     modifier: Modifier = Modifier,
 ) {
-    val title = tab?.displayTitle ?: item.title.ifBlank { item.url.orEmpty() }
+    val title = item.label(tab)
     val isAwake = tab?.isAwake == true
     val background = when {
         selection == true -> MaterialTheme.colorScheme.secondaryContainer

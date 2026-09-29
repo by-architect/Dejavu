@@ -13,6 +13,8 @@ import org.json.JSONArray
 import org.mozilla.fenix.kaizen.actions.CustomAction
 import org.mozilla.fenix.kaizen.actions.RowAction
 import org.mozilla.fenix.kaizen.actions.TabAction
+import org.mozilla.fenix.kaizen.containers.ContainerPick
+import org.mozilla.fenix.kaizen.menu.MoreMenuLayout
 
 /**
  * Device local Kaizen preferences: the buttons of tab rows and the custom actions. They are not synced.
@@ -24,6 +26,14 @@ class KaizenSettings private constructor(context: Context) {
     private val _pinnedRowKeys = MutableStateFlow(readKeys(KEY_PINNED_ROW_ACTIONS, DEFAULT_PINNED_ROW_ACTIONS))
     private val _unpinnedRowKeys = MutableStateFlow(readKeys(KEY_UNPINNED_ROW_ACTIONS, DEFAULT_UNPINNED_ROW_ACTIONS))
     private val _essentialsPerContainer = MutableStateFlow(prefs.getBoolean(KEY_ESSENTIALS_PER_CONTAINER, false))
+    private val _temporaryContainersByDefault =
+        MutableStateFlow(prefs.getBoolean(KEY_TEMPORARY_CONTAINERS_BY_DEFAULT, false))
+    private val _externalLinkWorkspaceId = MutableStateFlow(prefs.getString(KEY_EXTERNAL_LINK_WORKSPACE, null))
+    private val _externalLinkContainer =
+        MutableStateFlow(ContainerPick.fromKey(prefs.getString(KEY_EXTERNAL_LINK_CONTAINER, null)))
+    private val _moreMenuRows = MutableStateFlow(
+        MoreMenuLayout.normalized(MoreMenuLayout.fromJson(prefs.getString(KEY_MORE_MENU_ROWS, null)) ?: MoreMenuLayout.DEFAULT),
+    )
     private val _hiddenSelectionKeys = MutableStateFlow(
         prefs.getString(KEY_HIDDEN_SELECTION_ACTIONS, null)?.split(",")?.filter { it.isNotBlank() }?.toSet().orEmpty(),
     )
@@ -40,6 +50,18 @@ class KaizenSettings private constructor(context: Context) {
     /** Whether every container has its own essentials, shown in the workspaces using that container. */
     val essentialsPerContainer: StateFlow<Boolean> = _essentialsPerContainer.asStateFlow()
 
+    /** Whether new tabs of workspaces without a default container open in new temporary containers. */
+    val temporaryContainersByDefault: StateFlow<Boolean> = _temporaryContainersByDefault.asStateFlow()
+
+    /** Workspace links from other apps open in, or `null` for the workspace shown last. */
+    val externalLinkWorkspaceId: StateFlow<String?> = _externalLinkWorkspaceId.asStateFlow()
+
+    /** Container links from other apps open in, or `null` for the default of their workspace. */
+    val externalLinkContainer: StateFlow<ContainerPick?> = _externalLinkContainer.asStateFlow()
+
+    /** Rows of the browser's "More" menu, as keys of its entries. See [MoreMenuLayout]. */
+    val moreMenuRows: StateFlow<List<List<String>>> = _moreMenuRows.asStateFlow()
+
     /** Keys of the [RowAction]s left out of the selection bar. Every other action, new ones included, is shown. */
     val hiddenSelectionKeys: StateFlow<Set<String>> = _hiddenSelectionKeys.asStateFlow()
 
@@ -52,9 +74,34 @@ class KaizenSettings private constructor(context: Context) {
         prefs.edit { putString(if (pinned) KEY_PINNED_ROW_ACTIONS else KEY_UNPINNED_ROW_ACTIONS, flow.value.joinToString(",")) }
     }
 
+    fun setTemporaryContainersByDefault(enabled: Boolean) {
+        _temporaryContainersByDefault.value = enabled
+        prefs.edit { putBoolean(KEY_TEMPORARY_CONTAINERS_BY_DEFAULT, enabled) }
+    }
+
+    fun setExternalLinkWorkspace(workspaceId: String?) {
+        _externalLinkWorkspaceId.value = workspaceId
+        prefs.edit { putString(KEY_EXTERNAL_LINK_WORKSPACE, workspaceId) }
+    }
+
+    fun setExternalLinkContainer(pick: ContainerPick?) {
+        _externalLinkContainer.value = pick
+        prefs.edit { putString(KEY_EXTERNAL_LINK_CONTAINER, pick?.key) }
+    }
+
     fun setEssentialsPerContainer(enabled: Boolean) {
         _essentialsPerContainer.value = enabled
         prefs.edit { putBoolean(KEY_ESSENTIALS_PER_CONTAINER, enabled) }
+    }
+
+    fun setMoreMenuRows(rows: List<List<String>>) {
+        _moreMenuRows.value = MoreMenuLayout.normalized(rows)
+        prefs.edit { putString(KEY_MORE_MENU_ROWS, MoreMenuLayout.toJson(_moreMenuRows.value)) }
+    }
+
+    fun resetMoreMenu() {
+        _moreMenuRows.value = MoreMenuLayout.DEFAULT
+        prefs.edit { remove(KEY_MORE_MENU_ROWS) }
     }
 
     /** Shows or hides an action of the selection bar. */
@@ -82,6 +129,7 @@ class KaizenSettings private constructor(context: Context) {
         setRowAction(pinned = true, key = key, enabled = false)
         setRowAction(pinned = false, key = key, enabled = false)
         setSelectionAction(key, enabled = true)
+        setMoreMenuRows(_moreMenuRows.value.map { row -> row - key })
     }
 
     private fun readKeys(key: String, default: List<TabAction>): List<String> =
@@ -108,6 +156,10 @@ class KaizenSettings private constructor(context: Context) {
         private const val KEY_CUSTOM_ACTIONS = "custom_actions"
         private const val KEY_HIDDEN_SELECTION_ACTIONS = "hidden_selection_actions"
         private const val KEY_ESSENTIALS_PER_CONTAINER = "essentials_per_container"
+        private const val KEY_TEMPORARY_CONTAINERS_BY_DEFAULT = "temporary_containers_by_default"
+        private const val KEY_EXTERNAL_LINK_WORKSPACE = "external_link_workspace"
+        private const val KEY_EXTERNAL_LINK_CONTAINER = "external_link_container"
+        private const val KEY_MORE_MENU_ROWS = "more_menu_rows"
         private val DEFAULT_PINNED_ROW_ACTIONS = listOf(TabAction.CLOSE)
         private val DEFAULT_UNPINNED_ROW_ACTIONS = listOf(TabAction.PIN, TabAction.CLOSE)
 
@@ -119,6 +171,9 @@ class KaizenSettings private constructor(context: Context) {
             instance ?: synchronized(this) {
                 instance ?: KaizenSettings(context.applicationContext).also { instance = it }
             }
+
+        /** Returns the settings if they have already been read, without touching the disk. */
+        fun peek(): KaizenSettings? = instance
     }
 }
 

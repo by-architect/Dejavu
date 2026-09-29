@@ -69,9 +69,12 @@ import mozilla.components.compose.base.theme.success
 import org.mozilla.fenix.R
 import org.mozilla.fenix.compose.Favicon
 import org.mozilla.fenix.kaizen.actions.RowAction
+import org.mozilla.fenix.kaizen.actions.TabAction
 import org.mozilla.fenix.kaizen.actions.icon
 import org.mozilla.fenix.kaizen.actions.label
 import org.mozilla.fenix.kaizen.containers.ContainerIcon
+import org.mozilla.fenix.kaizen.containers.ContainerPick
+import org.mozilla.fenix.kaizen.containers.TemporaryContainerIcon
 import org.mozilla.fenix.kaizen.containers.ContainerRecord
 import org.mozilla.fenix.kaizen.containers.NoContainerIcon
 import org.mozilla.fenix.kaizen.containers.color
@@ -116,7 +119,8 @@ data class WorkspacePageCallbacks(
     /** Moves the workspace [delta] places, negative to the left. */
     val onMoveWorkspace: (delta: Int) -> Unit,
     val onNewTabClick: () -> Unit,
-    val onNewTabInContainer: (String?) -> Unit,
+    val onNewTabInContainer: (ContainerPick) -> Unit,
+    val onNewPrivateTab: () -> Unit,
     val onManageContainers: () -> Unit,
     val onClearUnpinned: () -> Unit,
 )
@@ -289,8 +293,9 @@ internal fun WorkspacePage(
                 } else {
                     val tab = item.tabId?.let { tabsById[it] }
                     val targets = ActionTargets.ofPin(item, tab)
+                    val resetPin = RowAction.BuiltIn(TabAction.RESET_PIN).takeIf { it.appliesTo(targets) }
                     TabRow(
-                        title = tab?.displayTitle ?: item.title.ifBlank { item.url.orEmpty() },
+                        title = item.label(tab),
                         url = tab?.content?.url ?: item.url.orEmpty(),
                         depth = entry.depth,
                         container = (tab?.contextId ?: item.containerId)?.let { containers[it] },
@@ -302,6 +307,7 @@ internal fun WorkspacePage(
                         actions = rowActions(pinnedRowActions, targets, isPinned = true),
                         onAction = { callbacks.onRowAction(it, targets) },
                         onClick = { if (drag == null) callbacks.onPinClick(item) },
+                        onIconClick = resetPin?.let { action -> { if (drag == null) callbacks.onRowAction(action, targets) } },
                         modifier = rowModifier,
                     )
                 }
@@ -321,6 +327,7 @@ internal fun WorkspacePage(
                     containers = containers.values.toList(),
                     onClick = callbacks.onNewTabClick,
                     onNewTabInContainer = callbacks.onNewTabInContainer,
+                    onNewPrivateTab = callbacks.onNewPrivateTab,
                     onManageContainers = callbacks.onManageContainers,
                     modifier = Modifier.dropLine(dropLines?.of(KEY_NEW_TAB), lineColor, insideColor),
                 )
@@ -330,7 +337,7 @@ internal fun WorkspacePage(
                 val key = TAB_PREFIX + tab.id
                 val targets = ActionTargets(tabs = listOf(tab))
                 TabRow(
-                    title = tab.displayTitle,
+                    title = state.titleOf(tab),
                     url = tab.content.url,
                     depth = 0,
                     container = tab.contextId?.let { containers[it] },
@@ -529,7 +536,8 @@ private fun NewTabRow(
     enabled: Boolean,
     containers: List<ContainerRecord>,
     onClick: () -> Unit,
-    onNewTabInContainer: (String?) -> Unit,
+    onNewTabInContainer: (ContainerPick) -> Unit,
+    onNewPrivateTab: () -> Unit,
     onManageContainers: () -> Unit,
     modifier: Modifier = Modifier,
 ) {
@@ -557,6 +565,11 @@ private fun NewTabRow(
             )
         }
         DropdownMenu(expanded = menuOpen, onDismissRequest = { menuOpen = false }) {
+            fun pick(choice: ContainerPick) {
+                menuOpen = false
+                onNewTabInContainer(choice)
+            }
+            val (temporary, permanent) = containers.partition { it.temporary }
             Text(
                 text = stringResource(R.string.kaizen_new_tab_in_container),
                 style = MaterialTheme.typography.labelMedium,
@@ -566,21 +579,50 @@ private fun NewTabRow(
             DropdownMenuItem(
                 text = { Text(stringResource(R.string.kaizen_new_tab_no_container)) },
                 leadingIcon = { NoContainerIcon() },
+                onClick = { pick(ContainerPick.NoContainer) },
+            )
+            DropdownMenuItem(
+                text = { Text(stringResource(R.string.kaizen_new_tab_temporary_container)) },
+                leadingIcon = { TemporaryContainerIcon() },
+                onClick = { pick(ContainerPick.Temporary) },
+            )
+            DropdownMenuItem(
+                text = { Text(stringResource(R.string.kaizen_new_private_tab)) },
+                leadingIcon = {
+                    Icon(
+                        painter = painterResource(iconsR.drawable.mozac_ic_private_mode_24),
+                        contentDescription = null,
+                        modifier = Modifier.size(20.dp),
+                    )
+                },
                 onClick = {
                     menuOpen = false
-                    onNewTabInContainer(null)
+                    onNewPrivateTab()
                 },
             )
-            if (containers.isNotEmpty()) HorizontalDivider()
-            containers.forEach { container ->
+            if (permanent.isNotEmpty()) HorizontalDivider()
+            permanent.forEach { container ->
                 DropdownMenuItem(
                     text = { Text(container.name) },
                     leadingIcon = { ContainerIcon(container) },
-                    onClick = {
-                        menuOpen = false
-                        onNewTabInContainer(container.contextId)
-                    },
+                    onClick = { pick(ContainerPick.Container(container.contextId)) },
                 )
+            }
+            if (temporary.isNotEmpty()) {
+                HorizontalDivider()
+                Text(
+                    text = stringResource(R.string.kaizen_open_temporary_containers),
+                    style = MaterialTheme.typography.labelMedium,
+                    color = MaterialTheme.colorScheme.onSurfaceVariant,
+                    modifier = Modifier.padding(horizontal = 12.dp, vertical = 8.dp),
+                )
+                temporary.sortedWith(compareBy({ it.name.length }, { it.name })).forEach { container ->
+                    DropdownMenuItem(
+                        text = { Text(container.name) },
+                        leadingIcon = { ContainerIcon(container) },
+                        onClick = { pick(ContainerPick.Container(container.contextId)) },
+                    )
+                }
             }
             HorizontalDivider()
             DropdownMenuItem(
@@ -756,7 +798,7 @@ private fun FolderRow(
 
 @Suppress("LongParameterList", "LongMethod")
 @Composable
-private fun TabRow(
+internal fun TabRow(
     title: String,
     url: String,
     depth: Int,
@@ -770,6 +812,7 @@ private fun TabRow(
     onAction: (RowAction) -> Unit,
     onClick: () -> Unit,
     modifier: Modifier = Modifier,
+    onIconClick: (() -> Unit)? = null,
 ) {
     val background = when {
         selection == true -> MaterialTheme.colorScheme.secondaryContainer
@@ -795,14 +838,36 @@ private fun TabRow(
                 .background(container?.color?.color ?: Color.Transparent),
         )
         Spacer(Modifier.width(6.dp + IndentPerLevel * depth))
+        // Like Zen, a pinned tab that left its pinned page shows a reset mark on its icon; tapping the icon resets it.
         Box(
             contentAlignment = Alignment.Center,
             modifier = Modifier
                 .size(28.dp)
-                .border(1.5.dp, if (isAwake) MaterialTheme.colorScheme.success else Color.Transparent, CircleShape)
-                .alpha(if (isAwake) 1f else DIMMED_ALPHA),
+                .clip(CircleShape)
+                .then(if (onIconClick != null && selection == null) Modifier.clickable(onClick = onIconClick) else Modifier),
         ) {
-            Favicon(url = url, size = 20.dp, shape = CircleShape)
+            Box(
+                contentAlignment = Alignment.Center,
+                modifier = Modifier
+                    .size(28.dp)
+                    .border(1.5.dp, if (isAwake) MaterialTheme.colorScheme.success else Color.Transparent, CircleShape)
+                    .alpha(if (isAwake) 1f else DIMMED_ALPHA),
+            ) {
+                Favicon(url = url, size = 20.dp, shape = CircleShape)
+            }
+            if (onIconClick != null) {
+                Icon(
+                    painter = painterResource(iconsR.drawable.mozac_ic_arrow_counter_clockwise_24),
+                    contentDescription = stringResource(R.string.kaizen_action_reset_pin),
+                    tint = MaterialTheme.colorScheme.onPrimary,
+                    modifier = Modifier
+                        .align(Alignment.BottomEnd)
+                        .size(13.dp)
+                        .clip(CircleShape)
+                        .background(MaterialTheme.colorScheme.primary)
+                        .padding(1.5.dp),
+                )
+            }
         }
         Spacer(Modifier.width(12.dp))
         Text(

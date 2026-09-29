@@ -121,6 +121,7 @@ import org.mozilla.fenix.ext.isKnownSearchDomain
 import org.mozilla.fenix.home.collections.migration.CollectionsToTabGroupsMigrationWorker
 import org.mozilla.fenix.home.topsites.TopSitesConfigConstants.TOP_SITES_PROVIDER_LIMIT
 import org.mozilla.fenix.home.topsites.TopSitesConfigConstants.TOP_SITES_PROVIDER_MAX_THRESHOLD
+import org.mozilla.fenix.kaizen.kaizenKeepsTab
 import org.mozilla.fenix.lifecycle.StoreLifecycleObserver
 import org.mozilla.fenix.lifecycle.VisibilityLifecycleObserver
 import org.mozilla.fenix.nimbus.FxNimbus
@@ -461,7 +462,11 @@ open class FenixApplication : Application(), Provider, ThemeProvider {
         val store = components.core.store
         val sessionStorage = components.core.sessionStorage
 
-        components.useCases.tabsUseCases.restore(sessionStorage, components.settings.getTabTimeout())
+        components.useCases.tabsUseCases.restore(
+            storage = sessionStorage,
+            tabTimeoutInMs = components.settings.getTabTimeout(),
+            keepTab = kaizenKeepsTab(this@FenixApplication),
+        )
 
         // Now that we have restored our previous state (if there's one) let's setup auto saving the state while
         // the app is used.

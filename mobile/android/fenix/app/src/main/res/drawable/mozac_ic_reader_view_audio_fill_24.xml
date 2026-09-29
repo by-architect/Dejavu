@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<!-- Kaizen's version of the android-components icon with this name. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <path
+        android:pathData="M7.00 4.50 H17.00 A3 3 0 0 1 20.00 7.50 V16.50 A3 3 0 0 1 17.00 19.50 H7.00 A3 3 0 0 1 4.00 16.50 V7.50 A3 3 0 0 1 7.00 4.50 Z M8.10 8.10 H12.90 A0.9 0.9 0 0 1 13.80 9.00 V9.00 A0.9 0.9 0 0 1 12.90 9.90 H8.10 A0.9 0.9 0 0 1 7.20 9.00 V9.00 A0.9 0.9 0 0 1 8.10 8.10 Z M8.10 11.30 H10.90 A0.9 0.9 0 0 1 11.80 12.20 V12.20 A0.9 0.9 0 0 1 10.90 13.10 H8.10 A0.9 0.9 0 0 1 7.20 12.20 V12.20 A0.9 0.9 0 0 1 8.10 11.30 Z M14.50 12.60 H14.50 A0.9 0.9 0 0 1 15.40 13.50 V15.50 A0.9 0.9 0 0 1 14.50 16.40 H14.50 A0.9 0.9 0 0 1 13.60 15.50 V13.50 A0.9 0.9 0 0 1 14.50 12.60 Z M16.80 10.60 H16.80 A0.9 0.9 0 0 1 17.70 11.50 V17.50 A0.9 0.9 0 0 1 16.80 18.40 H16.80 A0.9 0.9 0 0 1 15.90 17.50 V11.50 A0.9 0.9 0 0 1 16.80 10.60 Z"
+        android:fillColor="@color/mozac_ui_icons_fill"
+        android:fillType="evenOdd" />
+</vector>

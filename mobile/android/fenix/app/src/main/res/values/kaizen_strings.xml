@@ -5,14 +5,24 @@
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
     <string name="pref_key_kaizen_tab_actions" translatable="false">pref_key_kaizen_tab_actions</string>
     <string name="pref_key_kaizen_containers" translatable="false">pref_key_kaizen_containers</string>
+    <string name="pref_key_kaizen_external_links" translatable="false">pref_key_kaizen_external_links</string>
 
     <!-- Home screen -->
     <string name="kaizen_workspace_default_name">Home</string>
     <string name="kaizen_new_tab">New Tab</string>
     <string name="kaizen_downloads">Downloads</string>
     <string name="kaizen_history">History</string>
+    <string name="kaizen_bookmarks">Bookmarks</string>
+    <string name="kaizen_extensions">Extensions</string>
     <string name="kaizen_new_tab_in_container">New tab in a container</string>
     <string name="kaizen_new_tab_no_container">New tab without container</string>
+    <string name="kaizen_new_tab_temporary_container">New tab in a temporary container</string>
+    <string name="kaizen_new_private_tab">New private tab</string>
+    <string name="kaizen_private_workspace">Private</string>
+    <string name="kaizen_private_close_all">Close all</string>
+    <string name="kaizen_open_temporary_containers">Temporary containers in use</string>
+    <string name="kaizen_temporary_container">Temporary container</string>
+    <string name="kaizen_new_temporary_container">New temporary container</string>
     <string name="kaizen_add_workspace">New workspace</string>
     <string name="kaizen_workspace_name">Name</string>
     <string name="kaizen_create">Create</string>
@@ -62,6 +72,15 @@
     <!-- Essentials -->
     <string name="kaizen_essentials_drop">Drop here to add to essentials</string>
     <string name="kaizen_essentials_full">Essentials hold up to %1$d tabs</string>
+    <string name="kaizen_temporary_by_default">Temporary containers by default</string>
+    <string name="kaizen_temporary_by_default_summary">In workspaces without a default container, every new tab opens in its own temporary container. A temporary container and its cookies are deleted when its last tab closes.</string>
+    <string name="kaizen_settings_external_links">Links from other apps</string>
+    <string name="kaizen_settings_external_links_summary">Workspace and container they open in</string>
+    <string name="kaizen_external_links_hint">Links you open from other apps start in this workspace and container. Back takes you back to the app.</string>
+    <string name="kaizen_external_links_workspace">Workspace</string>
+    <string name="kaizen_external_links_last_workspace">The workspace shown last</string>
+    <string name="kaizen_external_links_container">Container</string>
+    <string name="kaizen_external_links_workspace_container">The default container of the workspace</string>
     <string name="kaizen_essentials_per_container">Essentials per container</string>
     <string name="kaizen_essentials_per_container_summary">Each container keeps its own essentials. A workspace shows the essentials of its default container.</string>
 
@@ -86,6 +105,8 @@
     <string name="kaizen_action_move_to_folder">Move to folder</string>
     <string name="kaizen_action_new_folder">New folder</string>
     <string name="kaizen_action_change_container">Change container</string>
+    <string name="kaizen_action_rename_tab">Rename tab</string>
+    <string name="kaizen_rename_tab_hint">Title, empty for the page title</string>
     <string name="kaizen_action_split_view">Split view</string>
     <string name="kaizen_action_unsplit">Unsplit</string>
 
@@ -151,12 +172,11 @@
     <string name="kaizen_custom_action_body">Body</string>
     <string name="kaizen_custom_action_variables">Variables</string>
     <string name="kaizen_custom_action_variables_hint">Tap a variable to insert it into the field you are editing.</string>
-    <string name="kaizen_custom_action_hint">The request is sent once for every tab the action runs on. Cookies are not sent and the answer is not shown. Values are URL encoded in the URL and JSON escaped in a JSON body.</string>
+    <string name="kaizen_custom_action_hint">The request is sent once for every tab the action runs on. Only a 2xx answer counts as success; redirects are not followed and count as failures. Cookies are not sent. Values are URL encoded in the URL and JSON escaped in a JSON body.</string>
     <string name="kaizen_custom_action_sent">Sent: %1$s</string>
-    <plurals name="kaizen_custom_action_failed">
-        <item quantity="one">%2$s failed (status %3$s)</item>
-        <item quantity="other">%2$s failed for %1$d tabs (last status %3$s)</item>
-    </plurals>
+    <string name="kaizen_custom_action_failed_code">Failed: code %1$d (%2$s)</string>
+    <string name="kaizen_custom_action_failed_no_answer">Failed: no answer (%1$s)</string>
+    <string name="kaizen_custom_action_failed_some">%1$s, %2$d of %3$d tabs</string>
     <string name="kaizen_custom_action_examples">Examples</string>
     <string name="kaizen_custom_action_examples_hint">Tap an example to fill in the fields above. Then put your own server in place of example.com, and your own keys and IDs in place of the parts in capitals.</string>
     <string name="kaizen_example_bookmark">Save the page as a bookmark</string>
@@ -166,4 +186,63 @@
     <string name="kaizen_example_chat">Post the page to a chat</string>
     <string name="kaizen_example_automation">Start an automation with the page</string>
     <string name="kaizen_example_webhook">Send every variable as JSON, for n8n, Node-RED and similar tools</string>
+
+    <!-- Tabs settings -->
+    <string name="kaizen_preferences_close_unpinned_tabs">Close unpinned tabs</string>
+
+    <!-- Browser toolbar -->
+    <string name="kaizen_toolbar_container">Container: %1$s</string>
+
+    <!-- Browser "More" menu -->
+    <string name="kaizen_menu_back">Back</string>
+    <string name="kaizen_menu_forward">Forward</string>
+    <string name="kaizen_menu_share">Share</string>
+    <string name="kaizen_menu_refresh">Reload</string>
+    <string name="kaizen_menu_stop">Stop</string>
+    <string name="kaizen_menu_find_in_page">Find in page</string>
+    <string name="kaizen_menu_bookmark_page">Bookmark</string>
+    <string name="kaizen_menu_edit_bookmark">Edit bookmark</string>
+    <string name="kaizen_menu_desktop_site">Desktop site</string>
+    <string name="kaizen_menu_extensions">Extensions</string>
+    <string name="kaizen_menu_manage_extensions">Manage extensions</string>
+    <string name="kaizen_menu_passwords">Passwords</string>
+    <string name="kaizen_menu_bookmarks">Bookmarks</string>
+    <string name="kaizen_menu_downloads">Downloads</string>
+    <string name="kaizen_menu_history">History</string>
+    <string name="kaizen_menu_translate">Translate</string>
+    <string name="kaizen_menu_summarize">Summarize</string>
+    <string name="kaizen_menu_report_broken_site">Report site issue</string>
+    <string name="kaizen_menu_pin_tab">Pin tab</string>
+    <string name="kaizen_menu_unpin_tab">Unpin tab</string>
+    <string name="kaizen_menu_essential_tab">Add to essentials</string>
+    <string name="kaizen_menu_remove_essential">Remove essential</string>
+    <string name="kaizen_menu_save_as_pdf">Save as PDF</string>
+    <string name="kaizen_menu_print">Print</string>
+    <string name="kaizen_menu_open_in_app">Open in app</string>
+    <string name="kaizen_menu_reset_pinned_url">Reset to pinned URL</string>
+    <string name="kaizen_menu_replace_pinned_url">Pin this URL</string>
+    <string name="kaizen_menu_split_view">Split view</string>
+    <string name="kaizen_menu_unsplit">Unsplit</string>
+    <string name="kaizen_menu_split_with">Split view with</string>
+    <string name="kaizen_menu_split_no_tabs">There are no other tabs in this workspace.</string>
+    <string name="kaizen_menu_settings">Settings</string>
+
+    <!-- Settings: "More" menu editor -->
+    <string name="pref_key_kaizen_more_menu" translatable="false">pref_key_kaizen_more_menu</string>
+    <string name="kaizen_settings_more_menu">More menu</string>
+    <string name="kaizen_settings_more_menu_summary">Buttons of the menu you open by swiping the address bar</string>
+    <string name="kaizen_more_menu_hint">Swipe the address bar up (or down, when it is at the top) to open this menu. Tap a button to move or remove it. Extensions always take a whole row.</string>
+    <string name="kaizen_more_menu_row">Row %1$d</string>
+    <string name="kaizen_more_menu_add_item">Add a button</string>
+    <string name="kaizen_more_menu_add_row">Add a row</string>
+    <string name="kaizen_more_menu_row_full">This row is full.</string>
+    <string name="kaizen_more_menu_move_left">Move left</string>
+    <string name="kaizen_more_menu_move_right">Move right</string>
+    <string name="kaizen_more_menu_move_up">Move up</string>
+    <string name="kaizen_more_menu_move_down">Move down</string>
+    <string name="kaizen_more_menu_remove">Remove</string>
+    <string name="kaizen_more_menu_delete_row">Delete row</string>
+    <string name="kaizen_more_menu_reset">Reset to default</string>
+    <string name="kaizen_more_menu_all_added">Every button is already in the menu.</string>
+    <string name="kaizen_more_menu_preview">Preview</string>
 </resources>

@@ -160,6 +160,7 @@ import org.mozilla.fenix.home.ui.Homepage
 import org.mozilla.fenix.home.ui.WallpaperBackground
 import org.mozilla.fenix.ipprotection.store.Surface as IPProtectionSurface
 import org.mozilla.fenix.ipprotection.ui.IPProtectionBottomSheetFragment
+import org.mozilla.fenix.kaizen.browser.KaizenToolbar
 import org.mozilla.fenix.kaizen.home.isKaizenHomeEnabled
 import org.mozilla.fenix.kaizen.home.setKaizenHomeContent
 import org.mozilla.fenix.messaging.DefaultMessageController
@@ -1301,6 +1302,7 @@ class HomeFragment : Fragment(), UserInteractionHandler, OnLongPressedListener {
                 tabId = args.sessionToStartSearchFor,
                 searchAccessPoint = args.searchAccessPoint,
                 isEdgeToEdgeBackgroundEnabled = isEdgeToEdgeBackgroundEnabled(),
+                suggestionsAtBottom = true.takeIf { KaizenToolbar.enabled },
             )
             .also {
                 awesomeBarComposable = it

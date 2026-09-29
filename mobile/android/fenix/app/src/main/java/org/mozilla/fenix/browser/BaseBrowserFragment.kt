@@ -228,6 +228,7 @@ import org.mozilla.fenix.ext.runIfFragmentIsAttached
 import org.mozilla.fenix.ext.secure
 import org.mozilla.fenix.ext.tabClosedUndoMessage
 import org.mozilla.fenix.ext.updateMicrosurveyPromptForConfigurationChange
+import org.mozilla.fenix.kaizen.browser.KaizenToolbar
 import org.mozilla.fenix.kaizen.browser.handleKaizenBackPressed
 import org.mozilla.fenix.kaizen.browser.installKaizenSplitView
 import org.mozilla.fenix.messaging.FenixMessageSurfaceId
@@ -1631,6 +1632,7 @@ abstract class BaseBrowserFragment :
                 toolbarStore = toolbarStore,
                 navController = findNavController(),
                 showScrimWhenNoSuggestions = true,
+                suggestionsAtBottom = true.takeIf { KaizenToolbar.enabled },
             )
             .also {
                 awesomeBarComposable = it

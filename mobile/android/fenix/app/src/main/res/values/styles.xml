@@ -4,7 +4,7 @@
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 <resources xmlns:tools="http://schemas.android.com/tools">
     <style name="SplashScreenThemeBase" parent="Theme.SplashScreen">
-        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_splash_logo</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/kaizen_splash_logo</item>
         <item name="windowSplashScreenBackground">@color/fx_mobile_splashscreen_background</item>
         <item name="postSplashScreenTheme">@style/NormalTheme</item>
         <item name="windowSplashScreenAnimationDuration">12000</item>
@@ -708,7 +708,8 @@
     </style>
 
     <style name="PreferenceSectionHeader" parent="AcornHeadline8">
-        <item name="android:textColor">?colorOnSurface</item>
+        <!-- Kaizen: section titles in the accent color, above the cards of their settings. -->
+        <item name="android:textColor">?colorPrimary</item>
     </style>
 
     <style name="EngineTextField" parent="TextAppearance.AppCompat">

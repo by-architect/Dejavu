@@ -77,6 +77,8 @@ import org.mozilla.fenix.ext.runIfFragmentIsAttached
 import org.mozilla.fenix.home.HomeFragment
 import org.mozilla.fenix.ipprotection.store.Surface as IPProtectionSurface
 import org.mozilla.fenix.ipprotection.ui.IPProtectionBottomSheetFragment
+import org.mozilla.fenix.kaizen.browser.KaizenToolbar
+import org.mozilla.fenix.kaizen.browser.openKaizenMenu
 import org.mozilla.fenix.listentopage.ListenSheetIntegration
 import org.mozilla.fenix.nimbus.FxNimbus
 import org.mozilla.fenix.onboarding.OnboardingFragmentDirections
@@ -230,7 +232,7 @@ class BrowserFragment : BaseBrowserFragment(), UserInteractionHandler, SystemIns
             )
         }
 
-        if (settings.isSwipeToolbarToShowTabsEnabled) {
+        if (settings.isSwipeToolbarToShowTabsEnabled || KaizenToolbar.enabled) {
             binding.gestureLayout.addGestureListener(
                 ToolbarVerticalGesturesHandler(
                     appStore = components.appStore,
@@ -238,6 +240,7 @@ class BrowserFragment : BaseBrowserFragment(), UserInteractionHandler, SystemIns
                     navBarLayout = browserNavigationBar?.layout,
                     toolbarPosition = settings.toolbarPosition,
                     navController = findNavController(),
+                    onSwipe = { openKaizenMenu() }.takeIf { KaizenToolbar.enabled },
                 )
             )
         }

@@ -9,6 +9,7 @@ import androidx.annotation.StringRes
 import mozilla.components.feature.summarize.R as summariesR
 import mozilla.components.ui.icons.R as iconsR
 import org.mozilla.fenix.R
+import org.mozilla.fenix.kaizen.browser.KaizenToolbar
 
 /**
  * Keys used to persist and map the selected toolbar shortcut option. These string values are stored in preferences and
@@ -100,9 +101,10 @@ internal val expandedShortcutOptions: List<ShortcutOption> = allShortcutOptions.
 }
 
 internal val simpleShortcutOptions: List<ShortcutOption> = allShortcutOptions.filter {
-    ShortcutAvailability.SIMPLE in it.availability
+    // Kaizen's toolbar always has a home button next to the shortcut.
+    ShortcutAvailability.SIMPLE in it.availability && !(KaizenToolbar.enabled && it.key == ShortcutType.HOMEPAGE)
 }
 
 internal val tabStripShortcutOptions: List<ShortcutOption> = allShortcutOptions.filter {
-    ShortcutAvailability.TAB_STRIP in it.availability
+    ShortcutAvailability.TAB_STRIP in it.availability && !(KaizenToolbar.enabled && it.key == ShortcutType.HOMEPAGE)
 }

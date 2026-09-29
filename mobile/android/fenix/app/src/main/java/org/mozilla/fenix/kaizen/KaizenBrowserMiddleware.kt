@@ -11,6 +11,7 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import mozilla.components.browser.state.action.BrowserAction
 import mozilla.components.browser.state.action.TabListAction
+import mozilla.components.browser.state.selector.findTab
 import mozilla.components.browser.state.action.UndoAction
 import mozilla.components.browser.state.state.BrowserState
 import mozilla.components.browser.state.state.SessionState
@@ -19,7 +20,11 @@ import mozilla.components.feature.containers.ContainerMiddleware
 import mozilla.components.lib.state.Middleware
 import mozilla.components.lib.state.Store
 import org.mozilla.fenix.kaizen.browser.SplitViewMiddleware
+import org.mozilla.fenix.kaizen.containers.ContainerPick
 import org.mozilla.fenix.kaizen.containers.KaizenContainerStorage
+import org.mozilla.fenix.kaizen.containers.TemporaryContainerMiddleware
+import org.mozilla.fenix.kaizen.containers.TemporaryContainers
+import org.mozilla.fenix.kaizen.settings.KaizenSettings
 import org.mozilla.fenix.kaizen.workspaces.WorkspaceRepository
 import java.util.concurrent.ConcurrentHashMap
 
@@ -30,11 +35,14 @@ import java.util.concurrent.ConcurrentHashMap
 fun kaizenBrowserMiddleware(context: Context): List<Middleware<BrowserState, BrowserAction>> {
     CoroutineScope(Dispatchers.IO).launch {
         WorkspaceRepository.get(context)
+        KaizenSettings.get(context)
+        KaizenContainerStorage.get(context).load()
         KaizenDefaults.applyOnce(context)
     }
     return listOf(
         ContainerMiddleware(context, containerStorage = KaizenContainerStorage.get(context)),
-        WorkspaceContainerMiddleware(),
+        WorkspaceContainerMiddleware(context),
+        TemporaryContainerMiddleware(context),
         SilentlyClosedTabsMiddleware(),
         SplitViewMiddleware(),
     )
@@ -82,52 +90,101 @@ internal class SilentlyClosedTabsMiddleware : Middleware<BrowserState, BrowserAc
 object NewTabContainerChoice {
     private const val LIFETIME_MS = 10 * 60 * 1000L
 
-    private class Choice(val contextId: String?, val expiresAt: Long)
+    /** A container for the next new tab, or `null` with [private] for a private tab outside any container. */
+    internal class Choice(val pick: ContainerPick?, val private: Boolean, val expiresAt: Long)
 
     @Volatile
     private var choice: Choice? = null
 
-    /** Opens the next new tab in [contextId], or without a container when it is `null`. */
-    fun set(contextId: String?) {
-        choice = Choice(contextId, SystemClock.elapsedRealtime() + LIFETIME_MS)
+    fun set(pick: ContainerPick) {
+        choice = Choice(pick, private = false, expiresAt = SystemClock.elapsedRealtime() + LIFETIME_MS)
+    }
+
+    /** Opens the next new tab as a private tab. */
+    fun setPrivate() {
+        choice = Choice(null, private = true, expiresAt = SystemClock.elapsedRealtime() + LIFETIME_MS)
     }
 
     fun clear() {
         choice = null
     }
 
-    /** Returns and forgets the pending choice. The outer `null` means there is no choice. */
-    internal fun consume(): Result<String?>? {
+    /** Returns and forgets the pending choice, if it has not expired. */
+    internal fun consume(): Choice? {
         val current = choice ?: return null
         choice = null
-        return if (SystemClock.elapsedRealtime() < current.expiresAt) Result.success(current.contextId) else null
+        return current.takeIf { SystemClock.elapsedRealtime() < current.expiresAt }
     }
 }
 
 /**
- * Opens new tabs in the container of the active workspace, like Zen does for workspaces with a default container, or
- * in the container picked with [NewTabContainerChoice]. Only tabs the user starts (typed, new tab, links from other
- * apps) are changed; tabs that already have a container, private tabs, and tabs opened by a page keep their context.
+ * Opens new tabs in the container of their workspace, like Zen does for workspaces with a default container, in the
+ * container picked with [NewTabContainerChoice], or in a new temporary container. Links from other apps open in the
+ * workspace and container chosen in settings. Only tabs the user starts (typed, new tab, links from other apps) are
+ * changed; tabs that already have a container, private tabs, and tabs opened by a page keep their context.
  */
-internal class WorkspaceContainerMiddleware : Middleware<BrowserState, BrowserAction> {
+internal class WorkspaceContainerMiddleware(private val context: Context) : Middleware<BrowserState, BrowserAction> {
     override fun invoke(
         store: Store<BrowserState, BrowserAction>,
         next: (BrowserAction) -> Unit,
         action: BrowserAction,
     ) {
-        if (action is TabListAction.AddTabAction && action.tab.canJoinContainer()) {
-            val picked = if (action.tab.source in userSources) NewTabContainerChoice.consume() else null
-            val containerId = if (picked != null) {
-                picked.getOrNull()
-            } else {
-                WorkspaceRepository.peek()?.state?.value?.activeWorkspace?.containerId
-            }
-            if (containerId != null && store.state.containers.containsKey(containerId)) {
-                next(action.copy(tab = action.tab.copy(contextId = containerId)))
-                return
+        if (action is TabListAction.AddTabAction) {
+            val tab = action.tab
+            val parentContextId = tab.parentId?.let { store.state.findTab(it)?.contextId }
+            when {
+                // Tabs opened by a page load in the page's container; record it so the UI shows it.
+                parentContextId != null && tab.contextId == null && !tab.content.private -> {
+                    next(action.copy(tab = tab.copy(contextId = parentContextId)))
+                    return
+                }
+                tab.canJoinContainer() -> {
+                    val choice = if (tab.source in userSources) NewTabContainerChoice.consume() else null
+                    if (choice?.private == true) {
+                        next(action.copy(tab = tab.copy(content = tab.content.copy(private = true))))
+                        return
+                    }
+                    val containerId = containerFor(store, tab, choice?.pick)
+                    if (containerId != null && store.state.containers.containsKey(containerId)) {
+                        next(action.copy(tab = tab.copy(contextId = containerId)))
+                        return
+                    }
+                }
             }
         }
         next(action)
+    }
+
+    private fun containerFor(
+        store: Store<BrowserState, BrowserAction>,
+        tab: TabSessionState,
+        chosen: ContainerPick?,
+    ): String? {
+        val repository = WorkspaceRepository.peek()
+        val settings = KaizenSettings.peek()
+        val workspaces = repository?.state?.value
+        var workspace = workspaces?.activeWorkspace
+        val pick = if (tab.source is SessionState.Source.External) {
+            val target = settings?.externalLinkWorkspaceId?.value?.let { id -> workspaces?.workspaces?.firstOrNull { it.id == id } }
+            if (target != null) {
+                workspace = target
+                repository?.assignTab(tab.id, target.id)
+                repository?.selectWorkspace(target.id)
+            }
+            settings?.externalLinkContainer?.value
+        } else {
+            chosen
+        }
+        return when (pick) {
+            ContainerPick.NoContainer -> null
+            ContainerPick.Temporary -> TemporaryContainers.create(store, KaizenContainerStorage.get(context))
+            is ContainerPick.Container -> pick.contextId
+            null -> workspace?.containerId ?: if (settings?.temporaryContainersByDefault?.value == true) {
+                TemporaryContainers.create(store, KaizenContainerStorage.get(context))
+            } else {
+                null
+            }
+        }
     }
 
     private fun TabSessionState.canJoinContainer(): Boolean =

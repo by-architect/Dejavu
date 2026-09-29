@@ -171,6 +171,7 @@ import org.mozilla.fenix.home.intent.OpenSpecificTabIntentProcessor
 import org.mozilla.fenix.home.intent.SpeechProcessingIntentProcessor
 import org.mozilla.fenix.home.intent.StartSearchIntentProcessor
 import org.mozilla.fenix.home.topsites.DefaultPinnedSitesBinding
+import org.mozilla.fenix.kaizen.settings.KaizenPreferenceCards
 import org.mozilla.fenix.messaging.FenixMessageSurfaceId
 import org.mozilla.fenix.messaging.MessageNotificationWorker
 import org.mozilla.fenix.nimbus.FxNimbus
@@ -697,6 +698,7 @@ open class HomeActivity : LocaleAwareAppCompatActivity(), NavHostActivity, Crash
             ),
             true,
         )
+        supportFragmentManager.registerFragmentLifecycleCallbacks(KaizenPreferenceCards(), true)
 
         if (components.settings.showContileFeature) {
             components.core.macTopSitesUpdater.startPeriodicWork()

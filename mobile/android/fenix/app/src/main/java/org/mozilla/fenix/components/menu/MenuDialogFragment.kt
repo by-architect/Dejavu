@@ -109,6 +109,8 @@ import org.mozilla.fenix.ext.openToBrowser
 import org.mozilla.fenix.ext.requireComponents
 import org.mozilla.fenix.ext.runIfFragmentIsAttached
 import org.mozilla.fenix.ipprotection.ui.IPProtectionSnackbarBinding
+import org.mozilla.fenix.kaizen.menu.KaizenMenu
+import org.mozilla.fenix.kaizen.menu.KaizenMenuContent
 import org.mozilla.fenix.nimbus.FxNimbus
 import org.mozilla.fenix.settings.SupportUtils
 import org.mozilla.fenix.settings.deletebrowsingdata.DefaultDeleteBrowsingDataController
@@ -179,6 +181,10 @@ class MenuDialogFragment : BottomSheetDialogFragment() {
 
     override fun onCreateDialog(savedInstanceState: Bundle?): Dialog {
         Events.toolbarMenuVisible.record(NoExtras())
+
+        if (KaizenMenu.opensFromTop(requireContext(), args.accesspoint)) {
+            return KaizenMenu.createTopSheetDialog(requireContext(), onMenuKey = ::dismiss)
+        }
 
         return object : BottomSheetDialog(requireContext(), theme) {
                 override fun onKeyDown(
@@ -258,6 +264,16 @@ class MenuDialogFragment : BottomSheetDialogFragment() {
         savedInstanceState: Bundle?,
     ): View = content {
         FirefoxTheme {
+            if (KaizenMenu.replaces(args.accesspoint)) {
+                KaizenMenuContent(
+                    menuStore = menuStore,
+                    accessPoint = args.accesspoint,
+                    fromTop = KaizenMenu.opensFromTop(requireContext(), args.accesspoint),
+                    onDismiss = ::dismiss,
+                )
+                return@FirefoxTheme
+            }
+
             val context = LocalContext.current
 
             val components = components

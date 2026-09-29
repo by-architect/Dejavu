@@ -75,7 +75,7 @@ import org.mozilla.fenix.R
 import org.mozilla.fenix.components.Components
 import org.mozilla.fenix.compose.Favicon
 import org.mozilla.fenix.ext.requireComponents
-import org.mozilla.fenix.kaizen.home.displayTitle
+import org.mozilla.fenix.kaizen.home.titleOf
 import org.mozilla.fenix.kaizen.workspaces.WorkspaceRepository
 import org.mozilla.fenix.kaizen.workspaces.WorkspaceState
 import org.mozilla.fenix.theme.FirefoxTheme
@@ -184,7 +184,7 @@ internal class SplitPaneFeature(
         if (selected.content.private || selected.content.fullScreen) return null
         val partnerId = workspaces.splitOf(selected.id)?.tabIds?.firstOrNull { it != selected.id } ?: return null
         val partner = state.findTab(partnerId)?.takeIf { !it.content.private } ?: return null
-        return PaneTarget(partner.id, partner.engineState.engineSession, partner.displayTitle, partner.content.url)
+        return PaneTarget(partner.id, partner.engineState.engineSession, workspaces.titleOf(partner), partner.content.url)
     }
 
     private fun update(next: PaneTarget?) {

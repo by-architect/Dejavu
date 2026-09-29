@@ -51,6 +51,8 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import org.mozilla.fenix.R
 import org.mozilla.fenix.kaizen.containers.ContainerIcon
+import org.mozilla.fenix.kaizen.containers.ContainerPick
+import org.mozilla.fenix.kaizen.containers.TemporaryContainerIcon
 import org.mozilla.fenix.kaizen.containers.ContainerRecord
 import org.mozilla.fenix.kaizen.containers.NoContainerIcon
 import org.mozilla.fenix.kaizen.workspaces.MAX_FOLDER_DEPTH
@@ -74,7 +76,7 @@ internal fun HomeDialogs(
             val workspace = state.workspaces.firstOrNull { it.id == dialog.workspaceId }
             WorkspaceDialog(
                 workspace = workspace,
-                containers = containers.values.toList(),
+                containers = containers.values.filterNot { it.temporary },
                 onSave = { name, containerId, icon, theme ->
                     interactor.onSaveWorkspace(workspace?.id, name, containerId, icon, theme)
                     onDismiss()
@@ -102,6 +104,18 @@ internal fun HomeDialogs(
             initial = "",
             onConfirm = { name ->
                 interactor.onCreateFolder(dialog.workspaceId, dialog.parentId, name, dialog.targets)
+                onDismiss()
+            },
+            onDismiss = onDismiss,
+        )
+
+        is HomeDialog.RenameTab -> NameDialog(
+            title = R.string.kaizen_action_rename_tab,
+            initial = dialog.title,
+            allowBlank = true,
+            label = R.string.kaizen_rename_tab_hint,
+            onConfirm = { name ->
+                interactor.onRenameTab(dialog.pinId, dialog.tabId, name)
                 onDismiss()
             },
             onDismiss = onDismiss,
@@ -167,8 +181,9 @@ internal fun HomeDialogs(
         is HomeDialog.ChangeContainer -> {
             val current = dialog.targets.containerIds.singleOrNull()
             val allInNoContainer = dialog.targets.containerIds == setOf(null)
-            fun pick(contextId: String?) {
-                interactor.onChangeContainer(dialog.targets, contextId)
+            val (temporary, permanent) = containers.values.partition { it.temporary }
+            fun pick(choice: ContainerPick) {
+                interactor.onChangeContainer(dialog.targets, choice)
                 onDismiss()
             }
             PickerDialog(title = R.string.kaizen_action_change_container, onDismiss = onDismiss) {
@@ -176,15 +191,20 @@ internal fun HomeDialogs(
                     label = stringResource(R.string.kaizen_workspace_no_container),
                     selected = allInNoContainer,
                     leading = { NoContainerIcon() },
-                    onClick = { pick(null) },
+                    onClick = { pick(ContainerPick.NoContainer) },
+                )
+                PickerRow(
+                    label = stringResource(R.string.kaizen_new_temporary_container),
+                    leading = { TemporaryContainerIcon() },
+                    onClick = { pick(ContainerPick.Temporary) },
                 )
                 if (containers.isNotEmpty()) HorizontalDivider(modifier = Modifier.padding(vertical = 4.dp))
-                containers.values.forEach { container ->
+                (permanent + temporary.sortedWith(compareBy({ it.name.length }, { it.name }))).forEach { container ->
                     PickerRow(
                         label = container.name,
                         selected = current == container.contextId,
                         leading = { ContainerIcon(container) },
-                        onClick = { pick(container.contextId) },
+                        onClick = { pick(ContainerPick.Container(container.contextId)) },
                     )
                 }
                 HorizontalDivider(modifier = Modifier.padding(vertical = 4.dp))
@@ -436,6 +456,8 @@ private fun NameDialog(
     initial: String,
     onConfirm: (String) -> Unit,
     onDismiss: () -> Unit,
+    allowBlank: Boolean = false,
+    @StringRes label: Int = R.string.kaizen_workspace_name,
 ) {
     var name by remember { mutableStateOf(initial) }
     AlertDialog(
@@ -446,11 +468,11 @@ private fun NameDialog(
                 value = name,
                 onValueChange = { name = it },
                 singleLine = true,
-                label = { Text(stringResource(R.string.kaizen_workspace_name)) },
+                label = { Text(stringResource(label)) },
             )
         },
         confirmButton = {
-            TextButton(enabled = name.isNotBlank(), onClick = { onConfirm(name.trim()) }) {
+            TextButton(enabled = allowBlank || name.isNotBlank(), onClick = { onConfirm(name.trim()) }) {
                 Text(stringResource(R.string.kaizen_save))
             }
         },

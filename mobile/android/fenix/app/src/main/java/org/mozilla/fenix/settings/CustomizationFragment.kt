@@ -14,6 +14,7 @@ import androidx.appcompat.app.AppCompatDelegate
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
+import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
 import androidx.preference.Preference
 import androidx.preference.PreferenceCategory
@@ -36,6 +37,7 @@ import org.mozilla.fenix.ext.isTallWindow
 import org.mozilla.fenix.ext.isWideWindow
 import org.mozilla.fenix.ext.requireComponents
 import org.mozilla.fenix.ext.showToolbar
+import org.mozilla.fenix.kaizen.browser.KaizenToolbar
 import org.mozilla.fenix.settings.settingssearch.PreferenceFileInformation.CustomizationPreferences
 import org.mozilla.fenix.settings.settingssearch.SettingsSearchItem
 import org.mozilla.fenix.settings.settingssearch.SettingsSearchProvider
@@ -341,7 +343,8 @@ class CustomizationFragment : PreferenceFragmentCompat(), SystemInsetsPaddedFrag
 
     private fun setupToolbarLayout() {
         (requirePreference(R.string.pref_key_customization_category_toolbar_layout) as PreferenceCategory).apply {
-            isVisible = isTallWindow() && !isWideWindow()
+            // Kaizen's toolbar is always a single row.
+            isVisible = isTallWindow() && !isWideWindow() && !KaizenToolbar.enabled
         }
 
         val layoutToggle = requirePreference<ToggleRadioButtonPreference>(R.string.pref_key_toolbar_expanded)
@@ -381,6 +384,8 @@ class CustomizationFragment : PreferenceFragmentCompat(), SystemInsetsPaddedFrag
             onPreferenceChangeListener = SharedPreferenceUpdater()
         }
         requirePreference<SwitchPreferenceCompat>(R.string.pref_key_swipe_toolbar_show_tabs).apply {
+            // In Kaizen, swiping the toolbar opens the menu; tabs are on the home screen.
+            isVisible = !KaizenToolbar.enabled
             isChecked = context.components.settings.isSwipeToolbarToShowTabsEnabled
             onPreferenceChangeListener = SharedPreferenceUpdater()
         }
@@ -399,6 +404,10 @@ class CustomizationFragment : PreferenceFragmentCompat(), SystemInsetsPaddedFrag
 
     override fun onPreferenceTreeClick(preference: Preference): Boolean {
         when (preference.key) {
+            resources.getString(R.string.pref_key_kaizen_more_menu) -> {
+                findNavController().navigate(R.id.kaizen_more_menu_graph)
+                return true
+            }
             resources.getString(R.string.pref_key_website_pull_to_refresh) -> {
                 PullToRefreshInBrowser.enabled.set(requireComponents.settings.isPullToRefreshEnabledInBrowser)
             }

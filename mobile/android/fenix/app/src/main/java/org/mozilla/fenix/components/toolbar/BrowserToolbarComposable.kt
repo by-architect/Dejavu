@@ -54,6 +54,8 @@ import org.mozilla.fenix.components.AppStore
 import org.mozilla.fenix.components.appstate.AppAction.SearchAction.SearchEnded
 import org.mozilla.fenix.components.toolbar.ToolbarPosition.BOTTOM
 import org.mozilla.fenix.components.toolbar.ToolbarPosition.TOP
+import org.mozilla.fenix.kaizen.browser.KaizenSearchAboveKeyboard
+import org.mozilla.fenix.kaizen.browser.KaizenToolbar
 import org.mozilla.fenix.theme.FirefoxTheme
 import org.mozilla.fenix.utils.Settings
 
@@ -136,7 +138,7 @@ class BrowserToolbarComposable(
                 FirefoxTheme {
                     val materialColors = MaterialTheme.colorScheme
                     val colorScheme =
-                        remember(customColors.value, materialColors) {
+                        remember(customColors.value, materialColors, isSearching) {
                             materialColors.copy(
                                 // Toolbar background
                                 surface = customColors.value?.toolbarColor?.let { Color(it) } ?: materialColors.surface,
@@ -154,24 +156,38 @@ class BrowserToolbarComposable(
                                 onSurfaceVariant =
                                     customColors.value?.secondaryReadableColor?.let { Color(it) }
                                         ?: materialColors.onSurfaceVariant,
-                            )
+                            ).let { if (customTabSession == null && !isSearching) KaizenToolbar.glass(it) else it }
                         }
 
                     MaterialTheme(colorScheme = colorScheme) {
                         when (!shouldUseBottomToolbar) {
                             true ->
-                                Column(modifier = Modifier.fillMaxWidth().wrapContentHeight()) {
-                                    if (shouldShowTabStripAtTop) {
-                                        tabStripContent()
-                                    }
-                                    BrowserToolbar(
-                                        store = toolbarStore,
-                                        cfr = toolbarCFR,
-                                        useMinimalBottomToolbarWhenEnteringText =
-                                            settings.shouldUseMinimalBottomToolbarWhenEnteringText,
-                                    )
-                                    if (customTabSession == null) {
-                                        searchSuggestionsContent(Modifier.weight(1f))
+                                KaizenSearchAboveKeyboard(
+                                    enabled = KaizenToolbar.enabled && customTabSession == null,
+                                    isSearching = isSearching,
+                                    toolbar = {
+                                        BrowserToolbar(
+                                            store = toolbarStore,
+                                            cfr = toolbarCFR,
+                                            useMinimalBottomToolbarWhenEnteringText =
+                                                settings.shouldUseMinimalBottomToolbarWhenEnteringText,
+                                        )
+                                    },
+                                    suggestions = searchSuggestionsContent,
+                                ) {
+                                    Column(modifier = Modifier.fillMaxWidth().wrapContentHeight()) {
+                                        if (shouldShowTabStripAtTop) {
+                                            tabStripContent()
+                                        }
+                                        BrowserToolbar(
+                                            store = toolbarStore,
+                                            cfr = toolbarCFR,
+                                            useMinimalBottomToolbarWhenEnteringText =
+                                                settings.shouldUseMinimalBottomToolbarWhenEnteringText,
+                                        )
+                                        if (customTabSession == null) {
+                                            searchSuggestionsContent(Modifier.weight(1f))
+                                        }
                                     }
                                 }
 

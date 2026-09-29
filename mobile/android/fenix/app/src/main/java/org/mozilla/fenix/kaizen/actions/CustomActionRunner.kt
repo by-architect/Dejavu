@@ -4,6 +4,7 @@
 
 package org.mozilla.fenix.kaizen.actions
 
+import android.content.Context
 import android.net.Uri
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
@@ -12,16 +13,25 @@ import mozilla.components.concept.fetch.Header
 import mozilla.components.concept.fetch.MutableHeaders
 import mozilla.components.concept.fetch.Request
 import org.json.JSONObject
+import org.mozilla.fenix.R
 import java.util.concurrent.TimeUnit
 
 /**
  * Outcome of running a custom action on some tabs.
  *
- * @property sent Requests answered with a success or redirect status.
- * @property failed Requests that failed or were answered with an error status.
- * @property lastStatus Status of the last answered request, if any.
+ * @property sent Requests answered with a 2xx status.
+ * @property failed Requests that got no answer or another status, redirects included.
+ * @property failedStatus Status of the last failed request that was answered, if any.
  */
-data class ActionRunResult(val sent: Int, val failed: Int, val lastStatus: Int?)
+data class ActionRunResult(val sent: Int, val failed: Int, val failedStatus: Int?) {
+    /** Tells how running [action] on [total] tabs went, like "Sent: Karakeep" or "Failed: code 302 (Karakeep)". */
+    fun message(context: Context, action: CustomAction, total: Int): String {
+        if (failed == 0) return context.getString(R.string.kaizen_custom_action_sent, action.name)
+        val reason = failedStatus?.let { context.getString(R.string.kaizen_custom_action_failed_code, it, action.name) }
+            ?: context.getString(R.string.kaizen_custom_action_failed_no_answer, action.name)
+        return if (total > 1) context.getString(R.string.kaizen_custom_action_failed_some, reason, failed, total) else reason
+    }
+}
 
 /**
  * Sends [CustomAction] requests through Firefox's network stack. Cookies are never sent and nothing is cached; the
@@ -31,13 +41,17 @@ class CustomActionRunner(private val client: Client) {
     suspend fun run(action: CustomAction, contexts: List<ActionContext>): ActionRunResult = withContext(Dispatchers.IO) {
         var sent = 0
         var failed = 0
-        var lastStatus: Int? = null
+        var failedStatus: Int? = null
         contexts.forEach { context ->
             val status = runCatching { send(action, context) }.getOrNull()
-            if (status != null) lastStatus = status
-            if (status != null && status in SUCCESS_STATUSES) sent++ else failed++
+            if (status != null && status in SUCCESS_STATUSES) {
+                sent++
+            } else {
+                failed++
+                if (status != null) failedStatus = status
+            }
         }
-        ActionRunResult(sent, failed, lastStatus)
+        ActionRunResult(sent, failed, failedStatus)
     }
 
     private fun send(action: CustomAction, context: ActionContext): Int {
@@ -64,6 +78,7 @@ class CustomActionRunner(private val client: Client) {
             connectTimeout = CONNECT_TIMEOUT_SECONDS to TimeUnit.SECONDS,
             readTimeout = READ_TIMEOUT_SECONDS to TimeUnit.SECONDS,
             body = body,
+            redirect = Request.Redirect.MANUAL,
             cookiePolicy = Request.CookiePolicy.OMIT,
             useCaches = false,
             private = true,
@@ -72,7 +87,7 @@ class CustomActionRunner(private val client: Client) {
     }
 
     private companion object {
-        val SUCCESS_STATUSES = 200..399
+        val SUCCESS_STATUSES = 200..299
         val LINE_BREAKS = Regex("[\\r\\n]+")
         const val CONNECT_TIMEOUT_SECONDS = 15L
         const val READ_TIMEOUT_SECONDS = 30L

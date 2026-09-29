@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<!-- Kaizen's version of the android-components icon with this name. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="20dp"
+    android:height="20dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <path
+        android:pathData="M3.10 12.00 A8.9 8.9 0 1 0 20.90 12.00 A8.9 8.9 0 1 0 3.10 12.00 Z M13.273 12.000 L15.338 9.935 A0.9 0.9 0 0 0 14.065 8.662 L12.000 10.727 L9.935 8.662 A0.9 0.9 0 0 0 8.662 9.935 L10.727 12.000 L8.662 14.065 A0.9 0.9 0 0 0 9.935 15.338 L12.000 13.273 L14.065 15.338 A0.9 0.9 0 0 0 15.338 14.065 Z"
+        android:fillColor="@color/mozac_ui_icons_fill"
+        android:fillType="evenOdd" />
+</vector>

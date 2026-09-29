@@ -141,8 +141,31 @@ data class ActionTargets(
 val TabSessionState.isAwake: Boolean
     get() = engineState.engineSession != null
 
+/** The page's title, or the name of its site when the page has no title of its own. */
 val TabSessionState.displayTitle: String
-    get() = content.title.ifBlank { content.url }
+    get() = pageLabel(content.title, content.url)
+
+/** [title], or the name of the site of [url] when [title] is empty or is itself a URL. */
+fun pageLabel(title: String?, url: String): String {
+    val text = title?.trim().orEmpty()
+    val isUrl = text == url || text.startsWith("http://") || text.startsWith("https://")
+    return if (text.isEmpty() || isUrl) siteName(url) else text
+}
+
+/** The host of [url] without "www.", like "iana.org", or [url] itself when it has none. */
+fun siteName(url: String): String =
+    runCatching { java.net.URI(url).host }.getOrNull()?.removePrefix("www.")?.ifBlank { null } ?: url
+
+/** The title shown for open tab [tab]: the one the user gave it, or its page's. */
+fun WorkspaceState.titleOf(tab: TabSessionState): String =
+    tabTitles[tab.id] ?: pinOf(tab.id)?.takeIf { it.staticLabel }?.title ?: tab.displayTitle
+
+/** The title shown for this pinned tab, open in [tab] or closed. */
+fun PinnedItem.label(tab: TabSessionState?): String = when {
+    staticLabel -> title
+    tab != null -> tab.displayTitle
+    else -> pageLabel(title, url.orEmpty())
+}
 
 /** Whether [this] action can do anything for [targets]. */
 @Suppress("CyclomaticComplexMethod")
@@ -164,6 +187,7 @@ fun TabAction.appliesTo(targets: ActionTargets): Boolean = when (this) {
     TabAction.DELETE -> targets.pins.isNotEmpty() || targets.folders.isNotEmpty()
     TabAction.MOVE_TO_FOLDER, TabAction.MOVE_TO_WORKSPACE -> !targets.isEmpty()
     TabAction.CHANGE_CONTAINER -> targets.tabs.isNotEmpty() || targets.allPins.isNotEmpty()
+    TabAction.RENAME_TAB -> targets.folders.isEmpty() && targets.tabs.size + targets.pins.size == 1
     TabAction.SPLIT_VIEW -> targets.folders.isEmpty() && (targets.tabs + targets.pinnedTabs).size == 2
     TabAction.UNSPLIT -> targets.splitTabIds.isNotEmpty()
 }
@@ -252,6 +276,9 @@ sealed interface HomeDialog {
         val targets: ActionTargets = ActionTargets(),
     ) : HomeDialog
     data class RenameFolder(val folder: PinnedItem) : HomeDialog
+
+    /** Renames pinned tab [pinId], or unpinned tab [tabId], currently titled [title]. */
+    data class RenameTab(val pinId: String?, val tabId: String?, val title: String) : HomeDialog
     data class DeleteItems(val targets: ActionTargets) : HomeDialog
     data class MoveToFolder(val workspaceId: String, val targets: ActionTargets) : HomeDialog
     data class MoveToWorkspace(val workspaceId: String, val targets: ActionTargets) : HomeDialog

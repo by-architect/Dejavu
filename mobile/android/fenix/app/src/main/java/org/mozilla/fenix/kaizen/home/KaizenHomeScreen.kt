@@ -35,22 +35,30 @@ import mozilla.components.browser.state.action.EngineAction
 import mozilla.components.browser.state.action.TabListAction
 import mozilla.components.browser.state.selector.findTab
 import mozilla.components.browser.state.selector.normalTabs
+import mozilla.components.browser.state.selector.privateTabs
 import mozilla.components.browser.state.state.SessionState
 import mozilla.components.browser.state.state.TabSessionState
 import mozilla.components.concept.engine.prompt.ShareData
 import mozilla.components.lib.state.ext.observeAsComposableState
+import mozilla.appservices.places.BookmarkRoot
+import org.mozilla.fenix.HomeActivity
 import org.mozilla.fenix.NavGraphDirections
+import org.mozilla.fenix.browser.browsingmode.BrowsingMode
 import org.mozilla.fenix.R
 import org.mozilla.fenix.components.Components
 import org.mozilla.fenix.components.accounts.FenixFxAEntryPoint
 import org.mozilla.fenix.components.appstate.AppAction.SearchAction.SearchStarted
 import org.mozilla.fenix.components.components
+import org.mozilla.fenix.components.menu.MenuAccessPoint
 import org.mozilla.fenix.kaizen.NewTabContainerChoice
 import org.mozilla.fenix.kaizen.actions.ActionContext
 import org.mozilla.fenix.kaizen.actions.CustomAction
 import org.mozilla.fenix.kaizen.actions.CustomActionRunner
 import org.mozilla.fenix.kaizen.actions.TabAction
+import org.mozilla.fenix.kaizen.browser.KaizenSearchOverlay
+import org.mozilla.fenix.kaizen.containers.ContainerPick
 import org.mozilla.fenix.kaizen.containers.KaizenContainerStorage
+import org.mozilla.fenix.kaizen.containers.TemporaryContainers
 import org.mozilla.fenix.kaizen.containers.reopenInContainer
 import org.mozilla.fenix.kaizen.settings.KaizenSettings
 import org.mozilla.fenix.kaizen.settings.resolveRowActions
@@ -67,8 +75,12 @@ import java.text.SimpleDateFormat
 import java.util.Date
 import java.util.Locale
 
-/** Whether the Kaizen workspace home replaces the upstream homepage. Private browsing keeps the upstream one. */
-fun isKaizenHomeEnabled(isPrivate: Boolean): Boolean = !isPrivate
+/**
+ * Whether the Kaizen workspace home replaces the upstream homepage. It always does: private tabs appear on it as a
+ * private workspace, and it switches the app back to normal browsing when it shows.
+ */
+@Suppress("UNUSED_PARAMETER")
+fun isKaizenHomeEnabled(isPrivate: Boolean): Boolean = true
 
 /**
  * Sets the Kaizen workspace home as the content of the homepage [ComposeView].
@@ -115,12 +127,20 @@ fun ComposeView.setKaizenHomeContent(
             val containerRecords by containerStorage.records.collectAsState()
             val containers = remember(containerRecords) { containerRecords.orEmpty().associateBy { it.contextId } }
             val tabs by fenix.core.store.observeAsComposableState { it.normalTabs }
+            val allPrivateTabs by fenix.core.store.observeAsComposableState { it.privateTabs }
+            val isPrivateLocked by fenix.appStore.observeAsComposableState { it.isPrivateScreenLocked }
             val selectedTabId by fenix.core.store.observeAsComposableState { it.selectedTabId }
             val restoreComplete by fenix.core.store.observeAsComposableState { it.restoreComplete }
             val isSearchActive by fenix.appStore.observeAsComposableState { it.searchState.isSearchActive }
 
             LaunchedEffect(Unit) {
                 containerStorage.load()
+            }
+
+            // Coming home from a private tab leaves the app in private browsing; the home itself is never private.
+            LaunchedEffect(Unit) {
+                val activity = context as? HomeActivity ?: return@LaunchedEffect
+                if (activity.browsingModeManager.mode.isPrivate) activity.browsingModeManager.mode = BrowsingMode.Normal
             }
 
             LaunchedEffect(isSearchActive) {
@@ -144,6 +164,7 @@ fun ComposeView.setKaizenHomeContent(
                 KaizenHome(
                     state = workspaceState,
                     tabs = tabs,
+                    privateTabs = if (isPrivateLocked) emptyList() else allPrivateTabs,
                     selectedTabId = selectedTabId,
                     containers = containers,
                     pinnedRowActions = resolveRowActions(pinnedKeys, pinned = true, customActions = customActions),
@@ -159,9 +180,11 @@ fun ComposeView.setKaizenHomeContent(
                 )
 
                 if (isSearchActive) {
-                    Box(modifier = Modifier.fillMaxSize().background(MaterialTheme.colorScheme.surface)) {
-                        searchToolbar()
-                    }
+                    KaizenSearchOverlay(
+                        fromTop = !fenix.settings.shouldUseBottomToolbar ||
+                            fenix.appStore.state.searchState.sourceTabId == null,
+                        content = searchToolbar,
+                    )
                 }
             }
 
@@ -258,7 +281,7 @@ private class DefaultKaizenHomeInteractor(
             TabAction.SPLIT_VIEW -> split(targets)
             TabAction.UNSPLIT -> repository.unsplit(targets.splitTabIds)
             TabAction.MOVE_TO_WORKSPACE, TabAction.MOVE_TO_FOLDER, TabAction.NEW_FOLDER, TabAction.NEW_SUBFOLDER,
-            TabAction.RENAME_FOLDER, TabAction.CHANGE_CONTAINER,
+            TabAction.RENAME_FOLDER, TabAction.RENAME_TAB, TabAction.CHANGE_CONTAINER,
             -> Unit
         }
     }
@@ -268,18 +291,7 @@ private class DefaultKaizenHomeInteractor(
         if (contexts.isEmpty()) return
         scope.launch {
             val result = actionRunner.run(action, contexts)
-            val message = if (result.failed == 0) {
-                context.getString(R.string.kaizen_custom_action_sent, action.name)
-            } else {
-                context.resources.getQuantityString(
-                    R.plurals.kaizen_custom_action_failed,
-                    result.failed,
-                    result.failed,
-                    action.name,
-                    result.lastStatus?.toString() ?: "-",
-                )
-            }
-            snackbar.showSnackbar(message)
+            snackbar.showSnackbar(result.message(context, action, contexts.size))
         }
     }
 
@@ -350,6 +362,13 @@ private class DefaultKaizenHomeInteractor(
 
     override fun onRenameFolder(folderId: String, name: String) = repository.renameFolder(folderId, name)
 
+    override fun onRenameTab(pinId: String?, tabId: String?, name: String) {
+        when {
+            pinId != null -> repository.renamePin(pinId, name)
+            tabId != null -> repository.renameTab(tabId, name)
+        }
+    }
+
     override fun onToggleFolder(folderId: String) = repository.toggleFolder(folderId)
 
     override fun onMoveToFolder(workspaceId: String, targets: ActionTargets, folderId: String?) {
@@ -375,7 +394,12 @@ private class DefaultKaizenHomeInteractor(
         )
     }
 
-    override fun onChangeContainer(targets: ActionTargets, contextId: String?) {
+    override fun onChangeContainer(targets: ActionTargets, pick: ContainerPick) {
+        val contextId = when (pick) {
+            ContainerPick.NoContainer -> null
+            ContainerPick.Temporary -> TemporaryContainers.create(store, containerStorage)
+            is ContainerPick.Container -> pick.contextId
+        }
         repository.setPinContainer(targets.allPins.map { it.id }.toSet(), contextId)
         val selectedTabId = store.state.selectedTabId
         targets.openTabs.filter { it.contextId != contextId }.forEach { tab ->
@@ -389,8 +413,17 @@ private class DefaultKaizenHomeInteractor(
         components.appStore.dispatch(SearchStarted())
     }
 
-    override fun onNewTabInContainer(containerId: String?) {
-        NewTabContainerChoice.set(containerId)
+    override fun onNewPrivateTab() {
+        NewTabContainerChoice.setPrivate()
+        components.appStore.dispatch(SearchStarted())
+    }
+
+    override fun onClosePrivateTabs() = tabsUseCases.removePrivateTabs()
+
+    override fun onCloseTab(tabId: String) = tabsUseCases.removeTab(tabId)
+
+    override fun onNewTabInContainer(pick: ContainerPick) {
+        NewTabContainerChoice.set(pick)
         components.appStore.dispatch(SearchStarted())
     }
 
@@ -413,6 +446,14 @@ private class DefaultKaizenHomeInteractor(
 
     override fun onDownloadsClick() {
         navController.navigate(NavGraphDirections.actionGlobalDownloadsFragment())
+    }
+
+    override fun onExtensionsClick() {
+        navController.navigate(NavGraphDirections.actionGlobalMenuDialogFragment(accesspoint = MenuAccessPoint.Home))
+    }
+
+    override fun onBookmarksClick() {
+        navController.navigate(NavGraphDirections.actionGlobalBookmarkFragment(BookmarkRoot.Mobile.id))
     }
 
     override fun onHistoryClick() {
@@ -548,7 +589,7 @@ private class DefaultKaizenHomeInteractor(
 }
 
 /** Names of the folders around [item], outermost first, separated by "/". */
-private fun WorkspaceState.folderPathOf(item: PinnedItem): String {
+internal fun WorkspaceState.folderPathOf(item: PinnedItem): String {
     val names = mutableListOf<String>()
     val seen = mutableSetOf<String>()
     var parentId = item.parentId

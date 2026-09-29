@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<!-- Kaizen's toolbar: the shortcut on the left of the address bar, and the home button on its right. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="302dp"
+    android:height="50dp"
+    android:viewportWidth="302"
+    android:viewportHeight="50">
+  <path
+      android:pathData="M5,0.5L297,0.5A4.5,4.5 0,0 1,301.5 5L301.5,44.61A4.5,4.5 0,0 1,297 49.11L5,49.11A4.5,4.5 0,0 1,0.5 44.61L0.5,5A4.5,4.5 0,0 1,5 0.5z"
+      android:fillColor="?attr/colorSurfaceContainerLowest"/>
+  <path
+      android:strokeWidth="1"
+      android:pathData="M5,0.5L297,0.5A4.5,4.5 0,0 1,301.5 5L301.5,44.61A4.5,4.5 0,0 1,297 49.11L5,49.11A4.5,4.5 0,0 1,0.5 44.61L0.5,5A4.5,4.5 0,0 1,5 0.5z"
+      android:fillColor="@android:color/transparent"
+      android:strokeColor="?attr/colorOutlineVariant"/>
+  <path
+      android:pathData="M13,9L36.6,9A4,4 0,0 1,40.6 13L40.6,36.6A4,4 0,0 1,36.6 40.6L13,40.6A4,4 0,0 1,9 36.6L9,13A4,4 0,0 1,13 9z"
+      android:fillColor="?attr/colorSecondaryContainer"/>
+  <path
+      android:strokeWidth="1"
+      android:pathData="M13,9.5L36.6,9.5A3.5,3.5 0,0 1,40.1 13L40.1,36.6A3.5,3.5 0,0 1,36.6 40.1L13,40.1A3.5,3.5 0,0 1,9.5 36.6L9.5,13A3.5,3.5 0,0 1,13 9.5z"
+      android:fillColor="@android:color/transparent"
+      android:strokeColor="?attr/colorPrimary"/>
+  <path
+      android:pathData="M62.8,9L240.2,9A15.8,15.8 0,0 1,256 24.8L256,24.8A15.8,15.8 0,0 1,240.2 40.6L62.8,40.6A15.8,15.8 0,0 1,47 24.8L47,24.8A15.8,15.8 0,0 1,62.8 9z"
+      android:fillColor="?attr/colorSurfaceContainerHighest"/>
+  <path
+      android:pathData="M269.5,23.6L277,17.5L284.5,23.6V31.9H280V27.2H274V31.9H269.5Z"
+      android:strokeWidth="1.4"
+      android:strokeLineJoin="round"
+      android:strokeColor="?attr/colorOnSurfaceVariant"
+      android:strokeAlpha="0.8"
+      android:fillColor="@android:color/transparent"/>
+</vector>

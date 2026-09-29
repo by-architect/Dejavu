@@ -47,6 +47,7 @@ import mozilla.components.ui.icons.R as iconsR
  * @param onLongClick Optional [BrowserToolbarInteraction] describing how to handle this button being long clicked.
  * @param onInteraction Callback for handling [BrowserToolbarEvent]s on user interactions.
  * @param testTag Optional test tag for this button.
+ * @param shouldTint Whether to tint [icon] for the button state, or show it with its own colors.
  */
 @Composable
 @Suppress("LongMethod", "CyclomaticComplexMethod", "CognitiveComplexMethod")
@@ -59,6 +60,7 @@ internal fun ActionButton(
     onLongClick: BrowserToolbarInteraction? = null,
     onInteraction: (BrowserToolbarEvent) -> Unit,
     testTag: String? = null,
+    shouldTint: Boolean = true,
 ) {
     val shouldReactToLongClicks =
         remember(onLongClick) {
@@ -67,11 +69,12 @@ internal fun ActionButton(
     var currentMenuState by remember { mutableStateOf(None) }
     val colors = MaterialTheme.colorScheme
     val tint =
-        remember(state, colors) {
-            when (state) {
-                State.ACTIVE -> colors.tertiary
-                State.DISABLED -> colors.onSurface.copy(alpha = 0.38f)
-                State.DEFAULT -> colors.onSurface
+        remember(state, colors, shouldTint) {
+            when {
+                !shouldTint -> Color.Unspecified
+                state == State.ACTIVE -> colors.tertiary
+                state == State.DISABLED -> colors.onSurface.copy(alpha = 0.38f)
+                else -> colors.onSurface
             }
         }
 

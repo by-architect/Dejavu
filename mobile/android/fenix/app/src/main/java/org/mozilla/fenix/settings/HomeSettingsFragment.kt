@@ -24,6 +24,7 @@ import org.mozilla.fenix.ext.components
 import org.mozilla.fenix.ext.navigateWithBreadcrumb
 import org.mozilla.fenix.ext.showToolbar
 import org.mozilla.fenix.home.pocket.ContentRecommendationsFeatureHelper
+import org.mozilla.fenix.kaizen.home.isKaizenHomeEnabled
 import org.mozilla.fenix.utils.Settings
 import org.mozilla.fenix.utils.view.addToRadioGroup
 
@@ -157,6 +158,11 @@ class HomeSettingsFragment : PreferenceFragmentCompat(), SystemInsetsPaddedFragm
 
         setupOpeningScreenPreferences()
         setupWeatherPreference()
+
+        // Kaizen's home screen replaces Firefox's homepage, whose sections and wallpapers no longer show anywhere.
+        if (isKaizenHomeEnabled(isPrivate = false)) {
+            FIREFOX_HOMEPAGE_PREFERENCES.forEach { requirePreference<Preference>(it).isVisible = false }
+        }
     }
 
     private fun createMetricPreferenceChangeListener(
@@ -217,3 +223,16 @@ class HomeSettingsFragment : PreferenceFragmentCompat(), SystemInsetsPaddedFragm
         }
     }
 }
+
+private val FIREFOX_HOMEPAGE_PREFERENCES = listOf(
+    R.string.pref_key_wallpapers,
+    R.string.pref_key_show_top_sites,
+    R.string.pref_key_enable_contile,
+    R.string.pref_key_show_homepage_weather_widget,
+    R.string.pref_key_privacy_report,
+    R.string.pref_key_recent_tabs,
+    R.string.pref_key_customization_bookmarks,
+    R.string.pref_key_history_metadata_feature,
+    R.string.pref_key_pocket_homescreen_recommendations,
+    R.string.pref_key_pocket_sponsored_stories,
+)

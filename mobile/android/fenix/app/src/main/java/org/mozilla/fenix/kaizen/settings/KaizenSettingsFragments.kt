@@ -10,15 +10,22 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.annotation.StringRes
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
+import androidx.compose.foundation.lazy.itemsIndexed
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.RadioButton
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
@@ -28,6 +35,7 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.runtime.setValue
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.ComposeView
 import androidx.compose.ui.platform.ViewCompositionStrategy
@@ -48,9 +56,13 @@ import org.mozilla.fenix.ext.showToolbar
 import org.mozilla.fenix.kaizen.actions.CustomAction
 import org.mozilla.fenix.kaizen.actions.RowAction
 import org.mozilla.fenix.kaizen.actions.label
+import org.mozilla.fenix.kaizen.containers.ContainerIcon
+import org.mozilla.fenix.kaizen.containers.ContainerPick
 import org.mozilla.fenix.kaizen.containers.ContainerRecord
 import org.mozilla.fenix.kaizen.containers.ContainerRemover
 import org.mozilla.fenix.kaizen.containers.KaizenContainerStorage
+import org.mozilla.fenix.kaizen.containers.NoContainerIcon
+import org.mozilla.fenix.kaizen.containers.TemporaryContainerIcon
 import org.mozilla.fenix.kaizen.containers.color
 import org.mozilla.fenix.kaizen.containers.drawable
 import org.mozilla.fenix.kaizen.workspaces.WorkspaceRepository
@@ -117,12 +129,14 @@ class KaizenTabActionsFragment : KaizenComposeFragment(R.string.kaizen_settings_
                 label = stringResource(R.string.kaizen_settings_pinned_tabs),
                 description = rowSummary(resolveRowActions(pinnedKeys, pinned = true, customActions = customActions)),
                 beforeIconPainter = painterResource(iconsR.drawable.mozac_ic_pin_24),
+                modifier = Modifier.settingsCard(index = 0, count = 3),
                 onClick = { openList(ActionList.PINNED) },
             )
             IconListItem(
                 label = stringResource(R.string.kaizen_settings_unpinned_tabs),
                 description = rowSummary(resolveRowActions(unpinnedKeys, pinned = false, customActions = customActions)),
                 beforeIconPainter = painterResource(iconsR.drawable.mozac_ic_tab_24),
+                modifier = Modifier.settingsCard(index = 1, count = 3),
                 onClick = { openList(ActionList.UNPINNED) },
             )
             IconListItem(
@@ -133,6 +147,7 @@ class KaizenTabActionsFragment : KaizenComposeFragment(R.string.kaizen_settings_
                     allActions.size,
                 ),
                 beforeIconPainter = painterResource(iconsR.drawable.mozac_ic_select_all_24),
+                modifier = Modifier.settingsCard(index = 2, count = 3),
                 onClick = { openList(ActionList.ALL) },
             )
         }
@@ -219,11 +234,12 @@ class KaizenActionListFragment : KaizenComposeFragment(R.string.kaizen_settings_
                 text = stringResource(R.string.kaizen_custom_actions),
                 modifier = Modifier.padding(start = 16.dp, top = 16.dp, end = 16.dp),
             )
-            customActions.forEach { action ->
+            customActions.forEachIndexed { index, action ->
                 IconListItem(
                     label = action.name,
                     description = "${action.method.name} ${action.url}",
                     beforeIconPainter = painterResource(iconsR.drawable.mozac_ic_lightning_24),
+                    modifier = Modifier.settingsCard(index, customActions.size),
                     onClick = { openEditor(action.id) },
                 )
             }
@@ -250,13 +266,14 @@ class KaizenActionListFragment : KaizenComposeFragment(R.string.kaizen_settings_
             color = MaterialTheme.colorScheme.onSurfaceVariant,
             modifier = Modifier.padding(horizontal = 16.dp, vertical = 8.dp),
         )
-        actions.forEach { action ->
+        actions.forEachIndexed { index, action ->
             val checked = isChecked(action)
             SwitchListItem(
                 label = action.label,
                 checked = checked,
                 enabled = checked || canCheckMore,
                 showSwitchAfter = true,
+                modifier = Modifier.settingsCard(index, actions.size),
                 onClick = { onChange(action.key, it) },
             )
         }
@@ -282,7 +299,9 @@ class KaizenContainersFragment : KaizenComposeFragment(R.string.kaizen_settings_
         val storage = remember { KaizenContainerStorage.get(requireContext()) }
         val settings = remember { kaizenSettings() }
         val essentialsPerContainer by settings.essentialsPerContainer.collectAsState()
-        val containers by storage.records.collectAsState()
+        val temporaryByDefault by settings.temporaryContainersByDefault.collectAsState()
+        val records by storage.records.collectAsState()
+        val containers = records?.filterNot { it.temporary }
         val scope = rememberCoroutineScope()
         var editing by remember { mutableStateOf<ContainerRecord?>(null) }
         var adding by remember { mutableStateOf(false) }
@@ -300,19 +319,33 @@ class KaizenContainersFragment : KaizenComposeFragment(R.string.kaizen_settings_
             }
             item {
                 SwitchListItem(
+                    label = stringResource(R.string.kaizen_temporary_by_default),
+                    description = stringResource(R.string.kaizen_temporary_by_default_summary),
+                    maxDescriptionLines = 4,
+                    checked = temporaryByDefault,
+                    showSwitchAfter = true,
+                    modifier = Modifier.settingsCard(index = 0, count = 2),
+                    onClick = settings::setTemporaryContainersByDefault,
+                )
+            }
+            item {
+                SwitchListItem(
                     label = stringResource(R.string.kaizen_essentials_per_container),
                     description = stringResource(R.string.kaizen_essentials_per_container_summary),
                     maxDescriptionLines = 3,
                     checked = essentialsPerContainer,
                     showSwitchAfter = true,
+                    modifier = Modifier.settingsCard(index = 1, count = 2),
                     onClick = settings::setEssentialsPerContainer,
                 )
             }
-            items(containers.orEmpty(), key = { it.contextId }) { record ->
+            val containerRows = containers.orEmpty().size + 1
+            itemsIndexed(containers.orEmpty(), key = { _, record -> record.contextId }) { index, record ->
                 IconListItem(
                     label = record.name,
                     beforeIconPainter = painterResource(record.icon.drawable),
                     beforeIconTint = record.color.color,
+                    modifier = Modifier.settingsCard(index, containerRows),
                     onClick = { editing = record },
                 )
             }
@@ -320,6 +353,7 @@ class KaizenContainersFragment : KaizenComposeFragment(R.string.kaizen_settings_
                 IconListItem(
                     label = stringResource(R.string.kaizen_container_add),
                     beforeIconPainter = painterResource(iconsR.drawable.mozac_ic_plus_24),
+                    modifier = Modifier.settingsCard(containerRows - 1, containerRows),
                     onClick = { adding = true },
                 )
             }
@@ -355,6 +389,112 @@ class KaizenContainersFragment : KaizenComposeFragment(R.string.kaizen_settings_
                 },
                 onDismiss = { deleting = null },
             )
+        }
+    }
+}
+
+/** Chooses the workspace and container that links from other apps open in. */
+class KaizenExternalLinksFragment : KaizenComposeFragment(R.string.kaizen_settings_external_links) {
+    @Composable
+    override fun KaizenScreen() {
+        val settings = remember { kaizenSettings() }
+        val repository = remember {
+            requireComponents.strictMode.allowViolation(StrictMode::allowThreadDiskReads) {
+                WorkspaceRepository.get(requireContext())
+            }
+        }
+        val storage = remember { KaizenContainerStorage.get(requireContext()) }
+        val workspaces by repository.state.collectAsState()
+        val records by storage.records.collectAsState()
+        val workspaceId by settings.externalLinkWorkspaceId.collectAsState()
+        val container by settings.externalLinkContainer.collectAsState()
+        LaunchedEffect(Unit) { storage.load() }
+        val chosenWorkspace = workspaces.workspaces.firstOrNull { it.id == workspaceId }
+
+        Column(modifier = Modifier.fillMaxSize().verticalScroll(rememberScrollState())) {
+            Text(
+                text = stringResource(R.string.kaizen_external_links_hint),
+                style = MaterialTheme.typography.bodyMedium,
+                color = MaterialTheme.colorScheme.onSurfaceVariant,
+                modifier = Modifier.padding(16.dp),
+            )
+            SettingsSectionHeader(
+                text = stringResource(R.string.kaizen_external_links_workspace),
+                modifier = Modifier.padding(horizontal = 16.dp),
+            )
+            val workspaceRows = workspaces.workspaces.size + 1
+            ChoiceRow(
+                label = stringResource(R.string.kaizen_external_links_last_workspace),
+                selected = chosenWorkspace == null,
+                modifier = Modifier.settingsCard(0, workspaceRows),
+                onClick = { settings.setExternalLinkWorkspace(null) },
+            )
+            workspaces.workspaces.forEachIndexed { index, workspace ->
+                ChoiceRow(
+                    label = listOfNotNull(workspace.icon, workspace.name).joinToString("  "),
+                    selected = workspace.id == chosenWorkspace?.id,
+                    modifier = Modifier.settingsCard(index + 1, workspaceRows),
+                    onClick = { settings.setExternalLinkWorkspace(workspace.id) },
+                )
+            }
+            SettingsSectionHeader(
+                text = stringResource(R.string.kaizen_external_links_container),
+                modifier = Modifier.padding(start = 16.dp, end = 16.dp, top = 16.dp),
+            )
+            val permanent = records.orEmpty().filterNot { it.temporary }
+            val containerRows = permanent.size + 3
+            ChoiceRow(
+                label = stringResource(R.string.kaizen_external_links_workspace_container),
+                selected = container == null,
+                modifier = Modifier.settingsCard(0, containerRows),
+                onClick = { settings.setExternalLinkContainer(null) },
+            )
+            ChoiceRow(
+                label = stringResource(R.string.kaizen_workspace_no_container),
+                selected = container == ContainerPick.NoContainer,
+                leading = { NoContainerIcon() },
+                modifier = Modifier.settingsCard(1, containerRows),
+                onClick = { settings.setExternalLinkContainer(ContainerPick.NoContainer) },
+            )
+            ChoiceRow(
+                label = stringResource(R.string.kaizen_new_temporary_container),
+                selected = container == ContainerPick.Temporary,
+                leading = { TemporaryContainerIcon() },
+                modifier = Modifier.settingsCard(2, containerRows),
+                onClick = { settings.setExternalLinkContainer(ContainerPick.Temporary) },
+            )
+            permanent.forEachIndexed { index, record ->
+                val pick = ContainerPick.Container(record.contextId)
+                ChoiceRow(
+                    label = record.name,
+                    selected = container == pick,
+                    leading = { ContainerIcon(record) },
+                    modifier = Modifier.settingsCard(index + 3, containerRows),
+                    onClick = { settings.setExternalLinkContainer(pick) },
+                )
+            }
+            Spacer(Modifier.height(24.dp))
+        }
+    }
+
+    @Composable
+    private fun ChoiceRow(
+        label: String,
+        selected: Boolean,
+        onClick: () -> Unit,
+        modifier: Modifier = Modifier,
+        leading: (@Composable () -> Unit)? = null,
+    ) {
+        Row(
+            verticalAlignment = Alignment.CenterVertically,
+            modifier = modifier.fillMaxWidth().clickable(onClick = onClick).padding(horizontal = 8.dp, vertical = 4.dp),
+        ) {
+            RadioButton(selected = selected, onClick = onClick)
+            if (leading != null) {
+                leading()
+                Spacer(Modifier.width(12.dp))
+            }
+            Text(text = label, style = MaterialTheme.typography.bodyLarge, color = MaterialTheme.colorScheme.onSurface)
         }
     }
 }

@@ -35,22 +35,6 @@
         app:isPreferenceVisible="false" />
 
     <androidx.preference.PreferenceCategory
-        android:title="@string/kaizen_settings_title"
-        android:layout="@layout/preference_category_no_icon_style">
-        <androidx.preference.Preference
-            app:iconSpaceReserved="false"
-            android:key="@string/pref_key_kaizen_tab_actions"
-            android:title="@string/kaizen_settings_tab_actions"
-            android:summary="@string/kaizen_settings_tab_actions_entry_summary" />
-
-        <androidx.preference.Preference
-            app:iconSpaceReserved="false"
-            android:key="@string/pref_key_kaizen_containers"
-            android:title="@string/kaizen_settings_containers"
-            android:summary="@string/kaizen_settings_containers_entry_summary" />
-    </androidx.preference.PreferenceCategory>
-
-    <androidx.preference.PreferenceCategory
         android:title="@string/preferences_category_general"
         android:layout="@layout/preference_category_no_icon_style">
         <androidx.preference.Preference
@@ -62,6 +46,20 @@
             app:iconSpaceReserved="false"
             android:key="@string/pref_key_tabs"
             android:title="@string/preferences_tabs" />
+
+        <androidx.preference.Preference
+            app:iconSpaceReserved="false"
+            app:widgetLayout="@layout/kaizen_preference_badge"
+            android:key="@string/pref_key_kaizen_tab_actions"
+            android:title="@string/kaizen_settings_tab_actions"
+            android:summary="@string/kaizen_settings_tab_actions_entry_summary" />
+
+        <androidx.preference.Preference
+            app:iconSpaceReserved="false"
+            app:widgetLayout="@layout/kaizen_preference_badge"
+            android:key="@string/pref_key_kaizen_containers"
+            android:title="@string/kaizen_settings_containers"
+            android:summary="@string/kaizen_settings_containers_entry_summary" />
 
         <androidx.preference.Preference
             app:iconSpaceReserved="false"
@@ -127,6 +125,13 @@
             android:key="@string/pref_key_make_default_browser"
             app:iconSpaceReserved="false"
             android:title="@string/preferences_set_as_default_browser" />
+
+        <androidx.preference.Preference
+            app:iconSpaceReserved="false"
+            app:widgetLayout="@layout/kaizen_preference_badge"
+            android:key="@string/pref_key_kaizen_external_links"
+            android:title="@string/kaizen_settings_external_links"
+            android:summary="@string/kaizen_settings_external_links_summary" />
     </androidx.preference.PreferenceCategory>
 
     <androidx.preference.PreferenceCategory

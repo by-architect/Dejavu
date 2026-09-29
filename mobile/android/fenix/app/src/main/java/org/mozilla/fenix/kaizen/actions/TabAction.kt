@@ -45,6 +45,7 @@ enum class TabAction(
     ),
     NEW_SUBFOLDER("new_subfolder", R.string.kaizen_folder_new_subfolder, iconsR.drawable.mozac_ic_folder_add_24),
     RENAME_FOLDER("rename_folder", R.string.kaizen_folder_rename, iconsR.drawable.mozac_ic_edit_24),
+    RENAME_TAB("rename_tab", R.string.kaizen_action_rename_tab, iconsR.drawable.mozac_ic_edit_24),
     UNPACK_FOLDER("unpack_folder", R.string.kaizen_folder_unpack, iconsR.drawable.mozac_ic_tab_ungroup_24),
     DELETE("delete", R.string.kaizen_action_delete, iconsR.drawable.mozac_ic_delete_24),
     ;
@@ -52,21 +53,21 @@ enum class TabAction(
     companion object {
         /** Actions the user can put on pinned tab rows, in display order. */
         val forPinnedRows = listOf(
-            UNPIN, RESET_PIN, ADD_TO_ESSENTIALS, SLEEP, BOOKMARK, SHARE, COPY_LINK, DUPLICATE, MOVE_TO_FOLDER,
-            MOVE_TO_WORKSPACE, CHANGE_CONTAINER, CLOSE,
+            UNPIN, RESET_PIN, ADD_TO_ESSENTIALS, RENAME_TAB, SLEEP, BOOKMARK, SHARE, COPY_LINK, DUPLICATE,
+            MOVE_TO_FOLDER, MOVE_TO_WORKSPACE, CHANGE_CONTAINER, CLOSE,
         )
 
         /** Actions the user can put on unpinned tab rows, in display order. */
         val forUnpinnedRows = listOf(
-            PIN, ADD_TO_ESSENTIALS, SLEEP, BOOKMARK, SHARE, COPY_LINK, DUPLICATE, MOVE_TO_FOLDER, MOVE_TO_WORKSPACE,
-            CHANGE_CONTAINER, CLOSE,
+            PIN, ADD_TO_ESSENTIALS, RENAME_TAB, SLEEP, BOOKMARK, SHARE, COPY_LINK, DUPLICATE, MOVE_TO_FOLDER,
+            MOVE_TO_WORKSPACE, CHANGE_CONTAINER, CLOSE,
         )
 
         /** Actions of the selection bar, in display order. */
         val forSelection = listOf(
-            SHARE, SLEEP, BOOKMARK, COPY_LINK, PIN, UNPIN, RESET_PIN, ADD_TO_ESSENTIALS, REMOVE_FROM_ESSENTIALS,
-            SPLIT_VIEW, UNSPLIT, NEW_FOLDER, NEW_SUBFOLDER, RENAME_FOLDER, MOVE_TO_FOLDER, MOVE_TO_WORKSPACE,
-            CHANGE_CONTAINER, UNPACK_FOLDER, DUPLICATE, DELETE, CLOSE,
+            SHARE, SLEEP, BOOKMARK, COPY_LINK, PIN, UNPIN, RESET_PIN, RENAME_TAB, ADD_TO_ESSENTIALS,
+            REMOVE_FROM_ESSENTIALS, SPLIT_VIEW, UNSPLIT, NEW_FOLDER, NEW_SUBFOLDER, RENAME_FOLDER, MOVE_TO_FOLDER,
+            MOVE_TO_WORKSPACE, CHANGE_CONTAINER, UNPACK_FOLDER, DUPLICATE, DELETE, CLOSE,
         )
 
         fun fromKey(key: String): TabAction? = entries.firstOrNull { it.key == key }

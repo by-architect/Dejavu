@@ -6,6 +6,7 @@ package org.mozilla.fenix.kaizen.home
 
 import androidx.activity.compose.BackHandler
 import androidx.annotation.DrawableRes
+import androidx.compose.foundation.ScrollState
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.gestures.detectDragGesturesAfterLongPress
@@ -33,9 +34,11 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableIntStateOf
 import androidx.compose.runtime.mutableStateMapOf
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
+import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.runtime.rememberUpdatedState
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
@@ -43,7 +46,14 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.alpha
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.draw.drawBehind
+import androidx.compose.ui.draw.drawWithContent
+import androidx.compose.ui.geometry.Offset
+import androidx.compose.ui.geometry.Size
+import androidx.compose.ui.graphics.BlendMode
+import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.CompositingStrategy
+import androidx.compose.ui.graphics.graphicsLayer
 import androidx.compose.ui.hapticfeedback.HapticFeedbackType
 import androidx.compose.ui.input.pointer.pointerInput
 import androidx.compose.ui.layout.onPlaced
@@ -53,10 +63,16 @@ import androidx.compose.ui.platform.LocalHapticFeedback
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.pluralStringResource
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.semantics.contentDescription
+import androidx.compose.ui.semantics.selected
+import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import kotlin.math.floor
+import kotlin.math.roundToInt
+import kotlinx.coroutines.launch
 import mozilla.components.browser.state.state.TabSessionState
 import org.mozilla.fenix.R
 import org.mozilla.fenix.kaizen.actions.CustomAction
@@ -64,13 +80,14 @@ import org.mozilla.fenix.kaizen.actions.RowAction
 import org.mozilla.fenix.kaizen.actions.TabAction
 import org.mozilla.fenix.kaizen.actions.icon
 import org.mozilla.fenix.kaizen.actions.label
+import org.mozilla.fenix.kaizen.containers.ContainerPick
 import org.mozilla.fenix.kaizen.containers.ContainerRecord
 import org.mozilla.fenix.kaizen.containers.color
+import org.mozilla.fenix.kaizen.ui.glass
 import org.mozilla.fenix.kaizen.workspaces.PinnedItem
 import org.mozilla.fenix.kaizen.workspaces.Workspace
 import org.mozilla.fenix.kaizen.workspaces.WorkspaceState
 import org.mozilla.fenix.kaizen.workspaces.WorkspaceTheme
-import kotlin.math.floor
 import mozilla.components.ui.icons.R as iconsR
 
 /**
@@ -103,6 +120,9 @@ interface KaizenHomeInteractor {
     fun onClearUnpinned(workspaceId: String)
     fun onCreateFolder(workspaceId: String, parentId: String?, name: String, targets: ActionTargets)
     fun onRenameFolder(folderId: String, name: String)
+
+    /** Gives pinned tab [pinId] or unpinned tab [tabId] the title [name]; a blank name shows the page title again. */
+    fun onRenameTab(pinId: String?, tabId: String?, name: String)
     fun onToggleFolder(folderId: String)
 
     /** Pins [targets] in [workspaceId], inside [folderId] or at the end of the top level when it is `null`. */
@@ -112,16 +132,25 @@ interface KaizenHomeInteractor {
     fun onDeleteItems(targets: ActionTargets)
     fun onMoveToWorkspace(targets: ActionTargets, workspaceId: String)
 
-    /** Moves the tabs of [targets] to container [contextId], or out of any container when it is `null`. */
-    fun onChangeContainer(targets: ActionTargets, contextId: String?)
+    /** Moves the tabs of [targets] to the container [pick]; all of them share one new temporary container. */
+    fun onChangeContainer(targets: ActionTargets, pick: ContainerPick)
     fun onSearchClick()
 
-    /** Starts a new tab in [containerId], or without a container when it is `null`. */
-    fun onNewTabInContainer(containerId: String?)
+    /** Starts a new private tab. */
+    fun onNewPrivateTab()
+
+    /** Closes every private tab, which removes the private workspace. */
+    fun onClosePrivateTabs()
+    fun onCloseTab(tabId: String)
+
+    /** Starts a new tab in the container [pick]. */
+    fun onNewTabInContainer(pick: ContainerPick)
     fun onManageContainers()
     fun onAccountClick()
     fun onSettingsClick()
     fun onDownloadsClick()
+    fun onExtensionsClick()
+    fun onBookmarksClick()
     fun onHistoryClick()
 }
 
@@ -135,6 +164,7 @@ interface KaizenHomeInteractor {
 fun KaizenHome(
     state: WorkspaceState,
     tabs: List<TabSessionState>,
+    privateTabs: List<TabSessionState>,
     selectedTabId: String?,
     containers: Map<String, ContainerRecord>,
     pinnedRowActions: List<RowAction>,
@@ -144,21 +174,43 @@ fun KaizenHome(
     interactor: KaizenHomeInteractor,
     modifier: Modifier = Modifier,
 ) {
-    val pagerState = rememberPagerState(initialPage = state.activeIndex) { state.workspaces.size }
+    // The private workspace is an extra last page, there while private tabs are open.
+    val privateIndex = state.workspaces.size.takeIf { privateTabs.isNotEmpty() }
+    val pagerState = rememberPagerState(
+        initialPage = if (privateTabs.any { it.id == selectedTabId } && privateIndex != null) privateIndex else state.activeIndex,
+    ) { state.workspaces.size + if (privateIndex != null) 1 else 0 }
+    val scope = rememberCoroutineScope()
     var selection by remember { mutableStateOf<Selection?>(null) }
     var dialog by remember { mutableStateOf<HomeDialog?>(null) }
     var essentialsDrop by remember { mutableStateOf(EssentialsDrop.NONE) }
-    val currentWorkspace = state.workspaces.getOrNull(pagerState.currentPage) ?: state.workspaces.first()
+    val onPrivatePage = privateIndex != null && pagerState.currentPage == privateIndex
+    val currentWorkspace = state.workspaces.getOrNull(pagerState.currentPage) ?: state.workspaces.last()
     val tabsById = remember(tabs) { tabs.associateBy { it.id } }
-    val essentials = state.essentialsFor(currentWorkspace.containerId, essentialsPerContainer)
+    val essentials = if (onPrivatePage) emptyList() else state.essentialsFor(currentWorkspace.containerId, essentialsPerContainer)
     val grain = rememberGrainBrush()
+
+    fun themeAt(page: Int): WorkspaceTheme? =
+        if (page == privateIndex) privateWorkspaceTheme else state.workspaces.getOrNull(page)?.theme
+
+    // Like Zen, there is only one private workspace: asking for a private tab elsewhere leads to it once it exists.
+    val newPrivateTab: () -> Unit = {
+        if (privateIndex != null && !onPrivatePage) {
+            scope.launch { pagerState.animateScrollToPage(privateIndex) }
+        } else {
+            interactor.onNewPrivateTab()
+        }
+    }
 
     LaunchedEffect(pagerState.settledPage) {
         state.workspaces.getOrNull(pagerState.settledPage)?.let { interactor.onWorkspaceSelected(it.id) }
     }
 
+    // Follows workspace changes made elsewhere, without leaving the private workspace the home opened on.
+    var followedActiveIndex by remember { mutableIntStateOf(state.activeIndex) }
     LaunchedEffect(state.activeIndex, state.workspaces.size) {
-        if (pagerState.settledPage != state.activeIndex) {
+        val changed = state.activeIndex != followedActiveIndex
+        followedActiveIndex = state.activeIndex
+        if (pagerState.settledPage != state.activeIndex && (changed || pagerState.settledPage != privateIndex)) {
             pagerState.animateScrollToPage(state.activeIndex)
         }
     }
@@ -189,6 +241,15 @@ fun KaizenHome(
                 TabAction.NEW_SUBFOLDER ->
                     targets.folders.singleOrNull()?.let { dialog = HomeDialog.NewFolder(workspaceId, parentId = it.id) }
                 TabAction.RENAME_FOLDER -> targets.folders.singleOrNull()?.let { dialog = HomeDialog.RenameFolder(it) }
+                TabAction.RENAME_TAB -> {
+                    val pin = targets.pins.singleOrNull()
+                    val tab = targets.tabs.singleOrNull()
+                    dialog = when {
+                        pin != null -> HomeDialog.RenameTab(pin.id, null, pin.label(targets.pinnedTabs.firstOrNull()))
+                        tab != null -> HomeDialog.RenameTab(null, tab.id, state.titleOf(tab))
+                        else -> null
+                    }
+                }
                 TabAction.DELETE -> dialog = HomeDialog.DeleteItems(targets)
                 TabAction.CHANGE_CONTAINER -> dialog = HomeDialog.ChangeContainer(targets)
                 else -> interactor.onTabAction(action.action, targets, workspaceId)
@@ -210,8 +271,8 @@ fun KaizenHome(
                 val position = pagerState.currentPage + pagerState.currentPageOffsetFraction
                 val page = floor(position).toInt()
                 drawWorkspaceTheme(
-                    theme = state.workspaces.getOrNull(page)?.theme,
-                    next = state.workspaces.getOrNull(page + 1)?.theme,
+                    theme = themeAt(page),
+                    next = themeAt(page + 1),
                     fraction = position - page,
                     grain = grain,
                 )
@@ -219,7 +280,7 @@ fun KaizenHome(
     ) {
         val activeSelection = selection
         if (activeSelection == null) {
-            TopBar(interactor)
+            TopBar(interactor, onSearchClick = if (onPrivatePage) newPrivateTab else interactor::onSearchClick)
         } else if (essentialsDrop != EssentialsDrop.NONE) {
             EssentialsDropBar(active = essentialsDrop == EssentialsDrop.ACTIVE)
         } else {
@@ -259,8 +320,19 @@ fun KaizenHome(
             state = pagerState,
             userScrollEnabled = activeSelection == null,
             modifier = Modifier.weight(1f).fillMaxWidth(),
-            key = { state.workspaces[it].id },
+            key = { state.workspaces.getOrNull(it)?.id ?: PRIVATE_PAGE_KEY },
         ) { page ->
+            if (page == privateIndex) {
+                PrivateWorkspacePage(
+                    tabs = privateTabs,
+                    selectedTabId = selectedTabId,
+                    onTabClick = { interactor.onTabClick(it.id) },
+                    onCloseTab = { interactor.onCloseTab(it.id) },
+                    onNewTab = interactor::onNewPrivateTab,
+                    onCloseAll = interactor::onClosePrivateTabs,
+                )
+                return@HorizontalPager
+            }
             val workspace = state.workspaces[page]
             WorkspacePage(
                 state = state,
@@ -303,6 +375,7 @@ fun KaizenHome(
                     onMoveWorkspace = { delta -> interactor.onMoveWorkspace(workspace.id, page + delta) },
                     onNewTabClick = interactor::onSearchClick,
                     onNewTabInContainer = interactor::onNewTabInContainer,
+                    onNewPrivateTab = newPrivateTab,
                     onManageContainers = interactor::onManageContainers,
                     onClearUnpinned = { interactor.onClearUnpinned(workspace.id) },
                 ),
@@ -317,9 +390,16 @@ fun KaizenHome(
                 workspaces = state.workspaces,
                 containers = containers,
                 activeIndex = pagerState.currentPage,
-                onDotClick = { index -> interactor.onWorkspaceSelected(state.workspaces[index].id) },
+                hasPrivate = privateIndex != null,
+                onDotClick = { index ->
+                    interactor.onWorkspaceSelected(state.workspaces[index].id)
+                    scope.launch { pagerState.animateScrollToPage(index) }
+                },
+                onPrivateClick = { privateIndex?.let { scope.launch { pagerState.animateScrollToPage(it) } } },
                 onMove = interactor::onMoveWorkspace,
                 onDownloadsClick = interactor::onDownloadsClick,
+                onExtensionsClick = interactor::onExtensionsClick,
+                onBookmarksClick = interactor::onBookmarksClick,
                 onHistoryClick = interactor::onHistoryClick,
             )
         } else {
@@ -343,7 +423,7 @@ fun KaizenHome(
 }
 
 @Composable
-private fun TopBar(interactor: KaizenHomeInteractor) {
+private fun TopBar(interactor: KaizenHomeInteractor, onSearchClick: () -> Unit) {
     Row(
         verticalAlignment = Alignment.CenterVertically,
         modifier = Modifier.fillMaxWidth().height(64.dp).padding(horizontal = 4.dp),
@@ -358,11 +438,10 @@ private fun TopBar(interactor: KaizenHomeInteractor) {
             verticalAlignment = Alignment.CenterVertically,
             modifier = Modifier
                 .weight(1f)
-                .height(44.dp)
-                .clip(CircleShape)
-                .background(MaterialTheme.colorScheme.surfaceContainerHigh)
-                .clickable(onClick = interactor::onSearchClick)
-                .padding(horizontal = 14.dp),
+                .height(46.dp)
+                .glass(glass, CircleShape)
+                .clickable(onClick = onSearchClick)
+                .padding(horizontal = 16.dp),
         ) {
             Icon(
                 painter = painterResource(iconsR.drawable.mozac_ic_search_24),
@@ -541,9 +620,13 @@ private fun WorkspaceBar(
     workspaces: List<Workspace>,
     containers: Map<String, ContainerRecord>,
     activeIndex: Int,
+    hasPrivate: Boolean,
     onDotClick: (Int) -> Unit,
+    onPrivateClick: () -> Unit,
     onMove: (workspaceId: String, index: Int) -> Unit,
     onDownloadsClick: () -> Unit,
+    onExtensionsClick: () -> Unit,
+    onBookmarksClick: () -> Unit,
     onHistoryClick: () -> Unit,
 ) {
     var drag by remember { mutableStateOf<WorkspaceDrag?>(null) }
@@ -553,6 +636,14 @@ private fun WorkspaceBar(
     val haptics = LocalHapticFeedback.current
     val cellWidth = with(LocalDensity.current) { WorkspaceCellSize.toPx() }
     val activeId = workspaces.getOrNull(activeIndex)?.id
+    val scrollState = rememberScrollState()
+
+    // With many workspaces the row scrolls; keep the shown one in view.
+    LaunchedEffect(activeId, lefts[activeId], scrollState.viewportSize) {
+        val left = activeId?.let { lefts[it] } ?: return@LaunchedEffect
+        val target = (left + cellWidth / 2 - scrollState.viewportSize / 2f).roundToInt()
+        scrollState.animateScrollTo(target.coerceIn(0, scrollState.maxValue))
+    }
 
     fun indexAt(x: Float): Int {
         val start = lefts.values.minOrNull() ?: 0f
@@ -580,13 +671,19 @@ private fun WorkspaceBar(
             contentDescription = stringResource(R.string.kaizen_downloads),
             onClick = onDownloadsClick,
         )
+        BarIconButton(
+            icon = iconsR.drawable.mozac_ic_extension_24,
+            contentDescription = stringResource(R.string.kaizen_extensions),
+            onClick = onExtensionsClick,
+        )
 
         Row(
             horizontalArrangement = Arrangement.Center,
             verticalAlignment = Alignment.CenterVertically,
             modifier = Modifier
                 .weight(1f)
-                .horizontalScroll(rememberScrollState())
+                .fadingEdges(scrollState)
+                .horizontalScroll(scrollState)
                 .pointerInput(cellWidth) {
                     detectDragGesturesAfterLongPress(
                         onDragStart = { offset ->
@@ -628,8 +725,31 @@ private fun WorkspaceBar(
                     modifier = Modifier.onPlaced { lefts[workspace.id] = it.positionInParent().x },
                 )
             }
+            if (hasPrivate) {
+                val isPrivateActive = activeIndex == workspaces.size
+                Box(
+                    contentAlignment = Alignment.Center,
+                    modifier = Modifier
+                        .size(WorkspaceCellSize)
+                        .clip(CircleShape)
+                        .background(if (isPrivateActive) MaterialTheme.colorScheme.surfaceContainerHighest else Color.Transparent)
+                        .clickable(onClickLabel = stringResource(R.string.kaizen_private_workspace), onClick = onPrivateClick),
+                ) {
+                    Icon(
+                        painter = painterResource(iconsR.drawable.mozac_ic_private_mode_24),
+                        contentDescription = stringResource(R.string.kaizen_private_workspace),
+                        tint = MaterialTheme.colorScheme.onSurface,
+                        modifier = Modifier.size(18.dp).alpha(if (isPrivateActive) 1f else INACTIVE_ICON_ALPHA),
+                    )
+                }
+            }
         }
 
+        BarIconButton(
+            icon = iconsR.drawable.mozac_ic_bookmark_tray_24,
+            contentDescription = stringResource(R.string.kaizen_bookmarks),
+            onClick = onBookmarksClick,
+        )
         BarIconButton(
             icon = iconsR.drawable.mozac_ic_history_24,
             contentDescription = stringResource(R.string.kaizen_history),
@@ -639,6 +759,7 @@ private fun WorkspaceBar(
 }
 
 private val WorkspaceCellSize = 36.dp
+private val FadingEdgeWidth = 20.dp
 private const val INACTIVE_WORKSPACE_ALPHA = 0.45f
 private const val INACTIVE_ICON_ALPHA = 0.55f
 
@@ -666,7 +787,11 @@ private fun WorkspaceDot(
             .size(WorkspaceCellSize)
             .clip(CircleShape)
             .background(background)
-            .clickable(onClickLabel = workspace.name, onClick = onClick),
+            .clickable(onClick = onClick)
+            .semantics {
+                contentDescription = workspace.name
+                selected = isActive
+            },
     ) {
         if (icon != null) {
             Text(
@@ -684,3 +809,26 @@ private fun WorkspaceDot(
         }
     }
 }
+
+/** Fades a horizontally scrolling row out on the sides it can still scroll to. */
+private fun Modifier.fadingEdges(scrollState: ScrollState): Modifier =
+    graphicsLayer { compositingStrategy = CompositingStrategy.Offscreen }
+        .drawWithContent {
+            drawContent()
+            val edge = FadingEdgeWidth.toPx()
+            if (scrollState.value > 0) {
+                drawRect(
+                    brush = Brush.horizontalGradient(listOf(Color.Transparent, Color.Black), endX = edge),
+                    size = Size(edge, size.height),
+                    blendMode = BlendMode.DstIn,
+                )
+            }
+            if (scrollState.value < scrollState.maxValue) {
+                drawRect(
+                    brush = Brush.horizontalGradient(listOf(Color.Black, Color.Transparent), startX = size.width - edge),
+                    topLeft = Offset(size.width - edge, 0f),
+                    size = Size(edge, size.height),
+                    blendMode = BlendMode.DstIn,
+                )
+            }
+        }

@@ -138,6 +138,11 @@ class WorkspaceRepository private constructor(context: Context) {
         )
     }
 
+    /** Puts tab [tabId], open or about to be opened, in workspace [workspaceId]. */
+    fun assignTab(tabId: String, workspaceId: String) = mutate { state ->
+        if (state.workspaces.none { it.id == workspaceId }) state else state.copy(assignments = state.assignments + (tabId to workspaceId))
+    }
+
     /** Hands the workspace, pin and split view of tab [oldTabId] over to [newTabId], which replaces it. */
     fun replaceTab(oldTabId: String, newTabId: String) = mutate { state ->
         val workspaceId = state.assignments[oldTabId] ?: state.pinOf(oldTabId)?.workspaceId
@@ -147,6 +152,7 @@ class WorkspaceRepository private constructor(context: Context) {
             splits = state.splits.map { split ->
                 split.copy(tabIds = split.tabIds.map { if (it == oldTabId) newTabId else it })
             },
+            tabTitles = state.tabTitles[oldTabId]?.let { state.tabTitles - oldTabId + (newTabId to it) } ?: state.tabTitles,
         )
     }
 
@@ -195,18 +201,7 @@ class WorkspaceRepository private constructor(context: Context) {
         val now = now()
         val alreadyPinned = state.pins.mapNotNull { it.tabId }.toSet()
         val created = newPins.filter { it.tabId !in alreadyPinned }.distinctBy { it.tabId }.map { source ->
-            PinnedItem(
-                id = newId(),
-                workspaceId = workspaceId,
-                parentId = parentId,
-                kind = PinKind.TAB,
-                title = source.title.ifBlank { source.url },
-                url = source.url,
-                containerId = source.containerId,
-                tabId = source.tabId,
-                createdAt = now,
-                updatedAt = now,
-            )
+            state.newPin(source, workspaceId, parentId, essential = false, now = now)
         }
         val placed = moving.map {
             it.copy(parentId = parentId, workspaceId = workspaceId, essential = false, updatedAt = now)
@@ -229,6 +224,7 @@ class WorkspaceRepository private constructor(context: Context) {
         state.copy(
             pins = rest.toMutableList().apply { addAll(index, placed) },
             assignments = state.assignments + placedTabs.associateWith { workspaceId },
+            tabTitles = state.tabTitles - placedTabs.toSet(),
         )
     }
 
@@ -253,23 +249,14 @@ class WorkspaceRepository private constructor(context: Context) {
         val alreadyPinned = state.pins.mapNotNull { it.tabId }.toSet()
         val fresh = sources.filter { it.tabId !in alreadyPinned }.distinctBy { it.tabId }
         val created = fresh.filter { takeRoom(it.containerId) }.map { source ->
-            PinnedItem(
-                id = newId(),
-                workspaceId = null,
-                parentId = null,
-                kind = PinKind.TAB,
-                title = source.title.ifBlank { source.url },
-                url = source.url,
-                containerId = source.containerId,
-                essential = true,
-                tabId = source.tabId,
-                createdAt = now,
-                updatedAt = now,
-            )
+            state.newPin(source, workspaceId = null, parentId = null, essential = true, now = now)
         }
         if (converted.isEmpty() && created.isEmpty()) return@mutate state
         val convertedIds = converted.map { it.id }.toSet()
-        state.copy(pins = state.pins.filterNot { it.id in convertedIds } + converted + created)
+        state.copy(
+            pins = state.pins.filterNot { it.id in convertedIds } + converted + created,
+            tabTitles = state.tabTitles - created.mapNotNull { it.tabId }.toSet(),
+        )
     }
 
     /** Removes essentials [pinIds]; their open tabs stay open as normal tabs of [workspaceId]. */
@@ -280,6 +267,7 @@ class WorkspaceRepository private constructor(context: Context) {
         state.copy(
             pins = state.pins.filterNot { it.id in removedIds },
             assignments = state.assignments + removed.mapNotNull { it.tabId }.associateWith { workspaceId },
+            tabTitles = state.titlesKeptFrom(removed),
         )
     }
 
@@ -312,7 +300,41 @@ class WorkspaceRepository private constructor(context: Context) {
 
     /** Removes pinned tabs. Their open tabs stay open as normal tabs. */
     fun unpin(pinIds: Set<String>) = mutate { state ->
-        state.copy(pins = state.pins.filterNot { it.id in pinIds && !it.isFolder })
+        val removed = state.pins.filter { it.id in pinIds && !it.isFolder }
+        state.copy(pins = state.pins - removed.toSet(), tabTitles = state.titlesKeptFrom(removed))
+    }
+
+    /** Gives pinned tab [pinId] the title [name], or shows its page title again when [name] is blank. */
+    fun renamePin(pinId: String, name: String) = mutate { state ->
+        state.copy(
+            pins = state.pins.map {
+                if (it.id != pinId || it.isFolder) {
+                    it
+                } else if (name.isBlank()) {
+                    it.copy(staticLabel = false, updatedAt = now())
+                } else {
+                    it.copy(title = name.trim(), staticLabel = true, updatedAt = now())
+                }
+            },
+        )
+    }
+
+    /** Makes [url] the address pinned tab [pinId] resets to, like Zen's "Replace pinned URL with current". */
+    fun replacePinUrl(pinId: String, url: String, title: String) = mutate { state ->
+        state.copy(
+            pins = state.pins.map { pin ->
+                if (pin.id != pinId || pin.isFolder) {
+                    pin
+                } else {
+                    pin.copy(url = url, title = if (pin.staticLabel) pin.title else title.ifBlank { url }, updatedAt = now())
+                }
+            },
+        )
+    }
+
+    /** Gives unpinned tab [tabId] the title [name], or shows its page title again when [name] is blank. */
+    fun renameTab(tabId: String, name: String) = mutate { state ->
+        state.copy(tabTitles = if (name.isBlank()) state.tabTitles - tabId else state.tabTitles + (tabId to name.trim()))
     }
 
     /** Links a reopened browser tab to its pin and keeps it in the pin's workspace. */
@@ -404,7 +426,8 @@ class WorkspaceRepository private constructor(context: Context) {
             state.pins
         }
         val splits = if (restoreComplete) state.splits.filter { split -> split.tabIds.all { it in tabIds } } else state.splits
-        state.copy(pins = pins, assignments = kept + added, splits = splits)
+        val tabTitles = if (restoreComplete) state.tabTitles.filterKeys { it in tabIds } else state.tabTitles
+        state.copy(pins = pins, assignments = kept + added, splits = splits, tabTitles = tabTitles)
     }
 
     private fun WorkspaceState.withPins(sources: List<PinSource>, parentId: String?): WorkspaceState {
@@ -412,25 +435,43 @@ class WorkspaceRepository private constructor(context: Context) {
         val alreadyPinned = pins.mapNotNull { it.tabId }.toSet()
         val parent = parentId?.let { id -> pins.firstOrNull { it.id == id && it.isFolder } }
         val added = sources.filter { it.tabId !in alreadyPinned }.distinctBy { it.tabId }.map { source ->
-            val workspaceId = parent?.workspaceId ?: workspaceOf(source.tabId)
-            PinnedItem(
-                id = newId(),
-                workspaceId = workspaceId,
-                parentId = parent?.id,
-                kind = PinKind.TAB,
-                title = source.title.ifBlank { source.url },
-                url = source.url,
-                containerId = source.containerId,
-                tabId = source.tabId,
-                createdAt = now,
-                updatedAt = now,
-            )
+            newPin(source, parent?.workspaceId ?: workspaceOf(source.tabId), parent?.id, essential = false, now = now)
         }
         return copy(
             pins = pins + added,
             assignments = assignments + added.associate { it.tabId!! to (it.workspaceId ?: activeWorkspaceId) },
+            tabTitles = tabTitles - added.mapNotNull { it.tabId }.toSet(),
         )
     }
+
+    /** A pinned tab for [source]. A title the user gave the tab becomes the pin's static label. */
+    private fun WorkspaceState.newPin(
+        source: PinSource,
+        workspaceId: String?,
+        parentId: String?,
+        essential: Boolean,
+        now: Long,
+    ): PinnedItem {
+        val customTitle = tabTitles[source.tabId]
+        return PinnedItem(
+            id = newId(),
+            workspaceId = workspaceId,
+            parentId = parentId,
+            kind = PinKind.TAB,
+            title = customTitle ?: source.title.ifBlank { source.url },
+            url = source.url,
+            containerId = source.containerId,
+            essential = essential,
+            staticLabel = customTitle != null,
+            tabId = source.tabId,
+            createdAt = now,
+            updatedAt = now,
+        )
+    }
+
+    /** Titles the user gave to [removed] pins, kept for their open tabs. */
+    private fun WorkspaceState.titlesKeptFrom(removed: List<PinnedItem>): Map<String, String> =
+        tabTitles + removed.filter { it.staticLabel && it.tabId != null }.associate { it.tabId!! to it.title }
 
     private fun WorkspaceState.moved(itemIds: Set<String>, folderId: String?): WorkspaceState {
         val folder = folderId?.let { id -> pins.firstOrNull { it.id == id && it.isFolder } }

@@ -408,6 +408,10 @@ class SettingsFragment : PreferenceFragmentCompat(), SystemInsetsPaddedFragment 
                     ActionOnlyNavDirections(R.id.kaizen_containers_graph)
                 }
 
+                resources.getString(R.string.pref_key_kaizen_external_links) -> {
+                    ActionOnlyNavDirections(R.id.kaizen_external_links_graph)
+                }
+
                 resources.getString(R.string.pref_key_customize) -> {
                     SettingsFragmentDirections.actionSettingsFragmentToCustomizationFragment()
                 }

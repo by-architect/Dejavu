@@ -68,3 +68,17 @@ fun NoContainerIcon(
         modifier = modifier.size(size),
     )
 }
+
+/** Stands for a new temporary container. */
+@Composable
+fun TemporaryContainerIcon(
+    modifier: Modifier = Modifier,
+    size: Dp = 20.dp,
+) {
+    Icon(
+        painter = painterResource(R.drawable.kaizen_ic_temporary_container_24),
+        contentDescription = stringResource(R.string.kaizen_temporary_container),
+        tint = MaterialTheme.colorScheme.onSurfaceVariant,
+        modifier = modifier.size(size),
+    )
+}

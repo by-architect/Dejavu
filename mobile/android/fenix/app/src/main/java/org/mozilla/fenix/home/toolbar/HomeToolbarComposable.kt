@@ -50,6 +50,7 @@ import org.mozilla.fenix.components.appstate.AppAction.SearchAction.SearchEnded
 import org.mozilla.fenix.components.appstate.AppAction.SearchAction.SearchStarted
 import org.mozilla.fenix.components.appstate.VoiceSearchAction.VoiceInputRequested
 import org.mozilla.fenix.components.metrics.MetricsUtils
+import org.mozilla.fenix.kaizen.browser.KaizenToolbar
 import org.mozilla.fenix.theme.FirefoxTheme
 import org.mozilla.fenix.utils.Settings
 import org.mozilla.fenix.wallpapers.WallpaperTheme
@@ -147,7 +148,8 @@ internal class HomeToolbarComposable(
 
     @Composable
     private fun ToolbarContent(wallpaperTextColor: Color?) {
-        val shouldUseBottomToolbar = remember { settings.shouldUseBottomToolbar }
+        // Kaizen shows this toolbar only while searching, with the address bar right above the keyboard.
+        val shouldUseBottomToolbar = remember { settings.shouldUseBottomToolbar || KaizenToolbar.enabled }
         val shouldShowTabStrip = remember {
             if (shouldUseBottomToolbar) {
                 settings.shouldShowTabStripAtBottom
@@ -232,7 +234,7 @@ internal class HomeToolbarComposable(
     }
 
     private fun buildToolbarGravityConfig(): ToolbarGravity =
-        when (settings.shouldUseBottomToolbar) {
+        when (settings.shouldUseBottomToolbar || KaizenToolbar.enabled) {
             true -> Bottom
             false -> Top
         }

@@ -325,16 +325,19 @@ class TabsUseCases(
          * @param storage the [SessionStorage] to restore state from.
          * @param tabTimeoutInMs the amount of time in milliseconds after which inactive tabs will be discarded and not
          *   restored. Defaults to Long.MAX_VALUE, meaning all tabs will be restored by default.
+         * @param keepTab Tells which tabs to restore even when they have been inactive for longer than
+         *   [tabTimeoutInMs]. Called on a background thread.
          */
         suspend operator fun invoke(
             storage: SessionStorage,
             tabTimeoutInMs: Long = Long.MAX_VALUE,
+            keepTab: (RecoverableTab) -> Boolean = { false },
         ) =
             withContext(ioDispatcher) {
                 val now = currentTimeMillis()
                 val state = storage.restore {
                     val lastActiveTime = maxOf(it.state.lastAccess, it.state.createdAt)
-                    now - lastActiveTime <= tabTimeoutInMs
+                    now - lastActiveTime <= tabTimeoutInMs || keepTab(it)
                 }
                 if (state != null) {
                     withContext(mainDispatcher) {

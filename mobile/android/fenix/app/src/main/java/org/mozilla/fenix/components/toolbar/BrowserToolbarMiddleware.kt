@@ -303,12 +303,12 @@ class BrowserToolbarMiddleware(
 
                 appStore.dispatch(SearchEnded)
 
-                updateStartBrowserActions(store)
                 updateStartPageActions(store)
                 updateCurrentPageOrigin(store)
                 updateEndPageActions(store)
 
                 scope.launch {
+                    updateStartBrowserActions(store)
                     updateEndBrowserActions(store)
                     updateNavigationActions(store)
                 }
@@ -330,6 +330,7 @@ class BrowserToolbarMiddleware(
                 observePermissionHighlightsUpdates(store)
                 observeIPProtectionUpdates(store)
                 observeTabReloadCoverUpdates(store)
+                observeContainerUpdates(store)
             }
 
             is StartPageActions.SiteInfoClicked -> {
@@ -747,7 +748,7 @@ class BrowserToolbarMiddleware(
         }
     }
 
-    private fun updateStartBrowserActions(store: Store<BrowserToolbarState, BrowserToolbarAction>) =
+    private suspend fun updateStartBrowserActions(store: Store<BrowserToolbarState, BrowserToolbarAction>) =
         store.dispatch(BrowserActionsStartUpdated(buildStartBrowserActions()))
 
     private fun updateStartPageActions(store: Store<BrowserToolbarState, BrowserToolbarAction>) =
@@ -755,10 +756,13 @@ class BrowserToolbarMiddleware(
 
     private suspend fun updateEndBrowserActions(store: Store<BrowserToolbarState, BrowserToolbarAction>) {
         store.dispatch(BrowserActionsEndUpdated(buildEndBrowserActions()))
+        // Kaizen shows the toolbar shortcut at the start, so it changes with the same events.
+        if (KaizenToolbar.enabled) updateStartBrowserActions(store)
     }
 
     private fun buildStartPageActions(): List<Action> {
-        return listOf(
+        return listOfNotNull(KaizenToolbar.containerAction(uiContext, browserStore.state)) +
+            listOf(
                 ToolbarActionConfig(ToolbarAction.SiteInfo) {
                     !browserScreenStore.state.readerModeStatus.isActive
                 }
@@ -778,19 +782,29 @@ class BrowserToolbarMiddleware(
      * Devices wider than 600dp:
      * - The navigation buttons (forward, back, and refresh) are always shown on the left side of the address bar.
      */
-    private fun buildStartBrowserActions(): List<Action> {
+    private suspend fun buildStartBrowserActions(): List<Action> {
         val isWideScreen = isWideScreen()
+        val wideScreenActions = listOf(ToolbarAction.Back, ToolbarAction.Forward, ToolbarAction.RefreshOrStop)
+        val kaizenShortcut =
+            if (KaizenToolbar.enabled) {
+                ShortcutType.fromValue(settings.activeSimpleToolbarShortcutKey)?.toToolbarAction()
+            } else {
+                null
+            }
 
-        return listOf(
+        return listOfNotNull(
                 ToolbarActionConfig(ToolbarAction.Back) { isWideScreen },
                 ToolbarActionConfig(ToolbarAction.Forward) { isWideScreen },
                 ToolbarActionConfig(ToolbarAction.RefreshOrStop) { isWideScreen },
+                kaizenShortcut?.let {
+                    ToolbarActionConfig(it, isShortcut = true) { !isWideScreen || it !in wideScreenActions }
+                },
             )
             .filter { config ->
                 config.isVisible()
             }
             .map { config ->
-                buildAction(config.action, Source.AddressBar.BrowserStart)
+                buildAction(config.action, Source.AddressBar.BrowserStart, config.isShortcut)
             }
     }
 
@@ -828,6 +842,10 @@ class BrowserToolbarMiddleware(
     }
 
     private suspend fun buildEndBrowserActions(): List<Action> {
+        if (KaizenToolbar.enabled) {
+            return listOf(buildAction(ToolbarAction.Homepage, Source.AddressBar.BrowserEnd))
+        }
+
         val isWideWindow = isWideScreen()
         val isTallWindow = isTallScreen()
         val shouldUseExpandedToolbar = settings.shouldUseExpandedToolbar
@@ -1001,6 +1019,13 @@ class BrowserToolbarMiddleware(
         }
     }
 
+    private fun observeContainerUpdates(store: Store<BrowserToolbarState, BrowserToolbarAction>) {
+        browserStore.observeWhileActive {
+            distinctUntilChangedBy { it.selectedTab?.contextId to it.containers[it.selectedTab?.contextId] }
+                .collect { updateStartPageActions(store) }
+        }
+    }
+
     private fun observeIPProtectionUpdates(store: Store<BrowserToolbarState, BrowserToolbarAction>) {
         ipProtectionStore.observeWhileActive {
             // Includes proxyActivation so start page actions rebuild once the pending pill
@@ -1040,6 +1065,8 @@ class BrowserToolbarMiddleware(
                 ""
             } else if (searchTerms.isNotBlank()) {
                 searchTerms
+            } else if (KaizenToolbar.enabled) {
+                KaizenToolbar.displayUrl(originalUrl.toString())
             } else {
                 URLStringUtils.toDisplayUrl(originalUrl)
             }

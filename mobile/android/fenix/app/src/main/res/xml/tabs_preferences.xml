@@ -4,11 +4,13 @@
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 <androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!-- Kaizen: tabs live on the home screen, so the tabs tray options are hidden. -->
     <androidx.preference.PreferenceCategory
         android:layout="@layout/preference_cat_style"
         android:title="@string/preferences_tab_layout"
         app:allowDividerAbove="false"
-        app:iconSpaceReserved="false">
+        app:iconSpaceReserved="false"
+        app:isPreferenceVisible="false">
         <org.mozilla.fenix.settings.RadioButtonPreference
             android:defaultValue="false"
             android:key="@string/pref_key_tab_view_list_do_not_use"
@@ -22,8 +24,8 @@
 
     <androidx.preference.PreferenceCategory
         android:layout="@layout/preference_cat_style"
-        android:title="@string/preferences_close_tabs"
-        app:allowDividerAbove="true"
+        android:title="@string/kaizen_preferences_close_unpinned_tabs"
+        app:allowDividerAbove="false"
         app:iconSpaceReserved="false">
         <org.mozilla.fenix.settings.RadioButtonPreference
             android:defaultValue="true"
@@ -50,7 +52,8 @@
         android:layout="@layout/preference_cat_style"
         android:title="@string/preferences_tab_organization"
         app:allowDividerAbove="true"
-        app:iconSpaceReserved="false">
+        app:iconSpaceReserved="false"
+        app:isPreferenceVisible="false">
         <SwitchPreferenceCompat
             android:defaultValue="true"
             android:key="@string/pref_key_inactive_tabs"
@@ -67,7 +70,8 @@
         android:layout="@layout/preference_cat_style"
         android:title="@string/preferences_privacy_report"
         app:allowDividerAbove="true"
-        app:iconSpaceReserved="false">
+        app:iconSpaceReserved="false"
+        app:isPreferenceVisible="false">
         <androidx.preference.SwitchPreferenceCompat
             android:defaultValue="true"
             android:key="@string/pref_key_privacy_report_tab_manager"

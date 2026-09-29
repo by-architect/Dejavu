@@ -24,6 +24,7 @@ import mozilla.components.feature.containers.ContainerMiddleware
 import org.json.JSONArray
 import org.json.JSONObject
 import java.util.UUID
+import java.util.concurrent.ConcurrentHashMap
 
 /**
  * Container colors as Firefox desktop (and so Zen) names them today. android-components still uses the older names
@@ -70,6 +71,7 @@ data class ContainerRecord(
     val icon: ContainerState.Icon,
     val createdAt: Long,
     val updatedAt: Long,
+    val temporary: Boolean = false,
 ) {
     val state: ContainerState
         get() = ContainerState(contextId, name, color.acColor, icon)
@@ -83,6 +85,7 @@ data class ContainerRecord(
 class KaizenContainerStorage private constructor(private val context: Context) : ContainerMiddleware.Storage {
     private val mutex = Mutex()
     private val _records = MutableStateFlow<List<ContainerRecord>?>(null)
+    private val pendingTemporary: MutableSet<String> = ConcurrentHashMap.newKeySet()
 
     /** All containers, or `null` until they have been read from disk. */
     val records: StateFlow<List<ContainerRecord>?> = _records.asStateFlow()
@@ -103,9 +106,30 @@ class KaizenContainerStorage private constructor(private val context: Context) :
             list
         } else {
             val now = System.currentTimeMillis()
-            list + ContainerRecord(contextId, name, ContainerColor.fromAcColor(color), icon, now, now)
+            list + ContainerRecord(
+                contextId,
+                name,
+                ContainerColor.fromAcColor(color),
+                icon,
+                now,
+                now,
+                temporary = contextId in pendingTemporary,
+            )
         }
     }
+
+    /** Marks [contextId] as a temporary container before it is added. */
+    fun markTemporary(contextId: String) {
+        pendingTemporary.add(contextId)
+    }
+
+    fun forgetTemporary(contextId: String) {
+        pendingTemporary.remove(contextId)
+    }
+
+    /** Whether [contextId] is a temporary container. Containers not read from disk yet count as permanent. */
+    fun isTemporary(contextId: String): Boolean =
+        contextId in pendingTemporary || _records.value?.any { it.contextId == contextId && it.temporary } == true
 
     override suspend fun removeContainer(container: ContainerState) = mutate { list ->
         list.filterNot { it.contextId == container.contextId }
@@ -164,6 +188,7 @@ class KaizenContainerStorage private constructor(private val context: Context) :
                 icon = icon,
                 createdAt = item.optLong("createdAt"),
                 updatedAt = item.optLong("updatedAt"),
+                temporary = item.optBoolean("temporary"),
             )
         }
     }
@@ -178,7 +203,8 @@ class KaizenContainerStorage private constructor(private val context: Context) :
                     .put("color", it.color.key)
                     .put("icon", it.icon.icon)
                     .put("createdAt", it.createdAt)
-                    .put("updatedAt", it.updatedAt),
+                    .put("updatedAt", it.updatedAt)
+                    .put("temporary", it.temporary),
             )
         }
         prefs().edit { putString(KEY_CONTAINERS, array.toString()) }

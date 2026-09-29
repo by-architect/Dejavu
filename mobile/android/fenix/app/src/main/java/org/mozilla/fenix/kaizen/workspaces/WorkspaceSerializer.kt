@@ -51,7 +51,11 @@ internal object WorkspaceSerializer {
             tabIds?.takeIf { it.size == SPLIT_SIZE }?.let { SplitView(item.getString("id"), it) }
         }
 
-        return WorkspaceState(workspaces, pins, activeId, assignments, splits)
+        val tabTitles = root?.optJSONObject("tabTitles")?.let { obj ->
+            obj.keys().asSequence().associateWith { obj.getString(it) }
+        }.orEmpty()
+
+        return WorkspaceState(workspaces, pins, activeId, assignments, splits, tabTitles)
     }
 
     fun write(state: WorkspaceState): String = JSONObject().apply {
@@ -90,6 +94,7 @@ internal object WorkspaceSerializer {
                             .put("collapsed", pin.collapsed)
                             .putOpt("icon", pin.icon)
                             .put("essential", pin.essential)
+                            .put("staticLabel", pin.staticLabel)
                             .putOpt("tabId", pin.tabId)
                             .put("createdAt", pin.createdAt)
                             .put("updatedAt", pin.updatedAt),
@@ -98,6 +103,7 @@ internal object WorkspaceSerializer {
             },
         )
         put("assignments", JSONObject(state.assignments))
+        put("tabTitles", JSONObject(state.tabTitles))
         put(
             "splits",
             JSONArray().apply {
@@ -119,6 +125,7 @@ internal object WorkspaceSerializer {
         collapsed = optBoolean("collapsed"),
         icon = optStringOrNull("icon"),
         essential = optBoolean("essential"),
+        staticLabel = optBoolean("staticLabel"),
         tabId = optStringOrNull("tabId"),
         createdAt = optLong("createdAt", now),
         updatedAt = optLong("updatedAt", now),
