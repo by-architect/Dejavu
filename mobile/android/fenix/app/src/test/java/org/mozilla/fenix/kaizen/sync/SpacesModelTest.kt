@@ -102,6 +102,35 @@ class SpacesModelTest {
     }
 
     @Test
+    fun `page titles of open pinned tabs are not uploaded while the pinned address stays`() {
+        val (state, server) = applyDesktop()
+        val retitled = state.copy(
+            pins = state.pins.map { if (it.id == TAB_PINNED) it.copy(title = "(4) Inbox") else it },
+        )
+
+        assertEquals(emptyList<String>(), changes(retitled, server).map { it.id })
+
+        val repinned = state.copy(
+            pins = state.pins.map {
+                if (it.id == TAB_PINNED) it.copy(url = "https://example.com/other", title = "Other") else it
+            },
+        )
+        val data = changes(repinned, server).single().data!!
+        assertEquals("https://example.com/other", data.string("url"))
+        assertEquals("Other", data.string("title"))
+    }
+
+    @Test
+    fun `the color of temporary containers is never synced`() {
+        val white = ContainerRecord("white-one", "Odd", ContainerColor.WHITE, ContainerState.Icon.CIRCLE, 1L, 1L)
+
+        val records = SpacesProjector(LocalSpaces(ZenRecords.freshKaizen(), listOf(white)), emptyMap()).project().records
+
+        assertEquals("gray", records.getValue("white-one").data!!.string("color"))
+        assertEquals(ContainerColor.GRAY, containerColorOf("white"))
+    }
+
+    @Test
     fun `a new theme keeps the dots whose color did not change`() {
         val (state, server) = applyDesktop()
         val colors = listOf(0xFF7C85FF.toInt(), 0xFF00FF00.toInt())

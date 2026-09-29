@@ -73,8 +73,8 @@ internal class SpacesProjector(private val local: LocalSpaces, private val serve
             if (previous == null || containerIconOf(previous.opt("icon")) != container.icon) {
                 data.put("icon", container.icon.icon)
             }
-            if (previous == null || containerColorOf(previous.opt("color")) != container.color) {
-                data.put("color", container.color.key)
+            if (previous == null || containerColorOf(previous.opt("color")) != syncedColor(container.color)) {
+                data.put("color", syncedColor(container.color).key)
             }
             records[id] = SpacesRecord.of(id, RecordKind.CONTAINER, data)
         }
@@ -110,12 +110,16 @@ internal class SpacesProjector(private val local: LocalSpaces, private val serve
         }
     }
 
-    /** Zen keeps the page title of a renamed tab next to the name, so the page title of [previous] stays. */
+    /**
+     * Zen syncs the title a tab had when it was pinned, so the server's title stays while the pinned address does,
+     * even though Kaizen shows the title of the page open in the pin. A renamed tab keeps its page title too.
+     */
     private fun putLabel(data: JSONObject, pin: PinnedItem, previous: JSONObject?) {
+        val pinnedTitle = previous?.string("title")?.takeIf { previous.string("url") == pin.url }
         if (pin.staticLabel) {
             data.put("staticLabel", pin.title).put("title", previous?.string("title") ?: pin.title)
         } else {
-            data.put("staticLabel", JSONObject.NULL).put("title", pin.title)
+            data.put("staticLabel", JSONObject.NULL).put("title", pinnedTitle ?: pin.title)
         }
     }
 

@@ -80,7 +80,11 @@ internal class SpacesRecord private constructor(
 internal fun iconOf(value: Any?): String? = (value as? String)?.takeIf { it.isNotEmpty() }
 
 /** The container color Kaizen shows for a synced color name. */
-internal fun containerColorOf(value: Any?): ContainerColor = ContainerColor.fromKey(value as? String) ?: ContainerColor.GRAY
+internal fun containerColorOf(value: Any?): ContainerColor = syncedColor(ContainerColor.fromKey(value as? String))
+
+/** [color] as it is synced: the color of temporary containers is Kaizen's own, so it goes out as gray. */
+internal fun syncedColor(color: ContainerColor?): ContainerColor =
+    color?.takeIf { it != ContainerColor.WHITE } ?: ContainerColor.GRAY
 
 /** The container icon Kaizen shows for a synced icon name. */
 internal fun containerIconOf(value: Any?): ContainerState.Icon =
