@@ -30,6 +30,13 @@
 
     <androidx.preference.Preference
         app:iconSpaceReserved="false"
+        app:widgetLayout="@layout/kaizen_preference_badge"
+        android:key="@string/pref_key_kaizen_sync"
+        android:title="@string/kaizen_settings_sync"
+        android:summary="@string/kaizen_settings_sync_summary" />
+
+    <androidx.preference.Preference
+        app:iconSpaceReserved="false"
         android:key="@string/pref_key_sync_debug"
         android:title="@string/preferences_sync_debug"
         app:isPreferenceVisible="false" />

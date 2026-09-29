@@ -523,6 +523,16 @@ class WorkspaceRepository private constructor(context: Context) {
         )
     }
 
+    /**
+     * Applies [transform] as one change and returns the second value of its result. [transform] may run more than
+     * once when other changes happen at the same time, so it must not have side effects.
+     */
+    fun <T> update(transform: (WorkspaceState) -> Pair<WorkspaceState, T>): T {
+        var result: Pair<WorkspaceState, T>? = null
+        mutate { state -> transform(state).also { result = it }.first }
+        return checkNotNull(result).second
+    }
+
     private fun mutate(transform: (WorkspaceState) -> WorkspaceState) {
         var changed: WorkspaceState? = null
         _state.update { old -> transform(old).also { if (it != old) changed = it } }

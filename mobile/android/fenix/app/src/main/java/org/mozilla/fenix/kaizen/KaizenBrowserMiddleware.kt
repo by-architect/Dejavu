@@ -25,18 +25,21 @@ import org.mozilla.fenix.kaizen.containers.KaizenContainerStorage
 import org.mozilla.fenix.kaizen.containers.TemporaryContainerMiddleware
 import org.mozilla.fenix.kaizen.containers.TemporaryContainers
 import org.mozilla.fenix.kaizen.settings.KaizenSettings
+import org.mozilla.fenix.kaizen.sync.KaizenSync
 import org.mozilla.fenix.kaizen.workspaces.WorkspaceRepository
 import java.util.concurrent.ConcurrentHashMap
 
 /**
  * Middleware Kaizen adds to Fenix's browser store: android-components' container support backed by Kaizen's storage,
- * and [WorkspaceContainerMiddleware]. Also loads Kaizen's data off the main thread.
+ * and [WorkspaceContainerMiddleware]. Also loads Kaizen's data and starts syncing workspaces with Zen, off the main
+ * thread.
  */
 fun kaizenBrowserMiddleware(context: Context): List<Middleware<BrowserState, BrowserAction>> {
     CoroutineScope(Dispatchers.IO).launch {
         WorkspaceRepository.get(context)
         KaizenSettings.get(context)
         KaizenContainerStorage.get(context).load()
+        KaizenSync.install(context)
     }
     return listOf(
         ContainerMiddleware(context, containerStorage = KaizenContainerStorage.get(context)),

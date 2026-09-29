@@ -249,4 +249,30 @@
     <string name="kaizen_more_menu_reset">Reset to default</string>
     <string name="kaizen_more_menu_all_added">Every button is already in the menu.</string>
     <string name="kaizen_more_menu_preview">Preview</string>
+
+    <!-- Settings: syncing workspaces with Zen -->
+    <string name="pref_key_kaizen_sync" translatable="false">pref_key_kaizen_sync</string>
+    <string name="kaizen_settings_sync">Sync with Zen</string>
+    <string name="kaizen_settings_sync_summary">Workspaces, containers, pinned tabs and essentials</string>
+    <string name="kaizen_sync_hint">Keeps your workspaces with their colors and icons, containers, pinned tabs, essentials and folders the same as in Zen Browser on your computer and in Kaizen on your other devices. It uses the Mozilla account you sync Firefox data with.</string>
+    <string name="kaizen_sync_zen_hint">In Zen, open Settings, then Sync, and make sure Spaces is checked. Tabs that are not pinned are not synced.</string>
+    <string name="kaizen_sync_enabled">Sync workspaces</string>
+    <string name="kaizen_sync_now">Sync now</string>
+    <string name="kaizen_sync_syncing">Syncing…</string>
+    <string name="kaizen_sync_last_synced">Last synced %1$s</string>
+    <string name="kaizen_sync_never_synced">Not synced yet</string>
+    <string name="kaizen_sync_off">Sync is off on this device</string>
+    <string name="kaizen_sync_signed_out">Sign in to your Mozilla account to sync your workspaces with Zen.</string>
+    <string name="kaizen_sync_sign_in">Sign in</string>
+    <string name="kaizen_sync_problem_not_set_up">Waiting for Firefox Sync to finish setting up your account.</string>
+    <string name="kaizen_sync_problem_not_turned_on">Spaces sync is off for your Mozilla account. Turn it on here, or check Spaces in Zen’s sync settings. Turning it on here also turns it on in Zen.</string>
+    <string name="kaizen_sync_turn_on">Turn on spaces sync</string>
+    <string name="kaizen_sync_problem_needs_update">Another device uses a newer version of spaces sync. Update Kaizen to keep syncing.</string>
+    <string name="kaizen_sync_problem_sign_in">Sign in to your Mozilla account again to keep syncing.</string>
+    <string name="kaizen_sync_problem_offline">Could not reach the sync servers. Kaizen will try again.</string>
+    <string name="kaizen_sync_problem_server">The sync servers had a problem. Kaizen will try again.</string>
+    <string name="kaizen_container_personal">Personal</string>
+    <string name="kaizen_container_work">Work</string>
+    <string name="kaizen_container_banking">Banking</string>
+    <string name="kaizen_container_shopping">Shopping</string>
 </resources>

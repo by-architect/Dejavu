@@ -66,6 +66,7 @@ import org.mozilla.fenix.kaizen.containers.NoContainerIcon
 import org.mozilla.fenix.kaizen.containers.TemporaryContainerIcon
 import org.mozilla.fenix.kaizen.containers.color
 import org.mozilla.fenix.kaizen.containers.drawable
+import org.mozilla.fenix.kaizen.sync.workspaceIconText
 import org.mozilla.fenix.kaizen.workspaces.WorkspaceRepository
 import org.mozilla.fenix.theme.FirefoxTheme
 import mozilla.components.ui.icons.R as iconsR
@@ -447,7 +448,7 @@ class KaizenExternalLinksFragment : KaizenComposeFragment(R.string.kaizen_settin
                 )
                 workspaces.workspaces.forEachIndexed { index, workspace ->
                     ChoiceRow(
-                        label = listOfNotNull(workspace.icon, workspace.name).joinToString("  "),
+                        label = listOfNotNull(workspaceIconText(workspace.icon), workspace.name).joinToString("  "),
                         selected = workspace.id == chosenWorkspace?.id,
                         modifier = Modifier.settingsCard(index + 1, workspaceRows),
                         onClick = { settings.setExternalLinkWorkspace(workspace.id) },

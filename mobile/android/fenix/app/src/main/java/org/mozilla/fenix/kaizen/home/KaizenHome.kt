@@ -85,6 +85,7 @@ import org.mozilla.fenix.kaizen.actions.label
 import org.mozilla.fenix.kaizen.containers.ContainerPick
 import org.mozilla.fenix.kaizen.containers.ContainerRecord
 import org.mozilla.fenix.kaizen.containers.color
+import org.mozilla.fenix.kaizen.sync.workspaceIconText
 import org.mozilla.fenix.kaizen.ui.glass
 import org.mozilla.fenix.kaizen.workspaces.PinnedItem
 import org.mozilla.fenix.kaizen.workspaces.Workspace
@@ -780,7 +781,7 @@ private fun WorkspaceDot(
     modifier: Modifier = Modifier,
 ) {
     val base = container?.color?.color ?: MaterialTheme.colorScheme.onSurface
-    val icon = workspace.icon
+    val icon = workspaceIconText(workspace.icon)
     val background = when {
         isDragged -> MaterialTheme.colorScheme.primaryContainer
         isActive && icon != null -> MaterialTheme.colorScheme.surfaceContainerHighest

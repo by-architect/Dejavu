@@ -78,6 +78,7 @@ import org.mozilla.fenix.kaizen.containers.TemporaryContainerIcon
 import org.mozilla.fenix.kaizen.containers.ContainerRecord
 import org.mozilla.fenix.kaizen.containers.NoContainerIcon
 import org.mozilla.fenix.kaizen.containers.color
+import org.mozilla.fenix.kaizen.sync.workspaceIconText
 import org.mozilla.fenix.kaizen.workspaces.PinnedItem
 import org.mozilla.fenix.kaizen.workspaces.Workspace
 import org.mozilla.fenix.kaizen.workspaces.WorkspaceState
@@ -676,7 +677,7 @@ private fun WorkspaceHeader(
                 ContainerIcon(container, size = 18.dp)
                 Spacer(Modifier.width(8.dp))
             }
-            workspace.icon?.let { icon ->
+            workspaceIconText(workspace.icon)?.let { icon ->
                 Text(text = icon, style = MaterialTheme.typography.titleSmall)
                 Spacer(Modifier.width(6.dp))
             }

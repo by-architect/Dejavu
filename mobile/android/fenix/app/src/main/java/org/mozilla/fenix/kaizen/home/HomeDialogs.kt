@@ -55,6 +55,7 @@ import org.mozilla.fenix.kaizen.containers.ContainerPick
 import org.mozilla.fenix.kaizen.containers.TemporaryContainerIcon
 import org.mozilla.fenix.kaizen.containers.ContainerRecord
 import org.mozilla.fenix.kaizen.containers.NoContainerIcon
+import org.mozilla.fenix.kaizen.sync.workspaceIconText
 import org.mozilla.fenix.kaizen.workspaces.MAX_FOLDER_DEPTH
 import org.mozilla.fenix.kaizen.workspaces.Workspace
 import org.mozilla.fenix.kaizen.workspaces.WorkspaceState
@@ -263,9 +264,10 @@ private fun WorkspaceDialog(
         text = {
             Column(modifier = Modifier.verticalScroll(rememberScrollState())) {
                 Row(verticalAlignment = Alignment.CenterVertically) {
+                    val shownIcon = workspaceIconText(icon).orEmpty()
                     OutlinedTextField(
-                        value = icon.orEmpty(),
-                        onValueChange = { icon = lastGrapheme(it) },
+                        value = shownIcon,
+                        onValueChange = { if (it != shownIcon) icon = lastGrapheme(it) },
                         singleLine = true,
                         label = { Text(stringResource(R.string.kaizen_workspace_icon)) },
                         textStyle = MaterialTheme.typography.titleLarge.copy(textAlign = TextAlign.Center),
