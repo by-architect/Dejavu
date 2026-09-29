@@ -83,7 +83,7 @@ fun ContainerEditorDialog(
                 )
                 Spacer(Modifier.height(16.dp))
                 Text(stringResource(R.string.kaizen_container_color), style = MaterialTheme.typography.labelLarge)
-                ContainerColor.entries.chunked(ITEMS_PER_ROW).forEach { row ->
+                ContainerColor.pickable.chunked(ITEMS_PER_ROW).forEach { row ->
                     Row(horizontalArrangement = Arrangement.SpaceBetween, modifier = Modifier.fillMaxWidth()) {
                         row.forEach { option ->
                             ChoiceCircle(selected = option == color, onClick = { color = option }) {

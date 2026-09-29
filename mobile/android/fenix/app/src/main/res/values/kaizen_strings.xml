@@ -81,6 +81,8 @@
     <string name="kaizen_external_links_last_workspace">The workspace shown last</string>
     <string name="kaizen_external_links_container">Container</string>
     <string name="kaizen_external_links_workspace_container">The default container of the workspace</string>
+    <string name="kaizen_external_links_private">Open in a private tab</string>
+    <string name="kaizen_external_links_private_summary">Links from other apps open in the private workspace, without a container.</string>
     <string name="kaizen_essentials_per_container">Essentials per container</string>
     <string name="kaizen_essentials_per_container_summary">Each container keeps its own essentials. A workspace shows the essentials of its default container.</string>
 
@@ -230,8 +232,10 @@
     <!-- Settings: "More" menu editor -->
     <string name="pref_key_kaizen_more_menu" translatable="false">pref_key_kaizen_more_menu</string>
     <string name="kaizen_settings_more_menu">More menu</string>
-    <string name="kaizen_settings_more_menu_summary">Buttons of the menu you open by swiping the address bar</string>
-    <string name="kaizen_more_menu_hint">Swipe the address bar up (or down, when it is at the top) to open this menu. Tap a button to move or remove it. Extensions always take a whole row.</string>
+    <string name="kaizen_settings_actions_bar">Actions bar</string>
+    <string name="kaizen_actions_bar_search">Search</string>
+    <string name="kaizen_settings_more_menu_summary">The actions bar below pages and the menu it opens</string>
+    <string name="kaizen_more_menu_hint">The first row is the actions bar below pages. Swipe the actions bar up, or the address bar down, to open the whole menu. Tap a button to move or remove it. Extensions always take a whole row.</string>
     <string name="kaizen_more_menu_row">Row %1$d</string>
     <string name="kaizen_more_menu_add_item">Add a button</string>
     <string name="kaizen_more_menu_add_row">Add a row</string>

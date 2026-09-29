@@ -27,6 +27,7 @@ import mozilla.components.compose.base.theme.oledAcornGradientScheme
 import mozilla.components.compose.base.theme.oledColorPalette
 import mozilla.components.compose.base.theme.privateAcornGradientScheme
 import mozilla.components.compose.base.theme.privateColorPalette
+import org.mozilla.fenix.kaizen.ui.KaizenColors
 
 /**
  * The theme for Mozilla Firefox for Android (Fenix).
@@ -40,7 +41,7 @@ fun FirefoxTheme(
     content: @Composable () -> Unit,
 ) {
     val colors: AcornColors =
-        when (theme) {
+        KaizenColors.palette(theme) ?: when (theme) {
             Theme.Light -> lightColorPalette
             Theme.Dark -> darkColorPalette
             Theme.Oled -> oledColorPalette
@@ -48,7 +49,7 @@ fun FirefoxTheme(
         }
 
     val colorScheme: ColorScheme =
-        when (theme) {
+        KaizenColors.colorScheme(theme) ?: when (theme) {
             Theme.Light -> acornLightColorScheme()
             Theme.Dark -> acornDarkColorScheme()
             Theme.Oled -> acornOledColorScheme()
@@ -56,7 +57,7 @@ fun FirefoxTheme(
         }
 
     val gradients: AcornGradientScheme =
-        when (theme) {
+        KaizenColors.gradients(theme) ?: when (theme) {
             Theme.Light -> lightAcornGradientScheme
             Theme.Dark -> darkAcornGradientScheme
             Theme.Oled -> oledAcornGradientScheme

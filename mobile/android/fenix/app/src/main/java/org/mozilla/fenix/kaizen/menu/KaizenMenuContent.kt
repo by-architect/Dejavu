@@ -6,12 +6,12 @@ package org.mozilla.fenix.kaizen.menu
 
 import android.app.Dialog
 import android.content.Context
+import android.os.Bundle
 import android.os.StrictMode
 import android.view.Gravity
 import android.view.KeyEvent
 import android.view.ViewGroup
 import android.view.WindowManager
-import android.widget.Toast
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -33,9 +33,6 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import androidx.core.graphics.drawable.toDrawable
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.launch
-import mozilla.components.browser.state.action.TabListAction
 import mozilla.components.browser.state.selector.normalTabs
 import mozilla.components.browser.state.selector.selectedTab
 import mozilla.components.browser.state.state.TabSessionState
@@ -47,30 +44,43 @@ import org.mozilla.fenix.components.menu.MenuAccessPoint
 import org.mozilla.fenix.components.menu.store.MenuAction
 import org.mozilla.fenix.components.menu.store.MenuStore
 import org.mozilla.fenix.ext.components as contextComponents
-import org.mozilla.fenix.kaizen.actions.ActionContext
-import org.mozilla.fenix.kaizen.actions.CustomAction
-import org.mozilla.fenix.kaizen.actions.CustomActionRunner
-import org.mozilla.fenix.kaizen.containers.KaizenContainerStorage
-import org.mozilla.fenix.kaizen.home.folderPathOf
 import org.mozilla.fenix.kaizen.settings.KaizenSettings
-import org.mozilla.fenix.kaizen.workspaces.MAX_ESSENTIALS
-import org.mozilla.fenix.kaizen.workspaces.PinSource
 import org.mozilla.fenix.kaizen.workspaces.WorkspaceRepository
 import org.mozilla.fenix.kaizen.workspaces.WorkspaceState
 import org.mozilla.fenix.nimbus.FxNimbus
-import java.text.SimpleDateFormat
-import java.util.Date
-import java.util.Locale
 import mozilla.components.ui.icons.R as iconsR
 
 /** How Kaizen's "More" menu takes the place of Fenix's main menu. */
 object KaizenMenu {
+    private const val ARG_FROM_BOTTOM = "kaizen_menu_from_bottom"
+    private const val ARG_OPENING = "kaizen_menu_opening"
+
+    /** What the menu shows when it opens. */
+    enum class Opening { MENU, EXTENSIONS, SPLIT_PICKER }
+
     /** Whether Kaizen's menu replaces Fenix's for [accessPoint]. Custom tabs keep Fenix's menu. */
     fun replaces(accessPoint: MenuAccessPoint): Boolean = accessPoint != MenuAccessPoint.External
 
-    /** Whether the menu comes down from the top of the screen, which it does when the address bar is at the top. */
-    fun opensFromTop(context: Context, accessPoint: MenuAccessPoint): Boolean =
-        accessPoint == MenuAccessPoint.Browser && !context.contextComponents.settings.shouldUseBottomToolbar
+    /**
+     * Whether the menu comes down from the top of the screen, which it does when it was opened from an address bar at
+     * the top.
+     *
+     * @param arguments The arguments of the menu dialog, as made by [arguments].
+     */
+    fun opensFromTop(context: Context, accessPoint: MenuAccessPoint, arguments: Bundle?): Boolean =
+        accessPoint == MenuAccessPoint.Browser &&
+            !context.contextComponents.settings.shouldUseBottomToolbar &&
+            arguments?.getBoolean(ARG_FROM_BOTTOM) != true
+
+    /** What the menu opened with [arguments] shows first. */
+    fun opening(arguments: Bundle?): Opening =
+        arguments?.getString(ARG_OPENING)?.let { name -> Opening.entries.firstOrNull { it.name == name } } ?: Opening.MENU
+
+    /** The arguments that open the menu dialog from the bottom of the screen or not, showing [opening] first. */
+    fun arguments(fromBottom: Boolean, opening: Opening): Bundle = Bundle().apply {
+        putBoolean(ARG_FROM_BOTTOM, fromBottom)
+        putString(ARG_OPENING, opening.name)
+    }
 
     /** A dialog showing its content at the top of the screen, sliding down from the edge. */
     fun createTopSheetDialog(context: Context, onMenuKey: () -> Unit): Dialog =
@@ -104,6 +114,7 @@ object KaizenMenu {
  * @param menuStore Fenix's menu store, which carries out the actions Fenix's menu also has.
  * @param accessPoint Where the menu was opened from.
  * @param fromTop Whether the menu is shown at the top of the screen.
+ * @param opening What the menu shows first.
  * @param onDismiss Closes the menu.
  */
 @Composable
@@ -111,6 +122,7 @@ fun KaizenMenuContent(
     menuStore: MenuStore,
     accessPoint: MenuAccessPoint,
     fromTop: Boolean,
+    opening: KaizenMenu.Opening,
     onDismiss: () -> Unit,
 ) {
     val fenix = components
@@ -147,10 +159,17 @@ fun KaizenMenuContent(
         val workspaces by repository.state.collectAsState()
         val rowKeys by settings.moreMenuRows.collectAsState()
         val customActions by settings.customActions.collectAsState()
-        var extensionsExpanded by remember { mutableStateOf(false) }
-        var pickingSplit by remember { mutableStateOf(false) }
+        var extensionsExpanded by remember { mutableStateOf(opening == KaizenMenu.Opening.EXTENSIONS) }
+        var pickingSplit by remember { mutableStateOf(opening == KaizenMenu.Opening.SPLIT_PICKER) }
         val current = tab ?: return@MoreMenuSheet
-        val state = moreMenuState(fenix, current, workspaces, menuState.isDesktopMode, menuState)
+        val state = moreMenuState(
+            fenix = fenix,
+            tab = current,
+            workspaces = workspaces,
+            isBookmarked = menuState.browserMenuState?.bookmarkState?.isBookmarked == true,
+            isDesktopMode = menuState.isDesktopMode,
+            canSummarize = menuState.summarizationMenuState.visible && menuState.summarizationMenuState.enabled,
+        )
         val actions = MenuActions(context, fenix, menuStore, repository, settings, current, onDismiss)
 
         if (pickingSplit) {
@@ -186,13 +205,16 @@ fun KaizenMenuContent(
     }
 }
 
+/** What the "More" menu and the actions bar show about [tab]. */
+@Suppress("LongParameterList")
 @Composable
-private fun moreMenuState(
+internal fun moreMenuState(
     fenix: Components,
     tab: TabSessionState,
     workspaces: WorkspaceState,
+    isBookmarked: Boolean,
     isDesktopMode: Boolean,
-    menuState: org.mozilla.fenix.components.menu.store.MenuState,
+    canSummarize: Boolean,
 ): MoreMenuState {
     val url = tab.content.url
     val pin = workspaces.pinOf(tab.id)
@@ -204,7 +226,7 @@ private fun moreMenuState(
         canGoBack = tab.content.canGoBack,
         canGoForward = tab.content.canGoForward,
         isLoading = tab.content.loading,
-        isBookmarked = menuState.browserMenuState?.bookmarkState?.isBookmarked == true,
+        isBookmarked = isBookmarked,
         isDesktopMode = isDesktopMode,
         isPinned = pin != null && !pin.essential,
         isEssential = pin?.essential == true,
@@ -216,7 +238,7 @@ private fun moreMenuState(
             FxNimbus.features.translations.value().mainFlowBrowserMenuEnabled &&
             !tab.content.isPdf,
         isTranslated = tab.translationsState.isTranslated,
-        canSummarize = menuState.summarizationMenuState.visible && menuState.summarizationMenuState.enabled,
+        canSummarize = canSummarize,
         isWebPage = url.startsWith("http://") || url.startsWith("https://"),
     )
 }
@@ -225,25 +247,27 @@ private fun moreMenuState(
 @Suppress("LongParameterList")
 private class MenuActions(
     context: Context,
-    private val components: Components,
+    components: Components,
     private val menuStore: MenuStore,
-    private val repository: WorkspaceRepository,
-    private val settings: KaizenSettings,
-    private val tab: TabSessionState,
+    repository: WorkspaceRepository,
+    settings: KaizenSettings,
+    tab: TabSessionState,
     private val dismiss: () -> Unit,
 ) {
-    private val appContext = context.applicationContext
-    private val sessionUseCases = components.useCases.sessionUseCases
+    private val commands = KaizenTabCommands(context, components, repository, settings, tab)
 
     @Suppress("CyclomaticComplexMethod")
     fun run(entry: MoreMenuEntry, state: MoreMenuState, workspaces: WorkspaceState) {
         val item = (entry as? MoreMenuEntry.BuiltIn)?.item
         if (item == null) {
-            runCustomAction((entry as MoreMenuEntry.Custom).action, workspaces)
+            commands.runCustomAction((entry as MoreMenuEntry.Custom).action, workspaces)
             dismiss()
             return
         }
-        val pin = workspaces.pinOf(tab.id)
+        if (commands.run(item, workspaces)) {
+            dismiss()
+            return
+        }
         when (item) {
             MoreMenuItem.BACK -> dispatch(MenuAction.Navigate.Back(viewHistory = false))
             MoreMenuItem.FORWARD -> dispatch(MenuAction.Navigate.Forward(viewHistory = false))
@@ -267,81 +291,18 @@ private class MenuActions(
             MoreMenuItem.REPORT_BROKEN_SITE -> dispatch(MenuAction.Navigate.WebCompatReporter)
             MoreMenuItem.OPEN_IN_APP -> dispatch(MenuAction.OpenInApp)
             MoreMenuItem.SETTINGS -> dispatch(MenuAction.Navigate.Settings)
-            MoreMenuItem.SAVE_AS_PDF -> andDismiss { sessionUseCases.saveToPdf(tab.id) }
-            MoreMenuItem.PRINT -> andDismiss { sessionUseCases.printContent(tab.id) }
-            MoreMenuItem.PIN_TAB -> andDismiss {
-                if (pin != null && !pin.essential) repository.unpin(setOf(pin.id)) else repository.pinTabs(listOf(tab.toPinSource()))
-            }
-            MoreMenuItem.ESSENTIAL_TAB -> andDismiss { toggleEssential(workspaces) }
-            MoreMenuItem.RESET_PINNED_URL -> andDismiss { pin?.url?.let { sessionUseCases.loadUrl(it, tab.id) } }
-            MoreMenuItem.REPLACE_PINNED_URL -> andDismiss {
-                pin?.let { repository.replacePinUrl(it.id, tab.content.url, tab.content.title) }
-            }
-            MoreMenuItem.SPLIT_VIEW -> andDismiss { repository.unsplit(setOf(tab.id)) }
-            MoreMenuItem.EXTENSIONS -> Unit
+            else -> Unit
         }
     }
 
-    /** Shows [tab] and [other] side by side, next to each other in the tab list when neither is pinned. */
+    /** Shows the tab of the menu and [other] side by side. */
     fun split(workspaces: WorkspaceState, other: TabSessionState) {
-        repository.createSplit(tab.id, other.id)
-        if (workspaces.pinOf(tab.id) == null && workspaces.pinOf(other.id) == null) {
-            components.core.store.dispatch(TabListAction.MoveTabsAction(listOf(other.id), tab.id, placeAfter = true))
-        }
+        commands.split(workspaces, other)
         dismiss()
-    }
-
-    private fun toggleEssential(workspaces: WorkspaceState) {
-        val pin = workspaces.pinOf(tab.id)
-        if (pin?.essential == true) {
-            repository.removeFromEssentials(setOf(pin.id), workspaces.workspaceOf(tab.id))
-            return
-        }
-        val before = repository.state.value.essentials.size
-        repository.addToEssentials(
-            sources = if (pin == null) listOf(tab.toPinSource()) else emptyList(),
-            pinIds = setOfNotNull(pin?.id),
-            perContainer = settings.essentialsPerContainer.value,
-        )
-        if (repository.state.value.essentials.size == before) {
-            Toast.makeText(appContext, appContext.getString(R.string.kaizen_essentials_full, MAX_ESSENTIALS), Toast.LENGTH_SHORT)
-                .show()
-        }
-    }
-
-    private fun runCustomAction(action: CustomAction, workspaces: WorkspaceState) {
-        val pin = workspaces.pinOf(tab.id)
-        val workspaceId = pin?.workspaceId ?: workspaces.workspaceOf(tab.id)
-        val container = tab.contextId?.let { id ->
-            KaizenContainerStorage.get(appContext).records.value?.firstOrNull { it.contextId == id }?.name
-        }
-        val actionContext = ActionContext(
-            url = tab.content.url,
-            title = tab.content.title,
-            container = container.orEmpty(),
-            workspace = workspaces.workspaces.firstOrNull { it.id == workspaceId }?.name.orEmpty(),
-            folderPath = pin?.let { workspaces.folderPathOf(it) }.orEmpty(),
-            date = SimpleDateFormat(ISO_DATE_PATTERN, Locale.US).format(Date()),
-        )
-        components.applicationScope.launch(Dispatchers.Main) {
-            val result = CustomActionRunner(components.core.client).run(action, listOf(actionContext))
-            Toast.makeText(appContext, result.message(appContext, action, 1), Toast.LENGTH_LONG).show()
-        }
     }
 
     private fun dispatch(action: MenuAction) = menuStore.dispatch(action)
-
-    private inline fun andDismiss(block: () -> Unit) {
-        block()
-        dismiss()
-    }
-
-    private fun TabSessionState.toPinSource() = PinSource(id, content.url, content.title, contextId)
-
-    private companion object {
-        const val ISO_DATE_PATTERN = "yyyy-MM-dd'T'HH:mm:ssXXX"
-    }
 }
 
-private fun <T> Components.readOnMainThread(block: () -> T): T =
+internal fun <T> Components.readOnMainThread(block: () -> T): T =
     strictMode.allowViolation(StrictMode::allowThreadDiskReads, block)

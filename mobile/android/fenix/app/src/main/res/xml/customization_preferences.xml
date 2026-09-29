@@ -53,13 +53,20 @@
         android:layout="@layout/preference_cat_style"
         android:title="@string/preferences_toolbar_2"
         android:key="@string/pref_key_customization_category_toolbar"
-        app:iconSpaceReserved="false">
+        app:iconSpaceReserved="false"
+        app:isPreferenceVisible="false">
         <org.mozilla.fenix.settings.RadioButtonPreference
             android:key="@string/pref_key_toolbar_top"
             android:title="@string/preference_top_toolbar" />
         <org.mozilla.fenix.settings.RadioButtonPreference
             android:key="@string/pref_key_toolbar_bottom"
             android:title="@string/preference_bottom_toolbar" />
+    </androidx.preference.PreferenceCategory>
+
+    <androidx.preference.PreferenceCategory
+        android:layout="@layout/preference_cat_style"
+        android:title="@string/kaizen_settings_actions_bar"
+        app:iconSpaceReserved="false">
         <androidx.preference.Preference
             app:iconSpaceReserved="false"
             app:widgetLayout="@layout/kaizen_preference_badge"
@@ -103,12 +110,13 @@
             app:trueOptionTitle="@string/preference_expanded_toolbar" />
     </androidx.preference.PreferenceCategory>
 
-    <!-- Toolbar shortcut picker -->
+    <!-- Toolbar shortcut picker. Kaizen: the first row of the "More" menu is the actions bar instead. -->
     <androidx.preference.PreferenceCategory
         android:key="@string/pref_key_customization_category_toolbar_shortcut"
         android:layout="@layout/preference_cat_style"
         android:title="@string/preferences_toolbar_shortcut"
-        app:iconSpaceReserved="false" />
+        app:iconSpaceReserved="false"
+        app:isPreferenceVisible="false" />
 
     <androidx.preference.PreferenceCategory
         android:layout="@layout/preference_cat_style"

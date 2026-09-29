@@ -319,6 +319,24 @@ class WorkspaceRepository private constructor(context: Context) {
         )
     }
 
+    /**
+     * Keeps the titles of pinned tabs up to date with the pages open in them, so closed pins show their last title.
+     * Titles the user gave are kept, as are titles that are only an address.
+     */
+    fun refreshPinTitles(titles: Map<String, String>) = mutate { state ->
+        var changed = false
+        val pins = state.pins.map { pin ->
+            val title = pin.tabId?.let(titles::get)?.trim()
+            if (pin.staticLabel || title.isNullOrEmpty() || title == pin.title || title.startsWith("http")) {
+                pin
+            } else {
+                changed = true
+                pin.copy(title = title, updatedAt = now())
+            }
+        }
+        if (changed) state.copy(pins = pins) else state
+    }
+
     /** Makes [url] the address pinned tab [pinId] resets to, like Zen's "Replace pinned URL with current". */
     fun replacePinUrl(pinId: String, url: String, title: String) = mutate { state ->
         state.copy(

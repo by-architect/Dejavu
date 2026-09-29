@@ -2,7 +2,7 @@
 <!-- This Source Code Form is subject to the terms of the Mozilla Public
    - License, v. 2.0. If a copy of the MPL was not distributed with this
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
-<!-- Background of Kaizen's launcher icon: a soft violet gradient. -->
+<!-- Background of Kaizen's launcher icon: a golden gradient. -->
 <vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt"
     android:width="108dp"
     android:height="108dp"
@@ -16,9 +16,9 @@
                 android:startY="0"
                 android:endX="108"
                 android:endY="108">
-                <item android:offset="0" android:color="#FF8A74FF" />
-                <item android:offset="0.55" android:color="#FF5B45E0" />
-                <item android:offset="1" android:color="#FF2E1F86" />
+                <item android:offset="0" android:color="#FFFFE08A" />
+                <item android:offset="0.55" android:color="#FFFFC83D" />
+                <item android:offset="1" android:color="#FFD99A0B" />
             </gradient>
         </aapt:attr>
     </path>

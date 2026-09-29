@@ -39,7 +39,8 @@ private const val TOOLBAR_HEIGHT_MAXIMUM_SWIPE_FACTOR = 0.8f
  * @param navBarLayout The navigation bar layout.
  * @param toolbarPosition Where the address bar is shown on the screen.
  * @param navController [NavController] used for navigation to the tabs tray.
- * @param onSwipe Invoked instead of showing the tabs tray, when not `null`.
+ * @param onSwipe Invoked instead of showing the tabs tray, when not `null`, with whether the swipe started on the
+ *   navigation bar.
  */
 class ToolbarVerticalGesturesHandler(
     private val appStore: AppStore,
@@ -47,7 +48,7 @@ class ToolbarVerticalGesturesHandler(
     private val navBarLayout: View?,
     private val toolbarPosition: ToolbarPosition,
     private val navController: NavController,
-    private val onSwipe: (() -> Unit)? = null,
+    private val onSwipe: ((fromNavBar: Boolean) -> Unit)? = null,
 ) : SwipeGestureListener {
     private val scaledTouchSlop = ViewConfiguration.get(toolbarLayout.context).scaledTouchSlop * 2
     private var currentSwipeXDistance = 0f
@@ -94,7 +95,7 @@ class ToolbarVerticalGesturesHandler(
 
         if (isSwipeValid()) {
             onSwipe?.let {
-                it()
+                it(startTouchPoint.isInTarget(navBarLayout))
                 return false
             }
             Events.toolbarTabstraySwipe.record(NoExtras())

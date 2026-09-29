@@ -27,25 +27,11 @@ import java.util.UUID
  */
 object TemporaryContainers {
     private const val NAME_PREFIX = "tmp"
-    private val colors = listOf(
-        ContainerColor.ORANGE,
-        ContainerColor.BLUE,
-        ContainerColor.GREEN,
-        ContainerColor.PINK,
-        ContainerColor.YELLOW,
-        ContainerColor.CYAN,
-        ContainerColor.PURPLE,
-        ContainerColor.RED,
-    )
 
     /** Starts a new temporary container and returns its context ID. */
     fun create(store: Store<BrowserState, BrowserAction>, storage: KaizenContainerStorage): String {
         val taken = store.state.containers.values.filter { storage.isTemporary(it.contextId) }.map { it.name }.toSet()
         val number = generateSequence(1) { it + 1 }.first { "$NAME_PREFIX$it" !in taken }
-        val used = store.state.containers.values.map { it.color }.toSet()
-        val start = (number - 1) % colors.size
-        val rotated = colors.drop(start) + colors.take(start)
-        val color = rotated.firstOrNull { it.acColor !in used } ?: rotated.first()
         val contextId = UUID.randomUUID().toString()
         storage.markTemporary(contextId)
         store.dispatch(
@@ -53,7 +39,7 @@ object TemporaryContainers {
                 ContainerState(
                     contextId = contextId,
                     name = "$NAME_PREFIX$number",
-                    color = color.acColor,
+                    color = ContainerColor.WHITE.acColor,
                     icon = ContainerState.Icon.CIRCLE,
                 ),
             ),

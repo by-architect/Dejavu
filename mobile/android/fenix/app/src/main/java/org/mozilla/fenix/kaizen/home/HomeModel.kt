@@ -5,6 +5,7 @@
 package org.mozilla.fenix.kaizen.home
 
 import mozilla.components.browser.state.state.TabSessionState
+import mozilla.components.support.ktx.util.URLStringUtils
 import org.mozilla.fenix.kaizen.actions.RowAction
 import org.mozilla.fenix.kaizen.actions.TabAction
 import org.mozilla.fenix.kaizen.workspaces.MAX_FOLDER_DEPTH
@@ -145,16 +146,20 @@ val TabSessionState.isAwake: Boolean
 val TabSessionState.displayTitle: String
     get() = pageLabel(content.title, content.url)
 
-/** [title], or the name of the site of [url] when [title] is empty or is itself a URL. */
+/** The page's [title], like browsers show on tabs, or its address when the page has no title. */
 fun pageLabel(title: String?, url: String): String {
     val text = title?.trim().orEmpty()
-    val isUrl = text == url || text.startsWith("http://") || text.startsWith("https://")
-    return if (text.isEmpty() || isUrl) siteName(url) else text
+    return when {
+        text.isEmpty() -> displayUrl(url)
+        text.isWebAddress() -> displayUrl(text)
+        else -> text
+    }
 }
 
-/** The host of [url] without "www.", like "iana.org", or [url] itself when it has none. */
-fun siteName(url: String): String =
-    runCatching { java.net.URI(url).host }.getOrNull()?.removePrefix("www.")?.ifBlank { null } ?: url
+/** [url] without its scheme and "www.", the way Firefox shows addresses. */
+fun displayUrl(url: String): String = URLStringUtils.toDisplayUrl(url).toString()
+
+private fun String.isWebAddress() = startsWith("http://") || startsWith("https://")
 
 /** The title shown for open tab [tab]: the one the user gave it, or its page's. */
 fun WorkspaceState.titleOf(tab: TabSessionState): String =

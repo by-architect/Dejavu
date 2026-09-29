@@ -152,15 +152,10 @@ fun ComposeView.setKaizenHomeContent(
 
             LaunchedEffect(tabs, restoreComplete) {
                 repository.syncWithTabs(tabs.map { it.id }.toSet(), restoreComplete)
+                repository.refreshPinTitles(tabs.associate { it.id to it.content.title })
             }
 
-            Box(
-                modifier = Modifier
-                    .fillMaxSize()
-                    .background(MaterialTheme.colorScheme.surface)
-                    .systemBarsPadding()
-                    .imePadding(),
-            ) {
+            Box(modifier = Modifier.fillMaxSize().background(MaterialTheme.colorScheme.surface)) {
                 KaizenHome(
                     state = workspaceState,
                     tabs = tabs,
@@ -176,15 +171,21 @@ fun ComposeView.setKaizenHomeContent(
 
                 SnackbarHost(
                     hostState = snackbarHostState,
-                    modifier = Modifier.align(Alignment.BottomCenter).padding(bottom = 64.dp),
+                    modifier = Modifier
+                        .align(Alignment.BottomCenter)
+                        .systemBarsPadding()
+                        .imePadding()
+                        .padding(bottom = 64.dp),
                 )
 
                 if (isSearchActive) {
-                    KaizenSearchOverlay(
-                        fromTop = !fenix.settings.shouldUseBottomToolbar ||
-                            fenix.appStore.state.searchState.sourceTabId == null,
-                        content = searchToolbar,
-                    )
+                    Box(modifier = Modifier.systemBarsPadding().imePadding()) {
+                        KaizenSearchOverlay(
+                            fromTop = !fenix.settings.shouldUseBottomToolbar ||
+                                fenix.appStore.state.searchState.sourceTabId == null,
+                            content = searchToolbar,
+                        )
+                    }
                 }
             }
 

@@ -30,14 +30,13 @@ import java.util.concurrent.ConcurrentHashMap
 
 /**
  * Middleware Kaizen adds to Fenix's browser store: android-components' container support backed by Kaizen's storage,
- * and [WorkspaceContainerMiddleware]. Also loads Kaizen's data and applies its defaults off the main thread.
+ * and [WorkspaceContainerMiddleware]. Also loads Kaizen's data off the main thread.
  */
 fun kaizenBrowserMiddleware(context: Context): List<Middleware<BrowserState, BrowserAction>> {
     CoroutineScope(Dispatchers.IO).launch {
         WorkspaceRepository.get(context)
         KaizenSettings.get(context)
         KaizenContainerStorage.get(context).load()
-        KaizenDefaults.applyOnce(context)
     }
     return listOf(
         ContainerMiddleware(context, containerStorage = KaizenContainerStorage.get(context)),

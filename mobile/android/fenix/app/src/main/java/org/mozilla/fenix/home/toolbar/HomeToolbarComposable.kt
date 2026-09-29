@@ -176,7 +176,7 @@ internal class HomeToolbarComposable(
             AddressBar(wallpaperTextColor = wallpaperTextColor)
 
             if (shouldUseBottomToolbar) {
-                navigationBarContent?.invoke()
+                if (!KaizenToolbar.enabled) navigationBarContent?.invoke()
             } else {
                 searchSuggestionsContent(Modifier.weight(1f))
             }

@@ -4,6 +4,7 @@
 
 package org.mozilla.fenix.kaizen.browser
 
+import android.os.SystemClock
 import androidx.compose.animation.core.Animatable
 import androidx.compose.animation.core.FastOutSlowInEasing
 import androidx.compose.animation.core.tween
@@ -49,28 +50,34 @@ fun KaizenSearchAboveKeyboard(
     topLayout: @Composable () -> Unit,
 ) {
     val progress = remember { Animatable(if (enabled && isSearching) 1f else 0f) }
+    val fromBottom = remember(isSearching) { isSearching && KaizenSearchStart.isFromBottom() }
     LaunchedEffect(isSearching, enabled) {
         val target = if (enabled && isSearching) 1f else 0f
-        progress.animateTo(target, tween(MOVE_DURATION_MS, easing = FastOutSlowInEasing))
+        if (target == 1f && fromBottom) {
+            progress.snapTo(target)
+        } else {
+            progress.animateTo(target, tween(MOVE_DURATION_MS, easing = FastOutSlowInEasing))
+        }
     }
     if (!enabled || (!isSearching && progress.value == 0f)) {
         topLayout()
         return
     }
+    val shown = if (isSearching && fromBottom) 1f else progress.value
 
     var height by remember { mutableIntStateOf(0) }
     var barHeight by remember { mutableIntStateOf(0) }
     Column(modifier = Modifier.fillMaxWidth().wrapContentHeight().onSizeChanged { height = it.height }) {
         Box(modifier = Modifier.weight(1f).fillMaxWidth()) {
             if (isSearching) {
-                suggestions(Modifier.fillMaxSize().graphicsLayer { alpha = progress.value })
+                suggestions(Modifier.fillMaxSize().graphicsLayer { alpha = shown })
             }
         }
         Box(
             modifier = Modifier
                 .onSizeChanged { barHeight = it.height }
                 .graphicsLayer {
-                    translationY = -(1f - progress.value) * (height - barHeight).coerceAtLeast(0)
+                    translationY = -(1f - shown) * (height - barHeight).coerceAtLeast(0)
                     alpha = if (height == 0) 0f else 1f
                 },
         ) {
@@ -86,7 +93,7 @@ fun KaizenSearchAboveKeyboard(
  */
 @Composable
 fun KaizenSearchOverlay(fromTop: Boolean, content: @Composable () -> Unit) {
-    val progress = remember { Animatable(if (fromTop) 0f else 1f) }
+    val progress = remember { Animatable(if (fromTop && !KaizenSearchStart.isFromBottom()) 0f else 1f) }
     LaunchedEffect(Unit) {
         progress.animateTo(1f, tween(MOVE_DURATION_MS, easing = FastOutSlowInEasing))
     }
@@ -109,3 +116,19 @@ fun KaizenSearchOverlay(fromTop: Boolean, content: @Composable () -> Unit) {
 }
 
 private val SEARCH_BAR_HEIGHT = 64.dp
+
+/**
+ * Remembers that a search was just started from the bottom of the screen, so the search screens opening for it appear
+ * there at once instead of coming down from the address bar.
+ */
+object KaizenSearchStart {
+    private const val VALID_FOR_MS = 1_500L
+    private var startedAt = 0L
+
+    fun fromBottom() {
+        startedAt = SystemClock.elapsedRealtime()
+    }
+
+    /** Whether the search starting now was started from the bottom of the screen. */
+    fun isFromBottom(): Boolean = startedAt != 0L && SystemClock.elapsedRealtime() - startedAt < VALID_FOR_MS
+}

@@ -182,7 +182,7 @@ class MenuDialogFragment : BottomSheetDialogFragment() {
     override fun onCreateDialog(savedInstanceState: Bundle?): Dialog {
         Events.toolbarMenuVisible.record(NoExtras())
 
-        if (KaizenMenu.opensFromTop(requireContext(), args.accesspoint)) {
+        if (KaizenMenu.opensFromTop(requireContext(), args.accesspoint, arguments)) {
             return KaizenMenu.createTopSheetDialog(requireContext(), onMenuKey = ::dismiss)
         }
 
@@ -268,7 +268,8 @@ class MenuDialogFragment : BottomSheetDialogFragment() {
                 KaizenMenuContent(
                     menuStore = menuStore,
                     accessPoint = args.accesspoint,
-                    fromTop = KaizenMenu.opensFromTop(requireContext(), args.accesspoint),
+                    fromTop = KaizenMenu.opensFromTop(requireContext(), args.accesspoint, arguments),
+                    opening = KaizenMenu.opening(arguments),
                     onDismiss = ::dismiss,
                 )
                 return@FirefoxTheme

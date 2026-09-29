@@ -37,6 +37,7 @@ import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.alpha
 import androidx.compose.ui.platform.ComposeView
 import androidx.compose.ui.platform.ViewCompositionStrategy
 import androidx.compose.ui.res.painterResource
@@ -410,6 +411,8 @@ class KaizenExternalLinksFragment : KaizenComposeFragment(R.string.kaizen_settin
         val container by settings.externalLinkContainer.collectAsState()
         LaunchedEffect(Unit) { storage.load() }
         val chosenWorkspace = workspaces.workspaces.firstOrNull { it.id == workspaceId }
+        val fenixSettings = requireComponents.settings
+        var openInPrivate by remember { mutableStateOf(fenixSettings.openLinksInAPrivateTab) }
 
         Column(modifier = Modifier.fillMaxSize().verticalScroll(rememberScrollState())) {
             Text(
@@ -418,63 +421,81 @@ class KaizenExternalLinksFragment : KaizenComposeFragment(R.string.kaizen_settin
                 color = MaterialTheme.colorScheme.onSurfaceVariant,
                 modifier = Modifier.padding(16.dp),
             )
-            SettingsSectionHeader(
-                text = stringResource(R.string.kaizen_external_links_workspace),
-                modifier = Modifier.padding(horizontal = 16.dp),
+            SwitchListItem(
+                label = stringResource(R.string.kaizen_external_links_private),
+                description = stringResource(R.string.kaizen_external_links_private_summary),
+                maxDescriptionLines = 3,
+                checked = openInPrivate,
+                showSwitchAfter = true,
+                modifier = Modifier.settingsCard(index = 0, count = 1),
+                onClick = { checked ->
+                    fenixSettings.openLinksInAPrivateTab = checked
+                    openInPrivate = checked
+                },
             )
-            val workspaceRows = workspaces.workspaces.size + 1
-            ChoiceRow(
-                label = stringResource(R.string.kaizen_external_links_last_workspace),
-                selected = chosenWorkspace == null,
-                modifier = Modifier.settingsCard(0, workspaceRows),
-                onClick = { settings.setExternalLinkWorkspace(null) },
-            )
-            workspaces.workspaces.forEachIndexed { index, workspace ->
-                ChoiceRow(
-                    label = listOfNotNull(workspace.icon, workspace.name).joinToString("  "),
-                    selected = workspace.id == chosenWorkspace?.id,
-                    modifier = Modifier.settingsCard(index + 1, workspaceRows),
-                    onClick = { settings.setExternalLinkWorkspace(workspace.id) },
+            Column(modifier = Modifier.alpha(if (openInPrivate) DISABLED_ALPHA else 1f)) {
+                SettingsSectionHeader(
+                    text = stringResource(R.string.kaizen_external_links_workspace),
+                    modifier = Modifier.padding(horizontal = 16.dp),
                 )
-            }
-            SettingsSectionHeader(
-                text = stringResource(R.string.kaizen_external_links_container),
-                modifier = Modifier.padding(start = 16.dp, end = 16.dp, top = 16.dp),
-            )
-            val permanent = records.orEmpty().filterNot { it.temporary }
-            val containerRows = permanent.size + 3
-            ChoiceRow(
-                label = stringResource(R.string.kaizen_external_links_workspace_container),
-                selected = container == null,
-                modifier = Modifier.settingsCard(0, containerRows),
-                onClick = { settings.setExternalLinkContainer(null) },
-            )
-            ChoiceRow(
-                label = stringResource(R.string.kaizen_workspace_no_container),
-                selected = container == ContainerPick.NoContainer,
-                leading = { NoContainerIcon() },
-                modifier = Modifier.settingsCard(1, containerRows),
-                onClick = { settings.setExternalLinkContainer(ContainerPick.NoContainer) },
-            )
-            ChoiceRow(
-                label = stringResource(R.string.kaizen_new_temporary_container),
-                selected = container == ContainerPick.Temporary,
-                leading = { TemporaryContainerIcon() },
-                modifier = Modifier.settingsCard(2, containerRows),
-                onClick = { settings.setExternalLinkContainer(ContainerPick.Temporary) },
-            )
-            permanent.forEachIndexed { index, record ->
-                val pick = ContainerPick.Container(record.contextId)
+                val workspaceRows = workspaces.workspaces.size + 1
                 ChoiceRow(
-                    label = record.name,
-                    selected = container == pick,
-                    leading = { ContainerIcon(record) },
-                    modifier = Modifier.settingsCard(index + 3, containerRows),
-                    onClick = { settings.setExternalLinkContainer(pick) },
+                    label = stringResource(R.string.kaizen_external_links_last_workspace),
+                    selected = chosenWorkspace == null,
+                    modifier = Modifier.settingsCard(0, workspaceRows),
+                    onClick = { settings.setExternalLinkWorkspace(null) },
                 )
+                workspaces.workspaces.forEachIndexed { index, workspace ->
+                    ChoiceRow(
+                        label = listOfNotNull(workspace.icon, workspace.name).joinToString("  "),
+                        selected = workspace.id == chosenWorkspace?.id,
+                        modifier = Modifier.settingsCard(index + 1, workspaceRows),
+                        onClick = { settings.setExternalLinkWorkspace(workspace.id) },
+                    )
+                }
+                SettingsSectionHeader(
+                    text = stringResource(R.string.kaizen_external_links_container),
+                    modifier = Modifier.padding(start = 16.dp, end = 16.dp, top = 16.dp),
+                )
+                val permanent = records.orEmpty().filterNot { it.temporary }
+                val containerRows = permanent.size + 3
+                ChoiceRow(
+                    label = stringResource(R.string.kaizen_external_links_workspace_container),
+                    selected = container == null,
+                    modifier = Modifier.settingsCard(0, containerRows),
+                    onClick = { settings.setExternalLinkContainer(null) },
+                )
+                ChoiceRow(
+                    label = stringResource(R.string.kaizen_workspace_no_container),
+                    selected = container == ContainerPick.NoContainer,
+                    leading = { NoContainerIcon() },
+                    modifier = Modifier.settingsCard(1, containerRows),
+                    onClick = { settings.setExternalLinkContainer(ContainerPick.NoContainer) },
+                )
+                ChoiceRow(
+                    label = stringResource(R.string.kaizen_new_temporary_container),
+                    selected = container == ContainerPick.Temporary,
+                    leading = { TemporaryContainerIcon() },
+                    modifier = Modifier.settingsCard(2, containerRows),
+                    onClick = { settings.setExternalLinkContainer(ContainerPick.Temporary) },
+                )
+                permanent.forEachIndexed { index, record ->
+                    val pick = ContainerPick.Container(record.contextId)
+                    ChoiceRow(
+                        label = record.name,
+                        selected = container == pick,
+                        leading = { ContainerIcon(record) },
+                        modifier = Modifier.settingsCard(index + 3, containerRows),
+                        onClick = { settings.setExternalLinkContainer(pick) },
+                    )
+                }
             }
             Spacer(Modifier.height(24.dp))
         }
+    }
+
+    private companion object {
+        const val DISABLED_ALPHA = 0.4f
     }
 
     @Composable

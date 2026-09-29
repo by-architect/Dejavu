@@ -49,9 +49,9 @@ GRADIENT = '''        <aapt:attr name="android:fillColor">
                 android:startY="0"
                 android:endX="108"
                 android:endY="108">
-                <item android:offset="0" android:color="#FF8A74FF" />
-                <item android:offset="0.55" android:color="#FF5B45E0" />
-                <item android:offset="1" android:color="#FF2E1F86" />
+                <item android:offset="0" android:color="#FFFFE08A" />
+                <item android:offset="0.55" android:color="#FFFFC83D" />
+                <item android:offset="1" android:color="#FFD99A0B" />
             </gradient>
         </aapt:attr>'''
 HIGHLIGHT = '''        <aapt:attr name="android:fillColor">
@@ -74,24 +74,26 @@ def vector(comment, body, size=108, aapt=False):
 def filled(path, fill):
     return f'    <path android:pathData="{path}">\n{fill}\n    </path>'
 
+# The mark is dark, as white does not stand out on gold.
+MARK = "#FF1D1A16"
 square = "M0 0 H108 V108 H0 Z"
 def disc(r): return f"M{54-r} 54 A{r} {r} 0 1 0 {54+r} 54 A{r} {r} 0 1 0 {54-r} 54 Z"
 
 files = {
-    "drawable/kaizen_launcher_background.xml": vector("Background of Kaizen's launcher icon: a soft violet gradient.",
+    "drawable/kaizen_launcher_background.xml": vector("Background of Kaizen's launcher icon: a golden gradient.",
         filled(square, GRADIENT) + '\n' + filled(square, HIGHLIGHT), aapt=True),
     "drawable/kaizen_launcher_foreground.xml": vector("Kaizen's mark: an open ring around three rising bars, for steady improvement.",
-        glyph("#FFFFFFFF")),
+        glyph(MARK)),
     "drawable/kaizen_launcher_monochrome.xml": vector("Kaizen's mark for themed launcher icons.", glyph("#FF000000", dot_alpha="1")),
     # The splash screen shows the icon in a circle two thirds of its size; the logo scales the mark into a gradient disc.
     "drawable/kaizen_logo.xml": vector("Kaizen's logo: its mark on a gradient disc.",
         filled(disc(54), GRADIENT) + '\n' + filled(disc(54), HIGHLIGHT) + '\n'
         + '    <group\n        android:pivotX="54"\n        android:pivotY="54"\n        android:scaleX="1.4"\n        android:scaleY="1.4">\n'
-        + glyph("#FFFFFFFF", indent="        ") + '\n    </group>', aapt=True),
+        + glyph(MARK, indent="        ") + '\n    </group>', aapt=True),
     "drawable/kaizen_splash_logo.xml": vector("Kaizen's logo for the splash screen, sized to its visible circle.",
         filled(disc(36), GRADIENT) + '\n'
         + '    <group\n        android:pivotX="54"\n        android:pivotY="54"\n        android:scaleX="0.95"\n        android:scaleY="0.95">\n'
-        + glyph("#FFFFFFFF", indent="        ") + '\n    </group>', aapt=True),
+        + glyph(MARK, indent="        ") + '\n    </group>', aapt=True),
     "mipmap-anydpi/kaizen_launcher.xml": LIC + '''<adaptive-icon xmlns:android="http://schemas.android.com/apk/res/android">
     <background android:drawable="@drawable/kaizen_launcher_background" />
     <foreground android:drawable="@drawable/kaizen_launcher_foreground" />

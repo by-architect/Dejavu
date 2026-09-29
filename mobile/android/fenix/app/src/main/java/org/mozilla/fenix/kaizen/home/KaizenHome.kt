@@ -19,8 +19,10 @@ import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.imePadding
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.layout.systemBarsPadding
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.pager.HorizontalPager
 import androidx.compose.foundation.pager.rememberPagerState
@@ -263,6 +265,7 @@ fun KaizenHome(
         if (current != null) selection = current.togglePin(pin.id).takeIf { it.size > 0 } else interactor.onPinClick(pin)
     }
 
+    // The theme is drawn behind the system bars too, with the content kept clear of them.
     Column(
         modifier = modifier
             .fillMaxSize()
@@ -276,7 +279,9 @@ fun KaizenHome(
                     fraction = position - page,
                     grain = grain,
                 )
-            },
+            }
+            .systemBarsPadding()
+            .imePadding(),
     ) {
         val activeSelection = selection
         if (activeSelection == null) {

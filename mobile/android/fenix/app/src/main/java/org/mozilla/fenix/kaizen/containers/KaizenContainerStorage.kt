@@ -45,9 +45,15 @@ enum class ContainerColor(val key: String, val argb: Long, val acColor: Containe
     BLUE("blue", 0xFF5A87FD, ContainerState.Color.BLUE),
     CYAN("cyan", 0xFF10A4CA, ContainerState.Color.TURQUOISE),
     GREEN("green", 0xFF11AE84, ContainerState.Color.GREEN),
+
+    /** Kaizen's color for temporary containers. It is never offered for other containers, nor synced. */
+    WHITE("white", 0xFFF4F4F6, ContainerState.Color.TOOLBAR),
     ;
 
     companion object {
+        /** The colors a container the user makes can have. */
+        val pickable: List<ContainerColor> get() = entries - WHITE
+
         /** Resolves a desktop color name, including the legacy "turquoise" and "toolbar" aliases. */
         fun fromKey(key: String?): ContainerColor? = when (key) {
             "turquoise" -> CYAN
@@ -106,14 +112,15 @@ class KaizenContainerStorage private constructor(private val context: Context) :
             list
         } else {
             val now = System.currentTimeMillis()
+            val temporary = contextId in pendingTemporary
             list + ContainerRecord(
                 contextId,
                 name,
-                ContainerColor.fromAcColor(color),
+                if (temporary) ContainerColor.WHITE else ContainerColor.fromAcColor(color),
                 icon,
                 now,
                 now,
-                temporary = contextId in pendingTemporary,
+                temporary = temporary,
             )
         }
     }

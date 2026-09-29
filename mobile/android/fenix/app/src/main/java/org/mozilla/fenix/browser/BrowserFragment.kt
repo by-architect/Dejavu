@@ -240,7 +240,9 @@ class BrowserFragment : BaseBrowserFragment(), UserInteractionHandler, SystemIns
                     navBarLayout = browserNavigationBar?.layout,
                     toolbarPosition = settings.toolbarPosition,
                     navController = findNavController(),
-                    onSwipe = { openKaizenMenu() }.takeIf { KaizenToolbar.enabled },
+                    onSwipe = { fromNavBar: Boolean ->
+                        findNavController().openKaizenMenu(fromBottom = fromNavBar)
+                    }.takeIf { KaizenToolbar.enabled },
                 )
             )
         }

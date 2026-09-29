@@ -2,6 +2,52 @@
 <!-- This Source Code Form is subject to the terms of the Mozilla Public
    - License, v. 2.0. If a copy of the MPL was not distributed with this
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<!-- Kaizen's golden yellow palette, the same as KaizenColors for the screens made of views. -->
 <resources>
-    <color name="kaizen_accent">#FF6E5BFF</color>
+    <color name="kaizen_accent">#FFFFC83D</color>
+    <color name="kaizen_on_accent">#FF1D1A16</color>
+
+    <color name="kaizenGold10">#FF261A00</color>
+    <color name="kaizenGold20">#FF3F2E00</color>
+    <color name="kaizenGold30">#FF5C4200</color>
+    <color name="kaizenGold45">#FF8C6300</color>
+    <color name="kaizenGold80">#FFFFC83D</color>
+    <color name="kaizenGold90">#FFFFDF9E</color>
+
+    <color name="kaizenSand10">#FF2A2010</color>
+    <color name="kaizenSand20">#FF3D2E14</color>
+    <color name="kaizenSand30">#FF4A3F2C</color>
+    <color name="kaizenSand35">#FF332A1C</color>
+    <color name="kaizenSand80">#FFDDC7A0</color>
+    <color name="kaizenSand80A55">#8CDDC7A0</color>
+    <color name="kaizenSand90">#FFF3E5C8</color>
+
+    <color name="kaizenAmber20">#FF472A00</color>
+    <color name="kaizenAmber40">#FF9C5700</color>
+    <color name="kaizenAmber80">#FFF5BD7A</color>
+    <color name="kaizenAmber90">#FF2E1500</color>
+    <color name="kaizenAmber95">#FFFFF1DC</color>
+
+    <color name="kaizenWarm0">#FFFFFBF5</color>
+    <color name="kaizenWarm5">#FFFAF6EF</color>
+    <color name="kaizenWarm10">#FFF2EDE4</color>
+    <color name="kaizenWarm15">#FFE8E2D7</color>
+    <color name="kaizenWarm20">#FFD9D2C6</color>
+    <color name="kaizenWarm25">#FFCAC3B7</color>
+    <color name="kaizenWarm30">#FFB9B2A6</color>
+    <color name="kaizenWarm45">#FF827B70</color>
+    <color name="kaizenWarm45A80">#CC827B70</color>
+    <color name="kaizenWarm50">#FF686157</color>
+    <color name="kaizenWarm55">#FF524C44</color>
+    <color name="kaizenWarm60">#FF403B34</color>
+    <color name="kaizenWarm65">#FF322E28</color>
+    <color name="kaizenWarm70">#FF26231E</color>
+    <color name="kaizenWarm75">#FF1D1A16</color>
+    <color name="kaizenWarm80">#FF181613</color>
+    <color name="kaizenWarm85">#FF13120F</color>
+
+    <color name="kaizenInk">#FF1F1B13</color>
+    <color name="kaizenInkA70">#B21F1B13</color>
+    <color name="kaizenPaper">#FFF5F0E6</color>
+    <color name="kaizenPaperA70">#B2F5F0E6</color>
 </resources>

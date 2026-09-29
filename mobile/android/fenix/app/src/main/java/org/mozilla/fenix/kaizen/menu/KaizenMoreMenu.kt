@@ -87,7 +87,8 @@ data class MoreMenuState(
     val isWebPage: Boolean = false,
 )
 
-private data class EntryLook(
+/** How an entry of the "More" menu looks for the shown tab. */
+internal data class EntryLook(
     val label: String,
     @param:DrawableRes val icon: Int,
     val enabled: Boolean = true,
@@ -95,7 +96,7 @@ private data class EntryLook(
 )
 
 @Composable
-private fun MoreMenuEntry.look(state: MoreMenuState): EntryLook {
+internal fun MoreMenuEntry.look(state: MoreMenuState): EntryLook {
     val item = (this as? MoreMenuEntry.BuiltIn)?.item
         ?: return EntryLook(
             label = (this as MoreMenuEntry.Custom).action.name,

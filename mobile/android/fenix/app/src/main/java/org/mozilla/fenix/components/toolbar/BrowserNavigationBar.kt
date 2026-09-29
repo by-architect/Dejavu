@@ -29,6 +29,8 @@ import mozilla.components.compose.browser.toolbar.store.ToolbarGravity.Top
 import mozilla.components.support.utils.KeyboardState
 import mozilla.components.support.utils.keyboardAsState
 import org.mozilla.fenix.R
+import org.mozilla.fenix.kaizen.browser.KaizenToolbar
+import org.mozilla.fenix.kaizen.menu.KaizenActionsBar
 import org.mozilla.fenix.theme.FirefoxTheme
 import org.mozilla.fenix.utils.Settings
 
@@ -135,6 +137,10 @@ class BrowserNavigationBar(
                     ),
             ) {
                 FirefoxTheme {
+                    if (KaizenToolbar.enabled && customTabSessionId == null) {
+                        KaizenActionsBar(onEvent = { toolbarStore.dispatch(it) })
+                        return@FirefoxTheme
+                    }
                     NavigationBar(
                         actions = uiState.displayState.navigationActions,
                         toolbarGravity = toolbarGravity,

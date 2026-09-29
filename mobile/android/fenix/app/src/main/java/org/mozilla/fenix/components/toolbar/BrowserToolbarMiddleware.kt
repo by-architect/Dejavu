@@ -149,6 +149,7 @@ import org.mozilla.fenix.ext.canGoBackInHistoryOrToStories
 import org.mozilla.fenix.ext.nav
 import org.mozilla.fenix.ext.navigateSafe
 import org.mozilla.fenix.kaizen.browser.KaizenToolbar
+import org.mozilla.fenix.kaizen.browser.KaizenToolbarEvent
 import org.mozilla.fenix.nimbus.FxNimbus
 import org.mozilla.fenix.settings.ShortcutType
 import org.mozilla.fenix.summarization.SummarizationNavigator
@@ -297,18 +298,24 @@ class BrowserToolbarMiddleware(
         next: (BrowserToolbarAction) -> Unit,
         action: BrowserToolbarAction,
     ) {
+        if (action is KaizenToolbarEvent) {
+            KaizenToolbar.onEvent(uiContext, navController, store, action)
+            next(action)
+            return
+        }
+
         when (action) {
             is Init -> {
                 next(action)
 
                 appStore.dispatch(SearchEnded)
 
+                updateStartBrowserActions(store)
                 updateStartPageActions(store)
                 updateCurrentPageOrigin(store)
                 updateEndPageActions(store)
 
                 scope.launch {
-                    updateStartBrowserActions(store)
                     updateEndBrowserActions(store)
                     updateNavigationActions(store)
                 }
@@ -748,7 +755,7 @@ class BrowserToolbarMiddleware(
         }
     }
 
-    private suspend fun updateStartBrowserActions(store: Store<BrowserToolbarState, BrowserToolbarAction>) =
+    private fun updateStartBrowserActions(store: Store<BrowserToolbarState, BrowserToolbarAction>) =
         store.dispatch(BrowserActionsStartUpdated(buildStartBrowserActions()))
 
     private fun updateStartPageActions(store: Store<BrowserToolbarState, BrowserToolbarAction>) =
@@ -756,8 +763,6 @@ class BrowserToolbarMiddleware(
 
     private suspend fun updateEndBrowserActions(store: Store<BrowserToolbarState, BrowserToolbarAction>) {
         store.dispatch(BrowserActionsEndUpdated(buildEndBrowserActions()))
-        // Kaizen shows the toolbar shortcut at the start, so it changes with the same events.
-        if (KaizenToolbar.enabled) updateStartBrowserActions(store)
     }
 
     private fun buildStartPageActions(): List<Action> {
@@ -782,29 +787,19 @@ class BrowserToolbarMiddleware(
      * Devices wider than 600dp:
      * - The navigation buttons (forward, back, and refresh) are always shown on the left side of the address bar.
      */
-    private suspend fun buildStartBrowserActions(): List<Action> {
+    private fun buildStartBrowserActions(): List<Action> {
         val isWideScreen = isWideScreen()
-        val wideScreenActions = listOf(ToolbarAction.Back, ToolbarAction.Forward, ToolbarAction.RefreshOrStop)
-        val kaizenShortcut =
-            if (KaizenToolbar.enabled) {
-                ShortcutType.fromValue(settings.activeSimpleToolbarShortcutKey)?.toToolbarAction()
-            } else {
-                null
-            }
 
-        return listOfNotNull(
+        return listOf(
                 ToolbarActionConfig(ToolbarAction.Back) { isWideScreen },
                 ToolbarActionConfig(ToolbarAction.Forward) { isWideScreen },
                 ToolbarActionConfig(ToolbarAction.RefreshOrStop) { isWideScreen },
-                kaizenShortcut?.let {
-                    ToolbarActionConfig(it, isShortcut = true) { !isWideScreen || it !in wideScreenActions }
-                },
             )
             .filter { config ->
                 config.isVisible()
             }
             .map { config ->
-                buildAction(config.action, Source.AddressBar.BrowserStart, config.isShortcut)
+                buildAction(config.action, Source.AddressBar.BrowserStart)
             }
     }
 
@@ -1010,7 +1005,8 @@ class BrowserToolbarMiddleware(
 
     private fun observePageOriginUpdates(store: Store<BrowserToolbarState, BrowserToolbarAction>) {
         browserStore.observeWhileActive {
-            distinctUntilChangedBy { it.selectedTab?.content?.url }
+            // Kaizen shows the page title, so the address bar follows title changes too.
+            distinctUntilChangedBy { it.selectedTab?.content?.url to it.selectedTab?.content?.title }
                 .collect {
                     updateCurrentPageOrigin(store)
                     updateEndBrowserActions(store)
@@ -1063,10 +1059,10 @@ class BrowserToolbarMiddleware(
             if (originalUrl.toString() == ABOUT_HOME_URL) {
                 // Default to showing the toolbar hint when the URL is ABOUT_HOME.
                 ""
+            } else if (KaizenToolbar.enabled) {
+                KaizenToolbar.displayText(browserStore.state.selectedTab)
             } else if (searchTerms.isNotBlank()) {
                 searchTerms
-            } else if (KaizenToolbar.enabled) {
-                KaizenToolbar.displayUrl(originalUrl.toString())
             } else {
                 URLStringUtils.toDisplayUrl(originalUrl)
             }
