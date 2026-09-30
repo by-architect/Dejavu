@@ -29,10 +29,10 @@
     <color name="fx_mobile_on_error">@color/novaWhite</color>
     <color name="fx_mobile_error_container">@color/novaRed10</color>
     <color name="fx_mobile_on_error_container">@color/kaizenInk</color>
-    <color name="fx_mobile_information">@color/novaBlue50</color>
+    <color name="fx_mobile_information">@color/kaizenGold45</color>
     <color name="fx_mobile_on_information">@color/novaWhite</color>
-    <color name="fx_mobile_information_container">@color/novaBlue10</color>
-    <color name="fx_mobile_on_information_container">@color/kaizenInk</color>
+    <color name="fx_mobile_information_container">@color/kaizenGold90</color>
+    <color name="fx_mobile_on_information_container">@color/kaizenGold10</color>
     <color name="fx_mobile_success">@color/novaGreen50</color>
     <color name="fx_mobile_on_success">@color/novaWhite</color>
     <color name="fx_mobile_success_container">@color/novaGreen10</color>

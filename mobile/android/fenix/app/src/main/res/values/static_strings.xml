@@ -4,8 +4,8 @@
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Name of the application -->
-    <string name="app_name" translatable="false">Firefox Fenix</string>
-    <string name="firefox" translatable="false">Firefox</string>
+    <string name="app_name" translatable="false">Dejavu</string>
+    <string name="firefox" translatable="false">Dejavu</string>
 
     <!-- Preference for developers -->
     <string name="preference_leakcanary" translatable="false">LeakCanary</string>
@@ -444,7 +444,7 @@
     <string name="customize_toggle_weather" translatable="false">Weather</string>
 
     <!--  Firefox brand name  -->
-    <string name="app_name_firefox" tools:ignore="BrandUsage">Firefox</string>
+    <string name="app_name_firefox" tools:ignore="BrandUsage">Dejavu</string>
 
     <!--  Proper name for the Wrexham wallpaper section title. As it is a brand name we do not want it translated.-->
     <string name="wallpaper_wrexham_title" translatable="false">Wrexham A.F.C.</string>

@@ -29,6 +29,9 @@ apply from: 'benchmark.gradle'
 
 def isAppBundle = gradle.startParameter.taskNames.any { it.toLowerCase().contains("bundle") }
 
+// Kaizen: the id Dejavu is published with. The launcher shortcuts in src/release/res/xml/shortcuts.xml use it too.
+def DEJAVU_APPLICATION_ID = "com.byarchitect.dejavu"
+
 android {
     project.maybeConfigForJetpackBenchmark(it)
     if (project.hasProperty("testBuildType")) {
@@ -137,18 +140,11 @@ android {
         }
         release releaseTemplate >> {
             buildConfigField "boolean", "USE_RELEASE_VERSIONING", "true"
-            applicationIdSuffix ".firefox"
-            def deepLinkSchemeValue = "fenix"
+            // Kaizen: release builds are Dejavu, an app of its own. Its id is set in onVariants below, and it has its
+            // own deep link scheme and no shared user id.
+            def deepLinkSchemeValue = "dejavu"
             buildConfigField "String", "DEEP_LINK_SCHEME", "\"$deepLinkSchemeValue\""
             manifestPlaceholders.putAll([
-                    // This release type is meant to replace Firefox (Release channel) and therefore needs to inherit
-                    // its sharedUserId for all eternity. See:
-                    // https://searchfox.org/mozilla-esr68/search?q=moz_android_shared_id&case=false&regexp=false&path=
-                    // Shipping an app update without sharedUserId can have
-                    // fatal consequences. For example see:
-                    //  - https://issuetracker.google.com/issues/36924841
-                    //  - https://issuetracker.google.com/issues/36905922
-                    "sharedUserId": "org.mozilla.firefox.sharedID",
                     "deepLinkScheme": deepLinkSchemeValue,
             ])
         }
@@ -255,6 +251,12 @@ android {
     packaging {
         jniLibs {
             excludes += ["**/armeabi/*.so", "**/mips/*.so", "**/mips64/*.so", "**/x86/*.so"]
+            // Kaizen: a GeckoView built here has one architecture, so a bundle keeps only that one. The libraries other
+            // dependencies bring for the other architectures would give those devices an app that cannot start.
+            if (isAppBundle && !gradle.mozconfig.substs.MOZ_ANDROID_FAT_AAR_ARCHITECTURES) {
+                def geckoArch = gradle.mozconfig.substs.ANDROID_CPU_ARCH
+                excludes += ["armeabi-v7a", "arm64-v8a", "x86_64"].findAll { it != geckoArch }.collect { "**/${it}/*.so" }
+            }
             if (!isAppBundle) {
                 useLegacyPackaging = true
             }
@@ -271,6 +273,9 @@ android {
 androidComponents {
     onVariants(selector().all()) { variant ->
         def buildType = variant.buildType
+        if (buildType == 'release') {
+            variant.applicationId.set(DEJAVU_APPLICATION_ID)
+        }
 
         project.logger.debug("----------------------------------------------")
         project.logger.debug("Variant name:      " + variant.name)
@@ -285,9 +290,11 @@ androidComponents {
             // The Google Play Store does not allow multiple APKs for the same app that all have the
             // same version code. Therefore we need to have different version codes for our ARM and x86
             // builds.
+            // Kaizen: the root project's extra `versionName`, Gecko's version, hides -PversionName from
+            // Config.releaseVersionName, so the release version is read from the command line itself.
             def versionName = buildType == 'nightly' ?
                     "${Config.nightlyVersionName(project)}" :
-                    "${Config.releaseVersionName(project)}"
+                    "${gradle.startParameter.projectProperties["versionName"] ?: Config.releaseVersionName(project)}"
             project.logger.debug("versionName override: $versionName")
 
             variant.outputs.each { output ->

@@ -270,6 +270,7 @@ class MenuDialogFragment : BottomSheetDialogFragment() {
                     accessPoint = args.accesspoint,
                     fromTop = KaizenMenu.opensFromTop(requireContext(), args.accesspoint, arguments),
                     opening = KaizenMenu.opening(arguments),
+                    onEdit = { findNavController().navigate(R.id.kaizen_more_menu_graph) },
                     onDismiss = ::dismiss,
                 )
                 return@FirefoxTheme

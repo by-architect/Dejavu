@@ -1282,13 +1282,13 @@
   -->
   <string name="inactive_tabs_auto_close_message_header" tools:ignore="UnusedResources">Užverti automatiškai po mėnesio?</string>
   <!-- A description below the header to notify the user what the inactive tabs auto-close feature is. -->
-  <string name="inactive_tabs_auto_close_message_description" tools:ignore="BrandUsage,UnusedResources">„Firefox“ gali užverti korteles, kuriomis paskutinį mėnesį nesinaudojote.</string>
+  <string name="inactive_tabs_auto_close_message_description" tools:ignore="BrandUsage,UnusedResources">„Dejavu“ gali užverti korteles, kuriomis paskutinį mėnesį nesinaudojote.</string>
   <!-- A call to action below the description to allow the user to turn on the auto closing of inactive tabs. -->
   <string name="inactive_tabs_auto_close_message_action" tools:ignore="UnusedResources">ĮJUNGTI AUTOMATINĮ UŽVĖRIMĄ</string>
   <!-- Text for the snackbar to confirm auto-close is enabled for inactive tabs -->
   <string name="inactive_tabs_auto_close_message_snackbar">Automatinis užvėrimas įjungtas</string>
   <!-- Default browser card text -->
-  <string name="default_browser_experiment_card_text" tools:ignore="BrandUsage">Leiskite saitams iš svetainių, el. laiškų, ir žinučių būti automatiškai atvertiems per „Firefox“.</string>
+  <string name="default_browser_experiment_card_text" tools:ignore="BrandUsage">Leiskite saitams iš svetainių, el. laiškų, ir žinučių būti automatiškai atvertiems per „Dejavu“.</string>
   <!-- Content description radio buttons with a link to more information -->
   <string name="radio_preference_info_content_description">Spustelėkite čia, jeigu norite daugiau informacijos</string>
   <!-- Content description for the action bar "up" button -->

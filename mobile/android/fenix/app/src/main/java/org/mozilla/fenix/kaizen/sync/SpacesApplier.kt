@@ -18,12 +18,27 @@ import org.mozilla.fenix.kaizen.workspaces.WorkspaceState
  *   are, so they become the server's known copy.
  * @property failed Records that could not be applied yet, usually because a space, folder or container they need has
  *   not arrived. They are applied again on the next sync.
+ * @property tabOps What to do with open tabs so that they match the records.
  */
 internal class ApplyResult(
     val state: WorkspaceState,
     val applied: List<SpacesRecord>,
     val failed: List<SpacesRecord>,
+    val tabOps: List<TabOp> = emptyList(),
 )
+
+/** A change to the open tabs that applying records asks for. */
+internal sealed interface TabOp {
+    /** Opens [url] as tab [id] of workspace [workspaceId] in container [contextId], without loading it. */
+    data class Open(val id: String, val url: String, val title: String, val contextId: String?, val workspaceId: String) :
+        TabOp
+
+    /** Points tab [id], whose page is not loaded, at [url]. */
+    data class Retarget(val id: String, val url: String, val title: String) : TabOp
+
+    /** Closes tab [id]. */
+    data class Close(val id: String) : TabOp
+}
 
 /**
  * Applies incoming records, except containers, to Kaizen's workspaces, like Zen's ZenSpacesSyncApplier does to its
@@ -37,6 +52,9 @@ internal class ApplyResult(
  * @param firstSync Whether nothing was synced before, so a pristine default workspace can make way for synced ones.
  * @param defaultName Name of a new default workspace.
  * @param now Time used for the changes, in milliseconds.
+ * @param normalTabs Whether tabs that are not pinned are synced too. Otherwise their records only unpin tabs.
+ * @param tabs The open tabs that are not private by id, or `null` while the browser has not restored them. Records of
+ *   tabs that are not pinned then wait.
  */
 internal class SpacesApplier(
     private val server: Map<String, SpacesRecord>,
@@ -44,6 +62,8 @@ internal class SpacesApplier(
     private val firstSync: Boolean,
     private val defaultName: String,
     private val now: Long,
+    private val normalTabs: Boolean = false,
+    private val tabs: Map<String, LocalTab>? = null,
 ) {
     /** Applies [incoming] to [state]. Pure: the same input always gives the same result. */
     fun apply(state: WorkspaceState, incoming: List<SpacesRecord>): ApplyResult = Pass(state, incoming).run()
@@ -59,6 +79,12 @@ internal class SpacesApplier(
         private val pins = original.pins.toMutableList()
         private val assignments = original.assignments.toMutableMap()
         private val tabTitles = original.tabTitles.toMutableMap()
+        private val tabSyncIds = original.tabSyncIds.toMutableMap()
+        private val tabOps = mutableListOf<TabOp>()
+        private val openTabs = tabs.orEmpty()
+
+        /** Open tabs by the id they sync under. */
+        private val tabIdsBySyncId: Map<String, String> = openTabs.keys.associateBy { original.syncIdOf(it) }
         private var activeId = original.activeWorkspaceId
         private val applied = mutableListOf<SpacesRecord>()
         private val failed = mutableListOf<SpacesRecord>()
@@ -77,7 +103,7 @@ internal class SpacesApplier(
             val folders = upserts.filter { it.kind == RecordKind.FOLDER }
             val layout = upserts.lastOrNull { it.kind == RecordKind.LAYOUT && it.id == LAYOUT_RECORD_ID }
 
-            removals.forEach { record -> pins.firstOrNull { it.id == record.id && !it.isFolder }?.let { unpin(it.id) } }
+            removals.forEach { removeTab(it.id) }
             val createdSpaces = spaces.mapNotNull { record ->
                 val isNew = workspaces.none { it.id == record.id }
                 record(record, upsertSpace(record))
@@ -102,8 +128,9 @@ internal class SpacesApplier(
                 activeWorkspaceId = activeId.takeIf { id -> workspaces.any { it.id == id } } ?: workspaces.first().id,
                 assignments = assignments,
                 tabTitles = tabTitles,
+                tabSyncIds = tabSyncIds,
             )
-            return ApplyResult(state, applied, failed)
+            return ApplyResult(state, applied, failed, tabOps)
         }
 
         private fun record(record: SpacesRecord, outcome: Outcome) {
@@ -188,11 +215,7 @@ internal class SpacesApplier(
 
         private fun upsertTab(record: SpacesRecord): Outcome {
             val data = record.data ?: return Outcome.IGNORED
-            if (data.opt("pinned") == false) {
-                // A normal tab: unpinned elsewhere, or synced by Zen's optional normal tab sync, which Kaizen skips.
-                unpin(record.id)
-                return Outcome.APPLIED
-            }
+            if (record.isNormalTab) return upsertNormalTab(record, data)
             val url = data.string("url")
             if (url.isNullOrEmpty() || url == SpacesProjector.BLANK_URL) return Outcome.IGNORED
             val container = containerOf(data) ?: return Outcome.FAILED
@@ -203,6 +226,8 @@ internal class SpacesApplier(
 
             val (title, staticLabel) = labelOf(data)
             if (existing == null) {
+                // A tab open here without a pin, pinned elsewhere, becomes the pinned tab.
+                val openTab = tabIdsBySyncId[record.id]?.takeIf { tabId -> pins.none { it.tabId == tabId } }
                 pins += PinnedItem(
                     id = record.id,
                     workspaceId = workspaceId,
@@ -213,9 +238,15 @@ internal class SpacesApplier(
                     containerId = container.contextId,
                     essential = essential,
                     staticLabel = staticLabel,
+                    tabId = openTab,
                     createdAt = now,
                     updatedAt = now,
                 )
+                openTab?.let { tabId ->
+                    tabSyncIds.remove(tabId)
+                    tabTitles.remove(tabId)
+                    workspaceId?.let { assignments[tabId] = it }
+                }
                 return Outcome.APPLIED
             }
             val updated = existing.copy(
@@ -252,13 +283,81 @@ internal class SpacesApplier(
             return (workspaceId to null).takeIf { workspaces.any { it.id == workspaceId } }
         }
 
-        /** Removes a pinned tab; its open tab stays open as a normal tab, keeping a name the user gave it. */
+        /**
+         * A tab that is not pinned: a pinned tab unpinned elsewhere, or one of Zen's unpinned tabs. Without unpinned
+         * tabs synced it only unpins. With them, like Zen, the tab is opened here without loading it, or moved to its
+         * workspace and, when its page is not loaded, pointed at its new address.
+         */
+        private fun upsertNormalTab(record: SpacesRecord, data: JSONObject): Outcome {
+            val pin = pins.firstOrNull { it.id == record.id && !it.isFolder }
+            if (!normalTabs) {
+                pin?.let { unpin(it.id) }
+                return Outcome.APPLIED
+            }
+            if (tabs == null) return Outcome.FAILED
+            val url = data.string("url")
+            if (url == null || !isSyncableUrl(url)) {
+                pin?.let { unpin(it.id) }
+                return Outcome.IGNORED
+            }
+            val container = containerOf(data) ?: return Outcome.FAILED
+            val workspaceId = data.string("workspaceUuid")?.takeIf { id -> workspaces.any { it.id == id } }
+                ?: return Outcome.FAILED
+            val title = data.string("title").orEmpty()
+            pin?.let { unpin(it.id) }
+            val tabId = pin?.tabId?.takeIf { it in openTabs }
+                ?: tabIdsBySyncId[record.id]?.takeIf { id -> pins.none { it.tabId == id } }
+            if (tabId == null) {
+                tabOps += TabOp.Open(record.id, url, title, container.contextId, workspaceId)
+                assignments[record.id] = workspaceId
+                applyLabel(record.id, data)
+                return Outcome.APPLIED
+            }
+            assignments[tabId] = workspaceId
+            applyLabel(tabId, data)
+            val tab = openTabs.getValue(tabId)
+            if (!tab.awake && tab.url != url) tabOps += TabOp.Retarget(tabId, url, title)
+            return Outcome.APPLIED
+        }
+
+        /** Gives tab [tabId] the name of the record's static label, or its page title when it has none. */
+        private fun applyLabel(tabId: String, data: JSONObject) {
+            val label = data.string("staticLabel")?.takeIf { it.isNotEmpty() }
+            if (label != null) tabTitles[tabId] = label else tabTitles.remove(tabId)
+        }
+
+        /**
+         * A tab removed elsewhere. A pinned tab loses its pin; with unpinned tabs synced its open tab closes too, like
+         * in Zen, and so does an unpinned tab.
+         */
+        private fun removeTab(id: String) {
+            val pin = pins.firstOrNull { it.id == id && !it.isFolder }
+            val syncsTabs = normalTabs && tabs != null
+            if (pin != null) {
+                val tabId = pin.tabId
+                if (syncsTabs && tabId != null && tabId in openTabs) {
+                    pins.remove(pin)
+                    tabOps += TabOp.Close(tabId)
+                } else {
+                    unpin(pin.id)
+                }
+                return
+            }
+            if (!syncsTabs) return
+            tabIdsBySyncId[id]?.takeIf { tabId -> pins.none { it.tabId == tabId } }?.let { tabOps += TabOp.Close(it) }
+        }
+
+        /**
+         * Removes a pinned tab; its open tab stays open as a normal tab, keeping a name the user gave it and syncing
+         * under the pin's id.
+         */
         private fun unpin(pinId: String) {
             val pin = pins.firstOrNull { it.id == pinId && !it.isFolder } ?: return
             pins.remove(pin)
             pin.tabId?.let { tabId ->
                 assignments[tabId] = pin.workspaceId ?: activeId
                 if (pin.staticLabel) tabTitles[tabId] = pin.title
+                if (tabId != pin.id) tabSyncIds[tabId] = pin.id
             }
         }
 
@@ -271,7 +370,7 @@ internal class SpacesApplier(
             val removed = nested.filter { id ->
                 id in incomingIds || server[id]?.let { it.isSynced || it.deleted } == true
             }.toSet()
-            removed.forEach { id -> pins.firstOrNull { it.id == id }?.let { if (it.isFolder) pins.remove(it) else unpin(id) } }
+            removed.forEach { id -> pins.firstOrNull { it.id == id }?.let { if (it.isFolder) pins.remove(it) else removeTab(id) } }
             val gone = removed + folder.id
             pins.replaceAll { if (it.parentId in gone) it.copy(parentId = folder.parentId, updatedAt = now) else it }
             pins.removeAll { it.id == folder.id }

@@ -744,7 +744,7 @@
   <!-- Preference Category for settings related to Search address bar -->
   <string name="preferences_settings_address_bar">Հասցեագոտու նախապատվություններ</string>
   <!-- Preference Category for settings to Firefox Suggest -->
-  <string name="preference_search_address_bar_fx_suggest" tools:ignore="BrandUsage">Հասցեների տող - Firefox Suggest</string>
+  <string name="preference_search_address_bar_fx_suggest" tools:ignore="BrandUsage">Հասցեների տող - Dejavu Suggest</string>
   <!-- Preference link to Learn more about Firefox Suggest -->
   <string name="preference_search_learn_about_fx_suggest" tools:ignore="BrandUsage">Իմանալ ավելին Firefox Suggest-ի մասին</string>
   <!-- Preference link to rating Fenix on the Play Store -->
@@ -1108,7 +1108,7 @@
   -->
   <string name="addon_ga_message_title_2" tools:ignore="UnusedResources">Այժմ հասանելի են նոր ընդլայնումներ</string>
   <!-- Body of the Nimbus message for add-ons general availability. 'Firefox' intentionally hardcoded here -->
-  <string name="addon_ga_message_body" tools:ignore="BrandUsage,UnusedResources">Ստուգեք 100+ նոր ընդլայնումներ, որոնք թույլ են տալիս Firefox-ը դարձնել ձեր սեփականը:</string>
+  <string name="addon_ga_message_body" tools:ignore="BrandUsage,UnusedResources">Ստուգեք 100+ նոր ընդլայնումներ, որոնք թույլ են տալիս Dejavu-ը դարձնել ձեր սեփականը:</string>
   <!-- Button text of the Nimbus message for extensions general availability. -->
   <string name="addon_ga_message_button_2" tools:ignore="UnusedResources">Ուսումնասիրեք ընդլայնումները</string>
   <!--
@@ -1214,7 +1214,7 @@
   <!-- Preference switch for usage and technical learn more link in new compose -->
   <string name="preference_usage_data_learn_more_2">Իմացեք ավելին տեխնիկական տվյալների մասին</string>
   <!-- Preference description for marketing data collection. Note: The words "Firefox" should NOT be translated -->
-  <string name="preferences_usage_data_description_1" tools:ignore="BrandUsage">Ձեր սարքի, սարքաշարի կազմաձևման և օգտագործման տվյալներն օգնում են բարելավելու Firefox-ի հնարավորությունները, արտադրողականությունը և կայունությունը:</string>
+  <string name="preferences_usage_data_description_1" tools:ignore="BrandUsage">Ձեր սարքի, սարքաշարի կազմաձևման և օգտագործման տվյալներն օգնում են բարելավելու Dejavu-ի հնարավորությունները, արտադրողականությունը և կայունությունը:</string>
   <!-- Preference switch for daily usage ping data collection -->
   <string name="preferences_daily_usage_ping_title">Ամենօրյա օգտագործման պինգ</string>
   <string name="preferences_daily_usage_ping_description" tools:ignore="BrandUsage">Սա օգնում է Mozilla-ին գնահատել ակտիվ օգտվողներին:</string>
@@ -1237,7 +1237,7 @@
     Preference description for marketing data collection.
     Note: The words "Firefox" and "Mozilla" should NOT be translated. “That you use it” is to mean that the user is opting in to sharing that they are continuing to use Firefox after installing it; not that Firefox is tracking their “usage” or what they’re using it for.
   -->
-  <string name="preferences_marketing_data_description_4" tools:ignore="BrandUsage">Կիսվեք, թե ինչպես եք հայտնաբերել Firefox-ը և որ այն օգտագործում եք Mozilla-ի մարքեթինգային տեխնոլոգիաների գործընկերների հետ:</string>
+  <string name="preferences_marketing_data_description_4" tools:ignore="BrandUsage">Կիսվեք, թե ինչպես եք հայտնաբերել Dejavu-ը և որ այն օգտագործում եք Mozilla-ի մարքեթինգային տեխնոլոգիաների գործընկերների հետ:</string>
   <!-- Learn more link for marketing data preference -->
   <string name="preferences_marketing_data_learn_more">Իմացեք ավելին շուկայավարման տվյալների մասին</string>
   <!-- Title for studies preferences -->
@@ -1480,7 +1480,7 @@
   <!-- Title of the active section on the studies list -->
   <string name="studies_active">Գործուն</string>
   <!-- Description for studies. Note: The word "Firefox" should NOT be translated -->
-  <string name="studies_description_4" tools:ignore="BrandUsage">Firefox-ը պատահականորեն ընտրում է օգտատերերին՝ գործառույթները փորձարկելու համար, ինչը բարելավում է որակը բոլորի համար։</string>
+  <string name="studies_description_4" tools:ignore="BrandUsage">Dejavu-ը պատահականորեն ընտրում է օգտատերերին՝ գործառույթները փորձարկելու համար, ինչը բարելավում է որակը բոլորի համար։</string>
   <!-- Title of the Studies data preference -->
   <string name="studies_title_2">Թույլատրել յուրահատկությունների ուսումնասիրությունները</string>
   <!-- Learn more link for studies, links to an article for more information about studies. -->
@@ -1492,7 +1492,7 @@
   -->
   <string name="remote_improvements_title">Թույլատրել հեռակա բարելավումներ</string>
   <!-- Description for remote improvements. Note: The word "Firefox" should NOT be translated -->
-  <string name="remote_improvements_description" tools:ignore="BrandUsage">Firefox-ը կբարելավի գործառույթները, կատարողականությունը և կայունությունը թարմացումների միջև ընկած ժամանակահատվածում: Փոփոխությունները կիրառվում են հեռակա կարգով:</string>
+  <string name="remote_improvements_description" tools:ignore="BrandUsage">Dejavu-ը կբարելավի գործառույթները, կատարողականությունը և կայունությունը թարմացումների միջև ընկած ժամանակահատվածում: Փոփոխությունները կիրառվում են հեռակա կարգով:</string>
   <!-- Learn more link for remote improvements, links to an article for more information about rollouts. -->
   <string name="remote_improvements_learn_more">Իմանալ ավելին</string>
   <!-- Title for remote improvements preference in Advanced settings -->
@@ -2440,12 +2440,12 @@
     Title shown in the notification that pops up to remind the user to set fenix as default browser.
     The app name is in the text, due to limitations with localizing Nimbus experiments
   -->
-  <string name="nimbus_notification_default_browser_title" tools:ignore="BrandUsage,UnusedResources">Firefox-ը արագ է և գաղտնի</string>
+  <string name="nimbus_notification_default_browser_title" tools:ignore="BrandUsage,UnusedResources">Dejavu-ը արագ է և գաղտնի</string>
   <!--
     Text shown in the notification that pops up to remind the user to set fenix as default browser.
     The app name is in the text, due to limitations with localizing Nimbus experiments
   -->
-  <string name="nimbus_notification_default_browser_text" tools:ignore="BrandUsage,UnusedResources">Դարձրեք Firefox-ը սկզբնադիր դիտարկիչը</string>
+  <string name="nimbus_notification_default_browser_text" tools:ignore="BrandUsage,UnusedResources">Դարձրեք Dejavu-ը սկզբնադիր դիտարկիչը</string>
   <!--
     Privacy report notification
 
@@ -2464,7 +2464,7 @@
     Text shown in the fullscreen message that pops up to ask user to take a short survey.
     The app name is in the text, due to limitations with localizing Nimbus experiments
   -->
-  <string name="nimbus_survey_message_text" tools:ignore="BrandUsage">Խնդրում ենք օգնել Firefox-ն ավելի լավը դարձնել՝ մասնակցելով կարճ հարցման:</string>
+  <string name="nimbus_survey_message_text" tools:ignore="BrandUsage">Խնդրում ենք օգնել Dejavu-ն ավելի լավը դարձնել՝ մասնակցելով կարճ հարցման:</string>
   <!-- Preference for taking the short survey. -->
   <string name="preferences_take_survey">Անցեք հարցում</string>
   <!-- Preference for not taking the short survey. -->
@@ -3140,7 +3140,7 @@
   <!-- Title for the browser VPN location picker screen. -->
   <string name="ip_protection_location_picker_title" tools:ignore="UnusedResources">Ընտրել VPN-ի տեղադրությունը</string>
   <!-- Description for what it means to use the Recommended setting and let the app automatically pick the best server location. -->
-  <string name="ip_protection_location_fastest_description" tools:ignore="BrandUsage">Firefox-ը գտնում է ամենաարագ տեղադրությունը</string>
+  <string name="ip_protection_location_fastest_description" tools:ignore="BrandUsage">Dejavu-ը գտնում է ամենաարագ տեղադրությունը</string>
   <!-- Description for an unavailable VPN location in the location list. -->
   <string name="ip_protection_location_unavailable_description">Անմատչելի</string>
   <!-- Error message shown when the selected browser VPN location is unavailable. -->
@@ -3514,7 +3514,7 @@
   -->
   <string name="inactive_tabs_auto_close_message_header" tools:ignore="UnusedResources">Ինքնափակե՞լ մեկ ամսից:</string>
   <!-- A description below the header to notify the user what the inactive tabs auto-close feature is. -->
-  <string name="inactive_tabs_auto_close_message_description" tools:ignore="BrandUsage,UnusedResources">Firefox-ը կարող է փակել ներդիրները, որոնք չեք դիտել վերջին ամսում:</string>
+  <string name="inactive_tabs_auto_close_message_description" tools:ignore="BrandUsage,UnusedResources">Dejavu-ը կարող է փակել ներդիրները, որոնք չեք դիտել վերջին ամսում:</string>
   <!-- A call to action below the description to allow the user to turn on the auto closing of inactive tabs. -->
   <string name="inactive_tabs_auto_close_message_action" tools:ignore="UnusedResources">ՄԻԱՑՆԵԼ ԻՆՔՆԱՓԱԿՈՒՄԸ</string>
   <!-- Text for the snackbar to confirm auto-close is enabled for inactive tabs -->
@@ -3524,7 +3524,7 @@
 
     Search suggestions title for Firefox Suggest.
   -->
-  <string name="firefox_suggest_header" tools:ignore="BrandUsage">Firefox-ի առաջարկ</string>
+  <string name="firefox_suggest_header" tools:ignore="BrandUsage">Dejavu-ի առաջարկ</string>
   <!--
     Search suggestions title for trending search suggestions.
     %s is a placeholder for the name of the search engine providing the trending search suggestions.
@@ -3543,7 +3543,7 @@
   -->
   <string name="default_browser_experiment_card_title">Փոխարկեք Ձեր սկզբնադիր դիտարկիչը</string>
   <!-- Default browser card text -->
-  <string name="default_browser_experiment_card_text" tools:ignore="BrandUsage">Կայեք հղումներ կայքերից, էլ. նամակներից և հաղորդագրություններից, որոնք ինքնաբար կերպով կբացվեն Firefox-ում:</string>
+  <string name="default_browser_experiment_card_text" tools:ignore="BrandUsage">Կայեք հղումներ կայքերից, էլ. նամակներից և հաղորդագրություններից, որոնք ինքնաբար կերպով կբացվեն Dejavu-ում:</string>
   <!-- Content description radio buttons with a link to more information -->
   <string name="radio_preference_info_content_description">Սեղմեք` մանրամասների համար</string>
   <!-- Content description for the action bar "up" button -->
@@ -4516,7 +4516,7 @@
     The "Labs" portion can be localized, "Firefox" must be treated as a brand and kept
     in English.
   -->
-  <string name="firefox_labs_title" tools:ignore="BrandUsage">Firefox-ի լաբորատորիաներ</string>
+  <string name="firefox_labs_title" tools:ignore="BrandUsage">Dejavu-ի լաբորատորիաներ</string>
   <!-- Banner title text on the Firefox Labs screen. -->
   <string name="firefox_labs_banner_title_2">Փորձեք մեր փորձարարական հնարավորությունները։</string>
   <!--

@@ -22,6 +22,9 @@ import java.io.IOException
  * @property server The server's copy of every record Kaizen applied or uploaded, tombstones included. Local data is
  *   compared with it to find what to upload, and records start from it so fields Kaizen does not show are kept.
  * @property failed Incoming records that could not be applied yet; they are applied again on every sync.
+ * @property seen Tabs that are not pinned, by sync id, as they were here at the end of the last sync. A tab that
+ *   changed since then is uploaded, and one that is gone was closed here, so it is deleted on the server.
+ * @property opened Tabs the current sync opened, which may not show in the browser before it ends.
  */
 internal class SpacesSyncData(
     var syncId: String? = null,
@@ -31,12 +34,16 @@ internal class SpacesSyncData(
     var lastSynced: Long = 0L,
     val server: MutableMap<String, SpacesRecord> = LinkedHashMap(),
     val failed: MutableMap<String, SpacesRecord> = LinkedHashMap(),
+    val seen: MutableMap<String, String> = LinkedHashMap(),
+    val opened: MutableSet<String> = LinkedHashSet(),
 ) {
     /** Forgets the collection, so the next sync downloads everything and uploads whatever differs locally. */
     fun resetCollection() {
         lastModified = null
         server.clear()
         failed.clear()
+        seen.clear()
+        opened.clear()
     }
 
     /** Forgets everything about the server, like after signing out. */
@@ -67,6 +74,7 @@ internal class SpacesSyncStore(file: File) {
             .put("lastSynced", data.lastSynced)
             .put("server", JSONArray().apply { data.server.values.forEach { put(it.toCleartext()) } })
             .put("failed", JSONArray().apply { data.failed.values.forEach { put(it.toCleartext()) } })
+            .put("seen", JSONObject(data.seen.toMap()))
         val stream = file.startWrite()
         try {
             stream.write(SyncJson.stringify(json).toByteArray(Charsets.UTF_8))
@@ -99,6 +107,10 @@ internal class SpacesSyncStore(file: File) {
             lastSynced = json.optLong("lastSynced"),
             server = records("server"),
             failed = records("failed"),
+            seen = LinkedHashMap<String, String>().apply {
+                val seen = json.optJSONObject("seen") ?: return@apply
+                seen.keys().forEach { key -> seen.string(key)?.let { put(key, it) } }
+            },
         )
     }
 

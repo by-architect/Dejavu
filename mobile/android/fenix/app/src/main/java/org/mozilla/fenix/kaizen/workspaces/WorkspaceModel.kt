@@ -110,6 +110,8 @@ data class SplitView(val id: String, val tabIds: List<String>)
  * @property assignments Tab ID to workspace ID. Local to this device.
  * @property splits Tabs shown together in the browser. Local to this device.
  * @property tabTitles Titles the user gave to tabs that are not pinned, by tab ID. Local to this device.
+ * @property tabSyncIds Sync ids of open tabs that sync under another id than their own, by tab ID: the id of the pin
+ *   they were the tab of, once it was unpinned, so the tab stays the same tab on other devices. Local to this device.
  */
 data class WorkspaceState(
     val workspaces: List<Workspace>,
@@ -118,6 +120,7 @@ data class WorkspaceState(
     val assignments: Map<String, String>,
     val splits: List<SplitView> = emptyList(),
     val tabTitles: Map<String, String> = emptyMap(),
+    val tabSyncIds: Map<String, String> = emptyMap(),
 ) {
     val activeIndex: Int
         get() = workspaces.indexOfFirst { it.id == activeWorkspaceId }.coerceAtLeast(0)
@@ -138,6 +141,9 @@ data class WorkspaceState(
 
     /** Returns the workspace ID for [tabId], falling back to the active workspace for unassigned tabs. */
     fun workspaceOf(tabId: String): String = assignments[tabId] ?: activeWorkspaceId
+
+    /** Returns the id the open tab [tabId] syncs under when it is not pinned. */
+    fun syncIdOf(tabId: String): String = tabSyncIds[tabId] ?: tabId
 
     /** Returns the pin backed by the open tab [tabId], if any. */
     fun pinOf(tabId: String): PinnedItem? = pins.firstOrNull { it.tabId == tabId }

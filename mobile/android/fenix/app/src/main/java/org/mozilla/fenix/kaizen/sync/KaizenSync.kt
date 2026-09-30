@@ -21,22 +21,31 @@ import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.combine
 import kotlinx.coroutines.flow.debounce
+import kotlinx.coroutines.flow.distinctUntilChanged
 import kotlinx.coroutines.flow.drop
+import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.flow.update
 import kotlinx.coroutines.isActive
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.sync.Mutex
 import kotlinx.coroutines.sync.withLock
 import kotlinx.coroutines.withContext
+import mozilla.components.browser.state.action.TabListAction
+import mozilla.components.browser.state.selector.findTab
+import mozilla.components.browser.state.selector.normalTabs
 import mozilla.components.browser.state.state.ContainerState
+import mozilla.components.browser.state.state.createTab
+import mozilla.components.browser.state.store.BrowserStore
 import mozilla.components.concept.sync.AccountObserver
 import mozilla.components.concept.sync.AuthType
 import mozilla.components.concept.sync.OAuthAccount
+import mozilla.components.lib.state.ext.flow
 import mozilla.components.service.fxa.manager.SCOPE_SYNC
 import mozilla.components.service.fxa.sync.SyncStatusObserver
 import mozilla.components.support.base.log.logger.Logger
 import org.mozilla.fenix.R
 import org.mozilla.fenix.ext.components
+import org.mozilla.fenix.kaizen.SilentlyClosedTabs
 import org.mozilla.fenix.kaizen.containers.ContainerColor
 import org.mozilla.fenix.kaizen.containers.ContainerRemoval
 import org.mozilla.fenix.kaizen.containers.ContainerRemover
@@ -71,6 +80,7 @@ enum class KaizenSyncProblem {
  * State of spaces sync.
  *
  * @property enabled Whether spaces sync is turned on in Kaizen.
+ * @property normalTabs Whether tabs that are not pinned are synced too, like Zen's "Include unpinned tabs".
  * @property signedIn Whether a Mozilla account is signed in.
  * @property syncing Whether a sync is running.
  * @property lastSynced Time of the last complete sync in milliseconds, or 0.
@@ -78,6 +88,7 @@ enum class KaizenSyncProblem {
  */
 data class KaizenSyncStatus(
     val enabled: Boolean = true,
+    val normalTabs: Boolean = true,
     val signedIn: Boolean = false,
     val syncing: Boolean = false,
     val lastSynced: Long = 0L,
@@ -94,6 +105,7 @@ data class KaizenSyncStatus(
 object KaizenSync {
     private const val PREFS_NAME = "kaizen_sync"
     private const val KEY_ENABLED = "enabled"
+    private const val KEY_NORMAL_TABS = "normal_tabs"
     private const val STORE_FILE = "kaizen_spaces_sync.json"
     private const val LOCAL_CHANGE_DELAY_MS = 3_000L
     private const val FOREGROUND_POLL_MS = 5 * 60_000L
@@ -132,7 +144,13 @@ object KaizenSync {
         val app = context.applicationContext
         val prefs = app.getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE)
         val store = SpacesSyncStore(File(app.filesDir, STORE_FILE))
-        _status.update { it.copy(enabled = prefs.getBoolean(KEY_ENABLED, true), lastSynced = store.load().lastSynced) }
+        _status.update {
+            it.copy(
+                enabled = prefs.getBoolean(KEY_ENABLED, true),
+                normalTabs = prefs.getBoolean(KEY_NORMAL_TABS, true),
+                lastSynced = store.load().lastSynced,
+            )
+        }
 
         scope.launch(Dispatchers.Main) {
             // The fetch client comes with the Gecko runtime, which is created on the main thread.
@@ -176,6 +194,13 @@ object KaizenSync {
         if (enabled) syncNow()
     }
 
+    /** Syncs tabs that are not pinned too, or only pinned tabs, folders and essentials. */
+    fun setNormalTabs(context: Context, enabled: Boolean) {
+        context.getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE).edit { putBoolean(KEY_NORMAL_TABS, enabled) }
+        _status.update { it.copy(normalTabs = enabled) }
+        syncNow()
+    }
+
     private fun request() {
         requests.trySend(false)
     }
@@ -184,7 +209,11 @@ object KaizenSync {
     private fun watchLocalChanges(context: Context) = scope.launch {
         val repository = WorkspaceRepository.get(context)
         val containers = KaizenContainerStorage.get(context)
-        combine(repository.state, containers.records) { _, _ -> }
+        // Tabs that are not pinned count by what their records hold: address, title and container.
+        val tabs = context.components.core.store.flow()
+            .map { state -> state.normalTabs.map { Triple(it.id, it.content.url to it.content.title, it.contextId) } }
+            .distinctUntilChanged()
+        combine(repository.state, containers.records, tabs) { _, _, _ -> }
             .drop(1)
             .debounce(LOCAL_CHANGE_DELAY_MS)
             .collect { if (hasLocalChanges()) request() }
@@ -325,7 +354,80 @@ private class KaizenSpacesData(private val context: Context) : SpacesLocalData {
 
     override suspend fun read(): LocalSpaces {
         containers.load()
-        return LocalSpaces(repository.state.value, containers.records.value.orEmpty())
+        val browser = context.components.core.store.state
+        val tabs = browser.takeIf { it.restoreComplete }?.normalTabs?.map { tab ->
+            LocalTab(
+                id = tab.id,
+                url = tab.content.url,
+                title = tab.content.title,
+                contextId = tab.contextId,
+                awake = tab.engineState.engineSession != null,
+            )
+        }
+        return LocalSpaces(
+            state = repository.state.value,
+            containers = containers.records.value.orEmpty(),
+            normalTabs = KaizenSync.status.value.normalTabs,
+            tabs = tabs,
+        )
+    }
+
+    override suspend fun runTabOps(ops: List<TabOp>) = withContext(Dispatchers.Main) {
+        val store = context.components.core.store
+        for (op in ops) {
+            when (op) {
+                is TabOp.Open -> {
+                    if (store.state.findTab(op.id) != null) continue
+                    repository.expectTab(op.id)
+                    store.dispatch(
+                        TabListAction.AddTabAction(
+                            createTab(url = op.url, id = op.id, title = op.title, contextId = op.contextId),
+                            select = false,
+                        ),
+                    )
+                    repository.assignTab(op.id, op.workspaceId)
+                }
+                is TabOp.Retarget -> retarget(store, op)
+                is TabOp.Close -> if (store.state.findTab(op.id) != null) {
+                    SilentlyClosedTabs.add(op.id)
+                    store.dispatch(TabListAction.RemoveTabAction(op.id, selectParentIfExists = false))
+                }
+            }
+        }
+    }
+
+    /**
+     * Replaces tab [TabOp.Retarget.id], whose page is not loaded, with one at the new address under the same id and in
+     * the same place, as a tab keeps the history it was restored with. A tab that is shown or in a split view stays.
+     */
+    private fun retarget(store: BrowserStore, op: TabOp.Retarget) {
+        val state = store.state
+        val tab = state.findTab(op.id) ?: return
+        val splits = repository.state.value
+        if (tab.engineState.engineSession != null || state.selectedTabId == op.id || splits.splitOf(op.id) != null) return
+        val index = state.tabs.indexOf(tab)
+        val before = state.tabs.getOrNull(index - 1)
+        val after = state.tabs.getOrNull(index + 1)
+        repository.expectTab(op.id)
+        SilentlyClosedTabs.add(op.id)
+        store.dispatch(TabListAction.RemoveTabAction(op.id, selectParentIfExists = false))
+        store.dispatch(
+            TabListAction.AddTabAction(
+                createTab(
+                    url = op.url,
+                    id = op.id,
+                    title = op.title,
+                    contextId = tab.contextId,
+                    lastAccess = tab.lastAccess,
+                    createdAt = tab.createdAt,
+                ),
+                select = false,
+            ),
+        )
+        when {
+            before != null -> store.dispatch(TabListAction.MoveTabsAction(listOf(op.id), before.id, placeAfter = true))
+            after != null -> store.dispatch(TabListAction.MoveTabsAction(listOf(op.id), after.id, placeAfter = false))
+        }
     }
 
     override fun <T> update(transform: (WorkspaceState) -> Pair<WorkspaceState, T>): T = repository.update(transform)

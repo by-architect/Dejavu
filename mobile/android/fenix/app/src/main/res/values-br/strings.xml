@@ -397,7 +397,7 @@
   <!-- Preference Category for settings related to Search address bar -->
   <string name="preferences_settings_address_bar">Gwellvezioù ar varrenn chomlec’h</string>
   <!-- Preference Category for settings to Firefox Suggest -->
-  <string name="preference_search_address_bar_fx_suggest" tools:ignore="BrandUsage">Barrenn chomlec\'hioù - Alioù Firefox</string>
+  <string name="preference_search_address_bar_fx_suggest" tools:ignore="BrandUsage">Barrenn chomlec\'hioù - Alioù Dejavu</string>
   <!-- Preference link to Learn more about Firefox Suggest -->
   <string name="preference_search_learn_about_fx_suggest" tools:ignore="BrandUsage">Gouzout hiroc\'h diwar-benn ar pezh a vez aliet gant Firefox</string>
   <!-- Preference link to rating Fenix on the Play Store -->
@@ -667,7 +667,7 @@
   -->
   <string name="addon_ga_message_title_2" tools:ignore="UnusedResources">Askouezhioù nevez hegerz.</string>
   <!-- Body of the Nimbus message for add-ons general availability. 'Firefox' intentionally hardcoded here -->
-  <string name="addon_ga_message_body" tools:ignore="BrandUsage,UnusedResources">Dizoloit ouzhpenn 100 askouezh nevez a sikouro ac’hanoc’h d’ober ar pezh a fell deoc’h gant Firefox.</string>
+  <string name="addon_ga_message_body" tools:ignore="BrandUsage,UnusedResources">Dizoloit ouzhpenn 100 askouezh nevez a sikouro ac’hanoc’h d’ober ar pezh a fell deoc’h gant Dejavu.</string>
   <!-- Button text of the Nimbus message for extensions general availability. -->
   <string name="addon_ga_message_button_2" tools:ignore="UnusedResources">Ergerzhout an askouezhioù</string>
   <!--
@@ -1481,19 +1481,19 @@
     Title shown in the notification that pops up to remind the user to set fenix as default browser.
     The app name is in the text, due to limitations with localizing Nimbus experiments
   -->
-  <string name="nimbus_notification_default_browser_title" tools:ignore="BrandUsage,UnusedResources">Firefox a zo prim ha prevez</string>
+  <string name="nimbus_notification_default_browser_title" tools:ignore="BrandUsage,UnusedResources">Dejavu a zo prim ha prevez</string>
   <!--
     Text shown in the notification that pops up to remind the user to set fenix as default browser.
     The app name is in the text, due to limitations with localizing Nimbus experiments
   -->
-  <string name="nimbus_notification_default_browser_text" tools:ignore="BrandUsage,UnusedResources">Lakaat Firefox da vezañ ho merdeer dre ziouer</string>
+  <string name="nimbus_notification_default_browser_text" tools:ignore="BrandUsage,UnusedResources">Lakaat Dejavu da vezañ ho merdeer dre ziouer</string>
   <!--
     Survey
 
     Text shown in the fullscreen message that pops up to ask user to take a short survey.
     The app name is in the text, due to limitations with localizing Nimbus experiments
   -->
-  <string name="nimbus_survey_message_text" tools:ignore="BrandUsage">Sikourit da wellaat Firefox en ul leuniañ ur sontadegig.</string>
+  <string name="nimbus_survey_message_text" tools:ignore="BrandUsage">Sikourit da wellaat Dejavu en ul leuniañ ur sontadegig.</string>
   <!-- Preference for taking the short survey. -->
   <string name="preferences_take_survey">Kemer perzh er sontadeg</string>
   <!-- Preference for not taking the short survey. -->
@@ -2196,7 +2196,7 @@
   -->
   <string name="inactive_tabs_auto_close_message_header" tools:ignore="UnusedResources">Serriñ emgefreek goude ur miz?</string>
   <!-- A description below the header to notify the user what the inactive tabs auto-close feature is. -->
-  <string name="inactive_tabs_auto_close_message_description" tools:ignore="BrandUsage,UnusedResources">Firefox a c’hall serriñ ivinelloù n’ho peus ket gwelet er miz diwezhañ.</string>
+  <string name="inactive_tabs_auto_close_message_description" tools:ignore="BrandUsage,UnusedResources">Dejavu a c’hall serriñ ivinelloù n’ho peus ket gwelet er miz diwezhañ.</string>
   <!-- A call to action below the description to allow the user to turn on the auto closing of inactive tabs. -->
   <string name="inactive_tabs_auto_close_message_action" tools:ignore="UnusedResources">GWEREDEKAAT AR SERRIÑ EMGEFREEK</string>
   <!-- Text for the snackbar to confirm auto-close is enabled for inactive tabs -->
@@ -2206,7 +2206,7 @@
 
     Search suggestions title for Firefox Suggest.
   -->
-  <string name="firefox_suggest_header" tools:ignore="BrandUsage">Firefox a ginnig</string>
+  <string name="firefox_suggest_header" tools:ignore="BrandUsage">Dejavu a ginnig</string>
   <!-- Title for search suggestions when Google is the default search suggestion engine. -->
   <string name="google_search_engine_suggestion_header">Klask Google</string>
   <!-- Title for search suggestions when the default search suggestion engine is anything other than Google. %s is default search engine name. -->
@@ -2218,7 +2218,7 @@
   -->
   <string name="default_browser_experiment_card_title">Cheñch ho merdeer dre ziouer</string>
   <!-- Default browser card text -->
-  <string name="default_browser_experiment_card_text" tools:ignore="BrandUsage">Digeriñ liammoù al lec’hiennoù, posteloù ha kemennadennoù e Firefox en un doare emgefreek.</string>
+  <string name="default_browser_experiment_card_text" tools:ignore="BrandUsage">Digeriñ liammoù al lec’hiennoù, posteloù ha kemennadennoù e Dejavu en un doare emgefreek.</string>
   <!-- Content description radio buttons with a link to more information -->
   <string name="radio_preference_info_content_description">Klikit da gaout muioc’h a vunudoù</string>
   <!-- Content description for the action bar "up" button -->

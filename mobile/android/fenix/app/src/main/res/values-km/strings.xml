@@ -538,7 +538,7 @@
   <!-- Preference Category for settings related to Search address bar -->
   <string name="preferences_settings_address_bar">ចំណូលចិត្តរបារអាសយដ្ឋាន</string>
   <!-- Preference Category for settings to Firefox Suggest -->
-  <string name="preference_search_address_bar_fx_suggest" tools:ignore="BrandUsage">របារអាសយដ្ឋាន - ការណែនាំរបស់ Firefox</string>
+  <string name="preference_search_address_bar_fx_suggest" tools:ignore="BrandUsage">របារអាសយដ្ឋាន - ការណែនាំរបស់ Dejavu</string>
   <!-- Preference link to Learn more about Firefox Suggest -->
   <string name="preference_search_learn_about_fx_suggest" tools:ignore="BrandUsage">ស្វែងយល់បន្ថែមអំពីការណែនាំរបស់ Firefox</string>
   <!-- Preference link to rating Fenix on the Play Store -->
@@ -781,7 +781,7 @@
   -->
   <string name="addon_ga_message_title_2" tools:ignore="UnusedResources">ផ្នែកបន្ថែមថ្មីៗ ឥឡូវមានហើយ</string>
   <!-- Body of the Nimbus message for add-ons general availability. 'Firefox' intentionally hardcoded here -->
-  <string name="addon_ga_message_body" tools:ignore="BrandUsage,UnusedResources">សូមពិនិត្យមើលផ្នែកបន្ថែមថ្មីជាង 100 ដែលអនុញ្ញាតឱ្យអ្នកបង្កើត Firefox ដោយខ្លួនឯងបាន។</string>
+  <string name="addon_ga_message_body" tools:ignore="BrandUsage,UnusedResources">សូមពិនិត្យមើលផ្នែកបន្ថែមថ្មីជាង 100 ដែលអនុញ្ញាតឱ្យអ្នកបង្កើត Dejavu ដោយខ្លួនឯងបាន។</string>
   <!-- Button text of the Nimbus message for extensions general availability. -->
   <string name="addon_ga_message_button_2" tools:ignore="UnusedResources">រុករកផ្នែកបន្ថែម</string>
   <!--

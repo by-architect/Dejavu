@@ -183,7 +183,7 @@ class AboutFragment(private val toastHandler: ToastHandler = DefaultToastHandler
                 ""
             }
 
-        val content = getString(R.string.about_content, appName)
+        val content = getString(R.string.kaizen_about_content, appName)
         val buildDate = BuildConfig.BUILD_DATE
 
         binding.aboutText.text = aboutText

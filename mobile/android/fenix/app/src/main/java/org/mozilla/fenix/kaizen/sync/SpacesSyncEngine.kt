@@ -32,6 +32,9 @@ internal interface SpacesLocalData {
     suspend fun removeContainer(contextId: String)
 
     fun builtinName(container: BuiltinContainer): String
+
+    /** Opens, points elsewhere or closes open tabs as applied records ask. */
+    suspend fun runTabOps(ops: List<TabOp>) = Unit
 }
 
 /** How a sync ended when it did not throw. */
@@ -86,7 +89,7 @@ internal class SpacesSyncEngine(
     suspend fun hasLocalChanges(): Boolean {
         val data = store.load()
         if (data.syncId == null) return false
-        return SpacesProjector(local.read(), data.server).project().changesAgainst(data.server).isNotEmpty()
+        return SpacesProjector(local.read(), data.server, data.seen).project().changesAgainst(data.server).isNotEmpty()
     }
 
     /**
@@ -137,13 +140,14 @@ internal class SpacesSyncEngine(
 
         val batch = LinkedHashMap<String, SpacesRecord>()
         data.failed.values.forEach { batch[it.id] = it }
+        unopenedTabs(local.read(), data).forEach { batch[it.id] = it }
         batch.putAll(incoming)
         if (batch.isNotEmpty()) applyIncoming(batch.values.toList(), data)
         data.lastModified = collectionModified
         store.save(data)
 
         val current = local.read()
-        val changes = SpacesProjector(current, data.server).project().changesAgainst(data.server)
+        val changes = SpacesProjector(current, data.server, data.seen).project().changesAgainst(data.server)
         if (allowWipeCheck && looksWiped(current, changes, data)) {
             // Data that looks freshly reset must not delete everything other devices have; take it back instead.
             log("Local data looks reset, downloading everything again instead of deleting it on the server")
@@ -160,9 +164,32 @@ internal class SpacesSyncEngine(
             sent = uploaded.succeeded.size
             data.lastModified = uploaded.lastModified ?: data.lastModified
         }
+        rememberTabs(current, data)
         data.lastSynced = clock.millis()
         store.save(data)
         return SpacesSyncResult.Synced(received = incoming.size, sent = sent, pending = data.failed.size)
+    }
+
+    /**
+     * The server's tabs that are not pinned and were never open here, like Zen's unpinned tabs from before they were
+     * synced here too. Applying them again opens them, where the projection would otherwise leave them out.
+     */
+    private fun unopenedTabs(current: LocalSpaces, data: SpacesSyncData): List<SpacesRecord> {
+        val tabs = current.tabs?.takeIf { current.normalTabs } ?: return emptyList()
+        val here = tabs.map { current.state.syncIdOf(it.id) }.toSet() + current.state.pins.map { it.id }
+        return data.server.values.filter { it.isNormalTab && it.id !in here && it.id !in data.seen }
+    }
+
+    /** Remembers the tabs that are not pinned as they are now, to find later which of them changed or closed here. */
+    private fun rememberTabs(current: LocalSpaces, data: SpacesSyncData) {
+        val tabs = current.tabs?.takeIf { current.normalTabs } ?: return
+        val pinned = current.state.pins.mapNotNull { it.tabId }.toSet()
+        val now = tabs.filterNot { it.id in pinned }.associate { current.state.syncIdOf(it.id) to it.fingerprint }
+        // Tabs this sync opened may not show in the browser yet; they count as seen so closing them deletes them.
+        val opening = data.seen.filterKeys { it !in now && data.server[it]?.isNormalTab == true && it in data.opened }
+        data.seen.clear()
+        data.seen.putAll(now + opening)
+        data.opened.clear()
     }
 
     private fun currentToken(auth: SyncAuth): SyncToken =
@@ -295,10 +322,19 @@ internal class SpacesSyncEngine(
             firstSync = data.server.isEmpty(),
             defaultName = local.defaultWorkspaceName,
             now = clock.millis(),
+            normalTabs = before.normalTabs,
+            tabs = before.tabs?.associateBy { it.id },
         )
         val result = local.update { state -> applier.apply(state, others).let { it.state to it } }
         applied += result.applied
         failed += result.failed
+        if (result.tabOps.isNotEmpty()) {
+            local.runTabOps(result.tabOps)
+            result.tabOps.filterIsInstance<TabOp.Open>().forEach { op ->
+                data.seen[op.id] = LocalTab(op.id, op.url, op.title, op.contextId, awake = false).fingerprint
+                data.opened += op.id
+            }
+        }
 
         for (record in containerRecords.filter { it.deleted }) {
             if (record.id in containerIds) local.removeContainer(record.id)
@@ -343,7 +379,9 @@ internal class SpacesSyncEngine(
      */
     private fun looksWiped(current: LocalSpaces, changes: List<SpacesRecord>, data: SpacesSyncData): Boolean {
         val deletions = changes.count { change ->
-            change.deleted && data.server[change.id]?.kind in setOf(RecordKind.SPACE, RecordKind.TAB, RecordKind.FOLDER)
+            val known = data.server[change.id]
+            change.deleted && known != null && !known.isNormalTab &&
+                known.kind in setOf(RecordKind.SPACE, RecordKind.TAB, RecordKind.FOLDER)
         }
         val workspace = current.state.workspaces.singleOrNull() ?: return false
         return deletions >= WIPE_DELETIONS && current.state.pins.isEmpty() && data.server[workspace.id] == null

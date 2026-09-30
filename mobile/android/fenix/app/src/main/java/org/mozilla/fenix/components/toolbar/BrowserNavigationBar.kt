@@ -122,7 +122,9 @@ class BrowserNavigationBar(
                 false
             }
 
-        if (uiState.displayState.navigationActions.isNotEmpty()) {
+        // Kaizen's actions bar holds all the buttons, so it shows in every window size and orientation.
+        val isKaizenBar = KaizenToolbar.enabled && customTabSessionId == null
+        if (isKaizenBar || uiState.displayState.navigationActions.isNotEmpty()) {
             AnimatedVisibility(
                 visible = !isKeyboardVisible,
                 enter =
@@ -137,7 +139,7 @@ class BrowserNavigationBar(
                     ),
             ) {
                 FirefoxTheme {
-                    if (KaizenToolbar.enabled && customTabSessionId == null) {
+                    if (isKaizenBar) {
                         KaizenActionsBar(onEvent = { toolbarStore.dispatch(it) })
                         return@FirefoxTheme
                     }

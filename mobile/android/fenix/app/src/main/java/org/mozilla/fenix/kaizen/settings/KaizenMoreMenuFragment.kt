@@ -48,6 +48,7 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import org.mozilla.fenix.R
+import org.mozilla.fenix.compose.list.SwitchListItem
 import org.mozilla.fenix.compose.settings.SettingsSectionHeader
 import org.mozilla.fenix.kaizen.menu.MoreMenu
 import org.mozilla.fenix.kaizen.menu.MoreMenuEntry
@@ -62,6 +63,7 @@ class KaizenMoreMenuFragment : KaizenComposeFragment(R.string.kaizen_settings_mo
         val settings = remember { kaizenSettings() }
         val savedRows by settings.moreMenuRows.collectAsState()
         val customActions by settings.customActions.collectAsState()
+        val editHidden by settings.moreMenuEditHidden.collectAsState()
         val rows = remember(savedRows, customActions) {
             savedRows.map { row -> row.filter { MoreMenuLayout.entryOf(it, customActions) != null } }.filter { it.isNotEmpty() }
         }
@@ -75,6 +77,17 @@ class KaizenMoreMenuFragment : KaizenComposeFragment(R.string.kaizen_settings_mo
                     style = MaterialTheme.typography.bodyMedium,
                     color = MaterialTheme.colorScheme.onSurfaceVariant,
                     modifier = Modifier.padding(16.dp),
+                )
+            }
+            item {
+                SwitchListItem(
+                    label = stringResource(R.string.kaizen_more_menu_hide_edit),
+                    description = stringResource(R.string.kaizen_more_menu_hide_edit_summary),
+                    maxDescriptionLines = 2,
+                    checked = editHidden,
+                    showSwitchAfter = true,
+                    modifier = Modifier.settingsCard(index = 0, count = 1),
+                    onClick = settings::setMoreMenuEditHidden,
                 )
             }
             item {
@@ -97,6 +110,7 @@ class KaizenMoreMenuFragment : KaizenComposeFragment(R.string.kaizen_settings_mo
                         onToggleExtensions = {},
                         onEntryClick = {},
                         onManageExtensions = {},
+                        onEdit = {}.takeUnless { editHidden },
                     )
                 }
             }

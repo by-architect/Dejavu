@@ -729,7 +729,7 @@
   <!-- Preference Category for settings related to Search address bar -->
   <string name="preferences_settings_address_bar">تفضيلات شريط العناوين</string>
   <!-- Preference Category for settings to Firefox Suggest -->
-  <string name="preference_search_address_bar_fx_suggest" tools:ignore="BrandUsage">شريط العناوين - اقتراح Firefox</string>
+  <string name="preference_search_address_bar_fx_suggest" tools:ignore="BrandUsage">شريط العناوين - اقتراح Dejavu</string>
   <!-- Preference link to Learn more about Firefox Suggest -->
   <string name="preference_search_learn_about_fx_suggest" tools:ignore="BrandUsage">تعرف على المزيد حول اقتراحات Firefox</string>
   <!-- Preference link to rating Fenix on the Play Store -->
@@ -1087,7 +1087,7 @@
   -->
   <string name="addon_ga_message_title_2" tools:ignore="UnusedResources">تتوفر امتدادات جديدة الآن</string>
   <!-- Body of the Nimbus message for add-ons general availability. 'Firefox' intentionally hardcoded here -->
-  <string name="addon_ga_message_body" tools:ignore="BrandUsage,UnusedResources">تعرف على أكثر من 100 امتداد جديد يتيح لك تخصيص Firefox كما تشاء.</string>
+  <string name="addon_ga_message_body" tools:ignore="BrandUsage,UnusedResources">تعرف على أكثر من 100 امتداد جديد يتيح لك تخصيص Dejavu كما تشاء.</string>
   <!-- Button text of the Nimbus message for extensions general availability. -->
   <string name="addon_ga_message_button_2" tools:ignore="UnusedResources">استكشف الامتدادات</string>
   <!--
@@ -1191,7 +1191,7 @@
   <!-- Preference switch for usage and technical learn more link in new compose -->
   <string name="preference_usage_data_learn_more_2">اعرف المزيد عن البيانات الفنية</string>
   <!-- Preference description for marketing data collection. Note: The words "Firefox" should NOT be translated -->
-  <string name="preferences_usage_data_description_1" tools:ignore="BrandUsage">تساعدنا البيانات المتعلقة بجهازك وتكوينات الأجهزة وكيفية الاستخدام في تطوير ميزات Firefox ورفع كفاءة الأداء والاستقرار.</string>
+  <string name="preferences_usage_data_description_1" tools:ignore="BrandUsage">تساعدنا البيانات المتعلقة بجهازك وتكوينات الأجهزة وكيفية الاستخدام في تطوير ميزات Dejavu ورفع كفاءة الأداء والاستقرار.</string>
   <!-- Preference switch for daily usage ping data collection -->
   <string name="preferences_daily_usage_ping_title">تنبيه الاستخدام اليومي</string>
   <string name="preferences_daily_usage_ping_description" tools:ignore="BrandUsage">يساعد هذا Mozilla على تقدير عدد المستخدمين النشطين.</string>
@@ -1214,7 +1214,7 @@
     Preference description for marketing data collection.
     Note: The words "Firefox" and "Mozilla" should NOT be translated. “That you use it” is to mean that the user is opting in to sharing that they are continuing to use Firefox after installing it; not that Firefox is tracking their “usage” or what they’re using it for.
   -->
-  <string name="preferences_marketing_data_description_4" tools:ignore="BrandUsage">شارك معلومات حول كيفية اكتشافك لـ Firefox وأنك تستخدمه مع شركاء Mozilla في مجال تكنولوجيا التسويق.</string>
+  <string name="preferences_marketing_data_description_4" tools:ignore="BrandUsage">شارك معلومات حول كيفية اكتشافك لـ Dejavu وأنك تستخدمه مع شركاء Mozilla في مجال تكنولوجيا التسويق.</string>
   <!-- Learn more link for marketing data preference -->
   <string name="preferences_marketing_data_learn_more">اعرف المزيد عن بيانات التسويق</string>
   <!-- Title for studies preferences -->
@@ -1442,7 +1442,7 @@
   <!-- Title of the active section on the studies list -->
   <string name="studies_active">نشطة</string>
   <!-- Description for studies. Note: The word "Firefox" should NOT be translated -->
-  <string name="studies_description_4" tools:ignore="BrandUsage">يختار Firefox مستخدمين عشوائيًا لاختبار الميزات، مما يحسن الجودة للجميع.</string>
+  <string name="studies_description_4" tools:ignore="BrandUsage">يختار Dejavu مستخدمين عشوائيًا لاختبار الميزات، مما يحسن الجودة للجميع.</string>
   <!-- Title of the Studies data preference -->
   <string name="studies_title_2">السماح بدراسات الميزات</string>
   <!-- Learn more link for studies, links to an article for more information about studies. -->
@@ -1454,7 +1454,7 @@
   -->
   <string name="remote_improvements_title">السماح بإجراء تحسينات عن بُعد</string>
   <!-- Description for remote improvements. Note: The word "Firefox" should NOT be translated -->
-  <string name="remote_improvements_description" tools:ignore="BrandUsage">سيقوم Firefox بتحسين الميزات والأداء والثبات بين التحديثات. تُطبّق التغييرات عن بُعد.</string>
+  <string name="remote_improvements_description" tools:ignore="BrandUsage">سيقوم Dejavu بتحسين الميزات والأداء والثبات بين التحديثات. تُطبّق التغييرات عن بُعد.</string>
   <!-- Learn more link for remote improvements, links to an article for more information about rollouts. -->
   <string name="remote_improvements_learn_more">اطّلع على المزيد</string>
   <!-- Title for remote improvements preference in Advanced settings -->
@@ -2396,19 +2396,19 @@
     Title shown in the notification that pops up to remind the user to set fenix as default browser.
     The app name is in the text, due to limitations with localizing Nimbus experiments
   -->
-  <string name="nimbus_notification_default_browser_title" tools:ignore="BrandUsage,UnusedResources">‏Firefox سريع وخاص</string>
+  <string name="nimbus_notification_default_browser_title" tools:ignore="BrandUsage,UnusedResources">‏Dejavu سريع وخاص</string>
   <!--
     Text shown in the notification that pops up to remind the user to set fenix as default browser.
     The app name is in the text, due to limitations with localizing Nimbus experiments
   -->
-  <string name="nimbus_notification_default_browser_text" tools:ignore="BrandUsage,UnusedResources">اجعل Firefox متصفّحك المبدئي</string>
+  <string name="nimbus_notification_default_browser_text" tools:ignore="BrandUsage,UnusedResources">اجعل Dejavu متصفّحك المبدئي</string>
   <!--
     Survey
 
     Text shown in the fullscreen message that pops up to ask user to take a short survey.
     The app name is in the text, due to limitations with localizing Nimbus experiments
   -->
-  <string name="nimbus_survey_message_text" tools:ignore="BrandUsage">ساعدنا على تحسين متصفح Firefox من خلال المشاركة في استطلاع رأي قصير.</string>
+  <string name="nimbus_survey_message_text" tools:ignore="BrandUsage">ساعدنا على تحسين متصفح Dejavu من خلال المشاركة في استطلاع رأي قصير.</string>
   <!-- Preference for taking the short survey. -->
   <string name="preferences_take_survey">شارك في الاستطلاع</string>
   <!-- Preference for not taking the short survey. -->
@@ -3401,7 +3401,7 @@
   -->
   <string name="inactive_tabs_auto_close_message_header" tools:ignore="UnusedResources">أتريد إغلاقها تلقائيًا بعد شهر؟</string>
   <!-- A description below the header to notify the user what the inactive tabs auto-close feature is. -->
-  <string name="inactive_tabs_auto_close_message_description" tools:ignore="BrandUsage,UnusedResources">سيُغلق Firefox التبويبات التي لم تعرضها منذ شهر تلقائيًا.</string>
+  <string name="inactive_tabs_auto_close_message_description" tools:ignore="BrandUsage,UnusedResources">سيُغلق Dejavu التبويبات التي لم تعرضها منذ شهر تلقائيًا.</string>
   <!-- A call to action below the description to allow the user to turn on the auto closing of inactive tabs. -->
   <string name="inactive_tabs_auto_close_message_action" tools:ignore="UnusedResources">فعّل الإغلاق التلقائي</string>
   <!-- Text for the snackbar to confirm auto-close is enabled for inactive tabs -->
@@ -3411,7 +3411,7 @@
 
     Search suggestions title for Firefox Suggest.
   -->
-  <string name="firefox_suggest_header" tools:ignore="BrandUsage">يقترح Firefox</string>
+  <string name="firefox_suggest_header" tools:ignore="BrandUsage">يقترح Dejavu</string>
   <!--
     Search suggestions title for trending search suggestions.
     %s is a placeholder for the name of the search engine providing the trending search suggestions.
@@ -3430,7 +3430,7 @@
   -->
   <string name="default_browser_experiment_card_title">تغيير متصفحك الافتراضي</string>
   <!-- Default browser card text -->
-  <string name="default_browser_experiment_card_text" tools:ignore="BrandUsage">اضبط روابط المواقع والبريد الإلكتروني والرسائل لتفتح تلقائيًا في Firefox.</string>
+  <string name="default_browser_experiment_card_text" tools:ignore="BrandUsage">اضبط روابط المواقع والبريد الإلكتروني والرسائل لتفتح تلقائيًا في Dejavu.</string>
   <!-- Content description radio buttons with a link to more information -->
   <string name="radio_preference_info_content_description">انقر لتفاصيل أكثر</string>
   <!-- Content description for the action bar "up" button -->

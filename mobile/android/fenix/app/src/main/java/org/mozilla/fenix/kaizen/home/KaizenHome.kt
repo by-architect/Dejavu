@@ -644,8 +644,13 @@ private fun WorkspaceBar(
     val activeId = workspaces.getOrNull(activeIndex)?.id
     val scrollState = rememberScrollState()
 
-    // With many workspaces the row scrolls; keep the shown one in view.
-    LaunchedEffect(activeId, lefts[activeId], scrollState.viewportSize) {
+    // With many workspaces the row scrolls; keep the shown one in view. The private workspace comes last.
+    val isPrivateActive = hasPrivate && activeIndex == workspaces.size
+    LaunchedEffect(activeId, lefts[activeId], scrollState.viewportSize, isPrivateActive, scrollState.maxValue) {
+        if (isPrivateActive) {
+            scrollState.animateScrollTo(scrollState.maxValue)
+            return@LaunchedEffect
+        }
         val left = activeId?.let { lefts[it] } ?: return@LaunchedEffect
         val target = (left + cellWidth / 2 - scrollState.viewportSize / 2f).roundToInt()
         scrollState.animateScrollTo(target.coerceIn(0, scrollState.maxValue))
@@ -732,21 +737,29 @@ private fun WorkspaceBar(
                 )
             }
             if (hasPrivate) {
-                val isPrivateActive = activeIndex == workspaces.size
                 Box(
                     contentAlignment = Alignment.Center,
                     modifier = Modifier
                         .size(WorkspaceCellSize)
                         .clip(CircleShape)
-                        .background(if (isPrivateActive) MaterialTheme.colorScheme.surfaceContainerHighest else Color.Transparent)
                         .clickable(onClickLabel = stringResource(R.string.kaizen_private_workspace), onClick = onPrivateClick),
                 ) {
-                    Icon(
-                        painter = painterResource(iconsR.drawable.mozac_ic_private_mode_24),
-                        contentDescription = stringResource(R.string.kaizen_private_workspace),
-                        tint = MaterialTheme.colorScheme.onSurface,
-                        modifier = Modifier.size(18.dp).alpha(if (isPrivateActive) 1f else INACTIVE_ICON_ALPHA),
-                    )
+                    Box(
+                        contentAlignment = Alignment.Center,
+                        modifier = Modifier
+                            .size(WorkspaceMarkSize)
+                            .clip(CircleShape)
+                            .background(
+                                if (isPrivateActive) MaterialTheme.colorScheme.surfaceContainerHighest else Color.Transparent,
+                            ),
+                    ) {
+                        Icon(
+                            painter = painterResource(iconsR.drawable.mozac_ic_private_mode_24),
+                            contentDescription = stringResource(R.string.kaizen_private_workspace),
+                            tint = MaterialTheme.colorScheme.onSurface,
+                            modifier = Modifier.size(18.dp).alpha(if (isPrivateActive) 1f else INACTIVE_ICON_ALPHA),
+                        )
+                    }
                 }
             }
         }
@@ -764,7 +777,8 @@ private fun WorkspaceBar(
     }
 }
 
-private val WorkspaceCellSize = 36.dp
+private val WorkspaceCellSize = 48.dp
+private val WorkspaceMarkSize = 36.dp
 private val FadingEdgeWidth = 20.dp
 private const val INACTIVE_WORKSPACE_ALPHA = 0.45f
 private const val INACTIVE_ICON_ALPHA = 0.55f
@@ -792,26 +806,30 @@ private fun WorkspaceDot(
         modifier = modifier
             .size(WorkspaceCellSize)
             .clip(CircleShape)
-            .background(background)
             .clickable(onClick = onClick)
             .semantics {
                 contentDescription = workspace.name
                 selected = isActive
             },
     ) {
-        if (icon != null) {
-            Text(
-                text = icon,
-                fontSize = 17.sp,
-                modifier = Modifier.alpha(if (isActive || isDragged) 1f else INACTIVE_ICON_ALPHA),
-            )
-        } else {
-            Box(
-                modifier = Modifier
-                    .size(if (isActive) 10.dp else 8.dp)
-                    .clip(CircleShape)
-                    .background(if (isActive) base else base.copy(alpha = INACTIVE_WORKSPACE_ALPHA)),
-            )
+        Box(
+            contentAlignment = Alignment.Center,
+            modifier = Modifier.size(WorkspaceMarkSize).clip(CircleShape).background(background),
+        ) {
+            if (icon != null) {
+                Text(
+                    text = icon,
+                    fontSize = 17.sp,
+                    modifier = Modifier.alpha(if (isActive || isDragged) 1f else INACTIVE_ICON_ALPHA),
+                )
+            } else {
+                Box(
+                    modifier = Modifier
+                        .size(if (isActive) 10.dp else 8.dp)
+                        .clip(CircleShape)
+                        .background(if (isActive) base else base.copy(alpha = INACTIVE_WORKSPACE_ALPHA)),
+                )
+            }
         }
     }
 }

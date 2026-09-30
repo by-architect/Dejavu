@@ -731,7 +731,7 @@
   <!-- Preference Category for settings related to Search address bar -->
   <string name="preferences_settings_address_bar">Postavke adresne trake</string>
   <!-- Preference Category for settings to Firefox Suggest -->
-  <string name="preference_search_address_bar_fx_suggest" tools:ignore="BrandUsage">Adresna traka – Firefox prijedlozi</string>
+  <string name="preference_search_address_bar_fx_suggest" tools:ignore="BrandUsage">Adresna traka – Dejavu prijedlozi</string>
   <!-- Preference link to Learn more about Firefox Suggest -->
   <string name="preference_search_learn_about_fx_suggest" tools:ignore="BrandUsage">Saznaj više o funkciji „Firefox prijedlozi”</string>
   <!-- Preference link to rating Fenix on the Play Store -->
@@ -1091,7 +1091,7 @@
   -->
   <string name="addon_ga_message_title_2" tools:ignore="UnusedResources">Dostupna su nova proširenja</string>
   <!-- Body of the Nimbus message for add-ons general availability. 'Firefox' intentionally hardcoded here -->
-  <string name="addon_ga_message_body" tools:ignore="BrandUsage,UnusedResources">Pogledaj više od 100 novih proširenja koja omogućuju prilagoditi Firefox.</string>
+  <string name="addon_ga_message_body" tools:ignore="BrandUsage,UnusedResources">Pogledaj više od 100 novih proširenja koja omogućuju prilagoditi Dejavu.</string>
   <!-- Button text of the Nimbus message for extensions general availability. -->
   <string name="addon_ga_message_button_2" tools:ignore="UnusedResources">Istraži dodatke</string>
   <!--
@@ -1195,7 +1195,7 @@
   <!-- Preference switch for usage and technical learn more link in new compose -->
   <string name="preference_usage_data_learn_more_2">Saznaj više o tehničkim podacima</string>
   <!-- Preference description for marketing data collection. Note: The words "Firefox" should NOT be translated -->
-  <string name="preferences_usage_data_description_1" tools:ignore="BrandUsage">Podaci o tvom uređaju, hardverskoj konfiguraciji i načinu korištenja nam pomažu poboljšati Firefox funkcije, performansu i stabilnost.</string>
+  <string name="preferences_usage_data_description_1" tools:ignore="BrandUsage">Podaci o tvom uređaju, hardverskoj konfiguraciji i načinu korištenja nam pomažu poboljšati Dejavu funkcije, performansu i stabilnost.</string>
   <!-- Preference switch for daily usage ping data collection -->
   <string name="preferences_daily_usage_ping_title">Ping dnevne upotrebe</string>
   <string name="preferences_daily_usage_ping_description" tools:ignore="BrandUsage">Ovo pomaže Mozilli procijeniti broj aktivnih korisnika.</string>
@@ -1218,7 +1218,7 @@
     Preference description for marketing data collection.
     Note: The words "Firefox" and "Mozilla" should NOT be translated. “That you use it” is to mean that the user is opting in to sharing that they are continuing to use Firefox after installing it; not that Firefox is tracking their “usage” or what they’re using it for.
   -->
-  <string name="preferences_marketing_data_description_4" tools:ignore="BrandUsage">Dijeli s Mozillinim marketinškim tehnološkim partnerima kako si otkrio/la Firefox i da ga koristiš.</string>
+  <string name="preferences_marketing_data_description_4" tools:ignore="BrandUsage">Dijeli s Mozillinim marketinškim tehnološkim partnerima kako si otkrio/la Dejavu i da ga koristiš.</string>
   <!-- Learn more link for marketing data preference -->
   <string name="preferences_marketing_data_learn_more">Saznaj više o marketinškim podacima</string>
   <!-- Title for studies preferences -->
@@ -1438,7 +1438,7 @@
   <!-- Title of the active section on the studies list -->
   <string name="studies_active">Aktivne</string>
   <!-- Description for studies. Note: The word "Firefox" should NOT be translated -->
-  <string name="studies_description_4" tools:ignore="BrandUsage">Firefox nasumično bira korisnike za testiranje funkcija, što poboljšava kvalitetu za sve.</string>
+  <string name="studies_description_4" tools:ignore="BrandUsage">Dejavu nasumično bira korisnike za testiranje funkcija, što poboljšava kvalitetu za sve.</string>
   <!-- Title of the Studies data preference -->
   <string name="studies_title_2">Dopusti istraživanja funkcija</string>
   <!-- Learn more link for studies, links to an article for more information about studies. -->
@@ -1450,7 +1450,7 @@
   -->
   <string name="remote_improvements_title">Dopusti daljinska poboljšanja</string>
   <!-- Description for remote improvements. Note: The word "Firefox" should NOT be translated -->
-  <string name="remote_improvements_description" tools:ignore="BrandUsage">Firefox će poboljšati funkcije, performanse i stabilnost između aktualiziranja. Promjene se primjenjuju daljinski.</string>
+  <string name="remote_improvements_description" tools:ignore="BrandUsage">Dejavu će poboljšati funkcije, performanse i stabilnost između aktualiziranja. Promjene se primjenjuju daljinski.</string>
   <!-- Learn more link for remote improvements, links to an article for more information about rollouts. -->
   <string name="remote_improvements_learn_more">Saznaj više</string>
   <!-- Title for remote improvements preference in Advanced settings -->
@@ -2375,12 +2375,12 @@
     Title shown in the notification that pops up to remind the user to set fenix as default browser.
     The app name is in the text, due to limitations with localizing Nimbus experiments
   -->
-  <string name="nimbus_notification_default_browser_title" tools:ignore="BrandUsage,UnusedResources">Firefox je brz i privatan</string>
+  <string name="nimbus_notification_default_browser_title" tools:ignore="BrandUsage,UnusedResources">Dejavu je brz i privatan</string>
   <!--
     Text shown in the notification that pops up to remind the user to set fenix as default browser.
     The app name is in the text, due to limitations with localizing Nimbus experiments
   -->
-  <string name="nimbus_notification_default_browser_text" tools:ignore="BrandUsage,UnusedResources">Postavi Firefox kao zadani preglednik</string>
+  <string name="nimbus_notification_default_browser_text" tools:ignore="BrandUsage,UnusedResources">Postavi Dejavu kao zadani preglednik</string>
   <!--
     Privacy report notification
 
@@ -2399,7 +2399,7 @@
     Text shown in the fullscreen message that pops up to ask user to take a short survey.
     The app name is in the text, due to limitations with localizing Nimbus experiments
   -->
-  <string name="nimbus_survey_message_text" tools:ignore="BrandUsage">Pomozite nam učiniti Firefox boljim ispunjavanjem kratke ankete.</string>
+  <string name="nimbus_survey_message_text" tools:ignore="BrandUsage">Pomozite nam učiniti Dejavu boljim ispunjavanjem kratke ankete.</string>
   <!-- Preference for taking the short survey. -->
   <string name="preferences_take_survey">Ispunite anketu</string>
   <!-- Preference for not taking the short survey. -->
@@ -3072,7 +3072,7 @@
   <!-- Title for the browser VPN location picker screen. -->
   <string name="ip_protection_location_picker_title" tools:ignore="UnusedResources">Odaberi lokaciju VPN-a</string>
   <!-- Description for what it means to use the Recommended setting and let the app automatically pick the best server location. -->
-  <string name="ip_protection_location_fastest_description" tools:ignore="BrandUsage">Firefox pronalazi najbržu lokaciju</string>
+  <string name="ip_protection_location_fastest_description" tools:ignore="BrandUsage">Dejavu pronalazi najbržu lokaciju</string>
   <!-- Description for an unavailable VPN location in the location list. -->
   <string name="ip_protection_location_unavailable_description">Nedostupno</string>
   <!--
@@ -3418,7 +3418,7 @@
   -->
   <string name="inactive_tabs_auto_close_message_header" tools:ignore="UnusedResources">Automatski zatvoriti nakon jednog mjeseca?</string>
   <!-- A description below the header to notify the user what the inactive tabs auto-close feature is. -->
-  <string name="inactive_tabs_auto_close_message_description" tools:ignore="BrandUsage,UnusedResources">Firefox može zatvoriti kartice koje nisu pregledane posljednjih mjesec dana.</string>
+  <string name="inactive_tabs_auto_close_message_description" tools:ignore="BrandUsage,UnusedResources">Dejavu može zatvoriti kartice koje nisu pregledane posljednjih mjesec dana.</string>
   <!-- A call to action below the description to allow the user to turn on the auto closing of inactive tabs. -->
   <string name="inactive_tabs_auto_close_message_action" tools:ignore="UnusedResources">UKLJUČI AUTOMATSKO ZATVARANJE</string>
   <!-- Text for the snackbar to confirm auto-close is enabled for inactive tabs -->
@@ -3428,7 +3428,7 @@
 
     Search suggestions title for Firefox Suggest.
   -->
-  <string name="firefox_suggest_header" tools:ignore="BrandUsage">Firefox prijedlozi</string>
+  <string name="firefox_suggest_header" tools:ignore="BrandUsage">Dejavu prijedlozi</string>
   <!--
     Search suggestions title for trending search suggestions.
     %s is a placeholder for the name of the search engine providing the trending search suggestions.
@@ -3447,7 +3447,7 @@
   -->
   <string name="default_browser_experiment_card_title">Promijeni standardni preglednik</string>
   <!-- Default browser card text -->
-  <string name="default_browser_experiment_card_text" tools:ignore="BrandUsage">Postavi automatsko otvaranje poveznica web stranica, e-pošte i poruka u Firefoxu.</string>
+  <string name="default_browser_experiment_card_text" tools:ignore="BrandUsage">Postavi automatsko otvaranje poveznica web stranica, e-pošte i poruka u Dejavu.</string>
   <!-- Content description radio buttons with a link to more information -->
   <string name="radio_preference_info_content_description">Klikni za više informacija</string>
   <!-- Content description for the action bar "up" button -->

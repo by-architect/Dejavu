@@ -101,6 +101,9 @@ object KaizenToolbar {
     /** The user tapped the search button of the actions bar. */
     data object SearchClicked : KaizenToolbarEvent
 
+    /** The user asked for the whole "More" menu without swiping the actions bar up, from a screen reader. */
+    data object MenuRequested : KaizenToolbarEvent
+
     /** Carries out [event], with [navController] and the [store] of the address bar. */
     fun onEvent(
         context: Context,
@@ -115,6 +118,7 @@ object KaizenToolbar {
                 KaizenSearchStart.fromBottom()
                 store.dispatch(PageOriginInteractions.OriginClicked)
             }
+            MenuRequested -> navController.openKaizenMenu(fromBottom = true)
         }
     }
 

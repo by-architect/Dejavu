@@ -5,12 +5,15 @@
 package org.mozilla.fenix.kaizen.home
 
 import androidx.annotation.StringRes
+import androidx.compose.foundation.LocalIndication
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.combinedClickable
 import androidx.compose.foundation.gestures.detectDragGesturesAfterLongPress
 import androidx.compose.foundation.gestures.scrollBy
+import androidx.compose.foundation.indication
+import androidx.compose.foundation.interaction.MutableInteractionSource
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
@@ -19,6 +22,7 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.offset
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.requiredSize
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.layout.widthIn
@@ -28,6 +32,7 @@ import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.lazy.rememberLazyListState
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.DropdownMenu
 import androidx.compose.material3.DropdownMenuItem
 import androidx.compose.material3.HorizontalDivider
@@ -59,13 +64,14 @@ import androidx.compose.ui.platform.LocalHapticFeedback
 import androidx.compose.ui.platform.LocalViewConfiguration
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.semantics.contentDescription
+import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.IntOffset
 import androidx.compose.ui.unit.dp
 import kotlinx.coroutines.delay
 import mozilla.components.browser.state.state.TabSessionState
-import mozilla.components.compose.base.theme.success
 import org.mozilla.fenix.R
 import org.mozilla.fenix.compose.Favicon
 import org.mozilla.fenix.kaizen.actions.RowAction
@@ -92,6 +98,9 @@ private val AutoScrollEdge = 64.dp
 private const val AUTO_SCROLL_STEP = 14f
 private const val AUTO_SCROLL_FRAME_MS = 16L
 private const val DIMMED_ALPHA = 0.55f
+private const val RESET_SQUARE_ALPHA = 0.14f
+private val IconSquareSize = 36.dp
+private val MinTouchSize = 48.dp
 private const val DRAGGED_ALPHA = 0.35f
 private val INSIDE_FOLDER_RANGE = 0.25f..0.75f
 
@@ -300,7 +309,6 @@ internal fun WorkspacePage(
                         url = tab?.content?.url ?: item.url.orEmpty(),
                         depth = entry.depth,
                         container = (tab?.contextId ?: item.containerId)?.let { containers[it] },
-                        isOpen = tab != null,
                         isAwake = tab?.isAwake == true,
                         isCurrent = tab != null && tab.id == selectedTabId,
                         isSplit = tab != null && tab.id in splitTabIds,
@@ -342,7 +350,6 @@ internal fun WorkspacePage(
                     url = tab.content.url,
                     depth = 0,
                     container = tab.contextId?.let { containers[it] },
-                    isOpen = true,
                     isAwake = tab.isAwake,
                     isCurrent = tab.id == selectedTabId,
                     isSplit = tab.id in splitTabIds,
@@ -512,7 +519,10 @@ private fun SectionDivider(
     ) {
         HorizontalDivider(modifier = Modifier.weight(1f), color = MaterialTheme.colorScheme.outlineVariant)
         if (showClear) {
-            TextButton(onClick = onClear) {
+            TextButton(
+                onClick = onClear,
+                colors = ButtonDefaults.textButtonColors(contentColor = MaterialTheme.colorScheme.onSurfaceVariant),
+            ) {
                 Icon(
                     painter = painterResource(iconsR.drawable.mozac_ic_chevron_down_16),
                     contentDescription = null,
@@ -804,7 +814,6 @@ internal fun TabRow(
     url: String,
     depth: Int,
     container: ContainerRecord?,
-    isOpen: Boolean,
     isAwake: Boolean,
     isCurrent: Boolean,
     isSplit: Boolean,
@@ -838,43 +847,45 @@ internal fun TabRow(
                 .clip(RoundedCornerShape(2.dp))
                 .background(container?.color?.color ?: Color.Transparent),
         )
-        Spacer(Modifier.width(6.dp + IndentPerLevel * depth))
-        // Like Zen, a pinned tab that left its pinned page shows a reset mark on its icon; tapping the icon resets it.
-        Box(
-            contentAlignment = Alignment.Center,
-            modifier = Modifier
-                .size(28.dp)
-                .clip(CircleShape)
-                .then(if (onIconClick != null && selection == null) Modifier.clickable(onClick = onIconClick) else Modifier),
-        ) {
+        Spacer(Modifier.width(2.dp + IndentPerLevel * depth))
+        // Like Zen, a pinned tab that left its pinned page shows its icon on a brighter square; tapping it goes back.
+        Box(contentAlignment = Alignment.Center, modifier = Modifier.size(IconSquareSize)) {
+            val interactions = remember { MutableInteractionSource() }
+            val resetLabel = stringResource(R.string.kaizen_action_reset_pin)
+            if (onIconClick != null && selection == null) {
+                // The tap area gets the 48dp minimum without moving the square or the title.
+                Box(
+                    modifier = Modifier
+                        .requiredSize(MinTouchSize)
+                        .clickable(interactionSource = interactions, indication = null, onClick = onIconClick)
+                        .semantics { contentDescription = resetLabel },
+                )
+            }
             Box(
                 contentAlignment = Alignment.Center,
                 modifier = Modifier
-                    .size(28.dp)
-                    .border(1.5.dp, if (isAwake) MaterialTheme.colorScheme.success else Color.Transparent, CircleShape)
-                    .alpha(if (isAwake) 1f else DIMMED_ALPHA),
+                    .size(IconSquareSize)
+                    .clip(RoundedCornerShape(10.dp))
+                    .then(
+                        if (onIconClick != null) {
+                            Modifier.background(MaterialTheme.colorScheme.onSurface.copy(alpha = RESET_SQUARE_ALPHA))
+                        } else {
+                            Modifier
+                        },
+                    )
+                    .indication(interactions, LocalIndication.current),
             ) {
-                Favicon(url = url, size = 20.dp, shape = CircleShape)
-            }
-            if (onIconClick != null) {
-                Icon(
-                    painter = painterResource(iconsR.drawable.mozac_ic_arrow_counter_clockwise_24),
-                    contentDescription = stringResource(R.string.kaizen_action_reset_pin),
-                    tint = MaterialTheme.colorScheme.onPrimary,
-                    modifier = Modifier
-                        .align(Alignment.BottomEnd)
-                        .size(13.dp)
-                        .clip(CircleShape)
-                        .background(MaterialTheme.colorScheme.primary)
-                        .padding(1.5.dp),
-                )
+                // Tabs loaded in the browser are shown bright, the others dimmed.
+                Box(modifier = Modifier.alpha(if (isAwake) 1f else DIMMED_ALPHA)) {
+                    Favicon(url = url, size = 20.dp, shape = CircleShape)
+                }
             }
         }
-        Spacer(Modifier.width(12.dp))
+        Spacer(Modifier.width(8.dp))
         Text(
             text = title,
             style = MaterialTheme.typography.bodyLarge,
-            color = if (isOpen) MaterialTheme.colorScheme.onSurface else MaterialTheme.colorScheme.onSurfaceVariant,
+            color = if (isAwake) MaterialTheme.colorScheme.onSurface else MaterialTheme.colorScheme.onSurfaceVariant,
             maxLines = 1,
             overflow = TextOverflow.Ellipsis,
             modifier = Modifier.weight(1f),
@@ -928,7 +939,7 @@ private fun SelectionMark(selected: Boolean) {
 
 @Composable
 private fun SmallIconButton(icon: Int, @StringRes description: Int, onClick: () -> Unit) {
-    IconButton(onClick = onClick, modifier = Modifier.size(40.dp)) {
+    IconButton(onClick = onClick) {
         Icon(
             painter = painterResource(icon),
             contentDescription = stringResource(description),

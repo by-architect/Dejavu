@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<resources>
+    <!-- Home screen -->
+    <string name="kaizen_workspace_default_name">होम</string>
+    <string name="kaizen_new_tab">नया टैब</string>
+    <string name="kaizen_downloads">डाउनलोड</string>
+    <string name="kaizen_history">हिस्ट्री</string>
+    <string name="kaizen_bookmarks">बुकमार्क</string>
+    <string name="kaizen_extensions">एक्सटेंशन</string>
+    <string name="kaizen_new_tab_in_container">कंटेनर में नया टैब</string>
+    <string name="kaizen_new_tab_no_container">बिना कंटेनर के नया टैब</string>
+    <string name="kaizen_new_tab_temporary_container">अस्थायी कंटेनर में नया टैब</string>
+    <string name="kaizen_new_private_tab">नया प्राइवेट टैब</string>
+    <string name="kaizen_private_workspace">प्राइवेट</string>
+    <string name="kaizen_private_close_all">सभी बंद करें</string>
+    <string name="kaizen_open_temporary_containers">इस्तेमाल हो रहे अस्थायी कंटेनर</string>
+    <string name="kaizen_temporary_container">अस्थायी कंटेनर</string>
+    <string name="kaizen_new_temporary_container">नया अस्थायी कंटेनर</string>
+    <string name="kaizen_add_workspace">नया वर्कस्पेस</string>
+    <string name="kaizen_workspace_name">नाम</string>
+    <string name="kaizen_create">बनाएं</string>
+    <string name="kaizen_save">सेव करें</string>
+    <string name="kaizen_delete">डिलीट करें</string>
+    <string name="kaizen_cancel">कैंसिल करें</string>
+    <string name="kaizen_account">अकाउंट</string>
+    <string name="kaizen_settings">सेटिंग</string>
+    <string name="kaizen_search_hint">सर्च करें या एड्रेस डालें</string>
+    <string name="kaizen_selection_exit">चुनना बंद करें</string>
+    <string name="kaizen_selection_select_all">सभी चुनें</string>
+    <plurals name="kaizen_selection_count">
+        <item quantity="one">%1$d चुना गया</item>
+        <item quantity="other">%1$d चुने गए</item>
+    </plurals>
+    <plurals name="kaizen_bookmarked">
+        <item quantity="one">%1$d टैब बुकमार्क में सेव किया गया</item>
+        <item quantity="other">%1$d टैब बुकमार्क में सेव किए गए</item>
+    </plurals>
+    <plurals name="kaizen_links_copied">
+        <item quantity="one">%1$d लिंक कॉपी किया गया</item>
+        <item quantity="other">%1$d लिंक कॉपी किए गए</item>
+    </plurals>
+
+    <!-- Workspaces -->
+    <string name="kaizen_workspace_menu">वर्कस्पेस मेन्यू</string>
+    <string name="kaizen_workspace_edit">वर्कस्पेस एडिट करें</string>
+    <string name="kaizen_workspace_delete">वर्कस्पेस डिलीट करें</string>
+    <string name="kaizen_workspace_delete_title">“%1$s” डिलीट करें?</string>
+    <string name="kaizen_workspace_delete_message">इसके टैब, पिन किए गए टैब और फ़ोल्डर बगल वाले वर्कस्पेस में चले जाएंगे।</string>
+    <string name="kaizen_workspace_container">डिफ़ॉल्ट कंटेनर</string>
+    <string name="kaizen_workspace_container_hint">इस वर्कस्पेस के नए टैब इसी कंटेनर में खुलते हैं।</string>
+    <string name="kaizen_workspace_no_container">कोई कंटेनर नहीं</string>
+    <string name="kaizen_workspace_icon">आइकन</string>
+    <string name="kaizen_workspace_theme">थीम</string>
+    <string name="kaizen_workspace_theme_intensity">तीव्रता</string>
+    <string name="kaizen_workspace_theme_grain">ग्रेन</string>
+    <string name="kaizen_workspace_move_left">बाएं ले जाएं</string>
+    <string name="kaizen_workspace_move_right">दाएं ले जाएं</string>
+
+    <!-- Folders -->
+    <string name="kaizen_folder_new_subfolder">नया सबफ़ोल्डर</string>
+    <string name="kaizen_folder_rename">फ़ोल्डर का नाम बदलें</string>
+    <string name="kaizen_folder_unpack">फ़ोल्डर अनपैक करें</string>
+    <string name="kaizen_folder_top_level">पिन किए गए टैब, बिना फ़ोल्डर के</string>
+
+    <!-- Essentials -->
+    <string name="kaizen_essentials_drop">एसेंशियल्स में जोड़ने के लिए यहां छोड़ें</string>
+    <string name="kaizen_essentials_full">एसेंशियल्स में ज़्यादा से ज़्यादा %1$d टैब रखे जा सकते हैं</string>
+    <string name="kaizen_temporary_by_default">डिफ़ॉल्ट रूप से अस्थायी कंटेनर</string>
+    <string name="kaizen_temporary_by_default_summary">जिन वर्कस्पेस में कोई डिफ़ॉल्ट कंटेनर नहीं है, उनमें हर नया टैब अपने अलग अस्थायी कंटेनर में खुलता है। आखिरी टैब बंद होने पर अस्थायी कंटेनर और उसकी कुकीज़ डिलीट हो जाती हैं।</string>
+    <string name="kaizen_settings_external_links">दूसरे ऐप से आए लिंक</string>
+    <string name="kaizen_settings_external_links_summary">ये लिंक किस वर्कस्पेस और कंटेनर में खुलते हैं</string>
+    <string name="kaizen_external_links_hint">दूसरे ऐप से खोले गए लिंक इसी वर्कस्पेस और कंटेनर में खुलते हैं। वापस जाने पर आप उसी ऐप पर लौट आते हैं।</string>
+    <string name="kaizen_external_links_workspace">वर्कस्पेस</string>
+    <string name="kaizen_external_links_last_workspace">आखिरी बार दिखाया गया वर्कस्पेस</string>
+    <string name="kaizen_external_links_container">कंटेनर</string>
+    <string name="kaizen_external_links_workspace_container">वर्कस्पेस का डिफ़ॉल्ट कंटेनर</string>
+    <string name="kaizen_external_links_private">प्राइवेट टैब में खोलें</string>
+    <string name="kaizen_external_links_private_summary">दूसरे ऐप से आए लिंक प्राइवेट वर्कस्पेस में, बिना कंटेनर के खुलते हैं।</string>
+    <string name="kaizen_essentials_per_container">हर कंटेनर के अलग एसेंशियल्स</string>
+    <string name="kaizen_essentials_per_container_summary">हर कंटेनर के अपने एसेंशियल्स होते हैं। वर्कस्पेस में उसके डिफ़ॉल्ट कंटेनर के एसेंशियल्स दिखते हैं।</string>
+
+    <!-- Deleting pinned tabs, essentials and folders -->
+    <string name="kaizen_delete_item_title">“%1$s” डिलीट करें?</string>
+    <plurals name="kaizen_delete_items_title">
+        <item quantity="one">%1$d आइटम डिलीट करें?</item>
+        <item quantity="other">%1$d आइटम डिलीट करें?</item>
+    </plurals>
+    <string name="kaizen_delete_items_message">पिन किए गए टैब, एसेंशियल्स और फ़ोल्डर उनके अंदर की हर चीज़ के साथ हटा दिए जाएंगे, और उनके खुले टैब बंद कर दिए जाएंगे।</string>
+
+    <!-- Tab actions -->
+    <string name="kaizen_action_close">बंद करें</string>
+    <string name="kaizen_action_pin">पिन करें</string>
+    <string name="kaizen_action_unpin">अनपिन करें</string>
+    <string name="kaizen_action_sleep">स्लीप करें</string>
+    <string name="kaizen_action_bookmark">बुकमार्क करें</string>
+    <string name="kaizen_action_share">शेयर करें</string>
+    <string name="kaizen_action_copy_link">लिंक कॉपी करें</string>
+    <string name="kaizen_action_duplicate">डुप्लिकेट करें</string>
+    <string name="kaizen_action_move_to_workspace">वर्कस्पेस में ले जाएं</string>
+    <string name="kaizen_action_move_to_folder">फ़ोल्डर में ले जाएं</string>
+    <string name="kaizen_action_new_folder">नया फ़ोल्डर</string>
+    <string name="kaizen_action_change_container">कंटेनर बदलें</string>
+    <string name="kaizen_action_rename_tab">टैब का नाम बदलें</string>
+    <string name="kaizen_rename_tab_hint">टाइटल, पेज का टाइटल रखने के लिए खाली छोड़ें</string>
+    <string name="kaizen_action_split_view">स्प्लिट व्यू</string>
+    <string name="kaizen_action_unsplit">स्प्लिट हटाएं</string>
+
+    <!-- Split view -->
+    <string name="kaizen_split_view">स्प्लिट व्यू</string>
+    <string name="kaizen_split_show_on_top">ऊपर दिखाएं</string>
+    <string name="kaizen_split_close">स्प्लिट व्यू बंद करें</string>
+    <string name="kaizen_action_reset_pin">पिन किए गए टैब को रीसेट करें</string>
+    <string name="kaizen_action_add_to_essentials">एसेंशियल्स में जोड़ें</string>
+    <string name="kaizen_action_remove_from_essentials">एसेंशियल्स से हटाएं</string>
+    <string name="kaizen_action_delete">डिलीट करें</string>
+
+    <!-- Settings -->
+    <string name="kaizen_settings_title">Dejavu</string>
+    <string name="kaizen_about_content">%1$s, Mozilla के बनाए Firefox पर आधारित है।</string>
+    <string name="kaizen_settings_tab_actions">टैब ऐक्शन</string>
+    <string name="kaizen_settings_tab_actions_entry_summary">टैब पर बटन, और चुने गए टैब के लिए ऐक्शन</string>
+    <string name="kaizen_settings_tab_actions_hint">पिन किए गए और बिना पिन वाले टैब की पंक्तियों के बटन चुनें, और वे ऐक्शन भी जो टैब चुनने पर दिखते हैं। खुद जोड़े गए ऐक्शन तीनों जगह इस्तेमाल किए जा सकते हैं।</string>
+    <string name="kaizen_settings_pinned_tabs">पिन किए गए टैब</string>
+    <string name="kaizen_settings_unpinned_tabs">बिना पिन वाले टैब</string>
+    <string name="kaizen_settings_all_actions">सभी ऐक्शन</string>
+    <string name="kaizen_settings_all_actions_summary">टैब चुनने पर %2$d में से %1$d दिखते हैं</string>
+    <string name="kaizen_settings_no_buttons">कोई बटन नहीं</string>
+    <string name="kaizen_settings_buttons">बटन</string>
+    <string name="kaizen_settings_actions">ऐक्शन</string>
+    <string name="kaizen_settings_pinned_actions_hint">पिन किए गए टैब की पंक्तियों के लिए ज़्यादा से ज़्यादा %1$d बटन चुनें।</string>
+    <string name="kaizen_settings_unpinned_actions_hint">बिना पिन वाले टैब की पंक्तियों के लिए ज़्यादा से ज़्यादा %1$d बटन चुनें।</string>
+    <string name="kaizen_settings_all_actions_hint">वे ऐक्शन चुनें जो टैब, एसेंशियल्स या फ़ोल्डर को टच करके रखने और चुनने पर होमपेज के नीचे दिखते हैं। कोई ऐक्शन तभी दिखता है जब वह चुनी गई चीज़ों पर चल सकता हो।</string>
+    <string name="kaizen_settings_containers">कंटेनर</string>
+    <string name="kaizen_settings_containers_entry_summary">कंटेनर जोड़ें, एडिट करें और डिलीट करें</string>
+    <string name="kaizen_settings_containers_hint">कंटेनर में खुले टैब की कुकीज़ और साइट डेटा अलग रहते हैं। कंटेनर में टैब खोलने के लिए होमपेज पर “नया टैब” को टच करके रखें, या किसी पूरे वर्कस्पेस को उसके मेन्यू से कोई कंटेनर दें।</string>
+    <string name="kaizen_container_add">कंटेनर जोड़ें</string>
+    <string name="kaizen_container_edit">कंटेनर एडिट करें</string>
+    <string name="kaizen_container_name">नाम</string>
+    <string name="kaizen_container_color">कलर</string>
+    <string name="kaizen_container_icon">आइकन</string>
+    <string name="kaizen_container_delete_title">“%1$s” डिलीट करें?</string>
+    <string name="kaizen_container_delete_message">इसकी कुकीज़ और साइट डेटा डिलीट हो जाएंगे। चुनें कि इसके टैब का क्या होगा।</string>
+
+    <!-- Home: sections and undo -->
+    <string name="kaizen_clear_unpinned">मिटाएं</string>
+    <string name="kaizen_undo">पहले जैसा करें</string>
+    <plurals name="kaizen_tabs_closed">
+        <item quantity="one">%1$d टैब बंद किया</item>
+        <item quantity="other">%1$d टैब बंद किए</item>
+    </plurals>
+
+    <!-- Containers: delete options -->
+    <string name="kaizen_container_delete_close_tabs">इसके टैब बंद करें, पिन किए गए टैब भी</string>
+    <string name="kaizen_container_delete_move_tabs">या इसके टैब यहां ले जाएं</string>
+
+    <!-- Custom actions -->
+    <string name="kaizen_custom_action">कस्टम ऐक्शन</string>
+    <string name="kaizen_custom_actions">कस्टम ऐक्शन</string>
+    <string name="kaizen_custom_action_add">ऐक्शन जोड़ें</string>
+    <string name="kaizen_custom_action_name">नाम</string>
+    <string name="kaizen_custom_action_method">मेथड</string>
+    <string name="kaizen_custom_action_url">URL</string>
+    <string name="kaizen_custom_action_headers">हेडर</string>
+    <string name="kaizen_custom_action_header_name">हेडर</string>
+    <string name="kaizen_custom_action_header_value">वैल्यू</string>
+    <string name="kaizen_custom_action_add_header">हेडर जोड़ें</string>
+    <string name="kaizen_custom_action_remove_header">हेडर हटाएं</string>
+    <string name="kaizen_custom_action_body">बॉडी</string>
+    <string name="kaizen_custom_action_variables">वेरिएबल</string>
+    <string name="kaizen_custom_action_variables_hint">आप जिस फ़ील्ड में बदलाव कर रहे हैं, उसमें वेरिएबल डालने के लिए उस पर टैप करें।</string>
+    <string name="kaizen_custom_action_hint">ऐक्शन जिस भी टैब पर चलता है, हर टैब के लिए रिक्वेस्ट एक बार भेजी जाती है। सिर्फ़ 2xx जवाब को सफलता माना जाता है; रीडायरेक्ट फ़ॉलो नहीं किए जाते और उन्हें विफलता माना जाता है। कुकीज़ नहीं भेजी जातीं। वैल्यू, URL में URL एन्कोड की जाती हैं और JSON बॉडी में JSON एस्केप की जाती हैं।</string>
+    <string name="kaizen_custom_action_sent">भेजा गया: %1$s</string>
+    <string name="kaizen_custom_action_failed_code">विफल: कोड %1$d (%2$s)</string>
+    <string name="kaizen_custom_action_failed_no_answer">विफल: कोई जवाब नहीं (%1$s)</string>
+    <string name="kaizen_custom_action_failed_some">%1$s, %3$d में से %2$d टैब</string>
+    <string name="kaizen_custom_action_examples">उदाहरण</string>
+    <string name="kaizen_custom_action_examples_hint">ऊपर के फ़ील्ड भरने के लिए किसी उदाहरण पर टैप करें। फिर example.com की जगह अपना सर्वर, और कैपिटल अक्षरों वाले हिस्सों की जगह अपनी कुंजियां और ID डालें।</string>
+    <string name="kaizen_example_bookmark">पेज को बुकमार्क के रूप में सेव करें</string>
+    <string name="kaizen_example_read_later">पेज को बाद में पढ़ने के लिए सेव करें</string>
+    <string name="kaizen_example_note">पेज को नोट के रूप में सेव करें</string>
+    <string name="kaizen_example_notification">पेज को नोटिफ़िकेशन के रूप में भेजें</string>
+    <string name="kaizen_example_chat">पेज को किसी चैट में पोस्ट करें</string>
+    <string name="kaizen_example_automation">पेज के साथ कोई ऑटोमेशन शुरू करें</string>
+    <string name="kaizen_example_webhook">n8n, Node-RED और ऐसे ही टूल के लिए, सभी वेरिएबल JSON के रूप में भेजें</string>
+
+    <!-- Tabs settings -->
+    <string name="kaizen_preferences_close_unpinned_tabs">बिना पिन वाले टैब बंद करें</string>
+
+    <!-- Menu of a long-pressed link -->
+    <string name="kaizen_link_open_in_split_view">स्प्लिट व्यू में खोलें</string>
+    <string name="kaizen_link_open_in_container">कंटेनर में खोलें</string>
+    <string name="kaizen_link_open_in_workspace">वर्कस्पेस में खोलें</string>
+    <string name="kaizen_link_opened_in">%1$s में खोला गया</string>
+
+    <!-- Browser toolbar -->
+    <string name="kaizen_toolbar_container">कंटेनर: %1$s</string>
+
+    <!-- Browser "More" menu -->
+    <string name="kaizen_menu_back">वापस</string>
+    <string name="kaizen_menu_forward">आगे</string>
+    <string name="kaizen_menu_share">शेयर करें</string>
+    <string name="kaizen_menu_refresh">रीलोड करें</string>
+    <string name="kaizen_menu_stop">रोकें</string>
+    <string name="kaizen_menu_find_in_page">पेज में खोजें</string>
+    <string name="kaizen_menu_bookmark_page">बुकमार्क करें</string>
+    <string name="kaizen_menu_edit_bookmark">बुकमार्क एडिट करें</string>
+    <string name="kaizen_menu_desktop_site">डेस्कटॉप साइट</string>
+    <string name="kaizen_menu_extensions">एक्सटेंशन</string>
+    <string name="kaizen_menu_manage_extensions">एक्सटेंशन मैनेज करें</string>
+    <string name="kaizen_menu_passwords">पासवर्ड</string>
+    <string name="kaizen_menu_bookmarks">बुकमार्क</string>
+    <string name="kaizen_menu_downloads">डाउनलोड</string>
+    <string name="kaizen_menu_history">हिस्ट्री</string>
+    <string name="kaizen_menu_translate">अनुवाद करें</string>
+    <string name="kaizen_menu_summarize">सारांश बनाएं</string>
+    <string name="kaizen_menu_report_broken_site">साइट की समस्या की रिपोर्ट करें</string>
+    <string name="kaizen_menu_pin_tab">टैब पिन करें</string>
+    <string name="kaizen_menu_unpin_tab">टैब अनपिन करें</string>
+    <string name="kaizen_menu_essential_tab">एसेंशियल्स में जोड़ें</string>
+    <string name="kaizen_menu_remove_essential">एसेंशियल्स से हटाएं</string>
+    <string name="kaizen_menu_save_as_pdf">बतौर PDF सेव करें</string>
+    <string name="kaizen_menu_print">प्रिंट करें</string>
+    <string name="kaizen_menu_open_in_app">ऐप में खोलें</string>
+    <string name="kaizen_menu_reset_pinned_url">पिन किए गए URL पर रीसेट करें</string>
+    <string name="kaizen_menu_replace_pinned_url">यह URL पिन करें</string>
+    <string name="kaizen_menu_split_view">स्प्लिट व्यू</string>
+    <string name="kaizen_menu_unsplit">स्प्लिट हटाएं</string>
+    <string name="kaizen_menu_split_with">किस टैब के साथ स्प्लिट व्यू करें</string>
+    <string name="kaizen_menu_split_no_tabs">इस वर्कस्पेस में कोई दूसरा टैब नहीं है।</string>
+    <string name="kaizen_menu_settings">सेटिंग</string>
+    <string name="kaizen_menu_edit">एडिट करें</string>
+
+    <!-- Settings: "More" menu editor -->
+    <string name="kaizen_settings_more_menu">और विकल्प मेन्यू</string>
+    <string name="kaizen_settings_actions_bar">ऐक्शन बार</string>
+    <string name="kaizen_actions_bar_search">सर्च करें</string>
+    <string name="kaizen_actions_bar_home">होम</string>
+    <string name="kaizen_settings_more_menu_summary">पेज के नीचे का ऐक्शन बार और उससे खुलने वाला मेन्यू</string>
+    <string name="kaizen_more_menu_hint">पहली पंक्ति पेज के नीचे का ऐक्शन बार है। पूरा मेन्यू खोलने के लिए ऐक्शन बार को ऊपर या एड्रेस बार को नीचे स्वाइप करें। किसी बटन की जगह बदलने या उसे हटाने के लिए उस पर टैप करें। एक्सटेंशन हमेशा पूरी पंक्ति लेते हैं।</string>
+    <string name="kaizen_more_menu_row">पंक्ति %1$d</string>
+    <string name="kaizen_more_menu_add_item">बटन जोड़ें</string>
+    <string name="kaizen_more_menu_add_row">पंक्ति जोड़ें</string>
+    <string name="kaizen_more_menu_row_full">यह पंक्ति भर गई है।</string>
+    <string name="kaizen_more_menu_move_left">बाएं ले जाएं</string>
+    <string name="kaizen_more_menu_move_right">दाएं ले जाएं</string>
+    <string name="kaizen_more_menu_move_up">ऊपर ले जाएं</string>
+    <string name="kaizen_more_menu_move_down">नीचे ले जाएं</string>
+    <string name="kaizen_more_menu_remove">हटाएं</string>
+    <string name="kaizen_more_menu_delete_row">पंक्ति डिलीट करें</string>
+    <string name="kaizen_more_menu_reset">डिफ़ॉल्ट पर रीसेट करें</string>
+    <string name="kaizen_more_menu_hide_edit">एडिट बटन छिपाएं</string>
+    <string name="kaizen_more_menu_hide_edit_summary">मेन्यू के नीचे का बटन, जो यह स्क्रीन खोलता है</string>
+    <string name="kaizen_more_menu_all_added">सभी बटन पहले से मेन्यू में हैं।</string>
+    <string name="kaizen_more_menu_preview">प्रीव्यू</string>
+
+    <!-- Settings: syncing workspaces with Zen -->
+    <string name="kaizen_settings_sync">Zen के साथ सिंक करें</string>
+    <string name="kaizen_settings_sync_summary">वर्कस्पेस, कंटेनर, पिन किए गए टैब और एसेंशियल्स</string>
+    <string name="kaizen_sync_hint">आपके वर्कस्पेस (उनके कलर और आइकन के साथ), कंटेनर, पिन किए गए टैब, एसेंशियल्स और फ़ोल्डर को आपके कंप्यूटर के Zen ब्राउज़र और आपके दूसरे डिवाइस के Dejavu जैसा ही रखता है। इसके लिए वही Mozilla अकाउंट इस्तेमाल होता है जिससे आप Firefox डेटा सिंक करते हैं।</string>
+    <string name="kaizen_sync_zen_hint">Zen में सेटिंग और फिर सिंक खोलें, और साइडबार सिंक चालू करें। जो टैब पिन नहीं किए गए हैं, वे सिंक नहीं होते।</string>
+    <string name="kaizen_sync_enabled">वर्कस्पेस सिंक करें</string>
+    <string name="kaizen_sync_now">अभी सिंक करें</string>
+    <string name="kaizen_sync_syncing">सिंक हो रहा है…</string>
+    <string name="kaizen_sync_last_synced">पिछला सिंक: %1$s</string>
+    <string name="kaizen_sync_never_synced">अभी तक सिंक नहीं हुआ</string>
+    <string name="kaizen_sync_off">इस डिवाइस पर सिंक बंद है</string>
+    <string name="kaizen_sync_signed_out">अपने वर्कस्पेस को Zen के साथ सिंक करने के लिए, अपने Mozilla अकाउंट में साइन इन करें।</string>
+    <string name="kaizen_sync_sign_in">साइन इन करें</string>
+    <string name="kaizen_sync_problem_not_set_up">Firefox Sync के आपका अकाउंट सेट अप करने का इंतज़ार किया जा रहा है।</string>
+    <string name="kaizen_sync_problem_not_turned_on">आपके Mozilla अकाउंट के लिए स्पेस सिंक बंद है। इसे यहां या Zen की सिंक सेटिंग में चालू करें। यहां चालू करने से यह Zen में भी चालू हो जाता है।</string>
+    <string name="kaizen_sync_turn_on">स्पेस सिंक चालू करें</string>
+    <string name="kaizen_sync_problem_needs_update">कोई दूसरा डिवाइस स्पेस सिंक का नया वर्शन इस्तेमाल करता है। सिंक जारी रखने के लिए Dejavu को अपडेट करें।</string>
+    <string name="kaizen_sync_problem_sign_in">सिंक जारी रखने के लिए, अपने Mozilla अकाउंट में फिर से साइन इन करें।</string>
+    <string name="kaizen_sync_problem_offline">सिंक सर्वर से संपर्क नहीं हो सका। Dejavu फिर से कोशिश करेगा।</string>
+    <string name="kaizen_sync_problem_server">सिंक सर्वर में कोई समस्या आई। Dejavu फिर से कोशिश करेगा।</string>
+    <string name="kaizen_container_personal">व्यक्तिगत</string>
+    <string name="kaizen_container_work">काम</string>
+    <string name="kaizen_container_banking">बैंकिंग</string>
+    <string name="kaizen_container_shopping">शॉपिंग</string>
+    <string name="kaizen_sync_normal_tabs">पिन न किए गए टैब शामिल करें</string>
+    <string name="kaizen_sync_normal_tabs_summary">यह हर वर्कस्पेस के दूसरे टैब को भी सिंक करता है, न कि सिर्फ़ पिन किए गए टैब और फ़ोल्डर को। जब Zen का अपना पिन न किए गए टैब शामिल करें विकल्प चालू होता है, तो वह उन्हें सिंक करता है।</string>
+</resources>

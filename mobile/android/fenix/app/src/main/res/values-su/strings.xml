@@ -305,7 +305,7 @@
   <!-- Preference Category for settings related to Search address bar -->
   <string name="preferences_settings_address_bar">Préperénsi palang alamat</string>
   <!-- Preference Category for settings to Firefox Suggest -->
-  <string name="preference_search_address_bar_fx_suggest" tools:ignore="BrandUsage">Palang alamat - Firefox Suggest</string>
+  <string name="preference_search_address_bar_fx_suggest" tools:ignore="BrandUsage">Palang alamat - Dejavu Suggest</string>
   <!-- Preference link to Learn more about Firefox Suggest -->
   <string name="preference_search_learn_about_fx_suggest" tools:ignore="BrandUsage">Leuwih teleb ngeunaan Firefox Suggest</string>
   <!-- Preference link to rating Fenix on the Play Store -->
@@ -511,7 +511,7 @@
   -->
   <string name="addon_ga_message_title_2" tools:ignore="UnusedResources">Aya add-on anyar yeuh</string>
   <!-- Body of the Nimbus message for add-ons general availability. 'Firefox' intentionally hardcoded here -->
-  <string name="addon_ga_message_body" tools:ignore="BrandUsage,UnusedResources">Pariksa 100+ pangémboh anyar anu ngamungkinkeun anjeun ngajadikeun Firefox sorangan.</string>
+  <string name="addon_ga_message_body" tools:ignore="BrandUsage,UnusedResources">Pariksa 100+ pangémboh anyar anu ngamungkinkeun anjeun ngajadikeun Dejavu sorangan.</string>
   <!-- Button text of the Nimbus message for extensions general availability. -->
   <string name="addon_ga_message_button_2" tools:ignore="UnusedResources">Paluruh pangémboh</string>
   <!--
@@ -1134,19 +1134,19 @@
     Title shown in the notification that pops up to remind the user to set fenix as default browser.
     The app name is in the text, due to limitations with localizing Nimbus experiments
   -->
-  <string name="nimbus_notification_default_browser_title" tools:ignore="BrandUsage,UnusedResources">Firefox gancang jeung rikip</string>
+  <string name="nimbus_notification_default_browser_title" tools:ignore="BrandUsage,UnusedResources">Dejavu gancang jeung rikip</string>
   <!--
     Text shown in the notification that pops up to remind the user to set fenix as default browser.
     The app name is in the text, due to limitations with localizing Nimbus experiments
   -->
-  <string name="nimbus_notification_default_browser_text" tools:ignore="BrandUsage,UnusedResources">Jadikeun Firefox panyungsi baku</string>
+  <string name="nimbus_notification_default_browser_text" tools:ignore="BrandUsage,UnusedResources">Jadikeun Dejavu panyungsi baku</string>
   <!--
     Survey
 
     Text shown in the fullscreen message that pops up to ask user to take a short survey.
     The app name is in the text, due to limitations with localizing Nimbus experiments
   -->
-  <string name="nimbus_survey_message_text" tools:ignore="BrandUsage">Bantuan Firefox sangkan leuwih hadé ku miluan surpéy pondok.</string>
+  <string name="nimbus_survey_message_text" tools:ignore="BrandUsage">Bantuan Dejavu sangkan leuwih hadé ku miluan surpéy pondok.</string>
   <!-- Preference for taking the short survey. -->
   <string name="preferences_take_survey">Eusi Surpéy</string>
   <!-- Preference for not taking the short survey. -->
@@ -1793,7 +1793,7 @@
   -->
   <string name="inactive_tabs_auto_close_message_header" tools:ignore="UnusedResources">Oto-tutup sanggeus sabulan?</string>
   <!-- A description below the header to notify the user what the inactive tabs auto-close feature is. -->
-  <string name="inactive_tabs_auto_close_message_description" tools:ignore="BrandUsage,UnusedResources">Firefox bisa nutup tab anu ku anjeun teu dibuka leuwih ti sabulan.</string>
+  <string name="inactive_tabs_auto_close_message_description" tools:ignore="BrandUsage,UnusedResources">Dejavu bisa nutup tab anu ku anjeun teu dibuka leuwih ti sabulan.</string>
   <!-- A call to action below the description to allow the user to turn on the auto closing of inactive tabs. -->
   <string name="inactive_tabs_auto_close_message_action" tools:ignore="UnusedResources">HURUNGKEUN OTO-TUTUP</string>
   <!-- Text for the snackbar to confirm auto-close is enabled for inactive tabs -->
@@ -1803,7 +1803,7 @@
 
     Search suggestions title for Firefox Suggest.
   -->
-  <string name="firefox_suggest_header" tools:ignore="BrandUsage">Firefox Suggest</string>
+  <string name="firefox_suggest_header" tools:ignore="BrandUsage">Dejavu Suggest</string>
   <!-- Title for search suggestions when Google is the default search suggestion engine. -->
   <string name="google_search_engine_suggestion_header">Pamaluruhan Google</string>
   <!-- Title for search suggestions when the default search suggestion engine is anything other than Google. %s is default search engine name. -->
@@ -1815,7 +1815,7 @@
   -->
   <string name="default_browser_experiment_card_title">Alihkeun panyungsi baku anjeun</string>
   <!-- Default browser card text -->
-  <string name="default_browser_experiment_card_text" tools:ignore="BrandUsage">Setél tutumbu ti raramatloka, surélék, jeung surat pikeun muka otomatis dina Firefox.</string>
+  <string name="default_browser_experiment_card_text" tools:ignore="BrandUsage">Setél tutumbu ti raramatloka, surélék, jeung surat pikeun muka otomatis dina Dejavu.</string>
   <!-- Content description radio buttons with a link to more information -->
   <string name="radio_preference_info_content_description">Pencét sangkan leuwih écés</string>
   <!-- Content description for the action bar "up" button -->

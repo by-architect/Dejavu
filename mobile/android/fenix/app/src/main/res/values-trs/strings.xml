@@ -707,7 +707,7 @@
   <!-- Preference Category for settings related to Search address bar -->
   <string name="preferences_settings_address_bar">Nej sa garan’ ruhuât ginù riña si dùkuanj nej dīreksiûn</string>
   <!-- Preference Category for settings to Firefox Suggest -->
-  <string name="preference_search_address_bar_fx_suggest" tools:ignore="BrandUsage">Dukuán ‘na’ nej dīreksiûn - Nāguī Firefox</string>
+  <string name="preference_search_address_bar_fx_suggest" tools:ignore="BrandUsage">Dukuán ‘na’ nej dīreksiûn - Nāguī Dejavu</string>
   <!-- Preference link to Learn more about Firefox Suggest -->
   <string name="preference_search_learn_about_fx_suggest" tools:ignore="BrandUsage">Doj nuguan’ huā rayi’î Nāguī Firefox</string>
   <!-- Preference link to rating Fenix on the Play Store -->
@@ -1047,7 +1047,7 @@
   -->
   <string name="addon_ga_message_title_2" tools:ignore="UnusedResources">A’ngô nej ekstensiûn nākà ngà huaa</string>
   <!-- Body of the Nimbus message for add-ons general availability. 'Firefox' intentionally hardcoded here -->
-  <string name="addon_ga_message_body" tools:ignore="BrandUsage,UnusedResources">Gīni’hiāj dàj hua nej 100+ ekstensiûn nàka ga’hue gārasunt ngà Firefox.</string>
+  <string name="addon_ga_message_body" tools:ignore="BrandUsage,UnusedResources">Gīni’hiāj dàj hua nej 100+ ekstensiûn nàka ga’hue gārasunt ngà Dejavu.</string>
   <!-- Button text of the Nimbus message for extensions general availability. -->
   <string name="addon_ga_message_button_2" tools:ignore="UnusedResources">Gānatsij gīni’hiājt dàj hua nej ekstensiûn</string>
   <!--
@@ -1785,19 +1785,19 @@
     Title shown in the notification that pops up to remind the user to set fenix as default browser.
     The app name is in the text, due to limitations with localizing Nimbus experiments
   -->
-  <string name="nimbus_notification_default_browser_title" tools:ignore="BrandUsage,UnusedResources">Hìo nī huì hua Firefox</string>
+  <string name="nimbus_notification_default_browser_title" tools:ignore="BrandUsage,UnusedResources">Hìo nī huì hua Dejavu</string>
   <!--
     Text shown in the notification that pops up to remind the user to set fenix as default browser.
     The app name is in the text, due to limitations with localizing Nimbus experiments
   -->
-  <string name="nimbus_notification_default_browser_text" tools:ignore="BrandUsage,UnusedResources">Nā’nïnj Firefox da’ gāhuin man riña aché nana’hui’ yītïnjt</string>
+  <string name="nimbus_notification_default_browser_text" tools:ignore="BrandUsage,UnusedResources">Nā’nïnj Dejavu da’ gāhuin man riña aché nana’hui’ yītïnjt</string>
   <!--
     Survey
 
     Text shown in the fullscreen message that pops up to ask user to take a short survey.
     The app name is in the text, due to limitations with localizing Nimbus experiments
   -->
-  <string name="nimbus_survey_message_text" tools:ignore="BrandUsage">Gī’hiaj ‘ngō sunūnj un, nāchra ‘ngō nej nuguan’ nan da’ nahuin hue’ê doj Firefox.</string>
+  <string name="nimbus_survey_message_text" tools:ignore="BrandUsage">Gī’hiaj ‘ngō sunūnj un, nāchra ‘ngō nej nuguan’ nan da’ nahuin hue’ê doj Dejavu.</string>
   <!-- Preference for taking the short survey. -->
   <string name="preferences_take_survey">Nātsij ēnkuêsta</string>
   <!-- Preference for not taking the short survey. -->
@@ -2408,7 +2408,7 @@
   -->
   <string name="inactive_tabs_auto_close_message_header" tools:ignore="UnusedResources">Ngà gachîn ‘ngō ahuii nī nārán mā’an riñanj anj.</string>
   <!-- A description below the header to notify the user what the inactive tabs auto-close feature is. -->
-  <string name="inactive_tabs_auto_close_message_description" tools:ignore="BrandUsage,UnusedResources">Nārán Firefox riña nej rakïj ñanj nu ni’hiājt gachîn ‘ngō ahuii.</string>
+  <string name="inactive_tabs_auto_close_message_description" tools:ignore="BrandUsage,UnusedResources">Nārán Dejavu riña nej rakïj ñanj nu ni’hiājt gachîn ‘ngō ahuii.</string>
   <!-- A call to action below the description to allow the user to turn on the auto closing of inactive tabs. -->
   <string name="inactive_tabs_auto_close_message_action" tools:ignore="UnusedResources">NĀCHRŪN DA’ NĀRÁN MĀN’AN MAN</string>
   <!-- Text for the snackbar to confirm auto-close is enabled for inactive tabs -->
@@ -2418,13 +2418,13 @@
 
     Search suggestions title for Firefox Suggest.
   -->
-  <string name="firefox_suggest_header" tools:ignore="BrandUsage">Si nūguan’ Firefox</string>
+  <string name="firefox_suggest_header" tools:ignore="BrandUsage">Si nūguan’ Dejavu</string>
   <!-- Title for search suggestions when Google is the default search suggestion engine. -->
   <string name="google_search_engine_suggestion_header">Si’hiaj Google sa nana’hui’i</string>
   <!-- Title for search suggestions when the default search suggestion engine is anything other than Google. %s is default search engine name. -->
   <string name="other_default_search_engine_suggestion_header">Nānà\'uì\' ngà %s</string>
   <!-- Default browser card text -->
-  <string name="default_browser_experiment_card_text" tools:ignore="BrandUsage">Nāgi’hiaj nej enlasê sitiô web, nej korrêo nī nej nuguan’ huāa da’ nāyi’nïn man’an nej man riña Firefox.</string>
+  <string name="default_browser_experiment_card_text" tools:ignore="BrandUsage">Nāgi’hiaj nej enlasê sitiô web, nej korrêo nī nej nuguan’ huāa da’ nāyi’nïn man’an nej man riña Dejavu.</string>
   <!-- Content description radio buttons with a link to more information -->
   <string name="radio_preference_info_content_description">Gā’huì’ klik da’ gīni’înt doj sa huāa</string>
   <!-- Content description for the action bar "up" button -->

@@ -735,7 +735,7 @@
   <!-- Preference Category for settings related to Search address bar -->
   <string name="preferences_settings_address_bar">地址栏首选项</string>
   <!-- Preference Category for settings to Firefox Suggest -->
-  <string name="preference_search_address_bar_fx_suggest" tools:ignore="BrandUsage">地址栏 - Firefox 建议</string>
+  <string name="preference_search_address_bar_fx_suggest" tools:ignore="BrandUsage">地址栏 - Dejavu 建议</string>
   <!-- Preference link to Learn more about Firefox Suggest -->
   <string name="preference_search_learn_about_fx_suggest" tools:ignore="BrandUsage">详细了解 Firefox 建议</string>
   <!-- Preference link to rating Fenix on the Play Store -->
@@ -1097,7 +1097,7 @@
   -->
   <string name="addon_ga_message_title_2" tools:ignore="UnusedResources">扩展上新</string>
   <!-- Body of the Nimbus message for add-ons general availability. 'Firefox' intentionally hardcoded here -->
-  <string name="addon_ga_message_body" tools:ignore="BrandUsage,UnusedResources">探索百余件新鲜扩展，让 Firefox 用起来更得心应手。</string>
+  <string name="addon_ga_message_body" tools:ignore="BrandUsage,UnusedResources">探索百余件新鲜扩展，让 Dejavu 用起来更得心应手。</string>
   <!-- Button text of the Nimbus message for extensions general availability. -->
   <string name="addon_ga_message_button_2" tools:ignore="UnusedResources">发现更多扩展</string>
   <!--
@@ -1203,7 +1203,7 @@
   <!-- Preference switch for usage and technical learn more link in new compose -->
   <string name="preference_usage_data_learn_more_2">详细了解技术数据</string>
   <!-- Preference description for marketing data collection. Note: The words "Firefox" should NOT be translated -->
-  <string name="preferences_usage_data_description_1" tools:ignore="BrandUsage">与您的设备、硬件配置、使用方式相关的数据，有助于我们改进 Firefox 的功能、性能、稳定性。</string>
+  <string name="preferences_usage_data_description_1" tools:ignore="BrandUsage">与您的设备、硬件配置、使用方式相关的数据，有助于我们改进 Dejavu 的功能、性能、稳定性。</string>
   <!-- Preference switch for daily usage ping data collection -->
   <string name="preferences_daily_usage_ping_title">每日使用情况报告</string>
   <string name="preferences_daily_usage_ping_description" tools:ignore="BrandUsage">此信息可帮助 Mozilla 估算活跃用户数量。</string>
@@ -1226,7 +1226,7 @@
     Preference description for marketing data collection.
     Note: The words "Firefox" and "Mozilla" should NOT be translated. “That you use it” is to mean that the user is opting in to sharing that they are continuing to use Firefox after installing it; not that Firefox is tracking their “usage” or what they’re using it for.
   -->
-  <string name="preferences_marketing_data_description_4" tools:ignore="BrandUsage">与 Mozilla 的营销技术合作伙伴分享您发现 Firefox 的途径及使用方式。</string>
+  <string name="preferences_marketing_data_description_4" tools:ignore="BrandUsage">与 Mozilla 的营销技术合作伙伴分享您发现 Dejavu 的途径及使用方式。</string>
   <!-- Learn more link for marketing data preference -->
   <string name="preferences_marketing_data_learn_more">详细了解营销数据</string>
   <!-- Title for studies preferences -->
@@ -1461,7 +1461,7 @@
   <!-- Title of the active section on the studies list -->
   <string name="studies_active">进行中</string>
   <!-- Description for studies. Note: The word "Firefox" should NOT be translated -->
-  <string name="studies_description_4" tools:ignore="BrandUsage">Firefox 会随机选择用户测试功能，以为全体用户改进质量。</string>
+  <string name="studies_description_4" tools:ignore="BrandUsage">Dejavu 会随机选择用户测试功能，以为全体用户改进质量。</string>
   <!-- Title of the Studies data preference -->
   <string name="studies_title_2">允许功能研究</string>
   <!-- Learn more link for studies, links to an article for more information about studies. -->
@@ -1473,7 +1473,7 @@
   -->
   <string name="remote_improvements_title">允许远程改进</string>
   <!-- Description for remote improvements. Note: The word "Firefox" should NOT be translated -->
-  <string name="remote_improvements_description" tools:ignore="BrandUsage">Firefox 将在更新间隔期间改进功能、性能、稳定性，更改会远程进行。</string>
+  <string name="remote_improvements_description" tools:ignore="BrandUsage">Dejavu 将在更新间隔期间改进功能、性能、稳定性，更改会远程进行。</string>
   <!-- Learn more link for remote improvements, links to an article for more information about rollouts. -->
   <string name="remote_improvements_learn_more">详细了解</string>
   <!-- Title for remote improvements preference in Advanced settings -->
@@ -2416,12 +2416,12 @@
     Title shown in the notification that pops up to remind the user to set fenix as default browser.
     The app name is in the text, due to limitations with localizing Nimbus experiments
   -->
-  <string name="nimbus_notification_default_browser_title" tools:ignore="BrandUsage,UnusedResources">Firefox 又快又私密</string>
+  <string name="nimbus_notification_default_browser_title" tools:ignore="BrandUsage,UnusedResources">Dejavu 又快又私密</string>
   <!--
     Text shown in the notification that pops up to remind the user to set fenix as default browser.
     The app name is in the text, due to limitations with localizing Nimbus experiments
   -->
-  <string name="nimbus_notification_default_browser_text" tools:ignore="BrandUsage,UnusedResources">将 Firefox 设为您的默认浏览器</string>
+  <string name="nimbus_notification_default_browser_text" tools:ignore="BrandUsage,UnusedResources">将 Dejavu 设为您的默认浏览器</string>
   <!--
     Privacy report notification
 
@@ -2440,7 +2440,7 @@
     Text shown in the fullscreen message that pops up to ask user to take a short survey.
     The app name is in the text, due to limitations with localizing Nimbus experiments
   -->
-  <string name="nimbus_survey_message_text" tools:ignore="BrandUsage">请填写这份简短的问卷，帮助 Firefox 变得更好。</string>
+  <string name="nimbus_survey_message_text" tools:ignore="BrandUsage">请填写这份简短的问卷，帮助 Dejavu 变得更好。</string>
   <!-- Preference for taking the short survey. -->
   <string name="preferences_take_survey">问卷调查</string>
   <!-- Preference for not taking the short survey. -->
@@ -3111,7 +3111,7 @@
   <!-- Title for the browser VPN location picker screen. -->
   <string name="ip_protection_location_picker_title" tools:ignore="UnusedResources">选择 VPN 位置</string>
   <!-- Description for what it means to use the Recommended setting and let the app automatically pick the best server location. -->
-  <string name="ip_protection_location_fastest_description" tools:ignore="BrandUsage">让 Firefox 寻找速度最快的位置</string>
+  <string name="ip_protection_location_fastest_description" tools:ignore="BrandUsage">让 Dejavu 寻找速度最快的位置</string>
   <!-- Description for an unavailable VPN location in the location list. -->
   <string name="ip_protection_location_unavailable_description">不可用</string>
   <!-- Error message shown when the selected browser VPN location is unavailable. -->
@@ -3485,7 +3485,7 @@
   -->
   <string name="inactive_tabs_auto_close_message_header" tools:ignore="UnusedResources">要一个月后自动关闭吗？</string>
   <!-- A description below the header to notify the user what the inactive tabs auto-close feature is. -->
-  <string name="inactive_tabs_auto_close_message_description" tools:ignore="BrandUsage,UnusedResources">Firefox 可自动关闭您一个月内未查看的标签页。</string>
+  <string name="inactive_tabs_auto_close_message_description" tools:ignore="BrandUsage,UnusedResources">Dejavu 可自动关闭您一个月内未查看的标签页。</string>
   <!-- A call to action below the description to allow the user to turn on the auto closing of inactive tabs. -->
   <string name="inactive_tabs_auto_close_message_action" tools:ignore="UnusedResources">启用自动关闭标签页功能</string>
   <!-- Text for the snackbar to confirm auto-close is enabled for inactive tabs -->
@@ -3495,7 +3495,7 @@
 
     Search suggestions title for Firefox Suggest.
   -->
-  <string name="firefox_suggest_header" tools:ignore="BrandUsage">Firefox 建议</string>
+  <string name="firefox_suggest_header" tools:ignore="BrandUsage">Dejavu 建议</string>
   <!--
     Search suggestions title for trending search suggestions.
     %s is a placeholder for the name of the search engine providing the trending search suggestions.
@@ -3514,7 +3514,7 @@
   -->
   <string name="default_browser_experiment_card_title">切换默认浏览器</string>
   <!-- Default browser card text -->
-  <string name="default_browser_experiment_card_text" tools:ignore="BrandUsage">将网站、电子邮件及聊天工具中的链接设为在 Firefox 中自动打开。</string>
+  <string name="default_browser_experiment_card_text" tools:ignore="BrandUsage">将网站、电子邮件及聊天工具中的链接设为在 Dejavu 中自动打开。</string>
   <!-- Content description radio buttons with a link to more information -->
   <string name="radio_preference_info_content_description">点击了解更多信息</string>
   <!-- Content description for the action bar "up" button -->
@@ -4479,7 +4479,7 @@
     The "Labs" portion can be localized, "Firefox" must be treated as a brand and kept
     in English.
   -->
-  <string name="firefox_labs_title" tools:ignore="BrandUsage">Firefox 实验室</string>
+  <string name="firefox_labs_title" tools:ignore="BrandUsage">Dejavu 实验室</string>
   <!-- Banner title text on the Firefox Labs screen. -->
   <string name="firefox_labs_banner_title_2">欢迎试用我们的实验性功能！</string>
   <!--

@@ -77,6 +77,7 @@ import org.mozilla.fenix.ext.runIfFragmentIsAttached
 import org.mozilla.fenix.home.HomeFragment
 import org.mozilla.fenix.ipprotection.store.Surface as IPProtectionSurface
 import org.mozilla.fenix.ipprotection.ui.IPProtectionBottomSheetFragment
+import org.mozilla.fenix.kaizen.browser.KaizenLinkMenu
 import org.mozilla.fenix.kaizen.browser.KaizenToolbar
 import org.mozilla.fenix.kaizen.browser.openKaizenMenu
 import org.mozilla.fenix.listentopage.ListenSheetIntegration
@@ -541,7 +542,7 @@ class BrowserFragment : BaseBrowserFragment(), UserInteractionHandler, SystemIns
                 { true },
             )
 
-        return if (requireComponents.settings.nativeShareSheetEnabled && isSystemShareSheetSupported) {
+        val candidates = if (requireComponents.settings.nativeShareSheetEnabled && isSystemShareSheetSupported) {
             NativeShareSheetContextMenuCandidate.defaultCandidates(
                 context = context,
                 tabsUseCases = context.components.useCases.tabsUseCases,
@@ -589,6 +590,7 @@ class BrowserFragment : BaseBrowserFragment(), UserInteractionHandler, SystemIns
                 contextMenuCandidateAppLinksUseCases,
             ) +
             createOpenWithGoogleLensCandidate(context)
+        return KaizenLinkMenu.withKaizenEntries(context, candidates, view, ContextMenuSnackbarDelegate())
     }
 
     private fun navigateToShareFragment(

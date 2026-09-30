@@ -293,7 +293,7 @@
   <!-- Preference Category for settings related to Search address bar -->
   <string name="preferences_settings_address_bar">Sama barra daa nuu</string>
   <!-- Preference Category for settings to Firefox Suggest -->
-  <string name="preference_search_address_bar_fx_suggest" tools:ignore="BrandUsage">Barra daa nuu - Ya\'a vi daa a kachi Firefox</string>
+  <string name="preference_search_address_bar_fx_suggest" tools:ignore="BrandUsage">Barra daa nuu - Ya\'a vi daa a kachi Dejavu</string>
   <!-- Preference link to Learn more about Firefox Suggest -->
   <string name="preference_search_learn_about_fx_suggest" tools:ignore="BrandUsage">Ka´vi kue´eka jie´e Firefox Suggest</string>
   <!-- Preference link to rating Fenix on the Play Store -->
@@ -1059,19 +1059,19 @@
     Title shown in the notification that pops up to remind the user to set fenix as default browser.
     The app name is in the text, due to limitations with localizing Nimbus experiments
   -->
-  <string name="nimbus_notification_default_browser_title" tools:ignore="BrandUsage,UnusedResources">Firefox kuviji ñama jee yu\'u</string>
+  <string name="nimbus_notification_default_browser_title" tools:ignore="BrandUsage,UnusedResources">Dejavu kuviji ñama jee yu\'u</string>
   <!--
     Text shown in the notification that pops up to remind the user to set fenix as default browser.
     The app name is in the text, due to limitations with localizing Nimbus experiments
   -->
-  <string name="nimbus_notification_default_browser_text" tools:ignore="BrandUsage,UnusedResources">Sá´á Firefox ka̱a̱ nánuku xinañu´u</string>
+  <string name="nimbus_notification_default_browser_text" tools:ignore="BrandUsage,UnusedResources">Sá´á Dejavu ka̱a̱ nánuku xinañu´u</string>
   <!--
     Survey
 
     Text shown in the fullscreen message that pops up to ask user to take a short survey.
     The app name is in the text, due to limitations with localizing Nimbus experiments
   -->
-  <string name="nimbus_survey_message_text" tools:ignore="BrandUsage">Kuneka\'nu ininu, chinei Firefox jíí iin encuesta luli.</string>
+  <string name="nimbus_survey_message_text" tools:ignore="BrandUsage">Kuneka\'nu ininu, chinei Dejavu jíí iin encuesta luli.</string>
   <!-- Preference for taking the short survey. -->
   <string name="preferences_take_survey">Chu\'un encuesta</string>
   <!-- Preference for not taking the short survey. -->
@@ -1666,7 +1666,7 @@
   -->
   <string name="inactive_tabs_auto_close_message_header" tools:ignore="UnusedResources">¿Nakasɨ dee nña\'a iin yoo?</string>
   <!-- A description below the header to notify the user what the inactive tabs auto-close feature is. -->
-  <string name="inactive_tabs_auto_close_message_description" tools:ignore="BrandUsage,UnusedResources">Firefox kuvi nakasɨ pestañas de ntu sinenuma jee nña\'a iin yoo.</string>
+  <string name="inactive_tabs_auto_close_message_description" tools:ignore="BrandUsage,UnusedResources">Dejavu kuvi nakasɨ pestañas de ntu sinenuma jee nña\'a iin yoo.</string>
   <!-- A call to action below the description to allow the user to turn on the auto closing of inactive tabs. -->
   <string name="inactive_tabs_auto_close_message_action" tools:ignore="UnusedResources">ACTIVAR CIERRE AUTOMÁTICO</string>
   <!-- Text for the snackbar to confirm auto-close is enabled for inactive tabs -->
@@ -1676,7 +1676,7 @@
 
     Search suggestions title for Firefox Suggest.
   -->
-  <string name="firefox_suggest_header" tools:ignore="BrandUsage">Firefox Suggest</string>
+  <string name="firefox_suggest_header" tools:ignore="BrandUsage">Dejavu Suggest</string>
   <!-- Title for search suggestions when Google is the default search suggestion engine. -->
   <string name="google_search_engine_suggestion_header">Nnánuku Google</string>
   <!-- Title for search suggestions when the default search suggestion engine is anything other than Google. %s is default search engine name. -->

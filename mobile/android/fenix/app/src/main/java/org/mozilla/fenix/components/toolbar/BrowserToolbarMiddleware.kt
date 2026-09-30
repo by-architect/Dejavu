@@ -838,7 +838,7 @@ class BrowserToolbarMiddleware(
 
     private suspend fun buildEndBrowserActions(): List<Action> {
         if (KaizenToolbar.enabled) {
-            return listOf(buildAction(ToolbarAction.Homepage, Source.AddressBar.BrowserEnd))
+            return emptyList()
         }
 
         val isWideWindow = isWideScreen()

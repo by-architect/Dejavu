@@ -576,7 +576,7 @@
   <!-- Preference Category for settings related to Search address bar -->
   <string name="preferences_settings_address_bar">ການຕັ້ງຄ່າແຖບທີ່ຢູ່</string>
   <!-- Preference Category for settings to Firefox Suggest -->
-  <string name="preference_search_address_bar_fx_suggest" tools:ignore="BrandUsage">ແຖບທີ່ຢູ່ - Firefox Suggest</string>
+  <string name="preference_search_address_bar_fx_suggest" tools:ignore="BrandUsage">ແຖບທີ່ຢູ່ - Dejavu Suggest</string>
   <!-- Preference link to Learn more about Firefox Suggest -->
   <string name="preference_search_learn_about_fx_suggest" tools:ignore="BrandUsage">ສຶກສາເພີ່ມເຕີມກ່ຽວກັບການ Firefox Suggest</string>
   <!-- Preference link to rating Fenix on the Play Store -->
@@ -894,7 +894,7 @@
   -->
   <string name="addon_ga_message_title_2" tools:ignore="UnusedResources">ສ່ວນຂະຫຍາຍໃໝ່ມີໃຫ້ແລ້ວ</string>
   <!-- Body of the Nimbus message for add-ons general availability. 'Firefox' intentionally hardcoded here -->
-  <string name="addon_ga_message_body" tools:ignore="BrandUsage,UnusedResources">ກວດເບິ່ງ 100+ ສ່ວນຂະຫຍາຍໃຫມ່ທີ່ຊ່ວຍໃຫ້ທ່ານສ້າງ Firefox ຂອງທ່ານເອງ.</string>
+  <string name="addon_ga_message_body" tools:ignore="BrandUsage,UnusedResources">ກວດເບິ່ງ 100+ ສ່ວນຂະຫຍາຍໃຫມ່ທີ່ຊ່ວຍໃຫ້ທ່ານສ້າງ Dejavu ຂອງທ່ານເອງ.</string>
   <!-- Button text of the Nimbus message for extensions general availability. -->
   <string name="addon_ga_message_button_2" tools:ignore="UnusedResources">ສຳຫຼວດສ່ວນຂະຫຍາຍ</string>
   <!--
@@ -998,7 +998,7 @@
   <!-- Preference switch for usage and technical learn more link in new compose -->
   <string name="preference_usage_data_learn_more_2">ສຶກສາເພີ່ມເຕີມກ່ຽວກັບຂໍ້ມູນດ້ານເຕັກນິກ</string>
   <!-- Preference description for marketing data collection. Note: The words "Firefox" should NOT be translated -->
-  <string name="preferences_usage_data_description_1" tools:ignore="BrandUsage">ຂໍ້​ມູນ​ກ່ຽວ​ກັບ​ອຸ​ປະ​ກອນ​ຂອງ​ທ່ານ, ການ​ຕັ້ງ​ຄ່າ​ຮາດ​ແວ, ແລະ​ ການ​ນໍາ​ໃຊ້​ຊ່ວຍ​ໃຫ້​ພວກ​ເຮົາ​ປັບ​ປຸງ​ຄຸນ​ສົມ​ບັດ Firefox, ປະ​ສິດ​ທິ​ພາບ, ແລະ ​ຄວາມ​ຫມັ້ນ​ຄົງ.</string>
+  <string name="preferences_usage_data_description_1" tools:ignore="BrandUsage">ຂໍ້​ມູນ​ກ່ຽວ​ກັບ​ອຸ​ປະ​ກອນ​ຂອງ​ທ່ານ, ການ​ຕັ້ງ​ຄ່າ​ຮາດ​ແວ, ແລະ​ ການ​ນໍາ​ໃຊ້​ຊ່ວຍ​ໃຫ້​ພວກ​ເຮົາ​ປັບ​ປຸງ​ຄຸນ​ສົມ​ບັດ Dejavu, ປະ​ສິດ​ທິ​ພາບ, ແລະ ​ຄວາມ​ຫມັ້ນ​ຄົງ.</string>
   <!-- Preference switch for daily usage ping data collection -->
   <string name="preferences_daily_usage_ping_title">ping ການນໍາໃຊ້ປະຈໍາວັນ</string>
   <string name="preferences_daily_usage_ping_description" tools:ignore="BrandUsage">ນີ້ຊ່ວຍໃຫ້ Mozilla ຄາດຄະເນຜູ້ໃຊ້ງານທີ່ມີການເຄື່ອນໄຫວ.</string>
@@ -1021,7 +1021,7 @@
     Preference description for marketing data collection.
     Note: The words "Firefox" and "Mozilla" should NOT be translated. “That you use it” is to mean that the user is opting in to sharing that they are continuing to use Firefox after installing it; not that Firefox is tracking their “usage” or what they’re using it for.
   -->
-  <string name="preferences_marketing_data_description_4" tools:ignore="BrandUsage">ແບ່ງປັນວິທີທີ່ທ່ານຄົ້ນພົບ Firefox ແລະ ທີ່ທ່ານໃຊ້ມັນກັບຄູ່ຄ້າດ້ານເຕັກໂນໂລຢີການຕະຫຼາດຂອງ Mozilla.</string>
+  <string name="preferences_marketing_data_description_4" tools:ignore="BrandUsage">ແບ່ງປັນວິທີທີ່ທ່ານຄົ້ນພົບ Dejavu ແລະ ທີ່ທ່ານໃຊ້ມັນກັບຄູ່ຄ້າດ້ານເຕັກໂນໂລຢີການຕະຫຼາດຂອງ Mozilla.</string>
   <!-- Learn more link for marketing data preference -->
   <string name="preferences_marketing_data_learn_more">ສຶກສາເພີ່ມເຕີມກ່ຽວກັບຂໍ້ມູນການຕະຫຼາດ</string>
   <!-- Title for studies preferences -->
@@ -1858,19 +1858,19 @@
     Title shown in the notification that pops up to remind the user to set fenix as default browser.
     The app name is in the text, due to limitations with localizing Nimbus experiments
   -->
-  <string name="nimbus_notification_default_browser_title" tools:ignore="BrandUsage,UnusedResources">Firefox ແມ່ນໄວ ແລະ ເປັນສ່ວນຕົວ</string>
+  <string name="nimbus_notification_default_browser_title" tools:ignore="BrandUsage,UnusedResources">Dejavu ແມ່ນໄວ ແລະ ເປັນສ່ວນຕົວ</string>
   <!--
     Text shown in the notification that pops up to remind the user to set fenix as default browser.
     The app name is in the text, due to limitations with localizing Nimbus experiments
   -->
-  <string name="nimbus_notification_default_browser_text" tools:ignore="BrandUsage,UnusedResources">ຕັ້ງ Firefox ໃຫ້ເປັນຕົວທ່ອງເວັບເລີ່ມຕົ້ນຂອງທ່ານ</string>
+  <string name="nimbus_notification_default_browser_text" tools:ignore="BrandUsage,UnusedResources">ຕັ້ງ Dejavu ໃຫ້ເປັນຕົວທ່ອງເວັບເລີ່ມຕົ້ນຂອງທ່ານ</string>
   <!--
     Survey
 
     Text shown in the fullscreen message that pops up to ask user to take a short survey.
     The app name is in the text, due to limitations with localizing Nimbus experiments
   -->
-  <string name="nimbus_survey_message_text" tools:ignore="BrandUsage">ກະລຸນາຊ່ວຍເຮັດໃຫ້ Firefox ດີຂຶ້ນໂດຍການເຮັດແບບສຳຫຼວດສັ້ນໆ.</string>
+  <string name="nimbus_survey_message_text" tools:ignore="BrandUsage">ກະລຸນາຊ່ວຍເຮັດໃຫ້ Dejavu ດີຂຶ້ນໂດຍການເຮັດແບບສຳຫຼວດສັ້ນໆ.</string>
   <!-- Preference for taking the short survey. -->
   <string name="preferences_take_survey">ເຮັດແບບສຳຫຼວດ</string>
   <!-- Preference for not taking the short survey. -->
@@ -2557,7 +2557,7 @@
   -->
   <string name="inactive_tabs_auto_close_message_header" tools:ignore="UnusedResources">ປິດອັດຕະໂນມັດຫຼັງຈາກຫນຶ່ງເດືອນບໍ?</string>
   <!-- A description below the header to notify the user what the inactive tabs auto-close feature is. -->
-  <string name="inactive_tabs_auto_close_message_description" tools:ignore="BrandUsage,UnusedResources">Firefox ສາມາດປິດແຖບທີ່ທ່ານບໍ່ໄດ້ເບິ່ງໃນເດືອນທີ່ຜ່ານມາ.</string>
+  <string name="inactive_tabs_auto_close_message_description" tools:ignore="BrandUsage,UnusedResources">Dejavu ສາມາດປິດແຖບທີ່ທ່ານບໍ່ໄດ້ເບິ່ງໃນເດືອນທີ່ຜ່ານມາ.</string>
   <!-- A call to action below the description to allow the user to turn on the auto closing of inactive tabs. -->
   <string name="inactive_tabs_auto_close_message_action" tools:ignore="UnusedResources">ເປີດປິດອັດຕະໂນມັດ</string>
   <!-- Text for the snackbar to confirm auto-close is enabled for inactive tabs -->
@@ -2567,7 +2567,7 @@
 
     Search suggestions title for Firefox Suggest.
   -->
-  <string name="firefox_suggest_header" tools:ignore="BrandUsage">Firefox ແນະນໍາ</string>
+  <string name="firefox_suggest_header" tools:ignore="BrandUsage">Dejavu ແນະນໍາ</string>
   <!-- Title for search suggestions when Google is the default search suggestion engine. -->
   <string name="google_search_engine_suggestion_header">ຄົ້ນ​ຫາ Google</string>
   <!-- Title for search suggestions when the default search suggestion engine is anything other than Google. %s is default search engine name. -->
@@ -2575,7 +2575,7 @@
   <!-- Title for recent search suggestions. -->
   <string name="recent_searches_header">ການຄົ້ນຫາຫຼ້າສຸດ</string>
   <!-- Default browser card text -->
-  <string name="default_browser_experiment_card_text" tools:ignore="BrandUsage">ຕັ້ງລິ້ງຈາກເວັບໄຊທ໌, ອີເມວ ແລະຂໍ້ຄວາມໃຫ້ເປີດໂດຍອັດຕະໂນມັດໃນ Firefox.</string>
+  <string name="default_browser_experiment_card_text" tools:ignore="BrandUsage">ຕັ້ງລິ້ງຈາກເວັບໄຊທ໌, ອີເມວ ແລະຂໍ້ຄວາມໃຫ້ເປີດໂດຍອັດຕະໂນມັດໃນ Dejavu.</string>
   <!-- Content description radio buttons with a link to more information -->
   <string name="radio_preference_info_content_description">ຄຣິກສຳລັບລາຍລະອຽດເພີ່ມເຕີມ</string>
   <!-- Content description for the action bar "up" button -->

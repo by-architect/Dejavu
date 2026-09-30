@@ -109,6 +109,10 @@ object KaizenColors {
     }
 
     private val lightPalette = lightColorPalette.copy(
+        information = Gold45,
+        onInformation = White,
+        informationContainer = Gold90,
+        onInformationContainer = Gold10,
         surfaceDimVariant = Warm10,
         surfaceContainerSelected = Warm25,
         autofillText = Warm30,
@@ -117,6 +121,10 @@ object KaizenColors {
     )
 
     private val darkPalette = darkColorPalette.copy(
+        information = Gold80,
+        onInformation = Gold20,
+        informationContainer = Gold30,
+        onInformationContainer = Gold90,
         surfaceDimVariant = Warm80,
         surfaceContainerSelected = Warm55,
         autofillText = Sand80.copy(alpha = AUTOFILL_ALPHA),
@@ -125,6 +133,10 @@ object KaizenColors {
     )
 
     private val oledPalette = oledColorPalette.copy(
+        information = Gold80,
+        onInformation = Gold20,
+        informationContainer = Gold30,
+        onInformationContainer = Warm20,
         surfaceDimVariant = Warm90,
         surfaceContainerSelected = Warm65,
         autofillText = Sand30,

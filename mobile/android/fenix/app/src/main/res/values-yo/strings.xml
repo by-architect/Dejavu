@@ -1313,7 +1313,7 @@
   -->
   <string name="inactive_tabs_auto_close_message_header" tools:ignore="UnusedResources">Tì-fúnra-ẹ̀ lẹ́yìn oṣù kan?</string>
   <!-- A description below the header to notify the user what the inactive tabs auto-close feature is. -->
-  <string name="inactive_tabs_auto_close_message_description" tools:ignore="BrandUsage,UnusedResources">Firefox lè ti àwọn táàbù tí oò tíì yẹ̀wò ní oṣù tó kọjá.</string>
+  <string name="inactive_tabs_auto_close_message_description" tools:ignore="BrandUsage,UnusedResources">Dejavu lè ti àwọn táàbù tí oò tíì yẹ̀wò ní oṣù tó kọjá.</string>
   <!-- A call to action below the description to allow the user to turn on the auto closing of inactive tabs. -->
   <string name="inactive_tabs_auto_close_message_action" tools:ignore="UnusedResources">TAN TÌ-FÚNRA-Ẹ̀</string>
   <!-- Text for the snackbar to confirm auto-close is enabled for inactive tabs -->
@@ -1323,9 +1323,9 @@
 
     Search suggestions title for Firefox Suggest.
   -->
-  <string name="firefox_suggest_header" tools:ignore="BrandUsage">Firefox Dábàá</string>
+  <string name="firefox_suggest_header" tools:ignore="BrandUsage">Dejavu Dábàá</string>
   <!-- Default browser card text -->
-  <string name="default_browser_experiment_card_text" tools:ignore="BrandUsage">Ṣètò àwọn líǹkì láti àwọn wẹ́íbúsaìtì, íméèlì àti àwọn ìfiráńṣẹ láti ṣí fún ra wọn ní Firefox.</string>
+  <string name="default_browser_experiment_card_text" tools:ignore="BrandUsage">Ṣètò àwọn líǹkì láti àwọn wẹ́íbúsaìtì, íméèlì àti àwọn ìfiráńṣẹ láti ṣí fún ra wọn ní Dejavu.</string>
   <!-- Content description radio buttons with a link to more information -->
   <string name="radio_preference_info_content_description">Tẹ̀ẹ́ fún àlàyé nípa kókó díẹ̀ si</string>
   <!-- Content description for the action bar "up" button -->

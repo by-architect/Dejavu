@@ -34,6 +34,7 @@ class KaizenSettings private constructor(context: Context) {
     private val _moreMenuRows = MutableStateFlow(
         MoreMenuLayout.normalized(MoreMenuLayout.fromJson(prefs.getString(KEY_MORE_MENU_ROWS, null)) ?: MoreMenuLayout.DEFAULT),
     )
+    private val _moreMenuEditHidden = MutableStateFlow(prefs.getBoolean(KEY_MORE_MENU_EDIT_HIDDEN, false))
     private val _hiddenSelectionKeys = MutableStateFlow(
         prefs.getString(KEY_HIDDEN_SELECTION_ACTIONS, null)?.split(",")?.filter { it.isNotBlank() }?.toSet().orEmpty(),
     )
@@ -61,6 +62,9 @@ class KaizenSettings private constructor(context: Context) {
 
     /** Rows of the browser's "More" menu, as keys of its entries. See [MoreMenuLayout]. */
     val moreMenuRows: StateFlow<List<List<String>>> = _moreMenuRows.asStateFlow()
+
+    /** Whether the "More" menu hides its button that opens the menu's settings. */
+    val moreMenuEditHidden: StateFlow<Boolean> = _moreMenuEditHidden.asStateFlow()
 
     /** Keys of the [RowAction]s left out of the selection bar. Every other action, new ones included, is shown. */
     val hiddenSelectionKeys: StateFlow<Set<String>> = _hiddenSelectionKeys.asStateFlow()
@@ -97,6 +101,11 @@ class KaizenSettings private constructor(context: Context) {
     fun setMoreMenuRows(rows: List<List<String>>) {
         _moreMenuRows.value = MoreMenuLayout.normalized(rows)
         prefs.edit { putString(KEY_MORE_MENU_ROWS, MoreMenuLayout.toJson(_moreMenuRows.value)) }
+    }
+
+    fun setMoreMenuEditHidden(hidden: Boolean) {
+        _moreMenuEditHidden.value = hidden
+        prefs.edit { putBoolean(KEY_MORE_MENU_EDIT_HIDDEN, hidden) }
     }
 
     fun resetMoreMenu() {
@@ -160,6 +169,7 @@ class KaizenSettings private constructor(context: Context) {
         private const val KEY_EXTERNAL_LINK_WORKSPACE = "external_link_workspace"
         private const val KEY_EXTERNAL_LINK_CONTAINER = "external_link_container"
         private const val KEY_MORE_MENU_ROWS = "more_menu_rows"
+        private const val KEY_MORE_MENU_EDIT_HIDDEN = "more_menu_edit_hidden"
         private val DEFAULT_PINNED_ROW_ACTIONS = listOf(TabAction.CLOSE)
         private val DEFAULT_UNPINNED_ROW_ACTIONS = listOf(TabAction.PIN, TabAction.CLOSE)
 

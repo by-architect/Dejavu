@@ -14,6 +14,7 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
@@ -26,11 +27,14 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.alpha
 import androidx.compose.ui.draw.clip
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.semantics.CustomAccessibilityAction
 import androidx.compose.ui.semantics.Role
 import androidx.compose.ui.semantics.contentDescription
+import androidx.compose.ui.semantics.customActions
 import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
@@ -52,6 +56,8 @@ import org.mozilla.fenix.ext.components as contextComponents
 import org.mozilla.fenix.ext.nav
 import org.mozilla.fenix.kaizen.browser.KaizenToolbar
 import org.mozilla.fenix.kaizen.browser.openKaizenMenu
+import org.mozilla.fenix.kaizen.browser.shownWorkspaceTheme
+import org.mozilla.fenix.kaizen.browser.workspaceTheme
 import org.mozilla.fenix.kaizen.settings.KaizenSettings
 import org.mozilla.fenix.kaizen.workspaces.WorkspaceRepository
 import org.mozilla.fenix.webcompat.DefaultWebCompatReporterMoreInfoSender
@@ -95,7 +101,13 @@ fun KaizenActionsBar(onEvent: (BrowserToolbarEvent) -> Unit) {
         )
     } ?: MoreMenuState()
 
-    Box(modifier = Modifier.fillMaxWidth().height(BAR_HEIGHT).background(MaterialTheme.colorScheme.surface)) {
+    Box(
+        modifier = Modifier
+            .fillMaxWidth()
+            .height(BAR_HEIGHT)
+            .background(MaterialTheme.colorScheme.surface)
+            .workspaceTheme(shownWorkspaceTheme()),
+    ) {
         Box(
             modifier = Modifier
                 .align(Alignment.TopCenter)
@@ -104,54 +116,59 @@ fun KaizenActionsBar(onEvent: (BrowserToolbarEvent) -> Unit) {
                 .clip(CircleShape)
                 .background(MaterialTheme.colorScheme.onSurfaceVariant.copy(alpha = HANDLE_ALPHA)),
         )
+        val buttons = entries.map { entry -> BarItem(entry.look(state)) { onEvent(entry.barEvent(state)) } } +
+            BarItem(EntryLook(stringResource(R.string.kaizen_actions_bar_search), iconsR.drawable.mozac_ic_search_24)) {
+                onEvent(KaizenToolbar.SearchClicked)
+            }
+        val home = BarItem(EntryLook(stringResource(R.string.kaizen_actions_bar_home), iconsR.drawable.mozac_ic_home_24)) {
+            onEvent(DisplayActions.HomepageClicked(Source.NavigationBar))
+        }
+        // Screen readers cannot swipe the bar up, so every button also offers the menu as an action.
+        val menuAction = listOf(
+            CustomAccessibilityAction(stringResource(R.string.content_description_menu)) {
+                onEvent(KaizenToolbar.MenuRequested)
+                true
+            },
+        )
+        // Home stays in the middle, with the other buttons shared out on both sides of it.
         Row(
             verticalAlignment = Alignment.CenterVertically,
             modifier = Modifier.fillMaxSize().padding(horizontal = 8.dp),
         ) {
-            entries.forEach { entry ->
-                BarButton(
-                    look = entry.look(state),
-                    onClick = { onEvent(entry.barEvent(state)) },
-                    modifier = Modifier.weight(1f),
-                )
+            Row(modifier = Modifier.weight(1f)) {
+                buttons.take(buttons.size / 2).forEach { BarButton(it, menuAction, Modifier.weight(1f)) }
             }
-            BarButton(
-                look = EntryLook(stringResource(R.string.kaizen_actions_bar_search), iconsR.drawable.mozac_ic_search_24),
-                onClick = { onEvent(KaizenToolbar.SearchClicked) },
-                modifier = Modifier.weight(1f),
-                filled = true,
-            )
+            BarButton(home, menuAction, Modifier.width(HOME_SLOT_WIDTH))
+            Row(modifier = Modifier.weight(1f)) {
+                buttons.drop(buttons.size / 2).forEach { BarButton(it, menuAction, Modifier.weight(1f)) }
+            }
         }
     }
 }
 
+private class BarItem(val look: EntryLook, val onClick: () -> Unit)
+
 @Composable
-private fun BarButton(look: EntryLook, onClick: () -> Unit, modifier: Modifier = Modifier, filled: Boolean = false) {
+private fun BarButton(item: BarItem, a11yActions: List<CustomAccessibilityAction>, modifier: Modifier = Modifier) {
+    val look = item.look
     Box(contentAlignment = Alignment.Center, modifier = modifier) {
         Box(
             contentAlignment = Alignment.Center,
             modifier = Modifier
-                .size(width = if (filled) 64.dp else 48.dp, height = 40.dp)
+                .size(48.dp)
                 .clip(CircleShape)
-                .background(
-                    when {
-                        filled -> MaterialTheme.colorScheme.primary
-                        look.active -> MaterialTheme.colorScheme.secondaryContainer
-                        else -> MaterialTheme.colorScheme.surface
-                    },
-                )
-                .clickable(enabled = look.enabled, role = Role.Button, onClick = onClick)
-                .semantics { contentDescription = look.label }
+                .background(if (look.active) MaterialTheme.colorScheme.secondaryContainer else Color.Transparent)
+                .clickable(enabled = look.enabled, role = Role.Button, onClick = item.onClick)
+                .semantics {
+                    contentDescription = look.label
+                    customActions = a11yActions
+                }
                 .alpha(if (look.enabled) 1f else DISABLED_ALPHA),
         ) {
             Icon(
                 painter = painterResource(look.icon),
                 contentDescription = null,
-                tint = when {
-                    filled -> MaterialTheme.colorScheme.onPrimary
-                    look.active -> MaterialTheme.colorScheme.onSecondaryContainer
-                    else -> MaterialTheme.colorScheme.onSurface
-                },
+                tint = if (look.active) MaterialTheme.colorScheme.onSecondaryContainer else MaterialTheme.colorScheme.onSurface,
                 modifier = Modifier.size(22.dp),
             )
         }
@@ -250,5 +267,6 @@ private fun reportBrokenSite(context: Context, navController: NavController, tab
 }
 
 private val BAR_HEIGHT = 60.dp
+private val HOME_SLOT_WIDTH = 64.dp
 private const val HANDLE_ALPHA = 0.3f
 private const val DISABLED_ALPHA = 0.38f

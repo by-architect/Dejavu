@@ -44,7 +44,6 @@ import androidx.compose.ui.semantics.contentDescription
 import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.unit.dp
 import mozilla.components.browser.state.state.TabSessionState
-import mozilla.components.compose.base.theme.success
 import org.mozilla.fenix.compose.Favicon
 import org.mozilla.fenix.kaizen.containers.ContainerRecord
 import org.mozilla.fenix.kaizen.containers.color
@@ -225,7 +224,6 @@ private fun EssentialTile(
             contentAlignment = Alignment.Center,
             modifier = Modifier
                 .size(30.dp)
-                .border(1.5.dp, if (isAwake) MaterialTheme.colorScheme.success else Color.Transparent, CircleShape)
                 .alpha(if (isAwake) 1f else DIMMED_ALPHA),
         ) {
             Favicon(url = tab?.content?.url ?: item.url.orEmpty(), size = 22.dp, shape = CircleShape)

@@ -326,7 +326,7 @@
   <!-- Preference for settings related to Search engines -->
   <string name="preferences_search_engines">ilo alasa</string>
   <!-- Preference Category for settings to Firefox Suggest -->
-  <string name="preference_search_address_bar_fx_suggest" tools:ignore="BrandUsage">ilo Firefox Suggest la poki alasa</string>
+  <string name="preference_search_address_bar_fx_suggest" tools:ignore="BrandUsage">ilo Dejavu Suggest la poki alasa</string>
   <!-- Preference link to Learn more about Firefox Suggest -->
   <string name="preference_search_learn_about_fx_suggest" tools:ignore="BrandUsage">o sona e ilo Firefox Suggest</string>
   <!-- Preference link to rating Fenix on the Play Store -->
@@ -480,7 +480,7 @@
   -->
   <string name="addon_ga_message_title_2" tools:ignore="UnusedResources">ilo namako sin li lon</string>
   <!-- Body of the Nimbus message for add-ons general availability. 'Firefox' intentionally hardcoded here -->
-  <string name="addon_ga_message_body" tools:ignore="BrandUsage,UnusedResources">o alasa e ilo namako mute a. ona li ken nasin sina e ilo Firefox.</string>
+  <string name="addon_ga_message_body" tools:ignore="BrandUsage,UnusedResources">o alasa e ilo namako mute a. ona li ken nasin sina e ilo Dejavu.</string>
   <!-- Button text of the Nimbus message for extensions general availability. -->
   <string name="addon_ga_message_button_2" tools:ignore="UnusedResources">o alasa e ilo namako</string>
   <!--
@@ -1035,12 +1035,12 @@
     Title shown in the notification that pops up to remind the user to set fenix as default browser.
     The app name is in the text, due to limitations with localizing Nimbus experiments
   -->
-  <string name="nimbus_notification_default_browser_title" tools:ignore="BrandUsage,UnusedResources">ilo Firefox li awen suli</string>
+  <string name="nimbus_notification_default_browser_title" tools:ignore="BrandUsage,UnusedResources">ilo Dejavu li awen suli</string>
   <!--
     Text shown in the notification that pops up to remind the user to set fenix as default browser.
     The app name is in the text, due to limitations with localizing Nimbus experiments
   -->
-  <string name="nimbus_notification_default_browser_text" tools:ignore="BrandUsage,UnusedResources">o open e lipu ale kepeken ilo Firefox</string>
+  <string name="nimbus_notification_default_browser_text" tools:ignore="BrandUsage,UnusedResources">o open e lipu ale kepeken ilo Dejavu</string>
   <!-- Preference for not taking the short survey. -->
   <string name="preferences_not_take_survey">mi wile ala</string>
   <!--

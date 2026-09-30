@@ -152,7 +152,7 @@ fun ComposeView.setKaizenHomeContent(
 
             LaunchedEffect(tabs, restoreComplete) {
                 repository.syncWithTabs(tabs.map { it.id }.toSet(), restoreComplete)
-                repository.refreshPinTitles(tabs.associate { it.id to it.content.title })
+                repository.refreshPinTitles(tabs.associate { it.id to (it.content.url to it.content.title) })
             }
 
             Box(modifier = Modifier.fillMaxSize().background(MaterialTheme.colorScheme.surface)) {
@@ -266,7 +266,12 @@ private class DefaultKaizenHomeInteractor(
         when (action) {
             TabAction.CLOSE -> closeTabs(targets.openTabs.map { it.id })
             TabAction.PIN -> repository.pinTabs(targets.tabs.map { it.toPinSource() })
-            TabAction.UNPIN -> repository.unpin(targets.pins.filterNot { it.essential }.map { it.id }.toSet())
+            TabAction.UNPIN -> {
+                // Like dragging a pin out: unpinned tabs stay as tabs, the closed ones reopened without loading.
+                val pins = targets.pins.filterNot { it.essential }
+                reopenClosed(pins)
+                repository.unpin(pins.map { it.id }.toSet())
+            }
             TabAction.SLEEP -> targets.awakeTabs.forEach { store.dispatch(EngineAction.SuspendEngineSessionAction(it.id)) }
             TabAction.BOOKMARK -> bookmark(targets.links)
             TabAction.SHARE -> share(targets.links)

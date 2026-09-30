@@ -10,8 +10,38 @@ import org.mozilla.fenix.kaizen.containers.ContainerRecord
 import org.mozilla.fenix.kaizen.workspaces.PinnedItem
 import org.mozilla.fenix.kaizen.workspaces.WorkspaceState
 
-/** Kaizen's synced data: workspaces with their pinned tabs, folders and essentials, and the containers. */
-internal data class LocalSpaces(val state: WorkspaceState, val containers: List<ContainerRecord>)
+/**
+ * Kaizen's synced data: workspaces with their pinned tabs, folders and essentials, the containers, and the open tabs.
+ *
+ * @property normalTabs Whether tabs that are not pinned are synced too, like Zen's "Include unpinned tabs".
+ * @property tabs The open tabs that are not private, or `null` while the browser has not restored them yet.
+ */
+internal data class LocalSpaces(
+    val state: WorkspaceState,
+    val containers: List<ContainerRecord>,
+    val normalTabs: Boolean = false,
+    val tabs: List<LocalTab>? = null,
+)
+
+/**
+ * An open tab as spaces sync sees it.
+ *
+ * @property awake Whether its page is loaded. One that is not can be pointed at another address without losing anything.
+ */
+internal data class LocalTab(
+    val id: String,
+    val url: String,
+    val title: String,
+    val contextId: String?,
+    val awake: Boolean,
+) {
+    /** What syncing the tab sends of it, to tell whether it changed here since the last sync. */
+    val fingerprint: String
+        get() = "$url\n$title"
+}
+
+/** Whether a tab with [url] is synced; Zen and Kaizen cannot share other pages. */
+internal fun isSyncableUrl(url: String?): Boolean = url != null && (url.startsWith("https://") || url.startsWith("http://"))
 
 /**
  * The records Kaizen's data maps to.
@@ -19,13 +49,18 @@ internal data class LocalSpaces(val state: WorkspaceState, val containers: List<
  * @property records Records by id.
  * @property held Ids of local items that are left out on purpose, like a split view whose tabs have not arrived yet.
  *   Their server records are neither changed nor deleted.
+ * @property closedTabs Ids of tabs that are not pinned and were closed here since the last sync.
  */
-internal class Projection(val records: Map<String, SpacesRecord>, val held: Set<String>) {
+internal class Projection(
+    val records: Map<String, SpacesRecord>,
+    val held: Set<String>,
+    val closedTabs: Set<String> = emptySet(),
+) {
     /** What to upload so that [server] matches this projection: changed records, and tombstones for deleted ones. */
     fun changesAgainst(server: Map<String, SpacesRecord>): List<SpacesRecord> {
         val changed = records.values.filterNot { it.sameAs(server[it.id]) }
         val deleted = server.values
-            .filter { it.isSynced && it.id !in records && it.id !in held }
+            .filter { (it.isSynced && it.id !in records && it.id !in held) || it.id in closedTabs }
             .map { SpacesRecord.tombstone(it.id) }
         return changed + deleted
     }
@@ -37,8 +72,14 @@ internal class Projection(val records: Map<String, SpacesRecord>, val held: Set<
  * Every record starts from the server's copy in [server] and only the fields that differ from what Kaizen shows for
  * that copy are rewritten. Fields Kaizen does not have, like tab icons or live folder settings, are kept, so data that
  * Kaizen received and did not change always maps back to exactly the same record and is never uploaded again.
+ *
+ * @param seen Tabs that are not pinned, by sync id, as they were here at the end of the last sync ([LocalTab.fingerprint]).
  */
-internal class SpacesProjector(private val local: LocalSpaces, private val server: Map<String, SpacesRecord>) {
+internal class SpacesProjector(
+    private val local: LocalSpaces,
+    private val server: Map<String, SpacesRecord>,
+    private val seen: Map<String, String> = emptyMap(),
+) {
     private val state = local.state
     private val workspaceIds = state.workspaces.map { it.id }.toSet()
     private val containerIds = local.containers.filterNot { it.temporary }.map { it.contextId }.toSet()
@@ -47,16 +88,25 @@ internal class SpacesProjector(private val local: LocalSpaces, private val serve
     private val held = HashSet<String>()
     private val splitMembers = LinkedHashMap<String, List<String>>()
     private val projectedPins = HashSet<String>()
+    private val normalTabsBySpace = LinkedHashMap<String, MutableList<String>>()
+    private val closedTabs = HashSet<String>()
+
+    /** Tabs of Zen's split views that are not pinned; Kaizen keeps those splits as they are, in place of their tabs. */
+    private val normalSplitMembers: Set<String> = server.values
+        .filter { !it.deleted && it.kind == RecordKind.SPLIT && it.data?.opt("pinned") == false }
+        .flatMap { it.data?.strings("tabs").orEmpty() }
+        .toSet()
 
     fun project(): Projection {
         projectContainers()
         findProjectedPins()
         projectTabs()
+        projectNormalTabs()
         projectSplits()
         projectFolders()
         projectSpaces()
         projectLayout()
-        return Projection(records, held)
+        return Projection(records, held, closedTabs)
     }
 
     private fun projectContainers() {
@@ -107,6 +157,50 @@ internal class SpacesProjector(private val local: LocalSpaces, private val serve
                 .putNullable("workspaceUuid", if (pin.essential) null else pin.workspaceId)
                 .putNullable("folderId", if (pin.essential) null else parentOf(pin))
             records[pin.id] = SpacesRecord.of(pin.id, RecordKind.TAB, data)
+        }
+    }
+
+    /**
+     * Open tabs that are not pinned, like Zen's "Include unpinned tabs": each is a tab record that is not pinned, in its
+     * workspace's children after the pinned items. A tab's address and title go out only when they changed here since
+     * the last sync, so a page loaded on two devices is not sent back and forth. Without them, and before the browser
+     * restored its tabs, the server's unpinned tabs are held. Those that never were open here are held too; the engine
+     * opens them.
+     */
+    private fun projectNormalTabs() {
+        val tabs = local.tabs?.takeIf { local.normalTabs }
+        if (tabs == null) {
+            server.values.filter { it.isNormalTab }.forEach { held += it.id }
+            return
+        }
+        val pinnedTabs = state.pins.mapNotNull { it.tabId }.toSet()
+        for (tab in tabs) {
+            if (tab.id in pinnedTabs) continue
+            val syncId = state.syncIdOf(tab.id)
+            val workspaceId = state.workspaceOf(tab.id)
+            val inSyncedContainer = tab.contextId == null || tab.contextId in containerIds
+            if (!isSyncableUrl(tab.url) || workspaceId !in workspaceIds || !inSyncedContainer) {
+                held += syncId
+                continue
+            }
+            val previous = previous(syncId, RecordKind.TAB)
+            val data = start(previous).put("tabId", syncId)
+            if (previous?.opt("pinned") != false || seen[syncId] != tab.fingerprint) {
+                data.put("url", tab.url).put("title", tab.title)
+            }
+            if (previous == null) data.put("icon", "").put("hasStaticIcon", false).put("defaultContainer", false)
+            data.putNullable("containerGuid", guidOf(tab.contextId))
+                .put("essential", false)
+                .put("pinned", false)
+                .put("workspaceUuid", workspaceId)
+                .put("folderId", JSONObject.NULL)
+                .putNullable("staticLabel", state.tabTitles[tab.id])
+            records[syncId] = SpacesRecord.of(syncId, RecordKind.TAB, data)
+            normalTabsBySpace.getOrPut(workspaceId) { mutableListOf() } += syncId
+        }
+        for (record in server.values) {
+            if (!record.isNormalTab || record.id in records || record.id in held) continue
+            if (record.id in seen) closedTabs += record.id else held += record.id
         }
     }
 
@@ -209,6 +303,7 @@ internal class SpacesProjector(private val local: LocalSpaces, private val serve
             .filter { !it.essential && it.workspaceId == workspaceId && parentOf(it) == parentId && it.id in projectedPins }
             .map { it.id }
             .toMutableList()
+        if (parentId == null) siblings += normalTabsBySpace[workspaceId].orEmpty().filterNot { it in normalSplitMembers }
         for ((splitId, members) in splitMembers) {
             if (members.all { it in siblings }) {
                 val first = members.minOf { siblings.indexOf(it) }
@@ -231,6 +326,7 @@ internal class SpacesProjector(private val local: LocalSpaces, private val serve
     private fun isOpaque(id: String): Boolean {
         if (id in records) return false
         if (id in held) return true
+        if (id in closedTabs) return false
         val known = server[id] ?: return true
         return !known.deleted && !known.isSynced
     }

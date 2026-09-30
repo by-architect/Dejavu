@@ -1365,7 +1365,7 @@
   -->
   <string name="inactive_tabs_auto_close_message_header" tools:ignore="UnusedResources">Bir oydan keyin avtomatik yopilsinmi?</string>
   <!-- A description below the header to notify the user what the inactive tabs auto-close feature is. -->
-  <string name="inactive_tabs_auto_close_message_description" tools:ignore="BrandUsage,UnusedResources">Oʻtgan oy ochilmagan varaqlarni Firefox yopishi mumkin.</string>
+  <string name="inactive_tabs_auto_close_message_description" tools:ignore="BrandUsage,UnusedResources">Oʻtgan oy ochilmagan varaqlarni Dejavu yopishi mumkin.</string>
   <!-- A call to action below the description to allow the user to turn on the auto closing of inactive tabs. -->
   <string name="inactive_tabs_auto_close_message_action" tools:ignore="UnusedResources">AVTOMATIK YOPISHNI YOQISH</string>
   <!-- Text for the snackbar to confirm auto-close is enabled for inactive tabs -->
@@ -1375,9 +1375,9 @@
 
     Search suggestions title for Firefox Suggest.
   -->
-  <string name="firefox_suggest_header" tools:ignore="BrandUsage">Firefox Suggest</string>
+  <string name="firefox_suggest_header" tools:ignore="BrandUsage">Dejavu Suggest</string>
   <!-- Default browser card text -->
-  <string name="default_browser_experiment_card_text" tools:ignore="BrandUsage">Saytlar, elektron pochta va xabarlar havolalarini Firefoxda avtomatik ravishda ochiladigan qilib sozlang.</string>
+  <string name="default_browser_experiment_card_text" tools:ignore="BrandUsage">Saytlar, elektron pochta va xabarlar havolalarini Dejavu avtomatik ravishda ochiladigan qilib sozlang.</string>
   <!-- Content description radio buttons with a link to more information -->
   <string name="radio_preference_info_content_description">Batafsil axborot uchun bosing</string>
   <!-- Content description for the action bar "up" button -->

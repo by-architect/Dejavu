@@ -44,8 +44,18 @@ class KaizenSyncFragment : KaizenComposeFragment(R.string.kaizen_settings_sync) 
                     label = stringResource(R.string.kaizen_sync_enabled),
                     checked = status.enabled,
                     showSwitchAfter = true,
-                    modifier = Modifier.settingsCard(index = 0, count = 2),
+                    modifier = Modifier.settingsCard(index = 0, count = 3),
                     onClick = { KaizenSync.setEnabled(requireContext(), it) },
+                )
+                SwitchListItem(
+                    label = stringResource(R.string.kaizen_sync_normal_tabs),
+                    description = stringResource(R.string.kaizen_sync_normal_tabs_summary),
+                    maxDescriptionLines = 4,
+                    checked = status.normalTabs,
+                    enabled = status.enabled,
+                    showSwitchAfter = true,
+                    modifier = Modifier.settingsCard(index = 1, count = 3),
+                    onClick = { KaizenSync.setNormalTabs(requireContext(), it) },
                 )
                 IconListItem(
                     label = stringResource(if (status.syncing) R.string.kaizen_sync_syncing else R.string.kaizen_sync_now),
@@ -53,7 +63,7 @@ class KaizenSyncFragment : KaizenComposeFragment(R.string.kaizen_settings_sync) 
                     maxDescriptionLines = 4,
                     enabled = status.enabled && !status.syncing,
                     beforeIconPainter = painterResource(iconsR.drawable.mozac_ic_sync_24),
-                    modifier = Modifier.settingsCard(index = 1, count = 2),
+                    modifier = Modifier.settingsCard(index = 2, count = 3),
                     onClick = KaizenSync::syncNow,
                 )
                 if (status.enabled && status.problem == KaizenSyncProblem.NOT_TURNED_ON) {

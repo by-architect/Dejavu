@@ -743,7 +743,7 @@
   <!-- Preference Category for settings related to Search address bar -->
   <string name="preferences_settings_address_bar">주소 표시줄 설정</string>
   <!-- Preference Category for settings to Firefox Suggest -->
-  <string name="preference_search_address_bar_fx_suggest" tools:ignore="BrandUsage">주소 표시줄 - Firefox 제안</string>
+  <string name="preference_search_address_bar_fx_suggest" tools:ignore="BrandUsage">주소 표시줄 - Dejavu 제안</string>
   <!-- Preference link to Learn more about Firefox Suggest -->
   <string name="preference_search_learn_about_fx_suggest" tools:ignore="BrandUsage">Firefox 제안에 대해 더 알아보기</string>
   <!-- Preference link to rating Fenix on the Play Store -->
@@ -1107,7 +1107,7 @@
   -->
   <string name="addon_ga_message_title_2" tools:ignore="UnusedResources">새 확장 기능 지금 사용 가능</string>
   <!-- Body of the Nimbus message for add-ons general availability. 'Firefox' intentionally hardcoded here -->
-  <string name="addon_ga_message_body" tools:ignore="BrandUsage,UnusedResources">Firefox를 자신만의 것으로 만들 수 있는 100개 이상의 새로운 확장 기능을 확인해 보세요.</string>
+  <string name="addon_ga_message_body" tools:ignore="BrandUsage,UnusedResources">Dejavu 자신만의 것으로 만들 수 있는 100개 이상의 새로운 확장 기능을 확인해 보세요.</string>
   <!-- Button text of the Nimbus message for extensions general availability. -->
   <string name="addon_ga_message_button_2" tools:ignore="UnusedResources">확장 기능 탐색하기</string>
   <!--
@@ -1213,7 +1213,7 @@
   <!-- Preference switch for usage and technical learn more link in new compose -->
   <string name="preference_usage_data_learn_more_2">기술 데이터에 대해 더 알아보기</string>
   <!-- Preference description for marketing data collection. Note: The words "Firefox" should NOT be translated -->
-  <string name="preferences_usage_data_description_1" tools:ignore="BrandUsage">기기와 하드웨어 구성, 사용 현황에 대한 데이터는 Firefox 기능과 성능, 안정성을 개선하는 데 도움이 됩니다.</string>
+  <string name="preferences_usage_data_description_1" tools:ignore="BrandUsage">기기와 하드웨어 구성, 사용 현황에 대한 데이터는 Dejavu 기능과 성능, 안정성을 개선하는 데 도움이 됩니다.</string>
   <!-- Preference switch for daily usage ping data collection -->
   <string name="preferences_daily_usage_ping_title">일일 사용량 핑</string>
   <string name="preferences_daily_usage_ping_description" tools:ignore="BrandUsage">이 정보는 Mozilla가 활성 사용자를 예측하는 데 도움이 됩니다.</string>
@@ -1236,7 +1236,7 @@
     Preference description for marketing data collection.
     Note: The words "Firefox" and "Mozilla" should NOT be translated. “That you use it” is to mean that the user is opting in to sharing that they are continuing to use Firefox after installing it; not that Firefox is tracking their “usage” or what they’re using it for.
   -->
-  <string name="preferences_marketing_data_description_4" tools:ignore="BrandUsage">Firefox를 발견한 방법과 사용 방법을 Mozilla의 마케팅 기술 파트너들과 공유해보세요.</string>
+  <string name="preferences_marketing_data_description_4" tools:ignore="BrandUsage">Dejavu 발견한 방법과 사용 방법을 Mozilla의 마케팅 기술 파트너들과 공유해보세요.</string>
   <!-- Learn more link for marketing data preference -->
   <string name="preferences_marketing_data_learn_more">마케팅 데이터에 대해 더 알아보기</string>
   <!-- Title for studies preferences -->
@@ -1479,7 +1479,7 @@
   <!-- Title of the active section on the studies list -->
   <string name="studies_active">활성</string>
   <!-- Description for studies. Note: The word "Firefox" should NOT be translated -->
-  <string name="studies_description_4" tools:ignore="BrandUsage">Firefox는 기능을 테스트할 사용자를 무작위로 선택하여, 모두를 위해 품질을 향상시킵니다.</string>
+  <string name="studies_description_4" tools:ignore="BrandUsage">Dejavu 기능을 테스트할 사용자를 무작위로 선택하여, 모두를 위해 품질을 향상시킵니다.</string>
   <!-- Title of the Studies data preference -->
   <string name="studies_title_2">기능 연구 허용</string>
   <!-- Learn more link for studies, links to an article for more information about studies. -->
@@ -1491,7 +1491,7 @@
   -->
   <string name="remote_improvements_title">원격 개선 허용</string>
   <!-- Description for remote improvements. Note: The word "Firefox" should NOT be translated -->
-  <string name="remote_improvements_description" tools:ignore="BrandUsage">Firefox는 업데이트 사이에 기능, 성능 및 안정성을 개선할 것입니다. 변경 사항은 원격으로 적용됩니다.</string>
+  <string name="remote_improvements_description" tools:ignore="BrandUsage">Dejavu 업데이트 사이에 기능, 성능 및 안정성을 개선할 것입니다. 변경 사항은 원격으로 적용됩니다.</string>
   <!-- Learn more link for remote improvements, links to an article for more information about rollouts. -->
   <string name="remote_improvements_learn_more">더 알아보기</string>
   <!-- Title for remote improvements preference in Advanced settings -->
@@ -2434,12 +2434,12 @@
     Title shown in the notification that pops up to remind the user to set fenix as default browser.
     The app name is in the text, due to limitations with localizing Nimbus experiments
   -->
-  <string name="nimbus_notification_default_browser_title" tools:ignore="BrandUsage,UnusedResources">Firefox는 빠르고 사생활을 보호합니다</string>
+  <string name="nimbus_notification_default_browser_title" tools:ignore="BrandUsage,UnusedResources">Dejavu 빠르고 사생활을 보호합니다</string>
   <!--
     Text shown in the notification that pops up to remind the user to set fenix as default browser.
     The app name is in the text, due to limitations with localizing Nimbus experiments
   -->
-  <string name="nimbus_notification_default_browser_text" tools:ignore="BrandUsage,UnusedResources">Firefox를 기본 브라우저로 설정하세요</string>
+  <string name="nimbus_notification_default_browser_text" tools:ignore="BrandUsage,UnusedResources">Dejavu 기본 브라우저로 설정하세요</string>
   <!--
     Privacy report notification
 
@@ -2458,7 +2458,7 @@
     Text shown in the fullscreen message that pops up to ask user to take a short survey.
     The app name is in the text, due to limitations with localizing Nimbus experiments
   -->
-  <string name="nimbus_survey_message_text" tools:ignore="BrandUsage">간단한 설문 조사로 Firefox를 개선할 수 있도록 도와주세요.</string>
+  <string name="nimbus_survey_message_text" tools:ignore="BrandUsage">간단한 설문 조사로 Dejavu 개선할 수 있도록 도와주세요.</string>
   <!-- Preference for taking the short survey. -->
   <string name="preferences_take_survey">설문 조사 참여</string>
   <!-- Preference for not taking the short survey. -->
@@ -3133,7 +3133,7 @@
   <!-- Title for the browser VPN location picker screen. -->
   <string name="ip_protection_location_picker_title" tools:ignore="UnusedResources">VPN 위치 선택</string>
   <!-- Description for what it means to use the Recommended setting and let the app automatically pick the best server location. -->
-  <string name="ip_protection_location_fastest_description" tools:ignore="BrandUsage">Firefox가 가장 빠른 위치를 찾습니다</string>
+  <string name="ip_protection_location_fastest_description" tools:ignore="BrandUsage">Dejavu 가장 빠른 위치를 찾습니다</string>
   <!-- Description for an unavailable VPN location in the location list. -->
   <string name="ip_protection_location_unavailable_description">사용할 수 없음</string>
   <!-- Error message shown when the selected browser VPN location is unavailable. -->
@@ -3507,7 +3507,7 @@
   -->
   <string name="inactive_tabs_auto_close_message_header" tools:ignore="UnusedResources">한 달 후 자동 닫기를 하시겠습니까?</string>
   <!-- A description below the header to notify the user what the inactive tabs auto-close feature is. -->
-  <string name="inactive_tabs_auto_close_message_description" tools:ignore="BrandUsage,UnusedResources">Firefox는 지난 한 달 동안 보지 않은 탭을 닫을 수 있습니다.</string>
+  <string name="inactive_tabs_auto_close_message_description" tools:ignore="BrandUsage,UnusedResources">Dejavu 지난 한 달 동안 보지 않은 탭을 닫을 수 있습니다.</string>
   <!-- A call to action below the description to allow the user to turn on the auto closing of inactive tabs. -->
   <string name="inactive_tabs_auto_close_message_action" tools:ignore="UnusedResources">자동 닫기 켜기</string>
   <!-- Text for the snackbar to confirm auto-close is enabled for inactive tabs -->
@@ -3517,7 +3517,7 @@
 
     Search suggestions title for Firefox Suggest.
   -->
-  <string name="firefox_suggest_header" tools:ignore="BrandUsage">Firefox 제안</string>
+  <string name="firefox_suggest_header" tools:ignore="BrandUsage">Dejavu 제안</string>
   <!--
     Search suggestions title for trending search suggestions.
     %s is a placeholder for the name of the search engine providing the trending search suggestions.
@@ -3536,7 +3536,7 @@
   -->
   <string name="default_browser_experiment_card_title">기본 브라우저 전환</string>
   <!-- Default browser card text -->
-  <string name="default_browser_experiment_card_text" tools:ignore="BrandUsage">Firefox에서 자동으로 열리도록 웹 사이트, 이메일 및 메시지의 링크를 설정합니다.</string>
+  <string name="default_browser_experiment_card_text" tools:ignore="BrandUsage">Dejavu 자동으로 열리도록 웹 사이트, 이메일 및 메시지의 링크를 설정합니다.</string>
   <!-- Content description radio buttons with a link to more information -->
   <string name="radio_preference_info_content_description">상세 정보</string>
   <!-- Content description for the action bar "up" button -->
@@ -4501,7 +4501,7 @@
     The "Labs" portion can be localized, "Firefox" must be treated as a brand and kept
     in English.
   -->
-  <string name="firefox_labs_title" tools:ignore="BrandUsage">Firefox 실험실</string>
+  <string name="firefox_labs_title" tools:ignore="BrandUsage">Dejavu 실험실</string>
   <!-- Banner title text on the Firefox Labs screen. -->
   <string name="firefox_labs_banner_title_2">실험적인 기능을 사용해 보세요!</string>
   <!--

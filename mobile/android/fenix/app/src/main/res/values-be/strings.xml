@@ -608,7 +608,7 @@
   <!-- Preference Category for settings related to Search address bar -->
   <string name="preferences_settings_address_bar">Настройкі адраснага радка</string>
   <!-- Preference Category for settings to Firefox Suggest -->
-  <string name="preference_search_address_bar_fx_suggest" tools:ignore="BrandUsage">Адрасны радок - Firefox Suggest</string>
+  <string name="preference_search_address_bar_fx_suggest" tools:ignore="BrandUsage">Адрасны радок - Dejavu Suggest</string>
   <!-- Preference link to Learn more about Firefox Suggest -->
   <string name="preference_search_learn_about_fx_suggest" tools:ignore="BrandUsage">Даведайцеся больш пра Firefox Suggest</string>
   <!-- Preference link to rating Fenix on the Play Store -->
@@ -931,7 +931,7 @@
   -->
   <string name="addon_ga_message_title_2" tools:ignore="UnusedResources">Даступныя новыя пашырэнні</string>
   <!-- Body of the Nimbus message for add-ons general availability. 'Firefox' intentionally hardcoded here -->
-  <string name="addon_ga_message_body" tools:ignore="BrandUsage,UnusedResources">Азнаёмцеся з больш за 100 новых пашырэнняў, якія дазваляюць зрабіць Firefox вашым уласным.</string>
+  <string name="addon_ga_message_body" tools:ignore="BrandUsage,UnusedResources">Азнаёмцеся з больш за 100 новых пашырэнняў, якія дазваляюць зрабіць Dejavu вашым уласным.</string>
   <!-- Button text of the Nimbus message for extensions general availability. -->
   <string name="addon_ga_message_button_2" tools:ignore="UnusedResources">Знайсці пашырэнні</string>
   <!--
@@ -1954,19 +1954,19 @@
     Title shown in the notification that pops up to remind the user to set fenix as default browser.
     The app name is in the text, due to limitations with localizing Nimbus experiments
   -->
-  <string name="nimbus_notification_default_browser_title" tools:ignore="BrandUsage,UnusedResources">Firefox хуткі і прыватны</string>
+  <string name="nimbus_notification_default_browser_title" tools:ignore="BrandUsage,UnusedResources">Dejavu хуткі і прыватны</string>
   <!--
     Text shown in the notification that pops up to remind the user to set fenix as default browser.
     The app name is in the text, due to limitations with localizing Nimbus experiments
   -->
-  <string name="nimbus_notification_default_browser_text" tools:ignore="BrandUsage,UnusedResources">Зрабіце Firefox вашым прадвызначаным браўзерам</string>
+  <string name="nimbus_notification_default_browser_text" tools:ignore="BrandUsage,UnusedResources">Зрабіце Dejavu вашым прадвызначаным браўзерам</string>
   <!--
     Survey
 
     Text shown in the fullscreen message that pops up to ask user to take a short survey.
     The app name is in the text, due to limitations with localizing Nimbus experiments
   -->
-  <string name="nimbus_survey_message_text" tools:ignore="BrandUsage">Калі ласка, дапамажыце палепшыць Firefox, прыняўшы ўдзел у кароткім апытанні.</string>
+  <string name="nimbus_survey_message_text" tools:ignore="BrandUsage">Калі ласка, дапамажыце палепшыць Dejavu, прыняўшы ўдзел у кароткім апытанні.</string>
   <!-- Preference for taking the short survey. -->
   <string name="preferences_take_survey">Прайсці апытанне</string>
   <!-- Preference for not taking the short survey. -->
@@ -2787,7 +2787,7 @@
   -->
   <string name="inactive_tabs_auto_close_message_header" tools:ignore="UnusedResources">Аўтаматычна закрываць праз месяц?</string>
   <!-- A description below the header to notify the user what the inactive tabs auto-close feature is. -->
-  <string name="inactive_tabs_auto_close_message_description" tools:ignore="BrandUsage,UnusedResources">Firefox можа закрываць карткі, якія вы не праглядалі за апошні месяц.</string>
+  <string name="inactive_tabs_auto_close_message_description" tools:ignore="BrandUsage,UnusedResources">Dejavu можа закрываць карткі, якія вы не праглядалі за апошні месяц.</string>
   <!-- A call to action below the description to allow the user to turn on the auto closing of inactive tabs. -->
   <string name="inactive_tabs_auto_close_message_action" tools:ignore="UnusedResources">УКЛЮЧЫЦЬ АЎТАЗАКРЫЦЦЁ</string>
   <!-- Text for the snackbar to confirm auto-close is enabled for inactive tabs -->
@@ -2797,7 +2797,7 @@
 
     Search suggestions title for Firefox Suggest.
   -->
-  <string name="firefox_suggest_header" tools:ignore="BrandUsage">Прапановы Firefox</string>
+  <string name="firefox_suggest_header" tools:ignore="BrandUsage">Прапановы Dejavu</string>
   <!-- Title for search suggestions when Google is the default search suggestion engine. -->
   <string name="google_search_engine_suggestion_header">Пошук у Google</string>
   <!-- Title for search suggestions when the default search suggestion engine is anything other than Google. %s is default search engine name. -->
@@ -2811,7 +2811,7 @@
   -->
   <string name="default_browser_experiment_card_title">Змяніць прадвызначаны браўзер</string>
   <!-- Default browser card text -->
-  <string name="default_browser_experiment_card_text" tools:ignore="BrandUsage">Наладзьце аўтаматычнае адкрыццё спасылак з сайтаў, пошты і паведамленняў у Firefox.</string>
+  <string name="default_browser_experiment_card_text" tools:ignore="BrandUsage">Наладзьце аўтаматычнае адкрыццё спасылак з сайтаў, пошты і паведамленняў у Dejavu.</string>
   <!-- Content description radio buttons with a link to more information -->
   <string name="radio_preference_info_content_description">Пстрыкніце, каб атрымаць падрабязнасці</string>
   <!-- Content description for the action bar "up" button -->
@@ -3313,7 +3313,7 @@
     The "Labs" portion can be localized, "Firefox" must be treated as a brand and kept
     in English.
   -->
-  <string name="firefox_labs_title" tools:ignore="BrandUsage">Firefox Labs</string>
+  <string name="firefox_labs_title" tools:ignore="BrandUsage">Dejavu Labs</string>
   <!-- The link text shown when a feedback URL for a Firefox Labs feature is available. The feedback URL page will allow users to provide opinions and suggestions. -->
   <string name="firefox_labs_share_feedback">Падзяліцца водгукам</string>
   <!-- The title used in a confirmation dialog on the Firefox Labs screen when toggling "on" or "off" an experimental feature that requires a restart. -->

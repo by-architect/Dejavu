@@ -743,7 +743,7 @@
   <!-- Preference Category for settings related to Search address bar -->
   <string name="preferences_settings_address_bar">Preferensi bilah alamat</string>
   <!-- Preference Category for settings to Firefox Suggest -->
-  <string name="preference_search_address_bar_fx_suggest" tools:ignore="BrandUsage">Bilah alamat - Firefox Suggest</string>
+  <string name="preference_search_address_bar_fx_suggest" tools:ignore="BrandUsage">Bilah alamat - Dejavu Suggest</string>
   <!-- Preference link to Learn more about Firefox Suggest -->
   <string name="preference_search_learn_about_fx_suggest" tools:ignore="BrandUsage">Pelajari lebih lanjut tentang Firefox Suggest</string>
   <!-- Preference link to rating Fenix on the Play Store -->
@@ -1107,7 +1107,7 @@
   -->
   <string name="addon_ga_message_title_2" tools:ignore="UnusedResources">Ekstensi baru sekarang tersedia</string>
   <!-- Body of the Nimbus message for add-ons general availability. 'Firefox' intentionally hardcoded here -->
-  <string name="addon_ga_message_body" tools:ignore="BrandUsage,UnusedResources">Lihat 100+ ekstensi baru yang memungkinkan Anda menjadikan Firefox milik Anda sendiri.</string>
+  <string name="addon_ga_message_body" tools:ignore="BrandUsage,UnusedResources">Lihat 100+ ekstensi baru yang memungkinkan Anda menjadikan Dejavu milik Anda sendiri.</string>
   <!-- Button text of the Nimbus message for extensions general availability. -->
   <string name="addon_ga_message_button_2" tools:ignore="UnusedResources">Jelajahi ekstensi</string>
   <!--
@@ -1213,7 +1213,7 @@
   <!-- Preference switch for usage and technical learn more link in new compose -->
   <string name="preference_usage_data_learn_more_2">Pelajari lebih lanjut tentang data teknis</string>
   <!-- Preference description for marketing data collection. Note: The words "Firefox" should NOT be translated -->
-  <string name="preferences_usage_data_description_1" tools:ignore="BrandUsage">Data tentang perangkat Anda, konfigurasi perangkat keras, dan penggunaan membantu kami meningkatkan fitur, kinerja, dan stabilitas Firefox.</string>
+  <string name="preferences_usage_data_description_1" tools:ignore="BrandUsage">Data tentang perangkat Anda, konfigurasi perangkat keras, dan penggunaan membantu kami meningkatkan fitur, kinerja, dan stabilitas Dejavu.</string>
   <!-- Preference switch for daily usage ping data collection -->
   <string name="preferences_daily_usage_ping_title">Ping penggunaan harian</string>
   <string name="preferences_daily_usage_ping_description" tools:ignore="BrandUsage">Ini membantu Mozilla untuk memperkirakan pengguna aktif.</string>
@@ -1236,7 +1236,7 @@
     Preference description for marketing data collection.
     Note: The words "Firefox" and "Mozilla" should NOT be translated. “That you use it” is to mean that the user is opting in to sharing that they are continuing to use Firefox after installing it; not that Firefox is tracking their “usage” or what they’re using it for.
   -->
-  <string name="preferences_marketing_data_description_4" tools:ignore="BrandUsage">Bagikan bagaimana Anda menemukan Firefox, dan bahwa Anda menggunakannya dengan mitra pemasaran Mozilla.</string>
+  <string name="preferences_marketing_data_description_4" tools:ignore="BrandUsage">Bagikan bagaimana Anda menemukan Dejavu, dan bahwa Anda menggunakannya dengan mitra pemasaran Mozilla.</string>
   <!-- Learn more link for marketing data preference -->
   <string name="preferences_marketing_data_learn_more">Pelajari lebih lanjut tentang data pemasaran</string>
   <!-- Title for studies preferences -->
@@ -1479,7 +1479,7 @@
   <!-- Title of the active section on the studies list -->
   <string name="studies_active">Aktif</string>
   <!-- Description for studies. Note: The word "Firefox" should NOT be translated -->
-  <string name="studies_description_4" tools:ignore="BrandUsage">Firefox secara acak memilih pengguna untuk menguji fitur, yang meningkatkan kualitas untuk semua orang.</string>
+  <string name="studies_description_4" tools:ignore="BrandUsage">Dejavu secara acak memilih pengguna untuk menguji fitur, yang meningkatkan kualitas untuk semua orang.</string>
   <!-- Title of the Studies data preference -->
   <string name="studies_title_2">Izinkan studi fitur</string>
   <!-- Learn more link for studies, links to an article for more information about studies. -->
@@ -1491,7 +1491,7 @@
   -->
   <string name="remote_improvements_title">Izinkan peningkatan jarak jauh</string>
   <!-- Description for remote improvements. Note: The word "Firefox" should NOT be translated -->
-  <string name="remote_improvements_description" tools:ignore="BrandUsage">Firefox akan meningkatkan fitur, kinerja, dan stabilitas antar pembaruan. Perubahan diterapkan dari jarak jauh.</string>
+  <string name="remote_improvements_description" tools:ignore="BrandUsage">Dejavu akan meningkatkan fitur, kinerja, dan stabilitas antar pembaruan. Perubahan diterapkan dari jarak jauh.</string>
   <!-- Learn more link for remote improvements, links to an article for more information about rollouts. -->
   <string name="remote_improvements_learn_more">Pelajari lebih lanjut</string>
   <!-- Title for remote improvements preference in Advanced settings -->
@@ -2434,12 +2434,12 @@
     Title shown in the notification that pops up to remind the user to set fenix as default browser.
     The app name is in the text, due to limitations with localizing Nimbus experiments
   -->
-  <string name="nimbus_notification_default_browser_title" tools:ignore="BrandUsage,UnusedResources">Firefox itu cepat dan privat</string>
+  <string name="nimbus_notification_default_browser_title" tools:ignore="BrandUsage,UnusedResources">Dejavu itu cepat dan privat</string>
   <!--
     Text shown in the notification that pops up to remind the user to set fenix as default browser.
     The app name is in the text, due to limitations with localizing Nimbus experiments
   -->
-  <string name="nimbus_notification_default_browser_text" tools:ignore="BrandUsage,UnusedResources">Jadikan Firefox sebagai peramban baku Anda</string>
+  <string name="nimbus_notification_default_browser_text" tools:ignore="BrandUsage,UnusedResources">Jadikan Dejavu sebagai peramban baku Anda</string>
   <!--
     Privacy report notification
 
@@ -2458,7 +2458,7 @@
     Text shown in the fullscreen message that pops up to ask user to take a short survey.
     The app name is in the text, due to limitations with localizing Nimbus experiments
   -->
-  <string name="nimbus_survey_message_text" tools:ignore="BrandUsage">Bantu kami membuat Firefox lebih baik dengan melakukan survei singkat.</string>
+  <string name="nimbus_survey_message_text" tools:ignore="BrandUsage">Bantu kami membuat Dejavu lebih baik dengan melakukan survei singkat.</string>
   <!-- Preference for taking the short survey. -->
   <string name="preferences_take_survey">Ikuti Survei</string>
   <!-- Preference for not taking the short survey. -->
@@ -3133,7 +3133,7 @@
   <!-- Title for the browser VPN location picker screen. -->
   <string name="ip_protection_location_picker_title" tools:ignore="UnusedResources">Pilih lokasi VPN</string>
   <!-- Description for what it means to use the Recommended setting and let the app automatically pick the best server location. -->
-  <string name="ip_protection_location_fastest_description" tools:ignore="BrandUsage">Firefox menemukan lokasi tercepat</string>
+  <string name="ip_protection_location_fastest_description" tools:ignore="BrandUsage">Dejavu menemukan lokasi tercepat</string>
   <!-- Description for an unavailable VPN location in the location list. -->
   <string name="ip_protection_location_unavailable_description">Tidak tersedia</string>
   <!-- Error message shown when the selected browser VPN location is unavailable. -->
@@ -3507,7 +3507,7 @@
   -->
   <string name="inactive_tabs_auto_close_message_header" tools:ignore="UnusedResources">Tutup otomatis setelah satu bulan?</string>
   <!-- A description below the header to notify the user what the inactive tabs auto-close feature is. -->
-  <string name="inactive_tabs_auto_close_message_description" tools:ignore="BrandUsage,UnusedResources">Firefox dapat menutup tab yang belum Anda lihat selama sebulan terakhir.</string>
+  <string name="inactive_tabs_auto_close_message_description" tools:ignore="BrandUsage,UnusedResources">Dejavu dapat menutup tab yang belum Anda lihat selama sebulan terakhir.</string>
   <!-- A call to action below the description to allow the user to turn on the auto closing of inactive tabs. -->
   <string name="inactive_tabs_auto_close_message_action" tools:ignore="UnusedResources">AKTIFKAN TUTUP OTOMATIS</string>
   <!-- Text for the snackbar to confirm auto-close is enabled for inactive tabs -->
@@ -3517,7 +3517,7 @@
 
     Search suggestions title for Firefox Suggest.
   -->
-  <string name="firefox_suggest_header" tools:ignore="BrandUsage">Saran Firefox</string>
+  <string name="firefox_suggest_header" tools:ignore="BrandUsage">Saran Dejavu</string>
   <!--
     Search suggestions title for trending search suggestions.
     %s is a placeholder for the name of the search engine providing the trending search suggestions.
@@ -3536,7 +3536,7 @@
   -->
   <string name="default_browser_experiment_card_title">Alihkan peramban baku Anda</string>
   <!-- Default browser card text -->
-  <string name="default_browser_experiment_card_text" tools:ignore="BrandUsage">Setel tautan dari situs web, surel, dan pesan untuk secara otomatis dibuka di Firefox.</string>
+  <string name="default_browser_experiment_card_text" tools:ignore="BrandUsage">Setel tautan dari situs web, surel, dan pesan untuk secara otomatis dibuka di Dejavu.</string>
   <!-- Content description radio buttons with a link to more information -->
   <string name="radio_preference_info_content_description">Klik untuk lebih jelasnya</string>
   <!-- Content description for the action bar "up" button -->
@@ -4501,7 +4501,7 @@
     The "Labs" portion can be localized, "Firefox" must be treated as a brand and kept
     in English.
   -->
-  <string name="firefox_labs_title" tools:ignore="BrandUsage">Firefox Labs</string>
+  <string name="firefox_labs_title" tools:ignore="BrandUsage">Dejavu Labs</string>
   <!-- Banner title text on the Firefox Labs screen. -->
   <string name="firefox_labs_banner_title_2">Coba fitur eksperimental kami!</string>
   <!--

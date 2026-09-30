@@ -130,7 +130,6 @@ internal fun PrivateWorkspacePage(
                 url = tab.content.url,
                 depth = 0,
                 container = null,
-                isOpen = true,
                 isAwake = tab.isAwake,
                 isCurrent = tab.id == selectedTabId,
                 isSplit = false,

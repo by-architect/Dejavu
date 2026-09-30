@@ -373,7 +373,7 @@
   <!-- Preference Category for settings related to Search address bar -->
   <string name="preferences_settings_address_bar">Mga kagustuhan sa address bar</string>
   <!-- Preference Category for settings to Firefox Suggest -->
-  <string name="preference_search_address_bar_fx_suggest" tools:ignore="BrandUsage">Address bar - Firefox Suggest</string>
+  <string name="preference_search_address_bar_fx_suggest" tools:ignore="BrandUsage">Address bar - Dejavu Suggest</string>
   <!-- Preference link to Learn more about Firefox Suggest -->
   <string name="preference_search_learn_about_fx_suggest" tools:ignore="BrandUsage">Alamin ang tungkol sa Firefox Suggest</string>
   <!-- Preference link to rating Fenix on the Play Store -->
@@ -597,7 +597,7 @@
   -->
   <string name="addon_ga_message_title_2" tools:ignore="UnusedResources">May mga bagong extension na pwedeng gamitin</string>
   <!-- Body of the Nimbus message for add-ons general availability. 'Firefox' intentionally hardcoded here -->
-  <string name="addon_ga_message_body" tools:ignore="BrandUsage,UnusedResources">Tingnan ang higit sa 100 mga bagong extension para mas maging personal ang Firefox mo.</string>
+  <string name="addon_ga_message_body" tools:ignore="BrandUsage,UnusedResources">Tingnan ang higit sa 100 mga bagong extension para mas maging personal ang Dejavu mo.</string>
   <!-- Button text of the Nimbus message for extensions general availability. -->
   <string name="addon_ga_message_button_2" tools:ignore="UnusedResources">Tumuklas ng mga extension</string>
   <!--
@@ -699,7 +699,7 @@
   <!-- Preference switch for usage and technical data collection -->
   <string name="preference_usage_data_2">Magpadala ng technical at interaction data</string>
   <!-- Preference description for marketing data collection. Note: The words "Firefox" should NOT be translated -->
-  <string name="preferences_usage_data_description_1" tools:ignore="BrandUsage">Nakatutulong sa amin na pagandahin ang mga feature, performance, at stability ng Firefox gamit ang data tungkol sa iyong device, hardware configuration, at paraan ng paggamit.</string>
+  <string name="preferences_usage_data_description_1" tools:ignore="BrandUsage">Nakatutulong sa amin na pagandahin ang mga feature, performance, at stability ng Dejavu gamit ang data tungkol sa iyong device, hardware configuration, at paraan ng paggamit.</string>
   <!-- Preference switch for daily usage ping data collection -->
   <string name="preferences_daily_usage_ping_title">Daily usage ping</string>
   <string name="preferences_daily_usage_ping_description" tools:ignore="BrandUsage">Natutulungan nito ang Mozilla na tantyahin ang bilang ng mga aktibong user.</string>
@@ -710,7 +710,7 @@
     Preference description for marketing data collection.
     Note: The words "Firefox" and "Mozilla" should NOT be translated. “That you use it” is to mean that the user is opting in to sharing that they are continuing to use Firefox after installing it; not that Firefox is tracking their “usage” or what they’re using it for.
   -->
-  <string name="preferences_marketing_data_description_4" tools:ignore="BrandUsage">Ibahagi kung paano mo natuklasan ang Firefox, na ginagamit mo ito kaakibat ang mga marketing partner ng Mozilla.</string>
+  <string name="preferences_marketing_data_description_4" tools:ignore="BrandUsage">Ibahagi kung paano mo natuklasan ang Dejavu, na ginagamit mo ito kaakibat ang mga marketing partner ng Mozilla.</string>
   <!-- Learn more link for marketing data preference -->
   <string name="preferences_marketing_data_learn_more">Alamin ang tungkol sa marketing data</string>
   <!-- Title for studies preferences -->
@@ -1392,19 +1392,19 @@
     Title shown in the notification that pops up to remind the user to set fenix as default browser.
     The app name is in the text, due to limitations with localizing Nimbus experiments
   -->
-  <string name="nimbus_notification_default_browser_title" tools:ignore="BrandUsage,UnusedResources">Mabilis at pribado ang Firefox</string>
+  <string name="nimbus_notification_default_browser_title" tools:ignore="BrandUsage,UnusedResources">Mabilis at pribado ang Dejavu</string>
   <!--
     Text shown in the notification that pops up to remind the user to set fenix as default browser.
     The app name is in the text, due to limitations with localizing Nimbus experiments
   -->
-  <string name="nimbus_notification_default_browser_text" tools:ignore="BrandUsage,UnusedResources">Gawin mong default browser ang Firefox</string>
+  <string name="nimbus_notification_default_browser_text" tools:ignore="BrandUsage,UnusedResources">Gawin mong default browser ang Dejavu</string>
   <!--
     Survey
 
     Text shown in the fullscreen message that pops up to ask user to take a short survey.
     The app name is in the text, due to limitations with localizing Nimbus experiments
   -->
-  <string name="nimbus_survey_message_text" tools:ignore="BrandUsage">Pakitulungan pagandahin ang Firefox sa pamamagitan ng pagsagot sa isang maikling survey.</string>
+  <string name="nimbus_survey_message_text" tools:ignore="BrandUsage">Pakitulungan pagandahin ang Dejavu sa pamamagitan ng pagsagot sa isang maikling survey.</string>
   <!-- Preference for taking the short survey. -->
   <string name="preferences_take_survey">Sagutin ang Survey</string>
   <!-- Preference for not taking the short survey. -->
@@ -2137,7 +2137,7 @@
   -->
   <string name="inactive_tabs_auto_close_message_header" tools:ignore="UnusedResources">Kusang isara pagkatapos ng isang buwan?</string>
   <!-- A description below the header to notify the user what the inactive tabs auto-close feature is. -->
-  <string name="inactive_tabs_auto_close_message_description" tools:ignore="BrandUsage,UnusedResources">Pwedeng isara ng Firefox ang mga tab na hindi mo natingnan sa nakaraang buwan.</string>
+  <string name="inactive_tabs_auto_close_message_description" tools:ignore="BrandUsage,UnusedResources">Pwedeng isara ng Dejavu ang mga tab na hindi mo natingnan sa nakaraang buwan.</string>
   <!-- A call to action below the description to allow the user to turn on the auto closing of inactive tabs. -->
   <string name="inactive_tabs_auto_close_message_action" tools:ignore="UnusedResources">BUKSAN ANG AUTO CLOSE</string>
   <!-- Text for the snackbar to confirm auto-close is enabled for inactive tabs -->
@@ -2147,7 +2147,7 @@
 
     Search suggestions title for Firefox Suggest.
   -->
-  <string name="firefox_suggest_header" tools:ignore="BrandUsage">Firefox Suggest</string>
+  <string name="firefox_suggest_header" tools:ignore="BrandUsage">Dejavu Suggest</string>
   <!--
     Search suggestions title for trending search suggestions.
     %s is a placeholder for the name of the search engine providing the trending search suggestions.
@@ -2166,7 +2166,7 @@
   -->
   <string name="default_browser_experiment_card_title">Palitan ang iyong default browser</string>
   <!-- Default browser card text -->
-  <string name="default_browser_experiment_card_text" tools:ignore="BrandUsage">Set links from websites, emails, and messages to open automatically in Firefox.</string>
+  <string name="default_browser_experiment_card_text" tools:ignore="BrandUsage">Set links from websites, emails, and messages to open automatically in Dejavu.</string>
   <!-- Content description radio buttons with a link to more information -->
   <string name="radio_preference_info_content_description">Pindutin para sa karagdagang detalye</string>
   <!-- Content description for the action bar "up" button -->

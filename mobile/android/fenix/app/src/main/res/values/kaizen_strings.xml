@@ -122,7 +122,9 @@
     <string name="kaizen_action_delete">Delete</string>
 
     <!-- Settings -->
-    <string name="kaizen_settings_title">Kaizen</string>
+    <string name="kaizen_settings_title">Dejavu</string>
+    <!-- About page. %1$s is the name of the app. -->
+    <string name="kaizen_about_content">%1$s is based on Firefox, made by Mozilla.</string>
     <string name="kaizen_settings_tab_actions">Tab actions</string>
     <string name="kaizen_settings_tab_actions_entry_summary">Buttons on tabs, and actions for selected tabs</string>
     <string name="kaizen_settings_tab_actions_hint">Choose the buttons of pinned and unpinned tab rows, and the actions shown when you select tabs. Actions you add yourself can be used in all three.</string>
@@ -192,6 +194,13 @@
     <!-- Tabs settings -->
     <string name="kaizen_preferences_close_unpinned_tabs">Close unpinned tabs</string>
 
+    <!-- Menu of a long-pressed link -->
+    <string name="kaizen_link_open_in_split_view">Open in split view</string>
+    <string name="kaizen_link_open_in_container">Open in container</string>
+    <string name="kaizen_link_open_in_workspace">Open in workspace</string>
+    <!-- %1$s is the name of the container or workspace the link was opened in. -->
+    <string name="kaizen_link_opened_in">Opened in %1$s</string>
+
     <!-- Browser toolbar -->
     <string name="kaizen_toolbar_container">Container: %1$s</string>
 
@@ -228,12 +237,14 @@
     <string name="kaizen_menu_split_with">Split view with</string>
     <string name="kaizen_menu_split_no_tabs">There are no other tabs in this workspace.</string>
     <string name="kaizen_menu_settings">Settings</string>
+    <string name="kaizen_menu_edit">Edit</string>
 
     <!-- Settings: "More" menu editor -->
     <string name="pref_key_kaizen_more_menu" translatable="false">pref_key_kaizen_more_menu</string>
     <string name="kaizen_settings_more_menu">More menu</string>
     <string name="kaizen_settings_actions_bar">Actions bar</string>
     <string name="kaizen_actions_bar_search">Search</string>
+    <string name="kaizen_actions_bar_home">Home</string>
     <string name="kaizen_settings_more_menu_summary">The actions bar below pages and the menu it opens</string>
     <string name="kaizen_more_menu_hint">The first row is the actions bar below pages. Swipe the actions bar up, or the address bar down, to open the whole menu. Tap a button to move or remove it. Extensions always take a whole row.</string>
     <string name="kaizen_more_menu_row">Row %1$d</string>
@@ -247,6 +258,8 @@
     <string name="kaizen_more_menu_remove">Remove</string>
     <string name="kaizen_more_menu_delete_row">Delete row</string>
     <string name="kaizen_more_menu_reset">Reset to default</string>
+    <string name="kaizen_more_menu_hide_edit">Hide edit button</string>
+    <string name="kaizen_more_menu_hide_edit_summary">The button below the menu that opens this screen</string>
     <string name="kaizen_more_menu_all_added">Every button is already in the menu.</string>
     <string name="kaizen_more_menu_preview">Preview</string>
 
@@ -254,9 +267,12 @@
     <string name="pref_key_kaizen_sync" translatable="false">pref_key_kaizen_sync</string>
     <string name="kaizen_settings_sync">Sync with Zen</string>
     <string name="kaizen_settings_sync_summary">Workspaces, containers, pinned tabs and essentials</string>
-    <string name="kaizen_sync_hint">Keeps your workspaces with their colors and icons, containers, pinned tabs, essentials and folders the same as in Zen Browser on your computer and in Kaizen on your other devices. It uses the Mozilla account you sync Firefox data with.</string>
-    <string name="kaizen_sync_zen_hint">In Zen, open Settings, then Sync, and make sure Spaces is checked. Tabs that are not pinned are not synced.</string>
+    <string name="kaizen_sync_hint">Keeps your workspaces with their colors and icons, containers, pinned tabs, essentials and folders the same as in Zen Browser on your computer and in Dejavu on your other devices. It uses the Mozilla account you sync Firefox data with.</string>
+    <string name="kaizen_sync_zen_hint">In Zen, open Settings, then Sync, and turn on sidebar sync. Tabs that are not pinned are not synced.</string>
     <string name="kaizen_sync_enabled">Sync workspaces</string>
+    <!-- Switch that also syncs the tabs that are not pinned, like Zen's own "Include unpinned tabs" option. -->
+    <string name="kaizen_sync_normal_tabs">Include unpinned tabs</string>
+    <string name="kaizen_sync_normal_tabs_summary">Also sync the other tabs of each workspace, not just pinned tabs and folders. Zen syncs them when its own Include unpinned tabs option is on.</string>
     <string name="kaizen_sync_now">Sync now</string>
     <string name="kaizen_sync_syncing">Syncing…</string>
     <string name="kaizen_sync_last_synced">Last synced %1$s</string>
@@ -265,12 +281,12 @@
     <string name="kaizen_sync_signed_out">Sign in to your Mozilla account to sync your workspaces with Zen.</string>
     <string name="kaizen_sync_sign_in">Sign in</string>
     <string name="kaizen_sync_problem_not_set_up">Waiting for Firefox Sync to finish setting up your account.</string>
-    <string name="kaizen_sync_problem_not_turned_on">Spaces sync is off for your Mozilla account. Turn it on here, or check Spaces in Zen’s sync settings. Turning it on here also turns it on in Zen.</string>
+    <string name="kaizen_sync_problem_not_turned_on">Spaces sync is off for your Mozilla account. Turn it on here or in Zen’s sync settings. Turning it on here also turns it on in Zen.</string>
     <string name="kaizen_sync_turn_on">Turn on spaces sync</string>
-    <string name="kaizen_sync_problem_needs_update">Another device uses a newer version of spaces sync. Update Kaizen to keep syncing.</string>
+    <string name="kaizen_sync_problem_needs_update">Another device uses a newer version of spaces sync. Update Dejavu to keep syncing.</string>
     <string name="kaizen_sync_problem_sign_in">Sign in to your Mozilla account again to keep syncing.</string>
-    <string name="kaizen_sync_problem_offline">Could not reach the sync servers. Kaizen will try again.</string>
-    <string name="kaizen_sync_problem_server">The sync servers had a problem. Kaizen will try again.</string>
+    <string name="kaizen_sync_problem_offline">Could not reach the sync servers. Dejavu will try again.</string>
+    <string name="kaizen_sync_problem_server">The sync servers had a problem. Dejavu will try again.</string>
     <string name="kaizen_container_personal">Personal</string>
     <string name="kaizen_container_work">Work</string>
     <string name="kaizen_container_banking">Banking</string>

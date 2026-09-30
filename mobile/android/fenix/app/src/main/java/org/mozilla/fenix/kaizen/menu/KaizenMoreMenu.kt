@@ -32,10 +32,12 @@ import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.verticalScroll
+import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
+import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableFloatStateOf
@@ -64,6 +66,8 @@ import androidx.compose.ui.unit.Velocity
 import androidx.compose.ui.unit.dp
 import mozilla.components.browser.state.state.TabSessionState
 import org.mozilla.fenix.R
+import org.mozilla.fenix.kaizen.browser.shownWorkspaceTheme
+import org.mozilla.fenix.kaizen.browser.workspaceTheme
 import org.mozilla.fenix.components.menu.store.WebExtensionMenuItem
 import org.mozilla.fenix.kaizen.home.displayTitle
 import mozilla.components.ui.icons.R as iconsR
@@ -175,6 +179,7 @@ fun MoreMenuSheet(
             .graphicsLayer { translationY = shownOffset }
             .clip(shape)
             .background(MaterialTheme.colorScheme.surface)
+            .workspaceTheme(shownWorkspaceTheme())
             .then(if (fromTop) Modifier.windowInsetsPadding(WindowInsets.statusBars) else Modifier)
             .nestedScroll(if (fromTop) swipeUp else bottomSheetScroll),
     ) {
@@ -260,7 +265,9 @@ private fun SheetHandle(modifier: Modifier = Modifier) {
  * @param onToggleExtensions Opens or closes the extensions drawer.
  * @param onEntryClick Invoked when an enabled entry is clicked.
  * @param onManageExtensions Opens the extensions settings.
+ * @param onEdit Opens the settings of the menu, from a button below the rows; without it there is no such button.
  */
+@Suppress("LongParameterList")
 @Composable
 fun MoreMenu(
     rows: List<List<MoreMenuEntry>>,
@@ -270,6 +277,7 @@ fun MoreMenu(
     onToggleExtensions: () -> Unit,
     onEntryClick: (MoreMenuEntry) -> Unit,
     onManageExtensions: () -> Unit,
+    onEdit: (() -> Unit)? = null,
 ) {
     Column(verticalArrangement = Arrangement.spacedBy(6.dp), modifier = Modifier.padding(vertical = 6.dp)) {
         rows.forEach { row ->
@@ -291,6 +299,22 @@ fun MoreMenu(
                         )
                     }
                     repeat(MoreMenuLayout.MAX_PER_ROW - row.size) { Spacer(Modifier.weight(1f)) }
+                }
+            }
+        }
+        if (onEdit != null) {
+            Row(horizontalArrangement = Arrangement.End, modifier = Modifier.fillMaxWidth()) {
+                TextButton(
+                    onClick = onEdit,
+                    colors = ButtonDefaults.textButtonColors(contentColor = MaterialTheme.colorScheme.onSurfaceVariant),
+                ) {
+                    Icon(
+                        painter = painterResource(iconsR.drawable.mozac_ic_edit_24),
+                        contentDescription = null,
+                        modifier = Modifier.size(18.dp),
+                    )
+                    Spacer(Modifier.width(8.dp))
+                    Text(stringResource(R.string.kaizen_menu_edit))
                 }
             }
         }

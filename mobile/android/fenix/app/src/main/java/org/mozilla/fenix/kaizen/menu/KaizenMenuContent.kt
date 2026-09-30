@@ -115,14 +115,17 @@ object KaizenMenu {
  * @param accessPoint Where the menu was opened from.
  * @param fromTop Whether the menu is shown at the top of the screen.
  * @param opening What the menu shows first.
+ * @param onEdit Opens the settings of the menu.
  * @param onDismiss Closes the menu.
  */
+@Suppress("LongParameterList")
 @Composable
 fun KaizenMenuContent(
     menuStore: MenuStore,
     accessPoint: MenuAccessPoint,
     fromTop: Boolean,
     opening: KaizenMenu.Opening,
+    onEdit: () -> Unit,
     onDismiss: () -> Unit,
 ) {
     val fenix = components
@@ -159,6 +162,7 @@ fun KaizenMenuContent(
         val workspaces by repository.state.collectAsState()
         val rowKeys by settings.moreMenuRows.collectAsState()
         val customActions by settings.customActions.collectAsState()
+        val editHidden by settings.moreMenuEditHidden.collectAsState()
         var extensionsExpanded by remember { mutableStateOf(opening == KaizenMenu.Opening.EXTENSIONS) }
         var pickingSplit by remember { mutableStateOf(opening == KaizenMenu.Opening.SPLIT_PICKER) }
         val current = tab ?: return@MoreMenuSheet
@@ -201,6 +205,7 @@ fun KaizenMenuContent(
                 }
             },
             onManageExtensions = manageExtensions,
+            onEdit = onEdit.takeUnless { editHidden },
         )
     }
 }

@@ -56,6 +56,7 @@ import org.mozilla.fenix.components.toolbar.ToolbarPosition.BOTTOM
 import org.mozilla.fenix.components.toolbar.ToolbarPosition.TOP
 import org.mozilla.fenix.kaizen.browser.KaizenSearchAboveKeyboard
 import org.mozilla.fenix.kaizen.browser.KaizenToolbar
+import org.mozilla.fenix.kaizen.browser.KaizenTopBar
 import org.mozilla.fenix.theme.FirefoxTheme
 import org.mozilla.fenix.utils.Settings
 
@@ -166,12 +167,16 @@ class BrowserToolbarComposable(
                                     enabled = KaizenToolbar.enabled && customTabSession == null,
                                     isSearching = isSearching,
                                     toolbar = {
-                                        BrowserToolbar(
-                                            store = toolbarStore,
-                                            cfr = toolbarCFR,
-                                            useMinimalBottomToolbarWhenEnteringText =
-                                                settings.shouldUseMinimalBottomToolbarWhenEnteringText,
-                                        )
+                                        if (!isSearching) {
+                                            KaizenTopBar(toolbarStore)
+                                        } else {
+                                            BrowserToolbar(
+                                                store = toolbarStore,
+                                                cfr = toolbarCFR,
+                                                useMinimalBottomToolbarWhenEnteringText =
+                                                    settings.shouldUseMinimalBottomToolbarWhenEnteringText,
+                                            )
+                                        }
                                     },
                                     suggestions = searchSuggestionsContent,
                                 ) {
@@ -179,12 +184,16 @@ class BrowserToolbarComposable(
                                         if (shouldShowTabStripAtTop) {
                                             tabStripContent()
                                         }
-                                        BrowserToolbar(
-                                            store = toolbarStore,
-                                            cfr = toolbarCFR,
-                                            useMinimalBottomToolbarWhenEnteringText =
-                                                settings.shouldUseMinimalBottomToolbarWhenEnteringText,
-                                        )
+                                        if (KaizenToolbar.enabled && customTabSession == null && !isSearching) {
+                                            KaizenTopBar(toolbarStore)
+                                        } else {
+                                            BrowserToolbar(
+                                                store = toolbarStore,
+                                                cfr = toolbarCFR,
+                                                useMinimalBottomToolbarWhenEnteringText =
+                                                    settings.shouldUseMinimalBottomToolbarWhenEnteringText,
+                                            )
+                                        }
                                         if (customTabSession == null) {
                                             searchSuggestionsContent(Modifier.weight(1f))
                                         }

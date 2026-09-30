@@ -13,6 +13,7 @@ import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.update
 import org.mozilla.fenix.R
 import java.util.UUID
+import java.util.concurrent.ConcurrentHashMap
 
 /**
  * What is needed to pin an open tab.
@@ -138,6 +139,14 @@ class WorkspaceRepository private constructor(context: Context) {
         )
     }
 
+    /**
+     * Keeps what Kaizen knows of tab [tabId], which is about to be opened or replaced, until the browser shows it:
+     * [syncWithTabs] would otherwise forget it in between.
+     */
+    fun expectTab(tabId: String) {
+        expectedTabs.add(tabId)
+    }
+
     /** Puts tab [tabId], open or about to be opened, in workspace [workspaceId]. */
     fun assignTab(tabId: String, workspaceId: String) = mutate { state ->
         if (state.workspaces.none { it.id == workspaceId }) state else state.copy(assignments = state.assignments + (tabId to workspaceId))
@@ -153,6 +162,7 @@ class WorkspaceRepository private constructor(context: Context) {
                 split.copy(tabIds = split.tabIds.map { if (it == oldTabId) newTabId else it })
             },
             tabTitles = state.tabTitles[oldTabId]?.let { state.tabTitles - oldTabId + (newTabId to it) } ?: state.tabTitles,
+            tabSyncIds = state.tabSyncIds - oldTabId,
         )
     }
 
@@ -256,6 +266,7 @@ class WorkspaceRepository private constructor(context: Context) {
         state.copy(
             pins = state.pins.filterNot { it.id in convertedIds } + converted + created,
             tabTitles = state.tabTitles - created.mapNotNull { it.tabId }.toSet(),
+            tabSyncIds = state.tabSyncIds - created.mapNotNull { it.tabId }.toSet(),
         )
     }
 
@@ -268,6 +279,7 @@ class WorkspaceRepository private constructor(context: Context) {
             pins = state.pins.filterNot { it.id in removedIds },
             assignments = state.assignments + removed.mapNotNull { it.tabId }.associateWith { workspaceId },
             tabTitles = state.titlesKeptFrom(removed),
+            tabSyncIds = state.syncIdsKeptFrom(removed),
         )
     }
 
@@ -301,7 +313,11 @@ class WorkspaceRepository private constructor(context: Context) {
     /** Removes pinned tabs. Their open tabs stay open as normal tabs. */
     fun unpin(pinIds: Set<String>) = mutate { state ->
         val removed = state.pins.filter { it.id in pinIds && !it.isFolder }
-        state.copy(pins = state.pins - removed.toSet(), tabTitles = state.titlesKeptFrom(removed))
+        state.copy(
+            pins = state.pins - removed.toSet(),
+            tabTitles = state.titlesKeptFrom(removed),
+            tabSyncIds = state.syncIdsKeptFrom(removed),
+        )
     }
 
     /** Gives pinned tab [pinId] the title [name], or shows its page title again when [name] is blank. */
@@ -320,14 +336,19 @@ class WorkspaceRepository private constructor(context: Context) {
     }
 
     /**
-     * Keeps the titles of pinned tabs up to date with the pages open in them, so closed pins show their last title.
-     * Titles the user gave are kept, as are titles that are only an address.
+     * Keeps the titles of pinned tabs up to date with their pinned pages, so closed pins show their last title. Only a
+     * tab showing its pinned address updates the title, not the pages it went on to. Titles the user gave are kept, as
+     * are titles that are only an address.
+     *
+     * @param pages The address and title of every open tab, by tab id.
      */
-    fun refreshPinTitles(titles: Map<String, String>) = mutate { state ->
+    fun refreshPinTitles(pages: Map<String, Pair<String, String>>) = mutate { state ->
         var changed = false
         val pins = state.pins.map { pin ->
-            val title = pin.tabId?.let(titles::get)?.trim()
-            if (pin.staticLabel || title.isNullOrEmpty() || title == pin.title || title.startsWith("http")) {
+            val page = pin.tabId?.let(pages::get)
+            val title = page?.second?.trim()
+            val onPinnedPage = page != null && pin.url != null && page.first.trimEnd('/') == pin.url.trimEnd('/')
+            if (pin.staticLabel || !onPinnedPage || title.isNullOrEmpty() || title == pin.title || title.startsWith("http")) {
                 pin
             } else {
                 changed = true
@@ -435,7 +456,14 @@ class WorkspaceRepository private constructor(context: Context) {
      * Assigns tabs that have no workspace yet to the active workspace, and forgets tabs that no longer exist once
      * the browser state has been restored. Pins whose tab was closed stay pinned without a tab.
      */
-    fun syncWithTabs(tabIds: Set<String>, restoreComplete: Boolean) = mutate { state ->
+    fun syncWithTabs(tabIds: Set<String>, restoreComplete: Boolean) {
+        expectedTabs.removeAll(tabIds)
+        val present = tabIds + expectedTabs
+        mutate { state -> state.withTabs(present, restoreComplete) }
+    }
+
+    private fun WorkspaceState.withTabs(tabIds: Set<String>, restoreComplete: Boolean): WorkspaceState {
+        val state = this
         val kept = if (restoreComplete) state.assignments.filterKeys { it in tabIds } else state.assignments
         val added = tabIds.filterNot { it in kept }.associateWith { state.activeWorkspaceId }
         val pins = if (restoreComplete) {
@@ -445,7 +473,8 @@ class WorkspaceRepository private constructor(context: Context) {
         }
         val splits = if (restoreComplete) state.splits.filter { split -> split.tabIds.all { it in tabIds } } else state.splits
         val tabTitles = if (restoreComplete) state.tabTitles.filterKeys { it in tabIds } else state.tabTitles
-        state.copy(pins = pins, assignments = kept + added, splits = splits, tabTitles = tabTitles)
+        val tabSyncIds = if (restoreComplete) state.tabSyncIds.filterKeys { it in tabIds } else state.tabSyncIds
+        return state.copy(pins = pins, assignments = kept + added, splits = splits, tabTitles = tabTitles, tabSyncIds = tabSyncIds)
     }
 
     private fun WorkspaceState.withPins(sources: List<PinSource>, parentId: String?): WorkspaceState {
@@ -459,6 +488,7 @@ class WorkspaceRepository private constructor(context: Context) {
             pins = pins + added,
             assignments = assignments + added.associate { it.tabId!! to (it.workspaceId ?: activeWorkspaceId) },
             tabTitles = tabTitles - added.mapNotNull { it.tabId }.toSet(),
+            tabSyncIds = tabSyncIds - added.mapNotNull { it.tabId }.toSet(),
         )
     }
 
@@ -471,8 +501,10 @@ class WorkspaceRepository private constructor(context: Context) {
         now: Long,
     ): PinnedItem {
         val customTitle = tabTitles[source.tabId]
+        // A pin takes over the id its tab synced under, so other devices pin that tab instead of opening another.
+        val syncId = syncIdOf(source.tabId).takeIf { id -> pins.none { it.id == id } }
         return PinnedItem(
-            id = newId(),
+            id = syncId ?: newId(),
             workspaceId = workspaceId,
             parentId = parentId,
             kind = PinKind.TAB,
@@ -490,6 +522,10 @@ class WorkspaceRepository private constructor(context: Context) {
     /** Titles the user gave to [removed] pins, kept for their open tabs. */
     private fun WorkspaceState.titlesKeptFrom(removed: List<PinnedItem>): Map<String, String> =
         tabTitles + removed.filter { it.staticLabel && it.tabId != null }.associate { it.tabId!! to it.title }
+
+    /** The ids of [removed] pins, which their open tabs sync under from now on. */
+    private fun WorkspaceState.syncIdsKeptFrom(removed: List<PinnedItem>): Map<String, String> =
+        tabSyncIds + removed.filter { it.tabId != null && it.tabId != it.id }.associate { it.tabId!! to it.id }
 
     private fun WorkspaceState.moved(itemIds: Set<String>, folderId: String?): WorkspaceState {
         val folder = folderId?.let { id -> pins.firstOrNull { it.id == id && it.isFolder } }
@@ -540,6 +576,8 @@ class WorkspaceRepository private constructor(context: Context) {
     }
 
     private fun now() = System.currentTimeMillis()
+
+    private val expectedTabs: MutableSet<String> = ConcurrentHashMap.newKeySet()
 
     private fun newId() = UUID.randomUUID().toString()
 

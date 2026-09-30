@@ -9,6 +9,7 @@ import androidx.core.content.edit
 import org.mozilla.fenix.R
 import org.mozilla.fenix.ext.components
 import org.mozilla.fenix.ext.getPreferenceKey
+import org.mozilla.fenix.onboarding.FenixOnboarding
 import org.mozilla.fenix.settings.ShortcutType
 
 /**
@@ -17,7 +18,7 @@ import org.mozilla.fenix.settings.ShortcutType
 internal object KaizenDefaults {
     private const val PREFS_NAME = "kaizen_settings"
     private const val KEY_VERSION = "defaults_version"
-    private const val VERSION = 5
+    private const val VERSION = 6
 
     /**
      * Applies the defaults the first time this Kaizen version runs. Runs before telemetry and experiments start, so
@@ -76,6 +77,11 @@ internal object KaizenDefaults {
                     putBoolean(context.getPreferenceKey(R.string.pref_key_show_trending_search_suggestions), false)
                     putBoolean(context.getPreferenceKey(R.string.pref_key_search_optimization_cards), false)
                 }
+            }
+            if (applied < 6) {
+                // Dejavu starts on its own home screen, without Firefox's onboarding or its Terms of Use prompt.
+                FenixOnboarding(context).finish()
+                isTermsOfUsePromptEnabled = false
             }
         }
         prefs.edit { putInt(KEY_VERSION, VERSION) }

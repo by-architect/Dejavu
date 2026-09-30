@@ -47,6 +47,10 @@ internal class SpacesRecord private constructor(
             else -> false
         }
 
+    /** Whether this is a tab that is not pinned, which Zen syncs when "Include unpinned tabs" is on. */
+    val isNormalTab: Boolean
+        get() = !deleted && kind == RecordKind.TAB && data?.opt("pinned") == false && data.opt("essential") != true
+
     fun sameAs(other: SpacesRecord?): Boolean = other != null && fingerprint == other.fingerprint
 
     fun toCleartext(): JSONObject = if (deleted) {
