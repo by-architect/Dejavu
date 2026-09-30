@@ -11,6 +11,7 @@
   <a href="#download"><img alt="iOS: in development" src="https://img.shields.io/badge/iOS-in%20development-5A452A?logo=apple&logoColor=white"></a>
   <a href="LICENSE"><img alt="License: MPL 2.0" src="https://img.shields.io/badge/license-MPL%202.0-5A452A"></a>
   <a href="https://github.com/by-architect/Dejavu/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/by-architect/Dejavu?color=F2B84B"></a>
+  <a href="https://buymeacoffee.com/ByArchitect"><img alt="Buy me a coffee" src="https://img.shields.io/badge/Buy%20me%20a%20coffee-F2B84B?logo=buymeacoffee&logoColor=white"></a>
 </p>
 
 Dejavu keeps your tabs organized the way Zen Browser does on the desktop: in workspaces, with pinned tabs, essentials
@@ -97,8 +98,11 @@ Dejavu is open to contributions of every kind, and we would especially love help
 
 ## Sponsors
 
-Dejavu is independent, free and open source, and it has no ads. We are open to sponsors. If you or your company want
-to support Dejavu, open a
+Dejavu is independent, free and open source, and it has no ads. If you enjoy it, you can buy us a coffee:
+
+<a href="https://buymeacoffee.com/ByArchitect"><img alt="Buy me a coffee" src="https://img.shields.io/badge/Buy%20me%20a%20coffee-ByArchitect-F2B84B?logo=buymeacoffee&logoColor=white"></a>
+
+We are also open to sponsors. If you or your company want to support Dejavu, open a
 [sponsorship issue](https://github.com/by-architect/Dejavu/issues/new?template=sponsorship.yml) and we will get in
 touch.
 
