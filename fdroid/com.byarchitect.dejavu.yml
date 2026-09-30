@@ -1,10 +1,11 @@
-# Draft of the metadata/com.byarchitect.dejavu.yml entry for https://gitlab.com/fdroid/fdroiddata
-#
-# This is NOT ready to submit. Read README.md beside this file first: Dejavu still links several
-# closed-source libraries that F-Droid does not accept, and the build below has never been run end to
-# end. Lines marked "CHECK" are the ones to settle before opening a merge request.
-
+AntiFeatures:
+  NonFreeDep:
+    en-US: Links the Adjust SDK, Google Play install referrer, review, integrity and
+      advertising ID libraries, and Firebase Cloud Messaging.
+  Tracking:
+    en-US: Connects to Mozilla services for account sync, add-ons and safe browsing.
 Categories:
+  - Browser
   - Internet
 License: MPL-2.0
 AuthorName: by-architect
@@ -13,24 +14,17 @@ SourceCode: https://github.com/by-architect/Dejavu
 IssueTracker: https://github.com/by-architect/Dejavu/issues
 Changelog: https://github.com/by-architect/Dejavu/releases
 
-AutoName: Dejavu
+Name: Dejavu
 
 RepoType: git
 Repo: https://github.com/by-architect/Dejavu.git
 
 Builds:
   - versionName: 1.0.0
-    # build.gradle computes this as DEJAVU_VERSION_CODE_BASE + major * 10000 + minor * 100 + patch.
     versionCode: 2016200000
-    # CHECK: the full commit hash of the v1.0.0 tag, once that tag exists and is pushed.
-    commit: 0000000000000000000000000000000000000000
-
-    # CHECK: a Gecko build takes hours, far past F-Droid's usual limit. Agree a value with the
-    # maintainers on the merge request rather than assuming this one is accepted.
-    timeout: 172800
-
-    # Test fixtures that ship as binaries in the tree. None of them reach the APK, and the scanner
-    # rejects the build while they are there.
+    commit: abe13cd4e21479ff000640a02c33492b294a5755
+    output: 
+      objdir-fdroid/gradle/build/mobile/android/fenix/app/outputs/apk/release/app-release-unsigned.apk
     scandelete:
       - config/tests/test.manifest.jar
       - dom/base/test/file_bug945152.jar
@@ -38,29 +32,32 @@ Builds:
       - modules/libjar/test/unit/data/test_1801102.jar
       - modules/libjar/test/unit/data/test_bug370103.jar
       - third_party/application-services/components/support/nimbus-fml/fixtures/android/runtime/json.jar
-      - third_party/chromium/build/android/CheckInstallApk-debug.apk
-      - third_party/chromium/build/android/chromium-debug.keystore
       - third_party/chromium/build/android/java/test/missing_symbol/c.jar
       - third_party/chromium/build/android/stacktrace/java_deobfuscate_java.jar
       - third_party/chromium/build/android/tests/symbolize/liba.so
       - third_party/chromium/build/android/tests/symbolize/libb.so
       - third_party/libwebrtc/examples/androidapp/third_party/autobanh/lib/autobanh.jar
-
     build:
       - export MOZCONFIG=$PWD/fdroid/mozconfig
-      # CHECK: mach bootstrap fetches Mozilla's own clang, rust, NDK, node and wasi-sdk builds. They
-      # are the toolchain this source is meant to be built with, but they are downloaded binaries, so
-      # raise it with the reviewer before submitting. Building them from source instead is what
-      # IronFox does and it makes the build far longer.
       - ./mach --no-interactive bootstrap --application-choice mobile_android
       - ./mach build
-      - ./mach gradle fenix:assembleRelease -PversionName=1.0.0 -PversionCode=2016200000 -PdisableDebugSigning
+      - ./mach gradle fenix:assembleRelease -PversionName=1.0.0 -PversionCode=2016200000
+        -PdisableDebugSigning
 
-    output: objdir-fdroid/gradle/build/mobile/android/fenix/app/outputs/apk/release/app-release-unsigned.apk
+MaintainerNotes: |-
+  Dejavu is a Fenix fork that carries the whole mozilla-central tree, so GeckoView is compiled from
+  source rather than taken from a Maven artifact. The build needs the NDK this tree pins in
+  python/mozboot/mozboot/android.py (r30) plus rust, clang, node and wasi-sdk, which
+  `mach bootstrap` fetches.
 
-# F-Droid builds and signs this itself, so a new tag needs its Builds entry added by hand. That is
-# what store-submit.sh does on each release.
+  Version code scheme: 2016190000 + major * 10000 + minor * 100 + patch, computed in
+  mobile/android/fenix/app/build.gradle. 1.0.0 is therefore 2016200000. One CPU architecture is
+  built per run; fdroid/mozconfig takes it from DEJAVU_FDROID_TARGET and defaults to arm64-v8a.
+
+  UpdateCheckMode is None because Tags makes checkupdates scan every AndroidManifest.xml in the
+  tree; mozilla-central has hundreds of them in tests and it cannot tell which one is the app.
+
 AutoUpdateMode: None
-UpdateCheckMode: Tags
+UpdateCheckMode: None
 CurrentVersion: 1.0.0
 CurrentVersionCode: 2016200000

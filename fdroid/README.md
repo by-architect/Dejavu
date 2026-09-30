@@ -92,6 +92,68 @@ are gone, a browser that can install add-ons from addons.mozilla.org and fetch O
 still needs those downloads to be opt-in, because F-Droid does not allow an app to pull in executable
 code without the user clearly choosing it.
 
+## What F-Droid's own pipeline says
+
+The recipe was pushed to the `com.byarchitect.dejavu` branch of
+<https://gitlab.com/by-architect/fdroiddata> and F-Droid's CI ran against it. Everything that checks
+the metadata passes: `fdroid lint`, `fdroid rewritemeta`, `checkupdates`, the git-redirect check,
+schema validation, YAML 1.2, EXIF and the rest.
+
+`fdroid build` fails, and it fails before compiling a single line:
+
+```
+ERROR: Could not build app com.byarchitect.dejavu: Can't build due to 3627 errors while scanning
+```
+
+F-Droid scans the whole checked-out tree for things it cannot read, and mozilla-central is full of
+them:
+
+| Count | What the scanner found | Mostly in |
+| --- | --- | --- |
+| 2804 | static libraries (`.a`) | `third_party/rust` (2826 of all findings) |
+| 634 | binaries | `security/nss`, `testing/web-platform`, `dom/webgpu` |
+| 69 | WebAssembly files | |
+| 66 | ZIP archives | test fixtures |
+| 14 | shared libraries | |
+| 13 | unknown maven repositories | the objdir maven repo and `third_party/application-services` |
+| 12 | gzip archives | |
+| 10 | known non-free libraries | see below |
+| 2 | compiled Java classes | |
+| 1 | `DexClassLoader` | `mobile/android/geckoview/.../GeckoLoader.java` |
+
+The scanner's list of non-free libraries is longer than the one above, because it also reads the
+GeckoView and android-components build files:
+
+```
+libs.play.services.fido       mobile/android/geckoview/build.gradle
+libs.mlkit.prompt             android-components/components/lib/llm-gemininano/build.gradle
+libs.firebase.messaging       android-components/components/lib/push-firebase/build.gradle
+libs.play.services.base       android-components/components/lib/push-firebase/build.gradle
+libs.installreferrer          mobile/android/fenix/app/build.gradle
+libs.play.review              mobile/android/fenix/app/build.gradle
+libs.play.review.ktx          mobile/android/fenix/app/build.gradle
+libs.play.services.ads.id     mobile/android/fenix/app/build.gradle
+libs.play.review(.ktx)        mobile/android/focus-android/app/build.gradle
+```
+
+The thousands of binaries cannot be deleted one by one: most of them are the vendored Rust crates
+the build needs. This is why Fennec F-Droid is not packaged from mozilla-central at all. Its recipe
+points at a small build repository, `gitlab.com/relan/fennecbuild`, which pulls Firefox in as a
+srclib and prunes it in a prebuild script, builds its own toolchain from srclibs instead of calling
+`mach bootstrap`, and swaps Google Play services for microG stubs rather than deleting the code that
+uses them. Dejavu needs the same shape before `fdroid build` can pass.
+
+## Two things the pipeline taught us
+
+- **CI formats YAML differently from a released fdroid.** It installs fdroidserver master against
+  Debian's ruamel.yaml, which wraps a long `output:` value onto its own line; fdroid 2.4.3 locally
+  leaves it on one line, so `fdroid rewritemeta` passes here and fails there. The wrapped form, with
+  its trailing space, is what to commit - `org.mozilla.fennec_fdroid.yml` has the same shape.
+- **`UpdateCheckMode: Tags` cannot work here.** `checkupdates` looks for the version by reading every
+  AndroidManifest.xml in the tree, and mozilla-central has hundreds of them in tests, so it gives up
+  with "Couldn't find any version information". Fennec F-Droid sets `UpdateCheckMode: None` for the
+  same reason, and so does this recipe.
+
 ## Removing the libraries
 
 Thirteen files import them:
@@ -136,10 +198,18 @@ blocker 2 needs, so do them in the same sitting.
 
 ## Order of work
 
-1. Tag `v1.0.0` and push it.
-2. Get one full build out of `fdroid/mozconfig` and keep a note of how long it took.
-3. Take the closed-source libraries out of the release build.
-4. Rebuild, and check with `aapt2 dump badging` that the Adjust, c2dm and finsky permissions are gone.
-5. Put the commit hash of the tag into `com.byarchitect.dejavu.yml` and settle the `CHECK` lines.
-6. Run `store-submit.sh fdroid` from the project's StoreHelper, which validates the entry, pushes the
-   branch to your fdroiddata fork and opens the merge request.
+`v1.0.0` is tagged and pushed, and the recipe is on the `com.byarchitect.dejavu` branch of the
+fdroiddata fork with every metadata check green. What is left:
+
+1. Build a small build repository for Dejavu, modelled on `gitlab.com/relan/fennecbuild`: it pulls
+   this repository in as a srclib, prunes the test trees and vendored binaries the scanner rejects,
+   and carries the toolchain as srclibs instead of calling `mach bootstrap`. Without this, nothing
+   else matters, because `fdroid build` stops at the scanner.
+2. Take the closed-source libraries out of the release build, or replace them the way Fennec F-Droid
+   does, with microG stubs. Remember the two outside the Fenix module: `libs.play.services.fido` in
+   GeckoView and `libs.mlkit.prompt` in `lib-llm-gemininano`.
+3. Get one full build out of `fdroid/mozconfig` locally and note how long it takes, so the timeout
+   to ask the maintainers for is a measured number rather than a guess.
+4. Rebuild and check with `aapt2 dump badging` that the Adjust, c2dm and finsky permissions are gone.
+5. Point the recipe at the build repository, re-run the pipeline, and only then open the merge
+   request against `gitlab.com/fdroid/fdroiddata`.
