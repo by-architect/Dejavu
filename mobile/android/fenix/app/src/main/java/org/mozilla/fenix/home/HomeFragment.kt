@@ -112,6 +112,9 @@ import org.mozilla.fenix.components.components
 import org.mozilla.fenix.components.metrics.installSourcePackage
 import org.mozilla.fenix.components.toolbar.ToolbarPosition
 import org.mozilla.fenix.compose.snackbar.SnackbarState
+import org.mozilla.fenix.dejavu.browser.DejavuToolbar
+import org.mozilla.fenix.dejavu.home.isDejavuHomeEnabled
+import org.mozilla.fenix.dejavu.home.setDejavuHomeContent
 import org.mozilla.fenix.ext.application
 import org.mozilla.fenix.ext.components
 import org.mozilla.fenix.ext.hideToolbar
@@ -160,9 +163,6 @@ import org.mozilla.fenix.home.ui.Homepage
 import org.mozilla.fenix.home.ui.WallpaperBackground
 import org.mozilla.fenix.ipprotection.store.Surface as IPProtectionSurface
 import org.mozilla.fenix.ipprotection.ui.IPProtectionBottomSheetFragment
-import org.mozilla.fenix.kaizen.browser.KaizenToolbar
-import org.mozilla.fenix.kaizen.home.isKaizenHomeEnabled
-import org.mozilla.fenix.kaizen.home.setKaizenHomeContent
 import org.mozilla.fenix.messaging.DefaultMessageController
 import org.mozilla.fenix.messaging.FenixMessageSurfaceId
 import org.mozilla.fenix.messaging.MessagingFeature
@@ -655,8 +655,8 @@ class HomeFragment : Fragment(), UserInteractionHandler, OnLongPressedListener {
 
     @Suppress("LongMethod", "CognitiveComplexMethod")
     private fun initComposeHomepage(view: ComposeView) {
-        if (isKaizenHomeEnabled(browsingModeManager.mode.isPrivate)) {
-            view.setKaizenHomeContent(
+        if (isDejavuHomeEnabled(browsingModeManager.mode.isPrivate)) {
+            view.setDejavuHomeContent(
                 navController = findNavController(),
                 searchToolbar = { toolbarView.Content() },
                 onOpenTab = { tabId ->
@@ -1302,7 +1302,7 @@ class HomeFragment : Fragment(), UserInteractionHandler, OnLongPressedListener {
                 tabId = args.sessionToStartSearchFor,
                 searchAccessPoint = args.searchAccessPoint,
                 isEdgeToEdgeBackgroundEnabled = isEdgeToEdgeBackgroundEnabled(),
-                suggestionsAtBottom = true.takeIf { KaizenToolbar.enabled },
+                suggestionsAtBottom = true.takeIf { DejavuToolbar.enabled },
             )
             .also {
                 awesomeBarComposable = it

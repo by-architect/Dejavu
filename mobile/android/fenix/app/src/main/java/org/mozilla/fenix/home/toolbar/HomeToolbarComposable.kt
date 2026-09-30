@@ -50,7 +50,7 @@ import org.mozilla.fenix.components.appstate.AppAction.SearchAction.SearchEnded
 import org.mozilla.fenix.components.appstate.AppAction.SearchAction.SearchStarted
 import org.mozilla.fenix.components.appstate.VoiceSearchAction.VoiceInputRequested
 import org.mozilla.fenix.components.metrics.MetricsUtils
-import org.mozilla.fenix.kaizen.browser.KaizenToolbar
+import org.mozilla.fenix.dejavu.browser.DejavuToolbar
 import org.mozilla.fenix.theme.FirefoxTheme
 import org.mozilla.fenix.utils.Settings
 import org.mozilla.fenix.wallpapers.WallpaperTheme
@@ -148,8 +148,8 @@ internal class HomeToolbarComposable(
 
     @Composable
     private fun ToolbarContent(wallpaperTextColor: Color?) {
-        // Kaizen shows this toolbar only while searching, with the address bar right above the keyboard.
-        val shouldUseBottomToolbar = remember { settings.shouldUseBottomToolbar || KaizenToolbar.enabled }
+        // Dejavu shows this toolbar only while searching, with the address bar right above the keyboard.
+        val shouldUseBottomToolbar = remember { settings.shouldUseBottomToolbar || DejavuToolbar.enabled }
         val shouldShowTabStrip = remember {
             if (shouldUseBottomToolbar) {
                 settings.shouldShowTabStripAtBottom
@@ -176,7 +176,7 @@ internal class HomeToolbarComposable(
             AddressBar(wallpaperTextColor = wallpaperTextColor)
 
             if (shouldUseBottomToolbar) {
-                if (!KaizenToolbar.enabled) navigationBarContent?.invoke()
+                if (!DejavuToolbar.enabled) navigationBarContent?.invoke()
             } else {
                 searchSuggestionsContent(Modifier.weight(1f))
             }
@@ -234,7 +234,7 @@ internal class HomeToolbarComposable(
     }
 
     private fun buildToolbarGravityConfig(): ToolbarGravity =
-        when (settings.shouldUseBottomToolbar || KaizenToolbar.enabled) {
+        when (settings.shouldUseBottomToolbar || DejavuToolbar.enabled) {
             true -> Bottom
             false -> Top
         }

@@ -65,6 +65,9 @@ import org.mozilla.fenix.components.toolbar.gestures.ToolbarHorizontalGesturesHa
 import org.mozilla.fenix.components.toolbar.gestures.ToolbarVerticalGesturesHandler
 import org.mozilla.fenix.compose.snackbar.Snackbar
 import org.mozilla.fenix.compose.snackbar.SnackbarState
+import org.mozilla.fenix.dejavu.browser.DejavuLinkMenu
+import org.mozilla.fenix.dejavu.browser.DejavuToolbar
+import org.mozilla.fenix.dejavu.browser.openDejavuMenu
 import org.mozilla.fenix.e2e.SystemInsetsPaddedFragment
 import org.mozilla.fenix.ext.application
 import org.mozilla.fenix.ext.components
@@ -77,9 +80,6 @@ import org.mozilla.fenix.ext.runIfFragmentIsAttached
 import org.mozilla.fenix.home.HomeFragment
 import org.mozilla.fenix.ipprotection.store.Surface as IPProtectionSurface
 import org.mozilla.fenix.ipprotection.ui.IPProtectionBottomSheetFragment
-import org.mozilla.fenix.kaizen.browser.KaizenLinkMenu
-import org.mozilla.fenix.kaizen.browser.KaizenToolbar
-import org.mozilla.fenix.kaizen.browser.openKaizenMenu
 import org.mozilla.fenix.listentopage.ListenSheetIntegration
 import org.mozilla.fenix.nimbus.FxNimbus
 import org.mozilla.fenix.onboarding.OnboardingFragmentDirections
@@ -233,7 +233,7 @@ class BrowserFragment : BaseBrowserFragment(), UserInteractionHandler, SystemIns
             )
         }
 
-        if (settings.isSwipeToolbarToShowTabsEnabled || KaizenToolbar.enabled) {
+        if (settings.isSwipeToolbarToShowTabsEnabled || DejavuToolbar.enabled) {
             binding.gestureLayout.addGestureListener(
                 ToolbarVerticalGesturesHandler(
                     appStore = components.appStore,
@@ -242,8 +242,8 @@ class BrowserFragment : BaseBrowserFragment(), UserInteractionHandler, SystemIns
                     toolbarPosition = settings.toolbarPosition,
                     navController = findNavController(),
                     onSwipe = { fromNavBar: Boolean ->
-                        findNavController().openKaizenMenu(fromBottom = fromNavBar)
-                    }.takeIf { KaizenToolbar.enabled },
+                        findNavController().openDejavuMenu(fromBottom = fromNavBar)
+                    }.takeIf { DejavuToolbar.enabled },
                 )
             )
         }
@@ -590,7 +590,7 @@ class BrowserFragment : BaseBrowserFragment(), UserInteractionHandler, SystemIns
                 contextMenuCandidateAppLinksUseCases,
             ) +
             createOpenWithGoogleLensCandidate(context)
-        return KaizenLinkMenu.withKaizenEntries(context, candidates, view, ContextMenuSnackbarDelegate())
+        return DejavuLinkMenu.withDejavuEntries(context, candidates, view, ContextMenuSnackbarDelegate())
     }
 
     private fun navigateToShareFragment(

@@ -209,6 +209,9 @@ import org.mozilla.fenix.crashes.CrashContentIntegration
 import org.mozilla.fenix.crashes.CrashContentView
 import org.mozilla.fenix.customtabs.ExternalAppBrowserActivity
 import org.mozilla.fenix.databinding.FragmentBrowserBinding
+import org.mozilla.fenix.dejavu.browser.DejavuToolbar
+import org.mozilla.fenix.dejavu.browser.handleDejavuBackPressed
+import org.mozilla.fenix.dejavu.browser.installDejavuSplitView
 import org.mozilla.fenix.downloads.DownloadService
 import org.mozilla.fenix.downloads.RenameAndChangeLocationDialogFragment
 import org.mozilla.fenix.downloads.dialog.createDownloadAppDialog
@@ -228,9 +231,6 @@ import org.mozilla.fenix.ext.runIfFragmentIsAttached
 import org.mozilla.fenix.ext.secure
 import org.mozilla.fenix.ext.tabClosedUndoMessage
 import org.mozilla.fenix.ext.updateMicrosurveyPromptForConfigurationChange
-import org.mozilla.fenix.kaizen.browser.KaizenToolbar
-import org.mozilla.fenix.kaizen.browser.handleKaizenBackPressed
-import org.mozilla.fenix.kaizen.browser.installKaizenSplitView
 import org.mozilla.fenix.messaging.FenixMessageSurfaceId
 import org.mozilla.fenix.messaging.MessagingFeature
 import org.mozilla.fenix.microsurvey.ui.MicrosurveyRequestPrompt
@@ -1222,7 +1222,7 @@ abstract class BaseBrowserFragment :
             view = view,
         )
 
-        installKaizenSplitView(binding.browserLayout, binding.swipeRefresh, binding.engineView, customTabSessionId) {
+        installDejavuSplitView(binding.browserLayout, binding.swipeRefresh, binding.engineView, customTabSessionId) {
             getContextMenuCandidates(context, binding.dynamicSnackbarContainer)
         }
 
@@ -1632,7 +1632,7 @@ abstract class BaseBrowserFragment :
                 toolbarStore = toolbarStore,
                 navController = findNavController(),
                 showScrimWhenNoSuggestions = true,
-                suggestionsAtBottom = true.takeIf { KaizenToolbar.enabled },
+                suggestionsAtBottom = true.takeIf { DejavuToolbar.enabled },
             )
             .also {
                 awesomeBarComposable = it
@@ -2118,7 +2118,7 @@ abstract class BaseBrowserFragment :
             fullScreenFeature.onBackPressed() ||
             promptsFeature.onBackPressed() ||
             sessionFeature.onBackPressed() ||
-            handleKaizenBackPressed(customTabSessionId) ||
+            handleDejavuBackPressed(customTabSessionId) ||
             lastTabFeature.onBackPressed()
     }
 

@@ -30,10 +30,10 @@
 
     <androidx.preference.Preference
         app:iconSpaceReserved="false"
-        app:widgetLayout="@layout/kaizen_preference_badge"
-        android:key="@string/pref_key_kaizen_sync"
-        android:title="@string/kaizen_settings_sync"
-        android:summary="@string/kaizen_settings_sync_summary" />
+        app:widgetLayout="@layout/dejavu_preference_badge"
+        android:key="@string/pref_key_dejavu_sync"
+        android:title="@string/dejavu_settings_sync"
+        android:summary="@string/dejavu_settings_sync_summary" />
 
     <androidx.preference.Preference
         app:iconSpaceReserved="false"
@@ -56,17 +56,17 @@
 
         <androidx.preference.Preference
             app:iconSpaceReserved="false"
-            app:widgetLayout="@layout/kaizen_preference_badge"
-            android:key="@string/pref_key_kaizen_tab_actions"
-            android:title="@string/kaizen_settings_tab_actions"
-            android:summary="@string/kaizen_settings_tab_actions_entry_summary" />
+            app:widgetLayout="@layout/dejavu_preference_badge"
+            android:key="@string/pref_key_dejavu_tab_actions"
+            android:title="@string/dejavu_settings_tab_actions"
+            android:summary="@string/dejavu_settings_tab_actions_entry_summary" />
 
         <androidx.preference.Preference
             app:iconSpaceReserved="false"
-            app:widgetLayout="@layout/kaizen_preference_badge"
-            android:key="@string/pref_key_kaizen_containers"
-            android:title="@string/kaizen_settings_containers"
-            android:summary="@string/kaizen_settings_containers_entry_summary" />
+            app:widgetLayout="@layout/dejavu_preference_badge"
+            android:key="@string/pref_key_dejavu_containers"
+            android:title="@string/dejavu_settings_containers"
+            android:summary="@string/dejavu_settings_containers_entry_summary" />
 
         <androidx.preference.Preference
             app:iconSpaceReserved="false"
@@ -135,10 +135,10 @@
 
         <androidx.preference.Preference
             app:iconSpaceReserved="false"
-            app:widgetLayout="@layout/kaizen_preference_badge"
-            android:key="@string/pref_key_kaizen_external_links"
-            android:title="@string/kaizen_settings_external_links"
-            android:summary="@string/kaizen_settings_external_links_summary" />
+            app:widgetLayout="@layout/dejavu_preference_badge"
+            android:key="@string/pref_key_dejavu_external_links"
+            android:title="@string/dejavu_settings_external_links"
+            android:summary="@string/dejavu_settings_external_links_summary" />
     </androidx.preference.PreferenceCategory>
 
     <androidx.preference.PreferenceCategory
@@ -146,7 +146,7 @@
         android:key="@string/pref_key_privacy_security_category"
         android:layout="@layout/preference_category_no_icon_style">
 
-        <!-- Kaizen: private tabs live in the private workspace, and links from other apps can open in private tabs. -->
+        <!-- Dejavu: private tabs live in the private workspace, and links from other apps can open in private tabs. -->
         <androidx.preference.Preference
             android:key="@string/pref_key_private_browsing"
             app:iconSpaceReserved="false"

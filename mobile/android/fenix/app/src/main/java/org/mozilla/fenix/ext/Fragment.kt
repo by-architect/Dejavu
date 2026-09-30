@@ -36,7 +36,7 @@ import org.mozilla.fenix.R
 import org.mozilla.fenix.components.Components
 import org.mozilla.fenix.components.toolbar.ToolbarContainerView
 import org.mozilla.fenix.components.toolbar.ToolbarPosition
-import org.mozilla.fenix.kaizen.browser.KaizenToolbar
+import org.mozilla.fenix.dejavu.browser.DejavuToolbar
 import org.mozilla.fenix.navigation.DefaultNavControllerProvider
 import org.mozilla.fenix.navigation.NavControllerProvider
 import org.mozilla.fenix.theme.ThemeManager
@@ -258,7 +258,7 @@ fun Fragment.getBottomToolbarHeight(
     val isMicrosurveyEnabled = settings.shouldShowMicrosurveyPrompt
     val isToolbarAtBottom = settings.toolbarPosition == ToolbarPosition.BOTTOM
     val isNavBarEnabled =
-        KaizenToolbar.enabled || (settings.shouldUseExpandedToolbar && isTallWindow() && !isWideWindow())
+        DejavuToolbar.enabled || (settings.shouldUseExpandedToolbar && isTallWindow() && !isWideWindow())
     val shouldShowTabStrip = includeTabStripIfAvailable && settings.shouldShowTabStripAtBottom
     val shouldShowTabGroupsStrip = includeTabGroupsStrip && settings.shouldShowTabGroupsStrip
     val navBarDimen = if (isToolbarAtBottom) R.dimen.browser_navbar_height_small else R.dimen.browser_navbar_height

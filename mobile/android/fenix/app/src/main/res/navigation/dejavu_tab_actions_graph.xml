@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/dejavu_tab_actions_graph"
+    app:startDestination="@id/dejavuTabActionsFragment">
+
+    <fragment
+        android:id="@+id/dejavuTabActionsFragment"
+        android:name="org.mozilla.fenix.dejavu.settings.DejavuTabActionsFragment"
+        android:label="@string/dejavu_settings_tab_actions" />
+
+    <fragment
+        android:id="@+id/dejavuActionListFragment"
+        android:name="org.mozilla.fenix.dejavu.settings.DejavuActionListFragment"
+        android:label="@string/dejavu_settings_tab_actions">
+        <argument
+            android:name="list"
+            android:defaultValue="ALL"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/dejavuCustomActionFragment"
+        android:name="org.mozilla.fenix.dejavu.settings.DejavuCustomActionFragment"
+        android:label="@string/dejavu_custom_action">
+        <argument
+            android:name="actionId"
+            android:defaultValue="@null"
+            app:argType="string"
+            app:nullable="true" />
+    </fragment>
+</navigation>

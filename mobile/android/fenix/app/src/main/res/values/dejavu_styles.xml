@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<resources>
+    <!-- A full width dialog shown at the top of the screen, used by the "More" menu when the address bar is at the top. -->
+    <style name="DejavuTopSheetDialog" parent="Theme.MaterialComponents.DayNight.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="DejavuTopSheetAnimation">
+        <item name="android:windowEnterAnimation">@anim/dejavu_top_sheet_enter</item>
+        <item name="android:windowExitAnimation">@anim/dejavu_top_sheet_exit</item>
+    </style>
+</resources>

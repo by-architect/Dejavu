@@ -54,9 +54,9 @@ import org.mozilla.fenix.components.AppStore
 import org.mozilla.fenix.components.appstate.AppAction.SearchAction.SearchEnded
 import org.mozilla.fenix.components.toolbar.ToolbarPosition.BOTTOM
 import org.mozilla.fenix.components.toolbar.ToolbarPosition.TOP
-import org.mozilla.fenix.kaizen.browser.KaizenSearchAboveKeyboard
-import org.mozilla.fenix.kaizen.browser.KaizenToolbar
-import org.mozilla.fenix.kaizen.browser.KaizenTopBar
+import org.mozilla.fenix.dejavu.browser.DejavuSearchAboveKeyboard
+import org.mozilla.fenix.dejavu.browser.DejavuToolbar
+import org.mozilla.fenix.dejavu.browser.DejavuTopBar
 import org.mozilla.fenix.theme.FirefoxTheme
 import org.mozilla.fenix.utils.Settings
 
@@ -157,18 +157,18 @@ class BrowserToolbarComposable(
                                 onSurfaceVariant =
                                     customColors.value?.secondaryReadableColor?.let { Color(it) }
                                         ?: materialColors.onSurfaceVariant,
-                            ).let { if (customTabSession == null && !isSearching) KaizenToolbar.glass(it) else it }
+                            ).let { if (customTabSession == null && !isSearching) DejavuToolbar.glass(it) else it }
                         }
 
                     MaterialTheme(colorScheme = colorScheme) {
                         when (!shouldUseBottomToolbar) {
                             true ->
-                                KaizenSearchAboveKeyboard(
-                                    enabled = KaizenToolbar.enabled && customTabSession == null,
+                                DejavuSearchAboveKeyboard(
+                                    enabled = DejavuToolbar.enabled && customTabSession == null,
                                     isSearching = isSearching,
                                     toolbar = {
                                         if (!isSearching) {
-                                            KaizenTopBar(toolbarStore)
+                                            DejavuTopBar(toolbarStore)
                                         } else {
                                             BrowserToolbar(
                                                 store = toolbarStore,
@@ -184,8 +184,8 @@ class BrowserToolbarComposable(
                                         if (shouldShowTabStripAtTop) {
                                             tabStripContent()
                                         }
-                                        if (KaizenToolbar.enabled && customTabSession == null && !isSearching) {
-                                            KaizenTopBar(toolbarStore)
+                                        if (DejavuToolbar.enabled && customTabSession == null && !isSearching) {
+                                            DejavuTopBar(toolbarStore)
                                         } else {
                                             BrowserToolbar(
                                                 store = toolbarStore,

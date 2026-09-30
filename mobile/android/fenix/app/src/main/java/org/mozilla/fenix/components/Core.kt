@@ -123,6 +123,7 @@ import org.mozilla.fenix.browser.desktopmode.DesktopModeMiddleware
 import org.mozilla.fenix.components.search.ApplicationSearchMiddleware
 import org.mozilla.fenix.components.search.SearchMigration
 import org.mozilla.fenix.components.search.SearchWidgetMiddleware
+import org.mozilla.fenix.dejavu.dejavuBrowserMiddleware
 import org.mozilla.fenix.downloads.DownloadService
 import org.mozilla.fenix.ext.components
 import org.mozilla.fenix.ext.isLargeWindow
@@ -130,7 +131,6 @@ import org.mozilla.fenix.gecko.GeckoProvider
 import org.mozilla.fenix.historymetadata.DefaultHistoryMetadataService
 import org.mozilla.fenix.historymetadata.HistoryMetadataMiddleware
 import org.mozilla.fenix.historymetadata.HistoryMetadataService
-import org.mozilla.fenix.kaizen.kaizenBrowserMiddleware
 import org.mozilla.fenix.longfox.LongFoxFeature
 import org.mozilla.fenix.media.MediaSessionService
 import org.mozilla.fenix.nimbus.BaselineFpp
@@ -399,7 +399,7 @@ class Core(
                 AboutHomeMiddleware(homepageTitle = context.getString(R.string.tab_tray_homepage_tab)),
                 BrowserVisualCompletenessMiddleware(visualCompletenessQueue),
                 TabGroupMiddleware(tabGroupRepository = tabGroupRepository),
-            ) + kaizenBrowserMiddleware(context)
+            ) + dejavuBrowserMiddleware(context)
 
         BrowserStore(
                 middleware =

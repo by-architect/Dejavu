@@ -4,7 +4,7 @@
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 <androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
-    <!-- Kaizen: tabs live on the home screen, so the tabs tray options are hidden. -->
+    <!-- Dejavu: tabs live on the home screen, so the tabs tray options are hidden. -->
     <androidx.preference.PreferenceCategory
         android:layout="@layout/preference_cat_style"
         android:title="@string/preferences_tab_layout"
@@ -24,7 +24,7 @@
 
     <androidx.preference.PreferenceCategory
         android:layout="@layout/preference_cat_style"
-        android:title="@string/kaizen_preferences_close_unpinned_tabs"
+        android:title="@string/dejavu_preferences_close_unpinned_tabs"
         app:allowDividerAbove="false"
         app:iconSpaceReserved="false">
         <org.mozilla.fenix.settings.RadioButtonPreference

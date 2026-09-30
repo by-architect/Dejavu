@@ -400,20 +400,20 @@ class SettingsFragment : PreferenceFragmentCompat(), SystemInsetsPaddedFragment 
                     SettingsFragmentDirections.actionSettingsFragmentToHomeSettingsFragment()
                 }
 
-                resources.getString(R.string.pref_key_kaizen_tab_actions) -> {
-                    ActionOnlyNavDirections(R.id.kaizen_tab_actions_graph)
+                resources.getString(R.string.pref_key_dejavu_tab_actions) -> {
+                    ActionOnlyNavDirections(R.id.dejavu_tab_actions_graph)
                 }
 
-                resources.getString(R.string.pref_key_kaizen_containers) -> {
-                    ActionOnlyNavDirections(R.id.kaizen_containers_graph)
+                resources.getString(R.string.pref_key_dejavu_containers) -> {
+                    ActionOnlyNavDirections(R.id.dejavu_containers_graph)
                 }
 
-                resources.getString(R.string.pref_key_kaizen_external_links) -> {
-                    ActionOnlyNavDirections(R.id.kaizen_external_links_graph)
+                resources.getString(R.string.pref_key_dejavu_external_links) -> {
+                    ActionOnlyNavDirections(R.id.dejavu_external_links_graph)
                 }
 
-                resources.getString(R.string.pref_key_kaizen_sync) -> {
-                    ActionOnlyNavDirections(R.id.kaizen_sync_graph)
+                resources.getString(R.string.pref_key_dejavu_sync) -> {
+                    ActionOnlyNavDirections(R.id.dejavu_sync_graph)
                 }
 
                 resources.getString(R.string.pref_key_customize) -> {

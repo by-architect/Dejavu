@@ -29,8 +29,8 @@ import mozilla.components.compose.browser.toolbar.store.ToolbarGravity.Top
 import mozilla.components.support.utils.KeyboardState
 import mozilla.components.support.utils.keyboardAsState
 import org.mozilla.fenix.R
-import org.mozilla.fenix.kaizen.browser.KaizenToolbar
-import org.mozilla.fenix.kaizen.menu.KaizenActionsBar
+import org.mozilla.fenix.dejavu.browser.DejavuToolbar
+import org.mozilla.fenix.dejavu.menu.DejavuActionsBar
 import org.mozilla.fenix.theme.FirefoxTheme
 import org.mozilla.fenix.utils.Settings
 
@@ -122,9 +122,9 @@ class BrowserNavigationBar(
                 false
             }
 
-        // Kaizen's actions bar holds all the buttons, so it shows in every window size and orientation.
-        val isKaizenBar = KaizenToolbar.enabled && customTabSessionId == null
-        if (isKaizenBar || uiState.displayState.navigationActions.isNotEmpty()) {
+        // Dejavu's actions bar holds all the buttons, so it shows in every window size and orientation.
+        val isDejavuBar = DejavuToolbar.enabled && customTabSessionId == null
+        if (isDejavuBar || uiState.displayState.navigationActions.isNotEmpty()) {
             AnimatedVisibility(
                 visible = !isKeyboardVisible,
                 enter =
@@ -139,8 +139,8 @@ class BrowserNavigationBar(
                     ),
             ) {
                 FirefoxTheme {
-                    if (isKaizenBar) {
-                        KaizenActionsBar(onEvent = { toolbarStore.dispatch(it) })
+                    if (isDejavuBar) {
+                        DejavuActionsBar(onEvent = { toolbarStore.dispatch(it) })
                         return@FirefoxTheme
                     }
                     NavigationBar(

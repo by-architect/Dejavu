@@ -3,7 +3,7 @@
    - License, v. 2.0. If a copy of the MPL was not distributed with this
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 
-<!-- Kaizen: Dejavu is an app of its own, so it does not share Firefox's user id. It has no marketing telemetry, so it
+<!-- Dejavu: Dejavu is an app of its own, so it does not share Firefox's user id. It has no marketing telemetry, so it
      does not ask for the advertising id that the Adjust library declares. -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">

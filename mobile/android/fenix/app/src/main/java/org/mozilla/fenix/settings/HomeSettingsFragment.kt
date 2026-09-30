@@ -19,12 +19,12 @@ import org.mozilla.fenix.GleanMetrics.Events
 import org.mozilla.fenix.R
 import org.mozilla.fenix.components.Components
 import org.mozilla.fenix.components.appstate.AppAction
+import org.mozilla.fenix.dejavu.home.isDejavuHomeEnabled
 import org.mozilla.fenix.e2e.SystemInsetsPaddedFragment
 import org.mozilla.fenix.ext.components
 import org.mozilla.fenix.ext.navigateWithBreadcrumb
 import org.mozilla.fenix.ext.showToolbar
 import org.mozilla.fenix.home.pocket.ContentRecommendationsFeatureHelper
-import org.mozilla.fenix.kaizen.home.isKaizenHomeEnabled
 import org.mozilla.fenix.utils.Settings
 import org.mozilla.fenix.utils.view.addToRadioGroup
 
@@ -159,8 +159,8 @@ class HomeSettingsFragment : PreferenceFragmentCompat(), SystemInsetsPaddedFragm
         setupOpeningScreenPreferences()
         setupWeatherPreference()
 
-        // Kaizen's home screen replaces Firefox's homepage, whose sections and wallpapers no longer show anywhere.
-        if (isKaizenHomeEnabled(isPrivate = false)) {
+        // Dejavu's home screen replaces Firefox's homepage, whose sections and wallpapers no longer show anywhere.
+        if (isDejavuHomeEnabled(isPrivate = false)) {
             FIREFOX_HOMEPAGE_PREFERENCES.forEach { requirePreference<Preference>(it).isVisible = false }
         }
     }

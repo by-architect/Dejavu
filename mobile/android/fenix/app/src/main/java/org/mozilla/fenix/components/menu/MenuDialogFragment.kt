@@ -102,6 +102,8 @@ import org.mozilla.fenix.components.menu.store.NavigationEvent
 import org.mozilla.fenix.components.menu.store.SummarizationMenuState
 import org.mozilla.fenix.components.menu.store.TranslationInfo
 import org.mozilla.fenix.components.menu.store.WebExtensionMenuItem
+import org.mozilla.fenix.dejavu.menu.DejavuMenu
+import org.mozilla.fenix.dejavu.menu.DejavuMenuContent
 import org.mozilla.fenix.ext.canGoBackInHistoryOrToStories
 import org.mozilla.fenix.ext.components
 import org.mozilla.fenix.ext.openSetDefaultBrowserOption
@@ -109,8 +111,6 @@ import org.mozilla.fenix.ext.openToBrowser
 import org.mozilla.fenix.ext.requireComponents
 import org.mozilla.fenix.ext.runIfFragmentIsAttached
 import org.mozilla.fenix.ipprotection.ui.IPProtectionSnackbarBinding
-import org.mozilla.fenix.kaizen.menu.KaizenMenu
-import org.mozilla.fenix.kaizen.menu.KaizenMenuContent
 import org.mozilla.fenix.nimbus.FxNimbus
 import org.mozilla.fenix.settings.SupportUtils
 import org.mozilla.fenix.settings.deletebrowsingdata.DefaultDeleteBrowsingDataController
@@ -182,8 +182,8 @@ class MenuDialogFragment : BottomSheetDialogFragment() {
     override fun onCreateDialog(savedInstanceState: Bundle?): Dialog {
         Events.toolbarMenuVisible.record(NoExtras())
 
-        if (KaizenMenu.opensFromTop(requireContext(), args.accesspoint, arguments)) {
-            return KaizenMenu.createTopSheetDialog(requireContext(), onMenuKey = ::dismiss)
+        if (DejavuMenu.opensFromTop(requireContext(), args.accesspoint, arguments)) {
+            return DejavuMenu.createTopSheetDialog(requireContext(), onMenuKey = ::dismiss)
         }
 
         return object : BottomSheetDialog(requireContext(), theme) {
@@ -264,13 +264,13 @@ class MenuDialogFragment : BottomSheetDialogFragment() {
         savedInstanceState: Bundle?,
     ): View = content {
         FirefoxTheme {
-            if (KaizenMenu.replaces(args.accesspoint)) {
-                KaizenMenuContent(
+            if (DejavuMenu.replaces(args.accesspoint)) {
+                DejavuMenuContent(
                     menuStore = menuStore,
                     accessPoint = args.accesspoint,
-                    fromTop = KaizenMenu.opensFromTop(requireContext(), args.accesspoint, arguments),
-                    opening = KaizenMenu.opening(arguments),
-                    onEdit = { findNavController().navigate(R.id.kaizen_more_menu_graph) },
+                    fromTop = DejavuMenu.opensFromTop(requireContext(), args.accesspoint, arguments),
+                    opening = DejavuMenu.opening(arguments),
+                    onEdit = { findNavController().navigate(R.id.dejavu_more_menu_graph) },
                     onDismiss = ::dismiss,
                 )
                 return@FirefoxTheme

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<!-- Dejavu's golden yellow palette, the same as DejavuColors for the screens made of views. -->
+<resources>
+    <color name="dejavu_accent">#FFFFC83D</color>
+    <color name="dejavu_on_accent">#FF1D1A16</color>
+
+    <color name="dejavuGold10">#FF261A00</color>
+    <color name="dejavuGold20">#FF3F2E00</color>
+    <color name="dejavuGold30">#FF5C4200</color>
+    <color name="dejavuGold45">#FF8C6300</color>
+    <color name="dejavuGold80">#FFFFC83D</color>
+    <color name="dejavuGold90">#FFFFDF9E</color>
+
+    <color name="dejavuSand10">#FF2A2010</color>
+    <color name="dejavuSand20">#FF3D2E14</color>
+    <color name="dejavuSand30">#FF4A3F2C</color>
+    <color name="dejavuSand35">#FF332A1C</color>
+    <color name="dejavuSand80">#FFDDC7A0</color>
+    <color name="dejavuSand80A55">#8CDDC7A0</color>
+    <color name="dejavuSand90">#FFF3E5C8</color>
+
+    <color name="dejavuAmber20">#FF472A00</color>
+    <color name="dejavuAmber40">#FF9C5700</color>
+    <color name="dejavuAmber80">#FFF5BD7A</color>
+    <color name="dejavuAmber90">#FF2E1500</color>
+    <color name="dejavuAmber95">#FFFFF1DC</color>
+
+    <color name="dejavuWarm0">#FFFFFBF5</color>
+    <color name="dejavuWarm5">#FFFAF6EF</color>
+    <color name="dejavuWarm10">#FFF2EDE4</color>
+    <color name="dejavuWarm15">#FFE8E2D7</color>
+    <color name="dejavuWarm20">#FFD9D2C6</color>
+    <color name="dejavuWarm25">#FFCAC3B7</color>
+    <color name="dejavuWarm30">#FFB9B2A6</color>
+    <color name="dejavuWarm45">#FF827B70</color>
+    <color name="dejavuWarm45A80">#CC827B70</color>
+    <color name="dejavuWarm50">#FF686157</color>
+    <color name="dejavuWarm55">#FF524C44</color>
+    <color name="dejavuWarm60">#FF403B34</color>
+    <color name="dejavuWarm65">#FF322E28</color>
+    <color name="dejavuWarm70">#FF26231E</color>
+    <color name="dejavuWarm75">#FF1D1A16</color>
+    <color name="dejavuWarm80">#FF181613</color>
+    <color name="dejavuWarm85">#FF13120F</color>
+
+    <color name="dejavuInk">#FF1F1B13</color>
+    <color name="dejavuInkA70">#B21F1B13</color>
+    <color name="dejavuPaper">#FFF5F0E6</color>
+    <color name="dejavuPaperA70">#B2F5F0E6</color>
+</resources>

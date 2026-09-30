@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="pref_key_dejavu_tab_actions" translatable="false">pref_key_dejavu_tab_actions</string>
+    <string name="pref_key_dejavu_containers" translatable="false">pref_key_dejavu_containers</string>
+    <string name="pref_key_dejavu_external_links" translatable="false">pref_key_dejavu_external_links</string>
+
+    <!-- Home screen -->
+    <string name="dejavu_workspace_default_name">Home</string>
+    <string name="dejavu_new_tab">New Tab</string>
+    <string name="dejavu_downloads">Downloads</string>
+    <string name="dejavu_history">History</string>
+    <string name="dejavu_bookmarks">Bookmarks</string>
+    <string name="dejavu_extensions">Extensions</string>
+    <string name="dejavu_new_tab_in_container">New tab in a container</string>
+    <string name="dejavu_new_tab_no_container">New tab without container</string>
+    <string name="dejavu_new_tab_temporary_container">New tab in a temporary container</string>
+    <string name="dejavu_new_private_tab">New private tab</string>
+    <string name="dejavu_private_workspace">Private</string>
+    <string name="dejavu_private_close_all">Close all</string>
+    <string name="dejavu_open_temporary_containers">Temporary containers in use</string>
+    <string name="dejavu_temporary_container">Temporary container</string>
+    <string name="dejavu_new_temporary_container">New temporary container</string>
+    <string name="dejavu_add_workspace">New workspace</string>
+    <string name="dejavu_workspace_name">Name</string>
+    <string name="dejavu_create">Create</string>
+    <string name="dejavu_save">Save</string>
+    <string name="dejavu_delete">Delete</string>
+    <string name="dejavu_cancel">Cancel</string>
+    <string name="dejavu_account">Account</string>
+    <string name="dejavu_settings">Settings</string>
+    <string name="dejavu_search_hint">Search or enter address</string>
+    <string name="dejavu_selection_exit">Exit selection</string>
+    <string name="dejavu_selection_select_all">Select all</string>
+    <plurals name="dejavu_selection_count">
+        <item quantity="one">%1$d selected</item>
+        <item quantity="other">%1$d selected</item>
+    </plurals>
+    <plurals name="dejavu_bookmarked">
+        <item quantity="one">Saved to bookmarks</item>
+        <item quantity="other">%1$d tabs saved to bookmarks</item>
+    </plurals>
+    <plurals name="dejavu_links_copied">
+        <item quantity="one">Link copied</item>
+        <item quantity="other">%1$d links copied</item>
+    </plurals>
+
+    <!-- Workspaces -->
+    <string name="dejavu_workspace_menu">Workspace menu</string>
+    <string name="dejavu_workspace_edit">Edit workspace</string>
+    <string name="dejavu_workspace_delete">Delete workspace</string>
+    <string name="dejavu_workspace_delete_title">Delete “%1$s”?</string>
+    <string name="dejavu_workspace_delete_message">Its tabs, pinned tabs and folders move to the neighbouring workspace.</string>
+    <string name="dejavu_workspace_container">Default container</string>
+    <string name="dejavu_workspace_container_hint">New tabs of this workspace open in this container.</string>
+    <string name="dejavu_workspace_no_container">No container</string>
+    <string name="dejavu_workspace_icon">Icon</string>
+    <string name="dejavu_workspace_theme">Theme</string>
+    <string name="dejavu_workspace_theme_intensity">Intensity</string>
+    <string name="dejavu_workspace_theme_grain">Grain</string>
+    <string name="dejavu_workspace_move_left">Move left</string>
+    <string name="dejavu_workspace_move_right">Move right</string>
+
+    <!-- Folders -->
+    <string name="dejavu_folder_new_subfolder">New subfolder</string>
+    <string name="dejavu_folder_rename">Rename folder</string>
+    <string name="dejavu_folder_unpack">Unpack folder</string>
+    <string name="dejavu_folder_top_level">Pinned tabs, no folder</string>
+
+    <!-- Essentials -->
+    <string name="dejavu_essentials_drop">Drop here to add to essentials</string>
+    <string name="dejavu_essentials_full">Essentials hold up to %1$d tabs</string>
+    <string name="dejavu_temporary_by_default">Temporary containers by default</string>
+    <string name="dejavu_temporary_by_default_summary">In workspaces without a default container, every new tab opens in its own temporary container. A temporary container and its cookies are deleted when its last tab closes.</string>
+    <string name="dejavu_settings_external_links">Links from other apps</string>
+    <string name="dejavu_settings_external_links_summary">Workspace and container they open in</string>
+    <string name="dejavu_external_links_hint">Links you open from other apps start in this workspace and container. Back takes you back to the app.</string>
+    <string name="dejavu_external_links_workspace">Workspace</string>
+    <string name="dejavu_external_links_last_workspace">The workspace shown last</string>
+    <string name="dejavu_external_links_container">Container</string>
+    <string name="dejavu_external_links_workspace_container">The default container of the workspace</string>
+    <string name="dejavu_external_links_private">Open in a private tab</string>
+    <string name="dejavu_external_links_private_summary">Links from other apps open in the private workspace, without a container.</string>
+    <string name="dejavu_essentials_per_container">Essentials per container</string>
+    <string name="dejavu_essentials_per_container_summary">Each container keeps its own essentials. A workspace shows the essentials of its default container.</string>
+
+    <!-- Deleting pinned tabs, essentials and folders -->
+    <string name="dejavu_delete_item_title">Delete “%1$s”?</string>
+    <plurals name="dejavu_delete_items_title">
+        <item quantity="one">Delete %1$d item?</item>
+        <item quantity="other">Delete %1$d items?</item>
+    </plurals>
+    <string name="dejavu_delete_items_message">Pinned tabs, essentials and folders with everything inside them are removed, and their open tabs are closed.</string>
+
+    <!-- Tab actions -->
+    <string name="dejavu_action_close">Close</string>
+    <string name="dejavu_action_pin">Pin</string>
+    <string name="dejavu_action_unpin">Unpin</string>
+    <string name="dejavu_action_sleep">Sleep</string>
+    <string name="dejavu_action_bookmark">Bookmark</string>
+    <string name="dejavu_action_share">Share</string>
+    <string name="dejavu_action_copy_link">Copy link</string>
+    <string name="dejavu_action_duplicate">Duplicate</string>
+    <string name="dejavu_action_move_to_workspace">Move to workspace</string>
+    <string name="dejavu_action_move_to_folder">Move to folder</string>
+    <string name="dejavu_action_new_folder">New folder</string>
+    <string name="dejavu_action_change_container">Change container</string>
+    <string name="dejavu_action_rename_tab">Rename tab</string>
+    <string name="dejavu_rename_tab_hint">Title, empty for the page title</string>
+    <string name="dejavu_action_split_view">Split view</string>
+    <string name="dejavu_action_unsplit">Unsplit</string>
+
+    <!-- Split view -->
+    <string name="dejavu_split_view">Split view</string>
+    <string name="dejavu_split_show_on_top">Show on top</string>
+    <string name="dejavu_split_close">Close split view</string>
+    <string name="dejavu_action_reset_pin">Reset pinned tab</string>
+    <string name="dejavu_action_add_to_essentials">Add to essentials</string>
+    <string name="dejavu_action_remove_from_essentials">Remove from essentials</string>
+    <string name="dejavu_action_delete">Delete</string>
+
+    <!-- Settings -->
+    <string name="dejavu_settings_title">Dejavu</string>
+    <!-- About page. %1$s is the name of the app. -->
+    <string name="dejavu_about_content">%1$s is based on Firefox, made by Mozilla.</string>
+    <string name="dejavu_settings_tab_actions">Tab actions</string>
+    <string name="dejavu_settings_tab_actions_entry_summary">Buttons on tabs, and actions for selected tabs</string>
+    <string name="dejavu_settings_tab_actions_hint">Choose the buttons of pinned and unpinned tab rows, and the actions shown when you select tabs. Actions you add yourself can be used in all three.</string>
+    <string name="dejavu_settings_pinned_tabs">Pinned tabs</string>
+    <string name="dejavu_settings_unpinned_tabs">Unpinned tabs</string>
+    <string name="dejavu_settings_all_actions">All actions</string>
+    <string name="dejavu_settings_all_actions_summary">%1$d of %2$d shown when you select tabs</string>
+    <string name="dejavu_settings_no_buttons">No buttons</string>
+    <string name="dejavu_settings_buttons">Buttons</string>
+    <string name="dejavu_settings_actions">Actions</string>
+    <string name="dejavu_settings_pinned_actions_hint">Choose up to %1$d buttons for pinned tab rows.</string>
+    <string name="dejavu_settings_unpinned_actions_hint">Choose up to %1$d buttons for unpinned tab rows.</string>
+    <string name="dejavu_settings_all_actions_hint">Choose the actions shown at the bottom of the home page when you long-press to select tabs, essentials or folders. An action only shows up when it can run on what is selected.</string>
+    <string name="dejavu_settings_containers">Containers</string>
+    <string name="dejavu_settings_containers_entry_summary">Add, edit and delete containers</string>
+    <string name="dejavu_settings_containers_hint">Tabs in a container keep their own cookies and site data. Long-press New Tab on the home page to open a tab in a container, or give a whole workspace a container from its menu.</string>
+    <string name="dejavu_container_add">Add container</string>
+    <string name="dejavu_container_edit">Edit container</string>
+    <string name="dejavu_container_name">Name</string>
+    <string name="dejavu_container_color">Color</string>
+    <string name="dejavu_container_icon">Icon</string>
+    <string name="dejavu_container_delete_title">Delete “%1$s”?</string>
+    <string name="dejavu_container_delete_message">Its cookies and site data are deleted. Choose what happens to its tabs.</string>
+
+    <!-- Home: sections and undo -->
+    <string name="dejavu_clear_unpinned">Clear</string>
+    <string name="dejavu_undo">Undo</string>
+    <plurals name="dejavu_tabs_closed">
+        <item quantity="one">Tab closed</item>
+        <item quantity="other">%1$d tabs closed</item>
+    </plurals>
+
+    <!-- Containers: delete options -->
+    <string name="dejavu_container_delete_close_tabs">Close its tabs, pinned tabs included</string>
+    <string name="dejavu_container_delete_move_tabs">Or move its tabs to</string>
+
+    <!-- Custom actions -->
+    <string name="dejavu_custom_action">Custom action</string>
+    <string name="dejavu_custom_actions">Custom actions</string>
+    <string name="dejavu_custom_action_add">Add action</string>
+    <string name="dejavu_custom_action_name">Name</string>
+    <string name="dejavu_custom_action_method">Method</string>
+    <string name="dejavu_custom_action_url">URL</string>
+    <string name="dejavu_custom_action_headers">Headers</string>
+    <string name="dejavu_custom_action_header_name">Header</string>
+    <string name="dejavu_custom_action_header_value">Value</string>
+    <string name="dejavu_custom_action_add_header">Add header</string>
+    <string name="dejavu_custom_action_remove_header">Remove header</string>
+    <string name="dejavu_custom_action_body">Body</string>
+    <string name="dejavu_custom_action_variables">Variables</string>
+    <string name="dejavu_custom_action_variables_hint">Tap a variable to insert it into the field you are editing.</string>
+    <string name="dejavu_custom_action_hint">The request is sent once for every tab the action runs on. Only a 2xx answer counts as success; redirects are not followed and count as failures. Cookies are not sent. Values are URL encoded in the URL and JSON escaped in a JSON body.</string>
+    <string name="dejavu_custom_action_sent">Sent: %1$s</string>
+    <string name="dejavu_custom_action_failed_code">Failed: code %1$d (%2$s)</string>
+    <string name="dejavu_custom_action_failed_no_answer">Failed: no answer (%1$s)</string>
+    <string name="dejavu_custom_action_failed_some">%1$s, %2$d of %3$d tabs</string>
+    <string name="dejavu_custom_action_examples">Examples</string>
+    <string name="dejavu_custom_action_examples_hint">Tap an example to fill in the fields above. Then put your own server in place of example.com, and your own keys and IDs in place of the parts in capitals.</string>
+    <string name="dejavu_example_bookmark">Save the page as a bookmark</string>
+    <string name="dejavu_example_read_later">Save the page to read later</string>
+    <string name="dejavu_example_note">Save the page as a note</string>
+    <string name="dejavu_example_notification">Send the page as a notification</string>
+    <string name="dejavu_example_chat">Post the page to a chat</string>
+    <string name="dejavu_example_automation">Start an automation with the page</string>
+    <string name="dejavu_example_webhook">Send every variable as JSON, for n8n, Node-RED and similar tools</string>
+
+    <!-- Tabs settings -->
+    <string name="dejavu_preferences_close_unpinned_tabs">Close unpinned tabs</string>
+
+    <!-- Menu of a long-pressed link -->
+    <string name="dejavu_link_open_in_split_view">Open in split view</string>
+    <string name="dejavu_link_open_in_container">Open in container</string>
+    <string name="dejavu_link_open_in_workspace">Open in workspace</string>
+    <!-- %1$s is the name of the container or workspace the link was opened in. -->
+    <string name="dejavu_link_opened_in">Opened in %1$s</string>
+
+    <!-- Browser toolbar -->
+    <string name="dejavu_toolbar_container">Container: %1$s</string>
+
+    <!-- Browser "More" menu -->
+    <string name="dejavu_menu_back">Back</string>
+    <string name="dejavu_menu_forward">Forward</string>
+    <string name="dejavu_menu_share">Share</string>
+    <string name="dejavu_menu_refresh">Reload</string>
+    <string name="dejavu_menu_stop">Stop</string>
+    <string name="dejavu_menu_find_in_page">Find in page</string>
+    <string name="dejavu_menu_bookmark_page">Bookmark</string>
+    <string name="dejavu_menu_edit_bookmark">Edit bookmark</string>
+    <string name="dejavu_menu_desktop_site">Desktop site</string>
+    <string name="dejavu_menu_extensions">Extensions</string>
+    <string name="dejavu_menu_manage_extensions">Manage extensions</string>
+    <string name="dejavu_menu_passwords">Passwords</string>
+    <string name="dejavu_menu_bookmarks">Bookmarks</string>
+    <string name="dejavu_menu_downloads">Downloads</string>
+    <string name="dejavu_menu_history">History</string>
+    <string name="dejavu_menu_translate">Translate</string>
+    <string name="dejavu_menu_summarize">Summarize</string>
+    <string name="dejavu_menu_report_broken_site">Report site issue</string>
+    <string name="dejavu_menu_pin_tab">Pin tab</string>
+    <string name="dejavu_menu_unpin_tab">Unpin tab</string>
+    <string name="dejavu_menu_essential_tab">Add to essentials</string>
+    <string name="dejavu_menu_remove_essential">Remove essential</string>
+    <string name="dejavu_menu_save_as_pdf">Save as PDF</string>
+    <string name="dejavu_menu_print">Print</string>
+    <string name="dejavu_menu_open_in_app">Open in app</string>
+    <string name="dejavu_menu_reset_pinned_url">Reset to pinned URL</string>
+    <string name="dejavu_menu_replace_pinned_url">Pin this URL</string>
+    <string name="dejavu_menu_split_view">Split view</string>
+    <string name="dejavu_menu_unsplit">Unsplit</string>
+    <string name="dejavu_menu_split_with">Split view with</string>
+    <string name="dejavu_menu_split_no_tabs">There are no other tabs in this workspace.</string>
+    <string name="dejavu_menu_settings">Settings</string>
+    <string name="dejavu_menu_edit">Edit</string>
+
+    <!-- Settings: "More" menu editor -->
+    <string name="pref_key_dejavu_more_menu" translatable="false">pref_key_dejavu_more_menu</string>
+    <string name="dejavu_settings_more_menu">More menu</string>
+    <string name="dejavu_settings_actions_bar">Actions bar</string>
+    <string name="dejavu_actions_bar_search">Search</string>
+    <string name="dejavu_actions_bar_home">Home</string>
+    <string name="dejavu_settings_more_menu_summary">The actions bar below pages and the menu it opens</string>
+    <string name="dejavu_more_menu_hint">The first row is the actions bar below pages. Swipe the actions bar up, or the address bar down, to open the whole menu. Tap a button to move or remove it. Extensions always take a whole row.</string>
+    <string name="dejavu_more_menu_row">Row %1$d</string>
+    <string name="dejavu_more_menu_add_item">Add a button</string>
+    <string name="dejavu_more_menu_add_row">Add a row</string>
+    <string name="dejavu_more_menu_row_full">This row is full.</string>
+    <string name="dejavu_more_menu_move_left">Move left</string>
+    <string name="dejavu_more_menu_move_right">Move right</string>
+    <string name="dejavu_more_menu_move_up">Move up</string>
+    <string name="dejavu_more_menu_move_down">Move down</string>
+    <string name="dejavu_more_menu_remove">Remove</string>
+    <string name="dejavu_more_menu_delete_row">Delete row</string>
+    <string name="dejavu_more_menu_reset">Reset to default</string>
+    <string name="dejavu_more_menu_hide_edit">Hide edit button</string>
+    <string name="dejavu_more_menu_hide_edit_summary">The button below the menu that opens this screen</string>
+    <string name="dejavu_more_menu_all_added">Every button is already in the menu.</string>
+    <string name="dejavu_more_menu_preview">Preview</string>
+
+    <!-- Settings: syncing workspaces with Zen -->
+    <string name="pref_key_dejavu_sync" translatable="false">pref_key_dejavu_sync</string>
+    <string name="dejavu_settings_sync">Sync with Zen</string>
+    <string name="dejavu_settings_sync_summary">Workspaces, containers, pinned tabs and essentials</string>
+    <string name="dejavu_sync_hint">Keeps your workspaces with their colors and icons, containers, pinned tabs, essentials and folders the same as in Zen Browser on your computer and in Dejavu on your other devices. It uses the Mozilla account you sync Firefox data with.</string>
+    <string name="dejavu_sync_zen_hint">In Zen, open Settings, then Sync, and turn on sidebar sync. Tabs that are not pinned are not synced.</string>
+    <string name="dejavu_sync_enabled">Sync workspaces</string>
+    <!-- Switch that also syncs the tabs that are not pinned, like Zen's own "Include unpinned tabs" option. -->
+    <string name="dejavu_sync_normal_tabs">Include unpinned tabs</string>
+    <string name="dejavu_sync_normal_tabs_summary">Also sync the other tabs of each workspace, not just pinned tabs and folders. Zen syncs them when its own Include unpinned tabs option is on.</string>
+    <string name="dejavu_sync_now">Sync now</string>
+    <string name="dejavu_sync_syncing">Syncing…</string>
+    <string name="dejavu_sync_last_synced">Last synced %1$s</string>
+    <string name="dejavu_sync_never_synced">Not synced yet</string>
+    <string name="dejavu_sync_off">Sync is off on this device</string>
+    <string name="dejavu_sync_signed_out">Sign in to your Mozilla account to sync your workspaces with Zen.</string>
+    <string name="dejavu_sync_sign_in">Sign in</string>
+    <string name="dejavu_sync_problem_not_set_up">Waiting for Firefox Sync to finish setting up your account.</string>
+    <string name="dejavu_sync_problem_not_turned_on">Spaces sync is off for your Mozilla account. Turn it on here or in Zen’s sync settings. Turning it on here also turns it on in Zen.</string>
+    <string name="dejavu_sync_turn_on">Turn on spaces sync</string>
+    <string name="dejavu_sync_problem_needs_update">Another device uses a newer version of spaces sync. Update Dejavu to keep syncing.</string>
+    <string name="dejavu_sync_problem_sign_in">Sign in to your Mozilla account again to keep syncing.</string>
+    <string name="dejavu_sync_problem_offline">Could not reach the sync servers. Dejavu will try again.</string>
+    <string name="dejavu_sync_problem_server">The sync servers had a problem. Dejavu will try again.</string>
+    <string name="dejavu_container_personal">Personal</string>
+    <string name="dejavu_container_work">Work</string>
+    <string name="dejavu_container_banking">Banking</string>
+    <string name="dejavu_container_shopping">Shopping</string>
+</resources>

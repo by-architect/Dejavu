@@ -139,6 +139,7 @@ import org.mozilla.fenix.databinding.ActivityHomeBinding
 import org.mozilla.fenix.debugsettings.data.DefaultDebugSettingsRepository
 import org.mozilla.fenix.debugsettings.gleandebugtools.DefaultGleanDebugToolsStorage
 import org.mozilla.fenix.debugsettings.ui.FenixOverlay
+import org.mozilla.fenix.dejavu.settings.DejavuPreferenceCards
 import org.mozilla.fenix.downloads.DownloadSnackbar
 import org.mozilla.fenix.e2e.EdgeToEdgeFragmentLifecycleCallbacks
 import org.mozilla.fenix.experiments.ResearchSurfaceDialogFragment
@@ -171,7 +172,6 @@ import org.mozilla.fenix.home.intent.OpenSpecificTabIntentProcessor
 import org.mozilla.fenix.home.intent.SpeechProcessingIntentProcessor
 import org.mozilla.fenix.home.intent.StartSearchIntentProcessor
 import org.mozilla.fenix.home.topsites.DefaultPinnedSitesBinding
-import org.mozilla.fenix.kaizen.settings.KaizenPreferenceCards
 import org.mozilla.fenix.messaging.FenixMessageSurfaceId
 import org.mozilla.fenix.messaging.MessageNotificationWorker
 import org.mozilla.fenix.nimbus.FxNimbus
@@ -698,7 +698,7 @@ open class HomeActivity : LocaleAwareAppCompatActivity(), NavHostActivity, Crash
             ),
             true,
         )
-        supportFragmentManager.registerFragmentLifecycleCallbacks(KaizenPreferenceCards(), true)
+        supportFragmentManager.registerFragmentLifecycleCallbacks(DejavuPreferenceCards(), true)
 
         if (components.settings.showContileFeature) {
             components.core.macTopSitesUpdater.startPeriodicWork()

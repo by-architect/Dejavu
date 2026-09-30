@@ -18,5 +18,5 @@
     android:contentDescription="@null"
     app:layout_constraintStart_toStartOf="parent"
     app:layout_constraintTop_toTopOf="parent"
-    app:srcCompat="@drawable/kaizen_toolbar_no_shortcut_preview" />
+    app:srcCompat="@drawable/dejavu_toolbar_no_shortcut_preview" />
 </FrameLayout>

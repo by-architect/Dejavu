@@ -76,7 +76,7 @@
             android:defaultValue="true"
             android:key="@string/pref_key_search_bookmarks"
             android:title='@string/preferences_search_bookmarks' />
-        <!-- Kaizen: tabs of other devices come from Zen's sync. -->
+        <!-- Dejavu: tabs of other devices come from Zen's sync. -->
         <SwitchPreferenceCompat
             app:iconSpaceReserved="false"
             app:isPreferenceVisible="false"
@@ -100,7 +100,7 @@
             android:key="@string/pref_key_show_sponsored_suggestions"
             android:title="@string/preferences_show_sponsored_suggestions"
             android:summary="@string/preferences_show_sponsored_suggestions_summary" />
-        <!-- Kaizen: this page is about Firefox's own suggestions. -->
+        <!-- Dejavu: this page is about Firefox's own suggestions. -->
         <Preference
             app:iconSpaceReserved="false"
             app:isPreferenceVisible="false"

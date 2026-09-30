@@ -29,7 +29,7 @@ apply from: 'benchmark.gradle'
 
 def isAppBundle = gradle.startParameter.taskNames.any { it.toLowerCase().contains("bundle") }
 
-// Kaizen: the id Dejavu is published with. The launcher shortcuts in src/release/res/xml/shortcuts.xml use it too.
+// Dejavu: the id Dejavu is published with. The launcher shortcuts in src/release/res/xml/shortcuts.xml use it too.
 def DEJAVU_APPLICATION_ID = "com.byarchitect.dejavu"
 def DEJAVU_VERSION_CODE_BASE = 2016190000
 
@@ -141,7 +141,7 @@ android {
         }
         release releaseTemplate >> {
             buildConfigField "boolean", "USE_RELEASE_VERSIONING", "true"
-            // Kaizen: release builds are Dejavu, an app of its own. Its id is set in onVariants below, and it has its
+            // Dejavu: release builds are Dejavu, an app of its own. Its id is set in onVariants below, and it has its
             // own deep link scheme and no shared user id.
             def deepLinkSchemeValue = "dejavu"
             buildConfigField "String", "DEEP_LINK_SCHEME", "\"$deepLinkSchemeValue\""
@@ -252,7 +252,7 @@ android {
     packaging {
         jniLibs {
             excludes += ["**/armeabi/*.so", "**/mips/*.so", "**/mips64/*.so", "**/x86/*.so"]
-            // Kaizen: a GeckoView built here has one architecture, so a bundle keeps only that one. The libraries other
+            // Dejavu: a GeckoView built here has one architecture, so a bundle keeps only that one. The libraries other
             // dependencies bring for the other architectures would give those devices an app that cannot start.
             if (isAppBundle && !gradle.mozconfig.substs.MOZ_ANDROID_FAT_AAR_ARCHITECTURES) {
                 def geckoArch = gradle.mozconfig.substs.ANDROID_CPU_ARCH
@@ -291,7 +291,7 @@ androidComponents {
             // The Google Play Store does not allow multiple APKs for the same app that all have the
             // same version code. Therefore we need to have different version codes for our ARM and x86
             // builds.
-            // Kaizen: the root project's extra `versionName`, Gecko's version, hides -PversionName from
+            // Dejavu: the root project's extra `versionName`, Gecko's version, hides -PversionName from
             // Config.releaseVersionName, so the release version is read from the command line itself.
             def versionName = buildType == 'nightly' ?
                     "${Config.nightlyVersionName(project)}" :
@@ -302,7 +302,7 @@ androidComponents {
                 // We use the same version code generator, that we inherited from Fennec, across all channels - even on
                 // channels that never shipped a Fennec build.
                 def abi = output.filters.find { it.filterType == FilterConfiguration.FilterType.ABI }?.identifier ?: "universal"
-                // Kaizen: Dejavu's version code follows its version name, DEJAVU_VERSION_CODE_BASE + major * 10000 +
+                // Dejavu: Dejavu's version code follows its version name, DEJAVU_VERSION_CODE_BASE + major * 10000 +
                 // minor * 100 + patch, or -PversionCode. The first upload had a Firefox time based code, 2016187519, and
                 // those grow by thousands a day, so they would reach Google Play's limit within a few years.
                 def nameParts = versionName =~ /^(\d+)\.(\d+)\.(\d+)$/

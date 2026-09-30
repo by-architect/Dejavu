@@ -65,14 +65,14 @@
 
     <androidx.preference.PreferenceCategory
         android:layout="@layout/preference_cat_style"
-        android:title="@string/kaizen_settings_actions_bar"
+        android:title="@string/dejavu_settings_actions_bar"
         app:iconSpaceReserved="false">
         <androidx.preference.Preference
             app:iconSpaceReserved="false"
-            app:widgetLayout="@layout/kaizen_preference_badge"
-            android:key="@string/pref_key_kaizen_more_menu"
-            android:title="@string/kaizen_settings_more_menu"
-            android:summary="@string/kaizen_settings_more_menu_summary" />
+            app:widgetLayout="@layout/dejavu_preference_badge"
+            android:key="@string/pref_key_dejavu_more_menu"
+            android:title="@string/dejavu_settings_more_menu"
+            android:summary="@string/dejavu_settings_more_menu_summary" />
     </androidx.preference.PreferenceCategory>
 
     <androidx.preference.PreferenceCategory
@@ -110,7 +110,7 @@
             app:trueOptionTitle="@string/preference_expanded_toolbar" />
     </androidx.preference.PreferenceCategory>
 
-    <!-- Toolbar shortcut picker. Kaizen: the first row of the "More" menu is the actions bar instead. -->
+    <!-- Toolbar shortcut picker. Dejavu: the first row of the "More" menu is the actions bar instead. -->
     <androidx.preference.PreferenceCategory
         android:key="@string/pref_key_customization_category_toolbar_shortcut"
         android:layout="@layout/preference_cat_style"

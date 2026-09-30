@@ -9,11 +9,11 @@
     android:id="@+id/nav_graph"
     app:startDestination="@id/startupFragment">
 
-    <include app:graph="@navigation/kaizen_tab_actions_graph" />
-    <include app:graph="@navigation/kaizen_containers_graph" />
-    <include app:graph="@navigation/kaizen_external_links_graph" />
-    <include app:graph="@navigation/kaizen_more_menu_graph" />
-    <include app:graph="@navigation/kaizen_sync_graph" />
+    <include app:graph="@navigation/dejavu_tab_actions_graph" />
+    <include app:graph="@navigation/dejavu_containers_graph" />
+    <include app:graph="@navigation/dejavu_external_links_graph" />
+    <include app:graph="@navigation/dejavu_more_menu_graph" />
+    <include app:graph="@navigation/dejavu_sync_graph" />
 
     <action
         android:id="@+id/action_startup_home"
@@ -175,7 +175,7 @@
         app:exitAnim="@anim/slide_out_left"
         app:popEnterAnim="@anim/slide_in_left"
         app:popExitAnim="@anim/slide_out_right" />
-    <!-- Kaizen: tabs are managed on the home screen, so every way to the tabs tray leads there. -->
+    <!-- Dejavu: tabs are managed on the home screen, so every way to the tabs tray leads there. -->
     <action
         android:id="@+id/action_global_tabManagementFragment"
         app:destination="@id/homeFragment"

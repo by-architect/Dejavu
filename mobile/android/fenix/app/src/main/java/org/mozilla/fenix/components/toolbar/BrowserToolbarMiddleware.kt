@@ -145,11 +145,11 @@ import org.mozilla.fenix.components.toolbar.TabCounterInteractions.CloseCurrentT
 import org.mozilla.fenix.components.toolbar.TabCounterInteractions.TabCounterClicked
 import org.mozilla.fenix.components.toolbar.TabCounterInteractions.TabCounterLongClicked
 import org.mozilla.fenix.components.usecases.ShareUseCases
+import org.mozilla.fenix.dejavu.browser.DejavuToolbar
+import org.mozilla.fenix.dejavu.browser.DejavuToolbarEvent
 import org.mozilla.fenix.ext.canGoBackInHistoryOrToStories
 import org.mozilla.fenix.ext.nav
 import org.mozilla.fenix.ext.navigateSafe
-import org.mozilla.fenix.kaizen.browser.KaizenToolbar
-import org.mozilla.fenix.kaizen.browser.KaizenToolbarEvent
 import org.mozilla.fenix.nimbus.FxNimbus
 import org.mozilla.fenix.settings.ShortcutType
 import org.mozilla.fenix.summarization.SummarizationNavigator
@@ -298,8 +298,8 @@ class BrowserToolbarMiddleware(
         next: (BrowserToolbarAction) -> Unit,
         action: BrowserToolbarAction,
     ) {
-        if (action is KaizenToolbarEvent) {
-            KaizenToolbar.onEvent(uiContext, navController, store, action)
+        if (action is DejavuToolbarEvent) {
+            DejavuToolbar.onEvent(uiContext, navController, store, action)
             next(action)
             return
         }
@@ -766,7 +766,7 @@ class BrowserToolbarMiddleware(
     }
 
     private fun buildStartPageActions(): List<Action> {
-        return listOfNotNull(KaizenToolbar.containerAction(uiContext, browserStore.state)) +
+        return listOfNotNull(DejavuToolbar.containerAction(uiContext, browserStore.state)) +
             listOf(
                 ToolbarActionConfig(ToolbarAction.SiteInfo) {
                     !browserScreenStore.state.readerModeStatus.isActive
@@ -837,7 +837,7 @@ class BrowserToolbarMiddleware(
     }
 
     private suspend fun buildEndBrowserActions(): List<Action> {
-        if (KaizenToolbar.enabled) {
+        if (DejavuToolbar.enabled) {
             return emptyList()
         }
 
@@ -854,7 +854,7 @@ class BrowserToolbarMiddleware(
                     }
                 },
                 ToolbarActionConfig(ToolbarAction.TabCounter) {
-                    KaizenToolbar.showTabCounter && (!shouldUseExpandedToolbar || !isTallWindow || isWideWindow)
+                    DejavuToolbar.showTabCounter && (!shouldUseExpandedToolbar || !isTallWindow || isWideWindow)
                 },
                 ToolbarActionConfig(ToolbarAction.Menu) {
                     !shouldUseExpandedToolbar || !isTallWindow || isWideWindow
@@ -898,7 +898,7 @@ class BrowserToolbarMiddleware(
                 ToolbarActionConfig(ToolbarAction.Share) { shouldUseExpandedToolbar && isTallWindow && !isWideWindow },
                 ToolbarActionConfig(ToolbarAction.NewTab) { shouldUseExpandedToolbar && isTallWindow && !isWideWindow },
                 ToolbarActionConfig(ToolbarAction.TabCounter) {
-                    KaizenToolbar.showTabCounter && shouldUseExpandedToolbar && isTallWindow && !isWideWindow
+                    DejavuToolbar.showTabCounter && shouldUseExpandedToolbar && isTallWindow && !isWideWindow
                 },
                 ToolbarActionConfig(ToolbarAction.Menu) { shouldUseExpandedToolbar && isTallWindow && !isWideWindow },
             )
@@ -1005,7 +1005,7 @@ class BrowserToolbarMiddleware(
 
     private fun observePageOriginUpdates(store: Store<BrowserToolbarState, BrowserToolbarAction>) {
         browserStore.observeWhileActive {
-            // Kaizen shows the page title, so the address bar follows title changes too.
+            // Dejavu shows the page title, so the address bar follows title changes too.
             distinctUntilChangedBy { it.selectedTab?.content?.url to it.selectedTab?.content?.title }
                 .collect {
                     updateCurrentPageOrigin(store)
@@ -1059,8 +1059,8 @@ class BrowserToolbarMiddleware(
             if (originalUrl.toString() == ABOUT_HOME_URL) {
                 // Default to showing the toolbar hint when the URL is ABOUT_HOME.
                 ""
-            } else if (KaizenToolbar.enabled) {
-                KaizenToolbar.displayText(browserStore.state.selectedTab)
+            } else if (DejavuToolbar.enabled) {
+                DejavuToolbar.displayText(browserStore.state.selectedTab)
             } else if (searchTerms.isNotBlank()) {
                 searchTerms
             } else {

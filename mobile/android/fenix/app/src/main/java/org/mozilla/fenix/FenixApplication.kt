@@ -112,6 +112,8 @@ import org.mozilla.fenix.components.appstate.AppAction
 import org.mozilla.fenix.components.initializeGlean
 import org.mozilla.fenix.components.metrics.MozillaProductDetector
 import org.mozilla.fenix.components.startMetricsIfEnabled
+import org.mozilla.fenix.dejavu.DejavuDefaults
+import org.mozilla.fenix.dejavu.dejavuKeepsTab
 import org.mozilla.fenix.experiments.maybeFetchExperiments
 import org.mozilla.fenix.ext.application
 import org.mozilla.fenix.ext.components
@@ -121,8 +123,6 @@ import org.mozilla.fenix.ext.isKnownSearchDomain
 import org.mozilla.fenix.home.collections.migration.CollectionsToTabGroupsMigrationWorker
 import org.mozilla.fenix.home.topsites.TopSitesConfigConstants.TOP_SITES_PROVIDER_LIMIT
 import org.mozilla.fenix.home.topsites.TopSitesConfigConstants.TOP_SITES_PROVIDER_MAX_THRESHOLD
-import org.mozilla.fenix.kaizen.KaizenDefaults
-import org.mozilla.fenix.kaizen.kaizenKeepsTab
 import org.mozilla.fenix.lifecycle.StoreLifecycleObserver
 import org.mozilla.fenix.lifecycle.VisibilityLifecycleObserver
 import org.mozilla.fenix.nimbus.FxNimbus
@@ -263,10 +263,10 @@ open class FenixApplication : Application(), Provider, ThemeProvider {
                 applySecretSettingsOverrides(applicationContext)
             }
 
-            // Kaizen's defaults turn telemetry and studies off, so they must be in place before those start.
+            // Dejavu's defaults turn telemetry and studies off, so they must be in place before those start.
             StrictMode.allowThreadDiskWrites().let { policy ->
                 try {
-                    KaizenDefaults.applyOnce(applicationContext)
+                    DejavuDefaults.applyOnce(applicationContext)
                 } finally {
                     StrictMode.setThreadPolicy(policy)
                 }
@@ -475,7 +475,7 @@ open class FenixApplication : Application(), Provider, ThemeProvider {
         components.useCases.tabsUseCases.restore(
             storage = sessionStorage,
             tabTimeoutInMs = components.settings.getTabTimeout(),
-            keepTab = kaizenKeepsTab(this@FenixApplication),
+            keepTab = dejavuKeepsTab(this@FenixApplication),
         )
 
         // Now that we have restored our previous state (if there's one) let's setup auto saving the state while

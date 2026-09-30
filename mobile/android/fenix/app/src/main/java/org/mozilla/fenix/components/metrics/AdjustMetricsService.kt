@@ -115,7 +115,7 @@ class AdjustMetricsService(
 
             val token = adjustToken
             if (token.isNullOrBlank()) {
-                // Kaizen: release builds have no Adjust token, as they have no marketing telemetry.
+                // Dejavu: release builds have no Adjust token, as they have no marketing telemetry.
                 logger.info("No adjust token defined")
                 return
             }
