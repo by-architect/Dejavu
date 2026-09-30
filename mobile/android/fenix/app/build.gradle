@@ -31,6 +31,7 @@ def isAppBundle = gradle.startParameter.taskNames.any { it.toLowerCase().contain
 
 // Kaizen: the id Dejavu is published with. The launcher shortcuts in src/release/res/xml/shortcuts.xml use it too.
 def DEJAVU_APPLICATION_ID = "com.byarchitect.dejavu"
+def DEJAVU_VERSION_CODE_BASE = 2016190000
 
 android {
     project.maybeConfigForJetpackBenchmark(it)
@@ -301,7 +302,15 @@ androidComponents {
                 // We use the same version code generator, that we inherited from Fennec, across all channels - even on
                 // channels that never shipped a Fennec build.
                 def abi = output.filters.find { it.filterType == FilterConfiguration.FilterType.ABI }?.identifier ?: "universal"
-                def versionCodeOverride = Config.generateFennecVersionCode(abi)
+                // Kaizen: Dejavu's version code follows its version name, DEJAVU_VERSION_CODE_BASE + major * 10000 +
+                // minor * 100 + patch, or -PversionCode. The first upload had a Firefox time based code, 2016187519, and
+                // those grow by thousands a day, so they would reach Google Play's limit within a few years.
+                def nameParts = versionName =~ /^(\d+)\.(\d+)\.(\d+)$/
+                def dejavuCode = gradle.startParameter.projectProperties["versionCode"]?.toInteger() ?:
+                        (nameParts.matches() ? DEJAVU_VERSION_CODE_BASE + nameParts[0][1].toInteger() * 10000 +
+                            nameParts[0][2].toInteger() * 100 + nameParts[0][3].toInteger() : null)
+                def versionCodeOverride = buildType == 'release' && dejavuCode != null ? dejavuCode :
+                        Config.generateFennecVersionCode(abi)
                 project.logger.debug("versionCode for $abi = $versionCodeOverride")
                 output.versionName.set(versionName)
                 output.versionCode.set(versionCodeOverride)
