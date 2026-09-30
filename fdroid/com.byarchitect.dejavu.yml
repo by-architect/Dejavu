@@ -25,18 +25,56 @@ Builds:
     commit: abe13cd4e21479ff000640a02c33492b294a5755
     output: 
       objdir-fdroid/gradle/build/mobile/android/fenix/app/outputs/apk/release/app-release-unsigned.apk
-    scandelete:
-      - config/tests/test.manifest.jar
-      - dom/base/test/file_bug945152.jar
-      - dom/security/test/cors/file_CrossSiteXHR_inner.jar
-      - modules/libjar/test/unit/data/test_1801102.jar
-      - modules/libjar/test/unit/data/test_bug370103.jar
-      - third_party/application-services/components/support/nimbus-fml/fixtures/android/runtime/json.jar
-      - third_party/chromium/build/android/java/test/missing_symbol/c.jar
-      - third_party/chromium/build/android/stacktrace/java_deobfuscate_java.jar
-      - third_party/chromium/build/android/tests/symbolize/liba.so
-      - third_party/chromium/build/android/tests/symbolize/libb.so
-      - third_party/libwebrtc/examples/androidapp/third_party/autobanh/lib/autobanh.jar
+    prebuild:
+      - rm -rf accessible/tests
+      - rm -rf browser/branding/*/dsstore
+      - rm -rf browser/components/backup/tests
+      - rm -rf browser/components/migration/tests
+      - rm -rf config/tests
+      - rm -rf dom/base/test
+      - rm -rf dom/promise/tests
+      - rm -rf dom/security/test
+      - rm -rf dom/tests
+      - rm -rf dom/webgpu/tests
+      - rm -rf dom/xhr/tests
+      - rm -rf js/src/jit-test
+      - rm -rf layout/reftests
+      - rm -rf mobile/android/fenix/app/src/androidTest
+      - rm -rf mobile/android/geckoview/src/androidTest
+      - rm -rf modules/libjar/test
+      - rm -rf modules/libmar/tests
+      - rm -rf other-licenses/7zstub
+      - rm -rf other-licenses/nsis
+      - rm -rf python/mozperftest
+      - rm -rf security/manager/ssl/tests
+      - rm -rf security/nss/automation
+      - rm -rf security/nss/cmd/bltest
+      - rm -rf security/nss/cmd/samples
+      - rm -rf security/nss/nss/automation
+      - rm -rf security/nss/tests
+      - rm -rf testing/mozbase
+      - rm -rf testing/talos
+      - rm -rf testing/web-platform
+      - rm -rf third_party/chromium/build/android
+      - rm -rf third_party/libwebrtc/examples
+      - rm -rf third_party/webkit
+      - rm -rf third_party/zucchini/tests
+      - rm -rf toolkit/components/contentanalysis/tests
+      - rm -rf toolkit/components/url-classifier/tests
+      - rm -rf toolkit/crashreporter/breakpad-client/mac
+      - rm -rf toolkit/crashreporter/google-breakpad/src/tools/windows
+      - rm -rf toolkit/modules/tests
+      - rm -rf toolkit/mozapps/update/tests
+      - rm -rf tools/update-verify
+      - rm -rf xpcom/tests
+    scanignore:
+      - devtools/client/shared
+      - services/settings/dumps
+      - third_party/application-services
+      - third_party/libwebrtc/data
+      - third_party/python
+      - third_party/rust
+      - toolkit/components/pdfjs/content/web/wasm
     build:
       - export MOZCONFIG=$PWD/fdroid/mozconfig
       - ./mach --no-interactive bootstrap --application-choice mobile_android
@@ -53,6 +91,14 @@ MaintainerNotes: |-
   Version code scheme: 2016190000 + major * 10000 + minor * 100 + patch, computed in
   mobile/android/fenix/app/build.gradle. 1.0.0 is therefore 2016200000. One CPU architecture is
   built per run; fdroid/mozconfig takes it from DEJAVU_FDROID_TARGET and defaults to arm64-v8a.
+
+  The prebuild deletions are test suites and the Windows and macOS halves of the tree; none of them
+  are reachable from an Android build, which also configures with --disable-tests. The scanignore
+  paths cannot be deleted instead: third_party/rust, third_party/python and
+  third_party/application-services are vendored with cargo checksums, so removing a file inside them
+  breaks the build; toolkit/components/pdfjs/content/web/wasm holds the JBIG2, OpenJPEG and qcms
+  decoders pdf.js ships in the app; services/settings/dumps holds the Remote Settings dumps. Between
+  them they account for all 3585 file findings the scanner reported.
 
   UpdateCheckMode is None because Tags makes checkupdates scan every AndroidManifest.xml in the
   tree; mozilla-central has hundreds of them in tests and it cannot tell which one is the app.

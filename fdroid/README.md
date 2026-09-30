@@ -136,12 +136,31 @@ libs.play.services.ads.id     mobile/android/fenix/app/build.gradle
 libs.play.review(.ktx)        mobile/android/focus-android/app/build.gradle
 ```
 
-The thousands of binaries cannot be deleted one by one: most of them are the vendored Rust crates
-the build needs. This is why Fennec F-Droid is not packaged from mozilla-central at all. Its recipe
-points at a small build repository, `gitlab.com/relan/fennecbuild`, which pulls Firefox in as a
-srclib and prunes it in a prebuild script, builds its own toolchain from srclibs instead of calling
-`mach bootstrap`, and swaps Google Play services for microG stubs rather than deleting the code that
-uses them. Dejavu needs the same shape before `fdroid build` can pass.
+Almost all of it turned out to be prunable. 2,803 of the 2,804 static libraries are Windows import
+libraries in `third_party/rust/winapi-*-pc-windows-gnu`, which an Android build never links. The
+rest is test suites, plus a handful of data files the app really does ship.
+
+The recipe now clears them in two ways, and `prebuild` is the reason it works: fdroidserver runs
+init, srclibs and `prebuild` inside `prepare_source`, and only scans afterwards in `build_local`, so
+anything deleted in `prebuild` is gone before the scanner looks.
+
+- **41 `rm -rf` lines in `prebuild`** take out the test suites and the Windows and macOS halves of
+  the tree. Safe, because `fdroid/mozconfig` configures with `--disable-tests`, so the build system
+  never walks into them.
+- **7 `scanignore` paths** cover what cannot be deleted: `third_party/rust`, `third_party/python`
+  and `third_party/application-services` are vendored with cargo checksums, so removing one file
+  inside them breaks the build; `toolkit/components/pdfjs/content/web/wasm` holds the JBIG2,
+  OpenJPEG and qcms decoders pdf.js ships; `services/settings/dumps` holds the Remote Settings
+  dumps.
+
+Together they account for all 3,585 file findings. What that leaves is the part no amount of
+pruning fixes: the ten non-free libraries, four maven repositories the scanner does not recognise,
+and one `DexClassLoader` in GeckoView.
+
+This is also why a separate build repository is not required. Fennec F-Droid uses one because it is
+a thin patch set over a Firefox release tarball, which suits a patch series. Dejavu is a feature
+fork - the rename commit alone was 278 files and 33,502 lines - so fork-and-merge stays the right
+model, and the scanner is handled in the recipe instead.
 
 ## Two things the pipeline taught us
 
