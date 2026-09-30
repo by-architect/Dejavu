@@ -1,0 +1,45 @@
+name: Feature request
+description: Suggest an idea or an improvement for Dejavu.
+title: "[FEATURE REQUEST] "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for sharing your idea. Please [search the existing issues](https://github.com/by-architect/Dejavu/issues?q=is%3Aissue) first; if someone asked for it already, add a thumbs up reaction to their issue instead. Reactions help us see what people want most.
+
+        Keep `[FEATURE REQUEST]` at the start of the title and add a short summary after it, for example `[FEATURE REQUEST] Reorder essentials by dragging`.
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem would it solve?
+      description: Tell us what you are trying to do, and what makes it hard today.
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: Your idea
+      description: How would you like it to work?
+    validations:
+      required: true
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Which app is it for?
+      options:
+        - Android
+        - iOS (in development)
+        - Both
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Other ways you considered
+      description: Workarounds you use now, or how other browsers like Zen do it.
+  - type: textarea
+    id: context
+    attributes:
+      label: Anything else?
+      description: Sketches, screenshots or links are welcome.

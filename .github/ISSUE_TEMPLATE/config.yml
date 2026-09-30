@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Report a security problem
+    url: https://github.com/by-architect/Dejavu/security/advisories/new
+    about: Please report security problems privately, not in a public issue.
+  - name: A website is broken in Firefox too
+    url: https://webcompat.com/
+    about: If a website is also broken in Firefox for Android, the problem is in Firefox's engine. Report it to Mozilla.

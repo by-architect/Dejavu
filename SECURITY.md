@@ -1,22 +1,27 @@
-# Firefox Security FAQ
+# Security Policy
 
-General information about security at Mozilla is available at [https://www.mozilla.org/en-US/security/](https://www.mozilla.org/en-US/security/).
+## Report a vulnerability
 
-## I want to report a security bug\!
+Please do not report security problems in public issues. Report them privately through GitHub:
 
-Please report Firefox bugs in our Bugzilla instance by using [our bug bounty form](https://bugzilla.mozilla.org/form.client.bounty). Be aware that your e-mail address will be made public. See our [Bugzilla etiquette](https://bugzilla.mozilla.org/page.cgi?id=etiquette.html) for more.
+1. Open the [Security tab](https://github.com/by-architect/Dejavu/security) of this repository.
+2. Click **Report a vulnerability**.
+3. Describe the problem, the Dejavu version and the steps to reproduce it.
 
-## Do you have a bounty program?
+We will reply as soon as we can, keep you updated while we work on a fix, and, if you like, credit you when the fix
+is released.
 
-We have two:
+## What to report here
 
-* Firefox browsers fall under the [Firefox bug bounty program](https://www.mozilla.org/en-US/security/client-bug-bounty/) which is handled on Bugzilla.
-* The general [Mozilla Security Bug Bounty Program](https://www.mozilla.org/en-US/security/bug-bounty/) also covers other products and services and is on HackerOne.
+Report problems in Dejavu's own features here: workspaces, containers, split view, sync with Zen and the rest of the
+`org.mozilla.fenix.dejavu` code, and anything about how Dejavu is built and published.
 
-## I have a question\! Who can help?
+Problems in Firefox's engine or in other code Dejavu shares with Firefox usually affect Firefox too. Please report
+those to Mozilla with their [bug bounty form](https://bugzilla.mozilla.org/form.client.bounty), which also makes them
+eligible for Mozilla's [client bug bounty program](https://www.mozilla.org/en-US/security/client-bug-bounty/). If you
+are not sure where a problem belongs, report it here and we will help.
 
-Questions regarding security bugs or our bounty programs can be directed to [security@mozilla.com](mailto:security@mozilla.com). An encryption key for sending [GPG encrypted mails](https://www.mozilla.org/en-US/security/#pgpkey) is also available.
+## Supported versions
 
-## Where can I find security advisories?
-
-We publish [Firefox security advisories](https://www.mozilla.org/en-US/security/known-vulnerabilities/firefox/) for all released versions of Firefox Desktop. For other products including Firefox for iOS and Android please refer to the [overview](https://www.mozilla.org/en-US/security/advisories/).
+Security fixes are made for the latest version of Dejavu on Google Play. Fixes that Mozilla makes in Firefox's engine
+reach Dejavu when it is updated to a newer Firefox.

@@ -1,0 +1,27 @@
+name: Sponsorship
+description: Sponsor Dejavu or support its development.
+title: "[SPONSOR] "
+labels: ["sponsorship"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for wanting to support Dejavu. Tell us a little about yourself or your company and how you would like to help, and we will get in touch.
+
+        This issue is public, so please do not write private details like phone numbers here. We will reply with a way to continue privately.
+  - type: input
+    id: name
+    attributes:
+      label: Your name or company
+    validations:
+      required: true
+  - type: textarea
+    id: support
+    attributes:
+      label: How would you like to support Dejavu?
+    validations:
+      required: true
+  - type: input
+    id: website
+    attributes:
+      label: Website

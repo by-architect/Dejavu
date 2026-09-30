@@ -1,0 +1,83 @@
+name: Bug report
+description: Something in Dejavu is broken or does not work as expected.
+title: "[BUG] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report a bug. Please [search the existing issues](https://github.com/by-architect/Dejavu/issues?q=is%3Aissue) first; if the bug is already reported, add a thumbs up reaction to it instead.
+
+        Keep `[BUG]` at the start of the title and add a short summary after it, for example `[BUG] Pinned tabs disappear after a restart`. Security problems must be reported privately, see the [security policy](https://github.com/by-architect/Dejavu/security/policy).
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: Describe the bug.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Open ...
+        2. Tap ...
+        3. See ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect to happen?
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Which part of Dejavu is it about?
+      multiple: true
+      options:
+        - Workspaces and the home screen
+        - Pinned tabs, essentials and folders
+        - Containers
+        - Split view
+        - Sync with Zen
+        - Actions bar and More menu
+        - Settings
+        - Web pages, downloads or add-ons
+        - Something else
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Dejavu version
+      description: Open Settings, then About Dejavu.
+      placeholder: "1.0.0"
+    validations:
+      required: true
+  - type: input
+    id: device
+    attributes:
+      label: Device and Android version
+      placeholder: "Pixel 8, Android 15"
+    validations:
+      required: true
+  - type: input
+    id: zen-version
+    attributes:
+      label: Zen Browser version
+      description: Only if the bug is about sync with Zen.
+  - type: textarea
+    id: media
+    attributes:
+      label: Screenshots, screen recordings or logs
+      description: Drag files here. They help a lot, but please remove anything private first.
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before you submit
+      options:
+        - label: I searched the existing issues, and this bug is not reported yet.
+          required: true
