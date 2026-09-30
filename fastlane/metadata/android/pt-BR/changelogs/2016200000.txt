@@ -1,0 +1,1 @@
+Primeira versão do Dejavu, um navegador tranquilo baseado no Firefox. Espaços de trabalho, contêineres, abas fixadas, essenciais, pastas e visualização dividida. Sincroniza com o Zen Browser pela sua conta Mozilla. Privado por padrão: sem telemetria.

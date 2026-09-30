@@ -1,0 +1,1 @@
+První vydání Dejavu, klidného prohlížeče založeného na Firefoxu. Pracovní prostory, kontejnery, připnuté panely, základní stránky, složky a rozdělené zobrazení. Synchronizuje se se Zen Browserem přes váš účet Mozilla. Ve výchozím stavu soukromý: žádná telemetrie.

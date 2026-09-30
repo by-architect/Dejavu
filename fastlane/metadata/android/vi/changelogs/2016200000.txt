@@ -1,0 +1,1 @@
+Phiên bản đầu tiên của Dejavu, trình duyệt yên tĩnh dựa trên Firefox. Không gian làm việc, ngăn chứa, thẻ đã ghim, mục thiết yếu, thư mục và chế độ chia đôi. Đồng bộ với Zen Browser qua tài khoản Mozilla của bạn. Riêng tư theo mặc định: không đo từ xa.

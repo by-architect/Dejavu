@@ -1,0 +1,28 @@
+# Dejavu's F-Droid build configuration.
+#
+# F-Droid only ships binaries it compiled itself from the source it can read, so GeckoView has to be
+# built from this tree. The mozconfig used for day to day work sets --enable-artifact-builds, which
+# downloads a prebuilt Gecko from Mozilla's servers instead; that is why this is a separate file.
+#
+# Use it with:
+#   MOZCONFIG=$PWD/fdroid/mozconfig ./mach build
+#   MOZCONFIG=$PWD/fdroid/mozconfig ./mach gradle fenix:assembleRelease -PversionName=1.0.0 -PdisableDebugSigning
+#
+# One CPU architecture is built per run. Set DEJAVU_FDROID_TARGET to pick it:
+#   aarch64-linux-android  (arm64-v8a, the default)
+#   arm-linux-androideabi  (armeabi-v7a)
+#   x86_64-linux-android   (x86_64)
+
+ac_add_options --enable-project=mobile/android
+ac_add_options --target=${DEJAVU_FDROID_TARGET:-aarch64-linux-android}
+
+# A shipping build, not a developer one.
+ac_add_options --enable-release
+ac_add_options --disable-tests
+ac_add_options --disable-debug
+
+# Dejavu does not send crash reports anywhere, so the crash reporter and the Breakpad tools it pulls
+# in are left out of the build entirely. This also takes several megabytes off the APK.
+ac_add_options --disable-crashreporter
+
+mk_add_options MOZ_OBJDIR=./objdir-fdroid

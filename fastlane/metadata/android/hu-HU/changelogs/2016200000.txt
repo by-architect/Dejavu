@@ -1,0 +1,1 @@
+A Dejavu első kiadása, egy nyugodt, Firefox-alapú böngésző. Munkaterületek, konténerek, rögzített lapok, alapvetők, mappák és osztott nézet. A Mozilla-fiókodon keresztül szinkronizál a Zen Browserrel. Alapértelmezetten privát: nincs telemetria.

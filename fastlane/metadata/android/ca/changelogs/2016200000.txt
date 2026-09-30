@@ -1,0 +1,1 @@
+Primera versió de Dejavu, un navegador tranquil basat en Firefox. Espais de treball, contenidors, pestanyes fixades, essencials, carpetes i vista dividida. Se sincronitza amb Zen Browser a través del vostre compte de Mozilla. Privat per defecte: sense telemetria.

@@ -1,0 +1,1 @@
+Første udgivelse af Dejavu, en rolig browser baseret på Firefox. Arbejdsområder, containere, fastgjorte faneblade, essentielle, mapper og delt visning. Synkroniserer med Zen Browser via din Mozilla-konto. Privat som standard: ingen telemetri.

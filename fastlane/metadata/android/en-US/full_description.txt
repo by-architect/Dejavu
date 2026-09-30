@@ -1,0 +1,25 @@
+Dejavu is a web browser for Android built on Mozilla's Gecko engine, the same
+engine Firefox uses. It keeps Firefox's rendering, add-ons and account sync, and
+replaces the way tabs are organised with something quieter.
+
+Instead of one long list of tabs, Dejavu gives you:
+
+* Workspaces - separate sets of tabs for separate parts of your life, each with
+  its own colour theme and icon.
+* Containers - keep sites signed in to different accounts apart, per workspace.
+* Pinned tabs and essentials - the pages you always want open, always in reach.
+* Folders - group tabs inside a workspace and collapse them out of the way.
+* Split view - two pages side by side.
+* A single bottom bar with every action, and an address field that stays out of
+  the way at the top.
+
+Sync: Dejavu signs in with your Mozilla account and syncs workspaces, pinned
+tabs, essentials, folders and containers with Zen Browser on the desktop, next
+to the usual bookmarks, history and passwords.
+
+Private by default: telemetry, studies, the daily usage ping and search
+suggestions are all off from the first launch. Nothing is sent anywhere to make
+the browser work.
+
+Dejavu is free software under the Mozilla Public License 2.0. It is not made by
+or endorsed by Mozilla, and it does not use Mozilla's branding.

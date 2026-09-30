@@ -1,0 +1,1 @@
+Pierwsze wydanie Dejavu, spokojnej przeglądarki opartej na Firefoksie. Przestrzenie robocze, kontenery, przypięte karty, niezbędne, foldery i widok podzielony. Synchronizuje się z Zen Browser przez Twoje konto Mozilla. Domyślnie prywatna: bez telemetrii.

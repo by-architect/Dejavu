@@ -434,3 +434,11 @@ CLAUDE.local.md
 # lint-ignore-next-line: git-only
 /*.json.gz
 commit-changes.md
+
+# Dejavu: the tokens the Fenix build reads when they are present. Shipping an API key is grounds for
+# rejection at both F-Droid and Google Play, so they must never be committed.
+.adjust_token
+.sentry_token
+.mls_token
+.gps_integrity_token
+.nimbus

@@ -1,0 +1,1 @@
+Eerste versie van Dejavu, een rustige browser gebaseerd op Firefox. Werkruimtes, containers, vastgezette tabbladen, essentials, mappen en gesplitste weergave. Synchroniseert met Zen Browser via je Mozilla-account. Standaard privé: geen telemetrie.

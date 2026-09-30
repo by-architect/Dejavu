@@ -1,0 +1,1 @@
+Dejavun ensimmäinen julkaisu, rauhallinen Firefoxiin perustuva selain. Työtilat, säiliöt, kiinnitetyt välilehdet, tärkeimmät, kansiot ja jaettu näkymä. Synkronoituu Zen Browserin kanssa Mozilla-tilisi kautta. Oletuksena yksityinen: ei telemetriaa.

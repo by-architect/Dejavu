@@ -1,0 +1,1 @@
+Firefox tabanlı sakin bir tarayıcı olan Dejavu'nun ilk sürümü. Çalışma alanları, kapsayıcılar, sabitlenmiş sekmeler, temel siteler, klasörler ve bölünmüş görünüm. Mozilla hesabınız üzerinden Zen Browser ile eşitlenir. Varsayılan olarak gizli: telemetri yok.

@@ -1,0 +1,1 @@
+Prva izdaja brskalnika Dejavu, mirnega brskalnika na osnovi Firefoxa. Delovni prostori, vsebniki, pripeti zavihki, bistveno, mape in razdeljen pogled. Sinhronizira se z Zen Browserjem prek vašega računa Mozilla. Privzeto zaseben: brez telemetrije.

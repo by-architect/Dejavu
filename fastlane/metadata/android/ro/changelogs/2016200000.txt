@@ -1,0 +1,1 @@
+Prima versiune Dejavu, un browser liniștit bazat pe Firefox. Spații de lucru, containere, file fixate, esențiale, dosare și vizualizare împărțită. Se sincronizează cu Zen Browser prin contul tău Mozilla. Privat implicit: fără telemetrie.

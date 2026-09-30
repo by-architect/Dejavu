@@ -1,0 +1,1 @@
+Pirmā Dejavu versija — mierīga pārlūkprogramma, kas balstīta uz Firefox. Darbvietas, konteineri, piespraustas cilnes, būtiskākās lapas, mapes un dalīts skats. Sinhronizējas ar Zen Browser, izmantojot jūsu Mozilla kontu. Pēc noklusējuma privāta: bez telemetrijas.

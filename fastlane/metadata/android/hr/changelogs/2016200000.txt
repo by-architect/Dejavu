@@ -1,0 +1,1 @@
+Prvo izdanje Dejavu, mirnog preglednika temeljenog na Firefoxu. Radni prostori, spremnici, prikvačene kartice, osnovno, mape i podijeljeni prikaz. Sinkronizira se sa Zen Browserom putem tvog Mozilla računa. Privatno prema zadanim postavkama: bez telemetrije.

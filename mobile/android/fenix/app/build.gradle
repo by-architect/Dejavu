@@ -264,6 +264,12 @@ android {
         }
     }
 
+    // Dejavu: Google's dependency metadata is a signed binary blob with no source beside it, which F-Droid's scanner
+    // refuses. APKs are built without it; bundles keep it, because Google Play reads it.
+    dependenciesInfo {
+        includeInApk = false
+    }
+
     namespace = 'org.mozilla.fenix'
 }
 
