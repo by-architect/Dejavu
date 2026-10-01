@@ -6,8 +6,6 @@ package org.mozilla.fenix.components.metrics
 
 import android.util.Base64
 import androidx.annotation.VisibleForTesting
-import com.google.android.gms.common.GooglePlayServicesNotAvailableException
-import com.google.android.gms.common.GooglePlayServicesRepairableException
 import java.io.IOException
 import java.security.NoSuchAlgorithmException
 import java.security.spec.InvalidKeySpecException
@@ -172,12 +170,6 @@ object MetricsUtils {
     internal fun getAdvertisingID(retrieveAdvertisingIdInfo: () -> String?): String? {
         return try {
             retrieveAdvertisingIdInfo()
-        } catch (e: GooglePlayServicesNotAvailableException) {
-            Logger.debug("getAdvertisingID() - Google Play not installed on the device")
-            null
-        } catch (e: GooglePlayServicesRepairableException) {
-            Logger.debug("getAdvertisingID() - recoverable error connecting to Google Play Services")
-            null
         } catch (e: IllegalStateException) {
             // This is unlikely to happen, as this should be running off the main thread.
             Logger.debug("getAdvertisingID() - AdvertisingIdClient must be called off the main thread")

@@ -631,7 +631,6 @@ dependencies {
     implementation libs.mozilla.glean
     implementation libs.play.review
     implementation libs.play.review.ktx
-    implementation libs.play.services.ads.id
     implementation libs.protobuf.javalite
     implementation libs.sentry
     implementation libs.androidx.documentfile

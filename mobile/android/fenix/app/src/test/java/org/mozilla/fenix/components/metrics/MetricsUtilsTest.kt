@@ -4,11 +4,6 @@
 
 package org.mozilla.fenix.components.metrics
 
-import com.google.android.gms.ads.identifier.AdvertisingIdClient
-import com.google.android.gms.common.GooglePlayServicesNotAvailableException
-import com.google.android.gms.common.GooglePlayServicesRepairableException
-import io.mockk.every
-import io.mockk.mockk
 import java.io.IOException
 import kotlinx.coroutines.test.runTest
 import org.junit.Assert.assertArrayEquals
@@ -22,8 +17,6 @@ class MetricsUtilsTest {
     fun `getAdvertisingID() returns null if the API throws`() {
         val exceptions =
             listOf(
-                GooglePlayServicesNotAvailableException(1),
-                GooglePlayServicesRepairableException(0, "", mockk()),
                 IllegalStateException(),
                 IOException(),
             )
@@ -35,19 +28,14 @@ class MetricsUtilsTest {
 
     @Test
     fun `getAdvertisingID() returns null if the API returns null info`() {
-        val mockInfo: AdvertisingIdClient.Info = mockk()
-        every { mockInfo.id } returns null
-
-        assertNull(MetricsUtils.getAdvertisingID { mockInfo.id })
+        assertNull(MetricsUtils.getAdvertisingID { null })
     }
 
     @Test
     fun `getAdvertisingID() returns a valid string if the API returns a valid ID`() {
         val testId = "test-value-id"
-        val mockInfo: AdvertisingIdClient.Info = mockk()
-        every { mockInfo.id } returns testId
 
-        assertEquals(testId, MetricsUtils.getAdvertisingID({ mockInfo.id }))
+        assertEquals(testId, MetricsUtils.getAdvertisingID({ testId }))
     }
 
     @Test

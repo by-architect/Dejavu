@@ -9,7 +9,6 @@ import android.content.SharedPreferences
 import android.util.Base64
 import androidx.annotation.VisibleForTesting
 import androidx.core.content.edit
-import com.google.android.gms.ads.identifier.AdvertisingIdClient
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
@@ -61,7 +60,9 @@ class ActivationPing(
         CoroutineScope(backgroundDispatcher).launch {
             val hashedId =
                 getHashedIdentifier(
-                    retrieveAdvertisingIdInfo = { AdvertisingIdClient.getAdvertisingIdInfo(context).id },
+                    // Dejavu ships no advertising id: release builds drop the AD_ID permission, so there is
+                    // nothing to read and the ping goes out without an identifier.
+                    retrieveAdvertisingIdInfo = { null },
                     encodeToString = Base64::encodeToString,
                 )
             if (hashedId != null) {
