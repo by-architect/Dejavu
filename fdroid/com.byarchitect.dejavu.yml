@@ -27,6 +27,7 @@ Builds:
       objdir-fdroid/gradle/build/mobile/android/fenix/app/outputs/apk/release/app-release-unsigned.apk
     prebuild:
       - echo 'ac_add_options --enable-android-subproject=fenix' >> fdroid/mozconfig
+      - sed -i '/libs.mlkit/d' mobile/android/android-components/components/lib/llm-gemininano/build.gradle
       - rm -rf accessible/tests
       - rm -rf browser/branding/*/dsstore
       - rm -rf browser/components/backup/tests
@@ -109,6 +110,9 @@ MaintainerNotes: |-
   Focus, the GeckoView example and the component samples are removed and the Gradle build is
   limited to the Dejavu subproject, so the dependencies of the other apps sharing this tree are not
   counted against it.
+
+  lib-llm-gemininano's ML Kit dependency is dropped rather than ignored. Nothing in Dejavu reaches
+  that component, so Gradle never compiles it and the library never reaches the APK.
 
   Four of the scanignore entries are not binaries. build.gradle, publish.gradle and
   substitute-local-geckoview.gradle declare the maven repository inside the object directory that an
