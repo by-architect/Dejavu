@@ -22,12 +22,12 @@ Repo: https://github.com/by-architect/Dejavu.git
 Builds:
   - versionName: 1.0.0
     versionCode: 2016200000
-    commit: abe13cd4e21479ff000640a02c33492b294a5755
+    commit: f44a05dc198faa991eae34c451350a0b53c14c47
     output: 
       objdir-fdroid/gradle/build/mobile/android/fenix/app/outputs/apk/release/app-release-unsigned.apk
     prebuild:
-      - echo 'ac_add_options --enable-android-subproject=fenix' >> fdroid/mozconfig
       - sed -i '/libs.mlkit/d' mobile/android/android-components/components/lib/llm-gemininano/build.gradle
+      - sed -i '/libs.firebase.messaging/d; /libs.play.services.base/d' mobile/android/android-components/components/lib/push-firebase/build.gradle
       - rm -rf accessible/tests
       - rm -rf browser/branding/*/dsstore
       - rm -rf browser/components/backup/tests
@@ -82,6 +82,7 @@ Builds:
       - third_party/python
       - third_party/rust
       - toolkit/components/pdfjs/content/web/wasm
+      - rm -f mobile/android/fenix/app/proprietary.gradle
     build:
       - export MOZCONFIG=$PWD/fdroid/mozconfig
       - ./mach --no-interactive bootstrap --application-choice mobile_android
@@ -107,11 +108,17 @@ MaintainerNotes: |-
   decoders pdf.js ships in the app; services/settings/dumps holds the Remote Settings dumps. Between
   them they account for all 3585 file findings the scanner reported.
 
-  Focus, the GeckoView example and the component samples are removed and the Gradle build is
-  limited to the Dejavu subproject, so the dependencies of the other apps sharing this tree are not
-  counted against it.
+  Focus, the GeckoView example and the component samples are removed and fdroid/mozconfig limits the
+  Gradle build to the Dejavu subproject, so the dependencies of the other apps sharing this tree are
+  not counted against it.
 
-  lib-llm-gemininano's ML Kit dependency is dropped rather than ignored. Nothing in Dejavu reaches
+  The app's Google Play libraries - install referrer and in-app review - and its dependency on
+  lib-push-firebase live in mobile/android/fenix/app/proprietary.gradle, which this recipe deletes.
+  Without that file the app compiles src/foss/java instead of src/proprietary/java, whose stand-ins
+  keep the same API and do nothing. Firebase push is inert in Dejavu either way: web push needs a
+  Firebase project id and the app ships none.
+
+  lib-push-firebase's and lib-llm-gemininano's own dependencies are dropped rather than ignored. Nothing in Dejavu reaches
   that component, so Gradle never compiles it and the library never reaches the APK.
 
   Four of the scanignore entries are not binaries. build.gradle, publish.gradle and
