@@ -1,9 +1,6 @@
 AntiFeatures:
-  NonFreeDep:
-    en-US: Links the Adjust SDK, Google Play install referrer, review, integrity and
-      advertising ID libraries, and Firebase Cloud Messaging.
   Tracking:
-    en-US: Connects to Mozilla services for account sync, add-ons and safe browsing.
+    en-US: Connects to Mozilla services that can track users.
 Categories:
   - Browser
   - Internet
@@ -22,114 +19,180 @@ Repo: https://github.com/by-architect/Dejavu.git
 Builds:
   - versionName: 1.0.0
     versionCode: 2016200000
-    commit: a4ee0008f22dd96ec6021aebbdb53061471bd58a
-    output: 
-      objdir-fdroid/gradle/build/mobile/android/fenix/app/outputs/apk/release/app-release-unsigned.apk
+    commit: 652e6f0995fc5a0704871d3db7ea3c7a7bffb48c
+    timeout: 36000
+    sudo:
+      - export BW=/etc/apt/sources.list.d/bookworm.list
+      - echo "deb https://deb.debian.org/debian bookworm main" > $BW
+      - apt-get update
+      - apt-get install -y -t bookworm openjdk-17-jdk-headless
+      - update-java-alternatives -s java-1.17.0-openjdk-amd64
+      - apt-get install -y cmake make m4 pkg-config nasm bzip2
+      - apt-get install -y python-is-python3 python3-venv tcl gyp
+      - apt-get install -y ninja-build libffi-dev libsqlite3-dev
+      - apt-get install -y binutils-dev libssl-dev zlib1g-dev
+      - apt-get install -y clang lld nodejs terser
+    output: objdir-fdroid/gradle/build/mobile/android/fenix/app/outputs/apk/release/*.apk
+    srclibs:
+      - rustup@1.28.2
     prebuild:
-      - sed -i '/libs.mlkit/d' mobile/android/android-components/components/lib/llm-gemininano/build.gradle
-      - sed -i '/libs.firebase.messaging/d; /libs.play.services.base/d' mobile/android/android-components/components/lib/push-firebase/build.gradle
+      - export LIB=mobile/android/android-components/components/lib
+      - export GV=mobile/android/geckoview
+      - export PF=$LIB/push-firebase/build.gradle
+      - export PREFS=mobile/android/app/geckoview-prefs.js
+      - export C1=mobile/android/gradle/plugins/conventions/src
+      - export C2=$C1/main/java/org/mozilla/conventions
+      - export MOZPACK=python/mozbuild/mozpack/files.py
+      - sed -i '/libs.mlkit/d' $LIB/llm-gemininano/build.gradle
+      - sed -i '/libs.firebase.messaging/d' $PF
+      - sed -i '/libs.play.services.base/d' $PF
       - rm -f mobile/android/fenix/app/proprietary.gradle
-      - rm -rf accessible/tests
+      - rm -f $GV/proprietary.gradle
+      - rm -f $LIB/integrity-googleplay/proprietary.gradle
+      - cat fdroid/geckoview-prefs.js >> $PREFS
+      - sed -i 's|= terser_dir /.*|= Path("/usr/bin/terser")|' $MOZPACK
+      - sed -i 's/AsErrors, true/AsErrors, false/' $C2/ProjectPlugin.kt
+      - sed -i 's/_seconds=600/_seconds=1800/' mobile/android/gradle.py
+      - export FAG=mobile/android/fenix/app/build.gradle
+      - sed -i 's/include "armeabi-v7a", .*/include "arm64-v8a"/' $FAG
       - rm -rf browser/branding/*/dsstore
-      - rm -rf browser/components/backup/tests
-      - rm -rf browser/components/migration/tests
-      - rm -rf config/tests
-      - rm -rf dom/base/test
-      - rm -rf dom/promise/tests
-      - rm -rf dom/security/test
-      - rm -rf dom/tests
-      - rm -rf dom/webgpu/tests
-      - rm -rf dom/xhr/tests
       - rm -rf js/src/jit-test
-      - rm -rf layout/reftests
       - rm -rf mobile/android/fenix/app/src/androidTest
-      - rm -rf mobile/android/focus-android
-      - rm -rf mobile/android/geckoview/src/androidTest
-      - rm -rf modules/libjar/test
-      - rm -rf modules/libmar/tests
-      - rm -rf other-licenses/7zstub
-      - rm -rf other-licenses/nsis
-      - rm -rf python/mozperftest
-      - rm -rf security/manager/ssl/tests
+      - export WE=$GV/src/androidTest/assets/web_extensions
+      - rm -f $WE/*.xpi $WE/*.zip
       - rm -rf security/nss/automation
       - rm -rf security/nss/cmd/bltest
       - rm -rf security/nss/cmd/samples
       - rm -rf security/nss/nss/automation
       - rm -rf security/nss/tests
-      - rm -rf testing/mozbase
-      - rm -rf testing/talos
-      - rm -rf testing/web-platform
       - rm -rf third_party/chromium/build/android
       - rm -rf third_party/libwebrtc/examples
-      - rm -rf third_party/webkit
-      - rm -rf third_party/zucchini/tests
-      - rm -rf toolkit/components/contentanalysis/tests
-      - rm -rf toolkit/components/url-classifier/tests
       - rm -rf toolkit/crashreporter/breakpad-client/mac
       - rm -rf toolkit/crashreporter/google-breakpad/src/tools/windows
-      - rm -rf toolkit/modules/tests
-      - rm -rf toolkit/mozapps/update/tests
-      - rm -rf tools/update-verify
-      - rm -rf xpcom/tests
     scanignore:
+      - accessible/tests
+      - browser/components/backup/tests
+      - browser/components/migration/tests
       - build.gradle
+      - config/tests
       - devtools/client/shared
+      - dom/base/test
+      - dom/promise/tests
+      - dom/security/test
+      - dom/tests
+      - dom/webgpu/tests
+      - dom/xhr/tests
+      - layout/reftests
       - mobile/android/android-components/publish.gradle
+      - mobile/android/focus-android
+      - mobile/android/geckoview/build.gradle
       - mobile/android/geckoview/src/main/java/org/mozilla/gecko/mozglue/GeckoLoader.java
+      - modules/libjar/test
+      - modules/libmar/tests
+      - other-licenses/7zstub
+      - other-licenses/nsis
+      - python/mozperftest
+      - security/manager/ssl/tests
       - services/settings/dumps
       - substitute-local-geckoview.gradle
+      - testing/mozbase
+      - testing/talos
+      - testing/web-platform
       - third_party/application-services
       - third_party/libwebrtc/data
       - third_party/python
       - third_party/rust
+      - third_party/webkit
+      - third_party/zucchini/tests
+      - toolkit/components/contentanalysis/tests
       - toolkit/components/pdfjs/content/web/wasm
+      - toolkit/components/url-classifier/tests
+      - toolkit/modules/tests
+      - toolkit/mozapps/update/tests
+      - tools/update-verify
+      - xpcom/tests
     build:
       - export MOZCONFIG=$PWD/fdroid/mozconfig
-      - ./mach --no-interactive bootstrap --application-choice mobile_android
+      - export ANDROID_BUNDLETOOL_PATH=/dev/null
+      - export EMULATOR=/bin/true
+      - export DL=https://dl.google.com/android/repository
+      - export CZ=commandlinetools-linux-16111833_latest.zip
+      - export CH=e025545c62a8e64c7559119566a569fb1dec5f60
+      - export PZ=platform-37.2_r01.zip
+      - export PH=4bec12a02162ff6852df50b5fcf8ee762b050966
+      - sdkmanager 'build-tools;37.0.0'
+      - sdkmanager 'platform-tools'
+      - curl --silent -O $DL/$CZ
+      - echo "$CH  $CZ" | sha1sum -c
+      - unzip -q $CZ
+      - mkdir -p "$ANDROID_HOME/cmdline-tools"
+      - mv cmdline-tools "$ANDROID_HOME/cmdline-tools/23.0"
+      - curl --silent -O $DL/$PZ
+      - echo "$PH  $PZ" | sha1sum -c
+      - unzip -q $PZ
+      - mkdir -p "$ANDROID_HOME/platforms" "$ANDROID_HOME/emulator"
+      - mv android-37.2 "$ANDROID_HOME/platforms/android-37.2"
+      - export RUSTUP_INIT=$$rustup$$/rustup-init.sh
+      - $RUSTUP_INIT -y --default-toolchain 1.95.0
+      - source $HOME/.cargo/env
+      - rustup target add aarch64-linux-android
+      - export CARGO_TARGET_X86_64_UNKNOWN_LINUX_GNU_LINKER=clang
+      - CC=clang cargo install --force --vers 0.29.4 cbindgen
       - ./mach build
-      - ./mach gradle fenix:assembleRelease -PversionName=1.0.0 -PversionCode=2016200000
-        -PdisableDebugSigning
+      - export GRADLE_ARGS="-PversionName=1.0.0 -PdisableDebugSigning"
+      - ./mach gradle fenix:assembleRelease $GRADLE_ARGS
+    ndk: r30
 
 MaintainerNotes: |-
-  Dejavu is a Fenix fork that carries the whole mozilla-central tree, so GeckoView is compiled from
-  source rather than taken from a Maven artifact. The build needs the NDK this tree pins in
-  python/mozboot/mozboot/android.py (r30) plus rust, clang, node and wasi-sdk, which
-  `mach bootstrap` fetches.
+  Dejavu is a Fenix fork carrying the whole mozilla-central tree, so GeckoView is compiled from
+  source rather than taken from Maven.
 
-  Version code scheme: 2016190000 + major * 10000 + minor * 100 + patch, computed in
-  mobile/android/fenix/app/build.gradle. 1.0.0 is therefore 2016200000. One CPU architecture is
-  built per run; fdroid/mozconfig takes it from DEJAVU_FDROID_TARGET and defaults to arm64-v8a.
+  Version codes: 2016190000 + major * 10000 + minor * 100 + patch, from
+  mobile/android/fenix/app/build.gradle, so 1.0.0 is 2016200000. One architecture per run;
+  fdroid/mozconfig reads it from DEJAVU_FDROID_TARGET, defaults to arm64-v8a, and limits the Gradle
+  build to the Dejavu subproject so Focus and the samples are not built.
 
-  The prebuild deletions are test suites and the Windows and macOS halves of the tree; none of them
-  are reachable from an Android build, which also configures with --disable-tests. The scanignore
-  paths cannot be deleted instead: third_party/rust, third_party/python and
-  third_party/application-services are vendored with cargo checksums, so removing a file inside them
-  breaks the build; toolkit/components/pdfjs/content/web/wasm holds the JBIG2, OpenJPEG and qcms
-  decoders pdf.js ships in the app; services/settings/dumps holds the Remote Settings dumps. Between
-  them they account for all 3585 file findings the scanner reported.
+  mach bootstrap is never run: it wants root and it downloads toolchains. fdroid/mozconfig sets
+  --disable-bootstrap, names every compiler from the NDK requested above, points --with-gradle at
+  F-Droid's gradle rather than the downloading wrapper, and drops the wasm sandbox so no wasi-sdk
+  is needed. With bootstrap off, configure dies on any missing SDK piece instead of fetching it, so
+  the build installs build-tools 37.0.0 and platform-tools, fetches platform android-37.2 from
+  Google's SDK repository against its published sha1 (sdkmanager cannot install minor-versioned
+  platforms, fdroid/sdkmanager work item 31), and creates an empty emulator directory, which is all
+  that check looks for. rustup comes from its srclib; the builder has no gcc or clang until the
+  sudo block installs them, so rustc links with clang. Warnings are not errors and the JNI wrapper
+  lock waits 30 minutes, both as Fennec F-Droid does, because this builder is slow.
 
-  Focus, the GeckoView example and the component samples are removed and fdroid/mozconfig limits the
-  Gradle build to the Dejavu subproject, so the dependencies of the other apps sharing this tree are
-  not counted against it.
+  ANDROID_BUNDLETOOL_PATH is /dev/null and EMULATOR is /bin/true: configure demands both but does
+  not use them. Bundletool is only read by `mach install` for AABs, and the emulator only runs
+  tests. Both fail loudly if ever used.
 
-  The app's Google Play libraries - install referrer and in-app review - and its dependency on
-  lib-push-firebase live in mobile/android/fenix/app/proprietary.gradle, which this recipe deletes.
-  Without that file the app compiles src/foss/java instead of src/proprietary/java, whose stand-ins
-  keep the same API and do nothing. Firebase push is inert in Dejavu either way: web push needs a
-  Firebase project id and the app ships none.
+  Closed-source libraries live in proprietary.gradle files this recipe deletes: Adjust, Google Play
+  install referrer and in-app review, and lib-push-firebase in the app; Play Integrity in
+  lib-integrity-googleplay; Play FIDO in GeckoView. Each module then compiles src/foss/java
+  instead, keeping the same API. Verified with `gradle :fenix:dependencies`, which unlike the
+  scanner sees transitive ones. WebAuthn uses Android's own credential manager, the only path that
+  ever worked without Google Play services. Push was never functional: it needs a Firebase project
+  id and the app ships none. fdroid/geckoview-prefs.js is appended to stop Gecko fetching Cisco's
+  OpenH264 and Widevine on demand, and terser is pointed at Debian's copy rather than npm.
 
-  lib-push-firebase's and lib-llm-gemininano's own dependencies are dropped rather than ignored. Nothing in Dejavu reaches
-  that component, so Gradle never compiles it and the library never reaches the APK.
+  Anything a moz.build names is scanignored rather than deleted: TEST_DIRS is ignored when tests
+  are disabled, but the test manifests and plain DIRS entries are not, and the build system fails
+  on a path it is told about but cannot find.
 
-  Four of the scanignore entries are not binaries. build.gradle, publish.gradle and
-  substitute-local-geckoview.gradle declare the maven repository inside the object directory that an
-  in-tree Gecko build publishes to and consumes; it is local to the build, not a remote. GeckoLoader
-  uses DexClassLoader to load GeckoView's own code out of the APK it is already part of.
-  mobile/android/geckoview/build.gradle is deliberately NOT ignored, because it also pulls in
-  play-services-fido, which still has to go.
+  The prebuild deletions are test suites and the Windows and macOS halves of the tree, unreachable
+  from an Android build, which also configures --disable-tests. The scanignore paths cannot be
+  deleted: third_party/rust, third_party/python and third_party/application-services are vendored
+  with cargo checksums; toolkit/components/pdfjs/content/web/wasm holds decoders pdf.js ships;
+  services/settings/dumps holds Remote Settings dumps; python/mozperftest, testing/mozbase,
+  testing/talos and testing/web-platform are on mach's Python path and removing them stops mach
+  starting. Four more are not binaries: build.gradle, publish.gradle,
+  substitute-local-geckoview.gradle and mobile/android/geckoview/build.gradle name the maven
+  repository an in-tree Gecko build publishes into its object directory, and GeckoLoader uses
+  DexClassLoader to load GeckoView's own code from the APK it is part of.
 
-  UpdateCheckMode is None because Tags makes checkupdates scan every AndroidManifest.xml in the
-  tree; mozilla-central has hundreds of them in tests and it cannot tell which one is the app.
+  UpdateCheckMode is None because Tags makes checkupdates read every AndroidManifest.xml in the
+  tree, and mozilla-central has hundreds in tests.
 
 AutoUpdateMode: None
 UpdateCheckMode: None
