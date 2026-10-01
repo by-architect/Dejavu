@@ -16,6 +16,8 @@ android {
 }
 
 dependencies {
+    // Firebase Cloud Messaging, which backs web push and send-tab.
+    implementation project(':components:lib-push-firebase')
     // Google Play install referrer, for the UTM parameters of a Play Store install.
     implementation catalog.findLibrary('installreferrer').get()
     // Google Play in-app review.
