@@ -586,7 +586,6 @@ dependencies {
     implementation ComponentsDependencies.mozilla_appservices_syncmanager
 
     implementation libs.accompanist.drawablepainter
-    implementation libs.adjust
     implementation libs.androidx.activity
     implementation libs.androidx.annotation
     implementation libs.androidx.appcompat

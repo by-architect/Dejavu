@@ -16,6 +16,8 @@ android {
 }
 
 dependencies {
+    // Adjust, a closed source marketing attribution SDK.
+    implementation catalog.findLibrary('adjust').get()
     // Firebase Cloud Messaging, which backs web push and send-tab.
     implementation project(':components:lib-push-firebase')
     // Google Play install referrer, for the UTM parameters of a Play Store install.
