@@ -68,8 +68,12 @@ Builds:
       - rm -rf tools/update-verify
       - rm -rf xpcom/tests
     scanignore:
+      - build.gradle
       - devtools/client/shared
+      - mobile/android/android-components/publish.gradle
+      - mobile/android/geckoview/src/main/java/org/mozilla/gecko/mozglue/GeckoLoader.java
       - services/settings/dumps
+      - substitute-local-geckoview.gradle
       - third_party/application-services
       - third_party/libwebrtc/data
       - third_party/python
@@ -99,6 +103,13 @@ MaintainerNotes: |-
   breaks the build; toolkit/components/pdfjs/content/web/wasm holds the JBIG2, OpenJPEG and qcms
   decoders pdf.js ships in the app; services/settings/dumps holds the Remote Settings dumps. Between
   them they account for all 3585 file findings the scanner reported.
+
+  Four of the scanignore entries are not binaries. build.gradle, publish.gradle and
+  substitute-local-geckoview.gradle declare the maven repository inside the object directory that an
+  in-tree Gecko build publishes to and consumes; it is local to the build, not a remote. GeckoLoader
+  uses DexClassLoader to load GeckoView's own code out of the APK it is already part of.
+  mobile/android/geckoview/build.gradle is deliberately NOT ignored, because it also pulls in
+  play-services-fido, which still has to go.
 
   UpdateCheckMode is None because Tags makes checkupdates scan every AndroidManifest.xml in the
   tree; mozilla-central has hundreds of them in tests and it cannot tell which one is the app.

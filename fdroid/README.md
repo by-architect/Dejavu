@@ -217,18 +217,21 @@ blocker 2 needs, so do them in the same sitting.
 
 ## Order of work
 
-`v1.0.0` is tagged and pushed, and the recipe is on the `com.byarchitect.dejavu` branch of the
-fdroiddata fork with every metadata check green. What is left:
+The merge request is open as a draft:
+<https://gitlab.com/fdroid/fdroiddata/-/merge_requests/50786>
 
-1. Build a small build repository for Dejavu, modelled on `gitlab.com/relan/fennecbuild`: it pulls
-   this repository in as a srclib, prunes the test trees and vendored binaries the scanner rejects,
-   and carries the toolchain as srclibs instead of calling `mach bootstrap`. Without this, nothing
-   else matters, because `fdroid build` stops at the scanner.
-2. Take the closed-source libraries out of the release build, or replace them the way Fennec F-Droid
-   does, with microG stubs. Remember the two outside the Fenix module: `libs.play.services.fido` in
-   GeckoView and `libs.mlkit.prompt` in `lib-llm-gemininano`.
+Every metadata job passes. The source scan went from 3625 errors to 15, and the 15 that are left are
+not binaries at all - they are the non-free libraries plus the in-tree maven repository, which is
+scanignored. What remains:
+
+1. Take out the ten non-free libraries, or replace them with microG stubs the way Fennec F-Droid
+   does. Four are in the Fenix module, two in `lib-push-firebase`, one in GeckoView
+   (`play-services-fido`), one in `lib-llm-gemininano` which the app never reaches, and two in
+   `focus-android`, a different app that shares the tree.
+2. Get an answer on the merge request to the two structural questions: whether `mach bootstrap`
+   downloading Mozilla's clang, rust, NDK, node and wasi-sdk is acceptable, and how to express a
+   build that runs for hours.
 3. Get one full build out of `fdroid/mozconfig` locally and note how long it takes, so the timeout
-   to ask the maintainers for is a measured number rather than a guess.
+   asked for is a measured number.
 4. Rebuild and check with `aapt2 dump badging` that the Adjust, c2dm and finsky permissions are gone.
-5. Point the recipe at the build repository, re-run the pipeline, and only then open the merge
-   request against `gitlab.com/fdroid/fdroiddata`.
+5. Take the MR out of draft.
