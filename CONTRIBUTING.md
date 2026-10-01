@@ -8,15 +8,17 @@ designs and send code.
 [Open an issue](https://github.com/by-architect/Dejavu/issues/new/choose) and choose a template. Each template starts
 the title with a prefix and adds a label, so issues are easy to sort:
 
-| Template                | Title starts with   | Label         |
-| ----------------------- | ------------------- | ------------- |
-| Bug report              | `[BUG]`             | `bug`         |
-| Feature request         | `[FEATURE REQUEST]` | `enhancement` |
-| Design, icons or themes | `[DESIGN]`          | `design`      |
-| Sponsorship             | `[SPONSOR]`         | `sponsorship` |
+| Template        | Title starts with   | Label         |
+| --------------- | ------------------- | ------------- |
+| Bug report      | `[BUG]`             | `bug`         |
+| Feature request | `[FEATURE REQUEST]` | `enhancement` |
 
 Keep the prefix and write a short, clear title after it, for example `[BUG] Pinned tabs disappear after a restart` or
 `[FEATURE REQUEST] Reorder essentials by dragging`.
+
+New issues are added to the [Dejavu Roadmap](https://github.com/users/by-architect/projects/1) board: bug reports in
+the Bugs column and feature requests in the Features column. For sponsorship, designs or anything else, email
+[byarchitect@disroot.org](mailto:byarchitect@disroot.org).
 
 Before you open an issue, search the existing ones. If yours is already there, add a thumbs up reaction to it instead
 of opening a new one; reactions help us see what matters most.
@@ -46,8 +48,9 @@ For a bigger change, open an issue first, so we can agree on the idea before you
 
 ## Design, icon packs and themes
 
-Design help is especially welcome, and you do not need to write code for it. Open a `[DESIGN]` issue with images,
-SVG files or a link to your mockups, or send a pull request if you know your way around the files below.
+Design help is especially welcome, and you do not need to write code for it. Email images, SVG files or a link to
+your mockups to [byarchitect@disroot.org](mailto:byarchitect@disroot.org), or send a pull request if you know your
+way around the files below.
 
 - **Icons and icon packs:** Dejavu draws its icons in code, on a 24 unit grid with round 1.75 unit strokes, in
   `mobile/android/fenix/tools/dejavu_icons/icons.py`. `generate_icons.py` in the same folder turns them into the

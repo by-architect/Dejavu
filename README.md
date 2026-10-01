@@ -112,18 +112,24 @@ Feedback goes through [GitHub issues](https://github.com/by-architect/Dejavu/iss
 [open an issue](https://github.com/by-architect/Dejavu/issues/new/choose), pick a template and it starts the title for
 you:
 
-| Title starts with   | Use it for                                                         |
-| ------------------- | ------------------------------------------------------------------ |
-| `[BUG]`             | Something is broken or does not work as expected                   |
-| `[FEATURE REQUEST]` | An idea or an improvement                                          |
-| `[DESIGN]`          | A design, icon pack, theme or other artwork you want to contribute |
-| `[SPONSOR]`         | Sponsoring Dejavu                                                  |
+| Title starts with   | Use it for                                       |
+| ------------------- | ------------------------------------------------ |
+| `[BUG]`             | Something is broken or does not work as expected |
+| `[FEATURE REQUEST]` | An idea or an improvement                        |
+
+New issues show up on the [Dejavu Roadmap](https://github.com/users/by-architect/projects/1) board, where you can
+follow what happens to them.
 
 Please search the existing issues first. If yours is already there, add a thumbs up reaction to it instead of opening
 a new one. Security problems should be reported privately, as [SECURITY.md](SECURITY.md) explains.
 
 Pull requests are welcome too. Start the title with the kind of change, `[FIX]`, `[FEATURE]`, `[DESIGN]`,
 `[TRANSLATION]` or `[DOCS]`, and link the issue it solves. [CONTRIBUTING.md](CONTRIBUTING.md) has the details.
+
+## Contact
+
+For sponsorship, designs, icon packs, themes, or anything that is not a bug report or a feature request, email
+[byarchitect@disroot.org](mailto:byarchitect@disroot.org).
 
 ## Contributing
 
@@ -136,7 +142,8 @@ Dejavu is open to contributions of every kind, and we would especially love help
 - **Code:** bug fixes and new features.
 - **Testing:** try Dejavu on your phone or tablet and tell us what breaks.
 
-[CONTRIBUTING.md](CONTRIBUTING.md) explains how each of these works and how to build Dejavu.
+Send designs, icon packs and themes to [byarchitect@disroot.org](mailto:byarchitect@disroot.org), or open a pull
+request. [CONTRIBUTING.md](CONTRIBUTING.md) explains how each of these works and how to build Dejavu.
 
 ## Sponsors
 
@@ -144,9 +151,8 @@ Dejavu is independent, free and open source, and it has no ads. If you enjoy it,
 
 <a href="https://buymeacoffee.com/ByArchitect"><img alt="Buy me a coffee" src="https://img.shields.io/badge/Buy%20me%20a%20coffee-ByArchitect-F2B84B?logo=buymeacoffee&logoColor=white"></a>
 
-We are also open to sponsors. If you or your company want to support Dejavu, open a
-[sponsorship issue](https://github.com/by-architect/Dejavu/issues/new?template=sponsorship.yml) and we will get in
-touch.
+We are also open to sponsors. If you or your company want to support Dejavu, email [byarchitect@disroot.org](mailto:byarchitect@disroot.org) and we will get
+in touch.
 
 ## Build from source
 
