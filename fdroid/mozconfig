@@ -53,6 +53,9 @@ ac_add_options --with-android-ndk="$DEJAVU_NDK"
 ac_add_options --with-android-sdk="$DEJAVU_SDK"
 ac_add_options --with-libclang-path="$DEJAVU_NDK/toolchains/llvm/prebuilt/linux-x86_64/lib"
 ac_add_options --with-java-bin-path="/usr/bin"
+# Without this, configure falls back to the gradlew wrapper, whose job is to download Gradle.
+# F-Droid deletes that wrapper and does not allow the download; it provides its own gradle.
+ac_add_options --with-gradle=$(command -v gradle)
 ac_add_options CC="$DEJAVU_NDK_BIN/clang"
 ac_add_options CXX="$DEJAVU_NDK_BIN/clang++"
 ac_add_options STRIP="$DEJAVU_NDK_BIN/llvm-strip"
