@@ -15,9 +15,9 @@
   <a href="https://buymeacoffee.com/ByArchitect"><img alt="Buy me a coffee" src="https://img.shields.io/badge/Buy%20me%20a%20coffee-F2B84B?logo=buymeacoffee&logoColor=white"></a>
 </p>
 
-Dejavu keeps your tabs organized in workspaces, with pinned tabs, essentials and folders, so work, study and personal
-browsing never get mixed up. It runs on the Gecko engine, supports add-ons and tracking protection, and it is private
-by default.
+Dejavu is a browser that adapts to you. Send any tab to your own apps with one tap, edit every button in the menu,
+choose where links from other apps open, and keep work, study and personal browsing apart in workspaces and
+containers. It runs on the Gecko engine, supports add-ons and tracking protection, and it is private by default.
 
 Open Dejavu and everything is where you left it, on every device. That feeling of having been here before is where
 the name comes from.
@@ -46,6 +46,40 @@ around late October 2026. It needs Android 8.0 or newer. Star this repository to
 
 ## Features
 
+Dejavu is made of small things that save you time every day.
+
+### Send any tab to your apps
+
+<img src="docs/readme/dejavu-custom-action.jpg" alt="A custom action that saves the page to Karakeep" width="260" align="right">
+
+Turn any web service into a button. A custom action sends the page you are on, or every tab you selected, to an app
+or server you choose: save it to your read-later app, post it in a chat, send it to your phone as a notification or
+start a home automation.
+
+- Write the request once: the method, URL, headers and body, like a `curl` command.
+- Fill it in with the page's address, title and site, or its workspace, container, folder and the date, using
+  variables such as `${websiteurl}`.
+- Start from a ready-made example for Karakeep, Linkwarden, linkding, Readeck, Raindrop.io, Memos, ntfy, Gotify,
+  Discord, Slack, Telegram, Home Assistant or any webhook.
+- Put the action in the menu, on the buttons of each tab, or on the bar you see when you select several tabs.
+
+<br clear="right">
+
+### Make the menu yours
+
+- **Edit every button:** Add, remove and move any button in the menu, add new rows, and put your own custom actions
+  between them.
+- **Choose your actions bar:** The first row of the menu is the actions bar below every page, so the buttons you use
+  most are always one tap away.
+- **Tab buttons too:** Choose the buttons on pinned tabs, on other tabs, and on the bar for selected tabs.
+
+### Open links from other apps where they belong
+
+Choose the workspace and container that links from other apps open in: always the same workspace, the one you saw
+last, or a private tab. Back takes you straight back to the app you came from.
+
+### Keep everything in its place
+
 - **Workspaces:** Keep work, study and personal browsing apart. Each workspace has its own icon, color theme and tabs,
   and you swipe between them. A private workspace keeps private tabs in one place.
 - **Pinned tabs, essentials and folders:** Pin the tabs you come back to, sort them into folders, and keep your
@@ -55,11 +89,11 @@ around late October 2026. It needs Android 8.0 or newer. Star this repository to
   tab is closed.
 - **Split view:** Open a link in split view to see two pages at once, or preview a page without leaving the one you
   are reading.
+
+### And more
+
 - **Sync with Zen Browser:** Your workspaces, with their colors and icons, containers, pinned tabs, essentials and
   folders stay the same in Zen on your computer and in Dejavu on your other devices. Unpinned tabs can sync too.
-- **Everything one tap away:** The actions bar below every page opens a menu with all actions. Choose its buttons, and
-  add your own tab actions.
-- **Links from other apps:** Choose the workspace and container that links from other apps open in.
 - **Private by default:** Telemetry, studies, search suggestions and sponsored content are off until you turn them
   on, and there are no ads.
 - **Gecko engine:** Add-ons like uBlock Origin and Dark Reader, Enhanced Tracking Protection, and sync for bookmarks,
