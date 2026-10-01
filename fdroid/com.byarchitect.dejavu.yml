@@ -26,6 +26,7 @@ Builds:
     output: 
       objdir-fdroid/gradle/build/mobile/android/fenix/app/outputs/apk/release/app-release-unsigned.apk
     prebuild:
+      - echo 'ac_add_options --enable-android-subproject=fenix' >> fdroid/mozconfig
       - rm -rf accessible/tests
       - rm -rf browser/branding/*/dsstore
       - rm -rf browser/components/backup/tests
@@ -40,6 +41,7 @@ Builds:
       - rm -rf js/src/jit-test
       - rm -rf layout/reftests
       - rm -rf mobile/android/fenix/app/src/androidTest
+      - rm -rf mobile/android/focus-android
       - rm -rf mobile/android/geckoview/src/androidTest
       - rm -rf modules/libjar/test
       - rm -rf modules/libmar/tests
@@ -103,6 +105,10 @@ MaintainerNotes: |-
   breaks the build; toolkit/components/pdfjs/content/web/wasm holds the JBIG2, OpenJPEG and qcms
   decoders pdf.js ships in the app; services/settings/dumps holds the Remote Settings dumps. Between
   them they account for all 3585 file findings the scanner reported.
+
+  Focus, the GeckoView example and the component samples are removed and the Gradle build is
+  limited to the Dejavu subproject, so the dependencies of the other apps sharing this tree are not
+  counted against it.
 
   Four of the scanignore entries are not binaries. build.gradle, publish.gradle and
   substitute-local-geckoview.gradle declare the maven repository inside the object directory that an

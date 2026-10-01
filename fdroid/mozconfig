@@ -14,6 +14,9 @@
 #   x86_64-linux-android   (x86_64)
 
 ac_add_options --enable-project=mobile/android
+# Only Dejavu is built. This also keeps Focus, the GeckoView example and the component samples out
+# of the Gradle build, so their own dependencies are not Dejavu's problem.
+ac_add_options --enable-android-subproject=fenix
 ac_add_options --target=${DEJAVU_FDROID_TARGET:-aarch64-linux-android}
 
 # A shipping build, not a developer one.
