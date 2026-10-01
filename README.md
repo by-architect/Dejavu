@@ -3,7 +3,8 @@
 </p>
 
 <p align="center">
-  <strong>A calm Android browser built on Firefox, with workspaces, containers, split view and sync with Zen Browser.</strong>
+  <strong>Your tabs, right where you left them.</strong><br>
+  An independent Android browser with workspaces, containers and split view.
 </p>
 
 <p align="center">
@@ -14,13 +15,12 @@
   <a href="https://buymeacoffee.com/ByArchitect"><img alt="Buy me a coffee" src="https://img.shields.io/badge/Buy%20me%20a%20coffee-F2B84B?logo=buymeacoffee&logoColor=white"></a>
 </p>
 
-Dejavu keeps your tabs organized the way Zen Browser does on the desktop: in workspaces, with pinned tabs, essentials
-and folders. It is built on Firefox, so you get the same Gecko engine, add-ons and tracking protection, and it is
-private by default.
+Dejavu keeps your tabs organized in workspaces, with pinned tabs, essentials and folders, so work, study and personal
+browsing never get mixed up. It runs on the Gecko engine, supports add-ons and tracking protection, and it is private
+by default.
 
-If you use Zen on your computer, Dejavu syncs your workspaces, containers, pinned tabs, essentials and folders with it
-through your Mozilla account. Everything is where you left it, on every device. That feeling of having been here
-before is where the name comes from.
+Open Dejavu and everything is where you left it, on every device. That feeling of having been here before is where
+the name comes from.
 
 <p align="center">
   <img src="docs/readme/dejavu-home.jpg" alt="The home screen with essentials and the Main workspace" width="200">
@@ -28,6 +28,14 @@ before is where the name comes from.
   <img src="docs/readme/dejavu-menu.jpg" alt="The More menu below a page" width="200">
   <img src="docs/readme/dejavu-split-view.jpg" alt="A page previewed in split view" width="200">
 </p>
+
+## An independent browser
+
+Dejavu is an independent project. It started as a fork of Firefox for Android (Fenix), Mozilla's open source mobile
+browser, but it is not a Firefox product, and it is not made, endorsed or supported by Mozilla.
+
+Dejavu is not part of Zen Browser either. It can sync with Zen, so if you use Zen on your computer, your workspaces show
+up on your phone too, but the two are separate apps made by separate people. Sync is the only thing they share.
 
 ## Download
 
@@ -54,8 +62,8 @@ around late October 2026. It needs Android 8.0 or newer. Star this repository to
 - **Links from other apps:** Choose the workspace and container that links from other apps open in.
 - **Private by default:** Telemetry, studies, search suggestions and sponsored content are off until you turn them
   on, and there are no ads.
-- **Firefox inside:** Add-ons like uBlock Origin and Dark Reader, Enhanced Tracking Protection, and Firefox Sync for
-  bookmarks, history and passwords.
+- **Gecko engine:** Add-ons like uBlock Origin and Dark Reader, Enhanced Tracking Protection, and sync for bookmarks,
+  history and passwords through your Mozilla account.
 
 ### Set up sync with Zen
 
@@ -87,7 +95,7 @@ Pull requests are welcome too. Start the title with the kind of change, `[FIX]`,
 
 Dejavu is open to contributions of every kind, and we would especially love help with design:
 
-- **Design:** screens, flows and small details that make Dejavu calmer and easier to use.
+- **Design:** screens, flows and small details that make Dejavu simpler and easier to use.
 - **Icon packs:** Dejavu draws its own icon set. New icons, alternative icon packs and app icons are very welcome.
 - **Themes:** new color themes for workspaces.
 - **Translations:** corrections for Dejavu's own texts in your language.
@@ -108,7 +116,8 @@ touch.
 
 ## Build from source
 
-This repository is a fork of Mozilla's Firefox repository. The Android app is in `mobile/android/fenix`, and Dejavu's
+This repository is a fork of Mozilla's Firefox repository, kept up to date with it, but Dejavu is developed separately
+from Mozilla. The Android app is in `mobile/android/fenix`, and Dejavu's
 own code is in the `org.mozilla.fenix.dejavu` package. The steps to build it and run it on a phone are in
 [CONTRIBUTING.md](CONTRIBUTING.md#build-dejavu).
 
