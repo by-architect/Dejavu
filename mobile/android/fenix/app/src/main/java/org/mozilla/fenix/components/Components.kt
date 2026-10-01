@@ -10,7 +10,6 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.ReadOnlyComposable
 import androidx.compose.ui.platform.LocalContext
 import androidx.core.app.NotificationManagerCompat
-import com.google.android.play.core.review.ReviewManagerFactory
 import java.util.concurrent.TimeUnit
 import kotlinx.coroutines.CoroutineScope
 import mozilla.components.concept.ai.controls.AIFeatureBlock
@@ -282,8 +281,8 @@ class Components(
     val fenixOnboarding by lazyMonitored { FenixOnboarding(context) }
 
     val playStoreReviewPromptController by lazyMonitored {
-        PlayStoreReviewPromptController(
-            manager = ReviewManagerFactory.create(context),
+        createPlayStoreReviewPromptController(
+            context = context,
             numberOfAppLaunches = { settings.numberOfAppLaunches },
         )
     }
