@@ -470,7 +470,7 @@ nimbus {
 if (file('proprietary.gradle').exists()) {
     apply from: 'proprietary.gradle'
 } else {
-    android.sourceSets.main.java.srcDirs += 'src/foss/java'
+    android.sourceSets.main.kotlin.srcDirs += 'src/foss/java'
 }
 
 dependencies {

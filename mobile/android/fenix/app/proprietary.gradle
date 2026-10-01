@@ -12,7 +12,7 @@
 def catalog = project.extensions.getByType(org.gradle.api.artifacts.VersionCatalogsExtension).named('libs')
 
 android {
-    sourceSets.main.java.srcDirs += 'src/proprietary/java'
+    sourceSets.main.kotlin.srcDirs += 'src/proprietary/java'
 }
 
 dependencies {
