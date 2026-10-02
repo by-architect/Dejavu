@@ -32,7 +32,10 @@
         <item name="android:colorAccent">@color/fx_mobile_on_surface</item>
         <item name="android:textColorPrimary">@color/state_list_text_color</item>
         <item name="android:textColorSecondary">@color/secondary_state_list_text_color</item>
-        <item name="materialAlertDialogTheme">@style/BaseDialogStyle</item>
+        <!-- Dejavu: dialogs and text fields in Dejavu's look, see dejavu_styles.xml. -->
+        <item name="materialAlertDialogTheme">@style/DejavuAlertDialogTheme</item>
+        <item name="editTextStyle">@style/DejavuEditText</item>
+        <item name="android:editTextStyle">@style/DejavuEditText</item>
         <item name="android:windowEnableSplitTouch">false</item>
         <item name="android:splitMotionEvents">false</item>
         <item name="bottomSheetDialogTheme">@style/BottomSheet</item>

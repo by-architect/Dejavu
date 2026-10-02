@@ -8,6 +8,8 @@ import androidx.annotation.StringRes
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
+import androidx.compose.foundation.interaction.MutableInteractionSource
+import androidx.compose.foundation.interaction.collectIsFocusedAsState
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -20,20 +22,15 @@ import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.lazy.LazyRow
 import androidx.compose.foundation.lazy.items
-import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.text.BasicTextField
-import androidx.compose.foundation.verticalScroll
-import androidx.compose.material3.AlertDialog
 import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.RadioButton
 import androidx.compose.material3.Slider
 import androidx.compose.material3.Text
-import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
@@ -64,6 +61,11 @@ import org.mozilla.fenix.dejavu.containers.NoContainerIcon
 import org.mozilla.fenix.dejavu.containers.TemporaryContainerIcon
 import org.mozilla.fenix.dejavu.settings.ContainerEditorDialog
 import org.mozilla.fenix.dejavu.sync.workspaceIconText
+import org.mozilla.fenix.dejavu.ui.DejavuButtonStyle
+import org.mozilla.fenix.dejavu.ui.DejavuDialog
+import org.mozilla.fenix.dejavu.ui.DejavuDialogButton
+import org.mozilla.fenix.dejavu.ui.DejavuPopup
+import org.mozilla.fenix.dejavu.ui.DejavuTextField
 import org.mozilla.fenix.dejavu.workspaces.MAX_FOLDER_DEPTH
 import org.mozilla.fenix.dejavu.workspaces.Workspace
 import org.mozilla.fenix.dejavu.workspaces.WorkspaceState
@@ -246,7 +248,7 @@ internal fun ItemDialogs(
                     leading = { TemporaryContainerIcon() },
                     onClick = { pick(ContainerPick.Temporary) },
                 )
-                if (containers.isNotEmpty()) HorizontalDivider(modifier = Modifier.padding(vertical = 4.dp))
+                if (containers.isNotEmpty()) DialogDivider()
                 (permanent + temporary.sortedWith(compareBy({ it.name.length }, { it.name }))).forEach { container ->
                     PickerRow(
                         label = container.name,
@@ -255,7 +257,7 @@ internal fun ItemDialogs(
                         onClick = { pick(ContainerPick.Container(container.contextId)) },
                     )
                 }
-                HorizontalDivider(modifier = Modifier.padding(vertical = 4.dp))
+                DialogDivider()
                 PickerRow(
                     label = stringResource(R.string.dejavu_container_add),
                     leading = { PickerIcon(iconsR.drawable.mozac_ic_plus_24) },
@@ -319,99 +321,96 @@ private fun WorkspaceDialog(
         )
     }
 
-    AlertDialog(
+    DejavuDialog(
+        title = stringResource(if (isNew) R.string.dejavu_add_workspace else R.string.dejavu_workspace_edit),
         onDismissRequest = onDismiss,
-        title = { Text(stringResource(if (isNew) R.string.dejavu_add_workspace else R.string.dejavu_workspace_edit)) },
-        text = {
-            Column(modifier = Modifier.verticalScroll(rememberScrollState())) {
-                Row(verticalAlignment = Alignment.CenterVertically) {
-                    WorkspaceIconAvatar(icon = icon, onIconTyped = { icon = it })
-                    Spacer(Modifier.width(12.dp))
-                    OutlinedTextField(
-                        value = name,
-                        onValueChange = { name = it },
-                        singleLine = true,
-                        label = { Text(stringResource(R.string.dejavu_workspace_name)) },
-                        modifier = Modifier.weight(1f),
-                    )
-                }
-                Spacer(Modifier.size(8.dp))
-                LazyRow(horizontalArrangement = Arrangement.spacedBy(4.dp)) {
-                    item { IconChoice(text = null, selected = icon == null, onClick = { icon = null }) }
-                    items(iconSuggestions) { suggestion ->
-                        IconChoice(text = suggestion, selected = icon == suggestion, onClick = { icon = suggestion })
-                    }
-                }
+        buttons = {
+            DejavuDialogButton(text = stringResource(R.string.dejavu_cancel), onClick = onDismiss)
+            DejavuDialogButton(
+                text = stringResource(if (isNew) R.string.dejavu_create else R.string.dejavu_save),
+                onClick = { onSave(name, containerId, icon, theme) },
+                style = DejavuButtonStyle.Primary,
+            )
+        },
+    ) {
+        Row(verticalAlignment = Alignment.CenterVertically) {
+            WorkspaceIconAvatar(icon = icon, onIconTyped = { icon = it })
+            Spacer(Modifier.width(12.dp))
+            DejavuTextField(
+                value = name,
+                onValueChange = { name = it },
+                label = stringResource(R.string.dejavu_workspace_name),
+                modifier = Modifier.weight(1f),
+            )
+        }
+        Spacer(Modifier.size(8.dp))
+        LazyRow(horizontalArrangement = Arrangement.spacedBy(4.dp)) {
+            item { IconChoice(text = null, selected = icon == null, onClick = { icon = null }) }
+            items(iconSuggestions) { suggestion ->
+                IconChoice(text = suggestion, selected = icon == suggestion, onClick = { icon = suggestion })
+            }
+        }
 
-                Spacer(Modifier.size(16.dp))
-                Text(stringResource(R.string.dejavu_workspace_theme), style = MaterialTheme.typography.labelLarge)
-                Spacer(Modifier.size(8.dp))
-                LazyRow(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
-                    item { ThemeChoice(colors = null, selected = theme == null, onClick = { theme = null }) }
-                    items(themePresets) { colors ->
-                        ThemeChoice(
+        Spacer(Modifier.size(16.dp))
+        Text(stringResource(R.string.dejavu_workspace_theme), style = MaterialTheme.typography.labelLarge)
+        Spacer(Modifier.size(8.dp))
+        LazyRow(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+            item { ThemeChoice(colors = null, selected = theme == null, onClick = { theme = null }) }
+            items(themePresets) { colors ->
+                ThemeChoice(
+                    colors = colors,
+                    selected = theme?.colors == colors,
+                    onClick = {
+                        theme = WorkspaceTheme(
                             colors = colors,
-                            selected = theme?.colors == colors,
-                            onClick = {
-                                theme = WorkspaceTheme(
-                                    colors = colors,
-                                    opacity = theme?.opacity ?: WorkspaceTheme.DEFAULT_OPACITY,
-                                    texture = theme?.texture ?: 0f,
-                                )
-                            },
+                            opacity = theme?.opacity ?: WorkspaceTheme.DEFAULT_OPACITY,
+                            texture = theme?.texture ?: 0f,
                         )
-                    }
-                }
-                theme?.let { current ->
-                    SliderRow(R.string.dejavu_workspace_theme_intensity, current.opacity, MIN_THEME_OPACITY..1f) {
-                        theme = current.copy(opacity = it)
-                    }
-                    SliderRow(R.string.dejavu_workspace_theme_grain, current.texture, 0f..1f) {
-                        theme = current.copy(texture = it)
-                    }
-                }
+                    },
+                )
+            }
+        }
+        theme?.let { current ->
+            SliderRow(R.string.dejavu_workspace_theme_intensity, current.opacity, MIN_THEME_OPACITY..1f) {
+                theme = current.copy(opacity = it)
+            }
+            SliderRow(R.string.dejavu_workspace_theme_grain, current.texture, 0f..1f) {
+                theme = current.copy(texture = it)
+            }
+        }
 
-                Spacer(Modifier.size(16.dp))
-                Text(stringResource(R.string.dejavu_workspace_container), style = MaterialTheme.typography.labelLarge)
-                Text(
-                    text = stringResource(R.string.dejavu_workspace_container_hint),
-                    style = MaterialTheme.typography.bodySmall,
-                    color = MaterialTheme.colorScheme.onSurfaceVariant,
-                )
-                RadioRow(
-                    label = stringResource(R.string.dejavu_workspace_no_container),
-                    selected = containerId == null,
-                    onClick = { containerId = null },
-                    leading = { NoContainerIcon() },
-                )
-                if (containers.isNotEmpty()) HorizontalDivider(modifier = Modifier.padding(vertical = 4.dp))
-                containers.forEach { container ->
-                    RadioRow(
-                        label = container.name,
-                        selected = containerId == container.contextId,
-                        onClick = { containerId = container.contextId },
-                        leading = { ContainerIcon(container) },
-                    )
-                }
-                PickerRow(
-                    label = stringResource(R.string.dejavu_container_add),
-                    leading = { PickerIcon(iconsR.drawable.mozac_ic_plus_24) },
-                    onClick = { creatingContainer = true },
-                )
-            }
-        },
-        confirmButton = {
-            TextButton(onClick = { onSave(name, containerId, icon, theme) }) {
-                Text(stringResource(if (isNew) R.string.dejavu_create else R.string.dejavu_save))
-            }
-        },
-        dismissButton = {
-            TextButton(onClick = onDismiss) { Text(stringResource(R.string.dejavu_cancel)) }
-        },
-    )
+        Spacer(Modifier.size(16.dp))
+        Text(stringResource(R.string.dejavu_workspace_container), style = MaterialTheme.typography.labelLarge)
+        Text(
+            text = stringResource(R.string.dejavu_workspace_container_hint),
+            style = MaterialTheme.typography.bodySmall,
+            color = MaterialTheme.colorScheme.onSurfaceVariant,
+        )
+        RadioRow(
+            label = stringResource(R.string.dejavu_workspace_no_container),
+            selected = containerId == null,
+            onClick = { containerId = null },
+            leading = { NoContainerIcon() },
+        )
+        if (containers.isNotEmpty()) DialogDivider()
+        containers.forEach { container ->
+            RadioRow(
+                label = container.name,
+                selected = containerId == container.contextId,
+                onClick = { containerId = container.contextId },
+                leading = { ContainerIcon(container) },
+            )
+        }
+        PickerRow(
+            label = stringResource(R.string.dejavu_container_add),
+            leading = { PickerIcon(iconsR.drawable.mozac_ic_plus_24) },
+            onClick = { creatingContainer = true },
+        )
+    }
 }
 
 private const val MIN_THEME_OPACITY = 0.1f
+private val PICKER_MAX_HEIGHT = 560.dp
 
 /**
  * The workspace's [icon] in a circle, or the no-icon sign without one. Icons are picked from the list below it, but
@@ -421,6 +420,8 @@ private const val MIN_THEME_OPACITY = 0.1f
 private fun WorkspaceIconAvatar(icon: String?, onIconTyped: (String?) -> Unit) {
     val shownIcon = workspaceIconText(icon).orEmpty()
     val description = stringResource(R.string.dejavu_workspace_icon)
+    val interactionSource = remember { MutableInteractionSource() }
+    val focused by interactionSource.collectIsFocusedAsState()
     BasicTextField(
         value = shownIcon,
         onValueChange = { if (it != shownIcon) lastGrapheme(it)?.let(onIconTyped) },
@@ -430,10 +431,16 @@ private fun WorkspaceIconAvatar(icon: String?, onIconTyped: (String?) -> Unit) {
             color = MaterialTheme.colorScheme.onSurface,
         ),
         cursorBrush = SolidColor(Color.Transparent),
+        interactionSource = interactionSource,
         modifier = Modifier
             .size(56.dp)
             .clip(CircleShape)
-            .background(MaterialTheme.colorScheme.secondaryContainer)
+            .background(MaterialTheme.colorScheme.surfaceContainerLowest)
+            .border(
+                width = if (focused) 1.5.dp else 1.dp,
+                color = if (focused) MaterialTheme.colorScheme.primary else DejavuPopup.edgeColor,
+                shape = CircleShape,
+            )
             .semantics { contentDescription = description },
         decorationBox = { field ->
             Box(contentAlignment = Alignment.Center, modifier = Modifier.size(56.dp)) {
@@ -551,26 +558,26 @@ private fun NameDialog(
     @StringRes label: Int = R.string.dejavu_workspace_name,
 ) {
     var name by remember { mutableStateOf(initial) }
-    AlertDialog(
+    DejavuDialog(
+        title = stringResource(title),
         onDismissRequest = onDismiss,
-        title = { Text(stringResource(title)) },
-        text = {
-            OutlinedTextField(
-                value = name,
-                onValueChange = { name = it },
-                singleLine = true,
-                label = { Text(stringResource(label)) },
+        buttons = {
+            DejavuDialogButton(text = stringResource(R.string.dejavu_cancel), onClick = onDismiss)
+            DejavuDialogButton(
+                text = stringResource(R.string.dejavu_save),
+                onClick = { onConfirm(name.trim()) },
+                style = DejavuButtonStyle.Primary,
+                enabled = allowBlank || name.isNotBlank(),
             )
         },
-        confirmButton = {
-            TextButton(enabled = allowBlank || name.isNotBlank(), onClick = { onConfirm(name.trim()) }) {
-                Text(stringResource(R.string.dejavu_save))
-            }
-        },
-        dismissButton = {
-            TextButton(onClick = onDismiss) { Text(stringResource(R.string.dejavu_cancel)) }
-        },
-    )
+    ) {
+        DejavuTextField(
+            value = name,
+            onValueChange = { name = it },
+            label = stringResource(label),
+            modifier = Modifier.fillMaxWidth(),
+        )
+    }
 }
 
 @Composable
@@ -581,17 +588,16 @@ private fun ConfirmDialog(
     onConfirm: () -> Unit,
     onDismiss: () -> Unit,
 ) {
-    AlertDialog(
+    DejavuDialog(
+        title = title,
         onDismissRequest = onDismiss,
-        title = { Text(title) },
-        text = { Text(message) },
-        confirmButton = {
-            TextButton(onClick = onConfirm) { Text(confirm, color = MaterialTheme.colorScheme.error) }
+        buttons = {
+            DejavuDialogButton(text = stringResource(R.string.dejavu_cancel), onClick = onDismiss)
+            DejavuDialogButton(text = confirm, onClick = onConfirm, style = DejavuButtonStyle.Danger)
         },
-        dismissButton = {
-            TextButton(onClick = onDismiss) { Text(stringResource(R.string.dejavu_cancel)) }
-        },
-    )
+    ) {
+        Text(message)
+    }
 }
 
 @Composable
@@ -600,19 +606,14 @@ private fun PickerDialog(
     onDismiss: () -> Unit,
     content: @Composable () -> Unit,
 ) {
-    AlertDialog(
+    DejavuDialog(
+        title = stringResource(title),
         onDismissRequest = onDismiss,
-        title = { Text(stringResource(title)) },
-        text = {
-            Column(modifier = Modifier.heightIn(max = 420.dp).verticalScroll(rememberScrollState())) {
-                content()
-            }
-        },
-        confirmButton = {},
-        dismissButton = {
-            TextButton(onClick = onDismiss) { Text(stringResource(R.string.dejavu_cancel)) }
-        },
-    )
+        buttons = { DejavuDialogButton(text = stringResource(R.string.dejavu_cancel), onClick = onDismiss) },
+        modifier = Modifier.heightIn(max = PICKER_MAX_HEIGHT),
+    ) {
+        content()
+    }
 }
 
 @Composable
@@ -649,6 +650,11 @@ private fun PickerRow(
             )
         }
     }
+}
+
+@Composable
+private fun DialogDivider() {
+    HorizontalDivider(modifier = Modifier.padding(vertical = 4.dp), color = DejavuPopup.edgeColor)
 }
 
 @Composable

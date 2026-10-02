@@ -23,7 +23,6 @@ import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
@@ -56,6 +55,7 @@ import org.mozilla.fenix.dejavu.actions.CustomActionExample
 import org.mozilla.fenix.dejavu.actions.CustomHeader
 import org.mozilla.fenix.dejavu.actions.HttpMethod
 import org.mozilla.fenix.dejavu.actions.customActionExamples
+import org.mozilla.fenix.dejavu.ui.DejavuTextField
 
 /** Adds or edits a [CustomAction]. */
 class DejavuCustomActionFragment : DejavuComposeFragment(R.string.dejavu_custom_action) {
@@ -150,11 +150,10 @@ private fun CustomActionEditor(
         modifier = Modifier.fillMaxSize().verticalScroll(scrollState).padding(16.dp),
         verticalArrangement = Arrangement.spacedBy(12.dp),
     ) {
-        OutlinedTextField(
+        DejavuTextField(
             value = name,
             onValueChange = { name = it },
-            singleLine = true,
-            label = { Text(stringResource(R.string.dejavu_custom_action_name)) },
+            label = stringResource(R.string.dejavu_custom_action_name),
             modifier = Modifier.fillMaxWidth(),
         )
 
@@ -165,32 +164,29 @@ private fun CustomActionEditor(
             }
         }
 
-        OutlinedTextField(
+        DejavuTextField(
             value = url,
             onValueChange = { url = it },
-            singleLine = true,
-            label = { Text(stringResource(R.string.dejavu_custom_action_url)) },
-            placeholder = { Text("https://example.com/save?url=${ActionVariable.WEBSITE_URL.token}") },
+            label = stringResource(R.string.dejavu_custom_action_url),
+            placeholder = "https://example.com/save?url=${ActionVariable.WEBSITE_URL.token}",
             modifier = Modifier.fillMaxWidth().onFocusChanged { if (it.isFocused) focused = EditorField.Url },
         )
 
         SectionLabel(R.string.dejavu_custom_action_headers)
         headers.forEachIndexed { index, header ->
             Row(verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(8.dp)) {
-                OutlinedTextField(
+                DejavuTextField(
                     value = header.name,
                     onValueChange = { headers[index] = header.copy(name = it) },
-                    singleLine = true,
-                    label = { Text(stringResource(R.string.dejavu_custom_action_header_name)) },
+                    label = stringResource(R.string.dejavu_custom_action_header_name),
                     modifier = Modifier.weight(1f).onFocusChanged {
                         if (it.isFocused) focused = EditorField.HeaderName(index)
                     },
                 )
-                OutlinedTextField(
+                DejavuTextField(
                     value = header.value,
                     onValueChange = { headers[index] = header.copy(value = it) },
-                    singleLine = true,
-                    label = { Text(stringResource(R.string.dejavu_custom_action_header_value)) },
+                    label = stringResource(R.string.dejavu_custom_action_header_value),
                     modifier = Modifier.weight(1.4f).onFocusChanged {
                         if (it.isFocused) focused = EditorField.HeaderValue(index)
                     },
@@ -208,12 +204,13 @@ private fun CustomActionEditor(
         }
 
         if (method.hasBody) {
-            OutlinedTextField(
+            DejavuTextField(
                 value = body,
                 onValueChange = { body = it },
-                label = { Text(stringResource(R.string.dejavu_custom_action_body)) },
-                textStyle = MaterialTheme.typography.bodyMedium.copy(fontFamily = FontFamily.Monospace),
+                label = stringResource(R.string.dejavu_custom_action_body),
+                singleLine = false,
                 minLines = 4,
+                textStyle = MaterialTheme.typography.bodyMedium.copy(fontFamily = FontFamily.Monospace),
                 modifier = Modifier.fillMaxWidth().onFocusChanged { if (it.isFocused) focused = EditorField.Body },
             )
         }

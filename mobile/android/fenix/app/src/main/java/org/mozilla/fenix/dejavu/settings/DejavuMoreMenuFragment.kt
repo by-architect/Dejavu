@@ -22,12 +22,7 @@ import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
-import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.RoundedCornerShape
-import androidx.compose.foundation.verticalScroll
-import androidx.compose.material3.AlertDialog
-import androidx.compose.material3.DropdownMenu
-import androidx.compose.material3.DropdownMenuItem
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
@@ -56,6 +51,10 @@ import org.mozilla.fenix.dejavu.menu.MoreMenu
 import org.mozilla.fenix.dejavu.menu.MoreMenuEntry
 import org.mozilla.fenix.dejavu.menu.MoreMenuLayout
 import org.mozilla.fenix.dejavu.menu.MoreMenuState
+import org.mozilla.fenix.dejavu.ui.DejavuDialog
+import org.mozilla.fenix.dejavu.ui.DejavuDialogButton
+import org.mozilla.fenix.dejavu.ui.DejavuDropdownMenu
+import org.mozilla.fenix.dejavu.ui.DejavuMenuItem
 
 /**
  * Arranges the buttons of the actions bar below pages, and the buttons of the browser's "More" menu in rows. Both pick
@@ -387,7 +386,7 @@ private fun EntryChip(
                 overflow = TextOverflow.Ellipsis,
             )
         }
-        DropdownMenu(expanded = menuOpen, onDismissRequest = { menuOpen = false }) {
+        DejavuDropdownMenu(expanded = menuOpen, onDismissRequest = { menuOpen = false }) {
             val close = { menuOpen = false }
             ChipOption(R.string.dejavu_more_menu_move_left, canMoveLeft, close) { onMove(-1) }
             ChipOption(R.string.dejavu_more_menu_move_right, canMoveRight, close) { onMove(1) }
@@ -400,8 +399,8 @@ private fun EntryChip(
 
 @Composable
 private fun ChipOption(@StringRes label: Int, enabled: Boolean, close: () -> Unit, onClick: () -> Unit) {
-    DropdownMenuItem(
-        text = { Text(stringResource(label)) },
+    DejavuMenuItem(
+        text = stringResource(label),
         enabled = enabled,
         onClick = {
             close()
@@ -417,44 +416,38 @@ private fun EntryPicker(
     onPick: (MoreMenuEntry) -> Unit,
     onDismiss: () -> Unit,
 ) {
-    AlertDialog(
+    DejavuDialog(
+        title = stringResource(R.string.dejavu_more_menu_add_item),
         onDismissRequest = onDismiss,
-        title = { Text(stringResource(R.string.dejavu_more_menu_add_item)) },
-        text = {
-            if (entries.isEmpty()) {
-                Text(stringResource(allAdded))
-            } else {
-                Column(modifier = Modifier.verticalScroll(rememberScrollState())) {
-                    entries.forEach { entry ->
-                        Row(
-                            verticalAlignment = Alignment.CenterVertically,
-                            modifier = Modifier
-                                .fillMaxWidth()
-                                .clip(RoundedCornerShape(12.dp))
-                                .clickable { onPick(entry) }
-                                .padding(horizontal = 8.dp, vertical = 12.dp),
-                        ) {
-                            Icon(
-                                painter = painterResource(entry.icon),
-                                contentDescription = null,
-                                tint = MaterialTheme.colorScheme.onSurface,
-                                modifier = Modifier.size(22.dp),
-                            )
-                            Spacer(Modifier.width(16.dp))
-                            Text(
-                                text = entry.label,
-                                style = MaterialTheme.typography.bodyLarge,
-                                color = MaterialTheme.colorScheme.onSurface,
-                            )
-                        }
-                    }
-                }
+        buttons = { DejavuDialogButton(text = stringResource(R.string.dejavu_cancel), onClick = onDismiss) },
+    ) {
+        if (entries.isEmpty()) {
+            Text(stringResource(allAdded))
+        }
+        entries.forEach { entry ->
+            Row(
+                verticalAlignment = Alignment.CenterVertically,
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .clip(RoundedCornerShape(12.dp))
+                    .clickable { onPick(entry) }
+                    .padding(horizontal = 8.dp, vertical = 12.dp),
+            ) {
+                Icon(
+                    painter = painterResource(entry.icon),
+                    contentDescription = null,
+                    tint = MaterialTheme.colorScheme.onSurface,
+                    modifier = Modifier.size(22.dp),
+                )
+                Spacer(Modifier.width(16.dp))
+                Text(
+                    text = entry.label,
+                    style = MaterialTheme.typography.bodyLarge,
+                    color = MaterialTheme.colorScheme.onSurface,
+                )
             }
-        },
-        confirmButton = {
-            TextButton(onClick = onDismiss) { Text(stringResource(android.R.string.cancel)) }
-        },
-    )
+        }
+    }
 }
 
 private val MoreMenuEntry.icon: Int

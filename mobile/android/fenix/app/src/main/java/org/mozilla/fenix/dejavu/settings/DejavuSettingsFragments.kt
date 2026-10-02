@@ -25,13 +25,11 @@ import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.lazy.itemsIndexed
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
-import androidx.compose.material3.AlertDialog
 import androidx.compose.material3.Checkbox
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.RadioButton
 import androidx.compose.material3.Text
-import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.collectAsState
@@ -75,6 +73,9 @@ import org.mozilla.fenix.dejavu.containers.drawable
 import org.mozilla.fenix.dejavu.menu.ActionsBarLayout
 import org.mozilla.fenix.dejavu.menu.menuKey
 import org.mozilla.fenix.dejavu.sync.workspaceIconText
+import org.mozilla.fenix.dejavu.ui.DejavuButtonStyle
+import org.mozilla.fenix.dejavu.ui.DejavuDialog
+import org.mozilla.fenix.dejavu.ui.DejavuDialogButton
 import org.mozilla.fenix.dejavu.workspaces.WorkspaceRepository
 import org.mozilla.fenix.e2e.SystemInsetsPaddedFragment
 import org.mozilla.fenix.ext.requireComponents
@@ -371,33 +372,36 @@ private fun ActionPlacesDialog(
     onEdit: (() -> Unit)?,
     onDismiss: () -> Unit,
 ) {
-    AlertDialog(
+    DejavuDialog(
+        title = action.label,
+        icon = action.icon,
         onDismissRequest = onDismiss,
-        icon = { Icon(painter = painterResource(action.icon), contentDescription = null) },
-        title = { Text(action.label) },
-        text = {
-            Column(modifier = Modifier.verticalScroll(rememberScrollState())) {
-                ActionPlace.entries.forEach { place ->
-                    val checked = placements.isIn(action, place)
-                    val fits = action.fits(place)
-                    val full = !checked && placements.isFull(place)
-                    PlaceRow(
-                        label = stringResource(place.label),
-                        note = when {
-                            !fits -> stringResource(R.string.dejavu_settings_action_place_unavailable)
-                            full -> stringResource(R.string.dejavu_settings_action_place_full)
-                            else -> null
-                        },
-                        checked = checked,
-                        enabled = fits && !full,
-                        onChange = { onPlace(place, it) },
-                    )
-                }
-            }
+        buttons = {
+            if (onEdit != null) DejavuDialogButton(text = stringResource(R.string.dejavu_menu_edit), onClick = onEdit)
+            DejavuDialogButton(
+                text = stringResource(R.string.dejavu_done),
+                onClick = onDismiss,
+                style = DejavuButtonStyle.Primary,
+            )
         },
-        confirmButton = { TextButton(onClick = onDismiss) { Text(stringResource(R.string.dejavu_done)) } },
-        dismissButton = onEdit?.let { edit -> { TextButton(onClick = edit) { Text(stringResource(R.string.dejavu_menu_edit)) } } },
-    )
+    ) {
+        ActionPlace.entries.forEach { place ->
+            val checked = placements.isIn(action, place)
+            val fits = action.fits(place)
+            val full = !checked && placements.isFull(place)
+            PlaceRow(
+                label = stringResource(place.label),
+                note = when {
+                    !fits -> stringResource(R.string.dejavu_settings_action_place_unavailable)
+                    full -> stringResource(R.string.dejavu_settings_action_place_full)
+                    else -> null
+                },
+                checked = checked,
+                enabled = fits && !full,
+                onChange = { onPlace(place, it) },
+            )
+        }
+    }
 }
 
 @Composable

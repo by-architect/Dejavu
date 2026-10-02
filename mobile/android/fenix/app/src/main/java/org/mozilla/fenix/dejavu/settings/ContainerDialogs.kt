@@ -9,7 +9,6 @@ import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
-import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -17,18 +16,13 @@ import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
-import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
-import androidx.compose.foundation.verticalScroll
-import androidx.compose.material3.AlertDialog
 import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.RadioButton
 import androidx.compose.material3.Text
-import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
@@ -50,6 +44,11 @@ import org.mozilla.fenix.dejavu.containers.ContainerRemoval
 import org.mozilla.fenix.dejavu.containers.NoContainerIcon
 import org.mozilla.fenix.dejavu.containers.color
 import org.mozilla.fenix.dejavu.containers.drawable
+import org.mozilla.fenix.dejavu.ui.DejavuButtonStyle
+import org.mozilla.fenix.dejavu.ui.DejavuDialog
+import org.mozilla.fenix.dejavu.ui.DejavuDialogButton
+import org.mozilla.fenix.dejavu.ui.DejavuPopup
+import org.mozilla.fenix.dejavu.ui.DejavuTextField
 
 private const val ITEMS_PER_ROW = 5
 
@@ -67,66 +66,62 @@ fun ContainerEditorDialog(
     var color by remember { mutableStateOf(record?.color ?: ContainerColor.BLUE) }
     var icon by remember { mutableStateOf(record?.icon ?: ContainerState.Icon.FINGERPRINT) }
 
-    AlertDialog(
+    DejavuDialog(
+        title = stringResource(if (record == null) R.string.dejavu_container_add else R.string.dejavu_container_edit),
         onDismissRequest = onDismiss,
-        title = {
-            Text(stringResource(if (record == null) R.string.dejavu_container_add else R.string.dejavu_container_edit))
-        },
-        text = {
-            Column {
-                OutlinedTextField(
-                    value = name,
-                    onValueChange = { name = it },
-                    singleLine = true,
-                    label = { Text(stringResource(R.string.dejavu_container_name)) },
-                    modifier = Modifier.fillMaxWidth(),
+        buttons = {
+            if (record != null) {
+                DejavuDialogButton(
+                    text = stringResource(R.string.dejavu_delete),
+                    onClick = onDelete,
+                    style = DejavuButtonStyle.DangerText,
                 )
-                Spacer(Modifier.height(16.dp))
-                Text(stringResource(R.string.dejavu_container_color), style = MaterialTheme.typography.labelLarge)
-                ContainerColor.pickable.chunked(ITEMS_PER_ROW).forEach { row ->
-                    Row(horizontalArrangement = Arrangement.SpaceBetween, modifier = Modifier.fillMaxWidth()) {
-                        row.forEach { option ->
-                            ChoiceCircle(selected = option == color, onClick = { color = option }) {
-                                Box(Modifier.size(22.dp).clip(CircleShape).background(option.color))
-                            }
-                        }
-                    }
-                }
-                Spacer(Modifier.height(12.dp))
-                Text(stringResource(R.string.dejavu_container_icon), style = MaterialTheme.typography.labelLarge)
-                ContainerState.Icon.entries.chunked(ITEMS_PER_ROW).forEach { row ->
-                    Row(horizontalArrangement = Arrangement.SpaceBetween, modifier = Modifier.fillMaxWidth()) {
-                        row.forEach { option ->
-                            ChoiceCircle(selected = option == icon, onClick = { icon = option }) {
-                                Icon(
-                                    painter = painterResource(option.drawable),
-                                    contentDescription = option.icon,
-                                    tint = color.color,
-                                    modifier = Modifier.size(22.dp),
-                                )
-                            }
-                        }
-                        repeat(ITEMS_PER_ROW - row.size) { Spacer(Modifier.size(44.dp)) }
+                Spacer(Modifier.weight(1f))
+            }
+            DejavuDialogButton(text = stringResource(R.string.dejavu_cancel), onClick = onDismiss)
+            DejavuDialogButton(
+                text = stringResource(R.string.dejavu_save),
+                onClick = { onSave(name.trim(), color, icon) },
+                style = DejavuButtonStyle.Primary,
+                enabled = name.isNotBlank(),
+            )
+        },
+    ) {
+        DejavuTextField(
+            value = name,
+            onValueChange = { name = it },
+            label = stringResource(R.string.dejavu_container_name),
+            modifier = Modifier.fillMaxWidth(),
+        )
+        Spacer(Modifier.height(16.dp))
+        Text(stringResource(R.string.dejavu_container_color), style = MaterialTheme.typography.labelLarge)
+        ContainerColor.pickable.chunked(ITEMS_PER_ROW).forEach { row ->
+            Row(horizontalArrangement = Arrangement.SpaceBetween, modifier = Modifier.fillMaxWidth()) {
+                row.forEach { option ->
+                    ChoiceCircle(selected = option == color, onClick = { color = option }) {
+                        Box(Modifier.size(22.dp).clip(CircleShape).background(option.color))
                     }
                 }
             }
-        },
-        confirmButton = {
-            TextButton(enabled = name.isNotBlank(), onClick = { onSave(name.trim(), color, icon) }) {
-                Text(stringResource(R.string.dejavu_save))
-            }
-        },
-        dismissButton = {
-            Row {
-                if (record != null) {
-                    TextButton(onClick = onDelete) {
-                        Text(stringResource(R.string.dejavu_delete), color = MaterialTheme.colorScheme.error)
+        }
+        Spacer(Modifier.height(12.dp))
+        Text(stringResource(R.string.dejavu_container_icon), style = MaterialTheme.typography.labelLarge)
+        ContainerState.Icon.entries.chunked(ITEMS_PER_ROW).forEach { row ->
+            Row(horizontalArrangement = Arrangement.SpaceBetween, modifier = Modifier.fillMaxWidth()) {
+                row.forEach { option ->
+                    ChoiceCircle(selected = option == icon, onClick = { icon = option }) {
+                        Icon(
+                            painter = painterResource(option.drawable),
+                            contentDescription = option.icon,
+                            tint = color.color,
+                            modifier = Modifier.size(22.dp),
+                        )
                     }
                 }
-                TextButton(onClick = onDismiss) { Text(stringResource(R.string.dejavu_cancel)) }
+                repeat(ITEMS_PER_ROW - row.size) { Spacer(Modifier.size(44.dp)) }
             }
-        },
-    )
+        }
+    }
 }
 
 /**
@@ -143,49 +138,48 @@ fun DeleteContainerDialog(
 ) {
     var removal by remember { mutableStateOf<ContainerRemoval>(ContainerRemoval.CloseTabs) }
 
-    AlertDialog(
+    DejavuDialog(
+        title = stringResource(R.string.dejavu_container_delete_title, record.name),
         onDismissRequest = onDismiss,
-        title = { Text(stringResource(R.string.dejavu_container_delete_title, record.name)) },
-        text = {
-            Column(modifier = Modifier.verticalScroll(rememberScrollState())) {
-                Text(stringResource(R.string.dejavu_container_delete_message))
-                Spacer(Modifier.height(12.dp))
-                RemovalOption(
-                    label = stringResource(R.string.dejavu_container_delete_close_tabs),
-                    selected = removal == ContainerRemoval.CloseTabs,
-                    onClick = { removal = ContainerRemoval.CloseTabs },
-                )
-                Text(
-                    text = stringResource(R.string.dejavu_container_delete_move_tabs),
-                    style = MaterialTheme.typography.labelLarge,
-                    modifier = Modifier.padding(top = 12.dp, bottom = 4.dp),
-                )
-                RemovalOption(
-                    label = stringResource(R.string.dejavu_workspace_no_container),
-                    selected = removal == ContainerRemoval.MoveTabs(null),
-                    onClick = { removal = ContainerRemoval.MoveTabs(null) },
-                    icon = { NoContainerIcon() },
-                )
-                if (otherContainers.isNotEmpty()) HorizontalDivider(modifier = Modifier.padding(vertical = 4.dp))
-                otherContainers.forEach { container ->
-                    RemovalOption(
-                        label = container.name,
-                        selected = removal == ContainerRemoval.MoveTabs(container.contextId),
-                        onClick = { removal = ContainerRemoval.MoveTabs(container.contextId) },
-                        icon = { ContainerIcon(container) },
-                    )
-                }
-            }
+        buttons = {
+            DejavuDialogButton(text = stringResource(R.string.dejavu_cancel), onClick = onDismiss)
+            DejavuDialogButton(
+                text = stringResource(R.string.dejavu_delete),
+                onClick = { onConfirm(removal) },
+                style = DejavuButtonStyle.Danger,
+            )
         },
-        confirmButton = {
-            TextButton(onClick = { onConfirm(removal) }) {
-                Text(stringResource(R.string.dejavu_delete), color = MaterialTheme.colorScheme.error)
-            }
-        },
-        dismissButton = {
-            TextButton(onClick = onDismiss) { Text(stringResource(R.string.dejavu_cancel)) }
-        },
-    )
+    ) {
+        Text(stringResource(R.string.dejavu_container_delete_message))
+        Spacer(Modifier.height(12.dp))
+        RemovalOption(
+            label = stringResource(R.string.dejavu_container_delete_close_tabs),
+            selected = removal == ContainerRemoval.CloseTabs,
+            onClick = { removal = ContainerRemoval.CloseTabs },
+        )
+        Text(
+            text = stringResource(R.string.dejavu_container_delete_move_tabs),
+            style = MaterialTheme.typography.labelLarge,
+            modifier = Modifier.padding(top = 12.dp, bottom = 4.dp),
+        )
+        RemovalOption(
+            label = stringResource(R.string.dejavu_workspace_no_container),
+            selected = removal == ContainerRemoval.MoveTabs(null),
+            onClick = { removal = ContainerRemoval.MoveTabs(null) },
+            icon = { NoContainerIcon() },
+        )
+        if (otherContainers.isNotEmpty()) {
+            HorizontalDivider(modifier = Modifier.padding(vertical = 4.dp), color = DejavuPopup.edgeColor)
+        }
+        otherContainers.forEach { container ->
+            RemovalOption(
+                label = container.name,
+                selected = removal == ContainerRemoval.MoveTabs(container.contextId),
+                onClick = { removal = ContainerRemoval.MoveTabs(container.contextId) },
+                icon = { ContainerIcon(container) },
+            )
+        }
+    }
 }
 
 @Composable

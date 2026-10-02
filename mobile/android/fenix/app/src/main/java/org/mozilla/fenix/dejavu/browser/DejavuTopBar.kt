@@ -14,8 +14,6 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.shape.CircleShape
-import androidx.compose.material3.DropdownMenu
-import androidx.compose.material3.DropdownMenuItem
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -44,6 +42,8 @@ import mozilla.components.compose.browser.toolbar.concept.PageOrigin.Companion.C
 import mozilla.components.compose.browser.toolbar.store.BrowserToolbarStore
 import mozilla.components.lib.state.ext.observeAsComposableState
 import mozilla.components.support.utils.ClipboardHandler
+import org.mozilla.fenix.dejavu.ui.DejavuDropdownMenu
+import org.mozilla.fenix.dejavu.ui.DejavuMenuItem
 import org.mozilla.fenix.dejavu.ui.glass
 
 /**
@@ -142,12 +142,9 @@ private fun LongPressMenu(
             }
         }
     }
-    DropdownMenu(expanded = expanded && shown.isNotEmpty(), onDismissRequest = onDismiss) {
+    DejavuDropdownMenu(expanded = expanded && shown.isNotEmpty(), onDismissRequest = onDismiss) {
         shown.forEach { option ->
-            DropdownMenuItem(
-                text = { Text(stringResource(option.label)) },
-                onClick = { onPick(option) },
-            )
+            DejavuMenuItem(text = stringResource(option.label), onClick = { onPick(option) })
         }
     }
 }

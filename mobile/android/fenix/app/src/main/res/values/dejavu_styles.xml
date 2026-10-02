@@ -16,4 +16,46 @@
         <item name="android:windowEnterAnimation">@anim/dejavu_top_sheet_enter</item>
         <item name="android:windowExitAnimation">@anim/dejavu_top_sheet_exit</item>
     </style>
+
+    <!-- Dialogs made of views, web page prompts included, in Dejavu's look like DejavuDialog: the title at the start
+       - and pill shaped buttons, the main one in gold. -->
+    <style name="DejavuAlertDialogTheme" parent="BaseDialogStyle">
+        <item name="materialAlertDialogTitleTextStyle">@style/DejavuAlertDialogTitle</item>
+        <item name="buttonBarPositiveButtonStyle">@style/DejavuDialogButton</item>
+        <item name="buttonBarNegativeButtonStyle">@style/DejavuDialogButton.Tonal</item>
+        <item name="buttonBarNeutralButtonStyle">@style/DejavuDialogButton.Tonal</item>
+    </style>
+
+    <style name="DejavuAlertDialogTitle" parent="MaterialAlertDialog.App.Title.Text">
+        <item name="android:textAppearance">?attr/textAppearanceTitleLarge</item>
+        <item name="android:gravity">start</item>
+    </style>
+
+    <style name="DejavuDialogButton" parent="Widget.Material3.Button">
+        <item name="backgroundTint">@color/dejavu_button_primary_background</item>
+        <item name="android:textColor">@color/dejavu_button_primary_text</item>
+        <item name="android:textAppearance">?attr/textAppearanceLabelLarge</item>
+        <item name="cornerRadius">20dp</item>
+        <item name="android:paddingStart">18dp</item>
+        <item name="android:paddingEnd">18dp</item>
+        <item name="android:layout_marginStart">8dp</item>
+    </style>
+
+    <style name="DejavuDialogButton.Tonal">
+        <item name="backgroundTint">@color/dejavu_button_tonal_background</item>
+        <item name="android:textColor">@color/dejavu_button_tonal_text</item>
+    </style>
+
+    <!-- Text fields made of views, like DejavuTextField: a rounded well that gets a gold edge while typing. -->
+    <style name="DejavuEditText" parent="Widget.AppCompat.EditText">
+        <item name="android:background">@drawable/dejavu_text_field_background</item>
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingEnd">16dp</item>
+        <item name="android:paddingTop">14dp</item>
+        <item name="android:paddingBottom">14dp</item>
+        <item name="android:minHeight">52dp</item>
+        <item name="android:textColor">?attr/colorOnSurface</item>
+        <item name="android:textColorHint">?attr/colorOnSurfaceVariant</item>
+        <item name="android:textCursorDrawable">@drawable/dejavu_text_cursor</item>
+    </style>
 </resources>

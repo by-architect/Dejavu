@@ -34,8 +34,6 @@ import androidx.compose.foundation.lazy.rememberLazyListState
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.ButtonDefaults
-import androidx.compose.material3.DropdownMenu
-import androidx.compose.material3.DropdownMenuItem
 import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
@@ -89,6 +87,10 @@ import org.mozilla.fenix.dejavu.containers.NoContainerIcon
 import org.mozilla.fenix.dejavu.containers.TemporaryContainerIcon
 import org.mozilla.fenix.dejavu.containers.color
 import org.mozilla.fenix.dejavu.sync.workspaceIconText
+import org.mozilla.fenix.dejavu.ui.DejavuDropdownMenu
+import org.mozilla.fenix.dejavu.ui.DejavuMenuDivider
+import org.mozilla.fenix.dejavu.ui.DejavuMenuItem
+import org.mozilla.fenix.dejavu.ui.DejavuMenuLabel
 import org.mozilla.fenix.dejavu.workspaces.PinnedItem
 import org.mozilla.fenix.dejavu.workspaces.Workspace
 import org.mozilla.fenix.dejavu.workspaces.WorkspaceState
@@ -583,30 +585,25 @@ private fun NewTabRow(
                 color = MaterialTheme.colorScheme.onSurfaceVariant,
             )
         }
-        DropdownMenu(expanded = menuOpen, onDismissRequest = { menuOpen = false }) {
+        DejavuDropdownMenu(expanded = menuOpen, onDismissRequest = { menuOpen = false }) {
             fun pick(choice: ContainerPick) {
                 menuOpen = false
                 onNewTabInContainer(choice)
             }
             val (temporary, permanent) = containers.partition { it.temporary }
-            Text(
-                text = stringResource(R.string.dejavu_new_tab_in_container),
-                style = MaterialTheme.typography.labelMedium,
-                color = MaterialTheme.colorScheme.onSurfaceVariant,
-                modifier = Modifier.padding(horizontal = 12.dp, vertical = 8.dp),
-            )
-            DropdownMenuItem(
-                text = { Text(stringResource(R.string.dejavu_new_tab_no_container)) },
+            DejavuMenuLabel(stringResource(R.string.dejavu_new_tab_in_container))
+            DejavuMenuItem(
+                text = stringResource(R.string.dejavu_new_tab_no_container),
                 leadingIcon = { NoContainerIcon() },
                 onClick = { pick(ContainerPick.NoContainer) },
             )
-            DropdownMenuItem(
-                text = { Text(stringResource(R.string.dejavu_new_tab_temporary_container)) },
+            DejavuMenuItem(
+                text = stringResource(R.string.dejavu_new_tab_temporary_container),
                 leadingIcon = { TemporaryContainerIcon() },
                 onClick = { pick(ContainerPick.Temporary) },
             )
-            DropdownMenuItem(
-                text = { Text(stringResource(R.string.dejavu_new_private_tab)) },
+            DejavuMenuItem(
+                text = stringResource(R.string.dejavu_new_private_tab),
                 leadingIcon = {
                     Icon(
                         painter = painterResource(iconsR.drawable.mozac_ic_private_mode_24),
@@ -619,33 +616,28 @@ private fun NewTabRow(
                     onNewPrivateTab()
                 },
             )
-            if (permanent.isNotEmpty()) HorizontalDivider()
+            if (permanent.isNotEmpty()) DejavuMenuDivider()
             permanent.forEach { container ->
-                DropdownMenuItem(
-                    text = { Text(container.name) },
+                DejavuMenuItem(
+                    text = container.name,
                     leadingIcon = { ContainerIcon(container) },
                     onClick = { pick(ContainerPick.Container(container.contextId)) },
                 )
             }
             if (temporary.isNotEmpty()) {
-                HorizontalDivider()
-                Text(
-                    text = stringResource(R.string.dejavu_open_temporary_containers),
-                    style = MaterialTheme.typography.labelMedium,
-                    color = MaterialTheme.colorScheme.onSurfaceVariant,
-                    modifier = Modifier.padding(horizontal = 12.dp, vertical = 8.dp),
-                )
+                DejavuMenuDivider()
+                DejavuMenuLabel(stringResource(R.string.dejavu_open_temporary_containers))
                 temporary.sortedWith(compareBy({ it.name.length }, { it.name })).forEach { container ->
-                    DropdownMenuItem(
-                        text = { Text(container.name) },
+                    DejavuMenuItem(
+                        text = container.name,
                         leadingIcon = { ContainerIcon(container) },
                         onClick = { pick(ContainerPick.Container(container.contextId)) },
                     )
                 }
             }
-            HorizontalDivider()
-            DropdownMenuItem(
-                text = { Text(stringResource(R.string.dejavu_container_add)) },
+            DejavuMenuDivider()
+            DejavuMenuItem(
+                text = stringResource(R.string.dejavu_container_add),
                 leadingIcon = {
                     Icon(
                         painter = painterResource(iconsR.drawable.mozac_ic_plus_24),
@@ -713,39 +705,39 @@ private fun WorkspaceHeader(
             SmallIconButton(iconsR.drawable.mozac_ic_ellipsis_vertical_24, R.string.dejavu_workspace_menu) {
                 menuOpen = true
             }
-            DropdownMenu(expanded = menuOpen, onDismissRequest = { menuOpen = false }) {
-                DropdownMenuItem(
-                    text = { Text(stringResource(R.string.dejavu_add_workspace)) },
+            DejavuDropdownMenu(expanded = menuOpen, onDismissRequest = { menuOpen = false }) {
+                DejavuMenuItem(
+                    text = stringResource(R.string.dejavu_add_workspace),
                     onClick = {
                         menuOpen = false
                         onNewWorkspace()
                     },
                 )
-                DropdownMenuItem(
-                    text = { Text(stringResource(R.string.dejavu_workspace_edit)) },
+                DejavuMenuItem(
+                    text = stringResource(R.string.dejavu_workspace_edit),
                     onClick = {
                         menuOpen = false
                         onEdit()
                     },
                 )
-                DropdownMenuItem(
-                    text = { Text(stringResource(R.string.dejavu_workspace_move_left)) },
+                DejavuMenuItem(
+                    text = stringResource(R.string.dejavu_workspace_move_left),
                     enabled = canMoveLeft,
                     onClick = {
                         menuOpen = false
                         onMove(-1)
                     },
                 )
-                DropdownMenuItem(
-                    text = { Text(stringResource(R.string.dejavu_workspace_move_right)) },
+                DejavuMenuItem(
+                    text = stringResource(R.string.dejavu_workspace_move_right),
                     enabled = canMoveRight,
                     onClick = {
                         menuOpen = false
                         onMove(1)
                     },
                 )
-                DropdownMenuItem(
-                    text = { Text(stringResource(R.string.dejavu_workspace_delete)) },
+                DejavuMenuItem(
+                    text = stringResource(R.string.dejavu_workspace_delete),
                     enabled = canDelete,
                     onClick = {
                         menuOpen = false

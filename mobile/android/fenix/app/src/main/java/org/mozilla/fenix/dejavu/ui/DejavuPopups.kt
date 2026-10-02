@@ -1,0 +1,297 @@
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+
+package org.mozilla.fenix.dejavu.ui
+
+import android.view.Window
+import android.view.WindowManager
+import androidx.annotation.DrawableRes
+import androidx.compose.foundation.BorderStroke
+import androidx.compose.foundation.background
+import androidx.compose.foundation.border
+import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.ColumnScope
+import androidx.compose.foundation.layout.PaddingValues
+import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.RowScope
+import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.layout.width
+import androidx.compose.foundation.layout.widthIn
+import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.shape.CircleShape
+import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.foundation.verticalScroll
+import androidx.compose.material3.Button
+import androidx.compose.material3.ButtonDefaults
+import androidx.compose.material3.DropdownMenu
+import androidx.compose.material3.DropdownMenuItem
+import androidx.compose.material3.HorizontalDivider
+import androidx.compose.material3.Icon
+import androidx.compose.material3.LocalContentColor
+import androidx.compose.material3.LocalTextStyle
+import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.MenuDefaults
+import androidx.compose.material3.Text
+import androidx.compose.runtime.Composable
+import androidx.compose.runtime.CompositionLocalProvider
+import androidx.compose.runtime.ReadOnlyComposable
+import androidx.compose.runtime.SideEffect
+import androidx.compose.ui.Alignment
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.clip
+import androidx.compose.ui.draw.drawBehind
+import androidx.compose.ui.draw.shadow
+import androidx.compose.ui.geometry.Offset
+import androidx.compose.ui.graphics.Brush
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.Shape
+import androidx.compose.ui.platform.LocalView
+import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.text.style.TextOverflow
+import androidx.compose.ui.unit.DpOffset
+import androidx.compose.ui.unit.dp
+import androidx.compose.ui.window.Dialog
+import androidx.compose.ui.window.DialogProperties
+import androidx.compose.ui.window.DialogWindowProvider
+
+/**
+ * Dejavu's look for dialogs and menus: a warm card lit by a little gold from its top corner, like the logo, with a
+ * hairline edge. [DejavuTextField] is the text field that goes with it, and `dejavu_styles.xml` gives the dialogs
+ * made of views the same shape, colors and buttons.
+ */
+object DejavuPopup {
+    val DialogShape: Shape = RoundedCornerShape(28.dp)
+    val MenuShape: Shape = RoundedCornerShape(20.dp)
+    val ItemShape: Shape = RoundedCornerShape(12.dp)
+
+    /** The fill of dialogs and menus. */
+    val containerColor: Color
+        @Composable @ReadOnlyComposable
+        get() = MaterialTheme.colorScheme.surfaceContainerHigh
+
+    /** The hairline around dialogs, menus and text fields. */
+    val edgeColor: Color
+        @Composable @ReadOnlyComposable
+        get() = MaterialTheme.colorScheme.onSurface.copy(alpha = EDGE_ALPHA)
+
+    /** The gold light in the top corner of dialogs and menus. */
+    val glowColor: Color
+        @Composable @ReadOnlyComposable
+        get() = MaterialTheme.colorScheme.primary.copy(alpha = GLOW_ALPHA)
+}
+
+/** Paints [DejavuPopup]'s light, which fades out from the top start corner, behind the content. */
+@Composable
+fun Modifier.popupGlow(): Modifier {
+    val glow = DejavuPopup.glowColor
+    return drawBehind {
+        drawRect(
+            Brush.radialGradient(
+                colors = listOf(glow, Color.Transparent),
+                center = Offset.Zero,
+                radius = size.maxDimension * GLOW_REACH,
+            ),
+        )
+    }
+}
+
+/** How a [DejavuDialogButton] looks: the main choice, a quiet one, or one that deletes something. */
+enum class DejavuButtonStyle { Primary, Tonal, Danger, DangerText }
+
+/**
+ * A dialog in Dejavu's look: [title], with [icon] in a gold circle before it, then [content], which scrolls when it
+ * is too tall, and [buttons], laid out from the end. Buttons are usually [DejavuDialogButton]s; a weighted spacer
+ * pushes the ones before it to the start.
+ */
+@Composable
+fun DejavuDialog(
+    title: String,
+    onDismissRequest: () -> Unit,
+    buttons: @Composable RowScope.() -> Unit,
+    modifier: Modifier = Modifier,
+    @DrawableRes icon: Int? = null,
+    content: @Composable ColumnScope.() -> Unit,
+) {
+    Dialog(onDismissRequest = onDismissRequest, properties = DialogProperties(usePlatformDefaultWidth = false)) {
+        val window = (LocalView.current.parent as? DialogWindowProvider)?.window
+        SideEffect { window?.resizeForKeyboard() }
+        Column(
+            modifier = modifier
+                .padding(horizontal = DIALOG_MARGIN, vertical = DIALOG_MARGIN)
+                .widthIn(max = DIALOG_MAX_WIDTH)
+                .fillMaxWidth()
+                .shadow(DIALOG_SHADOW, DejavuPopup.DialogShape)
+                .clip(DejavuPopup.DialogShape)
+                .background(DejavuPopup.containerColor)
+                .popupGlow()
+                .border(1.dp, DejavuPopup.edgeColor, DejavuPopup.DialogShape)
+                .padding(DIALOG_PADDING),
+        ) {
+            Row(verticalAlignment = Alignment.CenterVertically) {
+                if (icon != null) {
+                    Box(
+                        contentAlignment = Alignment.Center,
+                        modifier = Modifier
+                            .size(40.dp)
+                            .clip(CircleShape)
+                            .background(MaterialTheme.colorScheme.primaryContainer),
+                    ) {
+                        Icon(
+                            painter = painterResource(icon),
+                            contentDescription = null,
+                            tint = MaterialTheme.colorScheme.onPrimaryContainer,
+                            modifier = Modifier.size(22.dp),
+                        )
+                    }
+                    Spacer(Modifier.width(14.dp))
+                }
+                Text(
+                    text = title,
+                    style = MaterialTheme.typography.titleLarge,
+                    color = MaterialTheme.colorScheme.onSurface,
+                )
+            }
+            Column(
+                modifier = Modifier
+                    .padding(top = 16.dp)
+                    .weight(1f, fill = false)
+                    .verticalScroll(rememberScrollState()),
+            ) {
+                CompositionLocalProvider(
+                    LocalContentColor provides MaterialTheme.colorScheme.onSurfaceVariant,
+                    LocalTextStyle provides MaterialTheme.typography.bodyMedium,
+                ) {
+                    content()
+                }
+            }
+            Row(
+                horizontalArrangement = Arrangement.spacedBy(8.dp, Alignment.End),
+                verticalAlignment = Alignment.CenterVertically,
+                modifier = Modifier.fillMaxWidth().padding(top = 24.dp),
+                content = buttons,
+            )
+        }
+    }
+}
+
+/** Lets the keyboard shrink the dialog, so its buttons stay above it while typing. */
+@Suppress("DEPRECATION")
+private fun Window.resizeForKeyboard() = setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_ADJUST_RESIZE)
+
+/** A pill shaped button for the bottom of a [DejavuDialog]. */
+@Composable
+fun DejavuDialogButton(
+    text: String,
+    onClick: () -> Unit,
+    style: DejavuButtonStyle = DejavuButtonStyle.Tonal,
+    enabled: Boolean = true,
+) {
+    val scheme = MaterialTheme.colorScheme
+    val colors = when (style) {
+        DejavuButtonStyle.Primary -> ButtonDefaults.buttonColors(
+            containerColor = scheme.primary,
+            contentColor = scheme.onPrimary,
+        )
+        DejavuButtonStyle.Tonal -> ButtonDefaults.buttonColors(
+            containerColor = scheme.surfaceContainerHighest,
+            contentColor = scheme.onSurface,
+        )
+        DejavuButtonStyle.Danger -> ButtonDefaults.buttonColors(
+            containerColor = scheme.error,
+            contentColor = scheme.onError,
+        )
+        DejavuButtonStyle.DangerText -> ButtonDefaults.textButtonColors(contentColor = scheme.error)
+    }
+    Button(
+        onClick = onClick,
+        enabled = enabled,
+        shape = CircleShape,
+        colors = colors,
+        elevation = null,
+        contentPadding = PaddingValues(horizontal = BUTTON_PADDING, vertical = 10.dp),
+    ) {
+        Text(text = text, style = MaterialTheme.typography.labelLarge, maxLines = 1, overflow = TextOverflow.Ellipsis)
+    }
+}
+
+/** A dropdown menu in Dejavu's look. Its items are [DejavuMenuItem]s, with [DejavuMenuLabel]s and [DejavuMenuDivider]s. */
+@Composable
+fun DejavuDropdownMenu(
+    expanded: Boolean,
+    onDismissRequest: () -> Unit,
+    modifier: Modifier = Modifier,
+    offset: DpOffset = DpOffset(0.dp, 0.dp),
+    content: @Composable ColumnScope.() -> Unit,
+) {
+    DropdownMenu(
+        expanded = expanded,
+        onDismissRequest = onDismissRequest,
+        modifier = modifier.popupGlow(),
+        offset = offset,
+        shape = DejavuPopup.MenuShape,
+        containerColor = DejavuPopup.containerColor,
+        tonalElevation = 0.dp,
+        shadowElevation = MENU_SHADOW,
+        border = BorderStroke(1.dp, DejavuPopup.edgeColor),
+        content = content,
+    )
+}
+
+/** An item of a [DejavuDropdownMenu], highlighted in a rounded box when pressed. */
+@Composable
+fun DejavuMenuItem(
+    text: String,
+    onClick: () -> Unit,
+    enabled: Boolean = true,
+    leadingIcon: (@Composable () -> Unit)? = null,
+) {
+    DropdownMenuItem(
+        text = { Text(text = text, style = MaterialTheme.typography.bodyLarge) },
+        onClick = onClick,
+        modifier = Modifier.padding(horizontal = ITEM_INSET).clip(DejavuPopup.ItemShape),
+        leadingIcon = leadingIcon,
+        enabled = enabled,
+        colors = MenuDefaults.itemColors(
+            textColor = MaterialTheme.colorScheme.onSurface,
+            leadingIconColor = MaterialTheme.colorScheme.onSurfaceVariant,
+        ),
+        contentPadding = PaddingValues(horizontal = 12.dp),
+    )
+}
+
+/** A small heading over a group of items in a [DejavuDropdownMenu]. */
+@Composable
+fun DejavuMenuLabel(text: String) {
+    Text(
+        text = text,
+        style = MaterialTheme.typography.labelMedium,
+        color = MaterialTheme.colorScheme.onSurfaceVariant,
+        modifier = Modifier.padding(horizontal = ITEM_INSET + 12.dp, vertical = 8.dp),
+    )
+}
+
+/** A line between groups of items in a [DejavuDropdownMenu]. */
+@Composable
+fun DejavuMenuDivider() {
+    HorizontalDivider(
+        modifier = Modifier.padding(horizontal = ITEM_INSET + 6.dp, vertical = 4.dp),
+        color = DejavuPopup.edgeColor,
+    )
+}
+
+private const val EDGE_ALPHA = 0.1f
+private const val GLOW_ALPHA = 0.14f
+private const val GLOW_REACH = 0.9f
+private val DIALOG_MARGIN = 24.dp
+private val DIALOG_MAX_WIDTH = 560.dp
+private val DIALOG_PADDING = 24.dp
+private val DIALOG_SHADOW = 12.dp
+private val MENU_SHADOW = 8.dp
+private val BUTTON_PADDING = 18.dp
+private val ITEM_INSET = 6.dp
