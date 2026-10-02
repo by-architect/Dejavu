@@ -256,8 +256,8 @@ private fun EmptyTabSearchResults(modifier: Modifier = Modifier) {
             verticalArrangement = Arrangement.spacedBy(8.dp),
         ) {
             Image(
-                modifier = Modifier.size(77.dp),
-                painter = painterResource(R.drawable.fox_exclamation_alert),
+                modifier = Modifier.size(width = 120.dp, height = 96.dp),
+                painter = painterResource(R.drawable.dejavu_illustration_no_results),
                 contentDescription = null,
             )
 

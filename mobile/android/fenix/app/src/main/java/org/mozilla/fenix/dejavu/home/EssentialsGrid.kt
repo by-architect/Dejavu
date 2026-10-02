@@ -53,6 +53,8 @@ private val TileGap = 8.dp
 private val TileShape = RoundedCornerShape(14.dp)
 private const val COLUMNS = 3
 private const val DIMMED_ALPHA = 0.55f
+private const val CLOSED_TILE_ALPHA = 0.5f
+private const val OPEN_OUTLINE_ALPHA = 0.5f
 
 /**
  * An essential being reordered.
@@ -203,17 +205,24 @@ private fun EssentialTile(
 ) {
     val title = item.label(tab)
     val isAwake = tab?.isAwake == true
+    // Like tab rows, an open essential stands out: a solid tile with an outline, the shown one in the accent color.
+    // A closed or sleeping one is faded.
     val background = when {
         selection == true -> MaterialTheme.colorScheme.secondaryContainer
-        isCurrent && selection == null -> MaterialTheme.colorScheme.surfaceContainerHighest
-        else -> MaterialTheme.colorScheme.surfaceContainerHigh
+        isAwake || isCurrent -> MaterialTheme.colorScheme.surfaceContainerHighest
+        else -> MaterialTheme.colorScheme.surfaceContainerHigh.copy(alpha = CLOSED_TILE_ALPHA)
+    }
+    val outline = when {
+        isDragged || (isCurrent && selection == null) -> MaterialTheme.colorScheme.primary
+        isAwake && selection == null -> MaterialTheme.colorScheme.onSurfaceVariant.copy(alpha = OPEN_OUTLINE_ALPHA)
+        else -> Color.Transparent
     }
     Box(
         contentAlignment = Alignment.Center,
         modifier = modifier
             .clip(TileShape)
             .background(background)
-            .border(2.dp, if (isDragged) MaterialTheme.colorScheme.primary else Color.Transparent, TileShape)
+            .border(if (isDragged || isCurrent) 2.dp else 1.dp, outline, TileShape)
             .clickable(onClick = onClick)
             .semantics { contentDescription = title },
     ) {

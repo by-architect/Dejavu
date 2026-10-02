@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<!-- Dejavu's bookmarks illustration, made by scripts/dejavu-illustrations.py. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="200dp"
+    android:height="160dp"
+    android:viewportWidth="200"
+    android:viewportHeight="160">
+    <path
+        android:pathData="M68,72 a50,50 0 1 0 100,0 a50,50 0 1 0 -100,0 z"
+        android:fillColor="#FFF2B84B"
+        android:fillAlpha="0.3" />
+    <path android:pathData="M38,86 a52,52 0 1 0 104,0 a52,52 0 1 0 -104,0 z">
+        <aapt:attr name="android:fillColor">
+            <gradient android:type="linear" android:startX="38" android:startY="34" android:endX="142" android:endY="138">
+                <item android:offset="0" android:color="#FFFFEDC2" />
+                <item android:offset="0.55" android:color="#FFFFD67A" />
+                <item android:offset="1" android:color="#FFF2B84B" />
+            </gradient>
+        </aapt:attr>
+    </path>
+    <path
+        android:pathData="M80,40 h40 a6,6 0 0 1 6,6 v76 l-26,-18 l-26,18 v-76 a6,6 0 0 1 6,-6 z"
+        android:fillColor="#FF5A452A" />
+    <path
+        android:pathData="M93,64 a7,7 0 1 0 14,0 a7,7 0 1 0 -14,0 z"
+        android:fillColor="#FFFFF8E6" />
+</vector>

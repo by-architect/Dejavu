@@ -37,10 +37,12 @@
     <TextView
         android:id="@+id/history_empty_view"
         android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_height="wrap_content"
+        android:drawablePadding="16dp"
         android:gravity="center"
         android:text="@string/history_empty_message"
         android:textAlignment="center"
+        app:drawableTopCompat="@drawable/dejavu_illustration_history"
         android:textColor="?attr/colorOnSurfaceVariant"
         android:textSize="16sp"
         android:visibility="gone"

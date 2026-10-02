@@ -15,6 +15,7 @@ import org.mozilla.fenix.dejavu.actions.CustomAction
 import org.mozilla.fenix.dejavu.actions.RowAction
 import org.mozilla.fenix.dejavu.actions.TabAction
 import org.mozilla.fenix.dejavu.containers.ContainerPick
+import org.mozilla.fenix.dejavu.history.HistoryGrouping
 import org.mozilla.fenix.dejavu.menu.ActionsBarLayout
 import org.mozilla.fenix.dejavu.menu.MoreMenuLayout
 
@@ -78,6 +79,11 @@ class DejavuSettings private constructor(context: Context) {
 
     /** Keys of the [RowAction]s left out of the selection bar. Every other action, new ones included, is shown. */
     val hiddenSelectionKeys: StateFlow<Set<String>> = _hiddenSelectionKeys.asStateFlow()
+
+    /** How History lists pages. */
+    var historyGrouping: HistoryGrouping
+        get() = HistoryGrouping.fromKey(prefs.getString(KEY_HISTORY_GROUPING, null))
+        set(value) = prefs.edit { putString(KEY_HISTORY_GROUPING, value.key) }
 
     /** Keys of the buttons of the rows of [place], which must be one of the rows. */
     fun rowKeys(place: ActionPlace): StateFlow<List<String>> = when (place) {
@@ -160,7 +166,7 @@ class DejavuSettings private constructor(context: Context) {
 
     fun removeFromActionsBar(key: String) = setActionsBar(_actionsBarKeys.value - key)
 
-    fun resetActionsBar() = setActionsBar(ActionsBarLayout.fromMenu(MoreMenuLayout.DEFAULT))
+    fun resetActionsBar() = setActionsBar(ActionsBarLayout.DEFAULT)
 
     /** Shows or hides an action of the selection bar. */
     fun setSelectionAction(key: String, enabled: Boolean) {
@@ -235,6 +241,7 @@ class DejavuSettings private constructor(context: Context) {
         private const val KEY_MORE_MENU_ROWS = "more_menu_rows"
         private const val KEY_MORE_MENU_EDIT_HIDDEN = "more_menu_edit_hidden"
         private const val KEY_ACTIONS_BAR = "actions_bar"
+        private const val KEY_HISTORY_GROUPING = "history_grouping"
         private val DEFAULT_PINNED_ROW_ACTIONS = listOf(TabAction.CLOSE)
         private val DEFAULT_UNPINNED_ROW_ACTIONS = listOf(TabAction.PIN, TabAction.CLOSE)
 

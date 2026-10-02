@@ -187,6 +187,7 @@ internal fun WorkspacePage(
     canMoveRight: Boolean,
 ) {
     val tabsById = tabs.associateBy { it.id }
+    val awakeTabIds = tabs.filter { it.isAwake }.map { it.id }.toSet()
     val pinned = state.pinnedTree(workspace.id)
     val pinnedTabIds = state.pins.mapNotNull { it.tabId }.toSet()
     val otherTabs = tabs.filterNot { it.id in pinnedTabIds }
@@ -299,7 +300,7 @@ internal fun WorkspacePage(
                         folder = item,
                         depth = entry.depth,
                         childCount = state.pins.count { it.parentId == item.id },
-                        openTabCount = if (item.collapsed) state.openTabsIn(item.id, tabsById.keys) else 0,
+                        openTabCount = if (item.collapsed) state.openTabsIn(item.id, awakeTabIds) else 0,
                         selection = selection?.let { item.id in it.folderIds },
                         actions = folderRowActions.filter { it.appliesTo(targets) },
                         onAction = { callbacks.onRowAction(it, targets) },
@@ -756,15 +757,18 @@ private fun WorkspaceHeader(
     }
 }
 
-/** How many pinned tabs inside folder [folderId], subfolders included, have an open tab among [openTabIds]. */
-private fun WorkspaceState.openTabsIn(folderId: String, openTabIds: Set<String>): Int {
+/**
+ * How many pinned tabs inside folder [folderId], subfolders included, are open and awake, their tab among
+ * [awakeTabIds]. Sleeping tabs are not counted, the same as closed ones.
+ */
+private fun WorkspaceState.openTabsIn(folderId: String, awakeTabIds: Set<String>): Int {
     val inside = descendantIds(folderId)
-    return pins.count { it.id in inside && it.tabId != null && it.tabId in openTabIds }
+    return pins.count { it.id in inside && it.tabId != null && it.tabId in awakeTabIds }
 }
 
 /**
  * A folder of the pinned section. Tapping it folds it, or selects it in selection mode. A closed folder shows
- * [openTabCount], the number of open tabs hidden inside it, next to its icon. The buttons of [actions] act on
+ * [openTabCount], the number of awake tabs hidden inside it, next to its icon. The buttons of [actions] act on
  * everything inside the folder; without any, a closed folder shows how many items it holds instead.
  */
 @Suppress("LongMethod", "LongParameterList")

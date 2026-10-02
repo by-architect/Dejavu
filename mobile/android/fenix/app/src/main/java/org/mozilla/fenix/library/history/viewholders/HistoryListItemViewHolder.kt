@@ -62,6 +62,7 @@ class HistoryListItemViewHolder(
      * @param isPendingDeletion hides the item unless an undo snackbar action is evoked.
      * @param groupPendingDeletionCount allows to properly display the number of items inside a history group, taking
      *   into account pending removal of items inside.
+     * @param headerText the header to show instead of [timeGroup]'s day, for Dejavu's groups.
      */
     fun bind(
         item: History,
@@ -70,6 +71,7 @@ class HistoryListItemViewHolder(
         mode: HistoryFragmentState.Mode,
         isPendingDeletion: Boolean,
         groupPendingDeletionCount: Int,
+        headerText: String? = null,
     ) {
         binding.historyLayout.isVisible = !isPendingDeletion
 
@@ -93,8 +95,7 @@ class HistoryListItemViewHolder(
 
         toggleTopContent(showTopContent, mode === HistoryFragmentState.Mode.Normal)
 
-        val headerText = timeGroup?.humanReadable(itemView.context)
-        toggleHeader(headerText)
+        toggleHeader(headerText ?: timeGroup?.humanReadable(itemView.context))
 
         binding.historyLayout.setOnClickListener {
             store.dispatch(HistoryFragmentAction.HistoryItemClicked(item))

@@ -206,7 +206,7 @@ private fun LoadingScreen() {
 private fun NoDevicesAvailableScreen() {
     Column(verticalArrangement = Arrangement.spacedBy(20.dp)) {
         Image(
-            painter = painterResource(id = R.drawable.kit_devices_sync),
+            painter = painterResource(id = R.drawable.dejavu_illustration_devices),
             contentDescription = null,
             modifier = Modifier.width(210.dp).align(Alignment.CenterHorizontally),
         )
@@ -246,7 +246,7 @@ private fun ReconnectToSyncScreen(
         verticalArrangement = Arrangement.spacedBy(20.dp),
     ) {
         Image(
-            painter = painterResource(id = R.drawable.kit_devices_sync_error),
+            painter = painterResource(id = R.drawable.dejavu_illustration_devices),
             contentDescription = null,
             modifier = Modifier.align(Alignment.CenterHorizontally),
         )
@@ -289,7 +289,7 @@ private fun NoInternetConnectionScreen() {
         modifier = Modifier.fillMaxWidth(),
     ) {
         Image(
-            painter = painterResource(id = R.drawable.kit_plug_error),
+            painter = painterResource(id = R.drawable.dejavu_illustration_offline),
             contentDescription = null,
             modifier = Modifier.width(176.dp).align(Alignment.CenterHorizontally),
         )

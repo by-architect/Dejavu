@@ -25,6 +25,8 @@ import org.mozilla.fenix.dejavu.containers.ContainerPick
 import org.mozilla.fenix.dejavu.containers.DejavuContainerStorage
 import org.mozilla.fenix.dejavu.containers.TemporaryContainerMiddleware
 import org.mozilla.fenix.dejavu.containers.TemporaryContainers
+import org.mozilla.fenix.dejavu.history.VisitOrigins
+import org.mozilla.fenix.dejavu.history.VisitOriginsMiddleware
 import org.mozilla.fenix.dejavu.settings.DejavuSettings
 import org.mozilla.fenix.dejavu.sync.DejavuSync
 import org.mozilla.fenix.dejavu.workspaces.WorkspaceRepository
@@ -39,6 +41,7 @@ fun dejavuBrowserMiddleware(context: Context): List<Middleware<BrowserState, Bro
         WorkspaceRepository.get(context)
         DejavuSettings.get(context)
         DejavuContainerStorage.get(context).load()
+        VisitOrigins.get(context).load()
         DejavuSync.install(context)
     }
     return listOf(
@@ -48,6 +51,7 @@ fun dejavuBrowserMiddleware(context: Context): List<Middleware<BrowserState, Bro
         SilentlyClosedTabsMiddleware(),
         ClosingPinnedTabsMiddleware(),
         SplitViewMiddleware(),
+        VisitOriginsMiddleware(VisitOrigins.get(context)),
     )
 }
 

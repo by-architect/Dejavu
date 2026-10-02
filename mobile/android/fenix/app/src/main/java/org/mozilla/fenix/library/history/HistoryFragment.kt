@@ -8,6 +8,8 @@ import android.app.Dialog
 import android.content.DialogInterface
 import android.content.Intent
 import android.os.Bundle
+import android.os.Handler
+import android.os.Looper
 import android.text.SpannableString
 import android.view.LayoutInflater
 import android.view.Menu
@@ -108,6 +110,7 @@ import org.mozilla.fenix.components.search.HISTORY_SEARCH_ENGINE_ID
 import org.mozilla.fenix.components.share.ShareSheetChooserAction
 import org.mozilla.fenix.components.share.ShareSource
 import org.mozilla.fenix.databinding.FragmentHistoryBinding
+import org.mozilla.fenix.dejavu.history.DejavuHistory
 import org.mozilla.fenix.e2e.SystemInsetsPaddedFragment
 import org.mozilla.fenix.ext.components
 import org.mozilla.fenix.ext.getRootView
@@ -154,9 +157,13 @@ class HistoryFragment :
                 PagingConfig(PAGE_SIZE),
                 null,
             ) {
-                HistoryDataSource(historyProvider = historyProvider)
+                DejavuHistory.dataSource(requireContext(), historyProvider) { headers ->
+                    mainHandler.post { historyView?.historyAdapter?.dejavuHeaders = headers }
+                }
             }
             .flow
+
+    private val mainHandler = Handler(Looper.getMainLooper())
 
     private var historyView: HistoryView? = null
     private var _binding: FragmentHistoryBinding? = null
@@ -396,6 +403,10 @@ class HistoryFragment :
             R.id.history_search -> {
                 historyStore.dispatch(SearchClicked)
                 handleShowingSearchUX()
+                true
+            }
+            R.id.dejavu_history_group_by -> {
+                DejavuHistory.showGroupingDialog(requireContext()) { historyView?.historyAdapter?.refresh() }
                 true
             }
             R.id.history_delete -> {

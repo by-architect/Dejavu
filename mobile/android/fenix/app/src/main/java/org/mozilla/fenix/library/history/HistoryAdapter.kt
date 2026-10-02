@@ -8,6 +8,7 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.paging.PagingDataAdapter
 import androidx.recyclerview.widget.DiffUtil
+import org.mozilla.fenix.dejavu.history.HistoryHeaders
 import org.mozilla.fenix.library.history.viewholders.HistoryListItemViewHolder
 import org.mozilla.fenix.selection.SelectionHolder
 
@@ -22,7 +23,14 @@ class HistoryAdapter(
 
     private var mode: HistoryFragmentState.Mode = HistoryFragmentState.Mode.Normal
     private var pendingDeletionItems = emptySet<PendingDeletionHistory>()
-    private val itemsWithHeaders: MutableMap<HistoryItemTimeGroup, Int> = mutableMapOf()
+    private val itemsWithHeaders: MutableMap<Any, Int> = mutableMapOf()
+
+    /** Dejavu's groups to show headers for instead of days, or `null` for days. */
+    var dejavuHeaders: HistoryHeaders? = null
+        set(value) {
+            field = value
+            itemsWithHeaders.clear()
+        }
 
     // A flag to track the empty state of the list. Items are not being deleted immediately,
     // but hidden from the UI until the Undo snackbar will execute the delayed operation.
@@ -60,6 +68,8 @@ class HistoryAdapter(
         var isPendingDeletion = false
         var groupPendingDeletionCount = 0
         var timeGroup: HistoryItemTimeGroup? = null
+        val headers = dejavuHeaders
+        val headerKey: Any = headers?.keyOf(current) ?: current.historyTimeGroup
         if (position == 0) {
             isEmpty = true
         }
@@ -100,19 +110,19 @@ class HistoryAdapter(
         }
 
         // Add or remove the header and position to the map depending on it's deletion status
-        if (itemsWithHeaders.containsKey(current.historyTimeGroup)) {
-            if (isPendingDeletion && itemsWithHeaders[current.historyTimeGroup] == position) {
-                itemsWithHeaders.remove(current.historyTimeGroup)
-            } else if (isPendingDeletion && itemsWithHeaders[current.historyTimeGroup] != position) {
+        if (itemsWithHeaders.containsKey(headerKey)) {
+            if (isPendingDeletion && itemsWithHeaders[headerKey] == position) {
+                itemsWithHeaders.remove(headerKey)
+            } else if (isPendingDeletion && itemsWithHeaders[headerKey] != position) {
                 // do nothing
             } else {
-                if (position <= itemsWithHeaders[current.historyTimeGroup] as Int) {
-                    itemsWithHeaders[current.historyTimeGroup] = position
+                if (position <= itemsWithHeaders[headerKey] as Int) {
+                    itemsWithHeaders[headerKey] = position
                     timeGroup = current.historyTimeGroup
                 }
             }
         } else if (!isPendingDeletion) {
-            itemsWithHeaders[current.historyTimeGroup] = position
+            itemsWithHeaders[headerKey] = position
             timeGroup = current.historyTimeGroup
         }
 
@@ -135,6 +145,7 @@ class HistoryAdapter(
             mode,
             isPendingDeletion,
             groupPendingDeletionCount,
+            headerText = timeGroup?.let { headers?.labelOf(current) },
         )
     }
 

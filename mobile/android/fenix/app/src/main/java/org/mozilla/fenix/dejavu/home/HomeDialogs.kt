@@ -23,6 +23,7 @@ import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.foundation.text.BasicTextField
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.AlertDialog
 import androidx.compose.material3.HorizontalDivider
@@ -42,9 +43,12 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.SolidColor
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.pluralStringResource
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.semantics.contentDescription
+import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
@@ -321,16 +325,8 @@ private fun WorkspaceDialog(
         text = {
             Column(modifier = Modifier.verticalScroll(rememberScrollState())) {
                 Row(verticalAlignment = Alignment.CenterVertically) {
-                    val shownIcon = workspaceIconText(icon).orEmpty()
-                    OutlinedTextField(
-                        value = shownIcon,
-                        onValueChange = { if (it != shownIcon) icon = lastGrapheme(it) },
-                        singleLine = true,
-                        label = { Text(stringResource(R.string.dejavu_workspace_icon)) },
-                        textStyle = MaterialTheme.typography.titleLarge.copy(textAlign = TextAlign.Center),
-                        modifier = Modifier.width(76.dp),
-                    )
-                    Spacer(Modifier.width(8.dp))
+                    WorkspaceIconAvatar(icon = icon, onIconTyped = { icon = it })
+                    Spacer(Modifier.width(12.dp))
                     OutlinedTextField(
                         value = name,
                         onValueChange = { name = it },
@@ -416,6 +412,37 @@ private fun WorkspaceDialog(
 }
 
 private const val MIN_THEME_OPACITY = 0.1f
+
+/**
+ * The workspace's [icon] in a circle, or the no-icon sign without one. Icons are picked from the list below it, but
+ * tapping the circle opens the keyboard too, for an emoji that is not in the list.
+ */
+@Composable
+private fun WorkspaceIconAvatar(icon: String?, onIconTyped: (String?) -> Unit) {
+    val shownIcon = workspaceIconText(icon).orEmpty()
+    val description = stringResource(R.string.dejavu_workspace_icon)
+    BasicTextField(
+        value = shownIcon,
+        onValueChange = { if (it != shownIcon) lastGrapheme(it)?.let(onIconTyped) },
+        singleLine = true,
+        textStyle = MaterialTheme.typography.headlineSmall.copy(
+            textAlign = TextAlign.Center,
+            color = MaterialTheme.colorScheme.onSurface,
+        ),
+        cursorBrush = SolidColor(Color.Transparent),
+        modifier = Modifier
+            .size(56.dp)
+            .clip(CircleShape)
+            .background(MaterialTheme.colorScheme.secondaryContainer)
+            .semantics { contentDescription = description },
+        decorationBox = { field ->
+            Box(contentAlignment = Alignment.Center, modifier = Modifier.size(56.dp)) {
+                if (shownIcon.isEmpty()) NoContainerIcon(size = 24.dp)
+                field()
+            }
+        },
+    )
+}
 
 /** A choice of workspace icon: an emoji, or no icon when [text] is `null`. */
 @Composable

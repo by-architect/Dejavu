@@ -11,6 +11,12 @@
         app:iconTint="?attr/colorOnSurface"
         app:showAsAction="ifRoom" />
     <item
+        android:id="@+id/dejavu_history_group_by"
+        android:icon="@drawable/mozac_ic_sort_24"
+        android:title="@string/dejavu_history_group_by"
+        app:iconTint="?attr/colorOnSurface"
+        app:showAsAction="ifRoom" />
+    <item
         android:id="@+id/history_delete"
         android:icon="@drawable/mozac_ic_delete_24"
         android:title="@string/history_delete_all"

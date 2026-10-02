@@ -306,4 +306,14 @@
     <string name="dejavu_container_work">Work</string>
     <string name="dejavu_container_banking">Banking</string>
     <string name="dejavu_container_shopping">Shopping</string>
+    <!-- History: title of the button and dialog that choose how History lists pages. -->
+    <string name="dejavu_history_group_by">Group by</string>
+    <!-- History grouping choice: by day, the way Firefox lists history. -->
+    <string name="dejavu_history_group_by_date">Date</string>
+    <!-- History grouping choice: by the workspace pages were opened in. -->
+    <string name="dejavu_history_group_by_workspace">Workspace</string>
+    <!-- History grouping choice: by the workspace and the folder pages were opened in. -->
+    <string name="dejavu_history_group_by_folder">Workspace and folder</string>
+    <!-- History header for pages Dejavu does not know the workspace of, like pages visited before it remembered them or on other devices. -->
+    <string name="dejavu_history_other_pages">Other pages</string>
 </resources>

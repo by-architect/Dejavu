@@ -1086,8 +1086,8 @@ private fun RootEmptyContent(
     showSignIn: Boolean,
 ) {
     Image(
-        painter = painterResource(R.drawable.ic_kit_bookmarks_empty_state),
-        modifier = Modifier.width(204.dp).height(182.dp),
+        painter = painterResource(R.drawable.dejavu_illustration_bookmarks),
+        modifier = Modifier.width(200.dp).height(160.dp),
         contentDescription = null,
     )
 
@@ -1116,7 +1116,7 @@ private fun RootEmptyContent(
 @Composable
 private fun FolderEmptyContent() {
     Image(
-        painter = painterResource(R.drawable.bookmarks_folder_illustration),
+        painter = painterResource(R.drawable.dejavu_illustration_folder),
         contentDescription = null,
     )
 

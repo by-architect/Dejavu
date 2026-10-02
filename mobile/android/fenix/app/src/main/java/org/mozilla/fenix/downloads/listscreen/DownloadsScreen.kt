@@ -547,7 +547,7 @@ private fun EmptyState(modifier: Modifier = Modifier) {
         horizontalAlignment = Alignment.CenterHorizontally,
     ) {
         Image(
-            painter = painterResource(R.drawable.illustration_fox_box_inside_light),
+            painter = painterResource(R.drawable.dejavu_illustration_downloads),
             contentDescription = null,
         )
 

@@ -182,12 +182,23 @@ object MoreMenuLayout {
 object ActionsBarLayout {
     const val MAX_BUTTONS = 7
 
+    /** The bar a new install starts with: five buttons, Home in the middle and no Back, since the system Back does that. */
+    val DEFAULT: List<String> = listOf(
+        MoreMenuItem.FORWARD.key,
+        MoreMenuItem.SHARE.key,
+        MoreMenuEntry.Home.key,
+        MoreMenuItem.REFRESH.key,
+        MoreMenuEntry.Search.key,
+    )
+
     /**
      * The bar Dejavu showed before it could be changed on its own: the first row of the menu laid out as [menuRows]
-     * and Search, around Home in the middle.
+     * and Search, around Home in the middle. A menu whose first row was never changed gives [DEFAULT] instead.
      */
     fun fromMenu(menuRows: List<List<String>>): List<String> {
-        val buttons = menuRows.firstOrNull().orEmpty() + MoreMenuEntry.Search.key
+        val firstRow = menuRows.firstOrNull().orEmpty()
+        if (firstRow == MoreMenuLayout.DEFAULT.first()) return DEFAULT
+        val buttons = firstRow + MoreMenuEntry.Search.key
         return buttons.toMutableList().apply { add(size / 2, MoreMenuEntry.Home.key) }.distinct().take(MAX_BUTTONS)
     }
 
