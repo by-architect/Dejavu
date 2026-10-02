@@ -67,6 +67,7 @@ import org.mozilla.fenix.compose.snackbar.Snackbar
 import org.mozilla.fenix.compose.snackbar.SnackbarState
 import org.mozilla.fenix.dejavu.browser.DejavuLinkMenu
 import org.mozilla.fenix.dejavu.browser.DejavuToolbar
+import org.mozilla.fenix.dejavu.browser.DejavuWindowTheme
 import org.mozilla.fenix.dejavu.browser.openDejavuMenu
 import org.mozilla.fenix.e2e.SystemInsetsPaddedFragment
 import org.mozilla.fenix.ext.application
@@ -96,6 +97,7 @@ import org.mozilla.fenix.utils.Settings
 @Suppress("TooManyFunctions", "LargeClass")
 class BrowserFragment : BaseBrowserFragment(), UserInteractionHandler, SystemInsetsPaddedFragment {
     private val windowFeature = ViewBoundFeatureWrapper<WindowFeature>()
+    private val dejavuWindowTheme = ViewBoundFeatureWrapper<DejavuWindowTheme>()
     private val openInAppOnboardingObserver = ViewBoundFeatureWrapper<OpenInAppOnboardingObserver>()
     private val translationsBinding = ViewBoundFeatureWrapper<TranslationsBinding>()
     private val translationsBannerIntegration = ViewBoundFeatureWrapper<TranslationsBannerIntegration>()
@@ -186,6 +188,12 @@ class BrowserFragment : BaseBrowserFragment(), UserInteractionHandler, SystemIns
                     store = components.core.store,
                     tabsUseCases = components.useCases.tabsUseCases,
                 ),
+            owner = this,
+            view = view,
+        )
+
+        dejavuWindowTheme.set(
+            feature = DejavuWindowTheme(requireActivity()),
             owner = this,
             view = view,
         )

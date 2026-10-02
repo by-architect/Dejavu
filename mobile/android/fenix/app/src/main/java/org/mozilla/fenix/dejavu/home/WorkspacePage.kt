@@ -78,7 +78,6 @@ import kotlinx.coroutines.delay
 import mozilla.components.browser.state.state.TabSessionState
 import mozilla.components.ui.icons.R as iconsR
 import org.mozilla.fenix.R
-import org.mozilla.fenix.compose.Favicon
 import org.mozilla.fenix.dejavu.actions.RowAction
 import org.mozilla.fenix.dejavu.actions.TabAction
 import org.mozilla.fenix.dejavu.actions.icon
@@ -180,6 +179,7 @@ internal fun WorkspacePage(
     containers: Map<String, ContainerRecord>,
     pinnedRowActions: List<RowAction>,
     unpinnedRowActions: List<RowAction>,
+    folderRowActions: List<RowAction>,
     selection: Selection?,
     callbacks: WorkspacePageCallbacks,
     canDeleteWorkspace: Boolean,
@@ -294,22 +294,26 @@ internal fun WorkspacePage(
                     .dropLine(dropLines?.of(key), lineColor, insideColor)
                     .alpha(if (key in draggedKeys) DRAGGED_ALPHA else 1f)
                 if (item.isFolder) {
+                    val targets = ActionTargets.of(state, tabs, Selection(folderIds = setOf(item.id)))
                     FolderRow(
                         folder = item,
                         depth = entry.depth,
                         childCount = state.pins.count { it.parentId == item.id },
                         openTabCount = if (item.collapsed) state.openTabsIn(item.id, tabsById.keys) else 0,
                         selection = selection?.let { item.id in it.folderIds },
+                        actions = folderRowActions.filter { it.appliesTo(targets) },
+                        onAction = { callbacks.onRowAction(it, targets) },
                         onClick = { if (drag == null) callbacks.onFolderClick(item) },
                         modifier = rowModifier,
                     )
                 } else {
                     val tab = item.tabId?.let { tabsById[it] }
                     val targets = ActionTargets.ofPin(item, tab)
+                        .copy(splitTabIds = setOfNotNull(tab?.id).intersect(splitTabIds))
                     val resetPin = RowAction.BuiltIn(TabAction.RESET_PIN).takeIf { it.appliesTo(targets) }
                     TabRow(
                         title = item.label(tab),
-                        url = tab?.content?.url ?: item.url.orEmpty(),
+                        url = tab?.content?.url ?: item.pageUrl,
                         depth = entry.depth,
                         container = (tab?.contextId ?: item.containerId)?.let { containers[it] },
                         isAwake = tab?.isAwake == true,
@@ -347,7 +351,7 @@ internal fun WorkspacePage(
 
             items(otherTabs, key = { TAB_PREFIX + it.id }) { tab ->
                 val key = TAB_PREFIX + tab.id
-                val targets = ActionTargets(tabs = listOf(tab))
+                val targets = ActionTargets(tabs = listOf(tab), splitTabIds = setOf(tab.id).intersect(splitTabIds))
                 TabRow(
                     title = state.titleOf(tab),
                     url = tab.content.url,
@@ -760,9 +764,10 @@ private fun WorkspaceState.openTabsIn(folderId: String, openTabIds: Set<String>)
 
 /**
  * A folder of the pinned section. Tapping it folds it, or selects it in selection mode. A closed folder shows
- * [openTabCount], the number of open tabs hidden inside it, next to its icon.
+ * [openTabCount], the number of open tabs hidden inside it, next to its icon. The buttons of [actions] act on
+ * everything inside the folder; without any, a closed folder shows how many items it holds instead.
  */
-@Suppress("LongMethod")
+@Suppress("LongMethod", "LongParameterList")
 @Composable
 private fun FolderRow(
     folder: PinnedItem,
@@ -770,6 +775,8 @@ private fun FolderRow(
     childCount: Int,
     openTabCount: Int,
     selection: Boolean?,
+    actions: List<RowAction>,
+    onAction: (RowAction) -> Unit,
     onClick: () -> Unit,
     modifier: Modifier = Modifier,
 ) {
@@ -832,6 +839,17 @@ private fun FolderRow(
         )
         if (selection != null) {
             SelectionMark(selected = selection)
+        } else if (actions.isNotEmpty()) {
+            actions.forEach { action ->
+                IconButton(onClick = { onAction(action) }) {
+                    Icon(
+                        painter = painterResource(action.icon),
+                        contentDescription = action.label,
+                        tint = MaterialTheme.colorScheme.onSurfaceVariant,
+                        modifier = Modifier.size(20.dp),
+                    )
+                }
+            }
         } else if (folder.collapsed && childCount > 0) {
             Text(
                 text = childCount.toString(),
@@ -913,7 +931,7 @@ internal fun TabRow(
             ) {
                 // Tabs loaded in the browser are shown bright, the others dimmed.
                 Box(modifier = Modifier.alpha(if (isAwake) 1f else DIMMED_ALPHA)) {
-                    Favicon(url = url, size = 20.dp, shape = CircleShape)
+                    SiteIcon(url = url, size = 20.dp)
                 }
             }
         }

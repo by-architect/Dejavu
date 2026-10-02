@@ -14,21 +14,23 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
-import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.produceState
 import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.alpha
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.platform.LocalView
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.semantics.CustomAccessibilityAction
@@ -38,6 +40,7 @@ import androidx.compose.ui.semantics.customActions
 import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
+import androidx.navigation.findNavController
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import mozilla.appservices.places.BookmarkRoot
@@ -46,13 +49,13 @@ import mozilla.components.browser.state.state.TabSessionState
 import mozilla.components.compose.browser.toolbar.store.BrowserToolbarInteraction.BrowserToolbarEvent
 import mozilla.components.compose.browser.toolbar.store.BrowserToolbarInteraction.BrowserToolbarEvent.Source
 import mozilla.components.lib.state.ext.observeAsComposableState
-import mozilla.components.ui.icons.R as iconsR
 import org.mozilla.fenix.NavGraphDirections
 import org.mozilla.fenix.R
 import org.mozilla.fenix.browser.BrowserFragmentDirections
 import org.mozilla.fenix.components.appstate.AppAction.FindInPageAction
 import org.mozilla.fenix.components.components
 import org.mozilla.fenix.components.toolbar.DisplayActions
+import org.mozilla.fenix.dejavu.actions.TabAction
 import org.mozilla.fenix.dejavu.browser.DejavuToolbar
 import org.mozilla.fenix.dejavu.browser.openDejavuMenu
 import org.mozilla.fenix.dejavu.browser.shownWorkspaceTheme
@@ -66,24 +69,25 @@ import org.mozilla.fenix.webcompat.WEB_COMPAT_REPORTER_URL
 import org.mozilla.fenix.webcompat.middleware.DefaultWebCompatReporterRetrievalService
 
 /**
- * Dejavu's bar below web pages: the first row of the "More" menu, then a button that starts a search. Swiping the bar
- * up opens the whole menu.
+ * Dejavu's bar below web pages: the buttons the user chose for it, Home and Search among them. Swiping the bar up opens
+ * the "More" menu.
  *
  * @param onEvent Carries out what the user tapped.
  */
+@Suppress("LongMethod")
 @Composable
 fun DejavuActionsBar(onEvent: (BrowserToolbarEvent) -> Unit) {
     val context = LocalContext.current
+    val view = LocalView.current
     val fenix = components
     val settings = remember { fenix.readOnMainThread { DejavuSettings.get(context) } }
     val repository = remember { fenix.readOnMainThread { WorkspaceRepository.get(context) } }
     val tab by fenix.core.store.observeAsComposableState { it.selectedTab }
     val workspaces by repository.state.collectAsState()
-    val rowKeys by settings.moreMenuRows.collectAsState()
+    val barKeys by settings.actionsBarKeys.collectAsState()
     val customActions by settings.customActions.collectAsState()
-    val entries = remember(rowKeys, customActions) {
-        MoreMenuLayout.resolve(rowKeys, customActions).firstOrNull().orEmpty()
-    }
+    val entries = remember(barKeys, customActions) { ActionsBarLayout.resolve(barKeys, customActions) }
+    var asking by remember { mutableStateOf<TabAction?>(null) }
     val snackbar by fenix.appStore.observeAsComposableState { it.snackbarState }
     val url = tab?.content?.url.orEmpty()
     val isBookmarked by produceState(false, url, snackbar) {
@@ -116,12 +120,11 @@ fun DejavuActionsBar(onEvent: (BrowserToolbarEvent) -> Unit) {
                 .clip(CircleShape)
                 .background(MaterialTheme.colorScheme.onSurfaceVariant.copy(alpha = HANDLE_ALPHA)),
         )
-        val buttons = entries.map { entry -> BarItem(entry.look(state)) { onEvent(entry.barEvent(state)) } } +
-            BarItem(EntryLook(stringResource(R.string.dejavu_actions_bar_search), iconsR.drawable.mozac_ic_search_24)) {
-                onEvent(DejavuToolbar.SearchClicked)
+        val buttons = entries.map { entry ->
+            BarItem(entry.look(state)) {
+                val action = (entry as? MoreMenuEntry.Tab)?.action
+                if (action?.asksFirst == true) asking = action else onEvent(entry.barEvent(state))
             }
-        val home = BarItem(EntryLook(stringResource(R.string.dejavu_actions_bar_home), iconsR.drawable.mozac_ic_home_24)) {
-            onEvent(DisplayActions.HomepageClicked(Source.NavigationBar))
         }
         // Screen readers cannot swipe the bar up, so every button also offers the menu as an action.
         val menuAction = listOf(
@@ -130,19 +133,23 @@ fun DejavuActionsBar(onEvent: (BrowserToolbarEvent) -> Unit) {
                 true
             },
         )
-        // Home stays in the middle, with the other buttons shared out on both sides of it.
         Row(
             verticalAlignment = Alignment.CenterVertically,
             modifier = Modifier.fillMaxSize().padding(horizontal = 8.dp),
         ) {
-            Row(modifier = Modifier.weight(1f)) {
-                buttons.take(buttons.size / 2).forEach { BarButton(it, menuAction, Modifier.weight(1f)) }
-            }
-            BarButton(home, menuAction, Modifier.width(HOME_SLOT_WIDTH))
-            Row(modifier = Modifier.weight(1f)) {
-                buttons.drop(buttons.size / 2).forEach { BarButton(it, menuAction, Modifier.weight(1f)) }
-            }
+            buttons.forEach { BarButton(it, menuAction, Modifier.weight(1f)) }
         }
+    }
+
+    val shown = tab
+    val action = asking
+    if (shown != null && action != null) {
+        ShownTabActionDialog(
+            action = action,
+            tab = shown,
+            navController = remember(view) { view.findNavController() },
+            onDone = { asking = null },
+        )
     }
 }
 
@@ -178,6 +185,8 @@ private fun BarButton(item: BarItem, a11yActions: List<CustomAccessibilityAction
 /** What tapping [this] in the actions bar does: the address bar's own action where it has one. */
 private fun MoreMenuEntry.barEvent(state: MoreMenuState): BrowserToolbarEvent {
     val source = Source.NavigationBar
+    if (this == MoreMenuEntry.Home) return DisplayActions.HomepageClicked(source)
+    if (this == MoreMenuEntry.Search) return DejavuToolbar.SearchClicked
     return when ((this as? MoreMenuEntry.BuiltIn)?.item) {
         MoreMenuItem.BACK -> DisplayActions.NavigateBackClicked(source)
         MoreMenuItem.FORWARD -> DisplayActions.NavigateForwardClicked
@@ -204,11 +213,17 @@ internal fun runActionsBarEntry(context: Context, navController: NavController, 
     val tab = components.core.store.state.selectedTab ?: return
     val workspaces = repository.state.value
     val commands = DejavuTabCommands(context, components, repository, settings, tab)
-    val entry = MoreMenuLayout.entryOf(key, settings.customActions.value) ?: return
-    val item = (entry as? MoreMenuEntry.BuiltIn)?.item
-    if (item == null) {
-        commands.runCustomAction((entry as MoreMenuEntry.Custom).action, workspaces)
-        return
+    val item = when (val entry = ActionsBarLayout.entryOf(key, settings.customActions.value) ?: return) {
+        is MoreMenuEntry.BuiltIn -> entry.item
+        is MoreMenuEntry.Custom -> {
+            commands.runCustomAction(entry.action, workspaces)
+            return
+        }
+        is MoreMenuEntry.Tab -> {
+            runOnShownTab(entry.action, context, navController, tab)
+            return
+        }
+        MoreMenuEntry.Home, MoreMenuEntry.Search -> return
     }
     val isSplit = workspaces.splits.any { tab.id in it.tabIds }
     if (item == MoreMenuItem.SPLIT_VIEW && !isSplit) {
@@ -267,6 +282,5 @@ private fun reportBrokenSite(context: Context, navController: NavController, tab
 }
 
 private val BAR_HEIGHT = 60.dp
-private val HOME_SLOT_WIDTH = 64.dp
 private const val HANDLE_ALPHA = 0.3f
 private const val DISABLED_ALPHA = 0.38f

@@ -90,8 +90,6 @@
     <string name="dejavu_settings_title">Dejavu</string>
     <string name="dejavu_about_content">%1$s el xe basà so Firefox, fato da Mozilla.</string>
     <string name="dejavu_settings_tab_actions">Asion de łe schede</string>
-    <string name="dejavu_settings_tab_actions_entry_summary">Boton so łe schede, e asion par łe schede seƚesionà</string>
-    <string name="dejavu_settings_tab_actions_hint">Sielsi i boton de łe righe de schede fisà e mìa fisà, e łe asion mostrà quando te seƚesioni schede. Łe asion che te gionti ti stesso łe pol esar doparà in tute e tre.</string>
     <string name="dejavu_settings_pinned_tabs">Schede fisà</string>
     <string name="dejavu_settings_unpinned_tabs">Schede mìa fisà</string>
     <string name="dejavu_settings_all_actions">Tute łe asion</string>
@@ -188,7 +186,6 @@
     <string name="dejavu_actions_bar_search">Serca</string>
     <string name="dejavu_actions_bar_home">Casa</string>
     <string name="dejavu_settings_more_menu_summary">Ła bara de łe asion soto łe pagine e el menù che ła verxe</string>
-    <string name="dejavu_more_menu_hint">Ła prima riga xe ła bara de łe asion soto łe pagine. Trassina ła bara de łe asion in su, o ła bara de l’indirisso in xo, par verxer tuto el menù. Toca un boton par spostarlo o cavarlo via. Łe estension łe ciapa senpre na riga intiera.</string>
     <string name="dejavu_more_menu_row">Riga %1$d</string>
     <string name="dejavu_more_menu_add_item">Gionta un boton</string>
     <string name="dejavu_more_menu_add_row">Gionta na riga</string>

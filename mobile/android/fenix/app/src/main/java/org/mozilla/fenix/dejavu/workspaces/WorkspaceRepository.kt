@@ -365,10 +365,38 @@ class WorkspaceRepository private constructor(context: Context) {
                 if (pin.id != pinId || pin.isFolder) {
                     pin
                 } else {
-                    pin.copy(url = url, title = if (pin.staticLabel) pin.title else title.ifBlank { url }, updatedAt = now())
+                    pin.copy(
+                        url = url,
+                        title = if (pin.staticLabel) pin.title else title.ifBlank { url },
+                        openUrl = null,
+                        openTitle = null,
+                        updatedAt = now(),
+                    )
                 }
             },
         )
+    }
+
+    /**
+     * Remembers the pages that the tabs of [pages] (address and title by tab id) are on as they close, for the pinned
+     * tabs among them: the pin opens on that page again rather than on its pinned address.
+     */
+    fun rememberClosingPages(pages: Map<String, Pair<String, String>>) = mutate { state ->
+        state.copy(
+            pins = state.pins.map { pin ->
+                val (url, title) = pin.tabId?.let(pages::get) ?: return@map pin
+                if (pin.url == null || isSamePage(url, pin.url)) {
+                    pin.copy(openUrl = null, openTitle = null)
+                } else {
+                    pin.copy(openUrl = url, openTitle = title)
+                }
+            },
+        )
+    }
+
+    /** Lets the closed pinned tabs [pinIds] open on their pinned address again. */
+    fun forgetOpenPages(pinIds: Set<String>) = mutate { state ->
+        state.copy(pins = state.pins.map { if (it.id in pinIds) it.copy(openUrl = null, openTitle = null) else it })
     }
 
     /** Gives unpinned tab [tabId] the title [name], or shows its page title again when [name] is blank. */

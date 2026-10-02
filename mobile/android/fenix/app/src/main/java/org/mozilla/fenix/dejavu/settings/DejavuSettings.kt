@@ -10,14 +10,16 @@ import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import org.json.JSONArray
+import org.mozilla.fenix.dejavu.actions.ActionPlace
 import org.mozilla.fenix.dejavu.actions.CustomAction
 import org.mozilla.fenix.dejavu.actions.RowAction
 import org.mozilla.fenix.dejavu.actions.TabAction
 import org.mozilla.fenix.dejavu.containers.ContainerPick
+import org.mozilla.fenix.dejavu.menu.ActionsBarLayout
 import org.mozilla.fenix.dejavu.menu.MoreMenuLayout
 
 /**
- * Device local Dejavu preferences: the buttons of tab rows and the custom actions. They are not synced.
+ * Device local Dejavu preferences: where actions are shown, the custom actions and the menus. They are not synced.
  */
 class DejavuSettings private constructor(context: Context) {
     private val prefs = context.getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE)
@@ -25,6 +27,7 @@ class DejavuSettings private constructor(context: Context) {
     private val _customActions = MutableStateFlow(readCustomActions())
     private val _pinnedRowKeys = MutableStateFlow(readKeys(KEY_PINNED_ROW_ACTIONS, DEFAULT_PINNED_ROW_ACTIONS))
     private val _unpinnedRowKeys = MutableStateFlow(readKeys(KEY_UNPINNED_ROW_ACTIONS, DEFAULT_UNPINNED_ROW_ACTIONS))
+    private val _folderRowKeys = MutableStateFlow(readKeys(KEY_FOLDER_ROW_ACTIONS, emptyList()))
     private val _essentialsPerContainer = MutableStateFlow(prefs.getBoolean(KEY_ESSENTIALS_PER_CONTAINER, false))
     private val _temporaryContainersByDefault =
         MutableStateFlow(prefs.getBoolean(KEY_TEMPORARY_CONTAINERS_BY_DEFAULT, false))
@@ -35,6 +38,7 @@ class DejavuSettings private constructor(context: Context) {
         MoreMenuLayout.normalized(MoreMenuLayout.fromJson(prefs.getString(KEY_MORE_MENU_ROWS, null)) ?: MoreMenuLayout.DEFAULT),
     )
     private val _moreMenuEditHidden = MutableStateFlow(prefs.getBoolean(KEY_MORE_MENU_EDIT_HIDDEN, false))
+    private val _actionsBarKeys = MutableStateFlow(readActionsBar())
     private val _hiddenSelectionKeys = MutableStateFlow(
         prefs.getString(KEY_HIDDEN_SELECTION_ACTIONS, null)?.split(",")?.filter { it.isNotBlank() }?.toSet().orEmpty(),
     )
@@ -47,6 +51,9 @@ class DejavuSettings private constructor(context: Context) {
 
     /** Keys of the [RowAction]s shown on unpinned tab rows. */
     val unpinnedRowKeys: StateFlow<List<String>> = _unpinnedRowKeys.asStateFlow()
+
+    /** Keys of the [RowAction]s shown on folder rows. */
+    val folderRowKeys: StateFlow<List<String>> = _folderRowKeys.asStateFlow()
 
     /** Whether every container has its own essentials, shown in the workspaces using that container. */
     val essentialsPerContainer: StateFlow<Boolean> = _essentialsPerContainer.asStateFlow()
@@ -66,16 +73,31 @@ class DejavuSettings private constructor(context: Context) {
     /** Whether the "More" menu hides its button that opens the menu's settings. */
     val moreMenuEditHidden: StateFlow<Boolean> = _moreMenuEditHidden.asStateFlow()
 
+    /** Buttons of the actions bar below pages, as keys of its entries. See [ActionsBarLayout]. */
+    val actionsBarKeys: StateFlow<List<String>> = _actionsBarKeys.asStateFlow()
+
     /** Keys of the [RowAction]s left out of the selection bar. Every other action, new ones included, is shown. */
     val hiddenSelectionKeys: StateFlow<Set<String>> = _hiddenSelectionKeys.asStateFlow()
 
-    /** Enables or disables a row button. At most [MAX_ROW_ACTIONS] can be enabled. */
-    fun setRowAction(pinned: Boolean, key: String, enabled: Boolean) {
-        val flow = if (pinned) _pinnedRowKeys else _unpinnedRowKeys
+    /** Keys of the buttons of the rows of [place], which must be one of the rows. */
+    fun rowKeys(place: ActionPlace): StateFlow<List<String>> = when (place) {
+        ActionPlace.PINNED_ROWS -> pinnedRowKeys
+        ActionPlace.UNPINNED_ROWS -> unpinnedRowKeys
+        else -> folderRowKeys
+    }
+
+    /** Enables or disables a button of the rows of [place]. At most [MAX_ROW_ACTIONS] can be enabled. */
+    fun setRowAction(place: ActionPlace, key: String, enabled: Boolean) {
+        val (flow, prefKey) = when (place) {
+            ActionPlace.PINNED_ROWS -> _pinnedRowKeys to KEY_PINNED_ROW_ACTIONS
+            ActionPlace.UNPINNED_ROWS -> _unpinnedRowKeys to KEY_UNPINNED_ROW_ACTIONS
+            ActionPlace.FOLDER_ROWS -> _folderRowKeys to KEY_FOLDER_ROW_ACTIONS
+            else -> return
+        }
         val updated = if (enabled) flow.value + key else flow.value - key
         if (updated.distinct().size > MAX_ROW_ACTIONS) return
         flow.value = updated.distinct()
-        prefs.edit { putString(if (pinned) KEY_PINNED_ROW_ACTIONS else KEY_UNPINNED_ROW_ACTIONS, flow.value.joinToString(",")) }
+        prefs.edit { putString(prefKey, flow.value.joinToString(",")) }
     }
 
     fun setTemporaryContainersByDefault(enabled: Boolean) {
@@ -113,6 +135,33 @@ class DejavuSettings private constructor(context: Context) {
         prefs.edit { remove(KEY_MORE_MENU_ROWS) }
     }
 
+    /** Adds the entry with [key] to the end of the menu's last row, or of a new row when that one is full. */
+    fun addToMoreMenu(key: String) {
+        val rows = _moreMenuRows.value
+        if (rows.any { key in it }) return
+        val last = rows.lastOrNull()
+        val fits = last != null && last.size < MoreMenuLayout.MAX_PER_ROW && last.none(MoreMenuLayout::isFullRow) &&
+            !MoreMenuLayout.isFullRow(key)
+        setMoreMenuRows(if (fits) rows.dropLast(1) + listOf(last.orEmpty() + key) else rows + listOf(listOf(key)))
+    }
+
+    fun removeFromMoreMenu(key: String) = setMoreMenuRows(_moreMenuRows.value.map { row -> row - key })
+
+    fun setActionsBar(keys: List<String>) {
+        _actionsBarKeys.value = keys.distinct().take(ActionsBarLayout.MAX_BUTTONS)
+        prefs.edit { putString(KEY_ACTIONS_BAR, _actionsBarKeys.value.joinToString(",")) }
+    }
+
+    /** Adds the entry with [key] to the end of the actions bar, if it has room. */
+    fun addToActionsBar(key: String) {
+        val keys = _actionsBarKeys.value
+        if (key !in keys && keys.size < ActionsBarLayout.MAX_BUTTONS) setActionsBar(keys + key)
+    }
+
+    fun removeFromActionsBar(key: String) = setActionsBar(_actionsBarKeys.value - key)
+
+    fun resetActionsBar() = setActionsBar(ActionsBarLayout.fromMenu(MoreMenuLayout.DEFAULT))
+
     /** Shows or hides an action of the selection bar. */
     fun setSelectionAction(key: String, enabled: Boolean) {
         _hiddenSelectionKeys.value = if (enabled) _hiddenSelectionKeys.value - key else _hiddenSelectionKeys.value + key
@@ -135,14 +184,27 @@ class DejavuSettings private constructor(context: Context) {
         _customActions.value = _customActions.value.filterNot { it.id == id }
         writeCustomActions()
         val key = RowAction.keyOf(id)
-        setRowAction(pinned = true, key = key, enabled = false)
-        setRowAction(pinned = false, key = key, enabled = false)
+        listOf(ActionPlace.PINNED_ROWS, ActionPlace.UNPINNED_ROWS, ActionPlace.FOLDER_ROWS).forEach { place ->
+            setRowAction(place, key = key, enabled = false)
+        }
         setSelectionAction(key, enabled = true)
-        setMoreMenuRows(_moreMenuRows.value.map { row -> row - key })
+        removeFromMoreMenu(key)
+        removeFromActionsBar(key)
     }
 
     private fun readKeys(key: String, default: List<TabAction>): List<String> =
         prefs.getString(key, null)?.split(",")?.filter { it.isNotBlank() } ?: default.map { it.key }
+
+    /**
+     * The saved actions bar. Before it could be changed on its own, the bar showed the first row of the menu, so that
+     * is what it starts as, saved right away so that later changes to the menu leave it alone.
+     */
+    private fun readActionsBar(): List<String> {
+        prefs.getString(KEY_ACTIONS_BAR, null)?.let { saved -> return saved.split(",").filter { it.isNotBlank() } }
+        val initial = ActionsBarLayout.fromMenu(_moreMenuRows.value)
+        prefs.edit { putString(KEY_ACTIONS_BAR, initial.joinToString(",")) }
+        return initial
+    }
 
     private fun readCustomActions(): List<CustomAction> {
         val array = prefs.getString(KEY_CUSTOM_ACTIONS, null)?.let { runCatching { JSONArray(it) }.getOrNull() }
@@ -163,6 +225,7 @@ class DejavuSettings private constructor(context: Context) {
         private const val PREFS_NAME = "kaizen_settings"
         private const val KEY_PINNED_ROW_ACTIONS = "pinned_row_actions"
         private const val KEY_UNPINNED_ROW_ACTIONS = "unpinned_row_actions"
+        private const val KEY_FOLDER_ROW_ACTIONS = "folder_row_actions"
         private const val KEY_CUSTOM_ACTIONS = "custom_actions"
         private const val KEY_HIDDEN_SELECTION_ACTIONS = "hidden_selection_actions"
         private const val KEY_ESSENTIALS_PER_CONTAINER = "essentials_per_container"
@@ -171,6 +234,7 @@ class DejavuSettings private constructor(context: Context) {
         private const val KEY_EXTERNAL_LINK_CONTAINER = "external_link_container"
         private const val KEY_MORE_MENU_ROWS = "more_menu_rows"
         private const val KEY_MORE_MENU_EDIT_HIDDEN = "more_menu_edit_hidden"
+        private const val KEY_ACTIONS_BAR = "actions_bar"
         private val DEFAULT_PINNED_ROW_ACTIONS = listOf(TabAction.CLOSE)
         private val DEFAULT_UNPINNED_ROW_ACTIONS = listOf(TabAction.PIN, TabAction.CLOSE)
 
@@ -188,10 +252,10 @@ class DejavuSettings private constructor(context: Context) {
     }
 }
 
-/** The row buttons chosen with [keys], in display order. */
-fun resolveRowActions(keys: List<String>, pinned: Boolean, customActions: List<CustomAction>): List<RowAction> =
-    RowAction.available(pinned, customActions).filter { it.key in keys }.take(DejavuSettings.MAX_ROW_ACTIONS)
+/** The buttons chosen with [keys] for the rows of [place], in display order. */
+fun resolveRowActions(keys: List<String>, place: ActionPlace, customActions: List<CustomAction>): List<RowAction> =
+    RowAction.available(place, customActions).filter { it.key in keys }.take(DejavuSettings.MAX_ROW_ACTIONS)
 
 /** The actions of the selection bar in display order, without the ones hidden with [hiddenKeys]. */
 fun resolveSelectionActions(hiddenKeys: Set<String>, customActions: List<CustomAction>): List<RowAction> =
-    RowAction.selectionBar(customActions).filter { it.key !in hiddenKeys }
+    RowAction.available(ActionPlace.SELECTION, customActions).filter { it.key !in hiddenKeys }

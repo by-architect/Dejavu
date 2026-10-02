@@ -90,8 +90,6 @@
     <string name="dejavu_settings_title">Dejavu</string>
     <string name="dejavu_about_content">%1$s — Mozilla ясаган Firefox нигезендә ясалган.</string>
     <string name="dejavu_settings_tab_actions">Таб гамәлләре</string>
-    <string name="dejavu_settings_tab_actions_entry_summary">Табтагы төймәләр һәм сайланган таблар өчен гамәлләр</string>
-    <string name="dejavu_settings_tab_actions_hint">Беркетелгән һәм беркетелмәгән таб рәтләренең төймәләрен һәм табларны сайлаганда күренә торган гамәлләрне сайлагыз. Үзегез өстәгән гамәлләр өчесендә дә кулланыла ала.</string>
     <string name="dejavu_settings_pinned_tabs">Беркетелгән таблар</string>
     <string name="dejavu_settings_unpinned_tabs">Беркетелмәгән таблар</string>
     <string name="dejavu_settings_all_actions">Барлык гамәлләр</string>
@@ -188,7 +186,6 @@
     <string name="dejavu_actions_bar_search">Эзләү</string>
     <string name="dejavu_actions_bar_home">Баш бит</string>
     <string name="dejavu_settings_more_menu_summary">Битләр астындагы гамәлләр панеле һәм ул ачкан меню</string>
-    <string name="dejavu_more_menu_hint">Беренче рәт — битләр астындагы гамәлләр панеле. Бөтен менюны ачу өчен гамәлләр панелен өскә, яки адрес панелен аска шудырыгыз. Төймәне күчерер яки чыгарыр өчен аңа басыгыз. Киңәйтүләр һәрвакыт бөтен рәтне ала.</string>
     <string name="dejavu_more_menu_row">%1$d нче рәт</string>
     <string name="dejavu_more_menu_add_item">Төймә өстәү</string>
     <string name="dejavu_more_menu_add_row">Рәт өстәү</string>

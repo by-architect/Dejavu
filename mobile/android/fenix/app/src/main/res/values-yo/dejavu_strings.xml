@@ -90,8 +90,6 @@
     <string name="dejavu_settings_title">Dejavu</string>
     <string name="dejavu_about_content">%1$s dá lórí Firefox, tí Mozilla ṣe.</string>
     <string name="dejavu_settings_tab_actions">Àwọn iṣe táàbù</string>
-    <string name="dejavu_settings_tab_actions_entry_summary">Àwọn bọ́tìnnì lórí táàbù, àti àwọn iṣe fún táàbù tí a yàn</string>
-    <string name="dejavu_settings_tab_actions_hint">Yan àwọn bọ́tìnnì fún ọ̀nà táàbù tí a fi Pin sí àti èyí tí a kò fi Pin sí, àti àwọn iṣe tí ó máa ń hàn nígbà tí o bá yan táàbù. Àwọn iṣe tí ìwọ fúnra rẹ ṣe fi kún ni a lè lò nínú gbogbo àwọn mẹ́tẹ̀ẹ̀ta náà.</string>
     <string name="dejavu_settings_pinned_tabs">Àwọn táàbù tí a fi Pin sí</string>
     <string name="dejavu_settings_unpinned_tabs">Àwọn táàbù tí a kò fi Pin sí</string>
     <string name="dejavu_settings_all_actions">Gbogbo àwọn iṣe</string>
@@ -188,7 +186,6 @@
     <string name="dejavu_actions_bar_search">Wá</string>
     <string name="dejavu_actions_bar_home">Home</string>
     <string name="dejavu_settings_more_menu_summary">Ọ̀pá iṣe tí ó wà ní ìsàlẹ̀ ojú-ìwé àti menu tí ó ń ṣí</string>
-    <string name="dejavu_more_menu_hint">Ọ̀nà àkọ́kọ́ ni ọ̀pá iṣe tí ó wà ní ìsàlẹ̀ ojú-ìwé. Fi ọwọ́ rẹ yíyí ọ̀pá iṣe sókè, tàbí ọ̀pá àdírẹ́sì sísàlẹ̀, láti ṣí gbogbo menu. Tẹ bọ́tìnnì kan láti gbé e lọ tàbí yọ ọ́ kúrò. Ìfikún máa ń gba gbogbo ọ̀nà kan nígbà gbogbo.</string>
     <string name="dejavu_more_menu_row">Ọ̀nà %1$d</string>
     <string name="dejavu_more_menu_add_item">Fi bọ́tìnnì kún</string>
     <string name="dejavu_more_menu_add_row">Fi ọ̀nà kún</string>

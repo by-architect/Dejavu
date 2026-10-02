@@ -90,8 +90,6 @@
     <string name="dejavu_settings_title">Dejavu</string>
     <string name="dejavu_about_content">%1$s bazuje na Firefox, wutworjeny wot Mozilla.</string>
     <string name="dejavu_settings_tab_actions">Akcije za rajtarki</string>
-    <string name="dejavu_settings_tab_actions_entry_summary">Tłóčatka na rajtarkach a akcije za wubrane rajtarki</string>
-    <string name="dejavu_settings_tab_actions_hint">Wubjer tłóčatka rjadow připjatych a njepřipjatych rajtarkow, a akcije, kotrež so pokazuja, hdyž rajtarki wuběraš. Akcije, kotrež sam přidawaš, hodźa so we wšěch třoch wužiwać.</string>
     <string name="dejavu_settings_pinned_tabs">Připjate rajtarki</string>
     <string name="dejavu_settings_unpinned_tabs">Njepřipjate rajtarki</string>
     <string name="dejavu_settings_all_actions">Wšě akcije</string>
@@ -188,7 +186,6 @@
     <string name="dejavu_actions_bar_search">Pytać</string>
     <string name="dejavu_actions_bar_home">Doma</string>
     <string name="dejavu_settings_more_menu_summary">Akcijowa lajsta pod stronami a meni, kotryž so wočinja</string>
-    <string name="dejavu_more_menu_hint">Prěni rjad je akcijowa lajsta pod stronami. Suń akcijowu lajstu horje, abo adresowu lajstu deleka, zo by cyły meni wočinił. Podótkń so tłóčatka, zo by je přesunył abo wotstronił. Rozšěrjenja stajnje cyły rjad zaběraja.</string>
     <string name="dejavu_more_menu_row">Rjad %1$d</string>
     <string name="dejavu_more_menu_add_item">Tłóčatko přidać</string>
     <string name="dejavu_more_menu_add_row">Rjad přidać</string>

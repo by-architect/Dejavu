@@ -90,8 +90,6 @@
     <string name="dejavu_settings_title">Dejavu</string>
     <string name="dejavu_about_content">%1$s è basato su Firefox, sviluppato da Mozilla.</string>
     <string name="dejavu_settings_tab_actions">Azioni sulle schede</string>
-    <string name="dejavu_settings_tab_actions_entry_summary">Pulsanti sulle schede e azioni per le schede selezionate</string>
-    <string name="dejavu_settings_tab_actions_hint">Scegli i pulsanti delle righe di schede bloccate e non bloccate, e le azioni mostrate quando selezioni le schede. Le azioni che aggiungi tu possono essere usate in tutti e tre i casi.</string>
     <string name="dejavu_settings_pinned_tabs">Schede bloccate</string>
     <string name="dejavu_settings_unpinned_tabs">Schede non bloccate</string>
     <string name="dejavu_settings_all_actions">Tutte le azioni</string>
@@ -188,7 +186,6 @@
     <string name="dejavu_actions_bar_search">Cerca</string>
     <string name="dejavu_actions_bar_home">Home</string>
     <string name="dejavu_settings_more_menu_summary">La barra delle azioni sotto le pagine e il menu che apre</string>
-    <string name="dejavu_more_menu_hint">La prima riga è la barra delle azioni sotto le pagine. Scorri la barra delle azioni verso l’alto, o la barra degli indirizzi verso il basso, per aprire il menu completo. Tocca un pulsante per spostarlo o rimuoverlo. Le estensioni occupano sempre una riga intera.</string>
     <string name="dejavu_more_menu_row">Riga %1$d</string>
     <string name="dejavu_more_menu_add_item">Aggiungi un pulsante</string>
     <string name="dejavu_more_menu_add_row">Aggiungi una riga</string>

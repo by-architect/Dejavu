@@ -90,8 +90,6 @@
     <string name="dejavu_settings_title">Dejavu</string>
     <string name="dejavu_about_content">%1$s ،Firefox پر مبنی ہے، جسے Mozilla نے بنایا ہے۔</string>
     <string name="dejavu_settings_tab_actions">ٹیب ایکشنز</string>
-    <string name="dejavu_settings_tab_actions_entry_summary">ٹیبز پر بٹنز، اور منتخب ٹیبز کے لیے ایکشنز</string>
-    <string name="dejavu_settings_tab_actions_hint">پن کردہ اور ان پن شدہ ٹیب صفوں کے بٹنز، اور ٹیبز منتخب کرنے پر دکھائے جانے والے ایکشنز چنیں۔ آپ خود جو ایکشنز شامل کرتے ہیں وہ تینوں میں استعمال ہو سکتے ہیں۔</string>
     <string name="dejavu_settings_pinned_tabs">پن کردہ ٹیبز</string>
     <string name="dejavu_settings_unpinned_tabs">ان پن شدہ ٹیبز</string>
     <string name="dejavu_settings_all_actions">تمام ایکشنز</string>
@@ -188,7 +186,6 @@
     <string name="dejavu_actions_bar_search">تلاش کریں</string>
     <string name="dejavu_actions_bar_home">ہوم</string>
     <string name="dejavu_settings_more_menu_summary">صفحات کے نیچے ایکشن بار اور وہ مینو جو یہ کھولتا ہے</string>
-    <string name="dejavu_more_menu_hint">پہلی صف صفحات کے نیچے موجود ایکشن بار ہے۔ پورا مینو کھولنے کے لیے ایکشن بار کو اوپر، یا ایڈریس بار کو نیچے سوائپ کریں۔ کسی بٹن کو منتقل یا ہٹانے کے لیے اس پر ٹیپ کریں۔ ایکسٹینشنز ہمیشہ پوری صف لیتی ہیں۔</string>
     <string name="dejavu_more_menu_row">صف %1$d</string>
     <string name="dejavu_more_menu_add_item">بٹن شامل کریں</string>
     <string name="dejavu_more_menu_add_row">صف شامل کریں</string>

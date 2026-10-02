@@ -90,8 +90,6 @@
     <string name="dejavu_settings_title">Dejavu</string>
     <string name="dejavu_about_content">%1$s มีพื้นฐานมาจาก Firefox ที่พัฒนาโดย Mozilla</string>
     <string name="dejavu_settings_tab_actions">การดำเนินการของแท็บ</string>
-    <string name="dejavu_settings_tab_actions_entry_summary">ปุ่มบนแท็บ และการดำเนินการสำหรับแท็บที่เลือก</string>
-    <string name="dejavu_settings_tab_actions_hint">เลือกปุ่มสำหรับแถวแท็บที่ปักหมุดและไม่ได้ปักหมุด รวมถึงการดำเนินการที่แสดงเมื่อคุณเลือกแท็บ การดำเนินการที่คุณเพิ่มเองสามารถใช้ได้ทั้งสามแบบ</string>
     <string name="dejavu_settings_pinned_tabs">แท็บที่ปักหมุด</string>
     <string name="dejavu_settings_unpinned_tabs">แท็บที่ไม่ได้ปักหมุด</string>
     <string name="dejavu_settings_all_actions">การดำเนินการทั้งหมด</string>
@@ -188,7 +186,6 @@
     <string name="dejavu_actions_bar_search">ค้นหา</string>
     <string name="dejavu_actions_bar_home">หน้าแรก</string>
     <string name="dejavu_settings_more_menu_summary">แถบการดำเนินการด้านล่างหน้าเว็บและเมนูที่เปิดจากแถบนั้น</string>
-    <string name="dejavu_more_menu_hint">แถวแรกคือแถบการดำเนินการด้านล่างหน้าเว็บ ปัดแถบการดำเนินการขึ้น หรือปัดแถบที่อยู่ลง เพื่อเปิดเมนูทั้งหมด แตะปุ่มเพื่อย้ายหรือนำออก ส่วนขยายจะใช้พื้นที่ทั้งแถวเสมอ</string>
     <string name="dejavu_more_menu_row">แถวที่ %1$d</string>
     <string name="dejavu_more_menu_add_item">เพิ่มปุ่ม</string>
     <string name="dejavu_more_menu_add_row">เพิ่มแถว</string>

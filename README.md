@@ -44,6 +44,13 @@ around late October 2026. It needs Android 8.0 or newer. Star this repository to
 
 **iOS:** We are working on an iOS app. News about it will be shared here.
 
+## Roadmap
+
+See what is done, what is being worked on and what comes next. The picture follows the
+[Dejavu Roadmap](https://github.com/users/by-architect/projects/1) board and updates itself; tap it to open the board.
+
+<a href="https://github.com/users/by-architect/projects/1"><img src="https://raw.githubusercontent.com/by-architect/Dejavu/roadmap/roadmap.svg" alt="The Dejavu Roadmap board: what is done, what is being worked on and what comes next"></a>
+
 ## Features
 
 Dejavu is made of small things that save you time every day.
@@ -69,9 +76,10 @@ start a home automation.
 
 - **Edit every button:** Add, remove and move any button in the menu, add new rows, and put your own custom actions
   between them.
-- **Choose your actions bar:** The first row of the menu is the actions bar below every page, so the buttons you use
-  most are always one tap away.
-- **Tab buttons too:** Choose the buttons on pinned tabs, on other tabs, and on the bar for selected tabs.
+- **Choose your actions bar:** Pick the buttons of the actions bar below every page, Home and Search included, so the
+  buttons you use most are always one tap away.
+- **One list of actions:** Every action, your own included, is in one list. Put each one on pinned tabs, other tabs,
+  folders, the bar for selected tabs, the menu or the actions bar. An action on a folder reaches every tab inside it.
 
 ### Open links from other apps where they belong
 

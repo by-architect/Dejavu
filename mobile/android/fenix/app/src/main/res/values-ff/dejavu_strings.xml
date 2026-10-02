@@ -90,8 +90,6 @@
     <string name="dejavu_settings_title">Dejavu</string>
     <string name="dejavu_about_content">%1$s fondé sur Firefox, fait par Mozilla.</string>
     <string name="dejavu_settings_tab_actions">Actions des tabbe</string>
-    <string name="dejavu_settings_tab_actions_entry_summary">Boutons sur les tabbe, et actions pour les tabbe sélectionnées</string>
-    <string name="dejavu_settings_tab_actions_hint">Choisis les boutons des lignes de tabbe épinglées et non épinglées, et les actions affichées quand tu sélectionnes des tabbe. Les actions que tu ajoutes toi-même peuvent être utilisées dans les trois.</string>
     <string name="dejavu_settings_pinned_tabs">Tabbe épinglées</string>
     <string name="dejavu_settings_unpinned_tabs">Tabbe non épinglées</string>
     <string name="dejavu_settings_all_actions">Toutes les actions</string>
@@ -188,7 +186,6 @@
     <string name="dejavu_actions_bar_search">Yiytu</string>
     <string name="dejavu_actions_bar_home">Accueil</string>
     <string name="dejavu_settings_more_menu_summary">La barre d\'actions sous les pages et le menu qu\'elle ouvre</string>
-    <string name="dejavu_more_menu_hint">La première ligne est la barre d\'actions sous les pages. Glisse la barre d\'actions vers le haut, ou la barre d\'adresse vers le bas, pour ouvrir tout le menu. Touche un bouton pour le déplacer ou le retirer. Les extensions occupent toujours une ligne entière.</string>
     <string name="dejavu_more_menu_row">Ligne %1$d</string>
     <string name="dejavu_more_menu_add_item">Ajouter un bouton</string>
     <string name="dejavu_more_menu_add_row">Ajouter une ligne</string>

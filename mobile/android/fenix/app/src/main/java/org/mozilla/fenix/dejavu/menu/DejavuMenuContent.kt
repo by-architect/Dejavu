@@ -33,6 +33,7 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import androidx.core.graphics.drawable.toDrawable
+import androidx.navigation.NavController
 import mozilla.components.browser.state.selector.normalTabs
 import mozilla.components.browser.state.selector.selectedTab
 import mozilla.components.browser.state.state.TabSessionState
@@ -44,6 +45,7 @@ import org.mozilla.fenix.components.components
 import org.mozilla.fenix.components.menu.MenuAccessPoint
 import org.mozilla.fenix.components.menu.store.MenuAction
 import org.mozilla.fenix.components.menu.store.MenuStore
+import org.mozilla.fenix.dejavu.actions.TabAction
 import org.mozilla.fenix.dejavu.settings.DejavuSettings
 import org.mozilla.fenix.dejavu.workspaces.WorkspaceRepository
 import org.mozilla.fenix.dejavu.workspaces.WorkspaceState
@@ -115,16 +117,18 @@ object DejavuMenu {
  * @param accessPoint Where the menu was opened from.
  * @param fromTop Whether the menu is shown at the top of the screen.
  * @param opening What the menu shows first.
+ * @param navController Opens the screens tab actions lead to.
  * @param onEdit Opens the settings of the menu.
  * @param onDismiss Closes the menu.
  */
-@Suppress("LongParameterList")
+@Suppress("LongParameterList", "LongMethod")
 @Composable
 fun DejavuMenuContent(
     menuStore: MenuStore,
     accessPoint: MenuAccessPoint,
     fromTop: Boolean,
     opening: DejavuMenu.Opening,
+    navController: NavController,
     onEdit: () -> Unit,
     onDismiss: () -> Unit,
 ) {
@@ -165,6 +169,7 @@ fun DejavuMenuContent(
         val editHidden by settings.moreMenuEditHidden.collectAsState()
         var extensionsExpanded by remember { mutableStateOf(opening == DejavuMenu.Opening.EXTENSIONS) }
         var pickingSplit by remember { mutableStateOf(opening == DejavuMenu.Opening.SPLIT_PICKER) }
+        var asking by remember { mutableStateOf<TabAction?>(null) }
         val current = tab ?: return@MoreMenuSheet
         val state = moreMenuState(
             fenix = fenix,
@@ -174,7 +179,11 @@ fun DejavuMenuContent(
             isDesktopMode = menuState.isDesktopMode,
             canSummarize = menuState.summarizationMenuState.visible && menuState.summarizationMenuState.enabled,
         )
-        val actions = MenuActions(context, fenix, menuStore, repository, settings, current, onDismiss)
+        val actions = MenuActions(context, fenix, menuStore, repository, settings, current, navController, onDismiss)
+
+        asking?.let { action ->
+            ShownTabActionDialog(action = action, tab = current, navController = navController, onDone = onDismiss)
+        }
 
         if (pickingSplit) {
             val workspaceId = workspaces.workspaceOf(current.id)
@@ -201,6 +210,7 @@ fun DejavuMenuContent(
                 when {
                     entry == MoreMenuEntry.BuiltIn(MoreMenuItem.EXTENSIONS) -> extensionsExpanded = !extensionsExpanded
                     entry == MoreMenuEntry.BuiltIn(MoreMenuItem.SPLIT_VIEW) && !state.isSplit -> pickingSplit = true
+                    entry is MoreMenuEntry.Tab && entry.action.asksFirst -> asking = entry.action
                     else -> actions.run(entry, state, workspaces)
                 }
             },
@@ -251,23 +261,32 @@ internal fun moreMenuState(
 /** Carries out the entries of the "More" menu for [tab]. */
 @Suppress("LongParameterList")
 private class MenuActions(
-    context: Context,
+    private val context: Context,
     components: Components,
     private val menuStore: MenuStore,
     repository: WorkspaceRepository,
     settings: DejavuSettings,
-    tab: TabSessionState,
+    private val tab: TabSessionState,
+    private val navController: NavController,
     private val dismiss: () -> Unit,
 ) {
     private val commands = DejavuTabCommands(context, components, repository, settings, tab)
 
     @Suppress("CyclomaticComplexMethod")
     fun run(entry: MoreMenuEntry, state: MoreMenuState, workspaces: WorkspaceState) {
-        val item = (entry as? MoreMenuEntry.BuiltIn)?.item
-        if (item == null) {
-            commands.runCustomAction((entry as MoreMenuEntry.Custom).action, workspaces)
-            dismiss()
-            return
+        val item = when (entry) {
+            is MoreMenuEntry.BuiltIn -> entry.item
+            is MoreMenuEntry.Custom -> {
+                commands.runCustomAction(entry.action, workspaces)
+                dismiss()
+                return
+            }
+            is MoreMenuEntry.Tab -> {
+                dismiss()
+                runOnShownTab(entry.action, context, navController, tab)
+                return
+            }
+            MoreMenuEntry.Home, MoreMenuEntry.Search -> return
         }
         if (commands.run(item, workspaces)) {
             dismiss()

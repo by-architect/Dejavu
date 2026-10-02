@@ -90,8 +90,6 @@
     <string name="dejavu_settings_title">Dejavu</string>
     <string name="dejavu_about_content">%1$s bazohet në Firefox-in, prodhuar nga Mozilla.</string>
     <string name="dejavu_settings_tab_actions">Veprime skedash</string>
-    <string name="dejavu_settings_tab_actions_entry_summary">Butona në skeda, dhe veprime për skedat e përzgjedhura</string>
-    <string name="dejavu_settings_tab_actions_hint">Zgjidhni butonat për rreshtat e skedave të fiksuara dhe të pafiksuara, dhe veprimet e shfaqura kur përzgjidhni skeda. Veprimet që shtoni vetë mund të përdoren në të tria rastet.</string>
     <string name="dejavu_settings_pinned_tabs">Skeda të fiksuara</string>
     <string name="dejavu_settings_unpinned_tabs">Skeda të pafiksuara</string>
     <string name="dejavu_settings_all_actions">Krejt veprimet</string>
@@ -188,7 +186,6 @@
     <string name="dejavu_actions_bar_search">Kërko</string>
     <string name="dejavu_actions_bar_home">Kreu</string>
     <string name="dejavu_settings_more_menu_summary">Shiriti i veprimeve nën faqet dhe menuja që hap</string>
-    <string name="dejavu_more_menu_hint">Rreshti i parë është shiriti i veprimeve nën faqet. Rrëshqitni shiritin e veprimeve lart, ose shiritin e adresave poshtë, që të hapet krejt menuja. Prekni një buton që ta lëvizni ose hiqni. Zgjerimet zënë përherë një rresht të tërë.</string>
     <string name="dejavu_more_menu_row">Rreshti %1$d</string>
     <string name="dejavu_more_menu_add_item">Shto buton</string>
     <string name="dejavu_more_menu_add_row">Shto rresht</string>

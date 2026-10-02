@@ -11,6 +11,7 @@ import org.mozilla.fenix.dejavu.actions.TabAction
 import org.mozilla.fenix.dejavu.workspaces.MAX_FOLDER_DEPTH
 import org.mozilla.fenix.dejavu.workspaces.PinnedItem
 import org.mozilla.fenix.dejavu.workspaces.WorkspaceState
+import org.mozilla.fenix.dejavu.workspaces.isSamePage
 
 /** Tabs, pinned tabs (essentials included) and folders picked in selection mode. */
 data class Selection(
@@ -73,13 +74,13 @@ data class ActionTargets(
     val isSingleFolder: Boolean
         get() = folders.size == 1 && tabs.isEmpty() && pins.isEmpty()
 
-    /** URL and title of every target, preferring the live page of open pinned tabs. */
+    /** URL and title of every target: the live page of open pinned tabs, the page closed ones open on. */
     val links: List<Pair<String, String>>
         get() {
             val open = (pinnedTabs + folderTabs).associateBy { it.id }
             return tabs.map { it.content.url to it.content.title } + allPins.map { pin ->
                 val tab = pin.tabId?.let { open[it] }
-                if (tab != null) tab.content.url to tab.content.title else pin.url.orEmpty() to pin.title
+                if (tab != null) tab.content.url to tab.content.title else pin.pageUrl to (pin.openTitle ?: pin.title)
             }
         }
 
@@ -101,8 +102,15 @@ data class ActionTargets(
             return allPins.mapNotNull { pin ->
                 val tab = pin.tabId?.let { open[it] } ?: return@mapNotNull null
                 val url = pin.url ?: return@mapNotNull null
-                (pin to tab).takeIf { comparable(tab.content.url) != comparable(url) }
+                (pin to tab).takeIf { !isSamePage(tab.content.url, url) }
             }
+        }
+
+    /** Closed pinned tabs that open on another page than their pinned one, the page their tab closed on. */
+    val closedChangedPins: List<PinnedItem>
+        get() {
+            val openIds = (pinnedTabs + folderTabs).map { it.id }.toSet()
+            return allPins.filter { pin -> pin.openUrl != null && pin.tabId !in openIds }
         }
 
     fun isEmpty() = tabs.isEmpty() && pins.isEmpty() && folders.isEmpty()
@@ -133,8 +141,6 @@ data class ActionTargets(
             val tabIds = pins.mapNotNull { it.tabId }.toSet()
             return filter { it.id in tabIds }
         }
-
-        private fun comparable(url: String) = url.substringBefore('#').trimEnd('/')
     }
 }
 
@@ -169,21 +175,24 @@ fun WorkspaceState.titleOf(tab: TabSessionState): String =
 fun PinnedItem.label(tab: TabSessionState?): String = when {
     staticLabel -> title
     tab != null -> tab.displayTitle
-    else -> pageLabel(title, url.orEmpty())
+    else -> pageLabel(openTitle ?: title, pageUrl)
 }
 
-/** Whether [this] action can do anything for [targets]. */
+/** The page a closed pinned tab opens on: the one its tab closed on, or else its pinned address. */
+val PinnedItem.pageUrl: String
+    get() = openUrl ?: url.orEmpty()
+
+/** Whether [this] action can do anything for [targets]. Actions on folders reach every tab inside them. */
 @Suppress("CyclomaticComplexMethod")
 fun TabAction.appliesTo(targets: ActionTargets): Boolean = when (this) {
     TabAction.CLOSE -> targets.openTabs.isNotEmpty()
     TabAction.PIN -> targets.tabs.isNotEmpty()
-    TabAction.UNPIN -> targets.pins.any { !it.essential }
+    TabAction.UNPIN -> targets.allPins.any { !it.essential }
     TabAction.SLEEP -> targets.awakeTabs.isNotEmpty()
     TabAction.BOOKMARK, TabAction.SHARE, TabAction.COPY_LINK -> targets.links.any { it.first.isNotBlank() }
-    TabAction.DUPLICATE -> targets.folders.isEmpty() && (targets.tabs.isNotEmpty() || targets.pins.isNotEmpty())
-    TabAction.RESET_PIN -> targets.changedPins.isNotEmpty()
-    TabAction.ADD_TO_ESSENTIALS ->
-        targets.folders.isEmpty() && (targets.tabs.isNotEmpty() || targets.pins.any { !it.essential })
+    TabAction.DUPLICATE -> targets.tabs.isNotEmpty() || targets.allPins.isNotEmpty()
+    TabAction.RESET_PIN -> targets.changedPins.isNotEmpty() || targets.closedChangedPins.isNotEmpty()
+    TabAction.ADD_TO_ESSENTIALS -> targets.tabs.isNotEmpty() || targets.allPins.any { !it.essential }
     TabAction.REMOVE_FROM_ESSENTIALS -> targets.pins.any { it.essential }
     TabAction.NEW_FOLDER -> !targets.isEmpty() && !targets.isSingleFolder
     TabAction.NEW_SUBFOLDER -> targets.isSingleFolder && targets.canAddSubfolder
@@ -193,7 +202,7 @@ fun TabAction.appliesTo(targets: ActionTargets): Boolean = when (this) {
     TabAction.MOVE_TO_FOLDER, TabAction.MOVE_TO_WORKSPACE -> !targets.isEmpty()
     TabAction.CHANGE_CONTAINER -> targets.tabs.isNotEmpty() || targets.allPins.isNotEmpty()
     TabAction.RENAME_TAB -> targets.folders.isEmpty() && targets.tabs.size + targets.pins.size == 1
-    TabAction.SPLIT_VIEW -> targets.folders.isEmpty() && (targets.tabs + targets.pinnedTabs).size == 2
+    TabAction.SPLIT_VIEW -> targets.openTabs.size == 2
     TabAction.UNSPLIT -> targets.splitTabIds.isNotEmpty()
 }
 

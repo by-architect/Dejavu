@@ -131,8 +131,16 @@
     <!-- About page. %1$s is the name of the app. -->
     <string name="dejavu_about_content">%1$s is based on Firefox, made by Mozilla.</string>
     <string name="dejavu_settings_tab_actions">Tab actions</string>
-    <string name="dejavu_settings_tab_actions_entry_summary">Buttons on tabs, and actions for selected tabs</string>
-    <string name="dejavu_settings_tab_actions_hint">Choose the buttons of pinned and unpinned tab rows, and the actions shown when you select tabs. Actions you add yourself can be used in all three.</string>
+    <string name="dejavu_settings_tab_actions_entry_summary">One list of actions, and where each one shows</string>
+    <string name="dejavu_settings_tab_actions_hint">All actions are in one list, the ones you add yourself included. Choose where each one shows: on pinned tabs, unpinned tabs and folders, in the bar of selected tabs, in the More menu and in the actions bar below pages. Actions on a folder reach every tab inside it.</string>
+    <string name="dejavu_settings_where_actions_show">Where actions show</string>
+    <string name="dejavu_settings_folders">Folders</string>
+    <string name="dejavu_settings_selection_bar">Selection bar</string>
+    <string name="dejavu_settings_folder_actions_hint">Choose up to %1$d buttons for folder rows. They act on every tab inside the folder and its subfolders.</string>
+    <string name="dejavu_settings_action_places_none">Not shown anywhere</string>
+    <string name="dejavu_settings_action_place_unavailable">Does nothing there</string>
+    <string name="dejavu_settings_action_place_full">No room left</string>
+    <string name="dejavu_done">Done</string>
     <string name="dejavu_settings_pinned_tabs">Pinned tabs</string>
     <string name="dejavu_settings_unpinned_tabs">Unpinned tabs</string>
     <string name="dejavu_settings_all_actions">All actions</string>
@@ -251,7 +259,9 @@
     <string name="dejavu_actions_bar_search">Search</string>
     <string name="dejavu_actions_bar_home">Home</string>
     <string name="dejavu_settings_more_menu_summary">The actions bar below pages and the menu it opens</string>
-    <string name="dejavu_more_menu_hint">The first row is the actions bar below pages. Swipe the actions bar up, or the address bar down, to open the whole menu. Tap a button to move or remove it. Extensions always take a whole row.</string>
+    <string name="dejavu_more_menu_hint">Swipe the actions bar up, or the address bar down, to open the whole menu. Tap a button to move or remove it. Extensions always take a whole row.</string>
+    <string name="dejavu_actions_bar_hint">The buttons below pages. They act on the page you are on.</string>
+    <string name="dejavu_actions_bar_all_added">Every button is already in the bar.</string>
     <string name="dejavu_more_menu_row">Row %1$d</string>
     <string name="dejavu_more_menu_add_item">Add a button</string>
     <string name="dejavu_more_menu_add_row">Add a row</string>

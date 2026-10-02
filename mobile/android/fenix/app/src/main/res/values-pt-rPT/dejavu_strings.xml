@@ -90,8 +90,6 @@
     <string name="dejavu_settings_title">Dejavu</string>
     <string name="dejavu_about_content">%1$s é baseado no Firefox, feito pela Mozilla.</string>
     <string name="dejavu_settings_tab_actions">Ações de separadores</string>
-    <string name="dejavu_settings_tab_actions_entry_summary">Botões nos separadores e ações para os separadores selecionados</string>
-    <string name="dejavu_settings_tab_actions_hint">Escolhe os botões das linhas de separadores fixados e não fixados, e as ações mostradas ao selecionar separadores. As ações que adicionares podem ser usadas nas três.</string>
     <string name="dejavu_settings_pinned_tabs">Separadores fixados</string>
     <string name="dejavu_settings_unpinned_tabs">Separadores não fixados</string>
     <string name="dejavu_settings_all_actions">Todas as ações</string>
@@ -188,7 +186,6 @@
     <string name="dejavu_actions_bar_search">Pesquisar</string>
     <string name="dejavu_actions_bar_home">Início</string>
     <string name="dejavu_settings_more_menu_summary">A barra de ações abaixo das páginas e o menu que ela abre</string>
-    <string name="dejavu_more_menu_hint">A primeira linha é a barra de ações abaixo das páginas. Desliza a barra de ações para cima, ou a barra de endereço para baixo, para abrir o menu completo. Toca num botão para o mover ou remover. As extensões ocupam sempre uma linha inteira.</string>
     <string name="dejavu_more_menu_row">Linha %1$d</string>
     <string name="dejavu_more_menu_add_item">Adicionar um botão</string>
     <string name="dejavu_more_menu_add_row">Adicionar uma linha</string>

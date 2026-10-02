@@ -90,8 +90,6 @@
     <string name="dejavu_settings_title">Dejavu</string>
     <string name="dejavu_about_content">%1$s پشتبەستووە بە Firefox، دروستکراوە لەلایەن Mozilla.</string>
     <string name="dejavu_settings_tab_actions">کردارەکانی بازدەر</string>
-    <string name="dejavu_settings_tab_actions_entry_summary">دوگمەکان لەسەر بازدەرەکان، و کردارەکان بۆ بازدەرە هەڵبژێردراوەکان</string>
-    <string name="dejavu_settings_tab_actions_hint">دوگمەکانی ڕیزی بازدەرە چەسپاو و ناچەسپاوەکان، و کردارەکانی کە لە کاتی هەڵبژاردنی بازدەردا پیشان دەدرێن هەڵبژێرە. کردارەکانی کە خۆت زیادیان دەکەیت لە هەر سێیەکەدا بەکاردێن.</string>
     <string name="dejavu_settings_pinned_tabs">بازدەرە چەسپاوەکان</string>
     <string name="dejavu_settings_unpinned_tabs">بازدەرە ناچەسپاوەکان</string>
     <string name="dejavu_settings_all_actions">هەموو کردارەکان</string>
@@ -188,7 +186,6 @@
     <string name="dejavu_actions_bar_search">گەڕان</string>
     <string name="dejavu_actions_bar_home">ماڵەوە</string>
     <string name="dejavu_settings_more_menu_summary">شریتی کردارەکان لە خوارەوەی پەڕەکان و ئەو پێڕستەی کە دەیکاتەوە</string>
-    <string name="dejavu_more_menu_hint">یەکەم ڕیز شریتی کردارەکانە لە خوارەوەی پەڕەکان. بۆ کردنەوەی هەموو پێڕستەکە، شریتی کردارەکان بەرەو سەرەوە، یان شریتی ناونیشان بەرەو خوارەوە فڕێبدە. دەست لەسەر دوگمەیەک بدە بۆ گواستنەوە یان لابردنی. پێوەکراوەکان هەمیشە هەموو ڕیزێک دادەگرن.</string>
     <string name="dejavu_more_menu_row">ڕیزی %1$d</string>
     <string name="dejavu_more_menu_add_item">زیادکردنی دوگمە</string>
     <string name="dejavu_more_menu_add_row">زیادکردنی ڕیز</string>

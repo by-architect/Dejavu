@@ -9,8 +9,10 @@ import androidx.annotation.StringRes
 import mozilla.components.ui.icons.R as iconsR
 import org.json.JSONArray
 import org.mozilla.fenix.R
+import org.mozilla.fenix.dejavu.actions.ActionPlace
 import org.mozilla.fenix.dejavu.actions.CustomAction
 import org.mozilla.fenix.dejavu.actions.RowAction
+import org.mozilla.fenix.dejavu.actions.TabAction
 
 /**
  * A built-in item of the Dejavu "More" menu of the browser.
@@ -59,7 +61,10 @@ enum class MoreMenuItem(
     }
 }
 
-/** An item of the "More" menu: a built-in one or one of the user's custom actions. */
+/**
+ * An item of the "More" menu or of the actions bar: a built-in one, a tab action or one of the user's custom actions,
+ * run on the shown tab.
+ */
 sealed interface MoreMenuEntry {
     val key: String
 
@@ -68,11 +73,49 @@ sealed interface MoreMenuEntry {
         override val key: String get() = item.key
     }
 
-    /** A [CustomAction] run on the shown tab. */
+    /** A [TabAction] that has no [MoreMenuItem] doing the same, see [isMenuEntry]. */
+    data class Tab(val action: TabAction) : MoreMenuEntry {
+        override val key: String get() = action.key
+    }
+
+    /** A [CustomAction]. */
     data class Custom(val action: CustomAction) : MoreMenuEntry {
         override val key: String get() = RowAction.keyOf(action.id)
     }
+
+    /** Goes to the home screen. Only the actions bar has it. */
+    data object Home : MoreMenuEntry {
+        override val key: String get() = "home"
+    }
+
+    /** Starts a search. Only the actions bar has it. */
+    data object Search : MoreMenuEntry {
+        override val key: String get() = "search"
+    }
 }
+
+/** The [MoreMenuItem] that does to the shown tab what this action does, for the actions the menu already had. */
+val TabAction.menuItem: MoreMenuItem?
+    get() = when (this) {
+        TabAction.SHARE -> MoreMenuItem.SHARE
+        TabAction.BOOKMARK -> MoreMenuItem.BOOKMARK_PAGE
+        TabAction.PIN, TabAction.UNPIN -> MoreMenuItem.PIN_TAB
+        TabAction.ADD_TO_ESSENTIALS, TabAction.REMOVE_FROM_ESSENTIALS -> MoreMenuItem.ESSENTIAL_TAB
+        TabAction.RESET_PIN -> MoreMenuItem.RESET_PINNED_URL
+        TabAction.SPLIT_VIEW, TabAction.UNSPLIT -> MoreMenuItem.SPLIT_VIEW
+        else -> null
+    }
+
+/** Whether this action is an entry of its own in the "More" menu, rather than one of its [MoreMenuItem]s. */
+val TabAction.isMenuEntry: Boolean
+    get() = ActionPlace.MORE_MENU in places && menuItem == null
+
+/** The key this action has in the "More" menu and the actions bar, or `null` when it cannot be put there. */
+val RowAction.menuKey: String?
+    get() = when (this) {
+        is RowAction.BuiltIn -> if (ActionPlace.MORE_MENU in action.places) action.menuItem?.key ?: action.key else null
+        is RowAction.Custom -> key
+    }
 
 /**
  * The rows of the "More" menu, as lists of entry keys. A row holds up to [MAX_PER_ROW] items, except the
@@ -94,11 +137,14 @@ object MoreMenuLayout {
     /** The entry with [key], or `null` if it does not exist (anymore). */
     fun entryOf(key: String, customActions: List<CustomAction>): MoreMenuEntry? =
         MoreMenuItem.fromKey(key)?.let { MoreMenuEntry.BuiltIn(it) }
+            ?: TabAction.fromKey(key)?.takeIf { it.isMenuEntry }?.let { MoreMenuEntry.Tab(it) }
             ?: customActions.firstOrNull { RowAction.keyOf(it.id) == key }?.let { MoreMenuEntry.Custom(it) }
 
-    /** Every entry that can be put in the menu. */
+    /** Every entry that can be put in the menu: its own items, then the tab actions, then the custom ones. */
     fun available(customActions: List<CustomAction>): List<MoreMenuEntry> =
-        MoreMenuItem.entries.map { MoreMenuEntry.BuiltIn(it) } + customActions.map { MoreMenuEntry.Custom(it) }
+        MoreMenuItem.entries.map { MoreMenuEntry.BuiltIn(it) } +
+            TabAction.ordered.filter { it.isMenuEntry }.map { MoreMenuEntry.Tab(it) } +
+            customActions.map { MoreMenuEntry.Custom(it) }
 
     /** The entries of [rows], leaving out the ones that no longer exist and rows left empty. */
     fun resolve(rows: List<List<String>>, customActions: List<CustomAction>): List<List<MoreMenuEntry>> =
@@ -127,4 +173,36 @@ object MoreMenuLayout {
             (0 until row.length()).map { row.optString(it) }.filter { it.isNotBlank() }
         }
     }
+}
+
+/**
+ * The buttons of the actions bar below pages, as keys of [MoreMenuEntry]s. Home and Search are buttons like the others,
+ * so they can be moved or removed too.
+ */
+object ActionsBarLayout {
+    const val MAX_BUTTONS = 7
+
+    /**
+     * The bar Dejavu showed before it could be changed on its own: the first row of the menu laid out as [menuRows]
+     * and Search, around Home in the middle.
+     */
+    fun fromMenu(menuRows: List<List<String>>): List<String> {
+        val buttons = menuRows.firstOrNull().orEmpty() + MoreMenuEntry.Search.key
+        return buttons.toMutableList().apply { add(size / 2, MoreMenuEntry.Home.key) }.distinct().take(MAX_BUTTONS)
+    }
+
+    /** The entry with [key], or `null` if it does not exist (anymore). */
+    fun entryOf(key: String, customActions: List<CustomAction>): MoreMenuEntry? = when (key) {
+        MoreMenuEntry.Home.key -> MoreMenuEntry.Home
+        MoreMenuEntry.Search.key -> MoreMenuEntry.Search
+        else -> MoreMenuLayout.entryOf(key, customActions)
+    }
+
+    /** Every entry that can be put in the bar. */
+    fun available(customActions: List<CustomAction>): List<MoreMenuEntry> =
+        listOf(MoreMenuEntry.Home, MoreMenuEntry.Search) + MoreMenuLayout.available(customActions)
+
+    /** The entries of [keys], leaving out the ones that no longer exist. */
+    fun resolve(keys: List<String>, customActions: List<CustomAction>): List<MoreMenuEntry> =
+        keys.distinct().mapNotNull { entryOf(it, customActions) }.take(MAX_BUTTONS)
 }

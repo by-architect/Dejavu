@@ -90,8 +90,6 @@
     <string name="dejavu_settings_title">Dejavu</string>
     <string name="dejavu_about_content">%1$s بر پایه Firefox ساخته وابیده، که Mozilla ساختش.</string>
     <string name="dejavu_settings_tab_actions">کار یل بلگه</string>
-    <string name="dejavu_settings_tab_actions_entry_summary">دکمه یل رو بلگه یل، و کار یل بره بلگه یل پسند وابیده</string>
-    <string name="dejavu_settings_tab_actions_hint">دکمه یل ردیف بلگه یل سنجاق‌وابیده و نوابیده، و کار یلی که وقت پسند کردن بلگه یل نشون داده می‌بن، پسند کو. کار یلی که خودت ٱووردیش، هر سه جا کار می‌رن.</string>
     <string name="dejavu_settings_pinned_tabs">بلگه یل سنجاق‌وابیده</string>
     <string name="dejavu_settings_unpinned_tabs">بلگه یل سنجاق‌نوابیده</string>
     <string name="dejavu_settings_all_actions">پوی کار یل</string>
@@ -188,7 +186,6 @@
     <string name="dejavu_actions_bar_search">پیتینیڌن</string>
     <string name="dejavu_actions_bar_home">خونه</string>
     <string name="dejavu_settings_more_menu_summary">نوار کار یل زیر بلگه یل و منویی که وا می‌کنه</string>
-    <string name="dejavu_more_menu_hint">ردیف ٱول نوار کار یل زیر بلگه یله. بره وا کردن پوی منو، نوار کار یله بکش بالا، یا نوار آدرسه بکش پایین. رو دکمه بزن بره جا گوردنش یا دراوردنش. وردنی یل همیشه یه ردیف کامله می‌گیرن.</string>
     <string name="dejavu_more_menu_row">ردیف %1$d</string>
     <string name="dejavu_more_menu_add_item">ٱووردن دکمه</string>
     <string name="dejavu_more_menu_add_row">ٱووردن ردیف</string>

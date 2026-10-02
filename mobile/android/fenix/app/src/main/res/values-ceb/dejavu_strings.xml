@@ -90,8 +90,6 @@
     <string name="dejavu_settings_title">Dejavu</string>
     <string name="dejavu_about_content">Ang %1$s gibase sa Firefox, gihimo sa Mozilla.</string>
     <string name="dejavu_settings_tab_actions">Mga aksyon sa tab</string>
-    <string name="dejavu_settings_tab_actions_entry_summary">Mga button sa tab, ug mga aksyon para sa napiling mga tab</string>
-    <string name="dejavu_settings_tab_actions_hint">Pilia ang mga button sa naka-pin ug dili naka-pin nga laray sa tab, ug ang mga aksyon nga gipakita kung mopili ka og mga tab. Ang mga aksyon nga imong gidugang mahimong gamiton sa tanan nga tulo.</string>
     <string name="dejavu_settings_pinned_tabs">Naka-pin nga mga tab</string>
     <string name="dejavu_settings_unpinned_tabs">Dili naka-pin nga mga tab</string>
     <string name="dejavu_settings_all_actions">Tanang aksyon</string>
@@ -188,7 +186,6 @@
     <string name="dejavu_actions_bar_search">Pangita</string>
     <string name="dejavu_actions_bar_home">Home</string>
     <string name="dejavu_settings_more_menu_summary">Ang bar sa mga aksyon sa ubos sa mga page ug ang menu nga giablihan niini</string>
-    <string name="dejavu_more_menu_hint">Ang una nga laray mao ang bar sa mga aksyon sa ubos sa mga page. i-Swipe pataas ang bar sa mga aksyon, o pa-ubos ang address bar, para maablihan ang tibuok menu. i-Tap ang usa ka button para balhinon o kuhaon kini. Ang mga extension kanunay nga mokuha og tibuok laray.</string>
     <string name="dejavu_more_menu_row">Laray %1$d</string>
     <string name="dejavu_more_menu_add_item">Pagdugang og button</string>
     <string name="dejavu_more_menu_add_row">Pagdugang og laray</string>

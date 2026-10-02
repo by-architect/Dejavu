@@ -90,8 +90,6 @@
     <string name="dejavu_settings_title">Dejavu</string>
     <string name="dejavu_about_content">%1$s מבוסס על Firefox, בפיתוח Mozilla.</string>
     <string name="dejavu_settings_tab_actions">פעולות לשוניות</string>
-    <string name="dejavu_settings_tab_actions_entry_summary">כפתורים בלשוניות, ופעולות ללשוניות נבחרות</string>
-    <string name="dejavu_settings_tab_actions_hint">בחרו את הכפתורים של שורות הלשוניות המוצמדות והלא מוצמדות, ואת הפעולות שמוצגות כשבוחרים לשוניות. פעולות שאתם מוסיפים בעצמכם ניתנות לשימוש בכל השלושה.</string>
     <string name="dejavu_settings_pinned_tabs">לשוניות מוצמדות</string>
     <string name="dejavu_settings_unpinned_tabs">לשוניות לא מוצמדות</string>
     <string name="dejavu_settings_all_actions">כל הפעולות</string>
@@ -188,7 +186,6 @@
     <string name="dejavu_actions_bar_search">חיפוש</string>
     <string name="dejavu_actions_bar_home">בית</string>
     <string name="dejavu_settings_more_menu_summary">סרגל הפעולות שמתחת לדפים והתפריט שהוא פותח</string>
-    <string name="dejavu_more_menu_hint">השורה הראשונה היא סרגל הפעולות שמתחת לדפים. כדי לפתוח את כל התפריט, החליקו את סרגל הפעולות למעלה, או את שורת הכתובת למטה. הקישו על כפתור כדי להעביר או להסיר אותו. הרחבות תמיד תופסות שורה שלמה.</string>
     <string name="dejavu_more_menu_row">שורה %1$d</string>
     <string name="dejavu_more_menu_add_item">הוספת כפתור</string>
     <string name="dejavu_more_menu_add_row">הוספת שורה</string>

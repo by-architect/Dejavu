@@ -90,8 +90,6 @@
     <string name="dejavu_settings_title">Dejavu</string>
     <string name="dejavu_about_content">%1$s je založený na Firefoxe, ktorý vytvorila Mozilla.</string>
     <string name="dejavu_settings_tab_actions">Akcie kariet</string>
-    <string name="dejavu_settings_tab_actions_entry_summary">Tlačidlá na kartách a akcie pre vybrané karty</string>
-    <string name="dejavu_settings_tab_actions_hint">Vyberte tlačidlá pre riadky pripnutých a nepripnutých kariet, ako aj akcie zobrazené pri výbere kariet. Akcie, ktoré si sami pridáte, sa dajú použiť vo všetkých troch.</string>
     <string name="dejavu_settings_pinned_tabs">Pripnuté karty</string>
     <string name="dejavu_settings_unpinned_tabs">Nepripnuté karty</string>
     <string name="dejavu_settings_all_actions">Všetky akcie</string>
@@ -188,7 +186,6 @@
     <string name="dejavu_actions_bar_search">Hľadať</string>
     <string name="dejavu_actions_bar_home">Domov</string>
     <string name="dejavu_settings_more_menu_summary">Panel akcií pod stránkami a ponuka, ktorú otvára</string>
-    <string name="dejavu_more_menu_hint">Prvý riadok je panel akcií pod stránkami. Potiahnutím panela akcií nahor alebo panela s adresou nadol otvoríte celú ponuku. Ťuknutím na tlačidlo ho presuniete alebo odstránite. Rozšírenia vždy zaberajú celý riadok.</string>
     <string name="dejavu_more_menu_row">Riadok %1$d</string>
     <string name="dejavu_more_menu_add_item">Pridať tlačidlo</string>
     <string name="dejavu_more_menu_add_row">Pridať riadok</string>

@@ -90,8 +90,6 @@
     <string name="dejavu_settings_title">Dejavu</string>
     <string name="dejavu_about_content">%1$s rub\'anon pa ruwi\' Firefox, ub\'anon ruma Mozilla.</string>
     <string name="dejavu_settings_tab_actions">B\'anob\'äl richin taq ruwi\'</string>
-    <string name="dejavu_settings_tab_actions_entry_summary">Taq botón pa ruwi\', chuqa\' b\'anob\'äl richin cha\'on taq ruwi\'</string>
-    <string name="dejavu_settings_tab_actions_hint">Tacha\' ri taq botón richin ximon chuqa\' man ximon ta cholaj ruwi\', chuqa\' ri b\'anob\'äl yek\'ut toq nacha\' taq ruwi\'. Ri b\'anob\'äl xatz\'aqatisaj awonil yeokisäx pa ronojel oxi\'.</string>
     <string name="dejavu_settings_pinned_tabs">Ximon taq ruwi\'</string>
     <string name="dejavu_settings_unpinned_tabs">Man ximon ta taq ruwi\'</string>
     <string name="dejavu_settings_all_actions">Ronojel b\'anob\'äl</string>
@@ -188,7 +186,6 @@
     <string name="dejavu_actions_bar_search">Tikanöx</string>
     <string name="dejavu_actions_bar_home">Tikirib\'äl</string>
     <string name="dejavu_settings_more_menu_summary">Ri cholaj b\'anob\'äl chuxe\'el ruxaq chuqa\' ri menú nujäq</string>
-    <string name="dejavu_more_menu_hint">Ri nab\'ey cholaj, ja ri cholaj b\'anob\'äl chuxe\'el ruxaq. Tajïk\' ri cholaj b\'anob\'äl chuwäch anej, o ri cholaj kanoxel chuxe\'el, richin nijaq ronojel ri menú. Tapitz\'a\' jun botón richin nijech\'ëx o nirelesäx. Ri taq k\'amal ronojel mul nikik\'wan jun cholaj.</string>
     <string name="dejavu_more_menu_row">Cholaj %1$d</string>
     <string name="dejavu_more_menu_add_item">Titz\'aqatisäx jun botón</string>
     <string name="dejavu_more_menu_add_row">Titz\'aqatisäx jun cholaj</string>

@@ -90,8 +90,6 @@
     <string name="dejavu_settings_title">Dejavu</string>
     <string name="dejavu_about_content">%1$s 是以 Mozilla 出品的 Firefox 為基礎。</string>
     <string name="dejavu_settings_tab_actions">分頁操作</string>
-    <string name="dejavu_settings_tab_actions_entry_summary">分頁上的按鈕,以及選取分頁時的操作</string>
-    <string name="dejavu_settings_tab_actions_hint">選擇已釘選與未釘選分頁列的按鈕,以及選取分頁時顯示的操作。您自行新增的操作可在這三處使用。</string>
     <string name="dejavu_settings_pinned_tabs">已釘選分頁</string>
     <string name="dejavu_settings_unpinned_tabs">未釘選分頁</string>
     <string name="dejavu_settings_all_actions">所有操作</string>
@@ -188,7 +186,6 @@
     <string name="dejavu_actions_bar_search">搜尋</string>
     <string name="dejavu_actions_bar_home">首頁</string>
     <string name="dejavu_settings_more_menu_summary">網頁下方的操作列及其開啟的選單</string>
-    <string name="dejavu_more_menu_hint">第一列是網頁下方的操作列。向上滑動操作列,或向下滑動網址列,即可開啟完整選單。輕觸按鈕即可移動或移除。擴充套件一律佔用整列。</string>
     <string name="dejavu_more_menu_row">第 %1$d 列</string>
     <string name="dejavu_more_menu_add_item">新增按鈕</string>
     <string name="dejavu_more_menu_add_row">新增列</string>

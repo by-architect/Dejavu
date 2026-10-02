@@ -90,8 +90,6 @@
     <string name="dejavu_settings_title">Dejavu</string>
     <string name="dejavu_about_content">%1$s работает на основе Firefox, созданного Mozilla.</string>
     <string name="dejavu_settings_tab_actions">Действия для вкладок</string>
-    <string name="dejavu_settings_tab_actions_entry_summary">Кнопки на вкладках и действия для выбранных вкладок</string>
-    <string name="dejavu_settings_tab_actions_hint">Выберите кнопки для рядов закреплённых и незакреплённых вкладок, а также действия, отображаемые при выборе вкладок. Добавленные вами действия можно использовать во всех трёх случаях.</string>
     <string name="dejavu_settings_pinned_tabs">Закреплённые вкладки</string>
     <string name="dejavu_settings_unpinned_tabs">Незакреплённые вкладки</string>
     <string name="dejavu_settings_all_actions">Все действия</string>
@@ -188,7 +186,6 @@
     <string name="dejavu_actions_bar_search">Поиск</string>
     <string name="dejavu_actions_bar_home">Главная</string>
     <string name="dejavu_settings_more_menu_summary">Панель действий под страницами и меню, которое она открывает</string>
-    <string name="dejavu_more_menu_hint">Первый ряд — это панель действий под страницами. Проведите по панели действий вверх или по адресной строке вниз, чтобы открыть меню целиком. Нажмите на кнопку, чтобы переместить или удалить её. Расширения всегда занимают целый ряд.</string>
     <string name="dejavu_more_menu_row">Ряд %1$d</string>
     <string name="dejavu_more_menu_add_item">Добавить кнопку</string>
     <string name="dejavu_more_menu_add_row">Добавить ряд</string>

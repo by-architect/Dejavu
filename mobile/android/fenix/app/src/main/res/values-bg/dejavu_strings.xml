@@ -90,8 +90,6 @@
     <string name="dejavu_settings_title">Dejavu</string>
     <string name="dejavu_about_content">%1$s се базира на Firefox, разработен от Mozilla.</string>
     <string name="dejavu_settings_tab_actions">Действия с раздели</string>
-    <string name="dejavu_settings_tab_actions_entry_summary">Бутони на разделите и действия за избраните раздели</string>
-    <string name="dejavu_settings_tab_actions_hint">Изберете бутоните за редовете на закачените и незакачените раздели, както и действията, показвани при избор на раздели. Действията, които добавите сами, могат да се използват на трите места.</string>
     <string name="dejavu_settings_pinned_tabs">Закачени раздели</string>
     <string name="dejavu_settings_unpinned_tabs">Незакачени раздели</string>
     <string name="dejavu_settings_all_actions">Всички действия</string>
@@ -188,7 +186,6 @@
     <string name="dejavu_actions_bar_search">Търсене</string>
     <string name="dejavu_actions_bar_home">Начало</string>
     <string name="dejavu_settings_more_menu_summary">Лентата с действия под страниците и менюто, което тя отваря</string>
-    <string name="dejavu_more_menu_hint">Първият ред е лентата с действия под страниците. Плъзнете лентата с действия нагоре или адресната лента надолу, за да отворите цялото меню. Докоснете бутон, за да го преместите или премахнете. Разширенията винаги заемат цял ред.</string>
     <string name="dejavu_more_menu_row">Ред %1$d</string>
     <string name="dejavu_more_menu_add_item">Добавяне на бутон</string>
     <string name="dejavu_more_menu_add_row">Добавяне на ред</string>

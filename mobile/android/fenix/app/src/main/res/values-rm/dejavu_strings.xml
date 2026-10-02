@@ -90,8 +90,6 @@
     <string name="dejavu_settings_title">Dejavu</string>
     <string name="dejavu_about_content">%1$s sa basa sin Firefox, fatg da Mozilla.</string>
     <string name="dejavu_settings_tab_actions">Acziuns dals tabs</string>
-    <string name="dejavu_settings_tab_actions_entry_summary">Buttuns sin tabs, ed acziuns per tabs tschernids</string>
-    <string name="dejavu_settings_tab_actions_hint">Tscherna ils buttuns da las lingias da tabs fixads e betg fixads, e las acziuns mussadas cur ch’i tschernas tabs. Acziuns ch’i agiuntas persunalmain pon vegnir duvradas en tuttas trais.</string>
     <string name="dejavu_settings_pinned_tabs">Tabs fixads</string>
     <string name="dejavu_settings_unpinned_tabs">Tabs betg fixads</string>
     <string name="dejavu_settings_all_actions">Tut las acziuns</string>
@@ -188,7 +186,6 @@
     <string name="dejavu_actions_bar_search">Tschertgar</string>
     <string name="dejavu_actions_bar_home">Partenza</string>
     <string name="dejavu_settings_more_menu_summary">La trav d’acziuns sutvart paginas ed il menu ch’ella avra</string>
-    <string name="dejavu_more_menu_hint">La emprima lingia è la trav d’acziuns sutvart paginas. Strascha la trav d’acziuns ensi, u la trav d’adressa engiu, per avrir il menu enteir. Smatga in buttun per il spustar u allontanar. Extensiuns piglian adina ina lingia entira.</string>
     <string name="dejavu_more_menu_row">Lingia %1$d</string>
     <string name="dejavu_more_menu_add_item">Agiuntar in buttun</string>
     <string name="dejavu_more_menu_add_row">Agiuntar ina lingia</string>

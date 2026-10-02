@@ -90,8 +90,6 @@
     <string name="dejavu_settings_title">Dejavu</string>
     <string name="dejavu_about_content">%1$s dumasar kana Firefox, dijieun ku Mozilla.</string>
     <string name="dejavu_settings_tab_actions">Aksi tab</string>
-    <string name="dejavu_settings_tab_actions_entry_summary">Tombol dina tab, jeung aksi pikeun tab nu dipilih</string>
-    <string name="dejavu_settings_tab_actions_hint">Pilih tombol pikeun baris tab nu disemat jeung nu teu disemat, kitu deui aksi nu témbong lamun milih tab. Aksi nu ditambahkeun ku anjeun sorangan bisa dipaké dina eta tilu-tiluna.</string>
     <string name="dejavu_settings_pinned_tabs">Tab nu disemat</string>
     <string name="dejavu_settings_unpinned_tabs">Tab nu teu disemat</string>
     <string name="dejavu_settings_all_actions">Sakabéh aksi</string>
@@ -188,7 +186,6 @@
     <string name="dejavu_actions_bar_search">Panggihan</string>
     <string name="dejavu_actions_bar_home">Home</string>
     <string name="dejavu_settings_more_menu_summary">Bar aksi di handap kaca jeung menu nu dibukana</string>
-    <string name="dejavu_more_menu_hint">Baris kahiji nyaéta bar aksi di handap kaca. Séréd bar aksi ka luhur, atawa bar alamat ka handap, pikeun muka sakabéh menu. Toél tombol pikeun mindahkeun atawa miceunna. Éksténsi salawasna nyokot sabaris pinuh.</string>
     <string name="dejavu_more_menu_row">Baris %1$d</string>
     <string name="dejavu_more_menu_add_item">Tambah tombol</string>
     <string name="dejavu_more_menu_add_row">Tambah baris</string>

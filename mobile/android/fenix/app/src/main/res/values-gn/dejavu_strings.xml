@@ -90,8 +90,6 @@
     <string name="dejavu_settings_title">Dejavu</string>
     <string name="dejavu_about_content">%1$s ojejapo Firefox rehe, Mozilla ojapóva.</string>
     <string name="dejavu_settings_tab_actions">Tendayke rembiapo</string>
-    <string name="dejavu_settings_tab_actions_entry_summary">Votã tendaykére, ha tembiapo umi tendayke poravopyrãme g̃uarã</string>
-    <string name="dejavu_settings_tab_actions_hint">Eiporavo umi votã tendayke mboguapypyre ha mboguapy\'ỹva rembe\'ýpe, ha umi tembiapo ojehechaukáva reiporavo jave tendayke. Umi tembiapo nde remoĩva ikatu ojeporu mbohapyveve ohóvo.</string>
     <string name="dejavu_settings_pinned_tabs">Tendayke mboguapypyre</string>
     <string name="dejavu_settings_unpinned_tabs">Tendayke mboguapy\'ỹva</string>
     <string name="dejavu_settings_all_actions">Opaite tembiapo</string>
@@ -188,7 +186,6 @@
     <string name="dejavu_actions_bar_search">Eheka</string>
     <string name="dejavu_actions_bar_home">Óga</string>
     <string name="dejavu_settings_more_menu_summary">Pe tembiapo barra kuatiarogue guýpe ha pe menu ombojurujáva</string>
-    <string name="dejavu_more_menu_hint">Pe tysỹi peteĩha, ha\'e pe tembiapo barra kuatiarogue guýpe. Emongu\'e pe tembiapo barra yvate, térã pe kundaharape barra guývo, embojuruja hağua opa menu. Eiporavo peteĩ votã embojoko térã emboguete hağua. Umi jepysokue oiporu tapiaite peteĩ tysỹi jaite.</string>
     <string name="dejavu_more_menu_row">Tysỹi %1$d</string>
     <string name="dejavu_more_menu_add_item">Embojuaju peteĩ votã</string>
     <string name="dejavu_more_menu_add_row">Embojuaju peteĩ tysỹi</string>

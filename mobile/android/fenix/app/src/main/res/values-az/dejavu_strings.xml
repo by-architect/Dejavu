@@ -90,8 +90,6 @@
     <string name="dejavu_settings_title">Dejavu</string>
     <string name="dejavu_about_content">%1$s, Mozilla tərəfindən hazırlanan Firefox əsasında qurulub.</string>
     <string name="dejavu_settings_tab_actions">Vərəq əməliyyatları</string>
-    <string name="dejavu_settings_tab_actions_entry_summary">Vərəqlərdəki düymələr və seçilmiş vərəqlər üçün əməliyyatlar</string>
-    <string name="dejavu_settings_tab_actions_hint">Bərkidilmiş və bərkidilməmiş vərəq sıralarının düymələrini və vərəqləri seçdikdə görünən əməliyyatları seçin. Özünüzün əlavə etdiyiniz əməliyyatlar hər üçündə istifadə oluna bilər.</string>
     <string name="dejavu_settings_pinned_tabs">Bərkidilmiş vərəqlər</string>
     <string name="dejavu_settings_unpinned_tabs">Bərkidilməmiş vərəqlər</string>
     <string name="dejavu_settings_all_actions">Bütün əməliyyatlar</string>
@@ -188,7 +186,6 @@
     <string name="dejavu_actions_bar_search">Axtar</string>
     <string name="dejavu_actions_bar_home">Ana səhifə</string>
     <string name="dejavu_settings_more_menu_summary">Səhifələrin altındakı əməliyyatlar paneli və onun açdığı menyu</string>
-    <string name="dejavu_more_menu_hint">Birinci sıra səhifələrin altındakı əməliyyatlar panelidir. Bütün menyunu açmaq üçün əməliyyatlar panelini yuxarı, ya da ünvan panelini aşağı sürüşdürün. Düyməni daşımaq və ya silmək üçün ona toxunun. Əlavələr həmişə bütöv bir sıra tutur.</string>
     <string name="dejavu_more_menu_row">%1$d-ci sıra</string>
     <string name="dejavu_more_menu_add_item">Düymə əlavə et</string>
     <string name="dejavu_more_menu_add_row">Sıra əlavə et</string>

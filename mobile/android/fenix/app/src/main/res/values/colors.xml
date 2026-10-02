@@ -17,9 +17,9 @@
     <color name="fx_mobile_on_tertiary">@color/novaWhite</color>
     <color name="fx_mobile_tertiary_container">@color/dejavuAmber95</color>
     <color name="fx_mobile_on_tertiary_container">@color/dejavuAmber90</color>
-    <color name="fx_mobile_background">@color/dejavuWarm5</color>
+    <color name="fx_mobile_background">@color/dejavuGilt5</color>
     <color name="fx_mobile_on_background">@color/dejavuInk</color>
-    <color name="fx_mobile_surface">@color/dejavuWarm5</color>
+    <color name="fx_mobile_surface">@color/dejavuGilt5</color>
     <color name="fx_mobile_on_surface">@color/dejavuInk</color>
     <color name="fx_mobile_surface_variant">@color/dejavuWarm15</color>
     <color name="fx_mobile_on_surface_variant">@color/dejavuInkA70</color>
@@ -43,10 +43,10 @@
     <color name="fx_mobile_on_warning_container">@color/dejavuInk</color>
     <color name="fx_mobile_outline">@color/dejavuWarm45</color>
     <color name="fx_mobile_outline_variant">@color/dejavuWarm15</color>
-    <color name="fx_mobile_sheet_outline">@color/dejavuWarm5</color>
+    <color name="fx_mobile_sheet_outline">@color/dejavuGilt5</color>
     <color name="fx_mobile_surface_bright">@color/novaWhite</color>
     <color name="fx_mobile_surface_dim">@color/dejavuWarm15</color>
-    <color name="fx_mobile_surface_container">@color/dejavuWarm5</color>
+    <color name="fx_mobile_surface_container">@color/dejavuGilt5</color>
     <color name="fx_mobile_surface_container_high">@color/dejavuWarm10</color>
     <color name="fx_mobile_surface_container_highest">@color/dejavuWarm15</color>
     <color name="fx_mobile_surface_container_low">@color/dejavuWarm0</color>

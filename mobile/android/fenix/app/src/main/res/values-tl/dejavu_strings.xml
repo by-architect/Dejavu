@@ -90,8 +90,6 @@
     <string name="dejavu_settings_title">Dejavu</string>
     <string name="dejavu_about_content">Ang %1$s ay batay sa Firefox, gawa ng Mozilla.</string>
     <string name="dejavu_settings_tab_actions">Mga aksyon ng tab</string>
-    <string name="dejavu_settings_tab_actions_entry_summary">Mga button sa tab, at mga aksyon para sa mga napiling tab</string>
-    <string name="dejavu_settings_tab_actions_hint">Piliin ang mga button ng hilera ng naka-pin at hindi naka-pin na tab, at ang mga aksyong ipinapakita kapag pumili ka ng mga tab. Ang mga aksyong idinagdag mo mismo ay magagamit sa lahat ng tatlo.</string>
     <string name="dejavu_settings_pinned_tabs">Mga naka-pin na tab</string>
     <string name="dejavu_settings_unpinned_tabs">Mga hindi naka-pin na tab</string>
     <string name="dejavu_settings_all_actions">Lahat ng aksyon</string>
@@ -188,7 +186,6 @@
     <string name="dejavu_actions_bar_search">Maghanap</string>
     <string name="dejavu_actions_bar_home">Home</string>
     <string name="dejavu_settings_more_menu_summary">Ang bar ng mga aksyon sa ibaba ng mga page at ang menu na binubuksan nito</string>
-    <string name="dejavu_more_menu_hint">Ang unang hilera ay ang bar ng mga aksyon sa ibaba ng mga page. I-swipe pataas ang bar ng mga aksyon, o pababa ang address bar, para buksan ang buong menu. I-tap ang isang button para ilipat o alisin ito. Kumukuha palagi ng isang buong hilera ang mga extension.</string>
     <string name="dejavu_more_menu_row">Hilera %1$d</string>
     <string name="dejavu_more_menu_add_item">Magdagdag ng button</string>
     <string name="dejavu_more_menu_add_row">Magdagdag ng hilera</string>

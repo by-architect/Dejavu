@@ -90,8 +90,6 @@
     <string name="dejavu_settings_title">Dejavu</string>
     <string name="dejavu_about_content">%1$s 基于 Mozilla 出品的 Firefox。</string>
     <string name="dejavu_settings_tab_actions">标签页操作</string>
-    <string name="dejavu_settings_tab_actions_entry_summary">标签页上的按钮,以及选中标签页时的操作</string>
-    <string name="dejavu_settings_tab_actions_hint">选择固定和未固定标签页行中的按钮,以及选中标签页时显示的操作。您自行添加的操作可在这三处都使用。</string>
     <string name="dejavu_settings_pinned_tabs">固定标签页</string>
     <string name="dejavu_settings_unpinned_tabs">未固定标签页</string>
     <string name="dejavu_settings_all_actions">所有操作</string>
@@ -188,7 +186,6 @@
     <string name="dejavu_actions_bar_search">搜索</string>
     <string name="dejavu_actions_bar_home">主页</string>
     <string name="dejavu_settings_more_menu_summary">网页下方的操作栏及其打开的菜单</string>
-    <string name="dejavu_more_menu_hint">第一行是网页下方的操作栏。向上滑动操作栏,或向下滑动地址栏,即可打开完整菜单。点按按钮可将其移动或移除。扩展始终占据整行。</string>
     <string name="dejavu_more_menu_row">第 %1$d 行</string>
     <string name="dejavu_more_menu_add_item">添加按钮</string>
     <string name="dejavu_more_menu_add_row">添加行</string>

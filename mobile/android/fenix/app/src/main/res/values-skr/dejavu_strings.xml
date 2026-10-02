@@ -106,8 +106,6 @@
     <string name="dejavu_settings_title">Dejavu</string>
     <string name="dejavu_about_content">%1$s، Firefox تے مبنی ہے، جیکوں Mozilla بݨیندا ہے۔</string>
     <string name="dejavu_settings_tab_actions">ٹیب عمل</string>
-    <string name="dejavu_settings_tab_actions_entry_summary">ٹیباں دے بٹݨ، تے چُݨیاں ٹیباں کیتے عمل</string>
-    <string name="dejavu_settings_tab_actions_hint">پن تھیاں تے اݨ پن ٹیباں دیاں قطاراں دے بٹݨ چُݨو، تے اوہ عمل وی جہڑے ٹیباں چُݨݨ ویلے ݙکھائے ویندے ہن۔ جہڑے عمل تساں آپ شامل کریندے ہو، اوہ ایہناں ترئے جاہیں تے ورتے ون٘ڄ سڳدے ہن۔</string>
     <string name="dejavu_settings_pinned_tabs">پن تھیاں ٹیباں</string>
     <string name="dejavu_settings_unpinned_tabs">اݨ پن ٹیباں</string>
     <string name="dejavu_settings_all_actions">سارے عمل</string>
@@ -208,7 +206,6 @@
     <string name="dejavu_actions_bar_search">ڳولو</string>
     <string name="dejavu_actions_bar_home">مکھ پناں</string>
     <string name="dejavu_settings_more_menu_summary">ورقیاں دے تلے عمل پٹی، تے اوہ مینیو جہڑا ایہ کھولیندی ہے</string>
-    <string name="dejavu_more_menu_hint">پہلی قطار ورقیاں دے تلے عمل پٹی ہے۔ پورا مینیو کھولݨ کیتے عمل پٹی کوں اُتے ول، یا پتہ پٹی کوں تلے ول سوائپ کرو۔ کہیں بٹݨ دی جاہ بدلݨ یا اینکوں ہٹاوݨ کیتے ایندے تے دباؤ۔ ایکسٹینشنز ہمیشاں پوری قطار گھندیاں ہن۔</string>
     <string name="dejavu_more_menu_row">قطار %1$d</string>
     <string name="dejavu_more_menu_add_item">بٹݨ شامل کرو</string>
     <string name="dejavu_more_menu_add_row">قطار شامل کرو</string>

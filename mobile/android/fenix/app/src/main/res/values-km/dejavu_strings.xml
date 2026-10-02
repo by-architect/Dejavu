@@ -90,8 +90,6 @@
     <string name="dejavu_settings_title">Dejavu</string>
     <string name="dejavu_about_content">%1$s ត្រូវបានបង្កើតដោយ Mozilla ដោយផ្អែកលើ Firefox។</string>
     <string name="dejavu_settings_tab_actions">សកម្មភាពផ្ទាំង</string>
-    <string name="dejavu_settings_tab_actions_entry_summary">ប៊ូតុងនៅលើផ្ទាំង និងសកម្មភាពសម្រាប់ផ្ទាំងដែលបានជ្រើសរើស</string>
-    <string name="dejavu_settings_tab_actions_hint">ជ្រើសរើសប៊ូតុងសម្រាប់ជួរផ្ទាំងបានខ្ទាស់ និងមិនបានខ្ទាស់ ព្រមទាំងសកម្មភាពដែលបង្ហាញនៅពេលអ្នកជ្រើសរើសផ្ទាំង។ សកម្មភាពដែលអ្នកបន្ថែមដោយខ្លួនឯងអាចប្រើបានទាំងបីកន្លែង។</string>
     <string name="dejavu_settings_pinned_tabs">ផ្ទាំងបានខ្ទាស់</string>
     <string name="dejavu_settings_unpinned_tabs">ផ្ទាំងមិនបានខ្ទាស់</string>
     <string name="dejavu_settings_all_actions">សកម្មភាពទាំងអស់</string>
@@ -188,7 +186,6 @@
     <string name="dejavu_actions_bar_search">ស្វែងរក</string>
     <string name="dejavu_actions_bar_home">ទំព័រដើម</string>
     <string name="dejavu_settings_more_menu_summary">របារសកម្មភាពនៅក្រោមទំព័រ និងម៉ឺនុយដែលវាបើក</string>
-    <string name="dejavu_more_menu_hint">ជួរទីមួយគឺជារបារសកម្មភាពនៅក្រោមទំព័រ។ អូសរបារសកម្មភាពឡើងលើ ឬរបារអាសយដ្ឋានចុះក្រោម ដើម្បីបើកម៉ឺនុយទាំងមូល។ ចុចលើប៊ូតុងមួយដើម្បីផ្លាស់ទី ឬដកវាចេញ។ ផ្នែកបន្ថែមតែងតែកាន់កាប់ជួរទាំងមូល។</string>
     <string name="dejavu_more_menu_row">ជួរទី %1$d</string>
     <string name="dejavu_more_menu_add_item">បន្ថែមប៊ូតុងមួយ</string>
     <string name="dejavu_more_menu_add_row">បន្ថែមជួរមួយ</string>

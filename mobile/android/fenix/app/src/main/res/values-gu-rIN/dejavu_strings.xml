@@ -121,8 +121,6 @@
     <string name="dejavu_settings_title">Dejavu</string>
     <string name="dejavu_about_content">%1$s, Mozilla દ્વારા બનાવેલા Firefox પર આધારિત છે.</string>
     <string name="dejavu_settings_tab_actions">ટૅબ ક્રિયાઓ</string>
-    <string name="dejavu_settings_tab_actions_entry_summary">ટૅબ્સ પરનાં બટનો અને પસંદ કરેલી ટૅબ્સ માટેની ક્રિયાઓ</string>
-    <string name="dejavu_settings_tab_actions_hint">પિન કરેલી અને પિન ન કરેલી ટૅબ્સની પંક્તિઓનાં બટનો તથા ટૅબ્સ પસંદ કરો ત્યારે દેખાતી ક્રિયાઓ પસંદ કરો. તમે જાતે ઉમેરેલી ક્રિયાઓ ત્રણેયમાં વાપરી શકાય છે.</string>
     <string name="dejavu_settings_pinned_tabs">પિન કરેલી ટૅબ્સ</string>
     <string name="dejavu_settings_unpinned_tabs">પિન ન કરેલી ટૅબ્સ</string>
     <string name="dejavu_settings_all_actions">બધી ક્રિયાઓ</string>
@@ -239,7 +237,6 @@
     <string name="dejavu_actions_bar_search">શોધો</string>
     <string name="dejavu_actions_bar_home">મુખ્ય પૃષ્ઠ</string>
     <string name="dejavu_settings_more_menu_summary">પૃષ્ઠોની નીચેનો ક્રિયા બાર અને તે જે મેનૂ ખોલે છે</string>
-    <string name="dejavu_more_menu_hint">પહેલી પંક્તિ પૃષ્ઠોની નીચેનો ક્રિયા બાર છે. આખું મેનૂ ખોલવા માટે ક્રિયા બારને ઉપર અથવા સરનામાં બારને નીચે સ્વાઇપ કરો. કોઈ બટન ખસેડવા કે દૂર કરવા માટે તેના પર ટૅપ કરો. એક્સટેન્શન હંમેશા આખી પંક્તિ રોકે છે.</string>
     <string name="dejavu_more_menu_row">પંક્તિ %1$d</string>
     <string name="dejavu_more_menu_add_item">બટન ઉમેરો</string>
     <string name="dejavu_more_menu_add_row">પંક્તિ ઉમેરો</string>

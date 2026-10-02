@@ -90,8 +90,6 @@
     <string name="dejavu_settings_title">Dejavu</string>
     <string name="dejavu_about_content">%1$s Firefox-ஐ அடிப்படையாகக் கொண்டது, Mozilla ஆல் உருவாக்கப்பட்டது.</string>
     <string name="dejavu_settings_tab_actions">கீற்றுச் செயல்கள்</string>
-    <string name="dejavu_settings_tab_actions_entry_summary">கீற்றுகளில் உள்ள பொத்தான்கள், மற்றும் தேர்ந்தெடுக்கப்பட்ட கீற்றுகளுக்கான செயல்கள்</string>
-    <string name="dejavu_settings_tab_actions_hint">பொருத்தப்பட்ட மற்றும் பொருத்தப்படாத கீற்று வரிசைகளின் பொத்தான்களையும், கீற்றுகளைத் தேர்ந்தெடுக்கும்போது காட்டப்படும் செயல்களையும் தேர்வுசெய்யவும். நீங்கள் சேர்க்கும் செயல்களை மூன்றிலும் பயன்படுத்தலாம்.</string>
     <string name="dejavu_settings_pinned_tabs">பொருத்தப்பட்ட கீற்றுகள்</string>
     <string name="dejavu_settings_unpinned_tabs">பொருத்தப்படாத கீற்றுகள்</string>
     <string name="dejavu_settings_all_actions">அனைத்துச் செயல்களும்</string>
@@ -188,7 +186,6 @@
     <string name="dejavu_actions_bar_search">தேடு</string>
     <string name="dejavu_actions_bar_home">முகப்பு</string>
     <string name="dejavu_settings_more_menu_summary">பக்கங்களுக்குக் கீழே உள்ள செயல் பட்டையும் அது திறக்கும் பட்டியும்</string>
-    <string name="dejavu_more_menu_hint">முதல் வரிசை பக்கங்களுக்குக் கீழே உள்ள செயல் பட்டையாகும். முழுப் பட்டியையும் திறக்க செயல் பட்டையை மேலே ஸ்வைப் செய்யவும், அல்லது முகவரிப் பட்டையைக் கீழே ஸ்வைப் செய்யவும். ஒரு பொத்தானை நகர்த்த அல்லது அகற்ற அதைத் தட்டவும். நீட்சிகள் எப்போதும் ஒரு முழு வரிசையை எடுத்துக்கொள்ளும்.</string>
     <string name="dejavu_more_menu_row">வரிசை %1$d</string>
     <string name="dejavu_more_menu_add_item">ஒரு பொத்தானைச் சேர்</string>
     <string name="dejavu_more_menu_add_row">ஒரு வரிசையைச் சேர்</string>

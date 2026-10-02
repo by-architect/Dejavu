@@ -90,8 +90,6 @@
     <string name="dejavu_settings_title">Dejavu</string>
     <string name="dejavu_about_content">يعتمد %1$s على Firefox، من إنتاج Mozilla.</string>
     <string name="dejavu_settings_tab_actions">إجراءات التبويبات</string>
-    <string name="dejavu_settings_tab_actions_entry_summary">الأزرار على التبويبات، والإجراءات للتبويبات المحددة</string>
-    <string name="dejavu_settings_tab_actions_hint">اختر أزرار صفوف التبويبات المثبتة وغير المثبتة، والإجراءات المعروضة عند تحديد التبويبات. يمكن استخدام الإجراءات التي تضيفها بنفسك في الثلاثة جميعًا.</string>
     <string name="dejavu_settings_pinned_tabs">التبويبات المثبتة</string>
     <string name="dejavu_settings_unpinned_tabs">التبويبات غير المثبتة</string>
     <string name="dejavu_settings_all_actions">كل الإجراءات</string>
@@ -188,7 +186,6 @@
     <string name="dejavu_actions_bar_search">ابحث</string>
     <string name="dejavu_actions_bar_home">الرئيسية</string>
     <string name="dejavu_settings_more_menu_summary">شريط الإجراءات أسفل الصفحات والقائمة التي يفتحها</string>
-    <string name="dejavu_more_menu_hint">الصف الأول هو شريط الإجراءات أسفل الصفحات. لفتح القائمة كاملةً، مرِّر شريط الإجراءات لأعلى، أو شريط العناوين لأسفل. اضغط على زر لنقله أو إزالته. تشغل الامتدادات صفًا كاملًا دائمًا.</string>
     <string name="dejavu_more_menu_row">الصف %1$d</string>
     <string name="dejavu_more_menu_add_item">إضافة زر</string>
     <string name="dejavu_more_menu_add_row">إضافة صف</string>

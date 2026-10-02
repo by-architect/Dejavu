@@ -90,8 +90,6 @@
     <string name="dejavu_settings_title">Dejavu</string>
     <string name="dejavu_about_content">%1$s بر پایهٔ Firefox و ساختهٔ Mozilla است.</string>
     <string name="dejavu_settings_tab_actions">کنش‌های زبانه</string>
-    <string name="dejavu_settings_tab_actions_entry_summary">دکمه‌های روی زبانه‌ها، و کنش‌ها برای زبانه‌های انتخاب‌شده</string>
-    <string name="dejavu_settings_tab_actions_hint">دکمه‌های ردیف‌های زبانه‌های سنجاق‌شده و سنجاق‌نشده، و کنش‌هایی را که هنگام انتخاب زبانه‌ها نمایش داده می‌شوند، انتخاب کنید. کنش‌هایی که خودتان اضافه می‌کنید در هر سه قابل استفاده‌اند.</string>
     <string name="dejavu_settings_pinned_tabs">زبانه‌های سنجاق‌شده</string>
     <string name="dejavu_settings_unpinned_tabs">زبانه‌های سنجاق‌نشده</string>
     <string name="dejavu_settings_all_actions">همهٔ کنش‌ها</string>
@@ -188,7 +186,6 @@
     <string name="dejavu_actions_bar_search">جست‌وجو</string>
     <string name="dejavu_actions_bar_home">خانه</string>
     <string name="dejavu_settings_more_menu_summary">نوار کنش‌ها زیر صفحات و منویی که باز می‌کند</string>
-    <string name="dejavu_more_menu_hint">ردیف اول، نوار کنش‌ها زیر صفحات است. برای باز کردن کل منو، نوار کنش‌ها را به بالا، یا نوار نشانی را به پایین بکشید. برای جابه‌جایی یا حذف یک دکمه، روی آن ضربه بزنید. افزونه‌ها همیشه یک ردیف کامل را اشغال می‌کنند.</string>
     <string name="dejavu_more_menu_row">ردیف %1$d</string>
     <string name="dejavu_more_menu_add_item">افزودن یک دکمه</string>
     <string name="dejavu_more_menu_add_row">افزودن یک ردیف</string>

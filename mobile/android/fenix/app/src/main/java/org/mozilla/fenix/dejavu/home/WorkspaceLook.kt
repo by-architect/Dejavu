@@ -8,7 +8,8 @@ import android.graphics.Bitmap
 import android.icu.text.BreakIterator
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.remember
-import androidx.compose.ui.geometry.Offset
+import androidx.compose.ui.geometry.Rect
+import androidx.compose.ui.geometry.toRect
 import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.ImageShader
@@ -51,8 +52,10 @@ internal val iconSuggestions: List<String> = listOf(
 
 private const val GRAIN_SIZE = 128
 private const val GRAIN_MAX_ALPHA = 90
-private const val GRAIN_STRENGTH = 0.5f
 private const val GRADIENT_STOPS = 3
+
+/** How strongly a theme's grain shows at its highest texture setting. */
+internal const val GRAIN_STRENGTH = 0.5f
 
 /** The last character typed into an icon field, emoji sequences included, or `null` when the field is empty. */
 internal fun lastGrapheme(text: String): String? {
@@ -64,17 +67,25 @@ internal fun lastGrapheme(text: String): String? {
     return text.substring(start, end).trim().ifEmpty { null }
 }
 
-/** A brush of fine noise, tiled over the background to give a theme its grain like Zen's texture. */
-@Composable
-internal fun rememberGrainBrush(): ShaderBrush = remember {
+/** A tile of fine noise that gives a theme its grain like Zen's texture. Always the same noise. */
+internal val grainBitmap: Bitmap by lazy {
     val random = Random(GRAIN_SIZE)
     val pixels = IntArray(GRAIN_SIZE * GRAIN_SIZE) {
         val shade = if (random.nextBoolean()) 255 else 0
         android.graphics.Color.argb(random.nextInt(GRAIN_MAX_ALPHA), shade, shade, shade)
     }
-    val bitmap = Bitmap.createBitmap(pixels, GRAIN_SIZE, GRAIN_SIZE, Bitmap.Config.ARGB_8888)
-    ShaderBrush(ImageShader(bitmap.asImageBitmap(), TileMode.Repeated, TileMode.Repeated))
+    Bitmap.createBitmap(pixels, GRAIN_SIZE, GRAIN_SIZE, Bitmap.Config.ARGB_8888)
 }
+
+/** A brush of [grainBitmap], tiled over the background. */
+@Composable
+internal fun rememberGrainBrush(): ShaderBrush = remember {
+    ShaderBrush(ImageShader(grainBitmap.asImageBitmap(), TileMode.Repeated, TileMode.Repeated))
+}
+
+/** The colors of the theme's gradient, from its top left to its bottom right, at the theme's opacity. */
+internal fun WorkspaceTheme.gradientColors(): List<Color> =
+    (0 until GRADIENT_STOPS).map { stop -> colorAt(stop).copy(alpha = opacity) }
 
 /** A diagonal gradient of [colors] at [opacity]. */
 internal fun themeBrush(colors: List<Color>, opacity: Float): Brush =
@@ -86,13 +97,14 @@ internal fun themeBrush(colors: List<Color>, opacity: Float): Brush =
 
 /**
  * Draws the theme of the workspace being shown, [fraction] of the way to the theme of the next one while swiping.
- * A workspace without a theme fades the gradient out.
+ * A workspace without a theme fades the gradient out. The gradient runs across [area], the whole drawing by default.
  */
 internal fun DrawScope.drawWorkspaceTheme(
     theme: WorkspaceTheme?,
     next: WorkspaceTheme?,
     fraction: Float,
     grain: ShaderBrush,
+    area: Rect = size.toRect(),
 ) {
     val from = theme ?: next?.copy(opacity = 0f, texture = 0f) ?: return
     val to = next ?: theme?.copy(opacity = 0f, texture = 0f) ?: return
@@ -104,8 +116,8 @@ internal fun DrawScope.drawWorkspaceTheme(
     drawRect(
         brush = Brush.linearGradient(
             colors = colors.map { it.copy(alpha = opacity) },
-            start = Offset.Zero,
-            end = Offset(size.width, size.height),
+            start = area.topLeft,
+            end = area.bottomRight,
         ),
     )
     if (texture > 0f) drawRect(brush = grain, alpha = texture * GRAIN_STRENGTH)

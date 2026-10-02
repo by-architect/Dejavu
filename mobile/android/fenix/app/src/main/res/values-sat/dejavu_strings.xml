@@ -90,8 +90,6 @@
     <string name="dejavu_settings_title">Dejavu</string>
     <string name="dejavu_about_content">%1$s ᱡᱚᱛᱚ Firefox ᱨᱮᱭᱟᱜ ᱵᱤᱱᱩᱸ, ᱟᱨ Mozilla ᱛᱮᱭᱟᱨ ᱠᱮᱫᱼᱟ ᱾</string>
     <string name="dejavu_settings_tab_actions">ᱴᱮᱵᱽ ᱮᱠᱥᱚᱱ ᱠᱚ</string>
-    <string name="dejavu_settings_tab_actions_entry_summary">ᱴᱮᱵᱽ ᱨᱮᱭᱟᱜ ᱵᱚᱴᱚᱱ ᱠᱚ, ᱟᱨ ᱵᱟᱪᱷᱟᱣ ᱴᱮᱵᱽ ᱠᱚ ᱞᱟᱹᱜᱤᱛ ᱮᱠᱥᱚᱱ ᱠᱚ</string>
-    <string name="dejavu_settings_tab_actions_hint">ᱯᱤᱱ ᱟᱨ ᱟᱹᱱᱯᱤᱱ ᱴᱮᱵᱽ ᱨᱚ ᱨᱮᱭᱟᱜ ᱵᱚᱴᱚᱱ ᱠᱚ, ᱟᱨ ᱴᱮᱵᱽ ᱵᱟᱪᱷᱟᱣ ᱠᱟᱛᱮ ᱩᱫᱩᱜ ᱮᱠᱥᱚᱱ ᱠᱚ ᱵᱟᱪᱷᱟᱣ ᱢᱮ ᱾ ᱟᱢ ᱟᱡ ᱥᱮᱞᱮᱫᱽ ᱠᱟᱛᱮ ᱮᱠᱥᱚᱱ ᱠᱚ ᱯᱮ ᱴᱷᱟᱶ ᱨᱮ ᱵᱮᱵᱚᱦᱟᱨ ᱦᱚᱜᱼᱟ ᱾</string>
     <string name="dejavu_settings_pinned_tabs">ᱯᱤᱱ ᱴᱮᱵᱽ ᱠᱚ</string>
     <string name="dejavu_settings_unpinned_tabs">ᱟᱹᱱᱯᱤᱱ ᱴᱮᱵᱽ ᱠᱚ</string>
     <string name="dejavu_settings_all_actions">ᱡᱚᱛᱚ ᱮᱠᱥᱚᱱ ᱠᱚ</string>
@@ -188,7 +186,6 @@
     <string name="dejavu_actions_bar_search">ᱥᱮᱸᱫᱽᱨᱟ</string>
     <string name="dejavu_actions_bar_home">ᱚᱲᱟᱜ</string>
     <string name="dejavu_settings_more_menu_summary">ᱥᱟᱦᱴᱟ ᱞᱟᱛᱟᱨ ᱨᱮᱭᱟᱜ ᱮᱠᱥᱚᱱ ᱵᱟᱨ ᱟᱨ ᱚᱱᱟ ᱡᱷᱤᱡᱽ ᱠᱟᱱ ᱢᱮᱱᱩ</string>
-    <string name="dejavu_more_menu_hint">ᱯᱩᱭᱞᱩ ᱨᱚ ᱠᱟᱱᱟ ᱥᱟᱦᱴᱟ ᱞᱟᱛᱟᱨ ᱨᱮᱭᱟᱜ ᱮᱠᱥᱚᱱ ᱵᱟᱨ ᱾ ᱡᱚᱛᱚ ᱢᱮᱱᱩ ᱡᱷᱤᱡᱽ ᱞᱟᱹᱜᱤᱛ ᱮᱠᱥᱚᱱ ᱵᱟᱨ ᱪᱮᱛᱟᱱ ᱛᱮ, ᱵᱟᱝ ᱴᱷᱤᱠᱟᱱᱟ ᱵᱟᱨ ᱞᱟᱛᱟᱨ ᱛᱮ ᱥᱳᱭᱟᱭᱯ ᱢᱮ ᱾ ᱢᱤᱫ ᱵᱚᱴᱚᱱ ᱩᱪᱟᱹᱲ ᱟᱨ ᱚᱰᱚᱠ ᱞᱟᱹᱜᱤᱛ ᱚᱱᱟ ᱚᱛᱟᱭ ᱢᱮ ᱾ ᱮᱠᱥᱴᱮᱱᱥᱚᱱ ᱠᱚ ᱡᱚᱛᱚ ᱚᱠᱛᱚ ᱢᱤᱫ ᱨᱚ ᱮᱢ ᱠᱚᱣᱟ ᱾</string>
     <string name="dejavu_more_menu_row">ᱨᱚ %1$d</string>
     <string name="dejavu_more_menu_add_item">ᱢᱤᱫ ᱵᱚᱴᱚᱱ ᱥᱮᱞᱮᱫᱽ ᱢᱮ</string>
     <string name="dejavu_more_menu_add_row">ᱢᱤᱫ ᱨᱚ ᱥᱮᱞᱮᱫᱽ ᱢᱮ</string>

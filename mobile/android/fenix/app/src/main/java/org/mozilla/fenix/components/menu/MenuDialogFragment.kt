@@ -214,9 +214,11 @@ class MenuDialogFragment : BottomSheetDialogFragment() {
 
                     val bottomSheet = findViewById<View?>(materialR.id.design_bottom_sheet)
                     bottomSheet?.let {
+                        // Dejavu's menu reaches below the navigation bar itself, so its colors go all the way down.
+                        val ownsBottom = DejavuMenu.replaces(args.accesspoint)
                         ViewCompat.setOnApplyWindowInsetsListener(it) { view, insets ->
                             val systemBarInsets = insets.getInsets(systemBars())
-                            view.setPadding(0, systemBarInsets.top, 0, systemBarInsets.bottom)
+                            view.setPadding(0, systemBarInsets.top, 0, if (ownsBottom) 0 else systemBarInsets.bottom)
                             insets
                         }
                     }
@@ -270,6 +272,7 @@ class MenuDialogFragment : BottomSheetDialogFragment() {
                     accessPoint = args.accesspoint,
                     fromTop = DejavuMenu.opensFromTop(requireContext(), args.accesspoint, arguments),
                     opening = DejavuMenu.opening(arguments),
+                    navController = findNavController(),
                     onEdit = { findNavController().navigate(R.id.dejavu_more_menu_graph) },
                     onDismiss = ::dismiss,
                 )

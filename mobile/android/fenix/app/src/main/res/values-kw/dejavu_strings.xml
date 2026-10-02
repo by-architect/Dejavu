@@ -90,8 +90,6 @@
     <string name="dejavu_settings_title">Dejavu</string>
     <string name="dejavu_about_content">%1$s yw selys war Firefox, gwrys gans Mozilla.</string>
     <string name="dejavu_settings_tab_actions">Oberennow tabow</string>
-    <string name="dejavu_settings_tab_actions_entry_summary">Boteneyer war dabow, hag oberennow rag tabow dewisys</string>
-    <string name="dejavu_settings_tab_actions_hint">Dewis boteneyer rysow tabow fastyes ha tabow anfastyes, hag oberennow diskwedhys pan dhewisydh tabow. Oberennow a gewredh dha honan a yll bos usys yn oll an tri.</string>
     <string name="dejavu_settings_pinned_tabs">Tabow fastyes</string>
     <string name="dejavu_settings_unpinned_tabs">Tabow anfastyes</string>
     <string name="dejavu_settings_all_actions">Oll an oberennow</string>
@@ -188,7 +186,6 @@
     <string name="dejavu_actions_bar_search">Whilas</string>
     <string name="dejavu_actions_bar_home">Tre</string>
     <string name="dejavu_settings_more_menu_summary">An barr oberennow a-woeles folennow ha\'n roll a wra igeri</string>
-    <string name="dejavu_more_menu_hint">An kensa rys yw an barr oberennow a-woeles folennow. Sweep an barr oberennow a-wartha, po an barr adres a-woeles, rag igeri oll an roll. Gwaska boten rag y vovya po removya. Kressansow a gemmer pub prys rys dien.</string>
     <string name="dejavu_more_menu_row">Rys %1$d</string>
     <string name="dejavu_more_menu_add_item">Keworra boten</string>
     <string name="dejavu_more_menu_add_row">Keworra rys</string>

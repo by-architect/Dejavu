@@ -90,8 +90,6 @@
     <string name="dejavu_settings_title">Dejavu</string>
     <string name="dejavu_about_content">%1$s — Mozilla жасаған Firefox негізінде жасалған.</string>
     <string name="dejavu_settings_tab_actions">Бет әрекеттері</string>
-    <string name="dejavu_settings_tab_actions_entry_summary">Беттердегі түймелер және таңдалған беттер үшін әрекеттер</string>
-    <string name="dejavu_settings_tab_actions_hint">Бекітілген және бекітілмеген бет қатарларының түймелерін және беттерді таңдағанда көрінетін әрекеттерді таңдаңыз. Өзіңіз қосқан әрекеттер үшеуінде де қолданыла алады.</string>
     <string name="dejavu_settings_pinned_tabs">Бекітілген беттер</string>
     <string name="dejavu_settings_unpinned_tabs">Бекітілмеген беттер</string>
     <string name="dejavu_settings_all_actions">Барлық әрекеттер</string>
@@ -188,7 +186,6 @@
     <string name="dejavu_actions_bar_search">Іздеу</string>
     <string name="dejavu_actions_bar_home">Басты бет</string>
     <string name="dejavu_settings_more_menu_summary">Беттердің астындағы әрекеттер тақтасы және ол ашатын мәзір</string>
-    <string name="dejavu_more_menu_hint">Бірінші қатар — беттердің астындағы әрекеттер тақтасы. Бүкіл мәзірді ашу үшін әрекеттер тақтасын жоғары, немесе мекенжай тақтасын төмен сырғытыңыз. Түймені жылжыту немесе шығару үшін оны түртіңіз. Кеңейтулер әрқашан бүкіл қатарды алады.</string>
     <string name="dejavu_more_menu_row">%1$d-қатар</string>
     <string name="dejavu_more_menu_add_item">Түйме қосу</string>
     <string name="dejavu_more_menu_add_row">Қатар қосу</string>

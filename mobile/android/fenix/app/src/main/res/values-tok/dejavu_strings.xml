@@ -90,8 +90,6 @@
     <string name="dejavu_settings_title">Dejavu</string>
     <string name="dejavu_about_content">%1$s li kama tan Firefox, li pali tan Mozilla.</string>
     <string name="dejavu_settings_tab_actions">pali pi poki</string>
-    <string name="dejavu_settings_tab_actions_entry_summary">ilo lili lon poki, en pali pi poki wile</string>
-    <string name="dejavu_settings_tab_actions_hint">o wile e ilo lili pi linja poki awen en poki awen ala, en pali pi lon tenpo wile sina. pali pi sina pana li ken lon poki tu wan.</string>
     <string name="dejavu_settings_pinned_tabs">poki awen</string>
     <string name="dejavu_settings_unpinned_tabs">poki awen ala</string>
     <string name="dejavu_settings_all_actions">pali ale</string>
@@ -188,7 +186,6 @@
     <string name="dejavu_actions_bar_search">o alasa</string>
     <string name="dejavu_actions_bar_home">tomo</string>
     <string name="dejavu_settings_more_menu_summary">linja ilo lon anpa lipu, en ilo mute pi open ona</string>
-    <string name="dejavu_more_menu_hint">linja nanpa wan li linja ilo lon anpa lipu. o pana e linja ilo tawa sewi, anu o pana e linja nasin lipu tawa anpa, tawa open e ilo mute ale. o luka e ilo lili tawa tawa ona anu weka ona. ilo namako li jo e linja ale, tenpo ale.</string>
     <string name="dejavu_more_menu_row">linja %1$d</string>
     <string name="dejavu_more_menu_add_item">o pana e ilo lili</string>
     <string name="dejavu_more_menu_add_row">o pana e linja</string>

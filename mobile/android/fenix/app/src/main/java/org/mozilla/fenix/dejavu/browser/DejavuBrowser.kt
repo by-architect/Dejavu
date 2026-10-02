@@ -10,6 +10,7 @@ import androidx.compose.material3.ColorScheme
 import androidx.fragment.app.Fragment
 import androidx.navigation.NavController
 import androidx.navigation.fragment.findNavController
+import mozilla.components.browser.state.selector.findTab
 import mozilla.components.browser.state.selector.selectedTab
 import mozilla.components.browser.state.state.BrowserState
 import mozilla.components.browser.state.state.ContainerState
@@ -29,6 +30,7 @@ import mozilla.components.compose.browser.toolbar.store.BrowserToolbarState
 import mozilla.components.lib.state.Store
 import org.mozilla.fenix.NavGraphDirections
 import org.mozilla.fenix.R
+import org.mozilla.fenix.components.Components
 import org.mozilla.fenix.components.menu.MenuAccessPoint
 import org.mozilla.fenix.components.toolbar.PageOriginInteractions
 import org.mozilla.fenix.dejavu.containers.ContainerColor
@@ -173,8 +175,9 @@ object DejavuToolbar {
 }
 
 /**
- * Handles Back on a tab without history: goes to the home screen and leaves the tab as it is. Custom tabs and tabs
- * opened by other apps keep Fenix's behavior.
+ * Handles Back on a tab without history: closes the tab, then shows the tab it was opened from, or the home screen
+ * when that one is gone too. A pinned tab keeps its pin. Custom tabs and tabs opened by other apps keep Fenix's
+ * behavior.
  *
  * @return Whether Back was handled.
  */
@@ -183,8 +186,18 @@ fun Fragment.handleDejavuBackPressed(customTabSessionId: String?): Boolean {
     val tab = requireComponents.core.store.state.selectedTab ?: return false
     if (tab.source is SessionState.Source.External) return false
 
-    findNavController().navigate(NavGraphDirections.actionGlobalHome())
+    closeShownTab(requireComponents, findNavController(), tab)
     return true
+}
+
+/** Closes [tab], the shown one, then shows the tab it was opened from, or the home screen when that one is gone too. */
+internal fun closeShownTab(components: Components, navController: NavController, tab: TabSessionState) {
+    if (tab.parentId?.let { components.core.store.state.findTab(it) } != null) {
+        components.useCases.tabsUseCases.removeTab(tab.id, selectParentIfExists = true)
+    } else {
+        // The home screen closes the tab once it shows, so the page does not switch to another tab first.
+        navController.navigate(NavGraphDirections.actionGlobalHome(sessionToDelete = tab.id))
+    }
 }
 
 /** An interaction with Dejavu's parts of the browser toolbars, carried out by [DejavuToolbar.onEvent]. */

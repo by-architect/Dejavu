@@ -17,9 +17,9 @@
     <color name="fx_mobile_on_tertiary">@color/dejavuAmber20</color>
     <color name="fx_mobile_tertiary_container">@color/dejavuSand35</color>
     <color name="fx_mobile_on_tertiary_container">@color/dejavuPaper</color>
-    <color name="fx_mobile_background">@color/dejavuWarm75</color>
+    <color name="fx_mobile_background">@color/dejavuGilt75</color>
     <color name="fx_mobile_on_background">@color/dejavuPaper</color>
-    <color name="fx_mobile_surface">@color/dejavuWarm75</color>
+    <color name="fx_mobile_surface">@color/dejavuGilt75</color>
     <color name="fx_mobile_on_surface">@color/dejavuPaper</color>
     <color name="fx_mobile_surface_variant">@color/dejavuWarm65</color>
     <color name="fx_mobile_on_surface_variant">@color/dejavuPaperA70</color>
@@ -43,10 +43,10 @@
     <color name="fx_mobile_on_warning_container">@color/dejavuPaper</color>
     <color name="fx_mobile_outline">@color/dejavuWarm45</color>
     <color name="fx_mobile_outline_variant">@color/dejavuWarm60</color>
-    <color name="fx_mobile_sheet_outline">@color/dejavuWarm75</color>
+    <color name="fx_mobile_sheet_outline">@color/dejavuGilt75</color>
     <color name="fx_mobile_surface_bright">@color/dejavuWarm65</color>
     <color name="fx_mobile_surface_dim">@color/dejavuWarm85</color>
-    <color name="fx_mobile_surface_container">@color/dejavuWarm75</color>
+    <color name="fx_mobile_surface_container">@color/dejavuGilt75</color>
     <color name="fx_mobile_surface_container_high">@color/dejavuWarm70</color>
     <color name="fx_mobile_surface_container_highest">@color/dejavuWarm65</color>
     <color name="fx_mobile_surface_container_low">@color/dejavuWarm80</color>
@@ -57,7 +57,7 @@
     <color name="fx_mobile_icon_private">@color/novaViolet50</color>
     <color name="fx_mobile_scrim">@color/novaBlackA50</color>
 
-    <color name="fx_mobile_splashscreen_background">@color/dejavuWarm75</color>
+    <color name="fx_mobile_splashscreen_background">@color/dejavuGilt75</color>
 
     <!-- Design system color variables -->
 

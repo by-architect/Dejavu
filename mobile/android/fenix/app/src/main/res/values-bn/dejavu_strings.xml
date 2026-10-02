@@ -121,8 +121,6 @@
     <string name="dejavu_settings_title">Dejavu</string>
     <string name="dejavu_about_content">%1$s, Mozilla-র তৈরি Firefox-এর উপর ভিত্তি করে বানানো।</string>
     <string name="dejavu_settings_tab_actions">ট্যাব অ্যাকশন</string>
-    <string name="dejavu_settings_tab_actions_entry_summary">ট্যাবের বোতাম এবং নির্বাচিত ট্যাবের অ্যাকশন</string>
-    <string name="dejavu_settings_tab_actions_hint">পিন করা ও পিন না করা ট্যাবের সারির বোতাম এবং ট্যাব নির্বাচন করলে যে অ্যাকশনগুলো দেখায় সেগুলো বেছে নিন। আপনার নিজের যোগ করা অ্যাকশন তিনটিতেই ব্যবহার করা যায়।</string>
     <string name="dejavu_settings_pinned_tabs">পিন করা ট্যাব</string>
     <string name="dejavu_settings_unpinned_tabs">পিন না করা ট্যাব</string>
     <string name="dejavu_settings_all_actions">সব অ্যাকশন</string>
@@ -239,7 +237,6 @@
     <string name="dejavu_actions_bar_search">অনুসন্ধান</string>
     <string name="dejavu_actions_bar_home">হোম</string>
     <string name="dejavu_settings_more_menu_summary">পাতার নিচের অ্যাকশন বার এবং এটি যে মেনু খোলে</string>
-    <string name="dejavu_more_menu_hint">প্রথম সারিটি হলো পাতার নিচের অ্যাকশন বার। পুরো মেনু খুলতে অ্যাকশন বার উপরে বা ঠিকানা বার নিচে সোয়াইপ করুন। কোনো বোতাম সরাতে বা মুছে ফেলতে সেটিতে ট্যাপ করুন। এক্সটেনশন সবসময় পুরো একটি সারি নেয়।</string>
     <string name="dejavu_more_menu_row">সারি %1$d</string>
     <string name="dejavu_more_menu_add_item">একটি বোতাম যোগ করুন</string>
     <string name="dejavu_more_menu_add_row">একটি সারি যোগ করুন</string>

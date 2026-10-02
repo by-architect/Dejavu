@@ -90,8 +90,6 @@
     <string name="dejavu_settings_title">Dejavu</string>
     <string name="dejavu_about_content">Mae %1$s yn seiliedig ar Firefox, wedi’i wneud gan Mozilla.</string>
     <string name="dejavu_settings_tab_actions">Gweithredoedd tabiau</string>
-    <string name="dejavu_settings_tab_actions_entry_summary">Botymau ar dabiau, a gweithredoedd ar gyfer tabiau dethol</string>
-    <string name="dejavu_settings_tab_actions_hint">Dewiswch fotymau rhesi tabiau wedi’u pinio a heb eu pinio, a’r gweithredoedd sy’n ymddangos wrth ddewis tabiau. Gellir defnyddio gweithredoedd rydych chi’n eu hychwanegu eich hun yn y tri.</string>
     <string name="dejavu_settings_pinned_tabs">Tabiau wedi’u pinio</string>
     <string name="dejavu_settings_unpinned_tabs">Tabiau heb eu pinio</string>
     <string name="dejavu_settings_all_actions">Pob gweithred</string>
@@ -188,7 +186,6 @@
     <string name="dejavu_actions_bar_search">Chwilio</string>
     <string name="dejavu_actions_bar_home">Hafan</string>
     <string name="dejavu_settings_more_menu_summary">Y bar gweithredoedd o dan dudalennau a’r ddewislen mae’n ei hagor</string>
-    <string name="dejavu_more_menu_hint">Y rhes gyntaf yw’r bar gweithredoedd o dan dudalennau. Llusgwch y bar gweithredoedd i fyny, neu’r bar cyfeiriad i lawr, i agor y ddewislen gyfan. Pwyswch fotwm i’w symud neu ei dynnu. Mae estyniadau bob amser yn cymryd rhes gyfan.</string>
     <string name="dejavu_more_menu_row">Rhes %1$d</string>
     <string name="dejavu_more_menu_add_item">Ychwanegu botwm</string>
     <string name="dejavu_more_menu_add_row">Ychwanegu rhes</string>

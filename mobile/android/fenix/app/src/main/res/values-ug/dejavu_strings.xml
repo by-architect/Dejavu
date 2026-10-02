@@ -90,8 +90,6 @@
     <string name="dejavu_settings_title">Dejavu</string>
     <string name="dejavu_about_content">%1$s Mozilla ياسىغان Firefox ئاساسىدا ياسالغان.</string>
     <string name="dejavu_settings_tab_actions">بەتكۈچ مەشغۇلاتلىرى</string>
-    <string name="dejavu_settings_tab_actions_entry_summary">بەتكۈچلەردىكى توپچىلار ۋە تاللانغان بەتكۈچلەر ئۈچۈن مەشغۇلاتلار</string>
-    <string name="dejavu_settings_tab_actions_hint">مىخلانغان ۋە مىخلانمىغان بەتكۈچ قاتارلىرىنىڭ توپچىلىرىنى ۋە بەتكۈچلەرنى تاللىغاندا كۆرۈنىدىغان مەشغۇلاتلارنى تاللاڭ. ئۆزىڭىز قوشقان مەشغۇلاتلار ئۈچىلىسىدىمۇ ئىشلىتىلەلەيدۇ.</string>
     <string name="dejavu_settings_pinned_tabs">مىخلانغان بەتكۈچلەر</string>
     <string name="dejavu_settings_unpinned_tabs">مىخلانمىغان بەتكۈچلەر</string>
     <string name="dejavu_settings_all_actions">ھەممە مەشغۇلاتلار</string>
@@ -188,7 +186,6 @@
     <string name="dejavu_actions_bar_search">ئىزدە</string>
     <string name="dejavu_actions_bar_home">باش بەت</string>
     <string name="dejavu_settings_more_menu_summary">بەتلەرنىڭ ئاستىدىكى مەشغۇلات بالدىقى ۋە ئۇ ئاچىدىغان تىزىملىك</string>
-    <string name="dejavu_more_menu_hint">بىرىنچى قاتار بەتلەرنىڭ ئاستىدىكى مەشغۇلات بالدىقى. پۈتۈن تىزىملىكنى ئېچىش ئۈچۈن مەشغۇلات بالدىقىنى ئۈستىگە، ياكى ئادرېس بالدىقىنى ئاستىغا سۈرۈڭ. توپچىنى يۆتكەش ياكى چىقىرىۋېتىش ئۈچۈن ئۇنىڭغا چېكىڭ. كېڭەيتمىلەر ھەمىشە پۈتۈن بىر قاتارنى ئىگىلەيدۇ.</string>
     <string name="dejavu_more_menu_row">%1$d-قاتار</string>
     <string name="dejavu_more_menu_add_item">توپچا قوش</string>
     <string name="dejavu_more_menu_add_row">قاتار قوش</string>

@@ -90,8 +90,6 @@
     <string name="dejavu_settings_title">Dejavu</string>
     <string name="dejavu_about_content">%1$s Firefox ಅನ್ನು ಆಧರಿಸಿದೆ, ಇದನ್ನು Mozilla ರೂಪಿಸಿದೆ.</string>
     <string name="dejavu_settings_tab_actions">ಟ್ಯಾಬ್ ಕ್ರಿಯೆಗಳು</string>
-    <string name="dejavu_settings_tab_actions_entry_summary">ಟ್ಯಾಬ್‌ಗಳ ಮೇಲಿನ ಬಟನ್‌ಗಳು, ಮತ್ತು ಆಯ್ಕೆ ಮಾಡಿದ ಟ್ಯಾಬ್‌ಗಳಿಗೆ ಕ್ರಿಯೆಗಳು</string>
-    <string name="dejavu_settings_tab_actions_hint">ಪಿನ್ ಮಾಡಿದ ಮತ್ತು ಪಿನ್ ಮಾಡದ ಟ್ಯಾಬ್ ಸಾಲುಗಳ ಬಟನ್‌ಗಳನ್ನು, ಮತ್ತು ನೀವು ಟ್ಯಾಬ್‌ಗಳನ್ನು ಆಯ್ಕೆಮಾಡಿದಾಗ ತೋರಿಸುವ ಕ್ರಿಯೆಗಳನ್ನು ಆರಿಸಿ. ನೀವೇ ಸೇರಿಸುವ ಕ್ರಿಯೆಗಳನ್ನು ಎಲ್ಲಾ ಮೂರರಲ್ಲೂ ಬಳಸಬಹುದು.</string>
     <string name="dejavu_settings_pinned_tabs">ಪಿನ್ ಮಾಡಿದ ಟ್ಯಾಬ್‌ಗಳು</string>
     <string name="dejavu_settings_unpinned_tabs">ಪಿನ್ ಮಾಡದ ಟ್ಯಾಬ್‌ಗಳು</string>
     <string name="dejavu_settings_all_actions">ಎಲ್ಲಾ ಕ್ರಿಯೆಗಳು</string>
@@ -188,7 +186,6 @@
     <string name="dejavu_actions_bar_search">ಹುಡುಕು</string>
     <string name="dejavu_actions_bar_home">ಮುಖಪುಟ</string>
     <string name="dejavu_settings_more_menu_summary">ಪುಟಗಳ ಕೆಳಗಿನ ಕ್ರಿಯಾ ಪಟ್ಟಿ ಮತ್ತು ಅದು ತೆರೆಯುವ ಮೆನು</string>
-    <string name="dejavu_more_menu_hint">ಮೊದಲ ಸಾಲು ಪುಟಗಳ ಕೆಳಗಿನ ಕ್ರಿಯಾ ಪಟ್ಟಿಯಾಗಿದೆ. ಇಡೀ ಮೆನುವನ್ನು ತೆರೆಯಲು ಕ್ರಿಯಾ ಪಟ್ಟಿಯನ್ನು ಮೇಲಕ್ಕೆ ಸ್ವೈಪ್ ಮಾಡಿ, ಅಥವಾ ವಿಳಾಸ ಪಟ್ಟಿಯನ್ನು ಕೆಳಕ್ಕೆ ಸ್ವೈಪ್ ಮಾಡಿ. ಬಟನ್ ಅನ್ನು ಸ್ಥಳಾಂತರಿಸಲು ಅಥವಾ ತೆಗೆದುಹಾಕಲು ಅದನ್ನು ಟ್ಯಾಪ್ ಮಾಡಿ. ವಿಸ್ತರಣೆಗಳು ಯಾವಾಗಲೂ ಇಡೀ ಸಾಲನ್ನು ಆಕ್ರಮಿಸುತ್ತವೆ.</string>
     <string name="dejavu_more_menu_row">ಸಾಲು %1$d</string>
     <string name="dejavu_more_menu_add_item">ಒಂದು ಬಟನ್ ಸೇರಿಸು</string>
     <string name="dejavu_more_menu_add_row">ಒಂದು ಸಾಲು ಸೇರಿಸು</string>

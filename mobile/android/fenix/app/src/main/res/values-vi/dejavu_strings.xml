@@ -90,8 +90,6 @@
     <string name="dejavu_settings_title">Dejavu</string>
     <string name="dejavu_about_content">%1$s dựa trên Firefox, do Mozilla phát triển.</string>
     <string name="dejavu_settings_tab_actions">Thao tác thẻ</string>
-    <string name="dejavu_settings_tab_actions_entry_summary">Các nút trên thẻ và thao tác cho thẻ đã chọn</string>
-    <string name="dejavu_settings_tab_actions_hint">Chọn các nút cho hàng thẻ đã ghim và chưa ghim, cùng các thao tác hiển thị khi bạn chọn thẻ. Thao tác bạn tự thêm có thể dùng ở cả ba nơi.</string>
     <string name="dejavu_settings_pinned_tabs">Thẻ đã ghim</string>
     <string name="dejavu_settings_unpinned_tabs">Thẻ chưa ghim</string>
     <string name="dejavu_settings_all_actions">Tất cả thao tác</string>
@@ -188,7 +186,6 @@
     <string name="dejavu_actions_bar_search">Tìm kiếm</string>
     <string name="dejavu_actions_bar_home">Trang chủ</string>
     <string name="dejavu_settings_more_menu_summary">Thanh thao tác bên dưới trang và trình đơn mà nó mở ra</string>
-    <string name="dejavu_more_menu_hint">Hàng đầu tiên là thanh thao tác bên dưới trang. Vuốt thanh thao tác lên, hoặc vuốt thanh địa chỉ xuống, để mở toàn bộ trình đơn. Nhấn vào một nút để di chuyển hoặc xóa nút đó. Tiện ích luôn chiếm trọn một hàng.</string>
     <string name="dejavu_more_menu_row">Hàng %1$d</string>
     <string name="dejavu_more_menu_add_item">Thêm một nút</string>
     <string name="dejavu_more_menu_add_row">Thêm một hàng</string>

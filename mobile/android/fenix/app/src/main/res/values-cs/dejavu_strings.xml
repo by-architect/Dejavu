@@ -90,8 +90,6 @@
     <string name="dejavu_settings_title">Dejavu</string>
     <string name="dejavu_about_content">%1$s vychází z Firefoxu od Mozilly.</string>
     <string name="dejavu_settings_tab_actions">Akce panelů</string>
-    <string name="dejavu_settings_tab_actions_entry_summary">Tlačítka na panelech a akce pro vybrané panely</string>
-    <string name="dejavu_settings_tab_actions_hint">Vyberte tlačítka pro řádky připnutých a nepřipnutých panelů a akce zobrazené při výběru panelů. Akce, které si přidáte sami, lze použít ve všech třech.</string>
     <string name="dejavu_settings_pinned_tabs">Připnuté panely</string>
     <string name="dejavu_settings_unpinned_tabs">Nepřipnuté panely</string>
     <string name="dejavu_settings_all_actions">Všechny akce</string>
@@ -188,7 +186,6 @@
     <string name="dejavu_actions_bar_search">Hledat</string>
     <string name="dejavu_actions_bar_home">Domů</string>
     <string name="dejavu_settings_more_menu_summary">Lišta akcí pod stránkami a nabídka, kterou otevírá</string>
-    <string name="dejavu_more_menu_hint">První řádek je lišta akcí pod stránkami. Celou nabídku otevřete přejetím lišty akcí nahoru, nebo adresního řádku dolů. Klepnutím na tlačítko ho přesunete nebo odeberete. Rozšíření vždy zabírají celý řádek.</string>
     <string name="dejavu_more_menu_row">Řádek %1$d</string>
     <string name="dejavu_more_menu_add_item">Přidat tlačítko</string>
     <string name="dejavu_more_menu_add_row">Přidat řádek</string>

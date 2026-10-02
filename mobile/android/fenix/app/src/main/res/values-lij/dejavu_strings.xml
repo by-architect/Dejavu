@@ -90,8 +90,6 @@
     <string name="dejavu_settings_title">Dejavu</string>
     <string name="dejavu_about_content">%1$s o l\'è basou in sce Firefox, fæto da Mozilla.</string>
     <string name="dejavu_settings_tab_actions">Açioin di feuggi</string>
-    <string name="dejavu_settings_tab_actions_entry_summary">Buttoin in sce i feuggi, e açioin pe i feuggi seleçionæ</string>
-    <string name="dejavu_settings_tab_actions_hint">Sceggi i buttoin di righe de feuggi fissæ e no fissæ, e e açioin amostræ quande ti seleçioni feuggi. E açioin che t\'azzonzi ti mæximo peuan ese doeæ in tutte e trei.</string>
     <string name="dejavu_settings_pinned_tabs">Feuggi fissæ</string>
     <string name="dejavu_settings_unpinned_tabs">Feuggi no fissæ</string>
     <string name="dejavu_settings_all_actions">Tutte e açioin</string>
@@ -188,7 +186,6 @@
     <string name="dejavu_actions_bar_search">Treuva</string>
     <string name="dejavu_actions_bar_home">Casa</string>
     <string name="dejavu_settings_more_menu_summary">A barra de-e açioin sotto a-e pagine e o menû ch\'a arve</string>
-    <string name="dejavu_more_menu_hint">A primma riga a l\'è a barra de-e açioin sotto a-e pagine. Fa scòrre a barra de-e açioin in sciù, ò a barra de l\'indirizzo in zu, pe arvî tutto o menû. Tocca \'n buttón pe spostâlo ò cacciâlo. E estensioin pìggian sempre \'na riga intrega.</string>
     <string name="dejavu_more_menu_row">Riga %1$d</string>
     <string name="dejavu_more_menu_add_item">Azzonzi \'n buttón</string>
     <string name="dejavu_more_menu_add_row">Azzonzi \'na riga</string>

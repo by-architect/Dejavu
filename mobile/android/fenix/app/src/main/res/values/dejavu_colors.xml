@@ -29,7 +29,6 @@
     <color name="dejavuAmber95">#FFFFF1DC</color>
 
     <color name="dejavuWarm0">#FFFFFBF5</color>
-    <color name="dejavuWarm5">#FFFAF6EF</color>
     <color name="dejavuWarm10">#FFF2EDE4</color>
     <color name="dejavuWarm15">#FFE8E2D7</color>
     <color name="dejavuWarm20">#FFD9D2C6</color>
@@ -42,9 +41,12 @@
     <color name="dejavuWarm60">#FF403B34</color>
     <color name="dejavuWarm65">#FF322E28</color>
     <color name="dejavuWarm70">#FF26231E</color>
-    <color name="dejavuWarm75">#FF1D1A16</color>
     <color name="dejavuWarm80">#FF181613</color>
     <color name="dejavuWarm85">#FF13120F</color>
+
+    <!-- The backgrounds, warm with a touch of gold. -->
+    <color name="dejavuGilt5">#FFFBF6E8</color>
+    <color name="dejavuGilt75">#FF1F1B11</color>
 
     <color name="dejavuInk">#FF1F1B13</color>
     <color name="dejavuInkA70">#B21F1B13</color>

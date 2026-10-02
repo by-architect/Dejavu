@@ -90,8 +90,6 @@
     <string name="dejavu_settings_title">Dejavu</string>
     <string name="dejavu_about_content">%1$s Firefox ఆధారంగా రూపొందించబడింది, దీన్ని Mozilla తయారు చేసింది.</string>
     <string name="dejavu_settings_tab_actions">ట్యాబు చర్యలు</string>
-    <string name="dejavu_settings_tab_actions_entry_summary">ట్యాబులపై బటన్లు, మరియు ఎంపిక చేసిన ట్యాబుల కోసం చర్యలు</string>
-    <string name="dejavu_settings_tab_actions_hint">పిన్ చేసిన మరియు పిన్ చేయని ట్యాబు వరుసల బటన్లను, మరియు మీరు ట్యాబులను ఎంచుకున్నప్పుడు చూపించే చర్యలను ఎంచుకోండి. మీరు స్వయంగా చేర్చిన చర్యలను మూడింటిలోనూ ఉపయోగించవచ్చు.</string>
     <string name="dejavu_settings_pinned_tabs">పిన్ చేసిన ట్యాబులు</string>
     <string name="dejavu_settings_unpinned_tabs">పిన్ చేయని ట్యాబులు</string>
     <string name="dejavu_settings_all_actions">అన్ని చర్యలు</string>
@@ -188,7 +186,6 @@
     <string name="dejavu_actions_bar_search">వెతుకు</string>
     <string name="dejavu_actions_bar_home">హోమ్</string>
     <string name="dejavu_settings_more_menu_summary">పేజీల దిగువన ఉండే చర్యల పట్టీ మరియు అది తెరిచే మెనూ</string>
-    <string name="dejavu_more_menu_hint">మొదటి వరుస పేజీల దిగువన ఉండే చర్యల పట్టీ. మొత్తం మెనూను తెరవడానికి చర్యల పట్టీని పైకి స్వైప్ చేయండి, లేదా చిరునామా పట్టీని కిందికి స్వైప్ చేయండి. బటన్‌ను తరలించడానికి లేదా తీసివేయడానికి దాన్ని నొక్కండి. పొడగింతలు ఎప్పుడూ మొత్తం వరుసను ఆక్రమిస్తాయి.</string>
     <string name="dejavu_more_menu_row">వరుస %1$d</string>
     <string name="dejavu_more_menu_add_item">ఒక బటన్‌ను చేర్చు</string>
     <string name="dejavu_more_menu_add_row">ఒక వరుసను చేర్చు</string>

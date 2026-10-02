@@ -90,8 +90,6 @@
     <string name="dejavu_settings_title">Dejavu</string>
     <string name="dejavu_about_content">%1$s is gebaseerd op Firefox, gemaakt door Mozilla.</string>
     <string name="dejavu_settings_tab_actions">Tabbladacties</string>
-    <string name="dejavu_settings_tab_actions_entry_summary">Knoppen op tabbladen en acties voor geselecteerde tabbladen</string>
-    <string name="dejavu_settings_tab_actions_hint">Kies de knoppen voor rijen met vastgemaakte en niet-vastgemaakte tabbladen, en de acties die worden getoond wanneer je tabbladen selecteert. Acties die je zelf toevoegt, kun je in alle drie gebruiken.</string>
     <string name="dejavu_settings_pinned_tabs">Vastgemaakte tabbladen</string>
     <string name="dejavu_settings_unpinned_tabs">Niet-vastgemaakte tabbladen</string>
     <string name="dejavu_settings_all_actions">Alle acties</string>
@@ -188,7 +186,6 @@
     <string name="dejavu_actions_bar_search">Zoeken</string>
     <string name="dejavu_actions_bar_home">Start</string>
     <string name="dejavu_settings_more_menu_summary">De actiebalk onder pagina’s en het menu dat deze opent</string>
-    <string name="dejavu_more_menu_hint">De eerste rij is de actiebalk onder pagina’s. Swipe de actiebalk omhoog, of de adresbalk omlaag, om het volledige menu te openen. Tik op een knop om deze te verplaatsen of te verwijderen. Extensies nemen altijd een hele rij in beslag.</string>
     <string name="dejavu_more_menu_row">Rij %1$d</string>
     <string name="dejavu_more_menu_add_item">Knop toevoegen</string>
     <string name="dejavu_more_menu_add_row">Rij toevoegen</string>

@@ -90,8 +90,6 @@
     <string name="dejavu_settings_title">Dejavu</string>
     <string name="dejavu_about_content">%1$s se bazează pe Firefox, realizat de Mozilla.</string>
     <string name="dejavu_settings_tab_actions">Acțiuni pentru file</string>
-    <string name="dejavu_settings_tab_actions_entry_summary">Butoane pe file și acțiuni pentru filele selectate</string>
-    <string name="dejavu_settings_tab_actions_hint">Alege butoanele pentru rândurile de file fixate și nefixate, precum și acțiunile afișate când selectezi file. Acțiunile pe care le adaugi tu pot fi folosite în toate cele trei.</string>
     <string name="dejavu_settings_pinned_tabs">File fixate</string>
     <string name="dejavu_settings_unpinned_tabs">File nefixate</string>
     <string name="dejavu_settings_all_actions">Toate acțiunile</string>
@@ -188,7 +186,6 @@
     <string name="dejavu_actions_bar_search">Căutare</string>
     <string name="dejavu_actions_bar_home">Acasă</string>
     <string name="dejavu_settings_more_menu_summary">Bara de acțiuni de sub pagini și meniul pe care îl deschide</string>
-    <string name="dejavu_more_menu_hint">Primul rând este bara de acțiuni de sub pagini. Glisează bara de acțiuni în sus, sau bara de adrese în jos, pentru a deschide întregul meniu. Atinge un buton pentru a-l muta sau elimina. Extensiile ocupă întotdeauna un rând întreg.</string>
     <string name="dejavu_more_menu_row">Rândul %1$d</string>
     <string name="dejavu_more_menu_add_item">Adaugă un buton</string>
     <string name="dejavu_more_menu_add_row">Adaugă un rând</string>

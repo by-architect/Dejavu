@@ -90,8 +90,6 @@
     <string name="dejavu_settings_title">Dejavu</string>
     <string name="dejavu_about_content">%1$s֊ը հիմնված է Firefox֊ի վրա և ստեղծված է Mozilla֊ի կողմից.</string>
     <string name="dejavu_settings_tab_actions">Ներդիրի գործողություններ</string>
-    <string name="dejavu_settings_tab_actions_entry_summary">Ներդիրների կոճակները և ընտրված ներդիրների գործողությունները</string>
-    <string name="dejavu_settings_tab_actions_hint">Ընտրեք ամրացված և չամրացված ներդիրների տողերի կոճակները, ինչպես նաև գործողությունները, որոնք ցուցադրվում են ներդիրներն ընտրելիս. Ձեր ավելացրած գործողությունները կարող եք օգտագործել երեքում էլ.</string>
     <string name="dejavu_settings_pinned_tabs">Ամրացված ներդիրներ</string>
     <string name="dejavu_settings_unpinned_tabs">Չամրացված ներդիրներ</string>
     <string name="dejavu_settings_all_actions">Բոլոր գործողությունները</string>
@@ -188,7 +186,6 @@
     <string name="dejavu_actions_bar_search">Որոնում</string>
     <string name="dejavu_actions_bar_home">Գլխավոր</string>
     <string name="dejavu_settings_more_menu_summary">Էջերի տակի գործողությունների գոտին և ցանկը, որ այն բացում է</string>
-    <string name="dejavu_more_menu_hint">Առաջին տողը էջերի տակի գործողությունների գոտին է. Ամբողջ ցանկը բացելու համար սահեցրեք գործողությունների գոտին վերև կամ հասցեների գոտին՝ ներքև. Հպեք կոճակին՝ այն տեղափոխելու կամ հեռացնելու համար. Ընդլայնումները միշտ զբաղեցնում են ամբողջ տողը.</string>
     <string name="dejavu_more_menu_row">Տող %1$d</string>
     <string name="dejavu_more_menu_add_item">Ավելացնել կոճակ</string>
     <string name="dejavu_more_menu_add_row">Ավելացնել տող</string>

@@ -90,8 +90,6 @@
     <string name="dejavu_settings_title">Dejavu</string>
     <string name="dejavu_about_content">%1$s පදනම් වන්නේ Firefox මත වන අතර, එය නිර්මාණය කළේ Mozilla ය.</string>
     <string name="dejavu_settings_tab_actions">පටිති ක්‍රියා</string>
-    <string name="dejavu_settings_tab_actions_entry_summary">පටිතිවල බොත්තම්, සහ තෝරාගත් පටිති සඳහා ක්‍රියා</string>
-    <string name="dejavu_settings_tab_actions_hint">අමුණන ලද සහ නොඅමුණන ලද පටිති පේළිවල බොත්තම්, සහ ඔබ පටිති තෝරන විට පෙන්වන ක්‍රියා තෝරන්න. ඔබ විසින්ම එක් කරන ක්‍රියා තුනෙන්ම භාවිත කළ හැක.</string>
     <string name="dejavu_settings_pinned_tabs">අමුණන ලද පටිති</string>
     <string name="dejavu_settings_unpinned_tabs">නොඅමුණන ලද පටිති</string>
     <string name="dejavu_settings_all_actions">සියලු ක්‍රියා</string>
@@ -188,7 +186,6 @@
     <string name="dejavu_actions_bar_search">සොයන්න</string>
     <string name="dejavu_actions_bar_home">මුල් පිටුව</string>
     <string name="dejavu_settings_more_menu_summary">පිටු පහළින් ඇති ක්‍රියා තීරුව සහ එය විවෘත කරන මෙනුව</string>
-    <string name="dejavu_more_menu_hint">පළමු පේළිය පිටු පහළින් ඇති ක්‍රියා තීරුවයි. සම්පූර්ණ මෙනුව විවෘත කිරීමට ක්‍රියා තීරුව ඉහළට හෝ ලිපින තීරුව පහළට ස්වයිප් කරන්න. බොත්තමක් ගෙනයාමට හෝ ඉවත් කිරීමට එය තට්ටු කරන්න. දිගු සැමවිටම සම්පූර්ණ පේළියක් ගනී.</string>
     <string name="dejavu_more_menu_row">%1$d වන පේළිය</string>
     <string name="dejavu_more_menu_add_item">බොත්තමක් එකතු කරන්න</string>
     <string name="dejavu_more_menu_add_row">පේළියක් එකතු කරන්න</string>

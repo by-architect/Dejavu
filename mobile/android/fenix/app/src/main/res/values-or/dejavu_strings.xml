@@ -90,8 +90,6 @@
     <string name="dejavu_settings_title">Dejavu</string>
     <string name="dejavu_about_content">%1$s Firefox ଉପରେ ଆଧାରିତ, ଏହାକୁ Mozilla ତିଆରି କରିଛି।</string>
     <string name="dejavu_settings_tab_actions">ଟ୍ୟାବ୍ କାର୍ଯ୍ୟ</string>
-    <string name="dejavu_settings_tab_actions_entry_summary">ଟ୍ୟାବ୍‌ରେ ଥିବା ବଟନ୍, ଏବଂ ବଛାଯାଇଥିବା ଟ୍ୟାବ୍ ପାଇଁ କାର୍ଯ୍ୟ</string>
-    <string name="dejavu_settings_tab_actions_hint">ପିନ୍ ଏବଂ ଅନପିନ୍ ଟ୍ୟାବ୍ ଧାଡିର ବଟନ୍, ଏବଂ ଟ୍ୟାବ୍ ବାଛିଲେ ଦେଖାଯିବା କାର୍ଯ୍ୟ ବାଛନ୍ତୁ। ଆପଣ ନିଜେ ଯୋଡିଥିବା କାର୍ଯ୍ୟ ତିନିଟିଯାକରେ ବ୍ୟବହାର ହୋଇପାରେ।</string>
     <string name="dejavu_settings_pinned_tabs">ପିନ୍ କରାଯାଇଥିବା ଟ୍ୟାବ୍</string>
     <string name="dejavu_settings_unpinned_tabs">ଅନପିନ୍ ଟ୍ୟାବ୍</string>
     <string name="dejavu_settings_all_actions">ସମସ୍ତ କାର୍ଯ୍ୟ</string>
@@ -188,7 +186,6 @@
     <string name="dejavu_actions_bar_search">ଖୋଜନ୍ତୁ</string>
     <string name="dejavu_actions_bar_home">ହୋମ୍</string>
     <string name="dejavu_settings_more_menu_summary">ପୃଷ୍ଠା ତଳେ ଥିବା କାର୍ଯ୍ୟ ବାର୍ ଏବଂ ଏହା ଖୋଲୁଥିବା ମେନୁ</string>
-    <string name="dejavu_more_menu_hint">ପ୍ରଥମ ଧାଡି ପୃଷ୍ଠା ତଳେ ଥିବା କାର୍ଯ୍ୟ ବାର୍। ପୁରା ମେନୁ ଖୋଲିବାକୁ କାର୍ଯ୍ୟ ବାର୍‌କୁ ଉପରକୁ, କିମ୍ବା ଠିକଣା ବାର୍‌କୁ ତଳକୁ ସ୍ୱାଇପ୍ କରନ୍ତୁ। ଏକ ବଟନ୍‌କୁ ଘୁଞ୍ଚାଇବାକୁ କିମ୍ବା ହଟାଇବାକୁ ଏହାକୁ ଟାପ୍ କରନ୍ତୁ। ଏକ୍ସଟେନସନ ସର୍ବଦା ପୁରା ଧାଡି ନିଏ।</string>
     <string name="dejavu_more_menu_row">ଧାଡି %1$d</string>
     <string name="dejavu_more_menu_add_item">ଏକ ବଟନ୍ ଯୋଡନ୍ତୁ</string>
     <string name="dejavu_more_menu_add_row">ଏକ ଧାଡି ଯୋଡନ୍ତୁ</string>

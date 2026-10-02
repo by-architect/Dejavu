@@ -90,8 +90,6 @@
     <string name="dejavu_settings_title">Dejavu</string>
     <string name="dejavu_about_content">%1$s se temelji na Firefoxu, koji izrađuje Mozilla.</string>
     <string name="dejavu_settings_tab_actions">Radnje kartica</string>
-    <string name="dejavu_settings_tab_actions_entry_summary">Gumbi na karticama i radnje za odabrane kartice</string>
-    <string name="dejavu_settings_tab_actions_hint">Odaberite gumbe za retke prikvačenih i neprikvačenih kartica te radnje prikazane kada odaberete kartice. Radnje koje sami dodate mogu se koristiti na sva tri mjesta.</string>
     <string name="dejavu_settings_pinned_tabs">Prikvačene kartice</string>
     <string name="dejavu_settings_unpinned_tabs">Neprikvačene kartice</string>
     <string name="dejavu_settings_all_actions">Sve radnje</string>
@@ -188,7 +186,6 @@
     <string name="dejavu_actions_bar_search">Traži</string>
     <string name="dejavu_actions_bar_home">Početna</string>
     <string name="dejavu_settings_more_menu_summary">Traka radnji ispod stranica i izbornik koji se njome otvara</string>
-    <string name="dejavu_more_menu_hint">Prvi redak je traka radnji ispod stranica. Prijeđite prstom prema gore preko trake radnji ili prema dolje preko adresne trake da otvorite cijeli izbornik. Dodirnite gumb za premještanje ili uklanjanje. Dodaci uvijek zauzimaju cijeli redak.</string>
     <string name="dejavu_more_menu_row">Redak %1$d</string>
     <string name="dejavu_more_menu_add_item">Dodaj gumb</string>
     <string name="dejavu_more_menu_add_row">Dodaj redak</string>

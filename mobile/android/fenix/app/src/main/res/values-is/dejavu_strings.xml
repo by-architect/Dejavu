@@ -90,8 +90,6 @@
     <string name="dejavu_settings_title">Dejavu</string>
     <string name="dejavu_about_content">%1$s byggir á Firefox, gert af Mozilla.</string>
     <string name="dejavu_settings_tab_actions">Aðgerðir flipa</string>
-    <string name="dejavu_settings_tab_actions_entry_summary">Hnappar á flipum, og aðgerðir fyrir valda flipa</string>
-    <string name="dejavu_settings_tab_actions_hint">Veldu hnappana fyrir raðir festra og ófestra flipa, og aðgerðirnar sem birtast þegar þú velur flipa. Aðgerðir sem þú bætir sjálf(ur) við má nota á öllum þremur stöðum.</string>
     <string name="dejavu_settings_pinned_tabs">Festir flipar</string>
     <string name="dejavu_settings_unpinned_tabs">Ófestir flipar</string>
     <string name="dejavu_settings_all_actions">Allar aðgerðir</string>
@@ -188,7 +186,6 @@
     <string name="dejavu_actions_bar_search">Leita</string>
     <string name="dejavu_actions_bar_home">Heim</string>
     <string name="dejavu_settings_more_menu_summary">Aðgerðastikan neðst á síðum og valmyndin sem hún opnar</string>
-    <string name="dejavu_more_menu_hint">Fyrsta röðin er aðgerðastikan neðst á síðum. Strjúktu aðgerðastikunni upp, eða vistfangastikunni niður, til að opna alla valmyndina. Ýttu á hnapp til að færa hann eða fjarlægja. Forritsaukar taka alltaf heila röð.</string>
     <string name="dejavu_more_menu_row">Röð %1$d</string>
     <string name="dejavu_more_menu_add_item">Bæta við hnappi</string>
     <string name="dejavu_more_menu_add_row">Bæta við röð</string>

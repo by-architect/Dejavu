@@ -90,8 +90,6 @@
     <string name="dejavu_settings_title">Dejavu</string>
     <string name="dejavu_about_content">%1$s ir balstīts uz Firefox, ko izstrādā Mozilla.</string>
     <string name="dejavu_settings_tab_actions">Ciļņu darbības</string>
-    <string name="dejavu_settings_tab_actions_entry_summary">Pogas uz cilnēm un darbības atlasītajām cilnēm</string>
-    <string name="dejavu_settings_tab_actions_hint">Izvēlieties pogas piespraustu un nepiespraustu ciļņu rindām, kā arī darbības, kas tiek rādītas, atlasot cilnes. Pašu pievienotās darbības var izmantot visās trīs vietās.</string>
     <string name="dejavu_settings_pinned_tabs">Piespraustās cilnes</string>
     <string name="dejavu_settings_unpinned_tabs">Nepiespraustās cilnes</string>
     <string name="dejavu_settings_all_actions">Visas darbības</string>
@@ -188,7 +186,6 @@
     <string name="dejavu_actions_bar_search">Meklēšana</string>
     <string name="dejavu_actions_bar_home">Sākums</string>
     <string name="dejavu_settings_more_menu_summary">Darbību josla zem lapām un izvēlne, ko tā atver</string>
-    <string name="dejavu_more_menu_hint">Pirmā rinda ir darbību josla zem lapām. Lai atvērtu visu izvēlni, pavelciet darbību joslu uz augšu vai adreses joslu uz leju. Pieskarieties pogai, lai to pārvietotu vai noņemtu. Paplašinājumi vienmēr aizņem visu rindu.</string>
     <string name="dejavu_more_menu_row">%1$d. rinda</string>
     <string name="dejavu_more_menu_add_item">Pievienot pogu</string>
     <string name="dejavu_more_menu_add_row">Pievienot rindu</string>

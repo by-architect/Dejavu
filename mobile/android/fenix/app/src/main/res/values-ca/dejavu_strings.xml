@@ -90,8 +90,6 @@
     <string name="dejavu_settings_title">Dejavu</string>
     <string name="dejavu_about_content">%1$s es basa en el Firefox, creat per Mozilla.</string>
     <string name="dejavu_settings_tab_actions">Accions de les pestanyes</string>
-    <string name="dejavu_settings_tab_actions_entry_summary">Botons a les pestanyes, i accions per a les pestanyes seleccionades</string>
-    <string name="dejavu_settings_tab_actions_hint">Trieu els botons de les files de pestanyes fixades i no fixades, i les accions que es mostren en seleccionar pestanyes. Les accions que afegiu vosaltres es poden usar en els tres casos.</string>
     <string name="dejavu_settings_pinned_tabs">Pestanyes fixades</string>
     <string name="dejavu_settings_unpinned_tabs">Pestanyes no fixades</string>
     <string name="dejavu_settings_all_actions">Totes les accions</string>
@@ -188,7 +186,6 @@
     <string name="dejavu_actions_bar_search">Cerca</string>
     <string name="dejavu_actions_bar_home">Inici</string>
     <string name="dejavu_settings_more_menu_summary">La barra d\'accions de sota les pàgines i el menú que obre</string>
-    <string name="dejavu_more_menu_hint">La primera fila és la barra d\'accions de sota les pàgines. Feu lliscar la barra d\'accions cap amunt, o la barra d\'adreces cap avall, per obrir tot el menú. Toqueu un botó per moure\'l o treure\'l. Les extensions sempre ocupen una fila sencera.</string>
     <string name="dejavu_more_menu_row">Fila %1$d</string>
     <string name="dejavu_more_menu_add_item">Afegeix un botó</string>
     <string name="dejavu_more_menu_add_row">Afegeix una fila</string>

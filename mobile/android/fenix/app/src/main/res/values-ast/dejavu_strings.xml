@@ -90,8 +90,6 @@
     <string name="dejavu_settings_title">Dejavu</string>
     <string name="dejavu_about_content">%1$s básase en Firefox, fechu por Mozilla.</string>
     <string name="dejavu_settings_tab_actions">Aiciones de les llingüetes</string>
-    <string name="dejavu_settings_tab_actions_entry_summary">Botones nes llingüetes, y aiciones pa les llingüetes seleicionaes</string>
-    <string name="dejavu_settings_tab_actions_hint">Escueyi los botones de les fileres de llingüetes fixaes y non fixaes, y les aiciones amosaes cuando seleiciones llingüetes. Les aiciones qu\'amiestes tu mesmu puen usase nes tres.</string>
     <string name="dejavu_settings_pinned_tabs">Llingüetes fixaes</string>
     <string name="dejavu_settings_unpinned_tabs">Llingüetes non fixaes</string>
     <string name="dejavu_settings_all_actions">Toles aiciones</string>
@@ -188,7 +186,6 @@
     <string name="dejavu_actions_bar_search">Guetar</string>
     <string name="dejavu_actions_bar_home">Aniciu</string>
     <string name="dejavu_settings_more_menu_summary">La barra d\'aiciones debaxo de les páxines y el menú qu\'abre</string>
-    <string name="dejavu_more_menu_hint">La primer filera ye la barra d\'aiciones debaxo de les páxines. Fai un esllizamientu de la barra d\'aiciones p\'arriba, o de la barra de direiciones p\'abaxo, p\'abrir tol menú. Toca un botón pa movelu o quitalu. Les estensiones ocupen siempre una filera entera.</string>
     <string name="dejavu_more_menu_row">Filera %1$d</string>
     <string name="dejavu_more_menu_add_item">Amestar un botón</string>
     <string name="dejavu_more_menu_add_row">Amestar una filera</string>

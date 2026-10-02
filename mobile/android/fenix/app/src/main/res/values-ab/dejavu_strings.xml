@@ -90,8 +90,6 @@
     <string name="dejavu_settings_title">Dejavu</string>
     <string name="dejavu_about_content">%1$s Firefox ду еиуеиԥшым, Mozilla дызҟaз аԥҵаз.</string>
     <string name="dejavu_settings_tab_actions">Абларҭа аҟaҵарақәа</string>
-    <string name="dejavu_settings_tab_actions_entry_summary">Абларҭақәа рҟны акнопкақәа, насгьы ивыбор шәыз абларҭақәа рзы аҟaҵарақәа</string>
-    <string name="dejavu_settings_tab_actions_hint">Ификсациатә ма ификсациам абларҭақәа рряд акнопкақәа, насгьы абларҭақәа ивыбор шәуа аамҭазы иаадырԥшуа аҟaҵарақәа, шәхы. Шәара шәыдалаӡаз аҟaҵарақәа хԥа-зегьы рҟны ила рхы иашьаԥсуеит.</string>
     <string name="dejavu_settings_pinned_tabs">Ификсациатә абларҭақәа</string>
     <string name="dejavu_settings_unpinned_tabs">Ификсациам абларҭақәа</string>
     <string name="dejavu_settings_all_actions">Аҟaҵарақәа зегьы</string>
@@ -188,7 +186,6 @@
     <string name="dejavu_actions_bar_search">Аԥшаара</string>
     <string name="dejavu_actions_bar_home">Аҩны</string>
     <string name="dejavu_settings_more_menu_summary">Адаҟьақәа рҵыхәтәантәи аҟны иҟоу аҟaҵарақәа рпанель, насгьы иаартуа аменю</string>
-    <string name="dejavu_more_menu_hint">Актәи аряд ауп адаҟьақәа рҵыхәтәантәи аҟны иҟоу аҟaҵарақәа рпанель. Аменю зегьы аартра азы, аҟaҵарақәа рпанель ашҟыц, ма аадрес рпанель аҵыхәтәантәи ахь ишәгарц. Акнопка аиҭаҵра ма аныхра азы, аҟны идырҳәыр. Аиҵыхрақәа рацәа аряд еиҳа рзиуеит.</string>
     <string name="dejavu_more_menu_row">Аряд %1$d</string>
     <string name="dejavu_more_menu_add_item">Акнопка адалаӡара</string>
     <string name="dejavu_more_menu_add_row">Аряд адалаӡара</string>

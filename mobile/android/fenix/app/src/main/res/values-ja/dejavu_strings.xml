@@ -90,8 +90,6 @@
     <string name="dejavu_settings_title">Dejavu</string>
     <string name="dejavu_about_content">%1$s は Mozilla が開発する Firefox をベースにしています。</string>
     <string name="dejavu_settings_tab_actions">タブの操作</string>
-    <string name="dejavu_settings_tab_actions_entry_summary">タブのボタンと、選択したタブへの操作</string>
-    <string name="dejavu_settings_tab_actions_hint">ピン留めタブと未ピン留めタブの行のボタン、およびタブを選択したときに表示される操作を選べます。自分で追加した操作は3つすべてで使用できます。</string>
     <string name="dejavu_settings_pinned_tabs">ピン留めタブ</string>
     <string name="dejavu_settings_unpinned_tabs">未ピン留めタブ</string>
     <string name="dejavu_settings_all_actions">すべての操作</string>
@@ -188,7 +186,6 @@
     <string name="dejavu_actions_bar_search">検索</string>
     <string name="dejavu_actions_bar_home">ホーム</string>
     <string name="dejavu_settings_more_menu_summary">ページ下部のアクションバーと、そこから開くメニュー</string>
-    <string name="dejavu_more_menu_hint">最初の行はページ下部のアクションバーです。アクションバーを上に、またはアドレスバーを下にスワイプするとメニュー全体が開きます。ボタンをタップすると移動や削除ができます。拡張機能は常に1行全体を使用します。</string>
     <string name="dejavu_more_menu_row">行%1$d</string>
     <string name="dejavu_more_menu_add_item">ボタンを追加</string>
     <string name="dejavu_more_menu_add_row">行を追加</string>

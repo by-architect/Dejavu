@@ -90,8 +90,6 @@
     <string name="dejavu_settings_title">Dejavu</string>
     <string name="dejavu_about_content">%1$s está basado en Firefox, desarrollado por Mozilla.</string>
     <string name="dejavu_settings_tab_actions">Acciones de pestañas</string>
-    <string name="dejavu_settings_tab_actions_entry_summary">Botones en las pestañas y acciones para las pestañas seleccionadas</string>
-    <string name="dejavu_settings_tab_actions_hint">Elegí los botones de las filas de pestañas fijadas y no fijadas, y las acciones que se muestran al seleccionar pestañas. Las acciones que agregues se pueden usar en las tres.</string>
     <string name="dejavu_settings_pinned_tabs">Pestañas fijadas</string>
     <string name="dejavu_settings_unpinned_tabs">Pestañas no fijadas</string>
     <string name="dejavu_settings_all_actions">Todas las acciones</string>
@@ -188,7 +186,6 @@
     <string name="dejavu_actions_bar_search">Buscar</string>
     <string name="dejavu_actions_bar_home">Inicio</string>
     <string name="dejavu_settings_more_menu_summary">La barra de acciones debajo de las páginas y el menú que abre</string>
-    <string name="dejavu_more_menu_hint">La primera fila es la barra de acciones debajo de las páginas. Deslizá la barra de acciones hacia arriba, o la barra de direcciones hacia abajo, para abrir el menú completo. Tocá un botón para moverlo o quitarlo. Las extensiones siempre ocupan una fila completa.</string>
     <string name="dejavu_more_menu_row">Fila %1$d</string>
     <string name="dejavu_more_menu_add_item">Agregar un botón</string>
     <string name="dejavu_more_menu_add_row">Agregar una fila</string>

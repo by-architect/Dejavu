@@ -9,6 +9,7 @@ import android.os.StrictMode
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.annotation.DrawableRes
 import androidx.annotation.StringRes
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Column
@@ -24,9 +25,13 @@ import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.lazy.itemsIndexed
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
+import androidx.compose.material3.AlertDialog
+import androidx.compose.material3.Checkbox
+import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.RadioButton
 import androidx.compose.material3.Text
+import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.collectAsState
@@ -52,8 +57,11 @@ import org.mozilla.fenix.R
 import org.mozilla.fenix.compose.list.IconListItem
 import org.mozilla.fenix.compose.list.SwitchListItem
 import org.mozilla.fenix.compose.settings.SettingsSectionHeader
+import org.mozilla.fenix.dejavu.actions.ActionPlace
 import org.mozilla.fenix.dejavu.actions.CustomAction
 import org.mozilla.fenix.dejavu.actions.RowAction
+import org.mozilla.fenix.dejavu.actions.fits
+import org.mozilla.fenix.dejavu.actions.icon
 import org.mozilla.fenix.dejavu.actions.label
 import org.mozilla.fenix.dejavu.containers.ContainerIcon
 import org.mozilla.fenix.dejavu.containers.ContainerPick
@@ -64,6 +72,8 @@ import org.mozilla.fenix.dejavu.containers.NoContainerIcon
 import org.mozilla.fenix.dejavu.containers.TemporaryContainerIcon
 import org.mozilla.fenix.dejavu.containers.color
 import org.mozilla.fenix.dejavu.containers.drawable
+import org.mozilla.fenix.dejavu.menu.ActionsBarLayout
+import org.mozilla.fenix.dejavu.menu.menuKey
 import org.mozilla.fenix.dejavu.sync.workspaceIconText
 import org.mozilla.fenix.dejavu.workspaces.WorkspaceRepository
 import org.mozilla.fenix.e2e.SystemInsetsPaddedFragment
@@ -97,28 +107,30 @@ abstract class DejavuComposeFragment(@param:StringRes private val defaultTitle: 
     abstract fun DejavuScreen()
 }
 
-/** A list of actions to choose from in the tab actions settings. */
-enum class ActionList(@param:StringRes val title: Int) {
-    /** The buttons of pinned tab rows. */
-    PINNED(R.string.dejavu_settings_pinned_tabs),
-
-    /** The buttons of unpinned tab rows. */
-    UNPINNED(R.string.dejavu_settings_unpinned_tabs),
-
-    /** The actions of the selection bar. */
-    ALL(R.string.dejavu_settings_all_actions),
+/** A place whose buttons are chosen on a screen of their own in the tab actions settings. */
+enum class ActionList(
+    val place: ActionPlace,
+    @param:DrawableRes val icon: Int,
+    @param:StringRes val hint: Int,
+) {
+    PINNED(ActionPlace.PINNED_ROWS, iconsR.drawable.mozac_ic_pin_24, R.string.dejavu_settings_pinned_actions_hint),
+    UNPINNED(ActionPlace.UNPINNED_ROWS, iconsR.drawable.mozac_ic_tab_24, R.string.dejavu_settings_unpinned_actions_hint),
+    FOLDERS(ActionPlace.FOLDER_ROWS, iconsR.drawable.mozac_ic_folder_24, R.string.dejavu_settings_folder_actions_hint),
+    SELECTION(ActionPlace.SELECTION, iconsR.drawable.mozac_ic_select_all_24, R.string.dejavu_settings_all_actions_hint),
 }
 
-/** Leads to the three [ActionList]s: pinned tab rows, unpinned tab rows and the selection bar. */
+/**
+ * Every action in one list, the user's own included, with where each one shows. Tapping an action chooses its places;
+ * the rows and the selection bar can also be set up on screens of their own.
+ */
 class DejavuTabActionsFragment : DejavuComposeFragment(R.string.dejavu_settings_tab_actions) {
     @Composable
     override fun DejavuScreen() {
         val settings = remember { dejavuSettings() }
         val customActions by settings.customActions.collectAsState()
-        val pinnedKeys by settings.pinnedRowKeys.collectAsState()
-        val unpinnedKeys by settings.unpinnedRowKeys.collectAsState()
-        val hiddenKeys by settings.hiddenSelectionKeys.collectAsState()
-        val allActions = RowAction.selectionBar(customActions)
+        val placements = rememberPlacements(settings)
+        val actions = RowAction.all(customActions)
+        var choosing by remember { mutableStateOf<RowAction?>(null) }
 
         Column(modifier = Modifier.fillMaxSize().verticalScroll(rememberScrollState())) {
             Text(
@@ -127,158 +139,67 @@ class DejavuTabActionsFragment : DejavuComposeFragment(R.string.dejavu_settings_
                 color = MaterialTheme.colorScheme.onSurfaceVariant,
                 modifier = Modifier.padding(16.dp),
             )
-            IconListItem(
-                label = stringResource(R.string.dejavu_settings_pinned_tabs),
-                description = rowSummary(resolveRowActions(pinnedKeys, pinned = true, customActions = customActions)),
-                beforeIconPainter = painterResource(iconsR.drawable.mozac_ic_pin_24),
-                modifier = Modifier.settingsCard(index = 0, count = 3),
-                onClick = { openList(ActionList.PINNED) },
+            FilledButton(
+                text = stringResource(R.string.dejavu_custom_action_add),
+                icon = painterResource(iconsR.drawable.mozac_ic_plus_24),
+                modifier = Modifier.fillMaxWidth().padding(horizontal = 16.dp),
+                onClick = { openEditor(null) },
             )
-            IconListItem(
-                label = stringResource(R.string.dejavu_settings_unpinned_tabs),
-                description = rowSummary(resolveRowActions(unpinnedKeys, pinned = false, customActions = customActions)),
-                beforeIconPainter = painterResource(iconsR.drawable.mozac_ic_tab_24),
-                modifier = Modifier.settingsCard(index = 1, count = 3),
-                onClick = { openList(ActionList.UNPINNED) },
+            SettingsSectionHeader(
+                text = stringResource(R.string.dejavu_settings_where_actions_show),
+                modifier = Modifier.padding(start = 16.dp, top = 24.dp, end = 16.dp),
             )
-            IconListItem(
-                label = stringResource(R.string.dejavu_settings_all_actions),
-                description = stringResource(
-                    R.string.dejavu_settings_all_actions_summary,
-                    allActions.count { it.key !in hiddenKeys },
-                    allActions.size,
-                ),
-                beforeIconPainter = painterResource(iconsR.drawable.mozac_ic_select_all_24),
-                modifier = Modifier.settingsCard(index = 2, count = 3),
-                onClick = { openList(ActionList.ALL) },
+            ActionList.entries.forEachIndexed { index, list ->
+                IconListItem(
+                    label = stringResource(list.place.label),
+                    description = placeSummary(list.place, placements, customActions),
+                    beforeIconPainter = painterResource(list.icon),
+                    modifier = Modifier.settingsCard(index, ActionList.entries.size),
+                    onClick = { openList(list) },
+                )
+            }
+            SettingsSectionHeader(
+                text = stringResource(R.string.dejavu_settings_all_actions),
+                modifier = Modifier.padding(start = 16.dp, top = 24.dp, end = 16.dp),
+            )
+            actions.forEachIndexed { index, action ->
+                val places = ActionPlace.entries.filter { placements.isIn(action, it) }
+                IconListItem(
+                    label = action.label,
+                    description = if (places.isEmpty()) {
+                        stringResource(R.string.dejavu_settings_action_places_none)
+                    } else {
+                        places.map { stringResource(it.label) }.joinToString(", ")
+                    },
+                    beforeIconPainter = painterResource(action.icon),
+                    modifier = Modifier.settingsCard(index, actions.size),
+                    onClick = { choosing = action },
+                )
+            }
+            Spacer(Modifier.height(24.dp))
+        }
+
+        choosing?.let { action ->
+            ActionPlacesDialog(
+                action = action,
+                placements = placements,
+                onPlace = { place, shown -> settings.setPlaced(action, place, shown) },
+                onEdit = (action as? RowAction.Custom)?.let { custom ->
+                    {
+                        choosing = null
+                        openEditor(custom.action.id)
+                    }
+                },
+                onDismiss = { choosing = null },
             )
         }
     }
-
-    @Composable
-    private fun rowSummary(actions: List<RowAction>): String =
-        if (actions.isEmpty()) {
-            stringResource(R.string.dejavu_settings_no_buttons)
-        } else {
-            actions.map { it.label }.joinToString(", ")
-        }
 
     private fun openList(list: ActionList) {
         findNavController().navigate(
             R.id.dejavuActionListFragment,
             Bundle().apply { putString(DejavuActionListFragment.ARG_LIST, list.name) },
         )
-    }
-}
-
-/** Chooses the actions of one [ActionList], below the custom actions and the button that adds one. */
-class DejavuActionListFragment : DejavuComposeFragment(R.string.dejavu_settings_tab_actions) {
-    private val list: ActionList
-        get() = arguments?.getString(ARG_LIST)?.let { name -> ActionList.entries.firstOrNull { it.name == name } }
-            ?: ActionList.ALL
-
-    override val title: Int
-        get() = list.title
-
-    @Composable
-    override fun DejavuScreen() {
-        val settings = remember { dejavuSettings() }
-        val customActions by settings.customActions.collectAsState()
-
-        Column(modifier = Modifier.fillMaxSize().verticalScroll(rememberScrollState())) {
-            AddActionSection(customActions)
-            when (val current = list) {
-                ActionList.PINNED, ActionList.UNPINNED -> {
-                    val pinned = current == ActionList.PINNED
-                    val keys by (if (pinned) settings.pinnedRowKeys else settings.unpinnedRowKeys).collectAsState()
-                    val available = RowAction.available(pinned, customActions)
-                    val enabledCount = available.count { it.key in keys }
-                    val hint = if (pinned) {
-                        R.string.dejavu_settings_pinned_actions_hint
-                    } else {
-                        R.string.dejavu_settings_unpinned_actions_hint
-                    }
-                    ActionSwitches(
-                        title = R.string.dejavu_settings_buttons,
-                        hint = stringResource(hint, DejavuSettings.MAX_ROW_ACTIONS),
-                        actions = available,
-                        isChecked = { it.key in keys },
-                        canCheckMore = enabledCount < DejavuSettings.MAX_ROW_ACTIONS,
-                        onChange = { key, on -> settings.setRowAction(pinned = pinned, key = key, enabled = on) },
-                    )
-                }
-                ActionList.ALL -> {
-                    val hiddenKeys by settings.hiddenSelectionKeys.collectAsState()
-                    ActionSwitches(
-                        title = R.string.dejavu_settings_actions,
-                        hint = stringResource(R.string.dejavu_settings_all_actions_hint),
-                        actions = RowAction.selectionBar(customActions),
-                        isChecked = { it.key !in hiddenKeys },
-                        canCheckMore = true,
-                        onChange = { key, on -> settings.setSelectionAction(key, enabled = on) },
-                    )
-                }
-            }
-        }
-    }
-
-    /** The button that adds a custom action, and the custom actions to edit. */
-    @Composable
-    private fun AddActionSection(customActions: List<CustomAction>) {
-        FilledButton(
-            text = stringResource(R.string.dejavu_custom_action_add),
-            icon = painterResource(iconsR.drawable.mozac_ic_plus_24),
-            modifier = Modifier.fillMaxWidth().padding(start = 16.dp, end = 16.dp, top = 16.dp),
-            onClick = { openEditor(null) },
-        )
-        if (customActions.isNotEmpty()) {
-            SettingsSectionHeader(
-                text = stringResource(R.string.dejavu_custom_actions),
-                modifier = Modifier.padding(start = 16.dp, top = 16.dp, end = 16.dp),
-            )
-            customActions.forEachIndexed { index, action ->
-                IconListItem(
-                    label = action.name,
-                    description = "${action.method.name} ${action.url}",
-                    beforeIconPainter = painterResource(iconsR.drawable.mozac_ic_lightning_24),
-                    modifier = Modifier.settingsCard(index, customActions.size),
-                    onClick = { openEditor(action.id) },
-                )
-            }
-        }
-    }
-
-    @Suppress("LongParameterList")
-    @Composable
-    private fun ActionSwitches(
-        @StringRes title: Int,
-        hint: String,
-        actions: List<RowAction>,
-        isChecked: (RowAction) -> Boolean,
-        canCheckMore: Boolean,
-        onChange: (String, Boolean) -> Unit,
-    ) {
-        SettingsSectionHeader(
-            text = stringResource(title),
-            modifier = Modifier.padding(start = 16.dp, top = 24.dp, end = 16.dp),
-        )
-        Text(
-            text = hint,
-            style = MaterialTheme.typography.bodyMedium,
-            color = MaterialTheme.colorScheme.onSurfaceVariant,
-            modifier = Modifier.padding(horizontal = 16.dp, vertical = 8.dp),
-        )
-        actions.forEachIndexed { index, action ->
-            val checked = isChecked(action)
-            SwitchListItem(
-                label = action.label,
-                checked = checked,
-                enabled = checked || canCheckMore,
-                showSwitchAfter = true,
-                modifier = Modifier.settingsCard(index, actions.size),
-                onClick = { onChange(action.key, it) },
-            )
-        }
     }
 
     private fun openEditor(actionId: String?) {
@@ -287,12 +208,220 @@ class DejavuActionListFragment : DejavuComposeFragment(R.string.dejavu_settings_
             Bundle().apply { putString(DejavuCustomActionFragment.ARG_ACTION_ID, actionId) },
         )
     }
+}
+
+/** Chooses the buttons of the rows of one [ActionList], or the actions of the selection bar, from every action. */
+class DejavuActionListFragment : DejavuComposeFragment(R.string.dejavu_settings_tab_actions) {
+    private val list: ActionList
+        get() = arguments?.getString(ARG_LIST)?.let { name -> ActionList.entries.firstOrNull { it.name == name } }
+            ?: ActionList.SELECTION
+
+    override val title: Int
+        get() = list.place.label
+
+    @Composable
+    override fun DejavuScreen() {
+        val settings = remember { dejavuSettings() }
+        val customActions by settings.customActions.collectAsState()
+        val place = list.place
+        val actions = RowAction.available(place, customActions)
+
+        Column(modifier = Modifier.fillMaxSize().verticalScroll(rememberScrollState())) {
+            if (place == ActionPlace.SELECTION) {
+                val hiddenKeys by settings.hiddenSelectionKeys.collectAsState()
+                ActionSwitches(
+                    title = R.string.dejavu_settings_actions,
+                    hint = stringResource(list.hint),
+                    actions = actions,
+                    isChecked = { it.key !in hiddenKeys },
+                    canCheckMore = true,
+                    onChange = { key, on -> settings.setSelectionAction(key, enabled = on) },
+                )
+            } else {
+                val keys by settings.rowKeys(place).collectAsState()
+                ActionSwitches(
+                    title = R.string.dejavu_settings_buttons,
+                    hint = stringResource(list.hint, DejavuSettings.MAX_ROW_ACTIONS),
+                    actions = actions,
+                    isChecked = { it.key in keys },
+                    canCheckMore = actions.count { it.key in keys } < DejavuSettings.MAX_ROW_ACTIONS,
+                    onChange = { key, on -> settings.setRowAction(place, key = key, enabled = on) },
+                )
+            }
+            Spacer(Modifier.height(24.dp))
+        }
+    }
 
     companion object {
         /** Name of the [ActionList] to show. */
         const val ARG_LIST = "list"
     }
 }
+
+/** What [place] shows: its buttons, or how many actions the selection bar has. */
+@Composable
+private fun placeSummary(place: ActionPlace, placements: Placements, customActions: List<CustomAction>): String {
+    val available = RowAction.available(place, customActions)
+    if (place == ActionPlace.SELECTION) {
+        return stringResource(
+            R.string.dejavu_settings_all_actions_summary,
+            available.count { placements.isIn(it, place) },
+            available.size,
+        )
+    }
+    val shown = available.filter { placements.isIn(it, place) }.take(DejavuSettings.MAX_ROW_ACTIONS)
+    return if (shown.isEmpty()) {
+        stringResource(R.string.dejavu_settings_no_buttons)
+    } else {
+        shown.map { it.label }.joinToString(", ")
+    }
+}
+
+@Suppress("LongParameterList")
+@Composable
+private fun ActionSwitches(
+    @StringRes title: Int,
+    hint: String,
+    actions: List<RowAction>,
+    isChecked: (RowAction) -> Boolean,
+    canCheckMore: Boolean,
+    onChange: (String, Boolean) -> Unit,
+) {
+    SettingsSectionHeader(
+        text = stringResource(title),
+        modifier = Modifier.padding(start = 16.dp, top = 16.dp, end = 16.dp),
+    )
+    Text(
+        text = hint,
+        style = MaterialTheme.typography.bodyMedium,
+        color = MaterialTheme.colorScheme.onSurfaceVariant,
+        modifier = Modifier.padding(horizontal = 16.dp, vertical = 8.dp),
+    )
+    actions.forEachIndexed { index, action ->
+        val checked = isChecked(action)
+        SwitchListItem(
+            label = action.label,
+            checked = checked,
+            enabled = checked || canCheckMore,
+            showSwitchAfter = true,
+            modifier = Modifier.settingsCard(index, actions.size),
+            onClick = { onChange(action.key, it) },
+        )
+    }
+}
+
+/** Where every action is shown right now. */
+private class Placements(
+    private val rows: Map<ActionPlace, List<String>>,
+    private val hiddenSelection: Set<String>,
+    private val menu: Set<String>,
+    private val bar: List<String>,
+) {
+    fun isIn(action: RowAction, place: ActionPlace): Boolean = action.fits(place) && when (place) {
+        ActionPlace.SELECTION -> action.key !in hiddenSelection
+        ActionPlace.MORE_MENU -> action.menuKey in menu
+        ActionPlace.ACTIONS_BAR -> action.menuKey in bar
+        else -> action.key in rows[place].orEmpty()
+    }
+
+    /** Whether [place] has no room for one more action. */
+    fun isFull(place: ActionPlace): Boolean = when {
+        place.isRow -> rows[place].orEmpty().size >= DejavuSettings.MAX_ROW_ACTIONS
+        place == ActionPlace.ACTIONS_BAR -> bar.size >= ActionsBarLayout.MAX_BUTTONS
+        else -> false
+    }
+}
+
+@Composable
+private fun rememberPlacements(settings: DejavuSettings): Placements {
+    val pinned by settings.pinnedRowKeys.collectAsState()
+    val unpinned by settings.unpinnedRowKeys.collectAsState()
+    val folders by settings.folderRowKeys.collectAsState()
+    val hidden by settings.hiddenSelectionKeys.collectAsState()
+    val menuRows by settings.moreMenuRows.collectAsState()
+    val bar by settings.actionsBarKeys.collectAsState()
+    return Placements(
+        rows = mapOf(
+            ActionPlace.PINNED_ROWS to pinned,
+            ActionPlace.UNPINNED_ROWS to unpinned,
+            ActionPlace.FOLDER_ROWS to folders,
+        ),
+        hiddenSelection = hidden,
+        menu = menuRows.flatten().toSet(),
+        bar = bar,
+    )
+}
+
+/** Shows [action] in [place], or stops showing it there. */
+private fun DejavuSettings.setPlaced(action: RowAction, place: ActionPlace, shown: Boolean) {
+    when (place) {
+        ActionPlace.SELECTION -> setSelectionAction(action.key, enabled = shown)
+        ActionPlace.MORE_MENU -> action.menuKey?.let { if (shown) addToMoreMenu(it) else removeFromMoreMenu(it) }
+        ActionPlace.ACTIONS_BAR -> action.menuKey?.let { if (shown) addToActionsBar(it) else removeFromActionsBar(it) }
+        else -> setRowAction(place, key = action.key, enabled = shown)
+    }
+}
+
+/** Chooses every place [action] shows in. A custom action can be edited from here too, with [onEdit]. */
+@Composable
+private fun ActionPlacesDialog(
+    action: RowAction,
+    placements: Placements,
+    onPlace: (ActionPlace, Boolean) -> Unit,
+    onEdit: (() -> Unit)?,
+    onDismiss: () -> Unit,
+) {
+    AlertDialog(
+        onDismissRequest = onDismiss,
+        icon = { Icon(painter = painterResource(action.icon), contentDescription = null) },
+        title = { Text(action.label) },
+        text = {
+            Column(modifier = Modifier.verticalScroll(rememberScrollState())) {
+                ActionPlace.entries.forEach { place ->
+                    val checked = placements.isIn(action, place)
+                    val fits = action.fits(place)
+                    val full = !checked && placements.isFull(place)
+                    PlaceRow(
+                        label = stringResource(place.label),
+                        note = when {
+                            !fits -> stringResource(R.string.dejavu_settings_action_place_unavailable)
+                            full -> stringResource(R.string.dejavu_settings_action_place_full)
+                            else -> null
+                        },
+                        checked = checked,
+                        enabled = fits && !full,
+                        onChange = { onPlace(place, it) },
+                    )
+                }
+            }
+        },
+        confirmButton = { TextButton(onClick = onDismiss) { Text(stringResource(R.string.dejavu_done)) } },
+        dismissButton = onEdit?.let { edit -> { TextButton(onClick = edit) { Text(stringResource(R.string.dejavu_menu_edit)) } } },
+    )
+}
+
+@Composable
+private fun PlaceRow(label: String, note: String?, checked: Boolean, enabled: Boolean, onChange: (Boolean) -> Unit) {
+    Row(
+        verticalAlignment = Alignment.CenterVertically,
+        modifier = Modifier
+            .fillMaxWidth()
+            .clickable(enabled = enabled) { onChange(!checked) }
+            .alpha(if (enabled) 1f else PLACE_DISABLED_ALPHA)
+            .padding(vertical = 2.dp),
+    ) {
+        Checkbox(checked = checked, onCheckedChange = onChange, enabled = enabled)
+        Spacer(Modifier.width(8.dp))
+        Column {
+            Text(text = label, style = MaterialTheme.typography.bodyLarge, color = MaterialTheme.colorScheme.onSurface)
+            if (note != null) {
+                Text(text = note, style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant)
+            }
+        }
+    }
+}
+
+private const val PLACE_DISABLED_ALPHA = 0.6f
 
 /** Lists, adds, edits and deletes containers. */
 class DejavuContainersFragment : DejavuComposeFragment(R.string.dejavu_settings_containers) {

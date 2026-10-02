@@ -1,0 +1,50 @@
+# Draws the Dejavu Roadmap board (https://github.com/users/by-architect/projects/1) as roadmap.svg on the `roadmap`
+# branch, which the README shows. Moving a card on the board starts no workflow, so besides issue changes it also runs
+# every hour. The branch only ever holds the latest picture, so main gets no commits from it.
+
+name: Roadmap image
+
+on:
+  issues:
+    types: [opened, edited, closed, reopened, deleted, transferred, labeled, unlabeled]
+  schedule:
+    - cron: "17 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: roadmap-image
+
+jobs:
+  draw:
+    if: github.repository == 'by-architect/Dejavu'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Draw the board
+        env:
+          GH_TOKEN: ${{ secrets.ROADMAP_TOKEN }}
+        run: |
+          curl -fsSL "https://raw.githubusercontent.com/$GITHUB_REPOSITORY/$GITHUB_SHA/.github/scripts/roadmap_image.py" \
+            -o "$RUNNER_TEMP/roadmap_image.py"
+          mkdir -p "$RUNNER_TEMP/roadmap"
+          python3 "$RUNNER_TEMP/roadmap_image.py" > "$RUNNER_TEMP/roadmap/roadmap.svg"
+
+      - name: Publish it on the roadmap branch
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: |
+          cd "$RUNNER_TEMP/roadmap"
+          if curl -fsSL "https://raw.githubusercontent.com/$GITHUB_REPOSITORY/roadmap/roadmap.svg" -o "$RUNNER_TEMP/old.svg" \
+            && cmp -s "$RUNNER_TEMP/old.svg" roadmap.svg; then
+            echo "The board did not change."
+            exit 0
+          fi
+          git init -q -b roadmap
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add roadmap.svg
+          git commit -qm "Draw the roadmap board"
+          git push -qf "https://x-access-token:$GITHUB_TOKEN@github.com/$GITHUB_REPOSITORY.git" HEAD:roadmap
+          echo "Published the new picture."

@@ -90,8 +90,6 @@
     <string name="dejavu_settings_title">Dejavu</string>
     <string name="dejavu_about_content">%1$s perustuu Firefoxiin, jonka on tehnyt Mozilla.</string>
     <string name="dejavu_settings_tab_actions">Välilehtitoiminnot</string>
-    <string name="dejavu_settings_tab_actions_entry_summary">Välilehtien painikkeet ja toiminnot valituille välilehdille</string>
-    <string name="dejavu_settings_tab_actions_hint">Valitse kiinnitettyjen ja kiinnittämättömien välilehtirivien painikkeet sekä toiminnot, jotka näkyvät, kun valitset välilehtiä. Itse lisäämiäsi toimintoja voi käyttää kaikissa kolmessa.</string>
     <string name="dejavu_settings_pinned_tabs">Kiinnitetyt välilehdet</string>
     <string name="dejavu_settings_unpinned_tabs">Kiinnittämättömät välilehdet</string>
     <string name="dejavu_settings_all_actions">Kaikki toiminnot</string>
@@ -188,7 +186,6 @@
     <string name="dejavu_actions_bar_search">Hae</string>
     <string name="dejavu_actions_bar_home">Koti</string>
     <string name="dejavu_settings_more_menu_summary">Sivujen alla oleva toimintopalkki ja sen avaama valikko</string>
-    <string name="dejavu_more_menu_hint">Ensimmäinen rivi on sivujen alla oleva toimintopalkki. Avaa koko valikko pyyhkäisemällä toimintopalkkia ylös tai osoiterivi alas. Napauta painiketta siirtääksesi tai poistaaksesi sen. Laajennukset vievät aina kokonaisen rivin.</string>
     <string name="dejavu_more_menu_row">Rivi %1$d</string>
     <string name="dejavu_more_menu_add_item">Lisää painike</string>
     <string name="dejavu_more_menu_add_row">Lisää rivi</string>

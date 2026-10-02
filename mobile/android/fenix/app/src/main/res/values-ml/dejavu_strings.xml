@@ -90,8 +90,6 @@
     <string name="dejavu_settings_title">Dejavu</string>
     <string name="dejavu_about_content">%1$s Firefox അടിസ്ഥാനമാക്കിയുള്ളതാണ്, ഇത് നിർമ്മിച്ചത് Mozilla ആണ്.</string>
     <string name="dejavu_settings_tab_actions">ടാബ് പ്രവർത്തനങ്ങൾ</string>
-    <string name="dejavu_settings_tab_actions_entry_summary">ടാബുകളിലെ ബട്ടണുകളും, തിരഞ്ഞെടുത്ത ടാബുകൾക്കുള്ള പ്രവർത്തനങ്ങളും</string>
-    <string name="dejavu_settings_tab_actions_hint">പിൻ ചെയ്തതും അല്ലാത്തതുമായ ടാബ് വരികളിലെ ബട്ടണുകളും, നിങ്ങൾ ടാബുകൾ തിരഞ്ഞെടുക്കുമ്പോൾ കാണിക്കുന്ന പ്രവർത്തനങ്ങളും തിരഞ്ഞെടുക്കുക. നിങ്ങൾ സ്വയം ചേർക്കുന്ന പ്രവർത്തനങ്ങൾ മൂന്നിലും ഉപയോഗിക്കാം.</string>
     <string name="dejavu_settings_pinned_tabs">പിൻ ചെയ്ത ടാബുകൾ</string>
     <string name="dejavu_settings_unpinned_tabs">പിൻ ചെയ്യാത്ത ടാബുകൾ</string>
     <string name="dejavu_settings_all_actions">എല്ലാ പ്രവർത്തനങ്ങളും</string>
@@ -188,7 +186,6 @@
     <string name="dejavu_actions_bar_search">തിരയുക</string>
     <string name="dejavu_actions_bar_home">ഹോം</string>
     <string name="dejavu_settings_more_menu_summary">താളുകൾക്ക് താഴെയുള്ള പ്രവർത്തന ബാറും അത് തുറക്കുന്ന മെനുവും</string>
-    <string name="dejavu_more_menu_hint">ആദ്യ വരി താളുകൾക്ക് താഴെയുള്ള പ്രവർത്തന ബാറാണ്. മുഴുവൻ മെനുവും തുറക്കാൻ പ്രവർത്തന ബാർ മുകളിലേക്ക് സ്വൈപ്പ് ചെയ്യുക, അല്ലെങ്കിൽ വിലാസ ബാർ താഴേക്ക് സ്വൈപ്പ് ചെയ്യുക. ഒരു ബട്ടൺ നീക്കാനോ നീക്കം ചെയ്യാനോ അതിൽ ടാപ്പ് ചെയ്യുക. വിപുലീകരണങ്ങൾ എപ്പോഴും ഒരു മുഴുവൻ വരി എടുക്കും.</string>
     <string name="dejavu_more_menu_row">വരി %1$d</string>
     <string name="dejavu_more_menu_add_item">ഒരു ബട്ടൺ ചേർക്കുക</string>
     <string name="dejavu_more_menu_add_row">ഒരു വരി ചേർക്കുക</string>

@@ -90,8 +90,6 @@
     <string name="dejavu_settings_title">Dejavu</string>
     <string name="dejavu_about_content">%1$s al è basât su Firefox, fat di Mozilla.</string>
     <string name="dejavu_settings_tab_actions">Azions des schedis</string>
-    <string name="dejavu_settings_tab_actions_entry_summary">Botons su lis schedis, e azions pes schedis selezionadis</string>
-    <string name="dejavu_settings_tab_actions_hint">Sielç i botons des riis di schedis fissadis e no fissadis, e lis azions mostradis cuant che tu selezionis schedis. Lis azions che tu zontis tu sôl a puedin jessi dopradis in ducj e trê.</string>
     <string name="dejavu_settings_pinned_tabs">Schedis fissadis</string>
     <string name="dejavu_settings_unpinned_tabs">Schedis no fissadis</string>
     <string name="dejavu_settings_all_actions">Dutis lis azions</string>
@@ -188,7 +186,6 @@
     <string name="dejavu_actions_bar_search">Cîr</string>
     <string name="dejavu_actions_bar_home">Principâl</string>
     <string name="dejavu_settings_more_menu_summary">La sbare des azions sot des pagjinis e il menù che e vierç</string>
-    <string name="dejavu_more_menu_hint">La prime rie e je la sbare des azions sot des pagjinis. Strissine la sbare des azions in sù, o la sbare des direzions in jù, par vierzi dut il menù. Tocje un boton par movilu o gjavâlu. Lis estensions a ocupin simpri une rie interie.</string>
     <string name="dejavu_more_menu_row">Rie %1$d</string>
     <string name="dejavu_more_menu_add_item">Zonte un boton</string>
     <string name="dejavu_more_menu_add_row">Zonte une rie</string>

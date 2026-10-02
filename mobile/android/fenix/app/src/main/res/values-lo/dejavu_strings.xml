@@ -90,8 +90,6 @@
     <string name="dejavu_settings_title">Dejavu</string>
     <string name="dejavu_about_content">%1$s ອີງໃສ່ Firefox, ສ້າງຂຶ້ນໂດຍ Mozilla.</string>
     <string name="dejavu_settings_tab_actions">ຄຳສັ່ງແທັບ</string>
-    <string name="dejavu_settings_tab_actions_entry_summary">ປຸ່ມຢູ່ເທິງແທັບ, ແລະ ຄຳສັ່ງສຳລັບແທັບທີ່ເລືອກ</string>
-    <string name="dejavu_settings_tab_actions_hint">ເລືອກປຸ່ມສຳລັບແຖວແທັບທີ່ປັກໄວ້ ແລະ ບໍ່ໄດ້ປັກໄວ້, ແລະ ຄຳສັ່ງທີ່ສະແດງເມື່ອທ່ານເລືອກແທັບ. ຄຳສັ່ງທີ່ທ່ານເພີ່ມເອງສາມາດໃຊ້ໄດ້ທັງສາມບ່ອນ.</string>
     <string name="dejavu_settings_pinned_tabs">ແທັບທີ່ປັກໄວ້</string>
     <string name="dejavu_settings_unpinned_tabs">ແທັບທີ່ບໍ່ໄດ້ປັກໄວ້</string>
     <string name="dejavu_settings_all_actions">ຄຳສັ່ງທັງຫມົດ</string>
@@ -188,7 +186,6 @@
     <string name="dejavu_actions_bar_search">ຄົ້ນຫາ</string>
     <string name="dejavu_actions_bar_home">ໜ້າຫຼັກ</string>
     <string name="dejavu_settings_more_menu_summary">ແຖບຄຳສັ່ງຢູ່ລຸ່ມຫນ້າເວັບ ແລະ ເມນູທີ່ມັນເປີດ</string>
-    <string name="dejavu_more_menu_hint">ແຖວທຳອິດແມ່ນແຖບຄຳສັ່ງຢູ່ລຸ່ມຫນ້າເວັບ. ປັດແຖບຄຳສັ່ງຂຶ້ນ, ຫຼື ແຖບທີ່ຢູ່ລົງ, ເພື່ອເປີດເມນູທັງຫມົດ. ແຕະປຸ່ມໃດຫນຶ່ງເພື່ອຍ້າຍ ຫຼື ເອົາມັນອອກ. ສ່ວນຂະຫຍາຍຈະກິນເນື້ອທີ່ທັງແຖວສະເໝີ.</string>
     <string name="dejavu_more_menu_row">ແຖວ %1$d</string>
     <string name="dejavu_more_menu_add_item">ເພີ່ມປຸ່ມ</string>
     <string name="dejavu_more_menu_add_row">ເພີ່ມແຖວ</string>

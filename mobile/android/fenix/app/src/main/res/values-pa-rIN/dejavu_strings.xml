@@ -90,8 +90,6 @@
     <string name="dejavu_settings_title">Dejavu</string>
     <string name="dejavu_about_content">%1$s Firefox ‘ਤੇ ਆਧਾਰਿਤ ਹੈ, ਇਸਨੂੰ Mozilla ਨੇ ਬਣਾਇਆ ਹੈ।</string>
     <string name="dejavu_settings_tab_actions">ਟੈਬ ਕਾਰਵਾਈਆਂ</string>
-    <string name="dejavu_settings_tab_actions_entry_summary">ਟੈਬਾਂ ‘ਤੇ ਬਟਨ, ਅਤੇ ਚੁਣੀਆਂ ਟੈਬਾਂ ਲਈ ਕਾਰਵਾਈਆਂ</string>
-    <string name="dejavu_settings_tab_actions_hint">ਪਿੰਨ ਕੀਤੀਆਂ ਅਤੇ ਬਿਨਾਂ ਪਿੰਨ ਕੀਤੀਆਂ ਟੈਬ ਕਤਾਰਾਂ ਦੇ ਬਟਨ, ਅਤੇ ਜਦੋਂ ਤੁਸੀਂ ਟੈਬਾਂ ਚੁਣਦੇ ਹੋ ਤਾਂ ਦਿਖਾਈਆਂ ਜਾਂਦੀਆਂ ਕਾਰਵਾਈਆਂ ਚੁਣੋ। ਤੁਹਾਡੇ ਵੱਲੋਂ ਜੋੜੀਆਂ ਕਾਰਵਾਈਆਂ ਤਿੰਨਾਂ ਵਿੱਚ ਵਰਤੀਆਂ ਜਾ ਸਕਦੀਆਂ ਹਨ।</string>
     <string name="dejavu_settings_pinned_tabs">ਪਿੰਨ ਕੀਤੀਆਂ ਟੈਬਾਂ</string>
     <string name="dejavu_settings_unpinned_tabs">ਬਿਨਾਂ ਪਿੰਨ ਕੀਤੀਆਂ ਟੈਬਾਂ</string>
     <string name="dejavu_settings_all_actions">ਸਾਰੀਆਂ ਕਾਰਵਾਈਆਂ</string>
@@ -188,7 +186,6 @@
     <string name="dejavu_actions_bar_search">ਖੋਜ</string>
     <string name="dejavu_actions_bar_home">ਹੋਮ</string>
     <string name="dejavu_settings_more_menu_summary">ਸਫ਼ਿਆਂ ਹੇਠਾਂ ਕਾਰਵਾਈ ਪੱਟੀ ਅਤੇ ਇਸ ਵੱਲੋਂ ਖੋਲ੍ਹਿਆ ਜਾਂਦਾ ਮੀਨੂ</string>
-    <string name="dejavu_more_menu_hint">ਪਹਿਲੀ ਕਤਾਰ ਸਫ਼ਿਆਂ ਹੇਠਾਂ ਕਾਰਵਾਈ ਪੱਟੀ ਹੈ। ਪੂਰਾ ਮੀਨੂ ਖੋਲ੍ਹਣ ਲਈ ਕਾਰਵਾਈ ਪੱਟੀ ਨੂੰ ਉੱਪਰ ਸਵਾਈਪ ਕਰੋ, ਜਾਂ ਪਤਾ ਪੱਟੀ ਨੂੰ ਹੇਠਾਂ ਸਵਾਈਪ ਕਰੋ। ਬਟਨ ਨੂੰ ਭੇਜਣ ਜਾਂ ਹਟਾਉਣ ਲਈ ਇਸ ‘ਤੇ ਟੈਪ ਕਰੋ। ਇਕਸਟੈਨਸ਼ਨਾਂ ਹਮੇਸ਼ਾ ਪੂਰੀ ਕਤਾਰ ਲੈਂਦੀਆਂ ਹਨ।</string>
     <string name="dejavu_more_menu_row">ਕਤਾਰ %1$d</string>
     <string name="dejavu_more_menu_add_item">ਇੱਕ ਬਟਨ ਜੋੜੋ</string>
     <string name="dejavu_more_menu_add_row">ਇੱਕ ਕਤਾਰ ਜੋੜੋ</string>

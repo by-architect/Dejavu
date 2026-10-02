@@ -72,6 +72,9 @@ enum class PinKind(val key: String) {
  * @property staticLabel Whether [title] was given by the user and is shown instead of the page title, like Zen's
  *   renamed tabs.
  * @property tabId Open browser tab currently backing a pinned tab. Local to this device and never synced.
+ * @property openUrl Page a pinned tab was on when its tab closed, when that is not [url]: the pin opens there again
+ *   until it is reset. Local to this device and never synced.
+ * @property openTitle Title of the page at [openUrl].
  * @property createdAt Creation time in milliseconds.
  * @property updatedAt Last change time in milliseconds, used to resolve sync conflicts.
  */
@@ -88,6 +91,8 @@ data class PinnedItem(
     val essential: Boolean = false,
     val staticLabel: Boolean = false,
     val tabId: String? = null,
+    val openUrl: String? = null,
+    val openTitle: String? = null,
     val createdAt: Long,
     val updatedAt: Long,
 ) {
@@ -185,3 +190,6 @@ data class WorkspaceState(
         return result
     }
 }
+
+/** Whether [a] and [b] are the same page, leaving out the part after "#" and a slash at the end. */
+fun isSamePage(a: String, b: String): Boolean = a.substringBefore('#').trimEnd('/') == b.substringBefore('#').trimEnd('/')

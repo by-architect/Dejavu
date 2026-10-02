@@ -90,8 +90,6 @@
     <string name="dejavu_settings_title">Dejavu</string>
     <string name="dejavu_about_content">%1$s، Mozilla طرفیندن حاضیرلانان Firefox اساسیندا قورولوب.</string>
     <string name="dejavu_settings_tab_actions">تاغ عملیات‌لاری</string>
-    <string name="dejavu_settings_tab_actions_entry_summary">تاغلارداکی دوگمه‌لر و سئچیلمیش تاغلار اوچون عملیات‌لار</string>
-    <string name="dejavu_settings_tab_actions_hint">برکیدیلمیش و برکیدیلمه‌میش تاغ سیرالارینین دوگمه‌لرینی و تاغلاری سئچدیکده گؤرونن عملیات‌لاری سئچین. اؤزونوزون اَلاوه اتدیگینیز عملیات‌لار هر اوچونده ده ایشله‌نه بیلر.</string>
     <string name="dejavu_settings_pinned_tabs">برکیدیلمیش تاغلار</string>
     <string name="dejavu_settings_unpinned_tabs">برکیدیلمه‌میش تاغلار</string>
     <string name="dejavu_settings_all_actions">بوتون عملیات‌لار</string>
@@ -188,7 +186,6 @@
     <string name="dejavu_actions_bar_search">آختار</string>
     <string name="dejavu_actions_bar_home">آنا صفحه</string>
     <string name="dejavu_settings_more_menu_summary">صفحه‌لرین آلتینداکی عملیات‌لار پانئلی و اونون آچدیغی منو</string>
-    <string name="dejavu_more_menu_hint">بیرینجی سیرا صفحه‌لرین آلتینداکی عملیات‌لار پانئلیدیر. بوتون منونو آچماق اوچون عملیات‌لار پانئلینی یوخاری، یا دا اونوان پانئلینی آشاغی سوروشدورون. دوگمه‌نی داشیماق یا دا سیلمک اوچون اونا توخونون. اوزانتی‌لار همیشه بوتؤو بیر سیرا توتور.</string>
     <string name="dejavu_more_menu_row">%1$d-جی سیرا</string>
     <string name="dejavu_more_menu_add_item">دوگمه اَلاوه ات</string>
     <string name="dejavu_more_menu_add_row">سیرا اَلاوه ات</string>

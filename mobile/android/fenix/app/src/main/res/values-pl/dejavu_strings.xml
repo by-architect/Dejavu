@@ -90,8 +90,6 @@
     <string name="dejavu_settings_title">Dejavu</string>
     <string name="dejavu_about_content">%1$s bazuje na Firefoksie, stworzonym przez Mozillę.</string>
     <string name="dejavu_settings_tab_actions">Akcje na kartach</string>
-    <string name="dejavu_settings_tab_actions_entry_summary">Przyciski na kartach i akcje dla zaznaczonych kart</string>
-    <string name="dejavu_settings_tab_actions_hint">Wybierz przyciski dla rzędów przypiętych i nieprzypiętych kart oraz akcje wyświetlane podczas zaznaczania kart. Akcje dodane samodzielnie można wykorzystać we wszystkich trzech miejscach.</string>
     <string name="dejavu_settings_pinned_tabs">Przypięte karty</string>
     <string name="dejavu_settings_unpinned_tabs">Nieprzypięte karty</string>
     <string name="dejavu_settings_all_actions">Wszystkie akcje</string>
@@ -188,7 +186,6 @@
     <string name="dejavu_actions_bar_search">Szukaj</string>
     <string name="dejavu_actions_bar_home">Start</string>
     <string name="dejavu_settings_more_menu_summary">Pasek akcji pod stronami i menu, które otwiera</string>
-    <string name="dejavu_more_menu_hint">Pierwszy rząd to pasek akcji pod stronami. Przesuń pasek akcji w górę albo pasek adresu w dół, aby otworzyć całe menu. Dotknij przycisku, aby go przenieść lub usunąć. Rozszerzenia zawsze zajmują cały rząd.</string>
     <string name="dejavu_more_menu_row">Rząd %1$d</string>
     <string name="dejavu_more_menu_add_item">Dodaj przycisk</string>
     <string name="dejavu_more_menu_add_row">Dodaj rząd</string>

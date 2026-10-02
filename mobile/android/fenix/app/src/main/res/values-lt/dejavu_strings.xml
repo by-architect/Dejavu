@@ -90,8 +90,6 @@
     <string name="dejavu_settings_title">Dejavu</string>
     <string name="dejavu_about_content">%1$s remiasi Firefox naršykle, kurią kuria Mozilla.</string>
     <string name="dejavu_settings_tab_actions">Kortelių veiksmai</string>
-    <string name="dejavu_settings_tab_actions_entry_summary">Mygtukai kortelėse ir veiksmai pažymėtoms kortelėms</string>
-    <string name="dejavu_settings_tab_actions_hint">Pasirinkite prisegtų ir neprisegtų kortelių eilučių mygtukus bei veiksmus, rodomus pažymėjus korteles. Patys pridėti veiksmai gali būti naudojami visose trijose vietose.</string>
     <string name="dejavu_settings_pinned_tabs">Prisegtos kortelės</string>
     <string name="dejavu_settings_unpinned_tabs">Neprisegtos kortelės</string>
     <string name="dejavu_settings_all_actions">Visi veiksmai</string>
@@ -188,7 +186,6 @@
     <string name="dejavu_actions_bar_search">Paieška</string>
     <string name="dejavu_actions_bar_home">Pradžia</string>
     <string name="dejavu_settings_more_menu_summary">Veiksmų juosta po puslapiais ir jos atveriamas meniu</string>
-    <string name="dejavu_more_menu_hint">Pirma eilutė yra veiksmų juosta po puslapiais. Norėdami atverti visą meniu, perbraukite veiksmų juostą aukštyn arba adreso juostą žemyn. Palieskite mygtuką, kad jį perkeltumėte arba pašalintumėte. Plėtiniai visada užima visą eilutę.</string>
     <string name="dejavu_more_menu_row">%1$d eilutė</string>
     <string name="dejavu_more_menu_add_item">Pridėti mygtuką</string>
     <string name="dejavu_more_menu_add_row">Pridėti eilutę</string>

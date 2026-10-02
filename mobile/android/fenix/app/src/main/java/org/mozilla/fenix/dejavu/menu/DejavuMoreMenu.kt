@@ -25,6 +25,7 @@ import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.heightIn
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.layout.navigationBars
 import androidx.compose.foundation.layout.statusBars
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.layout.windowInsetsPadding
@@ -100,13 +101,17 @@ internal data class EntryLook(
 )
 
 @Composable
-internal fun MoreMenuEntry.look(state: MoreMenuState): EntryLook {
-    val item = (this as? MoreMenuEntry.BuiltIn)?.item
-        ?: return EntryLook(
-            label = (this as MoreMenuEntry.Custom).action.name,
-            icon = iconsR.drawable.mozac_ic_lightning_24,
-            enabled = state.isWebPage,
-        )
+internal fun MoreMenuEntry.look(state: MoreMenuState): EntryLook = when (this) {
+    is MoreMenuEntry.BuiltIn -> item.look(state)
+    is MoreMenuEntry.Tab -> EntryLook(stringResource(action.label), action.icon, enabled = action.canRunOnShownTab(state))
+    is MoreMenuEntry.Custom -> EntryLook(action.name, iconsR.drawable.mozac_ic_lightning_24, enabled = state.isWebPage)
+    MoreMenuEntry.Home -> EntryLook(stringResource(R.string.dejavu_actions_bar_home), iconsR.drawable.mozac_ic_home_24)
+    MoreMenuEntry.Search -> EntryLook(stringResource(R.string.dejavu_actions_bar_search), iconsR.drawable.mozac_ic_search_24)
+}
+
+@Composable
+private fun MoreMenuItem.look(state: MoreMenuState): EntryLook {
+    val item = this
     val default = EntryLook(stringResource(item.label), item.icon)
     return when (item) {
         MoreMenuItem.BACK -> default.copy(enabled = state.canGoBack)
@@ -180,7 +185,7 @@ fun MoreMenuSheet(
             .clip(shape)
             .background(MaterialTheme.colorScheme.surface)
             .workspaceTheme(shownWorkspaceTheme())
-            .then(if (fromTop) Modifier.windowInsetsPadding(WindowInsets.statusBars) else Modifier)
+            .windowInsetsPadding(if (fromTop) WindowInsets.statusBars else WindowInsets.navigationBars)
             .nestedScroll(if (fromTop) swipeUp else bottomSheetScroll),
     ) {
         if (!fromTop) SheetHandle()

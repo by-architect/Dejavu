@@ -90,8 +90,6 @@
     <string name="dejavu_settings_title">Dejavu</string>
     <string name="dejavu_about_content">%1$s дар асоси Firefox сохта шудааст, ки онро Mozilla офаридааст.</string>
     <string name="dejavu_settings_tab_actions">Амалҳои варақа</string>
-    <string name="dejavu_settings_tab_actions_entry_summary">Тугмаҳо дар варақаҳо ва амалҳо барои варақаҳои интихобшуда</string>
-    <string name="dejavu_settings_tab_actions_hint">Тугмаҳои сатрҳои варақаҳои часпонидашуда ва начаспонидашударо ва амалҳое, ки ҳангоми интихоби варақаҳо нишон дода мешаванд, интихоб кунед. Амалҳое, ки худатон илова мекунед, дар ҳар се ҷой истифода мешаванд.</string>
     <string name="dejavu_settings_pinned_tabs">Варақаҳои часпонидашуда</string>
     <string name="dejavu_settings_unpinned_tabs">Варақаҳои начаспонидашуда</string>
     <string name="dejavu_settings_all_actions">Ҳамаи амалҳо</string>
@@ -188,7 +186,6 @@
     <string name="dejavu_actions_bar_search">Ҷустуҷӯ</string>
     <string name="dejavu_actions_bar_home">Асосӣ</string>
     <string name="dejavu_settings_more_menu_summary">Навори амалҳо дар зери саҳифаҳо ва менюе, ки он мекушояд</string>
-    <string name="dejavu_more_menu_hint">Сатри якум навори амалҳо дар зери саҳифаҳост. Барои кушодани тамоми меню, навори амалҳоро ба боло ё навори суроғаро ба поён бикашед. Барои гузарондан ё хориҷ кардани тугма, ба он зер кунед. Васеъшавиҳо ҳамеша тамоми як сатрро мегиранд.</string>
     <string name="dejavu_more_menu_row">Сатри %1$d</string>
     <string name="dejavu_more_menu_add_item">Илова кардани тугма</string>
     <string name="dejavu_more_menu_add_row">Илова кардани сатр</string>

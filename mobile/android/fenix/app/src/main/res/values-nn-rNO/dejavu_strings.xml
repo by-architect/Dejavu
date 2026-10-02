@@ -90,8 +90,6 @@
     <string name="dejavu_settings_title">Dejavu</string>
     <string name="dejavu_about_content">%1$s er basert på Firefox, laga av Mozilla.</string>
     <string name="dejavu_settings_tab_actions">Fanehandlingar</string>
-    <string name="dejavu_settings_tab_actions_entry_summary">Knappar på faner, og handlingar for valde faner</string>
-    <string name="dejavu_settings_tab_actions_hint">Vel knappane for rader med festa og ikkje-festa faner, og handlingane som vert viste når du vel faner. Handlingar du legg til sjølv, kan brukast i alle tre.</string>
     <string name="dejavu_settings_pinned_tabs">Festa faner</string>
     <string name="dejavu_settings_unpinned_tabs">Ikkje-festa faner</string>
     <string name="dejavu_settings_all_actions">Alle handlingar</string>
@@ -188,7 +186,6 @@
     <string name="dejavu_actions_bar_search">Søk</string>
     <string name="dejavu_actions_bar_home">Heim</string>
     <string name="dejavu_settings_more_menu_summary">Handlingslinja under sider og menyen ho opnar</string>
-    <string name="dejavu_more_menu_hint">Den første rada er handlingslinja under sider. Sveip handlingslinja opp, eller adresselinja ned, for å opne heile menyen. Trykk på ein knapp for å flytte eller fjerne han. Utvidingar tek alltid ei heil rad.</string>
     <string name="dejavu_more_menu_row">Rad %1$d</string>
     <string name="dejavu_more_menu_add_item">Legg til ein knapp</string>
     <string name="dejavu_more_menu_add_row">Legg til ei rad</string>

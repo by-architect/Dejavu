@@ -90,8 +90,6 @@
     <string name="dejavu_settings_title">Dejavu</string>
     <string name="dejavu_about_content">%1$s Firefox वर आधारित आहे, Mozilla ने बनवले आहे.</string>
     <string name="dejavu_settings_tab_actions">टॅब क्रिया</string>
-    <string name="dejavu_settings_tab_actions_entry_summary">टॅबवरील बटणे, आणि निवडलेल्या टॅबसाठी क्रिया</string>
-    <string name="dejavu_settings_tab_actions_hint">पिन केलेल्या आणि पिन न केलेल्या टॅब रांगांची बटणे, आणि तुम्ही टॅब निवडता तेव्हा दाखवल्या जाणाऱ्या क्रिया निवडा. तुम्ही स्वतः जोडलेल्या क्रिया तिन्ही ठिकाणी वापरता येतात.</string>
     <string name="dejavu_settings_pinned_tabs">पिन केलेले टॅब</string>
     <string name="dejavu_settings_unpinned_tabs">पिन न केलेले टॅब</string>
     <string name="dejavu_settings_all_actions">सर्व क्रिया</string>
@@ -188,7 +186,6 @@
     <string name="dejavu_actions_bar_search">शोधा</string>
     <string name="dejavu_actions_bar_home">मुख्यपृष्ठ</string>
     <string name="dejavu_settings_more_menu_summary">पृष्ठांखालील क्रिया पट्टी आणि ती उघडणारा मेनू</string>
-    <string name="dejavu_more_menu_hint">पहिली रांग म्हणजे पृष्ठांखालील क्रिया पट्टी. संपूर्ण मेनू उघडण्यासाठी क्रिया पट्टी वर स्वाइप करा, किंवा पत्ता पट्टी खाली स्वाइप करा. बटण हलवण्यासाठी किंवा काढण्यासाठी त्यावर टॅप करा. एक्सटेन्शन नेहमी संपूर्ण रांग व्यापतात.</string>
     <string name="dejavu_more_menu_row">रांग %1$d</string>
     <string name="dejavu_more_menu_add_item">बटण जोडा</string>
     <string name="dejavu_more_menu_add_row">रांग जोडा</string>

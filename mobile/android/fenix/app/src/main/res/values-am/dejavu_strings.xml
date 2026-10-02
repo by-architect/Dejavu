@@ -106,8 +106,6 @@
     <string name="dejavu_settings_title">Dejavu</string>
     <string name="dejavu_about_content">%1$s በMozilla በተሰራው Firefox ላይ የተመሰረተ ነው።</string>
     <string name="dejavu_settings_tab_actions">የትር እርምጃዎች</string>
-    <string name="dejavu_settings_tab_actions_entry_summary">በትሮች ላይ ያሉ አዝራሮች እና ለተመረጡ ትሮች የሚሆኑ እርምጃዎች</string>
-    <string name="dejavu_settings_tab_actions_hint">የተሰኩ እና ያልተሰኩ የትር ረድፎችን አዝራሮች እንዲሁም ትሮችን ሲመርጡ የሚታዩትን እርምጃዎች ይምረጡ። ራስዎ የሚያክሏቸውን እርምጃዎች በሦስቱም ውስጥ መጠቀም ይችላሉ።</string>
     <string name="dejavu_settings_pinned_tabs">የተሰኩ ትሮች</string>
     <string name="dejavu_settings_unpinned_tabs">ያልተሰኩ ትሮች</string>
     <string name="dejavu_settings_all_actions">ሁሉም እርምጃዎች</string>
@@ -208,7 +206,6 @@
     <string name="dejavu_actions_bar_search">ፈልግ</string>
     <string name="dejavu_actions_bar_home">መነሻ</string>
     <string name="dejavu_settings_more_menu_summary">ከገጾች በታች ያለው የእርምጃዎች አሞሌ እና የሚከፍተው ምናሌ</string>
-    <string name="dejavu_more_menu_hint">የመጀመሪያው ረድፍ ከገጾች በታች ያለው የእርምጃዎች አሞሌ ነው። ሙሉውን ምናሌ ለመክፈት የእርምጃዎች አሞሌን ወደ ላይ ወይም የአድራሻ አሞሌን ወደ ታች ያንሸራትቱ። አዝራርን ለማንቀሳቀስ ወይም ለማስወገድ ይንኩት። ቅጥያዎች ሁልጊዜ አንድ ሙሉ ረድፍ ይይዛሉ።</string>
     <string name="dejavu_more_menu_row">ረድፍ %1$d</string>
     <string name="dejavu_more_menu_add_item">አዝራር አክል</string>
     <string name="dejavu_more_menu_add_row">ረድፍ አክል</string>

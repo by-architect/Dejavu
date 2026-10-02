@@ -90,8 +90,6 @@
     <string name="dejavu_settings_title">Dejavu</string>
     <string name="dejavu_about_content">Tá %1$s bunaithe ar Firefox, arna dhéanamh ag Mozilla.</string>
     <string name="dejavu_settings_tab_actions">Gníomhartha cluaisíní</string>
-    <string name="dejavu_settings_tab_actions_entry_summary">Cnaipí ar chluaisíní, agus gníomhartha do chluaisíní roghnaithe</string>
-    <string name="dejavu_settings_tab_actions_hint">Roghnaigh cnaipí do shraitheanna cluaisíní greamaithe agus neamhghreamaithe, agus na gníomhartha a thaispeántar nuair a roghnaíonn tú cluaisíní. Is féidir gníomhartha a chuireann tú leis féin a úsáid sna trí cinn.</string>
     <string name="dejavu_settings_pinned_tabs">Cluaisíní greamaithe</string>
     <string name="dejavu_settings_unpinned_tabs">Cluaisíní neamhghreamaithe</string>
     <string name="dejavu_settings_all_actions">Gach gníomh</string>
@@ -188,7 +186,6 @@
     <string name="dejavu_actions_bar_search">Cuardaigh</string>
     <string name="dejavu_actions_bar_home">Baile</string>
     <string name="dejavu_settings_more_menu_summary">An barra gníomhartha faoi leathanaigh agus an roghchlár a osclaíonn sé</string>
-    <string name="dejavu_more_menu_hint">Is é an chéad sraith an barra gníomhartha faoi leathanaigh. Swipeáil an barra gníomhartha suas, nó an barra seoltaí síos, chun an roghchlár iomlán a oscailt. Brúigh cnaipe chun é a bhogadh nó a bhaint. Glacann eisínteachtaí sraith iomlán i gcónaí.</string>
     <string name="dejavu_more_menu_row">Sraith %1$d</string>
     <string name="dejavu_more_menu_add_item">Cuir cnaipe leis</string>
     <string name="dejavu_more_menu_add_row">Cuir sraith leis</string>

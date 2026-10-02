@@ -90,8 +90,6 @@
     <string name="dejavu_settings_title">Dejavu</string>
     <string name="dejavu_about_content">%1$s Firefoxen oinarrituta dago, Mozillak egina.</string>
     <string name="dejavu_settings_tab_actions">Fitxen ekintzak</string>
-    <string name="dejavu_settings_tab_actions_entry_summary">Fitxetako botoiak, eta hautatutako fitxentzako ekintzak</string>
-    <string name="dejavu_settings_tab_actions_hint">Aukeratu finkatutako eta finkatu gabeko fitxa-lerroetako botoiak, eta fitxak hautatzean erakusten diren ekintzak. Zuk gehitzen dituzun ekintzak hirurenetan erabil daitezke.</string>
     <string name="dejavu_settings_pinned_tabs">Finkatutako fitxak</string>
     <string name="dejavu_settings_unpinned_tabs">Finkatu gabeko fitxak</string>
     <string name="dejavu_settings_all_actions">Ekintza guztiak</string>
@@ -188,7 +186,6 @@
     <string name="dejavu_actions_bar_search">Bilatu</string>
     <string name="dejavu_actions_bar_home">Hasiera</string>
     <string name="dejavu_settings_more_menu_summary">Orrien azpiko ekintza-barra eta irekitzen duen menua</string>
-    <string name="dejavu_more_menu_hint">Lehen lerroa orrien azpiko ekintza-barra da. Pasatu hatza ekintza-barratik gora, edo helbide-barratik behera, menu osoa irekitzeko. Sakatu botoi bat lekuz aldatzeko edo kentzeko. Hedapenek beti lerro oso bat hartzen dute.</string>
     <string name="dejavu_more_menu_row">%1$d. lerroa</string>
     <string name="dejavu_more_menu_add_item">Gehitu botoi bat</string>
     <string name="dejavu_more_menu_add_row">Gehitu lerro bat</string>

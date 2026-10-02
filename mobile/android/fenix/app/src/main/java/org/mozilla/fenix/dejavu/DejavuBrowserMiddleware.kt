@@ -46,8 +46,38 @@ fun dejavuBrowserMiddleware(context: Context): List<Middleware<BrowserState, Bro
         WorkspaceContainerMiddleware(context),
         TemporaryContainerMiddleware(context),
         SilentlyClosedTabsMiddleware(),
+        ClosingPinnedTabsMiddleware(),
         SplitViewMiddleware(),
     )
+}
+
+/**
+ * Remembers the page a pinned tab is on as its tab closes, however it closes, so the pin opens there again instead of
+ * on its pinned address, the way a sleeping tab wakes up where it was.
+ */
+internal class ClosingPinnedTabsMiddleware : Middleware<BrowserState, BrowserAction> {
+    override fun invoke(
+        store: Store<BrowserState, BrowserAction>,
+        next: (BrowserAction) -> Unit,
+        action: BrowserAction,
+    ) {
+        val closing = when (action) {
+            is TabListAction.RemoveTabAction -> listOf(action.tabId)
+            is TabListAction.RemoveTabsAction -> action.tabIds
+            is TabListAction.RemoveAllNormalTabsAction -> store.state.tabs.filterNot { it.content.private }.map { it.id }
+            is TabListAction.RemoveAllTabsAction -> store.state.tabs.map { it.id }
+            else -> emptyList()
+        }
+        val repository = WorkspaceRepository.peek()
+        if (closing.isNotEmpty() && repository != null) {
+            val pinnedTabIds = repository.state.value.pins.mapNotNullTo(HashSet()) { it.tabId }
+            val pages = closing.filter { it in pinnedTabIds }.mapNotNull { id ->
+                store.state.findTab(id)?.let { tab -> id to (tab.content.url to tab.content.title) }
+            }.toMap()
+            if (pages.isNotEmpty()) repository.rememberClosingPages(pages)
+        }
+        next(action)
+    }
 }
 
 /**

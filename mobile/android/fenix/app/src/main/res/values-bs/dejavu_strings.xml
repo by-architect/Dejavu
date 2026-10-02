@@ -90,8 +90,6 @@
     <string name="dejavu_settings_title">Dejavu</string>
     <string name="dejavu_about_content">%1$s je zasnovan na Firefoxu, koji pravi Mozilla.</string>
     <string name="dejavu_settings_tab_actions">Radnje tabova</string>
-    <string name="dejavu_settings_tab_actions_entry_summary">Dugmad na tabovima i radnje za izabrane tabove</string>
-    <string name="dejavu_settings_tab_actions_hint">Izaberite dugmad za redove prikvačenih i neprikvačenih tabova i radnje koje se prikazuju kada izaberete tabove. Radnje koje sami dodate mogu se koristiti na sva tri mjesta.</string>
     <string name="dejavu_settings_pinned_tabs">Prikvačeni tabovi</string>
     <string name="dejavu_settings_unpinned_tabs">Neprikvačeni tabovi</string>
     <string name="dejavu_settings_all_actions">Sve radnje</string>
@@ -188,7 +186,6 @@
     <string name="dejavu_actions_bar_search">Pretraga</string>
     <string name="dejavu_actions_bar_home">Početna</string>
     <string name="dejavu_settings_more_menu_summary">Traka radnji ispod stranica i meni koji ona otvara</string>
-    <string name="dejavu_more_menu_hint">Prvi red je traka radnji ispod stranica. Prevucite traku radnji nagore, ili adresnu traku nadolje, da otvorite cijeli meni. Dodirnite dugme da ga premjestite ili uklonite. Ekstenzije uvijek zauzimaju cijeli red.</string>
     <string name="dejavu_more_menu_row">Red %1$d</string>
     <string name="dejavu_more_menu_add_item">Dodaj dugme</string>
     <string name="dejavu_more_menu_add_row">Dodaj red</string>

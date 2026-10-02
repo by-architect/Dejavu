@@ -90,8 +90,6 @@
     <string name="dejavu_settings_title">Dejavu</string>
     <string name="dejavu_about_content">%1$s — Mozilla yaratgan Firefox asosida yaratilgan.</string>
     <string name="dejavu_settings_tab_actions">Varaq amallari</string>
-    <string name="dejavu_settings_tab_actions_entry_summary">Varaqlardagi tugmalar va tanlangan varaqlar uchun amallar</string>
-    <string name="dejavu_settings_tab_actions_hint">Mahkamlangan va mahkamlanmagan varaq qatorlarining tugmalarini va varaqlarni tanlaganda ko\'rinadigan amallarni tanlang. O\'zingiz qo\'shgan amallar uchalasida ham ishlatilishi mumkin.</string>
     <string name="dejavu_settings_pinned_tabs">Mahkamlangan varaqlar</string>
     <string name="dejavu_settings_unpinned_tabs">Mahkamlanmagan varaqlar</string>
     <string name="dejavu_settings_all_actions">Barcha amallar</string>
@@ -188,7 +186,6 @@
     <string name="dejavu_actions_bar_search">Qidirish</string>
     <string name="dejavu_actions_bar_home">Bosh sahifa</string>
     <string name="dejavu_settings_more_menu_summary">Sahifalar ostidagi amallar paneli va u ochadigan menyu</string>
-    <string name="dejavu_more_menu_hint">Birinchi qator — sahifalar ostidagi amallar paneli. Butun menyuni ochish uchun amallar panelini yuqoriga, yoki manzil panelini pastga suring. Tugmani ko\'chirish yoki chiqarish uchun unga bosing. Kengaytmalar har doim butun bir qatorni egallaydi.</string>
     <string name="dejavu_more_menu_row">%1$d-qator</string>
     <string name="dejavu_more_menu_add_item">Tugma qo\'shish</string>
     <string name="dejavu_more_menu_add_row">Qator qo\'shish</string>

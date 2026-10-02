@@ -75,6 +75,7 @@ import androidx.compose.ui.unit.sp
 import kotlin.math.floor
 import kotlin.math.roundToInt
 import kotlinx.coroutines.launch
+import mozilla.components.browser.state.state.ContainerState
 import mozilla.components.browser.state.state.TabSessionState
 import mozilla.components.ui.icons.R as iconsR
 import org.mozilla.fenix.R
@@ -83,6 +84,7 @@ import org.mozilla.fenix.dejavu.actions.RowAction
 import org.mozilla.fenix.dejavu.actions.TabAction
 import org.mozilla.fenix.dejavu.actions.icon
 import org.mozilla.fenix.dejavu.actions.label
+import org.mozilla.fenix.dejavu.containers.ContainerColor
 import org.mozilla.fenix.dejavu.containers.ContainerPick
 import org.mozilla.fenix.dejavu.containers.ContainerRecord
 import org.mozilla.fenix.dejavu.containers.color
@@ -97,9 +99,12 @@ import org.mozilla.fenix.dejavu.workspaces.WorkspaceTheme
  * User actions on the Dejavu home screen that leave the screen's own UI state.
  */
 @Suppress("TooManyFunctions")
-interface DejavuHomeInteractor {
+interface DejavuHomeInteractor : TabEditor {
     fun onWorkspaceSelected(workspaceId: String)
     fun onSaveWorkspace(workspaceId: String?, name: String, containerId: String?, icon: String?, theme: WorkspaceTheme?)
+
+    /** Creates a container and returns its id, so that a workspace can use it right away. */
+    fun onCreateContainer(name: String, color: ContainerColor, icon: ContainerState.Icon): String
     fun onDeleteWorkspace(workspaceId: String)
 
     /** Moves workspace [workspaceId] to position [index] among the workspaces. */
@@ -121,22 +126,7 @@ interface DejavuHomeInteractor {
 
     /** Closes the unpinned tabs of [workspaceId], with a way to undo. */
     fun onClearUnpinned(workspaceId: String)
-    fun onCreateFolder(workspaceId: String, parentId: String?, name: String, targets: ActionTargets)
-    fun onRenameFolder(folderId: String, name: String)
-
-    /** Gives pinned tab [pinId] or unpinned tab [tabId] the title [name]; a blank name shows the page title again. */
-    fun onRenameTab(pinId: String?, tabId: String?, name: String)
     fun onToggleFolder(folderId: String)
-
-    /** Pins [targets] in [workspaceId], inside [folderId] or at the end of the top level when it is `null`. */
-    fun onMoveToFolder(workspaceId: String, targets: ActionTargets, folderId: String?)
-
-    /** Removes pinned tabs, essentials and folders with everything inside them, and closes every tab of [targets]. */
-    fun onDeleteItems(targets: ActionTargets)
-    fun onMoveToWorkspace(targets: ActionTargets, workspaceId: String)
-
-    /** Moves the tabs of [targets] to the container [pick]; all of them share one new temporary container. */
-    fun onChangeContainer(targets: ActionTargets, pick: ContainerPick)
     fun onSearchClick()
 
     /** Starts a new private tab. */
@@ -148,7 +138,6 @@ interface DejavuHomeInteractor {
 
     /** Starts a new tab in the container [pick]. */
     fun onNewTabInContainer(pick: ContainerPick)
-    fun onManageContainers()
     fun onAccountClick()
     fun onSettingsClick()
     fun onDownloadsClick()
@@ -172,6 +161,7 @@ fun DejavuHome(
     containers: Map<String, ContainerRecord>,
     pinnedRowActions: List<RowAction>,
     unpinnedRowActions: List<RowAction>,
+    folderRowActions: List<RowAction>,
     selectionActions: List<RowAction>,
     essentialsPerContainer: Boolean,
     interactor: DejavuHomeInteractor,
@@ -348,6 +338,7 @@ fun DejavuHome(
                 containers = containers,
                 pinnedRowActions = pinnedRowActions,
                 unpinnedRowActions = unpinnedRowActions,
+                folderRowActions = folderRowActions,
                 selection = activeSelection,
                 callbacks = WorkspacePageCallbacks(
                     onTabClick = { tab ->

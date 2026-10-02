@@ -90,8 +90,6 @@
     <string name="dejavu_settings_title">Dejavu</string>
     <string name="dejavu_about_content">%1$s li ser bingeha Firefox e, ji aliyê Mozilla ve hatiye çêkirin.</string>
     <string name="dejavu_settings_tab_actions">Çalakiyên hilpekînê</string>
-    <string name="dejavu_settings_tab_actions_entry_summary">Bişkokên li ser hilpekînan, û çalakiyên ji bo hilpekînên hilbijartî</string>
-    <string name="dejavu_settings_tab_actions_hint">Bişkokên rêzikên hilpekînên sabît û ne-sabît, û çalakiyên ku dema tu hilpekînan hildibijêrî têne nîşandan, hilbijêre. Çalakiyên ku tu bi xwe zêde dikî dikarin di her sê cihan de werin bikaranîn.</string>
     <string name="dejavu_settings_pinned_tabs">Hilpekînên sabît</string>
     <string name="dejavu_settings_unpinned_tabs">Hilpekînên ne-sabît</string>
     <string name="dejavu_settings_all_actions">Hemû çalakî</string>
@@ -188,7 +186,6 @@
     <string name="dejavu_actions_bar_search">Lêgerîn</string>
     <string name="dejavu_actions_bar_home">Mal</string>
     <string name="dejavu_settings_more_menu_summary">Darika çalakiyan a binê rûpelan û menuya ku ew vedike</string>
-    <string name="dejavu_more_menu_hint">Rêza yekem darika çalakiyan a binê rûpelan e. Ji bo vekirina menuya tevahî, darika çalakiyan ber bi jor ve, an darika navnîşanan ber bi jêr ve bikişîne. Ji bo veguhastin an rakirina bişkokekê, li ser bitikîne. Pêvek her dem rêzeke tevahî digirin.</string>
     <string name="dejavu_more_menu_row">Rêza %1$d</string>
     <string name="dejavu_more_menu_add_item">Bişkokekê zêde bike</string>
     <string name="dejavu_more_menu_add_row">Rêzekê zêde bike</string>

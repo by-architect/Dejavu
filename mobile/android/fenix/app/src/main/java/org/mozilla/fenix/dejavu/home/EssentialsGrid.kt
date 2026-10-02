@@ -45,16 +45,13 @@ import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.unit.dp
 import mozilla.components.browser.state.state.TabSessionState
 import mozilla.components.ui.icons.R as iconsR
-import org.mozilla.fenix.compose.Favicon
 import org.mozilla.fenix.dejavu.containers.ContainerRecord
 import org.mozilla.fenix.dejavu.containers.color
 import org.mozilla.fenix.dejavu.workspaces.PinnedItem
 
-private val TileHeight = 52.dp
 private val TileGap = 8.dp
-private val MinTileWidth = 64.dp
 private val TileShape = RoundedCornerShape(14.dp)
-private const val MIN_COLUMNS = 3
+private const val COLUMNS = 3
 private const val DIMMED_ALPHA = 0.55f
 
 /**
@@ -75,8 +72,8 @@ private data class EssentialDrag(
 )
 
 /**
- * The essentials every workspace shares, as a grid of icons like in Zen. Long-pressing one selects it; keeping the
- * finger down and moving reorders it.
+ * The essentials every workspace shares, as a grid of icons like in Zen: three per row, each half as tall as it is wide.
+ * Long-pressing one selects it; keeping the finger down and moving reorders it.
  *
  * @param isDropTarget Whether tabs dragged on the workspace page would be dropped here.
  */
@@ -111,10 +108,11 @@ internal fun EssentialsGrid(
             .border(2.dp, if (isDropTarget) MaterialTheme.colorScheme.primary else Color.Transparent, shape)
             .padding(4.dp),
     ) {
-        val columns = ((maxWidth + TileGap) / (MinTileWidth + TileGap)).toInt().coerceAtLeast(MIN_COLUMNS)
+        val columns = COLUMNS
         val tileWidth = (maxWidth - TileGap * (columns - 1)) / columns
+        val tileHeight = tileWidth / 2
         val cellWidth = with(density) { (tileWidth + TileGap).toPx() }
-        val cellHeight = with(density) { (TileHeight + TileGap).toPx() }
+        val cellHeight = with(density) { (tileHeight + TileGap).toPx() }
 
         fun indexAt(position: Offset): Int {
             val column = (position.x / cellWidth).toInt().coerceIn(0, columns - 1)
@@ -182,7 +180,7 @@ internal fun EssentialsGrid(
                             selection = selection?.let { item.id in it.pinIds },
                             isDragged = current?.moved == true && current.pinId == item.id,
                             onClick = { if (drag == null) onClick(item) },
-                            modifier = Modifier.width(tileWidth),
+                            modifier = Modifier.size(width = tileWidth, height = tileHeight),
                         )
                     }
                 }
@@ -213,7 +211,6 @@ private fun EssentialTile(
     Box(
         contentAlignment = Alignment.Center,
         modifier = modifier
-            .height(TileHeight)
             .clip(TileShape)
             .background(background)
             .border(2.dp, if (isDragged) MaterialTheme.colorScheme.primary else Color.Transparent, TileShape)
@@ -226,7 +223,7 @@ private fun EssentialTile(
                 .size(30.dp)
                 .alpha(if (isAwake) 1f else DIMMED_ALPHA),
         ) {
-            Favicon(url = tab?.content?.url ?: item.url.orEmpty(), size = 22.dp, shape = CircleShape)
+            SiteIcon(url = tab?.content?.url ?: item.pageUrl, size = 22.dp)
         }
         if (container != null) {
             Box(

@@ -100,6 +100,8 @@ internal object WorkspaceSerializer {
                             .put("essential", pin.essential)
                             .put("staticLabel", pin.staticLabel)
                             .putOpt("tabId", pin.tabId)
+                            .putOpt("openUrl", pin.openUrl)
+                            .putOpt("openTitle", pin.openTitle)
                             .put("createdAt", pin.createdAt)
                             .put("updatedAt", pin.updatedAt),
                     )
@@ -132,6 +134,8 @@ internal object WorkspaceSerializer {
         essential = optBoolean("essential"),
         staticLabel = optBoolean("staticLabel"),
         tabId = optStringOrNull("tabId"),
+        openUrl = optStringOrNull("openUrl"),
+        openTitle = optStringOrNull("openTitle"),
         createdAt = optLong("createdAt", now),
         updatedAt = optLong("updatedAt", now),
     )

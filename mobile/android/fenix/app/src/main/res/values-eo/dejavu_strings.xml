@@ -90,8 +90,6 @@
     <string name="dejavu_settings_title">Dejavu</string>
     <string name="dejavu_about_content">%1$s baziĝas sur Firefox, farita de Mozilla.</string>
     <string name="dejavu_settings_tab_actions">Agoj de langetoj</string>
-    <string name="dejavu_settings_tab_actions_entry_summary">Butonoj sur langetoj, kaj agoj por elektitaj langetoj</string>
-    <string name="dejavu_settings_tab_actions_hint">Elektu la butonojn de vicoj de pinglitaj kaj nepinglitaj langetoj, kaj la agojn montratajn kiam vi elektas langetojn. Agoj, kiujn vi mem aldonas, uzeblas en ĉiuj tri.</string>
     <string name="dejavu_settings_pinned_tabs">Pinglitaj langetoj</string>
     <string name="dejavu_settings_unpinned_tabs">Nepinglitaj langetoj</string>
     <string name="dejavu_settings_all_actions">Ĉiuj agoj</string>
@@ -188,7 +186,6 @@
     <string name="dejavu_actions_bar_search">Serĉi</string>
     <string name="dejavu_actions_bar_home">Hejmo</string>
     <string name="dejavu_settings_more_menu_summary">La agostrio sub paĝoj kaj la menuo, kiun ĝi malfermas</string>
-    <string name="dejavu_more_menu_hint">La unua vico estas la agostrio sub paĝoj. Svingu la agostrion supren, aŭ la adresstrion malsupren, por malfermi la tutan menuon. Tuŝu butonon por movi aŭ forigi ĝin. Etendaĵoj ĉiam okupas tutan vicon.</string>
     <string name="dejavu_more_menu_row">Vico %1$d</string>
     <string name="dejavu_more_menu_add_item">Aldoni butonon</string>
     <string name="dejavu_more_menu_add_row">Aldoni vicon</string>

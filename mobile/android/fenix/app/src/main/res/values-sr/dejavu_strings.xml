@@ -90,8 +90,6 @@
     <string name="dejavu_settings_title">Dejavu</string>
     <string name="dejavu_about_content">%1$s је заснован на Firefox-у, који прави Mozilla.</string>
     <string name="dejavu_settings_tab_actions">Радње језичака</string>
-    <string name="dejavu_settings_tab_actions_entry_summary">Дугмад на језичцима и радње за изабране језичке</string>
-    <string name="dejavu_settings_tab_actions_hint">Изаберите дугмад за редове закачених и незакачених језичака и радње које се приказују када изаберете језичке. Радње које сами додате могу се користити на сва три места.</string>
     <string name="dejavu_settings_pinned_tabs">Закачени језичци</string>
     <string name="dejavu_settings_unpinned_tabs">Незакачени језичци</string>
     <string name="dejavu_settings_all_actions">Све радње</string>
@@ -188,7 +186,6 @@
     <string name="dejavu_actions_bar_search">Претрага</string>
     <string name="dejavu_actions_bar_home">Почетна</string>
     <string name="dejavu_settings_more_menu_summary">Трака радњи испод страница и мени који она отвара</string>
-    <string name="dejavu_more_menu_hint">Први ред је трака радњи испод страница. Превуците траку радњи нагоре, или адресну траку надоле, да отворите цео мени. Додирните дугме да га преместите или уклоните. Проширења увек заузимају цео ред.</string>
     <string name="dejavu_more_menu_row">Ред %1$d</string>
     <string name="dejavu_more_menu_add_item">Додај дугме</string>
     <string name="dejavu_more_menu_add_row">Додај ред</string>

@@ -90,8 +90,6 @@
     <string name="dejavu_settings_title">Dejavu</string>
     <string name="dejavu_about_content">%1$s په Firefox باندې تکیه لري، چې د Mozilla لخوا جوړ شوی دی.</string>
     <string name="dejavu_settings_tab_actions">د ټب کړنې</string>
-    <string name="dejavu_settings_tab_actions_entry_summary">په ټبونو کې تڼۍ، او د ټاکل شویو ټبونو لپاره کړنې</string>
-    <string name="dejavu_settings_tab_actions_hint">د پین شویو او نه پین شویو ټبونو کرښو تڼۍ، او هغه کړنې چې د ټبونو په ټاکنه کې ښودل کېږي، وټاکئ. هغه کړنې چې تاسو یې پخپله زیاتوئ په دواړو درېیو ځایونو کې کارول کېدای شي.</string>
     <string name="dejavu_settings_pinned_tabs">پین شوي ټبونه</string>
     <string name="dejavu_settings_unpinned_tabs">نه پین شوي ټبونه</string>
     <string name="dejavu_settings_all_actions">ټولې کړنې</string>
@@ -188,7 +186,6 @@
     <string name="dejavu_actions_bar_search">لټون</string>
     <string name="dejavu_actions_bar_home">کور</string>
     <string name="dejavu_settings_more_menu_summary">د پاڼو لاندې د کړنو نوار او هغه مینو چې خلاصوي یې</string>
-    <string name="dejavu_more_menu_hint">لومړۍ کرښه د پاڼو لاندې د کړنو نوار دی. د ټولې مینو خلاصولو لپاره، د کړنو نوار پورته، یا د پتې نوار ښکته کش کړئ. د تڼۍ د لېږد یا لرې کولو لپاره پرې کېکاږئ. وروستاړي تل ټوله کرښه نیسي.</string>
     <string name="dejavu_more_menu_row">کرښه %1$d</string>
     <string name="dejavu_more_menu_add_item">تڼۍ زیاتول</string>
     <string name="dejavu_more_menu_add_row">کرښه زیاتول</string>

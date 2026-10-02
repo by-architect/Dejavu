@@ -90,8 +90,6 @@
     <string name="dejavu_settings_title">Dejavu</string>
     <string name="dejavu_about_content">Το %1$s βασίζεται στο Firefox, που δημιουργήθηκε από τη Mozilla.</string>
     <string name="dejavu_settings_tab_actions">Ενέργειες καρτελών</string>
-    <string name="dejavu_settings_tab_actions_entry_summary">Κουμπιά στις καρτέλες και ενέργειες για επιλεγμένες καρτέλες</string>
-    <string name="dejavu_settings_tab_actions_hint">Επιλέξτε τα κουμπιά για τις σειρές καρφιτσωμένων και μη καρφιτσωμένων καρτελών, καθώς και τις ενέργειες που εμφανίζονται όταν επιλέγετε καρτέλες. Οι ενέργειες που προσθέτετε εσείς μπορούν να χρησιμοποιηθούν και στις τρεις.</string>
     <string name="dejavu_settings_pinned_tabs">Καρφιτσωμένες καρτέλες</string>
     <string name="dejavu_settings_unpinned_tabs">Μη καρφιτσωμένες καρτέλες</string>
     <string name="dejavu_settings_all_actions">Όλες οι ενέργειες</string>
@@ -188,7 +186,6 @@
     <string name="dejavu_actions_bar_search">Αναζήτηση</string>
     <string name="dejavu_actions_bar_home">Αρχική</string>
     <string name="dejavu_settings_more_menu_summary">Η γραμμή ενεργειών κάτω από τις σελίδες και το μενού που ανοίγει</string>
-    <string name="dejavu_more_menu_hint">Η πρώτη σειρά είναι η γραμμή ενεργειών κάτω από τις σελίδες. Σύρετε τη γραμμή ενεργειών προς τα πάνω, ή τη γραμμή διευθύνσεων προς τα κάτω, για να ανοίξει ολόκληρο το μενού. Πατήστε ένα κουμπί για να το μετακινήσετε ή να το αφαιρέσετε. Οι επεκτάσεις καταλαμβάνουν πάντα μια ολόκληρη σειρά.</string>
     <string name="dejavu_more_menu_row">Σειρά %1$d</string>
     <string name="dejavu_more_menu_add_item">Προσθήκη κουμπιού</string>
     <string name="dejavu_more_menu_add_row">Προσθήκη σειράς</string>

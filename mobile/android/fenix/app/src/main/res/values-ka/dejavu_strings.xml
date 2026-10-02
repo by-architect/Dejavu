@@ -90,8 +90,6 @@
     <string name="dejavu_settings_title">Dejavu</string>
     <string name="dejavu_about_content">%1$s დაფუძნებულია Firefox-ზე და შექმნილია Mozilla-ს მიერ.</string>
     <string name="dejavu_settings_tab_actions">ჩანართის მოქმედებები</string>
-    <string name="dejavu_settings_tab_actions_entry_summary">ღილაკები ჩანართებზე და მოქმედებები მონიშნული ჩანართებისთვის</string>
-    <string name="dejavu_settings_tab_actions_hint">აირჩიეთ ღილაკები მიმაგრებული და მიუმაგრებელი ჩანართების მწკრივებისთვის და მოქმედებები, რომლებიც ჩანართების მონიშვნისას გამოჩნდება. თქვენ მიერ დამატებული მოქმედებები სამივეგან გამოსაყენებელია.</string>
     <string name="dejavu_settings_pinned_tabs">მიმაგრებული ჩანართები</string>
     <string name="dejavu_settings_unpinned_tabs">მიუმაგრებელი ჩანართები</string>
     <string name="dejavu_settings_all_actions">ყველა მოქმედება</string>
@@ -188,7 +186,6 @@
     <string name="dejavu_actions_bar_search">ძიება</string>
     <string name="dejavu_actions_bar_home">მთავარი</string>
     <string name="dejavu_settings_more_menu_summary">მოქმედებების ზოლი გვერდების ქვემოთ და მენიუ, რომელსაც ის ხსნის</string>
-    <string name="dejavu_more_menu_hint">პირველი მწკრივი არის მოქმედებების ზოლი გვერდების ქვემოთ. მთელი მენიუს გასახსნელად აწიეთ მოქმედებების ზოლი ზემოთ, ან ჩამოწიეთ მისამართების ზოლი ქვემოთ. შეეხეთ ღილაკს მის გადასატანად ან ამოსაღებად. გაფართოებები ყოველთვის იკავებს მთელ მწკრივს.</string>
     <string name="dejavu_more_menu_row">მწკრივი %1$d</string>
     <string name="dejavu_more_menu_add_item">ღილაკის დამატება</string>
     <string name="dejavu_more_menu_add_row">მწკრივის დამატება</string>

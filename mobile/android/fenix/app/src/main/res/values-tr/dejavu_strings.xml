@@ -90,8 +90,6 @@
     <string name="dejavu_settings_title">Dejavu</string>
     <string name="dejavu_about_content">%1$s, Mozilla\'nın geliştirdiği Firefox\'u temel alır.</string>
     <string name="dejavu_settings_tab_actions">Sekme eylemleri</string>
-    <string name="dejavu_settings_tab_actions_entry_summary">Sekmelerdeki düğmeler ve seçili sekmeler için eylemler</string>
-    <string name="dejavu_settings_tab_actions_hint">Sabitlenmiş ve sabitlenmemiş sekme satırlarının düğmelerini ve sekme seçtiğinizde gösterilen eylemleri seçin. Kendi eklediğiniz eylemler üçünde de kullanılabilir.</string>
     <string name="dejavu_settings_pinned_tabs">Sabitlenmiş sekmeler</string>
     <string name="dejavu_settings_unpinned_tabs">Sabitlenmemiş sekmeler</string>
     <string name="dejavu_settings_all_actions">Tüm eylemler</string>
@@ -188,7 +186,6 @@
     <string name="dejavu_actions_bar_search">Ara</string>
     <string name="dejavu_actions_bar_home">Ana sayfa</string>
     <string name="dejavu_settings_more_menu_summary">Sayfaların altındaki eylem çubuğu ve açtığı menü</string>
-    <string name="dejavu_more_menu_hint">İlk satır, sayfaların altındaki eylem çubuğudur. Menünün tamamını açmak için eylem çubuğunu yukarı ya da adres çubuğunu aşağı kaydırın. Bir düğmeyi taşımak veya kaldırmak için ona dokunun. Uzantılar her zaman bir satırın tamamını kaplar.</string>
     <string name="dejavu_more_menu_row">Satır %1$d</string>
     <string name="dejavu_more_menu_add_item">Düğme ekle</string>
     <string name="dejavu_more_menu_add_row">Satır ekle</string>

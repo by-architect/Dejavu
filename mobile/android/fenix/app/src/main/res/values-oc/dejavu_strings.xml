@@ -90,8 +90,6 @@
     <string name="dejavu_settings_title">Dejavu</string>
     <string name="dejavu_about_content">%1$s es basat sus Firefox, creat per Mozilla.</string>
     <string name="dejavu_settings_tab_actions">Accions dels onglets</string>
-    <string name="dejavu_settings_tab_actions_entry_summary">Botons suls onglets, e accions pels onglets seleccionats</string>
-    <string name="dejavu_settings_tab_actions_hint">Causissètz los botons de las filas d’onglets fixats e non fixats, e las accions afichadas quand seleccionatz d’onglets. Las accions qu’apondètz vosmèsme pòdon èsser utilizadas dins totes tres.</string>
     <string name="dejavu_settings_pinned_tabs">Onglets fixats</string>
     <string name="dejavu_settings_unpinned_tabs">Onglets non fixats</string>
     <string name="dejavu_settings_all_actions">Totas las accions</string>
@@ -188,7 +186,6 @@
     <string name="dejavu_actions_bar_search">Recercar</string>
     <string name="dejavu_actions_bar_home">Acuèlh</string>
     <string name="dejavu_settings_more_menu_summary">La barra d’accions jos las paginas e lo menú que dobrís</string>
-    <string name="dejavu_more_menu_hint">La primièra fila es la barra d’accions jos las paginas. Fasètz lisar la barra d’accions cap amont, o la barra d’adreça cap aval, per dobrir tot lo menú. Tocatz un boton per lo desplaçar o lo levar. Las extensions prenon totjorn una fila entièra.</string>
     <string name="dejavu_more_menu_row">Fila %1$d</string>
     <string name="dejavu_more_menu_add_item">Apondre un boton</string>
     <string name="dejavu_more_menu_add_row">Apondre una fila</string>

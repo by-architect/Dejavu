@@ -90,8 +90,6 @@
     <string name="dejavu_settings_title">Dejavu</string>
     <string name="dejavu_about_content">%1$s põhineb Firefoxil, mille on loonud Mozilla.</string>
     <string name="dejavu_settings_tab_actions">Kaartide tegevused</string>
-    <string name="dejavu_settings_tab_actions_entry_summary">Kaartidel olevad nupud ja valitud kaartide tegevused</string>
-    <string name="dejavu_settings_tab_actions_hint">Vali kinnitatud ja kinnitamata kaartide ridade nupud ning tegevused, mis kuvatakse kaartide valimisel. Enda lisatud tegevusi saab kasutada kõigis kolmes kohas.</string>
     <string name="dejavu_settings_pinned_tabs">Kinnitatud kaardid</string>
     <string name="dejavu_settings_unpinned_tabs">Kinnitamata kaardid</string>
     <string name="dejavu_settings_all_actions">Kõik tegevused</string>
@@ -188,7 +186,6 @@
     <string name="dejavu_actions_bar_search">Otsi</string>
     <string name="dejavu_actions_bar_home">Avaleht</string>
     <string name="dejavu_settings_more_menu_summary">Lehtede all olev tegevusriba ja menüü, mille see avab</string>
-    <string name="dejavu_more_menu_hint">Esimene rida on lehtede all olev tegevusriba. Kogu menüü avamiseks pühi tegevusriba üles või aadressiriba alla. Nupu liigutamiseks või eemaldamiseks puuduta seda. Lisad võtavad alati terve rea.</string>
     <string name="dejavu_more_menu_row">Rida %1$d</string>
     <string name="dejavu_more_menu_add_item">Lisa nupp</string>
     <string name="dejavu_more_menu_add_row">Lisa rida</string>

@@ -90,8 +90,6 @@
     <string name="dejavu_settings_title">Dejavu</string>
     <string name="dejavu_about_content">Tha %1$s stèidhichte air Firefox, air a dhèanamh le Mozilla.</string>
     <string name="dejavu_settings_tab_actions">Gnìomhan nan tabaichean</string>
-    <string name="dejavu_settings_tab_actions_entry_summary">Putanan air tabaichean, agus gnìomhan airson tabaichean taghte</string>
-    <string name="dejavu_settings_tab_actions_hint">Tagh na putanan airson sreathan de thabaichean prìnichte \'s neo-phrìnichte, agus na gnìomhan a sheallar nuair a thaghas tu tabaichean. Gabhaidh gnìomhan a chuireas tu fhèin ris an cleachdadh \'s na trì.</string>
     <string name="dejavu_settings_pinned_tabs">Tabaichean prìnichte</string>
     <string name="dejavu_settings_unpinned_tabs">Tabaichean neo-phrìnichte</string>
     <string name="dejavu_settings_all_actions">A h-uile gnìomh</string>
@@ -188,7 +186,6 @@
     <string name="dejavu_actions_bar_search">Lorg</string>
     <string name="dejavu_actions_bar_home">Dachaigh</string>
     <string name="dejavu_settings_more_menu_summary">Am bàr ghnìomhan fon duilleag agus an clàr-taice a dh\'fhosglas e</string>
-    <string name="dejavu_more_menu_hint">Is e an sreath bàr ghnìomhan fon duilleag a\' chiad sreath. Swipeig am bàr ghnìomhan suas, no am bàr sheòlaidhean sìos, gus an clàr-taice gu lèir fhosgladh. Brùth air putan gus a ghluasad no a thoirt air falbh. Gabhaidh leudachain sreath gu lèir an-còmhnaidh.</string>
     <string name="dejavu_more_menu_row">Sreath %1$d</string>
     <string name="dejavu_more_menu_add_item">Cuir putan ris</string>
     <string name="dejavu_more_menu_add_row">Cuir sreath ris</string>

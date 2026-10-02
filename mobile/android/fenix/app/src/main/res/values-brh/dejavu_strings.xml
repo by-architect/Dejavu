@@ -90,8 +90,6 @@
     <string name="dejavu_settings_title">Dejavu</string>
     <string name="dejavu_about_content">%1$s Firefox پار ہس، او اے نا Mozilla بناتین۔</string>
     <string name="dejavu_settings_tab_actions">ٹیب ایکشناک</string>
-    <string name="dejavu_settings_tab_actions_entry_summary">ٹیباک پار بٹناک، او چُنتین ٹیباک نا واسطے ایکشناک</string>
-    <string name="dejavu_settings_tab_actions_hint">پن او بغیر پن ٹیب قطاراک نا بٹناک، او ٹیب چُننا بیلا دکھ ایکشناک چُن۔ نی خود شامل کتین ایکشناک ہر تین جاگہ اٹ استعمال ہن۔</string>
     <string name="dejavu_settings_pinned_tabs">پن ٹیباک</string>
     <string name="dejavu_settings_unpinned_tabs">بغیر پن ٹیباک</string>
     <string name="dejavu_settings_all_actions">کل ایکشناک</string>
@@ -188,7 +186,6 @@
     <string name="dejavu_actions_bar_search">پٹبو</string>
     <string name="dejavu_actions_bar_home">گھر</string>
     <string name="dejavu_settings_more_menu_summary">صفحاک نا تلی ایکشن بار او اے ملتین مینو</string>
-    <string name="dejavu_more_menu_hint">پہلین قطار صفحاک نا تلی ایکشن بار ہس۔ کل مینو ملننا نا واسطے ایکشن بار اُتی، یا ایڈریس بار تلی سوائپ کبو۔ بٹن پار ٹیپ کبو چل یا ہٹاننا نا واسطے۔ ایکسٹینشناک ہمیشہ کل قطار ل ہن۔</string>
     <string name="dejavu_more_menu_row">قطار %1$d</string>
     <string name="dejavu_more_menu_add_item">بٹن شامل کبو</string>
     <string name="dejavu_more_menu_add_row">قطار شامل کبو</string>

@@ -90,8 +90,6 @@
     <string name="dejavu_settings_title">Dejavu</string>
     <string name="dejavu_about_content">%1$s es basate super Firefox, create per Mozilla.</string>
     <string name="dejavu_settings_tab_actions">Actiones de schedas</string>
-    <string name="dejavu_settings_tab_actions_entry_summary">Buttones sur schedas, e actiones pro schedas seligite</string>
-    <string name="dejavu_settings_tab_actions_hint">Elige le buttones del filas de schedas fixate e non fixate, e le actiones monstrate quando tu selige schedas. Actiones que tu ipse adde pote esser usate in tote le tres.</string>
     <string name="dejavu_settings_pinned_tabs">Schedas fixate</string>
     <string name="dejavu_settings_unpinned_tabs">Schedas non fixate</string>
     <string name="dejavu_settings_all_actions">Tote le actiones</string>
@@ -188,7 +186,6 @@
     <string name="dejavu_actions_bar_search">Cercar</string>
     <string name="dejavu_actions_bar_home">Initio</string>
     <string name="dejavu_settings_more_menu_summary">Le barra de actiones sub le paginas e le menu que illo aperi</string>
-    <string name="dejavu_more_menu_hint">Le prime fila es le barra de actiones sub le paginas. Glissa le barra de actiones verso alto, o le barra de adresse verso basso, pro aperir tote le menu. Pulsa un button pro mover o remover lo. Extensiones sempre occupa un fila integre.</string>
     <string name="dejavu_more_menu_row">Fila %1$d</string>
     <string name="dejavu_more_menu_add_item">Adder un button</string>
     <string name="dejavu_more_menu_add_row">Adder un fila</string>

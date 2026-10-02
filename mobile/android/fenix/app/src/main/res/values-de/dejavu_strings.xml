@@ -90,8 +90,6 @@
     <string name="dejavu_settings_title">Dejavu</string>
     <string name="dejavu_about_content">%1$s basiert auf Firefox von Mozilla.</string>
     <string name="dejavu_settings_tab_actions">Tab-Aktionen</string>
-    <string name="dejavu_settings_tab_actions_entry_summary">Schaltflächen auf Tabs und Aktionen für ausgewählte Tabs</string>
-    <string name="dejavu_settings_tab_actions_hint">Wähle die Schaltflächen für angeheftete und nicht angeheftete Tab-Zeilen sowie die Aktionen, die beim Auswählen von Tabs angezeigt werden. Selbst hinzugefügte Aktionen können in allen drei Bereichen verwendet werden.</string>
     <string name="dejavu_settings_pinned_tabs">Angeheftete Tabs</string>
     <string name="dejavu_settings_unpinned_tabs">Nicht angeheftete Tabs</string>
     <string name="dejavu_settings_all_actions">Alle Aktionen</string>
@@ -188,7 +186,6 @@
     <string name="dejavu_actions_bar_search">Suche</string>
     <string name="dejavu_actions_bar_home">Startseite</string>
     <string name="dejavu_settings_more_menu_summary">Die Aktionsleiste unter Seiten und das Menü, das sie öffnet</string>
-    <string name="dejavu_more_menu_hint">Die erste Zeile ist die Aktionsleiste unter Seiten. Wische die Aktionsleiste nach oben oder die Adressleiste nach unten, um das ganze Menü zu öffnen. Tippe auf eine Schaltfläche, um sie zu verschieben oder zu entfernen. Erweiterungen belegen immer eine ganze Zeile.</string>
     <string name="dejavu_more_menu_row">Zeile %1$d</string>
     <string name="dejavu_more_menu_add_item">Schaltfläche hinzufügen</string>
     <string name="dejavu_more_menu_add_row">Zeile hinzufügen</string>

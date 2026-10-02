@@ -21,7 +21,7 @@ import mozilla.components.compose.base.theme.oledColorPalette
 import mozilla.components.compose.base.utils.ColorStop
 
 /**
- * Dejavu's golden yellow look, on warm charcoal in the dark themes and warm paper in the light one. Private browsing
+ * Dejavu's golden yellow look, on gold tinted charcoal in the dark themes and gold tinted paper in the light one. Private browsing
  * keeps Firefox's purple. The same colors are in `dejavu_colors.xml` for the screens made of views.
  */
 object DejavuColors {
@@ -46,7 +46,6 @@ object DejavuColors {
     private val Amber95 = Color(0xFFFFF1DC)
 
     private val Warm0 = Color(0xFFFFFBF5)
-    private val Warm5 = Color(0xFFFAF6EF)
     private val Warm10 = Color(0xFFF2EDE4)
     private val Warm15 = Color(0xFFE8E2D7)
     private val Warm20 = Color(0xFFD9D2C6)
@@ -59,10 +58,12 @@ object DejavuColors {
     private val Warm60 = Color(0xFF403B34)
     private val Warm65 = Color(0xFF322E28)
     private val Warm70 = Color(0xFF26231E)
-    private val Warm75 = Color(0xFF1D1A16)
     private val Warm80 = Color(0xFF181613)
     private val Warm85 = Color(0xFF13120F)
     private val Warm90 = Color(0xFF12110E)
+
+    private val Gilt5 = Color(0xFFFBF6E8)
+    private val Gilt75 = Color(0xFF1F1B11)
 
     private val Ink = Color(0xFF1F1B13)
     private val InkA70 = Color(0xB21F1B13)
@@ -117,7 +118,7 @@ object DejavuColors {
         surfaceContainerSelected = Warm25,
         autofillText = Warm30,
         selectedText = Warm25,
-        sheetOutline = Warm5,
+        sheetOutline = Gilt5,
     )
 
     private val darkPalette = darkColorPalette.copy(
@@ -129,7 +130,7 @@ object DejavuColors {
         surfaceContainerSelected = Warm55,
         autofillText = Sand80.copy(alpha = AUTOFILL_ALPHA),
         selectedText = Warm45,
-        sheetOutline = Warm75,
+        sheetOutline = Gilt75,
     )
 
     private val oledPalette = oledColorPalette.copy(
@@ -158,9 +159,9 @@ object DejavuColors {
         onTertiary = Amber20,
         tertiaryContainer = Sand35,
         onTertiaryContainer = Paper,
-        background = Warm75,
+        background = Gilt75,
         onBackground = Paper,
-        surface = Warm75,
+        surface = Gilt75,
         onSurface = Paper,
         surfaceVariant = Warm65,
         onSurfaceVariant = PaperA70,
@@ -176,7 +177,7 @@ object DejavuColors {
         scrim = Scrim,
         surfaceBright = Warm65,
         surfaceDim = Warm85,
-        surfaceContainer = Warm75,
+        surfaceContainer = Gilt75,
         surfaceContainerHigh = Warm70,
         surfaceContainerHighest = Warm65,
         surfaceContainerLow = Warm80,
@@ -221,9 +222,9 @@ object DejavuColors {
         onTertiary = White,
         tertiaryContainer = Amber95,
         onTertiaryContainer = Amber90,
-        background = Warm5,
+        background = Gilt5,
         onBackground = Ink,
-        surface = Warm5,
+        surface = Gilt5,
         onSurface = Ink,
         surfaceVariant = Warm15,
         onSurfaceVariant = InkA70,
@@ -239,7 +240,7 @@ object DejavuColors {
         scrim = Scrim,
         surfaceBright = White,
         surfaceDim = Warm15,
-        surfaceContainer = Warm5,
+        surfaceContainer = Gilt5,
         surfaceContainerHigh = Warm10,
         surfaceContainerHighest = Warm15,
         surfaceContainerLow = Warm0,

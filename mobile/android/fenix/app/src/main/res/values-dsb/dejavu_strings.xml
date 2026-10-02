@@ -90,8 +90,6 @@
     <string name="dejavu_settings_title">Dejavu</string>
     <string name="dejavu_about_content">%1$s bazěrujo na Firefox, wutwórjony wót Mozilla.</string>
     <string name="dejavu_settings_tab_actions">Akcije za rejtariki</string>
-    <string name="dejavu_settings_tab_actions_entry_summary">Tłocaški na rejtarikach a akcije za wubrane rejtariki</string>
-    <string name="dejavu_settings_tab_actions_hint">Wubjeŕ tłocaški rědow pśipětych a njepśipětych rejtarikow, a akcije, kótarež se pokazuju, gaž rejtariki wuběraš. Akcije, kótarež sam pśidawaš, daju se we wšyknych tśich wužywaś.</string>
     <string name="dejavu_settings_pinned_tabs">Pśipěte rejtariki</string>
     <string name="dejavu_settings_unpinned_tabs">Njepśipěte rejtariki</string>
     <string name="dejavu_settings_all_actions">Wšykne akcije</string>
@@ -188,7 +186,6 @@
     <string name="dejavu_actions_bar_search">Pytaś</string>
     <string name="dejavu_actions_bar_home">Doma</string>
     <string name="dejavu_settings_more_menu_summary">Akcijowa lajsta pód bokami a meni, kótaryž se wócynja</string>
-    <string name="dejavu_more_menu_hint">Prědny rěd jo akcijowa lajsta pód bokami. Suń akcijowu lajstu górjej, abo adresowu lajstu dołoj, aby cełi meni wócynił. Tłoc na tłocašk, aby jen pśesunuł abo wótwónoźeł. Rozšyrjenja zajmaju pśecej cełi rěd.</string>
     <string name="dejavu_more_menu_row">Rěd %1$d</string>
     <string name="dejavu_more_menu_add_item">Tłocašk pśidaś</string>
     <string name="dejavu_more_menu_add_row">Rěd pśidaś</string>

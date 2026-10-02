@@ -90,8 +90,6 @@
     <string name="dejavu_settings_title">Dejavu</string>
     <string name="dejavu_about_content">%1$s is basearre op Firefox, makke troch Mozilla.</string>
     <string name="dejavu_settings_tab_actions">Aksjes foar ljepblêden</string>
-    <string name="dejavu_settings_tab_actions_entry_summary">Knoppen op ljepblêden, en aksjes foar selektearre ljepblêden</string>
-    <string name="dejavu_settings_tab_actions_hint">Kies de knoppen fan rigen mei fêstsette en net-fêstsette ljepblêden, en de aksjes dy\'t toand wurde as jo ljepblêden selektearje. Aksjes dy\'t jo sels taheakje, binne yn alle trije te brûken.</string>
     <string name="dejavu_settings_pinned_tabs">Fêstsette ljepblêden</string>
     <string name="dejavu_settings_unpinned_tabs">Net-fêstsette ljepblêden</string>
     <string name="dejavu_settings_all_actions">Alle aksjes</string>
@@ -188,7 +186,6 @@
     <string name="dejavu_actions_bar_search">Sykje</string>
     <string name="dejavu_actions_bar_home">Thús</string>
     <string name="dejavu_settings_more_menu_summary">De aksjebalke ûnder sides en it menu dat dy iepenet</string>
-    <string name="dejavu_more_menu_hint">De earste rige is de aksjebalke ûnder sides. Swipe de aksjebalke omheech, of de adresbalke omleech, om it hiele menu te iepenjen. Tik op in knop om dy te ferpleatsen of fuort te smiten. Utwreidingen nimme altyd in hiele rige yn.</string>
     <string name="dejavu_more_menu_row">Rige %1$d</string>
     <string name="dejavu_more_menu_add_item">Knop taheakje</string>
     <string name="dejavu_more_menu_add_row">Rige taheakje</string>

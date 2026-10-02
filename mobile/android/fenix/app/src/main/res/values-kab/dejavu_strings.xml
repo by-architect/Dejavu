@@ -90,8 +90,6 @@
     <string name="dejavu_settings_title">Dejavu</string>
     <string name="dejavu_about_content">%1$s yebna ɣef Firefox, yettwaxdem sɣur Mozilla.</string>
     <string name="dejavu_settings_tab_actions">Tigawin n yiccer</string>
-    <string name="dejavu_settings_tab_actions_entry_summary">Ibuṭunen ɣef yiccaren, akked tigawin i yiccaren yettwafernen</string>
-    <string name="dejavu_settings_tab_actions_hint">Fren ibuṭunen n izirigen n yiccaren yessersen d wid ur nesrusi ara, akked tigawin i d-ittbanen mi ara tferneḍ iccaren. Tigawin i ternuḍ s yiman-ik zemrent ad ttwasqedcent deg tlata-nsen.</string>
     <string name="dejavu_settings_pinned_tabs">Iccaren yessersen</string>
     <string name="dejavu_settings_unpinned_tabs">Iccaren ur nesrusi ara</string>
     <string name="dejavu_settings_all_actions">Tigawin meṛṛa</string>
@@ -188,7 +186,6 @@
     <string name="dejavu_actions_bar_search">Nadi</string>
     <string name="dejavu_actions_bar_home">Axxam</string>
     <string name="dejavu_settings_more_menu_summary">Afeggag n tigawin ddaw isebtar akked umuɣ i yeldi</string>
-    <string name="dejavu_more_menu_hint">Azirig amezwaru, d afeggag n tigawin ddaw isebtar. Zuɣer afeggag n tigawin ɣer sennig, neɣ afeggag n tansa ɣer wadda, akken ad yeldi umuɣ meṛṛa. Sit ɣef ubuṭun akken a t-tesnekzeḍ neɣ a t-tekkseḍ. Isiɣzaf ttaken yiwen uzirig s tezmert-nsen.</string>
     <string name="dejavu_more_menu_row">Azirig %1$d</string>
     <string name="dejavu_more_menu_add_item">Rnu abuṭun</string>
     <string name="dejavu_more_menu_add_row">Rnu azirig</string>

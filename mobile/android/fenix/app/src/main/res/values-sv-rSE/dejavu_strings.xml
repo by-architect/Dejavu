@@ -90,8 +90,6 @@
     <string name="dejavu_settings_title">Dejavu</string>
     <string name="dejavu_about_content">%1$s är baserad på Firefox, som görs av Mozilla.</string>
     <string name="dejavu_settings_tab_actions">Flikåtgärder</string>
-    <string name="dejavu_settings_tab_actions_entry_summary">Knappar på flikar och åtgärder för markerade flikar</string>
-    <string name="dejavu_settings_tab_actions_hint">Välj knapparna för rader med fästa och ej fästa flikar, och åtgärderna som visas när du markerar flikar. Åtgärder du själv lägger till kan användas i alla tre.</string>
     <string name="dejavu_settings_pinned_tabs">Fästa flikar</string>
     <string name="dejavu_settings_unpinned_tabs">Ej fästa flikar</string>
     <string name="dejavu_settings_all_actions">Alla åtgärder</string>
@@ -188,7 +186,6 @@
     <string name="dejavu_actions_bar_search">Sök</string>
     <string name="dejavu_actions_bar_home">Hem</string>
     <string name="dejavu_settings_more_menu_summary">Åtgärdsfältet under sidor och menyn det öppnar</string>
-    <string name="dejavu_more_menu_hint">Den första raden är åtgärdsfältet under sidor. Svep åtgärdsfältet uppåt, eller adressfältet nedåt, för att öppna hela menyn. Tryck på en knapp för att flytta eller ta bort den. Tillägg tar alltid en hel rad.</string>
     <string name="dejavu_more_menu_row">Rad %1$d</string>
     <string name="dejavu_more_menu_add_item">Lägg till en knapp</string>
     <string name="dejavu_more_menu_add_row">Lägg till en rad</string>

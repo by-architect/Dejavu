@@ -90,8 +90,6 @@
     <string name="dejavu_settings_title">Dejavu</string>
     <string name="dejavu_about_content">%1$s si basa supra Firefox, fattu di Mozilla.</string>
     <string name="dejavu_settings_tab_actions">Azzioni dî schedi</string>
-    <string name="dejavu_settings_tab_actions_entry_summary">Buttuna supra i schedi, e azzioni pî schedi silezionati</string>
-    <string name="dejavu_settings_tab_actions_hint">Scegghi i buttuna dî righi di schedi ficcati e non ficcati, e i azzioni mustrati quannu silezioni schedi. I azzioni ca junci tu stissu si ponnu usari nte tutti e tri.</string>
     <string name="dejavu_settings_pinned_tabs">Schedi ficcati</string>
     <string name="dejavu_settings_unpinned_tabs">Schedi non ficcati</string>
     <string name="dejavu_settings_all_actions">Tutti i azzioni</string>
@@ -188,7 +186,6 @@
     <string name="dejavu_actions_bar_search">Cerca</string>
     <string name="dejavu_actions_bar_home">Principali</string>
     <string name="dejavu_settings_more_menu_summary">A barra dî azzioni sutta ê pàggini e u menù ca grapi</string>
-    <string name="dejavu_more_menu_hint">A prima riga è a barra dî azzioni sutta ê pàggini. Fai scurriri a barra dî azzioni ncapu, o a barra dî indirizzi jusu, pi grapiri tuttu u menù. Tocca un buttuni pi mòviri o livari. I stinneri pìgghianu sempri na riga sana.</string>
     <string name="dejavu_more_menu_row">Riga %1$d</string>
     <string name="dejavu_more_menu_add_item">Junci un buttuni</string>
     <string name="dejavu_more_menu_add_row">Junci na riga</string>

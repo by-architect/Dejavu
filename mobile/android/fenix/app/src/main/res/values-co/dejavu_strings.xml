@@ -90,8 +90,6 @@
     <string name="dejavu_settings_title">Dejavu</string>
     <string name="dejavu_about_content">%1$s hè basatu nant\'à Firefox, fattu da Mozilla.</string>
     <string name="dejavu_settings_tab_actions">Azzioni di l\'unghjette</string>
-    <string name="dejavu_settings_tab_actions_entry_summary">Buttoni nant\'à l\'unghjette, è azzioni per l\'unghjette selezziunate</string>
-    <string name="dejavu_settings_tab_actions_hint">Sceglie i buttoni di e linee d\'unghjette fissate è micca fissate, è l\'azzioni affissate quandu selezziuneghji unghjette. L\'azzioni chì aghjunghji tù stessu ponu esse aduprate in tutte è trè.</string>
     <string name="dejavu_settings_pinned_tabs">Unghjette fissate</string>
     <string name="dejavu_settings_unpinned_tabs">Unghjette micca fissate</string>
     <string name="dejavu_settings_all_actions">Tutte l\'azzioni</string>
@@ -188,7 +186,6 @@
     <string name="dejavu_actions_bar_search">Ricercà</string>
     <string name="dejavu_actions_bar_home">Accolta</string>
     <string name="dejavu_settings_more_menu_summary">A barra d\'azzioni sottu à e pagine è u menu ch\'ella apre</string>
-    <string name="dejavu_more_menu_hint">A prima linea hè a barra d\'azzioni sottu à e pagine. Fate scorre a barra d\'azzioni in su, o a barra d\'indirizzu in ghjò, per apre u menu sanu. Picchia nant\'à un buttone per dispiazzallu o cacciallu. L\'estensioni piglianu sempre una linea sana.</string>
     <string name="dejavu_more_menu_row">Linea %1$d</string>
     <string name="dejavu_more_menu_add_item">Aghjunghje un buttone</string>
     <string name="dejavu_more_menu_add_row">Aghjunghje una linea</string>

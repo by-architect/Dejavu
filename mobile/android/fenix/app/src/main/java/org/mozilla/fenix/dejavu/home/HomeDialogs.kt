@@ -51,19 +51,44 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import mozilla.components.ui.icons.R as iconsR
 import org.mozilla.fenix.R
+import mozilla.components.browser.state.state.ContainerState
+import org.mozilla.fenix.dejavu.containers.ContainerColor
 import org.mozilla.fenix.dejavu.containers.ContainerIcon
 import org.mozilla.fenix.dejavu.containers.ContainerPick
 import org.mozilla.fenix.dejavu.containers.ContainerRecord
 import org.mozilla.fenix.dejavu.containers.NoContainerIcon
 import org.mozilla.fenix.dejavu.containers.TemporaryContainerIcon
+import org.mozilla.fenix.dejavu.settings.ContainerEditorDialog
 import org.mozilla.fenix.dejavu.sync.workspaceIconText
 import org.mozilla.fenix.dejavu.workspaces.MAX_FOLDER_DEPTH
 import org.mozilla.fenix.dejavu.workspaces.Workspace
 import org.mozilla.fenix.dejavu.workspaces.WorkspaceState
 import org.mozilla.fenix.dejavu.workspaces.WorkspaceTheme
 
+/**
+ * Changes to tabs, pinned tabs and folders that need the user's input first, asked for by [ItemDialogs]: on the home
+ * screen, and for the shown tab in the browser.
+ */
+interface TabEditor {
+    fun onCreateFolder(workspaceId: String, parentId: String?, name: String, targets: ActionTargets)
+    fun onRenameFolder(folderId: String, name: String)
+
+    /** Gives pinned tab [pinId] or unpinned tab [tabId] the title [name]; a blank name shows the page title again. */
+    fun onRenameTab(pinId: String?, tabId: String?, name: String)
+
+    /** Pins [targets] in [workspaceId], inside [folderId] or at the end of the top level when it is `null`. */
+    fun onMoveToFolder(workspaceId: String, targets: ActionTargets, folderId: String?)
+
+    /** Removes pinned tabs, essentials and folders with everything inside them, and closes every tab of [targets]. */
+    fun onDeleteItems(targets: ActionTargets)
+    fun onMoveToWorkspace(targets: ActionTargets, workspaceId: String)
+
+    /** Moves the tabs of [targets] to the container [pick]; all of them share one new temporary container. */
+    fun onChangeContainer(targets: ActionTargets, pick: ContainerPick)
+    fun onManageContainers()
+}
+
 /** Shows [dialog] and forwards the user's choice to [interactor]. */
-@Suppress("LongMethod")
 @Composable
 internal fun HomeDialogs(
     dialog: HomeDialog,
@@ -78,6 +103,7 @@ internal fun HomeDialogs(
             WorkspaceDialog(
                 workspace = workspace,
                 containers = containers.values.filterNot { it.temporary },
+                onCreateContainer = interactor::onCreateContainer,
                 onSave = { name, containerId, icon, theme ->
                     interactor.onSaveWorkspace(workspace?.id, name, containerId, icon, theme)
                     onDismiss()
@@ -100,11 +126,28 @@ internal fun HomeDialogs(
             )
         }
 
+        else -> ItemDialogs(dialog, state, containers, editor = interactor, onDismiss = onDismiss)
+    }
+}
+
+/** Shows [dialog], one about tabs, pinned tabs or folders, and forwards the user's choice to [editor]. */
+@Suppress("LongMethod")
+@Composable
+internal fun ItemDialogs(
+    dialog: HomeDialog,
+    state: WorkspaceState,
+    containers: Map<String, ContainerRecord>,
+    editor: TabEditor,
+    onDismiss: () -> Unit,
+) {
+    when (dialog) {
+        is HomeDialog.EditWorkspace, is HomeDialog.DeleteWorkspace -> Unit
+
         is HomeDialog.NewFolder -> NameDialog(
             title = R.string.dejavu_action_new_folder,
             initial = "",
             onConfirm = { name ->
-                interactor.onCreateFolder(dialog.workspaceId, dialog.parentId, name, dialog.targets)
+                editor.onCreateFolder(dialog.workspaceId, dialog.parentId, name, dialog.targets)
                 onDismiss()
             },
             onDismiss = onDismiss,
@@ -116,7 +159,7 @@ internal fun HomeDialogs(
             allowBlank = true,
             label = R.string.dejavu_rename_tab_hint,
             onConfirm = { name ->
-                interactor.onRenameTab(dialog.pinId, dialog.tabId, name)
+                editor.onRenameTab(dialog.pinId, dialog.tabId, name)
                 onDismiss()
             },
             onDismiss = onDismiss,
@@ -126,7 +169,7 @@ internal fun HomeDialogs(
             title = R.string.dejavu_folder_rename,
             initial = dialog.folder.title,
             onConfirm = { name ->
-                interactor.onRenameFolder(dialog.folder.id, name)
+                editor.onRenameFolder(dialog.folder.id, name)
                 onDismiss()
             },
             onDismiss = onDismiss,
@@ -145,7 +188,7 @@ internal fun HomeDialogs(
                 message = stringResource(R.string.dejavu_delete_items_message),
                 confirm = stringResource(R.string.dejavu_delete),
                 onConfirm = {
-                    interactor.onDeleteItems(targets)
+                    editor.onDeleteItems(targets)
                     onDismiss()
                 },
                 onDismiss = onDismiss,
@@ -159,7 +202,7 @@ internal fun HomeDialogs(
                     title = R.string.dejavu_action_new_folder,
                     initial = "",
                     onConfirm = { name ->
-                        interactor.onCreateFolder(dialog.workspaceId, null, name, dialog.targets)
+                        editor.onCreateFolder(dialog.workspaceId, null, name, dialog.targets)
                         onDismiss()
                     },
                     onDismiss = onDismiss,
@@ -170,7 +213,7 @@ internal fun HomeDialogs(
                     workspaceId = dialog.workspaceId,
                     movingFolderIds = dialog.targets.folders.map { it.id }.toSet(),
                     onPick = { folderId ->
-                        interactor.onMoveToFolder(dialog.workspaceId, dialog.targets, folderId)
+                        editor.onMoveToFolder(dialog.workspaceId, dialog.targets, folderId)
                         onDismiss()
                     },
                     onNewFolder = { naming = true },
@@ -184,7 +227,7 @@ internal fun HomeDialogs(
             val allInNoContainer = dialog.targets.containerIds == setOf(null)
             val (temporary, permanent) = containers.values.partition { it.temporary }
             fun pick(choice: ContainerPick) {
-                interactor.onChangeContainer(dialog.targets, choice)
+                editor.onChangeContainer(dialog.targets, choice)
                 onDismiss()
             }
             PickerDialog(title = R.string.dejavu_action_change_container, onDismiss = onDismiss) {
@@ -214,7 +257,7 @@ internal fun HomeDialogs(
                     leading = { PickerIcon(iconsR.drawable.mozac_ic_plus_24) },
                     onClick = {
                         onDismiss()
-                        interactor.onManageContainers()
+                        editor.onManageContainers()
                     },
                 )
             }
@@ -234,7 +277,7 @@ internal fun HomeDialogs(
                         if (container != null) ContainerIcon(container) else NoContainerIcon()
                     },
                     onClick = {
-                        interactor.onMoveToWorkspace(dialog.targets, workspace.id)
+                        editor.onMoveToWorkspace(dialog.targets, workspace.id)
                         onDismiss()
                     },
                 )
@@ -249,6 +292,7 @@ internal fun HomeDialogs(
 private fun WorkspaceDialog(
     workspace: Workspace?,
     containers: List<ContainerRecord>,
+    onCreateContainer: (name: String, color: ContainerColor, icon: ContainerState.Icon) -> String,
     onSave: (name: String, containerId: String?, icon: String?, theme: WorkspaceTheme?) -> Unit,
     onDismiss: () -> Unit,
 ) {
@@ -256,7 +300,20 @@ private fun WorkspaceDialog(
     var containerId by remember { mutableStateOf(workspace?.containerId) }
     var icon by remember { mutableStateOf(workspace?.icon) }
     var theme by remember { mutableStateOf(workspace?.theme) }
+    var creatingContainer by remember { mutableStateOf(false) }
     val isNew = workspace == null
+
+    if (creatingContainer) {
+        ContainerEditorDialog(
+            record = null,
+            onSave = { containerName, color, containerIcon ->
+                containerId = onCreateContainer(containerName, color, containerIcon)
+                creatingContainer = false
+            },
+            onDelete = {},
+            onDismiss = { creatingContainer = false },
+        )
+    }
 
     AlertDialog(
         onDismissRequest = onDismiss,
@@ -340,6 +397,11 @@ private fun WorkspaceDialog(
                         leading = { ContainerIcon(container) },
                     )
                 }
+                PickerRow(
+                    label = stringResource(R.string.dejavu_container_add),
+                    leading = { PickerIcon(iconsR.drawable.mozac_ic_plus_24) },
+                    onClick = { creatingContainer = true },
+                )
             }
         },
         confirmButton = {

@@ -51,27 +51,57 @@ import mozilla.components.ui.icons.R as iconsR
 import org.mozilla.fenix.R
 import org.mozilla.fenix.compose.list.SwitchListItem
 import org.mozilla.fenix.compose.settings.SettingsSectionHeader
+import org.mozilla.fenix.dejavu.menu.ActionsBarLayout
 import org.mozilla.fenix.dejavu.menu.MoreMenu
 import org.mozilla.fenix.dejavu.menu.MoreMenuEntry
 import org.mozilla.fenix.dejavu.menu.MoreMenuLayout
 import org.mozilla.fenix.dejavu.menu.MoreMenuState
 
-/** Arranges the buttons of the browser's "More" menu in rows. */
+/**
+ * Arranges the buttons of the actions bar below pages, and the buttons of the browser's "More" menu in rows. Both pick
+ * from the menu's own items, every tab action and the custom actions.
+ */
 class DejavuMoreMenuFragment : DejavuComposeFragment(R.string.dejavu_settings_more_menu) {
+    @Suppress("LongMethod")
     @Composable
     override fun DejavuScreen() {
         val settings = remember { dejavuSettings() }
         val savedRows by settings.moreMenuRows.collectAsState()
+        val barKeys by settings.actionsBarKeys.collectAsState()
         val customActions by settings.customActions.collectAsState()
         val editHidden by settings.moreMenuEditHidden.collectAsState()
         val rows = remember(savedRows, customActions) {
             savedRows.map { row -> row.filter { MoreMenuLayout.entryOf(it, customActions) != null } }.filter { it.isNotEmpty() }
         }
+        val bar = remember(barKeys, customActions) { ActionsBarLayout.resolve(barKeys, customActions) }
         var adding by remember { mutableStateOf<AddTarget?>(null) }
         val editor = RowsEditor(rows, settings::setMoreMenuRows)
 
         LazyColumn(modifier = Modifier.fillMaxSize()) {
             item {
+                SettingsSectionHeader(
+                    text = stringResource(R.string.dejavu_settings_actions_bar),
+                    modifier = Modifier.padding(start = 16.dp, top = 16.dp, end = 16.dp),
+                )
+                Text(
+                    text = stringResource(R.string.dejavu_actions_bar_hint),
+                    style = MaterialTheme.typography.bodyMedium,
+                    color = MaterialTheme.colorScheme.onSurfaceVariant,
+                    modifier = Modifier.padding(horizontal = 16.dp, vertical = 8.dp),
+                )
+                ActionsBarPreview(bar)
+                ActionsBarEditor(
+                    entries = bar,
+                    onChange = { keys -> settings.setActionsBar(keys) },
+                    onAdd = { adding = AddTarget.IntoBar },
+                    onReset = settings::resetActionsBar,
+                )
+            }
+            item {
+                SettingsSectionHeader(
+                    text = stringResource(R.string.dejavu_settings_more_menu),
+                    modifier = Modifier.padding(start = 16.dp, top = 24.dp, end = 16.dp),
+                )
                 Text(
                     text = stringResource(R.string.dejavu_more_menu_hint),
                     style = MaterialTheme.typography.bodyMedium,
@@ -139,13 +169,17 @@ class DejavuMoreMenuFragment : DejavuComposeFragment(R.string.dejavu_settings_mo
         }
 
         adding?.let { target ->
-            val used = rows.flatten().toSet()
+            val intoBar = target == AddTarget.IntoBar
+            val used = if (intoBar) barKeys.toSet() else rows.flatten().toSet()
+            val available = if (intoBar) ActionsBarLayout.available(customActions) else MoreMenuLayout.available(customActions)
             EntryPicker(
-                entries = MoreMenuLayout.available(customActions).filter { it.key !in used },
+                entries = available.filter { it.key !in used },
+                allAdded = if (intoBar) R.string.dejavu_actions_bar_all_added else R.string.dejavu_more_menu_all_added,
                 onPick = { entry ->
                     when (target) {
                         is AddTarget.IntoRow -> editor.add(target.row, entry.key)
                         AddTarget.NewRow -> editor.addRow(entry.key)
+                        AddTarget.IntoBar -> settings.addToActionsBar(entry.key)
                     }
                     adding = null
                 },
@@ -157,6 +191,7 @@ class DejavuMoreMenuFragment : DejavuComposeFragment(R.string.dejavu_settings_mo
     private sealed interface AddTarget {
         data class IntoRow(val row: Int) : AddTarget
         data object NewRow : AddTarget
+        data object IntoBar : AddTarget
     }
 
     private companion object {
@@ -378,6 +413,7 @@ private fun ChipOption(@StringRes label: Int, enabled: Boolean, close: () -> Uni
 @Composable
 private fun EntryPicker(
     entries: List<MoreMenuEntry>,
+    @StringRes allAdded: Int,
     onPick: (MoreMenuEntry) -> Unit,
     onDismiss: () -> Unit,
 ) {
@@ -386,7 +422,7 @@ private fun EntryPicker(
         title = { Text(stringResource(R.string.dejavu_more_menu_add_item)) },
         text = {
             if (entries.isEmpty()) {
-                Text(stringResource(R.string.dejavu_more_menu_all_added))
+                Text(stringResource(allAdded))
             } else {
                 Column(modifier = Modifier.verticalScroll(rememberScrollState())) {
                     entries.forEach { entry ->
@@ -424,11 +460,106 @@ private fun EntryPicker(
 private val MoreMenuEntry.icon: Int
     get() = when (this) {
         is MoreMenuEntry.BuiltIn -> item.icon
+        is MoreMenuEntry.Tab -> action.icon
         is MoreMenuEntry.Custom -> iconsR.drawable.mozac_ic_lightning_24
+        MoreMenuEntry.Home -> iconsR.drawable.mozac_ic_home_24
+        MoreMenuEntry.Search -> iconsR.drawable.mozac_ic_search_24
     }
 
 private val MoreMenuEntry.label: String
     @Composable get() = when (this) {
         is MoreMenuEntry.BuiltIn -> stringResource(item.label)
+        is MoreMenuEntry.Tab -> stringResource(action.label)
         is MoreMenuEntry.Custom -> action.name
+        MoreMenuEntry.Home -> stringResource(R.string.dejavu_actions_bar_home)
+        MoreMenuEntry.Search -> stringResource(R.string.dejavu_actions_bar_search)
     }
+
+/** How the actions bar looks with [entries], as icons in a row. */
+@Composable
+private fun ActionsBarPreview(entries: List<MoreMenuEntry>) {
+    Row(
+        verticalAlignment = Alignment.CenterVertically,
+        modifier = Modifier
+            .padding(horizontal = 16.dp, vertical = 8.dp)
+            .fillMaxWidth()
+            .height(56.dp)
+            .clip(RoundedCornerShape(20.dp))
+            .background(MaterialTheme.colorScheme.surfaceContainerLow)
+            .padding(horizontal = 8.dp),
+    ) {
+        entries.forEach { entry ->
+            Box(contentAlignment = Alignment.Center, modifier = Modifier.weight(1f)) {
+                Icon(
+                    painter = painterResource(entry.icon),
+                    contentDescription = entry.label,
+                    tint = MaterialTheme.colorScheme.onSurface,
+                    modifier = Modifier.size(22.dp),
+                )
+            }
+        }
+    }
+}
+
+/** The buttons of the actions bar, to move left or right, remove, add to or reset. */
+@Composable
+private fun ActionsBarEditor(
+    entries: List<MoreMenuEntry>,
+    onChange: (List<String>) -> Unit,
+    onAdd: () -> Unit,
+    onReset: () -> Unit,
+) {
+    val keys = entries.map { it.key }
+    fun move(index: Int, delta: Int) {
+        val target = index + delta
+        if (target !in keys.indices) return
+        onChange(keys.toMutableList().apply { add(target, removeAt(index)) })
+    }
+    FlowRow(
+        horizontalArrangement = Arrangement.spacedBy(8.dp),
+        verticalArrangement = Arrangement.spacedBy(8.dp),
+        modifier = Modifier.padding(horizontal = 16.dp, vertical = 4.dp),
+    ) {
+        entries.forEachIndexed { index, entry ->
+            EntryChip(
+                entry = entry,
+                canMoveLeft = index > 0,
+                canMoveRight = index < entries.size - 1,
+                canMoveUp = false,
+                canMoveDown = false,
+                onMove = { delta -> move(index, delta) },
+                onMoveToRow = {},
+                onRemove = { onChange(keys - entry.key) },
+            )
+        }
+        if (entries.size < ActionsBarLayout.MAX_BUTTONS) AddChip(onClick = onAdd)
+    }
+    TextButton(onClick = onReset, modifier = Modifier.padding(horizontal = 8.dp)) {
+        Text(stringResource(R.string.dejavu_more_menu_reset))
+    }
+}
+
+@Composable
+private fun AddChip(onClick: () -> Unit) {
+    Row(
+        verticalAlignment = Alignment.CenterVertically,
+        modifier = Modifier
+            .heightIn(min = 40.dp)
+            .clip(RoundedCornerShape(12.dp))
+            .clickable(onClick = onClick)
+            .padding(horizontal = 10.dp, vertical = 8.dp),
+    ) {
+        Icon(
+            painter = painterResource(iconsR.drawable.mozac_ic_plus_24),
+            contentDescription = null,
+            tint = MaterialTheme.colorScheme.primary,
+            modifier = Modifier.size(18.dp),
+        )
+        Spacer(Modifier.width(6.dp))
+        Text(
+            text = stringResource(R.string.dejavu_more_menu_add_item),
+            style = MaterialTheme.typography.labelLarge,
+            color = MaterialTheme.colorScheme.primary,
+        )
+    }
+}

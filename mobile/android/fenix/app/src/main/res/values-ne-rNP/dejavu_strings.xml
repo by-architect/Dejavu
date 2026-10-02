@@ -90,8 +90,6 @@
     <string name="dejavu_settings_title">Dejavu</string>
     <string name="dejavu_about_content">%1$s Firefox मा आधारित छ, यसलाई Mozilla ले बनाएको हो।</string>
     <string name="dejavu_settings_tab_actions">ट्याब कार्यहरु</string>
-    <string name="dejavu_settings_tab_actions_entry_summary">ट्याबहरुमा भएका बटनहरु, र चयन गरिएका ट्याबहरुका कार्यहरु</string>
-    <string name="dejavu_settings_tab_actions_hint">पिन गरिएका र नगरिएका ट्याब पङ्क्तिहरुका बटनहरु, र तपाईंले ट्याबहरु चयन गर्दा देखिने कार्यहरु छान्नुहोस्। तपाईंले आफै थप्नुभएका कार्यहरु तीनवटैमा प्रयोग गर्न सकिन्छ।</string>
     <string name="dejavu_settings_pinned_tabs">पिन गरिएका ट्याबहरु</string>
     <string name="dejavu_settings_unpinned_tabs">पिन नगरिएका ट्याबहरु</string>
     <string name="dejavu_settings_all_actions">सबै कार्यहरु</string>
@@ -188,7 +186,6 @@
     <string name="dejavu_actions_bar_search">खोज</string>
     <string name="dejavu_actions_bar_home">होम</string>
     <string name="dejavu_settings_more_menu_summary">पृष्ठहरुमुनि रहेको कार्य पट्टी र यसले खोल्ने मेनु</string>
-    <string name="dejavu_more_menu_hint">पहिलो पङ्क्ति पृष्ठहरुमुनि रहेको कार्य पट्टी हो। पूरै मेनु खोल्न कार्य पट्टीलाई माथि स्वाइप गर्नुहोस्, वा ठेगाना पट्टीलाई तल स्वाइप गर्नुहोस्। बटनलाई सार्न वा हटाउन यसमा ट्याप गर्नुहोस्। एक्सटेन्सनहरुले सधैं पूरै पङ्क्ति ओगट्छन्।</string>
     <string name="dejavu_more_menu_row">पङ्क्ति %1$d</string>
     <string name="dejavu_more_menu_add_item">बटन थप्नुहोस्</string>
     <string name="dejavu_more_menu_add_row">पङ्क्ति थप्नुहोस्</string>

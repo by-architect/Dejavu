@@ -90,8 +90,6 @@
     <string name="dejavu_settings_title">Dejavu</string>
     <string name="dejavu_about_content">%1$s a zo diazezet war Firefox, graet gant Mozilla.</string>
     <string name="dejavu_settings_tab_actions">Oberioù an ivinelloù</string>
-    <string name="dejavu_settings_tab_actions_entry_summary">Afelloù war an ivinelloù, hag oberioù evit an ivinelloù diuzet</string>
-    <string name="dejavu_settings_tab_actions_hint">Dibabit afelloù renkadoù an ivinelloù spilhennet ha dispilhennet, hag an oberioù diskouezet pa ziuzit ivinelloù. An oberioù a ouzhpennit hoc’h-unan a c’hall bezañ implijet er tri.</string>
     <string name="dejavu_settings_pinned_tabs">Ivinelloù spilhennet</string>
     <string name="dejavu_settings_unpinned_tabs">Ivinelloù dispilhennet</string>
     <string name="dejavu_settings_all_actions">An holl oberioù</string>
@@ -188,7 +186,6 @@
     <string name="dejavu_actions_bar_search">Klask</string>
     <string name="dejavu_actions_bar_home">Degemer</string>
     <string name="dejavu_settings_more_menu_summary">Ar varrenn oberioù dindan ar bajennoù hag ar meuziad a zigor</string>
-    <string name="dejavu_more_menu_hint">Ar renkad kentañ eo ar varrenn oberioù dindan ar bajennoù. Riklit ar varrenn oberioù war-c’hrec’h, pe ar varrenn chomlec’h war-draoñ, evit digeriñ ar meuziad a-bezh. Pouezit war un afell evit he dilec’hiañ pe he lemel. An askouezhioù a gemer bepred ur renkad a-bezh.</string>
     <string name="dejavu_more_menu_row">Renkad %1$d</string>
     <string name="dejavu_more_menu_add_item">Ouzhpennañ un afell</string>
     <string name="dejavu_more_menu_add_row">Ouzhpennañ ur renkad</string>

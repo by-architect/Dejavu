@@ -90,8 +90,6 @@
     <string name="dejavu_settings_title">Dejavu</string>
     <string name="dejavu_about_content">%1$s — Mozilla jaratqan Firefox tiykarında jaratılǵan.</string>
     <string name="dejavu_settings_tab_actions">Bet áreketleri</string>
-    <string name="dejavu_settings_tab_actions_entry_summary">Betlerdegi knopkalar hám tańlanǵan betler ushın áreketler</string>
-    <string name="dejavu_settings_tab_actions_hint">Bekitilgen hám bekitilmegen bet qatarlarınıń knopkaların hám betlerdi tańlaǵanda kórinetuǵın áreketlerdi tańlań. Ózińiz qosqan áreketler úshewinde de qollanıla aladı.</string>
     <string name="dejavu_settings_pinned_tabs">Bekitilgen betler</string>
     <string name="dejavu_settings_unpinned_tabs">Bekitilmegen betler</string>
     <string name="dejavu_settings_all_actions">Barlıq áreketler</string>
@@ -188,7 +186,6 @@
     <string name="dejavu_actions_bar_search">Izlew</string>
     <string name="dejavu_actions_bar_home">Bas bet</string>
     <string name="dejavu_settings_more_menu_summary">Betlerdiń astındaǵı áreketler paneli hám ol ashatuǵın menyu</string>
-    <string name="dejavu_more_menu_hint">Birinshi qatar betlerdiń astındaǵı áreketler paneli. Pútkil menyudı ashıw ushın áreketler panelin joqarıǵa, yamasa adres panelin tómenge súriń. Knopkanı jıljıtıw yamasa shıǵarıw ushın oǵan tiyiń. Keńeytiwler hámiyshe pútkil qatardı aladı.</string>
     <string name="dejavu_more_menu_row">%1$d-qatar</string>
     <string name="dejavu_more_menu_add_item">Knopka qosıw</string>
     <string name="dejavu_more_menu_add_row">Qatar qosıw</string>

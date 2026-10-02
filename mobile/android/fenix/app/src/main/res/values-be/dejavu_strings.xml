@@ -90,8 +90,6 @@
     <string name="dejavu_settings_title">Dejavu</string>
     <string name="dejavu_about_content">%1$s заснаваны на Firefox, распрацаваны Mozilla.</string>
     <string name="dejavu_settings_tab_actions">Дзеянні з карткамі</string>
-    <string name="dejavu_settings_tab_actions_entry_summary">Кнопкі на картках і дзеянні для выбраных картак</string>
-    <string name="dejavu_settings_tab_actions_hint">Выберыце кнопкі для радкоў замацаваных і незамацаваных картак, а таксама дзеянні, якія паказваюцца пры выбары картак. Дзеянні, якія вы дадаяце самі, можна выкарыстоўваць ва ўсіх трох месцах.</string>
     <string name="dejavu_settings_pinned_tabs">Замацаваныя карткі</string>
     <string name="dejavu_settings_unpinned_tabs">Незамацаваныя карткі</string>
     <string name="dejavu_settings_all_actions">Усе дзеянні</string>
@@ -188,7 +186,6 @@
     <string name="dejavu_actions_bar_search">Пошук</string>
     <string name="dejavu_actions_bar_home">Галоўная</string>
     <string name="dejavu_settings_more_menu_summary">Панэль дзеянняў пад старонкамі і меню, якое яна адкрывае</string>
-    <string name="dejavu_more_menu_hint">Першы радок — гэта панэль дзеянняў пад старонкамі. Правядзіце па панэлі дзеянняў уверх або па адраснай радку ўніз, каб адкрыць усё меню. Націсніце на кнопку, каб перамясціць або прыбраць яе. Пашырэнні заўсёды займаюць увесь радок.</string>
     <string name="dejavu_more_menu_row">Радок %1$d</string>
     <string name="dejavu_more_menu_add_item">Дадаць кнопку</string>
     <string name="dejavu_more_menu_add_row">Дадаць радок</string>

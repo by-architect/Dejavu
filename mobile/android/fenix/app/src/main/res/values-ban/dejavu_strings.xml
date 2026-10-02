@@ -90,8 +90,6 @@
     <string name="dejavu_settings_title">Dejavu</string>
     <string name="dejavu_about_content">%1$s madasar uli Firefox, gaena baan Mozilla.</string>
     <string name="dejavu_settings_tab_actions">Aksi tab</string>
-    <string name="dejavu_settings_tab_actions_entry_summary">Tombol di tab, lan aksi anggon tab ane kapilih</string>
-    <string name="dejavu_settings_tab_actions_hint">Pilih tombol baris tab kasemat lan tab tusing kasemat, lan aksi ane nyinahang dugas ragane milih tab. Aksi ane tambahang ragane padidi nyidang kaanggo di makejang tetelune.</string>
     <string name="dejavu_settings_pinned_tabs">Tab kasemat</string>
     <string name="dejavu_settings_unpinned_tabs">Tab tusing kasemat</string>
     <string name="dejavu_settings_all_actions">Makejang aksi</string>
@@ -188,7 +186,6 @@
     <string name="dejavu_actions_bar_search">Alih</string>
     <string name="dejavu_actions_bar_home">Home</string>
     <string name="dejavu_settings_more_menu_summary">Bar aksi di beten halaman lan menu ane kabukak</string>
-    <string name="dejavu_more_menu_hint">Baris kapertama, bar aksi di beten halaman. Geser bar aksine ka baduur, wiadin bar alamat ka betenan, anggon mukak menu makejang. Tap tombol anggon mindahang wiadin ngilangang. Ekstensi setata nyemak abesik baris pinuh.</string>
     <string name="dejavu_more_menu_row">Baris %1$d</string>
     <string name="dejavu_more_menu_add_item">Tambah tombol</string>
     <string name="dejavu_more_menu_add_row">Tambah baris</string>

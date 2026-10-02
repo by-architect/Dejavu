@@ -90,8 +90,6 @@
     <string name="dejavu_settings_title">Dejavu</string>
     <string name="dejavu_about_content">%1$s Firefox تے ٲدھارت اے، جیہڑا Mozilla نے بݨایا اے۔</string>
     <string name="dejavu_settings_tab_actions">ٹیب ایکشن</string>
-    <string name="dejavu_settings_tab_actions_entry_summary">ٹیباں تے بٹن، تے چُݨیاں ٹیباں لئی ایکشن</string>
-    <string name="dejavu_settings_tab_actions_hint">پن تے بغیر پن کیتیاں ٹیباں دیاں قطاراں دے بٹن، تے ٹیباں چُݨن ویلے ڈکھائے جاݨ والے ایکشن چُنو۔ جیہڑے ایکشن تسی خود شامل کردے او اوہ تیناں تھاواں تے ورتے جا سکدے نيں۔</string>
     <string name="dejavu_settings_pinned_tabs">پن کیتیاں ٹیباں</string>
     <string name="dejavu_settings_unpinned_tabs">بغیر پن کیتیاں ٹیباں</string>
     <string name="dejavu_settings_all_actions">سارے ایکشن</string>
@@ -188,7 +186,6 @@
     <string name="dejavu_actions_bar_search">لبھو</string>
     <string name="dejavu_actions_bar_home">گھر</string>
     <string name="dejavu_settings_more_menu_summary">صفحیاں دے تلے ایکشن بار تے اوہدا کھولن والا مینو</string>
-    <string name="dejavu_more_menu_hint">پہلی قطار صفحیاں دے تلے ایکشن بار اے۔ پورا مینو کھولن لئی ایکشن بار نوں اُتے، یا ایڈریس بار نوں تلے سوائپ کرو۔ کسے بٹن نوں ہلاؤن یا ہٹاؤن لئی اوہدے تے ٹیپ کرو۔ پھیلاؤ ہمیشہ پوری قطار لیندے نيں۔</string>
     <string name="dejavu_more_menu_row">قطار %1$d</string>
     <string name="dejavu_more_menu_add_item">اک بٹن شامل کرو</string>
     <string name="dejavu_more_menu_add_row">اک قطار شامل کرو</string>

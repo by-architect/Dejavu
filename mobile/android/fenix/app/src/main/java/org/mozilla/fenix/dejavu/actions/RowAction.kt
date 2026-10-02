@@ -28,25 +28,24 @@ sealed interface RowAction {
         fun keyOf(customActionId: String) = "custom:$customActionId"
 
         /**
-         * Everything that can be put on pinned or unpinned rows, in display order: Dejavu's actions, then the custom
-         * ones, then Close so it stays the last button.
+         * Every action, the user's own included, in display order: Dejavu's actions, then the custom ones, then Delete
+         * and Close so they stay the last buttons.
          */
-        fun available(pinned: Boolean, customActions: List<CustomAction>): List<RowAction> {
-            val builtIns = if (pinned) TabAction.forPinnedRows else TabAction.forUnpinnedRows
-            return builtIns.filter { it != TabAction.CLOSE }.map { BuiltIn(it) } +
-                customActions.map { Custom(it) } +
-                BuiltIn(TabAction.CLOSE)
-        }
-
-        /**
-         * Everything the selection bar can show, in display order: Dejavu's actions, the custom ones, then Delete and
-         * Close.
-         */
-        fun selectionBar(customActions: List<CustomAction>): List<RowAction> {
-            val (last, first) = TabAction.forSelection.partition { it == TabAction.DELETE || it == TabAction.CLOSE }
+        fun all(customActions: List<CustomAction>): List<RowAction> {
+            val (last, first) = TabAction.ordered.partition { it == TabAction.DELETE || it == TabAction.CLOSE }
             return first.map { BuiltIn(it) } + customActions.map { Custom(it) } + last.map { BuiltIn(it) }
         }
+
+        /** The actions of [all] that can do something in [place]. */
+        fun available(place: ActionPlace, customActions: List<CustomAction>): List<RowAction> =
+            all(customActions).filter { it.fits(place) }
     }
+}
+
+/** Whether this action can do something in [place]. Custom actions work everywhere. */
+fun RowAction.fits(place: ActionPlace): Boolean = when (this) {
+    is RowAction.BuiltIn -> place in action.places
+    is RowAction.Custom -> true
 }
 
 @get:DrawableRes

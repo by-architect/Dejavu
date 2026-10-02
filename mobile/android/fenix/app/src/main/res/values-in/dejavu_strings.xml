@@ -90,8 +90,6 @@
     <string name="dejavu_settings_title">Dejavu</string>
     <string name="dejavu_about_content">%1$s berbasis Firefox, buatan Mozilla.</string>
     <string name="dejavu_settings_tab_actions">Tindakan tab</string>
-    <string name="dejavu_settings_tab_actions_entry_summary">Tombol pada tab, dan tindakan untuk tab yang dipilih</string>
-    <string name="dejavu_settings_tab_actions_hint">Pilih tombol untuk baris tab yang disemat dan tidak disemat, serta tindakan yang ditampilkan saat Anda memilih tab. Tindakan yang Anda tambahkan sendiri dapat digunakan di ketiganya.</string>
     <string name="dejavu_settings_pinned_tabs">Tab yang disemat</string>
     <string name="dejavu_settings_unpinned_tabs">Tab yang tidak disemat</string>
     <string name="dejavu_settings_all_actions">Semua tindakan</string>
@@ -188,7 +186,6 @@
     <string name="dejavu_actions_bar_search">Cari</string>
     <string name="dejavu_actions_bar_home">Beranda</string>
     <string name="dejavu_settings_more_menu_summary">Bilah tindakan di bawah laman dan menu yang dibukanya</string>
-    <string name="dejavu_more_menu_hint">Baris pertama adalah bilah tindakan di bawah laman. Geser bilah tindakan ke atas, atau bilah alamat ke bawah, untuk membuka seluruh menu. Ketuk tombol untuk memindahkan atau menghapusnya. Ekstensi selalu menempati satu baris penuh.</string>
     <string name="dejavu_more_menu_row">Baris %1$d</string>
     <string name="dejavu_more_menu_add_item">Tambah tombol</string>
     <string name="dejavu_more_menu_add_row">Tambah baris</string>

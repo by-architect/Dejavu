@@ -121,8 +121,6 @@
     <string name="dejavu_settings_title">Dejavu</string>
     <string name="dejavu_about_content">%1$s, Mozilla के बनाए Firefox पर आधारित है।</string>
     <string name="dejavu_settings_tab_actions">टैब ऐक्शन</string>
-    <string name="dejavu_settings_tab_actions_entry_summary">टैब पर बटन, और चुने गए टैब के लिए ऐक्शन</string>
-    <string name="dejavu_settings_tab_actions_hint">पिन किए गए और बिना पिन वाले टैब की पंक्तियों के बटन चुनें, और वे ऐक्शन भी जो टैब चुनने पर दिखते हैं। खुद जोड़े गए ऐक्शन तीनों जगह इस्तेमाल किए जा सकते हैं।</string>
     <string name="dejavu_settings_pinned_tabs">पिन किए गए टैब</string>
     <string name="dejavu_settings_unpinned_tabs">बिना पिन वाले टैब</string>
     <string name="dejavu_settings_all_actions">सभी ऐक्शन</string>
@@ -239,7 +237,6 @@
     <string name="dejavu_actions_bar_search">सर्च करें</string>
     <string name="dejavu_actions_bar_home">होम</string>
     <string name="dejavu_settings_more_menu_summary">पेज के नीचे का ऐक्शन बार और उससे खुलने वाला मेन्यू</string>
-    <string name="dejavu_more_menu_hint">पहली पंक्ति पेज के नीचे का ऐक्शन बार है। पूरा मेन्यू खोलने के लिए ऐक्शन बार को ऊपर या एड्रेस बार को नीचे स्वाइप करें। किसी बटन की जगह बदलने या उसे हटाने के लिए उस पर टैप करें। एक्सटेंशन हमेशा पूरी पंक्ति लेते हैं।</string>
     <string name="dejavu_more_menu_row">पंक्ति %1$d</string>
     <string name="dejavu_more_menu_add_item">बटन जोड़ें</string>
     <string name="dejavu_more_menu_add_row">पंक्ति जोड़ें</string>

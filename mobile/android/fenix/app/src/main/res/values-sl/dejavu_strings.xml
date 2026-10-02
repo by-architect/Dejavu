@@ -90,8 +90,6 @@
     <string name="dejavu_settings_title">Dejavu</string>
     <string name="dejavu_about_content">%1$s temelji na Firefoxu, ki ga izdeluje Mozilla.</string>
     <string name="dejavu_settings_tab_actions">Dejanja zavihkov</string>
-    <string name="dejavu_settings_tab_actions_entry_summary">Gumbi na zavihkih in dejanja za izbrane zavihke</string>
-    <string name="dejavu_settings_tab_actions_hint">Izberite gumbe za vrstice pripetih in nepripetih zavihkov ter dejanja, prikazana, ko izberete zavihke. Dejanja, ki jih dodate sami, lahko uporabite na vseh treh mestih.</string>
     <string name="dejavu_settings_pinned_tabs">Pripeti zavihki</string>
     <string name="dejavu_settings_unpinned_tabs">Nepripeti zavihki</string>
     <string name="dejavu_settings_all_actions">Vsa dejanja</string>
@@ -188,7 +186,6 @@
     <string name="dejavu_actions_bar_search">Iskanje</string>
     <string name="dejavu_actions_bar_home">Domov</string>
     <string name="dejavu_settings_more_menu_summary">Vrstica dejanj pod stranmi in meni, ki ga odpre</string>
-    <string name="dejavu_more_menu_hint">Prva vrstica je vrstica dejanj pod stranmi. Povlecite vrstico dejanj navzgor ali naslovno vrstico navzdol, da odprete celoten meni. Dotaknite se gumba, da ga premaknete ali odstranite. Razširitve vedno zavzamejo celo vrstico.</string>
     <string name="dejavu_more_menu_row">Vrstica %1$d</string>
     <string name="dejavu_more_menu_add_item">Dodaj gumb</string>
     <string name="dejavu_more_menu_add_row">Dodaj vrstico</string>

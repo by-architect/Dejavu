@@ -90,8 +90,6 @@
     <string name="dejavu_settings_title">Dejavu</string>
     <string name="dejavu_about_content">%1$s se basa en Firefox, feito por Mozilla.</string>
     <string name="dejavu_settings_tab_actions">Accions d\'as pestanyas</string>
-    <string name="dejavu_settings_tab_actions_entry_summary">Botons en as pestanyas, y accions ta las pestanyas seleccionadas</string>
-    <string name="dejavu_settings_tab_actions_hint">Trigar os botons d\'as ringleras de pestanyas fixadas y no fixadas, y as accions amostradas quan seleccionas pestanyas. As accions que adibes tu mesmo se pueden emplegar en as tres.</string>
     <string name="dejavu_settings_pinned_tabs">Pestanyas fixadas</string>
     <string name="dejavu_settings_unpinned_tabs">Pestanyas no fixadas</string>
     <string name="dejavu_settings_all_actions">Todas as accions</string>
@@ -188,7 +186,6 @@
     <string name="dejavu_actions_bar_search">Mirar</string>
     <string name="dejavu_actions_bar_home">Inicio</string>
     <string name="dejavu_settings_more_menu_summary">A barra d\'accions de baixo d\'as pachinas y o menú que ubre</string>
-    <string name="dejavu_more_menu_hint">A primera ringlera ye la barra d\'accions de baixo d\'as pachinas. Esliza la barra d\'accions ta alto, u la barra d\'adrezas ta baixo, ta ubrir tot o menú. Toca un botón ta mover-lo u quitar-lo. As estensions siempre ocupan una ringlera entera.</string>
     <string name="dejavu_more_menu_row">Ringlera %1$d</string>
     <string name="dejavu_more_menu_add_item">Adibir un botón</string>
     <string name="dejavu_more_menu_add_row">Adibir una ringlera</string>

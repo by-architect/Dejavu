@@ -90,8 +90,6 @@
     <string name="dejavu_settings_title">Dejavu</string>
     <string name="dejavu_about_content">A(z) %1$s a Firefoxon alapul, amelyet a Mozilla készített.</string>
     <string name="dejavu_settings_tab_actions">Lapműveletek</string>
-    <string name="dejavu_settings_tab_actions_entry_summary">Gombok a lapokon, és műveletek a kijelölt lapokhoz</string>
-    <string name="dejavu_settings_tab_actions_hint">Válassza ki a kitűzött és nem kitűzött lapsorok gombjait, valamint a lapok kijelölésekor megjelenő műveleteket. Az Ön által hozzáadott műveletek mindhárom helyen használhatók.</string>
     <string name="dejavu_settings_pinned_tabs">Kitűzött lapok</string>
     <string name="dejavu_settings_unpinned_tabs">Nem kitűzött lapok</string>
     <string name="dejavu_settings_all_actions">Összes művelet</string>
@@ -188,7 +186,6 @@
     <string name="dejavu_actions_bar_search">Keresés</string>
     <string name="dejavu_actions_bar_home">Kezdőlap</string>
     <string name="dejavu_settings_more_menu_summary">Az oldalak alatti műveletsáv és az általa megnyitott menü</string>
-    <string name="dejavu_more_menu_hint">Az első sor az oldalak alatti műveletsáv. Csúsztassa felfelé a műveletsávot, vagy lefelé a címsávot, hogy megnyíljon a teljes menü. Koppintson egy gombra a mozgatásához vagy eltávolításához. A kiegészítők mindig egy teljes sort foglalnak el.</string>
     <string name="dejavu_more_menu_row">%1$d. sor</string>
     <string name="dejavu_more_menu_add_item">Gomb hozzáadása</string>
     <string name="dejavu_more_menu_add_row">Sor hozzáadása</string>

@@ -90,8 +90,6 @@
     <string name="dejavu_settings_title">Dejavu</string>
     <string name="dejavu_about_content">%1$s si basat in Firefox, fatu dae Mozilla.</string>
     <string name="dejavu_settings_tab_actions">Atziones de is ischedas</string>
-    <string name="dejavu_settings_tab_actions_entry_summary">Butones in is ischedas, e atziones pro is ischedas seletzionadas</string>
-    <string name="dejavu_settings_tab_actions_hint">Sèbera is butones de is ringas de ischedas fissadas e non fissadas, e is atziones ammustradas cando seletzionas ischedas. Is atziones chi agiunghes tue etotu si podent impreare in totu e tres.</string>
     <string name="dejavu_settings_pinned_tabs">Ischedas fissadas</string>
     <string name="dejavu_settings_unpinned_tabs">Ischedas non fissadas</string>
     <string name="dejavu_settings_all_actions">Totu is atziones</string>
@@ -188,7 +186,6 @@
     <string name="dejavu_actions_bar_search">Chirca</string>
     <string name="dejavu_actions_bar_home">Printzipale</string>
     <string name="dejavu_settings_more_menu_summary">Sa barra de is atziones asuta de is pàginas e su menu chi aberit</string>
-    <string name="dejavu_more_menu_hint">Sa prima ringa est sa barra de is atziones asuta de is pàginas. Fai scùrrere sa barra de is atziones a susu, o sa barra de s\'indiritzu a bàsciu, pro aberrer totu su menu. Pretziona unu butone pro lu movere o lu tirare. Is estensiones ocupant semper una ringa intrea.</string>
     <string name="dejavu_more_menu_row">Ringa %1$d</string>
     <string name="dejavu_more_menu_add_item">Agiunghe unu butone</string>
     <string name="dejavu_more_menu_add_row">Agiunghe una ringa</string>

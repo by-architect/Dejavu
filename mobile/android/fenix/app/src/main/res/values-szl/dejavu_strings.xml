@@ -90,8 +90,6 @@
     <string name="dejavu_settings_title">Dejavu</string>
     <string name="dejavu_about_content">%1$s bazuje na Firefox, zrobiōny ôd Mozilla.</string>
     <string name="dejavu_settings_tab_actions">Akcyje kart</string>
-    <string name="dejavu_settings_tab_actions_entry_summary">Knefle na kartach i akcyje dlo ôbranych kart</string>
-    <string name="dejavu_settings_tab_actions_hint">Ôbier knefle dlo rzyndōw przipiyntych i nieprzipiyntych kart, i akcyje pokazowane, jak ôbiyrosz karty. Akcyje, kere sōm dodowosz, idōm użyć we wszyskich trzech.</string>
     <string name="dejavu_settings_pinned_tabs">Przipiynte karty</string>
     <string name="dejavu_settings_unpinned_tabs">Nieprzipiynte karty</string>
     <string name="dejavu_settings_all_actions">Wszyskie akcyje</string>
@@ -188,7 +186,6 @@
     <string name="dejavu_actions_bar_search">Szukej</string>
     <string name="dejavu_actions_bar_home">Dōm</string>
     <string name="dejavu_settings_more_menu_summary">Posek akcyji pod strōnami i meni, kere ôn ôdwiyro</string>
-    <string name="dejavu_more_menu_hint">Piyrszo linijo to posek akcyji pod strōnami. Przesuń posek akcyji w gōra, abo posek adresy w dōł, coby ôdewrzić cołke meni. Stuknij knefel, coby go przenieść abo wyciepnyć. Rozszyrzynia zawdy zajmujōm cołko linijo.</string>
     <string name="dejavu_more_menu_row">Linijo %1$d</string>
     <string name="dejavu_more_menu_add_item">Dodej knefel</string>
     <string name="dejavu_more_menu_add_row">Dodej linijo</string>
