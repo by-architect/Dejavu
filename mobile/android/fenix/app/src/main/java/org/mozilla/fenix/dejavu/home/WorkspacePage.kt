@@ -20,6 +20,7 @@ import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.heightIn
 import androidx.compose.foundation.layout.offset
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.requiredSize
@@ -63,6 +64,7 @@ import androidx.compose.ui.platform.LocalDensity
 import androidx.compose.ui.platform.LocalHapticFeedback
 import androidx.compose.ui.platform.LocalViewConfiguration
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.res.pluralStringResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.semantics.contentDescription
 import androidx.compose.ui.semantics.semantics
@@ -296,6 +298,7 @@ internal fun WorkspacePage(
                         folder = item,
                         depth = entry.depth,
                         childCount = state.pins.count { it.parentId == item.id },
+                        openTabCount = if (item.collapsed) state.openTabsIn(item.id, tabsById.keys) else 0,
                         selection = selection?.let { item.id in it.folderIds },
                         onClick = { if (drag == null) callbacks.onFolderClick(item) },
                         modifier = rowModifier,
@@ -749,12 +752,23 @@ private fun WorkspaceHeader(
     }
 }
 
-/** A folder of the pinned section. Tapping it folds it, or selects it in selection mode. */
+/** How many pinned tabs inside folder [folderId], subfolders included, have an open tab among [openTabIds]. */
+private fun WorkspaceState.openTabsIn(folderId: String, openTabIds: Set<String>): Int {
+    val inside = descendantIds(folderId)
+    return pins.count { it.id in inside && it.tabId != null && it.tabId in openTabIds }
+}
+
+/**
+ * A folder of the pinned section. Tapping it folds it, or selects it in selection mode. A closed folder shows
+ * [openTabCount], the number of open tabs hidden inside it, next to its icon.
+ */
+@Suppress("LongMethod")
 @Composable
 private fun FolderRow(
     folder: PinnedItem,
     depth: Int,
     childCount: Int,
+    openTabCount: Int,
     selection: Boolean?,
     onClick: () -> Unit,
     modifier: Modifier = Modifier,
@@ -785,7 +799,29 @@ private fun FolderRow(
             tint = MaterialTheme.colorScheme.onSurfaceVariant,
             modifier = Modifier.size(20.dp),
         )
-        Spacer(Modifier.width(12.dp))
+        if (openTabCount > 0) {
+            val description = pluralStringResource(R.plurals.dejavu_folder_open_tabs, openTabCount, openTabCount)
+            Spacer(Modifier.width(8.dp))
+            Box(
+                contentAlignment = Alignment.Center,
+                modifier = Modifier
+                    .semantics { contentDescription = description }
+                    .heightIn(min = 18.dp)
+                    .widthIn(min = 18.dp)
+                    .clip(CircleShape)
+                    .background(MaterialTheme.colorScheme.primary)
+                    .padding(horizontal = 5.dp),
+            ) {
+                Text(
+                    text = openTabCount.toString(),
+                    style = MaterialTheme.typography.labelSmall,
+                    color = MaterialTheme.colorScheme.onPrimary,
+                )
+            }
+            Spacer(Modifier.width(8.dp))
+        } else {
+            Spacer(Modifier.width(12.dp))
+        }
         Text(
             text = folder.title,
             style = MaterialTheme.typography.bodyLarge,

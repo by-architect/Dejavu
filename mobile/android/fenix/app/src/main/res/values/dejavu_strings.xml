@@ -68,6 +68,11 @@
     <string name="dejavu_folder_rename">Rename folder</string>
     <string name="dejavu_folder_unpack">Unpack folder</string>
     <string name="dejavu_folder_top_level">Pinned tabs, no folder</string>
+    <!-- Shown on a closed folder: how many of the tabs inside it, subfolders included, are open. -->
+    <plurals name="dejavu_folder_open_tabs">
+        <item quantity="one">%1$d open tab</item>
+        <item quantity="other">%1$d open tabs</item>
+    </plurals>
 
     <!-- Essentials -->
     <string name="dejavu_essentials_drop">Drop here to add to essentials</string>

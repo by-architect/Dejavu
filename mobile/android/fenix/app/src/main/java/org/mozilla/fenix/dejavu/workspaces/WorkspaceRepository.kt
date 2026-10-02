@@ -418,7 +418,8 @@ class WorkspaceRepository private constructor(context: Context) {
         )
     }
 
-    fun toggleFolder(folderId: String) = mutate { state ->
+    /** Opens or closes folder [folderId]. Saved right away, so the folder looks the same after the app is closed. */
+    fun toggleFolder(folderId: String) = mutate(saveNow = true) { state ->
         state.copy(pins = state.pins.map { if (it.id == folderId) it.copy(collapsed = !it.collapsed) else it })
     }
 
@@ -569,10 +570,14 @@ class WorkspaceRepository private constructor(context: Context) {
         return checkNotNull(result).second
     }
 
-    private fun mutate(transform: (WorkspaceState) -> WorkspaceState) {
+    /**
+     * Applies [transform] and saves the result. Saving happens in the background unless [saveNow] is set, in which
+     * case it is written before returning, so it is not lost when the app is closed right after.
+     */
+    private fun mutate(saveNow: Boolean = false, transform: (WorkspaceState) -> WorkspaceState) {
         var changed: WorkspaceState? = null
         _state.update { old -> transform(old).also { if (it != old) changed = it } }
-        changed?.let { prefs.edit { putString(KEY_STATE, WorkspaceSerializer.write(it)) } }
+        changed?.let { prefs.edit(commit = saveNow) { putString(KEY_STATE, WorkspaceSerializer.write(it)) } }
     }
 
     private fun now() = System.currentTimeMillis()
