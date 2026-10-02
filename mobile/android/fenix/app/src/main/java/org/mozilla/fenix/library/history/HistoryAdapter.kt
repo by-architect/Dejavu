@@ -30,7 +30,20 @@ class HistoryAdapter(
         set(value) {
             field = value
             itemsWithHeaders.clear()
+            headersChanged = true
         }
+    private var headersChanged = false
+
+    init {
+        // Rows that stay in the list keep their old header unless they are bound again once the new list is shown.
+        addOnPagesUpdatedListener {
+            if (headersChanged) {
+                headersChanged = false
+                itemsWithHeaders.clear()
+                notifyItemRangeChanged(0, itemCount)
+            }
+        }
+    }
 
     // A flag to track the empty state of the list. Items are not being deleted immediately,
     // but hidden from the UI until the Undo snackbar will execute the delayed operation.

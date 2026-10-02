@@ -6,9 +6,9 @@ package org.mozilla.fenix.dejavu.history
 
 import android.content.Context
 import androidx.annotation.StringRes
-import androidx.appcompat.app.AlertDialog
 import androidx.paging.PagingSource
 import androidx.paging.PagingState
+import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import org.mozilla.fenix.R
 import org.mozilla.fenix.components.history.HistoryDB
 import org.mozilla.fenix.components.history.PagedHistoryProvider
@@ -67,7 +67,7 @@ object DejavuHistory {
     fun showGroupingDialog(context: Context, onChanged: () -> Unit) {
         val settings = DejavuSettings.get(context)
         val choices = HistoryGrouping.entries
-        AlertDialog.Builder(context)
+        MaterialAlertDialogBuilder(context)
             .setTitle(R.string.dejavu_history_group_by)
             .setSingleChoiceItems(
                 choices.map { context.getString(it.label) }.toTypedArray(),
