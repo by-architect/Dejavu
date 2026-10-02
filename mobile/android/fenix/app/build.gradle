@@ -464,6 +464,15 @@ nimbus {
             ? gradle.getProperty('localProperties.autoPublish.application-services.dir') : null
 }
 
+// Dejavu: the closed source libraries live in proprietary.gradle, which F-Droid's recipe deletes
+// before it scans the tree. Without that file the app compiles src/foss/java, whose stand-ins keep
+// the same API and do nothing, instead of src/proprietary/java.
+if (file('proprietary.gradle').exists()) {
+    apply from: 'proprietary.gradle'
+} else {
+    android.sourceSets.main.kotlin.srcDirs += 'src/foss/java'
+}
+
 dependencies {
     implementation project('longfox')
     implementation project(':components:browser-engine-gecko')
@@ -567,7 +576,6 @@ dependencies {
     implementation project(':components:lib-crash')
     implementation project(':components:lib-crash-sentry')
     implementation project(':components:lib-dataprotect')
-    implementation project(':components:lib-push-firebase')
     implementation project(':components:lib-state')
     implementation project(':components:lib-accelerometer-sensormanager')
     implementation project(':components:lib-integrity-googleplay')
@@ -578,7 +586,6 @@ dependencies {
     implementation ComponentsDependencies.mozilla_appservices_syncmanager
 
     implementation libs.accompanist.drawablepainter
-    implementation libs.adjust
     implementation libs.androidx.activity
     implementation libs.androidx.annotation
     implementation libs.androidx.appcompat
@@ -625,12 +632,9 @@ dependencies {
     implementation libs.androidx.viewpager2
     implementation libs.androidx.work.runtime
     implementation libs.google.material
-    implementation libs.installreferrer
     implementation libs.kotlinx.coroutines
     implementation libs.kotlinx.serialization.json
     implementation libs.mozilla.glean
-    implementation libs.play.review
-    implementation libs.play.review.ktx
     implementation libs.protobuf.javalite
     implementation libs.sentry
     implementation libs.androidx.documentfile

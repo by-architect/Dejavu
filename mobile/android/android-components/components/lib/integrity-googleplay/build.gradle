@@ -29,6 +29,14 @@ android {
     namespace = 'mozilla.components.lib.integrity.googleplay'
 }
 
+// Dejavu: the Play Integrity API lives in proprietary.gradle, which F-Droid's recipe deletes.
+// Without it this module compiles src/foss/java, which keeps the same API and issues no tokens.
+if (file('proprietary.gradle').exists()) {
+    apply from: 'proprietary.gradle'
+} else {
+    android.sourceSets.main.kotlin.srcDirs += 'src/foss/java'
+}
+
 dependencies {
     implementation project(':components:concept-integrity')
 
@@ -36,8 +44,6 @@ dependencies {
     // if it wants to collect GeckoView telemetry through the Glean SDK.
     compileOnly libs.mozilla.glean
 
-    implementation libs.kotlinx.coroutines.play.services
-    implementation libs.play.integrity
 
     testImplementation project(':components:support-test')
     testImplementation libs.androidx.test.junit

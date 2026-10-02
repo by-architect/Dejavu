@@ -188,6 +188,15 @@ configurations {
     }
 }
 
+// Dejavu: the Google Play FIDO library lives in proprietary.gradle, which F-Droid's recipe deletes.
+// Without it GeckoView compiles src/foss/java, whose WebAuthn bridge uses Android's own credential
+// manager and reports WebAuthn as unsupported where that is unavailable.
+if (file('proprietary.gradle').exists()) {
+    apply from: 'proprietary.gradle'
+} else {
+    android.sourceSets.main.java.srcDirs += 'src/foss/java'
+}
+
 dependencies {
     implementation libs.androidx.annotation
     implementation libs.androidx.annotation.experimental
@@ -195,7 +204,6 @@ dependencies {
     implementation libs.androidx.core
     implementation libs.androidx.lifecycle.common
     implementation libs.androidx.lifecycle.process
-    implementation libs.play.services.fido
     implementation "org.yaml:snakeyaml:2.2"
 
     if (mozconfig.substs.MOZ_ANDROID_HLS_SUPPORT) {

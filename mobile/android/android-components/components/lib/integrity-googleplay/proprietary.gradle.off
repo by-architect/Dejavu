@@ -1,0 +1,17 @@
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+
+// Dejavu: the Play Integrity API is closed source. F-Droid's recipe deletes this file, and
+// build.gradle then compiles src/foss/java, which keeps this module's API and issues no tokens.
+
+def catalog = project.extensions.getByType(org.gradle.api.artifacts.VersionCatalogsExtension).named('libs')
+
+android {
+    sourceSets.main.kotlin.srcDirs += 'src/proprietary/java'
+}
+
+dependencies {
+    implementation catalog.findLibrary('kotlinx-coroutines-play-services').get()
+    implementation catalog.findLibrary('play-integrity').get()
+}

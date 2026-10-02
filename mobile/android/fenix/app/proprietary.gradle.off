@@ -1,0 +1,28 @@
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+
+// Dejavu: every dependency here is closed source, so F-Droid will not build an app that declares
+// them. Its recipe deletes this file before it scans the tree; build.gradle then compiles
+// src/foss/java in place of src/proprietary/java, which holds stand-ins that do nothing.
+//
+// Keeping the coordinates out of build.gradle is the point: F-Droid's scanner reads the text of the
+// build files, so moving a dependency to another configuration would not have hidden it.
+
+def catalog = project.extensions.getByType(org.gradle.api.artifacts.VersionCatalogsExtension).named('libs')
+
+android {
+    sourceSets.main.kotlin.srcDirs += 'src/proprietary/java'
+}
+
+dependencies {
+    // Adjust, a closed source marketing attribution SDK.
+    implementation catalog.findLibrary('adjust').get()
+    // Firebase Cloud Messaging, which backs web push and send-tab.
+    implementation project(':components:lib-push-firebase')
+    // Google Play install referrer, for the UTM parameters of a Play Store install.
+    implementation catalog.findLibrary('installreferrer').get()
+    // Google Play in-app review.
+    implementation catalog.findLibrary('play-review').get()
+    implementation catalog.findLibrary('play-review-ktx').get()
+}

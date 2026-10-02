@@ -1,0 +1,18 @@
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+
+// Dejavu: Google Play's FIDO library is closed source, so F-Droid will not build a GeckoView that
+// declares it. Its recipe deletes this file; build.gradle then compiles src/foss/java, whose
+// WebAuthn bridge keeps the same JNI entry points and goes through Android's own credential
+// manager instead.
+
+def catalog = project.extensions.getByType(org.gradle.api.artifacts.VersionCatalogsExtension).named('libs')
+
+android {
+    sourceSets.main.java.srcDirs += 'src/proprietary/java'
+}
+
+dependencies {
+    implementation catalog.findLibrary('play-services-fido').get()
+}

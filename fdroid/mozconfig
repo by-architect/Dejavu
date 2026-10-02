@@ -4,6 +4,11 @@
 # built from this tree. The mozconfig used for day to day work sets --enable-artifact-builds, which
 # downloads a prebuilt Gecko from Mozilla's servers instead; that is why this is a separate file.
 #
+# Nothing here lets the build fetch a toolchain. `mach bootstrap` is not run, and --disable-bootstrap
+# stops the build system fetching toolchains on its own; every compiler is named explicitly below and
+# comes from the NDK that F-Droid installs from the recipe's `ndk:` field. This follows how Fennec
+# F-Droid and IronFox build Gecko on F-Droid's infrastructure.
+#
 # Use it with:
 #   MOZCONFIG=$PWD/fdroid/mozconfig ./mach build
 #   MOZCONFIG=$PWD/fdroid/mozconfig ./mach gradle fenix:assembleRelease -PversionName=1.0.0 -PdisableDebugSigning
@@ -27,5 +32,32 @@ ac_add_options --disable-debug
 # Dejavu does not send crash reports anywhere, so the crash reporter and the Breakpad tools it pulls
 # in are left out of the build entirely. This also takes several megabytes off the APK.
 ac_add_options --disable-crashreporter
+ac_add_options --disable-updater
+
+# Never fetch anything. --disable-bootstrap stops the build system downloading toolchains, and an
+# artifact build would download a prebuilt Gecko, which is the opposite of what F-Droid is for.
+ac_add_options --disable-bootstrap
+ac_add_options --disable-artifact-builds
+
+# The wasm sandbox would need a wasi-sdk built from source purely to sandbox a few media libraries.
+# Leaving it out keeps this to a single toolchain.
+ac_add_options --without-wasm-sandboxed-libraries
+
+# Everything below comes from the NDK and SDK F-Droid provides. ANDROID_NDK and ANDROID_HOME are set
+# by its build environment; the fallbacks are for building this locally.
+DEJAVU_NDK=${ANDROID_NDK:-$HOME/.mozbuild/android-ndk-r30}
+DEJAVU_SDK=${ANDROID_HOME:-$HOME/.mozbuild/android-sdk-linux}
+DEJAVU_NDK_BIN="$DEJAVU_NDK/toolchains/llvm/prebuilt/linux-x86_64/bin"
+
+ac_add_options --with-android-ndk="$DEJAVU_NDK"
+ac_add_options --with-android-sdk="$DEJAVU_SDK"
+ac_add_options --with-libclang-path="$DEJAVU_NDK/toolchains/llvm/prebuilt/linux-x86_64/lib"
+ac_add_options --with-java-bin-path="/usr/bin"
+# Without this, configure falls back to the gradlew wrapper, whose job is to download Gradle.
+# F-Droid deletes that wrapper and does not allow the download; it provides its own gradle.
+ac_add_options --with-gradle=$(command -v gradle)
+ac_add_options CC="$DEJAVU_NDK_BIN/clang"
+ac_add_options CXX="$DEJAVU_NDK_BIN/clang++"
+ac_add_options STRIP="$DEJAVU_NDK_BIN/llvm-strip"
 
 mk_add_options MOZ_OBJDIR=./objdir-fdroid
