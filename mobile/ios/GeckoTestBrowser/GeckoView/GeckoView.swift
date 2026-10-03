@@ -8,6 +8,9 @@ public class GeckoView: UIView {
     public var session: GeckoSession? {
         didSet {
             // FIXME: Suspend old view, unsuspend new view, etc.
+            if session === oldValue, let sessionView = session?.window?.view(), sessionView.superview === self {
+                return
+            }
 
             // Remove all subviews from this view, to clean up any previous state.
             for view in subviews {
@@ -18,7 +21,8 @@ public class GeckoView: UIView {
             guard let sessionView = session?.window?.view() else { return }
 
             if sessionView.superview != nil {
-                fatalError("attempt to assign GeckoSession to multiple GeckoView instances")
+                // A session shows in one view at a time, so it leaves the view that showed it before.
+                sessionView.removeFromSuperview()
             }
 
             sessionView.translatesAutoresizingMaskIntoConstraints = false

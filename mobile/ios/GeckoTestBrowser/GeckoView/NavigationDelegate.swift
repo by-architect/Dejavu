@@ -119,7 +119,9 @@ func newNavigationHandler(_ session: GeckoSession) -> GeckoSessionHandler<
             if let result = await delegate?.onNewSession(
                 session: session, uri: message!["uri"] as! String)
             {
-                assert(result.isOpen())
+                // Like GeckoView Android, the returned session must not be open yet: it opens here, in the window
+                // Gecko made for it.
+                assert(!result.isOpen())
                 result.open(windowId: newSessionId)
                 return true
             } else {
@@ -156,8 +158,10 @@ func newNavigationHandler(_ session: GeckoSession) -> GeckoSessionHandler<
                 hasUserGesture: message!["hasUserGesture"] as! Bool,
                 isDirectNavigation: true)
 
+            // Gecko expects whether the app handled the load, like GeckoView Android: `deny` handles it, so Gecko
+            // abandons it, and `allow` or no delegate lets it continue.
             let result = await delegate?.onLoadRequest(session: session, request: loadRequest)
-            return result == .allow
+            return result == .deny
         }
     }
 }

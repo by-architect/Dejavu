@@ -24,4 +24,12 @@ public class GeckoRuntime {
     public static func childMain(xpcConnection: xpc_connection_t, process: GeckoProcessExtension) {
         ChildProcessInit(xpcConnection, process, runtime)
     }
+
+    /// Deletes the cookies and site data of the container `contextId`, like GeckoView Android's
+    /// `StorageController.clearDataForSessionContext`.
+    public static func clearDataForSessionContext(_ contextId: String) {
+        guard let safeId = GeckoSession.safeContextId(contextId) else { return }
+        EventDispatcher.runtimeInstance.dispatch(
+            type: "GeckoView:ClearSessionContextData", message: ["contextId": safeId])
+    }
 }

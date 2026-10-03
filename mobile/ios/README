@@ -27,3 +27,78 @@ Currently the in-tree wrapper for Gecko on iOS is the minimal "GeckoTestBrowser"
 application. To run this application, open the xcode project at
 `mobile/ios/GeckoTestBrowser/GeckoTestBrowser.xcodeproj`, and build/run it from
 there.
+
+## Dejavu on iOS
+
+In this tree, GeckoTestBrowser is the iOS version of Dejavu, the Android app in
+`mobile/android/fenix` (see its `dejavu` packages). The Xcode project and its
+targets keep their upstream names; the app shows as "Dejavu". Paths below are
+relative to `mobile/ios/GeckoTestBrowser`.
+
+### What it has
+
+The Dejavu features of the Android app, rebuilt in SwiftUI on the Gecko views of
+`GeckoView/`:
+
+- Workspaces with names, emoji or Zen icons, color themes and a default
+  container, swiped through on the home screen, and a private workspace.
+- Pinned tabs, folders (nested up to 5 levels), essentials (optionally per
+  container), drag and drop, selection of several tabs and their actions bar.
+- Containers, temporary containers (created per tab, deleted with their data
+  once their last tab closes) and moving tabs between containers.
+- Custom actions (web requests run on tabs), the editable "More" menu and the
+  actions bar below pages, split view, link menu entries (new tab, private tab,
+  split view, container, workspace), links from other apps when Dejavu is the
+  default browser, bookmarks and history.
+- Syncing workspaces with Zen through a Mozilla account (Zen's "spaces" sync
+  collection, the same records as the Android app).
+- Dejavu's colors, icon, launch screen and all its translations.
+
+Not there yet, because GeckoView for iOS cannot do them yet: add-ons, passwords,
+downloads, translations, printing and saving pages as PDF. Texts that only the
+iOS app has (`L10n+iOS.swift`, `L10n+Settings.swift`, `L10n+Sync.swift`) are in
+English only.
+
+### Where things are
+
+- `GeckoTestBrowser/Dejavu/Model`: workspaces, containers, actions, settings,
+  bookmarks and history, stored as JSON in Application Support/Dejavu in the
+  same form as on Android.
+- `GeckoTestBrowser/Dejavu/Browser`: tabs and their Gecko sessions, the
+  browser screen, menus, search.
+- `GeckoTestBrowser/Dejavu/Home`, `Settings`, `UI`: the home screen, settings
+  and shared styles.
+- `GeckoTestBrowser/Dejavu/Sync`: the Mozilla account and spaces sync, a port of
+  the Android app's `dejavu/sync` package. The account's tokens and sync key
+  are kept in the Keychain.
+- `GeckoView/`: the Swift bindings, extended with containers, private mode,
+  desktop mode, find in page, session restore and security information.
+
+### Building
+
+1. Build Gecko for iOS as described above (`ac_add_options
+   --enable-application=mobile/ios`, plus `--target=aarch64-apple-ios` for a
+   device, see `mobile/ios/config/mozconfigs`), with `./mach build`.
+2. Open `GeckoTestBrowser.xcodeproj` in Xcode 16 or newer.
+3. In "Signing & Capabilities", choose your own team for the GeckoTestBrowser,
+   WebContent, Networking and Rendering targets. A browser with its own engine
+   needs Apple's browser engine entitlements (see the `.entitlements` files);
+   if you change the app's bundle identifier, change it in
+   `WebContent/WebContent.entitlements` too.
+4. Build and run the GeckoTestBrowser scheme.
+
+### Regenerating translations and images
+
+`tools/dejavu_l10n.py` makes `GeckoTestBrowser/Resources/Localizable.xcstrings`
+and `GeckoTestBrowser/Dejavu/Support/L10n+Generated.swift` from the Android
+app's `dejavu_strings.xml` files. `tools/dejavu_assets.py` makes the container and
+Dejavu icons, the app icon, the colors and the launch screen from the Android
+app's and Firefox's drawings (it needs Pillow and NumPy). Run them again after
+those change.
+
+### Sync sign-in
+
+The Mozilla account sign-in uses the OAuth client of Firefox for Android with its
+`https://accounts.firefox.com/oauth/success/...` address, which the sign-in tab
+watches for. If Mozilla's servers refuse that address, Dejavu needs an OAuth
+client of its own from Mozilla.
