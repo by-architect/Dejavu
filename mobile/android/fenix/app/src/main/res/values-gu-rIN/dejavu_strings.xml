@@ -64,6 +64,10 @@
     <string name="dejavu_folder_rename">ફોલ્ડરનું નામ બદલો</string>
     <string name="dejavu_folder_unpack">ફોલ્ડર અનપૅક કરો</string>
     <string name="dejavu_folder_top_level">પિન કરેલી ટૅબ્સ, ફોલ્ડર વિના</string>
+    <plurals name="dejavu_folder_open_tabs">
+        <item quantity="one">%1$d ખુલ્લી ટૅબ</item>
+        <item quantity="other">%1$d ખુલ્લી ટૅબ્સ</item>
+    </plurals>
 
     <!-- Essentials -->
     <string name="dejavu_essentials_drop">એસેન્શિયલ્સમાં ઉમેરવા માટે અહીં છોડો</string>
@@ -119,7 +123,19 @@
 
     <!-- Settings -->
     <string name="dejavu_settings_title">Dejavu</string>
+    <string name="dejavu_about_content">%1$s એ Mozilla ના ઓપન સોર્સ Firefox અને GeckoView કોડમાંથી બનાવેલું એક સ્વતંત્ર બ્રાઉઝર છે. તે Mozilla દ્વારા બનાવાયેલું, માન્ય કરાયેલું કે સપોર્ટ કરાયેલું નથી. Firefox એ યુ.એસ. અને અન્ય દેશોમાં Mozilla Foundation નો ટ્રેડમાર્ક છે.</string>
+    <string name="dejavu_about_source_code">સોર્સ કોડ</string>
     <string name="dejavu_settings_tab_actions">ટૅબ ક્રિયાઓ</string>
+    <string name="dejavu_settings_tab_actions_entry_summary">ક્રિયાઓની એક યાદી, અને દરેક ક્યાં દેખાય છે</string>
+    <string name="dejavu_settings_tab_actions_hint">તમે જાતે ઉમેરેલી ક્રિયાઓ સહિત બધી ક્રિયાઓ એક જ યાદીમાં છે. દરેક ક્યાં દેખાય તે પસંદ કરો: પિન કરેલી ટૅબ્સ, પિન ન કરેલી ટૅબ્સ અને ફોલ્ડર્સ પર, પસંદ કરેલી ટૅબ્સના બારમાં, વધુ વિકલ્પ મેનૂમાં અને પૃષ્ઠોની નીચેના ક્રિયા બારમાં. ફોલ્ડર પરની ક્રિયાઓ તેની અંદરની દરેક ટૅબ પર લાગુ થાય છે.</string>
+    <string name="dejavu_settings_where_actions_show">ક્રિયાઓ ક્યાં દેખાય છે</string>
+    <string name="dejavu_settings_folders">ફોલ્ડર્સ</string>
+    <string name="dejavu_settings_selection_bar">પસંદગી બાર</string>
+    <string name="dejavu_settings_folder_actions_hint">ફોલ્ડરની પંક્તિઓ માટે વધુમાં વધુ %1$d બટનો પસંદ કરો. તે ફોલ્ડર અને તેના સબફોલ્ડર્સની અંદરની દરેક ટૅબ પર કામ કરે છે.</string>
+    <string name="dejavu_settings_action_places_none">ક્યાંય બતાવાતી નથી</string>
+    <string name="dejavu_settings_action_place_unavailable">ત્યાં કંઈ કરતી નથી</string>
+    <string name="dejavu_settings_action_place_full">જગ્યા બાકી નથી</string>
+    <string name="dejavu_done">થઈ ગયું</string>
     <string name="dejavu_settings_pinned_tabs">પિન કરેલી ટૅબ્સ</string>
     <string name="dejavu_settings_unpinned_tabs">પિન ન કરેલી ટૅબ્સ</string>
     <string name="dejavu_settings_all_actions">બધી ક્રિયાઓ</string>
@@ -236,6 +252,9 @@
     <string name="dejavu_actions_bar_search">શોધો</string>
     <string name="dejavu_actions_bar_home">મુખ્ય પૃષ્ઠ</string>
     <string name="dejavu_settings_more_menu_summary">પૃષ્ઠોની નીચેનો ક્રિયા બાર અને તે જે મેનૂ ખોલે છે</string>
+    <string name="dejavu_more_menu_hint">આખું મેનૂ ખોલવા માટે ક્રિયા બારને ઉપર, અથવા એડ્રેસ બારને નીચે સ્વાઇપ કરો. કોઈ બટનને ખસેડવા અથવા દૂર કરવા માટે તેના પર ટૅપ કરો. એક્સટેન્શન હંમેશાં આખી પંક્તિ લે છે.</string>
+    <string name="dejavu_actions_bar_hint">પૃષ્ઠોની નીચેનાં બટનો. તમે જે પૃષ્ઠ પર છો તેના પર તે કામ કરે છે.</string>
+    <string name="dejavu_actions_bar_all_added">દરેક બટન પહેલેથી જ બારમાં છે.</string>
     <string name="dejavu_more_menu_row">પંક્તિ %1$d</string>
     <string name="dejavu_more_menu_add_item">બટન ઉમેરો</string>
     <string name="dejavu_more_menu_add_row">પંક્તિ ઉમેરો</string>
@@ -276,6 +295,22 @@
     <string name="dejavu_container_work">કામ</string>
     <string name="dejavu_container_banking">બૅન્કિંગ</string>
     <string name="dejavu_container_shopping">ખરીદી</string>
+    <string name="dejavu_history_group_by">શેના આધારે જૂથ બનાવવા</string>
+    <string name="dejavu_history_group_by_date">તારીખ</string>
+    <string name="dejavu_history_group_by_workspace">વર્કસ્પેસ</string>
+    <string name="dejavu_history_group_by_folder">વર્કસ્પેસ અને ફોલ્ડર</string>
+    <string name="dejavu_history_other_pages">અન્ય પૃષ્ઠો</string>
+    <string name="dejavu_settings_tab_sleep">સ્લીપ મોડમાંની ટૅબ્સ</string>
+    <string name="dejavu_settings_tab_sleep_summary">તમે ઉપયોગ ન કરતા હો તે ટૅબ્સ મેમરી ખાલી કરવા સ્લીપ મોડમાં જાય છે</string>
+    <string name="dejavu_tab_sleep_hint">સ્લીપ મોડમાંની ટૅબ પોતાની મેમરી ખાલી કરે છે અને તમે તેને ખોલો ત્યારે તેનું પૃષ્ઠ ફરીથી લોડ કરે છે. તમે જે ટૅબ જોઈ રહ્યા છો, સ્પ્લિટ વ્યૂમાં તેની બાજુની ટૅબ અને અવાજ વગાડતી અથવા કેમેરા કે માઇક્રોફોનનો ઉપયોગ કરતી ટૅબ્સ સક્રિય રહે છે. Dejavu બેકગ્રાઉન્ડમાં હોય ત્યારે Android ને મેમરીની જરૂર પડે, તો તમે છેલ્લે વાપરેલી બે ટૅબ્સ સિવાયની દરેક ટૅબ સ્લીપ મોડમાં જાય છે.</string>
+    <string name="dejavu_tab_sleep_when">ટૅબને સ્લીપ મોડમાં મૂકો</string>
+    <plurals name="dejavu_tab_sleep_after_minutes">
+        <item quantity="one">ઉપયોગ વિના %d મિનિટ પછી</item>
+        <item quantity="other">ઉપયોગ વિના %d મિનિટ પછી</item>
+    </plurals>
+    <string name="dejavu_tab_sleep_after_hour">ઉપયોગ વિના એક કલાક પછી</string>
+    <string name="dejavu_tab_sleep_never">ક્યારેય નહીં</string>
+    <string name="dejavu_startup_crash_body">%1$s ખોલવામાં સમસ્યા આવી. બ્રાઉઝિંગ ચાલુ રાખવા માટે તેને ફરીથી ખોલો.</string>
     <string name="dejavu_sync_normal_tabs">પિન ન કરેલી ટૅબ્સનો સમાવેશ કરો</string>
     <string name="dejavu_sync_normal_tabs_summary">તે દરેક વર્કસ્પેસની અન્ય ટૅબ્સને પણ સમન્વયિત કરે છે, ફક્ત પિન કરેલી ટૅબ્સ અને ફોલ્ડર્સને જ નહીં. જ્યારે તેનો પોતાનો પિન ન કરેલી ટૅબ્સનો સમાવેશ કરો વિકલ્પ ચાલુ હોય, ત્યારે Zen તેમને સમન્વયિત કરે છે.</string>
 </resources>

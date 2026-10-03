@@ -1,1 +1,1 @@
-Dejavu esimene väljalase, rahulik Firefoxil põhinev brauser. Tööruumid, konteinerid, kinnitatud kaardid, olulised, kaustad ja jagatud vaade. Sünkroonib Zen Browseriga sinu Mozilla konto kaudu. Vaikimisi privaatne: telemeetriat pole.
+Dejavu esimene väljalase: sõltumatu brauser, mis on ehitatud Mozilla Firefoxi avatud lähtekoodist, kuid mida Mozilla ei ole loonud ega heaks kiitnud. Tööruumid, konteinerid, kinnitatud kaardid, olulised, kaustad ja jagatud vaade. Sünkroonib Zen Browseriga sinu Mozilla konto kaudu. Vaikimisi privaatne: telemeetriat pole.

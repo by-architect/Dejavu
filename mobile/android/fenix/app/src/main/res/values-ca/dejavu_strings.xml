@@ -47,6 +47,11 @@
     <string name="dejavu_folder_rename">Reanomena la carpeta</string>
     <string name="dejavu_folder_unpack">Desempaqueta la carpeta</string>
     <string name="dejavu_folder_top_level">Pestanyes fixades, sense carpeta</string>
+    <plurals name="dejavu_folder_open_tabs">
+        <item quantity="one">%1$d pestanya oberta</item>
+        <item quantity="many">%1$d pestanyes obertes</item>
+        <item quantity="other">%1$d pestanyes obertes</item>
+    </plurals>
     <string name="dejavu_essentials_drop">Deixeu-ho anar aquí per afegir-ho als essencials</string>
     <string name="dejavu_essentials_full">Els essencials admeten fins a %1$d pestanyes</string>
     <string name="dejavu_temporary_by_default">Contenidors temporals per defecte</string>
@@ -88,7 +93,19 @@
     <string name="dejavu_action_remove_from_essentials">Treu dels essencials</string>
     <string name="dejavu_action_delete">Suprimeix</string>
     <string name="dejavu_settings_title">Dejavu</string>
+    <string name="dejavu_about_content">El %1$s és un navegador independent creat a partir del codi obert del Firefox i del GeckoView de Mozilla. Mozilla no el desenvolupa, no l\'avala ni li dona suport. El Firefox és una marca comercial de la Mozilla Foundation als Estats Units i en altres països.</string>
+    <string name="dejavu_about_source_code">Codi font</string>
     <string name="dejavu_settings_tab_actions">Accions de les pestanyes</string>
+    <string name="dejavu_settings_tab_actions_entry_summary">Una sola llista d\'accions, i on es mostra cadascuna</string>
+    <string name="dejavu_settings_tab_actions_hint">Totes les accions són en una sola llista, incloses les que afegiu vosaltres. Trieu on es mostra cadascuna: a les pestanyes fixades, a les pestanyes no fixades i a les carpetes, a la barra de les pestanyes seleccionades, al menú «Més» i a la barra d\'accions de sota les pàgines. Les accions sobre una carpeta arriben a totes les pestanyes que conté.</string>
+    <string name="dejavu_settings_where_actions_show">On es mostren les accions</string>
+    <string name="dejavu_settings_folders">Carpetes</string>
+    <string name="dejavu_settings_selection_bar">Barra de selecció</string>
+    <string name="dejavu_settings_folder_actions_hint">Trieu fins a %1$d botons per a les files de carpetes. Actuen sobre totes les pestanyes de la carpeta i de les seves subcarpetes.</string>
+    <string name="dejavu_settings_action_places_none">No es mostra enlloc</string>
+    <string name="dejavu_settings_action_place_unavailable">No hi fa res</string>
+    <string name="dejavu_settings_action_place_full">No hi queda espai</string>
+    <string name="dejavu_done">Fet</string>
     <string name="dejavu_settings_pinned_tabs">Pestanyes fixades</string>
     <string name="dejavu_settings_unpinned_tabs">Pestanyes no fixades</string>
     <string name="dejavu_settings_all_actions">Totes les accions</string>
@@ -185,6 +202,9 @@
     <string name="dejavu_actions_bar_search">Cerca</string>
     <string name="dejavu_actions_bar_home">Inici</string>
     <string name="dejavu_settings_more_menu_summary">La barra d\'accions de sota les pàgines i el menú que obre</string>
+    <string name="dejavu_more_menu_hint">Feu lliscar la barra d\'accions cap amunt, o la barra d\'adreces cap avall, per obrir el menú complet. Toqueu un botó per moure\'l o treure\'l. Les extensions sempre ocupen una fila sencera.</string>
+    <string name="dejavu_actions_bar_hint">Els botons de sota les pàgines. Actuen sobre la pàgina on sou.</string>
+    <string name="dejavu_actions_bar_all_added">Tots els botons ja són a la barra.</string>
     <string name="dejavu_more_menu_row">Fila %1$d</string>
     <string name="dejavu_more_menu_add_item">Afegeix un botó</string>
     <string name="dejavu_more_menu_add_row">Afegeix una fila</string>
@@ -223,6 +243,23 @@
     <string name="dejavu_container_work">Feina</string>
     <string name="dejavu_container_banking">Banca</string>
     <string name="dejavu_container_shopping">Compres</string>
+    <string name="dejavu_history_group_by">Agrupa per</string>
+    <string name="dejavu_history_group_by_date">Data</string>
+    <string name="dejavu_history_group_by_workspace">Espai de treball</string>
+    <string name="dejavu_history_group_by_folder">Espai de treball i carpeta</string>
+    <string name="dejavu_history_other_pages">Altres pàgines</string>
+    <string name="dejavu_settings_tab_sleep">Pestanyes adormides</string>
+    <string name="dejavu_settings_tab_sleep_summary">Les pestanyes que no feu servir s\'adormen per alliberar memòria</string>
+    <string name="dejavu_tab_sleep_hint">Una pestanya adormida allibera la seva memòria i torna a carregar la pàgina quan l\'obriu. La pestanya que esteu mirant, la que té al costat en vista dividida i les pestanyes que reprodueixen so o fan servir la càmera o el micròfon es mantenen despertes. Quan l\'Android necessita memòria mentre el Dejavu és en segon pla, s\'adormen totes les pestanyes excepte les dues darreres que heu fet servir.</string>
+    <string name="dejavu_tab_sleep_when">Adormir una pestanya</string>
+    <plurals name="dejavu_tab_sleep_after_minutes">
+        <item quantity="one">Després d\'%d minut sense ús</item>
+        <item quantity="many">Després de %d minuts sense ús</item>
+        <item quantity="other">Després de %d minuts sense ús</item>
+    </plurals>
+    <string name="dejavu_tab_sleep_after_hour">Després d\'una hora sense ús</string>
+    <string name="dejavu_tab_sleep_never">Mai</string>
+    <string name="dejavu_startup_crash_body">S\'ha produït un problema en obrir %1$s. Torneu-lo a obrir per continuar navegant.</string>
     <string name="dejavu_sync_normal_tabs">Inclou les pestanyes no fixades</string>
     <string name="dejavu_sync_normal_tabs_summary">També sincronitza la resta de pestanyes de cada espai de treball, no només les pestanyes fixades i les carpetes. El Zen les sincronitza quan la seva pròpia opció Inclou les pestanyes no fixades està activada.</string>
     <plurals name="dejavu_selection_count">

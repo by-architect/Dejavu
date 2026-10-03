@@ -1,1 +1,1 @@
-Eerste weergawe van Dejavu, 'n kalm blaaier gebaseer op Firefox. Werkruimtes, houers, vasgespelde oortjies, noodsaaklikhede, vouers en verdeelde aansig. Sinkroniseer met Zen Browser deur jou Mozilla-rekening. Privaat by verstek: geen telemetrie.
+Eerste weergawe van Dejavu, 'n onafhanklike blaaier gebou uit Mozilla se oopbron-Firefox-kode, nie deur Mozilla gemaak of onderskryf nie. Werkruimtes, houers, vasgespelde oortjies, noodsaaklikhede, vouers en verdeelde aansig. Sinkroniseer met Zen Browser deur jou Mozilla-rekening. Privaat by verstek: geen telemetrie.

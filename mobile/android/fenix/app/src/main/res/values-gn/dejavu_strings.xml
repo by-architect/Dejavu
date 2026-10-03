@@ -47,6 +47,10 @@
     <string name="dejavu_folder_rename">Emoambue karpeta réra</string>
     <string name="dejavu_folder_unpack">Embosorõ karpeta</string>
     <string name="dejavu_folder_top_level">Tendayke mboguapypyre, karpeta\'ỹre</string>
+    <plurals name="dejavu_folder_open_tabs">
+        <item quantity="one">%1$d tendayke ijurujáva</item>
+        <item quantity="other">%1$d tendayke ijurujáva</item>
+    </plurals>
     <string name="dejavu_essentials_drop">Emombo ko\'ápe embojuaju hağua umi iporãvévape</string>
     <string name="dejavu_essentials_full">Umi iporãvéva ohupyty peve %1$d tendayke</string>
     <string name="dejavu_temporary_by_default">Ryru temporal ijypygua</string>
@@ -88,7 +92,19 @@
     <string name="dejavu_action_remove_from_essentials">Mboguete umi iporãvévagui</string>
     <string name="dejavu_action_delete">Mboguete</string>
     <string name="dejavu_settings_title">Dejavu</string>
+    <string name="dejavu_about_content">%1$s ha\'e peteĩ kundahára ijeheguíva, ojejapóva Mozilla mba\'e Firefox ha GeckoView código ijurujávagui. Mozilla ndojapói, nomoneĩri ha noipytyvõi chupe. Firefox ha\'e Mozilla Foundation marca registrada Estados Unidos ha ambue tetãme.</string>
+    <string name="dejavu_about_source_code">Código ypygua</string>
     <string name="dejavu_settings_tab_actions">Tendayke rembiapo</string>
+    <string name="dejavu_settings_tab_actions_entry_summary">Peteĩ tysýi tembiapokuéragui, ha moõpa ojehechauka peteĩteĩ</string>
+    <string name="dejavu_settings_tab_actions_hint">Opaite tembiapo oĩ peteĩ tysýipe, umi rembojuajúva ndete avei. Eiporavo moõpa ojehechauka peteĩteĩ: tendayke mboguapypyrépe, tendayke mboguapy\'ỹva ha karpetakuérape, tendayke poravopyre barrape, Menu Ambuevépe ha tembiapo barra kuatiarogue guýpe. Tembiapo peteĩ karpetápe oguahẽ opa tendayke ipype oĩvape.</string>
+    <string name="dejavu_settings_where_actions_show">Moõpa ojehechauka tembiapokuéra</string>
+    <string name="dejavu_settings_folders">Karpetakuéra</string>
+    <string name="dejavu_settings_selection_bar">Poravorã barra</string>
+    <string name="dejavu_settings_folder_actions_hint">Eiporavo %1$d votã peve karpeta rembe\'ýpe g̃uarã. Omba\'apo opa tendayke oĩvare karpeta ha ikarpeta\'ikuéra pype.</string>
+    <string name="dejavu_settings_action_places_none">Ndojehechaukái mamove</string>
+    <string name="dejavu_settings_action_place_unavailable">Ndojapói mba\'eve upépe</string>
+    <string name="dejavu_settings_action_place_full">Ndaipóri pa\'ũ</string>
+    <string name="dejavu_done">Oĩma</string>
     <string name="dejavu_settings_pinned_tabs">Tendayke mboguapypyre</string>
     <string name="dejavu_settings_unpinned_tabs">Tendayke mboguapy\'ỹva</string>
     <string name="dejavu_settings_all_actions">Opaite tembiapo</string>
@@ -185,6 +201,9 @@
     <string name="dejavu_actions_bar_search">Eheka</string>
     <string name="dejavu_actions_bar_home">Óga</string>
     <string name="dejavu_settings_more_menu_summary">Pe tembiapo barra kuatiarogue guýpe ha pe menu ombojurujáva</string>
+    <string name="dejavu_more_menu_hint">Erova tembiapo barra yvate gotyo, térã kundaharape renda yvy gotyo, embojuruja hag̃ua menu tuichakue. Eikutu peteĩ votã emongu\'e térã emboguete hag̃ua. Jepysokue oipyhy tapiaite peteĩ tysỹi tuichakue.</string>
+    <string name="dejavu_actions_bar_hint">Umi votã kuatiarogue guýpe. Omba\'apo pe kuatiarogue reimehápe.</string>
+    <string name="dejavu_actions_bar_all_added">Opaite votã oĩma pe barrape.</string>
     <string name="dejavu_more_menu_row">Tysỹi %1$d</string>
     <string name="dejavu_more_menu_add_item">Embojuaju peteĩ votã</string>
     <string name="dejavu_more_menu_add_row">Embojuaju peteĩ tysỹi</string>
@@ -223,6 +242,22 @@
     <string name="dejavu_container_work">Tembiapo</string>
     <string name="dejavu_container_banking">Banko</string>
     <string name="dejavu_container_shopping">Jogua</string>
+    <string name="dejavu_history_group_by">Embyaty rupive</string>
+    <string name="dejavu_history_group_by_date">Arange</string>
+    <string name="dejavu_history_group_by_workspace">Tembiapo renda</string>
+    <string name="dejavu_history_group_by_folder">Tembiapo renda ha karpeta</string>
+    <string name="dejavu_history_other_pages">Ambue kuatiarogue</string>
+    <string name="dejavu_settings_tab_sleep">Tendayke okéva</string>
+    <string name="dejavu_settings_tab_sleep_summary">Umi tendayke ndereiporúiva oke omosãso hag̃ua mandu\'arenda</string>
+    <string name="dejavu_tab_sleep_hint">Peteĩ tendayke okéva omosãso imandu\'arenda ha ombopyahu ikuatiarogue rembojurujávo. Pe tendayke rehecháva, pe oĩva ijykére mokõi ojuehe pype ha umi tendayke ombopúva mba\'epu térã oiporúva ta\'ãnganohẽha térã ñe\'ẽatãha opyta opáy. Android oikotevẽ jave mandu\'arenda ha Dejavu oĩ jave tapykuépe, opaite tendayke oke, ndaha\'éi umi mokõi reiporu pahaitéva.</string>
+    <string name="dejavu_tab_sleep_when">Mboke tendayke</string>
+    <plurals name="dejavu_tab_sleep_after_minutes">
+        <item quantity="one">%d aravo\'i ojeporu\'ỹ rire</item>
+        <item quantity="other">%d aravo\'i ojeporu\'ỹ rire</item>
+    </plurals>
+    <string name="dejavu_tab_sleep_after_hour">Peteĩ aravo ojeporu\'ỹ rire</string>
+    <string name="dejavu_tab_sleep_never">Araka\'eve</string>
+    <string name="dejavu_startup_crash_body">Ojavy embojurujávo %1$s. Embojurujajey eikundaha hag̃ua gueteri.</string>
     <string name="dejavu_sync_normal_tabs">Embyaty tendayke ndoguapypyrei</string>
     <string name="dejavu_sync_normal_tabs_summary">Ombojoja avei ambue tendayke opa tembiapo rendagui, ndaha\'éi tendayke mboguapypyre ha karpeta año. Zen ombojoja chupekuéra tembiapo rendaguigua ijehegui heta Embyaty tendayke ndoguapypyrei hína myendypyre.</string>
     <plurals name="dejavu_selection_count">

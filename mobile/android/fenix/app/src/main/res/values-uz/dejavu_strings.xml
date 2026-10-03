@@ -47,6 +47,10 @@
     <string name="dejavu_folder_rename">Jild nomini o\'zgartirish</string>
     <string name="dejavu_folder_unpack">Jildni tarqatish</string>
     <string name="dejavu_folder_top_level">Mahkamlangan varaqlar, jildsiz</string>
+    <plurals name="dejavu_folder_open_tabs">
+        <item quantity="one">%1$d ochiq varaq</item>
+        <item quantity="other">%1$d ochiq varaq</item>
+    </plurals>
     <string name="dejavu_essentials_drop">Muhimlarga qo\'shish uchun bu yerga tashlang</string>
     <string name="dejavu_essentials_full">Muhimlar eng ko\'pi bilan %1$d varaqni sig\'diradi</string>
     <string name="dejavu_temporary_by_default">Odatiy bo\'yicha vaqtinchalik konteynerlar</string>
@@ -88,7 +92,19 @@
     <string name="dejavu_action_remove_from_essentials">Muhimlardan chiqarish</string>
     <string name="dejavu_action_delete">O\'chirish</string>
     <string name="dejavu_settings_title">Dejavu</string>
+    <string name="dejavu_about_content">%1$s — Mozilla-ning Firefox va GeckoView ochiq manba kodidan yig\'ilgan mustaqil brauzer. U Mozilla tomonidan yaratilmagan, ma\'qullanmagan va qo\'llab-quvvatlanmaydi. Firefox — Mozilla Foundation tashkilotining AQSH va boshqa mamlakatlardagi tovar belgisi.</string>
+    <string name="dejavu_about_source_code">Manba kodi</string>
     <string name="dejavu_settings_tab_actions">Varaq amallari</string>
+    <string name="dejavu_settings_tab_actions_entry_summary">Amallarning yagona ro\'yxati va har biri qayerda ko\'rinishi</string>
+    <string name="dejavu_settings_tab_actions_hint">Barcha amallar, jumladan o\'zingiz qo\'shganlari ham, bitta ro\'yxatda. Har biri qayerda ko\'rinishini tanlang: mahkamlangan varaqlarda, mahkamlanmagan varaqlarda va jildlarda, varaqlar tanlanganda chiqadigan panelda, «Ko\'proq» menyusida va sahifalar ostidagi amallar panelida. Jildga qo\'llangan amallar uning ichidagi har bir varaqqa ta\'sir qiladi.</string>
+    <string name="dejavu_settings_where_actions_show">Amallar ko\'rinadigan joylar</string>
+    <string name="dejavu_settings_folders">Jildlar</string>
+    <string name="dejavu_settings_selection_bar">Tanlash paneli</string>
+    <string name="dejavu_settings_folder_actions_hint">Jild qatorlari uchun eng ko\'pi bilan %1$d tugma tanlang. Ular jild va uning ichki jildlaridagi har bir varaqqa ta\'sir qiladi.</string>
+    <string name="dejavu_settings_action_places_none">Hech qayerda ko\'rsatilmaydi</string>
+    <string name="dejavu_settings_action_place_unavailable">Bu yerda ishlamaydi</string>
+    <string name="dejavu_settings_action_place_full">Joy qolmadi</string>
+    <string name="dejavu_done">Tayyor</string>
     <string name="dejavu_settings_pinned_tabs">Mahkamlangan varaqlar</string>
     <string name="dejavu_settings_unpinned_tabs">Mahkamlanmagan varaqlar</string>
     <string name="dejavu_settings_all_actions">Barcha amallar</string>
@@ -185,6 +201,9 @@
     <string name="dejavu_actions_bar_search">Qidirish</string>
     <string name="dejavu_actions_bar_home">Bosh sahifa</string>
     <string name="dejavu_settings_more_menu_summary">Sahifalar ostidagi amallar paneli va u ochadigan menyu</string>
+    <string name="dejavu_more_menu_hint">Butun menyuni ochish uchun amallar panelini yuqoriga yoki manzil panelini pastga suring. Tugmani surish yoki chiqarish uchun unga bosing. Kengaytmalar har doim butun qatorni egallaydi.</string>
+    <string name="dejavu_actions_bar_hint">Sahifalar ostidagi tugmalar. Ular siz turgan sahifaga ta\'sir qiladi.</string>
+    <string name="dejavu_actions_bar_all_added">Barcha tugmalar allaqachon panelda.</string>
     <string name="dejavu_more_menu_row">%1$d-qator</string>
     <string name="dejavu_more_menu_add_item">Tugma qo\'shish</string>
     <string name="dejavu_more_menu_add_row">Qator qo\'shish</string>
@@ -223,6 +242,22 @@
     <string name="dejavu_container_work">Ish</string>
     <string name="dejavu_container_banking">Bank</string>
     <string name="dejavu_container_shopping">Xarid</string>
+    <string name="dejavu_history_group_by">Guruhlash</string>
+    <string name="dejavu_history_group_by_date">Sana</string>
+    <string name="dejavu_history_group_by_workspace">Ish maydoni</string>
+    <string name="dejavu_history_group_by_folder">Ish maydoni va jild</string>
+    <string name="dejavu_history_other_pages">Boshqa sahifalar</string>
+    <string name="dejavu_settings_tab_sleep">Uxlayotgan varaqlar</string>
+    <string name="dejavu_settings_tab_sleep_summary">Foydalanmayotgan varaqlaringiz xotirani bo\'shatish uchun uxlaydi</string>
+    <string name="dejavu_tab_sleep_hint">Uxlayotgan varaq o\'z xotirasini bo\'shatadi va uni ochganingizda sahifani qayta yuklaydi. Siz ko\'rayotgan varaq, bo\'lingan ko\'rinishda uning yonidagi varaq hamda ovoz ijro etayotgan yoki kamera yoxud mikrofondan foydalanayotgan varaqlar uyg\'oq qoladi. Dejavu fonda ishlayotganda Android-ga xotira kerak bo\'lsa, oxirgi foydalangan ikki varaqingizdan boshqa barcha varaqlar uxlaydi.</string>
+    <string name="dejavu_tab_sleep_when">Varaqlarni uxlatish</string>
+    <plurals name="dejavu_tab_sleep_after_minutes">
+        <item quantity="one">%d daqiqa foydalanilmagandan keyin</item>
+        <item quantity="other">%d daqiqa foydalanilmagandan keyin</item>
+    </plurals>
+    <string name="dejavu_tab_sleep_after_hour">Bir soat foydalanilmagandan keyin</string>
+    <string name="dejavu_tab_sleep_never">Hech qachon</string>
+    <string name="dejavu_startup_crash_body">%1$s ochilayotganda muammo yuz berdi. Ko\'rishni davom ettirish uchun uni qayta oching.</string>
     <string name="dejavu_sync_normal_tabs">Mahkamlanmagan varaqlarni qo\'shish</string>
     <string name="dejavu_sync_normal_tabs_summary">Bundan tashqari, har bir ish maydonining boshqa varaqlarini ham sinxronlashtiradi, faqat mahkamlangan varaqlar va jildlarnigina emas. Zen o\'zining Mahkamlanmagan varaqlarni qo\'shish parametri yoqilganda ularni sinxronlashtiradi.</string>
     <plurals name="dejavu_selection_count">

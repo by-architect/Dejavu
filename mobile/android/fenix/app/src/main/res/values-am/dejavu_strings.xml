@@ -59,6 +59,10 @@
     <string name="dejavu_folder_rename">አቃፊውን እንደገና ሰይም</string>
     <string name="dejavu_folder_unpack">አቃፊውን ፍታ</string>
     <string name="dejavu_folder_top_level">የተሰኩ ትሮች፣ ያለ አቃፊ</string>
+    <plurals name="dejavu_folder_open_tabs">
+        <item quantity="one">%1$d ክፍት ትር</item>
+        <item quantity="other">%1$d ክፍት ትሮች</item>
+    </plurals>
     <string name="dejavu_essentials_drop">ወደ አስፈላጊዎች ለማከል እዚህ ይጣሉ</string>
     <string name="dejavu_essentials_full">አስፈላጊዎች እስከ %1$d ትሮች ድረስ ይይዛሉ</string>
     <string name="dejavu_temporary_by_default">ጊዜያዊ መያዣዎች በነባሪ</string>
@@ -104,7 +108,19 @@
     <string name="dejavu_action_remove_from_essentials">ከአስፈላጊዎች አስወግድ</string>
     <string name="dejavu_action_delete">ሰርዝ</string>
     <string name="dejavu_settings_title">Dejavu</string>
+    <string name="dejavu_about_content">%1$s ከMozilla ክፍት ምንጭ የFirefox እና የGeckoView ኮድ የተገነባ ራሱን የቻለ አሳሽ ነው። በMozilla የተሰራ፣ የጸደቀ ወይም የሚደገፍ አይደለም። Firefox በአሜሪካ እና በሌሎች አገሮች የMozilla Foundation የንግድ ምልክት ነው።</string>
+    <string name="dejavu_about_source_code">የምንጭ ኮድ</string>
     <string name="dejavu_settings_tab_actions">የትር እርምጃዎች</string>
+    <string name="dejavu_settings_tab_actions_entry_summary">አንድ የእርምጃዎች ዝርዝር፣ እና እያንዳንዱ የት እንደሚታይ</string>
+    <string name="dejavu_settings_tab_actions_hint">እርስዎ ራስዎ የሚያክሏቸውን ጨምሮ ሁሉም እርምጃዎች በአንድ ዝርዝር ውስጥ ናቸው። እያንዳንዱ የት እንደሚታይ ይምረጡ፦ በተሰኩ ትሮች፣ ባልተሰኩ ትሮች እና በአቃፊዎች ላይ፣ በተመረጡ ትሮች አሞሌ ውስጥ፣ በተጨማሪ ምናሌ ውስጥ እና ከገጾች በታች ባለው የእርምጃዎች አሞሌ ውስጥ። በአቃፊ ላይ ያሉ እርምጃዎች በውስጡ ያለውን እያንዳንዱን ትር ይደርሳሉ።</string>
+    <string name="dejavu_settings_where_actions_show">እርምጃዎች የሚታዩበት ቦታ</string>
+    <string name="dejavu_settings_folders">አቃፊዎች</string>
+    <string name="dejavu_settings_selection_bar">የምርጫ አሞሌ</string>
+    <string name="dejavu_settings_folder_actions_hint">ለአቃፊ ረድፎች እስከ %1$d አዝራሮች ይምረጡ። በአቃፊው እና በንዑስ አቃፊዎቹ ውስጥ ባለው እያንዳንዱ ትር ላይ ይሰራሉ።</string>
+    <string name="dejavu_settings_action_places_none">የትም አይታይም</string>
+    <string name="dejavu_settings_action_place_unavailable">እዚያ ምንም አያደርግም</string>
+    <string name="dejavu_settings_action_place_full">ቦታ አልቀረም</string>
+    <string name="dejavu_done">ተከናውኗል</string>
     <string name="dejavu_settings_pinned_tabs">የተሰኩ ትሮች</string>
     <string name="dejavu_settings_unpinned_tabs">ያልተሰኩ ትሮች</string>
     <string name="dejavu_settings_all_actions">ሁሉም እርምጃዎች</string>
@@ -205,6 +221,9 @@
     <string name="dejavu_actions_bar_search">ፈልግ</string>
     <string name="dejavu_actions_bar_home">መነሻ</string>
     <string name="dejavu_settings_more_menu_summary">ከገጾች በታች ያለው የእርምጃዎች አሞሌ እና የሚከፍተው ምናሌ</string>
+    <string name="dejavu_more_menu_hint">ሙሉውን ምናሌ ለመክፈት የእርምጃዎች አሞሌውን ወደ ላይ፣ ወይም የአድራሻ አሞሌውን ወደ ታች ያንሸራትቱ። አንድን አዝራር ለማንቀሳቀስ ወይም ለማስወገድ ይንኩት። ቅጥያዎች ሁልጊዜ አንድ ሙሉ ረድፍ ይይዛሉ።</string>
+    <string name="dejavu_actions_bar_hint">ከገጾች በታች ያሉት አዝራሮች። ባሉበት ገጽ ላይ ይሰራሉ።</string>
+    <string name="dejavu_actions_bar_all_added">ሁሉም አዝራሮች ቀድሞውኑ በአሞሌው ውስጥ አሉ።</string>
     <string name="dejavu_more_menu_row">ረድፍ %1$d</string>
     <string name="dejavu_more_menu_add_item">አዝራር አክል</string>
     <string name="dejavu_more_menu_add_row">ረድፍ አክል</string>
@@ -243,6 +262,22 @@
     <string name="dejavu_container_work">ስራ</string>
     <string name="dejavu_container_banking">ባንክ</string>
     <string name="dejavu_container_shopping">ግብይት</string>
+    <string name="dejavu_history_group_by">ቧድን በ</string>
+    <string name="dejavu_history_group_by_date">ቀን</string>
+    <string name="dejavu_history_group_by_workspace">የስራ ቦታ</string>
+    <string name="dejavu_history_group_by_folder">የስራ ቦታ እና አቃፊ</string>
+    <string name="dejavu_history_other_pages">ሌሎች ገጾች</string>
+    <string name="dejavu_settings_tab_sleep">የተኙ ትሮች</string>
+    <string name="dejavu_settings_tab_sleep_summary">የማይጠቀሙባቸው ትሮች ማህደረ ትውስታን ለማስለቀቅ ይተኛሉ</string>
+    <string name="dejavu_tab_sleep_hint">የተኛ ትር ማህደረ ትውስታውን ያስለቅቃል፣ ሲከፍቱትም ገጹን እንደገና ይጭናል። እየተመለከቱት ያለው ትር፣ በተከፈለ እይታ ውስጥ ከጎኑ ያለው ትር፣ እና ድምፅ የሚያጫውቱ ወይም ካሜራውን ወይም ማይክሮፎኑን የሚጠቀሙ ትሮች ነቅተው ይቆያሉ። Dejavu ከበስተጀርባ እያለ Android ማህደረ ትውስታ ሲያስፈልገው፣ መጨረሻ ከተጠቀሙባቸው ሁለት ትሮች በስተቀር ሁሉም ትሮች ይተኛሉ።</string>
+    <string name="dejavu_tab_sleep_when">ትርን አስተኛ</string>
+    <plurals name="dejavu_tab_sleep_after_minutes">
+        <item quantity="one">ጥቅም ላይ ሳይውል ከ%d ደቂቃ በኋላ</item>
+        <item quantity="other">ጥቅም ላይ ሳይውል ከ%d ደቂቃዎች በኋላ</item>
+    </plurals>
+    <string name="dejavu_tab_sleep_after_hour">ጥቅም ላይ ሳይውል ከአንድ ሰዓት በኋላ</string>
+    <string name="dejavu_tab_sleep_never">በፍጹም</string>
+    <string name="dejavu_startup_crash_body">%1$sን ሲከፍቱ ችግር አጋጥሟል። ማሰስዎን ለመቀጠል እንደገና ይክፈቱት።</string>
     <string name="dejavu_sync_normal_tabs">ያልተሰኩ ትሮችን አካትት</string>
     <string name="dejavu_sync_normal_tabs_summary">እንዲሁም እያንዳንዱ የስራ ቦታ ውስጥ ያሉ ሌሎች ትሮችን ያመሳስላል፤ የተሰኩ ትሮችን እና አቃፊዎችን ብቻ ሳይሆን። የራሱ «ያልተሰኩ ትሮችን አካትት» የሚለው አማራጭ በሚበራበት ጊዜ Zen እነሱን ያመሳስላል።</string>
 </resources>

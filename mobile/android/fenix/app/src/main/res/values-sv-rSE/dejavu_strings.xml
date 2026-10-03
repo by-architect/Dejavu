@@ -47,6 +47,10 @@
     <string name="dejavu_folder_rename">Byt namn på mapp</string>
     <string name="dejavu_folder_unpack">Packa upp mapp</string>
     <string name="dejavu_folder_top_level">Fästa flikar, ingen mapp</string>
+    <plurals name="dejavu_folder_open_tabs">
+        <item quantity="one">%1$d öppen flik</item>
+        <item quantity="other">%1$d öppna flikar</item>
+    </plurals>
     <string name="dejavu_essentials_drop">Släpp här för att lägga till i Favoriter</string>
     <string name="dejavu_essentials_full">Favoriter rymmer upp till %1$d flikar</string>
     <string name="dejavu_temporary_by_default">Tillfälliga behållare som standard</string>
@@ -88,7 +92,19 @@
     <string name="dejavu_action_remove_from_essentials">Ta bort från Favoriter</string>
     <string name="dejavu_action_delete">Ta bort</string>
     <string name="dejavu_settings_title">Dejavu</string>
+    <string name="dejavu_about_content">%1$s är en oberoende webbläsare byggd från Mozillas öppna källkod för Firefox och GeckoView. Den är inte skapad, godkänd eller stödd av Mozilla. Firefox är ett varumärke som tillhör Mozilla Foundation i USA och andra länder.</string>
+    <string name="dejavu_about_source_code">Källkod</string>
     <string name="dejavu_settings_tab_actions">Flikåtgärder</string>
+    <string name="dejavu_settings_tab_actions_entry_summary">En lista med åtgärder och var varje åtgärd visas</string>
+    <string name="dejavu_settings_tab_actions_hint">Alla åtgärder finns i en lista, även de du lägger till själv. Välj var varje åtgärd ska visas: på fästa flikar, ej fästa flikar och mappar, i fältet för markerade flikar, i Mer-menyn och i åtgärdsfältet under sidor. Åtgärder på en mapp gäller alla flikar i den.</string>
+    <string name="dejavu_settings_where_actions_show">Var åtgärder visas</string>
+    <string name="dejavu_settings_folders">Mappar</string>
+    <string name="dejavu_settings_selection_bar">Markeringsfält</string>
+    <string name="dejavu_settings_folder_actions_hint">Välj upp till %1$d knappar för rader med mappar. De verkar på alla flikar i mappen och dess undermappar.</string>
+    <string name="dejavu_settings_action_places_none">Visas ingenstans</string>
+    <string name="dejavu_settings_action_place_unavailable">Gör ingenting där</string>
+    <string name="dejavu_settings_action_place_full">Inget utrymme kvar</string>
+    <string name="dejavu_done">Klar</string>
     <string name="dejavu_settings_pinned_tabs">Fästa flikar</string>
     <string name="dejavu_settings_unpinned_tabs">Ej fästa flikar</string>
     <string name="dejavu_settings_all_actions">Alla åtgärder</string>
@@ -185,6 +201,9 @@
     <string name="dejavu_actions_bar_search">Sök</string>
     <string name="dejavu_actions_bar_home">Hem</string>
     <string name="dejavu_settings_more_menu_summary">Åtgärdsfältet under sidor och menyn det öppnar</string>
+    <string name="dejavu_more_menu_hint">Svep åtgärdsfältet uppåt, eller adressfältet nedåt, för att öppna hela menyn. Tryck på en knapp för att flytta eller ta bort den. Tillägg tar alltid upp en hel rad.</string>
+    <string name="dejavu_actions_bar_hint">Knapparna under sidor. De verkar på sidan du är på.</string>
+    <string name="dejavu_actions_bar_all_added">Alla knappar finns redan i fältet.</string>
     <string name="dejavu_more_menu_row">Rad %1$d</string>
     <string name="dejavu_more_menu_add_item">Lägg till en knapp</string>
     <string name="dejavu_more_menu_add_row">Lägg till en rad</string>
@@ -223,6 +242,22 @@
     <string name="dejavu_container_work">Jobb</string>
     <string name="dejavu_container_banking">Bank</string>
     <string name="dejavu_container_shopping">Shopping</string>
+    <string name="dejavu_history_group_by">Gruppera efter</string>
+    <string name="dejavu_history_group_by_date">Datum</string>
+    <string name="dejavu_history_group_by_workspace">Arbetsyta</string>
+    <string name="dejavu_history_group_by_folder">Arbetsyta och mapp</string>
+    <string name="dejavu_history_other_pages">Andra sidor</string>
+    <string name="dejavu_settings_tab_sleep">Vilande flikar</string>
+    <string name="dejavu_settings_tab_sleep_summary">Flikar du inte använder försätts i vila för att frigöra minne</string>
+    <string name="dejavu_tab_sleep_hint">En vilande flik frigör sitt minne och laddar om sin sida när du öppnar den. Fliken du tittar på, den bredvid i delad vy och flikar som spelar upp ljud eller använder kameran eller mikrofonen förblir vakna. När Android behöver minne medan Dejavu är i bakgrunden försätts alla flikar utom de två du använde senast i vila.</string>
+    <string name="dejavu_tab_sleep_when">Försätt en flik i vila</string>
+    <plurals name="dejavu_tab_sleep_after_minutes">
+        <item quantity="one">Efter %d minut utan användning</item>
+        <item quantity="other">Efter %d minuter utan användning</item>
+    </plurals>
+    <string name="dejavu_tab_sleep_after_hour">Efter en timme utan användning</string>
+    <string name="dejavu_tab_sleep_never">Aldrig</string>
+    <string name="dejavu_startup_crash_body">Det uppstod ett problem när %1$s skulle öppnas. Öppna appen igen för att fortsätta surfa.</string>
     <string name="dejavu_sync_normal_tabs">Inkludera ofästa flikar</string>
     <string name="dejavu_sync_normal_tabs_summary">Synkroniserar även de andra flikarna i varje arbetsyta, inte bara fästa flikar och mappar. Zen synkroniserar dem när dess egen inställning Inkludera ofästa flikar är på.</string>
     <plurals name="dejavu_selection_count">

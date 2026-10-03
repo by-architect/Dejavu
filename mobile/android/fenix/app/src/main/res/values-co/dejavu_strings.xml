@@ -47,6 +47,10 @@
     <string name="dejavu_folder_rename">Rinuminà u cartulare</string>
     <string name="dejavu_folder_unpack">Spacchittà u cartulare</string>
     <string name="dejavu_folder_top_level">Unghjette fissate, senza cartulare</string>
+    <plurals name="dejavu_folder_open_tabs">
+        <item quantity="one">%1$d unghjetta aperta</item>
+        <item quantity="other">%1$d unghjette aperte</item>
+    </plurals>
     <string name="dejavu_essentials_drop">Lascia quì per aghjunghje à l\'essenziali</string>
     <string name="dejavu_essentials_full">L\'essenziali cuntenenu finu à %1$d unghjette</string>
     <string name="dejavu_temporary_by_default">Cuntenitori timpurarii per difettu</string>
@@ -88,7 +92,19 @@
     <string name="dejavu_action_remove_from_essentials">Caccià da l\'essenziali</string>
     <string name="dejavu_action_delete">Squassà</string>
     <string name="dejavu_settings_title">Dejavu</string>
+    <string name="dejavu_about_content">%1$s hè un navigatore indipendente custruitu à partesi da u codice di fonte aperta di Firefox è di GeckoView di Mozilla. Ùn hè micca fattu, appruvatu nè sustenutu da Mozilla. Firefox hè una marca di a Mozilla Foundation in i Stati Uniti è in d\'altri paesi.</string>
+    <string name="dejavu_about_source_code">Codice fonte</string>
     <string name="dejavu_settings_tab_actions">Azzioni di l\'unghjette</string>
+    <string name="dejavu_settings_tab_actions_entry_summary">Una sola lista d\'azzioni, è induve ognuna s\'affissa</string>
+    <string name="dejavu_settings_tab_actions_hint">Tutte l\'azzioni sò in una sola lista, cumprese quelle ch\'è vo aghjunghjite. Sceglie induve ognuna s\'affissa: nant\'à l\'unghjette fissate, l\'unghjette micca fissate è i cartulari, in a barra di l\'unghjette selezziunate, in u menu Più è in a barra d\'azzioni sottu à e pagine. L\'azzioni nant\'à un cartulare ghjunghjenu ogni unghjetta ch\'ellu cuntene.</string>
+    <string name="dejavu_settings_where_actions_show">Induve s\'affissanu l\'azzioni</string>
+    <string name="dejavu_settings_folders">Cartulari</string>
+    <string name="dejavu_settings_selection_bar">Barra di selezzione</string>
+    <string name="dejavu_settings_folder_actions_hint">Sceglie finu à %1$d buttoni per e linee di cartulari. Agiscenu nant\'à ogni unghjetta di u cartulare è di i so sottucartulari.</string>
+    <string name="dejavu_settings_action_places_none">Ùn s\'affissa in nisun locu</string>
+    <string name="dejavu_settings_action_place_unavailable">Quì ùn face nunda</string>
+    <string name="dejavu_settings_action_place_full">Ùn ci hè più piazza</string>
+    <string name="dejavu_done">Compiu</string>
     <string name="dejavu_settings_pinned_tabs">Unghjette fissate</string>
     <string name="dejavu_settings_unpinned_tabs">Unghjette micca fissate</string>
     <string name="dejavu_settings_all_actions">Tutte l\'azzioni</string>
@@ -185,6 +201,9 @@
     <string name="dejavu_actions_bar_search">Ricercà</string>
     <string name="dejavu_actions_bar_home">Accolta</string>
     <string name="dejavu_settings_more_menu_summary">A barra d\'azzioni sottu à e pagine è u menu ch\'ella apre</string>
+    <string name="dejavu_more_menu_hint">Fate sguillà a barra d\'azzioni in su, o a barra d\'indirizzu in ghjò, per apre u menu sanu. Picchjate nant\'à un buttone per dispiazzà lu o caccià lu. L\'estensioni piglianu sempre una linea sana.</string>
+    <string name="dejavu_actions_bar_hint">I buttoni sottu à e pagine. Agiscenu nant\'à a pagina induve vo site.</string>
+    <string name="dejavu_actions_bar_all_added">Ogni buttone hè digià in a barra.</string>
     <string name="dejavu_more_menu_row">Linea %1$d</string>
     <string name="dejavu_more_menu_add_item">Aghjunghje un buttone</string>
     <string name="dejavu_more_menu_add_row">Aghjunghje una linea</string>
@@ -223,6 +242,22 @@
     <string name="dejavu_container_work">Travagliu</string>
     <string name="dejavu_container_banking">Banca</string>
     <string name="dejavu_container_shopping">Compre</string>
+    <string name="dejavu_history_group_by">Raggruppà per</string>
+    <string name="dejavu_history_group_by_date">Data</string>
+    <string name="dejavu_history_group_by_workspace">Spaziu di travagliu</string>
+    <string name="dejavu_history_group_by_folder">Spaziu di travagliu è cartulare</string>
+    <string name="dejavu_history_other_pages">Altre pagine</string>
+    <string name="dejavu_settings_tab_sleep">Unghjette addurmintate</string>
+    <string name="dejavu_settings_tab_sleep_summary">L\'unghjette ch\'è vo ùn aduprate micca s\'addurmentanu per liberà a memoria</string>
+    <string name="dejavu_tab_sleep_hint">Un\'unghjetta addurmintata libera a so memoria è ricarica a so pagina quandu vo l\'aprite. L\'unghjetta ch\'è vo fighjate, quella accantu in vista spartuta è l\'unghjette chì sonanu o chì adopranu l\'apparechju-fotò o u microfonu fermanu attive. Quandu Android hà bisognu di memoria mentre chì Dejavu hè in sfondu, tutte l\'unghjette fora di l\'ultime duie ch\'è vo avete adupratu s\'addurmentanu.</string>
+    <string name="dejavu_tab_sleep_when">Addurmintà un\'unghjetta</string>
+    <plurals name="dejavu_tab_sleep_after_minutes">
+        <item quantity="one">Dopu à %d minutu senza usu</item>
+        <item quantity="other">Dopu à %d minuti senza usu</item>
+    </plurals>
+    <string name="dejavu_tab_sleep_after_hour">Dopu à un\'ora senza usu</string>
+    <string name="dejavu_tab_sleep_never">Mai</string>
+    <string name="dejavu_startup_crash_body">Un prublema hè accadutu à l\'apertura di %1$s. Riapritelu per cuntinuà à navigà.</string>
     <string name="dejavu_sync_normal_tabs">Include l\'unghjette micca fissate</string>
     <string name="dejavu_sync_normal_tabs_summary">Sincronizeghja ancu l\'altre unghjette di ugni spaziu di travagliu, micca solu l\'unghjette fissate è i cartulari. Zen e sincronizeghja quandu a so propria funzione Include l\'unghjette micca fissate hè attivata.</string>
     <plurals name="dejavu_selection_count">

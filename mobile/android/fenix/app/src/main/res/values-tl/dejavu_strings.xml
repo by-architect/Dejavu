@@ -47,6 +47,10 @@
     <string name="dejavu_folder_rename">Palitan ang pangalan ng folder</string>
     <string name="dejavu_folder_unpack">Kalasin ang folder</string>
     <string name="dejavu_folder_top_level">Mga naka-pin na tab, walang folder</string>
+    <plurals name="dejavu_folder_open_tabs">
+        <item quantity="one">%1$d bukas na tab</item>
+        <item quantity="other">%1$d bukas na tab</item>
+    </plurals>
     <string name="dejavu_essentials_drop">Ihulog dito para idagdag sa Mahahalaga</string>
     <string name="dejavu_essentials_full">Kasya sa Mahahalaga ang hanggang %1$d na tab</string>
     <string name="dejavu_temporary_by_default">Pansamantalang container bilang default</string>
@@ -88,7 +92,19 @@
     <string name="dejavu_action_remove_from_essentials">Alisin sa Mahahalaga</string>
     <string name="dejavu_action_delete">Tanggalin</string>
     <string name="dejavu_settings_title">Dejavu</string>
+    <string name="dejavu_about_content">Ang %1$s ay isang independiyenteng browser na binuo mula sa open source na code ng Firefox at GeckoView ng Mozilla. Hindi ito gawa, inendorso, o sinusuportahan ng Mozilla. Ang Firefox ay isang trademark ng Mozilla Foundation sa U.S. at iba pang bansa.</string>
+    <string name="dejavu_about_source_code">Source code</string>
     <string name="dejavu_settings_tab_actions">Mga aksyon ng tab</string>
+    <string name="dejavu_settings_tab_actions_entry_summary">Iisang listahan ng mga aksyon, at kung saan lumalabas ang bawat isa</string>
+    <string name="dejavu_settings_tab_actions_hint">Nasa iisang listahan ang lahat ng aksyon, kasama ang mga idinagdag mo mismo. Piliin kung saan lalabas ang bawat isa: sa mga naka-pin na tab, hindi naka-pin na tab at folder, sa bar ng mga napiling tab, sa Karagdagang menu, at sa bar ng mga aksyon sa ibaba ng mga page. Ang mga aksyon sa isang folder ay umaabot sa bawat tab sa loob nito.</string>
+    <string name="dejavu_settings_where_actions_show">Kung saan lumalabas ang mga aksyon</string>
+    <string name="dejavu_settings_folders">Mga Folder</string>
+    <string name="dejavu_settings_selection_bar">Bar ng pagpili</string>
+    <string name="dejavu_settings_folder_actions_hint">Pumili ng hanggang %1$d na button para sa hilera ng folder. Gumagana ang mga ito sa bawat tab sa loob ng folder at ng mga subfolder nito.</string>
+    <string name="dejavu_settings_action_places_none">Hindi ipinapakita kahit saan</string>
+    <string name="dejavu_settings_action_place_unavailable">Walang ginagawa roon</string>
+    <string name="dejavu_settings_action_place_full">Wala nang puwang</string>
+    <string name="dejavu_done">Tapos na</string>
     <string name="dejavu_settings_pinned_tabs">Mga naka-pin na tab</string>
     <string name="dejavu_settings_unpinned_tabs">Mga hindi naka-pin na tab</string>
     <string name="dejavu_settings_all_actions">Lahat ng aksyon</string>
@@ -185,6 +201,9 @@
     <string name="dejavu_actions_bar_search">Maghanap</string>
     <string name="dejavu_actions_bar_home">Home</string>
     <string name="dejavu_settings_more_menu_summary">Ang bar ng mga aksyon sa ibaba ng mga page at ang menu na binubuksan nito</string>
+    <string name="dejavu_more_menu_hint">I-swipe pataas ang bar ng mga aksyon, o pababa ang address bar, para buksan ang buong menu. I-tap ang isang button para ilipat o alisin ito. Laging sumasakop ng buong hilera ang mga extension.</string>
+    <string name="dejavu_actions_bar_hint">Ang mga button sa ibaba ng mga page. Gumagana ang mga ito sa page na kinaroroonan mo.</string>
+    <string name="dejavu_actions_bar_all_added">Nasa bar na ang bawat button.</string>
     <string name="dejavu_more_menu_row">Hilera %1$d</string>
     <string name="dejavu_more_menu_add_item">Magdagdag ng button</string>
     <string name="dejavu_more_menu_add_row">Magdagdag ng hilera</string>
@@ -223,6 +242,22 @@
     <string name="dejavu_container_work">Trabaho</string>
     <string name="dejavu_container_banking">Pagbabangko</string>
     <string name="dejavu_container_shopping">Pamimili</string>
+    <string name="dejavu_history_group_by">Igrupo ayon sa</string>
+    <string name="dejavu_history_group_by_date">Petsa</string>
+    <string name="dejavu_history_group_by_workspace">Workspace</string>
+    <string name="dejavu_history_group_by_folder">Workspace at folder</string>
+    <string name="dejavu_history_other_pages">Iba pang page</string>
+    <string name="dejavu_settings_tab_sleep">Mga natutulog na tab</string>
+    <string name="dejavu_settings_tab_sleep_summary">Natutulog ang mga tab na hindi mo ginagamit para magbakante ng memory</string>
+    <string name="dejavu_tab_sleep_hint">Binabakante ng natutulog na tab ang memory nito at nilo-load muli ang page nito kapag binuksan mo ito. Mananatiling gising ang tab na tinitingnan mo, ang katabi nito sa split view, at ang mga tab na nagpapatugtog ng tunog o gumagamit ng camera o mikropono. Kapag kailangan ng Android ng memory habang nasa background ang Dejavu, matutulog ang lahat ng tab maliban sa dalawang huli mong ginamit.</string>
+    <string name="dejavu_tab_sleep_when">Patulugin ang tab</string>
+    <plurals name="dejavu_tab_sleep_after_minutes">
+        <item quantity="one">Pagkatapos ng %d minutong hindi ginagamit</item>
+        <item quantity="other">Pagkatapos ng %d minutong hindi ginagamit</item>
+    </plurals>
+    <string name="dejavu_tab_sleep_after_hour">Pagkatapos ng isang oras na hindi ginagamit</string>
+    <string name="dejavu_tab_sleep_never">Hindi kailanman</string>
+    <string name="dejavu_startup_crash_body">Nagkaproblema sa pagbukas ng %1$s. Buksan itong muli para magpatuloy sa pag-browse.</string>
     <string name="dejavu_sync_normal_tabs">Isama ang mga tab na hindi naka-pin</string>
     <string name="dejavu_sync_normal_tabs_summary">Isini-sync din nito ang iba pang tab ng bawat workspace, hindi lang ang mga naka-pin na tab at folder. Isini-sync ito ni Zen kapag naka-on ang sarili nitong opsyon na Isama ang mga tab na hindi naka-pin.</string>
     <plurals name="dejavu_selection_count">

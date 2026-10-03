@@ -47,6 +47,12 @@
     <string name="dejavu_folder_rename">Pervadinti aplanką</string>
     <string name="dejavu_folder_unpack">Išskleisti aplanką</string>
     <string name="dejavu_folder_top_level">Prisegtos kortelės, be aplanko</string>
+    <plurals name="dejavu_folder_open_tabs">
+        <item quantity="one">%1$d atverta kortelė</item>
+        <item quantity="few">%1$d atvertos kortelės</item>
+        <item quantity="many">%1$d atvertos kortelės</item>
+        <item quantity="other">%1$d atvertų kortelių</item>
+    </plurals>
     <string name="dejavu_essentials_drop">Nuvilkite čia, kad pridėtumėte prie Mėgstamiausių</string>
     <string name="dejavu_essentials_full">Mėgstamiausi talpina iki %1$d kortelių</string>
     <string name="dejavu_temporary_by_default">Laikinieji konteineriai kaip numatytieji</string>
@@ -88,7 +94,19 @@
     <string name="dejavu_action_remove_from_essentials">Pašalinti iš Mėgstamiausių</string>
     <string name="dejavu_action_delete">Ištrinti</string>
     <string name="dejavu_settings_title">Dejavu</string>
+    <string name="dejavu_about_content">%1$s – nepriklausoma naršyklė, sukurta iš atvirojo Mozilla Firefox ir GeckoView kodo. Mozilla jos nekuria, nerekomenduoja ir nepalaiko. Firefox yra Mozilla Foundation prekių ženklas JAV ir kitose šalyse.</string>
+    <string name="dejavu_about_source_code">Pirminis kodas</string>
     <string name="dejavu_settings_tab_actions">Kortelių veiksmai</string>
+    <string name="dejavu_settings_tab_actions_entry_summary">Vienas veiksmų sąrašas ir kur rodomas kiekvienas veiksmas</string>
+    <string name="dejavu_settings_tab_actions_hint">Visi veiksmai yra viename sąraše, įskaitant tuos, kuriuos pridedate patys. Pasirinkite, kur rodyti kiekvieną veiksmą: prisegtose kortelėse, neprisegtose kortelėse ir aplankuose, pažymėtų kortelių juostoje, meniu „Daugiau“ ir veiksmų juostoje po puslapiais. Aplanko veiksmai taikomi kiekvienai jame esančiai kortelei.</string>
+    <string name="dejavu_settings_where_actions_show">Kur rodomi veiksmai</string>
+    <string name="dejavu_settings_folders">Aplankai</string>
+    <string name="dejavu_settings_selection_bar">Žymėjimo juosta</string>
+    <string name="dejavu_settings_folder_actions_hint">Pasirinkite iki %1$d mygtukų aplankų eilutėms. Jie taikomi kiekvienai aplanko ir jo poaplankių kortelei.</string>
+    <string name="dejavu_settings_action_places_none">Niekur nerodomas</string>
+    <string name="dejavu_settings_action_place_unavailable">Ten neveikia</string>
+    <string name="dejavu_settings_action_place_full">Nebėra vietos</string>
+    <string name="dejavu_done">Atlikta</string>
     <string name="dejavu_settings_pinned_tabs">Prisegtos kortelės</string>
     <string name="dejavu_settings_unpinned_tabs">Neprisegtos kortelės</string>
     <string name="dejavu_settings_all_actions">Visi veiksmai</string>
@@ -185,6 +203,9 @@
     <string name="dejavu_actions_bar_search">Paieška</string>
     <string name="dejavu_actions_bar_home">Pradžia</string>
     <string name="dejavu_settings_more_menu_summary">Veiksmų juosta po puslapiais ir jos atveriamas meniu</string>
+    <string name="dejavu_more_menu_hint">Norėdami atverti visą meniu, perbraukite veiksmų juostą aukštyn arba adreso lauką žemyn. Palieskite mygtuką, kad jį perkeltumėte arba pašalintumėte. Plėtiniai visada užima visą eilutę.</string>
+    <string name="dejavu_actions_bar_hint">Mygtukai po puslapiais. Jie taikomi puslapiui, kuriame esate.</string>
+    <string name="dejavu_actions_bar_all_added">Visi mygtukai jau yra juostoje.</string>
     <string name="dejavu_more_menu_row">%1$d eilutė</string>
     <string name="dejavu_more_menu_add_item">Pridėti mygtuką</string>
     <string name="dejavu_more_menu_add_row">Pridėti eilutę</string>
@@ -223,6 +244,24 @@
     <string name="dejavu_container_work">Darbas</string>
     <string name="dejavu_container_banking">Bankininkystė</string>
     <string name="dejavu_container_shopping">Apsipirkimas</string>
+    <string name="dejavu_history_group_by">Grupuoti pagal</string>
+    <string name="dejavu_history_group_by_date">Data</string>
+    <string name="dejavu_history_group_by_workspace">Darbo erdvė</string>
+    <string name="dejavu_history_group_by_folder">Darbo erdvė ir aplankas</string>
+    <string name="dejavu_history_other_pages">Kiti puslapiai</string>
+    <string name="dejavu_settings_tab_sleep">Užmigdytos kortelės</string>
+    <string name="dejavu_settings_tab_sleep_summary">Kortelės, kurių nenaudojate, užmigdomos, kad atsilaisvintų atmintis</string>
+    <string name="dejavu_tab_sleep_hint">Užmigdyta kortelė atlaisvina savo atmintį ir iš naujo įkelia puslapį, kai ją atveriate. Kortelė, kurią žiūrite, šalia jos padalytame rodinyje esanti kortelė ir kortelės, kurios leidžia garsą arba naudoja kamerą ar mikrofoną, neužmigdomos. Kai sistemai Android prireikia atminties, o Dejavu veikia fone, užmigdomos visos kortelės, išskyrus dvi paskiausiai naudotas.</string>
+    <string name="dejavu_tab_sleep_when">Užmigdyti kortelę</string>
+    <plurals name="dejavu_tab_sleep_after_minutes">
+        <item quantity="one">Po %d minutės nenaudojimo</item>
+        <item quantity="few">Po %d minučių nenaudojimo</item>
+        <item quantity="many">Po %d minutės nenaudojimo</item>
+        <item quantity="other">Po %d minučių nenaudojimo</item>
+    </plurals>
+    <string name="dejavu_tab_sleep_after_hour">Po valandos nenaudojimo</string>
+    <string name="dejavu_tab_sleep_never">Niekada</string>
+    <string name="dejavu_startup_crash_body">Atveriant %1$s kilo problema. Atverkite programą iš naujo, kad galėtumėte toliau naršyti.</string>
     <string name="dejavu_sync_normal_tabs">Įtraukti neprisegtas korteles</string>
     <string name="dejavu_sync_normal_tabs_summary">Taip pat sinchronizuoja kitas kiekvienos darbo erdvės korteles, o ne tik prisegtas korteles ir aplankus. Zen jas sinchronizuoja, kai įjungta jos pačios parinktis Įtraukti neprisegtas korteles.</string>
     <plurals name="dejavu_selection_count">

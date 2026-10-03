@@ -47,6 +47,11 @@
     <string name="dejavu_folder_rename">Pārdēvēt mapi</string>
     <string name="dejavu_folder_unpack">Izvērst mapi</string>
     <string name="dejavu_folder_top_level">Piespraustās cilnes, bez mapes</string>
+    <plurals name="dejavu_folder_open_tabs">
+        <item quantity="zero">%1$d atvērtu cilņu</item>
+        <item quantity="one">%1$d atvērta cilne</item>
+        <item quantity="other">%1$d atvērtas cilnes</item>
+    </plurals>
     <string name="dejavu_essentials_drop">Nometiet šeit, lai pievienotu Izlasei</string>
     <string name="dejavu_essentials_full">Izlase var ietilpināt līdz %1$d cilnēm</string>
     <string name="dejavu_temporary_by_default">Pagaidu konteineri pēc noklusējuma</string>
@@ -88,7 +93,19 @@
     <string name="dejavu_action_remove_from_essentials">Noņemt no Izlases</string>
     <string name="dejavu_action_delete">Dzēst</string>
     <string name="dejavu_settings_title">Dejavu</string>
+    <string name="dejavu_about_content">%1$s ir neatkarīga pārlūkprogramma, kas veidota no Mozilla Firefox un GeckoView atvērtā pirmkoda. Mozilla to nav izveidojusi, nav apstiprinājusi un neatbalsta. Firefox ir Mozilla Foundation preču zīme ASV un citās valstīs.</string>
+    <string name="dejavu_about_source_code">Pirmkods</string>
     <string name="dejavu_settings_tab_actions">Ciļņu darbības</string>
+    <string name="dejavu_settings_tab_actions_entry_summary">Viens darbību saraksts un kur katra tiek rādīta</string>
+    <string name="dejavu_settings_tab_actions_hint">Visas darbības ir vienā sarakstā, arī tās, kuras pievienojat paši. Izvēlieties, kur katra tiek rādīta: piespraustajās cilnēs, nepiespraustajās cilnēs un mapēs, atlasīto ciļņu joslā, izvēlnē „Vairāk” un darbību joslā zem lapām. Mapes darbības attiecas uz katru tajā esošo cilni.</string>
+    <string name="dejavu_settings_where_actions_show">Kur tiek rādītas darbības</string>
+    <string name="dejavu_settings_folders">Mapes</string>
+    <string name="dejavu_settings_selection_bar">Atlases josla</string>
+    <string name="dejavu_settings_folder_actions_hint">Izvēlieties līdz %1$d pogām mapju rindām. Tās attiecas uz katru cilni mapē un tās apakšmapēs.</string>
+    <string name="dejavu_settings_action_places_none">Netiek rādīta nekur</string>
+    <string name="dejavu_settings_action_place_unavailable">Tur nedarbojas</string>
+    <string name="dejavu_settings_action_place_full">Vairs nav vietas</string>
+    <string name="dejavu_done">Gatavs</string>
     <string name="dejavu_settings_pinned_tabs">Piespraustās cilnes</string>
     <string name="dejavu_settings_unpinned_tabs">Nepiespraustās cilnes</string>
     <string name="dejavu_settings_all_actions">Visas darbības</string>
@@ -185,6 +202,9 @@
     <string name="dejavu_actions_bar_search">Meklēšana</string>
     <string name="dejavu_actions_bar_home">Sākums</string>
     <string name="dejavu_settings_more_menu_summary">Darbību josla zem lapām un izvēlne, ko tā atver</string>
+    <string name="dejavu_more_menu_hint">Velciet darbību joslu uz augšu vai adreses joslu uz leju, lai atvērtu visu izvēlni. Pieskarieties pogai, lai to pārvietotu vai noņemtu. Paplašinājumi vienmēr aizņem visu rindu.</string>
+    <string name="dejavu_actions_bar_hint">Pogas zem lapām. Tās attiecas uz lapu, kurā atrodaties.</string>
+    <string name="dejavu_actions_bar_all_added">Visas pogas jau ir joslā.</string>
     <string name="dejavu_more_menu_row">%1$d. rinda</string>
     <string name="dejavu_more_menu_add_item">Pievienot pogu</string>
     <string name="dejavu_more_menu_add_row">Pievienot rindu</string>
@@ -223,6 +243,23 @@
     <string name="dejavu_container_work">Darbs</string>
     <string name="dejavu_container_banking">Banka</string>
     <string name="dejavu_container_shopping">Iepirkšanās</string>
+    <string name="dejavu_history_group_by">Grupēt pēc</string>
+    <string name="dejavu_history_group_by_date">Datums</string>
+    <string name="dejavu_history_group_by_workspace">Darbvieta</string>
+    <string name="dejavu_history_group_by_folder">Darbvieta un mape</string>
+    <string name="dejavu_history_other_pages">Citas lapas</string>
+    <string name="dejavu_settings_tab_sleep">Iemidzinātās cilnes</string>
+    <string name="dejavu_settings_tab_sleep_summary">Cilnes, kuras neizmantojat, tiek iemidzinātas, lai atbrīvotu atmiņu</string>
+    <string name="dejavu_tab_sleep_hint">Iemidzināta cilne atbrīvo savu atmiņu un, kad to atverat, ielādē lapu no jauna. Cilne, kuru skatāties, cilne blakus tai sadalītajā skatā un cilnes, kas atskaņo skaņu vai izmanto kameru vai mikrofonu, netiek iemidzinātas. Kad sistēmai Android vajag atmiņu, kamēr Dejavu darbojas fonā, tiek iemidzinātas visas cilnes, izņemot divas pēdējās izmantotās.</string>
+    <string name="dejavu_tab_sleep_when">Iemidzināt cilni</string>
+    <plurals name="dejavu_tab_sleep_after_minutes">
+        <item quantity="zero">Pēc %d minūtēm bez lietošanas</item>
+        <item quantity="one">Pēc %d minūtes bez lietošanas</item>
+        <item quantity="other">Pēc %d minūtēm bez lietošanas</item>
+    </plurals>
+    <string name="dejavu_tab_sleep_after_hour">Pēc stundas bez lietošanas</string>
+    <string name="dejavu_tab_sleep_never">Nekad</string>
+    <string name="dejavu_startup_crash_body">Atverot %1$s, radās problēma. Atveriet lietotni vēlreiz, lai turpinātu pārlūkošanu.</string>
     <string name="dejavu_sync_normal_tabs">Iekļaut nepiespraustās cilnes</string>
     <string name="dejavu_sync_normal_tabs_summary">Tas arī sinhronizē katras darbvietas pārējās cilnes, ne tikai piespraustās cilnes un mapes. Zen tās sinhronizē, kad ir ieslēgta tā paša opcija Iekļaut nepiespraustās cilnes.</string>
     <plurals name="dejavu_selection_count">

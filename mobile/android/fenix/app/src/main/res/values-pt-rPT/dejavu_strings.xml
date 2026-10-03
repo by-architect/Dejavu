@@ -47,6 +47,11 @@
     <string name="dejavu_folder_rename">Renomear pasta</string>
     <string name="dejavu_folder_unpack">Dissolver pasta</string>
     <string name="dejavu_folder_top_level">Separadores fixados, sem pasta</string>
+    <plurals name="dejavu_folder_open_tabs">
+        <item quantity="one">%1$d separador aberto</item>
+        <item quantity="many">%1$d separadores abertos</item>
+        <item quantity="other">%1$d separadores abertos</item>
+    </plurals>
     <string name="dejavu_essentials_drop">Solta aqui para adicionar aos essenciais</string>
     <string name="dejavu_essentials_full">Em Essenciais cabem até %1$d separadores</string>
     <string name="dejavu_temporary_by_default">Contentores temporários por predefinição</string>
@@ -88,7 +93,19 @@
     <string name="dejavu_action_remove_from_essentials">Remover dos essenciais</string>
     <string name="dejavu_action_delete">Apagar</string>
     <string name="dejavu_settings_title">Dejavu</string>
+    <string name="dejavu_about_content">O %1$s é um navegador independente criado a partir do código aberto do Firefox e do GeckoView da Mozilla. Não é feito, aprovado nem apoiado pela Mozilla. O Firefox é uma marca comercial da Mozilla Foundation nos EUA e noutros países.</string>
+    <string name="dejavu_about_source_code">Código-fonte</string>
     <string name="dejavu_settings_tab_actions">Ações de separadores</string>
+    <string name="dejavu_settings_tab_actions_entry_summary">Uma única lista de ações e onde cada uma aparece</string>
+    <string name="dejavu_settings_tab_actions_hint">Todas as ações estão numa única lista, incluindo as que tu próprio adicionas. Escolhe onde cada uma aparece: nos separadores fixados, nos separadores não fixados e nas pastas, na barra dos separadores selecionados, no menu Mais e na barra de ações abaixo das páginas. As ações numa pasta chegam a todos os separadores dentro dela.</string>
+    <string name="dejavu_settings_where_actions_show">Onde as ações aparecem</string>
+    <string name="dejavu_settings_folders">Pastas</string>
+    <string name="dejavu_settings_selection_bar">Barra de seleção</string>
+    <string name="dejavu_settings_folder_actions_hint">Escolhe até %1$d botões para as linhas de pastas. Atuam em todos os separadores dentro da pasta e das suas subpastas.</string>
+    <string name="dejavu_settings_action_places_none">Não aparece em lado nenhum</string>
+    <string name="dejavu_settings_action_place_unavailable">Não faz nada aqui</string>
+    <string name="dejavu_settings_action_place_full">Sem espaço</string>
+    <string name="dejavu_done">Feito</string>
     <string name="dejavu_settings_pinned_tabs">Separadores fixados</string>
     <string name="dejavu_settings_unpinned_tabs">Separadores não fixados</string>
     <string name="dejavu_settings_all_actions">Todas as ações</string>
@@ -185,6 +202,9 @@
     <string name="dejavu_actions_bar_search">Pesquisar</string>
     <string name="dejavu_actions_bar_home">Início</string>
     <string name="dejavu_settings_more_menu_summary">A barra de ações abaixo das páginas e o menu que ela abre</string>
+    <string name="dejavu_more_menu_hint">Desliza a barra de ações para cima, ou a barra de endereço para baixo, para abrir o menu completo. Toca num botão para o mover ou remover. As extensões ocupam sempre uma linha inteira.</string>
+    <string name="dejavu_actions_bar_hint">Os botões abaixo das páginas. Atuam na página em que estás.</string>
+    <string name="dejavu_actions_bar_all_added">Todos os botões já estão na barra.</string>
     <string name="dejavu_more_menu_row">Linha %1$d</string>
     <string name="dejavu_more_menu_add_item">Adicionar um botão</string>
     <string name="dejavu_more_menu_add_row">Adicionar uma linha</string>
@@ -223,6 +243,23 @@
     <string name="dejavu_container_work">Trabalho</string>
     <string name="dejavu_container_banking">Banco</string>
     <string name="dejavu_container_shopping">Compras</string>
+    <string name="dejavu_history_group_by">Agrupar por</string>
+    <string name="dejavu_history_group_by_date">Data</string>
+    <string name="dejavu_history_group_by_workspace">Espaço de trabalho</string>
+    <string name="dejavu_history_group_by_folder">Espaço de trabalho e pasta</string>
+    <string name="dejavu_history_other_pages">Outras páginas</string>
+    <string name="dejavu_settings_tab_sleep">Separadores hibernados</string>
+    <string name="dejavu_settings_tab_sleep_summary">Os separadores que não estás a usar hibernam para libertar memória</string>
+    <string name="dejavu_tab_sleep_hint">Um separador hibernado liberta a sua memória e volta a carregar a página quando o abres. O separador que estás a ver, o que está ao lado dele na vista dividida e os separadores que estão a reproduzir som ou a usar a câmara ou o microfone ficam ativos. Quando o Android precisa de memória enquanto o Dejavu está em segundo plano, todos os separadores hibernam, exceto os dois últimos que usaste.</string>
+    <string name="dejavu_tab_sleep_when">Hibernar um separador</string>
+    <plurals name="dejavu_tab_sleep_after_minutes">
+        <item quantity="one">Após %d minuto sem utilização</item>
+        <item quantity="many">Após %d minutos sem utilização</item>
+        <item quantity="other">Após %d minutos sem utilização</item>
+    </plurals>
+    <string name="dejavu_tab_sleep_after_hour">Após uma hora sem utilização</string>
+    <string name="dejavu_tab_sleep_never">Nunca</string>
+    <string name="dejavu_startup_crash_body">Ocorreu um problema ao abrir o %1$s. Volta a abri-lo para continuar a navegar.</string>
     <string name="dejavu_sync_normal_tabs">Incluir os separadores não fixados</string>
     <string name="dejavu_sync_normal_tabs_summary">Também sincroniza os outros separadores de cada espaço de trabalho, não só os separadores fixados e as pastas. O Zen sincroniza-os quando a sua própria opção Incluir os separadores não fixados está ativada.</string>
     <plurals name="dejavu_selection_count">

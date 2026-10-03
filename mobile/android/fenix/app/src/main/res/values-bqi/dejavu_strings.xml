@@ -47,6 +47,10 @@
     <string name="dejavu_folder_rename">آلشت نام پوشه</string>
     <string name="dejavu_folder_unpack">وا کردن پوشه</string>
     <string name="dejavu_folder_top_level">بلگه یل سنجاق‌وابیده، بدون پوشه</string>
+    <plurals name="dejavu_folder_open_tabs">
+        <item quantity="one">%1$d بلگه گۊشیده</item>
+        <item quantity="other">%1$d بلگه گۊشیده</item>
+    </plurals>
     <string name="dejavu_essentials_drop">اینه بنداز تا بره سایت یل مهم</string>
     <string name="dejavu_essentials_full">سایت یل مهم تا %1$d بلگه جا می‌ده</string>
     <string name="dejavu_temporary_by_default">کانتینر یل موقتی به‌طور ٱصلی</string>
@@ -88,7 +92,19 @@
     <string name="dejavu_action_remove_from_essentials">دراوردن ز سایت یل مهم</string>
     <string name="dejavu_action_delete">پاک کردن</string>
     <string name="dejavu_settings_title">Dejavu</string>
+    <string name="dejavu_about_content">%1$s یه گشت گر سربه‌خوئه که ز کد متن‌باز Firefox و GeckoView مال Mozilla ساخته وابیده. Mozilla نه اینه ساخته، نه تأییدش کرده و نه پشتیبونیش می‌کنه. Firefox نشون تجاری بنیاد Mozilla من آمریکا و ولات یل دیه هسه.</string>
+    <string name="dejavu_about_source_code">کد منبع</string>
     <string name="dejavu_settings_tab_actions">کار یل بلگه</string>
+    <string name="dejavu_settings_tab_actions_entry_summary">یه لیست کار یل، و ایکه هر کدوم کجا نشون داده می‌بۊ</string>
+    <string name="dejavu_settings_tab_actions_hint">پوی کار یل من یه لیستن، اونایی که خوت ٱووردیشون هم. پسند کو هر کدوم کجا نشون داده وابۊ: رو بلگه یل سنجاق‌وابیده، بلگه یل سنجاق‌نوابیده و پوشه یل، من نوار بلگه یل پسند وابیده، من منوی دیه و من نوار کار یل زیر صفحه یل. کار یل رو یه پوشه به هر بلگه‌ای که توشه می‌رسن.</string>
+    <string name="dejavu_settings_where_actions_show">کار یل کجا نشون داده می‌بن</string>
+    <string name="dejavu_settings_folders">پوشه یل</string>
+    <string name="dejavu_settings_selection_bar">نوار پسند</string>
+    <string name="dejavu_settings_folder_actions_hint">تا %1$d دکمه بره ردیف پوشه یل پسند کو. ای دکمه یل رو هر بلگه‌ای که من پوشه و پوشه یل زیرش هسه کار می‌کنن.</string>
+    <string name="dejavu_settings_action_places_none">هیچ جا نشون داده نمی‌بۊ</string>
+    <string name="dejavu_settings_action_place_unavailable">اونجا کاری نمی‌کنه</string>
+    <string name="dejavu_settings_action_place_full">جا نمونده</string>
+    <string name="dejavu_done">ٱنجوم وابی</string>
     <string name="dejavu_settings_pinned_tabs">بلگه یل سنجاق‌وابیده</string>
     <string name="dejavu_settings_unpinned_tabs">بلگه یل سنجاق‌نوابیده</string>
     <string name="dejavu_settings_all_actions">پوی کار یل</string>
@@ -185,6 +201,9 @@
     <string name="dejavu_actions_bar_search">پیتینیڌن</string>
     <string name="dejavu_actions_bar_home">خونه</string>
     <string name="dejavu_settings_more_menu_summary">نوار کار یل زیر بلگه یل و منویی که وا می‌کنه</string>
+    <string name="dejavu_more_menu_hint">بره وا کردن پوی منو، نوار کار یل ره بکش بالا، یا نوار نشۊوی ره بکش پایین. رو یه دکمه بزن تا جا گوروش کنی یا درش بیاری. وردنی یل همیشه یه ردیف کامل می‌گیرن.</string>
+    <string name="dejavu_actions_bar_hint">دکمه یل زیر صفحه یل. رو صفحه‌ای که توشی کار می‌کنن.</string>
+    <string name="dejavu_actions_bar_all_added">پوی دکمه یل ٱلان من نوار هسن.</string>
     <string name="dejavu_more_menu_row">ردیف %1$d</string>
     <string name="dejavu_more_menu_add_item">ٱووردن دکمه</string>
     <string name="dejavu_more_menu_add_row">ٱووردن ردیف</string>
@@ -223,6 +242,22 @@
     <string name="dejavu_container_work">کار</string>
     <string name="dejavu_container_banking">بانکی</string>
     <string name="dejavu_container_shopping">خرید</string>
+    <string name="dejavu_history_group_by">دسه‌بندی</string>
+    <string name="dejavu_history_group_by_date">تاریخ</string>
+    <string name="dejavu_history_group_by_workspace">فضا</string>
+    <string name="dejavu_history_group_by_folder">فضا و پوشه</string>
+    <string name="dejavu_history_other_pages">صفحه یل دیه</string>
+    <string name="dejavu_settings_tab_sleep">بلگه یل خوابیده</string>
+    <string name="dejavu_settings_tab_sleep_summary">بلگه یلی که کارشون نمی‌بری، بره خالی کردن حافظه می‌خوابن</string>
+    <string name="dejavu_tab_sleep_hint">بلگه خوابیده حافظه‌ش ره خالی می‌کنه و وقتی وازش کنی، صفحه‌ش ره دوباره بار می‌کنه. بلگه‌ای که داری سیلش می‌کنی، اونی که پهلوشه من دید دوتایی و بلگه یلی که صدا پخش می‌کنن یا دوربین یا میکروفون کار می‌برن بیدار می‌مونن. وقتی Android حافظه لازم داره و Dejavu من پس‌زمینه‌س، پوی بلگه یل جز دو تایی که آخر کار بردی می‌خوابن.</string>
+    <string name="dejavu_tab_sleep_when">خواب کردن بلگه</string>
+    <plurals name="dejavu_tab_sleep_after_minutes">
+        <item quantity="one">بعد %d دقیقه بی استفاده</item>
+        <item quantity="other">بعد %d دقیقه بی استفاده</item>
+    </plurals>
+    <string name="dejavu_tab_sleep_after_hour">بعد یه ساعت بی استفاده</string>
+    <string name="dejavu_tab_sleep_never">هرگشت</string>
+    <string name="dejavu_startup_crash_body">من گۊشیڌن %1$s مشکلی پیش اومد. بره ادامه گشت و گذار، دوباره گۊشیش کو.</string>
     <string name="dejavu_sync_normal_tabs">بلگه یل سنجاق‌نوابیده ره جا دادن</string>
     <string name="dejavu_sync_normal_tabs_summary">ای هرچە، بلگه یل دیه فضا یل ره ام همگام می‌کنه، نه تنیا بلگه یل سنجاق‌وابیده و پوشه یل. Zen وقتی کە گزینه خودش، بلگه یل سنجاق‌نوابیده ره جا دادن، روشن بوئه، اونا ره همگام می‌کنه.</string>
     <plurals name="dejavu_selection_count">

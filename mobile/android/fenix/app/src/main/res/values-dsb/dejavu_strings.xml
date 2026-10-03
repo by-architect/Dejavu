@@ -47,6 +47,12 @@
     <string name="dejavu_folder_rename">Zarědnik pśemjeniś</string>
     <string name="dejavu_folder_unpack">Zarědnik wupakowaś</string>
     <string name="dejavu_folder_top_level">Pśipěte rejtariki, žeden zarědnik</string>
+    <plurals name="dejavu_folder_open_tabs">
+        <item quantity="one">%1$d wócynjony rejtarik</item>
+        <item quantity="two">%1$d wócynjonej rejtarika</item>
+        <item quantity="few">%1$d wócynjone rejtariki</item>
+        <item quantity="other">%1$d wócynjonych rejtarikow</item>
+    </plurals>
     <string name="dejavu_essentials_drop">How pušćiś, aby k nejwažnjejšym pśidał</string>
     <string name="dejavu_essentials_full">Nejwažnjejše maju městno za do %1$d rejtarikow</string>
     <string name="dejavu_temporary_by_default">Nachwilne kontejnery ako standard</string>
@@ -88,7 +94,19 @@
     <string name="dejavu_action_remove_from_essentials">Wót nejwažnjejšych wótwónoźeś</string>
     <string name="dejavu_action_delete">Lašowaś</string>
     <string name="dejavu_settings_title">Dejavu</string>
+    <string name="dejavu_about_content">%1$s jo njewótwisny wobglědowak, natwarjony z wótwórjonego žrědłowego koda Firefox a GeckoView wót Mozilla. Mozilla jen njezgótujo, njepśipóznawa a njepódpěrujo. Firefox jo wikowe znamje Mozilla Foundation w USA a drugich krajach.</string>
+    <string name="dejavu_about_source_code">Žrědłowy kod</string>
     <string name="dejavu_settings_tab_actions">Akcije za rejtariki</string>
+    <string name="dejavu_settings_tab_actions_entry_summary">Jadna lisćina akcijow a źo se kužda pokazujo</string>
+    <string name="dejavu_settings_tab_actions_hint">Wšykne akcije su w jadnej lisćinje, teke te, kótarež sam pśidawaš. Wubjeŕ, źo se kužda pokazujo: na pśipětych rejtarikach, njepśipětych rejtarikach a zarědnikach, w lajsće wubranych rejtarikow, w dalšnem meniju a w akcijowej lajsće pód bokami. Akcije na zarědniku se na kuždy rejtarik w nim wuskutkuju.</string>
+    <string name="dejavu_settings_where_actions_show">Źo se akcije pokazuju</string>
+    <string name="dejavu_settings_folders">Zarědniki</string>
+    <string name="dejavu_settings_selection_bar">Lajsta wuběranja</string>
+    <string name="dejavu_settings_folder_actions_hint">Wubjeŕ až do %1$d tłocaškow za rědy zarědnikow. Wuskutkuju se na kuždy rejtarik w zarědniku a jogo podzarědnikach.</string>
+    <string name="dejavu_settings_action_places_none">Nigźi se njepokazujo</string>
+    <string name="dejavu_settings_action_place_unavailable">Tam nic njecyni</string>
+    <string name="dejavu_settings_action_place_full">Žedne městno wěcej</string>
+    <string name="dejavu_done">Dokóńcone</string>
     <string name="dejavu_settings_pinned_tabs">Pśipěte rejtariki</string>
     <string name="dejavu_settings_unpinned_tabs">Njepśipěte rejtariki</string>
     <string name="dejavu_settings_all_actions">Wšykne akcije</string>
@@ -185,6 +203,9 @@
     <string name="dejavu_actions_bar_search">Pytaś</string>
     <string name="dejavu_actions_bar_home">Doma</string>
     <string name="dejavu_settings_more_menu_summary">Akcijowa lajsta pód bokami a meni, kótaryž se wócynja</string>
+    <string name="dejavu_more_menu_hint">Trěj akcijowu lajstu górjej abo adresowe pólo dołoj, aby ceły meni wócynił. Tłoc na tłocašk, aby jen pśesunuł abo wótwónoźeł. Rozšyrjenja pśecej ceły rěd zaběraju.</string>
+    <string name="dejavu_actions_bar_hint">Tłocaški pód bokami. Wuskutkuju se na bok, na kótaremž sy.</string>
+    <string name="dejavu_actions_bar_all_added">Kuždy tłocašk jo južo w lajsće.</string>
     <string name="dejavu_more_menu_row">Rěd %1$d</string>
     <string name="dejavu_more_menu_add_item">Tłocašk pśidaś</string>
     <string name="dejavu_more_menu_add_row">Rěd pśidaś</string>
@@ -223,6 +244,24 @@
     <string name="dejavu_container_work">Źěło</string>
     <string name="dejavu_container_banking">Banka</string>
     <string name="dejavu_container_shopping">Nakupowanje</string>
+    <string name="dejavu_history_group_by">Zrědowaś pó</string>
+    <string name="dejavu_history_group_by_date">Datum</string>
+    <string name="dejavu_history_group_by_workspace">Źěłowy rum</string>
+    <string name="dejavu_history_group_by_folder">Źěłowy rum a zarědnik</string>
+    <string name="dejavu_history_other_pages">Druge boki</string>
+    <string name="dejavu_settings_tab_sleep">Rejtariki w spanju</string>
+    <string name="dejavu_settings_tab_sleep_summary">Rejtariki, kótarež njewužywaš, du do spanja, aby skład pušćili</string>
+    <string name="dejavu_tab_sleep_hint">Rejtarik w spanju pušćijo swój skład a zacytajo swój bok znowego, gaž jen wócynjaš. Rejtarik, kótaryž se woglědujoš, rejtarik pódla njogo w źělonem naglědźe a rejtariki, kótarež zuk wótgrawaju abo kameru abo mikrofon wužywaju, njedu do spanja. Gaž Android skład trjeba, mjaztym až Dejavu jo w slězynje, du wšykne rejtariki do spanja, mimo teju dweju, kótarejž sy ako slědnej wužywał.</string>
+    <string name="dejavu_tab_sleep_when">Rejtarik uspaś</string>
+    <plurals name="dejavu_tab_sleep_after_minutes">
+        <item quantity="one">Pó %d minuśe bźez wužywanja</item>
+        <item quantity="two">Pó %d minutoma bźez wužywanja</item>
+        <item quantity="few">Pó %d minutach bźez wužywanja</item>
+        <item quantity="other">Pó %d minutach bźez wužywanja</item>
+    </plurals>
+    <string name="dejavu_tab_sleep_after_hour">Pó góźinje bźez wužywanja</string>
+    <string name="dejavu_tab_sleep_never">Nigda</string>
+    <string name="dejavu_startup_crash_body">Pśi wócynjanju %1$s jo problem nastał. Wócyń nałoženje znowego, aby dalej pśeglědował.</string>
     <string name="dejavu_sync_normal_tabs">Njepśipěte rejtariki zapśimjeś</string>
     <string name="dejavu_sync_normal_tabs_summary">Synchronizěrujo teke druge rejtariki kuždego źěłowego ruma, nic jano pśipěte rejtariki a zarědniki. Zen je synchronizěrujo, gaž jogo swójska opcija Njepśipěte rejtariki zapśimjeś jo zmóžnjona.</string>
     <plurals name="dejavu_selection_count">

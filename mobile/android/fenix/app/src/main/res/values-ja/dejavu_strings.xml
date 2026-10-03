@@ -47,6 +47,9 @@
     <string name="dejavu_folder_rename">フォルダー名を変更</string>
     <string name="dejavu_folder_unpack">フォルダーを解除</string>
     <string name="dejavu_folder_top_level">ピン留めタブ(フォルダーなし)</string>
+    <plurals name="dejavu_folder_open_tabs">
+        <item quantity="other">%1$d件のタブが開いています</item>
+    </plurals>
     <string name="dejavu_essentials_drop">ここにドロップしてよく使うサイトに追加</string>
     <string name="dejavu_essentials_full">よく使うサイトには最大%1$d件のタブを登録できます</string>
     <string name="dejavu_temporary_by_default">既定で一時的なコンテナーを使用</string>
@@ -88,7 +91,19 @@
     <string name="dejavu_action_remove_from_essentials">よく使うサイトから削除</string>
     <string name="dejavu_action_delete">削除</string>
     <string name="dejavu_settings_title">Dejavu</string>
+    <string name="dejavu_about_content">%1$sは、MozillaのオープンソースのFirefoxとGeckoViewのコードから作られた独立したブラウザーです。Mozillaが開発、推奨、サポートしているものではありません。Firefoxは、米国およびその他の国におけるMozilla Foundationの商標です。</string>
+    <string name="dejavu_about_source_code">ソースコード</string>
     <string name="dejavu_settings_tab_actions">タブの操作</string>
+    <string name="dejavu_settings_tab_actions_entry_summary">1つの操作一覧と、それぞれの表示場所</string>
+    <string name="dejavu_settings_tab_actions_hint">自分で追加した操作も含め、すべての操作が1つの一覧にまとまっています。ピン留めタブ、未ピン留めタブ、フォルダー、選択中のタブのバー、その他メニュー、ページ下部のアクションバーのうち、どこに表示するかを操作ごとに選べます。フォルダーに対する操作は、フォルダー内のすべてのタブに適用されます。</string>
+    <string name="dejavu_settings_where_actions_show">操作の表示場所</string>
+    <string name="dejavu_settings_folders">フォルダー</string>
+    <string name="dejavu_settings_selection_bar">選択バー</string>
+    <string name="dejavu_settings_folder_actions_hint">フォルダーの行に表示するボタンを最大%1$d個選べます。ボタンはフォルダーとそのサブフォルダー内のすべてのタブに対して動作します。</string>
+    <string name="dejavu_settings_action_places_none">どこにも表示されません</string>
+    <string name="dejavu_settings_action_place_unavailable">この場所では機能しません</string>
+    <string name="dejavu_settings_action_place_full">空きがありません</string>
+    <string name="dejavu_done">完了</string>
     <string name="dejavu_settings_pinned_tabs">ピン留めタブ</string>
     <string name="dejavu_settings_unpinned_tabs">未ピン留めタブ</string>
     <string name="dejavu_settings_all_actions">すべての操作</string>
@@ -185,6 +200,9 @@
     <string name="dejavu_actions_bar_search">検索</string>
     <string name="dejavu_actions_bar_home">ホーム</string>
     <string name="dejavu_settings_more_menu_summary">ページ下部のアクションバーと、そこから開くメニュー</string>
+    <string name="dejavu_more_menu_hint">アクションバーを上に、またはアドレスバーを下にスワイプすると、メニュー全体が開きます。ボタンをタップすると移動や削除ができます。拡張機能は常に1行全体を使います。</string>
+    <string name="dejavu_actions_bar_hint">ページ下部のボタンです。表示中のページに対して動作します。</string>
+    <string name="dejavu_actions_bar_all_added">すべてのボタンが既にバーにあります。</string>
     <string name="dejavu_more_menu_row">行%1$d</string>
     <string name="dejavu_more_menu_add_item">ボタンを追加</string>
     <string name="dejavu_more_menu_add_row">行を追加</string>
@@ -223,6 +241,21 @@
     <string name="dejavu_container_work">仕事</string>
     <string name="dejavu_container_banking">銀行</string>
     <string name="dejavu_container_shopping">ショッピング</string>
+    <string name="dejavu_history_group_by">グループ化</string>
+    <string name="dejavu_history_group_by_date">日付</string>
+    <string name="dejavu_history_group_by_workspace">ワークスペース</string>
+    <string name="dejavu_history_group_by_folder">ワークスペースとフォルダー</string>
+    <string name="dejavu_history_other_pages">その他のページ</string>
+    <string name="dejavu_settings_tab_sleep">スリープタブ</string>
+    <string name="dejavu_settings_tab_sleep_summary">使用していないタブをスリープしてメモリを解放します</string>
+    <string name="dejavu_tab_sleep_hint">スリープ中のタブはメモリを解放し、開いたときにページを再読み込みします。表示中のタブ、分割ビューでその隣にあるタブ、音声を再生中またはカメラやマイクを使用中のタブはスリープしません。DejavuがバックグラウンドにあるときにAndroidがメモリを必要とした場合、最後に使った2つのタブ以外はすべてスリープします。</string>
+    <string name="dejavu_tab_sleep_when">タブをスリープするタイミング</string>
+    <plurals name="dejavu_tab_sleep_after_minutes">
+        <item quantity="other">%d分間使用しなかった場合</item>
+    </plurals>
+    <string name="dejavu_tab_sleep_after_hour">1時間使用しなかった場合</string>
+    <string name="dejavu_tab_sleep_never">スリープしない</string>
+    <string name="dejavu_startup_crash_body">%1$sの起動時に問題が発生しました。ブラウジングを続けるには、もう一度開いてください。</string>
     <string name="dejavu_sync_normal_tabs">ピン留めされていないタブを含める</string>
     <string name="dejavu_sync_normal_tabs_summary">各ワークスペースの他のタブも同期します。ピン留めタブとフォルダーだけではありません。Zen 自体の「ピン留めされていないタブを含める」オプションがオンになっている場合、Zen はそれらを同期します。</string>
     <plurals name="dejavu_selection_count">

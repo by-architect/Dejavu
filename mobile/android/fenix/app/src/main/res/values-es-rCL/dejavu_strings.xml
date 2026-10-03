@@ -47,6 +47,11 @@
     <string name="dejavu_folder_rename">Renombrar carpeta</string>
     <string name="dejavu_folder_unpack">Disolver carpeta</string>
     <string name="dejavu_folder_top_level">Pestañas fijadas, sin carpeta</string>
+    <plurals name="dejavu_folder_open_tabs">
+        <item quantity="one">%1$d pestaña abierta</item>
+        <item quantity="many">%1$d pestañas abiertas</item>
+        <item quantity="other">%1$d pestañas abiertas</item>
+    </plurals>
     <string name="dejavu_essentials_drop">Suelta aquí para añadir a esenciales</string>
     <string name="dejavu_essentials_full">En Esenciales caben hasta %1$d pestañas</string>
     <string name="dejavu_temporary_by_default">Contenedores temporales de forma predeterminada</string>
@@ -88,7 +93,19 @@
     <string name="dejavu_action_remove_from_essentials">Quitar de esenciales</string>
     <string name="dejavu_action_delete">Borrar</string>
     <string name="dejavu_settings_title">Dejavu</string>
+    <string name="dejavu_about_content">%1$s es un navegador independiente creado a partir del código abierto de Firefox y GeckoView de Mozilla. Mozilla no lo desarrolla, no lo avala ni le da soporte. Firefox es una marca comercial de la Mozilla Foundation en Estados Unidos y en otros países.</string>
+    <string name="dejavu_about_source_code">Código fuente</string>
     <string name="dejavu_settings_tab_actions">Acciones de pestañas</string>
+    <string name="dejavu_settings_tab_actions_entry_summary">Una sola lista de acciones, y dónde se muestra cada una</string>
+    <string name="dejavu_settings_tab_actions_hint">Todas las acciones están en una sola lista, incluidas las que añades tú. Elige dónde se muestra cada una: en las pestañas fijadas, las pestañas no fijadas y las carpetas, en la barra de las pestañas seleccionadas, en el menú Más y en la barra de acciones debajo de las páginas. Las acciones sobre una carpeta llegan a todas las pestañas que contiene.</string>
+    <string name="dejavu_settings_where_actions_show">Dónde se muestran las acciones</string>
+    <string name="dejavu_settings_folders">Carpetas</string>
+    <string name="dejavu_settings_selection_bar">Barra de selección</string>
+    <string name="dejavu_settings_folder_actions_hint">Elige hasta %1$d botones para las filas de carpetas. Actúan sobre todas las pestañas de la carpeta y de sus subcarpetas.</string>
+    <string name="dejavu_settings_action_places_none">No se muestra en ninguna parte</string>
+    <string name="dejavu_settings_action_place_unavailable">Ahí no hace nada</string>
+    <string name="dejavu_settings_action_place_full">No queda espacio</string>
+    <string name="dejavu_done">Hecho</string>
     <string name="dejavu_settings_pinned_tabs">Pestañas fijadas</string>
     <string name="dejavu_settings_unpinned_tabs">Pestañas no fijadas</string>
     <string name="dejavu_settings_all_actions">Todas las acciones</string>
@@ -185,6 +202,9 @@
     <string name="dejavu_actions_bar_search">Buscar</string>
     <string name="dejavu_actions_bar_home">Inicio</string>
     <string name="dejavu_settings_more_menu_summary">La barra de acciones debajo de las páginas y el menú que abre</string>
+    <string name="dejavu_more_menu_hint">Desliza la barra de acciones hacia arriba, o la barra de direcciones hacia abajo, para abrir el menú completo. Toca un botón para moverlo o quitarlo. Las extensiones siempre ocupan una fila entera.</string>
+    <string name="dejavu_actions_bar_hint">Los botones debajo de las páginas. Actúan sobre la página en la que estás.</string>
+    <string name="dejavu_actions_bar_all_added">Todos los botones ya están en la barra.</string>
     <string name="dejavu_more_menu_row">Fila %1$d</string>
     <string name="dejavu_more_menu_add_item">Añadir un botón</string>
     <string name="dejavu_more_menu_add_row">Añadir una fila</string>
@@ -223,6 +243,23 @@
     <string name="dejavu_container_work">Trabajo</string>
     <string name="dejavu_container_banking">Banca</string>
     <string name="dejavu_container_shopping">Compras</string>
+    <string name="dejavu_history_group_by">Agrupar por</string>
+    <string name="dejavu_history_group_by_date">Fecha</string>
+    <string name="dejavu_history_group_by_workspace">Espacio de trabajo</string>
+    <string name="dejavu_history_group_by_folder">Espacio de trabajo y carpeta</string>
+    <string name="dejavu_history_other_pages">Otras páginas</string>
+    <string name="dejavu_settings_tab_sleep">Pestañas suspendidas</string>
+    <string name="dejavu_settings_tab_sleep_summary">Las pestañas que no usas se suspenden para liberar memoria</string>
+    <string name="dejavu_tab_sleep_hint">Una pestaña suspendida libera su memoria y vuelve a cargar su página cuando la abres. La pestaña que estás viendo, la que está a su lado en la vista dividida y las pestañas que reproducen sonido o usan la cámara o el micrófono siguen activas. Cuando Android necesita memoria mientras Dejavu está en segundo plano, se suspenden todas las pestañas menos las dos últimas que usaste.</string>
+    <string name="dejavu_tab_sleep_when">Suspender una pestaña</string>
+    <plurals name="dejavu_tab_sleep_after_minutes">
+        <item quantity="one">Después de %d minuto sin uso</item>
+        <item quantity="many">Después de %d minutos sin uso</item>
+        <item quantity="other">Después de %d minutos sin uso</item>
+    </plurals>
+    <string name="dejavu_tab_sleep_after_hour">Después de una hora sin uso</string>
+    <string name="dejavu_tab_sleep_never">Nunca</string>
+    <string name="dejavu_startup_crash_body">Hubo un problema al abrir %1$s. Vuelve a abrirlo para seguir navegando.</string>
     <string name="dejavu_sync_normal_tabs">Incluir las pestañas no fijadas</string>
     <string name="dejavu_sync_normal_tabs_summary">También sincroniza las demás pestañas de cada espacio de trabajo, no solo las pestañas fijadas y las carpetas. Zen las sincroniza cuando su propia opción Incluir las pestañas no fijadas está activada.</string>
     <plurals name="dejavu_selection_count">

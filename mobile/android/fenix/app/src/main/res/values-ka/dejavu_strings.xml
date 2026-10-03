@@ -47,6 +47,10 @@
     <string name="dejavu_folder_rename">საქაღალდის სახელის შეცვლა</string>
     <string name="dejavu_folder_unpack">საქაღალდის დაშლა</string>
     <string name="dejavu_folder_top_level">მიმაგრებული ჩანართები, საქაღალდის გარეშე</string>
+    <plurals name="dejavu_folder_open_tabs">
+        <item quantity="one">%1$d გახსნილი ჩანართი</item>
+        <item quantity="other">%1$d გახსნილი ჩანართი</item>
+    </plurals>
     <string name="dejavu_essentials_drop">ჩამოაგდეთ აქ საჭირო საიტებში დასამატებლად</string>
     <string name="dejavu_essentials_full">საჭირო საიტებში ეტევა მაქსიმუმ %1$d ჩანართი</string>
     <string name="dejavu_temporary_by_default">ნაგულისხმევად დროებითი კონტეინერები</string>
@@ -88,7 +92,19 @@
     <string name="dejavu_action_remove_from_essentials">საჭირო საიტებიდან ამოშლა</string>
     <string name="dejavu_action_delete">წაშლა</string>
     <string name="dejavu_settings_title">Dejavu</string>
+    <string name="dejavu_about_content">%1$s არის დამოუკიდებელი ბრაუზერი, აგებული Mozilla-ს Firefox-ისა და GeckoView-ის ღია კოდისგან. Mozilla მას არ ქმნის, არ იწონებს და მხარს არ უჭერს. Firefox არის Mozilla Foundation-ის სავაჭრო ნიშანი აშშ-სა და სხვა ქვეყნებში.</string>
+    <string name="dejavu_about_source_code">საწყისი კოდი</string>
     <string name="dejavu_settings_tab_actions">ჩანართის მოქმედებები</string>
+    <string name="dejavu_settings_tab_actions_entry_summary">მოქმედებების ერთი სია და სად ჩანს თითოეული</string>
+    <string name="dejavu_settings_tab_actions_hint">ყველა მოქმედება ერთ სიაშია, თქვენ მიერ დამატებულების ჩათვლით. აირჩიეთ, სად გამოჩნდეს თითოეული: მიმაგრებულ ჩანართებზე, მიუმაგრებელ ჩანართებსა და საქაღალდეებზე, ზოლში, რომელიც ჩანართების მონიშვნისას ჩანს, დამატებით მენიუში და გვერდების ქვემოთ მოქმედებების ზოლში. საქაღალდეზე შესრულებული მოქმედებები მასში არსებულ ყველა ჩანართზე ვრცელდება.</string>
+    <string name="dejavu_settings_where_actions_show">სად ჩანს მოქმედებები</string>
+    <string name="dejavu_settings_folders">საქაღალდეები</string>
+    <string name="dejavu_settings_selection_bar">მონიშვნის ზოლი</string>
+    <string name="dejavu_settings_folder_actions_hint">აირჩიეთ მაქსიმუმ %1$d ღილაკი საქაღალდეების მწკრივებისთვის. ეს ღილაკები მოქმედებს საქაღალდესა და მის ქვესაქაღალდეებში არსებულ ყველა ჩანართზე.</string>
+    <string name="dejavu_settings_action_places_none">არსად ჩანს</string>
+    <string name="dejavu_settings_action_place_unavailable">აქ არ მუშაობს</string>
+    <string name="dejavu_settings_action_place_full">ადგილი აღარ არის</string>
+    <string name="dejavu_done">მზადაა</string>
     <string name="dejavu_settings_pinned_tabs">მიმაგრებული ჩანართები</string>
     <string name="dejavu_settings_unpinned_tabs">მიუმაგრებელი ჩანართები</string>
     <string name="dejavu_settings_all_actions">ყველა მოქმედება</string>
@@ -185,6 +201,9 @@
     <string name="dejavu_actions_bar_search">ძიება</string>
     <string name="dejavu_actions_bar_home">მთავარი</string>
     <string name="dejavu_settings_more_menu_summary">მოქმედებების ზოლი გვერდების ქვემოთ და მენიუ, რომელსაც ის ხსნის</string>
+    <string name="dejavu_more_menu_hint">მთლიანი მენიუს გასახსნელად გადაფურცლეთ მოქმედებების ზოლი ზემოთ ან მისამართების ველი ქვემოთ. შეეხეთ ღილაკს მის გადასატანად ან ამოსაშლელად. გაფართოებები ყოველთვის მთელ მწკრივს იკავებს.</string>
+    <string name="dejavu_actions_bar_hint">ღილაკები გვერდების ქვემოთ. ისინი მოქმედებს იმ გვერდზე, რომელზეც იმყოფებით.</string>
+    <string name="dejavu_actions_bar_all_added">ყველა ღილაკი უკვე ზოლშია.</string>
     <string name="dejavu_more_menu_row">მწკრივი %1$d</string>
     <string name="dejavu_more_menu_add_item">ღილაკის დამატება</string>
     <string name="dejavu_more_menu_add_row">მწკრივის დამატება</string>
@@ -223,6 +242,22 @@
     <string name="dejavu_container_work">სამუშაო</string>
     <string name="dejavu_container_banking">საბანკო</string>
     <string name="dejavu_container_shopping">საყიდლები</string>
+    <string name="dejavu_history_group_by">დაჯგუფება</string>
+    <string name="dejavu_history_group_by_date">თარიღი</string>
+    <string name="dejavu_history_group_by_workspace">სივრცე</string>
+    <string name="dejavu_history_group_by_folder">სივრცე და საქაღალდე</string>
+    <string name="dejavu_history_other_pages">სხვა გვერდები</string>
+    <string name="dejavu_settings_tab_sleep">მძინარე ჩანართები</string>
+    <string name="dejavu_settings_tab_sleep_summary">ჩანართები, რომლებსაც არ იყენებთ, იძინებს მეხსიერების გასათავისუფლებლად</string>
+    <string name="dejavu_tab_sleep_hint">მძინარე ჩანართი ათავისუფლებს თავის მეხსიერებას და გვერდს ხელახლა ჩატვირთავს, როცა მას გახსნით. ფხიზლად რჩება ჩანართი, რომელსაც უყურებთ, მის გვერდით მყოფი ჩანართი გაყოფილ ხედში და ჩანართები, რომლებიც ხმას უკრავს ან კამერას ან მიკროფონს იყენებს. როცა Android-ს მეხსიერება სჭირდება, სანამ Dejavu ფონურ რეჟიმშია, იძინებს ყველა ჩანართი, გარდა ბოლოს გამოყენებული ორისა.</string>
+    <string name="dejavu_tab_sleep_when">ჩანართების დაძინება</string>
+    <plurals name="dejavu_tab_sleep_after_minutes">
+        <item quantity="one">%d წუთის უმოქმედობის შემდეგ</item>
+        <item quantity="other">%d წუთის უმოქმედობის შემდეგ</item>
+    </plurals>
+    <string name="dejavu_tab_sleep_after_hour">ერთი საათის უმოქმედობის შემდეგ</string>
+    <string name="dejavu_tab_sleep_never">არასდროს</string>
+    <string name="dejavu_startup_crash_body">%1$s აპის გახსნისას პრობლემა წარმოიშვა. გახსენით ხელახლა, რომ განაგრძოთ დათვალიერება.</string>
     <string name="dejavu_sync_normal_tabs">მიუმაგრებელი ჩანართების ჩართვა</string>
     <string name="dejavu_sync_normal_tabs_summary">ის ასევე ასინქრონებს თითოეული სივრცის სხვა ჩანართებს და არა მხოლოდ მიმაგრებულ ჩანართებსა და საქაღალდეებს. Zen ასინქრონებს მათ, როცა ჩართულია მისი საკუთარი პარამეტრი „მიუმაგრებელი ჩანართების ჩართვა“.</string>
     <plurals name="dejavu_selection_count">

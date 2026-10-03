@@ -1,1 +1,1 @@
-Fyrsta útgáfa Dejavu, rólegs vafra byggðum á Firefox. Vinnusvæði, hólf, festir flipar, nauðsynjar, möppur og skipt sýn. Samstillist við Zen Browser í gegnum Mozilla-reikninginn þinn. Einkamál sjálfgefið: engin fjarmæling.
+Fyrsta útgáfa Dejavu, sjálfstæðs vafra sem smíðaður er úr opnum grunnkóða Firefox frá Mozilla, en hvorki gerður né samþykktur af Mozilla. Vinnusvæði, hólf, festir flipar, eftirlæti, möppur og klofin sýn. Samstillist við Zen Browser í gegnum Mozilla-reikninginn þinn. Einkamál sjálfgefið: engin fjarmæling.

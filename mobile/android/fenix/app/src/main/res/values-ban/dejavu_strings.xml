@@ -47,6 +47,9 @@
     <string name="dejavu_folder_rename">Ganti adan map</string>
     <string name="dejavu_folder_unpack">Buka map</string>
     <string name="dejavu_folder_top_level">Tab kasemat, tusing ada map</string>
+    <plurals name="dejavu_folder_open_tabs">
+        <item quantity="other">%1$d tab mukak</item>
+    </plurals>
     <string name="dejavu_essentials_drop">Ejang dini anggon nambah ka Penting</string>
     <string name="dejavu_essentials_full">Penting nyidang nyimpen kanti %1$d tab</string>
     <string name="dejavu_temporary_by_default">Wadah sementara sacara utama</string>
@@ -88,7 +91,19 @@
     <string name="dejavu_action_remove_from_essentials">Pesuang uli Penting</string>
     <string name="dejavu_action_delete">Apus</string>
     <string name="dejavu_settings_title">Dejavu</string>
+    <string name="dejavu_about_content">%1$s ento peramban mandiri ane kawangun uli kode open source Firefox lan GeckoView gelah Mozilla. Ené tusing kagaenang, kasetujuin, wiadin kadukung baan Mozilla. Firefox ento merek dagang Mozilla Foundation di Amerika Serikat lan negara lenan.</string>
+    <string name="dejavu_about_source_code">Kode sumber</string>
     <string name="dejavu_settings_tab_actions">Aksi tab</string>
+    <string name="dejavu_settings_tab_actions_entry_summary">Daftar aksi abesik, lan dija tiap aksi nyinahang</string>
+    <string name="dejavu_settings_tab_actions_hint">Makejang aksi ada di daftar abesik, milu masih aksi ane tambahang ragane padidi. Pilih dija tiap aksi nyinahang: di tab kasemat, tab tusing kasemat, lan map, di bar tab ane kapilih, di Menu tambahan, lan di bar aksi di beten halaman. Aksi di map neked ka tiap tab ane ada di tengahne.</string>
+    <string name="dejavu_settings_where_actions_show">Dija aksi nyinahang</string>
+    <string name="dejavu_settings_folders">Map</string>
+    <string name="dejavu_settings_selection_bar">Bar pamilihan</string>
+    <string name="dejavu_settings_folder_actions_hint">Pilih kanti %1$d tombol anggon baris map. Tombolne magae di tiap tab ane ada di tengah map lan sub-mapne.</string>
+    <string name="dejavu_settings_action_places_none">Tusing nyinahang dija-dija</string>
+    <string name="dejavu_settings_action_place_unavailable">Tusing ngae apa-apa ditu</string>
+    <string name="dejavu_settings_action_place_full">Suba pinuh</string>
+    <string name="dejavu_done">Suud</string>
     <string name="dejavu_settings_pinned_tabs">Tab kasemat</string>
     <string name="dejavu_settings_unpinned_tabs">Tab tusing kasemat</string>
     <string name="dejavu_settings_all_actions">Makejang aksi</string>
@@ -185,6 +200,9 @@
     <string name="dejavu_actions_bar_search">Alih</string>
     <string name="dejavu_actions_bar_home">Home</string>
     <string name="dejavu_settings_more_menu_summary">Bar aksi di beten halaman lan menu ane kabukak</string>
+    <string name="dejavu_more_menu_hint">Usap bar aksi ka baduur, wiadin bar alamat ka beten, anggon mukak menu ane jangkep. Tap tombol anggon mindahang wiadin ngilangang. Ekstensi setata nganggo abaris jangkep.</string>
+    <string name="dejavu_actions_bar_hint">Tombol di beten halaman. Tombolne magae di halaman ane sedeng bukak ragane.</string>
+    <string name="dejavu_actions_bar_all_added">Makejang tombol suba ada di bar.</string>
     <string name="dejavu_more_menu_row">Baris %1$d</string>
     <string name="dejavu_more_menu_add_item">Tambah tombol</string>
     <string name="dejavu_more_menu_add_row">Tambah baris</string>
@@ -223,6 +241,21 @@
     <string name="dejavu_container_work">Gae</string>
     <string name="dejavu_container_banking">Bank</string>
     <string name="dejavu_container_shopping">Belanja</string>
+    <string name="dejavu_history_group_by">Kelompokang manut</string>
+    <string name="dejavu_history_group_by_date">Tanggal</string>
+    <string name="dejavu_history_group_by_workspace">Genah</string>
+    <string name="dejavu_history_group_by_folder">Genah lan map</string>
+    <string name="dejavu_history_other_pages">Halaman lenan</string>
+    <string name="dejavu_settings_tab_sleep">Tab pules</string>
+    <string name="dejavu_settings_tab_sleep_summary">Tab ane tusing kaanggo pules anggon ngelegaang memori</string>
+    <string name="dejavu_tab_sleep_hint">Tab ane pules ngelegaang memorine lan muat buin halamanne dugas bukak ragane. Tab ane sedeng tolih ragane, tab di sampingne di split view, lan tab ane muterang suara wiadin nganggo kamera wiadin mikrofon tetep bangun. Yening Android merluang memori dugas Dejavu ada di latar belakang, makejang tab pules, kajaba dua tab ane paling duri anggon ragane.</string>
+    <string name="dejavu_tab_sleep_when">Pulesang tab</string>
+    <plurals name="dejavu_tab_sleep_after_minutes">
+        <item quantity="other">Suud %d menit tusing kaanggo</item>
+    </plurals>
+    <string name="dejavu_tab_sleep_after_hour">Suud ajam tusing kaanggo</string>
+    <string name="dejavu_tab_sleep_never">Tusing taen</string>
+    <string name="dejavu_startup_crash_body">Ada masalah dugas mukak %1$s. Bukak buin apang nyidang lanjut browsing.</string>
     <string name="dejavu_sync_normal_tabs">Cakup tab sane tusing kasemat</string>
     <string name="dejavu_sync_normal_tabs_summary">Taler nyinkronang tab lianan uli soang-soang genah, boya ja wantah tab kasemat miwah map. Zen nyinkronang ento yening pilihan ia newek, Cakup tab sane tusing kasemat, aktif.</string>
     <plurals name="dejavu_selection_count">

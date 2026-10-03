@@ -47,6 +47,10 @@
     <string name="dejavu_folder_rename">Renombrar carpeta</string>
     <string name="dejavu_folder_unpack">Desempaquetar carpeta</string>
     <string name="dejavu_folder_top_level">Pestanyas fixadas, sin carpeta</string>
+    <plurals name="dejavu_folder_open_tabs">
+        <item quantity="one">%1$d pestanya ubierta</item>
+        <item quantity="other">%1$d pestanyas ubiertas</item>
+    </plurals>
     <string name="dejavu_essentials_drop">Suelta aquí ta adibir a los esenciales</string>
     <string name="dejavu_essentials_full">Os esenciales contienen dica %1$d pestanyas</string>
     <string name="dejavu_temporary_by_default">Contenedors temporals per defecto</string>
@@ -88,7 +92,19 @@
     <string name="dejavu_action_remove_from_essentials">Quitar d\'os esenciales</string>
     <string name="dejavu_action_delete">Eliminar</string>
     <string name="dejavu_settings_title">Dejavu</string>
+    <string name="dejavu_about_content">%1$s ye un navegador independient creau a partir d\'o codigo ubierto de Firefox y GeckoView de Mozilla. Mozilla no lo fa, no lo avala ni le da soporte. Firefox ye una marca comercial d\'a Mozilla Foundation en os Estaus Unius y en atros países.</string>
+    <string name="dejavu_about_source_code">Codigo fuent</string>
     <string name="dejavu_settings_tab_actions">Accions d\'as pestanyas</string>
+    <string name="dejavu_settings_tab_actions_entry_summary">Una sola lista d\'accions, y an s\'amuestra cadaguna</string>
+    <string name="dejavu_settings_tab_actions_hint">Todas as accions son en una sola lista, incluyidas as que adibes tu. Trigar an s\'amuestra cadaguna: en as pestanyas fixadas, as pestanyas no fixadas y as carpetas, en a barra d\'as pestanyas seleccionadas, en o menú Más y en a barra d\'accions de baixo d\'as pachinas. As accions sobre una carpeta plegan a totas as pestanyas que i son adintro.</string>
+    <string name="dejavu_settings_where_actions_show">An s\'amuestran as accions</string>
+    <string name="dejavu_settings_folders">Carpetas</string>
+    <string name="dejavu_settings_selection_bar">Barra de selección</string>
+    <string name="dejavu_settings_folder_actions_hint">Trigar dica %1$d botons ta las ringleras de carpetas. Actúan sobre totas as pestanyas d\'a carpeta y d\'as suyas subcarpetas.</string>
+    <string name="dejavu_settings_action_places_none">No s\'amuestra en garra puesto</string>
+    <string name="dejavu_settings_action_place_unavailable">Astí no fa cosa</string>
+    <string name="dejavu_settings_action_place_full">No i queda espacio</string>
+    <string name="dejavu_done">Feito</string>
     <string name="dejavu_settings_pinned_tabs">Pestanyas fixadas</string>
     <string name="dejavu_settings_unpinned_tabs">Pestanyas no fixadas</string>
     <string name="dejavu_settings_all_actions">Todas as accions</string>
@@ -185,6 +201,9 @@
     <string name="dejavu_actions_bar_search">Mirar</string>
     <string name="dejavu_actions_bar_home">Inicio</string>
     <string name="dejavu_settings_more_menu_summary">A barra d\'accions de baixo d\'as pachinas y o menú que ubre</string>
+    <string name="dejavu_more_menu_hint">Esliza a barra d\'accions ta alto, u a barra d\'adrezas ta baixo, ta ubrir o menú completo. Toca un botón ta mover-lo u quitar-lo. As estensions siempre ocupan una ringlera entera.</string>
+    <string name="dejavu_actions_bar_hint">Os botons de baixo d\'as pachinas. Actúan sobre a pachina an yes.</string>
+    <string name="dejavu_actions_bar_all_added">Totz os botons ya son en a barra.</string>
     <string name="dejavu_more_menu_row">Ringlera %1$d</string>
     <string name="dejavu_more_menu_add_item">Adibir un botón</string>
     <string name="dejavu_more_menu_add_row">Adibir una ringlera</string>
@@ -223,6 +242,22 @@
     <string name="dejavu_container_work">Treballo</string>
     <string name="dejavu_container_banking">Banca</string>
     <string name="dejavu_container_shopping">Crompas</string>
+    <string name="dejavu_history_group_by">Agrupar per</string>
+    <string name="dejavu_history_group_by_date">Calendata</string>
+    <string name="dejavu_history_group_by_workspace">Espacio de treballo</string>
+    <string name="dejavu_history_group_by_folder">Espacio de treballo y carpeta</string>
+    <string name="dejavu_history_other_pages">Atras pachinas</string>
+    <string name="dejavu_settings_tab_sleep">Pestanyas adormidas</string>
+    <string name="dejavu_settings_tab_sleep_summary">As pestanyas que no emplegas s\'adormen ta liberar memoria</string>
+    <string name="dejavu_tab_sleep_hint">Una pestanya adormida libera a suya memoria y torna a cargar a suya pachina quan la ubres. A pestanya que yes mirando, a que tiene a o costau en a vista partida y as pestanyas que fan son u emplegan a camara u o microfono se quedan desvelladas. Quan Android amenista memoria mientres Dejavu ye en segundo plano, totas as pestanyas fueras d\'as dos zagueras que has emplegau s\'adormen.</string>
+    <string name="dejavu_tab_sleep_when">Adormir una pestanya</string>
+    <plurals name="dejavu_tab_sleep_after_minutes">
+        <item quantity="one">Dimpués de %d minuto sin uso</item>
+        <item quantity="other">Dimpués de %d minutos sin uso</item>
+    </plurals>
+    <string name="dejavu_tab_sleep_after_hour">Dimpués d\'una hora sin uso</string>
+    <string name="dejavu_tab_sleep_never">Nunca</string>
+    <string name="dejavu_startup_crash_body">I habió un problema en ubrir %1$s. Torna a ubrir-lo ta continar navegando.</string>
     <string name="dejavu_sync_normal_tabs">Incluir pestanyas no fixadas</string>
     <string name="dejavu_sync_normal_tabs_summary">Sincroniza tamién as atras pestanyas de cada espacio de treballo, no nomás as pestanyas fixadas y as carpetas. Zen las sincroniza quan a suya propia opción Incluir pestanyas no fixadas ye activada.</string>
     <plurals name="dejavu_selection_count">

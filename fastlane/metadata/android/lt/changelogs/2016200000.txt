@@ -1,1 +1,1 @@
-Pirmoji Dejavu laida – rami naršyklė, sukurta Firefox pagrindu. Darbo erdvės, konteineriai, prisegtos kortelės, svarbiausios, aplankai ir padalytas vaizdas. Sinchronizuojama su Zen Browser per jūsų Mozilla paskyrą. Numatytai privati: jokios telemetrijos.
+Pirmoji Dejavu laida – nepriklausoma naršyklė, sukurta iš atvirojo Mozilla Firefox kodo. Mozilla jos nekūrė ir nepatvirtino. Darbo erdvės, konteineriai, prisegtos kortelės, Mėgstamiausi, aplankai ir padalytas rodinys. Sinchronizuojama su Zen Browser per jūsų Mozilla paskyrą. Numatytai privati: jokios telemetrijos.

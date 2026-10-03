@@ -47,6 +47,10 @@
     <string name="dejavu_folder_rename">Rinomina cartella</string>
     <string name="dejavu_folder_unpack">Sciogli cartella</string>
     <string name="dejavu_folder_top_level">Schede bloccate, nessuna cartella</string>
+    <plurals name="dejavu_folder_open_tabs">
+        <item quantity="one">%1$d scheda aperta</item>
+        <item quantity="other">%1$d schede aperte</item>
+    </plurals>
     <string name="dejavu_essentials_drop">Rilascia qui per aggiungere ai preferiti</string>
     <string name="dejavu_essentials_full">I preferiti contengono fino a %1$d schede</string>
     <string name="dejavu_temporary_by_default">Contenitori temporanei per impostazione predefinita</string>
@@ -88,7 +92,19 @@
     <string name="dejavu_action_remove_from_essentials">Rimuovi dai preferiti</string>
     <string name="dejavu_action_delete">Elimina</string>
     <string name="dejavu_settings_title">Dejavu</string>
+    <string name="dejavu_about_content">%1$s è un browser indipendente creato a partire dal codice open source di Firefox e GeckoView di Mozilla. Non è realizzato, approvato né supportato da Mozilla. Firefox è un marchio della Mozilla Foundation negli Stati Uniti e in altri paesi.</string>
+    <string name="dejavu_about_source_code">Codice sorgente</string>
     <string name="dejavu_settings_tab_actions">Azioni sulle schede</string>
+    <string name="dejavu_settings_tab_actions_entry_summary">Un unico elenco di azioni, e dove compare ciascuna</string>
+    <string name="dejavu_settings_tab_actions_hint">Tutte le azioni sono in un unico elenco, comprese quelle che aggiungi tu. Scegli dove compare ciascuna: sulle schede bloccate, sulle schede non bloccate e sulle cartelle, nella barra delle schede selezionate, nel menu «Altro» e nella barra delle azioni sotto le pagine. Le azioni su una cartella raggiungono tutte le schede al suo interno.</string>
+    <string name="dejavu_settings_where_actions_show">Dove compaiono le azioni</string>
+    <string name="dejavu_settings_folders">Cartelle</string>
+    <string name="dejavu_settings_selection_bar">Barra di selezione</string>
+    <string name="dejavu_settings_folder_actions_hint">Scegli fino a %1$d pulsanti per le righe delle cartelle. Agiscono su tutte le schede all’interno della cartella e delle sue sottocartelle.</string>
+    <string name="dejavu_settings_action_places_none">Non compare da nessuna parte</string>
+    <string name="dejavu_settings_action_place_unavailable">Qui non ha effetto</string>
+    <string name="dejavu_settings_action_place_full">Non c’è più spazio</string>
+    <string name="dejavu_done">Fatto</string>
     <string name="dejavu_settings_pinned_tabs">Schede bloccate</string>
     <string name="dejavu_settings_unpinned_tabs">Schede non bloccate</string>
     <string name="dejavu_settings_all_actions">Tutte le azioni</string>
@@ -185,6 +201,9 @@
     <string name="dejavu_actions_bar_search">Cerca</string>
     <string name="dejavu_actions_bar_home">Home</string>
     <string name="dejavu_settings_more_menu_summary">La barra delle azioni sotto le pagine e il menu che apre</string>
+    <string name="dejavu_more_menu_hint">Scorri la barra delle azioni verso l’alto, o la barra degli indirizzi verso il basso, per aprire il menu completo. Tocca un pulsante per spostarlo o rimuoverlo. Le estensioni occupano sempre un’intera riga.</string>
+    <string name="dejavu_actions_bar_hint">I pulsanti sotto le pagine. Agiscono sulla pagina in cui ti trovi.</string>
+    <string name="dejavu_actions_bar_all_added">Tutti i pulsanti sono già nella barra.</string>
     <string name="dejavu_more_menu_row">Riga %1$d</string>
     <string name="dejavu_more_menu_add_item">Aggiungi un pulsante</string>
     <string name="dejavu_more_menu_add_row">Aggiungi una riga</string>
@@ -223,6 +242,22 @@
     <string name="dejavu_container_work">Lavoro</string>
     <string name="dejavu_container_banking">Bancario</string>
     <string name="dejavu_container_shopping">Shopping</string>
+    <string name="dejavu_history_group_by">Raggruppa per</string>
+    <string name="dejavu_history_group_by_date">Data</string>
+    <string name="dejavu_history_group_by_workspace">Spazio</string>
+    <string name="dejavu_history_group_by_folder">Spazio e cartella</string>
+    <string name="dejavu_history_other_pages">Altre pagine</string>
+    <string name="dejavu_settings_tab_sleep">Schede sospese</string>
+    <string name="dejavu_settings_tab_sleep_summary">Le schede che non usi vengono sospese per liberare memoria</string>
+    <string name="dejavu_tab_sleep_hint">Una scheda sospesa libera la sua memoria e ricarica la pagina quando la apri. La scheda che stai guardando, quella accanto in vista divisa e le schede che riproducono audio o usano la fotocamera o il microfono restano attive. Quando Android ha bisogno di memoria mentre Dejavu è in background, tutte le schede tranne le ultime due che hai usato vengono sospese.</string>
+    <string name="dejavu_tab_sleep_when">Sospendi una scheda</string>
+    <plurals name="dejavu_tab_sleep_after_minutes">
+        <item quantity="one">Dopo %d minuto senza utilizzo</item>
+        <item quantity="other">Dopo %d minuti senza utilizzo</item>
+    </plurals>
+    <string name="dejavu_tab_sleep_after_hour">Dopo un’ora senza utilizzo</string>
+    <string name="dejavu_tab_sleep_never">Mai</string>
+    <string name="dejavu_startup_crash_body">Si è verificato un problema durante l’apertura di %1$s. Riaprilo per continuare a navigare.</string>
     <string name="dejavu_sync_normal_tabs">Includi le schede non bloccate</string>
     <string name="dejavu_sync_normal_tabs_summary">Sincronizza anche le altre schede di ogni spazio, non solo le schede bloccate e le cartelle. Zen le sincronizza quando la sua opzione Includi le schede non bloccate è attiva.</string>
     <plurals name="dejavu_selection_count">

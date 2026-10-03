@@ -47,6 +47,10 @@
     <string name="dejavu_folder_rename">Վերանվանել թղթապանակը</string>
     <string name="dejavu_folder_unpack">Քանդել թղթապանակը</string>
     <string name="dejavu_folder_top_level">Ամրացված ներդիրներ, առանց թղթապանակի</string>
+    <plurals name="dejavu_folder_open_tabs">
+        <item quantity="one">%1$d բաց ներդիր</item>
+        <item quantity="other">%1$d բաց ներդիր</item>
+    </plurals>
     <string name="dejavu_essentials_drop">Գցեք այստեղ՝ կարևոր կայքերում ավելացնելու համար</string>
     <string name="dejavu_essentials_full">Կարևոր կայքերում կարող է լինել մինչև %1$d ներդիր</string>
     <string name="dejavu_temporary_by_default">Ժամանակավոր կոնտեյներներ՝ ըստ կանխադրման</string>
@@ -88,7 +92,19 @@
     <string name="dejavu_action_remove_from_essentials">Հեռացնել կարևոր կայքերից</string>
     <string name="dejavu_action_delete">Ջնջել</string>
     <string name="dejavu_settings_title">Dejavu</string>
+    <string name="dejavu_about_content">%1$s հավելվածն անկախ դիտարկիչ է՝ կառուցված Mozilla֊ի Firefox֊ի և GeckoView֊ի բաց կոդից։ Այն Mozilla֊ի կողմից ստեղծված, հաստատված կամ աջակցվող չէ։ Firefox֊ը Mozilla Foundation֊ի ապրանքային նշանն է ԱՄՆ֊ում և այլ երկրներում։</string>
+    <string name="dejavu_about_source_code">Ելակետային կոդ</string>
     <string name="dejavu_settings_tab_actions">Ներդիրի գործողություններ</string>
+    <string name="dejavu_settings_tab_actions_entry_summary">Գործողությունների մեկ ցուցակ և որտեղ է ցուցադրվում յուրաքանչյուրը</string>
+    <string name="dejavu_settings_tab_actions_hint">Բոլոր գործողությունները մեկ ցուցակում են, ներառյալ ձեր ավելացրածները։ Ընտրեք, թե որտեղ ցուցադրվի յուրաքանչյուրը՝ ամրացված ներդիրներում, չամրացված ներդիրներում և թղթապանակներում, ներդիրներ ընտրելիս հայտնվող գոտում, Լրացուցիչ ցանկում և էջերի տակի գործողությունների գոտում։ Թղթապանակի գործողությունները կիրառվում են դրա ներսի բոլոր ներդիրների վրա։</string>
+    <string name="dejavu_settings_where_actions_show">Որտեղ են ցուցադրվում գործողությունները</string>
+    <string name="dejavu_settings_folders">Թղթապանակներ</string>
+    <string name="dejavu_settings_selection_bar">Ընտրության գոտի</string>
+    <string name="dejavu_settings_folder_actions_hint">Ընտրեք մինչև %1$d կոճակ թղթապանակների տողերի համար։ Դրանք կիրառվում են թղթապանակի և դրա ենթաթղթապանակների բոլոր ներդիրների վրա։</string>
+    <string name="dejavu_settings_action_places_none">Ոչ մի տեղ չի ցուցադրվում</string>
+    <string name="dejavu_settings_action_place_unavailable">Այստեղ չի աշխատում</string>
+    <string name="dejavu_settings_action_place_full">Տեղ չկա</string>
+    <string name="dejavu_done">Պատրաստ է</string>
     <string name="dejavu_settings_pinned_tabs">Ամրացված ներդիրներ</string>
     <string name="dejavu_settings_unpinned_tabs">Չամրացված ներդիրներ</string>
     <string name="dejavu_settings_all_actions">Բոլոր գործողությունները</string>
@@ -185,6 +201,9 @@
     <string name="dejavu_actions_bar_search">Որոնում</string>
     <string name="dejavu_actions_bar_home">Գլխավոր</string>
     <string name="dejavu_settings_more_menu_summary">Էջերի տակի գործողությունների գոտին և ցանկը, որ այն բացում է</string>
+    <string name="dejavu_more_menu_hint">Ամբողջ ցանկը բացելու համար սահեցրեք գործողությունների գոտին վերև կամ հասցեագոտին ներքև։ Հպեք կոճակին՝ այն տեղափոխելու կամ հեռացնելու համար։ Ընդլայնումները միշտ զբաղեցնում են մի ամբողջ տող։</string>
+    <string name="dejavu_actions_bar_hint">Էջերի տակի կոճակները։ Դրանք գործում են այն էջի վրա, որում գտնվում եք։</string>
+    <string name="dejavu_actions_bar_all_added">Բոլոր կոճակներն արդեն գոտում են։</string>
     <string name="dejavu_more_menu_row">Տող %1$d</string>
     <string name="dejavu_more_menu_add_item">Ավելացնել կոճակ</string>
     <string name="dejavu_more_menu_add_row">Ավելացնել տող</string>
@@ -223,6 +242,22 @@
     <string name="dejavu_container_work">Աշխատանքային</string>
     <string name="dejavu_container_banking">Բանկային</string>
     <string name="dejavu_container_shopping">Գնումներ</string>
+    <string name="dejavu_history_group_by">Խմբավորել ըստ</string>
+    <string name="dejavu_history_group_by_date">Ամսաթիվ</string>
+    <string name="dejavu_history_group_by_workspace">Տարածք</string>
+    <string name="dejavu_history_group_by_folder">Տարածք և թղթապանակ</string>
+    <string name="dejavu_history_other_pages">Այլ էջեր</string>
+    <string name="dejavu_settings_tab_sleep">Քնած ներդիրներ</string>
+    <string name="dejavu_settings_tab_sleep_summary">Ներդիրները, որոնք չեք օգտագործում, քնում են՝ հիշողություն ազատելու համար</string>
+    <string name="dejavu_tab_sleep_hint">Քնած ներդիրն ազատում է իր հիշողությունը և նորից բեռնում էջը, երբ բացում եք այն։ Արթուն են մնում այն ներդիրը, որը դիտում եք, տրոհված տեսքում դրա կողքի ներդիրը, ինչպես նաև ձայն նվագարկող կամ տեսախցիկ կամ խոսափող օգտագործող ներդիրները։ Երբ Android֊ին հիշողություն է պետք, իսկ Dejavu֊ն հետին պլանում է, քնում են բոլոր ներդիրները, բացի վերջին օգտագործած երկուսից։</string>
+    <string name="dejavu_tab_sleep_when">Քնեցնել ներդիրները</string>
+    <plurals name="dejavu_tab_sleep_after_minutes">
+        <item quantity="one">%d րոպե չօգտագործվելուց հետո</item>
+        <item quantity="other">%d րոպե չօգտագործվելուց հետո</item>
+    </plurals>
+    <string name="dejavu_tab_sleep_after_hour">Մեկ ժամ չօգտագործվելուց հետո</string>
+    <string name="dejavu_tab_sleep_never">Երբեք</string>
+    <string name="dejavu_startup_crash_body">%1$s հավելվածը բացելիս խնդիր առաջացավ։ Վերաբացեք այն՝ դիտարկումը շարունակելու համար։</string>
     <string name="dejavu_sync_normal_tabs">Ներառել չամրացված ներդիրները</string>
     <string name="dejavu_sync_normal_tabs_summary">Այն համաժամացնում է նաև յուրաքանչյուր տարածքի մյուս ներդիրները, ոչ միայն ամրացված ներդիրներն ու թղթապանակները։ Zen֊ը համաժամացնում է դրանք, երբ միացված է իր սեփական Ներառել չամրացված ներդիրները կարգավորումը։</string>
     <plurals name="dejavu_selection_count">

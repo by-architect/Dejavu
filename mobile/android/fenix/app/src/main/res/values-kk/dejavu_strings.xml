@@ -47,6 +47,10 @@
     <string name="dejavu_folder_rename">Қалта атын өзгерту</string>
     <string name="dejavu_folder_unpack">Қалтаны тарату</string>
     <string name="dejavu_folder_top_level">Бекітілген беттер, қалтасыз</string>
+    <plurals name="dejavu_folder_open_tabs">
+        <item quantity="one">%1$d ашық бет</item>
+        <item quantity="other">%1$d ашық бет</item>
+    </plurals>
     <string name="dejavu_essentials_drop">Негізгілерге қосу үшін мұнда тастаңыз</string>
     <string name="dejavu_essentials_full">Негізгілер ең көбі %1$d бет сияды</string>
     <string name="dejavu_temporary_by_default">Әдепкі бойынша уақытша контейнерлер</string>
@@ -88,7 +92,19 @@
     <string name="dejavu_action_remove_from_essentials">Негізгілерден шығару</string>
     <string name="dejavu_action_delete">Өшіру</string>
     <string name="dejavu_settings_title">Dejavu</string>
+    <string name="dejavu_about_content">%1$s — Mozilla-ның Firefox және GeckoView ашық бастапқы кодынан құрастырылған тәуелсіз браузер. Оны Mozilla жасамаған, мақұлдамаған және қолдамайды. Firefox — Mozilla Foundation ұйымының АҚШ пен басқа елдердегі сауда белгісі.</string>
+    <string name="dejavu_about_source_code">Бастапқы код</string>
     <string name="dejavu_settings_tab_actions">Бет әрекеттері</string>
+    <string name="dejavu_settings_tab_actions_entry_summary">Әрекеттердің бір тізімі және әрқайсысы қай жерде көрінетіні</string>
+    <string name="dejavu_settings_tab_actions_hint">Өзіңіз қосқан әрекеттерді қоса алғанда, барлық әрекеттер бір тізімде. Әрқайсысы қай жерде көрінетінін таңдаңыз: бекітілген беттерде, бекітілмеген беттерде және қалталарда, беттер таңдалғанда шығатын тақтада, «Көбірек» мәзірінде және беттердің астындағы әрекеттер тақтасында. Қалтаға қолданылған әрекеттер оның ішіндегі әрбір бетке әсер етеді.</string>
+    <string name="dejavu_settings_where_actions_show">Әрекеттер көрінетін орындар</string>
+    <string name="dejavu_settings_folders">Қалталар</string>
+    <string name="dejavu_settings_selection_bar">Таңдау тақтасы</string>
+    <string name="dejavu_settings_folder_actions_hint">Қалта қатарлары үшін ең көбі %1$d түйме таңдаңыз. Олар қалтадағы және оның ішкі қалталарындағы әрбір бетке әсер етеді.</string>
+    <string name="dejavu_settings_action_places_none">Ешқайда көрсетілмейді</string>
+    <string name="dejavu_settings_action_place_unavailable">Мұнда жұмыс істемейді</string>
+    <string name="dejavu_settings_action_place_full">Орын қалмады</string>
+    <string name="dejavu_done">Дайын</string>
     <string name="dejavu_settings_pinned_tabs">Бекітілген беттер</string>
     <string name="dejavu_settings_unpinned_tabs">Бекітілмеген беттер</string>
     <string name="dejavu_settings_all_actions">Барлық әрекеттер</string>
@@ -185,6 +201,9 @@
     <string name="dejavu_actions_bar_search">Іздеу</string>
     <string name="dejavu_actions_bar_home">Басты бет</string>
     <string name="dejavu_settings_more_menu_summary">Беттердің астындағы әрекеттер тақтасы және ол ашатын мәзір</string>
+    <string name="dejavu_more_menu_hint">Толық мәзірді ашу үшін әрекеттер тақтасын жоғары немесе адрестік жолақты төмен сырғытыңыз. Түймені жылжыту немесе шығару үшін оны түртіңіз. Кеңейтулер әрқашан бүкіл қатарды алады.</string>
+    <string name="dejavu_actions_bar_hint">Беттердің астындағы түймелер. Олар сіз қарап отырған бетке қолданылады.</string>
+    <string name="dejavu_actions_bar_all_added">Барлық түймелер тақтада бар.</string>
     <string name="dejavu_more_menu_row">%1$d-қатар</string>
     <string name="dejavu_more_menu_add_item">Түйме қосу</string>
     <string name="dejavu_more_menu_add_row">Қатар қосу</string>
@@ -223,6 +242,22 @@
     <string name="dejavu_container_work">Жұмыс</string>
     <string name="dejavu_container_banking">Банк</string>
     <string name="dejavu_container_shopping">Сауда</string>
+    <string name="dejavu_history_group_by">Топтау</string>
+    <string name="dejavu_history_group_by_date">Күні</string>
+    <string name="dejavu_history_group_by_workspace">Жұмыс кеңістігі</string>
+    <string name="dejavu_history_group_by_folder">Жұмыс кеңістігі және қалта</string>
+    <string name="dejavu_history_other_pages">Басқа беттер</string>
+    <string name="dejavu_settings_tab_sleep">Ұйқыдағы беттер</string>
+    <string name="dejavu_settings_tab_sleep_summary">Сіз қолданбай жүрген беттер жадты босату үшін ұйықтайды</string>
+    <string name="dejavu_tab_sleep_hint">Ұйқыдағы бет өз жадын босатады және сіз оны ашқанда бетті қайта жүктейді. Сіз қарап отырған бет, бөлінген көріністе оның жанындағы бет және дыбыс ойнатып тұрған немесе камераны не микрофонды қолданып тұрған беттер ұйықтамайды. Dejavu фонда тұрғанда Android-қа жад керек болса, соңғы қолданған екі беттен басқа барлық беттер ұйықтайды.</string>
+    <string name="dejavu_tab_sleep_when">Беттерді ұйықтату</string>
+    <plurals name="dejavu_tab_sleep_after_minutes">
+        <item quantity="one">%d минут қолданылмағаннан кейін</item>
+        <item quantity="other">%d минут қолданылмағаннан кейін</item>
+    </plurals>
+    <string name="dejavu_tab_sleep_after_hour">Бір сағат қолданылмағаннан кейін</string>
+    <string name="dejavu_tab_sleep_never">Ешқашан</string>
+    <string name="dejavu_startup_crash_body">%1$s ашу кезінде мәселе орын алды. Шолуды жалғастыру үшін оны қайта ашыңыз.</string>
     <string name="dejavu_sync_normal_tabs">Бекітілмеген беттерді қосу</string>
     <string name="dejavu_sync_normal_tabs_summary">Сондай-ақ, әрбір жұмыс кеңістігінің басқа беттерін де синхрондайды, тек бекітілген беттер мен қалталарды ғана емес. Оның өз Бекітілмеген беттерді қосу опциясы қосулы болғанда, Zen оларды синхрондайды.</string>
     <plurals name="dejavu_selection_count">

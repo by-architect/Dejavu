@@ -47,6 +47,10 @@
     <string name="dejavu_folder_rename">கோப்புறையை மறுபெயரிடு</string>
     <string name="dejavu_folder_unpack">கோப்புறையை விரி</string>
     <string name="dejavu_folder_top_level">பொருத்தப்பட்ட கீற்றுகள், கோப்புறை இல்லை</string>
+    <plurals name="dejavu_folder_open_tabs">
+        <item quantity="one">%1$d திறந்த கீற்று</item>
+        <item quantity="other">%1$d திறந்த கீற்றுகள்</item>
+    </plurals>
     <string name="dejavu_essentials_drop">முக்கியவையில் சேர்க்க இங்கே விடுக</string>
     <string name="dejavu_essentials_full">முக்கியவையில் அதிகபட்சம் %1$d கீற்றுகள் அடங்கும்</string>
     <string name="dejavu_temporary_by_default">முன்னிருப்பாகத் தற்காலிகக் கொள்கலன்கள்</string>
@@ -88,7 +92,19 @@
     <string name="dejavu_action_remove_from_essentials">முக்கியவையிலிருந்து அகற்று</string>
     <string name="dejavu_action_delete">நீக்கு</string>
     <string name="dejavu_settings_title">Dejavu</string>
+    <string name="dejavu_about_content">%1$s என்பது Mozilla-வின் திறமூல Firefox மற்றும் GeckoView குறியீட்டிலிருந்து உருவாக்கப்பட்ட ஒரு சுதந்திரமான உலாவி. இது Mozilla-வால் உருவாக்கப்பட்டதோ, அங்கீகரிக்கப்பட்டதோ, ஆதரிக்கப்படுவதோ அல்ல. Firefox என்பது அமெரிக்கா மற்றும் பிற நாடுகளில் Mozilla Foundation-இன் வர்த்தக முத்திரை ஆகும்.</string>
+    <string name="dejavu_about_source_code">மூலக் குறியீடு</string>
     <string name="dejavu_settings_tab_actions">கீற்றுச் செயல்கள்</string>
+    <string name="dejavu_settings_tab_actions_entry_summary">செயல்களுக்கான ஒரே பட்டியல், ஒவ்வொன்றும் எங்கே தோன்றும் என்பதுடன்</string>
+    <string name="dejavu_settings_tab_actions_hint">நீங்களே சேர்த்தவை உட்பட அனைத்துச் செயல்களும் ஒரே பட்டியலில் உள்ளன. ஒவ்வொன்றும் எங்கே தோன்ற வேண்டும் என்பதைத் தேர்வுசெய்யவும்: பொருத்தப்பட்ட கீற்றுகள், பொருத்தப்படாத கீற்றுகள், கோப்புறைகள் ஆகியவற்றில், தேர்ந்தெடுத்த கீற்றுகளின் பட்டையில், மேலும் பட்டியில், பக்கங்களுக்குக் கீழே உள்ள செயல் பட்டையில். ஒரு கோப்புறையில் செய்யும் செயல்கள் அதனுள் உள்ள ஒவ்வொரு கீற்றுக்கும் பொருந்தும்.</string>
+    <string name="dejavu_settings_where_actions_show">செயல்கள் தோன்றும் இடங்கள்</string>
+    <string name="dejavu_settings_folders">கோப்புறைகள்</string>
+    <string name="dejavu_settings_selection_bar">தேர்வுப் பட்டை</string>
+    <string name="dejavu_settings_folder_actions_hint">கோப்புறை வரிசைகளுக்கு அதிகபட்சம் %1$d பொத்தான்களைத் தேர்வுசெய்யவும். அவை கோப்புறையிலும் அதன் துணைக்கோப்புறைகளிலும் உள்ள ஒவ்வொரு கீற்றின் மீதும் இயங்கும்.</string>
+    <string name="dejavu_settings_action_places_none">எங்கும் காட்டப்படவில்லை</string>
+    <string name="dejavu_settings_action_place_unavailable">அங்கு எதுவும் செய்யாது</string>
+    <string name="dejavu_settings_action_place_full">இடம் இல்லை</string>
+    <string name="dejavu_done">முடிந்தது</string>
     <string name="dejavu_settings_pinned_tabs">பொருத்தப்பட்ட கீற்றுகள்</string>
     <string name="dejavu_settings_unpinned_tabs">பொருத்தப்படாத கீற்றுகள்</string>
     <string name="dejavu_settings_all_actions">அனைத்துச் செயல்களும்</string>
@@ -185,6 +201,9 @@
     <string name="dejavu_actions_bar_search">தேடு</string>
     <string name="dejavu_actions_bar_home">முகப்பு</string>
     <string name="dejavu_settings_more_menu_summary">பக்கங்களுக்குக் கீழே உள்ள செயல் பட்டையும் அது திறக்கும் பட்டியும்</string>
+    <string name="dejavu_more_menu_hint">முழுப் பட்டியைத் திறக்க, செயல் பட்டையை மேலே அல்லது முகவரிப் பட்டையைக் கீழே ஸ்வைப் செய்யவும். ஒரு பொத்தானை நகர்த்த அல்லது அகற்ற அதைத் தட்டவும். நீட்சிகள் எப்போதும் ஒரு முழு வரிசையை எடுத்துக்கொள்ளும்.</string>
+    <string name="dejavu_actions_bar_hint">பக்கங்களுக்குக் கீழே உள்ள பொத்தான்கள். நீங்கள் இருக்கும் பக்கத்தின் மீது அவை இயங்கும்.</string>
+    <string name="dejavu_actions_bar_all_added">ஒவ்வொரு பொத்தானும் ஏற்கெனவே பட்டையில் உள்ளது.</string>
     <string name="dejavu_more_menu_row">வரிசை %1$d</string>
     <string name="dejavu_more_menu_add_item">ஒரு பொத்தானைச் சேர்</string>
     <string name="dejavu_more_menu_add_row">ஒரு வரிசையைச் சேர்</string>
@@ -223,6 +242,22 @@
     <string name="dejavu_container_work">பணி</string>
     <string name="dejavu_container_banking">வங்கி</string>
     <string name="dejavu_container_shopping">கொள்முதல்</string>
+    <string name="dejavu_history_group_by">எதன்படி குழுவாக்குவது</string>
+    <string name="dejavu_history_group_by_date">தேதி</string>
+    <string name="dejavu_history_group_by_workspace">பணியிடம்</string>
+    <string name="dejavu_history_group_by_folder">பணியிடமும் கோப்புறையும்</string>
+    <string name="dejavu_history_other_pages">பிற பக்கங்கள்</string>
+    <string name="dejavu_settings_tab_sleep">உறங்கும் கீற்றுகள்</string>
+    <string name="dejavu_settings_tab_sleep_summary">நீங்கள் பயன்படுத்தாத கீற்றுகள் நினைவகத்தை விடுவிக்க உறங்கும்</string>
+    <string name="dejavu_tab_sleep_hint">உறங்கும் கீற்று அதன் நினைவகத்தை விடுவிக்கும், நீங்கள் அதைத் திறக்கும்போது அதன் பக்கத்தை மீண்டும் ஏற்றும். நீங்கள் பார்க்கும் கீற்று, பிரிந்த காட்சியில் அதன் அருகிலுள்ள கீற்று, ஒலியை இயக்கும் அல்லது படக்கருவியையோ ஒலிவாங்கியையோ பயன்படுத்தும் கீற்றுகள் ஆகியவை விழித்திருக்கும். Dejavu பின்னணியில் இருக்கும்போது Android-க்கு நினைவகம் தேவைப்பட்டால், நீங்கள் கடைசியாகப் பயன்படுத்திய இரண்டு கீற்றுகளைத் தவிர மற்ற எல்லாக் கீற்றுகளும் உறங்கும்.</string>
+    <string name="dejavu_tab_sleep_when">கீற்றை உறங்கவை</string>
+    <plurals name="dejavu_tab_sleep_after_minutes">
+        <item quantity="one">பயன்படுத்தாமல் %d நிமிடத்திற்குப் பிறகு</item>
+        <item quantity="other">பயன்படுத்தாமல் %d நிமிடங்களுக்குப் பிறகு</item>
+    </plurals>
+    <string name="dejavu_tab_sleep_after_hour">பயன்படுத்தாமல் ஒரு மணிநேரத்திற்குப் பிறகு</string>
+    <string name="dejavu_tab_sleep_never">ஒருபோதும் இல்லை</string>
+    <string name="dejavu_startup_crash_body">%1$s-ஐத் திறப்பதில் சிக்கல் ஏற்பட்டது. தொடர்ந்து உலாவ அதை மீண்டும் திறக்கவும்.</string>
     <string name="dejavu_sync_normal_tabs">பொருத்தப்படாத கீற்றுகளை சேர்</string>
     <string name="dejavu_sync_normal_tabs_summary">இது ஒவ்வொரு பணியிடத்தின் மற்ற கீற்றுகளையும் ஒத்திசைக்கிறது, பொருத்தப்பட்ட கீற்றுகள் மற்றும் கோப்புறைகளை மட்டும் அல்ல. அதன் சொந்த பொருத்தப்படாத கீற்றுகளை சேர் விருப்பம் இயக்கத்தில் இருக்கும்போது, Zen அவற்றை ஒத்திசைக்கிறது.</string>
     <plurals name="dejavu_selection_count">

@@ -47,6 +47,12 @@
     <string name="dejavu_folder_rename">Перайменаваць папку</string>
     <string name="dejavu_folder_unpack">Разгрупаваць папку</string>
     <string name="dejavu_folder_top_level">Замацаваныя карткі, без папкі</string>
+    <plurals name="dejavu_folder_open_tabs">
+        <item quantity="one">%1$d адкрытая картка</item>
+        <item quantity="few">%1$d адкрытыя карткі</item>
+        <item quantity="many">%1$d адкрытых картак</item>
+        <item quantity="other">%1$d адкрытых картак</item>
+    </plurals>
     <string name="dejavu_essentials_drop">Пакіньце тут, каб дадаць у важнае</string>
     <string name="dejavu_essentials_full">У важным змяшчаецца да %1$d картак</string>
     <string name="dejavu_temporary_by_default">Часовыя кантэйнеры па змаўчанні</string>
@@ -88,7 +94,19 @@
     <string name="dejavu_action_remove_from_essentials">Прыбраць з важнага</string>
     <string name="dejavu_action_delete">Выдаліць</string>
     <string name="dejavu_settings_title">Dejavu</string>
+    <string name="dejavu_about_content">%1$s — незалежны браўзер, сабраны з адкрытага зыходнага кода Firefox і GeckoView, які распрацоўвае Mozilla. Mozilla не стварае, не ўхваляе і не падтрымлівае яго. Firefox — гандлёвая марка Mozilla Foundation у ЗША і іншых краінах.</string>
+    <string name="dejavu_about_source_code">Зыходны код</string>
     <string name="dejavu_settings_tab_actions">Дзеянні з карткамі</string>
+    <string name="dejavu_settings_tab_actions_entry_summary">Адзін спіс дзеянняў і месцы, дзе паказваецца кожнае</string>
+    <string name="dejavu_settings_tab_actions_hint">Усе дзеянні сабраны ў адным спісе, уключаючы тыя, што вы дадалі самі. Выберыце, дзе паказваць кожнае: на замацаваных картках, незамацаваных картках і папках, на панэлі выбраных картак, у меню «Яшчэ» і на панэлі дзеянняў пад старонкамі. Дзеянні з папкай распаўсюджваюцца на ўсе карткі ў ёй.</string>
+    <string name="dejavu_settings_where_actions_show">Дзе паказваюцца дзеянні</string>
+    <string name="dejavu_settings_folders">Папкі</string>
+    <string name="dejavu_settings_selection_bar">Панэль выбару</string>
+    <string name="dejavu_settings_folder_actions_hint">Выберыце да %1$d кнопак для радкоў папак. Яны дзейнічаюць на ўсе карткі ў папцы і яе падпапках.</string>
+    <string name="dejavu_settings_action_places_none">Нідзе не паказваецца</string>
+    <string name="dejavu_settings_action_place_unavailable">Тут не працуе</string>
+    <string name="dejavu_settings_action_place_full">Няма месца</string>
+    <string name="dejavu_done">Гатова</string>
     <string name="dejavu_settings_pinned_tabs">Замацаваныя карткі</string>
     <string name="dejavu_settings_unpinned_tabs">Незамацаваныя карткі</string>
     <string name="dejavu_settings_all_actions">Усе дзеянні</string>
@@ -185,6 +203,9 @@
     <string name="dejavu_actions_bar_search">Пошук</string>
     <string name="dejavu_actions_bar_home">Галоўная</string>
     <string name="dejavu_settings_more_menu_summary">Панэль дзеянняў пад старонкамі і меню, якое яна адкрывае</string>
+    <string name="dejavu_more_menu_hint">Правядзіце па панэлі дзеянняў уверх або па адрасным радку ўніз, каб адкрыць усё меню. Націсніце на кнопку, каб перамясціць або прыбраць яе. Пашырэнні заўсёды займаюць цэлы радок.</string>
+    <string name="dejavu_actions_bar_hint">Кнопкі пад старонкамі. Яны дзейнічаюць на старонку, якую вы праглядаеце.</string>
+    <string name="dejavu_actions_bar_all_added">Усе кнопкі ўжо на панэлі.</string>
     <string name="dejavu_more_menu_row">Радок %1$d</string>
     <string name="dejavu_more_menu_add_item">Дадаць кнопку</string>
     <string name="dejavu_more_menu_add_row">Дадаць радок</string>
@@ -223,6 +244,24 @@
     <string name="dejavu_container_work">Праца</string>
     <string name="dejavu_container_banking">Банкінг</string>
     <string name="dejavu_container_shopping">Пакупкі</string>
+    <string name="dejavu_history_group_by">Групаванне</string>
+    <string name="dejavu_history_group_by_date">Дата</string>
+    <string name="dejavu_history_group_by_workspace">Прастора</string>
+    <string name="dejavu_history_group_by_folder">Прастора і папка</string>
+    <string name="dejavu_history_other_pages">Іншыя старонкі</string>
+    <string name="dejavu_settings_tab_sleep">Спячыя карткі</string>
+    <string name="dejavu_settings_tab_sleep_summary">Карткі, якімі вы не карыстаецеся, засынаюць, каб вызваліць памяць</string>
+    <string name="dejavu_tab_sleep_hint">Спячая картка вызваляе сваю памяць і зноў загружае старонку, калі вы яе адкрываеце. Картка, якую вы праглядаеце, суседняя з ёй у падзеленым выглядзе і карткі, якія прайграюць гук або выкарыстоўваюць камеру ці мікрафон, не засынаюць. Калі Android патрабуе памяці, пакуль Dejavu працуе ў фоне, засынаюць усе карткі, акрамя дзвюх апошніх, якімі вы карысталіся.</string>
+    <string name="dejavu_tab_sleep_when">Прысыпляць карткі</string>
+    <plurals name="dejavu_tab_sleep_after_minutes">
+        <item quantity="one">Праз %d хвіліну без выкарыстання</item>
+        <item quantity="few">Праз %d хвіліны без выкарыстання</item>
+        <item quantity="many">Праз %d хвілін без выкарыстання</item>
+        <item quantity="other">Праз %d хвілін без выкарыстання</item>
+    </plurals>
+    <string name="dejavu_tab_sleep_after_hour">Праз гадзіну без выкарыстання</string>
+    <string name="dejavu_tab_sleep_never">Ніколі</string>
+    <string name="dejavu_startup_crash_body">Пры адкрыцці %1$s ўзнікла праблема. Адкрыйце яго зноў, каб працягнуць агляданне.</string>
     <string name="dejavu_sync_normal_tabs">Уключаць незамацаваныя карткі</string>
     <string name="dejavu_sync_normal_tabs_summary">Таксама сінхранізуе іншыя карткі кожнай прасторы, а не толькі замацаваныя карткі і папкі. Zen сінхранізуе іх, калі ўключаны яго ўласны параметр «Уключаць незамацаваныя карткі».</string>
     <plurals name="dejavu_selection_count">

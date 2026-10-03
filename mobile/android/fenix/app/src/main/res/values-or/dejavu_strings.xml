@@ -47,6 +47,10 @@
     <string name="dejavu_folder_rename">ଫୋଲଡର ନାମ ପରିବର୍ତ୍ତନ କରନ୍ତୁ</string>
     <string name="dejavu_folder_unpack">ଫୋଲଡର ଅନପ୍ୟାକ୍ କରନ୍ତୁ</string>
     <string name="dejavu_folder_top_level">ପିନ୍ କରାଯାଇଥିବା ଟ୍ୟାବ୍, ଫୋଲଡର ନାହିଁ</string>
+    <plurals name="dejavu_folder_open_tabs">
+        <item quantity="one">%1$d ଖୋଲା ଟ୍ୟାବ୍</item>
+        <item quantity="other">%1$d ଖୋଲା ଟ୍ୟାବ୍</item>
+    </plurals>
     <string name="dejavu_essentials_drop">ଆବଶ୍ୟକୀୟରେ ଯୋଡିବାକୁ ଏଠାରେ ଛାଡନ୍ତୁ</string>
     <string name="dejavu_essentials_full">ଆବଶ୍ୟକୀୟରେ ସର୍ବାଧିକ %1$d ଟ୍ୟାବ୍ ରହିପାରେ</string>
     <string name="dejavu_temporary_by_default">ଡିଫଲ୍ଟ ଭାବେ ଅସ୍ଥାୟୀ କଣ୍ଟେନର</string>
@@ -88,7 +92,19 @@
     <string name="dejavu_action_remove_from_essentials">ଆବଶ୍ୟକୀୟରୁ ହଟାନ୍ତୁ</string>
     <string name="dejavu_action_delete">ଡିଲିଟ୍ କରନ୍ତୁ</string>
     <string name="dejavu_settings_title">Dejavu</string>
+    <string name="dejavu_about_content">%1$s ହେଉଛି Mozilla ର ଓପନ୍ ସୋର୍ସ Firefox ଏବଂ GeckoView କୋଡ୍‌ରୁ ତିଆରି ଏକ ସ୍ୱାଧୀନ ବ୍ରାଉଜର। ଏହାକୁ Mozilla ତିଆରି କରିନାହିଁ, ଏବଂ Mozilla ଏହାକୁ ଅନୁମୋଦନ କିମ୍ବା ସମର୍ଥନ କରେ ନାହିଁ। Firefox ହେଉଛି ଯୁକ୍ତରାଷ୍ଟ୍ର ଆମେରିକା ଏବଂ ଅନ୍ୟାନ୍ୟ ଦେଶରେ Mozilla Foundation ର ଏକ ଟ୍ରେଡମାର୍କ।</string>
+    <string name="dejavu_about_source_code">ସୋର୍ସ କୋଡ୍</string>
     <string name="dejavu_settings_tab_actions">ଟ୍ୟାବ୍ କାର୍ଯ୍ୟ</string>
+    <string name="dejavu_settings_tab_actions_entry_summary">କାର୍ଯ୍ୟଗୁଡ଼ିକର ଗୋଟିଏ ତାଲିକା, ଏବଂ ପ୍ରତ୍ୟେକ କେଉଁଠି ଦେଖାଯାଏ</string>
+    <string name="dejavu_settings_tab_actions_hint">ଆପଣ ନିଜେ ଯୋଡିଥିବା କାର୍ଯ୍ୟ ସହିତ ସମସ୍ତ କାର୍ଯ୍ୟ ଗୋଟିଏ ତାଲିକାରେ ଅଛି। ପ୍ରତ୍ୟେକ କେଉଁଠି ଦେଖାଯିବ ବାଛନ୍ତୁ: ପିନ୍ କରାଯାଇଥିବା ଟ୍ୟାବ୍, ଅନପିନ୍ ଟ୍ୟାବ୍ ଏବଂ ଫୋଲଡରରେ, ବଛାଯାଇଥିବା ଟ୍ୟାବ୍‌ର ବାର୍‌ରେ, ଅଧିକ ମେନୁରେ ଏବଂ ପୃଷ୍ଠା ତଳେ ଥିବା କାର୍ଯ୍ୟ ବାର୍‌ରେ। ଗୋଟିଏ ଫୋଲଡରରେ କରାଯାଉଥିବା କାର୍ଯ୍ୟ ତା ଭିତରର ପ୍ରତ୍ୟେକ ଟ୍ୟାବ୍‌ରେ ଲାଗୁ ହୁଏ।</string>
+    <string name="dejavu_settings_where_actions_show">କାର୍ଯ୍ୟ କେଉଁଠି ଦେଖାଯାଏ</string>
+    <string name="dejavu_settings_folders">ଫୋଲଡରଗୁଡ଼ିକ</string>
+    <string name="dejavu_settings_selection_bar">ଚୟନ ବାର୍</string>
+    <string name="dejavu_settings_folder_actions_hint">ଫୋଲଡର ଧାଡି ପାଇଁ ସର୍ବାଧିକ %1$d ବଟନ୍ ବାଛନ୍ତୁ। ସେଗୁଡ଼ିକ ଫୋଲଡର ଏବଂ ଏହାର ସବଫୋଲଡର ଭିତରେ ଥିବା ପ୍ରତ୍ୟେକ ଟ୍ୟାବ୍‌ରେ କାମ କରେ।</string>
+    <string name="dejavu_settings_action_places_none">କେଉଁଠି ବି ଦେଖାଯାଏ ନାହିଁ</string>
+    <string name="dejavu_settings_action_place_unavailable">ସେଠାରେ କିଛି କରେ ନାହିଁ</string>
+    <string name="dejavu_settings_action_place_full">ଆଉ ସ୍ଥାନ ନାହିଁ</string>
+    <string name="dejavu_done">ହୋଇଗଲା</string>
     <string name="dejavu_settings_pinned_tabs">ପିନ୍ କରାଯାଇଥିବା ଟ୍ୟାବ୍</string>
     <string name="dejavu_settings_unpinned_tabs">ଅନପିନ୍ ଟ୍ୟାବ୍</string>
     <string name="dejavu_settings_all_actions">ସମସ୍ତ କାର୍ଯ୍ୟ</string>
@@ -185,6 +201,9 @@
     <string name="dejavu_actions_bar_search">ଖୋଜନ୍ତୁ</string>
     <string name="dejavu_actions_bar_home">ହୋମ୍</string>
     <string name="dejavu_settings_more_menu_summary">ପୃଷ୍ଠା ତଳେ ଥିବା କାର୍ଯ୍ୟ ବାର୍ ଏବଂ ଏହା ଖୋଲୁଥିବା ମେନୁ</string>
+    <string name="dejavu_more_menu_hint">ପୂରା ମେନୁ ଖୋଲିବାକୁ କାର୍ଯ୍ୟ ବାର୍‌କୁ ଉପରକୁ, କିମ୍ବା ଠିକଣା ବାର୍‌କୁ ତଳକୁ ସ୍ୱାଇପ୍ କରନ୍ତୁ। ଗୋଟିଏ ବଟନ୍‌କୁ ଘୁଞ୍ଚାଇବାକୁ କିମ୍ବା ହଟାଇବାକୁ ଏହାକୁ ଟାପ୍ କରନ୍ତୁ। ଏକ୍ସଟେନସନ ସବୁବେଳେ ଗୋଟିଏ ପୂରା ଧାଡି ନିଏ।</string>
+    <string name="dejavu_actions_bar_hint">ପୃଷ୍ଠା ତଳେ ଥିବା ବଟନ୍। ଆପଣ ଯେଉଁ ପୃଷ୍ଠାରେ ଅଛନ୍ତି, ସେଗୁଡ଼ିକ ସେହି ପୃଷ୍ଠାରେ କାମ କରେ।</string>
+    <string name="dejavu_actions_bar_all_added">ପ୍ରତ୍ୟେକ ବଟନ୍ ପୂର୍ବରୁ ବାର୍‌ରେ ଅଛି।</string>
     <string name="dejavu_more_menu_row">ଧାଡି %1$d</string>
     <string name="dejavu_more_menu_add_item">ଏକ ବଟନ୍ ଯୋଡନ୍ତୁ</string>
     <string name="dejavu_more_menu_add_row">ଏକ ଧାଡି ଯୋଡନ୍ତୁ</string>
@@ -223,6 +242,22 @@
     <string name="dejavu_container_work">କାର୍ଯ୍ୟ</string>
     <string name="dejavu_container_banking">ବ୍ୟାଙ୍କିଂ</string>
     <string name="dejavu_container_shopping">ସପିଂ</string>
+    <string name="dejavu_history_group_by">କେଉଁ ଆଧାରରେ ଗୋଷ୍ଠୀ କରିବେ</string>
+    <string name="dejavu_history_group_by_date">ତାରିଖ</string>
+    <string name="dejavu_history_group_by_workspace">କାର୍ଯ୍ୟକ୍ଷେତ୍ର</string>
+    <string name="dejavu_history_group_by_folder">କାର୍ଯ୍ୟକ୍ଷେତ୍ର ଏବଂ ଫୋଲଡର</string>
+    <string name="dejavu_history_other_pages">ଅନ୍ୟ ପୃଷ୍ଠା</string>
+    <string name="dejavu_settings_tab_sleep">ସ୍ଲିପ୍‌ରେ ଥିବା ଟ୍ୟାବ୍</string>
+    <string name="dejavu_settings_tab_sleep_summary">ଆପଣ ବ୍ୟବହାର କରୁନଥିବା ଟ୍ୟାବ୍ ମେମୋରୀ ଖାଲି କରିବାକୁ ସ୍ଲିପ୍‌ରେ ଯାଏ</string>
+    <string name="dejavu_tab_sleep_hint">ସ୍ଲିପ୍‌ରେ ଥିବା ଟ୍ୟାବ୍ ନିଜର ମେମୋରୀ ଖାଲି କରେ ଏବଂ ଆପଣ ଏହାକୁ ଖୋଲିଲେ ଏହାର ପୃଷ୍ଠା ପୁଣି ଲୋଡ୍ କରେ। ଆପଣ ଦେଖୁଥିବା ଟ୍ୟାବ୍, ବିଭାଜିତ ଦୃଶ୍ୟରେ ତା ପାଖରେ ଥିବା ଟ୍ୟାବ୍, ଏବଂ ଶବ୍ଦ ବଜାଉଥିବା କିମ୍ବା କ୍ୟାମେରା ବା ମାଇକ୍ରୋଫୋନ୍ ବ୍ୟବହାର କରୁଥିବା ଟ୍ୟାବ୍ ସକ୍ରିୟ ରହେ। Dejavu ପୃଷ୍ଠଭୂମିରେ ଥିବାବେଳେ Android କୁ ମେମୋରୀ ଦରକାର ହେଲେ, ଆପଣ ଶେଷରେ ବ୍ୟବହାର କରିଥିବା ଦୁଇଟି ଟ୍ୟାବ୍ ଛଡ଼ା ଅନ୍ୟ ସମସ୍ତ ଟ୍ୟାବ୍ ସ୍ଲିପ୍‌ରେ ଯାଏ।</string>
+    <string name="dejavu_tab_sleep_when">ଟ୍ୟାବ୍‌କୁ ସ୍ଲିପ୍ କରନ୍ତୁ</string>
+    <plurals name="dejavu_tab_sleep_after_minutes">
+        <item quantity="one">%d ମିନିଟ୍ ବ୍ୟବହାର ନହେଲେ</item>
+        <item quantity="other">%d ମିନିଟ୍ ବ୍ୟବହାର ନହେଲେ</item>
+    </plurals>
+    <string name="dejavu_tab_sleep_after_hour">ଏକ ଘଣ୍ଟା ବ୍ୟବହାର ନହେଲେ</string>
+    <string name="dejavu_tab_sleep_never">କଦାପି ନୁହେଁ</string>
+    <string name="dejavu_startup_crash_body">%1$s ଖୋଲିବାରେ ଏକ ସମସ୍ୟା ହେଲା। ବ୍ରାଉଜିଂ ଜାରି ରଖିବାକୁ ଏହାକୁ ପୁଣି ଖୋଲନ୍ତୁ।</string>
     <string name="dejavu_sync_normal_tabs">ପିନ୍ ହୋଇନଥିବା ଟ୍ୟାବ୍ ଅନ୍ତର୍ଭୁକ୍ତ କରନ୍ତୁ</string>
     <string name="dejavu_sync_normal_tabs_summary">ଏହା ପ୍ରତ୍ୟେକ କାର୍ଯ୍ୟକ୍ଷେତ୍ରର ଅନ୍ୟ ଟ୍ୟାବ୍ ମଧ୍ୟ ସିଙ୍କ କରେ, କେବଳ ପିନ୍ ଟ୍ୟାବ୍ ଏବଂ ଫୋଲଡର ନୁହେଁ। ଏହାର ନିଜସ୍ୱ ପିନ୍ ହୋଇନଥିବା ଟ୍ୟାବ୍ ଅନ୍ତର୍ଭୁକ୍ତ କରନ୍ତୁ ବିକଳ୍ପ ଅନ୍ ଥିଲେ, Zen ସେଗୁଡ଼ିକୁ ସିଙ୍କ କରେ।</string>
     <plurals name="dejavu_selection_count">

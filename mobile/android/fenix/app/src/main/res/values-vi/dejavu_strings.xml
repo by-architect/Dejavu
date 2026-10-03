@@ -47,6 +47,9 @@
     <string name="dejavu_folder_rename">Đổi tên thư mục</string>
     <string name="dejavu_folder_unpack">Bung thư mục</string>
     <string name="dejavu_folder_top_level">Thẻ đã ghim, không thuộc thư mục</string>
+    <plurals name="dejavu_folder_open_tabs">
+        <item quantity="other">%1$d thẻ đang mở</item>
+    </plurals>
     <string name="dejavu_essentials_drop">Thả vào đây để thêm vào trang thiết yếu</string>
     <string name="dejavu_essentials_full">Trang thiết yếu chứa được tối đa %1$d thẻ</string>
     <string name="dejavu_temporary_by_default">Mặc định dùng vùng chứa tạm thời</string>
@@ -88,7 +91,19 @@
     <string name="dejavu_action_remove_from_essentials">Xóa khỏi trang thiết yếu</string>
     <string name="dejavu_action_delete">Xóa</string>
     <string name="dejavu_settings_title">Dejavu</string>
+    <string name="dejavu_about_content">%1$s là một trình duyệt độc lập được xây dựng từ mã nguồn mở Firefox và GeckoView của Mozilla. Trình duyệt này không do Mozilla tạo ra, xác nhận hay hỗ trợ. Firefox là nhãn hiệu của Mozilla Foundation tại Hoa Kỳ và các quốc gia khác.</string>
+    <string name="dejavu_about_source_code">Mã nguồn</string>
     <string name="dejavu_settings_tab_actions">Thao tác thẻ</string>
+    <string name="dejavu_settings_tab_actions_entry_summary">Một danh sách thao tác và nơi hiển thị của từng thao tác</string>
+    <string name="dejavu_settings_tab_actions_hint">Tất cả thao tác nằm trong một danh sách, kể cả những thao tác bạn tự thêm. Chọn nơi hiển thị từng thao tác: trên thẻ đã ghim, thẻ chưa ghim và thư mục, trên thanh của các thẻ đang chọn, trong Trình đơn khác và trên thanh thao tác bên dưới trang. Thao tác trên một thư mục sẽ áp dụng cho mọi thẻ bên trong.</string>
+    <string name="dejavu_settings_where_actions_show">Nơi hiển thị thao tác</string>
+    <string name="dejavu_settings_folders">Thư mục</string>
+    <string name="dejavu_settings_selection_bar">Thanh lựa chọn</string>
+    <string name="dejavu_settings_folder_actions_hint">Chọn tối đa %1$d nút cho hàng thư mục. Các nút này áp dụng cho mọi thẻ trong thư mục và các thư mục con.</string>
+    <string name="dejavu_settings_action_places_none">Không hiển thị ở đâu cả</string>
+    <string name="dejavu_settings_action_place_unavailable">Không có tác dụng ở đây</string>
+    <string name="dejavu_settings_action_place_full">Hết chỗ</string>
+    <string name="dejavu_done">Xong</string>
     <string name="dejavu_settings_pinned_tabs">Thẻ đã ghim</string>
     <string name="dejavu_settings_unpinned_tabs">Thẻ chưa ghim</string>
     <string name="dejavu_settings_all_actions">Tất cả thao tác</string>
@@ -185,6 +200,9 @@
     <string name="dejavu_actions_bar_search">Tìm kiếm</string>
     <string name="dejavu_actions_bar_home">Trang chủ</string>
     <string name="dejavu_settings_more_menu_summary">Thanh thao tác bên dưới trang và trình đơn mà nó mở ra</string>
+    <string name="dejavu_more_menu_hint">Vuốt thanh thao tác lên, hoặc vuốt thanh địa chỉ xuống, để mở toàn bộ trình đơn. Nhấn vào một nút để di chuyển hoặc xóa nút đó. Tiện ích luôn chiếm trọn một hàng.</string>
+    <string name="dejavu_actions_bar_hint">Các nút bên dưới trang. Các nút này áp dụng cho trang bạn đang xem.</string>
+    <string name="dejavu_actions_bar_all_added">Mọi nút đều đã có trên thanh.</string>
     <string name="dejavu_more_menu_row">Hàng %1$d</string>
     <string name="dejavu_more_menu_add_item">Thêm một nút</string>
     <string name="dejavu_more_menu_add_row">Thêm một hàng</string>
@@ -223,6 +241,21 @@
     <string name="dejavu_container_work">Công việc</string>
     <string name="dejavu_container_banking">Ngân hàng</string>
     <string name="dejavu_container_shopping">Mua sắm</string>
+    <string name="dejavu_history_group_by">Nhóm theo</string>
+    <string name="dejavu_history_group_by_date">Ngày</string>
+    <string name="dejavu_history_group_by_workspace">Không gian làm việc</string>
+    <string name="dejavu_history_group_by_folder">Không gian làm việc và thư mục</string>
+    <string name="dejavu_history_other_pages">Trang khác</string>
+    <string name="dejavu_settings_tab_sleep">Thẻ tạm ngủ</string>
+    <string name="dejavu_settings_tab_sleep_summary">Thẻ bạn không dùng sẽ tạm ngủ để giải phóng bộ nhớ</string>
+    <string name="dejavu_tab_sleep_hint">Thẻ tạm ngủ sẽ giải phóng bộ nhớ và tải lại trang khi bạn mở nó. Thẻ bạn đang xem, thẻ bên cạnh nó trong chế độ chia đôi màn hình, và các thẻ đang phát âm thanh hoặc dùng máy ảnh hay micrô sẽ không tạm ngủ. Khi Android cần bộ nhớ trong lúc Dejavu chạy nền, mọi thẻ sẽ tạm ngủ, trừ hai thẻ bạn dùng gần nhất.</string>
+    <string name="dejavu_tab_sleep_when">Cho thẻ tạm ngủ</string>
+    <plurals name="dejavu_tab_sleep_after_minutes">
+        <item quantity="other">Sau %d phút không dùng</item>
+    </plurals>
+    <string name="dejavu_tab_sleep_after_hour">Sau một giờ không dùng</string>
+    <string name="dejavu_tab_sleep_never">Không bao giờ</string>
+    <string name="dejavu_startup_crash_body">Đã xảy ra sự cố khi mở %1$s. Hãy mở lại để tiếp tục duyệt web.</string>
     <string name="dejavu_sync_normal_tabs">Bao gồm thẻ chưa ghim</string>
     <string name="dejavu_sync_normal_tabs_summary">Tính năng này cũng đồng bộ hóa các thẻ khác của mỗi không gian làm việc, không chỉ thẻ đã ghim và thư mục. Zen đồng bộ hóa chúng khi tùy chọn Bao gồm thẻ chưa ghim của riêng Zen được bật.</string>
     <plurals name="dejavu_selection_count">

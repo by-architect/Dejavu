@@ -47,6 +47,10 @@
     <string name="dejavu_folder_rename">پوشه‌نین آدینی دَییش</string>
     <string name="dejavu_folder_unpack">پوشه‌نی داغیت</string>
     <string name="dejavu_folder_top_level">برکیدیلمیش تاغلار، پوشه‌سیز</string>
+    <plurals name="dejavu_folder_open_tabs">
+        <item quantity="one">%1$d آچیق تاغ</item>
+        <item quantity="other">%1$d آچیق تاغ</item>
+    </plurals>
     <string name="dejavu_essentials_drop">اساس‌لارا اَلاوه ائتمک اوچون بورایا بوراخین</string>
     <string name="dejavu_essentials_full">اساس‌لار ان چوخ %1$d تاغ توتور</string>
     <string name="dejavu_temporary_by_default">ستاندارت اولاراق موقتی کانتینرلر</string>
@@ -88,7 +92,19 @@
     <string name="dejavu_action_remove_from_essentials">اساس‌لاردان چیخار</string>
     <string name="dejavu_action_delete">سیل</string>
     <string name="dejavu_settings_title">Dejavu</string>
+    <string name="dejavu_about_content">%1$s، Mozilla-نین آچیق قایناقلی Firefox و GeckoView کودوندان قورولموش مستقل بیر مورورچودور. اونو Mozilla دوزلتمه‌ییب، Mozilla اونو تأیید ائتمیر و دستکله‌میر. Firefox، آمریکا بیرلشمیش ایالتلرینده و باشقا اؤلکه‌لرده Mozilla فوندونون تیجارت نیشانی‌دیر.</string>
+    <string name="dejavu_about_source_code">قایناق کودو</string>
     <string name="dejavu_settings_tab_actions">تاغ عملیات‌لاری</string>
+    <string name="dejavu_settings_tab_actions_entry_summary">عملیات‌لارین بیر لیستی، و هر بیرینین هارادا گؤروندویو</string>
+    <string name="dejavu_settings_tab_actions_hint">بوتون عملیات‌لار، اؤزونوز اَلاوه اتدیک‌لرینیز ده داخیل اولماقلا، بیر لیستده‌دیر. هر بیرینین هارادا گؤرونه‌جه‌یینی سئچین: برکیدیلمیش تاغلاردا، برکیدیلمه‌میش تاغلاردا و پوشه‌لرده، سئچیلمیش تاغلارین پانئلینده، «داها چوخ» منوسوندا و صفحه‌لرین آلتینداکی عملیات‌لار پانئلینده. پوشه اوزرینده‌کی عملیات‌لار اونون ایچینده‌کی هر تاغا چاتیر.</string>
+    <string name="dejavu_settings_where_actions_show">عملیات‌لار هارادا گؤرونور</string>
+    <string name="dejavu_settings_folders">پوشه‌لر</string>
+    <string name="dejavu_settings_selection_bar">سئچیم پانئلی</string>
+    <string name="dejavu_settings_folder_actions_hint">پوشه سیرالاری اوچون ان چوخ %1$d دوگمه سئچین. اونلار پوشه‌نین و آلت پوشه‌لرینین ایچینده‌کی هر تاغ اوزرینده ایشله‌ییر.</string>
+    <string name="dejavu_settings_action_places_none">هئچ یئرده گؤستریلمیر</string>
+    <string name="dejavu_settings_action_place_unavailable">اورادا هئچ نه ائتمیر</string>
+    <string name="dejavu_settings_action_place_full">یئر قالماییب</string>
+    <string name="dejavu_done">حاضیر</string>
     <string name="dejavu_settings_pinned_tabs">برکیدیلمیش تاغلار</string>
     <string name="dejavu_settings_unpinned_tabs">برکیدیلمه‌میش تاغلار</string>
     <string name="dejavu_settings_all_actions">بوتون عملیات‌لار</string>
@@ -185,6 +201,9 @@
     <string name="dejavu_actions_bar_search">آختار</string>
     <string name="dejavu_actions_bar_home">آنا صفحه</string>
     <string name="dejavu_settings_more_menu_summary">صفحه‌لرین آلتینداکی عملیات‌لار پانئلی و اونون آچدیغی منو</string>
+    <string name="dejavu_more_menu_hint">بوتون منونو آچماق اوچون عملیات‌لار پانئلینی یوخاری، یا دا آدرس چوبوغونو آشاغی سوروشدورون. بیر دوگمه‌نی داشیماق یا سیلمک اوچون اونا توخونون. اوزانتی‌لار همیشه بوتؤو بیر سیرانی توتور.</string>
+    <string name="dejavu_actions_bar_hint">صفحه‌لرین آلتینداکی دوگمه‌لر. اونلار اولدوغونوز صفحه اوزرینده ایشله‌ییر.</string>
+    <string name="dejavu_actions_bar_all_added">بوتون دوگمه‌لر آرتیق پانئلده‌دیر.</string>
     <string name="dejavu_more_menu_row">%1$d-جی سیرا</string>
     <string name="dejavu_more_menu_add_item">دوگمه اَلاوه ات</string>
     <string name="dejavu_more_menu_add_row">سیرا اَلاوه ات</string>
@@ -223,6 +242,22 @@
     <string name="dejavu_container_work">ایش</string>
     <string name="dejavu_container_banking">بانک</string>
     <string name="dejavu_container_shopping">آلیش-وئریش</string>
+    <string name="dejavu_history_group_by">قروپلاشدیرما</string>
+    <string name="dejavu_history_group_by_date">تاریخ</string>
+    <string name="dejavu_history_group_by_workspace">ایش ساحه‌سی</string>
+    <string name="dejavu_history_group_by_folder">ایش ساحه‌سی و پوشه</string>
+    <string name="dejavu_history_other_pages">باشقا صفحه‌لر</string>
+    <string name="dejavu_settings_tab_sleep">یوخوداکی تاغلار</string>
+    <string name="dejavu_settings_tab_sleep_summary">ایشلتمه‌دیگینیز تاغلار یادداشی بوشالتماق اوچون یوخویا گئدیر</string>
+    <string name="dejavu_tab_sleep_hint">یوخوداکی تاغ اؤز یادداشینی بوشالدیر و سیز اونو آچاندا صفحه‌سینی یئنیدن یوکله‌ییر. باخدیغینیز تاغ، بؤلونموش گؤرونوشده اونون یانینداکی تاغ و سس چالان یا کامرا یا میکروفوندان ایستیفاده ادن تاغلار اویاق قالیر. Dejavu آرخا پلاندا اولارکن Android-ه یادداش لازیم اولاندا، سون ایشلتدیگینیز ایکی تاغدان باشقا بوتون تاغلار یوخویا گئدیر.</string>
+    <string name="dejavu_tab_sleep_when">تاغی یوخویا قوی</string>
+    <plurals name="dejavu_tab_sleep_after_minutes">
+        <item quantity="one">%d دقیقه ایشله‌دیلمه‌دیکدن سونرا</item>
+        <item quantity="other">%d دقیقه ایشله‌دیلمه‌دیکدن سونرا</item>
+    </plurals>
+    <string name="dejavu_tab_sleep_after_hour">بیر ساعت ایشله‌دیلمه‌دیکدن سونرا</string>
+    <string name="dejavu_tab_sleep_never">هئچ زامان</string>
+    <string name="dejavu_startup_crash_body">%1$s آچیلارکن بیر پروبلئم یاراندی. گزمه‌یه داوام ائتمک اوچون اونو یئنیدن آچین.</string>
     <string name="dejavu_sync_normal_tabs">برکیدیلمه‌میش تاغلاری داخیل ات</string>
     <string name="dejavu_sync_normal_tabs_summary">بوندان علاوه، هر ایش ساحه‌سی‌نین باشقا تاغلارینی دا همگام‌سازی ادیر، تک‌جه برکیدیلمیش تاغلار و پوشه‌لر یوخ. اؤزونون «برکیدیلمه‌میش تاغلاری داخیل ات» سئچیمی آچیق اولاندا، Zen اونلاری همگام‌سازی ادیر.</string>
     <plurals name="dejavu_selection_count">

@@ -47,6 +47,9 @@
     <string name="dejavu_folder_rename">폴더 이름 바꾸기</string>
     <string name="dejavu_folder_unpack">폴더 풀기</string>
     <string name="dejavu_folder_top_level">고정된 탭(폴더 없음)</string>
+    <plurals name="dejavu_folder_open_tabs">
+        <item quantity="other">열린 탭 %1$d개</item>
+    </plurals>
     <string name="dejavu_essentials_drop">여기에 놓아 필수 사이트에 추가</string>
     <string name="dejavu_essentials_full">필수 사이트에는 최대 %1$d개의 탭을 담을 수 있습니다</string>
     <string name="dejavu_temporary_by_default">기본적으로 임시 컨테이너 사용</string>
@@ -88,7 +91,19 @@
     <string name="dejavu_action_remove_from_essentials">필수 사이트에서 제거</string>
     <string name="dejavu_action_delete">삭제</string>
     <string name="dejavu_settings_title">Dejavu</string>
+    <string name="dejavu_about_content">%1$s는 Mozilla의 오픈 소스 Firefox 및 GeckoView 코드로 만든 독립 브라우저입니다. Mozilla가 만들거나 보증하거나 지원하는 제품이 아닙니다. Firefox는 미국 및 기타 국가에서 Mozilla Foundation의 상표입니다.</string>
+    <string name="dejavu_about_source_code">소스 코드</string>
     <string name="dejavu_settings_tab_actions">탭 작업</string>
+    <string name="dejavu_settings_tab_actions_entry_summary">하나의 작업 목록과 각 작업의 표시 위치</string>
+    <string name="dejavu_settings_tab_actions_hint">직접 추가한 작업을 포함해 모든 작업이 하나의 목록에 있습니다. 각 작업을 표시할 위치를 선택하세요: 고정된 탭, 고정되지 않은 탭, 폴더, 탭을 선택했을 때 나타나는 모음, 더보기 메뉴, 페이지 아래의 작업 모음. 폴더에 대한 작업은 폴더 안의 모든 탭에 적용됩니다.</string>
+    <string name="dejavu_settings_where_actions_show">작업 표시 위치</string>
+    <string name="dejavu_settings_folders">폴더</string>
+    <string name="dejavu_settings_selection_bar">선택 모음</string>
+    <string name="dejavu_settings_folder_actions_hint">폴더 줄에 표시할 버튼을 최대 %1$d개까지 선택하세요. 버튼은 폴더와 하위 폴더 안의 모든 탭에 적용됩니다.</string>
+    <string name="dejavu_settings_action_places_none">어디에도 표시되지 않음</string>
+    <string name="dejavu_settings_action_place_unavailable">여기서는 작동하지 않음</string>
+    <string name="dejavu_settings_action_place_full">남은 자리 없음</string>
+    <string name="dejavu_done">완료</string>
     <string name="dejavu_settings_pinned_tabs">고정된 탭</string>
     <string name="dejavu_settings_unpinned_tabs">고정되지 않은 탭</string>
     <string name="dejavu_settings_all_actions">모든 작업</string>
@@ -185,6 +200,9 @@
     <string name="dejavu_actions_bar_search">검색</string>
     <string name="dejavu_actions_bar_home">홈</string>
     <string name="dejavu_settings_more_menu_summary">페이지 아래의 작업 모음과 여기서 열리는 메뉴</string>
+    <string name="dejavu_more_menu_hint">작업 모음을 위로, 또는 주소 표시줄을 아래로 스와이프하면 전체 메뉴가 열립니다. 버튼을 탭하면 이동하거나 제거할 수 있습니다. 확장 기능은 항상 한 줄 전체를 차지합니다.</string>
+    <string name="dejavu_actions_bar_hint">페이지 아래의 버튼입니다. 현재 보고 있는 페이지에 적용됩니다.</string>
+    <string name="dejavu_actions_bar_all_added">모든 버튼이 이미 모음에 있습니다.</string>
     <string name="dejavu_more_menu_row">%1$d번째 줄</string>
     <string name="dejavu_more_menu_add_item">버튼 추가</string>
     <string name="dejavu_more_menu_add_row">줄 추가</string>
@@ -223,6 +241,21 @@
     <string name="dejavu_container_work">직장</string>
     <string name="dejavu_container_banking">금융</string>
     <string name="dejavu_container_shopping">쇼핑</string>
+    <string name="dejavu_history_group_by">그룹화 기준</string>
+    <string name="dejavu_history_group_by_date">날짜</string>
+    <string name="dejavu_history_group_by_workspace">작업 공간</string>
+    <string name="dejavu_history_group_by_folder">작업 공간 및 폴더</string>
+    <string name="dejavu_history_other_pages">기타 페이지</string>
+    <string name="dejavu_settings_tab_sleep">절전 탭</string>
+    <string name="dejavu_settings_tab_sleep_summary">사용하지 않는 탭을 절전 상태로 전환해 메모리 확보</string>
+    <string name="dejavu_tab_sleep_hint">절전 탭은 메모리를 비우고, 탭을 열면 페이지를 다시 불러옵니다. 보고 있는 탭, 분할 보기에서 그 옆에 있는 탭, 소리를 재생하거나 카메라 또는 마이크를 사용 중인 탭은 절전되지 않습니다. Dejavu가 백그라운드에 있을 때 Android에 메모리가 필요하면 마지막으로 사용한 두 탭을 제외한 모든 탭이 절전됩니다.</string>
+    <string name="dejavu_tab_sleep_when">탭 절전 시점</string>
+    <plurals name="dejavu_tab_sleep_after_minutes">
+        <item quantity="other">%d분 동안 사용하지 않으면</item>
+    </plurals>
+    <string name="dejavu_tab_sleep_after_hour">1시간 동안 사용하지 않으면</string>
+    <string name="dejavu_tab_sleep_never">절전 안 함</string>
+    <string name="dejavu_startup_crash_body">%1$s를 여는 데 문제가 발생했습니다. 계속 탐색하려면 다시 여세요.</string>
     <string name="dejavu_sync_normal_tabs">고정되지 않은 탭 포함</string>
     <string name="dejavu_sync_normal_tabs_summary">각 작업 공간의 다른 탭도 동기화하며, 고정된 탭과 폴더만 동기화하는 것이 아닙니다. Zen은 자체 고정되지 않은 탭 포함 옵션이 켜져 있으면 이를 동기화합니다.</string>
     <plurals name="dejavu_selection_count">

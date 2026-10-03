@@ -47,6 +47,10 @@
     <string name="dejavu_folder_rename">Апапка ахьӡ аҧсахра</string>
     <string name="dejavu_folder_unpack">Апапка аҟaҵра</string>
     <string name="dejavu_folder_top_level">Ификсациатә абларҭақәа, апапка ада</string>
+    <plurals name="dejavu_folder_open_tabs">
+        <item quantity="one">%1$d абларҭа иаарту</item>
+        <item quantity="other">%1$d абларҭа иаарту</item>
+    </plurals>
     <string name="dejavu_essentials_drop">Ари аҟны идырҳәыр, иҵакыу сайтқәа рахь идалаӡаны</string>
     <string name="dejavu_essentials_full">Иҵакыу сайтқәа рҟны %1$d абларҭа рҟынӡа аамҭа</string>
     <string name="dejavu_temporary_by_default">Аамҭатәи контейнерқәа акы иргылаз</string>
@@ -88,7 +92,19 @@
     <string name="dejavu_action_remove_from_essentials">Иҵакыу сайтқәа рҟынтә аныхра</string>
     <string name="dejavu_action_delete">Аудаление</string>
     <string name="dejavu_settings_title">Dejavu</string>
+    <string name="dejavu_about_content">%1$s — Mozilla иатәу Firefox и GeckoView рхыҵхырҭатә код аарту аҟынтә иҟаҵоу зхы иақәиҭу абраузер ауп. Mozilla уи еиқәнамыршәеит, иаднамкылеит, насгьы иацхраауам. Firefox — Mozilla Foundation атоварнатә дырга ауп Америкатәи Еиду Аштатқәеи егьырҭ атәылақәеи рҟны.</string>
+    <string name="dejavu_about_source_code">Ахыҵхырҭатә код</string>
     <string name="dejavu_settings_tab_actions">Абларҭа аҟaҵарақәа</string>
+    <string name="dejavu_settings_tab_actions_entry_summary">Аҟаҵарақәа рсиа акы, насгьы дарбанзаалак ахьаадырԥшуа</string>
+    <string name="dejavu_settings_tab_actions_hint">Аҟаҵарақәа зегьы, шәара ишәыцҵаз рыдҵаны, сиак аҟны иҟоуп. Иалышәх дарбанзаалак ахьаадырԥшуа: ификсациатә абларҭақәа, ификсациам абларҭақәа ма апапкақәа рҟны, абларҭақәа ралхраан иаадырԥшуа апанель аҟны, Адополнительнатә меню аҟны, насгьы адаҟьақәа рҵаҟа иҟоу аҟаҵарақәа рпанель аҟны. Апапка аҟаҵарақәа уи иагәылоу абларҭақәа зегьы ирыхьӡоит.</string>
+    <string name="dejavu_settings_where_actions_show">Аҟаҵарақәа ахьаадырԥшуа</string>
+    <string name="dejavu_settings_folders">Апапкақәа</string>
+    <string name="dejavu_settings_selection_bar">Авыбор апанель</string>
+    <string name="dejavu_settings_folder_actions_hint">Апапкақәа рряд азы %1$d акнопка рҟынӡа шәхы. Урҭ апапка ма уи иагәылоу апапкақәа рҟны иҟоу абларҭақәа зегьы ирыхьӡоит.</string>
+    <string name="dejavu_settings_action_places_none">Иаадырԥшӡом</string>
+    <string name="dejavu_settings_action_place_unavailable">Ара аус ауӡом</string>
+    <string name="dejavu_settings_action_place_full">Аҭыԥ ыҟам</string>
+    <string name="dejavu_done">Амазеи</string>
     <string name="dejavu_settings_pinned_tabs">Ификсациатә абларҭақәа</string>
     <string name="dejavu_settings_unpinned_tabs">Ификсациам абларҭақәа</string>
     <string name="dejavu_settings_all_actions">Аҟaҵарақәа зегьы</string>
@@ -185,6 +201,9 @@
     <string name="dejavu_actions_bar_search">Аԥшаара</string>
     <string name="dejavu_actions_bar_home">Аҩны</string>
     <string name="dejavu_settings_more_menu_summary">Адаҟьақәа рҵыхәтәантәи аҟны иҟоу аҟaҵарақәа рпанель, насгьы иаартуа аменю</string>
+    <string name="dejavu_more_menu_hint">Аменю зегьы аартразы, аҟаҵарақәа рпанель аҩада, ма адресқәа рпанель алада инаскьатәуп. Акнопка аиҭаҵразы ма аныхразы, иақәышәӷәӷәа. Аиҵыхрақәа еснагь аряд зегьы ааныркылоит.</string>
+    <string name="dejavu_actions_bar_hint">Адаҟьақәа рҵаҟа иҟоу акнопкақәа. Урҭ иаарту адаҟьа аҟны аус руеит.</string>
+    <string name="dejavu_actions_bar_all_added">Акнопкақәа зегьы иахьазы апанель аҟны иҟоуп.</string>
     <string name="dejavu_more_menu_row">Аряд %1$d</string>
     <string name="dejavu_more_menu_add_item">Акнопка адалаӡара</string>
     <string name="dejavu_more_menu_add_row">Аряд адалаӡара</string>
@@ -223,6 +242,22 @@
     <string name="dejavu_container_work">Аусура</string>
     <string name="dejavu_container_banking">Абанктә</string>
     <string name="dejavu_container_shopping">Ашопинг</string>
+    <string name="dejavu_history_group_by">Агәыԥқәа рҟаҵара</string>
+    <string name="dejavu_history_group_by_date">Арыцхә</string>
+    <string name="dejavu_history_group_by_workspace">Аҭыԥ</string>
+    <string name="dejavu_history_group_by_folder">Аҭыԥи апапкеи</string>
+    <string name="dejavu_history_other_pages">Егьырҭ адаҟьақәа</string>
+    <string name="dejavu_settings_tab_sleep">Ицәо абларҭақәа</string>
+    <string name="dejavu_settings_tab_sleep_summary">Шәхы иазышәмырхәо абларҭақәа агәынкылара аҭацәразы ицәоит</string>
+    <string name="dejavu_tab_sleep_hint">Ицәо абларҭа агәынкылара аҭацәнатәуеит, насгьы иаашәыртлак адаҟьа даҽазнык иҭанагалоит. Ишәыԥшуа абларҭа, еихшаз аԥшра аҟны уи иавагылоу абларҭа, насгьы абжьы алызго ма акамера ма амикрофон зхы иазырхәо абларҭақәа ицәаӡом. Dejavu аҿаԥшьаҿы ианыҟоу Android агәынкылара анаҭаххалак, иаҵыхәтәантәиз ишәхы иазышәырхәаз абларҭақәа ҩба рыда, абларҭақәа зегьы ицәоит.</string>
+    <string name="dejavu_tab_sleep_when">Абларҭақәа рырцәара</string>
+    <plurals name="dejavu_tab_sleep_after_minutes">
+        <item quantity="one">%d минуҭ аусурадара ашьҭахь</item>
+        <item quantity="other">%d минуҭ аусурадара ашьҭахь</item>
+    </plurals>
+    <string name="dejavu_tab_sleep_after_hour">Сааҭк аусурадара ашьҭахь</string>
+    <string name="dejavu_tab_sleep_never">Ахаангьы</string>
+    <string name="dejavu_startup_crash_body">%1$s аартраҿы апроблема ыҟан. Аԥшаара иацышәҵарц азы, даҽазнык иаашәырт.</string>
     <string name="dejavu_sync_normal_tabs">Ификсациатә акәымкәа абларҭақәа рыдкылара</string>
     <string name="dejavu_sync_normal_tabs_summary">Убри аҟынтәи, алагала абжьаратә абларҭақәа зегьы аҭыԥ ажәку рсинхронизациа наӡеит, ификсациатә абларҭақәа ма ипапкақәа мацара акәымкәа. Zen абар, иара хатә «Ификсациатә акәымкәа абларҭақәа рыдкылара» ишьақәыргылаз аамҭазы, урҭ дасинхронизациа еиҭалоит.</string>
     <plurals name="dejavu_selection_count">

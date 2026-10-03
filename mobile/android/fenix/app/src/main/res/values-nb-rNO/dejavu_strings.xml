@@ -47,6 +47,10 @@
     <string name="dejavu_folder_rename">Endre navn på mappe</string>
     <string name="dejavu_folder_unpack">Pakk ut mappe</string>
     <string name="dejavu_folder_top_level">Festede faner, ingen mappe</string>
+    <plurals name="dejavu_folder_open_tabs">
+        <item quantity="one">%1$d åpen fane</item>
+        <item quantity="other">%1$d åpne faner</item>
+    </plurals>
     <string name="dejavu_essentials_drop">Slipp her for å legge til i favoritter</string>
     <string name="dejavu_essentials_full">Favoritter har plass til %1$d faner</string>
     <string name="dejavu_temporary_by_default">Midlertidige beholdere som standard</string>
@@ -88,7 +92,19 @@
     <string name="dejavu_action_remove_from_essentials">Fjern fra favoritter</string>
     <string name="dejavu_action_delete">Slett</string>
     <string name="dejavu_settings_title">Dejavu</string>
+    <string name="dejavu_about_content">%1$s er en uavhengig nettleser bygget fra Mozillas åpne kildekode for Firefox og GeckoView. Den er ikke laget, godkjent eller støttet av Mozilla. Firefox er et varemerke for Mozilla Foundation i USA og andre land.</string>
+    <string name="dejavu_about_source_code">Kildekode</string>
     <string name="dejavu_settings_tab_actions">Fanehandlinger</string>
+    <string name="dejavu_settings_tab_actions_entry_summary">Én liste over handlinger, og hvor hver av dem vises</string>
+    <string name="dejavu_settings_tab_actions_hint">Alle handlinger ligger i én liste, også de du legger til selv. Velg hvor hver av dem skal vises: på festede faner, ikke-festede faner og mapper, i linjen for valgte faner, i Mer-menyen og i handlingslinjen under sider. Handlinger på en mappe gjelder alle fanene i den.</string>
+    <string name="dejavu_settings_where_actions_show">Hvor handlinger vises</string>
+    <string name="dejavu_settings_folders">Mapper</string>
+    <string name="dejavu_settings_selection_bar">Utvalgslinje</string>
+    <string name="dejavu_settings_folder_actions_hint">Velg opptil %1$d knapper for rader med mapper. De virker på alle faner i mappen og undermappene dens.</string>
+    <string name="dejavu_settings_action_places_none">Vises ingen steder</string>
+    <string name="dejavu_settings_action_place_unavailable">Gjør ingenting der</string>
+    <string name="dejavu_settings_action_place_full">Ikke mer plass</string>
+    <string name="dejavu_done">Ferdig</string>
     <string name="dejavu_settings_pinned_tabs">Festede faner</string>
     <string name="dejavu_settings_unpinned_tabs">Ikke-festede faner</string>
     <string name="dejavu_settings_all_actions">Alle handlinger</string>
@@ -185,6 +201,9 @@
     <string name="dejavu_actions_bar_search">Søk</string>
     <string name="dejavu_actions_bar_home">Hjem</string>
     <string name="dejavu_settings_more_menu_summary">Handlingslinjen under sider og menyen den åpner</string>
+    <string name="dejavu_more_menu_hint">Sveip handlingslinjen opp eller adresselinjen ned for å åpne hele menyen. Trykk på en knapp for å flytte eller fjerne den. Utvidelser tar alltid en hel rad.</string>
+    <string name="dejavu_actions_bar_hint">Knappene under sider. De virker på siden du er på.</string>
+    <string name="dejavu_actions_bar_all_added">Alle knappene er allerede i linjen.</string>
     <string name="dejavu_more_menu_row">Rad %1$d</string>
     <string name="dejavu_more_menu_add_item">Legg til en knapp</string>
     <string name="dejavu_more_menu_add_row">Legg til en rad</string>
@@ -223,6 +242,22 @@
     <string name="dejavu_container_work">Jobb</string>
     <string name="dejavu_container_banking">Bank</string>
     <string name="dejavu_container_shopping">Netthandel</string>
+    <string name="dejavu_history_group_by">Grupper etter</string>
+    <string name="dejavu_history_group_by_date">Dato</string>
+    <string name="dejavu_history_group_by_workspace">Arbeidsområde</string>
+    <string name="dejavu_history_group_by_folder">Arbeidsområde og mappe</string>
+    <string name="dejavu_history_other_pages">Andre sider</string>
+    <string name="dejavu_settings_tab_sleep">Faner i dvale</string>
+    <string name="dejavu_settings_tab_sleep_summary">Faner du ikke bruker, settes i dvale for å frigjøre minne</string>
+    <string name="dejavu_tab_sleep_hint">En fane i dvale frigjør minnet sitt og laster inn siden på nytt når du åpner den. Fanen du ser på, den ved siden av i delt visning og faner som spiller av lyd eller bruker kameraet eller mikrofonen, holdes våkne. Når Android trenger minne mens Dejavu er i bakgrunnen, settes alle faner unntatt de to du brukte sist, i dvale.</string>
+    <string name="dejavu_tab_sleep_when">Sett en fane i dvale</string>
+    <plurals name="dejavu_tab_sleep_after_minutes">
+        <item quantity="one">Etter %d minutt uten bruk</item>
+        <item quantity="other">Etter %d minutter uten bruk</item>
+    </plurals>
+    <string name="dejavu_tab_sleep_after_hour">Etter en time uten bruk</string>
+    <string name="dejavu_tab_sleep_never">Aldri</string>
+    <string name="dejavu_startup_crash_body">Det oppstod et problem med å åpne %1$s. Åpne appen igjen for å fortsette å surfe.</string>
     <string name="dejavu_sync_normal_tabs">Inkluder ikke-festede faner</string>
     <string name="dejavu_sync_normal_tabs_summary">Synkroniserer også de andre fanene i hvert arbeidsområde, ikke bare festede faner og mapper. Zen synkroniserer dem når dets egen innstilling Inkluder ikke-festede faner er slått på.</string>
     <plurals name="dejavu_selection_count">

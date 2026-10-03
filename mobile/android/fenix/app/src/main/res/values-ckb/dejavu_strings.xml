@@ -47,6 +47,10 @@
     <string name="dejavu_folder_rename">ناوی پۆشە بگۆڕە</string>
     <string name="dejavu_folder_unpack">هەڵوەشاندنەوەی پۆشە</string>
     <string name="dejavu_folder_top_level">بازدەرە چەسپاوەکان، بێ پۆشە</string>
+    <plurals name="dejavu_folder_open_tabs">
+        <item quantity="one">%1$d بازدەری کراوە</item>
+        <item quantity="other">%1$d بازدەری کراوە</item>
+    </plurals>
     <string name="dejavu_essentials_drop">لێرە دایبنێ بۆ زیادکردن بۆ ماڵپەڕە گرنگەکان</string>
     <string name="dejavu_essentials_full">ماڵپەڕە گرنگەکان تا %1$d بازدەر دەگرنەوە</string>
     <string name="dejavu_temporary_by_default">کۆنتەینەری کاتی بە بنەڕەت</string>
@@ -88,7 +92,19 @@
     <string name="dejavu_action_remove_from_essentials">لابردن لە ماڵپەڕە گرنگەکان</string>
     <string name="dejavu_action_delete">سڕینەوە</string>
     <string name="dejavu_settings_title">Dejavu</string>
+    <string name="dejavu_about_content">%1$s وێبگەڕێکی سەربەخۆیە کە لە کۆدی سەرچاوەکراوەی Firefox و GeckoView ی Mozilla دروستکراوە. Mozilla دروستی نەکردووە و پەسەندی ناکات و پشتگیریی ناکات. Firefox نیشانەی بازرگانیی دامەزراوەی Mozilla یە لە ویلایەتە یەکگرتووەکانی ئەمریکا و وڵاتانی تر.</string>
+    <string name="dejavu_about_source_code">کۆدی سەرچاوە</string>
     <string name="dejavu_settings_tab_actions">کردارەکانی بازدەر</string>
+    <string name="dejavu_settings_tab_actions_entry_summary">یەک لیست بۆ کردارەکان، و شوێنی پیشاندانی هەر یەکێکیان</string>
+    <string name="dejavu_settings_tab_actions_hint">هەموو کردارەکان لە یەک لیستدان، ئەوانەش کە خۆت زیادیان دەکەیت. دیاری بکە هەر یەکێکیان لە کوێ پیشان بدرێت: لەسەر بازدەرە چەسپاوەکان، بازدەرە ناچەسپاوەکان و پۆشەکان، لە شریتی بازدەرە هەڵبژێردراوەکان، لە پێڕستی زیاتر و لە شریتی کردارەکان لە خوارەوەی پەڕەکان. کردارەکان لەسەر پۆشەیەک دەگەنە هەموو بازدەرێکی ناوی.</string>
+    <string name="dejavu_settings_where_actions_show">کردارەکان لە کوێ پیشان دەدرێن</string>
+    <string name="dejavu_settings_folders">پۆشەکان</string>
+    <string name="dejavu_settings_selection_bar">شریتی هەڵبژاردن</string>
+    <string name="dejavu_settings_folder_actions_hint">تا %1$d دوگمە بۆ ڕیزی پۆشەکان هەڵبژێرە. لەسەر هەموو بازدەرێکی ناو پۆشەکە و ژێرپۆشەکانی کار دەکەن.</string>
+    <string name="dejavu_settings_action_places_none">لە هیچ شوێنێک پیشان نادرێت</string>
+    <string name="dejavu_settings_action_place_unavailable">لەوێ هیچ ناکات</string>
+    <string name="dejavu_settings_action_place_full">شوێن نەماوە</string>
+    <string name="dejavu_done">تەواو</string>
     <string name="dejavu_settings_pinned_tabs">بازدەرە چەسپاوەکان</string>
     <string name="dejavu_settings_unpinned_tabs">بازدەرە ناچەسپاوەکان</string>
     <string name="dejavu_settings_all_actions">هەموو کردارەکان</string>
@@ -185,6 +201,9 @@
     <string name="dejavu_actions_bar_search">گەڕان</string>
     <string name="dejavu_actions_bar_home">ماڵەوە</string>
     <string name="dejavu_settings_more_menu_summary">شریتی کردارەکان لە خوارەوەی پەڕەکان و ئەو پێڕستەی کە دەیکاتەوە</string>
+    <string name="dejavu_more_menu_hint">بۆ کردنەوەی هەموو پێڕستەکە، شریتی کردارەکان بۆ سەرەوە یان توڵی ناونیشان بۆ خوارەوە ڕابکێشە. دەست لەسەر دوگمەیەک بدە بۆ گواستنەوە یان لابردنی. پێوەکراوەکان هەمیشە ڕیزێکی تەواو دەگرن.</string>
+    <string name="dejavu_actions_bar_hint">ئەو دوگمانەی لە خوارەوەی پەڕەکانن. لەسەر ئەو پەڕەیە کار دەکەن کە لەسەریت.</string>
+    <string name="dejavu_actions_bar_all_added">هەموو دوگمەکان پێشتر لە شریتەکەدان.</string>
     <string name="dejavu_more_menu_row">ڕیزی %1$d</string>
     <string name="dejavu_more_menu_add_item">زیادکردنی دوگمە</string>
     <string name="dejavu_more_menu_add_row">زیادکردنی ڕیز</string>
@@ -223,6 +242,22 @@
     <string name="dejavu_container_work">کار</string>
     <string name="dejavu_container_banking">بانکی</string>
     <string name="dejavu_container_shopping">کڕین</string>
+    <string name="dejavu_history_group_by">پۆلێنکردن بەپێی</string>
+    <string name="dejavu_history_group_by_date">بەروار</string>
+    <string name="dejavu_history_group_by_workspace">فەزا</string>
+    <string name="dejavu_history_group_by_folder">فەزا و پۆشە</string>
+    <string name="dejavu_history_other_pages">پەڕەکانی تر</string>
+    <string name="dejavu_settings_tab_sleep">بازدەرە خەوتووەکان</string>
+    <string name="dejavu_settings_tab_sleep_summary">ئەو بازدەرانەی بەکاریان ناهێنیت دەخەون بۆ ئەوەی بیرگە ئازاد بکەن</string>
+    <string name="dejavu_tab_sleep_hint">بازدەرێکی خەوتوو بیرگەکەی ئازاد دەکات و کاتێک دەیکەیتەوە، پەڕەکەی دووبارە بار دەکاتەوە. ئەو بازدەرەی سەیری دەکەیت، ئەوەی لە تەنیشتیەتی لە دیمەنی دووبەشکراودا، و ئەو بازدەرانەی دەنگ لێدەدەن یان کامێرا یان مایکرۆفۆن بەکاردەهێنن، بە بێداری دەمێننەوە. کاتێک Android پێویستی بە بیرگە هەبێت و Dejavu لە پاشبنەمادا بێت، هەموو بازدەرەکان جگە لەو دووانەی دوایین جار بەکارت هێنان دەخەون.</string>
+    <string name="dejavu_tab_sleep_when">خەوتاندنی بازدەر</string>
+    <plurals name="dejavu_tab_sleep_after_minutes">
+        <item quantity="one">دوای %d خولەک بەبێ بەکارهێنان</item>
+        <item quantity="other">دوای %d خولەک بەبێ بەکارهێنان</item>
+    </plurals>
+    <string name="dejavu_tab_sleep_after_hour">دوای کاتژمێرێک بەبێ بەکارهێنان</string>
+    <string name="dejavu_tab_sleep_never">هەرگیز</string>
+    <string name="dejavu_startup_crash_body">کێشەیەک لە کردنەوەی %1$s ڕوویدا. دووبارە بیکەرەوە بۆ ئەوەی بەردەوام بیت لە گەڕان.</string>
     <string name="dejavu_sync_normal_tabs">لەخۆگرتنی بازدەرە چەسپەنەکراوەکان</string>
     <string name="dejavu_sync_normal_tabs_summary">هەروەها بازدەرەکانی تری هەر فەزایەک هاوکات دەکات، نەک تەنها بازدەرە چەسپاوەکان و پۆشەکان. کاتێک بژاردەی تایبەتی خۆی، لەخۆگرتنی بازدەرە چەسپەنەکراوەکان چالاک بێت، Zen هاوکاتیان دەکات.</string>
     <plurals name="dejavu_selection_count">

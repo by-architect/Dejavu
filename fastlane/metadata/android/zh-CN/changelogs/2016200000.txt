@@ -1,1 +1,1 @@
-Dejavu 首个版本，一款基于 Firefox 的宁静浏览器。工作区、容器、固定标签页、常用项、文件夹和分屏视图。通过您的 Mozilla 账户与 Zen Browser 同步。默认保护隐私：无遥测。
+Dejavu 首个版本，一款使用 Mozilla 开源 Firefox 代码构建的独立浏览器，并非由 Mozilla 制作或认可。工作区、容器、固定标签页、常用网站、文件夹和分屏视图。通过您的 Mozilla 账户与 Zen Browser 同步。默认保护隐私：无遥测。

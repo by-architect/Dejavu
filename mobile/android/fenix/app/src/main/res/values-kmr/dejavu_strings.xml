@@ -47,6 +47,10 @@
     <string name="dejavu_folder_rename">Navê peldankê biguherîne</string>
     <string name="dejavu_folder_unpack">Peldankê belav bike</string>
     <string name="dejavu_folder_top_level">Hilpekînên sabît, bêyî peldank</string>
+    <plurals name="dejavu_folder_open_tabs">
+        <item quantity="one">%1$d hilpekîna vekirî</item>
+        <item quantity="other">%1$d hilpekînên vekirî</item>
+    </plurals>
     <string name="dejavu_essentials_drop">Ji bo zêdekirina di malperên girîng de, li vir berde</string>
     <string name="dejavu_essentials_full">Malperên girîng heta %1$d hilpekînan digirin</string>
     <string name="dejavu_temporary_by_default">Bi awayê bingehîn konteynerên demkî</string>
@@ -88,7 +92,19 @@
     <string name="dejavu_action_remove_from_essentials">Ji malperên girîng rake</string>
     <string name="dejavu_action_delete">Jê bibe</string>
     <string name="dejavu_settings_title">Dejavu</string>
+    <string name="dejavu_about_content">%1$s gerokeke serbixwe ye ku ji koda Firefox û GeckoView ya çavkaniya vekirî ya Mozillayê hatiye çêkirin. Ew ne ji aliyê Mozillayê ve hatiye çêkirin, ne jî ji aliyê wê ve tê pejirandin an piştgirîkirin. Firefox li Dewletên Yekbûyî û welatên din marqeyeke tomarkirî ya Weqfa Mozillayê ye.</string>
+    <string name="dejavu_about_source_code">Koda çavkanî</string>
     <string name="dejavu_settings_tab_actions">Çalakiyên hilpekînê</string>
+    <string name="dejavu_settings_tab_actions_entry_summary">Yek lîsteya çalakiyan, û cihê ku her yek lê xuya dibe</string>
+    <string name="dejavu_settings_tab_actions_hint">Hemû çalakî di yek lîsteyê de ne, yên ku tu bi xwe zêde dikî jî tê de. Hilbijêre ka her yek li ku xuya bibe: li ser hilpekînên sabît, hilpekînên ne-sabît û peldankan, di darika hilpekînên hilbijartî de, di menuya zêde de û di darika çalakiyan a binê rûpelan de. Çalakiyên li ser peldankekê digihîjin her hilpekîna di hundirê wê de.</string>
+    <string name="dejavu_settings_where_actions_show">Çalakî li ku xuya dibin</string>
+    <string name="dejavu_settings_folders">Peldank</string>
+    <string name="dejavu_settings_selection_bar">Darika hilbijartinê</string>
+    <string name="dejavu_settings_folder_actions_hint">Ji bo rêzikên peldankan, heta %1$d bişkokan hilbijêre. Ew li ser her hilpekîna di peldankê û binpeldankên wê de dixebitin.</string>
+    <string name="dejavu_settings_action_places_none">Li tu derê nayê nîşandan</string>
+    <string name="dejavu_settings_action_place_unavailable">Li wir tiştekî nake</string>
+    <string name="dejavu_settings_action_place_full">Cih nemaye</string>
+    <string name="dejavu_done">Qediya</string>
     <string name="dejavu_settings_pinned_tabs">Hilpekînên sabît</string>
     <string name="dejavu_settings_unpinned_tabs">Hilpekînên ne-sabît</string>
     <string name="dejavu_settings_all_actions">Hemû çalakî</string>
@@ -185,6 +201,9 @@
     <string name="dejavu_actions_bar_search">Lêgerîn</string>
     <string name="dejavu_actions_bar_home">Mal</string>
     <string name="dejavu_settings_more_menu_summary">Darika çalakiyan a binê rûpelan û menuya ku ew vedike</string>
+    <string name="dejavu_more_menu_hint">Ji bo vekirina tevahiya menuyê, darika çalakiyan ber bi jor ve, an darika navnîşanan ber bi jêr ve bikişîne. Ji bo veguhastin an rakirina bişkokekê, li ser wê bitikîne. Pêvek her tim rêzeke tevahî digirin.</string>
+    <string name="dejavu_actions_bar_hint">Bişkokên binê rûpelan. Ew li ser rûpela ku tu lê yî dixebitin.</string>
+    <string name="dejavu_actions_bar_all_added">Hemû bişkok jixwe di darikê de ne.</string>
     <string name="dejavu_more_menu_row">Rêza %1$d</string>
     <string name="dejavu_more_menu_add_item">Bişkokekê zêde bike</string>
     <string name="dejavu_more_menu_add_row">Rêzekê zêde bike</string>
@@ -223,6 +242,22 @@
     <string name="dejavu_container_work">Kar</string>
     <string name="dejavu_container_banking">Bankî</string>
     <string name="dejavu_container_shopping">Kirîn</string>
+    <string name="dejavu_history_group_by">Komkirin li gorî</string>
+    <string name="dejavu_history_group_by_date">Dîrok</string>
+    <string name="dejavu_history_group_by_workspace">Qad</string>
+    <string name="dejavu_history_group_by_folder">Qad û peldank</string>
+    <string name="dejavu_history_other_pages">Rûpelên din</string>
+    <string name="dejavu_settings_tab_sleep">Hilpekînên razayî</string>
+    <string name="dejavu_settings_tab_sleep_summary">Hilpekînên ku tu bi kar naynî radizên da ku bîrê azad bikin</string>
+    <string name="dejavu_tab_sleep_hint">Hilpekîneke razayî bîra xwe azad dike û dema tu wê vekî, rûpela xwe ji nû ve bar dike. Hilpekîna ku tu lê dinêrî, ya li kêleka wê di dîmena dabeşkirî de û hilpekînên ku deng ji wan tê an kamerayê an mîkrofonê bi kar tînin şiyar dimînin. Dema Android hewceyî bîrê be û Dejavu li paşxanê be, ji bilî her du hilpekînên ku te herî dawî bi kar anîne, hemû hilpekîn radizên.</string>
+    <string name="dejavu_tab_sleep_when">Xewandina hilpekînê</string>
+    <plurals name="dejavu_tab_sleep_after_minutes">
+        <item quantity="one">Piştî %d deqîqeyê bêyî bikaranînê</item>
+        <item quantity="other">Piştî %d deqîqeyan bêyî bikaranînê</item>
+    </plurals>
+    <string name="dejavu_tab_sleep_after_hour">Piştî saetekê bêyî bikaranînê</string>
+    <string name="dejavu_tab_sleep_never">Ti caran</string>
+    <string name="dejavu_startup_crash_body">Di vekirina %1$s de pirsgirêkek çêbû. Ji bo ku tu gerînê bidomînî, dîsa veke.</string>
     <string name="dejavu_sync_normal_tabs">Hilpekînên ne sabît tevlê bike</string>
     <string name="dejavu_sync_normal_tabs_summary">Herwiha hilpekînên din ên her qadê jî hevdem dike, ne tenê hilpekînên sabît û peldankan. Dema vebijarka wê ya taybet a Hilpekînên ne sabît tevlê bike vekirî be, Zen wan hevdem dike.</string>
     <plurals name="dejavu_selection_count">

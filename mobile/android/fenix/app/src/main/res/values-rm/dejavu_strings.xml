@@ -47,6 +47,10 @@
     <string name="dejavu_folder_rename">Renumnar il dossier</string>
     <string name="dejavu_folder_unpack">Schliar il dossier</string>
     <string name="dejavu_folder_top_level">Tabs fixads, senza dossier</string>
+    <plurals name="dejavu_folder_open_tabs">
+        <item quantity="one">%1$d tab avert</item>
+        <item quantity="other">%1$d tabs averts</item>
+    </plurals>
     <string name="dejavu_essentials_drop">Bittar qua per agiuntar als essenzials</string>
     <string name="dejavu_essentials_full">Ils essenzials cuntegnan fin a %1$d tabs</string>
     <string name="dejavu_temporary_by_default">Containers temporars sco standard</string>
@@ -88,7 +92,19 @@
     <string name="dejavu_action_remove_from_essentials">Allontanar dals essenzials</string>
     <string name="dejavu_action_delete">Stizzar</string>
     <string name="dejavu_settings_title">Dejavu</string>
+    <string name="dejavu_about_content">%1$s è in navigatur independent, creà a partir dal code open source da Firefox e GeckoView da Mozilla. El n’è ni fatg, ni approvà, ni sustegnì da Mozilla. Firefox è ina marca da la Mozilla Foundation en ils Stadis Unids ed en auters pajais.</string>
+    <string name="dejavu_about_source_code">Code da funtauna</string>
     <string name="dejavu_settings_tab_actions">Acziuns dals tabs</string>
+    <string name="dejavu_settings_tab_actions_entry_summary">Ina suletta glista d’acziuns, e nua che mintgina cumpara</string>
+    <string name="dejavu_settings_tab_actions_hint">Tut las acziuns èn en ina suletta glista, inclusivamain quellas che ti agiuntas sez. Tscherna nua che mintgina cumpara: sin tabs fixads, tabs betg fixads e dossiers, en la trav dals tabs tschernids, en il menu Dapli ed en la trav d’acziuns sutvart las paginas. Acziuns sin in dossier cuntanschan mintga tab en quel.</string>
+    <string name="dejavu_settings_where_actions_show">Nua che las acziuns cumparan</string>
+    <string name="dejavu_settings_folders">Dossiers</string>
+    <string name="dejavu_settings_selection_bar">Trav da selecziun</string>
+    <string name="dejavu_settings_folder_actions_hint">Tscherna fin a %1$d buttuns per las lingias da dossiers. Els ageschan sin mintga tab en il dossier ed en ses sut-dossiers.</string>
+    <string name="dejavu_settings_action_places_none">Na cumpara nagliur</string>
+    <string name="dejavu_settings_action_place_unavailable">Na fa nagut qua</string>
+    <string name="dejavu_settings_action_place_full">Nagin plaz pli</string>
+    <string name="dejavu_done">Finì</string>
     <string name="dejavu_settings_pinned_tabs">Tabs fixads</string>
     <string name="dejavu_settings_unpinned_tabs">Tabs betg fixads</string>
     <string name="dejavu_settings_all_actions">Tut las acziuns</string>
@@ -185,6 +201,9 @@
     <string name="dejavu_actions_bar_search">Tschertgar</string>
     <string name="dejavu_actions_bar_home">Partenza</string>
     <string name="dejavu_settings_more_menu_summary">La trav d’acziuns sutvart paginas ed il menu ch’ella avra</string>
+    <string name="dejavu_more_menu_hint">Stritga la trav d’acziuns ensi, u la trav d’adressas engiu, per avrir l’entir menu. Smatga in buttun per al spustar u allontanar. Extensiuns occupan adina ina lingia entira.</string>
+    <string name="dejavu_actions_bar_hint">Ils buttuns sutvart las paginas. Els ageschan sin la pagina nua che ti es.</string>
+    <string name="dejavu_actions_bar_all_added">Mintga buttun è gia en la trav.</string>
     <string name="dejavu_more_menu_row">Lingia %1$d</string>
     <string name="dejavu_more_menu_add_item">Agiuntar in buttun</string>
     <string name="dejavu_more_menu_add_row">Agiuntar ina lingia</string>
@@ -223,6 +242,22 @@
     <string name="dejavu_container_work">Lavur</string>
     <string name="dejavu_container_banking">Bancaria</string>
     <string name="dejavu_container_shopping">Cumpras</string>
+    <string name="dejavu_history_group_by">Gruppar tenor</string>
+    <string name="dejavu_history_group_by_date">Data</string>
+    <string name="dejavu_history_group_by_workspace">Spazi da lavur</string>
+    <string name="dejavu_history_group_by_folder">Spazi da lavur e dossier</string>
+    <string name="dejavu_history_other_pages">Autras paginas</string>
+    <string name="dejavu_settings_tab_sleep">Tabs en pausa</string>
+    <string name="dejavu_settings_tab_sleep_summary">Tabs che ti n’utiliseschas betg vegnan mess en pausa per liberar memoria</string>
+    <string name="dejavu_tab_sleep_hint">In tab en pausa libera sia memoria e chargia danovamain sia pagina cur che ti l’avras. Il tab che ti guardas, quel sper el en la vista divisa e tabs che reproduceschan tun u utiliseschan la camera u il microfon restan activs. Cur che Android ha basegn da memoria durant che Dejavu è en il fund davos, vegnan tut ils tabs mess en pausa, danor ils dus che ti has utilisà sco ultims.</string>
+    <string name="dejavu_tab_sleep_when">Metter in tab en pausa</string>
+    <plurals name="dejavu_tab_sleep_after_minutes">
+        <item quantity="one">Suenter %d minuta senza diever</item>
+        <item quantity="other">Suenter %d minutas senza diever</item>
+    </plurals>
+    <string name="dejavu_tab_sleep_after_hour">Suenter in’ura senza diever</string>
+    <string name="dejavu_tab_sleep_never">Mai</string>
+    <string name="dejavu_startup_crash_body">Igl ha dà in problem cun avrir %1$s. Avra el danovamain per cuntinuar a navigar.</string>
     <string name="dejavu_sync_normal_tabs">Integrar ils tabs betg fixads</string>
     <string name="dejavu_sync_normal_tabs_summary">Sincronisescha er ils auters tabs da mintga spazi da lavur, betg mo ils tabs fixads e ils dossiers. Zen als sincronisescha cur ch\'la atgna opziun Integrar ils tabs betg fixads è activada.</string>
     <plurals name="dejavu_selection_count">

@@ -47,6 +47,10 @@
     <string name="dejavu_folder_rename">Klasörü yeniden adlandır</string>
     <string name="dejavu_folder_unpack">Klasörü dağıt</string>
     <string name="dejavu_folder_top_level">Sabitlenmiş sekmeler, klasörsüz</string>
+    <plurals name="dejavu_folder_open_tabs">
+        <item quantity="one">%1$d açık sekme</item>
+        <item quantity="other">%1$d açık sekme</item>
+    </plurals>
     <string name="dejavu_essentials_drop">Temel sekmelere eklemek için buraya bırakın</string>
     <string name="dejavu_essentials_full">Temel sekmeler en fazla %1$d sekme alabilir</string>
     <string name="dejavu_temporary_by_default">Varsayılan olarak geçici kapsayıcılar</string>
@@ -88,7 +92,19 @@
     <string name="dejavu_action_remove_from_essentials">Temel sekmelerden kaldır</string>
     <string name="dejavu_action_delete">Sil</string>
     <string name="dejavu_settings_title">Dejavu</string>
+    <string name="dejavu_about_content">%1$s, Mozilla\'nın açık kaynaklı Firefox ve GeckoView kodundan oluşturulmuş bağımsız bir tarayıcıdır. Mozilla tarafından geliştirilmemiştir, onaylanmamıştır ve desteklenmemektedir. Firefox, Mozilla Foundation\'ın ABD ve diğer ülkelerdeki ticari markasıdır.</string>
+    <string name="dejavu_about_source_code">Kaynak kodu</string>
     <string name="dejavu_settings_tab_actions">Sekme eylemleri</string>
+    <string name="dejavu_settings_tab_actions_entry_summary">Tek bir eylem listesi ve her birinin nerede göründüğü</string>
+    <string name="dejavu_settings_tab_actions_hint">Kendi eklediğiniz eylemler dahil tüm eylemler tek bir listededir. Her birinin nerede görüneceğini seçin: sabitlenmiş sekmelerde, sabitlenmemiş sekmelerde ve klasörlerde, sekmeler seçiliyken görünen çubukta, Diğer menüsünde ve sayfaların altındaki eylem çubuğunda. Bir klasöre uygulanan eylemler içindeki tüm sekmeleri etkiler.</string>
+    <string name="dejavu_settings_where_actions_show">Eylemlerin göründüğü yerler</string>
+    <string name="dejavu_settings_folders">Klasörler</string>
+    <string name="dejavu_settings_selection_bar">Seçim çubuğu</string>
+    <string name="dejavu_settings_folder_actions_hint">Klasör satırları için en fazla %1$d düğme seçin. Bu düğmeler klasördeki ve alt klasörlerindeki tüm sekmelere uygulanır.</string>
+    <string name="dejavu_settings_action_places_none">Hiçbir yerde gösterilmiyor</string>
+    <string name="dejavu_settings_action_place_unavailable">Burada çalışmaz</string>
+    <string name="dejavu_settings_action_place_full">Yer kalmadı</string>
+    <string name="dejavu_done">Tamam</string>
     <string name="dejavu_settings_pinned_tabs">Sabitlenmiş sekmeler</string>
     <string name="dejavu_settings_unpinned_tabs">Sabitlenmemiş sekmeler</string>
     <string name="dejavu_settings_all_actions">Tüm eylemler</string>
@@ -185,6 +201,9 @@
     <string name="dejavu_actions_bar_search">Ara</string>
     <string name="dejavu_actions_bar_home">Ana sayfa</string>
     <string name="dejavu_settings_more_menu_summary">Sayfaların altındaki eylem çubuğu ve açtığı menü</string>
+    <string name="dejavu_more_menu_hint">Menünün tamamını açmak için eylem çubuğunu yukarı ya da adres çubuğunu aşağı kaydırın. Bir düğmeyi taşımak veya kaldırmak için ona dokunun. Uzantılar her zaman bir satırın tamamını kaplar.</string>
+    <string name="dejavu_actions_bar_hint">Sayfaların altındaki düğmeler. Bulunduğunuz sayfa üzerinde çalışırlar.</string>
+    <string name="dejavu_actions_bar_all_added">Tüm düğmeler zaten çubukta.</string>
     <string name="dejavu_more_menu_row">Satır %1$d</string>
     <string name="dejavu_more_menu_add_item">Düğme ekle</string>
     <string name="dejavu_more_menu_add_row">Satır ekle</string>
@@ -223,6 +242,22 @@
     <string name="dejavu_container_work">İş</string>
     <string name="dejavu_container_banking">Bankacılık</string>
     <string name="dejavu_container_shopping">Alışveriş</string>
+    <string name="dejavu_history_group_by">Gruplandırma ölçütü</string>
+    <string name="dejavu_history_group_by_date">Tarih</string>
+    <string name="dejavu_history_group_by_workspace">Çalışma alanı</string>
+    <string name="dejavu_history_group_by_folder">Çalışma alanı ve klasör</string>
+    <string name="dejavu_history_other_pages">Diğer sayfalar</string>
+    <string name="dejavu_settings_tab_sleep">Uyuyan sekmeler</string>
+    <string name="dejavu_settings_tab_sleep_summary">Kullanmadığınız sekmeler bellekte yer açmak için uyur</string>
+    <string name="dejavu_tab_sleep_hint">Uyuyan bir sekme kullandığı belleği boşaltır ve onu açtığınızda sayfasını yeniden yükler. Baktığınız sekme, bölünmüş görünümde onun yanındaki sekme ve ses çalan ya da kamerayı veya mikrofonu kullanan sekmeler uyanık kalır. Dejavu arka plandayken Android belleğe ihtiyaç duyarsa, son kullandığınız iki sekme dışındaki tüm sekmeler uyur.</string>
+    <string name="dejavu_tab_sleep_when">Sekmeleri uyut</string>
+    <plurals name="dejavu_tab_sleep_after_minutes">
+        <item quantity="one">%d dakika kullanılmadıktan sonra</item>
+        <item quantity="other">%d dakika kullanılmadıktan sonra</item>
+    </plurals>
+    <string name="dejavu_tab_sleep_after_hour">Bir saat kullanılmadıktan sonra</string>
+    <string name="dejavu_tab_sleep_never">Asla</string>
+    <string name="dejavu_startup_crash_body">%1$s açılırken bir sorun oluştu. Gezinmeye devam etmek için uygulamayı yeniden açın.</string>
     <string name="dejavu_sync_normal_tabs">Sabitlenmemiş sekmeleri dahil et</string>
     <string name="dejavu_sync_normal_tabs_summary">Ayrıca her çalışma alanının diğer sekmelerini de eşitler, yalnızca sabitlenmiş sekmeleri ve klasörleri değil. Zen, kendi Sabitlenmemiş sekmeleri dahil et seçeneği açık olduğunda bunları eşitler.</string>
     <plurals name="dejavu_selection_count">

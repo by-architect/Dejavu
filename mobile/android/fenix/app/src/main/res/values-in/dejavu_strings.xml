@@ -47,6 +47,9 @@
     <string name="dejavu_folder_rename">Ganti nama folder</string>
     <string name="dejavu_folder_unpack">Bongkar folder</string>
     <string name="dejavu_folder_top_level">Tab yang disemat, tanpa folder</string>
+    <plurals name="dejavu_folder_open_tabs">
+        <item quantity="other">%1$d tab terbuka</item>
+    </plurals>
     <string name="dejavu_essentials_drop">Jatuhkan di sini untuk menambahkan ke situs penting</string>
     <string name="dejavu_essentials_full">Situs penting dapat memuat hingga %1$d tab</string>
     <string name="dejavu_temporary_by_default">Gunakan wadah sementara secara default</string>
@@ -88,7 +91,19 @@
     <string name="dejavu_action_remove_from_essentials">Hapus dari situs penting</string>
     <string name="dejavu_action_delete">Hapus</string>
     <string name="dejavu_settings_title">Dejavu</string>
+    <string name="dejavu_about_content">%1$s adalah peramban independen yang dibangun dari kode sumber terbuka Firefox dan GeckoView milik Mozilla. Peramban ini tidak dibuat, direstui, maupun didukung oleh Mozilla. Firefox adalah merek dagang Mozilla Foundation di Amerika Serikat dan negara lain.</string>
+    <string name="dejavu_about_source_code">Kode sumber</string>
     <string name="dejavu_settings_tab_actions">Tindakan tab</string>
+    <string name="dejavu_settings_tab_actions_entry_summary">Satu daftar tindakan, dan tempat masing-masing ditampilkan</string>
+    <string name="dejavu_settings_tab_actions_hint">Semua tindakan ada dalam satu daftar, termasuk yang Anda tambahkan sendiri. Pilih tempat masing-masing ditampilkan: pada tab yang disemat, tab yang tidak disemat, dan folder, di bilah tab yang dipilih, di Menu lainnya, dan di bilah tindakan di bawah laman. Tindakan pada folder berlaku untuk setiap tab di dalamnya.</string>
+    <string name="dejavu_settings_where_actions_show">Tempat tindakan ditampilkan</string>
+    <string name="dejavu_settings_folders">Folder</string>
+    <string name="dejavu_settings_selection_bar">Bilah pilihan</string>
+    <string name="dejavu_settings_folder_actions_hint">Pilih hingga %1$d tombol untuk baris folder. Tombol ini bekerja pada setiap tab di dalam folder dan subfoldernya.</string>
+    <string name="dejavu_settings_action_places_none">Tidak ditampilkan di mana pun</string>
+    <string name="dejavu_settings_action_place_unavailable">Tidak berfungsi di sini</string>
+    <string name="dejavu_settings_action_place_full">Sudah penuh</string>
+    <string name="dejavu_done">Selesai</string>
     <string name="dejavu_settings_pinned_tabs">Tab yang disemat</string>
     <string name="dejavu_settings_unpinned_tabs">Tab yang tidak disemat</string>
     <string name="dejavu_settings_all_actions">Semua tindakan</string>
@@ -185,6 +200,9 @@
     <string name="dejavu_actions_bar_search">Cari</string>
     <string name="dejavu_actions_bar_home">Beranda</string>
     <string name="dejavu_settings_more_menu_summary">Bilah tindakan di bawah laman dan menu yang dibukanya</string>
+    <string name="dejavu_more_menu_hint">Geser bilah tindakan ke atas, atau bilah alamat ke bawah, untuk membuka menu lengkap. Ketuk tombol untuk memindahkan atau menghapusnya. Ekstensi selalu menempati satu baris penuh.</string>
+    <string name="dejavu_actions_bar_hint">Tombol di bawah laman. Tombol ini bekerja pada laman yang sedang Anda buka.</string>
+    <string name="dejavu_actions_bar_all_added">Semua tombol sudah ada di bilah.</string>
     <string name="dejavu_more_menu_row">Baris %1$d</string>
     <string name="dejavu_more_menu_add_item">Tambah tombol</string>
     <string name="dejavu_more_menu_add_row">Tambah baris</string>
@@ -223,6 +241,21 @@
     <string name="dejavu_container_work">Kerja</string>
     <string name="dejavu_container_banking">Perbankan</string>
     <string name="dejavu_container_shopping">Belanja</string>
+    <string name="dejavu_history_group_by">Kelompokkan menurut</string>
+    <string name="dejavu_history_group_by_date">Tanggal</string>
+    <string name="dejavu_history_group_by_workspace">Ruang kerja</string>
+    <string name="dejavu_history_group_by_folder">Ruang kerja dan folder</string>
+    <string name="dejavu_history_other_pages">Laman lainnya</string>
+    <string name="dejavu_settings_tab_sleep">Tab tidur</string>
+    <string name="dejavu_settings_tab_sleep_summary">Tab yang tidak Anda gunakan akan tidur untuk mengosongkan memori</string>
+    <string name="dejavu_tab_sleep_hint">Tab yang tidur mengosongkan memorinya dan memuat ulang lamannya saat Anda membukanya. Tab yang sedang Anda lihat, tab di sebelahnya dalam tampilan terbagi, serta tab yang memutar suara atau menggunakan kamera atau mikrofon tetap terjaga. Saat Android membutuhkan memori ketika Dejavu berada di latar belakang, semua tab akan tidur kecuali dua tab yang terakhir Anda gunakan.</string>
+    <string name="dejavu_tab_sleep_when">Tidurkan tab</string>
+    <plurals name="dejavu_tab_sleep_after_minutes">
+        <item quantity="other">Setelah %d menit tidak digunakan</item>
+    </plurals>
+    <string name="dejavu_tab_sleep_after_hour">Setelah satu jam tidak digunakan</string>
+    <string name="dejavu_tab_sleep_never">Tidak pernah</string>
+    <string name="dejavu_startup_crash_body">Terjadi masalah saat membuka %1$s. Buka kembali untuk melanjutkan penjelajahan.</string>
     <string name="dejavu_sync_normal_tabs">Sertakan tab yang tidak disemat</string>
     <string name="dejavu_sync_normal_tabs_summary">Fitur ini juga menyinkronkan tab lain di setiap ruang kerja, tidak hanya tab yang disemat dan folder. Zen menyinkronkannya saat opsi miliknya sendiri, Sertakan tab yang tidak disemat, diaktifkan.</string>
     <plurals name="dejavu_selection_count">

@@ -47,6 +47,10 @@
     <string name="dejavu_folder_rename">Endurnefna möppu</string>
     <string name="dejavu_folder_unpack">Leysa upp möppu</string>
     <string name="dejavu_folder_top_level">Festir flipar, engin mappa</string>
+    <plurals name="dejavu_folder_open_tabs">
+        <item quantity="one">%1$d opinn flipi</item>
+        <item quantity="other">%1$d opnir flipar</item>
+    </plurals>
     <string name="dejavu_essentials_drop">Slepptu hér til að bæta við eftirlætin</string>
     <string name="dejavu_essentials_full">Eftirlætin rúma allt að %1$d flipa</string>
     <string name="dejavu_temporary_by_default">Tímabundin hólf sjálfgefið</string>
@@ -88,7 +92,19 @@
     <string name="dejavu_action_remove_from_essentials">Fjarlægja úr eftirlætum</string>
     <string name="dejavu_action_delete">Eyða</string>
     <string name="dejavu_settings_title">Dejavu</string>
+    <string name="dejavu_about_content">%1$s er sjálfstæður vafri, smíðaður úr opnum grunnkóða Firefox og GeckoView frá Mozilla. Hann er hvorki gerður, samþykktur né studdur af Mozilla. Firefox er vörumerki Mozilla Foundation í Bandaríkjunum og öðrum löndum.</string>
+    <string name="dejavu_about_source_code">Grunnkóði</string>
     <string name="dejavu_settings_tab_actions">Aðgerðir flipa</string>
+    <string name="dejavu_settings_tab_actions_entry_summary">Einn listi yfir aðgerðir og hvar hver þeirra birtist</string>
+    <string name="dejavu_settings_tab_actions_hint">Allar aðgerðir eru í einum lista, líka þær sem þú hefur bætt við. Veldu hvar hver þeirra birtist: á festum flipum, ófestum flipum og möppum, á stiku valinna flipa, í valmyndinni „Meira“ og á aðgerðastikunni neðst á síðum. Aðgerðir á möppu ná til allra flipa í henni.</string>
+    <string name="dejavu_settings_where_actions_show">Hvar aðgerðir birtast</string>
+    <string name="dejavu_settings_folders">Möppur</string>
+    <string name="dejavu_settings_selection_bar">Valstika</string>
+    <string name="dejavu_settings_folder_actions_hint">Veldu allt að %1$d hnappa fyrir raðir mappa. Þeir virka á alla flipa í möppunni og undirmöppum hennar.</string>
+    <string name="dejavu_settings_action_places_none">Birtist hvergi</string>
+    <string name="dejavu_settings_action_place_unavailable">Gerir ekkert þar</string>
+    <string name="dejavu_settings_action_place_full">Ekkert pláss eftir</string>
+    <string name="dejavu_done">Lokið</string>
     <string name="dejavu_settings_pinned_tabs">Festir flipar</string>
     <string name="dejavu_settings_unpinned_tabs">Ófestir flipar</string>
     <string name="dejavu_settings_all_actions">Allar aðgerðir</string>
@@ -185,6 +201,9 @@
     <string name="dejavu_actions_bar_search">Leita</string>
     <string name="dejavu_actions_bar_home">Heim</string>
     <string name="dejavu_settings_more_menu_summary">Aðgerðastikan neðst á síðum og valmyndin sem hún opnar</string>
+    <string name="dejavu_more_menu_hint">Strjúktu aðgerðastikuna upp, eða veffangastikuna niður, til að opna alla valmyndina. Ýttu á hnapp til að færa hann eða fjarlægja. Forritsaukar taka alltaf heila röð.</string>
+    <string name="dejavu_actions_bar_hint">Hnapparnir neðst á síðum. Þeir virka á síðuna sem þú ert á.</string>
+    <string name="dejavu_actions_bar_all_added">Allir hnappar eru þegar á stikunni.</string>
     <string name="dejavu_more_menu_row">Röð %1$d</string>
     <string name="dejavu_more_menu_add_item">Bæta við hnappi</string>
     <string name="dejavu_more_menu_add_row">Bæta við röð</string>
@@ -223,6 +242,22 @@
     <string name="dejavu_container_work">Vinna</string>
     <string name="dejavu_container_banking">Bankamál</string>
     <string name="dejavu_container_shopping">Verslun</string>
+    <string name="dejavu_history_group_by">Flokka eftir</string>
+    <string name="dejavu_history_group_by_date">Dagsetning</string>
+    <string name="dejavu_history_group_by_workspace">Vinnusvæði</string>
+    <string name="dejavu_history_group_by_folder">Vinnusvæði og mappa</string>
+    <string name="dejavu_history_other_pages">Aðrar síður</string>
+    <string name="dejavu_settings_tab_sleep">Svæfðir flipar</string>
+    <string name="dejavu_settings_tab_sleep_summary">Flipar sem þú ert ekki að nota eru svæfðir til að losa minni</string>
+    <string name="dejavu_tab_sleep_hint">Svæfður flipi losar minnið sitt og hleður síðunni aftur þegar þú opnar hann. Flipinn sem þú ert að skoða, flipinn við hliðina á honum í klofinni sýn og flipar sem spila hljóð eða nota myndavélina eða hljóðnemann haldast vakandi. Þegar Android þarf minni á meðan Dejavu er í bakgrunni eru allir flipar svæfðir nema þeir tveir sem þú notaðir síðast.</string>
+    <string name="dejavu_tab_sleep_when">Svæfa flipa</string>
+    <plurals name="dejavu_tab_sleep_after_minutes">
+        <item quantity="one">Eftir %d mínútu án notkunar</item>
+        <item quantity="other">Eftir %d mínútur án notkunar</item>
+    </plurals>
+    <string name="dejavu_tab_sleep_after_hour">Eftir klukkustund án notkunar</string>
+    <string name="dejavu_tab_sleep_never">Aldrei</string>
+    <string name="dejavu_startup_crash_body">Vandamál kom upp við að opna %1$s. Opnaðu forritið aftur til að halda áfram að vafra.</string>
     <string name="dejavu_sync_normal_tabs">Hafa með ófesta flipa</string>
     <string name="dejavu_sync_normal_tabs_summary">Samstillir einnig aðra flipa á hverju vinnusvæði, ekki bara festa flipa og möppur. Zen samstillir þá þegar kveikt er á þess eigin stillingu Hafa með ófesta flipa.</string>
     <plurals name="dejavu_selection_count">

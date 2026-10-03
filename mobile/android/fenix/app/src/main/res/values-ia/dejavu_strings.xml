@@ -47,6 +47,10 @@
     <string name="dejavu_folder_rename">Renominar le dossier</string>
     <string name="dejavu_folder_unpack">Disimballar le dossier</string>
     <string name="dejavu_folder_top_level">Schedas fixate, sin dossier</string>
+    <plurals name="dejavu_folder_open_tabs">
+        <item quantity="one">%1$d scheda aperte</item>
+        <item quantity="other">%1$d schedas aperte</item>
+    </plurals>
     <string name="dejavu_essentials_drop">Lassar cader ci pro adder al essentiales</string>
     <string name="dejavu_essentials_full">Le essentiales pote continer usque %1$d schedas</string>
     <string name="dejavu_temporary_by_default">Recipientes temporari per defecto</string>
@@ -88,7 +92,19 @@
     <string name="dejavu_action_remove_from_essentials">Remover del essentiales</string>
     <string name="dejavu_action_delete">Deler</string>
     <string name="dejavu_settings_title">Dejavu</string>
+    <string name="dejavu_about_content">%1$s es un navigator independente construite a partir del codice de fonte aperte de Firefox e GeckoView de Mozilla. Illo non es facite, approbate o supportate per Mozilla. Firefox es un marca commercial del Mozilla Foundation in le Statos Unite e in altere paises.</string>
+    <string name="dejavu_about_source_code">Codice fonte</string>
     <string name="dejavu_settings_tab_actions">Actiones de schedas</string>
+    <string name="dejavu_settings_tab_actions_entry_summary">Un sol lista de actiones, e ubi cata una appare</string>
+    <string name="dejavu_settings_tab_actions_hint">Tote le actiones es in un sol lista, includite illos que tu adde. Elige ubi cata una appare: sur schedas fixate, schedas non fixate e dossiers, in le barra del schedas seligite, in le menu ‘Plus’ e in le barra de actiones sub le paginas. Le actiones sur un dossier attinge cata scheda intra illo.</string>
+    <string name="dejavu_settings_where_actions_show">Ubi le actiones appare</string>
+    <string name="dejavu_settings_folders">Dossiers</string>
+    <string name="dejavu_settings_selection_bar">Barra de selection</string>
+    <string name="dejavu_settings_folder_actions_hint">Elige usque %1$d buttones pro filas de dossiers. Illos age sur cata scheda intra le dossier e su subdossiers.</string>
+    <string name="dejavu_settings_action_places_none">Monstrate in nulle loco</string>
+    <string name="dejavu_settings_action_place_unavailable">Non face nihil hic</string>
+    <string name="dejavu_settings_action_place_full">Nulle spatio restante</string>
+    <string name="dejavu_done">Facite</string>
     <string name="dejavu_settings_pinned_tabs">Schedas fixate</string>
     <string name="dejavu_settings_unpinned_tabs">Schedas non fixate</string>
     <string name="dejavu_settings_all_actions">Tote le actiones</string>
@@ -185,6 +201,9 @@
     <string name="dejavu_actions_bar_search">Cercar</string>
     <string name="dejavu_actions_bar_home">Initio</string>
     <string name="dejavu_settings_more_menu_summary">Le barra de actiones sub le paginas e le menu que illo aperi</string>
+    <string name="dejavu_more_menu_hint">Glissa le barra de actiones verso alto, o le barra de adresse verso basso, pro aperir le menu complete. Pulsa un button pro mover lo o remover lo. Le extensiones occupa sempre un fila integre.</string>
+    <string name="dejavu_actions_bar_hint">Le buttones sub le paginas. Illos age sur le pagina ubi tu es.</string>
+    <string name="dejavu_actions_bar_all_added">Cata button es ja in le barra.</string>
     <string name="dejavu_more_menu_row">Fila %1$d</string>
     <string name="dejavu_more_menu_add_item">Adder un button</string>
     <string name="dejavu_more_menu_add_row">Adder un fila</string>
@@ -223,6 +242,22 @@
     <string name="dejavu_container_work">Labor</string>
     <string name="dejavu_container_banking">Banca</string>
     <string name="dejavu_container_shopping">Compras</string>
+    <string name="dejavu_history_group_by">Gruppar per</string>
+    <string name="dejavu_history_group_by_date">Data</string>
+    <string name="dejavu_history_group_by_workspace">Spatio de labor</string>
+    <string name="dejavu_history_group_by_folder">Spatio de labor e dossier</string>
+    <string name="dejavu_history_other_pages">Altere paginas</string>
+    <string name="dejavu_settings_tab_sleep">Schedas addormite</string>
+    <string name="dejavu_settings_tab_sleep_summary">Le schedas que tu non usa se addormi pro liberar memoria</string>
+    <string name="dejavu_tab_sleep_hint">Un scheda addormite libera su memoria e recarga su pagina quando tu lo aperi. Le scheda que tu reguarda, illo a su latere in le vista divise e le schedas que reproduce sono o usa le camera o le microphono resta active. Quando Android besonia de memoria durante que Dejavu es in secunde plano, tote le schedas excepte le duo que tu ha usate le ultime se addormi.</string>
+    <string name="dejavu_tab_sleep_when">Addormir un scheda</string>
+    <plurals name="dejavu_tab_sleep_after_minutes">
+        <item quantity="one">Post %d minuta sin uso</item>
+        <item quantity="other">Post %d minutas sin uso</item>
+    </plurals>
+    <string name="dejavu_tab_sleep_after_hour">Post un hora sin uso</string>
+    <string name="dejavu_tab_sleep_never">Jammais</string>
+    <string name="dejavu_startup_crash_body">Il habeva un problema aperiente %1$s. Reaperi lo pro continuar a navigar.</string>
     <string name="dejavu_sync_normal_tabs">Includer le schedas non fixate</string>
     <string name="dejavu_sync_normal_tabs_summary">Synchronisa etiam le altere schedas de cata spatio de labor, non solmente le schedas fixate e le dossiers. Zen synchronisa los quando su proprie option Includer le schedas non fixate es active.</string>
     <plurals name="dejavu_selection_count">

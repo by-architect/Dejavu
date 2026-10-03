@@ -47,6 +47,10 @@
     <string name="dejavu_folder_rename">Cancia nomu â cartedda</string>
     <string name="dejavu_folder_unpack">Disfai a cartedda</string>
     <string name="dejavu_folder_top_level">Schedi ficcati, senza cartedda</string>
+    <plurals name="dejavu_folder_open_tabs">
+        <item quantity="one">%1$d scheda aperta</item>
+        <item quantity="other">%1$d schedi aperti</item>
+    </plurals>
     <string name="dejavu_essentials_drop">Lassa ccà pi junciri ê essenziali</string>
     <string name="dejavu_essentials_full">I essenziali tènunu finu a %1$d schedi</string>
     <string name="dejavu_temporary_by_default">Cuntinituri temporanii comu predefinutu</string>
@@ -88,7 +92,19 @@
     <string name="dejavu_action_remove_from_essentials">Leva dî essenziali</string>
     <string name="dejavu_action_delete">Scancella</string>
     <string name="dejavu_settings_title">Dejavu</string>
+    <string name="dejavu_about_content">%1$s è un navigaturi nnipinnenti custruitu a partiri dû còdici a surgenti aperta di Firefox e GeckoView di Mozilla. Nun è fattu, appruvatu nè sustinutu di Mozilla. Firefox è un marchiu dâ Mozilla Foundation nnî Stati Uniti e nta autri paisi.</string>
+    <string name="dejavu_about_source_code">Còdici surgenti</string>
     <string name="dejavu_settings_tab_actions">Azzioni dî schedi</string>
+    <string name="dejavu_settings_tab_actions_entry_summary">Na sula lista d\'azzioni, e unni cumpari ognuna</string>
+    <string name="dejavu_settings_tab_actions_hint">Tutti i azzioni sunnu nta na sula lista, comprisi chiddi ca junci tu. Scegghi unni cumpari ognuna: supra i schedi ficcati, i schedi non ficcati e i carteddi, nnâ barra dî schedi silezionati, nnô menù Cchiù e nnâ barra dî azzioni sutta ê pàggini. I azzioni supra na cartedda arrivanu a ogni scheda ca cc\'è dintra.</string>
+    <string name="dejavu_settings_where_actions_show">Unni cumparinu i azzioni</string>
+    <string name="dejavu_settings_folders">Carteddi</string>
+    <string name="dejavu_settings_selection_bar">Barra di silezioni</string>
+    <string name="dejavu_settings_folder_actions_hint">Scegghi finu a %1$d buttuna pî righi dî carteddi. Travagghianu supra ogni scheda dâ cartedda e dî sò sutta-carteddi.</string>
+    <string name="dejavu_settings_action_places_none">Nun cumpari da nudda banna</string>
+    <string name="dejavu_settings_action_place_unavailable">Ccà nun fa nenti</string>
+    <string name="dejavu_settings_action_place_full">Nun c\'è cchiù postu</string>
+    <string name="dejavu_done">Fattu</string>
     <string name="dejavu_settings_pinned_tabs">Schedi ficcati</string>
     <string name="dejavu_settings_unpinned_tabs">Schedi non ficcati</string>
     <string name="dejavu_settings_all_actions">Tutti i azzioni</string>
@@ -185,6 +201,9 @@
     <string name="dejavu_actions_bar_search">Cerca</string>
     <string name="dejavu_actions_bar_home">Principali</string>
     <string name="dejavu_settings_more_menu_summary">A barra dî azzioni sutta ê pàggini e u menù ca grapi</string>
+    <string name="dejavu_more_menu_hint">Tira a barra dî azzioni ncapu, o a barra dû nnirizzu jusu, pi grapiri tuttu u menù. Tocca un buttuni pi mòvilu o livàrilu. I stinneri pìgghianu sempri na riga sana.</string>
+    <string name="dejavu_actions_bar_hint">I buttuna sutta ê pàggini. Travagghianu supra â pàggina unni si.</string>
+    <string name="dejavu_actions_bar_all_added">Ogni buttuni è già nnâ barra.</string>
     <string name="dejavu_more_menu_row">Riga %1$d</string>
     <string name="dejavu_more_menu_add_item">Junci un buttuni</string>
     <string name="dejavu_more_menu_add_row">Junci na riga</string>
@@ -223,6 +242,22 @@
     <string name="dejavu_container_work">Travagghiu</string>
     <string name="dejavu_container_banking">Banca</string>
     <string name="dejavu_container_shopping">Spisa</string>
+    <string name="dejavu_history_group_by">Arraggruppa pi</string>
+    <string name="dejavu_history_group_by_date">Data</string>
+    <string name="dejavu_history_group_by_workspace">Spazziu di travagghiu</string>
+    <string name="dejavu_history_group_by_folder">Spazziu di travagghiu e cartedda</string>
+    <string name="dejavu_history_other_pages">Autri pàggini</string>
+    <string name="dejavu_settings_tab_sleep">Schedi addummisciuti</string>
+    <string name="dejavu_settings_tab_sleep_summary">I schedi ca nun usi s\'addummiscinu pi libbirari mimoria</string>
+    <string name="dejavu_tab_sleep_hint">Na scheda addummisciuta libbira a sò mimoria e torna a carricari a sò pàggina quannu a grapi. A scheda ca stai taliannu, chidda â banna nnâ vista spartuta e i schedi ca sonanu o ca usanu a fotucàmmira o u micròfunu restanu vigghianti. Quannu Android havi bisognu di mimoria mentri Dejavu è n sicunnu pianu, tutti i schedi fora dî dui ca usasti pi ùrtimi s\'addummiscinu.</string>
+    <string name="dejavu_tab_sleep_when">Fai addummisciri na scheda</string>
+    <plurals name="dejavu_tab_sleep_after_minutes">
+        <item quantity="one">Doppu %d minutu senza usu</item>
+        <item quantity="other">Doppu %d minuti senza usu</item>
+    </plurals>
+    <string name="dejavu_tab_sleep_after_hour">Doppu n\'ura senza usu</string>
+    <string name="dejavu_tab_sleep_never">Mai</string>
+    <string name="dejavu_startup_crash_body">Ci fu un prubblema grapennu %1$s. Grapilu arrè pi cuntinuari a navigari.</string>
     <string name="dejavu_sync_normal_tabs">Include i schedi non ficcati</string>
     <string name="dejavu_sync_normal_tabs_summary">Sincronizza macari l\'autri schedi di ogni spazziu di travagghiu, non sulu i schedi ficcati e i carteddi. Zen i sincronizza quannu la so opzioni Include i schedi non ficcati è attiva.</string>
     <plurals name="dejavu_selection_count">

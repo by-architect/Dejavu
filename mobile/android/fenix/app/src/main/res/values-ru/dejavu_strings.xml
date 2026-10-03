@@ -47,6 +47,12 @@
     <string name="dejavu_folder_rename">Переименовать папку</string>
     <string name="dejavu_folder_unpack">Расформировать папку</string>
     <string name="dejavu_folder_top_level">Закреплённые вкладки, без папки</string>
+    <plurals name="dejavu_folder_open_tabs">
+        <item quantity="one">%1$d открытая вкладка</item>
+        <item quantity="few">%1$d открытые вкладки</item>
+        <item quantity="many">%1$d открытых вкладок</item>
+        <item quantity="other">%1$d открытой вкладки</item>
+    </plurals>
     <string name="dejavu_essentials_drop">Перетащите сюда, чтобы добавить в избранное</string>
     <string name="dejavu_essentials_full">В избранном помещается до %1$d вкладок</string>
     <string name="dejavu_temporary_by_default">Временные контейнеры по умолчанию</string>
@@ -88,7 +94,19 @@
     <string name="dejavu_action_remove_from_essentials">Удалить из избранного</string>
     <string name="dejavu_action_delete">Удалить</string>
     <string name="dejavu_settings_title">Dejavu</string>
+    <string name="dejavu_about_content">%1$s — независимый браузер, собранный из открытого исходного кода Firefox и GeckoView, разработанного Mozilla. Mozilla не создаёт, не одобряет и не поддерживает его. Firefox является товарным знаком Mozilla Foundation в США и других странах.</string>
+    <string name="dejavu_about_source_code">Исходный код</string>
     <string name="dejavu_settings_tab_actions">Действия для вкладок</string>
+    <string name="dejavu_settings_tab_actions_entry_summary">Единый список действий и места, где они показываются</string>
+    <string name="dejavu_settings_tab_actions_hint">Все действия собраны в одном списке, включая добавленные вами. Выберите, где показывать каждое из них: на закреплённых вкладках, незакреплённых вкладках и папках, на панели, которая появляется при выборе вкладок, в меню «Ещё» и на панели действий под страницами. Действия для папки применяются ко всем вкладкам внутри неё.</string>
+    <string name="dejavu_settings_where_actions_show">Где показываются действия</string>
+    <string name="dejavu_settings_folders">Папки</string>
+    <string name="dejavu_settings_selection_bar">Панель выбора</string>
+    <string name="dejavu_settings_folder_actions_hint">Выберите до %1$d кнопок для рядов папок. Они действуют на все вкладки в папке и её вложенных папках.</string>
+    <string name="dejavu_settings_action_places_none">Нигде не показывается</string>
+    <string name="dejavu_settings_action_place_unavailable">Здесь не работает</string>
+    <string name="dejavu_settings_action_place_full">Нет места</string>
+    <string name="dejavu_done">Готово</string>
     <string name="dejavu_settings_pinned_tabs">Закреплённые вкладки</string>
     <string name="dejavu_settings_unpinned_tabs">Незакреплённые вкладки</string>
     <string name="dejavu_settings_all_actions">Все действия</string>
@@ -185,6 +203,9 @@
     <string name="dejavu_actions_bar_search">Поиск</string>
     <string name="dejavu_actions_bar_home">Главная</string>
     <string name="dejavu_settings_more_menu_summary">Панель действий под страницами и меню, которое она открывает</string>
+    <string name="dejavu_more_menu_hint">Проведите по панели действий вверх или по адресной строке вниз, чтобы открыть всё меню. Нажмите на кнопку, чтобы переместить или удалить её. Расширения всегда занимают целый ряд.</string>
+    <string name="dejavu_actions_bar_hint">Кнопки под страницами. Они действуют на открытую страницу.</string>
+    <string name="dejavu_actions_bar_all_added">Все кнопки уже добавлены на панель.</string>
     <string name="dejavu_more_menu_row">Ряд %1$d</string>
     <string name="dejavu_more_menu_add_item">Добавить кнопку</string>
     <string name="dejavu_more_menu_add_row">Добавить ряд</string>
@@ -223,6 +244,24 @@
     <string name="dejavu_container_work">Работа</string>
     <string name="dejavu_container_banking">Банк</string>
     <string name="dejavu_container_shopping">Покупки</string>
+    <string name="dejavu_history_group_by">Группировка</string>
+    <string name="dejavu_history_group_by_date">Дата</string>
+    <string name="dejavu_history_group_by_workspace">Рабочее пространство</string>
+    <string name="dejavu_history_group_by_folder">Рабочее пространство и папка</string>
+    <string name="dejavu_history_other_pages">Другие страницы</string>
+    <string name="dejavu_settings_tab_sleep">Спящие вкладки</string>
+    <string name="dejavu_settings_tab_sleep_summary">Неиспользуемые вкладки засыпают, чтобы освободить память</string>
+    <string name="dejavu_tab_sleep_hint">Спящая вкладка освобождает свою память и заново загружает страницу, когда вы её открываете. Вкладка, которую вы просматриваете, соседняя с ней в режиме разделения экрана и вкладки, которые воспроизводят звук или используют камеру либо микрофон, не засыпают. Когда Android не хватает памяти, а Dejavu работает в фоне, засыпают все вкладки, кроме двух последних, которыми вы пользовались.</string>
+    <string name="dejavu_tab_sleep_when">Усыплять вкладки</string>
+    <plurals name="dejavu_tab_sleep_after_minutes">
+        <item quantity="one">Через %d минуту без использования</item>
+        <item quantity="few">Через %d минуты без использования</item>
+        <item quantity="many">Через %d минут без использования</item>
+        <item quantity="other">Через %d минуты без использования</item>
+    </plurals>
+    <string name="dejavu_tab_sleep_after_hour">Через час без использования</string>
+    <string name="dejavu_tab_sleep_never">Никогда</string>
+    <string name="dejavu_startup_crash_body">При открытии %1$s возникла проблема. Откройте его снова, чтобы продолжить просмотр.</string>
     <string name="dejavu_sync_normal_tabs">Включить незакреплённые вкладки</string>
     <string name="dejavu_sync_normal_tabs_summary">Также синхронизирует остальные вкладки каждого рабочего пространства, а не только закреплённые вкладки и папки. Zen синхронизирует их, когда включён его собственный параметр «Включить незакреплённые вкладки».</string>
     <plurals name="dejavu_selection_count">

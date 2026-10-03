@@ -47,6 +47,10 @@
     <string name="dejavu_folder_rename">تغییر نام پوشه</string>
     <string name="dejavu_folder_unpack">باز کردن پوشه</string>
     <string name="dejavu_folder_top_level">زبانه‌های سنجاق‌شده، بدون پوشه</string>
+    <plurals name="dejavu_folder_open_tabs">
+        <item quantity="one">%1$d زبانهٔ باز</item>
+        <item quantity="other">%1$d زبانهٔ باز</item>
+    </plurals>
     <string name="dejavu_essentials_drop">برای افزودن به ضروریات، اینجا رها کنید</string>
     <string name="dejavu_essentials_full">ضروریات تا %1$d زبانه جا می‌دهند</string>
     <string name="dejavu_temporary_by_default">محفظه‌های موقت به‌طور پیش‌فرض</string>
@@ -88,7 +92,19 @@
     <string name="dejavu_action_remove_from_essentials">حذف از ضروریات</string>
     <string name="dejavu_action_delete">حذف</string>
     <string name="dejavu_settings_title">Dejavu</string>
+    <string name="dejavu_about_content">%1$s مرورگری مستقل است که از کد متن‌باز Firefox و GeckoView متعلق به Mozilla ساخته شده است. این مرورگر ساختهٔ Mozilla نیست و Mozilla آن را تأیید یا پشتیبانی نمی‌کند. Firefox علامت تجاری بنیاد Mozilla در ایالات متحده و دیگر کشورها است.</string>
+    <string name="dejavu_about_source_code">کد منبع</string>
     <string name="dejavu_settings_tab_actions">کنش‌های زبانه</string>
+    <string name="dejavu_settings_tab_actions_entry_summary">یک فهرست از کنش‌ها و جای نمایش هر کدام</string>
+    <string name="dejavu_settings_tab_actions_hint">همهٔ کنش‌ها، از جمله آن‌هایی که خودتان اضافه می‌کنید، در یک فهرست هستند. انتخاب کنید هر کدام کجا نمایش داده شود: روی زبانه‌های سنجاق‌شده، زبانه‌های سنجاق‌نشده و پوشه‌ها، در نوار زبانه‌های انتخاب‌شده، در منوی «بیشتر» و در نوار کنش‌ها زیر صفحات. کنش‌های یک پوشه روی همهٔ زبانه‌های داخل آن اثر می‌گذارند.</string>
+    <string name="dejavu_settings_where_actions_show">محل نمایش کنش‌ها</string>
+    <string name="dejavu_settings_folders">پوشه‌ها</string>
+    <string name="dejavu_settings_selection_bar">نوار انتخاب</string>
+    <string name="dejavu_settings_folder_actions_hint">تا %1$d دکمه برای ردیف‌های پوشه‌ها انتخاب کنید. این دکمه‌ها روی همهٔ زبانه‌های داخل پوشه و زیرپوشه‌هایش اثر می‌گذارند.</string>
+    <string name="dejavu_settings_action_places_none">هیچ‌جا نمایش داده نمی‌شود</string>
+    <string name="dejavu_settings_action_place_unavailable">آنجا کاری نمی‌کند</string>
+    <string name="dejavu_settings_action_place_full">جای خالی نمانده است</string>
+    <string name="dejavu_done">انجام شد</string>
     <string name="dejavu_settings_pinned_tabs">زبانه‌های سنجاق‌شده</string>
     <string name="dejavu_settings_unpinned_tabs">زبانه‌های سنجاق‌نشده</string>
     <string name="dejavu_settings_all_actions">همهٔ کنش‌ها</string>
@@ -185,6 +201,9 @@
     <string name="dejavu_actions_bar_search">جست‌وجو</string>
     <string name="dejavu_actions_bar_home">خانه</string>
     <string name="dejavu_settings_more_menu_summary">نوار کنش‌ها زیر صفحات و منویی که باز می‌کند</string>
+    <string name="dejavu_more_menu_hint">برای باز کردن کل منو، نوار کنش‌ها را به بالا یا نوار نشانی را به پایین بکشید. برای جابه‌جا کردن یا حذف یک دکمه، روی آن ضربه بزنید. افزونه‌ها همیشه یک ردیف کامل را می‌گیرند.</string>
+    <string name="dejavu_actions_bar_hint">دکمه‌های زیر صفحات. روی صفحه‌ای که در آن هستید اثر می‌گذارند.</string>
+    <string name="dejavu_actions_bar_all_added">همهٔ دکمه‌ها از قبل در نوار هستند.</string>
     <string name="dejavu_more_menu_row">ردیف %1$d</string>
     <string name="dejavu_more_menu_add_item">افزودن یک دکمه</string>
     <string name="dejavu_more_menu_add_row">افزودن یک ردیف</string>
@@ -223,6 +242,22 @@
     <string name="dejavu_container_work">کاری</string>
     <string name="dejavu_container_banking">بانکی</string>
     <string name="dejavu_container_shopping">خرید</string>
+    <string name="dejavu_history_group_by">گروه‌بندی بر اساس</string>
+    <string name="dejavu_history_group_by_date">تاریخ</string>
+    <string name="dejavu_history_group_by_workspace">فضای کاری</string>
+    <string name="dejavu_history_group_by_folder">فضای کاری و پوشه</string>
+    <string name="dejavu_history_other_pages">صفحه‌های دیگر</string>
+    <string name="dejavu_settings_tab_sleep">زبانه‌های خوابیده</string>
+    <string name="dejavu_settings_tab_sleep_summary">زبانه‌هایی که از آن‌ها استفاده نمی‌کنید، برای آزاد کردن حافظه به خواب می‌روند</string>
+    <string name="dejavu_tab_sleep_hint">زبانهٔ خوابیده حافظه‌اش را آزاد می‌کند و وقتی بازش کنید، صفحه‌اش را دوباره بارگذاری می‌کند. زبانه‌ای که به آن نگاه می‌کنید، زبانهٔ کنارش در نمای تقسیم‌شده و زبانه‌هایی که صدا پخش می‌کنند یا از دوربین یا میکروفون استفاده می‌کنند، بیدار می‌مانند. وقتی Android به حافظه نیاز داشته باشد و Dejavu در پس‌زمینه باشد، همهٔ زبانه‌ها به‌جز دو زبانه‌ای که آخر از همه استفاده کرده‌اید به خواب می‌روند.</string>
+    <string name="dejavu_tab_sleep_when">خواباندن زبانه</string>
+    <plurals name="dejavu_tab_sleep_after_minutes">
+        <item quantity="one">پس از %d دقیقه بدون استفاده</item>
+        <item quantity="other">پس از %d دقیقه بدون استفاده</item>
+    </plurals>
+    <string name="dejavu_tab_sleep_after_hour">پس از یک ساعت بدون استفاده</string>
+    <string name="dejavu_tab_sleep_never">هرگز</string>
+    <string name="dejavu_startup_crash_body">مشکلی در باز کردن %1$s رخ داد. برای ادامهٔ مرور، دوباره بازش کنید.</string>
     <string name="dejavu_sync_normal_tabs">افزودن زبانه‌های سنجاق‌نشده</string>
     <string name="dejavu_sync_normal_tabs_summary">همچنین زبانه‌های دیگر هر فضای کاری را نیز همگام می‌کند، نه فقط زبانه‌های سنجاق‌شده و پوشه‌ها را. هنگامی که گزینه افزودن زبانه‌های سنجاق‌نشده خودِ Zen روشن باشد، آن‌ها را همگام می‌کند.</string>
     <plurals name="dejavu_selection_count">

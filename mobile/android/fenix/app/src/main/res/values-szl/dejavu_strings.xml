@@ -47,6 +47,12 @@
     <string name="dejavu_folder_rename">Przemianuj folder</string>
     <string name="dejavu_folder_unpack">Rozpakuj folder</string>
     <string name="dejavu_folder_top_level">Przipiynte karty, bez foldra</string>
+    <plurals name="dejavu_folder_open_tabs">
+        <item quantity="one">%1$d ôdewrzito karta</item>
+        <item quantity="few">%1$d ôdewrzite karty</item>
+        <item quantity="many">%1$d ôdewrzitych kart</item>
+        <item quantity="other">%1$d ôdewrzityj karty</item>
+    </plurals>
     <string name="dejavu_essentials_drop">Pōń sam, coby dodać do nojważniejszych</string>
     <string name="dejavu_essentials_full">Nojważniejsze pomieszczōm do %1$d kart</string>
     <string name="dejavu_temporary_by_default">Tymczasowe kōntynery wychodnie</string>
@@ -88,7 +94,19 @@
     <string name="dejavu_action_remove_from_essentials">Wyciep z nojważniejszych</string>
     <string name="dejavu_action_delete">Wyciep</string>
     <string name="dejavu_settings_title">Dejavu</string>
+    <string name="dejavu_about_content">%1$s to je niyzależno przeglōndarka zbudowano z ôtwartego kodu źrōdłowego Firefox i GeckoView ôd Mozilla. Mozilla jij niy robi, niy poleco i niy wspiyro. Firefox je znakym towarowym Mozilla Foundation w USA i inkszych krajach.</string>
+    <string name="dejavu_about_source_code">Kod źrōdłowy</string>
     <string name="dejavu_settings_tab_actions">Akcyje kart</string>
+    <string name="dejavu_settings_tab_actions_entry_summary">Jedna lista akcyji i kaj kożdo sie pokazuje</string>
+    <string name="dejavu_settings_tab_actions_hint">Wszyskie akcyje sōm na jednyj liście, tyż te, kere dodowosz sōm. Ôbier, kaj kożdo mo sie pokazować: na przipiyntych kartach, nieprzipiyntych kartach i foldrach, na posku ôbranych kart, w menu „Wiyncyj” i na posku akcyji pod strōnami. Akcyje na folderze działajōm na kożdo karta w nim.</string>
+    <string name="dejavu_settings_where_actions_show">Kaj sie pokazujōm akcyje</string>
+    <string name="dejavu_settings_folders">Foldry</string>
+    <string name="dejavu_settings_selection_bar">Posek ôbiyranio</string>
+    <string name="dejavu_settings_folder_actions_hint">Ôbier do %1$d knefli dlo rzyndōw foldrōw. Działajōm na kożdo karta w folderze i jego podfoldrach.</string>
+    <string name="dejavu_settings_action_places_none">Niy pokazuje sie nikaj</string>
+    <string name="dejavu_settings_action_place_unavailable">Niy robi tam nic</string>
+    <string name="dejavu_settings_action_place_full">Niy ma już placu</string>
+    <string name="dejavu_done">Gotowe</string>
     <string name="dejavu_settings_pinned_tabs">Przipiynte karty</string>
     <string name="dejavu_settings_unpinned_tabs">Nieprzipiynte karty</string>
     <string name="dejavu_settings_all_actions">Wszyskie akcyje</string>
@@ -185,6 +203,9 @@
     <string name="dejavu_actions_bar_search">Szukej</string>
     <string name="dejavu_actions_bar_home">Dōm</string>
     <string name="dejavu_settings_more_menu_summary">Posek akcyji pod strōnami i meni, kere ôn ôdwiyro</string>
+    <string name="dejavu_more_menu_hint">Przeciōng posek akcyji w gōra abo posek z adresōm w dōł, coby ôdewrzić cołke meni. Stuknij knefel, coby go przeniyś abo wyciepnyć. Rozszyrzynia zawdy zajmujōm cołko linijo.</string>
+    <string name="dejavu_actions_bar_hint">Knefle pod strōnami. Działajōm na tyj strōnie, kaj żeś je.</string>
+    <string name="dejavu_actions_bar_all_added">Kożdy knefel je już na posku.</string>
     <string name="dejavu_more_menu_row">Linijo %1$d</string>
     <string name="dejavu_more_menu_add_item">Dodej knefel</string>
     <string name="dejavu_more_menu_add_row">Dodej linijo</string>
@@ -223,6 +244,24 @@
     <string name="dejavu_container_work">Robota</string>
     <string name="dejavu_container_banking">Bankowość</string>
     <string name="dejavu_container_shopping">Zakupy</string>
+    <string name="dejavu_history_group_by">Grupuj podle</string>
+    <string name="dejavu_history_group_by_date">Data</string>
+    <string name="dejavu_history_group_by_workspace">Plac</string>
+    <string name="dejavu_history_group_by_folder">Plac i folder</string>
+    <string name="dejavu_history_other_pages">Inksze strōny</string>
+    <string name="dejavu_settings_tab_sleep">Uśpiōne karty</string>
+    <string name="dejavu_settings_tab_sleep_summary">Karty, kerych niy używosz, sōm uśpiōne, coby uwolnić pamiynć</string>
+    <string name="dejavu_tab_sleep_hint">Uśpiōno karta uwolnio swoja pamiynć i zaś ladowuje swoja strōna, jak jōm ôdewrzesz. Karta, na kero patrzisz, ta przi nij w podzielōnym widoku i karty, kere puszczajōm zwuk abo używajōm kamery abo mikrofōnu, niy sōm usypiane. Jak Android potrzebuje pamiynci, kej Dejavu je w tle, wszyskie karty ôprōcz dwōch ôstatnio używanych sōm usypiane.</string>
+    <string name="dejavu_tab_sleep_when">Uśpij karta</string>
+    <plurals name="dejavu_tab_sleep_after_minutes">
+        <item quantity="one">Po %d minucie bez używanio</item>
+        <item quantity="few">Po %d minutach bez używanio</item>
+        <item quantity="many">Po %d minutach bez używanio</item>
+        <item quantity="other">Po %d minuty bez używanio</item>
+    </plurals>
+    <string name="dejavu_tab_sleep_after_hour">Po godzinie bez używanio</string>
+    <string name="dejavu_tab_sleep_never">Żodyn roz</string>
+    <string name="dejavu_startup_crash_body">Było problym z ôdewrzyniym %1$s. Ôdewrzij aplikacyjo zaś, coby dalij przeglōndać.</string>
     <string name="dejavu_sync_normal_tabs">Dodej niyprzipiynte karty</string>
     <string name="dejavu_sync_normal_tabs_summary">Synchronizuje tyż inksze karty kożdego placu, niy ino przipiynte karty i foldry. Zen jie synchronizuje, kej je zapniynto jego włosno ôpcyjo Dodej niyprzipiynte karty.</string>
     <plurals name="dejavu_selection_count">

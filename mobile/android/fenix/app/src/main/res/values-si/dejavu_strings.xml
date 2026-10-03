@@ -47,6 +47,10 @@
     <string name="dejavu_folder_rename">ෆෝල්ඩරයේ නම වෙනස් කරන්න</string>
     <string name="dejavu_folder_unpack">ෆෝල්ඩරය විසුරුවන්න</string>
     <string name="dejavu_folder_top_level">අමුණන ලද පටිති, ෆෝල්ඩරයක් නැත</string>
+    <plurals name="dejavu_folder_open_tabs">
+        <item quantity="one">විවෘත පටිති %1$d ක්</item>
+        <item quantity="other">විවෘත පටිති %1$d ක්</item>
+    </plurals>
     <string name="dejavu_essentials_drop">අත්‍යවශ්‍යයට එකතු කිරීමට මෙහි දමන්න</string>
     <string name="dejavu_essentials_full">අත්‍යවශ්‍යයන්ට උපරිම පටිති %1$d ක් තැබිය හැක</string>
     <string name="dejavu_temporary_by_default">පෙරනිමියෙන් තාවකාලික බහාලුම්</string>
@@ -88,7 +92,19 @@
     <string name="dejavu_action_remove_from_essentials">අත්‍යවශ්‍යයෙන් ඉවත් කරන්න</string>
     <string name="dejavu_action_delete">මකන්න</string>
     <string name="dejavu_settings_title">Dejavu</string>
+    <string name="dejavu_about_content">%1$s යනු Mozilla හි විවෘත මූලාශ්‍ර Firefox සහ GeckoView කේතයෙන් තැනූ ස්වාධීන අතිරික්සුවකි. එය Mozilla විසින් සාදන ලද, අනුමත කරන ලද හෝ සහාය දක්වන ලද එකක් නොවේ. Firefox යනු එක්සත් ජනපදයේ සහ වෙනත් රටවල Mozilla Foundation හි වෙළඳ ලකුණකි.</string>
+    <string name="dejavu_about_source_code">මූලාශ්‍ර කේතය</string>
     <string name="dejavu_settings_tab_actions">පටිති ක්‍රියා</string>
+    <string name="dejavu_settings_tab_actions_entry_summary">ක්‍රියාවල එක් ලැයිස්තුවක් සහ ඒ එක එකක් පෙන්වන තැන</string>
+    <string name="dejavu_settings_tab_actions_hint">ඔබ විසින්ම එක් කරන ඒවා ද ඇතුළුව සියලු ක්‍රියා එක් ලැයිස්තුවක ඇත. එක් එක් ක්‍රියාව පෙන්විය යුතු තැන තෝරන්න: අමුණන ලද පටිති, නොඅමුණන ලද පටිති සහ ෆෝල්ඩර මත, තෝරාගත් පටිතිවල තීරුවේ, තව මෙනුවේ සහ පිටු පහළින් ඇති ක්‍රියා තීරුවේ. ෆෝල්ඩරයක් මත කරන ක්‍රියා එය තුළ ඇති සෑම පටිත්තකටම අදාළ වේ.</string>
+    <string name="dejavu_settings_where_actions_show">ක්‍රියා පෙන්වන තැන්</string>
+    <string name="dejavu_settings_folders">ෆෝල්ඩර</string>
+    <string name="dejavu_settings_selection_bar">තේරීම් තීරුව</string>
+    <string name="dejavu_settings_folder_actions_hint">ෆෝල්ඩර පේළි සඳහා බොත්තම් %1$d ක් දක්වා තෝරන්න. ඒවා ෆෝල්ඩරය සහ එහි උප ෆෝල්ඩර තුළ ඇති සෑම පටිත්තක් මතම ක්‍රියා කරයි.</string>
+    <string name="dejavu_settings_action_places_none">කොතැනකවත් පෙන්වන්නේ නැත</string>
+    <string name="dejavu_settings_action_place_unavailable">එහි කිසිවක් නොකරයි</string>
+    <string name="dejavu_settings_action_place_full">තවත් ඉඩ නැත</string>
+    <string name="dejavu_done">අහවරයි</string>
     <string name="dejavu_settings_pinned_tabs">අමුණන ලද පටිති</string>
     <string name="dejavu_settings_unpinned_tabs">නොඅමුණන ලද පටිති</string>
     <string name="dejavu_settings_all_actions">සියලු ක්‍රියා</string>
@@ -185,6 +201,9 @@
     <string name="dejavu_actions_bar_search">සොයන්න</string>
     <string name="dejavu_actions_bar_home">මුල් පිටුව</string>
     <string name="dejavu_settings_more_menu_summary">පිටු පහළින් ඇති ක්‍රියා තීරුව සහ එය විවෘත කරන මෙනුව</string>
+    <string name="dejavu_more_menu_hint">සම්පූර්ණ මෙනුව විවෘත කිරීමට ක්‍රියා තීරුව ඉහළට, හෝ ලිපින තීරුව පහළට අදින්න. බොත්තමක් ගෙනයාමට හෝ ඉවත් කිරීමට එය තට්ටු කරන්න. දිගු සැමවිටම සම්පූර්ණ පේළියක් ගනී.</string>
+    <string name="dejavu_actions_bar_hint">පිටු පහළින් ඇති බොත්තම්. ඒවා ඔබ සිටින පිටුව මත ක්‍රියා කරයි.</string>
+    <string name="dejavu_actions_bar_all_added">සෑම බොත්තමක්ම දැනටමත් තීරුවේ ඇත.</string>
     <string name="dejavu_more_menu_row">%1$d වන පේළිය</string>
     <string name="dejavu_more_menu_add_item">බොත්තමක් එකතු කරන්න</string>
     <string name="dejavu_more_menu_add_row">පේළියක් එකතු කරන්න</string>
@@ -223,6 +242,22 @@
     <string name="dejavu_container_work">රැකියා</string>
     <string name="dejavu_container_banking">බැංකු</string>
     <string name="dejavu_container_shopping">සාප්පු සවාරි</string>
+    <string name="dejavu_history_group_by">සමූහගත කරන ආකාරය</string>
+    <string name="dejavu_history_group_by_date">දිනය</string>
+    <string name="dejavu_history_group_by_workspace">අවකාශය</string>
+    <string name="dejavu_history_group_by_folder">අවකාශය සහ ෆෝල්ඩරය</string>
+    <string name="dejavu_history_other_pages">වෙනත් පිටු</string>
+    <string name="dejavu_settings_tab_sleep">නිදන පටිති</string>
+    <string name="dejavu_settings_tab_sleep_summary">ඔබ භාවිත නොකරන පටිති මතකය නිදහස් කිරීමට නිදා ගනී</string>
+    <string name="dejavu_tab_sleep_hint">නිදන පටිත්තක් එහි මතකය නිදහස් කරන අතර ඔබ එය විවෘත කළ විට එහි පිටුව නැවත පූරණය කරයි. ඔබ බලමින් සිටින පටිත්ත, බෙදුම් දසුනේ එයට යාබද පටිත්ත, සහ ශබ්දය වාදනය කරන හෝ රූගතය හෝ ශබ්දවාහිනිය භාවිත කරන පටිති අවදියෙන් පවතී. Dejavu පසුබිමේ ඇති විට Android හට මතකය අවශ්‍ය වුවහොත්, ඔබ අවසන් වරට භාවිත කළ පටිති දෙක හැර අනෙක් සියලු පටිති නිදා ගනී.</string>
+    <string name="dejavu_tab_sleep_when">පටිත්තක් නිදි කරන්න</string>
+    <plurals name="dejavu_tab_sleep_after_minutes">
+        <item quantity="one">භාවිත නොකර මිනිත්තු %d කට පසු</item>
+        <item quantity="other">භාවිත නොකර මිනිත්තු %d කට පසු</item>
+    </plurals>
+    <string name="dejavu_tab_sleep_after_hour">භාවිත නොකර පැයකට පසු</string>
+    <string name="dejavu_tab_sleep_never">කවදාවත්</string>
+    <string name="dejavu_startup_crash_body">%1$s විවෘත කිරීමේදී ගැටලුවක් ඇති විය. පිරික්සීම දිගටම කරගෙන යාමට එය නැවත විවෘත කරන්න.</string>
     <string name="dejavu_sync_normal_tabs">නොඅමුණන ලද පටිති ඇතුළත් කරන්න</string>
     <string name="dejavu_sync_normal_tabs_summary">එය සෑම අවකාශයක්හිම අනෙකුත් පටිති ද සමමුහුර්ත කරයි, අමුණන ලද පටිති සහ ෆෝල්ඩර පමණක් නොවේ. එහි ම නොඅමුණන ලද පටිති ඇතුළත් කරන්න විකල්පය ක්‍රියාත්මක විට, Zen ඒවා සමමුහුර්ත කරයි.</string>
     <plurals name="dejavu_selection_count">

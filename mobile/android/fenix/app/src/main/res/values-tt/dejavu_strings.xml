@@ -47,6 +47,10 @@
     <string name="dejavu_folder_rename">Папка исемен үзгәртү</string>
     <string name="dejavu_folder_unpack">Папканы таркату</string>
     <string name="dejavu_folder_top_level">Беркетелгән таблар, папкасыз</string>
+    <plurals name="dejavu_folder_open_tabs">
+        <item quantity="one">%1$d ачык таб</item>
+        <item quantity="other">%1$d ачык таб</item>
+    </plurals>
     <string name="dejavu_essentials_drop">Төп сайтларга өстәр өчен монда ташлагыз</string>
     <string name="dejavu_essentials_full">Төп сайтлар иң күбе %1$d таб сыйдыра</string>
     <string name="dejavu_temporary_by_default">Гадәттә вакытлы контейнерләр</string>
@@ -88,7 +92,19 @@
     <string name="dejavu_action_remove_from_essentials">Төп сайтлардан чыгару</string>
     <string name="dejavu_action_delete">Бетерү</string>
     <string name="dejavu_settings_title">Dejavu</string>
+    <string name="dejavu_about_content">%1$s — Mozilla-ның Firefox һәм GeckoView ачык чыганак кодыннан төзелгән бәйсез браузер. Аны Mozilla ясамый, хупламый һәм якламый. Firefox — Mozilla Foundation оешмасының АКШ һәм башка илләрдәге сәүдә билгесе.</string>
+    <string name="dejavu_about_source_code">Чыганак коды</string>
     <string name="dejavu_settings_tab_actions">Таб гамәлләре</string>
+    <string name="dejavu_settings_tab_actions_entry_summary">Гамәлләрнең бер исемлеге һәм һәрберсенең кайда күренүе</string>
+    <string name="dejavu_settings_tab_actions_hint">Үзегез өстәгәннәрне дә кертеп, барлык гамәлләр бер исемлектә. Һәрберсенең кайда күренәчәген сайлагыз: беркетелгән табларда, беркетелмәгән табларда һәм папкаларда, таблар сайланганда чыга торган панельдә, «Тагын» менюсында һәм битләр астындагы гамәлләр панелендә. Папкага кулланылган гамәлләр аның эчендәге һәрбер табка кагыла.</string>
+    <string name="dejavu_settings_where_actions_show">Гамәлләр күренә торган урыннар</string>
+    <string name="dejavu_settings_folders">Папкалар</string>
+    <string name="dejavu_settings_selection_bar">Сайлау панеле</string>
+    <string name="dejavu_settings_folder_actions_hint">Папка рәтләре өчен иң күбе %1$d төймә сайлагыз. Алар папкадагы һәм аның эчке папкаларындагы һәрбер табка кагыла.</string>
+    <string name="dejavu_settings_action_places_none">Беркайда да күрсәтелми</string>
+    <string name="dejavu_settings_action_place_unavailable">Монда эшләми</string>
+    <string name="dejavu_settings_action_place_full">Урын калмады</string>
+    <string name="dejavu_done">Әзер</string>
     <string name="dejavu_settings_pinned_tabs">Беркетелгән таблар</string>
     <string name="dejavu_settings_unpinned_tabs">Беркетелмәгән таблар</string>
     <string name="dejavu_settings_all_actions">Барлык гамәлләр</string>
@@ -185,6 +201,9 @@
     <string name="dejavu_actions_bar_search">Эзләү</string>
     <string name="dejavu_actions_bar_home">Баш бит</string>
     <string name="dejavu_settings_more_menu_summary">Битләр астындагы гамәлләр панеле һәм ул ачкан меню</string>
+    <string name="dejavu_more_menu_hint">Бөтен менюны ачу өчен гамәлләр панелен өскә яки адрес юлын аска шудырыгыз. Төймәне күчерү яки чыгару өчен аңа басыгыз. Киңәйтүләр һәрвакыт бөтен рәтне били.</string>
+    <string name="dejavu_actions_bar_hint">Битләр астындагы төймәләр. Алар сез ачкан биткә кагыла.</string>
+    <string name="dejavu_actions_bar_all_added">Барлык төймәләр дә инде панельдә.</string>
     <string name="dejavu_more_menu_row">%1$d нче рәт</string>
     <string name="dejavu_more_menu_add_item">Төймә өстәү</string>
     <string name="dejavu_more_menu_add_row">Рәт өстәү</string>
@@ -223,6 +242,22 @@
     <string name="dejavu_container_work">Эш</string>
     <string name="dejavu_container_banking">Банк</string>
     <string name="dejavu_container_shopping">Сатып алу</string>
+    <string name="dejavu_history_group_by">Төркемләү</string>
+    <string name="dejavu_history_group_by_date">Дата</string>
+    <string name="dejavu_history_group_by_workspace">Эш өлкәсе</string>
+    <string name="dejavu_history_group_by_folder">Эш өлкәсе һәм папка</string>
+    <string name="dejavu_history_other_pages">Башка битләр</string>
+    <string name="dejavu_settings_tab_sleep">Йокыдагы таблар</string>
+    <string name="dejavu_settings_tab_sleep_summary">Сез кулланмаган таблар хәтерне бушату өчен йоклый</string>
+    <string name="dejavu_tab_sleep_hint">Йокыдагы таб үз хәтерен бушата һәм сез аны ачканда битне яңадан йөкли. Сез караган таб, бүленгән күренештә аның янындагы таб һәм тавыш уйнаткан яки камера я микрофон кулланган таблар уяу кала. Dejavu фонда эшләгәндә Android-ка хәтер кирәк булса, сез соңгы кулланган ике табтан башка барлык таблар йоклый.</string>
+    <string name="dejavu_tab_sleep_when">Табларны йокыга җибәрү</string>
+    <plurals name="dejavu_tab_sleep_after_minutes">
+        <item quantity="one">%d минут кулланылмаганнан соң</item>
+        <item quantity="other">%d минут кулланылмаганнан соң</item>
+    </plurals>
+    <string name="dejavu_tab_sleep_after_hour">Бер сәгать кулланылмаганнан соң</string>
+    <string name="dejavu_tab_sleep_never">Беркайчан да</string>
+    <string name="dejavu_startup_crash_body">%1$s ачылганда проблема килеп чыкты. Битләрне карауны дәвам итәр өчен аны яңадан ачыгыз.</string>
     <string name="dejavu_sync_normal_tabs">Беркетелмәгән табларны кертү</string>
     <string name="dejavu_sync_normal_tabs_summary">Шулай ук һәр эш өлкәсенең башка табларын да синхронлаштыра, ялгыз гына беркетелгән таблар һәм папкаларны түгел. Аның үз Беркетелмәгән табларны кертү опциясе кабызылганда, Zen аларны синхронлаштыра.</string>
     <plurals name="dejavu_selection_count">

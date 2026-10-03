@@ -47,6 +47,9 @@
     <string name="dejavu_folder_rename">ປ່ຽນຊື່ໂຟນເດີ</string>
     <string name="dejavu_folder_unpack">ແກະໂຟນເດີອອກ</string>
     <string name="dejavu_folder_top_level">ແທັບທີ່ປັກໄວ້, ບໍ່ມີໂຟນເດີ</string>
+    <plurals name="dejavu_folder_open_tabs">
+        <item quantity="other">ເປີດຢູ່ %1$d ແທັບ</item>
+    </plurals>
     <string name="dejavu_essentials_drop">ວາງໄວ້ບ່ອນນີ້ເພື່ອເພີ່ມເຂົ້າສິ່ງສຳຄັນ</string>
     <string name="dejavu_essentials_full">ສິ່ງສຳຄັນເກັບໄດ້ສູງສຸດ %1$d ແທັບ</string>
     <string name="dejavu_temporary_by_default">ຄອນເທນເນີຊົ່ວຄາວເປັນຄ່າເລີ່ມຕົ້ນ</string>
@@ -88,7 +91,19 @@
     <string name="dejavu_action_remove_from_essentials">ເອົາອອກຈາກສິ່ງສຳຄັນ</string>
     <string name="dejavu_action_delete">ລຶບ</string>
     <string name="dejavu_settings_title">Dejavu</string>
+    <string name="dejavu_about_content">%1$s ເປັນບຣາວເຊີອິດສະຫຼະທີ່ສ້າງຂຶ້ນຈາກໂຄດໂອເພັນຊອດຂອງ Firefox ແລະ GeckoView ຈາກ Mozilla. ມັນບໍ່ໄດ້ຖືກສ້າງ, ຮັບຮອງ ຫຼື ສະໜັບສະໜູນໂດຍ Mozilla. Firefox ເປັນເຄື່ອງໝາຍການຄ້າຂອງ Mozilla Foundation ໃນສະຫະລັດອາເມລິກາ ແລະ ປະເທດອື່ນໆ.</string>
+    <string name="dejavu_about_source_code">ຊອດໂຄດ</string>
     <string name="dejavu_settings_tab_actions">ຄຳສັ່ງແທັບ</string>
+    <string name="dejavu_settings_tab_actions_entry_summary">ລາຍການຄຳສັ່ງດຽວ ແລະ ບ່ອນທີ່ແຕ່ລະຄຳສັ່ງສະແດງ</string>
+    <string name="dejavu_settings_tab_actions_hint">ຄຳສັ່ງທັງຫມົດຢູ່ໃນລາຍການດຽວ ລວມທັງຄຳສັ່ງທີ່ທ່ານເພີ່ມເອງ. ເລືອກບ່ອນທີ່ແຕ່ລະຄຳສັ່ງຈະສະແດງ: ຢູ່ແທັບທີ່ປັກໄວ້, ແທັບທີ່ບໍ່ໄດ້ປັກໄວ້ ແລະ ໂຟນເດີ, ໃນແຖບຂອງແທັບທີ່ເລືອກໄວ້, ໃນເມນູເພີ່ມເຕີມ ແລະ ໃນແຖບຄຳສັ່ງຢູ່ລຸ່ມຫນ້າເວັບ. ຄຳສັ່ງຢູ່ໂຟນເດີຈະມີຜົນກັບທຸກແທັບທີ່ຢູ່ໃນນັ້ນ.</string>
+    <string name="dejavu_settings_where_actions_show">ບ່ອນທີ່ຄຳສັ່ງສະແດງ</string>
+    <string name="dejavu_settings_folders">ໂຟນເດີ</string>
+    <string name="dejavu_settings_selection_bar">ແຖບການເລືອກ</string>
+    <string name="dejavu_settings_folder_actions_hint">ເລືອກປຸ່ມໄດ້ສູງສຸດ %1$d ປຸ່ມສຳລັບແຖວໂຟນເດີ. ປຸ່ມເຫຼົ່ານີ້ເຮັດວຽກກັບທຸກແທັບທີ່ຢູ່ໃນໂຟນເດີ ແລະ ໂຟນເດີຍ່ອຍຂອງມັນ.</string>
+    <string name="dejavu_settings_action_places_none">ບໍ່ສະແດງຢູ່ບ່ອນໃດ</string>
+    <string name="dejavu_settings_action_place_unavailable">ບໍ່ມີຜົນຢູ່ບ່ອນນັ້ນ</string>
+    <string name="dejavu_settings_action_place_full">ບໍ່ມີບ່ອນຫວ່າງແລ້ວ</string>
+    <string name="dejavu_done">ສຳເລັດ</string>
     <string name="dejavu_settings_pinned_tabs">ແທັບທີ່ປັກໄວ້</string>
     <string name="dejavu_settings_unpinned_tabs">ແທັບທີ່ບໍ່ໄດ້ປັກໄວ້</string>
     <string name="dejavu_settings_all_actions">ຄຳສັ່ງທັງຫມົດ</string>
@@ -185,6 +200,9 @@
     <string name="dejavu_actions_bar_search">ຄົ້ນຫາ</string>
     <string name="dejavu_actions_bar_home">ໜ້າຫຼັກ</string>
     <string name="dejavu_settings_more_menu_summary">ແຖບຄຳສັ່ງຢູ່ລຸ່ມຫນ້າເວັບ ແລະ ເມນູທີ່ມັນເປີດ</string>
+    <string name="dejavu_more_menu_hint">ປັດແຖບຄຳສັ່ງຂຶ້ນ ຫຼື ປັດແຖບທີ່ຢູ່ລົງ ເພື່ອເປີດເມນູທັງຫມົດ. ແຕະປຸ່ມເພື່ອຍ້າຍ ຫຼື ເອົາມັນອອກ. ສ່ວນຂະຫຍາຍຈະໃຊ້ພື້ນທີ່ເຕັມແຖວສະເໝີ.</string>
+    <string name="dejavu_actions_bar_hint">ປຸ່ມຢູ່ລຸ່ມຫນ້າເວັບ. ປຸ່ມເຫຼົ່ານີ້ເຮັດວຽກກັບຫນ້າທີ່ທ່ານກຳລັງເບິ່ງຢູ່.</string>
+    <string name="dejavu_actions_bar_all_added">ທຸກປຸ່ມຢູ່ໃນແຖບນີ້ແລ້ວ.</string>
     <string name="dejavu_more_menu_row">ແຖວ %1$d</string>
     <string name="dejavu_more_menu_add_item">ເພີ່ມປຸ່ມ</string>
     <string name="dejavu_more_menu_add_row">ເພີ່ມແຖວ</string>
@@ -223,6 +241,21 @@
     <string name="dejavu_container_work">ວຽກງານ</string>
     <string name="dejavu_container_banking">ທະນາຄານ</string>
     <string name="dejavu_container_shopping">ຊື້ເຄື່ອງ</string>
+    <string name="dejavu_history_group_by">ຈັດກຸ່ມຕາມ</string>
+    <string name="dejavu_history_group_by_date">ວັນທີ</string>
+    <string name="dejavu_history_group_by_workspace">ພື້ນທີ່ເຮັດວຽກ</string>
+    <string name="dejavu_history_group_by_folder">ພື້ນທີ່ເຮັດວຽກ ແລະ ໂຟນເດີ</string>
+    <string name="dejavu_history_other_pages">ຫນ້າອື່ນໆ</string>
+    <string name="dejavu_settings_tab_sleep">ແທັບທີ່ພັກ</string>
+    <string name="dejavu_settings_tab_sleep_summary">ແທັບທີ່ທ່ານບໍ່ໄດ້ໃຊ້ຈະພັກເພື່ອປ່ອຍຫນ່ວຍຄວາມຈຳ</string>
+    <string name="dejavu_tab_sleep_hint">ແທັບທີ່ພັກຈະປ່ອຍຫນ່ວຍຄວາມຈຳຂອງມັນ ແລະ ໂຫລດຫນ້າເວັບຄືນໃຫມ່ເມື່ອທ່ານເປີດມັນ. ແທັບທີ່ທ່ານກຳລັງເບິ່ງ, ແທັບທີ່ຢູ່ຂ້າງມັນໃນມູມມອງແບບແຍກ ແລະ ແທັບທີ່ກຳລັງຫຼິ້ນສຽງ ຫຼື ໃຊ້ກ້ອງຖ່າຍຮູບ ຫຼື ໄມໂຄຣໂຟນ ຈະບໍ່ພັກ. ເມື່ອ Android ຕ້ອງການຫນ່ວຍຄວາມຈຳໃນຂະນະທີ່ Dejavu ຢູ່ໃນພື້ນຫຼັງ, ທຸກແທັບຈະພັກ ຍົກເວັ້ນສອງແທັບທີ່ທ່ານໃຊ້ລ່າສຸດ.</string>
+    <string name="dejavu_tab_sleep_when">ໃຫ້ແທັບພັກ</string>
+    <plurals name="dejavu_tab_sleep_after_minutes">
+        <item quantity="other">ຫຼັງຈາກບໍ່ໄດ້ໃຊ້ %d ນາທີ</item>
+    </plurals>
+    <string name="dejavu_tab_sleep_after_hour">ຫຼັງຈາກບໍ່ໄດ້ໃຊ້ໜຶ່ງຊົ່ວໂມງ</string>
+    <string name="dejavu_tab_sleep_never">ບໍ່ເຄີຍ</string>
+    <string name="dejavu_startup_crash_body">ເກີດບັນຫາໃນການເປີດ %1$s. ເປີດມັນຄືນໃຫມ່ເພື່ອທ່ອງເວັບຕໍ່.</string>
     <string name="dejavu_sync_normal_tabs">ລວມແທັບທີ່ບໍ່ໄດ້ປັກໄວ້</string>
     <string name="dejavu_sync_normal_tabs_summary">ມັນຍັງຊິງຄ໌ແທັບອື່ນໆຂອງແຕ່ລະພື້ນທີ່ເຮັດວຽກນຳ, ບໍ່ແມ່ນແຕ່ແທັບທີ່ປັກໄວ້ ແລະ ໂຟນເດີເທົ່ານັ້ນ. Zen ຈະຊິງຄ໌ພວກມັນເມື່ອຕົວເລືອກ ລວມແທັບທີ່ບໍ່ໄດ້ປັກໄວ້ ຂອງມັນເອງເປີດຢູ່.</string>
     <plurals name="dejavu_selection_count">

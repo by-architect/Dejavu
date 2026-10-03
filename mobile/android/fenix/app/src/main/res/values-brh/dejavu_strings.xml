@@ -47,6 +47,10 @@
     <string name="dejavu_folder_rename">فولڈر ناں بدل</string>
     <string name="dejavu_folder_unpack">فولڈر کھول</string>
     <string name="dejavu_folder_top_level">پن ٹیباک، فولڈر کائی نی</string>
+    <plurals name="dejavu_folder_open_tabs">
+        <item quantity="one">%1$d ملوکا ٹیب</item>
+        <item quantity="other">%1$d ملوکا ٹیب</item>
+    </plurals>
     <string name="dejavu_essentials_drop">ضروری چیزاک اٹ شامل کننا اے ادا چھوڑ</string>
     <string name="dejavu_essentials_full">ضروری چیزاک اٹ %1$d ٹیب تک جاگہ ہن</string>
     <string name="dejavu_temporary_by_default">ڈیفالٹ طور اٹ عارضی کنٹینراک</string>
@@ -88,7 +92,19 @@
     <string name="dejavu_action_remove_from_essentials">ضروری چیزاک ٹی ہٹاؤ</string>
     <string name="dejavu_action_delete">مٹاؤ</string>
     <string name="dejavu_settings_title">Dejavu</string>
+    <string name="dejavu_about_content">%1$s ایک آزاد براؤزر ہس جہ Mozilla نا اوپن سورس Firefox او GeckoView کوڈ ان جوڑ ہتینے۔ اے Mozilla جوڑ نی کرینے، او Mozilla اے نا تائید یا مدد ام نی کن۔ Firefox امریکہ او ہور ملکاک اٹ Mozilla Foundation نا ٹریڈ مارک ہس۔</string>
+    <string name="dejavu_about_source_code">سورس کوڈ</string>
     <string name="dejavu_settings_tab_actions">ٹیب ایکشناک</string>
+    <string name="dejavu_settings_tab_actions_entry_summary">ایکشناک نا ایک لسٹ، او ہر ایکشن نا جاگہ</string>
+    <string name="dejavu_settings_tab_actions_hint">کل ایکشناک ایک لسٹ اٹ ہن، نی اپنا شامل کنا ایکشناک سمیت۔ ہر ایکشن نا جاگہ چُن: پن ٹیباک، بغیر پن ٹیباک او فولڈراک پار، چُنتین ٹیباک نا بار اٹ، مور مینو اٹ او صفحاک نا تلی ایکشن بار اٹ۔ فولڈر پار ایکشناک اے نا اندرین ہر ٹیب تک پُہت ہن۔</string>
+    <string name="dejavu_settings_where_actions_show">ایکشناک نا جاگہ</string>
+    <string name="dejavu_settings_folders">فولڈراک</string>
+    <string name="dejavu_settings_selection_bar">چُنائی بار</string>
+    <string name="dejavu_settings_folder_actions_hint">فولڈر قطاراک نا واسطے %1$d تک بٹناک چُن۔ اے فولڈر او اے نا سب فولڈراک نا اندرین ہر ٹیب پار چل ہن۔</string>
+    <string name="dejavu_settings_action_places_none">ہچ جاگہ اٹ دکھ نی ہس</string>
+    <string name="dejavu_settings_action_place_unavailable">اے جاگہ اٹ کم نی کن</string>
+    <string name="dejavu_settings_action_place_full">جاگہ اف</string>
+    <string name="dejavu_done">مس</string>
     <string name="dejavu_settings_pinned_tabs">پن ٹیباک</string>
     <string name="dejavu_settings_unpinned_tabs">بغیر پن ٹیباک</string>
     <string name="dejavu_settings_all_actions">کل ایکشناک</string>
@@ -185,6 +201,9 @@
     <string name="dejavu_actions_bar_search">پٹبو</string>
     <string name="dejavu_actions_bar_home">گھر</string>
     <string name="dejavu_settings_more_menu_summary">صفحاک نا تلی ایکشن بار او اے ملتین مینو</string>
+    <string name="dejavu_more_menu_hint">کل مینو ملننا نا واسطے ایکشن بار اے اُتی، یا ڈس بار اے تلی سوائپ کبو۔ بٹن اس چلننا یا ہٹاننا نا واسطے اے پار ٹیپ کبو۔ ایکسٹینشناک ہمیشہ ایک پوری قطار اٹ ہن۔</string>
+    <string name="dejavu_actions_bar_hint">صفحاک نا تلی بٹناک۔ اے نی نا ملوکا صفحہ پار چل ہن۔</string>
+    <string name="dejavu_actions_bar_all_added">ہر بٹن پہلوں تی بار اٹ ہس۔</string>
     <string name="dejavu_more_menu_row">قطار %1$d</string>
     <string name="dejavu_more_menu_add_item">بٹن شامل کبو</string>
     <string name="dejavu_more_menu_add_row">قطار شامل کبو</string>
@@ -223,6 +242,22 @@
     <string name="dejavu_container_work">کم</string>
     <string name="dejavu_container_banking">بینکنگ</string>
     <string name="dejavu_container_shopping">خریداری</string>
+    <string name="dejavu_history_group_by">گروپ کبو</string>
+    <string name="dejavu_history_group_by_date">تاریخ</string>
+    <string name="dejavu_history_group_by_workspace">ورک سپیس</string>
+    <string name="dejavu_history_group_by_folder">ورک سپیس او فولڈر</string>
+    <string name="dejavu_history_other_pages">ہور صفحاک</string>
+    <string name="dejavu_settings_tab_sleep">سلیپ ٹیباک</string>
+    <string name="dejavu_settings_tab_sleep_summary">جہ ٹیباک نی استعمال نی کن، اے میموری خالی کننا نا واسطے سلیپ ہن</string>
+    <string name="dejavu_tab_sleep_hint">سلیپ ٹیب اپنا میموری خالی کن، او جہ وخت نی اے مل کن، اپنا صفحہ دوبارہ لوڈ کن۔ جہ ٹیب نی دیکھ کن، اسپلٹ ویو اٹ اے نا پاسی ٹیب، او جہ ٹیباک آواز چلائی کن یا کیمرہ یا مائک استعمال کن، اے جاگ اٹ ہن۔ جہ وخت Dejavu بیک گراؤنڈ اٹ ہس او Android اے میموری نا ضرورت ہس، نی نا آخری استعمال کرتین دو ٹیباک نا علاوہ ہر ٹیب سلیپ ہس۔</string>
+    <string name="dejavu_tab_sleep_when">ٹیب سلیپ کبو</string>
+    <plurals name="dejavu_tab_sleep_after_minutes">
+        <item quantity="one">استعمال بغیر %d منٹ انپد</item>
+        <item quantity="other">استعمال بغیر %d منٹ انپد</item>
+    </plurals>
+    <string name="dejavu_tab_sleep_after_hour">استعمال بغیر گھنٹہ اسے انپد</string>
+    <string name="dejavu_tab_sleep_never">ہچ</string>
+    <string name="dejavu_startup_crash_body">%1$s اے ملنگ ٹی مسئلہ اس مس۔ براؤزنگ جاری راکھننا نا واسطے اے ولدا مل۔</string>
     <string name="dejavu_sync_normal_tabs">غیر پن ٹیباک شامل کبو</string>
     <string name="dejavu_sync_normal_tabs_summary">ہمے نا، ہر ورک سپیس نا ہور ٹیباک بند ام سنک کبو، پن ٹیباک او فولڈراک تئو نئے۔ Zen اے نا خاص «غیر پن ٹیباک شامل کبو» آپشن آن بوٹی وقت اے سنک کبو۔</string>
     <plurals name="dejavu_selection_count">

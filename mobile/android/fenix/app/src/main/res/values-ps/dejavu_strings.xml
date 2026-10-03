@@ -47,6 +47,10 @@
     <string name="dejavu_folder_rename">د پوښې نوم بدلول</string>
     <string name="dejavu_folder_unpack">پوښه خلاصول</string>
     <string name="dejavu_folder_top_level">پین شوي ټبونه، پرته له پوښې</string>
+    <plurals name="dejavu_folder_open_tabs">
+        <item quantity="one">%1$d خلاص ټب</item>
+        <item quantity="other">%1$d خلاص ټبونه</item>
+    </plurals>
     <string name="dejavu_essentials_drop">دلته یې پرېږدئ ترڅو مهمو ویب پاڼو ته ورزیات شي</string>
     <string name="dejavu_essentials_full">مهمې ویب پاڼې تر %1$d ټبونو پورې ساتي</string>
     <string name="dejavu_temporary_by_default">په اصل کې لنډمهاله کانتینرونه</string>
@@ -88,7 +92,19 @@
     <string name="dejavu_action_remove_from_essentials">له مهمو ویب پاڼو څخه لرې کول</string>
     <string name="dejavu_action_delete">ړنګول</string>
     <string name="dejavu_settings_title">Dejavu</string>
+    <string name="dejavu_about_content">%1$s یو خپلواک براوزر دی چې د Mozilla د پرانیستې سرچینې Firefox او GeckoView له کوډ څخه جوړ شوی دی. دا د Mozilla لخوا نه دی جوړ شوی، نه تایید شوی او نه یې ملاتړ کېږي. Firefox په متحده ایالاتو او نورو هېوادونو کې د Mozilla بنسټ سوداګریزه نښه ده.</string>
+    <string name="dejavu_about_source_code">سرچینه کوډ</string>
     <string name="dejavu_settings_tab_actions">د ټب کړنې</string>
+    <string name="dejavu_settings_tab_actions_entry_summary">د کړنو یو لېست، او دا چې هره یوه چېرته ښکاري</string>
+    <string name="dejavu_settings_tab_actions_hint">ټولې کړنې په یوه لېست کې دي، هغه هم چې تاسو یې پخپله زیاتوئ. وټاکئ چې هره یوه چېرته ښکاره شي: پر پین شویو ټبونو، نه پین شویو ټبونو او پوښو، د ټاکل شویو ټبونو په نوار کې، په نور مینو کې او د پاڼو لاندې د کړنو په نوار کې. پر یوې پوښې کړنې هر هغه ټب ته رسېږي چې په هغې کې دی.</string>
+    <string name="dejavu_settings_where_actions_show">کړنې چېرته ښکاري</string>
+    <string name="dejavu_settings_folders">پوښې</string>
+    <string name="dejavu_settings_selection_bar">د ټاکنې نوار</string>
+    <string name="dejavu_settings_folder_actions_hint">د پوښو کرښو لپاره تر %1$d پورې تڼۍ وټاکئ. دا د پوښې او د هغې د ماتحتو پوښو پر هر ټب کار کوي.</string>
+    <string name="dejavu_settings_action_places_none">هېڅ ځای نه ښکاري</string>
+    <string name="dejavu_settings_action_place_unavailable">هلته هېڅ نه کوي</string>
+    <string name="dejavu_settings_action_place_full">نور ځای نشته</string>
+    <string name="dejavu_done">ترسره شو</string>
     <string name="dejavu_settings_pinned_tabs">پین شوي ټبونه</string>
     <string name="dejavu_settings_unpinned_tabs">نه پین شوي ټبونه</string>
     <string name="dejavu_settings_all_actions">ټولې کړنې</string>
@@ -185,6 +201,9 @@
     <string name="dejavu_actions_bar_search">لټون</string>
     <string name="dejavu_actions_bar_home">کور</string>
     <string name="dejavu_settings_more_menu_summary">د پاڼو لاندې د کړنو نوار او هغه مینو چې خلاصوي یې</string>
+    <string name="dejavu_more_menu_hint">د ټول مینو د خلاصولو لپاره د کړنو نوار پورته، یا د پتې نوار ښکته کش کړئ. د یوې تڼۍ د لېږدولو یا لرې کولو لپاره پرې کېکاږئ. وروستاړي تل یوه بشپړه کرښه نیسي.</string>
+    <string name="dejavu_actions_bar_hint">د پاڼو لاندې تڼۍ. دا پر هغې پاڼې کار کوي چې تاسو پرې یاست.</string>
+    <string name="dejavu_actions_bar_all_added">ټولې تڼۍ دمخه په نوار کې دي.</string>
     <string name="dejavu_more_menu_row">کرښه %1$d</string>
     <string name="dejavu_more_menu_add_item">تڼۍ زیاتول</string>
     <string name="dejavu_more_menu_add_row">کرښه زیاتول</string>
@@ -223,6 +242,22 @@
     <string name="dejavu_container_work">کاري</string>
     <string name="dejavu_container_banking">بانکي</string>
     <string name="dejavu_container_shopping">پیرودنه</string>
+    <string name="dejavu_history_group_by">ډلبندي</string>
+    <string name="dejavu_history_group_by_date">نېټه</string>
+    <string name="dejavu_history_group_by_workspace">ساحه</string>
+    <string name="dejavu_history_group_by_folder">ساحه او پوښه</string>
+    <string name="dejavu_history_other_pages">نورې پاڼې</string>
+    <string name="dejavu_settings_tab_sleep">ویده ټبونه</string>
+    <string name="dejavu_settings_tab_sleep_summary">هغه ټبونه چې تاسو یې نه کاروئ، د حافظې د خالي کولو لپاره ویده کېږي</string>
+    <string name="dejavu_tab_sleep_hint">ویده ټب خپله حافظه خالي کوي او کله چې یې خلاص کړئ، خپله پاڼه بیا تازه کوي. هغه ټب چې تاسو یې ګورئ، په وېشل شوي لید کې د هغه څنګ ته ټب، او هغه ټبونه چې غږ پلی کوي یا کمره یا مایکروفون کاروي ویښ پاتې کېږي. کله چې Android حافظې ته اړتیا ولري او Dejavu په شالید کې وي، پرته له هغو دوو ټبونو چې تاسو وروستي کارولي دي، ټول ټبونه ویده کېږي.</string>
+    <string name="dejavu_tab_sleep_when">ټب ویده کول</string>
+    <plurals name="dejavu_tab_sleep_after_minutes">
+        <item quantity="one">که %d دقیقه ونه کارول شي</item>
+        <item quantity="other">که %d دقیقې ونه کارول شي</item>
+    </plurals>
+    <string name="dejavu_tab_sleep_after_hour">که یو ساعت ونه کارول شي</string>
+    <string name="dejavu_tab_sleep_never">هېڅکله</string>
+    <string name="dejavu_startup_crash_body">د %1$s په خلاصولو کې ستونزه رامنځته شوه. د پلټنې د دوام لپاره یې بیا خلاص کړئ.</string>
     <string name="dejavu_sync_normal_tabs">بې پینه ټبونه شاملول</string>
     <string name="dejavu_sync_normal_tabs_summary">دا د هرې ساحې نور ټبونه هم همغږي کوي، نه یوازې پین شوي ټبونه او پوښې. کله چې د دې خپله بې پینه ټبونه شاملول انتخاب فعال وي، Zen به دوی همغږي کړي.</string>
     <plurals name="dejavu_selection_count">

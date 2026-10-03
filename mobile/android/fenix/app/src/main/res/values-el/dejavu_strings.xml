@@ -47,6 +47,10 @@
     <string name="dejavu_folder_rename">Μετονομασία φακέλου</string>
     <string name="dejavu_folder_unpack">Διάλυση φακέλου</string>
     <string name="dejavu_folder_top_level">Καρφιτσωμένες καρτέλες, χωρίς φάκελο</string>
+    <plurals name="dejavu_folder_open_tabs">
+        <item quantity="one">%1$d ανοικτή καρτέλα</item>
+        <item quantity="other">%1$d ανοικτές καρτέλες</item>
+    </plurals>
     <string name="dejavu_essentials_drop">Αφήστε εδώ για προσθήκη στα αγαπημένα</string>
     <string name="dejavu_essentials_full">Τα αγαπημένα χωρούν έως %1$d καρτέλες</string>
     <string name="dejavu_temporary_by_default">Προσωρινοί περιέκτες ως προεπιλογή</string>
@@ -88,7 +92,19 @@
     <string name="dejavu_action_remove_from_essentials">Αφαίρεση από τα αγαπημένα</string>
     <string name="dejavu_action_delete">Διαγραφή</string>
     <string name="dejavu_settings_title">Dejavu</string>
+    <string name="dejavu_about_content">Το %1$s είναι ένα ανεξάρτητο πρόγραμμα περιήγησης, φτιαγμένο από τον ανοικτό κώδικα του Firefox και του GeckoView της Mozilla. Δεν δημιουργείται, δεν εγκρίνεται και δεν υποστηρίζεται από τη Mozilla. Το Firefox είναι εμπορικό σήμα του Mozilla Foundation στις ΗΠΑ και σε άλλες χώρες.</string>
+    <string name="dejavu_about_source_code">Πηγαίος κώδικας</string>
     <string name="dejavu_settings_tab_actions">Ενέργειες καρτελών</string>
+    <string name="dejavu_settings_tab_actions_entry_summary">Μία λίστα ενεργειών και πού εμφανίζεται η καθεμία</string>
+    <string name="dejavu_settings_tab_actions_hint">Όλες οι ενέργειες βρίσκονται σε μία λίστα, μαζί με όσες προσθέτετε εσείς. Επιλέξτε πού θα εμφανίζεται η καθεμία: σε καρφιτσωμένες καρτέλες, μη καρφιτσωμένες καρτέλες και φακέλους, στη γραμμή που εμφανίζεται όταν επιλέγετε καρτέλες, στο μενού «Περισσότερα» και στη γραμμή ενεργειών κάτω από τις σελίδες. Οι ενέργειες σε έναν φάκελο εφαρμόζονται σε κάθε καρτέλα του.</string>
+    <string name="dejavu_settings_where_actions_show">Πού εμφανίζονται οι ενέργειες</string>
+    <string name="dejavu_settings_folders">Φάκελοι</string>
+    <string name="dejavu_settings_selection_bar">Γραμμή επιλογής</string>
+    <string name="dejavu_settings_folder_actions_hint">Επιλέξτε έως %1$d κουμπιά για τις σειρές φακέλων. Εφαρμόζονται σε κάθε καρτέλα του φακέλου και των υποφακέλων του.</string>
+    <string name="dejavu_settings_action_places_none">Δεν εμφανίζεται πουθενά</string>
+    <string name="dejavu_settings_action_place_unavailable">Δεν λειτουργεί εδώ</string>
+    <string name="dejavu_settings_action_place_full">Δεν υπάρχει χώρος</string>
+    <string name="dejavu_done">Τέλος</string>
     <string name="dejavu_settings_pinned_tabs">Καρφιτσωμένες καρτέλες</string>
     <string name="dejavu_settings_unpinned_tabs">Μη καρφιτσωμένες καρτέλες</string>
     <string name="dejavu_settings_all_actions">Όλες οι ενέργειες</string>
@@ -185,6 +201,9 @@
     <string name="dejavu_actions_bar_search">Αναζήτηση</string>
     <string name="dejavu_actions_bar_home">Αρχική</string>
     <string name="dejavu_settings_more_menu_summary">Η γραμμή ενεργειών κάτω από τις σελίδες και το μενού που ανοίγει</string>
+    <string name="dejavu_more_menu_hint">Σύρετε τη γραμμή ενεργειών προς τα πάνω ή τη γραμμή διευθύνσεων προς τα κάτω για να ανοίξετε ολόκληρο το μενού. Πατήστε ένα κουμπί για να το μετακινήσετε ή να το αφαιρέσετε. Οι επεκτάσεις καταλαμβάνουν πάντα ολόκληρη σειρά.</string>
+    <string name="dejavu_actions_bar_hint">Τα κουμπιά κάτω από τις σελίδες. Εφαρμόζονται στη σελίδα όπου βρίσκεστε.</string>
+    <string name="dejavu_actions_bar_all_added">Όλα τα κουμπιά βρίσκονται ήδη στη γραμμή.</string>
     <string name="dejavu_more_menu_row">Σειρά %1$d</string>
     <string name="dejavu_more_menu_add_item">Προσθήκη κουμπιού</string>
     <string name="dejavu_more_menu_add_row">Προσθήκη σειράς</string>
@@ -223,6 +242,22 @@
     <string name="dejavu_container_work">Εργασία</string>
     <string name="dejavu_container_banking">Τράπεζα</string>
     <string name="dejavu_container_shopping">Αγορές</string>
+    <string name="dejavu_history_group_by">Ομαδοποίηση κατά</string>
+    <string name="dejavu_history_group_by_date">Ημερομηνία</string>
+    <string name="dejavu_history_group_by_workspace">Χώρος εργασίας</string>
+    <string name="dejavu_history_group_by_folder">Χώρος εργασίας και φάκελος</string>
+    <string name="dejavu_history_other_pages">Άλλες σελίδες</string>
+    <string name="dejavu_settings_tab_sleep">Αδρανείς καρτέλες</string>
+    <string name="dejavu_settings_tab_sleep_summary">Οι καρτέλες που δεν χρησιμοποιείτε αδρανοποιούνται για να ελευθερωθεί μνήμη</string>
+    <string name="dejavu_tab_sleep_hint">Μια αδρανής καρτέλα ελευθερώνει τη μνήμη της και φορτώνει ξανά τη σελίδα της όταν την ανοίξετε. Η καρτέλα που βλέπετε, αυτή δίπλα της στη διαχωρισμένη προβολή και οι καρτέλες που αναπαράγουν ήχο ή χρησιμοποιούν την κάμερα ή το μικρόφωνο παραμένουν ενεργές. Όταν το Android χρειάζεται μνήμη ενώ το Dejavu βρίσκεται στο παρασκήνιο, όλες οι καρτέλες εκτός από τις δύο που χρησιμοποιήσατε τελευταίες αδρανοποιούνται.</string>
+    <string name="dejavu_tab_sleep_when">Αδρανοποίηση καρτελών</string>
+    <plurals name="dejavu_tab_sleep_after_minutes">
+        <item quantity="one">Μετά από %d λεπτό χωρίς χρήση</item>
+        <item quantity="other">Μετά από %d λεπτά χωρίς χρήση</item>
+    </plurals>
+    <string name="dejavu_tab_sleep_after_hour">Μετά από μία ώρα χωρίς χρήση</string>
+    <string name="dejavu_tab_sleep_never">Ποτέ</string>
+    <string name="dejavu_startup_crash_body">Προέκυψε πρόβλημα κατά το άνοιγμα του %1$s. Ανοίξτε το ξανά για να συνεχίσετε την περιήγηση.</string>
     <string name="dejavu_sync_normal_tabs">Συμπερίληψη μη καρφιτσωμένων καρτελών</string>
     <string name="dejavu_sync_normal_tabs_summary">Συγχρονίζει επίσης τις άλλες καρτέλες κάθε χώρου εργασίας, όχι μόνο τις καρφιτσωμένες καρτέλες και τους φακέλους. Το Zen τις συγχρονίζει όταν είναι ενεργοποιημένη η δική του επιλογή Συμπερίληψη μη καρφιτσωμένων καρτελών.</string>
     <plurals name="dejavu_selection_count">

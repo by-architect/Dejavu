@@ -47,6 +47,10 @@
     <string name="dejavu_folder_rename">Qovluğun adını dəyiş</string>
     <string name="dejavu_folder_unpack">Qovluğu dağıt</string>
     <string name="dejavu_folder_top_level">Bərkidilmiş vərəqlər, qovluqsuz</string>
+    <plurals name="dejavu_folder_open_tabs">
+        <item quantity="one">%1$d açıq vərəq</item>
+        <item quantity="other">%1$d açıq vərəq</item>
+    </plurals>
     <string name="dejavu_essentials_drop">Əsaslara əlavə etmək üçün buraya buraxın</string>
     <string name="dejavu_essentials_full">Əsaslar maksimum %1$d vərəq tuta bilər</string>
     <string name="dejavu_temporary_by_default">Standart olaraq müvəqqəti konteynerlər</string>
@@ -88,7 +92,19 @@
     <string name="dejavu_action_remove_from_essentials">Əsaslardan çıxar</string>
     <string name="dejavu_action_delete">Sil</string>
     <string name="dejavu_settings_title">Dejavu</string>
+    <string name="dejavu_about_content">%1$s Mozilla-nın açıq mənbəli Firefox və GeckoView kodundan yaradılmış müstəqil brauzerdir. Mozilla tərəfindən hazırlanmayıb, təsdiqlənməyib və dəstəklənmir. Firefox ABŞ və digər ölkələrdə Mozilla Foundation təşkilatının ticarət nişanıdır.</string>
+    <string name="dejavu_about_source_code">Mənbə kodu</string>
     <string name="dejavu_settings_tab_actions">Vərəq əməliyyatları</string>
+    <string name="dejavu_settings_tab_actions_entry_summary">Vahid əməliyyat siyahısı və hər birinin harada göründüyü</string>
+    <string name="dejavu_settings_tab_actions_hint">Özünüz əlavə etdikləriniz də daxil olmaqla bütün əməliyyatlar bir siyahıdadır. Hər birinin harada görünəcəyini seçin: bərkidilmiş vərəqlərdə, bərkidilməmiş vərəqlərdə və qovluqlarda, vərəqlər seçiləndə görünən paneldə, “Daha çox” menyusunda və səhifələrin altındakı əməliyyatlar panelində. Qovluğa tətbiq edilən əməliyyatlar onun içindəki bütün vərəqlərə aiddir.</string>
+    <string name="dejavu_settings_where_actions_show">Əməliyyatların göründüyü yerlər</string>
+    <string name="dejavu_settings_folders">Qovluqlar</string>
+    <string name="dejavu_settings_selection_bar">Seçim paneli</string>
+    <string name="dejavu_settings_folder_actions_hint">Qovluq sıraları üçün maksimum %1$d düymə seçin. Onlar qovluqdakı və onun alt qovluqlarındakı bütün vərəqlərə tətbiq olunur.</string>
+    <string name="dejavu_settings_action_places_none">Heç yerdə göstərilmir</string>
+    <string name="dejavu_settings_action_place_unavailable">Burada işləmir</string>
+    <string name="dejavu_settings_action_place_full">Yer qalmayıb</string>
+    <string name="dejavu_done">Hazırdır</string>
     <string name="dejavu_settings_pinned_tabs">Bərkidilmiş vərəqlər</string>
     <string name="dejavu_settings_unpinned_tabs">Bərkidilməmiş vərəqlər</string>
     <string name="dejavu_settings_all_actions">Bütün əməliyyatlar</string>
@@ -185,6 +201,9 @@
     <string name="dejavu_actions_bar_search">Axtar</string>
     <string name="dejavu_actions_bar_home">Ana səhifə</string>
     <string name="dejavu_settings_more_menu_summary">Səhifələrin altındakı əməliyyatlar paneli və onun açdığı menyu</string>
+    <string name="dejavu_more_menu_hint">Bütün menyunu açmaq üçün əməliyyatlar panelini yuxarı və ya ünvan sətrini aşağı sürüşdürün. Düyməni daşımaq və ya silmək üçün ona toxunun. Əlavələr həmişə bütöv bir sıranı tutur.</string>
+    <string name="dejavu_actions_bar_hint">Səhifələrin altındakı düymələr. Onlar baxdığınız səhifəyə tətbiq olunur.</string>
+    <string name="dejavu_actions_bar_all_added">Bütün düymələr artıq paneldədir.</string>
     <string name="dejavu_more_menu_row">%1$d-ci sıra</string>
     <string name="dejavu_more_menu_add_item">Düymə əlavə et</string>
     <string name="dejavu_more_menu_add_row">Sıra əlavə et</string>
@@ -223,6 +242,22 @@
     <string name="dejavu_container_work">İş</string>
     <string name="dejavu_container_banking">Bank</string>
     <string name="dejavu_container_shopping">Alış-veriş</string>
+    <string name="dejavu_history_group_by">Qruplaşdırma</string>
+    <string name="dejavu_history_group_by_date">Tarix</string>
+    <string name="dejavu_history_group_by_workspace">İş sahəsi</string>
+    <string name="dejavu_history_group_by_folder">İş sahəsi və qovluq</string>
+    <string name="dejavu_history_other_pages">Digər səhifələr</string>
+    <string name="dejavu_settings_tab_sleep">Yuxudakı vərəqlər</string>
+    <string name="dejavu_settings_tab_sleep_summary">İstifadə etmədiyiniz vərəqlər yaddaşı boşaltmaq üçün yuxuya gedir</string>
+    <string name="dejavu_tab_sleep_hint">Yuxudakı vərəq yaddaşını boşaldır və siz onu açanda səhifəni yenidən yükləyir. Baxdığınız vərəq, bölünmüş görünüşdə onun yanındakı vərəq və səs çalan və ya kameradan, yaxud mikrofondan istifadə edən vərəqlər oyaq qalır. Dejavu arxa fonda olarkən Android-ə yaddaş lazım olduqda, son istifadə etdiyiniz iki vərəqdən başqa bütün vərəqlər yuxuya gedir.</string>
+    <string name="dejavu_tab_sleep_when">Vərəqləri yuxuya qoy</string>
+    <plurals name="dejavu_tab_sleep_after_minutes">
+        <item quantity="one">%d dəqiqə istifadə edilmədikdən sonra</item>
+        <item quantity="other">%d dəqiqə istifadə edilmədikdən sonra</item>
+    </plurals>
+    <string name="dejavu_tab_sleep_after_hour">Bir saat istifadə edilmədikdən sonra</string>
+    <string name="dejavu_tab_sleep_never">Heç vaxt</string>
+    <string name="dejavu_startup_crash_body">%1$s açılarkən problem yarandı. Gəzintiyə davam etmək üçün onu yenidən açın.</string>
     <string name="dejavu_sync_normal_tabs">Bərkidilməmiş vərəqləri daxil et</string>
     <string name="dejavu_sync_normal_tabs_summary">Bundan başqa, hər iş sahəsinin digər vərəqlərini də sinxronlaşdırır, təkcə bərkidilmiş vərəqləri və qovluqları yox. Öz Bərkidilməmiş vərəqləri daxil et seçimi aktiv olduqda, Zen onları sinxronlaşdırır.</string>
     <plurals name="dejavu_selection_count">

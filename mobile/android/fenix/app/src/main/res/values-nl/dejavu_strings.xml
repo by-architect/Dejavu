@@ -47,6 +47,10 @@
     <string name="dejavu_folder_rename">Map hernoemen</string>
     <string name="dejavu_folder_unpack">Map opheffen</string>
     <string name="dejavu_folder_top_level">Vastgemaakte tabbladen, geen map</string>
+    <plurals name="dejavu_folder_open_tabs">
+        <item quantity="one">%1$d geopend tabblad</item>
+        <item quantity="other">%1$d geopende tabbladen</item>
+    </plurals>
     <string name="dejavu_essentials_drop">Zet hier neer om aan favorieten toe te voegen</string>
     <string name="dejavu_essentials_full">Favorieten heeft ruimte voor maximaal %1$d tabbladen</string>
     <string name="dejavu_temporary_by_default">Standaard tijdelijke containers</string>
@@ -88,7 +92,19 @@
     <string name="dejavu_action_remove_from_essentials">Verwijderen uit favorieten</string>
     <string name="dejavu_action_delete">Verwijderen</string>
     <string name="dejavu_settings_title">Dejavu</string>
+    <string name="dejavu_about_content">%1$s is een onafhankelijke browser, gebouwd met de opensourcecode van Firefox en GeckoView van Mozilla. Hij wordt niet gemaakt, onderschreven of ondersteund door Mozilla. Firefox is een handelsmerk van de Mozilla Foundation in de VS en andere landen.</string>
+    <string name="dejavu_about_source_code">Broncode</string>
     <string name="dejavu_settings_tab_actions">Tabbladacties</string>
+    <string name="dejavu_settings_tab_actions_entry_summary">Eén lijst met acties, en waar elke actie verschijnt</string>
+    <string name="dejavu_settings_tab_actions_hint">Alle acties staan in één lijst, ook die je zelf toevoegt. Kies waar elke actie verschijnt: op vastgemaakte tabbladen, niet-vastgemaakte tabbladen en mappen, in de balk van geselecteerde tabbladen, in het menu “Meer” en in de actiebalk onder pagina’s. Acties op een map werken op elk tabblad erin.</string>
+    <string name="dejavu_settings_where_actions_show">Waar acties verschijnen</string>
+    <string name="dejavu_settings_folders">Mappen</string>
+    <string name="dejavu_settings_selection_bar">Selectiebalk</string>
+    <string name="dejavu_settings_folder_actions_hint">Kies tot %1$d knoppen voor rijen met mappen. Ze werken op elk tabblad in de map en de submappen ervan.</string>
+    <string name="dejavu_settings_action_places_none">Nergens getoond</string>
+    <string name="dejavu_settings_action_place_unavailable">Doet daar niets</string>
+    <string name="dejavu_settings_action_place_full">Geen ruimte meer</string>
+    <string name="dejavu_done">Gereed</string>
     <string name="dejavu_settings_pinned_tabs">Vastgemaakte tabbladen</string>
     <string name="dejavu_settings_unpinned_tabs">Niet-vastgemaakte tabbladen</string>
     <string name="dejavu_settings_all_actions">Alle acties</string>
@@ -185,6 +201,9 @@
     <string name="dejavu_actions_bar_search">Zoeken</string>
     <string name="dejavu_actions_bar_home">Start</string>
     <string name="dejavu_settings_more_menu_summary">De actiebalk onder pagina’s en het menu dat deze opent</string>
+    <string name="dejavu_more_menu_hint">Veeg de actiebalk omhoog of de adresbalk omlaag om het hele menu te openen. Tik op een knop om deze te verplaatsen of te verwijderen. Extensies nemen altijd een hele rij in.</string>
+    <string name="dejavu_actions_bar_hint">De knoppen onder pagina’s. Ze werken op de pagina waarop je bent.</string>
+    <string name="dejavu_actions_bar_all_added">Alle knoppen staan al in de balk.</string>
     <string name="dejavu_more_menu_row">Rij %1$d</string>
     <string name="dejavu_more_menu_add_item">Knop toevoegen</string>
     <string name="dejavu_more_menu_add_row">Rij toevoegen</string>
@@ -223,6 +242,22 @@
     <string name="dejavu_container_work">Werk</string>
     <string name="dejavu_container_banking">Bankieren</string>
     <string name="dejavu_container_shopping">Winkelen</string>
+    <string name="dejavu_history_group_by">Groeperen op</string>
+    <string name="dejavu_history_group_by_date">Datum</string>
+    <string name="dejavu_history_group_by_workspace">Werkruimte</string>
+    <string name="dejavu_history_group_by_folder">Werkruimte en map</string>
+    <string name="dejavu_history_other_pages">Overige pagina’s</string>
+    <string name="dejavu_settings_tab_sleep">Slapende tabbladen</string>
+    <string name="dejavu_settings_tab_sleep_summary">Tabbladen die je niet gebruikt, gaan slapen om geheugen vrij te maken</string>
+    <string name="dejavu_tab_sleep_hint">Een slapend tabblad maakt zijn geheugen vrij en laadt de pagina opnieuw wanneer je het opent. Het tabblad dat je bekijkt, het tabblad ernaast in gesplitste weergave en tabbladen die geluid afspelen of de camera of microfoon gebruiken, blijven wakker. Wanneer Android geheugen nodig heeft terwijl Dejavu op de achtergrond is, gaan alle tabbladen slapen, behalve de twee die je het laatst hebt gebruikt.</string>
+    <string name="dejavu_tab_sleep_when">Tabblad in slaapstand zetten</string>
+    <plurals name="dejavu_tab_sleep_after_minutes">
+        <item quantity="one">Na %d minuut zonder gebruik</item>
+        <item quantity="other">Na %d minuten zonder gebruik</item>
+    </plurals>
+    <string name="dejavu_tab_sleep_after_hour">Na een uur zonder gebruik</string>
+    <string name="dejavu_tab_sleep_never">Nooit</string>
+    <string name="dejavu_startup_crash_body">Er is een probleem opgetreden bij het openen van %1$s. Open de app opnieuw om verder te browsen.</string>
     <string name="dejavu_sync_normal_tabs">Niet-vastgemaakte tabbladen opnemen</string>
     <string name="dejavu_sync_normal_tabs_summary">Synchroniseert ook de andere tabbladen van elke werkruimte, niet alleen vastgemaakte tabbladen en mappen. Zen synchroniseert ze wanneer de eigen optie Niet-vastgemaakte tabbladen opnemen aan staat.</string>
     <plurals name="dejavu_selection_count">

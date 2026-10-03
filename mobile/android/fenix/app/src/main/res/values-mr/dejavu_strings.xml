@@ -47,6 +47,10 @@
     <string name="dejavu_folder_rename">फोल्डरचे नाव बदला</string>
     <string name="dejavu_folder_unpack">फोल्डर उलगडा</string>
     <string name="dejavu_folder_top_level">पिन केलेले टॅब, फोल्डर नाही</string>
+    <plurals name="dejavu_folder_open_tabs">
+        <item quantity="one">%1$d उघडा टॅब</item>
+        <item quantity="other">%1$d उघडे टॅब</item>
+    </plurals>
     <string name="dejavu_essentials_drop">आवश्यकमध्ये जोडण्यासाठी इथे सोडा</string>
     <string name="dejavu_essentials_full">आवश्यकमध्ये जास्तीत जास्त %1$d टॅब मावतात</string>
     <string name="dejavu_temporary_by_default">डीफॉल्टनुसार तात्पुरते कंटेनर</string>
@@ -88,7 +92,19 @@
     <string name="dejavu_action_remove_from_essentials">आवश्यकमधून काढा</string>
     <string name="dejavu_action_delete">हटवा</string>
     <string name="dejavu_settings_title">Dejavu</string>
+    <string name="dejavu_about_content">%1$s हा Mozilla च्या मुक्त स्रोत Firefox आणि GeckoView कोडपासून बनवलेला एक स्वतंत्र ब्राउझर आहे. तो Mozilla ने बनवलेला नाही, आणि Mozilla त्याला मान्यता किंवा समर्थन देत नाही. Firefox हा यू.एस. आणि इतर देशांमधील Mozilla Foundation चा ट्रेडमार्क आहे.</string>
+    <string name="dejavu_about_source_code">स्रोत कोड</string>
     <string name="dejavu_settings_tab_actions">टॅब क्रिया</string>
+    <string name="dejavu_settings_tab_actions_entry_summary">क्रियांची एक यादी, आणि प्रत्येक क्रिया कुठे दिसते</string>
+    <string name="dejavu_settings_tab_actions_hint">तुम्ही स्वतः जोडलेल्या क्रियांसह सर्व क्रिया एकाच यादीत आहेत. प्रत्येक क्रिया कुठे दिसावी ते निवडा: पिन केलेल्या टॅबवर, पिन न केलेल्या टॅबवर आणि फोल्डरवर, निवडलेल्या टॅबच्या पट्टीत, अधिक मेनूमध्ये आणि पृष्ठांखालील क्रिया पट्टीत. फोल्डरवरील क्रिया त्यातील प्रत्येक टॅबवर लागू होतात.</string>
+    <string name="dejavu_settings_where_actions_show">क्रिया कुठे दिसतात</string>
+    <string name="dejavu_settings_folders">फोल्डर</string>
+    <string name="dejavu_settings_selection_bar">निवड पट्टी</string>
+    <string name="dejavu_settings_folder_actions_hint">फोल्डर रांगांसाठी जास्तीत जास्त %1$d बटणे निवडा. ती फोल्डर आणि त्याच्या उपफोल्डरमधील प्रत्येक टॅबवर काम करतात.</string>
+    <string name="dejavu_settings_action_places_none">कुठेही दाखवली जात नाही</string>
+    <string name="dejavu_settings_action_place_unavailable">तिथे काहीही करत नाही</string>
+    <string name="dejavu_settings_action_place_full">जागा शिल्लक नाही</string>
+    <string name="dejavu_done">झाले</string>
     <string name="dejavu_settings_pinned_tabs">पिन केलेले टॅब</string>
     <string name="dejavu_settings_unpinned_tabs">पिन न केलेले टॅब</string>
     <string name="dejavu_settings_all_actions">सर्व क्रिया</string>
@@ -185,6 +201,9 @@
     <string name="dejavu_actions_bar_search">शोधा</string>
     <string name="dejavu_actions_bar_home">मुख्यपृष्ठ</string>
     <string name="dejavu_settings_more_menu_summary">पृष्ठांखालील क्रिया पट्टी आणि ती उघडणारा मेनू</string>
+    <string name="dejavu_more_menu_hint">संपूर्ण मेनू उघडण्यासाठी क्रिया पट्टी वर, किंवा पत्ता पट्टी खाली स्वाइप करा. बटण हलवण्यासाठी किंवा काढण्यासाठी त्यावर टॅप करा. एक्सटेन्शन नेहमी संपूर्ण रांग घेतात.</string>
+    <string name="dejavu_actions_bar_hint">पृष्ठांखालील बटणे. तुम्ही ज्या पृष्ठावर आहात त्यावर ती काम करतात.</string>
+    <string name="dejavu_actions_bar_all_added">प्रत्येक बटण आधीच पट्टीत आहे.</string>
     <string name="dejavu_more_menu_row">रांग %1$d</string>
     <string name="dejavu_more_menu_add_item">बटण जोडा</string>
     <string name="dejavu_more_menu_add_row">रांग जोडा</string>
@@ -223,6 +242,22 @@
     <string name="dejavu_container_work">काम</string>
     <string name="dejavu_container_banking">बँकिंग</string>
     <string name="dejavu_container_shopping">खरेदी</string>
+    <string name="dejavu_history_group_by">कशानुसार गट करायचे</string>
+    <string name="dejavu_history_group_by_date">तारीख</string>
+    <string name="dejavu_history_group_by_workspace">कार्यक्षेत्र</string>
+    <string name="dejavu_history_group_by_folder">कार्यक्षेत्र आणि फोल्डर</string>
+    <string name="dejavu_history_other_pages">इतर पृष्ठे</string>
+    <string name="dejavu_settings_tab_sleep">स्लीप मोडमधील टॅब</string>
+    <string name="dejavu_settings_tab_sleep_summary">तुम्ही वापरत नसलेले टॅब मेमरी मोकळी करण्यासाठी स्लीप मोडमध्ये जातात</string>
+    <string name="dejavu_tab_sleep_hint">स्लीप मोडमधील टॅब त्याची मेमरी मोकळी करतो आणि तुम्ही तो उघडल्यावर त्याचे पृष्ठ पुन्हा लोड करतो. तुम्ही पाहत असलेला टॅब, विभाजित दृश्यात त्याच्या शेजारचा टॅब आणि आवाज वाजवणारे किंवा कॅमेरा किंवा मायक्रोफोन वापरणारे टॅब सक्रिय राहतात. Dejavu पार्श्वभूमीत असताना Android ला मेमरीची गरज पडल्यास, तुम्ही शेवटी वापरलेले दोन टॅब सोडून इतर सर्व टॅब स्लीप मोडमध्ये जातात.</string>
+    <string name="dejavu_tab_sleep_when">टॅब स्लीप मोडमध्ये ठेवा</string>
+    <plurals name="dejavu_tab_sleep_after_minutes">
+        <item quantity="one">%d मिनिट वापर न झाल्यावर</item>
+        <item quantity="other">%d मिनिटे वापर न झाल्यावर</item>
+    </plurals>
+    <string name="dejavu_tab_sleep_after_hour">एक तास वापर न झाल्यावर</string>
+    <string name="dejavu_tab_sleep_never">कधीच नाही</string>
+    <string name="dejavu_startup_crash_body">%1$s उघडताना समस्या आली. ब्राउझिंग सुरू ठेवण्यासाठी ते पुन्हा उघडा.</string>
     <string name="dejavu_sync_normal_tabs">पिन न केलेले टॅब समाविष्ट करा</string>
     <string name="dejavu_sync_normal_tabs_summary">हे प्रत्येक कार्यक्षेत्राचे इतर टॅबदेखील सिंक करते, फक्त पिन केलेले टॅब आणि फोल्डर नाही. त्याचा स्वतःचा पिन न केलेले टॅब समाविष्ट करा पर्याय चालू असताना, Zen ते सिंक करते.</string>
     <plurals name="dejavu_selection_count">

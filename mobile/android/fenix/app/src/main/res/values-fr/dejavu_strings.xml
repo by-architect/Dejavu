@@ -47,6 +47,10 @@
     <string name="dejavu_folder_rename">Renommer le dossier</string>
     <string name="dejavu_folder_unpack">Dissoudre le dossier</string>
     <string name="dejavu_folder_top_level">Onglets épinglés, sans dossier</string>
+    <plurals name="dejavu_folder_open_tabs">
+        <item quantity="one">%1$d onglet ouvert</item>
+        <item quantity="other">%1$d onglets ouverts</item>
+    </plurals>
     <string name="dejavu_essentials_drop">Déposer ici pour ajouter aux favoris</string>
     <string name="dejavu_essentials_full">Les favoris contiennent jusqu’à %1$d onglets</string>
     <string name="dejavu_temporary_by_default">Conteneurs temporaires par défaut</string>
@@ -88,7 +92,19 @@
     <string name="dejavu_action_remove_from_essentials">Retirer des favoris</string>
     <string name="dejavu_action_delete">Supprimer</string>
     <string name="dejavu_settings_title">Dejavu</string>
+    <string name="dejavu_about_content">%1$s est un navigateur indépendant créé à partir du code open source de Firefox et GeckoView de Mozilla. Il n’est ni développé, ni approuvé, ni soutenu par Mozilla. Firefox est une marque de la Mozilla Foundation aux États-Unis et dans d’autres pays.</string>
+    <string name="dejavu_about_source_code">Code source</string>
     <string name="dejavu_settings_tab_actions">Actions sur les onglets</string>
+    <string name="dejavu_settings_tab_actions_entry_summary">Une seule liste d’actions, et où chacune s’affiche</string>
+    <string name="dejavu_settings_tab_actions_hint">Toutes les actions sont dans une seule liste, y compris celles que tu ajoutes toi-même. Choisis où chacune s’affiche : sur les onglets épinglés, les onglets non épinglés et les dossiers, dans la barre des onglets sélectionnés, dans le menu « Plus » et dans la barre d’actions sous les pages. Les actions sur un dossier s’appliquent à tous les onglets qu’il contient.</string>
+    <string name="dejavu_settings_where_actions_show">Où les actions s’affichent</string>
+    <string name="dejavu_settings_folders">Dossiers</string>
+    <string name="dejavu_settings_selection_bar">Barre de sélection</string>
+    <string name="dejavu_settings_folder_actions_hint">Choisis jusqu’à %1$d boutons pour les lignes de dossiers. Ils agissent sur tous les onglets du dossier et de ses sous-dossiers.</string>
+    <string name="dejavu_settings_action_places_none">Ne s’affiche nulle part</string>
+    <string name="dejavu_settings_action_place_unavailable">Sans effet ici</string>
+    <string name="dejavu_settings_action_place_full">Il n’y a plus de place</string>
+    <string name="dejavu_done">Terminé</string>
     <string name="dejavu_settings_pinned_tabs">Onglets épinglés</string>
     <string name="dejavu_settings_unpinned_tabs">Onglets non épinglés</string>
     <string name="dejavu_settings_all_actions">Toutes les actions</string>
@@ -185,6 +201,9 @@
     <string name="dejavu_actions_bar_search">Rechercher</string>
     <string name="dejavu_actions_bar_home">Accueil</string>
     <string name="dejavu_settings_more_menu_summary">La barre d’actions sous les pages et le menu qu’elle ouvre</string>
+    <string name="dejavu_more_menu_hint">Fais glisser la barre d’actions vers le haut, ou la barre d’adresse vers le bas, pour ouvrir le menu complet. Touche un bouton pour le déplacer ou le retirer. Les extensions occupent toujours une ligne entière.</string>
+    <string name="dejavu_actions_bar_hint">Les boutons sous les pages. Ils agissent sur la page où tu te trouves.</string>
+    <string name="dejavu_actions_bar_all_added">Tous les boutons sont déjà dans la barre.</string>
     <string name="dejavu_more_menu_row">Ligne %1$d</string>
     <string name="dejavu_more_menu_add_item">Ajouter un bouton</string>
     <string name="dejavu_more_menu_add_row">Ajouter une ligne</string>
@@ -223,6 +242,22 @@
     <string name="dejavu_container_work">Travail</string>
     <string name="dejavu_container_banking">Banque</string>
     <string name="dejavu_container_shopping">Achats</string>
+    <string name="dejavu_history_group_by">Regrouper par</string>
+    <string name="dejavu_history_group_by_date">Date</string>
+    <string name="dejavu_history_group_by_workspace">Espace</string>
+    <string name="dejavu_history_group_by_folder">Espace et dossier</string>
+    <string name="dejavu_history_other_pages">Autres pages</string>
+    <string name="dejavu_settings_tab_sleep">Onglets en veille</string>
+    <string name="dejavu_settings_tab_sleep_summary">Les onglets que tu n’utilises pas sont mis en veille pour libérer de la mémoire</string>
+    <string name="dejavu_tab_sleep_hint">Un onglet en veille libère sa mémoire et recharge sa page quand tu l’ouvres. L’onglet que tu regardes, celui qui l’accompagne en vue partagée et les onglets qui diffusent du son ou utilisent l’appareil photo ou le microphone restent actifs. Quand Android a besoin de mémoire pendant que Dejavu est en arrière-plan, tous les onglets sauf les deux derniers que tu as utilisés sont mis en veille.</string>
+    <string name="dejavu_tab_sleep_when">Mettre un onglet en veille</string>
+    <plurals name="dejavu_tab_sleep_after_minutes">
+        <item quantity="one">Après %d minute sans utilisation</item>
+        <item quantity="other">Après %d minutes sans utilisation</item>
+    </plurals>
+    <string name="dejavu_tab_sleep_after_hour">Après une heure sans utilisation</string>
+    <string name="dejavu_tab_sleep_never">Jamais</string>
+    <string name="dejavu_startup_crash_body">Un problème est survenu lors de l’ouverture de %1$s. Rouvre-le pour continuer à naviguer.</string>
     <string name="dejavu_sync_normal_tabs">Inclure les onglets non épinglés</string>
     <string name="dejavu_sync_normal_tabs_summary">Synchronise aussi les autres onglets de chaque espace, pas seulement les onglets épinglés et les dossiers. Zen les synchronise quand sa propre option Inclure les onglets non épinglés est activée.</string>
     <plurals name="dejavu_selection_count">

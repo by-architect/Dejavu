@@ -1,1 +1,1 @@
-Rilis pertama Dejavu, peramban tenang berbasis Firefox. Ruang kerja, kontainer, tab tersemat, esensial, folder, dan tampilan terpisah. Sinkron dengan Zen Browser melalui akun Mozilla Anda. Privat secara bawaan: tanpa telemetri.
+Rilis pertama Dejavu, peramban independen yang dibangun dari kode sumber terbuka Firefox milik Mozilla, tidak dibuat atau direstui oleh Mozilla. Ruang kerja, wadah, tab yang disemat, situs penting, folder, dan tampilan terbagi. Sinkron dengan Zen Browser melalui akun Mozilla Anda. Privat secara bawaan: tanpa telemetri.

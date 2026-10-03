@@ -47,6 +47,11 @@
     <string name="dejavu_folder_rename">Preimenuj folder</string>
     <string name="dejavu_folder_unpack">Raspakuj folder</string>
     <string name="dejavu_folder_top_level">Prikvačeni tabovi, bez foldera</string>
+    <plurals name="dejavu_folder_open_tabs">
+        <item quantity="one">%1$d otvoren tab</item>
+        <item quantity="few">%1$d otvorena taba</item>
+        <item quantity="other">%1$d otvorenih tabova</item>
+    </plurals>
     <string name="dejavu_essentials_drop">Ispusti ovdje za dodavanje u Favorite</string>
     <string name="dejavu_essentials_full">Favoriti mogu sadržati do %1$d tabova</string>
     <string name="dejavu_temporary_by_default">Privremeni kontejneri kao podrazumijevano</string>
@@ -88,7 +93,19 @@
     <string name="dejavu_action_remove_from_essentials">Ukloni iz Favorita</string>
     <string name="dejavu_action_delete">Obriši</string>
     <string name="dejavu_settings_title">Dejavu</string>
+    <string name="dejavu_about_content">%1$s je nezavisni preglednik izgrađen od Mozillinog otvorenog koda za Firefox i GeckoView. Mozilla ga nije napravila, nije ga odobrila i ne podržava ga. Firefox je zaštitni znak organizacije Mozilla Foundation u SAD-u i drugim zemljama.</string>
+    <string name="dejavu_about_source_code">Izvorni kod</string>
     <string name="dejavu_settings_tab_actions">Radnje tabova</string>
+    <string name="dejavu_settings_tab_actions_entry_summary">Jedna lista radnji i gdje se svaka prikazuje</string>
+    <string name="dejavu_settings_tab_actions_hint">Sve radnje su na jednoj listi, uključujući one koje sami dodate. Izaberite gdje će se svaka prikazivati: na prikvačenim tabovima, neprikvačenim tabovima i folderima, na traci koja se pojavi kada izaberete tabove, u meniju „Više“ i na traci radnji ispod stranica. Radnje na folderu djeluju na svaki tab u njemu.</string>
+    <string name="dejavu_settings_where_actions_show">Gdje se prikazuju radnje</string>
+    <string name="dejavu_settings_folders">Folderi</string>
+    <string name="dejavu_settings_selection_bar">Traka odabira</string>
+    <string name="dejavu_settings_folder_actions_hint">Izaberite do %1$d dugmadi za redove foldera. Ona djeluju na svaki tab u folderu i njegovim podfolderima.</string>
+    <string name="dejavu_settings_action_places_none">Ne prikazuje se nigdje</string>
+    <string name="dejavu_settings_action_place_unavailable">Ovdje ne radi</string>
+    <string name="dejavu_settings_action_place_full">Nema više mjesta</string>
+    <string name="dejavu_done">Gotovo</string>
     <string name="dejavu_settings_pinned_tabs">Prikvačeni tabovi</string>
     <string name="dejavu_settings_unpinned_tabs">Neprikvačeni tabovi</string>
     <string name="dejavu_settings_all_actions">Sve radnje</string>
@@ -185,6 +202,9 @@
     <string name="dejavu_actions_bar_search">Pretraga</string>
     <string name="dejavu_actions_bar_home">Početna</string>
     <string name="dejavu_settings_more_menu_summary">Traka radnji ispod stranica i meni koji ona otvara</string>
+    <string name="dejavu_more_menu_hint">Prevucite traku radnji prema gore ili adresnu traku prema dolje da otvorite cijeli meni. Dodirnite dugme da ga premjestite ili uklonite. Ekstenzije uvijek zauzimaju cijeli red.</string>
+    <string name="dejavu_actions_bar_hint">Dugmad ispod stranica. Djeluju na stranicu na kojoj se nalazite.</string>
+    <string name="dejavu_actions_bar_all_added">Sva dugmad su već na traci.</string>
     <string name="dejavu_more_menu_row">Red %1$d</string>
     <string name="dejavu_more_menu_add_item">Dodaj dugme</string>
     <string name="dejavu_more_menu_add_row">Dodaj red</string>
@@ -223,6 +243,23 @@
     <string name="dejavu_container_work">Posao</string>
     <string name="dejavu_container_banking">Bankarstvo</string>
     <string name="dejavu_container_shopping">Kupovina</string>
+    <string name="dejavu_history_group_by">Grupiši po</string>
+    <string name="dejavu_history_group_by_date">Datum</string>
+    <string name="dejavu_history_group_by_workspace">Radni prostor</string>
+    <string name="dejavu_history_group_by_folder">Radni prostor i folder</string>
+    <string name="dejavu_history_other_pages">Ostale stranice</string>
+    <string name="dejavu_settings_tab_sleep">Uspavani tabovi</string>
+    <string name="dejavu_settings_tab_sleep_summary">Tabovi koje ne koristite se uspavljuju da oslobode memoriju</string>
+    <string name="dejavu_tab_sleep_hint">Uspavani tab oslobađa svoju memoriju i ponovo učitava stranicu kada ga otvorite. Tab koji gledate, tab pored njega u podijeljenom prikazu i tabovi koji puštaju zvuk ili koriste kameru ili mikrofon ostaju budni. Kada Androidu zatreba memorije dok je Dejavu u pozadini, uspavljuju se svi tabovi osim posljednja dva koja ste koristili.</string>
+    <string name="dejavu_tab_sleep_when">Uspavaj tabove</string>
+    <plurals name="dejavu_tab_sleep_after_minutes">
+        <item quantity="one">Nakon %d minute bez korištenja</item>
+        <item quantity="few">Nakon %d minute bez korištenja</item>
+        <item quantity="other">Nakon %d minuta bez korištenja</item>
+    </plurals>
+    <string name="dejavu_tab_sleep_after_hour">Nakon sat vremena bez korištenja</string>
+    <string name="dejavu_tab_sleep_never">Nikad</string>
+    <string name="dejavu_startup_crash_body">Došlo je do problema pri otvaranju aplikacije %1$s. Otvorite je ponovo da nastavite pregledanje.</string>
     <string name="dejavu_sync_normal_tabs">Uključi otkvačene tabove</string>
     <string name="dejavu_sync_normal_tabs_summary">Također sinhronizuje i ostale tabove svakog radnog prostora, ne samo prikvačene tabove i foldere. Zen ih sinhronizuje kada je uključena njegova vlastita opcija Uključi otkvačene tabove.</string>
     <plurals name="dejavu_selection_count">

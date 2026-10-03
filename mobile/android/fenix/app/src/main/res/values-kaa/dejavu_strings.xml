@@ -47,6 +47,10 @@
     <string name="dejavu_folder_rename">Papkanıń atın ózgertiw</string>
     <string name="dejavu_folder_unpack">Papkanı tarqatıw</string>
     <string name="dejavu_folder_top_level">Bekitilgen betler, papkasız</string>
+    <plurals name="dejavu_folder_open_tabs">
+        <item quantity="one">%1$d ashıq bet</item>
+        <item quantity="other">%1$d ashıq bet</item>
+    </plurals>
     <string name="dejavu_essentials_drop">Tiykarǵılarǵa qosıw ushın bul jerge taslań</string>
     <string name="dejavu_essentials_full">Tiykarǵılar eń kópi menen %1$d bet sıydıradı</string>
     <string name="dejavu_temporary_by_default">Ádepki boyınsha waqtınsha konteynerler</string>
@@ -88,7 +92,19 @@
     <string name="dejavu_action_remove_from_essentials">Tiykarǵılardan shıǵarıw</string>
     <string name="dejavu_action_delete">Óshiriw</string>
     <string name="dejavu_settings_title">Dejavu</string>
+    <string name="dejavu_about_content">%1$s — Mozilla-nıń Firefox hám GeckoView ashıq kodınan jasalǵan ǵárezsiz brauzer. Ol Mozilla tárepinen islep shıǵılmaǵan, maqullanbaǵan hám qollap-quwatlanbaydı. Firefox — Mozilla Foundation shólkeminiń AQSh hám basqa mámleketlerdegi sawda belgisi.</string>
+    <string name="dejavu_about_source_code">Baslanǵısh kod</string>
     <string name="dejavu_settings_tab_actions">Bet áreketleri</string>
+    <string name="dejavu_settings_tab_actions_entry_summary">Áreketlerdiń bir dizimi hám hár biri qay jerde kórinetuǵını</string>
+    <string name="dejavu_settings_tab_actions_hint">Ózińiz qosqanları menen birge barlıq áreketler bir dizimde. Hár biri qay jerde kórinetuǵının tańlań: bekitilgen betlerde, bekitilmegen betlerde hám papkalarda, betler tańlanǵanda kórinetuǵın panelde, «Kóbirek» menyusinde hám betlerdiń astındaǵı áreketler panelinde. Papkaǵa qollanılǵan áreketler onıń ishindegi hár bir betke tásir etedi.</string>
+    <string name="dejavu_settings_where_actions_show">Áreketler kórinetuǵın orınlar</string>
+    <string name="dejavu_settings_folders">Papkalar</string>
+    <string name="dejavu_settings_selection_bar">Tańlaw paneli</string>
+    <string name="dejavu_settings_folder_actions_hint">Papka qatarları ushın eń kópi menen %1$d knopka tańlań. Olar papkadaǵı hám onıń ishki papkalarındaǵı hár bir betke tásir etedi.</string>
+    <string name="dejavu_settings_action_places_none">Hesh jerde kórsetilmeydi</string>
+    <string name="dejavu_settings_action_place_unavailable">Bul jerde islemeydi</string>
+    <string name="dejavu_settings_action_place_full">Orın qalmadı</string>
+    <string name="dejavu_done">Tayın</string>
     <string name="dejavu_settings_pinned_tabs">Bekitilgen betler</string>
     <string name="dejavu_settings_unpinned_tabs">Bekitilmegen betler</string>
     <string name="dejavu_settings_all_actions">Barlıq áreketler</string>
@@ -185,6 +201,9 @@
     <string name="dejavu_actions_bar_search">Izlew</string>
     <string name="dejavu_actions_bar_home">Bas bet</string>
     <string name="dejavu_settings_more_menu_summary">Betlerdiń astındaǵı áreketler paneli hám ol ashatuǵın menyu</string>
+    <string name="dejavu_more_menu_hint">Tolıq menyunı ashıw ushın áreketler panelin joqarıǵa yamasa mánzil qatarın tómenge sırǵıtıń. Knopkanı jıljıtıw yamasa shıǵarıw ushın oǵan tiyiń. Keńeytiwler hámme waqıt pútkil qatardı iyeleydi.</string>
+    <string name="dejavu_actions_bar_hint">Betlerdiń astındaǵı knopkalar. Olar siz kórip turǵan betke qollanıladı.</string>
+    <string name="dejavu_actions_bar_all_added">Barlıq knopkalar panelde bar.</string>
     <string name="dejavu_more_menu_row">%1$d-qatar</string>
     <string name="dejavu_more_menu_add_item">Knopka qosıw</string>
     <string name="dejavu_more_menu_add_row">Qatar qosıw</string>
@@ -223,6 +242,22 @@
     <string name="dejavu_container_work">Jumıs</string>
     <string name="dejavu_container_banking">Bank</string>
     <string name="dejavu_container_shopping">Sawda</string>
+    <string name="dejavu_history_group_by">Toparlaw</string>
+    <string name="dejavu_history_group_by_date">Sáne</string>
+    <string name="dejavu_history_group_by_workspace">Jumıs maydanı</string>
+    <string name="dejavu_history_group_by_folder">Jumıs maydanı hám papka</string>
+    <string name="dejavu_history_other_pages">Basqa betler</string>
+    <string name="dejavu_settings_tab_sleep">Uyqıdaǵı betler</string>
+    <string name="dejavu_settings_tab_sleep_summary">Siz paydalanbaytuǵın betler yadtı bosatıw ushın uyqıǵa ketedi</string>
+    <string name="dejavu_tab_sleep_hint">Uyqıdaǵı bet óz yadın bosatadı hám siz onı ashqanda betti qayta júkleydi. Siz kórip turǵan bet, bólingen kóriniste onıń janındaǵı bet hám dawıs oynatıp turǵan yamasa kamera ya mikrofondı paydalanıp turǵan betler oyaw qaladı. Dejavu fonda islep turǵanda Android-qa yad kerek bolsa, siz eń sońǵı paydalanǵan eki betten basqa barlıq betler uyqıǵa ketedi.</string>
+    <string name="dejavu_tab_sleep_when">Betlerdi uyqıǵa jiberiw</string>
+    <plurals name="dejavu_tab_sleep_after_minutes">
+        <item quantity="one">%d minut paydalanılmaǵannan keyin</item>
+        <item quantity="other">%d minut paydalanılmaǵannan keyin</item>
+    </plurals>
+    <string name="dejavu_tab_sleep_after_hour">Bir saat paydalanılmaǵannan keyin</string>
+    <string name="dejavu_tab_sleep_never">Heshqashan</string>
+    <string name="dejavu_startup_crash_body">%1$s ashılıp atırǵanda másele júz berdi. Kóriwdi dawam etiw ushın onı qayta ashıń.</string>
     <string name="dejavu_sync_normal_tabs">Bekitilmegen betlerdi qosıw</string>
     <string name="dejavu_sync_normal_tabs_summary">Sonday-aq, hár bir jumıs maydanınıń basqa betlerin de sinxronlastıradı, tek bekitilgen betler hám papkalardı emes. Onıń óz Bekitilmegen betlerdi qosıw parametri qosılg\'anda, Zen olardı sinxronlastıradı.</string>
     <plurals name="dejavu_selection_count">

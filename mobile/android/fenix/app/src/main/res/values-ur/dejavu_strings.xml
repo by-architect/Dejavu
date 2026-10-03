@@ -47,6 +47,10 @@
     <string name="dejavu_folder_rename">فولڈر کا نام تبدیل کریں</string>
     <string name="dejavu_folder_unpack">فولڈر کھولیں</string>
     <string name="dejavu_folder_top_level">پن کردہ ٹیبز، بغیر فولڈر کے</string>
+    <plurals name="dejavu_folder_open_tabs">
+        <item quantity="one">%1$d کھلا ٹیب</item>
+        <item quantity="other">%1$d کھلے ٹیبز</item>
+    </plurals>
     <string name="dejavu_essentials_drop">اہم میں شامل کرنے کے لیے یہاں ڈراپ کریں</string>
     <string name="dejavu_essentials_full">اہم میں زیادہ سے زیادہ %1$d ٹیبز آ سکتے ہیں</string>
     <string name="dejavu_temporary_by_default">بطور ڈیفالٹ عارضی کنٹینرز</string>
@@ -88,7 +92,19 @@
     <string name="dejavu_action_remove_from_essentials">اہم سے ہٹائیں</string>
     <string name="dejavu_action_delete">ڈیلیٹ کریں</string>
     <string name="dejavu_settings_title">Dejavu</string>
+    <string name="dejavu_about_content">%1$s ایک خود مختار براؤزر ہے جو Mozilla کے اوپن سورس Firefox اور GeckoView کوڈ سے بنا ہے۔ یہ Mozilla کا بنایا ہوا نہیں ہے، اور نہ ہی اسے Mozilla کی توثیق یا تعاون حاصل ہے۔ Firefox امریکہ اور دیگر ممالک میں Mozilla فاؤنڈیشن کا ٹریڈ مارک ہے۔</string>
+    <string name="dejavu_about_source_code">سورس کوڈ</string>
     <string name="dejavu_settings_tab_actions">ٹیب ایکشنز</string>
+    <string name="dejavu_settings_tab_actions_entry_summary">ایکشنز کی ایک فہرست، اور یہ کہ ہر ایک کہاں دکھائی دے</string>
+    <string name="dejavu_settings_tab_actions_hint">تمام ایکشنز ایک ہی فہرست میں ہیں، بشمول وہ جو آپ خود شامل کرتے ہیں۔ چنیں کہ ہر ایک کہاں دکھائی دے: پن کردہ ٹیبز، ان پن شدہ ٹیبز اور فولڈرز پر، منتخب ٹیبز کی بار میں، مزید کے مینو میں اور صفحات کے نیچے ایکشن بار میں۔ کسی فولڈر پر ایکشنز اس کے اندر موجود ہر ٹیب تک پہنچتے ہیں۔</string>
+    <string name="dejavu_settings_where_actions_show">ایکشنز کہاں دکھائی دیں</string>
+    <string name="dejavu_settings_folders">فولڈرز</string>
+    <string name="dejavu_settings_selection_bar">انتخاب بار</string>
+    <string name="dejavu_settings_folder_actions_hint">فولڈر صفوں کے لیے زیادہ سے زیادہ %1$d بٹنز چنیں۔ یہ فولڈر اور اس کے ذیلی فولڈرز کے اندر موجود ہر ٹیب پر کام کرتے ہیں۔</string>
+    <string name="dejavu_settings_action_places_none">کہیں نہیں دکھایا جاتا</string>
+    <string name="dejavu_settings_action_place_unavailable">وہاں کچھ نہیں کرتا</string>
+    <string name="dejavu_settings_action_place_full">جگہ باقی نہیں</string>
+    <string name="dejavu_done">ہو گیا</string>
     <string name="dejavu_settings_pinned_tabs">پن کردہ ٹیبز</string>
     <string name="dejavu_settings_unpinned_tabs">ان پن شدہ ٹیبز</string>
     <string name="dejavu_settings_all_actions">تمام ایکشنز</string>
@@ -185,6 +201,9 @@
     <string name="dejavu_actions_bar_search">تلاش کریں</string>
     <string name="dejavu_actions_bar_home">ہوم</string>
     <string name="dejavu_settings_more_menu_summary">صفحات کے نیچے ایکشن بار اور وہ مینو جو یہ کھولتا ہے</string>
+    <string name="dejavu_more_menu_hint">پورا مینو کھولنے کے لیے ایکشن بار کو اوپر، یا ایڈریس بار کو نیچے سوائپ کریں۔ کسی بٹن کو منتقل کرنے یا ہٹانے کے لیے اس پر ٹیپ کریں۔ ایکسٹینشنز ہمیشہ پوری صف لیتی ہیں۔</string>
+    <string name="dejavu_actions_bar_hint">صفحات کے نیچے والے بٹنز۔ یہ اس صفحے پر کام کرتے ہیں جس پر آپ ہیں۔</string>
+    <string name="dejavu_actions_bar_all_added">ہر بٹن پہلے ہی بار میں موجود ہے۔</string>
     <string name="dejavu_more_menu_row">صف %1$d</string>
     <string name="dejavu_more_menu_add_item">بٹن شامل کریں</string>
     <string name="dejavu_more_menu_add_row">صف شامل کریں</string>
@@ -223,6 +242,22 @@
     <string name="dejavu_container_work">کام</string>
     <string name="dejavu_container_banking">بینکنگ</string>
     <string name="dejavu_container_shopping">شاپنگ</string>
+    <string name="dejavu_history_group_by">گروپ بندی بلحاظ</string>
+    <string name="dejavu_history_group_by_date">تاریخ</string>
+    <string name="dejavu_history_group_by_workspace">ورک اسپیس</string>
+    <string name="dejavu_history_group_by_folder">ورک اسپیس اور فولڈر</string>
+    <string name="dejavu_history_other_pages">دیگر صفحات</string>
+    <string name="dejavu_settings_tab_sleep">سوئے ہوئے ٹیبز</string>
+    <string name="dejavu_settings_tab_sleep_summary">جو ٹیبز آپ استعمال نہیں کر رہے، وہ میموری خالی کرنے کے لیے سو جاتے ہیں</string>
+    <string name="dejavu_tab_sleep_hint">سویا ہوا ٹیب اپنی میموری خالی کر دیتا ہے اور جب آپ اسے کھولتے ہیں تو اپنا صفحہ دوبارہ لوڈ کرتا ہے۔ جو ٹیب آپ دیکھ رہے ہیں، اسپلٹ ویو میں اس کے ساتھ والا ٹیب، اور آواز چلانے والے یا کیمرہ یا مائیکروفون استعمال کرنے والے ٹیبز جاگتے رہتے ہیں۔ جب Dejavu بیک گراؤنڈ میں ہو اور Android کو میموری کی ضرورت ہو، تو آخری بار استعمال کیے گئے دو ٹیبز کے سوا ہر ٹیب سو جاتا ہے۔</string>
+    <string name="dejavu_tab_sleep_when">ٹیب کو سلائیں</string>
+    <plurals name="dejavu_tab_sleep_after_minutes">
+        <item quantity="one">%d منٹ تک استعمال نہ ہونے کے بعد</item>
+        <item quantity="other">%d منٹ تک استعمال نہ ہونے کے بعد</item>
+    </plurals>
+    <string name="dejavu_tab_sleep_after_hour">ایک گھنٹہ استعمال نہ ہونے کے بعد</string>
+    <string name="dejavu_tab_sleep_never">کبھی نہیں</string>
+    <string name="dejavu_startup_crash_body">%1$s کو کھولنے میں مسئلہ پیش آیا۔ براؤزنگ جاری رکھنے کے لیے اسے دوبارہ کھولیں۔</string>
     <string name="dejavu_sync_normal_tabs">غیر پن کردہ ٹیبز شامل کریں</string>
     <string name="dejavu_sync_normal_tabs_summary">یہ ہر ورک اسپیس کے دیگر ٹیبز کو بھی ہم وقت کرتا ہے، صرف پن کردہ ٹیبز اور فولڈرز کو نہیں۔ جب اس کا اپنا غیر پن کردہ ٹیبز شامل کریں آپشن آن ہوتا ہے، تو Zen انہیں ہم وقت کرتا ہے۔</string>
     <plurals name="dejavu_selection_count">

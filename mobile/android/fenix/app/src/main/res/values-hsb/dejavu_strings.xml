@@ -47,6 +47,12 @@
     <string name="dejavu_folder_rename">Zarjadnik přemjenować</string>
     <string name="dejavu_folder_unpack">Zarjadnik wupakować</string>
     <string name="dejavu_folder_top_level">Připjate rajtarki, žadyn zarjadnik</string>
+    <plurals name="dejavu_folder_open_tabs">
+        <item quantity="one">%1$d wočinjeny rajtark</item>
+        <item quantity="two">%1$d wočinjenej rajtarkaj</item>
+        <item quantity="few">%1$d wočinjene rajtarki</item>
+        <item quantity="other">%1$d wočinjenych rajtarkow</item>
+    </plurals>
     <string name="dejavu_essentials_drop">Sem pusć, zo by k najwažnišym přidał</string>
     <string name="dejavu_essentials_full">Najwažniše maja městno hač do %1$d rajtarkow</string>
     <string name="dejavu_temporary_by_default">Nachwilne kontejnery jako standard</string>
@@ -88,7 +94,19 @@
     <string name="dejavu_action_remove_from_essentials">Wot najwažnišich wotstronić</string>
     <string name="dejavu_action_delete">Zhašeć</string>
     <string name="dejavu_settings_title">Dejavu</string>
+    <string name="dejavu_about_content">%1$s je njewotwisny wobhladowak, natwarjeny z wotewrjeneho žórłoweho koda Firefox a GeckoView wot Mozilla. Mozilla jón njezhotowja, njepřipóznawa a njepodpěruje. Firefox je wikowanske znamjo Mozilla Foundation w USA a druhich krajach.</string>
+    <string name="dejavu_about_source_code">Žórłowy kod</string>
     <string name="dejavu_settings_tab_actions">Akcije za rajtarki</string>
+    <string name="dejavu_settings_tab_actions_entry_summary">Jedna lisćina akcijow a hdźe so kóžda pokazuje</string>
+    <string name="dejavu_settings_tab_actions_hint">Wšě akcije su w jednej lisćinje, tež te, kotrež sam přidawaš. Wubjer, hdźe so kóžda pokazuje: na připjatych rajtarkach, njepřipjatych rajtarkach a zarjadnikach, w lajsće wubranych rajtarkow, w dalšim meniju a w akcijowej lajsće pod stronami. Akcije na zarjadniku skutkuja na kóždy rajtark w nim.</string>
+    <string name="dejavu_settings_where_actions_show">Hdźe so akcije pokazuja</string>
+    <string name="dejavu_settings_folders">Zarjadniki</string>
+    <string name="dejavu_settings_selection_bar">Wuběrowa lajsta</string>
+    <string name="dejavu_settings_folder_actions_hint">Wubjer hač do %1$d tłóčatkow za rjady zarjadnikow. Skutkuja na kóždy rajtark w zarjadniku a jeho podzarjadnikach.</string>
+    <string name="dejavu_settings_action_places_none">Nihdźe so njepokazuje</string>
+    <string name="dejavu_settings_action_place_unavailable">Tam ničo nječini</string>
+    <string name="dejavu_settings_action_place_full">Žane městno wjace</string>
+    <string name="dejavu_done">Dokónčene</string>
     <string name="dejavu_settings_pinned_tabs">Připjate rajtarki</string>
     <string name="dejavu_settings_unpinned_tabs">Njepřipjate rajtarki</string>
     <string name="dejavu_settings_all_actions">Wšě akcije</string>
@@ -185,6 +203,9 @@
     <string name="dejavu_actions_bar_search">Pytać</string>
     <string name="dejavu_actions_bar_home">Doma</string>
     <string name="dejavu_settings_more_menu_summary">Akcijowa lajsta pod stronami a meni, kotryž so wočinja</string>
+    <string name="dejavu_more_menu_hint">Trěj akcijowu lajstu horje abo adresowe polo dele, zo by cyły meni wočinił. Podótkń so tłóčatka, zo by jo přesunył abo wotstronił. Rozšěrjenja přeco cyły rjad zaběraja.</string>
+    <string name="dejavu_actions_bar_hint">Tłóčatka pod stronami. Skutkuja na stronu, na kotrejž sy.</string>
+    <string name="dejavu_actions_bar_all_added">Kóžde tłóčatko je hižo w lajsće.</string>
     <string name="dejavu_more_menu_row">Rjad %1$d</string>
     <string name="dejavu_more_menu_add_item">Tłóčatko přidać</string>
     <string name="dejavu_more_menu_add_row">Rjad přidać</string>
@@ -223,6 +244,24 @@
     <string name="dejavu_container_work">Dźěło</string>
     <string name="dejavu_container_banking">Banka</string>
     <string name="dejavu_container_shopping">Nakupowanje</string>
+    <string name="dejavu_history_group_by">Zeskupić po</string>
+    <string name="dejavu_history_group_by_date">Datum</string>
+    <string name="dejavu_history_group_by_workspace">Dźěłowy rum</string>
+    <string name="dejavu_history_group_by_folder">Dźěłowy rum a zarjadnik</string>
+    <string name="dejavu_history_other_pages">Druhe strony</string>
+    <string name="dejavu_settings_tab_sleep">Spjace rajtarki</string>
+    <string name="dejavu_settings_tab_sleep_summary">Rajtarki, kotrež njewužiwaš, zaspja, zo bychu skład wuswobodźili</string>
+    <string name="dejavu_tab_sleep_hint">Spjacy rajtark swój skład wuswobodźi a swoju stronu znowa začita, hdyž jón wočiniš. Rajtark, kotryž sej wobhladuješ, rajtark pódla njeho w dźělenym napohledźe a rajtarki, kotrež zynk wothrawaja abo kameru abo mikrofon wužiwaja, njezaspja. Hdyž Android skład trjeba, mjeztym zo je Dejavu w pozadku, zaspja wšě rajtarki nimo dweju, kotrejž sy jako poslednjej wužiwał.</string>
+    <string name="dejavu_tab_sleep_when">Rajtark uspać</string>
+    <plurals name="dejavu_tab_sleep_after_minutes">
+        <item quantity="one">Po %d minuće bjez wužiwanja</item>
+        <item quantity="two">Po %d minutomaj bjez wužiwanja</item>
+        <item quantity="few">Po %d minutach bjez wužiwanja</item>
+        <item quantity="other">Po %d minutach bjez wužiwanja</item>
+    </plurals>
+    <string name="dejavu_tab_sleep_after_hour">Po hodźinje bjez wužiwanja</string>
+    <string name="dejavu_tab_sleep_never">Ženje</string>
+    <string name="dejavu_startup_crash_body">Při wočinjenju %1$s je problem wustupił. Wočiń nałoženje znowa, zo by dale přehladował.</string>
     <string name="dejavu_sync_normal_tabs">Njepřipjate rajtarki zapřijeć</string>
     <string name="dejavu_sync_normal_tabs_summary">Synchronizuje tež druhe rajtarki kóždeho dźěłoweho ruma, nic jenož připjate rajtarki a zarjadniki. Zen je synchronizuje, hdyž je jeho swójska opcija Njepřipjate rajtarki zapřijeć zmóžnjena.</string>
     <plurals name="dejavu_selection_count">

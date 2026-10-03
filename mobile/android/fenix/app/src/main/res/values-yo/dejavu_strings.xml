@@ -47,6 +47,9 @@
     <string name="dejavu_folder_rename">Yí orúkọ fódà padà</string>
     <string name="dejavu_folder_unpack">Tú fódà sílẹ̀</string>
     <string name="dejavu_folder_top_level">Táàbù tí a fi Pin sí, kò sí fódà</string>
+    <plurals name="dejavu_folder_open_tabs">
+        <item quantity="other">Táàbù %1$d tí ó ṣí</item>
+    </plurals>
     <string name="dejavu_essentials_drop">Sọ ọ́ sílẹ̀ níhìn-ín láti fi kún àwọn Pàtàkì</string>
     <string name="dejavu_essentials_full">Àwọn Pàtàkì lè gba táàbù títí dé %1$d</string>
     <string name="dejavu_temporary_by_default">Container fún ìgbà díẹ̀ ní àkọ́kọ́</string>
@@ -88,7 +91,19 @@
     <string name="dejavu_action_remove_from_essentials">Yọ kúrò nínú àwọn Pàtàkì</string>
     <string name="dejavu_action_delete">Paarẹ́</string>
     <string name="dejavu_settings_title">Dejavu</string>
+    <string name="dejavu_about_content">%1$s jẹ́ bíráwúsà olómìnira tí a kọ́ láti inú kóòdù orísun-ṣíṣí Firefox àti GeckoView ti Mozilla. Kì í ṣe Mozilla ló ṣe é, bẹ́ẹ̀ ni Mozilla kò fọwọ́ sí i, kò sì ṣe àtìlẹ́yìn fún un. Firefox jẹ́ àmì-ìdámọ̀ ọjà ti Mozilla Foundation ní Amẹ́ríkà àti àwọn orílẹ̀-èdè mìíràn.</string>
+    <string name="dejavu_about_source_code">Kóòdù orísun</string>
     <string name="dejavu_settings_tab_actions">Àwọn iṣe táàbù</string>
+    <string name="dejavu_settings_tab_actions_entry_summary">Àkójọ iṣe kan ṣoṣo, àti ibi tí ọ̀kọ̀ọ̀kan ti ń hàn</string>
+    <string name="dejavu_settings_tab_actions_hint">Gbogbo àwọn iṣe wà nínú àkójọ kan ṣoṣo, títí kan àwọn tí ìwọ fúnra rẹ fi kún. Yan ibi tí ọ̀kọ̀ọ̀kan yóò ti hàn: lórí àwọn táàbù tí a fi Pin sí, àwọn táàbù tí a kò fi Pin sí àti fódà, nínú ọ̀pá àwọn táàbù tí a yàn, nínú Menu Àfikún àti nínú Ọ̀pá Iṣe ní ìsàlẹ̀ ojú-ìwé. Àwọn iṣe lórí fódà máa ń kan gbogbo táàbù tí ó wà nínú rẹ̀.</string>
+    <string name="dejavu_settings_where_actions_show">Ibi tí àwọn iṣe ti ń hàn</string>
+    <string name="dejavu_settings_folders">Àwọn Fódà</string>
+    <string name="dejavu_settings_selection_bar">Ọ̀pá yíyan</string>
+    <string name="dejavu_settings_folder_actions_hint">Yan bọ́tìnnì títí dé %1$d fún ọ̀nà fódà. Wọ́n máa ń ṣiṣẹ́ lórí gbogbo táàbù tí ó wà nínú fódà náà àti àwọn fódà-abẹ́ rẹ̀.</string>
+    <string name="dejavu_settings_action_places_none">Kò hàn níbikíbi</string>
+    <string name="dejavu_settings_action_place_unavailable">Kò ṣe nǹkan kan níbẹ̀</string>
+    <string name="dejavu_settings_action_place_full">Kò sí àyè mọ́</string>
+    <string name="dejavu_done">Parí</string>
     <string name="dejavu_settings_pinned_tabs">Àwọn táàbù tí a fi Pin sí</string>
     <string name="dejavu_settings_unpinned_tabs">Àwọn táàbù tí a kò fi Pin sí</string>
     <string name="dejavu_settings_all_actions">Gbogbo àwọn iṣe</string>
@@ -185,6 +200,9 @@
     <string name="dejavu_actions_bar_search">Wá</string>
     <string name="dejavu_actions_bar_home">Home</string>
     <string name="dejavu_settings_more_menu_summary">Ọ̀pá iṣe tí ó wà ní ìsàlẹ̀ ojú-ìwé àti menu tí ó ń ṣí</string>
+    <string name="dejavu_more_menu_hint">Fa Ọ̀pá Iṣe sókè, tàbí ààyè ìfi-àdírẹ̀sì-sí sísàlẹ̀, láti ṣí gbogbo menu náà. Tẹ bọ́tìnnì kan láti gbé e lọ tàbí yọ ọ́ kúrò. Àwọn ìfikún máa ń gba ọ̀nà kan lódindi nígbà gbogbo.</string>
+    <string name="dejavu_actions_bar_hint">Àwọn bọ́tìnnì ní ìsàlẹ̀ ojú-ìwé. Wọ́n máa ń ṣiṣẹ́ lórí ojú-ìwé tí o wà.</string>
+    <string name="dejavu_actions_bar_all_added">Gbogbo bọ́tìnnì ti wà nínú ọ̀pá náà.</string>
     <string name="dejavu_more_menu_row">Ọ̀nà %1$d</string>
     <string name="dejavu_more_menu_add_item">Fi bọ́tìnnì kún</string>
     <string name="dejavu_more_menu_add_row">Fi ọ̀nà kún</string>
@@ -223,6 +241,21 @@
     <string name="dejavu_container_work">Iṣẹ́</string>
     <string name="dejavu_container_banking">Báńkì</string>
     <string name="dejavu_container_shopping">Rírajà</string>
+    <string name="dejavu_history_group_by">Kó jọ nípa</string>
+    <string name="dejavu_history_group_by_date">Déètì</string>
+    <string name="dejavu_history_group_by_workspace">Ibi-iṣẹ́</string>
+    <string name="dejavu_history_group_by_folder">Ibi-iṣẹ́ àti fódà</string>
+    <string name="dejavu_history_other_pages">Àwọn ojú-ìwé mìíràn</string>
+    <string name="dejavu_settings_tab_sleep">Àwọn táàbù tí ń sùn</string>
+    <string name="dejavu_settings_tab_sleep_summary">Àwọn táàbù tí o kò lò máa ń sùn láti tú ìrántí sílẹ̀</string>
+    <string name="dejavu_tab_sleep_hint">Táàbù tí ń sùn máa ń tú ìrántí rẹ̀ sílẹ̀, yóò sì tún gbé ojú-ìwé rẹ̀ wá nígbà tí o bá ṣí i. Táàbù tí ò ń wò, èyí tí ó wà lẹ́gbẹ̀ẹ́ rẹ̀ nínú split view, àti àwọn táàbù tí ń gbé ohùn jáde tàbí tí ń lo kámẹ́rà tàbí ẹ̀rọ ìgbóhùnsáfẹ́fẹ́ kì í sùn. Nígbà tí Android bá nílò ìrántí nígbà tí Dejavu wà ní abẹ́lẹ̀, gbogbo táàbù yóò sùn àyàfi méjì tí o lò kẹ́yìn.</string>
+    <string name="dejavu_tab_sleep_when">Mú táàbù sùn</string>
+    <plurals name="dejavu_tab_sleep_after_minutes">
+        <item quantity="other">Lẹ́yìn ìṣẹ́jú %d láìlò</item>
+    </plurals>
+    <string name="dejavu_tab_sleep_after_hour">Lẹ́yìn wákàtí kan láìlò</string>
+    <string name="dejavu_tab_sleep_never">Láéláé</string>
+    <string name="dejavu_startup_crash_body">Ìṣòro kan wáyé nígbà tí a ń ṣí %1$s. Tún un ṣí láti máa bá bíráwúsìnnì lọ.</string>
     <string name="dejavu_sync_normal_tabs">Fi àwọn táàbù tí a kò fi Pin sí kún</string>
     <string name="dejavu_sync_normal_tabs_summary">Ó tún ń ṣe sync àwọn táàbù mìíràn nínú ibi-iṣẹ́ kọ̀ọ̀kan, kì í ṣe àwọn táàbù tí a fi Pin sí àti fódà nìkan. Zen máa ń ṣe sync wọn nígbà tí ìṣètò tirẹ̀, Fi àwọn táàbù tí a kò fi Pin sí kún, bá ti wà ní ìmúṣiṣẹ́.</string>
     <plurals name="dejavu_selection_count">

@@ -1,1 +1,1 @@
-Keluaran pertama Dejavu, pelayar tenang berasaskan Firefox. Ruang kerja, bekas, tab yang disemat, keperluan, folder dan paparan berpecah. Disegerakkan dengan Zen Browser melalui akaun Mozilla anda. Peribadi secara lalai: tiada telemetri.
+Keluaran pertama Dejavu, pelayar bebas yang dibina daripada kod sumber terbuka Firefox milik Mozilla, tidak dibuat atau diiktiraf oleh Mozilla. Ruang kerja, bekas, tab yang disemat, keperluan, folder dan paparan berpecah. Disegerakkan dengan Zen Browser melalui akaun Mozilla anda. Peribadi secara lalai: tiada telemetri.

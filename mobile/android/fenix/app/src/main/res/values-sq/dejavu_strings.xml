@@ -47,6 +47,10 @@
     <string name="dejavu_folder_rename">Riemërtoje dosjen</string>
     <string name="dejavu_folder_unpack">Shpaketoje dosjen</string>
     <string name="dejavu_folder_top_level">Skeda të fiksuara, pa dosje</string>
+    <plurals name="dejavu_folder_open_tabs">
+        <item quantity="one">%1$d skedë e hapur</item>
+        <item quantity="other">%1$d skeda të hapura</item>
+    </plurals>
     <string name="dejavu_essentials_drop">Lëshoje këtu për ta shtuar te thelbësoret</string>
     <string name="dejavu_essentials_full">Thelbësoret nxënë deri në %1$d skeda</string>
     <string name="dejavu_temporary_by_default">Kontejnerë të përkohshëm si parazgjedhje</string>
@@ -88,7 +92,19 @@
     <string name="dejavu_action_remove_from_essentials">Hiqe nga thelbësoret</string>
     <string name="dejavu_action_delete">Fshije</string>
     <string name="dejavu_settings_title">Dejavu</string>
+    <string name="dejavu_about_content">%1$s është një shfletues i pavarur, i ndërtuar nga kodi me burim të hapët i Mozilla-s për Firefox dhe GeckoView. Nuk krijohet, miratohet apo përkrahet nga Mozilla. Firefox është shenjë tregtare e Mozilla Foundation në ShBA dhe në vende të tjera.</string>
+    <string name="dejavu_about_source_code">Kod burim</string>
     <string name="dejavu_settings_tab_actions">Veprime skedash</string>
+    <string name="dejavu_settings_tab_actions_entry_summary">Një listë veprimesh dhe ku shfaqet secili</string>
+    <string name="dejavu_settings_tab_actions_hint">Krejt veprimet gjenden në një listë, përfshi ato që shtoni vetë. Zgjidhni ku shfaqet secili: në skedat e fiksuara, në skedat e pafiksuara dhe në dosje, te shiriti i skedave të përzgjedhura, te menuja «Më Tepër» dhe te shiriti i veprimeve nën faqet. Veprimet mbi një dosje prekin çdo skedë brenda saj.</string>
+    <string name="dejavu_settings_where_actions_show">Ku shfaqen veprimet</string>
+    <string name="dejavu_settings_folders">Dosje</string>
+    <string name="dejavu_settings_selection_bar">Shirit përzgjedhjeje</string>
+    <string name="dejavu_settings_folder_actions_hint">Zgjidhni deri në %1$d butona për rreshtat e dosjeve. Ata veprojnë mbi çdo skedë brenda dosjes dhe nëndosjeve të saj.</string>
+    <string name="dejavu_settings_action_places_none">Nuk shfaqet gjëkundi</string>
+    <string name="dejavu_settings_action_place_unavailable">S\'bën gjë atje</string>
+    <string name="dejavu_settings_action_place_full">S\'ka më vend</string>
+    <string name="dejavu_done">U bë</string>
     <string name="dejavu_settings_pinned_tabs">Skeda të fiksuara</string>
     <string name="dejavu_settings_unpinned_tabs">Skeda të pafiksuara</string>
     <string name="dejavu_settings_all_actions">Krejt veprimet</string>
@@ -185,6 +201,9 @@
     <string name="dejavu_actions_bar_search">Kërko</string>
     <string name="dejavu_actions_bar_home">Kreu</string>
     <string name="dejavu_settings_more_menu_summary">Shiriti i veprimeve nën faqet dhe menuja që hap</string>
+    <string name="dejavu_more_menu_hint">Fërkojeni shiritin e veprimeve për sipër, ose shtyllën e adresave për poshtë, që të hapet krejt menuja. Prekni një buton që ta lëvizni ose ta hiqni. Zgjerimet zënë përherë një rresht të tërë.</string>
+    <string name="dejavu_actions_bar_hint">Butonat nën faqet. Veprojnë mbi faqen ku gjendeni.</string>
+    <string name="dejavu_actions_bar_all_added">Çdo buton gjendet tashmë te shiriti.</string>
     <string name="dejavu_more_menu_row">Rreshti %1$d</string>
     <string name="dejavu_more_menu_add_item">Shto buton</string>
     <string name="dejavu_more_menu_add_row">Shto rresht</string>
@@ -223,6 +242,22 @@
     <string name="dejavu_container_work">Punë</string>
     <string name="dejavu_container_banking">Bankare</string>
     <string name="dejavu_container_shopping">Blerje</string>
+    <string name="dejavu_history_group_by">Grupoji sipas</string>
+    <string name="dejavu_history_group_by_date">Datë</string>
+    <string name="dejavu_history_group_by_workspace">Hapësirë pune</string>
+    <string name="dejavu_history_group_by_folder">Hapësirë pune dhe dosje</string>
+    <string name="dejavu_history_other_pages">Faqe të tjera</string>
+    <string name="dejavu_settings_tab_sleep">Skeda të pezulluara</string>
+    <string name="dejavu_settings_tab_sleep_summary">Skedat që s\'i përdorni pezullohen, për të liruar kujtesë</string>
+    <string name="dejavu_tab_sleep_hint">Një skedë e pezulluar liron kujtesën e saj dhe e ringarkon faqen kur e hapni. Skeda që po shihni, ajo pranë saj në pamje të ndarë dhe skedat që luajnë zë ose përdorin kamerën apo mikrofonin nuk pezullohen. Kur sistemi Android ka nevojë për kujtesë, teksa Dejavu është në prapaskenë, pezullohen krejt skedat, hiq dy të fundit që keni përdorur.</string>
+    <string name="dejavu_tab_sleep_when">Kur të pezullohet një skedë</string>
+    <plurals name="dejavu_tab_sleep_after_minutes">
+        <item quantity="one">Pas %d minute pa përdorim</item>
+        <item quantity="other">Pas %d minutash pa përdorim</item>
+    </plurals>
+    <string name="dejavu_tab_sleep_after_hour">Pas një ore pa përdorim</string>
+    <string name="dejavu_tab_sleep_never">Kurrë</string>
+    <string name="dejavu_startup_crash_body">Pati një problem me hapjen e %1$s. Rihapeni aplikacionin, që të vazhdoni shfletimin.</string>
     <string name="dejavu_sync_normal_tabs">Përfshi skedat e pafiksuara</string>
     <string name="dejavu_sync_normal_tabs_summary">Gjithashtu njëkohëson skedat e tjera të çdo hapësire pune, jo vetëm skedat e fiksuara dhe dosjet. Zen i njëkohëson kur opsioni i tij vetjak, Përfshi skedat e pafiksuara, është i aktivizuar.</string>
     <plurals name="dejavu_selection_count">

@@ -47,6 +47,9 @@
     <string name="dejavu_folder_rename">ဖိုင်တွဲ အမည်ပြောင်းရန်</string>
     <string name="dejavu_folder_unpack">ဖိုင်တွဲ ဖြေရန်</string>
     <string name="dejavu_folder_top_level">ပင်ထိုးထားသော တက်ဗ်များ၊ ဖိုင်တွဲ မရှိ</string>
+    <plurals name="dejavu_folder_open_tabs">
+        <item quantity="other">ဖွင့်ထားသော တက်ဗ် %1$d ခု</item>
+    </plurals>
     <string name="dejavu_essentials_drop">မရှိမဖြစ်များထဲ ထည့်ရန် ဤနေရာတွင် ချထားပါ</string>
     <string name="dejavu_essentials_full">မရှိမဖြစ်များတွင် တက်ဗ် %1$d ခုအထိ ထည့်နိုင်သည်</string>
     <string name="dejavu_temporary_by_default">မူလအတိုင်း ယာယီကွန်တိန်နာများ</string>
@@ -88,7 +91,19 @@
     <string name="dejavu_action_remove_from_essentials">မရှိမဖြစ်များမှ ဖယ်ရှားရန်</string>
     <string name="dejavu_action_delete">ဖျက်ရန်</string>
     <string name="dejavu_settings_title">Dejavu</string>
+    <string name="dejavu_about_content">%1$s သည် Mozilla ၏ ပွင့်လင်းရင်းမြစ် Firefox နှင့် GeckoView ကုဒ်မှ တည်ဆောက်ထားသော သီးခြားလွတ်လပ်သည့် ဘရောက်ဇာ ဖြစ်သည်။ ၎င်းကို Mozilla က ပြုလုပ်ခြင်း၊ ထောက်ခံခြင်း သို့မဟုတ် ပံ့ပိုးခြင်း မရှိပါ။ Firefox သည် အမေရိကန်ပြည်ထောင်စုနှင့် အခြားနိုင်ငံများရှိ Mozilla Foundation ၏ ကုန်အမှတ်တံဆိပ် ဖြစ်သည်။</string>
+    <string name="dejavu_about_source_code">ရင်းမြစ်ကုဒ်</string>
     <string name="dejavu_settings_tab_actions">တက်ဗ် လုပ်ဆောင်ချက်များ</string>
+    <string name="dejavu_settings_tab_actions_entry_summary">လုပ်ဆောင်ချက်စာရင်း တစ်ခုတည်းနှင့် တစ်ခုစီ ပြသမည့်နေရာ</string>
+    <string name="dejavu_settings_tab_actions_hint">သင်ကိုယ်တိုင် ထည့်ထားသည်များအပါအဝင် လုပ်ဆောင်ချက်အားလုံးသည် စာရင်းတစ်ခုတည်းတွင် ရှိသည်။ တစ်ခုစီ ပြသမည့်နေရာကို ရွေးပါ- ပင်ထိုးထားသော တက်ဗ်များ၊ ပင်မထိုးထားသော တက်ဗ်များနှင့် ဖိုင်တွဲများပေါ်တွင်၊ ရွေးထားသော တက်ဗ်များ၏ ဘားတွင်၊ နောက်ထပ် မီနူးတွင်နှင့် စာမျက်နှာအောက်ရှိ လုပ်ဆောင်ချက်ဘားတွင်။ ဖိုင်တွဲတစ်ခုပေါ်ရှိ လုပ်ဆောင်ချက်များသည် ၎င်းအတွင်းရှိ တက်ဗ်တိုင်းကို သက်ရောက်သည်။</string>
+    <string name="dejavu_settings_where_actions_show">လုပ်ဆောင်ချက်များ ပြသမည့်နေရာ</string>
+    <string name="dejavu_settings_folders">ဖိုင်တွဲများ</string>
+    <string name="dejavu_settings_selection_bar">ရွေးချယ်မှု ဘား</string>
+    <string name="dejavu_settings_folder_actions_hint">ဖိုင်တွဲအတန်းများအတွက် ခလုတ် %1$d ခုအထိ ရွေးပါ။ ၎င်းတို့သည် ဖိုင်တွဲနှင့် ၎င်း၏ ဖိုင်တွဲခွဲများအတွင်းရှိ တက်ဗ်တိုင်းပေါ်တွင် လုပ်ဆောင်သည်။</string>
+    <string name="dejavu_settings_action_places_none">မည်သည့်နေရာတွင်မျှ မပြပါ</string>
+    <string name="dejavu_settings_action_place_unavailable">ထိုနေရာတွင် ဘာမှ မလုပ်ပါ</string>
+    <string name="dejavu_settings_action_place_full">နေရာ မကျန်တော့ပါ</string>
+    <string name="dejavu_done">ပြီးပါပြီ</string>
     <string name="dejavu_settings_pinned_tabs">ပင်ထိုးထားသော တက်ဗ်များ</string>
     <string name="dejavu_settings_unpinned_tabs">ပင်မထိုးထားသော တက်ဗ်များ</string>
     <string name="dejavu_settings_all_actions">လုပ်ဆောင်ချက် အားလုံး</string>
@@ -185,6 +200,9 @@
     <string name="dejavu_actions_bar_search">ရှာဖွေရန်</string>
     <string name="dejavu_actions_bar_home">ပင်မ</string>
     <string name="dejavu_settings_more_menu_summary">စာမျက်နှာအောက်ရှိ လုပ်ဆောင်ချက်ဘားနှင့် ၎င်းဖွင့်ပေးသော မီနူး</string>
+    <string name="dejavu_more_menu_hint">မီနူးတစ်ခုလုံးကို ဖွင့်ရန် လုပ်ဆောင်ချက်ဘားကို အပေါ်သို့ သို့မဟုတ် လိပ်စာဘားကို အောက်သို့ ပွတ်ဆွဲပါ။ ခလုတ်တစ်ခုကို ရွှေ့ရန် သို့မဟုတ် ဖယ်ရှားရန် နှိပ်ပါ။ ထပ်ဆောင်းများသည် အတန်းတစ်ခုလုံးကို အမြဲ ယူသည်။</string>
+    <string name="dejavu_actions_bar_hint">စာမျက်နှာအောက်ရှိ ခလုတ်များ။ ၎င်းတို့သည် သင်ရောက်နေသော စာမျက်နှာပေါ်တွင် လုပ်ဆောင်သည်။</string>
+    <string name="dejavu_actions_bar_all_added">ခလုတ်အားလုံးသည် ဘားထဲတွင် ရှိပြီးသားဖြစ်သည်။</string>
     <string name="dejavu_more_menu_row">အတန်း %1$d</string>
     <string name="dejavu_more_menu_add_item">ခလုတ်တစ်ခု ထည့်ရန်</string>
     <string name="dejavu_more_menu_add_row">အတန်းတစ်ခု ထည့်ရန်</string>
@@ -223,6 +241,21 @@
     <string name="dejavu_container_work">အလုပ်</string>
     <string name="dejavu_container_banking">ဘဏ်လုပ်ငန်း</string>
     <string name="dejavu_container_shopping">စျေးဝယ်ခြင်း</string>
+    <string name="dejavu_history_group_by">အုပ်စုဖွဲ့ရန်</string>
+    <string name="dejavu_history_group_by_date">ရက်စွဲ</string>
+    <string name="dejavu_history_group_by_workspace">လုပ်ငန်းခွင်</string>
+    <string name="dejavu_history_group_by_folder">လုပ်ငန်းခွင်နှင့် ဖိုင်တွဲ</string>
+    <string name="dejavu_history_other_pages">အခြား စာမျက်နှာများ</string>
+    <string name="dejavu_settings_tab_sleep">အိပ်နေသော တက်ဗ်များ</string>
+    <string name="dejavu_settings_tab_sleep_summary">မှတ်ဉာဏ် လွတ်စေရန် သင်မသုံးသော တက်ဗ်များ အိပ်သွားသည်</string>
+    <string name="dejavu_tab_sleep_hint">အိပ်နေသော တက်ဗ်သည် ၎င်း၏ မှတ်ဉာဏ်ကို လွှတ်ပေးပြီး သင်ဖွင့်သောအခါ ၎င်း၏ စာမျက်နှာကို ပြန်တင်သည်။ သင်ကြည့်နေသော တက်ဗ်၊ မျက်နှာပြင်ခွဲတွင် ၎င်းဘေးရှိ တက်ဗ်နှင့် အသံဖွင့်နေသော သို့မဟုတ် ကင်မရာ သို့မဟုတ် မိုက်ကရိုဖုန်း သုံးနေသော တက်ဗ်များသည် နိုးနေမည်။ Dejavu နောက်ခံတွင် ရှိနေစဉ် Android က မှတ်ဉာဏ် လိုအပ်ပါက သင်နောက်ဆုံး သုံးခဲ့သော တက်ဗ်နှစ်ခုမှလွဲ၍ တက်ဗ်အားလုံး အိပ်သွားမည်။</string>
+    <string name="dejavu_tab_sleep_when">တက်ဗ်ကို အိပ်စေရန်</string>
+    <plurals name="dejavu_tab_sleep_after_minutes">
+        <item quantity="other">မသုံးဘဲ %d မိနစ် ကြာပြီးနောက်</item>
+    </plurals>
+    <string name="dejavu_tab_sleep_after_hour">မသုံးဘဲ တစ်နာရီ ကြာပြီးနောက်</string>
+    <string name="dejavu_tab_sleep_never">ဘယ်တော့မှ</string>
+    <string name="dejavu_startup_crash_body">%1$s ကို ဖွင့်ရာတွင် ပြဿနာ ရှိခဲ့သည်။ ဆက်လက် ကြည့်ရှုရန် ၎င်းကို ပြန်ဖွင့်ပါ။</string>
     <string name="dejavu_sync_normal_tabs">ပင်မထိုးထားသော တက်ဗ်များ ထည့်သွင်းရန်</string>
     <string name="dejavu_sync_normal_tabs_summary">၎င်းသည် လုပ်ငန်းခွင်တစ်ခုစီ၏ အခြားတက်ဗ်များကိုလည်း စင့်ခ်ချပေးပြီး၊ ပင်ထိုးထားသော တက်ဗ်များနှင့် ဖိုင်တွဲများသာမက ဖြစ်သည်။ Zen ၏ ကိုယ်ပိုင် ပင်မထိုးထားသော တက်ဗ်များ ထည့်သွင်းရန် ရွေးစရာ ဖွင့်ထားပါက Zen သည် ၎င်းတို့ကို စင့်ခ်ချပေးသည်။</string>
     <plurals name="dejavu_selection_count">

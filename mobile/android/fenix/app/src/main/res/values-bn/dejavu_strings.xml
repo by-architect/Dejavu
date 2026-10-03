@@ -64,6 +64,10 @@
     <string name="dejavu_folder_rename">ফোল্ডারের নাম পরিবর্তন করুন</string>
     <string name="dejavu_folder_unpack">ফোল্ডার আনপ্যাক করুন</string>
     <string name="dejavu_folder_top_level">পিন করা ট্যাব, কোনো ফোল্ডার ছাড়া</string>
+    <plurals name="dejavu_folder_open_tabs">
+        <item quantity="one">%1$d খোলা ট্যাব</item>
+        <item quantity="other">%1$d খোলা ট্যাব</item>
+    </plurals>
 
     <!-- Essentials -->
     <string name="dejavu_essentials_drop">এসেনশিয়ালে যোগ করতে এখানে ছাড়ুন</string>
@@ -119,7 +123,19 @@
 
     <!-- Settings -->
     <string name="dejavu_settings_title">Dejavu</string>
+    <string name="dejavu_about_content">%1$s হলো Mozilla-র ওপেন সোর্স Firefox ও GeckoView কোড থেকে তৈরি একটি স্বাধীন ব্রাউজার। এটি Mozilla-র তৈরি নয়, এবং Mozilla এটিকে অনুমোদন বা সমর্থন করে না। Firefox হলো মার্কিন যুক্তরাষ্ট্র ও অন্যান্য দেশে Mozilla Foundation-এর ট্রেডমার্ক।</string>
+    <string name="dejavu_about_source_code">সোর্স কোড</string>
     <string name="dejavu_settings_tab_actions">ট্যাব অ্যাকশন</string>
+    <string name="dejavu_settings_tab_actions_entry_summary">অ্যাকশনের একটি তালিকা, আর প্রতিটি কোথায় দেখায়</string>
+    <string name="dejavu_settings_tab_actions_hint">আপনার নিজের যোগ করা অ্যাকশনসহ সব অ্যাকশন একটি তালিকায় আছে। প্রতিটি কোথায় দেখাবে তা বেছে নিন: পিন করা ট্যাব, পিন না করা ট্যাব ও ফোল্ডারে, নির্বাচিত ট্যাবের বারে, আরও অপশন মেনুতে এবং পাতার নিচের অ্যাকশন বারে। কোনো ফোল্ডারের অ্যাকশন তার ভেতরের প্রতিটি ট্যাবে প্রযোজ্য হয়।</string>
+    <string name="dejavu_settings_where_actions_show">অ্যাকশন কোথায় দেখায়</string>
+    <string name="dejavu_settings_folders">ফোল্ডার</string>
+    <string name="dejavu_settings_selection_bar">নির্বাচন বার</string>
+    <string name="dejavu_settings_folder_actions_hint">ফোল্ডারের সারির জন্য সর্বোচ্চ %1$d বোতাম বেছে নিন। এগুলো ফোল্ডার ও তার সাবফোল্ডারের ভেতরের প্রতিটি ট্যাবে কাজ করে।</string>
+    <string name="dejavu_settings_action_places_none">কোথাও দেখানো হয় না</string>
+    <string name="dejavu_settings_action_place_unavailable">সেখানে কোনো কাজ করে না</string>
+    <string name="dejavu_settings_action_place_full">আর জায়গা নেই</string>
+    <string name="dejavu_done">সম্পন্ন</string>
     <string name="dejavu_settings_pinned_tabs">পিন করা ট্যাব</string>
     <string name="dejavu_settings_unpinned_tabs">পিন না করা ট্যাব</string>
     <string name="dejavu_settings_all_actions">সব অ্যাকশন</string>
@@ -236,6 +252,9 @@
     <string name="dejavu_actions_bar_search">অনুসন্ধান</string>
     <string name="dejavu_actions_bar_home">হোম</string>
     <string name="dejavu_settings_more_menu_summary">পাতার নিচের অ্যাকশন বার এবং এটি যে মেনু খোলে</string>
+    <string name="dejavu_more_menu_hint">পুরো মেনু খুলতে অ্যাকশন বার উপরের দিকে, অথবা ঠিকানা বার নিচের দিকে সোয়াইপ করুন। কোনো বোতামের জায়গা বদলাতে বা সেটি সরিয়ে দিতে সেটিতে ট্যাপ করুন। এক্সটেনশন সবসময় একটি পুরো সারি জুড়ে থাকে।</string>
+    <string name="dejavu_actions_bar_hint">পাতার নিচের বোতামগুলো। আপনি যে পাতায় আছেন, এগুলো সেই পাতায় কাজ করে।</string>
+    <string name="dejavu_actions_bar_all_added">সব বোতাম আগে থেকেই বারে আছে।</string>
     <string name="dejavu_more_menu_row">সারি %1$d</string>
     <string name="dejavu_more_menu_add_item">একটি বোতাম যোগ করুন</string>
     <string name="dejavu_more_menu_add_row">একটি সারি যোগ করুন</string>
@@ -276,6 +295,22 @@
     <string name="dejavu_container_work">কাজ</string>
     <string name="dejavu_container_banking">ব্যাংকিং</string>
     <string name="dejavu_container_shopping">কেনাকাটা</string>
+    <string name="dejavu_history_group_by">কীভাবে গ্রুপ করবেন</string>
+    <string name="dejavu_history_group_by_date">তারিখ</string>
+    <string name="dejavu_history_group_by_workspace">ওয়ার্কস্পেস</string>
+    <string name="dejavu_history_group_by_folder">ওয়ার্কস্পেস ও ফোল্ডার</string>
+    <string name="dejavu_history_other_pages">অন্যান্য পাতা</string>
+    <string name="dejavu_settings_tab_sleep">স্লিপ মোডে থাকা ট্যাব</string>
+    <string name="dejavu_settings_tab_sleep_summary">যে ট্যাবগুলো আপনি ব্যবহার করছেন না, সেগুলো মেমরি খালি করতে স্লিপ মোডে যায়</string>
+    <string name="dejavu_tab_sleep_hint">স্লিপ মোডে থাকা ট্যাব তার মেমরি খালি করে দেয় এবং আপনি সেটি খুললে পাতাটি আবার লোড করে। আপনি যে ট্যাবটি দেখছেন, স্প্লিট ভিউতে তার পাশের ট্যাব, এবং যেসব ট্যাবে শব্দ বাজছে বা ক্যামেরা বা মাইক্রোফোন ব্যবহার হচ্ছে, সেগুলো সচল থাকে। Dejavu ব্যাকগ্রাউন্ডে থাকার সময় Android-এর মেমরি দরকার হলে, আপনার সর্বশেষ ব্যবহার করা দুটি ট্যাব ছাড়া বাকি সব ট্যাব স্লিপ মোডে চলে যায়।</string>
+    <string name="dejavu_tab_sleep_when">ট্যাব স্লিপ মোডে রাখুন</string>
+    <plurals name="dejavu_tab_sleep_after_minutes">
+        <item quantity="one">%d মিনিট ব্যবহার না হলে</item>
+        <item quantity="other">%d মিনিট ব্যবহার না হলে</item>
+    </plurals>
+    <string name="dejavu_tab_sleep_after_hour">এক ঘণ্টা ব্যবহার না হলে</string>
+    <string name="dejavu_tab_sleep_never">কখনো না</string>
+    <string name="dejavu_startup_crash_body">%1$s খুলতে একটি সমস্যা হয়েছে। ব্রাউজিং চালিয়ে যেতে এটি আবার খুলুন।</string>
     <string name="dejavu_sync_normal_tabs">আনপিন করা ট্যাব অন্তর্ভুক্ত করুন</string>
     <string name="dejavu_sync_normal_tabs_summary">এটি প্রতিটি ওয়ার্কস্পেসের অন্যান্য ট্যাবও Sync করে, শুধু পিন করা ট্যাব ও ফোল্ডার নয়। নিজস্ব আনপিন করা ট্যাব অন্তর্ভুক্ত করুন অপশন চালু থাকলে Zen সেগুলো Sync করে।</string>
 </resources>

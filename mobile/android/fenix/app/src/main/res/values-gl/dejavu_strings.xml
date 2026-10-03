@@ -47,6 +47,10 @@
     <string name="dejavu_folder_rename">Renomear o cartafol</string>
     <string name="dejavu_folder_unpack">Desempaquetar o cartafol</string>
     <string name="dejavu_folder_top_level">Lapelas fixadas, sen cartafol</string>
+    <plurals name="dejavu_folder_open_tabs">
+        <item quantity="one">%1$d lapela aberta</item>
+        <item quantity="other">%1$d lapelas abertas</item>
+    </plurals>
     <string name="dejavu_essentials_drop">Soltar aquí para engadir aos esenciais</string>
     <string name="dejavu_essentials_full">Os esenciais admiten ata %1$d lapelas</string>
     <string name="dejavu_temporary_by_default">Contedores temporais de maneira predeterminada</string>
@@ -88,7 +92,19 @@
     <string name="dejavu_action_remove_from_essentials">Quitar dos esenciais</string>
     <string name="dejavu_action_delete">Eliminar</string>
     <string name="dejavu_settings_title">Dejavu</string>
+    <string name="dejavu_about_content">%1$s é un navegador independente creado a partir do código aberto de Firefox e GeckoView de Mozilla. Mozilla non o desenvolve, non o avala nin lle dá soporte. Firefox é unha marca comercial da Mozilla Foundation nos Estados Unidos e noutros países.</string>
+    <string name="dejavu_about_source_code">Código fonte</string>
     <string name="dejavu_settings_tab_actions">Accións das lapelas</string>
+    <string name="dejavu_settings_tab_actions_entry_summary">Unha soa lista de accións, e onde se amosa cada unha</string>
+    <string name="dejavu_settings_tab_actions_hint">Todas as accións están nunha soa lista, incluídas as que engades ti. Escolle onde se amosa cada unha: nas lapelas fixadas, nas lapelas non fixadas e nos cartafoles, na barra das lapelas seleccionadas, no menú «Máis» e na barra de accións debaixo das páxinas. As accións sobre un cartafol chegan a todas as lapelas que contén.</string>
+    <string name="dejavu_settings_where_actions_show">Onde se amosan as accións</string>
+    <string name="dejavu_settings_folders">Cartafoles</string>
+    <string name="dejavu_settings_selection_bar">Barra de selección</string>
+    <string name="dejavu_settings_folder_actions_hint">Escolle ata %1$d botóns para as filas de cartafoles. Actúan sobre todas as lapelas do cartafol e dos seus subcartafoles.</string>
+    <string name="dejavu_settings_action_places_none">Non se amosa en ningures</string>
+    <string name="dejavu_settings_action_place_unavailable">Aquí non fai nada</string>
+    <string name="dejavu_settings_action_place_full">Non queda espazo</string>
+    <string name="dejavu_done">Feito</string>
     <string name="dejavu_settings_pinned_tabs">Lapelas fixadas</string>
     <string name="dejavu_settings_unpinned_tabs">Lapelas non fixadas</string>
     <string name="dejavu_settings_all_actions">Todas as accións</string>
@@ -185,6 +201,9 @@
     <string name="dejavu_actions_bar_search">Buscar</string>
     <string name="dejavu_actions_bar_home">Inicio</string>
     <string name="dejavu_settings_more_menu_summary">A barra de accións debaixo das páxinas e o menú que abre</string>
+    <string name="dejavu_more_menu_hint">Despraza a barra de accións cara arriba, ou a barra de enderezos cara abaixo, para abrir o menú completo. Toca un botón para movelo ou quitalo. As extensións sempre ocupan unha fila enteira.</string>
+    <string name="dejavu_actions_bar_hint">Os botóns debaixo das páxinas. Actúan sobre a páxina na que estás.</string>
+    <string name="dejavu_actions_bar_all_added">Todos os botóns xa están na barra.</string>
     <string name="dejavu_more_menu_row">Fila %1$d</string>
     <string name="dejavu_more_menu_add_item">Engadir un botón</string>
     <string name="dejavu_more_menu_add_row">Engadir unha fila</string>
@@ -223,6 +242,22 @@
     <string name="dejavu_container_work">Traballo</string>
     <string name="dejavu_container_banking">Banca</string>
     <string name="dejavu_container_shopping">Compras</string>
+    <string name="dejavu_history_group_by">Agrupar por</string>
+    <string name="dejavu_history_group_by_date">Data</string>
+    <string name="dejavu_history_group_by_workspace">Espazo de traballo</string>
+    <string name="dejavu_history_group_by_folder">Espazo de traballo e cartafol</string>
+    <string name="dejavu_history_other_pages">Outras páxinas</string>
+    <string name="dejavu_settings_tab_sleep">Lapelas durmidas</string>
+    <string name="dejavu_settings_tab_sleep_summary">As lapelas que non usas dormen para liberar memoria</string>
+    <string name="dejavu_tab_sleep_hint">Unha lapela durmida libera a súa memoria e volve cargar a súa páxina cando a abres. A lapela que estás a ver, a que está ao seu carón na vista dividida e as lapelas que reproducen son ou usan a cámara ou o micrófono seguen espertas. Cando Android precisa memoria mentres Dejavu está en segundo plano, todas as lapelas agás as dúas últimas que usaches pasan a durmir.</string>
+    <string name="dejavu_tab_sleep_when">Poñer unha lapela a durmir</string>
+    <plurals name="dejavu_tab_sleep_after_minutes">
+        <item quantity="one">Despois de %d minuto sen uso</item>
+        <item quantity="other">Despois de %d minutos sen uso</item>
+    </plurals>
+    <string name="dejavu_tab_sleep_after_hour">Despois dunha hora sen uso</string>
+    <string name="dejavu_tab_sleep_never">Nunca</string>
+    <string name="dejavu_startup_crash_body">Houbo un problema ao abrir %1$s. Volve abrilo para seguir navegando.</string>
     <string name="dejavu_sync_normal_tabs">Incluír as lapelas non fixadas</string>
     <string name="dejavu_sync_normal_tabs_summary">Tamén sincroniza as demais lapelas de cada espazo de traballo, non só as lapelas fixadas e os cartafoles. Zen sincronízaas cando a súa propia opción Incluír as lapelas non fixadas está activada.</string>
     <plurals name="dejavu_selection_count">

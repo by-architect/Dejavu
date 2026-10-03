@@ -47,6 +47,11 @@
     <string name="dejavu_folder_rename">Преименуј фасциклу</string>
     <string name="dejavu_folder_unpack">Распакуј фасциклу</string>
     <string name="dejavu_folder_top_level">Закачени језичци, без фасцикле</string>
+    <plurals name="dejavu_folder_open_tabs">
+        <item quantity="one">%1$d отворен језичак</item>
+        <item quantity="few">%1$d отворена језичка</item>
+        <item quantity="other">%1$d отворених језичака</item>
+    </plurals>
     <string name="dejavu_essentials_drop">Испусти овде за додавање у Фаворите</string>
     <string name="dejavu_essentials_full">Фаворити могу да садрже до %1$d језичака</string>
     <string name="dejavu_temporary_by_default">Привремени контејнери као подразумевано</string>
@@ -88,7 +93,19 @@
     <string name="dejavu_action_remove_from_essentials">Уклони из Фаворита</string>
     <string name="dejavu_action_delete">Обриши</string>
     <string name="dejavu_settings_title">Dejavu</string>
+    <string name="dejavu_about_content">%1$s је независан прегледач изграђен од отвореног кода за Firefox и GeckoView, који развија Mozilla. Mozilla га не прави, не одобрава и не подржава. Firefox је заштитни знак организације Mozilla Foundation у САД и другим земљама.</string>
+    <string name="dejavu_about_source_code">Изворни код</string>
     <string name="dejavu_settings_tab_actions">Радње језичака</string>
+    <string name="dejavu_settings_tab_actions_entry_summary">Једна листа радњи и где се свака приказује</string>
+    <string name="dejavu_settings_tab_actions_hint">Све радње су на једној листи, укључујући оне које сами додате. Изаберите где ће се свака приказивати: на закаченим језичцима, незакаченим језичцима и фасциклама, на траци која се појави када изаберете језичке, у менију „Више“ и на траци радњи испод страница. Радње на фасцикли делују на сваки језичак у њој.</string>
+    <string name="dejavu_settings_where_actions_show">Где се приказују радње</string>
+    <string name="dejavu_settings_folders">Фасцикле</string>
+    <string name="dejavu_settings_selection_bar">Трака избора</string>
+    <string name="dejavu_settings_folder_actions_hint">Изаберите до %1$d дугмади за редове фасцикли. Она делују на сваки језичак у фасцикли и њеним подфасциклама.</string>
+    <string name="dejavu_settings_action_places_none">Не приказује се нигде</string>
+    <string name="dejavu_settings_action_place_unavailable">Овде не ради</string>
+    <string name="dejavu_settings_action_place_full">Нема више места</string>
+    <string name="dejavu_done">Готово</string>
     <string name="dejavu_settings_pinned_tabs">Закачени језичци</string>
     <string name="dejavu_settings_unpinned_tabs">Незакачени језичци</string>
     <string name="dejavu_settings_all_actions">Све радње</string>
@@ -185,6 +202,9 @@
     <string name="dejavu_actions_bar_search">Претрага</string>
     <string name="dejavu_actions_bar_home">Почетна</string>
     <string name="dejavu_settings_more_menu_summary">Трака радњи испод страница и мени који она отвара</string>
+    <string name="dejavu_more_menu_hint">Превуците траку радњи нагоре или адресну траку надоле да отворите цео мени. Додирните дугме да га преместите или уклоните. Проширења увек заузимају цео ред.</string>
+    <string name="dejavu_actions_bar_hint">Дугмад испод страница. Делују на страницу на којој сте.</string>
+    <string name="dejavu_actions_bar_all_added">Сва дугмад су већ на траци.</string>
     <string name="dejavu_more_menu_row">Ред %1$d</string>
     <string name="dejavu_more_menu_add_item">Додај дугме</string>
     <string name="dejavu_more_menu_add_row">Додај ред</string>
@@ -223,6 +243,23 @@
     <string name="dejavu_container_work">Посао</string>
     <string name="dejavu_container_banking">Банкарство</string>
     <string name="dejavu_container_shopping">Куповина</string>
+    <string name="dejavu_history_group_by">Групиши по</string>
+    <string name="dejavu_history_group_by_date">Датум</string>
+    <string name="dejavu_history_group_by_workspace">Радни простор</string>
+    <string name="dejavu_history_group_by_folder">Радни простор и фасцикла</string>
+    <string name="dejavu_history_other_pages">Остале странице</string>
+    <string name="dejavu_settings_tab_sleep">Успавани језичци</string>
+    <string name="dejavu_settings_tab_sleep_summary">Језичци које не користите се успављују да ослободе меморију</string>
+    <string name="dejavu_tab_sleep_hint">Успавани језичак ослобађа своју меморију и поново учитава страницу када га отворите. Језичак који гледате, језичак поред њега у подељеном приказу и језичци који пуштају звук или користе камеру или микрофон остају будни. Када Android-у затреба меморије док је Dejavu у позадини, успављују се сви језичци осим последња два која сте користили.</string>
+    <string name="dejavu_tab_sleep_when">Успавај језичке</string>
+    <plurals name="dejavu_tab_sleep_after_minutes">
+        <item quantity="one">После %d минута без коришћења</item>
+        <item quantity="few">После %d минута без коришћења</item>
+        <item quantity="other">После %d минута без коришћења</item>
+    </plurals>
+    <string name="dejavu_tab_sleep_after_hour">После сат времена без коришћења</string>
+    <string name="dejavu_tab_sleep_never">Никад</string>
+    <string name="dejavu_startup_crash_body">Дошло је до проблема при отварању апликације %1$s. Поново је отворите да наставите прегледање.</string>
     <string name="dejavu_sync_normal_tabs">Укључи откачене језичке</string>
     <string name="dejavu_sync_normal_tabs_summary">Такође синхронизује остале језичке сваког радног простора, не само закачене језичке и фасцикле. Zen их синхронизује када је укључена његова сопствена опција Укључи откачене језичке.</string>
     <plurals name="dejavu_selection_count">

@@ -21,7 +21,10 @@ plugins {
 
 // The OSS-licenses plugin is only needed for shipping builds, so skip it during
 // `mach lint` (which always passes `-Pandroid-lint`) to avoid unnecessary overhead.
-if (gradle.mozconfig.substs.MOZILLA_OFFICIAL && !project.hasProperty('android-lint')) {
+// Dejavu: its builds are not MOZILLA_OFFICIAL, so its release builds apply the plugin too, or About would list no
+// libraries.
+def isDejavuReleaseBuild = gradle.startParameter.taskNames.any { it.toLowerCase().contains("release") }
+if ((gradle.mozconfig.substs.MOZILLA_OFFICIAL || isDejavuReleaseBuild) && !project.hasProperty('android-lint')) {
     apply plugin: 'com.google.android.gms.oss-licenses-plugin'
 }
 

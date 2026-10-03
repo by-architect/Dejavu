@@ -47,6 +47,10 @@
     <string name="dejavu_folder_rename">Beddel isem n ukaram</string>
     <string name="dejavu_folder_unpack">Serreḥ akaram</string>
     <string name="dejavu_folder_top_level">Iccaren yessersen, war akaram</string>
+    <plurals name="dejavu_folder_open_tabs">
+        <item quantity="one">%1$d n yiccer yeldin</item>
+        <item quantity="other">%1$d n yiccaren yeldin</item>
+    </plurals>
     <string name="dejavu_essentials_drop">Sers dagi akken ad ternuḍ ɣer wayen ilaqen</string>
     <string name="dejavu_essentials_full">Ayen ilaqen yezmer ad yeṭṭef ar %1$d iccaren</string>
     <string name="dejavu_temporary_by_default">Isenduqen iskudanen s wudem amezwer</string>
@@ -88,7 +92,19 @@
     <string name="dejavu_action_remove_from_essentials">Kkes seg wayen ilaqen</string>
     <string name="dejavu_action_delete">Kkes</string>
     <string name="dejavu_settings_title">Dejavu</string>
+    <string name="dejavu_about_content">%1$s d iminig ilelli yettwabnan seg tengalt n uɣbalu yeldin n Firefox d GeckoView n Mozilla. Ur yettwaxdem ara, ur yettwaqbel ara, ur yettwaɛiwen ara sɣur Mozilla. Firefox d tacreḍt yettwasejlen n Mozilla Foundation deg Marikan d tmura-nniḍen.</string>
+    <string name="dejavu_about_source_code">Tangalt taɣbalut</string>
     <string name="dejavu_settings_tab_actions">Tigawin n yiccer</string>
+    <string name="dejavu_settings_tab_actions_entry_summary">Yiwet n tebdart n tigawin, d wanda i d-tettban yal yiwet</string>
+    <string name="dejavu_settings_tab_actions_hint">Tigawin meṛṛa llant deg yiwet n tebdart, ula d tid i ternuḍ s yiman-ik. Fren anda i d-tettban yal yiwet: ɣef yiccaren yessersen, iccaren ur nesrusi ara d ikuramen, deg ufeggag n yiccaren yettwafernen, deg Umuɣ Ugar akked deg ufeggag n tigawin ddaw isebtar. Tigawin ɣef ukaram ttawḍent ɣer yal iccer yellan deg-s.</string>
+    <string name="dejavu_settings_where_actions_show">Anda i d-ttbanent tigawin</string>
+    <string name="dejavu_settings_folders">Ikuramen</string>
+    <string name="dejavu_settings_selection_bar">Afeggag n tefrant</string>
+    <string name="dejavu_settings_folder_actions_hint">Fren ar %1$d ibuṭunen i izirigen n yikuramen. Ad xedmen ɣef yal iccer deg ukaram akked yikuramen yellan deg-s.</string>
+    <string name="dejavu_settings_action_places_none">Ur d-tettban ula anda</string>
+    <string name="dejavu_settings_action_place_unavailable">Ur txeddem acemma dinna</string>
+    <string name="dejavu_settings_action_place_full">Ulac tallunt</string>
+    <string name="dejavu_done">Immed</string>
     <string name="dejavu_settings_pinned_tabs">Iccaren yessersen</string>
     <string name="dejavu_settings_unpinned_tabs">Iccaren ur nesrusi ara</string>
     <string name="dejavu_settings_all_actions">Tigawin meṛṛa</string>
@@ -185,6 +201,9 @@
     <string name="dejavu_actions_bar_search">Nadi</string>
     <string name="dejavu_actions_bar_home">Axxam</string>
     <string name="dejavu_settings_more_menu_summary">Afeggag n tigawin ddaw isebtar akked umuɣ i yeldi</string>
+    <string name="dejavu_more_menu_hint">Zuɣer afeggag n tigawin ɣer sennig, neɣ afeggag n tansiwin ɣer wadda, akken ad teldiḍ umuɣ meṛṛa. Sit ɣef ubuṭun akken a t-tsenkzeḍ neɣ a t-tekkseḍ. Isiɣzaf ṭṭfen yal tikkelt azirig meṛṛa.</string>
+    <string name="dejavu_actions_bar_hint">Ibuṭunen ddaw isebtar. Xeddmen ɣef usebter i deg telliḍ.</string>
+    <string name="dejavu_actions_bar_all_added">Ibuṭunen meṛṛa llan yakan deg ufeggag.</string>
     <string name="dejavu_more_menu_row">Azirig %1$d</string>
     <string name="dejavu_more_menu_add_item">Rnu abuṭun</string>
     <string name="dejavu_more_menu_add_row">Rnu azirig</string>
@@ -223,6 +242,22 @@
     <string name="dejavu_container_work">Amahil</string>
     <string name="dejavu_container_banking">Tabanka</string>
     <string name="dejavu_container_shopping">Asaɣ</string>
+    <string name="dejavu_history_group_by">Segrew s</string>
+    <string name="dejavu_history_group_by_date">Azemz</string>
+    <string name="dejavu_history_group_by_workspace">Amkan n umahil</string>
+    <string name="dejavu_history_group_by_folder">Amkan n umahil d ukaram</string>
+    <string name="dejavu_history_other_pages">Isebtar-nniḍen</string>
+    <string name="dejavu_settings_tab_sleep">Iccaren yeṭṭsen</string>
+    <string name="dejavu_settings_tab_sleep_summary">Iccaren ur tesseqdaceḍ ara ṭṭsen akken ad serrḥen takatut</string>
+    <string name="dejavu_tab_sleep_hint">Iccer yeṭṭsen yesserraḥ takatut-is, syin yessali-d asebter-is tikkelt-nniḍen mi ara t-teldiḍ. Iccer i tettwaliḍ, win i s-d-yezgan deg tmuɣli tabḍant, akked yiccaren i d-yessuffuɣen ameslaw neɣ i yesseqdacen takamiṛat neɣ asawaḍ ur ṭṭsen ara. Ma yesra Android takatut mi ara yili Dejavu deg ugilal, iccaren meṛṛa ad ṭṭsen, ala sin i tesseqdceḍ taneggarut.</string>
+    <string name="dejavu_tab_sleep_when">Sṭṭes iccer</string>
+    <plurals name="dejavu_tab_sleep_after_minutes">
+        <item quantity="one">Seld %d n tesdat war aseqdec</item>
+        <item quantity="other">Seld %d n tesdatin war aseqdec</item>
+    </plurals>
+    <string name="dejavu_tab_sleep_after_hour">Seld yiwet n tsaɛet war aseqdec</string>
+    <string name="dejavu_tab_sleep_never">Werǧin</string>
+    <string name="dejavu_startup_crash_body">Yella-d ugur deg ulday n %1$s. Ales alday-is akken ad tkemmleḍ tunigin.</string>
     <string name="dejavu_sync_normal_tabs">Seddu iccaren ur yessersen ara</string>
     <string name="dejavu_sync_normal_tabs_summary">Yesdukkul daɣen iccaren-nniḍen n mkul amukan n umahil, mačči kan iccaren yessersen d ikuramen. Zen yesdukkul-iten m\'ara tili tuffɣa-ines Seddu iccaren ur yessersen ara turmed.</string>
     <plurals name="dejavu_selection_count">

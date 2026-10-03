@@ -47,6 +47,10 @@
     <string name="dejavu_folder_rename">Mappa átnevezése</string>
     <string name="dejavu_folder_unpack">Mappa kibontása</string>
     <string name="dejavu_folder_top_level">Kitűzött lapok, mappa nélkül</string>
+    <plurals name="dejavu_folder_open_tabs">
+        <item quantity="one">%1$d nyitott lap</item>
+        <item quantity="other">%1$d nyitott lap</item>
+    </plurals>
     <string name="dejavu_essentials_drop">Ejtse ide a kedvencekhez adáshoz</string>
     <string name="dejavu_essentials_full">A kedvencek legfeljebb %1$d lapot tartalmazhatnak</string>
     <string name="dejavu_temporary_by_default">Ideiglenes konténerek alapértelmezés szerint</string>
@@ -88,7 +92,19 @@
     <string name="dejavu_action_remove_from_essentials">Eltávolítás a kedvencekből</string>
     <string name="dejavu_action_delete">Törlés</string>
     <string name="dejavu_settings_title">Dejavu</string>
+    <string name="dejavu_about_content">A %1$s egy független böngésző, amely a Mozilla nyílt forráskódú Firefox- és GeckoView-kódjából készült. A Mozilla nem készíti, nem hagyja jóvá és nem támogatja. A Firefox a Mozilla Foundation védjegye az Egyesült Államokban és más országokban.</string>
+    <string name="dejavu_about_source_code">Forráskód</string>
     <string name="dejavu_settings_tab_actions">Lapműveletek</string>
+    <string name="dejavu_settings_tab_actions_entry_summary">Az összes művelet egy listában, és hogy melyik hol jelenik meg</string>
+    <string name="dejavu_settings_tab_actions_hint">Minden művelet egy listában van, az Ön által hozzáadottak is. Válassza ki, hogy melyik hol jelenjen meg: a kitűzött lapokon, a nem kitűzött lapokon és a mappákon, a kijelölt lapok sávjában, a Továbbiak menüben és az oldalak alatti műveletsávban. Egy mappán végzett művelet a benne lévő összes lapra hat.</string>
+    <string name="dejavu_settings_where_actions_show">Hol jelennek meg a műveletek</string>
+    <string name="dejavu_settings_folders">Mappák</string>
+    <string name="dejavu_settings_selection_bar">Kijelölési sáv</string>
+    <string name="dejavu_settings_folder_actions_hint">Válasszon legfeljebb %1$d gombot a mappák soraihoz. Ezek a mappában és almappáiban lévő összes lapra hatnak.</string>
+    <string name="dejavu_settings_action_places_none">Sehol sem jelenik meg</string>
+    <string name="dejavu_settings_action_place_unavailable">Ott nincs hatása</string>
+    <string name="dejavu_settings_action_place_full">Nincs több hely</string>
+    <string name="dejavu_done">Kész</string>
     <string name="dejavu_settings_pinned_tabs">Kitűzött lapok</string>
     <string name="dejavu_settings_unpinned_tabs">Nem kitűzött lapok</string>
     <string name="dejavu_settings_all_actions">Összes művelet</string>
@@ -185,6 +201,9 @@
     <string name="dejavu_actions_bar_search">Keresés</string>
     <string name="dejavu_actions_bar_home">Kezdőlap</string>
     <string name="dejavu_settings_more_menu_summary">Az oldalak alatti műveletsáv és az általa megnyitott menü</string>
+    <string name="dejavu_more_menu_hint">Az egész menü megnyitásához húzza felfelé a műveletsávot, vagy lefelé a címsávot. Egy gomb áthelyezéséhez vagy eltávolításához koppintson rá. A kiegészítők mindig egy teljes sort foglalnak el.</string>
+    <string name="dejavu_actions_bar_hint">Az oldalak alatti gombok. Arra az oldalra hatnak, amelyen éppen van.</string>
+    <string name="dejavu_actions_bar_all_added">Minden gomb már a sávban van.</string>
     <string name="dejavu_more_menu_row">%1$d. sor</string>
     <string name="dejavu_more_menu_add_item">Gomb hozzáadása</string>
     <string name="dejavu_more_menu_add_row">Sor hozzáadása</string>
@@ -223,6 +242,22 @@
     <string name="dejavu_container_work">Munka</string>
     <string name="dejavu_container_banking">Bank</string>
     <string name="dejavu_container_shopping">Vásárlás</string>
+    <string name="dejavu_history_group_by">Csoportosítás</string>
+    <string name="dejavu_history_group_by_date">Dátum</string>
+    <string name="dejavu_history_group_by_workspace">Munkaterület</string>
+    <string name="dejavu_history_group_by_folder">Munkaterület és mappa</string>
+    <string name="dejavu_history_other_pages">Egyéb oldalak</string>
+    <string name="dejavu_settings_tab_sleep">Alvó lapok</string>
+    <string name="dejavu_settings_tab_sleep_summary">A nem használt lapok elalszanak, hogy memóriát szabadítsanak fel</string>
+    <string name="dejavu_tab_sleep_hint">Az alvó lap felszabadítja a memóriáját, és újratölti az oldalát, amikor megnyitja. Az éppen nézett lap, a mellette lévő lap osztott nézetben, valamint a hangot lejátszó, illetve a kamerát vagy a mikrofont használó lapok ébren maradnak. Ha az Androidnak memóriára van szüksége, miközben a Dejavu a háttérben van, a két utoljára használt lap kivételével minden lap elalszik.</string>
+    <string name="dejavu_tab_sleep_when">Lap elaltatása</string>
+    <plurals name="dejavu_tab_sleep_after_minutes">
+        <item quantity="one">%d perc tétlenség után</item>
+        <item quantity="other">%d perc tétlenség után</item>
+    </plurals>
+    <string name="dejavu_tab_sleep_after_hour">Egy óra tétlenség után</string>
+    <string name="dejavu_tab_sleep_never">Soha</string>
+    <string name="dejavu_startup_crash_body">Hiba történt a %1$s megnyitásakor. Nyissa meg újra az alkalmazást a böngészés folytatásához.</string>
     <string name="dejavu_sync_normal_tabs">Nem kitűzött lapok belefoglalása</string>
     <string name="dejavu_sync_normal_tabs_summary">Emellett szinkronizálja az egyes munkaterületek további lapjait is, nem csak a kitűzött lapokat és a mappákat. A Zen akkor szinkronizálja ezeket, ha be van kapcsolva a saját Nem kitűzött lapok belefoglalása beállítása.</string>
     <plurals name="dejavu_selection_count">

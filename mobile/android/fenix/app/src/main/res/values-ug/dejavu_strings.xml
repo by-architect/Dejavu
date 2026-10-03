@@ -47,6 +47,10 @@
     <string name="dejavu_folder_rename">قىسقۇچ ئىسمىنى ئۆزگەرت</string>
     <string name="dejavu_folder_unpack">قىسقۇچنى تارقات</string>
     <string name="dejavu_folder_top_level">مىخلانغان بەتكۈچلەر، قىسقۇچسىز</string>
+    <plurals name="dejavu_folder_open_tabs">
+        <item quantity="one">%1$d ئوچۇق بەتكۈچ</item>
+        <item quantity="other">%1$d ئوچۇق بەتكۈچ</item>
+    </plurals>
     <string name="dejavu_essentials_drop">مۇھىملارغا قوشۇش ئۈچۈن بۇ يەرگە تاشلاڭ</string>
     <string name="dejavu_essentials_full">مۇھىملار ئەڭ كۆپ بولغاندا %1$d بەتكۈچ سىغدۇرالايدۇ</string>
     <string name="dejavu_temporary_by_default">كۆڭۈلدىكى بويىچە ۋاقىتلىق قاچىلار</string>
@@ -88,7 +92,19 @@
     <string name="dejavu_action_remove_from_essentials">مۇھىملاردىن چىقار</string>
     <string name="dejavu_action_delete">ئۆچۈر</string>
     <string name="dejavu_settings_title">Dejavu</string>
+    <string name="dejavu_about_content">%1$s بولسا Mozilla نىڭ ئوچۇق مەنبەلىك Firefox ۋە GeckoView كودىدىن ياسالغان مۇستەقىل توركۆرگۈ. ئۇ Mozilla تەرىپىدىن ياسالمىغان، Mozilla ئۇنى تەستىقلىمايدۇ ۋە قوللىمايدۇ. Firefox بولسا Mozilla فوندىنىڭ ئامېرىكا قوشما شتاتلىرى ۋە باشقا دۆلەتلەردىكى سودا ماركىسى.</string>
+    <string name="dejavu_about_source_code">مەنبە كودى</string>
     <string name="dejavu_settings_tab_actions">بەتكۈچ مەشغۇلاتلىرى</string>
+    <string name="dejavu_settings_tab_actions_entry_summary">مەشغۇلاتلارنىڭ بىرلا تىزىمى ۋە ھەر بىرىنىڭ كۆرۈنىدىغان ئورنى</string>
+    <string name="dejavu_settings_tab_actions_hint">بارلىق مەشغۇلاتلار، ئۆزىڭىز قوشقانلىرىمۇ بىر تىزىمدا. ھەر بىرىنىڭ قەيەردە كۆرۈنىدىغانلىقىنى تاللاڭ: مىخلانغان بەتكۈچلەر، مىخلانمىغان بەتكۈچلەر ۋە قىسقۇچلاردا، تاللانغان بەتكۈچلەر بالدىقىدا، «تېخىمۇ كۆپ» تىزىملىكىدە ۋە بەتلەرنىڭ ئاستىدىكى مەشغۇلات بالدىقىدا. قىسقۇچقا قىلىنغان مەشغۇلاتلار ئۇنىڭ ئىچىدىكى ھەممە بەتكۈچكە تەسىر قىلىدۇ.</string>
+    <string name="dejavu_settings_where_actions_show">مەشغۇلاتلار كۆرۈنىدىغان ئورۇن</string>
+    <string name="dejavu_settings_folders">قىسقۇچلار</string>
+    <string name="dejavu_settings_selection_bar">تاللاش بالدىقى</string>
+    <string name="dejavu_settings_folder_actions_hint">قىسقۇچ قاتارلىرى ئۈچۈن ئەڭ كۆپ بولغاندا %1$d توپچا تاللاڭ. ئۇلار قىسقۇچ ۋە ئۇنىڭ تارماق قىسقۇچلىرى ئىچىدىكى ھەممە بەتكۈچكە تەسىر قىلىدۇ.</string>
+    <string name="dejavu_settings_action_places_none">ھېچيەردە كۆرسىتىلمەيدۇ</string>
+    <string name="dejavu_settings_action_place_unavailable">ئۇ يەردە ھېچ ئىش قىلمايدۇ</string>
+    <string name="dejavu_settings_action_place_full">بوش ئورۇن قالمىدى</string>
+    <string name="dejavu_done">تامام</string>
     <string name="dejavu_settings_pinned_tabs">مىخلانغان بەتكۈچلەر</string>
     <string name="dejavu_settings_unpinned_tabs">مىخلانمىغان بەتكۈچلەر</string>
     <string name="dejavu_settings_all_actions">ھەممە مەشغۇلاتلار</string>
@@ -185,6 +201,9 @@
     <string name="dejavu_actions_bar_search">ئىزدە</string>
     <string name="dejavu_actions_bar_home">باش بەت</string>
     <string name="dejavu_settings_more_menu_summary">بەتلەرنىڭ ئاستىدىكى مەشغۇلات بالدىقى ۋە ئۇ ئاچىدىغان تىزىملىك</string>
+    <string name="dejavu_more_menu_hint">پۈتۈن تىزىملىكنى ئېچىش ئۈچۈن مەشغۇلات بالدىقىنى ئۈستىگە ياكى ئادرېس بالدىقىنى ئاستىغا سۈرۈڭ. توپچىنى يۆتكەش ياكى چىقىرىۋېتىش ئۈچۈن ئۇنى چېكىڭ. كېڭەيتمىلەر ھەمىشە پۈتۈن بىر قاتارنى ئىگىلەيدۇ.</string>
+    <string name="dejavu_actions_bar_hint">بەتلەرنىڭ ئاستىدىكى توپچىلار. ئۇلار سىز تۇرغان بەتكە تەسىر قىلىدۇ.</string>
+    <string name="dejavu_actions_bar_all_added">ھەممە توپچا ئاللىقاچان بالداقتا.</string>
     <string name="dejavu_more_menu_row">%1$d-قاتار</string>
     <string name="dejavu_more_menu_add_item">توپچا قوش</string>
     <string name="dejavu_more_menu_add_row">قاتار قوش</string>
@@ -223,6 +242,22 @@
     <string name="dejavu_container_work">خىزمەت</string>
     <string name="dejavu_container_banking">بانكا</string>
     <string name="dejavu_container_shopping">سودا</string>
+    <string name="dejavu_history_group_by">گۇرۇپپىلاش ئۇسۇلى</string>
+    <string name="dejavu_history_group_by_date">چېسلا</string>
+    <string name="dejavu_history_group_by_workspace">خىزمەت دائىرىسى</string>
+    <string name="dejavu_history_group_by_folder">خىزمەت دائىرىسى ۋە قىسقۇچ</string>
+    <string name="dejavu_history_other_pages">باشقا بەتلەر</string>
+    <string name="dejavu_settings_tab_sleep">ئۇخلاۋاتقان بەتكۈچلەر</string>
+    <string name="dejavu_settings_tab_sleep_summary">ئىشلەتمەيۋاتقان بەتكۈچلىرىڭىز ئىچكى ساقلىغۇچنى بوشىتىش ئۈچۈن ئۇخلايدۇ</string>
+    <string name="dejavu_tab_sleep_hint">ئۇخلاۋاتقان بەتكۈچ ئىچكى ساقلىغۇچىنى بوشىتىدۇ، ئۇنى ئاچقىنىڭىزدا بېتىنى قايتا يۈكلەيدۇ. سىز كۆرۈۋاتقان بەتكۈچ، بۆلۈنگەن كۆرۈنۈشتە ئۇنىڭ يېنىدىكى بەتكۈچ ۋە ئاۋاز چىقىرىۋاتقان ياكى كامېرا ياكى مىكروفون ئىشلىتىۋاتقان بەتكۈچلەر ئويغاق تۇرىدۇ. Dejavu ئارقا سۇپىدا تۇرغاندا Android غا ئىچكى ساقلىغۇچ كېرەك بولسا، سىز ئەڭ ئاخىرىدا ئىشلەتكەن ئىككى بەتكۈچتىن باشقا ھەممە بەتكۈچ ئۇخلايدۇ.</string>
+    <string name="dejavu_tab_sleep_when">بەتكۈچنى ئۇخلىتىش</string>
+    <plurals name="dejavu_tab_sleep_after_minutes">
+        <item quantity="one">%d مىنۇت ئىشلىتىلمىگەندىن كېيىن</item>
+        <item quantity="other">%d مىنۇت ئىشلىتىلمىگەندىن كېيىن</item>
+    </plurals>
+    <string name="dejavu_tab_sleep_after_hour">بىر سائەت ئىشلىتىلمىگەندىن كېيىن</string>
+    <string name="dejavu_tab_sleep_never">ھەرگىز</string>
+    <string name="dejavu_startup_crash_body">%1$s نى ئېچىۋاتقاندا مەسىلە كۆرۈلدى. توركۆرۈشنى داۋاملاشتۇرۇش ئۈچۈن ئۇنى قايتا ئېچىڭ.</string>
     <string name="dejavu_sync_normal_tabs">مىخلانمىغان بەتكۈچلەرنى ئۆز ئىچىگە ئال</string>
     <string name="dejavu_sync_normal_tabs_summary">شۇنىڭ بىلەن بىر ۋاقىتتا ھەر بىر خىزمەت دائىرىسىنىڭ باشقا بەتكۈچلىرىنىمۇ قەدەمداشلايدۇ، يالغۇز مىخلانغان بەتكۈچلەر ۋە قىسقۇچلارلا ئەمەس. ئۆزىنىڭ مىخلانمىغان بەتكۈچلەرنى ئۆز ئىچىگە ئال تاللانمىسى ئوچۇق بولسا، Zen ئۇلارنى قەدەمداشلايدۇ.</string>
     <plurals name="dejavu_selection_count">

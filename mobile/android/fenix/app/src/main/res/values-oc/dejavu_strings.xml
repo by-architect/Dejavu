@@ -47,6 +47,10 @@
     <string name="dejavu_folder_rename">Renomenar lo dossièr</string>
     <string name="dejavu_folder_unpack">Desempaquetar lo dossièr</string>
     <string name="dejavu_folder_top_level">Onglets fixats, sens dossièr</string>
+    <plurals name="dejavu_folder_open_tabs">
+        <item quantity="one">%1$d onglet dobèrt</item>
+        <item quantity="other">%1$d onglets dobèrts</item>
+    </plurals>
     <string name="dejavu_essentials_drop">Depausatz aicí per apondre als essencials</string>
     <string name="dejavu_essentials_full">Los essencials pòdon conténer fins a %1$d onglets</string>
     <string name="dejavu_temporary_by_default">Contenidors temporaris per defaut</string>
@@ -88,7 +92,19 @@
     <string name="dejavu_action_remove_from_essentials">Levar dels essencials</string>
     <string name="dejavu_action_delete">Suprimir</string>
     <string name="dejavu_settings_title">Dejavu</string>
+    <string name="dejavu_about_content">%1$s es un navegador independent creat a partir del còdi dobèrt de Firefox e GeckoView de Mozilla. Es pas ni fach, ni aprovat, ni sostengut per Mozilla. Firefox es una marca de la Mozilla Foundation als Estats Units e dins d’autres païses.</string>
+    <string name="dejavu_about_source_code">Còdi font</string>
     <string name="dejavu_settings_tab_actions">Accions dels onglets</string>
+    <string name="dejavu_settings_tab_actions_entry_summary">Una sola lista d’accions, e ont s’aficha caduna</string>
+    <string name="dejavu_settings_tab_actions_hint">Totas las accions son dins una sola lista, compresas las qu’apondètz vos. Causissètz ont s’aficha caduna : suls onglets fixats, los onglets non fixats e los dossièrs, dins la barra dels onglets seleccionats, dins lo menú Mai e dins la barra d’accions jos las paginas. Las accions sus un dossièr s’aplican a totes los onglets que conten.</string>
+    <string name="dejavu_settings_where_actions_show">Ont s’afichan las accions</string>
+    <string name="dejavu_settings_folders">Dossièrs</string>
+    <string name="dejavu_settings_selection_bar">Barra de seleccion</string>
+    <string name="dejavu_settings_folder_actions_hint">Causissètz fins a %1$d botons per las filas de dossièrs. Agisson sus totes los onglets del dossièr e de sos josdossièrs.</string>
+    <string name="dejavu_settings_action_places_none">S’aficha pas enlòc</string>
+    <string name="dejavu_settings_action_place_unavailable">Aicí fa pas res</string>
+    <string name="dejavu_settings_action_place_full">I a pas mai de plaça</string>
+    <string name="dejavu_done">Acabat</string>
     <string name="dejavu_settings_pinned_tabs">Onglets fixats</string>
     <string name="dejavu_settings_unpinned_tabs">Onglets non fixats</string>
     <string name="dejavu_settings_all_actions">Totas las accions</string>
@@ -185,6 +201,9 @@
     <string name="dejavu_actions_bar_search">Recercar</string>
     <string name="dejavu_actions_bar_home">Acuèlh</string>
     <string name="dejavu_settings_more_menu_summary">La barra d’accions jos las paginas e lo menú que dobrís</string>
+    <string name="dejavu_more_menu_hint">Fasètz lisar la barra d’accions cap amont, o la barra d’adreça cap aval, per dobrir lo menú complet. Tocatz un boton per lo desplaçar o lo levar. Las extensions ocupan totjorn una fila entièra.</string>
+    <string name="dejavu_actions_bar_hint">Los botons jos las paginas. Agisson sus la pagina ont sètz.</string>
+    <string name="dejavu_actions_bar_all_added">Totes los botons son ja dins la barra.</string>
     <string name="dejavu_more_menu_row">Fila %1$d</string>
     <string name="dejavu_more_menu_add_item">Apondre un boton</string>
     <string name="dejavu_more_menu_add_row">Apondre una fila</string>
@@ -223,6 +242,22 @@
     <string name="dejavu_container_work">Trabalh</string>
     <string name="dejavu_container_banking">Banca</string>
     <string name="dejavu_container_shopping">Crompas</string>
+    <string name="dejavu_history_group_by">Agropar per</string>
+    <string name="dejavu_history_group_by_date">Data</string>
+    <string name="dejavu_history_group_by_workspace">Espaci de trabalh</string>
+    <string name="dejavu_history_group_by_folder">Espaci de trabalh e dossièr</string>
+    <string name="dejavu_history_other_pages">Autras paginas</string>
+    <string name="dejavu_settings_tab_sleep">Onglets en velha</string>
+    <string name="dejavu_settings_tab_sleep_summary">Los onglets qu’utilizatz pas son meses en velha per liberar de memòria</string>
+    <string name="dejavu_tab_sleep_hint">Un onglet en velha libèra sa memòria e torna cargar sa pagina quand lo dobrissètz. L’onglet que gaitatz, lo que se tròba al costat en vista dividida e los onglets que difusan de son o qu’utilizan la camèra o lo microfòn demòran actius. Quand Android a besonh de memòria mentre que Dejavu es en rèireplan, totes los onglets levat los dos darrièrs qu’avètz utilizats son meses en velha.</string>
+    <string name="dejavu_tab_sleep_when">Metre un onglet en velha</string>
+    <plurals name="dejavu_tab_sleep_after_minutes">
+        <item quantity="one">Aprèp %d minuta sens utilizacion</item>
+        <item quantity="other">Aprèp %d minutas sens utilizacion</item>
+    </plurals>
+    <string name="dejavu_tab_sleep_after_hour">Aprèp una ora sens utilizacion</string>
+    <string name="dejavu_tab_sleep_never">Pas jamai</string>
+    <string name="dejavu_startup_crash_body">Un problèma s’es produch en dobrir %1$s. Tornatz-lo dobrir per contunhar de navegar.</string>
     <string name="dejavu_sync_normal_tabs">Inclure los onglets pas fixats</string>
     <string name="dejavu_sync_normal_tabs_summary">Sincroniza tanben los autres onglets de cada espaci de trabalh, non pas sonque los onglets fixats e los dossièrs. Zen los sincroniza quand son pròpri paramètre Inclure los onglets pas fixats es activat.</string>
     <plurals name="dejavu_selection_count">

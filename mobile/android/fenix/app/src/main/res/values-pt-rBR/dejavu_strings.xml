@@ -47,6 +47,11 @@
     <string name="dejavu_folder_rename">Renomear pasta</string>
     <string name="dejavu_folder_unpack">Dissolver pasta</string>
     <string name="dejavu_folder_top_level">Abas fixadas, sem pasta</string>
+    <plurals name="dejavu_folder_open_tabs">
+        <item quantity="one">%1$d aba aberta</item>
+        <item quantity="many">%1$d abas abertas</item>
+        <item quantity="other">%1$d abas abertas</item>
+    </plurals>
     <string name="dejavu_essentials_drop">Solte aqui para adicionar aos essenciais</string>
     <string name="dejavu_essentials_full">Em Essenciais cabem até %1$d abas</string>
     <string name="dejavu_temporary_by_default">Contêineres temporários por padrão</string>
@@ -88,7 +93,19 @@
     <string name="dejavu_action_remove_from_essentials">Remover dos essenciais</string>
     <string name="dejavu_action_delete">Excluir</string>
     <string name="dejavu_settings_title">Dejavu</string>
+    <string name="dejavu_about_content">O %1$s é um navegador independente criado a partir do código aberto do Firefox e do GeckoView da Mozilla. Ele não é feito, endossado nem apoiado pela Mozilla. O Firefox é uma marca comercial da Mozilla Foundation nos EUA e em outros países.</string>
+    <string name="dejavu_about_source_code">Código-fonte</string>
     <string name="dejavu_settings_tab_actions">Ações de abas</string>
+    <string name="dejavu_settings_tab_actions_entry_summary">Uma única lista de ações e onde cada uma aparece</string>
+    <string name="dejavu_settings_tab_actions_hint">Todas as ações ficam em uma única lista, inclusive as que você mesmo adiciona. Escolha onde cada uma aparece: nas abas fixadas, nas abas não fixadas e nas pastas, na barra das abas selecionadas, no menu Mais e na barra de ações abaixo das páginas. As ações em uma pasta chegam a todas as abas dentro dela.</string>
+    <string name="dejavu_settings_where_actions_show">Onde as ações aparecem</string>
+    <string name="dejavu_settings_folders">Pastas</string>
+    <string name="dejavu_settings_selection_bar">Barra de seleção</string>
+    <string name="dejavu_settings_folder_actions_hint">Escolha até %1$d botões para as linhas de pastas. Eles atuam em todas as abas dentro da pasta e das subpastas dela.</string>
+    <string name="dejavu_settings_action_places_none">Não aparece em lugar nenhum</string>
+    <string name="dejavu_settings_action_place_unavailable">Não faz nada aqui</string>
+    <string name="dejavu_settings_action_place_full">Sem espaço</string>
+    <string name="dejavu_done">Concluído</string>
     <string name="dejavu_settings_pinned_tabs">Abas fixadas</string>
     <string name="dejavu_settings_unpinned_tabs">Abas não fixadas</string>
     <string name="dejavu_settings_all_actions">Todas as ações</string>
@@ -185,6 +202,9 @@
     <string name="dejavu_actions_bar_search">Pesquisar</string>
     <string name="dejavu_actions_bar_home">Início</string>
     <string name="dejavu_settings_more_menu_summary">A barra de ações abaixo das páginas e o menu que ela abre</string>
+    <string name="dejavu_more_menu_hint">Deslize a barra de ações para cima, ou a barra de endereços para baixo, para abrir o menu completo. Toque em um botão para movê-lo ou removê-lo. As extensões sempre ocupam uma linha inteira.</string>
+    <string name="dejavu_actions_bar_hint">Os botões abaixo das páginas. Eles atuam na página em que você está.</string>
+    <string name="dejavu_actions_bar_all_added">Todos os botões já estão na barra.</string>
     <string name="dejavu_more_menu_row">Linha %1$d</string>
     <string name="dejavu_more_menu_add_item">Adicionar um botão</string>
     <string name="dejavu_more_menu_add_row">Adicionar uma linha</string>
@@ -223,6 +243,23 @@
     <string name="dejavu_container_work">Trabalho</string>
     <string name="dejavu_container_banking">Banco</string>
     <string name="dejavu_container_shopping">Compras</string>
+    <string name="dejavu_history_group_by">Agrupar por</string>
+    <string name="dejavu_history_group_by_date">Data</string>
+    <string name="dejavu_history_group_by_workspace">Espaço de trabalho</string>
+    <string name="dejavu_history_group_by_folder">Espaço de trabalho e pasta</string>
+    <string name="dejavu_history_other_pages">Outras páginas</string>
+    <string name="dejavu_settings_tab_sleep">Abas hibernadas</string>
+    <string name="dejavu_settings_tab_sleep_summary">As abas que você não está usando hibernam para liberar memória</string>
+    <string name="dejavu_tab_sleep_hint">Uma aba hibernada libera a memória dela e carrega a página de novo quando você a abre. A aba que você está vendo, a que está ao lado dela na visualização dividida e as abas que estão tocando som ou usando a câmera ou o microfone continuam ativas. Quando o Android precisa de memória enquanto o Dejavu está em segundo plano, todas as abas hibernam, exceto as duas últimas que você usou.</string>
+    <string name="dejavu_tab_sleep_when">Hibernar uma aba</string>
+    <plurals name="dejavu_tab_sleep_after_minutes">
+        <item quantity="one">Após %d minuto sem uso</item>
+        <item quantity="many">Após %d minutos sem uso</item>
+        <item quantity="other">Após %d minutos sem uso</item>
+    </plurals>
+    <string name="dejavu_tab_sleep_after_hour">Após uma hora sem uso</string>
+    <string name="dejavu_tab_sleep_never">Nunca</string>
+    <string name="dejavu_startup_crash_body">Houve um problema ao abrir o %1$s. Abra-o novamente para continuar navegando.</string>
     <string name="dejavu_sync_normal_tabs">Incluir as abas não fixadas</string>
     <string name="dejavu_sync_normal_tabs_summary">Também sincroniza as outras abas de cada espaço de trabalho, não apenas as abas fixadas e as pastas. O Zen as sincroniza quando a própria opção Incluir as abas não fixadas está ativada.</string>
     <plurals name="dejavu_selection_count">

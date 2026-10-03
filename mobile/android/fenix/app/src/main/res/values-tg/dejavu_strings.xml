@@ -47,6 +47,10 @@
     <string name="dejavu_folder_rename">Иваз кардани номи ҷузвдон</string>
     <string name="dejavu_folder_unpack">Пароканда кардани ҷузвдон</string>
     <string name="dejavu_folder_top_level">Варақаҳои часпонидашуда, бе ҷузвдон</string>
+    <plurals name="dejavu_folder_open_tabs">
+        <item quantity="one">%1$d варақаи кушода</item>
+        <item quantity="other">%1$d варақаи кушода</item>
+    </plurals>
     <string name="dejavu_essentials_drop">Барои илова кардан ба сомонаҳои муҳим ин ҷо гузоред</string>
     <string name="dejavu_essentials_full">Дар сомонаҳои муҳим то %1$d варақа ҷой мегирад</string>
     <string name="dejavu_temporary_by_default">Контейнерҳои муваққатӣ ба таври пешфарз</string>
@@ -88,7 +92,19 @@
     <string name="dejavu_action_remove_from_essentials">Хориҷ кардан аз сомонаҳои муҳим</string>
     <string name="dejavu_action_delete">Нест кардан</string>
     <string name="dejavu_settings_title">Dejavu</string>
+    <string name="dejavu_about_content">%1$s браузери мустақилест, ки аз коди манбаи кушодаи Mozilla барои Firefox ва GeckoView сохта шудааст. Он аз ҷониби Mozilla таҳия, тасдиқ ё дастгирӣ карда намешавад. Firefox тамғаи тиҷоратии Mozilla Foundation дар ИМА ва дигар кишварҳо мебошад.</string>
+    <string name="dejavu_about_source_code">Коди манбаъ</string>
     <string name="dejavu_settings_tab_actions">Амалҳои варақа</string>
+    <string name="dejavu_settings_tab_actions_entry_summary">Як рӯйхати амалҳо ва ҷое, ки ҳар кадоми онҳо нишон дода мешавад</string>
+    <string name="dejavu_settings_tab_actions_hint">Ҳамаи амалҳо, аз ҷумла амалҳое, ки худатон илова мекунед, дар як рӯйхат ҳастанд. Интихоб кунед, ки ҳар кадоми онҳо дар куҷо нишон дода шавад: дар варақаҳои часпонидашуда, варақаҳои начаспонидашуда ва ҷузвдонҳо, дар наворе, ки ҳангоми интихоби варақаҳо пайдо мешавад, дар менюи иловагӣ ва дар навори амалҳо дар зери саҳифаҳо. Амалҳо дар ҷузвдон ба ҳар варақаи дохили он татбиқ мешаванд.</string>
+    <string name="dejavu_settings_where_actions_show">Ҷойҳое, ки амалҳо нишон дода мешаванд</string>
+    <string name="dejavu_settings_folders">Ҷузвдонҳо</string>
+    <string name="dejavu_settings_selection_bar">Навори интихоб</string>
+    <string name="dejavu_settings_folder_actions_hint">То %1$d тугма барои сатрҳои ҷузвдонҳо интихоб кунед. Онҳо ба ҳар варақаи дохили ҷузвдон ва зерҷузвдонҳои он татбиқ мешаванд.</string>
+    <string name="dejavu_settings_action_places_none">Дар ҳеҷ ҷо нишон дода намешавад</string>
+    <string name="dejavu_settings_action_place_unavailable">Дар ин ҷо кор намекунад</string>
+    <string name="dejavu_settings_action_place_full">Ҷой намондааст</string>
+    <string name="dejavu_done">Тайёр</string>
     <string name="dejavu_settings_pinned_tabs">Варақаҳои часпонидашуда</string>
     <string name="dejavu_settings_unpinned_tabs">Варақаҳои начаспонидашуда</string>
     <string name="dejavu_settings_all_actions">Ҳамаи амалҳо</string>
@@ -185,6 +201,9 @@
     <string name="dejavu_actions_bar_search">Ҷустуҷӯ</string>
     <string name="dejavu_actions_bar_home">Асосӣ</string>
     <string name="dejavu_settings_more_menu_summary">Навори амалҳо дар зери саҳифаҳо ва менюе, ки он мекушояд</string>
+    <string name="dejavu_more_menu_hint">Барои кушодани тамоми меню навори амалҳоро ба боло ё навори нишониро ба поён кашед. Барои гузарондан ё хориҷ кардани тугма ба он зер кунед. Васеъшавиҳо ҳамеша як сатри пурраро ишғол мекунанд.</string>
+    <string name="dejavu_actions_bar_hint">Тугмаҳо дар зери саҳифаҳо. Онҳо ба саҳифае, ки шумо дар он ҳастед, татбиқ мешаванд.</string>
+    <string name="dejavu_actions_bar_all_added">Ҳамаи тугмаҳо аллакай дар навор ҳастанд.</string>
     <string name="dejavu_more_menu_row">Сатри %1$d</string>
     <string name="dejavu_more_menu_add_item">Илова кардани тугма</string>
     <string name="dejavu_more_menu_add_row">Илова кардани сатр</string>
@@ -223,6 +242,22 @@
     <string name="dejavu_container_work">Корӣ</string>
     <string name="dejavu_container_banking">Бонкӣ</string>
     <string name="dejavu_container_shopping">Харид</string>
+    <string name="dejavu_history_group_by">Гурӯҳбандӣ аз рӯи</string>
+    <string name="dejavu_history_group_by_date">Сана</string>
+    <string name="dejavu_history_group_by_workspace">Фазо</string>
+    <string name="dejavu_history_group_by_folder">Фазо ва ҷузвдон</string>
+    <string name="dejavu_history_other_pages">Саҳифаҳои дигар</string>
+    <string name="dejavu_settings_tab_sleep">Варақаҳои хобида</string>
+    <string name="dejavu_settings_tab_sleep_summary">Варақаҳое, ки истифода намебаред, барои озод кардани хотира ба хоб мераванд</string>
+    <string name="dejavu_tab_sleep_hint">Варақаи хобида хотираи худро озод мекунад ва ҳангоми кушодан саҳифаашро аз нав бор мекунад. Варақае, ки шумо мебинед, варақаи паҳлӯи он дар намоиши тақсимшуда ва варақаҳое, ки садо пахш мекунанд ё камера ё микрофонро истифода мебаранд, бедор мемонанд. Вақте ки ба Android хотира лозим аст ва Dejavu дар пасзамина кор мекунад, ҳамаи варақаҳо ба ҷуз ду варақае, ки охирон истифода бурдаед, ба хоб мераванд.</string>
+    <string name="dejavu_tab_sleep_when">Хоб кардани варақаҳо</string>
+    <plurals name="dejavu_tab_sleep_after_minutes">
+        <item quantity="one">Пас аз %d дақиқа бе истифода</item>
+        <item quantity="other">Пас аз %d дақиқа бе истифода</item>
+    </plurals>
+    <string name="dejavu_tab_sleep_after_hour">Пас аз як соат бе истифода</string>
+    <string name="dejavu_tab_sleep_never">Ҳеҷ гоҳ</string>
+    <string name="dejavu_startup_crash_body">Ҳангоми кушоиши %1$s мушкилӣ ба миён омад. Барои идомаи тамошо онро аз нав кушоед.</string>
     <string name="dejavu_sync_normal_tabs">Дохил кардани варақаҳои начаспонидашуда</string>
     <string name="dejavu_sync_normal_tabs_summary">Он инчунин варақаҳои дигари ҳар як фазоро ҳамоҳанг мекунад, на танҳо варақаҳои часпонидашуда ва ҷузвдонҳоро. Вақте ки имконияти худи он «Дохил кардани варақаҳои начаспонидашуда» фаъол аст, Zen онҳоро ҳамоҳанг мекунад.</string>
     <plurals name="dejavu_selection_count">

@@ -59,6 +59,10 @@
     <string name="dejavu_folder_rename">فولڈر دا ناں وٹاؤ</string>
     <string name="dejavu_folder_unpack">فولڈر دا مواد ٻاہر کڈھو</string>
     <string name="dejavu_folder_top_level">پن تھیاں ٹیباں، بغیر فولڈر</string>
+    <plurals name="dejavu_folder_open_tabs">
+        <item quantity="one">%1$d کھلی ٹیب</item>
+        <item quantity="other">%1$d کھلیاں ٹیباں</item>
+    </plurals>
     <string name="dejavu_essentials_drop">ضروری ٹیباں وچ شامل کرݨ کیتے اِتھاں چھوڑو</string>
     <string name="dejavu_essentials_full">ضروری ٹیباں ودھ کنوں ودھ %1$d تھی سڳدیاں ہن</string>
     <string name="dejavu_temporary_by_default">ڈیفالٹ طور تے عارضی کنٹینر</string>
@@ -104,7 +108,19 @@
     <string name="dejavu_action_remove_from_essentials">ضروری ٹیباں کنوں ہٹاؤ</string>
     <string name="dejavu_action_delete">مٹاؤ</string>
     <string name="dejavu_settings_title">Dejavu</string>
+    <string name="dejavu_about_content">%1$s ہک خودمختار براؤزر ہے جہڑا Mozilla دے اوپن سورس Firefox تے GeckoView کوڈ کنوں بݨایا ڳیا ہے۔ ایہ Mozilla دا بݨایا ہویا کائنی، تے نہ ای Mozilla ایندی توثیق یا حمایت کریندا ہے۔ Firefox امریکہ تے ٻئے ملکاں وچ Mozilla Foundation دا ٹریڈ مارک ہے۔</string>
+    <string name="dejavu_about_source_code">سورس کوڈ</string>
     <string name="dejavu_settings_tab_actions">ٹیب عمل</string>
+    <string name="dejavu_settings_tab_actions_entry_summary">عملاں دی ہک فہرست، تے ہر عمل کتھاں ݙسدا ہے</string>
+    <string name="dejavu_settings_tab_actions_hint">سارے عمل ہک فہرست وچ ہن، اوہ وی جہڑے تساں آپ شامل کریندے ہو۔ چُݨو جو ہر عمل کتھاں ݙسے: پن تھیاں ٹیباں، اݨ پن ٹیباں تے فولڈراں اُتے، چُݨیاں ہوئیاں ٹیباں دی پٹی وچ، ودھیک مینیو وچ تے ورقیاں دے تلے عمل پٹی وچ۔ کہیں فولڈر تے عمل اوندے اندر دی ہر ٹیب تئیں اپڑدے ہن۔</string>
+    <string name="dejavu_settings_where_actions_show">عمل کتھاں ݙسدے ہن</string>
+    <string name="dejavu_settings_folders">فولڈر</string>
+    <string name="dejavu_settings_selection_bar">چُݨاؤ پٹی</string>
+    <string name="dejavu_settings_folder_actions_hint">فولڈر قطاراں کیتے %1$d تئیں بٹݨ چُݨو۔ ایہ فولڈر تے اوندے ذیلی فولڈراں دے اندر دی ہر ٹیب تے کم کریندے ہن۔</string>
+    <string name="dejavu_settings_action_places_none">کتھائیں کائنی ݙسدا</string>
+    <string name="dejavu_settings_action_place_unavailable">اُتھاں کجھ کائنی کریندا</string>
+    <string name="dejavu_settings_action_place_full">جاہ کائنی بچی</string>
+    <string name="dejavu_done">تھی ڳیا</string>
     <string name="dejavu_settings_pinned_tabs">پن تھیاں ٹیباں</string>
     <string name="dejavu_settings_unpinned_tabs">اݨ پن ٹیباں</string>
     <string name="dejavu_settings_all_actions">سارے عمل</string>
@@ -205,6 +221,9 @@
     <string name="dejavu_actions_bar_search">ڳولو</string>
     <string name="dejavu_actions_bar_home">مکھ پناں</string>
     <string name="dejavu_settings_more_menu_summary">ورقیاں دے تلے عمل پٹی، تے اوہ مینیو جہڑا ایہ کھولیندی ہے</string>
+    <string name="dejavu_more_menu_hint">پورا مینیو کھولݨ کیتے عمل پٹی کوں اُتے، یا پتہ پٹی کوں تلے سوائپ کرو۔ کہیں بٹݨ کوں ہلاوݨ یا ہٹاوݨ کیتے اوں تے دباؤ۔ ایکسٹینشنز ہمیشہ پوری قطار گھندیاں ہن۔</string>
+    <string name="dejavu_actions_bar_hint">ورقیاں دے تلے آلے بٹݨ۔ ایہ اوں ورقے تے کم کریندے ہن جیندے تے تساں ہو۔</string>
+    <string name="dejavu_actions_bar_all_added">سارے بٹݨ پہلے ای پٹی وچ ہن۔</string>
     <string name="dejavu_more_menu_row">قطار %1$d</string>
     <string name="dejavu_more_menu_add_item">بٹݨ شامل کرو</string>
     <string name="dejavu_more_menu_add_row">قطار شامل کرو</string>
@@ -243,6 +262,22 @@
     <string name="dejavu_container_work">کم</string>
     <string name="dejavu_container_banking">بینکاری</string>
     <string name="dejavu_container_shopping">خریداری</string>
+    <string name="dejavu_history_group_by">گروپ بندی</string>
+    <string name="dejavu_history_group_by_date">تریخ</string>
+    <string name="dejavu_history_group_by_workspace">ورک سپیس</string>
+    <string name="dejavu_history_group_by_folder">ورک سپیس تے فولڈر</string>
+    <string name="dejavu_history_other_pages">ٻئے ورقے</string>
+    <string name="dejavu_settings_tab_sleep">سُتیاں ٹیباں</string>
+    <string name="dejavu_settings_tab_sleep_summary">جہڑیاں ٹیباں تساں کائنی ورتیندے پئے، اوہ میموری خالی کرݨ کیتے سم ویندیاں ہن</string>
+    <string name="dejavu_tab_sleep_hint">سُتی ہوئی ٹیب آپݨی میموری خالی کر ݙیندی ہے، تے ڄݙݨ تساں اونکوں کھولیندے ہو تاں آپݨا ورقہ ولدا لوڈ کریندی ہے۔ جہڑی ٹیب تساں ݙیکھدے پئے ہو، ونڈے نظارے وچ اوندے نال آلی ٹیب، تے آواز چلاوݨ آلیاں یا کیمرہ یا مائیکروفون ورتݨ آلیاں ٹیباں جاڳدیاں رہندیاں ہن۔ ڄݙݨ Dejavu پچھوکڑ وچ ہووے تے Android کوں میموری دی لوڑ ہووے، تاں چھیکڑی واری ورتیاں ڳئیاں ݙو ٹیباں کنوں سوا ہر ٹیب سم ویندی ہے۔</string>
+    <string name="dejavu_tab_sleep_when">ٹیب کوں سُلاؤ</string>
+    <plurals name="dejavu_tab_sleep_after_minutes">
+        <item quantity="one">%d منٹ نہ ورتݨ دے بعد</item>
+        <item quantity="other">%d منٹ نہ ورتݨ دے بعد</item>
+    </plurals>
+    <string name="dejavu_tab_sleep_after_hour">ہک گھنٹہ نہ ورتݨ دے بعد</string>
+    <string name="dejavu_tab_sleep_never">کݙاہیں نہ</string>
+    <string name="dejavu_startup_crash_body">%1$s کھولݨ وچ مسئلہ تھیا۔ براؤزنگ جاری رکھݨ کیتے اینکوں ولدا کھولو۔</string>
     <string name="dejavu_sync_normal_tabs">پن نہ تھیاں ٹیباں شامل کرو</string>
     <string name="dejavu_sync_normal_tabs_summary">ایہ ہر ورک سپیس دیاں ٻیاں ٹیباں کوں وی ہم وقت کریندا ہے، صرف پن تھیاں ٹیباں تے فولڈر نہ۔ جڈاں ایندا پنہنجا پن نہ تھیاں ٹیباں شامل کرو آپشن آن ہووے، تاں Zen انہاں کوں ہم وقت کریندا ہے۔</string>
 </resources>

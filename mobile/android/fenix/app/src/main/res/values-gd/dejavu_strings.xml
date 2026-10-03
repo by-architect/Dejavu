@@ -47,6 +47,12 @@
     <string name="dejavu_folder_rename">Thoir ainm ùr air a\' phasgan</string>
     <string name="dejavu_folder_unpack">Neo-phacaig am pasgan</string>
     <string name="dejavu_folder_top_level">Tabaichean prìnichte, gun phasgan</string>
+    <plurals name="dejavu_folder_open_tabs">
+        <item quantity="one">%1$d taba fosgailte</item>
+        <item quantity="two">%1$d thaba fhosgailte</item>
+        <item quantity="few">%1$d tabaichean fosgailte</item>
+        <item quantity="other">%1$d tabaichean fosgailte</item>
+    </plurals>
     <string name="dejavu_essentials_drop">Leig às an-seo gus cur ris na feumalachdan</string>
     <string name="dejavu_essentials_full">Gabhaidh na feumalachdan suas ri %1$d taba</string>
     <string name="dejavu_temporary_by_default">Soithichean sealach mar bhun-roghainn</string>
@@ -88,7 +94,19 @@
     <string name="dejavu_action_remove_from_essentials">Thoir air falbh o na feumalachdan</string>
     <string name="dejavu_action_delete">Sguab às</string>
     <string name="dejavu_settings_title">Dejavu</string>
+    <string name="dejavu_about_content">\'S e brabhsair neo-eisimeileach a th\' ann an %1$s, air a thogail à còd tùsail fosgailte Firefox agus GeckoView aig Mozilla. Chan e Mozilla a rinn e agus chan eil Mozilla ga mholadh no a\' cur taic ris. \'S e comharra-malairt aig Mozilla Foundation anns na Stàitean Aonaichte agus ann an dùthchannan eile a th\' ann am Firefox.</string>
+    <string name="dejavu_about_source_code">Bun-tùs</string>
     <string name="dejavu_settings_tab_actions">Gnìomhan nan tabaichean</string>
+    <string name="dejavu_settings_tab_actions_entry_summary">Aon liosta de ghnìomhan agus far an nochd gach fear</string>
+    <string name="dejavu_settings_tab_actions_hint">Tha gach gnìomh ann an aon liosta, a\' gabhail a-steach an fheadhainn a chuireas tu fhèin ris. Tagh far an nochd gach fear: air tabaichean prìnichte, tabaichean neo-phrìnichte agus pasganan, ann am bàr nan tabaichean taghte, sa chlàr-taice Barrachd agus sa bhàr ghnìomhan fo dhuilleagan. Ruigidh gnìomhan air pasgan gach taba a tha na bhroinn.</string>
+    <string name="dejavu_settings_where_actions_show">Far an nochd gnìomhan</string>
+    <string name="dejavu_settings_folders">Pasganan</string>
+    <string name="dejavu_settings_selection_bar">Bàr an taghaidh</string>
+    <string name="dejavu_settings_folder_actions_hint">Tagh suas ri %1$d putan airson sreathan de phasganan. Obraichidh iad air gach taba sa phasgan agus sna fo-phasganan aige.</string>
+    <string name="dejavu_settings_action_places_none">Cha nochd e àite sam bith</string>
+    <string name="dejavu_settings_action_place_unavailable">Cha dèan e dad an-sin</string>
+    <string name="dejavu_settings_action_place_full">Chan eil rùm air fhàgail</string>
+    <string name="dejavu_done">Deiseil</string>
     <string name="dejavu_settings_pinned_tabs">Tabaichean prìnichte</string>
     <string name="dejavu_settings_unpinned_tabs">Tabaichean neo-phrìnichte</string>
     <string name="dejavu_settings_all_actions">A h-uile gnìomh</string>
@@ -185,6 +203,9 @@
     <string name="dejavu_actions_bar_search">Lorg</string>
     <string name="dejavu_actions_bar_home">Dachaigh</string>
     <string name="dejavu_settings_more_menu_summary">Am bàr ghnìomhan fon duilleag agus an clàr-taice a dh\'fhosglas e</string>
+    <string name="dejavu_more_menu_hint">Grad-shlaighd am bàr ghnìomhan suas, no bàr an t-seòlaidh sìos, gus an clàr-taice gu lèir fhosgladh. Brùth air putan gus a ghluasad no a thoirt air falbh. Gabhaidh leudachain sreath shlàn an-còmhnaidh.</string>
+    <string name="dejavu_actions_bar_hint">Na putanan fo dhuilleagan. Obraichidh iad air an duilleag air a bheil thu.</string>
+    <string name="dejavu_actions_bar_all_added">Tha a h-uile putan sa bhàr mu thràth.</string>
     <string name="dejavu_more_menu_row">Sreath %1$d</string>
     <string name="dejavu_more_menu_add_item">Cuir putan ris</string>
     <string name="dejavu_more_menu_add_row">Cuir sreath ris</string>
@@ -223,6 +244,24 @@
     <string name="dejavu_container_work">Obair</string>
     <string name="dejavu_container_banking">Baincaidh</string>
     <string name="dejavu_container_shopping">Bùth</string>
+    <string name="dejavu_history_group_by">Buidhnich a-rèir</string>
+    <string name="dejavu_history_group_by_date">Ceann-là</string>
+    <string name="dejavu_history_group_by_workspace">Àite-obrach</string>
+    <string name="dejavu_history_group_by_folder">Àite-obrach is pasgan</string>
+    <string name="dejavu_history_other_pages">Duilleagan eile</string>
+    <string name="dejavu_settings_tab_sleep">Tabaichean nan cadal</string>
+    <string name="dejavu_settings_tab_sleep_summary">Thèid tabaichean nach eil thu a\' cleachdadh a chur nan cadal gus cuimhne a shaoradh</string>
+    <string name="dejavu_tab_sleep_hint">Saoraidh taba a tha na chadal a chuimhne agus luchdaidh e an duilleag aige a-rithist nuair a dh\'fhosglas tu e. Fanaidh an taba air a bheil thu a\' coimhead, am fear ri thaobh san t-sealladh sgoilte agus tabaichean a tha a\' cluich fuaim no a\' cleachdadh a\' chamara no a\' mhicreofoin nan dùisg. Nuair a bhios cuimhne a dhìth air Android fhad \'s a bhios Dejavu sa chùlaibh, thèid gach taba ach an dà fhear a chleachd thu mu dheireadh a chur na chadal.</string>
+    <string name="dejavu_tab_sleep_when">Cuir taba na chadal</string>
+    <plurals name="dejavu_tab_sleep_after_minutes">
+        <item quantity="one">An dèidh %d mhionaid gun chleachdadh</item>
+        <item quantity="two">An dèidh %d mhionaid gun chleachdadh</item>
+        <item quantity="few">An dèidh %d mionaidean gun chleachdadh</item>
+        <item quantity="other">An dèidh %d mionaidean gun chleachdadh</item>
+    </plurals>
+    <string name="dejavu_tab_sleep_after_hour">An dèidh uair a thìde gun chleachdadh</string>
+    <string name="dejavu_tab_sleep_never">Chan ann idir</string>
+    <string name="dejavu_startup_crash_body">Bha duilgheadas ann le fosgladh %1$s. Fosgail an aplacaid a-rithist gus leantainn air adhart a\' brabhsadh.</string>
     <string name="dejavu_sync_normal_tabs">Gabh a-steach tabaichean neo-phrìnichte</string>
     <string name="dejavu_sync_normal_tabs_summary">Bidh e cuideachd a\' sioncronachadh nan tabaichean eile aig gach àite-obrach, chan e a-mhàin na tabaichean prìnichte \'s na pasganan. Bidh Zen \'gan sioncronachadh nuair a bhios an roghainn aige fhèin, Gabh a-steach tabaichean neo-phrìnichte, air.</string>
     <plurals name="dejavu_selection_count">

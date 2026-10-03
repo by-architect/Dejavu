@@ -47,6 +47,10 @@
     <string name="dejavu_folder_rename">Ordner umbenennen</string>
     <string name="dejavu_folder_unpack">Ordner auflösen</string>
     <string name="dejavu_folder_top_level">Angeheftete Tabs, kein Ordner</string>
+    <plurals name="dejavu_folder_open_tabs">
+        <item quantity="one">%1$d geöffneter Tab</item>
+        <item quantity="other">%1$d geöffnete Tabs</item>
+    </plurals>
     <string name="dejavu_essentials_drop">Hier ablegen, um zu Favoriten hinzuzufügen</string>
     <string name="dejavu_essentials_full">Favoriten fassen bis zu %1$d Tabs</string>
     <string name="dejavu_temporary_by_default">Standardmäßig temporäre Container</string>
@@ -88,7 +92,19 @@
     <string name="dejavu_action_remove_from_essentials">Aus Favoriten entfernen</string>
     <string name="dejavu_action_delete">Löschen</string>
     <string name="dejavu_settings_title">Dejavu</string>
+    <string name="dejavu_about_content">%1$s ist ein unabhängiger Browser, der aus Mozillas quelloffenem Code von Firefox und GeckoView erstellt wurde. Er wird nicht von Mozilla hergestellt, befürwortet oder unterstützt. Firefox ist eine Marke der Mozilla Foundation in den USA und anderen Ländern.</string>
+    <string name="dejavu_about_source_code">Quellcode</string>
     <string name="dejavu_settings_tab_actions">Tab-Aktionen</string>
+    <string name="dejavu_settings_tab_actions_entry_summary">Eine Liste aller Aktionen und wo jede angezeigt wird</string>
+    <string name="dejavu_settings_tab_actions_hint">Alle Aktionen stehen in einer Liste, auch die, die du selbst hinzufügst. Wähle, wo jede angezeigt wird: bei angehefteten Tabs, nicht angehefteten Tabs und Ordnern, in der Leiste ausgewählter Tabs, im Menü „Mehr“ und in der Aktionsleiste unter Seiten. Aktionen auf einem Ordner wirken auf jeden Tab darin.</string>
+    <string name="dejavu_settings_where_actions_show">Wo Aktionen angezeigt werden</string>
+    <string name="dejavu_settings_folders">Ordner</string>
+    <string name="dejavu_settings_selection_bar">Auswahlleiste</string>
+    <string name="dejavu_settings_folder_actions_hint">Wähle bis zu %1$d Schaltflächen für Ordnerzeilen. Sie wirken auf jeden Tab im Ordner und in seinen Unterordnern.</string>
+    <string name="dejavu_settings_action_places_none">Nirgends angezeigt</string>
+    <string name="dejavu_settings_action_place_unavailable">Hat dort keine Wirkung</string>
+    <string name="dejavu_settings_action_place_full">Kein Platz mehr</string>
+    <string name="dejavu_done">Fertig</string>
     <string name="dejavu_settings_pinned_tabs">Angeheftete Tabs</string>
     <string name="dejavu_settings_unpinned_tabs">Nicht angeheftete Tabs</string>
     <string name="dejavu_settings_all_actions">Alle Aktionen</string>
@@ -185,6 +201,9 @@
     <string name="dejavu_actions_bar_search">Suche</string>
     <string name="dejavu_actions_bar_home">Startseite</string>
     <string name="dejavu_settings_more_menu_summary">Die Aktionsleiste unter Seiten und das Menü, das sie öffnet</string>
+    <string name="dejavu_more_menu_hint">Wische die Aktionsleiste nach oben oder die Adressleiste nach unten, um das ganze Menü zu öffnen. Tippe auf eine Schaltfläche, um sie zu verschieben oder zu entfernen. Erweiterungen belegen immer eine ganze Zeile.</string>
+    <string name="dejavu_actions_bar_hint">Die Schaltflächen unter Seiten. Sie wirken auf die Seite, auf der du gerade bist.</string>
+    <string name="dejavu_actions_bar_all_added">Alle Schaltflächen sind bereits in der Leiste.</string>
     <string name="dejavu_more_menu_row">Zeile %1$d</string>
     <string name="dejavu_more_menu_add_item">Schaltfläche hinzufügen</string>
     <string name="dejavu_more_menu_add_row">Zeile hinzufügen</string>
@@ -223,6 +242,22 @@
     <string name="dejavu_container_work">Arbeit</string>
     <string name="dejavu_container_banking">Bankgeschäfte</string>
     <string name="dejavu_container_shopping">Einkaufen</string>
+    <string name="dejavu_history_group_by">Gruppieren nach</string>
+    <string name="dejavu_history_group_by_date">Datum</string>
+    <string name="dejavu_history_group_by_workspace">Arbeitsbereich</string>
+    <string name="dejavu_history_group_by_folder">Arbeitsbereich und Ordner</string>
+    <string name="dejavu_history_other_pages">Andere Seiten</string>
+    <string name="dejavu_settings_tab_sleep">Schlafende Tabs</string>
+    <string name="dejavu_settings_tab_sleep_summary">Tabs, die du nicht nutzt, schlafen, um Speicher freizugeben</string>
+    <string name="dejavu_tab_sleep_hint">Ein schlafender Tab gibt seinen Speicher frei und lädt seine Seite neu, wenn du ihn öffnest. Der Tab, den du gerade ansiehst, der Tab daneben in der geteilten Ansicht und Tabs, die Ton abspielen oder Kamera oder Mikrofon nutzen, bleiben wach. Wenn Android Speicher braucht, während Dejavu im Hintergrund ist, schlafen alle Tabs außer den zwei zuletzt genutzten ein.</string>
+    <string name="dejavu_tab_sleep_when">Tab schlafen legen</string>
+    <plurals name="dejavu_tab_sleep_after_minutes">
+        <item quantity="one">Nach %d Minute ohne Nutzung</item>
+        <item quantity="other">Nach %d Minuten ohne Nutzung</item>
+    </plurals>
+    <string name="dejavu_tab_sleep_after_hour">Nach einer Stunde ohne Nutzung</string>
+    <string name="dejavu_tab_sleep_never">Nie</string>
+    <string name="dejavu_startup_crash_body">Beim Öffnen von %1$s ist ein Problem aufgetreten. Öffne die App erneut, um weiterzusurfen.</string>
     <string name="dejavu_sync_normal_tabs">Nicht angeheftete Tabs einbeziehen</string>
     <string name="dejavu_sync_normal_tabs_summary">Synchronisiert außerdem die anderen Tabs jedes Arbeitsbereichs, nicht nur angeheftete Tabs und Ordner. Zen synchronisiert sie, wenn dessen eigene Option „Nicht angeheftete Tabs einbeziehen“ aktiviert ist.</string>
     <plurals name="dejavu_selection_count">

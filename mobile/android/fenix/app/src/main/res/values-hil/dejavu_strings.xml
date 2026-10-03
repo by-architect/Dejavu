@@ -47,6 +47,10 @@
     <string name="dejavu_folder_rename">Baylui ang ngalan sang folder</string>
     <string name="dejavu_folder_unpack">i-Unpack ang folder</string>
     <string name="dejavu_folder_top_level">Naka-pin nga tab, wala sing folder</string>
+    <plurals name="dejavu_folder_open_tabs">
+        <item quantity="one">%1$d ka bukas nga tab</item>
+        <item quantity="other">%1$d ka bukas nga tab</item>
+    </plurals>
     <string name="dejavu_essentials_drop">Ihulog diri para idugang sa Importante</string>
     <string name="dejavu_essentials_full">Ang Importante may kapasidad nga hasta %1$d ka tab</string>
     <string name="dejavu_temporary_by_default">Temporary nga container bilang default</string>
@@ -88,7 +92,19 @@
     <string name="dejavu_action_remove_from_essentials">Kuhaa sa Importante</string>
     <string name="dejavu_action_delete">Tangtangon</string>
     <string name="dejavu_settings_title">Dejavu</string>
+    <string name="dejavu_about_content">Ang %1$s isa ka independiente nga browser nga ginhimo halin sa open source nga code sang Firefox kag GeckoView sang Mozilla. Indi ini ginhimo, gin-endorso, ukon ginasuportahan sang Mozilla. Ang Firefox isa ka trademark sang Mozilla Foundation sa U.S. kag sa iban nga mga pungsod.</string>
+    <string name="dejavu_about_source_code">Source code</string>
     <string name="dejavu_settings_tab_actions">Mga aksyon sang tab</string>
+    <string name="dejavu_settings_tab_actions_entry_summary">Isa ka listahan sang mga aksyon, kag kon diin ginapakita ang kada isa</string>
+    <string name="dejavu_settings_tab_actions_hint">Ang tanan nga aksyon ara sa isa ka listahan, lakip ang imo kaugalingon nga gindugang. Pilia kon diin ginapakita ang kada isa: sa naka-pin nga mga tab, indi naka-pin nga mga tab kag folder, sa bar sang napili nga mga tab, sa Dugang nga menu, kag sa bar sang mga aksyon sa idalom sang mga page. Ang mga aksyon sa isa ka folder nagaabot sa kada tab sa sulod sini.</string>
+    <string name="dejavu_settings_where_actions_show">Kon diin ginapakita ang mga aksyon</string>
+    <string name="dejavu_settings_folders">Mga Folder</string>
+    <string name="dejavu_settings_selection_bar">Bar sang pagpili</string>
+    <string name="dejavu_settings_folder_actions_hint">Pilia ang hasta %1$d ka button para sa laray sang folder. Nagahulag ini sa kada tab sa sulod sang folder kag sang mga subfolder sini.</string>
+    <string name="dejavu_settings_action_places_none">Wala ginapakita bisan diin</string>
+    <string name="dejavu_settings_action_place_unavailable">Wala sing mahimo didto</string>
+    <string name="dejavu_settings_action_place_full">Wala na sing lugar</string>
+    <string name="dejavu_done">Tapos na</string>
     <string name="dejavu_settings_pinned_tabs">Naka-pin nga mga tab</string>
     <string name="dejavu_settings_unpinned_tabs">Indi naka-pin nga mga tab</string>
     <string name="dejavu_settings_all_actions">Tanan nga aksyon</string>
@@ -185,6 +201,9 @@
     <string name="dejavu_actions_bar_search">Pangita</string>
     <string name="dejavu_actions_bar_home">Home</string>
     <string name="dejavu_settings_more_menu_summary">Ang bar sang mga aksyon sa idalom sang mga page kag ang menu nga ginaabli sini</string>
+    <string name="dejavu_more_menu_hint">i-Swipe pataas ang bar sang mga aksyon, ukon pa-idalom ang address bar, para maabrihan ang bug-os nga menu. i-Tap ang isa ka button para isaylo ukon kuhaon ini. Ang mga extension pirmi nagakuha sang bug-os nga laray.</string>
+    <string name="dejavu_actions_bar_hint">Ang mga button sa idalom sang mga page. Nagahulag ini sa page nga yara ka subong.</string>
+    <string name="dejavu_actions_bar_all_added">Ang kada button ara na sa bar.</string>
     <string name="dejavu_more_menu_row">Laray %1$d</string>
     <string name="dejavu_more_menu_add_item">Magdugang sang button</string>
     <string name="dejavu_more_menu_add_row">Magdugang sang laray</string>
@@ -223,6 +242,22 @@
     <string name="dejavu_container_work">Trabaho</string>
     <string name="dejavu_container_banking">Banking</string>
     <string name="dejavu_container_shopping">Pamakal</string>
+    <string name="dejavu_history_group_by">Igrupo suno sa</string>
+    <string name="dejavu_history_group_by_date">Petsa</string>
+    <string name="dejavu_history_group_by_workspace">Workspace</string>
+    <string name="dejavu_history_group_by_folder">Workspace kag folder</string>
+    <string name="dejavu_history_other_pages">Iban nga mga page</string>
+    <string name="dejavu_settings_tab_sleep">Nagatulog nga mga tab</string>
+    <string name="dejavu_settings_tab_sleep_summary">Ang mga tab nga wala mo ginagamit nagatulog para mapahaw-as ang memory</string>
+    <string name="dejavu_tab_sleep_hint">Ang nagatulog nga tab nagapahaw-as sang iya memory kag nagakarga liwat sang iya page kon abrihan mo ini. Ang tab nga ginatan-aw mo, ang tab sa tupad sini sa split view, kag ang mga tab nga nagapatunog ukon nagagamit sang camera ukon mikropono nagapabilin nga mata. Kon kinahanglan sang Android ang memory samtang ara sa background ang Dejavu, ang tanan nga tab magatulog luwas sa duha nga katapusan mo nga gin-gamit.</string>
+    <string name="dejavu_tab_sleep_when">Patulugon ang tab</string>
+    <plurals name="dejavu_tab_sleep_after_minutes">
+        <item quantity="one">Pagkatapos sang %d ka minuto nga wala ginagamit</item>
+        <item quantity="other">Pagkatapos sang %d ka minuto nga wala ginagamit</item>
+    </plurals>
+    <string name="dejavu_tab_sleep_after_hour">Pagkatapos sang isa ka oras nga wala ginagamit</string>
+    <string name="dejavu_tab_sleep_never">Indi gid</string>
+    <string name="dejavu_startup_crash_body">May problema sa pag-abli sang %1$s. Ablihi ini liwat para makapadayon sa pag-browse.</string>
     <string name="dejavu_sync_normal_tabs">Iupod ang mga tab nga wala ma-pin</string>
     <string name="dejavu_sync_normal_tabs_summary">Ginasync man sini ang iban pa nga tab sang kada workspace, indi lang ang naka-pin nga tab kag folder. Ginasync ini sang Zen kon naka-on ang iya kaugalingon nga opsyon nga Iupod ang mga tab nga wala ma-pin.</string>
     <plurals name="dejavu_selection_count">

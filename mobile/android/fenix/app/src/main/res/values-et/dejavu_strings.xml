@@ -47,6 +47,10 @@
     <string name="dejavu_folder_rename">Nimeta kaust ümber</string>
     <string name="dejavu_folder_unpack">Paki kaust lahti</string>
     <string name="dejavu_folder_top_level">Kinnitatud kaardid, ilma kaustata</string>
+    <plurals name="dejavu_folder_open_tabs">
+        <item quantity="one">%1$d avatud kaart</item>
+        <item quantity="other">%1$d avatud kaarti</item>
+    </plurals>
     <string name="dejavu_essentials_drop">Lohista siia oluliste hulka lisamiseks</string>
     <string name="dejavu_essentials_full">Olulistesse mahub kuni %1$d kaarti</string>
     <string name="dejavu_temporary_by_default">Vaikimisi ajutised konteinerid</string>
@@ -88,7 +92,19 @@
     <string name="dejavu_action_remove_from_essentials">Eemalda olulistest</string>
     <string name="dejavu_action_delete">Kustuta</string>
     <string name="dejavu_settings_title">Dejavu</string>
+    <string name="dejavu_about_content">%1$s on sõltumatu brauser, mis on ehitatud Mozilla Firefoxi ja GeckoView avatud lähtekoodist. Mozilla ei ole seda loonud ega heaks kiitnud ning ei toeta seda. Firefox on Mozilla Foundationi kaubamärk USA-s ja teistes riikides.</string>
+    <string name="dejavu_about_source_code">Lähtekood</string>
     <string name="dejavu_settings_tab_actions">Kaartide tegevused</string>
+    <string name="dejavu_settings_tab_actions_entry_summary">Üks tegevuste loend ja kus iga tegevus kuvatakse</string>
+    <string name="dejavu_settings_tab_actions_hint">Kõik tegevused on ühes loendis, ka need, mille ise lisad. Vali, kus iga tegevus kuvatakse: kinnitatud kaartidel, kinnitamata kaartidel ja kaustadel, valitud kaartide ribal, menüüs „Rohkem” ja lehtede all oleval tegevusribal. Kausta tegevused mõjutavad kõiki selles olevaid kaarte.</string>
+    <string name="dejavu_settings_where_actions_show">Kus tegevusi kuvatakse</string>
+    <string name="dejavu_settings_folders">Kaustad</string>
+    <string name="dejavu_settings_selection_bar">Valikuriba</string>
+    <string name="dejavu_settings_folder_actions_hint">Vali kuni %1$d nuppu kaustade ridade jaoks. Need mõjutavad kõiki kausta ja selle alamkaustade kaarte.</string>
+    <string name="dejavu_settings_action_places_none">Ei kuvata kuskil</string>
+    <string name="dejavu_settings_action_place_unavailable">Seal ei tee midagi</string>
+    <string name="dejavu_settings_action_place_full">Rohkem ruumi pole</string>
+    <string name="dejavu_done">Valmis</string>
     <string name="dejavu_settings_pinned_tabs">Kinnitatud kaardid</string>
     <string name="dejavu_settings_unpinned_tabs">Kinnitamata kaardid</string>
     <string name="dejavu_settings_all_actions">Kõik tegevused</string>
@@ -185,6 +201,9 @@
     <string name="dejavu_actions_bar_search">Otsi</string>
     <string name="dejavu_actions_bar_home">Avaleht</string>
     <string name="dejavu_settings_more_menu_summary">Lehtede all olev tegevusriba ja menüü, mille see avab</string>
+    <string name="dejavu_more_menu_hint">Kogu menüü avamiseks libista tegevusriba üles või aadressiriba alla. Nupu liigutamiseks või eemaldamiseks puuduta seda. Lisad võtavad alati terve rea.</string>
+    <string name="dejavu_actions_bar_hint">Nupud lehtede all. Need toimivad lehel, millel oled.</string>
+    <string name="dejavu_actions_bar_all_added">Kõik nupud on juba ribal.</string>
     <string name="dejavu_more_menu_row">Rida %1$d</string>
     <string name="dejavu_more_menu_add_item">Lisa nupp</string>
     <string name="dejavu_more_menu_add_row">Lisa rida</string>
@@ -223,6 +242,22 @@
     <string name="dejavu_container_work">Töö</string>
     <string name="dejavu_container_banking">Pangandus</string>
     <string name="dejavu_container_shopping">Ostlemine</string>
+    <string name="dejavu_history_group_by">Rühmita</string>
+    <string name="dejavu_history_group_by_date">Kuupäev</string>
+    <string name="dejavu_history_group_by_workspace">Tööruum</string>
+    <string name="dejavu_history_group_by_folder">Tööruum ja kaust</string>
+    <string name="dejavu_history_other_pages">Muud lehed</string>
+    <string name="dejavu_settings_tab_sleep">Uinuvad kaardid</string>
+    <string name="dejavu_settings_tab_sleep_summary">Kaardid, mida sa ei kasuta, uinutatakse, et mälu vabastada</string>
+    <string name="dejavu_tab_sleep_hint">Uinuv kaart vabastab oma mälu ja laadib lehe uuesti, kui selle avad. Kaart, mida vaatad, selle kõrval olev kaart jagatud vaates ning kaardid, mis esitavad heli või kasutavad kaamerat või mikrofoni, jäävad ärkvele. Kui Android vajab mälu ajal, mil Dejavu on taustal, uinutatakse kõik kaardid peale kahe viimati kasutatu.</string>
+    <string name="dejavu_tab_sleep_when">Uinuta kaart</string>
+    <plurals name="dejavu_tab_sleep_after_minutes">
+        <item quantity="one">Kui kaarti pole %d minut kasutatud</item>
+        <item quantity="other">Kui kaarti pole %d minutit kasutatud</item>
+    </plurals>
+    <string name="dejavu_tab_sleep_after_hour">Kui kaarti pole tund aega kasutatud</string>
+    <string name="dejavu_tab_sleep_never">Mitte kunagi</string>
+    <string name="dejavu_startup_crash_body">%1$s avamisel tekkis probleem. Sirvimise jätkamiseks ava äpp uuesti.</string>
     <string name="dejavu_sync_normal_tabs">Kaasa kinnitamata kaardid</string>
     <string name="dejavu_sync_normal_tabs_summary">Sünkroonib ka iga tööruumi teised kaardid, mitte ainult kinnitatud kaarte ja kaustu. Zen sünkroonib need, kui selle enda valik Kaasa kinnitamata kaardid on sisse lülitatud.</string>
     <plurals name="dejavu_selection_count">

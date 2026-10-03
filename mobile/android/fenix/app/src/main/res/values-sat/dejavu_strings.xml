@@ -47,6 +47,11 @@
     <string name="dejavu_folder_rename">ᱯᱷᱚᱞᱰᱚᱨ ᱧᱩᱛᱩᱢ ᱵᱚᱫᱚᱞ ᱢᱮ</string>
     <string name="dejavu_folder_unpack">ᱯᱷᱚᱞᱰᱚᱨ ᱚᱰᱚᱠ ᱢᱮ</string>
     <string name="dejavu_folder_top_level">ᱯᱤᱱ ᱴᱮᱵᱽ ᱠᱚ, ᱯᱷᱚᱞᱰᱚᱨ ᱵᱟᱹᱱᱩᱜ</string>
+    <plurals name="dejavu_folder_open_tabs">
+        <item quantity="one">%1$d ᱡᱷᱤᱡᱽ ᱠᱟᱱ ᱴᱮᱵᱽ</item>
+        <item quantity="two">%1$d ᱡᱷᱤᱡᱽ ᱠᱟᱱ ᱴᱮᱵᱽ</item>
+        <item quantity="other">%1$d ᱡᱷᱤᱡᱽ ᱠᱟᱱ ᱴᱮᱵᱽ</item>
+    </plurals>
     <string name="dejavu_essentials_drop">ᱮᱥᱮᱱᱥᱤᱭᱟᱞ ᱠᱚ ᱨᱮ ᱥᱮᱞᱮᱫᱽ ᱞᱟᱹᱜᱤᱛ ᱱᱚᱰᱮ ᱥᱮᱞᱮᱫᱽ ᱢᱮ</string>
     <string name="dejavu_essentials_full">ᱮᱥᱮᱱᱥᱤᱭᱟᱞ ᱠᱚ ᱨᱮ %1$d ᱴᱮᱵᱽ ᱠᱚ</string>
     <string name="dejavu_temporary_by_default">ᱰᱤᱯᱷᱚᱞᱴ ᱴᱮᱢᱯᱚᱨᱟᱨᱤ ᱠᱚᱱᱴᱮᱱᱟᱨ</string>
@@ -88,7 +93,19 @@
     <string name="dejavu_action_remove_from_essentials">ᱮᱥᱮᱱᱥᱤᱭᱟᱞ ᱠᱚ ᱠᱷᱚᱱ ᱚᱰᱚᱠ ᱢᱮ</string>
     <string name="dejavu_action_delete">ᱢᱮᱴᱟᱣ ᱢᱮ</string>
     <string name="dejavu_settings_title">Dejavu</string>
+    <string name="dejavu_about_content">%1$s ᱫᱚ Mozilla ᱨᱮᱭᱟᱜ ᱚᱯᱮᱱ ᱥᱚᱨᱥ Firefox ᱟᱨ GeckoView ᱠᱳᱰ ᱠᱷᱚᱱ ᱛᱮᱭᱟᱨ ᱟᱠᱟᱱ ᱢᱤᱫ ᱯᱷᱩᱨᱜᱟᱹᱞ ᱵᱽᱨᱟᱣᱩᱡᱟᱨ ᱠᱟᱱᱟ ᱾ ᱱᱚᱶᱟ ᱫᱚ Mozilla ᱫᱟᱨᱟᱭᱛᱮ ᱛᱮᱭᱟᱨ ᱵᱟᱝ ᱦᱩᱭ ᱟᱠᱟᱱᱟ, ᱟᱨ ᱱᱚᱶᱟ ᱨᱮ Mozilla ᱨᱮᱭᱟᱜ ᱥᱚᱢᱚᱨᱛᱷᱚᱱ ᱥᱮ ᱥᱟᱯᱯᱚᱴ ᱵᱟᱹᱱᱩᱜᱼᱟ ᱾ Firefox ᱫᱚ ᱟᱢᱮᱨᱤᱠᱟ ᱟᱨ ᱮᱴᱟᱜ ᱫᱤᱥᱚᱢ ᱠᱚ ᱨᱮ Mozilla Foundation ᱨᱮᱭᱟᱜ ᱴᱨᱮᱰᱢᱟᱨᱠ ᱠᱟᱱᱟ ᱾</string>
+    <string name="dejavu_about_source_code">ᱥᱚᱨᱥ ᱠᱳᱰ</string>
     <string name="dejavu_settings_tab_actions">ᱴᱮᱵᱽ ᱮᱠᱥᱚᱱ ᱠᱚ</string>
+    <string name="dejavu_settings_tab_actions_entry_summary">ᱮᱠᱥᱚᱱ ᱠᱚᱣᱟᱜ ᱢᱤᱫ ᱞᱤᱥᱴᱤ, ᱟᱨ ᱢᱤᱫ ᱢᱤᱫ ᱚᱠᱟ ᱨᱮ ᱩᱫᱩᱜ ᱦᱩᱭ ᱟ</string>
+    <string name="dejavu_settings_tab_actions_hint">ᱟᱢ ᱥᱮᱞᱮᱫᱽ ᱟᱠᱟᱱ ᱮᱠᱥᱚᱱ ᱠᱚ ᱦᱮᱸ ᱢᱮᱫ ᱛᱮ, ᱡᱚᱛᱚ ᱮᱠᱥᱚᱱ ᱠᱚ ᱢᱤᱫ ᱞᱤᱥᱴᱤ ᱨᱮ ᱢᱮᱱᱟᱜ ᱠᱟᱱᱟ ᱾ ᱢᱤᱫ ᱢᱤᱫ ᱮᱠᱥᱚᱱ ᱚᱠᱟ ᱨᱮ ᱩᱫᱩᱜ ᱦᱩᱭ ᱚᱱᱟ ᱵᱟᱪᱷᱟᱣ ᱢᱮ: ᱯᱤᱱ ᱴᱮᱵᱽ ᱠᱚ, ᱟᱹᱱᱯᱤᱱ ᱴᱮᱵᱽ ᱠᱚ ᱟᱨ ᱯᱷᱚᱞᱰᱚᱨ ᱠᱚ ᱨᱮ, ᱵᱟᱪᱷᱟᱣ ᱟᱠᱟᱱ ᱴᱮᱵᱽ ᱠᱚᱣᱟᱜ ᱵᱟᱨ ᱨᱮ, ᱢᱚᱨ ᱢᱮᱱᱩ ᱨᱮ ᱟᱨ ᱥᱟᱦᱴᱟ ᱞᱟᱛᱟᱨ ᱨᱮᱭᱟᱜ ᱮᱠᱥᱚᱱ ᱵᱟᱨ ᱨᱮ ᱾ ᱯᱷᱚᱞᱰᱚᱨ ᱨᱮ ᱮᱠᱥᱚᱱ ᱫᱚ ᱚᱱᱟ ᱛᱟᱞᱟ ᱨᱮᱭᱟᱜ ᱡᱚᱛᱚ ᱴᱮᱵᱽ ᱨᱮ ᱪᱟᱞᱟᱣ ᱦᱩᱭ ᱟ ᱾</string>
+    <string name="dejavu_settings_where_actions_show">ᱮᱠᱥᱚᱱ ᱠᱚ ᱚᱠᱟ ᱨᱮ ᱩᱫᱩᱜ ᱦᱩᱭ ᱟ</string>
+    <string name="dejavu_settings_folders">ᱯᱷᱚᱞᱰᱚᱨ ᱠᱚ</string>
+    <string name="dejavu_settings_selection_bar">ᱵᱟᱪᱷᱟᱣ ᱵᱟᱨ</string>
+    <string name="dejavu_settings_folder_actions_hint">ᱯᱷᱚᱞᱰᱚᱨ ᱨᱚ ᱞᱟᱹᱜᱤᱛ %1$d ᱴᱷᱮᱱ ᱵᱚᱴᱚᱱ ᱠᱚ ᱵᱟᱪᱷᱟᱣ ᱢᱮ ᱾ ᱚᱱᱟ ᱠᱚ ᱯᱷᱚᱞᱰᱚᱨ ᱟᱨ ᱟᱭᱢᱟᱛ ᱥᱚᱵ-ᱯᱷᱚᱞᱰᱚᱨ ᱠᱚ ᱛᱟᱞᱟ ᱨᱮᱭᱟᱜ ᱡᱚᱛᱚ ᱴᱮᱵᱽ ᱨᱮ ᱪᱟᱞᱟᱣ ᱦᱩᱭ ᱟ ᱾</string>
+    <string name="dejavu_settings_action_places_none">ᱚᱠᱟ ᱨᱮ ᱦᱚᱸ ᱵᱟᱭ ᱩᱫᱩᱜ ᱦᱩᱭ ᱟ</string>
+    <string name="dejavu_settings_action_place_unavailable">ᱚᱱᱰᱮ ᱵᱟᱭ ᱠᱟᱹᱢᱤ ᱠᱟᱱᱟ</string>
+    <string name="dejavu_settings_action_place_full">ᱡᱟᱭᱜᱟ ᱵᱟᱹᱱᱩᱜᱼᱟ</string>
+    <string name="dejavu_done">ᱦᱩᱭᱮᱱᱟ</string>
     <string name="dejavu_settings_pinned_tabs">ᱯᱤᱱ ᱴᱮᱵᱽ ᱠᱚ</string>
     <string name="dejavu_settings_unpinned_tabs">ᱟᱹᱱᱯᱤᱱ ᱴᱮᱵᱽ ᱠᱚ</string>
     <string name="dejavu_settings_all_actions">ᱡᱚᱛᱚ ᱮᱠᱥᱚᱱ ᱠᱚ</string>
@@ -185,6 +202,9 @@
     <string name="dejavu_actions_bar_search">ᱥᱮᱸᱫᱽᱨᱟ</string>
     <string name="dejavu_actions_bar_home">ᱚᱲᱟᱜ</string>
     <string name="dejavu_settings_more_menu_summary">ᱥᱟᱦᱴᱟ ᱞᱟᱛᱟᱨ ᱨᱮᱭᱟᱜ ᱮᱠᱥᱚᱱ ᱵᱟᱨ ᱟᱨ ᱚᱱᱟ ᱡᱷᱤᱡᱽ ᱠᱟᱱ ᱢᱮᱱᱩ</string>
+    <string name="dejavu_more_menu_hint">ᱯᱩᱨᱟᱹ ᱢᱮᱱᱩ ᱡᱷᱤᱡᱽ ᱞᱟᱹᱜᱤᱛ ᱮᱠᱥᱚᱱ ᱵᱟᱨ ᱪᱮᱛᱟᱱ ᱛᱮ, ᱟᱨ ᱵᱟᱝ ᱴᱷᱤᱠᱟᱹᱱᱟ ᱵᱟᱨ ᱞᱟᱛᱟᱨ ᱛᱮ ᱥᱣᱟᱭᱤᱯ ᱢᱮ ᱾ ᱵᱚᱴᱚᱱ ᱩᱪᱟᱹᱲ ᱟᱨ ᱵᱟᱝ ᱚᱰᱚᱠ ᱞᱟᱹᱜᱤᱛ ᱚᱱᱟ ᱚᱛᱟᱭ ᱢᱮ ᱾ ᱮᱠᱥᱴᱮᱱᱥᱚᱱᱠᱚ ᱥᱟᱨᱟ ᱜᱷᱟᱹᱲᱤᱡ ᱢᱤᱫ ᱯᱩᱨᱟᱹ ᱨᱚ ᱦᱟᱛᱟᱣ ᱟ ᱾</string>
+    <string name="dejavu_actions_bar_hint">ᱥᱟᱦᱴᱟ ᱞᱟᱛᱟᱨ ᱨᱮᱭᱟᱜ ᱵᱚᱴᱚᱱ ᱠᱚ ᱾ ᱚᱱᱟ ᱠᱚ ᱱᱤᱛᱚᱜ ᱥᱟᱦᱴᱟ ᱨᱮ ᱪᱟᱞᱟᱣ ᱦᱩᱭ ᱟ ᱾</string>
+    <string name="dejavu_actions_bar_all_added">ᱡᱚᱛᱚ ᱵᱚᱴᱚᱱ ᱵᱟᱨ ᱨᱮ ᱢᱮᱱᱟᱜ ᱠᱟᱱᱟ ᱾</string>
     <string name="dejavu_more_menu_row">ᱨᱚ %1$d</string>
     <string name="dejavu_more_menu_add_item">ᱢᱤᱫ ᱵᱚᱴᱚᱱ ᱥᱮᱞᱮᱫᱽ ᱢᱮ</string>
     <string name="dejavu_more_menu_add_row">ᱢᱤᱫ ᱨᱚ ᱥᱮᱞᱮᱫᱽ ᱢᱮ</string>
@@ -223,6 +243,23 @@
     <string name="dejavu_container_work">ᱠᱟᱹᱢᱤ</string>
     <string name="dejavu_container_banking">ᱵᱮᱸᱠ</string>
     <string name="dejavu_container_shopping">ᱠᱤᱨᱤᱸ</string>
+    <string name="dejavu_history_group_by">ᱪᱮᱫ ᱞᱮᱠᱟᱛᱮ ᱫᱚᱞ ᱵᱮᱱᱟᱣ ᱢᱮ</string>
+    <string name="dejavu_history_group_by_date">ᱢᱟᱦᱟᱸ</string>
+    <string name="dejavu_history_group_by_workspace">ᱣᱟᱨᱠᱥᱯᱮᱥ</string>
+    <string name="dejavu_history_group_by_folder">ᱣᱟᱨᱠᱥᱯᱮᱥ ᱟᱨ ᱯᱷᱚᱞᱰᱚᱨ</string>
+    <string name="dejavu_history_other_pages">ᱮᱴᱟᱜ ᱥᱟᱦᱴᱟ ᱠᱚ</string>
+    <string name="dejavu_settings_tab_sleep">ᱥᱞᱤᱯ ᱟᱠᱟᱱ ᱴᱮᱵᱽ ᱠᱚ</string>
+    <string name="dejavu_settings_tab_sleep_summary">ᱟᱢ ᱵᱟᱝ ᱵᱮᱵᱚᱦᱟᱨᱮᱫ ᱴᱮᱵᱽ ᱠᱚ ᱢᱮᱢᱚᱨᱤ ᱠᱷᱟᱹᱞᱤ ᱞᱟᱹᱜᱤᱛ ᱥᱞᱤᱯ ᱦᱩᱭ ᱟ</string>
+    <string name="dejavu_tab_sleep_hint">ᱥᱞᱤᱯ ᱟᱠᱟᱱ ᱴᱮᱵᱽ ᱨᱮᱭᱟᱜ ᱢᱮᱢᱚᱨᱤ ᱠᱷᱟᱹᱞᱤ ᱦᱩᱭ ᱟ, ᱟᱨ ᱟᱢ ᱡᱷᱤᱡᱽ ᱠᱟᱛᱮ ᱚᱱᱟ ᱨᱮᱭᱟᱜ ᱥᱟᱦᱴᱟ ᱫᱩᱦᱲᱟ ᱞᱚᱰ ᱦᱩᱭ ᱟ ᱾ ᱟᱢ ᱧᱮᱞ ᱠᱟᱱ ᱴᱮᱵᱽ, ᱥᱯᱞᱤᱴ ᱣᱤᱭᱩ ᱨᱮ ᱚᱱᱟ ᱥᱩᱨ ᱨᱮᱭᱟᱜ ᱴᱮᱵᱽ, ᱟᱨ ᱥᱟᱰᱮ ᱪᱟᱹᱞᱩᱜ ᱠᱟᱱ ᱥᱮ ᱠᱮᱢᱨᱟ ᱥᱮ ᱢᱟᱭᱠᱨᱚᱯᱷᱚᱱ ᱵᱮᱵᱚᱦᱟᱨᱮᱫ ᱴᱮᱵᱽ ᱠᱚ ᱪᱟᱹᱞᱩ ᱛᱟᱦᱮᱸ ᱟ ᱾ Dejavu ᱵᱮᱠᱜᱨᱟᱣᱩᱱᱰ ᱨᱮ ᱛᱟᱦᱮᱸ ᱚᱠᱛᱚ ᱡᱩᱫᱤ Android ᱢᱮᱢᱚᱨᱤ ᱞᱟᱹᱠᱛᱤᱜ ᱠᱟᱱᱟ, ᱟᱢ ᱢᱩᱪᱟᱹᱫ ᱵᱮᱵᱚᱦᱟᱨ ᱟᱠᱟᱱ ᱵᱟᱨᱭᱟ ᱴᱮᱵᱽ ᱵᱟᱹᱜᱤ ᱠᱟᱛᱮ ᱮᱴᱟᱜ ᱡᱚᱛᱚ ᱴᱮᱵᱽ ᱥᱞᱤᱯ ᱦᱩᱭ ᱟ ᱾</string>
+    <string name="dejavu_tab_sleep_when">ᱴᱮᱵᱽ ᱥᱞᱤᱯ ᱢᱮ</string>
+    <plurals name="dejavu_tab_sleep_after_minutes">
+        <item quantity="one">ᱵᱮᱵᱚᱦᱟᱨ ᱵᱮᱜᱚᱨ %d ᱴᱤᱯᱤᱡ ᱛᱟᱭᱚᱢ</item>
+        <item quantity="two">ᱵᱮᱵᱚᱦᱟᱨ ᱵᱮᱜᱚᱨ %d ᱴᱤᱯᱤᱡ ᱛᱟᱭᱚᱢ</item>
+        <item quantity="other">ᱵᱮᱵᱚᱦᱟᱨ ᱵᱮᱜᱚᱨ %d ᱴᱤᱯᱤᱡ ᱛᱟᱭᱚᱢ</item>
+    </plurals>
+    <string name="dejavu_tab_sleep_after_hour">ᱵᱮᱵᱚᱦᱟᱨ ᱵᱮᱜᱚᱨ ᱢᱤᱫ ᱴᱟᱲᱟᱝ ᱛᱟᱭᱚᱢ</string>
+    <string name="dejavu_tab_sleep_never">ᱛᱤᱥ ᱦᱚᱸ ᱵᱟᱝ</string>
+    <string name="dejavu_startup_crash_body">%1$s ᱡᱷᱤᱡᱽ ᱨᱮ ᱥᱚᱢᱟᱥᱭᱟ ᱛᱟᱦᱮᱸ ᱞᱮᱱᱟ ᱾ ᱵᱽᱨᱟᱣᱩᱡᱤᱝ ᱞᱟᱦᱟ ᱞᱟᱹᱜᱤᱛ ᱚᱱᱟ ᱫᱩᱦᱲᱟ ᱡᱷᱤᱡᱽ ᱢᱮ ᱾</string>
     <string name="dejavu_sync_normal_tabs">ᱟᱠᱮ ᱯᱤᱱ ᱵᱟᱝ ᱴᱮᱵᱽ ᱠᱚ ᱥᱟᱢᱟᱛ ᱢᱮ</string>
     <string name="dejavu_sync_normal_tabs_summary">ᱚᱱᱟ ᱦᱚᱸ ᱡᱚᱛᱚ ᱣᱟᱨᱠᱥᱯᱮᱥ ᱨᱮᱭᱟᱜ ᱮᱛᱟᱜ ᱴᱮᱵᱽ ᱠᱚ ᱥᱤᱝᱠ ᱠᱟᱛᱮ, ᱚᱠᱛᱚ ᱯᱤᱱ ᱴᱮᱵᱽ ᱟᱨ ᱯᱷᱚᱞᱰᱚᱨ ᱠᱚ ᱛᱟᱸᱦᱮᱸ ᱟᱠᱟᱱᱟ ᱵᱟᱝᱠᱷᱟᱱ ᱾ ᱡᱩᱫᱤ ᱟᱭᱢᱟᱛ ᱨᱚᱝ «ᱟᱠᱮ ᱯᱤᱱ ᱵᱟᱝ ᱴᱮᱵᱽ ᱠᱚ ᱥᱟᱢᱟᱛ ᱢᱮ» ᱚᱡᱷᱚᱱ ᱚᱱ ᱛᱟᱦᱮᱸᱟ, ᱛᱮᱞᱟ Zen ᱚᱱᱟ ᱠᱚ ᱥᱤᱝᱠ ᱟ ᱾</string>
     <plurals name="dejavu_selection_count">

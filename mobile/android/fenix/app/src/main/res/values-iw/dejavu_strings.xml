@@ -47,6 +47,11 @@
     <string name="dejavu_folder_rename">שינוי שם התיקייה</string>
     <string name="dejavu_folder_unpack">פירוק התיקייה</string>
     <string name="dejavu_folder_top_level">לשוניות מוצמדות, ללא תיקייה</string>
+    <plurals name="dejavu_folder_open_tabs">
+        <item quantity="one">%1$d לשונית פתוחה</item>
+        <item quantity="two">%1$d לשוניות פתוחות</item>
+        <item quantity="other">%1$d לשוניות פתוחות</item>
+    </plurals>
     <string name="dejavu_essentials_drop">יש לשחרר כאן כדי להוסיף למועדפים</string>
     <string name="dejavu_essentials_full">המועדפים מכילים עד %1$d לשוניות</string>
     <string name="dejavu_temporary_by_default">מארזים זמניים כברירת מחדל</string>
@@ -88,7 +93,19 @@
     <string name="dejavu_action_remove_from_essentials">הסרה מהמועדפים</string>
     <string name="dejavu_action_delete">מחיקה</string>
     <string name="dejavu_settings_title">Dejavu</string>
+    <string name="dejavu_about_content">%1$s הוא דפדפן עצמאי שנבנה מהקוד הפתוח של Firefox ו-GeckoView מבית Mozilla. הוא לא נוצר, לא אושר ולא נתמך על ידי Mozilla. Firefox הוא סימן מסחרי של קרן Mozilla בארצות הברית ובמדינות אחרות.</string>
+    <string name="dejavu_about_source_code">קוד מקור</string>
     <string name="dejavu_settings_tab_actions">פעולות לשוניות</string>
+    <string name="dejavu_settings_tab_actions_entry_summary">רשימה אחת של פעולות, והיכן כל אחת מהן מוצגת</string>
+    <string name="dejavu_settings_tab_actions_hint">כל הפעולות נמצאות ברשימה אחת, כולל אלה שהוספתם בעצמכם. בחרו היכן כל אחת מהן תוצג: על לשוניות מוצמדות, לשוניות לא מוצמדות ותיקיות, בסרגל הלשוניות הנבחרות, בתפריט “עוד” ובסרגל הפעולות שמתחת לדפים. פעולות על תיקייה חלות על כל לשונית שבתוכה.</string>
+    <string name="dejavu_settings_where_actions_show">היכן מוצגות הפעולות</string>
+    <string name="dejavu_settings_folders">תיקיות</string>
+    <string name="dejavu_settings_selection_bar">סרגל הבחירה</string>
+    <string name="dejavu_settings_folder_actions_hint">בחרו עד %1$d כפתורים לשורות תיקיות. הם פועלים על כל לשונית שבתוך התיקייה ובתתי-התיקיות שלה.</string>
+    <string name="dejavu_settings_action_places_none">לא מוצגת בשום מקום</string>
+    <string name="dejavu_settings_action_place_unavailable">לא עושה שם כלום</string>
+    <string name="dejavu_settings_action_place_full">לא נשאר מקום</string>
+    <string name="dejavu_done">סיום</string>
     <string name="dejavu_settings_pinned_tabs">לשוניות מוצמדות</string>
     <string name="dejavu_settings_unpinned_tabs">לשוניות לא מוצמדות</string>
     <string name="dejavu_settings_all_actions">כל הפעולות</string>
@@ -185,6 +202,9 @@
     <string name="dejavu_actions_bar_search">חיפוש</string>
     <string name="dejavu_actions_bar_home">בית</string>
     <string name="dejavu_settings_more_menu_summary">סרגל הפעולות שמתחת לדפים והתפריט שהוא פותח</string>
+    <string name="dejavu_more_menu_hint">החליקו את סרגל הפעולות למעלה, או את שורת הכתובת למטה, כדי לפתוח את התפריט המלא. הקישו על כפתור כדי להזיז או להסיר אותו. הרחבות תמיד תופסות שורה שלמה.</string>
+    <string name="dejavu_actions_bar_hint">הכפתורים שמתחת לדפים. הם פועלים על הדף שבו אתם נמצאים.</string>
+    <string name="dejavu_actions_bar_all_added">כל הכפתורים כבר נמצאים בסרגל.</string>
     <string name="dejavu_more_menu_row">שורה %1$d</string>
     <string name="dejavu_more_menu_add_item">הוספת כפתור</string>
     <string name="dejavu_more_menu_add_row">הוספת שורה</string>
@@ -223,6 +243,23 @@
     <string name="dejavu_container_work">עבודה</string>
     <string name="dejavu_container_banking">בנקאות</string>
     <string name="dejavu_container_shopping">קניות</string>
+    <string name="dejavu_history_group_by">קיבוץ לפי</string>
+    <string name="dejavu_history_group_by_date">תאריך</string>
+    <string name="dejavu_history_group_by_workspace">מרחב עבודה</string>
+    <string name="dejavu_history_group_by_folder">מרחב עבודה ותיקייה</string>
+    <string name="dejavu_history_other_pages">דפים אחרים</string>
+    <string name="dejavu_settings_tab_sleep">לשוניות רדומות</string>
+    <string name="dejavu_settings_tab_sleep_summary">לשוניות שאינכם משתמשים בהן נרדמות כדי לפנות זיכרון</string>
+    <string name="dejavu_tab_sleep_hint">לשונית רדומה מפנה את הזיכרון שלה וטוענת את הדף שלה מחדש כשפותחים אותה. הלשונית שבה אתם צופים, זו שלידה בתצוגה מפוצלת ולשוניות שמשמיעות צליל או משתמשות במצלמה או במיקרופון נשארות ערות. כש-Android צריך זיכרון בזמן ש-Dejavu ברקע, כל הלשוניות נרדמות מלבד שתי הלשוניות שבהן השתמשתם לאחרונה.</string>
+    <string name="dejavu_tab_sleep_when">הרדמת לשונית</string>
+    <plurals name="dejavu_tab_sleep_after_minutes">
+        <item quantity="one">אחרי %d דקה ללא שימוש</item>
+        <item quantity="two">אחרי %d דקות ללא שימוש</item>
+        <item quantity="other">אחרי %d דקות ללא שימוש</item>
+    </plurals>
+    <string name="dejavu_tab_sleep_after_hour">אחרי שעה ללא שימוש</string>
+    <string name="dejavu_tab_sleep_never">לעולם לא</string>
+    <string name="dejavu_startup_crash_body">הייתה בעיה בפתיחת %1$s. פתחו אותו מחדש כדי להמשיך לגלוש.</string>
     <string name="dejavu_sync_normal_tabs">הכללת לשוניות שאינן מוצמדות</string>
     <string name="dejavu_sync_normal_tabs_summary">מסנכרן גם את שאר הלשוניות של כל מרחב עבודה, ולא רק את הלשוניות המוצמדות והתיקיות. Zen מסנכרן אותן כאשר האפשרות שלו עצמו, הכללת לשוניות שאינן מוצמדות, מופעלת.</string>
     <plurals name="dejavu_selection_count">

@@ -47,6 +47,10 @@
     <string name="dejavu_folder_rename">Renomar la carpeta</string>
     <string name="dejavu_folder_unpack">Desempaquetar la carpeta</string>
     <string name="dejavu_folder_top_level">Llingüetes fixaes, ensin carpeta</string>
+    <plurals name="dejavu_folder_open_tabs">
+        <item quantity="one">%1$d llingüeta abierta</item>
+        <item quantity="other">%1$d llingüetes abiertes</item>
+    </plurals>
     <string name="dejavu_essentials_drop">Suelta equí pa amestar a los esenciales</string>
     <string name="dejavu_essentials_full">Los esenciales caltienen fasta %1$d llingüetes</string>
     <string name="dejavu_temporary_by_default">Contenedores temporales por defeutu</string>
@@ -88,7 +92,19 @@
     <string name="dejavu_action_remove_from_essentials">Quitar de los esenciales</string>
     <string name="dejavu_action_delete">Desaniciar</string>
     <string name="dejavu_settings_title">Dejavu</string>
+    <string name="dejavu_about_content">%1$s ye un restolador independiente creáu a partir del códigu abiertu de Firefox y GeckoView de Mozilla. Mozilla nun lu fai, nun lu avala nin-y da sofitu. Firefox ye una marca comercial de la Mozilla Foundation nos Estaos Xuníos y n\'otros países.</string>
+    <string name="dejavu_about_source_code">Códigu fonte</string>
     <string name="dejavu_settings_tab_actions">Aiciones de les llingüetes</string>
+    <string name="dejavu_settings_tab_actions_entry_summary">Una sola llista d\'aiciones, y ónde s\'amuesa cada una</string>
+    <string name="dejavu_settings_tab_actions_hint">Toles aiciones tán nuna sola llista, incluyíes les qu\'amiestes tu. Escueyi ónde s\'amuesa cada una: nes llingüetes fixaes, nes llingüetes non fixaes y nes carpetes, na barra de les llingüetes seleicionaes, nel menú Más y na barra d\'aiciones debaxo de les páxines. Les aiciones sobro una carpeta algamen toles llingüetes que tien dientro.</string>
+    <string name="dejavu_settings_where_actions_show">Ónde s\'amuesen les aiciones</string>
+    <string name="dejavu_settings_folders">Carpetes</string>
+    <string name="dejavu_settings_selection_bar">Barra de seleición</string>
+    <string name="dejavu_settings_folder_actions_hint">Escueyi fasta %1$d botones pa les fileres de carpetes. Funcionen sobro toles llingüetes de la carpeta y de les sos subcarpetes.</string>
+    <string name="dejavu_settings_action_places_none">Nun s\'amuesa en nengún llau</string>
+    <string name="dejavu_settings_action_place_unavailable">Equí nun fai nada</string>
+    <string name="dejavu_settings_action_place_full">Nun queda sitiu</string>
+    <string name="dejavu_done">Fecho</string>
     <string name="dejavu_settings_pinned_tabs">Llingüetes fixaes</string>
     <string name="dejavu_settings_unpinned_tabs">Llingüetes non fixaes</string>
     <string name="dejavu_settings_all_actions">Toles aiciones</string>
@@ -185,6 +201,9 @@
     <string name="dejavu_actions_bar_search">Guetar</string>
     <string name="dejavu_actions_bar_home">Aniciu</string>
     <string name="dejavu_settings_more_menu_summary">La barra d\'aiciones debaxo de les páxines y el menú qu\'abre</string>
+    <string name="dejavu_more_menu_hint">Esliza la barra d\'aiciones p\'arriba, o la barra de direiciones p\'abaxo, p\'abrir el menú completu. Toca un botón pa movelu o quitalu. Les estensiones ocupen siempres una filera entera.</string>
+    <string name="dejavu_actions_bar_hint">Los botones debaxo de les páxines. Funcionen sobro la páxina na que tas.</string>
+    <string name="dejavu_actions_bar_all_added">Tolos botones tán yá na barra.</string>
     <string name="dejavu_more_menu_row">Filera %1$d</string>
     <string name="dejavu_more_menu_add_item">Amestar un botón</string>
     <string name="dejavu_more_menu_add_row">Amestar una filera</string>
@@ -223,6 +242,22 @@
     <string name="dejavu_container_work">Trabayu</string>
     <string name="dejavu_container_banking">Banca</string>
     <string name="dejavu_container_shopping">Compres</string>
+    <string name="dejavu_history_group_by">Agrupar por</string>
+    <string name="dejavu_history_group_by_date">Data</string>
+    <string name="dejavu_history_group_by_workspace">Espaciu de trabayu</string>
+    <string name="dejavu_history_group_by_folder">Espaciu de trabayu y carpeta</string>
+    <string name="dejavu_history_other_pages">Otres páxines</string>
+    <string name="dejavu_settings_tab_sleep">Llingüetes dormíes</string>
+    <string name="dejavu_settings_tab_sleep_summary">Les llingüetes que nun uses duermen pa lliberar memoria</string>
+    <string name="dejavu_tab_sleep_hint">Una llingüeta dormida llibera la so memoria y vuelve cargar la so páxina cuando la abres. La llingüeta que tas viendo, la que tien al llau na vista estremada y les llingüetes que reproducen soníu o usen la cámara o\'l micrófonu siguen espiertes. Cuando Android precisa memoria mientres Dejavu ta en segundu planu, toles llingüetes menos les dos últimes qu\'usasti pónense a dormir.</string>
+    <string name="dejavu_tab_sleep_when">Poner una llingüeta a dormir</string>
+    <plurals name="dejavu_tab_sleep_after_minutes">
+        <item quantity="one">Dempués de %d minutu ensin usu</item>
+        <item quantity="other">Dempués de %d minutos ensin usu</item>
+    </plurals>
+    <string name="dejavu_tab_sleep_after_hour">Dempués d\'una hora ensin usu</string>
+    <string name="dejavu_tab_sleep_never">Enxamás</string>
+    <string name="dejavu_startup_crash_body">Hebo un problema al abrir %1$s. Vuelvi abrilu pa siguir restolando.</string>
     <string name="dejavu_sync_normal_tabs">Incluyir les llingüetes non fixaes</string>
     <string name="dejavu_sync_normal_tabs_summary">Tamién sincroniza les otres llingüetes de cada espaciu de trabayu, non namás les llingüetes fixaes y les carpetes. Zen sincronízales cuando la so propia opción Incluyir les llingüetes non fixaes ta activada.</string>
     <plurals name="dejavu_selection_count">

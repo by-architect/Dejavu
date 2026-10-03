@@ -1,1 +1,1 @@
-Unang release ng Dejavu, isang kalmadong browser na batay sa Firefox. Mga workspace, container, naka-pin na tab, essential, folder at split view. Nagsi-sync sa Zen Browser gamit ang iyong Mozilla account. Pribado bilang default: walang telemetry.
+Unang release ng Dejavu, isang independiyenteng browser na binuo mula sa open source na code ng Firefox ng Mozilla, at hindi gawa o inendorso ng Mozilla. Mga workspace, container, naka-pin na tab, Mahahalaga, folder at split view. Nagsi-sync sa Zen Browser gamit ang iyong Mozilla account. Pribado bilang default: walang telemetry.

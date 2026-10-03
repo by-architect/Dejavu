@@ -47,6 +47,12 @@
     <string name="dejavu_folder_rename">Přejmenovat složku</string>
     <string name="dejavu_folder_unpack">Rozbalit složku</string>
     <string name="dejavu_folder_top_level">Připnuté panely, bez složky</string>
+    <plurals name="dejavu_folder_open_tabs">
+        <item quantity="one">%1$d otevřený panel</item>
+        <item quantity="few">%1$d otevřené panely</item>
+        <item quantity="many">%1$d otevřeného panelu</item>
+        <item quantity="other">%1$d otevřených panelů</item>
+    </plurals>
     <string name="dejavu_essentials_drop">Přetažením sem přidáte do Oblíbených</string>
     <string name="dejavu_essentials_full">Oblíbené pojmou až %1$d panelů</string>
     <string name="dejavu_temporary_by_default">Ve výchozím stavu dočasné kontejnery</string>
@@ -88,7 +94,19 @@
     <string name="dejavu_action_remove_from_essentials">Odebrat z Oblíbených</string>
     <string name="dejavu_action_delete">Smazat</string>
     <string name="dejavu_settings_title">Dejavu</string>
+    <string name="dejavu_about_content">%1$s je nezávislý prohlížeč sestavený z otevřeného zdrojového kódu Firefoxu a GeckoView od Mozilly. Mozilla ho nevytvořila, neschválila ani nepodporuje. Firefox je ochranná známka organizace Mozilla Foundation v USA a dalších zemích.</string>
+    <string name="dejavu_about_source_code">Zdrojový kód</string>
     <string name="dejavu_settings_tab_actions">Akce panelů</string>
+    <string name="dejavu_settings_tab_actions_entry_summary">Jeden seznam akcí a kde se která zobrazuje</string>
+    <string name="dejavu_settings_tab_actions_hint">Všechny akce jsou v jednom seznamu, včetně těch, které si přidáte sami. Vyberte, kde se má která zobrazovat: na připnutých panelech, nepřipnutých panelech a složkách, v liště, která se ukáže při výběru panelů, v nabídce Více a v liště akcí pod stránkami. Akce u složky se týkají všech panelů v ní.</string>
+    <string name="dejavu_settings_where_actions_show">Kde se akce zobrazují</string>
+    <string name="dejavu_settings_folders">Složky</string>
+    <string name="dejavu_settings_selection_bar">Lišta výběru</string>
+    <string name="dejavu_settings_folder_actions_hint">Vyberte až %1$d tlačítek pro řádky složek. Působí na všechny panely ve složce i v jejích podsložkách.</string>
+    <string name="dejavu_settings_action_places_none">Nezobrazuje se nikde</string>
+    <string name="dejavu_settings_action_place_unavailable">Zde nefunguje</string>
+    <string name="dejavu_settings_action_place_full">Už není místo</string>
+    <string name="dejavu_done">Hotovo</string>
     <string name="dejavu_settings_pinned_tabs">Připnuté panely</string>
     <string name="dejavu_settings_unpinned_tabs">Nepřipnuté panely</string>
     <string name="dejavu_settings_all_actions">Všechny akce</string>
@@ -185,6 +203,9 @@
     <string name="dejavu_actions_bar_search">Hledat</string>
     <string name="dejavu_actions_bar_home">Domů</string>
     <string name="dejavu_settings_more_menu_summary">Lišta akcí pod stránkami a nabídka, kterou otevírá</string>
+    <string name="dejavu_more_menu_hint">Celou nabídku otevřete přejetím lišty akcí nahoru nebo adresního řádku dolů. Klepnutím na tlačítko ho přesunete nebo odeberete. Rozšíření vždy zabírají celý řádek.</string>
+    <string name="dejavu_actions_bar_hint">Tlačítka pod stránkami. Působí na stránku, na které právě jste.</string>
+    <string name="dejavu_actions_bar_all_added">Všechna tlačítka už jsou v liště.</string>
     <string name="dejavu_more_menu_row">Řádek %1$d</string>
     <string name="dejavu_more_menu_add_item">Přidat tlačítko</string>
     <string name="dejavu_more_menu_add_row">Přidat řádek</string>
@@ -223,6 +244,24 @@
     <string name="dejavu_container_work">Práce</string>
     <string name="dejavu_container_banking">Bankovnictví</string>
     <string name="dejavu_container_shopping">Nakupování</string>
+    <string name="dejavu_history_group_by">Seskupit podle</string>
+    <string name="dejavu_history_group_by_date">Datum</string>
+    <string name="dejavu_history_group_by_workspace">Pracovní prostor</string>
+    <string name="dejavu_history_group_by_folder">Pracovní prostor a složka</string>
+    <string name="dejavu_history_other_pages">Ostatní stránky</string>
+    <string name="dejavu_settings_tab_sleep">Uspané panely</string>
+    <string name="dejavu_settings_tab_sleep_summary">Panely, které nepoužíváte, se uspí a uvolní paměť</string>
+    <string name="dejavu_tab_sleep_hint">Uspaný panel uvolní svou paměť a při otevření stránku znovu načte. Panel, na který se díváte, panel vedle něj v děleném zobrazení a panely, které přehrávají zvuk nebo používají fotoaparát či mikrofon, zůstávají vzhůru. Když Android potřebuje paměť a Dejavu běží na pozadí, uspí se všechny panely kromě dvou naposledy použitých.</string>
+    <string name="dejavu_tab_sleep_when">Uspávat panely</string>
+    <plurals name="dejavu_tab_sleep_after_minutes">
+        <item quantity="one">Po %d minutě bez použití</item>
+        <item quantity="few">Po %d minutách bez použití</item>
+        <item quantity="many">Po %d minuty bez použití</item>
+        <item quantity="other">Po %d minutách bez použití</item>
+    </plurals>
+    <string name="dejavu_tab_sleep_after_hour">Po hodině bez použití</string>
+    <string name="dejavu_tab_sleep_never">Nikdy</string>
+    <string name="dejavu_startup_crash_body">Při otevírání aplikace %1$s došlo k problému. Otevřete ji znovu a pokračujte v prohlížení.</string>
     <string name="dejavu_sync_normal_tabs">Zahrnout nepřipnuté panely</string>
     <string name="dejavu_sync_normal_tabs_summary">Také synchronizuje ostatní panely každého pracovního prostoru, nejen připnuté panely a složky. Zen je synchronizuje, když je zapnutá jeho vlastní volba Zahrnout nepřipnuté panely.</string>
     <plurals name="dejavu_selection_count">

@@ -47,6 +47,11 @@
     <string name="dejavu_folder_rename">Renomina ła cartela</string>
     <string name="dejavu_folder_unpack">Desfa ła cartela</string>
     <string name="dejavu_folder_top_level">Schede fisà, sensa cartela</string>
+    <plurals name="dejavu_folder_open_tabs">
+        <item quantity="one">%1$d scheda verta</item>
+        <item quantity="many">%1$d schede verte</item>
+        <item quantity="other">%1$d schede verte</item>
+    </plurals>
     <string name="dejavu_essentials_drop">Łasa qua par gionta ai essensiałi</string>
     <string name="dejavu_essentials_full">I essensiałi i pol conténjer fin a %1$d schede</string>
     <string name="dejavu_temporary_by_default">Contenidori temporanei par difeto</string>
@@ -88,7 +93,19 @@
     <string name="dejavu_action_remove_from_essentials">Cava via dai essensiałi</string>
     <string name="dejavu_action_delete">Eƚimina</string>
     <string name="dejavu_settings_title">Dejavu</string>
+    <string name="dejavu_about_content">%1$s el xe un navegador indipendente creà a partir dal còdaze open source de Firefox e GeckoView de Mozilla. No\'l xe fato, aprovà o sostegnìo da Mozilla. Firefox el xe un marchio de ła Mozilla Foundation intei Stati Unìi e in altri paesi.</string>
+    <string name="dejavu_about_source_code">Còdaze sorgente</string>
     <string name="dejavu_settings_tab_actions">Asion de łe schede</string>
+    <string name="dejavu_settings_tab_actions_entry_summary">Na soła lista de asion, e dove che ła vien fora ognuna</string>
+    <string name="dejavu_settings_tab_actions_hint">Tute łe asion łe xe in na soła lista, conprese quełe che te gionti ti. Sielsi dove che ła vien fora ognuna: so łe schede fisà, so łe schede mìa fisà e so łe cartełe, inte ła bara de łe schede seƚesionà, intel menù Altro e inte ła bara de łe asion soto łe pagine. Łe asion so na cartela łe riva a tute łe schede che ghe xe drento.</string>
+    <string name="dejavu_settings_where_actions_show">Dove che vien fora łe asion</string>
+    <string name="dejavu_settings_folders">Cartełe</string>
+    <string name="dejavu_settings_selection_bar">Bara de seƚesion</string>
+    <string name="dejavu_settings_folder_actions_hint">Sielsi fin a %1$d boton par łe righe de cartełe. I funsiona so tute łe schede de ła cartela e de łe so sotocartełe.</string>
+    <string name="dejavu_settings_action_places_none">No ła vien fora da nissuna parte</string>
+    <string name="dejavu_settings_action_place_unavailable">Qua no ła fa gnente</string>
+    <string name="dejavu_settings_action_place_full">No ghe xe pì posto</string>
+    <string name="dejavu_done">Fato</string>
     <string name="dejavu_settings_pinned_tabs">Schede fisà</string>
     <string name="dejavu_settings_unpinned_tabs">Schede mìa fisà</string>
     <string name="dejavu_settings_all_actions">Tute łe asion</string>
@@ -185,6 +202,9 @@
     <string name="dejavu_actions_bar_search">Serca</string>
     <string name="dejavu_actions_bar_home">Casa</string>
     <string name="dejavu_settings_more_menu_summary">Ła bara de łe asion soto łe pagine e el menù che ła verxe</string>
+    <string name="dejavu_more_menu_hint">Scori ła bara de łe asion in su, o ła bara de i indirisi in xo, par vèrxer tuto el menù. Toca un boton par spostarlo o cavarlo via. Łe estension łe ocupa senpre na riga intiera.</string>
+    <string name="dejavu_actions_bar_hint">I boton soto łe pagine. I funsiona so ła pagina dove che te si.</string>
+    <string name="dejavu_actions_bar_all_added">Onji boton el xe za inte ła bara.</string>
     <string name="dejavu_more_menu_row">Riga %1$d</string>
     <string name="dejavu_more_menu_add_item">Gionta un boton</string>
     <string name="dejavu_more_menu_add_row">Gionta na riga</string>
@@ -223,6 +243,23 @@
     <string name="dejavu_container_work">Laoro</string>
     <string name="dejavu_container_banking">Banca</string>
     <string name="dejavu_container_shopping">Spese</string>
+    <string name="dejavu_history_group_by">Ragrupa par</string>
+    <string name="dejavu_history_group_by_date">Data</string>
+    <string name="dejavu_history_group_by_workspace">Spasio de laoro</string>
+    <string name="dejavu_history_group_by_folder">Spasio de laoro e cartela</string>
+    <string name="dejavu_history_other_pages">Altre pagine</string>
+    <string name="dejavu_settings_tab_sleep">Schede in pausa</string>
+    <string name="dejavu_settings_tab_sleep_summary">Łe schede che no te dopari łe vien mese in pausa par liberar memoria</string>
+    <string name="dejavu_tab_sleep_hint">Na scheda in pausa ła libera ła so memoria e ła ricarga ła so pagina quando che te ła verxi. Ła scheda che te vardi, queła rente in vista divisa e łe schede che łe sona o che łe dopara ła fotocamera o el microfono łe resta ative. Quando che Android el ga bisogno de memoria mentre che Dejavu el xe in secondo piano, tute łe schede fora che łe ultime do che te ghe doparà łe vien mese in pausa.</string>
+    <string name="dejavu_tab_sleep_when">Meti na scheda in pausa</string>
+    <plurals name="dejavu_tab_sleep_after_minutes">
+        <item quantity="one">Dopo %d minuto sensa uso</item>
+        <item quantity="many">Dopo %d minuti sensa uso</item>
+        <item quantity="other">Dopo %d minuti sensa uso</item>
+    </plurals>
+    <string name="dejavu_tab_sleep_after_hour">Dopo un’ora sensa uso</string>
+    <string name="dejavu_tab_sleep_never">Mai</string>
+    <string name="dejavu_startup_crash_body">Ghe xe stà un problema a vèrxer %1$s. Verxiło da novo par continuar a navegar.</string>
     <string name="dejavu_sync_normal_tabs">Includi łe schede no fisà</string>
     <string name="dejavu_sync_normal_tabs_summary">El sincroniza anca łe altre schede de ogni spasio de laoro, no soło łe schede fisà e łe cartełe. Zen łe sincroniza cuando ła so opsion Includi łe schede no fisà ła xe ativa.</string>
     <plurals name="dejavu_selection_count">

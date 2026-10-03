@@ -47,6 +47,12 @@
     <string name="dejavu_folder_rename">Zmień nazwę folderu</string>
     <string name="dejavu_folder_unpack">Rozpakuj folder</string>
     <string name="dejavu_folder_top_level">Przypięte karty, bez folderu</string>
+    <plurals name="dejavu_folder_open_tabs">
+        <item quantity="one">%1$d otwarta karta</item>
+        <item quantity="few">%1$d otwarte karty</item>
+        <item quantity="many">%1$d otwartych kart</item>
+        <item quantity="other">%1$d otwartej karty</item>
+    </plurals>
     <string name="dejavu_essentials_drop">Upuść tutaj, aby dodać do ulubionych</string>
     <string name="dejavu_essentials_full">Ulubione mieszczą do %1$d kart</string>
     <string name="dejavu_temporary_by_default">Domyślnie kontenery tymczasowe</string>
@@ -88,7 +94,19 @@
     <string name="dejavu_action_remove_from_essentials">Usuń z ulubionych</string>
     <string name="dejavu_action_delete">Usuń</string>
     <string name="dejavu_settings_title">Dejavu</string>
+    <string name="dejavu_about_content">%1$s to niezależna przeglądarka zbudowana z otwartego kodu źródłowego Firefoksa i GeckoView autorstwa Mozilli. Nie jest tworzona, zatwierdzana ani wspierana przez Mozillę. Firefox jest znakiem towarowym Mozilla Foundation w USA i innych krajach.</string>
+    <string name="dejavu_about_source_code">Kod źródłowy</string>
     <string name="dejavu_settings_tab_actions">Akcje na kartach</string>
+    <string name="dejavu_settings_tab_actions_entry_summary">Jedna lista akcji i miejsca, w których się pojawiają</string>
+    <string name="dejavu_settings_tab_actions_hint">Wszystkie akcje są na jednej liście, łącznie z tymi, które dodasz samodzielnie. Wybierz, gdzie ma się pojawiać każda z nich: na przypiętych kartach, nieprzypiętych kartach i folderach, na pasku widocznym podczas zaznaczania kart, w menu „Więcej” i na pasku akcji pod stronami. Akcje na folderze obejmują każdą kartę w jego wnętrzu.</string>
+    <string name="dejavu_settings_where_actions_show">Gdzie pojawiają się akcje</string>
+    <string name="dejavu_settings_folders">Foldery</string>
+    <string name="dejavu_settings_selection_bar">Pasek zaznaczania</string>
+    <string name="dejavu_settings_folder_actions_hint">Wybierz do %1$d przycisków dla rzędów folderów. Obejmują każdą kartę w folderze i jego podfolderach.</string>
+    <string name="dejavu_settings_action_places_none">Nigdzie się nie pojawia</string>
+    <string name="dejavu_settings_action_place_unavailable">Tu nie działa</string>
+    <string name="dejavu_settings_action_place_full">Brak miejsca</string>
+    <string name="dejavu_done">Gotowe</string>
     <string name="dejavu_settings_pinned_tabs">Przypięte karty</string>
     <string name="dejavu_settings_unpinned_tabs">Nieprzypięte karty</string>
     <string name="dejavu_settings_all_actions">Wszystkie akcje</string>
@@ -185,6 +203,9 @@
     <string name="dejavu_actions_bar_search">Szukaj</string>
     <string name="dejavu_actions_bar_home">Start</string>
     <string name="dejavu_settings_more_menu_summary">Pasek akcji pod stronami i menu, które otwiera</string>
+    <string name="dejavu_more_menu_hint">Przeciągnij pasek akcji w górę lub pasek adresu w dół, aby otworzyć całe menu. Dotknij przycisku, aby go przenieść lub usunąć. Rozszerzenia zawsze zajmują cały rząd.</string>
+    <string name="dejavu_actions_bar_hint">Przyciski pod stronami. Działają na stronie, na której jesteś.</string>
+    <string name="dejavu_actions_bar_all_added">Wszystkie przyciski są już na pasku.</string>
     <string name="dejavu_more_menu_row">Rząd %1$d</string>
     <string name="dejavu_more_menu_add_item">Dodaj przycisk</string>
     <string name="dejavu_more_menu_add_row">Dodaj rząd</string>
@@ -223,6 +244,24 @@
     <string name="dejavu_container_work">Praca</string>
     <string name="dejavu_container_banking">Bankowość</string>
     <string name="dejavu_container_shopping">Zakupy</string>
+    <string name="dejavu_history_group_by">Grupuj według</string>
+    <string name="dejavu_history_group_by_date">Data</string>
+    <string name="dejavu_history_group_by_workspace">Obszar roboczy</string>
+    <string name="dejavu_history_group_by_folder">Obszar roboczy i folder</string>
+    <string name="dejavu_history_other_pages">Inne strony</string>
+    <string name="dejavu_settings_tab_sleep">Uśpione karty</string>
+    <string name="dejavu_settings_tab_sleep_summary">Nieużywane karty są usypiane, aby zwolnić pamięć</string>
+    <string name="dejavu_tab_sleep_hint">Uśpiona karta zwalnia swoją pamięć i ponownie wczytuje stronę, gdy ją otworzysz. Karta, którą oglądasz, karta obok niej w widoku podzielonym oraz karty odtwarzające dźwięk lub używające aparatu albo mikrofonu nie są usypiane. Gdy Android potrzebuje pamięci, a Dejavu działa w tle, usypiane są wszystkie karty oprócz dwóch ostatnio używanych.</string>
+    <string name="dejavu_tab_sleep_when">Usypiaj karty</string>
+    <plurals name="dejavu_tab_sleep_after_minutes">
+        <item quantity="one">Po %d minucie bez używania</item>
+        <item quantity="few">Po %d minutach bez używania</item>
+        <item quantity="many">Po %d minutach bez używania</item>
+        <item quantity="other">Po %d minuty bez używania</item>
+    </plurals>
+    <string name="dejavu_tab_sleep_after_hour">Po godzinie bez używania</string>
+    <string name="dejavu_tab_sleep_never">Nigdy</string>
+    <string name="dejavu_startup_crash_body">Wystąpił problem podczas otwierania przeglądarki %1$s. Otwórz ją ponownie, aby kontynuować przeglądanie.</string>
     <string name="dejavu_sync_normal_tabs">Uwzględniaj nieprzypięte karty</string>
     <string name="dejavu_sync_normal_tabs_summary">Synchronizuje też pozostałe karty każdego obszaru roboczego, a nie tylko przypięte karty i foldery. Zen synchronizuje je, gdy włączona jest jego własna opcja Uwzględniaj nieprzypięte karty.</string>
     <plurals name="dejavu_selection_count">

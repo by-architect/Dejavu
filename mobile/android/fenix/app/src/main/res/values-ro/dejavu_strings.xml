@@ -47,6 +47,11 @@
     <string name="dejavu_folder_rename">Redenumește folderul</string>
     <string name="dejavu_folder_unpack">Desfă folderul</string>
     <string name="dejavu_folder_top_level">File fixate, fără folder</string>
+    <plurals name="dejavu_folder_open_tabs">
+        <item quantity="one">%1$d filă deschisă</item>
+        <item quantity="few">%1$d file deschise</item>
+        <item quantity="other">%1$d de file deschise</item>
+    </plurals>
     <string name="dejavu_essentials_drop">Lasă aici pentru a adăuga la favorite</string>
     <string name="dejavu_essentials_full">Favorite poate conține până la %1$d file</string>
     <string name="dejavu_temporary_by_default">Containere temporare în mod implicit</string>
@@ -88,7 +93,19 @@
     <string name="dejavu_action_remove_from_essentials">Elimină din favorite</string>
     <string name="dejavu_action_delete">Șterge</string>
     <string name="dejavu_settings_title">Dejavu</string>
+    <string name="dejavu_about_content">%1$s este un browser independent, construit pornind de la codul open source Firefox și GeckoView al Mozilla. Nu este creat, aprobat sau susținut de Mozilla. Firefox este o marcă comercială a Mozilla Foundation în SUA și în alte țări.</string>
+    <string name="dejavu_about_source_code">Cod sursă</string>
     <string name="dejavu_settings_tab_actions">Acțiuni pentru file</string>
+    <string name="dejavu_settings_tab_actions_entry_summary">O singură listă de acțiuni și locul în care apare fiecare</string>
+    <string name="dejavu_settings_tab_actions_hint">Toate acțiunile sunt într-o singură listă, inclusiv cele pe care le adaugi tu. Alege unde apare fiecare: pe filele fixate, pe filele nefixate și pe foldere, în bara filelor selectate, în meniul „Mai multe” și în bara de acțiuni de sub pagini. Acțiunile pe un folder ajung la toate filele din el.</string>
+    <string name="dejavu_settings_where_actions_show">Unde apar acțiunile</string>
+    <string name="dejavu_settings_folders">Foldere</string>
+    <string name="dejavu_settings_selection_bar">Bara de selecție</string>
+    <string name="dejavu_settings_folder_actions_hint">Alege până la %1$d butoane pentru rândurile de foldere. Ele acționează asupra tuturor filelor din folder și din subfolderele sale.</string>
+    <string name="dejavu_settings_action_places_none">Nu apare nicăieri</string>
+    <string name="dejavu_settings_action_place_unavailable">Nu are efect aici</string>
+    <string name="dejavu_settings_action_place_full">Nu mai este loc</string>
+    <string name="dejavu_done">Gata</string>
     <string name="dejavu_settings_pinned_tabs">File fixate</string>
     <string name="dejavu_settings_unpinned_tabs">File nefixate</string>
     <string name="dejavu_settings_all_actions">Toate acțiunile</string>
@@ -185,6 +202,9 @@
     <string name="dejavu_actions_bar_search">Căutare</string>
     <string name="dejavu_actions_bar_home">Acasă</string>
     <string name="dejavu_settings_more_menu_summary">Bara de acțiuni de sub pagini și meniul pe care îl deschide</string>
+    <string name="dejavu_more_menu_hint">Glisează bara de acțiuni în sus sau bara de adrese în jos pentru a deschide meniul complet. Atinge un buton pentru a-l muta sau elimina. Extensiile ocupă întotdeauna un rând întreg.</string>
+    <string name="dejavu_actions_bar_hint">Butoanele de sub pagini. Acționează asupra paginii pe care te afli.</string>
+    <string name="dejavu_actions_bar_all_added">Toate butoanele sunt deja în bară.</string>
     <string name="dejavu_more_menu_row">Rândul %1$d</string>
     <string name="dejavu_more_menu_add_item">Adaugă un buton</string>
     <string name="dejavu_more_menu_add_row">Adaugă un rând</string>
@@ -223,6 +243,23 @@
     <string name="dejavu_container_work">Serviciu</string>
     <string name="dejavu_container_banking">Bancar</string>
     <string name="dejavu_container_shopping">Cumpărături</string>
+    <string name="dejavu_history_group_by">Grupează după</string>
+    <string name="dejavu_history_group_by_date">Dată</string>
+    <string name="dejavu_history_group_by_workspace">Spațiu de lucru</string>
+    <string name="dejavu_history_group_by_folder">Spațiu de lucru și folder</string>
+    <string name="dejavu_history_other_pages">Alte pagini</string>
+    <string name="dejavu_settings_tab_sleep">File hibernate</string>
+    <string name="dejavu_settings_tab_sleep_summary">Filele pe care nu le folosești hibernează pentru a elibera memorie</string>
+    <string name="dejavu_tab_sleep_hint">O filă hibernată își eliberează memoria și își reîncarcă pagina când o deschizi. Fila la care te uiți, cea de lângă ea în ecranul împărțit și filele care redau sunet sau folosesc camera ori microfonul rămân active. Când Android are nevoie de memorie în timp ce Dejavu este în fundal, toate filele, în afară de ultimele două pe care le-ai folosit, hibernează.</string>
+    <string name="dejavu_tab_sleep_when">Hibernarea unei file</string>
+    <plurals name="dejavu_tab_sleep_after_minutes">
+        <item quantity="one">După %d minut fără utilizare</item>
+        <item quantity="few">După %d minute fără utilizare</item>
+        <item quantity="other">După %d de minute fără utilizare</item>
+    </plurals>
+    <string name="dejavu_tab_sleep_after_hour">După o oră fără utilizare</string>
+    <string name="dejavu_tab_sleep_never">Niciodată</string>
+    <string name="dejavu_startup_crash_body">A apărut o problemă la deschiderea %1$s. Redeschide-l pentru a continua navigarea.</string>
     <string name="dejavu_sync_normal_tabs">Include filele nefixate</string>
     <string name="dejavu_sync_normal_tabs_summary">De asemenea, sincronizează celelalte file ale fiecărui spațiu de lucru, nu doar filele fixate și folderele. Zen le sincronizează atunci când propria sa opțiune Include filele nefixate este activată.</string>
     <plurals name="dejavu_selection_count">

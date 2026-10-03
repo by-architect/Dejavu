@@ -47,6 +47,9 @@
     <string name="dejavu_folder_rename">ប្ដូរឈ្មោះថត</string>
     <string name="dejavu_folder_unpack">ពន្លាថត</string>
     <string name="dejavu_folder_top_level">ផ្ទាំងបានខ្ទាស់ គ្មានថត</string>
+    <plurals name="dejavu_folder_open_tabs">
+        <item quantity="other">%1$d ផ្ទាំងកំពុងបើក</item>
+    </plurals>
     <string name="dejavu_essentials_drop">ទម្លាក់នៅទីនេះដើម្បីបន្ថែមទៅសំខាន់ៗ</string>
     <string name="dejavu_essentials_full">សំខាន់ៗផ្ទុកបានរហូតដល់ %1$d ផ្ទាំង</string>
     <string name="dejavu_temporary_by_default">កុងតឺន័របណ្ដោះអាសន្នតាមលំនាំដើម</string>
@@ -88,7 +91,19 @@
     <string name="dejavu_action_remove_from_essentials">ដកចេញពីសំខាន់ៗ</string>
     <string name="dejavu_action_delete">លុប</string>
     <string name="dejavu_settings_title">Dejavu</string>
+    <string name="dejavu_about_content">%1$s គឺជាកម្មវិធីរុករកឯករាជ្យដែលបង្កើតឡើងពីកូដប្រភពបើកចំហ Firefox និង GeckoView របស់ Mozilla។ វាមិនត្រូវបានបង្កើត យល់ព្រម ឬគាំទ្រដោយ Mozilla ទេ។ Firefox គឺជាពាណិជ្ជសញ្ញារបស់ Mozilla Foundation នៅសហរដ្ឋអាមេរិក និងប្រទេសផ្សេងទៀត។</string>
+    <string name="dejavu_about_source_code">កូដប្រភព</string>
     <string name="dejavu_settings_tab_actions">សកម្មភាពផ្ទាំង</string>
+    <string name="dejavu_settings_tab_actions_entry_summary">បញ្ជីសកម្មភាពតែមួយ និងកន្លែងដែលសកម្មភាពនីមួយៗបង្ហាញ</string>
+    <string name="dejavu_settings_tab_actions_hint">សកម្មភាពទាំងអស់ស្ថិតនៅក្នុងបញ្ជីតែមួយ រួមទាំងសកម្មភាពដែលអ្នកបន្ថែមដោយខ្លួនឯងផងដែរ។ ជ្រើសរើសកន្លែងដែលសកម្មភាពនីមួយៗបង្ហាញ៖ លើផ្ទាំងបានខ្ទាស់ ផ្ទាំងមិនបានខ្ទាស់ និងថត នៅក្នុងរបារនៃផ្ទាំងដែលបានជ្រើសរើស នៅក្នុងម៉ឺនុយបន្ថែម និងនៅក្នុងរបារសកម្មភាពនៅក្រោមទំព័រ។ សកម្មភាពលើថតមួយមានឥទ្ធិពលលើផ្ទាំងទាំងអស់នៅក្នុងថតនោះ។</string>
+    <string name="dejavu_settings_where_actions_show">កន្លែងដែលសកម្មភាពបង្ហាញ</string>
+    <string name="dejavu_settings_folders">ថត</string>
+    <string name="dejavu_settings_selection_bar">របារជ្រើសរើស</string>
+    <string name="dejavu_settings_folder_actions_hint">ជ្រើសរើសប៊ូតុងរហូតដល់ %1$d សម្រាប់ជួរថត។ ប៊ូតុងទាំងនេះដំណើរការលើផ្ទាំងទាំងអស់នៅក្នុងថត និងថតរងរបស់វា។</string>
+    <string name="dejavu_settings_action_places_none">មិនបង្ហាញនៅកន្លែងណាទេ</string>
+    <string name="dejavu_settings_action_place_unavailable">មិនដំណើរការនៅទីនោះ</string>
+    <string name="dejavu_settings_action_place_full">គ្មានកន្លែងទំនេរទៀតទេ</string>
+    <string name="dejavu_done">ធ្វើរួច</string>
     <string name="dejavu_settings_pinned_tabs">ផ្ទាំងបានខ្ទាស់</string>
     <string name="dejavu_settings_unpinned_tabs">ផ្ទាំងមិនបានខ្ទាស់</string>
     <string name="dejavu_settings_all_actions">សកម្មភាពទាំងអស់</string>
@@ -185,6 +200,9 @@
     <string name="dejavu_actions_bar_search">ស្វែងរក</string>
     <string name="dejavu_actions_bar_home">ទំព័រដើម</string>
     <string name="dejavu_settings_more_menu_summary">របារសកម្មភាពនៅក្រោមទំព័រ និងម៉ឺនុយដែលវាបើក</string>
+    <string name="dejavu_more_menu_hint">អូសរបារសកម្មភាពឡើងលើ ឬរបារអាសយដ្ឋានចុះក្រោម ដើម្បីបើកម៉ឺនុយទាំងមូល។ ចុចលើប៊ូតុងមួយដើម្បីផ្លាស់ទី ឬដកវាចេញ។ ផ្នែកបន្ថែមតែងតែប្រើជួរមួយពេញ។</string>
+    <string name="dejavu_actions_bar_hint">ប៊ូតុងនៅក្រោមទំព័រ។ ប៊ូតុងទាំងនេះដំណើរការលើទំព័រដែលអ្នកកំពុងមើល។</string>
+    <string name="dejavu_actions_bar_all_added">ប៊ូតុងទាំងអស់មាននៅក្នុងរបាររួចហើយ។</string>
     <string name="dejavu_more_menu_row">ជួរទី %1$d</string>
     <string name="dejavu_more_menu_add_item">បន្ថែមប៊ូតុងមួយ</string>
     <string name="dejavu_more_menu_add_row">បន្ថែមជួរមួយ</string>
@@ -223,6 +241,21 @@
     <string name="dejavu_container_work">ការងារ</string>
     <string name="dejavu_container_banking">ធនាគារ</string>
     <string name="dejavu_container_shopping">ការទិញឥវ៉ាន់</string>
+    <string name="dejavu_history_group_by">ដាក់ជាក្រុមតាម</string>
+    <string name="dejavu_history_group_by_date">កាលបរិច្ឆេទ</string>
+    <string name="dejavu_history_group_by_workspace">ចន្លោះការងារ</string>
+    <string name="dejavu_history_group_by_folder">ចន្លោះការងារ និងថត</string>
+    <string name="dejavu_history_other_pages">ទំព័រផ្សេងទៀត</string>
+    <string name="dejavu_settings_tab_sleep">ផ្ទាំងដេក</string>
+    <string name="dejavu_settings_tab_sleep_summary">ផ្ទាំងដែលអ្នកមិនប្រើនឹងដេក ដើម្បីបញ្ចេញអង្គចងចាំ</string>
+    <string name="dejavu_tab_sleep_hint">ផ្ទាំងដែលកំពុងដេកបញ្ចេញអង្គចងចាំរបស់វា ហើយផ្ទុកទំព័ររបស់វាឡើងវិញនៅពេលអ្នកបើកវា។ ផ្ទាំងដែលអ្នកកំពុងមើល ផ្ទាំងនៅជាប់វានៅក្នុងទិដ្ឋភាពបំបែក និងផ្ទាំងដែលកំពុងចាក់សំឡេង ឬប្រើកាមេរ៉ា ឬម៉ាយក្រូផូន នៅតែភ្ញាក់។ នៅពេល Android ត្រូវការអង្គចងចាំ ខណៈពេល Dejavu នៅផ្ទៃខាងក្រោយ ផ្ទាំងទាំងអស់នឹងដេក លើកលែងតែផ្ទាំងពីរដែលអ្នកបានប្រើចុងក្រោយ។</string>
+    <string name="dejavu_tab_sleep_when">ធ្វើឲ្យផ្ទាំងដេក</string>
+    <plurals name="dejavu_tab_sleep_after_minutes">
+        <item quantity="other">បន្ទាប់ពី %d នាទីដោយមិនប្រើ</item>
+    </plurals>
+    <string name="dejavu_tab_sleep_after_hour">បន្ទាប់ពីមួយម៉ោងដោយមិនប្រើ</string>
+    <string name="dejavu_tab_sleep_never">កុំឲ្យសោះ</string>
+    <string name="dejavu_startup_crash_body">មានបញ្ហាក្នុងការបើក %1$s។ បើកវាឡើងវិញដើម្បីបន្តរុករក។</string>
     <string name="dejavu_sync_normal_tabs">រួមបញ្ចូលផ្ទាំងដែលមិនបានខ្ទាស់</string>
     <string name="dejavu_sync_normal_tabs_summary">វាក៏ធ្វើសមកាលកម្មផ្ទាំងផ្សេងទៀតរបស់ចន្លោះការងារនីមួយៗផងដែរ មិនមែនគ្រាន់តែផ្ទាំងបានខ្ទាស់ និងថតប៉ុណ្ណោះទេ។ Zen ធ្វើសមកាលកម្មពួកវា នៅពេលជម្រើសផ្ទាល់ខ្លួនរបស់វា រួមបញ្ចូលផ្ទាំងដែលមិនបានខ្ទាស់ ត្រូវបានបើក។</string>
     <plurals name="dejavu_selection_count">

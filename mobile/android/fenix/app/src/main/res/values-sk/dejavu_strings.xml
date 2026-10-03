@@ -47,6 +47,12 @@
     <string name="dejavu_folder_rename">Premenovať priečinok</string>
     <string name="dejavu_folder_unpack">Rozbaliť priečinok</string>
     <string name="dejavu_folder_top_level">Pripnuté karty, bez priečinka</string>
+    <plurals name="dejavu_folder_open_tabs">
+        <item quantity="one">%1$d otvorená karta</item>
+        <item quantity="few">%1$d otvorené karty</item>
+        <item quantity="many">%1$d otvorených kariet</item>
+        <item quantity="other">%1$d otvorených kariet</item>
+    </plurals>
     <string name="dejavu_essentials_drop">Sem presuňte pre pridanie medzi obľúbené</string>
     <string name="dejavu_essentials_full">Obľúbené pojmú až %1$d kariet</string>
     <string name="dejavu_temporary_by_default">Dočasné kontajnery predvolene</string>
@@ -88,7 +94,19 @@
     <string name="dejavu_action_remove_from_essentials">Odstrániť z obľúbených</string>
     <string name="dejavu_action_delete">Odstrániť</string>
     <string name="dejavu_settings_title">Dejavu</string>
+    <string name="dejavu_about_content">%1$s je nezávislý prehliadač zostavený z otvoreného zdrojového kódu Firefoxu a GeckoView od Mozilly. Mozilla ho nevytvorila, neschválila ani ho nepodporuje. Firefox je ochranná známka organizácie Mozilla Foundation v USA a ďalších krajinách.</string>
+    <string name="dejavu_about_source_code">Zdrojový kód</string>
     <string name="dejavu_settings_tab_actions">Akcie kariet</string>
+    <string name="dejavu_settings_tab_actions_entry_summary">Jeden zoznam akcií a kde sa ktorá zobrazuje</string>
+    <string name="dejavu_settings_tab_actions_hint">Všetky akcie sú v jednom zozname vrátane tých, ktoré si pridáte sami. Vyberte, kde sa má každá zobrazovať: na pripnutých kartách, nepripnutých kartách a priečinkoch, na paneli, ktorý sa zobrazí pri výbere kariet, v ponuke „Viac“ a na paneli akcií pod stránkami. Akcie na priečinku sa týkajú všetkých kariet v ňom.</string>
+    <string name="dejavu_settings_where_actions_show">Kde sa zobrazujú akcie</string>
+    <string name="dejavu_settings_folders">Priečinky</string>
+    <string name="dejavu_settings_selection_bar">Panel výberu</string>
+    <string name="dejavu_settings_folder_actions_hint">Vyberte až %1$d tlačidiel pre riadky priečinkov. Pôsobia na všetky karty v priečinku a jeho podpriečinkoch.</string>
+    <string name="dejavu_settings_action_places_none">Nezobrazuje sa nikde</string>
+    <string name="dejavu_settings_action_place_unavailable">Tu nefunguje</string>
+    <string name="dejavu_settings_action_place_full">Nie je miesto</string>
+    <string name="dejavu_done">Hotovo</string>
     <string name="dejavu_settings_pinned_tabs">Pripnuté karty</string>
     <string name="dejavu_settings_unpinned_tabs">Nepripnuté karty</string>
     <string name="dejavu_settings_all_actions">Všetky akcie</string>
@@ -185,6 +203,9 @@
     <string name="dejavu_actions_bar_search">Hľadať</string>
     <string name="dejavu_actions_bar_home">Domov</string>
     <string name="dejavu_settings_more_menu_summary">Panel akcií pod stránkami a ponuka, ktorú otvára</string>
+    <string name="dejavu_more_menu_hint">Potiahnutím panela akcií nahor alebo panela s adresou nadol otvoríte celú ponuku. Ťuknutím na tlačidlo ho presuniete alebo odstránite. Rozšírenia vždy zaberajú celý riadok.</string>
+    <string name="dejavu_actions_bar_hint">Tlačidlá pod stránkami. Pôsobia na stránku, na ktorej sa nachádzate.</string>
+    <string name="dejavu_actions_bar_all_added">Všetky tlačidlá sú už na paneli.</string>
     <string name="dejavu_more_menu_row">Riadok %1$d</string>
     <string name="dejavu_more_menu_add_item">Pridať tlačidlo</string>
     <string name="dejavu_more_menu_add_row">Pridať riadok</string>
@@ -223,6 +244,24 @@
     <string name="dejavu_container_work">Práca</string>
     <string name="dejavu_container_banking">Bankovníctvo</string>
     <string name="dejavu_container_shopping">Nákupy</string>
+    <string name="dejavu_history_group_by">Zoskupiť podľa</string>
+    <string name="dejavu_history_group_by_date">Dátum</string>
+    <string name="dejavu_history_group_by_workspace">Pracovný priestor</string>
+    <string name="dejavu_history_group_by_folder">Pracovný priestor a priečinok</string>
+    <string name="dejavu_history_other_pages">Ostatné stránky</string>
+    <string name="dejavu_settings_tab_sleep">Uspané karty</string>
+    <string name="dejavu_settings_tab_sleep_summary">Karty, ktoré nepoužívate, sa uspia a uvoľnia pamäť</string>
+    <string name="dejavu_tab_sleep_hint">Uspaná karta uvoľní svoju pamäť a po otvorení znova načíta stránku. Karta, na ktorú sa pozeráte, karta vedľa nej v rozdelenom zobrazení a karty, ktoré prehrávajú zvuk alebo používajú kameru či mikrofón, zostávajú aktívne. Keď Android potrebuje pamäť a Dejavu beží na pozadí, uspia sa všetky karty okrem dvoch naposledy použitých.</string>
+    <string name="dejavu_tab_sleep_when">Uspávať karty</string>
+    <plurals name="dejavu_tab_sleep_after_minutes">
+        <item quantity="one">Po %d minúte bez používania</item>
+        <item quantity="few">Po %d minútach bez používania</item>
+        <item quantity="many">Po %d minútach bez používania</item>
+        <item quantity="other">Po %d minútach bez používania</item>
+    </plurals>
+    <string name="dejavu_tab_sleep_after_hour">Po hodine bez používania</string>
+    <string name="dejavu_tab_sleep_never">Nikdy</string>
+    <string name="dejavu_startup_crash_body">Pri otváraní aplikácie %1$s sa vyskytol problém. Otvorte ju znova a pokračujte v prehliadaní.</string>
     <string name="dejavu_sync_normal_tabs">Zahrnúť nepripnuté karty</string>
     <string name="dejavu_sync_normal_tabs_summary">Taktiež synchronizuje ostatné karty každého pracovného priestoru, nielen pripnuté karty a priečinky. Zen ich synchronizuje, keď je zapnutá jeho vlastná možnosť Zahrnúť nepripnuté karty.</string>
     <plurals name="dejavu_selection_count">

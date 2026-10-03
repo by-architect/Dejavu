@@ -47,6 +47,10 @@
     <string name="dejavu_folder_rename">Tijal rub\'i\' karpeta</string>
     <string name="dejavu_folder_unpack">Tirelesaj taq ruwi\' pa karpeta</string>
     <string name="dejavu_folder_top_level">Ximon taq ruwi\', majun karpeta</string>
+    <plurals name="dejavu_folder_open_tabs">
+        <item quantity="one">%1$d jaqäl ruwi\'</item>
+        <item quantity="other">%1$d jaqäl taq ruwi\'</item>
+    </plurals>
     <string name="dejavu_essentials_drop">Waweˈ, richin natz\'aqatisaj pa taq rajawaxel</string>
     <string name="dejavu_essentials_full">Xa yeb\'e %1$d ruwi\' pa taq rajawaxel</string>
     <string name="dejavu_temporary_by_default">Taq k\'olib\'äl temporal ronojel mul</string>
@@ -88,7 +92,19 @@
     <string name="dejavu_action_remove_from_essentials">Tirelesäx pa taq rajawaxel</string>
     <string name="dejavu_action_delete">Tiyuj</string>
     <string name="dejavu_settings_title">Dejavu</string>
+    <string name="dejavu_about_content">%1$s jun ajyonil okik\'amaya\'l b\'anon rik\'in ri jaqäl ruxe\'el rub\'itz\'ib\' Firefox chuqa\' GeckoView richin Mozilla. Mozilla man xub\'än ta, man nuchilab\'ej ta chuqa\' man nuto\' ta. Firefox jun retal k\'ayij richin Mozilla Foundation pa Estados Unidos chuqa\' pa ch\'aqa\' chik taq amaq\'.</string>
+    <string name="dejavu_about_source_code">Ruxe\'el b\'itz\'ib\'</string>
     <string name="dejavu_settings_tab_actions">B\'anob\'äl richin taq ruwi\'</string>
+    <string name="dejavu_settings_tab_actions_entry_summary">Jun cholajem b\'anob\'äl, chuqa\' akuchi\' nik\'ut wi ri jujun</string>
+    <string name="dejavu_settings_tab_actions_hint">Ronojel b\'anob\'äl e k\'o pa jun cholajem, chuqa\' ri ye\'atz\'aqatisaj ayon. Tacha\' akuchi\' nik\'ut wi ri jujun: pa ximon taq ruwi\', man ximon ta taq ruwi\' chuqa\' taq karpeta, pa rucholaj ri cha\'on taq ruwi\', pa Menú Ch\'aqa\' chik chuqa\' pa Cholaj b\'anob\'äl chuxe\'el ri taq ruxaq. Ri taq b\'anob\'äl pa jun karpeta yeb\'e pa ronojel ruwi\' k\'o chi rupam.</string>
+    <string name="dejavu_settings_where_actions_show">Akuchi\' yek\'ut wi ri b\'anob\'äl</string>
+    <string name="dejavu_settings_folders">Taq karpeta</string>
+    <string name="dejavu_settings_selection_bar">Cholaj cha\'oj</string>
+    <string name="dejavu_settings_folder_actions_hint">Tacha\' ye\'ok %1$d botón richin kicholaj taq karpeta. Yesamäj pa ronojel ruwi\' k\'o chi rupam ri karpeta chuqa\' ri ralk\'wal taq karpeta.</string>
+    <string name="dejavu_settings_action_places_none">Majun akuchi\' nik\'ut wi</string>
+    <string name="dejavu_settings_action_place_unavailable">Majun nub\'än chiri\'</string>
+    <string name="dejavu_settings_action_place_full">Nojinäq chik</string>
+    <string name="dejavu_done">Xk\'is</string>
     <string name="dejavu_settings_pinned_tabs">Ximon taq ruwi\'</string>
     <string name="dejavu_settings_unpinned_tabs">Man ximon ta taq ruwi\'</string>
     <string name="dejavu_settings_all_actions">Ronojel b\'anob\'äl</string>
@@ -185,6 +201,9 @@
     <string name="dejavu_actions_bar_search">Tikanöx</string>
     <string name="dejavu_actions_bar_home">Tikirib\'äl</string>
     <string name="dejavu_settings_more_menu_summary">Ri cholaj b\'anob\'äl chuxe\'el ruxaq chuqa\' ri menú nujäq</string>
+    <string name="dejavu_more_menu_hint">Taq\'axaj ri Cholaj b\'anob\'äl pa ruwi\', o ri kikajtz\'ik ochochib\'äl pa xe\'el, richin najäq ronojel ri menú. Tapitz\'a\' jun botón richin najech\' o nawelesaj. Ri taq k\'amal jantape\' nikinojisaj jun cholaj.</string>
+    <string name="dejavu_actions_bar_hint">Ri taq botón chuxe\'el ri taq ruxaq. Yesamäj pa ri ruxaq akuchi\' at k\'o wi.</string>
+    <string name="dejavu_actions_bar_all_added">Ronojel botón k\'o chik pa cholaj.</string>
     <string name="dejavu_more_menu_row">Cholaj %1$d</string>
     <string name="dejavu_more_menu_add_item">Titz\'aqatisäx jun botón</string>
     <string name="dejavu_more_menu_add_row">Titz\'aqatisäx jun cholaj</string>
@@ -223,6 +242,22 @@
     <string name="dejavu_container_work">Samaj</string>
     <string name="dejavu_container_banking">Bank</string>
     <string name="dejavu_container_shopping">Loq\'oj</string>
+    <string name="dejavu_history_group_by">Kemolöx rik\'in</string>
+    <string name="dejavu_history_group_by_date">Q\'ijul</string>
+    <string name="dejavu_history_group_by_workspace">Samajib\'äl</string>
+    <string name="dejavu_history_group_by_folder">Samajib\'äl chuqa\' karpeta</string>
+    <string name="dejavu_history_other_pages">Ch\'aqa\' chik taq ruxaq</string>
+    <string name="dejavu_settings_tab_sleep">Warinäq taq ruwi\'</string>
+    <string name="dejavu_settings_tab_sleep_summary">Ri taq ruwi\' man ye\'awokisaj ta yewar richin nikitzoqopij memoria</string>
+    <string name="dejavu_tab_sleep_hint">Jun warinäq ruwi\' nutzoqopij rumemoria chuqa\' nuk\'ak\'a\'irisaj chik ri ruxaq toq najäq. Ri ruwi\' natz\'ët, ri k\'o chunaqaj pa Vista pa ka\'i\' chuqa\' ri taq ruwi\' nikitzij k\'oxom o nikokisaj elesäy wachib\'äl o q\'asäy ch\'ab\'äl man yewar ta. Toq Android nrajo\' memoria toq Dejavu k\'o chi rij, ronojel taq ruwi\' yewar, xa xe ri ka\'i\' ruk\'isib\'äl xe\'awokisaj man yewar ta.</string>
+    <string name="dejavu_tab_sleep_when">Tiwarïx jun ruwi\'</string>
+    <plurals name="dejavu_tab_sleep_after_minutes">
+        <item quantity="one">Chi rij %d ch\'utiramaj man nokisäx ta</item>
+        <item quantity="other">Chi rij %d ch\'utiramaj man nokisäx ta</item>
+    </plurals>
+    <string name="dejavu_tab_sleep_after_hour">Chi rij jun ramaj man nokisäx ta</string>
+    <string name="dejavu_tab_sleep_never">Majub\'ey</string>
+    <string name="dejavu_startup_crash_body">Xk\'oje\' jun k\'ayewal toq xjaq %1$s. Tajäq chik richin nik\'oje\' ri okem pa k\'amaya\'l.</string>
     <string name="dejavu_sync_normal_tabs">Tokisäx ri man ximon ta taq ruwi\'</string>
     <string name="dejavu_sync_normal_tabs_summary">Xa xe\' kan nujunamirisaj chuqa\' ri taq ruwi\' chik pa ronojel samajib\'äl, man xaxe\' ta ri ximon taq ruwi\' chuqa\' ri taq karpeta. Ri Zen nujunamirisaj toq tzijon ri rupatan Tokisäx ri man ximon ta taq ruwi\'.</string>
     <plurals name="dejavu_selection_count">

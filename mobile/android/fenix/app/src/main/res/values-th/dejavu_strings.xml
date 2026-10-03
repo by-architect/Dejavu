@@ -47,6 +47,9 @@
     <string name="dejavu_folder_rename">เปลี่ยนชื่อโฟลเดอร์</string>
     <string name="dejavu_folder_unpack">แยกโฟลเดอร์</string>
     <string name="dejavu_folder_top_level">แท็บที่ปักหมุด (ไม่มีโฟลเดอร์)</string>
+    <plurals name="dejavu_folder_open_tabs">
+        <item quantity="other">เปิดอยู่ %1$d แท็บ</item>
+    </plurals>
     <string name="dejavu_essentials_drop">วางที่นี่เพื่อเพิ่มลงในเว็บที่ใช้บ่อย</string>
     <string name="dejavu_essentials_full">เว็บที่ใช้บ่อยเก็บได้สูงสุด %1$d แท็บ</string>
     <string name="dejavu_temporary_by_default">ใช้คอนเทนเนอร์ชั่วคราวโดยค่าเริ่มต้น</string>
@@ -88,7 +91,19 @@
     <string name="dejavu_action_remove_from_essentials">นำออกจากเว็บที่ใช้บ่อย</string>
     <string name="dejavu_action_delete">ลบ</string>
     <string name="dejavu_settings_title">Dejavu</string>
+    <string name="dejavu_about_content">%1$s เป็นเบราว์เซอร์อิสระที่สร้างขึ้นจากโค้ดโอเพนซอร์สของ Firefox และ GeckoView จาก Mozilla ทั้งนี้ Mozilla ไม่ได้เป็นผู้สร้าง รับรอง หรือสนับสนุนเบราว์เซอร์นี้ Firefox เป็นเครื่องหมายการค้าของ Mozilla Foundation ในสหรัฐอเมริกาและประเทศอื่น ๆ</string>
+    <string name="dejavu_about_source_code">ซอร์สโค้ด</string>
     <string name="dejavu_settings_tab_actions">การดำเนินการของแท็บ</string>
+    <string name="dejavu_settings_tab_actions_entry_summary">รายการการดำเนินการเดียว และตำแหน่งที่แต่ละรายการแสดง</string>
+    <string name="dejavu_settings_tab_actions_hint">การดำเนินการทั้งหมดอยู่ในรายการเดียว รวมถึงการดำเนินการที่คุณเพิ่มเอง เลือกตำแหน่งที่จะแสดงแต่ละรายการ: บนแท็บที่ปักหมุด แท็บที่ไม่ได้ปักหมุด และโฟลเดอร์ ในแถบของแท็บที่เลือก ในเมนูเพิ่มเติม และในแถบการดำเนินการด้านล่างหน้าเว็บ การดำเนินการบนโฟลเดอร์จะมีผลกับทุกแท็บที่อยู่ภายใน</string>
+    <string name="dejavu_settings_where_actions_show">ตำแหน่งที่แสดงการดำเนินการ</string>
+    <string name="dejavu_settings_folders">โฟลเดอร์</string>
+    <string name="dejavu_settings_selection_bar">แถบการเลือก</string>
+    <string name="dejavu_settings_folder_actions_hint">เลือกปุ่มได้สูงสุด %1$d ปุ่มสำหรับแถวโฟลเดอร์ ปุ่มเหล่านี้จะทำงานกับทุกแท็บในโฟลเดอร์และโฟลเดอร์ย่อย</string>
+    <string name="dejavu_settings_action_places_none">ไม่แสดงที่ใดเลย</string>
+    <string name="dejavu_settings_action_place_unavailable">ไม่มีผลที่ตำแหน่งนี้</string>
+    <string name="dejavu_settings_action_place_full">ไม่มีที่ว่างแล้ว</string>
+    <string name="dejavu_done">เสร็จสิ้น</string>
     <string name="dejavu_settings_pinned_tabs">แท็บที่ปักหมุด</string>
     <string name="dejavu_settings_unpinned_tabs">แท็บที่ไม่ได้ปักหมุด</string>
     <string name="dejavu_settings_all_actions">การดำเนินการทั้งหมด</string>
@@ -185,6 +200,9 @@
     <string name="dejavu_actions_bar_search">ค้นหา</string>
     <string name="dejavu_actions_bar_home">หน้าแรก</string>
     <string name="dejavu_settings_more_menu_summary">แถบการดำเนินการด้านล่างหน้าเว็บและเมนูที่เปิดจากแถบนั้น</string>
+    <string name="dejavu_more_menu_hint">ปัดแถบการดำเนินการขึ้น หรือปัดแถบที่อยู่ลง เพื่อเปิดเมนูทั้งหมด แตะปุ่มเพื่อย้ายหรือนำออก ส่วนขยายจะใช้พื้นที่เต็มแถวเสมอ</string>
+    <string name="dejavu_actions_bar_hint">ปุ่มด้านล่างหน้าเว็บ ซึ่งจะทำงานกับหน้าที่คุณกำลังเปิดอยู่</string>
+    <string name="dejavu_actions_bar_all_added">ปุ่มทั้งหมดอยู่ในแถบนี้แล้ว</string>
     <string name="dejavu_more_menu_row">แถวที่ %1$d</string>
     <string name="dejavu_more_menu_add_item">เพิ่มปุ่ม</string>
     <string name="dejavu_more_menu_add_row">เพิ่มแถว</string>
@@ -223,6 +241,21 @@
     <string name="dejavu_container_work">งาน</string>
     <string name="dejavu_container_banking">ธนาคาร</string>
     <string name="dejavu_container_shopping">ช็อปปิ้ง</string>
+    <string name="dejavu_history_group_by">จัดกลุ่มตาม</string>
+    <string name="dejavu_history_group_by_date">วันที่</string>
+    <string name="dejavu_history_group_by_workspace">พื้นที่ทำงาน</string>
+    <string name="dejavu_history_group_by_folder">พื้นที่ทำงานและโฟลเดอร์</string>
+    <string name="dejavu_history_other_pages">หน้าอื่น ๆ</string>
+    <string name="dejavu_settings_tab_sleep">แท็บที่พักอยู่</string>
+    <string name="dejavu_settings_tab_sleep_summary">แท็บที่คุณไม่ได้ใช้จะพักเพื่อคืนหน่วยความจำ</string>
+    <string name="dejavu_tab_sleep_hint">แท็บที่พักอยู่จะคืนหน่วยความจำและโหลดหน้าใหม่เมื่อคุณเปิด แท็บที่คุณกำลังดู แท็บที่อยู่ข้างกันในการแบ่งหน้าจอ และแท็บที่กำลังเล่นเสียงหรือใช้กล้องหรือไมโครโฟนจะไม่พัก เมื่อ Android ต้องการหน่วยความจำขณะที่ Dejavu ทำงานอยู่เบื้องหลัง แท็บทั้งหมดจะพัก ยกเว้นสองแท็บที่คุณใช้ล่าสุด</string>
+    <string name="dejavu_tab_sleep_when">พักแท็บเมื่อ</string>
+    <plurals name="dejavu_tab_sleep_after_minutes">
+        <item quantity="other">หลังจากไม่ได้ใช้ %d นาที</item>
+    </plurals>
+    <string name="dejavu_tab_sleep_after_hour">หลังจากไม่ได้ใช้หนึ่งชั่วโมง</string>
+    <string name="dejavu_tab_sleep_never">ไม่พักเลย</string>
+    <string name="dejavu_startup_crash_body">มีปัญหาในการเปิด %1$s เปิดใหม่อีกครั้งเพื่อท่องเว็บต่อ</string>
     <string name="dejavu_sync_normal_tabs">รวมแท็บที่ไม่ได้ปักหมุด</string>
     <string name="dejavu_sync_normal_tabs_summary">นอกจากนี้ยังซิงค์แท็บอื่น ๆ ของแต่ละพื้นที่ทำงานด้วย ไม่ใช่แค่แท็บที่ปักหมุดและโฟลเดอร์เท่านั้น Zen จะซิงค์แท็บเหล่านี้เมื่อเปิดตัวเลือก รวมแท็บที่ไม่ได้ปักหมุด ของตัวเอง</string>
     <plurals name="dejavu_selection_count">

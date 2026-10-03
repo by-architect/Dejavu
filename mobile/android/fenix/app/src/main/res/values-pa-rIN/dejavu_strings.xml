@@ -47,6 +47,10 @@
     <string name="dejavu_folder_rename">ਫੋਲਡਰ ਦਾ ਨਾਂ ਬਦਲੋ</string>
     <string name="dejavu_folder_unpack">ਫੋਲਡਰ ਖਿਲਾਰੋ</string>
     <string name="dejavu_folder_top_level">ਪਿੰਨ ਕੀਤੀਆਂ ਟੈਬਾਂ, ਕੋਈ ਫੋਲਡਰ ਨਹੀਂ</string>
+    <plurals name="dejavu_folder_open_tabs">
+        <item quantity="one">%1$d ਖੁੱਲ੍ਹੀ ਟੈਬ</item>
+        <item quantity="other">%1$d ਖੁੱਲ੍ਹੀਆਂ ਟੈਬਾਂ</item>
+    </plurals>
     <string name="dejavu_essentials_drop">ਜ਼ਰੂਰੀ ਵਿੱਚ ਜੋੜਨ ਲਈ ਇੱਥੇ ਛੱਡੋ</string>
     <string name="dejavu_essentials_full">ਜ਼ਰੂਰੀ ਵਿੱਚ ਵੱਧ ਤੋਂ ਵੱਧ %1$d ਟੈਬਾਂ ਸਮਾਉਂਦੀਆਂ ਹਨ</string>
     <string name="dejavu_temporary_by_default">ਮੂਲ ਰੂਪ ਵਿੱਚ ਆਰਜ਼ੀ ਕੰਟੇਨਰ</string>
@@ -88,7 +92,19 @@
     <string name="dejavu_action_remove_from_essentials">ਜ਼ਰੂਰੀ ਵਿੱਚੋਂ ਹਟਾਓ</string>
     <string name="dejavu_action_delete">ਹਟਾਓ</string>
     <string name="dejavu_settings_title">Dejavu</string>
+    <string name="dejavu_about_content">%1$s ਇੱਕ ਆਜ਼ਾਦ ਬਰਾਊਜ਼ਰ ਹੈ, ਜੋ Mozilla ਦੇ ਓਪਨ ਸੋਰਸ Firefox ਅਤੇ GeckoView ਕੋਡ ਤੋਂ ਬਣਾਇਆ ਗਿਆ ਹੈ। ਇਸ ਨੂੰ Mozilla ਨੇ ਨਹੀਂ ਬਣਾਇਆ, ਨਾ ਹੀ Mozilla ਇਸ ਦਾ ਸਮਰਥਨ ਕਰਦਾ ਹੈ ਜਾਂ ਇਸ ਲਈ ਸਹਾਇਤਾ ਦਿੰਦਾ ਹੈ। Firefox ਅਮਰੀਕਾ ਅਤੇ ਹੋਰ ਦੇਸ਼ਾਂ ਵਿੱਚ Mozilla Foundation ਦਾ ਟਰੇਡਮਾਰਕ ਹੈ।</string>
+    <string name="dejavu_about_source_code">ਸਰੋਤ ਕੋਡ</string>
     <string name="dejavu_settings_tab_actions">ਟੈਬ ਕਾਰਵਾਈਆਂ</string>
+    <string name="dejavu_settings_tab_actions_entry_summary">ਕਾਰਵਾਈਆਂ ਦੀ ਇੱਕ ਸੂਚੀ, ਅਤੇ ਹਰ ਇੱਕ ਕਿੱਥੇ ਦਿਖਦੀ ਹੈ</string>
+    <string name="dejavu_settings_tab_actions_hint">ਤੁਹਾਡੇ ਵਲੋਂ ਖੁਦ ਜੋੜੀਆਂ ਕਾਰਵਾਈਆਂ ਸਮੇਤ, ਸਾਰੀਆਂ ਕਾਰਵਾਈਆਂ ਇੱਕੋ ਸੂਚੀ ਵਿੱਚ ਹਨ। ਚੁਣੋ ਕਿ ਹਰ ਇੱਕ ਕਿੱਥੇ ਦਿਖੇ: ਪਿੰਨ ਕੀਤੀਆਂ ਟੈਬਾਂ, ਬਿਨਾਂ ਪਿੰਨ ਕੀਤੀਆਂ ਟੈਬਾਂ ਅਤੇ ਫੋਲਡਰਾਂ ‘ਤੇ, ਚੁਣੀਆਂ ਟੈਬਾਂ ਦੀ ਪੱਟੀ ਵਿੱਚ, ਹੋਰ ਮੀਨੂ ਵਿੱਚ ਅਤੇ ਸਫ਼ਿਆਂ ਹੇਠਾਂ ਕਾਰਵਾਈ ਪੱਟੀ ਵਿੱਚ। ਫੋਲਡਰ ‘ਤੇ ਕੀਤੀਆਂ ਕਾਰਵਾਈਆਂ ਇਸ ਦੇ ਅੰਦਰਲੀ ਹਰ ਟੈਬ ‘ਤੇ ਲਾਗੂ ਹੁੰਦੀਆਂ ਹਨ।</string>
+    <string name="dejavu_settings_where_actions_show">ਕਾਰਵਾਈਆਂ ਕਿੱਥੇ ਦਿਖਦੀਆਂ ਹਨ</string>
+    <string name="dejavu_settings_folders">ਫੋਲਡਰ</string>
+    <string name="dejavu_settings_selection_bar">ਚੋਣ ਪੱਟੀ</string>
+    <string name="dejavu_settings_folder_actions_hint">ਫੋਲਡਰ ਕਤਾਰਾਂ ਲਈ ਵੱਧ ਤੋਂ ਵੱਧ %1$d ਬਟਨ ਚੁਣੋ। ਇਹ ਫੋਲਡਰ ਅਤੇ ਇਸ ਦੇ ਸਬ-ਫੋਲਡਰਾਂ ਅੰਦਰਲੀ ਹਰ ਟੈਬ ‘ਤੇ ਕੰਮ ਕਰਦੇ ਹਨ।</string>
+    <string name="dejavu_settings_action_places_none">ਕਿਤੇ ਵੀ ਨਹੀਂ ਦਿਖਾਈ ਜਾਂਦੀ</string>
+    <string name="dejavu_settings_action_place_unavailable">ਉੱਥੇ ਕੁਝ ਨਹੀਂ ਕਰਦੀ</string>
+    <string name="dejavu_settings_action_place_full">ਥਾਂ ਨਹੀਂ ਬਚੀ</string>
+    <string name="dejavu_done">ਮੁਕੰਮਲ</string>
     <string name="dejavu_settings_pinned_tabs">ਪਿੰਨ ਕੀਤੀਆਂ ਟੈਬਾਂ</string>
     <string name="dejavu_settings_unpinned_tabs">ਬਿਨਾਂ ਪਿੰਨ ਕੀਤੀਆਂ ਟੈਬਾਂ</string>
     <string name="dejavu_settings_all_actions">ਸਾਰੀਆਂ ਕਾਰਵਾਈਆਂ</string>
@@ -185,6 +201,9 @@
     <string name="dejavu_actions_bar_search">ਖੋਜ</string>
     <string name="dejavu_actions_bar_home">ਹੋਮ</string>
     <string name="dejavu_settings_more_menu_summary">ਸਫ਼ਿਆਂ ਹੇਠਾਂ ਕਾਰਵਾਈ ਪੱਟੀ ਅਤੇ ਇਸ ਵੱਲੋਂ ਖੋਲ੍ਹਿਆ ਜਾਂਦਾ ਮੀਨੂ</string>
+    <string name="dejavu_more_menu_hint">ਪੂਰਾ ਮੀਨੂ ਖੋਲ੍ਹਣ ਲਈ ਕਾਰਵਾਈ ਪੱਟੀ ਨੂੰ ਉੱਪਰ, ਜਾਂ ਸਿਰਨਾਵਾਂ ਪੱਟੀ ਨੂੰ ਹੇਠਾਂ ਸਵਾਈਪ ਕਰੋ। ਕਿਸੇ ਬਟਨ ਦੀ ਥਾਂ ਬਦਲਣ ਜਾਂ ਉਸ ਨੂੰ ਹਟਾਉਣ ਲਈ ਉਸ ‘ਤੇ ਟੈਪ ਕਰੋ। ਇਕਸਟੈਨਸ਼ਨਾਂ ਹਮੇਸ਼ਾ ਪੂਰੀ ਕਤਾਰ ਲੈਂਦੀਆਂ ਹਨ।</string>
+    <string name="dejavu_actions_bar_hint">ਸਫ਼ਿਆਂ ਹੇਠਾਂ ਵਾਲੇ ਬਟਨ। ਇਹ ਉਸ ਸਫ਼ੇ ‘ਤੇ ਕੰਮ ਕਰਦੇ ਹਨ ਜਿਸ ‘ਤੇ ਤੁਸੀਂ ਹੋ।</string>
+    <string name="dejavu_actions_bar_all_added">ਹਰ ਬਟਨ ਪਹਿਲਾਂ ਹੀ ਪੱਟੀ ਵਿੱਚ ਹੈ।</string>
     <string name="dejavu_more_menu_row">ਕਤਾਰ %1$d</string>
     <string name="dejavu_more_menu_add_item">ਇੱਕ ਬਟਨ ਜੋੜੋ</string>
     <string name="dejavu_more_menu_add_row">ਇੱਕ ਕਤਾਰ ਜੋੜੋ</string>
@@ -223,6 +242,22 @@
     <string name="dejavu_container_work">ਕੰਮ</string>
     <string name="dejavu_container_banking">ਬੈਂਕਿੰਗ</string>
     <string name="dejavu_container_shopping">ਸ਼ਾਪਿੰਗ</string>
+    <string name="dejavu_history_group_by">ਕਿਸ ਮੁਤਾਬਕ ਗਰੁੱਪ ਬਣਾਓ</string>
+    <string name="dejavu_history_group_by_date">ਤਾਰੀਖ</string>
+    <string name="dejavu_history_group_by_workspace">ਵਰਕਸਪੇਸ</string>
+    <string name="dejavu_history_group_by_folder">ਵਰਕਸਪੇਸ ਅਤੇ ਫੋਲਡਰ</string>
+    <string name="dejavu_history_other_pages">ਹੋਰ ਸਫ਼ੇ</string>
+    <string name="dejavu_settings_tab_sleep">ਸਲੀਪ ਮੋਡ ਵਾਲੀਆਂ ਟੈਬਾਂ</string>
+    <string name="dejavu_settings_tab_sleep_summary">ਜਿਹੜੀਆਂ ਟੈਬਾਂ ਤੁਸੀਂ ਨਹੀਂ ਵਰਤ ਰਹੇ, ਉਹ ਮੈਮਰੀ ਖਾਲੀ ਕਰਨ ਲਈ ਸਲੀਪ ਮੋਡ ਵਿੱਚ ਚਲੀਆਂ ਜਾਂਦੀਆਂ ਹਨ</string>
+    <string name="dejavu_tab_sleep_hint">ਸਲੀਪ ਮੋਡ ਵਾਲੀ ਟੈਬ ਆਪਣੀ ਮੈਮਰੀ ਖਾਲੀ ਕਰ ਦਿੰਦੀ ਹੈ ਅਤੇ ਜਦੋਂ ਤੁਸੀਂ ਉਸ ਨੂੰ ਖੋਲ੍ਹਦੇ ਹੋ ਤਾਂ ਉਸ ਦਾ ਸਫ਼ਾ ਮੁੜ ਲੋਡ ਕਰਦੀ ਹੈ। ਜਿਹੜੀ ਟੈਬ ਤੁਸੀਂ ਵੇਖ ਰਹੇ ਹੋ, ਵੰਡੇ ਦ੍ਰਿਸ਼ ਵਿੱਚ ਉਸ ਦੇ ਨਾਲ ਵਾਲੀ ਟੈਬ, ਅਤੇ ਆਵਾਜ਼ ਚਲਾ ਰਹੀਆਂ ਜਾਂ ਕੈਮਰਾ ਜਾਂ ਮਾਈਕਰੋਫ਼ੋਨ ਵਰਤ ਰਹੀਆਂ ਟੈਬਾਂ ਚਾਲੂ ਰਹਿੰਦੀਆਂ ਹਨ। ਜਦੋਂ Dejavu ਪਿਛੋਕੜ ਵਿੱਚ ਹੋਵੇ ਅਤੇ Android ਨੂੰ ਮੈਮਰੀ ਦੀ ਲੋੜ ਹੋਵੇ, ਤਾਂ ਤੁਹਾਡੇ ਵਲੋਂ ਆਖਰੀ ਵਾਰ ਵਰਤੀਆਂ ਦੋ ਟੈਬਾਂ ਤੋਂ ਬਿਨਾਂ ਬਾਕੀ ਹਰ ਟੈਬ ਸਲੀਪ ਮੋਡ ਵਿੱਚ ਚਲੀ ਜਾਂਦੀ ਹੈ।</string>
+    <string name="dejavu_tab_sleep_when">ਟੈਬ ਨੂੰ ਸਲੀਪ ਮੋਡ ਵਿੱਚ ਭੇਜੋ</string>
+    <plurals name="dejavu_tab_sleep_after_minutes">
+        <item quantity="one">%d ਮਿੰਟ ਨਾ ਵਰਤਣ ਤੋਂ ਬਾਅਦ</item>
+        <item quantity="other">%d ਮਿੰਟ ਨਾ ਵਰਤਣ ਤੋਂ ਬਾਅਦ</item>
+    </plurals>
+    <string name="dejavu_tab_sleep_after_hour">ਇੱਕ ਘੰਟਾ ਨਾ ਵਰਤਣ ਤੋਂ ਬਾਅਦ</string>
+    <string name="dejavu_tab_sleep_never">ਕਦੇ ਨਹੀਂ</string>
+    <string name="dejavu_startup_crash_body">%1$s ਨੂੰ ਖੋਲ੍ਹਣ ਦੌਰਾਨ ਸਮੱਸਿਆ ਆਈ। ਬਰਾਊਜ਼ ਕਰਨਾ ਜਾਰੀ ਰੱਖਣ ਲਈ ਇਸ ਨੂੰ ਫੇਰ ਖੋਲ੍ਹੋ।</string>
     <string name="dejavu_sync_normal_tabs">ਪਿੰਨ ਨਾ ਕੀਤੀਆਂ ਟੈਬਾਂ ਸ਼ਾਮਲ ਕਰੋ</string>
     <string name="dejavu_sync_normal_tabs_summary">ਇਹ ਹਰ ਵਰਕਸਪੇਸ ਦੀਆਂ ਹੋਰ ਟੈਬਾਂ ਨੂੰ ਵੀ ਸਿੰਕ ਕਰਦਾ ਹੈ, ਸਿਰਫ਼ ਪਿੰਨ ਕੀਤੀਆਂ ਟੈਬਾਂ ਅਤੇ ਫੋਲਡਰ ਹੀ ਨਹੀਂ। ਜਦੋਂ ਇਸਦਾ ਆਪਣਾ ਪਿੰਨ ਨਾ ਕੀਤੀਆਂ ਟੈਬਾਂ ਸ਼ਾਮਲ ਕਰੋ ਵਿਕਲਪ ਚਾਲੂ ਹੁੰਦਾ ਹੈ, ਤਾਂ Zen ਉਹਨਾਂ ਨੂੰ ਸਿੰਕ ਕਰਦਾ ਹੈ।</string>
     <plurals name="dejavu_selection_count">

@@ -47,6 +47,9 @@
     <string name="dejavu_folder_rename">o ante e nimi tomo poki</string>
     <string name="dejavu_folder_unpack">o pakala e tomo poki</string>
     <string name="dejavu_folder_top_level">poki awen, tomo poki ala</string>
+    <plurals name="dejavu_folder_open_tabs">
+        <item quantity="other">poki %1$d li open</item>
+    </plurals>
     <string name="dejavu_essentials_drop">o pana e ni lon lipu suli</string>
     <string name="dejavu_essentials_full">lipu suli li ken jo poki %1$d taso</string>
     <string name="dejavu_temporary_by_default">leko pi tenpo lili li nanpa wan</string>
@@ -88,7 +91,19 @@
     <string name="dejavu_action_remove_from_essentials">o weka e ni tan lipu suli</string>
     <string name="dejavu_action_delete">o weka</string>
     <string name="dejavu_settings_title">Dejavu</string>
+    <string name="dejavu_about_content">ilo %1$s li ilo alasa pi kulupu ante. ona li kama tan sitelen ilo open pi ilo Firefox en ilo GeckoView pi kulupu Mozilla. kulupu Mozilla li pali ala e ona, li toki pona ala e ona, li pana ala e pona tawa ona. nimi Firefox li nimi esun pi kulupu Mozilla Foundation lon ma Mewika en ma ante.</string>
+    <string name="dejavu_about_source_code">sitelen ilo</string>
     <string name="dejavu_settings_tab_actions">pali pi poki</string>
+    <string name="dejavu_settings_tab_actions_entry_summary">lipu wan pi pali ale, en ma pi pali wan wan</string>
+    <string name="dejavu_settings_tab_actions_hint">pali ale li lon lipu wan, kin pali pi pana sina. o wile e ma pi pali wan wan: lon poki awen, lon poki awen ala, lon tomo poki, lon linja wile, lon ilo mute, lon linja ilo pi anpa lipu. pali lon tomo poki li pali lon poki ale insa ona.</string>
+    <string name="dejavu_settings_where_actions_show">pali li lon seme</string>
+    <string name="dejavu_settings_folders">tomo poki</string>
+    <string name="dejavu_settings_selection_bar">linja wile</string>
+    <string name="dejavu_settings_folder_actions_hint">o wile e ilo lili (mute %1$d taso) tawa linja pi tomo poki. ona li pali lon poki ale insa tomo poki en insa tomo poki lili ona.</string>
+    <string name="dejavu_settings_action_places_none">ona li lon ala</string>
+    <string name="dejavu_settings_action_place_unavailable">ona li ken ala pali lon ni</string>
+    <string name="dejavu_settings_action_place_full">ma sin li lon ala</string>
+    <string name="dejavu_done">pona</string>
     <string name="dejavu_settings_pinned_tabs">poki awen</string>
     <string name="dejavu_settings_unpinned_tabs">poki awen ala</string>
     <string name="dejavu_settings_all_actions">pali ale</string>
@@ -185,6 +200,9 @@
     <string name="dejavu_actions_bar_search">o alasa</string>
     <string name="dejavu_actions_bar_home">tomo</string>
     <string name="dejavu_settings_more_menu_summary">linja ilo lon anpa lipu, en ilo mute pi open ona</string>
+    <string name="dejavu_more_menu_hint">o tawa sewi e linja ilo, anu o tawa anpa e linja pi nasin lipu, tawa open e ilo mute ale. o luka e ilo lili tawa tawa e ona anu tawa weka e ona. ilo namako li kepeken linja ale lon tenpo ale.</string>
+    <string name="dejavu_actions_bar_hint">ilo lili lon anpa lipu. ona li pali lon lipu sina.</string>
+    <string name="dejavu_actions_bar_all_added">ilo lili ale li lon linja.</string>
     <string name="dejavu_more_menu_row">linja %1$d</string>
     <string name="dejavu_more_menu_add_item">o pana e ilo lili</string>
     <string name="dejavu_more_menu_add_row">o pana e linja</string>
@@ -223,6 +241,21 @@
     <string name="dejavu_container_work">pali</string>
     <string name="dejavu_container_banking">mani</string>
     <string name="dejavu_container_shopping">esun</string>
+    <string name="dejavu_history_group_by">o kulupu kepeken</string>
+    <string name="dejavu_history_group_by_date">tenpo suno</string>
+    <string name="dejavu_history_group_by_workspace">kulupu poki</string>
+    <string name="dejavu_history_group_by_folder">kulupu poki en tomo poki</string>
+    <string name="dejavu_history_other_pages">lipu ante</string>
+    <string name="dejavu_settings_tab_sleep">poki lape</string>
+    <string name="dejavu_settings_tab_sleep_summary">poki pi kepeken ala li lape tawa ni: ilo li jo e ma sona mute</string>
+    <string name="dejavu_tab_sleep_hint">poki lape li weka e ma sona ona. sina open e ona la ona li open sin e lipu ona. poki pi lukin sina, poki pi poka ona lon lukin tu, en poki pi kalama anu poki pi kepeken ilo lukin anu ilo kute li lape ala. ilo Android li wile e ma sona lon tenpo pi ilo Dejavu lon monsi la poki ale li lape. taso poki tu pi kepeken sina pini li lape ala.</string>
+    <string name="dejavu_tab_sleep_when">o lape e poki</string>
+    <plurals name="dejavu_tab_sleep_after_minutes">
+        <item quantity="other">lon tenpo lili %d pi kepeken ala</item>
+    </plurals>
+    <string name="dejavu_tab_sleep_after_hour">lon tenpo lili 60 pi kepeken ala</string>
+    <string name="dejavu_tab_sleep_never">lon tenpo ala</string>
+    <string name="dejavu_startup_crash_body">ike li kama lon open pi ilo %1$s. o open sin e ona tawa awen lukin e lipu.</string>
     <string name="dejavu_sync_normal_tabs">o kepeken poki awen ala</string>
     <string name="dejavu_sync_normal_tabs_summary">ona li sama e poki ante pi tomo poki ale, taso ala poki awen en tomo poki taso. Zen li sama e ona tan ni: nasin ona sama, o kepeken poki awen ala, li lon.</string>
     <plurals name="dejavu_selection_count">

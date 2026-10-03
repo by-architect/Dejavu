@@ -47,6 +47,10 @@
     <string name="dejavu_folder_rename">Muda su nòmine de sa cartella</string>
     <string name="dejavu_folder_unpack">Disimballa sa cartella</string>
     <string name="dejavu_folder_top_level">Ischedas fissadas, chene cartella</string>
+    <plurals name="dejavu_folder_open_tabs">
+        <item quantity="one">%1$d ischeda aberta</item>
+        <item quantity="other">%1$d ischedas abertas</item>
+    </plurals>
     <string name="dejavu_essentials_drop">Lassa inoghe pro agiunghere a is essentziales</string>
     <string name="dejavu_essentials_full">Is essentziales tenent finas a %1$d ischedas</string>
     <string name="dejavu_temporary_by_default">Cuntenidores temporàneos comente predefinidos</string>
@@ -88,7 +92,19 @@
     <string name="dejavu_action_remove_from_essentials">Tira dae is essentziales</string>
     <string name="dejavu_action_delete">Cantzella</string>
     <string name="dejavu_settings_title">Dejavu</string>
+    <string name="dejavu_about_content">%1$s est unu navigadore indipendente creadu dae su còdighe de mitza aberta de Firefox e GeckoView de Mozilla. No est fatu, aprovadu nen suportadu dae Mozilla. Firefox est unu màrchiu de sa Mozilla Foundation in is Istados Unidos e in àteros paisos.</string>
+    <string name="dejavu_about_source_code">Còdighe de mitza</string>
     <string name="dejavu_settings_tab_actions">Atziones de is ischedas</string>
+    <string name="dejavu_settings_tab_actions_entry_summary">Una lista ùnica de atziones, e in ue apparit cada una</string>
+    <string name="dejavu_settings_tab_actions_hint">Totu is atziones sunt in una lista ùnica, incluidas cussas chi agiunghes tue. Sèbera in ue apparit cada una: in is ischedas fissadas, in is ischedas non fissadas e in is cartellas, in sa barra de is ischedas seletzionadas, in su menu Prus e in sa barra de is atziones asuta de is pàginas. Is atziones in una cartella lompent a totu is ischedas chi b\'at a intro.</string>
+    <string name="dejavu_settings_where_actions_show">In ue apparint is atziones</string>
+    <string name="dejavu_settings_folders">Cartellas</string>
+    <string name="dejavu_settings_selection_bar">Barra de seletzione</string>
+    <string name="dejavu_settings_folder_actions_hint">Sèbera finas a %1$d butones pro is ringas de cartellas. Funtzionant in totu is ischedas de sa cartella e de is sotucartellas suas.</string>
+    <string name="dejavu_settings_action_places_none">No apparit in nissunu logu</string>
+    <string name="dejavu_settings_action_place_unavailable">Inoghe no faghet nudda</string>
+    <string name="dejavu_settings_action_place_full">Non b\'at prus logu</string>
+    <string name="dejavu_done">Fatu</string>
     <string name="dejavu_settings_pinned_tabs">Ischedas fissadas</string>
     <string name="dejavu_settings_unpinned_tabs">Ischedas non fissadas</string>
     <string name="dejavu_settings_all_actions">Totu is atziones</string>
@@ -185,6 +201,9 @@
     <string name="dejavu_actions_bar_search">Chirca</string>
     <string name="dejavu_actions_bar_home">Printzipale</string>
     <string name="dejavu_settings_more_menu_summary">Sa barra de is atziones asuta de is pàginas e su menu chi aberit</string>
+    <string name="dejavu_more_menu_hint">Iscurre sa barra de is atziones a susu, o sa barra de indiritzos a bàsciu, pro abèrrere totu su menu. Pretziona unu butone pro lu mòere o tirare. Is estensiones ocupant semper una ringa intrea.</string>
+    <string name="dejavu_actions_bar_hint">Is butones asuta de is pàginas. Funtzionant in sa pàgina in ue ses.</string>
+    <string name="dejavu_actions_bar_all_added">Dònnia butone est giai in sa barra.</string>
     <string name="dejavu_more_menu_row">Ringa %1$d</string>
     <string name="dejavu_more_menu_add_item">Agiunghe unu butone</string>
     <string name="dejavu_more_menu_add_row">Agiunghe una ringa</string>
@@ -223,6 +242,22 @@
     <string name="dejavu_container_work">Traballu</string>
     <string name="dejavu_container_banking">Banca</string>
     <string name="dejavu_container_shopping">Comporas</string>
+    <string name="dejavu_history_group_by">Agrupa pro</string>
+    <string name="dejavu_history_group_by_date">Data</string>
+    <string name="dejavu_history_group_by_workspace">Ispàtziu de traballu</string>
+    <string name="dejavu_history_group_by_folder">Ispàtziu de traballu e cartella</string>
+    <string name="dejavu_history_other_pages">Àteras pàginas</string>
+    <string name="dejavu_settings_tab_sleep">Ischedas dormidas</string>
+    <string name="dejavu_settings_tab_sleep_summary">Is ischedas chi no impreas si ponent a dormire pro liberare memòria</string>
+    <string name="dejavu_tab_sleep_hint">Un\'ischeda dormida liberat sa memòria sua e torrat a carrigare sa pàgina sua cando l\'aberis. S\'ischeda chi ses castiende, cussa a costadu in sa vista partzida e is ischedas chi sonant o impreant sa fotocàmera o su micròfonu abarrant ischidadas. Cando Android tenet bisòngiu de memòria mentras Dejavu est in s\'isfundu, totu is ischedas francu is ùrtimas duas chi as impreadu si ponent a dormire.</string>
+    <string name="dejavu_tab_sleep_when">Ponner un\'ischeda a dormire</string>
+    <plurals name="dejavu_tab_sleep_after_minutes">
+        <item quantity="one">A pustis de %d minutu chene impreu</item>
+        <item quantity="other">A pustis de %d minutos chene impreu</item>
+    </plurals>
+    <string name="dejavu_tab_sleep_after_hour">A pustis de un\'ora chene impreu</string>
+    <string name="dejavu_tab_sleep_never">Mai</string>
+    <string name="dejavu_startup_crash_body">B\'at àpidu unu problema aberende %1$s. Torra a l\'abèrrere pro sighire a navigare.</string>
     <string name="dejavu_sync_normal_tabs">Include is ischedas no fissadas</string>
     <string name="dejavu_sync_normal_tabs_summary">Sincronizat fintzas is àteras ischedas de dogni ispàtziu de traballu, no isceti is ischedas fissadas e is cartellas. Zen las sincronizat candu sa opzione sua matessi Include is ischedas no fissadas est ativada.</string>
     <plurals name="dejavu_selection_count">

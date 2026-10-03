@@ -1,1 +1,1 @@
-Emprima versiun da Dejavu, in navigatur quiet sa basond sin Firefox. Spazis da lavur, contegniders, tabs fixads, essenzials, ordinaturs e vista partida. Sincronisescha cun Zen Browser via tes conto da Mozilla. Privat sco standard: nagina telemetria.
+Emprima versiun da Dejavu, in navigatur independent, creà a partir dal code open source da Firefox da Mozilla. El n’è ni fatg ni approvà da Mozilla. Spazis da lavur, containers, tabs fixads, essenzials, dossiers e vista divisa. Sincronisescha cun Zen Browser via tes conto Mozilla. Privat sco standard: nagina telemetria.

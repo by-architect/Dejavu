@@ -47,6 +47,10 @@
     <string name="dejavu_folder_rename">Aldatu karpetaren izena</string>
     <string name="dejavu_folder_unpack">Banatu karpeta</string>
     <string name="dejavu_folder_top_level">Finkatutako fitxak, karpetarik gabe</string>
+    <plurals name="dejavu_folder_open_tabs">
+        <item quantity="one">%1$d fitxa irekita</item>
+        <item quantity="other">%1$d fitxa irekita</item>
+    </plurals>
     <string name="dejavu_essentials_drop">Askatu hemen funtsezkoetara gehitzeko</string>
     <string name="dejavu_essentials_full">Funtsezkoek gehienez %1$d fitxa hartzen dute</string>
     <string name="dejavu_temporary_by_default">Aldi baterako edukiontziak lehenespenez</string>
@@ -88,7 +92,19 @@
     <string name="dejavu_action_remove_from_essentials">Kendu funtsezkoetatik</string>
     <string name="dejavu_action_delete">Ezabatu</string>
     <string name="dejavu_settings_title">Dejavu</string>
+    <string name="dejavu_about_content">%1$s Mozillaren Firefox eta GeckoView kode irekitik sortutako nabigatzaile independentea da. Mozillak ez du egiten, ez du onesten eta ez dio euskarririk ematen. Firefox Mozilla Foundation-en marka komertziala da Estatu Batuetan eta beste herrialde batzuetan.</string>
+    <string name="dejavu_about_source_code">Iturburu-kodea</string>
     <string name="dejavu_settings_tab_actions">Fitxen ekintzak</string>
+    <string name="dejavu_settings_tab_actions_entry_summary">Ekintzen zerrenda bakarra, eta bakoitza non agertzen den</string>
+    <string name="dejavu_settings_tab_actions_hint">Ekintza guztiak zerrenda bakar batean daude, zuk zeuk gehitzen dituzunak barne. Aukeratu bakoitza non agertzen den: finkatutako fitxetan, finkatu gabeko fitxetan eta karpetetan, hautatutako fitxen barran, «Gehiago» menuan eta orrien azpiko ekintza-barran. Karpeta bateko ekintzek barruko fitxa guztiei eragiten diete.</string>
+    <string name="dejavu_settings_where_actions_show">Ekintzak non agertzen diren</string>
+    <string name="dejavu_settings_folders">Karpetak</string>
+    <string name="dejavu_settings_selection_bar">Hautapen-barra</string>
+    <string name="dejavu_settings_folder_actions_hint">Aukeratu gehienez %1$d botoi karpeten lerroetarako. Karpetako eta bere azpikarpetetako fitxa guztiei eragiten diete.</string>
+    <string name="dejavu_settings_action_places_none">Ez da inon agertzen</string>
+    <string name="dejavu_settings_action_place_unavailable">Hemen ez du ezer egiten</string>
+    <string name="dejavu_settings_action_place_full">Ez dago lekurik</string>
+    <string name="dejavu_done">Eginda</string>
     <string name="dejavu_settings_pinned_tabs">Finkatutako fitxak</string>
     <string name="dejavu_settings_unpinned_tabs">Finkatu gabeko fitxak</string>
     <string name="dejavu_settings_all_actions">Ekintza guztiak</string>
@@ -185,6 +201,9 @@
     <string name="dejavu_actions_bar_search">Bilatu</string>
     <string name="dejavu_actions_bar_home">Hasiera</string>
     <string name="dejavu_settings_more_menu_summary">Orrien azpiko ekintza-barra eta irekitzen duen menua</string>
+    <string name="dejavu_more_menu_hint">Pasatu ekintza-barra gora, edo helbide-barra behera, menu osoa irekitzeko. Sakatu botoi bat lekuz aldatzeko edo kentzeko. Hedapenek lerro oso bat hartzen dute beti.</string>
+    <string name="dejavu_actions_bar_hint">Orrien azpiko botoiak. Ikusten ari zaren orriari eragiten diote.</string>
+    <string name="dejavu_actions_bar_all_added">Botoi guztiak barran daude jada.</string>
     <string name="dejavu_more_menu_row">%1$d. lerroa</string>
     <string name="dejavu_more_menu_add_item">Gehitu botoi bat</string>
     <string name="dejavu_more_menu_add_row">Gehitu lerro bat</string>
@@ -223,6 +242,22 @@
     <string name="dejavu_container_work">Lana</string>
     <string name="dejavu_container_banking">Bankua</string>
     <string name="dejavu_container_shopping">Erosketak</string>
+    <string name="dejavu_history_group_by">Taldekatu honen arabera</string>
+    <string name="dejavu_history_group_by_date">Data</string>
+    <string name="dejavu_history_group_by_workspace">Laneremua</string>
+    <string name="dejavu_history_group_by_folder">Laneremua eta karpeta</string>
+    <string name="dejavu_history_other_pages">Beste orri batzuk</string>
+    <string name="dejavu_settings_tab_sleep">Esekitako fitxak</string>
+    <string name="dejavu_settings_tab_sleep_summary">Erabiltzen ari ez zaren fitxak eseki egiten dira memoria askatzeko</string>
+    <string name="dejavu_tab_sleep_hint">Esekitako fitxa batek bere memoria askatzen du, eta orria berriro kargatzen du irekitzen duzunean. Ikusten ari zaren fitxa, ikuspegi zatituan haren ondoan dagoena eta soinua erreproduzitzen edo kamera edo mikrofonoa erabiltzen ari diren fitxak aktibo jarraitzen dute. Androidek memoria behar duenean Dejavu atzeko planoan dagoela, azken aldiz erabili dituzun bi fitxak izan ezik, beste guztiak eseki egiten dira.</string>
+    <string name="dejavu_tab_sleep_when">Esekitu fitxa bat</string>
+    <plurals name="dejavu_tab_sleep_after_minutes">
+        <item quantity="one">Erabili gabeko %d minutu igarotakoan</item>
+        <item quantity="other">Erabili gabeko %d minutu igarotakoan</item>
+    </plurals>
+    <string name="dejavu_tab_sleep_after_hour">Erabili gabeko ordubete igarotakoan</string>
+    <string name="dejavu_tab_sleep_never">Inoiz ez</string>
+    <string name="dejavu_startup_crash_body">Arazo bat egon da %1$s irekitzen. Ireki berriro nabigatzen jarraitzeko.</string>
     <string name="dejavu_sync_normal_tabs">Sartu finkatu gabeko fitxak</string>
     <string name="dejavu_sync_normal_tabs_summary">Laneremu bakoitzeko beste fitxak ere sinkronizatzen ditu, ez soilik finkatutako fitxak eta karpetak. Zenek sinkronizatzen ditu bere Sartu finkatu gabeko fitxak aukera aktibatuta dagoenean.</string>
     <plurals name="dejavu_selection_count">

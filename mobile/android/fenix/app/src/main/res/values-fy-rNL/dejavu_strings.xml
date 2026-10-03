@@ -47,6 +47,10 @@
     <string name="dejavu_folder_rename">Map omneame</string>
     <string name="dejavu_folder_unpack">Map útpakke</string>
     <string name="dejavu_folder_top_level">Fêstsette ljepblêden, gjin map</string>
+    <plurals name="dejavu_folder_open_tabs">
+        <item quantity="one">%1$d iepen ljepblêd</item>
+        <item quantity="other">%1$d iepen ljepblêden</item>
+    </plurals>
     <string name="dejavu_essentials_drop">Hjir delsette om ta te foegjen oan essinsjes</string>
     <string name="dejavu_essentials_full">Essinsjes hâlde oant %1$d ljepblêden</string>
     <string name="dejavu_temporary_by_default">Standert tydlike konteners</string>
@@ -88,7 +92,19 @@
     <string name="dejavu_action_remove_from_essentials">Fuortsmite út essinsjes</string>
     <string name="dejavu_action_delete">Fuortsmite</string>
     <string name="dejavu_settings_title">Dejavu</string>
+    <string name="dejavu_about_content">%1$s is in ûnôfhinklike browser, boud mei de iepenboarnekoade fan Firefox en GeckoView fan Mozilla. Hy wurdt net makke, goedkard of stipe troch Mozilla. Firefox is in hannelsmerk fan de Mozilla Foundation yn de FS en oare lannen.</string>
+    <string name="dejavu_about_source_code">Boarnekoade</string>
     <string name="dejavu_settings_tab_actions">Aksjes foar ljepblêden</string>
+    <string name="dejavu_settings_tab_actions_entry_summary">Ien list mei aksjes, en wêr\'t elke aksje toand wurdt</string>
+    <string name="dejavu_settings_tab_actions_hint">Alle aksjes steane yn ien list, ek dy\'t jo sels tafoegje. Kies wêr\'t elke aksje toand wurdt: op fêstsette ljepblêden, net-fêstsette ljepblêden en mappen, yn de balke fan selektearre ljepblêden, yn it Mear-menu en yn de aksjebalke ûnder siden. Aksjes op in map wurkje op elk ljepblêd deryn.</string>
+    <string name="dejavu_settings_where_actions_show">Wêr\'t aksjes toand wurde</string>
+    <string name="dejavu_settings_folders">Mappen</string>
+    <string name="dejavu_settings_selection_bar">Seleksjebalke</string>
+    <string name="dejavu_settings_folder_actions_hint">Kies oant %1$d knoppen foar rigen mei mappen. Se wurkje op elk ljepblêd yn de map en de submappen.</string>
+    <string name="dejavu_settings_action_places_none">Nearne toand</string>
+    <string name="dejavu_settings_action_place_unavailable">Docht dêr neat</string>
+    <string name="dejavu_settings_action_place_full">Gjin romte mear</string>
+    <string name="dejavu_done">Dien</string>
     <string name="dejavu_settings_pinned_tabs">Fêstsette ljepblêden</string>
     <string name="dejavu_settings_unpinned_tabs">Net-fêstsette ljepblêden</string>
     <string name="dejavu_settings_all_actions">Alle aksjes</string>
@@ -185,6 +201,9 @@
     <string name="dejavu_actions_bar_search">Sykje</string>
     <string name="dejavu_actions_bar_home">Thús</string>
     <string name="dejavu_settings_more_menu_summary">De aksjebalke ûnder sides en it menu dat dy iepenet</string>
+    <string name="dejavu_more_menu_hint">Fei de aksjebalke omheech of de adresbalke omleech om it hiele menu te iepenjen. Tik op in knop om dy te ferpleatsen of fuort te smiten. Utwreidingen nimme altyd in hiele rige yn.</string>
+    <string name="dejavu_actions_bar_hint">De knoppen ûnder siden. Se wurkje op de side dêr\'t jo op binne.</string>
+    <string name="dejavu_actions_bar_all_added">Elke knop stiet al yn de balke.</string>
     <string name="dejavu_more_menu_row">Rige %1$d</string>
     <string name="dejavu_more_menu_add_item">Knop taheakje</string>
     <string name="dejavu_more_menu_add_row">Rige taheakje</string>
@@ -223,6 +242,22 @@
     <string name="dejavu_container_work">Wurk</string>
     <string name="dejavu_container_banking">Bankieren</string>
     <string name="dejavu_container_shopping">Winkelje</string>
+    <string name="dejavu_history_group_by">Groepearje op</string>
+    <string name="dejavu_history_group_by_date">Datum</string>
+    <string name="dejavu_history_group_by_workspace">Wurkromte</string>
+    <string name="dejavu_history_group_by_folder">Wurkromte en map</string>
+    <string name="dejavu_history_other_pages">Oare siden</string>
+    <string name="dejavu_settings_tab_sleep">Sliepende ljepblêden</string>
+    <string name="dejavu_settings_tab_sleep_summary">Ljepblêden dy\'t jo net brûke, sliepe om ûnthâld frij te meitsjen</string>
+    <string name="dejavu_tab_sleep_hint">In sliepend ljepblêd makket syn ûnthâld frij en laadt de side opnij as jo it iepenje. It ljepblêd dat jo besjogge, it ljepblêd dêrneist yn dûbele werjefte en ljepblêden dy\'t lûd ôfspylje of de kamera of mikrofoan brûke, bliuwe wekker. As Android ûnthâld nedich hat wylst Dejavu op de eftergrûn is, geane alle ljepblêden sliepe, útsein de twa dy\'t jo it lêst brûkt hawwe.</string>
+    <string name="dejavu_tab_sleep_when">Ljepblêd yn sliepstân sette</string>
+    <plurals name="dejavu_tab_sleep_after_minutes">
+        <item quantity="one">Nei %d minút sûnder gebrûk</item>
+        <item quantity="other">Nei %d minuten sûnder gebrûk</item>
+    </plurals>
+    <string name="dejavu_tab_sleep_after_hour">Nei in oere sûnder gebrûk</string>
+    <string name="dejavu_tab_sleep_never">Nea</string>
+    <string name="dejavu_startup_crash_body">Der is in probleem bard by it iepenjen fan %1$s. Iepenje de app opnij om fierder te sneupen.</string>
     <string name="dejavu_sync_normal_tabs">Net-fêstsette ljepblêden opnimme</string>
     <string name="dejavu_sync_normal_tabs_summary">Syngronisearret ek de oare ljepblêden fan elke wurkromte, net allinnich fêstsette ljepblêden en mappen. Zen syngronisearret se as syn eigen opsje Net-fêstsette ljepblêden opnimme oan stiet.</string>
     <plurals name="dejavu_selection_count">
