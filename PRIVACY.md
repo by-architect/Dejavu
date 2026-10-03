@@ -29,6 +29,15 @@ When you open a website, it receives what every browser sends: your IP address, 
 it saved before and details about the browser. Enhanced Tracking Protection blocks many trackers. Each website has its
 own privacy policy.
 
+### Warnings for dangerous sites
+
+Dejavu warns you about pages that Google lists as phishing, malware or unwanted software, using Google Safe
+Browsing. It regularly downloads lists of shortened fingerprints ("hashes") of dangerous addresses from Google and
+checks the pages you open against them on your device. Only when a page matches the start of a fingerprint does Dejavu
+ask Google about it, and then it sends only that start, never the address of the page. Like any connection, these
+requests show Google your IP address. Google describes how it handles data in the
+[Google Privacy Policy](https://policies.google.com/privacy).
+
 ### Search
 
 When you search from the address bar, your search goes to the search engine you chose. Search suggestions, which send
