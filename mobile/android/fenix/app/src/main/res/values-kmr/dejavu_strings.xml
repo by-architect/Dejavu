@@ -88,7 +88,6 @@
     <string name="dejavu_action_remove_from_essentials">Ji malperên girîng rake</string>
     <string name="dejavu_action_delete">Jê bibe</string>
     <string name="dejavu_settings_title">Dejavu</string>
-    <string name="dejavu_about_content">%1$s li ser bingeha Firefox e, ji aliyê Mozilla ve hatiye çêkirin.</string>
     <string name="dejavu_settings_tab_actions">Çalakiyên hilpekînê</string>
     <string name="dejavu_settings_pinned_tabs">Hilpekînên sabît</string>
     <string name="dejavu_settings_unpinned_tabs">Hilpekînên ne-sabît</string>

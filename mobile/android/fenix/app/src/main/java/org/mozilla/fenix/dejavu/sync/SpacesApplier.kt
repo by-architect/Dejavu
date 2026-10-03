@@ -249,6 +249,7 @@ internal class SpacesApplier(
                 }
                 return Outcome.APPLIED
             }
+            val pinnedPageChanged = url != existing.url
             val updated = existing.copy(
                 title = title,
                 staticLabel = staticLabel,
@@ -257,6 +258,9 @@ internal class SpacesApplier(
                 essential = essential,
                 workspaceId = workspaceId,
                 parentId = parentId,
+                // A pin given a new address on another device opens there, not on the page it was last on here.
+                openUrl = if (pinnedPageChanged) null else existing.openUrl,
+                openTitle = if (pinnedPageChanged) null else existing.openTitle,
             )
             if (updated != existing) {
                 pins[pins.indexOf(existing)] = updated.copy(updatedAt = now)

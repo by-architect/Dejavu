@@ -1,1 +1,1 @@
-A calm browser with workspaces, containers, split view and no telemetry
+Your tabs, right where you left them. Workspaces, containers and split view.

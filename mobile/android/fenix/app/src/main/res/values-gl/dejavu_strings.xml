@@ -88,7 +88,6 @@
     <string name="dejavu_action_remove_from_essentials">Quitar dos esenciais</string>
     <string name="dejavu_action_delete">Eliminar</string>
     <string name="dejavu_settings_title">Dejavu</string>
-    <string name="dejavu_about_content">%1$s baséase en Firefox, creado por Mozilla.</string>
     <string name="dejavu_settings_tab_actions">Accións das lapelas</string>
     <string name="dejavu_settings_pinned_tabs">Lapelas fixadas</string>
     <string name="dejavu_settings_unpinned_tabs">Lapelas non fixadas</string>

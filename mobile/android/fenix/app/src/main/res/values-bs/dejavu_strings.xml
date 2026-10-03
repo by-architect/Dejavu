@@ -88,7 +88,6 @@
     <string name="dejavu_action_remove_from_essentials">Ukloni iz Favorita</string>
     <string name="dejavu_action_delete">Obriši</string>
     <string name="dejavu_settings_title">Dejavu</string>
-    <string name="dejavu_about_content">%1$s je zasnovan na Firefoxu, koji pravi Mozilla.</string>
     <string name="dejavu_settings_tab_actions">Radnje tabova</string>
     <string name="dejavu_settings_pinned_tabs">Prikvačeni tabovi</string>
     <string name="dejavu_settings_unpinned_tabs">Neprikvačeni tabovi</string>

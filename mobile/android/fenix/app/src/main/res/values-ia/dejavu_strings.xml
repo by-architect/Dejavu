@@ -88,7 +88,6 @@
     <string name="dejavu_action_remove_from_essentials">Remover del essentiales</string>
     <string name="dejavu_action_delete">Deler</string>
     <string name="dejavu_settings_title">Dejavu</string>
-    <string name="dejavu_about_content">%1$s es basate super Firefox, create per Mozilla.</string>
     <string name="dejavu_settings_tab_actions">Actiones de schedas</string>
     <string name="dejavu_settings_pinned_tabs">Schedas fixate</string>
     <string name="dejavu_settings_unpinned_tabs">Schedas non fixate</string>

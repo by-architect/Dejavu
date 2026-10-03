@@ -88,7 +88,6 @@
     <string name="dejavu_action_remove_from_essentials">Gjave dai essenziâi</string>
     <string name="dejavu_action_delete">Elimine</string>
     <string name="dejavu_settings_title">Dejavu</string>
-    <string name="dejavu_about_content">%1$s al è basât su Firefox, fat di Mozilla.</string>
     <string name="dejavu_settings_tab_actions">Azions des schedis</string>
     <string name="dejavu_settings_pinned_tabs">Schedis fissadis</string>
     <string name="dejavu_settings_unpinned_tabs">Schedis no fissadis</string>

@@ -88,7 +88,6 @@
     <string name="dejavu_action_remove_from_essentials">นำออกจากเว็บที่ใช้บ่อย</string>
     <string name="dejavu_action_delete">ลบ</string>
     <string name="dejavu_settings_title">Dejavu</string>
-    <string name="dejavu_about_content">%1$s มีพื้นฐานมาจาก Firefox ที่พัฒนาโดย Mozilla</string>
     <string name="dejavu_settings_tab_actions">การดำเนินการของแท็บ</string>
     <string name="dejavu_settings_pinned_tabs">แท็บที่ปักหมุด</string>
     <string name="dejavu_settings_unpinned_tabs">แท็บที่ไม่ได้ปักหมุด</string>

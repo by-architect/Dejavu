@@ -88,7 +88,6 @@
     <string name="dejavu_action_remove_from_essentials">حذف از ضروریات</string>
     <string name="dejavu_action_delete">حذف</string>
     <string name="dejavu_settings_title">Dejavu</string>
-    <string name="dejavu_about_content">%1$s بر پایهٔ Firefox و ساختهٔ Mozilla است.</string>
     <string name="dejavu_settings_tab_actions">کنش‌های زبانه</string>
     <string name="dejavu_settings_pinned_tabs">زبانه‌های سنجاق‌شده</string>
     <string name="dejavu_settings_unpinned_tabs">زبانه‌های سنجاق‌نشده</string>

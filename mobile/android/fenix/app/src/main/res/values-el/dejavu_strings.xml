@@ -88,7 +88,6 @@
     <string name="dejavu_action_remove_from_essentials">Αφαίρεση από τα αγαπημένα</string>
     <string name="dejavu_action_delete">Διαγραφή</string>
     <string name="dejavu_settings_title">Dejavu</string>
-    <string name="dejavu_about_content">Το %1$s βασίζεται στο Firefox, που δημιουργήθηκε από τη Mozilla.</string>
     <string name="dejavu_settings_tab_actions">Ενέργειες καρτελών</string>
     <string name="dejavu_settings_pinned_tabs">Καρφιτσωμένες καρτέλες</string>
     <string name="dejavu_settings_unpinned_tabs">Μη καρφιτσωμένες καρτέλες</string>

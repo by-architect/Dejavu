@@ -104,7 +104,6 @@
     <string name="dejavu_action_remove_from_essentials">ضروری ٹیباں کنوں ہٹاؤ</string>
     <string name="dejavu_action_delete">مٹاؤ</string>
     <string name="dejavu_settings_title">Dejavu</string>
-    <string name="dejavu_about_content">%1$s، Firefox تے مبنی ہے، جیکوں Mozilla بݨیندا ہے۔</string>
     <string name="dejavu_settings_tab_actions">ٹیب عمل</string>
     <string name="dejavu_settings_pinned_tabs">پن تھیاں ٹیباں</string>
     <string name="dejavu_settings_unpinned_tabs">اݨ پن ٹیباں</string>

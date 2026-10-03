@@ -88,7 +88,6 @@
     <string name="dejavu_action_remove_from_essentials">Remover dos essenciais</string>
     <string name="dejavu_action_delete">Excluir</string>
     <string name="dejavu_settings_title">Dejavu</string>
-    <string name="dejavu_about_content">%1$s é baseado no Firefox, feito pela Mozilla.</string>
     <string name="dejavu_settings_tab_actions">Ações de abas</string>
     <string name="dejavu_settings_pinned_tabs">Abas fixadas</string>
     <string name="dejavu_settings_unpinned_tabs">Abas não fixadas</string>

@@ -88,7 +88,6 @@
     <string name="dejavu_action_remove_from_essentials">Негізгілерден шығару</string>
     <string name="dejavu_action_delete">Өшіру</string>
     <string name="dejavu_settings_title">Dejavu</string>
-    <string name="dejavu_about_content">%1$s — Mozilla жасаған Firefox негізінде жасалған.</string>
     <string name="dejavu_settings_tab_actions">Бет әрекеттері</string>
     <string name="dejavu_settings_pinned_tabs">Бекітілген беттер</string>
     <string name="dejavu_settings_unpinned_tabs">Бекітілмеген беттер</string>

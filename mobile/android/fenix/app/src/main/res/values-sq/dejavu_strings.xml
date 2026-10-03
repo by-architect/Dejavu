@@ -88,7 +88,6 @@
     <string name="dejavu_action_remove_from_essentials">Hiqe nga thelbësoret</string>
     <string name="dejavu_action_delete">Fshije</string>
     <string name="dejavu_settings_title">Dejavu</string>
-    <string name="dejavu_about_content">%1$s bazohet në Firefox-in, prodhuar nga Mozilla.</string>
     <string name="dejavu_settings_tab_actions">Veprime skedash</string>
     <string name="dejavu_settings_pinned_tabs">Skeda të fiksuara</string>
     <string name="dejavu_settings_unpinned_tabs">Skeda të pafiksuara</string>

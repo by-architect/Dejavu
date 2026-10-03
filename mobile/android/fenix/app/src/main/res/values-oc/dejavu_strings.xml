@@ -88,7 +88,6 @@
     <string name="dejavu_action_remove_from_essentials">Levar dels essencials</string>
     <string name="dejavu_action_delete">Suprimir</string>
     <string name="dejavu_settings_title">Dejavu</string>
-    <string name="dejavu_about_content">%1$s es basat sus Firefox, creat per Mozilla.</string>
     <string name="dejavu_settings_tab_actions">Accions dels onglets</string>
     <string name="dejavu_settings_pinned_tabs">Onglets fixats</string>
     <string name="dejavu_settings_unpinned_tabs">Onglets non fixats</string>

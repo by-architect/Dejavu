@@ -88,7 +88,6 @@
     <string name="dejavu_action_remove_from_essentials">Eemalda olulistest</string>
     <string name="dejavu_action_delete">Kustuta</string>
     <string name="dejavu_settings_title">Dejavu</string>
-    <string name="dejavu_about_content">%1$s põhineb Firefoxil, mille on loonud Mozilla.</string>
     <string name="dejavu_settings_tab_actions">Kaartide tegevused</string>
     <string name="dejavu_settings_pinned_tabs">Kinnitatud kaardid</string>
     <string name="dejavu_settings_unpinned_tabs">Kinnitamata kaardid</string>

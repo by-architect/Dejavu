@@ -88,7 +88,6 @@
     <string name="dejavu_action_remove_from_essentials">Хориҷ кардан аз сомонаҳои муҳим</string>
     <string name="dejavu_action_delete">Нест кардан</string>
     <string name="dejavu_settings_title">Dejavu</string>
-    <string name="dejavu_about_content">%1$s дар асоси Firefox сохта шудааст, ки онро Mozilla офаридааст.</string>
     <string name="dejavu_settings_tab_actions">Амалҳои варақа</string>
     <string name="dejavu_settings_pinned_tabs">Варақаҳои часпонидашуда</string>
     <string name="dejavu_settings_unpinned_tabs">Варақаҳои начаспонидашуда</string>

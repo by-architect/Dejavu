@@ -88,7 +88,6 @@
     <string name="dejavu_action_remove_from_essentials">முக்கியவையிலிருந்து அகற்று</string>
     <string name="dejavu_action_delete">நீக்கு</string>
     <string name="dejavu_settings_title">Dejavu</string>
-    <string name="dejavu_about_content">%1$s Firefox-ஐ அடிப்படையாகக் கொண்டது, Mozilla ஆல் உருவாக்கப்பட்டது.</string>
     <string name="dejavu_settings_tab_actions">கீற்றுச் செயல்கள்</string>
     <string name="dejavu_settings_pinned_tabs">பொருத்தப்பட்ட கீற்றுகள்</string>
     <string name="dejavu_settings_unpinned_tabs">பொருத்தப்படாத கீற்றுகள்</string>

@@ -40,6 +40,7 @@ class DejavuSettings private constructor(context: Context) {
     )
     private val _moreMenuEditHidden = MutableStateFlow(prefs.getBoolean(KEY_MORE_MENU_EDIT_HIDDEN, false))
     private val _actionsBarKeys = MutableStateFlow(readActionsBar())
+    private val _tabSleepMinutes = MutableStateFlow(prefs.getInt(KEY_TAB_SLEEP_MINUTES, DEFAULT_TAB_SLEEP_MINUTES))
     private val _hiddenSelectionKeys = MutableStateFlow(
         prefs.getString(KEY_HIDDEN_SELECTION_ACTIONS, null)?.split(",")?.filter { it.isNotBlank() }?.toSet().orEmpty(),
     )
@@ -79,6 +80,14 @@ class DejavuSettings private constructor(context: Context) {
 
     /** Keys of the [RowAction]s left out of the selection bar. Every other action, new ones included, is shown. */
     val hiddenSelectionKeys: StateFlow<Set<String>> = _hiddenSelectionKeys.asStateFlow()
+
+    /** Minutes a tab stays awake after it was last looked at, or 0 to never put tabs to sleep. */
+    val tabSleepMinutes: StateFlow<Int> = _tabSleepMinutes.asStateFlow()
+
+    fun setTabSleepMinutes(minutes: Int) {
+        _tabSleepMinutes.value = minutes
+        prefs.edit { putInt(KEY_TAB_SLEEP_MINUTES, minutes) }
+    }
 
     /** How History lists pages. */
     var historyGrouping: HistoryGrouping
@@ -227,6 +236,9 @@ class DejavuSettings private constructor(context: Context) {
         /** The most buttons a tab row can show next to its title. */
         const val MAX_ROW_ACTIONS = 3
 
+        /** How long a tab stays awake by default after it was last looked at. */
+        const val DEFAULT_TAB_SLEEP_MINUTES = 20
+
         // Kept from before the rename to Dejavu, so saved data still loads.
         private const val PREFS_NAME = "kaizen_settings"
         private const val KEY_PINNED_ROW_ACTIONS = "pinned_row_actions"
@@ -242,6 +254,7 @@ class DejavuSettings private constructor(context: Context) {
         private const val KEY_MORE_MENU_EDIT_HIDDEN = "more_menu_edit_hidden"
         private const val KEY_ACTIONS_BAR = "actions_bar"
         private const val KEY_HISTORY_GROUPING = "history_grouping"
+        private const val KEY_TAB_SLEEP_MINUTES = "tab_sleep_minutes"
         private val DEFAULT_PINNED_ROW_ACTIONS = listOf(TabAction.CLOSE)
         private val DEFAULT_UNPINNED_ROW_ACTIONS = listOf(TabAction.PIN, TabAction.CLOSE)
 

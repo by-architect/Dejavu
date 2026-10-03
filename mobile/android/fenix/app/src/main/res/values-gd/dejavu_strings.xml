@@ -88,7 +88,6 @@
     <string name="dejavu_action_remove_from_essentials">Thoir air falbh o na feumalachdan</string>
     <string name="dejavu_action_delete">Sguab às</string>
     <string name="dejavu_settings_title">Dejavu</string>
-    <string name="dejavu_about_content">Tha %1$s stèidhichte air Firefox, air a dhèanamh le Mozilla.</string>
     <string name="dejavu_settings_tab_actions">Gnìomhan nan tabaichean</string>
     <string name="dejavu_settings_pinned_tabs">Tabaichean prìnichte</string>
     <string name="dejavu_settings_unpinned_tabs">Tabaichean neo-phrìnichte</string>

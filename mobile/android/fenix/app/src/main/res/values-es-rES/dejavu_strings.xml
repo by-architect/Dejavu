@@ -88,7 +88,6 @@
     <string name="dejavu_action_remove_from_essentials">Quitar de esenciales</string>
     <string name="dejavu_action_delete">Eliminar</string>
     <string name="dejavu_settings_title">Dejavu</string>
-    <string name="dejavu_about_content">%1$s está basado en Firefox, desarrollado por Mozilla.</string>
     <string name="dejavu_settings_tab_actions">Acciones de pestañas</string>
     <string name="dejavu_settings_pinned_tabs">Pestañas fijadas</string>
     <string name="dejavu_settings_unpinned_tabs">Pestañas no fijadas</string>

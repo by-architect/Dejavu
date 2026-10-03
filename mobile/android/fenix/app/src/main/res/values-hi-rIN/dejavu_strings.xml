@@ -119,7 +119,6 @@
 
     <!-- Settings -->
     <string name="dejavu_settings_title">Dejavu</string>
-    <string name="dejavu_about_content">%1$s, Mozilla के बनाए Firefox पर आधारित है।</string>
     <string name="dejavu_settings_tab_actions">टैब ऐक्शन</string>
     <string name="dejavu_settings_pinned_tabs">पिन किए गए टैब</string>
     <string name="dejavu_settings_unpinned_tabs">बिना पिन वाले टैब</string>

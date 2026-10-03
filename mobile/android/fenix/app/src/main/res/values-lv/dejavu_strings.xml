@@ -88,7 +88,6 @@
     <string name="dejavu_action_remove_from_essentials">Noņemt no Izlases</string>
     <string name="dejavu_action_delete">Dzēst</string>
     <string name="dejavu_settings_title">Dejavu</string>
-    <string name="dejavu_about_content">%1$s ir balstīts uz Firefox, ko izstrādā Mozilla.</string>
     <string name="dejavu_settings_tab_actions">Ciļņu darbības</string>
     <string name="dejavu_settings_pinned_tabs">Piespraustās cilnes</string>
     <string name="dejavu_settings_unpinned_tabs">Nepiespraustās cilnes</string>

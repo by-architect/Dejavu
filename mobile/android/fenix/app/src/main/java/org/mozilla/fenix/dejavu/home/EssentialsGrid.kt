@@ -49,9 +49,11 @@ import org.mozilla.fenix.dejavu.containers.ContainerRecord
 import org.mozilla.fenix.dejavu.containers.color
 import org.mozilla.fenix.dejavu.workspaces.PinnedItem
 
+private val TileHeight = 52.dp
 private val TileGap = 8.dp
+private val MinTileWidth = 64.dp
 private val TileShape = RoundedCornerShape(14.dp)
-private const val COLUMNS = 3
+private const val MIN_COLUMNS = 3
 private const val DIMMED_ALPHA = 0.55f
 private const val CLOSED_TILE_ALPHA = 0.5f
 private const val OPEN_OUTLINE_ALPHA = 0.5f
@@ -74,8 +76,8 @@ private data class EssentialDrag(
 )
 
 /**
- * The essentials every workspace shares, as a grid of icons like in Zen: three per row, each half as tall as it is wide.
- * Long-pressing one selects it; keeping the finger down and moving reorders it.
+ * The essentials every workspace shares, as a grid of icons like in Zen. Long-pressing one selects it; keeping the
+ * finger down and moving reorders it.
  *
  * @param isDropTarget Whether tabs dragged on the workspace page would be dropped here.
  */
@@ -110,11 +112,10 @@ internal fun EssentialsGrid(
             .border(2.dp, if (isDropTarget) MaterialTheme.colorScheme.primary else Color.Transparent, shape)
             .padding(4.dp),
     ) {
-        val columns = COLUMNS
+        val columns = ((maxWidth + TileGap) / (MinTileWidth + TileGap)).toInt().coerceAtLeast(MIN_COLUMNS)
         val tileWidth = (maxWidth - TileGap * (columns - 1)) / columns
-        val tileHeight = tileWidth / 2
         val cellWidth = with(density) { (tileWidth + TileGap).toPx() }
-        val cellHeight = with(density) { (tileHeight + TileGap).toPx() }
+        val cellHeight = with(density) { (TileHeight + TileGap).toPx() }
 
         fun indexAt(position: Offset): Int {
             val column = (position.x / cellWidth).toInt().coerceIn(0, columns - 1)
@@ -182,7 +183,7 @@ internal fun EssentialsGrid(
                             selection = selection?.let { item.id in it.pinIds },
                             isDragged = current?.moved == true && current.pinId == item.id,
                             onClick = { if (drag == null) onClick(item) },
-                            modifier = Modifier.size(width = tileWidth, height = tileHeight),
+                            modifier = Modifier.width(tileWidth),
                         )
                     }
                 }
@@ -220,6 +221,7 @@ private fun EssentialTile(
     Box(
         contentAlignment = Alignment.Center,
         modifier = modifier
+            .height(TileHeight)
             .clip(TileShape)
             .background(background)
             .border(if (isDragged || isCurrent) 2.dp else 1.dp, outline, TileShape)

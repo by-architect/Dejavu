@@ -88,7 +88,6 @@
     <string name="dejavu_action_remove_from_essentials">Yọ kúrò nínú àwọn Pàtàkì</string>
     <string name="dejavu_action_delete">Paarẹ́</string>
     <string name="dejavu_settings_title">Dejavu</string>
-    <string name="dejavu_about_content">%1$s dá lórí Firefox, tí Mozilla ṣe.</string>
     <string name="dejavu_settings_tab_actions">Àwọn iṣe táàbù</string>
     <string name="dejavu_settings_pinned_tabs">Àwọn táàbù tí a fi Pin sí</string>
     <string name="dejavu_settings_unpinned_tabs">Àwọn táàbù tí a kò fi Pin sí</string>

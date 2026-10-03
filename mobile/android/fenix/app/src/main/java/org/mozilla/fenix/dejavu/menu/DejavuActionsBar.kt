@@ -101,7 +101,6 @@ fun DejavuActionsBar(onEvent: (BrowserToolbarEvent) -> Unit) {
             workspaces = workspaces,
             isBookmarked = isBookmarked,
             isDesktopMode = current.content.desktopMode,
-            canSummarize = !current.content.private && fenix.core.summarizeFeatureSettings.canShowFeature,
         )
     } ?: MoreMenuState()
 
@@ -196,7 +195,6 @@ private fun MoreMenuEntry.barEvent(state: MoreMenuState): BrowserToolbarEvent {
         MoreMenuItem.BOOKMARK_PAGE ->
             if (state.isBookmarked) DisplayActions.EditBookmarkClicked(source) else DisplayActions.AddBookmarkClicked(source)
         MoreMenuItem.TRANSLATE -> DisplayActions.TranslateClicked(source)
-        MoreMenuItem.SUMMARIZE -> DisplayActions.SummarizeClicked(source)
         else -> DejavuToolbar.MenuEntryClicked(key)
     }
 }

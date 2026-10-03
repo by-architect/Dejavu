@@ -1,9 +1,9 @@
 # Dejavu Privacy Policy
 
-Effective date: September 30, 2026
+Effective date: October 3, 2026
 
-Dejavu is a web browser for Android, built on Firefox. This policy explains what happens to your data when you use
-it.
+Dejavu is a web browser for Android, built from Mozilla's open source Firefox code. It is an independent project,
+not made, endorsed or supported by Mozilla. This policy explains what happens to your data when you use it.
 
 **The short version: we do not collect your data.** Dejavu's developers run no servers, and the app has no analytics
 or advertising services turned on. What you do in Dejavu stays on your device, unless you use a feature that has to
@@ -46,12 +46,13 @@ it. Your account is handled by Mozilla, as described in the
 
 ### Telemetry, studies and crash reports
 
-Dejavu keeps Firefox's data collection settings, but turns off telemetry, studies and the daily usage ping when it is
-first opened. If you turn any of them on in **Settings**, then **Data collection**, that data goes to Mozilla, as
-described in the [Firefox Privacy Notice](https://www.mozilla.org/privacy/firefox/).
+Dejavu sends no telemetry, usage pings or crash reports, to us or to Mozilla. Firefox's data collection settings are
+not shown, and when Dejavu crashes it sends nothing. Dejavu does not download studies, experiments or remote changes to
+its features from Mozilla either.
 
-If Dejavu crashes, it asks you before it sends a crash report. Crash reports you agree to send go to Mozilla's crash
-reporting service. You can choose to never send them in the same settings.
+### Sponsored content
+
+Dejavu shows no sponsored shortcuts or sponsored stories, and does not download them.
 
 ### Add-ons
 

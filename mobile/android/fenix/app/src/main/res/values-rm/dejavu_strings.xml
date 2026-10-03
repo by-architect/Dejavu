@@ -88,7 +88,6 @@
     <string name="dejavu_action_remove_from_essentials">Allontanar dals essenzials</string>
     <string name="dejavu_action_delete">Stizzar</string>
     <string name="dejavu_settings_title">Dejavu</string>
-    <string name="dejavu_about_content">%1$s sa basa sin Firefox, fatg da Mozilla.</string>
     <string name="dejavu_settings_tab_actions">Acziuns dals tabs</string>
     <string name="dejavu_settings_pinned_tabs">Tabs fixads</string>
     <string name="dejavu_settings_unpinned_tabs">Tabs betg fixads</string>

@@ -36,6 +36,7 @@ import mozilla.components.compose.base.button.FilledButton
 import mozilla.components.compose.base.button.OutlinedButton
 import mozilla.components.lib.state.ext.observeAsComposableState
 import mozilla.components.ui.icons.R as iconsR
+import org.mozilla.fenix.BuildConfig
 import org.mozilla.fenix.R
 import org.mozilla.fenix.theme.FirefoxTheme
 
@@ -63,7 +64,8 @@ internal fun StartupCrashScreen(store: StartupCrashStore) {
 
             when (state.uiState) {
                 UiState.Idle -> {
-                    ReportButtons(store)
+                    // Dejavu: without crash reporting there is nothing to send, so the only choice is to reopen.
+                    if (BuildConfig.CRASH_REPORTING) ReportButtons(store) else ReopenButton(store)
                 }
 
                 UiState.Loading -> {
@@ -133,7 +135,7 @@ private fun ScreenImg() {
     Image(
         modifier = Modifier.width(200.dp).height(175.dp),
         alignment = Alignment.TopCenter,
-        painter = painterResource(id = R.drawable.ic_kit_plug_error),
+        painter = painterResource(id = R.drawable.dejavu_illustration_problem),
         contentDescription = null,
     )
 }
@@ -157,7 +159,7 @@ private fun ScreenText() {
         Text(
             text =
                 stringResource(
-                    R.string.startup_crash_body,
+                    if (BuildConfig.CRASH_REPORTING) R.string.startup_crash_body else R.string.dejavu_startup_crash_body,
                     stringResource(R.string.firefox),
                 ),
             color = MaterialTheme.colorScheme.onSurfaceVariant,

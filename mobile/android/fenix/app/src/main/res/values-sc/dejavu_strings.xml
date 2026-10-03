@@ -88,7 +88,6 @@
     <string name="dejavu_action_remove_from_essentials">Tira dae is essentziales</string>
     <string name="dejavu_action_delete">Cantzella</string>
     <string name="dejavu_settings_title">Dejavu</string>
-    <string name="dejavu_about_content">%1$s si basat in Firefox, fatu dae Mozilla.</string>
     <string name="dejavu_settings_tab_actions">Atziones de is ischedas</string>
     <string name="dejavu_settings_pinned_tabs">Ischedas fissadas</string>
     <string name="dejavu_settings_unpinned_tabs">Ischedas non fissadas</string>

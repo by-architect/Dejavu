@@ -744,7 +744,7 @@
   <!-- Preference Category for settings related to Search address bar -->
   <string name="preferences_settings_address_bar">Adresbalkvoorkeuren</string>
   <!-- Preference Category for settings to Firefox Suggest -->
-  <string name="preference_search_address_bar_fx_suggest" tools:ignore="BrandUsage">Adresbalk – Dejavu Suggesties</string>
+  <string name="preference_search_address_bar_fx_suggest" tools:ignore="BrandUsage">Adresbalk – Firefox Suggesties</string>
   <!-- Preference link to Learn more about Firefox Suggest -->
   <string name="preference_search_learn_about_fx_suggest" tools:ignore="BrandUsage">Meer info over Firefox Suggesties</string>
   <!-- Preference link to rating Fenix on the Play Store -->
@@ -3524,7 +3524,7 @@
 
     Search suggestions title for Firefox Suggest.
   -->
-  <string name="firefox_suggest_header" tools:ignore="BrandUsage">Dejavu Suggesties</string>
+  <string name="firefox_suggest_header" tools:ignore="BrandUsage">Firefox Suggesties</string>
   <!--
     Search suggestions title for trending search suggestions.
     %s is a placeholder for the name of the search engine providing the trending search suggestions.

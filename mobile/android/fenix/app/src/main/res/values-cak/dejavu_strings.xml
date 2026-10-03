@@ -88,7 +88,6 @@
     <string name="dejavu_action_remove_from_essentials">Tirelesäx pa taq rajawaxel</string>
     <string name="dejavu_action_delete">Tiyuj</string>
     <string name="dejavu_settings_title">Dejavu</string>
-    <string name="dejavu_about_content">%1$s rub\'anon pa ruwi\' Firefox, ub\'anon ruma Mozilla.</string>
     <string name="dejavu_settings_tab_actions">B\'anob\'äl richin taq ruwi\'</string>
     <string name="dejavu_settings_pinned_tabs">Ximon taq ruwi\'</string>
     <string name="dejavu_settings_unpinned_tabs">Man ximon ta taq ruwi\'</string>

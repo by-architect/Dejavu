@@ -5,7 +5,10 @@
 package org.mozilla.fenix.dejavu
 
 import android.content.Context
+import android.os.Handler
+import android.os.Looper
 import androidx.core.content.edit
+import androidx.work.WorkManager
 import org.mozilla.fenix.R
 import org.mozilla.fenix.ext.components
 import org.mozilla.fenix.ext.getPreferenceKey
@@ -19,7 +22,9 @@ internal object DejavuDefaults {
     // Kept from before the rename to Dejavu, so saved data still loads.
     private const val PREFS_NAME = "kaizen_settings"
     private const val KEY_VERSION = "defaults_version"
-    private const val VERSION = 6
+    private const val VERSION = 7
+    private const val POCKET_STORIES_WORK_TAG = "mozilla.components.service.pocket.recommendations.refresh.work.tag"
+    private const val POCKET_SPONSORED_WORK_TAG = "mozilla.components.service.pocket.sponsored.content.refresh.work.tag"
 
     /**
      * Applies the defaults the first time this Dejavu version runs. Runs before telemetry and experiments start, so
@@ -30,6 +35,7 @@ internal object DejavuDefaults {
         val applied = prefs.getInt(KEY_VERSION, 0)
         if (applied >= VERSION) return
 
+        var stopStoryDownloads = false
         with(context.components.settings) {
             if (applied < 1) {
                 // New tabs start from the Dejavu home screen instead of an about:home tab.
@@ -84,7 +90,30 @@ internal object DejavuDefaults {
                 FenixOnboarding(context).finish()
                 isTermsOfUsePromptEnabled = false
             }
+            if (applied < 7) {
+                // Dejavu's home screen shows no Pocket stories, so neither they nor the sponsored stories, which are
+                // ads from Mozilla's ad service, are downloaded. Page summaries and Relay email masks are Mozilla's
+                // online services for Firefox, so they are off too.
+                showPocketRecommendationsFeature = false
+                preferences.edit {
+                    putBoolean(context.getPreferenceKey(R.string.pref_key_pocket_sponsored_stories), false)
+                }
+                shakeToSummarizeFeatureFlagEnabled = false
+                isEmailMaskFeatureEnabled = false
+                isEmailMaskSuggestionEnabled = false
+                stopStoryDownloads = true
+            }
         }
         prefs.edit { putInt(KEY_VERSION, VERSION) }
+        if (stopStoryDownloads) {
+            // Downloads scheduled by an earlier version keep running until they are cancelled. The first use of
+            // WorkManager starts the browser engine, so this waits on the main thread until the app has started.
+            Handler(Looper.getMainLooper()).post {
+                WorkManager.getInstance(context).run {
+                    cancelAllWorkByTag(POCKET_STORIES_WORK_TAG)
+                    cancelAllWorkByTag(POCKET_SPONSORED_WORK_TAG)
+                }
+            }
+        }
     }
 }

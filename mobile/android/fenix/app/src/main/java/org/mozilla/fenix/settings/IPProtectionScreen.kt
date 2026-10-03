@@ -479,9 +479,9 @@ private fun VpnPromoCard(
                 painter =
                     painterResource(
                         if (isActive) {
-                            R.drawable.ic_kit_shield_on_state
+                            R.drawable.dejavu_illustration_shield
                         } else {
-                            R.drawable.ic_kit_shield_off_state
+                            R.drawable.dejavu_illustration_shield_off
                         }
                     ),
                 contentDescription = null,

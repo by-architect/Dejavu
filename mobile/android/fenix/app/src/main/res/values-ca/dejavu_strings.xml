@@ -88,7 +88,6 @@
     <string name="dejavu_action_remove_from_essentials">Treu dels essencials</string>
     <string name="dejavu_action_delete">Suprimeix</string>
     <string name="dejavu_settings_title">Dejavu</string>
-    <string name="dejavu_about_content">%1$s es basa en el Firefox, creat per Mozilla.</string>
     <string name="dejavu_settings_tab_actions">Accions de les pestanyes</string>
     <string name="dejavu_settings_pinned_tabs">Pestanyes fixades</string>
     <string name="dejavu_settings_unpinned_tabs">Pestanyes no fixades</string>

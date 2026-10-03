@@ -88,7 +88,6 @@
     <string name="dejavu_action_remove_from_essentials">ضروری چیزاں توں ہٹاؤ</string>
     <string name="dejavu_action_delete">مٹاؤ</string>
     <string name="dejavu_settings_title">Dejavu</string>
-    <string name="dejavu_about_content">%1$s Firefox تے ٲدھارت اے، جیہڑا Mozilla نے بݨایا اے۔</string>
     <string name="dejavu_settings_tab_actions">ٹیب ایکشن</string>
     <string name="dejavu_settings_pinned_tabs">پن کیتیاں ٹیباں</string>
     <string name="dejavu_settings_unpinned_tabs">بغیر پن کیتیاں ٹیباں</string>

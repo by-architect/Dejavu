@@ -88,7 +88,6 @@
     <string name="dejavu_action_remove_from_essentials">Əsaslardan çıxar</string>
     <string name="dejavu_action_delete">Sil</string>
     <string name="dejavu_settings_title">Dejavu</string>
-    <string name="dejavu_about_content">%1$s, Mozilla tərəfindən hazırlanan Firefox əsasında qurulub.</string>
     <string name="dejavu_settings_tab_actions">Vərəq əməliyyatları</string>
     <string name="dejavu_settings_pinned_tabs">Bərkidilmiş vərəqlər</string>
     <string name="dejavu_settings_unpinned_tabs">Bərkidilməmiş vərəqlər</string>

@@ -88,7 +88,6 @@
     <string name="dejavu_action_remove_from_essentials">필수 사이트에서 제거</string>
     <string name="dejavu_action_delete">삭제</string>
     <string name="dejavu_settings_title">Dejavu</string>
-    <string name="dejavu_about_content">%1$s은(는) Mozilla가 만든 Firefox를 기반으로 합니다.</string>
     <string name="dejavu_settings_tab_actions">탭 작업</string>
     <string name="dejavu_settings_pinned_tabs">고정된 탭</string>
     <string name="dejavu_settings_unpinned_tabs">고정되지 않은 탭</string>

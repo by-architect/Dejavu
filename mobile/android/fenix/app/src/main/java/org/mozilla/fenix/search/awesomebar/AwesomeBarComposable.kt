@@ -17,6 +17,7 @@ import androidx.compose.foundation.layout.widthIn
 import androidx.compose.foundation.layout.wrapContentWidth
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.DisposableEffect
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.derivedStateOf
 import androidx.compose.runtime.getValue
@@ -247,6 +248,17 @@ class AwesomeBarComposable(
                         }
 
                     Box(modifier = Modifier.awesomeBarContentWidth(showCurrentTabData)) {
+                        // Dejavu: the suggestions kept in the browser store hold this screen's search helpers, so
+                        // forget them once they are no longer shown, or they keep a closed browser screen in memory.
+                        DisposableEffect(Unit) {
+                            onDispose {
+                                browserStore.dispatch(
+                                    AwesomeBarAction.VisibilityStateUpdated(
+                                        mozilla.components.concept.awesomebar.AwesomeBar.VisibilityState(),
+                                    ),
+                                )
+                            }
+                        }
                         AwesomeBar(
                             text = state.query,
                             currentTabData = currentTabDetailsToShow,

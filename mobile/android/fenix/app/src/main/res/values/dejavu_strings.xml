@@ -6,6 +6,7 @@
     <string name="pref_key_dejavu_tab_actions" translatable="false">pref_key_dejavu_tab_actions</string>
     <string name="pref_key_dejavu_containers" translatable="false">pref_key_dejavu_containers</string>
     <string name="pref_key_dejavu_external_links" translatable="false">pref_key_dejavu_external_links</string>
+    <string name="pref_key_dejavu_tab_sleep" translatable="false">pref_key_dejavu_tab_sleep</string>
 
     <!-- Home screen -->
     <string name="dejavu_workspace_default_name">Home</string>
@@ -129,7 +130,9 @@
     <!-- Settings -->
     <string name="dejavu_settings_title">Dejavu</string>
     <!-- About page. %1$s is the name of the app. -->
-    <string name="dejavu_about_content">%1$s is based on Firefox, made by Mozilla.</string>
+    <string name="dejavu_about_content">%1$s is an independent browser built from Mozilla’s open source Firefox and GeckoView code. It is not made, endorsed or supported by Mozilla. Firefox is a trademark of the Mozilla Foundation in the U.S. and other countries.</string>
+    <!-- About screen link to Dejavu's source code, which takes the place of Firefox's "Know your rights" page. -->
+    <string name="dejavu_about_source_code">Source code</string>
     <string name="dejavu_settings_tab_actions">Tab actions</string>
     <string name="dejavu_settings_tab_actions_entry_summary">One list of actions, and where each one shows</string>
     <string name="dejavu_settings_tab_actions_hint">All actions are in one list, the ones you add yourself included. Choose where each one shows: on pinned tabs, unpinned tabs and folders, in the bar of selected tabs, in the More menu and in the actions bar below pages. Actions on a folder reach every tab inside it.</string>
@@ -316,4 +319,23 @@
     <string name="dejavu_history_group_by_folder">Workspace and folder</string>
     <!-- History header for pages Dejavu does not know the workspace of, like pages visited before it remembered them or on other devices. -->
     <string name="dejavu_history_other_pages">Other pages</string>
+    <!-- Settings entry and screen title for putting unused tabs to sleep. -->
+    <string name="dejavu_settings_tab_sleep">Sleeping tabs</string>
+    <!-- Summary of the settings entry for putting unused tabs to sleep. -->
+    <string name="dejavu_settings_tab_sleep_summary">Tabs you are not using sleep to free memory</string>
+    <!-- Explanation at the top of the sleeping tabs settings screen. -->
+    <string name="dejavu_tab_sleep_hint">A sleeping tab frees its memory and loads its page again when you open it. The tab you are looking at, the one next to it in split view and tabs playing sound or using the camera or microphone stay awake. When Android needs memory while Dejavu is in the background, every tab but the two you used last goes to sleep.</string>
+    <!-- Heading over the choices of how long an unused tab stays awake. -->
+    <string name="dejavu_tab_sleep_when">Put a tab to sleep</string>
+    <!-- Choice: a tab sleeps after this many minutes without being looked at. -->
+    <plurals name="dejavu_tab_sleep_after_minutes">
+        <item quantity="one">After %d minute without use</item>
+        <item quantity="other">After %d minutes without use</item>
+    </plurals>
+    <!-- Choice: a tab sleeps after an hour without being looked at. -->
+    <string name="dejavu_tab_sleep_after_hour">After an hour without use</string>
+    <!-- Choice: tabs never sleep by themselves. -->
+    <string name="dejavu_tab_sleep_never">Never</string>
+    <!-- Text of the screen shown after Dejavu crashed while starting. %1$s is the name of the app. -->
+    <string name="dejavu_startup_crash_body">There was a problem opening %1$s. Reopen it to keep browsing.</string>
 </resources>

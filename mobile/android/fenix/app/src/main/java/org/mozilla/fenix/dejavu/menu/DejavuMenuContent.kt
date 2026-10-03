@@ -177,7 +177,6 @@ fun DejavuMenuContent(
             workspaces = workspaces,
             isBookmarked = menuState.browserMenuState?.bookmarkState?.isBookmarked == true,
             isDesktopMode = menuState.isDesktopMode,
-            canSummarize = menuState.summarizationMenuState.visible && menuState.summarizationMenuState.enabled,
         )
         val actions = MenuActions(context, fenix, menuStore, repository, settings, current, navController, onDismiss)
 
@@ -229,7 +228,6 @@ internal fun moreMenuState(
     workspaces: WorkspaceState,
     isBookmarked: Boolean,
     isDesktopMode: Boolean,
-    canSummarize: Boolean,
 ): MoreMenuState {
     val url = tab.content.url
     val pin = workspaces.pinOf(tab.id)
@@ -253,7 +251,6 @@ internal fun moreMenuState(
             FxNimbus.features.translations.value().mainFlowBrowserMenuEnabled &&
             !tab.content.isPdf,
         isTranslated = tab.translationsState.isTranslated,
-        canSummarize = canSummarize,
         isWebPage = url.startsWith("http://") || url.startsWith("https://"),
     )
 }
@@ -311,7 +308,6 @@ private class MenuActions(
             MoreMenuItem.DOWNLOADS -> dispatch(MenuAction.Navigate.Downloads)
             MoreMenuItem.HISTORY -> dispatch(MenuAction.Navigate.History)
             MoreMenuItem.TRANSLATE -> dispatch(MenuAction.Navigate.Translate)
-            MoreMenuItem.SUMMARIZE -> dispatch(MenuAction.Navigate.Summarizer)
             MoreMenuItem.REPORT_BROKEN_SITE -> dispatch(MenuAction.Navigate.WebCompatReporter)
             MoreMenuItem.OPEN_IN_APP -> dispatch(MenuAction.OpenInApp)
             MoreMenuItem.SETTINGS -> dispatch(MenuAction.Navigate.Settings)

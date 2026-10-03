@@ -88,7 +88,6 @@ data class MoreMenuState(
     val hasExternalApp: Boolean = false,
     val canTranslate: Boolean = false,
     val isTranslated: Boolean = false,
-    val canSummarize: Boolean = false,
     val isWebPage: Boolean = false,
 )
 
@@ -145,7 +144,6 @@ private fun MoreMenuItem.look(state: MoreMenuState): EntryLook {
         MoreMenuItem.RESET_PINNED_URL, MoreMenuItem.REPLACE_PINNED_URL -> default.copy(enabled = state.isPinChanged)
         MoreMenuItem.OPEN_IN_APP -> default.copy(enabled = state.hasExternalApp)
         MoreMenuItem.TRANSLATE -> default.copy(enabled = state.canTranslate, active = state.isTranslated)
-        MoreMenuItem.SUMMARIZE -> default.copy(enabled = state.canSummarize)
         MoreMenuItem.SHARE, MoreMenuItem.FIND_IN_PAGE, MoreMenuItem.REPORT_BROKEN_SITE, MoreMenuItem.SAVE_AS_PDF,
         MoreMenuItem.PRINT,
         -> default.copy(enabled = state.isWebPage)

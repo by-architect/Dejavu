@@ -88,7 +88,6 @@
     <string name="dejavu_action_remove_from_essentials">Wot najwažnišich wotstronić</string>
     <string name="dejavu_action_delete">Zhašeć</string>
     <string name="dejavu_settings_title">Dejavu</string>
-    <string name="dejavu_about_content">%1$s bazuje na Firefox, wutworjeny wot Mozilla.</string>
     <string name="dejavu_settings_tab_actions">Akcije za rajtarki</string>
     <string name="dejavu_settings_pinned_tabs">Připjate rajtarki</string>
     <string name="dejavu_settings_unpinned_tabs">Njepřipjate rajtarki</string>

@@ -88,7 +88,6 @@
     <string name="dejavu_action_remove_from_essentials">مۇھىملاردىن چىقار</string>
     <string name="dejavu_action_delete">ئۆچۈر</string>
     <string name="dejavu_settings_title">Dejavu</string>
-    <string name="dejavu_about_content">%1$s Mozilla ياسىغان Firefox ئاساسىدا ياسالغان.</string>
     <string name="dejavu_settings_tab_actions">بەتكۈچ مەشغۇلاتلىرى</string>
     <string name="dejavu_settings_pinned_tabs">مىخلانغان بەتكۈچلەر</string>
     <string name="dejavu_settings_unpinned_tabs">مىخلانمىغان بەتكۈچلەر</string>

@@ -88,7 +88,6 @@
     <string name="dejavu_action_remove_from_essentials">Eltávolítás a kedvencekből</string>
     <string name="dejavu_action_delete">Törlés</string>
     <string name="dejavu_settings_title">Dejavu</string>
-    <string name="dejavu_about_content">A(z) %1$s a Firefoxon alapul, amelyet a Mozilla készített.</string>
     <string name="dejavu_settings_tab_actions">Lapműveletek</string>
     <string name="dejavu_settings_pinned_tabs">Kitűzött lapok</string>
     <string name="dejavu_settings_unpinned_tabs">Nem kitűzött lapok</string>

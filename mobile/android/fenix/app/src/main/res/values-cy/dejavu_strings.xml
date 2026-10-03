@@ -88,7 +88,6 @@
     <string name="dejavu_action_remove_from_essentials">Tynnu o’r hanfodion</string>
     <string name="dejavu_action_delete">Dileu</string>
     <string name="dejavu_settings_title">Dejavu</string>
-    <string name="dejavu_about_content">Mae %1$s yn seiliedig ar Firefox, wedi’i wneud gan Mozilla.</string>
     <string name="dejavu_settings_tab_actions">Gweithredoedd tabiau</string>
     <string name="dejavu_settings_pinned_tabs">Tabiau wedi’u pinio</string>
     <string name="dejavu_settings_unpinned_tabs">Tabiau heb eu pinio</string>

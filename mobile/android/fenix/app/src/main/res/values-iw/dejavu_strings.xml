@@ -88,7 +88,6 @@
     <string name="dejavu_action_remove_from_essentials">הסרה מהמועדפים</string>
     <string name="dejavu_action_delete">מחיקה</string>
     <string name="dejavu_settings_title">Dejavu</string>
-    <string name="dejavu_about_content">%1$s מבוסס על Firefox, בפיתוח Mozilla.</string>
     <string name="dejavu_settings_tab_actions">פעולות לשוניות</string>
     <string name="dejavu_settings_pinned_tabs">לשוניות מוצמדות</string>
     <string name="dejavu_settings_unpinned_tabs">לשוניות לא מוצמדות</string>

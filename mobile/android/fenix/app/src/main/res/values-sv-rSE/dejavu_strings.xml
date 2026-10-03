@@ -88,7 +88,6 @@
     <string name="dejavu_action_remove_from_essentials">Ta bort från Favoriter</string>
     <string name="dejavu_action_delete">Ta bort</string>
     <string name="dejavu_settings_title">Dejavu</string>
-    <string name="dejavu_about_content">%1$s är baserad på Firefox, som görs av Mozilla.</string>
     <string name="dejavu_settings_tab_actions">Flikåtgärder</string>
     <string name="dejavu_settings_pinned_tabs">Fästa flikar</string>
     <string name="dejavu_settings_unpinned_tabs">Ej fästa flikar</string>

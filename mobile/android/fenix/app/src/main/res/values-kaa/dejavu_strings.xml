@@ -88,7 +88,6 @@
     <string name="dejavu_action_remove_from_essentials">Tiykarǵılardan shıǵarıw</string>
     <string name="dejavu_action_delete">Óshiriw</string>
     <string name="dejavu_settings_title">Dejavu</string>
-    <string name="dejavu_about_content">%1$s — Mozilla jaratqan Firefox tiykarında jaratılǵan.</string>
     <string name="dejavu_settings_tab_actions">Bet áreketleri</string>
     <string name="dejavu_settings_pinned_tabs">Bekitilgen betler</string>
     <string name="dejavu_settings_unpinned_tabs">Bekitilmegen betler</string>

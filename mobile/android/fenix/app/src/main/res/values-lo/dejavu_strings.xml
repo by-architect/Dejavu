@@ -88,7 +88,6 @@
     <string name="dejavu_action_remove_from_essentials">ເອົາອອກຈາກສິ່ງສຳຄັນ</string>
     <string name="dejavu_action_delete">ລຶບ</string>
     <string name="dejavu_settings_title">Dejavu</string>
-    <string name="dejavu_about_content">%1$s ອີງໃສ່ Firefox, ສ້າງຂຶ້ນໂດຍ Mozilla.</string>
     <string name="dejavu_settings_tab_actions">ຄຳສັ່ງແທັບ</string>
     <string name="dejavu_settings_pinned_tabs">ແທັບທີ່ປັກໄວ້</string>
     <string name="dejavu_settings_unpinned_tabs">ແທັບທີ່ບໍ່ໄດ້ປັກໄວ້</string>

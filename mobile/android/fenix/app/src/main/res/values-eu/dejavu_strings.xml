@@ -88,7 +88,6 @@
     <string name="dejavu_action_remove_from_essentials">Kendu funtsezkoetatik</string>
     <string name="dejavu_action_delete">Ezabatu</string>
     <string name="dejavu_settings_title">Dejavu</string>
-    <string name="dejavu_about_content">%1$s Firefoxen oinarrituta dago, Mozillak egina.</string>
     <string name="dejavu_settings_tab_actions">Fitxen ekintzak</string>
     <string name="dejavu_settings_pinned_tabs">Finkatutako fitxak</string>
     <string name="dejavu_settings_unpinned_tabs">Finkatu gabeko fitxak</string>

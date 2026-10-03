@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<!-- Dejavu's shield off illustration, made by scripts/dejavu-illustrations.py. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="200dp"
+    android:height="160dp"
+    android:viewportWidth="200"
+    android:viewportHeight="160">
+    <path
+        android:pathData="M68,72 a50,50 0 1 0 100,0 a50,50 0 1 0 -100,0 z"
+        android:fillColor="#FFF2B84B"
+        android:fillAlpha="0.3" />
+    <path android:pathData="M38,86 a52,52 0 1 0 104,0 a52,52 0 1 0 -104,0 z">
+        <aapt:attr name="android:fillColor">
+            <gradient android:type="linear" android:startX="38" android:startY="34" android:endX="142" android:endY="138">
+                <item android:offset="0" android:color="#FFFFEDC2" />
+                <item android:offset="0.55" android:color="#FFFFD67A" />
+                <item android:offset="1" android:color="#FFF2B84B" />
+            </gradient>
+        </aapt:attr>
+    </path>
+    <path
+        android:pathData="M100,38 l30,11 v25 c0,22 -13,37 -30,44 c-17,-7 -30,-22 -30,-44 v-25 z"
+        android:fillColor="#FF5A452A"
+        android:fillAlpha="0.55" />
+    <path
+        android:pathData="M68,42 l64,76"
+        android:strokeColor="#FF5A452A"
+        android:strokeWidth="8"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round" />
+</vector>

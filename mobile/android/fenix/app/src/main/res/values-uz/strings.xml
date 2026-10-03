@@ -1375,7 +1375,7 @@
 
     Search suggestions title for Firefox Suggest.
   -->
-  <string name="firefox_suggest_header" tools:ignore="BrandUsage">Dejavu Suggest</string>
+  <string name="firefox_suggest_header" tools:ignore="BrandUsage">Firefox Suggest</string>
   <!-- Default browser card text -->
   <string name="default_browser_experiment_card_text" tools:ignore="BrandUsage">Saytlar, elektron pochta va xabarlar havolalarini Dejavu avtomatik ravishda ochiladigan qilib sozlang.</string>
   <!-- Content description radio buttons with a link to more information -->

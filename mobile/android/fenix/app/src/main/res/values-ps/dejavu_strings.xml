@@ -88,7 +88,6 @@
     <string name="dejavu_action_remove_from_essentials">له مهمو ویب پاڼو څخه لرې کول</string>
     <string name="dejavu_action_delete">ړنګول</string>
     <string name="dejavu_settings_title">Dejavu</string>
-    <string name="dejavu_about_content">%1$s په Firefox باندې تکیه لري، چې د Mozilla لخوا جوړ شوی دی.</string>
     <string name="dejavu_settings_tab_actions">د ټب کړنې</string>
     <string name="dejavu_settings_pinned_tabs">پین شوي ټبونه</string>
     <string name="dejavu_settings_unpinned_tabs">نه پین شوي ټبونه</string>

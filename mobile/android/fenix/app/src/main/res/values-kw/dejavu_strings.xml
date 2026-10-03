@@ -88,7 +88,6 @@
     <string name="dejavu_action_remove_from_essentials">Removya a-dhiworth an Pythow Poesek</string>
     <string name="dejavu_action_delete">Dilea</string>
     <string name="dejavu_settings_title">Dejavu</string>
-    <string name="dejavu_about_content">%1$s yw selys war Firefox, gwrys gans Mozilla.</string>
     <string name="dejavu_settings_tab_actions">Oberennow tabow</string>
     <string name="dejavu_settings_pinned_tabs">Tabow fastyes</string>
     <string name="dejavu_settings_unpinned_tabs">Tabow anfastyes</string>

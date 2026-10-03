@@ -64,6 +64,13 @@
         <androidx.preference.Preference
             app:iconSpaceReserved="false"
             app:widgetLayout="@layout/dejavu_preference_badge"
+            android:key="@string/pref_key_dejavu_tab_sleep"
+            android:title="@string/dejavu_settings_tab_sleep"
+            android:summary="@string/dejavu_settings_tab_sleep_summary" />
+
+        <androidx.preference.Preference
+            app:iconSpaceReserved="false"
+            app:widgetLayout="@layout/dejavu_preference_badge"
             android:key="@string/pref_key_dejavu_containers"
             android:title="@string/dejavu_settings_containers"
             android:summary="@string/dejavu_settings_containers_entry_summary" />

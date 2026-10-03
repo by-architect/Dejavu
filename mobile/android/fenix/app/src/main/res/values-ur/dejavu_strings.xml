@@ -88,7 +88,6 @@
     <string name="dejavu_action_remove_from_essentials">اہم سے ہٹائیں</string>
     <string name="dejavu_action_delete">ڈیلیٹ کریں</string>
     <string name="dejavu_settings_title">Dejavu</string>
-    <string name="dejavu_about_content">%1$s ،Firefox پر مبنی ہے، جسے Mozilla نے بنایا ہے۔</string>
     <string name="dejavu_settings_tab_actions">ٹیب ایکشنز</string>
     <string name="dejavu_settings_pinned_tabs">پن کردہ ٹیبز</string>
     <string name="dejavu_settings_unpinned_tabs">ان پن شدہ ٹیبز</string>

@@ -88,7 +88,6 @@
     <string name="dejavu_action_remove_from_essentials">Wyciep z nojważniejszych</string>
     <string name="dejavu_action_delete">Wyciep</string>
     <string name="dejavu_settings_title">Dejavu</string>
-    <string name="dejavu_about_content">%1$s bazuje na Firefox, zrobiōny ôd Mozilla.</string>
     <string name="dejavu_settings_tab_actions">Akcyje kart</string>
     <string name="dejavu_settings_pinned_tabs">Przipiynte karty</string>
     <string name="dejavu_settings_unpinned_tabs">Nieprzipiynte karty</string>

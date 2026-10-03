@@ -89,17 +89,21 @@ class Analytics(
             services.add(sentryService)
         }
 
-        // The name "Fenix" here matches the product name on Socorro and is unrelated to the actual app name:
-        // https://bugzilla.mozilla.org/show_bug.cgi?id=1523284
-        val socorroService =
-            MozillaSocorroService(
-                context,
-                appName = "Fenix",
-                vendor = MOZ_APP_VENDOR,
-                releaseChannel = MOZ_UPDATE_CHANNEL,
-                distributionId = distributionId,
-            )
-        services.add(socorroService)
+        // Dejavu: Mozilla's crash server is for Mozilla's own products, so crash reports are only sent when the build
+        // allows crash reporting, which Dejavu's builds do not.
+        if (BuildConfig.CRASH_REPORTING) {
+            // The name "Fenix" here matches the product name on Socorro and is unrelated to the actual app name:
+            // https://bugzilla.mozilla.org/show_bug.cgi?id=1523284
+            val socorroService =
+                MozillaSocorroService(
+                    context,
+                    appName = "Fenix",
+                    vendor = MOZ_APP_VENDOR,
+                    releaseChannel = MOZ_UPDATE_CHANNEL,
+                    distributionId = distributionId,
+                )
+            services.add(socorroService)
+        }
 
         val intent =
             Intent(context, HomeActivity::class.java).apply {
@@ -147,7 +151,7 @@ class Analytics(
                     appName = context.getString(R.string.app_name),
                     organizationName = "Mozilla",
                 ),
-            enabled = true,
+            enabled = BuildConfig.CRASH_REPORTING,
             nonFatalCrashIntent = pendingIntent,
             useLegacyReporting = settings.crashReportOption() != CrashReportOption.Auto,
             runtimeTagProviders =

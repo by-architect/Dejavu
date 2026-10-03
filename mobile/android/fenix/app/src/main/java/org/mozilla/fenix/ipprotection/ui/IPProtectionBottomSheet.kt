@@ -295,7 +295,7 @@ private fun PromoBannerCard() {
         }
 
         Image(
-            painter = painterResource(id = R.drawable.ic_kit_shield_on_state),
+            painter = painterResource(id = R.drawable.dejavu_illustration_shield),
             contentDescription = null,
             modifier = Modifier.size(bannerImageSize).offset(y = 16.dp),
         )

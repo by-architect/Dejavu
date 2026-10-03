@@ -88,7 +88,6 @@
     <string name="dejavu_action_remove_from_essentials">إزالة من الأساسيات</string>
     <string name="dejavu_action_delete">حذف</string>
     <string name="dejavu_settings_title">Dejavu</string>
-    <string name="dejavu_about_content">يعتمد %1$s على Firefox، من إنتاج Mozilla.</string>
     <string name="dejavu_settings_tab_actions">إجراءات التبويبات</string>
     <string name="dejavu_settings_pinned_tabs">التبويبات المثبتة</string>
     <string name="dejavu_settings_unpinned_tabs">التبويبات غير المثبتة</string>

@@ -88,7 +88,6 @@
     <string name="dejavu_action_remove_from_essentials">Премахване от Любими</string>
     <string name="dejavu_action_delete">Изтриване</string>
     <string name="dejavu_settings_title">Dejavu</string>
-    <string name="dejavu_about_content">%1$s се базира на Firefox, разработен от Mozilla.</string>
     <string name="dejavu_settings_tab_actions">Действия с раздели</string>
     <string name="dejavu_settings_pinned_tabs">Закачени раздели</string>
     <string name="dejavu_settings_unpinned_tabs">Незакачени раздели</string>

@@ -340,8 +340,9 @@ androidComponents {
 // -------------------------------------------------------------------------------------------------
 
 android.defaultConfig.with {
-    buildConfigField 'boolean', 'CRASH_REPORTING', 'true'
-    buildConfigField 'boolean', 'TELEMETRY', 'true'
+    // Dejavu: crash reports and telemetry would go to Mozilla's servers as Firefox for Android, so both are off.
+    buildConfigField 'boolean', 'CRASH_REPORTING', 'false'
+    buildConfigField 'boolean', 'TELEMETRY', 'false'
 
     // Reading the sentry token from a local file (if it exists). In a release task on taskcluster it will be available.
     buildConfigField 'String', 'SENTRY_TOKEN', 'null'

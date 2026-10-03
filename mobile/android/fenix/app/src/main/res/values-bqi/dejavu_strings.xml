@@ -88,7 +88,6 @@
     <string name="dejavu_action_remove_from_essentials">دراوردن ز سایت یل مهم</string>
     <string name="dejavu_action_delete">پاک کردن</string>
     <string name="dejavu_settings_title">Dejavu</string>
-    <string name="dejavu_about_content">%1$s بر پایه Firefox ساخته وابیده، که Mozilla ساختش.</string>
     <string name="dejavu_settings_tab_actions">کار یل بلگه</string>
     <string name="dejavu_settings_pinned_tabs">بلگه یل سنجاق‌وابیده</string>
     <string name="dejavu_settings_unpinned_tabs">بلگه یل سنجاق‌نوابیده</string>

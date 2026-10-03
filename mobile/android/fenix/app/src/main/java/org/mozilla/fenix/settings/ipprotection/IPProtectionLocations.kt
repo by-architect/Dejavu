@@ -181,7 +181,7 @@ private fun LocationsEmptyState() {
             horizontalAlignment = Alignment.CenterHorizontally,
         ) {
             Image(
-                painter = painterResource(R.drawable.kit_search_error),
+                painter = painterResource(R.drawable.dejavu_illustration_no_results),
                 contentDescription = null, // Decorative only
             )
 

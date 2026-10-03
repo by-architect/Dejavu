@@ -88,7 +88,6 @@
     <string name="dejavu_action_remove_from_essentials">Pašalinti iš Mėgstamiausių</string>
     <string name="dejavu_action_delete">Ištrinti</string>
     <string name="dejavu_settings_title">Dejavu</string>
-    <string name="dejavu_about_content">%1$s remiasi Firefox naršykle, kurią kuria Mozilla.</string>
     <string name="dejavu_settings_tab_actions">Kortelių veiksmai</string>
     <string name="dejavu_settings_pinned_tabs">Prisegtos kortelės</string>
     <string name="dejavu_settings_unpinned_tabs">Neprisegtos kortelės</string>

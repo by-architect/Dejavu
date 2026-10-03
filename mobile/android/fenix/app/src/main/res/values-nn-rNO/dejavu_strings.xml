@@ -88,7 +88,6 @@
     <string name="dejavu_action_remove_from_essentials">Fjern frå favorittar</string>
     <string name="dejavu_action_delete">Slett</string>
     <string name="dejavu_settings_title">Dejavu</string>
-    <string name="dejavu_about_content">%1$s er basert på Firefox, laga av Mozilla.</string>
     <string name="dejavu_settings_tab_actions">Fanehandlingar</string>
     <string name="dejavu_settings_pinned_tabs">Festa faner</string>
     <string name="dejavu_settings_unpinned_tabs">Ikkje-festa faner</string>

@@ -718,7 +718,7 @@
     <!-- Preference Category for settings related to Search address bar -->
     <string name="preferences_settings_address_bar">Address bar preferences</string>
     <!-- Preference Category for settings to Firefox Suggest -->
-    <string name="preference_search_address_bar_fx_suggest" tools:ignore="BrandUsage">Address bar - Dejavu Suggest</string>
+    <string name="preference_search_address_bar_fx_suggest" tools:ignore="BrandUsage">Address bar - Firefox Suggest</string>
     <!-- Preference link to Learn more about Firefox Suggest -->
     <string name="preference_search_learn_about_fx_suggest" tools:ignore="BrandUsage">Learn more about Firefox Suggest</string>
     <!-- Preference link to rating Fenix on the Play Store -->
@@ -1144,7 +1144,7 @@
     <!-- Name of the "receive tabs" notification channel. Displayed in the "App notifications" system settings for the app -->
     <string name="fxa_received_tab_channel_name">Received tabs</string>
     <!-- Description of the "receive tabs" notification channel. Displayed in the "App notifications" system settings for the app -->
-    <string name="fxa_received_tab_channel_description" tools:ignore="BrandUsage">Notifications for tabs received from other Firefox devices.</string>
+    <string name="fxa_received_tab_channel_description">Notifications for tabs received from your other devices.</string>
     <!--  The body for these is the URL of the tab received  -->
     <string name="fxa_tab_received_notification_name">Tab Received</string>
     <!-- %s is the device name -->
@@ -3301,7 +3301,7 @@
 
     <!-- Awesome bar suggestion's headers -->
     <!-- Search suggestions title for Firefox Suggest. -->
-    <string name="firefox_suggest_header" tools:ignore="BrandUsage">Dejavu Suggest</string>
+    <string name="firefox_suggest_header" tools:ignore="BrandUsage">Firefox Suggest</string>
     <!-- Search suggestions title for trending search suggestions.
         %s is a placeholder for the name of the search engine providing the trending search suggestions. -->
     <string name="trending_searches_header_2">Trending on %s</string>

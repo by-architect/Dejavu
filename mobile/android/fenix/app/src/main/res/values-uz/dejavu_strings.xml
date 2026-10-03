@@ -88,7 +88,6 @@
     <string name="dejavu_action_remove_from_essentials">Muhimlardan chiqarish</string>
     <string name="dejavu_action_delete">O\'chirish</string>
     <string name="dejavu_settings_title">Dejavu</string>
-    <string name="dejavu_about_content">%1$s — Mozilla yaratgan Firefox asosida yaratilgan.</string>
     <string name="dejavu_settings_tab_actions">Varaq amallari</string>
     <string name="dejavu_settings_pinned_tabs">Mahkamlangan varaqlar</string>
     <string name="dejavu_settings_unpinned_tabs">Mahkamlanmagan varaqlar</string>

@@ -88,7 +88,6 @@
     <string name="dejavu_action_remove_from_essentials">Прыбраць з важнага</string>
     <string name="dejavu_action_delete">Выдаліць</string>
     <string name="dejavu_settings_title">Dejavu</string>
-    <string name="dejavu_about_content">%1$s заснаваны на Firefox, распрацаваны Mozilla.</string>
     <string name="dejavu_settings_tab_actions">Дзеянні з карткамі</string>
     <string name="dejavu_settings_pinned_tabs">Замацаваныя карткі</string>
     <string name="dejavu_settings_unpinned_tabs">Незамацаваныя карткі</string>

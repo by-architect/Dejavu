@@ -1058,7 +1058,8 @@ features:
       enabled:
         description: If true, IP Protection feature is enabled.
         type: Boolean
-        default: true
+        # Dejavu: the VPN is Mozilla's service for Firefox users, so Dejavu does not offer it.
+        default: false
       show-beta-badge:
         description: If true, a BETA badge is shown next to the IP Protection entry in the settings list.
         type: Boolean

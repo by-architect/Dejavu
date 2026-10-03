@@ -88,7 +88,6 @@
     <string name="dejavu_action_remove_from_essentials">Piceun tina Penting</string>
     <string name="dejavu_action_delete">Hapus</string>
     <string name="dejavu_settings_title">Dejavu</string>
-    <string name="dejavu_about_content">%1$s dumasar kana Firefox, dijieun ku Mozilla.</string>
     <string name="dejavu_settings_tab_actions">Aksi tab</string>
     <string name="dejavu_settings_pinned_tabs">Tab nu disemat</string>
     <string name="dejavu_settings_unpinned_tabs">Tab nu teu disemat</string>

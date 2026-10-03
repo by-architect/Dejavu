@@ -88,7 +88,6 @@
     <string name="dejavu_action_remove_from_essentials">從常用網站中移除</string>
     <string name="dejavu_action_delete">刪除</string>
     <string name="dejavu_settings_title">Dejavu</string>
-    <string name="dejavu_about_content">%1$s 是以 Mozilla 出品的 Firefox 為基礎。</string>
     <string name="dejavu_settings_tab_actions">分頁操作</string>
     <string name="dejavu_settings_pinned_tabs">已釘選分頁</string>
     <string name="dejavu_settings_unpinned_tabs">未釘選分頁</string>

@@ -88,7 +88,6 @@
     <string name="dejavu_action_remove_from_essentials">Հեռացնել կարևոր կայքերից</string>
     <string name="dejavu_action_delete">Ջնջել</string>
     <string name="dejavu_settings_title">Dejavu</string>
-    <string name="dejavu_about_content">%1$s֊ը հիմնված է Firefox֊ի վրա և ստեղծված է Mozilla֊ի կողմից.</string>
     <string name="dejavu_settings_tab_actions">Ներդիրի գործողություններ</string>
     <string name="dejavu_settings_pinned_tabs">Ամրացված ներդիրներ</string>
     <string name="dejavu_settings_unpinned_tabs">Չամրացված ներդիրներ</string>

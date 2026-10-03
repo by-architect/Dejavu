@@ -88,7 +88,6 @@
     <string name="dejavu_action_remove_from_essentials">საჭირო საიტებიდან ამოშლა</string>
     <string name="dejavu_action_delete">წაშლა</string>
     <string name="dejavu_settings_title">Dejavu</string>
-    <string name="dejavu_about_content">%1$s დაფუძნებულია Firefox-ზე და შექმნილია Mozilla-ს მიერ.</string>
     <string name="dejavu_settings_tab_actions">ჩანართის მოქმედებები</string>
     <string name="dejavu_settings_pinned_tabs">მიმაგრებული ჩანართები</string>
     <string name="dejavu_settings_unpinned_tabs">მიუმაგრებელი ჩანართები</string>

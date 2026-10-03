@@ -88,7 +88,6 @@
     <string name="dejavu_action_remove_from_essentials">Xóa khỏi trang thiết yếu</string>
     <string name="dejavu_action_delete">Xóa</string>
     <string name="dejavu_settings_title">Dejavu</string>
-    <string name="dejavu_about_content">%1$s dựa trên Firefox, do Mozilla phát triển.</string>
     <string name="dejavu_settings_tab_actions">Thao tác thẻ</string>
     <string name="dejavu_settings_pinned_tabs">Thẻ đã ghim</string>
     <string name="dejavu_settings_unpinned_tabs">Thẻ chưa ghim</string>

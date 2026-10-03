@@ -88,7 +88,6 @@
     <string name="dejavu_action_remove_from_essentials">Verwijderen uit favorieten</string>
     <string name="dejavu_action_delete">Verwijderen</string>
     <string name="dejavu_settings_title">Dejavu</string>
-    <string name="dejavu_about_content">%1$s is gebaseerd op Firefox, gemaakt door Mozilla.</string>
     <string name="dejavu_settings_tab_actions">Tabbladacties</string>
     <string name="dejavu_settings_pinned_tabs">Vastgemaakte tabbladen</string>
     <string name="dejavu_settings_unpinned_tabs">Niet-vastgemaakte tabbladen</string>

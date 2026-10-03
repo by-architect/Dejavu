@@ -88,7 +88,6 @@
     <string name="dejavu_action_remove_from_essentials">Aus Favoriten entfernen</string>
     <string name="dejavu_action_delete">Löschen</string>
     <string name="dejavu_settings_title">Dejavu</string>
-    <string name="dejavu_about_content">%1$s basiert auf Firefox von Mozilla.</string>
     <string name="dejavu_settings_tab_actions">Tab-Aktionen</string>
     <string name="dejavu_settings_pinned_tabs">Angeheftete Tabs</string>
     <string name="dejavu_settings_unpinned_tabs">Nicht angeheftete Tabs</string>

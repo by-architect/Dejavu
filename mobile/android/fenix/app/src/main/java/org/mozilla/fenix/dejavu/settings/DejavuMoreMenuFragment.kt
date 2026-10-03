@@ -199,7 +199,6 @@ class DejavuMoreMenuFragment : DejavuComposeFragment(R.string.dejavu_settings_mo
             canGoForward = true,
             hasExternalApp = true,
             canTranslate = true,
-            canSummarize = true,
             isWebPage = true,
         )
     }

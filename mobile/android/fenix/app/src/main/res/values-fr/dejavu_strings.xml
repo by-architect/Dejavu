@@ -88,7 +88,6 @@
     <string name="dejavu_action_remove_from_essentials">Retirer des favoris</string>
     <string name="dejavu_action_delete">Supprimer</string>
     <string name="dejavu_settings_title">Dejavu</string>
-    <string name="dejavu_about_content">%1$s est basé sur Firefox, développé par Mozilla.</string>
     <string name="dejavu_settings_tab_actions">Actions sur les onglets</string>
     <string name="dejavu_settings_pinned_tabs">Onglets épinglés</string>
     <string name="dejavu_settings_unpinned_tabs">Onglets non épinglés</string>

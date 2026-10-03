@@ -74,14 +74,14 @@ private fun protectionPanelBannerContent(
     return when {
         !isSecured ->
             ProtectionPanelBannerContent(
-                imageId = R.drawable.protection_panel_not_secure,
+                imageId = R.drawable.dejavu_illustration_problem,
                 title = stringResource(id = R.string.protection_panel_banner_not_secure_title),
                 description = stringResource(id = R.string.protection_panel_banner_not_secure_description),
                 backgroundColor = defaultBackground,
             )
         !isTrackingProtectionEnabled ->
             ProtectionPanelBannerContent(
-                imageId = R.drawable.protection_panel_not_protected,
+                imageId = R.drawable.dejavu_illustration_shield_off,
                 title = stringResource(id = R.string.protection_panel_banner_not_protected_title),
                 description =
                     stringResource(
@@ -92,7 +92,7 @@ private fun protectionPanelBannerContent(
             )
         else ->
             ProtectionPanelBannerContent(
-                imageId = R.drawable.kit_head_protection_blocker_banner,
+                imageId = R.drawable.dejavu_illustration_shield,
                 title = protectedTitle,
                 description =
                     if (numberOfTrackersBlocked > 0) {

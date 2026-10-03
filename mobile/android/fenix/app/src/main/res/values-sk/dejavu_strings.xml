@@ -88,7 +88,6 @@
     <string name="dejavu_action_remove_from_essentials">Odstrániť z obľúbených</string>
     <string name="dejavu_action_delete">Odstrániť</string>
     <string name="dejavu_settings_title">Dejavu</string>
-    <string name="dejavu_about_content">%1$s je založený na Firefoxe, ktorý vytvorila Mozilla.</string>
     <string name="dejavu_settings_tab_actions">Akcie kariet</string>
     <string name="dejavu_settings_pinned_tabs">Pripnuté karty</string>
     <string name="dejavu_settings_unpinned_tabs">Nepripnuté karty</string>

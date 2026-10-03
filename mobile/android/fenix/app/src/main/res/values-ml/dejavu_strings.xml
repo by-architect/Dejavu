@@ -88,7 +88,6 @@
     <string name="dejavu_action_remove_from_essentials">പ്രധാനപ്പെട്ടവയിൽ നിന്ന് നീക്കം ചെയ്യുക</string>
     <string name="dejavu_action_delete">ഇല്ലാതാക്കുക</string>
     <string name="dejavu_settings_title">Dejavu</string>
-    <string name="dejavu_about_content">%1$s Firefox അടിസ്ഥാനമാക്കിയുള്ളതാണ്, ഇത് നിർമ്മിച്ചത് Mozilla ആണ്.</string>
     <string name="dejavu_settings_tab_actions">ടാബ് പ്രവർത്തനങ്ങൾ</string>
     <string name="dejavu_settings_pinned_tabs">പിൻ ചെയ്ത ടാബുകൾ</string>
     <string name="dejavu_settings_unpinned_tabs">പിൻ ചെയ്യാത്ത ടാബുകൾ</string>

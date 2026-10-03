@@ -88,7 +88,6 @@
     <string name="dejavu_action_remove_from_essentials">අත්‍යවශ්‍යයෙන් ඉවත් කරන්න</string>
     <string name="dejavu_action_delete">මකන්න</string>
     <string name="dejavu_settings_title">Dejavu</string>
-    <string name="dejavu_about_content">%1$s පදනම් වන්නේ Firefox මත වන අතර, එය නිර්මාණය කළේ Mozilla ය.</string>
     <string name="dejavu_settings_tab_actions">පටිති ක්‍රියා</string>
     <string name="dejavu_settings_pinned_tabs">අමුණන ලද පටිති</string>
     <string name="dejavu_settings_unpinned_tabs">නොඅමුණන ලද පටිති</string>

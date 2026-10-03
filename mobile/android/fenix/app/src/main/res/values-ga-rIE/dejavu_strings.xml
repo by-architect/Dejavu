@@ -88,7 +88,6 @@
     <string name="dejavu_action_remove_from_essentials">Bain de na riachtanais</string>
     <string name="dejavu_action_delete">Scrios</string>
     <string name="dejavu_settings_title">Dejavu</string>
-    <string name="dejavu_about_content">Tá %1$s bunaithe ar Firefox, arna dhéanamh ag Mozilla.</string>
     <string name="dejavu_settings_tab_actions">Gníomhartha cluaisíní</string>
     <string name="dejavu_settings_pinned_tabs">Cluaisíní greamaithe</string>
     <string name="dejavu_settings_unpinned_tabs">Cluaisíní neamhghreamaithe</string>

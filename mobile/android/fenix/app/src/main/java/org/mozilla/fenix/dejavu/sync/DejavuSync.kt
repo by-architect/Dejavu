@@ -21,6 +21,7 @@ import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
+import kotlinx.coroutines.flow.collectLatest
 import kotlinx.coroutines.flow.combine
 import kotlinx.coroutines.flow.debounce
 import kotlinx.coroutines.flow.distinctUntilChanged
@@ -210,14 +211,20 @@ object DejavuSync {
     private fun watchLocalChanges(context: Context) = scope.launch {
         val repository = WorkspaceRepository.get(context)
         val containers = DejavuContainerStorage.get(context)
-        // Tabs that are not pinned count by what their records hold: address, title and container.
-        val tabs = context.components.core.store.flow()
-            .map { state -> state.normalTabs.map { Triple(it.id, it.content.url to it.content.title, it.contextId) } }
-            .distinctUntilChanged()
-        combine(repository.state, containers.records, tabs) { _, _, _ -> }
-            .drop(1)
-            .debounce(LOCAL_CHANGE_DELAY_MS)
-            .collect { if (hasLocalChanges()) request() }
+        // Only while this device syncs: looking at every tab on every change of the browser costs work and memory.
+        _status.map { it.enabled && it.signedIn }.distinctUntilChanged().collectLatest { syncing ->
+            if (!syncing) return@collectLatest
+            // Tabs that are not pinned count by what their records hold: address, title and container.
+            val tabs = context.components.core.store.flow()
+                .map { state ->
+                    state.normalTabs.map { Triple(it.id, it.content.url to it.content.title, it.contextId) }
+                }
+                .distinctUntilChanged()
+            combine(repository.state, containers.records, tabs) { _, _, _ -> }
+                .drop(1)
+                .debounce(LOCAL_CHANGE_DELAY_MS)
+                .collect { if (hasLocalChanges()) request() }
+        }
     }
 
     private suspend fun hasLocalChanges(): Boolean {

@@ -44,6 +44,7 @@ import androidx.compose.ui.draw.alpha
 import androidx.compose.ui.platform.ComposeView
 import androidx.compose.ui.platform.ViewCompositionStrategy
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.res.pluralStringResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import androidx.fragment.app.Fragment
@@ -61,6 +62,7 @@ import org.mozilla.fenix.dejavu.actions.RowAction
 import org.mozilla.fenix.dejavu.actions.fits
 import org.mozilla.fenix.dejavu.actions.icon
 import org.mozilla.fenix.dejavu.actions.label
+import org.mozilla.fenix.dejavu.browser.TabSleepMiddleware
 import org.mozilla.fenix.dejavu.containers.ContainerIcon
 import org.mozilla.fenix.dejavu.containers.ContainerPick
 import org.mozilla.fenix.dejavu.containers.ContainerRecord
@@ -525,6 +527,55 @@ class DejavuContainersFragment : DejavuComposeFragment(R.string.dejavu_settings_
                 onDismiss = { deleting = null },
             )
         }
+    }
+}
+
+/** Chooses how long a tab stays awake after it was last looked at, see [TabSleepMiddleware]. */
+class DejavuTabSleepFragment : DejavuComposeFragment(R.string.dejavu_settings_tab_sleep) {
+    @Composable
+    override fun DejavuScreen() {
+        val settings = remember { dejavuSettings() }
+        val minutes by settings.tabSleepMinutes.collectAsState()
+        Column(modifier = Modifier.fillMaxSize().verticalScroll(rememberScrollState())) {
+            Text(
+                text = stringResource(R.string.dejavu_tab_sleep_hint),
+                style = MaterialTheme.typography.bodyMedium,
+                color = MaterialTheme.colorScheme.onSurfaceVariant,
+                modifier = Modifier.padding(16.dp),
+            )
+            SettingsSectionHeader(
+                text = stringResource(R.string.dejavu_tab_sleep_when),
+                modifier = Modifier.padding(horizontal = 16.dp),
+            )
+            SLEEP_CHOICES.forEachIndexed { index, choice ->
+                val label = when (choice) {
+                    0 -> stringResource(R.string.dejavu_tab_sleep_never)
+                    MINUTES_PER_HOUR -> stringResource(R.string.dejavu_tab_sleep_after_hour)
+                    else -> pluralStringResource(R.plurals.dejavu_tab_sleep_after_minutes, choice, choice)
+                }
+                Row(
+                    verticalAlignment = Alignment.CenterVertically,
+                    modifier = Modifier
+                        .settingsCard(index, SLEEP_CHOICES.size)
+                        .fillMaxWidth()
+                        .clickable { settings.setTabSleepMinutes(choice) }
+                        .padding(horizontal = 8.dp, vertical = 4.dp),
+                ) {
+                    RadioButton(selected = minutes == choice, onClick = { settings.setTabSleepMinutes(choice) })
+                    Text(
+                        text = label,
+                        style = MaterialTheme.typography.bodyLarge,
+                        color = MaterialTheme.colorScheme.onSurface,
+                    )
+                }
+            }
+            Spacer(Modifier.height(24.dp))
+        }
+    }
+
+    private companion object {
+        const val MINUTES_PER_HOUR = 60
+        val SLEEP_CHOICES = listOf(10, DejavuSettings.DEFAULT_TAB_SLEEP_MINUTES, MINUTES_PER_HOUR, 0)
     }
 }
 

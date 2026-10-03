@@ -88,7 +88,6 @@
     <string name="dejavu_action_remove_from_essentials">o weka e ni tan lipu suli</string>
     <string name="dejavu_action_delete">o weka</string>
     <string name="dejavu_settings_title">Dejavu</string>
-    <string name="dejavu_about_content">%1$s li kama tan Firefox, li pali tan Mozilla.</string>
     <string name="dejavu_settings_tab_actions">pali pi poki</string>
     <string name="dejavu_settings_pinned_tabs">poki awen</string>
     <string name="dejavu_settings_unpinned_tabs">poki awen ala</string>

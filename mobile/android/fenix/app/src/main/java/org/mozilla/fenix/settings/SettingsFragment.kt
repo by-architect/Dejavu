@@ -214,6 +214,13 @@ class SettingsFragment : PreferenceFragmentCompat(), SystemInsetsPaddedFragment 
         findPreference<Preference>(getPreferenceKey(R.string.pref_key_ai_controls))?.isVisible =
             requireComponents.settings.aiControlsFeatureFlagEnabled
 
+        // Dejavu: Firefox Labs tries Mozilla's experimental Firefox features, which Dejavu does not offer. Dejavu
+        // sends no data to Mozilla and takes no remote changes from it, so data collection and remote improvements are
+        // hidden too.
+        findPreference<Preference>(getPreferenceKey(R.string.pref_key_firefox_labs))?.isVisible = false
+        findPreference<Preference>(getPreferenceKey(R.string.pref_key_data_choices))?.isVisible = false
+        findPreference<Preference>(getPreferenceKey(R.string.pref_key_remote_improvements))?.isVisible = false
+
         if (requireComponents.settings.accountSettingsNewUi) {
             findPreference<PreferenceCategory>(getPreferenceKey(R.string.pref_key_account_category))
                 ?.setTitle(R.string.preferences_account_and_sync_settings)
@@ -402,6 +409,10 @@ class SettingsFragment : PreferenceFragmentCompat(), SystemInsetsPaddedFragment 
 
                 resources.getString(R.string.pref_key_dejavu_tab_actions) -> {
                     ActionOnlyNavDirections(R.id.dejavu_tab_actions_graph)
+                }
+
+                resources.getString(R.string.pref_key_dejavu_tab_sleep) -> {
+                    ActionOnlyNavDirections(R.id.dejavu_tab_sleep_graph)
                 }
 
                 resources.getString(R.string.pref_key_dejavu_containers) -> {

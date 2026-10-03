@@ -88,7 +88,6 @@
     <string name="dejavu_action_remove_from_essentials">Иҵакыу сайтқәа рҟынтә аныхра</string>
     <string name="dejavu_action_delete">Аудаление</string>
     <string name="dejavu_settings_title">Dejavu</string>
-    <string name="dejavu_about_content">%1$s Firefox ду еиуеиԥшым, Mozilla дызҟaз аԥҵаз.</string>
     <string name="dejavu_settings_tab_actions">Абларҭа аҟaҵарақәа</string>
     <string name="dejavu_settings_pinned_tabs">Ификсациатә абларҭақәа</string>
     <string name="dejavu_settings_unpinned_tabs">Ификсациам абларҭақәа</string>

@@ -88,7 +88,6 @@
     <string name="dejavu_action_remove_from_essentials">Caccia da-i essençiali</string>
     <string name="dejavu_action_delete">Scancella</string>
     <string name="dejavu_settings_title">Dejavu</string>
-    <string name="dejavu_about_content">%1$s o l\'è basou in sce Firefox, fæto da Mozilla.</string>
     <string name="dejavu_settings_tab_actions">Açioin di feuggi</string>
     <string name="dejavu_settings_pinned_tabs">Feuggi fissæ</string>
     <string name="dejavu_settings_unpinned_tabs">Feuggi no fissæ</string>

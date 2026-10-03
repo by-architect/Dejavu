@@ -88,7 +88,6 @@
     <string name="dejavu_action_remove_from_essentials">Fuortsmite út essinsjes</string>
     <string name="dejavu_action_delete">Fuortsmite</string>
     <string name="dejavu_settings_title">Dejavu</string>
-    <string name="dejavu_about_content">%1$s is basearre op Firefox, makke troch Mozilla.</string>
     <string name="dejavu_settings_tab_actions">Aksjes foar ljepblêden</string>
     <string name="dejavu_settings_pinned_tabs">Fêstsette ljepblêden</string>
     <string name="dejavu_settings_unpinned_tabs">Net-fêstsette ljepblêden</string>

@@ -209,6 +209,38 @@ class SpacesModelTest {
     }
 
     @Test
+    fun `a pin given a new address elsewhere forgets the page it was last on here`() {
+        val (applied, server) = applyDesktop()
+        val state = applied.withRememberedPage(TAB_PINNED, "https://example.com/later", "Later")
+        val moved = ZenRecords.tab(TAB_PINNED, "https://example.com/new", SPACE_PERSONAL)
+
+        val result = SpacesApplier(server, containerIds, firstSync = false, defaultName = "Home", now = 20L)
+            .apply(state, listOf(moved))
+
+        val pin = result.state.pins.single { it.id == TAB_PINNED }
+        assertEquals("https://example.com/new", pin.url)
+        assertNull(pin.openUrl)
+        assertNull(pin.openTitle)
+    }
+
+    @Test
+    fun `a pin renamed elsewhere still opens on the page it was last on here`() {
+        val (applied, server) = applyDesktop()
+        val state = applied.withRememberedPage(TAB_PINNED, "https://example.com/later", "Later")
+        val renamed = ZenRecords.tab(TAB_PINNED, "https://example.com/", SPACE_PERSONAL, title = "Renamed")
+
+        val result = SpacesApplier(server, containerIds, firstSync = false, defaultName = "Home", now = 20L)
+            .apply(state, listOf(renamed))
+
+        val pin = result.state.pins.single { it.id == TAB_PINNED }
+        assertEquals("https://example.com/later", pin.openUrl)
+        assertEquals("Later", pin.openTitle)
+    }
+
+    private fun WorkspaceState.withRememberedPage(pinId: String, url: String, title: String) =
+        copy(pins = pins.map { if (it.id == pinId) it.copy(openUrl = url, openTitle = title) else it })
+
+    @Test
     fun `deleted records remove pins and workspaces but keep open tabs`() {
         val (state, server) = applyDesktop()
         val withOpenTab = state.copy(

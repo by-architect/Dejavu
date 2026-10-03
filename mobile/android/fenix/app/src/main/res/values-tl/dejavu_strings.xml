@@ -88,7 +88,6 @@
     <string name="dejavu_action_remove_from_essentials">Alisin sa Mahahalaga</string>
     <string name="dejavu_action_delete">Tanggalin</string>
     <string name="dejavu_settings_title">Dejavu</string>
-    <string name="dejavu_about_content">Ang %1$s ay batay sa Firefox, gawa ng Mozilla.</string>
     <string name="dejavu_settings_tab_actions">Mga aksyon ng tab</string>
     <string name="dejavu_settings_pinned_tabs">Mga naka-pin na tab</string>
     <string name="dejavu_settings_unpinned_tabs">Mga hindi naka-pin na tab</string>

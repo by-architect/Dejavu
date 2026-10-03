@@ -88,7 +88,6 @@
     <string name="dejavu_action_remove_from_essentials">اساس‌لاردان چیخار</string>
     <string name="dejavu_action_delete">سیل</string>
     <string name="dejavu_settings_title">Dejavu</string>
-    <string name="dejavu_about_content">%1$s، Mozilla طرفیندن حاضیرلانان Firefox اساسیندا قورولوب.</string>
     <string name="dejavu_settings_tab_actions">تاغ عملیات‌لاری</string>
     <string name="dejavu_settings_pinned_tabs">برکیدیلمیش تاغلار</string>
     <string name="dejavu_settings_unpinned_tabs">برکیدیلمه‌میش تاغلار</string>

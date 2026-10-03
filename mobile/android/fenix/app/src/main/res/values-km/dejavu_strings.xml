@@ -88,7 +88,6 @@
     <string name="dejavu_action_remove_from_essentials">ដកចេញពីសំខាន់ៗ</string>
     <string name="dejavu_action_delete">លុប</string>
     <string name="dejavu_settings_title">Dejavu</string>
-    <string name="dejavu_about_content">%1$s ត្រូវបានបង្កើតដោយ Mozilla ដោយផ្អែកលើ Firefox។</string>
     <string name="dejavu_settings_tab_actions">សកម្មភាពផ្ទាំង</string>
     <string name="dejavu_settings_pinned_tabs">ផ្ទាំងបានខ្ទាស់</string>
     <string name="dejavu_settings_unpinned_tabs">ផ្ទាំងមិនបានខ្ទាស់</string>

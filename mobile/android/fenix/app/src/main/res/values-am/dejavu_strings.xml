@@ -104,7 +104,6 @@
     <string name="dejavu_action_remove_from_essentials">ከአስፈላጊዎች አስወግድ</string>
     <string name="dejavu_action_delete">ሰርዝ</string>
     <string name="dejavu_settings_title">Dejavu</string>
-    <string name="dejavu_about_content">%1$s በMozilla በተሰራው Firefox ላይ የተመሰረተ ነው።</string>
     <string name="dejavu_settings_tab_actions">የትር እርምጃዎች</string>
     <string name="dejavu_settings_pinned_tabs">የተሰኩ ትሮች</string>
     <string name="dejavu_settings_unpinned_tabs">ያልተሰኩ ትሮች</string>

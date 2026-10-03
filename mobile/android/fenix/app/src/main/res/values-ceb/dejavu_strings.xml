@@ -88,7 +88,6 @@
     <string name="dejavu_action_remove_from_essentials">Kuhaa sa Mahinungdanon</string>
     <string name="dejavu_action_delete">Tangtangon</string>
     <string name="dejavu_settings_title">Dejavu</string>
-    <string name="dejavu_about_content">Ang %1$s gibase sa Firefox, gihimo sa Mozilla.</string>
     <string name="dejavu_settings_tab_actions">Mga aksyon sa tab</string>
     <string name="dejavu_settings_pinned_tabs">Naka-pin nga mga tab</string>
     <string name="dejavu_settings_unpinned_tabs">Dili naka-pin nga mga tab</string>

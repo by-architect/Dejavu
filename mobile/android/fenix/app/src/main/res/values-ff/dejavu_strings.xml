@@ -88,7 +88,6 @@
     <string name="dejavu_action_remove_from_essentials">Retirer des essentiels</string>
     <string name="dejavu_action_delete">Supprimer</string>
     <string name="dejavu_settings_title">Dejavu</string>
-    <string name="dejavu_about_content">%1$s fondé sur Firefox, fait par Mozilla.</string>
     <string name="dejavu_settings_tab_actions">Actions des tabbe</string>
     <string name="dejavu_settings_pinned_tabs">Tabbe épinglées</string>
     <string name="dejavu_settings_unpinned_tabs">Tabbe non épinglées</string>

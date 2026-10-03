@@ -55,7 +55,9 @@ fun createNimbus(
             isFirstRun = isAppFirstRun,
         )
 
-    val serverSettings: NimbusServerSettings? = remoteSettingsService?.let { service ->
+    // Dejavu: no experiments or rollouts come from Mozilla's server, so Mozilla cannot change Dejavu remotely and
+    // Dejavu never asks for them as Firefox for Android.
+    val serverSettings: NimbusServerSettings? = remoteSettingsService?.takeIf { FETCH_FROM_MOZILLA }?.let { service ->
         NimbusServerSettings(
             rsService = service,
             collectionName =
@@ -155,3 +157,5 @@ fun NimbusInterface.maybeFetchExperiments(
         }
     }
 }
+
+private const val FETCH_FROM_MOZILLA = false

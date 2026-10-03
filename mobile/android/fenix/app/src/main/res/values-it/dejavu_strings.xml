@@ -88,7 +88,6 @@
     <string name="dejavu_action_remove_from_essentials">Rimuovi dai preferiti</string>
     <string name="dejavu_action_delete">Elimina</string>
     <string name="dejavu_settings_title">Dejavu</string>
-    <string name="dejavu_about_content">%1$s è basato su Firefox, sviluppato da Mozilla.</string>
     <string name="dejavu_settings_tab_actions">Azioni sulle schede</string>
     <string name="dejavu_settings_pinned_tabs">Schede bloccate</string>
     <string name="dejavu_settings_unpinned_tabs">Schede non bloccate</string>

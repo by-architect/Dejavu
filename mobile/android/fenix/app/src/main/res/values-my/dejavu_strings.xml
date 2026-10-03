@@ -88,7 +88,6 @@
     <string name="dejavu_action_remove_from_essentials">မရှိမဖြစ်များမှ ဖယ်ရှားရန်</string>
     <string name="dejavu_action_delete">ဖျက်ရန်</string>
     <string name="dejavu_settings_title">Dejavu</string>
-    <string name="dejavu_about_content">%1$s သည် Mozilla မှ ထုတ်လုပ်သော Firefox ကို အခြေခံထားသည်။</string>
     <string name="dejavu_settings_tab_actions">တက်ဗ် လုပ်ဆောင်ချက်များ</string>
     <string name="dejavu_settings_pinned_tabs">ပင်ထိုးထားသော တက်ဗ်များ</string>
     <string name="dejavu_settings_unpinned_tabs">ပင်မထိုးထားသော တက်ဗ်များ</string>

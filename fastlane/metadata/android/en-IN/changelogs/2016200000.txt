@@ -1,1 +1,1 @@
-First release of Dejavu, a calm browser based on Firefox. Workspaces, containers, pinned tabs, essentials, folders and split view. Syncs with Zen Browser through your Mozilla account. Private by default: no telemetry.
+First release of Dejavu, an independent browser built from Mozilla's open source Firefox code, not made or endorsed by Mozilla. Workspaces, containers, pinned tabs, essentials, folders and split view. Syncs with Zen Browser through your Mozilla account. Private by default: no telemetry.

@@ -88,7 +88,6 @@
     <string name="dejavu_action_remove_from_essentials">Kkes seg wayen ilaqen</string>
     <string name="dejavu_action_delete">Kkes</string>
     <string name="dejavu_settings_title">Dejavu</string>
-    <string name="dejavu_about_content">%1$s yebna ɣef Firefox, yettwaxdem sɣur Mozilla.</string>
     <string name="dejavu_settings_tab_actions">Tigawin n yiccer</string>
     <string name="dejavu_settings_pinned_tabs">Iccaren yessersen</string>
     <string name="dejavu_settings_unpinned_tabs">Iccaren ur nesrusi ara</string>

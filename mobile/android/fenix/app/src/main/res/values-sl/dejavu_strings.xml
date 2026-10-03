@@ -88,7 +88,6 @@
     <string name="dejavu_action_remove_from_essentials">Odstrani iz Izbranega</string>
     <string name="dejavu_action_delete">Izbriši</string>
     <string name="dejavu_settings_title">Dejavu</string>
-    <string name="dejavu_about_content">%1$s temelji na Firefoxu, ki ga izdeluje Mozilla.</string>
     <string name="dejavu_settings_tab_actions">Dejanja zavihkov</string>
     <string name="dejavu_settings_pinned_tabs">Pripeti zavihki</string>
     <string name="dejavu_settings_unpinned_tabs">Nepripeti zavihki</string>

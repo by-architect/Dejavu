@@ -88,7 +88,6 @@
     <string name="dejavu_action_remove_from_essentials">よく使うサイトから削除</string>
     <string name="dejavu_action_delete">削除</string>
     <string name="dejavu_settings_title">Dejavu</string>
-    <string name="dejavu_about_content">%1$s は Mozilla が開発する Firefox をベースにしています。</string>
     <string name="dejavu_settings_tab_actions">タブの操作</string>
     <string name="dejavu_settings_pinned_tabs">ピン留めタブ</string>
     <string name="dejavu_settings_unpinned_tabs">未ピン留めタブ</string>

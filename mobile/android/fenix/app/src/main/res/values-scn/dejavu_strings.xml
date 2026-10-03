@@ -88,7 +88,6 @@
     <string name="dejavu_action_remove_from_essentials">Leva dî essenziali</string>
     <string name="dejavu_action_delete">Scancella</string>
     <string name="dejavu_settings_title">Dejavu</string>
-    <string name="dejavu_about_content">%1$s si basa supra Firefox, fattu di Mozilla.</string>
     <string name="dejavu_settings_tab_actions">Azzioni dî schedi</string>
     <string name="dejavu_settings_pinned_tabs">Schedi ficcati</string>
     <string name="dejavu_settings_unpinned_tabs">Schedi non ficcati</string>

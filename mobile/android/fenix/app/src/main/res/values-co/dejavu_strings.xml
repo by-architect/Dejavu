@@ -88,7 +88,6 @@
     <string name="dejavu_action_remove_from_essentials">Caccià da l\'essenziali</string>
     <string name="dejavu_action_delete">Squassà</string>
     <string name="dejavu_settings_title">Dejavu</string>
-    <string name="dejavu_about_content">%1$s hè basatu nant\'à Firefox, fattu da Mozilla.</string>
     <string name="dejavu_settings_tab_actions">Azzioni di l\'unghjette</string>
     <string name="dejavu_settings_pinned_tabs">Unghjette fissate</string>
     <string name="dejavu_settings_unpinned_tabs">Unghjette micca fissate</string>

@@ -88,7 +88,6 @@
     <string name="dejavu_action_remove_from_essentials">Odebrat z Oblíbených</string>
     <string name="dejavu_action_delete">Smazat</string>
     <string name="dejavu_settings_title">Dejavu</string>
-    <string name="dejavu_about_content">%1$s vychází z Firefoxu od Mozilly.</string>
     <string name="dejavu_settings_tab_actions">Akce panelů</string>
     <string name="dejavu_settings_pinned_tabs">Připnuté panely</string>
     <string name="dejavu_settings_unpinned_tabs">Nepřipnuté panely</string>

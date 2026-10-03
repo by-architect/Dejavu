@@ -88,7 +88,6 @@
     <string name="dejavu_action_remove_from_essentials">Wót nejwažnjejšych wótwónoźeś</string>
     <string name="dejavu_action_delete">Lašowaś</string>
     <string name="dejavu_settings_title">Dejavu</string>
-    <string name="dejavu_about_content">%1$s bazěrujo na Firefox, wutwórjony wót Mozilla.</string>
     <string name="dejavu_settings_tab_actions">Akcije za rejtariki</string>
     <string name="dejavu_settings_pinned_tabs">Pśipěte rejtariki</string>
     <string name="dejavu_settings_unpinned_tabs">Njepśipěte rejtariki</string>

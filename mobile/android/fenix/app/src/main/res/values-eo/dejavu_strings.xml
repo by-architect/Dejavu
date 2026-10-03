@@ -88,7 +88,6 @@
     <string name="dejavu_action_remove_from_essentials">Forigi el esencaĵoj</string>
     <string name="dejavu_action_delete">Forigi</string>
     <string name="dejavu_settings_title">Dejavu</string>
-    <string name="dejavu_about_content">%1$s baziĝas sur Firefox, farita de Mozilla.</string>
     <string name="dejavu_settings_tab_actions">Agoj de langetoj</string>
     <string name="dejavu_settings_pinned_tabs">Pinglitaj langetoj</string>
     <string name="dejavu_settings_unpinned_tabs">Nepinglitaj langetoj</string>

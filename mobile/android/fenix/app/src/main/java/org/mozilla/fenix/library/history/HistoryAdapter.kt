@@ -122,8 +122,15 @@ class HistoryAdapter(
             }
         }
 
-        // Add or remove the header and position to the map depending on it's deletion status
-        if (itemsWithHeaders.containsKey(headerKey)) {
+        // Dejavu's groups: a row starts its group when the row above it, leaving out rows about to be deleted, is in
+        // another group. Unlike the map below, this does not depend on the order rows are bound in.
+        if (headers != null) {
+            val previous = (position - 1 downTo 0).asSequence().mapNotNull { peek(it) }.firstOrNull { !isHidden(it) }
+            if (!isPendingDeletion && (previous == null || headers.keyOf(previous) != headerKey)) {
+                timeGroup = current.historyTimeGroup
+            }
+        } else if (itemsWithHeaders.containsKey(headerKey)) {
+            // Add or remove the header and position to the map depending on it's deletion status
             if (isPendingDeletion && itemsWithHeaders[headerKey] == position) {
                 itemsWithHeaders.remove(headerKey)
             } else if (isPendingDeletion && itemsWithHeaders[headerKey] != position) {
@@ -160,6 +167,23 @@ class HistoryAdapter(
             groupPendingDeletionCount,
             headerText = timeGroup?.let { headers?.labelOf(current) },
         )
+    }
+
+    /** Whether [item] is hidden because it is about to be deleted. */
+    private fun isHidden(item: History): Boolean = pendingDeletionItems.isNotEmpty() && when (item) {
+        is History.Regular -> pendingDeletionItems.any {
+            it is PendingDeletionHistory.Item && it.visitedAt == item.visitedAt
+        }
+        is History.Group -> pendingDeletionItems.any {
+            it is PendingDeletionHistory.Group && it.visitedAt == item.visitedAt
+        } || item.items.all { metadata ->
+            pendingDeletionItems.any {
+                it is PendingDeletionHistory.MetaData &&
+                    it.key == metadata.historyMetadataKey &&
+                    it.visitedAt == metadata.visitedAt
+            }
+        }
+        is History.Metadata -> false
     }
 
     /** @param pendingDeletionItems is used to filter out the items that should not be displayed. */
