@@ -31,7 +31,9 @@ internal object WorkspaceSerializer {
                 createdAt = item.optLong("createdAt", now),
                 updatedAt = item.optLong("updatedAt", now),
             )
-        }.ifEmpty { listOf(Workspace(newWorkspaceId(), defaultName, createdAt = now, updatedAt = now)) }
+        }.ifEmpty {
+            listOf(Workspace(newWorkspaceId(), defaultName, theme = WorkspaceTheme.Gold, createdAt = now, updatedAt = now))
+        }
         val workspaceIds = workspaces.map { it.id }.toSet()
 
         val pins = if (root?.optInt("version") == VERSION) {

@@ -294,4 +294,18 @@
         <item quantity="many">%1$d kortelės užvertos</item>
         <item quantity="other">%1$d kortelių užverta</item>
     </plurals>
+    <string name="dejavu_settings_close_pinned_hint">Prisegtose kortelėse ir aplankuose „Užverti“ užmigdo atvertas korteles, nes prisegtos kortelės lieka. Kai prisegta kortelė užmigdyta, „Užverti“ ją atsega.</string>
+    <string name="dejavu_features_title">Atraskite Dejavu</string>
+    <string name="dejavu_features_page">%1$d iš %2$d</string>
+    <string name="dejavu_features_next">Toliau</string>
+    <string name="dejavu_features_skip">Praleisti</string>
+    <string name="dejavu_feature_sleep">Užmigdykite visą aplanką</string>
+    <string name="dejavu_feature_themes">Suteikite kiekvienai darbo erdvei savas spalvas</string>
+    <string name="dejavu_feature_swipe_menu">Perbraukite apatinę juostą aukštyn, kad atvertumėte meniu</string>
+    <string name="dejavu_feature_actions">Siųskite bet kurią kortelę į savo programas</string>
+    <string name="dejavu_feature_zen_sync">Sinchronizuokite darbo erdves su Zen</string>
+    <string name="dejavu_feature_folders">Ilgai paspauskite korteles, kad sudėtumėte jas į aplanką</string>
+    <string name="dejavu_feature_drag">Vilkite korteles į aplankus ir Mėgstamiausius</string>
+    <string name="dejavu_feature_workspace_order">Vilkite darbo erdves, kad pakeistumėte jų tvarką</string>
+    <string name="dejavu_feature_split_view">Ilgai paspauskite nuorodą, kad atvertumėte ją padalytame rodinyje</string>
 </resources>

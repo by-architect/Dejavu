@@ -280,4 +280,18 @@
         <item quantity="one">%1$d ٹیب بند ہتین</item>
         <item quantity="other">%1$d ٹیب بند ہتین</item>
     </plurals>
+    <string name="dejavu_settings_close_pinned_hint">پن ٹیباک و فولڈراک ٹی «بند کبو» کھلوکا ٹیباتے سلیپ کیک، اینکہ پن سلامت سلّیرہ. ہراغا پن ٹیب سلیپ ٹی مریک، «بند کبو» اوڑان پن ہٹیک.</string>
+    <string name="dejavu_features_title">Dejavu ئے پٹ</string>
+    <string name="dejavu_features_page">%1$d / %2$d</string>
+    <string name="dejavu_features_next">رندی</string>
+    <string name="dejavu_features_skip">ہلّہ</string>
+    <string name="dejavu_feature_sleep">پورا فولڈرے سلیپ کبو</string>
+    <string name="dejavu_feature_themes">ہر ورک سپیس ئے تینا رنگاک ایتبو</string>
+    <string name="dejavu_feature_swipe_menu">مینو ملنگ کن چیرانا پٹی ئے بُرزا سوائپ کبو</string>
+    <string name="dejavu_feature_actions">ہر ٹیب ئے تینا ایپاتے راہی کبو</string>
+    <string name="dejavu_feature_zen_sync">تینا ورک سپیساتے Zen تو سنک کبو</string>
+    <string name="dejavu_feature_folders">ٹیباتے فولڈر اٹی ہتنگ کن دباسا ہلّبو</string>
+    <string name="dejavu_feature_drag">ٹیباتے فولڈراک و ضروری چیزاتے کشّبو</string>
+    <string name="dejavu_feature_workspace_order">ترتیب بدل کننگ کن ورک سپیساتے کشّبو</string>
+    <string name="dejavu_feature_split_view">لنکے اسپلٹ ویو ٹی ملنگ کن دباسا ہلّبو</string>
 </resources>

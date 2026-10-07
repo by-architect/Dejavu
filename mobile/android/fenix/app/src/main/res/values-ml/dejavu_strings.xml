@@ -280,4 +280,18 @@
         <item quantity="one">%1$d ടാബ് അടഞ്ഞു</item>
         <item quantity="other">%1$d ടാബുകൾ അടഞ്ഞു</item>
     </plurals>
+    <string name="dejavu_settings_close_pinned_hint">പിൻ ചെയ്ത ടാബുകളിലും ഫോൾഡറുകളിലും, പിന്നുകൾ നിലനിൽക്കുന്നതിനാൽ “അടയ്ക്കുക” തുറന്ന ടാബുകളെ സ്ലീപ്പിലാക്കും. പിൻ ചെയ്ത ഒരു ടാബ് സ്ലീപ്പിലായാൽ, “അടയ്ക്കുക” അതിന്റെ പിൻ നീക്കും.</string>
+    <string name="dejavu_features_title">Dejavu പരിചയപ്പെടുക</string>
+    <string name="dejavu_features_page">%2$d ൽ %1$d</string>
+    <string name="dejavu_features_next">അടുത്തത്</string>
+    <string name="dejavu_features_skip">ഒഴിവാക്കുക</string>
+    <string name="dejavu_feature_sleep">ഒരു ഫോൾഡർ മുഴുവനായി സ്ലീപ്പിലാക്കുക</string>
+    <string name="dejavu_feature_themes">ഓരോ പണിയിടത്തിനും സ്വന്തം നിറങ്ങൾ നൽകുക</string>
+    <string name="dejavu_feature_swipe_menu">മെനു തുറക്കാൻ താഴെയുള്ള ബാർ മുകളിലേക്ക് സ്വൈപ്പ് ചെയ്യുക</string>
+    <string name="dejavu_feature_actions">ഏത് ടാബും നിങ്ങളുടെ ആപ്പുകളിലേക്ക് അയയ്ക്കുക</string>
+    <string name="dejavu_feature_zen_sync">നിങ്ങളുടെ പണിയിടങ്ങൾ Zen യുമായി സിങ്ക് ചെയ്യുക</string>
+    <string name="dejavu_feature_folders">ടാബുകൾ ഒരു ഫോൾഡറിലാക്കാൻ അവ അമർത്തിപ്പിടിക്കുക</string>
+    <string name="dejavu_feature_drag">ടാബുകൾ ഫോൾഡറുകളിലേക്കും പ്രധാനപ്പെട്ടവയിലേക്കും വലിച്ചിടുക</string>
+    <string name="dejavu_feature_workspace_order">ക്രമം മാറ്റാൻ പണിയിടങ്ങൾ വലിച്ചിടുക</string>
+    <string name="dejavu_feature_split_view">ഒരു ലിങ്ക് വിഭജിത കാഴ്ചയിൽ തുറക്കാൻ അത് അമർത്തിപ്പിടിക്കുക</string>
 </resources>

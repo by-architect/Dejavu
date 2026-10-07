@@ -280,4 +280,18 @@
         <item quantity="one">%1$d onglet tampat</item>
         <item quantity="other">%1$d onglets tampats</item>
     </plurals>
+    <string name="dejavu_settings_close_pinned_hint">Suls onglets fixats e los dossièrs, «Tampar» met en velha los onglets dobèrts, perque demòran fixats. Quand un onglet fixat es en velha, «Tampar» lo desfixa.</string>
+    <string name="dejavu_features_title">Descobrir Dejavu</string>
+    <string name="dejavu_features_page">%1$d sus %2$d</string>
+    <string name="dejavu_features_next">Seguent</string>
+    <string name="dejavu_features_skip">Passar</string>
+    <string name="dejavu_feature_sleep">Metètz un dossièr entièr en velha</string>
+    <string name="dejavu_feature_themes">Balhatz a cada espaci de trabalh sas pròprias colors</string>
+    <string name="dejavu_feature_swipe_menu">Fasètz lisar la barra d’en bas cap amont per dobrir lo menú</string>
+    <string name="dejavu_feature_actions">Mandatz quin onglet que siá a vòstras aplicacions</string>
+    <string name="dejavu_feature_zen_sync">Sincronizatz vòstres espacis de trabalh amb Zen</string>
+    <string name="dejavu_feature_folders">Fasètz un long-clic suls onglets per los metre dins un dossièr</string>
+    <string name="dejavu_feature_drag">Fasètz lisar los onglets dins los dossièrs e los essencials</string>
+    <string name="dejavu_feature_workspace_order">Fasètz lisar los espacis de trabalh per cambiar lor òrdre</string>
+    <string name="dejavu_feature_split_view">Fasètz un long-clic sus un ligam per lo dobrir en vista dividida</string>
 </resources>

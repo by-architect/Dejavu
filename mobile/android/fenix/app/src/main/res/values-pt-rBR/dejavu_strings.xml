@@ -287,4 +287,18 @@
         <item quantity="many">%1$d abas fechadas</item>
         <item quantity="other">%1$d abas fechadas</item>
     </plurals>
+    <string name="dejavu_settings_close_pinned_hint">Em abas fixadas e pastas, Fechar hiberna as abas abertas, já que elas continuam fixadas. Quando uma aba fixada já está hibernando, Fechar a desafixa.</string>
+    <string name="dejavu_features_title">Conheça o Dejavu</string>
+    <string name="dejavu_features_page">%1$d de %2$d</string>
+    <string name="dejavu_features_next">Próximo</string>
+    <string name="dejavu_features_skip">Pular</string>
+    <string name="dejavu_feature_sleep">Hiberne uma pasta inteira</string>
+    <string name="dejavu_feature_themes">Dê a cada espaço de trabalho suas próprias cores</string>
+    <string name="dejavu_feature_swipe_menu">Deslize a barra inferior para cima para abrir o menu</string>
+    <string name="dejavu_feature_actions">Envie qualquer aba para seus aplicativos</string>
+    <string name="dejavu_feature_zen_sync">Sincronize seus espaços de trabalho com o Zen</string>
+    <string name="dejavu_feature_folders">Mantenha as abas pressionadas para colocá-las em uma pasta</string>
+    <string name="dejavu_feature_drag">Arraste abas para pastas e essenciais</string>
+    <string name="dejavu_feature_workspace_order">Arraste os espaços de trabalho para reordená-los</string>
+    <string name="dejavu_feature_split_view">Mantenha um link pressionado para abri-lo na visualização dividida</string>
 </resources>

@@ -280,4 +280,18 @@
         <item quantity="one">%1$d faneblad lukket</item>
         <item quantity="other">%1$d faneblade lukket</item>
     </plurals>
+    <string name="dejavu_settings_close_pinned_hint">På fastgjorte faneblade og mapper sætter Luk de åbne faneblade i dvale, da de fastgjorte bliver. Når et fastgjort faneblad allerede er i dvale, frigør Luk det.</string>
+    <string name="dejavu_features_title">Opdag Dejavu</string>
+    <string name="dejavu_features_page">%1$d af %2$d</string>
+    <string name="dejavu_features_next">Næste</string>
+    <string name="dejavu_features_skip">Spring over</string>
+    <string name="dejavu_feature_sleep">Sæt en hel mappe i dvale</string>
+    <string name="dejavu_feature_themes">Giv hvert arbejdsområde sine egne farver</string>
+    <string name="dejavu_feature_swipe_menu">Stryg den nederste bjælke op for at åbne menuen</string>
+    <string name="dejavu_feature_actions">Send ethvert faneblad til dine apps</string>
+    <string name="dejavu_feature_zen_sync">Synkroniser dine arbejdsområder med Zen</string>
+    <string name="dejavu_feature_folders">Hold faneblade nede for at lægge dem i en mappe</string>
+    <string name="dejavu_feature_drag">Træk faneblade til mapper og Favoritter</string>
+    <string name="dejavu_feature_workspace_order">Træk arbejdsområder for at ændre rækkefølgen</string>
+    <string name="dejavu_feature_split_view">Hold et link nede for at åbne det i delt visning</string>
 </resources>

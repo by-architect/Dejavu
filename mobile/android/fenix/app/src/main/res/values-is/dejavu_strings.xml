@@ -280,4 +280,18 @@
         <item quantity="one">%1$d flipi lokaður</item>
         <item quantity="other">%1$d flipar lokaðir</item>
     </plurals>
+    <string name="dejavu_settings_close_pinned_hint">Á festum flipum og möppum svæfir „Loka“ opnu flipana, því þeir haldast festir. Þegar festur flipi er svæfður losar „Loka“ hann.</string>
+    <string name="dejavu_features_title">Kynntu þér Dejavu</string>
+    <string name="dejavu_features_page">%1$d af %2$d</string>
+    <string name="dejavu_features_next">Áfram</string>
+    <string name="dejavu_features_skip">Sleppa</string>
+    <string name="dejavu_feature_sleep">Svæfðu heila möppu</string>
+    <string name="dejavu_feature_themes">Gefðu hverju vinnusvæði sína eigin liti</string>
+    <string name="dejavu_feature_swipe_menu">Strjúktu neðstu stikuna upp til að opna valmyndina</string>
+    <string name="dejavu_feature_actions">Sendu hvaða flipa sem er í forritin þín</string>
+    <string name="dejavu_feature_zen_sync">Samstilltu vinnusvæðin þín við Zen</string>
+    <string name="dejavu_feature_folders">Haltu inni flipum til að setja þá í möppu</string>
+    <string name="dejavu_feature_drag">Dragðu flipa í möppur og eftirlæti</string>
+    <string name="dejavu_feature_workspace_order">Dragðu vinnusvæði til að endurraða þeim</string>
+    <string name="dejavu_feature_split_view">Haltu inni tengli til að opna hann í klofinni sýn</string>
 </resources>

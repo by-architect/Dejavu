@@ -273,4 +273,18 @@
     <plurals name="dejavu_tabs_closed">
         <item quantity="other">Đã đóng %1$d thẻ</item>
     </plurals>
+    <string name="dejavu_settings_close_pinned_hint">Trên thẻ đã ghim và thư mục, nút Đóng sẽ cho các thẻ đang mở tạm ngủ, vì các thẻ đã ghim vẫn được giữ lại. Khi một thẻ đã ghim đang tạm ngủ, nút Đóng sẽ bỏ ghim thẻ đó.</string>
+    <string name="dejavu_features_title">Khám phá Dejavu</string>
+    <string name="dejavu_features_page">%1$d/%2$d</string>
+    <string name="dejavu_features_next">Tiếp</string>
+    <string name="dejavu_features_skip">Bỏ qua</string>
+    <string name="dejavu_feature_sleep">Cho cả thư mục tạm ngủ</string>
+    <string name="dejavu_feature_themes">Đặt màu riêng cho từng không gian làm việc</string>
+    <string name="dejavu_feature_swipe_menu">Vuốt thanh dưới cùng lên để mở trình đơn</string>
+    <string name="dejavu_feature_actions">Gửi bất kỳ thẻ nào đến ứng dụng của bạn</string>
+    <string name="dejavu_feature_zen_sync">Đồng bộ hóa không gian làm việc với Zen</string>
+    <string name="dejavu_feature_folders">Nhấn giữ các thẻ để cho vào thư mục</string>
+    <string name="dejavu_feature_drag">Kéo thẻ vào thư mục và trang thiết yếu</string>
+    <string name="dejavu_feature_workspace_order">Kéo các không gian làm việc để sắp xếp lại</string>
+    <string name="dejavu_feature_split_view">Nhấn giữ liên kết để mở ở chế độ chia đôi màn hình</string>
 </resources>

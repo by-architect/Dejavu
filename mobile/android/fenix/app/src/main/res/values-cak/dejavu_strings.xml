@@ -280,4 +280,18 @@
         <item quantity="one">%1$d ruwi\' xtz\'apïx</item>
         <item quantity="other">%1$d taq ruwi\' xetz\'apïx</item>
     </plurals>
+    <string name="dejavu_settings_close_pinned_hint">Pa ximon taq ruwi\' chuqa\' taq karpeta, «Titz\'apïx» nuwärisaj ri jaqon taq ruwi\', ruma ri ximonel e k\'o na. Toq jun ximon ruwi\' nuwär yan, «Titz\'apïx» nrelesaj ruximik.</string>
+    <string name="dejavu_features_title">Tawetamaj Dejavu</string>
+    <string name="dejavu_features_page">%1$d richin %2$d</string>
+    <string name="dejavu_features_next">Jun chik</string>
+    <string name="dejavu_features_skip">Tik\'o</string>
+    <string name="dejavu_feature_sleep">Tawarisaj jun ronojel karpeta</string>
+    <string name="dejavu_feature_themes">Taya\' rub\'onil ronojel samajib\'äl</string>
+    <string name="dejavu_feature_swipe_menu">Tajurula\' ikim ruch\'akulal pa ruwi\' richin najaq ri k\'utsamaj</string>
+    <string name="dejavu_feature_actions">Tataqa\' xab\'achike ruwi\' pa ri taq achokob\'al</string>
+    <string name="dejavu_feature_zen_sync">Tajunamaj ri taq samajib\'äl rik\'in Zen</string>
+    <string name="dejavu_feature_folders">Tapitz\' ri taq ruwi\' richin ye\'ayaq pa jun karpeta</string>
+    <string name="dejavu_feature_drag">Tajurula\' taq ruwi\' pa taq karpeta chuqa\' pa rajawaxel</string>
+    <string name="dejavu_feature_workspace_order">Tajurula\' ri taq samajib\'äl richin nijalwachij rucholajem</string>
+    <string name="dejavu_feature_split_view">Tapitz\' jun ximonel richin najaq pa vista pa ka\'i\'</string>
 </resources>

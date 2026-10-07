@@ -273,4 +273,18 @@
     <plurals name="dejavu_tabs_closed">
         <item quantity="other">%1$d ផ្ទាំងបានបិទ</item>
     </plurals>
+    <string name="dejavu_settings_close_pinned_hint">នៅលើផ្ទាំងបានខ្ទាស់ និងថត “បិទ” ធ្វើឲ្យផ្ទាំងដែលកំពុងបើកដេក ព្រោះការខ្ទាស់នៅដដែល។ នៅពេលផ្ទាំងបានខ្ទាស់មួយកំពុងដេក “បិទ” នឹងដកខ្ទាស់វា។</string>
+    <string name="dejavu_features_title">ស្វែងយល់ពី Dejavu</string>
+    <string name="dejavu_features_page">%1$d នៃ %2$d</string>
+    <string name="dejavu_features_next">បន្ទាប់</string>
+    <string name="dejavu_features_skip">រំលង</string>
+    <string name="dejavu_feature_sleep">ធ្វើឲ្យថតទាំងមូលដេក</string>
+    <string name="dejavu_feature_themes">ផ្ដល់ពណ៌ផ្ទាល់ខ្លួនដល់ចន្លោះការងារនីមួយៗ</string>
+    <string name="dejavu_feature_swipe_menu">អូសរបារខាងក្រោមឡើងលើ ដើម្បីបើកម៉ឺនុយ</string>
+    <string name="dejavu_feature_actions">ផ្ញើផ្ទាំងណាមួយទៅកម្មវិធីរបស់អ្នក</string>
+    <string name="dejavu_feature_zen_sync">ធ្វើសមកាលកម្មចន្លោះការងាររបស់អ្នកជាមួយ Zen</string>
+    <string name="dejavu_feature_folders">ចុចសង្កត់ផ្ទាំង ដើម្បីដាក់វាក្នុងថត</string>
+    <string name="dejavu_feature_drag">អូសផ្ទាំងទៅក្នុងថត និងសំខាន់ៗ</string>
+    <string name="dejavu_feature_workspace_order">អូសចន្លោះការងារ ដើម្បីប្ដូរលំដាប់</string>
+    <string name="dejavu_feature_split_view">ចុចសង្កត់តំណ ដើម្បីបើកវាក្នុងទិដ្ឋភាពបំបែក</string>
 </resources>

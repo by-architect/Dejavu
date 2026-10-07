@@ -273,4 +273,18 @@
     <plurals name="dejavu_tabs_closed">
         <item quantity="other">已關閉 %1$d 個分頁</item>
     </plurals>
+    <string name="dejavu_settings_close_pinned_hint">在已釘選分頁與資料夾上，「關閉」會讓已開啟的分頁休眠，因為已釘選分頁會保留。已釘選分頁休眠後，「關閉」會將其取消釘選。</string>
+    <string name="dejavu_features_title">探索 Dejavu</string>
+    <string name="dejavu_features_page">%1$d/%2$d</string>
+    <string name="dejavu_features_next">下一步</string>
+    <string name="dejavu_features_skip">略過</string>
+    <string name="dejavu_feature_sleep">讓整個資料夾休眠</string>
+    <string name="dejavu_feature_themes">為每個工作區設定專屬顏色</string>
+    <string name="dejavu_feature_swipe_menu">向上滑動底部列即可開啟選單</string>
+    <string name="dejavu_feature_actions">將任何分頁傳送到您的應用程式</string>
+    <string name="dejavu_feature_zen_sync">將您的工作區與 Zen 同步</string>
+    <string name="dejavu_feature_folders">長按分頁，即可放入資料夾</string>
+    <string name="dejavu_feature_drag">將分頁拖曳到資料夾與常用網站</string>
+    <string name="dejavu_feature_workspace_order">拖曳工作區即可調整順序</string>
+    <string name="dejavu_feature_split_view">長按連結，即可在分割畫面中開啟</string>
 </resources>

@@ -280,4 +280,18 @@
         <item quantity="one">%1$d schede sierade</item>
         <item quantity="other">%1$d schedis sieradis</item>
     </plurals>
+    <string name="dejavu_settings_close_pinned_hint">Su lis schedis fissadis e su lis cartelis, Siere al met a durmî lis schedis vierzudis, parcè che a restin fissadis. Cuant che une schede fissade e je za indurmidide, Siere al le sfisse.</string>
+    <string name="dejavu_features_title">Scuvierç Dejavu</string>
+    <string name="dejavu_features_page">%1$d di %2$d</string>
+    <string name="dejavu_features_next">Indenant</string>
+    <string name="dejavu_features_skip">Salte</string>
+    <string name="dejavu_feature_sleep">Met a durmî une cartele interie</string>
+    <string name="dejavu_feature_themes">Da a ogni spazi di lavôr i siei colôrs</string>
+    <string name="dejavu_feature_swipe_menu">Scor in sù la sbare di bas par vierzi il menù</string>
+    <string name="dejavu_feature_actions">Mande cualsisei schede aes tôs aplicazions</string>
+    <string name="dejavu_feature_zen_sync">Sincronize i tiei spazis di lavôr cun Zen</string>
+    <string name="dejavu_feature_folders">Ten premudis lis schedis par metilis intune cartele</string>
+    <string name="dejavu_feature_drag">Strissine lis schedis tes cartelis e tai essenziâi</string>
+    <string name="dejavu_feature_workspace_order">Strissine i spazis di lavôr par cambiâ il lôr ordin</string>
+    <string name="dejavu_feature_split_view">Ten premût un leam par vierzilu in viodude dividude</string>
 </resources>

@@ -294,4 +294,18 @@
         <item quantity="few">Chaidh %1$d tabaichean a dhùnadh</item>
         <item quantity="other">Chaidh %1$d tabaichean a dhùnadh</item>
     </plurals>
+    <string name="dejavu_settings_close_pinned_hint">Air tabaichean prìnichte agus pasganan, cuiridh am putan Dùin na tabaichean fosgailte nan cadal, oir fanaidh iad prìnichte. Nuair a bhios taba prìnichte na chadal mu thràth, dì-phrìnichidh am putan Dùin e.</string>
+    <string name="dejavu_features_title">Rùraich Dejavu</string>
+    <string name="dejavu_features_page">%1$d à %2$d</string>
+    <string name="dejavu_features_next">Air adhart</string>
+    <string name="dejavu_features_skip">Leum thairis air</string>
+    <string name="dejavu_feature_sleep">Cuir pasgan slàn na chadal</string>
+    <string name="dejavu_feature_themes">Thoir na dathan aige fhèin do gach àite-obrach</string>
+    <string name="dejavu_feature_swipe_menu">Grad-shlaighd am bàr ìochdarach suas gus an clàr-taice fhosgladh</string>
+    <string name="dejavu_feature_actions">Cuir taba sam bith gu na h-aplacaidean agad</string>
+    <string name="dejavu_feature_zen_sync">Sioncronaich na h-àiteachan-obrach agad le Zen</string>
+    <string name="dejavu_feature_folders">Brùth fada air tabaichean gus an cur ann am pasgan</string>
+    <string name="dejavu_feature_drag">Slaod tabaichean a-steach do phasganan is dha na feumalachdan</string>
+    <string name="dejavu_feature_workspace_order">Slaod na h-àiteachan-obrach gus an t-òrdugh aca atharrachadh</string>
+    <string name="dejavu_feature_split_view">Brùth fada air ceangal gus fhosgladh ann an sealladh sgoilte</string>
 </resources>

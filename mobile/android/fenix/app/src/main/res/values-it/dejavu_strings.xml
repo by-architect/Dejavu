@@ -280,4 +280,18 @@
         <item quantity="one">%1$d scheda chiusa</item>
         <item quantity="other">%1$d schede chiuse</item>
     </plurals>
+    <string name="dejavu_settings_close_pinned_hint">Sulle schede bloccate e sulle cartelle, «Chiudi» sospende le schede aperte, perché restano bloccate. Quando una scheda bloccata è già sospesa, «Chiudi» la sblocca.</string>
+    <string name="dejavu_features_title">Scopri Dejavu</string>
+    <string name="dejavu_features_page">%1$d di %2$d</string>
+    <string name="dejavu_features_next">Avanti</string>
+    <string name="dejavu_features_skip">Salta</string>
+    <string name="dejavu_feature_sleep">Sospendi un’intera cartella</string>
+    <string name="dejavu_feature_themes">Dai a ogni spazio i suoi colori</string>
+    <string name="dejavu_feature_swipe_menu">Scorri verso l’alto la barra in basso per aprire il menu</string>
+    <string name="dejavu_feature_actions">Invia qualsiasi scheda alle tue app</string>
+    <string name="dejavu_feature_zen_sync">Sincronizza i tuoi spazi con Zen</string>
+    <string name="dejavu_feature_folders">Tieni premute le schede per metterle in una cartella</string>
+    <string name="dejavu_feature_drag">Trascina le schede nelle cartelle e nei preferiti</string>
+    <string name="dejavu_feature_workspace_order">Trascina gli spazi per riordinarli</string>
+    <string name="dejavu_feature_split_view">Tieni premuto un link per aprirlo in vista divisa</string>
 </resources>

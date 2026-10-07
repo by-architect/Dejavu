@@ -280,4 +280,18 @@
         <item quantity="one">%1$d ischeda serrada</item>
         <item quantity="other">%1$d ischedas serradas</item>
     </plurals>
+    <string name="dejavu_settings_close_pinned_hint">In is ischedas fissadas e in is cartellas, su butone Serra ponet a dormire is ischedas abertas, ca is fissadas abarrant. Cando un\'ischeda fissada dormit, Serra l\'isfissat.</string>
+    <string name="dejavu_features_title">Iscoberi Dejavu</string>
+    <string name="dejavu_features_page">%1$d de %2$d</string>
+    <string name="dejavu_features_next">Imbeniente</string>
+    <string name="dejavu_features_skip">Brinca</string>
+    <string name="dejavu_feature_sleep">Pone a dormire una cartella intrea</string>
+    <string name="dejavu_feature_themes">Dona a dònnia ispàtziu de traballu is colores suos</string>
+    <string name="dejavu_feature_swipe_menu">Iscurre a susu sa barra de bàsciu pro abèrrere su menu</string>
+    <string name="dejavu_feature_actions">Imbia cale si siat ischeda a is aplicatziones tuas</string>
+    <string name="dejavu_feature_zen_sync">Sincroniza is ispàtzios de traballu tuos cun Zen</string>
+    <string name="dejavu_feature_folders">Pretziona a longu is ischedas pro las pònnere in una cartella</string>
+    <string name="dejavu_feature_drag">Trisina is ischedas a is cartellas e a is essentziales</string>
+    <string name="dejavu_feature_workspace_order">Trisina is ispàtzios de traballu pro cambiare s\'òrdine issoro</string>
+    <string name="dejavu_feature_split_view">Pretziona a longu unu ligàmene pro l\'abèrrere in vista partzida</string>
 </resources>

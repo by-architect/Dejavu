@@ -136,10 +136,11 @@ class SearchEngineFragment : PreferenceFragmentCompat(), SystemInsetsPaddedFragm
         val showSponsoredSuggestionsPreference =
             requirePreference<SwitchPreferenceCompat>(R.string.pref_key_show_sponsored_suggestions).apply {
                 isChecked = context.components.settings.showSponsoredSuggestions
+                // Dejavu: Firefox Suggest is Mozilla's service, so its settings name Firefox, not Dejavu.
                 summary =
                     getString(
                         R.string.preferences_show_sponsored_suggestions_summary,
-                        getString(R.string.app_name),
+                        getString(R.string.dejavu_firefox_name),
                     )
             }
 
@@ -149,7 +150,7 @@ class SearchEngineFragment : PreferenceFragmentCompat(), SystemInsetsPaddedFragm
                 title =
                     getString(
                         R.string.preferences_show_nonsponsored_suggestions,
-                        getString(R.string.app_name),
+                        getString(R.string.dejavu_firefox_name),
                     )
             }
         val showSuggestionCardsPreference =

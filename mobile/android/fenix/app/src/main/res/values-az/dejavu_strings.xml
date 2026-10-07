@@ -280,4 +280,18 @@
         <item quantity="one">%1$d vərəq bağlandı</item>
         <item quantity="other">%1$d vərəq bağlandı</item>
     </plurals>
+    <string name="dejavu_settings_close_pinned_hint">Bərkidilmiş vərəqlərdə və qovluqlarda «Bağla» açıq vərəqləri yuxuya qoyur, çünki bərkidilmələr qalır. Bərkidilmiş vərəq artıq yuxudadırsa, «Bağla» onu bərkitmədən çıxarır.</string>
+    <string name="dejavu_features_title">Dejavu ilə tanış olun</string>
+    <string name="dejavu_features_page">%1$d / %2$d</string>
+    <string name="dejavu_features_next">Növbəti</string>
+    <string name="dejavu_features_skip">Ötür</string>
+    <string name="dejavu_feature_sleep">Bütün qovluğu yuxuya qoyun</string>
+    <string name="dejavu_feature_themes">Hər iş sahəsinə öz rənglərini verin</string>
+    <string name="dejavu_feature_swipe_menu">Menyunu açmaq üçün aşağı paneli yuxarı sürüşdürün</string>
+    <string name="dejavu_feature_actions">İstənilən vərəqi tətbiqlərinizə göndərin</string>
+    <string name="dejavu_feature_zen_sync">İş sahələrinizi Zen ilə sinxronlaşdırın</string>
+    <string name="dejavu_feature_folders">Vərəqləri qovluğa qoymaq üçün basıb saxlayın</string>
+    <string name="dejavu_feature_drag">Vərəqləri qovluqlara və əsaslara sürükləyin</string>
+    <string name="dejavu_feature_workspace_order">Yenidən sıralamaq üçün iş sahələrini sürükləyin</string>
+    <string name="dejavu_feature_split_view">Bölünmüş görünüşdə açmaq üçün keçidi basıb saxlayın</string>
 </resources>

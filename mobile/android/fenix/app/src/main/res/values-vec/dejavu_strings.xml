@@ -287,4 +287,18 @@
         <item quantity="many">%1$d schede sarà</item>
         <item quantity="other">%1$d schede sarà</item>
     </plurals>
+    <string name="dejavu_settings_close_pinned_hint">So łe schede fisà e łe cartełe, el boton Sara el mete in pausa łe schede verte, parché łe fisà łe resta. Quando che na scheda fisà ła xe xa in pausa, Sara ła defisa.</string>
+    <string name="dejavu_features_title">Scovri Dejavu</string>
+    <string name="dejavu_features_page">%1$d de %2$d</string>
+    <string name="dejavu_features_next">Vanti</string>
+    <string name="dejavu_features_skip">Salta</string>
+    <string name="dejavu_feature_sleep">Meti in pausa na cartela intiera</string>
+    <string name="dejavu_feature_themes">Dà a onji spasio de laoro i so coƚori</string>
+    <string name="dejavu_feature_swipe_menu">Scori in su ła bara de soto par vèrxer el menù</string>
+    <string name="dejavu_feature_actions">Manda calsiasi scheda a łe to app</string>
+    <string name="dejavu_feature_zen_sync">Sincronisa i to spasi de laoro co Zen</string>
+    <string name="dejavu_feature_folders">Tien apresà łe schede par meterle in na cartela</string>
+    <string name="dejavu_feature_drag">Strasina łe schede inte łe cartełe e intei essensiałi</string>
+    <string name="dejavu_feature_workspace_order">Strasina i spasi de laoro par canbiarghe l’orden</string>
+    <string name="dejavu_feature_split_view">Tien apresà un łinco par vèrxerlo in vista divisa</string>
 </resources>

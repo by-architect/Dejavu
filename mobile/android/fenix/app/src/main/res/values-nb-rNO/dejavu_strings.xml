@@ -280,4 +280,18 @@
         <item quantity="one">%1$d fane lukket</item>
         <item quantity="other">%1$d faner lukket</item>
     </plurals>
+    <string name="dejavu_settings_close_pinned_hint">På festede faner og mapper setter «Lukk» de åpne fanene i dvale, siden de forblir festet. Når en festet fane er i dvale, løsner «Lukk» den.</string>
+    <string name="dejavu_features_title">Oppdag Dejavu</string>
+    <string name="dejavu_features_page">%1$d av %2$d</string>
+    <string name="dejavu_features_next">Neste</string>
+    <string name="dejavu_features_skip">Hopp over</string>
+    <string name="dejavu_feature_sleep">Sett en hel mappe i dvale</string>
+    <string name="dejavu_feature_themes">Gi hvert arbeidsområde sine egne farger</string>
+    <string name="dejavu_feature_swipe_menu">Sveip opp den nederste linjen for å åpne menyen</string>
+    <string name="dejavu_feature_actions">Send hvilken som helst fane til appene dine</string>
+    <string name="dejavu_feature_zen_sync">Synkroniser arbeidsområdene dine med Zen</string>
+    <string name="dejavu_feature_folders">Trykk lenge på faner for å legge dem i en mappe</string>
+    <string name="dejavu_feature_drag">Dra faner inn i mapper og favoritter</string>
+    <string name="dejavu_feature_workspace_order">Dra arbeidsområder for å endre rekkefølgen</string>
+    <string name="dejavu_feature_split_view">Trykk lenge på en lenke for å åpne den i delt visning</string>
 </resources>

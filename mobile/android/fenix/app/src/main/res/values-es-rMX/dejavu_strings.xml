@@ -287,4 +287,18 @@
         <item quantity="many">%1$d pestañas cerradas</item>
         <item quantity="other">%1$d pestañas cerradas</item>
     </plurals>
+    <string name="dejavu_settings_close_pinned_hint">En las pestañas fijadas y las carpetas, Cerrar suspende las pestañas abiertas, ya que siguen fijadas. Cuando una pestaña fijada ya está suspendida, Cerrar deja de fijarla.</string>
+    <string name="dejavu_features_title">Descubre Dejavu</string>
+    <string name="dejavu_features_page">%1$d de %2$d</string>
+    <string name="dejavu_features_next">Siguiente</string>
+    <string name="dejavu_features_skip">Omitir</string>
+    <string name="dejavu_feature_sleep">Suspende una carpeta entera</string>
+    <string name="dejavu_feature_themes">Dale a cada espacio de trabajo sus propios colores</string>
+    <string name="dejavu_feature_swipe_menu">Desliza hacia arriba la barra inferior para abrir el menú</string>
+    <string name="dejavu_feature_actions">Envía cualquier pestaña a tus aplicaciones</string>
+    <string name="dejavu_feature_zen_sync">Sincroniza tus espacios de trabajo con Zen</string>
+    <string name="dejavu_feature_folders">Mantén pulsadas las pestañas para ponerlas en una carpeta</string>
+    <string name="dejavu_feature_drag">Arrastra pestañas a carpetas y a esenciales</string>
+    <string name="dejavu_feature_workspace_order">Arrastra los espacios de trabajo para reordenarlos</string>
+    <string name="dejavu_feature_split_view">Mantén pulsado un enlace para abrirlo en vista dividida</string>
 </resources>

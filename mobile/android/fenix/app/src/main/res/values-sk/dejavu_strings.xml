@@ -294,4 +294,18 @@
         <item quantity="many">%1$d kariet zatvorených</item>
         <item quantity="other">%1$d kariet zatvorených</item>
     </plurals>
+    <string name="dejavu_settings_close_pinned_hint">Na pripnutých kartách a priečinkoch tlačidlo Zavrieť uspí otvorené karty, pretože pripnuté karty zostávajú. Keď pripnutá karta už spí, tlačidlo Zavrieť ju odopne.</string>
+    <string name="dejavu_features_title">Objavte Dejavu</string>
+    <string name="dejavu_features_page">%1$d z %2$d</string>
+    <string name="dejavu_features_next">Ďalej</string>
+    <string name="dejavu_features_skip">Preskočiť</string>
+    <string name="dejavu_feature_sleep">Uspite celý priečinok</string>
+    <string name="dejavu_feature_themes">Dajte každému pracovnému priestoru vlastné farby</string>
+    <string name="dejavu_feature_swipe_menu">Potiahnutím dolného panela nahor otvoríte ponuku</string>
+    <string name="dejavu_feature_actions">Pošlite ľubovoľnú kartu do svojich aplikácií</string>
+    <string name="dejavu_feature_zen_sync">Synchronizujte svoje pracovné priestory so Zenom</string>
+    <string name="dejavu_feature_folders">Dlho podržte karty a vložte ich do priečinka</string>
+    <string name="dejavu_feature_drag">Potiahnite karty do priečinkov a medzi obľúbené</string>
+    <string name="dejavu_feature_workspace_order">Potiahnutím zmeňte poradie pracovných priestorov</string>
+    <string name="dejavu_feature_split_view">Dlho podržte odkaz a otvorte ho v rozdelenom zobrazení</string>
 </resources>

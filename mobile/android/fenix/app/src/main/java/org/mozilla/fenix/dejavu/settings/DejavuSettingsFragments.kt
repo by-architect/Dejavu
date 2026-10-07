@@ -31,6 +31,7 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.RadioButton
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.CompositionLocalProvider
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
@@ -78,6 +79,7 @@ import org.mozilla.fenix.dejavu.sync.workspaceIconText
 import org.mozilla.fenix.dejavu.ui.DejavuButtonStyle
 import org.mozilla.fenix.dejavu.ui.DejavuDialog
 import org.mozilla.fenix.dejavu.ui.DejavuDialogButton
+import org.mozilla.fenix.dejavu.ui.LocalPopupTheme
 import org.mozilla.fenix.dejavu.workspaces.WorkspaceRepository
 import org.mozilla.fenix.e2e.SystemInsetsPaddedFragment
 import org.mozilla.fenix.ext.requireComponents
@@ -97,7 +99,16 @@ abstract class DejavuComposeFragment(@param:StringRes private val defaultTitle: 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View =
         ComposeView(requireContext()).apply {
             setViewCompositionStrategy(ViewCompositionStrategy.DisposeOnViewTreeLifecycleDestroyed)
-            setContent { FirefoxTheme { DejavuScreen() } }
+            setContent {
+                FirefoxTheme {
+                    // Dialogs and menus take on the look of the workspace shown on the home screen.
+                    val repository = remember { workspaceRepository() }
+                    val workspaces by repository.state.collectAsState()
+                    CompositionLocalProvider(LocalPopupTheme provides workspaces.activeWorkspace?.theme) {
+                        DejavuScreen()
+                    }
+                }
+            }
         }
 
     override fun onResume() {
@@ -115,10 +126,21 @@ enum class ActionList(
     val place: ActionPlace,
     @param:DrawableRes val icon: Int,
     @param:StringRes val hint: Int,
+    @param:StringRes val note: Int? = null,
 ) {
-    PINNED(ActionPlace.PINNED_ROWS, iconsR.drawable.mozac_ic_pin_24, R.string.dejavu_settings_pinned_actions_hint),
+    PINNED(
+        ActionPlace.PINNED_ROWS,
+        iconsR.drawable.mozac_ic_pin_24,
+        R.string.dejavu_settings_pinned_actions_hint,
+        R.string.dejavu_settings_close_pinned_hint,
+    ),
     UNPINNED(ActionPlace.UNPINNED_ROWS, iconsR.drawable.mozac_ic_tab_24, R.string.dejavu_settings_unpinned_actions_hint),
-    FOLDERS(ActionPlace.FOLDER_ROWS, iconsR.drawable.mozac_ic_folder_24, R.string.dejavu_settings_folder_actions_hint),
+    FOLDERS(
+        ActionPlace.FOLDER_ROWS,
+        iconsR.drawable.mozac_ic_folder_24,
+        R.string.dejavu_settings_folder_actions_hint,
+        R.string.dejavu_settings_close_pinned_hint,
+    ),
     SELECTION(ActionPlace.SELECTION, iconsR.drawable.mozac_ic_select_all_24, R.string.dejavu_settings_all_actions_hint),
 }
 
@@ -244,7 +266,10 @@ class DejavuActionListFragment : DejavuComposeFragment(R.string.dejavu_settings_
                 val keys by settings.rowKeys(place).collectAsState()
                 ActionSwitches(
                     title = R.string.dejavu_settings_buttons,
-                    hint = stringResource(list.hint, DejavuSettings.MAX_ROW_ACTIONS),
+                    hint = listOfNotNull(
+                        stringResource(list.hint, DejavuSettings.MAX_ROW_ACTIONS),
+                        list.note?.let { stringResource(it) },
+                    ).joinToString("\n\n"),
                     actions = actions,
                     isChecked = { it.key in keys },
                     canCheckMore = actions.count { it.key in keys } < DejavuSettings.MAX_ROW_ACTIONS,
@@ -708,4 +733,9 @@ class DejavuExternalLinksFragment : DejavuComposeFragment(R.string.dejavu_settin
 internal fun Fragment.dejavuSettings(): DejavuSettings =
     requireComponents.strictMode.allowViolation(StrictMode::allowThreadDiskReads) {
         DejavuSettings.get(requireContext())
+    }
+
+internal fun Fragment.workspaceRepository(): WorkspaceRepository =
+    requireComponents.strictMode.allowViolation(StrictMode::allowThreadDiskReads) {
+        WorkspaceRepository.get(requireContext())
     }

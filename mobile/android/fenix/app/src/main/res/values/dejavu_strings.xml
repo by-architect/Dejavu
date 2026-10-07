@@ -7,6 +7,8 @@
     <string name="pref_key_dejavu_containers" translatable="false">pref_key_dejavu_containers</string>
     <string name="pref_key_dejavu_external_links" translatable="false">pref_key_dejavu_external_links</string>
     <string name="pref_key_dejavu_tab_sleep" translatable="false">pref_key_dejavu_tab_sleep</string>
+    <!-- Name of Mozilla's browser, for texts about Mozilla's own services like Firefox Suggest. -->
+    <string name="dejavu_firefox_name" translatable="false" tools:ignore="BrandUsage">Firefox</string>
 
     <!-- Home screen -->
     <string name="dejavu_workspace_default_name">Home</string>
@@ -153,6 +155,8 @@
     <string name="dejavu_settings_actions">Actions</string>
     <string name="dejavu_settings_pinned_actions_hint">Choose up to %1$d buttons for pinned tab rows.</string>
     <string name="dejavu_settings_unpinned_actions_hint">Choose up to %1$d buttons for unpinned tab rows.</string>
+    <!-- Note under the buttons of pinned tab rows and folder rows: their Close button never closes the pins themselves. -->
+    <string name="dejavu_settings_close_pinned_hint">On pinned tabs and folders, Close puts the open tabs to sleep, since the pins stay. Once a pinned tab sleeps, Close unpins it.</string>
     <string name="dejavu_settings_all_actions_hint">Choose the actions shown at the bottom of the home page when you long-press to select tabs, essentials or folders. An action only shows up when it can run on what is selected.</string>
     <string name="dejavu_settings_containers">Containers</string>
     <string name="dejavu_settings_containers_entry_summary">Add, edit and delete containers</string>
@@ -338,4 +342,31 @@
     <string name="dejavu_tab_sleep_never">Never</string>
     <!-- Text of the screen shown after Dejavu crashed while starting. %1$s is the name of the app. -->
     <string name="dejavu_startup_crash_body">There was a problem opening %1$s. Reopen it to keep browsing.</string>
+    <!-- Feature tour: shown once when Dejavu starts, and from About. Each page shows one feature with a short animation. -->
+    <!-- Title over the feature tour, also the About entry that opens it again. -->
+    <string name="dejavu_features_title">Discover Dejavu</string>
+    <!-- Feature tour: which page is shown. %1$d is the page, %2$d is how many pages there are. -->
+    <string name="dejavu_features_page">%1$d of %2$d</string>
+    <!-- Feature tour: button that shows the next feature. -->
+    <string name="dejavu_features_next">Next</string>
+    <!-- Feature tour: button that closes the tour before its last page. -->
+    <string name="dejavu_features_skip">Skip</string>
+    <!-- Feature tour title: the Sleep button of a folder puts every tab inside it to sleep. -->
+    <string name="dejavu_feature_sleep">Put a whole folder to sleep</string>
+    <!-- Feature tour title: every workspace can have its own color theme. -->
+    <string name="dejavu_feature_themes">Give each workspace its own colors</string>
+    <!-- Feature tour title: swiping up the bar below web pages opens the More menu. -->
+    <string name="dejavu_feature_swipe_menu">Swipe up the bottom bar to open the menu</string>
+    <!-- Feature tour title: custom actions send the address of a tab to another app or server. -->
+    <string name="dejavu_feature_actions">Send any tab to your apps</string>
+    <!-- Feature tour title: workspaces, essentials and pinned tabs stay the same as in Zen Browser on a computer. -->
+    <string name="dejavu_feature_zen_sync">Sync your workspaces with Zen</string>
+    <!-- Feature tour title: long-pressing tabs selects them, and the selection can go into a new folder. -->
+    <string name="dejavu_feature_folders">Hold tabs to put them in a folder</string>
+    <!-- Feature tour title: tabs can be dragged into folders and into the essentials. -->
+    <string name="dejavu_feature_drag">Drag tabs into folders and essentials</string>
+    <!-- Feature tour title: the workspaces in the bar at the bottom of the home screen can be dragged into another order. -->
+    <string name="dejavu_feature_workspace_order">Drag workspaces to reorder them</string>
+    <!-- Feature tour title: long-pressing a link offers to open it in split view, below the page. -->
+    <string name="dejavu_feature_split_view">Hold a link to open it in split view</string>
 </resources>

@@ -287,4 +287,18 @@
         <item quantity="many">%1$d pestanyes tancades</item>
         <item quantity="other">%1$d pestanyes tancades</item>
     </plurals>
+    <string name="dejavu_settings_close_pinned_hint">En les pestanyes fixades i les carpetes, «Tanca» adorm les pestanyes obertes, ja que les fixacions es mantenen. Quan una pestanya fixada ja dorm, «Tanca» la desfixa.</string>
+    <string name="dejavu_features_title">Descobriu el Dejavu</string>
+    <string name="dejavu_features_page">%1$d de %2$d</string>
+    <string name="dejavu_features_next">Següent</string>
+    <string name="dejavu_features_skip">Omet</string>
+    <string name="dejavu_feature_sleep">Adormiu una carpeta sencera</string>
+    <string name="dejavu_feature_themes">Doneu a cada espai de treball els seus colors</string>
+    <string name="dejavu_feature_swipe_menu">Llisqueu la barra inferior cap amunt per obrir el menú</string>
+    <string name="dejavu_feature_actions">Envieu qualsevol pestanya a les vostres aplicacions</string>
+    <string name="dejavu_feature_zen_sync">Sincronitzeu els vostres espais de treball amb el Zen</string>
+    <string name="dejavu_feature_folders">Manteniu premudes les pestanyes per posar-les en una carpeta</string>
+    <string name="dejavu_feature_drag">Arrossegueu pestanyes a carpetes i als essencials</string>
+    <string name="dejavu_feature_workspace_order">Arrossegueu els espais de treball per reordenar-los</string>
+    <string name="dejavu_feature_split_view">Manteniu premut un enllaç per obrir-lo en vista dividida</string>
 </resources>

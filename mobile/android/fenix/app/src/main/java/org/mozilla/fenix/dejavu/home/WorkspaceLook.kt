@@ -22,7 +22,7 @@ import kotlin.random.Random
 import org.mozilla.fenix.dejavu.workspaces.WorkspaceTheme
 
 /** Gradients offered when editing a workspace, each a list of ARGB colors. */
-internal val themePresets: List<List<Int>> = listOf(
+internal val themePresets: List<List<Int>> = listOf(WorkspaceTheme.Gold.colors) + listOf(
     listOf(0xFFFF7E5F, 0xFFFEB47B),
     listOf(0xFFF857A6, 0xFFFF5858),
     listOf(0xFFF12711, 0xFFF5AF19),

@@ -280,4 +280,18 @@
         <item quantity="one">%1$d варақа пӯшида шуд</item>
         <item quantity="other">%1$d варақа пӯшида шуд</item>
     </plurals>
+    <string name="dejavu_settings_close_pinned_hint">Дар варақаҳои часпонидашуда ва ҷузвдонҳо тугмаи «Пӯшидан» варақаҳои кушодаро хоб мекунад, зеро варақаҳои часпонидашуда боқӣ мемонанд. Вақте ки варақаи часпонидашуда хобидааст, «Пӯшидан» онро канда мегирад.</string>
+    <string name="dejavu_features_title">Dejavu-ро кашф кунед</string>
+    <string name="dejavu_features_page">%1$d аз %2$d</string>
+    <string name="dejavu_features_next">Навбатӣ</string>
+    <string name="dejavu_features_skip">Нодида гузарондан</string>
+    <string name="dejavu_feature_sleep">Тамоми ҷузвдонро хоб кунед</string>
+    <string name="dejavu_feature_themes">Ба ҳар фазо рангҳои худашро диҳед</string>
+    <string name="dejavu_feature_swipe_menu">Барои кушодани меню навори поёнро ба боло кашед</string>
+    <string name="dejavu_feature_actions">Дилхоҳ варақаро ба барномаҳои худ фиристед</string>
+    <string name="dejavu_feature_zen_sync">Фазоҳои худро бо Zen ҳамоҳанг кунед</string>
+    <string name="dejavu_feature_folders">Барои гузоштан ба ҷузвдон варақаҳоро дароз пахш кунед</string>
+    <string name="dejavu_feature_drag">Варақаҳоро ба ҷузвдонҳо ва сомонаҳои муҳим кашед</string>
+    <string name="dejavu_feature_workspace_order">Барои иваз кардани тартиб фазоҳоро кашед</string>
+    <string name="dejavu_feature_split_view">Барои кушодан дар намоиши тақсимшуда пайвандро дароз пахш кунед</string>
 </resources>

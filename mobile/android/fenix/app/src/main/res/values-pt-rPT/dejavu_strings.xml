@@ -287,4 +287,18 @@
         <item quantity="many">%1$d separadores fechados</item>
         <item quantity="other">%1$d separadores fechados</item>
     </plurals>
+    <string name="dejavu_settings_close_pinned_hint">Nos separadores fixados e nas pastas, Fechar hiberna os separadores abertos, pois continuam fixados. Quando um separador fixado já está a hibernar, Fechar desafixa-o.</string>
+    <string name="dejavu_features_title">Descobre o Dejavu</string>
+    <string name="dejavu_features_page">%1$d de %2$d</string>
+    <string name="dejavu_features_next">Seguinte</string>
+    <string name="dejavu_features_skip">Saltar</string>
+    <string name="dejavu_feature_sleep">Hiberna uma pasta inteira</string>
+    <string name="dejavu_feature_themes">Dá a cada espaço de trabalho as suas próprias cores</string>
+    <string name="dejavu_feature_swipe_menu">Desliza a barra inferior para cima para abrir o menu</string>
+    <string name="dejavu_feature_actions">Envia qualquer separador para as tuas aplicações</string>
+    <string name="dejavu_feature_zen_sync">Sincroniza os teus espaços de trabalho com o Zen</string>
+    <string name="dejavu_feature_folders">Mantém premidos os separadores para os pores numa pasta</string>
+    <string name="dejavu_feature_drag">Arrasta separadores para pastas e essenciais</string>
+    <string name="dejavu_feature_workspace_order">Arrasta os espaços de trabalho para os reordenar</string>
+    <string name="dejavu_feature_split_view">Mantém premida uma ligação para a abrir na vista dividida</string>
 </resources>

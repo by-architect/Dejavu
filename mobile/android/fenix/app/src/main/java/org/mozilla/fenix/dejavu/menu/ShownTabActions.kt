@@ -7,6 +7,7 @@ package org.mozilla.fenix.dejavu.menu
 import android.content.Context
 import android.widget.Toast
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.CompositionLocalProvider
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
@@ -21,6 +22,7 @@ import org.mozilla.fenix.R
 import org.mozilla.fenix.components.components
 import org.mozilla.fenix.dejavu.actions.TabAction
 import org.mozilla.fenix.dejavu.browser.closeShownTab
+import org.mozilla.fenix.dejavu.browser.themeOfTab
 import org.mozilla.fenix.dejavu.containers.DejavuContainerStorage
 import org.mozilla.fenix.dejavu.home.ActionTargets
 import org.mozilla.fenix.dejavu.home.HomeDialog
@@ -30,6 +32,7 @@ import org.mozilla.fenix.dejavu.home.TabEditor
 import org.mozilla.fenix.dejavu.home.label
 import org.mozilla.fenix.dejavu.home.titleOf
 import org.mozilla.fenix.dejavu.settings.DejavuSettings
+import org.mozilla.fenix.dejavu.ui.LocalPopupTheme
 import org.mozilla.fenix.dejavu.workspaces.WorkspaceRepository
 import org.mozilla.fenix.dejavu.workspaces.WorkspaceState
 import org.mozilla.fenix.ext.components as contextComponents
@@ -115,19 +118,22 @@ internal fun ShownTabActionDialog(
         LaunchedEffect(Unit) { onDone() }
         return
     }
-    ItemDialogs(
-        dialog = dialog,
-        state = workspaces,
-        containers = containers,
-        editor = object : TabEditor by runner {
-            // Deleting the shown tab's pin closes the tab too, so the page has to go.
-            override fun onDeleteItems(targets: ActionTargets) {
-                runner.onDeleteItems(targets)
-                navController.navigate(NavGraphDirections.actionGlobalHome())
-            }
-        },
-        onDismiss = onDone,
-    )
+    val theme = if (tab.content.private) null else workspaces.themeOfTab(tab.id)
+    CompositionLocalProvider(LocalPopupTheme provides theme) {
+        ItemDialogs(
+            dialog = dialog,
+            state = workspaces,
+            containers = containers,
+            editor = object : TabEditor by runner {
+                // Deleting the shown tab's pin closes the tab too, so the page has to go.
+                override fun onDeleteItems(targets: ActionTargets) {
+                    runner.onDeleteItems(targets)
+                    navController.navigate(NavGraphDirections.actionGlobalHome())
+                }
+            },
+            onDismiss = onDone,
+        )
+    }
 }
 
 /** The dialog [action] needs for [tab], the shown tab, or `null` when it needs none. */

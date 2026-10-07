@@ -280,4 +280,18 @@
         <item quantity="one">%1$d ٹیب بند ہوا</item>
         <item quantity="other">%1$d ٹیبز بند ہوئے</item>
     </plurals>
+    <string name="dejavu_settings_close_pinned_hint">پن کردہ ٹیبز اور فولڈرز پر بند کریں کا بٹن کھلے ٹیبز کو سلا دیتا ہے، کیونکہ پن کردہ ٹیبز اپنی جگہ رہتے ہیں۔ جب کوئی پن کردہ ٹیب سو جائے تو بند کریں کا بٹن اسے ان پن کر دیتا ہے۔</string>
+    <string name="dejavu_features_title">Dejavu کو دریافت کریں</string>
+    <string name="dejavu_features_page">%2$d میں سے %1$d</string>
+    <string name="dejavu_features_next">اگلا</string>
+    <string name="dejavu_features_skip">چھوڑیں</string>
+    <string name="dejavu_feature_sleep">پورا فولڈر سلائیں</string>
+    <string name="dejavu_feature_themes">ہر ورک اسپیس کو اس کے اپنے رنگ دیں</string>
+    <string name="dejavu_feature_swipe_menu">مینو کھولنے کے لیے نیچے والی بار کو اوپر سوائپ کریں</string>
+    <string name="dejavu_feature_actions">کوئی بھی ٹیب اپنی ایپس میں بھیجیں</string>
+    <string name="dejavu_feature_zen_sync">اپنی ورک اسپیسز کو Zen کے ساتھ ہم وقت کریں</string>
+    <string name="dejavu_feature_folders">ٹیبز کو فولڈر میں رکھنے کے لیے انہیں دیر تک دبائیں</string>
+    <string name="dejavu_feature_drag">ٹیبز کو فولڈرز اور اہم میں گھسیٹیں</string>
+    <string name="dejavu_feature_workspace_order">ترتیب بدلنے کے لیے ورک اسپیسز کو گھسیٹیں</string>
+    <string name="dejavu_feature_split_view">لنک کو اسپلٹ ویو میں کھولنے کے لیے اسے دیر تک دبائیں</string>
 </resources>

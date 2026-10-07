@@ -294,4 +294,18 @@
         <item quantity="many">%1$d panelu zavřeno</item>
         <item quantity="other">%1$d panelů zavřeno</item>
     </plurals>
+    <string name="dejavu_settings_close_pinned_hint">U připnutých panelů a složek tlačítko „Zavřít“ uspí otevřené panely, protože připnutí zůstává. Když už připnutý panel spí, „Zavřít“ ho odepne.</string>
+    <string name="dejavu_features_title">Objevte Dejavu</string>
+    <string name="dejavu_features_page">%1$d z %2$d</string>
+    <string name="dejavu_features_next">Další</string>
+    <string name="dejavu_features_skip">Přeskočit</string>
+    <string name="dejavu_feature_sleep">Uspěte celou složku</string>
+    <string name="dejavu_feature_themes">Dejte každému pracovnímu prostoru vlastní barvy</string>
+    <string name="dejavu_feature_swipe_menu">Přejetím spodní lišty nahoru otevřete nabídku</string>
+    <string name="dejavu_feature_actions">Posílejte libovolný panel do svých aplikací</string>
+    <string name="dejavu_feature_zen_sync">Synchronizujte své pracovní prostory se Zenem</string>
+    <string name="dejavu_feature_folders">Podržením panelů je vložíte do složky</string>
+    <string name="dejavu_feature_drag">Přetáhněte panely do složek a do Oblíbených</string>
+    <string name="dejavu_feature_workspace_order">Přetažením pracovních prostorů změníte jejich pořadí</string>
+    <string name="dejavu_feature_split_view">Podržením odkazu ho otevřete v děleném zobrazení</string>
 </resources>

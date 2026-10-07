@@ -287,4 +287,18 @@
         <item quantity="one">%1$d cilne aizvērta</item>
         <item quantity="other">%1$d cilnes aizvērtas</item>
     </plurals>
+    <string name="dejavu_settings_close_pinned_hint">Piespraustu cilņu un mapju rindās „Aizvērt” iemidzina atvērtās cilnes, jo piespraustās cilnes paliek. Kad piesprausta cilne ir iemidzināta, „Aizvērt” to atsprauž.</string>
+    <string name="dejavu_features_title">Iepazīstiet Dejavu</string>
+    <string name="dejavu_features_page">%1$d no %2$d</string>
+    <string name="dejavu_features_next">Tālāk</string>
+    <string name="dejavu_features_skip">Izlaist</string>
+    <string name="dejavu_feature_sleep">Iemidziniet visu mapi</string>
+    <string name="dejavu_feature_themes">Piešķiriet katrai darbvietai savas krāsas</string>
+    <string name="dejavu_feature_swipe_menu">Velciet apakšējo joslu uz augšu, lai atvērtu izvēlni</string>
+    <string name="dejavu_feature_actions">Sūtiet jebkuru cilni uz savām lietotnēm</string>
+    <string name="dejavu_feature_zen_sync">Sinhronizējiet darbvietas ar Zen</string>
+    <string name="dejavu_feature_folders">Ilgi pieskarieties cilnēm, lai ieliktu tās mapē</string>
+    <string name="dejavu_feature_drag">Velciet cilnes uz mapēm un Izlasi</string>
+    <string name="dejavu_feature_workspace_order">Velciet darbvietas, lai mainītu to secību</string>
+    <string name="dejavu_feature_split_view">Ilgi pieskarieties saitei, lai atvērtu to sadalītajā skatā</string>
 </resources>

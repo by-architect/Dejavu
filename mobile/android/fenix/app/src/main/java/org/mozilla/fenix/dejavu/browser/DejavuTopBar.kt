@@ -17,6 +17,7 @@ import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.CompositionLocalProvider
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
@@ -44,6 +45,7 @@ import mozilla.components.lib.state.ext.observeAsComposableState
 import mozilla.components.support.utils.ClipboardHandler
 import org.mozilla.fenix.dejavu.ui.DejavuDropdownMenu
 import org.mozilla.fenix.dejavu.ui.DejavuMenuItem
+import org.mozilla.fenix.dejavu.ui.LocalPopupTheme
 import org.mozilla.fenix.dejavu.ui.glass
 
 /**
@@ -62,13 +64,14 @@ fun DejavuTopBar(store: BrowserToolbarStore) {
     val text = origin.url?.toString()?.takeIf { it.isNotBlank() } ?: origin.title?.takeIf { it.isNotBlank() } ?: hint
     val haptic = LocalHapticFeedback.current
     var menuOpen by remember { mutableStateOf(false) }
+    val theme = shownWorkspaceTheme()
 
     Box(
         modifier = Modifier
             .fillMaxWidth()
             .height(BAR_HEIGHT)
             .background(MaterialTheme.colorScheme.surface)
-            .workspaceTheme(shownWorkspaceTheme())
+            .workspaceTheme(theme)
             .semantics {
                 contentDescription = if (text == hint) hint else "$text. $hint"
                 role = Role.Button
@@ -111,15 +114,17 @@ fun DejavuTopBar(store: BrowserToolbarStore) {
                 modifier = Modifier.align(Alignment.BottomCenter),
             )
         }
-        LongPressMenu(
-            expanded = menuOpen,
-            options = origin.contextualMenuOptions,
-            onPick = { option ->
-                menuOpen = false
-                store.dispatch(option.event)
-            },
-            onDismiss = { menuOpen = false },
-        )
+        CompositionLocalProvider(LocalPopupTheme provides theme) {
+            LongPressMenu(
+                expanded = menuOpen,
+                options = origin.contextualMenuOptions,
+                onPick = { option ->
+                    menuOpen = false
+                    store.dispatch(option.event)
+                },
+                onDismiss = { menuOpen = false },
+            )
+        }
     }
 }
 

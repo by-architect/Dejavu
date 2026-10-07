@@ -294,4 +294,18 @@
         <item quantity="few">%1$d zavihki zaprti</item>
         <item quantity="other">%1$d zavihkov zaprtih</item>
     </plurals>
+    <string name="dejavu_settings_close_pinned_hint">Na pripetih zavihkih in mapah gumb Zapri uspava odprte zavihke, saj pripeti zavihki ostanejo. Ko pripeti zavihek že spi, ga gumb Zapri odpne.</string>
+    <string name="dejavu_features_title">Odkrijte Dejavu</string>
+    <string name="dejavu_features_page">%1$d od %2$d</string>
+    <string name="dejavu_features_next">Naprej</string>
+    <string name="dejavu_features_skip">Preskoči</string>
+    <string name="dejavu_feature_sleep">Uspavajte celo mapo</string>
+    <string name="dejavu_feature_themes">Vsakemu delovnemu prostoru dajte svoje barve</string>
+    <string name="dejavu_feature_swipe_menu">Povlecite spodnjo vrstico navzgor, da odprete meni</string>
+    <string name="dejavu_feature_actions">Pošljite katerikoli zavihek v svoje aplikacije</string>
+    <string name="dejavu_feature_zen_sync">Sinhronizirajte delovne prostore z Zenom</string>
+    <string name="dejavu_feature_folders">Pridržite zavihke, da jih premaknete v mapo</string>
+    <string name="dejavu_feature_drag">Povlecite zavihke v mape in Izbrano</string>
+    <string name="dejavu_feature_workspace_order">Povlecite delovne prostore, da spremenite njihov vrstni red</string>
+    <string name="dejavu_feature_split_view">Pridržite povezavo, da jo odprete v razdeljenem pogledu</string>
 </resources>

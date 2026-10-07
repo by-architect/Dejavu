@@ -287,4 +287,18 @@
         <item quantity="few">%1$d file închise</item>
         <item quantity="other">%1$d de file închise</item>
     </plurals>
+    <string name="dejavu_settings_close_pinned_hint">La filele fixate și la foldere, „Închide” hibernează filele deschise, deoarece fixările rămân. Când o filă fixată este deja în hibernare, „Închide” îi anulează fixarea.</string>
+    <string name="dejavu_features_title">Descoperă Dejavu</string>
+    <string name="dejavu_features_page">%1$d din %2$d</string>
+    <string name="dejavu_features_next">Înainte</string>
+    <string name="dejavu_features_skip">Omite</string>
+    <string name="dejavu_feature_sleep">Hibernează un folder întreg</string>
+    <string name="dejavu_feature_themes">Dă fiecărui spațiu de lucru propriile culori</string>
+    <string name="dejavu_feature_swipe_menu">Glisează bara de jos în sus pentru a deschide meniul</string>
+    <string name="dejavu_feature_actions">Trimite orice filă către aplicațiile tale</string>
+    <string name="dejavu_feature_zen_sync">Sincronizează-ți spațiile de lucru cu Zen</string>
+    <string name="dejavu_feature_folders">Ține apăsat pe file pentru a le pune într-un folder</string>
+    <string name="dejavu_feature_drag">Trage file în foldere și la favorite</string>
+    <string name="dejavu_feature_workspace_order">Trage spațiile de lucru pentru a le reordona</string>
+    <string name="dejavu_feature_split_view">Ține apăsat pe un link pentru a-l deschide în ecran împărțit</string>
 </resources>

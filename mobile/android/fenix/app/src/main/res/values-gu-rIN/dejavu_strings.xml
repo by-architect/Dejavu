@@ -313,4 +313,18 @@
     <string name="dejavu_startup_crash_body">%1$s ખોલવામાં સમસ્યા આવી. બ્રાઉઝિંગ ચાલુ રાખવા માટે તેને ફરીથી ખોલો.</string>
     <string name="dejavu_sync_normal_tabs">પિન ન કરેલી ટૅબ્સનો સમાવેશ કરો</string>
     <string name="dejavu_sync_normal_tabs_summary">તે દરેક વર્કસ્પેસની અન્ય ટૅબ્સને પણ સમન્વયિત કરે છે, ફક્ત પિન કરેલી ટૅબ્સ અને ફોલ્ડર્સને જ નહીં. જ્યારે તેનો પોતાનો પિન ન કરેલી ટૅબ્સનો સમાવેશ કરો વિકલ્પ ચાલુ હોય, ત્યારે Zen તેમને સમન્વયિત કરે છે.</string>
+    <string name="dejavu_settings_close_pinned_hint">પિન કરેલી ટૅબ્સ અને ફોલ્ડર્સ પર, “બંધ કરો” ખુલ્લી ટૅબ્સને સ્લીપ મોડમાં મૂકે છે, કારણ કે તે પિન કરેલી જ રહે છે. પિન કરેલી ટૅબ સ્લીપ મોડમાં હોય ત્યારે, “બંધ કરો” તેને અનપિન કરે છે.</string>
+    <string name="dejavu_features_title">Dejavu ને જાણો</string>
+    <string name="dejavu_features_page">%2$d માંથી %1$d</string>
+    <string name="dejavu_features_next">આગળ</string>
+    <string name="dejavu_features_skip">છોડો</string>
+    <string name="dejavu_feature_sleep">આખા ફોલ્ડરને સ્લીપ મોડમાં મૂકો</string>
+    <string name="dejavu_feature_themes">દરેક વર્કસ્પેસને તેના પોતાના રંગો આપો</string>
+    <string name="dejavu_feature_swipe_menu">મેનૂ ખોલવા માટે નીચેના બારને ઉપર સ્વાઇપ કરો</string>
+    <string name="dejavu_feature_actions">કોઈપણ ટૅબ તમારી એપ્લિકેશનોમાં મોકલો</string>
+    <string name="dejavu_feature_zen_sync">તમારા વર્કસ્પેસને Zen સાથે સમન્વયિત કરો</string>
+    <string name="dejavu_feature_folders">ટૅબ્સને ફોલ્ડરમાં મૂકવા માટે તેમને દબાવી રાખો</string>
+    <string name="dejavu_feature_drag">ટૅબ્સને ફોલ્ડર્સ અને એસેન્શિયલ્સમાં ખેંચો</string>
+    <string name="dejavu_feature_workspace_order">વર્કસ્પેસનો ક્રમ બદલવા માટે તેમને ખેંચો</string>
+    <string name="dejavu_feature_split_view">લિંકને સ્પ્લિટ વ્યૂમાં ખોલવા માટે તેને દબાવી રાખો</string>
 </resources>

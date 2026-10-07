@@ -294,4 +294,18 @@
         <item quantity="many">%1$d картак закрыты</item>
         <item quantity="other">%1$d картак закрыты</item>
     </plurals>
+    <string name="dejavu_settings_close_pinned_hint">На замацаваных картках і ў папках «Закрыць» прысыпляе адкрытыя карткі, бо замацаванні застаюцца. Калі замацаваная картка ўжо спіць, «Закрыць» адмацоўвае яе.</string>
+    <string name="dejavu_features_title">Пазнаёмцеся з Dejavu</string>
+    <string name="dejavu_features_page">%1$d з %2$d</string>
+    <string name="dejavu_features_next">Далей</string>
+    <string name="dejavu_features_skip">Прапусціць</string>
+    <string name="dejavu_feature_sleep">Прыспіце цэлую папку</string>
+    <string name="dejavu_feature_themes">Дайце кожнай прасторы свае колеры</string>
+    <string name="dejavu_feature_swipe_menu">Правядзіце ніжнюю панэль уверх, каб адкрыць меню</string>
+    <string name="dejavu_feature_actions">Адпраўляйце любую картку ў свае праграмы</string>
+    <string name="dejavu_feature_zen_sync">Сінхранізуйце свае прасторы з Zen</string>
+    <string name="dejavu_feature_folders">Утрымлівайце карткі, каб пакласці іх у папку</string>
+    <string name="dejavu_feature_drag">Перацягвайце карткі ў папкі і ў важнае</string>
+    <string name="dejavu_feature_workspace_order">Перацягвайце прасторы, каб змяніць іх парадак</string>
+    <string name="dejavu_feature_split_view">Утрымлівайце спасылку, каб адкрыць яе ў падзеленым выглядзе</string>
 </resources>

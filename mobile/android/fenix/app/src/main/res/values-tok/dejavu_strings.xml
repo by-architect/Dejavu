@@ -273,4 +273,18 @@
     <plurals name="dejavu_tabs_closed">
         <item quantity="other">poki %1$d li pini</item>
     </plurals>
+    <string name="dejavu_settings_close_pinned_hint">lon poki awen en tomo poki la, \"o pini\" li lape e poki open, tan ni: poki awen li awen. poki awen li lape la, \"o pini\" li weka e awen ona.</string>
+    <string name="dejavu_features_title">o sona e Dejavu</string>
+    <string name="dejavu_features_page">%1$d lon %2$d</string>
+    <string name="dejavu_features_next">o tawa kama</string>
+    <string name="dejavu_features_skip">o pini</string>
+    <string name="dejavu_feature_sleep">o lape e poki ale pi tomo poki</string>
+    <string name="dejavu_feature_themes">o pana e kule pi ona taso tawa kulupu poki wan wan</string>
+    <string name="dejavu_feature_swipe_menu">o tawa sewi e linja anpa tawa open e ilo mute</string>
+    <string name="dejavu_feature_actions">o pana e poki tawa ilo sina</string>
+    <string name="dejavu_feature_zen_sync">o sama e kulupu poki sina kepeken Zen</string>
+    <string name="dejavu_feature_folders">o luka awen e poki tawa pana e ona lon tomo poki</string>
+    <string name="dejavu_feature_drag">o tawa e poki tawa tomo poki en lipu suli</string>
+    <string name="dejavu_feature_workspace_order">o tawa e kulupu poki tawa ante e nasin ona</string>
+    <string name="dejavu_feature_split_view">o luka awen e nasin lipu tawa open e ona lon lukin tu</string>
 </resources>

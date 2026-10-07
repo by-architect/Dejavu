@@ -308,4 +308,18 @@
         <item quantity="many">Caewyd %1$d thab</item>
         <item quantity="other">Caewyd %1$d tab</item>
     </plurals>
+    <string name="dejavu_settings_close_pinned_hint">Ar dabiau wedi\'u pinio a ffolderi, mae Cau yn rhoi\'r tabiau agored i gysgu, gan fod y pinnau\'n aros. Pan fydd tab wedi\'i binio eisoes yn cysgu, mae Cau yn ei ddatbinio.</string>
+    <string name="dejavu_features_title">Darganfod Dejavu</string>
+    <string name="dejavu_features_page">%1$d o %2$d</string>
+    <string name="dejavu_features_next">Nesaf</string>
+    <string name="dejavu_features_skip">Hepgor</string>
+    <string name="dejavu_feature_sleep">Rhoi ffolder cyfan i gysgu</string>
+    <string name="dejavu_feature_themes">Rhoi ei liwiau ei hun i bob gweithle</string>
+    <string name="dejavu_feature_swipe_menu">Llithro\'r bar gwaelod i fyny i agor y ddewislen</string>
+    <string name="dejavu_feature_actions">Anfon unrhyw dab i\'ch apiau</string>
+    <string name="dejavu_feature_zen_sync">Cydweddu eich gweithleoedd gyda Zen</string>
+    <string name="dejavu_feature_folders">Pwyso\'n hir ar dabiau i\'w rhoi mewn ffolder</string>
+    <string name="dejavu_feature_drag">Llusgo tabiau i ffolderi ac i\'r hanfodion</string>
+    <string name="dejavu_feature_workspace_order">Llusgo gweithleoedd i\'w haildrefnu</string>
+    <string name="dejavu_feature_split_view">Pwyso\'n hir ar ddolen i\'w hagor mewn golwg hollt</string>
 </resources>

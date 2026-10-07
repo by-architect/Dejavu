@@ -280,4 +280,18 @@
         <item quantity="one">%1$d ka tab ang nasira</item>
         <item quantity="other">%1$d ka tab ang nasira</item>
     </plurals>
+    <string name="dejavu_settings_close_pinned_hint">Sa naka-pin nga mga tab kag folder, ang Isira nagapatulog sang bukas nga mga tab, kay nagapabilin ang mga pin. Kon nagatulog na ang naka-pin nga tab, gina-unpin ini sang Isira.</string>
+    <string name="dejavu_features_title">Kilalaha ang Dejavu</string>
+    <string name="dejavu_features_page">%1$d sa %2$d</string>
+    <string name="dejavu_features_next">Sunod</string>
+    <string name="dejavu_features_skip">i-Skip</string>
+    <string name="dejavu_feature_sleep">Patulugon ang bug-os nga folder</string>
+    <string name="dejavu_feature_themes">Hatagi ang kada workspace sang kaugalingon nga mga kolor</string>
+    <string name="dejavu_feature_swipe_menu">i-Swipe pataas ang bar sa idalom para maabrihan ang menu</string>
+    <string name="dejavu_feature_actions">Ipadala ang bisan ano nga tab sa imo mga app</string>
+    <string name="dejavu_feature_zen_sync">i-Sync ang imo mga workspace upod ang Zen</string>
+    <string name="dejavu_feature_folders">i-Long-press ang mga tab para ibutang sa isa ka folder</string>
+    <string name="dejavu_feature_drag">i-Drag ang mga tab sa mga folder kag Importante</string>
+    <string name="dejavu_feature_workspace_order">i-Drag ang mga workspace para baylohan ang ila han-ay</string>
+    <string name="dejavu_feature_split_view">i-Long-press ang link para i-open ini sa split view</string>
 </resources>

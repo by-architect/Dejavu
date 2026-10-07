@@ -273,4 +273,18 @@
     <plurals name="dejavu_tabs_closed">
         <item quantity="other">%1$d件のタブを閉じました</item>
     </plurals>
+    <string name="dejavu_settings_close_pinned_hint">ピン留めタブとフォルダーでは、ピン留めは残るため、「閉じる」で開いているタブをスリープします。ピン留めタブがすでにスリープしている場合は、「閉じる」でピン留めを解除します。</string>
+    <string name="dejavu_features_title">Dejavuの機能紹介</string>
+    <string name="dejavu_features_page">%1$d / %2$d</string>
+    <string name="dejavu_features_next">次へ</string>
+    <string name="dejavu_features_skip">スキップ</string>
+    <string name="dejavu_feature_sleep">フォルダー全体をスリープ</string>
+    <string name="dejavu_feature_themes">ワークスペースごとに独自の色を設定</string>
+    <string name="dejavu_feature_swipe_menu">下部のバーを上にスワイプしてメニューを開く</string>
+    <string name="dejavu_feature_actions">どのタブもアプリに送信</string>
+    <string name="dejavu_feature_zen_sync">ワークスペースをZenと同期</string>
+    <string name="dejavu_feature_folders">タブを長押ししてフォルダーにまとめる</string>
+    <string name="dejavu_feature_drag">タブをフォルダーやよく使うサイトにドラッグ</string>
+    <string name="dejavu_feature_workspace_order">ワークスペースをドラッグして並べ替え</string>
+    <string name="dejavu_feature_split_view">リンクを長押しして分割ビューで開く</string>
 </resources>

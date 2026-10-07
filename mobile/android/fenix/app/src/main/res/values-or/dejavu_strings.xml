@@ -280,4 +280,18 @@
         <item quantity="one">%1$d ଟ୍ୟାବ୍ ବନ୍ଦ ହେଲା</item>
         <item quantity="other">%1$d ଟ୍ୟାବ୍ ବନ୍ଦ ହେଲା</item>
     </plurals>
+    <string name="dejavu_settings_close_pinned_hint">ପିନ୍ କରାଯାଇଥିବା ଟ୍ୟାବ୍ ଏବଂ ଫୋଲଡରରେ, ପିନ୍ ରହିଯାଉଥିବାରୁ “ବନ୍ଦ କରନ୍ତୁ” ଖୋଲା ଟ୍ୟାବ୍‌କୁ ସ୍ଲିପ୍ କରେ। ପିନ୍ କରାଯାଇଥିବା ଟ୍ୟାବ୍ ସ୍ଲିପ୍‌ରେ ଗଲା ପରେ, “ବନ୍ଦ କରନ୍ତୁ” ଏହାକୁ ଅନପିନ୍ କରେ।</string>
+    <string name="dejavu_features_title">Dejavu ବିଷୟରେ ଜାଣନ୍ତୁ</string>
+    <string name="dejavu_features_page">%2$d ମଧ୍ୟରୁ %1$d</string>
+    <string name="dejavu_features_next">ପରବର୍ତ୍ତୀ</string>
+    <string name="dejavu_features_skip">ଛାଡି ଦିଅନ୍ତୁ</string>
+    <string name="dejavu_feature_sleep">ପୂରା ଫୋଲଡରକୁ ସ୍ଲିପ୍ କରନ୍ତୁ</string>
+    <string name="dejavu_feature_themes">ପ୍ରତ୍ୟେକ କାର୍ଯ୍ୟକ୍ଷେତ୍ରକୁ ନିଜର ରଙ୍ଗ ଦିଅନ୍ତୁ</string>
+    <string name="dejavu_feature_swipe_menu">ମେନୁ ଖୋଲିବାକୁ ତଳ ବାର୍‌କୁ ଉପରକୁ ସ୍ୱାଇପ୍ କରନ୍ତୁ</string>
+    <string name="dejavu_feature_actions">ଯେକୌଣସି ଟ୍ୟାବ୍‌କୁ ଆପଣଙ୍କ ଆପ୍‌କୁ ପଠାନ୍ତୁ</string>
+    <string name="dejavu_feature_zen_sync">ଆପଣଙ୍କ କାର୍ଯ୍ୟକ୍ଷେତ୍ରକୁ Zen ସହିତ ସିଙ୍କ କରନ୍ତୁ</string>
+    <string name="dejavu_feature_folders">ଟ୍ୟାବ୍‌କୁ ଫୋଲଡରରେ ରଖିବାକୁ ସେଗୁଡ଼ିକୁ ଲମ୍ବା ଦବାନ୍ତୁ</string>
+    <string name="dejavu_feature_drag">ଟ୍ୟାବ୍‌କୁ ଫୋଲଡର ଏବଂ ଆବଶ୍ୟକୀୟକୁ ଡ୍ରାଗ୍ କରନ୍ତୁ</string>
+    <string name="dejavu_feature_workspace_order">କ୍ରମ ବଦଳାଇବାକୁ କାର୍ଯ୍ୟକ୍ଷେତ୍ରକୁ ଡ୍ରାଗ୍ କରନ୍ତୁ</string>
+    <string name="dejavu_feature_split_view">ଲିଙ୍କ୍‌କୁ ବିଭାଜିତ ଦୃଶ୍ୟରେ ଖୋଲିବାକୁ ଏହାକୁ ଲମ୍ବା ଦବାନ୍ତୁ</string>
 </resources>

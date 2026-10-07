@@ -280,4 +280,18 @@
         <item quantity="one">%1$d بازدەر داخرا</item>
         <item quantity="other">%1$d بازدەر داخرا</item>
     </plurals>
+    <string name="dejavu_settings_close_pinned_hint">لە بازدەرە چەسپاوەکان و پۆشەکاندا، «داخستن» بازدەرە کراوەکان دەخەوێنێت، چونکە چەسپاندنەکان دەمێننەوە. کاتێک بازدەرێکی چەسپاو خەوتووە، «داخستن» چەسپانەکەی لادەبات.</string>
+    <string name="dejavu_features_title">Dejavu بناسە</string>
+    <string name="dejavu_features_page">%1$d لە %2$d</string>
+    <string name="dejavu_features_next">دواتر</string>
+    <string name="dejavu_features_skip">تێپەڕاندن</string>
+    <string name="dejavu_feature_sleep">پۆشەیەکی تەواو بخەوێنە</string>
+    <string name="dejavu_feature_themes">ڕەنگی تایبەت بە هەر فەزایەک بدە</string>
+    <string name="dejavu_feature_swipe_menu">شریتی خوارەوە بۆ سەرەوە ڕابکێشە بۆ کردنەوەی پێڕست</string>
+    <string name="dejavu_feature_actions">هەر بازدەرێک بنێرە بۆ ئەپەکانت</string>
+    <string name="dejavu_feature_zen_sync">فەزاکانت لەگەڵ Zen هاوکات بکە</string>
+    <string name="dejavu_feature_folders">بازدەرەکان دابگرە بۆ دانانیان لە پۆشەیەکدا</string>
+    <string name="dejavu_feature_drag">بازدەرەکان ڕابکێشە بۆ پۆشەکان و ماڵپەڕە گرنگەکان</string>
+    <string name="dejavu_feature_workspace_order">فەزاکان ڕابکێشە بۆ ڕیزکردنەوەیان</string>
+    <string name="dejavu_feature_split_view">بەستەرێک دابگرە بۆ کردنەوەی لە دیمەنی دووبەشکراودا</string>
 </resources>

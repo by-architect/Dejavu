@@ -280,4 +280,18 @@
         <item quantity="one">%1$d hilpekîn hate girtin</item>
         <item quantity="other">%1$d hilpekîn hate girtin</item>
     </plurals>
+    <string name="dejavu_settings_close_pinned_hint">Li ser hilpekînên sabît û peldankan, «Bigire» hilpekînên vekirî dixewîne, ji ber ku ew sabît dimînin. Dema hilpekîneke sabît razayî be, «Bigire» wê jê dikişîne.</string>
+    <string name="dejavu_features_title">Dejavu keşf bike</string>
+    <string name="dejavu_features_page">%1$d ji %2$d</string>
+    <string name="dejavu_features_next">Pêşve</string>
+    <string name="dejavu_features_skip">Derbas bike</string>
+    <string name="dejavu_feature_sleep">Tevahiya peldankê bixewîne</string>
+    <string name="dejavu_feature_themes">Rengên taybet bide her qadê</string>
+    <string name="dejavu_feature_swipe_menu">Ji bo vekirina menuyê, darika jêrîn ber bi jor ve bikişîne</string>
+    <string name="dejavu_feature_actions">Her hilpekînê bişîne sepanên xwe</string>
+    <string name="dejavu_feature_zen_sync">Qadên xwe bi Zen re hevdem bike</string>
+    <string name="dejavu_feature_folders">Bi dirêjahî li hilpekînan bitikîne û wan bixe peldankekê</string>
+    <string name="dejavu_feature_drag">Hilpekînan bikişîne nav peldank û malperên girîng</string>
+    <string name="dejavu_feature_workspace_order">Qadan bikişîne û rêza wan biguherîne</string>
+    <string name="dejavu_feature_split_view">Bi dirêjahî li girêdanekê bitikîne û wê di dîmena dabeşkirî de veke</string>
 </resources>

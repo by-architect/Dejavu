@@ -294,4 +294,18 @@
         <item quantity="many">%1$d вкладок закрито</item>
         <item quantity="other">%1$d вкладки закрито</item>
     </plurals>
+    <string name="dejavu_settings_close_pinned_hint">На закріплених вкладках і теках кнопка «Закрити» присипляє відкриті вкладки, адже закріплені вкладки залишаються. Коли закріплена вкладка вже спить, «Закрити» відкріплює її.</string>
+    <string name="dejavu_features_title">Знайомство з Dejavu</string>
+    <string name="dejavu_features_page">%1$d з %2$d</string>
+    <string name="dejavu_features_next">Далі</string>
+    <string name="dejavu_features_skip">Пропустити</string>
+    <string name="dejavu_feature_sleep">Приспіть цілу теку</string>
+    <string name="dejavu_feature_themes">Дайте кожному робочому простору власні кольори</string>
+    <string name="dejavu_feature_swipe_menu">Проведіть по нижній панелі вгору, щоб відкрити меню</string>
+    <string name="dejavu_feature_actions">Надсилайте будь-яку вкладку у свої застосунки</string>
+    <string name="dejavu_feature_zen_sync">Синхронізуйте робочі простори з Zen</string>
+    <string name="dejavu_feature_folders">Натисніть і утримуйте вкладки, щоб додати їх до теки</string>
+    <string name="dejavu_feature_drag">Перетягуйте вкладки в теки та обране</string>
+    <string name="dejavu_feature_workspace_order">Перетягуйте робочі простори, щоб змінити їхній порядок</string>
+    <string name="dejavu_feature_split_view">Натисніть і утримуйте посилання, щоб відкрити його в режимі розділення екрана</string>
 </resources>

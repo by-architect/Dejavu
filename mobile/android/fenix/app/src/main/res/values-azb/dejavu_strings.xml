@@ -280,4 +280,18 @@
         <item quantity="one">%1$d تاغ باغلاندی</item>
         <item quantity="other">%1$d تاغ باغلاندی</item>
     </plurals>
+    <string name="dejavu_settings_close_pinned_hint">برکیدیلمیش تاغلاردا و پوشه‌لرده «باغلا» آچیق تاغلاری یوخویا قویور، چونکی برکیتمه‌لر قالیر. برکیدیلمیش تاغ یوخودا اولاندا «باغلا» اونو برکیتمه‌دن چیخاریر.</string>
+    <string name="dejavu_features_title">Dejavu ایله تانیش اولون</string>
+    <string name="dejavu_features_page">%1$d / %2$d</string>
+    <string name="dejavu_features_next">سونراکی</string>
+    <string name="dejavu_features_skip">کئچ</string>
+    <string name="dejavu_feature_sleep">بوتون پوشه‌نی یوخویا قویون</string>
+    <string name="dejavu_feature_themes">هر ایش ساحه‌سینه اؤز رنگلرینی وئرین</string>
+    <string name="dejavu_feature_swipe_menu">منونو آچماق اوچون آلت پانئلی یوخاری سوروشدورون</string>
+    <string name="dejavu_feature_actions">هر تاغی اپلیکیشن‌لرینیزه گؤندرین</string>
+    <string name="dejavu_feature_zen_sync">ایش ساحه‌لرینیزی Zen ایله همگام ائدین</string>
+    <string name="dejavu_feature_folders">تاغلاری پوشه‌یه قویماق اوچون باسیب ساخلایین</string>
+    <string name="dejavu_feature_drag">تاغلاری پوشه‌لره و اساس‌لارا سوروکله‌یین</string>
+    <string name="dejavu_feature_workspace_order">یئنی‌دن سیرالاماق اوچون ایش ساحه‌لرینی سوروکله‌یین</string>
+    <string name="dejavu_feature_split_view">بؤلونموش گؤرونوشده آچماق اوچون باغلانتینی باسیب ساخلایین</string>
 </resources>

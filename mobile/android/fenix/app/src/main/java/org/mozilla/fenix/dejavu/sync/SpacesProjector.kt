@@ -398,3 +398,24 @@ internal fun reorder(current: List<String>, desired: List<String>): List<String>
     }
     return result
 }
+
+/**
+ * [current] with each of [arrivals] that [desired] lists moved next to its nearest neighbour there, so it lands where
+ * [desired] puts it. Everything else keeps its place.
+ */
+internal fun placeArrivals(current: List<String>, desired: List<String>, arrivals: Set<String>): List<String> {
+    val moving = desired.filter { it in arrivals && it in current }.toSet()
+    val result = current.filterNot { it in moving }.toMutableList()
+    desired.forEachIndexed { index, id ->
+        if (id !in moving || id in result) return@forEachIndexed
+        val before = desired.subList(0, index).lastOrNull { it in result }
+        val after = desired.subList(index + 1, desired.size).firstOrNull { it in result }
+        val at = when {
+            before != null -> result.indexOf(before) + 1
+            after != null -> result.indexOf(after)
+            else -> result.size
+        }
+        result.add(at, id)
+    }
+    return result
+}

@@ -280,4 +280,18 @@
         <item quantity="one">%1$d καρτέλα έκλεισε</item>
         <item quantity="other">%1$d καρτέλες έκλεισαν</item>
     </plurals>
+    <string name="dejavu_settings_close_pinned_hint">Στις καρφιτσωμένες καρτέλες και στους φακέλους, το «Κλείσιμο» αδρανοποιεί τις ανοιχτές καρτέλες, αφού οι καρφιτσώσεις παραμένουν. Όταν μια καρφιτσωμένη καρτέλα είναι ήδη σε αδράνεια, το «Κλείσιμο» την ξεκαρφιτσώνει.</string>
+    <string name="dejavu_features_title">Ανακαλύψτε το Dejavu</string>
+    <string name="dejavu_features_page">%1$d από %2$d</string>
+    <string name="dejavu_features_next">Επόμενο</string>
+    <string name="dejavu_features_skip">Παράλειψη</string>
+    <string name="dejavu_feature_sleep">Αδρανοποιήστε ολόκληρο φάκελο</string>
+    <string name="dejavu_feature_themes">Δώστε σε κάθε χώρο εργασίας τα δικά του χρώματα</string>
+    <string name="dejavu_feature_swipe_menu">Σύρετε την κάτω γραμμή προς τα πάνω για να ανοίξει το μενού</string>
+    <string name="dejavu_feature_actions">Στείλτε οποιαδήποτε καρτέλα στις εφαρμογές σας</string>
+    <string name="dejavu_feature_zen_sync">Συγχρονίστε τους χώρους εργασίας σας με το Zen</string>
+    <string name="dejavu_feature_folders">Πατήστε παρατεταμένα καρτέλες για να τις βάλετε σε φάκελο</string>
+    <string name="dejavu_feature_drag">Σύρετε καρτέλες σε φακέλους και στα αγαπημένα</string>
+    <string name="dejavu_feature_workspace_order">Σύρετε τους χώρους εργασίας για να αλλάξετε τη σειρά τους</string>
+    <string name="dejavu_feature_split_view">Πατήστε παρατεταμένα έναν σύνδεσμο για να ανοίξει σε διαχωρισμένη προβολή</string>
 </resources>

@@ -273,4 +273,18 @@
     <plurals name="dejavu_tabs_closed">
         <item quantity="other">%1$d tab ditutup</item>
     </plurals>
+    <string name="dejavu_settings_close_pinned_hint">Pada tab yang disemat dan folder, Tutup menidurkan tab yang terbuka, karena tab tersebut tetap disemat. Setelah tab yang disemat tidur, Tutup akan melepas sematannya.</string>
+    <string name="dejavu_features_title">Kenali Dejavu</string>
+    <string name="dejavu_features_page">%1$d dari %2$d</string>
+    <string name="dejavu_features_next">Berikutnya</string>
+    <string name="dejavu_features_skip">Lewati</string>
+    <string name="dejavu_feature_sleep">Tidurkan seluruh folder</string>
+    <string name="dejavu_feature_themes">Beri setiap ruang kerja warnanya sendiri</string>
+    <string name="dejavu_feature_swipe_menu">Geser bilah bawah ke atas untuk membuka menu</string>
+    <string name="dejavu_feature_actions">Kirim tab apa pun ke aplikasi Anda</string>
+    <string name="dejavu_feature_zen_sync">Sinkronkan ruang kerja Anda dengan Zen</string>
+    <string name="dejavu_feature_folders">Tekan lama tab untuk memasukkannya ke folder</string>
+    <string name="dejavu_feature_drag">Seret tab ke folder dan situs penting</string>
+    <string name="dejavu_feature_workspace_order">Seret ruang kerja untuk mengubah urutannya</string>
+    <string name="dejavu_feature_split_view">Tekan lama tautan untuk membukanya dalam tampilan terbagi</string>
 </resources>

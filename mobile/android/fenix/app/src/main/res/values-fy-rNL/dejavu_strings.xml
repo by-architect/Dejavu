@@ -280,4 +280,18 @@
         <item quantity="one">%1$d ljepblêd sluten</item>
         <item quantity="other">%1$d ljepblêden sluten</item>
     </plurals>
+    <string name="dejavu_settings_close_pinned_hint">Op fêstsette ljepblêden en mappen set ‘Slute’ de iepen ljepblêden yn sliepstân, omdat se fêstset bliuwe. As in fêstset ljepblêd al sliept, makket ‘Slute’ it los.</string>
+    <string name="dejavu_features_title">Untdek Dejavu</string>
+    <string name="dejavu_features_page">%1$d fan %2$d</string>
+    <string name="dejavu_features_next">Folgjende</string>
+    <string name="dejavu_features_skip">Oerslaan</string>
+    <string name="dejavu_feature_sleep">Set in hiele map yn sliepstân</string>
+    <string name="dejavu_feature_themes">Jou elke wurkromte syn eigen kleuren</string>
+    <string name="dejavu_feature_swipe_menu">Fei de ûnderste balke omheech om it menu te iepenjen</string>
+    <string name="dejavu_feature_actions">Stjoer elk ljepblêd nei jo apps</string>
+    <string name="dejavu_feature_zen_sync">Syngronisearje jo wurkromten mei Zen</string>
+    <string name="dejavu_feature_folders">Druk lang op ljepblêden om se yn in map te pleatsen</string>
+    <string name="dejavu_feature_drag">Sleep ljepblêden nei mappen en essinsjes</string>
+    <string name="dejavu_feature_workspace_order">Sleep wurkromten om de folchoarder te wizigjen</string>
+    <string name="dejavu_feature_split_view">Druk lang op in keppeling om dy yn dûbele werjefte te iepenjen</string>
 </resources>

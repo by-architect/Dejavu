@@ -280,4 +280,18 @@
         <item quantity="one">%1$d раздел затворен</item>
         <item quantity="other">%1$d раздела затворени</item>
     </plurals>
+    <string name="dejavu_settings_close_pinned_hint">При закачените раздели и папките „Затваряне“ приспива отворените раздели, тъй като закачването остава. Щом закачен раздел вече спи, „Затваряне“ го откача.</string>
+    <string name="dejavu_features_title">Открийте Dejavu</string>
+    <string name="dejavu_features_page">%1$d от %2$d</string>
+    <string name="dejavu_features_next">Напред</string>
+    <string name="dejavu_features_skip">Пропускане</string>
+    <string name="dejavu_feature_sleep">Приспете цяла папка</string>
+    <string name="dejavu_feature_themes">Дайте на всяко работно пространство свои цветове</string>
+    <string name="dejavu_feature_swipe_menu">Плъзнете долната лента нагоре, за да отворите менюто</string>
+    <string name="dejavu_feature_actions">Изпращайте всеки раздел до своите приложения</string>
+    <string name="dejavu_feature_zen_sync">Синхронизирайте работните си пространства със Zen</string>
+    <string name="dejavu_feature_folders">Задръжте разделите, за да ги сложите в папка</string>
+    <string name="dejavu_feature_drag">Плъзнете раздели в папки и в Любими</string>
+    <string name="dejavu_feature_workspace_order">Плъзнете работните пространства, за да ги подредите</string>
+    <string name="dejavu_feature_split_view">Задръжте връзка, за да я отворите в разделен изглед</string>
 </resources>

@@ -280,4 +280,18 @@
         <item quantity="one">%1$d бет жабылды</item>
         <item quantity="other">%1$d бет жабылды</item>
     </plurals>
+    <string name="dejavu_settings_close_pinned_hint">Бекітілген беттер мен қалталарда «Жабу» ашық беттерді ұйықтатады, өйткені бекітулер сақталады. Бекітілген бет ұйықтап тұрса, «Жабу» оны бекітуден шығарады.</string>
+    <string name="dejavu_features_title">Dejavu-мен танысу</string>
+    <string name="dejavu_features_page">%1$d / %2$d</string>
+    <string name="dejavu_features_next">Келесі</string>
+    <string name="dejavu_features_skip">Аттап кету</string>
+    <string name="dejavu_feature_sleep">Бүкіл қалтаны ұйықтатыңыз</string>
+    <string name="dejavu_feature_themes">Әр жұмыс кеңістігіне өз түстерін беріңіз</string>
+    <string name="dejavu_feature_swipe_menu">Мәзірді ашу үшін төменгі тақтаны жоғары сырғытыңыз</string>
+    <string name="dejavu_feature_actions">Кез келген бетті қолданбаларыңызға жіберіңіз</string>
+    <string name="dejavu_feature_zen_sync">Жұмыс кеңістіктеріңізді Zen-мен синхрондаңыз</string>
+    <string name="dejavu_feature_folders">Беттерді қалтаға салу үшін оларды басып тұрыңыз</string>
+    <string name="dejavu_feature_drag">Беттерді қалталар мен негізгілерге сүйреңіз</string>
+    <string name="dejavu_feature_workspace_order">Ретін өзгерту үшін жұмыс кеңістіктерін сүйреңіз</string>
+    <string name="dejavu_feature_split_view">Сілтемені бөлінген көріністе ашу үшін оны басып тұрыңыз</string>
 </resources>

@@ -280,4 +280,18 @@
         <item quantity="one">%1$d زبانه بسته شد</item>
         <item quantity="other">%1$d زبانه بسته شد</item>
     </plurals>
+    <string name="dejavu_settings_close_pinned_hint">در زبانه‌های سنجاق‌شده و پوشه‌ها، «بستن» زبانه‌های باز را می‌خواباند، چون سنجاق‌شده باقی می‌مانند. وقتی یک زبانهٔ سنجاق‌شده خوابیده باشد، «بستن» سنجاق آن را برمی‌دارد.</string>
+    <string name="dejavu_features_title">آشنایی با Dejavu</string>
+    <string name="dejavu_features_page">%1$d از %2$d</string>
+    <string name="dejavu_features_next">بعدی</string>
+    <string name="dejavu_features_skip">رد شدن</string>
+    <string name="dejavu_feature_sleep">یک پوشهٔ کامل را بخوابانید</string>
+    <string name="dejavu_feature_themes">به هر فضای کاری رنگ‌های خودش را بدهید</string>
+    <string name="dejavu_feature_swipe_menu">برای باز کردن منو، نوار پایین را به بالا بکشید</string>
+    <string name="dejavu_feature_actions">هر زبانه‌ای را به برنامه‌هایتان بفرستید</string>
+    <string name="dejavu_feature_zen_sync">فضاهای کاری‌تان را با Zen همگام‌سازی کنید</string>
+    <string name="dejavu_feature_folders">با فشار طولانی، زبانه‌ها را در یک پوشه بگذارید</string>
+    <string name="dejavu_feature_drag">زبانه‌ها را به پوشه‌ها و ضروریات بکشید</string>
+    <string name="dejavu_feature_workspace_order">برای تغییر ترتیب فضاهای کاری، آن‌ها را بکشید</string>
+    <string name="dejavu_feature_split_view">با فشار طولانی روی یک پیوند، آن را در نمای تقسیم‌شده باز کنید</string>
 </resources>

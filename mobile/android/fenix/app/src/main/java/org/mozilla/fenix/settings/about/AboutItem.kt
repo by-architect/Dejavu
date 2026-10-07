@@ -10,6 +10,9 @@ sealed class AboutItem {
     object Libraries : AboutItem()
 
     object Crashes : AboutItem()
+
+    /** Dejavu: the tour of Dejavu's features. */
+    object FeatureTour : AboutItem()
 }
 
 enum class AboutItemType {

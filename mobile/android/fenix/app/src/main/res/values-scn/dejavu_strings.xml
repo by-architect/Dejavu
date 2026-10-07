@@ -280,4 +280,18 @@
         <item quantity="one">%1$d scheda chiusa</item>
         <item quantity="other">%1$d schedi chiusi</item>
     </plurals>
+    <string name="dejavu_settings_close_pinned_hint">Supra i schedi ficcati e i carteddi, u buttuni Chiuji fa addummisciri i schedi aperti, pirchì i ficcati restanu. Quannu na scheda ficcata è addummisciuta, Chiuji a sficca.</string>
+    <string name="dejavu_features_title">Scopri Dejavu</string>
+    <string name="dejavu_features_page">%1$d di %2$d</string>
+    <string name="dejavu_features_next">Avanti</string>
+    <string name="dejavu_features_skip">Sauta</string>
+    <string name="dejavu_feature_sleep">Fai addummisciri na cartedda sana</string>
+    <string name="dejavu_feature_themes">Duna a ogni spazziu di travagghiu i sò culuri</string>
+    <string name="dejavu_feature_swipe_menu">Tira ncapu a barra di sutta pi grapiri u menù</string>
+    <string name="dejavu_feature_actions">Manna qualunqui scheda ê tò app</string>
+    <string name="dejavu_feature_zen_sync">Sincronizza i spazzii di travagghiu tò cu Zen</string>
+    <string name="dejavu_feature_folders">Teni premutu i schedi pi mittìrili nta na cartedda</string>
+    <string name="dejavu_feature_drag">Strascina i schedi nnê carteddi e nnê essenziali</string>
+    <string name="dejavu_feature_workspace_order">Strascina i spazzii di travagghiu pi canciari l\'òrdini</string>
+    <string name="dejavu_feature_split_view">Teni premutu un lijami pi grapìrilu nta vista spartuta</string>
 </resources>

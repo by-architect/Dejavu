@@ -28,7 +28,7 @@ class DejavuSettings private constructor(context: Context) {
     private val _customActions = MutableStateFlow(readCustomActions())
     private val _pinnedRowKeys = MutableStateFlow(readKeys(KEY_PINNED_ROW_ACTIONS, DEFAULT_PINNED_ROW_ACTIONS))
     private val _unpinnedRowKeys = MutableStateFlow(readKeys(KEY_UNPINNED_ROW_ACTIONS, DEFAULT_UNPINNED_ROW_ACTIONS))
-    private val _folderRowKeys = MutableStateFlow(readKeys(KEY_FOLDER_ROW_ACTIONS, emptyList()))
+    private val _folderRowKeys = MutableStateFlow(readKeys(KEY_FOLDER_ROW_ACTIONS, DEFAULT_FOLDER_ROW_ACTIONS))
     private val _essentialsPerContainer = MutableStateFlow(prefs.getBoolean(KEY_ESSENTIALS_PER_CONTAINER, false))
     private val _temporaryContainersByDefault =
         MutableStateFlow(prefs.getBoolean(KEY_TEMPORARY_CONTAINERS_BY_DEFAULT, false))
@@ -88,6 +88,11 @@ class DejavuSettings private constructor(context: Context) {
         _tabSleepMinutes.value = minutes
         prefs.edit { putInt(KEY_TAB_SLEEP_MINUTES, minutes) }
     }
+
+    /** The version of the feature tour the user has seen, 0 for none. */
+    var featureTourSeen: Int
+        get() = prefs.getInt(KEY_FEATURE_TOUR_SEEN, 0)
+        set(value) = prefs.edit { putInt(KEY_FEATURE_TOUR_SEEN, value) }
 
     /** How History lists pages. */
     var historyGrouping: HistoryGrouping
@@ -255,8 +260,10 @@ class DejavuSettings private constructor(context: Context) {
         private const val KEY_ACTIONS_BAR = "actions_bar"
         private const val KEY_HISTORY_GROUPING = "history_grouping"
         private const val KEY_TAB_SLEEP_MINUTES = "tab_sleep_minutes"
+        private const val KEY_FEATURE_TOUR_SEEN = "feature_tour_seen"
         private val DEFAULT_PINNED_ROW_ACTIONS = listOf(TabAction.CLOSE)
         private val DEFAULT_UNPINNED_ROW_ACTIONS = listOf(TabAction.PIN, TabAction.CLOSE)
+        private val DEFAULT_FOLDER_ROW_ACTIONS = listOf(TabAction.SLEEP)
 
         @Volatile
         private var instance: DejavuSettings? = null

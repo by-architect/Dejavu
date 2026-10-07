@@ -280,4 +280,18 @@
         <item quantity="one">%1$d sekme kapatıldı</item>
         <item quantity="other">%1$d sekme kapatıldı</item>
     </plurals>
+    <string name="dejavu_settings_close_pinned_hint">Sabitlenmiş sekmelerde ve klasörlerde Kapat düğmesi açık sekmeleri uyutur, çünkü sabitlenmiş sekmeler yerinde kalır. Sabitlenmiş bir sekme zaten uyuyorsa Kapat sabitlemesini kaldırır.</string>
+    <string name="dejavu_features_title">Dejavu\'yu keşfedin</string>
+    <string name="dejavu_features_page">%1$d / %2$d</string>
+    <string name="dejavu_features_next">İleri</string>
+    <string name="dejavu_features_skip">Atla</string>
+    <string name="dejavu_feature_sleep">Klasörün tamamını uyutun</string>
+    <string name="dejavu_feature_themes">Her çalışma alanına kendi renklerini verin</string>
+    <string name="dejavu_feature_swipe_menu">Menüyü açmak için alt çubuğu yukarı kaydırın</string>
+    <string name="dejavu_feature_actions">İstediğiniz sekmeyi uygulamalarınıza gönderin</string>
+    <string name="dejavu_feature_zen_sync">Çalışma alanlarınızı Zen ile eşitleyin</string>
+    <string name="dejavu_feature_folders">Sekmeleri bir klasöre koymak için uzun basın</string>
+    <string name="dejavu_feature_drag">Sekmeleri klasörlere ve temel sekmelere sürükleyin</string>
+    <string name="dejavu_feature_workspace_order">Çalışma alanlarını sürükleyerek yeniden sıralayın</string>
+    <string name="dejavu_feature_split_view">Bir bağlantıyı bölünmüş görünümde açmak için uzun basın</string>
 </resources>

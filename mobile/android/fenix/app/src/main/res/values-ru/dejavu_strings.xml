@@ -294,4 +294,18 @@
         <item quantity="many">%1$d вкладок закрыто</item>
         <item quantity="other">%1$d вкладки закрыто</item>
     </plurals>
+    <string name="dejavu_settings_close_pinned_hint">На закреплённых вкладках и в папках «Закрыть» усыпляет открытые вкладки, ведь закрепления остаются. Если закреплённая вкладка уже спит, «Закрыть» открепляет её.</string>
+    <string name="dejavu_features_title">Знакомство с Dejavu</string>
+    <string name="dejavu_features_page">%1$d из %2$d</string>
+    <string name="dejavu_features_next">Далее</string>
+    <string name="dejavu_features_skip">Пропустить</string>
+    <string name="dejavu_feature_sleep">Усыпите целую папку</string>
+    <string name="dejavu_feature_themes">Задайте каждому рабочему пространству свои цвета</string>
+    <string name="dejavu_feature_swipe_menu">Проведите нижнюю панель вверх, чтобы открыть меню</string>
+    <string name="dejavu_feature_actions">Отправляйте любую вкладку в свои приложения</string>
+    <string name="dejavu_feature_zen_sync">Синхронизируйте рабочие пространства с Zen</string>
+    <string name="dejavu_feature_folders">Удерживайте вкладки, чтобы положить их в папку</string>
+    <string name="dejavu_feature_drag">Перетаскивайте вкладки в папки и в избранное</string>
+    <string name="dejavu_feature_workspace_order">Перетаскивайте рабочие пространства, чтобы изменить их порядок</string>
+    <string name="dejavu_feature_split_view">Удерживайте ссылку, чтобы открыть её при разделении экрана</string>
 </resources>

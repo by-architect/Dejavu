@@ -280,4 +280,18 @@
         <item quantity="one">%1$d tab serrà</item>
         <item quantity="other">%1$d tabs serrads</item>
     </plurals>
+    <string name="dejavu_settings_close_pinned_hint">Per tabs fixads e dossiers metta «Serrar» ils tabs averts en pausa, perquai ch\'els restan fixads. Sch\'in tab fixà è gia en pausa, al defixescha «Serrar».</string>
+    <string name="dejavu_features_title">Scuvrir Dejavu</string>
+    <string name="dejavu_features_page">%1$d da %2$d</string>
+    <string name="dejavu_features_next">Vinavant</string>
+    <string name="dejavu_features_skip">Sursiglir</string>
+    <string name="dejavu_feature_sleep">Metter en pausa in entir dossier</string>
+    <string name="dejavu_feature_themes">Dar a mintga spazi da lavur atgnas colurs</string>
+    <string name="dejavu_feature_swipe_menu">Stritgar si la trav sutvart per avrir il menu</string>
+    <string name="dejavu_feature_actions">Trametter mintga tab a tias apps</string>
+    <string name="dejavu_feature_zen_sync">Sincronisar tes spazis da lavur cun Zen</string>
+    <string name="dejavu_feature_folders">Tegnair smatgà tabs per als metter en in dossier</string>
+    <string name="dejavu_feature_drag">Trair tabs en dossiers ed en ils essenzials</string>
+    <string name="dejavu_feature_workspace_order">Trair ils spazis da lavur per als ordinar da nov</string>
+    <string name="dejavu_feature_split_view">Tegnair smatgà ina colliaziun per l\'avrir en la vista divisa</string>
 </resources>

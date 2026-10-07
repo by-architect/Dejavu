@@ -280,4 +280,18 @@
         <item quantity="one">%1$d flik stängd</item>
         <item quantity="other">%1$d flikar stängda</item>
     </plurals>
+    <string name="dejavu_settings_close_pinned_hint">På fästa flikar och mappar försätter Stäng de öppna flikarna i vila, eftersom de fästa flikarna finns kvar. När en fäst flik redan vilar lossar Stäng den.</string>
+    <string name="dejavu_features_title">Upptäck Dejavu</string>
+    <string name="dejavu_features_page">%1$d av %2$d</string>
+    <string name="dejavu_features_next">Nästa</string>
+    <string name="dejavu_features_skip">Hoppa över</string>
+    <string name="dejavu_feature_sleep">Försätt en hel mapp i vila</string>
+    <string name="dejavu_feature_themes">Ge varje arbetsyta egna färger</string>
+    <string name="dejavu_feature_swipe_menu">Svep det nedre fältet uppåt för att öppna menyn</string>
+    <string name="dejavu_feature_actions">Skicka valfri flik till dina appar</string>
+    <string name="dejavu_feature_zen_sync">Synkronisera dina arbetsytor med Zen</string>
+    <string name="dejavu_feature_folders">Tryck länge på flikar för att lägga dem i en mapp</string>
+    <string name="dejavu_feature_drag">Dra flikar till mappar och Favoriter</string>
+    <string name="dejavu_feature_workspace_order">Dra arbetsytor för att ändra ordningen</string>
+    <string name="dejavu_feature_split_view">Tryck länge på en länk för att öppna den i delad vy</string>
 </resources>

@@ -280,4 +280,18 @@
         <item quantity="one">%1$d lapela pechada</item>
         <item quantity="other">%1$d lapelas pechadas</item>
     </plurals>
+    <string name="dejavu_settings_close_pinned_hint">Nas lapelas fixadas e nos cartafoles, «Pechar» pon a durmir as lapelas abertas, xa que seguen fixadas. Cando unha lapela fixada xa está durmida, «Pechar» desfíxaa.</string>
+    <string name="dejavu_features_title">Descobre Dejavu</string>
+    <string name="dejavu_features_page">%1$d de %2$d</string>
+    <string name="dejavu_features_next">Seguinte</string>
+    <string name="dejavu_features_skip">Omitir</string>
+    <string name="dejavu_feature_sleep">Pon a durmir un cartafol enteiro</string>
+    <string name="dejavu_feature_themes">Dálle a cada espazo de traballo as súas propias cores</string>
+    <string name="dejavu_feature_swipe_menu">Despraza a barra inferior cara arriba para abrir o menú</string>
+    <string name="dejavu_feature_actions">Envía calquera lapela ás túas aplicacións</string>
+    <string name="dejavu_feature_zen_sync">Sincroniza os teus espazos de traballo con Zen</string>
+    <string name="dejavu_feature_folders">Preme prolongadamente as lapelas para metelas nun cartafol</string>
+    <string name="dejavu_feature_drag">Arrastra lapelas aos cartafoles e aos esenciais</string>
+    <string name="dejavu_feature_workspace_order">Arrastra os espazos de traballo para reordenalos</string>
+    <string name="dejavu_feature_split_view">Preme prolongadamente unha ligazón para abrila en vista dividida</string>
 </resources>

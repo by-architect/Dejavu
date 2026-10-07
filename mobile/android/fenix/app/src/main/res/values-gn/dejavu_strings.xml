@@ -280,4 +280,18 @@
         <item quantity="one">%1$d tendayke oñembotypa</item>
         <item quantity="other">%1$d tendayke oñembotypa</item>
     </plurals>
+    <string name="dejavu_settings_close_pinned_hint">Tendayke mboguapypyre ha karpetakuérape, “Mboty” omboke umi tendayke ijurúva, opytágui mboguapypyre. Peteĩ tendayke mboguapypyre oke jave, “Mboty” ojora pe tendayke.</string>
+    <string name="dejavu_features_title">Eikuaa Dejavu</string>
+    <string name="dejavu_features_page">%1$d/%2$d</string>
+    <string name="dejavu_features_next">Upeigua</string>
+    <string name="dejavu_features_skip">Ehasa</string>
+    <string name="dejavu_feature_sleep">Emboke peteĩ karpeta tuichakue</string>
+    <string name="dejavu_feature_themes">Eme\'ẽ peteĩteĩ tembiapo rendápe isa\'y ijeheguíva</string>
+    <string name="dejavu_feature_swipe_menu">Erova barra guýpegua yvate gotyo embojuruja hag̃ua menu</string>
+    <string name="dejavu_feature_actions">Emondo oimeraẽ tendayke ne tembiporu\'ikuérape</string>
+    <string name="dejavu_feature_zen_sync">Esincroniza ne tembiapo renda Zen ndive</string>
+    <string name="dejavu_feature_folders">Eñepysãnga tendayke emoĩ hag̃ua peteĩ karpetápe</string>
+    <string name="dejavu_feature_drag">Egueraha tendayke karpeta ha iporãvévape</string>
+    <string name="dejavu_feature_workspace_order">Egueraha tembiapo renda emohenda jey hag̃ua</string>
+    <string name="dejavu_feature_split_view">Eñepysãnga peteĩ enlace embojuruja hag̃ua mokõi ojuehe pype</string>
 </resources>

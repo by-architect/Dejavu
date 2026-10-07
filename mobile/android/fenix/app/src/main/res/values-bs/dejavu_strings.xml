@@ -287,4 +287,18 @@
         <item quantity="few">%1$d taba zatvoreno</item>
         <item quantity="other">%1$d tabova zatvoreno</item>
     </plurals>
+    <string name="dejavu_settings_close_pinned_hint">Na prikvačenim tabovima i folderima „Zatvori“ uspavljuje otvorene tabove, jer prikvačeni ostaju. Kad prikvačeni tab već spava, „Zatvori“ ga otkvači.</string>
+    <string name="dejavu_features_title">Otkrijte Dejavu</string>
+    <string name="dejavu_features_page">%1$d od %2$d</string>
+    <string name="dejavu_features_next">Dalje</string>
+    <string name="dejavu_features_skip">Preskoči</string>
+    <string name="dejavu_feature_sleep">Uspavajte cijeli folder</string>
+    <string name="dejavu_feature_themes">Dajte svakom radnom prostoru vlastite boje</string>
+    <string name="dejavu_feature_swipe_menu">Prevucite donju traku prema gore da otvorite meni</string>
+    <string name="dejavu_feature_actions">Pošaljite bilo koji tab u svoje aplikacije</string>
+    <string name="dejavu_feature_zen_sync">Sinhronizirajte svoje radne prostore sa Zenom</string>
+    <string name="dejavu_feature_folders">Zadržite tabove da ih stavite u folder</string>
+    <string name="dejavu_feature_drag">Prevucite tabove u foldere i Favorite</string>
+    <string name="dejavu_feature_workspace_order">Prevucite radne prostore da ih preuredite</string>
+    <string name="dejavu_feature_split_view">Zadržite link da ga otvorite u podijeljenom prikazu</string>
 </resources>

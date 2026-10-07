@@ -280,4 +280,18 @@
         <item quantity="one">%1$d بلگه بسته وابی</item>
         <item quantity="other">%1$d بلگه بسته وابی</item>
     </plurals>
+    <string name="dejavu_settings_close_pinned_hint">من بلگه یل سنجاق‌وابیده و پوشه یل، «بستن» بلگه یل واز ن خواب مکنه، سی یه که سنجاق‌یل مۊنن. وختی بلگه سنجاق‌وابیده خوسیده، «بستن» سنجاقش ن درمیاره.</string>
+    <string name="dejavu_features_title">Dejavu ن بشناس</string>
+    <string name="dejavu_features_page">%1$d ز %2$d</string>
+    <string name="dejavu_features_next">بئدی</string>
+    <string name="dejavu_features_skip">رد شو</string>
+    <string name="dejavu_feature_sleep">یه پوشه کامل ن خواب کن</string>
+    <string name="dejavu_feature_themes">و هر فضا رنگ یل خوس ن بئه</string>
+    <string name="dejavu_feature_swipe_menu">سی واز کردن منو، نوار ژیر ن و بالا بکش</string>
+    <string name="dejavu_feature_actions">هر بلگه‌ای ن سی برنومه یلت بفرست</string>
+    <string name="dejavu_feature_zen_sync">فضا یلت ن وا Zen همگام کن</string>
+    <string name="dejavu_feature_folders">بلگه یل ن نگه دار تا بنی‌شون من پوشه</string>
+    <string name="dejavu_feature_drag">بلگه یل ن بکش و پوشه یل و سایت یل مهم</string>
+    <string name="dejavu_feature_workspace_order">فضا یل ن بکش تا ترتیبشون عوض بۊ</string>
+    <string name="dejavu_feature_split_view">لینک ن نگه دار تا من دید دوتایی واز بۊ</string>
 </resources>
