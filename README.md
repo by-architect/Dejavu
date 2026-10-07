@@ -199,9 +199,9 @@ the Mozilla Foundation, and this repository grants no rights to Mozilla's tradem
 
 ## Star history
 
-<a href="https://star-history.com/#by-architect/Dejavu&Date">
+<a href="https://github.com/by-architect/Dejavu/stargazers">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=by-architect/Dejavu&type=Date&theme=dark">
-    <img alt="Star history of Dejavu" src="https://api.star-history.com/svg?repos=by-architect/Dejavu&type=Date">
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/by-architect/Dejavu/roadmap/stars-dark.svg">
+    <img alt="Star history of Dejavu" src="https://raw.githubusercontent.com/by-architect/Dejavu/roadmap/stars.svg">
   </picture>
 </a>
