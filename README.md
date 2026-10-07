@@ -18,7 +18,8 @@
 
 Dejavu is a browser that adapts to you. Send any tab to your own apps with one tap, edit every button in the menu,
 choose where links from other apps open, and keep work, study and personal browsing apart in workspaces and
-containers. It runs on the Gecko engine, supports add-ons and tracking protection, and it is private by default.
+containers. Your workspaces, containers and pinned tabs sync with Zen Browser on your computer. It runs on the Gecko
+engine, supports add-ons and tracking protection, and it is private by default.
 
 Open Dejavu and everything is where you left it, on every device. That feeling of having been here before is where
 the name comes from.
@@ -35,8 +36,9 @@ the name comes from.
 Dejavu is an independent project. It started as a fork of Firefox for Android (Fenix), Mozilla's open source mobile
 browser, but it is not a Firefox product, and it is not made, endorsed or supported by Mozilla.
 
-Dejavu is not part of Zen Browser either. It can sync with Zen, so if you use Zen on your computer, your workspaces show
-up on your phone too, but the two are separate apps made by separate people. Sync is the only thing they share.
+**Is Dejavu Zen Browser for Android?** No. Zen Browser has no Android app, and Dejavu is not part of Zen or made by the
+Zen team. It is a separate Android browser that can sync with Zen: if you use Zen on your computer, your workspaces,
+containers and pinned tabs show up on your phone too. Sync is the only thing the two share.
 
 ## Download
 
