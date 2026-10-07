@@ -280,4 +280,18 @@
         <item quantity="one">%1$d feuggio særou</item>
         <item quantity="other">%1$d feuggi særæ</item>
     </plurals>
+    <string name="dejavu_settings_close_pinned_hint">In sci feuggi fissæ e in sce cartelle, «Særa» o fa dormî i feuggi averti, perché i feuggi fissæ restan. Quande un feuggio fissou o l\'é addormio, con «Særa» o vegne sfissou.</string>
+    <string name="dejavu_features_title">Descreuvi Dejavu</string>
+    <string name="dejavu_features_page">%1$d de %2$d</string>
+    <string name="dejavu_features_next">Pròscimo</string>
+    <string name="dejavu_features_skip">Sata</string>
+    <string name="dejavu_feature_sleep">Fa dormî unna cartella intrega</string>
+    <string name="dejavu_feature_themes">Dà a ògni spaçio de travaggio i sò coloî</string>
+    <string name="dejavu_feature_swipe_menu">Fa scorrî in sciù a barra de sotta pe arvî o menû</string>
+    <string name="dejavu_feature_actions">Manda qualonque feuggio a-e tò app</string>
+    <string name="dejavu_feature_zen_sync">Sincronizza i tò spaçi de travaggio con Zen</string>
+    <string name="dejavu_feature_folders">Tegni apreisso i feuggi pe mettili inte \'na cartella</string>
+    <string name="dejavu_feature_drag">Strascina i feuggi inte cartelle e inti essençiali</string>
+    <string name="dejavu_feature_workspace_order">Strascina i spaçi de travaggio pe cangiâ l\'ordine</string>
+    <string name="dejavu_feature_split_view">Tegni apreisso un ligamme pe arvîlo inte a vista spartia</string>
 </resources>

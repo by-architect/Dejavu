@@ -280,4 +280,18 @@
         <item quantity="one">%1$d langeto fermita</item>
         <item quantity="other">%1$d langetoj fermitaj</item>
     </plurals>
+    <string name="dejavu_settings_close_pinned_hint">Ĉe pinglitaj langetoj kaj dosierujoj, «Fermi» dormigas la malfermitajn langetojn, ĉar la pingloj restas. Kiam pinglita langeto jam dormas, «Fermi» depinglas ĝin.</string>
+    <string name="dejavu_features_title">Malkovru Dejavu</string>
+    <string name="dejavu_features_page">%1$d el %2$d</string>
+    <string name="dejavu_features_next">Sekva</string>
+    <string name="dejavu_features_skip">Preterpasi</string>
+    <string name="dejavu_feature_sleep">Dormigu tutan dosierujon</string>
+    <string name="dejavu_feature_themes">Donu al ĉiu laborspaco ĝiajn proprajn kolorojn</string>
+    <string name="dejavu_feature_swipe_menu">Ŝovu la malsupran breton supren por malfermi la menuon</string>
+    <string name="dejavu_feature_actions">Sendu ajnan langeton al viaj aplikaĵoj</string>
+    <string name="dejavu_feature_zen_sync">Sinkronigu viajn laborspacojn kun Zen</string>
+    <string name="dejavu_feature_folders">Tenu langetojn por meti ilin en dosierujon</string>
+    <string name="dejavu_feature_drag">Trenu langetojn en dosierujojn kaj esencaĵojn</string>
+    <string name="dejavu_feature_workspace_order">Trenu laborspacojn por reordigi ilin</string>
+    <string name="dejavu_feature_split_view">Tenu ligilon por malfermi ĝin en duobla vido</string>
 </resources>

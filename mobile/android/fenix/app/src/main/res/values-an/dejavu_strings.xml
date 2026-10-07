@@ -280,4 +280,18 @@
         <item quantity="one">%1$d pestanya zarrada</item>
         <item quantity="other">%1$d pestanyas zarradas</item>
     </plurals>
+    <string name="dejavu_settings_close_pinned_hint">En as pestanyas fixadas y as carpetas, «Zarrar» fa dormir as pestanyas ubiertas, porque as fixadas se quedan. Quan una pestanya fixada ya dorme, «Zarrar» la desfixa.</string>
+    <string name="dejavu_features_title">Descubre Dejavu</string>
+    <string name="dejavu_features_page">%1$d de %2$d</string>
+    <string name="dejavu_features_next">Siguient</string>
+    <string name="dejavu_features_skip">Blincar</string>
+    <string name="dejavu_feature_sleep">Fe dormir una carpeta entera</string>
+    <string name="dejavu_feature_themes">Da a cada espacio de treballo as suyas colors</string>
+    <string name="dejavu_feature_swipe_menu">Esbarra enta alto a barra d\'abaixo pa ubrir o menú</string>
+    <string name="dejavu_feature_actions">Ninvia qualsiquier pestanya a las tuyas aplicacions</string>
+    <string name="dejavu_feature_zen_sync">Sincroniza os tuyos espacios de treballo con Zen</string>
+    <string name="dejavu_feature_folders">Mantiene pretas as pestanyas pa meter-las en una carpeta</string>
+    <string name="dejavu_feature_drag">Arrociega pestanyas enta carpetas y esenciales</string>
+    <string name="dejavu_feature_workspace_order">Arrociega os espacios de treballo pa reordenar-los</string>
+    <string name="dejavu_feature_split_view">Mantiene pretau un vinclo pa ubrir-lo en vista partida</string>
 </resources>

@@ -34,6 +34,7 @@ import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.CompositionLocalProvider
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableIntStateOf
@@ -89,6 +90,7 @@ import org.mozilla.fenix.dejavu.containers.ContainerPick
 import org.mozilla.fenix.dejavu.containers.ContainerRecord
 import org.mozilla.fenix.dejavu.containers.color
 import org.mozilla.fenix.dejavu.sync.workspaceIconText
+import org.mozilla.fenix.dejavu.ui.LocalPopupTheme
 import org.mozilla.fenix.dejavu.ui.glass
 import org.mozilla.fenix.dejavu.workspaces.PinnedItem
 import org.mozilla.fenix.dejavu.workspaces.Workspace
@@ -256,166 +258,169 @@ fun DejavuHome(
         if (current != null) selection = current.togglePin(pin.id).takeIf { it.size > 0 } else interactor.onPinClick(pin)
     }
 
-    // The theme is drawn behind the system bars too, with the content kept clear of them.
-    Column(
-        modifier = modifier
-            .fillMaxSize()
-            .background(MaterialTheme.colorScheme.surface)
-            .drawBehind {
-                val position = pagerState.currentPage + pagerState.currentPageOffsetFraction
-                val page = floor(position).toInt()
-                drawWorkspaceTheme(
-                    theme = themeAt(page),
-                    next = themeAt(page + 1),
-                    fraction = position - page,
-                    grain = grain,
-                )
-            }
-            .systemBarsPadding()
-            .imePadding(),
-    ) {
-        val activeSelection = selection
-        if (activeSelection == null) {
-            TopBar(interactor, onSearchClick = if (onPrivatePage) newPrivateTab else interactor::onSearchClick)
-        } else if (essentialsDrop != EssentialsDrop.NONE) {
-            EssentialsDropBar(active = essentialsDrop == EssentialsDrop.ACTIVE)
-        } else {
-            SelectionTopBar(
-                count = activeSelection.size,
-                onClose = { selection = null },
-                onSelectAll = {
-                    selection = Selection(
-                        tabIds = tabs.filter { state.workspaceOf(it.id) == currentWorkspace.id && state.pinOf(it.id) == null }
-                            .map { it.id }.toSet(),
-                        pinIds = state.pins.filter { it.workspaceId == currentWorkspace.id && !it.isFolder }
-                            .map { it.id }.toSet(),
+    // Dialogs and menus take on the look of the workspace they open over.
+    CompositionLocalProvider(LocalPopupTheme provides themeAt(pagerState.currentPage)) {
+        // The theme is drawn behind the system bars too, with the content kept clear of them.
+        Column(
+            modifier = modifier
+                .fillMaxSize()
+                .background(MaterialTheme.colorScheme.surface)
+                .drawBehind {
+                    val position = pagerState.currentPage + pagerState.currentPageOffsetFraction
+                    val page = floor(position).toInt()
+                    drawWorkspaceTheme(
+                        theme = themeAt(page),
+                        next = themeAt(page + 1),
+                        fraction = position - page,
+                        grain = grain,
                     )
-                },
-            )
-        }
-
-        if (essentials.isNotEmpty()) {
-            EssentialsGrid(
-                essentials = essentials,
-                tabsById = tabsById,
-                selectedTabId = selectedTabId,
-                containers = containers,
-                selection = activeSelection,
-                isDropTarget = essentialsDrop == EssentialsDrop.ACTIVE,
-                onClick = ::onPinClick,
-                onStartDrag = { pin -> selection = (selection ?: Selection()) + Selection(pinIds = setOf(pin.id)) },
-                onMove = { pinId, index ->
-                    interactor.onMoveEssential(pinId, index)
-                    selection = null
-                },
-                modifier = Modifier.padding(bottom = 4.dp),
-            )
-        }
-
-        HorizontalPager(
-            state = pagerState,
-            userScrollEnabled = activeSelection == null,
-            modifier = Modifier.weight(1f).fillMaxWidth(),
-            key = { state.workspaces.getOrNull(it)?.id ?: PRIVATE_PAGE_KEY },
-        ) { page ->
-            if (page == privateIndex) {
-                PrivateWorkspacePage(
-                    tabs = privateTabs,
-                    selectedTabId = selectedTabId,
-                    onTabClick = { interactor.onTabClick(it.id) },
-                    onCloseTab = { interactor.onCloseTab(it.id) },
-                    onNewTab = interactor::onNewPrivateTab,
-                    onCloseAll = interactor::onClosePrivateTabs,
+                }
+                .systemBarsPadding()
+                .imePadding(),
+        ) {
+            val activeSelection = selection
+            if (activeSelection == null) {
+                TopBar(interactor, onSearchClick = if (onPrivatePage) newPrivateTab else interactor::onSearchClick)
+            } else if (essentialsDrop != EssentialsDrop.NONE) {
+                EssentialsDropBar(active = essentialsDrop == EssentialsDrop.ACTIVE)
+            } else {
+                SelectionTopBar(
+                    count = activeSelection.size,
+                    onClose = { selection = null },
+                    onSelectAll = {
+                        selection = Selection(
+                            tabIds = tabs.filter { state.workspaceOf(it.id) == currentWorkspace.id && state.pinOf(it.id) == null }
+                                .map { it.id }.toSet(),
+                            pinIds = state.pins.filter { it.workspaceId == currentWorkspace.id && !it.isFolder }
+                                .map { it.id }.toSet(),
+                        )
+                    },
                 )
-                return@HorizontalPager
             }
-            val workspace = state.workspaces[page]
-            WorkspacePage(
-                state = state,
-                workspace = workspace,
-                tabs = tabs.filter { state.workspaceOf(it.id) == workspace.id },
-                selectedTabId = selectedTabId,
-                containers = containers,
-                pinnedRowActions = pinnedRowActions,
-                unpinnedRowActions = unpinnedRowActions,
-                folderRowActions = folderRowActions,
-                selection = activeSelection,
-                callbacks = WorkspacePageCallbacks(
-                    onTabClick = { tab ->
-                        val current = selection
-                        if (current != null) selection = current.toggleTab(tab.id).takeIf { it.size > 0 } else interactor.onTabClick(tab.id)
-                    },
-                    onPinClick = ::onPinClick,
-                    onStartDrag = { picked ->
-                        val started = (selection ?: Selection()) + picked
-                        selection = started
-                        started
-                    },
-                    onDrop = { dragged, target ->
-                        interactor.onDrop(workspace.id, dragged, target)
+
+            if (essentials.isNotEmpty()) {
+                EssentialsGrid(
+                    essentials = essentials,
+                    tabsById = tabsById,
+                    selectedTabId = selectedTabId,
+                    containers = containers,
+                    selection = activeSelection,
+                    isDropTarget = essentialsDrop == EssentialsDrop.ACTIVE,
+                    onClick = ::onPinClick,
+                    onStartDrag = { pin -> selection = (selection ?: Selection()) + Selection(pinIds = setOf(pin.id)) },
+                    onMove = { pinId, index ->
+                        interactor.onMoveEssential(pinId, index)
                         selection = null
                     },
-                    onEssentialsDrop = { essentialsDrop = it },
-                    onRowAction = { action, targets -> runAction(action, targets, workspace.id) },
-                    onFolderClick = { folder ->
-                        val current = selection
-                        if (current != null) {
-                            selection = current.toggleFolder(folder.id).takeIf { it.size > 0 }
-                        } else {
-                            interactor.onToggleFolder(folder.id)
-                        }
+                    modifier = Modifier.padding(bottom = 4.dp),
+                )
+            }
+
+            HorizontalPager(
+                state = pagerState,
+                userScrollEnabled = activeSelection == null,
+                modifier = Modifier.weight(1f).fillMaxWidth(),
+                key = { state.workspaces.getOrNull(it)?.id ?: PRIVATE_PAGE_KEY },
+            ) { page ->
+                if (page == privateIndex) {
+                    PrivateWorkspacePage(
+                        tabs = privateTabs,
+                        selectedTabId = selectedTabId,
+                        onTabClick = { interactor.onTabClick(it.id) },
+                        onCloseTab = { interactor.onCloseTab(it.id) },
+                        onNewTab = interactor::onNewPrivateTab,
+                        onCloseAll = interactor::onClosePrivateTabs,
+                    )
+                    return@HorizontalPager
+                }
+                val workspace = state.workspaces[page]
+                WorkspacePage(
+                    state = state,
+                    workspace = workspace,
+                    tabs = tabs.filter { state.workspaceOf(it.id) == workspace.id },
+                    selectedTabId = selectedTabId,
+                    containers = containers,
+                    pinnedRowActions = pinnedRowActions,
+                    unpinnedRowActions = unpinnedRowActions,
+                    folderRowActions = folderRowActions,
+                    selection = activeSelection,
+                    callbacks = WorkspacePageCallbacks(
+                        onTabClick = { tab ->
+                            val current = selection
+                            if (current != null) selection = current.toggleTab(tab.id).takeIf { it.size > 0 } else interactor.onTabClick(tab.id)
+                        },
+                        onPinClick = ::onPinClick,
+                        onStartDrag = { picked ->
+                            val started = (selection ?: Selection()) + picked
+                            selection = started
+                            started
+                        },
+                        onDrop = { dragged, target ->
+                            interactor.onDrop(workspace.id, dragged, target)
+                            selection = null
+                        },
+                        onEssentialsDrop = { essentialsDrop = it },
+                        onRowAction = { action, targets -> runAction(action, targets, workspace.id) },
+                        onFolderClick = { folder ->
+                            val current = selection
+                            if (current != null) {
+                                selection = current.toggleFolder(folder.id).takeIf { it.size > 0 }
+                            } else {
+                                interactor.onToggleFolder(folder.id)
+                            }
+                        },
+                        onNewFolder = { dialog = HomeDialog.NewFolder(workspace.id, parentId = null) },
+                        onNewWorkspace = { dialog = HomeDialog.EditWorkspace(null) },
+                        onEditWorkspace = { dialog = HomeDialog.EditWorkspace(workspace.id) },
+                        onDeleteWorkspace = { dialog = HomeDialog.DeleteWorkspace(workspace.id) },
+                        onMoveWorkspace = { delta -> interactor.onMoveWorkspace(workspace.id, page + delta) },
+                        onNewTabClick = interactor::onSearchClick,
+                        onNewTabInContainer = interactor::onNewTabInContainer,
+                        onNewPrivateTab = newPrivateTab,
+                        onManageContainers = interactor::onManageContainers,
+                        onClearUnpinned = { interactor.onClearUnpinned(workspace.id) },
+                    ),
+                    canDeleteWorkspace = state.workspaces.size > 1,
+                    canMoveLeft = page > 0,
+                    canMoveRight = page < state.workspaces.size - 1,
+                )
+            }
+
+            if (activeSelection == null) {
+                WorkspaceBar(
+                    workspaces = state.workspaces,
+                    containers = containers,
+                    activeIndex = pagerState.currentPage,
+                    hasPrivate = privateIndex != null,
+                    onDotClick = { index ->
+                        interactor.onWorkspaceSelected(state.workspaces[index].id)
+                        scope.launch { pagerState.animateScrollToPage(index) }
                     },
-                    onNewFolder = { dialog = HomeDialog.NewFolder(workspace.id, parentId = null) },
-                    onNewWorkspace = { dialog = HomeDialog.EditWorkspace(null) },
-                    onEditWorkspace = { dialog = HomeDialog.EditWorkspace(workspace.id) },
-                    onDeleteWorkspace = { dialog = HomeDialog.DeleteWorkspace(workspace.id) },
-                    onMoveWorkspace = { delta -> interactor.onMoveWorkspace(workspace.id, page + delta) },
-                    onNewTabClick = interactor::onSearchClick,
-                    onNewTabInContainer = interactor::onNewTabInContainer,
-                    onNewPrivateTab = newPrivateTab,
-                    onManageContainers = interactor::onManageContainers,
-                    onClearUnpinned = { interactor.onClearUnpinned(workspace.id) },
-                ),
-                canDeleteWorkspace = state.workspaces.size > 1,
-                canMoveLeft = page > 0,
-                canMoveRight = page < state.workspaces.size - 1,
-            )
+                    onPrivateClick = { privateIndex?.let { scope.launch { pagerState.animateScrollToPage(it) } } },
+                    onMove = interactor::onMoveWorkspace,
+                    onDownloadsClick = interactor::onDownloadsClick,
+                    onExtensionsClick = interactor::onExtensionsClick,
+                    onBookmarksClick = interactor::onBookmarksClick,
+                    onHistoryClick = interactor::onHistoryClick,
+                )
+            } else {
+                val targets = ActionTargets.of(state, tabs, activeSelection)
+                SelectionBar(
+                    actions = selectionActions.filter { it.appliesTo(targets) },
+                    onAction = { runAction(it, targets, currentWorkspace.id) },
+                )
+            }
         }
 
-        if (activeSelection == null) {
-            WorkspaceBar(
-                workspaces = state.workspaces,
+        dialog?.let { current ->
+            HomeDialogs(
+                dialog = current,
+                state = state,
                 containers = containers,
-                activeIndex = pagerState.currentPage,
-                hasPrivate = privateIndex != null,
-                onDotClick = { index ->
-                    interactor.onWorkspaceSelected(state.workspaces[index].id)
-                    scope.launch { pagerState.animateScrollToPage(index) }
-                },
-                onPrivateClick = { privateIndex?.let { scope.launch { pagerState.animateScrollToPage(it) } } },
-                onMove = interactor::onMoveWorkspace,
-                onDownloadsClick = interactor::onDownloadsClick,
-                onExtensionsClick = interactor::onExtensionsClick,
-                onBookmarksClick = interactor::onBookmarksClick,
-                onHistoryClick = interactor::onHistoryClick,
-            )
-        } else {
-            val targets = ActionTargets.of(state, tabs, activeSelection)
-            SelectionBar(
-                actions = selectionActions.filter { it.appliesTo(targets) },
-                onAction = { runAction(it, targets, currentWorkspace.id) },
+                interactor = interactor,
+                onDismiss = { dialog = null },
             )
         }
-    }
-
-    dialog?.let { current ->
-        HomeDialogs(
-            dialog = current,
-            state = state,
-            containers = containers,
-            interactor = interactor,
-            onDismiss = { dialog = null },
-        )
     }
 }
 

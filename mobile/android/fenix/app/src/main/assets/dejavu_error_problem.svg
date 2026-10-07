@@ -1,0 +1,12 @@
+<!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<!-- Dejavu's problem picture for error pages, made by scripts/dejavu-illustrations.py. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="160" viewBox="0 0 200 160">
+<defs><linearGradient id="g" gradientUnits="userSpaceOnUse" x1="38" y1="34" x2="142" y2="138"><stop offset="0" stop-color="#FFEDC2"/><stop offset="0.55" stop-color="#FFD67A"/><stop offset="1" stop-color="#F2B84B"/></linearGradient></defs>
+<path d="M68,72 a50,50 0 1 0 100,0 a50,50 0 1 0 -100,0 z" fill="#F2B84B" fill-opacity="0.3"/>
+<path d="M38,86 a52,52 0 1 0 104,0 a52,52 0 1 0 -104,0 z" fill="url(#g)" fill-opacity="1"/>
+<path d="M100,40 l38,68 a6,6 0 0 1 -5.2,9 h-65.6 a6,6 0 0 1 -5.2,-9 z" fill="#5A452A" fill-opacity="1"/>
+<path d="M100,66 v20" fill="none" fill-opacity="1" stroke="#FFF8E6" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="1"/>
+<path d="M95.5,101 a4.5,4.5 0 1 0 9.0,0 a4.5,4.5 0 1 0 -9.0,0 z" fill="#FFF8E6" fill-opacity="1"/>
+</svg>

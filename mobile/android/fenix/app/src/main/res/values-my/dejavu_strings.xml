@@ -273,4 +273,18 @@
     <plurals name="dejavu_tabs_closed">
         <item quantity="other">တက်ဗ် %1$d ခု ပိတ်ထားသည်</item>
     </plurals>
+    <string name="dejavu_settings_close_pinned_hint">ပင်ထိုးထားသော တက်ဗ်များနှင့် ဖိုင်တွဲများတွင် ပင်များ ဆက်ရှိနေသောကြောင့် “ပိတ်ရန်” သည် ပွင့်နေသော တက်ဗ်များကို အိပ်စေသည်။ ပင်ထိုးထားသော တက်ဗ်တစ်ခု အိပ်နေပြီဆိုလျှင် “ပိတ်ရန်” သည် ၎င်းကို ပင်ထုတ်သည်။</string>
+    <string name="dejavu_features_title">Dejavu ကို စူးစမ်းပါ</string>
+    <string name="dejavu_features_page">%2$d ထဲမှ %1$d</string>
+    <string name="dejavu_features_next">နောက်တစ်ခု</string>
+    <string name="dejavu_features_skip">ကျော်ရန်</string>
+    <string name="dejavu_feature_sleep">ဖိုင်တွဲတစ်ခုလုံးကို အိပ်စေပါ</string>
+    <string name="dejavu_feature_themes">လုပ်ငန်းခွင်တိုင်းကို ကိုယ်ပိုင်အရောင်များ ပေးပါ</string>
+    <string name="dejavu_feature_swipe_menu">မီနူးဖွင့်ရန် အောက်ခြေဘားကို အပေါ်သို့ ပွတ်ဆွဲပါ</string>
+    <string name="dejavu_feature_actions">မည်သည့် တက်ဗ်ကိုမဆို သင့်အက်ပ်များသို့ ပို့ပါ</string>
+    <string name="dejavu_feature_zen_sync">သင့်လုပ်ငန်းခွင်များကို Zen နှင့် စင့်ခ်ချပါ</string>
+    <string name="dejavu_feature_folders">တက်ဗ်များကို ဖိုင်တွဲထဲ ထည့်ရန် ၎င်းတို့ကို ဖိထားပါ</string>
+    <string name="dejavu_feature_drag">တက်ဗ်များကို ဖိုင်တွဲများနှင့် မရှိမဖြစ်များထဲ ဆွဲထည့်ပါ</string>
+    <string name="dejavu_feature_workspace_order">အစီအစဉ်ပြောင်းရန် လုပ်ငန်းခွင်များကို ဆွဲရွှေ့ပါ</string>
+    <string name="dejavu_feature_split_view">လင့်ခ်ကို မျက်နှာပြင်ခွဲတွင် ဖွင့်ရန် ၎င်းကို ဖိထားပါ</string>
 </resources>

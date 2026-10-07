@@ -280,4 +280,18 @@
         <item quantity="one">%1$d n useksel yemdel</item>
         <item quantity="other">%1$d n iseksal mdelen</item>
     </plurals>
+    <string name="dejavu_settings_close_pinned_hint">Ɣef iseksal yessersen d ikuramen, “Mdel” ad yesṭṭes iseksal yeldin, acku iseksal yessersen ttqimen. Mi ara yeṭṭes useksel yessersen, “Mdel” ad as-yekkes asers.</string>
+    <string name="dejavu_features_title">Issin Dejavu</string>
+    <string name="dejavu_features_page">%1$d seg %2$d</string>
+    <string name="dejavu_features_next">Ɣer zdat</string>
+    <string name="dejavu_features_skip">Zgel</string>
+    <string name="dejavu_feature_sleep">Sṭṭes akaram akkʷ</string>
+    <string name="dejavu_feature_themes">Efk i yal amkan n umahil initen-is</string>
+    <string name="dejavu_feature_swipe_menu">Zuɣer afeggag n wadda ɣer sennig akken ad terẓmeḍ umuɣ</string>
+    <string name="dejavu_feature_actions">Azen kra n useksel ɣer tsensiyin-ik</string>
+    <string name="dejavu_feature_zen_sync">Sdukel imukan n umahil-ik akked Zen</string>
+    <string name="dejavu_feature_folders">Ṭṭef akud ɣezzifen ɣef iseksal akken a ten-tsenkzeḍ ɣer ukaram</string>
+    <string name="dejavu_feature_drag">Zuɣer iseksal ɣer ikuramen d wayen ilaqen</string>
+    <string name="dejavu_feature_workspace_order">Zuɣer imukan n umahil akken ad tbeddleḍ amizzwer-nsen</string>
+    <string name="dejavu_feature_split_view">Ṭṭef akud ɣezzifen ɣef useɣwen akken a t-terẓmeḍ g tmuɣli tabḍant</string>
 </resources>

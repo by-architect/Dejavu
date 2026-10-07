@@ -280,4 +280,18 @@
         <item quantity="one">%1$d llingüeta zarrada</item>
         <item quantity="other">%1$d llingüetes zarraes</item>
     </plurals>
+    <string name="dejavu_settings_close_pinned_hint">Nes llingüetes fixaes y nes carpetes, «Zarrar» pon a dormir les llingüetes abiertes porque les fixaes queden. Cuando una llingüeta fixada yá duerme, «Zarrar» desfíxala.</string>
+    <string name="dejavu_features_title">Descubri Dejavu</string>
+    <string name="dejavu_features_page">%1$d de %2$d</string>
+    <string name="dejavu_features_next">Siguiente</string>
+    <string name="dejavu_features_skip">Saltar</string>
+    <string name="dejavu_feature_sleep">Pon a dormir una carpeta entera</string>
+    <string name="dejavu_feature_themes">Da a cada espaciu de trabayu los sos colores</string>
+    <string name="dejavu_feature_swipe_menu">Esliza p\'arriba la barra d\'abaxo p\'abrir el menú</string>
+    <string name="dejavu_feature_actions">Unvia cualquier llingüeta a les tos aplicaciones</string>
+    <string name="dejavu_feature_zen_sync">Sincroniza los tos espacios de trabayu con Zen</string>
+    <string name="dejavu_feature_folders">Ten primíes les llingüetes pa meteles nuna carpeta</string>
+    <string name="dejavu_feature_drag">Arrastra llingüetes a carpetes y a los esenciales</string>
+    <string name="dejavu_feature_workspace_order">Arrastra los espacios de trabayu pa reordenalos</string>
+    <string name="dejavu_feature_split_view">Ten primíu un enllaz p\'abrilu na vista estremada</string>
 </resources>

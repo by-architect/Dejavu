@@ -273,4 +273,18 @@
     <plurals name="dejavu_tabs_closed">
         <item quantity="other">%1$d tab katutup</item>
     </plurals>
+    <string name="dejavu_settings_close_pinned_hint">Dina tab nu disemat jeung map, Tutup ngajadikeun tab nu kabuka saré, sabab tab nu disemat tetep aya. Lamun tab nu disemat geus saré, Tutup bakal ngalésotkeunana.</string>
+    <string name="dejavu_features_title">Singraykeun Dejavu</string>
+    <string name="dejavu_features_page">%1$d tina %2$d</string>
+    <string name="dejavu_features_next">Saterusna</string>
+    <string name="dejavu_features_skip">Liwat</string>
+    <string name="dejavu_feature_sleep">Sarékeun hiji map sagemblengna</string>
+    <string name="dejavu_feature_themes">Béré unggal rohangan warna sorangan</string>
+    <string name="dejavu_feature_swipe_menu">Usapkeun bar handap ka luhur pikeun muka menu</string>
+    <string name="dejavu_feature_actions">Kirim tab mana waé ka aplikasi anjeun</string>
+    <string name="dejavu_feature_zen_sync">Singkronkeun rohangan anjeun jeung Zen</string>
+    <string name="dejavu_feature_folders">Long-press tab pikeun nempatkeunana dina map</string>
+    <string name="dejavu_feature_drag">Sérétkeun tab kana map jeung Penting</string>
+    <string name="dejavu_feature_workspace_order">Sérétkeun rohangan pikeun ngarobah urutanana</string>
+    <string name="dejavu_feature_split_view">Long-press tutumbu pikeun mukana dina split view</string>
 </resources>

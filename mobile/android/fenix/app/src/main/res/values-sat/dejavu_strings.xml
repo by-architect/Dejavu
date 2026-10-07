@@ -287,4 +287,18 @@
         <item quantity="two">%1$d ᱴᱮᱵᱽ ᱵᱚᱸᱫ ᱦᱩᱭ ᱮᱱᱟ</item>
         <item quantity="other">%1$d ᱴᱮᱵᱽ ᱵᱚᱸᱫ ᱦᱩᱭ ᱮᱱᱟ</item>
     </plurals>
+    <string name="dejavu_settings_close_pinned_hint">ᱯᱤᱱ ᱴᱮᱵᱽ ᱠᱚ ᱟᱨ ᱯᱷᱚᱞᱰᱚᱨ ᱠᱚ ᱨᱮ «ᱵᱚᱸᱫᱚᱭ ᱢᱮ» ᱡᱷᱤᱡᱽ ᱴᱮᱵᱽ ᱠᱚ ᱥᱞᱤᱯ ᱮ ᱫᱟᱣᱟᱭ, ᱪᱮᱫᱟᱜ ᱥᱮ ᱯᱤᱱ ᱠᱚ ᱛᱟᱦᱮᱸᱱᱟ᱾ ᱡᱚᱦᱚᱜ ᱯᱤᱱ ᱴᱮᱵᱽ ᱥᱞᱤᱯ ᱨᱮ ᱛᱟᱦᱮᱸ, «ᱵᱚᱸᱫᱚᱭ ᱢᱮ» ᱯᱤᱱ ᱮ ᱚᱰᱚᱠᱟ᱾</string>
+    <string name="dejavu_features_title">Dejavu ᱧᱮᱞ ᱢᱮ</string>
+    <string name="dejavu_features_page">%1$d ᱠᱷᱚᱱ %2$d</string>
+    <string name="dejavu_features_next">ᱤᱱᱟᱹ ᱛᱟᱭᱚᱢ</string>
+    <string name="dejavu_features_skip">ᱟᱲᱟᱜ ᱢᱮ</string>
+    <string name="dejavu_feature_sleep">ᱡᱚᱛᱚ ᱯᱷᱚᱞᱰᱚᱨ ᱥᱞᱤᱯ ᱢᱮ</string>
+    <string name="dejavu_feature_themes">ᱡᱚᱛᱚ ᱣᱟᱨᱠᱥᱯᱮᱥ ᱨᱮ ᱟᱡᱟᱜ ᱨᱚᱝ ᱮᱢ ᱢᱮ</string>
+    <string name="dejavu_feature_swipe_menu">ᱢᱮᱱᱩ ᱡᱷᱤᱡᱽ ᱞᱟᱹᱜᱤᱫ ᱞᱟᱛᱟᱨ ᱵᱟᱨ ᱪᱮᱛᱟᱱ ᱥᱣᱟᱭᱤᱯ ᱢᱮ</string>
+    <string name="dejavu_feature_actions">ᱡᱟᱦᱟᱱ ᱴᱮᱵᱽ ᱟᱢᱟᱜ ᱮᱯ ᱠᱚ ᱛᱮ ᱵᱷᱮᱡᱟᱭ ᱢᱮ</string>
+    <string name="dejavu_feature_zen_sync">ᱟᱢᱟᱜ ᱣᱟᱨᱠᱥᱯᱮᱥ ᱠᱚ Zen ᱢᱮᱫ ᱛᱮ ᱥᱤᱝᱠ ᱢᱮ</string>
+    <string name="dejavu_feature_folders">ᱴᱮᱵᱽ ᱠᱚ ᱯᱷᱚᱞᱰᱚᱨ ᱨᱮ ᱫᱚᱦᱚ ᱞᱟᱹᱜᱤᱫ ᱚᱛᱟ ᱟᱨ ᱥᱟᱵ ᱢᱮ</string>
+    <string name="dejavu_feature_drag">ᱴᱮᱵᱽ ᱠᱚ ᱯᱷᱚᱞᱰᱚᱨ ᱠᱚ ᱟᱨ ᱮᱥᱮᱱᱥᱤᱭᱟᱞ ᱠᱚ ᱨᱮ ᱚᱨ ᱢᱮ</string>
+    <string name="dejavu_feature_workspace_order">ᱛᱷᱟᱨ ᱵᱚᱫᱚᱞ ᱞᱟᱹᱜᱤᱫ ᱣᱟᱨᱠᱥᱯᱮᱥ ᱠᱚ ᱚᱨ ᱢᱮ</string>
+    <string name="dejavu_feature_split_view">ᱥᱯᱞᱤᱴ ᱣᱤᱭᱩ ᱨᱮ ᱡᱷᱤᱡᱽ ᱞᱟᱹᱜᱤᱫ ᱞᱤᱝᱠ ᱚᱛᱟ ᱟᱨ ᱥᱟᱵ ᱢᱮ</string>
 </resources>

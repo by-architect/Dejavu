@@ -280,4 +280,18 @@
         <item quantity="one">පටිති %1$d ක් වසන ලදී</item>
         <item quantity="other">පටිති %1$d ක් වසන ලදී</item>
     </plurals>
+    <string name="dejavu_settings_close_pinned_hint">අමුණන ලද පටිති රැඳී පවතින බැවින්, අමුණන ලද පටිති සහ ෆෝල්ඩර මත ඇති වසන්න බොත්තම විවෘත පටිති නිදි කරයි. අමුණන ලද පටිත්තක් නිදා ගත් පසු, වසන්න බොත්තම එය ගළවයි.</string>
+    <string name="dejavu_features_title">Dejavu සොයාගන්න</string>
+    <string name="dejavu_features_page">%2$d න් %1$d</string>
+    <string name="dejavu_features_next">ඊළඟ</string>
+    <string name="dejavu_features_skip">මඟහරින්න</string>
+    <string name="dejavu_feature_sleep">සම්පූර්ණ ෆෝල්ඩරයක්ම නිදි කරන්න</string>
+    <string name="dejavu_feature_themes">සෑම අවකාශයකටම තමන්ගේම වර්ණ දෙන්න</string>
+    <string name="dejavu_feature_swipe_menu">මෙනුව විවෘත කිරීමට පහළ තීරුව ඉහළට අදින්න</string>
+    <string name="dejavu_feature_actions">ඕනෑම පටිත්තක් ඔබේ යෙදුම්වලට යවන්න</string>
+    <string name="dejavu_feature_zen_sync">ඔබේ අවකාශ Zen සමඟ සමමුහුර්ත කරන්න</string>
+    <string name="dejavu_feature_folders">පටිති ෆෝල්ඩරයකට දැමීමට ඒවා දිගු ඔබන්න</string>
+    <string name="dejavu_feature_drag">පටිති ෆෝල්ඩරවලට සහ අත්‍යවශ්‍යයන්ට අදින්න</string>
+    <string name="dejavu_feature_workspace_order">පිළිවෙළ වෙනස් කිරීමට අවකාශ අදින්න</string>
+    <string name="dejavu_feature_split_view">සබැඳියක් බෙදුම් දසුනක විවෘත කිරීමට එය දිගු ඔබන්න</string>
 </resources>

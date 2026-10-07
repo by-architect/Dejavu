@@ -213,18 +213,24 @@ fun RowAction.appliesTo(targets: ActionTargets): Boolean = when (this) {
 }
 
 /**
- * The buttons of one tab row: the user's choice, where Close becomes Unpin on a pinned tab that is closed, without
- * the actions that do nothing for this tab.
+ * The buttons of one row: the user's choice, without the actions that do nothing for it. Closing cannot take away a
+ * pinned tab or a folder, so on their rows Close puts their tabs to sleep, and once a pinned tab sleeps or is closed,
+ * Close unpins it. [isPinned] is for the rows of pinned tabs and folders.
  */
 fun rowActions(configured: List<RowAction>, targets: ActionTargets, isPinned: Boolean): List<RowAction> =
     configured
-        .map {
-            val closesClosedPin = it is RowAction.BuiltIn && it.action == TabAction.CLOSE && isPinned &&
-                targets.openTabs.isEmpty()
-            if (closesClosedPin) RowAction.BuiltIn(TabAction.UNPIN) else it
-        }
+        .mapNotNull { if (isPinned && it == CloseAction) pinnedClose(targets) else it }
         .distinctBy { it.key }
         .filter { it.appliesTo(targets) }
+
+private val CloseAction = RowAction.BuiltIn(TabAction.CLOSE)
+
+/** What Close does on the row of a pinned tab or a folder: sleep while a tab is awake, then unpin a pinned tab. */
+private fun pinnedClose(targets: ActionTargets): RowAction? = when {
+    targets.awakeTabs.isNotEmpty() -> RowAction.BuiltIn(TabAction.SLEEP)
+    targets.folders.isEmpty() -> RowAction.BuiltIn(TabAction.UNPIN)
+    else -> null
+}
 
 /** Folder that a new folder grouping [targets] goes in: their common parent, while it can hold one more level. */
 fun WorkspaceState.newFolderParent(targets: ActionTargets): String? =

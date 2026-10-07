@@ -280,4 +280,18 @@
         <item quantity="one">%1$d varaq yopildi</item>
         <item quantity="other">%1$d varaq yopildi</item>
     </plurals>
+    <string name="dejavu_settings_close_pinned_hint">Mahkamlangan varaqlar va jildlarda «Yopish» ochiq varaqlarni uxlatadi, chunki mahkamlangan varaqlar o\'z joyida qoladi. Mahkamlangan varaq uxlab qolgach, «Yopish» uning mahkamlashini bekor qiladi.</string>
+    <string name="dejavu_features_title">Dejavu bilan tanishing</string>
+    <string name="dejavu_features_page">%1$d / %2$d</string>
+    <string name="dejavu_features_next">Keyingi</string>
+    <string name="dejavu_features_skip">O\'tkazib yuborish</string>
+    <string name="dejavu_feature_sleep">Butun jildni uxlating</string>
+    <string name="dejavu_feature_themes">Har bir ish maydoniga o\'z ranglarini bering</string>
+    <string name="dejavu_feature_swipe_menu">Menyuni ochish uchun pastki panelni yuqoriga suring</string>
+    <string name="dejavu_feature_actions">Istalgan varaqni ilovalaringizga yuboring</string>
+    <string name="dejavu_feature_zen_sync">Ish maydonlaringizni Zen bilan sinxronlashtiring</string>
+    <string name="dejavu_feature_folders">Varaqlarni jildga solish uchun ularni bosib turing</string>
+    <string name="dejavu_feature_drag">Varaqlarni jildlarga va muhimlarga sudrang</string>
+    <string name="dejavu_feature_workspace_order">Tartibini o\'zgartirish uchun ish maydonlarini sudrang</string>
+    <string name="dejavu_feature_split_view">Havolani bo\'lingan ko\'rinishda ochish uchun uni bosib turing</string>
 </resources>

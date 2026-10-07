@@ -42,6 +42,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.CompositionLocalProvider
 import androidx.compose.runtime.ReadOnlyComposable
 import androidx.compose.runtime.SideEffect
+import androidx.compose.runtime.compositionLocalOf
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
@@ -59,6 +60,9 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.window.Dialog
 import androidx.compose.ui.window.DialogProperties
 import androidx.compose.ui.window.DialogWindowProvider
+import org.mozilla.fenix.dejavu.home.drawWorkspaceTheme
+import org.mozilla.fenix.dejavu.home.rememberGrainBrush
+import org.mozilla.fenix.dejavu.workspaces.WorkspaceTheme
 
 /**
  * Dejavu's look for dialogs and menus: a warm card lit by a little gold from its top corner, like the logo, with a
@@ -86,11 +90,28 @@ object DejavuPopup {
         get() = MaterialTheme.colorScheme.primary.copy(alpha = GLOW_ALPHA)
 }
 
-/** Paints [DejavuPopup]'s light, which fades out from the top start corner, behind the content. */
+/**
+ * The theme of the workspace that dialogs and menus open over, so they take on its colors. Screens that show a
+ * workspace provide it; without one, popups keep their plain fill.
+ */
+val LocalPopupTheme = compositionLocalOf<WorkspaceTheme?> { null }
+
+/**
+ * Paints [DejavuPopup]'s light, which fades out from the top start corner, behind the content, over the colors of
+ * [LocalPopupTheme]'s workspace, a little lighter than the workspace so the text stays easy to read.
+ */
 @Composable
 fun Modifier.popupGlow(): Modifier {
     val glow = DejavuPopup.glowColor
+    val grain = rememberGrainBrush()
+    val tint = LocalPopupTheme.current?.let { theme ->
+        theme.copy(
+            opacity = (theme.opacity * TINT_STRENGTH).coerceAtMost(MAX_TINT),
+            texture = theme.texture * TINT_STRENGTH,
+        )
+    }
     return drawBehind {
+        tint?.let { drawWorkspaceTheme(it, next = null, fraction = 0f, grain = grain) }
         drawRect(
             Brush.radialGradient(
                 colors = listOf(glow, Color.Transparent),
@@ -288,6 +309,8 @@ fun DejavuMenuDivider() {
 private const val EDGE_ALPHA = 0.1f
 private const val GLOW_ALPHA = 0.14f
 private const val GLOW_REACH = 0.9f
+private const val TINT_STRENGTH = 0.8f
+private const val MAX_TINT = 0.45f
 private val DIALOG_MARGIN = 24.dp
 private val DIALOG_MAX_WIDTH = 560.dp
 private val DIALOG_PADDING = 24.dp

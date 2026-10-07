@@ -280,4 +280,18 @@
         <item quantity="one">%1$d tabbere fermée</item>
         <item quantity="other">%1$d tabbe fermées</item>
     </plurals>
+    <string name="dejavu_settings_close_pinned_hint">Sur les tabbe épinglées et les dossiers, « Uddu » met en veille les tabbe ouvertes, car elles restent épinglées. Une fois qu\'une tabbere épinglée est en veille, « Uddu » la désépingle.</string>
+    <string name="dejavu_features_title">Découvrir Dejavu</string>
+    <string name="dejavu_features_page">%1$d sur %2$d</string>
+    <string name="dejavu_features_next">Yeeso</string>
+    <string name="dejavu_features_skip">Passer</string>
+    <string name="dejavu_feature_sleep">Mets tout un dossier en veille</string>
+    <string name="dejavu_feature_themes">Donne à chaque espace de travail ses propres couleurs</string>
+    <string name="dejavu_feature_swipe_menu">Fais glisser la barre du bas vers le haut pour ouvrir le menu</string>
+    <string name="dejavu_feature_actions">Envoie n\'importe quelle tabbere vers tes jaaɓnirgal</string>
+    <string name="dejavu_feature_zen_sync">Synchronise tes espaces de travail avec Zen</string>
+    <string name="dejavu_feature_folders">Appuie longuement sur des tabbe pour les mettre dans un dossier</string>
+    <string name="dejavu_feature_drag">Fais glisser des tabbe dans les dossiers et les essentiels</string>
+    <string name="dejavu_feature_workspace_order">Fais glisser les espaces de travail pour les réorganiser</string>
+    <string name="dejavu_feature_split_view">Appuie longuement sur un lien pour l\'ouvrir en vue partagée</string>
 </resources>

@@ -273,4 +273,18 @@
     <plurals name="dejavu_tabs_closed">
         <item quantity="other">ປິດແລ້ວ %1$d ແທັບ</item>
     </plurals>
+    <string name="dejavu_settings_close_pinned_hint">ໃນແທັບທີ່ປັກໄວ້ ແລະ ໂຟນເດີ, “ປິດ” ຈະໃຫ້ແທັບທີ່ເປີດຢູ່ພັກ ເພາະການປັກຍັງຄົງຢູ່. ເມື່ອແທັບທີ່ປັກໄວ້ພັກແລ້ວ, “ປິດ” ຈະເອົາປັກອອກ.</string>
+    <string name="dejavu_features_title">ຄົ້ນພົບ Dejavu</string>
+    <string name="dejavu_features_page">%1$d ຈາກ %2$d</string>
+    <string name="dejavu_features_next">ຕໍ່ໄປ</string>
+    <string name="dejavu_features_skip">ຂ້າມ</string>
+    <string name="dejavu_feature_sleep">ໃຫ້ທັງໂຟນເດີພັກ</string>
+    <string name="dejavu_feature_themes">ໃຫ້ແຕ່ລະພື້ນທີ່ເຮັດວຽກມີສີຂອງຕົນເອງ</string>
+    <string name="dejavu_feature_swipe_menu">ປັດແຖບລຸ່ມຂຶ້ນເພື່ອເປີດເມນູ</string>
+    <string name="dejavu_feature_actions">ສົ່ງແທັບໃດກໍໄດ້ໄປຫາ App ຂອງທ່ານ</string>
+    <string name="dejavu_feature_zen_sync">ຊິງຄ໌ພື້ນທີ່ເຮັດວຽກຂອງທ່ານກັບ Zen</string>
+    <string name="dejavu_feature_folders">ກົດຄ້າງແທັບເພື່ອໃສ່ພວກມັນໃນໂຟນເດີ</string>
+    <string name="dejavu_feature_drag">ລາກແທັບໄປໃສ່ໂຟນເດີ ແລະ ສິ່ງສຳຄັນ</string>
+    <string name="dejavu_feature_workspace_order">ລາກພື້ນທີ່ເຮັດວຽກເພື່ອຈັດລຳດັບໃຫມ່</string>
+    <string name="dejavu_feature_split_view">ກົດຄ້າງລິ້ງເພື່ອເປີດໃນມູມມອງແບບແຍກ</string>
 </resources>

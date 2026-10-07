@@ -280,4 +280,18 @@
         <item quantity="one">%1$d tabblad gesloten</item>
         <item quantity="other">%1$d tabbladen gesloten</item>
     </plurals>
+    <string name="dejavu_settings_close_pinned_hint">Bij vastgemaakte tabbladen en mappen zet “Sluiten” de geopende tabbladen in slaapstand, omdat ze vastgemaakt blijven. Staat een vastgemaakt tabblad al in slaapstand, dan maakt “Sluiten” het los.</string>
+    <string name="dejavu_features_title">Ontdek Dejavu</string>
+    <string name="dejavu_features_page">%1$d van %2$d</string>
+    <string name="dejavu_features_next">Volgende</string>
+    <string name="dejavu_features_skip">Overslaan</string>
+    <string name="dejavu_feature_sleep">Zet een hele map in slaapstand</string>
+    <string name="dejavu_feature_themes">Geef elke werkruimte eigen kleuren</string>
+    <string name="dejavu_feature_swipe_menu">Veeg de onderste balk omhoog om het menu te openen</string>
+    <string name="dejavu_feature_actions">Stuur elk tabblad naar je apps</string>
+    <string name="dejavu_feature_zen_sync">Synchroniseer je werkruimtes met Zen</string>
+    <string name="dejavu_feature_folders">Druk lang op tabbladen om ze in een map te zetten</string>
+    <string name="dejavu_feature_drag">Sleep tabbladen naar mappen en favorieten</string>
+    <string name="dejavu_feature_workspace_order">Sleep werkruimtes om de volgorde te wijzigen</string>
+    <string name="dejavu_feature_split_view">Druk lang op een link om deze in gesplitste weergave te openen</string>
 </resources>

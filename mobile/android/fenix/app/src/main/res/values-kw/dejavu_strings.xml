@@ -308,4 +308,18 @@
         <item quantity="many">%1$d tab yw degeys</item>
         <item quantity="other">%1$d tabow yns degeys</item>
     </plurals>
+    <string name="dejavu_settings_close_pinned_hint">War dabow fastyes ha plegellow, \'Degea\' a worr an tabow igor dhe goska, rag an tabow fastyes a drig. Pan vo tab fastyes ow koska, \'Degea\' a\'n difastya.</string>
+    <string name="dejavu_features_title">Diskudha Dejavu</string>
+    <string name="dejavu_features_page">%1$d a %2$d</string>
+    <string name="dejavu_features_next">Nessa</string>
+    <string name="dejavu_features_skip">Lamma dres</string>
+    <string name="dejavu_feature_sleep">Gorra plegell dien dhe goska</string>
+    <string name="dejavu_feature_themes">Ro dhe bub tyller-ober y liwyow y honan</string>
+    <string name="dejavu_feature_swipe_menu">Skubel an barr a-woeles yn ban rag igeri an roll</string>
+    <string name="dejavu_feature_actions">Dannvon tab vyth dhe\'th app\'ow</string>
+    <string name="dejavu_feature_zen_sync">Kesunya dha dyleryow-ober gans Zen</string>
+    <string name="dejavu_feature_folders">Gwaska yn hir war dabow rag aga gorra yn plegell</string>
+    <string name="dejavu_feature_drag">Tenna tabow dhe blegellow ha dhe\'n Pythow Poesek</string>
+    <string name="dejavu_feature_workspace_order">Tenna tyleryow-ober rag chanjya aga aray</string>
+    <string name="dejavu_feature_split_view">Gwaska yn hir war gevren rag hy igeri yn gwel rannek</string>
 </resources>

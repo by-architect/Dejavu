@@ -294,4 +294,18 @@
         <item quantity="many">Zawarto %1$d kart</item>
         <item quantity="other">Zawarto %1$d karty</item>
     </plurals>
+    <string name="dejavu_settings_close_pinned_hint">Na przipiyntych kartach i foldrach knefel Zawrzij usypio ôdewrzite karty, bo przipiynte karty ôstajōm. Jak przipiynto karta już śpi, Zawrzij jōm ôdepnie.</string>
+    <string name="dejavu_features_title">Ôdkryj Dejavu</string>
+    <string name="dejavu_features_page">%1$d z %2$d</string>
+    <string name="dejavu_features_next">Dalij</string>
+    <string name="dejavu_features_skip">Pomiń</string>
+    <string name="dejavu_feature_sleep">Uśpij cołki folder</string>
+    <string name="dejavu_feature_themes">Dej kożdymu placowi włosne farby</string>
+    <string name="dejavu_feature_swipe_menu">Przeciōng dolny posek w gōra, coby ôdewrzić meni</string>
+    <string name="dejavu_feature_actions">Poślij dowolno karta do twojich aplikacyji</string>
+    <string name="dejavu_feature_zen_sync">Synchronizuj twoje place z Zen</string>
+    <string name="dejavu_feature_folders">Przitrzim długo karty, coby je wrazić do foldra</string>
+    <string name="dejavu_feature_drag">Przeciōng karty do foldrōw i nojważniejszych</string>
+    <string name="dejavu_feature_workspace_order">Przeciōng place, coby zmiynić jejich porzōndek</string>
+    <string name="dejavu_feature_split_view">Przitrzim długo link, coby go ôdewrzić w podzielōnym widoku</string>
 </resources>

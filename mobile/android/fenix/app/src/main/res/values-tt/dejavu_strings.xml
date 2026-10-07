@@ -280,4 +280,18 @@
         <item quantity="one">%1$d таб ябылды</item>
         <item quantity="other">%1$d таб ябылды</item>
     </plurals>
+    <string name="dejavu_settings_close_pinned_hint">Беркетелгән табларда һәм папкаларда «Ябу» ачык табларны йокыга җибәрә, чөнки беркетелгән таблар кала. Беркетелгән таб йоклагач, «Ябу» аны беркетүдән чыгара.</string>
+    <string name="dejavu_features_title">Dejavu белән танышыгыз</string>
+    <string name="dejavu_features_page">%1$d / %2$d</string>
+    <string name="dejavu_features_next">Алга</string>
+    <string name="dejavu_features_skip">Калдырып тору</string>
+    <string name="dejavu_feature_sleep">Бөтен папканы йокыга җибәрегез</string>
+    <string name="dejavu_feature_themes">Һәр эш өлкәсенә үз төсләрен бирегез</string>
+    <string name="dejavu_feature_swipe_menu">Менюны ачу өчен аскы панельне өскә шудырыгыз</string>
+    <string name="dejavu_feature_actions">Теләсә кайсы табны кушымталарыгызга җибәрегез</string>
+    <string name="dejavu_feature_zen_sync">Эш өлкәләрегезне Zen белән синхронлаштырыгыз</string>
+    <string name="dejavu_feature_folders">Табларны папкага салу өчен аларны басып торыгыз</string>
+    <string name="dejavu_feature_drag">Табларны папкаларга һәм төп сайтларга тартып күчерегез</string>
+    <string name="dejavu_feature_workspace_order">Тәртибен үзгәртү өчен эш өлкәләрен тартып күчерегез</string>
+    <string name="dejavu_feature_split_view">Сылтаманы бүленгән күренештә ачу өчен аны басып торыгыз</string>
 </resources>

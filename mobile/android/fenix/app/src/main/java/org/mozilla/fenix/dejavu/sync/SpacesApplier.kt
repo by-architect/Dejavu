@@ -9,6 +9,7 @@ import org.mozilla.fenix.dejavu.workspaces.PinKind
 import org.mozilla.fenix.dejavu.workspaces.PinnedItem
 import org.mozilla.fenix.dejavu.workspaces.Workspace
 import org.mozilla.fenix.dejavu.workspaces.WorkspaceState
+import org.mozilla.fenix.dejavu.workspaces.WorkspaceTheme
 
 /**
  * The outcome of applying incoming records.
@@ -90,6 +91,9 @@ internal class SpacesApplier(
         private val failed = mutableListOf<SpacesRecord>()
         private val incomingIds = incoming.map { it.id }.toSet()
 
+        /** Pinned tabs and folders that this batch added, or moved to another place. */
+        private val arrivals = mutableSetOf<String>()
+
         private val splitMembers: Map<String, List<String>> =
             (server.values + incoming)
                 .filter { !it.deleted && it.kind == RecordKind.SPLIT }
@@ -170,7 +174,8 @@ internal class SpacesApplier(
         private fun dropPristineWorkspace(created: List<String>, layout: SpacesRecord?) {
             if (!firstSync || created.isEmpty() || original.workspaces.size != 1) return
             val initial = original.workspaces.single()
-            val pristine = initial.name == defaultName && initial.icon == null && initial.theme == null &&
+            val pristine = initial.name == defaultName && initial.icon == null &&
+                (initial.theme == null || initial.theme == WorkspaceTheme.Gold) &&
                 initial.containerId == null && pins.none { it.workspaceId == initial.id }
             if (!pristine || initial.id in created) return
             val target = layout?.data?.strings("spaces")?.firstOrNull { it in created } ?: created.first()
@@ -201,6 +206,7 @@ internal class SpacesApplier(
                     createdAt = now,
                     updatedAt = now,
                 )
+                arrivals += record.id
                 return Outcome.APPLIED
             }
             val current = pins[index]
@@ -209,6 +215,7 @@ internal class SpacesApplier(
             if (updated != current) {
                 pins[index] = updated.copy(updatedAt = now)
                 if (current.workspaceId != workspaceId) moveNested(record.id, workspaceId)
+                if (current.workspaceId != workspaceId || current.parentId != parent?.id) arrivals += record.id
             }
             return Outcome.APPLIED
         }
@@ -247,6 +254,7 @@ internal class SpacesApplier(
                     tabTitles.remove(tabId)
                     workspaceId?.let { assignments[tabId] = it }
                 }
+                arrivals += record.id
                 return Outcome.APPLIED
             }
             val pinnedPageChanged = url != existing.url
@@ -268,6 +276,9 @@ internal class SpacesApplier(
                 if (tabId != null && workspaceId != null && workspaceId != existing.workspaceId) {
                     assignments[tabId] = workspaceId
                 }
+                val moved = essential != existing.essential || workspaceId != existing.workspaceId ||
+                    parentId != existing.parentId
+                if (moved) arrivals += record.id
             }
             return Outcome.APPLIED
         }
@@ -394,7 +405,12 @@ internal class SpacesApplier(
             if (activeId == id) activeId = target
         }
 
-        /** Orders the children of the applied spaces and folders, then the spaces and essentials of the layout. */
+        /**
+         * Orders the children of the applied spaces and folders, then the spaces and essentials of the layout. Pinned
+         * tabs and folders that arrived without the record ordering their place, like a tab Zen already listed in the
+         * layout while its page had not loaded and its own record came later, go where the last known order of that
+         * place puts them, instead of at its end.
+         */
         private fun applyOrder(spaces: List<SpacesRecord>, folders: List<SpacesRecord>, layout: SpacesRecord?) {
             spaces.filter { it in applied }.forEach { reorderChildren(it.id, null, it.data?.strings("children")) }
             folders.filter { it in applied }.forEach { record ->
@@ -406,16 +422,28 @@ internal class SpacesApplier(
                 applyLayout(it.data)
                 applied += it
             }
+
+            val ordered = (spaces + folders).filter { it in applied }.map { it.id }.toSet()
+            val moved = pins.filter { it.id in arrivals }
+            val places = moved.filterNot { it.essential }.mapNotNull { pin -> pin.workspaceId?.let { it to parentOf(pin) } }
+            places.distinct().forEach { (workspaceId, parentId) ->
+                val placeId = parentId ?: workspaceId
+                val children = server[placeId]?.data?.strings("children")?.takeIf { placeId !in ordered }
+                    ?: return@forEach
+                placeArrivalsIn(childSlots(workspaceId, parentId), children.flatMap { splitMembers[it] ?: listOf(it) })
+            }
+            if (layout == null && moved.any { it.essential }) {
+                val groups = server[LAYOUT_RECORD_ID]?.data?.optJSONObject("essentials") ?: return
+                for (key in groups.keys()) {
+                    groups.strings(key)?.let { order -> placeArrivalsIn(essentialSlots(key), order) }
+                }
+            }
         }
 
         private fun reorderChildren(workspaceId: String, parentId: String?, children: List<String>?) {
             if (children.isNullOrEmpty()) return
             val desired = children.flatMap { splitMembers[it] ?: listOf(it) }
-            val slots = pins.indices.filter { index ->
-                val pin = pins[index]
-                !pin.essential && pin.workspaceId == workspaceId && parentOf(pin) == parentId
-            }
-            reorderSlots(slots, desired)
+            reorderSlots(childSlots(workspaceId, parentId), desired)
         }
 
         private fun applyLayout(data: JSONObject?) {
@@ -429,16 +457,30 @@ internal class SpacesApplier(
             val groups = data.optJSONObject("essentials") ?: return
             for (key in groups.keys()) {
                 val order = groups.strings(key) ?: continue
-                val slots = pins.indices.filter { index ->
-                    pins[index].essential && essentialsKey(pins[index].containerId) == key
-                }
-                reorderSlots(slots, order)
+                reorderSlots(essentialSlots(key), order)
             }
         }
 
-        private fun reorderSlots(slots: List<Int>, desired: List<String>) {
+        /** Places in [pins] of the children of [parentId] in [workspaceId], or of its top level for `null`. */
+        private fun childSlots(workspaceId: String, parentId: String?): List<Int> = pins.indices.filter { index ->
+            val pin = pins[index]
+            !pin.essential && pin.workspaceId == workspaceId && parentOf(pin) == parentId
+        }
+
+        /** Places in [pins] of the essentials of the layout's group [key]. */
+        private fun essentialSlots(key: String): List<Int> = pins.indices.filter { index ->
+            pins[index].essential && essentialsKey(pins[index].containerId) == key
+        }
+
+        private fun reorderSlots(slots: List<Int>, desired: List<String>) = rearrange(slots) { reorder(it, desired) }
+
+        private fun placeArrivalsIn(slots: List<Int>, desired: List<String>) =
+            rearrange(slots) { placeArrivals(it, desired, arrivals) }
+
+        /** Puts the items at [slots] of [pins] in the order [order] gives their ids. */
+        private fun rearrange(slots: List<Int>, order: (List<String>) -> List<String>) {
             val current = slots.map { pins[it] }
-            val ids = reorder(current.map { it.id }, desired)
+            val ids = order(current.map { it.id })
             if (ids == current.map { it.id }) return
             val byId = current.associateBy { it.id }
             slots.forEachIndexed { position, slot -> pins[slot] = byId.getValue(ids[position]) }

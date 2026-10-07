@@ -280,4 +280,18 @@
         <item quantity="one">%1$d بەتكۈچ تاقالدى</item>
         <item quantity="other">%1$d بەتكۈچ تاقالدى</item>
     </plurals>
+    <string name="dejavu_settings_close_pinned_hint">مىخلانغان بەتكۈچ ۋە قىسقۇچلاردا «ياپ» ئوچۇق بەتكۈچلەرنى ئۇخلىتىدۇ، چۈنكى مىخلانغان بەتكۈچلەر ساقلىنىپ قالىدۇ. مىخلانغان بەتكۈچ ئۇخلىغاندىن كېيىن، «ياپ» ئۇنى مىخلاشتىن چىقىرىدۇ.</string>
+    <string name="dejavu_features_title">Dejavu نى بايقاڭ</string>
+    <string name="dejavu_features_page">%1$d/%2$d</string>
+    <string name="dejavu_features_next">كېيىنكى</string>
+    <string name="dejavu_features_skip">ئاتلا</string>
+    <string name="dejavu_feature_sleep">پۈتۈن قىسقۇچنى ئۇخلىتىڭ</string>
+    <string name="dejavu_feature_themes">ھەر بىر خىزمەت دائىرىسىگە ئۆز رەڭلىرىنى بېرىڭ</string>
+    <string name="dejavu_feature_swipe_menu">تىزىملىكنى ئېچىش ئۈچۈن ئاستىدىكى بالداقنى ئۈستىگە سۈرۈڭ</string>
+    <string name="dejavu_feature_actions">خالىغان بەتكۈچنى ئەپلىرىڭىزگە ئەۋەتىڭ</string>
+    <string name="dejavu_feature_zen_sync">خىزمەت دائىرىلىرىڭىزنى Zen بىلەن قەدەمداشلاڭ</string>
+    <string name="dejavu_feature_folders">بەتكۈچلەرنى قىسقۇچقا سېلىش ئۈچۈن ئۇلارنى بېسىپ تۇرۇڭ</string>
+    <string name="dejavu_feature_drag">بەتكۈچلەرنى قىسقۇچلارغا ۋە مۇھىملارغا سۆرەڭ</string>
+    <string name="dejavu_feature_workspace_order">تەرتىپىنى ئۆزگەرتىش ئۈچۈن خىزمەت دائىرىلىرىنى سۆرەڭ</string>
+    <string name="dejavu_feature_split_view">ئۇلانمىنى بۆلۈنگەن كۆرۈنۈشتە ئېچىش ئۈچۈن ئۇنى بېسىپ تۇرۇڭ</string>
 </resources>

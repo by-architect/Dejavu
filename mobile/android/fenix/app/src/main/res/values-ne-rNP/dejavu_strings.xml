@@ -280,4 +280,18 @@
         <item quantity="one">%1$d ट्याब बन्द भयो</item>
         <item quantity="other">%1$d ट्याबहरु बन्द भयो</item>
     </plurals>
+    <string name="dejavu_settings_close_pinned_hint">पिन गरिएका ट्याबहरु र फोल्डरहरुमा, पिनहरु रहिरहने भएकाले “बन्द गर्नुहोस्” ले खुला ट्याबहरुलाई स्लीपमा राख्छ। पिन गरिएको ट्याब स्लीपमा गएपछि, “बन्द गर्नुहोस्” ले यसको पिन हटाउँछ।</string>
+    <string name="dejavu_features_title">Dejavu बारे जान्नुहोस्</string>
+    <string name="dejavu_features_page">%2$d मध्ये %1$d</string>
+    <string name="dejavu_features_next">अर्को</string>
+    <string name="dejavu_features_skip">स्किप गर्नुहोस्</string>
+    <string name="dejavu_feature_sleep">पूरै फोल्डरलाई स्लीपमा राख्नुहोस्</string>
+    <string name="dejavu_feature_themes">हरेक कार्यक्षेत्रलाई आफ्नै रङ दिनुहोस्</string>
+    <string name="dejavu_feature_swipe_menu">मेनु खोल्न तलको पट्टीलाई माथि स्वाइप गर्नुहोस्</string>
+    <string name="dejavu_feature_actions">कुनै पनि ट्याब आफ्ना एपहरुमा पठाउनुहोस्</string>
+    <string name="dejavu_feature_zen_sync">आफ्ना कार्यक्षेत्रहरु Zen सँग सिंक गर्नुहोस्</string>
+    <string name="dejavu_feature_folders">ट्याबहरुलाई फोल्डरमा राख्न तिनलाई लामो थिच्नुहोस्</string>
+    <string name="dejavu_feature_drag">ट्याबहरुलाई फोल्डर र आवश्यकमा तान्नुहोस्</string>
+    <string name="dejavu_feature_workspace_order">क्रम बदल्न कार्यक्षेत्रहरु तान्नुहोस्</string>
+    <string name="dejavu_feature_split_view">लिङ्कलाई विभाजित दृश्यमा खोल्न त्यसलाई लामो थिच्नुहोस्</string>
 </resources>

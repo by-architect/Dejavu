@@ -304,7 +304,7 @@ internal fun WorkspacePage(
                         childCount = state.pins.count { it.parentId == item.id },
                         openTabCount = if (item.collapsed) state.openTabsIn(item.id, awakeTabIds) else 0,
                         selection = selection?.let { item.id in it.folderIds },
-                        actions = folderRowActions.filter { it.appliesTo(targets) },
+                        actions = rowActions(folderRowActions, targets, isPinned = true),
                         onAction = { callbacks.onRowAction(it, targets) },
                         onClick = { if (drag == null) callbacks.onFolderClick(item) },
                         modifier = rowModifier,

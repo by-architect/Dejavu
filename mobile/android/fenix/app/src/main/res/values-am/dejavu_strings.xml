@@ -280,4 +280,18 @@
     <string name="dejavu_startup_crash_body">%1$sን ሲከፍቱ ችግር አጋጥሟል። ማሰስዎን ለመቀጠል እንደገና ይክፈቱት።</string>
     <string name="dejavu_sync_normal_tabs">ያልተሰኩ ትሮችን አካትት</string>
     <string name="dejavu_sync_normal_tabs_summary">እንዲሁም እያንዳንዱ የስራ ቦታ ውስጥ ያሉ ሌሎች ትሮችን ያመሳስላል፤ የተሰኩ ትሮችን እና አቃፊዎችን ብቻ ሳይሆን። የራሱ «ያልተሰኩ ትሮችን አካትት» የሚለው አማራጭ በሚበራበት ጊዜ Zen እነሱን ያመሳስላል።</string>
+    <string name="dejavu_settings_close_pinned_hint">በተሰኩ ትሮች እና አቃፊዎች ላይ፣ ስኩዎቹ ስለሚቆዩ «ዝጋ» ክፍት ትሮችን ያስተኛል። የተሰካ ትር አስቀድሞ ሲተኛ «ዝጋ» ይነቅለዋል።</string>
+    <string name="dejavu_features_title">Dejavuን ያስሱ</string>
+    <string name="dejavu_features_page">%1$d ከ%2$d</string>
+    <string name="dejavu_features_next">ቀጣይ</string>
+    <string name="dejavu_features_skip">ዝለል</string>
+    <string name="dejavu_feature_sleep">ሙሉ አቃፊን አስተኛ</string>
+    <string name="dejavu_feature_themes">ለእያንዳንዱ የስራ ቦታ የራሱን ቀለሞች ይስጡ</string>
+    <string name="dejavu_feature_swipe_menu">ምናሌውን ለመክፈት የታችኛውን አሞሌ ወደ ላይ ያንሸራትቱ</string>
+    <string name="dejavu_feature_actions">ማንኛውንም ትር ወደ መተግበሪያዎችዎ ይላኩ</string>
+    <string name="dejavu_feature_zen_sync">የስራ ቦታዎችዎን ከZen ጋር ያመሳስሉ</string>
+    <string name="dejavu_feature_folders">ትሮችን በአቃፊ ውስጥ ለማስገባት ተጭነው ይያዙ</string>
+    <string name="dejavu_feature_drag">ትሮችን ወደ አቃፊዎች እና አስፈላጊዎች ይጎትቱ</string>
+    <string name="dejavu_feature_workspace_order">ቅደም ተከተላቸውን ለመቀየር የስራ ቦታዎችን ይጎትቱ</string>
+    <string name="dejavu_feature_split_view">አገናኝን በተከፈለ እይታ ለመክፈት ተጭነው ይያዙ</string>
 </resources>

@@ -280,4 +280,18 @@
         <item quantity="one">%1$d lap bezárva</item>
         <item quantity="other">%1$d lap bezárva</item>
     </plurals>
+    <string name="dejavu_settings_close_pinned_hint">A kitűzött lapokon és mappákon a Bezárás elaltatja a nyitott lapokat, mivel azok kitűzve maradnak. Ha egy kitűzött lap már alszik, a Bezárás megszünteti a kitűzését.</string>
+    <string name="dejavu_features_title">Fedezze fel a Dejavut</string>
+    <string name="dejavu_features_page">%1$d/%2$d</string>
+    <string name="dejavu_features_next">Tovább</string>
+    <string name="dejavu_features_skip">Kihagyás</string>
+    <string name="dejavu_feature_sleep">Altasson el egy teljes mappát</string>
+    <string name="dejavu_feature_themes">Adjon minden munkaterületnek saját színeket</string>
+    <string name="dejavu_feature_swipe_menu">Húzza felfelé az alsó sávot a menü megnyitásához</string>
+    <string name="dejavu_feature_actions">Küldjön bármely lapot az alkalmazásaiba</string>
+    <string name="dejavu_feature_zen_sync">Szinkronizálja munkaterületeit a Zennel</string>
+    <string name="dejavu_feature_folders">Nyomja hosszan a lapokat, hogy mappába tegye őket</string>
+    <string name="dejavu_feature_drag">Húzza a lapokat mappákba és a kedvencek közé</string>
+    <string name="dejavu_feature_workspace_order">Rendezze át a munkaterületeket húzással</string>
+    <string name="dejavu_feature_split_view">Nyomjon hosszan egy hivatkozást, hogy osztott nézetben nyissa meg</string>
 </resources>

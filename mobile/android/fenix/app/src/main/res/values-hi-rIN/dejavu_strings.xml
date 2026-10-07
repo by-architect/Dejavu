@@ -313,4 +313,18 @@
     <string name="dejavu_startup_crash_body">%1$s खोलने में कुछ गड़बड़ी आई। ब्राउज़िंग जारी रखने के लिए इसे फिर से खोलें।</string>
     <string name="dejavu_sync_normal_tabs">पिन न किए गए टैब शामिल करें</string>
     <string name="dejavu_sync_normal_tabs_summary">यह हर वर्कस्पेस के दूसरे टैब को भी सिंक करता है, न कि सिर्फ़ पिन किए गए टैब और फ़ोल्डर को। जब Zen का अपना पिन न किए गए टैब शामिल करें विकल्प चालू होता है, तो वह उन्हें सिंक करता है।</string>
+    <string name="dejavu_settings_close_pinned_hint">पिन किए गए टैब और फ़ोल्डर पर, “बंद करें” खुले टैब को स्लीप मोड में डाल देता है, क्योंकि वे पिन किए हुए ही रहते हैं। जब कोई पिन किया गया टैब स्लीप मोड में हो, तो “बंद करें” उसे अनपिन कर देता है।</string>
+    <string name="dejavu_features_title">Dejavu को जानें</string>
+    <string name="dejavu_features_page">%2$d में से %1$d</string>
+    <string name="dejavu_features_next">अगला</string>
+    <string name="dejavu_features_skip">छोड़ें</string>
+    <string name="dejavu_feature_sleep">पूरे फ़ोल्डर को स्लीप मोड में डालें</string>
+    <string name="dejavu_feature_themes">हर वर्कस्पेस को उसके अपने कलर दें</string>
+    <string name="dejavu_feature_swipe_menu">मेन्यू खोलने के लिए नीचे वाले बार को ऊपर स्वाइप करें</string>
+    <string name="dejavu_feature_actions">कोई भी टैब अपने ऐप में भेजें</string>
+    <string name="dejavu_feature_zen_sync">अपने वर्कस्पेस को Zen के साथ सिंक करें</string>
+    <string name="dejavu_feature_folders">टैब को फ़ोल्डर में रखने के लिए उन्हें टच करके रखें</string>
+    <string name="dejavu_feature_drag">टैब को फ़ोल्डर और एसेंशियल्स में खींचें</string>
+    <string name="dejavu_feature_workspace_order">वर्कस्पेस का क्रम बदलने के लिए उन्हें खींचें</string>
+    <string name="dejavu_feature_split_view">किसी लिंक को स्प्लिट व्यू में खोलने के लिए उसे टच करके रखें</string>
 </resources>

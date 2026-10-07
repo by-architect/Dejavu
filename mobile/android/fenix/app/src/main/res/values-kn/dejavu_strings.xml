@@ -280,4 +280,18 @@
         <item quantity="one">%1$d ಟ್ಯಾಬ್ ಮುಚ್ಚಲಾಗಿದೆ</item>
         <item quantity="other">%1$d ಟ್ಯಾಬ್‌ಗಳು ಮುಚ್ಚಲಾಗಿವೆ</item>
     </plurals>
+    <string name="dejavu_settings_close_pinned_hint">ಪಿನ್ ಮಾಡಿದ ಟ್ಯಾಬ್‌ಗಳು ಮತ್ತು ಫೋಲ್ಡರ್‌ಗಳಲ್ಲಿ, ಪಿನ್‌ಗಳು ಉಳಿಯುವುದರಿಂದ “ಮುಚ್ಚು” ತೆರೆದಿರುವ ಟ್ಯಾಬ್‌ಗಳನ್ನು ಸ್ಲೀಪ್ ಮಾಡುತ್ತದೆ. ಪಿನ್ ಮಾಡಿದ ಟ್ಯಾಬ್ ಸ್ಲೀಪ್ ಆದ ನಂತರ, “ಮುಚ್ಚು” ಅದರ ಪಿನ್ ತೆಗೆಯುತ್ತದೆ.</string>
+    <string name="dejavu_features_title">Dejavu ಅನ್ನು ಅನ್ವೇಷಿಸಿ</string>
+    <string name="dejavu_features_page">%2$d ರಲ್ಲಿ %1$d</string>
+    <string name="dejavu_features_next">ಮುಂದೆ</string>
+    <string name="dejavu_features_skip">ಸ್ಕಿಪ್ ಮಾಡಿ</string>
+    <string name="dejavu_feature_sleep">ಇಡೀ ಫೋಲ್ಡರ್ ಅನ್ನು ಸ್ಲೀಪ್ ಮಾಡಿ</string>
+    <string name="dejavu_feature_themes">ಪ್ರತಿ ಕಾರ್ಯಕ್ಷೇತ್ರಕ್ಕೂ ತನ್ನದೇ ಬಣ್ಣಗಳನ್ನು ಕೊಡಿ</string>
+    <string name="dejavu_feature_swipe_menu">ಮೆನು ತೆರೆಯಲು ಕೆಳಗಿನ ಪಟ್ಟಿಯನ್ನು ಮೇಲಕ್ಕೆ ಸ್ವೈಪ್ ಮಾಡಿ</string>
+    <string name="dejavu_feature_actions">ಯಾವುದೇ ಟ್ಯಾಬ್ ಅನ್ನು ನಿಮ್ಮ ಅನ್ವಯಿಕಗಳಿಗೆ ಕಳುಹಿಸಿ</string>
+    <string name="dejavu_feature_zen_sync">ನಿಮ್ಮ ಕಾರ್ಯಕ್ಷೇತ್ರಗಳನ್ನು Zen ಜೊತೆ ಸಿಂಕ್ ಮಾಡಿ</string>
+    <string name="dejavu_feature_folders">ಟ್ಯಾಬ್‌ಗಳನ್ನು ಫೋಲ್ಡರ್‌ಗೆ ಹಾಕಲು ಅವುಗಳನ್ನು ಒತ್ತಿಹಿಡಿಯಿರಿ</string>
+    <string name="dejavu_feature_drag">ಟ್ಯಾಬ್‌ಗಳನ್ನು ಫೋಲ್ಡರ್‌ಗಳು ಮತ್ತು ಅಗತ್ಯವಾದವುಗಳಿಗೆ ಎಳೆಯಿರಿ</string>
+    <string name="dejavu_feature_workspace_order">ಕ್ರಮವನ್ನು ಬದಲಿಸಲು ಕಾರ್ಯಕ್ಷೇತ್ರಗಳನ್ನು ಎಳೆಯಿರಿ</string>
+    <string name="dejavu_feature_split_view">ಲಿಂಕ್ ಅನ್ನು ವಿಭಜಿತ ನೋಟದಲ್ಲಿ ತೆರೆಯಲು ಅದನ್ನು ಒತ್ತಿಹಿಡಿಯಿರಿ</string>
 </resources>

@@ -294,4 +294,18 @@
         <item quantity="few">%1$d rejtariki su zacynjone</item>
         <item quantity="other">%1$d rejtarikow jo zacynjonych</item>
     </plurals>
+    <string name="dejavu_settings_close_pinned_hint">Pśi pśipětych rejtarikach a zarědnikach „Zacyniś“ wócynjone rejtariki spaś pósćelo, dokulaž pśipěśe wóstanjo. Gaž pśipěty rejtarik južo spi, „Zacyniś“ jen wótpěnjo.</string>
+    <string name="dejavu_features_title">Dejavu wótkšyś</string>
+    <string name="dejavu_features_page">%1$d z %2$d</string>
+    <string name="dejavu_features_next">Dalej</string>
+    <string name="dejavu_features_skip">Pśeskócyś</string>
+    <string name="dejavu_feature_sleep">Ceły zarědnik spaś pósłaś</string>
+    <string name="dejavu_feature_themes">Kuždemu źěłowemu rumoju swójske barwy daś</string>
+    <string name="dejavu_feature_swipe_menu">Dolnu lejstwu górjej pótegnuś, aby meni wócynił</string>
+    <string name="dejavu_feature_actions">Kuždy rejtarik do swójich nałožeńow pósłaś</string>
+    <string name="dejavu_feature_zen_sync">Swóje źěłowe rumy ze Zen synchronizěrowaś</string>
+    <string name="dejavu_feature_folders">Rejtariki źaržaś, aby je do zarědnika złožył</string>
+    <string name="dejavu_feature_drag">Rejtariki do zarědnikow a k nejwažnjejšym śěgnuś</string>
+    <string name="dejavu_feature_workspace_order">Źěłowe rumy śěgnuś, aby jich pórěd změnił</string>
+    <string name="dejavu_feature_split_view">Wótkaz źaržaś, aby jen w źělonem naglěźe wócynił</string>
 </resources>

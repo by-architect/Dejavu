@@ -280,4 +280,18 @@
         <item quantity="one">%1$d scheda claudite</item>
         <item quantity="other">%1$d schedas claudite</item>
     </plurals>
+    <string name="dejavu_settings_close_pinned_hint">Sur schedas fixate e dossiers, ‘Clauder’ addormi le schedas aperte, perque illos resta fixate. Quando un scheda fixate ja dormi, ‘Clauder’ lo defixa.</string>
+    <string name="dejavu_features_title">Discoperi Dejavu</string>
+    <string name="dejavu_features_page">%1$d de %2$d</string>
+    <string name="dejavu_features_next">Sequente</string>
+    <string name="dejavu_features_skip">Saltar</string>
+    <string name="dejavu_feature_sleep">Addormi un dossier integre</string>
+    <string name="dejavu_feature_themes">Da a cata spatio de labor su proprie colores</string>
+    <string name="dejavu_feature_swipe_menu">Glissa le barra inferior verso alto pro aperir le menu</string>
+    <string name="dejavu_feature_actions">Invia qualcunque scheda a tu apps</string>
+    <string name="dejavu_feature_zen_sync">Synchronisa tu spatios de labor con Zen</string>
+    <string name="dejavu_feature_folders">Preme longemente sur schedas pro mitter los in un dossier</string>
+    <string name="dejavu_feature_drag">Trahe schedas in dossiers e essentiales</string>
+    <string name="dejavu_feature_workspace_order">Trahe spatios de labor pro reordinar los</string>
+    <string name="dejavu_feature_split_view">Preme longemente sur un ligamine pro aperir lo in vista divise</string>
 </resources>

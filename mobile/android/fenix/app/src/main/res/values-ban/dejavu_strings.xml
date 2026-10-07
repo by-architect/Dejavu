@@ -273,4 +273,18 @@
     <plurals name="dejavu_tabs_closed">
         <item quantity="other">%1$d tab katutup</item>
     </plurals>
+    <string name="dejavu_settings_close_pinned_hint">Ring tab kasemat miwah map, Tutup ngaenang tab sane mabukak pules, santukan semat-semat nenten ical. Yening tab kasemat sampun pules, Tutup ngelepasang ipun.</string>
+    <string name="dejavu_features_title">Kenalin Dejavu</string>
+    <string name="dejavu_features_page">%1$d saking %2$d</string>
+    <string name="dejavu_features_next">Selanturnyane</string>
+    <string name="dejavu_features_skip">Lewatin</string>
+    <string name="dejavu_feature_sleep">Pulesang map sane jangkep</string>
+    <string name="dejavu_feature_themes">Baang suang-suang genah warna padidi</string>
+    <string name="dejavu_feature_swipe_menu">Usap bar beten ka duur anggen ngungkab menu</string>
+    <string name="dejavu_feature_actions">Kirim tab napi ja ka aplikasi ragane</string>
+    <string name="dejavu_feature_zen_sync">Sinkronang genah ragane sareng Zen</string>
+    <string name="dejavu_feature_folders">Tekan tur tegakang tab anggen ngranjing ka map</string>
+    <string name="dejavu_feature_drag">Seret tab ka map miwah Penting</string>
+    <string name="dejavu_feature_workspace_order">Seret genah anggen ngewah urutan</string>
+    <string name="dejavu_feature_split_view">Tekan tur tegakang link anggen ngungkab ring split view</string>
 </resources>

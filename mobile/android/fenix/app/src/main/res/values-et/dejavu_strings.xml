@@ -280,4 +280,18 @@
         <item quantity="one">%1$d kaart suletud</item>
         <item quantity="other">%1$d kaarti suletud</item>
     </plurals>
+    <string name="dejavu_settings_close_pinned_hint">Kinnitatud kaartidel ja kaustadel uinutab „Sulge” avatud kaardid, sest need jäävad kinnitatuks. Kui kinnitatud kaart on juba uinunud, eemaldab „Sulge” selle kinnituse.</string>
+    <string name="dejavu_features_title">Avasta Dejavu</string>
+    <string name="dejavu_features_page">%1$d / %2$d</string>
+    <string name="dejavu_features_next">Edasi</string>
+    <string name="dejavu_features_skip">Jäta vahele</string>
+    <string name="dejavu_feature_sleep">Uinuta terve kaust</string>
+    <string name="dejavu_feature_themes">Anna igale tööruumile oma värvid</string>
+    <string name="dejavu_feature_swipe_menu">Libista alumine riba üles, et menüü avada</string>
+    <string name="dejavu_feature_actions">Saada mis tahes kaart oma äppidesse</string>
+    <string name="dejavu_feature_zen_sync">Sünkrooni oma tööruumid Zeniga</string>
+    <string name="dejavu_feature_folders">Vajuta kaarte pikalt, et need kausta panna</string>
+    <string name="dejavu_feature_drag">Lohista kaardid kaustadesse ja olulistesse</string>
+    <string name="dejavu_feature_workspace_order">Lohista tööruume, et nende järjekorda muuta</string>
+    <string name="dejavu_feature_split_view">Vajuta linki pikalt, et see jagatud vaates avada</string>
 </resources>

@@ -273,4 +273,18 @@
     <plurals name="dejavu_tabs_closed">
         <item quantity="other">A pa táàbù %1$d dé</item>
     </plurals>
+    <string name="dejavu_settings_close_pinned_hint">Lórí àwọn táàbù tí a fi Pin sí àti fódà, bọ́tìnnì Pa á dé máa ń mú àwọn táàbù tí ó ṣí sùn, nítorí pé àwọn táàbù tí a fi Pin sí kì í lọ. Nígbà tí táàbù tí a fi Pin sí bá ti ń sùn, Pa á dé yóò yọ Pin rẹ̀ kúrò.</string>
+    <string name="dejavu_features_title">Ṣàwárí Dejavu</string>
+    <string name="dejavu_features_page">%1$d nínú %2$d</string>
+    <string name="dejavu_features_next">Èyí tó kàn</string>
+    <string name="dejavu_features_skip">Fò ó</string>
+    <string name="dejavu_feature_sleep">Mú gbogbo fódà kan sùn</string>
+    <string name="dejavu_feature_themes">Fún ibi-iṣẹ́ kọ̀ọ̀kan ní àwọ̀ tirẹ̀</string>
+    <string name="dejavu_feature_swipe_menu">Fa ọ̀pá ìsàlẹ̀ sókè láti ṣí menu</string>
+    <string name="dejavu_feature_actions">Fi táàbù èyíkéyìí ránṣẹ́ sí àwọn áàpù rẹ</string>
+    <string name="dejavu_feature_zen_sync">Ṣe sync àwọn ibi-iṣẹ́ rẹ pẹ̀lú Zen</string>
+    <string name="dejavu_feature_folders">Tẹ àwọn táàbù mọ́ra láti fi wọ́n sínú fódà</string>
+    <string name="dejavu_feature_drag">Fa àwọn táàbù sínú fódà àti àwọn Pàtàkì</string>
+    <string name="dejavu_feature_workspace_order">Fa àwọn ibi-iṣẹ́ láti tún ètò wọn ṣe</string>
+    <string name="dejavu_feature_split_view">Tẹ líǹkì mọ́ra láti ṣí i nínú split view</string>
 </resources>

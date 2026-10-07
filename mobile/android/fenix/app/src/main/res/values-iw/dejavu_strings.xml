@@ -287,4 +287,18 @@
         <item quantity="two">%1$d לשוניות נסגרו</item>
         <item quantity="other">%1$d לשוניות נסגרו</item>
     </plurals>
+    <string name="dejavu_settings_close_pinned_hint">על לשוניות מוצמדות ועל תיקיות, “סגירה” מרדימה את הלשוניות הפתוחות, כי הן נשארות מוצמדות. כשלשונית מוצמדת כבר רדומה, “סגירה” מבטלת את ההצמדה שלה.</string>
+    <string name="dejavu_features_title">גלו את Dejavu</string>
+    <string name="dejavu_features_page">%1$d מתוך %2$d</string>
+    <string name="dejavu_features_next">הבא</string>
+    <string name="dejavu_features_skip">דילוג</string>
+    <string name="dejavu_feature_sleep">הרדימו תיקייה שלמה</string>
+    <string name="dejavu_feature_themes">תנו לכל מרחב עבודה צבעים משלו</string>
+    <string name="dejavu_feature_swipe_menu">החליקו את הסרגל התחתון למעלה כדי לפתוח את התפריט</string>
+    <string name="dejavu_feature_actions">שלחו כל לשונית לאפליקציות שלכם</string>
+    <string name="dejavu_feature_zen_sync">סנכרנו את מרחבי העבודה שלכם עם Zen</string>
+    <string name="dejavu_feature_folders">לחצו לחיצה ארוכה על לשוניות כדי להכניס אותן לתיקייה</string>
+    <string name="dejavu_feature_drag">גררו לשוניות לתיקיות ולמועדפים</string>
+    <string name="dejavu_feature_workspace_order">גררו מרחבי עבודה כדי לשנות את הסדר שלהם</string>
+    <string name="dejavu_feature_split_view">לחצו לחיצה ארוכה על קישור כדי לפתוח אותו בתצוגה מפוצלת</string>
 </resources>

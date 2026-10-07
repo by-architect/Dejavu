@@ -280,4 +280,18 @@
         <item quantity="one">%1$d абларҭа ирку</item>
         <item quantity="other">%1$d абларҭа ирку</item>
     </plurals>
+    <string name="dejavu_settings_close_pinned_hint">Ификсациатә абларҭақәеи апапкақәеи рҟны «Аркра» иаарту абларҭақәа ааныжьуеит, афиксациақәа ааныжьхоит азы. Ификсациатә абларҭа ааныжьхар, «Аркра» афиксациа анахуеит.</string>
+    <string name="dejavu_features_title">Dejavu аҭҵаара</string>
+    <string name="dejavu_features_page">%1$d / %2$d</string>
+    <string name="dejavu_features_next">Анаҩстәи</string>
+    <string name="dejavu_features_skip">Аиасра</string>
+    <string name="dejavu_feature_sleep">Апапка зегь ааныжьра</string>
+    <string name="dejavu_feature_themes">Аҭыԥ хәыҷ-хәыҷла иара иҷыдоу аԥштәқәа</string>
+    <string name="dejavu_feature_swipe_menu">Аменю аартразы ҵаҟатәи апанель хыхь ахь иҵыхтәуп</string>
+    <string name="dejavu_feature_actions">Абларҭа ахархәагақәа рахь адәықәҵара</string>
+    <string name="dejavu_feature_zen_sync">Аҭыԥқәа Zen ала асинхронизация</string>
+    <string name="dejavu_feature_folders">Абларҭақәа апапка ахь рыҭаразы иҟәыӡбаланы иҟаҵа</string>
+    <string name="dejavu_feature_drag">Абларҭақәа апапкақәеи иҵакыу сайтқәеи рахь иҵыхтәуп</string>
+    <string name="dejavu_feature_workspace_order">Аҭыԥқәа рырхынҳәразы иҵыхтәуп</string>
+    <string name="dejavu_feature_split_view">Азхьарԥш еихшаз аԥшра аҟны аартразы иҟәыӡбаланы иҟаҵа</string>
 </resources>

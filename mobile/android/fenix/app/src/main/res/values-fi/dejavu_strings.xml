@@ -280,4 +280,18 @@
         <item quantity="one">%1$d välilehti suljettu</item>
         <item quantity="other">%1$d välilehteä suljettu</item>
     </plurals>
+    <string name="dejavu_settings_close_pinned_hint">Kiinnitetyissä välilehdissä ja kansioissa Sulje-painike siirtää avoimet välilehdet lepotilaan, koska ne pysyvät kiinnitettyinä. Kun kiinnitetty välilehti on jo lepotilassa, Sulje-painike irrottaa sen kiinnityksen.</string>
+    <string name="dejavu_features_title">Tutustu Dejavuun</string>
+    <string name="dejavu_features_page">%1$d/%2$d</string>
+    <string name="dejavu_features_next">Seuraava</string>
+    <string name="dejavu_features_skip">Ohita</string>
+    <string name="dejavu_feature_sleep">Siirrä koko kansio lepotilaan</string>
+    <string name="dejavu_feature_themes">Anna jokaiselle työtilalle omat värit</string>
+    <string name="dejavu_feature_swipe_menu">Avaa valikko pyyhkäisemällä alapalkkia ylös</string>
+    <string name="dejavu_feature_actions">Lähetä mikä tahansa välilehti sovelluksiisi</string>
+    <string name="dejavu_feature_zen_sync">Synkronoi työtilasi Zenin kanssa</string>
+    <string name="dejavu_feature_folders">Siirrä välilehtiä kansioon painamalla niitä pitkään</string>
+    <string name="dejavu_feature_drag">Vedä välilehtiä kansioihin ja suosikkeihin</string>
+    <string name="dejavu_feature_workspace_order">Vaihda työtilojen järjestystä vetämällä niitä</string>
+    <string name="dejavu_feature_split_view">Avaa linkki jaetussa näkymässä painamalla sitä pitkään</string>
 </resources>

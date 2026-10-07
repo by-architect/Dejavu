@@ -280,4 +280,18 @@
         <item quantity="one">%1$d Tab geschlossen</item>
         <item quantity="other">%1$d Tabs geschlossen</item>
     </plurals>
+    <string name="dejavu_settings_close_pinned_hint">Bei angehefteten Tabs und Ordnern legt „Schließen“ die offenen Tabs schlafen, da sie angeheftet bleiben. Schläft ein angehefteter Tab bereits, löst „Schließen“ ihn.</string>
+    <string name="dejavu_features_title">Dejavu entdecken</string>
+    <string name="dejavu_features_page">%1$d von %2$d</string>
+    <string name="dejavu_features_next">Weiter</string>
+    <string name="dejavu_features_skip">Überspringen</string>
+    <string name="dejavu_feature_sleep">Einen ganzen Ordner schlafen legen</string>
+    <string name="dejavu_feature_themes">Jedem Arbeitsbereich eigene Farben geben</string>
+    <string name="dejavu_feature_swipe_menu">Untere Leiste nach oben wischen, um das Menü zu öffnen</string>
+    <string name="dejavu_feature_actions">Jeden Tab an deine Apps senden</string>
+    <string name="dejavu_feature_zen_sync">Deine Arbeitsbereiche mit Zen synchronisieren</string>
+    <string name="dejavu_feature_folders">Tabs gedrückt halten, um sie in einen Ordner zu legen</string>
+    <string name="dejavu_feature_drag">Tabs in Ordner und Favoriten ziehen</string>
+    <string name="dejavu_feature_workspace_order">Arbeitsbereiche ziehen, um sie neu anzuordnen</string>
+    <string name="dejavu_feature_split_view">Link gedrückt halten, um ihn in der geteilten Ansicht zu öffnen</string>
 </resources>

@@ -301,4 +301,18 @@
         <item quantity="many">Dúnadh %1$d gcluaisín</item>
         <item quantity="other">Dúnadh %1$d cluaisín</item>
     </plurals>
+    <string name="dejavu_settings_close_pinned_hint">Ar chluaisíní greamaithe agus ar fhillteáin, cuireann ‘Dún’ na cluaisíní oscailte a chodladh, toisc go bhfanann siad greamaithe. Nuair atá cluaisín greamaithe ina chodladh cheana féin, díghreamaíonn ‘Dún’ é.</string>
+    <string name="dejavu_features_title">Cuir aithne ar Dejavu</string>
+    <string name="dejavu_features_page">%1$d as %2$d</string>
+    <string name="dejavu_features_next">Ar aghaidh</string>
+    <string name="dejavu_features_skip">Scipeáil</string>
+    <string name="dejavu_feature_sleep">Cuir fillteán iomlán a chodladh</string>
+    <string name="dejavu_feature_themes">Tabhair a dhathanna féin do gach spás oibre</string>
+    <string name="dejavu_feature_swipe_menu">Svaidhpeáil an barra íochtair suas chun an roghchlár a oscailt</string>
+    <string name="dejavu_feature_actions">Seol aon chluaisín chuig d’aipeanna</string>
+    <string name="dejavu_feature_zen_sync">Sioncronaigh do spásanna oibre le Zen</string>
+    <string name="dejavu_feature_folders">Brúigh go fada ar chluaisíní chun iad a chur i bhfillteán</string>
+    <string name="dejavu_feature_drag">Tarraing cluaisíní isteach i bhfillteáin agus sna riachtanais</string>
+    <string name="dejavu_feature_workspace_order">Tarraing spásanna oibre chun iad a athordú</string>
+    <string name="dejavu_feature_split_view">Brúigh go fada ar nasc chun é a oscailt in amharc scoilte</string>
 </resources>

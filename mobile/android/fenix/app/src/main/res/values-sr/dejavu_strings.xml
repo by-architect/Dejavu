@@ -287,4 +287,18 @@
         <item quantity="few">%1$d језичка затворено</item>
         <item quantity="other">%1$d језичака затворено</item>
     </plurals>
+    <string name="dejavu_settings_close_pinned_hint">На закаченим језичцима и фасциклама дугме Затвори успављује отворене језичке, јер закачени језичци остају. Ако закачени језичак већ спава, дугме Затвори ће га откачити.</string>
+    <string name="dejavu_features_title">Откријте Dejavu</string>
+    <string name="dejavu_features_page">%1$d од %2$d</string>
+    <string name="dejavu_features_next">Даље</string>
+    <string name="dejavu_features_skip">Прескочи</string>
+    <string name="dejavu_feature_sleep">Успавајте целу фасциклу</string>
+    <string name="dejavu_feature_themes">Дајте сваком радном простору сопствене боје</string>
+    <string name="dejavu_feature_swipe_menu">Превуците доњу траку нагоре да отворите мени</string>
+    <string name="dejavu_feature_actions">Пошаљите било који језичак у своје апликације</string>
+    <string name="dejavu_feature_zen_sync">Синхронизујте радне просторе са Zen-ом</string>
+    <string name="dejavu_feature_folders">Дуго притисните језичке да их ставите у фасциклу</string>
+    <string name="dejavu_feature_drag">Превуците језичке у фасцикле и Фаворите</string>
+    <string name="dejavu_feature_workspace_order">Превуците радне просторе да промените њихов редослед</string>
+    <string name="dejavu_feature_split_view">Дуго притисните везу да је отворите у подељеном приказу</string>
 </resources>

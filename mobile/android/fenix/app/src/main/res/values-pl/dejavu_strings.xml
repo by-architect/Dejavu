@@ -294,4 +294,18 @@
         <item quantity="many">Zamknięto %1$d kart</item>
         <item quantity="other">Zamknięto %1$d karty</item>
     </plurals>
+    <string name="dejavu_settings_close_pinned_hint">Na przypiętych kartach i folderach „Zamknij” usypia otwarte karty, ponieważ przypięcia pozostają. Gdy przypięta karta jest już uśpiona, „Zamknij” ją odpina.</string>
+    <string name="dejavu_features_title">Odkryj Dejavu</string>
+    <string name="dejavu_features_page">%1$d z %2$d</string>
+    <string name="dejavu_features_next">Dalej</string>
+    <string name="dejavu_features_skip">Pomiń</string>
+    <string name="dejavu_feature_sleep">Uśpij cały folder</string>
+    <string name="dejavu_feature_themes">Nadaj każdemu obszarowi roboczemu własne kolory</string>
+    <string name="dejavu_feature_swipe_menu">Przeciągnij dolny pasek w górę, aby otworzyć menu</string>
+    <string name="dejavu_feature_actions">Wysyłaj dowolną kartę do swoich aplikacji</string>
+    <string name="dejavu_feature_zen_sync">Synchronizuj obszary robocze z Zen</string>
+    <string name="dejavu_feature_folders">Przytrzymaj karty, aby umieścić je w folderze</string>
+    <string name="dejavu_feature_drag">Przeciągaj karty do folderów i ulubionych</string>
+    <string name="dejavu_feature_workspace_order">Przeciągaj obszary robocze, aby zmienić ich kolejność</string>
+    <string name="dejavu_feature_split_view">Przytrzymaj odnośnik, aby otworzyć go w widoku podzielonym</string>
 </resources>

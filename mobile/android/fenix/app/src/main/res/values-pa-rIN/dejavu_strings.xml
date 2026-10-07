@@ -280,4 +280,18 @@
         <item quantity="one">%1$d ਟੈਬ ਬੰਦ ਕੀਤੀ ਗਈ</item>
         <item quantity="other">%1$d ਟੈਬਾਂ ਬੰਦ ਕੀਤੀਆਂ ਗਈਆਂ</item>
     </plurals>
+    <string name="dejavu_settings_close_pinned_hint">ਪਿੰਨ ਕੀਤੀਆਂ ਟੈਬਾਂ ਅਤੇ ਫੋਲਡਰਾਂ ‘ਤੇ, ਪਿੰਨ ਬਣੇ ਰਹਿਣ ਕਰਕੇ “ਬੰਦ ਕਰੋ” ਖੁੱਲ੍ਹੀਆਂ ਟੈਬਾਂ ਨੂੰ ਸਲੀਪ ਮੋਡ ਵਿੱਚ ਭੇਜਦਾ ਹੈ। ਪਿੰਨ ਕੀਤੀ ਟੈਬ ਦੇ ਸਲੀਪ ਮੋਡ ਵਿੱਚ ਜਾਣ ਤੋਂ ਬਾਅਦ, “ਬੰਦ ਕਰੋ” ਉਸ ਦਾ ਪਿੰਨ ਹਟਾ ਦਿੰਦਾ ਹੈ।</string>
+    <string name="dejavu_features_title">Dejavu ਬਾਰੇ ਜਾਣੋ</string>
+    <string name="dejavu_features_page">%2$d ਵਿੱਚੋਂ %1$d</string>
+    <string name="dejavu_features_next">ਅੱਗੇ</string>
+    <string name="dejavu_features_skip">ਛੱਡੋ</string>
+    <string name="dejavu_feature_sleep">ਪੂਰੇ ਫੋਲਡਰ ਨੂੰ ਸਲੀਪ ਮੋਡ ਵਿੱਚ ਭੇਜੋ</string>
+    <string name="dejavu_feature_themes">ਹਰ ਵਰਕਸਪੇਸ ਨੂੰ ਉਸ ਦੇ ਆਪਣੇ ਰੰਗ ਦਿਓ</string>
+    <string name="dejavu_feature_swipe_menu">ਮੀਨੂ ਖੋਲ੍ਹਣ ਲਈ ਹੇਠਲੀ ਪੱਟੀ ਨੂੰ ਉੱਪਰ ਸਵਾਈਪ ਕਰੋ</string>
+    <string name="dejavu_feature_actions">ਕੋਈ ਵੀ ਟੈਬ ਆਪਣੀਆਂ ਐਪਾਂ ਨੂੰ ਭੇਜੋ</string>
+    <string name="dejavu_feature_zen_sync">ਆਪਣੀਆਂ ਵਰਕਸਪੇਸਾਂ Zen ਨਾਲ ਸਿੰਕ ਕਰੋ</string>
+    <string name="dejavu_feature_folders">ਟੈਬਾਂ ਨੂੰ ਫੋਲਡਰ ਵਿੱਚ ਪਾਉਣ ਲਈ ਉਹਨਾਂ ਨੂੰ ਦੇਰ ਤੱਕ ਦਬਾਓ</string>
+    <string name="dejavu_feature_drag">ਟੈਬਾਂ ਨੂੰ ਫੋਲਡਰਾਂ ਅਤੇ ਜ਼ਰੂਰੀ ਵਿੱਚ ਖਿੱਚੋ</string>
+    <string name="dejavu_feature_workspace_order">ਕ੍ਰਮ ਬਦਲਣ ਲਈ ਵਰਕਸਪੇਸਾਂ ਨੂੰ ਖਿੱਚੋ</string>
+    <string name="dejavu_feature_split_view">ਲਿੰਕ ਨੂੰ ਵੰਡੇ ਦ੍ਰਿਸ਼ ਵਿੱਚ ਖੋਲ੍ਹਣ ਲਈ ਉਸ ਨੂੰ ਦੇਰ ਤੱਕ ਦਬਾਓ</string>
 </resources>

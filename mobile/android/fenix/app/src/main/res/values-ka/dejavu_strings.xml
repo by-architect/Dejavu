@@ -280,4 +280,18 @@
         <item quantity="one">%1$d ჩანართი დაიხურა</item>
         <item quantity="other">%1$d ჩანართი დაიხურა</item>
     </plurals>
+    <string name="dejavu_settings_close_pinned_hint">მიმაგრებულ ჩანართებსა და საქაღალდეებზე „დახურვა“ გახსნილ ჩანართებს აძინებს, რადგან ისინი მიმაგრებული რჩება. როცა მიმაგრებულ ჩანართს უკვე სძინავს, „დახურვა“ მის მიმაგრებას მოხსნის.</string>
+    <string name="dejavu_features_title">გაიცანით Dejavu</string>
+    <string name="dejavu_features_page">%1$d / %2$d</string>
+    <string name="dejavu_features_next">შემდეგი</string>
+    <string name="dejavu_features_skip">გამოტოვება</string>
+    <string name="dejavu_feature_sleep">დააძინეთ მთელი საქაღალდე</string>
+    <string name="dejavu_feature_themes">მიეცით თითოეულ სივრცეს საკუთარი ფერები</string>
+    <string name="dejavu_feature_swipe_menu">მენიუს გასახსნელად გადაფურცლეთ ქვედა ზოლი ზემოთ</string>
+    <string name="dejavu_feature_actions">გაგზავნეთ ნებისმიერი ჩანართი თქვენს აპებში</string>
+    <string name="dejavu_feature_zen_sync">დაასინქრონეთ თქვენი სივრცეები Zen-თან</string>
+    <string name="dejavu_feature_folders">გრძლივად დააჭირეთ ჩანართებს, რომ საქაღალდეში გადაიტანოთ</string>
+    <string name="dejavu_feature_drag">გადაათრიეთ ჩანართები საქაღალდეებსა და საჭირო საიტებში</string>
+    <string name="dejavu_feature_workspace_order">გადაათრიეთ სივრცეები მათი რიგის შესაცვლელად</string>
+    <string name="dejavu_feature_split_view">გრძლივად დააჭირეთ ბმულს, რომ გაყოფილ ხედში გახსნათ</string>
 </resources>

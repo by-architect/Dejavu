@@ -280,4 +280,18 @@
         <item quantity="one">%1$d ներդիր փակվեց</item>
         <item quantity="other">%1$d ներդիր փակվեց</item>
     </plurals>
+    <string name="dejavu_settings_close_pinned_hint">Ամրացված ներդիրներում և թղթապանակներում «Փակել»֊ը քնեցնում է բաց ներդիրները, քանի որ դրանք մնում են ամրացված։ Երբ ամրացված ներդիրն արդեն քնած է, «Փակել»֊ը ապամրացնում է այն։</string>
+    <string name="dejavu_features_title">Բացահայտեք Dejavu֊ն</string>
+    <string name="dejavu_features_page">%1$d/%2$d</string>
+    <string name="dejavu_features_next">Հաջորդը</string>
+    <string name="dejavu_features_skip">Բաց թողնել</string>
+    <string name="dejavu_feature_sleep">Քնեցրեք ամբողջ թղթապանակը</string>
+    <string name="dejavu_feature_themes">Յուրաքանչյուր տարածքի տվեք իր գույները</string>
+    <string name="dejavu_feature_swipe_menu">Սահեցրեք ներքևի գոտին վերև՝ ցանկը բացելու համար</string>
+    <string name="dejavu_feature_actions">Ուղարկեք ցանկացած ներդիր ձեր հավելվածներին</string>
+    <string name="dejavu_feature_zen_sync">Համաժամացրեք ձեր տարածքները Zen֊ի հետ</string>
+    <string name="dejavu_feature_folders">Երկար սեղմեք ներդիրները՝ դրանք թղթապանակ տեղափոխելու համար</string>
+    <string name="dejavu_feature_drag">Քաշեք ներդիրները թղթապանակների և կարևոր կայքերի մեջ</string>
+    <string name="dejavu_feature_workspace_order">Քաշեք տարածքները՝ դրանց հերթականությունը փոխելու համար</string>
+    <string name="dejavu_feature_split_view">Երկար սեղմեք հղումը՝ այն տրոհված տեսքում բացելու համար</string>
 </resources>

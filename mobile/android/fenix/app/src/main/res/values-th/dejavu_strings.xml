@@ -273,4 +273,18 @@
     <plurals name="dejavu_tabs_closed">
         <item quantity="other">ปิด %1$d แท็บแล้ว</item>
     </plurals>
+    <string name="dejavu_settings_close_pinned_hint">บนแท็บที่ปักหมุดและโฟลเดอร์ ปุ่ม “ปิด” จะพักแท็บที่เปิดอยู่ เนื่องจากแท็บที่ปักหมุดยังคงอยู่ เมื่อแท็บที่ปักหมุดพักอยู่แล้ว ปุ่ม “ปิด” จะเลิกปักหมุดแท็บนั้น</string>
+    <string name="dejavu_features_title">ค้นพบ Dejavu</string>
+    <string name="dejavu_features_page">%1$d จาก %2$d</string>
+    <string name="dejavu_features_next">ถัดไป</string>
+    <string name="dejavu_features_skip">ข้าม</string>
+    <string name="dejavu_feature_sleep">พักทั้งโฟลเดอร์</string>
+    <string name="dejavu_feature_themes">ให้แต่ละพื้นที่ทำงานมีสีของตัวเอง</string>
+    <string name="dejavu_feature_swipe_menu">ปัดแถบด้านล่างขึ้นเพื่อเปิดเมนู</string>
+    <string name="dejavu_feature_actions">ส่งแท็บใดก็ได้ไปยังแอปของคุณ</string>
+    <string name="dejavu_feature_zen_sync">ซิงค์พื้นที่ทำงานของคุณกับ Zen</string>
+    <string name="dejavu_feature_folders">กดแท็บค้างไว้เพื่อใส่ลงในโฟลเดอร์</string>
+    <string name="dejavu_feature_drag">ลากแท็บไปไว้ในโฟลเดอร์และเว็บที่ใช้บ่อย</string>
+    <string name="dejavu_feature_workspace_order">ลากพื้นที่ทำงานเพื่อจัดลำดับใหม่</string>
+    <string name="dejavu_feature_split_view">กดลิงก์ค้างไว้เพื่อเปิดแบบแบ่งหน้าจอ</string>
 </resources>

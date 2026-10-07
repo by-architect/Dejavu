@@ -308,4 +308,18 @@
         <item quantity="many">%1$d تبويبًا مغلقًا</item>
         <item quantity="other">%1$d تبويب مغلق</item>
     </plurals>
+    <string name="dejavu_settings_close_pinned_hint">في التبويبات المثبتة والمجلدات، يُسبت «إغلاق» التبويبات المفتوحة لأن التثبيت يبقى. وعندما يكون التبويب المثبت في حالة إسبات، يلغي «إغلاق» تثبيته.</string>
+    <string name="dejavu_features_title">اكتشف Dejavu</string>
+    <string name="dejavu_features_page">%1$d من %2$d</string>
+    <string name="dejavu_features_next">التالي</string>
+    <string name="dejavu_features_skip">تخطي</string>
+    <string name="dejavu_feature_sleep">أسبت مجلدًا كاملًا</string>
+    <string name="dejavu_feature_themes">امنح كل مساحة عمل ألوانها الخاصة</string>
+    <string name="dejavu_feature_swipe_menu">اسحب الشريط السفلي لأعلى لفتح القائمة</string>
+    <string name="dejavu_feature_actions">أرسل أي تبويب إلى تطبيقاتك</string>
+    <string name="dejavu_feature_zen_sync">زامن مساحات عملك مع Zen</string>
+    <string name="dejavu_feature_folders">اضغط مطولًا على التبويبات لوضعها في مجلد</string>
+    <string name="dejavu_feature_drag">اسحب التبويبات إلى المجلدات والأساسيات</string>
+    <string name="dejavu_feature_workspace_order">اسحب مساحات العمل لإعادة ترتيبها</string>
+    <string name="dejavu_feature_split_view">اضغط مطولًا على رابط لفتحه في العرض المقسم</string>
 </resources>

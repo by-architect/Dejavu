@@ -280,4 +280,18 @@
         <item quantity="one">%1$d bet jabıldı</item>
         <item quantity="other">%1$d bet jabıldı</item>
     </plurals>
+    <string name="dejavu_settings_close_pinned_hint">Bekitilgen betlerde hám papkalarda «Jabıw» ashıq betlerdi uyqıǵa jiberedi, sebebi olar bekitilgen bolıp qaladı. Bekitilgen bet uyqıda bolǵanda, «Jabıw» onı bekitiwden shıǵaradı.</string>
+    <string name="dejavu_features_title">Dejavu menen tanısıń</string>
+    <string name="dejavu_features_page">%2$d-niń %1$d-i</string>
+    <string name="dejavu_features_next">Keyingi</string>
+    <string name="dejavu_features_skip">Ótkizip jiberiw</string>
+    <string name="dejavu_feature_sleep">Pútkil papkanı uyqıǵa jiberiń</string>
+    <string name="dejavu_feature_themes">Hár bir jumıs maydanına óz reńlerin beriń</string>
+    <string name="dejavu_feature_swipe_menu">Menyunı ashıw ushın tómengi paneldi joqarıǵa sırǵıtıń</string>
+    <string name="dejavu_feature_actions">Qálegen betti baǵdarlamalarıńızǵa jiberiń</string>
+    <string name="dejavu_feature_zen_sync">Jumıs maydanlarıńızdı Zen penen sinxronlastırıń</string>
+    <string name="dejavu_feature_folders">Betlerdi papkaǵa salıw ushın olardı basıp turıń</string>
+    <string name="dejavu_feature_drag">Betlerdi papkalarǵa hám tiykarǵılarǵa súyreń</string>
+    <string name="dejavu_feature_workspace_order">Jumıs maydanlarınıń tártibin ózgertiw ushın olardı súyreń</string>
+    <string name="dejavu_feature_split_view">Siltemeni bólingen kóriniste ashıw ushın onı basıp turıń</string>
 </resources>

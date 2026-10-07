@@ -280,4 +280,18 @@
         <item quantity="one">%1$d unghjetta chjosa</item>
         <item quantity="other">%1$d unghjette chjose</item>
     </plurals>
+    <string name="dejavu_settings_close_pinned_hint">Nant\'à l\'unghjette fissate è i cartulari, «Chjode» addurmenta l\'unghjette aperte, chì e fissazioni fermanu. Quandu un\'unghjetta fissata dorme digià, «Chjode» a disfissa.</string>
+    <string name="dejavu_features_title">Scopre Dejavu</string>
+    <string name="dejavu_features_page">%1$d nant\'à %2$d</string>
+    <string name="dejavu_features_next">Seguente</string>
+    <string name="dejavu_features_skip">Saltà</string>
+    <string name="dejavu_feature_sleep">Addurmintate un cartulare sanu</string>
+    <string name="dejavu_feature_themes">Date à ogni spaziu di travagliu i so culori</string>
+    <string name="dejavu_feature_swipe_menu">Fate sguillà in sù a barra di u fondu per apre u listinu</string>
+    <string name="dejavu_feature_actions">Mandate qualunque unghjetta à e vostre appiecazioni</string>
+    <string name="dejavu_feature_zen_sync">Sincrunizate i vostri spazii di travagliu cù Zen</string>
+    <string name="dejavu_feature_folders">Tenite appughjate l\'unghjette per mette le in un cartulare</string>
+    <string name="dejavu_feature_drag">Trascinate unghjette in i cartulari è in l\'essenziali</string>
+    <string name="dejavu_feature_workspace_order">Trascinate i spazii di travagliu per riurdinà li</string>
+    <string name="dejavu_feature_split_view">Tenite appughjatu un liame per apre lu in vista spartuta</string>
 </resources>

@@ -280,4 +280,18 @@
         <item quantity="one">%1$d skedë u mbyll</item>
         <item quantity="other">%1$d skeda u mbyllën</item>
     </plurals>
+    <string name="dejavu_settings_close_pinned_hint">Te skedat e fiksuara dhe dosjet, «Mbylle» i pezullon skedat e hapura, ngaqë skedat e fiksuara mbeten. Kur një skedë e fiksuar është e pezulluar, «Mbylle» e shfikson.</string>
+    <string name="dejavu_features_title">Zbuloni Dejavu-n</string>
+    <string name="dejavu_features_page">%1$d nga %2$d</string>
+    <string name="dejavu_features_next">Pasuesja</string>
+    <string name="dejavu_features_skip">Anashkaloje</string>
+    <string name="dejavu_feature_sleep">Pezulloni një dosje të tërë</string>
+    <string name="dejavu_feature_themes">Jepini çdo hapësire pune ngjyrat e veta</string>
+    <string name="dejavu_feature_swipe_menu">Fërkojeni për sipër shiritin e poshtëm, që të hapet menuja</string>
+    <string name="dejavu_feature_actions">Dërgoni cilëndo skedë te aplikacionet tuaja</string>
+    <string name="dejavu_feature_zen_sync">Njëkohësoni hapësirat tuaja të punës me Zen-in</string>
+    <string name="dejavu_feature_folders">Bëni prekje të gjatë mbi skeda, që t\'i vini në një dosje</string>
+    <string name="dejavu_feature_drag">Tërhiqini skedat te dosjet dhe te thelbësoret</string>
+    <string name="dejavu_feature_workspace_order">Tërhiqini hapësirat e punës, që t\'u ndryshoni radhën</string>
+    <string name="dejavu_feature_split_view">Bëni prekje të gjatë mbi një lidhje, që ta hapni në pamje të ndarë</string>
 </resources>

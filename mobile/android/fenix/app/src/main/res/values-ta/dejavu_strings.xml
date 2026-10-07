@@ -280,4 +280,18 @@
         <item quantity="one">%1$d கீற்று மூடப்பட்டது</item>
         <item quantity="other">%1$d கீற்றுகள் மூடப்பட்டன</item>
     </plurals>
+    <string name="dejavu_settings_close_pinned_hint">பொருத்தப்பட்ட கீற்றுகள் அப்படியே இருப்பதால், பொருத்தப்பட்ட கீற்றுகளிலும் கோப்புறைகளிலும் உள்ள மூடு பொத்தான் திறந்த கீற்றுகளை உறங்கவைக்கும். பொருத்தப்பட்ட கீற்று உறங்கியதும், மூடு பொத்தான் அதன் பின்னை நீக்கும்.</string>
+    <string name="dejavu_features_title">Dejavu-ஐக் கண்டறியவும்</string>
+    <string name="dejavu_features_page">%2$d இல் %1$d</string>
+    <string name="dejavu_features_next">அடுத்து</string>
+    <string name="dejavu_features_skip">தவிர்</string>
+    <string name="dejavu_feature_sleep">முழுக் கோப்புறையையும் உறங்கவைக்கவும்</string>
+    <string name="dejavu_feature_themes">ஒவ்வொரு பணியிடத்திற்கும் தனி நிறங்களைக் கொடுக்கவும்</string>
+    <string name="dejavu_feature_swipe_menu">பட்டியைத் திறக்க கீழ்ப் பட்டையை மேலே ஸ்வைப் செய்யவும்</string>
+    <string name="dejavu_feature_actions">எந்தக் கீற்றையும் உங்கள் செயலிகளுக்கு அனுப்பவும்</string>
+    <string name="dejavu_feature_zen_sync">உங்கள் பணியிடங்களை Zen உடன் ஒத்திசைக்கவும்</string>
+    <string name="dejavu_feature_folders">கீற்றுகளைக் கோப்புறையில் சேர்க்க அவற்றை நீண்டநேரம் அழுத்தவும்</string>
+    <string name="dejavu_feature_drag">கீற்றுகளைக் கோப்புறைகளுக்கும் முக்கியவைக்கும் இழுக்கவும்</string>
+    <string name="dejavu_feature_workspace_order">வரிசையை மாற்ற பணியிடங்களை இழுக்கவும்</string>
+    <string name="dejavu_feature_split_view">இணைப்பைப் பிரிந்த காட்சியில் திறக்க அதை நீண்டநேரம் அழுத்தவும்</string>
 </resources>

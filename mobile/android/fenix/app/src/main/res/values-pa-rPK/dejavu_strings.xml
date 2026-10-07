@@ -280,4 +280,18 @@
         <item quantity="one">%1$d ٹیباں بند ہوئیاں</item>
         <item quantity="other">%1$d ٹیباں بند ہوئیاں</item>
     </plurals>
+    <string name="dejavu_settings_close_pinned_hint">پن کیتیاں ٹیباں تے فولڈراں وچ پن قائم رہندے نيں، ایس لئی “بند کرو” کھلیاں ٹیباں نوں سلا دیندا اے۔ جدوں پن کیتی ٹیب سوں جاندی اے، تاں “بند کرو” اوہدا پن ہٹا دیندا اے۔</string>
+    <string name="dejavu_features_title">Dejavu بارے جانو</string>
+    <string name="dejavu_features_page">%2$d چوں %1$d</string>
+    <string name="dejavu_features_next">اگلا</string>
+    <string name="dejavu_features_skip">چھڈو</string>
+    <string name="dejavu_feature_sleep">پورے فولڈر نوں سلاؤ</string>
+    <string name="dejavu_feature_themes">ہر ورک سپیس نوں اوہدے اپݨے رنگ دیوو</string>
+    <string name="dejavu_feature_swipe_menu">مینو کھولن لئی تلے والی بار نوں اُتے سوائپ کرو</string>
+    <string name="dejavu_feature_actions">کوئی وی ٹیب اپݨیاں ایپاں نوں بھیجو</string>
+    <string name="dejavu_feature_zen_sync">اپݨیاں ورک سپیساں Zen نال سنک کرو</string>
+    <string name="dejavu_feature_folders">ٹیباں نوں فولڈر وچ پاؤن لئی اوہناں نوں دبا کے رکھو</string>
+    <string name="dejavu_feature_drag">ٹیباں نوں فولڈراں تے ضروری چیزاں وچ کھچو</string>
+    <string name="dejavu_feature_workspace_order">ترتیب بدلن لئی ورک سپیساں نوں کھچو</string>
+    <string name="dejavu_feature_split_view">لنک نوں اسپلٹ ویو وچ کھولن لئی اوہنوں دبا کے رکھو</string>
 </resources>

@@ -273,4 +273,18 @@
     <plurals name="dejavu_tabs_closed">
         <item quantity="other">탭 %1$d개를 닫았습니다</item>
     </plurals>
+    <string name="dejavu_settings_close_pinned_hint">고정된 탭과 폴더에서는 고정이 유지되므로 \'닫기\'를 누르면 열린 탭이 절전됩니다. 고정된 탭이 절전된 후에 \'닫기\'를 누르면 고정이 해제됩니다.</string>
+    <string name="dejavu_features_title">Dejavu 둘러보기</string>
+    <string name="dejavu_features_page">%1$d / %2$d</string>
+    <string name="dejavu_features_next">다음</string>
+    <string name="dejavu_features_skip">건너뛰기</string>
+    <string name="dejavu_feature_sleep">폴더 전체를 절전 상태로 전환하세요</string>
+    <string name="dejavu_feature_themes">작업 공간마다 고유한 색상을 지정하세요</string>
+    <string name="dejavu_feature_swipe_menu">하단 모음을 위로 스와이프해 메뉴를 여세요</string>
+    <string name="dejavu_feature_actions">어떤 탭이든 앱으로 보내세요</string>
+    <string name="dejavu_feature_zen_sync">작업 공간을 Zen과 동기화하세요</string>
+    <string name="dejavu_feature_folders">탭을 길게 눌러 폴더에 넣으세요</string>
+    <string name="dejavu_feature_drag">탭을 폴더와 필수 사이트로 끌어다 놓으세요</string>
+    <string name="dejavu_feature_workspace_order">작업 공간을 끌어서 순서를 바꾸세요</string>
+    <string name="dejavu_feature_split_view">링크를 길게 눌러 분할 보기로 여세요</string>
 </resources>

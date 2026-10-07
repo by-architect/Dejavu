@@ -280,4 +280,18 @@
         <item quantity="one">%1$d na tab ang isinara</item>
         <item quantity="other">%1$d na tab ang isinara</item>
     </plurals>
+    <string name="dejavu_settings_close_pinned_hint">Sa mga naka-pin na tab at folder, pinapatulog ng Isara ang mga bukas na tab, dahil nananatili ang mga naka-pin na tab. Kapag natutulog na ang isang naka-pin na tab, ia-unpin ito ng Isara.</string>
+    <string name="dejavu_features_title">Tuklasin ang Dejavu</string>
+    <string name="dejavu_features_page">%1$d sa %2$d</string>
+    <string name="dejavu_features_next">Susunod</string>
+    <string name="dejavu_features_skip">Laktawan</string>
+    <string name="dejavu_feature_sleep">Patulugin ang buong folder</string>
+    <string name="dejavu_feature_themes">Bigyan ang bawat workspace ng sariling kulay</string>
+    <string name="dejavu_feature_swipe_menu">I-swipe pataas ang bar sa ibaba para buksan ang menu</string>
+    <string name="dejavu_feature_actions">Ipadala ang kahit anong tab sa iyong mga app</string>
+    <string name="dejavu_feature_zen_sync">I-sync ang iyong mga workspace kasama ang Zen</string>
+    <string name="dejavu_feature_folders">Mag-long-press sa mga tab para ilagay ang mga ito sa folder</string>
+    <string name="dejavu_feature_drag">I-drag ang mga tab sa mga folder at sa Mahahalaga</string>
+    <string name="dejavu_feature_workspace_order">I-drag ang mga workspace para ayusin ang pagkakasunod-sunod</string>
+    <string name="dejavu_feature_split_view">Mag-long-press sa isang link para buksan ito sa split view</string>
 </resources>

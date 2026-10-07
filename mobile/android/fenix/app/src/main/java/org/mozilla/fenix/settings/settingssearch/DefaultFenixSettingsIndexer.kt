@@ -316,7 +316,12 @@ class DefaultFenixSettingsIndexer(
             }
 
             if (stringsWithRequiredFormatting.contains(resourceId)) {
-                val appName = context.getString(R.string.app_name)
+                // Dejavu: Firefox Suggest is Mozilla's service, so its settings name Firefox, not Dejavu.
+                val appName = if (resourceId == R.string.preferences_show_nonsponsored_suggestions) {
+                    context.getString(R.string.dejavu_firefox_name)
+                } else {
+                    context.getString(R.string.app_name)
+                }
                 context.getString(resourceId, appName)
             } else {
                 context.getString(resourceId)

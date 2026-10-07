@@ -301,4 +301,18 @@
         <item quantity="many">%1$d ivinell serret</item>
         <item quantity="other">%1$d ivinell serret</item>
     </plurals>
+    <string name="dejavu_settings_close_pinned_hint">War an ivinelloù spilhennet hag an teuliadoù, e laka «Serriñ» an ivinelloù digor da gousket, rak ar spilhennoù a chom. Pa vez kousket un ivinell spilhennet dija, e tispilhenn «Serriñ» anezhi.</string>
+    <string name="dejavu_features_title">Dizoleiñ Dejavu</string>
+    <string name="dejavu_features_page">%1$d diwar %2$d</string>
+    <string name="dejavu_features_next">War-lerc\'h</string>
+    <string name="dejavu_features_skip">Tremen</string>
+    <string name="dejavu_feature_sleep">Lakaat un teuliad a-bezh da gousket</string>
+    <string name="dejavu_feature_themes">Reiñ e livioù dezhañ da bep egor labour</string>
+    <string name="dejavu_feature_swipe_menu">Riklañ ar varrenn traoñ etrezek al laez evit digeriñ al lañser</string>
+    <string name="dejavu_feature_actions">Kas forzh peseurt ivinell d\'hoc\'h arloadoù</string>
+    <string name="dejavu_feature_zen_sync">Goubredañ hoc\'h egorioù labour gant Zen</string>
+    <string name="dejavu_feature_folders">Derc\'hel war an ivinelloù evit o lakaat en un teuliad</string>
+    <string name="dejavu_feature_drag">Riklañ ivinelloù en teuliadoù hag en traoù pouezus</string>
+    <string name="dejavu_feature_workspace_order">Riklañ an egorioù labour evit o adurzhiañ</string>
+    <string name="dejavu_feature_split_view">Derc\'hel war ul liamm evit e zigeriñ er gwel rannet</string>
 </resources>

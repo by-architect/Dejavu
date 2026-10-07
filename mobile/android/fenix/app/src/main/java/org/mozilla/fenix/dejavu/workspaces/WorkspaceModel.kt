@@ -39,6 +39,9 @@ data class WorkspaceTheme(
 ) {
     companion object {
         const val DEFAULT_OPACITY = 0.35f
+
+        /** The gold of Dejavu's logo, the theme of the workspace a fresh Dejavu starts with. */
+        val Gold = WorkspaceTheme(colors = listOf(0xFFFFEDC2, 0xFFFFD67A, 0xFFF2B84B).map { it.toInt() })
     }
 }
 

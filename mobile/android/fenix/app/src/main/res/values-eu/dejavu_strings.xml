@@ -280,4 +280,18 @@
         <item quantity="one">%1$d fitxa itxi da</item>
         <item quantity="other">%1$d fitxa itxi dira</item>
     </plurals>
+    <string name="dejavu_settings_close_pinned_hint">Finkatutako fitxetan eta karpetetan, «Itxi» botoiak fitxa irekiak esekitzen ditu, finkatuta jarraitzen dutelako. Finkatutako fitxa bat esekita dagoenean, «Itxi» botoiak desfinkatu egiten du.</string>
+    <string name="dejavu_features_title">Ezagutu Dejavu</string>
+    <string name="dejavu_features_page">%1$d / %2$d</string>
+    <string name="dejavu_features_next">Hurrengoa</string>
+    <string name="dejavu_features_skip">Saltatu</string>
+    <string name="dejavu_feature_sleep">Esekitu karpeta oso bat</string>
+    <string name="dejavu_feature_themes">Eman laneremu bakoitzari bere koloreak</string>
+    <string name="dejavu_feature_swipe_menu">Pasatu beheko barra gora menua irekitzeko</string>
+    <string name="dejavu_feature_actions">Bidali edozein fitxa zure aplikazioetara</string>
+    <string name="dejavu_feature_zen_sync">Sinkronizatu zure laneremuak Zenekin</string>
+    <string name="dejavu_feature_folders">Sakatu luze fitxak karpeta batean sartzeko</string>
+    <string name="dejavu_feature_drag">Arrastatu fitxak karpetetara eta funtsezkoetara</string>
+    <string name="dejavu_feature_workspace_order">Arrastatu laneremuak haien ordena aldatzeko</string>
+    <string name="dejavu_feature_split_view">Sakatu luze esteka bat ikuspegi zatituan irekitzeko</string>
 </resources>

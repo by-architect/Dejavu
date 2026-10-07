@@ -280,4 +280,18 @@
         <item quantity="one">%1$d ట్యాబు మూసివేయబడింది</item>
         <item quantity="other">%1$d ట్యాబులు మూసివేయబడ్డాయి</item>
     </plurals>
+    <string name="dejavu_settings_close_pinned_hint">పిన్ చేసిన ట్యాబులు అలాగే ఉంటాయి కాబట్టి, పిన్ చేసిన ట్యాబులు మరియు ఫోల్డర్లపై మూసివేయి బటన్ తెరిచిన ట్యాబులను స్లీప్ చేస్తుంది. పిన్ చేసిన ట్యాబు స్లీప్‌లోకి వెళ్ళాక, మూసివేయి బటన్ దాని పిన్‌ను తీసివేస్తుంది.</string>
+    <string name="dejavu_features_title">Dejavu గురించి తెలుసుకోండి</string>
+    <string name="dejavu_features_page">%2$d లో %1$d</string>
+    <string name="dejavu_features_next">తదుపరి</string>
+    <string name="dejavu_features_skip">దాటవేయి</string>
+    <string name="dejavu_feature_sleep">మొత్తం ఫోల్డర్‌ను స్లీప్ చేయండి</string>
+    <string name="dejavu_feature_themes">ప్రతి కార్యస్థలానికి దాని స్వంత రంగులు ఇవ్వండి</string>
+    <string name="dejavu_feature_swipe_menu">మెనూను తెరవడానికి దిగువ పట్టీని పైకి స్వైప్ చేయండి</string>
+    <string name="dejavu_feature_actions">ఏ ట్యాబునైనా మీ అనువర్తనాలకు పంపండి</string>
+    <string name="dejavu_feature_zen_sync">మీ కార్యస్థలాలను Zenతో సింక్ చేయండి</string>
+    <string name="dejavu_feature_folders">ట్యాబులను ఫోల్డర్‌లో పెట్టడానికి వాటిని నొక్కిపట్టుకోండి</string>
+    <string name="dejavu_feature_drag">ట్యాబులను ఫోల్డర్లలోకి మరియు ముఖ్యమైనవాటిలోకి లాగండి</string>
+    <string name="dejavu_feature_workspace_order">క్రమాన్ని మార్చడానికి కార్యస్థలాలను లాగండి</string>
+    <string name="dejavu_feature_split_view">లింక్‌ను విభజన వీక్షణలో తెరవడానికి దాన్ని నొక్కిపట్టుకోండి</string>
 </resources>

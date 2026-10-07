@@ -273,4 +273,18 @@
     <plurals name="dejavu_tabs_closed">
         <item quantity="other">已关闭 %1$d 个标签页</item>
     </plurals>
+    <string name="dejavu_settings_close_pinned_hint">在固定标签页和文件夹上，“关闭”会让已打开的标签页休眠，因为固定标签页会保留。固定标签页休眠后，“关闭”会将其取消固定。</string>
+    <string name="dejavu_features_title">探索 Dejavu</string>
+    <string name="dejavu_features_page">%1$d/%2$d</string>
+    <string name="dejavu_features_next">下一步</string>
+    <string name="dejavu_features_skip">跳过</string>
+    <string name="dejavu_feature_sleep">让整个文件夹休眠</string>
+    <string name="dejavu_feature_themes">为每个工作区设置专属颜色</string>
+    <string name="dejavu_feature_swipe_menu">向上滑动底部栏即可打开菜单</string>
+    <string name="dejavu_feature_actions">将任意标签页发送到您的应用</string>
+    <string name="dejavu_feature_zen_sync">将您的工作区与 Zen 同步</string>
+    <string name="dejavu_feature_folders">长按标签页，将其放入文件夹</string>
+    <string name="dejavu_feature_drag">将标签页拖入文件夹和常用网站</string>
+    <string name="dejavu_feature_workspace_order">拖动工作区以调整顺序</string>
+    <string name="dejavu_feature_split_view">长按链接，在分屏视图中打开</string>
 </resources>
