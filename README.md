@@ -8,6 +8,7 @@
 </p>
 
 <p align="center">
+  <a href="#download"><img alt="F-Droid: ByArchitect repository" src="https://img.shields.io/badge/F--Droid-ByArchitect%20repository-556B4F?logo=fdroid&logoColor=white"></a>
   <a href="#download"><img alt="Google Play: in testing" src="https://img.shields.io/badge/Google%20Play-in%20testing-F2B84B?logo=googleplay&logoColor=white"></a>
   <a href="#download"><img alt="iOS: in development" src="https://img.shields.io/badge/iOS-in%20development-5A452A?logo=apple&logoColor=white"></a>
   <a href="LICENSE"><img alt="License: MPL 2.0" src="https://img.shields.io/badge/license-MPL%202.0-5A452A"></a>
@@ -39,8 +40,20 @@ up on your phone too, but the two are separate apps made by separate people. Syn
 
 ## Download
 
-**Android:** Dejavu is in testing on Google Play right now. The public release is planned in about three weeks,
-around late October 2026. It needs Android 8.0 or newer. Star this repository to follow along.
+<a href="https://fdroid.byarchitect.org/fdroid/repo?fingerprint=50941BDAC56B056A520ABFA3FC7DAAB789DEE5B83B295DA54A1961C7BC8A91C9"><img src="docs/readme/fdroid-qr.svg" alt="QR code that adds the ByArchitect repository to F-Droid" width="170" align="right"></a>
+
+Dejavu needs Android 8.0 or newer on a 64-bit phone, which almost every phone from recent years is.
+
+**F-Droid (recommended):** Dejavu is in the ByArchitect F-Droid repository, and F-Droid keeps it up to date. In
+F-Droid, open **Repositories**, tap **+** and scan the QR code, or open
+[this link](https://fdroid.byarchitect.org/fdroid/repo?fingerprint=50941BDAC56B056A520ABFA3FC7DAAB789DEE5B83B295DA54A1961C7BC8A91C9)
+on your phone to add the repository. Then search for Dejavu.
+
+**APK:** download `dejavu-<version>-arm64-v8a.apk` from the
+[latest release](https://github.com/by-architect/Dejavu/releases/latest). It does not update itself, so use F-Droid
+to get new versions.
+
+**Google Play:** in testing right now. The public release is planned for late October 2026.
 
 **iOS:** We are working on an iOS app. News about it will be shared here.
 
