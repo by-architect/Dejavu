@@ -1,0 +1,1 @@
+Essentials per container now turns itself on when your synced essentials are split between workspaces with different containers, like in Zen. Workspaces without a default container also show the essentials of containers no workspace uses, so those essentials no longer disappear.
