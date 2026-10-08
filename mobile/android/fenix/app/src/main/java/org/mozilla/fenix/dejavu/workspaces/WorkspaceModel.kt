@@ -142,10 +142,18 @@ data class WorkspaceState(
 
     /**
      * The essentials shown in a workspace with default container [containerId]: all of them, or with [perContainer]
-     * only those of that container, like Zen's container-specific essentials.
+     * only those whose [essentialsGroupOf] is that container, like Zen's container-specific essentials.
      */
     fun essentialsFor(containerId: String?, perContainer: Boolean): List<PinnedItem> =
-        if (perContainer) essentials.filter { it.containerId == containerId } else essentials
+        if (perContainer) essentials.filter { essentialsGroupOf(it.containerId) == containerId } else essentials
+
+    /**
+     * Which workspaces show essentials of container [containerId] when every container has its own essentials: those
+     * with that default container, or `null` for those without one, which also show the essentials of containers no
+     * workspace has as its default, like in Zen.
+     */
+    fun essentialsGroupOf(containerId: String?): String? =
+        containerId?.takeIf { id -> workspaces.any { it.containerId == id } }
 
     /** Returns the workspace ID for [tabId], falling back to the active workspace for unassigned tabs. */
     fun workspaceOf(tabId: String): String = assignments[tabId] ?: activeWorkspaceId

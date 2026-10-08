@@ -35,6 +35,9 @@ internal interface SpacesLocalData {
 
     /** Opens, points elsewhere or closes open tabs as applied records ask. */
     suspend fun runTabOps(ops: List<TabOp>) = Unit
+
+    /** Turns essentials per container on or off, as synced data shows Zen does, unless the user chose it. */
+    fun useEssentialsPerContainer(enabled: Boolean) = Unit
 }
 
 /** How a sync ended when it did not throw. */
@@ -165,6 +168,13 @@ internal class SpacesSyncEngine(
             data.lastModified = uploaded.lastModified ?: data.lastModified
         }
         rememberTabs(current, data)
+        if (!data.essentialsChecked) {
+            current.separatesEssentials()?.let { separate ->
+                log("Synced essentials are ${if (separate) "" else "not "}kept per container")
+                local.useEssentialsPerContainer(separate)
+                data.essentialsChecked = true
+            }
+        }
         data.lastSynced = clock.millis()
         store.save(data)
         return SpacesSyncResult.Synced(received = incoming.size, sent = sent, pending = data.failed.size)
@@ -498,5 +508,26 @@ internal class SpacesSyncEngine(
         /** A 12 character sync id, like Firefox's `Utils.makeGUID`. */
         fun newSyncId(): String = Base64.getUrlEncoder().withoutPadding()
             .encodeToString(ByteArray(SYNC_ID_BYTES).also { random.nextBytes(it) })
+    }
+}
+
+/**
+ * Whether the synced essentials look like Zen keeps them per container, as Zen does not sync that setting itself, or
+ * `null` while the setting would not change which essentials any space shows. With the setting on, Zen only lets a
+ * space get essentials in its own default container, so an essential in a container no space has as its default means
+ * it is off. Otherwise spaces that would show different essentials with it mean it is on.
+ */
+internal fun LocalSpaces.separatesEssentials(): Boolean? {
+    val synced = containers.filterNot { it.temporary }.map { it.contextId }.toSet()
+    fun syncedContainer(containerId: String?) = containerId?.takeIf { it in synced }
+    val essentials = state.essentials.map { syncedContainer(it.containerId) }
+    val spaces = state.workspaces.map { syncedContainer(it.containerId) }.toSet()
+    if (essentials.isEmpty() || spaces.all { it == null }) return null
+    if (essentials.any { it != null && it !in spaces }) return false
+    val shown = spaces.map { container -> essentials.count { it == container } }
+    return when {
+        shown.count { it > 0 } > 1 -> true
+        shown.singleOrNull() == essentials.size -> null
+        else -> false
     }
 }
