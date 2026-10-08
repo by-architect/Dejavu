@@ -52,6 +52,7 @@ import org.mozilla.fenix.dejavu.containers.ContainerColor
 import org.mozilla.fenix.dejavu.containers.ContainerRemoval
 import org.mozilla.fenix.dejavu.containers.ContainerRemover
 import org.mozilla.fenix.dejavu.containers.DejavuContainerStorage
+import org.mozilla.fenix.dejavu.settings.DejavuSettings
 import org.mozilla.fenix.dejavu.workspaces.WorkspaceRepository
 import org.mozilla.fenix.dejavu.workspaces.WorkspaceState
 import org.mozilla.fenix.ext.components
@@ -453,6 +454,9 @@ private class DejavuSpacesData(private val context: Context) : SpacesLocalData {
             ContainerRemover(context.components, repository).remove(record, ContainerRemoval.MoveTabs(null))
         }
     }
+
+    override fun useEssentialsPerContainer(enabled: Boolean) =
+        DejavuSettings.get(context).setEssentialsPerContainerFromSync(enabled)
 
     override fun builtinName(container: BuiltinContainer): String = context.getString(
         when (container) {

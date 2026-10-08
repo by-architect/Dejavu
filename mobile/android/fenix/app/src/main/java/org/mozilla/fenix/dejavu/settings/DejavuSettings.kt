@@ -29,7 +29,9 @@ class DejavuSettings private constructor(context: Context) {
     private val _pinnedRowKeys = MutableStateFlow(readKeys(KEY_PINNED_ROW_ACTIONS, DEFAULT_PINNED_ROW_ACTIONS))
     private val _unpinnedRowKeys = MutableStateFlow(readKeys(KEY_UNPINNED_ROW_ACTIONS, DEFAULT_UNPINNED_ROW_ACTIONS))
     private val _folderRowKeys = MutableStateFlow(readKeys(KEY_FOLDER_ROW_ACTIONS, DEFAULT_FOLDER_ROW_ACTIONS))
-    private val _essentialsPerContainer = MutableStateFlow(prefs.getBoolean(KEY_ESSENTIALS_PER_CONTAINER, false))
+    private val _essentialsPerContainer = MutableStateFlow(
+        prefs.getBoolean(KEY_ESSENTIALS_PER_CONTAINER, prefs.getBoolean(KEY_ESSENTIALS_PER_CONTAINER_SYNCED, false)),
+    )
     private val _temporaryContainersByDefault =
         MutableStateFlow(prefs.getBoolean(KEY_TEMPORARY_CONTAINERS_BY_DEFAULT, false))
     private val _externalLinkWorkspaceId = MutableStateFlow(prefs.getString(KEY_EXTERNAL_LINK_WORKSPACE, null))
@@ -138,6 +140,16 @@ class DejavuSettings private constructor(context: Context) {
     fun setEssentialsPerContainer(enabled: Boolean) {
         _essentialsPerContainer.value = enabled
         prefs.edit { putBoolean(KEY_ESSENTIALS_PER_CONTAINER, enabled) }
+    }
+
+    /**
+     * Follows what synced essentials show of Zen's container-specific essentials, which Zen does not sync itself. What
+     * the user chose in the settings is kept.
+     */
+    fun setEssentialsPerContainerFromSync(enabled: Boolean) {
+        if (prefs.contains(KEY_ESSENTIALS_PER_CONTAINER)) return
+        _essentialsPerContainer.value = enabled
+        prefs.edit { putBoolean(KEY_ESSENTIALS_PER_CONTAINER_SYNCED, enabled) }
     }
 
     fun setMoreMenuRows(rows: List<List<String>>) {
@@ -252,6 +264,7 @@ class DejavuSettings private constructor(context: Context) {
         private const val KEY_CUSTOM_ACTIONS = "custom_actions"
         private const val KEY_HIDDEN_SELECTION_ACTIONS = "hidden_selection_actions"
         private const val KEY_ESSENTIALS_PER_CONTAINER = "essentials_per_container"
+        private const val KEY_ESSENTIALS_PER_CONTAINER_SYNCED = "essentials_per_container_synced"
         private const val KEY_TEMPORARY_CONTAINERS_BY_DEFAULT = "temporary_containers_by_default"
         private const val KEY_EXTERNAL_LINK_WORKSPACE = "external_link_workspace"
         private const val KEY_EXTERNAL_LINK_CONTAINER = "external_link_container"

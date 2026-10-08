@@ -25,6 +25,8 @@ import org.json.JSONObject
  * @property seen Tabs that are not pinned, by sync id, as they were here at the end of the last sync. A tab that
  *   changed since then is uploaded, and one that is gone was closed here, so it is deleted on the server.
  * @property opened Tabs the current sync opened, which may not show in the browser before it ends.
+ * @property essentialsChecked Whether synced essentials already showed if Zen keeps them per container, see
+ *   [separatesEssentials]. They are only looked at until they do, once per account.
  */
 internal class SpacesSyncData(
     var syncId: String? = null,
@@ -36,6 +38,7 @@ internal class SpacesSyncData(
     val failed: MutableMap<String, SpacesRecord> = LinkedHashMap(),
     val seen: MutableMap<String, String> = LinkedHashMap(),
     val opened: MutableSet<String> = LinkedHashSet(),
+    var essentialsChecked: Boolean = false,
 ) {
     /** Forgets the collection, so the next sync downloads everything and uploads whatever differs locally. */
     fun resetCollection() {
@@ -52,6 +55,7 @@ internal class SpacesSyncData(
         keysModified = null
         account = null
         lastSynced = 0L
+        essentialsChecked = false
         resetCollection()
     }
 }
@@ -75,6 +79,7 @@ internal class SpacesSyncStore(file: File) {
             .put("server", JSONArray().apply { data.server.values.forEach { put(it.toCleartext()) } })
             .put("failed", JSONArray().apply { data.failed.values.forEach { put(it.toCleartext()) } })
             .put("seen", JSONObject(data.seen.toMap()))
+            .put("essentialsChecked", data.essentialsChecked)
         val stream = file.startWrite()
         try {
             stream.write(SyncJson.stringify(json).toByteArray(Charsets.UTF_8))
@@ -111,6 +116,7 @@ internal class SpacesSyncStore(file: File) {
                 val seen = json.optJSONObject("seen") ?: return@apply
                 seen.keys().forEach { key -> seen.string(key)?.let { put(key, it) } }
             },
+            essentialsChecked = json.optBoolean("essentialsChecked"),
         )
     }
 

@@ -20,6 +20,8 @@ import org.mozilla.fenix.dejavu.containers.ContainerRecord
 import org.mozilla.fenix.dejavu.sync.ZenRecords.CONTAINER
 import org.mozilla.fenix.dejavu.sync.ZenRecords.SPACE_PERSONAL
 import org.mozilla.fenix.dejavu.sync.ZenRecords.SPACE_WORK
+import org.mozilla.fenix.dejavu.sync.ZenRecords.TAB_ESSENTIAL
+import org.mozilla.fenix.dejavu.sync.ZenRecords.TAB_ESSENTIAL_CONTAINER
 import org.mozilla.fenix.dejavu.sync.ZenRecords.TAB_PINNED
 import org.mozilla.fenix.dejavu.workspaces.WorkspaceState
 import org.robolectric.RobolectricTestRunner
@@ -190,6 +192,62 @@ class SpacesSyncEngineTest {
 
         assertTrue(server.requests.none { it.startsWith("GET storage/spaces") || it.startsWith("POST") })
     }
+
+    /** A Zen profile with container-specific essentials: one essential for the work space, one for the others. */
+    private fun essentialsPerSpace() = listOf(
+        ZenRecords.space(SPACE_PERSONAL, "Personal", children = emptyList()),
+        ZenRecords.space(SPACE_WORK, "Work", children = emptyList(), containerGuid = "builtin-2"),
+        ZenRecords.tab(TAB_ESSENTIAL, "https://mail.example/", null, essential = true),
+        ZenRecords.tab(
+            TAB_ESSENTIAL_CONTAINER,
+            "https://chat.example/",
+            null,
+            essential = true,
+            containerGuid = "builtin-2",
+        ),
+        ZenRecords.layout(
+            spaces = listOf(SPACE_PERSONAL, SPACE_WORK),
+            essentials = mapOf("default" to listOf(TAB_ESSENTIAL), "builtin-2" to listOf(TAB_ESSENTIAL_CONTAINER)),
+        ),
+    )
+
+    @Test
+    fun `essentials Zen keeps per container turn essentials per container on once`() = runTest {
+        server.upload(essentialsPerSpace())
+
+        engine.sync(auth)
+        server.upload(listOf(ZenRecords.tab(TAB_PINNED, "https://example.com/", SPACE_WORK)))
+        engine.sync(auth)
+
+        assertEquals(listOf(true), local.essentialsPerContainer)
+    }
+
+    @Test
+    fun `an essential in a container no space opens tabs in keeps essentials shared`() = runTest {
+        server.upload(ZenRecords.desktop())
+
+        engine.sync(auth)
+
+        assertEquals(listOf(false), local.essentialsPerContainer)
+    }
+
+    @Test
+    fun `essentials are only checked until they show it, and again for the next account`() = runTest {
+        val (later, first) = essentialsPerSpace().partition { it.id == SPACE_WORK || it.id == TAB_ESSENTIAL_CONTAINER }
+        server.upload(first)
+        engine.sync(auth)
+        assertEquals(emptyList<Boolean>(), local.essentialsPerContainer)
+
+        server.upload(later)
+        engine.sync(auth)
+        engine = newEngine()
+        engine.sync(auth)
+        assertEquals(listOf(true), local.essentialsPerContainer)
+
+        engine.reset()
+        engine.sync(auth)
+        assertEquals(listOf(true, true), local.essentialsPerContainer)
+    }
 }
 
 /** Dejavu's data in memory. */
@@ -199,7 +257,14 @@ internal class FakeLocalSpaces(
 ) : SpacesLocalData {
     override val defaultWorkspaceName = "Home"
 
+    /** What syncs found of essentials per container, in order. */
+    val essentialsPerContainer = mutableListOf<Boolean>()
+
     override suspend fun read() = LocalSpaces(state, containers)
+
+    override fun useEssentialsPerContainer(enabled: Boolean) {
+        essentialsPerContainer += enabled
+    }
 
     override fun <T> update(transform: (WorkspaceState) -> Pair<WorkspaceState, T>): T {
         val (updated, result) = transform(state)

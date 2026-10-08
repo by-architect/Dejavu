@@ -240,14 +240,15 @@ class WorkspaceRepository private constructor(context: Context) {
 
     /**
      * Makes pinned tabs [pinIds] and the open tabs [sources] essentials, shown in every workspace, as long as there is
-     * room for them below [MAX_ESSENTIALS]. With [perContainer] every container has its own essentials and its own
-     * limit.
+     * room for them below [MAX_ESSENTIALS]. With [perContainer] the essentials shown together, see
+     * [WorkspaceState.essentialsGroupOf], have their own limit.
      */
     fun addToEssentials(sources: List<PinSource>, pinIds: Set<String>, perContainer: Boolean) = mutate { state ->
         val now = now()
-        val counts = state.essentials.groupingBy { it.containerId.takeIf { perContainer } }.eachCount().toMutableMap()
+        fun groupOf(containerId: String?) = state.essentialsGroupOf(containerId).takeIf { perContainer }
+        val counts = state.essentials.groupingBy { groupOf(it.containerId) }.eachCount().toMutableMap()
         fun takeRoom(containerId: String?): Boolean {
-            val group = containerId.takeIf { perContainer }
+            val group = groupOf(containerId)
             val count = counts[group] ?: 0
             if (count >= MAX_ESSENTIALS) return false
             counts[group] = count + 1
@@ -284,12 +285,13 @@ class WorkspaceRepository private constructor(context: Context) {
     }
 
     /**
-     * Moves essential [pinId] to position [index] among the essentials, or with [perContainer] among the essentials of
-     * its container. The other essentials keep their places.
+     * Moves essential [pinId] to position [index] among the essentials, or with [perContainer] among the essentials
+     * shown with it. The other essentials keep their places.
      */
     fun moveEssential(pinId: String, index: Int, perContainer: Boolean) = mutate { state ->
         val item = state.essentials.firstOrNull { it.id == pinId } ?: return@mutate state
-        val inGroup = { other: PinnedItem -> !perContainer || other.containerId == item.containerId }
+        val itemGroup = state.essentialsGroupOf(item.containerId)
+        val inGroup = { other: PinnedItem -> !perContainer || state.essentialsGroupOf(other.containerId) == itemGroup }
         val group = state.essentials.filter(inGroup).toMutableList()
         group.remove(item)
         group.add(index.coerceIn(0, group.size), item)
