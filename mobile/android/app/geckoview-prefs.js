@@ -387,3 +387,13 @@ pref("xpinstall.whitelist.fileRequest", false);
 pref("browser.ipProtection.enabled", true);
 pref("browser.ipProtection.guardian.endpoint", "https://vpn.mozilla.org/");
 pref("toolkit.ipProtection.android.authProvider", "fxa");
+
+// Dejavu: use less memory on phones. Fewer pages are kept ready for going back, web processes in the background give
+// their free memory back, no web process is started ahead of time to wait idle, and the caches of pages, decoded
+// pictures and streamed video held in memory are smaller. Pages beyond the third one back load again instead.
+pref("browser.sessionhistory.max_total_viewers", 3);
+pref("dom.memory.memory_pressure_on_background", 1);
+pref("dom.ipc.processPrelaunch.enabled", false);
+pref("browser.cache.memory.capacity", 16384);
+pref("image.mem.surfacecache.max_size_kb", 262144);
+pref("media.mediasource.eviction_threshold.video", 83886080);

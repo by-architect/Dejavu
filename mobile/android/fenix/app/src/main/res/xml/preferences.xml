@@ -21,19 +21,13 @@
 
         <org.mozilla.fenix.settings.account.AccountPreference
             android:icon="@drawable/mozac_ic_avatar_circle_24"
-            android:key="@string/pref_key_account" />
+            android:key="@string/pref_key_account"
+            app:widgetLayout="@layout/dejavu_preference_badge" />
 
         <org.mozilla.fenix.settings.account.AccountAuthErrorPreference
             android:icon="@drawable/ic_account_warning"
             android:key="@string/pref_key_account_auth_error" />
     </androidx.preference.PreferenceCategory>
-
-    <androidx.preference.Preference
-        app:iconSpaceReserved="false"
-        app:widgetLayout="@layout/dejavu_preference_badge"
-        android:key="@string/pref_key_dejavu_sync"
-        android:title="@string/dejavu_settings_sync"
-        android:summary="@string/dejavu_settings_sync_summary" />
 
     <androidx.preference.Preference
         app:iconSpaceReserved="false"

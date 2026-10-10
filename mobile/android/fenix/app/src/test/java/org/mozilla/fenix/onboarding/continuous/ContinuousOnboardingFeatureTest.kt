@@ -141,7 +141,7 @@ class ContinuousOnboardingFeatureTest {
     fun `getSyncOnboardingPageState returns the expected state`() {
         val expectedState =
             OnboardingPageState(
-                imageRes = R.drawable.nova_onboarding_sync,
+                imageRes = R.drawable.dejavu_illustration_devices,
                 title = "Instantly pick up where you left off",
                 description =
                     "Grab bookmarks, passwords, and more on any device in a snap. Your personal data stays safe and secure with encryption.",
@@ -282,10 +282,10 @@ class ContinuousOnboardingFeatureTest {
     fun `getNotificationOnboardingPageState returns the expected state`() {
         val expectedState =
             OnboardingPageState(
-                imageRes = R.drawable.nova_onboarding_notifications,
-                title = "Notifications help you stay safer with Firefox",
+                imageRes = R.drawable.dejavu_illustration_notifications,
+                title = "Notifications keep you up to date",
                 description =
-                    "Discover the latest privacy features in Firefox so you’re always up to date on how to stay protected.",
+                    "See when downloads finish, and play or pause music and videos without opening Dejavu.",
                 primaryButton =
                     Action(
                         text = "Turn on notifications",

@@ -66,6 +66,8 @@ import org.mozilla.fenix.dejavu.features.FeatureTourDialog
 import org.mozilla.fenix.dejavu.settings.DejavuSettings
 import org.mozilla.fenix.dejavu.settings.resolveRowActions
 import org.mozilla.fenix.dejavu.settings.resolveSelectionActions
+import org.mozilla.fenix.dejavu.sync.DejavuSync
+import org.mozilla.fenix.dejavu.sync.SyncSourceDialog
 import org.mozilla.fenix.dejavu.ui.LocalPopupTheme
 import org.mozilla.fenix.dejavu.workspaces.PinPlacement
 import org.mozilla.fenix.dejavu.workspaces.PinSource
@@ -199,6 +201,18 @@ fun ComposeView.setDejavuHomeContent(
                             FeatureTour.markSeen(settings)
                             showTour = false
                         },
+                    )
+                }
+            }
+
+            // Once Dejavu found what the account syncs from Firefox and Zen, it asks which one workspaces follow.
+            val syncStatus by DejavuSync.status.collectAsState()
+            if (!showTour && syncStatus.askSource) {
+                CompositionLocalProvider(LocalPopupTheme provides workspaceState.activeWorkspace?.theme) {
+                    SyncSourceDialog(
+                        status = syncStatus,
+                        onChoose = { DejavuSync.chooseSource(context, it) },
+                        onDismiss = { DejavuSync.putOffSourceChoice(context) },
                     )
                 }
             }

@@ -122,7 +122,8 @@ enum class DejavuFeature(
     ZEN_SYNC(
         R.string.dejavu_feature_zen_sync,
         R.raw.dejavu_feature_zen_sync,
-        listOf(R.string.dejavu_settings, R.string.dejavu_settings_sync),
+        listOf(R.string.preferences_account_settings, R.string.dejavu_settings_sync),
+        iconsR.drawable.mozac_ic_avatar_circle_24,
     ),
     FOLDERS(R.string.dejavu_feature_folders, R.raw.dejavu_feature_folders),
     DRAG(R.string.dejavu_feature_drag, R.raw.dejavu_feature_drag),
@@ -321,6 +322,11 @@ private fun FeatureAnimation(@RawRes animation: Int, playing: Boolean, modifier:
             (drawable as? Animatable)?.let { if (playing) it.start() else it.stop() }
         },
         modifier = modifier,
+        // A page swiped away lets go of its animation and the frames it decoded.
+        onRelease = { view ->
+            (view.drawable as? Animatable)?.stop()
+            view.setImageDrawable(null)
+        },
     )
 }
 

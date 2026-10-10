@@ -29,7 +29,7 @@
 
     <PreferenceCategory
         android:layout="@layout/preference_category_padding_top_no_icon_style"
-        android:title="@string/preferences_category_sync_controls">
+        android:title="@string/dejavu_account_sync_controls">
 
         <Preference
             android:key="@string/pref_key_sync_now"
@@ -38,11 +38,49 @@
 
     </PreferenceCategory>
 
+    <!-- Dejavu: syncing workspaces with Firefox or Zen, see DejavuAccountSync. -->
+    <PreferenceCategory
+        android:key="@string/pref_key_dejavu_sync_category"
+        android:layout="@layout/preference_category_with_summary_no_icon_style"
+        android:title="@string/dejavu_settings_sync">
+
+        <org.mozilla.fenix.settings.account.AccountSettingsSwitchPreference
+            android:key="@string/pref_key_dejavu_sync_enabled"
+            android:persistent="false"
+            android:title="@string/dejavu_sync_enabled"
+            app:icon="@drawable/mozac_ic_sync_tabs_24" />
+
+        <Preference
+            android:key="@string/pref_key_dejavu_sync_source"
+            android:persistent="false"
+            android:title="@string/dejavu_sync_source"
+            app:icon="@drawable/mozac_ic_device_desktop_24" />
+
+        <org.mozilla.fenix.settings.account.AccountSettingsSwitchPreference
+            android:key="@string/pref_key_dejavu_sync_normal_tabs"
+            android:persistent="false"
+            android:title="@string/dejavu_sync_normal_tabs"
+            app:icon="@drawable/mozac_ic_tab_tray_24" />
+
+        <Preference
+            android:key="@string/pref_key_dejavu_sync_turn_on"
+            android:persistent="false"
+            android:title="@string/dejavu_sync_turn_on"
+            android:visible="false"
+            app:icon="@drawable/mozac_ic_sync_24" />
+
+        <Preference
+            android:key="@string/pref_key_dejavu_sync_hint"
+            android:persistent="false"
+            android:selectable="false"
+            app:iconSpaceReserved="false" />
+
+    </PreferenceCategory>
+
     <PreferenceCategory
         android:key="@string/preferences_sync_category"
         android:layout="@layout/preference_category_with_summary_no_icon_style"
-        android:summary="@string/preferences_sync_category_summary"
-        android:title="@string/preferences_category_sync">
+        android:title="@string/preferences_sync_category">
 
         <org.mozilla.fenix.settings.account.AccountSettingsSwitchPreference
             android:defaultValue="true"
@@ -85,12 +123,12 @@
 
   <PreferenceCategory
     android:key="@string/preferences_device_name_category"
-    android:title="@string/preferences_device_name_category"
+    android:title="@string/preferences_sync_device_name"
     android:layout="@layout/preference_category_no_icon_style">
 
     <EditTextPreference
       android:key="@string/pref_key_sync_device_name"
-      android:title="@string/preferences_sync_change_device_name"
+      android:title="@string/dejavu_account_change_device_name"
       app:iconSpaceReserved="false" />
 
   </PreferenceCategory>

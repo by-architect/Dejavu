@@ -40,7 +40,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/title_sign_in"
-            app:srcCompat="@drawable/nova_onboarding_sync_qr" />
+            app:srcCompat="@drawable/dejavu_illustration_devices" />
 
         <TextView
             android:id="@+id/signInInstructions"

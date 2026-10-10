@@ -12,7 +12,7 @@ import org.json.JSONObject
 
 /**
  * A token server and Sync 1.5 storage in memory, with the account's crypto/keys and meta/global set up like Firefox
- * does. [upload] plays another device, like Zen desktop.
+ * does. [upload] plays another device, like Zen desktop, and [put] and [delete] Firefox writing its other collections.
  */
 internal class FakeSyncServer(syncKey: String) : SyncHttp {
     private class Bso(val payload: String, val modified: Long)
@@ -20,6 +20,7 @@ internal class FakeSyncServer(syncKey: String) : SyncHttp {
     private val accountKeys = KeyBundle.fromSyncKey(syncKey)
     private val collectionKeys = KeyBundle(ByteArray(KEY_SIZE) { 1 }, ByteArray(KEY_SIZE) { 2 })
     private val collections = HashMap<String, LinkedHashMap<String, Bso>>()
+    private val collectionModified = HashMap<String, Long>()
     private var now = START
 
     /** "METHOD path" of every request, in order. */
@@ -60,6 +61,18 @@ internal class FakeSyncServer(syncKey: String) : SyncHttp {
         records.forEach { put(COLLECTION, it.id, encrypt(it), modified) }
     }
 
+    /** Writes [cleartext] as record [id] of [collection], as another device would. */
+    fun put(collection: String, id: String, cleartext: JSONObject) {
+        val record = JSONObject(cleartext.toString()).put("id", id)
+        put(collection, id, SyncJson.stringify(collectionKeys.encrypt(SyncJson.stringify(record))), tick())
+    }
+
+    /** Deletes record [id] of [collection], like Firefox does with its own records when it signs out. */
+    fun delete(collection: String, id: String) {
+        collections[collection]?.remove(id)
+        collectionModified[collection] = tick()
+    }
+
     fun record(id: String): SpacesRecord? = collections[COLLECTION]?.get(id)?.let { decrypt(id, it) }
 
     fun records(): Map<String, SpacesRecord> =
@@ -98,14 +111,16 @@ internal class FakeSyncServer(syncKey: String) : SyncHttp {
             }
             path == "storage/meta/global" -> bso("meta", "global")
             path == "storage/crypto/keys" -> bso("crypto", "keys")
-            path == "storage/$COLLECTION" && method == "GET" -> {
+            path.startsWith("storage/") && method == "GET" -> {
+                val collection = path.removePrefix("storage/")
+                val records = collections[collection] ?: return SyncResponse(404, emptyMap(), "{}")
                 val newer = query["newer"]
                 val items = JSONArray()
-                collections[COLLECTION].orEmpty().entries
+                records.entries
                     .filter { newer == null || isNewerTimestamp(format(it.value.modified), newer) }
                     .sortedBy { it.value.modified }
                     .forEach { (id, bso) -> items.put(JSONObject().put("id", id).put("payload", bso.payload)) }
-                SyncResponse(200, mapOf("X-Last-Modified" to format(modified(COLLECTION))), items.toString())
+                SyncResponse(200, mapOf("X-Last-Modified" to format(modified(collection))), items.toString())
             }
             path == "storage/$COLLECTION" && method == "POST" -> {
                 if (conflictOnNextUpload) {
@@ -143,9 +158,10 @@ internal class FakeSyncServer(syncKey: String) : SyncHttp {
 
     private fun put(collection: String, id: String, payload: String, modified: Long) {
         collections.getOrPut(collection) { LinkedHashMap() }[id] = Bso(payload, modified)
+        collectionModified[collection] = maxOf(collectionModified[collection] ?: 0L, modified)
     }
 
-    private fun modified(collection: String): Long = collections[collection]?.values?.maxOfOrNull { it.modified } ?: 0L
+    private fun modified(collection: String): Long = collectionModified[collection] ?: 0L
 
     private fun tick(): Long {
         now += 1

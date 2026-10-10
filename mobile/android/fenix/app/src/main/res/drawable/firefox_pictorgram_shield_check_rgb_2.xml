@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<!-- Dejavu: replaces the Firefox shield of the protections dashboard with Dejavu's, from dejavu_illustration_shield. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <path android:pathData="M12,2 l7.5,2.75 v6.25 c0,5.5 -3.25,9.25 -7.5,11 c-4.25,-1.75 -7.5,-5.5 -7.5,-11 v-6.25 z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:type="linear"
+                android:startX="4.5"
+                android:startY="2"
+                android:endX="19.5"
+                android:endY="22">
+                <item android:offset="0" android:color="#FFFFD67A" />
+                <item android:offset="1" android:color="#FFE3A43A" />
+            </gradient>
+        </aapt:attr>
+    </path>
+    <path
+        android:pathData="M8.75,12.25 l2.25,2.25 l4.5,-4.75"
+        android:strokeColor="#FF5A452A"
+        android:strokeWidth="1.5"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round" />
+</vector>

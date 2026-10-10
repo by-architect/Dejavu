@@ -208,7 +208,8 @@ class ContinuousOnboardingFeature(
     @VisibleForTesting
     internal fun getSyncOnboardingPageState(stage: ContinuousOnboardingStage) =
         OnboardingPageState(
-            imageRes = R.drawable.nova_onboarding_sync,
+            // Dejavu: Dejavu's picture instead of Firefox's.
+            imageRes = R.drawable.dejavu_illustration_devices,
             title = activity.getString(R.string.nova_onboarding_sync_title),
             description = activity.getString(R.string.nova_onboarding_sync_subtitle),
             primaryButton =
@@ -309,9 +310,10 @@ class ContinuousOnboardingFeature(
     @RequiresApi(Build.VERSION_CODES.TIRAMISU)
     internal fun getNotificationOnboardingPageState(stage: ContinuousOnboardingStage) =
         OnboardingPageState(
-            imageRes = R.drawable.nova_onboarding_notifications,
-            title = activity.getString(R.string.nova_onboarding_notifications_title),
-            description = activity.getString(R.string.nova_onboarding_notifications_subtitle),
+            // Dejavu: Dejavu's picture, and a text that does not talk about Firefox.
+            imageRes = R.drawable.dejavu_illustration_notifications,
+            title = activity.getString(R.string.dejavu_onboarding_notifications_title),
+            description = activity.getString(R.string.dejavu_onboarding_notifications_subtitle),
             primaryButton =
                 Action(
                     text = activity.getString(R.string.nova_onboarding_notifications_button),

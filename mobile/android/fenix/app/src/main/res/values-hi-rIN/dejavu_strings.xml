@@ -271,19 +271,15 @@
     <string name="dejavu_more_menu_all_added">सभी बटन पहले से मेन्यू में हैं।</string>
     <string name="dejavu_more_menu_preview">प्रीव्यू</string>
 
-    <!-- Settings: syncing workspaces with Zen -->
-    <string name="dejavu_settings_sync">Zen के साथ सिंक करें</string>
-    <string name="dejavu_settings_sync_summary">वर्कस्पेस, कंटेनर, पिन किए गए टैब और एसेंशियल्स</string>
+    <!-- Settings: syncing workspaces with Firefox or Zen -->
+    <string name="dejavu_settings_sync">Firefox या Zen के साथ सिंक करें</string>
     <string name="dejavu_sync_hint">आपके वर्कस्पेस (उनके कलर और आइकन के साथ), कंटेनर, पिन किए गए टैब, एसेंशियल्स और फ़ोल्डर को आपके कंप्यूटर के Zen ब्राउज़र और आपके दूसरे डिवाइस के Dejavu जैसा ही रखता है। इसके लिए वही Mozilla अकाउंट इस्तेमाल होता है जिससे आप Firefox डेटा सिंक करते हैं।</string>
     <string name="dejavu_sync_zen_hint">Zen में सेटिंग और फिर सिंक खोलें, और साइडबार सिंक चालू करें। जो टैब पिन नहीं किए गए हैं, वे सिंक नहीं होते।</string>
     <string name="dejavu_sync_enabled">वर्कस्पेस सिंक करें</string>
-    <string name="dejavu_sync_now">अभी सिंक करें</string>
     <string name="dejavu_sync_syncing">सिंक हो रहा है…</string>
     <string name="dejavu_sync_last_synced">पिछला सिंक: %1$s</string>
     <string name="dejavu_sync_never_synced">अभी तक सिंक नहीं हुआ</string>
     <string name="dejavu_sync_off">इस डिवाइस पर सिंक बंद है</string>
-    <string name="dejavu_sync_signed_out">अपने वर्कस्पेस को Zen के साथ सिंक करने के लिए, अपने Mozilla अकाउंट में साइन इन करें।</string>
-    <string name="dejavu_sync_sign_in">साइन इन करें</string>
     <string name="dejavu_sync_problem_not_set_up">Firefox Sync के आपका अकाउंट सेट अप करने का इंतज़ार किया जा रहा है।</string>
     <string name="dejavu_sync_problem_not_turned_on">आपके Mozilla अकाउंट के लिए स्पेस सिंक बंद है। इसे यहां या Zen की सिंक सेटिंग में चालू करें। यहां चालू करने से यह Zen में भी चालू हो जाता है।</string>
     <string name="dejavu_sync_turn_on">स्पेस सिंक चालू करें</string>
@@ -327,4 +323,41 @@
     <string name="dejavu_feature_drag">टैब को फ़ोल्डर और एसेंशियल्स में खींचें</string>
     <string name="dejavu_feature_workspace_order">वर्कस्पेस का क्रम बदलने के लिए उन्हें खींचें</string>
     <string name="dejavu_feature_split_view">किसी लिंक को स्प्लिट व्यू में खोलने के लिए उसे टच करके रखें</string>
+    <string name="dejavu_sync_choose_about">अपने वर्कस्पेस को अपने कंप्यूटर के Firefox या Zen ब्राउज़र के साथ, उसी Mozilla अकाउंट से सिंक करें जिससे आप Firefox डेटा सिंक करते हैं।</string>
+    <string name="dejavu_sync_firefox_about">आपके हर कंप्यूटर के Firefox के खुले टैब को एक वर्कस्पेस के रूप में दिखाता है, और उन्हें अप-टू-डेट रखता है। इसके लिए वही Mozilla अकाउंट इस्तेमाल होता है जिससे आप Firefox डेटा सिंक करते हैं।</string>
+    <string name="dejavu_sync_firefox_hint">अपने कंप्यूटर के Firefox में सेटिंग और फिर सिंक खोलें, और खुले हुए टैब को चालू रखें। Dejavu में खोले गए टैब इसी डिवाइस पर रहते हैं, और Firefox उन्हें आपके दूसरे डिवाइस की सूची में दिखाता है।</string>
+    <string name="dejavu_sync_normal_tabs_firefox_summary">यह उन टैब को भी दिखाता है जो न पिन किए गए हैं और न किसी टैब ग्रुप में हैं, न कि सिर्फ़ पिन किए गए टैब और टैब ग्रुप को।</string>
+    <string name="dejavu_sync_source">किसके साथ सिंक करें</string>
+    <string name="dejavu_sync_source_none">अभी तक नहीं चुना गया</string>
+    <string name="dejavu_sync_choose_title">चुनें कि किसके साथ सिंक करना है</string>
+    <string name="dejavu_sync_choose_intro">Dejavu ने देखा कि आपका Mozilla अकाउंट क्या सिंक करता है। वह ब्राउज़र चुनें जिसके हिसाब से आपके वर्कस्पेस चलेंगे। जब तक आप नहीं चुनते, वर्कस्पेस सिंक नहीं होते।</string>
+    <string name="dejavu_sync_choose_later">बाद में</string>
+    <string name="dejavu_sync_choose_start">सिंक शुरू करें</string>
+    <string name="dejavu_sync_choose_firefox">Firefox के साथ सिंक करें</string>
+    <string name="dejavu_sync_choose_zen">Zen के साथ सिंक करें</string>
+    <string name="dejavu_sync_looking">Firefox और Zen का डेटा खोजा जा रहा है…</string>
+    <string name="dejavu_sync_found_firefox">Firefox का डेटा मिला</string>
+    <string name="dejavu_sync_found_zen">Zen का डेटा मिला</string>
+    <string name="dejavu_sync_found_no_firefox">Firefox का कोई डेटा नहीं मिला</string>
+    <string name="dejavu_sync_found_no_zen">Zen का कोई डेटा नहीं मिला</string>
+    <string name="dejavu_sync_found_zen_off">Zen मिला, लेकिन उसका साइडबार सिंक बंद है</string>
+    <string name="dejavu_sync_found_tabs">खुले हुए टैब: %1$d</string>
+    <string name="dejavu_sync_found_pinned">पिन किए गए टैब: %1$d</string>
+    <string name="dejavu_sync_found_groups">टैब ग्रुप: %1$d</string>
+    <string name="dejavu_sync_found_workspaces">वर्कस्पेस: %1$d</string>
+    <string name="dejavu_sync_found_essentials">एसेंशियल्स: %1$d</string>
+    <string name="dejavu_sync_found_folders">फ़ोल्डर: %1$d</string>
+    <string name="dejavu_sync_firefox_summary">Firefox वाले हर कंप्यूटर को अपना अलग वर्कस्पेस मिलता है: पिन किए गए टैब पिन ही रहते हैं, टैब ग्रुप फ़ोल्डर बन जाते हैं, और उसके दूसरे टैब वहीं खुलते हैं। यहां उसका कोई टैब बंद करने पर वह उस कंप्यूटर पर भी बंद हो जाता है।</string>
+    <string name="dejavu_sync_zen_summary">वर्कस्पेस, पिन किए गए टैब, एसेंशियल्स और फ़ोल्डर Zen और Dejavu में एक जैसे रहते हैं, दोनों तरफ़ से।</string>
+    <string name="dejavu_sync_switch_from_zen">Zen से आए वर्कस्पेस Dejavu में रहते हैं, लेकिन अब सिंक नहीं होते।</string>
+    <string name="dejavu_sync_switch_from_firefox">Firefox वाले आपके कंप्यूटर के वर्कस्पेस Dejavu से हट जाते हैं। उनके टैब Firefox में बने रहते हैं।</string>
+    <string name="dejavu_sync_problem_choose">जब तक आप Firefox या Zen नहीं चुनते, सिंक रुका हुआ है।</string>
+    <string name="dejavu_sync_problem_tabs_off">आपके Mozilla अकाउंट के लिए खुले हुए टैब का सिंक बंद है। अपने अकाउंट की सिंक सेटिंग में, यहां या Firefox में, खुले हुए टैब चालू करें।</string>
+    <string name="dejavu_sync_problem_no_firefox">अभी तक किसी भी कंप्यूटर का Firefox अपने खुले टैब आपके अकाउंट में सिंक नहीं करता।</string>
+    <string name="dejavu_sync_unnamed_group">टैब ग्रुप</string>
+    <string name="dejavu_account_sync_controls">सिंक</string>
+    <string name="dejavu_account_synced_data_none">आप कुछ भी सिंक नहीं कर रहे हैं। चुनें कि आपके डिवाइस के बीच क्या सिंक रखना है।</string>
+    <string name="dejavu_account_change_device_name">डिवाइस का नाम बदलें</string>
+    <string name="dejavu_onboarding_notifications_title">नोटिफ़िकेशन आपको अप-टू-डेट रखते हैं</string>
+    <string name="dejavu_onboarding_notifications_subtitle">देखें कि डाउनलोड कब पूरे होते हैं, और Dejavu खोले बिना म्यूज़िक और वीडियो चलाएं या पॉज़ करें।</string>
 </resources>

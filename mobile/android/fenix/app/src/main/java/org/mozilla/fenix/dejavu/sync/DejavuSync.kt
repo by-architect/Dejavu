@@ -5,6 +5,7 @@
 package org.mozilla.fenix.dejavu.sync
 
 import android.content.Context
+import android.os.SystemClock
 import androidx.core.content.edit
 import androidx.lifecycle.DefaultLifecycleObserver
 import androidx.lifecycle.LifecycleOwner
@@ -41,6 +42,7 @@ import mozilla.components.browser.state.state.createTab
 import mozilla.components.browser.state.store.BrowserStore
 import mozilla.components.concept.sync.AccountObserver
 import mozilla.components.concept.sync.AuthType
+import mozilla.components.concept.sync.DeviceCommandOutgoing
 import mozilla.components.concept.sync.OAuthAccount
 import mozilla.components.lib.state.ext.flow
 import mozilla.components.service.fxa.manager.SCOPE_SYNC
@@ -57,7 +59,7 @@ import org.mozilla.fenix.dejavu.workspaces.WorkspaceRepository
 import org.mozilla.fenix.dejavu.workspaces.WorkspaceState
 import org.mozilla.fenix.ext.components
 
-/** Why spaces sync is not working, as shown in its settings. */
+/** Why workspace sync is not working, as shown in its settings. */
 enum class DejavuSyncProblem {
     /** Firefox Sync has not set up the account's storage yet. It is done by the first sync of the browser. */
     NOT_SET_UP,
@@ -76,17 +78,44 @@ enum class DejavuSyncProblem {
 
     /** The servers failed or asked to wait. */
     SERVER,
+
+    /** Sync waits until the user chooses which browser workspaces follow, see [DejavuSync.chooseSource]. */
+    CHOOSE_SOURCE,
+
+    /** Open tabs are not synced for the account, so Firefox's tabs cannot be shown. */
+    TABS_OFF,
+
+    /** No Firefox on a computer syncs its open tabs to the account. */
+    NO_FIREFOX,
+}
+
+/** Which browser Dejavu's workspaces sync with. */
+enum class DejavuSyncSource(internal val key: String) {
+    /** Zen's spaces, both ways, see [SpacesSyncEngine]. Dejavu on other devices uses them too. */
+    ZEN("zen"),
+
+    /** The open tabs of Firefox on the account's computers, see [FirefoxTabsEngine]. */
+    FIREFOX("firefox"),
+    ;
+
+    internal companion object {
+        fun fromKey(key: String?): DejavuSyncSource? = entries.firstOrNull { it.key == key }
+    }
 }
 
 /**
- * State of spaces sync.
+ * State of workspace sync.
  *
- * @property enabled Whether spaces sync is turned on in Dejavu.
+ * @property enabled Whether workspace sync is turned on in Dejavu.
  * @property normalTabs Whether tabs that are not pinned are synced too, like Zen's "Include unpinned tabs".
  * @property signedIn Whether a Mozilla account is signed in.
  * @property syncing Whether a sync is running.
  * @property lastSynced Time of the last complete sync in milliseconds, or 0.
  * @property problem What stopped the last sync, if anything.
+ * @property source The browser workspaces sync with, or `null` until the user chose one. Sync waits until then.
+ * @property found What the account syncs from Firefox and Zen, once Dejavu looked.
+ * @property askSource Whether to ask the user which browser to sync with: none is chosen, something was found, and the
+ *   user did not put the question off.
  */
 data class DejavuSyncStatus(
     val enabled: Boolean = true,
@@ -95,10 +124,15 @@ data class DejavuSyncStatus(
     val syncing: Boolean = false,
     val lastSynced: Long = 0L,
     val problem: DejavuSyncProblem? = null,
+    val source: DejavuSyncSource? = null,
+    val found: FoundSyncData? = null,
+    val askSource: Boolean = false,
 )
 
 /**
- * Syncs Dejavu's workspaces with Zen through the Mozilla account, see [SpacesSyncEngine].
+ * Syncs Dejavu's workspaces through the Mozilla account, with Zen ([SpacesSyncEngine]) or with Firefox
+ * ([FirefoxTabsEngine]), whichever the user chose after Dejavu showed what the account has of each
+ * ([SyncSourceScanner]). Until the user chooses, workspaces are not synced.
  *
  * Syncs run one at a time: after Firefox's own syncs, when the app comes to the foreground and every few minutes
  * while it is shown, a few seconds after local changes, and when the app goes to the background with changes not
@@ -109,11 +143,17 @@ object DejavuSync {
     private const val PREFS_NAME = "kaizen_sync"
     private const val KEY_ENABLED = "enabled"
     private const val KEY_NORMAL_TABS = "normal_tabs"
+    private const val KEY_SOURCE = "source"
+    private const val KEY_SOURCE_PUT_OFF = "source_put_off"
     private const val STORE_FILE = "kaizen_spaces_sync.json"
+    private const val FIREFOX_STORE_FILE = "dejavu_firefox_sync.json"
     private const val LOCAL_CHANGE_DELAY_MS = 3_000L
     private const val FOREGROUND_POLL_MS = 5 * 60_000L
     private const val MIN_INTERVAL_MS = 10_000L
     private const val CONFLICT_RETRY_MS = 5_000L
+    private const val DEVICES_REFRESH_MS = 60_000L
+    private const val UNREACHABLE_RETRY_MS = 30_000L
+    private const val MAX_RETRY_DOUBLINGS = 4
 
     private val logger = Logger("DejavuSync")
     private val scope = CoroutineScope(SupervisorJob() + Dispatchers.IO)
@@ -126,19 +166,38 @@ object DejavuSync {
 
     @Volatile
     private var engine: SpacesSyncEngine? = null
+
+    @Volatile
+    private var firefoxEngine: FirefoxTabsEngine? = null
+
+    @Volatile
+    private var scanner: SyncSourceScanner? = null
     private var pollJob: Job? = null
 
     @Volatile
     private var turnOnRequested = false
 
+    /** When the account's devices were last asked for, in [SystemClock.elapsedRealtime] milliseconds, or 0. */
+    @Volatile
+    private var devicesRefreshedAt = 0L
+
+    @Volatile
+    private var scanRequested = false
+
+    @Volatile
+    private var sourcePutOff = false
+
     @Volatile
     private var accountManagerReady = false
     private var lastRun = 0L
 
-    /** State of spaces sync, for its settings. */
+    /** Syncs in a row that could not reach the servers, which space out the next tries. */
+    private var failedToReach = 0
+
+    /** State of workspace sync, for its settings. */
     val status: StateFlow<DejavuSyncStatus> = _status.asStateFlow()
 
-    /** Starts spaces sync. Only the first call does anything. */
+    /** Starts workspace sync. Only the first call does anything. */
     fun install(context: Context) {
         synchronized(this) {
             if (appContext != null) return
@@ -147,22 +206,33 @@ object DejavuSync {
         val app = context.applicationContext
         val prefs = app.getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE)
         val store = SpacesSyncStore(File(app.filesDir, STORE_FILE))
+        val firefoxStore = FirefoxSyncStore(File(app.filesDir, FIREFOX_STORE_FILE))
+        // Dejavu synced with Zen before it could sync with Firefox; those who did keep doing it without being asked.
+        val source = DejavuSyncSource.fromKey(prefs.getString(KEY_SOURCE, null))
+            ?: DejavuSyncSource.ZEN.takeIf { store.load().syncId != null }?.also { zen ->
+                prefs.edit { putString(KEY_SOURCE, zen.key) }
+            }
+        sourcePutOff = prefs.getBoolean(KEY_SOURCE_PUT_OFF, false)
         _status.update {
             it.copy(
                 enabled = prefs.getBoolean(KEY_ENABLED, true),
                 normalTabs = prefs.getBoolean(KEY_NORMAL_TABS, true),
-                lastSynced = store.load().lastSynced,
+                source = source,
+                lastSynced = when (source) {
+                    DejavuSyncSource.ZEN -> store.load().lastSynced
+                    DejavuSyncSource.FIREFOX -> firefoxStore.load().lastSynced
+                    null -> 0L
+                },
             )
         }
 
         scope.launch(Dispatchers.Main) {
             // The fetch client comes with the Gecko runtime, which is created on the main thread.
-            engine = SpacesSyncEngine(
-                http = FetchSyncHttp(app.components.core.client),
-                store = store,
-                local = DejavuSpacesData(app),
-                log = { logger.info(it) },
-            )
+            val http = FetchSyncHttp(app.components.core.client)
+            val data = DejavuSpacesData(app)
+            engine = SpacesSyncEngine(http = http, store = store, local = data, log = { logger.info(it) })
+            firefoxEngine = FirefoxTabsEngine(http = http, store = firefoxStore, local = data, log = { logger.info(it) })
+            scanner = SyncSourceScanner(http)
             scope.launch { for (manual in requests) runRequest(manual) }
             ProcessLifecycleOwner.get().lifecycle.addObserver(lifecycleObserver)
             val services = app.components.backgroundServices
@@ -190,19 +260,64 @@ object DejavuSync {
         syncNow()
     }
 
-    /** Turns spaces sync on or off on this device only; other devices keep syncing. */
+    /** Turns workspace sync on or off on this device only; other devices keep syncing. */
     fun setEnabled(context: Context, enabled: Boolean) {
-        context.getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE).edit { putBoolean(KEY_ENABLED, enabled) }
+        prefs(context).edit { putBoolean(KEY_ENABLED, enabled) }
         _status.update { it.copy(enabled = enabled, problem = null) }
         if (enabled) syncNow()
     }
 
     /** Syncs tabs that are not pinned too, or only pinned tabs, folders and essentials. */
     fun setNormalTabs(context: Context, enabled: Boolean) {
-        context.getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE).edit { putBoolean(KEY_NORMAL_TABS, enabled) }
+        prefs(context).edit { putBoolean(KEY_NORMAL_TABS, enabled) }
         _status.update { it.copy(normalTabs = enabled) }
         syncNow()
     }
+
+    /**
+     * Makes workspaces sync with [source] from now on, and syncs. Leaving Firefox takes the workspaces and tabs of its
+     * computers out of Dejavu, as Firefox keeps them; leaving Zen keeps its workspaces here, no longer synced.
+     */
+    fun chooseSource(context: Context, source: DejavuSyncSource) {
+        val previous = _status.value.source
+        prefs(context).edit {
+            putString(KEY_SOURCE, source.key)
+            remove(KEY_SOURCE_PUT_OFF)
+        }
+        sourcePutOff = false
+        _status.update { it.copy(source = source, askSource = false, problem = null) }
+        scope.launch {
+            if (previous == DejavuSyncSource.FIREFOX && source != DejavuSyncSource.FIREFOX) {
+                mutex.withLock {
+                    runCatching { firefoxEngine?.removeAll() }.onFailure { logger.warn("Could not remove Firefox", it) }
+                }
+            }
+            val lastSynced = when (source) {
+                DejavuSyncSource.ZEN -> engine?.lastSynced
+                DejavuSyncSource.FIREFOX -> firefoxEngine?.lastSynced
+            } ?: 0L
+            _status.update { if (it.source == source) it.copy(lastSynced = lastSynced) else it }
+            syncNow()
+        }
+    }
+
+    /**
+     * Leaves the choice of a browser for later: it waits in the sync settings, and workspaces are not synced until the
+     * user chooses.
+     */
+    fun putOffSourceChoice(context: Context) {
+        prefs(context).edit { putBoolean(KEY_SOURCE_PUT_OFF, true) }
+        sourcePutOff = true
+        _status.update { it.copy(askSource = false) }
+    }
+
+    /** Looks again at what the account syncs from Firefox and Zen, to choose between them. */
+    fun findSources() {
+        scanRequested = true
+        syncNow()
+    }
+
+    private fun prefs(context: Context) = context.getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE)
 
     private fun request() {
         requests.trySend(false)
@@ -231,8 +346,15 @@ object DejavuSync {
     private suspend fun hasLocalChanges(): Boolean {
         val current = _status.value
         if (!current.enabled || !current.signedIn) return false
-        val engine = engine ?: return false
-        return mutex.withLock { runCatching { engine.hasLocalChanges() }.getOrDefault(false) }
+        return mutex.withLock {
+            runCatching {
+                when (current.source) {
+                    DejavuSyncSource.ZEN -> engine?.hasLocalChanges() == true
+                    DejavuSyncSource.FIREFOX -> firefoxEngine?.hasLocalChanges() == true
+                    null -> false
+                }
+            }.getOrDefault(false)
+        }
     }
 
     private suspend fun runRequest(manual: Boolean) {
@@ -246,9 +368,9 @@ object DejavuSync {
 
     private suspend fun runSync(manual: Boolean) {
         val context = appContext ?: return
-        val engine = engine ?: return
+        val engines = Engines(engine ?: return, firefoxEngine ?: return, scanner ?: return)
         if (!accountManagerReady || !_status.value.enabled) return
-        if (!manual && engine.backoffUntil > System.currentTimeMillis()) return
+        if (!manual && engines.backoffUntil > System.currentTimeMillis()) return
         val account = context.components.backgroundServices.accountManager.authenticatedAccount()
         if (account == null) {
             _status.update { it.copy(signedIn = false) }
@@ -256,40 +378,126 @@ object DejavuSync {
         }
         val turnOn = turnOnRequested && manual
         turnOnRequested = false
+        val scan = scanRequested
+        scanRequested = false
         mutex.withLock {
+            val source = _status.value.source
             _status.update { it.copy(signedIn = true, syncing = true) }
-            val problem = sync(engine, account, turnOn)
-            val lastSynced = if (problem == null) System.currentTimeMillis() else _status.value.lastSynced
-            _status.update { it.copy(syncing = false, problem = problem, lastSynced = lastSynced) }
+            val outcome = sync(engines, account, source, scan = scan || source == null, turnOn = turnOn)
+            retrySoonIfUnreachable(outcome.problem)
+            _status.update { current ->
+                val found = outcome.found ?: current.found
+                current.copy(
+                    syncing = false,
+                    // The user may have chosen a browser during the sync, which syncs again with it next.
+                    problem = if (current.source == source) outcome.problem else null,
+                    lastSynced = if (outcome.problem == null) System.currentTimeMillis() else current.lastSynced,
+                    found = found,
+                    askSource = current.source == null && !sourcePutOff && found?.isEmpty == false,
+                )
+            }
         }
     }
 
-    /** Syncs once and returns what stopped the sync, if anything. */
-    @Suppress("TooGenericExceptionCaught")
-    private suspend fun sync(engine: SpacesSyncEngine, account: OAuthAccount, turnOn: Boolean): DejavuSyncProblem? =
-        try {
+    /**
+     * Tries again soon when the servers could not be reached while the app is shown, so that a short loss of network
+     * does not leave the problem showing until the next regular sync: after 30 seconds, then twice as long each time.
+     */
+    private fun retrySoonIfUnreachable(problem: DejavuSyncProblem?) {
+        if (problem != DejavuSyncProblem.OFFLINE) {
+            failedToReach = 0
+            return
+        }
+        if (pollJob?.isActive != true) return
+        val wait = minOf(UNREACHABLE_RETRY_MS shl minOf(failedToReach, MAX_RETRY_DOUBLINGS), FOREGROUND_POLL_MS)
+        failedToReach++
+        scope.launch {
+            delay(wait)
+            if (pollJob?.isActive == true) request()
+        }
+    }
+
+    /** The engines of each browser, and the scanner that finds what the account has of them. */
+    private class Engines(val zen: SpacesSyncEngine, val firefox: FirefoxTabsEngine, val scanner: SyncSourceScanner) {
+        val backoffUntil: Long
+            get() = maxOf(zen.backoffUntil, firefox.backoffUntil, scanner.backoffUntil)
+    }
+
+    /** How a sync went: what stopped it, if anything, and what the account has of Firefox and Zen when it looked. */
+    private class Outcome(val problem: DejavuSyncProblem?, val found: FoundSyncData? = null)
+
+    /**
+     * Syncs once with [source], after looking at what the account has of Firefox and Zen when [scan] is set. Without a
+     * source, it only looks.
+     */
+    @Suppress("TooGenericExceptionCaught", "ReturnCount")
+    private suspend fun sync(
+        engines: Engines,
+        account: OAuthAccount,
+        source: DejavuSyncSource?,
+        scan: Boolean,
+        turnOn: Boolean,
+    ): Outcome {
+        return try {
             val auth = authOf(account) ?: throw SyncAuthException("The account has no sync key")
-            problemOf(engine.sync(auth, turnOn))
+            val connected = connectedDevices(account)
+            val refreshDevices: suspend () -> Set<String>? = { refreshedDevices(account) }
+            val found = if (scan) {
+                when (val result = engines.scanner.scan(auth, connected, refreshDevices)) {
+                    ScanResult.NotSetUp -> return Outcome(DejavuSyncProblem.NOT_SET_UP)
+                    is ScanResult.Found -> result.data.also { logScan(it) }
+                }
+            } else {
+                null
+            }
+            val problem = when (source) {
+                null -> DejavuSyncProblem.CHOOSE_SOURCE
+                DejavuSyncSource.ZEN -> problemOf(engines.zen.sync(auth, turnOn))
+                DejavuSyncSource.FIREFOX -> problemOf(engines.firefox.sync(auth, connected, refreshDevices))
+            }
+            Outcome(problem, found)
         } catch (e: SyncConflictException) {
             logger.info("Changed elsewhere during the sync, syncing again", e)
             scope.launch {
                 delay(CONFLICT_RETRY_MS)
                 request()
             }
-            null
+            Outcome(null)
         } catch (e: SyncAuthException) {
             logger.warn("Sync refused the account", e)
-            DejavuSyncProblem.SIGN_IN_AGAIN
+            Outcome(DejavuSyncProblem.SIGN_IN_AGAIN)
         } catch (e: SyncServerException) {
             logger.warn("Sync server error ${e.status}", e)
-            DejavuSyncProblem.SERVER
+            Outcome(DejavuSyncProblem.SERVER)
         } catch (e: IOException) {
             logger.warn("Sync servers not reachable", e)
-            DejavuSyncProblem.OFFLINE
+            Outcome(DejavuSyncProblem.OFFLINE)
         } catch (e: Exception) {
-            logger.error("Spaces sync failed", e)
-            DejavuSyncProblem.SERVER
+            logger.error("Workspace sync failed", e)
+            Outcome(DejavuSyncProblem.SERVER)
         }
+    }
+
+    private fun logScan(found: FoundSyncData) {
+        val zen = found.zen?.let { "${it.spaces} spaces, sidebar sync ${if (it.spacesSyncOn) "on" else "off"}" } ?: "none"
+        logger.info("Found ${found.firefox.size} Firefox computers, Zen: $zen")
+    }
+
+    /** Ids of the account's devices, or `null` while they are not known. */
+    private fun connectedDevices(account: OAuthAccount): Set<String>? =
+        account.deviceConstellation().state()?.otherDevices?.map { it.id }?.toSet()?.takeIf { it.isNotEmpty() }
+
+    /**
+     * Asks the account for its devices again and returns their ids, or `null` when it could not, at most once a minute.
+     * The account tells about a device that joined it only by push messages, which Dejavu may not get.
+     */
+    private suspend fun refreshedDevices(account: OAuthAccount): Set<String>? {
+        val now = SystemClock.elapsedRealtime()
+        if (devicesRefreshedAt != 0L && now - devicesRefreshedAt < DEVICES_REFRESH_MS) return null
+        devicesRefreshedAt = now
+        logger.info("A device is not among the account's devices, asking the account again")
+        return if (account.deviceConstellation().refreshDevices()) connectedDevices(account) else null
+    }
 
     private fun problemOf(result: SpacesSyncResult): DejavuSyncProblem? = when (result) {
         is SpacesSyncResult.Synced -> {
@@ -299,6 +507,12 @@ object DejavuSync {
         SpacesSyncResult.NotSetUp -> DejavuSyncProblem.NOT_SET_UP
         SpacesSyncResult.NotTurnedOn -> DejavuSyncProblem.NOT_TURNED_ON
         is SpacesSyncResult.NeedsUpdate -> DejavuSyncProblem.NEEDS_UPDATE
+    }
+
+    private fun problemOf(result: FirefoxSyncResult): DejavuSyncProblem? = when (result) {
+        is FirefoxSyncResult.Synced -> DejavuSyncProblem.NO_FIREFOX.takeIf { result.computers.isEmpty() }
+        FirefoxSyncResult.NotSetUp -> DejavuSyncProblem.NOT_SET_UP
+        FirefoxSyncResult.TabsOff -> DejavuSyncProblem.TABS_OFF
     }
 
     private suspend fun authOf(account: OAuthAccount): SyncAuth? {
@@ -315,8 +529,27 @@ object DejavuSync {
         }
 
         override fun onLoggedOut() {
-            _status.update { it.copy(signedIn = false, problem = null, lastSynced = 0L) }
-            scope.launch { mutex.withLock { engine?.reset() } }
+            // The next account may sync other browsers, so it is asked again which one to follow.
+            appContext?.let { context ->
+                prefs(context).edit {
+                    remove(KEY_SOURCE)
+                    remove(KEY_SOURCE_PUT_OFF)
+                }
+            }
+            sourcePutOff = false
+            _status.update {
+                it.copy(signedIn = false, problem = null, lastSynced = 0L, source = null, found = null, askSource = false)
+            }
+            scope.launch {
+                mutex.withLock {
+                    engine?.reset()
+                    firefoxEngine?.let { firefox ->
+                        runCatching { firefox.removeAll() }.onFailure { logger.warn("Could not remove Firefox", it) }
+                        firefox.reset()
+                    }
+                    scanner?.reset()
+                }
+            }
         }
 
         override fun onAuthenticationProblems() {
@@ -351,8 +584,8 @@ object DejavuSync {
     }
 }
 
-/** Dejavu's workspaces and containers, as [SpacesSyncEngine] reads and changes them. */
-private class DejavuSpacesData(private val context: Context) : SpacesLocalData {
+/** Dejavu's workspaces, containers and open tabs, as [SpacesSyncEngine] and [FirefoxTabsEngine] read and change them. */
+private class DejavuSpacesData(private val context: Context) : SpacesLocalData, FirefoxLocalData {
     private val repository: WorkspaceRepository
         get() = WorkspaceRepository.get(context)
 
@@ -360,6 +593,12 @@ private class DejavuSpacesData(private val context: Context) : SpacesLocalData {
         get() = DejavuContainerStorage.get(context)
 
     override val defaultWorkspaceName: String = context.getString(R.string.dejavu_workspace_default_name)
+
+    override val unnamedGroup: String = context.getString(R.string.dejavu_sync_unnamed_group)
+
+    override suspend fun closeRemoteTabs(deviceId: String, urls: List<String>) {
+        context.components.backgroundServices.syncedTabsCommands.add(deviceId, DeviceCommandOutgoing.CloseTab(urls))
+    }
 
     override suspend fun read(): LocalSpaces {
         containers.load()

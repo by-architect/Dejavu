@@ -50,6 +50,8 @@ import org.mozilla.fenix.R
 import org.mozilla.fenix.components.accounts.FenixFxAEntryPoint
 import org.mozilla.fenix.compose.snackbar.Snackbar
 import org.mozilla.fenix.compose.snackbar.SnackbarState
+import org.mozilla.fenix.dejavu.sync.DejavuAccountSync
+import org.mozilla.fenix.dejavu.sync.DejavuSync
 import org.mozilla.fenix.e2e.SystemInsetsPaddedFragment
 import org.mozilla.fenix.ext.components
 import org.mozilla.fenix.ext.getPreferenceKey
@@ -119,7 +121,7 @@ class AccountSettingsFragment : PreferenceFragmentCompat(), SystemInsetsPaddedFr
 
     override fun onResume() {
         super.onResume()
-        showToolbar(getString(R.string.preferences_account_and_sync_settings))
+        showToolbar(getString(R.string.preferences_account_settings))
         args.preferenceToScrollTo?.let {
             scrollToPreferenceWithHighlight(it)
         }
@@ -201,6 +203,10 @@ class AccountSettingsFragment : PreferenceFragmentCompat(), SystemInsetsPaddedFr
             )
 
         setupPreferenceListeners()
+        // Dejavu: the account page also syncs workspaces with Firefox or Zen.
+        if (findPreference<Preference>(getString(R.string.pref_key_dejavu_sync_category)) != null) {
+            DejavuAccountSync(this).bind()
+        }
     }
 
     @Suppress("LongMethod", "CyclomaticComplexMethod")
@@ -356,13 +362,12 @@ class AccountSettingsFragment : PreferenceFragmentCompat(), SystemInsetsPaddedFr
                     syncEnginesStatus.getOrElse(it.engine) { false }
                 }
 
-        val summary =
+        requirePreference<PreferenceCategory>(R.string.preferences_sync_category).summary =
             if (isAnyEngineEnabled || syncEnginesStatus.isEmpty()) {
-                R.string.preferences_sync_category_summary
+                null
             } else {
-                R.string.preferences_sync_category_no_engine_selected_summary
+                getString(R.string.dejavu_account_synced_data_none)
             }
-        requirePreference<PreferenceCategory>(R.string.preferences_sync_category).setSummary(summary)
     }
 
     private fun Preference.tintIcon() {
@@ -462,6 +467,7 @@ class AccountSettingsFragment : PreferenceFragmentCompat(), SystemInsetsPaddedFr
             SyncAccount.syncNow.record(NoExtras())
             // Trigger a sync.
             requireComponents.backgroundServices.accountManager.syncNow(SyncReason.User)
+            DejavuSync.syncNow()
             // Poll for device events & update devices.
             accountManager.authenticatedAccount()?.deviceConstellation()?.run {
                 refreshDevices()

@@ -285,23 +285,24 @@
     <string name="dejavu_more_menu_all_added">Every button is already in the menu.</string>
     <string name="dejavu_more_menu_preview">Preview</string>
 
-    <!-- Settings: syncing workspaces with Zen -->
-    <string name="pref_key_dejavu_sync" translatable="false">pref_key_dejavu_sync</string>
-    <string name="dejavu_settings_sync">Sync with Zen</string>
-    <string name="dejavu_settings_sync_summary">Workspaces, containers, pinned tabs and essentials</string>
+    <!-- Account page: syncing workspaces with Firefox or Zen, shown in its own section -->
+    <string name="pref_key_dejavu_sync_category" translatable="false">pref_key_dejavu_sync_category</string>
+    <string name="pref_key_dejavu_sync_enabled" translatable="false">pref_key_dejavu_sync_enabled</string>
+    <string name="pref_key_dejavu_sync_source" translatable="false">pref_key_dejavu_sync_source</string>
+    <string name="pref_key_dejavu_sync_normal_tabs" translatable="false">pref_key_dejavu_sync_normal_tabs</string>
+    <string name="pref_key_dejavu_sync_turn_on" translatable="false">pref_key_dejavu_sync_turn_on</string>
+    <string name="pref_key_dejavu_sync_hint" translatable="false">pref_key_dejavu_sync_hint</string>
+    <string name="dejavu_settings_sync">Sync with Firefox or Zen</string>
     <string name="dejavu_sync_hint">Keeps your workspaces with their colors and icons, containers, pinned tabs, essentials and folders the same as in Zen Browser on your computer and in Dejavu on your other devices. It uses the Mozilla account you sync Firefox data with.</string>
     <string name="dejavu_sync_zen_hint">In Zen, open Settings, then Sync, and turn on sidebar sync. Tabs that are not pinned are not synced.</string>
     <string name="dejavu_sync_enabled">Sync workspaces</string>
     <!-- Switch that also syncs the tabs that are not pinned, like Zen's own "Include unpinned tabs" option. -->
     <string name="dejavu_sync_normal_tabs">Include unpinned tabs</string>
     <string name="dejavu_sync_normal_tabs_summary">Also sync the other tabs of each workspace, not just pinned tabs and folders. Zen syncs them when its own Include unpinned tabs option is on.</string>
-    <string name="dejavu_sync_now">Sync now</string>
     <string name="dejavu_sync_syncing">Syncing…</string>
     <string name="dejavu_sync_last_synced">Last synced %1$s</string>
     <string name="dejavu_sync_never_synced">Not synced yet</string>
     <string name="dejavu_sync_off">Sync is off on this device</string>
-    <string name="dejavu_sync_signed_out">Sign in to your Mozilla account to sync your workspaces with Zen.</string>
-    <string name="dejavu_sync_sign_in">Sign in</string>
     <string name="dejavu_sync_problem_not_set_up">Waiting for Firefox Sync to finish setting up your account.</string>
     <string name="dejavu_sync_problem_not_turned_on">Spaces sync is off for your Mozilla account. Turn it on here or in Zen’s sync settings. Turning it on here also turns it on in Zen.</string>
     <string name="dejavu_sync_turn_on">Turn on spaces sync</string>
@@ -309,6 +310,70 @@
     <string name="dejavu_sync_problem_sign_in">Sign in to your Mozilla account again to keep syncing.</string>
     <string name="dejavu_sync_problem_offline">Could not reach the sync servers. Dejavu will try again.</string>
     <string name="dejavu_sync_problem_server">The sync servers had a problem. Dejavu will try again.</string>
+    <!-- Sync settings, before the user chose whether workspaces sync with Firefox or with Zen. -->
+    <string name="dejavu_sync_choose_about">Sync your workspaces with Firefox or Zen Browser on your computer, through the Mozilla account you sync Firefox data with.</string>
+    <!-- Sync settings, while workspaces sync with Firefox. -->
+    <string name="dejavu_sync_firefox_about">Shows the open tabs of Firefox on each of your computers as a workspace, and keeps them up to date. It uses the Mozilla account you sync Firefox data with.</string>
+    <!-- Sync settings, below the other settings while workspaces sync with Firefox. -->
+    <string name="dejavu_sync_firefox_hint">In Firefox on your computer, open Settings, then Sync, and keep Open tabs on. Tabs you open in Dejavu stay on this device, and Firefox lists them under your other devices.</string>
+    <!-- Summary of the "Include unpinned tabs" switch while workspaces sync with Firefox. -->
+    <string name="dejavu_sync_normal_tabs_firefox_summary">Also show the tabs that are neither pinned nor in a tab group, not just pinned tabs and tab groups.</string>
+    <!-- Sync settings: the setting that shows and changes which browser workspaces sync with. -->
+    <string name="dejavu_sync_source">Sync with</string>
+    <string name="dejavu_sync_source_firefox" translatable="false">Firefox</string>
+    <string name="dejavu_sync_source_zen" translatable="false">Zen</string>
+    <!-- Value of the "Sync with" setting before the user chose a browser. -->
+    <string name="dejavu_sync_source_none">Not chosen yet</string>
+    <!-- Title of the dialog, and of the box in the sync settings, that ask whether workspaces sync with Firefox or with Zen. -->
+    <string name="dejavu_sync_choose_title">Choose what to sync with</string>
+    <string name="dejavu_sync_choose_intro">Dejavu looked at what your Mozilla account syncs. Choose the browser your workspaces follow. Until you choose, workspaces are not synced.</string>
+    <!-- Button that closes the dialog without choosing; the choice then waits in the sync settings. -->
+    <string name="dejavu_sync_choose_later">Later</string>
+    <!-- Button that starts syncing, before a browser is chosen. -->
+    <string name="dejavu_sync_choose_start">Start syncing</string>
+    <string name="dejavu_sync_choose_firefox">Sync with Firefox</string>
+    <string name="dejavu_sync_choose_zen">Sync with Zen</string>
+    <string name="dejavu_sync_looking">Looking for Firefox and Zen data…</string>
+    <!-- What Dejavu found on the Mozilla account, shown under each browser to choose from. -->
+    <string name="dejavu_sync_found_firefox">Found Firefox data</string>
+    <string name="dejavu_sync_found_zen">Found Zen data</string>
+    <string name="dejavu_sync_found_no_firefox">No Firefox data found</string>
+    <string name="dejavu_sync_found_no_zen">No Zen data found</string>
+    <!-- Zen is signed in to the account, but its own setting that syncs its sidebar (spaces) is off. -->
+    <string name="dejavu_sync_found_zen_off">Found Zen, but its sidebar sync is off</string>
+    <!-- Counts of what was found, shown together on one line, like "Open tabs: 12 · Pinned tabs: 3". %1$d is the count. -->
+    <string name="dejavu_sync_found_tabs">Open tabs: %1$d</string>
+    <string name="dejavu_sync_found_pinned">Pinned tabs: %1$d</string>
+    <string name="dejavu_sync_found_groups">Tab groups: %1$d</string>
+    <string name="dejavu_sync_found_workspaces">Workspaces: %1$d</string>
+    <string name="dejavu_sync_found_essentials">Essentials: %1$d</string>
+    <string name="dejavu_sync_found_folders">Folders: %1$d</string>
+    <!-- What syncing with Firefox does, under the Firefox choice. -->
+    <string name="dejavu_sync_firefox_summary">Each Firefox computer gets its own workspace: pinned tabs stay pinned, tab groups become folders, and its other tabs open there. Closing one of its tabs here closes it on the computer too.</string>
+    <!-- What syncing with Zen does, under the Zen choice. -->
+    <string name="dejavu_sync_zen_summary">Workspaces, pinned tabs, essentials and folders stay the same in Zen and in Dejavu, both ways.</string>
+    <!-- Shown when switching from Zen to Firefox. -->
+    <string name="dejavu_sync_switch_from_zen">Workspaces from Zen stay in Dejavu, but no longer sync.</string>
+    <!-- Shown when switching from Firefox to Zen. -->
+    <string name="dejavu_sync_switch_from_firefox">The workspaces of your Firefox computers leave Dejavu. Firefox keeps their tabs.</string>
+    <string name="dejavu_sync_problem_choose">Sync is paused until you choose Firefox or Zen.</string>
+    <!-- "Open tabs" is the name of the switch in the sync settings of Firefox and of this app's Mozilla account settings. -->
+    <string name="dejavu_sync_problem_tabs_off">Open tabs sync is off for your Mozilla account. Turn on Open tabs in the sync settings of your account, here or in Firefox.</string>
+    <string name="dejavu_sync_problem_no_firefox">No Firefox on a computer syncs its open tabs to your account yet.</string>
+    <!-- Name of the folder showing a Firefox tab group that has no name. -->
+    <string name="dejavu_sync_unnamed_group">Tab group</string>
+    <!-- Account page, opened from the account button at the top of the home screen: heading of the section with the
+         "Sync now" button. -->
+    <string name="dejavu_account_sync_controls">Sync</string>
+    <!-- Account page: shown under the section that turns syncing bookmarks, history, passwords, open tabs and payment
+         methods on and off, when all of them are off. -->
+    <string name="dejavu_account_synced_data_none">You aren’t syncing anything. Choose what to keep synced across your devices.</string>
+    <!-- Account page: changes this device's name, as other devices show it. -->
+    <string name="dejavu_account_change_device_name">Change device name</string>
+    <!-- Card shown a few days after installing, which asks to turn on notifications. -->
+    <string name="dejavu_onboarding_notifications_title">Notifications keep you up to date</string>
+    <!-- Text of the card that asks to turn on notifications. -->
+    <string name="dejavu_onboarding_notifications_subtitle">See when downloads finish, and play or pause music and videos without opening Dejavu.</string>
     <string name="dejavu_container_personal">Personal</string>
     <string name="dejavu_container_work">Work</string>
     <string name="dejavu_container_banking">Banking</string>

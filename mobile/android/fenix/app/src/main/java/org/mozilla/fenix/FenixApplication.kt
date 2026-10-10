@@ -6,6 +6,7 @@ package org.mozilla.fenix
 
 import android.app.ActivityManager
 import android.app.Application
+import android.content.ComponentCallbacks2
 import android.content.Context
 import android.content.Intent
 import android.os.Build
@@ -801,10 +802,18 @@ open class FenixApplication : Application(), Provider, ThemeProvider {
                 )
             )
 
-            components.core.icons.onTrimMemory(level)
+            components.core.icons.onTrimMemory(dejavuIconsTrimLevel(level))
             components.core.store.dispatch(SystemAction.LowMemoryAction(level))
         }
     }
+
+    /**
+     * Dejavu: since Android 14, apps are only told that they went to the background, a level the site icons never freed
+     * their memory for. It now counts like the system running low on memory in the background.
+     */
+    @Suppress("DEPRECATION")
+    private fun dejavuIconsTrimLevel(level: Int): Int =
+        if (level == ComponentCallbacks2.TRIM_MEMORY_BACKGROUND) ComponentCallbacks2.TRIM_MEMORY_MODERATE else level
 
     private fun setDayNightTheme() {
         val settings = components.settings

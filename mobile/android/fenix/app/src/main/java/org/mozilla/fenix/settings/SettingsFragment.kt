@@ -223,7 +223,7 @@ class SettingsFragment : PreferenceFragmentCompat(), SystemInsetsPaddedFragment 
 
         if (requireComponents.settings.accountSettingsNewUi) {
             findPreference<PreferenceCategory>(getPreferenceKey(R.string.pref_key_account_category))
-                ?.setTitle(R.string.preferences_account_and_sync_settings)
+                ?.setTitle(R.string.preferences_category_account)
         }
     }
 
@@ -421,10 +421,6 @@ class SettingsFragment : PreferenceFragmentCompat(), SystemInsetsPaddedFragment 
 
                 resources.getString(R.string.pref_key_dejavu_external_links) -> {
                     ActionOnlyNavDirections(R.id.dejavu_external_links_graph)
-                }
-
-                resources.getString(R.string.pref_key_dejavu_sync) -> {
-                    ActionOnlyNavDirections(R.id.dejavu_sync_graph)
                 }
 
                 resources.getString(R.string.pref_key_customize) -> {

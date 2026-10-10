@@ -82,6 +82,10 @@ internal class SpacesSyncEngine(
     var backoffUntil: Long = 0L
         private set
 
+    /** Time of the last complete sync in milliseconds, or 0. */
+    val lastSynced: Long
+        get() = store.load().lastSynced
+
     /** Forgets everything about the server, for a sign out. */
     fun reset() {
         token = null

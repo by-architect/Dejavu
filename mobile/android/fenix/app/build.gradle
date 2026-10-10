@@ -255,6 +255,8 @@ android {
     packaging {
         jniLibs {
             excludes += ["**/armeabi/*.so", "**/mips/*.so", "**/mips64/*.so", "**/x86/*.so"]
+            // Dejavu: crash reports are never sent, and the crash pings that load this library do without it.
+            excludes += ["**/libcrashtools.so"]
             // Dejavu: a GeckoView built here has one architecture, so a bundle keeps only that one. The libraries other
             // dependencies bring for the other architectures would give those devices an app that cannot start.
             if (isAppBundle && !gradle.mozconfig.substs.MOZ_ANDROID_FAT_AAR_ARCHITECTURES) {

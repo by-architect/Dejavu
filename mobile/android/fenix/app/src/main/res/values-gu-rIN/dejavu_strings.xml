@@ -271,19 +271,15 @@
     <string name="dejavu_more_menu_all_added">દરેક બટન પહેલેથી જ મેનૂમાં છે.</string>
     <string name="dejavu_more_menu_preview">પૂર્વાવલોકન</string>
 
-    <!-- Settings: syncing workspaces with Zen -->
-    <string name="dejavu_settings_sync">Zen સાથે સમન્વયિત કરો</string>
-    <string name="dejavu_settings_sync_summary">વર્કસ્પેસ, કન્ટેનર, પિન કરેલી ટૅબ્સ અને એસેન્શિયલ્સ</string>
+    <!-- Settings: syncing workspaces with Firefox or Zen -->
+    <string name="dejavu_settings_sync">Firefox અથવા Zen સાથે સમન્વયિત કરો</string>
     <string name="dejavu_sync_hint">તમારા વર્કસ્પેસ (તેમના રંગો અને આઇકન સાથે), કન્ટેનર, પિન કરેલી ટૅબ્સ, એસેન્શિયલ્સ અને ફોલ્ડર્સને તમારા કમ્પ્યુટર પરના Zen બ્રાઉઝર અને તમારાં અન્ય ઉપકરણો પરના Dejavu જેવાં જ રાખે છે. તે એ જ Mozilla એકાઉન્ટનો ઉપયોગ કરે છે જેનાથી તમે Firefox ડેટા સમન્વયિત કરો છો.</string>
     <string name="dejavu_sync_zen_hint">Zen માં સેટિંગ્સ, પછી સમન્વયન ખોલો અને સાઇડબાર સમન્વયન ચાલુ કરો. પિન ન કરેલી ટૅબ્સ સમન્વયિત થતી નથી.</string>
     <string name="dejavu_sync_enabled">વર્કસ્પેસ સમન્વયિત કરો</string>
-    <string name="dejavu_sync_now">હમણાં સમન્વયિત કરો</string>
     <string name="dejavu_sync_syncing">સમન્વયિત થઈ રહ્યું છે…</string>
     <string name="dejavu_sync_last_synced">છેલ્લે સમન્વયિત: %1$s</string>
     <string name="dejavu_sync_never_synced">હજી સમન્વયિત થયું નથી</string>
     <string name="dejavu_sync_off">આ ઉપકરણ પર સમન્વયન બંધ છે</string>
-    <string name="dejavu_sync_signed_out">તમારા વર્કસ્પેસને Zen સાથે સમન્વયિત કરવા માટે તમારા Mozilla એકાઉન્ટમાં સાઇન ઇન કરો.</string>
-    <string name="dejavu_sync_sign_in">સાઇન ઇન કરો</string>
     <string name="dejavu_sync_problem_not_set_up">Firefox Sync તમારું એકાઉન્ટ સેટ કરવાનું પૂર્ણ કરે તેની રાહ જોવાઈ રહી છે.</string>
     <string name="dejavu_sync_problem_not_turned_on">તમારા Mozilla એકાઉન્ટ માટે સ્પેસ સમન્વયન બંધ છે. તેને અહીં અથવા Zen ના સમન્વયન સેટિંગ્સમાં ચાલુ કરો. અહીં ચાલુ કરવાથી તે Zen માં પણ ચાલુ થઈ જાય છે.</string>
     <string name="dejavu_sync_turn_on">સ્પેસ સમન્વયન ચાલુ કરો</string>
@@ -327,4 +323,41 @@
     <string name="dejavu_feature_drag">ટૅબ્સને ફોલ્ડર્સ અને એસેન્શિયલ્સમાં ખેંચો</string>
     <string name="dejavu_feature_workspace_order">વર્કસ્પેસનો ક્રમ બદલવા માટે તેમને ખેંચો</string>
     <string name="dejavu_feature_split_view">લિંકને સ્પ્લિટ વ્યૂમાં ખોલવા માટે તેને દબાવી રાખો</string>
+    <string name="dejavu_sync_choose_about">તમે જે Mozilla એકાઉન્ટથી Firefox ડેટા સમન્વયિત કરો છો તેના દ્વારા, તમારા વર્કસ્પેસને તમારા કમ્પ્યુટર પરના Firefox અથવા Zen બ્રાઉઝર સાથે સમન્વયિત કરો.</string>
+    <string name="dejavu_sync_firefox_about">તે તમારા દરેક કમ્પ્યુટર પરના Firefox ની ખુલ્લી ટૅબ્સને એક વર્કસ્પેસ તરીકે બતાવે છે અને તેમને અદ્યતન રાખે છે. તે એ જ Mozilla એકાઉન્ટનો ઉપયોગ કરે છે જેનાથી તમે Firefox ડેટા સમન્વયિત કરો છો.</string>
+    <string name="dejavu_sync_firefox_hint">તમારા કમ્પ્યુટર પરના Firefox માં સેટિંગ્સ, પછી સમન્વયન ખોલો અને “ખુલ્લી ટૅબ્સ” ચાલુ રાખો. તમે Dejavu માં ખોલો છો તે ટૅબ્સ આ ઉપકરણ પર જ રહે છે, અને Firefox તેમને તમારાં અન્ય ઉપકરણોની યાદીમાં બતાવે છે.</string>
+    <string name="dejavu_sync_normal_tabs_firefox_summary">જે ટૅબ્સ પિન કરેલી નથી અને કોઈ ટૅબ જૂથમાં પણ નથી, તેમને પણ બતાવે છે, ફક્ત પિન કરેલી ટૅબ્સ અને ટૅબ જૂથોને જ નહીં.</string>
+    <string name="dejavu_sync_source">કોની સાથે સમન્વયિત કરવું</string>
+    <string name="dejavu_sync_source_none">હજી પસંદ કર્યું નથી</string>
+    <string name="dejavu_sync_choose_title">શેની સાથે સમન્વયિત કરવું તે પસંદ કરો</string>
+    <string name="dejavu_sync_choose_intro">તમારું Mozilla એકાઉન્ટ શું સમન્વયિત કરે છે તે Dejavu એ જોયું. તમારા વર્કસ્પેસ જેને અનુસરે તે બ્રાઉઝર પસંદ કરો. તમે પસંદ ન કરો ત્યાં સુધી વર્કસ્પેસ સમન્વયિત થતા નથી.</string>
+    <string name="dejavu_sync_choose_later">પછીથી</string>
+    <string name="dejavu_sync_choose_start">સમન્વયન શરૂ કરો</string>
+    <string name="dejavu_sync_choose_firefox">Firefox સાથે સમન્વયિત કરો</string>
+    <string name="dejavu_sync_choose_zen">Zen સાથે સમન્વયિત કરો</string>
+    <string name="dejavu_sync_looking">Firefox અને Zen નો ડેટા શોધાઈ રહ્યો છે…</string>
+    <string name="dejavu_sync_found_firefox">Firefox ડેટા મળ્યો</string>
+    <string name="dejavu_sync_found_zen">Zen ડેટા મળ્યો</string>
+    <string name="dejavu_sync_found_no_firefox">કોઈ Firefox ડેટા મળ્યો નથી</string>
+    <string name="dejavu_sync_found_no_zen">કોઈ Zen ડેટા મળ્યો નથી</string>
+    <string name="dejavu_sync_found_zen_off">Zen મળ્યું, પણ તેનું સાઇડબાર સમન્વયન બંધ છે</string>
+    <string name="dejavu_sync_found_tabs">ખુલ્લી ટૅબ્સ: %1$d</string>
+    <string name="dejavu_sync_found_pinned">પિન કરેલી ટૅબ્સ: %1$d</string>
+    <string name="dejavu_sync_found_groups">ટૅબ જૂથો: %1$d</string>
+    <string name="dejavu_sync_found_workspaces">વર્કસ્પેસ: %1$d</string>
+    <string name="dejavu_sync_found_essentials">એસેન્શિયલ્સ: %1$d</string>
+    <string name="dejavu_sync_found_folders">ફોલ્ડર્સ: %1$d</string>
+    <string name="dejavu_sync_firefox_summary">Firefox ધરાવતા દરેક કમ્પ્યુટરને પોતાનું વર્કસ્પેસ મળે છે: પિન કરેલી ટૅબ્સ પિન કરેલી જ રહે છે, ટૅબ જૂથો ફોલ્ડર્સ બને છે અને તેની અન્ય ટૅબ્સ ત્યાં ખૂલે છે. અહીં તેની કોઈ ટૅબ બંધ કરવાથી તે કમ્પ્યુટર પર પણ બંધ થાય છે.</string>
+    <string name="dejavu_sync_zen_summary">વર્કસ્પેસ, પિન કરેલી ટૅબ્સ, એસેન્શિયલ્સ અને ફોલ્ડર્સ Zen અને Dejavu માં બંને દિશામાં એકસરખાં રહે છે.</string>
+    <string name="dejavu_sync_switch_from_zen">Zen માંથી આવેલા વર્કસ્પેસ Dejavu માં રહે છે, પણ હવે સમન્વયિત થતા નથી.</string>
+    <string name="dejavu_sync_switch_from_firefox">Firefox ધરાવતા તમારા કમ્પ્યુટરના વર્કસ્પેસ Dejavu માંથી દૂર થાય છે. Firefox તેમની ટૅબ્સ રાખે છે.</string>
+    <string name="dejavu_sync_problem_choose">તમે Firefox અથવા Zen પસંદ ન કરો ત્યાં સુધી સમન્વયન થોભાવેલું છે.</string>
+    <string name="dejavu_sync_problem_tabs_off">તમારા Mozilla એકાઉન્ટ માટે ખુલ્લી ટૅબ્સનું સમન્વયન બંધ છે. તમારા એકાઉન્ટના સમન્વયન સેટિંગ્સમાં, અહીં અથવા Firefox માં, “ખુલ્લી ટૅબ્સ” ચાલુ કરો.</string>
+    <string name="dejavu_sync_problem_no_firefox">હજી સુધી કોઈ કમ્પ્યુટર પરનું Firefox તેની ખુલ્લી ટૅબ્સ તમારા એકાઉન્ટમાં સમન્વયિત કરતું નથી.</string>
+    <string name="dejavu_sync_unnamed_group">ટૅબ જૂથ</string>
+    <string name="dejavu_account_sync_controls">સમન્વયન</string>
+    <string name="dejavu_account_synced_data_none">તમે કંઈપણ સમન્વયિત કરી રહ્યા નથી. તમારાં ઉપકરણો વચ્ચે શું સમન્વયિત રાખવું તે પસંદ કરો.</string>
+    <string name="dejavu_account_change_device_name">ઉપકરણનું નામ બદલો</string>
+    <string name="dejavu_onboarding_notifications_title">સૂચનાઓ તમને માહિતગાર રાખે છે</string>
+    <string name="dejavu_onboarding_notifications_subtitle">ડાઉનલોડ ક્યારે પૂરા થાય છે તે જુઓ, અને Dejavu ખોલ્યા વિના સંગીત અને વીડિયો ચલાવો કે થોભાવો.</string>
 </resources>

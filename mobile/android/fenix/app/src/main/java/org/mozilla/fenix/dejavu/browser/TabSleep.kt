@@ -55,7 +55,7 @@ internal class TabSleepMiddleware : Middleware<BrowserState, BrowserAction> {
 
         when (action) {
             is InitAction -> startTicker(store)
-            is SystemAction.LowMemoryAction -> if (action.level >= ComponentCallbacks2.TRIM_MEMORY_BACKGROUND) {
+            is SystemAction.LowMemoryAction -> if (isLowOnMemory(action.level)) {
                 if (sleepMinutes() > 0) {
                     sleep(store, TabSleep.tabsForMemory(store.state, lastShown, keptAwake(store.state)))
                 }
@@ -83,6 +83,14 @@ internal class TabSleepMiddleware : Middleware<BrowserState, BrowserAction> {
             }
         }
     }
+
+    /**
+     * Whether Android asks for memory: the app went to the background, or, on Android 13 and older, which still say so
+     * while the app is shown, memory runs critically low.
+     */
+    @Suppress("DEPRECATION")
+    private fun isLowOnMemory(level: Int): Boolean =
+        level >= ComponentCallbacks2.TRIM_MEMORY_BACKGROUND || level == ComponentCallbacks2.TRIM_MEMORY_RUNNING_CRITICAL
 
     private fun sleep(store: Store<BrowserState, BrowserAction>, tabIds: List<String>) {
         tabIds.forEach { store.dispatch(EngineAction.SuspendEngineSessionAction(it)) }

@@ -3455,9 +3455,10 @@ class Settings(
             default = { FxNimbus.features.pdfViewer.value().androidUiTools },
         )
 
+    // Dejavu: the account page always has the newer layout, where Dejavu adds syncing workspaces with Firefox or Zen.
     var accountSettingsNewUi by
         booleanPreference(
             key = appContext.getPreferenceKey(R.string.pref_key_enable_account_settings_new_ui),
-            default = { FxNimbus.features.accountSyncDecoupleM1.value().enabled },
+            default = { true },
         )
 }

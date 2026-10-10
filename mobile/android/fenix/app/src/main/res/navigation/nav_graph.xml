@@ -14,7 +14,6 @@
     <include app:graph="@navigation/dejavu_external_links_graph" />
     <include app:graph="@navigation/dejavu_tab_sleep_graph" />
     <include app:graph="@navigation/dejavu_more_menu_graph" />
-    <include app:graph="@navigation/dejavu_sync_graph" />
 
     <action
         android:id="@+id/action_startup_home"
