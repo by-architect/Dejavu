@@ -38,6 +38,7 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.alpha
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.SolidColor
@@ -59,6 +60,7 @@ import org.mozilla.fenix.dejavu.containers.ContainerPick
 import org.mozilla.fenix.dejavu.containers.ContainerRecord
 import org.mozilla.fenix.dejavu.containers.NoContainerIcon
 import org.mozilla.fenix.dejavu.containers.TemporaryContainerIcon
+import org.mozilla.fenix.dejavu.containers.color
 import org.mozilla.fenix.dejavu.settings.ContainerEditorDialog
 import org.mozilla.fenix.dejavu.sync.workspaceIconText
 import org.mozilla.fenix.dejavu.ui.DejavuButtonStyle
@@ -276,11 +278,16 @@ internal fun ItemDialogs(
             // Essentials can also go to the workspace they are looked at from, as its pinned tabs.
             val hasEssentials = dialog.targets.pins.any { it.essential }
             state.workspaces.filter { hasEssentials || it.id != dialog.workspaceId }.forEach { workspace ->
+                val allowed = workspace.canTake(dialog.targets)
                 PickerRow(
                     label = workspace.name,
+                    enabled = allowed,
                     leading = {
-                        val container = workspace.containerId?.let { containers[it] }
-                        if (container != null) ContainerIcon(container) else NoContainerIcon()
+                        if (allowed) {
+                            WorkspaceMark(workspace, workspace.containerId?.let { containers[it] })
+                        } else {
+                            PickerIcon(R.drawable.dejavu_ic_no_container_24)
+                        }
                     },
                     onClick = {
                         editor.onMoveToWorkspace(dialog.targets, workspace.id)
@@ -308,6 +315,8 @@ private fun WorkspaceDialog(
     var theme by remember { mutableStateOf(workspace?.theme) }
     var creatingContainer by remember { mutableStateOf(false) }
     val isNew = workspace == null
+    // The workspace of a device on the account takes its name and icon from the device, which keeps no container.
+    val isDevice = workspace?.device != null
 
     if (creatingContainer) {
         ContainerEditorDialog(
@@ -333,21 +342,35 @@ private fun WorkspaceDialog(
             )
         },
     ) {
-        Row(verticalAlignment = Alignment.CenterVertically) {
-            WorkspaceIconAvatar(icon = icon, onIconTyped = { icon = it })
-            Spacer(Modifier.width(12.dp))
-            DejavuTextField(
-                value = name,
-                onValueChange = { name = it },
-                label = stringResource(R.string.dejavu_workspace_name),
-                modifier = Modifier.weight(1f),
+        if (isDevice) {
+            Row(verticalAlignment = Alignment.CenterVertically) {
+                workspaceIconText(icon)?.let { Text(text = it, style = MaterialTheme.typography.titleLarge) }
+                Spacer(Modifier.width(12.dp))
+                Text(text = name, style = MaterialTheme.typography.titleMedium, modifier = Modifier.weight(1f))
+            }
+            Spacer(Modifier.size(8.dp))
+            Text(
+                text = stringResource(R.string.dejavu_workspace_device_note),
+                style = MaterialTheme.typography.bodySmall,
+                color = MaterialTheme.colorScheme.onSurfaceVariant,
             )
-        }
-        Spacer(Modifier.size(8.dp))
-        LazyRow(horizontalArrangement = Arrangement.spacedBy(4.dp)) {
-            item { IconChoice(text = null, selected = icon == null, onClick = { icon = null }) }
-            items(iconSuggestions) { suggestion ->
-                IconChoice(text = suggestion, selected = icon == suggestion, onClick = { icon = suggestion })
+        } else {
+            Row(verticalAlignment = Alignment.CenterVertically) {
+                WorkspaceIconAvatar(icon = icon, onIconTyped = { icon = it })
+                Spacer(Modifier.width(12.dp))
+                DejavuTextField(
+                    value = name,
+                    onValueChange = { name = it },
+                    label = stringResource(R.string.dejavu_workspace_name),
+                    modifier = Modifier.weight(1f),
+                )
+            }
+            Spacer(Modifier.size(8.dp))
+            LazyRow(horizontalArrangement = Arrangement.spacedBy(4.dp)) {
+                item { IconChoice(text = null, selected = icon == null, onClick = { icon = null }) }
+                items(iconSuggestions) { suggestion ->
+                    IconChoice(text = suggestion, selected = icon == suggestion, onClick = { icon = suggestion })
+                }
             }
         }
 
@@ -379,6 +402,7 @@ private fun WorkspaceDialog(
             }
         }
 
+        if (isDevice) return@DejavuDialog
         Spacer(Modifier.size(16.dp))
         Text(stringResource(R.string.dejavu_workspace_container), style = MaterialTheme.typography.labelLarge)
         Text(
@@ -616,12 +640,14 @@ private fun PickerDialog(
     }
 }
 
+@Suppress("LongParameterList")
 @Composable
 private fun PickerRow(
     label: String,
     onClick: () -> Unit,
     depth: Int = 0,
     selected: Boolean = false,
+    enabled: Boolean = true,
     leading: @Composable () -> Unit,
 ) {
     Row(
@@ -629,7 +655,8 @@ private fun PickerRow(
         modifier = Modifier
             .fillMaxWidth()
             .clip(RoundedCornerShape(12.dp))
-            .clickable(onClick = onClick)
+            .clickable(enabled = enabled, onClick = onClick)
+            .alpha(if (enabled) 1f else DISABLED_ROW_ALPHA)
             .padding(start = 8.dp + 16.dp * depth, top = 12.dp, bottom = 12.dp, end = 8.dp),
     ) {
         leading()
@@ -651,6 +678,26 @@ private fun PickerRow(
         }
     }
 }
+
+/** A workspace as the workspace bar shows it: its icon, or a dot in its container's color. */
+@Composable
+private fun WorkspaceMark(workspace: Workspace, container: ContainerRecord?) {
+    Box(contentAlignment = Alignment.Center, modifier = Modifier.size(20.dp)) {
+        val icon = workspaceIconText(workspace.icon)
+        if (icon != null) {
+            Text(text = icon, fontSize = 16.sp)
+        } else {
+            Box(
+                modifier = Modifier
+                    .size(10.dp)
+                    .clip(CircleShape)
+                    .background(container?.color?.color ?: MaterialTheme.colorScheme.onSurfaceVariant),
+            )
+        }
+    }
+}
+
+private const val DISABLED_ROW_ALPHA = 0.45f
 
 @Composable
 private fun DialogDivider() {

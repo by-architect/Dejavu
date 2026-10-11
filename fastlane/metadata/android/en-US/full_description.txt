@@ -18,8 +18,10 @@ Instead of one long list of tabs, Dejavu gives you:
   the way at the top.
 
 Sync: Dejavu signs in with your Mozilla account and syncs workspaces, pinned
-tabs, essentials, folders and containers with Zen Browser on the desktop, next
-to the usual bookmarks, history and passwords.
+tabs, essentials, folders and containers with Zen Browser on the desktop. Or it
+follows Firefox: each of your computers and phones with Firefox gets its own
+workspace, with its pinned tabs and tab groups, and opening or closing a tab
+there does the same in Firefox. Bookmarks, history and passwords sync too.
 
 Private by default: Dejavu sends no telemetry or crash reports, shows no
 sponsored content, and search suggestions are off from the first launch.

@@ -5,6 +5,7 @@
 package org.mozilla.fenix.dejavu.sync
 
 import org.json.JSONObject
+import org.mozilla.fenix.dejavu.workspaces.SyncedDevice
 
 /**
  * A Firefox computer found on the account.
@@ -77,20 +78,22 @@ internal class SyncSourceScanner(private val http: SyncHttp, private val clock: 
     }
 
     /**
-     * Looks at the account. [connected] are the ids of the account's devices when they are known, and
-     * [refreshDevices] asks the account for them again, for a device not among them.
+     * Looks at the account. [connected] are the ids of the account's other devices when they are known, [localDeviceId]
+     * is this device's, and [refreshDevices] asks the account for its devices again, for devices not among them.
      */
     suspend fun scan(
         auth: SyncAuth,
         connected: Set<String>?,
-        refreshDevices: suspend () -> Set<String>? = { null },
-    ): ScanResult = tokens.retryingOnce { run(auth, connected, refreshDevices) }
+        localDeviceId: String? = null,
+        refreshDevices: suspend (unknown: Set<String>) -> Set<String>? = { null },
+    ): ScanResult = tokens.retryingOnce { run(auth, connected, localDeviceId, refreshDevices) }
 
     @Suppress("ReturnCount")
     private suspend fun run(
         auth: SyncAuth,
         known: Set<String>?,
-        refreshDevices: suspend () -> Set<String>?,
+        localDeviceId: String?,
+        refreshDevices: suspend (unknown: Set<String>) -> Set<String>?,
     ): ScanResult {
         val token = tokens.get(auth)
         val client = StorageClient(http, token, clock) { seconds -> backoffUntil = clock.millis() + seconds * MILLIS }
@@ -109,10 +112,12 @@ internal class SyncSourceScanner(private val http: SyncHttp, private val clock: 
             if (info.has(collection)) client.downloadAll(collection, keys.of(collection)) else emptyMap()
 
         val clients = download(CLIENTS).map { (id, cleartext) -> ClientRecord.fromCleartext(id, cleartext) }
-        val connected = devicesFor(clients, known, refreshDevices)
+        val connected = devicesFor(clients, known, localDeviceId, refreshDevices)
         val tabs = if (TABS in meta.declined) emptyMap() else download(TABS)
         val records = tabs.mapValues { (id, cleartext) -> TabsRecord.fromCleartext(id, cleartext) }
-        val computers = firefoxComputers(clients, records, connected)
+        // Phones with Firefox or Dejavu show too once Dejavu follows Firefox, but only computers tell Firefox from Zen.
+        val computers = firefoxComputers(clients, records, connected, localDeviceId)
+            .filter { it.kind == SyncedDevice.DESKTOP }
         val spaces = download(SPACES).mapNotNull { (id, cleartext) -> SpacesRecord.fromCleartext(id, cleartext) }
         val found = FoundSyncData(
             firefox = computers.map { computer ->

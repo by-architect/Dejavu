@@ -10,6 +10,7 @@ import org.junit.Assert.assertFalse
 import org.junit.Assert.assertNull
 import org.junit.Assert.assertTrue
 import org.junit.Test
+import org.mozilla.fenix.dejavu.workspaces.SyncedDevice
 import org.junit.runner.RunWith
 import org.mozilla.fenix.dejavu.sync.FirefoxFixtures.GROUP
 import org.mozilla.fenix.dejavu.sync.FirefoxFixtures.client
@@ -62,7 +63,7 @@ class FirefoxRecordsTest {
             ),
             tabs.tabs,
         )
-        assertEquals(mapOf(GROUP to FirefoxTabGroup(GROUP, "Reading", collapsed = true)), tabs.groups)
+        assertEquals(mapOf(GROUP to FirefoxTabGroup(GROUP, "Reading", collapsed = true, color = "blue")), tabs.groups)
     }
 
     @Test
@@ -89,7 +90,13 @@ class FirefoxRecordsTest {
 
         val computers = firefoxComputers(listOf(zen, phone, idle, librewolf, firefox), tabs, connected = null)
 
-        assertEquals(listOf("Laptop", "Work"), computers.map { it.name })
+        assertEquals(listOf("Laptop", "Pixel", "Work"), computers.map { it.name })
+        assertEquals(
+            listOf(SyncedDevice.DESKTOP, SyncedDevice.PHONE, SyncedDevice.DESKTOP),
+            computers.map { it.kind },
+        )
+        val others = firefoxComputers(listOf(zen, phone, idle, librewolf, firefox), tabs, null, localDeviceId = "fxa-phone")
+        assertEquals(listOf("Laptop", "Work"), others.map { it.name })
         val connected = firefoxComputers(listOf(firefox, librewolf), tabs, connected = setOf("fxa-other"))
         assertEquals(listOf("Work"), connected.map { it.name })
         assertNull(firefoxComputers(listOf(firefox), emptyMap(), connected = null).firstOrNull())
@@ -108,17 +115,34 @@ class FirefoxRecordsTest {
     }
 
     @Test
-    fun `the account is asked for its devices again only for a desktop browser it did not have`() = runTest {
+    fun `the account is asked for its devices again only for a device it did not have`() = runTest {
         val firefox = ClientRecord("laptop", "Laptop", "desktop", "Firefox", "fxa-laptop")
         val phone = ClientRecord("fxa-phone", "Pixel", "mobile", null, "fxa-phone")
-        var asked = 0
-        val refresh: suspend () -> Set<String>? = { asked++; setOf("fxa-laptop", "fxa-new") }
+        val zen = ClientRecord("zen", "Zen desktop", "desktop", "Zen", "fxa-zen")
+        val asked = mutableListOf<Set<String>>()
+        val refresh: suspend (Set<String>) -> Set<String>? = { asked += it; setOf("fxa-laptop", "fxa-new") }
 
-        assertEquals(setOf("fxa-laptop"), devicesFor(listOf(firefox, phone), setOf("fxa-laptop"), refresh))
-        assertNull(devicesFor(listOf(firefox), null, refresh))
-        assertEquals(0, asked)
-        assertEquals(setOf("fxa-laptop", "fxa-new"), devicesFor(listOf(firefox), setOf("fxa-other"), refresh))
-        assertEquals(1, asked)
+        // This phone and Zen are not looked for among the other devices.
+        assertEquals(setOf("fxa-laptop"), devicesFor(listOf(firefox, phone, zen), setOf("fxa-laptop"), "fxa-phone", refresh))
+        assertNull(devicesFor(listOf(firefox), null, refresh = refresh))
+        assertTrue(asked.isEmpty())
+        assertEquals(setOf("fxa-laptop", "fxa-new"), devicesFor(listOf(firefox), setOf("fxa-other"), refresh = refresh))
+        assertEquals(listOf(setOf("fxa-laptop")), asked)
         assertEquals(setOf("fxa-other"), devicesFor(listOf(firefox), setOf("fxa-other")) { null })
+    }
+
+    @Test
+    fun `phones and tablets show as phones, and tab groups keep their colors`() {
+        fun kind(type: String) = ClientRecord("id", "Device", type, null, null).deviceKind
+
+        assertEquals(SyncedDevice.PHONE, kind("mobile"))
+        assertEquals(SyncedDevice.PHONE, kind("tablet"))
+        assertEquals(SyncedDevice.DESKTOP, kind("desktop"))
+        assertNull(kind("tv"))
+        val record = TabsRecord.fromCleartext(
+            "laptop",
+            tabsRecord("Laptop", listOf(tab("https://grouped.example/", group = GROUP)), groups = mapOf(GROUP to "Reading")),
+        )
+        assertEquals("blue", record.groups.getValue(GROUP).color)
     }
 }

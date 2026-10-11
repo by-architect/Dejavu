@@ -113,8 +113,9 @@ last, or a private tab. Back takes you straight back to the app you came from.
 
 ### And more
 
-- **Sync with Zen Browser:** Your workspaces, with their colors and icons, containers, pinned tabs, essentials and
-  folders stay the same in Zen on your computer and in Dejavu on your other devices. Unpinned tabs can sync too.
+- **Sync with Zen and Firefox:** Your workspaces, with their colors and icons, containers, pinned tabs, essentials and
+  folders stay the same in Zen on your computer and in Dejavu on your other devices. Unpinned tabs can sync too. Or
+  follow Firefox: each of your computers and phones gets its own workspace, with its pinned tabs and tab groups.
 - **Private by default:** Telemetry, studies, search suggestions and sponsored content are off until you turn them
   on, and there are no ads.
 - **Gecko engine:** Add-ons like uBlock Origin and Dark Reader, Enhanced Tracking Protection, and sync for bookmarks,
@@ -124,8 +125,17 @@ last, or a private tab. Back takes you straight back to the app you came from.
 
 1. Sign in to the same Mozilla account in Zen on your computer and in Dejavu.
 2. In Zen, open **Settings**, then **Sync**, and turn on sidebar sync.
-3. In Dejavu, open **Settings**, then **Sync with Zen**, and turn on **Sync workspaces**.
+3. In Dejavu, tap the account button at the top left, open **Sync with Firefox or Zen**, choose **Zen** and turn on
+   **Sync workspaces**.
 4. To sync the tabs that are not pinned as well, turn on **Include unpinned tabs** in both Dejavu and Zen.
+
+### Set up sync with Firefox
+
+1. Sign in to the same Mozilla account in Firefox and in Dejavu.
+2. In Firefox, open **Settings**, then **Sync**, and keep **Open tabs** on.
+3. In Dejavu, tap the account button at the top left, open **Sync with Firefox or Zen** and choose **Firefox**.
+4. Each computer and phone with Firefox gets its own workspace: pinned tabs stay pinned and tab groups become folders in
+   their colors. Open or close a tab there, and Firefox does the same.
 
 ## Report a bug or request a feature
 

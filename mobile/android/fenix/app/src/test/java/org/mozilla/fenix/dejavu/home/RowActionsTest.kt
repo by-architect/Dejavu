@@ -8,11 +8,15 @@ import io.mockk.mockk
 import mozilla.components.browser.state.state.createTab
 import mozilla.components.concept.engine.EngineSession
 import org.junit.Assert.assertEquals
+import org.junit.Assert.assertFalse
+import org.junit.Assert.assertTrue
 import org.junit.Test
 import org.mozilla.fenix.dejavu.actions.RowAction
 import org.mozilla.fenix.dejavu.actions.TabAction
 import org.mozilla.fenix.dejavu.workspaces.PinKind
 import org.mozilla.fenix.dejavu.workspaces.PinnedItem
+import org.mozilla.fenix.dejavu.workspaces.SyncedDevice
+import org.mozilla.fenix.dejavu.workspaces.Workspace
 
 class RowActionsTest {
     private val session: EngineSession = mockk(relaxed = true)
@@ -74,5 +78,41 @@ class RowActionsTest {
             listOf("sleep", "close"),
             keys(rowActions(sleepAndClose, ActionTargets(tabs = listOf(awake)), isPinned = false)),
         )
+    }
+
+    @Test
+    fun `in the workspace of a device, tabs can only be opened and closed, pinned ones too`() {
+        val everything = TabAction.entries.map { RowAction.BuiltIn(it) }
+        val tab = ActionTargets(tabs = listOf(asleep), restricted = true)
+        val pinned = ActionTargets.ofPin(pin("a", awake.id), awake, restricted = true)
+
+        assertEquals(
+            listOf("close", "bookmark", "share", "copy_link", "duplicate"),
+            keys(rowActions(everything, tab, isPinned = false)).filterNot { it == "sleep" },
+        )
+        assertEquals(listOf("close"), keys(rowActions(close, pinned, isPinned = true)))
+        assertEquals(listOf("close"), keys(rowActions(close, ActionTargets.ofPin(pin("c", null), null, true), isPinned = true)))
+        val folder = ActionTargets(
+            folders = listOf(pin("folder", tabId = null, kind = PinKind.FOLDER)),
+            folderPins = listOf(pin("b", awake.id)),
+            folderTabs = listOf(awake),
+            restricted = true,
+        )
+        assertEquals(listOf("sleep"), keys(rowActions(close + RowAction.BuiltIn(TabAction.RENAME_FOLDER), folder, isPinned = true)))
+    }
+
+    @Test
+    fun `the workspace of a device only takes tabs, not pinned tabs or folders`() {
+        val own = Workspace(id = "own", name = "Own", createdAt = 1L, updatedAt = 1L)
+        val computer = own.copy(id = "computer", device = SyncedDevice.DESKTOP)
+        val tabs = ActionTargets(tabs = listOf(awake, asleep))
+        val pinned = ActionTargets(tabs = listOf(awake), pins = listOf(pin("a", asleep.id)))
+        val folder = ActionTargets(folders = listOf(pin("folder", tabId = null, kind = PinKind.FOLDER)))
+
+        assertTrue(computer.canTake(tabs))
+        assertFalse(computer.canTake(pinned))
+        assertFalse(computer.canTake(folder))
+        assertTrue(own.canTake(pinned))
+        assertTrue(own.canTake(folder))
     }
 }

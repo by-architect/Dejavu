@@ -5,6 +5,7 @@
 package org.mozilla.fenix.dejavu.sync
 
 import org.json.JSONObject
+import org.mozilla.fenix.dejavu.workspaces.SyncedDevice
 
 /**
  * A device's record in the "clients" collection of Firefox Sync, which every browser signed in to the account writes
@@ -30,8 +31,25 @@ internal data class ClientRecord(
     val isZen: Boolean
         get() = application != null && (application.startsWith(ZEN) || application == TWILIGHT)
 
+    /**
+     * The kind of device Dejavu shows as a workspace: Firefox on a computer, or a phone or tablet, which runs Firefox
+     * or Dejavu. `null` for Zen, which Dejavu follows on its own, and for other kinds of devices.
+     */
+    val deviceKind: SyncedDevice?
+        get() = when (type) {
+            DESKTOP -> SyncedDevice.DESKTOP.takeIf { !isZen }
+            MOBILE, TABLET -> SyncedDevice.PHONE
+            else -> null
+        }
+
+    /** Whether this is the record of this device, whose account id is [localDeviceId]. */
+    fun isLocal(localDeviceId: String?): Boolean =
+        localDeviceId != null && (fxaDeviceId == localDeviceId || id == localDeviceId)
+
     companion object {
         private const val DESKTOP = "desktop"
+        private const val MOBILE = "mobile"
+        private const val TABLET = "tablet"
         private const val ZEN = "Zen"
         private const val TWILIGHT = "Twilight"
 
@@ -64,8 +82,12 @@ internal data class FirefoxTab(
     val index: Int = 0,
 )
 
-/** A tab group of a [TabsRecord]. Firefox leaves out empty and closed groups. */
-internal data class FirefoxTabGroup(val id: String, val name: String, val collapsed: Boolean)
+/**
+ * A tab group of a [TabsRecord]. Firefox leaves out empty and closed groups.
+ *
+ * @property color The group's color as Firefox names it, like "blue", or `null`.
+ */
+internal data class FirefoxTabGroup(val id: String, val name: String, val collapsed: Boolean, val color: String? = null)
 
 /**
  * The record of the "tabs" collection where a device keeps the tabs it has open: Firefox's TabsRecord, written by
@@ -96,7 +118,12 @@ internal class TabsRecord(
                 ?.mapNotNull { key ->
                     val group = groupsJson.optJSONObject(key) ?: return@mapNotNull null
                     val groupId = group.string("id") ?: key
-                    groupId to FirefoxTabGroup(groupId, group.string("name").orEmpty(), group.optBoolean("collapsed"))
+                    groupId to FirefoxTabGroup(
+                        id = groupId,
+                        name = group.string("name").orEmpty(),
+                        collapsed = group.optBoolean("collapsed"),
+                        color = group.string("color"),
+                    )
                 }
                 ?.toMap()
                 .orEmpty()
@@ -134,12 +161,16 @@ internal class TabsRecord(
 }
 
 /**
- * A Firefox on a computer, whose open tabs Dejavu shows.
+ * A device on the account whose open tabs Dejavu shows: Firefox on a computer, or a phone with Firefox or Dejavu.
  *
- * @property number Tells apart computers with the same name, like two Firefox profiles on one computer: the second one
+ * @property number Tells apart devices with the same name, like two Firefox profiles on one computer: the second one
  *   is named "Name (2)".
  */
 internal class FirefoxComputer(val client: ClientRecord, val record: TabsRecord, private val number: Int = 1) {
+    /** Whether this is a computer or a phone, which its workspace's icon shows. */
+    val kind: SyncedDevice
+        get() = client.deviceKind ?: SyncedDevice.DESKTOP
+
     /** The computer's name, or the browser's when it has none. */
     val name: String
         get() {
@@ -153,16 +184,18 @@ internal class FirefoxComputer(val client: ClientRecord, val record: TabsRecord,
 }
 
 /**
- * The Firefox computers among [clients], with their open tabs from [tabs], in the order of their names. Zen, phones
- * and devices that left the account ([connected], when known, has the account's devices) are left out.
+ * The devices among [clients] whose open tabs Dejavu shows, Firefox on computers and phones, with their open tabs from
+ * [tabs], in the order of their names. Zen, this device ([localDeviceId] is its id in the account) and devices that left
+ * the account ([connected], when known, has the account's devices) are left out.
  */
 internal fun firefoxComputers(
     clients: Collection<ClientRecord>,
     tabs: Map<String, TabsRecord>,
     connected: Set<String>?,
+    localDeviceId: String? = null,
 ): List<FirefoxComputer> {
     val computers = clients
-        .filter { it.isDesktop && !it.isZen && it.isConnected(connected) }
+        .filter { it.deviceKind != null && !it.isLocal(localDeviceId) && it.isConnected(connected) }
         .mapNotNull { client -> tabs[client.id]?.let { FirefoxComputer(client, it) } }
         .sortedWith(compareBy({ it.name.lowercase() }, { it.client.id }))
     val named = HashMap<String, Int>()
@@ -178,16 +211,20 @@ internal fun ClientRecord.isConnected(connected: Set<String>?): Boolean =
     connected == null || fxaDeviceId == null || fxaDeviceId in connected
 
 /**
- * The ids of the account's devices to check [clients] against: [known] while every desktop browser among them is in
- * it, and otherwise the ones [refresh] gets from the account, since a browser that just joined it is not known yet.
- * [refresh] returns `null` when it could not tell.
+ * The ids of the account's devices to check [clients] against: [known] while every device Dejavu shows among them is in
+ * it, and otherwise the ones [refresh] gets from the account for the ids it does not know, since a device that just
+ * joined is not known yet. [refresh] returns `null` when it could not tell. This device, [localDeviceId], is never
+ * among the account's other devices.
  */
 internal suspend fun devicesFor(
     clients: Collection<ClientRecord>,
     known: Set<String>?,
-    refresh: suspend () -> Set<String>?,
-): Set<String>? = if (known == null || clients.all { !it.isDesktop || it.isConnected(known) }) {
-    known
-} else {
-    refresh() ?: known
+    localDeviceId: String? = null,
+    refresh: suspend (unknown: Set<String>) -> Set<String>?,
+): Set<String>? {
+    if (known == null) return null
+    val unknown = clients
+        .filter { it.deviceKind != null && !it.isLocal(localDeviceId) && !it.isConnected(known) }
+        .mapNotNullTo(HashSet()) { it.fxaDeviceId }
+    return if (unknown.isEmpty()) known else refresh(unknown) ?: known
 }

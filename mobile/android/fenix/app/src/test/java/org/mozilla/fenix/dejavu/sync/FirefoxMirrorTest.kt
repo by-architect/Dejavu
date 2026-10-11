@@ -22,7 +22,9 @@ import org.mozilla.fenix.dejavu.sync.FirefoxFixtures.tab
 import org.mozilla.fenix.dejavu.sync.FirefoxFixtures.tabsRecord
 import org.mozilla.fenix.dejavu.workspaces.PinKind
 import org.mozilla.fenix.dejavu.workspaces.PinnedItem
+import org.mozilla.fenix.dejavu.workspaces.SyncedDevice
 import org.mozilla.fenix.dejavu.workspaces.WorkspaceState
+import org.mozilla.fenix.dejavu.workspaces.WorkspaceTheme
 import org.robolectric.RobolectricTestRunner
 
 @RunWith(RobolectricTestRunner::class)
@@ -314,6 +316,54 @@ class FirefoxMirrorTest {
         val kept = sync(null, first.state.copy(pins = first.state.pins + added), first.devices, first.tabs())
         assertEquals("Laptop", kept.state.workspaces.single { it.id == workspaceId }.name)
         assertEquals(listOf(added), kept.state.pins)
+        // It stays as one of the user's own workspaces.
+        assertNull(kept.state.workspaces.single { it.id == workspaceId }.device)
+    }
+
+    @Test
+    fun `a computer's workspace keeps the computer's name and icon, no container, and the colors picked here`() {
+        val first = sync(FirefoxFixtures.laptopTabs())
+        val workspace = first.state.workspaces.single { it.id == workspaceId }
+        assertEquals(SyncedDevice.DESKTOP, workspace.device)
+        assertEquals(FirefoxMirror.iconOf(SyncedDevice.DESKTOP), workspace.icon)
+
+        val theme = WorkspaceTheme(colors = listOf(1, 2))
+        val changed = first.state.copy(
+            workspaces = first.state.workspaces.map {
+                if (it.id == workspaceId) it.copy(icon = "x", containerId = "work", theme = theme) else it
+            },
+        )
+        val second = sync(FirefoxFixtures.laptopTabs(), changed, first.devices, first.tabs())
+
+        val kept = second.state.workspaces.single { it.id == workspaceId }
+        assertEquals(FirefoxMirror.iconOf(SyncedDevice.DESKTOP) to null, kept.icon to kept.containerId)
+        assertEquals(theme, kept.theme)
+    }
+
+    @Test
+    fun `a phone gets a workspace with the phone icon`() {
+        val phone = ClientRecord("phone", "Pixel", "mobile", null, "fxa-phone")
+        val record = tabsRecord("Pixel", listOf(tab("https://phone.example/", window = "")), windows = emptyList())
+        val computer = FirefoxComputer(phone, TabsRecord.fromCleartext("phone", record))
+        val state = ZenRecords.freshDejavu()
+        val mirror = mirror()
+
+        val result = mirror.apply(state, emptyList(), listOf(mirror.match(null, computer, state)))
+
+        val workspace = result.state.workspaces.single { it.id == FirefoxMirror.workspaceIdOf("phone") }
+        assertEquals(SyncedDevice.PHONE to FirefoxMirror.iconOf(SyncedDevice.PHONE), workspace.device to workspace.icon)
+        assertEquals(listOf("https://phone.example/"), result.tabOps.filterIsInstance<TabOp.Open>().map { it.url })
+    }
+
+    @Test
+    fun `folders take the colors of their tab groups`() {
+        val first = sync(FirefoxFixtures.laptopTabs())
+        assertEquals("blue", first.state.pins.single { it.id == folderId }.color)
+        val red = FirefoxFixtures.laptopTabs().also { it.getJSONObject("tabGroups").getJSONObject(GROUP).put("color", "red") }
+
+        val second = sync(red, first.state, first.devices, first.tabs())
+
+        assertEquals("red", second.state.pins.single { it.id == folderId }.color)
     }
 
     @Test

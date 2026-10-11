@@ -62,7 +62,12 @@ internal class TabActionRunner(
     @Suppress("CyclomaticComplexMethod")
     fun run(action: TabAction, targets: ActionTargets, workspaceId: String) {
         when (action) {
-            TabAction.CLOSE -> closeTabs(targets.openTabs.map { it.id })
+            // In the workspace of a device, closing pinned tabs takes them away too, which closes them on the device.
+            TabAction.CLOSE -> if (targets.restricted) {
+                onDeleteItems(targets)
+            } else {
+                closeTabs(targets.openTabs.map { it.id })
+            }
             TabAction.PIN -> repository.pinTabs(targets.tabs.map { it.toPinSource() })
             TabAction.UNPIN -> {
                 // Like dragging a pin out: unpinned tabs stay as tabs, the closed ones reopened without loading.
@@ -138,11 +143,41 @@ internal class TabActionRunner(
     }
 
     override fun onMoveToWorkspace(targets: ActionTargets, workspaceId: String) {
+        val workspace = repository.state.value.workspaces.firstOrNull { it.id == workspaceId } ?: return
+        if (!workspace.canTake(targets)) return
+        if (workspace.device != null) {
+            moveToDeviceWorkspace(targets.tabs, workspaceId)
+            return
+        }
         repository.moveToWorkspace(
             tabIds = targets.tabs.map { it.id }.toSet(),
             itemIds = targets.itemIds,
             workspaceId = workspaceId,
         )
+    }
+
+    /**
+     * Moves [tabs] into [workspaceId], the workspace of a device on the account, which only holds tabs that are not in a
+     * container. They open there again without one, which sends them to the device, and the tabs they come from close.
+     */
+    private fun moveToDeviceWorkspace(tabs: List<TabSessionState>, workspaceId: String) {
+        val selectedTabId = store.state.selectedTabId
+        var shown: String? = null
+        tabs.filter { it.content.url.isNotEmpty() }.forEach { tab ->
+            val selected = tab.id == selectedTabId
+            val newTabId = tabsUseCases.addTab(
+                url = tab.content.url,
+                selectTab = false,
+                startLoading = selected || tab.isAwake,
+                title = tab.content.title,
+                contextId = null,
+                source = SessionState.Source.Internal.None,
+            )
+            repository.assignTab(newTabId, workspaceId)
+            if (selected) shown = newTabId
+        }
+        shown?.let { tabsUseCases.selectTab(it) }
+        closeTabs(tabs.map { it.id })
     }
 
     override fun onChangeContainer(targets: ActionTargets, pick: ContainerPick) {

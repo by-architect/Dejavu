@@ -30,6 +30,7 @@ internal object WorkspaceSerializer {
                 theme = item.optJSONObject("theme")?.toTheme(),
                 createdAt = item.optLong("createdAt", now),
                 updatedAt = item.optLong("updatedAt", now),
+                device = SyncedDevice.fromKey(item.optStringOrNull("device")),
             )
         }.ifEmpty {
             listOf(Workspace(newWorkspaceId(), defaultName, theme = WorkspaceTheme.Gold, createdAt = now, updatedAt = now))
@@ -79,7 +80,8 @@ internal object WorkspaceSerializer {
                             .putOpt("icon", ws.icon)
                             .putOpt("theme", ws.theme?.toJson())
                             .put("createdAt", ws.createdAt)
-                            .put("updatedAt", ws.updatedAt),
+                            .put("updatedAt", ws.updatedAt)
+                            .putOpt("device", ws.device?.key),
                     )
                 }
             },
@@ -105,7 +107,8 @@ internal object WorkspaceSerializer {
                             .putOpt("openUrl", pin.openUrl)
                             .putOpt("openTitle", pin.openTitle)
                             .put("createdAt", pin.createdAt)
-                            .put("updatedAt", pin.updatedAt),
+                            .put("updatedAt", pin.updatedAt)
+                            .putOpt("color", pin.color),
                     )
                 }
             },
@@ -140,6 +143,7 @@ internal object WorkspaceSerializer {
         openTitle = optStringOrNull("openTitle"),
         createdAt = optLong("createdAt", now),
         updatedAt = optLong("updatedAt", now),
+        color = optStringOrNull("color"),
     )
 
     private fun WorkspaceTheme.toJson() = JSONObject()

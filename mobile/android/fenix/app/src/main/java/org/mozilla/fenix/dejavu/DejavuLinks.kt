@@ -10,4 +10,5 @@ object DejavuLinks {
     const val RELEASES = "$SOURCE_CODE/releases"
     const val ISSUES = "$SOURCE_CODE/issues"
     const val PRIVACY_POLICY = "$SOURCE_CODE/blob/main/PRIVACY.md"
+    const val BUY_ME_A_COFFEE = "https://buymeacoffee.com/ByArchitect"
 }

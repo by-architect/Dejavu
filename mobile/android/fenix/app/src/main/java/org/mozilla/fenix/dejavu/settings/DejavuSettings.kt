@@ -96,6 +96,11 @@ class DejavuSettings private constructor(context: Context) {
         get() = prefs.getInt(KEY_FEATURE_TOUR_SEEN, 0)
         set(value) = prefs.edit { putInt(KEY_FEATURE_TOUR_SEEN, value) }
 
+    /** The newest version whose changes the tour showed, like "2.0", or `null` before Dejavu 2.0 showed any. */
+    var whatsNewSeen: String?
+        get() = prefs.getString(KEY_WHATS_NEW_SEEN, null)
+        set(value) = prefs.edit { putString(KEY_WHATS_NEW_SEEN, value) }
+
     /** How History lists pages. */
     var historyGrouping: HistoryGrouping
         get() = HistoryGrouping.fromKey(prefs.getString(KEY_HISTORY_GROUPING, null))
@@ -274,6 +279,7 @@ class DejavuSettings private constructor(context: Context) {
         private const val KEY_HISTORY_GROUPING = "history_grouping"
         private const val KEY_TAB_SLEEP_MINUTES = "tab_sleep_minutes"
         private const val KEY_FEATURE_TOUR_SEEN = "feature_tour_seen"
+        private const val KEY_WHATS_NEW_SEEN = "whats_new_seen"
         private val DEFAULT_PINNED_ROW_ACTIONS = listOf(TabAction.CLOSE)
         private val DEFAULT_UNPINNED_ROW_ACTIONS = listOf(TabAction.PIN, TabAction.CLOSE)
         private val DEFAULT_FOLDER_ROW_ACTIONS = listOf(TabAction.SLEEP)

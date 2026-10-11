@@ -68,11 +68,14 @@ class WorkspaceRepository private constructor(context: Context) {
         state.copy(workspaces = state.workspaces + workspace, activeWorkspaceId = workspace.id)
     }
 
+    /** Changes workspace [id]. The workspace of a device on the account only takes [theme]: the rest is the device's. */
     fun updateWorkspace(id: String, name: String, containerId: String?, icon: String?, theme: WorkspaceTheme?) =
         mutate { state ->
             state.copy(
                 workspaces = state.workspaces.map {
-                    if (it.id == id) {
+                    if (it.id == id && it.device != null) {
+                        it.copy(theme = theme, updatedAt = now())
+                    } else if (it.id == id) {
                         it.copy(
                             name = name.trim().ifEmpty { it.name },
                             containerId = containerId,
@@ -94,10 +97,13 @@ class WorkspaceRepository private constructor(context: Context) {
         state.copy(workspaces = others.toMutableList().apply { add(index.coerceIn(0, others.size), workspace) })
     }
 
-    /** Deletes a workspace, moving its tabs and pinned items to a neighbouring workspace. The last one is kept. */
+    /**
+     * Deletes a workspace, moving its tabs and pinned items to a neighbouring workspace. The last one is kept, and so are
+     * the workspaces of devices on the account, which sync adds and removes.
+     */
     fun deleteWorkspace(id: String) = mutate { state ->
         val index = state.workspaces.indexOfFirst { it.id == id }
-        if (index < 0 || state.workspaces.size == 1) return@mutate state
+        if (index < 0 || state.workspaces.size == 1 || state.workspaces[index].device != null) return@mutate state
         val target = state.workspaces[if (index > 0) index - 1 else 1].id
         state.copy(
             workspaces = state.workspaces.filterNot { it.id == id },

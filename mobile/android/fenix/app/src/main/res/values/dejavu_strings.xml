@@ -313,9 +313,9 @@
     <!-- Sync settings, before the user chose whether workspaces sync with Firefox or with Zen. -->
     <string name="dejavu_sync_choose_about">Sync your workspaces with Firefox or Zen Browser on your computer, through the Mozilla account you sync Firefox data with.</string>
     <!-- Sync settings, while workspaces sync with Firefox. -->
-    <string name="dejavu_sync_firefox_about">Shows the open tabs of Firefox on each of your computers as a workspace, and keeps them up to date. It uses the Mozilla account you sync Firefox data with.</string>
+    <string name="dejavu_sync_firefox_about">Shows the open tabs of Firefox on each of your computers and phones as a workspace, and keeps them up to date. It uses the Mozilla account you sync Firefox data with.</string>
     <!-- Sync settings, below the other settings while workspaces sync with Firefox. -->
-    <string name="dejavu_sync_firefox_hint">In Firefox on your computer, open Settings, then Sync, and keep Open tabs on. Tabs you open in the workspace of a computer open in Firefox there too. Tabs in your other workspaces stay on this device, and Firefox lists them under your other devices.</string>
+    <string name="dejavu_sync_firefox_hint">In Firefox, open Settings, then Sync, and keep Open tabs on. Tabs you open or close in the workspace of a device open or close there too. Tabs in your other workspaces stay on this device, and Firefox lists them under your other devices.</string>
     <!-- Summary of the "Include unpinned tabs" switch while workspaces sync with Firefox. -->
     <string name="dejavu_sync_normal_tabs_firefox_summary">Also show the tabs that are neither pinned nor in a tab group, not just pinned tabs and tab groups.</string>
     <!-- Sync settings: the setting that shows and changes which browser workspaces sync with. -->
@@ -349,17 +349,17 @@
     <string name="dejavu_sync_found_essentials">Essentials: %1$d</string>
     <string name="dejavu_sync_found_folders">Folders: %1$d</string>
     <!-- What syncing with Firefox does, under the Firefox choice. -->
-    <string name="dejavu_sync_firefox_summary">Each Firefox computer gets its own workspace: pinned tabs stay pinned, tab groups become folders, and its other tabs open there. Closing one of its tabs here closes it on the computer too.</string>
+    <string name="dejavu_sync_firefox_summary">Each computer and phone with Firefox gets its own workspace: pinned tabs stay pinned, tab groups become folders in their colors, and its other tabs open there. In these workspaces you can open and close tabs, and the device does the same.</string>
     <!-- What syncing with Zen does, under the Zen choice. -->
     <string name="dejavu_sync_zen_summary">Workspaces, pinned tabs, essentials and folders stay the same in Zen and in Dejavu, both ways.</string>
     <!-- Shown when switching from Zen to Firefox. -->
     <string name="dejavu_sync_switch_from_zen">Workspaces from Zen stay in Dejavu, but no longer sync.</string>
     <!-- Shown when switching from Firefox to Zen. -->
-    <string name="dejavu_sync_switch_from_firefox">The workspaces of your Firefox computers leave Dejavu. Firefox keeps their tabs.</string>
+    <string name="dejavu_sync_switch_from_firefox">The workspaces of your Firefox devices leave Dejavu. Firefox keeps their tabs.</string>
     <string name="dejavu_sync_problem_choose">Sync is paused until you choose Firefox or Zen.</string>
     <!-- "Open tabs" is the name of the switch in the sync settings of Firefox and of this app's Mozilla account settings. -->
     <string name="dejavu_sync_problem_tabs_off">Open tabs sync is off for your Mozilla account. Turn on Open tabs in the sync settings of your account, here or in Firefox.</string>
-    <string name="dejavu_sync_problem_no_firefox">No Firefox on a computer syncs its open tabs to your account yet.</string>
+    <string name="dejavu_sync_problem_no_firefox">No Firefox on another device syncs its open tabs to your account yet.</string>
     <!-- Name of the folder showing a Firefox tab group that has no name. -->
     <string name="dejavu_sync_unnamed_group">Tab group</string>
     <!-- Account page, opened from the account button at the top of the home screen: heading of the section with the
@@ -374,6 +374,23 @@
     <string name="dejavu_onboarding_notifications_title">Notifications keep you up to date</string>
     <!-- Text of the card that asks to turn on notifications. -->
     <string name="dejavu_onboarding_notifications_subtitle">See when downloads finish, and play or pause music and videos without opening Dejavu.</string>
+    <!-- Feature tour title, in the chapter of Dejavu 2.0: every computer and phone with Firefox shows as a workspace. -->
+    <string name="dejavu_feature_firefox_sync">Follow Firefox on your computers and phones</string>
+    <!-- Settings, at the top: opens what each version of Dejavu brought, and the tour of its features. -->
+    <string name="dejavu_settings_whats_new">What’s new</string>
+    <string name="dejavu_settings_whats_new_summary">What each version brought, and a tour of Dejavu</string>
+    <!-- Settings, at the top: who makes Dejavu, with "Source code" under it. %1$s is the maker's name, The Architect. -->
+    <string name="dejavu_settings_author">Created by %1$s</string>
+    <string name="dejavu_author_name" translatable="false">The Architect</string>
+    <!-- Settings, at the top: opens the maker's page on Buy Me a Coffee, a site for small donations. -->
+    <string name="dejavu_settings_coffee">Buy me a coffee</string>
+    <string name="dejavu_settings_coffee_summary">Dejavu has no ads. If you enjoy it, a coffee helps it grow.</string>
+    <string name="pref_key_dejavu_top_category" translatable="false">pref_key_dejavu_top_category</string>
+    <string name="pref_key_dejavu_whats_new" translatable="false">pref_key_dejavu_whats_new</string>
+    <string name="pref_key_dejavu_author" translatable="false">pref_key_dejavu_author</string>
+    <string name="pref_key_dejavu_coffee" translatable="false">pref_key_dejavu_coffee</string>
+    <!-- Edit workspace dialog, for the workspace that shows the open tabs of a computer or phone with Firefox. -->
+    <string name="dejavu_workspace_device_note">This workspace shows the open tabs of a device on your Mozilla account. Its name and icon come from that device, and the colors you pick stay on this phone.</string>
     <string name="dejavu_container_personal">Personal</string>
     <string name="dejavu_container_work">Work</string>
     <string name="dejavu_container_banking">Banking</string>

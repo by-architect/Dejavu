@@ -10,6 +10,7 @@ import org.mozilla.fenix.dejavu.actions.RowAction
 import org.mozilla.fenix.dejavu.actions.TabAction
 import org.mozilla.fenix.dejavu.workspaces.MAX_FOLDER_DEPTH
 import org.mozilla.fenix.dejavu.workspaces.PinnedItem
+import org.mozilla.fenix.dejavu.workspaces.Workspace
 import org.mozilla.fenix.dejavu.workspaces.WorkspaceState
 import org.mozilla.fenix.dejavu.workspaces.isSamePage
 
@@ -45,6 +46,9 @@ data class Selection(
  * @property folderTabs Open browser tabs backing [folderPins].
  * @property canAddSubfolder Whether [folders] is a single folder that can hold one more level of folders.
  * @property splitTabIds Open tabs among the targets that are part of a split view.
+ * @property restricted Whether the targets are in the workspace of a device on the account, which follows that device:
+ *   their tabs can be opened and closed, and closing one, pinned or not, closes it on the device too, but nothing the
+ *   device would not take, like pinning, folders, names, essentials or containers.
  */
 data class ActionTargets(
     val tabs: List<TabSessionState> = emptyList(),
@@ -55,6 +59,7 @@ data class ActionTargets(
     val folderTabs: List<TabSessionState> = emptyList(),
     val canAddSubfolder: Boolean = false,
     val splitTabIds: Set<String> = emptySet(),
+    val restricted: Boolean = false,
 ) {
     /** Every pinned tab the action reaches, the ones inside [folders] included. */
     val allPins: List<PinnedItem>
@@ -130,12 +135,15 @@ data class ActionTargets(
                 folderPins = folderPins,
                 folderTabs = tabs.backing(folderPins),
                 canAddSubfolder = folders.singleOrNull()?.let { state.folderDepth(it.id) < MAX_FOLDER_DEPTH } == true,
+                restricted = selection.tabIds.any { state.isDeviceWorkspace(state.workspaceOf(it)) } ||
+                    (pins + folders).any { state.isDeviceWorkspace(it.workspaceId) },
             )
             return targets.copy(splitTabIds = targets.openTabs.map { it.id }.filter { state.splitOf(it) != null }.toSet())
         }
 
-        /** A pinned tab or essential with its open tab, if any. */
-        fun ofPin(pin: PinnedItem, tab: TabSessionState?) = ActionTargets(pins = listOf(pin), pinnedTabs = listOfNotNull(tab))
+        /** A pinned tab or essential with its open tab, if any, [restricted] in the workspace of a device. */
+        fun ofPin(pin: PinnedItem, tab: TabSessionState?, restricted: Boolean = false) =
+            ActionTargets(pins = listOf(pin), pinnedTabs = listOfNotNull(tab), restricted = restricted)
 
         private fun List<TabSessionState>.backing(pins: List<PinnedItem>): List<TabSessionState> {
             val tabIds = pins.mapNotNull { it.tabId }.toSet()
@@ -182,10 +190,36 @@ fun PinnedItem.label(tab: TabSessionState?): String = when {
 val PinnedItem.pageUrl: String
     get() = openUrl ?: url.orEmpty()
 
+/**
+ * What can be done to the tabs in the workspace of a device on the account, see [ActionTargets.restricted]: closing
+ * them, which the device follows, and what stays on this device.
+ */
+internal val DeviceTabActions = setOf(
+    TabAction.CLOSE,
+    TabAction.SLEEP,
+    TabAction.BOOKMARK,
+    TabAction.SHARE,
+    TabAction.COPY_LINK,
+    TabAction.DUPLICATE,
+    TabAction.SPLIT_VIEW,
+    TabAction.UNSPLIT,
+)
+
+/**
+ * Whether [targets] can move to [this] workspace. The workspace of a device on the account only takes tabs, which open
+ * on the device: pinned tabs and folders cannot go there.
+ */
+fun Workspace.canTake(targets: ActionTargets): Boolean =
+    device == null || (targets.allPins.isEmpty() && targets.folders.isEmpty())
+
 /** Whether [this] action can do anything for [targets]. Actions on folders reach every tab inside them. */
+fun TabAction.appliesTo(targets: ActionTargets): Boolean =
+    (!targets.restricted || this in DeviceTabActions) && appliesToTargets(targets)
+
 @Suppress("CyclomaticComplexMethod")
-fun TabAction.appliesTo(targets: ActionTargets): Boolean = when (this) {
-    TabAction.CLOSE -> targets.openTabs.isNotEmpty()
+private fun TabAction.appliesToTargets(targets: ActionTargets): Boolean = when (this) {
+    // In the workspace of a device, closing also takes pinned tabs away, since it closes them on the device.
+    TabAction.CLOSE -> targets.openTabs.isNotEmpty() || (targets.restricted && targets.allPins.isNotEmpty())
     TabAction.PIN -> targets.tabs.isNotEmpty()
     TabAction.UNPIN -> targets.allPins.any { !it.essential }
     TabAction.SLEEP -> targets.awakeTabs.isNotEmpty()
@@ -215,7 +249,8 @@ fun RowAction.appliesTo(targets: ActionTargets): Boolean = when (this) {
 /**
  * The buttons of one row: the user's choice, without the actions that do nothing for it. Closing cannot take away a
  * pinned tab or a folder, so on their rows Close puts their tabs to sleep, and once a pinned tab sleeps or is closed,
- * Close unpins it. [isPinned] is for the rows of pinned tabs and folders.
+ * Close unpins it. In the workspace of a device, Close closes a pinned tab, like on the device. [isPinned] is for the
+ * rows of pinned tabs and folders.
  */
 fun rowActions(configured: List<RowAction>, targets: ActionTargets, isPinned: Boolean): List<RowAction> =
     configured
@@ -227,6 +262,7 @@ private val CloseAction = RowAction.BuiltIn(TabAction.CLOSE)
 
 /** What Close does on the row of a pinned tab or a folder: sleep while a tab is awake, then unpin a pinned tab. */
 private fun pinnedClose(targets: ActionTargets): RowAction? = when {
+    targets.restricted && targets.folders.isEmpty() -> CloseAction
     targets.awakeTabs.isNotEmpty() -> RowAction.BuiltIn(TabAction.SLEEP)
     targets.folders.isEmpty() -> RowAction.BuiltIn(TabAction.UNPIN)
     else -> null

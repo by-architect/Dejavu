@@ -9,6 +9,7 @@ import java.io.File
 import java.io.IOException
 import org.json.JSONArray
 import org.json.JSONObject
+import org.mozilla.fenix.dejavu.workspaces.SyncedDevice
 import org.mozilla.fenix.dejavu.workspaces.WorkspaceState
 
 /**
@@ -148,6 +149,7 @@ internal class FirefoxSyncStore(file: File) {
         .put("name", name)
         .put("workspaceId", workspaceId)
         .put("positioned", positioned)
+        .put("kind", kind.key)
         .put(
             "groups",
             JSONArray().apply {
@@ -157,7 +159,8 @@ internal class FirefoxSyncStore(file: File) {
                             .put("id", group.id)
                             .put("folderId", group.folderId)
                             .put("name", group.name)
-                            .put("collapsed", group.collapsed),
+                            .put("collapsed", group.collapsed)
+                            .putNullable("color", group.color),
                     )
                 }
             },
@@ -198,6 +201,7 @@ internal class FirefoxSyncStore(file: File) {
                     folderId = group.string("folderId") ?: return@mapNotNull null,
                     name = group.string("name").orEmpty(),
                     collapsed = group.optBoolean("collapsed"),
+                    color = group.string("color"),
                 )
             },
             tabs = (0 until (tabs?.length() ?: 0)).mapNotNull { index ->
@@ -212,6 +216,7 @@ internal class FirefoxSyncStore(file: File) {
                     confirmed = tab.optBoolean("confirmed"),
                 )
             },
+            kind = SyncedDevice.fromKey(json.string("kind")) ?: SyncedDevice.DESKTOP,
         )
     }
 

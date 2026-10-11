@@ -89,6 +89,7 @@ data class MoreMenuState(
     val canTranslate: Boolean = false,
     val isTranslated: Boolean = false,
     val isWebPage: Boolean = false,
+    val isDeviceTab: Boolean = false,
 )
 
 /** How an entry of the "More" menu looks for the shown tab. */
@@ -112,6 +113,8 @@ internal fun MoreMenuEntry.look(state: MoreMenuState): EntryLook = when (this) {
 private fun MoreMenuItem.look(state: MoreMenuState): EntryLook {
     val item = this
     val default = EntryLook(stringResource(item.label), item.icon)
+    // A tab of a device on the account follows the device, which takes no pins, essentials or pinned pages.
+    if (state.isDeviceTab && item in DeviceLockedItems) return default.copy(enabled = false)
     return when (item) {
         MoreMenuItem.BACK -> default.copy(enabled = state.canGoBack)
         MoreMenuItem.FORWARD -> default.copy(enabled = state.canGoForward)
@@ -152,6 +155,14 @@ private fun MoreMenuItem.look(state: MoreMenuState): EntryLook {
         -> default
     }
 }
+
+/** The entries of the "More" menu that do nothing for a tab of a device on the account. */
+private val DeviceLockedItems = setOf(
+    MoreMenuItem.PIN_TAB,
+    MoreMenuItem.ESSENTIAL_TAB,
+    MoreMenuItem.RESET_PINNED_URL,
+    MoreMenuItem.REPLACE_PINNED_URL,
+)
 
 /**
  * The surface of the "More" menu: a sheet that comes down from the top when the address bar is at the top, and up

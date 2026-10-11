@@ -56,6 +56,7 @@ import androidx.compose.ui.draw.shadow
 import androidx.compose.ui.geometry.CornerRadius
 import androidx.compose.ui.geometry.Offset
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.luminance
 import androidx.compose.ui.hapticfeedback.HapticFeedbackType
 import androidx.compose.ui.input.pointer.pointerInput
 import androidx.compose.ui.platform.LocalDensity
@@ -190,6 +191,8 @@ internal fun WorkspacePage(
 ) {
     val tabsById = tabs.associateBy { it.id }
     val awakeTabIds = tabs.filter { it.isAwake }.map { it.id }.toSet()
+    // The workspace of a device on the account follows the device: its tabs are only opened and closed here.
+    val isDevice = workspace.device != null
     val pinned = state.pinnedTree(workspace.id)
     val pinnedTabIds = state.pins.mapNotNull { it.tabId }.toSet()
     val otherTabs = tabs.filterNot { it.id in pinnedTabIds }
@@ -217,7 +220,8 @@ internal fun WorkspacePage(
                 else -> 0f
             }
             if (step != 0f && current.moved && listState.scrollBy(step) != 0f) {
-                drag = current.copy(target = targetAt(listState, current.pointerY, current, content.state))
+                val target = if (isDevice) null else targetAt(listState, current.pointerY, current, content.state)
+                drag = current.copy(target = target)
             }
             delay(AUTO_SCROLL_FRAME_MS)
         }
@@ -231,7 +235,7 @@ internal fun WorkspacePage(
     }.orEmpty().toSet()
     val essentialsDrop = drag.let { current ->
         when {
-            current == null || !current.moved || current.selection.folderIds.isNotEmpty() -> EssentialsDrop.NONE
+            current == null || !current.moved || current.selection.folderIds.isNotEmpty() || isDevice -> EssentialsDrop.NONE
             current.target == DropTarget.Essentials -> EssentialsDrop.ACTIVE
             else -> EssentialsDrop.AVAILABLE
         }
@@ -247,7 +251,7 @@ internal fun WorkspacePage(
             modifier = Modifier
                 .fillMaxSize()
                 .padding(horizontal = 8.dp)
-                .pointerInput(workspace.id) {
+                .pointerInput(workspace.id, isDevice) {
                     detectDragGesturesAfterLongPress(
                         onDragStart = { offset ->
                             val key = itemKeyAt(listState, offset.y)
@@ -260,7 +264,9 @@ internal fun WorkspacePage(
                             val y = current.pointerY + amount.y
                             val moved = current.moved || abs(y - current.startY) > touchSlop
                             val updated = current.copy(pointerY = y, moved = moved)
-                            drag = updated.copy(target = if (moved) targetAt(listState, y, updated, content.state) else null)
+                            drag = updated.copy(
+                                target = if (moved && !isDevice) targetAt(listState, y, updated, content.state) else null,
+                            )
                         },
                         onDragEnd = {
                             val current = drag
@@ -278,7 +284,8 @@ internal fun WorkspacePage(
                 WorkspaceHeader(
                     workspace = workspace,
                     container = workspace.containerId?.let { containers[it] },
-                    canDelete = canDeleteWorkspace,
+                    isDevice = isDevice,
+                    canDelete = canDeleteWorkspace && !isDevice,
                     canMoveLeft = canMoveLeft,
                     canMoveRight = canMoveRight,
                     onNewFolder = callbacks.onNewFolder,
@@ -311,7 +318,7 @@ internal fun WorkspacePage(
                     )
                 } else {
                     val tab = item.tabId?.let { tabsById[it] }
-                    val targets = ActionTargets.ofPin(item, tab)
+                    val targets = ActionTargets.ofPin(item, tab, restricted = isDevice)
                         .copy(splitTabIds = setOfNotNull(tab?.id).intersect(splitTabIds))
                     val resetPin = RowAction.BuiltIn(TabAction.RESET_PIN).takeIf { it.appliesTo(targets) }
                     TabRow(
@@ -344,6 +351,7 @@ internal fun WorkspacePage(
                 NewTabRow(
                     enabled = selection == null,
                     containers = containers.values.toList(),
+                    showContainers = !isDevice,
                     onClick = callbacks.onNewTabClick,
                     onNewTabInContainer = callbacks.onNewTabInContainer,
                     onNewPrivateTab = callbacks.onNewPrivateTab,
@@ -354,7 +362,11 @@ internal fun WorkspacePage(
 
             items(otherTabs, key = { TAB_PREFIX + it.id }) { tab ->
                 val key = TAB_PREFIX + tab.id
-                val targets = ActionTargets(tabs = listOf(tab), splitTabIds = setOf(tab.id).intersect(splitTabIds))
+                val targets = ActionTargets(
+                    tabs = listOf(tab),
+                    splitTabIds = setOf(tab.id).intersect(splitTabIds),
+                    restricted = isDevice,
+                )
                 TabRow(
                     title = state.titleOf(tab),
                     url = tab.content.url,
@@ -556,6 +568,7 @@ private fun SectionDivider(
 private fun NewTabRow(
     enabled: Boolean,
     containers: List<ContainerRecord>,
+    showContainers: Boolean,
     onClick: () -> Unit,
     onNewTabInContainer: (ContainerPick) -> Unit,
     onNewPrivateTab: () -> Unit,
@@ -590,18 +603,21 @@ private fun NewTabRow(
                 menuOpen = false
                 onNewTabInContainer(choice)
             }
-            val (temporary, permanent) = containers.partition { it.temporary }
-            DejavuMenuLabel(stringResource(R.string.dejavu_new_tab_in_container))
-            DejavuMenuItem(
-                text = stringResource(R.string.dejavu_new_tab_no_container),
-                leadingIcon = { NoContainerIcon() },
-                onClick = { pick(ContainerPick.NoContainer) },
-            )
-            DejavuMenuItem(
-                text = stringResource(R.string.dejavu_new_tab_temporary_container),
-                leadingIcon = { TemporaryContainerIcon() },
-                onClick = { pick(ContainerPick.Temporary) },
-            )
+            // A device on the account would not keep containers, so its workspace only offers a private tab.
+            val (temporary, permanent) = containers.filter { showContainers }.partition { it.temporary }
+            if (showContainers) {
+                DejavuMenuLabel(stringResource(R.string.dejavu_new_tab_in_container))
+                DejavuMenuItem(
+                    text = stringResource(R.string.dejavu_new_tab_no_container),
+                    leadingIcon = { NoContainerIcon() },
+                    onClick = { pick(ContainerPick.NoContainer) },
+                )
+                DejavuMenuItem(
+                    text = stringResource(R.string.dejavu_new_tab_temporary_container),
+                    leadingIcon = { TemporaryContainerIcon() },
+                    onClick = { pick(ContainerPick.Temporary) },
+                )
+            }
             DejavuMenuItem(
                 text = stringResource(R.string.dejavu_new_private_tab),
                 leadingIcon = {
@@ -635,21 +651,23 @@ private fun NewTabRow(
                     )
                 }
             }
-            DejavuMenuDivider()
-            DejavuMenuItem(
-                text = stringResource(R.string.dejavu_container_add),
-                leadingIcon = {
-                    Icon(
-                        painter = painterResource(iconsR.drawable.mozac_ic_plus_24),
-                        contentDescription = null,
-                        modifier = Modifier.size(20.dp),
-                    )
-                },
-                onClick = {
-                    menuOpen = false
-                    onManageContainers()
-                },
-            )
+            if (showContainers) {
+                DejavuMenuDivider()
+                DejavuMenuItem(
+                    text = stringResource(R.string.dejavu_container_add),
+                    leadingIcon = {
+                        Icon(
+                            painter = painterResource(iconsR.drawable.mozac_ic_plus_24),
+                            contentDescription = null,
+                            modifier = Modifier.size(20.dp),
+                        )
+                    },
+                    onClick = {
+                        menuOpen = false
+                        onManageContainers()
+                    },
+                )
+            }
         }
     }
 }
@@ -660,6 +678,7 @@ private fun NewTabRow(
 private fun WorkspaceHeader(
     workspace: Workspace,
     container: ContainerRecord?,
+    isDevice: Boolean,
     canDelete: Boolean,
     canMoveLeft: Boolean,
     canMoveRight: Boolean,
@@ -700,7 +719,10 @@ private fun WorkspaceHeader(
                 overflow = TextOverflow.Ellipsis,
             )
         }
-        SmallIconButton(iconsR.drawable.mozac_ic_folder_add_24, R.string.dejavu_action_new_folder, onNewFolder)
+        // The workspace of a device on the account cannot have folders of its own, nor be deleted: sync handles it.
+        if (!isDevice) {
+            SmallIconButton(iconsR.drawable.mozac_ic_folder_add_24, R.string.dejavu_action_new_folder, onNewFolder)
+        }
         Box {
             SmallIconButton(iconsR.drawable.mozac_ic_ellipsis_vertical_24, R.string.dejavu_workspace_menu) {
                 menuOpen = true
@@ -736,18 +758,42 @@ private fun WorkspaceHeader(
                         onMove(1)
                     },
                 )
-                DejavuMenuItem(
-                    text = stringResource(R.string.dejavu_workspace_delete),
-                    enabled = canDelete,
-                    onClick = {
-                        menuOpen = false
-                        onDelete()
-                    },
-                )
+                if (!isDevice) {
+                    DejavuMenuItem(
+                        text = stringResource(R.string.dejavu_workspace_delete),
+                        enabled = canDelete,
+                        onClick = {
+                            menuOpen = false
+                            onDelete()
+                        },
+                    )
+                }
             }
         }
     }
 }
+
+/** The color of a folder named like a color of Firefox's tab groups, in the shade Firefox uses on this background. */
+@Composable
+private fun groupColor(name: String?): Color? {
+    val (onLight, onDark) = GroupColors[name] ?: return null
+    return Color(if (MaterialTheme.colorScheme.surface.luminance() < HALF) onDark else onLight)
+}
+
+/** Firefox's tab group colors by name, on light and on dark backgrounds. */
+private val GroupColors = mapOf(
+    "blue" to (0xFF23327B to 0xFFA2D3FF),
+    "purple" to (0xFF4F216B to 0xFFE8B7FF),
+    "cyan" to (0xFF034554 to 0xFF8FDDF0),
+    "orange" to (0xFF701C07 to 0xFFFEBD99),
+    "yellow" to (0xFF5F3100 to 0xFFFBCC77),
+    "pink" to (0xFF5F1854 to 0xFFFFB0E2),
+    "green" to (0xFF004933 to 0xFF90E3C6),
+    "red" to (0xFF69172D to 0xFFFFB6BF),
+    "gray" to (0xFF5E6A77 to 0xFF99A6B4),
+)
+
+private const val HALF = 0.5f
 
 /**
  * How many pinned tabs inside folder [folderId], subfolders included, are open and awake, their tab among
@@ -799,7 +845,7 @@ private fun FolderRow(
         Icon(
             painter = painterResource(iconsR.drawable.mozac_ic_folder_24),
             contentDescription = null,
-            tint = MaterialTheme.colorScheme.onSurfaceVariant,
+            tint = groupColor(folder.color) ?: MaterialTheme.colorScheme.onSurfaceVariant,
             modifier = Modifier.size(20.dp),
         )
         if (openTabCount > 0) {

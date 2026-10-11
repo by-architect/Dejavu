@@ -25,6 +25,7 @@ import org.mozilla.fenix.dejavu.browser.closeShownTab
 import org.mozilla.fenix.dejavu.browser.themeOfTab
 import org.mozilla.fenix.dejavu.containers.DejavuContainerStorage
 import org.mozilla.fenix.dejavu.home.ActionTargets
+import org.mozilla.fenix.dejavu.home.DeviceTabActions
 import org.mozilla.fenix.dejavu.home.HomeDialog
 import org.mozilla.fenix.dejavu.home.ItemDialogs
 import org.mozilla.fenix.dejavu.home.TabActionRunner
@@ -38,7 +39,10 @@ import org.mozilla.fenix.dejavu.workspaces.WorkspaceState
 import org.mozilla.fenix.ext.components as contextComponents
 
 /** Whether this action can run on the shown tab, as [state] describes it. */
-internal fun TabAction.canRunOnShownTab(state: MoreMenuState): Boolean = when (this) {
+internal fun TabAction.canRunOnShownTab(state: MoreMenuState): Boolean =
+    (!state.isDeviceTab || this in DeviceTabActions) && canRunOnTab(state)
+
+private fun TabAction.canRunOnTab(state: MoreMenuState): Boolean = when (this) {
     TabAction.COPY_LINK -> state.isWebPage
     TabAction.MOVE_TO_WORKSPACE, TabAction.CHANGE_CONTAINER, TabAction.RENAME_TAB -> !state.isPrivate
     TabAction.MOVE_TO_FOLDER, TabAction.NEW_FOLDER -> !state.isPrivate && state.isWebPage
@@ -64,7 +68,14 @@ internal val TabAction.asksFirst: Boolean
 internal fun runOnShownTab(action: TabAction, context: Context, navController: NavController, tab: TabSessionState) {
     val components = context.contextComponents
     when (action) {
-        TabAction.CLOSE -> closeShownTab(components, navController, tab)
+        TabAction.CLOSE -> {
+            // A pinned tab of a device on the account goes away too, which closes it on the device.
+            val repository = WorkspaceRepository.get(context)
+            val state = repository.state.value
+            val pin = state.pinOf(tab.id)?.takeIf { state.isDeviceWorkspace(it.workspaceId) }
+            if (pin != null) repository.deleteItems(setOf(pin.id))
+            closeShownTab(components, navController, tab)
+        }
         TabAction.SLEEP -> {
             navController.navigate(NavGraphDirections.actionGlobalHome())
             components.core.store.dispatch(EngineAction.SuspendEngineSessionAction(tab.id))
@@ -139,8 +150,13 @@ internal fun ShownTabActionDialog(
 /** The dialog [action] needs for [tab], the shown tab, or `null` when it needs none. */
 private fun shownTabDialog(action: TabAction, tab: TabSessionState, workspaces: WorkspaceState): HomeDialog? {
     val pin = workspaces.pinOf(tab.id)
-    val targets = if (pin != null) ActionTargets.ofPin(pin, tab) else ActionTargets(tabs = listOf(tab))
     val workspaceId = pin?.workspaceId ?: workspaces.workspaceOf(tab.id)
+    val restricted = workspaces.isDeviceWorkspace(workspaceId)
+    val targets = if (pin != null) {
+        ActionTargets.ofPin(pin, tab, restricted)
+    } else {
+        ActionTargets(tabs = listOf(tab), restricted = restricted)
+    }
     return when (action) {
         TabAction.MOVE_TO_WORKSPACE -> HomeDialog.MoveToWorkspace(workspaceId, targets)
         TabAction.CHANGE_CONTAINER -> HomeDialog.ChangeContainer(targets)

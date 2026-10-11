@@ -252,6 +252,8 @@ internal fun moreMenuState(
             !tab.content.isPdf,
         isTranslated = tab.translationsState.isTranslated,
         isWebPage = url.startsWith("http://") || url.startsWith("https://"),
+        isDeviceTab = !tab.content.private &&
+            workspaces.isDeviceWorkspace(pin?.workspaceId ?: workspaces.workspaceOf(tab.id)),
     )
 }
 

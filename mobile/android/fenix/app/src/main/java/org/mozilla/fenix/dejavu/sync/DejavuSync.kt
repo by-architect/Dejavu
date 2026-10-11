@@ -182,6 +182,10 @@ object DejavuSync {
     @Volatile
     private var devicesRefreshedAt = 0L
 
+    /** Devices the account did not have when it was last asked, though sync records of them were still there. */
+    @Volatile
+    private var stillUnknownDevices = emptySet<String>()
+
     @Volatile
     private var scanRequested = false
 
@@ -465,9 +469,12 @@ object DejavuSync {
         return try {
             val auth = authOf(account) ?: throw SyncAuthException("The account has no sync key")
             val connected = connectedDevices(account)
-            val refreshDevices: suspend () -> Set<String>? = { refreshedDevices(account) }
+            // The account's device list comes over the network a while after the app starts; until then, the account
+            // still knows this device's id, without which this device would show as another phone.
+            val localDeviceId = account.deviceConstellation().state()?.currentDevice?.id ?: account.getCurrentDeviceId()
+            val refreshDevices: suspend (Set<String>) -> Set<String>? = { unknown -> refreshedDevices(account, unknown) }
             val found = if (scan) {
-                when (val result = engines.scanner.scan(auth, connected, refreshDevices)) {
+                when (val result = engines.scanner.scan(auth, connected, localDeviceId, refreshDevices)) {
                     ScanResult.NotSetUp -> return Outcome(DejavuSyncProblem.NOT_SET_UP)
                     is ScanResult.Found -> result.data.also { logScan(it) }
                 }
@@ -477,8 +484,10 @@ object DejavuSync {
             val problem = when (source) {
                 null -> DejavuSyncProblem.CHOOSE_SOURCE
                 DejavuSyncSource.ZEN -> problemOf(engines.zen.sync(auth, turnOn))
-                DejavuSyncSource.FIREFOX -> problemOf(engines.firefox.sync(auth, connected, refreshDevices)).also {
+                DejavuSyncSource.FIREFOX -> {
+                    val result = engines.firefox.sync(auth, connected, localDeviceId, refreshDevices)
                     computerTabs = engines.firefox.computerTabs()
+                    problemOf(result)
                 }
             }
             Outcome(problem, found)
@@ -514,15 +523,21 @@ object DejavuSync {
         account.deviceConstellation().state()?.otherDevices?.map { it.id }?.toSet()?.takeIf { it.isNotEmpty() }
 
     /**
-     * Asks the account for its devices again and returns their ids, or `null` when it could not, at most once a minute.
-     * The account tells about a device that joined it only by push messages, which Dejavu may not get.
+     * Asks the account for its devices again, because of the [unknown] ones, and returns their ids, or `null` when it
+     * could not, at most once a minute. The account tells about a device that joined it only by push messages, which
+     * Dejavu may not get. Devices still unknown after that left the account; their records stay a while, and do not
+     * make Dejavu ask again.
      */
-    private suspend fun refreshedDevices(account: OAuthAccount): Set<String>? {
+    private suspend fun refreshedDevices(account: OAuthAccount, unknown: Set<String>): Set<String>? {
+        if (stillUnknownDevices.containsAll(unknown)) return null
         val now = SystemClock.elapsedRealtime()
         if (devicesRefreshedAt != 0L && now - devicesRefreshedAt < DEVICES_REFRESH_MS) return null
         devicesRefreshedAt = now
         logger.info("A device is not among the account's devices, asking the account again")
-        return if (account.deviceConstellation().refreshDevices()) connectedDevices(account) else null
+        if (!account.deviceConstellation().refreshDevices()) return null
+        val devices = connectedDevices(account)
+        stillUnknownDevices = unknown - devices.orEmpty()
+        return devices
     }
 
     private fun problemOf(result: SpacesSyncResult): DejavuSyncProblem? = when (result) {

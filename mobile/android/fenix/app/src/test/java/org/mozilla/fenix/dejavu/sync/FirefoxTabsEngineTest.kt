@@ -24,6 +24,7 @@ import org.mozilla.fenix.dejavu.sync.FirefoxFixtures.ZEN_DEVICE
 import org.mozilla.fenix.dejavu.sync.FirefoxFixtures.client
 import org.mozilla.fenix.dejavu.sync.FirefoxFixtures.tab
 import org.mozilla.fenix.dejavu.sync.FirefoxFixtures.tabsRecord
+import org.mozilla.fenix.dejavu.workspaces.SyncedDevice
 import org.mozilla.fenix.dejavu.workspaces.WorkspaceState
 import org.robolectric.RobolectricTestRunner
 
@@ -72,7 +73,7 @@ class FirefoxTabsEngineTest {
 
     @Test
     fun `only Firefox on computers is shown, and nothing is uploaded`() = runTest {
-        val result = engine.sync(auth, connected = null)
+        val result = engine.sync(auth, connected = null, localDeviceId = PHONE)
 
         assertEquals(FirefoxSyncResult.Synced(listOf("Laptop")), result)
         assertEquals(listOf("Home", "Laptop"), local.state.workspaces.map { it.name })
@@ -83,20 +84,20 @@ class FirefoxTabsEngineTest {
 
     @Test
     fun `nothing is downloaded again while Firefox's tabs stay the same`() = runTest {
-        engine.sync(auth, connected = null)
+        engine.sync(auth, connected = null, localDeviceId = PHONE)
         server.requests.clear()
 
-        engine.sync(auth, connected = null)
+        engine.sync(auth, connected = null, localDeviceId = PHONE)
 
         assertEquals(listOf("GET info/collections", "GET storage/meta/global", "GET storage/crypto/keys"), server.requests)
     }
 
     @Test
     fun `changes in Firefox arrive`() = runTest {
-        engine.sync(auth, connected = null)
+        engine.sync(auth, connected = null, localDeviceId = PHONE)
         server.put("tabs", LAPTOP, FirefoxFixtures.laptopTabs(mail = "https://mail.example/inbox"))
 
-        engine.sync(auth, connected = null)
+        engine.sync(auth, connected = null, localDeviceId = PHONE)
 
         assertTrue(local.state.pins.any { it.url == "https://mail.example/inbox" })
         assertTrue(local.state.pins.none { it.url == MAIL })
@@ -106,18 +107,18 @@ class FirefoxTabsEngineTest {
     fun `turning off open tabs for the account stops following Firefox`() = runTest {
         server.setMeta(JSONObject(), declined = listOf("tabs"))
 
-        assertEquals(FirefoxSyncResult.TabsOff, engine.sync(auth, connected = null))
+        assertEquals(FirefoxSyncResult.TabsOff, engine.sync(auth, connected = null, localDeviceId = PHONE))
         assertEquals(listOf("Home"), local.state.workspaces.map { it.name })
     }
 
     @Test
     fun `a tab closed here asks its computer to close it`() = runTest {
-        engine.sync(auth, connected = null)
-        engine.sync(auth, connected = null)
+        engine.sync(auth, connected = null, localDeviceId = PHONE)
+        engine.sync(auth, connected = null, localDeviceId = PHONE)
         local.state = local.state.copy(pins = local.state.pins.filterNot { it.url == MAIL })
         assertTrue(engine.hasLocalChanges())
 
-        engine.sync(auth, connected = null)
+        engine.sync(auth, connected = null, localDeviceId = PHONE)
 
         assertEquals(listOf(LAPTOP_DEVICE to listOf(MAIL)), local.closeCommands)
         assertFalse(engine.hasLocalChanges())
@@ -126,11 +127,11 @@ class FirefoxTabsEngineTest {
 
     @Test
     fun `a tab closed right after it was shown asks its computer to close it`() = runTest {
-        engine.sync(auth, connected = null)
+        engine.sync(auth, connected = null, localDeviceId = PHONE)
         local.state = local.state.copy(pins = local.state.pins.filterNot { it.url == MAIL })
         assertTrue(engine.hasLocalChanges())
 
-        engine.sync(auth, connected = null)
+        engine.sync(auth, connected = null, localDeviceId = PHONE)
 
         assertEquals(listOf(LAPTOP_DEVICE to listOf(MAIL)), local.closeCommands)
         assertTrue(local.state.pins.none { it.url == MAIL })
@@ -138,14 +139,14 @@ class FirefoxTabsEngineTest {
 
     @Test
     fun `tabs lost before they were kept here come back instead of being closed in Firefox`() = runTest {
-        engine.sync(auth, connected = null)
+        engine.sync(auth, connected = null, localDeviceId = PHONE)
         // The app stopped before the tabs were kept.
         engine = newEngine()
         local.state = local.state.copy(pins = local.state.pins.filterNot { it.url == MAIL })
         local.tabs = emptyList()
         assertFalse(engine.hasLocalChanges())
 
-        engine.sync(auth, connected = null)
+        engine.sync(auth, connected = null, localDeviceId = PHONE)
 
         assertTrue(local.closeCommands.isEmpty())
         assertEquals(1, local.state.pins.count { it.url == MAIL })
@@ -154,19 +155,19 @@ class FirefoxTabsEngineTest {
 
     @Test
     fun `a tab opened here in the workspace of a computer opens there and becomes its tab once it shows it`() = runTest {
-        engine.sync(auth, connected = null)
+        engine.sync(auth, connected = null, localDeviceId = PHONE)
         openHere("opened-here", OPENED)
         assertTrue(engine.hasLocalChanges())
 
-        engine.sync(auth, connected = null)
+        engine.sync(auth, connected = null, localDeviceId = PHONE)
         assertEquals(listOf(LAPTOP_DEVICE to OPENED), local.sentTabs)
         server.put("tabs", LAPTOP, laptopTabsWith(OPENED))
-        engine.sync(auth, connected = null)
+        engine.sync(auth, connected = null, localDeviceId = PHONE)
 
         assertEquals(listOf("opened-here"), local.tabs!!.filter { it.url == OPENED }.map { it.id })
         assertEquals(1, local.sentTabs.size)
         local.tabs = local.tabs!!.filterNot { it.id == "opened-here" }
-        engine.sync(auth, connected = null)
+        engine.sync(auth, connected = null, localDeviceId = PHONE)
         assertEquals(listOf(LAPTOP_DEVICE to listOf(OPENED)), local.closeCommands)
     }
 
@@ -174,8 +175,8 @@ class FirefoxTabsEngineTest {
     fun `tabs opened before Dejavu sent tabs to computers stay here`() = runTest {
         openHere("opened-before", OPENED, createdAt = 1L)
 
-        engine.sync(auth, connected = null)
-        engine.sync(auth, connected = null)
+        engine.sync(auth, connected = null, localDeviceId = PHONE)
+        engine.sync(auth, connected = null, localDeviceId = PHONE)
 
         assertTrue(local.sentTabs.isEmpty())
         assertFalse(engine.hasLocalChanges())
@@ -183,13 +184,13 @@ class FirefoxTabsEngineTest {
 
     @Test
     fun `a tab closed here before its computer showed it is closed there too`() = runTest {
-        engine.sync(auth, connected = null)
+        engine.sync(auth, connected = null, localDeviceId = PHONE)
         openHere("opened-here", OPENED)
-        engine.sync(auth, connected = null)
+        engine.sync(auth, connected = null, localDeviceId = PHONE)
         local.tabs = local.tabs!!.filterNot { it.id == "opened-here" }
         assertTrue(engine.hasLocalChanges())
 
-        engine.sync(auth, connected = null)
+        engine.sync(auth, connected = null, localDeviceId = PHONE)
 
         assertEquals(listOf(LAPTOP_DEVICE to listOf(OPENED)), local.closeCommands)
         assertFalse(engine.hasLocalChanges())
@@ -197,27 +198,27 @@ class FirefoxTabsEngineTest {
 
     @Test
     fun `a tab that could not be sent is sent at the next sync`() = runTest {
-        engine.sync(auth, connected = null)
+        engine.sync(auth, connected = null, localDeviceId = PHONE)
         openHere("opened-here", OPENED)
         local.canSend = false
-        engine.sync(auth, connected = null)
+        engine.sync(auth, connected = null, localDeviceId = PHONE)
         assertTrue(local.sentTabs.isEmpty())
 
         local.canSend = true
-        engine.sync(auth, connected = null)
+        engine.sync(auth, connected = null, localDeviceId = PHONE)
 
         assertEquals(listOf(LAPTOP_DEVICE to OPENED), local.sentTabs)
     }
 
     @Test
     fun `a sent tab is found again after its page redirected`() = runTest {
-        engine.sync(auth, connected = null)
+        engine.sync(auth, connected = null, localDeviceId = PHONE)
         openHere("opened-here", "http://opened.example/")
-        engine.sync(auth, connected = null)
+        engine.sync(auth, connected = null, localDeviceId = PHONE)
         local.tabs = local.tabs!!.map { if (it.id == "opened-here") it.copy(url = OPENED) else it }
         server.put("tabs", LAPTOP, laptopTabsWith(OPENED))
 
-        engine.sync(auth, connected = null)
+        engine.sync(auth, connected = null, localDeviceId = PHONE)
 
         assertEquals(listOf("opened-here"), local.tabs!!.filter { it.url == OPENED }.map { it.id })
         assertEquals(listOf(LAPTOP_DEVICE to "http://opened.example/"), local.sentTabs)
@@ -226,7 +227,7 @@ class FirefoxTabsEngineTest {
     @Test
     fun `the computers' tabs and the ones opened in their workspaces since then are not this device's`() = runTest {
         openHere("opened-before", "https://before.example/", createdAt = 1L)
-        engine.sync(auth, connected = null)
+        engine.sync(auth, connected = null, localDeviceId = PHONE)
         openHere("opened-after", OPENED)
         val tabs = engine.computerTabs()
         val news = local.tabs!!.first { it.url == FirefoxFixtures.NEWS }
@@ -238,10 +239,10 @@ class FirefoxTabsEngineTest {
 
     @Test
     fun `a computer that left the account leaves Dejavu`() = runTest {
-        engine.sync(auth, connected = setOf(LAPTOP_DEVICE, ZEN_DEVICE))
+        engine.sync(auth, connected = setOf(LAPTOP_DEVICE, ZEN_DEVICE), localDeviceId = PHONE)
         assertTrue(local.state.workspaces.any { it.id == laptopWorkspace })
 
-        assertEquals(FirefoxSyncResult.Synced(emptyList()), engine.sync(auth, connected = setOf(ZEN_DEVICE)))
+        assertEquals(FirefoxSyncResult.Synced(emptyList()), engine.sync(auth, connected = setOf(ZEN_DEVICE), localDeviceId = PHONE))
 
         assertEquals(listOf("Home"), local.state.workspaces.map { it.name })
         assertTrue(local.tabs!!.isEmpty())
@@ -249,26 +250,41 @@ class FirefoxTabsEngineTest {
 
     @Test
     fun `a computer that joined the account after its devices were read is shown once they are read again`() = runTest {
-        val result = engine.sync(auth, connected = setOf(ZEN_DEVICE)) { setOf(LAPTOP_DEVICE, ZEN_DEVICE) }
+        val result = engine.sync(auth, connected = setOf(ZEN_DEVICE), localDeviceId = PHONE) { setOf(LAPTOP_DEVICE, ZEN_DEVICE) }
 
         assertEquals(FirefoxSyncResult.Synced(listOf("Laptop")), result)
         assertTrue(local.state.workspaces.any { it.id == laptopWorkspace })
     }
 
     @Test
+    fun `another phone gets a workspace of its own, and this phone does not`() = runTest {
+        val tablet = "fxa-device-tablet"
+        server.put("clients", tablet, client("Tablet", application = null, type = "tablet", fxaDeviceId = tablet))
+        server.put("tabs", tablet, tabsRecord("Tablet", listOf(tab("https://tablet.example/", window = "")), windows = emptyList()))
+
+        val result = engine.sync(auth, connected = null, localDeviceId = PHONE)
+
+        assertEquals(FirefoxSyncResult.Synced(listOf("Laptop", "Tablet")), result)
+        assertEquals(listOf("Home", "Laptop", "Tablet"), local.state.workspaces.map { it.name })
+        assertEquals(SyncedDevice.PHONE, local.state.workspaces.last().device)
+        assertTrue(local.tabs!!.any { it.url == "https://tablet.example/" })
+        assertTrue(local.tabs!!.none { it.url == "https://phone.example/" })
+    }
+
+    @Test
     fun `a computer that signed out of Firefox Sync leaves Dejavu`() = runTest {
-        engine.sync(auth, connected = null)
+        engine.sync(auth, connected = null, localDeviceId = PHONE)
         server.delete("tabs", LAPTOP)
         server.delete("clients", LAPTOP)
 
-        engine.sync(auth, connected = null)
+        engine.sync(auth, connected = null, localDeviceId = PHONE)
 
         assertEquals(listOf("Home"), local.state.workspaces.map { it.name })
     }
 
     @Test
     fun `stopping to follow Firefox removes its workspaces`() = runTest {
-        engine.sync(auth, connected = null)
+        engine.sync(auth, connected = null, localDeviceId = PHONE)
 
         engine.removeAll()
 
@@ -279,12 +295,12 @@ class FirefoxTabsEngineTest {
 
     @Test
     fun `what was shown survives a restart`() = runTest {
-        engine.sync(auth, connected = null)
+        engine.sync(auth, connected = null, localDeviceId = PHONE)
         val shown = local.state
         server.requests.clear()
 
         engine = newEngine()
-        engine.sync(auth, connected = null)
+        engine.sync(auth, connected = null, localDeviceId = PHONE)
 
         assertEquals(shown, local.state)
         assertTrue(server.requests.none { it.startsWith("GET storage/tabs") || it.startsWith("GET storage/clients") })

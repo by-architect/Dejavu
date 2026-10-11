@@ -7,6 +7,7 @@ package org.mozilla.fenix.dejavu.sync
 import java.util.UUID
 import org.mozilla.fenix.dejavu.workspaces.PinKind
 import org.mozilla.fenix.dejavu.workspaces.PinnedItem
+import org.mozilla.fenix.dejavu.workspaces.SyncedDevice
 import org.mozilla.fenix.dejavu.workspaces.Workspace
 import org.mozilla.fenix.dejavu.workspaces.WorkspaceState
 
@@ -46,8 +47,14 @@ internal data class MirroredTab(
         other != null && url == other.url && title == other.title && place == other.place
 }
 
-/** A tab group of a Firefox computer, shown as the folder [folderId]. */
-internal data class MirroredGroup(val id: String, val folderId: String, val name: String, val collapsed: Boolean)
+/** A tab group of a Firefox computer, shown as the folder [folderId] in the group's [color]. */
+internal data class MirroredGroup(
+    val id: String,
+    val folderId: String,
+    val name: String,
+    val collapsed: Boolean,
+    val color: String? = null,
+)
 
 /**
  * A Firefox computer as Dejavu last showed it.
@@ -59,6 +66,7 @@ internal data class MirroredGroup(val id: String, val folderId: String, val name
  * @property positioned Whether [tabs] are in Firefox's order, see [TabsRecord.positioned].
  * @property groups The computer's tab groups, in the order of their first tab.
  * @property tabs The computer's tabs in Firefox's order.
+ * @property kind Whether the device is a computer or a phone.
  */
 internal data class MirroredDevice(
     val clientId: String,
@@ -68,6 +76,7 @@ internal data class MirroredDevice(
     val positioned: Boolean = true,
     val groups: List<MirroredGroup> = emptyList(),
     val tabs: List<MirroredTab> = emptyList(),
+    val kind: SyncedDevice = SyncedDevice.DESKTOP,
 ) {
     /** The pinned tabs and folders of the workspace in Firefox's order: pinned tabs first, like in Firefox. */
     fun topLevel(): List<String> = tabs.filter { !it.closedHere && it.pinned }.map { it.id } + groups.map { it.folderId }
@@ -285,7 +294,7 @@ internal class FirefoxMirror(
         val groups = tabs.mapNotNull { it.groupId }.distinct().map { groupId ->
             val group = computer.record.groups.getValue(groupId)
             val folderId = previousGroups[groupId]?.folderId ?: folderIdOf(clientId, groupId)
-            MirroredGroup(groupId, folderId, group.name, group.collapsed)
+            MirroredGroup(groupId, folderId, group.name, group.collapsed, group.color)
         }
         return MirroredDevice(
             clientId = clientId,
@@ -295,6 +304,7 @@ internal class FirefoxMirror(
             positioned = computer.record.positioned,
             groups = groups,
             tabs = tabs + frozen,
+            kind = computer.kind,
         )
     }
 
@@ -402,14 +412,13 @@ internal class FirefoxMirror(
 
         private fun applyDevice(old: MirroredDevice?, device: MirroredDevice) {
             if (old == null) ensureWorkspace(device)
-            if (old != null && old.name != device.name) {
-                val index = workspaces.indexOfFirst { it.id == device.workspaceId }
-                if (index >= 0) workspaces[index] = workspaces[index].copy(name = device.name, updatedAt = now)
-            }
+            keepDeviceLook(device, renamed = old != null && old.name != device.name)
             val oldGroups = old?.groups.orEmpty().associateBy { it.id }
             for (group in device.groups) {
                 val before = oldGroups[group.id] ?: continue
-                if (before.name != group.name || before.collapsed != group.collapsed) updateFolder(group)
+                if (before.name != group.name || before.collapsed != group.collapsed || before.color != group.color) {
+                    updateFolder(group)
+                }
             }
             val oldTabs = old?.tabs.orEmpty().associateBy { it.id }
             for (tab in device.tabs) {
@@ -574,25 +583,50 @@ internal class FirefoxMirror(
                 workspaces += Workspace(
                     id = device.workspaceId,
                     name = device.name,
-                    icon = COMPUTER_ICON,
+                    icon = iconOf(device.kind),
                     createdAt = now,
                     updatedAt = now,
+                    device = device.kind,
                 )
                 created += device.workspaceId
             }
             return device.workspaceId
         }
 
-        /** Removes the workspace of a computer no longer followed, unless pinned or open tabs were added to it here. */
+        /**
+         * Gives the device's workspace what comes from the device: its name when it was [renamed] there, its icon, its
+         * mark as a device's workspace, and no container, since the device would not keep one.
+         */
+        private fun keepDeviceLook(device: MirroredDevice, renamed: Boolean) {
+            val index = workspaces.indexOfFirst { it.id == device.workspaceId }
+            if (index < 0) return
+            val workspace = workspaces[index]
+            val updated = workspace.copy(
+                name = if (renamed) device.name else workspace.name,
+                icon = iconOf(device.kind),
+                device = device.kind,
+                containerId = null,
+            )
+            if (updated != workspace) workspaces[index] = updated.copy(updatedAt = now)
+        }
+
+        /**
+         * Removes the workspace of a device no longer followed, unless pinned or open tabs were added to it here. Then
+         * it stays as one of the user's own workspaces.
+         */
         private fun removeWorkspaceIfEmpty(workspaceId: String) {
             val index = workspaces.indexOfFirst { it.id == workspaceId }
-            if (index < 0 || workspaces.size == 1) return
+            if (index < 0) return
             val hasTabs = if (tabs == null) {
                 assignments.any { (tabId, assigned) -> assigned == workspaceId && tabId !in closing }
             } else {
                 openTabs.keys.any { it !in closing && assignments[it] == workspaceId }
             }
-            if (hasTabs || pins.any { it.workspaceId == workspaceId }) return
+            if (workspaces.size == 1 || hasTabs || pins.any { it.workspaceId == workspaceId }) {
+                val workspace = workspaces[index]
+                if (workspace.device != null) workspaces[index] = workspace.copy(device = null, updatedAt = now)
+                return
+            }
             val target = workspaces[if (index > 0) index - 1 else 1].id
             workspaces.removeAt(index)
             assignments.replaceAll { _, assigned -> if (assigned == workspaceId) target else assigned }
@@ -612,6 +646,7 @@ internal class FirefoxMirror(
                     collapsed = group.collapsed,
                     createdAt = now,
                     updatedAt = now,
+                    color = group.color,
                 )
                 arrivals += group.folderId
             }
@@ -624,6 +659,7 @@ internal class FirefoxMirror(
             pins[index] = pins[index].copy(
                 title = group.name.ifBlank { unnamedGroup },
                 collapsed = group.collapsed,
+                color = group.color,
                 updatedAt = now,
             )
         }
@@ -689,6 +725,16 @@ internal class FirefoxMirror(
         private val COMPUTER_ICON = buildString {
             appendCodePoint(0x1F5A5)
             appendCodePoint(0xFE0F)
+        }
+
+        /** The mobile phone emoji, the icon of the phones' workspaces. */
+        @Suppress("MagicNumber")
+        private val PHONE_ICON = buildString { appendCodePoint(0x1F4F1) }
+
+        /** The icon of the workspace of a device of kind [kind]. */
+        fun iconOf(kind: SyncedDevice): String = when (kind) {
+            SyncedDevice.DESKTOP -> COMPUTER_ICON
+            SyncedDevice.PHONE -> PHONE_ICON
         }
 
         /** The id of the workspace of computer [clientId], the same every time so that it is found again. */

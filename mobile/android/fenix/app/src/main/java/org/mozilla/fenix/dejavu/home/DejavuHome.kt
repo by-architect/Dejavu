@@ -181,7 +181,12 @@ fun DejavuHome(
     val onPrivatePage = privateIndex != null && pagerState.currentPage == privateIndex
     val currentWorkspace = state.workspaces.getOrNull(pagerState.currentPage) ?: state.workspaces.last()
     val tabsById = remember(tabs) { tabs.associateBy { it.id } }
-    val essentials = if (onPrivatePage) emptyList() else state.essentialsFor(currentWorkspace.containerId, essentialsPerContainer)
+    // The workspace of a device on the account shows what the device has, which has no essentials.
+    val essentials = if (onPrivatePage || currentWorkspace.device != null) {
+        emptyList()
+    } else {
+        state.essentialsFor(currentWorkspace.containerId, essentialsPerContainer)
+    }
     val grain = rememberGrainBrush()
 
     fun themeAt(page: Int): WorkspaceTheme? =

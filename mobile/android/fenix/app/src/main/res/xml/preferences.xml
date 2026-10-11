@@ -6,6 +6,33 @@
 <androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
+    <!-- Dejavu: what each version brought, who makes Dejavu, and a way to support it, on top of every setting. -->
+    <androidx.preference.PreferenceCategory
+        android:key="@string/pref_key_dejavu_top_category"
+        android:title="@string/dejavu_settings_title"
+        android:layout="@layout/preference_category_no_icon_style">
+
+        <androidx.preference.Preference
+            android:icon="@drawable/mozac_ic_whats_new_24"
+            android:key="@string/pref_key_dejavu_whats_new"
+            android:summary="@string/dejavu_settings_whats_new_summary"
+            android:title="@string/dejavu_settings_whats_new"
+            app:widgetLayout="@layout/dejavu_preference_badge" />
+
+        <androidx.preference.Preference
+            android:icon="@drawable/dejavu_author_avatar"
+            android:key="@string/pref_key_dejavu_author"
+            android:summary="@string/dejavu_about_source_code"
+            app:widgetLayout="@layout/preference_widget_external_link" />
+
+        <androidx.preference.Preference
+            android:icon="@drawable/dejavu_ic_coffee_24"
+            android:key="@string/pref_key_dejavu_coffee"
+            android:summary="@string/dejavu_settings_coffee_summary"
+            android:title="@string/dejavu_settings_coffee"
+            app:widgetLayout="@layout/preference_widget_external_link" />
+    </androidx.preference.PreferenceCategory>
+
     <androidx.preference.Preference
         android:key="@string/pref_key_sign_in"
         android:layout="@layout/sign_in_preference"

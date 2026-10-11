@@ -97,18 +97,20 @@ internal class FirefoxTabsEngine(
     }
 
     /**
-     * Syncs. [connected] are the ids of the account's devices when they are known, so that computers that left the
-     * account are not shown anymore. [refreshDevices] asks the account for them again, for a computer not among them.
+     * Syncs. [connected] are the ids of the account's other devices when they are known, so that devices that left the
+     * account are not shown anymore, and [localDeviceId] is this device's, which is never shown. [refreshDevices] asks
+     * the account for its devices again, for devices not among them.
      */
     suspend fun sync(
         auth: SyncAuth,
         connected: Set<String>?,
-        refreshDevices: suspend () -> Set<String>? = { null },
+        localDeviceId: String? = null,
+        refreshDevices: suspend (unknown: Set<String>) -> Set<String>? = { null },
     ): FirefoxSyncResult {
         val data = store.load()
         closeTabsClosedHere(data)
         sendTabsOpenedHere(data)
-        return tokens.retryingOnce { run(auth, connected, refreshDevices, data) }
+        return tokens.retryingOnce { run(auth, connected, localDeviceId, refreshDevices, data) }
     }
 
     /**
@@ -178,7 +180,8 @@ internal class FirefoxTabsEngine(
     private suspend fun run(
         auth: SyncAuth,
         connected: Set<String>?,
-        refreshDevices: suspend () -> Set<String>?,
+        localDeviceId: String?,
+        refreshDevices: suspend (unknown: Set<String>) -> Set<String>?,
         data: FirefoxSyncData,
     ): FirefoxSyncResult {
         val token = tokens.get(auth)
@@ -214,7 +217,8 @@ internal class FirefoxTabsEngine(
         val computers = firefoxComputers(
             clients = clients,
             tabs = data.tabs.mapValues { (id, cleartext) -> TabsRecord.fromCleartext(id, cleartext) },
-            connected = devicesFor(clients, connected, refreshDevices),
+            connected = devicesFor(clients, connected, localDeviceId, refreshDevices),
+            localDeviceId = localDeviceId,
         )
         val current = local.read()
         val mirror = mirror(current)

@@ -63,6 +63,7 @@ import org.mozilla.fenix.dejavu.containers.ContainerPick
 import org.mozilla.fenix.dejavu.containers.DejavuContainerStorage
 import org.mozilla.fenix.dejavu.features.FeatureTour
 import org.mozilla.fenix.dejavu.features.FeatureTourDialog
+import org.mozilla.fenix.dejavu.features.wasUpdated
 import org.mozilla.fenix.dejavu.settings.DejavuSettings
 import org.mozilla.fenix.dejavu.settings.resolveRowActions
 import org.mozilla.fenix.dejavu.settings.resolveSelectionActions
@@ -193,10 +194,12 @@ fun ComposeView.setDejavuHomeContent(
                 }
             }
 
-            var showTour by remember { mutableStateOf(FeatureTour.isDue(settings)) }
+            val dueChapters = remember { FeatureTour.dueChapters(settings, updated = context.wasUpdated()) }
+            var showTour by remember { mutableStateOf(dueChapters.isNotEmpty()) }
             if (showTour) {
                 CompositionLocalProvider(LocalPopupTheme provides workspaceState.activeWorkspace?.theme) {
                     FeatureTourDialog(
+                        chapters = dueChapters,
                         onDismiss = {
                             FeatureTour.markSeen(settings)
                             showTour = false
@@ -332,6 +335,8 @@ private class DefaultDejavuHomeInteractor(
 
     override fun onDrop(workspaceId: String, selection: Selection, target: DropTarget) {
         val state = repository.state.value
+        // The workspace of a device on the account follows the device, which takes nothing dragged here.
+        if (state.isDeviceWorkspace(workspaceId)) return
         val targets = ActionTargets.of(state, store.state.normalTabs, selection)
         val placement = when (target) {
             is DropTarget.IntoFolder -> PinPlacement.Into(target.folderId)

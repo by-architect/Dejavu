@@ -73,6 +73,8 @@ import org.mozilla.fenix.R
 import org.mozilla.fenix.components.Components
 import org.mozilla.fenix.components.accounts.FenixFxAEntryPoint
 import org.mozilla.fenix.databinding.AmoCollectionOverrideDialogBinding
+import org.mozilla.fenix.dejavu.DejavuLinks
+import org.mozilla.fenix.dejavu.features.DejavuFeatureTourFragment
 import org.mozilla.fenix.e2e.SystemInsetsPaddedFragment
 import org.mozilla.fenix.ext.application
 import org.mozilla.fenix.ext.components
@@ -80,6 +82,7 @@ import org.mozilla.fenix.ext.getPreferenceKey
 import org.mozilla.fenix.ext.navigateToAppDetailsSettings
 import org.mozilla.fenix.ext.navigateToNotificationsSettings
 import org.mozilla.fenix.ext.openInNewTab
+import org.mozilla.fenix.ext.openToBrowser
 import org.mozilla.fenix.ext.requireComponents
 import org.mozilla.fenix.ext.showToolbar
 import org.mozilla.fenix.ext.showToolbarWithIconButton
@@ -229,6 +232,9 @@ class SettingsFragment : PreferenceFragmentCompat(), SystemInsetsPaddedFragment 
 
     override fun onCreatePreferences(savedInstanceState: Bundle?, rootKey: String?) {
         setPreferencesFromResource(R.xml.preferences, rootKey)
+        // Dejavu: the maker's name is not translated.
+        findPreference<Preference>(getString(R.string.pref_key_dejavu_author))?.title =
+            getString(R.string.dejavu_settings_author, getString(R.string.dejavu_author_name))
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -367,6 +373,12 @@ class SettingsFragment : PreferenceFragmentCompat(), SystemInsetsPaddedFragment 
         }
     }
 
+    /** Dejavu: opens one of Dejavu's pages in a new tab. */
+    private fun openDejavuPage(url: String) {
+        findNavController().openToBrowser()
+        requireComponents.useCases.fenixBrowserUseCases.loadUrlOrSearch(searchTermOrURL = url, newTab = true)
+    }
+
     @Suppress("LongMethod", "CyclomaticComplexMethod")
     override fun onPreferenceTreeClick(preference: Preference): Boolean {
         // Hide the scrollbar so the animation looks smoother
@@ -375,6 +387,22 @@ class SettingsFragment : PreferenceFragmentCompat(), SystemInsetsPaddedFragment 
 
         val directions: NavDirections? =
             when (preference.key) {
+                // Dejavu: what each version brought, who makes Dejavu, and a way to support it.
+                resources.getString(R.string.pref_key_dejavu_whats_new) -> {
+                    DejavuFeatureTourFragment().show(parentFragmentManager, DejavuFeatureTourFragment.TAG)
+                    null
+                }
+
+                resources.getString(R.string.pref_key_dejavu_author) -> {
+                    openDejavuPage(DejavuLinks.SOURCE_CODE)
+                    null
+                }
+
+                resources.getString(R.string.pref_key_dejavu_coffee) -> {
+                    openDejavuPage(DejavuLinks.BUY_ME_A_COFFEE)
+                    null
+                }
+
                 /* Top level account preferences.
                 Note: Only ONE of these preferences is visible at a time. */
                 resources.getString(R.string.pref_key_sign_in) -> {

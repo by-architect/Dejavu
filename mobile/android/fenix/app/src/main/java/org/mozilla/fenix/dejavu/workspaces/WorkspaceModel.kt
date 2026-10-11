@@ -14,6 +14,9 @@ package org.mozilla.fenix.dejavu.workspaces
  * @property theme Background of the workspace, or `null` for the plain background.
  * @property createdAt Creation time in milliseconds.
  * @property updatedAt Last change time in milliseconds, used to resolve sync conflicts.
+ * @property device The device on the Mozilla account whose open tabs the workspace shows, or `null` for the user's own
+ *   workspaces. Such a workspace follows the device: tabs can only be opened and closed in it, and its name, icon and
+ *   lack of a container come from the device. Local to this device.
  */
 data class Workspace(
     val id: String,
@@ -23,7 +26,19 @@ data class Workspace(
     val theme: WorkspaceTheme? = null,
     val createdAt: Long,
     val updatedAt: Long,
+    val device: SyncedDevice? = null,
 )
+
+/** A kind of device on the Mozilla account whose open tabs a workspace shows, see [Workspace.device]. */
+enum class SyncedDevice(val key: String) {
+    DESKTOP("desktop"),
+    PHONE("phone"),
+    ;
+
+    companion object {
+        fun fromKey(key: String?): SyncedDevice? = entries.firstOrNull { it.key == key }
+    }
+}
 
 /**
  * A workspace background, like Zen's space themes: a gradient of one to three colors.
@@ -80,6 +95,8 @@ enum class PinKind(val key: String) {
  * @property openTitle Title of the page at [openUrl].
  * @property createdAt Creation time in milliseconds.
  * @property updatedAt Last change time in milliseconds, used to resolve sync conflicts.
+ * @property color Color of a folder, named like the colors of Firefox's tab groups: blue, purple, cyan, orange, yellow,
+ *   pink, green, red or gray. Local to this device and never synced.
  */
 data class PinnedItem(
     val id: String,
@@ -98,6 +115,7 @@ data class PinnedItem(
     val openTitle: String? = null,
     val createdAt: Long,
     val updatedAt: Long,
+    val color: String? = null,
 ) {
     val isFolder: Boolean
         get() = kind == PinKind.FOLDER
@@ -154,6 +172,10 @@ data class WorkspaceState(
      */
     fun essentialsGroupOf(containerId: String?): String? =
         containerId?.takeIf { id -> workspaces.any { it.containerId == id } }
+
+    /** Whether workspace [workspaceId] shows the open tabs of a device on the account, see [Workspace.device]. */
+    fun isDeviceWorkspace(workspaceId: String?): Boolean =
+        workspaceId != null && workspaces.any { it.id == workspaceId && it.device != null }
 
     /** Returns the workspace ID for [tabId], falling back to the active workspace for unassigned tabs. */
     fun workspaceOf(tabId: String): String = assignments[tabId] ?: activeWorkspaceId
