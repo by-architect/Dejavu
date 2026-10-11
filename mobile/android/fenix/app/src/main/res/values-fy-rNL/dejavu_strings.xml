@@ -292,7 +292,7 @@
     <string name="dejavu_feature_split_view">Druk lang op in keppeling om dy yn dûbele werjefte te iepenjen</string>
     <string name="dejavu_sync_choose_about">Syngronisearje jo wurkromten mei Firefox of Zen Browser op jo kompjûter, fia it Mozilla-akkount wêrmei\'t jo Firefox-gegevens syngronisearje.</string>
     <string name="dejavu_sync_firefox_about">Toant de iepen ljepblêden fan Firefox op elk fan jo kompjûters as in wurkromte en hâldt se bywurke. It brûkt it Mozilla-akkount wêrmei\'t jo Firefox-gegevens syngronisearje.</string>
-    <string name="dejavu_sync_firefox_hint">Iepenje yn Firefox op jo kompjûter de Ynstellingen, dan Syngronisaasje, en lit de opsje Iepen ljepblêden oan stean. Ljepblêden dy\'t jo yn Dejavu iepenje, bliuwe op dit apparaat, en Firefox toant se ûnder jo oare apparaten.</string>
+    <string name="dejavu_sync_firefox_hint">Iepenje yn Firefox op jo kompjûter de Ynstellingen, dan Syngronisaasje, en lit de opsje Iepen ljepblêden oan stean. Ljepblêden dy\'t jo yn de wurkromte fan in kompjûter iepenje, wurde ek yn Firefox op dy kompjûter iepene. Ljepblêden yn jo oare wurkromten bliuwe op dit apparaat, en Firefox toant se ûnder jo oare apparaten.</string>
     <string name="dejavu_sync_normal_tabs_firefox_summary">Toant ek de ljepblêden dy\'t net fêstset binne en ek net yn in ljepblêdgroep sitte, net allinnich fêstsette ljepblêden en ljepblêdgroepen.</string>
     <string name="dejavu_sync_source">Syngronisearje mei</string>
     <string name="dejavu_sync_source_none">Noch net keazen</string>

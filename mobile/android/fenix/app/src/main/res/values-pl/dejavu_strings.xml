@@ -306,7 +306,7 @@
     <string name="dejavu_feature_split_view">Przytrzymaj odnośnik, aby otworzyć go w widoku podzielonym</string>
     <string name="dejavu_sync_choose_about">Synchronizuj obszary robocze z Firefoksem lub Zen Browser na komputerze, korzystając z konta Mozilli, za pomocą którego synchronizujesz dane Firefoksa.</string>
     <string name="dejavu_sync_firefox_about">Pokazuje otwarte karty Firefoksa z każdego twojego komputera jako obszar roboczy i na bieżąco je aktualizuje. Wykorzystuje do tego konto Mozilli, za pomocą którego synchronizujesz dane Firefoksa.</string>
-    <string name="dejavu_sync_firefox_hint">W Firefoksie na komputerze otwórz Ustawienia, potem Synchronizację, i pozostaw włączoną opcję Otwarte karty. Karty otwarte w Dejavu pozostają na tym urządzeniu, a Firefox pokazuje je na liście twoich innych urządzeń.</string>
+    <string name="dejavu_sync_firefox_hint">W Firefoksie na komputerze otwórz Ustawienia, potem Synchronizację, i pozostaw włączoną opcję Otwarte karty. Karty otwarte w obszarze roboczym komputera otwierają się też w Firefoksie na tym komputerze. Karty w innych obszarach roboczych pozostają na tym urządzeniu, a Firefox pokazuje je na liście twoich innych urządzeń.</string>
     <string name="dejavu_sync_normal_tabs_firefox_summary">Pokazuje też karty, które nie są ani przypięte, ani w grupie kart, a nie tylko przypięte karty i grupy kart.</string>
     <string name="dejavu_sync_source">Synchronizuj z</string>
     <string name="dejavu_sync_source_none">Jeszcze nie wybrano</string>

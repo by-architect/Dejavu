@@ -292,7 +292,7 @@
     <string name="dejavu_feature_split_view">Mag-long-press sa isang link para buksan ito sa split view</string>
     <string name="dejavu_sync_choose_about">I-sync ang iyong mga workspace kasama ang Firefox o Zen Browser sa iyong kompyuter, gamit ang Mozilla account na ginagamit mo sa pag-sync ng data ng Firefox.</string>
     <string name="dejavu_sync_firefox_about">Ipinapakita ang mga bukas na tab ng Firefox sa bawat isa sa iyong mga kompyuter bilang isang workspace, at pinapanatiling napapanahon ang mga ito. Ginagamit nito ang Mozilla account na ginagamit mo sa pag-sync ng data ng Firefox.</string>
-    <string name="dejavu_sync_firefox_hint">Sa Firefox sa iyong kompyuter, buksan ang Settings, pagkatapos ay Sync, at panatilihing naka-on ang Mga nakabukas na tab. Nananatili sa device na ito ang mga tab na binubuksan mo sa Dejavu, at inililista ito ng Firefox sa ilalim ng iyong ibang device.</string>
+    <string name="dejavu_sync_firefox_hint">Sa Firefox sa iyong kompyuter, buksan ang Settings, pagkatapos ay Sync, at panatilihing naka-on ang Mga nakabukas na tab. Ang mga tab na binubuksan mo sa workspace ng isang kompyuter ay bumubukas din sa Firefox ng kompyuter na iyon. Nananatili sa device na ito ang mga tab sa iyong ibang workspace, at inililista ito ng Firefox sa ilalim ng iyong ibang device.</string>
     <string name="dejavu_sync_normal_tabs_firefox_summary">Ipinapakita rin nito ang mga tab na hindi naka-pin at wala sa isang grupo ng tab, hindi lang ang mga naka-pin na tab at mga grupo ng tab.</string>
     <string name="dejavu_sync_source">I-sync kasama ang</string>
     <string name="dejavu_sync_source_none">Wala pang napili</string>

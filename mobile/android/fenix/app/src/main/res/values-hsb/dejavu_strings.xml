@@ -306,7 +306,7 @@
     <string name="dejavu_feature_split_view">Na wotkaz dołho tłóčić, zo by jón w dźělenym napohledźe wočinił</string>
     <string name="dejavu_sync_choose_about">Synchronizuj swoje dźěłowe rumy z Firefox abo Zen Browser na swojim ličaku, přez konto Mozilla, z kotrymž swoje daty Firefox synchronizuješ.</string>
     <string name="dejavu_sync_firefox_about">Pokazuje wočinjene rajtarki Firefox na kóždym z twojich ličakow jako dźěłowy rum a dźerži je aktualne. Wužiwa konto Mozilla, z kotrymž swoje daty Firefox synchronizuješ.</string>
-    <string name="dejavu_sync_firefox_hint">W Firefox na swojim ličaku wočiń Nastajenja, potom Synchronizacija, a wostaj opciju Wočinjene rajtarki zmóžnjenu. Rajtarki, kotrež w Dejavu wočiniš, na tutym graće wostanu, a Firefox je pod twojimi druhimi gratami pokazuje.</string>
+    <string name="dejavu_sync_firefox_hint">W Firefox na swojim ličaku wočiń Nastajenja, potom Synchronizacija, a wostaj opciju Wočinjene rajtarki zmóžnjenu. Rajtarki, kotrež w dźěłowym rumje ličaka wočiniš, so tež w Firefox na tym ličaku wočinjeja. Rajtarki w twojich druhich dźěłowych rumach na tutym graće wostanu, a Firefox je pod twojimi druhimi gratami pokazuje.</string>
     <string name="dejavu_sync_normal_tabs_firefox_summary">Pokazuje tež rajtarki, kotrež ani připjate ani w skupinje rajtarkow njejsu, nic jenož připjate rajtarki a skupiny rajtarkow.</string>
     <string name="dejavu_sync_source">Synchronizować z</string>
     <string name="dejavu_sync_source_none">Hišće njewubrany</string>

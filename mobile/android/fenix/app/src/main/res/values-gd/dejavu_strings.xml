@@ -306,7 +306,7 @@
     <string name="dejavu_feature_split_view">Brùth fada air ceangal gus fhosgladh ann an sealladh sgoilte</string>
     <string name="dejavu_sync_choose_about">Sioncronaich na h-àiteachan-obrach agad le Firefox no Zen Browser air a\' choimpiutair agad, leis a\' chunntas Mozilla air a bheil thu a\' sioncronachadh dàta Firefox agad.</string>
     <string name="dejavu_sync_firefox_about">Seallaidh e na tabaichean fosgailte aig Firefox air gach coimpiutair agad mar àite-obrach, agus cumaidh e iad ùraichte. Cleachdaidh e an cunntas Mozilla air a bheil thu a\' sioncronachadh dàta Firefox agad.</string>
-    <string name="dejavu_sync_firefox_hint">Ann am Firefox air a\' choimpiutair agad, fosgail Roghainnean, an uairsin Sioncronachadh, agus cùm Tabaichean fosgailte air. Fanaidh tabaichean a dh\'fhosglas tu ann an Dejavu air an uidheam seo, agus seallaidh Firefox iad am measg nan uidheaman eile agad.</string>
+    <string name="dejavu_sync_firefox_hint">Ann am Firefox air a\' choimpiutair agad, fosgail Roghainnean, an uairsin Sioncronachadh, agus cùm Tabaichean fosgailte air. Fosglaidh tabaichean a dh\'fhosglas tu ann an àite-obrach coimpiutair ann am Firefox air a\' choimpiutair sin cuideachd. Fanaidh tabaichean anns na h-àiteachan-obrach eile agad air an uidheam seo, agus seallaidh Firefox iad am measg nan uidheaman eile agad.</string>
     <string name="dejavu_sync_normal_tabs_firefox_summary">Seallaidh e cuideachd na tabaichean nach eil prìnichte no ann am buidheann thabaichean, chan e a-mhàin na tabaichean prìnichte \'s na buidhnean thabaichean.</string>
     <string name="dejavu_sync_source">Sioncronaich le</string>
     <string name="dejavu_sync_source_none">Cha deach a thaghadh fhathast</string>

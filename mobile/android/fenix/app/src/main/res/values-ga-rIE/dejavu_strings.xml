@@ -313,7 +313,7 @@
     <string name="dejavu_feature_split_view">Brúigh go fada ar nasc chun é a oscailt in amharc scoilte</string>
     <string name="dejavu_sync_choose_about">Sioncronaigh do spásanna oibre le Firefox nó Zen Browser ar do ríomhaire, tríd an gcuntas Mozilla a sioncronaíonn tú sonraí Firefox leis.</string>
     <string name="dejavu_sync_firefox_about">Taispeánann sé cluaisíní oscailte Firefox ar gach ceann de do ríomhairí mar spás oibre, agus coinníonn sé cothrom le dáta iad. Úsáideann sé an cuntas Mozilla a sioncronaíonn tú sonraí Firefox leis.</string>
-    <string name="dejavu_sync_firefox_hint">I Firefox ar do ríomhaire, oscail Socruithe, ansin Sioncrónú, agus fág ‘Cluaisíní oscailte’ ar siúl. Fanann cluaisíní a osclaíonn tú i Dejavu ar an ngléas seo, agus liostaíonn Firefox iad faoi do ghléasanna eile.</string>
+    <string name="dejavu_sync_firefox_hint">I Firefox ar do ríomhaire, oscail Socruithe, ansin Sioncrónú, agus fág ‘Cluaisíní oscailte’ ar siúl. Osclaíonn cluaisíní a osclaíonn tú i spás oibre ríomhaire i Firefox ar an ríomhaire sin freisin. Fanann cluaisíní i do spásanna oibre eile ar an ngléas seo, agus liostaíonn Firefox iad faoi do ghléasanna eile.</string>
     <string name="dejavu_sync_normal_tabs_firefox_summary">Taispeánann sé freisin na cluaisíní nach bhfuil greamaithe ná i ngrúpa cluaisíní, ní hamháin cluaisíní greamaithe agus grúpaí cluaisíní.</string>
     <string name="dejavu_sync_source">Sioncronaigh le</string>
     <string name="dejavu_sync_source_none">Gan roghnú fós</string>

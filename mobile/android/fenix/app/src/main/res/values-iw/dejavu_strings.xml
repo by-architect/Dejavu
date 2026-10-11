@@ -299,7 +299,7 @@
     <string name="dejavu_feature_split_view">לחצו לחיצה ארוכה על קישור כדי לפתוח אותו בתצוגה מפוצלת</string>
     <string name="dejavu_sync_choose_about">סנכרנו את מרחבי העבודה שלכם עם Firefox או Zen Browser במחשב שלכם, דרך חשבון Mozilla שדרכו אתם מסנכרנים נתוני Firefox.</string>
     <string name="dejavu_sync_firefox_about">מציג את הלשוניות הפתוחות של Firefox בכל אחד מהמחשבים שלכם כמרחב עבודה, ושומר אותן מעודכנות. הוא משתמש בחשבון Mozilla שדרכו אתם מסנכרנים נתוני Firefox.</string>
-    <string name="dejavu_sync_firefox_hint">ב-Firefox במחשב שלכם, פתחו את ההגדרות, ואז את הסנכרון, והשאירו את האפשרות “לשוניות פתוחות” מופעלת. לשוניות שאתם פותחים ב-Dejavu נשארות במכשיר הזה, ו-Firefox מציג אותן תחת המכשירים האחרים שלכם.</string>
+    <string name="dejavu_sync_firefox_hint">ב-Firefox במחשב שלכם, פתחו את ההגדרות, ואז את הסנכרון, והשאירו את האפשרות “לשוניות פתוחות” מופעלת. לשוניות שאתם פותחים במרחב העבודה של מחשב נפתחות גם ב-Firefox באותו מחשב. לשוניות במרחבי העבודה האחרים שלכם נשארות במכשיר הזה, ו-Firefox מציג אותן תחת המכשירים האחרים שלכם.</string>
     <string name="dejavu_sync_normal_tabs_firefox_summary">מציג גם את הלשוניות שאינן מוצמדות ואינן בקבוצת לשוניות, ולא רק את הלשוניות המוצמדות וקבוצות הלשוניות.</string>
     <string name="dejavu_sync_source">סנכרון עם</string>
     <string name="dejavu_sync_source_none">עדיין לא נבחר</string>

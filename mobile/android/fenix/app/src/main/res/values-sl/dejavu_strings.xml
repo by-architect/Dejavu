@@ -306,7 +306,7 @@
     <string name="dejavu_feature_split_view">Pridržite povezavo, da jo odprete v razdeljenem pogledu</string>
     <string name="dejavu_sync_choose_about">Sinhronizirajte delovne prostore s Firefoxom ali Zen Browserjem na svojem računalniku prek računa Mozilla, s katerim sinhronizirate podatke Firefoxa.</string>
     <string name="dejavu_sync_firefox_about">Prikaže odprte zavihke Firefoxa z vsakega vašega računalnika kot delovni prostor in jih sproti posodablja. Uporablja se račun Mozilla, s katerim sinhronizirate podatke Firefoxa.</string>
-    <string name="dejavu_sync_firefox_hint">V Firefoxu na računalniku odprite Nastavitve, nato Sinhronizacija, in pustite vklopljeno možnost Odprti zavihki. Zavihki, ki jih odprete v Dejavuju, ostanejo na tej napravi, Firefox pa jih navede med vašimi drugimi napravami.</string>
+    <string name="dejavu_sync_firefox_hint">V Firefoxu na računalniku odprite Nastavitve, nato Sinhronizacija, in pustite vklopljeno možnost Odprti zavihki. Zavihki, ki jih odprete v delovnem prostoru računalnika, se odprejo tudi v Firefoxu na tistem računalniku. Zavihki v vaših drugih delovnih prostorih ostanejo na tej napravi, Firefox pa jih navede med vašimi drugimi napravami.</string>
     <string name="dejavu_sync_normal_tabs_firefox_summary">Prikaže tudi zavihke, ki niso niti pripeti niti v skupini zavihkov, ne le pripete zavihke in skupine zavihkov.</string>
     <string name="dejavu_sync_source">Brskalnik za sinhronizacijo</string>
     <string name="dejavu_sync_source_none">Še ni izbran</string>

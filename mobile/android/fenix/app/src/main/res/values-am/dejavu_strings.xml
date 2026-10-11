@@ -292,7 +292,7 @@
     <string name="dejavu_feature_split_view">አገናኝን በተከፈለ እይታ ለመክፈት ተጭነው ይያዙ</string>
     <string name="dejavu_sync_choose_about">የFirefox ውሂብን በሚያመሳስሉበት የMozilla መለያ በኩል የስራ ቦታዎችዎን በኮምፒውተርዎ ላይ ካለው Firefox ወይም የZen አሳሽ ጋር ያመሳስሉ።</string>
     <string name="dejavu_sync_firefox_about">በእያንዳንዱ ኮምፒውተርዎ ላይ ያሉትን የFirefox ክፍት ትሮች እንደ አንድ የስራ ቦታ ያሳያል፣ ወቅታዊም ያደርጋቸዋል። የFirefox ውሂብን የሚያመሳስሉበትን የMozilla መለያ ይጠቀማል።</string>
-    <string name="dejavu_sync_firefox_hint">በኮምፒውተርዎ ላይ ባለው Firefox ውስጥ ቅንብሮችን፣ ከዚያም Syncን ይክፈቱ፣ እና «ክፍት ትሮች» እንደበራ ይተዉት። በDejavu ውስጥ የሚከፍቷቸው ትሮች በዚህ መሣሪያ ላይ ይቆያሉ፣ Firefox ደግሞ በሌሎች መሣሪያዎችዎ ስር ይዘረዝራቸዋል።</string>
+    <string name="dejavu_sync_firefox_hint">በኮምፒውተርዎ ላይ ባለው Firefox ውስጥ ቅንብሮችን፣ ከዚያም Syncን ይክፈቱ፣ እና «ክፍት ትሮች» እንደበራ ይተዉት። በአንድ ኮምፒውተር የስራ ቦታ ውስጥ የሚከፍቷቸው ትሮች እዚያ ባለው Firefox ውስጥም ይከፈታሉ። በሌሎች የስራ ቦታዎችዎ ውስጥ ያሉ ትሮች በዚህ መሣሪያ ላይ ይቆያሉ፣ Firefox ደግሞ በሌሎች መሣሪያዎችዎ ስር ይዘረዝራቸዋል።</string>
     <string name="dejavu_sync_normal_tabs_firefox_summary">እንዲሁም ያልተሰኩ እና በትር ቡድን ውስጥ ያልሆኑ ትሮችን ያሳያል፤ የተሰኩ ትሮችን እና የትር ቡድኖችን ብቻ ሳይሆን።</string>
     <string name="dejavu_sync_source">የሚመሳሰልበት አሳሽ</string>
     <string name="dejavu_sync_source_none">ገና አልተመረጠም</string>

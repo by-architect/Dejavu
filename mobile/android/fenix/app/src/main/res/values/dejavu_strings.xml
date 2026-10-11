@@ -315,7 +315,7 @@
     <!-- Sync settings, while workspaces sync with Firefox. -->
     <string name="dejavu_sync_firefox_about">Shows the open tabs of Firefox on each of your computers as a workspace, and keeps them up to date. It uses the Mozilla account you sync Firefox data with.</string>
     <!-- Sync settings, below the other settings while workspaces sync with Firefox. -->
-    <string name="dejavu_sync_firefox_hint">In Firefox on your computer, open Settings, then Sync, and keep Open tabs on. Tabs you open in Dejavu stay on this device, and Firefox lists them under your other devices.</string>
+    <string name="dejavu_sync_firefox_hint">In Firefox on your computer, open Settings, then Sync, and keep Open tabs on. Tabs you open in the workspace of a computer open in Firefox there too. Tabs in your other workspaces stay on this device, and Firefox lists them under your other devices.</string>
     <!-- Summary of the "Include unpinned tabs" switch while workspaces sync with Firefox. -->
     <string name="dejavu_sync_normal_tabs_firefox_summary">Also show the tabs that are neither pinned nor in a tab group, not just pinned tabs and tab groups.</string>
     <!-- Sync settings: the setting that shows and changes which browser workspaces sync with. -->

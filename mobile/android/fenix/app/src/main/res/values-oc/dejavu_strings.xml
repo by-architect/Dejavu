@@ -292,7 +292,7 @@
     <string name="dejavu_feature_split_view">Fasètz un long-clic sus un ligam per lo dobrir en vista dividida</string>
     <string name="dejavu_sync_choose_about">Sincronizatz vòstres espacis de trabalh amb Firefox o Zen Browser sus vòstre ordenador, amb lo compte Mozilla qu’utilizatz per sincronizar vòstras donadas Firefox.</string>
     <string name="dejavu_sync_firefox_about">Aficha los onglets dobèrts de Firefox sus cadun de vòstres ordenadors coma un espaci de trabalh, e los ten a jorn. Utiliza lo compte Mozilla amb lo qual sincronizatz vòstras donadas Firefox.</string>
-    <string name="dejavu_sync_firefox_hint">Dins Firefox sus vòstre ordenador, dobrissètz Paramètres, puèi Sincronizacion, e daissatz lo paramètre Onglets dobèrts activat. Los onglets que dobrissètz dins Dejavu demòran sus aqueste aparelh, e Firefox los aficha jos vòstres autres aparelhs.</string>
+    <string name="dejavu_sync_firefox_hint">Dins Firefox sus vòstre ordenador, dobrissètz Paramètres, puèi Sincronizacion, e daissatz lo paramètre Onglets dobèrts activat. Los onglets que dobrissètz dins l’espaci de trabalh d’un ordenador se dobrisson tanben dins Firefox sus aquel ordenador. Los onglets de vòstres autres espacis de trabalh demòran sus aqueste aparelh, e Firefox los aficha jos vòstres autres aparelhs.</string>
     <string name="dejavu_sync_normal_tabs_firefox_summary">Aficha tanben los onglets que son pas ni fixats ni dins un grop d’onglets, non pas sonque los onglets fixats e los grops d’onglets.</string>
     <string name="dejavu_sync_source">Sincronizar amb</string>
     <string name="dejavu_sync_source_none">Pas encara causit</string>

@@ -292,7 +292,7 @@
     <string name="dejavu_feature_split_view">Pugngi ang usa ka link aron ablihan kini sa split view</string>
     <string name="dejavu_sync_choose_about">i-Sync ang imong mga workspace uban sa Firefox o Zen Browser sa imong kompyuter, pinaagi sa Mozilla account nga imong gigamit sa pag-sync sa data sa Firefox.</string>
     <string name="dejavu_sync_firefox_about">Gipakita niini ang naabli nga mga tab sa Firefox sa matag usa sa imong mga kompyuter isip usa ka workspace, ug kanunay kining gi-update. Gigamit niini ang Mozilla account nga imong gigamit sa pag-sync sa data sa Firefox.</string>
-    <string name="dejavu_sync_firefox_hint">Sa Firefox sa imong kompyuter, ablihi ang Settings, dayon Sync, ug ipabilin nga naka-on ang Open tabs. Ang mga tab nga imong ablihan sa Dejavu magpabilin niini nga device, ug ipakita kini sa Firefox ubos sa imong ubang mga device.</string>
+    <string name="dejavu_sync_firefox_hint">Sa Firefox sa imong kompyuter, ablihi ang Settings, dayon Sync, ug ipabilin nga naka-on ang Open tabs. Ang mga tab nga imong ablihan sa workspace sa usa ka kompyuter maabli usab sa Firefox didto. Ang mga tab sa imong ubang mga workspace magpabilin niini nga device, ug ipakita kini sa Firefox ubos sa imong ubang mga device.</string>
     <string name="dejavu_sync_normal_tabs_firefox_summary">Ipakita usab ang mga tab nga dili naka-pin ug wala sa tab group, dili lang ang naka-pin nga mga tab ug mga tab group.</string>
     <string name="dejavu_sync_source">i-Sync uban sa</string>
     <string name="dejavu_sync_source_none">Wala pa mapili</string>

@@ -299,7 +299,7 @@
     <string name="dejavu_feature_split_view">Dugo pritisnite poveznicu da biste je otvorili u podijeljenom prikazu</string>
     <string name="dejavu_sync_choose_about">Sinkronizirajte svoje radne prostore s Firefoxom ili Zen Browserom na svom računalu, putem Mozilla računa kojim sinkronizirate Firefox podatke.</string>
     <string name="dejavu_sync_firefox_about">Prikazuje otvorene kartice Firefoxa na svakom vašem računalu kao radni prostor i stalno ih ažurira. Koristi se Mozilla račun kojim sinkronizirate Firefox podatke.</string>
-    <string name="dejavu_sync_firefox_hint">U Firefoxu na svom računalu otvorite Postavke, zatim Sinkronizacija, i ostavite uključenu opciju Otvorene kartice. Kartice koje otvorite u Dejavuu ostaju na ovom uređaju, a Firefox ih prikazuje pod vašim ostalim uređajima.</string>
+    <string name="dejavu_sync_firefox_hint">U Firefoxu na svom računalu otvorite Postavke, zatim Sinkronizacija, i ostavite uključenu opciju Otvorene kartice. Kartice koje otvorite u radnom prostoru nekog računala otvaraju se i u Firefoxu na tom računalu. Kartice u vašim ostalim radnim prostorima ostaju na ovom uređaju, a Firefox ih prikazuje pod vašim ostalim uređajima.</string>
     <string name="dejavu_sync_normal_tabs_firefox_summary">Također prikazuje kartice koje nisu ni prikvačene ni u grupi kartica, ne samo prikvačene kartice i grupe kartica.</string>
     <string name="dejavu_sync_source">Sinkronizacija s</string>
     <string name="dejavu_sync_source_none">Još nije odabrano</string>

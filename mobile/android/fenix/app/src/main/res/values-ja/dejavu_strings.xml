@@ -285,7 +285,7 @@
     <string name="dejavu_feature_split_view">リンクを長押しして分割ビューで開く</string>
     <string name="dejavu_sync_choose_about">Firefoxのデータ同期に使っているMozillaアカウントを通じて、ワークスペースをパソコンのFirefoxまたはZen Browserと同期します。</string>
     <string name="dejavu_sync_firefox_about">各パソコンのFirefoxで開いているタブをワークスペースとして表示し、常に最新の状態に保ちます。Firefoxのデータ同期に使っているMozillaアカウントを使用します。</string>
-    <string name="dejavu_sync_firefox_hint">パソコンのFirefoxで「設定」を開き、「同期」で「開いているタブ」をオンのままにしてください。Dejavuで開いたタブはこの端末に残り、Firefoxでは他の端末の一覧に表示されます。</string>
+    <string name="dejavu_sync_firefox_hint">パソコンのFirefoxで「設定」を開き、「同期」で「開いているタブ」をオンのままにしてください。パソコンのワークスペースで開いたタブは、そのパソコンのFirefoxでも開きます。他のワークスペースのタブはこの端末に残り、Firefoxでは他の端末の一覧に表示されます。</string>
     <string name="dejavu_sync_normal_tabs_firefox_summary">ピン留めタブとタブグループだけでなく、ピン留めされておらずタブグループにも入っていないタブも表示します。</string>
     <string name="dejavu_sync_source">同期先</string>
     <string name="dejavu_sync_source_none">まだ選択していません</string>

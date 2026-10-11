@@ -9,6 +9,7 @@ import java.io.File
 import java.io.IOException
 import org.json.JSONArray
 import org.json.JSONObject
+import org.mozilla.fenix.dejavu.workspaces.WorkspaceState
 
 /**
  * What Dejavu remembers about the Firefox computers it shows, between syncs.
@@ -21,6 +22,9 @@ import org.json.JSONObject
  * @property clients The decrypted records of the clients collection, by id.
  * @property tabs The decrypted records of the tabs collection, by id.
  * @property devices The Firefox computers as Dejavu last showed them.
+ * @property sendingSince Local time from which tabs opened here in the workspace of a computer are sent to it, in
+ *   milliseconds, or 0 before the first sync that showed computers. Tabs opened before stay here.
+ * @property sent Tabs opened here and sent to their computer, until it shows them.
  */
 internal class FirefoxSyncData(
     var account: String? = null,
@@ -31,7 +35,16 @@ internal class FirefoxSyncData(
     var clients: Map<String, JSONObject> = emptyMap(),
     var tabs: Map<String, JSONObject> = emptyMap(),
     var devices: List<MirroredDevice> = emptyList(),
+    var sendingSince: Long = 0L,
+    var sent: List<SentTab> = emptyList(),
 ) {
+    /** Which tabs here are the computers' tabs. */
+    fun computerTabs() = ComputerTabs(
+        workspaces = devices.mapTo(HashSet()) { it.workspaceId },
+        ids = devices.flatMapTo(HashSet()) { device -> device.tabs.map { it.id } } + sent.map { it.id },
+        since = sendingSince,
+    )
+
     /** Forgets the downloaded records, so the next sync downloads them again. */
     fun forgetRecords() {
         keysModified = null
@@ -39,6 +52,20 @@ internal class FirefoxSyncData(
         tabsModified = null
         clients = emptyMap()
         tabs = emptyMap()
+    }
+}
+
+/**
+ * The tabs here that are tabs of Firefox computers, which the other devices see on them, not on this one: the tabs in
+ * [workspaces] that sync under [ids], the computers' tabs and the ones sent to them, or that were opened there since
+ * [since], which are sent to their computer.
+ */
+internal class ComputerTabs(val workspaces: Set<String>, val ids: Set<String>, val since: Long) {
+    fun has(state: WorkspaceState, tabId: String, createdAt: Long): Boolean =
+        state.workspaceOf(tabId) in workspaces && (state.syncIdOf(tabId) in ids || (since > 0 && createdAt >= since))
+
+    companion object {
+        val NONE = ComputerTabs(emptySet(), emptySet(), 0L)
     }
 }
 
@@ -61,6 +88,15 @@ internal class FirefoxSyncStore(file: File) {
             .put("clients", JSONObject(data.clients))
             .put("tabs", JSONObject(data.tabs))
             .put("devices", JSONArray().apply { data.devices.forEach { put(it.toJson()) } })
+            .put("sendingSince", data.sendingSince)
+            .put(
+                "sent",
+                JSONArray().apply {
+                    data.sent.forEach { tab ->
+                        put(JSONObject().put("id", tab.id).put("clientId", tab.clientId).put("url", tab.url))
+                    }
+                },
+            )
         val stream = file.startWrite()
         try {
             stream.write(SyncJson.stringify(json).toByteArray(Charsets.UTF_8))
@@ -84,6 +120,7 @@ internal class FirefoxSyncStore(file: File) {
             return records.keys().asSequence().mapNotNull { id -> records.optJSONObject(id)?.let { id to it } }.toMap()
         }
         val devices = json.optJSONArray("devices")
+        val sent = json.optJSONArray("sent")
         return FirefoxSyncData(
             account = json.string("account"),
             keysModified = json.string("keysModified"),
@@ -93,6 +130,15 @@ internal class FirefoxSyncStore(file: File) {
             clients = records("clients"),
             tabs = records("tabs"),
             devices = (0 until (devices?.length() ?: 0)).mapNotNull { devices?.optJSONObject(it)?.let(::deviceOf) },
+            sendingSince = json.optLong("sendingSince"),
+            sent = (0 until (sent?.length() ?: 0)).mapNotNull { index ->
+                val tab = sent?.optJSONObject(index) ?: return@mapNotNull null
+                SentTab(
+                    id = tab.string("id") ?: return@mapNotNull null,
+                    clientId = tab.string("clientId") ?: return@mapNotNull null,
+                    url = tab.string("url") ?: return@mapNotNull null,
+                )
+            },
         )
     }
 

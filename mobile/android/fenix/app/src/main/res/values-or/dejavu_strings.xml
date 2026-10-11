@@ -292,7 +292,7 @@
     <string name="dejavu_feature_split_view">ଲିଙ୍କ୍‌କୁ ବିଭାଜିତ ଦୃଶ୍ୟରେ ଖୋଲିବାକୁ ଏହାକୁ ଲମ୍ବା ଦବାନ୍ତୁ</string>
     <string name="dejavu_sync_choose_about">ଆପଣ Firefox ଡାଟା ସିଙ୍କ କରୁଥିବା Mozilla ଆକାଉଣ୍ଟ ମାଧ୍ୟମରେ, ଆପଣଙ୍କ କାର୍ଯ୍ୟକ୍ଷେତ୍ରକୁ ଆପଣଙ୍କ କମ୍ପ୍ୟୁଟରର Firefox କିମ୍ବା Zen Browser ସହିତ ସିଙ୍କ କରନ୍ତୁ।</string>
     <string name="dejavu_sync_firefox_about">ଆପଣଙ୍କ ପ୍ରତ୍ୟେକ କମ୍ପ୍ୟୁଟରରେ ଥିବା Firefox ର ଖୋଲା ଟ୍ୟାବ୍ ଏକ କାର୍ଯ୍ୟକ୍ଷେତ୍ର ଭାବେ ଦେଖାଏ, ଏବଂ ସେଗୁଡ଼ିକୁ ଅପଡେଟ୍ ରଖେ। ଏହା ଆପଣ Firefox ଡାଟା ସିଙ୍କ କରୁଥିବା Mozilla ଆକାଉଣ୍ଟ ବ୍ୟବହାର କରେ।</string>
-    <string name="dejavu_sync_firefox_hint">ଆପଣଙ୍କ କମ୍ପ୍ୟୁଟରର Firefox ରେ, ସେଟିଂସମୂହ ଖୋଲନ୍ତୁ, ତାପରେ ସିଙ୍କ, ଏବଂ ଖୋଲା ଟ୍ୟାବ୍ ବିକଳ୍ପ ଅନ୍ ରଖନ୍ତୁ। ଆପଣ Dejavu ରେ ଖୋଲୁଥିବା ଟ୍ୟାବ୍ ଏହି ଡିଭାଇସରେ ରହେ, ଏବଂ Firefox ସେଗୁଡ଼ିକୁ ଆପଣଙ୍କ ଅନ୍ୟ ଡିଭାଇସ ତଳେ ଦେଖାଏ।</string>
+    <string name="dejavu_sync_firefox_hint">ଆପଣଙ୍କ କମ୍ପ୍ୟୁଟରର Firefox ରେ, ସେଟିଂସମୂହ ଖୋଲନ୍ତୁ, ତାପରେ ସିଙ୍କ, ଏବଂ ଖୋଲା ଟ୍ୟାବ୍ ବିକଳ୍ପ ଅନ୍ ରଖନ୍ତୁ। ଆପଣ କୌଣସି କମ୍ପ୍ୟୁଟରର କାର୍ଯ୍ୟକ୍ଷେତ୍ରରେ ଖୋଲୁଥିବା ଟ୍ୟାବ୍ ସେହି କମ୍ପ୍ୟୁଟରର Firefox ରେ ମଧ୍ୟ ଖୋଲେ। ଆପଣଙ୍କ ଅନ୍ୟ କାର୍ଯ୍ୟକ୍ଷେତ୍ରଗୁଡ଼ିକର ଟ୍ୟାବ୍ ଏହି ଡିଭାଇସରେ ରହେ, ଏବଂ Firefox ସେଗୁଡ଼ିକୁ ଆପଣଙ୍କ ଅନ୍ୟ ଡିଭାଇସ ତଳେ ଦେଖାଏ।</string>
     <string name="dejavu_sync_normal_tabs_firefox_summary">ଏହା ପିନ୍ ହୋଇନଥିବା ଏବଂ କୌଣସି ଟ୍ୟାବ୍ ଗୋଷ୍ଠୀରେ ନଥିବା ଟ୍ୟାବ୍ ମଧ୍ୟ ଦେଖାଏ, କେବଳ ପିନ୍ ଟ୍ୟାବ୍ ଏବଂ ଟ୍ୟାବ୍ ଗୋଷ୍ଠୀ ନୁହେଁ।</string>
     <string name="dejavu_sync_source">ଏହା ସହିତ ସିଙ୍କ କରନ୍ତୁ</string>
     <string name="dejavu_sync_source_none">ଏପର୍ଯ୍ୟନ୍ତ ବଛାଯାଇନାହିଁ</string>

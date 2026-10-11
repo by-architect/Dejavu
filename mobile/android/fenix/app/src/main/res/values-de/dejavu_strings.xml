@@ -292,7 +292,7 @@
     <string name="dejavu_feature_split_view">Link gedrückt halten, um ihn in der geteilten Ansicht zu öffnen</string>
     <string name="dejavu_sync_choose_about">Synchronisiere deine Arbeitsbereiche mit Firefox oder Zen Browser auf deinem Computer, über das Mozilla-Konto, mit dem du auch Firefox-Daten synchronisierst.</string>
     <string name="dejavu_sync_firefox_about">Zeigt die offenen Tabs von Firefox auf jedem deiner Computer als Arbeitsbereich an und hält sie aktuell. Dazu wird das Mozilla-Konto verwendet, mit dem du auch Firefox-Daten synchronisierst.</string>
-    <string name="dejavu_sync_firefox_hint">Öffne in Firefox auf deinem Computer die Einstellungen, dann Sync, und lass „Offene Tabs“ aktiviert. Tabs, die du in Dejavu öffnest, bleiben auf diesem Gerät, und Firefox listet sie unter deinen anderen Geräten auf.</string>
+    <string name="dejavu_sync_firefox_hint">Öffne in Firefox auf deinem Computer die Einstellungen, dann Sync, und lass „Offene Tabs“ aktiviert. Tabs, die du im Arbeitsbereich eines Computers öffnest, werden auch dort in Firefox geöffnet. Tabs in deinen anderen Arbeitsbereichen bleiben auf diesem Gerät, und Firefox listet sie unter deinen anderen Geräten auf.</string>
     <string name="dejavu_sync_normal_tabs_firefox_summary">Zeigt außerdem die Tabs an, die weder angeheftet noch in einer Tab-Gruppe sind, nicht nur angeheftete Tabs und Tab-Gruppen.</string>
     <string name="dejavu_sync_source">Synchronisieren mit</string>
     <string name="dejavu_sync_source_none">Noch nicht ausgewählt</string>

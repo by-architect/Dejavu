@@ -292,7 +292,7 @@
     <string name="dejavu_feature_split_view">Pretziona a longu unu ligàmene pro l\'abèrrere in vista partzida</string>
     <string name="dejavu_sync_choose_about">Sincroniza is ispàtzios de traballu tuos cun Firefox o Zen Browser in su computer tuo, pro mèdiu de su contu Mozilla cun su cale sincronizas is datos de Firefox.</string>
     <string name="dejavu_sync_firefox_about">Ammustrat is ischedas abertas de Firefox de dònnia computer tuo comente un ispàtziu de traballu, e las mantenet agiornadas. Impreat su contu Mozilla cun su cale sincronizas is datos de Firefox.</string>
-    <string name="dejavu_sync_firefox_hint">In Firefox in su computer tuo, aberi Cunfiguratzione, a pustis Sincronizatzione, e mantene ativadas is Ischedas abertas. Is ischedas chi aberis in Dejavu abarrant in custu dispositivu, e Firefox las ammustrat asuta de is àteros dispositivos tuos.</string>
+    <string name="dejavu_sync_firefox_hint">In Firefox in su computer tuo, aberi Cunfiguratzione, a pustis Sincronizatzione, e mantene ativadas is Ischedas abertas. Is ischedas chi aberis in s\'ispàtziu de traballu de unu computer si aberint fintzas in Firefox inie. Is ischedas in is àteros ispàtzios de traballu tuos abarrant in custu dispositivu, e Firefox las ammustrat asuta de is àteros dispositivos tuos.</string>
     <string name="dejavu_sync_normal_tabs_firefox_summary">Ammustrat fintzas is ischedas chi no sunt nen fissadas nen in unu grupu de ischedas, no isceti is ischedas fissadas e is grupos de ischedas.</string>
     <string name="dejavu_sync_source">Sincroniza cun</string>
     <string name="dejavu_sync_source_none">Non seberadu ancora</string>

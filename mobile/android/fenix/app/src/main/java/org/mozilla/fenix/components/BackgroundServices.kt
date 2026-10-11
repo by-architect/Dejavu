@@ -55,6 +55,7 @@ import org.mozilla.fenix.GleanMetrics.ClientAssociation
 import org.mozilla.fenix.GleanMetrics.Pings.fxAccounts
 import org.mozilla.fenix.GleanMetrics.SyncAuth
 import org.mozilla.fenix.R
+import org.mozilla.fenix.dejavu.sync.DejavuSync
 import org.mozilla.fenix.ext.components
 import org.mozilla.fenix.ext.maxActiveTime
 import org.mozilla.fenix.ext.recordEventInNimbus
@@ -180,7 +181,14 @@ class BackgroundServices(
     }
 
     val syncedTabsStorage by lazyMonitored {
-        SyncedTabsStorage(accountManager, context.components.core.store, remoteTabsStorage.value, maxActiveTime)
+        SyncedTabsStorage(
+            accountManager,
+            context.components.core.store,
+            remoteTabsStorage.value,
+            maxActiveTime,
+            // Dejavu: the tabs in the workspace of a Firefox computer are that computer's, listed on it, not here.
+            tabFilter = { tab -> !DejavuSync.isFirefoxComputerTab(tab.id, tab.createdAt) },
+        )
     }
     val syncedTabsAutocompleteProvider by lazyMonitored {
         SyncedTabsAutocompleteProvider(syncedTabsStorage)

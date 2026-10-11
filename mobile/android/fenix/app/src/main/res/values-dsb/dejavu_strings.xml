@@ -306,7 +306,7 @@
     <string name="dejavu_feature_split_view">Wótkaz źaržaś, aby jen w źělonem naglěźe wócynił</string>
     <string name="dejavu_sync_choose_about">Synchronizěruj swóje źěłowe rumy z Firefox abo Zen Browser na swójom licadle, pśez Mozilla-konto, z kótarymž swóje Firefox-daty synchronizěrujoš.</string>
     <string name="dejavu_sync_firefox_about">Pokazujo wócynjone rejtariki Firefox na kuždem z twójich licadłow ako źěłowy rum a źaržy je aktualne. Wužywa Mozilla-konto, z kótarymž swóje Firefox-daty synchronizěrujoš.</string>
-    <string name="dejavu_sync_firefox_hint">W Firefox na swójom licadle wócyń Nastajenja, pón Synchronizacija, a wóstaj opciju Wócynjone rejtariki zmóžnjonu. Rejtariki, kótarež w Dejavu wócynjaš, wóstanu na toś tom rěźe, a Firefox je pód twójimi drugimi rědami pokazujo.</string>
+    <string name="dejavu_sync_firefox_hint">W Firefox na swójom licadle wócyń Nastajenja, pón Synchronizacija, a wóstaj opciju Wócynjone rejtariki zmóžnjonu. Rejtariki, kótarež w źěłowem rumje licadła wócynjaš, se teke tam w Firefox wócynjaju. Rejtariki w twójich drugich źěłowych rumach wóstanu na toś tom rěźe, a Firefox je pód twójimi drugimi rědami pokazujo.</string>
     <string name="dejavu_sync_normal_tabs_firefox_summary">Pokazujo teke rejtariki, kótarež njejsu ani pśipěte ani w rejtarikowej kupce, nic jano pśipěte rejtariki a rejtarikowe kupki.</string>
     <string name="dejavu_sync_source">Synchronizěrowaś z</string>
     <string name="dejavu_sync_source_none">Hyšći njewubrany</string>

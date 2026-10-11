@@ -299,7 +299,7 @@
     <string name="dejavu_feature_split_view">Tien apresà un łinco par vèrxerlo in vista divisa</string>
     <string name="dejavu_sync_choose_about">Sincronisa i to spasi de laoro co Firefox o Zen Browser so’l to computer, tramite l’account Mozilla co ła qual te sincronizi i to dati de Firefox.</string>
     <string name="dejavu_sync_firefox_about">El mostra łe schede verte de Firefox so onji to computer come un spasio de laoro, e el łe tien ajornà. El dopara l’account Mozilla co ła qual te sincronizi i to dati de Firefox.</string>
-    <string name="dejavu_sync_firefox_hint">In Firefox so’l to computer, verxi Inpostasion, dopo Sincronizasion, e tien ativa l’opsion Schede verte. Łe schede che te verxi in Dejavu łe resta so sto aparechio, e Firefox el łe mostra soto i to altri aparechi.</string>
+    <string name="dejavu_sync_firefox_hint">In Firefox so’l to computer, verxi Inpostasion, dopo Sincronizasion, e tien ativa l’opsion Schede verte. Łe schede che te verxi intel spasio de laoro de un computer łe se verxe anca in Firefox so quel computer. Łe schede intei to altri spasi de laoro łe resta so sto aparechio, e Firefox el łe mostra soto i to altri aparechi.</string>
     <string name="dejavu_sync_normal_tabs_firefox_summary">El mostra anca łe schede che no łe xe né fisà né in un grupo de schede, no soło łe schede fisà e i grupi de schede.</string>
     <string name="dejavu_sync_source">Sincronisa co</string>
     <string name="dejavu_sync_source_none">Gnancora sielto</string>

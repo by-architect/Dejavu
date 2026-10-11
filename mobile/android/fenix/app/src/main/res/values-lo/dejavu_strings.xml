@@ -285,7 +285,7 @@
     <string name="dejavu_feature_split_view">ກົດຄ້າງລິ້ງເພື່ອເປີດໃນມູມມອງແບບແຍກ</string>
     <string name="dejavu_sync_choose_about">ຊິງຄ໌ພື້ນທີ່ເຮັດວຽກຂອງທ່ານກັບ Firefox ຫຼື Zen Browser ຢູ່ຄອມພິວເຕີຂອງທ່ານ ຜ່ານບັນຊີ Mozilla ທີ່ທ່ານໃຊ້ຊິງຄ໌ຂໍ້ມູນ Firefox ນຳ.</string>
     <string name="dejavu_sync_firefox_about">ສະແດງແທັບທີ່ເປີດຢູ່ໃນ Firefox ຢູ່ແຕ່ລະຄອມພິວເຕີຂອງທ່ານເປັນພື້ນທີ່ເຮັດວຽກ, ແລະ ອັບເດດພວກມັນຢູ່ສະເໝີ. ມັນໃຊ້ບັນຊີ Mozilla ທີ່ທ່ານໃຊ້ຊິງຄ໌ຂໍ້ມູນ Firefox ນຳ.</string>
-    <string name="dejavu_sync_firefox_hint">ໃນ Firefox ຢູ່ຄອມພິວເຕີຂອງທ່ານ, ເປີດການຕັ້ງຄ່າ, ແລ້ວໄປທີ່ Sync, ແລະ ເປີດ “ເປີດແທັບ” ໄວ້. ແທັບທີ່ທ່ານເປີດໃນ Dejavu ຈະຢູ່ໃນອຸປະກອນນີ້, ແລະ Firefox ຈະສະແດງພວກມັນຢູ່ພາຍໃຕ້ອຸປະກອນອື່ນຂອງທ່ານ.</string>
+    <string name="dejavu_sync_firefox_hint">ໃນ Firefox ຢູ່ຄອມພິວເຕີຂອງທ່ານ, ເປີດການຕັ້ງຄ່າ, ແລ້ວໄປທີ່ Sync, ແລະ ເປີດ “ເປີດແທັບ” ໄວ້. ແທັບທີ່ທ່ານເປີດໃນພື້ນທີ່ເຮັດວຽກຂອງຄອມພິວເຕີໃດໜຶ່ງ ຈະເປີດໃນ Firefox ຢູ່ຄອມພິວເຕີນັ້ນນຳ. ແທັບໃນພື້ນທີ່ເຮັດວຽກອື່ນຂອງທ່ານ ຈະຢູ່ໃນອຸປະກອນນີ້, ແລະ Firefox ຈະສະແດງພວກມັນຢູ່ພາຍໃຕ້ອຸປະກອນອື່ນຂອງທ່ານ.</string>
     <string name="dejavu_sync_normal_tabs_firefox_summary">ມັນຍັງສະແດງແທັບທີ່ບໍ່ໄດ້ປັກໄວ້ ແລະ ບໍ່ໄດ້ຢູ່ໃນກຸ່ມແທັບໃດນຳ, ບໍ່ແມ່ນແຕ່ແທັບທີ່ປັກໄວ້ ແລະ ກຸ່ມແທັບເທົ່ານັ້ນ.</string>
     <string name="dejavu_sync_source">ຊິງຄ໌ກັບ</string>
     <string name="dejavu_sync_source_none">ຍັງບໍ່ທັນເລືອກ</string>

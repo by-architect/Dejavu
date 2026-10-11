@@ -292,7 +292,7 @@
     <string name="dejavu_feature_split_view">Bölünmüş görünüşdə açmaq üçün keçidi basıb saxlayın</string>
     <string name="dejavu_sync_choose_about">İş sahələrinizi Firefox məlumatlarınızı sinxronlaşdırdığınız Mozilla hesabı vasitəsilə kompüterinizdəki Firefox və ya Zen Browser ilə sinxronlaşdırın.</string>
     <string name="dejavu_sync_firefox_about">Hər kompüterinizdəki Firefox-un açıq vərəqlərini bir iş sahəsi kimi göstərir və onları güncəl saxlayır. Bunun üçün Firefox məlumatlarınızı sinxronlaşdırdığınız Mozilla hesabından istifadə olunur.</string>
-    <string name="dejavu_sync_firefox_hint">Kompüterinizdəki Firefox-da Tənzimləmələri, sonra Sinxronlaşdırmanı açın və Açıq vərəqlər seçimini aktiv saxlayın. Dejavu-da açdığınız vərəqlər bu cihazda qalır və Firefox onları digər cihazlarınızın altında göstərir.</string>
+    <string name="dejavu_sync_firefox_hint">Kompüterinizdəki Firefox-da Tənzimləmələri, sonra Sinxronlaşdırmanı açın və Açıq vərəqlər seçimini aktiv saxlayın. Bir kompüterin iş sahəsində açdığınız vərəqlər oradakı Firefox-da da açılır. Digər iş sahələrinizdəki vərəqlər bu cihazda qalır və Firefox onları digər cihazlarınızın altında göstərir.</string>
     <string name="dejavu_sync_normal_tabs_firefox_summary">Bundan başqa, bərkidilməmiş və vərəq qrupunda olmayan vərəqləri də göstərir, təkcə bərkidilmiş vərəqləri və vərəq qruplarını yox.</string>
     <string name="dejavu_sync_source">Sinxronlaşdırılan brauzer</string>
     <string name="dejavu_sync_source_none">Hələ seçilməyib</string>

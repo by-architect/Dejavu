@@ -292,7 +292,7 @@
     <string name="dejavu_feature_split_view">لنکے اسپلٹ ویو ٹی ملنگ کن دباسا ہلّبو</string>
     <string name="dejavu_sync_choose_about">نی نا کمپیوٹر پار Firefox یا Zen Browser گدا نی نا ورک سپیساک سنک کبو۔ اے او Mozilla اکاؤنٹ استعمال ہس جیدا گدا نی Firefox ڈیٹا سنک کن۔</string>
     <string name="dejavu_sync_firefox_about">نی نا ہر کمپیوٹر پار Firefox نا ملوکا ٹیباک ورک سپیس اس طور دکھ ہن، او اے تازہ راکھ ہن۔ اے او Mozilla اکاؤنٹ استعمال ہس جیدا گدا نی Firefox ڈیٹا سنک کن۔</string>
-    <string name="dejavu_sync_firefox_hint">نی نا کمپیوٹر پار Firefox اٹ، سیٹنگاک مل، پہ Sync، او «ملوکا ٹیبآک» آن راکھ۔ Dejavu اٹ نی مل کنا ٹیباک اے ڈیوائس پار رہ ہن، او Firefox اے نی نا ہور ڈیوائساک نا تلی دکھ ہن۔</string>
+    <string name="dejavu_sync_firefox_hint">نی نا کمپیوٹر پار Firefox اٹ، سیٹنگاک مل، پہ Sync، او «ملوکا ٹیبآک» آن راکھ۔ کمپیوٹر اس نا ورک سپیس اٹ نی مل کنا ٹیباک اود Firefox اٹ بی مل ہن۔ نی نا ہور ورک سپیساک نا ٹیباک اے ڈیوائس پار رہ ہن، او Firefox اے نی نا ہور ڈیوائساک نا تلی دکھ ہن۔</string>
     <string name="dejavu_sync_normal_tabs_firefox_summary">او ٹیباک ام دکھ ہن جہ نہ پن ہن او نہ ٹیب گروپ اٹ ہن، پن ٹیباک او ٹیب گروپاک تئو نئے۔</string>
     <string name="dejavu_sync_source">سنک براؤزر</string>
     <string name="dejavu_sync_source_none">ہلے تک چُن نی ہتین</string>

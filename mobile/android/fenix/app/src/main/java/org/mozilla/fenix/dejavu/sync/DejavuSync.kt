@@ -44,6 +44,7 @@ import mozilla.components.concept.sync.AccountObserver
 import mozilla.components.concept.sync.AuthType
 import mozilla.components.concept.sync.DeviceCommandOutgoing
 import mozilla.components.concept.sync.OAuthAccount
+import mozilla.components.concept.sync.TabPrivacy
 import mozilla.components.lib.state.ext.flow
 import mozilla.components.service.fxa.manager.SCOPE_SYNC
 import mozilla.components.service.fxa.sync.SyncStatusObserver
@@ -194,6 +195,10 @@ object DejavuSync {
     /** Syncs in a row that could not reach the servers, which space out the next tries. */
     private var failedToReach = 0
 
+    /** Which tabs here are tabs of the Firefox computers Dejavu shows. */
+    @Volatile
+    private var computerTabs = ComputerTabs.NONE
+
     /** State of workspace sync, for its settings. */
     val status: StateFlow<DejavuSyncStatus> = _status.asStateFlow()
 
@@ -207,6 +212,7 @@ object DejavuSync {
         val prefs = app.getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE)
         val store = SpacesSyncStore(File(app.filesDir, STORE_FILE))
         val firefoxStore = FirefoxSyncStore(File(app.filesDir, FIREFOX_STORE_FILE))
+        computerTabs = firefoxStore.load().computerTabs()
         // Dejavu synced with Zen before it could sync with Firefox; those who did keep doing it without being asked.
         val source = DejavuSyncSource.fromKey(prefs.getString(KEY_SOURCE, null))
             ?: DejavuSyncSource.ZEN.takeIf { store.load().syncId != null }?.also { zen ->
@@ -247,6 +253,20 @@ object DejavuSync {
             }
         }
         watchLocalChanges(app)
+    }
+
+    /**
+     * Whether open tab [tabId], opened at [createdAt], is a tab of a Firefox computer that Dejavu follows: one of its
+     * tabs, or one opened in its workspace, which is sent to it. The other devices list those on the computer, not on
+     * this one.
+     */
+    fun isFirefoxComputerTab(tabId: String, createdAt: Long): Boolean {
+        val status = _status.value
+        if (!status.enabled || status.source != DejavuSyncSource.FIREFOX) return false
+        val tabs = computerTabs
+        if (tabs.workspaces.isEmpty()) return false
+        val state = WorkspaceRepository.peek()?.state?.value ?: return false
+        return tabs.has(state, tabId, createdAt)
     }
 
     /** Syncs now, as asked by the user. */
@@ -290,6 +310,7 @@ object DejavuSync {
             if (previous == DejavuSyncSource.FIREFOX && source != DejavuSyncSource.FIREFOX) {
                 mutex.withLock {
                     runCatching { firefoxEngine?.removeAll() }.onFailure { logger.warn("Could not remove Firefox", it) }
+                    computerTabs = ComputerTabs.NONE
                 }
             }
             val lastSynced = when (source) {
@@ -330,10 +351,13 @@ object DejavuSync {
         // Only while this device syncs: looking at every tab on every change of the browser costs work and memory.
         _status.map { it.enabled && it.signedIn }.distinctUntilChanged().collectLatest { syncing ->
             if (!syncing) return@collectLatest
-            // Tabs that are not pinned count by what their records hold: address, title and container.
+            // Tabs that are not pinned count by what their records hold: address, title and container. A tab opened in the
+            // workspace of a Firefox computer is sent to it once its page loaded, so loading counts too.
             val tabs = context.components.core.store.flow()
                 .map { state ->
-                    state.normalTabs.map { Triple(it.id, it.content.url to it.content.title, it.contextId) }
+                    state.normalTabs.map { tab ->
+                        listOf(tab.id, tab.content.url, tab.content.title, tab.contextId, tab.content.loading)
+                    }
                 }
                 .distinctUntilChanged()
             combine(repository.state, containers.records, tabs) { _, _, _ -> }
@@ -453,7 +477,9 @@ object DejavuSync {
             val problem = when (source) {
                 null -> DejavuSyncProblem.CHOOSE_SOURCE
                 DejavuSyncSource.ZEN -> problemOf(engines.zen.sync(auth, turnOn))
-                DejavuSyncSource.FIREFOX -> problemOf(engines.firefox.sync(auth, connected, refreshDevices))
+                DejavuSyncSource.FIREFOX -> problemOf(engines.firefox.sync(auth, connected, refreshDevices)).also {
+                    computerTabs = engines.firefox.computerTabs()
+                }
             }
             Outcome(problem, found)
         } catch (e: SyncConflictException) {
@@ -547,6 +573,7 @@ object DejavuSync {
                         runCatching { firefox.removeAll() }.onFailure { logger.warn("Could not remove Firefox", it) }
                         firefox.reset()
                     }
+                    computerTabs = ComputerTabs.NONE
                     scanner?.reset()
                 }
             }
@@ -600,6 +627,14 @@ private class DejavuSpacesData(private val context: Context) : SpacesLocalData, 
         context.components.backgroundServices.syncedTabsCommands.add(deviceId, DeviceCommandOutgoing.CloseTab(urls))
     }
 
+    override suspend fun sendTab(deviceId: String, url: String, title: String): Boolean {
+        val account = context.components.backgroundServices.accountManager.authenticatedAccount() ?: return false
+        return account.deviceConstellation().sendCommandToDevice(
+            deviceId,
+            DeviceCommandOutgoing.SendTab(title.ifBlank { url }, url, TabPrivacy.Normal),
+        )
+    }
+
     override suspend fun read(): LocalSpaces {
         containers.load()
         val browser = context.components.core.store.state
@@ -610,6 +645,8 @@ private class DejavuSpacesData(private val context: Context) : SpacesLocalData, 
                 title = tab.content.title,
                 contextId = tab.contextId,
                 awake = tab.engineState.engineSession != null,
+                createdAt = tab.createdAt,
+                loading = tab.content.loading,
             )
         }
         return LocalSpaces(

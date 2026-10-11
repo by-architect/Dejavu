@@ -299,7 +299,7 @@
     <string name="dejavu_feature_split_view">Ține apăsat pe un link pentru a-l deschide în ecran împărțit</string>
     <string name="dejavu_sync_choose_about">Sincronizează-ți spațiile de lucru cu Firefox sau Zen Browser de pe computer, prin contul Mozilla cu care sincronizezi datele Firefox.</string>
     <string name="dejavu_sync_firefox_about">Afișează filele deschise din Firefox de pe fiecare dintre computerele tale ca un spațiu de lucru și le ține la zi. Folosește contul Mozilla cu care sincronizezi datele Firefox.</string>
-    <string name="dejavu_sync_firefox_hint">În Firefox de pe computer, deschide Setări, apoi Sincronizare, și lasă activată opțiunea File deschise. Filele pe care le deschizi în Dejavu rămân pe acest dispozitiv, iar Firefox le listează printre celelalte dispozitive ale tale.</string>
+    <string name="dejavu_sync_firefox_hint">În Firefox de pe computer, deschide Setări, apoi Sincronizare, și lasă activată opțiunea File deschise. Filele pe care le deschizi în spațiul de lucru al unui computer se deschid și în Firefox de pe acel computer. Filele din celelalte spații de lucru ale tale rămân pe acest dispozitiv, iar Firefox le listează printre celelalte dispozitive ale tale.</string>
     <string name="dejavu_sync_normal_tabs_firefox_summary">Afișează și filele care nu sunt nici fixate, nici într-un grup de file, nu doar filele fixate și grupurile de file.</string>
     <string name="dejavu_sync_source">Sincronizează cu</string>
     <string name="dejavu_sync_source_none">Încă nu ai ales</string>

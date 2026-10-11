@@ -292,7 +292,7 @@
     <string name="dejavu_feature_split_view">लिंक विभाजित दृश्यात उघडण्यासाठी ती दीर्घकाळ दाबा</string>
     <string name="dejavu_sync_choose_about">तुम्ही Firefox डेटा सिंक करण्यासाठी वापरत असलेल्या Mozilla खात्याद्वारे, तुमची कार्यक्षेत्रे तुमच्या संगणकावरील Firefox किंवा Zen ब्राउझरसह सिंक करा.</string>
     <string name="dejavu_sync_firefox_about">तुमच्या प्रत्येक संगणकावरील Firefox चे उघडे टॅब एक कार्यक्षेत्र म्हणून दाखवते, आणि ते नेहमी अद्ययावत ठेवते. हे तुम्ही Firefox डेटा सिंक करण्यासाठी वापरत असलेले Mozilla खाते वापरते.</string>
-    <string name="dejavu_sync_firefox_hint">तुमच्या संगणकावरील Firefox मध्ये, सेटिंग उघडा, नंतर सिंक, आणि “टॅब उघडा” सुरू ठेवा. तुम्ही Dejavu मध्ये उघडलेले टॅब या डिव्हाइसवरच राहतात, आणि Firefox ते तुमच्या इतर डिव्हाइसखाली दाखवते.</string>
+    <string name="dejavu_sync_firefox_hint">तुमच्या संगणकावरील Firefox मध्ये, सेटिंग उघडा, नंतर सिंक, आणि “टॅब उघडा” सुरू ठेवा. एखाद्या संगणकाच्या कार्यक्षेत्रात तुम्ही उघडलेले टॅब त्या संगणकावरील Firefox मध्येही उघडतात. तुमच्या इतर कार्यक्षेत्रांमधील टॅब या डिव्हाइसवरच राहतात, आणि Firefox ते तुमच्या इतर डिव्हाइसखाली दाखवते.</string>
     <string name="dejavu_sync_normal_tabs_firefox_summary">हे पिन न केलेले आणि कोणत्याही टॅब गटात नसलेले टॅबदेखील दाखवते, फक्त पिन केलेले टॅब आणि टॅब गट नाही.</string>
     <string name="dejavu_sync_source">यासह सिंक करा</string>
     <string name="dejavu_sync_source_none">अद्याप निवडले नाही</string>

@@ -292,7 +292,7 @@
     <string name="dejavu_feature_split_view">සබැඳියක් බෙදුම් දසුනක විවෘත කිරීමට එය දිගු ඔබන්න</string>
     <string name="dejavu_sync_choose_about">ඔබ Firefox දත්ත සමමුහුර්ත කරන Mozilla ගිණුම හරහා, ඔබේ අවකාශ ඔබේ පරිගණකයේ ඇති Firefox හෝ Zen Browser සමඟ සමමුහුර්ත කරන්න.</string>
     <string name="dejavu_sync_firefox_about">ඔබේ සෑම පරිගණකයකම ඇති Firefox හි විවෘත පටිති අවකාශයක් ලෙස පෙන්වා, ඒවා යාවත්කාලීනව තබා ගනී. එය ඔබ Firefox දත්ත සමමුහුර්ත කරන Mozilla ගිණුම භාවිත කරයි.</string>
-    <string name="dejavu_sync_firefox_hint">ඔබේ පරිගණකයේ Firefox හි, සැකසුම් විවෘත කර, පසුව Sync තෝරා, “පටිති අරින්න” ක්‍රියාත්මකව තබන්න. ඔබ Dejavu හි විවෘත කරන පටිති මෙම උපාංගයේ පවතින අතර, Firefox ඒවා ඔබේ අනෙකුත් උපාංග යටතේ පෙන්වයි.</string>
+    <string name="dejavu_sync_firefox_hint">ඔබේ පරිගණකයේ Firefox හි, සැකසුම් විවෘත කර, පසුව Sync තෝරා, “පටිති අරින්න” ක්‍රියාත්මකව තබන්න. ඔබ පරිගණකයක අවකාශයේ විවෘත කරන පටිති එම පරිගණකයේ Firefox හි ද විවෘත වේ. ඔබේ අනෙකුත් අවකාශවල ඇති පටිති මෙම උපාංගයේ පවතින අතර, Firefox ඒවා ඔබේ අනෙකුත් උපාංග යටතේ පෙන්වයි.</string>
     <string name="dejavu_sync_normal_tabs_firefox_summary">එය අමුණා නැති සහ පටිති සමූහයක නැති පටිති ද පෙන්වයි, අමුණන ලද පටිති සහ පටිති සමූහ පමණක් නොවේ.</string>
     <string name="dejavu_sync_source">සමමුහුර්ත කරන අතිරික්සුව</string>
     <string name="dejavu_sync_source_none">තවම තෝරා නැත</string>

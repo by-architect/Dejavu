@@ -292,7 +292,7 @@
     <string name="dejavu_feature_split_view">Vajuta linki pikalt, et see jagatud vaates avada</string>
     <string name="dejavu_sync_choose_about">Sünkrooni oma tööruumid arvutis oleva Firefoxi või Zen Browseriga Mozilla konto kaudu, millega sünkroonid Firefoxi andmeid.</string>
     <string name="dejavu_sync_firefox_about">Kuvab iga su arvuti Firefoxi avatud kaardid tööruumina ja hoiab need ajakohasena. Selleks kasutatakse Mozilla kontot, millega sünkroonid Firefoxi andmeid.</string>
-    <string name="dejavu_sync_firefox_hint">Ava arvutis olevas Firefoxis Sätted, siis Sünkroonimine, ja jäta valik Avatud kaardid sisse lülitatuks. Dejavus avatud kaardid jäävad sellesse seadmesse ja Firefox näitab neid su teiste seadmete kaartide hulgas.</string>
+    <string name="dejavu_sync_firefox_hint">Ava arvutis olevas Firefoxis Sätted, siis Sünkroonimine, ja jäta valik Avatud kaardid sisse lülitatuks. Kaardid, mille avad mõne arvuti tööruumis, avanevad ka selle arvuti Firefoxis. Su teiste tööruumide kaardid jäävad sellesse seadmesse ja Firefox näitab neid su teiste seadmete kaartide hulgas.</string>
     <string name="dejavu_sync_normal_tabs_firefox_summary">Kuvab ka kaardid, mis pole kinnitatud ega kaardirühmas, mitte ainult kinnitatud kaarte ja kaardirühmi.</string>
     <string name="dejavu_sync_source">Sünkroonitav brauser</string>
     <string name="dejavu_sync_source_none">Pole veel valitud</string>

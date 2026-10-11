@@ -313,7 +313,7 @@
     <string name="dejavu_feature_split_view">Derc\'hel war ul liamm evit e zigeriñ er gwel rannet</string>
     <string name="dejavu_sync_choose_about">Goubredit hoc’h egorioù labour gant Firefox pe Zen Browser war hoc’h urzhiataer, dre ar gont Mozilla ma c’houbredit ho roadennoù Firefox gantañ.</string>
     <string name="dejavu_sync_firefox_about">Diskouez a ra ivinelloù digor Firefox war pep hini eus hoc’h urzhiataerioù evel un egor labour, hag o dalc’h hizivaet. Implijout a ra ar gont Mozilla ma c’houbredit ho roadennoù Firefox gantañ.</string>
-    <string name="dejavu_sync_firefox_hint">E Firefox war hoc’h urzhiataer, digorit Arventennoù, ha goude Goubredañ, ha lezit Ivinelloù digor gweredekaet. An ivinelloù a zigorit e Dejavu a chom war an trevnad-mañ, ha Firefox a ziskouez anezho e-touez ho trevnadoù all.</string>
+    <string name="dejavu_sync_firefox_hint">E Firefox war hoc’h urzhiataer, digorit Arventennoù, ha goude Goubredañ, ha lezit Ivinelloù digor gweredekaet. An ivinelloù a zigorit en egor labour un urzhiataer a zigor ivez e Firefox eno. An ivinelloù en hoc’h egorioù labour all a chom war an trevnad-mañ, ha Firefox a ziskouez anezho e-touez ho trevnadoù all.</string>
     <string name="dejavu_sync_normal_tabs_firefox_summary">Diskouez a ra ivez an ivinelloù n’int na spilhennet nag en ur strollad ivinelloù, ha ket hepken an ivinelloù spilhennet hag ar strolladoù ivinelloù.</string>
     <string name="dejavu_sync_source">Goubredañ gant</string>
     <string name="dejavu_sync_source_none">N’eo ket bet dibabet c’hoazh</string>

@@ -292,7 +292,7 @@
     <string name="dejavu_feature_split_view">Tegnair smatgà ina colliaziun per l\'avrir en la vista divisa</string>
     <string name="dejavu_sync_choose_about">Sincronisescha tes spazis da lavur cun Firefox u Zen Browser sin tes computer, tras il conto Mozilla cun il qual ti sincronisas tias datas da Firefox.</string>
     <string name="dejavu_sync_firefox_about">Mussa ils tabs averts da Firefox sin mintgin da tes computers sco in spazi da lavur ed als tegna actuals. Douvra il conto Mozilla cun il qual ti sincronisas tias datas da Firefox.</string>
-    <string name="dejavu_sync_firefox_hint">En Firefox sin tes computer, avra Parameters, lura Sync, e lascha activada l’opziun Tabs averts. Tabs ch’i avras en Dejavu restan sin quest apparat, e Firefox als mussa sut tes auters apparats.</string>
+    <string name="dejavu_sync_firefox_hint">En Firefox sin tes computer, avra Parameters, lura Sync, e lascha activada l’opziun Tabs averts. Tabs ch’i avras en il spazi da lavur d’in computer vegnan er averts en Firefox sin quel computer. Tabs en tes auters spazis da lavur restan sin quest apparat, e Firefox als mussa sut tes auters apparats.</string>
     <string name="dejavu_sync_normal_tabs_firefox_summary">Mussa er ils tabs che n’èn ni fixads ni en ina gruppa da tabs, betg mo ils tabs fixads e las gruppas da tabs.</string>
     <string name="dejavu_sync_source">Sincronisar cun</string>
     <string name="dejavu_sync_source_none">Anc betg tschernì</string>

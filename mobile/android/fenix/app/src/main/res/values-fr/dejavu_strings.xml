@@ -292,7 +292,7 @@
     <string name="dejavu_feature_split_view">Fais un appui long sur un lien pour l’ouvrir en vue partagée</string>
     <string name="dejavu_sync_choose_about">Synchronise tes espaces avec Firefox ou Zen Browser sur ton ordinateur, via le compte Mozilla avec lequel tu synchronises tes données Firefox.</string>
     <string name="dejavu_sync_firefox_about">Affiche sous forme d’espace les onglets ouverts dans Firefox sur chacun de tes ordinateurs, et les tient à jour. Cette fonction utilise le compte Mozilla avec lequel tu synchronises tes données Firefox.</string>
-    <string name="dejavu_sync_firefox_hint">Dans Firefox sur ton ordinateur, ouvre les paramètres, puis Synchronisation, et laisse l’option Onglets ouverts activée. Les onglets que tu ouvres dans Dejavu restent sur cet appareil, et Firefox les affiche parmi ceux de tes autres appareils.</string>
+    <string name="dejavu_sync_firefox_hint">Dans Firefox sur ton ordinateur, ouvre les paramètres, puis Synchronisation, et laisse l’option Onglets ouverts activée. Les onglets que tu ouvres dans l’espace d’un ordinateur s’ouvrent aussi dans Firefox sur cet ordinateur. Les onglets de tes autres espaces restent sur cet appareil, et Firefox les affiche parmi ceux de tes autres appareils.</string>
     <string name="dejavu_sync_normal_tabs_firefox_summary">Affiche aussi les onglets qui ne sont ni épinglés ni dans un groupe d’onglets, pas seulement les onglets épinglés et les groupes d’onglets.</string>
     <string name="dejavu_sync_source">Synchroniser avec</string>
     <string name="dejavu_sync_source_none">Pas encore choisi</string>

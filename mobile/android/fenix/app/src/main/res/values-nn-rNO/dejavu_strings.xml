@@ -292,7 +292,7 @@
     <string name="dejavu_feature_split_view">Trykk lenge på ei lenke for å opne henne i delt vising</string>
     <string name="dejavu_sync_choose_about">Synkroniser arbeidsområda dine med Firefox eller Zen Browser på datamaskina di, gjennom Mozilla-kontoen du synkroniserer Firefox-data med.</string>
     <string name="dejavu_sync_firefox_about">Viser dei opne fanene i Firefox på kvar av datamaskinene dine som eit arbeidsområde, og held dei oppdaterte. Dette bruker Mozilla-kontoen du synkroniserer Firefox-data med.</string>
-    <string name="dejavu_sync_firefox_hint">Opne Innstillingar i Firefox på datamaskina di, deretter Synkronisering, og la innstillinga Opne faner vere slått på. Faner du opnar i Dejavu, vert verande på denne eininga, og Firefox viser dei under dei andre einingane dine.</string>
+    <string name="dejavu_sync_firefox_hint">Opne Innstillingar i Firefox på datamaskina di, deretter Synkronisering, og la innstillinga Opne faner vere slått på. Faner du opnar i arbeidsområdet til ei datamaskin, vert også opna i Firefox på den datamaskina. Faner i dei andre arbeidsområda dine vert verande på denne eininga, og Firefox viser dei under dei andre einingane dine.</string>
     <string name="dejavu_sync_normal_tabs_firefox_summary">Viser også fanene som verken er festa eller i ei fanegruppe, ikkje berre festa faner og fanegrupper.</string>
     <string name="dejavu_sync_source">Synkroniser med</string>
     <string name="dejavu_sync_source_none">Ikkje valt enno</string>

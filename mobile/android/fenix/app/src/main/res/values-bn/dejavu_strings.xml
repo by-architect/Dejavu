@@ -325,7 +325,7 @@
     <string name="dejavu_feature_split_view">স্প্লিট ভিউতে খুলতে লিংক চেপে ধরুন</string>
     <string name="dejavu_sync_choose_about">যে Mozilla অ্যাকাউন্ট দিয়ে আপনি Firefox-এর ডেটা Sync করেন, তার মাধ্যমে আপনার কম্পিউটারের Firefox বা Zen ব্রাউজারের সাথে আপনার ওয়ার্কস্পেস Sync করুন।</string>
     <string name="dejavu_sync_firefox_about">আপনার প্রতিটি কম্পিউটারের Firefox-এর খোলা ট্যাবগুলো একটি ওয়ার্কস্পেস হিসেবে দেখায় এবং সেগুলো হালনাগাদ রাখে। এটি সেই Mozilla অ্যাকাউন্ট ব্যবহার করে, যা দিয়ে আপনি Firefox-এর ডেটা Sync করেন।</string>
-    <string name="dejavu_sync_firefox_hint">আপনার কম্পিউটারের Firefox-এ সেটিংস, তারপর Sync খুলুন এবং “ট্যাব খুলুন” চালু রাখুন। Dejavu-তে আপনি যে ট্যাবগুলো খোলেন সেগুলো এই ডিভাইসেই থাকে, এবং Firefox সেগুলো আপনার অন্যান্য ডিভাইসের অধীনে দেখায়।</string>
+    <string name="dejavu_sync_firefox_hint">আপনার কম্পিউটারের Firefox-এ সেটিংস, তারপর Sync খুলুন এবং “ট্যাব খুলুন” চালু রাখুন। কোনো কম্পিউটারের ওয়ার্কস্পেসে আপনি যে ট্যাবগুলো খোলেন সেগুলো সেখানকার Firefox-এও খোলে। আপনার অন্যান্য ওয়ার্কস্পেসের ট্যাবগুলো এই ডিভাইসেই থাকে, এবং Firefox সেগুলো আপনার অন্যান্য ডিভাইসের অধীনে দেখায়।</string>
     <string name="dejavu_sync_normal_tabs_firefox_summary">যে ট্যাবগুলো পিন করা নয় এবং কোনো ট্যাব গ্রুপেও নেই, সেগুলোও দেখায়, শুধু পিন করা ট্যাব ও ট্যাব গ্রুপ নয়।</string>
     <string name="dejavu_sync_source">Sync করার ব্রাউজার</string>
     <string name="dejavu_sync_source_none">এখনও বেছে নেওয়া হয়নি</string>

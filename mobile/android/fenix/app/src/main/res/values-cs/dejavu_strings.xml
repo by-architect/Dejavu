@@ -306,7 +306,7 @@
     <string name="dejavu_feature_split_view">Podržením odkazu ho otevřete v děleném zobrazení</string>
     <string name="dejavu_sync_choose_about">Synchronizujte své pracovní prostory s Firefoxem nebo Zen Browserem v počítači pomocí účtu Mozilly, se kterým synchronizujete data Firefoxu.</string>
     <string name="dejavu_sync_firefox_about">Zobrazuje otevřené panely Firefoxu z každého vašeho počítače jako pracovní prostor a udržuje je aktuální. Používá k tomu účet Mozilly, se kterým synchronizujete data Firefoxu.</string>
-    <string name="dejavu_sync_firefox_hint">Ve Firefoxu v počítači otevřete Nastavení, poté Synchronizaci, a nechte zapnuté Otevřené panely. Panely otevřené v Dejavu zůstávají na tomto zařízení a Firefox je ukazuje mezi vašimi dalšími zařízeními.</string>
+    <string name="dejavu_sync_firefox_hint">Ve Firefoxu v počítači otevřete Nastavení, poté Synchronizaci, a nechte zapnuté Otevřené panely. Panely otevřené v pracovním prostoru počítače se otevírají i ve Firefoxu na tom počítači. Panely ve vašich ostatních pracovních prostorech zůstávají na tomto zařízení a Firefox je ukazuje mezi vašimi dalšími zařízeními.</string>
     <string name="dejavu_sync_normal_tabs_firefox_summary">Také zobrazuje panely, které nejsou připnuté ani ve skupině panelů, nejen připnuté panely a skupiny panelů.</string>
     <string name="dejavu_sync_source">Synchronizovat s</string>
     <string name="dejavu_sync_source_none">Zatím nevybráno</string>

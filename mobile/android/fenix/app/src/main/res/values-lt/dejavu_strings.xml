@@ -306,7 +306,7 @@
     <string name="dejavu_feature_split_view">Ilgai paspauskite nuorodą, kad atvertumėte ją padalytame rodinyje</string>
     <string name="dejavu_sync_choose_about">Sinchronizuokite darbo erdves su Firefox arba Zen Browser savo kompiuteryje per Mozilla paskyrą, kuria sinchronizuojate Firefox duomenis.</string>
     <string name="dejavu_sync_firefox_about">Rodo kiekvieno jūsų kompiuterio Firefox atvertas korteles kaip darbo erdvę ir nuolat jas atnaujina. Naudojama Mozilla paskyra, kuria sinchronizuojate Firefox duomenis.</string>
-    <string name="dejavu_sync_firefox_hint">Firefox naršyklėje savo kompiuteryje atverkite Nuostatos, tada Sinchronizavimas, ir palikite įjungtą parinktį „Atvertos kortelės“. Kortelės, kurias atveriate Dejavu, lieka šiame įrenginyje, o Firefox jas rodo tarp kitų jūsų įrenginių.</string>
+    <string name="dejavu_sync_firefox_hint">Firefox naršyklėje savo kompiuteryje atverkite Nuostatos, tada Sinchronizavimas, ir palikite įjungtą parinktį „Atvertos kortelės“. Kortelės, kurias atveriate kompiuterio darbo erdvėje, atveriamos ir to kompiuterio Firefox naršyklėje. Kitų jūsų darbo erdvių kortelės lieka šiame įrenginyje, o Firefox jas rodo tarp kitų jūsų įrenginių.</string>
     <string name="dejavu_sync_normal_tabs_firefox_summary">Taip pat rodo korteles, kurios nėra nei prisegtos, nei kortelių grupėje, o ne tik prisegtas korteles ir kortelių grupes.</string>
     <string name="dejavu_sync_source">Sinchronizuoti su</string>
     <string name="dejavu_sync_source_none">Dar nepasirinkta</string>

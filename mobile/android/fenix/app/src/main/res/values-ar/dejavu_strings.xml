@@ -320,7 +320,7 @@
     <string name="dejavu_feature_split_view">اضغط مطولًا على رابط لفتحه في العرض المقسم</string>
     <string name="dejavu_sync_choose_about">زامن مساحات عملك مع Firefox أو Zen Browser على حاسوبك، عبر حساب Mozilla الذي تُزامن به بيانات Firefox.</string>
     <string name="dejavu_sync_firefox_about">يعرض التبويبات المفتوحة في Firefox على كل حاسوب من حواسيبك كمساحة عمل، ويُبقيها محدّثة. يستخدم لذلك حساب Mozilla الذي تُزامن به بيانات Firefox.</string>
-    <string name="dejavu_sync_firefox_hint">في Firefox على حاسوبك، افتح الإعدادات ثم المزامنة، وأبقِ خيار «التبويبات المفتوحة» مفعّلًا. تبقى التبويبات التي تفتحها في Dejavu على هذا الجهاز، ويعرضها Firefox ضمن أجهزتك الأخرى.</string>
+    <string name="dejavu_sync_firefox_hint">في Firefox على حاسوبك، افتح الإعدادات ثم المزامنة، وأبقِ خيار «التبويبات المفتوحة» مفعّلًا. التبويبات التي تفتحها في مساحة عمل أحد حواسيبك تُفتح أيضًا في Firefox على ذلك الحاسوب. تبقى التبويبات الموجودة في مساحات عملك الأخرى على هذا الجهاز، ويعرضها Firefox ضمن أجهزتك الأخرى.</string>
     <string name="dejavu_sync_normal_tabs_firefox_summary">يعرض أيضًا التبويبات غير المثبتة التي ليست في مجموعة تبويبات، وليس فقط التبويبات المثبتة ومجموعات التبويبات.</string>
     <string name="dejavu_sync_source">المزامنة مع</string>
     <string name="dejavu_sync_source_none">لم يُختر بعد</string>

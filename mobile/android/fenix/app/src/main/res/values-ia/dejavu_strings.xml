@@ -292,7 +292,7 @@
     <string name="dejavu_feature_split_view">Preme longemente sur un ligamine pro aperir lo in vista divise</string>
     <string name="dejavu_sync_choose_about">Synchronisa tu spatios de labor con Firefox o Zen Browser super tu computator, per le conto Mozilla con le qual tu synchronisa datos de Firefox.</string>
     <string name="dejavu_sync_firefox_about">Monstra le schedas aperte de Firefox super cata un de tu computatores como un spatio de labor, e los mantene actualisate. Illo usa le conto Mozilla con le qual tu synchronisa datos de Firefox.</string>
-    <string name="dejavu_sync_firefox_hint">In Firefox super tu computator, aperi Parametros, postea Synchronisation, e mantene Schedas aperte active. Le schedas que tu aperi in Dejavu resta super iste apparato, e Firefox los lista sub tu altere apparatos.</string>
+    <string name="dejavu_sync_firefox_hint">In Firefox super tu computator, aperi Parametros, postea Synchronisation, e mantene Schedas aperte active. Le schedas que tu aperi in le spatio de labor de un computator se aperi etiam in Firefox super ille computator. Le schedas in tu altere spatios de labor resta super iste apparato, e Firefox los lista sub tu altere apparatos.</string>
     <string name="dejavu_sync_normal_tabs_firefox_summary">Monstra etiam le schedas que non es fixate ni in un gruppo de schedas, non solmente le schedas fixate e le gruppos de schedas.</string>
     <string name="dejavu_sync_source">Synchronisar con</string>
     <string name="dejavu_sync_source_none">Non ancora seligite</string>

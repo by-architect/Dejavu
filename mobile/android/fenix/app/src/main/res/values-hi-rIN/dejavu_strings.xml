@@ -325,7 +325,7 @@
     <string name="dejavu_feature_split_view">किसी लिंक को स्प्लिट व्यू में खोलने के लिए उसे टच करके रखें</string>
     <string name="dejavu_sync_choose_about">अपने वर्कस्पेस को अपने कंप्यूटर के Firefox या Zen ब्राउज़र के साथ, उसी Mozilla अकाउंट से सिंक करें जिससे आप Firefox डेटा सिंक करते हैं।</string>
     <string name="dejavu_sync_firefox_about">आपके हर कंप्यूटर के Firefox के खुले टैब को एक वर्कस्पेस के रूप में दिखाता है, और उन्हें अप-टू-डेट रखता है। इसके लिए वही Mozilla अकाउंट इस्तेमाल होता है जिससे आप Firefox डेटा सिंक करते हैं।</string>
-    <string name="dejavu_sync_firefox_hint">अपने कंप्यूटर के Firefox में सेटिंग और फिर सिंक खोलें, और खुले हुए टैब को चालू रखें। Dejavu में खोले गए टैब इसी डिवाइस पर रहते हैं, और Firefox उन्हें आपके दूसरे डिवाइस की सूची में दिखाता है।</string>
+    <string name="dejavu_sync_firefox_hint">अपने कंप्यूटर के Firefox में सेटिंग और फिर सिंक खोलें, और खुले हुए टैब को चालू रखें। किसी कंप्यूटर के वर्कस्पेस में खोले गए टैब उस कंप्यूटर के Firefox में भी खुलते हैं। आपके बाकी वर्कस्पेस के टैब इसी डिवाइस पर रहते हैं, और Firefox उन्हें आपके दूसरे डिवाइस की सूची में दिखाता है।</string>
     <string name="dejavu_sync_normal_tabs_firefox_summary">यह उन टैब को भी दिखाता है जो न पिन किए गए हैं और न किसी टैब ग्रुप में हैं, न कि सिर्फ़ पिन किए गए टैब और टैब ग्रुप को।</string>
     <string name="dejavu_sync_source">किसके साथ सिंक करें</string>
     <string name="dejavu_sync_source_none">अभी तक नहीं चुना गया</string>

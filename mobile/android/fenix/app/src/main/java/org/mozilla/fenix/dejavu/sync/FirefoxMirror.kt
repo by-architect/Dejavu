@@ -95,13 +95,32 @@ internal class ClosedHere(
 internal class MirrorResult(val state: WorkspaceState, val tabOps: List<TabOp>)
 
 /**
+ * A tab opened here in the workspace of a computer and sent to it, which opens it too. Once the computer shows it,
+ * [FirefoxMirror.match] takes the tab here for it, and from then on it is one of the computer's tabs.
+ *
+ * @property id The id the tab here syncs under.
+ * @property clientId The computer it was sent to.
+ * @property url The page that was sent.
+ */
+internal data class SentTab(val id: String, val clientId: String, val url: String)
+
+/**
+ * The outcome of [FirefoxMirror.findOpenedHere].
+ *
+ * @property toSend Tabs opened here in the workspace of a computer, with their titles, to send to it.
+ * @property gone Tabs sent before that are not here anymore: they were closed before their computer showed them.
+ */
+internal class OpenedHere(val toSend: List<Pair<SentTab, String>>, val gone: List<SentTab>)
+
+/**
  * Shows the open tabs of Firefox computers in Dejavu, each computer as a workspace: its pinned tabs as pinned tabs, each
  * tab group as a folder of pinned tabs, and its other tabs as open tabs of the workspace, opened without loading.
  *
  * Firefox gives its tabs no ids, so [match] finds which tab of a new record is which one shown before: by address, then
  * by place between the same neighbours for a tab that went to another page. Like spaces sync, [apply] only changes what
  * changed in Firefox since the last record, so changes made here stay until Firefox changes the same tab. Tabs closed
- * or removed here are found by [findClosedHere], and Firefox is asked to close them.
+ * or removed here are found by [findClosedHere], and Firefox is asked to close them. Tabs opened here in the workspace
+ * of a computer are found by [findOpenedHere] and sent to it, and become its tabs once it shows them.
  *
  * @param now Time used for the changes, in milliseconds.
  * @param normalTabs Whether the tabs that are neither pinned nor in a group are shown. While they are not, or while the
@@ -157,6 +176,38 @@ internal class FirefoxMirror(
     }
 
     /**
+     * Finds the tabs opened here since [since] in the workspace of a computer that are not its tabs yet, to send to
+     * it once their page loaded, and the tabs of [sent] that are not here anymore. Pinned tabs stay here, and nothing
+     * is sent while tabs that are neither pinned nor in a group are not shown, or before the browser restored its tabs.
+     */
+    fun findOpenedHere(
+        state: WorkspaceState,
+        devices: List<MirroredDevice>,
+        sent: List<SentTab>,
+        since: Long,
+    ): OpenedHere {
+        val openTabs = tabs ?: return OpenedHere(emptyList(), emptyList())
+        val here = openTabs.keys.mapTo(HashSet()) { state.syncIdOf(it) }
+        val gone = sent.filter { it.id !in here }
+        if (!showsLooseTabs) return OpenedHere(emptyList(), gone)
+        val pinnedTabs = state.pins.mapNotNullTo(HashSet()) { it.tabId }
+        val waiting = sent.mapTo(HashSet()) { it.id }
+        val toSend = devices.filter { it.fxaDeviceId != null }.flatMap { device ->
+            val theirs = device.tabs.mapTo(HashSet()) { it.id }
+            openTabs.values
+                .filter { tab ->
+                    state.workspaceOf(tab.id) == device.workspaceId && tab.id !in pinnedTabs && !tab.loading &&
+                        tab.createdAt >= since && isSyncableUrl(tab.url)
+                }
+                .mapNotNull { tab ->
+                    val id = state.syncIdOf(tab.id)
+                    if (id in theirs || id in waiting) null else SentTab(id, device.clientId, tab.url) to tab.title
+                }
+        }
+        return OpenedHere(toSend, gone)
+    }
+
+    /**
      * The ids that tabs of computers can be shown under here: those of the pinned tabs, and the ids the open tabs sync
      * under. Empty while the browser has not restored its tabs.
      */
@@ -169,10 +220,16 @@ internal class FirefoxMirror(
 
     /**
      * The tabs and groups of [computer] with the ids they are shown under: those of [previous], the computer as last
-     * shown, for the tabs found again, and new ones for the others. [state] is only looked at for a computer not shown
-     * before, whose pinned and open tabs already in its workspace are taken over, like after Dejavu forgot what it showed.
+     * shown, for the tabs found again, those of the tabs here of [sent] for the ones they became, and new ones for the
+     * others. [state] is also looked at for a computer not shown before, whose pinned and open tabs already in its
+     * workspace are taken over, like after Dejavu forgot what it showed.
      */
-    fun match(previous: MirroredDevice?, computer: FirefoxComputer, state: WorkspaceState): MirroredDevice {
+    fun match(
+        previous: MirroredDevice?,
+        computer: FirefoxComputer,
+        state: WorkspaceState,
+        sent: List<SentTab> = emptyList(),
+    ): MirroredDevice {
         val clientId = computer.client.id
         val workspaceId = previous?.workspaceId ?: workspaceIdOf(clientId)
         val incoming = computer.record.tabs.filter { showsLooseTabs || it.isPin }
@@ -192,6 +249,19 @@ internal class FirefoxMirror(
         }
         incoming.forEachIndexed { i, tab ->
             if (matched[i] == null) take(i, known.firstOrNull { it.id !in used && it.url == tab.url })
+        }
+        // Tabs opened here and sent to the computer, which shows them now: with the page sent, or with the one the tab
+        // here went on to, like after a redirect.
+        val arriving = sent.filterTo(mutableListOf()) { it.clientId == clientId && it.id !in used }
+        if (arriving.isNotEmpty()) {
+            val pages = this.tabs?.values?.associate { state.syncIdOf(it.id) to it.url }.orEmpty()
+            incoming.forEachIndexed { i, tab ->
+                if (matched[i] != null) return@forEachIndexed
+                val arrived = arriving.firstOrNull { it.url == tab.url || pages[it.id] == tab.url }
+                    ?: return@forEachIndexed
+                arriving -= arrived
+                take(i, MirroredTab(arrived.id, tab.url, tab.title, tab.pinned, tab.groupId, confirmed = true))
+            }
         }
         val order = stableOrder(incoming, matched, known)
         pairNavigated(incoming, order, matched, known, used)

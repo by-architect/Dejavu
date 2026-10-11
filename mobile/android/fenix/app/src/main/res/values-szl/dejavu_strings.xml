@@ -306,7 +306,7 @@
     <string name="dejavu_feature_split_view">Przitrzim długo link, coby go ôdewrzić w podzielōnym widoku</string>
     <string name="dejavu_sync_choose_about">Synchronizuj twoje place z Firefox abo Zen Browser na twojim kōmputrze. Używo kōnta Mozilla, kerym synchronizujesz dane Firefox.</string>
     <string name="dejavu_sync_firefox_about">Pokazuje ôdewrzite karty Firefox z kożdego twojigo kōmputra za plac i trzimo je aktualne. Używo kōnta Mozilla, kerym synchronizujesz dane Firefox.</string>
-    <string name="dejavu_sync_firefox_hint">W Firefox na twojim kōmputrze ôdewrzij Sztalōnki, potym Synchronizacyjo, i trzim włōnczōne „Ôtwarte karty”. Karty, kere ôdwiyrosz w Dejavu, ôstajōm na tym geracie, a Firefox pokazuje je pod twojimi inkszymi geratami.</string>
+    <string name="dejavu_sync_firefox_hint">W Firefox na twojim kōmputrze ôdewrzij Sztalōnki, potym Synchronizacyjo, i trzim włōnczōne „Ôtwarte karty”. Karty, kere ôdwiyrosz na placu kōmputra, ôdwiyrajōm sie tyż tam w Firefox. Karty na twojich inkszych placach ôstajōm na tym geracie, a Firefox pokazuje je pod twojimi inkszymi geratami.</string>
     <string name="dejavu_sync_normal_tabs_firefox_summary">Pokazuje tyż karty, kere niy sōm ani przipiynte, ani w grupie kart, niy ino przipiynte karty i grupy kart.</string>
     <string name="dejavu_sync_source">Synchronizuj z</string>
     <string name="dejavu_sync_source_none">Jeszcze niy ôbrane</string>

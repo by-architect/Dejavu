@@ -285,7 +285,7 @@
     <string name="dejavu_feature_split_view">Tekan lama tautan untuk membukanya dalam tampilan terbagi</string>
     <string name="dejavu_sync_choose_about">Sinkronkan ruang kerja Anda dengan Firefox atau Zen Browser di komputer Anda, melalui akun Mozilla yang Anda gunakan untuk menyinkronkan data Firefox.</string>
     <string name="dejavu_sync_firefox_about">Menampilkan tab terbuka Firefox di setiap komputer Anda sebagai ruang kerja, dan selalu memperbaruinya. Fitur ini memakai akun Mozilla yang Anda gunakan untuk menyinkronkan data Firefox.</string>
-    <string name="dejavu_sync_firefox_hint">Di Firefox pada komputer Anda, buka Pengaturan, lalu Sinkronisasi, dan biarkan Tab terbuka tetap aktif. Tab yang Anda buka di Dejavu tetap berada di perangkat ini, dan Firefox mencantumkannya di bawah perangkat lain Anda.</string>
+    <string name="dejavu_sync_firefox_hint">Di Firefox pada komputer Anda, buka Pengaturan, lalu Sinkronisasi, dan biarkan Tab terbuka tetap aktif. Tab yang Anda buka di ruang kerja sebuah komputer juga terbuka di Firefox pada komputer tersebut. Tab di ruang kerja Anda yang lain tetap berada di perangkat ini, dan Firefox mencantumkannya di bawah perangkat lain Anda.</string>
     <string name="dejavu_sync_normal_tabs_firefox_summary">Fitur ini juga menampilkan tab yang tidak disemat dan tidak berada dalam grup tab, tidak hanya tab yang disemat dan grup tab.</string>
     <string name="dejavu_sync_source">Sinkronkan dengan</string>
     <string name="dejavu_sync_source_none">Belum dipilih</string>

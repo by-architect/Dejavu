@@ -299,7 +299,7 @@
     <string name="dejavu_feature_split_view">Mantén pulsado un enlace para abrirlo en vista dividida</string>
     <string name="dejavu_sync_choose_about">Sincroniza tus espacios de trabajo con Firefox o Zen Browser en tu ordenador, mediante la cuenta de Mozilla con la que sincronizas los datos de Firefox.</string>
     <string name="dejavu_sync_firefox_about">Muestra las pestañas abiertas de Firefox en cada uno de tus ordenadores como un espacio de trabajo y las mantiene actualizadas. Usa la cuenta de Mozilla con la que sincronizas los datos de Firefox.</string>
-    <string name="dejavu_sync_firefox_hint">En tu ordenador, abre Ajustes en Firefox y luego Sincronización, y deja activada la opción Pestañas abiertas. Las pestañas que abres en Dejavu se quedan en este dispositivo, y Firefox las muestra entre tus otros dispositivos.</string>
+    <string name="dejavu_sync_firefox_hint">En tu ordenador, abre Ajustes en Firefox y luego Sincronización, y deja activada la opción Pestañas abiertas. Las pestañas que abres en el espacio de trabajo de un ordenador también se abren en el Firefox de ese ordenador. Las pestañas de tus otros espacios de trabajo se quedan en este dispositivo, y Firefox las muestra entre tus otros dispositivos.</string>
     <string name="dejavu_sync_normal_tabs_firefox_summary">También muestra las pestañas que no están fijadas ni en un grupo de pestañas, no solo las pestañas fijadas y los grupos de pestañas.</string>
     <string name="dejavu_sync_source">Sincronizar con</string>
     <string name="dejavu_sync_source_none">Aún no se ha elegido</string>

@@ -27,6 +27,8 @@ internal data class LocalSpaces(
  * An open tab as spaces sync sees it.
  *
  * @property awake Whether its page is loaded. One that is not can be pointed at another address without losing anything.
+ * @property createdAt When the tab was opened, in milliseconds.
+ * @property loading Whether its page is still loading.
  */
 internal data class LocalTab(
     val id: String,
@@ -34,6 +36,8 @@ internal data class LocalTab(
     val title: String,
     val contextId: String?,
     val awake: Boolean,
+    val createdAt: Long = 0L,
+    val loading: Boolean = false,
 ) {
     /** What syncing the tab sends of it, to tell whether it changed here since the last sync. */
     val fingerprint: String

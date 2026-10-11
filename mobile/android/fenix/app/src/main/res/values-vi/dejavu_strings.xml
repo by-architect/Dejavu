@@ -285,7 +285,7 @@
     <string name="dejavu_feature_split_view">Nhấn giữ liên kết để mở ở chế độ chia đôi màn hình</string>
     <string name="dejavu_sync_choose_about">Đồng bộ hóa không gian làm việc của bạn với Firefox hoặc Zen Browser trên máy tính, thông qua tài khoản Mozilla mà bạn dùng để đồng bộ hóa dữ liệu Firefox.</string>
     <string name="dejavu_sync_firefox_about">Hiển thị các thẻ đang mở của Firefox trên từng máy tính của bạn dưới dạng một không gian làm việc và luôn cập nhật chúng. Tính năng này dùng tài khoản Mozilla mà bạn dùng để đồng bộ hóa dữ liệu Firefox.</string>
-    <string name="dejavu_sync_firefox_hint">Trong Firefox trên máy tính, mở Cài đặt, rồi vào Đồng bộ hóa, và luôn bật mục Các thẻ đang mở. Các thẻ bạn mở trong Dejavu sẽ ở lại trên thiết bị này, và Firefox liệt kê chúng dưới các thiết bị khác của bạn.</string>
+    <string name="dejavu_sync_firefox_hint">Trong Firefox trên máy tính, mở Cài đặt, rồi vào Đồng bộ hóa, và luôn bật mục Các thẻ đang mở. Các thẻ bạn mở trong không gian làm việc của một máy tính cũng sẽ mở trong Firefox trên máy tính đó. Các thẻ trong các không gian làm việc khác của bạn sẽ ở lại trên thiết bị này, và Firefox liệt kê chúng dưới các thiết bị khác của bạn.</string>
     <string name="dejavu_sync_normal_tabs_firefox_summary">Hiển thị cả các thẻ không được ghim và không thuộc nhóm thẻ nào, không chỉ thẻ đã ghim và nhóm thẻ.</string>
     <string name="dejavu_sync_source">Đồng bộ hóa với</string>
     <string name="dejavu_sync_source_none">Chưa chọn</string>

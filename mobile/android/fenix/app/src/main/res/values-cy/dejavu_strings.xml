@@ -320,7 +320,7 @@
     <string name="dejavu_feature_split_view">Pwyso\'n hir ar ddolen i\'w hagor mewn golwg hollt</string>
     <string name="dejavu_sync_choose_about">Cydweddwch eich gweithleoedd â Firefox neu Zen Browser ar eich cyfrifiadur, drwy’r cyfrif Mozilla rydych chi’n cydweddu data Firefox ag ef.</string>
     <string name="dejavu_sync_firefox_about">Mae’n dangos tabiau agored Firefox ar bob un o’ch cyfrifiaduron fel gweithle, ac yn eu cadw’n gyfredol. Mae’n defnyddio’r cyfrif Mozilla rydych chi’n cydweddu data Firefox ag ef.</string>
-    <string name="dejavu_sync_firefox_hint">Yn Firefox ar eich cyfrifiadur, agorwch Gosodiadau, yna Sync, a chadwch Agor tabiau ymlaen. Mae tabiau rydych chi’n eu hagor yn Dejavu yn aros ar y ddyfais hon, ac mae Firefox yn eu rhestru o dan eich dyfeisiau eraill.</string>
+    <string name="dejavu_sync_firefox_hint">Yn Firefox ar eich cyfrifiadur, agorwch Gosodiadau, yna Sync, a chadwch Agor tabiau ymlaen. Mae tabiau rydych chi’n eu hagor yng ngweithle cyfrifiadur yn agor yn Firefox yno hefyd. Mae tabiau yn eich gweithleoedd eraill yn aros ar y ddyfais hon, ac mae Firefox yn eu rhestru o dan eich dyfeisiau eraill.</string>
     <string name="dejavu_sync_normal_tabs_firefox_summary">Mae hefyd yn dangos y tabiau nad ydyn nhw wedi’u pinio nac mewn grŵp tabiau, nid dim ond tabiau wedi’u pinio a grwpiau tabiau.</string>
     <string name="dejavu_sync_source">Cydweddu â</string>
     <string name="dejavu_sync_source_none">Heb ddewis eto</string>

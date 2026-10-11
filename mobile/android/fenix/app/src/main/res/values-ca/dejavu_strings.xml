@@ -299,7 +299,7 @@
     <string name="dejavu_feature_split_view">Manteniu premut un enllaç per obrir-lo en vista dividida</string>
     <string name="dejavu_sync_choose_about">Sincronitzeu els vostres espais de treball amb el Firefox o el Zen Browser de l\'ordinador, mitjançant el compte de Mozilla amb què sincronitzeu les dades del Firefox.</string>
     <string name="dejavu_sync_firefox_about">Mostra les pestanyes obertes del Firefox de cadascun dels vostres ordinadors com un espai de treball, i les manté actualitzades. Utilitza el compte de Mozilla amb què sincronitzeu les dades del Firefox.</string>
-    <string name="dejavu_sync_firefox_hint">Al Firefox de l\'ordinador, obriu Paràmetres, després Sincronització, i manteniu activada l\'opció Pestanyes obertes. Les pestanyes que obriu al Dejavu es queden en aquest dispositiu, i el Firefox les mostra entre els vostres altres dispositius.</string>
+    <string name="dejavu_sync_firefox_hint">Al Firefox de l\'ordinador, obriu Paràmetres, després Sincronització, i manteniu activada l\'opció Pestanyes obertes. Les pestanyes que obriu a l\'espai de treball d\'un ordinador també s\'obren al Firefox d\'aquell ordinador. Les pestanyes dels vostres altres espais de treball es queden en aquest dispositiu, i el Firefox les mostra entre els vostres altres dispositius.</string>
     <string name="dejavu_sync_normal_tabs_firefox_summary">També mostra les pestanyes que no estan fixades ni en un grup de pestanyes, no només les pestanyes fixades i els grups de pestanyes.</string>
     <string name="dejavu_sync_source">Sincronitza amb</string>
     <string name="dejavu_sync_source_none">Encara no triat</string>

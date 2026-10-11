@@ -292,7 +292,7 @@
     <string name="dejavu_feature_split_view">Bi dirêjahî li girêdanekê bitikîne û wê di dîmena dabeşkirî de veke</string>
     <string name="dejavu_sync_choose_about">Qadên xwe bi Firefox an Zen Browser re li ser kompîturê xwe hevdem bike, bi rêya hesabê Mozilla yê ku tu daneyên Firefox pê re hevdem dikî.</string>
     <string name="dejavu_sync_firefox_about">Hilpekînên vekirî yên Firefox li ser her kompîturê te wek qadekê nîşan dide û wan rojane dihêle. Ew hesabê Mozilla yê ku tu daneyên Firefox pê re hevdem dikî, bi kar tîne.</string>
-    <string name="dejavu_sync_firefox_hint">Di Firefox de li ser kompîturê xwe, «Sazkarî» veke, paşê «Hevdemkirin», û «Hilpekînên vekirî» vekirî bihêle. Hilpekînên ku tu di Dejavu de vedikî li ser vê amûrê dimînin, û Firefox wan di bin amûrên te yên din de nîşan dide.</string>
+    <string name="dejavu_sync_firefox_hint">Di Firefox de li ser kompîturê xwe, «Sazkarî» veke, paşê «Hevdemkirin», û «Hilpekînên vekirî» vekirî bihêle. Hilpekînên ku tu di qada kompîturekê de vedikî, li wir jî di Firefox de vedibin. Hilpekînên qadên te yên din li ser vê amûrê dimînin, û Firefox wan di bin amûrên te yên din de nîşan dide.</string>
     <string name="dejavu_sync_normal_tabs_firefox_summary">Herwiha hilpekînên ku ne sabît in, ne jî di komeke hilpekînan de ne, nîşan dide, ne tenê hilpekînên sabît û komên hilpekînan.</string>
     <string name="dejavu_sync_source">Hevdemkirin bi</string>
     <string name="dejavu_sync_source_none">Hê nehatiye hilbijartin</string>

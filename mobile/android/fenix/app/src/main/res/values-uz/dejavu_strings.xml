@@ -292,7 +292,7 @@
     <string name="dejavu_feature_split_view">Havolani bo\'lingan ko\'rinishda ochish uchun uni bosib turing</string>
     <string name="dejavu_sync_choose_about">Ish maydonlaringizni Firefox ma\'lumotlaringizni sinxronlashtiradigan Mozilla hisobi orqali kompyuteringizdagi Firefox yoki Zen Browser bilan sinxronlashtiring.</string>
     <string name="dejavu_sync_firefox_about">Har bir kompyuteringizdagi Firefox-ning ochiq varaqlarini ish maydoni sifatida ko\'rsatadi va ularni doim yangilab turadi. Buning uchun Firefox ma\'lumotlaringizni sinxronlashtiradigan Mozilla hisobi ishlatiladi.</string>
-    <string name="dejavu_sync_firefox_hint">Kompyuteringizdagi Firefox-da Sozlamalarni, keyin Sinxronlashtirishni oching va «Varaqlarni ochish» parametrini yoqilgan holda qoldiring. Dejavu-da ochgan varaqlaringiz shu qurilmada qoladi, Firefox esa ularni boshqa qurilmalaringiz ro\'yxatida ko\'rsatadi.</string>
+    <string name="dejavu_sync_firefox_hint">Kompyuteringizdagi Firefox-da Sozlamalarni, keyin Sinxronlashtirishni oching va «Varaqlarni ochish» parametrini yoqilgan holda qoldiring. Kompyuterning ish maydonida ochgan varaqlaringiz o\'sha kompyuterdagi Firefox-da ham ochiladi. Boshqa ish maydonlaringizdagi varaqlar shu qurilmada qoladi, Firefox esa ularni boshqa qurilmalaringiz ro\'yxatida ko\'rsatadi.</string>
     <string name="dejavu_sync_normal_tabs_firefox_summary">Bundan tashqari, mahkamlanmagan va varaqlar guruhida bo\'lmagan varaqlarni ham ko\'rsatadi, faqat mahkamlangan varaqlar va varaqlar guruhlarinigina emas.</string>
     <string name="dejavu_sync_source">Nima bilan sinxronlashtirish</string>
     <string name="dejavu_sync_source_none">Hali tanlanmagan</string>

@@ -292,7 +292,7 @@
     <string name="dejavu_feature_split_view">Siltemeni bólingen kóriniste ashıw ushın onı basıp turıń</string>
     <string name="dejavu_sync_choose_about">Jumıs maydanlarıńızdı Firefox maǵlıwmatlarıńızdı sinxronlastıratuǵın Mozilla akkauntı arqalı kompyuterińizdegi Firefox yamasa Zen Browser menen sinxronlastırıń.</string>
     <string name="dejavu_sync_firefox_about">Hár bir kompyuterińizdegi Firefox ashıq betlerin jumıs maydanı sıpatında kórsetedi hám olardı jańalap turadı. Bunıń ushın Firefox maǵlıwmatlarıńızdı sinxronlastıratuǵın Mozilla akkauntı qollanıladı.</string>
-    <string name="dejavu_sync_firefox_hint">Kompyuterińizdegi Firefox-ta Sazlawlardı, soń Sinxronlastırıwdı ashıń hám Ashıq betler parametrin qosılǵan halda qaldırıń. Dejavu-da ashqan betlerińiz usı qurılmada qaladı, al Firefox olardı basqa qurılmalarıńız astında kórsetedi.</string>
+    <string name="dejavu_sync_firefox_hint">Kompyuterińizdegi Firefox-ta Sazlawlardı, soń Sinxronlastırıwdı ashıń hám Ashıq betler parametrin qosılǵan halda qaldırıń. Kompyuterdiń jumıs maydanında ashqan betlerińiz sol kompyuterdegi Firefox-ta da ashıladı. Basqa jumıs maydanlarıńızdaǵı betler usı qurılmada qaladı, al Firefox olardı basqa qurılmalarıńız astında kórsetedi.</string>
     <string name="dejavu_sync_normal_tabs_firefox_summary">Sonday-aq, bekitilmegen hám betler toparında joq betlerdi de kórsetedi, tek bekitilgen betler hám betler toparların emes.</string>
     <string name="dejavu_sync_source">Mınıń menen sinxronlastırıw</string>
     <string name="dejavu_sync_source_none">Áli tańlanbaǵan</string>

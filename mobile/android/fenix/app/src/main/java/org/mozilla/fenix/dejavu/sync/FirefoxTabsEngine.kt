@@ -24,6 +24,9 @@ internal interface FirefoxLocalData {
 
     /** Asks the account's device [deviceId] to close its tabs showing [urls]. */
     suspend fun closeRemoteTabs(deviceId: String, urls: List<String>)
+
+    /** Sends the account's device [deviceId] a tab showing [url], which it opens. Returns whether it was sent. */
+    suspend fun sendTab(deviceId: String, url: String, title: String): Boolean
 }
 
 /** How a sync with Firefox ended when it did not throw. */
@@ -41,8 +44,8 @@ internal sealed interface FirefoxSyncResult {
 /**
  * Shows the open tabs of Firefox on the account's computers in Dejavu, as [FirefoxMirror] lays them out, from the
  * "tabs" collection where every Firefox keeps the tabs it has open, and the "clients" collection, which tells which
- * device is a Firefox on a computer. Dejavu never writes either: its own tabs reach Firefox through Firefox's tabs
- * engine, which Fenix runs, and tabs closed here reach it as close commands.
+ * device is a Firefox on a computer. Dejavu never writes either: tabs opened here in the workspace of a computer reach
+ * it as sent tabs, and tabs closed here as close commands.
  */
 internal class FirefoxTabsEngine(
     private val http: SyncHttp,
@@ -68,6 +71,9 @@ internal class FirefoxTabsEngine(
     val lastSynced: Long
         get() = store.load().lastSynced
 
+    /** Which tabs here are the computers' tabs. */
+    fun computerTabs(): ComputerTabs = store.load().computerTabs()
+
     /** Forgets everything about the server and the computers shown, for a sign out. */
     fun reset() {
         tokens.forget()
@@ -75,12 +81,19 @@ internal class FirefoxTabsEngine(
         shownHere.clear()
     }
 
-    /** Whether tabs of Firefox computers were closed or removed here since the last sync, without the network. */
+    /**
+     * Whether tabs of Firefox computers were closed or removed here since the last sync, or tabs were opened in their
+     * workspaces, without the network.
+     */
     suspend fun hasLocalChanges(): Boolean {
-        val devices = store.load().devices
-        if (devices.isEmpty()) return false
+        val data = store.load()
+        if (data.devices.isEmpty()) return false
         val current = local.read()
-        return mirror(current).findClosedHere(current.state, devices, shownHere).marked > 0
+        val mirror = mirror(current)
+        if (mirror.findClosedHere(current.state, data.devices, shownHere).marked > 0) return true
+        if (data.sendingSince == 0L) return false
+        val opened = mirror.findOpenedHere(current.state, data.devices, data.sent, data.sendingSince)
+        return opened.toSend.isNotEmpty() || opened.gone.isNotEmpty()
     }
 
     /**
@@ -94,6 +107,7 @@ internal class FirefoxTabsEngine(
     ): FirefoxSyncResult {
         val data = store.load()
         closeTabsClosedHere(data)
+        sendTabsOpenedHere(data)
         return tokens.retryingOnce { run(auth, connected, refreshDevices, data) }
     }
 
@@ -126,6 +140,38 @@ internal class FirefoxTabsEngine(
             log("Asking a Firefox computer to close ${urls.size} tabs closed here")
             runCatching { local.closeRemoteTabs(deviceId, urls) }.onFailure { log("Could not ask to close tabs: $it") }
         }
+    }
+
+    /**
+     * Sends the tabs opened here in the workspace of a computer to it, which opens them too, and asks it to close the
+     * tabs sent before that were closed here before it showed them. Before going to the network, like closing.
+     */
+    private suspend fun sendTabsOpenedHere(data: FirefoxSyncData) {
+        if (data.devices.isEmpty() || data.sendingSince == 0L) return
+        val current = local.read()
+        val opened = mirror(current).findOpenedHere(current.state, data.devices, data.sent, data.sendingSince)
+        if (opened.toSend.isEmpty() && opened.gone.isEmpty()) return
+        val deviceIds = data.devices.associate { it.clientId to it.fxaDeviceId }
+        opened.gone.groupBy { it.clientId }.forEach { (clientId, tabs) ->
+            val deviceId = deviceIds[clientId] ?: return@forEach
+            log("Asking a Firefox computer to close ${tabs.size} tabs closed here before it showed them")
+            runCatching { local.closeRemoteTabs(deviceId, tabs.map { it.url }) }
+                .onFailure { log("Could not ask to close tabs: $it") }
+        }
+        val sent = (data.sent - opened.gone.toSet()).toMutableList()
+        var count = 0
+        for ((tab, title) in opened.toSend) {
+            val deviceId = deviceIds[tab.clientId] ?: continue
+            if (runCatching { local.sendTab(deviceId, tab.url, title) }.getOrDefault(false)) {
+                sent += tab
+                count++
+            } else {
+                log("Could not send a tab opened here to its Firefox computer")
+            }
+        }
+        if (count > 0) log("Sent $count tabs opened here to their Firefox computer")
+        data.sent = sent
+        store.save(data)
     }
 
     @Suppress("ReturnCount")
@@ -175,7 +221,7 @@ internal class FirefoxTabsEngine(
         val previous = data.devices
         val (ops, devices) = local.update { state ->
             val matched = computers.map { computer ->
-                mirror.match(previous.firstOrNull { it.clientId == computer.client.id }, computer, state)
+                mirror.match(previous.firstOrNull { it.clientId == computer.client.id }, computer, state, data.sent)
             }
             val result = mirror.apply(state, previous, matched)
             result.state to (result.tabOps to matched)
@@ -186,6 +232,11 @@ internal class FirefoxTabsEngine(
         devices.forEach { device -> device.tabs.forEach { if (it.id in shown) shownHere += it.id } }
         // Saved once the tabs are open, so that a sync cut short opens them again rather than taking them as closed.
         data.devices = devices
+        // Tabs sent to a computer that shows them now are its tabs; the ones of a computer that is gone stay here.
+        data.sent = data.sent.filter { sent ->
+            devices.any { device -> device.clientId == sent.clientId && device.tabs.none { it.id == sent.id } }
+        }
+        if (data.sendingSince == 0L) data.sendingSince = clock.millis()
         data.lastSynced = clock.millis()
         store.save(data)
         log("Showing ${computers.size} Firefox computers, ${ops.size} changes to open tabs")

@@ -292,7 +292,7 @@
     <string name="dejavu_feature_split_view">Mantiene pretau un vinclo pa ubrir-lo en vista partida</string>
     <string name="dejavu_sync_choose_about">Sincroniza os tuyos espacios de treballo con Firefox u Zen Browser en o tuyo ordinador, a traviés d\'a cuenta de Mozilla con a que sincronizas os datos de Firefox.</string>
     <string name="dejavu_sync_firefox_about">Amuestra as pestanyas ubiertas de Firefox de cadaguno d\'os tuyos ordinadors como un espacio de treballo, y las mantién actualizadas. Emplega la cuenta de Mozilla con a que sincronizas os datos de Firefox.</string>
-    <string name="dejavu_sync_firefox_hint">En Firefox en o tuyo ordinador, ubre Achustes, dimpués Sincronización, y mantién activada la opción Pestanyas ubiertas. As pestanyas que ubres en Dejavu se quedan en este dispositivo, y Firefox las amuestra entre os tuyos atros dispositivos.</string>
+    <string name="dejavu_sync_firefox_hint">En Firefox en o tuyo ordinador, ubre Achustes, dimpués Sincronización, y mantién activada la opción Pestanyas ubiertas. As pestanyas que ubres en o espacio de treballo d\'un ordinador tamién s\'ubren astí en Firefox. As pestanyas d\'os tuyos atros espacios de treballo se quedan en este dispositivo, y Firefox las amuestra entre os tuyos atros dispositivos.</string>
     <string name="dejavu_sync_normal_tabs_firefox_summary">Amuestra tamién as pestanyas que no son ni fixadas ni en un grupo de pestanyas, no nomás as pestanyas fixadas y os grupos de pestanyas.</string>
     <string name="dejavu_sync_source">Sincronizar con</string>
     <string name="dejavu_sync_source_none">Encara no trigau</string>

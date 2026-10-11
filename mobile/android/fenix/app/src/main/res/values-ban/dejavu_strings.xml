@@ -285,7 +285,7 @@
     <string name="dejavu_feature_split_view">Tekan tur tegakang link anggen ngungkab ring split view</string>
     <string name="dejavu_sync_choose_about">Sinkronang genah ragane ajak Firefox wiadin Zen Browser di komputer ragane, nganggo akun Mozilla ane anggo ragane nyinkronang data Firefox.</string>
     <string name="dejavu_sync_firefox_about">Nampilang tab ane mukak di Firefox di tiap komputer ragane dadi genah, lan nyaga apang setata anyar. Ené nganggo akun Mozilla ane anggo ragane nyinkronang data Firefox.</string>
-    <string name="dejavu_sync_firefox_hint">Di Firefox di komputer ragane, bukak Settings, lantas Sync, lan biarang Open tabs tetep idup. Tab ane bukak ragane di Dejavu tetep di piranti ené, lan Firefox nampilang tab-tab ento di beten piranti ragane ane lenan.</string>
+    <string name="dejavu_sync_firefox_hint">Di Firefox di komputer ragane, bukak Settings, lantas Sync, lan biarang Open tabs tetep idup. Tab ane bukak ragane di genah komputer masih mukak di Firefox ditu. Tab di genah ragane ane lenan tetep di piranti ené, lan Firefox nampilang tab-tab ento di beten piranti ragane ane lenan.</string>
     <string name="dejavu_sync_normal_tabs_firefox_summary">Masih nampilang tab ane tusing kasemat lan tusing ada di grup tab, boya ja wantah tab kasemat lan grup tab.</string>
     <string name="dejavu_sync_source">Sinkronang ajak</string>
     <string name="dejavu_sync_source_none">Nu tusing kapilih</string>

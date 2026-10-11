@@ -299,7 +299,7 @@
     <string name="dejavu_feature_split_view">Mantém premida uma ligação para a abrir na vista dividida</string>
     <string name="dejavu_sync_choose_about">Sincroniza os teus espaços de trabalho com o Firefox ou o Zen Browser no teu computador, através da conta Mozilla com a qual sincronizas os dados do Firefox.</string>
     <string name="dejavu_sync_firefox_about">Mostra os separadores abertos do Firefox em cada um dos teus computadores como um espaço de trabalho e mantém-nos atualizados. Usa a mesma conta Mozilla com a qual sincronizas os dados do Firefox.</string>
-    <string name="dejavu_sync_firefox_hint">No Firefox do teu computador, abre Definições e depois Sincronização, e mantém a opção Separadores abertos ativada. Os separadores que abres no Dejavu ficam neste dispositivo, e o Firefox lista-os entre os teus outros dispositivos.</string>
+    <string name="dejavu_sync_firefox_hint">No Firefox do teu computador, abre Definições e depois Sincronização, e mantém a opção Separadores abertos ativada. Os separadores que abres no espaço de trabalho de um computador também abrem no Firefox desse computador. Os separadores dos teus outros espaços de trabalho ficam neste dispositivo, e o Firefox lista-os entre os teus outros dispositivos.</string>
     <string name="dejavu_sync_normal_tabs_firefox_summary">Também mostra os separadores que não estão fixados nem num grupo de separadores, não só os separadores fixados e os grupos de separadores.</string>
     <string name="dejavu_sync_source">Sincronizar com</string>
     <string name="dejavu_sync_source_none">Ainda não escolhido</string>

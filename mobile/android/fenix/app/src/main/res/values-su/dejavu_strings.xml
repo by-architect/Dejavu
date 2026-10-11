@@ -285,7 +285,7 @@
     <string name="dejavu_feature_split_view">Long-press tutumbu pikeun mukana dina split view</string>
     <string name="dejavu_sync_choose_about">Singkronkeun rohangan anjeun jeung Firefox atawa Zen Browser di komputer anjeun, ngaliwatan akun Mozilla nu dipaké pikeun nyingkronkeun data Firefox.</string>
     <string name="dejavu_sync_firefox_about">Némbongkeun tab nu kabuka dina Firefox di unggal komputer anjeun jadi hiji rohangan, sarta terus ngamutakhirkeunana. Ieu maké akun Mozilla nu dipaké pikeun nyingkronkeun data Firefox.</string>
-    <string name="dejavu_sync_firefox_hint">Dina Firefox di komputer anjeun, buka Setélan, tuluy Sync, jeung antepkeun \"Buka tab\" tetep hurung. Tab nu dibuka dina Dejavu tetep aya dina parabot ieu, sarta Firefox némbongkeunana di handapeun parabot anjeun nu séjén.</string>
+    <string name="dejavu_sync_firefox_hint">Dina Firefox di komputer anjeun, buka Setélan, tuluy Sync, jeung antepkeun \"Buka tab\" tetep hurung. Tab nu dibuka dina rohangan hiji komputer ogé muka dina Firefox di komputer éta. Tab dina rohangan anjeun nu séjén tetep aya dina parabot ieu, sarta Firefox némbongkeunana di handapeun parabot anjeun nu séjén.</string>
     <string name="dejavu_sync_normal_tabs_firefox_summary">Ogé némbongkeun tab nu teu disemat jeung teu aya dina kelompok tab, henteu ngan ukur tab nu disemat jeung kelompok tab.</string>
     <string name="dejavu_sync_source">Singkronkeun jeung</string>
     <string name="dejavu_sync_source_none">Acan dipilih</string>

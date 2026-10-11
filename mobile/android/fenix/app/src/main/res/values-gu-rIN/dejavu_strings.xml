@@ -325,7 +325,7 @@
     <string name="dejavu_feature_split_view">લિંકને સ્પ્લિટ વ્યૂમાં ખોલવા માટે તેને દબાવી રાખો</string>
     <string name="dejavu_sync_choose_about">તમે જે Mozilla એકાઉન્ટથી Firefox ડેટા સમન્વયિત કરો છો તેના દ્વારા, તમારા વર્કસ્પેસને તમારા કમ્પ્યુટર પરના Firefox અથવા Zen બ્રાઉઝર સાથે સમન્વયિત કરો.</string>
     <string name="dejavu_sync_firefox_about">તે તમારા દરેક કમ્પ્યુટર પરના Firefox ની ખુલ્લી ટૅબ્સને એક વર્કસ્પેસ તરીકે બતાવે છે અને તેમને અદ્યતન રાખે છે. તે એ જ Mozilla એકાઉન્ટનો ઉપયોગ કરે છે જેનાથી તમે Firefox ડેટા સમન્વયિત કરો છો.</string>
-    <string name="dejavu_sync_firefox_hint">તમારા કમ્પ્યુટર પરના Firefox માં સેટિંગ્સ, પછી સમન્વયન ખોલો અને “ખુલ્લી ટૅબ્સ” ચાલુ રાખો. તમે Dejavu માં ખોલો છો તે ટૅબ્સ આ ઉપકરણ પર જ રહે છે, અને Firefox તેમને તમારાં અન્ય ઉપકરણોની યાદીમાં બતાવે છે.</string>
+    <string name="dejavu_sync_firefox_hint">તમારા કમ્પ્યુટર પરના Firefox માં સેટિંગ્સ, પછી સમન્વયન ખોલો અને “ખુલ્લી ટૅબ્સ” ચાલુ રાખો. તમે કોઈ કમ્પ્યુટરના વર્કસ્પેસમાં ખોલો છો તે ટૅબ્સ તે કમ્પ્યુટર પરના Firefox માં પણ ખૂલે છે. તમારા અન્ય વર્કસ્પેસની ટૅબ્સ આ ઉપકરણ પર જ રહે છે, અને Firefox તેમને તમારાં અન્ય ઉપકરણોની યાદીમાં બતાવે છે.</string>
     <string name="dejavu_sync_normal_tabs_firefox_summary">જે ટૅબ્સ પિન કરેલી નથી અને કોઈ ટૅબ જૂથમાં પણ નથી, તેમને પણ બતાવે છે, ફક્ત પિન કરેલી ટૅબ્સ અને ટૅબ જૂથોને જ નહીં.</string>
     <string name="dejavu_sync_source">કોની સાથે સમન્વયિત કરવું</string>
     <string name="dejavu_sync_source_none">હજી પસંદ કર્યું નથી</string>

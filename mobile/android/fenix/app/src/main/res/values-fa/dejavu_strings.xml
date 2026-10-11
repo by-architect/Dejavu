@@ -292,7 +292,7 @@
     <string name="dejavu_feature_split_view">با فشار طولانی روی یک پیوند، آن را در نمای تقسیم‌شده باز کنید</string>
     <string name="dejavu_sync_choose_about">فضاهای کاری‌تان را از طریق همان حساب Mozilla که داده‌های Firefox را با آن همگام می‌کنید، با Firefox یا Zen Browser روی رایانه‌تان همگام کنید.</string>
     <string name="dejavu_sync_firefox_about">زبانه‌های باز Firefox در هر یک از رایانه‌هایتان را به‌صورت یک فضای کاری نشان می‌دهد و آن‌ها را به‌روز نگه می‌دارد. این کار با همان حساب Mozilla انجام می‌شود که داده‌های Firefox را با آن همگام می‌کنید.</string>
-    <string name="dejavu_sync_firefox_hint">در Firefox روی رایانه‌تان، تنظیمات و سپس همگام‌سازی را باز کنید و «زبانه‌های باز» را روشن نگه دارید. زبانه‌هایی که در Dejavu باز می‌کنید در همین دستگاه می‌مانند و Firefox آن‌ها را در فهرست دیگر دستگاه‌هایتان نشان می‌دهد.</string>
+    <string name="dejavu_sync_firefox_hint">در Firefox روی رایانه‌تان، تنظیمات و سپس همگام‌سازی را باز کنید و «زبانه‌های باز» را روشن نگه دارید. زبانه‌هایی که در فضای کاری یک رایانه باز می‌کنید، در Firefox روی همان رایانه هم باز می‌شوند. زبانه‌های فضاهای کاری دیگرتان در همین دستگاه می‌مانند و Firefox آن‌ها را در فهرست دیگر دستگاه‌هایتان نشان می‌دهد.</string>
     <string name="dejavu_sync_normal_tabs_firefox_summary">همچنین زبانه‌هایی را که نه سنجاق‌شده‌اند و نه در یک گروه زبانه هستند نشان می‌دهد، نه فقط زبانه‌های سنجاق‌شده و گروه‌های زبانه را.</string>
     <string name="dejavu_sync_source">همگام‌سازی با</string>
     <string name="dejavu_sync_source_none">هنوز انتخاب نشده</string>

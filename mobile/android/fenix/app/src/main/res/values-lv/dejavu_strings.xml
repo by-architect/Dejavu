@@ -299,7 +299,7 @@
     <string name="dejavu_feature_split_view">Ilgi pieskarieties saitei, lai atvērtu to sadalītajā skatā</string>
     <string name="dejavu_sync_choose_about">Sinhronizējiet darbvietas ar Firefox vai Zen Browser savā datorā, izmantojot Mozilla kontu, ar kuru sinhronizējat Firefox datus.</string>
     <string name="dejavu_sync_firefox_about">Rāda katra jūsu datora Firefox atvērtās cilnes kā darbvietu un uztur tās aktuālas. Tiek izmantots Mozilla konts, ar kuru sinhronizējat Firefox datus.</string>
-    <string name="dejavu_sync_firefox_hint">Savā datorā Firefox atveriet Iestatījumi, tad Sinhronizācija, un atstājiet ieslēgtu „Atvērtās cilnes”. Cilnes, ko atverat Dejavu, paliek šajā ierīcē, un Firefox tās rāda starp jūsu citām ierīcēm.</string>
+    <string name="dejavu_sync_firefox_hint">Savā datorā Firefox atveriet Iestatījumi, tad Sinhronizācija, un atstājiet ieslēgtu „Atvērtās cilnes”. Cilnes, ko atverat kāda datora darbvietā, tiek atvērtas arī Firefox tajā datorā. Cilnes jūsu citās darbvietās paliek šajā ierīcē, un Firefox tās rāda starp jūsu citām ierīcēm.</string>
     <string name="dejavu_sync_normal_tabs_firefox_summary">Tas rāda arī cilnes, kas nav ne piespraustas, ne kādā ciļņu kopā, ne tikai piespraustās cilnes un ciļņu kopas.</string>
     <string name="dejavu_sync_source">Sinhronizēt ar</string>
     <string name="dejavu_sync_source_none">Vēl nav izvēlēts</string>

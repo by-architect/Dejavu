@@ -292,7 +292,7 @@
     <string name="dejavu_feature_split_view">Ten primíu un enllaz p\'abrilu na vista estremada</string>
     <string name="dejavu_sync_choose_about">Sincroniza los tos espacios de trabayu con Firefox o Zen Browser nel to ordenador, al traviés de la cuenta Mozilla cola que sincronices los datos de Firefox.</string>
     <string name="dejavu_sync_firefox_about">Amuesa les llingüetes abiertes de Firefox de cada ún de los tos ordenadores como un espaciu de trabayu, y caltiénles anovaes. Usa la cuenta Mozilla cola que sincronices los datos de Firefox.</string>
-    <string name="dejavu_sync_firefox_hint">En Firefox nel to ordenador, abri Configuración, dempués Sincronización, y dexa activada la opción Llingüetes abiertes. Les llingüetes qu\'abres en Dejavu queden nesti preséu, y Firefox amuésales ente los tos otros preseos.</string>
+    <string name="dejavu_sync_firefox_hint">En Firefox nel to ordenador, abri Configuración, dempués Sincronización, y dexa activada la opción Llingüetes abiertes. Les llingüetes qu\'abres nel espaciu de trabayu d\'un ordenador ábrense tamién ellí en Firefox. Les llingüetes de los tos otros espacios de trabayu queden nesti preséu, y Firefox amuésales ente los tos otros preseos.</string>
     <string name="dejavu_sync_normal_tabs_firefox_summary">Amuesa tamién les llingüetes que nin tán fixaes nin nun grupu de llingüetes, non namás les llingüetes fixaes y los grupos de llingüetes.</string>
     <string name="dejavu_sync_source">Sincronizar con</string>
     <string name="dejavu_sync_source_none">Entá non escoyíu</string>

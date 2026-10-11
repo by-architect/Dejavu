@@ -292,7 +292,7 @@
     <string name="dejavu_feature_split_view">لینک ن نگه دار تا من دید دوتایی واز بۊ</string>
     <string name="dejavu_sync_choose_about">فضا یلته با Firefox یا Zen Browser رو کامپیوترت همگام کو، با همو حساب Mozilla که باهاش دیتای Firefox همگام می‌کنی.</string>
     <string name="dejavu_sync_firefox_about">بلگه یل واز Firefox رو هر کدوم ز کامپیوترات ره به عنوان یه فضا نشون می‌ده و همیشه تازه نگهشون می‌داره. ای حساب Mozilla ره کار می‌بره که تو باهاش دیتای Firefox همگام می‌کنی.</string>
-    <string name="dejavu_sync_firefox_hint">من Firefox رو کامپیوترت، «سامووا» ره وا کو، بعد «همگام کردن»، و «بلگه یل واز» ره روشن نگه دار. بلگه یلی که من Dejavu وا می‌کنی رو ای دستگاه می‌مونن، و Firefox اونا ره زیر دستگاه یل دیه‌ت نشون می‌ده.</string>
+    <string name="dejavu_sync_firefox_hint">من Firefox رو کامپیوترت، «سامووا» ره وا کو، بعد «همگام کردن»، و «بلگه یل واز» ره روشن نگه دار. بلگه یلی که من فضای یه کامپیوتر وا می‌کنی، اونجا ام من Firefox وا می‌بن. بلگه یل من فضا یل دیه‌ت رو ای دستگاه می‌مونن، و Firefox اونا ره زیر دستگاه یل دیه‌ت نشون می‌ده.</string>
     <string name="dejavu_sync_normal_tabs_firefox_summary">بلگه یلی که نه سنجاق‌وابیدن و نه من بونکۊ بلگه هسن ره ام نشون می‌ده، نه تنیا بلگه یل سنجاق‌وابیده و بونکۊ یل بلگه.</string>
     <string name="dejavu_sync_source">همگام کردن با</string>
     <string name="dejavu_sync_source_none">هنو پسند نوابیده</string>

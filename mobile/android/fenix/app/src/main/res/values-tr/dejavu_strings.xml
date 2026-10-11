@@ -292,7 +292,7 @@
     <string name="dejavu_feature_split_view">Bir bağlantıyı bölünmüş görünümde açmak için uzun basın</string>
     <string name="dejavu_sync_choose_about">Çalışma alanlarınızı, Firefox verilerinizi eşitlediğiniz Mozilla hesabı üzerinden bilgisayarınızdaki Firefox veya Zen Browser ile eşitleyin.</string>
     <string name="dejavu_sync_firefox_about">Bilgisayarlarınızın her birinde Firefox\'ta açık olan sekmeleri bir çalışma alanı olarak gösterir ve güncel tutar. Firefox verilerinizi eşitlediğiniz Mozilla hesabını kullanır.</string>
-    <string name="dejavu_sync_firefox_hint">Bilgisayarınızdaki Firefox\'ta Ayarlar\'ı, ardından Eşitleme\'yi açın ve Açık sekmeler seçeneğini açık tutun. Dejavu\'da açtığınız sekmeler bu cihazda kalır; Firefox bunları diğer cihazlarınızın altında listeler.</string>
+    <string name="dejavu_sync_firefox_hint">Bilgisayarınızdaki Firefox\'ta Ayarlar\'ı, ardından Eşitleme\'yi açın ve Açık sekmeler seçeneğini açık tutun. Bir bilgisayarın çalışma alanında açtığınız sekmeler o bilgisayardaki Firefox\'ta da açılır. Diğer çalışma alanlarınızdaki sekmeler bu cihazda kalır; Firefox bunları diğer cihazlarınızın altında listeler.</string>
     <string name="dejavu_sync_normal_tabs_firefox_summary">Ayrıca ne sabitlenmiş ne de bir sekme grubunda olan sekmeleri de gösterir, yalnızca sabitlenmiş sekmeleri ve sekme gruplarını değil.</string>
     <string name="dejavu_sync_source">Şununla eşitle</string>
     <string name="dejavu_sync_source_none">Henüz seçilmedi</string>

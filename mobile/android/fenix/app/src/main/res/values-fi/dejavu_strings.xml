@@ -292,7 +292,7 @@
     <string name="dejavu_feature_split_view">Avaa linkki jaetussa näkymässä painamalla sitä pitkään</string>
     <string name="dejavu_sync_choose_about">Synkronoi työtilasi tietokoneesi Firefoxin tai Zen Browserin kanssa sen Mozilla-tilin kautta, jolla synkronoit Firefox-tietosi.</string>
     <string name="dejavu_sync_firefox_about">Näyttää jokaisen tietokoneesi Firefoxin avoimet välilehdet työtilana ja pitää ne ajan tasalla. Tämä käyttää samaa Mozilla-tiliä, jolla synkronoit Firefox-tietosi.</string>
-    <string name="dejavu_sync_firefox_hint">Avaa tietokoneesi Firefoxissa Asetukset, sitten Synkronointi, ja pidä Avoimet välilehdet -asetus käytössä. Dejavussa avaamasi välilehdet pysyvät tässä laitteessa, ja Firefox näyttää ne muiden laitteidesi joukossa.</string>
+    <string name="dejavu_sync_firefox_hint">Avaa tietokoneesi Firefoxissa Asetukset, sitten Synkronointi, ja pidä Avoimet välilehdet -asetus käytössä. Tietokoneen työtilassa avaamasi välilehdet avautuvat myös kyseisen tietokoneen Firefoxissa. Muissa työtiloissasi olevat välilehdet pysyvät tässä laitteessa, ja Firefox näyttää ne muiden laitteidesi joukossa.</string>
     <string name="dejavu_sync_normal_tabs_firefox_summary">Näyttää myös välilehdet, jotka eivät ole kiinnitettyjä eivätkä välilehtiryhmässä, ei pelkästään kiinnitettyjä välilehtiä ja välilehtiryhmiä.</string>
     <string name="dejavu_sync_source">Synkronoitava selain</string>
     <string name="dejavu_sync_source_none">Ei vielä valittu</string>

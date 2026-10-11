@@ -292,7 +292,7 @@
     <string name="dejavu_feature_split_view">Preme prolongadamente unha ligazón para abrila en vista dividida</string>
     <string name="dejavu_sync_choose_about">Sincroniza os teus espazos de traballo con Firefox ou Zen Browser no teu ordenador, a través da conta de Mozilla coa que sincronizas os datos de Firefox.</string>
     <string name="dejavu_sync_firefox_about">Amosa as lapelas abertas de Firefox en cada un dos teus ordenadores como un espazo de traballo e mantenas ao día. Usa a conta de Mozilla coa que sincronizas os datos de Firefox.</string>
-    <string name="dejavu_sync_firefox_hint">En Firefox no teu ordenador, abre Configuración e logo Sincronización, e mantén activada a opción Lapelas abertas. As lapelas que abres en Dejavu quedan neste dispositivo, e Firefox amósaas entre as dos teus outros dispositivos.</string>
+    <string name="dejavu_sync_firefox_hint">En Firefox no teu ordenador, abre Configuración e logo Sincronización, e mantén activada a opción Lapelas abertas. As lapelas que abres no espazo de traballo dun ordenador tamén se abren en Firefox nese ordenador. As lapelas dos teus outros espazos de traballo quedan neste dispositivo, e Firefox amósaas entre as dos teus outros dispositivos.</string>
     <string name="dejavu_sync_normal_tabs_firefox_summary">Tamén amosa as lapelas que non están fixadas nin nun grupo de lapelas, non só as lapelas fixadas e os grupos de lapelas.</string>
     <string name="dejavu_sync_source">Sincronizar con</string>
     <string name="dejavu_sync_source_none">Aínda sen escoller</string>

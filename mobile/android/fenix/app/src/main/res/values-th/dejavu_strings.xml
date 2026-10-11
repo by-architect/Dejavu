@@ -285,7 +285,7 @@
     <string name="dejavu_feature_split_view">กดลิงก์ค้างไว้เพื่อเปิดแบบแบ่งหน้าจอ</string>
     <string name="dejavu_sync_choose_about">ซิงค์พื้นที่ทำงานของคุณกับ Firefox หรือ Zen Browser บนคอมพิวเตอร์ของคุณ ผ่านบัญชี Mozilla เดียวกับที่คุณใช้ซิงค์ข้อมูล Firefox</string>
     <string name="dejavu_sync_firefox_about">แสดงแท็บที่เปิดอยู่ใน Firefox บนคอมพิวเตอร์แต่ละเครื่องของคุณเป็นพื้นที่ทำงาน และอัปเดตให้เป็นปัจจุบันอยู่เสมอ โดยใช้บัญชี Mozilla เดียวกับที่คุณใช้ซิงค์ข้อมูล Firefox</string>
-    <string name="dejavu_sync_firefox_hint">ใน Firefox บนคอมพิวเตอร์ของคุณ ให้เปิดการตั้งค่า จากนั้นไปที่การซิงค์ และเปิด “แท็บที่เปิดอยู่” ไว้ แท็บที่คุณเปิดใน Dejavu จะอยู่บนอุปกรณ์นี้ และ Firefox จะแสดงแท็บเหล่านั้นภายใต้อุปกรณ์อื่นของคุณ</string>
+    <string name="dejavu_sync_firefox_hint">ใน Firefox บนคอมพิวเตอร์ของคุณ ให้เปิดการตั้งค่า จากนั้นไปที่การซิงค์ และเปิด “แท็บที่เปิดอยู่” ไว้ แท็บที่คุณเปิดในพื้นที่ทำงานของคอมพิวเตอร์เครื่องหนึ่งจะเปิดใน Firefox บนเครื่องนั้นด้วย แท็บในพื้นที่ทำงานอื่นของคุณจะอยู่บนอุปกรณ์นี้ และ Firefox จะแสดงแท็บเหล่านั้นภายใต้อุปกรณ์อื่นของคุณ</string>
     <string name="dejavu_sync_normal_tabs_firefox_summary">แสดงแท็บที่ไม่ได้ปักหมุดและไม่ได้อยู่ในกลุ่มแท็บด้วย ไม่ใช่แค่แท็บที่ปักหมุดและกลุ่มแท็บเท่านั้น</string>
     <string name="dejavu_sync_source">ซิงค์กับ</string>
     <string name="dejavu_sync_source_none">ยังไม่ได้เลือก</string>

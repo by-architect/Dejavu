@@ -292,7 +292,7 @@
     <string name="dejavu_feature_split_view">Bëni prekje të gjatë mbi një lidhje, që ta hapni në pamje të ndarë</string>
     <string name="dejavu_sync_choose_about">Njëkohësoni hapësirat tuaja të punës me Firefox-in ose Zen Browser në kompjuterin tuaj, përmes llogarisë Mozilla me të cilën njëkohësoni të dhënat e Firefox-it.</string>
     <string name="dejavu_sync_firefox_about">Shfaq skedat e hapura të Firefox-it në secilin nga kompjuterët tuaj si një hapësirë pune dhe i mban të përditësuara. Përdor llogarinë Mozilla me të cilën njëkohësoni të dhënat e Firefox-it.</string>
-    <string name="dejavu_sync_firefox_hint">Në Firefox, në kompjuterin tuaj, hapni Rregullime, mandej Njëkohësim, dhe mbajeni të aktivizuar «Skeda të hapura». Skedat që hapni në Dejavu mbeten në këtë pajisje dhe Firefox-i i shfaq nën pajisjet tuaja të tjera.</string>
+    <string name="dejavu_sync_firefox_hint">Në Firefox, në kompjuterin tuaj, hapni Rregullime, mandej Njëkohësim, dhe mbajeni të aktivizuar «Skeda të hapura». Skedat që hapni në hapësirën e punës të një kompjuteri hapen edhe në Firefox, në atë kompjuter. Skedat në hapësirat tuaja të tjera të punës mbeten në këtë pajisje dhe Firefox-i i shfaq nën pajisjet tuaja të tjera.</string>
     <string name="dejavu_sync_normal_tabs_firefox_summary">Gjithashtu shfaq skedat që nuk janë as të fiksuara, as në një grup skedash, jo vetëm skedat e fiksuara dhe grupet e skedave.</string>
     <string name="dejavu_sync_source">Njëkohësim me</string>
     <string name="dejavu_sync_source_none">Ende pa u zgjedhur</string>

@@ -299,7 +299,7 @@
     <string name="dejavu_feature_split_view">Дуго притисните везу да је отворите у подељеном приказу</string>
     <string name="dejavu_sync_choose_about">Синхронизујте радне просторе са Firefox-ом или Zen Browser-ом на рачунару, преко Mozilla налога којим синхронизујете Firefox податке.</string>
     <string name="dejavu_sync_firefox_about">Приказује отворене језичке Firefox-а са сваког вашег рачунара као радни простор и одржава их ажурним. Користи се Mozilla налог којим синхронизујете Firefox податке.</string>
-    <string name="dejavu_sync_firefox_hint">У Firefox-у на рачунару отворите Подешавања, затим Синхронизација, и оставите укључено „Отвори језичке“. Језичци које отворите у Dejavu-у остају на овом уређају, а Firefox их приказује међу вашим осталим уређајима.</string>
+    <string name="dejavu_sync_firefox_hint">У Firefox-у на рачунару отворите Подешавања, затим Синхронизација, и оставите укључено „Отвори језичке“. Језичци које отворите у радном простору рачунара отварају се и у Firefox-у на том рачунару. Језичци у вашим осталим радним просторима остају на овом уређају, а Firefox их приказује међу вашим осталим уређајима.</string>
     <string name="dejavu_sync_normal_tabs_firefox_summary">Такође приказује језичке који нису ни закачени ни у групи језичака, не само закачене језичке и групе језичака.</string>
     <string name="dejavu_sync_source">Синхронизација са</string>
     <string name="dejavu_sync_source_none">Још није изабрано</string>

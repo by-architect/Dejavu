@@ -299,7 +299,7 @@
     <string name="dejavu_feature_split_view">Mantenha um link pressionado para abri-lo na visualização dividida</string>
     <string name="dejavu_sync_choose_about">Sincronize seus espaços de trabalho com o Firefox ou o Zen Browser no seu computador, pela conta da Mozilla com a qual você sincroniza os dados do Firefox.</string>
     <string name="dejavu_sync_firefox_about">Mostra as abas abertas do Firefox em cada um dos seus computadores como um espaço de trabalho e as mantém atualizadas. Usa a mesma conta da Mozilla com a qual você sincroniza os dados do Firefox.</string>
-    <string name="dejavu_sync_firefox_hint">No Firefox do seu computador, abra Configurações e depois Sincronização, e mantenha a opção Abas abertas ativada. As abas que você abre no Dejavu ficam neste dispositivo, e o Firefox as lista entre os seus outros dispositivos.</string>
+    <string name="dejavu_sync_firefox_hint">No Firefox do seu computador, abra Configurações e depois Sincronização, e mantenha a opção Abas abertas ativada. As abas que você abre no espaço de trabalho de um computador também abrem no Firefox desse computador. As abas dos seus outros espaços de trabalho ficam neste dispositivo, e o Firefox as lista entre os seus outros dispositivos.</string>
     <string name="dejavu_sync_normal_tabs_firefox_summary">Também mostra as abas que não estão fixadas nem em um grupo de abas, não apenas as abas fixadas e os grupos de abas.</string>
     <string name="dejavu_sync_source">Sincronizar com</string>
     <string name="dejavu_sync_source_none">Ainda não escolhido</string>

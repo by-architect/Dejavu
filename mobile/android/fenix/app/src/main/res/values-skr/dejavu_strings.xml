@@ -292,7 +292,7 @@
     <string name="dejavu_feature_split_view">لنک کوں ونڈے نظارے وچ کھولݨ کیتے اونکوں دبا تے رکھو</string>
     <string name="dejavu_sync_choose_about">آپݨیاں ورک سپیساں آپݨے کمپیوٹر تے Firefox یا Zen Browser نال ہم وقت کرو، اوں Mozilla کھاتے راہیں جیندے نال تساں Firefox ڈیٹا ہم وقت کریندے ہو۔</string>
     <string name="dejavu_sync_firefox_about">ایہ تہاݙے ہر کمپیوٹر تے Firefox دیاں کھلیاں ٹیباں کوں ہک ورک سپیس دے طور تے ݙکھیندا ہے، تے انہاں کوں تازہ رکھدا ہے۔ ایہ اوہو Mozilla کھاتہ ورتیندا ہے جیندے نال تساں Firefox ڈیٹا ہم وقت کریندے ہو۔</string>
-    <string name="dejavu_sync_firefox_hint">آپݨے کمپیوٹر تے Firefox وچ ترتیباں کھولو، ول ہم وقت کرݨ، تے “ٹیب کھولو” چالو رکھو۔ جہڑیاں ٹیباں تساں Dejavu وچ کھولیندے ہو، اوہ ایں ڈیوائس تے رہندیاں ہن، تے Firefox انہاں کوں تہاݙیاں ٻیاں ڈیوائساں دے تلے ݙکھیندا ہے۔</string>
+    <string name="dejavu_sync_firefox_hint">آپݨے کمپیوٹر تے Firefox وچ ترتیباں کھولو، ول ہم وقت کرݨ، تے “ٹیب کھولو” چالو رکھو۔ جہڑیاں ٹیباں تساں ہک کمپیوٹر دی ورک سپیس وچ کھولیندے ہو، اوہ اُتھاں Firefox وچ وی کھلدیاں ہن۔ تہاݙیاں ٻیاں ورک سپیساں دیاں ٹیباں ایں ڈیوائس تے رہندیاں ہن، تے Firefox انہاں کوں تہاݙیاں ٻیاں ڈیوائساں دے تلے ݙکھیندا ہے۔</string>
     <string name="dejavu_sync_normal_tabs_firefox_summary">ایہ اوہ ٹیباں وی ݙکھیندا ہے جہڑیاں نہ پن تھیاں ہن تے نہ کہیں ٹیب گروپ وچ ہن، صرف پن تھیاں ٹیباں تے ٹیب گروپ نہ۔</string>
     <string name="dejavu_sync_source">ہم وقت کرݨ کیتے براؤزر</string>
     <string name="dejavu_sync_source_none">اڄݨ کائنی چُݨیا</string>

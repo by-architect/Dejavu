@@ -292,7 +292,7 @@
     <string name="dejavu_feature_split_view">Ṭṭef akud ɣezzifen ɣef useɣwen akken a t-teldiḍ deg tmuɣli tabḍant</string>
     <string name="dejavu_sync_choose_about">Sdukel imukan n umahil-ik akked Firefox neɣ Zen Browser ɣef uselkim-ik, s umiḍan Mozilla i deg tesdukkuleḍ isefka-k n Firefox.</string>
     <string name="dejavu_sync_firefox_about">Yesskan-d iccaren yeldin n Firefox ɣef yal aselkim-ik d amkan n umahil, yerna yettleqqim-iten. Yesseqdac amiḍan Mozilla i deg tesdukkuleḍ isefka-k n Firefox.</string>
-    <string name="dejavu_sync_firefox_hint">Deg Firefox ɣef uselkim-ik, ldi Iɣewwaṛen, sakin Amtawi, rnu sermed Accaren yeldin. Iccaren i teldiḍ deg Dejavu ad qqimen ɣef yibenk-agi, yerna Firefox ad ten-id-yesken ddaw ibenkan-ik nniḍen.</string>
+    <string name="dejavu_sync_firefox_hint">Deg Firefox ɣef uselkim-ik, ldi Iɣewwaṛen, sakin Amtawi, rnu sermed Accaren yeldin. Iccaren i teldiḍ deg umkan n umahil n uselkim ttildin daɣen deg Firefox ɣef uselkim-nni. Iccaren yellan deg imukan n umahil-ik nniḍen ad qqimen ɣef yibenk-agi, yerna Firefox ad ten-id-yesken ddaw ibenkan-ik nniḍen.</string>
     <string name="dejavu_sync_normal_tabs_firefox_summary">Yesskan-d daɣen iccaren ur yessersen ara, ur llin ara deg ugraw n yiccaren, mačči kan iccaren yessersen d yigrawen n yiccaren.</string>
     <string name="dejavu_sync_source">Asdukel akked</string>
     <string name="dejavu_sync_source_none">Mazal ur yettwafren ara</string>

@@ -292,7 +292,7 @@
     <string name="dejavu_feature_split_view">Ten premût un leam par vierzilu in viodude dividude</string>
     <string name="dejavu_sync_choose_about">Sincronize i tiei spazis di lavôr cun Firefox o Zen Browser sul to computer, doprant l\'account Mozilla cun cui tu sincronizis i dâts di Firefox.</string>
     <string name="dejavu_sync_firefox_about">Al mostre lis schedis viertis di Firefox di ognidun dai tiei computers come un spazi di lavôr, e lis ten inzornadis. Al dopre l\'account Mozilla cun cui tu sincronizis i dâts di Firefox.</string>
-    <string name="dejavu_sync_firefox_hint">In Firefox sul to computer, vierç Impostazions, dopo Sincronizazion, e lasse ative la opzion Schedis viertis. Lis schedis che tu vierzis in Dejavu a restin su chest dispositîf, e Firefox lis mostre insieme a chês dai tiei altris dispositîfs.</string>
+    <string name="dejavu_sync_firefox_hint">In Firefox sul to computer, vierç Impostazions, dopo Sincronizazion, e lasse ative la opzion Schedis viertis. Lis schedis che tu vierzis tal spazi di lavôr di un computer a vierzin ancje in Firefox su chel computer. Lis schedis dai tiei altris spazis di lavôr a restin su chest dispositîf, e Firefox lis mostre insieme a chês dai tiei altris dispositîfs.</string>
     <string name="dejavu_sync_normal_tabs_firefox_summary">Al mostre ancje lis schedis che no son ni fissadis ni intun grup di schedis, no dome lis schedis fissadis e i grups di schedis.</string>
     <string name="dejavu_sync_source">Sincronize cun</string>
     <string name="dejavu_sync_source_none">No ancjemò sielzût</string>

@@ -292,7 +292,7 @@
     <string name="dejavu_feature_split_view">لنک کو اسپلٹ ویو میں کھولنے کے لیے اسے دیر تک دبائیں</string>
     <string name="dejavu_sync_choose_about">اپنی ورک اسپیسز کو اپنے کمپیوٹر پر Firefox یا Zen Browser کے ساتھ ہم وقت کریں، اسی Mozilla اکاؤنٹ کے ذریعے جس سے آپ Firefox کا ڈیٹا ہم وقت کرتے ہیں۔</string>
     <string name="dejavu_sync_firefox_about">آپ کے ہر کمپیوٹر پر Firefox کے کھلے ٹیبز کو ایک ورک اسپیس کے طور پر دکھاتا ہے، اور انہیں تازہ رکھتا ہے۔ یہ اسی Mozilla اکاؤنٹ کا استعمال کرتا ہے جس سے آپ Firefox کا ڈیٹا ہم وقت کرتے ہیں۔</string>
-    <string name="dejavu_sync_firefox_hint">اپنے کمپیوٹر پر Firefox میں، سیٹنگز کھولیں، پھر سنک، اور “ٹیبز کھولیں” کو آن رکھیں۔ جو ٹیبز آپ Dejavu میں کھولتے ہیں وہ اسی ڈیوائس پر رہتے ہیں، اور Firefox انہیں آپ کی دیگر ڈیوائسز کے تحت دکھاتا ہے۔</string>
+    <string name="dejavu_sync_firefox_hint">اپنے کمپیوٹر پر Firefox میں، سیٹنگز کھولیں، پھر سنک، اور “ٹیبز کھولیں” کو آن رکھیں۔ جو ٹیبز آپ کسی کمپیوٹر کی ورک اسپیس میں کھولتے ہیں وہ اس کمپیوٹر پر Firefox میں بھی کھلتے ہیں۔ آپ کی دیگر ورک اسپیسز کے ٹیبز اسی ڈیوائس پر رہتے ہیں، اور Firefox انہیں آپ کی دیگر ڈیوائسز کے تحت دکھاتا ہے۔</string>
     <string name="dejavu_sync_normal_tabs_firefox_summary">وہ ٹیبز بھی دکھاتا ہے جو نہ پن کردہ ہیں نہ کسی ٹیب گروپ میں، صرف پن کردہ ٹیبز اور ٹیب گروپس نہیں۔</string>
     <string name="dejavu_sync_source">اس کے ساتھ ہم وقت سازی</string>
     <string name="dejavu_sync_source_none">ابھی منتخب نہیں کیا گیا</string>

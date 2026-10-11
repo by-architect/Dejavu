@@ -292,7 +292,7 @@
     <string name="dejavu_feature_split_view">Tryck länge på en länk för att öppna den i delad vy</string>
     <string name="dejavu_sync_choose_about">Synkronisera dina arbetsytor med Firefox eller Zen Browser på datorn, via Mozilla-kontot som du synkroniserar Firefox-data med.</string>
     <string name="dejavu_sync_firefox_about">Visar de öppna flikarna i Firefox på var och en av dina datorer som en arbetsyta och håller dem uppdaterade. Det använder samma Mozilla-konto som du synkroniserar Firefox-data med.</string>
-    <string name="dejavu_sync_firefox_hint">I Firefox på datorn öppnar du Inställningar, sedan Synkronisering, och låter Öppna flikar vara på. Flikar du öppnar i Dejavu stannar på den här enheten, och Firefox listar dem under dina andra enheter.</string>
+    <string name="dejavu_sync_firefox_hint">I Firefox på datorn öppnar du Inställningar, sedan Synkronisering, och låter Öppna flikar vara på. Flikar du öppnar i en dators arbetsyta öppnas även i Firefox på den datorn. Flikar i dina andra arbetsytor stannar på den här enheten, och Firefox listar dem under dina andra enheter.</string>
     <string name="dejavu_sync_normal_tabs_firefox_summary">Visar även flikar som varken är fästa eller i en flikgrupp, inte bara fästa flikar och flikgrupper.</string>
     <string name="dejavu_sync_source">Synkronisera med</string>
     <string name="dejavu_sync_source_none">Inte valt än</string>

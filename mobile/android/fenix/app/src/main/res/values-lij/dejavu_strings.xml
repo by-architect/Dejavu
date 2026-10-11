@@ -292,7 +292,7 @@
     <string name="dejavu_feature_split_view">Tegni apreisso un ligamme pe arvîlo inte a vista spartia</string>
     <string name="dejavu_sync_choose_about">Sincronizza i tò spaçi de travaggio con Firefox ò Zen Browser in sciô tò computer, atraverso o conto Mozilla co-o quæ ti sincronizzi i dæti de Firefox.</string>
     <string name="dejavu_sync_firefox_about">O amostra i feuggi averti de Firefox de ciaschedun di tò computer comme un spaçio de travaggio, e o i tegne agiornæ. O doeä o conto Mozilla co-o quæ ti sincronizzi i dæti de Firefox.</string>
-    <string name="dejavu_sync_firefox_hint">Inte Firefox in sciô tò computer, arvi Inpostaçioin, poi Sincronizzaçion, e lascia attivo «Feuggi averti». I feuggi che t\'arvi inte Dejavu restan in sce sto dispoxitivo, e Firefox o i amostra sotto i tò âtri dispoxitivi.</string>
+    <string name="dejavu_sync_firefox_hint">Inte Firefox in sciô tò computer, arvi Inpostaçioin, poi Sincronizzaçion, e lascia attivo «Feuggi averti». I feuggi che t\'arvi inte o spaçio de travaggio de un computer s\'arvan ascì inte Firefox in sce quello computer. I feuggi di tò âtri spaçi de travaggio restan in sce sto dispoxitivo, e Firefox o i amostra sotto i tò âtri dispoxitivi.</string>
     <string name="dejavu_sync_normal_tabs_firefox_summary">O amostra ascì i feuggi che no son né fissæ né inte \'n gruppo de feuggi, no solo i feuggi fissæ e i gruppi de feuggi.</string>
     <string name="dejavu_sync_source">Sincronizza con</string>
     <string name="dejavu_sync_source_none">No ancon seleçionou</string>

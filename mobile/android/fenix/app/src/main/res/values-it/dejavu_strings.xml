@@ -292,7 +292,7 @@
     <string name="dejavu_feature_split_view">Tieni premuto un link per aprirlo in vista divisa</string>
     <string name="dejavu_sync_choose_about">Sincronizza i tuoi spazi con Firefox o Zen Browser sul tuo computer, tramite l’account Mozilla con cui sincronizzi i dati di Firefox.</string>
     <string name="dejavu_sync_firefox_about">Mostra le schede aperte di Firefox su ciascuno dei tuoi computer come uno spazio, e le mantiene aggiornate. Usa l’account Mozilla con cui sincronizzi i dati di Firefox.</string>
-    <string name="dejavu_sync_firefox_hint">In Firefox sul tuo computer, apri Impostazioni, poi Sincronizzazione, e lascia attiva l’opzione Schede aperte. Le schede che apri in Dejavu restano su questo dispositivo, e Firefox le elenca sotto i tuoi altri dispositivi.</string>
+    <string name="dejavu_sync_firefox_hint">In Firefox sul tuo computer, apri Impostazioni, poi Sincronizzazione, e lascia attiva l’opzione Schede aperte. Le schede che apri nello spazio di un computer si aprono anche in Firefox su quel computer. Le schede dei tuoi altri spazi restano su questo dispositivo, e Firefox le elenca sotto i tuoi altri dispositivi.</string>
     <string name="dejavu_sync_normal_tabs_firefox_summary">Mostra anche le schede che non sono né bloccate né in un gruppo di schede, non solo le schede bloccate e i gruppi di schede.</string>
     <string name="dejavu_sync_source">Sincronizza con</string>
     <string name="dejavu_sync_source_none">Non ancora scelto</string>

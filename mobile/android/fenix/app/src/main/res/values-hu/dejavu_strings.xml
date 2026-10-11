@@ -292,7 +292,7 @@
     <string name="dejavu_feature_split_view">Nyomjon hosszan egy hivatkozást, hogy osztott nézetben nyissa meg</string>
     <string name="dejavu_sync_choose_about">Szinkronizálja munkaterületeit a számítógépén lévő Firefoxszal vagy Zen Browserrel, azzal a Mozilla-fiókkal, amellyel a Firefox-adatait szinkronizálja.</string>
     <string name="dejavu_sync_firefox_about">Az egyes számítógépein futó Firefox nyitott lapjait egy-egy munkaterületként jeleníti meg, és naprakészen tartja őket. Ugyanazt a Mozilla-fiókot használja, amellyel a Firefox-adatait szinkronizálja.</string>
-    <string name="dejavu_sync_firefox_hint">A számítógépén lévő Firefoxban nyissa meg a Beállításokat, majd a Szinkronizálást, és hagyja bekapcsolva a Nyitott lapokat. A Dejavuban megnyitott lapok ezen az eszközön maradnak, és a Firefox a többi eszköze alatt sorolja fel őket.</string>
+    <string name="dejavu_sync_firefox_hint">A számítógépén lévő Firefoxban nyissa meg a Beállításokat, majd a Szinkronizálást, és hagyja bekapcsolva a Nyitott lapokat. Egy számítógép munkaterületén megnyitott lapok azon a számítógépen a Firefoxban is megnyílnak. A többi munkaterületén lévő lapok ezen az eszközön maradnak, és a Firefox a többi eszköze alatt sorolja fel őket.</string>
     <string name="dejavu_sync_normal_tabs_firefox_summary">Emellett azokat a lapokat is megjeleníti, amelyek nincsenek kitűzve és lapcsoportban sincsenek, nem csak a kitűzött lapokat és a lapcsoportokat.</string>
     <string name="dejavu_sync_source">Szinkronizálás ezzel:</string>
     <string name="dejavu_sync_source_none">Még nincs kiválasztva</string>

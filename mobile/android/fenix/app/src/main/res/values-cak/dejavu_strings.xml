@@ -292,7 +292,7 @@
     <string name="dejavu_feature_split_view">Tapitz\' jun ximonel richin najaq pa vista pa ka\'i\'</string>
     <string name="dejavu_sync_choose_about">Tajunamirisaj ri taq asamajib\'äl rik\'in Firefox o Zen Browser pa akematz\'ib\', rik\'in ri Rukwenta Mozilla nawokisaj richin najunamirisaj rutzij Firefox.</string>
     <string name="dejavu_sync_firefox_about">Nuk\'ut ri jaqäl taq ruwi\' richin Firefox pa chi jujunal akematz\'ib\' achi\'el jun samajib\'äl, chuqa\' jantape\' yeruk\'ak\'a\'irisaj. Nukusaj ri Rukwenta Mozilla nawokisaj richin najunamirisaj rutzij Firefox.</string>
-    <string name="dejavu_sync_firefox_hint">Pa Firefox pa akematz\'ib\', tajäq Nuk\'ulem, k\'a ri\' Junamirisanik, k\'a ri\' tatzija\' Kejaq ruwi\'. Ri taq ruwi\' ye\'ajaq pa Dejavu yekanäj pa re aparato re\', chuqa\' Firefox yeruk\'ut kik\'in ri ch\'aqa\' chik taq awokisaxel.</string>
+    <string name="dejavu_sync_firefox_hint">Pa Firefox pa akematz\'ib\', tajäq Nuk\'ulem, k\'a ri\' Junamirisanik, k\'a ri\' tatzija\' Kejaq ruwi\'. Ri taq ruwi\' ye\'ajaq pa rusamajib\'äl jun kematz\'ib\' chuqa\' yejaq chiri\' pa Firefox. Ri taq ruwi\' pa ri ch\'aqa\' chik taq asamajib\'äl yekanäj pa re aparato re\', chuqa\' Firefox yeruk\'ut kik\'in ri ch\'aqa\' chik taq awokisaxel.</string>
     <string name="dejavu_sync_normal_tabs_firefox_summary">Nuk\'ut chuqa\' ri taq ruwi\' man ximon ta chuqa\' man e k\'o ta pa jun molaj ruwi\', man xaxe\' ta ri ximon taq ruwi\' chuqa\' ri molaj taq ruwi\'.</string>
     <string name="dejavu_sync_source">Junamirisanik rik\'in</string>
     <string name="dejavu_sync_source_none">Majun cha\'on</string>

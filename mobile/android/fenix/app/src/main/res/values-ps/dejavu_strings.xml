@@ -292,7 +292,7 @@
     <string name="dejavu_feature_split_view">یو لینک اوږده فشار کړئ ترڅو یې په وېشل شوي لید کې خلاص کړئ</string>
     <string name="dejavu_sync_choose_about">خپلې ساحې ستاسو په کمپیوټر کې له Firefox یا Zen Browser سره همغږي کړئ، د هغه Mozilla حساب له لارې چې تاسو د Firefox معلومات ورسره همغږي کوئ.</string>
     <string name="dejavu_sync_firefox_about">ستاسو د هر کمپیوټر د Firefox خلاص ټبونه د یوې ساحې په توګه ښیي، او تازه یې ساتي. دا هماغه د Mozilla حساب کاروي چې تاسو د Firefox معلومات ورسره همغږي کوئ.</string>
-    <string name="dejavu_sync_firefox_hint">ستاسو په کمپیوټر کې په Firefox کې، «امستنې» خلاص کړئ، بیا «همغږي کول»، او «خلاص ټبونه» فعال وساتئ. هغه ټبونه چې تاسو یې په Dejavu کې خلاصوئ په دې وسیله کې پاتې کېږي، او Firefox یې ستاسو د نورو وسایلو لاندې ښیي.</string>
+    <string name="dejavu_sync_firefox_hint">ستاسو په کمپیوټر کې په Firefox کې، «امستنې» خلاص کړئ، بیا «همغږي کول»، او «خلاص ټبونه» فعال وساتئ. هغه ټبونه چې تاسو یې د یو کمپیوټر په ساحه کې خلاصوئ، په هغه کمپیوټر کې په Firefox کې هم خلاصېږي. ستاسو د نورو ساحو ټبونه په دې وسیله کې پاتې کېږي، او Firefox یې ستاسو د نورو وسایلو لاندې ښیي.</string>
     <string name="dejavu_sync_normal_tabs_firefox_summary">دا هغه ټبونه هم ښیي چې نه پین شوي دي او نه د ټبونو په کومه ډله کې دي، نه یوازې پین شوي ټبونه او د ټبونو ډلې.</string>
     <string name="dejavu_sync_source">د همغږۍ براوزر</string>
     <string name="dejavu_sync_source_none">تراوسه ټاکل شوی نه دی</string>

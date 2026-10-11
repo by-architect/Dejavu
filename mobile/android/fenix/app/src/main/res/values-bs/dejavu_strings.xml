@@ -299,7 +299,7 @@
     <string name="dejavu_feature_split_view">Zadržite link da ga otvorite u podijeljenom prikazu</string>
     <string name="dejavu_sync_choose_about">Sinhronizujte svoje radne prostore sa Firefoxom ili Zen Browserom na svom računaru, preko Mozilla računa kojim sinhronizujete Firefox podatke.</string>
     <string name="dejavu_sync_firefox_about">Prikazuje otvorene tabove Firefoxa sa svakog vašeg računara kao radni prostor i održava ih ažurnim. Koristi se Mozilla račun kojim sinhronizujete Firefox podatke.</string>
-    <string name="dejavu_sync_firefox_hint">U Firefoxu na svom računaru otvorite Postavke, zatim Sinhronizacija, i ostavite opciju „Otvori tabove“ uključenom. Tabovi koje otvorite u Dejavuu ostaju na ovom uređaju, a Firefox ih prikazuje među vašim ostalim uređajima.</string>
+    <string name="dejavu_sync_firefox_hint">U Firefoxu na svom računaru otvorite Postavke, zatim Sinhronizacija, i ostavite opciju „Otvori tabove“ uključenom. Tabovi koje otvorite u radnom prostoru nekog računara otvaraju se i u Firefoxu na tom računaru. Tabovi u vašim ostalim radnim prostorima ostaju na ovom uređaju, a Firefox ih prikazuje među vašim ostalim uređajima.</string>
     <string name="dejavu_sync_normal_tabs_firefox_summary">Također prikazuje tabove koji nisu ni prikvačeni ni u grupi tabova, ne samo prikvačene tabove i grupe tabova.</string>
     <string name="dejavu_sync_source">Sinhronizacija sa</string>
     <string name="dejavu_sync_source_none">Još nije izabrano</string>

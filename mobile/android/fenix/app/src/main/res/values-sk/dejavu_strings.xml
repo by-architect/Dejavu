@@ -306,7 +306,7 @@
     <string name="dejavu_feature_split_view">Dlho podržte odkaz a otvorte ho v rozdelenom zobrazení</string>
     <string name="dejavu_sync_choose_about">Synchronizujte svoje pracovné priestory s Firefoxom alebo prehliadačom Zen Browser na počítači prostredníctvom účtu Mozilla, ktorým synchronizujete údaje Firefoxu.</string>
     <string name="dejavu_sync_firefox_about">Zobrazuje otvorené karty Firefoxu z každého vášho počítača ako pracovný priestor a udržiava ich aktuálne. Používa na to rovnaký účet Mozilla, akým synchronizujete údaje Firefoxu.</string>
-    <string name="dejavu_sync_firefox_hint">Vo Firefoxe na počítači otvorte Nastavenia, potom Synchronizáciu, a nechajte zapnutú možnosť Otvorené karty. Karty, ktoré otvoríte v Dejavu, zostanú na tomto zariadení a Firefox ich zobrazí medzi vašimi ostatnými zariadeniami.</string>
+    <string name="dejavu_sync_firefox_hint">Vo Firefoxe na počítači otvorte Nastavenia, potom Synchronizáciu, a nechajte zapnutú možnosť Otvorené karty. Karty, ktoré otvoríte v pracovnom priestore počítača, sa otvoria aj vo Firefoxe na tom počítači. Karty vo vašich ostatných pracovných priestoroch zostanú na tomto zariadení a Firefox ich zobrazí medzi vašimi ostatnými zariadeniami.</string>
     <string name="dejavu_sync_normal_tabs_firefox_summary">Taktiež zobrazuje karty, ktoré nie sú pripnuté ani v skupine kariet, nielen pripnuté karty a skupiny kariet.</string>
     <string name="dejavu_sync_source">Synchronizovať s</string>
     <string name="dejavu_sync_source_none">Zatiaľ nevybrané</string>

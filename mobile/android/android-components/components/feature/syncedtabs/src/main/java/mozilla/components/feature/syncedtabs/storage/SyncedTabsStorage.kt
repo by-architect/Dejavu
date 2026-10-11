@@ -36,6 +36,7 @@ import mozilla.components.service.fxa.sync.SyncReason
  * @param store Browser store to observe for state changes.
  * @param tabsStorage Storage layer for tabs to sync.
  * @param debounceMillis Length to debounce rapid changes for storing and syncing.
+ * @param tabFilter Dejavu: which of the tabs that are not private the other devices see as this device's tabs.
  */
 class SyncedTabsStorage(
     private val accountManager: FxaAccountManager,
@@ -44,6 +45,7 @@ class SyncedTabsStorage(
     private val maxActiveTime: Long,
     private val debounceMillis: Long = 1000L,
     private val dispatcher: CoroutineDispatcher = Dispatchers.Main,
+    private val tabFilter: (TabSessionState) -> Boolean = { true },
 ) : SyncedTabsProvider {
     private var scope: CoroutineScope? = null
 
@@ -58,7 +60,7 @@ class SyncedTabsStorage(
                         // TO-DO: https://github.com/mozilla-mobile/android-components/issues/5179
                         val iconUrl = null
                         state.tabs
-                            .filter { !it.content.private && !it.content.loading }
+                            .filter { !it.content.private && !it.content.loading && tabFilter(it) }
                             .map { tab ->
                                 val history = listOf(TabEntry(tab.content.title, tab.content.url, iconUrl))
                                 Tab(history, 0, tab.lastAccess, !tab.isActive(maxActiveTime))
@@ -109,6 +111,7 @@ class SyncedTabsStorage(
         val selectedId: String?,
         val lastAccessed: List<Long>,
         val loadedTabs: List<TabSessionState>,
+        val sharedTabs: List<String>,
     )
 
     private fun BrowserState.toSyncTabState() =
@@ -116,5 +119,6 @@ class SyncedTabsStorage(
             selectedId = selectedTabId,
             lastAccessed = tabs.map { it.lastAccess },
             loadedTabs = tabs.filter { it.content.loading },
+            sharedTabs = tabs.filter(tabFilter).map { it.id },
         )
 }

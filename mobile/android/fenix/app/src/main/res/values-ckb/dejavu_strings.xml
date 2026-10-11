@@ -292,7 +292,7 @@
     <string name="dejavu_feature_split_view">بەستەرێک دابگرە بۆ کردنەوەی لە دیمەنی دووبەشکراودا</string>
     <string name="dejavu_sync_choose_about">فەزاکانت لەگەڵ Firefox یان Zen Browser لە کۆمپیوتەرەکەت هاوکات بکە، لە ڕێگەی ئەو هەژمارەی Mozilla کە داتای Firefox پێی هاوکات دەکەیت.</string>
     <string name="dejavu_sync_firefox_about">بازدەرە کراوەکانی Firefox لە هەر یەکێک لە کۆمپیوتەرەکانت وەک فەزایەک پیشان دەدات و بە نوێیی ڕایاندەگرێت. هەژماری Mozilla بەکاردێنێت کە داتای Firefox پێی هاوکات دەکەیت.</string>
-    <string name="dejavu_sync_firefox_hint">لە Firefox ی کۆمپیوتەرەکەتدا، «ڕێکخستنەکان» بکەرەوە، پاشان «هاوکاتکردن»، و «بازدەرەکان بکەرەوە» بە چالاکی بهێڵەوە. ئەو بازدەرانەی لە Dejavu دەیانکەیتەوە لەم ئامێرەدا دەمێننەوە، و Firefox لە ژێر ئامێرەکانی ترتدا پیشانیان دەدات.</string>
+    <string name="dejavu_sync_firefox_hint">لە Firefox ی کۆمپیوتەرەکەتدا، «ڕێکخستنەکان» بکەرەوە، پاشان «هاوکاتکردن»، و «بازدەرەکان بکەرەوە» بە چالاکی بهێڵەوە. ئەو بازدەرانەی لە فەزای کۆمپیوتەرێکدا دەیانکەیتەوە، لە Firefox ی ئەو کۆمپیوتەرەشدا دەکرێنەوە. بازدەرەکانی فەزاکانی ترت لەم ئامێرەدا دەمێننەوە، و Firefox لە ژێر ئامێرەکانی ترتدا پیشانیان دەدات.</string>
     <string name="dejavu_sync_normal_tabs_firefox_summary">هەروەها ئەو بازدەرانەش پیشان دەدات کە نە چەسپاون و نە لە گرووپی بازدەردان، نەک تەنها بازدەرە چەسپاوەکان و گرووپەکانی بازدەر.</string>
     <string name="dejavu_sync_source">هاوکاتکردن لەگەڵ</string>
     <string name="dejavu_sync_source_none">هێشتا هەڵنەبژێردراوە</string>

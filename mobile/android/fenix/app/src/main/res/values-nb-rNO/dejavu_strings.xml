@@ -292,7 +292,7 @@
     <string name="dejavu_feature_split_view">Trykk lenge på en lenke for å åpne den i delt visning</string>
     <string name="dejavu_sync_choose_about">Synkroniser arbeidsområdene dine med Firefox eller Zen Browser på datamaskinen din, via Mozilla-kontoen du synkroniserer Firefox-data med.</string>
     <string name="dejavu_sync_firefox_about">Viser de åpne fanene i Firefox på hver av datamaskinene dine som et arbeidsområde, og holder dem oppdatert. Dette bruker Mozilla-kontoen du synkroniserer Firefox-data med.</string>
-    <string name="dejavu_sync_firefox_hint">Åpne Innstillinger i Firefox på datamaskinen din, deretter Synkronisering, og la «Åpne faner» være slått på. Faner du åpner i Dejavu, blir på denne enheten, og Firefox viser dem under dine andre enheter.</string>
+    <string name="dejavu_sync_firefox_hint">Åpne Innstillinger i Firefox på datamaskinen din, deretter Synkronisering, og la «Åpne faner» være slått på. Faner du åpner i arbeidsområdet til en datamaskin, åpnes også i Firefox på den datamaskinen. Faner i dine andre arbeidsområder blir på denne enheten, og Firefox viser dem under dine andre enheter.</string>
     <string name="dejavu_sync_normal_tabs_firefox_summary">Viser også fanene som verken er festet eller i en fanegruppe, ikke bare festede faner og fanegrupper.</string>
     <string name="dejavu_sync_source">Synkroniser med</string>
     <string name="dejavu_sync_source_none">Ikke valgt ennå</string>

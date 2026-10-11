@@ -292,7 +292,7 @@
     <string name="dejavu_feature_split_view">Druk lang op een link om deze in gesplitste weergave te openen</string>
     <string name="dejavu_sync_choose_about">Synchroniseer je werkruimtes met Firefox of Zen Browser op je computer, via het Mozilla-account waarmee je Firefox-gegevens synchroniseert.</string>
     <string name="dejavu_sync_firefox_about">Toont de open tabbladen van Firefox op elk van je computers als een werkruimte, en houdt ze actueel. Hiervoor wordt het Mozilla-account gebruikt waarmee je Firefox-gegevens synchroniseert.</string>
-    <string name="dejavu_sync_firefox_hint">Open in Firefox op je computer Instellingen, dan Synchronisatie, en laat Open tabbladen aan staan. Tabbladen die je in Dejavu opent, blijven op dit apparaat, en Firefox toont ze onder je andere apparaten.</string>
+    <string name="dejavu_sync_firefox_hint">Open in Firefox op je computer Instellingen, dan Synchronisatie, en laat Open tabbladen aan staan. Tabbladen die je in de werkruimte van een computer opent, openen ook in Firefox op die computer. Tabbladen in je andere werkruimtes blijven op dit apparaat, en Firefox toont ze onder je andere apparaten.</string>
     <string name="dejavu_sync_normal_tabs_firefox_summary">Toont ook de tabbladen die niet vastgemaakt zijn en niet in een tabbladgroep zitten, niet alleen vastgemaakte tabbladen en tabbladgroepen.</string>
     <string name="dejavu_sync_source">Synchroniseren met</string>
     <string name="dejavu_sync_source_none">Nog niet gekozen</string>

@@ -285,7 +285,7 @@
     <string name="dejavu_feature_split_view">o luka awen e nasin lipu tawa open e ona lon lukin tu</string>
     <string name="dejavu_sync_choose_about">o sama e kulupu poki sina kepeken ilo Firefox anu ilo Zen lon ilo sona sina. ni li kepeken nimi Mozilla pi sina kepeken tan sama e sona Firefox.</string>
     <string name="dejavu_sync_firefox_about">poki open pi ilo Firefox lon ilo sona sina wan wan li lon kulupu poki pi ona taso, li sin lon tenpo ale. ona li kepeken nimi Mozilla pi sina kepeken tan sama e sona Firefox.</string>
-    <string name="dejavu_sync_firefox_hint">lon ilo Firefox lon ilo sona sina, o open e nasin ilo, la o open e sama, la o lukin e ni: poki open li ken. poki pi open sina lon Dejavu li awen lon ilo ni. ilo Firefox li pana lukin e ona lon lipu pi ilo ante sina.</string>
+    <string name="dejavu_sync_firefox_hint">lon ilo Firefox lon ilo sona sina, o open e nasin ilo, la o open e sama, la o lukin e ni: poki open li ken. poki pi open sina lon kulupu poki pi ilo sona li open kin lon ilo Firefox lon ilo sona ni. poki pi kulupu poki ante sina li awen lon ilo ni. ilo Firefox li pana lukin e ona lon lipu pi ilo ante sina.</string>
     <string name="dejavu_sync_normal_tabs_firefox_summary">ona li pana lukin e poki ante kin (ona li awen ala, li lon ala kulupu poki lili), taso ala poki awen en kulupu poki lili taso.</string>
     <string name="dejavu_sync_source">sama kepeken</string>
     <string name="dejavu_sync_source_none">wile ala lon tenpo ni</string>

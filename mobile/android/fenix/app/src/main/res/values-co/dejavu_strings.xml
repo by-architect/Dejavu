@@ -292,7 +292,7 @@
     <string name="dejavu_feature_split_view">Tenite appughjatu un liame per apre lu in vista spartuta</string>
     <string name="dejavu_sync_choose_about">Sincrunizate i vostri spazii di travagliu cù Firefox o Zen Browser nant\'à u vostru urdinatore, per mezu di u contu Mozilla cù u quale sincrunizate i dati di Firefox.</string>
     <string name="dejavu_sync_firefox_about">Affissa l\'unghjette aperte di Firefox nant\'à ognunu di i vostri urdinatori cum\'è un spaziu di travagliu, è e mantene à ghjornu. Adopra u contu Mozilla cù u quale sincrunizate i dati di Firefox.</string>
-    <string name="dejavu_sync_firefox_hint">In Firefox nant\'à u vostru urdinatore, aprite Parametri, dopu Sincrunizazione, è lasciate attivata l\'opzione «Apre l\'unghjette». L\'unghjette ch\'è vo aprite in Dejavu fermanu nant\'à st\'apparecchiu, è Firefox l\'affissa sottu à i vostri altri apparecchi.</string>
+    <string name="dejavu_sync_firefox_hint">In Firefox nant\'à u vostru urdinatore, aprite Parametri, dopu Sincrunizazione, è lasciate attivata l\'opzione «Apre l\'unghjette». L\'unghjette ch\'è vo aprite in u spaziu di travagliu d\'un urdinatore si apronu ancu culà in Firefox. L\'unghjette di i vostri altri spazii di travagliu fermanu nant\'à st\'apparecchiu, è Firefox l\'affissa sottu à i vostri altri apparecchi.</string>
     <string name="dejavu_sync_normal_tabs_firefox_summary">Affissa ancu l\'unghjette chì ùn sò nè fissate nè in un gruppu d\'unghjette, micca solu l\'unghjette fissate è i gruppi d\'unghjette.</string>
     <string name="dejavu_sync_source">Sincrunizà cù</string>
     <string name="dejavu_sync_source_none">Ùn hè ancu statu sceltu</string>

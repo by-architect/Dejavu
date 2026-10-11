@@ -292,7 +292,7 @@
     <string name="dejavu_feature_split_view">Teni premutu un lijami pi grapìrilu nta vista spartuta</string>
     <string name="dejavu_sync_choose_about">Sincronizza i spazzii di travagghiu tò cu Firefox o Zen Browser supra u computer tò, attraversu u cuntu Mozilla cu u quali sincronizzi i dati di Firefox.</string>
     <string name="dejavu_sync_firefox_about">Mustra i schedi aperti di Firefox supra ognunu dî computer tò comu un spazziu di travagghiu, e i teni agghiurnati. Usa u cuntu Mozilla cu u quali sincronizzi i dati di Firefox.</string>
-    <string name="dejavu_sync_firefox_hint">Nta Firefox supra u computer tò, grapi Mpustazzioni, doppu Sincronizzazzioni, e teni attivi i Schedi graputi. I schedi ca grapi nta Dejavu restanu supra stu dispositivu, e Firefox i mustra sutta ê autri dispositivi tò.</string>
+    <string name="dejavu_sync_firefox_hint">Nta Firefox supra u computer tò, grapi Mpustazzioni, doppu Sincronizzazzioni, e teni attivi i Schedi graputi. I schedi ca grapi nnô spazziu di travagghiu di un computer si grapunu macari ddà nta Firefox. I schedi nnê autri spazzii di travagghiu tò restanu supra stu dispositivu, e Firefox i mustra sutta ê autri dispositivi tò.</string>
     <string name="dejavu_sync_normal_tabs_firefox_summary">Mustra macari i schedi ca nun sunnu nè ficcati nè nta un gruppu di schedi, non sulu i schedi ficcati e i gruppi di schedi.</string>
     <string name="dejavu_sync_source">Sincronizza cu</string>
     <string name="dejavu_sync_source_none">Ancora non scigghiutu</string>

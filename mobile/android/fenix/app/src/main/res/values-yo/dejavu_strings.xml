@@ -285,7 +285,7 @@
     <string name="dejavu_feature_split_view">Tẹ líǹkì mọ́ra láti ṣí i nínú split view</string>
     <string name="dejavu_sync_choose_about">Ṣe sync àwọn ibi-iṣẹ́ rẹ pẹ̀lú Firefox tàbí Zen Browser lórí kọ̀mpútà rẹ, nípasẹ̀ àkáǹtì Mozilla tí ìwọ fi ń ṣe sync dátà Firefox rẹ.</string>
     <string name="dejavu_sync_firefox_about">Ó máa ń fi àwọn táàbù tí ó ṣí nínú Firefox lórí kọ̀mpútà rẹ kọ̀ọ̀kan hàn gẹ́gẹ́ bí ibi-iṣẹ́ kan, ó sì máa ń ṣe update wọn. Ó ń lo àkáǹtì Mozilla tí ìwọ fi ń ṣe sync dátà Firefox rẹ.</string>
-    <string name="dejavu_sync_firefox_hint">Nínú Firefox lórí kọ̀mpútà rẹ, ṣí Settings, lẹ́yìn náà Sync, kí o sì fi Open tabs sílẹ̀ ní títàn. Àwọn táàbù tí o bá ṣí nínú Dejavu yóò wà lórí ẹ̀rọ yìí, Firefox yóò sì to wọ́n sí abẹ́ àwọn ẹ̀rọ rẹ mìíràn.</string>
+    <string name="dejavu_sync_firefox_hint">Nínú Firefox lórí kọ̀mpútà rẹ, ṣí Settings, lẹ́yìn náà Sync, kí o sì fi Open tabs sílẹ̀ ní títàn. Àwọn táàbù tí o bá ṣí nínú ibi-iṣẹ́ kọ̀mpútà kan yóò tún ṣí nínú Firefox lórí kọ̀mpútà náà. Àwọn táàbù tí ó wà nínú àwọn ibi-iṣẹ́ rẹ mìíràn yóò wà lórí ẹ̀rọ yìí, Firefox yóò sì to wọ́n sí abẹ́ àwọn ẹ̀rọ rẹ mìíràn.</string>
     <string name="dejavu_sync_normal_tabs_firefox_summary">Ó tún ń fi àwọn táàbù tí a kò fi Pin sí, tí kò sì sí nínú ẹgbẹ́ táàbù hàn, kì í ṣe àwọn táàbù tí a fi Pin sí àti ẹgbẹ́ táàbù nìkan.</string>
     <string name="dejavu_sync_source">Sync pẹ̀lú</string>
     <string name="dejavu_sync_source_none">A kò tí ì yan</string>

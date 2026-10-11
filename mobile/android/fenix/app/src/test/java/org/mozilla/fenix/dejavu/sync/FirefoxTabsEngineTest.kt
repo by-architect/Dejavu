@@ -27,6 +27,8 @@ import org.mozilla.fenix.dejavu.sync.FirefoxFixtures.tabsRecord
 import org.mozilla.fenix.dejavu.workspaces.WorkspaceState
 import org.robolectric.RobolectricTestRunner
 
+private const val OPENED = "https://opened.example/"
+
 @RunWith(RobolectricTestRunner::class)
 class FirefoxTabsEngineTest {
     @get:Rule
@@ -57,6 +59,16 @@ class FirefoxTabsEngineTest {
     }
 
     private fun newEngine() = FirefoxTabsEngine(server, FirefoxSyncStore(File(folder.root, "firefox.json")), local)
+
+    /** Opens tab [id] on [url] here, in the workspace of the laptop. */
+    private fun openHere(id: String, url: String, createdAt: Long = System.currentTimeMillis()) {
+        local.tabs = local.tabs!! + LocalTab(id, url, "Opened here", null, awake = true, createdAt = createdAt)
+        local.state = local.state.copy(assignments = local.state.assignments + (id to laptopWorkspace))
+    }
+
+    /** The laptop's tabs, with a tab on [url] after the others. */
+    private fun laptopTabsWith(url: String) =
+        FirefoxFixtures.laptopTabs().also { it.getJSONArray("tabs").put(tab(url, index = 4)) }
 
     @Test
     fun `only Firefox on computers is shown, and nothing is uploaded`() = runTest {
@@ -138,6 +150,90 @@ class FirefoxTabsEngineTest {
         assertTrue(local.closeCommands.isEmpty())
         assertEquals(1, local.state.pins.count { it.url == MAIL })
         assertEquals(listOf(FirefoxFixtures.NEWS), local.tabs!!.map { it.url })
+    }
+
+    @Test
+    fun `a tab opened here in the workspace of a computer opens there and becomes its tab once it shows it`() = runTest {
+        engine.sync(auth, connected = null)
+        openHere("opened-here", OPENED)
+        assertTrue(engine.hasLocalChanges())
+
+        engine.sync(auth, connected = null)
+        assertEquals(listOf(LAPTOP_DEVICE to OPENED), local.sentTabs)
+        server.put("tabs", LAPTOP, laptopTabsWith(OPENED))
+        engine.sync(auth, connected = null)
+
+        assertEquals(listOf("opened-here"), local.tabs!!.filter { it.url == OPENED }.map { it.id })
+        assertEquals(1, local.sentTabs.size)
+        local.tabs = local.tabs!!.filterNot { it.id == "opened-here" }
+        engine.sync(auth, connected = null)
+        assertEquals(listOf(LAPTOP_DEVICE to listOf(OPENED)), local.closeCommands)
+    }
+
+    @Test
+    fun `tabs opened before Dejavu sent tabs to computers stay here`() = runTest {
+        openHere("opened-before", OPENED, createdAt = 1L)
+
+        engine.sync(auth, connected = null)
+        engine.sync(auth, connected = null)
+
+        assertTrue(local.sentTabs.isEmpty())
+        assertFalse(engine.hasLocalChanges())
+    }
+
+    @Test
+    fun `a tab closed here before its computer showed it is closed there too`() = runTest {
+        engine.sync(auth, connected = null)
+        openHere("opened-here", OPENED)
+        engine.sync(auth, connected = null)
+        local.tabs = local.tabs!!.filterNot { it.id == "opened-here" }
+        assertTrue(engine.hasLocalChanges())
+
+        engine.sync(auth, connected = null)
+
+        assertEquals(listOf(LAPTOP_DEVICE to listOf(OPENED)), local.closeCommands)
+        assertFalse(engine.hasLocalChanges())
+    }
+
+    @Test
+    fun `a tab that could not be sent is sent at the next sync`() = runTest {
+        engine.sync(auth, connected = null)
+        openHere("opened-here", OPENED)
+        local.canSend = false
+        engine.sync(auth, connected = null)
+        assertTrue(local.sentTabs.isEmpty())
+
+        local.canSend = true
+        engine.sync(auth, connected = null)
+
+        assertEquals(listOf(LAPTOP_DEVICE to OPENED), local.sentTabs)
+    }
+
+    @Test
+    fun `a sent tab is found again after its page redirected`() = runTest {
+        engine.sync(auth, connected = null)
+        openHere("opened-here", "http://opened.example/")
+        engine.sync(auth, connected = null)
+        local.tabs = local.tabs!!.map { if (it.id == "opened-here") it.copy(url = OPENED) else it }
+        server.put("tabs", LAPTOP, laptopTabsWith(OPENED))
+
+        engine.sync(auth, connected = null)
+
+        assertEquals(listOf("opened-here"), local.tabs!!.filter { it.url == OPENED }.map { it.id })
+        assertEquals(listOf(LAPTOP_DEVICE to "http://opened.example/"), local.sentTabs)
+    }
+
+    @Test
+    fun `the computers' tabs and the ones opened in their workspaces since then are not this device's`() = runTest {
+        openHere("opened-before", "https://before.example/", createdAt = 1L)
+        engine.sync(auth, connected = null)
+        openHere("opened-after", OPENED)
+        val tabs = engine.computerTabs()
+        val news = local.tabs!!.first { it.url == FirefoxFixtures.NEWS }
+
+        assertTrue(tabs.has(local.state, news.id, news.createdAt))
+        assertTrue(tabs.has(local.state, "opened-after", System.currentTimeMillis()))
+        assertFalse(tabs.has(local.state, "opened-before", 1L))
     }
 
     @Test
@@ -223,5 +319,16 @@ internal class FakeFirefoxLocal(
 
     override suspend fun closeRemoteTabs(deviceId: String, urls: List<String>) {
         closeCommands += deviceId to urls
+    }
+
+    /** The tabs sent, by device. */
+    val sentTabs = mutableListOf<Pair<String, String>>()
+
+    /** Whether sending a tab works, as it does not without the network. */
+    var canSend = true
+
+    override suspend fun sendTab(deviceId: String, url: String, title: String): Boolean {
+        if (canSend) sentTabs += deviceId to url
+        return canSend
     }
 }
