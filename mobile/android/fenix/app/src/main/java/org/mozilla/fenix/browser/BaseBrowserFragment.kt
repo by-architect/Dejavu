@@ -212,6 +212,7 @@ import org.mozilla.fenix.databinding.FragmentBrowserBinding
 import org.mozilla.fenix.dejavu.browser.DejavuToolbar
 import org.mozilla.fenix.dejavu.browser.handleDejavuBackPressed
 import org.mozilla.fenix.dejavu.browser.installDejavuSplitView
+import org.mozilla.fenix.dejavu.browser.restoreDejavuRotationAfterFullscreen
 import org.mozilla.fenix.downloads.DownloadService
 import org.mozilla.fenix.downloads.RenameAndChangeLocationDialogFragment
 import org.mozilla.fenix.downloads.dialog.createDownloadAppDialog
@@ -2330,6 +2331,7 @@ abstract class BaseBrowserFragment :
                 }
             }
             collapseBrowserView()
+            restoreDejavuRotationAfterFullscreen()
         }
 
         binding.swipeRefresh.isEnabled = shouldPullToRefreshBeEnabled(inFullScreen)

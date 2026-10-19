@@ -5,9 +5,11 @@
 package org.mozilla.fenix.dejavu.browser
 
 import android.content.Context
+import android.content.pm.ActivityInfo
 import androidx.appcompat.content.res.AppCompatResources
 import androidx.compose.material3.ColorScheme
 import androidx.fragment.app.Fragment
+import androidx.lifecycle.Lifecycle
 import androidx.navigation.NavController
 import androidx.navigation.fragment.findNavController
 import mozilla.components.browser.state.selector.findTab
@@ -193,6 +195,16 @@ fun Fragment.handleDejavuBackPressed(customTabSessionId: String?): Boolean {
 
     closeShownTab(requireComponents, findNavController(), tab)
     return true
+}
+
+/**
+ * Gives the screen its usual rotation back when a page leaves fullscreen while this browser screen is stopped, as when
+ * the app goes to the background during a sideways video. The features that turn the screen back stop with the browser
+ * screen and miss it, so the app could stay sideways (issue #185).
+ */
+fun Fragment.restoreDejavuRotationAfterFullscreen() {
+    if (lifecycle.currentState.isAtLeast(Lifecycle.State.STARTED)) return
+    activity?.requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_UNSPECIFIED
 }
 
 /** Closes [tab], the shown one, then shows the tab it was opened from, or the home screen when that one is gone too. */
