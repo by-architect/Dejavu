@@ -37,6 +37,7 @@ import androidx.navigation.NavController
 import mozilla.components.browser.state.selector.normalTabs
 import mozilla.components.browser.state.selector.selectedTab
 import mozilla.components.browser.state.state.TabSessionState
+import mozilla.components.feature.addons.Addon
 import mozilla.components.lib.state.ext.observeAsComposableState
 import mozilla.components.ui.icons.R as iconsR
 import org.mozilla.fenix.R
@@ -45,6 +46,7 @@ import org.mozilla.fenix.components.components
 import org.mozilla.fenix.components.menu.MenuAccessPoint
 import org.mozilla.fenix.components.menu.store.MenuAction
 import org.mozilla.fenix.components.menu.store.MenuStore
+import org.mozilla.fenix.components.menu.store.WebExtensionMenuItem
 import org.mozilla.fenix.dejavu.actions.TabAction
 import org.mozilla.fenix.dejavu.settings.DejavuSettings
 import org.mozilla.fenix.dejavu.workspaces.WorkspaceRepository
@@ -139,6 +141,7 @@ fun DejavuMenuContent(
 
     MoreMenuSheet(fromTop = fromTop, onDismiss = onDismiss) {
         if (accessPoint == MenuAccessPoint.Home) {
+            val hasTab by fenix.core.store.observeAsComposableState { it.selectedTab != null }
             Row(
                 verticalAlignment = Alignment.CenterVertically,
                 modifier = Modifier.fillMaxWidth().padding(horizontal = 12.dp, vertical = 8.dp),
@@ -155,7 +158,15 @@ fun DejavuMenuContent(
                     color = MaterialTheme.colorScheme.onSurface,
                 )
             }
-            ExtensionList(extensions = extensions, onManage = manageExtensions)
+            ExtensionList(
+                extensions =
+                    if (hasTab) {
+                        extensions
+                    } else {
+                        extensions.openingAddonPages(menuState.extensionMenuState.availableAddons, menuStore)
+                    },
+                onManage = manageExtensions,
+            )
             return@MoreMenuSheet
         }
 
@@ -217,6 +228,21 @@ fun DejavuMenuContent(
             onEdit = onEdit.takeUnless { editHidden },
         )
     }
+}
+
+/**
+ * The buttons of the extensions while no tab is open. They have no page to work on, so each opens the extension's page
+ * among the installed [addons] instead, or the list of extensions while those are still loading.
+ */
+internal fun List<WebExtensionMenuItem>.openingAddonPages(addons: List<Addon>, menuStore: MenuStore) = map { item ->
+    item.copy(
+        onClick = {
+            val addon = addons.firstOrNull { it.id == item.id }
+            menuStore.dispatch(
+                addon?.let { MenuAction.Navigate.InstalledAddonDetails(it) } ?: MenuAction.Navigate.ManageExtensions
+            )
+        }
+    )
 }
 
 /** What the "More" menu and the actions bar show about [tab]. */

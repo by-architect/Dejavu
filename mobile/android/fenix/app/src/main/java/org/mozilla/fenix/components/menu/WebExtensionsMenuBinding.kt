@@ -9,6 +9,7 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.combine
 import kotlinx.coroutines.flow.distinctUntilChangedBy
+import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.flow.mapNotNull
 import mozilla.components.browser.state.selector.findCustomTabOrSelectedTab
 import mozilla.components.browser.state.state.BrowserState
@@ -57,9 +58,10 @@ class WebExtensionsMenuBinding(
         // Session level flows
         val sessionFlow =
             flow
-                .mapNotNull { state -> state.findCustomTabOrSelectedTab(customTabId) }
+                // Dejavu: with no tab open, as on the home screen of a fresh install, the extensions are still listed.
+                .map { state -> state.findCustomTabOrSelectedTab(customTabId) }
                 .distinctUntilChangedBy {
-                    it.extensionState
+                    it?.extensionState
                 }
 
         // Applying the flows together
@@ -74,7 +76,8 @@ class WebExtensionsMenuBinding(
                 val eligibleExtensions =
                     webExtensionsFlowState.browserState.extensions.values
                         .filterNot {
-                            !it.allowedInPrivateBrowsing && webExtensionsFlowState.sessionState.content.private
+                            !it.allowedInPrivateBrowsing &&
+                                webExtensionsFlowState.sessionState?.content?.private == true
                         }
                         .sortedBy { it.name }
 
@@ -115,9 +118,9 @@ class WebExtensionsMenuBinding(
 
         val tabAction =
             if (isPageAction) {
-                webExtensionsFlowState.sessionState.extensionState[extension.id]?.pageAction
+                webExtensionsFlowState.sessionState?.extensionState?.get(extension.id)?.pageAction
             } else {
-                webExtensionsFlowState.sessionState.extensionState[extension.id]?.browserAction
+                webExtensionsFlowState.sessionState?.extensionState?.get(extension.id)?.browserAction
             }
 
         // Apply tab-specific override of browser/page action
@@ -153,10 +156,10 @@ class WebExtensionsMenuBinding(
 /**
  * Convenience method to create a named pair for the web extensions flow.
  *
- * @property sessionState The session or tab state.
+ * @property sessionState The session or tab state, or null when no tab is open.
  * @property browserState The browser or global state.
  */
 private data class WebExtensionsFlowState(
-    val sessionState: SessionState,
+    val sessionState: SessionState?,
     val browserState: BrowserState,
 )
