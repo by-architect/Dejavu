@@ -419,4 +419,7 @@
     <string name="dejavu_protection_links">Quitar el rastreo de los enlaces</string>
     <string name="dejavu_protection_hint">Una protección activada te mantiene más seguro. Cada una dice de qué te protege y qué puede dejar de funcionar por ella.</string>
     <string name="dejavu_sync_zen_hint_unpinned">En Zen, abre Configuración, luego Sincronización, y activa la sincronización de la barra lateral.</string>
+    <string name="dejavu_settings_screen">Pantalla</string>
+    <string name="dejavu_settings_hide_system_bars">Ocultar las barras de estado y de navegación</string>
+    <string name="dejavu_settings_hide_system_bars_summary">Mientras se muestra una página. Desliza desde el borde superior o inferior para verlas un momento.</string>
 </resources>

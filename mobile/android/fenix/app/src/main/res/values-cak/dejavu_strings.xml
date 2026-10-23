@@ -419,4 +419,7 @@
     <string name="dejavu_protection_links">Tiyuj ri ojqanem pa taq ximonel</string>
     <string name="dejavu_protection_hint">Jun chajinïk tzijon yatruchajij. Chikijujunal nub\'ij chuwäch achike yatruchajij chuqa\' achike rik\'in jub\'a\' man xtisamäj ta ruma rija\'.</string>
     <string name="dejavu_sync_zen_hint_unpinned">Pa Zen, tajäq Nuk\'ulem, k\'a ri\' Junamirisanik, k\'a ri\' tatzija\' ri junamirisanik richin sidebar.</string>
+    <string name="dejavu_settings_screen">Ruwäch</string>
+    <string name="dejavu_settings_hide_system_bars">Kewewäx ri kikajtz\'ik rub\'anikil chuqa\' rub\'eyal okem</string>
+    <string name="dejavu_settings_hide_system_bars_summary">Toq niwachin jun ruxaq. Tajurulaj pa ruchi\' ajsik o ikim richin ye\'atz\'ët jun ka\'i\' ramaj.</string>
 </resources>

@@ -412,4 +412,7 @@
     <string name="dejavu_protection_links">ລຶບການຕິດຕາມອອກຈາກລິ້ງ</string>
     <string name="dejavu_protection_hint">ການປ້ອງກັນທີ່ເປີດຢູ່ຊ່ວຍໃຫ້ທ່ານປອດໄພຂຶ້ນ. ແຕ່ລະອັນບອກວ່າມັນປ້ອງກັນຫຍັງ ແລະ ອາດມີຫຍັງທີ່ຢຸດເຮັດວຽກຍ້ອນມັນ.</string>
     <string name="dejavu_sync_zen_hint_unpinned">ໃນ Zen, ເປີດການຕັ້ງຄ່າ, ແລ້ວໄປທີ່ Sync, ແລະ ເປີດການຊິງຄ໌ແຖບຂ້າງ.</string>
+    <string name="dejavu_settings_screen">ໜ້າຈໍ</string>
+    <string name="dejavu_settings_hide_system_bars">ເຊື່ອງແຖບສະຖານະ ແລະ ແຖບນຳທາງ</string>
+    <string name="dejavu_settings_hide_system_bars_summary">ໃນຂະນະທີ່ສະແດງໜ້າເວັບ. ປັດເຂົ້າຈາກຂອບເທິງ ຫຼື ລຸ່ມ ເພື່ອເບິ່ງພວກມັນຊົ່ວຄາວ.</string>
 </resources>

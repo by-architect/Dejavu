@@ -433,4 +433,7 @@
     <string name="dejavu_protection_links">Thoir an tracadh air falbh o cheanglaichean</string>
     <string name="dejavu_protection_hint">Cumaidh dìon a tha air nas sàbhailte thu. Innsidh gach fear dè on dìon e thu agus dè dh\'fhaodadh stad ag obair air a sgàth.</string>
     <string name="dejavu_sync_zen_hint_unpinned">Ann an Zen, fosgail Roghainnean, an uairsin Sioncronachadh, agus cuir air sioncronachadh a\' bhàr-thaoibh.</string>
+    <string name="dejavu_settings_screen">Sgrìn</string>
+    <string name="dejavu_settings_hide_system_bars">Falaich bàraichean na staid is na seòladaireachd</string>
+    <string name="dejavu_settings_hide_system_bars_summary">Fhad \'s a tha duilleag ga shealltainn. Grad-shlaighd a-steach on oir gu h-àrd no gu h-ìosal airson am faicinn greiseag.</string>
 </resources>

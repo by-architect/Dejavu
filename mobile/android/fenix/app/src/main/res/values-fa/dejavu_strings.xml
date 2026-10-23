@@ -419,4 +419,7 @@
     <string name="dejavu_protection_links">حذف ردیابی از پیوندها</string>
     <string name="dejavu_protection_hint">محافظتی که روشن است شما را امن‌تر نگه می‌دارد. هر کدام می‌گوید شما را در برابر چه چیزی محافظت می‌کند و چه چیزی ممکن است به خاطر آن از کار بیفتد.</string>
     <string name="dejavu_sync_zen_hint_unpinned">در Zen، تنظیمات و سپس همگام‌سازی را باز کنید و همگام‌سازی نوارکناری را روشن کنید.</string>
+    <string name="dejavu_settings_screen">صفحه‌نمایش</string>
+    <string name="dejavu_settings_hide_system_bars">پنهان کردن نوار وضعیت و نوار پیمایش</string>
+    <string name="dejavu_settings_hide_system_bars_summary">هنگام نمایش یک صفحه. برای دیدن لحظه‌ای آن‌ها، از لبهٔ بالا یا پایین بکشید.</string>
 </resources>

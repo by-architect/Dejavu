@@ -419,4 +419,7 @@
     <string name="dejavu_protection_links">Levar lo seguiment dels ligams</string>
     <string name="dejavu_protection_hint">Una proteccion activada vos garda mai en seguretat. Cada una ditz de qué vos protegís e çò que pòt arrestar de foncionar a causa d\'ela.</string>
     <string name="dejavu_sync_zen_hint_unpinned">Dins Zen, dobrissètz Paramètres, puèi Sincronizacion, e activatz la sincronizacion de la barra laterala.</string>
+    <string name="dejavu_settings_screen">Ecran</string>
+    <string name="dejavu_settings_hide_system_bars">Amagar las barras d\'estat e de navegacion</string>
+    <string name="dejavu_settings_hide_system_bars_summary">Pendent l\'afichatge d\'una pagina. Fasètz lisar dempuèi lo bòrd superior o inferior per las veire un moment.</string>
 </resources>

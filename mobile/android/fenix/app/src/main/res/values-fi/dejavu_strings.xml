@@ -419,4 +419,7 @@
     <string name="dejavu_protection_links">Poista seuranta linkeistä</string>
     <string name="dejavu_protection_hint">Käytössä oleva suojaus pitää sinut turvallisempana. Jokainen kertoo, miltä se suojaa ja mikä voi lakata toimimasta sen takia.</string>
     <string name="dejavu_sync_zen_hint_unpinned">Avaa Zenissä Asetukset, sitten Synkronointi, ja ota sivupalkin synkronointi käyttöön.</string>
+    <string name="dejavu_settings_screen">Näyttö</string>
+    <string name="dejavu_settings_hide_system_bars">Piilota tila- ja navigointipalkki</string>
+    <string name="dejavu_settings_hide_system_bars_summary">Kun sivu on näkyvissä. Pyyhkäise ylä- tai alareunasta nähdäksesi ne hetkeksi.</string>
 </resources>

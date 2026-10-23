@@ -447,4 +447,7 @@
     <string name="dejavu_protection_links">أزِل التعقّب من الروابط</string>
     <string name="dejavu_protection_hint">الحماية المفعّلة تُبقيك أكثر أمانًا. كل حماية تقول ممّ تحميك وما الذي قد يتوقف عن العمل بسببها.</string>
     <string name="dejavu_sync_zen_hint_unpinned">في Zen، افتح الإعدادات ثم المزامنة، وفعّل مزامنة الشريط الجانبي.</string>
+    <string name="dejavu_settings_screen">الشاشة</string>
+    <string name="dejavu_settings_hide_system_bars">إخفاء شريطي الحالة والتنقل</string>
+    <string name="dejavu_settings_hide_system_bars_summary">أثناء عرض صفحة. اسحب من الحافة العلوية أو السفلية لرؤيتهما لحظة.</string>
 </resources>

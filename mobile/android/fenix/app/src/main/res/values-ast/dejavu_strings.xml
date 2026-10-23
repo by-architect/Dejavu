@@ -419,4 +419,7 @@
     <string name="dejavu_protection_links">Quitar el rastrexu de los enllaces</string>
     <string name="dejavu_protection_hint">Una proteición activada caltiénte más seguru. Cada una diz de qué te protexe y qué pue dexar de funcionar por ella.</string>
     <string name="dejavu_sync_zen_hint_unpinned">En Zen, abri Configuración, dempués Sincronización, y activa la sincronización de la barra llateral.</string>
+    <string name="dejavu_settings_screen">Pantalla</string>
+    <string name="dejavu_settings_hide_system_bars">Anubrir les barres d\'estáu y de navegación</string>
+    <string name="dejavu_settings_hide_system_bars_summary">Mentanto s\'amuesa una páxina. Esliza dende\'l berbesu cimeru o baxeru pa veles un momentu.</string>
 </resources>

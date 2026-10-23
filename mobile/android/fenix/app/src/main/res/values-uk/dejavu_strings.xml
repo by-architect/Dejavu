@@ -433,4 +433,7 @@
     <string name="dejavu_protection_links">Вилучати стеження з посилань</string>
     <string name="dejavu_protection_hint">Увімкнений захист тримає вас у більшій безпеці. Кожен пояснює, від чого він захищає і що через нього може перестати працювати.</string>
     <string name="dejavu_sync_zen_hint_unpinned">У Zen відкрийте «Налаштування», потім «Синхронізацію», і увімкніть синхронізацію бічної панелі.</string>
+    <string name="dejavu_settings_screen">Екран</string>
+    <string name="dejavu_settings_hide_system_bars">Приховувати рядок стану й панель навігації</string>
+    <string name="dejavu_settings_hide_system_bars_summary">Поки показано сторінку. Проведіть від верхнього або нижнього краю, щоб ненадовго їх побачити.</string>
 </resources>

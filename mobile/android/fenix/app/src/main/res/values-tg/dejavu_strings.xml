@@ -419,4 +419,7 @@
     <string name="dejavu_protection_links">Тоза кардани пайгирӣ аз пайвандҳо</string>
     <string name="dejavu_protection_hint">Муҳофизати фаъол шуморо бехатартар нигоҳ медорад. Ҳар кадоме мегӯяд, ки аз чӣ муҳофизат мекунад ва аз сабаби он чӣ метавонад кор накунад.</string>
     <string name="dejavu_sync_zen_hint_unpinned">Дар Zen «Танзимот»-ро кушоед, сипас «Ҳамоҳангсозӣ»-ро ва ҳамоҳангсозии сутуни паҳлӯро фаъол кунед.</string>
+    <string name="dejavu_settings_screen">Экран</string>
+    <string name="dejavu_settings_hide_system_bars">Пинҳон кардани навори ҳолат ва навори паймоиш</string>
+    <string name="dejavu_settings_hide_system_bars_summary">Ҳангоми намоиш додани саҳифа. Барои як лаҳза дидани онҳо аз канори боло ё поён ангуштро гузаронед.</string>
 </resources>

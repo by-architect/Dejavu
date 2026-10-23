@@ -433,4 +433,7 @@
     <string name="dejavu_protection_links">Slědowanje z wótkazow wótwónoźeś</string>
     <string name="dejavu_protection_hint">Zašaltowany šćit wam wěcej wěstoty dawa. Kuždy groni, pśed cym šćita a co snaź dla njogo wěcej njefunkcioněrujo.</string>
     <string name="dejavu_sync_zen_hint_unpinned">W Zen wócyni Nastajenja, pón Synchronizacija, a zapopń synchronizaciju bócnicy.</string>
+    <string name="dejavu_settings_screen">Wobrazowka</string>
+    <string name="dejavu_settings_hide_system_bars">Lejstwy statusa a nawigacije schowaś</string>
+    <string name="dejavu_settings_hide_system_bars_summary">Mjaztym až se bok pokazujo. Póśěgniśo wót górnego abo dolnego kšoma, aby je na wokognuśe wiźeł.</string>
 </resources>

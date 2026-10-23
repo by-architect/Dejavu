@@ -13,7 +13,6 @@ import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
-import androidx.compose.foundation.layout.navigationBarsPadding
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.shape.CircleShape
@@ -58,6 +57,7 @@ import org.mozilla.fenix.dejavu.actions.TabAction
 import org.mozilla.fenix.dejavu.browser.DejavuToolbar
 import org.mozilla.fenix.dejavu.browser.SplitScreen
 import org.mozilla.fenix.dejavu.browser.SplitSpace
+import org.mozilla.fenix.dejavu.browser.navigationBarRoomPadding
 import org.mozilla.fenix.dejavu.browser.openDejavuMenu
 import org.mozilla.fenix.dejavu.browser.shownWorkspaceTheme
 import org.mozilla.fenix.dejavu.browser.tabOrShown
@@ -107,8 +107,8 @@ fun DejavuActionsBar(onEvent: (BrowserToolbarEvent) -> Unit, tabId: String? = nu
 
     Box(
         modifier = Modifier
-            // Pages run behind the navigation bar, so the bar keeps above it.
-            .navigationBarsPadding()
+            // Pages run behind the navigation bar, so the bar keeps above it, also while it is hidden.
+            .navigationBarRoomPadding()
             .padding(start = BAR_SIDE_MARGIN, end = BAR_SIDE_MARGIN, bottom = ACTIONS_BAR_BOTTOM_MARGIN)
             .fillMaxWidth()
             .height(BAR_HEIGHT)

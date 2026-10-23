@@ -419,4 +419,7 @@
     <string name="dejavu_protection_links">लिंकमधून ट्रॅकिंग काढा</string>
     <string name="dejavu_protection_hint">सुरू असलेले संरक्षण तुम्हाला अधिक सुरक्षित ठेवते. प्रत्येक संरक्षण ते कशापासून वाचवते आणि त्यामुळे काय काम करणे थांबवू शकते, हे सांगते.</string>
     <string name="dejavu_sync_zen_hint_unpinned">Zen मध्ये, सेटिंग उघडा, नंतर सिंक, आणि साइडबार सिंक सुरू करा.</string>
+    <string name="dejavu_settings_screen">स्क्रीन</string>
+    <string name="dejavu_settings_hide_system_bars">स्टेटस आणि नेव्हिगेशन बार लपवा</string>
+    <string name="dejavu_settings_hide_system_bars_summary">पेज दाखवले जात असताना. त्यांना क्षणभर पाहण्यासाठी वरच्या किंवा खालच्या कडेवरून स्वाइप करा.</string>
 </resources>

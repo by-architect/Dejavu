@@ -30,9 +30,9 @@ private const val MAX_ALPHA = 255
 /**
  * Lets pages run from edge to edge, behind the status bar and the navigation bar, keeping [this] browser layout clear
  * only of system bars and display cutouts at its sides. Dejavu's bars keep themselves clear of the status bar and the
- * navigation bar. [onBarsChanged] runs once the status bar or the navigation bar changes height, as the place of the
- * page below the address bar and above the actions bar depends on them. A video shown full screen gets the whole
- * screen.
+ * navigation bar, also of the room they take while hidden over pages. [onBarsChanged] runs once that room changes, as
+ * the place of the page below the address bar and above the actions bar depends on it. A video shown full screen gets
+ * the whole screen.
  */
 fun View.padForSystemBarsAtSides(window: Window, onBarsChanged: () -> Unit) {
     var bars: Pair<Int, Int>? = null
@@ -43,8 +43,8 @@ fun View.padForSystemBarsAtSides(window: Window, onBarsChanged: () -> Unit) {
             insets.getInsets(WindowInsetsCompat.Type.systemBars() or WindowInsetsCompat.Type.displayCutout())
         }
         view.updatePadding(left = sides.left, right = sides.right)
-        val heights = insets.getInsets(WindowInsetsCompat.Type.statusBars()).top to
-            insets.getInsets(WindowInsetsCompat.Type.navigationBars()).bottom
+        val heights = insets.getInsetsIgnoringVisibility(WindowInsetsCompat.Type.statusBars()).top to
+            insets.getInsetsIgnoringVisibility(WindowInsetsCompat.Type.navigationBars()).bottom
         if (heights != bars) {
             bars = heights
             view.post(onBarsChanged)
@@ -54,11 +54,15 @@ fun View.padForSystemBarsAtSides(window: Window, onBarsChanged: () -> Unit) {
     ViewCompat.requestApplyInsets(this)
 }
 
-/** Keeps the content of [this] view, at the bottom of the browser, above the navigation bar the page runs behind. */
+/**
+ * Keeps the content of [this] view, at the bottom of the browser, above the navigation bar the page runs behind, also
+ * while it is hidden over pages.
+ */
 fun View.padForNavigationBar() {
     val ownPadding = paddingBottom
     ViewCompat.setOnApplyWindowInsetsListener(this) { view, insets ->
-        view.updatePadding(bottom = ownPadding + insets.getInsets(WindowInsetsCompat.Type.navigationBars()).bottom)
+        val bar = insets.getInsetsIgnoringVisibility(WindowInsetsCompat.Type.navigationBars()).bottom
+        view.updatePadding(bottom = ownPadding + bar)
         insets
     }
     ViewCompat.requestApplyInsets(this)
@@ -101,12 +105,24 @@ private fun scrimFade(color: Int) = GradientDrawable(
     ),
 )
 
-/** The height of the status bar over [this] view, or 0 before it is known. */
+/**
+ * The height of the status bar over [this] view, which Dejavu's bars keep below also while it is hidden over pages, or
+ * 0 before it is known.
+ */
 internal val View.statusBarHeight: Int
-    get() = ViewCompat.getRootWindowInsets(this)?.getInsets(WindowInsetsCompat.Type.statusBars())?.top ?: 0
+    get() = ViewCompat.getRootWindowInsets(this)
+        ?.getInsetsIgnoringVisibility(WindowInsetsCompat.Type.statusBars())?.top ?: 0
 
-/** The height of the navigation bar at the bottom of [this] view, or 0 before it is known. */
+/**
+ * The height of the navigation bar at the bottom of [this] view, which Dejavu's bars keep above also while it is
+ * hidden over pages, or 0 before it is known.
+ */
 internal val View.navigationBarHeight: Int
+    get() = ViewCompat.getRootWindowInsets(this)
+        ?.getInsetsIgnoringVisibility(WindowInsetsCompat.Type.navigationBars())?.bottom ?: 0
+
+/** The height of the navigation bar shown at the bottom of [this] view, or 0 while it is hidden or not known. */
+internal val View.shownNavigationBarHeight: Int
     get() = ViewCompat.getRootWindowInsets(this)?.getInsets(WindowInsetsCompat.Type.navigationBars())?.bottom ?: 0
 
 /** Whether a video or page is shown full screen, the system bars hidden over it. */

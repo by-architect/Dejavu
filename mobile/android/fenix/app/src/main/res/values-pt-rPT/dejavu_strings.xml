@@ -426,4 +426,7 @@
     <string name="dejavu_protection_links">Remover a monitorização das ligações</string>
     <string name="dejavu_protection_hint">Uma proteção ativada aumenta a sua segurança. Cada uma indica contra o que protege e o que pode deixar de funcionar por causa dela.</string>
     <string name="dejavu_sync_zen_hint_unpinned">No Zen, abre Definições e depois Sincronização, e ativa a sincronização da barra lateral.</string>
+    <string name="dejavu_settings_screen">Ecrã</string>
+    <string name="dejavu_settings_hide_system_bars">Ocultar as barras de estado e de navegação</string>
+    <string name="dejavu_settings_hide_system_bars_summary">Enquanto uma página é apresentada. Deslize a partir do limite superior ou inferior para as ver por um momento.</string>
 </resources>

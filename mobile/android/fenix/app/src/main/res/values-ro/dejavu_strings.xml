@@ -426,4 +426,7 @@
     <string name="dejavu_protection_links">Elimină urmărirea din linkuri</string>
     <string name="dejavu_protection_hint">O protecție activată te ține mai în siguranță. Fiecare spune de ce te apără și ce poate să nu mai funcționeze din cauza ei.</string>
     <string name="dejavu_sync_zen_hint_unpinned">În Zen, deschide Setări, apoi Sincronizare, și activează sincronizarea barei laterale.</string>
+    <string name="dejavu_settings_screen">Ecran</string>
+    <string name="dejavu_settings_hide_system_bars">Ascunde barele de stare și de navigare</string>
+    <string name="dejavu_settings_hide_system_bars_summary">Cât timp este afișată o pagină. Glisează de la marginea de sus sau de jos pentru a le vedea pentru o clipă.</string>
 </resources>

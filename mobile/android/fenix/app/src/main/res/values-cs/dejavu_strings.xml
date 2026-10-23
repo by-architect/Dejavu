@@ -433,4 +433,7 @@
     <string name="dejavu_protection_links">Odstraňovat sledování z odkazů</string>
     <string name="dejavu_protection_hint">Zapnutá ochrana zvyšuje vaše bezpečí. U každé je uvedeno, před čím chrání a co kvůli ní nemusí fungovat.</string>
     <string name="dejavu_sync_zen_hint_unpinned">V Zen otevřete Nastavení, poté Synchronizaci, a zapněte synchronizaci bočního panelu.</string>
+    <string name="dejavu_settings_screen">Obrazovka</string>
+    <string name="dejavu_settings_hide_system_bars">Skrýt stavový a navigační panel</string>
+    <string name="dejavu_settings_hide_system_bars_summary">Při zobrazení stránky. Přejetím od horního nebo dolního okraje je na chvíli zobrazíte.</string>
 </resources>

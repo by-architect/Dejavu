@@ -419,4 +419,7 @@
     <string name="dejavu_protection_links">Αφαίρεση καταγραφής από συνδέσμους</string>
     <string name="dejavu_protection_hint">Μια προστασία που είναι ενεργή σάς κρατά πιο ασφαλείς. Η καθεμία λέει από τι σας προστατεύει και τι μπορεί να σταματήσει να λειτουργεί εξαιτίας της.</string>
     <string name="dejavu_sync_zen_hint_unpinned">Στο Zen, ανοίξτε τις Ρυθμίσεις, μετά τον Συγχρονισμό, και ενεργοποιήστε τον συγχρονισμό της πλευρικής γραμμής.</string>
+    <string name="dejavu_settings_screen">Οθόνη</string>
+    <string name="dejavu_settings_hide_system_bars">Απόκρυψη γραμμών κατάστασης και πλοήγησης</string>
+    <string name="dejavu_settings_hide_system_bars_summary">Όσο εμφανίζεται μια σελίδα. Σύρετε από το πάνω ή το κάτω άκρο για να τις δείτε για λίγο.</string>
 </resources>

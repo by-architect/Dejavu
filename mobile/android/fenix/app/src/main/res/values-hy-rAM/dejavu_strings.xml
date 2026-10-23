@@ -419,4 +419,7 @@
     <string name="dejavu_protection_links">Հեռացնել հետագծումը հղումներից</string>
     <string name="dejavu_protection_hint">Միացված պաշտպանությունը ձեզ ավելի ապահով է պահում։ Յուրաքանչյուրը նշում է, թե ինչից է պաշտպանում և ինչը կարող է դրա պատճառով դադարել աշխատել։</string>
     <string name="dejavu_sync_zen_hint_unpinned">Zen֊ում բացեք «Կարգավորումներ», ապա «Համաժամացում» և միացրեք կողային վահանակի համաժամացումը.</string>
+    <string name="dejavu_settings_screen">Էկրան</string>
+    <string name="dejavu_settings_hide_system_bars">Թաքցնել կարգավիճակի և նավարկման գոտիները</string>
+    <string name="dejavu_settings_hide_system_bars_summary">Երբ էջ է ցուցադրվում: Սահեցրեք վերևի կամ ներքևի եզրից՝ դրանք մի պահ տեսնելու համար:</string>
 </resources>

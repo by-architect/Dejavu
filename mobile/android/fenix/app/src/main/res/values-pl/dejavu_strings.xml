@@ -433,4 +433,7 @@
     <string name="dejavu_protection_links">Usuwanie śledzenia z odnośników</string>
     <string name="dejavu_protection_hint">Włączona ochrona zwiększa Twoje bezpieczeństwo. Przy każdej jest napisane, przed czym chroni i co może przez nią przestać działać.</string>
     <string name="dejavu_sync_zen_hint_unpinned">W Zen otwórz Ustawienia, potem Synchronizację, i włącz synchronizację paska bocznego.</string>
+    <string name="dejavu_settings_screen">Ekran</string>
+    <string name="dejavu_settings_hide_system_bars">Ukryj paski stanu i nawigacji</string>
+    <string name="dejavu_settings_hide_system_bars_summary">Gdy wyświetlana jest strona. Przesuń palcem od górnej lub dolnej krawędzi, aby na chwilę je zobaczyć.</string>
 </resources>

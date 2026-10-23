@@ -419,4 +419,7 @@
     <string name="dejavu_protection_links">Tracking aus Links entfernen</string>
     <string name="dejavu_protection_hint">Ein aktivierter Schutz macht dich sicherer. Bei jedem steht, wovor er schützt und was deswegen vielleicht nicht mehr funktioniert.</string>
     <string name="dejavu_sync_zen_hint_unpinned">Öffne in Zen die Einstellungen, dann Sync, und aktiviere die Synchronisierung der Seitenleiste.</string>
+    <string name="dejavu_settings_screen">Bildschirm</string>
+    <string name="dejavu_settings_hide_system_bars">Status- und Navigationsleiste ausblenden</string>
+    <string name="dejavu_settings_hide_system_bars_summary">Während eine Seite angezeigt wird. Vom oberen oder unteren Rand wischen, um sie kurz zu sehen.</string>
 </resources>

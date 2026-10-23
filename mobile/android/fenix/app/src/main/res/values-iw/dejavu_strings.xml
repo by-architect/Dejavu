@@ -426,4 +426,7 @@
     <string name="dejavu_protection_links">הסרת מעקב מקישורים</string>
     <string name="dejavu_protection_hint">הגנה פעילה שומרת עליך טוב יותר. כל הגנה מסבירה ממה היא מגנה ומה עלול להפסיק לעבוד בגללה.</string>
     <string name="dejavu_sync_zen_hint_unpinned">ב-Zen, פתחו את ההגדרות, ואז את הסנכרון, והפעילו את סנכרון סרגל הצד.</string>
+    <string name="dejavu_settings_screen">מסך</string>
+    <string name="dejavu_settings_hide_system_bars">הסתרת סרגלי המצב והניווט</string>
+    <string name="dejavu_settings_hide_system_bars_summary">בזמן הצגת דף. יש להחליק מהקצה העליון או התחתון כדי לראות אותם לרגע.</string>
 </resources>

@@ -419,4 +419,7 @@
     <string name="dejavu_protection_links">Eemaldatakse linkidest jälitamine</string>
     <string name="dejavu_protection_hint">Sisse lülitatud kaitse hoiab sind turvalisemana. Iga kaitse ütleb, mille eest see kaitseb ja mis võib selle tõttu töötamast lakata.</string>
     <string name="dejavu_sync_zen_hint_unpinned">Ava Zenis Sätted, siis Sünkroonimine, ja lülita sisse külgriba sünkroonimine.</string>
+    <string name="dejavu_settings_screen">Ekraan</string>
+    <string name="dejavu_settings_hide_system_bars">Peida olekuriba ja navigeerimisriba</string>
+    <string name="dejavu_settings_hide_system_bars_summary">Kui leht on kuvatud. Nende hetkeks nägemiseks pühkige ülemisest või alumisest servast.</string>
 </resources>

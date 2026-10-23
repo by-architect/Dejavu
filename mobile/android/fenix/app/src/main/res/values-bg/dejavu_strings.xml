@@ -419,4 +419,7 @@
     <string name="dejavu_protection_links">Премахване на проследяването от връзките</string>
     <string name="dejavu_protection_hint">Включената защита повишава вашата безопасност. Всяка казва от какво ви пази и какво може да спре да работи заради нея.</string>
     <string name="dejavu_sync_zen_hint_unpinned">В Zen отворете Настройки, после Синхронизиране, и включете синхронизирането на страничния панел.</string>
+    <string name="dejavu_settings_screen">Екран</string>
+    <string name="dejavu_settings_hide_system_bars">Скриване на лентите за състояние и навигация</string>
+    <string name="dejavu_settings_hide_system_bars_summary">Докато се показва страница. Плъзнете от горния или долния край, за да ги видите за момент.</string>
 </resources>

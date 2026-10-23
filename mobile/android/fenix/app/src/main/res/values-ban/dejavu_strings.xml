@@ -412,4 +412,7 @@
     <string name="dejavu_protection_links">Icalang pelacakan saking link</string>
     <string name="dejavu_protection_hint">Pangraksa sane urip ngawinang ragane sayan aman. Suang-suang nyinahang saking napi ipun ngaraksa miwah napi sane prasida nenten mamargi duaning ipun.</string>
     <string name="dejavu_sync_zen_hint_unpinned">Di Zen, bukak Settings, lantas Sync, lan idupang sidebar sync.</string>
+    <string name="dejavu_settings_screen">Layar</string>
+    <string name="dejavu_settings_hide_system_bars">Engkebang bar status miwah navigasi</string>
+    <string name="dejavu_settings_hide_system_bars_summary">Rikala kaca kaedengang. Gesér saking pinggir duur utawi beten anggen nyingakin ipun akejep.</string>
 </resources>

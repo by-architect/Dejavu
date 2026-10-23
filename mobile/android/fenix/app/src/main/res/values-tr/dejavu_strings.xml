@@ -439,4 +439,7 @@
     <string name="dejavu_protection_links">Bağlantılardaki takip kısımlarını kaldır</string>
     <string name="dejavu_protection_hint">Açık olan her koruma sizi daha güvende tutar. Her biri neye karşı koruduğunu ve bu yüzden nelerin çalışmayabileceğini söyler.</string>
     <string name="dejavu_sync_zen_hint_unpinned">Zen\'de Ayarlar\'ı, ardından Eşitleme\'yi açın ve kenar çubuğu eşitlemesini açın.</string>
+    <string name="dejavu_settings_screen">Ekran</string>
+    <string name="dejavu_settings_hide_system_bars">Durum ve gezinme çubuklarını gizle</string>
+    <string name="dejavu_settings_hide_system_bars_summary">Bir sayfa gösterilirken. Kısa bir süre görmek için üst veya alt kenardan kaydırın.</string>
 </resources>

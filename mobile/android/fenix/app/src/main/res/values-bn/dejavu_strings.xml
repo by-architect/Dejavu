@@ -452,4 +452,7 @@
     <string name="dejavu_protection_links">লিঙ্ক থেকে ট্র্যাকিং সরান</string>
     <string name="dejavu_protection_hint">চালু থাকা সুরক্ষা আপনাকে আরও নিরাপদ রাখে। প্রতিটি সুরক্ষা জানায় এটি কীসের থেকে রক্ষা করে এবং এর কারণে কী কাজ করা বন্ধ করতে পারে।</string>
     <string name="dejavu_sync_zen_hint_unpinned">Zen-এ সেটিংস, তারপর Sync খুলুন এবং সাইডবার Sync চালু করুন।</string>
+    <string name="dejavu_settings_screen">স্ক্রিন</string>
+    <string name="dejavu_settings_hide_system_bars">স্ট্যাটাস ও নেভিগেশন বার লুকান</string>
+    <string name="dejavu_settings_hide_system_bars_summary">যখন কোনো পেজ দেখানো হয়। এক মুহূর্তের জন্য দেখতে উপরের বা নিচের প্রান্ত থেকে সোয়াইপ করুন।</string>
 </resources>

@@ -426,4 +426,7 @@
     <string name="dejavu_protection_links">Cava via el traciamento dai łinchi</string>
     <string name="dejavu_protection_hint">Na protesion ativa ła te tien pì al sicuro. Onji una ła dixe da cosa ła te difende e cosa che podaria smétar de funsionar par via de eła.</string>
     <string name="dejavu_sync_zen_hint_unpinned">In Zen, verxi Inpostasion, dopo Sincronizasion, e ativa ła sincronizasion de ła bara łaterałe.</string>
+    <string name="dejavu_settings_screen">Schermo</string>
+    <string name="dejavu_settings_hide_system_bars">Scondi le bare de stato e de navegasion</string>
+    <string name="dejavu_settings_hide_system_bars_summary">Co se mostra na pagina. Scori dal bordo de sora o de soto par vedarle par un momento.</string>
 </resources>

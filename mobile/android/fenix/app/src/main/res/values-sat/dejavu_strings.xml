@@ -426,4 +426,7 @@
     <string name="dejavu_protection_links">ᱞᱤᱝᱠ ᱠᱚ ᱠᱷᱚᱱ ᱯᱟᱧᱡᱟ ᱚᱰᱚᱠ ᱢᱮ</string>
     <string name="dejavu_protection_hint">ᱪᱟᱹᱞᱩ ᱨᱩᱠᱷᱤᱭᱟᱹ ᱫᱚ ᱟᱢ ᱟᱨᱦᱚᱸ ᱨᱩᱠᱷᱤᱭᱟᱹ ᱛᱮ ᱫᱚᱦᱚ ᱢᱮᱭᱟ ᱾ ᱢᱤᱫ ᱢᱤᱫ ᱨᱩᱠᱷᱤᱭᱟᱹ ᱩᱫᱩᱜ ᱮᱫᱟ ᱡᱮ ᱚᱱᱟ ᱪᱮᱫ ᱴᱷᱮᱱ ᱠᱷᱚᱱ ᱨᱩᱠᱷᱤᱭᱟᱹ ᱮᱫᱟ ᱟᱨ ᱚᱱᱟ ᱠᱷᱟᱹᱛᱤᱨ ᱪᱮᱫ ᱠᱟᱹᱢᱤ ᱵᱚᱸᱫᱚᱜ ᱫᱟᱲᱮᱭᱟᱜᱼᱟ ᱾</string>
     <string name="dejavu_sync_zen_hint_unpinned">Zen ᱨᱮ, ᱥᱟᱡᱟᱣ ᱡᱷᱤᱡᱽ ᱢᱮ, ᱚᱱᱟ ᱛᱟᱭᱚᱢ ᱥᱤᱝᱠ, ᱟᱨ ᱥᱟᱭᱰᱵᱟᱨ ᱥᱤᱝᱠ ᱚᱱ ᱢᱮ ᱾</string>
+    <string name="dejavu_settings_screen">ᱥᱠᱨᱤᱱ</string>
+    <string name="dejavu_settings_hide_system_bars">ᱥᱴᱮᱴᱟᱥ ᱟᱨ ᱱᱮᱵᱷᱤᱜᱮᱥᱚᱱ ᱵᱟᱨ ᱩᱠᱩ ᱢᱮ</string>
+    <string name="dejavu_settings_hide_system_bars_summary">ᱡᱚᱠᱷᱚᱱ ᱥᱟᱦᱴᱟ ᱩᱫᱩᱜ ᱠᱟᱱᱟ᱾ ᱛᱤᱱᱟᱹᱜ ᱜᱷᱟᱹᱲᱤᱡ ᱧᱮᱞ ᱞᱟᱹᱜᱤᱫ ᱪᱮᱛᱟᱱ ᱥᱮ ᱞᱟᱛᱟᱨ ᱥᱤᱢᱟᱹ ᱠᱷᱚᱱ ᱥᱣᱟᱭᱤᱯ ᱢᱮ᱾</string>
 </resources>

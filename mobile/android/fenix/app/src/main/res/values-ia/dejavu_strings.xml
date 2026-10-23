@@ -419,4 +419,7 @@
     <string name="dejavu_protection_links">Remover le traciamento del ligamines</string>
     <string name="dejavu_protection_hint">Un protection active te mantene plus secur. Cata una dice contra que illo protege e lo que pote cessar de functionar a causa de illo.</string>
     <string name="dejavu_sync_zen_hint_unpinned">In Zen, aperi Parametros, postea Synchronisation, e activa le synchronisation del barra lateral.</string>
+    <string name="dejavu_settings_screen">Schermo</string>
+    <string name="dejavu_settings_hide_system_bars">Celar le barras de stato e de navigation</string>
+    <string name="dejavu_settings_hide_system_bars_summary">Durante que un pagina es monstrate. Glissa ab le bordo superior o inferior pro vider los un momento.</string>
 </resources>

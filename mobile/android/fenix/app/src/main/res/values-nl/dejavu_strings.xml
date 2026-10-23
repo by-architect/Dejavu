@@ -419,4 +419,7 @@
     <string name="dejavu_protection_links">Tracking uit links verwijderen</string>
     <string name="dejavu_protection_hint">Een bescherming die aan staat, houdt je veiliger. Bij elke bescherming staat waartegen ze beschermt en wat er daardoor mogelijk niet meer werkt.</string>
     <string name="dejavu_sync_zen_hint_unpinned">Open in Zen Instellingen, dan Synchronisatie, en zet synchronisatie van de zijbalk aan.</string>
+    <string name="dejavu_settings_screen">Scherm</string>
+    <string name="dejavu_settings_hide_system_bars">Status- en navigatiebalk verbergen</string>
+    <string name="dejavu_settings_hide_system_bars_summary">Terwijl een pagina wordt getoond. Veeg vanaf de boven- of onderrand om ze even te zien.</string>
 </resources>

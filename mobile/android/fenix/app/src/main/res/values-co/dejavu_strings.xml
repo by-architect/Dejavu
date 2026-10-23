@@ -419,4 +419,7 @@
     <string name="dejavu_protection_links">Caccià u spiunagiu da i liami</string>
     <string name="dejavu_protection_hint">Una prutezzione attivata cresce a vostra sicurità. Ognuna dice da chì vi prutege è ciò chì pò cessà di funziunà per via d\'ella.</string>
     <string name="dejavu_sync_zen_hint_unpinned">In Zen, apre Parametri, dopu Sincrunizazione, è attivate a sincrunizazione di a barra laterale.</string>
+    <string name="dejavu_settings_screen">Screnu</string>
+    <string name="dejavu_settings_hide_system_bars">Piattà e barre di statu è di navigazione</string>
+    <string name="dejavu_settings_hide_system_bars_summary">Mentre ch\'ella hè affissata una pagina. Sguillà da l\'orlu supranu o suttanu per vedele un mumentu.</string>
 </resources>

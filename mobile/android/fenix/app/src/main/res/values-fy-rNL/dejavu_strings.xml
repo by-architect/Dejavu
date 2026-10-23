@@ -419,4 +419,7 @@
     <string name="dejavu_protection_links">Folgjen út keppelingen fuortsmite</string>
     <string name="dejavu_protection_hint">In beskerming dy\'t ynskeakele is, hâldt jo feiliger. Elk fertelt wêr\'t it jo tsjin beskermet en wat dêrtroch miskien net mear wurket.</string>
     <string name="dejavu_sync_zen_hint_unpinned">Iepenje yn Zen de Ynstellingen, dan Syngronisaasje, en set de syngronisaasje fan de sidebalke oan.</string>
+    <string name="dejavu_settings_screen">Skerm</string>
+    <string name="dejavu_settings_hide_system_bars">Status- en navigaasjebalke ferstopje</string>
+    <string name="dejavu_settings_hide_system_bars_summary">Wylst in side toand wurdt. Fei fan de boppe- of ûnderrâne om se efkes te sjen.</string>
 </resources>

@@ -433,4 +433,7 @@
     <string name="dejavu_protection_links">Šalinti stebėjimą iš nuorodų</string>
     <string name="dejavu_protection_hint">Įjungta apsauga padeda jums būti saugesniems. Prie kiekvienos parašyta, nuo ko ji saugo ir kas dėl jos gali nustoti veikti.</string>
     <string name="dejavu_sync_zen_hint_unpinned">Zen naršyklėje atverkite Nuostatos, tada Sinchronizavimas, ir įjunkite šoninės juostos sinchronizavimą.</string>
+    <string name="dejavu_settings_screen">Ekranas</string>
+    <string name="dejavu_settings_hide_system_bars">Slėpti būsenos ir naršymo juostas</string>
+    <string name="dejavu_settings_hide_system_bars_summary">Kol rodomas puslapis. Perbraukite nuo viršutinio ar apatinio krašto, kad trumpam jas pamatytumėte.</string>
 </resources>

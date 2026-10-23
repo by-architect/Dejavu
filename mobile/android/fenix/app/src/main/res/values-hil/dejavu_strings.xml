@@ -419,4 +419,7 @@
     <string name="dejavu_protection_links">Kuhaa ang pagsunod sa mga link</string>
     <string name="dejavu_protection_hint">Ang proteksyon nga naka-on nagahimo sa imo nga mas luwas. Ginasiling sang kada isa kon ano ang ginapugngan sini kag kon ano ang mahimo indi na mag-obra tungod sini.</string>
     <string name="dejavu_sync_zen_hint_unpinned">Sa Zen, abrihan ang Settings, dayon Sync, kag i-on ang sidebar sync.</string>
+    <string name="dejavu_settings_screen">Screen</string>
+    <string name="dejavu_settings_hide_system_bars">Tagua ang status kag navigation bar</string>
+    <string name="dejavu_settings_hide_system_bars_summary">Samtang ginapakita ang isa ka pahina. I-swipe halin sa ibabaw ukon idalom nga kilid para makita sila sing makadali.</string>
 </resources>

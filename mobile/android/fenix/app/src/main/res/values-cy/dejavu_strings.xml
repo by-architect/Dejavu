@@ -447,4 +447,7 @@
     <string name="dejavu_protection_links">Tynnu tracio o ddolenni</string>
     <string name="dejavu_protection_hint">Mae diogelwch sydd ymlaen yn eich cadw\'n fwy diogel. Mae pob un yn dweud rhag beth mae\'n eich diogelu a beth all roi\'r gorau i weithio o\'i herwydd.</string>
     <string name="dejavu_sync_zen_hint_unpinned">Yn Zen, agorwch Gosodiadau, yna Sync, a throwch cydweddu’r bar ochr ymlaen.</string>
+    <string name="dejavu_settings_screen">Sgrin</string>
+    <string name="dejavu_settings_hide_system_bars">Cuddio\'r bariau statws a llywio</string>
+    <string name="dejavu_settings_hide_system_bars_summary">Tra bo tudalen yn cael ei dangos. Llithrwch i mewn o\'r ymyl uchaf neu isaf i\'w gweld am eiliad.</string>
 </resources>

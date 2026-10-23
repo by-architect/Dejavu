@@ -412,4 +412,7 @@
     <string name="dejavu_protection_links">移除連結中的追蹤資訊</string>
     <string name="dejavu_protection_hint">開啟的保護功能能讓您更安全。每一項都會說明它防範什麼，以及可能因此無法正常運作的功能。</string>
     <string name="dejavu_sync_zen_hint_unpinned">在 Zen 中開啟「設定」，再進入「同步」，開啟側邊欄同步。</string>
+    <string name="dejavu_settings_screen">螢幕</string>
+    <string name="dejavu_settings_hide_system_bars">隱藏狀態列與導覽列</string>
+    <string name="dejavu_settings_hide_system_bars_summary">顯示網頁時。從上緣或下緣向內滑動即可短暫顯示。</string>
 </resources>

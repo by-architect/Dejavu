@@ -419,4 +419,7 @@
     <string name="dejavu_protection_links">Fjern sporing frå lenker</string>
     <string name="dejavu_protection_hint">Eit vern som er på, gjer deg tryggare. Kvart vern seier kva det vernar mot og kva som kan slutte å verke på grunn av det.</string>
     <string name="dejavu_sync_zen_hint_unpinned">Opne Innstillingar i Zen, deretter Synkronisering, og slå på synkronisering av sidestolpen.</string>
+    <string name="dejavu_settings_screen">Skjerm</string>
+    <string name="dejavu_settings_hide_system_bars">Gøym status- og navigasjonsfeltet</string>
+    <string name="dejavu_settings_hide_system_bars_summary">Medan ei side vert vist. Sveip inn frå øvre eller nedre kant for å sjå dei eit augeblikk.</string>
 </resources>

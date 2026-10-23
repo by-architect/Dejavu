@@ -412,4 +412,7 @@
     <string name="dejavu_protection_links">Piceun palacakan tina tutumbu</string>
     <string name="dejavu_protection_hint">Panyalindungan anu hurung ngajaga anjeun leuwih aman. Masing-masing nyebutkeun tina naon éta ngajaga anjeun jeung naon anu bisa eureun jalan kusabab éta.</string>
     <string name="dejavu_sync_zen_hint_unpinned">Dina Zen, buka Settings, tuluy Sync, jeung hurungkeun sidebar sync.</string>
+    <string name="dejavu_settings_screen">Layar</string>
+    <string name="dejavu_settings_hide_system_bars">Sumputkeun bar status jeung navigasi</string>
+    <string name="dejavu_settings_hide_system_bars_summary">Nalika kaca dipintonkeun. Usap ti sisi luhur atawa handap pikeun ningali éta sakedap.</string>
 </resources>

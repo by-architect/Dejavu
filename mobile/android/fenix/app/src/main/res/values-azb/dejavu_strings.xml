@@ -419,4 +419,7 @@
     <string name="dejavu_protection_links">لینک‌لردن ایزله‌مه‌نی سیل</string>
     <string name="dejavu_protection_hint">آچیق اولان قوروما سیزی داها گوونلی ساخلاییر. هر بیری نه‌دن قورودوغونو و اونون اوزوندن نه‌یین ایشله‌مه‌یی دایاندیرا بیله‌جگینی دئییر.</string>
     <string name="dejavu_sync_zen_hint_unpinned">Zen-ده تنظیم‌لری، سونرا همگام‌سازینی آچین و یان پانل همگام‌سازی‌سینی فعاللاشدیرین.</string>
+    <string name="dejavu_settings_screen">اکران</string>
+    <string name="dejavu_settings_hide_system_bars">وضعیت و ناویقاسیا پانل‌لرینی گیزلت</string>
+    <string name="dejavu_settings_hide_system_bars_summary">بیر صفحه گؤستریلنده. اونلاری بیر آن گؤرمک اوچون یوخاری یا آشاغی قیراغیندان سوروشدورون.</string>
 </resources>

@@ -412,4 +412,7 @@
     <string name="dejavu_protection_links">o weka e alasa jan tan nasin lipu</string>
     <string name="dejavu_protection_hint">awen li open la, sina awen mute. awen wan wan li toki e ni: ona li weka e ike seme, li ken pakala e seme.</string>
     <string name="dejavu_sync_zen_hint_unpinned">lon Zen, o open e nasin ilo, la o open e sama, la o ken e sama pi poki poka.</string>
+    <string name="dejavu_settings_screen">sinpin</string>
+    <string name="dejavu_settings_hide_system_bars">o len e linja sona e linja tawa</string>
+    <string name="dejavu_settings_hide_system_bars_summary">tenpo pi lipu lukin. sina wile lukin lili e ona la, o tawa tan poka sewi anu poka anpa.</string>
 </resources>

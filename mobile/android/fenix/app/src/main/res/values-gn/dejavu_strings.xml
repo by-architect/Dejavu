@@ -419,4 +419,7 @@
     <string name="dejavu_protection_links">Eipe\'a jehapykueho joapykuéragui</string>
     <string name="dejavu_protection_hint">Ñemo\'ã hendýva nde mo\'ãve. Peteĩteĩ he\'i mba\'égui nde mo\'ã ha mba\'épa ikatu ndoikovéi hese.</string>
     <string name="dejavu_sync_zen_hint_unpinned">Zen-pe, embojuruja Ñemboheko, upéi Sincronizar, ha emyendy pe sidebar sincronización.</string>
+    <string name="dejavu_settings_screen">Mba\'erechaha</string>
+    <string name="dejavu_settings_hide_system_bars">Mokañy umi barra rekoreko ha jeguata rehegua</string>
+    <string name="dejavu_settings_hide_system_bars_summary">Peteĩ kuatiarogue ojehechauka aja. Emosyryry yvate térã yvy gotyo rembe\'ýgui ehecha hag̃ua sapy\'apy\'ánte.</string>
 </resources>

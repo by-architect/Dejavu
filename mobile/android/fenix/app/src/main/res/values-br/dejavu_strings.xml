@@ -440,4 +440,7 @@
     <string name="dejavu_protection_links">Lemel an heuliañ diwar al liammoù</string>
     <string name="dejavu_protection_hint">Ur gwarez gweredekaet a ro muioc’h a surentez deoc’h. Pep hini a lavar diouzh petra e tiwall ac’hanoc’h ha petra a c’hallfe chom hep mont en-dro en abeg dezhañ.</string>
     <string name="dejavu_sync_zen_hint_unpinned">E Zen, digorit Arventennoù, ha goude Goubredañ, ha weredekait goubredañ ar varrenn gostez.</string>
+    <string name="dejavu_settings_screen">Skramm</string>
+    <string name="dejavu_settings_hide_system_bars">Kuzhat ar barrennoù stad ha merdeiñ</string>
+    <string name="dejavu_settings_hide_system_bars_summary">E-keit ma vez diskouezet ur bajenn. Riklit adalek ar riblenn uhel pe izel evit o gwelout ur pennadig.</string>
 </resources>

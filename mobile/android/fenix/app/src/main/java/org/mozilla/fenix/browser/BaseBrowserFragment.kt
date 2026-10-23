@@ -211,12 +211,13 @@ import org.mozilla.fenix.customtabs.ExternalAppBrowserActivity
 import org.mozilla.fenix.databinding.FragmentBrowserBinding
 import org.mozilla.fenix.dejavu.browser.DejavuToolbar
 import org.mozilla.fenix.dejavu.browser.SplitPanes
+import org.mozilla.fenix.dejavu.browser.exitFullScreenKeepingBarsHidden
 import org.mozilla.fenix.dejavu.browser.handleDejavuBackPressed
 import org.mozilla.fenix.dejavu.browser.installAboutConfigWarning
 import org.mozilla.fenix.dejavu.browser.installDejavuSplitView
-import org.mozilla.fenix.dejavu.browser.navigationBarHeight
 import org.mozilla.fenix.dejavu.browser.padForNavigationBar
 import org.mozilla.fenix.dejavu.browser.restoreDejavuRotationAfterFullscreen
+import org.mozilla.fenix.dejavu.browser.shownNavigationBarHeight
 import org.mozilla.fenix.dejavu.browser.statusBarHeight
 import org.mozilla.fenix.downloads.DownloadService
 import org.mozilla.fenix.downloads.RenameAndChangeLocationDialogFragment
@@ -2279,7 +2280,7 @@ abstract class BaseBrowserFragment :
      */
     private fun navigationBarUnderKeyboard(view: View, keyboardHeight: Int): Int {
         val isDejavuBrowser = DejavuToolbar.enabled && customTabSessionId == null
-        return if (isDejavuBrowser && keyboardHeight > 0) view.navigationBarHeight else 0
+        return if (isDejavuBrowser && keyboardHeight > 0) view.shownNavigationBarHeight else 0
     }
 
     /** Updates the site permissions rules based on user settings. */
@@ -2358,9 +2359,12 @@ abstract class BaseBrowserFragment :
 
             MediaState.fullscreen.record(NoExtras())
         } else {
-            activity.exitImmersiveMode(
-                unregisterOnApplyWindowInsetsListener = binding.engineView::removeWindowInsetsListener
-            )
+            // Dejavu: the system bars hidden over pages stay hidden, also on tab switches, which come here too.
+            activity.exitFullScreenKeepingBarsHidden {
+                activity.exitImmersiveMode(
+                    unregisterOnApplyWindowInsetsListener = binding.engineView::removeWindowInsetsListener
+                )
+            }
 
             (view as? SwipeGestureLayout)?.isSwipeEnabled = true
             (activity as? HomeActivity)?.let { homeActivity ->

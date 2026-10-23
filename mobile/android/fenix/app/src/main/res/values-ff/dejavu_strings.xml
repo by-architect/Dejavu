@@ -419,4 +419,7 @@
     <string name="dejavu_protection_links">Momtu dewindagol e jokke</string>
     <string name="dejavu_protection_hint">So ndeenka hurmii, ina ɓeydana ma kisal. Kala ndeenka ina hollira ko ndeentata ma e ko waawi darde gollude sabu mayre.</string>
     <string name="dejavu_sync_zen_hint_unpinned">Dans Zen, ouvre Paramètres, puis Synchronisation, et active la synchronisation de la barre latérale.</string>
+    <string name="dejavu_settings_screen">Écran</string>
+    <string name="dejavu_settings_hide_system_bars">Masquer les barres d\'état et de navigation</string>
+    <string name="dejavu_settings_hide_system_bars_summary">Pendant l\'affichage d\'une page. Balayez depuis le bord supérieur ou inférieur pour les voir un instant.</string>
 </resources>

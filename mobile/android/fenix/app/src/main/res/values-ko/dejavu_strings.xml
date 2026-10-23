@@ -412,4 +412,7 @@
     <string name="dejavu_protection_links">링크에서 추적 요소 제거</string>
     <string name="dejavu_protection_hint">켜져 있는 보호 기능은 나를 더 안전하게 지켜 줍니다. 각 기능마다 무엇을 막아 주는지, 그 때문에 무엇이 작동하지 않을 수 있는지 알려 줍니다.</string>
     <string name="dejavu_sync_zen_hint_unpinned">Zen에서 설정을 연 다음 동기화에서 사이드바 동기화를 켜세요.</string>
+    <string name="dejavu_settings_screen">화면</string>
+    <string name="dejavu_settings_hide_system_bars">상태 표시줄과 탐색 메뉴 숨기기</string>
+    <string name="dejavu_settings_hide_system_bars_summary">페이지가 표시되는 동안. 위쪽이나 아래쪽 가장자리에서 스와이프하면 잠시 볼 수 있습니다.</string>
 </resources>

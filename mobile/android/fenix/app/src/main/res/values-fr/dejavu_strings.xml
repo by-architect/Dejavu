@@ -419,4 +419,7 @@
     <string name="dejavu_protection_links">Retirer le pistage des liens</string>
     <string name="dejavu_protection_hint">Une protection activée vous protège davantage. Chacune indique contre quoi elle vous protège et ce qui peut ne plus fonctionner à cause d’elle.</string>
     <string name="dejavu_sync_zen_hint_unpinned">Dans Zen, ouvre les paramètres, puis Synchronisation, et active la synchronisation de la barre latérale.</string>
+    <string name="dejavu_settings_screen">Écran</string>
+    <string name="dejavu_settings_hide_system_bars">Masquer les barres d\'état et de navigation</string>
+    <string name="dejavu_settings_hide_system_bars_summary">Pendant l\'affichage d\'une page. Balayez depuis le bord supérieur ou inférieur pour les voir un instant.</string>
 </resources>

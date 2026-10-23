@@ -71,11 +71,13 @@ import org.mozilla.fenix.dejavu.browser.DejavuToolbar
 import org.mozilla.fenix.dejavu.browser.PagePictures
 import org.mozilla.fenix.dejavu.browser.PageTint
 import org.mozilla.fenix.dejavu.browser.addStatusBarScrim
+import org.mozilla.fenix.dejavu.browser.hideSystemBarsOverPages
 import org.mozilla.fenix.dejavu.browser.moreMenuSwipe
 import org.mozilla.fenix.dejavu.browser.openDejavuMenu
 import org.mozilla.fenix.dejavu.browser.padForNavigationBar
 import org.mozilla.fenix.dejavu.browser.padForSystemBarsAtSides
 import org.mozilla.fenix.dejavu.browser.pageInfoSwipe
+import org.mozilla.fenix.dejavu.settings.DejavuSettings
 import org.mozilla.fenix.ext.application
 import org.mozilla.fenix.ext.components
 import org.mozilla.fenix.ext.getRectWithScreenLocation
@@ -178,6 +180,12 @@ class BrowserFragment : BaseBrowserFragment(), UserInteractionHandler {
         val window = requireActivity().window
         binding.browserWindow.padForSystemBarsAtSides(window, onBarsChanged = ::reinitializeEngineView)
         binding.browserLayout.addStatusBarScrim(above = binding.tabReloadCover, window = window)
+        // The status bar and the navigation bar hide over pages when the user chose so in Customize.
+        val systemBarsHidden =
+            components.strictMode.allowViolation(StrictMode::allowThreadDiskReads) {
+                DejavuSettings.get(context).systemBarsHidden
+            }
+        hideSystemBarsOverPages(binding.engineView, systemBarsHidden)
         binding.readerViewControlsBar.padForNavigationBar()
         PagePictures.attach(binding.engineView)
         PageTint(

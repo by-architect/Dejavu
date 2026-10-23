@@ -433,4 +433,7 @@
     <string name="dejavu_protection_links">Slědowanje z wotkazow wotstronić</string>
     <string name="dejavu_protection_hint">Zmóžnjeny škit wašu wěstotu powyšuje. Kóždy praji, před čim škita a što móže jeho dla hižo njefungować.</string>
     <string name="dejavu_sync_zen_hint_unpinned">W Zen wočini Nastajenja, potom Synchronizacija, a zapinaj synchronizaciju bóčnicy.</string>
+    <string name="dejavu_settings_screen">Wobrazowka</string>
+    <string name="dejavu_settings_hide_system_bars">Lajsty statusa a nawigacije schować</string>
+    <string name="dejavu_settings_hide_system_bars_summary">Mjeztym zo so strona pokazuje. Ćehńće wot hornjeje abo delnjeje kromy, zo byšće je na wokomik widźeli.</string>
 </resources>

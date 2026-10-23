@@ -419,4 +419,7 @@
     <string name="dejavu_protection_links">Сылтамалардан күзәтүне бетерү</string>
     <string name="dejavu_protection_hint">Кабызылган саклау сезне куркынычсызрак итә. Һәрберсе нәрсәдән саклаганын һәм аның аркасында нәрсә эшләмәскә мөмкин икәнен әйтә.</string>
     <string name="dejavu_sync_zen_hint_unpinned">Zen-дә Көйләүләрне, аннары Синхронлаштыруны ачыгыз һәм як панель синхронлаштыруын кабызыгыз.</string>
+    <string name="dejavu_settings_screen">Экран</string>
+    <string name="dejavu_settings_hide_system_bars">Хәл һәм навигация тасмаларын яшерү</string>
+    <string name="dejavu_settings_hide_system_bars_summary">Бит күрсәтелгәндә. Аларны бер мизгелгә күрү өчен өске яки аскы читтән тартыгыз.</string>
 </resources>

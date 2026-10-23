@@ -426,4 +426,7 @@
     <string name="dejavu_protection_links">Noņemt izsekošanu no saitēm</string>
     <string name="dejavu_protection_hint">Ieslēgta aizsardzība jūs labāk pasargā. Katra pasaka, no kā tā sargā un kas tās dēļ var pārstāt darboties.</string>
     <string name="dejavu_sync_zen_hint_unpinned">Zen atveriet Iestatījumi, tad Sinhronizācija, un ieslēdziet sānjoslas sinhronizāciju.</string>
+    <string name="dejavu_settings_screen">Ekrāns</string>
+    <string name="dejavu_settings_hide_system_bars">Paslēpt statusa un navigācijas joslas</string>
+    <string name="dejavu_settings_hide_system_bars_summary">Kamēr tiek rādīta lapa. Pavelciet no augšējās vai apakšējās malas, lai uz brīdi tās redzētu.</string>
 </resources>

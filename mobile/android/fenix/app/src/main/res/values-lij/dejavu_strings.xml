@@ -419,4 +419,7 @@
     <string name="dejavu_protection_links">Leva o traciamento da-i ligammi</string>
     <string name="dejavu_protection_hint">Unna proteçion ativa a te mantegne ciù seguo. Ògnunn-a a dixe da cöse a te protezze e cöse o peu no fonçionâ ciù pe caxon sò.</string>
     <string name="dejavu_sync_zen_hint_unpinned">Inte Zen, arvi Inpostaçioin, poi Sincronizzaçion, e attivi a sincronizzaçion de a barra laterale.</string>
+    <string name="dejavu_settings_screen">Schermo</string>
+    <string name="dejavu_settings_hide_system_bars">Ascondi e bare de stato e de navegaçion</string>
+    <string name="dejavu_settings_hide_system_bars_summary">Quande se mostra \'na pagina. Scorri da-o bòrdo de d\'ato ò de d\'abasso pe vedile pe \'n momento.</string>
 </resources>

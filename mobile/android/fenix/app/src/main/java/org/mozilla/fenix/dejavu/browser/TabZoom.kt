@@ -22,7 +22,6 @@ import androidx.compose.foundation.layout.WindowInsetsSides
 import androidx.compose.foundation.layout.displayCutout
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.only
-import androidx.compose.foundation.layout.statusBarsPadding
 import androidx.compose.foundation.layout.systemBars
 import androidx.compose.foundation.layout.union
 import androidx.compose.foundation.layout.windowInsetsPadding
@@ -312,7 +311,7 @@ internal object TabZoom {
                         modifier = Modifier
                             .align(Alignment.TopCenter)
                             .comingIn(arrived, fromTop = true)
-                            .statusBarsPadding(),
+                            .statusBarRoomPadding(),
                     ) {
                         DejavuTopBarPreview(barsTab)
                     }

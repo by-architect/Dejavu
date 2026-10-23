@@ -419,4 +419,7 @@
     <string name="dejavu_protection_links">له لینکونو تعقیب لرې کول</string>
     <string name="dejavu_protection_hint">چالانه ساتنه تاسو ډېر خوندي ساتي. هره یوه وايي چې د څه پر وړاندې ساتنه کوي او د هغې له امله کېدای شي څه کار پرېږدي.</string>
     <string name="dejavu_sync_zen_hint_unpinned">په Zen کې، «امستنې» خلاص کړئ، بیا «همغږي کول»، او د څنګ پټې همغږي فعاله کړئ.</string>
+    <string name="dejavu_settings_screen">پرده</string>
+    <string name="dejavu_settings_hide_system_bars">د حالت او نېویګېشن پټۍ پټې کړئ</string>
+    <string name="dejavu_settings_hide_system_bars_summary">کله چې یوه پاڼه ښودل کېږي. د یوې شېبې لپاره د لیدو لپاره له پورتنۍ یا ښکتنۍ څنډې څخه سوایپ کړئ.</string>
 </resources>

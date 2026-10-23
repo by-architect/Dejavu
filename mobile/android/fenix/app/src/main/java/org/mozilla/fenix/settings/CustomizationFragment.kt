@@ -124,6 +124,7 @@ class CustomizationFragment : PreferenceFragmentCompat(), SystemInsetsPaddedFrag
         setupToolbarLayout()
         updateToolbarShortcut()
         setupMoreMenuEditButton()
+        setupSystemBarsSwitch()
 
         // if tab strip is enabled, swipe toolbar to switch tabs should not be enabled so the
         // preference is not shown
@@ -289,6 +290,18 @@ class CustomizationFragment : PreferenceFragmentCompat(), SystemInsetsPaddedFrag
             isChecked = dejavuSettings.moreMenuEditHidden.value
             onPreferenceChangeListener = Preference.OnPreferenceChangeListener { _, newValue ->
                 dejavuSettings.setMoreMenuEditHidden(newValue == true)
+                true
+            }
+        }
+    }
+
+    /** Hides the status bar and the navigation bar over pages, which Dejavu's own settings keep. */
+    private fun setupSystemBarsSwitch() {
+        val dejavuSettings = dejavuSettings()
+        requirePreference<SwitchPreferenceCompat>(R.string.pref_key_dejavu_hide_system_bars).apply {
+            isChecked = dejavuSettings.systemBarsHidden.value
+            onPreferenceChangeListener = Preference.OnPreferenceChangeListener { _, newValue ->
+                dejavuSettings.setSystemBarsHidden(newValue == true)
                 true
             }
         }

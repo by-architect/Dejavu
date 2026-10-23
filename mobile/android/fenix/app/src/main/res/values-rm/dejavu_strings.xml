@@ -419,4 +419,7 @@
     <string name="dejavu_protection_links">Allontanar il fastizar da colliaziuns</string>
     <string name="dejavu_protection_hint">Ina protecziun activada ta tegna pli segir. Mintgina di cunter tge ch\'ella protegia e tge che po chalar da funcziunar pervia dad ella.</string>
     <string name="dejavu_sync_zen_hint_unpinned">En Zen, avra Parameters, lura Sync, ed activescha la sincronisaziun da la trav laterala.</string>
+    <string name="dejavu_settings_screen">Visur</string>
+    <string name="dejavu_settings_hide_system_bars">Zuppentar las travs da status e da navigaziun</string>
+    <string name="dejavu_settings_hide_system_bars_summary">Durant ch\'ina pagina vegn mussada. Stritgar naven dal ur sura u sut per las vesair per in mument.</string>
 </resources>

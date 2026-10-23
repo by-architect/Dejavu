@@ -412,4 +412,7 @@
     <string name="dejavu_protection_links">リンクからトラッキングを削除する</string>
     <string name="dejavu_protection_hint">保護機能をオンにすると、より安全になります。それぞれの説明に、何から守るか、そのせいで何が動かなくなる可能性があるかが書かれています。</string>
     <string name="dejavu_sync_zen_hint_unpinned">Zenで「設定」を開き、「同期」でサイドバーの同期をオンにしてください。</string>
+    <string name="dejavu_settings_screen">画面</string>
+    <string name="dejavu_settings_hide_system_bars">ステータスバーとナビゲーションバーを非表示にする</string>
+    <string name="dejavu_settings_hide_system_bars_summary">ページの表示中。上端または下端からスワイプすると、少しの間表示されます。</string>
 </resources>

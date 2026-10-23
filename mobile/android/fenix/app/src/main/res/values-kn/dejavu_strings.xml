@@ -419,4 +419,7 @@
     <string name="dejavu_protection_links">ಲಿಂಕ್‌ಗಳಿಂದ ಟ್ರ್ಯಾಕಿಂಗ್ ತೆಗೆದುಹಾಕು</string>
     <string name="dejavu_protection_hint">ಆನ್ ಆಗಿರುವ ರಕ್ಷಣೆ ನಿಮ್ಮನ್ನು ಹೆಚ್ಚು ಸುರಕ್ಷಿತವಾಗಿರಿಸುತ್ತದೆ. ಪ್ರತಿಯೊಂದೂ ಅದು ಯಾವುದರಿಂದ ರಕ್ಷಿಸುತ್ತದೆ ಮತ್ತು ಅದರಿಂದಾಗಿ ಏನು ಕೆಲಸ ಮಾಡದೇ ಹೋಗಬಹುದು ಎಂದು ಹೇಳುತ್ತದೆ.</string>
     <string name="dejavu_sync_zen_hint_unpinned">Zen ನಲ್ಲಿ, ಸಿದ್ಧತೆಗಳನ್ನು ತೆರೆದು, ನಂತರ ಸಿಂಕ್ ಅನ್ನು ತೆರೆದು, ಸೈಡ್‌ಬಾರ್ ಸಿಂಕ್ ಅನ್ನು ಆನ್ ಮಾಡಿ.</string>
+    <string name="dejavu_settings_screen">ಪರದೆ</string>
+    <string name="dejavu_settings_hide_system_bars">ಸ್ಥಿತಿ ಮತ್ತು ನ್ಯಾವಿಗೇಶನ್ ಬಾರ್‌ಗಳನ್ನು ಮರೆಮಾಡಿ</string>
+    <string name="dejavu_settings_hide_system_bars_summary">ಪುಟ ತೋರಿಸುತ್ತಿರುವಾಗ. ಅವುಗಳನ್ನು ಸ್ವಲ್ಪ ಹೊತ್ತು ನೋಡಲು ಮೇಲಿನ ಅಥವಾ ಕೆಳಗಿನ ಅಂಚಿನಿಂದ ಸ್ವೈಪ್ ಮಾಡಿ.</string>
 </resources>

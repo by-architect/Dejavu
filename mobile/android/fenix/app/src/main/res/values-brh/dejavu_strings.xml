@@ -419,4 +419,7 @@
     <string name="dejavu_protection_links">لنکاک آن ٹریکنگ ہٹاؤ</string>
     <string name="dejavu_protection_hint">آن حفاظت نُمے زیات محفوظ تخک۔ ہر حفاظت پاریک کہ او انت آن حفاظت کیک، او ممکن اے کہ ایہنا وجہ آن انت کاریم کپک۔</string>
     <string name="dejavu_sync_zen_hint_unpinned">Zen اٹ، سیٹنگاک مل، پہ Sync، او سائیڈبار سنک آن کبو۔</string>
+    <string name="dejavu_settings_screen">اسکرین</string>
+    <string name="dejavu_settings_hide_system_bars">اسٹیٹس او نیویگیشن بار آتے چھپا</string>
+    <string name="dejavu_settings_hide_system_bars_summary">ہرا وخت اسہ صفحہ تسنگ۔ اوفتے اسہ لمحہ کن خننگ کن مَلّی یا جہلی کنڑہ آن سوائپ کر۔</string>
 </resources>

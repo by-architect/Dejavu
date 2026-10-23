@@ -419,4 +419,7 @@
     <string name="dejavu_protection_links">Hiq gjurmimin nga lidhjet</string>
     <string name="dejavu_protection_hint">Një mbrojtje e aktivizuar ju mban më të sigurt. Secila thotë nga çfarë ju mbron dhe çfarë mund të ndalë së punuari për shkak të saj.</string>
     <string name="dejavu_sync_zen_hint_unpinned">Në Zen, hapni Rregullime, mandej Njëkohësim, dhe aktivizoni njëkohësimin e panelit anësor.</string>
+    <string name="dejavu_settings_screen">Ekrani</string>
+    <string name="dejavu_settings_hide_system_bars">Fshih shiritat e gjendjes dhe të lëvizjes</string>
+    <string name="dejavu_settings_hide_system_bars_summary">Teksa shfaqet një faqe. Rrëshqitni nga skaji i sipërm ose i poshtëm që t\'i shihni për një çast.</string>
 </resources>

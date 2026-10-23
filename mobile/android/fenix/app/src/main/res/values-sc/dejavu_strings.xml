@@ -419,4 +419,7 @@
     <string name="dejavu_protection_links">Boga sa sighidura dae is ligòngios</string>
     <string name="dejavu_protection_hint">Una protetzione ativa ti mantenet prus seguru. Dònnia una narat dae ite ti amparat e ite podet non funtzionare prus a càusa sua.</string>
     <string name="dejavu_sync_zen_hint_unpinned">In Zen, aberi Cunfiguratzione, a pustis Sincronizatzione, e ativa sa sincronizatzione de sa barra laterale.</string>
+    <string name="dejavu_settings_screen">Ischermu</string>
+    <string name="dejavu_settings_hide_system_bars">Cua sas barras de istadu e de navigatzione</string>
+    <string name="dejavu_settings_hide_system_bars_summary">Cando si mustrat una pàgina. Iscurre dae s\'oru de susu o de giosso pro las bìdere unu momentu.</string>
 </resources>

@@ -412,4 +412,7 @@
     <string name="dejavu_protection_links">လင့်ခ်များမှ ခြေရာခံမှုကို ဖယ်ရှားရန်</string>
     <string name="dejavu_protection_hint">ဖွင့်ထားသော ကာကွယ်မှုသည် သင့်ကို ပိုလုံခြုံစေသည်။ တစ်ခုစီက ဘာကို ကာကွယ်ပေးသည်နှင့် ၎င်းကြောင့် ဘာများ အလုပ်မလုပ်တော့နိုင်သည်ကို ပြောပြသည်။</string>
     <string name="dejavu_sync_zen_hint_unpinned">Zen တွင် Settings ကိုဖွင့်ပြီး Sync ကို ရွေးပါ၊ ထို့နောက် sidebar sync ကို ဖွင့်ပါ။</string>
+    <string name="dejavu_settings_screen">မျက်နှာပြင်</string>
+    <string name="dejavu_settings_hide_system_bars">အခြေအနေနှင့် လမ်းညွှန်ဘားများကို ဖျောက်ရန်</string>
+    <string name="dejavu_settings_hide_system_bars_summary">စာမျက်နှာ ပြသနေစဉ်။ ခဏကြည့်ရန် အပေါ် သို့မဟုတ် အောက်အစွန်းမှ ပွတ်ဆွဲပါ။</string>
 </resources>

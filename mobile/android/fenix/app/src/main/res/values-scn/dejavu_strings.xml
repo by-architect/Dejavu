@@ -419,4 +419,7 @@
     <string name="dejavu_protection_links">Leva u trazzamentu dî lijami</string>
     <string name="dejavu_protection_hint">Na prutizzioni attiva ti teni cchiù sicuru. Ognuna dici di chi cosa ti prutegi e chi cosa pò smèttiri di funziunari pi causa sò.</string>
     <string name="dejavu_sync_zen_hint_unpinned">Nta Zen, grapi Mpustazzioni, doppu Sincronizzazzioni, e attiva a sincronizzazzioni dâ barra laterali.</string>
+    <string name="dejavu_settings_screen">Schermu</string>
+    <string name="dejavu_settings_hide_system_bars">Ammuccia i barri di statu e di navigazzioni</string>
+    <string name="dejavu_settings_hide_system_bars_summary">Mentri chi s\'ammustra na pàggina. Sciddica dû bordu supiriuri o nfiriuri pi vìdirli pi nu mumentu.</string>
 </resources>

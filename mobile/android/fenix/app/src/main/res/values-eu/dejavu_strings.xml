@@ -419,4 +419,7 @@
     <string name="dejavu_protection_links">Kendu jarraipena esteketatik</string>
     <string name="dejavu_protection_hint">Aktibatuta dagoen babes batek seguruago mantentzen zaitu. Bakoitzak esaten du zeren aurka babesten duen eta haren ondorioz zerk utz diezaiokeen funtzionatzeari.</string>
     <string name="dejavu_sync_zen_hint_unpinned">Zenen, ireki Ezarpenak, ondoren Sinkronizazioa, eta aktibatu albo-barraren sinkronizazioa.</string>
+    <string name="dejavu_settings_screen">Pantaila</string>
+    <string name="dejavu_settings_hide_system_bars">Ezkutatu egoera- eta nabigazio-barrak</string>
+    <string name="dejavu_settings_hide_system_bars_summary">Orri bat erakusten den bitartean. Pasatu hatza goiko edo beheko ertzetik une batez ikusteko.</string>
 </resources>

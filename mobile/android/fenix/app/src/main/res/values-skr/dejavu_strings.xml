@@ -419,4 +419,7 @@
     <string name="dejavu_protection_links">لنکاں کنوں ٹریکنگ ہٹاؤ</string>
     <string name="dejavu_protection_hint">جہڑی حفاظت چالو ہووے، او تہاکوں ودھ محفوظ رکھدی ہے۔ ہر ہک ݙسیندی ہے جو او کیں چیز کنوں بچیندی ہے تے ایندی وجہ نال کیا کم کرݨ بند کر سڳدا ہے۔</string>
     <string name="dejavu_sync_zen_hint_unpinned">Zen وچ ترتیباں کھولو، ول ہم وقت کرݨ، تے سائیڈ بار ہم وقت کرݨ چالو کرو۔</string>
+    <string name="dejavu_settings_screen">سکرین</string>
+    <string name="dejavu_settings_hide_system_bars">سٹیٹس تے نیویگیشن بار لُکاؤ</string>
+    <string name="dejavu_settings_hide_system_bars_summary">جݙݨ کوئی ورقہ ݙکھایا ویندا پیا ہووے۔ انہاں کوں ہک پل کیتے ݙیکھݨ کیتے اُتلے یا تلے کنارے کنوں سوائپ کرو۔</string>
 </resources>

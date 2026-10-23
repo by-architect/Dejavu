@@ -419,4 +419,7 @@
     <string name="dejavu_protection_links">ከአገናኞች መከታተያን አስወግድ</string>
     <string name="dejavu_protection_hint">የበራ ጥበቃ የበለጠ ደህንነትዎን ይጠብቃል። እያንዳንዱ ጥበቃ ከምን እንደሚጠብቅ እና በእሱ ምክንያት ምን መስራት ሊያቆም እንደሚችል ይናገራል።</string>
     <string name="dejavu_sync_zen_hint_unpinned">በZen ውስጥ ቅንብሮችን፣ ከዚያም Syncን ይክፈቱ፣ እና የጎን አሞሌ ማመሳሰልን ያብሩ።</string>
+    <string name="dejavu_settings_screen">ማያ ገጽ</string>
+    <string name="dejavu_settings_hide_system_bars">የሁኔታ እና የአሰሳ አሞሌዎችን ደብቅ</string>
+    <string name="dejavu_settings_hide_system_bars_summary">ገጽ በሚታይበት ጊዜ። ለአፍታ ለማየት ከላይ ወይም ከታች ጠርዝ ያንሸራትቱ።</string>
 </resources>

@@ -40,6 +40,19 @@ class DejavuSettingsTest {
     }
 
     @Test
+    fun `the status bar and the navigation bar show over pages until the user hides them`() {
+        val settings = newSettings()
+        assertFalse(settings.systemBarsHidden.value)
+
+        settings.setSystemBarsHidden(true)
+        assertTrue(settings.systemBarsHidden.value)
+        assertTrue(newSettings().systemBarsHidden.value)
+
+        settings.setSystemBarsHidden(false)
+        assertFalse(newSettings().systemBarsHidden.value)
+    }
+
+    @Test
     fun `custom actions an older Dejavu saved in plain text still load, and saved ones load again`() {
         val action = CustomAction("a", "Karakeep", HttpMethod.POST, "https://example.com", emptyList(), "{}")
         testContext.getSharedPreferences("kaizen_settings", Context.MODE_PRIVATE).edit()

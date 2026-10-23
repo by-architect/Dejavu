@@ -419,4 +419,7 @@
     <string name="dejavu_protection_links">Ta bort spårning från länkar</string>
     <string name="dejavu_protection_hint">Ett skydd som är på gör dig säkrare. Vid varje skydd står vad det skyddar mot och vad som kan sluta fungera på grund av det.</string>
     <string name="dejavu_sync_zen_hint_unpinned">I Zen öppnar du Inställningar, sedan Synkronisering, och slår på synkronisering av sidofältet.</string>
+    <string name="dejavu_settings_screen">Skärm</string>
+    <string name="dejavu_settings_hide_system_bars">Dölj status- och navigeringsfältet</string>
+    <string name="dejavu_settings_hide_system_bars_summary">Medan en sida visas. Svep in från över- eller underkanten för att se dem en stund.</string>
 </resources>

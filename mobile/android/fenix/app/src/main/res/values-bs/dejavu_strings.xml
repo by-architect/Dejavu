@@ -426,4 +426,7 @@
     <string name="dejavu_protection_links">Ukloni praćenje iz linkova</string>
     <string name="dejavu_protection_hint">Uključena zaštita čini vas sigurnijim. Svaka kaže od čega štiti i šta zbog nje može prestati raditi.</string>
     <string name="dejavu_sync_zen_hint_unpinned">U Zenu otvorite Postavke, zatim Sinhronizacija, i uključite sinhronizaciju bočne trake.</string>
+    <string name="dejavu_settings_screen">Ekran</string>
+    <string name="dejavu_settings_hide_system_bars">Sakrij trake statusa i navigacije</string>
+    <string name="dejavu_settings_hide_system_bars_summary">Dok je prikazana stranica. Prevucite od gornje ili donje ivice da ih vidite na trenutak.</string>
 </resources>

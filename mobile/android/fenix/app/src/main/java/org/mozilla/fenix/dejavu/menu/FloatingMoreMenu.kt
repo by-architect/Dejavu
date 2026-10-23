@@ -19,10 +19,8 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.ColumnScope
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
-import androidx.compose.foundation.layout.navigationBarsPadding
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
-import androidx.compose.foundation.layout.statusBarsPadding
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
@@ -73,7 +71,9 @@ import org.mozilla.fenix.R
 import org.mozilla.fenix.dejavu.browser.ADDRESS_FIELD_HEIGHT
 import org.mozilla.fenix.dejavu.browser.ADDRESS_FIELD_SIDE_MARGIN
 import org.mozilla.fenix.dejavu.browser.ADDRESS_FIELD_TOP_MARGIN
+import org.mozilla.fenix.dejavu.browser.navigationBarRoomPadding
 import org.mozilla.fenix.dejavu.browser.shownWorkspaceTheme
+import org.mozilla.fenix.dejavu.browser.statusBarRoomPadding
 import org.mozilla.fenix.dejavu.browser.workspaceTheme
 
 /**
@@ -255,8 +255,8 @@ private fun PanelLayout(
             PanelHandle(panel)
         },
         modifier = modifier
-            .statusBarsPadding()
-            .navigationBarsPadding()
+            .statusBarRoomPadding()
+            .navigationBarRoomPadding()
             .padding(
                 start = look.sideMargin,
                 end = look.sideMargin,

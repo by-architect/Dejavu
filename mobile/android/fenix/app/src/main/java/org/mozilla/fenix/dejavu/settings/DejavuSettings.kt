@@ -46,6 +46,7 @@ class DejavuSettings private constructor(context: Context) {
         MoreMenuLayout.normalized(MoreMenuLayout.fromJson(prefs.getString(KEY_MORE_MENU_ROWS, null)) ?: MoreMenuLayout.DEFAULT),
     )
     private val _moreMenuEditHidden = MutableStateFlow(prefs.getBoolean(KEY_MORE_MENU_EDIT_HIDDEN, false))
+    private val _systemBarsHidden = MutableStateFlow(prefs.getBoolean(KEY_SYSTEM_BARS_HIDDEN, false))
     private val _actionsBarKeys = MutableStateFlow(readActionsBar())
     private val _tabSleepMinutes = MutableStateFlow(prefs.getInt(KEY_TAB_SLEEP_MINUTES, DEFAULT_TAB_SLEEP_MINUTES))
     private val _hiddenSelectionKeys = MutableStateFlow(
@@ -81,6 +82,9 @@ class DejavuSettings private constructor(context: Context) {
 
     /** Whether the "More" menu hides its button that opens the menu's settings. */
     val moreMenuEditHidden: StateFlow<Boolean> = _moreMenuEditHidden.asStateFlow()
+
+    /** Whether the status bar and the navigation bar are hidden while a page shows. */
+    val systemBarsHidden: StateFlow<Boolean> = _systemBarsHidden.asStateFlow()
 
     /** Buttons of the actions bar below pages, as keys of its entries. See [ActionsBarLayout]. */
     val actionsBarKeys: StateFlow<List<String>> = _actionsBarKeys.asStateFlow()
@@ -170,6 +174,11 @@ class DejavuSettings private constructor(context: Context) {
     fun setMoreMenuEditHidden(hidden: Boolean) {
         _moreMenuEditHidden.value = hidden
         prefs.edit { putBoolean(KEY_MORE_MENU_EDIT_HIDDEN, hidden) }
+    }
+
+    fun setSystemBarsHidden(hidden: Boolean) {
+        _systemBarsHidden.value = hidden
+        prefs.edit { putBoolean(KEY_SYSTEM_BARS_HIDDEN, hidden) }
     }
 
     fun resetMoreMenu() {
@@ -295,6 +304,7 @@ class DejavuSettings private constructor(context: Context) {
         private const val KEY_EXTERNAL_LINK_CONTAINER = "external_link_container"
         private const val KEY_MORE_MENU_ROWS = "more_menu_rows"
         private const val KEY_MORE_MENU_EDIT_HIDDEN = "more_menu_edit_hidden"
+        private const val KEY_SYSTEM_BARS_HIDDEN = "system_bars_hidden"
         private const val KEY_ACTIONS_BAR = "actions_bar"
         private const val KEY_HISTORY_GROUPING = "history_grouping"
         private const val KEY_TAB_SLEEP_MINUTES = "tab_sleep_minutes"

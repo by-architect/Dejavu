@@ -419,4 +419,7 @@
     <string name="dejavu_protection_links">ലിങ്കുകളിൽ നിന്ന് ട്രാക്കിങ് നീക്കുക</string>
     <string name="dejavu_protection_hint">ഓണാക്കിയ ഒരു സംരക്ഷണം നിങ്ങളെ കൂടുതൽ സുരക്ഷിതരാക്കുന്നു. ഓരോന്നും എന്തിൽ നിന്നാണ് സംരക്ഷിക്കുന്നതെന്നും അതുകാരണം എന്ത് പ്രവർത്തിക്കാതായേക്കാമെന്നും പറയുന്നു.</string>
     <string name="dejavu_sync_zen_hint_unpinned">Zen-ൽ, ക്രമീകരണങ്ങൾ തുറന്ന്, പിന്നെ സിങ്ക് തുറന്ന്, സൈഡ്‌ബാർ സിങ്ക് ഓൺ ചെയ്യുക.</string>
+    <string name="dejavu_settings_screen">സ്ക്രീൻ</string>
+    <string name="dejavu_settings_hide_system_bars">സ്റ്റാറ്റസ്, നാവിഗേഷൻ ബാറുകൾ മറയ്ക്കുക</string>
+    <string name="dejavu_settings_hide_system_bars_summary">ഒരു പേജ് കാണിക്കുമ്പോൾ. അവ ഒരു നിമിഷം കാണാൻ മുകളിലെയോ താഴത്തെയോ അരികിൽ നിന്ന് സ്വൈപ്പ് ചെയ്യുക.</string>
 </resources>

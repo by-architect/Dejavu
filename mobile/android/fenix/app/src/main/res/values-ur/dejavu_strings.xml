@@ -419,4 +419,7 @@
     <string name="dejavu_protection_links">روابط سے ٹریکنگ ہٹائیں</string>
     <string name="dejavu_protection_hint">جو تحفظ آن ہو وہ آپ کو زیادہ محفوظ رکھتا ہے۔ ہر ایک بتاتا ہے کہ وہ کس چیز سے بچاتا ہے اور اس کی وجہ سے کیا کام کرنا چھوڑ سکتا ہے۔</string>
     <string name="dejavu_sync_zen_hint_unpinned">Zen میں، سیٹنگز کھولیں، پھر سنک، اور سائیڈ بار ہم وقت سازی کو آن کریں۔</string>
+    <string name="dejavu_settings_screen">اسکرین</string>
+    <string name="dejavu_settings_hide_system_bars">اسٹیٹس اور نیویگیشن بار چھپائیں</string>
+    <string name="dejavu_settings_hide_system_bars_summary">جب کوئی صفحہ دکھایا جا رہا ہو۔ انہیں ایک لمحے کے لیے دیکھنے کے لیے اوپر یا نیچے کے کنارے سے سوائپ کریں۔</string>
 </resources>

@@ -13,7 +13,6 @@ import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxWidth
-import androidx.compose.foundation.layout.statusBarsPadding
 import androidx.compose.foundation.layout.wrapContentHeight
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.runtime.Composable
@@ -60,6 +59,7 @@ import org.mozilla.fenix.dejavu.browser.DejavuSearchChips
 import org.mozilla.fenix.dejavu.browser.DejavuToolbar
 import org.mozilla.fenix.dejavu.browser.DejavuTopBar
 import org.mozilla.fenix.dejavu.browser.SearchPageBackdrop
+import org.mozilla.fenix.dejavu.browser.statusBarRoomPadding
 import org.mozilla.fenix.theme.FirefoxTheme
 import org.mozilla.fenix.utils.Settings
 
@@ -168,12 +168,13 @@ class BrowserToolbarComposable(
                         when (!shouldUseBottomToolbar) {
                             true ->
                                 // Pages run up to the top of the screen, behind Dejavu's address bar, which keeps
-                                // below the status bar; while searching the page shows blurred behind everything.
+                                // below the status bar, also while it is hidden; while searching the page shows
+                                // blurred behind everything.
                                 Box {
                                     if (isDejavuBar) {
                                         SearchPageBackdrop(active = isSearching, modifier = Modifier.matchParentSize())
                                     }
-                                    Box(modifier = if (isDejavuBar) Modifier.statusBarsPadding() else Modifier) {
+                                    Box(modifier = if (isDejavuBar) Modifier.statusBarRoomPadding() else Modifier) {
                                         DejavuSearchAboveKeyboard(
                                             enabled = isDejavuBar,
                                             isSearching = isSearching,

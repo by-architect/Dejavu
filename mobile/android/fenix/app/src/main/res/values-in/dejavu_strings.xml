@@ -412,4 +412,7 @@
     <string name="dejavu_protection_links">Hapus pelacakan dari tautan</string>
     <string name="dejavu_protection_hint">Perlindungan yang aktif membuat Anda lebih aman. Masing-masing menjelaskan apa yang dicegahnya dan apa yang mungkin berhenti berfungsi karenanya.</string>
     <string name="dejavu_sync_zen_hint_unpinned">Di Zen, buka Pengaturan, lalu Sinkronisasi, dan aktifkan sinkronisasi sidebar.</string>
+    <string name="dejavu_settings_screen">Layar</string>
+    <string name="dejavu_settings_hide_system_bars">Sembunyikan bilah status dan navigasi</string>
+    <string name="dejavu_settings_hide_system_bars_summary">Saat halaman ditampilkan. Usap dari tepi atas atau bawah untuk melihatnya sejenak.</string>
 </resources>

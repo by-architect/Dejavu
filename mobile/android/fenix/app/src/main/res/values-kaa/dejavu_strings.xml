@@ -419,4 +419,7 @@
     <string name="dejavu_protection_links">Siltemelerden baqlawdı alıp taslaw</string>
     <string name="dejavu_protection_hint">Qosılǵan qorǵaw sizdi qáwipsizirek etedi. Hár biri neden qorǵaytuǵının hám onıń sebebinen neniń islemey qalıwı múmkin ekenin aytadı.</string>
     <string name="dejavu_sync_zen_hint_unpinned">Zen-de Sazlawlardı, soń Sinxronlastırıwdı ashıń hám yan panel sinxronlastırıwın qosıń.</string>
+    <string name="dejavu_settings_screen">Ekran</string>
+    <string name="dejavu_settings_hide_system_bars">Jaǵday hám navigaciya panellerin jasırıw</string>
+    <string name="dejavu_settings_hide_system_bars_summary">Bet kórsetilip turǵanda. Olardı bir sátke kóriw ushın joqarǵı yamasa tómengi shetten sırǵıtıń.</string>
 </resources>

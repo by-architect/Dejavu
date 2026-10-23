@@ -412,4 +412,7 @@
     <string name="dejavu_protection_links">លុបការតាមដានចេញពីតំណភ្ជាប់</string>
     <string name="dejavu_protection_hint">ការការពារដែលបើកធ្វើឱ្យអ្នកមានសុវត្ថិភាពជាងមុន។ ការការពារនីមួយៗប្រាប់ពីអ្វីដែលវាការពារ និងអ្វីដែលអាចឈប់ដំណើរការដោយសារវា។</string>
     <string name="dejavu_sync_zen_hint_unpinned">នៅក្នុង Zen បើកការកំណត់ បន្ទាប់មកសមកាលកម្ម ហើយបើកសមកាលកម្មរបារចំហៀង។</string>
+    <string name="dejavu_settings_screen">អេក្រង់</string>
+    <string name="dejavu_settings_hide_system_bars">លាក់របារស្ថានភាព និងរបាររុករក</string>
+    <string name="dejavu_settings_hide_system_bars_summary">ពេលទំព័រកំពុងបង្ហាញ។ អូសចូលពីគែមខាងលើ ឬខាងក្រោម ដើម្បីមើលពួកវាមួយភ្លែត។</string>
 </resources>
