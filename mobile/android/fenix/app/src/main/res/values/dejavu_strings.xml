@@ -274,7 +274,7 @@
 
     <!-- Browser toolbar -->
     <string name="dejavu_toolbar_container">Container: %1$s</string>
-    <!-- Panel that comes down from the address bar when it is swiped down, with the whole address, the connection's security, the container and the workspace of the page. Also the screen reader action of the address bar that opens it. -->
+    <!-- Panel that comes down from the address bar, with the whole address, the connection's security, the container and the workspace of the page. Also the screen reader action of the address bar that opens it. -->
     <string name="dejavu_page_info">Page details</string>
     <!-- Page details: small text under the name of the page's container. -->
     <string name="dejavu_page_info_container">Container</string>

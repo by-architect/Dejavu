@@ -76,7 +76,6 @@ import org.mozilla.fenix.dejavu.browser.moreMenuSwipe
 import org.mozilla.fenix.dejavu.browser.openDejavuMenu
 import org.mozilla.fenix.dejavu.browser.padForNavigationBar
 import org.mozilla.fenix.dejavu.browser.padForSystemBarsAtSides
-import org.mozilla.fenix.dejavu.browser.pageInfoSwipe
 import org.mozilla.fenix.dejavu.settings.DejavuSettings
 import org.mozilla.fenix.ext.application
 import org.mozilla.fenix.ext.components
@@ -271,12 +270,11 @@ class BrowserFragment : BaseBrowserFragment(), UserInteractionHandler {
                     navBarLayout = browserNavigationBar?.layout,
                     toolbarPosition = settings.toolbarPosition,
                     navController = findNavController(),
-                    // Only the actions bar opens the menu; a swipe down on the address bar opens the page's details.
+                    // Only the actions bar opens the menu; a swipe down on the address bar does nothing.
                     onSwipe = { fromNavBar: Boolean ->
                         if (fromNavBar) findNavController().openDejavuMenu(fromBottom = true)
                     }.takeIf { DejavuToolbar.enabled },
                     menuSwipe = findNavController().moreMenuSwipe().takeIf { DejavuToolbar.enabled },
-                    pageInfoSwipe = findNavController().pageInfoSwipe().takeIf { DejavuToolbar.enabled },
                 )
             )
         }

@@ -77,8 +77,7 @@ import org.mozilla.fenix.dejavu.workspaces.SplitOrientation
  * Dejavu's address bar while a page is shown: only its state, like Safari's. A field in the app's colors shows the
  * page title in the middle, with the site's security icon next to it and the site's domain in small letters below it.
  * The tab's container, or the "no container" icon, sits at its start; its end is kept free for a button to come.
- * Tapping the bar starts a search, long-pressing it copies the address or pastes one, and swiping it down shows the
- * page's details, see [org.mozilla.fenix.dejavu.menu.PageInfoMenu].
+ * Tapping the bar starts a search, and long-pressing it copies the address or pastes one. Swiping it does nothing.
  *
  * @param store The store of the address bar.
  */
@@ -108,7 +107,7 @@ fun DejavuTopBar(store: BrowserToolbarStore) {
             .semantics {
                 contentDescription = if (text == hint) hint else "$text. $hint"
                 role = Role.Button
-                // Screen readers cannot swipe the bar down, so the page's details are also an action of the bar.
+                // Screen readers can open the page's details from the bar.
                 customActions = listOf(
                     CustomAccessibilityAction(pageInfo) {
                         store.dispatch(DejavuToolbar.PageInfoRequested)

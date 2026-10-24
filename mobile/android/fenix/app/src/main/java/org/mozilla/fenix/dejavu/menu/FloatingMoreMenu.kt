@@ -77,9 +77,9 @@ import org.mozilla.fenix.dejavu.browser.statusBarRoomPadding
 import org.mozilla.fenix.dejavu.browser.workspaceTheme
 
 /**
- * A swipe on one of the browser's bars that opens a floating panel: up on the actions bar for the "More" menu, or down
- * on the address bar for the page's details. The swipe starts in the browser's window and stays there after the
- * panel's dialog came up over it, so the browser passes it on here for the panel to follow.
+ * A swipe on one of the browser's bars that opens a floating panel, like the swipe up on the actions bar that opens the
+ * "More" menu. The swipe starts in the browser's window and stays there after the panel's dialog came up over it, so
+ * the browser passes it on here for the panel to follow.
  */
 internal open class PanelSwipe {
     private var startedAt = 0L
@@ -135,7 +135,7 @@ internal open class PanelSwipe {
 /** The swipe up on the actions bar that opens the "More" menu. */
 internal object MoreMenuSwipe : PanelSwipe()
 
-/** The swipe down on the address bar that opens the page's details, see [PageInfoMenu]. */
+/** The swipe the page's details would follow, see [PageInfoMenu]; no bar starts it, so they open without one. */
 internal object PageInfoSwipe : PanelSwipe()
 
 /** Closes a floating panel, shrinking it back into its bar first. */

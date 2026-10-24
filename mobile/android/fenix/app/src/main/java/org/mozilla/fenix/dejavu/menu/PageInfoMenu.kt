@@ -196,8 +196,8 @@ private fun containerOf(
 }
 
 /**
- * The details of the shown page, which grow out of the address bar when it is swiped down: its whole address, how safe
- * the connection is, and where the tab is kept, its container and its workspace, which can be changed from here.
+ * The details of the shown page, which grow out of the address bar: its whole address, how safe the connection is, and
+ * where the tab is kept, its container and its workspace, which can be changed from here.
  *
  * @param menuStore Fenix's menu store, which shares the page as the "More" menu does.
  * @param navController Opens the panel of the site's security and permissions.
