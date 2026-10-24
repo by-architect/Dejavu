@@ -204,7 +204,8 @@
     <string name="dejavu_settings_actions_bar">ಕ್ರಿಯಾ ಪಟ್ಟಿ</string>
     <string name="dejavu_actions_bar_search">ಹುಡುಕು</string>
     <string name="dejavu_actions_bar_home">ಮುಖಪುಟ</string>
-    <string name="dejavu_settings_more_menu_summary">ಪುಟಗಳ ಕೆಳಗಿನ ಕ್ರಿಯಾ ಪಟ್ಟಿ ಮತ್ತು ಅದು ತೆರೆಯುವ ಮೆನು</string>
+    <string name="dejavu_settings_more_menu_summary_2">ವಿಳಾಸ ಪಟ್ಟಿಯ ಪಕ್ಕದ ಬಟನ್‌ಗಳು, ಕ್ರಿಯಾ ಪಟ್ಟಿ ಮತ್ತು ಇನ್ನಷ್ಟು ಮೆನು</string>
+    <string name="dejavu_more_menu_address_bar">ವಿಳಾಸ ಪಟ್ಟಿ</string>
     <string name="dejavu_more_menu_drag_hint">ಬಟನ್ ಅನ್ನು ಒತ್ತಿ ಹಿಡಿದು ಮೇಲಿನ ಸಾಲಿಗೆ ಎಳೆಯಿರಿ. ಬಟನ್ ಅನ್ನು ತೆಗೆದುಹಾಕಲು ಅದನ್ನು ಮತ್ತೆ ಇಲ್ಲಿ ಕೆಳಗೆ ಎಳೆಯಿರಿ.</string>
     <string name="dejavu_more_menu_add_row">ಒಂದು ಸಾಲು ಸೇರಿಸು</string>
     <string name="dejavu_more_menu_row_full">ಈ ಸಾಲು ತುಂಬಿದೆ.</string>
@@ -419,6 +420,13 @@
     <string name="dejavu_protection_links">ಲಿಂಕ್‌ಗಳಿಂದ ಟ್ರ್ಯಾಕಿಂಗ್ ತೆಗೆದುಹಾಕು</string>
     <string name="dejavu_protection_hint">ಆನ್ ಆಗಿರುವ ರಕ್ಷಣೆ ನಿಮ್ಮನ್ನು ಹೆಚ್ಚು ಸುರಕ್ಷಿತವಾಗಿರಿಸುತ್ತದೆ. ಪ್ರತಿಯೊಂದೂ ಅದು ಯಾವುದರಿಂದ ರಕ್ಷಿಸುತ್ತದೆ ಮತ್ತು ಅದರಿಂದಾಗಿ ಏನು ಕೆಲಸ ಮಾಡದೇ ಹೋಗಬಹುದು ಎಂದು ಹೇಳುತ್ತದೆ.</string>
     <string name="dejavu_sync_zen_hint_unpinned">Zen ನಲ್ಲಿ, ಸಿದ್ಧತೆಗಳನ್ನು ತೆರೆದು, ನಂತರ ಸಿಂಕ್ ಅನ್ನು ತೆರೆದು, ಸೈಡ್‌ಬಾರ್ ಸಿಂಕ್ ಅನ್ನು ಆನ್ ಮಾಡಿ.</string>
+    <string name="dejavu_settings_bars">ಪಟ್ಟಿಗಳು ಮತ್ತು ಮೆನು</string>
+    <string name="dejavu_bars_actions_bar">ವಿಳಾಸ ಪಟ್ಟಿ ಮೇಲ್ಭಾಗದಲ್ಲಿ, ಕ್ರಿಯಾ ಪಟ್ಟಿ ಕೆಳಭಾಗದಲ್ಲಿ</string>
+    <string name="dejavu_bars_actions_bar_summary">ಇನ್ನಷ್ಟು ಮೆನು ತೆರೆಯಲು ಕ್ರಿಯಾ ಪಟ್ಟಿಯನ್ನು ಮೇಲಕ್ಕೆ ಸ್ವೈಪ್ ಮಾಡಿ.</string>
+    <string name="dejavu_bars_top">ವಿಳಾಸ ಪಟ್ಟಿ ಮೇಲ್ಭಾಗದಲ್ಲಿ</string>
+    <string name="dejavu_bars_top_summary">ಕ್ರಿಯಾ ಪಟ್ಟಿ ಇಲ್ಲ. ಇನ್ನಷ್ಟು ಮೆನು ತೆರೆಯಲು ವಿಳಾಸ ಪಟ್ಟಿಯನ್ನು ಕೆಳಕ್ಕೆ ಸ್ವೈಪ್ ಮಾಡಿ.</string>
+    <string name="dejavu_bars_bottom">ವಿಳಾಸ ಪಟ್ಟಿ ಕೆಳಭಾಗದಲ್ಲಿ</string>
+    <string name="dejavu_bars_bottom_summary">ಕ್ರಿಯಾ ಪಟ್ಟಿ ಇಲ್ಲ. ಇನ್ನಷ್ಟು ಮೆನು ತೆರೆಯಲು ವಿಳಾಸ ಪಟ್ಟಿಯನ್ನು ಮೇಲಕ್ಕೆ ಸ್ವೈಪ್ ಮಾಡಿ.</string>
     <string name="dejavu_settings_screen">ಪರದೆ</string>
     <string name="dejavu_settings_hide_system_bars">ಸ್ಥಿತಿ ಮತ್ತು ನ್ಯಾವಿಗೇಶನ್ ಬಾರ್‌ಗಳನ್ನು ಮರೆಮಾಡಿ</string>
     <string name="dejavu_settings_hide_system_bars_summary">ಪುಟ ತೋರಿಸುತ್ತಿರುವಾಗ. ಅವುಗಳನ್ನು ಸ್ವಲ್ಪ ಹೊತ್ತು ನೋಡಲು ಮೇಲಿನ ಅಥವಾ ಕೆಳಗಿನ ಅಂಚಿನಿಂದ ಸ್ವೈಪ್ ಮಾಡಿ.</string>

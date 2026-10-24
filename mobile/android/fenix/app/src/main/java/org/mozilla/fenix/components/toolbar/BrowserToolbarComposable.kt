@@ -54,11 +54,12 @@ import org.mozilla.fenix.components.AppStore
 import org.mozilla.fenix.components.appstate.AppAction.SearchAction.SearchEnded
 import org.mozilla.fenix.components.toolbar.ToolbarPosition.BOTTOM
 import org.mozilla.fenix.components.toolbar.ToolbarPosition.TOP
+import org.mozilla.fenix.dejavu.browser.DejavuAddressBar
 import org.mozilla.fenix.dejavu.browser.DejavuSearchAboveKeyboard
 import org.mozilla.fenix.dejavu.browser.DejavuSearchChips
 import org.mozilla.fenix.dejavu.browser.DejavuToolbar
-import org.mozilla.fenix.dejavu.browser.DejavuTopBar
 import org.mozilla.fenix.dejavu.browser.SearchPageBackdrop
+import org.mozilla.fenix.dejavu.browser.currentBarsLayout
 import org.mozilla.fenix.dejavu.browser.statusBarRoomPadding
 import org.mozilla.fenix.theme.FirefoxTheme
 import org.mozilla.fenix.utils.Settings
@@ -165,6 +166,8 @@ class BrowserToolbarComposable(
 
                     MaterialTheme(colorScheme = colorScheme) {
                         val isDejavuBar = DejavuToolbar.enabled && customTabSession == null
+                        // Dejavu's address bar can show below pages instead, where it takes the actions bar's place.
+                        val isDejavuBarOnTop = isDejavuBar && !currentBarsLayout().addressBarAtBottom
                         when (!shouldUseBottomToolbar) {
                             true ->
                                 // Pages run up to the top of the screen, behind Dejavu's address bar, which keeps
@@ -178,9 +181,10 @@ class BrowserToolbarComposable(
                                         DejavuSearchAboveKeyboard(
                                             enabled = isDejavuBar,
                                             isSearching = isSearching,
+                                            fromTop = isDejavuBarOnTop,
                                             toolbar = {
                                                 if (!isSearching) {
-                                                    DejavuTopBar(toolbarStore)
+                                                    if (isDejavuBarOnTop) DejavuAddressBar(toolbarStore)
                                                 } else {
                                                     Column {
                                                         DejavuSearchChips(newTab = false)
@@ -200,7 +204,7 @@ class BrowserToolbarComposable(
                                                     tabStripContent()
                                                 }
                                                 if (isDejavuBar && !isSearching) {
-                                                    DejavuTopBar(toolbarStore)
+                                                    if (isDejavuBarOnTop) DejavuAddressBar(toolbarStore)
                                                 } else {
                                                     BrowserToolbar(
                                                         store = toolbarStore,

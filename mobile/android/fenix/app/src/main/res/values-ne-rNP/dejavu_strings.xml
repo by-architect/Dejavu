@@ -204,7 +204,8 @@
     <string name="dejavu_settings_actions_bar">कार्य पट्टी</string>
     <string name="dejavu_actions_bar_search">खोज</string>
     <string name="dejavu_actions_bar_home">होम</string>
-    <string name="dejavu_settings_more_menu_summary">पृष्ठहरुमुनि रहेको कार्य पट्टी र यसले खोल्ने मेनु</string>
+    <string name="dejavu_settings_more_menu_summary_2">ठेगाना पट्टीको छेउका बटनहरु, कार्य पट्टी र थप मेनु</string>
+    <string name="dejavu_more_menu_address_bar">ठेगाना पट्टी</string>
     <string name="dejavu_more_menu_drag_hint">बटन थिचिराख्नुहोस् र यसलाई माथिको पङ्क्तिमा तान्नुहोस्। बटन हटाउन यसलाई फेरि यहाँ तल तान्नुहोस्।</string>
     <string name="dejavu_more_menu_add_row">पङ्क्ति थप्नुहोस्</string>
     <string name="dejavu_more_menu_row_full">यो पङ्क्ति भरियो।</string>
@@ -419,6 +420,13 @@
     <string name="dejavu_protection_links">लिङ्कहरूबाट ट्र्याकिङ हटाउनुहोस्</string>
     <string name="dejavu_protection_hint">सक्रिय रहेको सुरक्षाले तपाईंलाई अझ सुरक्षित राख्छ। प्रत्येकले यो केबाट जोगाउँछ र यसका कारण के काम गर्न छोड्न सक्छ भनी बताउँछ।</string>
     <string name="dejavu_sync_zen_hint_unpinned">Zen मा, सेटिङ्ग खोल्नुहोस्, त्यसपछि सिंक, र साइडबार सिंक खोल्नुहोस्।</string>
+    <string name="dejavu_settings_bars">पट्टीहरु र मेनु</string>
+    <string name="dejavu_bars_actions_bar">ठेगाना पट्टी माथि, कार्य पट्टी तल</string>
+    <string name="dejavu_bars_actions_bar_summary">थप मेनु खोल्न कार्य पट्टीलाई माथि स्वाइप गर्नुहोस्।</string>
+    <string name="dejavu_bars_top">ठेगाना पट्टी माथि</string>
+    <string name="dejavu_bars_top_summary">कुनै कार्य पट्टी छैन। थप मेनु खोल्न ठेगाना पट्टीलाई तल स्वाइप गर्नुहोस्।</string>
+    <string name="dejavu_bars_bottom">ठेगाना पट्टी तल</string>
+    <string name="dejavu_bars_bottom_summary">कुनै कार्य पट्टी छैन। थप मेनु खोल्न ठेगाना पट्टीलाई माथि स्वाइप गर्नुहोस्।</string>
     <string name="dejavu_settings_screen">स्क्रिन</string>
     <string name="dejavu_settings_hide_system_bars">स्ट्याटस र नेभिगेसन बार लुकाउनुहोस्</string>
     <string name="dejavu_settings_hide_system_bars_summary">पृष्ठ देखाइँदा। तिनलाई एकछिन हेर्न माथि वा तलको किनाराबाट स्वाइप गर्नुहोस्।</string>

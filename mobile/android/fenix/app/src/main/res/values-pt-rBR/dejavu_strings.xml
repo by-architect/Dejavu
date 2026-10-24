@@ -205,7 +205,8 @@
     <string name="dejavu_settings_actions_bar">Barra de ações</string>
     <string name="dejavu_actions_bar_search">Pesquisar</string>
     <string name="dejavu_actions_bar_home">Início</string>
-    <string name="dejavu_settings_more_menu_summary">A barra de ações abaixo das páginas e o menu que ela abre</string>
+    <string name="dejavu_settings_more_menu_summary_2">Os botões ao lado da barra de endereços, a barra de ações e o menu Mais</string>
+    <string name="dejavu_more_menu_address_bar">Barra de endereços</string>
     <string name="dejavu_more_menu_drag_hint">Mantenha um botão pressionado e arraste-o para uma linha acima. Arraste um botão de volta para cá embaixo para removê-lo.</string>
     <string name="dejavu_more_menu_add_row">Adicionar uma linha</string>
     <string name="dejavu_more_menu_row_full">Esta linha está cheia.</string>
@@ -426,6 +427,13 @@
     <string name="dejavu_protection_links">Remover rastreamento de links</string>
     <string name="dejavu_protection_hint">Uma proteção ativada deixa você mais seguro. Cada uma diz contra o que protege e o que pode parar de funcionar por causa dela.</string>
     <string name="dejavu_sync_zen_hint_unpinned">No Zen, abra Configurações e depois Sincronização, e ative a sincronização da barra lateral.</string>
+    <string name="dejavu_settings_bars">Barras e menu</string>
+    <string name="dejavu_bars_actions_bar">Barra de endereços em cima, barra de ações embaixo</string>
+    <string name="dejavu_bars_actions_bar_summary">Deslize a barra de ações para cima para abrir o menu Mais.</string>
+    <string name="dejavu_bars_top">Barra de endereços em cima</string>
+    <string name="dejavu_bars_top_summary">Sem barra de ações. Deslize a barra de endereços para baixo para abrir o menu Mais.</string>
+    <string name="dejavu_bars_bottom">Barra de endereços embaixo</string>
+    <string name="dejavu_bars_bottom_summary">Sem barra de ações. Deslize a barra de endereços para cima para abrir o menu Mais.</string>
     <string name="dejavu_settings_screen">Tela</string>
     <string name="dejavu_settings_hide_system_bars">Ocultar as barras de status e de navegação</string>
     <string name="dejavu_settings_hide_system_bars_summary">Enquanto uma página é exibida. Deslize a partir da borda superior ou inferior para vê-las por um momento.</string>

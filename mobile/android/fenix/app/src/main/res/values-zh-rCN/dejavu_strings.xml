@@ -203,7 +203,8 @@
     <string name="dejavu_settings_actions_bar">操作栏</string>
     <string name="dejavu_actions_bar_search">搜索</string>
     <string name="dejavu_actions_bar_home">主页</string>
-    <string name="dejavu_settings_more_menu_summary">网页下方的操作栏及其打开的菜单</string>
+    <string name="dejavu_settings_more_menu_summary_2">地址栏旁边的按钮、操作栏和更多菜单</string>
+    <string name="dejavu_more_menu_address_bar">地址栏</string>
     <string name="dejavu_more_menu_drag_hint">长按按钮，将其拖到上方的某一行。将按钮拖回下方此处即可移除。</string>
     <string name="dejavu_more_menu_add_row">添加行</string>
     <string name="dejavu_more_menu_row_full">此行已满。</string>
@@ -412,6 +413,13 @@
     <string name="dejavu_protection_links">移除链接中的跟踪信息</string>
     <string name="dejavu_protection_hint">开启的保护功能能让您更安全。每项都会说明它防范什么，以及可能因此无法正常使用的功能。</string>
     <string name="dejavu_sync_zen_hint_unpinned">在 Zen 中打开“设置”,然后进入“同步”,开启侧边栏同步。</string>
+    <string name="dejavu_settings_bars">工具栏和菜单</string>
+    <string name="dejavu_bars_actions_bar">地址栏在顶部，操作栏在底部</string>
+    <string name="dejavu_bars_actions_bar_summary">向上滑动操作栏即可打开更多菜单。</string>
+    <string name="dejavu_bars_top">地址栏在顶部</string>
+    <string name="dejavu_bars_top_summary">无操作栏。向下滑动地址栏即可打开更多菜单。</string>
+    <string name="dejavu_bars_bottom">地址栏在底部</string>
+    <string name="dejavu_bars_bottom_summary">无操作栏。向上滑动地址栏即可打开更多菜单。</string>
     <string name="dejavu_settings_screen">屏幕</string>
     <string name="dejavu_settings_hide_system_bars">隐藏状态栏和导航栏</string>
     <string name="dejavu_settings_hide_system_bars_summary">显示网页时。从上边缘或下边缘向内滑动可短暂显示它们。</string>

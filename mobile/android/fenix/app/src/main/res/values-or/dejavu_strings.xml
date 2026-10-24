@@ -204,7 +204,8 @@
     <string name="dejavu_settings_actions_bar">କାର୍ଯ୍ୟ ବାର୍</string>
     <string name="dejavu_actions_bar_search">ଖୋଜନ୍ତୁ</string>
     <string name="dejavu_actions_bar_home">ହୋମ୍</string>
-    <string name="dejavu_settings_more_menu_summary">ପୃଷ୍ଠା ତଳେ ଥିବା କାର୍ଯ୍ୟ ବାର୍ ଏବଂ ଏହା ଖୋଲୁଥିବା ମେନୁ</string>
+    <string name="dejavu_settings_more_menu_summary_2">ଠିକଣା ବାର୍ ପାଖରେ ଥିବା ବଟନ୍, କାର୍ଯ୍ୟ ବାର୍ ଏବଂ ଅଧିକ ମେନୁ</string>
+    <string name="dejavu_more_menu_address_bar">ଠିକଣା ବାର୍</string>
     <string name="dejavu_more_menu_drag_hint">ଏକ ବଟନ୍‌କୁ ଦବାଇ ଧରନ୍ତୁ ଏବଂ ଏହାକୁ ଉପରର ଏକ ଧାଡିକୁ ଟାଣନ୍ତୁ। ଏକ ବଟନ୍‌କୁ ହଟାଇବାକୁ ଏହାକୁ ପୁଣି ଏଠାକୁ ତଳକୁ ଟାଣନ୍ତୁ।</string>
     <string name="dejavu_more_menu_add_row">ଏକ ଧାଡି ଯୋଡନ୍ତୁ</string>
     <string name="dejavu_more_menu_row_full">ଏହି ଧାଡି ପୂର୍ଣ୍ଣ ଅଛି।</string>
@@ -419,6 +420,13 @@
     <string name="dejavu_protection_links">ଲିଙ୍କରୁ ଟ୍ରାକିଂ ହଟାନ୍ତୁ</string>
     <string name="dejavu_protection_hint">ଚାଲୁ ଥିବା ସୁରକ୍ଷା ଆପଣଙ୍କୁ ଅଧିକ ସୁରକ୍ଷିତ ରଖେ। ପ୍ରତ୍ୟେକଟି କହେ ଯେ ଏହା କେଉଁଥିରୁ ରକ୍ଷା କରେ ଏବଂ ଏହା ଯୋଗୁଁ କ\'ଣ କାମ କରିବା ବନ୍ଦ କରିପାରେ।</string>
     <string name="dejavu_sync_zen_hint_unpinned">Zen ରେ, ସେଟିଂସମୂହ ଖୋଲନ୍ତୁ, ତାପରେ ସିଙ୍କ, ଏବଂ ସାଇଡବାର ସିଙ୍କ ଅନ୍ କରନ୍ତୁ।</string>
+    <string name="dejavu_settings_bars">ବାର୍ ଏବଂ ମେନୁ</string>
+    <string name="dejavu_bars_actions_bar">ଉପରେ ଠିକଣା ବାର୍, ତଳେ କାର୍ଯ୍ୟ ବାର୍</string>
+    <string name="dejavu_bars_actions_bar_summary">ଅଧିକ ମେନୁ ଖୋଲିବାକୁ କାର୍ଯ୍ୟ ବାର୍‌କୁ ଉପରକୁ ସ୍ୱାଇପ୍ କରନ୍ତୁ।</string>
+    <string name="dejavu_bars_top">ଉପରେ ଠିକଣା ବାର୍</string>
+    <string name="dejavu_bars_top_summary">କାର୍ଯ୍ୟ ବାର୍ ନାହିଁ। ଅଧିକ ମେନୁ ଖୋଲିବାକୁ ଠିକଣା ବାର୍‌କୁ ତଳକୁ ସ୍ୱାଇପ୍ କରନ୍ତୁ।</string>
+    <string name="dejavu_bars_bottom">ତଳେ ଠିକଣା ବାର୍</string>
+    <string name="dejavu_bars_bottom_summary">କାର୍ଯ୍ୟ ବାର୍ ନାହିଁ। ଅଧିକ ମେନୁ ଖୋଲିବାକୁ ଠିକଣା ବାର୍‌କୁ ଉପରକୁ ସ୍ୱାଇପ୍ କରନ୍ତୁ।</string>
     <string name="dejavu_settings_screen">ସ୍କ୍ରିନ</string>
     <string name="dejavu_settings_hide_system_bars">ଷ୍ଟାଟସ ଏବଂ ନାଭିଗେସନ ବାର ଲୁଚାନ୍ତୁ</string>
     <string name="dejavu_settings_hide_system_bars_summary">ଯେତେବେଳେ ଏକ ପୃଷ୍ଠା ଦେଖାଯାଏ। ସେଗୁଡ଼ିକୁ କିଛି ସମୟ ଦେଖିବା ପାଇଁ ଉପର କିମ୍ବା ତଳ ଧାରରୁ ସ୍ୱାଇପ କରନ୍ତୁ।</string>

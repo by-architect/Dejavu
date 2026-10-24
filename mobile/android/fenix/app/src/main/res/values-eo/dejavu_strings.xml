@@ -204,7 +204,8 @@
     <string name="dejavu_settings_actions_bar">Agostrio</string>
     <string name="dejavu_actions_bar_search">Serĉi</string>
     <string name="dejavu_actions_bar_home">Hejmo</string>
-    <string name="dejavu_settings_more_menu_summary">La agostrio sub paĝoj kaj la menuo, kiun ĝi malfermas</string>
+    <string name="dejavu_settings_more_menu_summary_2">La butonoj apud la adresa strio, la agostrio kaj la plua menuo</string>
+    <string name="dejavu_more_menu_address_bar">Adresa strio</string>
     <string name="dejavu_more_menu_drag_hint">Tenu butonon kaj trenu ĝin al vico supre. Trenu butonon reen ĉi tien malsupre por forigi ĝin.</string>
     <string name="dejavu_more_menu_add_row">Aldoni vicon</string>
     <string name="dejavu_more_menu_row_full">Ĉi tiu vico estas plena.</string>
@@ -419,6 +420,13 @@
     <string name="dejavu_protection_links">Forigi spuradon el ligiloj</string>
     <string name="dejavu_protection_hint">Ŝaltita protekto tenas vin pli sekura. Ĉiu diras, kontraŭ kio ĝi gardas vin kaj kio povas ĉesi funkcii pro ĝi.</string>
     <string name="dejavu_sync_zen_hint_unpinned">En Zen, malfermu Agordojn, poste Sinkronigon, kaj ŝaltu sinkronigon de la flanka breto.</string>
+    <string name="dejavu_settings_bars">Strioj kaj menuo</string>
+    <string name="dejavu_bars_actions_bar">Adresa strio supre, agostrio malsupre</string>
+    <string name="dejavu_bars_actions_bar_summary">Ŝovu la agostrion supren por malfermi la pluan menuon.</string>
+    <string name="dejavu_bars_top">Adresa strio supre</string>
+    <string name="dejavu_bars_top_summary">Neniu agostrio. Ŝovu la adresan strion malsupren por malfermi la pluan menuon.</string>
+    <string name="dejavu_bars_bottom">Adresa strio malsupre</string>
+    <string name="dejavu_bars_bottom_summary">Neniu agostrio. Ŝovu la adresan strion supren por malfermi la pluan menuon.</string>
     <string name="dejavu_settings_screen">Ekrano</string>
     <string name="dejavu_settings_hide_system_bars">Kaŝi la statan kaj navigan stangojn</string>
     <string name="dejavu_settings_hide_system_bars_summary">Dum paĝo estas montrata. Ŝovu de la supra aŭ malsupra rando por vidi ilin dum momento.</string>

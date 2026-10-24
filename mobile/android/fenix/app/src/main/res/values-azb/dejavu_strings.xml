@@ -204,7 +204,8 @@
     <string name="dejavu_settings_actions_bar">عملیات‌لار پانئلی</string>
     <string name="dejavu_actions_bar_search">آختار</string>
     <string name="dejavu_actions_bar_home">آنا صفحه</string>
-    <string name="dejavu_settings_more_menu_summary">صفحه‌لرین آلتینداکی عملیات‌لار پانئلی و اونون آچدیغی منو</string>
+    <string name="dejavu_settings_more_menu_summary_2">آدرس چوبوغونون یانینداکی دوگمه‌لر، عملیات‌لار پانئلی و «داها چوخ» منوسو</string>
+    <string name="dejavu_more_menu_address_bar">آدرس چوبوغو</string>
     <string name="dejavu_more_menu_drag_hint">بیر دوگمه‌نی باسیب ساخلایین و یوخاریداکی بیر سیرایا سوروکله‌یین. بیر دوگمه‌نی سیلمک اوچون اونو گئنه بورایا، آشاغی سوروکله‌یین.</string>
     <string name="dejavu_more_menu_add_row">سیرا اَلاوه ات</string>
     <string name="dejavu_more_menu_row_full">بو سیرا دولودور.</string>
@@ -419,6 +420,13 @@
     <string name="dejavu_protection_links">لینک‌لردن ایزله‌مه‌نی سیل</string>
     <string name="dejavu_protection_hint">آچیق اولان قوروما سیزی داها گوونلی ساخلاییر. هر بیری نه‌دن قورودوغونو و اونون اوزوندن نه‌یین ایشله‌مه‌یی دایاندیرا بیله‌جگینی دئییر.</string>
     <string name="dejavu_sync_zen_hint_unpinned">Zen-ده تنظیم‌لری، سونرا همگام‌سازینی آچین و یان پانل همگام‌سازی‌سینی فعاللاشدیرین.</string>
+    <string name="dejavu_settings_bars">پانئل‌لر و منو</string>
+    <string name="dejavu_bars_actions_bar">آدرس چوبوغو یوخاریدا، عملیات‌لار پانئلی آشاغیدا</string>
+    <string name="dejavu_bars_actions_bar_summary">«داها چوخ» منوسونو آچماق اوچون عملیات‌لار پانئلینی یوخاری سوروشدورون.</string>
+    <string name="dejavu_bars_top">آدرس چوبوغو یوخاریدا</string>
+    <string name="dejavu_bars_top_summary">عملیات‌لار پانئلی یوخدور. «داها چوخ» منوسونو آچماق اوچون آدرس چوبوغونو آشاغی سوروشدورون.</string>
+    <string name="dejavu_bars_bottom">آدرس چوبوغو آشاغیدا</string>
+    <string name="dejavu_bars_bottom_summary">عملیات‌لار پانئلی یوخدور. «داها چوخ» منوسونو آچماق اوچون آدرس چوبوغونو یوخاری سوروشدورون.</string>
     <string name="dejavu_settings_screen">اکران</string>
     <string name="dejavu_settings_hide_system_bars">وضعیت و ناویقاسیا پانل‌لرینی گیزلت</string>
     <string name="dejavu_settings_hide_system_bars_summary">بیر صفحه گؤستریلنده. اونلاری بیر آن گؤرمک اوچون یوخاری یا آشاغی قیراغیندان سوروشدورون.</string>

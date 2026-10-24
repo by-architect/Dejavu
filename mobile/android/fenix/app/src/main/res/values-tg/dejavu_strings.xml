@@ -204,7 +204,8 @@
     <string name="dejavu_settings_actions_bar">Навори амалҳо</string>
     <string name="dejavu_actions_bar_search">Ҷустуҷӯ</string>
     <string name="dejavu_actions_bar_home">Асосӣ</string>
-    <string name="dejavu_settings_more_menu_summary">Навори амалҳо дар зери саҳифаҳо ва менюе, ки он мекушояд</string>
+    <string name="dejavu_settings_more_menu_summary_2">Тугмаҳои назди навори нишонӣ, навори амалҳо ва менюи иловагӣ</string>
+    <string name="dejavu_more_menu_address_bar">Навори нишонӣ</string>
     <string name="dejavu_more_menu_drag_hint">Тугмаро пахш карда нигоҳ доред ва онро ба сатри боло кашед. Барои хориҷ кардани тугма онро боз ба ин ҷо, ба поён кашед.</string>
     <string name="dejavu_more_menu_add_row">Илова кардани сатр</string>
     <string name="dejavu_more_menu_row_full">Ин сатр пур аст.</string>
@@ -419,6 +420,13 @@
     <string name="dejavu_protection_links">Тоза кардани пайгирӣ аз пайвандҳо</string>
     <string name="dejavu_protection_hint">Муҳофизати фаъол шуморо бехатартар нигоҳ медорад. Ҳар кадоме мегӯяд, ки аз чӣ муҳофизат мекунад ва аз сабаби он чӣ метавонад кор накунад.</string>
     <string name="dejavu_sync_zen_hint_unpinned">Дар Zen «Танзимот»-ро кушоед, сипас «Ҳамоҳангсозӣ»-ро ва ҳамоҳангсозии сутуни паҳлӯро фаъол кунед.</string>
+    <string name="dejavu_settings_bars">Наворҳо ва меню</string>
+    <string name="dejavu_bars_actions_bar">Навори нишонӣ дар боло, навори амалҳо дар поён</string>
+    <string name="dejavu_bars_actions_bar_summary">Барои кушодани менюи иловагӣ навори амалҳоро ба боло кашед.</string>
+    <string name="dejavu_bars_top">Навори нишонӣ дар боло</string>
+    <string name="dejavu_bars_top_summary">Бе навори амалҳо. Барои кушодани менюи иловагӣ навори нишониро ба поён кашед.</string>
+    <string name="dejavu_bars_bottom">Навори нишонӣ дар поён</string>
+    <string name="dejavu_bars_bottom_summary">Бе навори амалҳо. Барои кушодани менюи иловагӣ навори нишониро ба боло кашед.</string>
     <string name="dejavu_settings_screen">Экран</string>
     <string name="dejavu_settings_hide_system_bars">Пинҳон кардани навори ҳолат ва навори паймоиш</string>
     <string name="dejavu_settings_hide_system_bars_summary">Ҳангоми намоиш додани саҳифа. Барои як лаҳза дидани онҳо аз канори боло ё поён ангуштро гузаронед.</string>

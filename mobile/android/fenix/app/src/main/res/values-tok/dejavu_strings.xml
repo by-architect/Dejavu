@@ -203,7 +203,8 @@
     <string name="dejavu_settings_actions_bar">linja ilo</string>
     <string name="dejavu_actions_bar_search">o alasa</string>
     <string name="dejavu_actions_bar_home">tomo</string>
-    <string name="dejavu_settings_more_menu_summary">linja ilo lon anpa lipu, en ilo mute pi open ona</string>
+    <string name="dejavu_settings_more_menu_summary_2">ilo lili lon poka pi linja pi nasin lipu, en linja ilo, en ilo mute</string>
+    <string name="dejavu_more_menu_address_bar">linja pi nasin lipu</string>
     <string name="dejavu_more_menu_drag_hint">o awen e luka lon ilo lili, o tawa e ona tawa linja sewi. o tawa e ilo lili tawa anpa ni la ona li weka.</string>
     <string name="dejavu_more_menu_add_row">o pana e linja</string>
     <string name="dejavu_more_menu_row_full">linja ni li ken ala jo e ilo sin.</string>
@@ -412,6 +413,13 @@
     <string name="dejavu_protection_links">o weka e alasa jan tan nasin lipu</string>
     <string name="dejavu_protection_hint">awen li open la, sina awen mute. awen wan wan li toki e ni: ona li weka e ike seme, li ken pakala e seme.</string>
     <string name="dejavu_sync_zen_hint_unpinned">lon Zen, o open e nasin ilo, la o open e sama, la o ken e sama pi poki poka.</string>
+    <string name="dejavu_settings_bars">linja en ilo mute</string>
+    <string name="dejavu_bars_actions_bar">linja pi nasin lipu lon sewi, linja ilo lon anpa</string>
+    <string name="dejavu_bars_actions_bar_summary">o tawa sewi e linja ilo tawa open e ilo mute.</string>
+    <string name="dejavu_bars_top">linja pi nasin lipu lon sewi</string>
+    <string name="dejavu_bars_top_summary">linja ilo li lon ala. o tawa anpa e linja pi nasin lipu tawa open e ilo mute.</string>
+    <string name="dejavu_bars_bottom">linja pi nasin lipu lon anpa</string>
+    <string name="dejavu_bars_bottom_summary">linja ilo li lon ala. o tawa sewi e linja pi nasin lipu tawa open e ilo mute.</string>
     <string name="dejavu_settings_screen">sinpin</string>
     <string name="dejavu_settings_hide_system_bars">o len e linja sona e linja tawa</string>
     <string name="dejavu_settings_hide_system_bars_summary">tenpo pi lipu lukin. sina wile lukin lili e ona la, o tawa tan poka sewi anu poka anpa.</string>

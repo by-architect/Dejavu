@@ -205,7 +205,8 @@
     <string name="dejavu_settings_actions_bar">ᱮᱠᱥᱚᱱ ᱵᱟᱨ</string>
     <string name="dejavu_actions_bar_search">ᱥᱮᱸᱫᱽᱨᱟ</string>
     <string name="dejavu_actions_bar_home">ᱚᱲᱟᱜ</string>
-    <string name="dejavu_settings_more_menu_summary">ᱥᱟᱦᱴᱟ ᱞᱟᱛᱟᱨ ᱨᱮᱭᱟᱜ ᱮᱠᱥᱚᱱ ᱵᱟᱨ ᱟᱨ ᱚᱱᱟ ᱡᱷᱤᱡᱽ ᱠᱟᱱ ᱢᱮᱱᱩ</string>
+    <string name="dejavu_settings_more_menu_summary_2">ᱴᱷᱤᱠᱟᱱᱟ ᱵᱟᱨ ᱥᱩᱨ ᱨᱮᱭᱟᱜ ᱵᱚᱴᱚᱱ ᱠᱚ, ᱮᱠᱥᱚᱱ ᱵᱟᱨ ᱟᱨ ᱢᱚᱨ ᱢᱮᱱᱩ</string>
+    <string name="dejavu_more_menu_address_bar">ᱴᱷᱤᱠᱟᱱᱟ ᱵᱟᱨ</string>
     <string name="dejavu_more_menu_drag_hint">ᱢᱤᱫ ᱵᱚᱴᱚᱱ ᱚᱛᱟ ᱫᱚᱦᱚᱭ ᱢᱮ ᱟᱨ ᱪᱮᱛᱟᱱ ᱨᱮᱭᱟᱜ ᱢᱤᱫ ᱨᱚ ᱛᱮ ᱚᱨ ᱢᱮ ᱾ ᱵᱚᱴᱚᱱ ᱚᱰᱚᱠ ᱞᱟᱹᱜᱤᱛ ᱚᱱᱟ ᱫᱩᱦᱲᱟᱹ ᱱᱚᱸᱰᱮ ᱞᱟᱛᱟᱨ ᱛᱮ ᱚᱨ ᱢᱮ ᱾</string>
     <string name="dejavu_more_menu_add_row">ᱢᱤᱫ ᱨᱚ ᱥᱮᱞᱮᱫᱽ ᱢᱮ</string>
     <string name="dejavu_more_menu_row_full">ᱱᱚᱶᱟ ᱨᱚ ᱯᱩᱨᱟᱹ ᱠᱟᱱᱟ ᱾</string>
@@ -426,6 +427,13 @@
     <string name="dejavu_protection_links">ᱞᱤᱝᱠ ᱠᱚ ᱠᱷᱚᱱ ᱯᱟᱧᱡᱟ ᱚᱰᱚᱠ ᱢᱮ</string>
     <string name="dejavu_protection_hint">ᱪᱟᱹᱞᱩ ᱨᱩᱠᱷᱤᱭᱟᱹ ᱫᱚ ᱟᱢ ᱟᱨᱦᱚᱸ ᱨᱩᱠᱷᱤᱭᱟᱹ ᱛᱮ ᱫᱚᱦᱚ ᱢᱮᱭᱟ ᱾ ᱢᱤᱫ ᱢᱤᱫ ᱨᱩᱠᱷᱤᱭᱟᱹ ᱩᱫᱩᱜ ᱮᱫᱟ ᱡᱮ ᱚᱱᱟ ᱪᱮᱫ ᱴᱷᱮᱱ ᱠᱷᱚᱱ ᱨᱩᱠᱷᱤᱭᱟᱹ ᱮᱫᱟ ᱟᱨ ᱚᱱᱟ ᱠᱷᱟᱹᱛᱤᱨ ᱪᱮᱫ ᱠᱟᱹᱢᱤ ᱵᱚᱸᱫᱚᱜ ᱫᱟᱲᱮᱭᱟᱜᱼᱟ ᱾</string>
     <string name="dejavu_sync_zen_hint_unpinned">Zen ᱨᱮ, ᱥᱟᱡᱟᱣ ᱡᱷᱤᱡᱽ ᱢᱮ, ᱚᱱᱟ ᱛᱟᱭᱚᱢ ᱥᱤᱝᱠ, ᱟᱨ ᱥᱟᱭᱰᱵᱟᱨ ᱥᱤᱝᱠ ᱚᱱ ᱢᱮ ᱾</string>
+    <string name="dejavu_settings_bars">ᱵᱟᱨ ᱠᱚ ᱟᱨ ᱢᱮᱱᱩ</string>
+    <string name="dejavu_bars_actions_bar">ᱪᱮᱛᱟᱱ ᱨᱮ ᱴᱷᱤᱠᱟᱱᱟ ᱵᱟᱨ, ᱞᱟᱛᱟᱨ ᱨᱮ ᱮᱠᱥᱚᱱ ᱵᱟᱨ</string>
+    <string name="dejavu_bars_actions_bar_summary">ᱢᱚᱨ ᱢᱮᱱᱩ ᱡᱷᱤᱡᱽ ᱞᱟᱹᱜᱤᱫ ᱮᱠᱥᱚᱱ ᱵᱟᱨ ᱪᱮᱛᱟᱱ ᱛᱮ ᱥᱣᱟᱭᱤᱯ ᱢᱮ ᱾</string>
+    <string name="dejavu_bars_top">ᱪᱮᱛᱟᱱ ᱨᱮ ᱴᱷᱤᱠᱟᱱᱟ ᱵᱟᱨ</string>
+    <string name="dejavu_bars_top_summary">ᱮᱠᱥᱚᱱ ᱵᱟᱨ ᱵᱟᱹᱱᱩᱜᱼᱟ ᱾ ᱢᱚᱨ ᱢᱮᱱᱩ ᱡᱷᱤᱡᱽ ᱞᱟᱹᱜᱤᱫ ᱴᱷᱤᱠᱟᱱᱟ ᱵᱟᱨ ᱞᱟᱛᱟᱨ ᱛᱮ ᱥᱣᱟᱭᱤᱯ ᱢᱮ ᱾</string>
+    <string name="dejavu_bars_bottom">ᱞᱟᱛᱟᱨ ᱨᱮ ᱴᱷᱤᱠᱟᱱᱟ ᱵᱟᱨ</string>
+    <string name="dejavu_bars_bottom_summary">ᱮᱠᱥᱚᱱ ᱵᱟᱨ ᱵᱟᱹᱱᱩᱜᱼᱟ ᱾ ᱢᱚᱨ ᱢᱮᱱᱩ ᱡᱷᱤᱡᱽ ᱞᱟᱹᱜᱤᱫ ᱴᱷᱤᱠᱟᱱᱟ ᱵᱟᱨ ᱪᱮᱛᱟᱱ ᱛᱮ ᱥᱣᱟᱭᱤᱯ ᱢᱮ ᱾</string>
     <string name="dejavu_settings_screen">ᱥᱠᱨᱤᱱ</string>
     <string name="dejavu_settings_hide_system_bars">ᱥᱴᱮᱴᱟᱥ ᱟᱨ ᱱᱮᱵᱷᱤᱜᱮᱥᱚᱱ ᱵᱟᱨ ᱩᱠᱩ ᱢᱮ</string>
     <string name="dejavu_settings_hide_system_bars_summary">ᱡᱚᱠᱷᱚᱱ ᱥᱟᱦᱴᱟ ᱩᱫᱩᱜ ᱠᱟᱱᱟ᱾ ᱛᱤᱱᱟᱹᱜ ᱜᱷᱟᱹᱲᱤᱡ ᱧᱮᱞ ᱞᱟᱹᱜᱤᱫ ᱪᱮᱛᱟᱱ ᱥᱮ ᱞᱟᱛᱟᱨ ᱥᱤᱢᱟᱹ ᱠᱷᱚᱱ ᱥᱣᱟᱭᱤᱯ ᱢᱮ᱾</string>

@@ -63,7 +63,7 @@ import org.mozilla.fenix.nimbus.FxNimbus
 
 /** How Dejavu's "More" menu takes the place of Fenix's main menu. */
 object DejavuMenu {
-    private const val ARG_FROM_BOTTOM = "dejavu_menu_from_bottom"
+    private const val ARG_FROM_BAR = "dejavu_menu_from_bar"
     private const val ARG_OPENING = "dejavu_menu_opening"
     private const val ARG_SPLIT_WAY = "dejavu_menu_split_way"
 
@@ -77,33 +77,31 @@ object DejavuMenu {
     fun replaces(accessPoint: MenuAccessPoint): Boolean = accessPoint != MenuAccessPoint.External
 
     /**
-     * Whether the menu is a panel growing out of the actions bar, or the page's details growing out of the address bar,
-     * which the browser's menu is unless it comes down from the top.
+     * Whether the menu is a panel growing out of the bar that opens it, or the page's details growing out of the
+     * address bar, which the browser's menu is unless it comes down from the top as a sheet.
      */
     fun floats(accessPoint: MenuAccessPoint, fromTop: Boolean): Boolean =
         accessPoint == MenuAccessPoint.Browser && !fromTop
 
     /**
      * Whether the menu opened from [accessPoint] with [arguments], as [DejavuMenu.arguments] makes them, comes down
-     * from the top of the screen, which it does when it was opened from an address bar at the top. The page's details
-     * grow out of the address bar instead.
+     * from the top of the screen as a sheet, which it does when no bar opened it, like with the menu key.
      */
     fun opensFromTop(context: Context, accessPoint: MenuAccessPoint, arguments: Bundle?): Boolean =
         accessPoint == MenuAccessPoint.Browser &&
             !context.contextComponents.settings.shouldUseBottomToolbar &&
-            arguments?.getBoolean(ARG_FROM_BOTTOM) != true &&
-            opening(arguments) != Opening.PAGE_INFO
+            arguments?.getBoolean(ARG_FROM_BAR) != true
 
     /** What the menu opened with [arguments] shows first. */
     fun opening(arguments: Bundle?): Opening =
         arguments?.getString(ARG_OPENING)?.let { name -> Opening.entries.firstOrNull { it.name == name } } ?: Opening.MENU
 
     /**
-     * The arguments that open the menu dialog from the bottom of the screen or not, showing [opening] first; the tab
+     * The arguments that open the menu dialog out of the bar that opens it or not, showing [opening] first; the tab
      * picked for a split view shows next to the menu's tab the way [splitWay] has it.
      */
-    fun arguments(fromBottom: Boolean, opening: Opening, splitWay: SplitOrientation? = null): Bundle = Bundle().apply {
-        putBoolean(ARG_FROM_BOTTOM, fromBottom)
+    fun arguments(fromBar: Boolean, opening: Opening, splitWay: SplitOrientation? = null): Bundle = Bundle().apply {
+        putBoolean(ARG_FROM_BAR, fromBar)
         putString(ARG_OPENING, opening.name)
         splitWay?.let { putString(ARG_SPLIT_WAY, it.key) }
     }
@@ -135,7 +133,7 @@ object DejavuMenu {
 
     /**
      * A dialog over the whole screen for the floating menu, which dims the page and moves in by itself. Back and the
-     * menu key go to the menu, which shrinks back into the actions bar before the dialog closes.
+     * menu key go to the menu, which shrinks back into its bar before the dialog closes.
      *
      * @param activityWindow The window the menu opens over, whose system bar icons the dialog keeps.
      */
@@ -143,7 +141,7 @@ object DejavuMenu {
         FloatingMenuDialog(context, activityWindow)
 
     /**
-     * Closes [dialog] the way Back does when it shows the floating menu, which shrinks back into the actions bar first.
+     * Closes [dialog] the way Back does when it shows the floating menu, which shrinks back into its bar first.
      *
      * @return Whether [dialog] shows the floating menu; any other dialog is left to close as usual.
      */
@@ -354,7 +352,7 @@ internal fun List<WebExtensionMenuItem>.openingAddonPages(addons: List<Addon>, m
     )
 }
 
-/** What the "More" menu and the actions bar show about [tab]. */
+/** What the "More" menu and the bars show about [tab]. */
 @Suppress("LongParameterList")
 @Composable
 internal fun moreMenuState(

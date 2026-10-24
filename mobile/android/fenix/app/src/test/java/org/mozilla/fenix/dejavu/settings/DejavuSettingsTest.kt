@@ -9,11 +9,15 @@ import mozilla.components.support.test.robolectric.testContext
 import org.json.JSONArray
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertFalse
+import org.junit.Assert.assertNull
 import org.junit.Assert.assertTrue
 import org.junit.Test
 import org.junit.runner.RunWith
 import org.mozilla.fenix.dejavu.actions.CustomAction
 import org.mozilla.fenix.dejavu.actions.HttpMethod
+import org.mozilla.fenix.dejavu.actions.RowAction
+import org.mozilla.fenix.dejavu.browser.BarsLayout
+import org.mozilla.fenix.dejavu.menu.AddressBarButtons
 import org.robolectric.RobolectricTestRunner
 
 @RunWith(RobolectricTestRunner::class)
@@ -50,6 +54,41 @@ class DejavuSettingsTest {
 
         settings.setSystemBarsHidden(false)
         assertFalse(newSettings().systemBarsHidden.value)
+    }
+
+    @Test
+    fun `the bars keep the layout the user chose, and the address bar the buttons the user chose`() {
+        val settings = newSettings()
+        assertEquals(BarsLayout.ACTIONS_BAR, settings.barsLayout.value)
+        // Next to the actions bar, the address bar starts without buttons; without it, with Reload and Home.
+        assertEquals(AddressBarButtons(), settings.addressBarButtonsIn(BarsLayout.ACTIONS_BAR))
+        assertEquals(AddressBarButtons("refresh", "home"), settings.addressBarButtonsIn(BarsLayout.TOP))
+        assertEquals(AddressBarButtons("refresh", "home"), settings.addressBarButtonsIn(BarsLayout.BOTTOM))
+
+        settings.setBarsLayout(BarsLayout.BOTTOM)
+        settings.setAddressBarButtons(AddressBarButtons(start = null, end = "share"))
+        val read = newSettings()
+        assertEquals(BarsLayout.BOTTOM, read.barsLayout.value)
+        // Buttons the user chose show in every layout, a side left empty included.
+        assertEquals(AddressBarButtons(null, "share"), read.addressBarButtonsIn(BarsLayout.ACTIONS_BAR))
+        assertEquals(AddressBarButtons(null, "share"), read.addressBarButtonsIn(BarsLayout.TOP))
+
+        read.resetAddressBarButtons()
+        assertNull(newSettings().addressBarButtons.value)
+        assertEquals(AddressBarButtons(), newSettings().addressBarButtonsIn(BarsLayout.ACTIONS_BAR))
+    }
+
+    @Test
+    fun `a deleted custom action leaves the side of the address bar it was on`() {
+        val settings = newSettings()
+        val action = CustomAction("a", "Karakeep", HttpMethod.POST, "https://example.com", emptyList(), "{}")
+        settings.saveCustomAction(action)
+        settings.setAddressBarButtons(AddressBarButtons(start = RowAction.keyOf("a"), end = "home"))
+
+        settings.deleteCustomAction("a")
+
+        assertEquals(AddressBarButtons(null, "home"), settings.addressBarButtons.value)
+        assertEquals(AddressBarButtons(null, "home"), newSettings().addressBarButtons.value)
     }
 
     @Test

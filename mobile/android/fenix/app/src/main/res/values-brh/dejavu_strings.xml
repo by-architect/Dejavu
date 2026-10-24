@@ -204,7 +204,8 @@
     <string name="dejavu_settings_actions_bar">ایکشن بار</string>
     <string name="dejavu_actions_bar_search">پٹبو</string>
     <string name="dejavu_actions_bar_home">گھر</string>
-    <string name="dejavu_settings_more_menu_summary">صفحاک نا تلی ایکشن بار او اے ملتین مینو</string>
+    <string name="dejavu_settings_more_menu_summary_2">ڈس بار نا پاسی ٹی بٹناک، ایکشن بار او مور مینو</string>
+    <string name="dejavu_more_menu_address_bar">ڈس بار</string>
     <string name="dejavu_more_menu_drag_hint">بٹن اے دبا ہلبو و اُتی ہُراکا قطار اٹ کشبو۔ بٹن اس ہٹاننا کن اے پدا ادے تلی کشبو۔</string>
     <string name="dejavu_more_menu_add_row">قطار شامل کبو</string>
     <string name="dejavu_more_menu_row_full">اے قطار پر ہس۔</string>
@@ -419,6 +420,13 @@
     <string name="dejavu_protection_links">لنکاک آن ٹریکنگ ہٹاؤ</string>
     <string name="dejavu_protection_hint">آن حفاظت نُمے زیات محفوظ تخک۔ ہر حفاظت پاریک کہ او انت آن حفاظت کیک، او ممکن اے کہ ایہنا وجہ آن انت کاریم کپک۔</string>
     <string name="dejavu_sync_zen_hint_unpinned">Zen اٹ، سیٹنگاک مل، پہ Sync، او سائیڈبار سنک آن کبو۔</string>
+    <string name="dejavu_settings_bars">باراک او مینو</string>
+    <string name="dejavu_bars_actions_bar">ڈس بار برز، ایکشن بار شیف</string>
+    <string name="dejavu_bars_actions_bar_summary">مور مینو ملنگ کن ایکشن بار اے بُرزا سوائپ کبو۔</string>
+    <string name="dejavu_bars_top">ڈس بار برز</string>
+    <string name="dejavu_bars_top_summary">ایکشن بار کائی نی۔ مور مینو ملنگ کن ڈس بار اے تلی سوائپ کبو۔</string>
+    <string name="dejavu_bars_bottom">ڈس بار شیف</string>
+    <string name="dejavu_bars_bottom_summary">ایکشن بار کائی نی۔ مور مینو ملنگ کن ڈس بار اے بُرزا سوائپ کبو۔</string>
     <string name="dejavu_settings_screen">اسکرین</string>
     <string name="dejavu_settings_hide_system_bars">اسٹیٹس او نیویگیشن بار آتے چھپا</string>
     <string name="dejavu_settings_hide_system_bars_summary">ہرا وخت اسہ صفحہ تسنگ۔ اوفتے اسہ لمحہ کن خننگ کن مَلّی یا جہلی کنڑہ آن سوائپ کر۔</string>

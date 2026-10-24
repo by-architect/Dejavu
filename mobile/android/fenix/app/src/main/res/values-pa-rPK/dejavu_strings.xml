@@ -204,7 +204,8 @@
     <string name="dejavu_settings_actions_bar">ایکشن بار</string>
     <string name="dejavu_actions_bar_search">لبھو</string>
     <string name="dejavu_actions_bar_home">گھر</string>
-    <string name="dejavu_settings_more_menu_summary">صفحیاں دے تلے ایکشن بار تے اوہدا کھولن والا مینو</string>
+    <string name="dejavu_settings_more_menu_summary_2">پتہ بار دے نال والے بٹن، ایکشن بار تے ہور مینو</string>
+    <string name="dejavu_more_menu_address_bar">پتہ بار</string>
     <string name="dejavu_more_menu_drag_hint">کسے بٹن نوں دبا کے رکھو تے اوہنوں اُتے کسے قطار وچ کھچو۔ بٹن ہٹاؤن لئی اوہنوں واپس ایتھے تلے کھچو۔</string>
     <string name="dejavu_more_menu_add_row">اک قطار شامل کرو</string>
     <string name="dejavu_more_menu_row_full">ایہہ قطار بھری ہوئی اے۔</string>
@@ -419,6 +420,13 @@
     <string name="dejavu_protection_links">لنکاں توں ٹریکنگ ہٹاؤ</string>
     <string name="dejavu_protection_hint">چالو حفاظت تہانوں ہور محفوظ رکھدی اے۔ ہر اک دسدی اے کہ ایہہ کس توں بچاندی اے تے ایہدی وجہ توں کیہ کم کرنا بند کر سکدا اے۔</string>
     <string name="dejavu_sync_zen_hint_unpinned">Zen وچ، سیٹنگاں کھولھو، فیر Sync، تے سائیڈبار سنک آن کرو۔</string>
+    <string name="dejavu_settings_bars">باراں تے مینو</string>
+    <string name="dejavu_bars_actions_bar">پتہ بار اُتے، ایکشن بار تلے</string>
+    <string name="dejavu_bars_actions_bar_summary">ہور مینو کھولن لئی ایکشن بار نوں اُتے سوائپ کرو۔</string>
+    <string name="dejavu_bars_top">پتہ بار اُتے</string>
+    <string name="dejavu_bars_top_summary">کوئی ایکشن بار نئيں۔ ہور مینو کھولن لئی پتہ بار نوں تلے سوائپ کرو۔</string>
+    <string name="dejavu_bars_bottom">پتہ بار تلے</string>
+    <string name="dejavu_bars_bottom_summary">کوئی ایکشن بار نئيں۔ ہور مینو کھولن لئی پتہ بار نوں اُتے سوائپ کرو۔</string>
     <string name="dejavu_settings_screen">سکرین</string>
     <string name="dejavu_settings_hide_system_bars">سٹیٹس تے نیویگیشن بار لکاؤ</string>
     <string name="dejavu_settings_hide_system_bars_summary">جدوں کوئی صفحہ وکھایا جا رہیا ہووے۔ اوہناں نوں اک پل لئی ویکھن لئی اُتلے یا تھلے کنارے توں سوائپ کرو۔</string>

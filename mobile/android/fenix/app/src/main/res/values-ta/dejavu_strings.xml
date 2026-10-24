@@ -204,7 +204,8 @@
     <string name="dejavu_settings_actions_bar">செயல் பட்டை</string>
     <string name="dejavu_actions_bar_search">தேடு</string>
     <string name="dejavu_actions_bar_home">முகப்பு</string>
-    <string name="dejavu_settings_more_menu_summary">பக்கங்களுக்குக் கீழே உள்ள செயல் பட்டையும் அது திறக்கும் பட்டியும்</string>
+    <string name="dejavu_settings_more_menu_summary_2">முகவரிப் பட்டைக்கு அருகில் உள்ள பொத்தான்களும், செயல் பட்டையும், மேலும் பட்டியும்</string>
+    <string name="dejavu_more_menu_address_bar">முகவரிப் பட்டை</string>
     <string name="dejavu_more_menu_drag_hint">ஒரு பொத்தானை அழுத்திப் பிடித்து மேலே உள்ள ஒரு வரிசைக்கு இழுக்கவும். ஒரு பொத்தானை அகற்ற அதை மீண்டும் இங்கே கீழே இழுக்கவும்.</string>
     <string name="dejavu_more_menu_add_row">ஒரு வரிசையைச் சேர்</string>
     <string name="dejavu_more_menu_row_full">இந்த வரிசை நிரம்பிவிட்டது.</string>
@@ -419,6 +420,13 @@
     <string name="dejavu_protection_links">இணைப்புகளிலிருந்து பின்தொடர்தலை அகற்று</string>
     <string name="dejavu_protection_hint">இயக்கத்தில் உள்ள பாதுகாப்பு உங்களை மேலும் பாதுகாப்பாக வைத்திருக்கும். ஒவ்வொன்றும் எதிலிருந்து காக்கிறது, அதனால் எது வேலை செய்யாமல் போகலாம் என்பதைச் சொல்லும்.</string>
     <string name="dejavu_sync_zen_hint_unpinned">Zen-இல், அமைவுகளைத் திறந்து, பிறகு ஒத்திசைவைத் திறந்து, பக்கப்பட்டி ஒத்திசைவை இயக்கவும்.</string>
+    <string name="dejavu_settings_bars">பட்டைகளும் பட்டியும்</string>
+    <string name="dejavu_bars_actions_bar">முகவரிப் பட்டை மேலே, செயல் பட்டை கீழே</string>
+    <string name="dejavu_bars_actions_bar_summary">மேலும் பட்டியைத் திறக்க செயல் பட்டையை மேலே ஸ்வைப் செய்யவும்.</string>
+    <string name="dejavu_bars_top">முகவரிப் பட்டை மேலே</string>
+    <string name="dejavu_bars_top_summary">செயல் பட்டை இல்லை. மேலும் பட்டியைத் திறக்க முகவரிப் பட்டையைக் கீழே ஸ்வைப் செய்யவும்.</string>
+    <string name="dejavu_bars_bottom">முகவரிப் பட்டை கீழே</string>
+    <string name="dejavu_bars_bottom_summary">செயல் பட்டை இல்லை. மேலும் பட்டியைத் திறக்க முகவரிப் பட்டையை மேலே ஸ்வைப் செய்யவும்.</string>
     <string name="dejavu_settings_screen">திரை</string>
     <string name="dejavu_settings_hide_system_bars">நிலை, வழிசெலுத்தல் பட்டிகளை மறை</string>
     <string name="dejavu_settings_hide_system_bars_summary">ஒரு பக்கம் காட்டப்படும்போது. அவற்றைச் சிறிது நேரம் பார்க்க மேல் அல்லது கீழ் விளிம்பிலிருந்து ஸ்வைப் செய்யவும்.</string>

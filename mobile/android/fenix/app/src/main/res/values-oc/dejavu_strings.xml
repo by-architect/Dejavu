@@ -204,7 +204,8 @@
     <string name="dejavu_settings_actions_bar">Barra d’accions</string>
     <string name="dejavu_actions_bar_search">Recercar</string>
     <string name="dejavu_actions_bar_home">Acuèlh</string>
-    <string name="dejavu_settings_more_menu_summary">La barra d’accions jos las paginas e lo menú que dobrís</string>
+    <string name="dejavu_settings_more_menu_summary_2">Los botons al costat de la barra d’adreça, la barra d’accions e lo menú Mai</string>
+    <string name="dejavu_more_menu_address_bar">Barra d’adreça</string>
     <string name="dejavu_more_menu_drag_hint">Tenètz quichat un boton e lisatz-lo dins una fila amont. Lisatz un boton de tòrna aicí aval per lo levar.</string>
     <string name="dejavu_more_menu_add_row">Apondre una fila</string>
     <string name="dejavu_more_menu_row_full">Aquesta fila es plena.</string>
@@ -419,6 +420,13 @@
     <string name="dejavu_protection_links">Levar lo seguiment dels ligams</string>
     <string name="dejavu_protection_hint">Una proteccion activada vos garda mai en seguretat. Cada una ditz de qué vos protegís e çò que pòt arrestar de foncionar a causa d\'ela.</string>
     <string name="dejavu_sync_zen_hint_unpinned">Dins Zen, dobrissètz Paramètres, puèi Sincronizacion, e activatz la sincronizacion de la barra laterala.</string>
+    <string name="dejavu_settings_bars">Barras e menú</string>
+    <string name="dejavu_bars_actions_bar">Barra d’adreça en naut, barra d’accions en bas</string>
+    <string name="dejavu_bars_actions_bar_summary">Fasètz lisar la barra d’accions cap amont per dobrir lo menú Mai.</string>
+    <string name="dejavu_bars_top">Barra d’adreça en naut</string>
+    <string name="dejavu_bars_top_summary">Cap de barra d’accions. Fasètz lisar la barra d’adreça cap aval per dobrir lo menú Mai.</string>
+    <string name="dejavu_bars_bottom">Barra d’adreça en bas</string>
+    <string name="dejavu_bars_bottom_summary">Cap de barra d’accions. Fasètz lisar la barra d’adreça cap amont per dobrir lo menú Mai.</string>
     <string name="dejavu_settings_screen">Ecran</string>
     <string name="dejavu_settings_hide_system_bars">Amagar las barras d\'estat e de navegacion</string>
     <string name="dejavu_settings_hide_system_bars_summary">Pendent l\'afichatge d\'una pagina. Fasètz lisar dempuèi lo bòrd superior o inferior per las veire un moment.</string>

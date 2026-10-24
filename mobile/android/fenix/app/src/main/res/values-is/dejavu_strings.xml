@@ -204,7 +204,8 @@
     <string name="dejavu_settings_actions_bar">Aðgerðastika</string>
     <string name="dejavu_actions_bar_search">Leita</string>
     <string name="dejavu_actions_bar_home">Heim</string>
-    <string name="dejavu_settings_more_menu_summary">Aðgerðastikan neðst á síðum og valmyndin sem hún opnar</string>
+    <string name="dejavu_settings_more_menu_summary_2">Hnapparnir við hliðina á veffangastikunni, aðgerðastikan og valmyndin „Meira“</string>
+    <string name="dejavu_more_menu_address_bar">Veffangastika</string>
     <string name="dejavu_more_menu_drag_hint">Haltu hnappi niðri og dragðu hann í röð fyrir ofan. Dragðu hnapp aftur hingað niður til að fjarlægja hann.</string>
     <string name="dejavu_more_menu_add_row">Bæta við röð</string>
     <string name="dejavu_more_menu_row_full">Þessi röð er full.</string>
@@ -419,6 +420,13 @@
     <string name="dejavu_protection_links">Fjarlægja rakningu úr tenglum</string>
     <string name="dejavu_protection_hint">Vörn sem kveikt er á eykur öryggi þitt. Hver og ein segir gegn hverju hún ver og hvað gæti hætt að virka vegna hennar.</string>
     <string name="dejavu_sync_zen_hint_unpinned">Í Zen skaltu opna Stillingar, svo Samstillingu, og kveikja á samstillingu hliðarstikunnar.</string>
+    <string name="dejavu_settings_bars">Stikur og valmynd</string>
+    <string name="dejavu_bars_actions_bar">Veffangastika efst, aðgerðastika neðst</string>
+    <string name="dejavu_bars_actions_bar_summary">Strjúktu aðgerðastikuna upp til að opna valmyndina „Meira“.</string>
+    <string name="dejavu_bars_top">Veffangastika efst</string>
+    <string name="dejavu_bars_top_summary">Engin aðgerðastika. Strjúktu veffangastikuna niður til að opna valmyndina „Meira“.</string>
+    <string name="dejavu_bars_bottom">Veffangastika neðst</string>
+    <string name="dejavu_bars_bottom_summary">Engin aðgerðastika. Strjúktu veffangastikuna upp til að opna valmyndina „Meira“.</string>
     <string name="dejavu_settings_screen">Skjár</string>
     <string name="dejavu_settings_hide_system_bars">Fela stöðustiku og leiðsagnarstiku</string>
     <string name="dejavu_settings_hide_system_bars_summary">Á meðan síða er sýnd. Strjúktu inn frá efri eða neðri brún til að sjá þær í smástund.</string>

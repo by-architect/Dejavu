@@ -204,7 +204,8 @@
     <string name="dejavu_settings_actions_bar">Аҟaҵарақәа рпанель</string>
     <string name="dejavu_actions_bar_search">Аԥшаара</string>
     <string name="dejavu_actions_bar_home">Аҩны</string>
-    <string name="dejavu_settings_more_menu_summary">Адаҟьақәа рҵыхәтәантәи аҟны иҟоу аҟaҵарақәа рпанель, насгьы иаартуа аменю</string>
+    <string name="dejavu_settings_more_menu_summary_2">Адресқәа рпанель аганахь иҟоу акнопкақәа, аҟаҵарақәа рпанель, насгьы Адополнительнатә меню</string>
+    <string name="dejavu_more_menu_address_bar">Адресқәа рпанель</string>
     <string name="dejavu_more_menu_drag_hint">Акнопка ааныкыл, хыхь иҟоу аряд ахь инаган. Акнопка аныхразы, алада абраҟа иааган.</string>
     <string name="dejavu_more_menu_add_row">Аряд адалаӡара</string>
     <string name="dejavu_more_menu_row_full">Ари аряд ду ду еиҳауп.</string>
@@ -419,6 +420,13 @@
     <string name="dejavu_protection_links">Алинкқәа рҟынтә ашьҭаԥшра аныхра</string>
     <string name="dejavu_protection_hint">Иаҿыку ахьчара еиҳа шәахьчоит. Ахьчара цыԥхьаӡа иаҳәоит иззыхьчо, насгьы уи иахҟьаны аус ауамзар ҟалоз.</string>
     <string name="dejavu_sync_zen_hint_unpinned">Zen аҟны, «Архиарақәа» аартын, унтi «Асинхронизация», насгьы аҭаны панель расинхронизациа алагаз.</string>
+    <string name="dejavu_settings_bars">Апанельқәеи аменюи</string>
+    <string name="dejavu_bars_actions_bar">Адресқәа рпанель хыхь, аҟаҵарақәа рпанель ҵаҟа</string>
+    <string name="dejavu_bars_actions_bar_summary">Адополнительнатә меню аартразы аҟаҵарақәа рпанель хыхь ахь иҵыхтәуп.</string>
+    <string name="dejavu_bars_top">Адресқәа рпанель хыхь</string>
+    <string name="dejavu_bars_top_summary">Аҟаҵарақәа рпанель ада. Адополнительнатә меню аартразы адресқәа рпанель алада иҵыхтәуп.</string>
+    <string name="dejavu_bars_bottom">Адресқәа рпанель ҵаҟа</string>
+    <string name="dejavu_bars_bottom_summary">Аҟаҵарақәа рпанель ада. Адополнительнатә меню аартразы адресқәа рпанель хыхь ахь иҵыхтәуп.</string>
     <string name="dejavu_settings_screen">Аекран</string>
     <string name="dejavu_settings_hide_system_bars">Аҭагылазаашьеи анавигациеи рпанельқәа рыҵаҵыхра</string>
     <string name="dejavu_settings_hide_system_bars_summary">Адаҟьа анаарԥшуа. Уеизгьы иаразнак рбара азы, аекран хыхьтәи ма ҵаҟатәи аҿықә аҟнытә ишьҭыҵ.</string>

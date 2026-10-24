@@ -204,7 +204,8 @@
     <string name="dejavu_settings_actions_bar">Cholaj b\'anob\'äl</string>
     <string name="dejavu_actions_bar_search">Tikanöx</string>
     <string name="dejavu_actions_bar_home">Tikirib\'äl</string>
-    <string name="dejavu_settings_more_menu_summary">Ri cholaj b\'anob\'äl chuxe\'el ruxaq chuqa\' ri menú nujäq</string>
+    <string name="dejavu_settings_more_menu_summary_2">Ri taq botón chunaqaj ri kikajtz\'ik ochochib\'äl, ri cholaj b\'anob\'äl chuqa\' ri menú Ch\'aqa\' chik</string>
+    <string name="dejavu_more_menu_address_bar">Kikajtz\'ik ochochib\'äl</string>
     <string name="dejavu_more_menu_drag_hint">Tapitz\'a\' jun botón chuqa\' tajurura\' pa jun cholaj chikaj. Tajurura\' jun botón pa xe\'el wawe\' richin nawelesaj.</string>
     <string name="dejavu_more_menu_add_row">Titz\'aqatisäx jun cholaj</string>
     <string name="dejavu_more_menu_row_full">Re cholaj re\' nojinäq chik.</string>
@@ -419,6 +420,13 @@
     <string name="dejavu_protection_links">Tiyuj ri ojqanem pa taq ximonel</string>
     <string name="dejavu_protection_hint">Jun chajinïk tzijon yatruchajij. Chikijujunal nub\'ij chuwäch achike yatruchajij chuqa\' achike rik\'in jub\'a\' man xtisamäj ta ruma rija\'.</string>
     <string name="dejavu_sync_zen_hint_unpinned">Pa Zen, tajäq Nuk\'ulem, k\'a ri\' Junamirisanik, k\'a ri\' tatzija\' ri junamirisanik richin sidebar.</string>
+    <string name="dejavu_settings_bars">Taq kajtz\'ik chuqa\' menú</string>
+    <string name="dejavu_bars_actions_bar">Kikajtz\'ik ochochib\'äl ajsik, cholaj b\'anob\'äl ikim</string>
+    <string name="dejavu_bars_actions_bar_summary">Tajurula\' ri cholaj b\'anob\'äl ajsik richin najäq ri menú Ch\'aqa\' chik.</string>
+    <string name="dejavu_bars_top">Kikajtz\'ik ochochib\'äl ajsik</string>
+    <string name="dejavu_bars_top_summary">Majun cholaj b\'anob\'äl. Tajurula\' ri kikajtz\'ik ochochib\'äl chuxe\' richin najäq ri menú Ch\'aqa\' chik.</string>
+    <string name="dejavu_bars_bottom">Kikajtz\'ik ochochib\'äl ikim</string>
+    <string name="dejavu_bars_bottom_summary">Majun cholaj b\'anob\'äl. Tajurula\' ri kikajtz\'ik ochochib\'äl ajsik richin najäq ri menú Ch\'aqa\' chik.</string>
     <string name="dejavu_settings_screen">Ruwäch</string>
     <string name="dejavu_settings_hide_system_bars">Kewewäx ri kikajtz\'ik rub\'anikil chuqa\' rub\'eyal okem</string>
     <string name="dejavu_settings_hide_system_bars_summary">Toq niwachin jun ruxaq. Tajurulaj pa ruchi\' ajsik o ikim richin ye\'atz\'ët jun ka\'i\' ramaj.</string>

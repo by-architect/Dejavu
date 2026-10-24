@@ -258,7 +258,8 @@
     <string name="dejavu_settings_actions_bar">ऐक्शन बार</string>
     <string name="dejavu_actions_bar_search">सर्च करें</string>
     <string name="dejavu_actions_bar_home">होम</string>
-    <string name="dejavu_settings_more_menu_summary">पेज के नीचे का ऐक्शन बार और उससे खुलने वाला मेन्यू</string>
+    <string name="dejavu_settings_more_menu_summary_2">एड्रेस बार के बगल वाले बटन, ऐक्शन बार तथा और विकल्प मेन्यू</string>
+    <string name="dejavu_more_menu_address_bar">एड्रेस बार</string>
     <string name="dejavu_more_menu_drag_hint">किसी बटन को दबाकर रखें और उसे ऊपर की किसी पंक्ति में खींचें। बटन हटाने के लिए उसे वापस यहाँ नीचे खींचें।</string>
     <string name="dejavu_more_menu_add_row">पंक्ति जोड़ें</string>
     <string name="dejavu_more_menu_row_full">यह पंक्ति भर गई है।</string>
@@ -452,6 +453,13 @@
     <string name="dejavu_protection_links">लिंक से ट्रैकिंग हटाएँ</string>
     <string name="dejavu_protection_hint">चालू सुरक्षा आपको ज़्यादा सुरक्षित रखती है। हर सुरक्षा बताती है कि वह किससे बचाती है और उसकी वजह से क्या काम करना बंद कर सकता है।</string>
     <string name="dejavu_sync_zen_hint_unpinned">Zen में सेटिंग और फिर सिंक खोलें, और साइडबार सिंक चालू करें।</string>
+    <string name="dejavu_settings_bars">बार और मेन्यू</string>
+    <string name="dejavu_bars_actions_bar">एड्रेस बार सबसे ऊपर, ऐक्शन बार सबसे नीचे</string>
+    <string name="dejavu_bars_actions_bar_summary">और विकल्प मेन्यू खोलने के लिए ऐक्शन बार को ऊपर स्वाइप करें।</string>
+    <string name="dejavu_bars_top">एड्रेस बार सबसे ऊपर</string>
+    <string name="dejavu_bars_top_summary">कोई ऐक्शन बार नहीं। और विकल्प मेन्यू खोलने के लिए एड्रेस बार को नीचे स्वाइप करें।</string>
+    <string name="dejavu_bars_bottom">एड्रेस बार सबसे नीचे</string>
+    <string name="dejavu_bars_bottom_summary">कोई ऐक्शन बार नहीं। और विकल्प मेन्यू खोलने के लिए एड्रेस बार को ऊपर स्वाइप करें।</string>
     <string name="dejavu_settings_screen">स्क्रीन</string>
     <string name="dejavu_settings_hide_system_bars">स्टेटस और नेविगेशन बार छिपाएं</string>
     <string name="dejavu_settings_hide_system_bars_summary">जब कोई पेज दिखाया जा रहा हो। उन्हें एक पल के लिए देखने के लिए ऊपर या नीचे के किनारे से स्वाइप करें।</string>

@@ -204,7 +204,8 @@
     <string name="dejavu_settings_actions_bar">Әрекеттер тақтасы</string>
     <string name="dejavu_actions_bar_search">Іздеу</string>
     <string name="dejavu_actions_bar_home">Басты бет</string>
-    <string name="dejavu_settings_more_menu_summary">Беттердің астындағы әрекеттер тақтасы және ол ашатын мәзір</string>
+    <string name="dejavu_settings_more_menu_summary_2">Адрестік жолақтың жанындағы түймелер, әрекеттер тақтасы және «Көбірек» мәзірі</string>
+    <string name="dejavu_more_menu_address_bar">Адрестік жолақ</string>
     <string name="dejavu_more_menu_drag_hint">Түймені басып тұрып, оны жоғарыдағы қатарға сүйреңіз. Түймені шығару үшін оны осы жерге, төмен қайта сүйреңіз.</string>
     <string name="dejavu_more_menu_add_row">Қатар қосу</string>
     <string name="dejavu_more_menu_row_full">Бұл қатар толы.</string>
@@ -419,6 +420,13 @@
     <string name="dejavu_protection_links">Сілтемелерден бақылауды алып тастау</string>
     <string name="dejavu_protection_hint">Қосулы қорғаныс сізді қауіпсізірек етеді. Әрқайсысы неден қорғайтынын және оның салдарынан не жұмыс істемей қалуы мүмкін екенін айтады.</string>
     <string name="dejavu_sync_zen_hint_unpinned">Zen-де Баптауларды, содан кейін Синхрондауды ашыңыз және бүйірлік тақта синхрондауын қосыңыз.</string>
+    <string name="dejavu_settings_bars">Тақталар және мәзір</string>
+    <string name="dejavu_bars_actions_bar">Адрестік жолақ жоғарыда, әрекеттер тақтасы төменде</string>
+    <string name="dejavu_bars_actions_bar_summary">«Көбірек» мәзірін ашу үшін әрекеттер тақтасын жоғары сырғытыңыз.</string>
+    <string name="dejavu_bars_top">Адрестік жолақ жоғарыда</string>
+    <string name="dejavu_bars_top_summary">Әрекеттер тақтасы жоқ. «Көбірек» мәзірін ашу үшін адрестік жолақты төмен сырғытыңыз.</string>
+    <string name="dejavu_bars_bottom">Адрестік жолақ төменде</string>
+    <string name="dejavu_bars_bottom_summary">Әрекеттер тақтасы жоқ. «Көбірек» мәзірін ашу үшін адрестік жолақты жоғары сырғытыңыз.</string>
     <string name="dejavu_settings_screen">Экран</string>
     <string name="dejavu_settings_hide_system_bars">Күй және навигация жолақтарын жасыру</string>
     <string name="dejavu_settings_hide_system_bars_summary">Бет көрсетіліп тұрғанда. Оларды бір сәтке көру үшін жоғарғы не төменгі жиектен сырғытыңыз.</string>

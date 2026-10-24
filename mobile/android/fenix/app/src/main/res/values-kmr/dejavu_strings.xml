@@ -204,7 +204,8 @@
     <string name="dejavu_settings_actions_bar">Darika çalakiyan</string>
     <string name="dejavu_actions_bar_search">Lêgerîn</string>
     <string name="dejavu_actions_bar_home">Mal</string>
-    <string name="dejavu_settings_more_menu_summary">Darika çalakiyan a binê rûpelan û menuya ku ew vedike</string>
+    <string name="dejavu_settings_more_menu_summary_2">Bişkokên li kêleka darika navnîşanan, darika çalakiyan û menuya zêde</string>
+    <string name="dejavu_more_menu_address_bar">Darika navnîşanan</string>
     <string name="dejavu_more_menu_drag_hint">Bişkokekê bigire û wê bikişîne rêzeke li jor. Ji bo rakirina bişkokekê, wê dîsa bikişîne vir li jêr.</string>
     <string name="dejavu_more_menu_add_row">Rêzekê zêde bike</string>
     <string name="dejavu_more_menu_row_full">Ev rêz tijî ye.</string>
@@ -419,6 +420,13 @@
     <string name="dejavu_protection_links">Şopandinê ji girêdanan rake</string>
     <string name="dejavu_protection_hint">Parastineke vekirî te ewletir dike. Her yek dibêje li dijî çi diparêze û ji ber wê çi dibe ku êdî nexebite.</string>
     <string name="dejavu_sync_zen_hint_unpinned">Di Zen de, «Sazkarî» veke, paşê «Hevdemkirin», û hevdemkirina darika kêlekê vekirî bike.</string>
+    <string name="dejavu_settings_bars">Darik û menu</string>
+    <string name="dejavu_bars_actions_bar">Darika navnîşanan li jor, darika çalakiyan li jêr</string>
+    <string name="dejavu_bars_actions_bar_summary">Ji bo vekirina menuya zêde, darika çalakiyan ber bi jor ve bikişîne.</string>
+    <string name="dejavu_bars_top">Darika navnîşanan li jor</string>
+    <string name="dejavu_bars_top_summary">Bêyî darika çalakiyan. Ji bo vekirina menuya zêde, darika navnîşanan ber bi jêr ve bikişîne.</string>
+    <string name="dejavu_bars_bottom">Darika navnîşanan li jêr</string>
+    <string name="dejavu_bars_bottom_summary">Bêyî darika çalakiyan. Ji bo vekirina menuya zêde, darika navnîşanan ber bi jor ve bikişîne.</string>
     <string name="dejavu_settings_screen">Ekran</string>
     <string name="dejavu_settings_hide_system_bars">Darikên rewşê û navîgasyonê veşêre</string>
     <string name="dejavu_settings_hide_system_bars_summary">Dema rûpelek tê nîşandan. Ji bo ku tu wan ji bo demekê bibînî, ji qeraxa jor an jêr bikişîne.</string>

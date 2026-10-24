@@ -332,7 +332,10 @@
     <string name="dejavu_settings_actions_bar">Actions bar</string>
     <string name="dejavu_actions_bar_search">Search</string>
     <string name="dejavu_actions_bar_home">Home</string>
-    <string name="dejavu_settings_more_menu_summary">The actions bar below pages and the menu it opens</string>
+    <!-- Summary of the More menu editor in Customize, which arranges the buttons on each side of the address bar, the buttons of the actions bar below pages and those of the More menu. -->
+    <string name="dejavu_settings_more_menu_summary_2">The buttons beside the address bar, the actions bar and the More menu</string>
+    <!-- More menu editor: title of the line of the buttons beside the address bar, one on each side of its field. -->
+    <string name="dejavu_more_menu_address_bar">Address bar</string>
     <string name="dejavu_more_menu_drag_hint">Hold a button and drag it into a row above. Drag a button back down here to remove it.</string>
     <string name="dejavu_more_menu_add_row">Add a row</string>
     <string name="dejavu_more_menu_row_full">This row is full.</string>
@@ -341,6 +344,19 @@
     <string name="dejavu_more_menu_reset">Reset to default</string>
     <string name="dejavu_more_menu_hide_edit">Hide edit button</string>
     <string name="dejavu_more_menu_hide_edit_summary">The Edit button at the bottom of the More menu</string>
+
+    <!-- Settings: Customize, where the address bar and the actions bar show around web pages, and how the More menu opens -->
+    <string name="pref_key_dejavu_bars_actions_bar" translatable="false">pref_key_dejavu_bars_actions_bar</string>
+    <string name="pref_key_dejavu_bars_top" translatable="false">pref_key_dejavu_bars_top</string>
+    <string name="pref_key_dejavu_bars_bottom" translatable="false">pref_key_dejavu_bars_bottom</string>
+    <!-- Title of the group of three choices below, and of the More menu editor and its switch. -->
+    <string name="dejavu_settings_bars">Bars and menu</string>
+    <string name="dejavu_bars_actions_bar">Address bar at the top, actions bar at the bottom</string>
+    <string name="dejavu_bars_actions_bar_summary">Swipe the actions bar up to open the More menu.</string>
+    <string name="dejavu_bars_top">Address bar at the top</string>
+    <string name="dejavu_bars_top_summary">No actions bar. Swipe the address bar down to open the More menu.</string>
+    <string name="dejavu_bars_bottom">Address bar at the bottom</string>
+    <string name="dejavu_bars_bottom_summary">No actions bar. Swipe the address bar up to open the More menu.</string>
 
     <!-- Settings: Customize, hiding the phone's status bar and navigation bar while a page is shown -->
     <string name="pref_key_dejavu_hide_system_bars" translatable="false">pref_key_dejavu_hide_system_bars</string>

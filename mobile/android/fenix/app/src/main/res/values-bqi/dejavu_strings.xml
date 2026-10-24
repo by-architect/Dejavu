@@ -204,7 +204,8 @@
     <string name="dejavu_settings_actions_bar">نوار کار یل</string>
     <string name="dejavu_actions_bar_search">پیتینیڌن</string>
     <string name="dejavu_actions_bar_home">خونه</string>
-    <string name="dejavu_settings_more_menu_summary">نوار کار یل زیر بلگه یل و منویی که وا می‌کنه</string>
+    <string name="dejavu_settings_more_menu_summary_2">دکمه یل کنار نوار نشۊوی، نوار کار یل و منوی دیه</string>
+    <string name="dejavu_more_menu_address_bar">نوار نشۊوی</string>
     <string name="dejavu_more_menu_drag_hint">یه دکمه ره نگه دار و بکشش تو یه ردیف بالا. بره درآوردن یه دکمه، بکشش پایین همی‌جا.</string>
     <string name="dejavu_more_menu_add_row">ٱووردن ردیف</string>
     <string name="dejavu_more_menu_row_full">ای ردیف پره.</string>
@@ -419,6 +420,13 @@
     <string name="dejavu_protection_links">دراوردن ردیابی ز لینکیل</string>
     <string name="dejavu_protection_hint">هر محافظتی که روشن بوئه، تو ن امن‌تر نگه مئداره. هر کدوم مئگه ز چی محافظت مئکنه و چی ممکنه سی اون ز کار بکفه.</string>
     <string name="dejavu_sync_zen_hint_unpinned">من Zen، «سامووا» ره وا کو، بعد «همگام کردن»، و همگام کردن نوار پهلو ره روشن کو.</string>
+    <string name="dejavu_settings_bars">نوار یل و منو</string>
+    <string name="dejavu_bars_actions_bar">نوار نشۊوی بالا، نوار کار یل ژیر</string>
+    <string name="dejavu_bars_actions_bar_summary">سی واز کردن منوی دیه، نوار کار یل ن و بالا بکش.</string>
+    <string name="dejavu_bars_top">نوار نشۊوی بالا</string>
+    <string name="dejavu_bars_top_summary">بدون نوار کار یل. سی واز کردن منوی دیه، نوار نشۊوی ن و پایین بکش.</string>
+    <string name="dejavu_bars_bottom">نوار نشۊوی ژیر</string>
+    <string name="dejavu_bars_bottom_summary">بدون نوار کار یل. سی واز کردن منوی دیه، نوار نشۊوی ن و بالا بکش.</string>
     <string name="dejavu_settings_screen">صفحه نمایش</string>
     <string name="dejavu_settings_hide_system_bars">قایم کردن نوار وضعیت و ناوبری</string>
     <string name="dejavu_settings_hide_system_bars_summary">وختی یه صفحه نشون داده ابو. سی دیدنشون سی یه لحظه، از لبه بالا یا پایین بکشین.</string>

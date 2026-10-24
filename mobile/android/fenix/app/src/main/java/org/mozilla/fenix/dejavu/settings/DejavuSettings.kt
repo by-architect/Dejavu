@@ -15,9 +15,11 @@ import org.mozilla.fenix.dejavu.actions.ActionPlace
 import org.mozilla.fenix.dejavu.actions.CustomAction
 import org.mozilla.fenix.dejavu.actions.RowAction
 import org.mozilla.fenix.dejavu.actions.TabAction
+import org.mozilla.fenix.dejavu.browser.BarsLayout
 import org.mozilla.fenix.dejavu.containers.ContainerPick
 import org.mozilla.fenix.dejavu.history.HistoryGrouping
 import org.mozilla.fenix.dejavu.menu.ActionsBarLayout
+import org.mozilla.fenix.dejavu.menu.AddressBarButtons
 import org.mozilla.fenix.dejavu.menu.MoreMenuLayout
 
 /**
@@ -47,6 +49,8 @@ class DejavuSettings private constructor(context: Context) {
     )
     private val _moreMenuEditHidden = MutableStateFlow(prefs.getBoolean(KEY_MORE_MENU_EDIT_HIDDEN, false))
     private val _systemBarsHidden = MutableStateFlow(prefs.getBoolean(KEY_SYSTEM_BARS_HIDDEN, false))
+    private val _barsLayout = MutableStateFlow(BarsLayout.fromKey(prefs.getString(KEY_BARS_LAYOUT, null)))
+    private val _addressBarButtons = MutableStateFlow(readAddressBarButtons())
     private val _actionsBarKeys = MutableStateFlow(readActionsBar())
     private val _tabSleepMinutes = MutableStateFlow(prefs.getInt(KEY_TAB_SLEEP_MINUTES, DEFAULT_TAB_SLEEP_MINUTES))
     private val _hiddenSelectionKeys = MutableStateFlow(
@@ -85,6 +89,15 @@ class DejavuSettings private constructor(context: Context) {
 
     /** Whether the status bar and the navigation bar are hidden while a page shows. */
     val systemBarsHidden: StateFlow<Boolean> = _systemBarsHidden.asStateFlow()
+
+    /** Where the bars show around pages, and so where the "More" menu opens from. */
+    val barsLayout: StateFlow<BarsLayout> = _barsLayout.asStateFlow()
+
+    /**
+     * The buttons beside the address bar the user chose, which every layout of the bars shows, or `null` before they
+     * chose any, while each layout shows the ones of [AddressBarButtons.defaultFor] it, see [addressBarButtonsIn].
+     */
+    val addressBarButtons: StateFlow<AddressBarButtons?> = _addressBarButtons.asStateFlow()
 
     /** Buttons of the actions bar below pages, as keys of its entries. See [ActionsBarLayout]. */
     val actionsBarKeys: StateFlow<List<String>> = _actionsBarKeys.asStateFlow()
@@ -181,6 +194,33 @@ class DejavuSettings private constructor(context: Context) {
         prefs.edit { putBoolean(KEY_SYSTEM_BARS_HIDDEN, hidden) }
     }
 
+    fun setBarsLayout(layout: BarsLayout) {
+        _barsLayout.value = layout
+        prefs.edit { putString(KEY_BARS_LAYOUT, layout.key) }
+    }
+
+    /** The buttons beside the address bar in [layout]: the ones the user chose, or else the ones it starts with. */
+    fun addressBarButtonsIn(layout: BarsLayout): AddressBarButtons =
+        _addressBarButtons.value ?: AddressBarButtons.defaultFor(layout)
+
+    /** Sets the buttons beside the address bar, which every layout of the bars shows from then on. */
+    fun setAddressBarButtons(buttons: AddressBarButtons) {
+        _addressBarButtons.value = buttons
+        prefs.edit {
+            putString(KEY_ADDRESS_BAR_START, buttons.start.orEmpty())
+            putString(KEY_ADDRESS_BAR_END, buttons.end.orEmpty())
+        }
+    }
+
+    /** Lets every layout of the bars show the buttons beside the address bar it starts with again. */
+    fun resetAddressBarButtons() {
+        _addressBarButtons.value = null
+        prefs.edit {
+            remove(KEY_ADDRESS_BAR_START)
+            remove(KEY_ADDRESS_BAR_END)
+        }
+    }
+
     fun resetMoreMenu() {
         _moreMenuRows.value = MoreMenuLayout.DEFAULT
         prefs.edit { remove(KEY_MORE_MENU_ROWS) }
@@ -245,10 +285,22 @@ class DejavuSettings private constructor(context: Context) {
         setSelectionAction(key, enabled = true)
         removeFromMoreMenu(key)
         removeFromActionsBar(key)
+        _addressBarButtons.value?.let { buttons ->
+            val kept = AddressBarButtons(buttons.start.takeUnless { it == key }, buttons.end.takeUnless { it == key })
+            if (kept != buttons) setAddressBarButtons(kept)
+        }
     }
 
     private fun readKeys(key: String, default: List<TabAction>): List<String> =
         prefs.getString(key, null)?.split(",")?.filter { it.isNotBlank() } ?: default.map { it.key }
+
+    private fun readAddressBarButtons(): AddressBarButtons? {
+        if (!prefs.contains(KEY_ADDRESS_BAR_START) && !prefs.contains(KEY_ADDRESS_BAR_END)) return null
+        return AddressBarButtons(
+            start = prefs.getString(KEY_ADDRESS_BAR_START, null)?.takeIf { it.isNotBlank() },
+            end = prefs.getString(KEY_ADDRESS_BAR_END, null)?.takeIf { it.isNotBlank() },
+        )
+    }
 
     /**
      * The saved actions bar. Before it could be changed on its own, the bar showed the first row of the menu, so that
@@ -305,6 +357,9 @@ class DejavuSettings private constructor(context: Context) {
         private const val KEY_MORE_MENU_ROWS = "more_menu_rows"
         private const val KEY_MORE_MENU_EDIT_HIDDEN = "more_menu_edit_hidden"
         private const val KEY_SYSTEM_BARS_HIDDEN = "system_bars_hidden"
+        private const val KEY_BARS_LAYOUT = "bars_layout"
+        private const val KEY_ADDRESS_BAR_START = "address_bar_start"
+        private const val KEY_ADDRESS_BAR_END = "address_bar_end"
         private const val KEY_ACTIONS_BAR = "actions_bar"
         private const val KEY_HISTORY_GROUPING = "history_grouping"
         private const val KEY_TAB_SLEEP_MINUTES = "tab_sleep_minutes"

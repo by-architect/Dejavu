@@ -224,7 +224,8 @@
     <string name="dejavu_settings_actions_bar">Eylem çubuğu</string>
     <string name="dejavu_actions_bar_search">Ara</string>
     <string name="dejavu_actions_bar_home">Ana sayfa</string>
-    <string name="dejavu_settings_more_menu_summary">Sayfaların altındaki eylem çubuğu ve açtığı menü</string>
+    <string name="dejavu_settings_more_menu_summary_2">Adres çubuğunun yanındaki düğmeler, eylem çubuğu ve Diğer menüsü</string>
+    <string name="dejavu_more_menu_address_bar">Adres çubuğu</string>
     <string name="dejavu_more_menu_drag_hint">Bir düğmeyi basılı tutun ve yukarıdaki bir satıra sürükleyin. Bir düğmeyi kaldırmak için onu buraya, aşağı geri sürükleyin.</string>
     <string name="dejavu_more_menu_add_row">Satır ekle</string>
     <string name="dejavu_more_menu_row_full">Bu satır dolu.</string>
@@ -439,6 +440,13 @@
     <string name="dejavu_protection_links">Bağlantılardaki takip kısımlarını kaldır</string>
     <string name="dejavu_protection_hint">Açık olan her koruma sizi daha güvende tutar. Her biri neye karşı koruduğunu ve bu yüzden nelerin çalışmayabileceğini söyler.</string>
     <string name="dejavu_sync_zen_hint_unpinned">Zen\'de Ayarlar\'ı, ardından Eşitleme\'yi açın ve kenar çubuğu eşitlemesini açın.</string>
+    <string name="dejavu_settings_bars">Çubuklar ve menü</string>
+    <string name="dejavu_bars_actions_bar">Adres çubuğu üstte, eylem çubuğu altta</string>
+    <string name="dejavu_bars_actions_bar_summary">Diğer menüsünü açmak için eylem çubuğunu yukarı kaydırın.</string>
+    <string name="dejavu_bars_top">Adres çubuğu üstte</string>
+    <string name="dejavu_bars_top_summary">Eylem çubuğu yok. Diğer menüsünü açmak için adres çubuğunu aşağı kaydırın.</string>
+    <string name="dejavu_bars_bottom">Adres çubuğu altta</string>
+    <string name="dejavu_bars_bottom_summary">Eylem çubuğu yok. Diğer menüsünü açmak için adres çubuğunu yukarı kaydırın.</string>
     <string name="dejavu_settings_screen">Ekran</string>
     <string name="dejavu_settings_hide_system_bars">Durum ve gezinme çubuklarını gizle</string>
     <string name="dejavu_settings_hide_system_bars_summary">Bir sayfa gösterilirken. Kısa bir süre görmek için üst veya alt kenardan kaydırın.</string>

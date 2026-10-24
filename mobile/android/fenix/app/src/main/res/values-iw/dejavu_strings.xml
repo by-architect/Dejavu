@@ -205,7 +205,8 @@
     <string name="dejavu_settings_actions_bar">סרגל פעולות</string>
     <string name="dejavu_actions_bar_search">חיפוש</string>
     <string name="dejavu_actions_bar_home">בית</string>
-    <string name="dejavu_settings_more_menu_summary">סרגל הפעולות שמתחת לדפים והתפריט שהוא פותח</string>
+    <string name="dejavu_settings_more_menu_summary_2">הכפתורים שליד שורת הכתובת, סרגל הפעולות ותפריט “עוד”</string>
+    <string name="dejavu_more_menu_address_bar">שורת הכתובת</string>
     <string name="dejavu_more_menu_drag_hint">לחצו לחיצה ארוכה על כפתור וגררו אותו לשורה למעלה. כדי להסיר כפתור, גררו אותו בחזרה לכאן למטה.</string>
     <string name="dejavu_more_menu_add_row">הוספת שורה</string>
     <string name="dejavu_more_menu_row_full">השורה הזאת מלאה.</string>
@@ -426,6 +427,13 @@
     <string name="dejavu_protection_links">הסרת מעקב מקישורים</string>
     <string name="dejavu_protection_hint">הגנה פעילה שומרת עליך טוב יותר. כל הגנה מסבירה ממה היא מגנה ומה עלול להפסיק לעבוד בגללה.</string>
     <string name="dejavu_sync_zen_hint_unpinned">ב-Zen, פתחו את ההגדרות, ואז את הסנכרון, והפעילו את סנכרון סרגל הצד.</string>
+    <string name="dejavu_settings_bars">סרגלים ותפריט</string>
+    <string name="dejavu_bars_actions_bar">שורת הכתובת למעלה, סרגל הפעולות למטה</string>
+    <string name="dejavu_bars_actions_bar_summary">החליקו את סרגל הפעולות למעלה כדי לפתוח את תפריט “עוד”.</string>
+    <string name="dejavu_bars_top">שורת הכתובת למעלה</string>
+    <string name="dejavu_bars_top_summary">ללא סרגל פעולות. החליקו את שורת הכתובת למטה כדי לפתוח את תפריט “עוד”.</string>
+    <string name="dejavu_bars_bottom">שורת הכתובת למטה</string>
+    <string name="dejavu_bars_bottom_summary">ללא סרגל פעולות. החליקו את שורת הכתובת למעלה כדי לפתוח את תפריט “עוד”.</string>
     <string name="dejavu_settings_screen">מסך</string>
     <string name="dejavu_settings_hide_system_bars">הסתרת סרגלי המצב והניווט</string>
     <string name="dejavu_settings_hide_system_bars_summary">בזמן הצגת דף. יש להחליק מהקצה העליון או התחתון כדי לראות אותם לרגע.</string>

@@ -203,7 +203,8 @@
     <string name="dejavu_settings_actions_bar">ແຖບຄຳສັ່ງ</string>
     <string name="dejavu_actions_bar_search">ຄົ້ນຫາ</string>
     <string name="dejavu_actions_bar_home">ໜ້າຫຼັກ</string>
-    <string name="dejavu_settings_more_menu_summary">ແຖບຄຳສັ່ງຢູ່ລຸ່ມຫນ້າເວັບ ແລະ ເມນູທີ່ມັນເປີດ</string>
+    <string name="dejavu_settings_more_menu_summary_2">ປຸ່ມຂ້າງແຖບທີ່ຢູ່, ແຖບຄຳສັ່ງ ແລະ ເມນູເພີ່ມເຕີມ</string>
+    <string name="dejavu_more_menu_address_bar">ແຖບທີ່ຢູ່</string>
     <string name="dejavu_more_menu_drag_hint">ກົດປຸ່ມຄ້າງໄວ້ ແລ້ວລາກໄປໃສ່ແຖວທາງເທິງ. ລາກປຸ່ມກັບລົງມາບ່ອນນີ້ ເພື່ອເອົາມັນອອກ.</string>
     <string name="dejavu_more_menu_add_row">ເພີ່ມແຖວ</string>
     <string name="dejavu_more_menu_row_full">ແຖວນີ້ເຕັມແລ້ວ.</string>
@@ -412,6 +413,13 @@
     <string name="dejavu_protection_links">ລຶບການຕິດຕາມອອກຈາກລິ້ງ</string>
     <string name="dejavu_protection_hint">ການປ້ອງກັນທີ່ເປີດຢູ່ຊ່ວຍໃຫ້ທ່ານປອດໄພຂຶ້ນ. ແຕ່ລະອັນບອກວ່າມັນປ້ອງກັນຫຍັງ ແລະ ອາດມີຫຍັງທີ່ຢຸດເຮັດວຽກຍ້ອນມັນ.</string>
     <string name="dejavu_sync_zen_hint_unpinned">ໃນ Zen, ເປີດການຕັ້ງຄ່າ, ແລ້ວໄປທີ່ Sync, ແລະ ເປີດການຊິງຄ໌ແຖບຂ້າງ.</string>
+    <string name="dejavu_settings_bars">ແຖບ ແລະ ເມນູ</string>
+    <string name="dejavu_bars_actions_bar">ແຖບທີ່ຢູ່ຢູ່ທາງເທິງ, ແຖບຄຳສັ່ງຢູ່ທາງລຸ່ມ</string>
+    <string name="dejavu_bars_actions_bar_summary">ປັດແຖບຄຳສັ່ງຂຶ້ນເພື່ອເປີດເມນູເພີ່ມເຕີມ.</string>
+    <string name="dejavu_bars_top">ແຖບທີ່ຢູ່ຢູ່ທາງເທິງ</string>
+    <string name="dejavu_bars_top_summary">ບໍ່ມີແຖບຄຳສັ່ງ. ປັດແຖບທີ່ຢູ່ລົງເພື່ອເປີດເມນູເພີ່ມເຕີມ.</string>
+    <string name="dejavu_bars_bottom">ແຖບທີ່ຢູ່ຢູ່ທາງລຸ່ມ</string>
+    <string name="dejavu_bars_bottom_summary">ບໍ່ມີແຖບຄຳສັ່ງ. ປັດແຖບທີ່ຢູ່ຂຶ້ນເພື່ອເປີດເມນູເພີ່ມເຕີມ.</string>
     <string name="dejavu_settings_screen">ໜ້າຈໍ</string>
     <string name="dejavu_settings_hide_system_bars">ເຊື່ອງແຖບສະຖານະ ແລະ ແຖບນຳທາງ</string>
     <string name="dejavu_settings_hide_system_bars_summary">ໃນຂະນະທີ່ສະແດງໜ້າເວັບ. ປັດເຂົ້າຈາກຂອບເທິງ ຫຼື ລຸ່ມ ເພື່ອເບິ່ງພວກມັນຊົ່ວຄາວ.</string>

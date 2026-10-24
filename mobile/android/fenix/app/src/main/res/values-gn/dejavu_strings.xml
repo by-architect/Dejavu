@@ -204,7 +204,8 @@
     <string name="dejavu_settings_actions_bar">Tembiapo barra</string>
     <string name="dejavu_actions_bar_search">Eheka</string>
     <string name="dejavu_actions_bar_home">Óga</string>
-    <string name="dejavu_settings_more_menu_summary">Pe tembiapo barra kuatiarogue guýpe ha pe menu ombojurujáva</string>
+    <string name="dejavu_settings_more_menu_summary_2">Umi votã kundaharape barra ykéregua, tembiapo barra ha Menu Ambueve</string>
+    <string name="dejavu_more_menu_address_bar">Kundaharape barra</string>
     <string name="dejavu_more_menu_drag_hint">Ejopy peteĩ votã ha emosyryry tysỹi yvategua peve. Emosyryry jey peteĩ votã ko\'ápe yvy gotyo emboguete hag̃ua.</string>
     <string name="dejavu_more_menu_add_row">Embojuaju peteĩ tysỹi</string>
     <string name="dejavu_more_menu_row_full">Ko tysỹi henyhẽma.</string>
@@ -419,6 +420,13 @@
     <string name="dejavu_protection_links">Eipe\'a jehapykueho joapykuéragui</string>
     <string name="dejavu_protection_hint">Ñemo\'ã hendýva nde mo\'ãve. Peteĩteĩ he\'i mba\'égui nde mo\'ã ha mba\'épa ikatu ndoikovéi hese.</string>
     <string name="dejavu_sync_zen_hint_unpinned">Zen-pe, embojuruja Ñemboheko, upéi Sincronizar, ha emyendy pe sidebar sincronización.</string>
+    <string name="dejavu_settings_bars">Barra ha menu</string>
+    <string name="dejavu_bars_actions_bar">Kundaharape barra yvate, tembiapo barra yvy gotyo</string>
+    <string name="dejavu_bars_actions_bar_summary">Erova tembiapo barra yvate gotyo embojuruja hag̃ua Menu Ambueve.</string>
+    <string name="dejavu_bars_top">Kundaharape barra yvate</string>
+    <string name="dejavu_bars_top_summary">Tembiapo barra\'ỹre. Erova kundaharape barra yvy gotyo embojuruja hag̃ua Menu Ambueve.</string>
+    <string name="dejavu_bars_bottom">Kundaharape barra yvy gotyo</string>
+    <string name="dejavu_bars_bottom_summary">Tembiapo barra\'ỹre. Erova kundaharape barra yvate gotyo embojuruja hag̃ua Menu Ambueve.</string>
     <string name="dejavu_settings_screen">Mba\'erechaha</string>
     <string name="dejavu_settings_hide_system_bars">Mokañy umi barra rekoreko ha jeguata rehegua</string>
     <string name="dejavu_settings_hide_system_bars_summary">Peteĩ kuatiarogue ojehechauka aja. Emosyryry yvate térã yvy gotyo rembe\'ýgui ehecha hag̃ua sapy\'apy\'ánte.</string>

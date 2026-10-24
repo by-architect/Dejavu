@@ -204,7 +204,8 @@
     <string name="dejavu_settings_actions_bar">Åtgärdsfält</string>
     <string name="dejavu_actions_bar_search">Sök</string>
     <string name="dejavu_actions_bar_home">Hem</string>
-    <string name="dejavu_settings_more_menu_summary">Åtgärdsfältet under sidor och menyn det öppnar</string>
+    <string name="dejavu_settings_more_menu_summary_2">Knapparna bredvid adressfältet, åtgärdsfältet och Mer-menyn</string>
+    <string name="dejavu_more_menu_address_bar">Adressfält</string>
     <string name="dejavu_more_menu_drag_hint">Håll ned en knapp och dra den till en rad ovanför. Dra tillbaka en knapp hit ned för att ta bort den.</string>
     <string name="dejavu_more_menu_add_row">Lägg till en rad</string>
     <string name="dejavu_more_menu_row_full">Den här raden är full.</string>
@@ -419,6 +420,13 @@
     <string name="dejavu_protection_links">Ta bort spårning från länkar</string>
     <string name="dejavu_protection_hint">Ett skydd som är på gör dig säkrare. Vid varje skydd står vad det skyddar mot och vad som kan sluta fungera på grund av det.</string>
     <string name="dejavu_sync_zen_hint_unpinned">I Zen öppnar du Inställningar, sedan Synkronisering, och slår på synkronisering av sidofältet.</string>
+    <string name="dejavu_settings_bars">Fält och meny</string>
+    <string name="dejavu_bars_actions_bar">Adressfältet överst, åtgärdsfältet nederst</string>
+    <string name="dejavu_bars_actions_bar_summary">Svep åtgärdsfältet uppåt för att öppna Mer-menyn.</string>
+    <string name="dejavu_bars_top">Adressfältet överst</string>
+    <string name="dejavu_bars_top_summary">Inget åtgärdsfält. Svep adressfältet nedåt för att öppna Mer-menyn.</string>
+    <string name="dejavu_bars_bottom">Adressfältet nederst</string>
+    <string name="dejavu_bars_bottom_summary">Inget åtgärdsfält. Svep adressfältet uppåt för att öppna Mer-menyn.</string>
     <string name="dejavu_settings_screen">Skärm</string>
     <string name="dejavu_settings_hide_system_bars">Dölj status- och navigeringsfältet</string>
     <string name="dejavu_settings_hide_system_bars_summary">Medan en sida visas. Svep in från över- eller underkanten för att se dem en stund.</string>

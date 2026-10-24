@@ -205,7 +205,8 @@
     <string name="dejavu_settings_actions_bar">Трака радњи</string>
     <string name="dejavu_actions_bar_search">Претрага</string>
     <string name="dejavu_actions_bar_home">Почетна</string>
-    <string name="dejavu_settings_more_menu_summary">Трака радњи испод страница и мени који она отвара</string>
+    <string name="dejavu_settings_more_menu_summary_2">Дугмад поред адресне траке, трака радњи и мени „Више“</string>
+    <string name="dejavu_more_menu_address_bar">Адресна трака</string>
     <string name="dejavu_more_menu_drag_hint">Задржите дугме и превуците га у ред изнад. Превуците дугме назад овде доле да га уклоните.</string>
     <string name="dejavu_more_menu_add_row">Додај ред</string>
     <string name="dejavu_more_menu_row_full">Овај ред је пун.</string>
@@ -426,6 +427,13 @@
     <string name="dejavu_protection_links">Уклони праћење из веза</string>
     <string name="dejavu_protection_hint">Укључена заштита вас чини безбеднијим. Свака каже од чега штити и шта због ње може престати да ради.</string>
     <string name="dejavu_sync_zen_hint_unpinned">У Zen-у отворите Подешавања, затим Синхронизација, и укључите синхронизацију бочне траке.</string>
+    <string name="dejavu_settings_bars">Траке и мени</string>
+    <string name="dejavu_bars_actions_bar">Адресна трака горе, трака радњи доле</string>
+    <string name="dejavu_bars_actions_bar_summary">Превуците траку радњи нагоре да отворите мени „Више“.</string>
+    <string name="dejavu_bars_top">Адресна трака горе</string>
+    <string name="dejavu_bars_top_summary">Без траке радњи. Превуците адресну траку надоле да отворите мени „Више“.</string>
+    <string name="dejavu_bars_bottom">Адресна трака доле</string>
+    <string name="dejavu_bars_bottom_summary">Без траке радњи. Превуците адресну траку нагоре да отворите мени „Више“.</string>
     <string name="dejavu_settings_screen">Екран</string>
     <string name="dejavu_settings_hide_system_bars">Сакриј траке статуса и навигације</string>
     <string name="dejavu_settings_hide_system_bars_summary">Док је приказана страница. Превуците од горње или доње ивице да их видите на тренутак.</string>

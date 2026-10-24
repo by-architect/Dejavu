@@ -204,7 +204,8 @@
     <string name="dejavu_settings_actions_bar">Bar ng mga aksyon</string>
     <string name="dejavu_actions_bar_search">Maghanap</string>
     <string name="dejavu_actions_bar_home">Home</string>
-    <string name="dejavu_settings_more_menu_summary">Ang bar ng mga aksyon sa ibaba ng mga page at ang menu na binubuksan nito</string>
+    <string name="dejavu_settings_more_menu_summary_2">Ang mga button sa tabi ng address bar, ang bar ng mga aksyon, at ang Karagdagang menu</string>
+    <string name="dejavu_more_menu_address_bar">Address bar</string>
     <string name="dejavu_more_menu_drag_hint">Pindutin nang matagal ang isang button at i-drag ito sa isang hilera sa itaas. I-drag pabalik dito sa ibaba ang isang button para alisin ito.</string>
     <string name="dejavu_more_menu_add_row">Magdagdag ng hilera</string>
     <string name="dejavu_more_menu_row_full">Puno na ang hilerang ito.</string>
@@ -419,6 +420,13 @@
     <string name="dejavu_protection_links">Alisin ang tracking sa mga link</string>
     <string name="dejavu_protection_hint">Mas ligtas ka kapag naka-on ang isang proteksyon. Sinasabi ng bawat isa kung laban saan ka nito pinoprotektahan at kung ano ang maaaring hindi gumana dahil dito.</string>
     <string name="dejavu_sync_zen_hint_unpinned">Sa Zen, buksan ang Settings, pagkatapos ay Sync, at i-on ang sidebar sync.</string>
+    <string name="dejavu_settings_bars">Mga bar at menu</string>
+    <string name="dejavu_bars_actions_bar">Address bar sa itaas, bar ng mga aksyon sa ibaba</string>
+    <string name="dejavu_bars_actions_bar_summary">I-swipe pataas ang bar ng mga aksyon para buksan ang Karagdagang menu.</string>
+    <string name="dejavu_bars_top">Address bar sa itaas</string>
+    <string name="dejavu_bars_top_summary">Walang bar ng mga aksyon. I-swipe pababa ang address bar para buksan ang Karagdagang menu.</string>
+    <string name="dejavu_bars_bottom">Address bar sa ibaba</string>
+    <string name="dejavu_bars_bottom_summary">Walang bar ng mga aksyon. I-swipe pataas ang address bar para buksan ang Karagdagang menu.</string>
     <string name="dejavu_settings_screen">Screen</string>
     <string name="dejavu_settings_hide_system_bars">Itago ang status at navigation bar</string>
     <string name="dejavu_settings_hide_system_bars_summary">Habang may ipinapakitang page. Mag-swipe mula sa itaas o ibabang gilid para makita ang mga ito sandali.</string>

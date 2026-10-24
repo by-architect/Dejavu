@@ -206,7 +206,8 @@
     <string name="dejavu_settings_actions_bar">Pasek akcji</string>
     <string name="dejavu_actions_bar_search">Szukaj</string>
     <string name="dejavu_actions_bar_home">Start</string>
-    <string name="dejavu_settings_more_menu_summary">Pasek akcji pod stronami i menu, które otwiera</string>
+    <string name="dejavu_settings_more_menu_summary_2">Przyciski obok paska adresu, pasek akcji i menu „Więcej”</string>
+    <string name="dejavu_more_menu_address_bar">Pasek adresu</string>
     <string name="dejavu_more_menu_drag_hint">Przytrzymaj przycisk i przeciągnij go do rzędu powyżej. Aby usunąć przycisk, przeciągnij go z powrotem tutaj na dół.</string>
     <string name="dejavu_more_menu_add_row">Dodaj rząd</string>
     <string name="dejavu_more_menu_row_full">Ten rząd jest pełny.</string>
@@ -433,6 +434,13 @@
     <string name="dejavu_protection_links">Usuwanie śledzenia z odnośników</string>
     <string name="dejavu_protection_hint">Włączona ochrona zwiększa Twoje bezpieczeństwo. Przy każdej jest napisane, przed czym chroni i co może przez nią przestać działać.</string>
     <string name="dejavu_sync_zen_hint_unpinned">W Zen otwórz Ustawienia, potem Synchronizację, i włącz synchronizację paska bocznego.</string>
+    <string name="dejavu_settings_bars">Paski i menu</string>
+    <string name="dejavu_bars_actions_bar">Pasek adresu na górze, pasek akcji na dole</string>
+    <string name="dejavu_bars_actions_bar_summary">Przeciągnij pasek akcji w górę, aby otworzyć menu „Więcej”.</string>
+    <string name="dejavu_bars_top">Pasek adresu na górze</string>
+    <string name="dejavu_bars_top_summary">Brak paska akcji. Przeciągnij pasek adresu w dół, aby otworzyć menu „Więcej”.</string>
+    <string name="dejavu_bars_bottom">Pasek adresu na dole</string>
+    <string name="dejavu_bars_bottom_summary">Brak paska akcji. Przeciągnij pasek adresu w górę, aby otworzyć menu „Więcej”.</string>
     <string name="dejavu_settings_screen">Ekran</string>
     <string name="dejavu_settings_hide_system_bars">Ukryj paski stanu i nawigacji</string>
     <string name="dejavu_settings_hide_system_bars_summary">Gdy wyświetlana jest strona. Przesuń palcem od górnej lub dolnej krawędzi, aby na chwilę je zobaczyć.</string>

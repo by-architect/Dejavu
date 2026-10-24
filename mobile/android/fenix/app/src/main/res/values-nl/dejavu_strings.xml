@@ -204,7 +204,8 @@
     <string name="dejavu_settings_actions_bar">Actiebalk</string>
     <string name="dejavu_actions_bar_search">Zoeken</string>
     <string name="dejavu_actions_bar_home">Start</string>
-    <string name="dejavu_settings_more_menu_summary">De actiebalk onder pagina’s en het menu dat deze opent</string>
+    <string name="dejavu_settings_more_menu_summary_2">De knoppen naast de adresbalk, de actiebalk en het menu “Meer”</string>
+    <string name="dejavu_more_menu_address_bar">Adresbalk</string>
     <string name="dejavu_more_menu_drag_hint">Houd een knop ingedrukt en sleep deze naar een rij hierboven. Sleep een knop terug naar hier beneden om deze te verwijderen.</string>
     <string name="dejavu_more_menu_add_row">Rij toevoegen</string>
     <string name="dejavu_more_menu_row_full">Deze rij is vol.</string>
@@ -419,6 +420,13 @@
     <string name="dejavu_protection_links">Tracking uit links verwijderen</string>
     <string name="dejavu_protection_hint">Een bescherming die aan staat, houdt je veiliger. Bij elke bescherming staat waartegen ze beschermt en wat er daardoor mogelijk niet meer werkt.</string>
     <string name="dejavu_sync_zen_hint_unpinned">Open in Zen Instellingen, dan Synchronisatie, en zet synchronisatie van de zijbalk aan.</string>
+    <string name="dejavu_settings_bars">Balken en menu</string>
+    <string name="dejavu_bars_actions_bar">Adresbalk bovenaan, actiebalk onderaan</string>
+    <string name="dejavu_bars_actions_bar_summary">Veeg de actiebalk omhoog om het menu “Meer” te openen.</string>
+    <string name="dejavu_bars_top">Adresbalk bovenaan</string>
+    <string name="dejavu_bars_top_summary">Geen actiebalk. Veeg de adresbalk omlaag om het menu “Meer” te openen.</string>
+    <string name="dejavu_bars_bottom">Adresbalk onderaan</string>
+    <string name="dejavu_bars_bottom_summary">Geen actiebalk. Veeg de adresbalk omhoog om het menu “Meer” te openen.</string>
     <string name="dejavu_settings_screen">Scherm</string>
     <string name="dejavu_settings_hide_system_bars">Status- en navigatiebalk verbergen</string>
     <string name="dejavu_settings_hide_system_bars_summary">Terwijl een pagina wordt getoond. Veeg vanaf de boven- of onderrand om ze even te zien.</string>

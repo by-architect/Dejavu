@@ -204,7 +204,8 @@
     <string name="dejavu_settings_actions_bar">Barra d\'azzioni</string>
     <string name="dejavu_actions_bar_search">Ricercà</string>
     <string name="dejavu_actions_bar_home">Accolta</string>
-    <string name="dejavu_settings_more_menu_summary">A barra d\'azzioni sottu à e pagine è u menu ch\'ella apre</string>
+    <string name="dejavu_settings_more_menu_summary_2">I buttoni accantu à a barra d\'indirizzu, a barra d\'azzioni è u menu Più</string>
+    <string name="dejavu_more_menu_address_bar">Barra d\'indirizzu</string>
     <string name="dejavu_more_menu_drag_hint">Tenite appughjatu un buttone è trascinatelu in una linea sopra. Trascinate un buttone torna quì sottu per caccià lu.</string>
     <string name="dejavu_more_menu_add_row">Aghjunghje una linea</string>
     <string name="dejavu_more_menu_row_full">Sta linea hè piena.</string>
@@ -419,6 +420,13 @@
     <string name="dejavu_protection_links">Caccià u spiunagiu da i liami</string>
     <string name="dejavu_protection_hint">Una prutezzione attivata cresce a vostra sicurità. Ognuna dice da chì vi prutege è ciò chì pò cessà di funziunà per via d\'ella.</string>
     <string name="dejavu_sync_zen_hint_unpinned">In Zen, apre Parametri, dopu Sincrunizazione, è attivate a sincrunizazione di a barra laterale.</string>
+    <string name="dejavu_settings_bars">Barre è menu</string>
+    <string name="dejavu_bars_actions_bar">Barra d\'indirizzu insù, barra d\'azzioni inghjò</string>
+    <string name="dejavu_bars_actions_bar_summary">Fate sguillà in sù a barra d\'azzioni per apre u menu Più.</string>
+    <string name="dejavu_bars_top">Barra d\'indirizzu insù</string>
+    <string name="dejavu_bars_top_summary">Nisuna barra d\'azzioni. Fate sguillà in giò a barra d\'indirizzu per apre u menu Più.</string>
+    <string name="dejavu_bars_bottom">Barra d\'indirizzu inghjò</string>
+    <string name="dejavu_bars_bottom_summary">Nisuna barra d\'azzioni. Fate sguillà in sù a barra d\'indirizzu per apre u menu Più.</string>
     <string name="dejavu_settings_screen">Screnu</string>
     <string name="dejavu_settings_hide_system_bars">Piattà e barre di statu è di navigazione</string>
     <string name="dejavu_settings_hide_system_bars_summary">Mentre ch\'ella hè affissata una pagina. Sguillà da l\'orlu supranu o suttanu per vedele un mumentu.</string>

@@ -204,7 +204,8 @@
     <string name="dejavu_settings_actions_bar">Aktionsleiste</string>
     <string name="dejavu_actions_bar_search">Suche</string>
     <string name="dejavu_actions_bar_home">Startseite</string>
-    <string name="dejavu_settings_more_menu_summary">Die Aktionsleiste unter Seiten und das Menü, das sie öffnet</string>
+    <string name="dejavu_settings_more_menu_summary_2">Die Schaltflächen neben der Adressleiste, die Aktionsleiste und das Menü „Mehr“</string>
+    <string name="dejavu_more_menu_address_bar">Adressleiste</string>
     <string name="dejavu_more_menu_drag_hint">Halte eine Schaltfläche gedrückt und ziehe sie in eine Zeile oben. Ziehe eine Schaltfläche wieder hierher nach unten, um sie zu entfernen.</string>
     <string name="dejavu_more_menu_add_row">Zeile hinzufügen</string>
     <string name="dejavu_more_menu_row_full">Diese Zeile ist voll.</string>
@@ -419,6 +420,13 @@
     <string name="dejavu_protection_links">Tracking aus Links entfernen</string>
     <string name="dejavu_protection_hint">Ein aktivierter Schutz macht dich sicherer. Bei jedem steht, wovor er schützt und was deswegen vielleicht nicht mehr funktioniert.</string>
     <string name="dejavu_sync_zen_hint_unpinned">Öffne in Zen die Einstellungen, dann Sync, und aktiviere die Synchronisierung der Seitenleiste.</string>
+    <string name="dejavu_settings_bars">Leisten und Menü</string>
+    <string name="dejavu_bars_actions_bar">Adressleiste oben, Aktionsleiste unten</string>
+    <string name="dejavu_bars_actions_bar_summary">Aktionsleiste nach oben wischen, um das Menü „Mehr“ zu öffnen.</string>
+    <string name="dejavu_bars_top">Adressleiste oben</string>
+    <string name="dejavu_bars_top_summary">Keine Aktionsleiste. Adressleiste nach unten wischen, um das Menü „Mehr“ zu öffnen.</string>
+    <string name="dejavu_bars_bottom">Adressleiste unten</string>
+    <string name="dejavu_bars_bottom_summary">Keine Aktionsleiste. Adressleiste nach oben wischen, um das Menü „Mehr“ zu öffnen.</string>
     <string name="dejavu_settings_screen">Bildschirm</string>
     <string name="dejavu_settings_hide_system_bars">Status- und Navigationsleiste ausblenden</string>
     <string name="dejavu_settings_hide_system_bars_summary">Während eine Seite angezeigt wird. Vom oberen oder unteren Rand wischen, um sie kurz zu sehen.</string>

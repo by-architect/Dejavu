@@ -204,7 +204,8 @@
     <string name="dejavu_settings_actions_bar">क्रिया पट्टी</string>
     <string name="dejavu_actions_bar_search">शोधा</string>
     <string name="dejavu_actions_bar_home">मुख्यपृष्ठ</string>
-    <string name="dejavu_settings_more_menu_summary">पृष्ठांखालील क्रिया पट्टी आणि ती उघडणारा मेनू</string>
+    <string name="dejavu_settings_more_menu_summary_2">पत्ता पट्टीच्या शेजारील बटणे, क्रिया पट्टी आणि अधिक मेनू</string>
+    <string name="dejavu_more_menu_address_bar">पत्ता पट्टी</string>
     <string name="dejavu_more_menu_drag_hint">बटण दाबून धरा आणि ते वरच्या रांगेत ओढा. बटण काढण्यासाठी ते पुन्हा इथे खाली ओढा.</string>
     <string name="dejavu_more_menu_add_row">रांग जोडा</string>
     <string name="dejavu_more_menu_row_full">ही रांग पूर्ण भरली आहे.</string>
@@ -419,6 +420,13 @@
     <string name="dejavu_protection_links">लिंकमधून ट्रॅकिंग काढा</string>
     <string name="dejavu_protection_hint">सुरू असलेले संरक्षण तुम्हाला अधिक सुरक्षित ठेवते. प्रत्येक संरक्षण ते कशापासून वाचवते आणि त्यामुळे काय काम करणे थांबवू शकते, हे सांगते.</string>
     <string name="dejavu_sync_zen_hint_unpinned">Zen मध्ये, सेटिंग उघडा, नंतर सिंक, आणि साइडबार सिंक सुरू करा.</string>
+    <string name="dejavu_settings_bars">पट्ट्या आणि मेनू</string>
+    <string name="dejavu_bars_actions_bar">पत्ता पट्टी वरती, क्रिया पट्टी तळाशी</string>
+    <string name="dejavu_bars_actions_bar_summary">अधिक मेनू उघडण्यासाठी क्रिया पट्टी वर स्वाइप करा.</string>
+    <string name="dejavu_bars_top">पत्ता पट्टी वरती</string>
+    <string name="dejavu_bars_top_summary">क्रिया पट्टी नाही. अधिक मेनू उघडण्यासाठी पत्ता पट्टी खाली स्वाइप करा.</string>
+    <string name="dejavu_bars_bottom">पत्ता पट्टी तळाशी</string>
+    <string name="dejavu_bars_bottom_summary">क्रिया पट्टी नाही. अधिक मेनू उघडण्यासाठी पत्ता पट्टी वर स्वाइप करा.</string>
     <string name="dejavu_settings_screen">स्क्रीन</string>
     <string name="dejavu_settings_hide_system_bars">स्टेटस आणि नेव्हिगेशन बार लपवा</string>
     <string name="dejavu_settings_hide_system_bars_summary">पेज दाखवले जात असताना. त्यांना क्षणभर पाहण्यासाठी वरच्या किंवा खालच्या कडेवरून स्वाइप करा.</string>

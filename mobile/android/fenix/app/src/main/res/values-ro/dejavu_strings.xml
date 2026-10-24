@@ -205,7 +205,8 @@
     <string name="dejavu_settings_actions_bar">Bara de acțiuni</string>
     <string name="dejavu_actions_bar_search">Căutare</string>
     <string name="dejavu_actions_bar_home">Acasă</string>
-    <string name="dejavu_settings_more_menu_summary">Bara de acțiuni de sub pagini și meniul pe care îl deschide</string>
+    <string name="dejavu_settings_more_menu_summary_2">Butoanele de lângă bara de adrese, bara de acțiuni și meniul „Mai multe”</string>
+    <string name="dejavu_more_menu_address_bar">Bara de adrese</string>
     <string name="dejavu_more_menu_drag_hint">Ține apăsat un buton și trage-l într-un rând de mai sus. Trage un buton înapoi aici jos pentru a-l elimina.</string>
     <string name="dejavu_more_menu_add_row">Adaugă un rând</string>
     <string name="dejavu_more_menu_row_full">Acest rând este plin.</string>
@@ -426,6 +427,13 @@
     <string name="dejavu_protection_links">Elimină urmărirea din linkuri</string>
     <string name="dejavu_protection_hint">O protecție activată te ține mai în siguranță. Fiecare spune de ce te apără și ce poate să nu mai funcționeze din cauza ei.</string>
     <string name="dejavu_sync_zen_hint_unpinned">În Zen, deschide Setări, apoi Sincronizare, și activează sincronizarea barei laterale.</string>
+    <string name="dejavu_settings_bars">Bare și meniu</string>
+    <string name="dejavu_bars_actions_bar">Bara de adrese sus, bara de acțiuni jos</string>
+    <string name="dejavu_bars_actions_bar_summary">Glisează bara de acțiuni în sus pentru a deschide meniul „Mai multe”.</string>
+    <string name="dejavu_bars_top">Bara de adrese sus</string>
+    <string name="dejavu_bars_top_summary">Fără bară de acțiuni. Glisează bara de adrese în jos pentru a deschide meniul „Mai multe”.</string>
+    <string name="dejavu_bars_bottom">Bara de adrese jos</string>
+    <string name="dejavu_bars_bottom_summary">Fără bară de acțiuni. Glisează bara de adrese în sus pentru a deschide meniul „Mai multe”.</string>
     <string name="dejavu_settings_screen">Ecran</string>
     <string name="dejavu_settings_hide_system_bars">Ascunde barele de stare și de navigare</string>
     <string name="dejavu_settings_hide_system_bars_summary">Cât timp este afișată o pagină. Glisează de la marginea de sus sau de jos pentru a le vedea pentru o clipă.</string>

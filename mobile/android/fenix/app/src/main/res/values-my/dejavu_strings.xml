@@ -203,7 +203,8 @@
     <string name="dejavu_settings_actions_bar">လုပ်ဆောင်ချက် ဘား</string>
     <string name="dejavu_actions_bar_search">ရှာဖွေရန်</string>
     <string name="dejavu_actions_bar_home">ပင်မ</string>
-    <string name="dejavu_settings_more_menu_summary">စာမျက်နှာအောက်ရှိ လုပ်ဆောင်ချက်ဘားနှင့် ၎င်းဖွင့်ပေးသော မီနူး</string>
+    <string name="dejavu_settings_more_menu_summary_2">လိပ်စာဘား ဘေးရှိ ခလုတ်များ၊ လုပ်ဆောင်ချက်ဘားနှင့် နောက်ထပ် မီနူး</string>
+    <string name="dejavu_more_menu_address_bar">လိပ်စာ ဘား</string>
     <string name="dejavu_more_menu_drag_hint">ခလုတ်တစ်ခုကို ဖိထားပြီး အပေါ်ရှိ အတန်းတစ်ခုထဲသို့ ဆွဲထည့်ပါ။ ခလုတ်ကို ဖယ်ရှားရန် ဤနေရာ အောက်သို့ ပြန်ဆွဲချပါ။</string>
     <string name="dejavu_more_menu_add_row">အတန်းတစ်ခု ထည့်ရန်</string>
     <string name="dejavu_more_menu_row_full">ဤအတန်းသည် ပြည့်နေပါပြီ။</string>
@@ -412,6 +413,13 @@
     <string name="dejavu_protection_links">လင့်ခ်များမှ ခြေရာခံမှုကို ဖယ်ရှားရန်</string>
     <string name="dejavu_protection_hint">ဖွင့်ထားသော ကာကွယ်မှုသည် သင့်ကို ပိုလုံခြုံစေသည်။ တစ်ခုစီက ဘာကို ကာကွယ်ပေးသည်နှင့် ၎င်းကြောင့် ဘာများ အလုပ်မလုပ်တော့နိုင်သည်ကို ပြောပြသည်။</string>
     <string name="dejavu_sync_zen_hint_unpinned">Zen တွင် Settings ကိုဖွင့်ပြီး Sync ကို ရွေးပါ၊ ထို့နောက် sidebar sync ကို ဖွင့်ပါ။</string>
+    <string name="dejavu_settings_bars">ဘားများနှင့် မီနူး</string>
+    <string name="dejavu_bars_actions_bar">လိပ်စာဘား အပေါ်တွင်၊ လုပ်ဆောင်ချက်ဘား အောက်ခြေတွင်</string>
+    <string name="dejavu_bars_actions_bar_summary">နောက်ထပ် မီနူးကို ဖွင့်ရန် လုပ်ဆောင်ချက်ဘားကို အပေါ်သို့ ပွတ်ဆွဲပါ။</string>
+    <string name="dejavu_bars_top">လိပ်စာဘား အပေါ်တွင်</string>
+    <string name="dejavu_bars_top_summary">လုပ်ဆောင်ချက်ဘား မရှိပါ။ နောက်ထပ် မီနူးကို ဖွင့်ရန် လိပ်စာဘားကို အောက်သို့ ပွတ်ဆွဲပါ။</string>
+    <string name="dejavu_bars_bottom">လိပ်စာဘား အောက်ခြေတွင်</string>
+    <string name="dejavu_bars_bottom_summary">လုပ်ဆောင်ချက်ဘား မရှိပါ။ နောက်ထပ် မီနူးကို ဖွင့်ရန် လိပ်စာဘားကို အပေါ်သို့ ပွတ်ဆွဲပါ။</string>
     <string name="dejavu_settings_screen">မျက်နှာပြင်</string>
     <string name="dejavu_settings_hide_system_bars">အခြေအနေနှင့် လမ်းညွှန်ဘားများကို ဖျောက်ရန်</string>
     <string name="dejavu_settings_hide_system_bars_summary">စာမျက်နှာ ပြသနေစဉ်။ ခဏကြည့်ရန် အပေါ် သို့မဟုတ် အောက်အစွန်းမှ ပွတ်ဆွဲပါ။</string>

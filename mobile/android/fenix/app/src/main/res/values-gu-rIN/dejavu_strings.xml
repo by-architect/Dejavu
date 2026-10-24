@@ -258,7 +258,8 @@
     <string name="dejavu_settings_actions_bar">ક્રિયા બાર</string>
     <string name="dejavu_actions_bar_search">શોધો</string>
     <string name="dejavu_actions_bar_home">મુખ્ય પૃષ્ઠ</string>
-    <string name="dejavu_settings_more_menu_summary">પૃષ્ઠોની નીચેનો ક્રિયા બાર અને તે જે મેનૂ ખોલે છે</string>
+    <string name="dejavu_settings_more_menu_summary_2">સરનામાં બારની બાજુનાં બટનો, ક્રિયા બાર અને વધુ વિકલ્પ મેનૂ</string>
+    <string name="dejavu_more_menu_address_bar">સરનામાં બાર</string>
     <string name="dejavu_more_menu_drag_hint">બટનને દબાવી રાખો અને તેને ઉપરની કોઈ પંક્તિમાં ખેંચો. બટનને દૂર કરવા માટે તેને ફરી અહીં નીચે ખેંચો.</string>
     <string name="dejavu_more_menu_add_row">પંક્તિ ઉમેરો</string>
     <string name="dejavu_more_menu_row_full">આ પંક્તિ ભરાઈ ગઈ છે.</string>
@@ -452,6 +453,13 @@
     <string name="dejavu_protection_links">લિંક્સમાંથી ટ્રેકિંગ દૂર કરો</string>
     <string name="dejavu_protection_hint">ચાલુ હોય તે સુરક્ષા તમને વધુ સુરક્ષિત રાખે છે. દરેક સુરક્ષા જણાવે છે કે તે શેનાથી બચાવે છે અને તેના કારણે શું કામ કરતું બંધ થઈ શકે છે.</string>
     <string name="dejavu_sync_zen_hint_unpinned">Zen માં સેટિંગ્સ, પછી સમન્વયન ખોલો અને સાઇડબાર સમન્વયન ચાલુ કરો.</string>
+    <string name="dejavu_settings_bars">બાર અને મેનૂ</string>
+    <string name="dejavu_bars_actions_bar">સરનામાં બાર ઉપર, ક્રિયા બાર નીચે</string>
+    <string name="dejavu_bars_actions_bar_summary">વધુ વિકલ્પ મેનૂ ખોલવા માટે ક્રિયા બારને ઉપર સ્વાઇપ કરો.</string>
+    <string name="dejavu_bars_top">સરનામાં બાર ઉપર</string>
+    <string name="dejavu_bars_top_summary">કોઈ ક્રિયા બાર નહીં. વધુ વિકલ્પ મેનૂ ખોલવા માટે સરનામાં બારને નીચે સ્વાઇપ કરો.</string>
+    <string name="dejavu_bars_bottom">સરનામાં બાર નીચે</string>
+    <string name="dejavu_bars_bottom_summary">કોઈ ક્રિયા બાર નહીં. વધુ વિકલ્પ મેનૂ ખોલવા માટે સરનામાં બારને ઉપર સ્વાઇપ કરો.</string>
     <string name="dejavu_settings_screen">સ્ક્રીન</string>
     <string name="dejavu_settings_hide_system_bars">સ્ટેટસ અને નેવિગેશન બાર છુપાવો</string>
     <string name="dejavu_settings_hide_system_bars_summary">જ્યારે પેજ બતાવાય ત્યારે. તેમને થોડી વાર જોવા માટે ઉપર કે નીચેની કિનારીથી સ્વાઇપ કરો.</string>

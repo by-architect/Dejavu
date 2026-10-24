@@ -204,7 +204,8 @@
     <string name="dejavu_settings_actions_bar">Barra delle azioni</string>
     <string name="dejavu_actions_bar_search">Cerca</string>
     <string name="dejavu_actions_bar_home">Home</string>
-    <string name="dejavu_settings_more_menu_summary">La barra delle azioni sotto le pagine e il menu che apre</string>
+    <string name="dejavu_settings_more_menu_summary_2">I pulsanti accanto alla barra degli indirizzi, la barra delle azioni e il menu «Altro»</string>
+    <string name="dejavu_more_menu_address_bar">Barra degli indirizzi</string>
     <string name="dejavu_more_menu_drag_hint">Tieni premuto un pulsante e trascinalo in una riga in alto. Trascina un pulsante di nuovo quaggiù per rimuoverlo.</string>
     <string name="dejavu_more_menu_add_row">Aggiungi una riga</string>
     <string name="dejavu_more_menu_row_full">Questa riga è piena.</string>
@@ -419,6 +420,13 @@
     <string name="dejavu_protection_links">Rimuovi il tracciamento dai link</string>
     <string name="dejavu_protection_hint">Una protezione attiva aumenta la tua sicurezza. Ognuna spiega da cosa ti protegge e cosa potrebbe smettere di funzionare a causa sua.</string>
     <string name="dejavu_sync_zen_hint_unpinned">In Zen, apri Impostazioni, poi Sincronizzazione, e attiva la sincronizzazione della barra laterale.</string>
+    <string name="dejavu_settings_bars">Barre e menu</string>
+    <string name="dejavu_bars_actions_bar">Barra degli indirizzi in alto, barra delle azioni in basso</string>
+    <string name="dejavu_bars_actions_bar_summary">Scorri verso l’alto la barra delle azioni per aprire il menu «Altro».</string>
+    <string name="dejavu_bars_top">Barra degli indirizzi in alto</string>
+    <string name="dejavu_bars_top_summary">Nessuna barra delle azioni. Scorri verso il basso la barra degli indirizzi per aprire il menu «Altro».</string>
+    <string name="dejavu_bars_bottom">Barra degli indirizzi in basso</string>
+    <string name="dejavu_bars_bottom_summary">Nessuna barra delle azioni. Scorri verso l’alto la barra degli indirizzi per aprire il menu «Altro».</string>
     <string name="dejavu_settings_screen">Schermo</string>
     <string name="dejavu_settings_hide_system_bars">Nascondi le barre di stato e di navigazione</string>
     <string name="dejavu_settings_hide_system_bars_summary">Mentre è visualizzata una pagina. Scorri dal bordo superiore o inferiore per vederle per un momento.</string>

@@ -203,7 +203,8 @@
     <string name="dejavu_settings_actions_bar">Thanh thao tác</string>
     <string name="dejavu_actions_bar_search">Tìm kiếm</string>
     <string name="dejavu_actions_bar_home">Trang chủ</string>
-    <string name="dejavu_settings_more_menu_summary">Thanh thao tác bên dưới trang và trình đơn mà nó mở ra</string>
+    <string name="dejavu_settings_more_menu_summary_2">Các nút bên cạnh thanh địa chỉ, thanh thao tác và Trình đơn khác</string>
+    <string name="dejavu_more_menu_address_bar">Thanh địa chỉ</string>
     <string name="dejavu_more_menu_drag_hint">Nhấn giữ một nút và kéo nút đó vào một hàng ở trên. Kéo một nút trở lại xuống đây để xóa nút đó.</string>
     <string name="dejavu_more_menu_add_row">Thêm một hàng</string>
     <string name="dejavu_more_menu_row_full">Hàng này đã đầy.</string>
@@ -412,6 +413,13 @@
     <string name="dejavu_protection_links">Xóa phần theo dõi khỏi liên kết</string>
     <string name="dejavu_protection_hint">Một tính năng bảo vệ đang bật giúp bạn an toàn hơn. Mỗi tính năng cho biết nó chống lại điều gì và những gì có thể ngừng hoạt động vì nó.</string>
     <string name="dejavu_sync_zen_hint_unpinned">Trong Zen, mở Cài đặt, rồi vào Đồng bộ hóa, và bật đồng bộ hóa thanh bên.</string>
+    <string name="dejavu_settings_bars">Các thanh và trình đơn</string>
+    <string name="dejavu_bars_actions_bar">Thanh địa chỉ ở trên cùng, thanh thao tác ở dưới cùng</string>
+    <string name="dejavu_bars_actions_bar_summary">Vuốt thanh thao tác lên để mở Trình đơn khác.</string>
+    <string name="dejavu_bars_top">Thanh địa chỉ ở trên cùng</string>
+    <string name="dejavu_bars_top_summary">Không có thanh thao tác. Vuốt thanh địa chỉ xuống để mở Trình đơn khác.</string>
+    <string name="dejavu_bars_bottom">Thanh địa chỉ ở dưới cùng</string>
+    <string name="dejavu_bars_bottom_summary">Không có thanh thao tác. Vuốt thanh địa chỉ lên để mở Trình đơn khác.</string>
     <string name="dejavu_settings_screen">Màn hình</string>
     <string name="dejavu_settings_hide_system_bars">Ẩn thanh trạng thái và thanh điều hướng</string>
     <string name="dejavu_settings_hide_system_bars_summary">Khi đang hiển thị một trang. Vuốt từ cạnh trên hoặc cạnh dưới để xem chúng trong giây lát.</string>

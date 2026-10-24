@@ -31,6 +31,7 @@ import org.mozilla.fenix.GleanMetrics.PullToRefreshInBrowser
 import org.mozilla.fenix.GleanMetrics.ToolbarSettings
 import org.mozilla.fenix.R
 import org.mozilla.fenix.components.toolbar.ToolbarPosition
+import org.mozilla.fenix.dejavu.browser.BarsLayout
 import org.mozilla.fenix.dejavu.browser.DejavuToolbar
 import org.mozilla.fenix.dejavu.settings.dejavuSettings
 import org.mozilla.fenix.e2e.SystemInsetsPaddedFragment
@@ -123,6 +124,7 @@ class CustomizationFragment : PreferenceFragmentCompat(), SystemInsetsPaddedFrag
         setupTabStripLocationCategory()
         setupToolbarLayout()
         updateToolbarShortcut()
+        setupBarsCategory()
         setupMoreMenuEditButton()
         setupSystemBarsSwitch()
 
@@ -281,6 +283,22 @@ class CustomizationFragment : PreferenceFragmentCompat(), SystemInsetsPaddedFrag
             engine.settings.preferredColorScheme = getPreferredColorScheme()
         }
         requireComponents.useCases.sessionUseCases.reload.invoke()
+    }
+
+    /** Chooses where Dejavu's bars show around pages, and with it how the "More" menu opens. */
+    private fun setupBarsCategory() {
+        val dejavuSettings = dejavuSettings()
+        val choices = mapOf(
+            BarsLayout.ACTIONS_BAR to R.string.pref_key_dejavu_bars_actions_bar,
+            BarsLayout.TOP to R.string.pref_key_dejavu_bars_top,
+            BarsLayout.BOTTOM to R.string.pref_key_dejavu_bars_bottom,
+        ).mapValues { (layout, key) ->
+            requirePreference<RadioButtonPreference>(key).apply {
+                onClickListener { dejavuSettings.setBarsLayout(layout) }
+                setCheckedWithoutClickListener(dejavuSettings.barsLayout.value == layout)
+            }
+        }
+        addToRadioGroup(*choices.values.toTypedArray())
     }
 
     /** Hides the Edit button at the bottom of Dejavu's "More" menu, which Dejavu's own settings keep. */

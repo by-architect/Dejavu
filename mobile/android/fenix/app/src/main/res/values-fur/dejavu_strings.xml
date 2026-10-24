@@ -204,7 +204,8 @@
     <string name="dejavu_settings_actions_bar">Sbare des azions</string>
     <string name="dejavu_actions_bar_search">Cîr</string>
     <string name="dejavu_actions_bar_home">Principâl</string>
-    <string name="dejavu_settings_more_menu_summary">La sbare des azions sot des pagjinis e il menù che e vierç</string>
+    <string name="dejavu_settings_more_menu_summary_2">I botons dongje de sbare de direzion, la sbare des azions e il menù Plui</string>
+    <string name="dejavu_more_menu_address_bar">Sbare de direzion</string>
     <string name="dejavu_more_menu_drag_hint">Ten fracât un boton e strissinilu intune rie parsore. Strissine un boton indaûr ca jù par gjavâlu.</string>
     <string name="dejavu_more_menu_add_row">Zonte une rie</string>
     <string name="dejavu_more_menu_row_full">Cheste rie e je plene.</string>
@@ -419,6 +420,13 @@
     <string name="dejavu_protection_links">Gjave il tracament dai colegaments</string>
     <string name="dejavu_protection_hint">Une protezion ative ti ten plui al sigûr. Ognidune e dîs di ce che ti protêç e ce che al podarès smeti di funzionâ par colpe sô.</string>
     <string name="dejavu_sync_zen_hint_unpinned">In Zen, vierç Impostazions, dopo Sincronizazion, e ative la sincronizazion de sbare laterâl.</string>
+    <string name="dejavu_settings_bars">Sbaris e menù</string>
+    <string name="dejavu_bars_actions_bar">Sbare de direzion in alt, sbare des azions in bas</string>
+    <string name="dejavu_bars_actions_bar_summary">Scor in sù la sbare des azions par vierzi il menù Plui.</string>
+    <string name="dejavu_bars_top">Sbare de direzion in alt</string>
+    <string name="dejavu_bars_top_summary">Nissune sbare des azions. Scor in jù la sbare de direzion par vierzi il menù Plui.</string>
+    <string name="dejavu_bars_bottom">Sbare de direzion in bas</string>
+    <string name="dejavu_bars_bottom_summary">Nissune sbare des azions. Scor in sù la sbare de direzion par vierzi il menù Plui.</string>
     <string name="dejavu_settings_screen">Schermi</string>
     <string name="dejavu_settings_hide_system_bars">Plate lis sbaris di stât e di navigazion</string>
     <string name="dejavu_settings_hide_system_bars_summary">Intant che e ven mostrade une pagjine. Scor dal ôr parsore o parsot par viodilis par un moment.</string>

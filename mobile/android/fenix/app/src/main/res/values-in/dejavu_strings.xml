@@ -203,7 +203,8 @@
     <string name="dejavu_settings_actions_bar">Bilah tindakan</string>
     <string name="dejavu_actions_bar_search">Cari</string>
     <string name="dejavu_actions_bar_home">Beranda</string>
-    <string name="dejavu_settings_more_menu_summary">Bilah tindakan di bawah laman dan menu yang dibukanya</string>
+    <string name="dejavu_settings_more_menu_summary_2">Tombol di samping bilah alamat, bilah tindakan, dan Menu lainnya</string>
+    <string name="dejavu_more_menu_address_bar">Bilah alamat</string>
     <string name="dejavu_more_menu_drag_hint">Tahan tombol lalu seret ke baris di atas. Seret tombol kembali ke bawah sini untuk menghapusnya.</string>
     <string name="dejavu_more_menu_add_row">Tambah baris</string>
     <string name="dejavu_more_menu_row_full">Baris ini sudah penuh.</string>
@@ -412,6 +413,13 @@
     <string name="dejavu_protection_links">Hapus pelacakan dari tautan</string>
     <string name="dejavu_protection_hint">Perlindungan yang aktif membuat Anda lebih aman. Masing-masing menjelaskan apa yang dicegahnya dan apa yang mungkin berhenti berfungsi karenanya.</string>
     <string name="dejavu_sync_zen_hint_unpinned">Di Zen, buka Pengaturan, lalu Sinkronisasi, dan aktifkan sinkronisasi sidebar.</string>
+    <string name="dejavu_settings_bars">Bilah dan menu</string>
+    <string name="dejavu_bars_actions_bar">Bilah alamat di atas, bilah tindakan di bawah</string>
+    <string name="dejavu_bars_actions_bar_summary">Geser bilah tindakan ke atas untuk membuka Menu lainnya.</string>
+    <string name="dejavu_bars_top">Bilah alamat di atas</string>
+    <string name="dejavu_bars_top_summary">Tanpa bilah tindakan. Geser bilah alamat ke bawah untuk membuka Menu lainnya.</string>
+    <string name="dejavu_bars_bottom">Bilah alamat di bawah</string>
+    <string name="dejavu_bars_bottom_summary">Tanpa bilah tindakan. Geser bilah alamat ke atas untuk membuka Menu lainnya.</string>
     <string name="dejavu_settings_screen">Layar</string>
     <string name="dejavu_settings_hide_system_bars">Sembunyikan bilah status dan navigasi</string>
     <string name="dejavu_settings_hide_system_bars_summary">Saat halaman ditampilkan. Usap dari tepi atas atau bawah untuk melihatnya sejenak.</string>

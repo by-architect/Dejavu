@@ -203,7 +203,8 @@
     <string name="dejavu_settings_actions_bar">របារសកម្មភាព</string>
     <string name="dejavu_actions_bar_search">ស្វែងរក</string>
     <string name="dejavu_actions_bar_home">ទំព័រដើម</string>
-    <string name="dejavu_settings_more_menu_summary">របារសកម្មភាពនៅក្រោមទំព័រ និងម៉ឺនុយដែលវាបើក</string>
+    <string name="dejavu_settings_more_menu_summary_2">ប៊ូតុងនៅក្បែររបារអាសយដ្ឋាន របារសកម្មភាព និងម៉ឺនុយបន្ថែម</string>
+    <string name="dejavu_more_menu_address_bar">របារអាសយដ្ឋាន</string>
     <string name="dejavu_more_menu_drag_hint">ចុចប៊ូតុងឱ្យជាប់ ហើយអូសវាទៅជួរមួយខាងលើ។ អូសប៊ូតុងត្រឡប់មកទីនេះខាងក្រោម ដើម្បីដកវាចេញ។</string>
     <string name="dejavu_more_menu_add_row">បន្ថែមជួរមួយ</string>
     <string name="dejavu_more_menu_row_full">ជួរនេះពេញហើយ។</string>
@@ -412,6 +413,13 @@
     <string name="dejavu_protection_links">លុបការតាមដានចេញពីតំណភ្ជាប់</string>
     <string name="dejavu_protection_hint">ការការពារដែលបើកធ្វើឱ្យអ្នកមានសុវត្ថិភាពជាងមុន។ ការការពារនីមួយៗប្រាប់ពីអ្វីដែលវាការពារ និងអ្វីដែលអាចឈប់ដំណើរការដោយសារវា។</string>
     <string name="dejavu_sync_zen_hint_unpinned">នៅក្នុង Zen បើកការកំណត់ បន្ទាប់មកសមកាលកម្ម ហើយបើកសមកាលកម្មរបារចំហៀង។</string>
+    <string name="dejavu_settings_bars">របារ និងម៉ឺនុយ</string>
+    <string name="dejavu_bars_actions_bar">របារអាសយដ្ឋាននៅខាងលើ របារសកម្មភាពនៅខាងក្រោម</string>
+    <string name="dejavu_bars_actions_bar_summary">អូសរបារសកម្មភាពឡើងលើ ដើម្បីបើកម៉ឺនុយបន្ថែម។</string>
+    <string name="dejavu_bars_top">របារអាសយដ្ឋាននៅខាងលើ</string>
+    <string name="dejavu_bars_top_summary">គ្មានរបារសកម្មភាព។ អូសរបារអាសយដ្ឋានចុះក្រោម ដើម្បីបើកម៉ឺនុយបន្ថែម។</string>
+    <string name="dejavu_bars_bottom">របារអាសយដ្ឋាននៅខាងក្រោម</string>
+    <string name="dejavu_bars_bottom_summary">គ្មានរបារសកម្មភាព។ អូសរបារអាសយដ្ឋានឡើងលើ ដើម្បីបើកម៉ឺនុយបន្ថែម។</string>
     <string name="dejavu_settings_screen">អេក្រង់</string>
     <string name="dejavu_settings_hide_system_bars">លាក់របារស្ថានភាព និងរបាររុករក</string>
     <string name="dejavu_settings_hide_system_bars_summary">ពេលទំព័រកំពុងបង្ហាញ។ អូសចូលពីគែមខាងលើ ឬខាងក្រោម ដើម្បីមើលពួកវាមួយភ្លែត។</string>

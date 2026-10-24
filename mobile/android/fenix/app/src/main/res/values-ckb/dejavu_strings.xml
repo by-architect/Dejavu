@@ -204,7 +204,8 @@
     <string name="dejavu_settings_actions_bar">شریتی کردارەکان</string>
     <string name="dejavu_actions_bar_search">گەڕان</string>
     <string name="dejavu_actions_bar_home">ماڵەوە</string>
-    <string name="dejavu_settings_more_menu_summary">شریتی کردارەکان لە خوارەوەی پەڕەکان و ئەو پێڕستەی کە دەیکاتەوە</string>
+    <string name="dejavu_settings_more_menu_summary_2">دوگمەکانی تەنیشت شریتی ناونیشان، شریتی کردارەکان و پێڕستی زیاتر</string>
+    <string name="dejavu_more_menu_address_bar">شریتی ناونیشان</string>
     <string name="dejavu_more_menu_drag_hint">دوگمەیەک ڕابگرە و ڕایبکێشە بۆ ڕیزێکی سەرەوە. بۆ لابردنی دوگمەیەک، بیکێشەرەوە بۆ ئێرە لە خوارەوە.</string>
     <string name="dejavu_more_menu_add_row">زیادکردنی ڕیز</string>
     <string name="dejavu_more_menu_row_full">ئەم ڕیزە پڕە.</string>
@@ -419,6 +420,13 @@
     <string name="dejavu_protection_links">شوێنکەوتن لە بەستەرەکان لاببە</string>
     <string name="dejavu_protection_hint">پاراستنێکی چالاک زیاتر پارێزراوت دەکات. هەر یەکێکیان دەڵێت لە چی دەتپارێزێت و چی لەوانەیە بەهۆیەوە کار نەکات.</string>
     <string name="dejavu_sync_zen_hint_unpinned">لە Zen دا، «ڕێکخستنەکان» بکەرەوە، پاشان «هاوکاتکردن»، و هاوکاتکردنی لاتەنیشت چالاک بکە.</string>
+    <string name="dejavu_settings_bars">شریتەکان و پێڕست</string>
+    <string name="dejavu_bars_actions_bar">شریتی ناونیشان لە سەرەوە، شریتی کردارەکان لە خوارەوە</string>
+    <string name="dejavu_bars_actions_bar_summary">شریتی کردارەکان بۆ سەرەوە ڕابکێشە بۆ کردنەوەی پێڕستی زیاتر.</string>
+    <string name="dejavu_bars_top">شریتی ناونیشان لە سەرەوە</string>
+    <string name="dejavu_bars_top_summary">بێ شریتی کردارەکان. شریتی ناونیشان بۆ خوارەوە ڕابکێشە بۆ کردنەوەی پێڕستی زیاتر.</string>
+    <string name="dejavu_bars_bottom">شریتی ناونیشان لە خوارەوە</string>
+    <string name="dejavu_bars_bottom_summary">بێ شریتی کردارەکان. شریتی ناونیشان بۆ سەرەوە ڕابکێشە بۆ کردنەوەی پێڕستی زیاتر.</string>
     <string name="dejavu_settings_screen">شاشە</string>
     <string name="dejavu_settings_hide_system_bars">شاردنەوەی شریتی دۆخ و ڕێنیشاندەر</string>
     <string name="dejavu_settings_hide_system_bars_summary">کاتێک پەڕەیەک پیشان دەدرێت. لە لێواری سەرەوە یان خوارەوە ڕابکێشە بۆ ئەوەی بۆ ساتێک بیانبینیت.</string>

@@ -206,7 +206,8 @@
     <string name="dejavu_settings_actions_bar">Akcijowa lajsta</string>
     <string name="dejavu_actions_bar_search">Pytaś</string>
     <string name="dejavu_actions_bar_home">Doma</string>
-    <string name="dejavu_settings_more_menu_summary">Akcijowa lajsta pód bokami a meni, kótaryž se wócynja</string>
+    <string name="dejavu_settings_more_menu_summary_2">Tłocaški pódla adresowego póla, akcijowa lajsta a dalšny meni</string>
+    <string name="dejavu_more_menu_address_bar">Adresowe pólo</string>
     <string name="dejavu_more_menu_drag_hint">Źarź tłocašk tłocony a śěgni jen do rěda górjejce. Śěgni tłocašk slědk sem dołoj, aby jen wótwónoźeł.</string>
     <string name="dejavu_more_menu_add_row">Rěd pśidaś</string>
     <string name="dejavu_more_menu_row_full">Toś ten rěd jo połny.</string>
@@ -433,6 +434,13 @@
     <string name="dejavu_protection_links">Slědowanje z wótkazow wótwónoźeś</string>
     <string name="dejavu_protection_hint">Zašaltowany šćit wam wěcej wěstoty dawa. Kuždy groni, pśed cym šćita a co snaź dla njogo wěcej njefunkcioněrujo.</string>
     <string name="dejavu_sync_zen_hint_unpinned">W Zen wócyni Nastajenja, pón Synchronizacija, a zapopń synchronizaciju bócnicy.</string>
+    <string name="dejavu_settings_bars">Lajsty a meni</string>
+    <string name="dejavu_bars_actions_bar">Adresowe pólo górjejce, akcijowa lajsta dołojce</string>
+    <string name="dejavu_bars_actions_bar_summary">Pótegniśo akcijowu lajstu górjej, aby dalšny meni wócynił.</string>
+    <string name="dejavu_bars_top">Adresowe pólo górjejce</string>
+    <string name="dejavu_bars_top_summary">Žedna akcijowa lajsta. Pótegniśo adresowe pólo dołoj, aby dalšny meni wócynił.</string>
+    <string name="dejavu_bars_bottom">Adresowe pólo dołojce</string>
+    <string name="dejavu_bars_bottom_summary">Žedna akcijowa lajsta. Pótegniśo adresowe pólo górjej, aby dalšny meni wócynił.</string>
     <string name="dejavu_settings_screen">Wobrazowka</string>
     <string name="dejavu_settings_hide_system_bars">Lejstwy statusa a nawigacije schowaś</string>
     <string name="dejavu_settings_hide_system_bars_summary">Mjaztym až se bok pokazujo. Póśěgniśo wót górnego abo dolnego kšoma, aby je na wokognuśe wiźeł.</string>

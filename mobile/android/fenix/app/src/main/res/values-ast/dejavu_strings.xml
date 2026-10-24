@@ -204,7 +204,8 @@
     <string name="dejavu_settings_actions_bar">Barra d\'aiciones</string>
     <string name="dejavu_actions_bar_search">Guetar</string>
     <string name="dejavu_actions_bar_home">Aniciu</string>
-    <string name="dejavu_settings_more_menu_summary">La barra d\'aiciones debaxo de les páxines y el menú qu\'abre</string>
+    <string name="dejavu_settings_more_menu_summary_2">Los botones al llau de la barra de direiciones, la barra d\'aiciones y el menú Más</string>
+    <string name="dejavu_more_menu_address_bar">Barra de direiciones</string>
     <string name="dejavu_more_menu_drag_hint">Caltién primíu un botón y arrástralu a una filera d\'arriba. Arrastra un botón de vuelta equí abaxo pa quitalu.</string>
     <string name="dejavu_more_menu_add_row">Amestar una filera</string>
     <string name="dejavu_more_menu_row_full">Esta filera ta enllena.</string>
@@ -419,6 +420,13 @@
     <string name="dejavu_protection_links">Quitar el rastrexu de los enllaces</string>
     <string name="dejavu_protection_hint">Una proteición activada caltiénte más seguru. Cada una diz de qué te protexe y qué pue dexar de funcionar por ella.</string>
     <string name="dejavu_sync_zen_hint_unpinned">En Zen, abri Configuración, dempués Sincronización, y activa la sincronización de la barra llateral.</string>
+    <string name="dejavu_settings_bars">Barres y menú</string>
+    <string name="dejavu_bars_actions_bar">Barra de direiciones arriba, barra d\'aiciones abaxo</string>
+    <string name="dejavu_bars_actions_bar_summary">Esliza p\'arriba la barra d\'aiciones p\'abrir el menú Más.</string>
+    <string name="dejavu_bars_top">Barra de direiciones arriba</string>
+    <string name="dejavu_bars_top_summary">Ensin barra d\'aiciones. Esliza p\'abaxo la barra de direiciones p\'abrir el menú Más.</string>
+    <string name="dejavu_bars_bottom">Barra de direiciones abaxo</string>
+    <string name="dejavu_bars_bottom_summary">Ensin barra d\'aiciones. Esliza p\'arriba la barra de direiciones p\'abrir el menú Más.</string>
     <string name="dejavu_settings_screen">Pantalla</string>
     <string name="dejavu_settings_hide_system_bars">Anubrir les barres d\'estáu y de navegación</string>
     <string name="dejavu_settings_hide_system_bars_summary">Mentanto s\'amuesa una páxina. Esliza dende\'l berbesu cimeru o baxeru pa veles un momentu.</string>

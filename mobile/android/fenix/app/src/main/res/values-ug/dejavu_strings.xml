@@ -204,7 +204,8 @@
     <string name="dejavu_settings_actions_bar">مەشغۇلات بالدىقى</string>
     <string name="dejavu_actions_bar_search">ئىزدە</string>
     <string name="dejavu_actions_bar_home">باش بەت</string>
-    <string name="dejavu_settings_more_menu_summary">بەتلەرنىڭ ئاستىدىكى مەشغۇلات بالدىقى ۋە ئۇ ئاچىدىغان تىزىملىك</string>
+    <string name="dejavu_settings_more_menu_summary_2">ئادرېس بالدىقىنىڭ يېنىدىكى توپچىلار، مەشغۇلات بالدىقى ۋە «تېخىمۇ كۆپ» تىزىملىكى</string>
+    <string name="dejavu_more_menu_address_bar">ئادرېس بالدىقى</string>
     <string name="dejavu_more_menu_drag_hint">توپچىنى بېسىپ تۇرۇپ ئۈستىدىكى بىر قاتارغا سۆرەڭ. توپچىنى چىقىرىۋېتىش ئۈچۈن ئۇنى بۇ يەرگە، ئاستىغا قايتۇرۇپ سۆرەڭ.</string>
     <string name="dejavu_more_menu_add_row">قاتار قوش</string>
     <string name="dejavu_more_menu_row_full">بۇ قاتار توشقان.</string>
@@ -419,6 +420,13 @@
     <string name="dejavu_protection_links">ئۇلانمىلاردىكى ئىز قوغلاشنى چىقىرىۋېتىدۇ</string>
     <string name="dejavu_protection_hint">ئوچۇق تۇرغان قوغداش سىزنى تېخىمۇ بىخەتەر قىلىدۇ. ھەر بىرى نېمىدىن قوغدايدىغانلىقىنى ۋە ئۇنىڭ سەۋەبىدىن نېمىلەرنىڭ ئىشلىمەي قېلىشى مۇمكىنلىكىنى ئېيتىدۇ.</string>
     <string name="dejavu_sync_zen_hint_unpinned">Zen دا تەڭشەكنى، ئاندىن قەدەمداشلاشنى ئېچىڭ ۋە يان پانېل قەدەمداشلىشىنى ئېچىڭ.</string>
+    <string name="dejavu_settings_bars">بالداقلار ۋە تىزىملىك</string>
+    <string name="dejavu_bars_actions_bar">ئادرېس بالدىقى يۇقىرىدا، مەشغۇلات بالدىقى تۆۋەندە</string>
+    <string name="dejavu_bars_actions_bar_summary">«تېخىمۇ كۆپ» تىزىملىكىنى ئېچىش ئۈچۈن مەشغۇلات بالدىقىنى ئۈستىگە سۈرۈڭ.</string>
+    <string name="dejavu_bars_top">ئادرېس بالدىقى يۇقىرىدا</string>
+    <string name="dejavu_bars_top_summary">مەشغۇلات بالدىقى يوق. «تېخىمۇ كۆپ» تىزىملىكىنى ئېچىش ئۈچۈن ئادرېس بالدىقىنى ئاستىغا سۈرۈڭ.</string>
+    <string name="dejavu_bars_bottom">ئادرېس بالدىقى تۆۋەندە</string>
+    <string name="dejavu_bars_bottom_summary">مەشغۇلات بالدىقى يوق. «تېخىمۇ كۆپ» تىزىملىكىنى ئېچىش ئۈچۈن ئادرېس بالدىقىنى ئۈستىگە سۈرۈڭ.</string>
     <string name="dejavu_settings_screen">ئېكران</string>
     <string name="dejavu_settings_hide_system_bars">ھالەت ۋە يول باشلاش بالدىقىنى يوشۇرۇش</string>
     <string name="dejavu_settings_hide_system_bars_summary">بەت كۆرسىتىلىۋاتقاندا. ئۇلارنى بىر دەم كۆرۈش ئۈچۈن ئۈستى ياكى ئاستى گىرۋىكىدىن سىيرىڭ.</string>

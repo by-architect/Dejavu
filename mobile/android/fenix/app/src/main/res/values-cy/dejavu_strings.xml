@@ -208,7 +208,8 @@
     <string name="dejavu_settings_actions_bar">Bar gweithredoedd</string>
     <string name="dejavu_actions_bar_search">Chwilio</string>
     <string name="dejavu_actions_bar_home">Hafan</string>
-    <string name="dejavu_settings_more_menu_summary">Y bar gweithredoedd o dan dudalennau a’r ddewislen mae’n ei hagor</string>
+    <string name="dejavu_settings_more_menu_summary_2">Y botymau wrth ymyl y bar cyfeiriad, y bar gweithredoedd a’r ddewislen Mwy</string>
+    <string name="dejavu_more_menu_address_bar">Bar cyfeiriad</string>
     <string name="dejavu_more_menu_drag_hint">Daliwch fotwm a’i lusgo i res uwchben. Llusgwch fotwm yn ôl i lawr yma i’w dynnu.</string>
     <string name="dejavu_more_menu_add_row">Ychwanegu rhes</string>
     <string name="dejavu_more_menu_row_full">Mae’r rhes hon yn llawn.</string>
@@ -447,6 +448,13 @@
     <string name="dejavu_protection_links">Tynnu tracio o ddolenni</string>
     <string name="dejavu_protection_hint">Mae diogelwch sydd ymlaen yn eich cadw\'n fwy diogel. Mae pob un yn dweud rhag beth mae\'n eich diogelu a beth all roi\'r gorau i weithio o\'i herwydd.</string>
     <string name="dejavu_sync_zen_hint_unpinned">Yn Zen, agorwch Gosodiadau, yna Sync, a throwch cydweddu’r bar ochr ymlaen.</string>
+    <string name="dejavu_settings_bars">Bariau a dewislen</string>
+    <string name="dejavu_bars_actions_bar">Bar cyfeiriad ar y brig, bar gweithredoedd ar y gwaelod</string>
+    <string name="dejavu_bars_actions_bar_summary">Llithrwch y bar gweithredoedd i fyny i agor y ddewislen Mwy.</string>
+    <string name="dejavu_bars_top">Bar cyfeiriad ar y brig</string>
+    <string name="dejavu_bars_top_summary">Dim bar gweithredoedd. Llithrwch y bar cyfeiriad i lawr i agor y ddewislen Mwy.</string>
+    <string name="dejavu_bars_bottom">Bar cyfeiriad ar y gwaelod</string>
+    <string name="dejavu_bars_bottom_summary">Dim bar gweithredoedd. Llithrwch y bar cyfeiriad i fyny i agor y ddewislen Mwy.</string>
     <string name="dejavu_settings_screen">Sgrin</string>
     <string name="dejavu_settings_hide_system_bars">Cuddio\'r bariau statws a llywio</string>
     <string name="dejavu_settings_hide_system_bars_summary">Tra bo tudalen yn cael ei dangos. Llithrwch i mewn o\'r ymyl uchaf neu isaf i\'w gweld am eiliad.</string>

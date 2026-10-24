@@ -204,7 +204,8 @@
     <string name="dejavu_settings_actions_bar">ਕਾਰਵਾਈ ਪੱਟੀ</string>
     <string name="dejavu_actions_bar_search">ਖੋਜ</string>
     <string name="dejavu_actions_bar_home">ਹੋਮ</string>
-    <string name="dejavu_settings_more_menu_summary">ਸਫ਼ਿਆਂ ਹੇਠਾਂ ਕਾਰਵਾਈ ਪੱਟੀ ਅਤੇ ਇਸ ਵੱਲੋਂ ਖੋਲ੍ਹਿਆ ਜਾਂਦਾ ਮੀਨੂ</string>
+    <string name="dejavu_settings_more_menu_summary_2">ਪਤਾ ਪੱਟੀ ਦੇ ਨਾਲ ਵਾਲੇ ਬਟਨ, ਕਾਰਵਾਈ ਪੱਟੀ ਅਤੇ ਹੋਰ ਮੀਨੂ</string>
+    <string name="dejavu_more_menu_address_bar">ਪਤਾ ਪੱਟੀ</string>
     <string name="dejavu_more_menu_drag_hint">ਕਿਸੇ ਬਟਨ ਨੂੰ ਦਬਾ ਕੇ ਰੱਖੋ ਅਤੇ ਉਸ ਨੂੰ ਉੱਪਰ ਕਿਸੇ ਕਤਾਰ ਵਿੱਚ ਖਿੱਚੋ। ਬਟਨ ਹਟਾਉਣ ਲਈ ਉਸ ਨੂੰ ਵਾਪਸ ਇੱਥੇ ਹੇਠਾਂ ਖਿੱਚੋ।</string>
     <string name="dejavu_more_menu_add_row">ਇੱਕ ਕਤਾਰ ਜੋੜੋ</string>
     <string name="dejavu_more_menu_row_full">ਇਹ ਕਤਾਰ ਭਰੀ ਹੋਈ ਹੈ।</string>
@@ -419,6 +420,13 @@
     <string name="dejavu_protection_links">ਲਿੰਕਾਂ ਤੋਂ ਟਰੈਕਿੰਗ ਹਟਾਓ</string>
     <string name="dejavu_protection_hint">ਚਾਲੂ ਸੁਰੱਖਿਆ ਤੁਹਾਨੂੰ ਵੱਧ ਸੁਰੱਖਿਅਤ ਰੱਖਦੀ ਹੈ। ਹਰ ਇੱਕ ਦੱਸਦੀ ਹੈ ਕਿ ਇਹ ਕਿਸ ਤੋਂ ਬਚਾਉਂਦੀ ਹੈ ਅਤੇ ਇਸ ਕਾਰਨ ਕੀ ਕੰਮ ਕਰਨਾ ਬੰਦ ਕਰ ਸਕਦਾ ਹੈ।</string>
     <string name="dejavu_sync_zen_hint_unpinned">Zen ਵਿੱਚ, ਸੈਟਿੰਗਾਂ ਖੋਲ੍ਹੋ, ਫਿਰ ਸਿੰਕ, ਅਤੇ ਸਾਈਡਬਾਰ ਸਿੰਕ ਚਾਲੂ ਕਰੋ।</string>
+    <string name="dejavu_settings_bars">ਪੱਟੀਆਂ ਅਤੇ ਮੀਨੂ</string>
+    <string name="dejavu_bars_actions_bar">ਪਤਾ ਪੱਟੀ ਉੱਪਰ, ਕਾਰਵਾਈ ਪੱਟੀ ਹੇਠਾਂ</string>
+    <string name="dejavu_bars_actions_bar_summary">ਹੋਰ ਮੀਨੂ ਖੋਲ੍ਹਣ ਲਈ ਕਾਰਵਾਈ ਪੱਟੀ ਨੂੰ ਉੱਪਰ ਸਵਾਈਪ ਕਰੋ।</string>
+    <string name="dejavu_bars_top">ਪਤਾ ਪੱਟੀ ਉੱਪਰ</string>
+    <string name="dejavu_bars_top_summary">ਕੋਈ ਕਾਰਵਾਈ ਪੱਟੀ ਨਹੀਂ। ਹੋਰ ਮੀਨੂ ਖੋਲ੍ਹਣ ਲਈ ਪਤਾ ਪੱਟੀ ਨੂੰ ਹੇਠਾਂ ਸਵਾਈਪ ਕਰੋ।</string>
+    <string name="dejavu_bars_bottom">ਪਤਾ ਪੱਟੀ ਹੇਠਾਂ</string>
+    <string name="dejavu_bars_bottom_summary">ਕੋਈ ਕਾਰਵਾਈ ਪੱਟੀ ਨਹੀਂ। ਹੋਰ ਮੀਨੂ ਖੋਲ੍ਹਣ ਲਈ ਪਤਾ ਪੱਟੀ ਨੂੰ ਉੱਪਰ ਸਵਾਈਪ ਕਰੋ।</string>
     <string name="dejavu_settings_screen">ਸਕਰੀਨ</string>
     <string name="dejavu_settings_hide_system_bars">ਸਥਿਤੀ ਅਤੇ ਨੈਵੀਗੇਸ਼ਨ ਪੱਟੀਆਂ ਲੁਕਾਓ</string>
     <string name="dejavu_settings_hide_system_bars_summary">ਜਦੋਂ ਪੰਨਾ ਦਿਖਾਇਆ ਜਾਂਦਾ ਹੈ। ਉਹਨਾਂ ਨੂੰ ਇੱਕ ਪਲ ਲਈ ਵੇਖਣ ਲਈ ਉੱਪਰਲੇ ਜਾਂ ਹੇਠਲੇ ਕਿਨਾਰੇ ਤੋਂ ਸਵਾਈਪ ਕਰੋ।</string>

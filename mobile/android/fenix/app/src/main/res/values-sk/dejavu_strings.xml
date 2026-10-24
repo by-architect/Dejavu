@@ -206,7 +206,8 @@
     <string name="dejavu_settings_actions_bar">Panel akcií</string>
     <string name="dejavu_actions_bar_search">Hľadať</string>
     <string name="dejavu_actions_bar_home">Domov</string>
-    <string name="dejavu_settings_more_menu_summary">Panel akcií pod stránkami a ponuka, ktorú otvára</string>
+    <string name="dejavu_settings_more_menu_summary_2">Tlačidlá vedľa panela s adresou, panel akcií a ponuka „Viac“</string>
+    <string name="dejavu_more_menu_address_bar">Panel s adresou</string>
     <string name="dejavu_more_menu_drag_hint">Podržte tlačidlo a potiahnite ho do riadka hore. Tlačidlo odstránite potiahnutím späť sem nadol.</string>
     <string name="dejavu_more_menu_add_row">Pridať riadok</string>
     <string name="dejavu_more_menu_row_full">Tento riadok je plný.</string>
@@ -433,6 +434,13 @@
     <string name="dejavu_protection_links">Odstraňovať sledovanie z odkazov</string>
     <string name="dejavu_protection_hint">Zapnutá ochrana zvyšuje vašu bezpečnosť. Pri každej je uvedené, pred čím chráni a čo môže kvôli nej prestať fungovať.</string>
     <string name="dejavu_sync_zen_hint_unpinned">V Zene otvorte Nastavenia, potom Synchronizáciu, a zapnite synchronizáciu bočného panela.</string>
+    <string name="dejavu_settings_bars">Panely a ponuka</string>
+    <string name="dejavu_bars_actions_bar">Panel s adresou hore, panel akcií dole</string>
+    <string name="dejavu_bars_actions_bar_summary">Potiahnutím panela akcií nahor otvoríte ponuku „Viac“.</string>
+    <string name="dejavu_bars_top">Panel s adresou hore</string>
+    <string name="dejavu_bars_top_summary">Bez panela akcií. Potiahnutím panela s adresou nadol otvoríte ponuku „Viac“.</string>
+    <string name="dejavu_bars_bottom">Panel s adresou dole</string>
+    <string name="dejavu_bars_bottom_summary">Bez panela akcií. Potiahnutím panela s adresou nahor otvoríte ponuku „Viac“.</string>
     <string name="dejavu_settings_screen">Obrazovka</string>
     <string name="dejavu_settings_hide_system_bars">Skryť stavový a navigačný panel</string>
     <string name="dejavu_settings_hide_system_bars_summary">Počas zobrazenia stránky. Potiahnutím od horného alebo dolného okraja ich na chvíľu zobrazíte.</string>

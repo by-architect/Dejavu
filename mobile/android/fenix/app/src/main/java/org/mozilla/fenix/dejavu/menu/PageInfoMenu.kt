@@ -66,6 +66,7 @@ import org.mozilla.fenix.components.components
 import org.mozilla.fenix.components.menu.store.MenuAction
 import org.mozilla.fenix.components.menu.store.MenuStore
 import org.mozilla.fenix.dejavu.actions.TabAction
+import org.mozilla.fenix.dejavu.browser.currentBarsLayout
 import org.mozilla.fenix.dejavu.browser.domainOf
 import org.mozilla.fenix.dejavu.containers.ContainerColor
 import org.mozilla.fenix.dejavu.containers.ContainerRecord
@@ -205,7 +206,7 @@ private fun containerOf(
  */
 @Composable
 internal fun PageInfoMenu(menuStore: MenuStore, navController: NavController, onDismiss: () -> Unit) {
-    FloatingPanel(edge = PanelEdge.TOP, swipe = PageInfoSwipe, onDismiss = onDismiss) {
+    FloatingPanel(bar = PanelBar.addressBarIn(currentBarsLayout()), swipe = PageInfoSwipe, onDismiss = onDismiss) {
         val context = LocalContext.current
         val fenix = components
         val closer = LocalMenuCloser.current ?: return@FloatingPanel

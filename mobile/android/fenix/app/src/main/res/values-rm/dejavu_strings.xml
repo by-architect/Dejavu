@@ -204,7 +204,8 @@
     <string name="dejavu_settings_actions_bar">Trav d’acziuns</string>
     <string name="dejavu_actions_bar_search">Tschertgar</string>
     <string name="dejavu_actions_bar_home">Partenza</string>
-    <string name="dejavu_settings_more_menu_summary">La trav d’acziuns sutvart paginas ed il menu ch’ella avra</string>
+    <string name="dejavu_settings_more_menu_summary_2">Ils buttuns dasper la trav d’adressas, la trav d’acziuns ed il menu Dapli</string>
+    <string name="dejavu_more_menu_address_bar">Trav d’adressas</string>
     <string name="dejavu_more_menu_drag_hint">Tegna smatgà in buttun e tira el en ina lingia survart. Tira in buttun enavos qua giusut per l’allontanar.</string>
     <string name="dejavu_more_menu_add_row">Agiuntar ina lingia</string>
     <string name="dejavu_more_menu_row_full">Questa lingia è plain.</string>
@@ -419,6 +420,13 @@
     <string name="dejavu_protection_links">Allontanar il fastizar da colliaziuns</string>
     <string name="dejavu_protection_hint">Ina protecziun activada ta tegna pli segir. Mintgina di cunter tge ch\'ella protegia e tge che po chalar da funcziunar pervia dad ella.</string>
     <string name="dejavu_sync_zen_hint_unpinned">En Zen, avra Parameters, lura Sync, ed activescha la sincronisaziun da la trav laterala.</string>
+    <string name="dejavu_settings_bars">Travs e menu</string>
+    <string name="dejavu_bars_actions_bar">Trav d’adressas survart, trav d’acziuns sutvart</string>
+    <string name="dejavu_bars_actions_bar_summary">Stritgar si la trav d’acziuns per avrir il menu Dapli.</string>
+    <string name="dejavu_bars_top">Trav d’adressas survart</string>
+    <string name="dejavu_bars_top_summary">Nagina trav d’acziuns. Stritgar giu la trav d’adressas per avrir il menu Dapli.</string>
+    <string name="dejavu_bars_bottom">Trav d’adressas sutvart</string>
+    <string name="dejavu_bars_bottom_summary">Nagina trav d’acziuns. Stritgar si la trav d’adressas per avrir il menu Dapli.</string>
     <string name="dejavu_settings_screen">Visur</string>
     <string name="dejavu_settings_hide_system_bars">Zuppentar las travs da status e da navigaziun</string>
     <string name="dejavu_settings_hide_system_bars_summary">Durant ch\'ina pagina vegn mussada. Stritgar naven dal ur sura u sut per las vesair per in mument.</string>

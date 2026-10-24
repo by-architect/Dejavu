@@ -206,7 +206,8 @@
     <string name="dejavu_settings_actions_bar">Veiksmų juosta</string>
     <string name="dejavu_actions_bar_search">Paieška</string>
     <string name="dejavu_actions_bar_home">Pradžia</string>
-    <string name="dejavu_settings_more_menu_summary">Veiksmų juosta po puslapiais ir jos atveriamas meniu</string>
+    <string name="dejavu_settings_more_menu_summary_2">Mygtukai šalia adreso lauko, veiksmų juosta ir meniu „Daugiau“</string>
+    <string name="dejavu_more_menu_address_bar">Adreso laukas</string>
     <string name="dejavu_more_menu_drag_hint">Palaikykite mygtuką ir nuvilkite jį į eilutę viršuje. Norėdami pašalinti mygtuką, nuvilkite jį atgal čia, žemyn.</string>
     <string name="dejavu_more_menu_add_row">Pridėti eilutę</string>
     <string name="dejavu_more_menu_row_full">Ši eilutė pilna.</string>
@@ -433,6 +434,13 @@
     <string name="dejavu_protection_links">Šalinti stebėjimą iš nuorodų</string>
     <string name="dejavu_protection_hint">Įjungta apsauga padeda jums būti saugesniems. Prie kiekvienos parašyta, nuo ko ji saugo ir kas dėl jos gali nustoti veikti.</string>
     <string name="dejavu_sync_zen_hint_unpinned">Zen naršyklėje atverkite Nuostatos, tada Sinchronizavimas, ir įjunkite šoninės juostos sinchronizavimą.</string>
+    <string name="dejavu_settings_bars">Juostos ir meniu</string>
+    <string name="dejavu_bars_actions_bar">Adreso laukas viršuje, veiksmų juosta apačioje</string>
+    <string name="dejavu_bars_actions_bar_summary">Perbraukite veiksmų juostą aukštyn, kad atvertumėte meniu „Daugiau“.</string>
+    <string name="dejavu_bars_top">Adreso laukas viršuje</string>
+    <string name="dejavu_bars_top_summary">Be veiksmų juostos. Perbraukite adreso lauką žemyn, kad atvertumėte meniu „Daugiau“.</string>
+    <string name="dejavu_bars_bottom">Adreso laukas apačioje</string>
+    <string name="dejavu_bars_bottom_summary">Be veiksmų juostos. Perbraukite adreso lauką aukštyn, kad atvertumėte meniu „Daugiau“.</string>
     <string name="dejavu_settings_screen">Ekranas</string>
     <string name="dejavu_settings_hide_system_bars">Slėpti būsenos ir naršymo juostas</string>
     <string name="dejavu_settings_hide_system_bars_summary">Kol rodomas puslapis. Perbraukite nuo viršutinio ar apatinio krašto, kad trumpam jas pamatytumėte.</string>

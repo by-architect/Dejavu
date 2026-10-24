@@ -208,7 +208,8 @@
     <string name="dejavu_settings_actions_bar">Barr Oberennow</string>
     <string name="dejavu_actions_bar_search">Whilas</string>
     <string name="dejavu_actions_bar_home">Tre</string>
-    <string name="dejavu_settings_more_menu_summary">An barr oberennow a-woeles folennow ha\'n roll a wra igeri</string>
+    <string name="dejavu_settings_more_menu_summary_2">An boteneyer ryb an barr trigva, an barr oberennow ha\'n Roll Moy</string>
+    <string name="dejavu_more_menu_address_bar">Barr Trigva</string>
     <string name="dejavu_more_menu_drag_hint">Synsy boten ha tenn ev dhe rys a-ugh. Tenn boten arta omma a-woles rag y removya.</string>
     <string name="dejavu_more_menu_add_row">Keworra rys</string>
     <string name="dejavu_more_menu_row_full">An rys ma yw leun.</string>
@@ -447,6 +448,13 @@
     <string name="dejavu_protection_links">Dilea holya a-dhiworth kevrennow</string>
     <string name="dejavu_protection_hint">Difresyans gweythresys a\'gas gwith moy diogel. Pub huni a lever pyth a wra ev difres orto, ha pyth a yll hedhi a oberi awos ev.</string>
     <string name="dejavu_sync_zen_hint_unpinned">Yn Zen, igeri Settyansow, ena Kesunyans, ha treylya yn ban kesunyans an barr-esedh.</string>
+    <string name="dejavu_settings_bars">Barrow ha roll</string>
+    <string name="dejavu_bars_actions_bar">Barr trigva a-wartha, barr oberennow a-woles</string>
+    <string name="dejavu_bars_actions_bar_summary">Skubel an barr oberennow yn ban rag igeri an Roll Moy.</string>
+    <string name="dejavu_bars_top">Barr trigva a-wartha</string>
+    <string name="dejavu_bars_top_summary">Barr oberennow vyth. Skubel an barr trigva war-nans rag igeri an Roll Moy.</string>
+    <string name="dejavu_bars_bottom">Barr trigva a-woles</string>
+    <string name="dejavu_bars_bottom_summary">Barr oberennow vyth. Skubel an barr trigva yn ban rag igeri an Roll Moy.</string>
     <string name="dejavu_settings_screen">Skrin</string>
     <string name="dejavu_settings_hide_system_bars">Kudha an barrow studh ha lewyans</string>
     <string name="dejavu_settings_hide_system_bars_summary">Hag yw folen diskwedhys. Slynk a-ji dhyworth an amal a-wartha po a-woles rag aga gweles pols.</string>

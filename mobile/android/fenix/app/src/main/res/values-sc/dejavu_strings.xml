@@ -204,7 +204,8 @@
     <string name="dejavu_settings_actions_bar">Barra de is atziones</string>
     <string name="dejavu_actions_bar_search">Chirca</string>
     <string name="dejavu_actions_bar_home">Printzipale</string>
-    <string name="dejavu_settings_more_menu_summary">Sa barra de is atziones asuta de is pàginas e su menu chi aberit</string>
+    <string name="dejavu_settings_more_menu_summary_2">Is butones a costadu de sa barra de indiritzos, sa barra de is atziones e su menu Prus</string>
+    <string name="dejavu_more_menu_address_bar">Barra de indiritzos</string>
     <string name="dejavu_more_menu_drag_hint">Mantene pretzionadu unu butone e trìsina·lu a una ringa de susu. Trìsina unu butone torra a inoghe a bàsciu pro lu tirare.</string>
     <string name="dejavu_more_menu_add_row">Agiunghe una ringa</string>
     <string name="dejavu_more_menu_row_full">Custa ringa est prena.</string>
@@ -419,6 +420,13 @@
     <string name="dejavu_protection_links">Boga sa sighidura dae is ligòngios</string>
     <string name="dejavu_protection_hint">Una protetzione ativa ti mantenet prus seguru. Dònnia una narat dae ite ti amparat e ite podet non funtzionare prus a càusa sua.</string>
     <string name="dejavu_sync_zen_hint_unpinned">In Zen, aberi Cunfiguratzione, a pustis Sincronizatzione, e ativa sa sincronizatzione de sa barra laterale.</string>
+    <string name="dejavu_settings_bars">Barras e menu</string>
+    <string name="dejavu_bars_actions_bar">Barra de indiritzos in artu, barra de is atziones in bàsciu</string>
+    <string name="dejavu_bars_actions_bar_summary">Iscurre a susu sa barra de is atziones pro abèrrere su menu Prus.</string>
+    <string name="dejavu_bars_top">Barra de indiritzos in artu</string>
+    <string name="dejavu_bars_top_summary">Nissuna barra de is atziones. Iscurre a bàsciu sa barra de indiritzos pro abèrrere su menu Prus.</string>
+    <string name="dejavu_bars_bottom">Barra de indiritzos in bàsciu</string>
+    <string name="dejavu_bars_bottom_summary">Nissuna barra de is atziones. Iscurre a susu sa barra de indiritzos pro abèrrere su menu Prus.</string>
     <string name="dejavu_settings_screen">Ischermu</string>
     <string name="dejavu_settings_hide_system_bars">Cua sas barras de istadu e de navigatzione</string>
     <string name="dejavu_settings_hide_system_bars_summary">Cando si mustrat una pàgina. Iscurre dae s\'oru de susu o de giosso pro las bìdere unu momentu.</string>

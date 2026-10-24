@@ -208,7 +208,8 @@
     <string name="dejavu_settings_actions_bar">شريط الإجراءات</string>
     <string name="dejavu_actions_bar_search">ابحث</string>
     <string name="dejavu_actions_bar_home">الرئيسية</string>
-    <string name="dejavu_settings_more_menu_summary">شريط الإجراءات أسفل الصفحات والقائمة التي يفتحها</string>
+    <string name="dejavu_settings_more_menu_summary_2">الأزرار بجانب شريط العنوان، وشريط الإجراءات وقائمة «المزيد»</string>
+    <string name="dejavu_more_menu_address_bar">شريط العنوان</string>
     <string name="dejavu_more_menu_drag_hint">اضغط مطولًا على زر واسحبه إلى صف في الأعلى. اسحب الزر إلى هنا في الأسفل لإزالته.</string>
     <string name="dejavu_more_menu_add_row">إضافة صف</string>
     <string name="dejavu_more_menu_row_full">هذا الصف ممتلئ.</string>
@@ -447,6 +448,13 @@
     <string name="dejavu_protection_links">أزِل التعقّب من الروابط</string>
     <string name="dejavu_protection_hint">الحماية المفعّلة تُبقيك أكثر أمانًا. كل حماية تقول ممّ تحميك وما الذي قد يتوقف عن العمل بسببها.</string>
     <string name="dejavu_sync_zen_hint_unpinned">في Zen، افتح الإعدادات ثم المزامنة، وفعّل مزامنة الشريط الجانبي.</string>
+    <string name="dejavu_settings_bars">الأشرطة والقائمة</string>
+    <string name="dejavu_bars_actions_bar">شريط العنوان بالأعلى، وشريط الإجراءات بالأسفل</string>
+    <string name="dejavu_bars_actions_bar_summary">اسحب شريط الإجراءات لأعلى لفتح قائمة «المزيد».</string>
+    <string name="dejavu_bars_top">شريط العنوان بالأعلى</string>
+    <string name="dejavu_bars_top_summary">بلا شريط إجراءات. اسحب شريط العنوان لأسفل لفتح قائمة «المزيد».</string>
+    <string name="dejavu_bars_bottom">شريط العنوان بالأسفل</string>
+    <string name="dejavu_bars_bottom_summary">بلا شريط إجراءات. اسحب شريط العنوان لأعلى لفتح قائمة «المزيد».</string>
     <string name="dejavu_settings_screen">الشاشة</string>
     <string name="dejavu_settings_hide_system_bars">إخفاء شريطي الحالة والتنقل</string>
     <string name="dejavu_settings_hide_system_bars_summary">أثناء عرض صفحة. اسحب من الحافة العلوية أو السفلية لرؤيتهما لحظة.</string>

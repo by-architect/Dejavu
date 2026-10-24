@@ -203,7 +203,8 @@
     <string name="dejavu_settings_actions_bar">작업 모음</string>
     <string name="dejavu_actions_bar_search">검색</string>
     <string name="dejavu_actions_bar_home">홈</string>
-    <string name="dejavu_settings_more_menu_summary">페이지 아래의 작업 모음과 여기서 열리는 메뉴</string>
+    <string name="dejavu_settings_more_menu_summary_2">주소 표시줄 옆의 버튼, 작업 모음, 더보기 메뉴</string>
+    <string name="dejavu_more_menu_address_bar">주소 표시줄</string>
     <string name="dejavu_more_menu_drag_hint">버튼을 길게 누른 채 위쪽 줄로 끌어다 놓으세요. 버튼을 제거하려면 여기 아래로 다시 끌어다 놓으세요.</string>
     <string name="dejavu_more_menu_add_row">줄 추가</string>
     <string name="dejavu_more_menu_row_full">이 줄이 가득 찼습니다.</string>
@@ -412,6 +413,13 @@
     <string name="dejavu_protection_links">링크에서 추적 요소 제거</string>
     <string name="dejavu_protection_hint">켜져 있는 보호 기능은 나를 더 안전하게 지켜 줍니다. 각 기능마다 무엇을 막아 주는지, 그 때문에 무엇이 작동하지 않을 수 있는지 알려 줍니다.</string>
     <string name="dejavu_sync_zen_hint_unpinned">Zen에서 설정을 연 다음 동기화에서 사이드바 동기화를 켜세요.</string>
+    <string name="dejavu_settings_bars">도구 모음과 메뉴</string>
+    <string name="dejavu_bars_actions_bar">위쪽에 주소 표시줄, 아래쪽에 작업 모음</string>
+    <string name="dejavu_bars_actions_bar_summary">작업 모음을 위로 스와이프하면 더보기 메뉴가 열립니다.</string>
+    <string name="dejavu_bars_top">위쪽에 주소 표시줄</string>
+    <string name="dejavu_bars_top_summary">작업 모음이 없습니다. 주소 표시줄을 아래로 스와이프하면 더보기 메뉴가 열립니다.</string>
+    <string name="dejavu_bars_bottom">아래쪽에 주소 표시줄</string>
+    <string name="dejavu_bars_bottom_summary">작업 모음이 없습니다. 주소 표시줄을 위로 스와이프하면 더보기 메뉴가 열립니다.</string>
     <string name="dejavu_settings_screen">화면</string>
     <string name="dejavu_settings_hide_system_bars">상태 표시줄과 탐색 메뉴 숨기기</string>
     <string name="dejavu_settings_hide_system_bars_summary">페이지가 표시되는 동안. 위쪽이나 아래쪽 가장자리에서 스와이프하면 잠시 볼 수 있습니다.</string>

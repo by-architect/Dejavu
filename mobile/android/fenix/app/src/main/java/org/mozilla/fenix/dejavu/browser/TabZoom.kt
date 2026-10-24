@@ -293,7 +293,7 @@ internal object TabZoom {
     }
 
     /**
-     * The address bar and the actions bar the browser will show for the tab with [tabId], coming in from the top and
+     * The bars the browser will show for the tab with [tabId], as their layout has them, coming in from the top and
      * the bottom of the screen: [arrived] says how far, from 0 out of sight to 1 where the browser shows them. They
      * only show what is coming, so screen readers skip them. Browsers with other bars show none.
      */
@@ -303,21 +303,30 @@ internal object TabZoom {
         if (!remember { components.settings.showsOnlyDejavuBars }) return
         val tab by components.core.store.observeAsComposableState { it.findTab(tabId) }
         val barsTab = tab ?: return
+        val layout = currentBarsLayout()
         val sides = WindowInsets.systemBars.union(WindowInsets.displayCutout).only(WindowInsetsSides.Horizontal)
         FirefoxTheme {
             Box(modifier = Modifier.fillMaxSize().windowInsetsPadding(sides).clearAndSetSemantics {}) {
                 MaterialTheme(colorScheme = DejavuToolbar.glass(MaterialTheme.colorScheme)) {
-                    Box(
-                        modifier = Modifier
-                            .align(Alignment.TopCenter)
-                            .comingIn(arrived, fromTop = true)
-                            .statusBarRoomPadding(),
-                    ) {
-                        DejavuTopBarPreview(barsTab)
+                    if (layout.addressBarAtBottom) {
+                        Box(modifier = Modifier.align(Alignment.BottomCenter).comingIn(arrived, fromTop = false)) {
+                            BelowPages { DejavuAddressBarPreview(barsTab) }
+                        }
+                    } else {
+                        Box(
+                            modifier = Modifier
+                                .align(Alignment.TopCenter)
+                                .comingIn(arrived, fromTop = true)
+                                .statusBarRoomPadding(),
+                        ) {
+                            DejavuAddressBarPreview(barsTab)
+                        }
                     }
                 }
-                Box(modifier = Modifier.align(Alignment.BottomCenter).comingIn(arrived, fromTop = false)) {
-                    DejavuActionsBar(onEvent = {}, tabId = tabId)
+                if (layout.hasActionsBar) {
+                    Box(modifier = Modifier.align(Alignment.BottomCenter).comingIn(arrived, fromTop = false)) {
+                        DejavuActionsBar(onEvent = {}, tabId = tabId)
+                    }
                 }
             }
         }
@@ -341,7 +350,7 @@ internal fun Modifier.tabZoomTarget(tabId: String?): Modifier {
     return onGloballyPositioned { TabZoom.rowPlaced(tabId, owner, it.boundsInWindow()) }
 }
 
-/** Whether the browser shows only Dejavu's address bar above pages and its actions bar below them. */
+/** Whether the browser shows only Dejavu's own bars around pages. */
 private val Settings.showsOnlyDejavuBars: Boolean
     get() = DejavuToolbar.enabled && !shouldUseBottomToolbar && !isTabStripEnabled && !shouldShowTabGroupsStrip
 
@@ -401,7 +410,7 @@ private suspend fun awaitPageDrawn() {
 /** A picture of one of the browser's bars, shown at [offset] in the window, at the top of the screen or the bottom. */
 private class BarShot(val bitmap: ImageBitmap, val offset: Offset, val atTop: Boolean)
 
-/** Pictures of the browser's address bar and actions bar under [content] as they are shown now, when Dejavu's own. */
+/** Pictures of the browser's bars under [content] as they are shown now, when Dejavu's own. */
 private fun barShots(content: ViewGroup): List<BarShot> {
     if (!content.context.components.settings.showsOnlyDejavuBars) return emptyList()
     return listOf(R.id.composable_toolbar to true, R.id.navigation_bar to false).mapNotNull { (id, atTop) ->
@@ -427,9 +436,13 @@ private fun DrawScope.drawBars(bars: List<BarShot>, progress: Float, origin: Off
     }
 }
 
-/** The picture saved for the tab with [tabId] when its page loaded, placed where the browser shows the page. */
+/**
+ * The picture saved for the tab with [tabId] when its page loaded, placed where the browser shows the page: below the
+ * status bar, and below the address bar when it is above pages.
+ */
 private fun savedPicture(content: ViewGroup, tabId: String, bitmap: Bitmap): PageShot {
-    val pageTop = content.statusBarHeight + DEJAVU_TOP_BAR_HEIGHT.value * content.resources.displayMetrics.density
+    val bar = if (content.context.barsLayout.addressBarAtBottom) 0f else ADDRESS_BAR_HEIGHT.value
+    val pageTop = content.statusBarHeight + bar * content.resources.displayMetrics.density
     return PageShot(bitmap.asImageBitmap(), Offset(0f, pageTop), tabId, Color(bitmap.topEdgeColor()))
 }
 

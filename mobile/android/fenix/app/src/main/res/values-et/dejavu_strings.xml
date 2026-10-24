@@ -204,7 +204,8 @@
     <string name="dejavu_settings_actions_bar">Tegevusriba</string>
     <string name="dejavu_actions_bar_search">Otsi</string>
     <string name="dejavu_actions_bar_home">Avaleht</string>
-    <string name="dejavu_settings_more_menu_summary">Lehtede all olev tegevusriba ja menüü, mille see avab</string>
+    <string name="dejavu_settings_more_menu_summary_2">Aadressiriba kõrval olevad nupud, tegevusriba ja menüü „Rohkem”</string>
+    <string name="dejavu_more_menu_address_bar">Aadressiriba</string>
     <string name="dejavu_more_menu_drag_hint">Hoia nuppu all ja lohista see ülemisse ritta. Nupu eemaldamiseks lohista see tagasi siia alla.</string>
     <string name="dejavu_more_menu_add_row">Lisa rida</string>
     <string name="dejavu_more_menu_row_full">See rida on täis.</string>
@@ -419,6 +420,13 @@
     <string name="dejavu_protection_links">Eemaldatakse linkidest jälitamine</string>
     <string name="dejavu_protection_hint">Sisse lülitatud kaitse hoiab sind turvalisemana. Iga kaitse ütleb, mille eest see kaitseb ja mis võib selle tõttu töötamast lakata.</string>
     <string name="dejavu_sync_zen_hint_unpinned">Ava Zenis Sätted, siis Sünkroonimine, ja lülita sisse külgriba sünkroonimine.</string>
+    <string name="dejavu_settings_bars">Ribad ja menüü</string>
+    <string name="dejavu_bars_actions_bar">Aadressiriba üleval, tegevusriba all</string>
+    <string name="dejavu_bars_actions_bar_summary">Libista tegevusriba üles, et menüü „Rohkem” avada.</string>
+    <string name="dejavu_bars_top">Aadressiriba üleval</string>
+    <string name="dejavu_bars_top_summary">Tegevusriba puudub. Libista aadressiriba alla, et menüü „Rohkem” avada.</string>
+    <string name="dejavu_bars_bottom">Aadressiriba all</string>
+    <string name="dejavu_bars_bottom_summary">Tegevusriba puudub. Libista aadressiriba üles, et menüü „Rohkem” avada.</string>
     <string name="dejavu_settings_screen">Ekraan</string>
     <string name="dejavu_settings_hide_system_bars">Peida olekuriba ja navigeerimisriba</string>
     <string name="dejavu_settings_hide_system_bars_summary">Kui leht on kuvatud. Nende hetkeks nägemiseks pühkige ülemisest või alumisest servast.</string>

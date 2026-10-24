@@ -38,8 +38,8 @@ import org.mozilla.fenix.components.Components
 import org.mozilla.fenix.components.toolbar.ToolbarContainerView
 import org.mozilla.fenix.components.toolbar.ToolbarPosition
 import org.mozilla.fenix.dejavu.browser.DejavuToolbar
+import org.mozilla.fenix.dejavu.browser.barsLayout
 import org.mozilla.fenix.dejavu.browser.navigationBarHeight
-import org.mozilla.fenix.dejavu.menu.ACTIONS_BAR_BOTTOM_MARGIN
 import org.mozilla.fenix.navigation.DefaultNavControllerProvider
 import org.mozilla.fenix.navigation.NavControllerProvider
 import org.mozilla.fenix.theme.ThemeManager
@@ -288,7 +288,7 @@ fun Fragment.getBottomToolbarHeight(
 
     val navBarHeight =
         if (includeNavBarIfEnabled && isNavBarEnabled) {
-            pixelSizeFor(navBarDimen) + if (isToolbarAtBottom) 0 else dejavuActionsBarSpacing()
+            if (DejavuToolbar.enabled && !isToolbarAtBottom) dejavuBottomBarHeight() else pixelSizeFor(navBarDimen)
         } else {
             0
         }
@@ -303,13 +303,13 @@ fun Fragment.getBottomToolbarHeight(
 }
 
 /**
- * What Dejavu's actions bar takes below the page besides its own height: the space below it, and the navigation bar,
- * which pages run down behind.
+ * What Dejavu's bar below pages takes, the actions bar or the address bar, with the space below it and the navigation
+ * bar, which pages run down behind; nothing when the address bar is the only bar and sits above pages.
  */
-private fun Fragment.dejavuActionsBarSpacing(): Int {
-    if (!DejavuToolbar.enabled) return 0
-    return (ACTIONS_BAR_BOTTOM_MARGIN.value * resources.displayMetrics.density).roundToInt() +
-        (view?.navigationBarHeight ?: 0)
+private fun Fragment.dejavuBottomBarHeight(): Int {
+    val bar = requireContext().barsLayout.bottomBarHeight.value
+    if (bar == 0f) return 0
+    return (bar * resources.displayMetrics.density).roundToInt() + (view?.navigationBarHeight ?: 0)
 }
 
 /**

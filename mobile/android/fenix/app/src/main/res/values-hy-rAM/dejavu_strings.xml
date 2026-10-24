@@ -204,7 +204,8 @@
     <string name="dejavu_settings_actions_bar">Գործողությունների գոտի</string>
     <string name="dejavu_actions_bar_search">Որոնում</string>
     <string name="dejavu_actions_bar_home">Գլխավոր</string>
-    <string name="dejavu_settings_more_menu_summary">Էջերի տակի գործողությունների գոտին և ցանկը, որ այն բացում է</string>
+    <string name="dejavu_settings_more_menu_summary_2">Հասցեագոտու կողքի կոճակները, գործողությունների գոտին և լրացուցիչ ցանկը</string>
+    <string name="dejavu_more_menu_address_bar">Հասցեագոտի</string>
     <string name="dejavu_more_menu_drag_hint">Պահեք կոճակը և քաշեք այն վերևի տողերից մեկի մեջ։ Կոճակը հեռացնելու համար քաշեք այն հետ՝ այստեղ ներքև։</string>
     <string name="dejavu_more_menu_add_row">Ավելացնել տող</string>
     <string name="dejavu_more_menu_row_full">Այս տողն արդեն լիքն է.</string>
@@ -419,6 +420,13 @@
     <string name="dejavu_protection_links">Հեռացնել հետագծումը հղումներից</string>
     <string name="dejavu_protection_hint">Միացված պաշտպանությունը ձեզ ավելի ապահով է պահում։ Յուրաքանչյուրը նշում է, թե ինչից է պաշտպանում և ինչը կարող է դրա պատճառով դադարել աշխատել։</string>
     <string name="dejavu_sync_zen_hint_unpinned">Zen֊ում բացեք «Կարգավորումներ», ապա «Համաժամացում» և միացրեք կողային վահանակի համաժամացումը.</string>
+    <string name="dejavu_settings_bars">Գոտիներ և ցանկ</string>
+    <string name="dejavu_bars_actions_bar">Հասցեագոտին վերևում, գործողությունների գոտին ներքևում</string>
+    <string name="dejavu_bars_actions_bar_summary">Սահեցրեք գործողությունների գոտին վերև՝ լրացուցիչ ցանկը բացելու համար։</string>
+    <string name="dejavu_bars_top">Հասցեագոտին վերևում</string>
+    <string name="dejavu_bars_top_summary">Առանց գործողությունների գոտու։ Սահեցրեք հասցեագոտին ներքև՝ լրացուցիչ ցանկը բացելու համար։</string>
+    <string name="dejavu_bars_bottom">Հասցեագոտին ներքևում</string>
+    <string name="dejavu_bars_bottom_summary">Առանց գործողությունների գոտու։ Սահեցրեք հասցեագոտին վերև՝ լրացուցիչ ցանկը բացելու համար։</string>
     <string name="dejavu_settings_screen">Էկրան</string>
     <string name="dejavu_settings_hide_system_bars">Թաքցնել կարգավիճակի և նավարկման գոտիները</string>
     <string name="dejavu_settings_hide_system_bars_summary">Երբ էջ է ցուցադրվում: Սահեցրեք վերևի կամ ներքևի եզրից՝ դրանք մի պահ տեսնելու համար:</string>

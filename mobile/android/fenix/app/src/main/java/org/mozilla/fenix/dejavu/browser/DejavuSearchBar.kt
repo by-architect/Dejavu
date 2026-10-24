@@ -33,10 +33,11 @@ private const val MOVE_DURATION_MS = 280
 /**
  * Lays out an address bar that sits at the top of the screen. While searching, the bar moves down to sit right above
  * the keyboard, full width, with the suggestions above it; it slides there when search starts and back to the top
- * when search ends.
+ * when search ends. An address bar below pages leaves the top empty, so the search bar shows and goes at once there.
  *
  * @param enabled Whether the bar moves at all; when not, [topLayout] is always shown.
  * @param isSearching Whether the address bar is being edited.
+ * @param fromTop Whether the address bar sits at the top, for the search bar to slide down from and back up to.
  * @param toolbar The address bar.
  * @param suggestions The search suggestions, shown above the bar while searching.
  * @param topLayout The usual layout with the bar at the top.
@@ -45,6 +46,7 @@ private const val MOVE_DURATION_MS = 280
 fun DejavuSearchAboveKeyboard(
     enabled: Boolean,
     isSearching: Boolean,
+    fromTop: Boolean,
     toolbar: @Composable () -> Unit,
     suggestions: @Composable (Modifier) -> Unit,
     topLayout: @Composable () -> Unit,
@@ -53,7 +55,7 @@ fun DejavuSearchAboveKeyboard(
     val fromBottom = remember(isSearching) { isSearching && DejavuSearchStart.isFromBottom() }
     LaunchedEffect(isSearching, enabled) {
         val target = if (enabled && isSearching) 1f else 0f
-        if (target == 1f && fromBottom) {
+        if ((target == 1f && fromBottom) || !fromTop) {
             progress.snapTo(target)
         } else {
             if (target == 1f && progress.value == 0f) awaitSteadyFrames()

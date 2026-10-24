@@ -66,7 +66,10 @@ import kotlin.math.roundToInt
 import kotlinx.coroutines.delay
 import mozilla.components.ui.icons.R as iconsR
 import org.mozilla.fenix.R
+import org.mozilla.fenix.dejavu.browser.BarsLayout
 import org.mozilla.fenix.dejavu.menu.ActionsBarLayout
+import org.mozilla.fenix.dejavu.menu.AddressBarButtons
+import org.mozilla.fenix.dejavu.menu.BarSide
 import org.mozilla.fenix.dejavu.menu.MoreMenuEntry
 import org.mozilla.fenix.dejavu.menu.MoreMenuLayout
 import org.mozilla.fenix.dejavu.ui.DejavuDropdownMenu
@@ -81,6 +84,9 @@ internal sealed interface MenuDragSource {
 
     /** The button at [index] of line [line]. */
     data class Placed(override val key: String, val line: Int, val index: Int) : MenuDragSource
+
+    /** The button on [side] of the address bar. */
+    data class Side(override val key: String, val side: BarSide) : MenuDragSource
 }
 
 /**
@@ -171,9 +177,15 @@ internal object MenuLinesEditing {
         return if (fits) lines.withLine(last, row + key) else lines + listOf(listOf(key))
     }
 
-    private fun fits(line: Int, key: String) = line == BAR || !ActionsBarLayout.isBarOnly(key)
+    /** The lines with [key] in place of the button at [index] of line [line]. */
+    fun replace(lines: List<List<String>>, line: Int, index: Int, key: String): List<List<String>> =
+        lines.withLine(line, lines[line].withKey(index, key))
 
-    private fun isFullRow(line: Int, key: String) = line != BAR && MoreMenuLayout.isFullRow(key)
+    /** Whether the button with [key] can go into line [line]: only the bar takes Home and Search. */
+    fun fits(line: Int, key: String) = line == BAR || !ActionsBarLayout.isBarOnly(key)
+
+    /** Whether the button with [key] fills line [line] on its own, as the extensions do in a row of the menu. */
+    fun isFullRow(line: Int, key: String) = line != BAR && MoreMenuLayout.isFullRow(key)
 
     private fun List<List<String>>.withLine(index: Int, line: List<String>) =
         mapIndexed { i, old -> if (i == index) line else old }
@@ -182,6 +194,70 @@ internal object MenuLinesEditing {
 
     private fun List<List<String>>.without(placed: MenuDragSource.Placed?) =
         if (placed == null) this else remove(this, placed.line, placed.index)
+}
+
+/**
+ * Changes to the buttons beside the address bar in the editor of the "More" menu, see [AddressBarButtons], and to the
+ * lines of [MenuLinesEditing] as buttons move between the two. Each side holds one button, any the actions bar takes.
+ */
+internal object AddressBarEditing {
+    /**
+     * The buttons beside the address bar and the lines once the button of [source] is dropped on [side]. A button from
+     * the other side swaps with the one there; one from a line leaves it, and the one on [side] takes its place there
+     * when it can go there.
+     */
+    fun dropOnSide(
+        sides: AddressBarButtons,
+        lines: List<List<String>>,
+        source: MenuDragSource,
+        side: BarSide,
+    ): Pair<AddressBarButtons, List<List<String>>> {
+        val replaced = sides[side]
+        return when (source) {
+            is MenuDragSource.New -> sides.with(side, source.key) to lines
+            is MenuDragSource.Side -> sides.with(side, source.key).with(source.side, replaced) to lines
+            is MenuDragSource.Placed -> sides.with(side, source.key) to swapOut(lines, source, replaced)
+        }
+    }
+
+    /**
+     * The buttons beside the address bar and the lines once the button on [side] is dropped on block [slot] of line
+     * [line], or `null` when it cannot go there. It goes there as a new button would and leaves [side]; when it takes
+     * the place of a button of a full line, that one goes to [side] instead.
+     */
+    fun dropOnLine(
+        sides: AddressBarButtons,
+        lines: List<List<String>>,
+        side: BarSide,
+        line: Int,
+        slot: Int,
+    ): Pair<AddressBarButtons, List<List<String>>>? {
+        val key = sides[side] ?: return null
+        val target = lines.getOrNull(line) ?: return null
+        val updated = MenuLinesEditing.drop(lines, MenuDragSource.New(key), line, slot) ?: return null
+        val full = target.size >= MenuLinesEditing.capacityOf(line) && !MenuLinesEditing.isFullRow(line, key)
+        return sides.with(side, if (full) target[slot.coerceIn(target.indices)] else null) to updated
+    }
+
+    /** The buttons beside the address bar with [key] on the first side without one; as they are when both have one. */
+    fun fill(sides: AddressBarButtons, key: String): AddressBarButtons = when {
+        sides.start == null -> sides.with(BarSide.START, key)
+        sides.end == null -> sides.with(BarSide.END, key)
+        else -> sides
+    }
+
+    /** The lines without the button of [placed], or with [other] in its place when it can go there. */
+    private fun swapOut(lines: List<List<String>>, placed: MenuDragSource.Placed, other: String?): List<List<String>> {
+        val line = placed.line
+        val back = other?.takeIf {
+            MenuLinesEditing.fits(line, it) && (lines[line].size == 1 || !MenuLinesEditing.isFullRow(line, it))
+        }
+        return if (back != null) {
+            MenuLinesEditing.replace(lines, line, placed.index, back)
+        } else {
+            MenuLinesEditing.remove(lines, line, placed.index)
+        }
+    }
 }
 
 private val BlockHeight = 64.dp
@@ -194,6 +270,10 @@ private const val AUTO_SCROLL_STEP = 12f
 private const val AUTO_SCROLL_FRAME_MS = 16L
 private const val DRAGGED_ALPHA = 0.35f
 private const val REMOVE_ALPHA = 0.85f
+private const val FIELD_BLOCK_ALPHA = 0.06f
+
+/** The blocks the address bar's field takes between its two sides, as wide as three buttons of the actions bar. */
+private const val ADDRESS_FIELD_BLOCKS = 3
 
 /** A button being dragged: where it comes from, where the finger is in root coordinates, and where it would land. */
 private data class MenuDrag(val source: MenuDragSource, val pointer: Offset, val target: MenuDropTarget? = null)
@@ -202,6 +282,9 @@ private data class MenuDrag(val source: MenuDragSource, val pointer: Offset, val
 private sealed interface MenuDropTarget {
     /** Block [slot] of line [line]. */
     data class Block(val line: Int, val slot: Int) : MenuDropTarget
+
+    /** The block of [side] of the address bar. */
+    data class Side(val side: BarSide) : MenuDropTarget
 
     /** Back among every button, which takes it off the lines. */
     data object Remove : MenuDropTarget
@@ -213,15 +296,19 @@ private class Anchor {
 }
 
 /**
- * Edits the actions bar and the rows of the "More" menu on a screen split in two: the lines on top, the actions bar
- * first with blocks for five buttons and then the rows with four, and every button below. A button is held and dragged
- * into a block of a line, from below or from another block, and dragged back down it leaves the line. Tapping a button
- * below adds it after the last one; tapping one in a line offers to remove it. The actions bar cannot be deleted.
+ * Edits the buttons beside the address bar, the actions bar and the rows of the "More" menu on a screen split in two:
+ * the lines on top and every button below. The address bar comes first, with blocks for a button on each side of its
+ * field, which takes the three blocks in the middle; then the actions bar with blocks for five buttons, which only
+ * shows while the layout of the bars has it, see [BarsLayout]; then the rows with four. A button is held and dragged
+ * into a block, from below or from another block, and dragged back down it leaves its block. Tapping a button below
+ * adds it after the last one, or beside the address bar for Home and Search without an actions bar; tapping one in a
+ * block offers to remove it. The actions bar cannot be deleted.
  */
 @Suppress("LongMethod", "CognitiveComplexMethod", "CyclomaticComplexMethod")
 @Composable
 internal fun MoreMenuLinesEditor(settings: DejavuSettings, modifier: Modifier = Modifier) {
     val customActions by settings.customActions.collectAsState()
+    val layout by settings.barsLayout.collectAsState()
     var lines by remember {
         val bar = settings.actionsBarKeys.value.filter { ActionsBarLayout.entryOf(it, customActions) != null }
         val rows = settings.moreMenuRows.value.map { row ->
@@ -229,10 +316,13 @@ internal fun MoreMenuLinesEditor(settings: DejavuSettings, modifier: Modifier = 
         }
         mutableStateOf(listOf(bar) + rows)
     }
+    var sides by remember { mutableStateOf(settings.addressBarButtonsIn(layout)) }
     val palette = remember(customActions) { ActionsBarLayout.available(customActions) }
     var drag by remember { mutableStateOf<MenuDrag?>(null) }
     var menuFor by remember { mutableStateOf<Pair<Int, Int>?>(null) }
+    var sideMenuFor by remember { mutableStateOf<BarSide?>(null) }
     val blocks = remember { mutableStateMapOf<Pair<Int, Int>, Rect>() }
+    val sideBlocks = remember { mutableStateMapOf<BarSide, Rect>() }
     var linesArea by remember { mutableStateOf(Rect.Zero) }
     var paletteArea by remember { mutableStateOf(Rect.Zero) }
     var origin by remember { mutableStateOf(Offset.Zero) }
@@ -241,7 +331,9 @@ internal fun MoreMenuLinesEditor(settings: DejavuSettings, modifier: Modifier = 
     val edge = with(LocalDensity.current) { AutoScrollEdge.toPx() }
     val current = drag
     val target = current?.target as? MenuDropTarget.Block
+    val sideTarget = current?.target as? MenuDropTarget.Side
     val dragged = current?.source as? MenuDragSource.Placed
+    val draggedSide = current?.source as? MenuDragSource.Side
     val dragging = current != null
 
     fun update(updated: List<List<String>>) {
@@ -253,15 +345,29 @@ internal fun MoreMenuLinesEditor(settings: DejavuSettings, modifier: Modifier = 
         lines = updated
     }
 
+    fun updateWithSides(updated: Pair<AddressBarButtons, List<List<String>>>) {
+        update(updated.second)
+        if (updated.first == sides) return
+        settings.setAddressBarButtons(updated.first)
+        sides = updated.first
+    }
+
     fun targetAt(source: MenuDragSource, pointer: Offset): MenuDropTarget? {
-        if (paletteArea.contains(pointer)) return MenuDropTarget.Remove.takeIf { source is MenuDragSource.Placed }
+        if (paletteArea.contains(pointer)) return MenuDropTarget.Remove.takeIf { source !is MenuDragSource.New }
+        sideBlocks.entries.firstOrNull { it.value.contains(pointer) }?.let { return MenuDropTarget.Side(it.key) }
         val (line, slot) = blocks.entries.firstOrNull { it.value.contains(pointer) }?.key ?: return null
-        return MenuDropTarget.Block(line, slot).takeIf { MenuLinesEditing.drop(lines, source, line, slot) != null }
+        val fits = if (source is MenuDragSource.Side) {
+            AddressBarEditing.dropOnLine(sides, lines, source.side, line, slot) != null
+        } else {
+            MenuLinesEditing.drop(lines, source, line, slot) != null
+        }
+        return MenuDropTarget.Block(line, slot).takeIf { fits }
     }
 
     fun startDrag(source: MenuDragSource, pointer: Offset) {
         haptics.performHapticFeedback(HapticFeedbackType.LongPress)
         menuFor = null
+        sideMenuFor = null
         drag = MenuDrag(source, pointer, targetAt(source, pointer))
     }
 
@@ -273,11 +379,19 @@ internal fun MoreMenuLinesEditor(settings: DejavuSettings, modifier: Modifier = 
     fun endDrag() {
         val ended = drag ?: return
         drag = null
+        val source = ended.source
         when (val landed = ended.target) {
-            is MenuDropTarget.Block ->
-                MenuLinesEditing.drop(lines, ended.source, landed.line, landed.slot)?.let(::update)
-            MenuDropTarget.Remove -> (ended.source as? MenuDragSource.Placed)?.let {
-                update(MenuLinesEditing.remove(lines, it.line, it.index))
+            is MenuDropTarget.Side -> updateWithSides(AddressBarEditing.dropOnSide(sides, lines, source, landed.side))
+            is MenuDropTarget.Block -> if (source is MenuDragSource.Side) {
+                val dropped = AddressBarEditing.dropOnLine(sides, lines, source.side, landed.line, landed.slot)
+                dropped?.let(::updateWithSides)
+            } else {
+                MenuLinesEditing.drop(lines, source, landed.line, landed.slot)?.let(::update)
+            }
+            MenuDropTarget.Remove -> when (source) {
+                is MenuDragSource.Placed -> update(MenuLinesEditing.remove(lines, source.line, source.index))
+                is MenuDragSource.Side -> updateWithSides(sides.with(source.side, null) to lines)
+                is MenuDragSource.New -> Unit
             }
             null -> Unit
         }
@@ -374,6 +488,53 @@ internal fun MoreMenuLinesEditor(settings: DejavuSettings, modifier: Modifier = 
         }
     }
 
+    @Composable
+    fun SideBlock(side: BarSide, modifier: Modifier) {
+        val key = sides[side]
+        val entry = key?.let { ActionsBarLayout.entryOf(it, customActions) }
+        val highlighted = sideTarget?.side == side
+        DisposableEffect(side) { onDispose { sideBlocks.remove(side) } }
+        Box(modifier = modifier.onGloballyPositioned { sideBlocks[side] = it.boundsInRoot() }) {
+            if (key != null && entry != null) {
+                DraggableBlock(
+                    onDragStart = { startDrag(MenuDragSource.Side(key, side), it) },
+                    onDrag = ::moveDrag,
+                    onDragEnd = ::endDrag,
+                    onDragCancel = { drag = null },
+                    onClick = { if (drag == null) sideMenuFor = side },
+                ) {
+                    BlockContent(entry = entry, highlighted = highlighted, dimmed = draggedSide?.side == side)
+                }
+                DejavuDropdownMenu(expanded = sideMenuFor == side, onDismissRequest = { sideMenuFor = null }) {
+                    DejavuMenuItem(
+                        text = stringResource(R.string.dejavu_more_menu_remove),
+                        onClick = {
+                            sideMenuFor = null
+                            updateWithSides(sides.with(side, null) to lines)
+                        },
+                    )
+                }
+            } else {
+                BlockContent(entry = null, highlighted = highlighted)
+            }
+        }
+    }
+
+    // The address bar's field takes the blocks between its two sides, which take one button each.
+    @Composable
+    fun AddressLine() {
+        Row(verticalAlignment = Alignment.CenterVertically) {
+            Row(horizontalArrangement = Arrangement.spacedBy(BlockGap), modifier = Modifier.weight(1f)) {
+                SideBlock(BarSide.START, Modifier.weight(1f))
+                repeat(ADDRESS_FIELD_BLOCKS) { block ->
+                    FieldBlock(showsIcon = block == ADDRESS_FIELD_BLOCKS / 2, modifier = Modifier.weight(1f))
+                }
+                SideBlock(BarSide.END, Modifier.weight(1f))
+            }
+            Spacer(Modifier.width(LineEndWidth))
+        }
+    }
+
     Box(modifier = modifier.fillMaxSize().onGloballyPositioned { origin = it.positionInRoot() }) {
         Column(modifier = Modifier.fillMaxSize()) {
             Column(
@@ -385,8 +546,12 @@ internal fun MoreMenuLinesEditor(settings: DejavuSettings, modifier: Modifier = 
                     .verticalScroll(linesScroll, enabled = !dragging)
                     .padding(start = 12.dp, top = 8.dp, bottom = 12.dp),
             ) {
-                LineCaption(stringResource(R.string.dejavu_settings_actions_bar))
-                Line(MenuLinesEditing.BAR, lines[MenuLinesEditing.BAR])
+                LineCaption(stringResource(R.string.dejavu_more_menu_address_bar))
+                AddressLine()
+                if (layout.hasActionsBar) {
+                    LineCaption(stringResource(R.string.dejavu_settings_actions_bar))
+                    Line(MenuLinesEditing.BAR, lines[MenuLinesEditing.BAR])
+                }
                 LineCaption(stringResource(R.string.dejavu_settings_more_menu))
                 lines.forEachIndexed { line, keys -> if (line != MenuLinesEditing.BAR) Line(line, keys) }
                 OutlinedButton(
@@ -425,7 +590,15 @@ internal fun MoreMenuLinesEditor(settings: DejavuSettings, modifier: Modifier = 
                                     onDrag = ::moveDrag,
                                     onDragEnd = ::endDrag,
                                     onDragCancel = { drag = null },
-                                    onClick = { if (drag == null) update(MenuLinesEditing.append(lines, entry.key)) },
+                                    onClick = {
+                                        when {
+                                            drag != null -> Unit
+                                            // Without an actions bar, Home and Search only go beside the address bar.
+                                            !layout.hasActionsBar && ActionsBarLayout.isBarOnly(entry.key) ->
+                                                updateWithSides(AddressBarEditing.fill(sides, entry.key) to lines)
+                                            else -> update(MenuLinesEditing.append(lines, entry.key))
+                                        }
+                                    },
                                     modifier = Modifier.weight(1f),
                                 ) {
                                     BlockContent(entry = entry)
@@ -435,7 +608,7 @@ internal fun MoreMenuLinesEditor(settings: DejavuSettings, modifier: Modifier = 
                         }
                     }
                 }
-                if (dragged != null) RemoveArea(active = current.target == MenuDropTarget.Remove)
+                if (dragged != null || draggedSide != null) RemoveArea(active = current.target == MenuDropTarget.Remove)
             }
         }
         if (current != null) {
@@ -446,7 +619,7 @@ internal fun MoreMenuLinesEditor(settings: DejavuSettings, modifier: Modifier = 
     }
 }
 
-/** The name of the lines below it: the actions bar, or the rows of the "More" menu. */
+/** The name of the lines below it: the address bar, the actions bar, or the rows of the "More" menu. */
 @Composable
 private fun LineCaption(text: String) {
     Text(
@@ -455,6 +628,30 @@ private fun LineCaption(text: String) {
         color = MaterialTheme.colorScheme.onSurfaceVariant,
         modifier = Modifier.padding(start = 4.dp, top = 4.dp),
     )
+}
+
+/**
+ * One of the blocks the address bar's field takes in its line, which no button goes into; the middle one shows the
+ * search icon.
+ */
+@Composable
+private fun FieldBlock(showsIcon: Boolean, modifier: Modifier = Modifier) {
+    Box(
+        contentAlignment = Alignment.Center,
+        modifier = modifier
+            .height(BlockHeight)
+            .clip(BlockShape)
+            .background(MaterialTheme.colorScheme.onSurface.copy(alpha = FIELD_BLOCK_ALPHA)),
+    ) {
+        if (showsIcon) {
+            Icon(
+                painter = painterResource(iconsR.drawable.mozac_ic_search_24),
+                contentDescription = null,
+                tint = MaterialTheme.colorScheme.onSurfaceVariant,
+                modifier = Modifier.size(22.dp),
+            )
+        }
+    }
 }
 
 /** A button that a long press starts dragging, with finger positions in root coordinates. A tap runs [onClick]. */

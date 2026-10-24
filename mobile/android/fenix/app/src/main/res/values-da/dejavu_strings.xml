@@ -204,7 +204,8 @@
     <string name="dejavu_settings_actions_bar">Handlingslinje</string>
     <string name="dejavu_actions_bar_search">Søg</string>
     <string name="dejavu_actions_bar_home">Hjem</string>
-    <string name="dejavu_settings_more_menu_summary">Handlingslinjen under sider og den menu, den åbner</string>
+    <string name="dejavu_settings_more_menu_summary_2">Knapperne ved siden af adresselinjen, handlingslinjen og Mere-menuen</string>
+    <string name="dejavu_more_menu_address_bar">Adresselinje</string>
     <string name="dejavu_more_menu_drag_hint">Hold en knap nede, og træk den op i en række. Træk en knap tilbage herned for at fjerne den.</string>
     <string name="dejavu_more_menu_add_row">Tilføj en række</string>
     <string name="dejavu_more_menu_row_full">Denne række er fuld.</string>
@@ -419,6 +420,13 @@
     <string name="dejavu_protection_links">Fjern sporing fra links</string>
     <string name="dejavu_protection_hint">En beskyttelse, der er slået til, gør dig mere sikker. Hver enkelt fortæller, hvad den beskytter mod, og hvad der måske holder op med at virke på grund af den.</string>
     <string name="dejavu_sync_zen_hint_unpinned">Åbn Indstillinger i Zen, derefter Synkronisering, og slå synkronisering af sidepanelet til.</string>
+    <string name="dejavu_settings_bars">Linjer og menu</string>
+    <string name="dejavu_bars_actions_bar">Adresselinje øverst, handlingslinje nederst</string>
+    <string name="dejavu_bars_actions_bar_summary">Stryg handlingslinjen op for at åbne Mere-menuen.</string>
+    <string name="dejavu_bars_top">Adresselinje øverst</string>
+    <string name="dejavu_bars_top_summary">Ingen handlingslinje. Stryg adresselinjen ned for at åbne Mere-menuen.</string>
+    <string name="dejavu_bars_bottom">Adresselinje nederst</string>
+    <string name="dejavu_bars_bottom_summary">Ingen handlingslinje. Stryg adresselinjen op for at åbne Mere-menuen.</string>
     <string name="dejavu_settings_screen">Skærm</string>
     <string name="dejavu_settings_hide_system_bars">Skjul status- og navigationslinjen</string>
     <string name="dejavu_settings_hide_system_bars_summary">Mens en side vises. Stryg ind fra den øverste eller nederste kant for at se dem et øjeblik.</string>

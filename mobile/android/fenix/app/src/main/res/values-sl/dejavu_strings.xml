@@ -206,7 +206,8 @@
     <string name="dejavu_settings_actions_bar">Vrstica dejanj</string>
     <string name="dejavu_actions_bar_search">Iskanje</string>
     <string name="dejavu_actions_bar_home">Domov</string>
-    <string name="dejavu_settings_more_menu_summary">Vrstica dejanj pod stranmi in meni, ki ga odpre</string>
+    <string name="dejavu_settings_more_menu_summary_2">Gumbi ob naslovni vrstici, vrstica dejanj in meni „Več“</string>
+    <string name="dejavu_more_menu_address_bar">Naslovna vrstica</string>
     <string name="dejavu_more_menu_drag_hint">Pridržite gumb in ga povlecite v vrstico zgoraj. Gumb odstranite tako, da ga povlečete nazaj sem dol.</string>
     <string name="dejavu_more_menu_add_row">Dodaj vrstico</string>
     <string name="dejavu_more_menu_row_full">Ta vrstica je polna.</string>
@@ -433,6 +434,13 @@
     <string name="dejavu_protection_links">Odstrani sledenje iz povezav</string>
     <string name="dejavu_protection_hint">Vklopljena zaščita vas bolje varuje. Pri vsaki piše, pred čim vas ščiti in kaj lahko zaradi nje preneha delovati.</string>
     <string name="dejavu_sync_zen_hint_unpinned">V Zenu odprite Nastavitve, nato Sinhronizacija, in vklopite sinhronizacijo stranske vrstice.</string>
+    <string name="dejavu_settings_bars">Vrstice in meni</string>
+    <string name="dejavu_bars_actions_bar">Naslovna vrstica zgoraj, vrstica dejanj spodaj</string>
+    <string name="dejavu_bars_actions_bar_summary">Povlecite vrstico dejanj navzgor, da odprete meni „Več“.</string>
+    <string name="dejavu_bars_top">Naslovna vrstica zgoraj</string>
+    <string name="dejavu_bars_top_summary">Brez vrstice dejanj. Povlecite naslovno vrstico navzdol, da odprete meni „Več“.</string>
+    <string name="dejavu_bars_bottom">Naslovna vrstica spodaj</string>
+    <string name="dejavu_bars_bottom_summary">Brez vrstice dejanj. Povlecite naslovno vrstico navzgor, da odprete meni „Več“.</string>
     <string name="dejavu_settings_screen">Zaslon</string>
     <string name="dejavu_settings_hide_system_bars">Skrij vrstici stanja in krmarjenja</string>
     <string name="dejavu_settings_hide_system_bars_summary">Med prikazom strani. Povlecite z zgornjega ali spodnjega roba, da ju za trenutek vidite.</string>

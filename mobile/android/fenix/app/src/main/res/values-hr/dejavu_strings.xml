@@ -205,7 +205,8 @@
     <string name="dejavu_settings_actions_bar">Traka radnji</string>
     <string name="dejavu_actions_bar_search">Traži</string>
     <string name="dejavu_actions_bar_home">Početna</string>
-    <string name="dejavu_settings_more_menu_summary">Traka radnji ispod stranica i izbornik koji se njome otvara</string>
+    <string name="dejavu_settings_more_menu_summary_2">Gumbi uz adresnu traku, traka radnji i izbornik „Više“</string>
+    <string name="dejavu_more_menu_address_bar">Adresna traka</string>
     <string name="dejavu_more_menu_drag_hint">Zadržite gumb i povucite ga u redak iznad. Povucite gumb natrag ovdje dolje da biste ga uklonili.</string>
     <string name="dejavu_more_menu_add_row">Dodaj redak</string>
     <string name="dejavu_more_menu_row_full">Ovaj redak je pun.</string>
@@ -426,6 +427,13 @@
     <string name="dejavu_protection_links">Ukloni praćenje iz poveznica</string>
     <string name="dejavu_protection_hint">Uključena zaštita povećava tvoju sigurnost. Svaka kaže od čega štiti i što zbog nje može prestati raditi.</string>
     <string name="dejavu_sync_zen_hint_unpinned">U Zenu otvorite Postavke, zatim Sinkronizacija, i uključite sinkronizaciju bočne trake.</string>
+    <string name="dejavu_settings_bars">Trake i izbornik</string>
+    <string name="dejavu_bars_actions_bar">Adresna traka gore, traka radnji dolje</string>
+    <string name="dejavu_bars_actions_bar_summary">Povucite traku radnji prema gore za otvaranje izbornika „Više“.</string>
+    <string name="dejavu_bars_top">Adresna traka gore</string>
+    <string name="dejavu_bars_top_summary">Bez trake radnji. Povucite adresnu traku prema dolje za otvaranje izbornika „Više“.</string>
+    <string name="dejavu_bars_bottom">Adresna traka dolje</string>
+    <string name="dejavu_bars_bottom_summary">Bez trake radnji. Povucite adresnu traku prema gore za otvaranje izbornika „Više“.</string>
     <string name="dejavu_settings_screen">Zaslon</string>
     <string name="dejavu_settings_hide_system_bars">Sakrij trake stanja i navigacije</string>
     <string name="dejavu_settings_hide_system_bars_summary">Dok je prikazana stranica. Povucite s gornjeg ili donjeg ruba da ih na trenutak vidite.</string>

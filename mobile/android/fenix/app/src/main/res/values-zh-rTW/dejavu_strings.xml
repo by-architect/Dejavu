@@ -203,7 +203,8 @@
     <string name="dejavu_settings_actions_bar">操作列</string>
     <string name="dejavu_actions_bar_search">搜尋</string>
     <string name="dejavu_actions_bar_home">首頁</string>
-    <string name="dejavu_settings_more_menu_summary">網頁下方的操作列及其開啟的選單</string>
+    <string name="dejavu_settings_more_menu_summary_2">網址列旁邊的按鈕、操作列與更多選單</string>
+    <string name="dejavu_more_menu_address_bar">網址列</string>
     <string name="dejavu_more_menu_drag_hint">長按按鈕，將其拖曳到上方的某一列。將按鈕拖曳回下方此處即可移除。</string>
     <string name="dejavu_more_menu_add_row">新增列</string>
     <string name="dejavu_more_menu_row_full">此列已滿。</string>
@@ -412,6 +413,13 @@
     <string name="dejavu_protection_links">移除連結中的追蹤資訊</string>
     <string name="dejavu_protection_hint">開啟的保護功能能讓您更安全。每一項都會說明它防範什麼，以及可能因此無法正常運作的功能。</string>
     <string name="dejavu_sync_zen_hint_unpinned">在 Zen 中開啟「設定」，再進入「同步」，開啟側邊欄同步。</string>
+    <string name="dejavu_settings_bars">工具列與選單</string>
+    <string name="dejavu_bars_actions_bar">網址列在頂端，操作列在底端</string>
+    <string name="dejavu_bars_actions_bar_summary">向上滑動操作列即可開啟更多選單。</string>
+    <string name="dejavu_bars_top">網址列在頂端</string>
+    <string name="dejavu_bars_top_summary">無操作列。向下滑動網址列即可開啟更多選單。</string>
+    <string name="dejavu_bars_bottom">網址列在底端</string>
+    <string name="dejavu_bars_bottom_summary">無操作列。向上滑動網址列即可開啟更多選單。</string>
     <string name="dejavu_settings_screen">螢幕</string>
     <string name="dejavu_settings_hide_system_bars">隱藏狀態列與導覽列</string>
     <string name="dejavu_settings_hide_system_bars_summary">顯示網頁時。從上緣或下緣向內滑動即可短暫顯示。</string>

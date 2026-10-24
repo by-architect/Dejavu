@@ -227,7 +227,8 @@
     <string name="dejavu_settings_actions_bar">የእርምጃዎች አሞሌ</string>
     <string name="dejavu_actions_bar_search">ፈልግ</string>
     <string name="dejavu_actions_bar_home">መነሻ</string>
-    <string name="dejavu_settings_more_menu_summary">ከገጾች በታች ያለው የእርምጃዎች አሞሌ እና የሚከፍተው ምናሌ</string>
+    <string name="dejavu_settings_more_menu_summary_2">ከአድራሻ አሞሌው ጎን ያሉት አዝራሮች፣ የእርምጃዎች አሞሌ እና ተጨማሪ ምናሌ</string>
+    <string name="dejavu_more_menu_address_bar">የአድራሻ አሞሌ</string>
     <string name="dejavu_more_menu_drag_hint">አንድ አዝራር ተጭነው ይያዙና ከላይ ወዳለው ረድፍ ይጎትቱት። አንድን አዝራር ለማስወገድ ወደዚህ ወደ ታች መልሰው ይጎትቱት።</string>
     <string name="dejavu_more_menu_add_row">ረድፍ አክል</string>
     <string name="dejavu_more_menu_row_full">ይህ ረድፍ ሞልቷል።</string>
@@ -419,6 +420,13 @@
     <string name="dejavu_protection_links">ከአገናኞች መከታተያን አስወግድ</string>
     <string name="dejavu_protection_hint">የበራ ጥበቃ የበለጠ ደህንነትዎን ይጠብቃል። እያንዳንዱ ጥበቃ ከምን እንደሚጠብቅ እና በእሱ ምክንያት ምን መስራት ሊያቆም እንደሚችል ይናገራል።</string>
     <string name="dejavu_sync_zen_hint_unpinned">በZen ውስጥ ቅንብሮችን፣ ከዚያም Syncን ይክፈቱ፣ እና የጎን አሞሌ ማመሳሰልን ያብሩ።</string>
+    <string name="dejavu_settings_bars">አሞሌዎች እና ምናሌ</string>
+    <string name="dejavu_bars_actions_bar">የአድራሻ አሞሌ ከላይ፣ የእርምጃዎች አሞሌ ከታች</string>
+    <string name="dejavu_bars_actions_bar_summary">ተጨማሪ ምናሌውን ለመክፈት የእርምጃዎች አሞሌን ወደ ላይ ያንሸራትቱ።</string>
+    <string name="dejavu_bars_top">የአድራሻ አሞሌ ከላይ</string>
+    <string name="dejavu_bars_top_summary">የእርምጃዎች አሞሌ የለም። ተጨማሪ ምናሌውን ለመክፈት የአድራሻ አሞሌን ወደ ታች ያንሸራትቱ።</string>
+    <string name="dejavu_bars_bottom">የአድራሻ አሞሌ ከታች</string>
+    <string name="dejavu_bars_bottom_summary">የእርምጃዎች አሞሌ የለም። ተጨማሪ ምናሌውን ለመክፈት የአድራሻ አሞሌን ወደ ላይ ያንሸራትቱ።</string>
     <string name="dejavu_settings_screen">ማያ ገጽ</string>
     <string name="dejavu_settings_hide_system_bars">የሁኔታ እና የአሰሳ አሞሌዎችን ደብቅ</string>
     <string name="dejavu_settings_hide_system_bars_summary">ገጽ በሚታይበት ጊዜ። ለአፍታ ለማየት ከላይ ወይም ከታች ጠርዝ ያንሸራትቱ።</string>

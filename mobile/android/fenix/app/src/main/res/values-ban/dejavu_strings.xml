@@ -203,7 +203,8 @@
     <string name="dejavu_settings_actions_bar">Bar aksi</string>
     <string name="dejavu_actions_bar_search">Alih</string>
     <string name="dejavu_actions_bar_home">Home</string>
-    <string name="dejavu_settings_more_menu_summary">Bar aksi di beten halaman lan menu ane kabukak</string>
+    <string name="dejavu_settings_more_menu_summary_2">Tombol di samping bar alamat, bar aksi, lan Menu tambahan</string>
+    <string name="dejavu_more_menu_address_bar">Bar alamat</string>
     <string name="dejavu_more_menu_drag_hint">Tekek tombol tur tarik ka baris ane di duur. Tarik tombol malih ka beten deriki anggon ngilangang.</string>
     <string name="dejavu_more_menu_add_row">Tambah baris</string>
     <string name="dejavu_more_menu_row_full">Baris ené suba pinuh.</string>
@@ -412,6 +413,13 @@
     <string name="dejavu_protection_links">Icalang pelacakan saking link</string>
     <string name="dejavu_protection_hint">Pangraksa sane urip ngawinang ragane sayan aman. Suang-suang nyinahang saking napi ipun ngaraksa miwah napi sane prasida nenten mamargi duaning ipun.</string>
     <string name="dejavu_sync_zen_hint_unpinned">Di Zen, bukak Settings, lantas Sync, lan idupang sidebar sync.</string>
+    <string name="dejavu_settings_bars">Bar lan menu</string>
+    <string name="dejavu_bars_actions_bar">Bar alamat di duur, bar aksi di beten</string>
+    <string name="dejavu_bars_actions_bar_summary">Usap bar aksi ka duur anggen ngungkab Menu tambahan.</string>
+    <string name="dejavu_bars_top">Bar alamat di duur</string>
+    <string name="dejavu_bars_top_summary">Tusing ada bar aksi. Usap bar alamat ka beten anggen ngungkab Menu tambahan.</string>
+    <string name="dejavu_bars_bottom">Bar alamat di beten</string>
+    <string name="dejavu_bars_bottom_summary">Tusing ada bar aksi. Usap bar alamat ka duur anggen ngungkab Menu tambahan.</string>
     <string name="dejavu_settings_screen">Layar</string>
     <string name="dejavu_settings_hide_system_bars">Engkebang bar status miwah navigasi</string>
     <string name="dejavu_settings_hide_system_bars_summary">Rikala kaca kaedengang. Gesér saking pinggir duur utawi beten anggen nyingakin ipun akejep.</string>

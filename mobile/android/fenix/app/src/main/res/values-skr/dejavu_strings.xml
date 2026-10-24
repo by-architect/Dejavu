@@ -227,7 +227,8 @@
     <string name="dejavu_settings_actions_bar">عمل پٹی</string>
     <string name="dejavu_actions_bar_search">ڳولو</string>
     <string name="dejavu_actions_bar_home">مکھ پناں</string>
-    <string name="dejavu_settings_more_menu_summary">ورقیاں دے تلے عمل پٹی، تے اوہ مینیو جہڑا ایہ کھولیندی ہے</string>
+    <string name="dejavu_settings_more_menu_summary_2">پتہ پٹی دے نال آلے بٹݨ، عمل پٹی تے ودھیک مینیو</string>
+    <string name="dejavu_more_menu_address_bar">پتہ پٹی</string>
     <string name="dejavu_more_menu_drag_hint">کہیں بٹݨ کوں دبا تے رکھو تے اوکوں اُتے کہیں قطار وچ چھکو۔ بٹݨ ہٹاوݨ کیتے اوکوں ولا اتھاں تلے چھکو۔</string>
     <string name="dejavu_more_menu_add_row">قطار شامل کرو</string>
     <string name="dejavu_more_menu_row_full">ایہ قطار بھری ہوئی ہے۔</string>
@@ -419,6 +420,13 @@
     <string name="dejavu_protection_links">لنکاں کنوں ٹریکنگ ہٹاؤ</string>
     <string name="dejavu_protection_hint">جہڑی حفاظت چالو ہووے، او تہاکوں ودھ محفوظ رکھدی ہے۔ ہر ہک ݙسیندی ہے جو او کیں چیز کنوں بچیندی ہے تے ایندی وجہ نال کیا کم کرݨ بند کر سڳدا ہے۔</string>
     <string name="dejavu_sync_zen_hint_unpinned">Zen وچ ترتیباں کھولو، ول ہم وقت کرݨ، تے سائیڈ بار ہم وقت کرݨ چالو کرو۔</string>
+    <string name="dejavu_settings_bars">پٹیاں تے مینیو</string>
+    <string name="dejavu_bars_actions_bar">پتہ پٹی چوٹی تے، عمل پٹی تل تے</string>
+    <string name="dejavu_bars_actions_bar_summary">ودھیک مینیو کھولݨ کیتے عمل پٹی کوں اُتے سوائپ کرو۔</string>
+    <string name="dejavu_bars_top">پتہ پٹی چوٹی تے</string>
+    <string name="dejavu_bars_top_summary">کوئی عمل پٹی کائنی۔ ودھیک مینیو کھولݨ کیتے پتہ پٹی کوں تلے سوائپ کرو۔</string>
+    <string name="dejavu_bars_bottom">پتہ پٹی تل تے</string>
+    <string name="dejavu_bars_bottom_summary">کوئی عمل پٹی کائنی۔ ودھیک مینیو کھولݨ کیتے پتہ پٹی کوں اُتے سوائپ کرو۔</string>
     <string name="dejavu_settings_screen">سکرین</string>
     <string name="dejavu_settings_hide_system_bars">سٹیٹس تے نیویگیشن بار لُکاؤ</string>
     <string name="dejavu_settings_hide_system_bars_summary">جݙݨ کوئی ورقہ ݙکھایا ویندا پیا ہووے۔ انہاں کوں ہک پل کیتے ݙیکھݨ کیتے اُتلے یا تلے کنارے کنوں سوائپ کرو۔</string>

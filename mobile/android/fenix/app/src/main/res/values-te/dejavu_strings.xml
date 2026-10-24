@@ -204,7 +204,8 @@
     <string name="dejavu_settings_actions_bar">చర్యల పట్టీ</string>
     <string name="dejavu_actions_bar_search">వెతుకు</string>
     <string name="dejavu_actions_bar_home">హోమ్</string>
-    <string name="dejavu_settings_more_menu_summary">పేజీల దిగువన ఉండే చర్యల పట్టీ మరియు అది తెరిచే మెనూ</string>
+    <string name="dejavu_settings_more_menu_summary_2">చిరునామా పట్టీ పక్కన ఉండే బటన్లు, చర్యల పట్టీ మరియు మరిన్ని మెనూ</string>
+    <string name="dejavu_more_menu_address_bar">చిరునామా పట్టీ</string>
     <string name="dejavu_more_menu_drag_hint">బటన్‌ను నొక్కి పట్టుకుని పైన ఉన్న ఒక వరుసలోకి లాగండి. బటన్‌ను తీసివేయడానికి దాన్ని తిరిగి ఇక్కడ కిందికి లాగండి.</string>
     <string name="dejavu_more_menu_add_row">ఒక వరుసను చేర్చు</string>
     <string name="dejavu_more_menu_row_full">ఈ వరుస నిండింది.</string>
@@ -419,6 +420,13 @@
     <string name="dejavu_protection_links">లింకుల నుండి ట్రాకింగ్‌ను తీసివేయి</string>
     <string name="dejavu_protection_hint">ఆన్‌లో ఉన్న రక్షణ మిమ్మల్ని మరింత సురక్షితంగా ఉంచుతుంది. ప్రతి ఒక్కటీ దేని నుండి కాపాడుతుందో, దాని వల్ల ఏది పనిచేయకపోవచ్చో చెబుతుంది.</string>
     <string name="dejavu_sync_zen_hint_unpinned">Zenలో, అమరికలు తెరిచి, తర్వాత సింక్‌ను తెరిచి, సైడ్‌బార్ సింక్‌ను ఆన్ చేయండి.</string>
+    <string name="dejavu_settings_bars">పట్టీలు మరియు మెనూ</string>
+    <string name="dejavu_bars_actions_bar">చిరునామా పట్టీ పైన, చర్యల పట్టీ దిగువన</string>
+    <string name="dejavu_bars_actions_bar_summary">మరిన్ని మెనూను తెరవడానికి చర్యల పట్టీని పైకి స్వైప్ చేయండి.</string>
+    <string name="dejavu_bars_top">చిరునామా పట్టీ పైన</string>
+    <string name="dejavu_bars_top_summary">చర్యల పట్టీ లేదు. మరిన్ని మెనూను తెరవడానికి చిరునామా పట్టీని కిందికి స్వైప్ చేయండి.</string>
+    <string name="dejavu_bars_bottom">చిరునామా పట్టీ దిగువన</string>
+    <string name="dejavu_bars_bottom_summary">చర్యల పట్టీ లేదు. మరిన్ని మెనూను తెరవడానికి చిరునామా పట్టీని పైకి స్వైప్ చేయండి.</string>
     <string name="dejavu_settings_screen">స్క్రీన్</string>
     <string name="dejavu_settings_hide_system_bars">స్టేటస్, నావిగేషన్ బార్‌లను దాచు</string>
     <string name="dejavu_settings_hide_system_bars_summary">పేజీ చూపబడుతున్నప్పుడు. వాటిని ఒక్క క్షణం చూడటానికి పై లేదా కింది అంచు నుండి స్వైప్ చేయండి.</string>

@@ -205,7 +205,8 @@
     <string name="dejavu_settings_actions_bar">Bara de łe asion</string>
     <string name="dejavu_actions_bar_search">Serca</string>
     <string name="dejavu_actions_bar_home">Casa</string>
-    <string name="dejavu_settings_more_menu_summary">Ła bara de łe asion soto łe pagine e el menù che ła verxe</string>
+    <string name="dejavu_settings_more_menu_summary_2">I boton rente a ła bara dei indirisi, ła bara de łe asion e el menù Altro</string>
+    <string name="dejavu_more_menu_address_bar">Bara dei indirisi</string>
     <string name="dejavu_more_menu_drag_hint">Tien strucà un boton e strascinalo inte na riga de sora. Strascina un boton indrìo qua soto par cavarlo via.</string>
     <string name="dejavu_more_menu_add_row">Gionta na riga</string>
     <string name="dejavu_more_menu_row_full">Sta riga ła xe piena.</string>
@@ -426,6 +427,13 @@
     <string name="dejavu_protection_links">Cava via el traciamento dai łinchi</string>
     <string name="dejavu_protection_hint">Na protesion ativa ła te tien pì al sicuro. Onji una ła dixe da cosa ła te difende e cosa che podaria smétar de funsionar par via de eła.</string>
     <string name="dejavu_sync_zen_hint_unpinned">In Zen, verxi Inpostasion, dopo Sincronizasion, e ativa ła sincronizasion de ła bara łaterałe.</string>
+    <string name="dejavu_settings_bars">Bare e menù</string>
+    <string name="dejavu_bars_actions_bar">Bara dei indirisi in alto, bara de łe asion in baso</string>
+    <string name="dejavu_bars_actions_bar_summary">Scori in su ła bara de łe asion par vèrxer el menù Altro.</string>
+    <string name="dejavu_bars_top">Bara dei indirisi in alto</string>
+    <string name="dejavu_bars_top_summary">Nesuna bara de łe asion. Scori in zo ła bara dei indirisi par vèrxer el menù Altro.</string>
+    <string name="dejavu_bars_bottom">Bara dei indirisi in baso</string>
+    <string name="dejavu_bars_bottom_summary">Nesuna bara de łe asion. Scori in su ła bara dei indirisi par vèrxer el menù Altro.</string>
     <string name="dejavu_settings_screen">Schermo</string>
     <string name="dejavu_settings_hide_system_bars">Scondi le bare de stato e de navegasion</string>
     <string name="dejavu_settings_hide_system_bars_summary">Co se mostra na pagina. Scori dal bordo de sora o de soto par vedarle par un momento.</string>

@@ -56,9 +56,10 @@ import org.mozilla.fenix.ext.components
 import org.mozilla.fenix.ext.requireComponents
 
 /**
- * Dejavu's changes to the browser toolbar: one row with the address bar and a home button on its right, and the
- * actions bar below pages. The menu opens by swiping the toolbar or the actions bar, so it has no menu button, and
- * tabs are managed from the home screen, so it has no tab counter.
+ * Dejavu's changes to the browser toolbar: one row with the address bar and the buttons beside it, above pages or
+ * below them, and the actions bar below pages unless the address bar is the only bar, see [BarsLayout]. The menu opens
+ * by swiping the actions bar, or the address bar where it is the only one, so it has no menu button, and tabs are
+ * managed from the home screen, so it has no tab counter.
  */
 object DejavuToolbar {
     const val enabled: Boolean = true
@@ -123,7 +124,7 @@ object DejavuToolbar {
     /** The user tapped the search button of the actions bar. */
     data object SearchClicked : DejavuToolbarEvent
 
-    /** The user asked for the whole "More" menu without swiping the actions bar up, from a screen reader. */
+    /** The user asked for the whole "More" menu without swiping the bar that opens it, from a screen reader. */
     data object MenuRequested : DejavuToolbarEvent
 
     /** The user asked for the page's details, from a screen reader. */
@@ -143,7 +144,7 @@ object DejavuToolbar {
                 DejavuSearchStart.fromBottom()
                 store.dispatch(PageOriginInteractions.OriginClicked)
             }
-            MenuRequested -> navController.openDejavuMenu(fromBottom = true)
+            MenuRequested -> navController.openDejavuMenu(fromBar = true)
             PageInfoRequested -> navController.openDejavuPageInfo()
         }
     }
@@ -261,36 +262,41 @@ internal fun closeShownTab(components: Components, navController: NavController,
 sealed interface DejavuToolbarEvent : BrowserToolbarEvent
 
 /**
- * Opens the "More" menu of the browser, as swiping the toolbar does.
+ * Opens the "More" menu of the browser, as swiping the bar that opens it does.
  *
- * @param fromBottom Whether the menu comes up from the bottom of the screen, as when swiping the actions bar.
+ * @param fromBar Whether the menu grows out of the bar that opens it, as when swiping that bar, rather than coming
+ *   down from the top of the screen.
  * @param opening What the menu shows first.
  * @param splitWay How a tab picked for a split view shows next to the shown one.
  */
 fun NavController.openDejavuMenu(
-    fromBottom: Boolean,
+    fromBar: Boolean,
     opening: DejavuMenu.Opening = DejavuMenu.Opening.MENU,
     splitWay: SplitOrientation? = null,
 ) {
     val directions = NavGraphDirections.actionGlobalMenuDialogFragment(accesspoint = MenuAccessPoint.Browser)
     if (currentDestination?.id != R.id.browserFragment) return
-    val arguments = DejavuMenu.arguments(fromBottom, opening, splitWay)
+    val arguments = DejavuMenu.arguments(fromBar, opening, splitWay)
     navigate(directions.actionId, directions.arguments.apply { putAll(arguments) })
 }
 
-/** Opens the details of the shown page. */
-fun NavController.openDejavuPageInfo() = openDejavuMenu(fromBottom = false, opening = DejavuMenu.Opening.PAGE_INFO)
+/** Opens the details of the shown page, which grow out of the address bar. */
+fun NavController.openDejavuPageInfo() = openDejavuMenu(fromBar = true, opening = DejavuMenu.Opening.PAGE_INFO)
 
-/** Opens the "More" menu with a swipe up on the actions bar, the menu following the finger until it lets go. */
-internal fun NavController.moreMenuSwipe() = object : ToolbarVerticalGesturesHandler.MenuSwipe {
+/**
+ * Opens the "More" menu with a swipe on the bar that opens it, the menu following the finger until it lets go: when
+ * [down], a swipe down on the address bar at the top, else a swipe up on the bar at the bottom. It only takes the swipe
+ * where the layout of the bars opens the menu that way.
+ */
+internal fun NavController.moreMenuSwipe(down: Boolean) = object : ToolbarVerticalGesturesHandler.MenuSwipe {
     override fun onStart(): Boolean {
-        if (currentDestination?.id != R.id.browserFragment) return false
+        if (currentDestination?.id != R.id.browserFragment || context.barsLayout.menuFromTop != down) return false
         MoreMenuSwipe.start()
-        openDejavuMenu(fromBottom = true)
+        openDejavuMenu(fromBar = true)
         return true
     }
 
-    override fun onMove(distanceUp: Float) = MoreMenuSwipe.move(distanceUp)
+    override fun onMove(distance: Float) = MoreMenuSwipe.move(distance)
 
-    override fun onEnd(velocityUp: Float) = MoreMenuSwipe.end(velocityUp)
+    override fun onEnd(velocity: Float) = MoreMenuSwipe.end(velocity)
 }

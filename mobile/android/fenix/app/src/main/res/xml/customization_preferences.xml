@@ -65,14 +65,26 @@
 
     <androidx.preference.PreferenceCategory
         android:layout="@layout/preference_cat_style"
-        android:title="@string/dejavu_settings_actions_bar"
+        android:title="@string/dejavu_settings_bars"
         app:iconSpaceReserved="false">
+        <org.mozilla.fenix.settings.RadioButtonPreference
+            android:key="@string/pref_key_dejavu_bars_actions_bar"
+            android:title="@string/dejavu_bars_actions_bar"
+            android:summary="@string/dejavu_bars_actions_bar_summary" />
+        <org.mozilla.fenix.settings.RadioButtonPreference
+            android:key="@string/pref_key_dejavu_bars_top"
+            android:title="@string/dejavu_bars_top"
+            android:summary="@string/dejavu_bars_top_summary" />
+        <org.mozilla.fenix.settings.RadioButtonPreference
+            android:key="@string/pref_key_dejavu_bars_bottom"
+            android:title="@string/dejavu_bars_bottom"
+            android:summary="@string/dejavu_bars_bottom_summary" />
         <androidx.preference.Preference
             app:iconSpaceReserved="false"
             app:widgetLayout="@layout/dejavu_preference_badge"
             android:key="@string/pref_key_dejavu_more_menu"
             android:title="@string/dejavu_settings_more_menu"
-            android:summary="@string/dejavu_settings_more_menu_summary" />
+            android:summary="@string/dejavu_settings_more_menu_summary_2" />
         <androidx.preference.SwitchPreferenceCompat
             app:iconSpaceReserved="false"
             android:key="@string/pref_key_dejavu_more_menu_hide_edit"

@@ -42,6 +42,8 @@ private const val TOOLBAR_HEIGHT_MAXIMUM_SWIPE_FACTOR = 0.8f
  * @param onSwipe Invoked instead of showing the tabs tray, when not `null`, with whether the swipe started on the
  *   navigation bar.
  * @param menuSwipe Offered upward swipes before [onSwipe], to follow them until the finger leaves the screen.
+ * @param downSwipe Offered downward swipes, which only an address bar at the top takes, before [onSwipe], to follow
+ *   them the same way.
  */
 class ToolbarVerticalGesturesHandler(
     private val appStore: AppStore,
@@ -51,23 +53,27 @@ class ToolbarVerticalGesturesHandler(
     private val navController: NavController,
     private val onSwipe: ((fromNavBar: Boolean) -> Unit)? = null,
     private val menuSwipe: MenuSwipe? = null,
+    private val downSwipe: MenuSwipe? = null,
 ) : SwipeGestureListener {
     private val scaledTouchSlop = ViewConfiguration.get(toolbarLayout.context).scaledTouchSlop * 2
     private var currentSwipeXDistance = 0f
     private var currentSwipeYDistance = 0f
     private var startTouchPoint = PointF(0f, 0f)
-    private var followingSwipe = false
+    private var follower: MenuSwipe? = null
 
-    /** Follows an upward swipe on the toolbars from the moment it is long enough until the finger leaves the screen. */
+    /** 1 while following a swipe down, -1 while following a swipe up. */
+    private var followedDirection = 1f
+
+    /** Follows a swipe on the toolbars from the moment it is long enough until the finger leaves the screen. */
     interface MenuSwipe {
         /** Invoked once the swipe is long enough. Returns whether it follows the rest of the swipe. */
         fun onStart(): Boolean
 
-        /** Invoked as the finger moves, with how far it moved up since it touched the screen, in pixels. */
-        fun onMove(distanceUp: Float)
+        /** Invoked as the finger moves, with how far it went the swipe's way since it touched the screen, in pixels. */
+        fun onMove(distance: Float)
 
-        /** Invoked when the finger leaves the screen, with how fast it moved up, in pixels per second. */
-        fun onEnd(velocityUp: Float)
+        /** Invoked when the finger leaves the screen, with how fast it went the swipe's way, in pixels per second. */
+        fun onEnd(velocity: Float)
     }
 
     override fun onSwipeStarted(
@@ -77,7 +83,7 @@ class ToolbarVerticalGesturesHandler(
         startTouchPoint = start
         currentSwipeXDistance = next.x - start.x
         currentSwipeYDistance = next.y - start.y
-        followingSwipe = false
+        follower = null
 
         return maybeShowTabsOnSwipe()
     }
@@ -86,17 +92,17 @@ class ToolbarVerticalGesturesHandler(
         currentSwipeXDistance -= distanceX
         currentSwipeYDistance -= distanceY
 
-        if (followingSwipe) {
-            menuSwipe?.onMove(-currentSwipeYDistance)
+        follower?.let {
+            it.onMove(followedDirection * currentSwipeYDistance)
             return
         }
         maybeShowTabsOnSwipe()
     }
 
     override fun onSwipeFinished(velocityX: Float, velocityY: Float) {
-        if (!followingSwipe) return
-        followingSwipe = false
-        menuSwipe?.onEnd(-velocityY)
+        val followed = follower ?: return
+        follower = null
+        followed.onEnd(followedDirection * velocityY)
     }
 
     private fun maybeShowTabsOnSwipe(): Boolean {
@@ -116,12 +122,7 @@ class ToolbarVerticalGesturesHandler(
         }
 
         if (isSwipeValid()) {
-            val follower = menuSwipe
-            if (currentSwipeYDistance.isSwipeUp && follower != null && follower.onStart()) {
-                followingSwipe = true
-                follower.onMove(-currentSwipeYDistance)
-                return true
-            }
+            if (startFollowing()) return true
             onSwipe?.let {
                 it(startTouchPoint.isInTarget(navBarLayout))
                 return false
@@ -142,6 +143,16 @@ class ToolbarVerticalGesturesHandler(
         } else {
             return true
         }
+    }
+
+    /** Offers the swipe to the follower of its direction, and follows the swipe from now on when that one takes it. */
+    private fun startFollowing(): Boolean {
+        val direction = if (currentSwipeYDistance.isSwipeUp) -1f else 1f
+        val candidate = (if (direction < 0f) menuSwipe else downSwipe)?.takeIf { it.onStart() } ?: return false
+        follower = candidate
+        followedDirection = direction
+        candidate.onMove(direction * currentSwipeYDistance)
+        return true
     }
 
     /** Check if a vertical swipe with the minimum accepted distance happened. */

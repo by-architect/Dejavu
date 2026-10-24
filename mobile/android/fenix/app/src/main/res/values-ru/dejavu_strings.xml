@@ -206,7 +206,8 @@
     <string name="dejavu_settings_actions_bar">Панель действий</string>
     <string name="dejavu_actions_bar_search">Поиск</string>
     <string name="dejavu_actions_bar_home">Главная</string>
-    <string name="dejavu_settings_more_menu_summary">Панель действий под страницами и меню, которое она открывает</string>
+    <string name="dejavu_settings_more_menu_summary_2">Кнопки рядом с адресной строкой, панель действий и меню «Ещё»</string>
+    <string name="dejavu_more_menu_address_bar">Адресная строка</string>
     <string name="dejavu_more_menu_drag_hint">Удерживайте кнопку и перетащите её в ряд выше. Чтобы удалить кнопку, перетащите её обратно сюда вниз.</string>
     <string name="dejavu_more_menu_add_row">Добавить ряд</string>
     <string name="dejavu_more_menu_row_full">Этот ряд заполнен.</string>
@@ -433,6 +434,13 @@
     <string name="dejavu_protection_links">Удалять отслеживание из ссылок</string>
     <string name="dejavu_protection_hint">Включённая защита повышает вашу безопасность. Для каждой указано, от чего она защищает и что из-за неё может перестать работать.</string>
     <string name="dejavu_sync_zen_hint_unpinned">В Zen откройте «Настройки», затем «Синхронизация», и включите синхронизацию боковой панели.</string>
+    <string name="dejavu_settings_bars">Панели и меню</string>
+    <string name="dejavu_bars_actions_bar">Адресная строка сверху, панель действий снизу</string>
+    <string name="dejavu_bars_actions_bar_summary">Проведите по панели действий вверх, чтобы открыть меню «Ещё».</string>
+    <string name="dejavu_bars_top">Адресная строка сверху</string>
+    <string name="dejavu_bars_top_summary">Без панели действий. Проведите по адресной строке вниз, чтобы открыть меню «Ещё».</string>
+    <string name="dejavu_bars_bottom">Адресная строка снизу</string>
+    <string name="dejavu_bars_bottom_summary">Без панели действий. Проведите по адресной строке вверх, чтобы открыть меню «Ещё».</string>
     <string name="dejavu_settings_screen">Экран</string>
     <string name="dejavu_settings_hide_system_bars">Скрывать строку состояния и панель навигации</string>
     <string name="dejavu_settings_hide_system_bars_summary">Пока показана страница. Проведите от верхнего или нижнего края, чтобы ненадолго их увидеть.</string>

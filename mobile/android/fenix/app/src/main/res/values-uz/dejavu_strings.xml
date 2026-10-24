@@ -204,7 +204,8 @@
     <string name="dejavu_settings_actions_bar">Amallar paneli</string>
     <string name="dejavu_actions_bar_search">Qidirish</string>
     <string name="dejavu_actions_bar_home">Bosh sahifa</string>
-    <string name="dejavu_settings_more_menu_summary">Sahifalar ostidagi amallar paneli va u ochadigan menyu</string>
+    <string name="dejavu_settings_more_menu_summary_2">Manzil paneli yonidagi tugmalar, amallar paneli va «Ko\'proq» menyusi</string>
+    <string name="dejavu_more_menu_address_bar">Manzil paneli</string>
     <string name="dejavu_more_menu_drag_hint">Tugmani bosib turing va uni yuqoridagi qatorga torting. Tugmani chiqarish uchun uni yana shu yerga, pastga torting.</string>
     <string name="dejavu_more_menu_add_row">Qator qo\'shish</string>
     <string name="dejavu_more_menu_row_full">Bu qator to\'la.</string>
@@ -419,6 +420,13 @@
     <string name="dejavu_protection_links">Havolalardan kuzatuvni olib tashlash</string>
     <string name="dejavu_protection_hint">Yoqilgan himoya sizni xavfsizroq saqlaydi. Har biri nimadan himoya qilishini va shu sababli nima ishlamay qolishi mumkinligini aytadi.</string>
     <string name="dejavu_sync_zen_hint_unpinned">Zen-da Sozlamalarni, keyin Sinxronlashtirishni oching va yon panel sinxronlashini yoqing.</string>
+    <string name="dejavu_settings_bars">Panellar va menyu</string>
+    <string name="dejavu_bars_actions_bar">Manzil paneli yuqorida, amallar paneli pastda</string>
+    <string name="dejavu_bars_actions_bar_summary">«Ko\'proq» menyusini ochish uchun amallar panelini yuqoriga suring.</string>
+    <string name="dejavu_bars_top">Manzil paneli yuqorida</string>
+    <string name="dejavu_bars_top_summary">Amallar paneli yo\'q. «Ko\'proq» menyusini ochish uchun manzil panelini pastga suring.</string>
+    <string name="dejavu_bars_bottom">Manzil paneli pastda</string>
+    <string name="dejavu_bars_bottom_summary">Amallar paneli yo\'q. «Ko\'proq» menyusini ochish uchun manzil panelini yuqoriga suring.</string>
     <string name="dejavu_settings_screen">Ekran</string>
     <string name="dejavu_settings_hide_system_bars">Holat va navigatsiya panellarini yashirish</string>
     <string name="dejavu_settings_hide_system_bars_summary">Sahifa ko‘rsatilayotganda. Ularni bir lahza ko‘rish uchun yuqori yoki pastki chetdan suring.</string>

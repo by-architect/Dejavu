@@ -203,7 +203,8 @@
     <string name="dejavu_settings_actions_bar">แถบการดำเนินการ</string>
     <string name="dejavu_actions_bar_search">ค้นหา</string>
     <string name="dejavu_actions_bar_home">หน้าแรก</string>
-    <string name="dejavu_settings_more_menu_summary">แถบการดำเนินการด้านล่างหน้าเว็บและเมนูที่เปิดจากแถบนั้น</string>
+    <string name="dejavu_settings_more_menu_summary_2">ปุ่มข้างแถบที่อยู่ แถบการดำเนินการ และเมนูเพิ่มเติม</string>
+    <string name="dejavu_more_menu_address_bar">แถบที่อยู่</string>
     <string name="dejavu_more_menu_drag_hint">กดปุ่มค้างไว้แล้วลากไปยังแถวด้านบน ลากปุ่มกลับลงมาที่นี่เพื่อนำออก</string>
     <string name="dejavu_more_menu_add_row">เพิ่มแถว</string>
     <string name="dejavu_more_menu_row_full">แถวนี้เต็มแล้ว</string>
@@ -412,6 +413,13 @@
     <string name="dejavu_protection_links">ลบการติดตามออกจากลิงก์</string>
     <string name="dejavu_protection_hint">การป้องกันที่เปิดอยู่ช่วยให้คุณปลอดภัยยิ่งขึ้น แต่ละรายการจะบอกว่าป้องกันอะไร และอะไรที่อาจใช้งานไม่ได้เพราะการป้องกันนั้น</string>
     <string name="dejavu_sync_zen_hint_unpinned">ใน Zen ให้เปิดการตั้งค่า จากนั้นไปที่การซิงค์ และเปิดใช้งานการซิงค์แถบด้านข้าง</string>
+    <string name="dejavu_settings_bars">แถบและเมนู</string>
+    <string name="dejavu_bars_actions_bar">แถบที่อยู่ด้านบน แถบการดำเนินการด้านล่าง</string>
+    <string name="dejavu_bars_actions_bar_summary">ปัดแถบการดำเนินการขึ้นเพื่อเปิดเมนูเพิ่มเติม</string>
+    <string name="dejavu_bars_top">แถบที่อยู่ด้านบน</string>
+    <string name="dejavu_bars_top_summary">ไม่มีแถบการดำเนินการ ปัดแถบที่อยู่ลงเพื่อเปิดเมนูเพิ่มเติม</string>
+    <string name="dejavu_bars_bottom">แถบที่อยู่ด้านล่าง</string>
+    <string name="dejavu_bars_bottom_summary">ไม่มีแถบการดำเนินการ ปัดแถบที่อยู่ขึ้นเพื่อเปิดเมนูเพิ่มเติม</string>
     <string name="dejavu_settings_screen">หน้าจอ</string>
     <string name="dejavu_settings_hide_system_bars">ซ่อนแถบสถานะและแถบนำทาง</string>
     <string name="dejavu_settings_hide_system_bars_summary">ขณะแสดงหน้าเว็บ ปัดเข้ามาจากขอบบนหรือขอบล่างเพื่อดูแถบเหล่านี้ชั่วครู่</string>

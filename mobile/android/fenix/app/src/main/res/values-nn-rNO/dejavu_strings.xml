@@ -204,7 +204,8 @@
     <string name="dejavu_settings_actions_bar">Handlingslinje</string>
     <string name="dejavu_actions_bar_search">Søk</string>
     <string name="dejavu_actions_bar_home">Heim</string>
-    <string name="dejavu_settings_more_menu_summary">Handlingslinja under sider og menyen ho opnar</string>
+    <string name="dejavu_settings_more_menu_summary_2">Knappane ved sida av adresselinja, handlingslinja og Meir-menyen</string>
+    <string name="dejavu_more_menu_address_bar">Adresselinje</string>
     <string name="dejavu_more_menu_drag_hint">Hald inne ein knapp og dra han til ei rad ovanfor. Dra ein knapp tilbake hit ned for å fjerne han.</string>
     <string name="dejavu_more_menu_add_row">Legg til ei rad</string>
     <string name="dejavu_more_menu_row_full">Denne rada er full.</string>
@@ -419,6 +420,13 @@
     <string name="dejavu_protection_links">Fjern sporing frå lenker</string>
     <string name="dejavu_protection_hint">Eit vern som er på, gjer deg tryggare. Kvart vern seier kva det vernar mot og kva som kan slutte å verke på grunn av det.</string>
     <string name="dejavu_sync_zen_hint_unpinned">Opne Innstillingar i Zen, deretter Synkronisering, og slå på synkronisering av sidestolpen.</string>
+    <string name="dejavu_settings_bars">Linjer og meny</string>
+    <string name="dejavu_bars_actions_bar">Adresselinja øvst, handlingslinja nedst</string>
+    <string name="dejavu_bars_actions_bar_summary">Sveip handlingslinja opp for å opne Meir-menyen.</string>
+    <string name="dejavu_bars_top">Adresselinja øvst</string>
+    <string name="dejavu_bars_top_summary">Inga handlingslinje. Sveip adresselinja ned for å opne Meir-menyen.</string>
+    <string name="dejavu_bars_bottom">Adresselinja nedst</string>
+    <string name="dejavu_bars_bottom_summary">Inga handlingslinje. Sveip adresselinja opp for å opne Meir-menyen.</string>
     <string name="dejavu_settings_screen">Skjerm</string>
     <string name="dejavu_settings_hide_system_bars">Gøym status- og navigasjonsfeltet</string>
     <string name="dejavu_settings_hide_system_bars_summary">Medan ei side vert vist. Sveip inn frå øvre eller nedre kant for å sjå dei eit augeblikk.</string>

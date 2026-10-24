@@ -204,7 +204,8 @@
     <string name="dejavu_settings_actions_bar">പ്രവർത്തന ബാർ</string>
     <string name="dejavu_actions_bar_search">തിരയുക</string>
     <string name="dejavu_actions_bar_home">ഹോം</string>
-    <string name="dejavu_settings_more_menu_summary">താളുകൾക്ക് താഴെയുള്ള പ്രവർത്തന ബാറും അത് തുറക്കുന്ന മെനുവും</string>
+    <string name="dejavu_settings_more_menu_summary_2">വിലാസ ബാറിന് അരികിലുള്ള ബട്ടണുകളും പ്രവർത്തന ബാറും കൂടുതൽ മെനുവും</string>
+    <string name="dejavu_more_menu_address_bar">വിലാസ ബാർ</string>
     <string name="dejavu_more_menu_drag_hint">ഒരു ബട്ടൺ അമർത്തിപ്പിടിച്ച് മുകളിലുള്ള ഒരു വരിയിലേക്ക് വലിച്ചിടുക. ഒരു ബട്ടൺ നീക്കം ചെയ്യാൻ അത് തിരികെ ഇവിടെ താഴേക്ക് വലിച്ചിടുക.</string>
     <string name="dejavu_more_menu_add_row">ഒരു വരി ചേർക്കുക</string>
     <string name="dejavu_more_menu_row_full">ഈ വരി നിറഞ്ഞു.</string>
@@ -419,6 +420,13 @@
     <string name="dejavu_protection_links">ലിങ്കുകളിൽ നിന്ന് ട്രാക്കിങ് നീക്കുക</string>
     <string name="dejavu_protection_hint">ഓണാക്കിയ ഒരു സംരക്ഷണം നിങ്ങളെ കൂടുതൽ സുരക്ഷിതരാക്കുന്നു. ഓരോന്നും എന്തിൽ നിന്നാണ് സംരക്ഷിക്കുന്നതെന്നും അതുകാരണം എന്ത് പ്രവർത്തിക്കാതായേക്കാമെന്നും പറയുന്നു.</string>
     <string name="dejavu_sync_zen_hint_unpinned">Zen-ൽ, ക്രമീകരണങ്ങൾ തുറന്ന്, പിന്നെ സിങ്ക് തുറന്ന്, സൈഡ്‌ബാർ സിങ്ക് ഓൺ ചെയ്യുക.</string>
+    <string name="dejavu_settings_bars">ബാറുകളും മെനുവും</string>
+    <string name="dejavu_bars_actions_bar">വിലാസ ബാർ മുകളിൽ, പ്രവർത്തന ബാർ താഴെ</string>
+    <string name="dejavu_bars_actions_bar_summary">കൂടുതൽ മെനു തുറക്കാൻ പ്രവർത്തന ബാർ മുകളിലേക്ക് സ്വൈപ്പ് ചെയ്യുക.</string>
+    <string name="dejavu_bars_top">വിലാസ ബാർ മുകളിൽ</string>
+    <string name="dejavu_bars_top_summary">പ്രവർത്തന ബാർ ഇല്ല. കൂടുതൽ മെനു തുറക്കാൻ വിലാസ ബാർ താഴേക്ക് സ്വൈപ്പ് ചെയ്യുക.</string>
+    <string name="dejavu_bars_bottom">വിലാസ ബാർ താഴെ</string>
+    <string name="dejavu_bars_bottom_summary">പ്രവർത്തന ബാർ ഇല്ല. കൂടുതൽ മെനു തുറക്കാൻ വിലാസ ബാർ മുകളിലേക്ക് സ്വൈപ്പ് ചെയ്യുക.</string>
     <string name="dejavu_settings_screen">സ്ക്രീൻ</string>
     <string name="dejavu_settings_hide_system_bars">സ്റ്റാറ്റസ്, നാവിഗേഷൻ ബാറുകൾ മറയ്ക്കുക</string>
     <string name="dejavu_settings_hide_system_bars_summary">ഒരു പേജ് കാണിക്കുമ്പോൾ. അവ ഒരു നിമിഷം കാണാൻ മുകളിലെയോ താഴത്തെയോ അരികിൽ നിന്ന് സ്വൈപ്പ് ചെയ്യുക.</string>

@@ -206,7 +206,8 @@
     <string name="dejavu_settings_actions_bar">Lišta akcí</string>
     <string name="dejavu_actions_bar_search">Hledat</string>
     <string name="dejavu_actions_bar_home">Domů</string>
-    <string name="dejavu_settings_more_menu_summary">Lišta akcí pod stránkami a nabídka, kterou otevírá</string>
+    <string name="dejavu_settings_more_menu_summary_2">Tlačítka vedle adresního řádku, lišta akcí a nabídka Více</string>
+    <string name="dejavu_more_menu_address_bar">Adresní řádek</string>
     <string name="dejavu_more_menu_drag_hint">Podržte tlačítko a přetáhněte ho do řádku nahoře. Tlačítko odeberete přetažením zpět sem dolů.</string>
     <string name="dejavu_more_menu_add_row">Přidat řádek</string>
     <string name="dejavu_more_menu_row_full">Tento řádek je plný.</string>
@@ -433,6 +434,13 @@
     <string name="dejavu_protection_links">Odstraňovat sledování z odkazů</string>
     <string name="dejavu_protection_hint">Zapnutá ochrana zvyšuje vaše bezpečí. U každé je uvedeno, před čím chrání a co kvůli ní nemusí fungovat.</string>
     <string name="dejavu_sync_zen_hint_unpinned">V Zen otevřete Nastavení, poté Synchronizaci, a zapněte synchronizaci bočního panelu.</string>
+    <string name="dejavu_settings_bars">Lišty a nabídka</string>
+    <string name="dejavu_bars_actions_bar">Adresní řádek nahoře, lišta akcí dole</string>
+    <string name="dejavu_bars_actions_bar_summary">Přejetím lišty akcí nahoru otevřete nabídku Více.</string>
+    <string name="dejavu_bars_top">Adresní řádek nahoře</string>
+    <string name="dejavu_bars_top_summary">Žádná lišta akcí. Přejetím adresního řádku dolů otevřete nabídku Více.</string>
+    <string name="dejavu_bars_bottom">Adresní řádek dole</string>
+    <string name="dejavu_bars_bottom_summary">Žádná lišta akcí. Přejetím adresního řádku nahoru otevřete nabídku Více.</string>
     <string name="dejavu_settings_screen">Obrazovka</string>
     <string name="dejavu_settings_hide_system_bars">Skrýt stavový a navigační panel</string>
     <string name="dejavu_settings_hide_system_bars_summary">Při zobrazení stránky. Přejetím od horního nebo dolního okraje je na chvíli zobrazíte.</string>

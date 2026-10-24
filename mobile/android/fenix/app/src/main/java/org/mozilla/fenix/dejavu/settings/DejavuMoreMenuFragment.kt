@@ -23,8 +23,9 @@ import org.mozilla.fenix.R
 import org.mozilla.fenix.dejavu.menu.MoreMenuEntry
 
 /**
- * Arranges the buttons of the actions bar below pages and of the browser's "More" menu, both picked from the menu's
- * own items, every tab action and the custom actions. The toolbar's reset button puts both back as they come.
+ * Arranges the buttons beside the address bar, of the actions bar below pages and of the browser's "More" menu, all
+ * picked from the menu's own items, every tab action and the custom actions. The toolbar's reset button puts them all
+ * back as they come.
  */
 class DejavuMoreMenuFragment : DejavuComposeFragment(R.string.dejavu_settings_more_menu), MenuProvider {
     private var resets by mutableIntStateOf(0)
@@ -43,6 +44,7 @@ class DejavuMoreMenuFragment : DejavuComposeFragment(R.string.dejavu_settings_mo
         val settings = dejavuSettings()
         settings.resetMoreMenu()
         settings.resetActionsBar()
+        settings.resetAddressBarButtons()
         resets++
         return true
     }

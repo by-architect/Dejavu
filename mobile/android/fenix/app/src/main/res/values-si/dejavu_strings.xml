@@ -204,7 +204,8 @@
     <string name="dejavu_settings_actions_bar">ක්‍රියා තීරුව</string>
     <string name="dejavu_actions_bar_search">සොයන්න</string>
     <string name="dejavu_actions_bar_home">මුල් පිටුව</string>
-    <string name="dejavu_settings_more_menu_summary">පිටු පහළින් ඇති ක්‍රියා තීරුව සහ එය විවෘත කරන මෙනුව</string>
+    <string name="dejavu_settings_more_menu_summary_2">ලිපින තීරුව අසල ඇති බොත්තම්, ක්‍රියා තීරුව සහ තව මෙනුව</string>
+    <string name="dejavu_more_menu_address_bar">ලිපින තීරුව</string>
     <string name="dejavu_more_menu_drag_hint">බොත්තමක් තද කර අල්ලාගෙන එය ඉහළ පේළියකට අදින්න. බොත්තමක් ඉවත් කිරීමට එය නැවත මෙතැනට පහළට අදින්න.</string>
     <string name="dejavu_more_menu_add_row">පේළියක් එකතු කරන්න</string>
     <string name="dejavu_more_menu_row_full">මෙම පේළිය පිරී ඇත.</string>
@@ -419,6 +420,13 @@
     <string name="dejavu_protection_links">සබැඳිවලින් ලුහුබැඳීම ඉවත් කරන්න</string>
     <string name="dejavu_protection_hint">සක්‍රිය රැකවරණයක් ඔබව වඩාත් ආරක්ෂිතව තබයි. එක් එක් රැකවරණය එය ආරක්ෂා කරන්නේ කුමකින්ද සහ එය නිසා ක්‍රියා නොකළ හැක්කේ කුමක්ද යන්න පවසයි.</string>
     <string name="dejavu_sync_zen_hint_unpinned">Zen හි, සැකසුම් විවෘත කර, පසුව Sync තෝරා, පැති තීරු සමමුහුර්තකරණය ක්‍රියාත්මක කරන්න.</string>
+    <string name="dejavu_settings_bars">තීරු සහ මෙනුව</string>
+    <string name="dejavu_bars_actions_bar">ලිපින තීරුව ඉහළින්, ක්‍රියා තීරුව පහළින්</string>
+    <string name="dejavu_bars_actions_bar_summary">තව මෙනුව විවෘත කිරීමට ක්‍රියා තීරුව ඉහළට අදින්න.</string>
+    <string name="dejavu_bars_top">ලිපින තීරුව ඉහළින්</string>
+    <string name="dejavu_bars_top_summary">ක්‍රියා තීරුවක් නැත. තව මෙනුව විවෘත කිරීමට ලිපින තීරුව පහළට අදින්න.</string>
+    <string name="dejavu_bars_bottom">ලිපින තීරුව පහළින්</string>
+    <string name="dejavu_bars_bottom_summary">ක්‍රියා තීරුවක් නැත. තව මෙනුව විවෘත කිරීමට ලිපින තීරුව ඉහළට අදින්න.</string>
     <string name="dejavu_settings_screen">තිරය</string>
     <string name="dejavu_settings_hide_system_bars">තත්ත්ව සහ සංචාලන තීරු සඟවන්න</string>
     <string name="dejavu_settings_hide_system_bars_summary">පිටුවක් පෙන්වන අතරතුර. ඒවා මොහොතකට බැලීමට ඉහළ හෝ පහළ දාරයේ සිට ස්වයිප් කරන්න.</string>

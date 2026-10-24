@@ -204,7 +204,8 @@
     <string name="dejavu_settings_actions_bar">Γραμμή ενεργειών</string>
     <string name="dejavu_actions_bar_search">Αναζήτηση</string>
     <string name="dejavu_actions_bar_home">Αρχική</string>
-    <string name="dejavu_settings_more_menu_summary">Η γραμμή ενεργειών κάτω από τις σελίδες και το μενού που ανοίγει</string>
+    <string name="dejavu_settings_more_menu_summary_2">Τα κουμπιά δίπλα στη γραμμή διευθύνσεων, η γραμμή ενεργειών και το μενού «Περισσότερα»</string>
+    <string name="dejavu_more_menu_address_bar">Γραμμή διευθύνσεων</string>
     <string name="dejavu_more_menu_drag_hint">Πατήστε παρατεταμένα ένα κουμπί και σύρετέ το σε μια σειρά επάνω. Σύρετε ένα κουμπί πίσω εδώ κάτω για να το αφαιρέσετε.</string>
     <string name="dejavu_more_menu_add_row">Προσθήκη σειράς</string>
     <string name="dejavu_more_menu_row_full">Αυτή η σειρά είναι γεμάτη.</string>
@@ -419,6 +420,13 @@
     <string name="dejavu_protection_links">Αφαίρεση καταγραφής από συνδέσμους</string>
     <string name="dejavu_protection_hint">Μια προστασία που είναι ενεργή σάς κρατά πιο ασφαλείς. Η καθεμία λέει από τι σας προστατεύει και τι μπορεί να σταματήσει να λειτουργεί εξαιτίας της.</string>
     <string name="dejavu_sync_zen_hint_unpinned">Στο Zen, ανοίξτε τις Ρυθμίσεις, μετά τον Συγχρονισμό, και ενεργοποιήστε τον συγχρονισμό της πλευρικής γραμμής.</string>
+    <string name="dejavu_settings_bars">Γραμμές και μενού</string>
+    <string name="dejavu_bars_actions_bar">Γραμμή διευθύνσεων πάνω, γραμμή ενεργειών κάτω</string>
+    <string name="dejavu_bars_actions_bar_summary">Σύρετε τη γραμμή ενεργειών προς τα πάνω για να ανοίξει το μενού «Περισσότερα».</string>
+    <string name="dejavu_bars_top">Γραμμή διευθύνσεων πάνω</string>
+    <string name="dejavu_bars_top_summary">Χωρίς γραμμή ενεργειών. Σύρετε τη γραμμή διευθύνσεων προς τα κάτω για να ανοίξει το μενού «Περισσότερα».</string>
+    <string name="dejavu_bars_bottom">Γραμμή διευθύνσεων κάτω</string>
+    <string name="dejavu_bars_bottom_summary">Χωρίς γραμμή ενεργειών. Σύρετε τη γραμμή διευθύνσεων προς τα πάνω για να ανοίξει το μενού «Περισσότερα».</string>
     <string name="dejavu_settings_screen">Οθόνη</string>
     <string name="dejavu_settings_hide_system_bars">Απόκρυψη γραμμών κατάστασης και πλοήγησης</string>
     <string name="dejavu_settings_hide_system_bars_summary">Όσο εμφανίζεται μια σελίδα. Σύρετε από το πάνω ή το κάτω άκρο για να τις δείτε για λίγο.</string>

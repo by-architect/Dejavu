@@ -45,6 +45,7 @@ import androidx.navigation.NavController
 import androidx.navigation.findNavController
 import mozilla.appservices.places.BookmarkRoot
 import mozilla.components.browser.state.selector.selectedTab
+import mozilla.components.browser.state.state.TabSessionState
 import mozilla.components.compose.browser.toolbar.store.BrowserToolbarInteraction.BrowserToolbarEvent
 import mozilla.components.compose.browser.toolbar.store.BrowserToolbarInteraction.BrowserToolbarEvent.Source
 import mozilla.components.lib.state.ext.observeAsComposableState
@@ -75,35 +76,17 @@ import org.mozilla.fenix.ext.nav
  * @param onEvent Carries out what the user tapped.
  * @param tabId The tab the bar is for, the shown tab when `null`.
  */
-@Suppress("LongMethod")
 @Composable
 fun DejavuActionsBar(onEvent: (BrowserToolbarEvent) -> Unit, tabId: String? = null) {
     val context = LocalContext.current
-    val view = LocalView.current
     val fenix = components
     val settings = remember { fenix.readOnMainThread { DejavuSettings.get(context) } }
-    val repository = remember { fenix.readOnMainThread { WorkspaceRepository.get(context) } }
-    val tab by fenix.core.store.observeAsComposableState { it.tabOrShown(tabId) }
-    val workspaces by repository.state.collectAsState()
     val barKeys by settings.actionsBarKeys.collectAsState()
     val customActions by settings.customActions.collectAsState()
     val entries = remember(barKeys, customActions) { ActionsBarLayout.resolve(barKeys, customActions) }
+    val barTab = rememberBarTab(tabId)
+    val state = barTab.state
     var asking by remember { mutableStateOf<TabAction?>(null) }
-    val snackbar by fenix.appStore.observeAsComposableState { it.snackbarState }
-    val url = tab?.content?.url.orEmpty()
-    val isBookmarked by produceState(false, url, snackbar) {
-        value = url.isNotEmpty() &&
-            fenix.core.bookmarksStorage.getBookmarksWithUrl(url).getOrDefault(emptyList()).any { it.url == url }
-    }
-    val state = tab?.let { current ->
-        moreMenuState(
-            fenix = fenix,
-            tab = current,
-            workspaces = workspaces,
-            isBookmarked = isBookmarked,
-            isDesktopMode = current.content.desktopMode,
-        )
-    } ?: MoreMenuState()
 
     Box(
         modifier = Modifier
@@ -118,10 +101,7 @@ fun DejavuActionsBar(onEvent: (BrowserToolbarEvent) -> Unit, tabId: String? = nu
             .border(1.dp, MaterialTheme.colorScheme.onSurface.copy(alpha = BORDER_ALPHA), BAR_SHAPE),
     ) {
         val buttons = entries.forSplitWays(state.splitWays, state.isSplit).map { entry ->
-            BarItem(entry.look(state)) {
-                val action = (entry as? MoreMenuEntry.Tab)?.action
-                if (action?.asksFirst == true) asking = action else onEvent(entry.barEvent(state))
-            }
+            BarItem(entry.look(state)) { entry.tap(state, Source.NavigationBar, onEvent) { asking = it } }
         }
         // Screen readers cannot swipe the bar up, so every button also offers the menu as an action.
         val menuAction = listOf(
@@ -138,14 +118,63 @@ fun DejavuActionsBar(onEvent: (BrowserToolbarEvent) -> Unit, tabId: String? = nu
         }
     }
 
-    val shown = tab
-    val action = asking
-    if (shown != null && action != null) {
+    AskingDialog(barTab, asking) { asking = null }
+}
+
+/** The tab the buttons of a bar act on, and what they show about it. */
+internal class BarTab(val tab: TabSessionState?, val state: MoreMenuState)
+
+/** The tab with [tabId], the shown tab when `null`, as the buttons of a bar act on it. */
+@Composable
+internal fun rememberBarTab(tabId: String?): BarTab {
+    val context = LocalContext.current
+    val fenix = components
+    val repository = remember { fenix.readOnMainThread { WorkspaceRepository.get(context) } }
+    val tab by fenix.core.store.observeAsComposableState { it.tabOrShown(tabId) }
+    val workspaces by repository.state.collectAsState()
+    val snackbar by fenix.appStore.observeAsComposableState { it.snackbarState }
+    val url = tab?.content?.url.orEmpty()
+    val isBookmarked by produceState(false, url, snackbar) {
+        value = url.isNotEmpty() &&
+            fenix.core.bookmarksStorage.getBookmarksWithUrl(url).getOrDefault(emptyList()).any { it.url == url }
+    }
+    val state = tab?.let { current ->
+        moreMenuState(
+            fenix = fenix,
+            tab = current,
+            workspaces = workspaces,
+            isBookmarked = isBookmarked,
+            isDesktopMode = current.content.desktopMode,
+        )
+    } ?: MoreMenuState()
+    return BarTab(tab, state)
+}
+
+/**
+ * Carries out this entry tapped on a bar, coming from [source]: a tab action that asks first goes to [ask], anything
+ * else to [onEvent].
+ */
+internal fun MoreMenuEntry.tap(
+    state: MoreMenuState,
+    source: Source,
+    onEvent: (BrowserToolbarEvent) -> Unit,
+    ask: (TabAction) -> Unit,
+) {
+    val action = (this as? MoreMenuEntry.Tab)?.action
+    if (action?.asksFirst == true) ask(action) else onEvent(barEvent(state, source))
+}
+
+/** Asks about [action], tapped on a bar, before it runs on the tab of [barTab], and runs [onDone] once answered. */
+@Composable
+internal fun AskingDialog(barTab: BarTab, action: TabAction?, onDone: () -> Unit) {
+    val view = LocalView.current
+    val tab = barTab.tab
+    if (tab != null && action != null) {
         ShownTabActionDialog(
             action = action,
-            tab = shown,
+            tab = tab,
             navController = remember(view) { view.findNavController() },
-            onDone = { asking = null },
+            onDone = onDone,
         )
     }
 }
@@ -207,9 +236,8 @@ private fun BarButton(item: BarItem, a11yActions: List<CustomAccessibilityAction
     }
 }
 
-/** What tapping [this] in the actions bar does: the address bar's own action where it has one. */
-private fun MoreMenuEntry.barEvent(state: MoreMenuState): BrowserToolbarEvent {
-    val source = Source.NavigationBar
+/** What tapping [this] on a bar does, coming from [source]: the address bar's own action where it has one. */
+private fun MoreMenuEntry.barEvent(state: MoreMenuState, source: Source): BrowserToolbarEvent {
     if (this == MoreMenuEntry.Home) return DisplayActions.HomepageClicked(source)
     if (this == MoreMenuEntry.Search) return DejavuToolbar.SearchClicked
     return when ((this as? MoreMenuEntry.BuiltIn)?.item) {
@@ -254,12 +282,12 @@ internal fun runActionsBarEntry(context: Context, navController: NavController, 
         item == MoreMenuItem.SPLIT_VIEW && !isSplit
     }
     if (splitWay != null) {
-        navController.openDejavuMenu(fromBottom = true, opening = DejavuMenu.Opening.SPLIT_PICKER, splitWay = splitWay)
+        navController.openDejavuMenu(fromBar = true, opening = DejavuMenu.Opening.SPLIT_PICKER, splitWay = splitWay)
         return
     }
     if (commands.run(item, workspaces)) return
     when (item) {
-        MoreMenuItem.EXTENSIONS -> navController.openDejavuMenu(fromBottom = true, opening = DejavuMenu.Opening.EXTENSIONS)
+        MoreMenuItem.EXTENSIONS -> navController.openDejavuMenu(fromBar = true, opening = DejavuMenu.Opening.EXTENSIONS)
         MoreMenuItem.FIND_IN_PAGE -> components.appStore.dispatch(FindInPageAction.FindInPageStarted)
         MoreMenuItem.DESKTOP_SITE ->
             components.useCases.sessionUseCases.requestDesktopSite(!tab.content.desktopMode, tab.id)

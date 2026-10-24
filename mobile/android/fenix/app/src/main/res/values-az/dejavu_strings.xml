@@ -204,7 +204,8 @@
     <string name="dejavu_settings_actions_bar">Əməliyyatlar paneli</string>
     <string name="dejavu_actions_bar_search">Axtar</string>
     <string name="dejavu_actions_bar_home">Ana səhifə</string>
-    <string name="dejavu_settings_more_menu_summary">Səhifələrin altındakı əməliyyatlar paneli və onun açdığı menyu</string>
+    <string name="dejavu_settings_more_menu_summary_2">Ünvan sətrinin yanındakı düymələr, əməliyyatlar paneli və “Daha çox” menyusu</string>
+    <string name="dejavu_more_menu_address_bar">Ünvan sətri</string>
     <string name="dejavu_more_menu_drag_hint">Düyməni basıb saxlayın və yuxarıdakı sıraya sürükləyin. Düyməni silmək üçün onu yenidən aşağı, buraya sürükləyin.</string>
     <string name="dejavu_more_menu_add_row">Sıra əlavə et</string>
     <string name="dejavu_more_menu_row_full">Bu sıra doludur.</string>
@@ -419,6 +420,13 @@
     <string name="dejavu_protection_links">Keçidlərdən izləməni sil</string>
     <string name="dejavu_protection_hint">Açıq olan qoruma sizi daha təhlükəsiz saxlayır. Hər biri nədən qoruduğunu və onun ucbatından nəyin işləməyi dayandıra biləcəyini göstərir.</string>
     <string name="dejavu_sync_zen_hint_unpinned">Zen-də Tənzimləmələri, sonra Sinxronlaşdırmanı açın və yan panel sinxronlaşdırmasını aktivləşdirin.</string>
+    <string name="dejavu_settings_bars">Panellər və menyu</string>
+    <string name="dejavu_bars_actions_bar">Ünvan sətri yuxarıda, əməliyyatlar paneli aşağıda</string>
+    <string name="dejavu_bars_actions_bar_summary">“Daha çox” menyusunu açmaq üçün əməliyyatlar panelini yuxarı sürüşdürün.</string>
+    <string name="dejavu_bars_top">Ünvan sətri yuxarıda</string>
+    <string name="dejavu_bars_top_summary">Əməliyyatlar paneli yoxdur. “Daha çox” menyusunu açmaq üçün ünvan sətrini aşağı sürüşdürün.</string>
+    <string name="dejavu_bars_bottom">Ünvan sətri aşağıda</string>
+    <string name="dejavu_bars_bottom_summary">Əməliyyatlar paneli yoxdur. “Daha çox” menyusunu açmaq üçün ünvan sətrini yuxarı sürüşdürün.</string>
     <string name="dejavu_settings_screen">Ekran</string>
     <string name="dejavu_settings_hide_system_bars">Status və naviqasiya panellərini gizlət</string>
     <string name="dejavu_settings_hide_system_bars_summary">Səhifə göstərilərkən. Onları bir anlıq görmək üçün yuxarı və ya aşağı kənardan sürüşdürün.</string>

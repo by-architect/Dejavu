@@ -204,7 +204,8 @@
     <string name="dejavu_settings_actions_bar">د کړنو نوار</string>
     <string name="dejavu_actions_bar_search">لټون</string>
     <string name="dejavu_actions_bar_home">کور</string>
-    <string name="dejavu_settings_more_menu_summary">د پاڼو لاندې د کړنو نوار او هغه مینو چې خلاصوي یې</string>
+    <string name="dejavu_settings_more_menu_summary_2">د پتې نوار تر څنګ تڼۍ، د کړنو نوار او نور مینو</string>
+    <string name="dejavu_more_menu_address_bar">د پتې نوار</string>
     <string name="dejavu_more_menu_drag_hint">یوه تڼۍ ونیسئ او پورته یوې کرښې ته یې کش کړئ. د لرې کولو لپاره تڼۍ بېرته دلته ښکته کش کړئ.</string>
     <string name="dejavu_more_menu_add_row">کرښه زیاتول</string>
     <string name="dejavu_more_menu_row_full">دا کرښه ډکه ده.</string>
@@ -419,6 +420,13 @@
     <string name="dejavu_protection_links">له لینکونو تعقیب لرې کول</string>
     <string name="dejavu_protection_hint">چالانه ساتنه تاسو ډېر خوندي ساتي. هره یوه وايي چې د څه پر وړاندې ساتنه کوي او د هغې له امله کېدای شي څه کار پرېږدي.</string>
     <string name="dejavu_sync_zen_hint_unpinned">په Zen کې، «امستنې» خلاص کړئ، بیا «همغږي کول»، او د څنګ پټې همغږي فعاله کړئ.</string>
+    <string name="dejavu_settings_bars">نوارونه او مینو</string>
+    <string name="dejavu_bars_actions_bar">د پتې نوار پورته، د کړنو نوار لاندې</string>
+    <string name="dejavu_bars_actions_bar_summary">د نور مینو د خلاصولو لپاره د کړنو نوار پورته کش کړئ.</string>
+    <string name="dejavu_bars_top">د پتې نوار پورته</string>
+    <string name="dejavu_bars_top_summary">د کړنو نوار نشته. د نور مینو د خلاصولو لپاره د پتې نوار ښکته کش کړئ.</string>
+    <string name="dejavu_bars_bottom">د پتې نوار لاندې</string>
+    <string name="dejavu_bars_bottom_summary">د کړنو نوار نشته. د نور مینو د خلاصولو لپاره د پتې نوار پورته کش کړئ.</string>
     <string name="dejavu_settings_screen">پرده</string>
     <string name="dejavu_settings_hide_system_bars">د حالت او نېویګېشن پټۍ پټې کړئ</string>
     <string name="dejavu_settings_hide_system_bars_summary">کله چې یوه پاڼه ښودل کېږي. د یوې شېبې لپاره د لیدو لپاره له پورتنۍ یا ښکتنۍ څنډې څخه سوایپ کړئ.</string>

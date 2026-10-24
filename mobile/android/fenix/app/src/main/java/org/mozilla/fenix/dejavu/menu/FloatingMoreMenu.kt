@@ -69,8 +69,11 @@ import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.launch
 import org.mozilla.fenix.R
 import org.mozilla.fenix.dejavu.browser.ADDRESS_FIELD_HEIGHT
+import org.mozilla.fenix.dejavu.browser.ADDRESS_FIELD_MARGIN
 import org.mozilla.fenix.dejavu.browser.ADDRESS_FIELD_SIDE_MARGIN
-import org.mozilla.fenix.dejavu.browser.ADDRESS_FIELD_TOP_MARGIN
+import org.mozilla.fenix.dejavu.browser.BOTTOM_ADDRESS_BAR_MARGIN
+import org.mozilla.fenix.dejavu.browser.BarsLayout
+import org.mozilla.fenix.dejavu.browser.currentBarsLayout
 import org.mozilla.fenix.dejavu.browser.navigationBarRoomPadding
 import org.mozilla.fenix.dejavu.browser.shownWorkspaceTheme
 import org.mozilla.fenix.dejavu.browser.statusBarRoomPadding
@@ -132,7 +135,7 @@ internal open class PanelSwipe {
     }
 }
 
-/** The swipe up on the actions bar that opens the "More" menu. */
+/** The swipe on the bar that opens the "More" menu, up on a bar at the bottom or down on the address bar at the top. */
 internal object MoreMenuSwipe : PanelSwipe()
 
 /** The swipe the page's details would follow, see [PageInfoMenu]; no bar starts it, so they open without one. */
@@ -153,46 +156,70 @@ internal interface MenuCloser {
 /** Closes the floating panel the content is in; `null` outside such a panel. */
 internal val LocalMenuCloser = staticCompositionLocalOf<MenuCloser?> { null }
 
-/** The edge of the screen a floating panel grows from, out of the bar there. */
-internal enum class PanelEdge { TOP, BOTTOM }
+/** The bar a floating panel grows out of. */
+internal enum class PanelBar {
+    ACTIONS_BAR,
+    TOP_ADDRESS_BAR,
+    BOTTOM_ADDRESS_BAR,
+    ;
+
+    /** Whether the bar is at the top of the screen, so the panel grows down from it. */
+    val isAtTop: Boolean
+        get() = this == TOP_ADDRESS_BAR
+
+    companion object {
+        /** The bar the "More" menu grows out of in [layout]: the one swiping opens it on. */
+        fun menuIn(layout: BarsLayout): PanelBar = when (layout) {
+            BarsLayout.ACTIONS_BAR -> ACTIONS_BAR
+            BarsLayout.TOP -> TOP_ADDRESS_BAR
+            BarsLayout.BOTTOM -> BOTTOM_ADDRESS_BAR
+        }
+
+        /** The address bar in [layout]. */
+        fun addressBarIn(layout: BarsLayout): PanelBar =
+            if (layout.addressBarAtBottom) BOTTOM_ADDRESS_BAR else TOP_ADDRESS_BAR
+    }
+}
 
 /**
- * The "More" menu of a web page: a panel that grows out of the actions bar, see [FloatingPanel].
+ * The "More" menu of a web page: a panel that grows out of the bar that opens it, see [FloatingPanel].
  *
  * @param onDismiss Removes the menu, once the panel shrank back into the bar.
  * @param content The menu's tiles.
  */
 @Composable
-internal fun FloatingMoreMenu(onDismiss: () -> Unit, content: @Composable ColumnScope.() -> Unit) =
-    FloatingPanel(edge = PanelEdge.BOTTOM, swipe = MoreMenuSwipe, onDismiss = onDismiss, content = content)
+internal fun FloatingMoreMenu(onDismiss: () -> Unit, content: @Composable ColumnScope.() -> Unit) {
+    val bar = PanelBar.menuIn(currentBarsLayout())
+    FloatingPanel(bar = bar, swipe = MoreMenuSwipe, onDismiss = onDismiss, content = content)
+}
 
 /**
- * A panel that grows out of one of the browser's bars and keeps the bar's margins: the actions bar at the bottom of the
- * screen, or the address bar at the top. While the finger that swiped the bar stays down, the panel follows it, and
- * letting go opens or closes the panel. The content waits where it ends up while the panel grows over it, and fades in
- * as the panel nears its full size. The open panel can be dragged back by its handle, on its far edge, or by its
- * content to close it.
+ * A panel that grows out of one of the browser's bars and keeps the bar's margins: the actions bar or the address bar
+ * at the bottom of the screen, or the address bar at the top. While the finger that swiped the bar stays down, the
+ * panel follows it, and letting go opens or closes the panel. The content waits where it ends up while the panel grows
+ * over it, and fades in as the panel nears its full size. The open panel can be dragged back by its handle, on its far
+ * edge, or by its content to close it.
  *
- * @param edge The edge of the screen whose bar the panel grows out of.
+ * @param bar The bar the panel grows out of.
  * @param swipe The swipe on that bar that opens the panel.
  * @param onDismiss Removes the panel, once it shrank back into the bar.
  * @param content What the panel shows, in a column that scrolls when it does not fit.
  */
 @Composable
 internal fun FloatingPanel(
-    edge: PanelEdge,
+    bar: PanelBar,
     swipe: PanelSwipe,
     onDismiss: () -> Unit,
     content: @Composable ColumnScope.() -> Unit,
 ) {
     val scope = rememberCoroutineScope()
     val density = LocalDensity.current
-    val look = remember(edge) { lookOf(edge) }
+    val look = remember(bar) { lookOf(bar) }
     val panel = remember {
         MenuPanel(
             scope = scope,
             swipe = swipe,
-            opensDown = edge == PanelEdge.TOP,
+            opensDown = bar.isAtTop,
             barHeight = with(density) { look.barHeight.toPx() },
             flingVelocity = with(density) { FLING_VELOCITY.toPx() },
             onClosed = onDismiss,
@@ -556,9 +583,11 @@ private class PanelLook(val barHeight: Dp, val sideMargin: Dp, val barMargin: Dp
     val shape: Shape = RoundedCornerShape(barHeight / 2)
 }
 
-private fun lookOf(edge: PanelEdge) = when (edge) {
-    PanelEdge.BOTTOM -> PanelLook(BAR_HEIGHT, BAR_SIDE_MARGIN, ACTIONS_BAR_BOTTOM_MARGIN)
-    PanelEdge.TOP -> PanelLook(ADDRESS_FIELD_HEIGHT, ADDRESS_FIELD_SIDE_MARGIN, ADDRESS_FIELD_TOP_MARGIN)
+private fun lookOf(bar: PanelBar) = when (bar) {
+    PanelBar.ACTIONS_BAR -> PanelLook(BAR_HEIGHT, BAR_SIDE_MARGIN, ACTIONS_BAR_BOTTOM_MARGIN)
+    PanelBar.TOP_ADDRESS_BAR -> PanelLook(ADDRESS_FIELD_HEIGHT, ADDRESS_FIELD_SIDE_MARGIN, ADDRESS_FIELD_MARGIN)
+    PanelBar.BOTTOM_ADDRESS_BAR ->
+        PanelLook(ADDRESS_FIELD_HEIGHT, ADDRESS_FIELD_SIDE_MARGIN, ADDRESS_FIELD_MARGIN + BOTTOM_ADDRESS_BAR_MARGIN)
 }
 
 private fun smoothstep(x: Float): Float {

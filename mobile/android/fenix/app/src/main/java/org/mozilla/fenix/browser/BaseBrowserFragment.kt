@@ -211,6 +211,7 @@ import org.mozilla.fenix.customtabs.ExternalAppBrowserActivity
 import org.mozilla.fenix.databinding.FragmentBrowserBinding
 import org.mozilla.fenix.dejavu.browser.DejavuToolbar
 import org.mozilla.fenix.dejavu.browser.SplitPanes
+import org.mozilla.fenix.dejavu.browser.barsLayout
 import org.mozilla.fenix.dejavu.browser.exitFullScreenKeepingBarsHidden
 import org.mozilla.fenix.dejavu.browser.handleDejavuBackPressed
 import org.mozilla.fenix.dejavu.browser.installAboutConfigWarning
@@ -2266,12 +2267,15 @@ abstract class BaseBrowserFragment :
 
     /**
      * The height the top toolbar takes above the page. Dejavu's address bar keeps below the status bar, which pages
-     * run up behind once the address bar scrolls away, so it takes the status bar's height too.
+     * run up behind once the address bar scrolls away, so it takes the status bar's height too. Below pages, the
+     * address bar leaves only the status bar's room above them.
      */
     private fun topToolbarHeightAbovePage(): Int {
         val toolbarHeight = getTopToolbarHeight(includeTabStripIfAvailable = customTabSessionId == null)
         val isDejavuBar = DejavuToolbar.enabled && customTabSessionId == null && toolbarHeight > 0
-        return if (isDejavuBar) toolbarHeight + (view?.statusBarHeight ?: 0) else toolbarHeight
+        if (!isDejavuBar) return toolbarHeight
+        val statusBar = view?.statusBarHeight ?: 0
+        return if (requireContext().barsLayout.addressBarAtBottom) statusBar else toolbarHeight + statusBar
     }
 
     /**

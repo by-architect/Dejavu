@@ -13,6 +13,7 @@ import org.mozilla.fenix.dejavu.actions.ActionPlace
 import org.mozilla.fenix.dejavu.actions.CustomAction
 import org.mozilla.fenix.dejavu.actions.RowAction
 import org.mozilla.fenix.dejavu.actions.TabAction
+import org.mozilla.fenix.dejavu.browser.BarsLayout
 import org.mozilla.fenix.dejavu.workspaces.SplitOrientation
 
 /**
@@ -218,6 +219,35 @@ object ActionsBarLayout {
     /** The entries of [keys], leaving out the ones that no longer exist. */
     fun resolve(keys: List<String>, customActions: List<CustomAction>): List<MoreMenuEntry> =
         keys.mapNotNull { entryOf(it, customActions) }.take(MAX_BUTTONS)
+}
+
+/** A side of the address bar, each with room for one button. */
+enum class BarSide { START, END }
+
+/**
+ * The buttons beside the address bar, one on each side, as keys of the [MoreMenuEntry]s the actions bar can hold, or
+ * `null` for a side that leaves its room to the address bar.
+ */
+data class AddressBarButtons(val start: String? = null, val end: String? = null) {
+    operator fun get(side: BarSide): String? = when (side) {
+        BarSide.START -> start
+        BarSide.END -> end
+    }
+
+    /** These buttons with [key] on [side] instead. */
+    fun with(side: BarSide, key: String?): AddressBarButtons = when (side) {
+        BarSide.START -> copy(start = key)
+        BarSide.END -> copy(end = key)
+    }
+
+    companion object {
+        /** Reload at the start and Home at the end, which the address bar takes over where no actions bar has them. */
+        val DEFAULT = AddressBarButtons(start = MoreMenuItem.REFRESH.key, end = MoreMenuEntry.Home.key)
+
+        /** The buttons the address bar starts with in [layout]: none next to the actions bar, which has its own. */
+        fun defaultFor(layout: BarsLayout): AddressBarButtons =
+            if (layout.hasActionsBar) AddressBarButtons() else DEFAULT
+    }
 }
 
 /** The way this entry splits the browser, for the entries the split view entry turns into. */

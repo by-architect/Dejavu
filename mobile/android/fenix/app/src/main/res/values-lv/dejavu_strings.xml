@@ -205,7 +205,8 @@
     <string name="dejavu_settings_actions_bar">Darbību josla</string>
     <string name="dejavu_actions_bar_search">Meklēšana</string>
     <string name="dejavu_actions_bar_home">Sākums</string>
-    <string name="dejavu_settings_more_menu_summary">Darbību josla zem lapām un izvēlne, ko tā atver</string>
+    <string name="dejavu_settings_more_menu_summary_2">Pogas blakus adreses joslai, darbību josla un izvēlne „Vairāk”</string>
+    <string name="dejavu_more_menu_address_bar">Adreses josla</string>
     <string name="dejavu_more_menu_drag_hint">Turiet pogu un velciet to uz rindu augšā. Lai noņemtu pogu, velciet to atpakaļ šeit lejā.</string>
     <string name="dejavu_more_menu_add_row">Pievienot rindu</string>
     <string name="dejavu_more_menu_row_full">Šī rinda ir pilna.</string>
@@ -426,6 +427,13 @@
     <string name="dejavu_protection_links">Noņemt izsekošanu no saitēm</string>
     <string name="dejavu_protection_hint">Ieslēgta aizsardzība jūs labāk pasargā. Katra pasaka, no kā tā sargā un kas tās dēļ var pārstāt darboties.</string>
     <string name="dejavu_sync_zen_hint_unpinned">Zen atveriet Iestatījumi, tad Sinhronizācija, un ieslēdziet sānjoslas sinhronizāciju.</string>
+    <string name="dejavu_settings_bars">Joslas un izvēlne</string>
+    <string name="dejavu_bars_actions_bar">Adreses josla augšā, darbību josla apakšā</string>
+    <string name="dejavu_bars_actions_bar_summary">Velciet darbību joslu uz augšu, lai atvērtu izvēlni „Vairāk”.</string>
+    <string name="dejavu_bars_top">Adreses josla augšā</string>
+    <string name="dejavu_bars_top_summary">Bez darbību joslas. Velciet adreses joslu uz leju, lai atvērtu izvēlni „Vairāk”.</string>
+    <string name="dejavu_bars_bottom">Adreses josla apakšā</string>
+    <string name="dejavu_bars_bottom_summary">Bez darbību joslas. Velciet adreses joslu uz augšu, lai atvērtu izvēlni „Vairāk”.</string>
     <string name="dejavu_settings_screen">Ekrāns</string>
     <string name="dejavu_settings_hide_system_bars">Paslēpt statusa un navigācijas joslas</string>
     <string name="dejavu_settings_hide_system_bars_summary">Kamēr tiek rādīta lapa. Pavelciet no augšējās vai apakšējās malas, lai uz brīdi tās redzētu.</string>

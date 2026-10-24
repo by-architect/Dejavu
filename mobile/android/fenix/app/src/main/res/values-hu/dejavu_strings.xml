@@ -204,7 +204,8 @@
     <string name="dejavu_settings_actions_bar">Műveletsáv</string>
     <string name="dejavu_actions_bar_search">Keresés</string>
     <string name="dejavu_actions_bar_home">Kezdőlap</string>
-    <string name="dejavu_settings_more_menu_summary">Az oldalak alatti műveletsáv és az általa megnyitott menü</string>
+    <string name="dejavu_settings_more_menu_summary_2">A címsáv melletti gombok, a műveletsáv és a Továbbiak menü</string>
+    <string name="dejavu_more_menu_address_bar">Címsáv</string>
     <string name="dejavu_more_menu_drag_hint">Tartson lenyomva egy gombot, és húzza egy fenti sorba. Egy gomb eltávolításához húzza vissza ide lefelé.</string>
     <string name="dejavu_more_menu_add_row">Sor hozzáadása</string>
     <string name="dejavu_more_menu_row_full">Ez a sor megtelt.</string>
@@ -419,6 +420,13 @@
     <string name="dejavu_protection_links">Nyomkövetés eltávolítása a hivatkozásokból</string>
     <string name="dejavu_protection_hint">A bekapcsolt védelem nagyobb biztonságot ad. Mindegyik megmondja, mi ellen véd, és mi állhat le miatta.</string>
     <string name="dejavu_sync_zen_hint_unpinned">A Zenben nyissa meg a Beállításokat, majd a Szinkronizálást, és kapcsolja be az oldalsó sáv szinkronizálását.</string>
+    <string name="dejavu_settings_bars">Sávok és menü</string>
+    <string name="dejavu_bars_actions_bar">Címsáv felül, műveletsáv alul</string>
+    <string name="dejavu_bars_actions_bar_summary">Húzza felfelé a műveletsávot a Továbbiak menü megnyitásához.</string>
+    <string name="dejavu_bars_top">Címsáv felül</string>
+    <string name="dejavu_bars_top_summary">Nincs műveletsáv. Húzza lefelé a címsávot a Továbbiak menü megnyitásához.</string>
+    <string name="dejavu_bars_bottom">Címsáv alul</string>
+    <string name="dejavu_bars_bottom_summary">Nincs műveletsáv. Húzza felfelé a címsávot a Továbbiak menü megnyitásához.</string>
     <string name="dejavu_settings_screen">Képernyő</string>
     <string name="dejavu_settings_hide_system_bars">Állapotsor és navigációs sáv elrejtése</string>
     <string name="dejavu_settings_hide_system_bars_summary">Amíg egy oldal látható. Húzza be az ujját a felső vagy alsó szélről, hogy egy pillanatra lássa őket.</string>

@@ -206,7 +206,8 @@
     <string name="dejavu_settings_actions_bar">Akcijowa lajsta</string>
     <string name="dejavu_actions_bar_search">Pytać</string>
     <string name="dejavu_actions_bar_home">Doma</string>
-    <string name="dejavu_settings_more_menu_summary">Akcijowa lajsta pod stronami a meni, kotryž so wočinja</string>
+    <string name="dejavu_settings_more_menu_summary_2">Tłóčatka pódla adresoweho pola, akcijowa lajsta a dalši meni</string>
+    <string name="dejavu_more_menu_address_bar">Adresowe polo</string>
     <string name="dejavu_more_menu_drag_hint">Dźerž tłóčatko tłóčene a ćehń jo do rjada horjeka. Ćehń tłóčatko wróćo sem dele, zo by jo wotstronił.</string>
     <string name="dejavu_more_menu_add_row">Rjad přidać</string>
     <string name="dejavu_more_menu_row_full">Tutón rjad je połny.</string>
@@ -433,6 +434,13 @@
     <string name="dejavu_protection_links">Slědowanje z wotkazow wotstronić</string>
     <string name="dejavu_protection_hint">Zmóžnjeny škit wašu wěstotu powyšuje. Kóždy praji, před čim škita a što móže jeho dla hižo njefungować.</string>
     <string name="dejavu_sync_zen_hint_unpinned">W Zen wočini Nastajenja, potom Synchronizacija, a zapinaj synchronizaciju bóčnicy.</string>
+    <string name="dejavu_settings_bars">Lajsty a meni</string>
+    <string name="dejavu_bars_actions_bar">Adresowe polo horjeka, akcijowa lajsta deleka</string>
+    <string name="dejavu_bars_actions_bar_summary">Trějće akcijowu lajstu horje, zo by so dalši meni wočinił.</string>
+    <string name="dejavu_bars_top">Adresowe polo horjeka</string>
+    <string name="dejavu_bars_top_summary">Žana akcijowa lajsta. Trějće adresowe polo dele, zo by so dalši meni wočinił.</string>
+    <string name="dejavu_bars_bottom">Adresowe polo deleka</string>
+    <string name="dejavu_bars_bottom_summary">Žana akcijowa lajsta. Trějće adresowe polo horje, zo by so dalši meni wočinił.</string>
     <string name="dejavu_settings_screen">Wobrazowka</string>
     <string name="dejavu_settings_hide_system_bars">Lajsty statusa a nawigacije schować</string>
     <string name="dejavu_settings_hide_system_bars_summary">Mjeztym zo so strona pokazuje. Ćehńće wot hornjeje abo delnjeje kromy, zo byšće je na wokomik widźeli.</string>

@@ -204,7 +204,8 @@
     <string name="dejavu_settings_actions_bar">მოქმედებების ზოლი</string>
     <string name="dejavu_actions_bar_search">ძიება</string>
     <string name="dejavu_actions_bar_home">მთავარი</string>
-    <string name="dejavu_settings_more_menu_summary">მოქმედებების ზოლი გვერდების ქვემოთ და მენიუ, რომელსაც ის ხსნის</string>
+    <string name="dejavu_settings_more_menu_summary_2">ღილაკები მისამართების ველის გვერდით, მოქმედებების ზოლი და დამატებითი მენიუ</string>
+    <string name="dejavu_more_menu_address_bar">მისამართების ველი</string>
     <string name="dejavu_more_menu_drag_hint">ხანგრძლივად შეეხეთ ღილაკს და გადაიტანეთ ზემოთ მდებარე მწკრივში. ღილაკის ამოსაშლელად გადმოიტანეთ იგი აქ, ქვემოთ.</string>
     <string name="dejavu_more_menu_add_row">მწკრივის დამატება</string>
     <string name="dejavu_more_menu_row_full">ეს მწკრივი სავსეა.</string>
@@ -419,6 +420,13 @@
     <string name="dejavu_protection_links">ბმულებიდან თვალთვალის მოცილება</string>
     <string name="dejavu_protection_hint">ჩართული დაცვა უფრო მეტად გიცავთ. თითოეულთან წერია, რისგან იცავს და რამ შეიძლება შეწყვიტოს მუშაობა მის გამო.</string>
     <string name="dejavu_sync_zen_hint_unpinned">Zen-ში გახსენით „პარამეტრები“, შემდეგ „სინქრონიზაცია“ და ჩართეთ გვერდითი პანელის სინქრონიზაცია.</string>
+    <string name="dejavu_settings_bars">ზოლები და მენიუ</string>
+    <string name="dejavu_bars_actions_bar">მისამართების ველი ზემოთ, მოქმედებების ზოლი ქვემოთ</string>
+    <string name="dejavu_bars_actions_bar_summary">დამატებითი მენიუს გასახსნელად გადაფურცლეთ მოქმედებების ზოლი ზემოთ.</string>
+    <string name="dejavu_bars_top">მისამართების ველი ზემოთ</string>
+    <string name="dejavu_bars_top_summary">მოქმედებების ზოლის გარეშე. დამატებითი მენიუს გასახსნელად გადაფურცლეთ მისამართების ველი ქვემოთ.</string>
+    <string name="dejavu_bars_bottom">მისამართების ველი ქვემოთ</string>
+    <string name="dejavu_bars_bottom_summary">მოქმედებების ზოლის გარეშე. დამატებითი მენიუს გასახსნელად გადაფურცლეთ მისამართების ველი ზემოთ.</string>
     <string name="dejavu_settings_screen">ეკრანი</string>
     <string name="dejavu_settings_hide_system_bars">მდგომარეობისა და ნავიგაციის ზოლების დამალვა</string>
     <string name="dejavu_settings_hide_system_bars_summary">როცა გვერდი ჩანს. ზედა ან ქვედა კიდიდან გადაფურცლეთ, რომ წამით დაინახოთ.</string>

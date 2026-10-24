@@ -204,7 +204,8 @@
     <string name="dejavu_settings_actions_bar">Afeggag n tigawin</string>
     <string name="dejavu_actions_bar_search">Rzu</string>
     <string name="dejavu_actions_bar_home">Axxam</string>
-    <string name="dejavu_settings_more_menu_summary">Afeggag n tigawin ddaw tsna akked umuɣ i yeṛẓem</string>
+    <string name="dejavu_settings_more_menu_summary_2">Ibuṭunen ɣer tama n ufeggag n tansa, afeggag n tigawin akked Umuɣ Ugar</string>
+    <string name="dejavu_more_menu_address_bar">Afeggag n tansa</string>
     <string name="dejavu_more_menu_drag_hint">Ṭṭef deg ubuṭun syin zuɣer-t ɣer yan uzirig nnig. Zuɣer abuṭun ɣer da ddaw akken a t-tekkseḍ.</string>
     <string name="dejavu_more_menu_add_row">Rnu azirig</string>
     <string name="dejavu_more_menu_row_full">Azirig-agi yeččur.</string>
@@ -419,6 +420,13 @@
     <string name="dejavu_protection_links">Kkes aḍfar seg yiseɣwan</string>
     <string name="dejavu_protection_hint">Ammesten yermden ad k-yeǧǧ deg laman ugar. Yal yiwen yeqqar-d ayen mgal i k-yettmesten d wayen izemren ad yeḥbes ssebba-s.</string>
     <string name="dejavu_sync_zen_hint_unpinned">Deg Zen, rẓem Tisɣal, sakin Asdukel, rnu sermed asdukel n ugalis adisan.</string>
+    <string name="dejavu_settings_bars">Ifeggagen d umuɣ</string>
+    <string name="dejavu_bars_actions_bar">Afeggag n tansa deg ufella, afeggag n tigawin deg wadda</string>
+    <string name="dejavu_bars_actions_bar_summary">Zuɣer afeggag n tigawin ɣer sennig akken ad terẓmeḍ Umuɣ Ugar.</string>
+    <string name="dejavu_bars_top">Afeggag n tansa deg ufella</string>
+    <string name="dejavu_bars_top_summary">War afeggag n tigawin. Zuɣer afeggag n tansa ɣer wadda akken ad terẓmeḍ Umuɣ Ugar.</string>
+    <string name="dejavu_bars_bottom">Afeggag n tansa deg wadda</string>
+    <string name="dejavu_bars_bottom_summary">War afeggag n tigawin. Zuɣer afeggag n tansa ɣer sennig akken ad terẓmeḍ Umuɣ Ugar.</string>
     <string name="dejavu_settings_screen">Agdil</string>
     <string name="dejavu_settings_hide_system_bars">Ffer afeggag n waddad d win n yinig</string>
     <string name="dejavu_settings_hide_system_bars_summary">Mi ara d-tettwaskan tasna. Zuɣer seg yiri n ufella neɣ n wadda akken ad ten-twaliḍ cwiṭ.</string>

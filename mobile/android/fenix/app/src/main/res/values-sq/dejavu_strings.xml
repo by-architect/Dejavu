@@ -204,7 +204,8 @@
     <string name="dejavu_settings_actions_bar">Shirit veprimesh</string>
     <string name="dejavu_actions_bar_search">Kërko</string>
     <string name="dejavu_actions_bar_home">Kreu</string>
-    <string name="dejavu_settings_more_menu_summary">Shiriti i veprimeve nën faqet dhe menuja që hap</string>
+    <string name="dejavu_settings_more_menu_summary_2">Butonat pranë shtyllës së adresave, shiriti i veprimeve dhe menuja «Më Tepër»</string>
+    <string name="dejavu_more_menu_address_bar">Shtyllë adresash</string>
     <string name="dejavu_more_menu_drag_hint">Mbani shtypur një buton dhe tërhiqeni te një rresht sipër. Tërhiqeni një buton prapë këtu poshtë që ta hiqni.</string>
     <string name="dejavu_more_menu_add_row">Shto rresht</string>
     <string name="dejavu_more_menu_row_full">Ky rresht është plot.</string>
@@ -419,6 +420,13 @@
     <string name="dejavu_protection_links">Hiq gjurmimin nga lidhjet</string>
     <string name="dejavu_protection_hint">Një mbrojtje e aktivizuar ju mban më të sigurt. Secila thotë nga çfarë ju mbron dhe çfarë mund të ndalë së punuari për shkak të saj.</string>
     <string name="dejavu_sync_zen_hint_unpinned">Në Zen, hapni Rregullime, mandej Njëkohësim, dhe aktivizoni njëkohësimin e panelit anësor.</string>
+    <string name="dejavu_settings_bars">Shirita dhe menu</string>
+    <string name="dejavu_bars_actions_bar">Shtylla e adresave sipër, shiriti i veprimeve poshtë</string>
+    <string name="dejavu_bars_actions_bar_summary">Fërkojeni për sipër shiritin e veprimeve, që të hapet menuja «Më Tepër».</string>
+    <string name="dejavu_bars_top">Shtylla e adresave sipër</string>
+    <string name="dejavu_bars_top_summary">Pa shirit veprimesh. Fërkojeni për poshtë shtyllën e adresave, që të hapet menuja «Më Tepër».</string>
+    <string name="dejavu_bars_bottom">Shtylla e adresave poshtë</string>
+    <string name="dejavu_bars_bottom_summary">Pa shirit veprimesh. Fërkojeni për sipër shtyllën e adresave, që të hapet menuja «Më Tepër».</string>
     <string name="dejavu_settings_screen">Ekrani</string>
     <string name="dejavu_settings_hide_system_bars">Fshih shiritat e gjendjes dhe të lëvizjes</string>
     <string name="dejavu_settings_hide_system_bars_summary">Teksa shfaqet një faqe. Rrëshqitni nga skaji i sipërm ose i poshtëm që t\'i shihni për një çast.</string>

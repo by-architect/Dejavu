@@ -258,7 +258,8 @@
     <string name="dejavu_settings_actions_bar">অ্যাকশন বার</string>
     <string name="dejavu_actions_bar_search">অনুসন্ধান</string>
     <string name="dejavu_actions_bar_home">হোম</string>
-    <string name="dejavu_settings_more_menu_summary">পাতার নিচের অ্যাকশন বার এবং এটি যে মেনু খোলে</string>
+    <string name="dejavu_settings_more_menu_summary_2">ঠিকানা বারের পাশের বোতামগুলো, অ্যাকশন বার এবং আরও অপশন মেনু</string>
+    <string name="dejavu_more_menu_address_bar">ঠিকানা বার</string>
     <string name="dejavu_more_menu_drag_hint">একটি বোতাম ধরে রেখে উপরের কোনো সারিতে টেনে আনুন। কোনো বোতাম সরিয়ে দিতে সেটিকে আবার এখানে নিচে টেনে আনুন।</string>
     <string name="dejavu_more_menu_add_row">একটি সারি যোগ করুন</string>
     <string name="dejavu_more_menu_row_full">এই সারিটি পূর্ণ।</string>
@@ -452,6 +453,13 @@
     <string name="dejavu_protection_links">লিঙ্ক থেকে ট্র্যাকিং সরান</string>
     <string name="dejavu_protection_hint">চালু থাকা সুরক্ষা আপনাকে আরও নিরাপদ রাখে। প্রতিটি সুরক্ষা জানায় এটি কীসের থেকে রক্ষা করে এবং এর কারণে কী কাজ করা বন্ধ করতে পারে।</string>
     <string name="dejavu_sync_zen_hint_unpinned">Zen-এ সেটিংস, তারপর Sync খুলুন এবং সাইডবার Sync চালু করুন।</string>
+    <string name="dejavu_settings_bars">বার ও মেনু</string>
+    <string name="dejavu_bars_actions_bar">ঠিকানা বার উপরে, অ্যাকশন বার নিচে</string>
+    <string name="dejavu_bars_actions_bar_summary">আরও অপশন মেনু খুলতে অ্যাকশন বারটি উপরে সোয়াইপ করুন।</string>
+    <string name="dejavu_bars_top">ঠিকানা বার উপরে</string>
+    <string name="dejavu_bars_top_summary">কোনো অ্যাকশন বার নেই। আরও অপশন মেনু খুলতে ঠিকানা বারটি নিচে সোয়াইপ করুন।</string>
+    <string name="dejavu_bars_bottom">ঠিকানা বার নিচে</string>
+    <string name="dejavu_bars_bottom_summary">কোনো অ্যাকশন বার নেই। আরও অপশন মেনু খুলতে ঠিকানা বারটি উপরে সোয়াইপ করুন।</string>
     <string name="dejavu_settings_screen">স্ক্রিন</string>
     <string name="dejavu_settings_hide_system_bars">স্ট্যাটাস ও নেভিগেশন বার লুকান</string>
     <string name="dejavu_settings_hide_system_bars_summary">যখন কোনো পেজ দেখানো হয়। এক মুহূর্তের জন্য দেখতে উপরের বা নিচের প্রান্ত থেকে সোয়াইপ করুন।</string>

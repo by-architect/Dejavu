@@ -203,7 +203,8 @@
     <string name="dejavu_settings_actions_bar">アクションバー</string>
     <string name="dejavu_actions_bar_search">検索</string>
     <string name="dejavu_actions_bar_home">ホーム</string>
-    <string name="dejavu_settings_more_menu_summary">ページ下部のアクションバーと、そこから開くメニュー</string>
+    <string name="dejavu_settings_more_menu_summary_2">アドレスバーの横にあるボタン、アクションバー、その他メニュー</string>
+    <string name="dejavu_more_menu_address_bar">アドレスバー</string>
     <string name="dejavu_more_menu_drag_hint">ボタンを長押しして、上の行にドラッグします。ボタンを削除するには、ここまで下にドラッグして戻します。</string>
     <string name="dejavu_more_menu_add_row">行を追加</string>
     <string name="dejavu_more_menu_row_full">この行はいっぱいです。</string>
@@ -412,6 +413,13 @@
     <string name="dejavu_protection_links">リンクからトラッキングを削除する</string>
     <string name="dejavu_protection_hint">保護機能をオンにすると、より安全になります。それぞれの説明に、何から守るか、そのせいで何が動かなくなる可能性があるかが書かれています。</string>
     <string name="dejavu_sync_zen_hint_unpinned">Zenで「設定」を開き、「同期」でサイドバーの同期をオンにしてください。</string>
+    <string name="dejavu_settings_bars">バーとメニュー</string>
+    <string name="dejavu_bars_actions_bar">アドレスバーを画面上部、アクションバーを画面下部に表示</string>
+    <string name="dejavu_bars_actions_bar_summary">アクションバーを上にスワイプすると、その他メニューが開きます。</string>
+    <string name="dejavu_bars_top">アドレスバーを画面上部に表示</string>
+    <string name="dejavu_bars_top_summary">アクションバーは表示されません。アドレスバーを下にスワイプすると、その他メニューが開きます。</string>
+    <string name="dejavu_bars_bottom">アドレスバーを画面下部に表示</string>
+    <string name="dejavu_bars_bottom_summary">アクションバーは表示されません。アドレスバーを上にスワイプすると、その他メニューが開きます。</string>
     <string name="dejavu_settings_screen">画面</string>
     <string name="dejavu_settings_hide_system_bars">ステータスバーとナビゲーションバーを非表示にする</string>
     <string name="dejavu_settings_hide_system_bars_summary">ページの表示中。上端または下端からスワイプすると、少しの間表示されます。</string>

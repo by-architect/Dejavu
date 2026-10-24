@@ -204,7 +204,8 @@
     <string name="dejavu_settings_actions_bar">Bar sang mga aksyon</string>
     <string name="dejavu_actions_bar_search">Pangita</string>
     <string name="dejavu_actions_bar_home">Home</string>
-    <string name="dejavu_settings_more_menu_summary">Ang bar sang mga aksyon sa idalom sang mga page kag ang menu nga ginaabli sini</string>
+    <string name="dejavu_settings_more_menu_summary_2">Ang mga button sa tupad sang bar sang address, ang bar sang mga aksyon kag ang Dugang nga menu</string>
+    <string name="dejavu_more_menu_address_bar">Bar sang address</string>
     <string name="dejavu_more_menu_drag_hint">Pindota sing madugay ang isa ka button kag i-drag ini sa isa ka laray sa ibabaw. I-drag pabalik diri sa idalom ang button para kuhaon ini.</string>
     <string name="dejavu_more_menu_add_row">Magdugang sang laray</string>
     <string name="dejavu_more_menu_row_full">Puno na ining laray.</string>
@@ -419,6 +420,13 @@
     <string name="dejavu_protection_links">Kuhaa ang pagsunod sa mga link</string>
     <string name="dejavu_protection_hint">Ang proteksyon nga naka-on nagahimo sa imo nga mas luwas. Ginasiling sang kada isa kon ano ang ginapugngan sini kag kon ano ang mahimo indi na mag-obra tungod sini.</string>
     <string name="dejavu_sync_zen_hint_unpinned">Sa Zen, abrihan ang Settings, dayon Sync, kag i-on ang sidebar sync.</string>
+    <string name="dejavu_settings_bars">Mga bar kag menu</string>
+    <string name="dejavu_bars_actions_bar">Bar sang address sa ibabaw, bar sang mga aksyon sa idalom</string>
+    <string name="dejavu_bars_actions_bar_summary">I-swipe pataas ang bar sang mga aksyon para maabrihan ang Dugang nga menu.</string>
+    <string name="dejavu_bars_top">Bar sang address sa ibabaw</string>
+    <string name="dejavu_bars_top_summary">Wala sing bar sang mga aksyon. I-swipe padulhog ang bar sang address para maabrihan ang Dugang nga menu.</string>
+    <string name="dejavu_bars_bottom">Bar sang address sa idalom</string>
+    <string name="dejavu_bars_bottom_summary">Wala sing bar sang mga aksyon. I-swipe pataas ang bar sang address para maabrihan ang Dugang nga menu.</string>
     <string name="dejavu_settings_screen">Screen</string>
     <string name="dejavu_settings_hide_system_bars">Tagua ang status kag navigation bar</string>
     <string name="dejavu_settings_hide_system_bars_summary">Samtang ginapakita ang isa ka pahina. I-swipe halin sa ibabaw ukon idalom nga kilid para makita sila sing makadali.</string>

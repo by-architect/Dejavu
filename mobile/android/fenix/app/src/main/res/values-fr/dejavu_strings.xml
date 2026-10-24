@@ -204,7 +204,8 @@
     <string name="dejavu_settings_actions_bar">Barre d’actions</string>
     <string name="dejavu_actions_bar_search">Rechercher</string>
     <string name="dejavu_actions_bar_home">Accueil</string>
-    <string name="dejavu_settings_more_menu_summary">La barre d’actions sous les pages et le menu qu’elle ouvre</string>
+    <string name="dejavu_settings_more_menu_summary_2">Les boutons à côté de la barre d’adresse, la barre d’actions et le menu « Plus »</string>
+    <string name="dejavu_more_menu_address_bar">Barre d’adresse</string>
     <string name="dejavu_more_menu_drag_hint">Maintiens un bouton appuyé et fais-le glisser dans une ligne au-dessus. Fais glisser un bouton ici en bas pour le retirer.</string>
     <string name="dejavu_more_menu_add_row">Ajouter une ligne</string>
     <string name="dejavu_more_menu_row_full">Cette ligne est pleine.</string>
@@ -419,6 +420,13 @@
     <string name="dejavu_protection_links">Retirer le pistage des liens</string>
     <string name="dejavu_protection_hint">Une protection activée vous protège davantage. Chacune indique contre quoi elle vous protège et ce qui peut ne plus fonctionner à cause d’elle.</string>
     <string name="dejavu_sync_zen_hint_unpinned">Dans Zen, ouvre les paramètres, puis Synchronisation, et active la synchronisation de la barre latérale.</string>
+    <string name="dejavu_settings_bars">Barres et menu</string>
+    <string name="dejavu_bars_actions_bar">Barre d’adresse en haut, barre d’actions en bas</string>
+    <string name="dejavu_bars_actions_bar_summary">Fais glisser la barre d’actions vers le haut pour ouvrir le menu « Plus ».</string>
+    <string name="dejavu_bars_top">Barre d’adresse en haut</string>
+    <string name="dejavu_bars_top_summary">Aucune barre d’actions. Fais glisser la barre d’adresse vers le bas pour ouvrir le menu « Plus ».</string>
+    <string name="dejavu_bars_bottom">Barre d’adresse en bas</string>
+    <string name="dejavu_bars_bottom_summary">Aucune barre d’actions. Fais glisser la barre d’adresse vers le haut pour ouvrir le menu « Plus ».</string>
     <string name="dejavu_settings_screen">Écran</string>
     <string name="dejavu_settings_hide_system_bars">Masquer les barres d\'état et de navigation</string>
     <string name="dejavu_settings_hide_system_bars_summary">Pendant l\'affichage d\'une page. Balayez depuis le bord supérieur ou inférieur pour les voir un instant.</string>

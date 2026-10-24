@@ -204,7 +204,8 @@
     <string name="dejavu_settings_actions_bar">Aksjebalke</string>
     <string name="dejavu_actions_bar_search">Sykje</string>
     <string name="dejavu_actions_bar_home">Thús</string>
-    <string name="dejavu_settings_more_menu_summary">De aksjebalke ûnder sides en it menu dat dy iepenet</string>
+    <string name="dejavu_settings_more_menu_summary_2">De knoppen neist de adresbalke, de aksjebalke en it Mear-menu</string>
+    <string name="dejavu_more_menu_address_bar">Adresbalke</string>
     <string name="dejavu_more_menu_drag_hint">Hâld in knop yndrukt en sleep him nei in rige boppe. Sleep in knop werom hjir nei ûnderen om him fuort te smiten.</string>
     <string name="dejavu_more_menu_add_row">Rige taheakje</string>
     <string name="dejavu_more_menu_row_full">Dizze rige is fol.</string>
@@ -419,6 +420,13 @@
     <string name="dejavu_protection_links">Folgjen út keppelingen fuortsmite</string>
     <string name="dejavu_protection_hint">In beskerming dy\'t ynskeakele is, hâldt jo feiliger. Elk fertelt wêr\'t it jo tsjin beskermet en wat dêrtroch miskien net mear wurket.</string>
     <string name="dejavu_sync_zen_hint_unpinned">Iepenje yn Zen de Ynstellingen, dan Syngronisaasje, en set de syngronisaasje fan de sidebalke oan.</string>
+    <string name="dejavu_settings_bars">Balken en menu</string>
+    <string name="dejavu_bars_actions_bar">Adresbalke boppe-oan, aksjebalke ûnderoan</string>
+    <string name="dejavu_bars_actions_bar_summary">Fei de aksjebalke omheech om it Mear-menu te iepenjen.</string>
+    <string name="dejavu_bars_top">Adresbalke boppe-oan</string>
+    <string name="dejavu_bars_top_summary">Gjin aksjebalke. Fei de adresbalke omleech om it Mear-menu te iepenjen.</string>
+    <string name="dejavu_bars_bottom">Adresbalke ûnderoan</string>
+    <string name="dejavu_bars_bottom_summary">Gjin aksjebalke. Fei de adresbalke omheech om it Mear-menu te iepenjen.</string>
     <string name="dejavu_settings_screen">Skerm</string>
     <string name="dejavu_settings_hide_system_bars">Status- en navigaasjebalke ferstopje</string>
     <string name="dejavu_settings_hide_system_bars_summary">Wylst in side toand wurdt. Fei fan de boppe- of ûnderrâne om se efkes te sjen.</string>

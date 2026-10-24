@@ -204,7 +204,8 @@
     <string name="dejavu_settings_actions_bar">Áreketler paneli</string>
     <string name="dejavu_actions_bar_search">Izlew</string>
     <string name="dejavu_actions_bar_home">Bas bet</string>
-    <string name="dejavu_settings_more_menu_summary">Betlerdiń astındaǵı áreketler paneli hám ol ashatuǵın menyu</string>
+    <string name="dejavu_settings_more_menu_summary_2">Mánzil qatarınıń janındaǵı knopkalar, áreketler paneli hám «Kóbirek» menyusi</string>
+    <string name="dejavu_more_menu_address_bar">Mánzil qatarı</string>
     <string name="dejavu_more_menu_drag_hint">Knopkanı basıp turıń hám onı joqarıdaǵı qatarǵa súyreń. Knopkanı shıǵarıw ushın onı bul jerge, tómenge qaytarıp súyreń.</string>
     <string name="dejavu_more_menu_add_row">Qatar qosıw</string>
     <string name="dejavu_more_menu_row_full">Bul qatar tolı.</string>
@@ -419,6 +420,13 @@
     <string name="dejavu_protection_links">Siltemelerden baqlawdı alıp taslaw</string>
     <string name="dejavu_protection_hint">Qosılǵan qorǵaw sizdi qáwipsizirek etedi. Hár biri neden qorǵaytuǵının hám onıń sebebinen neniń islemey qalıwı múmkin ekenin aytadı.</string>
     <string name="dejavu_sync_zen_hint_unpinned">Zen-de Sazlawlardı, soń Sinxronlastırıwdı ashıń hám yan panel sinxronlastırıwın qosıń.</string>
+    <string name="dejavu_settings_bars">Paneller hám menyu</string>
+    <string name="dejavu_bars_actions_bar">Mánzil qatarı joqarıda, áreketler paneli tómende</string>
+    <string name="dejavu_bars_actions_bar_summary">«Kóbirek» menyusin ashıw ushın áreketler panelin joqarıǵa sırǵıtıń.</string>
+    <string name="dejavu_bars_top">Mánzil qatarı joqarıda</string>
+    <string name="dejavu_bars_top_summary">Áreketler paneli joq. «Kóbirek» menyusin ashıw ushın mánzil qatarın tómenge sırǵıtıń.</string>
+    <string name="dejavu_bars_bottom">Mánzil qatarı tómende</string>
+    <string name="dejavu_bars_bottom_summary">Áreketler paneli joq. «Kóbirek» menyusin ashıw ushın mánzil qatarın joqarıǵa sırǵıtıń.</string>
     <string name="dejavu_settings_screen">Ekran</string>
     <string name="dejavu_settings_hide_system_bars">Jaǵday hám navigaciya panellerin jasırıw</string>
     <string name="dejavu_settings_hide_system_bars_summary">Bet kórsetilip turǵanda. Olardı bir sátke kóriw ushın joqarǵı yamasa tómengi shetten sırǵıtıń.</string>

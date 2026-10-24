@@ -207,7 +207,8 @@
     <string name="dejavu_settings_actions_bar">Barrenn oberioù</string>
     <string name="dejavu_actions_bar_search">Klask</string>
     <string name="dejavu_actions_bar_home">Degemer</string>
-    <string name="dejavu_settings_more_menu_summary">Ar varrenn oberioù dindan ar bajennoù hag ar meuziad a zigor</string>
+    <string name="dejavu_settings_more_menu_summary_2">An afelloù e-kichen ar varrenn chomlec’h, ar varrenn oberioù hag ar meuziad Muioc’h</string>
+    <string name="dejavu_more_menu_address_bar">Barrenn chomlec’h</string>
     <string name="dejavu_more_menu_drag_hint">Derc’hit war un afell ha riklit anezhañ en ur renkad a-us. Riklit un afell en-dro amañ dindan evit e lemel.</string>
     <string name="dejavu_more_menu_add_row">Ouzhpennañ ur renkad</string>
     <string name="dejavu_more_menu_row_full">Leun eo ar renkad-mañ.</string>
@@ -440,6 +441,13 @@
     <string name="dejavu_protection_links">Lemel an heuliañ diwar al liammoù</string>
     <string name="dejavu_protection_hint">Ur gwarez gweredekaet a ro muioc’h a surentez deoc’h. Pep hini a lavar diouzh petra e tiwall ac’hanoc’h ha petra a c’hallfe chom hep mont en-dro en abeg dezhañ.</string>
     <string name="dejavu_sync_zen_hint_unpinned">E Zen, digorit Arventennoù, ha goude Goubredañ, ha weredekait goubredañ ar varrenn gostez.</string>
+    <string name="dejavu_settings_bars">Barrennoù ha meuziad</string>
+    <string name="dejavu_bars_actions_bar">Barrenn chomlec’h e krec’h, barrenn oberioù en traoñ</string>
+    <string name="dejavu_bars_actions_bar_summary">Riklit ar varrenn oberioù etrezek al laez evit digeriñ ar meuziad Muioc’h.</string>
+    <string name="dejavu_bars_top">Barrenn chomlec’h e krec’h</string>
+    <string name="dejavu_bars_top_summary">Barrenn oberioù ebet. Riklit ar varrenn chomlec’h etrezek an traoñ evit digeriñ ar meuziad Muioc’h.</string>
+    <string name="dejavu_bars_bottom">Barrenn chomlec’h en traoñ</string>
+    <string name="dejavu_bars_bottom_summary">Barrenn oberioù ebet. Riklit ar varrenn chomlec’h etrezek al laez evit digeriñ ar meuziad Muioc’h.</string>
     <string name="dejavu_settings_screen">Skramm</string>
     <string name="dejavu_settings_hide_system_bars">Kuzhat ar barrennoù stad ha merdeiñ</string>
     <string name="dejavu_settings_hide_system_bars_summary">E-keit ma vez diskouezet ur bajenn. Riklit adalek ar riblenn uhel pe izel evit o gwelout ur pennadig.</string>

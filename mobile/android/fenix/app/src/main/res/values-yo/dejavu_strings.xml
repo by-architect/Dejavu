@@ -203,7 +203,8 @@
     <string name="dejavu_settings_actions_bar">Ọ̀pá Iṣe</string>
     <string name="dejavu_actions_bar_search">Wá</string>
     <string name="dejavu_actions_bar_home">Home</string>
-    <string name="dejavu_settings_more_menu_summary">Ọ̀pá iṣe tí ó wà ní ìsàlẹ̀ ojú-ìwé àti menu tí ó ń ṣí</string>
+    <string name="dejavu_settings_more_menu_summary_2">Àwọn bọ́tìnnì tí ó wà lẹ́gbẹ̀ẹ́ Ọ̀pá Àdírẹ́sì, Ọ̀pá Iṣe àti Menu Àfikún</string>
+    <string name="dejavu_more_menu_address_bar">Ọ̀pá Àdírẹ́sì</string>
     <string name="dejavu_more_menu_drag_hint">Di bọ́tìnnì kan mú, kí o sì fà á lọ sí ọ̀nà kan lókè. Fa bọ́tìnnì kan padà sísàlẹ̀ níbí láti yọ ọ́ kúrò.</string>
     <string name="dejavu_more_menu_add_row">Fi ọ̀nà kún</string>
     <string name="dejavu_more_menu_row_full">Ọ̀nà yìí ti kún.</string>
@@ -412,6 +413,13 @@
     <string name="dejavu_protection_links">Yọ ìtọpasẹ̀ kúrò nínú àwọn líǹkì</string>
     <string name="dejavu_protection_hint">Ààbò tí ó wà ní títàn ń jẹ́ kí o túbọ̀ wà láìléwu. Ọ̀kọ̀ọ̀kan sọ ohun tí ó ń dáàbò bò ọ́ lọ́wọ́ rẹ̀ àti ohun tí ó lè má ṣiṣẹ́ mọ́ nítorí rẹ̀.</string>
     <string name="dejavu_sync_zen_hint_unpinned">Nínú Zen, ṣí Settings, lẹ́yìn náà Sync, kí o sì tan sidebar sync.</string>
+    <string name="dejavu_settings_bars">Àwọn Ọ̀pá àti Menu</string>
+    <string name="dejavu_bars_actions_bar">Ọ̀pá Àdírẹ́sì lókè, Ọ̀pá Iṣe ní ìsàlẹ̀</string>
+    <string name="dejavu_bars_actions_bar_summary">Fa Ọ̀pá Iṣe sókè láti ṣí Menu Àfikún.</string>
+    <string name="dejavu_bars_top">Ọ̀pá Àdírẹ́sì lókè</string>
+    <string name="dejavu_bars_top_summary">Kò sí Ọ̀pá Iṣe. Fa Ọ̀pá Àdírẹ́sì sísàlẹ̀ láti ṣí Menu Àfikún.</string>
+    <string name="dejavu_bars_bottom">Ọ̀pá Àdírẹ́sì ní ìsàlẹ̀</string>
+    <string name="dejavu_bars_bottom_summary">Kò sí Ọ̀pá Iṣe. Fa Ọ̀pá Àdírẹ́sì sókè láti ṣí Menu Àfikún.</string>
     <string name="dejavu_settings_screen">Ojú ìbòjú</string>
     <string name="dejavu_settings_hide_system_bars">Fi ọ̀pá ipò àti ọ̀pá ìtọ́sọ́nà pamọ́</string>
     <string name="dejavu_settings_hide_system_bars_summary">Nígbà tí ojú-ìwé kan bá ń hàn. Ra wọlé láti etí òkè tàbí ìsàlẹ̀ láti rí wọn fún ìṣẹ́jú kan.</string>

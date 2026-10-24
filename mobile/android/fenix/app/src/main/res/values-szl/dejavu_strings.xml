@@ -206,7 +206,8 @@
     <string name="dejavu_settings_actions_bar">Posek akcyji</string>
     <string name="dejavu_actions_bar_search">Szukej</string>
     <string name="dejavu_actions_bar_home">Dōm</string>
-    <string name="dejavu_settings_more_menu_summary">Posek akcyji pod strōnami i meni, kere ôn ôdwiyro</string>
+    <string name="dejavu_settings_more_menu_summary_2">Knefle kole posku z adresōm, posek akcyji i menu „Wiyncyj”</string>
+    <string name="dejavu_more_menu_address_bar">Posek z adresōm</string>
     <string name="dejavu_more_menu_drag_hint">Przitrzim knefel i przeciōng go do linije wyżyj. Coby wyciepnyć knefel, przeciōng go nazod sam na dōł.</string>
     <string name="dejavu_more_menu_add_row">Dodej linijo</string>
     <string name="dejavu_more_menu_row_full">Ta linijo je pełno.</string>
@@ -433,6 +434,13 @@
     <string name="dejavu_protection_links">Wyciep śledzynie z linkōw</string>
     <string name="dejavu_protection_hint">Załōnczōno ôchrōna trzimo cie bezpieczniyj. Kożdo pisze, przed czym chrōni i co skuli nij może przestać fungować.</string>
     <string name="dejavu_sync_zen_hint_unpinned">W Zen ôdewrzij Sztalōnki, potym Synchronizacyjo, i włōncz synchronizacyjo bocznego posku.</string>
+    <string name="dejavu_settings_bars">Poski i menu</string>
+    <string name="dejavu_bars_actions_bar">Posek z adresōm na wiyrchu, posek akcyji na spodku</string>
+    <string name="dejavu_bars_actions_bar_summary">Przeciōng posek akcyji w gōra, coby ôdewrzić menu „Wiyncyj”.</string>
+    <string name="dejavu_bars_top">Posek z adresōm na wiyrchu</string>
+    <string name="dejavu_bars_top_summary">Bez posku akcyji. Przeciōng posek z adresōm na dōł, coby ôdewrzić menu „Wiyncyj”.</string>
+    <string name="dejavu_bars_bottom">Posek z adresōm na spodku</string>
+    <string name="dejavu_bars_bottom_summary">Bez posku akcyji. Przeciōng posek z adresōm w gōra, coby ôdewrzić menu „Wiyncyj”.</string>
     <string name="dejavu_settings_screen">Ekran</string>
     <string name="dejavu_settings_hide_system_bars">Skryj paski statusu i nawigacyje</string>
     <string name="dejavu_settings_hide_system_bars_summary">Kej sie pokazuje strona. Przesuń palcym ôd wiyrchnij abo spodnij krawyńdzi, coby je na chwila ôbejrzeć.</string>

@@ -34,6 +34,7 @@ class ToolbarMenuSwipeTest {
     private val navBarLayout = spyk(View(testContext))
     private val navController: NavController = mockk(relaxed = true)
     private val menuSwipe = RecordedMenuSwipe()
+    private val downSwipe = RecordedMenuSwipe()
     private var swipedFromNavBar: Boolean? = null
 
     @Before
@@ -76,13 +77,32 @@ class ToolbarMenuSwipeTest {
     }
 
     @Test
-    fun `a swipe down on the address bar at the top is not followed`() {
+    fun `a swipe down on the address bar at the top is followed where it opens the menu`() {
         val handler = handler()
         val start = PointF(SCREEN_WIDTH / 2f, BAR_HEIGHT / 2f)
 
-        handler.onSwipeStarted(start, PointF(start.x, start.y + 60f))
+        assertTrue(handler.onSwipeStarted(start, PointF(start.x, start.y + 60f)))
+        handler.onSwipeUpdate(distanceX = 0f, distanceY = -40f)
+        handler.onSwipeUpdate(distanceX = 0f, distanceY = 30f)
+        handler.onSwipeFinished(velocityX = 0f, velocityY = 1500f)
+
+        assertEquals(1, downSwipe.starts)
+        assertEquals(listOf(60f, 100f, 70f), downSwipe.moves)
+        assertEquals(1500f, downSwipe.endVelocity)
+        assertEquals(0, menuSwipe.starts)
+        assertNull(swipedFromNavBar)
+    }
+
+    @Test
+    fun `a swipe down on the address bar at the top is not followed where it does not open the menu`() {
+        downSwipe.follows = false
+        val handler = handler()
+        val start = PointF(SCREEN_WIDTH / 2f, BAR_HEIGHT / 2f)
+
+        assertFalse(handler.onSwipeStarted(start, PointF(start.x, start.y + 60f)))
 
         assertEquals(false, swipedFromNavBar)
+        assertTrue(downSwipe.moves.isEmpty())
         assertEquals(0, menuSwipe.starts)
     }
 
@@ -95,6 +115,7 @@ class ToolbarMenuSwipeTest {
 
         assertNull(swipedFromNavBar)
         assertEquals(0, menuSwipe.starts)
+        assertEquals(0, downSwipe.starts)
     }
 
     private fun handler() = ToolbarVerticalGesturesHandler(
@@ -105,6 +126,7 @@ class ToolbarMenuSwipeTest {
         navController = navController,
         onSwipe = { fromNavBar -> swipedFromNavBar = fromNavBar },
         menuSwipe = menuSwipe,
+        downSwipe = downSwipe,
     )
 
     private fun place(view: View, top: Int) {
@@ -128,12 +150,12 @@ class ToolbarMenuSwipeTest {
             return follows
         }
 
-        override fun onMove(distanceUp: Float) {
-            moves += distanceUp
+        override fun onMove(distance: Float) {
+            moves += distance
         }
 
-        override fun onEnd(velocityUp: Float) {
-            endVelocity = velocityUp
+        override fun onEnd(velocity: Float) {
+            endVelocity = velocity
         }
     }
 }
