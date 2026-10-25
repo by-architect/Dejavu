@@ -462,4 +462,8 @@
     <string name="dejavu_workspace_firefox_limits">Limité par Firefox Sync</string>
     <string name="dejavu_workspace_firefox_device">Firefox Sync ne partage que les onglets ouverts de chaque appareil. Les onglets que tu ouvres ou fermes ici s’ouvrent ou se ferment aussi sur l’appareil, mais tu ne peux ni épingler d’onglets, ni ajouter de dossiers ou de favoris, ni choisir de conteneur. Le nom et l’icône viennent de l’appareil, et les couleurs que tu choisis restent sur ce téléphone.</string>
     <string name="dejavu_workspace_firefox_own">Firefox Sync ne partage pas les espaces, donc cet espace, avec ses onglets épinglés et ses dossiers, reste sur ce téléphone. Dans Firefox, les onglets ouverts de cet espace apparaissent comme ceux de ce téléphone.</string>
+    <string name="dejavu_menu_new_tab">Nouvel onglet</string>
+    <string name="dejavu_menu_save_page">Enregistrer la page</string>
+    <string name="dejavu_save_page_saving">Enregistrement de la page…</string>
+    <string name="dejavu_save_page_failed">Impossible d’enregistrer cette page. Veuillez réessayer.</string>
 </resources>

@@ -462,4 +462,8 @@
     <string name="dejavu_workspace_firefox_limits">Firefox Sync -palvelun rajoitukset</string>
     <string name="dejavu_workspace_firefox_device">Firefox Sync jakaa vain kunkin laitteen avoimet välilehdet. Täällä avaamasi tai sulkemasi välilehdet avautuvat tai sulkeutuvat myös kyseisessä laitteessa, mutta et voi kiinnittää välilehtiä, lisätä kansioita tai suosikkeja etkä valita säiliötä. Nimi ja kuvake tulevat laitteesta, ja valitsemasi värit pysyvät tässä puhelimessa.</string>
     <string name="dejavu_workspace_firefox_own">Firefox Sync ei jaa työtiloja, joten tämä työtila kiinnitettyine välilehtineen ja kansioineen pysyy tässä puhelimessa. Firefox näyttää sen avoimet välilehdet tämän puhelimen välilehtinä.</string>
+    <string name="dejavu_menu_new_tab">Uusi välilehti</string>
+    <string name="dejavu_menu_save_page">Tallenna sivu</string>
+    <string name="dejavu_save_page_saving">Tallennetaan sivua …</string>
+    <string name="dejavu_save_page_failed">Sivun tallennus epäonnistui. Yritä uudelleen.</string>
 </resources>

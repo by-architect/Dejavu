@@ -462,4 +462,8 @@
     <string name="dejavu_workspace_firefox_limits">Begrænset af Firefox Sync</string>
     <string name="dejavu_workspace_firefox_device">Firefox Sync deler kun de åbne faneblade fra hver enhed. Faneblade, du åbner eller lukker her, åbnes eller lukkes også på den enhed, men du kan ikke fastgøre faneblade, tilføje mapper eller favoritter eller vælge en beholder. Navnet og ikonet kommer fra enheden, og de farver, du vælger, bliver på denne telefon.</string>
     <string name="dejavu_workspace_firefox_own">Firefox Sync deler ikke arbejdsområder, så dette arbejdsområde bliver på denne telefon sammen med dets fastgjorte faneblade og mapper. Firefox viser dets åbne faneblade som denne telefons faneblade.</string>
+    <string name="dejavu_menu_new_tab">Nyt faneblad</string>
+    <string name="dejavu_menu_save_page">Gem side</string>
+    <string name="dejavu_save_page_saving">Gemmer side …</string>
+    <string name="dejavu_save_page_failed">Kunne ikke gemme denne side. Prøv igen.</string>
 </resources>

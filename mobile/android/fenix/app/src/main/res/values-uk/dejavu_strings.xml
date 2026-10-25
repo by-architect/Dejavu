@@ -478,4 +478,8 @@
     <string name="dejavu_workspace_firefox_limits">Обмеження Firefox Sync</string>
     <string name="dejavu_workspace_firefox_device">Firefox Sync передає лише відкриті вкладки кожного пристрою. Вкладки, які ви відкриваєте чи закриваєте тут, відкриваються чи закриваються й на тому пристрої, але ви не можете закріплювати вкладки, додавати їх до обраного, створювати теки чи вибирати контейнер. Назва та значок беруться з того пристрою, а вибрані вами кольори залишаються на цьому телефоні.</string>
     <string name="dejavu_workspace_firefox_own">Firefox Sync не передає робочі простори, тому цей робочий простір із його закріпленими вкладками й теками залишається на цьому телефоні. Firefox показує його відкриті вкладки як вкладки цього телефона.</string>
+    <string name="dejavu_menu_new_tab">Нова вкладка</string>
+    <string name="dejavu_menu_save_page">Зберегти сторінку</string>
+    <string name="dejavu_save_page_saving">Збереження сторінки…</string>
+    <string name="dejavu_save_page_failed">Не вдалося зберегти цю сторінку. Повторіть спробу.</string>
 </resources>

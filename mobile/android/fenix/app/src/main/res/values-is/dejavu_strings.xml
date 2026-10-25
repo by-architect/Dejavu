@@ -462,4 +462,8 @@
     <string name="dejavu_workspace_firefox_limits">Takmarkað af Firefox Sync</string>
     <string name="dejavu_workspace_firefox_device">Firefox Sync deilir aðeins opnum flipum hvers tækis. Flipar sem þú opnar eða lokar hér opnast eða lokast líka á því tæki, en þú getur hvorki fest flipa, bætt við möppum eða eftirlætum né valið hólf. Heitið og táknmyndin koma frá tækinu og litirnir sem þú velur haldast á þessum síma.</string>
     <string name="dejavu_workspace_firefox_own">Firefox Sync deilir ekki vinnusvæðum, svo þetta vinnusvæði, með festum flipum sínum og möppum, helst á þessum síma. Firefox sýnir opna flipa þess sem flipa þessa síma.</string>
+    <string name="dejavu_menu_new_tab">Nýr flipi</string>
+    <string name="dejavu_menu_save_page">Vista síðu</string>
+    <string name="dejavu_save_page_saving">Vistar síðu…</string>
+    <string name="dejavu_save_page_failed">Ekki tókst að vista þessa síðu. Reyndu aftur.</string>
 </resources>

@@ -494,4 +494,8 @@
     <string name="dejavu_workspace_firefox_limits">قيود Firefox Sync</string>
     <string name="dejavu_workspace_firefox_device">لا يشارك Firefox Sync إلا التبويبات المفتوحة لكل جهاز. التبويبات التي تفتحها أو تغلقها هنا تُفتح أو تُغلق على ذلك الجهاز أيضًا، لكن لا يمكنك تثبيت التبويبات أو إضافة مجلدات أو أساسيات أو اختيار حاوية. يأتي الاسم والأيقونة من الجهاز، وتبقى الألوان التي تختارها على هذا الهاتف.</string>
     <string name="dejavu_workspace_firefox_own">لا يشارك Firefox Sync مساحات العمل، لذا تبقى مساحة العمل هذه، بتبويباتها المثبتة ومجلداتها، على هذا الهاتف. ويعرض Firefox تبويباتها المفتوحة على أنها تبويبات هذا الهاتف.</string>
+    <string name="dejavu_menu_new_tab">تبويب جديد</string>
+    <string name="dejavu_menu_save_page">حفظ الصفحة</string>
+    <string name="dejavu_save_page_saving">جارٍ حفظ الصفحة…</string>
+    <string name="dejavu_save_page_failed">تعذّر حفظ هذه الصفحة. حاول مجددًا.</string>
 </resources>

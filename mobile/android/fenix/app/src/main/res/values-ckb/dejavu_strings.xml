@@ -462,4 +462,8 @@
     <string name="dejavu_workspace_firefox_limits">سنووردارکراو لەلایەن Firefox Sync ەوە</string>
     <string name="dejavu_workspace_firefox_device">Firefox Sync تەنها بازدەرە کراوەکانی هەر ئامێرێک هاوبەش دەکات. ئەو بازدەرانەی لێرە دەیانکەیتەوە یان دایاندەخەیت، لەو ئامێرەشدا دەکرێنەوە یان دادەخرێن، بەڵام ناتوانیت بازدەر بچەسپێنیت، پۆشە یان ماڵپەڕی گرنگ زیاد بکەیت، یان کۆنتەینەرێک هەڵبژێریت. ناو و ئایکۆن لە ئامێرەکەوە دێن، و ئەو ڕەنگانەی هەڵیاندەبژێریت لەسەر ئەم مۆبایلە دەمێننەوە.</string>
     <string name="dejavu_workspace_firefox_own">Firefox Sync فەزاکان هاوبەش ناکات، بۆیە ئەم فەزایە، لەگەڵ بازدەرە چەسپاوەکان و پۆشەکانی، لەسەر ئەم مۆبایلە دەمێنێتەوە. Firefox بازدەرە کراوەکانی وەک بازدەرەکانی ئەم مۆبایلە پیشان دەدات.</string>
+    <string name="dejavu_menu_new_tab">بازدەری نوێ</string>
+    <string name="dejavu_menu_save_page">پەڕەکە پاشەکەوت بکە</string>
+    <string name="dejavu_save_page_saving">پاشەکەوتکردنی پەڕەکە…</string>
+    <string name="dejavu_save_page_failed">نەتوانرا ئەم پەڕەیە پاشەکەوت بکرێت. دووبارە هەوڵ بدەرەوە.</string>
 </resources>

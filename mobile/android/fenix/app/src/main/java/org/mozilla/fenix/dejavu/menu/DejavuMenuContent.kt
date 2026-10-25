@@ -387,6 +387,7 @@ internal fun moreMenuState(
         isReaderable = tab.readerState.readerable,
         isInReaderView = tab.readerState.active,
         isWebPage = url.startsWith("http://") || url.startsWith("https://"),
+        isPdf = tab.content.isPdf,
         isDeviceTab = !tab.content.private &&
             workspaces.isDeviceWorkspace(pin?.workspaceId ?: workspaces.workspaceOf(tab.id)),
         splitWays = SplitSpace.supported(LocalConfiguration.current),
@@ -436,6 +437,15 @@ private class MenuActions(
                 return
             }
             MoreMenuEntry.Home, MoreMenuEntry.Search -> return
+        }
+        if (item == MoreMenuItem.NEW_TAB) {
+            if (closer != null) {
+                closer.close { openNewTab(navController, tab) }
+                return
+            }
+            dismiss()
+            openNewTab(navController, tab)
+            return
         }
         if (commands.run(item, workspaces)) {
             dismiss()

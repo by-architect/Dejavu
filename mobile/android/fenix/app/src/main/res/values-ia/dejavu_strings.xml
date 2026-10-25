@@ -462,4 +462,8 @@
     <string name="dejavu_workspace_firefox_limits">Limitate per Firefox Sync</string>
     <string name="dejavu_workspace_firefox_device">Firefox Sync comparti solmente le schedas aperte de cata apparato. Le schedas que tu aperi o claude hic se aperi o se claude etiam super ille apparato, ma tu non pote fixar schedas, adder dossiers o essentiales, ni eliger un recipiente. Le nomine e le icone veni del apparato, e le colores que tu elige resta super iste telephono.</string>
     <string name="dejavu_workspace_firefox_own">Firefox Sync non comparti le spatios de labor, dunque iste spatio de labor, con su schedas fixate e su dossiers, resta super iste telephono. Firefox monstra su schedas aperte como schedas de iste telephono.</string>
+    <string name="dejavu_menu_new_tab">Nove scheda</string>
+    <string name="dejavu_menu_save_page">Salvar le pagina</string>
+    <string name="dejavu_save_page_saving">Salvante le pagina…</string>
+    <string name="dejavu_save_page_failed">Impossibile salvar iste pagina. Retenta.</string>
 </resources>

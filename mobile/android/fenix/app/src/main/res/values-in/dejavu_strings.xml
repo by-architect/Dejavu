@@ -454,4 +454,8 @@
     <string name="dejavu_workspace_firefox_limits">Dibatasi oleh Firefox Sync</string>
     <string name="dejavu_workspace_firefox_device">Firefox Sync hanya membagikan tab terbuka dari setiap perangkat. Tab yang Anda buka atau tutup di sini juga terbuka atau tertutup di perangkat tersebut, tetapi Anda tidak dapat menyematkan tab, menambahkan folder atau situs penting, maupun memilih wadah. Nama dan ikon berasal dari perangkat tersebut, dan warna yang Anda pilih tetap ada di ponsel ini.</string>
     <string name="dejavu_workspace_firefox_own">Firefox Sync tidak membagikan ruang kerja, jadi ruang kerja ini, beserta tab yang disemat dan foldernya, tetap ada di ponsel ini. Firefox menampilkan tab terbukanya sebagai tab ponsel ini.</string>
+    <string name="dejavu_menu_new_tab">Tab baru</string>
+    <string name="dejavu_menu_save_page">Simpan laman</string>
+    <string name="dejavu_save_page_saving">Menyimpan laman…</string>
+    <string name="dejavu_save_page_failed">Tidak dapat menyimpan laman ini. Coba lagi.</string>
 </resources>

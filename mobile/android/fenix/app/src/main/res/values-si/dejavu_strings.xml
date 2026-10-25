@@ -462,4 +462,8 @@
     <string name="dejavu_workspace_firefox_limits">Firefox Sync මගින් සීමා කර ඇත</string>
     <string name="dejavu_workspace_firefox_device">Firefox Sync එක් එක් උපාංගයේ විවෘත පටිති පමණක් බෙදා ගනී. ඔබ මෙහි විවෘත කරන හෝ වසන පටිති එම උපාංගයේ ද විවෘත වේ හෝ වැසේ, නමුත් ඔබට පටිති ඇමිණීමට, ෆෝල්ඩර හෝ අත්‍යවශ්‍යයන් එකතු කිරීමට, හෝ බහාලුමක් තෝරා ගැනීමට නොහැක. නම සහ අයිකනය උපාංගයෙන් පැමිණෙන අතර, ඔබ තෝරන වර්ණ මෙම දුරකථනයේම පවතී.</string>
     <string name="dejavu_workspace_firefox_own">Firefox Sync අවකාශ බෙදා නොගනී, එබැවින් මෙම අවකාශය, එහි අමුණන ලද පටිති සහ ෆෝල්ඩර සමඟ, මෙම දුරකථනයේම පවතී. Firefox එහි විවෘත පටිති මෙම දුරකථනයේ පටිති ලෙස පෙන්වයි.</string>
+    <string name="dejavu_menu_new_tab">නව පටිත්ත</string>
+    <string name="dejavu_menu_save_page">පිටුව සුරකින්න</string>
+    <string name="dejavu_save_page_saving">පිටුව සුරකිමින්…</string>
+    <string name="dejavu_save_page_failed">මෙම පිටුව සුරැකීමට නොහැකි විය. නැවත උත්සාහ කරන්න.</string>
 </resources>

@@ -454,4 +454,8 @@
     <string name="dejavu_workspace_firefox_limits">Firefox Sync li lili e ken</string>
     <string name="dejavu_workspace_firefox_device">Firefox Sync li pana e poki open taso pi ilo wan wan. sina open anu pini e poki lon ni la, ona li open anu pini lon ilo ona kin. taso sina ken ala awen e poki, li ken ala pana e tomo poki anu lipu suli, li ken ala wile e leko. nimi en sitelen lili li kama tan ilo ona. kule pi sina wile li awen lon ilo kalama ni taso.</string>
     <string name="dejavu_workspace_firefox_own">Firefox Sync li pana ala e kulupu poki. tan ni la, kulupu poki ni en poki awen ona en tomo poki ona li awen lon ilo kalama ni taso. ilo Firefox li pana lukin e poki open ona sama poki pi ilo kalama ni.</string>
+    <string name="dejavu_menu_new_tab">poki sin</string>
+    <string name="dejavu_menu_save_page">o awen e lipu lon ilo ni</string>
+    <string name="dejavu_save_page_saving">mi awen e lipu…</string>
+    <string name="dejavu_save_page_failed">pakala la mi ken ala awen e lipu ni. o sin.</string>
 </resources>

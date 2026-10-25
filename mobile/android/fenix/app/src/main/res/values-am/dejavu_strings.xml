@@ -462,4 +462,8 @@
     <string name="dejavu_workspace_firefox_limits">በFirefox Sync የተገደበ</string>
     <string name="dejavu_workspace_firefox_device">Firefox Sync የሚያጋራው የእያንዳንዱን መሣሪያ ክፍት ትሮች ብቻ ነው። እዚህ የሚከፍቷቸው ወይም የሚዘጓቸው ትሮች በዚያ መሣሪያ ላይም ይከፈታሉ ወይም ይዘጋሉ፣ ነገር ግን ትሮችን መሰካት፣ አቃፊዎችን ወይም አስፈላጊዎችን ማከል ወይም መያዣ መምረጥ አይችሉም። ስሙ እና አዶው ከመሣሪያው ይመጣሉ፣ የሚመርጧቸው ቀለሞች ደግሞ በዚህ ስልክ ላይ ይቆያሉ።</string>
     <string name="dejavu_workspace_firefox_own">Firefox Sync የስራ ቦታዎችን አያጋራም፣ ስለዚህ ይህ የስራ ቦታ ከተሰኩ ትሮቹ እና አቃፊዎቹ ጋር በዚህ ስልክ ላይ ይቆያል። Firefox ክፍት ትሮቹን እንደዚህ ስልክ ትሮች ያሳያል።</string>
+    <string name="dejavu_menu_new_tab">አዲስ ትር</string>
+    <string name="dejavu_menu_save_page">ገጽ አስቀምጥ</string>
+    <string name="dejavu_save_page_saving">ገጹን በማስቀመጥ ላይ…</string>
+    <string name="dejavu_save_page_failed">ይህን ገጽ ማስቀመጥ አልተቻለም። እንደገና ይሞክሩ።</string>
 </resources>

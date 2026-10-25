@@ -470,4 +470,8 @@
     <string name="dejavu_workspace_firefox_limits">Limitado pelo Firefox Sync</string>
     <string name="dejavu_workspace_firefox_device">O Firefox Sync só compartilha as abas abertas de cada dispositivo. As abas que você abre ou fecha aqui também abrem ou fecham nesse dispositivo, mas você não pode fixar abas, adicionar pastas ou essenciais, nem escolher um contêiner. O nome e o ícone vêm do dispositivo, e as cores que você escolher ficam neste celular.</string>
     <string name="dejavu_workspace_firefox_own">O Firefox Sync não compartilha espaços de trabalho, então este espaço de trabalho, com as abas fixadas e pastas dele, fica neste celular. O Firefox mostra as abas abertas dele como abas deste celular.</string>
+    <string name="dejavu_menu_new_tab">Nova aba</string>
+    <string name="dejavu_menu_save_page">Salvar página</string>
+    <string name="dejavu_save_page_saving">Salvando página…</string>
+    <string name="dejavu_save_page_failed">Não foi possível salvar esta página. Tente novamente.</string>
 </resources>

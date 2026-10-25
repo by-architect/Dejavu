@@ -462,4 +462,8 @@
     <string name="dejavu_workspace_firefox_limits">Firefox Sync-ის შეზღუდვები</string>
     <string name="dejavu_workspace_firefox_device">Firefox Sync თითოეული მოწყობილობის მხოლოდ გახსნილ ჩანართებს აზიარებს. აქ გახსნილი ან დახურული ჩანართები იმ მოწყობილობაზეც იხსნება ან იხურება, მაგრამ ვერ შეძლებთ ჩანართების მიმაგრებას, საქაღალდეების ან საჭირო საიტების დამატებას, ან კონტეინერის არჩევას. სახელი და ხატულა მოწყობილობიდან მოდის, ხოლო თქვენ მიერ არჩეული ფერები ამ ტელეფონზე რჩება.</string>
     <string name="dejavu_workspace_firefox_own">Firefox Sync სივრცეებს არ აზიარებს, ამიტომ ეს სივრცე, თავისი მიმაგრებული ჩანართებითა და საქაღალდეებით, ამ ტელეფონზე რჩება. Firefox მის გახსნილ ჩანართებს ამ ტელეფონის ჩანართებად აჩვენებს.</string>
+    <string name="dejavu_menu_new_tab">ახალი ჩანართი</string>
+    <string name="dejavu_menu_save_page">გვერდის შენახვა</string>
+    <string name="dejavu_save_page_saving">გვერდი ინახება…</string>
+    <string name="dejavu_save_page_failed">ამ გვერდის შენახვა ვერ მოხერხდა. სცადეთ ხელახლა.</string>
 </resources>

@@ -462,4 +462,8 @@
     <string name="dejavu_workspace_firefox_limits">Firefox Sync tərəfindən məhdudlaşdırılıb</string>
     <string name="dejavu_workspace_firefox_device">Firefox Sync hər cihazın yalnız açıq vərəqlərini paylaşır. Burada açdığınız və ya bağladığınız vərəqlər həmin cihazda da açılır və ya bağlanır, amma vərəqləri bərkidə, qovluq və ya əsas əlavə edə, yaxud konteyner seçə bilməzsiniz. Adı və ikonu cihazdan gəlir, seçdiyiniz rənglər isə bu telefonda qalır.</string>
     <string name="dejavu_workspace_firefox_own">Firefox Sync iş sahələrini paylaşmır, buna görə də bu iş sahəsi bərkidilmiş vərəqləri və qovluqları ilə birlikdə bu telefonda qalır. Firefox bu iş sahəsinin açıq vərəqlərini bu telefonun vərəqləri kimi göstərir.</string>
+    <string name="dejavu_menu_new_tab">Yeni vərəq</string>
+    <string name="dejavu_menu_save_page">Səhifəni saxla</string>
+    <string name="dejavu_save_page_saving">Səhifə saxlanılır…</string>
+    <string name="dejavu_save_page_failed">Bu səhifəni saxlamaq mümkün olmadı. Yenidən cəhd edin.</string>
 </resources>

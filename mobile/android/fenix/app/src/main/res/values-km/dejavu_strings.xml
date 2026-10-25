@@ -454,4 +454,8 @@
     <string name="dejavu_workspace_firefox_limits">មានកម្រិតដោយ Firefox Sync</string>
     <string name="dejavu_workspace_firefox_device">Firefox Sync ចែករំលែកតែផ្ទាំងដែលបើករបស់ឧបករណ៍នីមួយៗប៉ុណ្ណោះ។ ផ្ទាំងដែលអ្នកបើក ឬបិទនៅទីនេះ ក៏បើក ឬបិទនៅលើឧបករណ៍នោះផងដែរ ប៉ុន្តែអ្នកមិនអាចខ្ទាស់ផ្ទាំង បន្ថែមថត ឬសំខាន់ៗ ឬជ្រើសរើសកុងតឺន័របានទេ។ ឈ្មោះ និងរូបតំណាងមកពីឧបករណ៍នោះ ហើយពណ៌ដែលអ្នកជ្រើសរើសនៅតែលើទូរស័ព្ទនេះ។</string>
     <string name="dejavu_workspace_firefox_own">Firefox Sync មិនចែករំលែកចន្លោះការងារទេ ដូច្នេះចន្លោះការងារនេះ រួមទាំងផ្ទាំងបានខ្ទាស់ និងថតរបស់វា នៅតែលើទូរស័ព្ទនេះ។ Firefox បង្ហាញផ្ទាំងដែលបើករបស់ចន្លោះការងារនេះជាផ្ទាំងរបស់ទូរស័ព្ទនេះ។</string>
+    <string name="dejavu_menu_new_tab">ផ្ទាំងថ្មី</string>
+    <string name="dejavu_menu_save_page">រក្សាទុកទំព័រ</string>
+    <string name="dejavu_save_page_saving">កំពុងរក្សាទុកទំព័រ…</string>
+    <string name="dejavu_save_page_failed">មិនអាចរក្សាទុកទំព័រនេះបានទេ។ សូមព្យាយាមម្ដងទៀត។</string>
 </resources>

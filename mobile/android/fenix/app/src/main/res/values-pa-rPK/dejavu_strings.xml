@@ -462,4 +462,8 @@
     <string name="dejavu_workspace_firefox_limits">Firefox Sync دیاں حداں</string>
     <string name="dejavu_workspace_firefox_device">Firefox Sync ہر ڈیوائس دیاں صرف کھلیاں ٹیباں سانجھیاں کردا اے۔ جیہڑیاں ٹیباں تسیں ایتھے کھولدے یا بند کردے او اوہ اوس ڈیوائس تے وی کھل یا بند ہو جاندیاں نيں، پر تسیں ٹیباں پن نہیں کر سکدے، فولڈر یا ضروری چیزاں شامل نہیں کر سکدے، تے نہ ای کنٹینر چُݨ سکدے او۔ ناں تے آئیکن ڈیوائس توں آندے نيں، تے جیہڑے رنگ تسیں چُݨدے او اوہ ایس فون تے ای رہندے نيں۔</string>
     <string name="dejavu_workspace_firefox_own">Firefox Sync ورک سپیساں سانجھیاں نہیں کردا، ایس لئی ایہہ ورک سپیس، اپݨیاں پن کیتیاں ٹیباں تے فولڈراں سمیت، ایس فون تے ای رہندی اے۔ Firefox ایہدیاں کھلیاں ٹیباں نوں ایس فون دیاں ٹیباں وجوں ڈکھاندا اے۔</string>
+    <string name="dejavu_menu_new_tab">نویں ٹیب کھولھو</string>
+    <string name="dejavu_menu_save_page">صفحہ سیو کرو</string>
+    <string name="dejavu_save_page_saving">صفحہ سیو ہو رہیا اے…</string>
+    <string name="dejavu_save_page_failed">ایہہ صفحہ سیو نہیں کیتا جا سکیا۔ دوبارہ کوشش کرو۔</string>
 </resources>

@@ -462,4 +462,8 @@
     <string name="dejavu_workspace_firefox_limits">Firefox Synci piirangud</string>
     <string name="dejavu_workspace_firefox_device">Firefox Sync jagab ainult iga seadme avatud kaarte. Kaardid, mille siin avad või suled, avanevad või sulguvad ka selles seadmes, kuid sa ei saa kaarte kinnitada, kaustu ega olulisi lisada ega konteinerit valida. Nimi ja ikoon tulevad seadmelt ning su valitud värvid jäävad sellesse telefoni.</string>
     <string name="dejavu_workspace_firefox_own">Firefox Sync ei jaga tööruume, seega jääb see tööruum koos oma kinnitatud kaartide ja kaustadega sellesse telefoni. Firefox näitab selle avatud kaarte selle telefoni kaartidena.</string>
+    <string name="dejavu_menu_new_tab">Uus kaart</string>
+    <string name="dejavu_menu_save_page">Salvesta leht</string>
+    <string name="dejavu_save_page_saving">Lehe salvestamine…</string>
+    <string name="dejavu_save_page_failed">Selle lehe salvestamine ebaõnnestus. Proovi uuesti.</string>
 </resources>

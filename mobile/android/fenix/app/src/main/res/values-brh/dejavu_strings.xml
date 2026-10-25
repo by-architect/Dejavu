@@ -462,4 +462,8 @@
     <string name="dejavu_workspace_firefox_limits">Firefox Sync نا حداک</string>
     <string name="dejavu_workspace_firefox_device">Firefox Sync تنہا ہر ڈیوائس نا ملوکا ٹیباک بشخ کن۔ نی ادا مل کنا یا بند کنا ٹیباک اود بی مل ہن یا بند ہن، لیکن نی ٹیب پن کننگ، فولڈر یا ضروری چیز شامل کننگ، یا کنٹینر چُننگ کپیس۔ ناں او آئیکن او ڈیوائس ٹی ہن، او نی چُنتین رنگاک اے فون پار رہ ہن۔</string>
     <string name="dejavu_workspace_firefox_own">Firefox Sync ورک سپیساک بشخ نی کن، اندا خاطر اے ورک سپیس اپنا پن ٹیباک او فولڈراک سمیت اے فون پار رہ ہس۔ Firefox اے ورک سپیس نا ملوکا ٹیباک اے فون نا ٹیباک طور دکھ ہن۔</string>
+    <string name="dejavu_menu_new_tab">پوسکنو ٹیب اس</string>
+    <string name="dejavu_menu_save_page">صفحہ سیو کبو</string>
+    <string name="dejavu_save_page_saving">صفحہ سیو ہننا…</string>
+    <string name="dejavu_save_page_failed">دا صفحہ سیو نی ہتین۔ دوبارہ کوشش کبو۔</string>
 </resources>

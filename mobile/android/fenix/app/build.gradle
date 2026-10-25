@@ -485,6 +485,27 @@ if (file('proprietary.gradle').exists()) {
     android.sourceSets.main.kotlin.srcDirs += 'src/foss/java'
 }
 
+// Dejavu: the built-in extension that saves pages takes its version from a checksum of its files, so the engine
+// replaces the copy it installed whenever they change, also between builds of the same Firefox.
+tasks.register("updateBuiltInExtensionVersion", Copy) { task ->
+    def folder = file('src/main/assets/extensions/dejavu-save-page')
+    def sources = fileTree(folder) { exclude 'manifest.json' }
+    task.inputs.files(sources)
+    task.from(folder) { include 'manifest.template.json' }
+    task.rename { 'manifest.json' }
+    task.into(folder)
+    task.filter { String line ->
+        if (!line.contains('${version}')) return line
+        def checksum = new java.util.zip.CRC32()
+        sources.files.sort { it.name }.each { checksum.update(it.bytes) }
+        line.replace('${version}', "1.0.${checksum.value.intdiv(100000)}.${checksum.value % 100000}")
+    }
+}
+preBuild.dependsOn updateBuiltInExtensionVersion
+tasks.matching { it.name.startsWith("explodeAssetSource") }.configureEach { t ->
+    t.dependsOn(tasks.named("updateBuiltInExtensionVersion"))
+}
+
 dependencies {
     implementation project('longfox')
     implementation project(':components:browser-engine-gecko')

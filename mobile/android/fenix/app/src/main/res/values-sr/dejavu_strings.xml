@@ -470,4 +470,8 @@
     <string name="dejavu_workspace_firefox_limits">Ограничења Firefox Sync-а</string>
     <string name="dejavu_workspace_firefox_device">Firefox Sync дели само отворене језичке сваког уређаја. Језичци које отворите или затворите овде отварају се или затварају и на том уређају, али не можете да закачите језичке, додате фасцикле или Фаворите, нити да изаберете контејнер. Назив и икона долазе са уређаја, а боје које изаберете остају на овом телефону.</string>
     <string name="dejavu_workspace_firefox_own">Firefox Sync не дели радне просторе, па овај радни простор, са својим закаченим језичцима и фасциклама, остаје на овом телефону. Firefox приказује његове отворене језичке као језичке овог телефона.</string>
+    <string name="dejavu_menu_new_tab">Нови језичак</string>
+    <string name="dejavu_menu_save_page">Сачувај страницу</string>
+    <string name="dejavu_save_page_saving">Чување странице…</string>
+    <string name="dejavu_save_page_failed">Нисмо могли да сачувамо ову страницу. Покушајте поново.</string>
 </resources>

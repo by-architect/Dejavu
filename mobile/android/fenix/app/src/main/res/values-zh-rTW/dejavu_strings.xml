@@ -454,4 +454,8 @@
     <string name="dejavu_workspace_firefox_limits">受 Firefox Sync 限制</string>
     <string name="dejavu_workspace_firefox_device">Firefox Sync 只會同步每部裝置上開啟的分頁。您在此開啟或關閉的分頁，也會在該裝置上開啟或關閉，但您無法釘選分頁、新增資料夾或常用網站，也無法選擇容器。名稱和圖示來自該裝置，您選擇的顏色會留在這支手機上。</string>
     <string name="dejavu_workspace_firefox_own">Firefox Sync 不會同步工作區，因此此工作區及其已釘選分頁與資料夾都會留在這支手機上。Firefox 會將此工作區中開啟的分頁顯示為這支手機的分頁。</string>
+    <string name="dejavu_menu_new_tab">開新分頁</string>
+    <string name="dejavu_menu_save_page">儲存頁面</string>
+    <string name="dejavu_save_page_saving">正在儲存頁面…</string>
+    <string name="dejavu_save_page_failed">無法儲存此頁面，請重試。</string>
 </resources>

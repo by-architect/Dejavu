@@ -462,4 +462,8 @@
     <string name="dejavu_workspace_firefox_limits">Firefox Sync nedeniyle sınırlı</string>
     <string name="dejavu_workspace_firefox_device">Firefox Sync her cihazın yalnızca açık sekmelerini paylaşır. Burada açtığınız veya kapattığınız sekmeler o cihazda da açılır veya kapanır, ancak sekme sabitleyemez, klasör veya temel sekme ekleyemez ya da kapsayıcı seçemezsiniz. Adı ve simgesi cihazdan gelir; seçtiğiniz renkler bu telefonda kalır.</string>
     <string name="dejavu_workspace_firefox_own">Firefox Sync çalışma alanlarını paylaşmaz, bu yüzden bu çalışma alanı sabitlenmiş sekmeleri ve klasörleriyle birlikte bu telefonda kalır. Firefox, açık sekmelerini bu telefonun sekmeleri olarak gösterir.</string>
+    <string name="dejavu_menu_new_tab">Yeni sekme</string>
+    <string name="dejavu_menu_save_page">Sayfayı kaydet</string>
+    <string name="dejavu_save_page_saving">Sayfa kaydediliyor…</string>
+    <string name="dejavu_save_page_failed">Bu sayfa kaydedilemedi. Yeniden deneyin.</string>
 </resources>

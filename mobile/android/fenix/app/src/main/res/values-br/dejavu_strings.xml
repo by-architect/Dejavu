@@ -486,4 +486,8 @@
     <string name="dejavu_workspace_firefox_limits">Bevennet gant Firefox Sync</string>
     <string name="dejavu_workspace_firefox_device">Firefox Sync ne rann nemet ivinelloù digor pep trevnad. An ivinelloù a zigorit pe a serrit amañ a zigor pe a serr war an trevnad-se ivez, met ne c’hallit ket spilhennañ ivinelloù, ouzhpennañ teuliadoù na traoù pouezus, na dibab ur c’hontener. An anv hag an arlun a zeu eus an trevnad, hag al livioù a zibabit a chom war ar pellgomzer-mañ.</string>
     <string name="dejavu_workspace_firefox_own">Firefox Sync ne rann ket an egorioù labour, setu e chom an egor labour-mañ, gant e ivinelloù spilhennet hag e deuliadoù, war ar pellgomzer-mañ. Firefox a ziskouez e ivinelloù digor evel ivinelloù ar pellgomzer-mañ.</string>
+    <string name="dejavu_menu_new_tab">Ivinell nevez</string>
+    <string name="dejavu_menu_save_page">Enrollañ ar bajenn</string>
+    <string name="dejavu_save_page_saving">Oc’h enrollañ ar bajenn…</string>
+    <string name="dejavu_save_page_failed">N’haller ket enrollañ ar bajenn-mañ. Klaskit en-dro.</string>
 </resources>

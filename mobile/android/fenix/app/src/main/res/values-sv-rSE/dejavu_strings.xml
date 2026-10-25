@@ -462,4 +462,8 @@
     <string name="dejavu_workspace_firefox_limits">Begränsas av Firefox Sync</string>
     <string name="dejavu_workspace_firefox_device">Firefox Sync delar bara de öppna flikarna på varje enhet. Flikar du öppnar eller stänger här öppnas eller stängs även på den enheten, men du kan inte fästa flikar, lägga till mappar eller favoriter, eller välja en behållare. Namnet och ikonen kommer från enheten, och färgerna du väljer stannar på den här telefonen.</string>
     <string name="dejavu_workspace_firefox_own">Firefox Sync delar inte arbetsytor, så den här arbetsytan, med sina fästa flikar och mappar, stannar på den här telefonen. Firefox visar dess öppna flikar som den här telefonens flikar.</string>
+    <string name="dejavu_menu_new_tab">Ny flik</string>
+    <string name="dejavu_menu_save_page">Spara sida</string>
+    <string name="dejavu_save_page_saving">Sparar sidan …</string>
+    <string name="dejavu_save_page_failed">Det gick inte att spara den här sidan. Försök igen.</string>
 </resources>

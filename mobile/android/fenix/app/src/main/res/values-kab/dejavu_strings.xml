@@ -462,4 +462,8 @@
     <string name="dejavu_workspace_firefox_limits">Tilisa n Firefox Sync</string>
     <string name="dejavu_workspace_firefox_device">Firefox Sync yettbeṭṭu kan iccaren yeldin n yal ibenk. Iccaren i teldiḍ neɣ i tmedleḍ da ttildin neɣ ttwamdalen daɣen ɣef yibenk-nni, maca ur tezmireḍ ara ad tserseḍ iccaren, ad ternuḍ ikuramen neɣ ayen ilaqen, neɣ ad tferneḍ asenduq. Isem d tugna kkan-d seg yibenk, yerna initen i tferneḍ ad qqimen ɣef tiliɣri-agi.</string>
     <string name="dejavu_workspace_firefox_own">Firefox Sync ur yettbeṭṭu ara imukan n umahil, ihi amkan-agi n umahil, s yiccaren-is yessersen d yikuramen-is, ad yeqqim ɣef tiliɣri-agi. Firefox yesskan-d iccaren-is yeldin d iccaren n tiliɣri-agi.</string>
+    <string name="dejavu_menu_new_tab">Iccer amaynut</string>
+    <string name="dejavu_menu_save_page">Sekles asebter</string>
+    <string name="dejavu_save_page_saving">Asekles n usebter…</string>
+    <string name="dejavu_save_page_failed">Yegguma ad yettwasekles usebter-a. Ɛreḍ tikkelt-nniḍen.</string>
 </resources>

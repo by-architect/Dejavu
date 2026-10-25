@@ -462,4 +462,8 @@
     <string name="dejavu_workspace_firefox_limits">Kufizime nga Firefox Sync</string>
     <string name="dejavu_workspace_firefox_device">Firefox Sync njëkohëson vetëm skedat e hapura të çdo pajisjeje. Skedat që hapni ose mbyllni këtu hapen ose mbyllen edhe në atë pajisje, por s\'mund të fiksoni skeda, të shtoni dosje apo thelbësore, ose të zgjidhni një kontejner. Emri dhe ikona vijnë nga pajisja, ndërsa ngjyrat që zgjidhni mbeten në këtë telefon.</string>
     <string name="dejavu_workspace_firefox_own">Firefox Sync s\'njëkohëson hapësira pune, ndaj kjo hapësirë pune, me skedat e saj të fiksuara dhe dosjet, mbetet në këtë telefon. Firefox-i i shfaq skedat e saj të hapura si skeda të këtij telefoni.</string>
+    <string name="dejavu_menu_new_tab">Skedë e re</string>
+    <string name="dejavu_menu_save_page">Ruaje faqen</string>
+    <string name="dejavu_save_page_saving">Po ruhet faqja…</string>
+    <string name="dejavu_save_page_failed">S\'u ruajt dot kjo faqe. Riprovoni.</string>
 </resources>

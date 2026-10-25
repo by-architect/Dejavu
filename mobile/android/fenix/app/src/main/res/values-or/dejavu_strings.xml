@@ -462,4 +462,8 @@
     <string name="dejavu_workspace_firefox_limits">Firefox Sync ଦ୍ୱାରା ସୀମିତ</string>
     <string name="dejavu_workspace_firefox_device">Firefox Sync କେବଳ ପ୍ରତ୍ୟେକ ଡିଭାଇସର ଖୋଲା ଟ୍ୟାବ୍ ସେୟାର କରେ। ଆପଣ ଏଠାରେ ଖୋଲୁଥିବା କିମ୍ବା ବନ୍ଦ କରୁଥିବା ଟ୍ୟାବ୍ ସେହି ଡିଭାଇସରେ ମଧ୍ୟ ଖୋଲେ କିମ୍ବା ବନ୍ଦ ହୁଏ, କିନ୍ତୁ ଆପଣ ଟ୍ୟାବ୍ ପିନ୍ କରିପାରିବେ ନାହିଁ, ଫୋଲଡର କିମ୍ବା ଆବଶ୍ୟକୀୟ ଯୋଡିପାରିବେ ନାହିଁ, କିମ୍ବା କଣ୍ଟେନର ବାଛିପାରିବେ ନାହିଁ। ନାମ ଏବଂ ଆଇକନ୍ ଡିଭାଇସରୁ ଆସେ, ଏବଂ ଆପଣ ବାଛୁଥିବା ରଙ୍ଗ ଏହି ଫୋନ୍‌ରେ ରହେ।</string>
     <string name="dejavu_workspace_firefox_own">Firefox Sync କାର୍ଯ୍ୟକ୍ଷେତ୍ର ସେୟାର କରେ ନାହିଁ, ତେଣୁ ଏହି କାର୍ଯ୍ୟକ୍ଷେତ୍ର ଏହାର ପିନ୍ ଟ୍ୟାବ୍ ଏବଂ ଫୋଲଡର ସହିତ ଏହି ଫୋନ୍‌ରେ ରହେ। Firefox ଏହାର ଖୋଲା ଟ୍ୟାବ୍‌କୁ ଏହି ଫୋନ୍‌ର ଟ୍ୟାବ୍ ଭାବେ ଦେଖାଏ।</string>
+    <string name="dejavu_menu_new_tab">ନୂଆ ଟ୍ୟାବ୍</string>
+    <string name="dejavu_menu_save_page">ପୃଷ୍ଠା ସେଭ୍ କରନ୍ତୁ</string>
+    <string name="dejavu_save_page_saving">ପୃଷ୍ଠା ସେଭ୍ ହେଉଛି…</string>
+    <string name="dejavu_save_page_failed">ଏହି ପୃଷ୍ଠା ସେଭ୍ କରିହେଲା ନାହିଁ। ପୁଣି ଚେଷ୍ଟା କରନ୍ତୁ।</string>
 </resources>

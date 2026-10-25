@@ -6,6 +6,7 @@ package org.mozilla.fenix.dejavu.menu
 
 import android.content.Context
 import android.widget.Toast
+import androidx.navigation.NavController
 import java.text.SimpleDateFormat
 import java.util.Date
 import java.util.Locale
@@ -13,13 +14,16 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import mozilla.components.browser.state.action.TabListAction
 import mozilla.components.browser.state.state.TabSessionState
+import org.mozilla.fenix.NavGraphDirections
 import org.mozilla.fenix.R
 import org.mozilla.fenix.components.Components
 import org.mozilla.fenix.components.appstate.AppAction.ReaderViewAction.ReaderViewDismissed
 import org.mozilla.fenix.components.appstate.AppAction.ReaderViewAction.ReaderViewStarted
+import org.mozilla.fenix.dejavu.NewTabContainerChoice
 import org.mozilla.fenix.dejavu.actions.ActionContext
 import org.mozilla.fenix.dejavu.actions.CustomAction
 import org.mozilla.fenix.dejavu.actions.CustomActionRunner
+import org.mozilla.fenix.dejavu.browser.SavePage
 import org.mozilla.fenix.dejavu.containers.DejavuContainerStorage
 import org.mozilla.fenix.dejavu.home.folderPathOf
 import org.mozilla.fenix.dejavu.settings.DejavuSettings
@@ -48,6 +52,7 @@ internal class DejavuTabCommands(
     fun run(item: MoreMenuItem, workspaces: WorkspaceState): Boolean {
         val pin = workspaces.pinOf(tab.id)
         when (item) {
+            MoreMenuItem.SAVE_PAGE -> SavePage.save(appContext, tab)
             MoreMenuItem.SAVE_AS_PDF -> sessionUseCases.saveToPdf(tab.id)
             MoreMenuItem.PRINT -> sessionUseCases.printContent(tab.id)
             MoreMenuItem.PIN_TAB ->
@@ -118,4 +123,13 @@ internal class DejavuTabCommands(
     private companion object {
         const val ISO_DATE_PATTERN = "yyyy-MM-dd'T'HH:mm:ssXXX"
     }
+}
+
+/**
+ * Opens the home screen with the address bar ready for a new tab, which is private when [tab], the shown tab, is:
+ * what the user enters there opens in the new tab.
+ */
+internal fun openNewTab(navController: NavController, tab: TabSessionState) {
+    if (tab.content.private) NewTabContainerChoice.setPrivate() else NewTabContainerChoice.clear()
+    navController.navigate(NavGraphDirections.actionGlobalHome(focusOnAddressBar = true))
 }

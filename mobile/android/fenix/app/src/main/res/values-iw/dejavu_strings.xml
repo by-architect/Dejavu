@@ -470,4 +470,8 @@
     <string name="dejavu_workspace_firefox_limits">המגבלות של Firefox Sync</string>
     <string name="dejavu_workspace_firefox_device">שירות Firefox Sync משתף רק את הלשוניות הפתוחות של כל מכשיר. לשוניות שאתם פותחים או סוגרים כאן נפתחות או נסגרות גם באותו מכשיר, אבל אי אפשר להצמיד לשוניות, להוסיף תיקיות או מועדפים, או לבחור מארז. השם והסמל מגיעים מהמכשיר, והצבעים שתבחרו נשארים בטלפון הזה.</string>
     <string name="dejavu_workspace_firefox_own">שירות Firefox Sync לא משתף מרחבי עבודה, ולכן מרחב העבודה הזה, עם הלשוניות המוצמדות והתיקיות שלו, נשאר בטלפון הזה. Firefox מציג את הלשוניות הפתוחות שלו כלשוניות של הטלפון הזה.</string>
+    <string name="dejavu_menu_new_tab">לשונית חדשה</string>
+    <string name="dejavu_menu_save_page">שמירת הדף</string>
+    <string name="dejavu_save_page_saving">שומר את הדף…</string>
+    <string name="dejavu_save_page_failed">לא ניתן היה לשמור את הדף הזה. נא לנסות שוב.</string>
 </resources>

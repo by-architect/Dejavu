@@ -462,4 +462,8 @@
     <string name="dejavu_workspace_firefox_limits">Limitado ng Firefox Sync</string>
     <string name="dejavu_workspace_firefox_device">Ang mga nakabukas na tab lang ng bawat device ang ibinabahagi ng Firefox Sync. Ang mga tab na binubuksan o isinasara mo rito ay bumubukas o nagsasara rin sa device na iyon, pero hindi ka puwedeng mag-pin ng mga tab, magdagdag ng mga folder o Mahahalaga, o pumili ng container. Galing sa device ang pangalan at icon, at mananatili sa teleponong ito ang mga kulay na pinili mo.</string>
     <string name="dejavu_workspace_firefox_own">Hindi ibinabahagi ng Firefox Sync ang mga workspace, kaya mananatili sa teleponong ito ang workspace na ito, kasama ang mga naka-pin na tab at folder nito. Ipinapakita ng Firefox ang mga nakabukas na tab nito bilang mga tab ng teleponong ito.</string>
+    <string name="dejavu_menu_new_tab">Bagong tab</string>
+    <string name="dejavu_menu_save_page">I-save ang pahina</string>
+    <string name="dejavu_save_page_saving">Sine-save ang pahina…</string>
+    <string name="dejavu_save_page_failed">Hindi ma-save ang pahinang ito. Subukan ulit.</string>
 </resources>

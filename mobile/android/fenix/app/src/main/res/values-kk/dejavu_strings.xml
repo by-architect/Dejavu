@@ -462,4 +462,8 @@
     <string name="dejavu_workspace_firefox_limits">Firefox Sync шектеулері</string>
     <string name="dejavu_workspace_firefox_device">Firefox Sync әр құрылғының тек ашық беттерін ғана бөліседі. Мұнда ашқан немесе жапқан беттеріңіз сол құрылғыда да ашылады немесе жабылады, бірақ беттерді бекіту, қалталар не негізгілер қосу немесе контейнер таңдау мүмкін емес. Атауы мен белгішесі құрылғыдан алынады, ал сіз таңдаған түстер осы телефонда қалады.</string>
     <string name="dejavu_workspace_firefox_own">Firefox Sync жұмыс кеңістіктерін бөліспейді, сондықтан бұл жұмыс кеңістігі өзінің бекітілген беттері мен қалталарымен бірге осы телефонда қалады. Firefox оның ашық беттерін осы телефонның беттері ретінде көрсетеді.</string>
+    <string name="dejavu_menu_new_tab">Жаңа бет</string>
+    <string name="dejavu_menu_save_page">Парақты сақтау</string>
+    <string name="dejavu_save_page_saving">Парақ сақталуда…</string>
+    <string name="dejavu_save_page_failed">Бұл парақты сақтау мүмкін болмады. Қайталап көріңіз.</string>
 </resources>

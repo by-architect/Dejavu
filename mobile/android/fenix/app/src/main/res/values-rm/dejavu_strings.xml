@@ -462,4 +462,8 @@
     <string name="dejavu_workspace_firefox_limits">Limitaziuns da Firefox Sync</string>
     <string name="dejavu_workspace_firefox_device">Firefox Sync cundivida mo ils tabs averts da mintga apparat. Tabs che ti avras u serras qua vegnan er averts u serrads sin quel apparat, ma ti na pos betg fixar tabs, agiuntar dossiers u essenzials ni tscherner in container. Il num e l’icona vegnan da l’apparat, e las colurs che ti tschernas restan sin quest telefon.</string>
     <string name="dejavu_workspace_firefox_own">Firefox Sync na cundivida betg ils spazis da lavur, perquai resta quest spazi da lavur, cun ses tabs fixads e dossiers, sin quest telefon. Firefox mussa ses tabs averts sco tabs da quest telefon.</string>
+    <string name="dejavu_menu_new_tab">Nov tab</string>
+    <string name="dejavu_menu_save_page">Memorisar la pagina</string>
+    <string name="dejavu_save_page_saving">Memorisar la pagina…</string>
+    <string name="dejavu_save_page_failed">Impussibel da memorisar questa pagina. Emprova anc ina giada.</string>
 </resources>

@@ -478,4 +478,8 @@
     <string name="dejavu_workspace_firefox_limits">Omezení služby Firefox Sync</string>
     <string name="dejavu_workspace_firefox_device">Firefox Sync sdílí jen otevřené panely každého zařízení. Panely, které zde otevřete nebo zavřete, se otevřou nebo zavřou i na daném zařízení, ale nemůžete připínat panely, přidávat složky ani Oblíbené, ani vybrat kontejner. Název a ikona pocházejí ze zařízení a barvy, které zvolíte, zůstanou v tomto telefonu.</string>
     <string name="dejavu_workspace_firefox_own">Firefox Sync nesdílí pracovní prostory, takže tento pracovní prostor se svými připnutými panely a složkami zůstane v tomto telefonu. Firefox zobrazuje jeho otevřené panely jako panely tohoto telefonu.</string>
+    <string name="dejavu_menu_new_tab">Nový panel</string>
+    <string name="dejavu_menu_save_page">Uložit stránku</string>
+    <string name="dejavu_save_page_saving">Ukládání stránky…</string>
+    <string name="dejavu_save_page_failed">Tuto stránku se nepodařilo uložit. Zkuste to znovu.</string>
 </resources>

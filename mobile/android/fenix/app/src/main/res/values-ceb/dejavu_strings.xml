@@ -462,4 +462,8 @@
     <string name="dejavu_workspace_firefox_limits">Limitado sa Firefox Sync</string>
     <string name="dejavu_workspace_firefox_device">Ang Firefox Sync nagpaambit lang sa naabli nga mga tab sa matag device. Ang mga tab nga imong ablihan o sirad-an dinhi maabli o masira usab sa maong device, apan dili ka maka-pin og mga tab, makadugang og mga folder o Mahinungdanon, o makapili og container. Ang ngalan ug icon gikan sa device, ug ang mga kolor nga imong pilion magpabilin niini nga telepono.</string>
     <string name="dejavu_workspace_firefox_own">Ang Firefox Sync wala nagpaambit sa mga workspace, busa kini nga workspace, uban sa iyang naka-pin nga mga tab ug mga folder, magpabilin niini nga telepono. Gipakita sa Firefox ang naabli nga mga tab niini isip mga tab niini nga telepono.</string>
+    <string name="dejavu_menu_new_tab">Bag-o nga tab</string>
+    <string name="dejavu_menu_save_page">i-Save ang page</string>
+    <string name="dejavu_save_page_saving">Nag-save sa page…</string>
+    <string name="dejavu_save_page_failed">Dili ma-save kini nga page. Sulayi pag-usab.</string>
 </resources>

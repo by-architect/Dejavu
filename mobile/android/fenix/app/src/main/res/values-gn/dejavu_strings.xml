@@ -462,4 +462,8 @@
     <string name="dejavu_workspace_firefox_limits">Mba\'e Firefox Sync omboykéva</string>
     <string name="dejavu_workspace_firefox_device">Firefox Sync omoherakuã añoite peteĩteĩ mba\'e\'oka tendayke ijurujáva. Umi tendayke rembojurujáva térã rembotýva ko\'ápe ojejuruja térã oñemboty avei upe mba\'e\'okápe, ha katu ndaikatúi remboguapy tendayke, rembojuaju karpeta térã iporãvéva, ni reiporavo ryru. Héra ha ita\'ãnga ou upe mba\'e\'okágui, ha umi sa\'y reiporavóva opyta ko pumbyrýpe.</string>
     <string name="dejavu_workspace_firefox_own">Firefox Sync nomoherakuãi tembiapo renda, upévare ko tembiapo renda, itendayke mboguapypyre ha ikarpetakuéra reheve, opyta ko pumbyrýpe. Firefox ohechauka itendayke ijurujáva ko pumbyry tendaykerõ.</string>
+    <string name="dejavu_menu_new_tab">Tendayke pyahu</string>
+    <string name="dejavu_menu_save_page">Ñongatu kuatiarogue</string>
+    <string name="dejavu_save_page_saving">Oñongatuhína kuatiarogue…</string>
+    <string name="dejavu_save_page_failed">Ndaikatúi eñongatu ko kuatiarogue. Eha’ã jey.</string>
 </resources>

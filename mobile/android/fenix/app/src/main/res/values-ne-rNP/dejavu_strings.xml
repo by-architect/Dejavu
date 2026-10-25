@@ -462,4 +462,8 @@
     <string name="dejavu_workspace_firefox_limits">Firefox Sync द्वारा सीमित</string>
     <string name="dejavu_workspace_firefox_device">Firefox Sync ले प्रत्येक उपकरणका खुला ट्याबहरु मात्र सेयर गर्छ। तपाईंले यहाँ खोल्ने वा बन्द गर्ने ट्याबहरु त्यो उपकरणमा पनि खुल्छन् वा बन्द हुन्छन्, तर तपाईं ट्याबहरु पिन गर्न, फोल्डर वा आवश्यक थप्न, वा कन्टेनर छान्न सक्नुहुन्न। नाम र चिन्ह उपकरणबाट आउँछन्, र तपाईंले छान्नुभएका रङहरु यही फोनमा रहन्छन्।</string>
     <string name="dejavu_workspace_firefox_own">Firefox Sync ले कार्यक्षेत्रहरु सेयर गर्दैन, त्यसैले यो कार्यक्षेत्र, यसका पिन गरिएका ट्याबहरु र फोल्डरहरु सहित, यही फोनमा रहन्छ। Firefox ले यसका खुला ट्याबहरुलाई यो फोनका ट्याबहरुको रूपमा देखाउँछ।</string>
+    <string name="dejavu_menu_new_tab">नयाँ ट्याब</string>
+    <string name="dejavu_menu_save_page">पृष्ठ सुरक्षित गर्नुहोस्</string>
+    <string name="dejavu_save_page_saving">पृष्ठ सुरक्षित गर्दै…</string>
+    <string name="dejavu_save_page_failed">यो पृष्ठ सुरक्षित गर्न सकिएन। फेरि प्रयास गर्नुहोस्।</string>
 </resources>

@@ -462,4 +462,8 @@
     <string name="dejavu_workspace_firefox_limits">Limigita de Firefox Sync</string>
     <string name="dejavu_workspace_firefox_device">Firefox Sync dividas nur la malfermitajn langetojn de ĉiu aparato. Langetoj, kiujn vi malfermas aŭ fermas ĉi tie, ankaŭ malfermiĝas aŭ fermiĝas sur tiu aparato, sed vi ne povas pingli langetojn, aldoni dosierujojn aŭ esencaĵojn, nek elekti ujon. La nomo kaj piktogramo venas de la aparato, kaj la koloroj, kiujn vi elektas, restas sur ĉi tiu telefono.</string>
     <string name="dejavu_workspace_firefox_own">Firefox Sync ne dividas laborspacojn, do ĉi tiu laborspaco, kun siaj pinglitaj langetoj kaj dosierujoj, restas sur ĉi tiu telefono. Firefox montras ĝiajn malfermitajn langetojn kiel langetojn de ĉi tiu telefono.</string>
+    <string name="dejavu_menu_new_tab">Nova langeto</string>
+    <string name="dejavu_menu_save_page">Konservi paĝon</string>
+    <string name="dejavu_save_page_saving">Konservante paĝon…</string>
+    <string name="dejavu_save_page_failed">Ne eblis konservi ĉi tiun paĝon. Provu denove.</string>
 </resources>

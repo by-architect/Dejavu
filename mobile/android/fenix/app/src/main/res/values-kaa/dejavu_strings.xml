@@ -462,4 +462,8 @@
     <string name="dejavu_workspace_firefox_limits">Firefox Sync tárepinen sheklengen</string>
     <string name="dejavu_workspace_firefox_device">Firefox Sync tek hár bir qurılmanıń ashıq betlerin bólisedi. Bul jerde ashqan yamasa japqan betlerińiz sol qurılmada da ashıladı yamasa jabıladı, biraq betlerdi bekitiw, papka yamasa tiykarǵı qosıw yamasa konteyner tańlaw múmkin emes. Atı hám belgishesi qurılmadan alınadı, al siz tańlaǵan reńler usı telefonda qaladı.</string>
     <string name="dejavu_workspace_firefox_own">Firefox Sync jumıs maydanların bólispeydi, sonlıqtan bul jumıs maydanı bekitilgen betleri hám papkaları menen usı telefonda qaladı. Firefox onıń ashıq betlerin usı telefonnıń betleri sıpatında kórsetedi.</string>
+    <string name="dejavu_menu_new_tab">Jańa bet</string>
+    <string name="dejavu_menu_save_page">Betti saqlaw</string>
+    <string name="dejavu_save_page_saving">Bet saqlanıp atır…</string>
+    <string name="dejavu_save_page_failed">Bul betti saqlaw múmkin bolmadı. Qayta urınıp kóriń.</string>
 </resources>

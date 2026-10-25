@@ -462,4 +462,8 @@
     <string name="dejavu_workspace_firefox_limits">Limitazioni di Firefox Sync</string>
     <string name="dejavu_workspace_firefox_device">Firefox Sync condivide solo le schede aperte di ogni dispositivo. Le schede che apri o chiudi qui si aprono o si chiudono anche su quel dispositivo, ma non puoi bloccare schede, aggiungere cartelle o preferiti, né scegliere un contenitore. Il nome e l’icona provengono dal dispositivo, e i colori che scegli restano su questo telefono.</string>
     <string name="dejavu_workspace_firefox_own">Firefox Sync non condivide gli spazi, quindi questo spazio, con le sue schede bloccate e cartelle, resta su questo telefono. Firefox mostra le sue schede aperte come schede di questo telefono.</string>
+    <string name="dejavu_menu_new_tab">Nuova scheda</string>
+    <string name="dejavu_menu_save_page">Salva pagina</string>
+    <string name="dejavu_save_page_saving">Salvataggio della pagina…</string>
+    <string name="dejavu_save_page_failed">Impossibile salvare questa pagina. Riprova.</string>
 </resources>

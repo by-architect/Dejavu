@@ -478,4 +478,8 @@
     <string name="dejavu_workspace_firefox_limits">Omejitve storitve Firefox Sync</string>
     <string name="dejavu_workspace_firefox_device">Firefox Sync deli samo odprte zavihke vsake naprave. Zavihki, ki jih tukaj odprete ali zaprete, se odprejo ali zaprejo tudi na tisti napravi, vendar ne morete pripeti zavihkov, dodati map ali Izbranega ali izbrati vsebnika. Ime in ikona prihajata iz naprave, barve, ki jih izberete, pa ostanejo na tem telefonu.</string>
     <string name="dejavu_workspace_firefox_own">Firefox Sync ne deli delovnih prostorov, zato ta delovni prostor s svojimi pripetimi zavihki in mapami ostane na tem telefonu. Firefox prikazuje njegove odprte zavihke kot zavihke tega telefona.</string>
+    <string name="dejavu_menu_new_tab">Nov zavihek</string>
+    <string name="dejavu_menu_save_page">Shrani stran</string>
+    <string name="dejavu_save_page_saving">Shranjevanje strani …</string>
+    <string name="dejavu_save_page_failed">Te strani ni bilo mogoče shraniti. Poskusite znova.</string>
 </resources>

@@ -462,4 +462,8 @@
     <string name="dejavu_workspace_firefox_limits">Маҳдудиятҳои Firefox Sync</string>
     <string name="dejavu_workspace_firefox_device">Firefox Sync танҳо варақаҳои кушодаи ҳар дастгоҳро мубодила мекунад. Варақаҳое, ки шумо дар ин ҷо мекушоед ё мепӯшед, дар он дастгоҳ низ кушода ё пӯшида мешаванд, аммо шумо наметавонед варақаҳоро часпонед, ҷузвдонҳо ё сомонаҳои муҳим илова кунед ё контейнер интихоб кунед. Ном ва нишона аз дастгоҳ меоянд ва рангҳое, ки шумо интихоб мекунед, дар ин телефон мемонанд.</string>
     <string name="dejavu_workspace_firefox_own">Firefox Sync фазоҳоро мубодила намекунад, аз ин рӯ ин фазо бо варақаҳои часпонидашуда ва ҷузвдонҳояш дар ин телефон мемонад. Firefox варақаҳои кушодаи онро ҳамчун варақаҳои ин телефон нишон медиҳад.</string>
+    <string name="dejavu_menu_new_tab">Варақаи нав</string>
+    <string name="dejavu_menu_save_page">Нигоҳ доштани саҳифа</string>
+    <string name="dejavu_save_page_saving">Дар ҳоли нигоҳ доштани саҳифа…</string>
+    <string name="dejavu_save_page_failed">Нигоҳ доштани ин саҳифа иҷро нашуд. Аз нав кӯшиш кунед.</string>
 </resources>

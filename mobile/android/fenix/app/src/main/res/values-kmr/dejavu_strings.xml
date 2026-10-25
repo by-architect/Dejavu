@@ -462,4 +462,8 @@
     <string name="dejavu_workspace_firefox_limits">Sînorên Firefox Sync</string>
     <string name="dejavu_workspace_firefox_device">Firefox Sync tenê hilpekînên vekirî yên her amûrê parve dike. Hilpekînên ku tu li vir vedikî an digirî, li ser wê amûrê jî vedibin an tên girtin, lê tu nikarî hilpekînan bizeliqînî, peldank an malperên girîng zêde bikî, an konteynerekê hilbijêrî. Nav û îkon ji amûrê tên, û rengên ku tu hildibijêrî li ser vê telefonê dimînin.</string>
     <string name="dejavu_workspace_firefox_own">Firefox Sync qadan parve nake, ji ber vê yekê ev qad, bi hilpekînên xwe yên sabît û peldankên xwe re, li ser vê telefonê dimîne. Firefox hilpekînên wê yên vekirî wek hilpekînên vê telefonê nîşan dide.</string>
+    <string name="dejavu_menu_new_tab">Hilpekîna nû</string>
+    <string name="dejavu_menu_save_page">Rûpelê tomar bike</string>
+    <string name="dejavu_save_page_saving">Rûpel tê tomarkirin…</string>
+    <string name="dejavu_save_page_failed">Ev rûpel nehat tomarkirin. Dîsa biceribîne.</string>
 </resources>

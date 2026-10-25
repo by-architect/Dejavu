@@ -462,4 +462,8 @@
     <string name="dejavu_workspace_firefox_limits">A Firefox Sync korlátai</string>
     <string name="dejavu_workspace_firefox_device">A Firefox Sync csak az egyes eszközök nyitott lapjait osztja meg. Az itt megnyitott vagy bezárt lapok azon az eszközön is megnyílnak vagy bezáródnak, de nem tűzhet ki lapokat, nem adhat hozzá mappákat vagy kedvenceket, és nem választhat konténert. A név és az ikon az eszközről származik, a választott színek pedig ezen a telefonon maradnak.</string>
     <string name="dejavu_workspace_firefox_own">A Firefox Sync nem osztja meg a munkaterületeket, ezért ez a munkaterület a kitűzött lapjaival és mappáival együtt ezen a telefonon marad. A Firefox a nyitott lapjait ennek a telefonnak a lapjaiként jeleníti meg.</string>
+    <string name="dejavu_menu_new_tab">Új lap</string>
+    <string name="dejavu_menu_save_page">Oldal mentése</string>
+    <string name="dejavu_save_page_saving">Oldal mentése…</string>
+    <string name="dejavu_save_page_failed">Nem sikerült az oldal mentése. Próbálja újra.</string>
 </resources>

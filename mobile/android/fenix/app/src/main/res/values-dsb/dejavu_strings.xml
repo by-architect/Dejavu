@@ -478,4 +478,8 @@
     <string name="dejavu_workspace_firefox_limits">Wobgranicowanja Firefox Sync</string>
     <string name="dejavu_workspace_firefox_device">Firefox Sync źěli jano wócynjone rejtariki kuždego rěda. Rejtariki, kótarež how wócynjaš abo zacynjaš, se teke na tom rěźe wócynjaju abo zacynjaju, ale njamóžoš rejtariki pśipěś, zarědniki abo nejwažnjejše pśidaś abo kontejner wubraś. Mě a symbol póchadatej z rěda, a barwy, kótarež wuběraš, wóstanu na toś tom telefonje.</string>
     <string name="dejavu_workspace_firefox_own">Firefox Sync njeźěli źěłowe rumy, togodla toś ten źěłowy rum ze swójimi pśipětymi rejtarikami a zarědnikami wóstanjo na toś tom telefonje. Firefox pokazujo jogo wócynjone rejtariki ako rejtariki toś togo telefona.</string>
+    <string name="dejavu_menu_new_tab">Nowy rejtarik</string>
+    <string name="dejavu_menu_save_page">Bok składowaś</string>
+    <string name="dejavu_save_page_saving">Bok se składujo…</string>
+    <string name="dejavu_save_page_failed">Toś ten bok njedajo se składowaś. Wopytaj hyšći raz.</string>
 </resources>

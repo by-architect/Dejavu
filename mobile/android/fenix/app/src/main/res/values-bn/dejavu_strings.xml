@@ -495,4 +495,8 @@
     <string name="dejavu_workspace_firefox_limits">Firefox Sync-এর কারণে সীমিত</string>
     <string name="dejavu_workspace_firefox_device">Firefox Sync শুধু প্রতিটি ডিভাইসের খোলা ট্যাব শেয়ার করে। এখানে আপনি যে ট্যাবগুলো খোলেন বা বন্ধ করেন, সেগুলো সেই ডিভাইসেও খোলে বা বন্ধ হয়, কিন্তু আপনি ট্যাব পিন করতে, ফোল্ডার বা এসেনশিয়াল যোগ করতে, বা কন্টেইনার বেছে নিতে পারবেন না। নাম ও আইকন ডিভাইস থেকে আসে, আর আপনার বেছে নেওয়া রংগুলো এই ফোনেই থাকে।</string>
     <string name="dejavu_workspace_firefox_own">Firefox Sync ওয়ার্কস্পেস শেয়ার করে না, তাই এই ওয়ার্কস্পেসটি, এর পিন করা ট্যাব ও ফোল্ডারসহ, এই ফোনেই থাকে। Firefox এই ওয়ার্কস্পেসের খোলা ট্যাবগুলো এই ফোনের ট্যাব হিসেবে দেখায়।</string>
+    <string name="dejavu_menu_new_tab">নতুন ট্যাব</string>
+    <string name="dejavu_menu_save_page">পাতা সংরক্ষণ করুন</string>
+    <string name="dejavu_save_page_saving">পাতা সংরক্ষণ করা হচ্ছে…</string>
+    <string name="dejavu_save_page_failed">এই পাতাটি সংরক্ষণ করা যায়নি। আবার চেষ্টা করুন।</string>
 </resources>

@@ -462,4 +462,8 @@
     <string name="dejavu_workspace_firefox_limits">Firefox Sync аҳәаақәа</string>
     <string name="dejavu_workspace_firefox_device">Firefox Sync ала амашьына цыԥхьаӡа иаарту абларҭақәа мацара рсинхронизациа мҩаԥысуеит. Ара абларҭақәа иаашәыртыр ма ишәаркыр, уи амашьына аҟынгьы иаартхоит ма иаркхоит, аха абларҭақәа рфиксациа, апапкақәа ма иҵакыу сайтқәа рыдалаӡара, ма аконтейнер алхра шәылшом. Ахьӡи аиконкеи амашьына аҟынтә иаауеит, насгьы иалышәхуа аԥштәқәа ари ателефон аҟны иаанхоит.</string>
     <string name="dejavu_workspace_firefox_own">Firefox Sync ала аҭыԥқәа рсинхронизациа мҩаԥысуам, убри аҟынтә ари аҭыԥ, ификсациатә абларҭақәеи апапкақәеи аманы, ари ателефон аҟны иаанхоит. Firefox ари аҭыԥ иаарту абларҭақәа ари ателефон абларҭақәа реиԥш иаанарԥшуеит.</string>
+    <string name="dejavu_menu_new_tab">Абларҭа ҿыц</string>
+    <string name="dejavu_menu_save_page">Адаҟьа асохранение</string>
+    <string name="dejavu_save_page_saving">Адаҟьа асохранение мҩаԥысуеит…</string>
+    <string name="dejavu_save_page_failed">Ари адаҟьа асохранение алымшеит. Даҽазнык шәҽазышәшәа.</string>
 </resources>

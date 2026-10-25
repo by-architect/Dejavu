@@ -462,4 +462,8 @@
     <string name="dejavu_workspace_firefox_limits">Firefox Sync ನ ಮಿತಿಗಳು</string>
     <string name="dejavu_workspace_firefox_device">Firefox Sync ಪ್ರತಿ ಸಾಧನದ ತೆರೆದ ಟ್ಯಾಬ್‌ಗಳನ್ನು ಮಾತ್ರ ಹಂಚಿಕೊಳ್ಳುತ್ತದೆ. ನೀವು ಇಲ್ಲಿ ತೆರೆಯುವ ಅಥವಾ ಮುಚ್ಚುವ ಟ್ಯಾಬ್‌ಗಳು ಆ ಸಾಧನದಲ್ಲಿಯೂ ತೆರೆದುಕೊಳ್ಳುತ್ತವೆ ಅಥವಾ ಮುಚ್ಚಿಕೊಳ್ಳುತ್ತವೆ, ಆದರೆ ನೀವು ಟ್ಯಾಬ್‌ಗಳನ್ನು ಪಿನ್ ಮಾಡಲು, ಫೋಲ್ಡರ್‌ಗಳನ್ನು ಅಥವಾ ಅಗತ್ಯವಾದವನ್ನು ಸೇರಿಸಲು, ಅಥವಾ ಕಂಟೇನರ್ ಆರಿಸಲು ಸಾಧ್ಯವಿಲ್ಲ. ಹೆಸರು ಮತ್ತು ಚಿಹ್ನೆ ಸಾಧನದಿಂದ ಬರುತ್ತವೆ, ಮತ್ತು ನೀವು ಆರಿಸುವ ಬಣ್ಣಗಳು ಈ ಫೋನ್‌ನಲ್ಲೇ ಉಳಿಯುತ್ತವೆ.</string>
     <string name="dejavu_workspace_firefox_own">Firefox Sync ಕಾರ್ಯಕ್ಷೇತ್ರಗಳನ್ನು ಹಂಚಿಕೊಳ್ಳುವುದಿಲ್ಲ, ಆದ್ದರಿಂದ ಈ ಕಾರ್ಯಕ್ಷೇತ್ರವು ಅದರ ಪಿನ್ ಮಾಡಿದ ಟ್ಯಾಬ್‌ಗಳು ಮತ್ತು ಫೋಲ್ಡರ್‌ಗಳೊಂದಿಗೆ ಈ ಫೋನ್‌ನಲ್ಲೇ ಉಳಿಯುತ್ತದೆ. Firefox ಅದರ ತೆರೆದ ಟ್ಯಾಬ್‌ಗಳನ್ನು ಈ ಫೋನ್‌ನ ಟ್ಯಾಬ್‌ಗಳಾಗಿ ತೋರಿಸುತ್ತದೆ.</string>
+    <string name="dejavu_menu_new_tab">ಹೊಸ ಟ್ಯಾಬ್</string>
+    <string name="dejavu_menu_save_page">ಪುಟವನ್ನು ಉಳಿಸು</string>
+    <string name="dejavu_save_page_saving">ಪುಟವನ್ನು ಉಳಿಸಲಾಗುತ್ತಿದೆ…</string>
+    <string name="dejavu_save_page_failed">ಈ ಪುಟವನ್ನು ಉಳಿಸಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ. ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ.</string>
 </resources>

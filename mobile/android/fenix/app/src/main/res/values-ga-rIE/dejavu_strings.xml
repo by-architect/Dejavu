@@ -486,4 +486,8 @@
     <string name="dejavu_workspace_firefox_limits">Teorainneacha Firefox Sync</string>
     <string name="dejavu_workspace_firefox_device">Ní chomhroinneann Firefox Sync ach cluaisíní oscailte gach gléis. Osclaíonn nó dúnann cluaisíní a osclaíonn nó a dhúnann tú anseo ar an ngléas sin freisin, ach ní féidir leat cluaisíní a ghreamú, fillteáin ná riachtanais a chur leis, ná coimeádán a roghnú. Tagann an t-ainm agus an deilbhín ón ngléas, agus fanann na dathanna a roghnaíonn tú ar an bhfón seo.</string>
     <string name="dejavu_workspace_firefox_own">Ní chomhroinneann Firefox Sync spásanna oibre, mar sin fanann an spás oibre seo, lena chluaisíní greamaithe agus lena fhillteáin, ar an bhfón seo. Taispeánann Firefox a chluaisíní oscailte mar chluaisíní an fhóin seo.</string>
+    <string name="dejavu_menu_new_tab">Cluaisín nua</string>
+    <string name="dejavu_menu_save_page">Sábháil an leathanach</string>
+    <string name="dejavu_save_page_saving">Ag sábháil an leathanaigh…</string>
+    <string name="dejavu_save_page_failed">Níorbh fhéidir an leathanach seo a shábháil. Bain triail eile as.</string>
 </resources>

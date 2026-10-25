@@ -462,4 +462,8 @@
     <string name="dejavu_workspace_firefox_limits">Beperkt door Firefox Sync</string>
     <string name="dejavu_workspace_firefox_device">Firefox Sync deelt alleen de open tabbladen van elk apparaat. Tabbladen die je hier opent of sluit, worden ook op dat apparaat geopend of gesloten, maar je kunt geen tabbladen vastmaken, geen mappen of favorieten toevoegen en geen container kiezen. De naam en het pictogram komen van het apparaat, en de kleuren die je kiest blijven op deze telefoon.</string>
     <string name="dejavu_workspace_firefox_own">Firefox Sync deelt geen werkruimtes, dus deze werkruimte, met de vastgemaakte tabbladen en mappen erin, blijft op deze telefoon. Firefox toont de open tabbladen ervan als tabbladen van deze telefoon.</string>
+    <string name="dejavu_menu_new_tab">Nieuw tabblad</string>
+    <string name="dejavu_menu_save_page">Pagina opslaan</string>
+    <string name="dejavu_save_page_saving">Pagina opslaan…</string>
+    <string name="dejavu_save_page_failed">Kan deze pagina niet opslaan. Probeer het opnieuw.</string>
 </resources>

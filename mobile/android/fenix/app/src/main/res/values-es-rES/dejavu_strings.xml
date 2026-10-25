@@ -470,4 +470,8 @@
     <string name="dejavu_workspace_firefox_limits">Limitaciones de Firefox Sync</string>
     <string name="dejavu_workspace_firefox_device">Firefox Sync solo comparte las pestañas abiertas de cada dispositivo. Las pestañas que abres o cierras aquí también se abren o se cierran en ese dispositivo, pero no puedes fijar pestañas, añadir carpetas ni esenciales, ni elegir un contenedor. El nombre y el icono vienen del dispositivo, y los colores que elijas se quedan en este teléfono.</string>
     <string name="dejavu_workspace_firefox_own">Firefox Sync no comparte los espacios de trabajo, así que este espacio de trabajo, con sus pestañas fijadas y carpetas, se queda en este teléfono. Firefox muestra sus pestañas abiertas como pestañas de este teléfono.</string>
+    <string name="dejavu_menu_new_tab">Nueva pestaña</string>
+    <string name="dejavu_menu_save_page">Guardar página</string>
+    <string name="dejavu_save_page_saving">Guardando página…</string>
+    <string name="dejavu_save_page_failed">No se ha podido guardar esta página. Vuelve a intentarlo.</string>
 </resources>

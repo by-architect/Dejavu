@@ -454,4 +454,8 @@
     <string name="dejavu_workspace_firefox_limits">Firefox Sync ၏ ကန့်သတ်ချက်များ</string>
     <string name="dejavu_workspace_firefox_device">Firefox Sync သည် စက်တစ်ခုစီ၏ ပွင့်နေသော တက်ဗ်များကိုသာ မျှဝေသည်။ ဤနေရာတွင် သင်ဖွင့်သော သို့မဟုတ် ပိတ်သော တက်ဗ်များသည် ထိုစက်တွင်လည်း ပွင့်မည် သို့မဟုတ် ပိတ်မည်၊ သို့သော် တက်ဗ်များကို ပင်ထိုးခြင်း၊ ဖိုင်တွဲများ သို့မဟုတ် မရှိမဖြစ်များ ထည့်ခြင်း၊ ကွန်တိန်နာ ရွေးခြင်းတို့ကို မပြုလုပ်နိုင်ပါ။ အမည်နှင့် အိုင်ကွန်သည် စက်မှ လာပြီး သင်ရွေးသော အရောင်များသည် ဤဖုန်းတွင်သာ ရှိနေမည်။</string>
     <string name="dejavu_workspace_firefox_own">Firefox Sync သည် လုပ်ငန်းခွင်များကို မမျှဝေပါ၊ ထို့ကြောင့် ဤလုပ်ငန်းခွင်သည် ၎င်း၏ ပင်ထိုးထားသော တက်ဗ်များနှင့် ဖိုင်တွဲများနှင့်အတူ ဤဖုန်းတွင်သာ ရှိနေမည်။ Firefox က ၎င်း၏ ပွင့်နေသော တက်ဗ်များကို ဤဖုန်း၏ တက်ဗ်များအဖြစ် ပြသသည်။</string>
+    <string name="dejavu_menu_new_tab">တက်ဗ် အသစ်</string>
+    <string name="dejavu_menu_save_page">စာမျက်နှာ သိမ်းရန်</string>
+    <string name="dejavu_save_page_saving">စာမျက်နှာကို သိမ်းနေသည်…</string>
+    <string name="dejavu_save_page_failed">ဤစာမျက်နှာကို သိမ်း၍ မရပါ။ ထပ်စမ်းကြည့်ပါ။</string>
 </resources>

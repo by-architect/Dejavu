@@ -454,4 +454,8 @@
     <string name="dejavu_workspace_firefox_limits">ຖືກຈຳກັດໂດຍ Firefox Sync</string>
     <string name="dejavu_workspace_firefox_device">Firefox Sync ແບ່ງປັນສະເພາະແທັບທີ່ເປີດຢູ່ຂອງແຕ່ລະອຸປະກອນ. ແທັບທີ່ທ່ານເປີດ ຫຼື ປິດຢູ່ບ່ອນນີ້ ຈະເປີດ ຫຼື ປິດຢູ່ອຸປະກອນນັ້ນນຳ, ແຕ່ທ່ານບໍ່ສາມາດປັກແທັບ, ເພີ່ມໂຟນເດີ ຫຼື ສິ່ງສຳຄັນ, ຫຼື ເລືອກຄອນເທນເນີໄດ້. ຊື່ ແລະ ໄອຄອນມາຈາກອຸປະກອນນັ້ນ, ແລະ ສີທີ່ທ່ານເລືອກຈະຢູ່ໃນໂທລະສັບນີ້.</string>
     <string name="dejavu_workspace_firefox_own">Firefox Sync ບໍ່ໄດ້ແບ່ງປັນພື້ນທີ່ເຮັດວຽກ, ສະນັ້ນພື້ນທີ່ເຮັດວຽກນີ້ ພ້ອມແທັບທີ່ປັກໄວ້ ແລະ ໂຟນເດີຂອງມັນ ຈະຢູ່ໃນໂທລະສັບນີ້. Firefox ຈະສະແດງແທັບທີ່ເປີດຢູ່ຂອງມັນເປັນແທັບຂອງໂທລະສັບນີ້.</string>
+    <string name="dejavu_menu_new_tab">ແທັບໃຫມ່</string>
+    <string name="dejavu_menu_save_page">ບັນທຶກຫນ້ານີ້</string>
+    <string name="dejavu_save_page_saving">ກຳລັງບັນທຶກຫນ້ານີ້…</string>
+    <string name="dejavu_save_page_failed">ບໍ່ສາມາດບັນທຶກຫນ້ານີ້ໄດ້. ລອງໃຫມ່ອີກຄັ້ງ.</string>
 </resources>

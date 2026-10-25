@@ -454,4 +454,8 @@
     <string name="dejavu_workspace_firefox_limits">Firefox Syncによる制限</string>
     <string name="dejavu_workspace_firefox_device">Firefox Syncが共有するのは、各端末で開いているタブだけです。ここで開いたり閉じたりしたタブは、その端末でも開いたり閉じたりしますが、タブのピン留め、フォルダーやよく使うサイトの追加、コンテナーの選択はできません。名前とアイコンはその端末のものが使われ、選んだ色はこのスマートフォンだけに保存されます。</string>
     <string name="dejavu_workspace_firefox_own">Firefox Syncはワークスペースを共有しないため、このワークスペースは、ピン留めタブやフォルダーも含めてこのスマートフォンだけに保存されます。Firefoxでは、このワークスペースの開いているタブがこのスマートフォンのタブとして表示されます。</string>
+    <string name="dejavu_menu_new_tab">新しいタブ</string>
+    <string name="dejavu_menu_save_page">ページを保存</string>
+    <string name="dejavu_save_page_saving">ページを保存中…</string>
+    <string name="dejavu_save_page_failed">このページを保存できませんでした。もう一度お試しください。</string>
 </resources>

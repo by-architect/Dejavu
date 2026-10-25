@@ -478,4 +478,8 @@
     <string name="dejavu_workspace_firefox_limits">Firefox Sync apribojimai</string>
     <string name="dejavu_workspace_firefox_device">Firefox Sync bendrina tik kiekvieno įrenginio atvertas korteles. Kortelės, kurias atveriate ar užveriate čia, atveriamos ar užveriamos ir tame įrenginyje, tačiau negalite nei prisegti kortelių, nei pridėti aplankų ar Mėgstamiausių, nei pasirinkti konteinerio. Pavadinimas ir piktograma gaunami iš įrenginio, o jūsų pasirinktos spalvos lieka šiame telefone.</string>
     <string name="dejavu_workspace_firefox_own">Firefox Sync nebendrina darbo erdvių, todėl ši darbo erdvė su savo prisegtomis kortelėmis ir aplankais lieka šiame telefone. Firefox jos atvertas korteles rodo kaip šio telefono korteles.</string>
+    <string name="dejavu_menu_new_tab">Nauja kortelė</string>
+    <string name="dejavu_menu_save_page">Įrašyti tinklalapį</string>
+    <string name="dejavu_save_page_saving">Įrašomas tinklalapis…</string>
+    <string name="dejavu_save_page_failed">Nepavyko įrašyti šio tinklalapio. Bandykite dar kartą.</string>
 </resources>

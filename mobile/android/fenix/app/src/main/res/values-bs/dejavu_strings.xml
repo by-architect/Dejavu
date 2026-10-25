@@ -470,4 +470,8 @@
     <string name="dejavu_workspace_firefox_limits">Firefox Sync ima ograničenja</string>
     <string name="dejavu_workspace_firefox_device">Firefox Sync dijeli samo otvorene tabove svakog uređaja. Tabovi koje ovdje otvorite ili zatvorite otvaraju se ili zatvaraju i na tom uređaju, ali ne možete prikvačiti tabove, dodati foldere ili Favorite niti izabrati kontejner. Naziv i ikona dolaze s uređaja, a boje koje odaberete ostaju na ovom telefonu.</string>
     <string name="dejavu_workspace_firefox_own">Firefox Sync ne dijeli radne prostore, pa ovaj radni prostor, sa svojim prikvačenim tabovima i folderima, ostaje na ovom telefonu. Firefox prikazuje njegove otvorene tabove kao tabove ovog telefona.</string>
+    <string name="dejavu_menu_new_tab">Novi tab</string>
+    <string name="dejavu_menu_save_page">Sačuvaj stranicu</string>
+    <string name="dejavu_save_page_saving">Čuvanje stranice…</string>
+    <string name="dejavu_save_page_failed">Nije moguće sačuvati ovu stranicu. Pokušajte ponovo.</string>
 </resources>

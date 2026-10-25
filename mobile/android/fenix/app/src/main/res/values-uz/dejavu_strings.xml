@@ -462,4 +462,8 @@
     <string name="dejavu_workspace_firefox_limits">Firefox Sync tomonidan cheklangan</string>
     <string name="dejavu_workspace_firefox_device">Firefox Sync faqat har bir qurilmaning ochiq varaqlarini ulashadi. Bu yerda ochgan yoki yopgan varaqlaringiz o\'sha qurilmada ham ochiladi yoki yopiladi, lekin varaqlarni mahkamlash, jild yoki muhimlar qo\'shish yoxud konteyner tanlash mumkin emas. Nomi va nishonchasi qurilmadan olinadi, siz tanlagan ranglar esa shu telefonda qoladi.</string>
     <string name="dejavu_workspace_firefox_own">Firefox Sync ish maydonlarini ulashmaydi, shuning uchun bu ish maydoni mahkamlangan varaqlari va jildlari bilan birga shu telefonda qoladi. Firefox uning ochiq varaqlarini shu telefonning varaqlari sifatida ko\'rsatadi.</string>
+    <string name="dejavu_menu_new_tab">Yangi varaq</string>
+    <string name="dejavu_menu_save_page">Sahifani saqlash</string>
+    <string name="dejavu_save_page_saving">Sahifa saqlanmoqda…</string>
+    <string name="dejavu_save_page_failed">Bu sahifani saqlab bo\'lmadi. Qayta urining.</string>
 </resources>

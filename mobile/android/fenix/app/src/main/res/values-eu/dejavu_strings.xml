@@ -462,4 +462,8 @@
     <string name="dejavu_workspace_firefox_limits">Firefox Sync-ek mugatuta</string>
     <string name="dejavu_workspace_firefox_device">Firefox Sync-ek gailu bakoitzaren fitxa irekiak soilik partekatzen ditu. Hemen irekitzen edo ixten dituzun fitxak gailu horretan ere irekitzen edo ixten dira, baina ezin dituzu fitxak finkatu, karpetak edo funtsezkoak gehitu, ezta edukiontzirik aukeratu ere. Izena eta ikonoa gailutik datoz, eta aukeratzen dituzun koloreak telefono honetan geratzen dira.</string>
     <string name="dejavu_workspace_firefox_own">Firefox Sync-ek ez ditu laneremuak partekatzen; beraz, laneremu hau, bere finkatutako fitxa eta karpetekin, telefono honetan geratzen da. Firefoxek bere fitxa irekiak telefono honetako fitxa gisa erakusten ditu.</string>
+    <string name="dejavu_menu_new_tab">Fitxa berria</string>
+    <string name="dejavu_menu_save_page">Gorde orria</string>
+    <string name="dejavu_save_page_saving">Orria gordetzen…</string>
+    <string name="dejavu_save_page_failed">Ezin da orri hau gorde. Saiatu berriro.</string>
 </resources>

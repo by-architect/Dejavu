@@ -462,4 +462,8 @@
     <string name="dejavu_workspace_firefox_limits">Firefox सिंकमुळे मर्यादित</string>
     <string name="dejavu_workspace_firefox_device">Firefox सिंक फक्त प्रत्येक डिव्हाइसचे उघडे टॅब शेअर करते. तुम्ही इथे उघडलेले किंवा बंद केलेले टॅब त्या डिव्हाइसवरही उघडतात किंवा बंद होतात, पण तुम्ही टॅब पिन करू शकत नाही, फोल्डर किंवा आवश्यक जोडू शकत नाही, किंवा कंटेनर निवडू शकत नाही. नाव आणि चिन्ह त्या डिव्हाइसवरून येतात, आणि तुम्ही निवडलेले रंग या फोनवरच राहतात.</string>
     <string name="dejavu_workspace_firefox_own">Firefox सिंक कार्यक्षेत्रे शेअर करत नाही, म्हणून हे कार्यक्षेत्र, त्याच्या पिन केलेल्या टॅब आणि फोल्डरसह, या फोनवरच राहते. Firefox त्याचे उघडे टॅब या फोनचे टॅब म्हणून दाखवते.</string>
+    <string name="dejavu_menu_new_tab">नवीन टॅब</string>
+    <string name="dejavu_menu_save_page">पृष्ठ सेव्ह करा</string>
+    <string name="dejavu_save_page_saving">पृष्ठ सेव्ह करत आहे…</string>
+    <string name="dejavu_save_page_failed">हे पृष्ठ सेव्ह करता आले नाही. पुन्हा प्रयत्न करा.</string>
 </resources>

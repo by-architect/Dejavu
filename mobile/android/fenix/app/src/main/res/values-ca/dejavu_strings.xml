@@ -470,4 +470,8 @@
     <string name="dejavu_workspace_firefox_limits">Limitat pel Firefox Sync</string>
     <string name="dejavu_workspace_firefox_device">El Firefox Sync només comparteix les pestanyes obertes de cada dispositiu. Les pestanyes que obriu o tanqueu aquí també s\'obren o es tanquen en aquell dispositiu, però no podeu fixar pestanyes, afegir carpetes ni essencials, ni triar un contenidor. El nom i la icona provenen del dispositiu, i els colors que trieu es queden en aquest telèfon.</string>
     <string name="dejavu_workspace_firefox_own">El Firefox Sync no comparteix els espais de treball, de manera que aquest espai de treball, amb les seves pestanyes fixades i carpetes, es queda en aquest telèfon. El Firefox mostra les seves pestanyes obertes com a pestanyes d\'aquest telèfon.</string>
+    <string name="dejavu_menu_new_tab">Pestanya nova</string>
+    <string name="dejavu_menu_save_page">Desa la pàgina</string>
+    <string name="dejavu_save_page_saving">S\'està desant la pàgina…</string>
+    <string name="dejavu_save_page_failed">No s\'ha pogut desar aquesta pàgina. Torneu-ho a provar.</string>
 </resources>

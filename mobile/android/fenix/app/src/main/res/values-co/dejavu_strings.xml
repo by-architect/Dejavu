@@ -462,4 +462,8 @@
     <string name="dejavu_workspace_firefox_limits">Limitatu da Firefox Sync</string>
     <string name="dejavu_workspace_firefox_device">Firefox Sync sparte solu l\'unghjette aperte di ogni apparechju. L\'unghjette ch\'è vo aprite o chjudite quì s\'aprenu o si chjudenu ancu nant\'à quellu apparechju, ma ùn pudete micca fissà unghjette, aghjunghje cartulari o essenziali, nè sceglie un cuntenitore. U nome è l\'icona venenu da l\'apparechju, è i culori ch\'è vo sceglite fermanu nant\'à stu telefonu.</string>
     <string name="dejavu_workspace_firefox_own">Firefox Sync ùn sparte micca i spazii di travagliu, dunque stu spaziu di travagliu, cù e so unghjette fissate è i so cartulari, ferma nant\'à stu telefonu. Firefox affissa e so unghjette aperte cum\'è unghjette di stu telefonu.</string>
+    <string name="dejavu_menu_new_tab">Nova unghjetta</string>
+    <string name="dejavu_menu_save_page">Arregistrà a pagina</string>
+    <string name="dejavu_save_page_saving">Arregistramentu di a pagina…</string>
+    <string name="dejavu_save_page_failed">Ùn si pò micca arregistrà sta pagina. Pruvà torna.</string>
 </resources>

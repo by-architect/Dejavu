@@ -462,4 +462,8 @@
     <string name="dejavu_workspace_firefox_limits">Llendes de Firefox Sync</string>
     <string name="dejavu_workspace_firefox_device">Firefox Sync namái comparte les llingüetes abiertes de cada preséu. Les llingüetes qu\'abres o zarres equí ábrense o zárrense tamién nesi preséu, pero nun pues fixar llingüetes, amestar carpetes nin esenciales, nin escoyer un contenedor. El nome y l\'iconu vienen del preséu, y los colores qu\'escueyas queden nesti teléfonu.</string>
     <string name="dejavu_workspace_firefox_own">Firefox Sync nun comparte los espacios de trabayu, polo qu\'esti espaciu de trabayu, coles sos llingüetes fixaes y carpetes, queda nesti teléfonu. Firefox amuesa les sos llingüetes abiertes como llingüetes d\'esti teléfonu.</string>
+    <string name="dejavu_menu_new_tab">Llingüeta nueva</string>
+    <string name="dejavu_menu_save_page">Guardar la páxina</string>
+    <string name="dejavu_save_page_saving">Guardando la páxina…</string>
+    <string name="dejavu_save_page_failed">Nun se pudo guardar esta páxina. Volvi tentalo.</string>
 </resources>

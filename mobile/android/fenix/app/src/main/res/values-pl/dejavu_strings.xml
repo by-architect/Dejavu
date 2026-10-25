@@ -478,4 +478,8 @@
     <string name="dejavu_workspace_firefox_limits">Ograniczone przez Firefox Sync</string>
     <string name="dejavu_workspace_firefox_device">Firefox Sync udostępnia tylko otwarte karty każdego urządzenia. Karty otwierane lub zamykane tutaj otwierają się lub zamykają też na tym urządzeniu, ale nie możesz przypinać kart, dodawać folderów ani ulubionych, ani wybierać kontenera. Nazwa i ikona pochodzą z urządzenia, a wybrane przez ciebie kolory pozostają na tym telefonie.</string>
     <string name="dejavu_workspace_firefox_own">Firefox Sync nie udostępnia obszarów roboczych, więc ten obszar roboczy wraz z przypiętymi kartami i folderami pozostaje na tym telefonie. Firefox pokazuje jego otwarte karty jako karty tego telefonu.</string>
+    <string name="dejavu_menu_new_tab">Nowa karta</string>
+    <string name="dejavu_menu_save_page">Zapisz stronę</string>
+    <string name="dejavu_save_page_saving">Zapisywanie strony…</string>
+    <string name="dejavu_save_page_failed">Nie można zapisać tej strony. Spróbuj ponownie.</string>
 </resources>

@@ -462,4 +462,8 @@
     <string name="dejavu_workspace_firefox_limits">Limitau per Firefox Sync</string>
     <string name="dejavu_workspace_firefox_device">Firefox Sync nomás comparte as pestanyas ubiertas de cada dispositivo. As pestanyas que ubres u zarras aquí tamién s\'ubren u se zarran en ixe dispositivo, pero no puetz fixar pestanyas, adibir carpetas u esenciales, ni trigar un contenedor. O nombre y l\'icono vienen d\'o dispositivo, y as colors que trigues se quedan en este telefono.</string>
     <string name="dejavu_workspace_firefox_own">Firefox Sync no comparte os espacios de treballo, asinas que este espacio de treballo, con as suyas pestanyas fixadas y carpetas, se queda en este telefono. Firefox amuestra as suyas pestanyas ubiertas como pestanyas d\'este telefono.</string>
+    <string name="dejavu_menu_new_tab">Nueva pestanya</string>
+    <string name="dejavu_menu_save_page">Alzar a pachina</string>
+    <string name="dejavu_save_page_saving">Alzando a pachina…</string>
+    <string name="dejavu_save_page_failed">No s\'ha puesto alzar esta pachina. Torna a intentar-lo.</string>
 </resources>

@@ -454,4 +454,8 @@
     <string name="dejavu_workspace_firefox_limits">Ààlà Firefox Sync</string>
     <string name="dejavu_workspace_firefox_device">Firefox Sync máa ń pín àwọn táàbù tí ó ṣí lórí ẹ̀rọ kọ̀ọ̀kan nìkan. Àwọn táàbù tí o bá ṣí tàbí pa dé níbí yóò tún ṣí tàbí pa dé lórí ẹ̀rọ náà, ṣùgbọ́n o kò lè fi Pin sí táàbù, o kò lè fi fódà tàbí Pàtàkì kún, o kò sì lè yan container. Orúkọ àti Icon wá láti ẹ̀rọ náà, àwọn àwọ̀ tí o bá yàn yóò sì wà lórí fóònù yìí.</string>
     <string name="dejavu_workspace_firefox_own">Firefox Sync kì í pín àwọn ibi-iṣẹ́, nítorí náà ibi-iṣẹ́ yìí, pẹ̀lú àwọn táàbù rẹ̀ tí a fi Pin sí àti fódà rẹ̀, yóò wà lórí fóònù yìí. Firefox máa ń fi àwọn táàbù ibi-iṣẹ́ yìí tí ó ṣí hàn gẹ́gẹ́ bí táàbù fóònù yìí.</string>
+    <string name="dejavu_menu_new_tab">Táàbù tuntun</string>
+    <string name="dejavu_menu_save_page">Fi ojú-ìwé pamọ́</string>
+    <string name="dejavu_save_page_saving">Ń fi ojú-ìwé pamọ́…</string>
+    <string name="dejavu_save_page_failed">A kò lè fi ojú-ìwé yìí pamọ́. Tún gbìyànjú.</string>
 </resources>

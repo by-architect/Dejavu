@@ -462,4 +462,8 @@
     <string name="dejavu_workspace_firefox_limits">محدودشده توسط Firefox Sync</string>
     <string name="dejavu_workspace_firefox_device">Firefox Sync فقط زبانه‌های باز هر دستگاه را به اشتراک می‌گذارد. زبانه‌هایی که اینجا باز یا بسته می‌کنید، روی آن دستگاه هم باز یا بسته می‌شوند، اما نمی‌توانید زبانه سنجاق کنید، پوشه یا ضروریات اضافه کنید یا محفظه انتخاب کنید. نام و نماد از دستگاه می‌آیند و رنگ‌هایی که انتخاب می‌کنید روی همین گوشی می‌مانند.</string>
     <string name="dejavu_workspace_firefox_own">Firefox Sync فضاهای کاری را به اشتراک نمی‌گذارد، پس این فضای کاری، با زبانه‌های سنجاق‌شده و پوشه‌هایش، روی همین گوشی می‌ماند. Firefox زبانه‌های باز آن را به‌عنوان زبانه‌های این گوشی نشان می‌دهد.</string>
+    <string name="dejavu_menu_new_tab">زبانهٔ جدید</string>
+    <string name="dejavu_menu_save_page">ذخیرهٔ صفحه</string>
+    <string name="dejavu_save_page_saving">در حال ذخیرهٔ صفحه…</string>
+    <string name="dejavu_save_page_failed">ذخیرهٔ این صفحه انجام نشد. دوباره امتحان کنید.</string>
 </resources>

@@ -462,4 +462,8 @@
     <string name="dejavu_workspace_firefox_limits">Firefox Sync دیاں حداں</string>
     <string name="dejavu_workspace_firefox_device">Firefox Sync ہر ڈیوائس دیاں صرف کھلیاں ٹیباں شیئر کریندا ہے۔ جہڑیاں ٹیباں تساں اِتھاں کھولیندے یا بند کریندے ہو، اوہ اوں ڈیوائس تے وی کھلدیاں یا بند تھیندیاں ہن، پر تساں نہ ٹیباں پن کر سڳدے ہو، نہ فولڈر یا ضروری ٹیباں شامل کر سڳدے ہو، تے نہ کنٹینر چُݨ سڳدے ہو۔ ناں تے آئیکان ڈیوائس کنوں آندے ہن، تے جہڑے رنگ تساں چُݨدے ہو اوہ ایں فون تے رہندے ہن۔</string>
     <string name="dejavu_workspace_firefox_own">Firefox Sync ورک سپیساں شیئر کائنی کریندا، ایں کیتے ایہ ورک سپیس، آپݨیاں پن تھیاں ٹیباں تے فولڈراں سمیت، ایں فون تے رہندی ہے۔ Firefox ایندیاں کھلیاں ٹیباں کوں ایں فون دیاں ٹیباں دے طور تے ݙکھیندا ہے۔</string>
+    <string name="dejavu_menu_new_tab">نویں ٹیب</string>
+    <string name="dejavu_menu_save_page">ورقہ محفوظ کرو</string>
+    <string name="dejavu_save_page_saving">ورقہ محفوظ تھیندا پئے…</string>
+    <string name="dejavu_save_page_failed">ایہ ورقہ محفوظ کائنی تھی سڳا۔ ولدا کوشش کرو۔</string>
 </resources>

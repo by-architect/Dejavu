@@ -462,4 +462,8 @@
     <string name="dejavu_workspace_firefox_limits">Limitadu dae Firefox Sync</string>
     <string name="dejavu_workspace_firefox_device">Firefox Sync cumpartzit isceti is ischedas abertas de dònnia dispositivu. Is ischedas chi aberis o serras inoghe si aberint o si serrant fintzas in cussu dispositivu, ma non podes fissare ischedas, agiùnghere cartellas o essentziales, nen seberare unu cuntenidore. Su nòmine e s\'icona benint dae su dispositivu, e is colores chi seberas abarrant in custu telèfonu.</string>
     <string name="dejavu_workspace_firefox_own">Firefox Sync non cumpartzit is ispàtzios de traballu, duncas custu ispàtziu de traballu, cun is ischedas fissadas e is cartellas suas, abarrat in custu telèfonu. Firefox ammustrat is ischedas abertas suas comente ischedas de custu telèfonu.</string>
+    <string name="dejavu_menu_new_tab">Ischeda noa</string>
+    <string name="dejavu_menu_save_page">Sarva sa pàgina</string>
+    <string name="dejavu_save_page_saving">Sarvende sa pàgina…</string>
+    <string name="dejavu_save_page_failed">No est istadu possìbile sarvare custa pàgina. Torra a proare.</string>
 </resources>

@@ -454,4 +454,8 @@
     <string name="dejavu_workspace_firefox_limits">Bị giới hạn bởi Firefox Sync</string>
     <string name="dejavu_workspace_firefox_device">Firefox Sync chỉ chia sẻ các thẻ đang mở của từng thiết bị. Các thẻ bạn mở hoặc đóng ở đây cũng sẽ mở hoặc đóng trên thiết bị đó, nhưng bạn không thể ghim thẻ, thêm thư mục hay trang thiết yếu, hoặc chọn vùng chứa. Tên và biểu tượng lấy từ thiết bị, còn các màu bạn chọn sẽ ở lại trên điện thoại này.</string>
     <string name="dejavu_workspace_firefox_own">Firefox Sync không chia sẻ không gian làm việc, vì vậy không gian làm việc này, cùng các thẻ đã ghim và thư mục của nó, sẽ ở lại trên điện thoại này. Firefox hiển thị các thẻ đang mở của nó như các thẻ của điện thoại này.</string>
+    <string name="dejavu_menu_new_tab">Thẻ mới</string>
+    <string name="dejavu_menu_save_page">Lưu trang</string>
+    <string name="dejavu_save_page_saving">Đang lưu trang…</string>
+    <string name="dejavu_save_page_failed">Không thể lưu trang này. Hãy thử lại.</string>
 </resources>

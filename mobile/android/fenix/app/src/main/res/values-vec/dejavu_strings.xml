@@ -470,4 +470,8 @@
     <string name="dejavu_workspace_firefox_limits">Łimità da Firefox Sync</string>
     <string name="dejavu_workspace_firefox_device">Firefox Sync el condivide soło łe schede verte de onji aparechio. Łe schede che te verxi o te sari qua łe se verxe o łe se sara anca so quel aparechio, ma no te pol fisar schede, giontar cartełe o essensiałi, o sielser un contenidor. El nome e ła icona i vien da l’aparechio, e i coƚori che te sielsi i resta so sto tełèfono.</string>
     <string name="dejavu_workspace_firefox_own">Firefox Sync no’l condivide i spasi de laoro, cusì sto spasio de laoro, co łe so schede fisà e łe so cartełe, el resta so sto tełèfono. Firefox el mostra łe so schede verte come schede de sto tełèfono.</string>
+    <string name="dejavu_menu_new_tab">Nova scheda</string>
+    <string name="dejavu_menu_save_page">Salva pàgina</string>
+    <string name="dejavu_save_page_saving">Drio salvar ła pàgina…</string>
+    <string name="dejavu_save_page_failed">No xe stà posibiłe salvar sta pàgina. Prova torna.</string>
 </resources>

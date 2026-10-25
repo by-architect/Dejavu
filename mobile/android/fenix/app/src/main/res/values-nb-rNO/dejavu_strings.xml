@@ -462,4 +462,8 @@
     <string name="dejavu_workspace_firefox_limits">Begrenset av Firefox Sync</string>
     <string name="dejavu_workspace_firefox_device">Firefox Sync deler bare de åpne fanene på hver enhet. Faner du åpner eller lukker her, åpnes eller lukkes også på den enheten, men du kan ikke feste faner, legge til mapper eller favoritter eller velge en beholder. Navnet og ikonet kommer fra enheten, og fargene du velger, blir værende på denne telefonen.</string>
     <string name="dejavu_workspace_firefox_own">Firefox Sync deler ikke arbeidsområder, så dette arbeidsområdet, med de festede fanene og mappene sine, blir værende på denne telefonen. Firefox viser de åpne fanene i arbeidsområdet som faner fra denne telefonen.</string>
+    <string name="dejavu_menu_new_tab">Ny fane</string>
+    <string name="dejavu_menu_save_page">Lagre siden</string>
+    <string name="dejavu_save_page_saving">Lagrer siden …</string>
+    <string name="dejavu_save_page_failed">Kunne ikke lagre denne siden. Prøv igjen.</string>
 </resources>

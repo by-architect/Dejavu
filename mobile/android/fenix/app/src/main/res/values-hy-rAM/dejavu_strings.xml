@@ -462,4 +462,8 @@
     <string name="dejavu_workspace_firefox_limits">Սահմանափակված է Firefox Sync֊ի կողմից</string>
     <string name="dejavu_workspace_firefox_device">Firefox Sync֊ը համաժամացնում է միայն յուրաքանչյուր սարքի բաց ներդիրները։ Այստեղ բացված կամ փակված ներդիրները բացվում կամ փակվում են նաև այդ սարքում, բայց դուք չեք կարող ամրացնել ներդիրներ, ավելացնել թղթապանակներ կամ կարևոր կայքեր, ոչ էլ ընտրել կոնտեյներ։ Անունն ու պատկերակը գալիս են սարքից, իսկ ձեր ընտրած գույները մնում են այս հեռախոսում։</string>
     <string name="dejavu_workspace_firefox_own">Firefox Sync֊ը չի համաժամացնում տարածքները, ուստի այս տարածքը՝ իր ամրացված ներդիրներով և թղթապանակներով, մնում է այս հեռախոսում։ Firefox֊ը դրա բաց ներդիրները ցուցադրում է որպես այս հեռախոսի ներդիրներ։</string>
+    <string name="dejavu_menu_new_tab">Նոր ներդիր</string>
+    <string name="dejavu_menu_save_page">Պահել էջը</string>
+    <string name="dejavu_save_page_saving">Էջը պահվում է…</string>
+    <string name="dejavu_save_page_failed">Չհաջողվեց պահել այս էջը։ Փորձեք կրկին։</string>
 </resources>

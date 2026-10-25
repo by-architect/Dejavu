@@ -494,4 +494,8 @@
     <string name="dejavu_workspace_firefox_limits">Wedi’i gyfyngu gan Firefox Sync</string>
     <string name="dejavu_workspace_firefox_device">Dim ond tabiau agored pob dyfais mae Firefox Sync yn eu rhannu. Mae tabiau rydych chi’n eu hagor neu’n eu cau yma hefyd yn agor neu’n cau ar y ddyfais honno, ond allwch chi ddim pinio tabiau, ychwanegu ffolderi na hanfodion, na dewis cynhwysydd. Mae’r enw a’r eicon yn dod o’r ddyfais, ac mae’r lliwiau rydych chi’n eu dewis yn aros ar y ffôn hwn.</string>
     <string name="dejavu_workspace_firefox_own">Dyw Firefox Sync ddim yn rhannu gweithleoedd, felly mae’r gweithle hwn, gyda’i dabiau wedi’u pinio a’i ffolderi, yn aros ar y ffôn hwn. Mae Firefox yn dangos tabiau agored y gweithle hwn fel tabiau’r ffôn hwn.</string>
+    <string name="dejavu_menu_new_tab">Tab newydd</string>
+    <string name="dejavu_menu_save_page">Cadw’r dudalen</string>
+    <string name="dejavu_save_page_saving">Yn cadw’r dudalen…</string>
+    <string name="dejavu_save_page_failed">Methu cadw’r dudalen hon. Ceisiwch eto.</string>
 </resources>

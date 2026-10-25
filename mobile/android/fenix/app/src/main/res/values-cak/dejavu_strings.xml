@@ -462,4 +462,8 @@
     <string name="dejavu_workspace_firefox_limits">Ri man nujunamirisaj ta Firefox Sync</string>
     <string name="dejavu_workspace_firefox_device">Firefox Sync xa xe nukomonij ri jaqäl taq ruwi\' richin chi jujunal okisaxel. Ri taq ruwi\' ye\'ajaq o ye\'atz\'apij wawe\' chuqa\' yejaq o yetz\'apïx pa ri okisaxel ri\', po man yatikïr ta ye\'axim taq ruwi\', ye\'atz\'aqatisaj taq karpeta o taq rajawaxel, o nacha\' jun k\'olib\'äl. Rub\'i\' chuqa\' ruretal yepe pa ri okisaxel, chuqa\' ri taq b\'onil nacha\' yekanäj pa re oyonib\'äl re\'.</string>
     <string name="dejavu_workspace_firefox_own">Firefox Sync man nukomonij ta ri taq samajib\'äl, ruma ri\' re samajib\'äl re\', rik\'in ri ximon taq ruwi\' chuqa\' ri taq karpeta, nikanäj pa re oyonib\'äl re\'. Firefox nuk\'ut ri jaqäl taq ruwi\' achi\'el ri taq ruwi\' re oyonib\'äl re\'.</string>
+    <string name="dejavu_menu_new_tab">K\'ak\'a\' ruwi\'</string>
+    <string name="dejavu_menu_save_page">Tiyak ruxaq</string>
+    <string name="dejavu_save_page_saving">Niyak ri ruxaq…</string>
+    <string name="dejavu_save_page_failed">Man xyak ta re ruxaq re\'. Tatojtob\'ej chik.</string>
 </resources>

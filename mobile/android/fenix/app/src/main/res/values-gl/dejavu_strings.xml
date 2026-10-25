@@ -462,4 +462,8 @@
     <string name="dejavu_workspace_firefox_limits">Limitado por Firefox Sync</string>
     <string name="dejavu_workspace_firefox_device">Firefox Sync só comparte as lapelas abertas de cada dispositivo. As lapelas que abres ou pechas aquí tamén se abren ou se pechan nese dispositivo, pero non podes fixar lapelas, engadir cartafoles nin esenciais, nin escoller un contedor. O nome e a icona veñen do dispositivo, e as cores que escollas quedan neste teléfono.</string>
     <string name="dejavu_workspace_firefox_own">Firefox Sync non comparte os espazos de traballo, así que este espazo de traballo, coas súas lapelas fixadas e cartafoles, queda neste teléfono. Firefox amosa as súas lapelas abertas como lapelas deste teléfono.</string>
+    <string name="dejavu_menu_new_tab">Nova lapela</string>
+    <string name="dejavu_menu_save_page">Gardar páxina</string>
+    <string name="dejavu_save_page_saving">Gardando a páxina…</string>
+    <string name="dejavu_save_page_failed">Non se puido gardar esta páxina. Téntao de novo.</string>
 </resources>

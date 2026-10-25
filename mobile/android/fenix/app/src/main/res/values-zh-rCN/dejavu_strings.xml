@@ -454,4 +454,8 @@
     <string name="dejavu_workspace_firefox_limits">受 Firefox Sync 限制</string>
     <string name="dejavu_workspace_firefox_device">Firefox Sync 仅共享每台设备上打开的标签页。您在此处打开或关闭的标签页也会在该设备上打开或关闭，但您无法固定标签页、添加文件夹或常用网站，也无法选择容器。名称和图标来自该设备，您选择的颜色会保留在此手机上。</string>
     <string name="dejavu_workspace_firefox_own">Firefox Sync 不共享工作区，所以此工作区及其固定标签页和文件夹会保留在此手机上。Firefox 会将其打开的标签页显示为此手机的标签页。</string>
+    <string name="dejavu_menu_new_tab">新建标签页</string>
+    <string name="dejavu_menu_save_page">保存页面</string>
+    <string name="dejavu_save_page_saving">正在保存页面…</string>
+    <string name="dejavu_save_page_failed">无法保存此页面，请重试。</string>
 </resources>

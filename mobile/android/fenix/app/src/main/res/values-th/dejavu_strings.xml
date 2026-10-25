@@ -454,4 +454,8 @@
     <string name="dejavu_workspace_firefox_limits">ข้อจำกัดจาก Firefox Sync</string>
     <string name="dejavu_workspace_firefox_device">Firefox Sync จะซิงค์เฉพาะแท็บที่เปิดอยู่ของแต่ละอุปกรณ์ แท็บที่คุณเปิดหรือปิดที่นี่จะเปิดหรือปิดบนอุปกรณ์เครื่องนั้นด้วย แต่คุณไม่สามารถปักหมุดแท็บ เพิ่มโฟลเดอร์หรือเว็บที่ใช้บ่อย หรือเลือกคอนเทนเนอร์ได้ ชื่อและไอคอนมาจากอุปกรณ์เครื่องนั้น และสีที่คุณเลือกจะอยู่บนโทรศัพท์เครื่องนี้</string>
     <string name="dejavu_workspace_firefox_own">Firefox Sync ไม่ซิงค์พื้นที่ทำงาน ดังนั้นพื้นที่ทำงานนี้พร้อมแท็บที่ปักหมุดและโฟลเดอร์จะอยู่บนโทรศัพท์เครื่องนี้เท่านั้น Firefox จะแสดงแท็บที่เปิดอยู่ของพื้นที่ทำงานนี้เป็นแท็บของโทรศัพท์เครื่องนี้</string>
+    <string name="dejavu_menu_new_tab">แท็บใหม่</string>
+    <string name="dejavu_menu_save_page">บันทึกหน้า</string>
+    <string name="dejavu_save_page_saving">กำลังบันทึกหน้า…</string>
+    <string name="dejavu_save_page_failed">ไม่สามารถบันทึกหน้านี้ได้ โปรดลองอีกครั้ง</string>
 </resources>

@@ -462,4 +462,8 @@
     <string name="dejavu_workspace_firefox_limits">Firefox Sync-ന്റെ പരിമിതികൾ</string>
     <string name="dejavu_workspace_firefox_device">Firefox Sync ഓരോ ഉപകരണത്തിലെയും തുറന്നിരിക്കുന്ന ടാബുകൾ മാത്രമേ പങ്കിടൂ. നിങ്ങൾ ഇവിടെ തുറക്കുകയോ അടയ്ക്കുകയോ ചെയ്യുന്ന ടാബുകൾ ആ ഉപകരണത്തിലും തുറക്കുകയോ അടയുകയോ ചെയ്യും, പക്ഷേ ടാബുകൾ പിൻ ചെയ്യാനോ ഫോൾഡറുകളോ പ്രധാനപ്പെട്ടവയോ ചേർക്കാനോ ഒരു കണ്ടെയ്നർ തിരഞ്ഞെടുക്കാനോ കഴിയില്ല. പേരും ചിഹ്നവും ഉപകരണത്തിൽ നിന്നാണ് വരുന്നത്, നിങ്ങൾ തിരഞ്ഞെടുക്കുന്ന നിറങ്ങൾ ഈ ഫോണിൽ തന്നെ നിലനിൽക്കും.</string>
     <string name="dejavu_workspace_firefox_own">Firefox Sync പണിയിടങ്ങൾ പങ്കിടില്ല, അതിനാൽ ഈ പണിയിടം, അതിന്റെ പിൻ ചെയ്ത ടാബുകളും ഫോൾഡറുകളും സഹിതം, ഈ ഫോണിൽ തന്നെ നിലനിൽക്കും. Firefox അതിന്റെ തുറന്നിരിക്കുന്ന ടാബുകൾ ഈ ഫോണിന്റെ ടാബുകളായി കാണിക്കും.</string>
+    <string name="dejavu_menu_new_tab">പുതിയ ടാബ്</string>
+    <string name="dejavu_menu_save_page">താൾ കരുതിവയ്ക്കുക</string>
+    <string name="dejavu_save_page_saving">താൾ കരുതിവയ്ക്കുന്നു…</string>
+    <string name="dejavu_save_page_failed">ഈ താൾ കരുതിവയ്ക്കുവാൻ പറ്റിയില്ല. വീണ്ടും ശ്രമിക്കുക.</string>
 </resources>

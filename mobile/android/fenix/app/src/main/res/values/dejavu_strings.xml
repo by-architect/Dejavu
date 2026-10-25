@@ -315,6 +315,8 @@
     <!-- Shows the page as Firefox's Reader view, plain text without ads and clutter. Same words as dejavu_page_info_reader_view. -->
     <string name="dejavu_menu_reader_view">Reader view</string>
     <string name="dejavu_menu_close_reader_view">Close reader view</string>
+    <!-- Opens the home screen with the address bar ready, so what the user types opens in a new tab. -->
+    <string name="dejavu_menu_new_tab">New tab</string>
     <string name="dejavu_menu_extensions">Extensions</string>
     <string name="dejavu_menu_manage_extensions">Manage extensions</string>
     <string name="dejavu_menu_passwords">Passwords</string>
@@ -327,6 +329,12 @@
     <string name="dejavu_menu_unpin_tab">Unpin tab</string>
     <string name="dejavu_menu_essential_tab">Add to essentials</string>
     <string name="dejavu_menu_remove_essential">Remove essential</string>
+    <!-- Saves the page, as it shows, into one HTML file in Downloads that opens without the internet. -->
+    <string name="dejavu_menu_save_page">Save page</string>
+    <!-- Short message while the page is being saved as an HTML file. -->
+    <string name="dejavu_save_page_saving">Saving page…</string>
+    <!-- Message when the page could not be saved as an HTML file, for example because it is still loading. -->
+    <string name="dejavu_save_page_failed">Couldn’t save this page. Try again.</string>
     <string name="dejavu_menu_save_as_pdf">Save as PDF</string>
     <string name="dejavu_menu_print">Print</string>
     <string name="dejavu_menu_open_in_app">Open in app</string>

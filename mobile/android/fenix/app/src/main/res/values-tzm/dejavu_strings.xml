@@ -462,4 +462,8 @@
     <string name="dejavu_workspace_firefox_limits">Tilisa n Firefox Sync</string>
     <string name="dejavu_workspace_firefox_device">Firefox Sync ibeṭṭu kan iseksal yeldin n yal ibenk. Iseksal i teldiḍ neɣ i tmedleḍ da ad ldin neɣ ad mdlen daɣen ɣef yibenk-nni, maca ur tezmireḍ ara ad tserseḍ iseksal, ad ternuḍ ikuramen neɣ ayen ilaqen, neɣ ad tferneḍ asenduq. Isem d tugna kkan-d seg yibenk, yerna initen i tferneḍ ad qqimen ɣef tiliɣri-agi.</string>
     <string name="dejavu_workspace_firefox_own">Firefox Sync ur ibeṭṭu ara imukan n umahil, ihi amkan-agi n umahil, s yiseksal-is yessersen d yikuramen-is, ad yeqqim ɣef tiliɣri-agi. Firefox yesskan-d iseksal-is yeldin am iseksal n tiliɣri-agi.</string>
+    <string name="dejavu_menu_new_tab">Aseksel amaynu</string>
+    <string name="dejavu_menu_save_page">Sekles tasna</string>
+    <string name="dejavu_save_page_saving">Asekles n tsna…</string>
+    <string name="dejavu_save_page_failed">Asekles n tsna-agi ur yeddi ara. Ɛreḍ tikkelt-nniḍen.</string>
 </resources>

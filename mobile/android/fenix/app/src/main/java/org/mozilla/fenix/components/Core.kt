@@ -121,6 +121,7 @@ import org.mozilla.fenix.dejavu.browser.CallsAndLocation
 import org.mozilla.fenix.dejavu.browser.GoogleSafeBrowsing
 import org.mozilla.fenix.dejavu.browser.JitAndWebGl
 import org.mozilla.fenix.dejavu.browser.PdfScripts
+import org.mozilla.fenix.dejavu.browser.SavePage
 import org.mozilla.fenix.dejavu.browser.SearchTelemetryExtensions
 import org.mozilla.fenix.dejavu.dejavuBrowserMiddleware
 import org.mozilla.fenix.downloads.DownloadService
@@ -427,6 +428,9 @@ class Core(
             .apply {
                 // Install the "icons" WebExtension to automatically load icons for every visited website.
                 icons.install(engine, this)
+
+                // Dejavu: the extension that copies pages for "Save page" listens in every tab.
+                SavePage.install(engine, this)
 
                 // Dejavu: Firefox's search telemetry ("ads" and "cookies" extensions) is not installed, as Dejavu
                 // sends no telemetry: search result pages are not read for it and its list is not downloaded.

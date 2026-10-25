@@ -470,4 +470,8 @@
     <string name="dejavu_workspace_firefox_limits">Limitado pelo Firefox Sync</string>
     <string name="dejavu_workspace_firefox_device">O Firefox Sync só partilha os separadores abertos de cada dispositivo. Os separadores que abres ou fechas aqui também abrem ou fecham nesse dispositivo, mas não podes fixar separadores, adicionar pastas ou essenciais, nem escolher um contentor. O nome e o ícone vêm do dispositivo, e as cores que escolheres ficam neste telemóvel.</string>
     <string name="dejavu_workspace_firefox_own">O Firefox Sync não partilha espaços de trabalho, por isso este espaço de trabalho, com os separadores fixados e as pastas dele, fica neste telemóvel. No Firefox, os separadores abertos dele aparecem como separadores deste telemóvel.</string>
+    <string name="dejavu_menu_new_tab">Novo separador</string>
+    <string name="dejavu_menu_save_page">Guardar página</string>
+    <string name="dejavu_save_page_saving">A guardar a página…</string>
+    <string name="dejavu_save_page_failed">Não foi possível guardar esta página. Tente novamente.</string>
 </resources>

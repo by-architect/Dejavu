@@ -454,4 +454,8 @@
     <string name="dejavu_workspace_firefox_limits">Firefox Sync로 인한 제한</string>
     <string name="dejavu_workspace_firefox_device">Firefox Sync는 각 기기의 열린 탭만 공유합니다. 여기서 열거나 닫은 탭은 해당 기기에서도 열리거나 닫히지만, 탭을 고정하거나 폴더나 필수 사이트를 추가하거나 컨테이너를 선택할 수는 없습니다. 이름과 아이콘은 해당 기기에서 가져오며, 선택한 색상은 이 휴대폰에만 적용됩니다.</string>
     <string name="dejavu_workspace_firefox_own">Firefox Sync는 작업 공간을 공유하지 않으므로 이 작업 공간은 고정된 탭 및 폴더와 함께 이 휴대폰에만 남아 있습니다. Firefox에서는 이 작업 공간의 열린 탭이 이 휴대폰의 탭으로 표시됩니다.</string>
+    <string name="dejavu_menu_new_tab">새 탭</string>
+    <string name="dejavu_menu_save_page">페이지 저장</string>
+    <string name="dejavu_save_page_saving">페이지 저장 중…</string>
+    <string name="dejavu_save_page_failed">이 페이지를 저장할 수 없습니다. 다시 시도하세요.</string>
 </resources>

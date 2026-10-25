@@ -494,4 +494,8 @@
     <string name="dejavu_workspace_firefox_limits">Oryon Firefox Sync</string>
     <string name="dejavu_workspace_firefox_device">Firefox Sync a rann unnsel tabow igor pub jynn. An tabow a igerydh po a dhegeydh omma a wra igeri po degea war an jynn na ynwedh, mes ny yllydh fastya tabow, keworra plegellow po Pythow Poesek, po dewis kontayner. An hanow ha\'n ikon a dheu a\'n jynn, ha\'n liwyow a dhewisydh a drig war an pellgowser ma.</string>
     <string name="dejavu_workspace_firefox_own">Ny rann Firefox Sync tyleryow-ober, ytho an tyller-ober ma, gans y dabow fastyes ha\'y blegellow, a drig war an pellgowser ma. Firefox a dhiskwedh y dabow igor avel tabow an pellgowser ma.</string>
+    <string name="dejavu_menu_new_tab">Tab nowyth</string>
+    <string name="dejavu_menu_save_page">Gwitha an folen</string>
+    <string name="dejavu_save_page_saving">Ow kwitha an folen…</string>
+    <string name="dejavu_save_page_failed">Ny yllys gwitha an folen ma. Assay arta.</string>
 </resources>

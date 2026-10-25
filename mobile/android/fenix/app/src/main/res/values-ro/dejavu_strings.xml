@@ -470,4 +470,8 @@
     <string name="dejavu_workspace_firefox_limits">Limitat de Firefox Sync</string>
     <string name="dejavu_workspace_firefox_device">Firefox Sync partajează doar filele deschise ale fiecărui dispozitiv. Filele pe care le deschizi sau le închizi aici se deschid sau se închid și pe acel dispozitiv, dar nu poți fixa file, adăuga foldere sau favorite și nici alege un container. Numele și pictograma vin de pe dispozitiv, iar culorile pe care le alegi rămân pe acest telefon.</string>
     <string name="dejavu_workspace_firefox_own">Firefox Sync nu partajează spațiile de lucru, așa că acest spațiu de lucru, cu filele fixate și folderele sale, rămâne pe acest telefon. Firefox îi afișează filele deschise ca file ale acestui telefon.</string>
+    <string name="dejavu_menu_new_tab">Filă nouă</string>
+    <string name="dejavu_menu_save_page">Salvează pagina</string>
+    <string name="dejavu_save_page_saving">Se salvează pagina…</string>
+    <string name="dejavu_save_page_failed">Nu s-a putut salva această pagină. Încearcă din nou.</string>
 </resources>

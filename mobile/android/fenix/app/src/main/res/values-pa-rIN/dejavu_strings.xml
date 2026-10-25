@@ -462,4 +462,8 @@
     <string name="dejavu_workspace_firefox_limits">Firefox Sync ਵਲੋਂ ਸੀਮਤ</string>
     <string name="dejavu_workspace_firefox_device">Firefox Sync ਹਰ ਡਿਵਾਈਸ ਦੀਆਂ ਸਿਰਫ਼ ਖੁੱਲ੍ਹੀਆਂ ਟੈਬਾਂ ਸਾਂਝੀਆਂ ਕਰਦਾ ਹੈ। ਜਿਹੜੀਆਂ ਟੈਬਾਂ ਤੁਸੀਂ ਇੱਥੇ ਖੋਲ੍ਹਦੇ ਜਾਂ ਬੰਦ ਕਰਦੇ ਹੋ, ਉਹ ਉਸ ਡਿਵਾਈਸ ‘ਤੇ ਵੀ ਖੁੱਲ੍ਹ ਜਾਂ ਬੰਦ ਹੋ ਜਾਂਦੀਆਂ ਹਨ, ਪਰ ਤੁਸੀਂ ਨਾ ਟੈਬਾਂ ਪਿੰਨ ਕਰ ਸਕਦੇ ਹੋ, ਨਾ ਫੋਲਡਰ ਜਾਂ ਜ਼ਰੂਰੀ ਜੋੜ ਸਕਦੇ ਹੋ, ਅਤੇ ਨਾ ਹੀ ਕੰਟੇਨਰ ਚੁਣ ਸਕਦੇ ਹੋ। ਨਾਂ ਅਤੇ ਆਈਕਨ ਉਸ ਡਿਵਾਈਸ ਤੋਂ ਆਉਂਦੇ ਹਨ, ਅਤੇ ਤੁਹਾਡੇ ਚੁਣੇ ਰੰਗ ਇਸ ਫ਼ੋਨ ‘ਤੇ ਹੀ ਰਹਿੰਦੇ ਹਨ।</string>
     <string name="dejavu_workspace_firefox_own">Firefox Sync ਵਰਕਸਪੇਸਾਂ ਸਾਂਝੀਆਂ ਨਹੀਂ ਕਰਦਾ, ਇਸ ਲਈ ਇਹ ਵਰਕਸਪੇਸ, ਆਪਣੀਆਂ ਪਿੰਨ ਕੀਤੀਆਂ ਟੈਬਾਂ ਅਤੇ ਫੋਲਡਰਾਂ ਸਮੇਤ, ਇਸ ਫ਼ੋਨ ‘ਤੇ ਹੀ ਰਹਿੰਦੀ ਹੈ। Firefox ਇਸ ਦੀਆਂ ਖੁੱਲ੍ਹੀਆਂ ਟੈਬਾਂ ਨੂੰ ਇਸ ਫ਼ੋਨ ਦੀਆਂ ਟੈਬਾਂ ਵਜੋਂ ਦਿਖਾਉਂਦਾ ਹੈ।</string>
+    <string name="dejavu_menu_new_tab">ਨਵੀਂ ਟੈਬ</string>
+    <string name="dejavu_menu_save_page">ਸਫ਼ਾ ਸੰਭਾਲੋ</string>
+    <string name="dejavu_save_page_saving">ਸਫ਼ਾ ਸੰਭਾਲਿਆ ਜਾ ਰਿਹਾ ਹੈ…</string>
+    <string name="dejavu_save_page_failed">ਇਹ ਸਫ਼ਾ ਸੰਭਾਲਿਆ ਨਹੀਂ ਜਾ ਸਕਿਆ। ਫੇਰ ਕੋਸ਼ਿਸ਼ ਕਰਿਓ।</string>
 </resources>

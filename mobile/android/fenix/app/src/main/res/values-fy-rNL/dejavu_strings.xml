@@ -462,4 +462,8 @@
     <string name="dejavu_workspace_firefox_limits">Beheind troch Firefox Sync</string>
     <string name="dejavu_workspace_firefox_device">Firefox Sync dielt allinnich de iepen ljepblêden fan elk apparaat. Ljepblêden dy\'t jo hjir iepenje of slute, wurde ek op dat apparaat iepene of sluten, mar jo kinne gjin ljepblêden fêstsette, gjin mappen of essinsjes taheakje en gjin kontener kieze. De namme en it byldkaike komme fan it apparaat, en de kleuren dy\'t jo kieze bliuwe op dizze telefoan.</string>
     <string name="dejavu_workspace_firefox_own">Firefox Sync dielt gjin wurkromten, dus dizze wurkromte bliuwt mei syn fêstsette ljepblêden en mappen op dizze telefoan. Firefox toant de iepen ljepblêden dêrfan as ljepblêden fan dizze telefoan.</string>
+    <string name="dejavu_menu_new_tab">Nij ljepblêd</string>
+    <string name="dejavu_menu_save_page">Side bewarje</string>
+    <string name="dejavu_save_page_saving">Side wurdt bewarre…</string>
+    <string name="dejavu_save_page_failed">Kin dizze side net bewarje. Probearje it opnij.</string>
 </resources>

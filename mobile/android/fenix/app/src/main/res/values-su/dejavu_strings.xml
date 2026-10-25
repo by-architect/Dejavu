@@ -454,4 +454,8 @@
     <string name="dejavu_workspace_firefox_limits">Diwatesan ku Firefox Sync</string>
     <string name="dejavu_workspace_firefox_device">Firefox Sync ngan ukur ngabagikeun tab nu kabuka tina unggal parabot. Tab nu dibuka atawa ditutup di dieu ogé muka atawa nutup dina parabot éta, tapi anjeun teu bisa nyematkeun tab, nambahkeun map atawa Penting, atawa milih wadah. Ngaran jeung ikonna asalna ti parabot, sarta warna nu dipilih tetep aya dina telepon ieu.</string>
     <string name="dejavu_workspace_firefox_own">Firefox Sync henteu ngabagikeun rohangan, jadi rohangan ieu, kalawan tab nu disemat jeung map-na, tetep aya dina telepon ieu. Firefox némbongkeun tab nu kabuka di rohangan ieu salaku tab tina telepon ieu.</string>
+    <string name="dejavu_menu_new_tab">Tab anyar</string>
+    <string name="dejavu_menu_save_page">Simpen kaca</string>
+    <string name="dejavu_save_page_saving">Nyimpen kaca…</string>
+    <string name="dejavu_save_page_failed">Teu bisa nyimpen kaca ieu. Pecakan deui.</string>
 </resources>

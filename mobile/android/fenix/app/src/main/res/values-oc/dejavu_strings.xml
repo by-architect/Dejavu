@@ -462,4 +462,8 @@
     <string name="dejavu_workspace_firefox_limits">Limits de Firefox Sync</string>
     <string name="dejavu_workspace_firefox_device">Firefox Sync parteja sonque los onglets dobèrts de cada aparelh. Los onglets que dobrissètz o tampatz aicí se dobrisson o se tampan tanben sus aquel aparelh, mas podètz pas fixar d’onglets, apondre de dossièrs o d’essencials, ni causir un contenidor. Lo nom e l’icòna venon de l’aparelh, e las colors que causissètz demòran sus aqueste telefòn.</string>
     <string name="dejavu_workspace_firefox_own">Firefox Sync parteja pas los espacis de trabalh, doncas aqueste espaci de trabalh, amb sos onglets fixats e sos dossièrs, demòra sus aqueste telefòn. Firefox aficha sos onglets dobèrts coma onglets d’aqueste telefòn.</string>
+    <string name="dejavu_menu_new_tab">Onglet novèl</string>
+    <string name="dejavu_menu_save_page">Enregistrar la pagina</string>
+    <string name="dejavu_save_page_saving">Enregistrament de la pagina…</string>
+    <string name="dejavu_save_page_failed">Impossible d’enregistrar aquesta pagina. Tornatz ensajar.</string>
 </resources>

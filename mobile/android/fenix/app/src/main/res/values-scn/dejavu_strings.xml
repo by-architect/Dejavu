@@ -462,4 +462,8 @@
     <string name="dejavu_workspace_firefox_limits">Limitatu di Firefox Sync</string>
     <string name="dejavu_workspace_firefox_device">Firefox Sync sparti sulu i schedi aperti di ogni dispositivu. I schedi ca grapi o chiuji ccà si grapunu o si chiùjunu macari supra ddu dispositivu, ma nun poi ficcari schedi, jùnciri carteddi o essenziali, nè scègghiri un cuntinituri. U nomu e l\'icona vennu dû dispositivu, e i culuri ca scegghi restanu supra stu tilèfunu.</string>
     <string name="dejavu_workspace_firefox_own">Firefox Sync nun sparti i spazzii di travagghiu, pirciò stu spazziu di travagghiu, cu i sò schedi ficcati e i sò carteddi, resta supra stu tilèfunu. Firefox mustra i sò schedi aperti comu schedi di stu tilèfunu.</string>
+    <string name="dejavu_menu_new_tab">Scheda nova</string>
+    <string name="dejavu_menu_save_page">Sarva a pàggina</string>
+    <string name="dejavu_save_page_saving">Sarvannu a pàggina…</string>
+    <string name="dejavu_save_page_failed">Nun potti sarvari sta pàggina. Prova arrè.</string>
 </resources>

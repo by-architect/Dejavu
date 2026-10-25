@@ -90,6 +90,7 @@ data class MoreMenuState(
     val isReaderable: Boolean = false,
     val isInReaderView: Boolean = false,
     val isWebPage: Boolean = false,
+    val isPdf: Boolean = false,
     val isDeviceTab: Boolean = false,
     val splitWays: List<SplitOrientation> = emptyList(),
 )
@@ -167,8 +168,10 @@ private fun MoreMenuItem.look(state: MoreMenuState): EntryLook {
         MoreMenuItem.TRANSLATE -> default.copy(enabled = state.canTranslate, active = state.isTranslated)
         MoreMenuItem.SHARE, MoreMenuItem.FIND_IN_PAGE, MoreMenuItem.SAVE_AS_PDF, MoreMenuItem.PRINT,
         -> default.copy(enabled = state.isWebPage)
-        MoreMenuItem.EXTENSIONS, MoreMenuItem.PASSWORDS, MoreMenuItem.BOOKMARKS, MoreMenuItem.DOWNLOADS,
-        MoreMenuItem.HISTORY, MoreMenuItem.SETTINGS,
+        // Reader view and the PDF viewer are the browser's own pages, which the page saver cannot read.
+        MoreMenuItem.SAVE_PAGE -> default.copy(enabled = state.isWebPage && !state.isInReaderView && !state.isPdf)
+        MoreMenuItem.NEW_TAB, MoreMenuItem.EXTENSIONS, MoreMenuItem.PASSWORDS, MoreMenuItem.BOOKMARKS,
+        MoreMenuItem.DOWNLOADS, MoreMenuItem.HISTORY, MoreMenuItem.SETTINGS,
         -> default
     }
 }

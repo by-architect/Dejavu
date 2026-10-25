@@ -462,4 +462,8 @@
     <string name="dejavu_workspace_firefox_limits">Firefox Sync-ین محدودیت‌لری</string>
     <string name="dejavu_workspace_firefox_device">Firefox Sync هر جیهازین یالنیز آچیق تاغلارینی پایلاشیر. بورادا آچدیغینیز یا باغلادیغینیز تاغلار او جیهازدا دا آچیلیر یا باغلانیر، اما تاغلاری برکیده، پوشه یا اساس اَلاوه ائده، یا دا کانتینر سئچه بیلمزسینیز. آد و آیکون جیهازدان گلیر، سئچدیگینیز رنگلر ایسه بو تلفنده قالیر.</string>
     <string name="dejavu_workspace_firefox_own">Firefox Sync ایش ساحه‌لرینی پایلاشمیر، بونا گؤره ده بو ایش ساحه‌سی، برکیدیلمیش تاغلاری و پوشه‌لری ایله بیرلیکده، بو تلفنده قالیر. Firefox اونون آچیق تاغلارینی بو تلفنین تاغلاری کیمی گؤستریر.</string>
+    <string name="dejavu_menu_new_tab">یئنی تاغ</string>
+    <string name="dejavu_menu_save_page">صفحه‌نی ساخلا</string>
+    <string name="dejavu_save_page_saving">صفحه ساخلانیر…</string>
+    <string name="dejavu_save_page_failed">بو صفحه ساخلانا بیلمه‌دی. یئنیدن جهد ادین.</string>
 </resources>

@@ -478,4 +478,8 @@
     <string name="dejavu_workspace_firefox_limits">Cuingichte le Firefox Sync</string>
     <string name="dejavu_workspace_firefox_device">Cha co-roinn Firefox Sync ach na tabaichean fosgailte aig gach uidheam. Fosglaidh no dùinidh tabaichean a dh\'fhosglas no a dhùineas tu an-seo air an uidheam sin cuideachd, ach chan urrainn dhut tabaichean a phrìneachadh, pasganan no feumalachdan a chur ris no soitheach a thaghadh. Thig an t-ainm is an ìomhaigheag on uidheam, agus fanaidh na dathan a thaghas tu air an fhòn seo.</string>
     <string name="dejavu_workspace_firefox_own">Cha co-roinn Firefox Sync àiteachan-obrach, mar sin fanaidh an t-àite-obrach seo, còmhla ris na tabaichean prìnichte is na pasganan aige, air an fhòn seo. Seallaidh Firefox na tabaichean fosgailte aige mar thabaichean an fhòn seo.</string>
+    <string name="dejavu_menu_new_tab">Taba ùr</string>
+    <string name="dejavu_menu_save_page">Sàbhail an duilleag</string>
+    <string name="dejavu_save_page_saving">A\' sàbhaladh na duilleige…</string>
+    <string name="dejavu_save_page_failed">Cha b\' urrainn dhuinn an duilleag seo a shàbhaladh. Feuch ris a-rithist.</string>
 </resources>

@@ -462,4 +462,8 @@
     <string name="dejavu_workspace_firefox_limits">Durch Firefox Sync eingeschränkt</string>
     <string name="dejavu_workspace_firefox_device">Firefox Sync teilt nur die offenen Tabs jedes Geräts. Tabs, die du hier öffnest oder schließt, werden auch auf dem Gerät geöffnet oder geschlossen, aber du kannst keine Tabs anheften, keine Ordner oder Favoriten hinzufügen und keinen Container wählen. Name und Symbol stammen vom Gerät, und die Farben, die du auswählst, bleiben auf diesem Telefon.</string>
     <string name="dejavu_workspace_firefox_own">Firefox Sync teilt keine Arbeitsbereiche, daher bleibt dieser Arbeitsbereich mit seinen angehefteten Tabs und Ordnern auf diesem Telefon. Firefox zeigt seine offenen Tabs als Tabs dieses Telefons an.</string>
+    <string name="dejavu_menu_new_tab">Neuer Tab</string>
+    <string name="dejavu_menu_save_page">Seite speichern</string>
+    <string name="dejavu_save_page_saving">Seite wird gespeichert …</string>
+    <string name="dejavu_save_page_failed">Diese Seite konnte nicht gespeichert werden. Versuche es erneut.</string>
 </resources>

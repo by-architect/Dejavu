@@ -462,4 +462,8 @@
     <string name="dejavu_workspace_firefox_limits">Limitou da Firefox Sync</string>
     <string name="dejavu_workspace_firefox_device">Firefox Sync o condividde solo i feuggi averti de ògni dispoxitivo. I feuggi che t\'arvi ò che ti særi chì s\'arvan ò se særan ascì in sce quello dispoxitivo, ma no ti peu fissâ feuggi, azzonze cartelle ò essençiali, né çerne un contenitô. O nomme e l\'icona vegnan da-o dispoxitivo, e i coloî che ti çerni restan in sce sto telefono.</string>
     <string name="dejavu_workspace_firefox_own">Firefox Sync o no condividde i spaçi de travaggio, coscì sto spaçio de travaggio, co-i sò feuggi fissæ e e sò cartelle, o resta in sce sto telefono. Firefox o mostra i sò feuggi averti comme feuggi de sto telefono.</string>
+    <string name="dejavu_menu_new_tab">Neuvo feuggio</string>
+    <string name="dejavu_menu_save_page">Sarva pagina</string>
+    <string name="dejavu_save_page_saving">Sarvando a pagina…</string>
+    <string name="dejavu_save_page_failed">No l\'è stæto poscibile sarvâ sta pagina. Preuva torna.</string>
 </resources>

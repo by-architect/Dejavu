@@ -478,4 +478,8 @@
     <string name="dejavu_workspace_firefox_limits">Wobmjezowanja Firefox Sync</string>
     <string name="dejavu_workspace_firefox_device">Firefox Sync jenož wočinjene rajtarki kóždeho grata dźěli. Rajtarki, kotrež tu wočiniš abo začiniš, so tež na tym graće wočinjeja abo začinjeja, ale njemóžeš rajtarki připjeć, zarjadniki abo najwažniše přidać abo kontejner wubrać. Mjeno a symbol z grata pochadźatej, a barby, kotrež wuběraš, na tutym telefonje wostanu.</string>
     <string name="dejavu_workspace_firefox_own">Firefox Sync dźěłowe rumy njedźěli, tohodla tutón dźěłowy rum ze swojimi připjatymi rajtarkami a zarjadnikami na tutym telefonje wostanje. Firefox jeho wočinjene rajtarki jako rajtarki tutoho telefona pokazuje.</string>
+    <string name="dejavu_menu_new_tab">Nowy rajtark</string>
+    <string name="dejavu_menu_save_page">Stronu składować</string>
+    <string name="dejavu_save_page_saving">Strona so składuje…</string>
+    <string name="dejavu_save_page_failed">Tuta strona njeda so składować. Spytaj hišće raz.</string>
 </resources>

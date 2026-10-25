@@ -462,4 +462,8 @@
     <string name="dejavu_workspace_firefox_limits">Firefox Sync పరిమితులు</string>
     <string name="dejavu_workspace_firefox_device">Firefox Sync ప్రతి పరికరం యొక్క తెరిచిన ట్యాబులను మాత్రమే పంచుకుంటుంది. మీరు ఇక్కడ తెరిచే లేదా మూసివేసే ట్యాబులు ఆ పరికరంలో కూడా తెరుచుకుంటాయి లేదా మూసుకుంటాయి, కానీ మీరు ట్యాబులను పిన్ చేయలేరు, ఫోల్డర్లను లేదా ముఖ్యమైనవాటిని చేర్చలేరు, లేదా కంటైనర్‌ను ఎంచుకోలేరు. పేరు మరియు చిహ్నం పరికరం నుండి వస్తాయి, మరియు మీరు ఎంచుకునే రంగులు ఈ ఫోనులోనే ఉంటాయి.</string>
     <string name="dejavu_workspace_firefox_own">Firefox Sync కార్యస్థలాలను పంచుకోదు, కాబట్టి ఈ కార్యస్థలం, దాని పిన్ చేసిన ట్యాబులు మరియు ఫోల్డర్లతో సహా, ఈ ఫోనులోనే ఉంటుంది. Firefox దీని తెరిచిన ట్యాబులను ఈ ఫోను ట్యాబులుగా చూపిస్తుంది.</string>
+    <string name="dejavu_menu_new_tab">కొత్త ట్యాబు</string>
+    <string name="dejavu_menu_save_page">పేజీని భద్రపరచు</string>
+    <string name="dejavu_save_page_saving">పేజీని భద్రపరుస్తోంది…</string>
+    <string name="dejavu_save_page_failed">ఈ పేజీని భద్రపరచలేకపోయింది. మళ్లీ ప్రయత్నించండి.</string>
 </resources>

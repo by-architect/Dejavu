@@ -462,4 +462,8 @@
     <string name="dejavu_workspace_firefox_limits">Περιορισμοί του Firefox Sync</string>
     <string name="dejavu_workspace_firefox_device">Το Firefox Sync μοιράζεται μόνο τις ανοικτές καρτέλες κάθε συσκευής. Οι καρτέλες που ανοίγετε ή κλείνετε εδώ ανοίγουν ή κλείνουν και σε εκείνη τη συσκευή, αλλά δεν μπορείτε να καρφιτσώνετε καρτέλες, να προσθέτετε φακέλους ή αγαπημένα ή να επιλέγετε περιέκτη. Το όνομα και το εικονίδιο προέρχονται από τη συσκευή, ενώ τα χρώματα που επιλέγετε παραμένουν σε αυτό το τηλέφωνο.</string>
     <string name="dejavu_workspace_firefox_own">Το Firefox Sync δεν μοιράζεται χώρους εργασίας, οπότε αυτός ο χώρος εργασίας, μαζί με τις καρφιτσωμένες καρτέλες και τους φακέλους του, παραμένει σε αυτό το τηλέφωνο. Το Firefox εμφανίζει τις ανοικτές καρτέλες του ως καρτέλες αυτού του τηλεφώνου.</string>
+    <string name="dejavu_menu_new_tab">Νέα καρτέλα</string>
+    <string name="dejavu_menu_save_page">Αποθήκευση σελίδας</string>
+    <string name="dejavu_save_page_saving">Αποθήκευση σελίδας…</string>
+    <string name="dejavu_save_page_failed">Δεν ήταν δυνατή η αποθήκευση αυτής της σελίδας. Δοκιμάστε ξανά.</string>
 </resources>

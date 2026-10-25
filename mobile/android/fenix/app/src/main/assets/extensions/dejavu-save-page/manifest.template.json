@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "save-page@dejavu"
+    }
+  },
+  "name": "Dejavu - Save page",
+  "version": "${version}",
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["save-page.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "permissions": [
+    "geckoViewAddons",
+    "nativeMessaging",
+    "nativeMessagingFromContent",
+    "<all_urls>"
+  ]
+}

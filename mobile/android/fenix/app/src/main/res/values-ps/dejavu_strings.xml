@@ -462,4 +462,8 @@
     <string name="dejavu_workspace_firefox_limits">د Firefox Sync لخوا محدود</string>
     <string name="dejavu_workspace_firefox_device">Firefox Sync یوازې د هرې وسیلې خلاص ټبونه شریکوي. هغه ټبونه چې تاسو یې دلته خلاصوئ یا بندوئ، په هغې وسیله کې هم خلاصېږي یا بندېږي، خو تاسو نه شئ کولی ټبونه پین کړئ، پوښې یا مهمې ویب پاڼې زیاتې کړئ، یا کانتینر وټاکئ. نوم او آیکون له وسیلې راځي، او هغه رنګونه چې تاسو یې ټاکئ په دې تلیفون کې پاتې کېږي.</string>
     <string name="dejavu_workspace_firefox_own">Firefox Sync ساحې نه شریکوي، نو دا ساحه، د خپلو پین شویو ټبونو او پوښو سره، په دې تلیفون کې پاتې کېږي. Firefox د دې ساحې خلاص ټبونه د دې تلیفون د ټبونو په توګه ښیي.</string>
+    <string name="dejavu_menu_new_tab">نوی ټب</string>
+    <string name="dejavu_menu_save_page">پاڼه خوندي کول</string>
+    <string name="dejavu_save_page_saving">پاڼه خوندي کېږي…</string>
+    <string name="dejavu_save_page_failed">دا پاڼه خوندي نه شوه. بیا هڅه وکړئ.</string>
 </resources>

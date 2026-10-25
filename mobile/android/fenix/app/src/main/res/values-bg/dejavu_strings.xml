@@ -462,4 +462,8 @@
     <string name="dejavu_workspace_firefox_limits">Ограничено от Firefox Sync</string>
     <string name="dejavu_workspace_firefox_device">Firefox Sync споделя само отворените раздели на всяко устройство. Разделите, които отваряте или затваряте тук, се отварят или затварят и на това устройство, но не можете да закачате раздели, да добавяте папки или Любими, нито да избирате контейнер. Името и иконата идват от устройството, а цветовете, които изберете, остават на този телефон.</string>
     <string name="dejavu_workspace_firefox_own">Firefox Sync не споделя работни пространства, затова това работно пространство, заедно със закачените си раздели и папки, остава на този телефон. Firefox показва отворените му раздели като раздели на този телефон.</string>
+    <string name="dejavu_menu_new_tab">Нов раздел</string>
+    <string name="dejavu_menu_save_page">Запазване на страницата</string>
+    <string name="dejavu_save_page_saving">Запазване на страницата…</string>
+    <string name="dejavu_save_page_failed">Страницата не можа да бъде запазена. Опитайте отново.</string>
 </resources>

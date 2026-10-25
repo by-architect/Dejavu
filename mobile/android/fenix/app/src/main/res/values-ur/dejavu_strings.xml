@@ -462,4 +462,8 @@
     <string name="dejavu_workspace_firefox_limits">Firefox Sync کی حدود</string>
     <string name="dejavu_workspace_firefox_device">Firefox Sync ہر ڈیوائس کے صرف کھلے ٹیبز شیئر کرتا ہے۔ جو ٹیبز آپ یہاں کھولتے یا بند کرتے ہیں وہ اس ڈیوائس پر بھی کھلتے یا بند ہوتے ہیں، لیکن آپ ٹیبز پن نہیں کر سکتے، فولڈرز یا اہم شامل نہیں کر سکتے، اور نہ ہی کوئی کنٹینر منتخب کر سکتے ہیں۔ نام اور آئیکن ڈیوائس سے آتے ہیں، اور جو رنگ آپ چنتے ہیں وہ اسی فون پر رہتے ہیں۔</string>
     <string name="dejavu_workspace_firefox_own">Firefox Sync ورک اسپیسز شیئر نہیں کرتا، اس لیے یہ ورک اسپیس، اپنے پن کردہ ٹیبز اور فولڈرز سمیت، اسی فون پر رہتی ہے۔ Firefox اس کے کھلے ٹیبز کو اس فون کے ٹیبز کے طور پر دکھاتا ہے۔</string>
+    <string name="dejavu_menu_new_tab">نیا ٹیب</string>
+    <string name="dejavu_menu_save_page">صفحہ محفوظ کریں</string>
+    <string name="dejavu_save_page_saving">صفحہ محفوظ کیا جا رہا ہے…</string>
+    <string name="dejavu_save_page_failed">یہ صفحہ محفوظ نہیں ہو سکا۔ دوبارہ کوشش کریں۔</string>
 </resources>
