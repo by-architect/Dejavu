@@ -458,4 +458,8 @@
     <string name="dejavu_menu_save_page">Fi ojú-ìwé pamọ́</string>
     <string name="dejavu_save_page_saving">Ń fi ojú-ìwé pamọ́…</string>
     <string name="dejavu_save_page_failed">A kò lè fi ojú-ìwé yìí pamọ́. Tún gbìyànjú.</string>
+    <string name="dejavu_feature_tab_zoom">Àwọn táàbù ń fẹ̀ sí i, wọ́n sì ń kéré láti ojú-ìwé ilé</string>
+    <string name="dejavu_feature_bar_layouts">Gbé Ọ̀pá Àdírẹ́sì sí òkè tàbí ìsàlẹ̀</string>
+    <string name="dejavu_feature_wallpaper">Fún ibi-iṣẹ́ ní ìṣẹ̀ṣọ́ ògiri</string>
+    <string name="dejavu_feature_save_page">Fi àwọn ojú-ìwé pamọ́ láti kà láìsí íńtánẹ́ẹ̀tì</string>
 </resources>

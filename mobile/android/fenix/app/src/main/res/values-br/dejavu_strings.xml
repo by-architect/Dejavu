@@ -490,4 +490,8 @@
     <string name="dejavu_menu_save_page">Enrollañ ar bajenn</string>
     <string name="dejavu_save_page_saving">Oc’h enrollañ ar bajenn…</string>
     <string name="dejavu_save_page_failed">N’haller ket enrollañ ar bajenn-mañ. Klaskit en-dro.</string>
+    <string name="dejavu_feature_tab_zoom">Zoumañ a ra an ivinelloù diwar ar skramm degemer hag outañ</string>
+    <string name="dejavu_feature_bar_layouts">Lakaat ar varrenn chomlec\'h e krec\'h pe en traoñ</string>
+    <string name="dejavu_feature_wallpaper">Reiñ un drekleur d\'un egor labour</string>
+    <string name="dejavu_feature_save_page">Enrollañ pajennoù evit lenn hep Internet</string>
 </resources>

@@ -474,4 +474,8 @@
     <string name="dejavu_menu_save_page">Desa la pàgina</string>
     <string name="dejavu_save_page_saving">S\'està desant la pàgina…</string>
     <string name="dejavu_save_page_failed">No s\'ha pogut desar aquesta pàgina. Torneu-ho a provar.</string>
+    <string name="dejavu_feature_tab_zoom">Les pestanyes s\'amplien i es redueixen des de la pantalla d\'inici</string>
+    <string name="dejavu_feature_bar_layouts">Poseu la barra d\'adreces a dalt o a baix</string>
+    <string name="dejavu_feature_wallpaper">Doneu un fons de pantalla a un espai de treball</string>
+    <string name="dejavu_feature_save_page">Deseu pàgines per llegir-les sense internet</string>
 </resources>

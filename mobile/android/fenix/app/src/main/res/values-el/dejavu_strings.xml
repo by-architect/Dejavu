@@ -466,4 +466,8 @@
     <string name="dejavu_menu_save_page">Αποθήκευση σελίδας</string>
     <string name="dejavu_save_page_saving">Αποθήκευση σελίδας…</string>
     <string name="dejavu_save_page_failed">Δεν ήταν δυνατή η αποθήκευση αυτής της σελίδας. Δοκιμάστε ξανά.</string>
+    <string name="dejavu_feature_tab_zoom">Οι καρτέλες μεγεθύνονται και σμικρύνονται από την αρχική οθόνη</string>
+    <string name="dejavu_feature_bar_layouts">Τοποθετήστε τη γραμμή διευθύνσεων πάνω ή κάτω</string>
+    <string name="dejavu_feature_wallpaper">Δώστε ταπετσαρία σε έναν χώρο εργασίας</string>
+    <string name="dejavu_feature_save_page">Αποθηκεύστε σελίδες για ανάγνωση χωρίς σύνδεση</string>
 </resources>

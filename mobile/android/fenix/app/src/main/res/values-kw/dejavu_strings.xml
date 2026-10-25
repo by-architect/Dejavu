@@ -498,4 +498,8 @@
     <string name="dejavu_menu_save_page">Gwitha an folen</string>
     <string name="dejavu_save_page_saving">Ow kwitha an folen…</string>
     <string name="dejavu_save_page_failed">Ny yllys gwitha an folen ma. Assay arta.</string>
+    <string name="dejavu_feature_tab_zoom">Tabs a lowarha ha dhe-ves a\'n skrin tre</string>
+    <string name="dejavu_feature_bar_layouts">Settya an varr trigva a-wartha po a-woles</string>
+    <string name="dejavu_feature_wallpaper">Ro paper-fos dhe dhyller-ober</string>
+    <string name="dejavu_feature_save_page">Gwitha folennow rag redya heb kesrosweyth</string>
 </resources>

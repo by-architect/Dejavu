@@ -466,4 +466,8 @@
     <string name="dejavu_menu_save_page">Alzar a pachina</string>
     <string name="dejavu_save_page_saving">Alzando a pachina…</string>
     <string name="dejavu_save_page_failed">No s\'ha puesto alzar esta pachina. Torna a intentar-lo.</string>
+    <string name="dejavu_feature_tab_zoom">As pestanyas fan zoom entrando y salindo d\'a pantalla d\'inicio</string>
+    <string name="dejavu_feature_bar_layouts">Mete a barra d\'adrezas dalto u debaixo</string>
+    <string name="dejavu_feature_wallpaper">Da un fondo de pantalla a un espacio de treballo</string>
+    <string name="dejavu_feature_save_page">Alza pachinas pa leyer-las sin internet</string>
 </resources>

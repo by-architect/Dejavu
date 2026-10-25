@@ -474,4 +474,8 @@
     <string name="dejavu_menu_save_page">Сачувај страницу</string>
     <string name="dejavu_save_page_saving">Чување странице…</string>
     <string name="dejavu_save_page_failed">Нисмо могли да сачувамо ову страницу. Покушајте поново.</string>
+    <string name="dejavu_feature_tab_zoom">Картице се увећавају и умањују са почетног екрана</string>
+    <string name="dejavu_feature_bar_layouts">Поставите адресну траку на врх или на дно</string>
+    <string name="dejavu_feature_wallpaper">Дајте радном простору позадину</string>
+    <string name="dejavu_feature_save_page">Сачувајте странице за читање без интернета</string>
 </resources>

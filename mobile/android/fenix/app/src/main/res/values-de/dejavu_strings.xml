@@ -466,4 +466,8 @@
     <string name="dejavu_menu_save_page">Seite speichern</string>
     <string name="dejavu_save_page_saving">Seite wird gespeichert …</string>
     <string name="dejavu_save_page_failed">Diese Seite konnte nicht gespeichert werden. Versuche es erneut.</string>
+    <string name="dejavu_feature_tab_zoom">Tabs zoomen vom Startbildschirm hinein und hinaus</string>
+    <string name="dejavu_feature_bar_layouts">Adressleiste oben oder unten platzieren</string>
+    <string name="dejavu_feature_wallpaper">Einem Arbeitsbereich ein Hintergrundbild geben</string>
+    <string name="dejavu_feature_save_page">Seiten speichern und ohne Internet lesen</string>
 </resources>

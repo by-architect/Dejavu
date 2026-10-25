@@ -466,4 +466,8 @@
     <string name="dejavu_menu_save_page">Səhifəni saxla</string>
     <string name="dejavu_save_page_saving">Səhifə saxlanılır…</string>
     <string name="dejavu_save_page_failed">Bu səhifəni saxlamaq mümkün olmadı. Yenidən cəhd edin.</string>
+    <string name="dejavu_feature_tab_zoom">Vərəqlər ana ekrandan böyüyüb kiçilir</string>
+    <string name="dejavu_feature_bar_layouts">Ünvan sətrini yuxarıda və ya aşağıda yerləşdirin</string>
+    <string name="dejavu_feature_wallpaper">İş sahəsinə divar kağızı verin</string>
+    <string name="dejavu_feature_save_page">Səhifələri internetsiz oxumaq üçün saxlayın</string>
 </resources>

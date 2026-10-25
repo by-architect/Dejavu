@@ -499,4 +499,8 @@
     <string name="dejavu_menu_save_page">पेज सेव करें</string>
     <string name="dejavu_save_page_saving">पेज सेव किया जा रहा है…</string>
     <string name="dejavu_save_page_failed">यह पेज सेव नहीं किया जा सका। फिर से कोशिश करें।</string>
+    <string name="dejavu_feature_tab_zoom">टैब होम स्क्रीन पर ज़ूम इन और ज़ूम आउट होते हैं</string>
+    <string name="dejavu_feature_bar_layouts">एड्रेस बार को ऊपर या नीचे रखें</string>
+    <string name="dejavu_feature_wallpaper">वर्कस्पेस को वॉलपेपर दें</string>
+    <string name="dejavu_feature_save_page">पेज सेव करें और बिना इंटरनेट के पढ़ें</string>
 </resources>

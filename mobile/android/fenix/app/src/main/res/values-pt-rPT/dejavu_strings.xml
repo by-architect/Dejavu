@@ -474,4 +474,8 @@
     <string name="dejavu_menu_save_page">Guardar página</string>
     <string name="dejavu_save_page_saving">A guardar a página…</string>
     <string name="dejavu_save_page_failed">Não foi possível guardar esta página. Tente novamente.</string>
+    <string name="dejavu_feature_tab_zoom">Os separadores aumentam e diminuem a partir do ecrã inicial</string>
+    <string name="dejavu_feature_bar_layouts">Coloca a barra de endereço em cima ou em baixo</string>
+    <string name="dejavu_feature_wallpaper">Dá um fundo a um espaço de trabalho</string>
+    <string name="dejavu_feature_save_page">Guarda páginas para ler sem internet</string>
 </resources>

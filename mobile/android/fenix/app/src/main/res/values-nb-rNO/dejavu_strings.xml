@@ -466,4 +466,8 @@
     <string name="dejavu_menu_save_page">Lagre siden</string>
     <string name="dejavu_save_page_saving">Lagrer siden …</string>
     <string name="dejavu_save_page_failed">Kunne ikke lagre denne siden. Prøv igjen.</string>
+    <string name="dejavu_feature_tab_zoom">Faner zoomer inn og ut fra startskjermen</string>
+    <string name="dejavu_feature_bar_layouts">Plasser adresselinjen øverst eller nederst</string>
+    <string name="dejavu_feature_wallpaper">Gi et arbeidsområde et bakgrunnsbilde</string>
+    <string name="dejavu_feature_save_page">Lagre sider du kan lese uten internett</string>
 </resources>

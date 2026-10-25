@@ -4,10 +4,12 @@
 
 package org.mozilla.fenix.dejavu.sync
 
+import androidx.annotation.StringRes
 import kotlin.math.roundToInt
 import mozilla.components.browser.state.state.ContainerState
 import org.json.JSONArray
 import org.json.JSONObject
+import org.mozilla.fenix.R
 import org.mozilla.fenix.dejavu.containers.ContainerColor
 import org.mozilla.fenix.dejavu.workspaces.WorkspaceTheme
 
@@ -95,14 +97,19 @@ internal fun containerIconOf(value: Any?): ContainerState.Icon =
     ContainerState.Icon.entries.firstOrNull { it.icon == value } ?: ContainerState.Icon.CIRCLE
 
 /**
- * Firefox's four default containers, which Zen syncs under well-known ids instead of per-profile ones. Dejavu creates
- * them when a synced space or tab uses one.
+ * Firefox's four default containers, which Zen syncs under well-known ids instead of per-profile ones. A fresh install
+ * starts with them, as Zen does, and Dejavu creates them again when a synced space or tab uses one.
  */
-internal enum class BuiltinContainer(val guid: String, val icon: ContainerState.Icon, val color: ContainerColor) {
-    PERSONAL("builtin-1", ContainerState.Icon.FINGERPRINT, ContainerColor.BLUE),
-    WORK("builtin-2", ContainerState.Icon.BRIEFCASE, ContainerColor.ORANGE),
-    BANKING("builtin-3", ContainerState.Icon.DOLLAR, ContainerColor.GREEN),
-    SHOPPING("builtin-4", ContainerState.Icon.CART, ContainerColor.PINK),
+internal enum class BuiltinContainer(
+    val guid: String,
+    val icon: ContainerState.Icon,
+    val color: ContainerColor,
+    @param:StringRes val label: Int,
+) {
+    PERSONAL("builtin-1", ContainerState.Icon.FINGERPRINT, ContainerColor.BLUE, R.string.dejavu_container_personal),
+    WORK("builtin-2", ContainerState.Icon.BRIEFCASE, ContainerColor.ORANGE, R.string.dejavu_container_work),
+    BANKING("builtin-3", ContainerState.Icon.DOLLAR, ContainerColor.GREEN, R.string.dejavu_container_banking),
+    SHOPPING("builtin-4", ContainerState.Icon.CART, ContainerColor.PINK, R.string.dejavu_container_shopping),
     ;
 
     companion object {

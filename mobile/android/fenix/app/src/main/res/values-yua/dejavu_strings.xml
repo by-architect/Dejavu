@@ -466,4 +466,8 @@
     <string name="dejavu_menu_save_page">Guardar página</string>
     <string name="dejavu_save_page_saving">Guardando página…</string>
     <string name="dejavu_save_page_failed">No se pudo guardar esta página. Inténtalo de nuevo.</string>
+    <string name="dejavu_feature_tab_zoom">Las pestañas se acercan y se alejan de la pantalla de inicio</string>
+    <string name="dejavu_feature_bar_layouts">Pon la barra de direcciones arriba o abajo</string>
+    <string name="dejavu_feature_wallpaper">Pon un fondo de pantalla a un espacio de trabajo</string>
+    <string name="dejavu_feature_save_page">Guarda páginas para leerlas sin internet</string>
 </resources>

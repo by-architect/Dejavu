@@ -466,4 +466,8 @@
     <string name="dejavu_menu_save_page">పేజీని భద్రపరచు</string>
     <string name="dejavu_save_page_saving">పేజీని భద్రపరుస్తోంది…</string>
     <string name="dejavu_save_page_failed">ఈ పేజీని భద్రపరచలేకపోయింది. మళ్లీ ప్రయత్నించండి.</string>
+    <string name="dejavu_feature_tab_zoom">ట్యాబ్‌లు హోమ్ స్క్రీన్ నుండి జూమ్ ఇన్ మరియు అవుట్ అవుతాయి</string>
+    <string name="dejavu_feature_bar_layouts">చిరునామా పట్టీని పైన లేదా కింద ఉంచండి</string>
+    <string name="dejavu_feature_wallpaper">కార్యస్థలానికి వాల్‌పేపర్ ఇవ్వండి</string>
+    <string name="dejavu_feature_save_page">ఇంటర్నెట్ లేకుండా చదవడానికి పేజీలను భద్రపరచండి</string>
 </resources>

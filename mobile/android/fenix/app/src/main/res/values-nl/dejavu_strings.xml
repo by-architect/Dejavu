@@ -466,4 +466,8 @@
     <string name="dejavu_menu_save_page">Pagina opslaan</string>
     <string name="dejavu_save_page_saving">Pagina opslaan…</string>
     <string name="dejavu_save_page_failed">Kan deze pagina niet opslaan. Probeer het opnieuw.</string>
+    <string name="dejavu_feature_tab_zoom">Tabbladen zoomen in en uit vanaf het startscherm</string>
+    <string name="dejavu_feature_bar_layouts">Zet de adresbalk boven- of onderaan</string>
+    <string name="dejavu_feature_wallpaper">Geef een werkruimte een achtergrond</string>
+    <string name="dejavu_feature_save_page">Sla pagina\'s op om zonder internet te lezen</string>
 </resources>

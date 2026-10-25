@@ -466,4 +466,8 @@
     <string name="dejavu_menu_save_page">Sarva a pàggina</string>
     <string name="dejavu_save_page_saving">Sarvannu a pàggina…</string>
     <string name="dejavu_save_page_failed">Nun potti sarvari sta pàggina. Prova arrè.</string>
+    <string name="dejavu_feature_tab_zoom">Li schedi s\'ingrannisciunu e si rimpicciuniscinu dâ schermata principali</string>
+    <string name="dejavu_feature_bar_layouts">Metti la barra di l\'indirizzu susu o iusu</string>
+    <string name="dejavu_feature_wallpaper">Duna un funnu a un spaziu di travagghiu</string>
+    <string name="dejavu_feature_save_page">Sarva i pàggini pi leggiri senza internet</string>
 </resources>

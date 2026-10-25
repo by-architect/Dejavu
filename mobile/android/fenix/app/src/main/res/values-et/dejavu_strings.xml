@@ -466,4 +466,8 @@
     <string name="dejavu_menu_save_page">Salvesta leht</string>
     <string name="dejavu_save_page_saving">Lehe salvestamine…</string>
     <string name="dejavu_save_page_failed">Selle lehe salvestamine ebaõnnestus. Proovi uuesti.</string>
+    <string name="dejavu_feature_tab_zoom">Kaardid suumivad avaekraanile ja sealt välja</string>
+    <string name="dejavu_feature_bar_layouts">Pane aadressiriba üles või alla</string>
+    <string name="dejavu_feature_wallpaper">Anna tööruumile taustapilt</string>
+    <string name="dejavu_feature_save_page">Salvesta lehed, et neid ilma internetita lugeda</string>
 </resources>

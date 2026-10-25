@@ -482,4 +482,8 @@
     <string name="dejavu_menu_save_page">Захаваць старонку</string>
     <string name="dejavu_save_page_saving">Захаванне старонкі…</string>
     <string name="dejavu_save_page_failed">Не ўдалося захаваць гэту старонку. Паспрабуйце зноў.</string>
+    <string name="dejavu_feature_tab_zoom">Карткі набліжаюцца і аддаляюцца ад галоўнага экрана</string>
+    <string name="dejavu_feature_bar_layouts">Змесціце адрасны радок уверсе або ўнізе</string>
+    <string name="dejavu_feature_wallpaper">Дайце прасторы шпалеры</string>
+    <string name="dejavu_feature_save_page">Захоўвайце старонкі, каб чытаць без інтэрнэту</string>
 </resources>

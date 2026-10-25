@@ -466,4 +466,8 @@
     <string name="dejavu_menu_save_page">Spara sida</string>
     <string name="dejavu_save_page_saving">Sparar sidan …</string>
     <string name="dejavu_save_page_failed">Det gick inte att spara den här sidan. Försök igen.</string>
+    <string name="dejavu_feature_tab_zoom">Flikar zoomar in och ut från startskärmen</string>
+    <string name="dejavu_feature_bar_layouts">Placera adressfältet överst eller nederst</string>
+    <string name="dejavu_feature_wallpaper">Ge en arbetsyta en bakgrundsbild</string>
+    <string name="dejavu_feature_save_page">Spara sidor för att läsa utan internet</string>
 </resources>

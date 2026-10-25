@@ -466,4 +466,8 @@
     <string name="dejavu_menu_save_page">ਸਫ਼ਾ ਸੰਭਾਲੋ</string>
     <string name="dejavu_save_page_saving">ਸਫ਼ਾ ਸੰਭਾਲਿਆ ਜਾ ਰਿਹਾ ਹੈ…</string>
     <string name="dejavu_save_page_failed">ਇਹ ਸਫ਼ਾ ਸੰਭਾਲਿਆ ਨਹੀਂ ਜਾ ਸਕਿਆ। ਫੇਰ ਕੋਸ਼ਿਸ਼ ਕਰਿਓ।</string>
+    <string name="dejavu_feature_tab_zoom">ਟੈਬਾਂ ਹੋਮ ਸਕਰੀਨ ਤੋਂ ਜ਼ੂਮ ਇਨ ਅਤੇ ਆਊਟ ਹੁੰਦੀਆਂ ਹਨ</string>
+    <string name="dejavu_feature_bar_layouts">ਪਤਾ ਪੱਟੀ ਨੂੰ ਉੱਪਰ ਜਾਂ ਹੇਠਾਂ ਰੱਖੋ</string>
+    <string name="dejavu_feature_wallpaper">ਵਰਕਸਪੇਸ ਨੂੰ ਵਾਲਪੇਪਰ ਦਿਓ</string>
+    <string name="dejavu_feature_save_page">ਇੰਟਰਨੈੱਟ ਤੋਂ ਬਿਨਾਂ ਪੜ੍ਹਨ ਲਈ ਸਫ਼ੇ ਸੰਭਾਲੋ</string>
 </resources>

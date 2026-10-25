@@ -466,4 +466,8 @@
     <string name="dejavu_menu_save_page">Sarva pagina</string>
     <string name="dejavu_save_page_saving">Sarvando a pagina…</string>
     <string name="dejavu_save_page_failed">No l\'è stæto poscibile sarvâ sta pagina. Preuva torna.</string>
+    <string name="dejavu_feature_tab_zoom">I tab s\'inggrandiscian e s\'impiccolisan da-o scermo prinçipâ</string>
+    <string name="dejavu_feature_bar_layouts">Mette a barra di indirissi in çimma o in fondo</string>
+    <string name="dejavu_feature_wallpaper">Dà un sfondo a un spaçio de travaggio</string>
+    <string name="dejavu_feature_save_page">Sarva e pagine pe lêze sensa Internet</string>
 </resources>

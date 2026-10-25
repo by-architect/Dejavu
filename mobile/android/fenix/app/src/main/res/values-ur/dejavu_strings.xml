@@ -466,4 +466,8 @@
     <string name="dejavu_menu_save_page">صفحہ محفوظ کریں</string>
     <string name="dejavu_save_page_saving">صفحہ محفوظ کیا جا رہا ہے…</string>
     <string name="dejavu_save_page_failed">یہ صفحہ محفوظ نہیں ہو سکا۔ دوبارہ کوشش کریں۔</string>
+    <string name="dejavu_feature_tab_zoom">ٹیبز ہوم اسکرین سے زوم ان اور آؤٹ ہوتے ہیں</string>
+    <string name="dejavu_feature_bar_layouts">ایڈریس بار کو اوپر یا نیچے رکھیں</string>
+    <string name="dejavu_feature_wallpaper">ورک اسپیس کو وال پیپر دیں</string>
+    <string name="dejavu_feature_save_page">انٹرنیٹ کے بغیر پڑھنے کے لیے صفحات محفوظ کریں</string>
 </resources>

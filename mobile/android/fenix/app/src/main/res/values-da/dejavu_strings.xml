@@ -466,4 +466,8 @@
     <string name="dejavu_menu_save_page">Gem side</string>
     <string name="dejavu_save_page_saving">Gemmer side …</string>
     <string name="dejavu_save_page_failed">Kunne ikke gemme denne side. Prøv igen.</string>
+    <string name="dejavu_feature_tab_zoom">Faneblade zoomer ind og ud fra startskærmen</string>
+    <string name="dejavu_feature_bar_layouts">Placer adresselinjen øverst eller nederst</string>
+    <string name="dejavu_feature_wallpaper">Giv et arbejdsområde en baggrund</string>
+    <string name="dejavu_feature_save_page">Gem sider, så du kan læse dem uden internet</string>
 </resources>

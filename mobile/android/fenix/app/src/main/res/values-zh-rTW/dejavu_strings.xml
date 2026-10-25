@@ -458,4 +458,8 @@
     <string name="dejavu_menu_save_page">儲存頁面</string>
     <string name="dejavu_save_page_saving">正在儲存頁面…</string>
     <string name="dejavu_save_page_failed">無法儲存此頁面，請重試。</string>
+    <string name="dejavu_feature_tab_zoom">分頁會從主畫面放大與縮小</string>
+    <string name="dejavu_feature_bar_layouts">將網址列放在頂端或底部</string>
+    <string name="dejavu_feature_wallpaper">為工作區設定背景圖</string>
+    <string name="dejavu_feature_save_page">儲存頁面，無需網路即可閱讀</string>
 </resources>

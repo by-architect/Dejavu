@@ -474,4 +474,8 @@
     <string name="dejavu_menu_save_page">Salva pàgina</string>
     <string name="dejavu_save_page_saving">Drio salvar ła pàgina…</string>
     <string name="dejavu_save_page_failed">No xe stà posibiłe salvar sta pàgina. Prova torna.</string>
+    <string name="dejavu_feature_tab_zoom">Le schede le se ingrandisse e le se rimpicisse da la schermada prinsipal</string>
+    <string name="dejavu_feature_bar_layouts">Meti la bara dei indirisi in alto o in baso</string>
+    <string name="dejavu_feature_wallpaper">Dà un sfondo a un spasio de laoro</string>
+    <string name="dejavu_feature_save_page">Salva le pàgine par lèxarle sensa internet</string>
 </resources>

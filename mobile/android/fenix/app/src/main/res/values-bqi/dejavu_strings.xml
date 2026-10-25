@@ -466,4 +466,8 @@
     <string name="dejavu_menu_save_page">زفت بلگه</string>
     <string name="dejavu_save_page_saving">زفت کردن بلگه…</string>
     <string name="dejavu_save_page_failed">نترست ای بلگه ن زفت کونه. ز نۊ قپ ریت کۊنین.</string>
+    <string name="dejavu_feature_tab_zoom">بلگه یل تو صفحه اصلی بزرگ و کۊچیک بۊنه</string>
+    <string name="dejavu_feature_bar_layouts">نوار نشۊوی ن بالا یا ژیر بذار</string>
+    <string name="dejavu_feature_wallpaper">به فضا کاقز دیواری بئه</string>
+    <string name="dejavu_feature_save_page">بلگه یل ن سی خنن بدۊن اینترنت زفت بکه</string>
 </resources>

@@ -466,4 +466,8 @@
     <string name="dejavu_menu_save_page">Salvar le pagina</string>
     <string name="dejavu_save_page_saving">Salvante le pagina…</string>
     <string name="dejavu_save_page_failed">Impossibile salvar iste pagina. Retenta.</string>
+    <string name="dejavu_feature_tab_zoom">Le schedas se amplia e se reduce ab le schermo initial</string>
+    <string name="dejavu_feature_bar_layouts">Pone le barra de adresse in alto o in basso</string>
+    <string name="dejavu_feature_wallpaper">Da un fundo a un spatio de labor</string>
+    <string name="dejavu_feature_save_page">Salva paginas pro leger los sin internet</string>
 </resources>

@@ -466,4 +466,8 @@
     <string name="dejavu_menu_save_page">Oldal mentése</string>
     <string name="dejavu_save_page_saving">Oldal mentése…</string>
     <string name="dejavu_save_page_failed">Nem sikerült az oldal mentése. Próbálja újra.</string>
+    <string name="dejavu_feature_tab_zoom">A lapok a kezdőképernyőről nagyítódnak ki, és oda zsugorodnak vissza</string>
+    <string name="dejavu_feature_bar_layouts">Tegye a címsávot felülre vagy alulra</string>
+    <string name="dejavu_feature_wallpaper">Adjon háttérképet a munkaterületnek</string>
+    <string name="dejavu_feature_save_page">Mentse az oldalakat, hogy internet nélkül olvashassa őket</string>
 </resources>

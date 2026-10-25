@@ -458,4 +458,8 @@
     <string name="dejavu_menu_save_page">စာမျက်နှာ သိမ်းရန်</string>
     <string name="dejavu_save_page_saving">စာမျက်နှာကို သိမ်းနေသည်…</string>
     <string name="dejavu_save_page_failed">ဤစာမျက်နှာကို သိမ်း၍ မရပါ။ ထပ်စမ်းကြည့်ပါ။</string>
+    <string name="dejavu_feature_tab_zoom">တက်ဘ်များ ပင်မစခရင်မှ ဇူးမ်ဝင်ပြီး ပြန်ထွက်သည်</string>
+    <string name="dejavu_feature_bar_layouts">လိပ်စာဘားကို အပေါ် သို့မဟုတ် အောက်တွင် ထားပါ</string>
+    <string name="dejavu_feature_wallpaper">လုပ်ငန်းခွင်တစ်ခုကို နောက်ခံပုံ ပေးပါ</string>
+    <string name="dejavu_feature_save_page">အင်တာနက်မလိုဘဲ ဖတ်ရန် စာမျက်နှာများ သိမ်းပါ</string>
 </resources>

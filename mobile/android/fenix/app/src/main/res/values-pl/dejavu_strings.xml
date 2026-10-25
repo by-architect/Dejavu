@@ -482,4 +482,8 @@
     <string name="dejavu_menu_save_page">Zapisz stronę</string>
     <string name="dejavu_save_page_saving">Zapisywanie strony…</string>
     <string name="dejavu_save_page_failed">Nie można zapisać tej strony. Spróbuj ponownie.</string>
+    <string name="dejavu_feature_tab_zoom">Karty przybliżają się i oddalają od ekranu głównego</string>
+    <string name="dejavu_feature_bar_layouts">Umieść pasek adresu na górze lub na dole</string>
+    <string name="dejavu_feature_wallpaper">Ustaw tapetę dla obszaru roboczego</string>
+    <string name="dejavu_feature_save_page">Zapisuj strony, aby czytać je bez internetu</string>
 </resources>

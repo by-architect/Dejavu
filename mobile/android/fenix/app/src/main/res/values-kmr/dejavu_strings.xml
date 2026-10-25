@@ -466,4 +466,8 @@
     <string name="dejavu_menu_save_page">Rûpelê tomar bike</string>
     <string name="dejavu_save_page_saving">Rûpel tê tomarkirin…</string>
     <string name="dejavu_save_page_failed">Ev rûpel nehat tomarkirin. Dîsa biceribîne.</string>
+    <string name="dejavu_feature_tab_zoom">Tab ji ekrana malê mezin û biçûk dibin</string>
+    <string name="dejavu_feature_bar_layouts">Darika navnîşanan li jor an jêr bi cih bike</string>
+    <string name="dejavu_feature_wallpaper">Wêneyê dîwêr bide qadekê</string>
+    <string name="dejavu_feature_save_page">Rûpelan tomar bike da ku bê înternetê bixwînî</string>
 </resources>

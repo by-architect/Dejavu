@@ -466,4 +466,8 @@
     <string name="dejavu_menu_save_page">Gardar páxina</string>
     <string name="dejavu_save_page_saving">Gardando a páxina…</string>
     <string name="dejavu_save_page_failed">Non se puido gardar esta páxina. Téntao de novo.</string>
+    <string name="dejavu_feature_tab_zoom">As lapelas achéganse e afástanse da pantalla de inicio</string>
+    <string name="dejavu_feature_bar_layouts">Pon a barra de enderezos arriba ou abaixo</string>
+    <string name="dejavu_feature_wallpaper">Dálle un fondo de pantalla a un espazo de traballo</string>
+    <string name="dejavu_feature_save_page">Garda páxinas para lelas sen internet</string>
 </resources>

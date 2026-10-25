@@ -466,4 +466,8 @@
     <string name="dejavu_menu_save_page">Tallenna sivu</string>
     <string name="dejavu_save_page_saving">Tallennetaan sivua …</string>
     <string name="dejavu_save_page_failed">Sivun tallennus epäonnistui. Yritä uudelleen.</string>
+    <string name="dejavu_feature_tab_zoom">Välilehdet zoomaavat aloitusnäytölle ja sieltä pois</string>
+    <string name="dejavu_feature_bar_layouts">Aseta osoitepalkki ylös tai alas</string>
+    <string name="dejavu_feature_wallpaper">Anna työtilalle taustakuva</string>
+    <string name="dejavu_feature_save_page">Tallenna sivuja luettavaksi ilman internetiä</string>
 </resources>

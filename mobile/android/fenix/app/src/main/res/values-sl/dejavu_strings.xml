@@ -482,4 +482,8 @@
     <string name="dejavu_menu_save_page">Shrani stran</string>
     <string name="dejavu_save_page_saving">Shranjevanje strani …</string>
     <string name="dejavu_save_page_failed">Te strani ni bilo mogoče shraniti. Poskusite znova.</string>
+    <string name="dejavu_feature_tab_zoom">Zavihki se povečajo in pomanjšajo z domačega zaslona</string>
+    <string name="dejavu_feature_bar_layouts">Naslovno vrstico postavite na vrh ali na dno</string>
+    <string name="dejavu_feature_wallpaper">Delovnemu prostoru nastavite ozadje</string>
+    <string name="dejavu_feature_save_page">Shranite strani za branje brez interneta</string>
 </resources>

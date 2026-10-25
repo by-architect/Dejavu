@@ -466,4 +466,8 @@
     <string name="dejavu_menu_save_page">صفحہ سیو کبو</string>
     <string name="dejavu_save_page_saving">صفحہ سیو ہننا…</string>
     <string name="dejavu_save_page_failed">دا صفحہ سیو نی ہتین۔ دوبارہ کوشش کبو۔</string>
+    <string name="dejavu_feature_tab_zoom">ٹیباک ہوم سکرین نا زوم ان و آؤٹ مریرہ</string>
+    <string name="dejavu_feature_bar_layouts">ڈس بار ئے برز یا چیر ایتبو</string>
+    <string name="dejavu_feature_wallpaper">ہر ورک سپیس ئے وال پیپر ایتبو</string>
+    <string name="dejavu_feature_save_page">صفحاتے انٹرنیٹ اٹ بغیر ہناؤ کن سیو کبو</string>
 </resources>

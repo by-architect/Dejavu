@@ -466,4 +466,8 @@
     <string name="dejavu_menu_save_page">Нигоҳ доштани саҳифа</string>
     <string name="dejavu_save_page_saving">Дар ҳоли нигоҳ доштани саҳифа…</string>
     <string name="dejavu_save_page_failed">Нигоҳ доштани ин саҳифа иҷро нашуд. Аз нав кӯшиш кунед.</string>
+    <string name="dejavu_feature_tab_zoom">Варақаҳо аз экрани асосӣ калон ва хурд мешаванд</string>
+    <string name="dejavu_feature_bar_layouts">Навори нишониро дар боло ё поин ҷойгир кунед</string>
+    <string name="dejavu_feature_wallpaper">Ба фазои корӣ тасвири замина диҳед</string>
+    <string name="dejavu_feature_save_page">Саҳифаҳоро барои хондан бе интернет нигоҳ доред</string>
 </resources>

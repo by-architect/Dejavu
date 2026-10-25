@@ -466,4 +466,8 @@
     <string name="dejavu_menu_save_page">Պահել էջը</string>
     <string name="dejavu_save_page_saving">Էջը պահվում է…</string>
     <string name="dejavu_save_page_failed">Չհաջողվեց պահել այս էջը։ Փորձեք կրկին։</string>
+    <string name="dejavu_feature_tab_zoom">Ներդիրները մեծանում և փոքրանում են գլխավոր էկրանից</string>
+    <string name="dejavu_feature_bar_layouts">Հասցեագոտին դրեք վերևում կամ ներքևում</string>
+    <string name="dejavu_feature_wallpaper">Տվեք տարածքին պաստառ</string>
+    <string name="dejavu_feature_save_page">Պահեք էջերը՝ առանց համացանցի կարդալու համար</string>
 </resources>

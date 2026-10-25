@@ -458,4 +458,8 @@
     <string name="dejavu_menu_save_page">Lưu trang</string>
     <string name="dejavu_save_page_saving">Đang lưu trang…</string>
     <string name="dejavu_save_page_failed">Không thể lưu trang này. Hãy thử lại.</string>
+    <string name="dejavu_feature_tab_zoom">Các thẻ phóng to và thu nhỏ từ màn hình chính</string>
+    <string name="dejavu_feature_bar_layouts">Đặt thanh địa chỉ ở trên cùng hoặc dưới cùng</string>
+    <string name="dejavu_feature_wallpaper">Đặt hình nền cho không gian làm việc</string>
+    <string name="dejavu_feature_save_page">Lưu trang để đọc khi không có internet</string>
 </resources>

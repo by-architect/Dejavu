@@ -466,4 +466,8 @@
     <string name="dejavu_menu_save_page">i-Save ang page</string>
     <string name="dejavu_save_page_saving">Nag-save sa page…</string>
     <string name="dejavu_save_page_failed">Dili ma-save kini nga page. Sulayi pag-usab.</string>
+    <string name="dejavu_feature_tab_zoom">Ang mga tab mo-zoom in ug out gikan sa home screen</string>
+    <string name="dejavu_feature_bar_layouts">Ibutang ang address bar sa taas o sa ubos</string>
+    <string name="dejavu_feature_wallpaper">Hatagi og wallpaper ang workspace</string>
+    <string name="dejavu_feature_save_page">I-save ang mga page aron mabasa nga walay internet</string>
 </resources>

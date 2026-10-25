@@ -466,4 +466,8 @@
     <string name="dejavu_menu_save_page">გვერდის შენახვა</string>
     <string name="dejavu_save_page_saving">გვერდი ინახება…</string>
     <string name="dejavu_save_page_failed">ამ გვერდის შენახვა ვერ მოხერხდა. სცადეთ ხელახლა.</string>
+    <string name="dejavu_feature_tab_zoom">ჩანართები საწყისი ეკრანიდან იზრდება და პატარავდება</string>
+    <string name="dejavu_feature_bar_layouts">მისამართების ველი განათავსეთ ზემოთ ან ქვემოთ</string>
+    <string name="dejavu_feature_wallpaper">მიეცით სივრცეს ფონი</string>
+    <string name="dejavu_feature_save_page">შეინახეთ გვერდები ინტერნეტის გარეშე წასაკითხად</string>
 </resources>

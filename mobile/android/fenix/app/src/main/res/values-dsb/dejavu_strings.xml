@@ -482,4 +482,8 @@
     <string name="dejavu_menu_save_page">Bok składowaś</string>
     <string name="dejavu_save_page_saving">Bok se składujo…</string>
     <string name="dejavu_save_page_failed">Toś ten bok njedajo se składowaś. Wopytaj hyšći raz.</string>
+    <string name="dejavu_feature_tab_zoom">Rejtariki se pśibližuju a wótwódalaju wót startoweje wobrazowki</string>
+    <string name="dejavu_feature_bar_layouts">Adresowe pólo górjejce abo dołojce połožyś</string>
+    <string name="dejavu_feature_wallpaper">Źěłowemu rumoju slězynowy wobraz daś</string>
+    <string name="dejavu_feature_save_page">Boki składowaś, aby je bźez internetu cytał</string>
 </resources>

@@ -466,4 +466,8 @@
     <string name="dejavu_menu_save_page">Sarva sa pàgina</string>
     <string name="dejavu_save_page_saving">Sarvende sa pàgina…</string>
     <string name="dejavu_save_page_failed">No est istadu possìbile sarvare custa pàgina. Torra a proare.</string>
+    <string name="dejavu_feature_tab_zoom">Is ischedas ingrandint e impitzinnint dae s\'ischermu printzipale</string>
+    <string name="dejavu_feature_bar_layouts">Pone sa barra de indiritzos in artu o in bassu</string>
+    <string name="dejavu_feature_wallpaper">Dae un\'isfundu de ischermu a un\'ispàtziu de traballu</string>
+    <string name="dejavu_feature_save_page">Sarva pàginas pro las lèghere sene internet</string>
 </resources>

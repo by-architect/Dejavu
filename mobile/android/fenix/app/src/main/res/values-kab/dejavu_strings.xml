@@ -466,4 +466,8 @@
     <string name="dejavu_menu_save_page">Sekles asebter</string>
     <string name="dejavu_save_page_saving">Asekles n usebter…</string>
     <string name="dejavu_save_page_failed">Yegguma ad yettwasekles usebter-a. Ɛreḍ tikkelt-nniḍen.</string>
+    <string name="dejavu_feature_tab_zoom">Iccaren ttemɣaren yerna ttemẓiyen seg ugdil agejdan</string>
+    <string name="dejavu_feature_bar_layouts">Err afeggag n tansiwin ɣer ufella neɣ ɣer wadda</string>
+    <string name="dejavu_feature_wallpaper">Efk tugna n ugilal i umkan n umahil</string>
+    <string name="dejavu_feature_save_page">Sekles isebtar akken ad ten-teɣreḍ war internet</string>
 </resources>

@@ -499,4 +499,8 @@
     <string name="dejavu_menu_save_page">પૃષ્ઠ સાચવો</string>
     <string name="dejavu_save_page_saving">પૃષ્ઠ સચવાઈ રહ્યું છે…</string>
     <string name="dejavu_save_page_failed">આ પૃષ્ઠ સાચવી શકાયું નહીં. ફરી પ્રયાસ કરો.</string>
+    <string name="dejavu_feature_tab_zoom">ટૅબ્સ હોમ સ્ક્રીન પર અને તેમાંથી ઝૂમ થાય છે</string>
+    <string name="dejavu_feature_bar_layouts">સરનામાં બારને ઉપર અથવા નીચે રાખો</string>
+    <string name="dejavu_feature_wallpaper">વર્કસ્પેસને વૉલપેપર આપો</string>
+    <string name="dejavu_feature_save_page">ઇન્ટરનેટ વગર વાંચવા માટે પૃષ્ઠો સાચવો</string>
 </resources>

@@ -25,6 +25,8 @@ import mozilla.components.browser.state.state.ContainerState
 import mozilla.components.feature.containers.ContainerMiddleware
 import org.json.JSONArray
 import org.json.JSONObject
+import org.mozilla.fenix.dejavu.features.wasUpdated
+import org.mozilla.fenix.dejavu.sync.BuiltinContainer
 
 /**
  * Container colors as Firefox desktop (and so Zen) names them today. android-components still uses the older names
@@ -204,8 +206,9 @@ class DejavuContainerStorage private constructor(private val context: Context) :
     private fun prefs() = context.getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE)
 
     private fun read(): List<ContainerRecord> {
-        val array = prefs().getString(KEY_CONTAINERS, null)?.let { runCatching { JSONArray(it) }.getOrNull() }
-            ?: return emptyList()
+        val saved = prefs().getString(KEY_CONTAINERS, null)
+            ?: return if (context.wasUpdated()) emptyList() else defaultContainers().also(::save)
+        val array = runCatching { JSONArray(saved) }.getOrNull() ?: return emptyList()
         return (0 until array.length()).mapNotNull { i ->
             val item = array.getJSONObject(i)
             val color = ContainerColor.fromKey(item.optString("color"))
@@ -220,6 +223,17 @@ class DejavuContainerStorage private constructor(private val context: Context) :
                 updatedAt = item.optLong("updatedAt"),
                 temporary = item.optBoolean("temporary"),
             )
+        }
+    }
+
+    /**
+     * The containers a fresh install starts with: Zen's four default ones, under the ids Zen syncs them with, so they
+     * become Zen's once synced and are not sent to Zen while they stay as they are.
+     */
+    private fun defaultContainers(): List<ContainerRecord> {
+        val now = System.currentTimeMillis()
+        return BuiltinContainer.entries.map {
+            ContainerRecord(it.guid, context.getString(it.label), it.color, it.icon, now, now)
         }
     }
 

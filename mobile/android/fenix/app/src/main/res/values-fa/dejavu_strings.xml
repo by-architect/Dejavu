@@ -466,4 +466,8 @@
     <string name="dejavu_menu_save_page">ذخیرهٔ صفحه</string>
     <string name="dejavu_save_page_saving">در حال ذخیرهٔ صفحه…</string>
     <string name="dejavu_save_page_failed">ذخیرهٔ این صفحه انجام نشد. دوباره امتحان کنید.</string>
+    <string name="dejavu_feature_tab_zoom">زبانه‌ها از صفحهٔ اصلی بزرگ و کوچک می‌شوند</string>
+    <string name="dejavu_feature_bar_layouts">نوار نشانی را بالا یا پایین بگذارید</string>
+    <string name="dejavu_feature_wallpaper">به یک فضای کاری تصویر پس‌زمینه بدهید</string>
+    <string name="dejavu_feature_save_page">صفحه‌ها را برای خواندن بدون اینترنت ذخیره کنید</string>
 </resources>

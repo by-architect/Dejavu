@@ -466,4 +466,8 @@
     <string name="dejavu_menu_save_page">පිටුව සුරකින්න</string>
     <string name="dejavu_save_page_saving">පිටුව සුරකිමින්…</string>
     <string name="dejavu_save_page_failed">මෙම පිටුව සුරැකීමට නොහැකි විය. නැවත උත්සාහ කරන්න.</string>
+    <string name="dejavu_feature_tab_zoom">ටැබ් මුල් තිරයට සහ මුල් තිරයෙන් විශාල වේ</string>
+    <string name="dejavu_feature_bar_layouts">ලිපින තීරුව ඉහළ හෝ පහළ තබන්න</string>
+    <string name="dejavu_feature_wallpaper">වැඩබිමකට බිතුපතක් දෙන්න</string>
+    <string name="dejavu_feature_save_page">අන්තර්ජාලය නැතිව කියවීමට පිටු සුරකින්න</string>
 </resources>

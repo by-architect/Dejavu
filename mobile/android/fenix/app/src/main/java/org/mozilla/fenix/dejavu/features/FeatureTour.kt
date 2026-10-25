@@ -138,6 +138,23 @@ enum class DejavuFeature(
         listOf(R.string.preferences_account_settings, R.string.dejavu_sync_source),
         iconsR.drawable.mozac_ic_avatar_circle_24,
     ),
+    TAB_ZOOM(R.string.dejavu_feature_tab_zoom, R.raw.dejavu_feature_tab_zoom),
+    BAR_LAYOUTS(
+        R.string.dejavu_feature_bar_layouts,
+        R.raw.dejavu_feature_bar_layouts,
+        listOf(R.string.dejavu_settings, R.string.preferences_customize),
+    ),
+    WALLPAPER(
+        R.string.dejavu_feature_wallpaper,
+        R.raw.dejavu_feature_wallpaper,
+        listOf(R.string.dejavu_workspace_menu, R.string.dejavu_workspace_edit),
+        iconsR.drawable.mozac_ic_ellipsis_vertical_24,
+    ),
+    SAVE_PAGE(
+        R.string.dejavu_feature_save_page,
+        R.raw.dejavu_feature_save_page,
+        listOf(R.string.dejavu_settings, R.string.dejavu_settings_more_menu),
+    ),
 }
 
 /**
@@ -175,6 +192,15 @@ object FeatureTour {
     /** What each version brought, oldest first. A version with something to show adds its chapter at the end. */
     val Releases = listOf(
         TourChapter(version = "2.0", features = listOf(DejavuFeature.FIREFOX_SYNC)),
+        TourChapter(
+            version = "3.0",
+            features = listOf(
+                DejavuFeature.TAB_ZOOM,
+                DejavuFeature.BAR_LAYOUTS,
+                DejavuFeature.WALLPAPER,
+                DejavuFeature.SAVE_PAGE,
+            ),
+        ),
     )
 
     /** Every chapter, as What's new in the settings shows them. */

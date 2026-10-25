@@ -466,4 +466,8 @@
     <string name="dejavu_menu_save_page">Ruaje faqen</string>
     <string name="dejavu_save_page_saving">Po ruhet faqja…</string>
     <string name="dejavu_save_page_failed">S\'u ruajt dot kjo faqe. Riprovoni.</string>
+    <string name="dejavu_feature_tab_zoom">Skedat zmadhohen e zvogëlohen nga ekrani kryesor</string>
+    <string name="dejavu_feature_bar_layouts">Vendoseni shtyllën e adresave sipër ose poshtë</string>
+    <string name="dejavu_feature_wallpaper">Jepini një sfond një hapësire pune</string>
+    <string name="dejavu_feature_save_page">Ruani faqe për t\'i lexuar pa internet</string>
 </resources>

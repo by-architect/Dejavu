@@ -466,4 +466,8 @@
     <string name="dejavu_menu_save_page">صفحه‌نی ساخلا</string>
     <string name="dejavu_save_page_saving">صفحه ساخلانیر…</string>
     <string name="dejavu_save_page_failed">بو صفحه ساخلانا بیلمه‌دی. یئنیدن جهد ادین.</string>
+    <string name="dejavu_feature_tab_zoom">تاغلار آنا اکراندان بؤیویوب کیچیلیر</string>
+    <string name="dejavu_feature_bar_layouts">آدرس چوبوغونو یوخاریدا یا آشاغیدا یئرلشدیرین</string>
+    <string name="dejavu_feature_wallpaper">ایش ساحه‌سینه دال پرده وئرین</string>
+    <string name="dejavu_feature_save_page">صفحه‌لری اینترنئتسیز اوخوماق اوچون ساخلایین</string>
 </resources>

@@ -466,4 +466,8 @@
     <string name="dejavu_menu_save_page">ପୃଷ୍ଠା ସେଭ୍ କରନ୍ତୁ</string>
     <string name="dejavu_save_page_saving">ପୃଷ୍ଠା ସେଭ୍ ହେଉଛି…</string>
     <string name="dejavu_save_page_failed">ଏହି ପୃଷ୍ଠା ସେଭ୍ କରିହେଲା ନାହିଁ। ପୁଣି ଚେଷ୍ଟା କରନ୍ତୁ।</string>
+    <string name="dejavu_feature_tab_zoom">ଟ୍ୟାବ୍‌ଗୁଡ଼ିକ ହୋମ୍ ସ୍କ୍ରିନ୍‌ରୁ ଜୁମ୍ ଇନ୍ ଓ ଆଉଟ୍ ହୁଏ</string>
+    <string name="dejavu_feature_bar_layouts">ଠିକଣା ବାର୍‌କୁ ଉପରେ କି ତଳେ ରଖନ୍ତୁ</string>
+    <string name="dejavu_feature_wallpaper">କାର୍ଯ୍ୟକ୍ଷେତ୍ରକୁ ଏକ ୱାଲପେପର ଦିଅନ୍ତୁ</string>
+    <string name="dejavu_feature_save_page">ଇଣ୍ଟରନେଟ୍ ବିନା ପଢ଼ିବାକୁ ପୃଷ୍ଠାଗୁଡ଼ିକ ସେଭ୍ କରନ୍ତୁ</string>
 </resources>

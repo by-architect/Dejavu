@@ -458,4 +458,8 @@
     <string name="dejavu_menu_save_page">o awen e lipu lon ilo ni</string>
     <string name="dejavu_save_page_saving">mi awen e lipu…</string>
     <string name="dejavu_save_page_failed">pakala la mi ken ala awen e lipu ni. o sin.</string>
+    <string name="dejavu_feature_tab_zoom">lipu li kama suli li kama lili tan lipu open</string>
+    <string name="dejavu_feature_bar_layouts">o ken pana e linja pi nasin lipu lon sewi anu lon anpa</string>
+    <string name="dejavu_feature_wallpaper">o pana e selo kule tawa kulupu poki</string>
+    <string name="dejavu_feature_save_page">o awen e lipu tawa lukin ala pi ilo kalama</string>
 </resources>

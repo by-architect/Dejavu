@@ -466,4 +466,8 @@
     <string name="dejavu_menu_save_page">Битне саклау</string>
     <string name="dejavu_save_page_saving">Бит саклана…</string>
     <string name="dejavu_save_page_failed">Бу битне саклап булмады. Яңадан тырышып карагыз.</string>
+    <string name="dejavu_feature_tab_zoom">Таблар баш экраннан зураеп һәм кечерәеп чыгалар</string>
+    <string name="dejavu_feature_bar_layouts">Адрес юлын өскә яки аска куегыз</string>
+    <string name="dejavu_feature_wallpaper">Эш өлкәсенә фон рәсеме куегыз</string>
+    <string name="dejavu_feature_save_page">Битләрне интернетсыз укыр өчен саклагыз</string>
 </resources>

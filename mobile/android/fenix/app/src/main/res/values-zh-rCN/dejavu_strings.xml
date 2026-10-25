@@ -458,4 +458,8 @@
     <string name="dejavu_menu_save_page">保存页面</string>
     <string name="dejavu_save_page_saving">正在保存页面…</string>
     <string name="dejavu_save_page_failed">无法保存此页面，请重试。</string>
+    <string name="dejavu_feature_tab_zoom">标签页从主屏幕放大和缩小</string>
+    <string name="dejavu_feature_bar_layouts">将地址栏放在顶部或底部</string>
+    <string name="dejavu_feature_wallpaper">为工作区设置壁纸</string>
+    <string name="dejavu_feature_save_page">保存页面，无需联网即可阅读</string>
 </resources>

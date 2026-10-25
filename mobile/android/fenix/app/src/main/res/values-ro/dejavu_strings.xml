@@ -474,4 +474,8 @@
     <string name="dejavu_menu_save_page">Salvează pagina</string>
     <string name="dejavu_save_page_saving">Se salvează pagina…</string>
     <string name="dejavu_save_page_failed">Nu s-a putut salva această pagină. Încearcă din nou.</string>
+    <string name="dejavu_feature_tab_zoom">Filele se măresc și se micșorează de pe ecranul principal</string>
+    <string name="dejavu_feature_bar_layouts">Pune bara de adrese sus sau jos</string>
+    <string name="dejavu_feature_wallpaper">Dă un fundal unui spațiu de lucru</string>
+    <string name="dejavu_feature_save_page">Salvează pagini pentru a le citi fără internet</string>
 </resources>

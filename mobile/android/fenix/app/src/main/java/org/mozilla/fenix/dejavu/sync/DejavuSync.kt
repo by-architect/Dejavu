@@ -896,14 +896,7 @@ private class DejavuSpacesData(private val context: Context) : SpacesLocalData, 
     override fun useEssentialsPerContainer(enabled: Boolean) =
         DejavuSettings.get(context).setEssentialsPerContainerFromSync(enabled)
 
-    override fun builtinName(container: BuiltinContainer): String = context.getString(
-        when (container) {
-            BuiltinContainer.PERSONAL -> R.string.dejavu_container_personal
-            BuiltinContainer.WORK -> R.string.dejavu_container_work
-            BuiltinContainer.BANKING -> R.string.dejavu_container_banking
-            BuiltinContainer.SHOPPING -> R.string.dejavu_container_shopping
-        },
-    )
+    override fun builtinName(container: BuiltinContainer): String = context.getString(container.label)
 
     private companion object {
         const val CLOSE_TIMEOUT_MS = 5_000L

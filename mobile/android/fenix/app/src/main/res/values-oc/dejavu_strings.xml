@@ -466,4 +466,8 @@
     <string name="dejavu_menu_save_page">Enregistrar la pagina</string>
     <string name="dejavu_save_page_saving">Enregistrament de la pagina…</string>
     <string name="dejavu_save_page_failed">Impossible d’enregistrar aquesta pagina. Tornatz ensajar.</string>
+    <string name="dejavu_feature_tab_zoom">Los onglets fan un zoom d’intrada e de sortida dempuèi l’ecran d’acuèlh</string>
+    <string name="dejavu_feature_bar_layouts">Plaçatz la barra d’adreça en naut o en bas</string>
+    <string name="dejavu_feature_wallpaper">Donatz un fons d’ecran a un espaci de trabalh</string>
+    <string name="dejavu_feature_save_page">Enregistratz de paginas per las legir sens Internet</string>
 </resources>

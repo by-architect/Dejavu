@@ -482,4 +482,8 @@
     <string name="dejavu_menu_save_page">Įrašyti tinklalapį</string>
     <string name="dejavu_save_page_saving">Įrašomas tinklalapis…</string>
     <string name="dejavu_save_page_failed">Nepavyko įrašyti šio tinklalapio. Bandykite dar kartą.</string>
+    <string name="dejavu_feature_tab_zoom">Skirtukai priartėja ir nutolsta nuo pradžios ekrano</string>
+    <string name="dejavu_feature_bar_layouts">Adreso lauką dėkite viršuje arba apačioje</string>
+    <string name="dejavu_feature_wallpaper">Suteikite darbo erdvei foną</string>
+    <string name="dejavu_feature_save_page">Įrašykite tinklalapius, kad skaitytumėte be interneto</string>
 </resources>

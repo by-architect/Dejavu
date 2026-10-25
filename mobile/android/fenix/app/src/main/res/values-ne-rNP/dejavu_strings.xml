@@ -466,4 +466,8 @@
     <string name="dejavu_menu_save_page">पृष्ठ सुरक्षित गर्नुहोस्</string>
     <string name="dejavu_save_page_saving">पृष्ठ सुरक्षित गर्दै…</string>
     <string name="dejavu_save_page_failed">यो पृष्ठ सुरक्षित गर्न सकिएन। फेरि प्रयास गर्नुहोस्।</string>
+    <string name="dejavu_feature_tab_zoom">ट्याबहरू गृह स्क्रिनबाट जुम इन र आउट हुन्छन्</string>
+    <string name="dejavu_feature_bar_layouts">ठेगाना पट्टी माथि वा तल राख्नुहोस्</string>
+    <string name="dejavu_feature_wallpaper">कार्यक्षेत्रलाई वालपेपर दिनुहोस्</string>
+    <string name="dejavu_feature_save_page">इन्टरनेट बिना पढ्न पृष्ठहरू सुरक्षित गर्नुहोस्</string>
 </resources>

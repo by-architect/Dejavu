@@ -339,8 +339,8 @@ private fun DejavuSplitAddressBar(store: BrowserToolbarStore, split: ShownSplit)
 }
 
 /**
- * A page of a split shown top and bottom, in a row of the address field: [container] at its start, then
- * [pageActions], the page's [title] and the domain of [url] below it.
+ * A page of a split shown top and bottom, in a row of the address field: [container] at its start, the page's [title]
+ * and the domain of [url] below it, and [pageActions] at its end.
  */
 @Composable
 private fun SplitPageRow(
@@ -357,7 +357,6 @@ private fun SplitPageRow(
         Box(contentAlignment = Alignment.Center, modifier = Modifier.size(SLOT_SIZE)) {
             ActionContainer(actions = listOfNotNull(container), onInteraction = onInteraction)
         }
-        ActionContainer(actions = pageActions, onInteraction = onInteraction)
         Column(modifier = Modifier.weight(1f).padding(end = TITLE_END_PADDING).clearAndSetSemantics {}) {
             Text(
                 text = title,
@@ -376,6 +375,9 @@ private fun SplitPageRow(
                     overflow = TextOverflow.Ellipsis,
                 )
             }
+        }
+        Box(contentAlignment = Alignment.Center, modifier = Modifier.size(SLOT_SIZE)) {
+            ActionContainer(actions = pageActions, onInteraction = onInteraction)
         }
     }
 }
@@ -551,8 +553,9 @@ private fun PageOrigin.startSearch(store: BrowserToolbarStore, layout: BarsLayou
 }
 
 /**
- * The rounded field of the address bar: [container] at its start, then [pageActions] and [text] in the middle, with
- * the domain of [url] in small letters below the text unless the text already says it.
+ * The rounded field of the address bar: [container] at its start, [text] in the middle, with the domain of [url] in
+ * small letters below the text unless the text already says it, and [pageActions], the site's security icon, at its
+ * end.
  */
 @Composable
 private fun AddressField(
@@ -577,42 +580,38 @@ private fun AddressField(
             ActionContainer(actions = listOfNotNull(container), onInteraction = onInteraction)
         }
         Box(contentAlignment = Alignment.Center, modifier = Modifier.weight(1f)) {
-            Row(verticalAlignment = Alignment.CenterVertically) {
-                ActionContainer(actions = pageActions, onInteraction = onInteraction)
-                // The bar's own description already says the title.
-                Column(
-                    horizontalAlignment = Alignment.CenterHorizontally,
-                    modifier = Modifier
-                        .weight(1f, fill = false)
-                        .padding(end = TITLE_END_PADDING)
-                        .clearAndSetSemantics {},
-                ) {
+            // The bar's own description already says the title.
+            Column(
+                horizontalAlignment = Alignment.CenterHorizontally,
+                modifier = Modifier.padding(horizontal = TITLE_END_PADDING).clearAndSetSemantics {},
+            ) {
+                Text(
+                    text = text,
+                    style = MaterialTheme.typography.bodyMedium,
+                    fontWeight = FontWeight.Medium,
+                    color = if (isHint) {
+                        MaterialTheme.colorScheme.onSurfaceVariant
+                    } else {
+                        MaterialTheme.colorScheme.onSurface
+                    },
+                    maxLines = 1,
+                    overflow = TextOverflow.Ellipsis,
+                )
+                domain?.let {
                     Text(
-                        text = text,
-                        style = MaterialTheme.typography.bodyMedium,
-                        fontWeight = FontWeight.Medium,
-                        color = if (isHint) {
-                            MaterialTheme.colorScheme.onSurfaceVariant
-                        } else {
-                            MaterialTheme.colorScheme.onSurface
-                        },
+                        text = it,
+                        style = MaterialTheme.typography.labelSmall,
+                        color = MaterialTheme.colorScheme.onSurfaceVariant,
                         maxLines = 1,
                         overflow = TextOverflow.Ellipsis,
                     )
-                    domain?.let {
-                        Text(
-                            text = it,
-                            style = MaterialTheme.typography.labelSmall,
-                            color = MaterialTheme.colorScheme.onSurfaceVariant,
-                            maxLines = 1,
-                            overflow = TextOverflow.Ellipsis,
-                        )
-                    }
                 }
             }
         }
         // As wide as the container's slot, so the title stays in the middle.
-        Spacer(Modifier.size(SLOT_SIZE))
+        Box(contentAlignment = Alignment.Center, modifier = Modifier.size(SLOT_SIZE)) {
+            ActionContainer(actions = pageActions, onInteraction = onInteraction)
+        }
     }
 }
 

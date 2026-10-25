@@ -482,4 +482,8 @@
     <string name="dejavu_menu_save_page">Zapisz strōna</string>
     <string name="dejavu_save_page_saving">Zapisowanie strōny…</string>
     <string name="dejavu_save_page_failed">Niy szło zapisać tyj strōny. Sprōbuj jeszcze roz.</string>
+    <string name="dejavu_feature_tab_zoom">Karty przibliżajōm sie i oddalajōm ze sztartowego ekranu</string>
+    <string name="dejavu_feature_bar_layouts">Ustow posek z adresōm na wiyrchu abo na spodku</string>
+    <string name="dejavu_feature_wallpaper">Dej placu bez tapetã</string>
+    <string name="dejavu_feature_save_page">Zapisuj strōny do czytaniŏ bez internetu</string>
 </resources>

@@ -499,4 +499,8 @@
     <string name="dejavu_menu_save_page">পাতা সংরক্ষণ করুন</string>
     <string name="dejavu_save_page_saving">পাতা সংরক্ষণ করা হচ্ছে…</string>
     <string name="dejavu_save_page_failed">এই পাতাটি সংরক্ষণ করা যায়নি। আবার চেষ্টা করুন।</string>
+    <string name="dejavu_feature_tab_zoom">ট্যাব হোম স্ক্রিন থেকে জুম ইন ও জুম আউট হয়</string>
+    <string name="dejavu_feature_bar_layouts">ঠিকানা বার উপরে বা নিচে রাখুন</string>
+    <string name="dejavu_feature_wallpaper">ওয়ার্কস্পেসকে ওয়ালপেপার দিন</string>
+    <string name="dejavu_feature_save_page">ইন্টারনেট ছাড়া পড়তে পাতা সংরক্ষণ করুন</string>
 </resources>

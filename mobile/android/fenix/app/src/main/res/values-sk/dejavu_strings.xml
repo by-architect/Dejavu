@@ -482,4 +482,8 @@
     <string name="dejavu_menu_save_page">Uložiť stránku</string>
     <string name="dejavu_save_page_saving">Ukladá sa stránka…</string>
     <string name="dejavu_save_page_failed">Túto stránku sa nepodarilo uložiť. Skúste to znova.</string>
+    <string name="dejavu_feature_tab_zoom">Karty sa približujú a vzďaľujú z domovskej obrazovky</string>
+    <string name="dejavu_feature_bar_layouts">Umiestnite panel s adresou hore alebo dole</string>
+    <string name="dejavu_feature_wallpaper">Nastavte pracovnému priestoru tapetu</string>
+    <string name="dejavu_feature_save_page">Ukladajte stránky na čítanie bez internetu</string>
 </resources>

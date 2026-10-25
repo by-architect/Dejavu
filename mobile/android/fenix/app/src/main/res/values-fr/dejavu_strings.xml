@@ -466,4 +466,8 @@
     <string name="dejavu_menu_save_page">Enregistrer la page</string>
     <string name="dejavu_save_page_saving">Enregistrement de la page…</string>
     <string name="dejavu_save_page_failed">Impossible d’enregistrer cette page. Veuillez réessayer.</string>
+    <string name="dejavu_feature_tab_zoom">Les onglets zooment depuis l’écran d’accueil et y reviennent</string>
+    <string name="dejavu_feature_bar_layouts">Place la barre d’adresse en haut ou en bas</string>
+    <string name="dejavu_feature_wallpaper">Donne un fond d’écran à un espace</string>
+    <string name="dejavu_feature_save_page">Enregistre des pages pour les lire sans internet</string>
 </resources>

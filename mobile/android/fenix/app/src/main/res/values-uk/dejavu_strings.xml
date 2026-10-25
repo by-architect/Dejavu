@@ -482,4 +482,8 @@
     <string name="dejavu_menu_save_page">Зберегти сторінку</string>
     <string name="dejavu_save_page_saving">Збереження сторінки…</string>
     <string name="dejavu_save_page_failed">Не вдалося зберегти цю сторінку. Повторіть спробу.</string>
+    <string name="dejavu_feature_tab_zoom">Вкладки наближаються й віддаляються від головного екрана</string>
+    <string name="dejavu_feature_bar_layouts">Розмістіть панель адреси вгорі або внизу</string>
+    <string name="dejavu_feature_wallpaper">Встановіть шпалери для робочого простору</string>
+    <string name="dejavu_feature_save_page">Зберігайте сторінки, щоб читати без інтернету</string>
 </resources>

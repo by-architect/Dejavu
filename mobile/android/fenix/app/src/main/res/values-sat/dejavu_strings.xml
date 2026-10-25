@@ -474,4 +474,8 @@
     <string name="dejavu_menu_save_page">ᱥᱟᱦᱴᱟ ᱥᱟᱧᱪᱟᱣ ᱢᱮ</string>
     <string name="dejavu_save_page_saving">ᱥᱟᱦᱴᱟ ᱥᱟᱧᱪᱟᱣ ᱦᱩᱭ ᱠᱟᱱᱟ…</string>
     <string name="dejavu_save_page_failed">ᱱᱚᱶᱟ ᱥᱟᱦᱴᱟ ᱵᱟᱝ ᱥᱟᱧᱪᱟᱣ ᱫᱟᱲᱮᱭᱟᱜᱼᱟ ᱾ ᱫᱚᱦᱲᱟ ᱠᱩᱨᱩᱢᱩᱴᱩᱭ ᱢᱮ ᱾</string>
+    <string name="dejavu_feature_tab_zoom">ᱴᱮᱵ ᱠᱚ ᱦᱚᱢ ᱥᱠᱨᱤᱱ ᱠᱷᱚᱱ ᱡᱩᱢ ᱤᱱ ᱟᱨ ᱟᱣᱴ ᱠᱚ ᱦᱩᱭ</string>
+    <string name="dejavu_feature_bar_layouts">ᱪᱮᱛᱟᱱ ᱥᱮ ᱞᱟᱛᱟᱨ ᱨᱮ ᱴᱷᱤᱠᱟᱱᱟ ᱵᱟᱨ ᱥᱮᱞᱮᱫ ᱢᱮ</string>
+    <string name="dejavu_feature_wallpaper">ᱣᱟᱨᱠᱥᱯᱮᱥ ᱞᱟᱹᱜᱤᱫ ᱠᱟᱸᱛᱷᱪᱤᱛᱟᱹᱨ ᱮᱢ ᱢᱮ</string>
+    <string name="dejavu_feature_save_page">ᱤᱱᱴᱟᱨᱱᱮᱴ ᱵᱷᱮᱜᱟᱨ ᱯᱟᱲᱦᱟᱣ ᱞᱟᱹᱜᱤᱫ ᱥᱟᱦᱴᱟ ᱠᱚ ᱥᱟᱧᱪᱟᱣ ᱢᱮ</string>
 </resources>

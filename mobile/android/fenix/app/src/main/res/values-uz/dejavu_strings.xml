@@ -466,4 +466,8 @@
     <string name="dejavu_menu_save_page">Sahifani saqlash</string>
     <string name="dejavu_save_page_saving">Sahifa saqlanmoqda…</string>
     <string name="dejavu_save_page_failed">Bu sahifani saqlab bo\'lmadi. Qayta urining.</string>
+    <string name="dejavu_feature_tab_zoom">Ichki oynalar bosh ekrandan kattalashadi va kichrayadi</string>
+    <string name="dejavu_feature_bar_layouts">Manzil panelini yuqoriga yoki pastga joylang</string>
+    <string name="dejavu_feature_wallpaper">Ish maydoniga fon rasmi qo\'ying</string>
+    <string name="dejavu_feature_save_page">Sahifalarni internetsiz o\'qish uchun saqlang</string>
 </resources>

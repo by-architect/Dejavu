@@ -466,4 +466,8 @@
     <string name="dejavu_menu_save_page">Парақты сақтау</string>
     <string name="dejavu_save_page_saving">Парақ сақталуда…</string>
     <string name="dejavu_save_page_failed">Бұл парақты сақтау мүмкін болмады. Қайталап көріңіз.</string>
+    <string name="dejavu_feature_tab_zoom">Беттер басты экраннан үлкейіп, кішірейеді</string>
+    <string name="dejavu_feature_bar_layouts">Адрестік жолақты жоғарыға немесе төменге қойыңыз</string>
+    <string name="dejavu_feature_wallpaper">Жұмыс кеңістігіне тұсқағаз беріңіз</string>
+    <string name="dejavu_feature_save_page">Беттерді интернетсіз оқу үшін сақтаңыз</string>
 </resources>

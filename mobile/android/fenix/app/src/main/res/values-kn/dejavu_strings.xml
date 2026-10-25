@@ -466,4 +466,8 @@
     <string name="dejavu_menu_save_page">ಪುಟವನ್ನು ಉಳಿಸು</string>
     <string name="dejavu_save_page_saving">ಪುಟವನ್ನು ಉಳಿಸಲಾಗುತ್ತಿದೆ…</string>
     <string name="dejavu_save_page_failed">ಈ ಪುಟವನ್ನು ಉಳಿಸಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ. ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ.</string>
+    <string name="dejavu_feature_tab_zoom">ಟ್ಯಾಬ್‌ಗಳು ಮುಖಪುಟ ಪರದೆಯಿಂದ ಜೂಮ್ ಇನ್ ಮತ್ತು ಔಟ್ ಆಗುತ್ತವೆ</string>
+    <string name="dejavu_feature_bar_layouts">ವಿಳಾಸ ಪಟ್ಟಿಯನ್ನು ಮೇಲೆ ಅಥವಾ ಕೆಳಗೆ ಇರಿಸಿ</string>
+    <string name="dejavu_feature_wallpaper">ಕಾರ್ಯಕ್ಷೇತ್ರಕ್ಕೆ ವಾಲ್‌ಪೇಪರ್ ನೀಡಿ</string>
+    <string name="dejavu_feature_save_page">ಇಂಟರ್ನೆಟ್ ಇಲ್ಲದೆ ಓದಲು ಪುಟಗಳನ್ನು ಉಳಿಸಿ</string>
 </resources>

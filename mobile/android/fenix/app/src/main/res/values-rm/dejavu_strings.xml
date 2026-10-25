@@ -466,4 +466,8 @@
     <string name="dejavu_menu_save_page">Memorisar la pagina</string>
     <string name="dejavu_save_page_saving">Memorisar la pagina…</string>
     <string name="dejavu_save_page_failed">Impussibel da memorisar questa pagina. Emprova anc ina giada.</string>
+    <string name="dejavu_feature_tab_zoom">Las tabs fan in zoom da l\'ecran da partenza e enavos</string>
+    <string name="dejavu_feature_bar_layouts">Metter la trav d’adressas survart u sut</string>
+    <string name="dejavu_feature_wallpaper">Dar a in spazi da lavur in maletg dal fund davos</string>
+    <string name="dejavu_feature_save_page">Memorisar paginas per las leger senza internet</string>
 </resources>

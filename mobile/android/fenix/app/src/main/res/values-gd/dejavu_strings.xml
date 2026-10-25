@@ -482,4 +482,8 @@
     <string name="dejavu_menu_save_page">Sàbhail an duilleag</string>
     <string name="dejavu_save_page_saving">A\' sàbhaladh na duilleige…</string>
     <string name="dejavu_save_page_failed">Cha b\' urrainn dhuinn an duilleag seo a shàbhaladh. Feuch ris a-rithist.</string>
+    <string name="dejavu_feature_tab_zoom">Bidh tabaichean a’ sùmadh a-steach is a-mach on sgrìn-dachaigh</string>
+    <string name="dejavu_feature_bar_layouts">Cuir bàr an t-seòlaidh aig a’ bhàrr no aig a’ bhonn</string>
+    <string name="dejavu_feature_wallpaper">Thoir pàipear-balla do dh’àite-obrach</string>
+    <string name="dejavu_feature_save_page">Sàbhail duilleagan airson an leughadh gun eadar-lìn</string>
 </resources>

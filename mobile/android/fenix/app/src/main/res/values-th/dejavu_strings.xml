@@ -458,4 +458,8 @@
     <string name="dejavu_menu_save_page">บันทึกหน้า</string>
     <string name="dejavu_save_page_saving">กำลังบันทึกหน้า…</string>
     <string name="dejavu_save_page_failed">ไม่สามารถบันทึกหน้านี้ได้ โปรดลองอีกครั้ง</string>
+    <string name="dejavu_feature_tab_zoom">แท็บซูมเข้าและซูมออกจากหน้าจอหลัก</string>
+    <string name="dejavu_feature_bar_layouts">วางแถบที่อยู่ไว้ด้านบนหรือด้านล่าง</string>
+    <string name="dejavu_feature_wallpaper">ตั้งรูปพื้นหลังให้พื้นที่ทำงาน</string>
+    <string name="dejavu_feature_save_page">บันทึกหน้าไว้อ่านโดยไม่ต้องใช้อินเทอร์เน็ต</string>
 </resources>

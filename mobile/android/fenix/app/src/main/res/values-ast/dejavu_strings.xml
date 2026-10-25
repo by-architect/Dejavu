@@ -466,4 +466,8 @@
     <string name="dejavu_menu_save_page">Guardar la páxina</string>
     <string name="dejavu_save_page_saving">Guardando la páxina…</string>
     <string name="dejavu_save_page_failed">Nun se pudo guardar esta páxina. Volvi tentalo.</string>
+    <string name="dejavu_feature_tab_zoom">Les llingüetes s\'averen y alloñen de la pantalla d\'aniciu</string>
+    <string name="dejavu_feature_bar_layouts">Pon la barra de direiciones arriba o abaxo</string>
+    <string name="dejavu_feature_wallpaper">Da un fondu de pantalla a un espaciu de trabayu</string>
+    <string name="dejavu_feature_save_page">Guarda páxines pa lleelo ensin internet</string>
 </resources>

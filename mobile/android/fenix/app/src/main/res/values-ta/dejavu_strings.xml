@@ -466,4 +466,8 @@
     <string name="dejavu_menu_save_page">பக்கத்தைச் சேமி</string>
     <string name="dejavu_save_page_saving">பக்கத்தைச் சேமிக்கிறது…</string>
     <string name="dejavu_save_page_failed">இந்தப் பக்கத்தைச் சேமிக்க முடியவில்லை. மீண்டும் முயற்சிக்கவும்.</string>
+    <string name="dejavu_feature_tab_zoom">தாவல்கள் முகப்புத் திரையிலிருந்து பெரிதாகவும் சிறிதாகவும் மாறும்</string>
+    <string name="dejavu_feature_bar_layouts">முகவரிப் பட்டையை மேலே அல்லது கீழே வைக்கவும்</string>
+    <string name="dejavu_feature_wallpaper">பணியிடத்திற்கு சுவர்ப்படம் அமைக்கவும்</string>
+    <string name="dejavu_feature_save_page">இணையம் இல்லாமல் படிக்க பக்கங்களைச் சேமிக்கவும்</string>
 </resources>

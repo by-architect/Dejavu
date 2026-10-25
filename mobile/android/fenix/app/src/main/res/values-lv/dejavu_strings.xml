@@ -474,4 +474,8 @@
     <string name="dejavu_menu_save_page">Saglabāt lapu</string>
     <string name="dejavu_save_page_saving">Notiek lapas saglabāšana…</string>
     <string name="dejavu_save_page_failed">Neizdevās saglabāt šo lapu. Mēģiniet vēlreiz.</string>
+    <string name="dejavu_feature_tab_zoom">Cilnes tuvinās un tālinās no sākuma ekrāna</string>
+    <string name="dejavu_feature_bar_layouts">Novietojiet adreses joslu augšā vai apakšā</string>
+    <string name="dejavu_feature_wallpaper">Iestatiet darbvietai fona attēlu</string>
+    <string name="dejavu_feature_save_page">Saglabājiet lapas, lai lasītu bez interneta</string>
 </resources>

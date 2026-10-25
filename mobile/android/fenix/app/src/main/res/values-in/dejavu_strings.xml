@@ -458,4 +458,8 @@
     <string name="dejavu_menu_save_page">Simpan laman</string>
     <string name="dejavu_save_page_saving">Menyimpan laman…</string>
     <string name="dejavu_save_page_failed">Tidak dapat menyimpan laman ini. Coba lagi.</string>
+    <string name="dejavu_feature_tab_zoom">Tab memperbesar dan memperkecil dari layar utama</string>
+    <string name="dejavu_feature_bar_layouts">Taruh bilah alamat di atas atau bawah</string>
+    <string name="dejavu_feature_wallpaper">Beri wallpaper untuk ruang kerja</string>
+    <string name="dejavu_feature_save_page">Simpan laman untuk dibaca tanpa internet</string>
 </resources>

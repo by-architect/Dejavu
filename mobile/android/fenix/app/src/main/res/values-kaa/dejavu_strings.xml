@@ -466,4 +466,8 @@
     <string name="dejavu_menu_save_page">Betti saqlaw</string>
     <string name="dejavu_save_page_saving">Bet saqlanıp atır…</string>
     <string name="dejavu_save_page_failed">Bul betti saqlaw múmkin bolmadı. Qayta urınıp kóriń.</string>
+    <string name="dejavu_feature_tab_zoom">Betler bas ekrannan jaqınlasadı hám uzaqlasadı</string>
+    <string name="dejavu_feature_bar_layouts">Mánzil qatarın joqarıǵa yamasa tómenge qoyıń</string>
+    <string name="dejavu_feature_wallpaper">Jumıs maydanına fon súwreti beriń</string>
+    <string name="dejavu_feature_save_page">Betlerdi internetsiz oqıw ushın saqlań</string>
 </resources>

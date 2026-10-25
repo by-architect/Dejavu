@@ -466,4 +466,8 @@
     <string name="dejavu_menu_save_page">Gorde orria</string>
     <string name="dejavu_save_page_saving">Orria gordetzen…</string>
     <string name="dejavu_save_page_failed">Ezin da orri hau gorde. Saiatu berriro.</string>
+    <string name="dejavu_feature_tab_zoom">Fitxak hasierako pantailara eta hortik zoom egiten dute</string>
+    <string name="dejavu_feature_bar_layouts">Jarri helbide-barra goian edo behean</string>
+    <string name="dejavu_feature_wallpaper">Eman horma-papera laneremu bati</string>
+    <string name="dejavu_feature_save_page">Gorde orriak internetik gabe irakurtzeko</string>
 </resources>

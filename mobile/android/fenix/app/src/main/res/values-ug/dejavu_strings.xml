@@ -466,4 +466,8 @@
     <string name="dejavu_menu_save_page">بەتنى ساقلا</string>
     <string name="dejavu_save_page_saving">بەت ساقلىنىۋاتىدۇ…</string>
     <string name="dejavu_save_page_failed">بۇ بەتنى ساقلىيالمايدۇ. قايتا سىناڭ.</string>
+    <string name="dejavu_feature_tab_zoom">بەتكۈچلەر باش ئېكراندىن چوڭىيىدۇ ۋە كىچىكلەيدۇ</string>
+    <string name="dejavu_feature_bar_layouts">ئادرېس بالدىقىنى يۇقىرىغا ياكى تۆۋەنگە قويۇڭ</string>
+    <string name="dejavu_feature_wallpaper">خىزمەت دائىرىسىگە تام قەغىزى تەڭشەڭ</string>
+    <string name="dejavu_feature_save_page">ئىنتېرنېتسىز ئوقۇش ئۈچۈن بەتلەرنى ساقلاڭ</string>
 </resources>

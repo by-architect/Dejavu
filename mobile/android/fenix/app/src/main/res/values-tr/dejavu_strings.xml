@@ -466,4 +466,8 @@
     <string name="dejavu_menu_save_page">Sayfayı kaydet</string>
     <string name="dejavu_save_page_saving">Sayfa kaydediliyor…</string>
     <string name="dejavu_save_page_failed">Bu sayfa kaydedilemedi. Yeniden deneyin.</string>
+    <string name="dejavu_feature_tab_zoom">Sekmeler ana ekrandan yakınlaşıp uzaklaşır</string>
+    <string name="dejavu_feature_bar_layouts">Adres çubuğunu üste veya alta yerleştirin</string>
+    <string name="dejavu_feature_wallpaper">Çalışma alanına duvar kağıdı verin</string>
+    <string name="dejavu_feature_save_page">Sayfaları internetsiz okumak için kaydedin</string>
 </resources>

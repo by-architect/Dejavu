@@ -466,4 +466,8 @@
     <string name="dejavu_menu_save_page">پەڕەکە پاشەکەوت بکە</string>
     <string name="dejavu_save_page_saving">پاشەکەوتکردنی پەڕەکە…</string>
     <string name="dejavu_save_page_failed">نەتوانرا ئەم پەڕەیە پاشەکەوت بکرێت. دووبارە هەوڵ بدەرەوە.</string>
+    <string name="dejavu_feature_tab_zoom">بازدەرەکان لە شاشەی سەرەکییەوە گەورە و بچووک دەبنەوە</string>
+    <string name="dejavu_feature_bar_layouts">شریتی ناونیشان لە سەرەوە یان خوارەوە دابنێ</string>
+    <string name="dejavu_feature_wallpaper">وێنەی پاشبنەما بە فەزایەک بدە</string>
+    <string name="dejavu_feature_save_page">پەڕەکان پاشەکەوت بکە بۆ خوێندنەوە بێ ئینتەرنێت</string>
 </resources>

@@ -466,4 +466,8 @@
     <string name="dejavu_menu_save_page">Ñongatu kuatiarogue</string>
     <string name="dejavu_save_page_saving">Oñongatuhína kuatiarogue…</string>
     <string name="dejavu_save_page_failed">Ndaikatúi eñongatu ko kuatiarogue. Eha’ã jey.</string>
+    <string name="dejavu_feature_tab_zoom">Tendayke oñembotuicha ha oñemomichĩ pantalla ñepyrũgua guive</string>
+    <string name="dejavu_feature_bar_layouts">Emoĩ kundaharape barra yvate térã guýpe</string>
+    <string name="dejavu_feature_wallpaper">Eme\'ẽ tembiapo rendápe mba\'erechaha rugua</string>
+    <string name="dejavu_feature_save_page">Eñongatu kuatiarogue emoñe\'ẽ hag̃ua internet’ỹre</string>
 </resources>

@@ -466,4 +466,8 @@
     <string name="dejavu_menu_save_page">Vista síðu</string>
     <string name="dejavu_save_page_saving">Vistar síðu…</string>
     <string name="dejavu_save_page_failed">Ekki tókst að vista þessa síðu. Reyndu aftur.</string>
+    <string name="dejavu_feature_tab_zoom">Flipar þysjast inn og út af upphafsskjánum</string>
+    <string name="dejavu_feature_bar_layouts">Settu veffangastikuna efst eða neðst</string>
+    <string name="dejavu_feature_wallpaper">Gefðu vinnusvæði bakgrunnsmynd</string>
+    <string name="dejavu_feature_save_page">Vistaðu síður til að lesa án nets</string>
 </resources>

@@ -458,4 +458,8 @@
     <string name="dejavu_menu_save_page">페이지 저장</string>
     <string name="dejavu_save_page_saving">페이지 저장 중…</string>
     <string name="dejavu_save_page_failed">이 페이지를 저장할 수 없습니다. 다시 시도하세요.</string>
+    <string name="dejavu_feature_tab_zoom">탭이 홈 화면에서 확대되고 축소됩니다</string>
+    <string name="dejavu_feature_bar_layouts">주소 표시줄을 위쪽이나 아래쪽에 두세요</string>
+    <string name="dejavu_feature_wallpaper">작업 공간에 배경 화면을 지정하세요</string>
+    <string name="dejavu_feature_save_page">인터넷 없이 읽을 페이지를 저장하세요</string>
 </resources>

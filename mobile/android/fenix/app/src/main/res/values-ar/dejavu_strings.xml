@@ -498,4 +498,8 @@
     <string name="dejavu_menu_save_page">حفظ الصفحة</string>
     <string name="dejavu_save_page_saving">جارٍ حفظ الصفحة…</string>
     <string name="dejavu_save_page_failed">تعذّر حفظ هذه الصفحة. حاول مجددًا.</string>
+    <string name="dejavu_feature_tab_zoom">تكبّر التبويبات وتصغر من الشاشة الرئيسية وإليها</string>
+    <string name="dejavu_feature_bar_layouts">ضع شريط العنوان في الأعلى أو الأسفل</string>
+    <string name="dejavu_feature_wallpaper">امنح مساحة العمل خلفية</string>
+    <string name="dejavu_feature_save_page">احفظ الصفحات لقراءتها بدون إنترنت</string>
 </resources>

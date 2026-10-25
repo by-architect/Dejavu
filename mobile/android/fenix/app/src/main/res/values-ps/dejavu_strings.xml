@@ -466,4 +466,8 @@
     <string name="dejavu_menu_save_page">پاڼه خوندي کول</string>
     <string name="dejavu_save_page_saving">پاڼه خوندي کېږي…</string>
     <string name="dejavu_save_page_failed">دا پاڼه خوندي نه شوه. بیا هڅه وکړئ.</string>
+    <string name="dejavu_feature_tab_zoom">ټبونه د کور پردې څخه لویږي او کوچنۍ کېږي</string>
+    <string name="dejavu_feature_bar_layouts">د پتې نوار پورته یا ښکته ځای کړئ</string>
+    <string name="dejavu_feature_wallpaper">ساحې ته شالید انځور ورکړئ</string>
+    <string name="dejavu_feature_save_page">پاڼې خوندي کړئ ترڅو پرته له انټرنېټه یې ولولئ</string>
 </resources>

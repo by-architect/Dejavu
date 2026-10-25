@@ -466,4 +466,8 @@
     <string name="dejavu_menu_save_page">Konservi paĝon</string>
     <string name="dejavu_save_page_saving">Konservante paĝon…</string>
     <string name="dejavu_save_page_failed">Ne eblis konservi ĉi tiun paĝon. Provu denove.</string>
+    <string name="dejavu_feature_tab_zoom">Langetoj zomas de kaj al la hejmekrano</string>
+    <string name="dejavu_feature_bar_layouts">Metu la adresan strion supre aŭ malsupre</string>
+    <string name="dejavu_feature_wallpaper">Donu ekranfonon al laborspaco</string>
+    <string name="dejavu_feature_save_page">Konservu paĝojn por legi sen interreto</string>
 </resources>

@@ -466,4 +466,8 @@
     <string name="dejavu_menu_save_page">पृष्ठ सेव्ह करा</string>
     <string name="dejavu_save_page_saving">पृष्ठ सेव्ह करत आहे…</string>
     <string name="dejavu_save_page_failed">हे पृष्ठ सेव्ह करता आले नाही. पुन्हा प्रयत्न करा.</string>
+    <string name="dejavu_feature_tab_zoom">टॅब मुख्य स्क्रीनवरून झूम इन आणि आउट होतात</string>
+    <string name="dejavu_feature_bar_layouts">पत्ता पट्टी वर किंवा खाली ठेवा</string>
+    <string name="dejavu_feature_wallpaper">कार्यक्षेत्राला वॉलपेपर द्या</string>
+    <string name="dejavu_feature_save_page">इंटरनेटशिवाय वाचण्यासाठी पृष्ठे सेव्ह करा</string>
 </resources>

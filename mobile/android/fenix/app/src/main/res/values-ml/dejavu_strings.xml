@@ -466,4 +466,8 @@
     <string name="dejavu_menu_save_page">താൾ കരുതിവയ്ക്കുക</string>
     <string name="dejavu_save_page_saving">താൾ കരുതിവയ്ക്കുന്നു…</string>
     <string name="dejavu_save_page_failed">ഈ താൾ കരുതിവയ്ക്കുവാൻ പറ്റിയില്ല. വീണ്ടും ശ്രമിക്കുക.</string>
+    <string name="dejavu_feature_tab_zoom">ടാബുകൾ ഹോം സ്ക്രീനിൽ നിന്ന് വലുതാകുകയും ചെറുതാകുകയും ചെയ്യുന്നു</string>
+    <string name="dejavu_feature_bar_layouts">വിലാസ ബാർ മുകളിലോ താഴെയോ വയ്ക്കുക</string>
+    <string name="dejavu_feature_wallpaper">ഒരു പണിയിടത്തിന് വാൾപേപ്പർ നൽകുക</string>
+    <string name="dejavu_feature_save_page">ഇന്റർനെറ്റ് ഇല്ലാതെ വായിക്കാൻ താളുകൾ കരുതിവയ്ക്കുക</string>
 </resources>

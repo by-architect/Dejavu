@@ -466,4 +466,8 @@
     <string name="dejavu_menu_save_page">Tiyak ruxaq</string>
     <string name="dejavu_save_page_saving">Niyak ri ruxaq…</string>
     <string name="dejavu_save_page_failed">Man xyak ta re ruxaq re\'. Tatojtob\'ej chik.</string>
+    <string name="dejavu_feature_tab_zoom">Taq ruwi\' nikoj chuqa\' nikïr chi rij nab\'ey ruwäch</string>
+    <string name="dejavu_feature_bar_layouts">Tab\'än ri ochochib\'äl ajsik chi ruwi\' o chi kaj</string>
+    <string name="dejavu_feature_wallpaper">Tya\' rupam ruwäch chi jun samajib\'äl</string>
+    <string name="dejavu_feature_save_page">Tiyak taq ruxaq richin nitz\'ët mawi k\'amab\'ey</string>
 </resources>

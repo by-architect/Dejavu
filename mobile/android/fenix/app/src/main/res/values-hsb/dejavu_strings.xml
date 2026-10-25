@@ -482,4 +482,8 @@
     <string name="dejavu_menu_save_page">Stronu składować</string>
     <string name="dejavu_save_page_saving">Strona so składuje…</string>
     <string name="dejavu_save_page_failed">Tuta strona njeda so składować. Spytaj hišće raz.</string>
+    <string name="dejavu_feature_tab_zoom">Rajtarki so z domoweje wobrazowki powjetšeja a pomjeńšeja</string>
+    <string name="dejavu_feature_bar_layouts">Adresowe polo horjeka abo deleka stajić</string>
+    <string name="dejavu_feature_wallpaper">Dźěłowemu rumej pozadkowy wobraz dać</string>
+    <string name="dejavu_feature_save_page">Strony składować, zo by je bjez interneta čitał</string>
 </resources>

@@ -474,4 +474,8 @@
     <string name="dejavu_menu_save_page">Spremi stranicu</string>
     <string name="dejavu_save_page_saving">Spremanje stranice…</string>
     <string name="dejavu_save_page_failed">Nije moguće spremiti ovu stranicu. Pokušajte ponovo.</string>
+    <string name="dejavu_feature_tab_zoom">Kartice se približavaju i udaljavaju od početnog zaslona</string>
+    <string name="dejavu_feature_bar_layouts">Postavite adresnu traku gore ili dolje</string>
+    <string name="dejavu_feature_wallpaper">Dajte radnom prostoru pozadinu</string>
+    <string name="dejavu_feature_save_page">Spremite stranice za čitanje bez interneta</string>
 </resources>

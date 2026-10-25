@@ -466,4 +466,8 @@
     <string name="dejavu_menu_save_page">Адаҟьа асохранение</string>
     <string name="dejavu_save_page_saving">Адаҟьа асохранение мҩаԥысуеит…</string>
     <string name="dejavu_save_page_failed">Ари адаҟьа асохранение алымшеит. Даҽазнык шәҽазышәшәа.</string>
+    <string name="dejavu_feature_tab_zoom">Абларҭақәа аҩны аекран аҟны иаартоит иахысуеит</string>
+    <string name="dejavu_feature_bar_layouts">Адресқәа рпанель хыхь ма ҵаҟа аҭыԥ аҟны иҭаԥ</string>
+    <string name="dejavu_feature_wallpaper">Аҭыԥ аҭӡамц иаҭатәуп</string>
+    <string name="dejavu_feature_save_page">Адаҟьақәа интернет алагала аҩра аҟынтә ахәаԥшразы иасохранитәуп</string>
 </resources>
