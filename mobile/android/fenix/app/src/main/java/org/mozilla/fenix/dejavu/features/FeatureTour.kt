@@ -40,18 +40,23 @@ import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.layout.widthIn
 import androidx.compose.foundation.pager.HorizontalPager
 import androidx.compose.foundation.pager.rememberPagerState
+import androidx.compose.foundation.relocation.BringIntoViewRequester
+import androidx.compose.foundation.relocation.bringIntoViewRequester
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.CircleShape
+import androidx.compose.foundation.text.TextAutoSize
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.CompositionLocalProvider
+import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.produceState
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.rememberCoroutineScope
+import androidx.compose.runtime.withFrameNanos
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
@@ -81,6 +86,7 @@ import org.mozilla.fenix.dejavu.settings.DejavuSettings
 import org.mozilla.fenix.dejavu.settings.workspaceRepository
 import org.mozilla.fenix.dejavu.ui.DejavuButtonStyle
 import org.mozilla.fenix.dejavu.ui.DejavuDialogButton
+import org.mozilla.fenix.dejavu.ui.DejavuFittedText
 import org.mozilla.fenix.dejavu.ui.DejavuPopup
 import org.mozilla.fenix.dejavu.ui.LocalPopupTheme
 import org.mozilla.fenix.dejavu.ui.popupGlow
@@ -115,7 +121,7 @@ enum class DejavuFeature(
     SWIPE_MENU(
         R.string.dejavu_feature_swipe_menu,
         R.raw.dejavu_feature_swipe_menu,
-        listOf(R.string.dejavu_settings, R.string.dejavu_settings_more_menu),
+        listOf(R.string.dejavu_settings, R.string.preferences_customize, R.string.dejavu_settings_more_menu),
     ),
     ACTIONS(
         R.string.dejavu_feature_actions,
@@ -153,7 +159,7 @@ enum class DejavuFeature(
     SAVE_PAGE(
         R.string.dejavu_feature_save_page,
         R.raw.dejavu_feature_save_page,
-        listOf(R.string.dejavu_settings, R.string.dejavu_settings_more_menu),
+        listOf(R.string.dejavu_settings, R.string.preferences_customize, R.string.dejavu_settings_more_menu),
     ),
 }
 
@@ -340,15 +346,26 @@ fun FeatureTourCard(
     }
 }
 
-/** The chip of a chapter of the tour: the basics or a version, filled for the chapter shown. */
+/**
+ * The chip of a chapter of the tour: the basics or a version, filled for the chapter shown, which the row of chips
+ * scrolls to when they do not all fit.
+ */
 @Composable
 private fun ChapterChip(label: String, selected: Boolean, onClick: () -> Unit) {
+    val requester = remember { BringIntoViewRequester() }
+    LaunchedEffect(selected) {
+        if (selected) {
+            withFrameNanos { }
+            requester.bringIntoView()
+        }
+    }
     Text(
         text = label,
         style = MaterialTheme.typography.labelLarge,
         color = if (selected) MaterialTheme.colorScheme.onPrimary else MaterialTheme.colorScheme.onSurfaceVariant,
         maxLines = 1,
         modifier = Modifier
+            .bringIntoViewRequester(requester)
             .clip(CircleShape)
             .background(
                 if (selected) MaterialTheme.colorScheme.primary else MaterialTheme.colorScheme.surfaceContainerHighest,
@@ -364,14 +381,19 @@ private fun FeaturePage(feature: DejavuFeature, playing: Boolean, animationHeigh
         horizontalAlignment = Alignment.CenterHorizontally,
         modifier = Modifier.fillMaxWidth().padding(horizontal = 24.dp),
     ) {
+        val titleStyle = MaterialTheme.typography.titleLarge
         Text(
             text = stringResource(feature.title),
-            style = MaterialTheme.typography.titleLarge,
+            style = titleStyle,
             color = MaterialTheme.colorScheme.onSurface,
             textAlign = TextAlign.Center,
             minLines = 2,
             maxLines = 2,
             overflow = TextOverflow.Ellipsis,
+            autoSize = TextAutoSize.StepBased(
+                minFontSize = titleStyle.fontSize * MIN_TEXT_SCALE,
+                maxFontSize = titleStyle.fontSize,
+            ),
         )
         // Pages without settings keep the same room, so the phone stays in place while swiping.
         Box(contentAlignment = Alignment.Center, modifier = Modifier.height(WHERE_HEIGHT).padding(top = 8.dp)) {
@@ -404,12 +426,10 @@ private fun WherePill(feature: DejavuFeature) {
             modifier = Modifier.size(16.dp),
         )
         Spacer(Modifier.width(6.dp))
-        Text(
+        DejavuFittedText(
             text = steps.joinToString(separator),
             style = MaterialTheme.typography.labelMedium,
             color = MaterialTheme.colorScheme.onSurfaceVariant,
-            maxLines = 1,
-            overflow = TextOverflow.Ellipsis,
         )
     }
 }
@@ -527,4 +547,7 @@ private const val DOT_ALPHA = 0.3f
 private val MAX_ANIMATION = 440.dp
 private val MAX_WIDTH = 480.dp
 private val WHERE_HEIGHT = 40.dp
+
+// How small a title gets before it is cut off, as a share of its size.
+private const val MIN_TEXT_SCALE = 0.75f
 private const val UPDATE_MARGIN_MS = 60_000L

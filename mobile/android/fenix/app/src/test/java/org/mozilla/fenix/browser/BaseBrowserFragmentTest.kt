@@ -6,6 +6,7 @@ package org.mozilla.fenix.browser
 
 import android.content.Context
 import android.content.res.Configuration
+import android.util.DisplayMetrics
 import android.view.View
 import android.view.ViewGroup
 import androidx.coordinatorlayout.widget.CoordinatorLayout
@@ -19,7 +20,9 @@ import io.mockk.spyk
 import io.mockk.verify
 import junit.framework.TestCase.assertFalse
 import junit.framework.TestCase.assertTrue
+import kotlin.math.roundToInt
 import kotlin.test.assertNotNull
+import kotlinx.coroutines.flow.MutableStateFlow
 import mozilla.components.browser.state.state.BrowserState
 import mozilla.components.browser.state.state.SessionState
 import mozilla.components.browser.state.state.content.DownloadState
@@ -38,6 +41,8 @@ import org.mozilla.fenix.components.toolbar.BrowserNavigationBar
 import org.mozilla.fenix.components.toolbar.BrowserToolbarComposable
 import org.mozilla.fenix.components.toolbar.ToolbarContainerView
 import org.mozilla.fenix.components.toolbar.ToolbarPosition
+import org.mozilla.fenix.dejavu.browser.BarsLayout
+import org.mozilla.fenix.dejavu.settings.DejavuSettings
 import org.mozilla.fenix.ext.components
 import org.mozilla.fenix.utils.Settings
 
@@ -66,6 +71,11 @@ class BaseBrowserFragmentTest {
         } returns false
         every { testContext.components.settings } returns settings
         every { testContext.components.settings } returns settings
+        // Dejavu: whether the address bar shows above or below pages comes from Dejavu's settings.
+        val dejavuSettings: DejavuSettings = mockk {
+            every { barsLayout } returns MutableStateFlow(BarsLayout.ACTIONS_BAR)
+        }
+        every { testContext.components.strictMode.allowViolation<DejavuSettings>(any(), any()) } returns dejavuSettings
         every { fragment.isAdded } returns true
         every { fragment.activity } returns mockk()
         every { fragment.context } returns testContext
@@ -371,6 +381,7 @@ class BaseBrowserFragmentTest {
         every { fragment.view } returns
             mockk {
                 every { context } returns testContext
+                every { rootWindowInsets } returns null
             }
         every { settings.getBrowserToolbarHeight(testContext) } returns 11
         every { settings.toolbarPosition } returns ToolbarPosition.BOTTOM
@@ -392,6 +403,7 @@ class BaseBrowserFragmentTest {
         every { fragment.view } returns
             mockk {
                 every { context } returns testContext
+                every { rootWindowInsets } returns null
             }
         every { settings.getBrowserToolbarHeight(testContext) } returns 11
         every { settings.toolbarPosition } returns ToolbarPosition.TOP
@@ -417,6 +429,7 @@ class BaseBrowserFragmentTest {
         every { fragment.view } returns
             mockk {
                 every { context } returns testContext
+                every { rootWindowInsets } returns null
             }
         every { settings.getBrowserToolbarHeight(testContext) } returns 11
         every { settings.toolbarPosition } returns ToolbarPosition.TOP
@@ -440,6 +453,7 @@ class BaseBrowserFragmentTest {
         every { fragment.view } returns
             mockk {
                 every { context } returns testContext
+                every { rootWindowInsets } returns null
             }
         every { settings.getBrowserToolbarHeight(testContext) } returns 11
         every { settings.toolbarPosition } returns ToolbarPosition.TOP
@@ -470,6 +484,7 @@ class BaseBrowserFragmentTest {
         every { fragment.view } returns
             mockk {
                 every { context } returns testContext
+                every { rootWindowInsets } returns null
             }
         every { settings.getBrowserToolbarHeight(testContext) } returns 11
         every { settings.toolbarPosition } returns ToolbarPosition.TOP
@@ -492,6 +507,7 @@ class BaseBrowserFragmentTest {
         every { fragment.view } returns
             mockk {
                 every { context } returns testContext
+                every { rootWindowInsets } returns null
             }
         every { settings.getBrowserToolbarHeight(testContext) } returns 22
         every { settings.toolbarPosition } returns ToolbarPosition.TOP
@@ -517,6 +533,7 @@ class BaseBrowserFragmentTest {
         every { fragment.view } returns
             mockk {
                 every { context } returns testContext
+                every { rootWindowInsets } returns null
             }
         every { settings.getBrowserToolbarHeight(testContext) } returns 11
         every { settings.toolbarPosition } returns ToolbarPosition.BOTTOM
@@ -539,6 +556,7 @@ class BaseBrowserFragmentTest {
         every { fragment.view } returns
             mockk {
                 every { context } returns testContext
+                every { rootWindowInsets } returns null
             }
         every { settings.getBrowserToolbarHeight(testContext) } returns 11
         every { settings.toolbarPosition } returns ToolbarPosition.TOP
@@ -566,6 +584,7 @@ class BaseBrowserFragmentTest {
         every { fragment.view } returns
             mockk {
                 every { context } returns testContext
+                every { rootWindowInsets } returns null
             }
         every { settings.getBrowserToolbarHeight(testContext) } returns 11
         every { settings.toolbarPosition } returns ToolbarPosition.TOP
@@ -594,18 +613,21 @@ class BaseBrowserFragmentTest {
         every { fragment.view } returns
             mockk {
                 every { context } returns testContext
+                every { rootWindowInsets } returns null
             }
         every { settings.getBrowserToolbarHeight(testContext) } returns 11
         every { settings.toolbarPosition } returns ToolbarPosition.TOP
         every { settings.isDynamicToolbarEnabled } returns true
         every { settings.shouldUseFixedTopToolbar } returns false
         every { settings.shouldUseExpandedToolbar } returns true
-        every { testContext.resources.getDimensionPixelSize(R.dimen.browser_navbar_height) } returns 22
+        // Dejavu: the bar below pages is Dejavu's actions bar instead of Firefox's navigation bar.
+        every { testContext.resources.displayMetrics } returns DisplayMetrics().apply { density = 1f }
         every { testContext.resources.configuration } returns configuration
+        val actionsBarHeight = BarsLayout.ACTIONS_BAR.bottomBarHeight.value.roundToInt()
 
         fragment.configureEngineViewWithDynamicToolbarsMaxHeight()
 
-        verify { engineView.setDynamicToolbarMaxHeight(33) }
+        verify { engineView.setDynamicToolbarMaxHeight(11 + actionsBarHeight) }
     }
 
     @Test
@@ -622,6 +644,7 @@ class BaseBrowserFragmentTest {
         every { fragment.view } returns
             mockk {
                 every { context } returns testContext
+                every { rootWindowInsets } returns null
             }
         every { settings.getBrowserToolbarHeight(testContext) } returns 11
         every { settings.toolbarPosition } returns ToolbarPosition.TOP
@@ -711,17 +734,20 @@ class BaseBrowserFragmentTest {
         every { fragment.view } returns
             mockk {
                 every { context } returns testContext
+                every { rootWindowInsets } returns null
             }
         every { settings.getBrowserToolbarHeight(testContext) } returns 11
         every { settings.toolbarPosition } returns ToolbarPosition.TOP
         every { settings.isDynamicToolbarEnabled } returns true
         every { settings.shouldUseExpandedToolbar } returns true
-        every { testContext.resources.getDimensionPixelSize(R.dimen.browser_navbar_height) } returns 22
+        // Dejavu: the bar below pages is Dejavu's actions bar instead of Firefox's navigation bar.
+        every { testContext.resources.displayMetrics } returns DisplayMetrics().apply { density = 1f }
         every { testContext.resources.configuration } returns configuration
+        val actionsBarHeight = BarsLayout.ACTIONS_BAR.bottomBarHeight.value.roundToInt()
 
         fragment.reinitializeEngineView()
 
-        verify { fragment.initializeEngineView(11, 22) }
+        verify { fragment.initializeEngineView(11, actionsBarHeight) }
     }
 
     @Test
@@ -735,6 +761,7 @@ class BaseBrowserFragmentTest {
         every { fragment.view } returns
             mockk {
                 every { context } returns testContext
+                every { rootWindowInsets } returns null
             }
         every { settings.getBrowserToolbarHeight(testContext) } returns 11
         every { settings.toolbarPosition } returns ToolbarPosition.TOP

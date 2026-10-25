@@ -6,6 +6,8 @@ package org.mozilla.fenix.dejavu.browser
 
 import android.app.Activity
 import android.graphics.Bitmap
+import android.graphics.Canvas as BitmapCanvas
+import android.graphics.RectF
 import android.os.Handler
 import android.os.Looper
 import android.view.View
@@ -66,6 +68,7 @@ import androidx.compose.ui.unit.IntOffset
 import androidx.compose.ui.unit.IntSize
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.util.lerp
+import androidx.core.content.ContextCompat
 import androidx.core.view.drawToBitmap
 import androidx.lifecycle.LifecycleOwner
 import androidx.lifecycle.lifecycleScope
@@ -120,13 +123,17 @@ internal object TabZoom {
     private sealed class Zoom(val tabId: String, val picture: PageShot?) {
         class In(tabId: String, picture: PageShot?, val row: Rect, val open: () -> Unit) : Zoom(tabId, picture)
 
-        /** A page going home, and [bars], pictures of the browser's bars as it left them. */
+        /**
+         * A page going home, and [bars], pictures of the browser's bars as it left them. [keepsPicture] says whether
+         * opening the tab again can start from the picture, which a split view's is not for.
+         */
         class Out(
             tabId: String,
             picture: PageShot,
             val bars: List<BarShot>,
             val leave: () -> Unit,
             val afterLeaving: () -> Unit,
+            val keepsPicture: Boolean,
         ) : Zoom(tabId, picture) {
             val homeShown = CompletableDeferred<Unit>()
         }
@@ -181,7 +188,8 @@ internal object TabZoom {
     /**
      * Leaves the page of the tab with [tabId] for the home screen with [leave]: pictures the page, then shrinks the
      * picture back into the tab's row once the home screen shows, and runs [afterLeaving] once it is there. Without a
-     * page on screen it just leaves, running [afterLeaving] once the home screen took the browser's place.
+     * page on screen it just leaves, running [afterLeaving] once the home screen took the browser's place. A split view
+     * is pictured with both of its pages.
      */
     fun zoomOut(tabId: String, afterLeaving: () -> Unit = {}, leave: () -> Unit) {
         val content = PagePictures.shownView?.rootView?.findViewById<ViewGroup>(android.R.id.content)
@@ -198,7 +206,10 @@ internal object TabZoom {
             if (shot == null) {
                 leaveAtOnce()
             } else {
-                start(content, Zoom.Out(tabId, shot, barShots(content), leave, afterLeaving))
+                withSplitPartner(content, shot) { picture ->
+                    val zoom = Zoom.Out(tabId, picture, barShots(content), leave, afterLeaving, picture === shot)
+                    start(content, zoom)
+                }
             }
         }
     }
@@ -269,7 +280,7 @@ internal object TabZoom {
                         shown.animateTo(0f, tween(REVEAL_MS))
                     }
                     current.afterLeaving()
-                    current.picture?.let(::keepForReopening)
+                    if (current.keepsPicture) current.picture?.let(::keepForReopening)
                 }
             }
             finish(current)
@@ -434,6 +445,40 @@ private fun DrawScope.drawBars(bars: List<BarShot>, progress: Float, origin: Off
         val away = (1f - progress) * bar.bitmap.height
         drawImage(bar.bitmap, topLeft = bar.offset - origin + Offset(0f, if (bar.atTop) -away else away))
     }
+}
+
+/**
+ * Calls [then] with [shot], the page in focus, joined with a picture of the other page of the split view shown, each
+ * where it shows under [content], so that going home does not leave the other page's place empty. Without a split view
+ * or a picture of its other page, [shot] stays as it is.
+ */
+private fun withSplitPartner(content: ViewGroup, shot: PageShot, then: (PageShot) -> Unit) {
+    val split = SplitPanes.active?.takeIf { SplitScreen.shown != null }
+    if (split == null) {
+        then(shot)
+        return
+    }
+    split.picturePage { picture, place ->
+        then(picture?.let { runCatching { joined(content, shot, it, place) }.getOrNull() } ?: shot)
+    }
+}
+
+/**
+ * One picture as wide as [content], holding [shot] and [other], the page shown at [place], with the page color between
+ * them.
+ */
+private fun joined(content: ViewGroup, shot: PageShot, other: Bitmap, place: PixelRect): PageShot {
+    val origin = IntArray(2).also(content::getLocationInWindow)
+    val top = minOf(shot.offset.y, place.top.toFloat())
+    val bottom = maxOf(shot.offset.y + shot.bitmap.height, place.bottom.toFloat())
+    val bitmap = Bitmap.createBitmap(content.width, (bottom - top).roundToInt(), Bitmap.Config.ARGB_8888)
+    BitmapCanvas(bitmap).apply {
+        drawColor(ContextCompat.getColor(content.context, R.color.fx_mobile_surface))
+        drawBitmap(shot.bitmap.asAndroidBitmap(), shot.offset.x - origin[0], shot.offset.y - top, null)
+        val left = (place.left - origin[0]).toFloat()
+        drawBitmap(other, null, RectF(left, place.top - top, left + place.width, place.bottom - top), null)
+    }
+    return PageShot(bitmap.asImageBitmap(), Offset(origin[0].toFloat(), top), shot.tabId, shot.edgeColor)
 }
 
 /**

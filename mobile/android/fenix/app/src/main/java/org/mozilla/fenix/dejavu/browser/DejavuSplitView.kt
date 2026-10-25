@@ -366,6 +366,28 @@ internal class SplitPaneFeature(
         runCatching { pane.engineView.captureThumbnail { pictured(1, it) } }.onFailure { pictured(1, null) }
     }
 
+    /**
+     * Pictures the page the pane shows, then calls [then] with the picture and where the pane is in the window, or
+     * with `null` when it shows none or the picture does not come in time.
+     */
+    fun picturePage(then: (Bitmap?, PixelRect) -> Unit) {
+        val pane = pane
+        if (pane == null || shownTabId == null || !pane.isAttachedToWindow) {
+            then(null, PixelRect(0, 0, 0, 0))
+            return
+        }
+        val location = IntArray(2).also(pane::getLocationInWindow)
+        val place = PixelRect(location[0], location[1], location[0] + pane.width, location[1] + pane.height)
+        var done = false
+        fun pictured(picture: Bitmap?) {
+            if (done) return
+            done = true
+            then(picture, place)
+        }
+        browserLayout.postDelayed({ pictured(null) }, PICTURE_TIMEOUT_MS)
+        runCatching { pane.engineView.captureThumbnail(::pictured) }.onFailure { pictured(null) }
+    }
+
     private fun placeOf(view: View): PixelRect = (view.layoutParams as CoordinatorLayout.LayoutParams).let {
         PixelRect(it.leftMargin, it.topMargin, it.leftMargin + it.width, it.topMargin + it.height)
     }
