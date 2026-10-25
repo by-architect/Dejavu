@@ -472,4 +472,9 @@
     <string name="dejavu_feature_save_page">Alza pachinas pa leyer-las sin internet</string>
     <string name="dejavu_recent_search_text">Borrar esta busca d’as busques recients u borrar-las toz.</string>
     <string name="dejavu_recent_search_clear">Borrar l’historial de busca</string>
+    <string name="dejavu_settings_home_screen">Pantalla d\'inicio</string>
+    <string name="dejavu_home_search_top">Barra de busca dalto</string>
+    <string name="dejavu_home_search_top_summary">Espacios de treballo, descargas, estensions, marcadors y historial abaixo.</string>
+    <string name="dejavu_home_search_bottom">Barra de busca abaixo</string>
+    <string name="dejavu_home_search_bottom_summary">Mas fázil d\'alcanzar. Os espacios de treballo, as descargas, as estensions, os marcadors y o historial se mueven enta alto.</string>
 </resources>

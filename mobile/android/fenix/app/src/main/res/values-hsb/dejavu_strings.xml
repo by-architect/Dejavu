@@ -488,4 +488,9 @@
     <string name="dejavu_feature_save_page">Strony składować, zo by je bjez interneta čitał</string>
     <string name="dejavu_recent_search_text">Zhašej tute pytanje z najnowšich pytanjow abo zhašej wšě.</string>
     <string name="dejavu_recent_search_clear">Pytanja-historiju zhašeć</string>
+    <string name="dejavu_settings_home_screen">Domowa wobrazowka</string>
+    <string name="dejavu_home_search_top">Pytanska lajsta horjeka</string>
+    <string name="dejavu_home_search_top_summary">Dźěłowe rumy, sćehnjenja, rozšěrjenja, zapołožki a historija deleka.</string>
+    <string name="dejavu_home_search_bottom">Pytanska lajsta deleka</string>
+    <string name="dejavu_home_search_bottom_summary">Lóšo docpějomne. Dźěłowe rumy, sćehnjenja, rozšěrjenja, zapołožki a historija so horje přesunu.</string>
 </resources>

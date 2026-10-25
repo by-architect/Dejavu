@@ -472,4 +472,9 @@
     <string name="dejavu_feature_save_page">Адаҟьақәа интернет алагала аҩра аҟынтә ахәаԥшразы иасохранитәуп</string>
     <string name="dejavu_recent_search_text">Ари ахцәажәара ианыхтәуп аҿыхра аҟынтә, ма зегьы ианыхтәуп.</string>
     <string name="dejavu_recent_search_clear">Аҿаԥшра аҭоурых аныхра</string>
+    <string name="dejavu_settings_home_screen">Аҩны аекран</string>
+    <string name="dejavu_home_search_top">Аԥшаара апанель хыхь</string>
+    <string name="dejavu_home_search_top_summary">Аҭыԥқәа, аҭагаларақәа, аиҵыхрақәа, адыргақәа, ахҭыс ҵаҟа иҟоуп.</string>
+    <string name="dejavu_home_search_bottom">Аԥшаара апанель ҵаҟа</string>
+    <string name="dejavu_home_search_bottom_summary">Ахархәара иаҳа иуадаҩым. Аҭыԥқәа, аҭагаларақәа, аиҵыхрақәа, адыргақәа, ахҭыс хыхь ицоит.</string>
 </resources>

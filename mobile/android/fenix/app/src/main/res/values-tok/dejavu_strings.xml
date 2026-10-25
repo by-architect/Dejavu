@@ -464,4 +464,9 @@
     <string name="dejavu_feature_save_page">o awen e lipu tawa lukin ala pi ilo kalama</string>
     <string name="dejavu_recent_search_text">o weka e alasa ni tan kulupu pi alasa pini, anu o weka e ale.</string>
     <string name="dejavu_recent_search_clear">o weka e lipu pi alasa pini ale</string>
+    <string name="dejavu_settings_home_screen">lipu open</string>
+    <string name="dejavu_home_search_top">linja alasa lon sewi</string>
+    <string name="dejavu_home_search_top_summary">kulupu poki, jo lipu, ilo namako, lipu awen, en lukin pini lipu li lon anpa.</string>
+    <string name="dejavu_home_search_bottom">linja alasa lon anpa</string>
+    <string name="dejavu_home_search_bottom_summary">luka sina li ken kama tawa ni kepeken pali lili. kulupu poki, jo lipu, ilo namako, lipu awen, en lukin pini lipu li tawa sewi.</string>
 </resources>

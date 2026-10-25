@@ -472,4 +472,9 @@
     <string name="dejavu_feature_save_page">Memorisar paginas per las leger senza internet</string>
     <string name="dejavu_recent_search_text">Stizza questa tschertga da tias tschertgas recentas u stizza tuttas.</string>
     <string name="dejavu_recent_search_clear">Stizzar la cronologia da tschertga</string>
+    <string name="dejavu_settings_home_screen">Visur da partenza</string>
+    <string name="dejavu_home_search_top">Trav da tschertga survart</string>
+    <string name="dejavu_home_search_top_summary">Spazis da lavur, telechargiadas, extensiuns, segnapaginas e cronologia sutvart.</string>
+    <string name="dejavu_home_search_bottom">Trav da tschertga sutvart</string>
+    <string name="dejavu_home_search_bottom_summary">Pli simpel da cuntanscher. Spazis da lavur, telechargiadas, extensiuns, segnapaginas e cronologia vegnan spustads survart.</string>
 </resources>

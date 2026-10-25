@@ -480,4 +480,9 @@
     <string name="dejavu_feature_save_page">Salvează pagini pentru a le citi fără internet</string>
     <string name="dejavu_recent_search_text">Șterge această căutare din căutările recente sau șterge-le pe toate.</string>
     <string name="dejavu_recent_search_clear">Șterge istoricul căutărilor</string>
+    <string name="dejavu_settings_home_screen">Ecran principal</string>
+    <string name="dejavu_home_search_top">Bara de căutare sus</string>
+    <string name="dejavu_home_search_top_summary">Spații de lucru, descărcări, extensii, marcaje și istoric jos.</string>
+    <string name="dejavu_home_search_bottom">Bara de căutare jos</string>
+    <string name="dejavu_home_search_bottom_summary">Mai ușor de atins. Spații de lucru, descărcări, extensii, marcaje și istoric se mută sus.</string>
 </resources>

@@ -464,4 +464,9 @@
     <string name="dejavu_feature_save_page">ページを保存してオフラインで読む</string>
     <string name="dejavu_recent_search_text">この検索を最近の検索から削除するか、すべて消去します。</string>
     <string name="dejavu_recent_search_clear">検索履歴を消去</string>
+    <string name="dejavu_settings_home_screen">ホーム画面</string>
+    <string name="dejavu_home_search_top">検索バーを画面上部に表示</string>
+    <string name="dejavu_home_search_top_summary">ワークスペース、ダウンロード一覧、拡張機能、ブックマーク、表示履歴は画面下部に並びます。</string>
+    <string name="dejavu_home_search_bottom">検索バーを画面下部に表示</string>
+    <string name="dejavu_home_search_bottom_summary">手が届きやすくなります。ワークスペース、ダウンロード一覧、拡張機能、ブックマーク、表示履歴は画面上部に移動します。</string>
 </resources>

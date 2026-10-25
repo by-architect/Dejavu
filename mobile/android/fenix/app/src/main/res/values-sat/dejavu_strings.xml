@@ -480,4 +480,9 @@
     <string name="dejavu_feature_save_page">ᱤᱱᱴᱟᱨᱱᱮᱴ ᱵᱷᱮᱜᱟᱨ ᱯᱟᱲᱦᱟᱣ ᱞᱟᱹᱜᱤᱫ ᱥᱟᱦᱴᱟ ᱠᱚ ᱥᱟᱧᱪᱟᱣ ᱢᱮ</string>
     <string name="dejavu_recent_search_text">ᱱᱚᱶᱟ ᱥᱮᱸᱫᱽᱨᱟ ᱫᱚ ᱱᱤᱛᱚᱜᱟᱜ ᱥᱮᱸᱫᱽᱨᱟ ᱠᱚ ᱛᱮᱛᱟᱭ ᱢᱮᱴᱟᱣ ᱢᱮ, ᱵᱟᱝᱠᱷᱟᱱ ᱡᱚᱛᱚ ᱢᱮᱴᱟᱣ ᱢᱮ ।</string>
     <string name="dejavu_recent_search_clear">ᱥᱮᱸᱫᱽᱨᱟ ᱱᱟᱜᱟᱢ ᱢᱮᱴᱟᱣ ᱢᱮ</string>
+    <string name="dejavu_settings_home_screen">ᱚᱲᱟᱜ ᱥᱠᱨᱤᱱ</string>
+    <string name="dejavu_home_search_top">ᱪᱮᱛᱟᱱ ᱨᱮ ᱥᱮᱸᱫᱽᱨᱟ ᱵᱟᱨ</string>
+    <string name="dejavu_home_search_top_summary">ᱣᱟᱨᱠᱥᱯᱮᱥ ᱠᱚ, ᱰᱟᱣᱱᱞᱚᱰ ᱠᱚ, ᱮᱠᱥᱴᱮᱱᱥᱚᱱᱠᱚ, ᱵᱩᱠᱢᱟᱨᱠ ᱠᱚ ᱟᱨ ᱱᱟᱜᱟᱢ ᱞᱟᱛᱟᱨ ᱨᱮ ᱢᱮᱱᱟᱜᱼᱟ ᱾</string>
+    <string name="dejavu_home_search_bottom">ᱞᱟᱛᱟᱨ ᱨᱮ ᱥᱮᱸᱫᱽᱨᱟ ᱵᱟᱨ</string>
+    <string name="dejavu_home_search_bottom_summary">ᱥᱮᱴᱮᱨᱚᱜ ᱞᱟᱹᱜᱤᱫ ᱵᱟᱹᱲᱛᱤ ᱟᱞᱜᱟ ᱾ ᱣᱟᱨᱠᱥᱯᱮᱥ ᱠᱚ, ᱰᱟᱣᱱᱞᱚᱰ ᱠᱚ, ᱮᱠᱥᱴᱮᱱᱥᱚᱱᱠᱚ, ᱵᱩᱠᱢᱟᱨᱠ ᱠᱚ ᱟᱨ ᱱᱟᱜᱟᱢ ᱪᱮᱛᱟᱱ ᱛᱮ ᱩᱪᱟᱹᱲ ᱟᱠᱟᱱᱟ ᱾</string>
 </resources>

@@ -480,4 +480,9 @@
     <string name="dejavu_feature_save_page">Deseu pàgines per llegir-les sense internet</string>
     <string name="dejavu_recent_search_text">Suprimeix aquesta cerca de les cerques recents o suprimeix-les totes.</string>
     <string name="dejavu_recent_search_clear">Suprimeix l’historial de cerques</string>
+    <string name="dejavu_settings_home_screen">Pantalla d\'inici</string>
+    <string name="dejavu_home_search_top">Barra de cerca a dalt</string>
+    <string name="dejavu_home_search_top_summary">Espais de treball, baixades, extensions, adreces d\'interès i historial a baix.</string>
+    <string name="dejavu_home_search_bottom">Barra de cerca a baix</string>
+    <string name="dejavu_home_search_bottom_summary">Més fàcil d\'abastar. Els espais de treball, les baixades, les extensions, les adreces d\'interès i l\'historial es mouen a dalt.</string>
 </resources>

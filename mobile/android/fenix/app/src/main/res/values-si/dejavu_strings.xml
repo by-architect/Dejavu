@@ -472,4 +472,9 @@
     <string name="dejavu_feature_save_page">අන්තර්ජාලය නැතිව කියවීමට පිටු සුරකින්න</string>
     <string name="dejavu_recent_search_text">මෙම සෙවුම මෑත සෙවුම් වලින් මකන්න, නැතහොත් සියල්ල හිස් කරන්න.</string>
     <string name="dejavu_recent_search_clear">සෙවුම් ඉතිහාසය මකන්න</string>
+    <string name="dejavu_settings_home_screen">මුල් තිරය</string>
+    <string name="dejavu_home_search_top">සෙවුම් තීරුව ඉහළින්</string>
+    <string name="dejavu_home_search_top_summary">අවකාශ, බාගැනීම්, දිගු, පොත්යොමු සහ ඉතිහාසය පහළින්.</string>
+    <string name="dejavu_home_search_bottom">සෙවුම් තීරුව පහළින්</string>
+    <string name="dejavu_home_search_bottom_summary">ළඟා වීමට වඩා පහසුයි. අවකාශ, බාගැනීම්, දිගු, පොත්යොමු සහ ඉතිහාසය ඉහළට ගෙනයනු ලැබේ.</string>
 </resources>

@@ -480,4 +480,9 @@
     <string name="dejavu_feature_save_page">Guarda páginas para ler sem internet</string>
     <string name="dejavu_recent_search_text">Elimine esta pesquisa das suas pesquisas recentes ou limpe todas.</string>
     <string name="dejavu_recent_search_clear">Limpar histórico de pesquisa</string>
+    <string name="dejavu_settings_home_screen">Ecrã inicial</string>
+    <string name="dejavu_home_search_top">Barra de pesquisa em cima</string>
+    <string name="dejavu_home_search_top_summary">Espaços de trabalho, transferências, extensões, marcadores e histórico em baixo.</string>
+    <string name="dejavu_home_search_bottom">Barra de pesquisa em baixo</string>
+    <string name="dejavu_home_search_bottom_summary">Mais fácil de alcançar. Espaços de trabalho, transferências, extensões, marcadores e histórico passam para cima.</string>
 </resources>

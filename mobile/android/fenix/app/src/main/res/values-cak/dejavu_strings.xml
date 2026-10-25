@@ -472,4 +472,9 @@
     <string name="dejavu_feature_save_page">Tiyak taq ruxaq richin nitz\'ët mawi k\'amab\'ey</string>
     <string name="dejavu_recent_search_text">Tiyuj re kanoxïk re\' chi kech ri nimakol kekanöx, o tiyuj ronojel.</string>
     <string name="dejavu_recent_search_clear">Tiyuj natab\'äl chi kanoxïk</string>
+    <string name="dejavu_settings_home_screen">Rutikirib\'al ruwa</string>
+    <string name="dejavu_home_search_top">Kikajtz\'ik kanoxïk ajsik</string>
+    <string name="dejavu_home_search_top_summary">Taq samajib\'äl, taq qasanïk, taq k\'amal, taq yaketal chuqa\' natab\'äl ikim.</string>
+    <string name="dejavu_home_search_bottom">Kikajtz\'ik kanoxïk ikim</string>
+    <string name="dejavu_home_search_bottom_summary">Man k\'ayew ta richin nawokisaj. Taq samajib\'äl, taq qasanïk, taq k\'amal, taq yaketal chuqa\' natab\'äl yeb\'e pa ajsik.</string>
 </resources>

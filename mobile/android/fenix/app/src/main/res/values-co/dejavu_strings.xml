@@ -472,4 +472,9 @@
     <string name="dejavu_feature_save_page">Arregistrate e pagine per leghje le senza internet</string>
     <string name="dejavu_recent_search_text">Squassà sta ricerca da e ricerche recente, o squassà le tutte.</string>
     <string name="dejavu_recent_search_clear">Squassà a cronolugia di ricerche</string>
+    <string name="dejavu_settings_home_screen">Screnu d\'accolta</string>
+    <string name="dejavu_home_search_top">Barra di ricerca insù</string>
+    <string name="dejavu_home_search_top_summary">Spazii di travagliu, scaricamenti, estensioni, indette è cronolugia inghjò.</string>
+    <string name="dejavu_home_search_bottom">Barra di ricerca inghjò</string>
+    <string name="dejavu_home_search_bottom_summary">Più faciule à righjunghje. I spazii di travagliu, i scaricamenti, l\'estensioni, l\'indette è a cronolugia si spiazzanu insù.</string>
 </resources>

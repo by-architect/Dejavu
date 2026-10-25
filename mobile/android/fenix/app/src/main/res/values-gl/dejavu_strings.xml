@@ -472,4 +472,9 @@
     <string name="dejavu_feature_save_page">Garda páxinas para lelas sen internet</string>
     <string name="dejavu_recent_search_text">Elimina esta busca das túas buscas recentes ou borra todas.</string>
     <string name="dejavu_recent_search_clear">Borrar historial de buscas</string>
+    <string name="dejavu_settings_home_screen">Pantalla de inicio</string>
+    <string name="dejavu_home_search_top">Barra de busca arriba</string>
+    <string name="dejavu_home_search_top_summary">Espazos de traballo, descargas, extensións, marcadores e historial abaixo.</string>
+    <string name="dejavu_home_search_bottom">Barra de busca abaixo</string>
+    <string name="dejavu_home_search_bottom_summary">Máis fácil de alcanzar. Os espazos de traballo, as descargas, as extensións, os marcadores e o historial móvense arriba.</string>
 </resources>

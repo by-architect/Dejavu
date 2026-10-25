@@ -488,4 +488,9 @@
     <string name="dejavu_feature_save_page">Įrašykite tinklalapius, kad skaitytumėte be interneto</string>
     <string name="dejavu_recent_search_text">Pašalinkite šią paiešką iš neseniai ieškotų arba išvalykite visas.</string>
     <string name="dejavu_recent_search_clear">Išvalyti paieškų žurnalą</string>
+    <string name="dejavu_settings_home_screen">Pradžios ekranas</string>
+    <string name="dejavu_home_search_top">Paieškos laukas viršuje</string>
+    <string name="dejavu_home_search_top_summary">Darbo erdvės, atsiuntimai, plėtiniai, adresynas ir žurnalas apačioje.</string>
+    <string name="dejavu_home_search_bottom">Paieškos laukas apačioje</string>
+    <string name="dejavu_home_search_bottom_summary">Lengviau pasiekti. Darbo erdvės, atsiuntimai, plėtiniai, adresynas ir žurnalas persikelia į viršų.</string>
 </resources>

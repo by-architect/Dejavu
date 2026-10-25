@@ -504,4 +504,9 @@
     <string name="dejavu_feature_save_page">Gwitha folennow rag redya heb kesrosweyth</string>
     <string name="dejavu_recent_search_text">Dilea an whilas ma a\'th whilasow dhiwettha, po dilea aga hepkor oll.</string>
     <string name="dejavu_recent_search_clear">Dilea istori whilas</string>
+    <string name="dejavu_settings_home_screen">Skrin tre</string>
+    <string name="dejavu_home_search_top">Barr whilas a-wartha</string>
+    <string name="dejavu_home_search_top_summary">Tyleryow-ober, iskargow, kressansow, merkow hag istori a-woles.</string>
+    <string name="dejavu_home_search_bottom">Barr whilas a-woles</string>
+    <string name="dejavu_home_search_bottom_summary">Es dhe dhrehedhes. Tyleryow-ober, iskargow, kressansow, merkow hag istori a vydh a-wartha.</string>
 </resources>

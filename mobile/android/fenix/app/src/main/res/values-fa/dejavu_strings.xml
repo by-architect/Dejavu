@@ -472,4 +472,9 @@
     <string name="dejavu_feature_save_page">صفحه‌ها را برای خواندن بدون اینترنت ذخیره کنید</string>
     <string name="dejavu_recent_search_text">این جست‌وجو را از جست‌وجوهای اخیر حذف کنید یا همه را پاک کنید.</string>
     <string name="dejavu_recent_search_clear">پاک کردن تاریخچه جست‌وجو</string>
+    <string name="dejavu_settings_home_screen">صفحهٔ اصلی</string>
+    <string name="dejavu_home_search_top">نوار جست‌وجو در بالا</string>
+    <string name="dejavu_home_search_top_summary">فضاهای کاری، دانلودها، افزونه‌ها، نشانک‌ها و تاریخچه در پایین.</string>
+    <string name="dejavu_home_search_bottom">نوار جست‌وجو در پایین</string>
+    <string name="dejavu_home_search_bottom_summary">دسترسی آسان‌تر. فضاهای کاری، دانلودها، افزونه‌ها، نشانک‌ها و تاریخچه به بالا منتقل می‌شوند.</string>
 </resources>

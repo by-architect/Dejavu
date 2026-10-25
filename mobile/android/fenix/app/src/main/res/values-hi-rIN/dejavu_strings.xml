@@ -505,4 +505,9 @@
     <string name="dejavu_feature_save_page">पेज सेव करें और बिना इंटरनेट के पढ़ें</string>
     <string name="dejavu_recent_search_text">इस सर्च को अपनी हालिया सर्च में से डिलीट करें, या सभी को क्लियर करें।</string>
     <string name="dejavu_recent_search_clear">सर्च हिस्ट्री क्लियर करें</string>
+    <string name="dejavu_settings_home_screen">होम स्क्रीन</string>
+    <string name="dejavu_home_search_top">सर्च बार सबसे ऊपर</string>
+    <string name="dejavu_home_search_top_summary">वर्कस्पेस, डाउनलोड, एक्सटेंशन, बुकमार्क और हिस्ट्री सबसे नीचे।</string>
+    <string name="dejavu_home_search_bottom">सर्च बार सबसे नीचे</string>
+    <string name="dejavu_home_search_bottom_summary">पहुँचने में ज़्यादा आसान। वर्कस्पेस, डाउनलोड, एक्सटेंशन, बुकमार्क और हिस्ट्री सबसे ऊपर चले जाते हैं।</string>
 </resources>

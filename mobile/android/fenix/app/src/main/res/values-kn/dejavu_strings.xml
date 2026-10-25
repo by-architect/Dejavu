@@ -472,4 +472,9 @@
     <string name="dejavu_feature_save_page">ಇಂಟರ್ನೆಟ್ ಇಲ್ಲದೆ ಓದಲು ಪುಟಗಳನ್ನು ಉಳಿಸಿ</string>
     <string name="dejavu_recent_search_text">ಈ ಹುಡುಕಾಟವನ್ನು ನಿಮ್ಮ ಇತ್ತೀಚಿನ ಹುಡುಕಾಟಗಳಿಂದ ಅಳಿಸಿ, ಅಥವಾ ಎಲ್ಲವನ್ನೂ ತೆರವುಗೊಳಿಸಿ.</string>
     <string name="dejavu_recent_search_clear">ಹುಡುಕಾಟ ಇತಿಹಾಸವನ್ನು ತೆರವುಗೊಳಿಸಿ</string>
+    <string name="dejavu_settings_home_screen">ಮುಖಪುಟ ಪರದೆ</string>
+    <string name="dejavu_home_search_top">ಹುಡುಕಾಟ ಪಟ್ಟಿ ಮೇಲ್ಭಾಗದಲ್ಲಿ</string>
+    <string name="dejavu_home_search_top_summary">ಕಾರ್ಯಕ್ಷೇತ್ರಗಳು, ಡೌನ್‌ಲೋಡ್‌ಗಳು, ವಿಸ್ತರಣೆಗಳು, ಬುಕ್‌ಮಾರ್ಕ್‌ಗಳು ಮತ್ತು ಇತಿಹಾಸ ಕೆಳಭಾಗದಲ್ಲಿ ಇರುತ್ತವೆ.</string>
+    <string name="dejavu_home_search_bottom">ಹುಡುಕಾಟ ಪಟ್ಟಿ ಕೆಳಭಾಗದಲ್ಲಿ</string>
+    <string name="dejavu_home_search_bottom_summary">ತಲುಪಲು ಸುಲಭ. ಕಾರ್ಯಕ್ಷೇತ್ರಗಳು, ಡೌನ್‌ಲೋಡ್‌ಗಳು, ವಿಸ್ತರಣೆಗಳು, ಬುಕ್‌ಮಾರ್ಕ್‌ಗಳು ಮತ್ತು ಇತಿಹಾಸ ಮೇಲ್ಭಾಗಕ್ಕೆ ಹೋಗುತ್ತವೆ.</string>
 </resources>

@@ -472,4 +472,9 @@
     <string name="dejavu_feature_save_page">Salva le pagine per leggerle senza internet</string>
     <string name="dejavu_recent_search_text">Elimina questa ricerca dalle ricerche recenti oppure cancellale tutte.</string>
     <string name="dejavu_recent_search_clear">Cancella cronologia delle ricerche</string>
+    <string name="dejavu_settings_home_screen">Schermata iniziale</string>
+    <string name="dejavu_home_search_top">Barra di ricerca in alto</string>
+    <string name="dejavu_home_search_top_summary">Spazi, download, estensioni, segnalibri e cronologia in basso.</string>
+    <string name="dejavu_home_search_bottom">Barra di ricerca in basso</string>
+    <string name="dejavu_home_search_bottom_summary">Più facile da raggiungere. Spazi, download, estensioni, segnalibri e cronologia si spostano in alto.</string>
 </resources>

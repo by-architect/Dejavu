@@ -472,4 +472,9 @@
     <string name="dejavu_feature_save_page">Gorde orriak internetik gabe irakurtzeko</string>
     <string name="dejavu_recent_search_text">Ezabatu bilaketa hau azken bilaketetatik, edo garbitu guztiak.</string>
     <string name="dejavu_recent_search_clear">Garbitu bilaketa-historia</string>
+    <string name="dejavu_settings_home_screen">Hasierako pantaila</string>
+    <string name="dejavu_home_search_top">Bilaketa-barra goian</string>
+    <string name="dejavu_home_search_top_summary">Laneremuak, deskargak, hedapenak, laster-markak eta historia behean.</string>
+    <string name="dejavu_home_search_bottom">Bilaketa-barra behean</string>
+    <string name="dejavu_home_search_bottom_summary">Iristeko errazagoa. Laneremuak, deskargak, hedapenak, laster-markak eta historia gora mugitzen dira.</string>
 </resources>

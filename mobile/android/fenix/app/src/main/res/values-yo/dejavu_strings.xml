@@ -464,4 +464,9 @@
     <string name="dejavu_feature_save_page">Fi àwọn ojú-ìwé pamọ́ láti kà láìsí íńtánẹ́ẹ̀tì</string>
     <string name="dejavu_recent_search_text">Pa ìwádìí yìí rẹ́ kúrò nínú àwọn ìwádìí àìpẹ́ yìí, tàbí pa gbogbo wọn rẹ́.</string>
     <string name="dejavu_recent_search_clear">Pa ìtàn ìwádìí rẹ́</string>
+    <string name="dejavu_settings_home_screen">Ojú ìbòjú ilé</string>
+    <string name="dejavu_home_search_top">Ọ̀pá Ìwádìí lókè</string>
+    <string name="dejavu_home_search_top_summary">Àwọn ibi-iṣẹ́, àwọn ìgbàsílẹ̀, àwọn ìfikún, àwọn àmì-ìwé àti ìtàn wà ní ìsàlẹ̀.</string>
+    <string name="dejavu_home_search_bottom">Ọ̀pá Ìwádìí ní ìsàlẹ̀</string>
+    <string name="dejavu_home_search_bottom_summary">Ó rọrùn sí i láti dé. Àwọn ibi-iṣẹ́, àwọn ìgbàsílẹ̀, àwọn ìfikún, àwọn àmì-ìwé àti ìtàn yóò lọ sí òkè.</string>
 </resources>

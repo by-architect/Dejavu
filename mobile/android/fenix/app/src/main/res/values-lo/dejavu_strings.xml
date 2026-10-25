@@ -464,4 +464,9 @@
     <string name="dejavu_feature_save_page">ບັນທຶກໜ້າເພື່ອອ່ານໂດຍບໍ່ມີອິນເຕີເນັດ</string>
     <string name="dejavu_recent_search_text">ລຶບການຄົ້ນຫານີ້ອອກຈາກການຄົ້ນຫາຫຼ້າສຸດຂອງທ່ານ ຫຼື ລຶບທັງໝົດ.</string>
     <string name="dejavu_recent_search_clear">ລຶບປະຫວັດການຄົ້ນຫາ</string>
+    <string name="dejavu_settings_home_screen">ໜ້າຈໍຫຼັກ</string>
+    <string name="dejavu_home_search_top">ແຖບຄົ້ນຫາຢູ່ທາງເທິງ</string>
+    <string name="dejavu_home_search_top_summary">ພື້ນທີ່ເຮັດວຽກ, ດາວໂຫລດ, ສ່ວນຂະຫຍາຍ, ບຸກມາກ ແລະ ປະຫວັດ ຢູ່ທາງລຸ່ມ.</string>
+    <string name="dejavu_home_search_bottom">ແຖບຄົ້ນຫາຢູ່ທາງລຸ່ມ</string>
+    <string name="dejavu_home_search_bottom_summary">ເອື້ອມເຖິງງ່າຍກວ່າ. ພື້ນທີ່ເຮັດວຽກ, ດາວໂຫລດ, ສ່ວນຂະຫຍາຍ, ບຸກມາກ ແລະ ປະຫວັດ ຍ້າຍໄປທາງເທິງ.</string>
 </resources>

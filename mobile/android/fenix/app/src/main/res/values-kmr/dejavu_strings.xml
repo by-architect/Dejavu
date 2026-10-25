@@ -472,4 +472,9 @@
     <string name="dejavu_feature_save_page">Rûpelan tomar bike da ku bê înternetê bixwînî</string>
     <string name="dejavu_recent_search_text">Ev lêgerîn ji lêgerînên xwe yên borî jê bibe an jî hemûyan paqij bike.</string>
     <string name="dejavu_recent_search_clear">Raboriya lêgerînê paqij bike</string>
+    <string name="dejavu_settings_home_screen">Ekrana malê</string>
+    <string name="dejavu_home_search_top">Darika lêgerînê li jor</string>
+    <string name="dejavu_home_search_top_summary">Qad, daxistin, pêvek, bijare û raborî li jêr in.</string>
+    <string name="dejavu_home_search_bottom">Darika lêgerînê li jêr</string>
+    <string name="dejavu_home_search_bottom_summary">Gihîştina wê hêsantir e. Qad, daxistin, pêvek, bijare û raborî diçin jor.</string>
 </resources>

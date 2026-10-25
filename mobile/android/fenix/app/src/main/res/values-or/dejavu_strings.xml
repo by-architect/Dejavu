@@ -472,4 +472,9 @@
     <string name="dejavu_feature_save_page">ଇଣ୍ଟରନେଟ୍ ବିନା ପଢ଼ିବାକୁ ପୃଷ୍ଠାଗୁଡ଼ିକ ସେଭ୍ କରନ୍ତୁ</string>
     <string name="dejavu_recent_search_text">ଏହି ସନ୍ଧାନକୁ ଆପଣଙ୍କ ସାମ୍ପ୍ରତିକ ସନ୍ଧାନରୁ ଡିଲିଟ୍ କରନ୍ତୁ, ଅଥବା ସବୁ ଖାଲି କରନ୍ତୁ।</string>
     <string name="dejavu_recent_search_clear">ସନ୍ଧାନ ଇତିହାସ ଖାଲି କରନ୍ତୁ</string>
+    <string name="dejavu_settings_home_screen">ହୋମ୍ ସ୍କ୍ରିନ୍</string>
+    <string name="dejavu_home_search_top">ଉପରେ ସନ୍ଧାନ ବାର୍</string>
+    <string name="dejavu_home_search_top_summary">କାର୍ଯ୍ୟକ୍ଷେତ୍ର, ଡାଉନଲୋଡ୍, ଏକ୍ସଟେନସନ, ବୁକମାର୍କ ଏବଂ ଇତିହାସ ତଳେ ଅଛି।</string>
+    <string name="dejavu_home_search_bottom">ତଳେ ସନ୍ଧାନ ବାର୍</string>
+    <string name="dejavu_home_search_bottom_summary">ପହଞ୍ଚିବା ଅଧିକ ସହଜ। କାର୍ଯ୍ୟକ୍ଷେତ୍ର, ଡାଉନଲୋଡ୍, ଏକ୍ସଟେନସନ, ବୁକମାର୍କ ଏବଂ ଇତିହାସ ଉପରକୁ ଚାଲିଯାଏ।</string>
 </resources>

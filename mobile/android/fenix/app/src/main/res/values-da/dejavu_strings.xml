@@ -472,4 +472,9 @@
     <string name="dejavu_feature_save_page">Gem sider, så du kan læse dem uden internet</string>
     <string name="dejavu_recent_search_text">Slet denne søgning fra dine seneste søgninger, eller slet dem alle.</string>
     <string name="dejavu_recent_search_clear">Slet søgehistorik</string>
+    <string name="dejavu_settings_home_screen">Startskærm</string>
+    <string name="dejavu_home_search_top">Søgelinje øverst</string>
+    <string name="dejavu_home_search_top_summary">Arbejdsområder, filhentninger, udvidelser, bogmærker og historik nederst.</string>
+    <string name="dejavu_home_search_bottom">Søgelinje nederst</string>
+    <string name="dejavu_home_search_bottom_summary">Nemmere at nå. Arbejdsområder, filhentninger, udvidelser, bogmærker og historik flyttes til toppen.</string>
 </resources>

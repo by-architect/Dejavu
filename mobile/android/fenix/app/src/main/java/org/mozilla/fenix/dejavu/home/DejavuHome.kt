@@ -192,7 +192,9 @@ interface DejavuHomeInteractor : TabEditor {
  * selection mode; keeping the finger down and moving drags the selection, also to other workspaces: resting the finger
  * on the strip that shows at a side of the page turns to the workspace on that side, see [SelectionDrag].
  * [hasClosedTab] tells whether a closed tab is left to reopen, and [hasClipboardLink] whether the clipboard holds a
- * link to open. [wallpapers] are the pictures workspaces show under their theme, by workspace id.
+ * link to open. [wallpapers] are the pictures workspaces show under their theme, by workspace id. The search bar, with
+ * the account and settings buttons, shows on top and the workspace bar at the bottom, or the other way round when
+ * [searchAtBottom]; selecting keeps its bars where they are, the selection on top and its actions at the bottom.
  */
 @Suppress("LongMethod", "LongParameterList", "CognitiveComplexMethod", "CyclomaticComplexMethod")
 @Composable
@@ -213,6 +215,7 @@ fun DejavuHome(
     downloads: State<DownloadsStatus>,
     interactor: DejavuHomeInteractor,
     modifier: Modifier = Modifier,
+    searchAtBottom: Boolean = false,
 ) {
     // The private workspace is an extra last page, there while private tabs are open.
     val privateIndex = state.workspaces.size.takeIf { privateTabs.isNotEmpty() }
@@ -469,8 +472,30 @@ fun DejavuHome(
             )
             Column(modifier = Modifier.fillMaxSize().systemBarsPadding().imePadding()) {
                 val activeSelection = selection
-                if (activeSelection == null) {
+                val searchBar: @Composable () -> Unit = {
                     TopBar(interactor, onSearchClick = if (onPrivatePage) newPrivateTab else interactor::onSearchClick)
+                }
+                val workspaceBar: @Composable () -> Unit = {
+                    WorkspaceBar(
+                        workspaces = state.workspaces,
+                        containers = containers,
+                        activeIndex = pagerState.currentPage,
+                        hasPrivate = privateIndex != null,
+                        onDotClick = { index ->
+                            interactor.onWorkspaceSelected(state.workspaces[index].id)
+                            scope.launch { pagerState.animateScrollToPage(index) }
+                        },
+                        onPrivateClick = { privateIndex?.let { scope.launch { pagerState.animateScrollToPage(it) } } },
+                        onMove = interactor::onMoveWorkspace,
+                        downloads = downloads,
+                        onDownloadsClick = interactor::onDownloadsClick,
+                        onExtensionsClick = interactor::onExtensionsClick,
+                        onBookmarksClick = interactor::onBookmarksClick,
+                        onHistoryClick = interactor::onHistoryClick,
+                    )
+                }
+                if (activeSelection == null) {
+                    if (searchAtBottom) workspaceBar() else searchBar()
                 } else if (essentialsDrop != EssentialsDrop.NONE) {
                     EssentialsDropBar(active = essentialsDrop == EssentialsDrop.ACTIVE)
                 } else {
@@ -643,23 +668,7 @@ fun DejavuHome(
                 }
 
                 if (activeSelection == null) {
-                    WorkspaceBar(
-                        workspaces = state.workspaces,
-                        containers = containers,
-                        activeIndex = pagerState.currentPage,
-                        hasPrivate = privateIndex != null,
-                        onDotClick = { index ->
-                            interactor.onWorkspaceSelected(state.workspaces[index].id)
-                            scope.launch { pagerState.animateScrollToPage(index) }
-                        },
-                        onPrivateClick = { privateIndex?.let { scope.launch { pagerState.animateScrollToPage(it) } } },
-                        onMove = interactor::onMoveWorkspace,
-                        downloads = downloads,
-                        onDownloadsClick = interactor::onDownloadsClick,
-                        onExtensionsClick = interactor::onExtensionsClick,
-                        onBookmarksClick = interactor::onBookmarksClick,
-                        onHistoryClick = interactor::onHistoryClick,
-                    )
+                    if (searchAtBottom) searchBar() else workspaceBar()
                 } else if (selectionTargets != null) {
                     SelectionBar(
                         actions = selectionActions.forSplitWays(splitWays).filter { it.appliesTo(selectionTargets) },

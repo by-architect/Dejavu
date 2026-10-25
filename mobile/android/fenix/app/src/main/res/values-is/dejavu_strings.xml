@@ -472,4 +472,9 @@
     <string name="dejavu_feature_save_page">Vistaðu síður til að lesa án nets</string>
     <string name="dejavu_recent_search_text">Eyddu þessari leit úr nýlegum leitum eða hreinsaðu þær allar.</string>
     <string name="dejavu_recent_search_clear">Hreinsa leitarferil</string>
+    <string name="dejavu_settings_home_screen">Upphafsskjár</string>
+    <string name="dejavu_home_search_top">Leitarstika efst</string>
+    <string name="dejavu_home_search_top_summary">Vinnusvæði, sóttar skrár, forritsaukar, bókamerki og ferill neðst.</string>
+    <string name="dejavu_home_search_bottom">Leitarstika neðst</string>
+    <string name="dejavu_home_search_bottom_summary">Auðveldara að ná til. Vinnusvæði, sóttar skrár, forritsaukar, bókamerki og ferill færast efst.</string>
 </resources>

@@ -472,4 +472,9 @@
     <string name="dejavu_feature_save_page">Саҳифаҳоро барои хондан бе интернет нигоҳ доред</string>
     <string name="dejavu_recent_search_text">Ин ҷустуҷӯро аз ҷустуҷӯҳои охирин нест кунед ё ҳамаашро тоза намоед.</string>
     <string name="dejavu_recent_search_clear">Нест кардани таърихи ҷустуҷӯ</string>
+    <string name="dejavu_settings_home_screen">Экрани асосӣ</string>
+    <string name="dejavu_home_search_top">Навори ҷустуҷӯ дар боло</string>
+    <string name="dejavu_home_search_top_summary">Фазоҳо, боргириҳо, васеъшавиҳо, хатбаракҳо ва таърих дар поён.</string>
+    <string name="dejavu_home_search_bottom">Навори ҷустуҷӯ дар поён</string>
+    <string name="dejavu_home_search_bottom_summary">Дастрасӣ осонтар аст. Фазоҳо, боргириҳо, васеъшавиҳо, хатбаракҳо ва таърих ба боло гузаронида мешаванд.</string>
 </resources>

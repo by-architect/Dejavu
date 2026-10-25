@@ -472,4 +472,9 @@
     <string name="dejavu_feature_save_page">Betlerdi internetsiz oqıw ushın saqlań</string>
     <string name="dejavu_recent_search_text">Bul izlewdi sońǵı izlewlerińizden óshiriń yamasa barlıǵın tazalań.</string>
     <string name="dejavu_recent_search_clear">Izlew tariyxın tazalaw</string>
+    <string name="dejavu_settings_home_screen">Bas ekran</string>
+    <string name="dejavu_home_search_top">Izlew qatarı joqarıda</string>
+    <string name="dejavu_home_search_top_summary">Jumıs maydanları, júklengenler, keńeytiwler, betbelgiler hám tariyx tómende.</string>
+    <string name="dejavu_home_search_bottom">Izlew qatarı tómende</string>
+    <string name="dejavu_home_search_bottom_summary">Jetiwge ańsatıraq. Jumıs maydanları, júklengenler, keńeytiwler, betbelgiler hám tariyx joqarıǵa kóshedi.</string>
 </resources>

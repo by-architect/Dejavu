@@ -496,4 +496,9 @@
     <string name="dejavu_feature_save_page">Enrollañ pajennoù evit lenn hep Internet</string>
     <string name="dejavu_recent_search_text">Dilemel an enklask-mañ eus an enklaskoù nevez, pe skarzhañ an holl.</string>
     <string name="dejavu_recent_search_clear">Dilemel roll istor an enklaskoù</string>
+    <string name="dejavu_settings_home_screen">Skramm degemer</string>
+    <string name="dejavu_home_search_top">Barrenn glask e krec’h</string>
+    <string name="dejavu_home_search_top_summary">Egorioù labour, pellgargadurioù, askouezhioù, sinedoù ha roll istor en traoñ.</string>
+    <string name="dejavu_home_search_bottom">Barrenn glask en traoñ</string>
+    <string name="dejavu_home_search_bottom_summary">Aesoc’h da dizhout. An egorioù labour, ar pellgargadurioù, an askouezhioù, ar sinedoù hag ar roll istor a ya e krec’h.</string>
 </resources>

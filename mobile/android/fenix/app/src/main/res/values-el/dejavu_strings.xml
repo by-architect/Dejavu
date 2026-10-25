@@ -472,4 +472,9 @@
     <string name="dejavu_feature_save_page">Αποθηκεύστε σελίδες για ανάγνωση χωρίς σύνδεση</string>
     <string name="dejavu_recent_search_text">Διαγράψτε αυτήν την αναζήτηση από τις πρόσφατες αναζητήσεις ή διαγράψτε όλες.</string>
     <string name="dejavu_recent_search_clear">Διαγραφή ιστορικού αναζήτησης</string>
+    <string name="dejavu_settings_home_screen">Αρχική οθόνη</string>
+    <string name="dejavu_home_search_top">Γραμμή αναζήτησης πάνω</string>
+    <string name="dejavu_home_search_top_summary">Χώροι εργασίας, λήψεις, επεκτάσεις, σελιδοδείκτες και ιστορικό στο κάτω μέρος.</string>
+    <string name="dejavu_home_search_bottom">Γραμμή αναζήτησης κάτω</string>
+    <string name="dejavu_home_search_bottom_summary">Πιο εύκολη πρόσβαση. Οι χώροι εργασίας, οι λήψεις, οι επεκτάσεις, οι σελιδοδείκτες και το ιστορικό μετακινούνται στο πάνω μέρος.</string>
 </resources>

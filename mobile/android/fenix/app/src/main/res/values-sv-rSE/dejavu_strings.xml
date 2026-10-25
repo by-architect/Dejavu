@@ -472,4 +472,9 @@
     <string name="dejavu_feature_save_page">Spara sidor för att läsa utan internet</string>
     <string name="dejavu_recent_search_text">Ta bort den här sökningen från dina senaste sökningar, eller rensa alla.</string>
     <string name="dejavu_recent_search_clear">Rensa sökhistorik</string>
+    <string name="dejavu_settings_home_screen">Startskärm</string>
+    <string name="dejavu_home_search_top">Sökfältet överst</string>
+    <string name="dejavu_home_search_top_summary">Arbetsytor, hämtningar, tillägg, bokmärken och historik nederst.</string>
+    <string name="dejavu_home_search_bottom">Sökfältet nederst</string>
+    <string name="dejavu_home_search_bottom_summary">Lättare att nå. Arbetsytor, hämtningar, tillägg, bokmärken och historik flyttas överst.</string>
 </resources>

@@ -380,6 +380,18 @@
     <string name="dejavu_bars_bottom">Address bar at the bottom</string>
     <string name="dejavu_bars_bottom_summary">No actions bar. Swipe the address bar up to open the More menu.</string>
 
+    <!-- Settings: Customize, where the home screen shows its search bar, with the account and settings buttons beside it -->
+    <string name="pref_key_dejavu_home_search_top" translatable="false">pref_key_dejavu_home_search_top</string>
+    <string name="pref_key_dejavu_home_search_bottom" translatable="false">pref_key_dejavu_home_search_bottom</string>
+    <!-- Title of the group of the two choices below, about the home screen, where the workspaces and their tabs show. -->
+    <string name="dejavu_settings_home_screen">Home screen</string>
+    <string name="dejavu_home_search_top">Search bar at the top</string>
+    <!-- The bar at the bottom holds the workspaces and the downloads, extensions, bookmarks and history buttons. -->
+    <string name="dejavu_home_search_top_summary">Workspaces, downloads, extensions, bookmarks and history at the bottom.</string>
+    <string name="dejavu_home_search_bottom">Search bar at the bottom</string>
+    <!-- The search bar moves to the bottom and the bar of the workspaces and buttons goes to the top, in its place. -->
+    <string name="dejavu_home_search_bottom_summary">Easier to reach. Workspaces, downloads, extensions, bookmarks and history move to the top.</string>
+
     <!-- Settings: Customize, hiding the phone's status bar and navigation bar while a page is shown -->
     <string name="pref_key_dejavu_hide_system_bars" translatable="false">pref_key_dejavu_hide_system_bars</string>
     <string name="dejavu_settings_screen">Screen</string>

@@ -472,4 +472,9 @@
     <string name="dejavu_feature_save_page">ገጾችን ያለ በይነመረብ ለማንበብ ያስቀምጡ</string>
     <string name="dejavu_recent_search_text">ይህን ፍለጋ ከቅርብ ጊዜ ፍለጋዎች ሰርዝ፣ ወይም ሁሉንም አጽዳ።</string>
     <string name="dejavu_recent_search_clear">የፍለጋ ታሪክን አጽዳ</string>
+    <string name="dejavu_settings_home_screen">መነሻ ማያ ገጽ</string>
+    <string name="dejavu_home_search_top">የፍለጋ አሞሌ ከላይ</string>
+    <string name="dejavu_home_search_top_summary">የስራ ቦታዎች፣ የወረዱ፣ ቅጥያዎች፣ እልባቶች እና ታሪክ ከታች ይገኛሉ።</string>
+    <string name="dejavu_home_search_bottom">የፍለጋ አሞሌ ከታች</string>
+    <string name="dejavu_home_search_bottom_summary">ለመድረስ ይቀላል። የስራ ቦታዎች፣ የወረዱ፣ ቅጥያዎች፣ እልባቶች እና ታሪክ ወደ ላይ ይዛወራሉ።</string>
 </resources>

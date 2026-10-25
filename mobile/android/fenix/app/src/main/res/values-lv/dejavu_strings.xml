@@ -480,4 +480,9 @@
     <string name="dejavu_feature_save_page">Saglabājiet lapas, lai lasītu bez interneta</string>
     <string name="dejavu_recent_search_text">Dzēst šo meklēšanu no nesenajiem meklējumiem vai notīrīt tos visus.</string>
     <string name="dejavu_recent_search_clear">Notīrīt meklēšanas vēsturi</string>
+    <string name="dejavu_settings_home_screen">Sākuma ekrāns</string>
+    <string name="dejavu_home_search_top">Meklēšanas josla augšā</string>
+    <string name="dejavu_home_search_top_summary">Darbvietas, lejupielādes, paplašinājumi, grāmatzīmes un vēsture apakšā.</string>
+    <string name="dejavu_home_search_bottom">Meklēšanas josla apakšā</string>
+    <string name="dejavu_home_search_bottom_summary">Vieglāk aizsniegt. Darbvietas, lejupielādes, paplašinājumi, grāmatzīmes un vēsture pārvietojas uz augšu.</string>
 </resources>

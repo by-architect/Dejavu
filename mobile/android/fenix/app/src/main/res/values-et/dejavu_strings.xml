@@ -472,4 +472,9 @@
     <string name="dejavu_feature_save_page">Salvesta lehed, et neid ilma internetita lugeda</string>
     <string name="dejavu_recent_search_text">Kustuta see otsing hiljutiste otsingute hulgast või tühjenda need kõik.</string>
     <string name="dejavu_recent_search_clear">Kustuta otsinguajalugu</string>
+    <string name="dejavu_settings_home_screen">Avaekraan</string>
+    <string name="dejavu_home_search_top">Otsinguriba üleval</string>
+    <string name="dejavu_home_search_top_summary">Tööruumid, allalaadimised, lisad, järjehoidjad ja ajalugu all.</string>
+    <string name="dejavu_home_search_bottom">Otsinguriba all</string>
+    <string name="dejavu_home_search_bottom_summary">Käepärasem. Tööruumid, allalaadimised, lisad, järjehoidjad ja ajalugu liiguvad üles.</string>
 </resources>

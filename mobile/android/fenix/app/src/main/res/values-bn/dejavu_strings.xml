@@ -505,4 +505,9 @@
     <string name="dejavu_feature_save_page">ইন্টারনেট ছাড়া পড়তে পাতা সংরক্ষণ করুন</string>
     <string name="dejavu_recent_search_text">সাম্প্রতিক অনুসন্ধান থেকে এই অনুসন্ধানটি মুছুন, অথবা সবগুলো মুছে ফেলুন।</string>
     <string name="dejavu_recent_search_clear">অনুসন্ধানের ইতিহাস মুছুন</string>
+    <string name="dejavu_settings_home_screen">হোম স্ক্রিন</string>
+    <string name="dejavu_home_search_top">অনুসন্ধান বার উপরে</string>
+    <string name="dejavu_home_search_top_summary">ওয়ার্কস্পেস, ডাউনলোড, এক্সটেনশন, বুকমার্ক ও ইতিহাস নিচে থাকে।</string>
+    <string name="dejavu_home_search_bottom">অনুসন্ধান বার নিচে</string>
+    <string name="dejavu_home_search_bottom_summary">নাগাল পাওয়া আরও সহজ। ওয়ার্কস্পেস, ডাউনলোড, এক্সটেনশন, বুকমার্ক ও ইতিহাস উপরে চলে যায়।</string>
 </resources>

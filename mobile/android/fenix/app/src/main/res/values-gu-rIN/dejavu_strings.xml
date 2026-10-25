@@ -505,4 +505,9 @@
     <string name="dejavu_feature_save_page">ઇન્ટરનેટ વગર વાંચવા માટે પૃષ્ઠો સાચવો</string>
     <string name="dejavu_recent_search_text">તમારી તાજેતરની શોધોમાંથી આ શોધ કાઢી નાખો, અથવા બધી સાફ કરો.</string>
     <string name="dejavu_recent_search_clear">શોધ ઇતિહાસ સાફ કરો</string>
+    <string name="dejavu_settings_home_screen">હોમ સ્ક્રીન</string>
+    <string name="dejavu_home_search_top">શોધ બાર ઉપર</string>
+    <string name="dejavu_home_search_top_summary">વર્કસ્પેસ, ડાઉનલોડ્સ, એક્સટેન્શન, બુકમાર્ક્સ અને ઇતિહાસ નીચે.</string>
+    <string name="dejavu_home_search_bottom">શોધ બાર નીચે</string>
+    <string name="dejavu_home_search_bottom_summary">પહોંચવામાં વધુ સરળ. વર્કસ્પેસ, ડાઉનલોડ્સ, એક્સટેન્શન, બુકમાર્ક્સ અને ઇતિહાસ ઉપર ખસે છે.</string>
 </resources>

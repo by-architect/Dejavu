@@ -464,4 +464,9 @@
     <string name="dejavu_feature_save_page">儲存頁面，無需網路即可閱讀</string>
     <string name="dejavu_recent_search_text">從最近搜尋內容中刪除此搜尋，或清除全部內容。</string>
     <string name="dejavu_recent_search_clear">清除搜尋紀錄</string>
+    <string name="dejavu_settings_home_screen">主畫面</string>
+    <string name="dejavu_home_search_top">搜尋列在頂端</string>
+    <string name="dejavu_home_search_top_summary">工作區、下載項目、擴充套件、書籤與瀏覽紀錄在底端。</string>
+    <string name="dejavu_home_search_bottom">搜尋列在底端</string>
+    <string name="dejavu_home_search_bottom_summary">更容易觸及。工作區、下載項目、擴充套件、書籤與瀏覽紀錄會移動到頂端。</string>
 </resources>

@@ -63,6 +63,7 @@ import org.mozilla.fenix.dejavu.actions.ActionPlace
 import org.mozilla.fenix.dejavu.actions.CustomAction
 import org.mozilla.fenix.dejavu.actions.TabAction
 import org.mozilla.fenix.dejavu.browser.DejavuSearchOverlay
+import org.mozilla.fenix.dejavu.browser.DejavuSearchStart
 import org.mozilla.fenix.dejavu.browser.SearchBackdrop
 import org.mozilla.fenix.dejavu.browser.SearchPageBackdrop
 import org.mozilla.fenix.dejavu.browser.SplitSpace
@@ -144,6 +145,7 @@ fun ComposeView.setDejavuHomeContent(
             val folderKeys by settings.folderRowKeys.collectAsState()
             val hiddenSelectionKeys by settings.hiddenSelectionKeys.collectAsState()
             val essentialsPerContainer by settings.essentialsPerContainer.collectAsState()
+            val searchAtBottom by settings.homeSearchAtBottom.collectAsState()
             val containerRecords by containerStorage.records.collectAsState()
             val containers = remember(containerRecords) { containerRecords.orEmpty().associateBy { it.contextId } }
             val tabs by fenix.core.store.observeAsComposableState { it.normalTabs }
@@ -203,6 +205,7 @@ fun ComposeView.setDejavuHomeContent(
                     wallpapers = wallpapers,
                     downloads = downloads,
                     interactor = interactor,
+                    searchAtBottom = searchAtBottom,
                 )
 
                 if (showsPage) {
@@ -507,11 +510,17 @@ private class DefaultDejavuHomeInteractor(
 
     override fun onSearchClick() {
         NewTabContainerChoice.clear()
-        components.appStore.dispatch(SearchStarted())
+        startSearch()
     }
 
     override fun onNewPrivateTab() {
         NewTabContainerChoice.setPrivate()
+        startSearch()
+    }
+
+    /** Opens the search screen, right where it is when the search bar is at the bottom of the home screen. */
+    private fun startSearch() {
+        if (settings.homeSearchAtBottom.value) DejavuSearchStart.fromBottom()
         components.appStore.dispatch(SearchStarted())
     }
 
@@ -521,7 +530,7 @@ private class DefaultDejavuHomeInteractor(
 
     override fun onNewTabInContainer(pick: ContainerPick) {
         NewTabContainerChoice.set(pick)
-        components.appStore.dispatch(SearchStarted())
+        startSearch()
     }
 
     override fun onAccountClick() {

@@ -488,4 +488,9 @@
     <string name="dejavu_feature_save_page">Zapisuj strony, aby czytać je bez internetu</string>
     <string name="dejavu_recent_search_text">Usuń to wyszukiwanie z ostatnich wyszukiwań lub wyczyść wszystkie.</string>
     <string name="dejavu_recent_search_clear">Wyczyść historię wyszukiwania</string>
+    <string name="dejavu_settings_home_screen">Ekran główny</string>
+    <string name="dejavu_home_search_top">Pasek wyszukiwania na górze</string>
+    <string name="dejavu_home_search_top_summary">Obszary robocze, pobrane pliki, rozszerzenia, zakładki i historia na dole.</string>
+    <string name="dejavu_home_search_bottom">Pasek wyszukiwania na dole</string>
+    <string name="dejavu_home_search_bottom_summary">Łatwiej dosięgnąć. Obszary robocze, pobrane pliki, rozszerzenia, zakładki i historia przenoszą się na górę.</string>
 </resources>

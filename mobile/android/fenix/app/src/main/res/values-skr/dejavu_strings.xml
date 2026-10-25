@@ -472,4 +472,9 @@
     <string name="dejavu_feature_save_page">انٹرنیٹ کنوں بغیر پڑھݨ کیتے ورقے محفوظ کرو</string>
     <string name="dejavu_recent_search_text">اے ڳولا ہالی دیاں ڳولا کنوں مٹاؤ، یا ساریاں صاف کرو۔</string>
     <string name="dejavu_recent_search_clear">ڳولا دی تاریخ مٹاؤ</string>
+    <string name="dejavu_settings_home_screen">ہوم سکرین</string>
+    <string name="dejavu_home_search_top">ڳولا پٹی چوٹی تے</string>
+    <string name="dejavu_home_search_top_summary">ورک سپیساں، ڈاؤن لوڈاں، ایکسٹینشنز، نشانیاں تے تاریخ تل تے۔</string>
+    <string name="dejavu_home_search_bottom">ڳولا پٹی تل تے</string>
+    <string name="dejavu_home_search_bottom_summary">پہنچݨ کیتے ودھیک سوکھا۔ ورک سپیساں، ڈاؤن لوڈاں، ایکسٹینشنز، نشانیاں تے تاریخ چوٹی تے ٹور ݙتے ویسن۔</string>
 </resources>

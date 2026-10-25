@@ -480,4 +480,9 @@
     <string name="dejavu_feature_save_page">Salva le pàgine par lèxarle sensa internet</string>
     <string name="dejavu_recent_search_text">Scanseƚa sta riserca da łe riserche resenti, o scanseƚa tute.</string>
     <string name="dejavu_recent_search_clear">Scanseƚa cronoƚogìa de łe riserche</string>
+    <string name="dejavu_settings_home_screen">Schermada prinsipal</string>
+    <string name="dejavu_home_search_top">Bara de riserca in alto</string>
+    <string name="dejavu_home_search_top_summary">Spasi de laoro, download, estension, segnaƚibri e cronoƚogìa in baso.</string>
+    <string name="dejavu_home_search_bottom">Bara de riserca in baso</string>
+    <string name="dejavu_home_search_bottom_summary">Pì fàsiłe da rivar. Spasi de laoro, download, estension, segnaƚibri e cronoƚogìa se sposta in alto.</string>
 </resources>

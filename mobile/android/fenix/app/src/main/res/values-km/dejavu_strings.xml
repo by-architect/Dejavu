@@ -464,4 +464,9 @@
     <string name="dejavu_feature_save_page">រក្សាទុកទំព័រដើម្បីអានដោយគ្មានអ៊ីនធឺណិត</string>
     <string name="dejavu_recent_search_text">លុបការស្វែងរកនេះចេញពីការស្វែងរកថ្មីៗរបស់អ្នក ឬសម្អាតទាំងអស់។</string>
     <string name="dejavu_recent_search_clear">សម្អាតប្រវត្តិស្វែងរក</string>
+    <string name="dejavu_settings_home_screen">អេក្រង់ដើម</string>
+    <string name="dejavu_home_search_top">របារស្វែងរកនៅខាងលើ</string>
+    <string name="dejavu_home_search_top_summary">ចន្លោះការងារ ទាញយក ផ្នែកបន្ថែម ចំណាំ និងប្រវត្តិ នៅខាងក្រោម។</string>
+    <string name="dejavu_home_search_bottom">របារស្វែងរកនៅខាងក្រោម</string>
+    <string name="dejavu_home_search_bottom_summary">ងាយស្រួលទៅដល់ជាង។ ចន្លោះការងារ ទាញយក ផ្នែកបន្ថែម ចំណាំ និងប្រវត្តិ ផ្លាស់ទីទៅខាងលើ។</string>
 </resources>

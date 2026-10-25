@@ -472,4 +472,9 @@
     <string name="dejavu_feature_save_page">Guarda páginas para leerlas sin internet</string>
     <string name="dejavu_recent_search_text">Quita esta búsqueda de tus búsquedas recientes, o borra todas.</string>
     <string name="dejavu_recent_search_clear">Borrar historial de búsquedas</string>
+    <string name="dejavu_settings_home_screen">Pantalla de inicio</string>
+    <string name="dejavu_home_search_top">Barra de búsqueda arriba</string>
+    <string name="dejavu_home_search_top_summary">Espacios de trabajo, descargas, extensiones, marcadores yéetel historial abajo.</string>
+    <string name="dejavu_home_search_bottom">Barra de búsqueda abajo</string>
+    <string name="dejavu_home_search_bottom_summary">Más fácil de alcanzar. Espacios de trabajo, descargas, extensiones, marcadores yéetel historial se mueven arriba.</string>
 </resources>

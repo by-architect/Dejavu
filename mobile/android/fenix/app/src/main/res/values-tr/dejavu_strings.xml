@@ -472,4 +472,9 @@
     <string name="dejavu_feature_save_page">Sayfaları internetsiz okumak için kaydedin</string>
     <string name="dejavu_recent_search_text">Bu aramayı son aramalarınızdan silin veya tümünü temizleyin.</string>
     <string name="dejavu_recent_search_clear">Arama geçmişini temizle</string>
+    <string name="dejavu_settings_home_screen">Ana ekran</string>
+    <string name="dejavu_home_search_top">Arama çubuğu üstte</string>
+    <string name="dejavu_home_search_top_summary">Çalışma alanları, indirilenler, uzantılar, yer imleri ve geçmiş altta.</string>
+    <string name="dejavu_home_search_bottom">Arama çubuğu altta</string>
+    <string name="dejavu_home_search_bottom_summary">Ulaşması daha kolay. Çalışma alanları, indirilenler, uzantılar, yer imleri ve geçmiş üste taşınır.</string>
 </resources>

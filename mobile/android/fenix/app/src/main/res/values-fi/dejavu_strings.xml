@@ -472,4 +472,9 @@
     <string name="dejavu_feature_save_page">Tallenna sivuja luettavaksi ilman internetiä</string>
     <string name="dejavu_recent_search_text">Poista tämä haku viimeisimmistä hauista tai tyhjennä ne kaikki.</string>
     <string name="dejavu_recent_search_clear">Tyhjennä hakuhistoria</string>
+    <string name="dejavu_settings_home_screen">Aloitusnäyttö</string>
+    <string name="dejavu_home_search_top">Hakupalkki ylhäällä</string>
+    <string name="dejavu_home_search_top_summary">Työtilat, lataukset, laajennukset, kirjanmerkit ja historia alhaalla.</string>
+    <string name="dejavu_home_search_bottom">Hakupalkki alhaalla</string>
+    <string name="dejavu_home_search_bottom_summary">Helpommin ulottuvilla. Työtilat, lataukset, laajennukset, kirjanmerkit ja historia siirtyvät ylös.</string>
 </resources>

@@ -472,4 +472,9 @@
     <string name="dejavu_feature_save_page">پەڕەکان پاشەکەوت بکە بۆ خوێندنەوە بێ ئینتەرنێت</string>
     <string name="dejavu_recent_search_text">ئەم گەڕانە لە گەڕانە تازەکان بسڕەوە، یان هەموویان بسڕەوە.</string>
     <string name="dejavu_recent_search_clear">مێژووی گەڕان بسڕەوە</string>
+    <string name="dejavu_settings_home_screen">شاشەی سەرەکی</string>
+    <string name="dejavu_home_search_top">شریتی گەڕان لە سەرەوە</string>
+    <string name="dejavu_home_search_top_summary">فەزاکان، داگرتنەکان، پێوەکراوەکان، نیشانەکان و مێژوو لە خوارەوە پیشان دەدرێن.</string>
+    <string name="dejavu_home_search_bottom">شریتی گەڕان لە خوارەوە</string>
+    <string name="dejavu_home_search_bottom_summary">گەیشتنی ئاسانترە. فەزاکان، داگرتنەکان، پێوەکراوەکان، نیشانەکان و مێژوو دەگوازرێنەوە بۆ سەرەوە.</string>
 </resources>

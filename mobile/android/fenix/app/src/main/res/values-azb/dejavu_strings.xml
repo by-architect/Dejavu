@@ -472,4 +472,9 @@
     <string name="dejavu_feature_save_page">صفحه‌لری اینترنئتسیز اوخوماق اوچون ساخلایین</string>
     <string name="dejavu_recent_search_text">بو آختاریشی سون آختاریشلاردان سیل، یا هامیسینی تمیزله.</string>
     <string name="dejavu_recent_search_clear">آختاریش گئچمیشینی سیل</string>
+    <string name="dejavu_settings_home_screen">آنا اکران</string>
+    <string name="dejavu_home_search_top">آختاریش چوبوغو یوخاریدا</string>
+    <string name="dejavu_home_search_top_summary">ایش ساحه‌لری، یئندیرنلر، اوزانتی‌لار، بوکمارک‌لار و گئچمیش آشاغیدا.</string>
+    <string name="dejavu_home_search_bottom">آختاریش چوبوغو آشاغیدا</string>
+    <string name="dejavu_home_search_bottom_summary">چاتماق داها آساندیر. ایش ساحه‌لری، یئندیرنلر، اوزانتی‌لار، بوکمارک‌لار و گئچمیش یوخاریا کؤچورولور.</string>
 </resources>

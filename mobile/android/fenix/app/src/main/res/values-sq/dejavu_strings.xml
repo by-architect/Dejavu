@@ -472,4 +472,9 @@
     <string name="dejavu_feature_save_page">Ruani faqe për t\'i lexuar pa internet</string>
     <string name="dejavu_recent_search_text">Fshije këtë kërkim nga kërkimet e fundit, ose pastroji të gjitha.</string>
     <string name="dejavu_recent_search_clear">Fshije historikun e kërkimeve</string>
+    <string name="dejavu_settings_home_screen">Ekrani kryesor</string>
+    <string name="dejavu_home_search_top">Shtylla e kërkimeve sipër</string>
+    <string name="dejavu_home_search_top_summary">Hapësirat e punës, shkarkimet, zgjerimet, faqerojtësit dhe historiku poshtë.</string>
+    <string name="dejavu_home_search_bottom">Shtylla e kërkimeve poshtë</string>
+    <string name="dejavu_home_search_bottom_summary">Më e lehtë për t\'u arritur. Hapësirat e punës, shkarkimet, zgjerimet, faqerojtësit dhe historiku lëvizin sipër.</string>
 </resources>

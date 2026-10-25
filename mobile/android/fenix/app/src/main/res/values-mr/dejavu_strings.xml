@@ -472,4 +472,9 @@
     <string name="dejavu_feature_save_page">इंटरनेटशिवाय वाचण्यासाठी पृष्ठे सेव्ह करा</string>
     <string name="dejavu_recent_search_text">ही शोध तुमच्या अलीकडील शोधांमधून नष्ट करा किंवा सर्व साफ करा.</string>
     <string name="dejavu_recent_search_clear">शोध इतिहास साफ करा</string>
+    <string name="dejavu_settings_home_screen">मुख्य स्क्रीन</string>
+    <string name="dejavu_home_search_top">शोध पट्टी वरती</string>
+    <string name="dejavu_home_search_top_summary">कार्यक्षेत्रे, डाउनलोड, एक्सटेन्शन, बुकमार्क आणि इतिहास तळाशी असतात.</string>
+    <string name="dejavu_home_search_bottom">शोध पट्टी तळाशी</string>
+    <string name="dejavu_home_search_bottom_summary">पोहोचण्यास अधिक सोपे. कार्यक्षेत्रे, डाउनलोड, एक्सटेन्शन, बुकमार्क आणि इतिहास वरती जातात.</string>
 </resources>

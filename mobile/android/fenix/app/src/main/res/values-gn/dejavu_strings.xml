@@ -472,4 +472,9 @@
     <string name="dejavu_feature_save_page">Eñongatu kuatiarogue emoñe\'ẽ hag̃ua internet’ỹre</string>
     <string name="dejavu_recent_search_text">Emboguete ko jeheka umi ojeheka ramóvagui, térã emboguete opaite.</string>
     <string name="dejavu_recent_search_clear">Emboguete jeheka rembiasakue</string>
+    <string name="dejavu_settings_home_screen">Pantalla ñepyrũgua</string>
+    <string name="dejavu_home_search_top">Jeheka barra yvate</string>
+    <string name="dejavu_home_search_top_summary">Tembiapo renda, ñemboguejy, jepysokue, techaukaha ha tembiasakue yvy gotyo.</string>
+    <string name="dejavu_home_search_bottom">Jeheka barra yvy gotyo</string>
+    <string name="dejavu_home_search_bottom_summary">Ndahasýi ñehupyty. Tembiapo renda, ñemboguejy, jepysokue, techaukaha ha tembiasakue oho yvate gotyo.</string>
 </resources>

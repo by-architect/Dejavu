@@ -488,4 +488,9 @@
     <string name="dejavu_feature_save_page">Ukládejte stránky a čtěte je bez internetu</string>
     <string name="dejavu_recent_search_text">Odstraní toto hledání z nedávno vyhledávaných, nebo vymaže všechna.</string>
     <string name="dejavu_recent_search_clear">Vymazat historii hledání</string>
+    <string name="dejavu_settings_home_screen">Domovská obrazovka</string>
+    <string name="dejavu_home_search_top">Vyhledávací řádek nahoře</string>
+    <string name="dejavu_home_search_top_summary">Pracovní prostory, stahování, rozšíření, záložky a historie dole.</string>
+    <string name="dejavu_home_search_bottom">Vyhledávací řádek dole</string>
+    <string name="dejavu_home_search_bottom_summary">Snáze dosažitelné. Pracovní prostory, stahování, rozšíření, záložky a historie se přesunou nahoru.</string>
 </resources>

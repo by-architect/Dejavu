@@ -50,6 +50,7 @@ class DejavuSettings private constructor(context: Context) {
     private val _moreMenuEditHidden = MutableStateFlow(prefs.getBoolean(KEY_MORE_MENU_EDIT_HIDDEN, false))
     private val _systemBarsHidden = MutableStateFlow(prefs.getBoolean(KEY_SYSTEM_BARS_HIDDEN, false))
     private val _barsLayout = MutableStateFlow(BarsLayout.fromKey(prefs.getString(KEY_BARS_LAYOUT, null)))
+    private val _homeSearchAtBottom = MutableStateFlow(prefs.getBoolean(KEY_HOME_SEARCH_AT_BOTTOM, false))
     private val _addressBarButtons = MutableStateFlow(readAddressBarButtons())
     private val _actionsBarKeys = MutableStateFlow(readActionsBar())
     private val _tabSleepMinutes = MutableStateFlow(prefs.getInt(KEY_TAB_SLEEP_MINUTES, DEFAULT_TAB_SLEEP_MINUTES))
@@ -92,6 +93,12 @@ class DejavuSettings private constructor(context: Context) {
 
     /** Where the bars show around pages, and so where the "More" menu opens from. */
     val barsLayout: StateFlow<BarsLayout> = _barsLayout.asStateFlow()
+
+    /**
+     * Whether the home screen shows its search bar, with the account and settings buttons, at the bottom, and the bar of
+     * the workspaces and the downloads, extensions, bookmarks and history buttons at the top, the other way round.
+     */
+    val homeSearchAtBottom: StateFlow<Boolean> = _homeSearchAtBottom.asStateFlow()
 
     /**
      * The buttons beside the address bar the user chose, which every layout of the bars shows, or `null` before they
@@ -197,6 +204,11 @@ class DejavuSettings private constructor(context: Context) {
     fun setBarsLayout(layout: BarsLayout) {
         _barsLayout.value = layout
         prefs.edit { putString(KEY_BARS_LAYOUT, layout.key) }
+    }
+
+    fun setHomeSearchAtBottom(atBottom: Boolean) {
+        _homeSearchAtBottom.value = atBottom
+        prefs.edit { putBoolean(KEY_HOME_SEARCH_AT_BOTTOM, atBottom) }
     }
 
     /** The buttons beside the address bar in [layout]: the ones the user chose, or else the ones it starts with. */
@@ -358,6 +370,7 @@ class DejavuSettings private constructor(context: Context) {
         private const val KEY_MORE_MENU_EDIT_HIDDEN = "more_menu_edit_hidden"
         private const val KEY_SYSTEM_BARS_HIDDEN = "system_bars_hidden"
         private const val KEY_BARS_LAYOUT = "bars_layout"
+        private const val KEY_HOME_SEARCH_AT_BOTTOM = "home_search_at_bottom"
         private const val KEY_ADDRESS_BAR_START = "address_bar_start"
         private const val KEY_ADDRESS_BAR_END = "address_bar_end"
         private const val KEY_ACTIONS_BAR = "actions_bar"

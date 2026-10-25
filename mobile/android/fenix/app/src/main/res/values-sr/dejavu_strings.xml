@@ -480,4 +480,9 @@
     <string name="dejavu_feature_save_page">Сачувајте странице за читање без интернета</string>
     <string name="dejavu_recent_search_text">Обришите ову претрагу из недавних претрага или обришите све.</string>
     <string name="dejavu_recent_search_clear">Обриши историју претраге</string>
+    <string name="dejavu_settings_home_screen">Почетни екран</string>
+    <string name="dejavu_home_search_top">Трака за претрагу горе</string>
+    <string name="dejavu_home_search_top_summary">Радни простори, преузимања, проширења, обележивачи и историја доле.</string>
+    <string name="dejavu_home_search_bottom">Трака за претрагу доле</string>
+    <string name="dejavu_home_search_bottom_summary">Лакше за дохват. Радни простори, преузимања, проширења, обележивачи и историја премештају се горе.</string>
 </resources>

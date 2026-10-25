@@ -464,4 +464,9 @@
     <string name="dejavu_feature_save_page">Simpan laman untuk dibaca tanpa internet</string>
     <string name="dejavu_recent_search_text">Hapus pencarian ini dari pencarian terkini Anda, atau hapus semuanya.</string>
     <string name="dejavu_recent_search_clear">Hapus riwayat pencarian</string>
+    <string name="dejavu_settings_home_screen">Layar utama</string>
+    <string name="dejavu_home_search_top">Bilah pencarian di atas</string>
+    <string name="dejavu_home_search_top_summary">Ruang kerja, unduhan, ekstensi, markah, dan riwayat di bawah.</string>
+    <string name="dejavu_home_search_bottom">Bilah pencarian di bawah</string>
+    <string name="dejavu_home_search_bottom_summary">Lebih mudah dijangkau. Ruang kerja, unduhan, ekstensi, markah, dan riwayat dipindahkan ke atas.</string>
 </resources>

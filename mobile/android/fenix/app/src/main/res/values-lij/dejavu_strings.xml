@@ -472,4 +472,9 @@
     <string name="dejavu_feature_save_page">Sarva e pagine pe lêze sensa Internet</string>
     <string name="dejavu_recent_search_text">Scancella sta riçerca da-e teu riçerche recenti, ò scancellile tutte.</string>
     <string name="dejavu_recent_search_clear">Scancella a stöia de riçerche</string>
+    <string name="dejavu_settings_home_screen">Scermo prinçipâ</string>
+    <string name="dejavu_home_search_top">Barra de riçerca in çimma</string>
+    <string name="dejavu_home_search_top_summary">Spaçi de travaggio, descaregamenti, estensioin, segnalibbri e stöia in fondo.</string>
+    <string name="dejavu_home_search_bottom">Barra de riçerca in fondo</string>
+    <string name="dejavu_home_search_bottom_summary">Ciù façile da arrivâ. Spaçi de travaggio, descaregamenti, estensioin, segnalibbri e stöia van in çimma.</string>
 </resources>

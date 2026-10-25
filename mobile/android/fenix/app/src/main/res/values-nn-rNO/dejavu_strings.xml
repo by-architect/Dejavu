@@ -472,4 +472,9 @@
     <string name="dejavu_feature_save_page">Lagre sider du kan lese utan internett</string>
     <string name="dejavu_recent_search_text">Slett dette søket frå dei nylege søka dine, eller tøm alle.</string>
     <string name="dejavu_recent_search_clear">Tøm søkjehistorikk</string>
+    <string name="dejavu_settings_home_screen">Startskjerm</string>
+    <string name="dejavu_home_search_top">Søkjelinja øvst</string>
+    <string name="dejavu_home_search_top_summary">Arbeidsområde, nedlastingar, utvidingar, bokmerke og historikk nedst.</string>
+    <string name="dejavu_home_search_bottom">Søkjelinja nedst</string>
+    <string name="dejavu_home_search_bottom_summary">Lettare å nå. Arbeidsområde, nedlastingar, utvidingar, bokmerke og historikk vert flytta øvst.</string>
 </resources>

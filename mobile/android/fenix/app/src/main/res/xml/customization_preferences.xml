@@ -95,6 +95,20 @@
 
     <androidx.preference.PreferenceCategory
         android:layout="@layout/preference_cat_style"
+        android:title="@string/dejavu_settings_home_screen"
+        app:iconSpaceReserved="false">
+        <org.mozilla.fenix.settings.RadioButtonPreference
+            android:key="@string/pref_key_dejavu_home_search_top"
+            android:title="@string/dejavu_home_search_top"
+            android:summary="@string/dejavu_home_search_top_summary" />
+        <org.mozilla.fenix.settings.RadioButtonPreference
+            android:key="@string/pref_key_dejavu_home_search_bottom"
+            android:title="@string/dejavu_home_search_bottom"
+            android:summary="@string/dejavu_home_search_bottom_summary" />
+    </androidx.preference.PreferenceCategory>
+
+    <androidx.preference.PreferenceCategory
+        android:layout="@layout/preference_cat_style"
         android:title="@string/dejavu_settings_screen"
         app:iconSpaceReserved="false">
         <androidx.preference.SwitchPreferenceCompat

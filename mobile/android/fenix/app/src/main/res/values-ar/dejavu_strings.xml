@@ -504,4 +504,9 @@
     <string name="dejavu_feature_save_page">احفظ الصفحات لقراءتها بدون إنترنت</string>
     <string name="dejavu_recent_search_text">احذف عملية البحث هذه من عمليات البحث الأخيرة، أو امسحها كلها.</string>
     <string name="dejavu_recent_search_clear">امسح سجل البحث</string>
+    <string name="dejavu_settings_home_screen">الشاشة الرئيسية</string>
+    <string name="dejavu_home_search_top">شريط البحث بالأعلى</string>
+    <string name="dejavu_home_search_top_summary">تظهر مساحات العمل والتنزيلات والامتدادات والعلامات والتأريخ بالأسفل.</string>
+    <string name="dejavu_home_search_bottom">شريط البحث بالأسفل</string>
+    <string name="dejavu_home_search_bottom_summary">أسهل في الوصول إليه. تنتقل مساحات العمل والتنزيلات والامتدادات والعلامات والتأريخ إلى الأعلى.</string>
 </resources>

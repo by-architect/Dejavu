@@ -472,4 +472,9 @@
     <string name="dejavu_feature_save_page">Запазвайте страници, за да ги четете без интернет</string>
     <string name="dejavu_recent_search_text">Изтрийте това търсене от скорошните търсения или изчистете всички.</string>
     <string name="dejavu_recent_search_clear">Изчистване на историята на търсенията</string>
+    <string name="dejavu_settings_home_screen">Начален екран</string>
+    <string name="dejavu_home_search_top">Лента за търсене отгоре</string>
+    <string name="dejavu_home_search_top_summary">Работните пространства, изтеглянията, разширенията, отметките и историята са отдолу.</string>
+    <string name="dejavu_home_search_bottom">Лента за търсене отдолу</string>
+    <string name="dejavu_home_search_bottom_summary">По-лесен достъп. Работните пространства, изтеглянията, разширенията, отметките и историята се преместват отгоре.</string>
 </resources>

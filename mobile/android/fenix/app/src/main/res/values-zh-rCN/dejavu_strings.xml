@@ -464,4 +464,9 @@
     <string name="dejavu_feature_save_page">保存页面，无需联网即可阅读</string>
     <string name="dejavu_recent_search_text">从近期搜索中删除此搜索，或清除全部搜索。</string>
     <string name="dejavu_recent_search_clear">清除搜索历史记录</string>
+    <string name="dejavu_settings_home_screen">主屏幕</string>
+    <string name="dejavu_home_search_top">搜索栏在顶部</string>
+    <string name="dejavu_home_search_top_summary">工作区、下载、扩展、书签和历史记录在底部。</string>
+    <string name="dejavu_home_search_bottom">搜索栏在底部</string>
+    <string name="dejavu_home_search_bottom_summary">更容易够到。工作区、下载、扩展、书签和历史记录移至顶部。</string>
 </resources>

@@ -464,4 +464,9 @@
     <string name="dejavu_feature_save_page">인터넷 없이 읽을 페이지를 저장하세요</string>
     <string name="dejavu_recent_search_text">최근 검색에서 이 검색을 삭제하거나 모두 지울 수 있습니다.</string>
     <string name="dejavu_recent_search_clear">검색 기록 삭제</string>
+    <string name="dejavu_settings_home_screen">홈 화면</string>
+    <string name="dejavu_home_search_top">위쪽에 검색 창</string>
+    <string name="dejavu_home_search_top_summary">작업 공간, 다운로드, 확장 기능, 북마크와 기록은 아래쪽에 표시됩니다.</string>
+    <string name="dejavu_home_search_bottom">아래쪽에 검색 창</string>
+    <string name="dejavu_home_search_bottom_summary">손이 닿기 더 쉽습니다. 작업 공간, 다운로드, 확장 기능, 북마크와 기록은 위쪽으로 이동합니다.</string>
 </resources>

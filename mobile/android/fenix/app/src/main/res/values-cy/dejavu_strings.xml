@@ -504,4 +504,9 @@
     <string name="dejavu_feature_save_page">Cadw tudalennau i\'w darllen heb y rhyngrwyd</string>
     <string name="dejavu_recent_search_text">Dileu\'r chwiliad hwn o\'ch chwiliadau diweddar, neu ddileu pob un.</string>
     <string name="dejavu_recent_search_clear">Dileu hanes chwilio</string>
+    <string name="dejavu_settings_home_screen">Sgrin gartref</string>
+    <string name="dejavu_home_search_top">Bar chwilio ar y brig</string>
+    <string name="dejavu_home_search_top_summary">Gweithleoedd, llwythi, estyniadau, nodau tudalen a hanes ar y gwaelod.</string>
+    <string name="dejavu_home_search_bottom">Bar chwilio ar y gwaelod</string>
+    <string name="dejavu_home_search_bottom_summary">Haws ei gyrraedd. Mae gweithleoedd, llwythi, estyniadau, nodau tudalen a hanes yn symud i’r brig.</string>
 </resources>

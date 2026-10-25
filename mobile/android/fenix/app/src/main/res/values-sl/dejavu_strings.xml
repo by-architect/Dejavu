@@ -488,4 +488,9 @@
     <string name="dejavu_feature_save_page">Shranite strani za branje brez interneta</string>
     <string name="dejavu_recent_search_text">Izbrišite to iskanje iz nedavnih iskanj ali počistite vsa.</string>
     <string name="dejavu_recent_search_clear">Izbriši zgodovino iskanja</string>
+    <string name="dejavu_settings_home_screen">Domači zaslon</string>
+    <string name="dejavu_home_search_top">Iskalna vrstica zgoraj</string>
+    <string name="dejavu_home_search_top_summary">Delovni prostori, prenosi, razširitve, zaznamki in zgodovina spodaj.</string>
+    <string name="dejavu_home_search_bottom">Iskalna vrstica spodaj</string>
+    <string name="dejavu_home_search_bottom_summary">Lažje dosegljivo. Delovni prostori, prenosi, razširitve, zaznamki in zgodovina se premaknejo na vrh.</string>
 </resources>

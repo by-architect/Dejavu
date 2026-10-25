@@ -472,4 +472,9 @@
     <string name="dejavu_feature_save_page">Bewarje siden om sûnder ynternet te lêzen</string>
     <string name="dejavu_recent_search_text">Wiskje dizze sykopdracht út jo resinte sykopdrachten, of wiskje se allegear.</string>
     <string name="dejavu_recent_search_clear">Sykskiednis wiskje</string>
+    <string name="dejavu_settings_home_screen">Startskerm</string>
+    <string name="dejavu_home_search_top">Sykbalke boppe-oan</string>
+    <string name="dejavu_home_search_top_summary">Wurkromten, downloads, utwreidingen, blêdwizers en skiednis ûnderoan.</string>
+    <string name="dejavu_home_search_bottom">Sykbalke ûnderoan</string>
+    <string name="dejavu_home_search_bottom_summary">Makliker te berikken. Wurkromten, downloads, utwreidingen, blêdwizers en skiednis ferhúzje nei boppen.</string>
 </resources>

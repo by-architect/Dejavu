@@ -472,4 +472,9 @@
     <string name="dejavu_feature_save_page">پاڼې خوندي کړئ ترڅو پرته له انټرنېټه یې ولولئ</string>
     <string name="dejavu_recent_search_text">دا لټون له خپلو وروستیو لټونونو لرې کړئ، یا ټول پاک کړئ.</string>
     <string name="dejavu_recent_search_clear">د لټون تاریخچه پاکه کړئ</string>
+    <string name="dejavu_settings_home_screen">کور پرده</string>
+    <string name="dejavu_home_search_top">د لټون نوار پورته</string>
+    <string name="dejavu_home_search_top_summary">ساحې، ډاونلوډونه، وروستاړي، یادنښې او تاریخچه لاندې ښکاري.</string>
+    <string name="dejavu_home_search_bottom">د لټون نوار لاندې</string>
+    <string name="dejavu_home_search_bottom_summary">لاسرسی لا اسانه دی. ساحې، ډاونلوډونه، وروستاړي، یادنښې او تاریخچه پورته لور ته لېږدېږي.</string>
 </resources>

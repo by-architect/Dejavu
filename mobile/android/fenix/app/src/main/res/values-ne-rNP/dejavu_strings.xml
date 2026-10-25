@@ -472,4 +472,9 @@
     <string name="dejavu_feature_save_page">इन्टरनेट बिना पढ्न पृष्ठहरू सुरक्षित गर्नुहोस्</string>
     <string name="dejavu_recent_search_text">यो खोजलाई हालैका खोजहरूबाट मेटाउनुहोस्, वा सबै खाली गर्नुहोस्।</string>
     <string name="dejavu_recent_search_clear">खोज इतिहास खाली गर्नुहोस्</string>
+    <string name="dejavu_settings_home_screen">गृह स्क्रिन</string>
+    <string name="dejavu_home_search_top">खोज पट्टी माथि</string>
+    <string name="dejavu_home_search_top_summary">कार्यक्षेत्रहरु, डाउनलोडहरु, एक्सटेन्सनहरु, बुकमार्कहरु र इतिहास तल छन्।</string>
+    <string name="dejavu_home_search_bottom">खोज पट्टी तल</string>
+    <string name="dejavu_home_search_bottom_summary">पहुँच गर्न सजिलो। कार्यक्षेत्रहरु, डाउनलोडहरु, एक्सटेन्सनहरु, बुकमार्कहरु र इतिहास माथि सर्छन्।</string>
 </resources>

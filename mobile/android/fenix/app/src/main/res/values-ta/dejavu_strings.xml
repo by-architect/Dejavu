@@ -472,4 +472,9 @@
     <string name="dejavu_feature_save_page">இணையம் இல்லாமல் படிக்க பக்கங்களைச் சேமிக்கவும்</string>
     <string name="dejavu_recent_search_text">இந்தத் தேடலை சமீபத்திய தேடல்களிலிருந்து நீக்கவும், அல்லது அனைத்தையும் அழிக்கவும்.</string>
     <string name="dejavu_recent_search_clear">தேடல் வரலாற்றை அழி</string>
+    <string name="dejavu_settings_home_screen">முகப்புத் திரை</string>
+    <string name="dejavu_home_search_top">தேடல் பட்டை மேலே</string>
+    <string name="dejavu_home_search_top_summary">பணியிடங்கள், பதிவிறக்கங்கள், நீட்சிகள், புத்தகக்குறிகள் மற்றும் வரலாறு கீழே இருக்கும்.</string>
+    <string name="dejavu_home_search_bottom">தேடல் பட்டை கீழே</string>
+    <string name="dejavu_home_search_bottom_summary">இன்னும் எளிதாக எட்டலாம். பணியிடங்கள், பதிவிறக்கங்கள், நீட்சிகள், புத்தகக்குறிகள் மற்றும் வரலாறு மேலே நகர்த்தப்படும்.</string>
 </resources>

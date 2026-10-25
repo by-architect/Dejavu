@@ -472,4 +472,9 @@
     <string name="dejavu_feature_save_page">Salva paginas pro leger los sin internet</string>
     <string name="dejavu_recent_search_text">Dele iste recerca de tu recercas recente, o rade los omnes.</string>
     <string name="dejavu_recent_search_clear">Rader le chronologia de recercas</string>
+    <string name="dejavu_settings_home_screen">Schermo initial</string>
+    <string name="dejavu_home_search_top">Barra de recerca in alto</string>
+    <string name="dejavu_home_search_top_summary">Spatios de labor, discargamentos, extensiones, marcapaginas e chronologia in basso.</string>
+    <string name="dejavu_home_search_bottom">Barra de recerca in basso</string>
+    <string name="dejavu_home_search_bottom_summary">Plus facile a attinger. Spatios de labor, discargamentos, extensiones, marcapaginas e chronologia se move in alto.</string>
 </resources>

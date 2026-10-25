@@ -472,4 +472,9 @@
     <string name="dejavu_feature_save_page">Mentse az oldalakat, hogy internet nélkül olvashassa őket</string>
     <string name="dejavu_recent_search_text">Törölje ezt a keresést a legutóbbi keresések közül, vagy törölje az összeset.</string>
     <string name="dejavu_recent_search_clear">Keresési előzmények törlése</string>
+    <string name="dejavu_settings_home_screen">Kezdőképernyő</string>
+    <string name="dejavu_home_search_top">Keresősáv felül</string>
+    <string name="dejavu_home_search_top_summary">Munkaterületek, letöltések, kiegészítők, könyvjelzők és előzmények alul.</string>
+    <string name="dejavu_home_search_bottom">Keresősáv alul</string>
+    <string name="dejavu_home_search_bottom_summary">Könnyebben elérhető. A munkaterületek, letöltések, kiegészítők, könyvjelzők és előzmények felülre kerülnek.</string>
 </resources>

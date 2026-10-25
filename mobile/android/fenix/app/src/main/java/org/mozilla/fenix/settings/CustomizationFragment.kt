@@ -125,6 +125,7 @@ class CustomizationFragment : PreferenceFragmentCompat(), SystemInsetsPaddedFrag
         setupToolbarLayout()
         updateToolbarShortcut()
         setupBarsCategory()
+        setupHomeSearchCategory()
         setupMoreMenuEditButton()
         setupSystemBarsSwitch()
 
@@ -299,6 +300,21 @@ class CustomizationFragment : PreferenceFragmentCompat(), SystemInsetsPaddedFrag
             }
         }
         addToRadioGroup(*choices.values.toTypedArray())
+    }
+
+    /** Chooses whether the home screen shows its search bar on top, or at the bottom with the workspace bar on top. */
+    private fun setupHomeSearchCategory() {
+        val dejavuSettings = dejavuSettings()
+        val choices = listOf(
+            false to R.string.pref_key_dejavu_home_search_top,
+            true to R.string.pref_key_dejavu_home_search_bottom,
+        ).map { (atBottom, key) ->
+            requirePreference<RadioButtonPreference>(key).apply {
+                onClickListener { dejavuSettings.setHomeSearchAtBottom(atBottom) }
+                setCheckedWithoutClickListener(dejavuSettings.homeSearchAtBottom.value == atBottom)
+            }
+        }
+        addToRadioGroup(*choices.toTypedArray())
     }
 
     /** Hides the Edit button at the bottom of Dejavu's "More" menu, which Dejavu's own settings keep. */

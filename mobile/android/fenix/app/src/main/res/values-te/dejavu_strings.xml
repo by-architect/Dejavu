@@ -472,4 +472,9 @@
     <string name="dejavu_feature_save_page">ఇంటర్నెట్ లేకుండా చదవడానికి పేజీలను భద్రపరచండి</string>
     <string name="dejavu_recent_search_text">ఈ శోధనను ఇటీవలి శోధనల నుండి తొలగించండి, లేదా అన్నింటినీ తొలగించండి.</string>
     <string name="dejavu_recent_search_clear">శోధన చరిత్రను తొలగించు</string>
+    <string name="dejavu_settings_home_screen">హోమ్ స్క్రీన్</string>
+    <string name="dejavu_home_search_top">శోధన పట్టీ పైన</string>
+    <string name="dejavu_home_search_top_summary">కార్యస్థలాలు, దింపుకోళ్ళు, పొడగింతలు, ఇష్టాంశాలు మరియు చరిత్ర దిగువన ఉంటాయి.</string>
+    <string name="dejavu_home_search_bottom">శోధన పట్టీ దిగువన</string>
+    <string name="dejavu_home_search_bottom_summary">మరింత సులభంగా చేరుకోవచ్చు. కార్యస్థలాలు, దింపుకోళ్ళు, పొడగింతలు, ఇష్టాంశాలు మరియు చరిత్ర పైకి తరలించబడతాయి.</string>
 </resources>

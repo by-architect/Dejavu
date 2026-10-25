@@ -472,4 +472,9 @@
     <string name="dejavu_feature_save_page">Sarva i pàggini pi leggiri senza internet</string>
     <string name="dejavu_recent_search_text">Scancella stu risciutu di li risciduti ricenti, o scancella tutti quanti.</string>
     <string name="dejavu_recent_search_clear">Scancella la crunuluggìa dî risciduti</string>
+    <string name="dejavu_settings_home_screen">Schermata principali</string>
+    <string name="dejavu_home_search_top">Barra di ricerca susu</string>
+    <string name="dejavu_home_search_top_summary">Spazzi di travagghiu, scarricamenti, stinneri, nzingalibbra e crunuluggìa jusu.</string>
+    <string name="dejavu_home_search_bottom">Barra di ricerca jusu</string>
+    <string name="dejavu_home_search_bottom_summary">Cchiù facili di arrivari. Spazzi di travagghiu, scarricamenti, stinneri, nzingalibbra e crunuluggìa vannu susu.</string>
 </resources>

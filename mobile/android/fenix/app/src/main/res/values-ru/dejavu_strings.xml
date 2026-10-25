@@ -488,4 +488,9 @@
     <string name="dejavu_feature_save_page">Сохраняйте страницы, чтобы читать без интернета</string>
     <string name="dejavu_recent_search_text">Удалите этот запрос из недавних или очистите все.</string>
     <string name="dejavu_recent_search_clear">Очистить историю поиска</string>
+    <string name="dejavu_settings_home_screen">Главный экран</string>
+    <string name="dejavu_home_search_top">Поисковая строка сверху</string>
+    <string name="dejavu_home_search_top_summary">Рабочие пространства, загрузки, расширения, закладки и история внизу.</string>
+    <string name="dejavu_home_search_bottom">Поисковая строка снизу</string>
+    <string name="dejavu_home_search_bottom_summary">Проще дотянуться. Рабочие пространства, загрузки, расширения, закладки и история перемещаются наверх.</string>
 </resources>

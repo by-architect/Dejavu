@@ -472,4 +472,9 @@
     <string name="dejavu_feature_save_page">I-save ang mga pahina para mabasa nang walang internet</string>
     <string name="dejavu_recent_search_text">Burahin ang hinahanap na ito sa mga hinahanap kamakailan, o i-clear ang lahat.</string>
     <string name="dejavu_recent_search_clear">I-clear ang kasaysayan ng paghahanap</string>
+    <string name="dejavu_settings_home_screen">Home screen</string>
+    <string name="dejavu_home_search_top">Search bar sa itaas</string>
+    <string name="dejavu_home_search_top_summary">Mga workspace, download, extension, bookmark, at kasaysayan sa ibaba.</string>
+    <string name="dejavu_home_search_bottom">Search bar sa ibaba</string>
+    <string name="dejavu_home_search_bottom_summary">Mas madaling abutin. Ililipat sa itaas ang mga workspace, download, extension, bookmark, at kasaysayan.</string>
 </resources>

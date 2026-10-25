@@ -472,4 +472,9 @@
     <string name="dejavu_feature_save_page">ഇന്റർനെറ്റ് ഇല്ലാതെ വായിക്കാൻ താളുകൾ കരുതിവയ്ക്കുക</string>
     <string name="dejavu_recent_search_text">ഈ തിരയൽ നിങ്ങളുടെ സമീപകാല തിരയലുകളിൽ നിന്ന് ഇല്ലാതാക്കുക, അല്ലെങ്കിൽ എല്ലാം മായ്ക്കുക.</string>
     <string name="dejavu_recent_search_clear">തിരയൽ ചരിത്രം മായ്ക്കുക</string>
+    <string name="dejavu_settings_home_screen">ഹോം സ്ക്രീൻ</string>
+    <string name="dejavu_home_search_top">തിരയൽ ബാർ മുകളിൽ</string>
+    <string name="dejavu_home_search_top_summary">പണിയിടങ്ങൾ, ഇറക്കിവയ്ക്കലുകൾ, വിപുലീകരണങ്ങൾ, അടയാളക്കുറിപ്പുകള്‍, നാള്‍വഴി എന്നിവ താഴെയാണ്.</string>
+    <string name="dejavu_home_search_bottom">തിരയൽ ബാർ താഴെ</string>
+    <string name="dejavu_home_search_bottom_summary">എത്താൻ എളുപ്പം. പണിയിടങ്ങൾ, ഇറക്കിവയ്ക്കലുകൾ, വിപുലീകരണങ്ങൾ, അടയാളക്കുറിപ്പുകള്‍, നാള്‍വഴി എന്നിവ മുകളിലേക്ക് മാറുന്നു.</string>
 </resources>

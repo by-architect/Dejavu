@@ -472,4 +472,9 @@
     <string name="dejavu_feature_save_page">Enregistratz de paginas per las legir sens Internet</string>
     <string name="dejavu_recent_search_text">Suprimissètz aquesta recèrca de vòstras recèrcas recentas, o escafatz-las totas.</string>
     <string name="dejavu_recent_search_clear">Escafar l’istoric de recèrca</string>
+    <string name="dejavu_settings_home_screen">Ecran d’acuèlh</string>
+    <string name="dejavu_home_search_top">Barra de recèrca en naut</string>
+    <string name="dejavu_home_search_top_summary">Espacis de trabalh, telecargaments, extensions, marcapaginas e istoric en bas.</string>
+    <string name="dejavu_home_search_bottom">Barra de recèrca en bas</string>
+    <string name="dejavu_home_search_bottom_summary">Mai aisit d’aténher. Espacis de trabalh, telecargaments, extensions, marcapaginas e istoric se desplaçan en naut.</string>
 </resources>

@@ -464,4 +464,9 @@
     <string name="dejavu_feature_save_page">Lưu trang để đọc khi không có internet</string>
     <string name="dejavu_recent_search_text">Xóa tìm kiếm này khỏi danh sách tìm kiếm gần đây, hoặc xóa tất cả.</string>
     <string name="dejavu_recent_search_clear">Xóa lịch sử tìm kiếm</string>
+    <string name="dejavu_settings_home_screen">Màn hình chính</string>
+    <string name="dejavu_home_search_top">Thanh tìm kiếm ở trên cùng</string>
+    <string name="dejavu_home_search_top_summary">Không gian làm việc, tải xuống, tiện ích, dấu trang và lịch sử ở dưới cùng.</string>
+    <string name="dejavu_home_search_bottom">Thanh tìm kiếm ở dưới cùng</string>
+    <string name="dejavu_home_search_bottom_summary">Dễ với tới hơn. Không gian làm việc, tải xuống, tiện ích, dấu trang và lịch sử sẽ chuyển lên trên cùng.</string>
 </resources>

@@ -472,4 +472,9 @@
     <string name="dejavu_feature_save_page">Sla pagina\'s op om zonder internet te lezen</string>
     <string name="dejavu_recent_search_text">Verwijder deze zoekopdracht uit je recente zoekopdrachten of wis ze allemaal.</string>
     <string name="dejavu_recent_search_clear">Zoekgeschiedenis wissen</string>
+    <string name="dejavu_settings_home_screen">Startscherm</string>
+    <string name="dejavu_home_search_top">Zoekbalk bovenaan</string>
+    <string name="dejavu_home_search_top_summary">Werkruimtes, downloads, extensies, bladwijzers en geschiedenis onderaan.</string>
+    <string name="dejavu_home_search_bottom">Zoekbalk onderaan</string>
+    <string name="dejavu_home_search_bottom_summary">Makkelijker te bereiken. Werkruimtes, downloads, extensies, bladwijzers en geschiedenis verplaatsen naar boven.</string>
 </resources>

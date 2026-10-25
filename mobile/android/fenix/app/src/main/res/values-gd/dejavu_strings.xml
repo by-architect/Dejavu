@@ -488,4 +488,9 @@
     <string name="dejavu_feature_save_page">Sàbhail duilleagan airson an leughadh gun eadar-lìn</string>
     <string name="dejavu_recent_search_text">Sguab às an luirg seo à na luirg o chionn goirid, no sguab às na luirg uile.</string>
     <string name="dejavu_recent_search_clear">Sguab às eachdraidh nan lorg</string>
+    <string name="dejavu_settings_home_screen">An sgrìn-dachaigh</string>
+    <string name="dejavu_home_search_top">Bàr an luirg aig a\' bhàrr</string>
+    <string name="dejavu_home_search_top_summary">Àiteachan-obrach, luchdaidhean a-nuas, leudachain, comharran-lìn agus an eachdraidh aig a\' bhonn.</string>
+    <string name="dejavu_home_search_bottom">Bàr an luirg aig a\' bhonn</string>
+    <string name="dejavu_home_search_bottom_summary">Nas fhasa ruigsinn. Thèid na h-àiteachan-obrach, luchdaidhean a-nuas, leudachain, comharran-lìn agus an eachdraidh a ghluasad dhan bhàrr.</string>
 </resources>

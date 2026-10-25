@@ -472,4 +472,9 @@
     <string name="dejavu_feature_save_page">Беттерді интернетсіз оқу үшін сақтаңыз</string>
     <string name="dejavu_recent_search_text">Бұл іздеуді соңғы іздеулерден өшіріңіз немесе барлығын тазалаңыз.</string>
     <string name="dejavu_recent_search_clear">Іздеу тарихын тазалау</string>
+    <string name="dejavu_settings_home_screen">Басты экран</string>
+    <string name="dejavu_home_search_top">Іздеу жолағы жоғарыда</string>
+    <string name="dejavu_home_search_top_summary">Жұмыс кеңістіктері, жүктемелер, кеңейтулер, бетбелгілер және шолу тарихы төменде.</string>
+    <string name="dejavu_home_search_bottom">Іздеу жолағы төменде</string>
+    <string name="dejavu_home_search_bottom_summary">Қолжетімдірек. Жұмыс кеңістіктері, жүктемелер, кеңейтулер, бетбелгілер және шолу тарихы жоғарыға көшеді.</string>
 </resources>

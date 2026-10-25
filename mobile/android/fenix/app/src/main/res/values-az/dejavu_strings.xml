@@ -472,4 +472,9 @@
     <string name="dejavu_feature_save_page">Səhifələri internetsiz oxumaq üçün saxlayın</string>
     <string name="dejavu_recent_search_text">Bu axtarışı son axtarışlardan silin və ya hamısını təmizləyin.</string>
     <string name="dejavu_recent_search_clear">Axtarış tarixçəsini təmizlə</string>
+    <string name="dejavu_settings_home_screen">Ana ekran</string>
+    <string name="dejavu_home_search_top">Axtarış sətri yuxarıda</string>
+    <string name="dejavu_home_search_top_summary">İş sahələri, endirmələr, əlavələr, əlfəcinlər və tarixçə aşağıda.</string>
+    <string name="dejavu_home_search_bottom">Axtarış sətri aşağıda</string>
+    <string name="dejavu_home_search_bottom_summary">Çatmaq daha asandır. İş sahələri, endirmələr, əlavələr, əlfəcinlər və tarixçə yuxarıya köçürülür.</string>
 </resources>

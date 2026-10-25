@@ -464,4 +464,9 @@
     <string name="dejavu_feature_save_page">Simpen halaman anggen baca tanpa internet</string>
     <string name="dejavu_recent_search_text">Hapus pencarian puniki saking pencarian sané anyar, utawi hapus sami.</string>
     <string name="dejavu_recent_search_clear">Hapus riwayat pencarian</string>
+    <string name="dejavu_settings_home_screen">Layar utama</string>
+    <string name="dejavu_home_search_top">Bar pencarian di duur</string>
+    <string name="dejavu_home_search_top_summary">Genah, unduhan, ekstensi, markah, lan riwayat di beten.</string>
+    <string name="dejavu_home_search_bottom">Bar pencarian di beten</string>
+    <string name="dejavu_home_search_bottom_summary">Langkung gampang kajangkau. Genah, unduhan, ekstensi, markah, lan riwayat pindah ka duur.</string>
 </resources>

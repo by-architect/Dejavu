@@ -488,4 +488,9 @@
     <string name="dejavu_feature_save_page">Boki składowaś, aby je bźez internetu cytał</string>
     <string name="dejavu_recent_search_text">Toś to pytanje z nejnowšych pytanjow wulašowaś abo wšykne wulašowaś.</string>
     <string name="dejavu_recent_search_clear">Pytańsku historiju wulašowaś</string>
+    <string name="dejavu_settings_home_screen">Startowa wobrazowka</string>
+    <string name="dejavu_home_search_top">Pytańske pólo górjejce</string>
+    <string name="dejavu_home_search_top_summary">Źěłowe rumy, ześěgnjenja, rozšyrjenja, cytańske znamjenja a historija dołojce.</string>
+    <string name="dejavu_home_search_bottom">Pytańske pólo dołojce</string>
+    <string name="dejavu_home_search_bottom_summary">Lažčej dosegnuś. Źěłowe rumy, ześěgnjenja, rozšyrjenja, cytańske znamjenja a historija se pśesuwaju górjej.</string>
 </resources>
