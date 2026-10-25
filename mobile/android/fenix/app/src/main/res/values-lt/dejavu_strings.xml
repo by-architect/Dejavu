@@ -341,7 +341,6 @@
     <string name="dejavu_settings_author">Sukūrė %1$s</string>
     <string name="dejavu_settings_coffee">Nupirkite man kavos</string>
     <string name="dejavu_settings_coffee_summary">Dejavu neturi reklamų. Jei jums patinka, puodelis kavos padeda jai augti.</string>
-    <string name="dejavu_workspace_device_note">Ši darbo erdvė rodo jūsų Mozilla paskyros įrenginio atvertas korteles. Jos pavadinimas ir piktograma gaunami iš to įrenginio, o jūsų pasirinktos spalvos lieka šiame telefone.</string>
     <string name="dejavu_settings_safe_browsing">„Google“ saugus naršymas</string>
     <string name="dejavu_back">Atgal</string>
     <string name="dejavu_sync_start_title">Sujungti ar pradėti iš naujo?</string>
@@ -444,4 +443,39 @@
     <string name="dejavu_settings_screen">Ekranas</string>
     <string name="dejavu_settings_hide_system_bars">Slėpti būsenos ir naršymo juostas</string>
     <string name="dejavu_settings_hide_system_bars_summary">Kol rodomas puslapis. Perbraukite nuo viršutinio ar apatinio krašto, kad trumpam jas pamatytumėte.</string>
+    <string name="dejavu_bookmarks_export">Eksportuoti į failą</string>
+    <plurals name="dejavu_bookmarks_exported">
+        <item quantity="one">%1$d adresyno įrašas eksportuotas</item>
+        <item quantity="few">%1$d adresyno įrašai eksportuoti</item>
+        <item quantity="many">%1$d adresyno įrašo eksportuota</item>
+        <item quantity="other">%1$d adresyno įrašų eksportuota</item>
+    </plurals>
+    <string name="dejavu_bookmarks_export_failed">Nepavyko eksportuoti adresyno. Bandykite dar kartą.</string>
+    <string name="dejavu_workspace_theme_custom">Pasirinktinė spalva</string>
+    <string name="dejavu_workspace_theme_add_color">Pridėti spalvą</string>
+    <string name="dejavu_workspace_theme_remove_color">Pašalinti šią spalvą</string>
+    <string name="dejavu_workspace_theme_code">Spalvos kodas</string>
+    <string name="dejavu_workspace_theme_color">Spalva</string>
+    <string name="dejavu_workspace_wallpaper">Fonas</string>
+    <string name="dejavu_workspace_wallpaper_hint">Paveikslėlis lieka šiame telefone ir rodomas pradžios puslapyje. Jo spalvos tampa tema, kuri sinchronizuojama su Zen.</string>
+    <string name="dejavu_workspace_wallpaper_choose">Pasirinkti paveikslėlį</string>
+    <string name="dejavu_workspace_wallpaper_change">Keisti</string>
+    <string name="dejavu_workspace_wallpaper_blur">Suliejimas</string>
+    <string name="dejavu_workspace_wallpaper_failed">Nepavyko atverti šio paveikslėlio.</string>
+    <string name="dejavu_workspace_wallpaper_colors">Spalvos, sinchronizuojamos su Zen</string>
+    <string name="dejavu_workspace_wallpaper_hint_local">Paveikslėlis lieka šiame telefone ir rodomas pradžios puslapyje.</string>
+    <string name="dejavu_workspace_wallpaper_colors_local">Spalvos, paimtos iš paveikslėlio</string>
+    <string name="dejavu_page_info">Puslapio informacija</string>
+    <string name="dejavu_page_info_container">Konteineris</string>
+    <string name="dejavu_page_info_workspace">Darbo erdvė</string>
+    <string name="dejavu_page_info_site_details">Saugumas ir leidimai</string>
+    <string name="dejavu_page_info_pinned">Prisegta</string>
+    <string name="dejavu_page_info_essential">Tarp Mėgstamiausių</string>
+    <string name="dejavu_page_info_reader_view">Skaitymo rodinys</string>
+    <string name="dejavu_page_info_translated">Išversta</string>
+    <string name="dejavu_menu_reader_view">Skaitymo rodinys</string>
+    <string name="dejavu_menu_close_reader_view">Išjungti skaitymo rodinį</string>
+    <string name="dejavu_workspace_firefox_limits">Firefox Sync apribojimai</string>
+    <string name="dejavu_workspace_firefox_device">Firefox Sync bendrina tik kiekvieno įrenginio atvertas korteles. Kortelės, kurias atveriate ar užveriate čia, atveriamos ar užveriamos ir tame įrenginyje, tačiau negalite nei prisegti kortelių, nei pridėti aplankų ar Mėgstamiausių, nei pasirinkti konteinerio. Pavadinimas ir piktograma gaunami iš įrenginio, o jūsų pasirinktos spalvos lieka šiame telefone.</string>
+    <string name="dejavu_workspace_firefox_own">Firefox Sync nebendrina darbo erdvių, todėl ši darbo erdvė su savo prisegtomis kortelėmis ir aplankais lieka šiame telefone. Firefox jos atvertas korteles rodo kaip šio telefono korteles.</string>
 </resources>

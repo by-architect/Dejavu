@@ -327,7 +327,6 @@
     <string name="dejavu_settings_author">Tekijä: %1$s</string>
     <string name="dejavu_settings_coffee">Tarjoa minulle kahvit</string>
     <string name="dejavu_settings_coffee_summary">Dejavussa ei ole mainoksia. Jos pidät siitä, kahvit auttavat sitä kasvamaan.</string>
-    <string name="dejavu_workspace_device_note">Tämä työtila näyttää Mozilla-tilisi yhden laitteen avoimet välilehdet. Sen nimi ja kuvake tulevat kyseisestä laitteesta, ja valitsemasi värit pysyvät tässä puhelimessa.</string>
     <string name="dejavu_settings_safe_browsing">Google Selaussuoja</string>
     <string name="dejavu_back">Takaisin</string>
     <string name="dejavu_sync_start_title">Yhdistetäänkö vai aloitetaanko alusta?</string>
@@ -430,4 +429,37 @@
     <string name="dejavu_settings_screen">Näyttö</string>
     <string name="dejavu_settings_hide_system_bars">Piilota tila- ja navigointipalkki</string>
     <string name="dejavu_settings_hide_system_bars_summary">Kun sivu on näkyvissä. Pyyhkäise ylä- tai alareunasta nähdäksesi ne hetkeksi.</string>
+    <string name="dejavu_bookmarks_export">Vie tiedostoon</string>
+    <plurals name="dejavu_bookmarks_exported">
+        <item quantity="one">%1$d kirjanmerkki viety</item>
+        <item quantity="other">%1$d kirjanmerkkiä viety</item>
+    </plurals>
+    <string name="dejavu_bookmarks_export_failed">Kirjanmerkkien vienti epäonnistui. Yritä uudelleen.</string>
+    <string name="dejavu_workspace_theme_custom">Mukautettu väri</string>
+    <string name="dejavu_workspace_theme_add_color">Lisää väri</string>
+    <string name="dejavu_workspace_theme_remove_color">Poista tämä väri</string>
+    <string name="dejavu_workspace_theme_code">Värikoodi</string>
+    <string name="dejavu_workspace_theme_color">Väri</string>
+    <string name="dejavu_workspace_wallpaper">Taustakuva</string>
+    <string name="dejavu_workspace_wallpaper_hint">Kuva pysyy tässä puhelimessa ja näkyy aloitussivulla. Sen väreistä tulee teema, joka synkronoituu Zenin kanssa.</string>
+    <string name="dejavu_workspace_wallpaper_choose">Valitse kuva</string>
+    <string name="dejavu_workspace_wallpaper_change">Vaihda</string>
+    <string name="dejavu_workspace_wallpaper_blur">Sumennus</string>
+    <string name="dejavu_workspace_wallpaper_failed">Tätä kuvaa ei voitu avata.</string>
+    <string name="dejavu_workspace_wallpaper_colors">Zenin kanssa synkronoituvat värit</string>
+    <string name="dejavu_workspace_wallpaper_hint_local">Kuva pysyy tässä puhelimessa ja näkyy aloitussivulla.</string>
+    <string name="dejavu_workspace_wallpaper_colors_local">Kuvasta otetut värit</string>
+    <string name="dejavu_page_info">Sivun tiedot</string>
+    <string name="dejavu_page_info_container">Säiliö</string>
+    <string name="dejavu_page_info_workspace">Työtila</string>
+    <string name="dejavu_page_info_site_details">Tietoturva ja oikeudet</string>
+    <string name="dejavu_page_info_pinned">Kiinnitetty</string>
+    <string name="dejavu_page_info_essential">Suosikki</string>
+    <string name="dejavu_page_info_reader_view">Lukunäkymä</string>
+    <string name="dejavu_page_info_translated">Käännetty</string>
+    <string name="dejavu_menu_reader_view">Lukunäkymä</string>
+    <string name="dejavu_menu_close_reader_view">Sulje lukunäkymä</string>
+    <string name="dejavu_workspace_firefox_limits">Firefox Sync -palvelun rajoitukset</string>
+    <string name="dejavu_workspace_firefox_device">Firefox Sync jakaa vain kunkin laitteen avoimet välilehdet. Täällä avaamasi tai sulkemasi välilehdet avautuvat tai sulkeutuvat myös kyseisessä laitteessa, mutta et voi kiinnittää välilehtiä, lisätä kansioita tai suosikkeja etkä valita säiliötä. Nimi ja kuvake tulevat laitteesta, ja valitsemasi värit pysyvät tässä puhelimessa.</string>
+    <string name="dejavu_workspace_firefox_own">Firefox Sync ei jaa työtiloja, joten tämä työtila kiinnitettyine välilehtineen ja kansioineen pysyy tässä puhelimessa. Firefox näyttää sen avoimet välilehdet tämän puhelimen välilehtinä.</string>
 </resources>

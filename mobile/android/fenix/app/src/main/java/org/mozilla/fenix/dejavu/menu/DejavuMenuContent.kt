@@ -384,6 +384,8 @@ internal fun moreMenuState(
             FxNimbus.features.translations.value().mainFlowBrowserMenuEnabled &&
             !tab.content.isPdf,
         isTranslated = tab.translationsState.isTranslated,
+        isReaderable = tab.readerState.readerable,
+        isInReaderView = tab.readerState.active,
         isWebPage = url.startsWith("http://") || url.startsWith("https://"),
         isDeviceTab = !tab.content.private &&
             workspaces.isDeviceWorkspace(pin?.workspaceId ?: workspaces.workspaceOf(tab.id)),

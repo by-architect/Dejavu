@@ -327,7 +327,6 @@
     <string name="dejavu_settings_author">Skabt af %1$s</string>
     <string name="dejavu_settings_coffee">Køb mig en kop kaffe</string>
     <string name="dejavu_settings_coffee_summary">Dejavu har ingen reklamer. Hvis du kan lide det, hjælper en kop kaffe det med at vokse.</string>
-    <string name="dejavu_workspace_device_note">Dette arbejdsområde viser de åbne faneblade fra en enhed på din Mozilla-konto. Dets navn og ikon kommer fra den enhed, og de farver, du vælger, bliver på denne telefon.</string>
     <string name="dejavu_settings_safe_browsing">Google Beskyttet browsing</string>
     <string name="dejavu_back">Tilbage</string>
     <string name="dejavu_sync_start_title">Flet sammen eller start forfra?</string>
@@ -430,4 +429,37 @@
     <string name="dejavu_settings_screen">Skærm</string>
     <string name="dejavu_settings_hide_system_bars">Skjul status- og navigationslinjen</string>
     <string name="dejavu_settings_hide_system_bars_summary">Mens en side vises. Stryg ind fra den øverste eller nederste kant for at se dem et øjeblik.</string>
+    <string name="dejavu_bookmarks_export">Eksporter til fil</string>
+    <plurals name="dejavu_bookmarks_exported">
+        <item quantity="one">%1$d bogmærke eksporteret</item>
+        <item quantity="other">%1$d bogmærker eksporteret</item>
+    </plurals>
+    <string name="dejavu_bookmarks_export_failed">Kunne ikke eksportere bogmærker. Prøv igen.</string>
+    <string name="dejavu_workspace_theme_custom">Tilpasset farve</string>
+    <string name="dejavu_workspace_theme_add_color">Tilføj en farve</string>
+    <string name="dejavu_workspace_theme_remove_color">Fjern denne farve</string>
+    <string name="dejavu_workspace_theme_code">Farvekode</string>
+    <string name="dejavu_workspace_theme_color">Farve</string>
+    <string name="dejavu_workspace_wallpaper">Baggrund</string>
+    <string name="dejavu_workspace_wallpaper_hint">Billedet bliver på denne telefon og vises på hjemmesiden. Dets farver bliver til det tema, der synkroniseres med Zen.</string>
+    <string name="dejavu_workspace_wallpaper_choose">Vælg et billede</string>
+    <string name="dejavu_workspace_wallpaper_change">Skift</string>
+    <string name="dejavu_workspace_wallpaper_blur">Sløring</string>
+    <string name="dejavu_workspace_wallpaper_failed">Dette billede kunne ikke åbnes.</string>
+    <string name="dejavu_workspace_wallpaper_colors">Farver, der synkroniseres med Zen</string>
+    <string name="dejavu_workspace_wallpaper_hint_local">Billedet bliver på denne telefon og vises på hjemmesiden.</string>
+    <string name="dejavu_workspace_wallpaper_colors_local">Farver hentet fra billedet</string>
+    <string name="dejavu_page_info">Sidedetaljer</string>
+    <string name="dejavu_page_info_container">Beholder</string>
+    <string name="dejavu_page_info_workspace">Arbejdsområde</string>
+    <string name="dejavu_page_info_site_details">Sikkerhed og tilladelser</string>
+    <string name="dejavu_page_info_pinned">Fastgjort</string>
+    <string name="dejavu_page_info_essential">Favorit</string>
+    <string name="dejavu_page_info_reader_view">Læsevisning</string>
+    <string name="dejavu_page_info_translated">Oversat</string>
+    <string name="dejavu_menu_reader_view">Læsevisning</string>
+    <string name="dejavu_menu_close_reader_view">Luk læsevisning</string>
+    <string name="dejavu_workspace_firefox_limits">Begrænset af Firefox Sync</string>
+    <string name="dejavu_workspace_firefox_device">Firefox Sync deler kun de åbne faneblade fra hver enhed. Faneblade, du åbner eller lukker her, åbnes eller lukkes også på den enhed, men du kan ikke fastgøre faneblade, tilføje mapper eller favoritter eller vælge en beholder. Navnet og ikonet kommer fra enheden, og de farver, du vælger, bliver på denne telefon.</string>
+    <string name="dejavu_workspace_firefox_own">Firefox Sync deler ikke arbejdsområder, så dette arbejdsområde bliver på denne telefon sammen med dets fastgjorte faneblade og mapper. Firefox viser dets åbne faneblade som denne telefons faneblade.</string>
 </resources>

@@ -320,7 +320,6 @@
     <string name="dejavu_settings_author">Được tạo bởi %1$s</string>
     <string name="dejavu_settings_coffee">Mời tôi một ly cà phê</string>
     <string name="dejavu_settings_coffee_summary">Dejavu không có quảng cáo. Nếu bạn thích, một ly cà phê sẽ giúp Dejavu phát triển.</string>
-    <string name="dejavu_workspace_device_note">Không gian làm việc này hiển thị các thẻ đang mở của một thiết bị trong tài khoản Mozilla của bạn. Tên và biểu tượng của nó lấy từ thiết bị đó, còn các màu bạn chọn sẽ ở lại trên điện thoại này.</string>
     <string name="dejavu_settings_safe_browsing">Duyệt web an toàn của Google</string>
     <string name="dejavu_back">Quay lại</string>
     <string name="dejavu_sync_start_title">Hợp nhất hay bắt đầu lại từ đầu?</string>
@@ -423,4 +422,36 @@
     <string name="dejavu_settings_screen">Màn hình</string>
     <string name="dejavu_settings_hide_system_bars">Ẩn thanh trạng thái và thanh điều hướng</string>
     <string name="dejavu_settings_hide_system_bars_summary">Khi đang hiển thị một trang. Vuốt từ cạnh trên hoặc cạnh dưới để xem chúng trong giây lát.</string>
+    <string name="dejavu_bookmarks_export">Xuất ra tập tin</string>
+    <plurals name="dejavu_bookmarks_exported">
+        <item quantity="other">Đã xuất %1$d dấu trang</item>
+    </plurals>
+    <string name="dejavu_bookmarks_export_failed">Không thể xuất dấu trang. Hãy thử lại.</string>
+    <string name="dejavu_workspace_theme_custom">Màu tùy chỉnh</string>
+    <string name="dejavu_workspace_theme_add_color">Thêm một màu</string>
+    <string name="dejavu_workspace_theme_remove_color">Xóa màu này</string>
+    <string name="dejavu_workspace_theme_code">Mã màu</string>
+    <string name="dejavu_workspace_theme_color">Màu</string>
+    <string name="dejavu_workspace_wallpaper">Hình nền</string>
+    <string name="dejavu_workspace_wallpaper_hint">Hình ảnh ở lại trên điện thoại này và hiển thị trên trang chủ. Màu của hình ảnh trở thành giao diện được đồng bộ hóa với Zen.</string>
+    <string name="dejavu_workspace_wallpaper_choose">Chọn một hình ảnh</string>
+    <string name="dejavu_workspace_wallpaper_change">Thay đổi</string>
+    <string name="dejavu_workspace_wallpaper_blur">Làm mờ</string>
+    <string name="dejavu_workspace_wallpaper_failed">Không thể mở hình ảnh này.</string>
+    <string name="dejavu_workspace_wallpaper_colors">Các màu được đồng bộ hóa với Zen</string>
+    <string name="dejavu_workspace_wallpaper_hint_local">Hình ảnh ở lại trên điện thoại này và hiển thị trên trang chủ.</string>
+    <string name="dejavu_workspace_wallpaper_colors_local">Các màu lấy từ hình ảnh</string>
+    <string name="dejavu_page_info">Chi tiết trang</string>
+    <string name="dejavu_page_info_container">Vùng chứa</string>
+    <string name="dejavu_page_info_workspace">Không gian làm việc</string>
+    <string name="dejavu_page_info_site_details">Bảo mật và quyền hạn</string>
+    <string name="dejavu_page_info_pinned">Đã ghim</string>
+    <string name="dejavu_page_info_essential">Trang thiết yếu</string>
+    <string name="dejavu_page_info_reader_view">Chế độ đọc sách</string>
+    <string name="dejavu_page_info_translated">Đã dịch</string>
+    <string name="dejavu_menu_reader_view">Chế độ đọc sách</string>
+    <string name="dejavu_menu_close_reader_view">Đóng chế độ đọc sách</string>
+    <string name="dejavu_workspace_firefox_limits">Bị giới hạn bởi Firefox Sync</string>
+    <string name="dejavu_workspace_firefox_device">Firefox Sync chỉ chia sẻ các thẻ đang mở của từng thiết bị. Các thẻ bạn mở hoặc đóng ở đây cũng sẽ mở hoặc đóng trên thiết bị đó, nhưng bạn không thể ghim thẻ, thêm thư mục hay trang thiết yếu, hoặc chọn vùng chứa. Tên và biểu tượng lấy từ thiết bị, còn các màu bạn chọn sẽ ở lại trên điện thoại này.</string>
+    <string name="dejavu_workspace_firefox_own">Firefox Sync không chia sẻ không gian làm việc, vì vậy không gian làm việc này, cùng các thẻ đã ghim và thư mục của nó, sẽ ở lại trên điện thoại này. Firefox hiển thị các thẻ đang mở của nó như các thẻ của điện thoại này.</string>
 </resources>

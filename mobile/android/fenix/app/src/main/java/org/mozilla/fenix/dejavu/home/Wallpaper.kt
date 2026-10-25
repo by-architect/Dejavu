@@ -130,11 +130,12 @@ internal fun WallpaperLayers(pagerState: PagerState, wallpaperAt: (Int) -> Works
 /**
  * The workspace dialog's wallpaper choice: a small picture of the home screen with [wallpaper], a button to pick a
  * picture, the colors taken from it for the theme, and a slider for how blurred it is. [onImport] copies a picked
- * picture into a wallpaper, which then goes to [onPicked].
+ * picture into a wallpaper, which then goes to [onPicked]. The theme of a workspace that [syncsWithZen] goes to Zen.
  */
 @Composable
 internal fun WallpaperSection(
     wallpaper: WorkspaceWallpaper?,
+    syncsWithZen: Boolean,
     onImport: suspend (Uri) -> WorkspaceWallpaper?,
     onPicked: (WorkspaceWallpaper) -> Unit,
     onBlurChange: (Float) -> Unit,
@@ -163,7 +164,13 @@ internal fun WallpaperSection(
     }
 
     Text(
-        text = stringResource(R.string.dejavu_workspace_wallpaper_hint),
+        text = stringResource(
+            if (syncsWithZen) {
+                R.string.dejavu_workspace_wallpaper_hint
+            } else {
+                R.string.dejavu_workspace_wallpaper_hint_local
+            },
+        ),
         style = MaterialTheme.typography.bodySmall,
         color = MaterialTheme.colorScheme.onSurfaceVariant,
     )
@@ -183,7 +190,7 @@ internal fun WallpaperSection(
                 onClick = pick,
                 enabled = !importing,
             )
-            if (wallpaper != null && wallpaper.colors.isNotEmpty()) PictureColors(wallpaper.colors)
+            if (wallpaper != null && wallpaper.colors.isNotEmpty()) PictureColors(wallpaper.colors, syncsWithZen)
             if (failed) {
                 Text(
                     text = stringResource(R.string.dejavu_workspace_wallpaper_failed),
@@ -198,10 +205,16 @@ internal fun WallpaperSection(
     }
 }
 
-/** The colors taken from a wallpaper, which the workspace's theme syncs to Zen. */
+/** The colors taken from a wallpaper, which the workspace's theme syncs to Zen when it [syncsWithZen]. */
 @Composable
-private fun PictureColors(colors: List<Int>) {
-    val description = stringResource(R.string.dejavu_workspace_wallpaper_colors)
+private fun PictureColors(colors: List<Int>, syncsWithZen: Boolean) {
+    val description = stringResource(
+        if (syncsWithZen) {
+            R.string.dejavu_workspace_wallpaper_colors
+        } else {
+            R.string.dejavu_workspace_wallpaper_colors_local
+        },
+    )
     Row(
         horizontalArrangement = Arrangement.spacedBy(6.dp),
         modifier = Modifier

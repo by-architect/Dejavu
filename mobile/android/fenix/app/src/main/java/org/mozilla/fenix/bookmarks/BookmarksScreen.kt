@@ -69,6 +69,7 @@ import androidx.compose.ui.platform.LocalSoftwareKeyboardController
 import androidx.compose.ui.platform.SoftwareKeyboardController
 import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.res.pluralStringResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.semantics.CollectionInfo
 import androidx.compose.ui.semantics.CollectionItemInfo
@@ -220,6 +221,11 @@ private fun BookmarksList(store: BookmarksStore) {
                 )
             }
             BookmarksSnackbarState.ImportFailed -> stringResource(R.string.bookmark_import_failure_snackbar)
+            is BookmarksSnackbarState.Exported -> {
+                val count = (state.bookmarksSnackbarState as BookmarksSnackbarState.Exported).count
+                pluralStringResource(R.plurals.dejavu_bookmarks_exported, count, count)
+            }
+            BookmarksSnackbarState.ExportFailed -> stringResource(R.string.dejavu_bookmarks_export_failed)
             else -> ""
         }
 
@@ -249,7 +255,9 @@ private fun BookmarksList(store: BookmarksStore) {
                         onDismissPerformed = { store.dispatch(SnackbarAction.Dismissed) },
                     )
                 }
-            BookmarksSnackbarState.ImportFailed ->
+            BookmarksSnackbarState.ImportFailed,
+            is BookmarksSnackbarState.Exported,
+            BookmarksSnackbarState.ExportFailed ->
                 scope.launch {
                     snackbarHostState.displaySnackbar(
                         message = snackbarMessage,
@@ -897,11 +905,11 @@ private fun BookmarksListTopBarActionsNoSelection(
                 tint = MaterialTheme.colorScheme.onSurface,
             )
         }
-    } else if (store.state.showBookmarksImport) {
+    } else {
         Box {
             IconButton(
                 onClick = { store.dispatch(RootOverflowMenuClicked) },
-                contentDescription = stringResource(R.string.bookmark_import_bookmarks_button_content_description),
+                contentDescription = stringResource(R.string.content_description_menu),
             ) {
                 Icon(
                     painter = painterResource(iconsR.drawable.mozac_ic_ellipsis_vertical_24),
@@ -984,11 +992,15 @@ private fun RootBookmarksOverflowMenu(store: BookmarksStore) {
         .collectAsState(initial = store.state.rootMenuShown)
 
     val menuItems =
-        listOf(
+        listOfNotNull(
             MenuItem.TextItem(
                 text = Text.Resource(R.string.bookmark_import_menu_button),
                 onClick = { store.dispatch(ImportAction.ImportFileClicked.FromMenu) },
-            )
+            ).takeIf { store.state.showBookmarksImport },
+            MenuItem.TextItem(
+                text = Text.Resource(R.string.dejavu_bookmarks_export),
+                onClick = { store.dispatch(ExportAction.ExportFileClicked) },
+            ),
         )
 
     DropdownMenu(

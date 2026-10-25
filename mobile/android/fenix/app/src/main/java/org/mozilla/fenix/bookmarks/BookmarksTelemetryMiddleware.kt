@@ -51,6 +51,7 @@ internal class BookmarksTelemetryMiddleware : Middleware<BookmarksState, Bookmar
             }
             RootOverflowMenuClicked,
             RootOverflowMenuDismissed,
+            is ExportAction,
             EditBookmarkAction.FolderClicked,
             is EditBookmarkAction.TitleChanged,
             is EditBookmarkAction.URLChanged,

@@ -327,7 +327,6 @@
     <string name="dejavu_settings_author">%1$s സൃഷ്ടിച്ചത്</string>
     <string name="dejavu_settings_coffee">എനിക്കൊരു കാപ്പി വാങ്ങിത്തരൂ</string>
     <string name="dejavu_settings_coffee_summary">Dejavu-യിൽ പരസ്യങ്ങളില്ല. നിങ്ങൾക്കിത് ഇഷ്ടമായെങ്കിൽ, ഒരു കാപ്പി ഇതിന്റെ വളർച്ചയ്ക്ക് സഹായിക്കും.</string>
-    <string name="dejavu_workspace_device_note">ഈ പണിയിടം നിങ്ങളുടെ Mozilla അക്കൗണ്ടിലുള്ള ഒരു ഉപകരണത്തിലെ തുറന്നിരിക്കുന്ന ടാബുകൾ കാണിക്കുന്നു. ഇതിന്റെ പേരും ചിഹ്നവും ആ ഉപകരണത്തിൽ നിന്നാണ് വരുന്നത്, നിങ്ങൾ തിരഞ്ഞെടുക്കുന്ന നിറങ്ങൾ ഈ ഫോണിൽ തന്നെ നിലനിൽക്കും.</string>
     <string name="dejavu_settings_safe_browsing">Google സുരക്ഷിത ബ്രൗസിംഗ്</string>
     <string name="dejavu_back">പിന്നോട്ട്</string>
     <string name="dejavu_sync_start_title">ലയിപ്പിക്കണോ, പുതുതായി തുടങ്ങണോ?</string>
@@ -430,4 +429,37 @@
     <string name="dejavu_settings_screen">സ്ക്രീൻ</string>
     <string name="dejavu_settings_hide_system_bars">സ്റ്റാറ്റസ്, നാവിഗേഷൻ ബാറുകൾ മറയ്ക്കുക</string>
     <string name="dejavu_settings_hide_system_bars_summary">ഒരു പേജ് കാണിക്കുമ്പോൾ. അവ ഒരു നിമിഷം കാണാൻ മുകളിലെയോ താഴത്തെയോ അരികിൽ നിന്ന് സ്വൈപ്പ് ചെയ്യുക.</string>
+    <string name="dejavu_bookmarks_export">ഫയലിലേക്കു് കയറ്റുമതിക്കുക</string>
+    <plurals name="dejavu_bookmarks_exported">
+        <item quantity="one">%1$d അടയാളക്കുറിപ്പ് കയറ്റുമതി ചെയ്തു</item>
+        <item quantity="other">%1$d അടയാളക്കുറിപ്പുകൾ കയറ്റുമതി ചെയ്തു</item>
+    </plurals>
+    <string name="dejavu_bookmarks_export_failed">അടയാളക്കുറിപ്പുകൾ കയറ്റുമതിക്കുവാൻ പറ്റിയില്ല. വീണ്ടും ശ്രമിക്കുക.</string>
+    <string name="dejavu_workspace_theme_custom">ഇഷ്‌ടാനുസൃത നിറം</string>
+    <string name="dejavu_workspace_theme_add_color">ഒരു നിറം ചേർക്കുക</string>
+    <string name="dejavu_workspace_theme_remove_color">ഈ നിറം നീക്കം ചെയ്യുക</string>
+    <string name="dejavu_workspace_theme_code">നിറത്തിന്റെ കോഡ്</string>
+    <string name="dejavu_workspace_theme_color">നിറം</string>
+    <string name="dejavu_workspace_wallpaper">വാൾപേപ്പർ</string>
+    <string name="dejavu_workspace_wallpaper_hint">ചിത്രം ഈ ഫോണിൽ തന്നെ നിലനിൽക്കും, ഹോം താളിൽ കാണിക്കുകയും ചെയ്യും. അതിന്റെ നിറങ്ങൾ Zen-മായി സിങ്ക് ചെയ്യുന്ന തീം ആയി മാറും.</string>
+    <string name="dejavu_workspace_wallpaper_choose">ഒരു ചിത്രം തിരഞ്ഞെടുക്കുക</string>
+    <string name="dejavu_workspace_wallpaper_change">മാറ്റുക</string>
+    <string name="dejavu_workspace_wallpaper_blur">മങ്ങൽ</string>
+    <string name="dejavu_workspace_wallpaper_failed">ഈ ചിത്രം തുറക്കാനായില്ല.</string>
+    <string name="dejavu_workspace_wallpaper_colors">Zen-മായി സിങ്ക് ചെയ്യുന്ന നിറങ്ങൾ</string>
+    <string name="dejavu_workspace_wallpaper_hint_local">ചിത്രം ഈ ഫോണിൽ തന്നെ നിലനിൽക്കും, ഹോം താളിൽ കാണിക്കുകയും ചെയ്യും.</string>
+    <string name="dejavu_workspace_wallpaper_colors_local">ചിത്രത്തിൽ നിന്ന് എടുത്ത നിറങ്ങൾ</string>
+    <string name="dejavu_page_info">താളിന്റെ വിശദാംശങ്ങൾ</string>
+    <string name="dejavu_page_info_container">കണ്ടെയ്നർ</string>
+    <string name="dejavu_page_info_workspace">പണിയിടം</string>
+    <string name="dejavu_page_info_site_details">സുരക്ഷയും അനുമതികളും</string>
+    <string name="dejavu_page_info_pinned">പിൻ ചെയ്തത്</string>
+    <string name="dejavu_page_info_essential">പ്രധാനപ്പെട്ടത്</string>
+    <string name="dejavu_page_info_reader_view">വായനയ്ക്കുള്ള കാഴ്ച</string>
+    <string name="dejavu_page_info_translated">വിവർത്തനം ചെയ്തത്</string>
+    <string name="dejavu_menu_reader_view">വായനയ്ക്കുള്ള കാഴ്ച</string>
+    <string name="dejavu_menu_close_reader_view">വായനയ്ക്കുള്ള കാഴ്ച അടയ്ക്കുക</string>
+    <string name="dejavu_workspace_firefox_limits">Firefox Sync-ന്റെ പരിമിതികൾ</string>
+    <string name="dejavu_workspace_firefox_device">Firefox Sync ഓരോ ഉപകരണത്തിലെയും തുറന്നിരിക്കുന്ന ടാബുകൾ മാത്രമേ പങ്കിടൂ. നിങ്ങൾ ഇവിടെ തുറക്കുകയോ അടയ്ക്കുകയോ ചെയ്യുന്ന ടാബുകൾ ആ ഉപകരണത്തിലും തുറക്കുകയോ അടയുകയോ ചെയ്യും, പക്ഷേ ടാബുകൾ പിൻ ചെയ്യാനോ ഫോൾഡറുകളോ പ്രധാനപ്പെട്ടവയോ ചേർക്കാനോ ഒരു കണ്ടെയ്നർ തിരഞ്ഞെടുക്കാനോ കഴിയില്ല. പേരും ചിഹ്നവും ഉപകരണത്തിൽ നിന്നാണ് വരുന്നത്, നിങ്ങൾ തിരഞ്ഞെടുക്കുന്ന നിറങ്ങൾ ഈ ഫോണിൽ തന്നെ നിലനിൽക്കും.</string>
+    <string name="dejavu_workspace_firefox_own">Firefox Sync പണിയിടങ്ങൾ പങ്കിടില്ല, അതിനാൽ ഈ പണിയിടം, അതിന്റെ പിൻ ചെയ്ത ടാബുകളും ഫോൾഡറുകളും സഹിതം, ഈ ഫോണിൽ തന്നെ നിലനിൽക്കും. Firefox അതിന്റെ തുറന്നിരിക്കുന്ന ടാബുകൾ ഈ ഫോണിന്റെ ടാബുകളായി കാണിക്കും.</string>
 </resources>

@@ -327,7 +327,6 @@
     <string name="dejavu_settings_author">შემქმნელი: %1$s</string>
     <string name="dejavu_settings_coffee">მიყიდეთ ყავა</string>
     <string name="dejavu_settings_coffee_summary">Dejavu-ში რეკლამა არ არის. თუ მოგწონთ, ერთი ფინჯანი ყავა მის განვითარებას უწყობს ხელს.</string>
-    <string name="dejavu_workspace_device_note">ეს სივრცე აჩვენებს თქვენს Mozilla-ანგარიშთან დაკავშირებული მოწყობილობის გახსნილ ჩანართებს. მისი სახელი და ხატულა იმ მოწყობილობიდან მოდის, თქვენ მიერ არჩეული ფერები კი ამ ტელეფონზე რჩება.</string>
     <string name="dejavu_settings_safe_browsing">Google-ის უსაფრთხო დათვალიერება</string>
     <string name="dejavu_back">უკან</string>
     <string name="dejavu_sync_start_title">გავაერთიანოთ თუ თავიდან დავიწყოთ?</string>
@@ -430,4 +429,37 @@
     <string name="dejavu_settings_screen">ეკრანი</string>
     <string name="dejavu_settings_hide_system_bars">მდგომარეობისა და ნავიგაციის ზოლების დამალვა</string>
     <string name="dejavu_settings_hide_system_bars_summary">როცა გვერდი ჩანს. ზედა ან ქვედა კიდიდან გადაფურცლეთ, რომ წამით დაინახოთ.</string>
+    <string name="dejavu_bookmarks_export">ფაილში გატანა</string>
+    <plurals name="dejavu_bookmarks_exported">
+        <item quantity="one">%1$d სანიშნი გატანილია</item>
+        <item quantity="other">%1$d სანიშნი გატანილია</item>
+    </plurals>
+    <string name="dejavu_bookmarks_export_failed">სანიშნების გატანა ვერ მოხერხდა. სცადეთ ხელახლა.</string>
+    <string name="dejavu_workspace_theme_custom">მორგებული ფერი</string>
+    <string name="dejavu_workspace_theme_add_color">ფერის დამატება</string>
+    <string name="dejavu_workspace_theme_remove_color">ამ ფერის ამოშლა</string>
+    <string name="dejavu_workspace_theme_code">ფერის კოდი</string>
+    <string name="dejavu_workspace_theme_color">ფერი</string>
+    <string name="dejavu_workspace_wallpaper">ფონი</string>
+    <string name="dejavu_workspace_wallpaper_hint">სურათი ამ ტელეფონზე რჩება და მთავარ გვერდზე ჩანს. მისი ფერები ხდება თემა, რომელიც Zen-თან სინქრონდება.</string>
+    <string name="dejavu_workspace_wallpaper_choose">სურათის არჩევა</string>
+    <string name="dejavu_workspace_wallpaper_change">შეცვლა</string>
+    <string name="dejavu_workspace_wallpaper_blur">გაბუნდოვნება</string>
+    <string name="dejavu_workspace_wallpaper_failed">ამ სურათის გახსნა ვერ მოხერხდა.</string>
+    <string name="dejavu_workspace_wallpaper_colors">ფერები, რომლებიც Zen-თან სინქრონდება</string>
+    <string name="dejavu_workspace_wallpaper_hint_local">სურათი ამ ტელეფონზე რჩება და მთავარ გვერდზე ჩანს.</string>
+    <string name="dejavu_workspace_wallpaper_colors_local">სურათიდან აღებული ფერები</string>
+    <string name="dejavu_page_info">გვერდის შესახებ</string>
+    <string name="dejavu_page_info_container">კონტეინერი</string>
+    <string name="dejavu_page_info_workspace">სივრცე</string>
+    <string name="dejavu_page_info_site_details">უსაფრთხოება და ნებართვები</string>
+    <string name="dejavu_page_info_pinned">მიმაგრებული</string>
+    <string name="dejavu_page_info_essential">საჭირო საიტი</string>
+    <string name="dejavu_page_info_reader_view">კითხვის რეჟიმი</string>
+    <string name="dejavu_page_info_translated">ნათარგმნი</string>
+    <string name="dejavu_menu_reader_view">კითხვის რეჟიმი</string>
+    <string name="dejavu_menu_close_reader_view">კითხვის რეჟიმის დახურვა</string>
+    <string name="dejavu_workspace_firefox_limits">Firefox Sync-ის შეზღუდვები</string>
+    <string name="dejavu_workspace_firefox_device">Firefox Sync თითოეული მოწყობილობის მხოლოდ გახსნილ ჩანართებს აზიარებს. აქ გახსნილი ან დახურული ჩანართები იმ მოწყობილობაზეც იხსნება ან იხურება, მაგრამ ვერ შეძლებთ ჩანართების მიმაგრებას, საქაღალდეების ან საჭირო საიტების დამატებას, ან კონტეინერის არჩევას. სახელი და ხატულა მოწყობილობიდან მოდის, ხოლო თქვენ მიერ არჩეული ფერები ამ ტელეფონზე რჩება.</string>
+    <string name="dejavu_workspace_firefox_own">Firefox Sync სივრცეებს არ აზიარებს, ამიტომ ეს სივრცე, თავისი მიმაგრებული ჩანართებითა და საქაღალდეებით, ამ ტელეფონზე რჩება. Firefox მის გახსნილ ჩანართებს ამ ტელეფონის ჩანართებად აჩვენებს.</string>
 </resources>

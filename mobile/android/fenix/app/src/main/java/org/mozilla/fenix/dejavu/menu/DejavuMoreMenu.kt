@@ -87,6 +87,8 @@ data class MoreMenuState(
     val hasExternalApp: Boolean = false,
     val canTranslate: Boolean = false,
     val isTranslated: Boolean = false,
+    val isReaderable: Boolean = false,
+    val isInReaderView: Boolean = false,
     val isWebPage: Boolean = false,
     val isDeviceTab: Boolean = false,
     val splitWays: List<SplitOrientation> = emptyList(),
@@ -131,6 +133,12 @@ private fun MoreMenuItem.look(state: MoreMenuState): EntryLook {
             default.copy(enabled = state.isWebPage)
         }
         MoreMenuItem.DESKTOP_SITE -> default.copy(active = state.isDesktopMode)
+        MoreMenuItem.READER_VIEW -> if (state.isInReaderView) {
+            val label = stringResource(R.string.dejavu_menu_close_reader_view)
+            EntryLook(label, iconsR.drawable.mozac_ic_reader_view_fill_24, active = true)
+        } else {
+            default.copy(enabled = state.isReaderable)
+        }
         // A pinned tab of a device can still be unpinned here, which leaves it pinned on the device.
         MoreMenuItem.PIN_TAB -> if (state.isPinned) {
             EntryLook(stringResource(R.string.dejavu_menu_unpin_tab), iconsR.drawable.mozac_ic_pin_slash_24, active = true)

@@ -327,7 +327,6 @@
     <string name="dejavu_settings_author">%1$s жасаған</string>
     <string name="dejavu_settings_coffee">Маған кофе алып беріңіз</string>
     <string name="dejavu_settings_coffee_summary">Dejavu-да жарнама жоқ. Ол сізге ұнаса, бір кесе кофе оның дамуына көмектеседі.</string>
-    <string name="dejavu_workspace_device_note">Бұл жұмыс кеңістігі Mozilla есептік жазбаңыздағы бір құрылғының ашық беттерін көрсетеді. Оның атауы мен белгішесі сол құрылғыдан алынады, ал сіз таңдаған түстер осы телефонда қалады.</string>
     <string name="dejavu_settings_safe_browsing">Google қауіпсіз шолу</string>
     <string name="dejavu_back">Артқа</string>
     <string name="dejavu_sync_start_title">Біріктіру ме, әлде жаңадан бастау ма?</string>
@@ -430,4 +429,37 @@
     <string name="dejavu_settings_screen">Экран</string>
     <string name="dejavu_settings_hide_system_bars">Күй және навигация жолақтарын жасыру</string>
     <string name="dejavu_settings_hide_system_bars_summary">Бет көрсетіліп тұрғанда. Оларды бір сәтке көру үшін жоғарғы не төменгі жиектен сырғытыңыз.</string>
+    <string name="dejavu_bookmarks_export">Файлға экспорттау</string>
+    <plurals name="dejavu_bookmarks_exported">
+        <item quantity="one">%1$d бетбелгі экспортталды</item>
+        <item quantity="other">%1$d бетбелгі экспортталды</item>
+    </plurals>
+    <string name="dejavu_bookmarks_export_failed">Бетбелгілерді экспорттау мүмкін болмады. Қайталап көріңіз.</string>
+    <string name="dejavu_workspace_theme_custom">Таңдауыңызша түс</string>
+    <string name="dejavu_workspace_theme_add_color">Түс қосу</string>
+    <string name="dejavu_workspace_theme_remove_color">Бұл түсті шығару</string>
+    <string name="dejavu_workspace_theme_code">Түс коды</string>
+    <string name="dejavu_workspace_theme_color">Түс</string>
+    <string name="dejavu_workspace_wallpaper">Тұсқағаз</string>
+    <string name="dejavu_workspace_wallpaper_hint">Сурет осы телефонда қалады және басты бетте көрсетіледі. Оның түстері Zen-мен синхрондалатын темаға айналады.</string>
+    <string name="dejavu_workspace_wallpaper_choose">Сурет таңдау</string>
+    <string name="dejavu_workspace_wallpaper_change">Өзгерту</string>
+    <string name="dejavu_workspace_wallpaper_blur">Бұлыңғырлау</string>
+    <string name="dejavu_workspace_wallpaper_failed">Бұл суретті ашу мүмкін болмады.</string>
+    <string name="dejavu_workspace_wallpaper_colors">Zen-мен синхрондалатын түстер</string>
+    <string name="dejavu_workspace_wallpaper_hint_local">Сурет осы телефонда қалады және басты бетте көрсетіледі.</string>
+    <string name="dejavu_workspace_wallpaper_colors_local">Суреттен алынған түстер</string>
+    <string name="dejavu_page_info">Парақ мәліметтері</string>
+    <string name="dejavu_page_info_container">Контейнер</string>
+    <string name="dejavu_page_info_workspace">Жұмыс кеңістігі</string>
+    <string name="dejavu_page_info_site_details">Қауіпсіздік және рұқсаттар</string>
+    <string name="dejavu_page_info_pinned">Бекітілген</string>
+    <string name="dejavu_page_info_essential">Негізгі</string>
+    <string name="dejavu_page_info_reader_view">Оқу көрінісі</string>
+    <string name="dejavu_page_info_translated">Аударылған</string>
+    <string name="dejavu_menu_reader_view">Оқу көрінісі</string>
+    <string name="dejavu_menu_close_reader_view">Оқу режимін жабу</string>
+    <string name="dejavu_workspace_firefox_limits">Firefox Sync шектеулері</string>
+    <string name="dejavu_workspace_firefox_device">Firefox Sync әр құрылғының тек ашық беттерін ғана бөліседі. Мұнда ашқан немесе жапқан беттеріңіз сол құрылғыда да ашылады немесе жабылады, бірақ беттерді бекіту, қалталар не негізгілер қосу немесе контейнер таңдау мүмкін емес. Атауы мен белгішесі құрылғыдан алынады, ал сіз таңдаған түстер осы телефонда қалады.</string>
+    <string name="dejavu_workspace_firefox_own">Firefox Sync жұмыс кеңістіктерін бөліспейді, сондықтан бұл жұмыс кеңістігі өзінің бекітілген беттері мен қалталарымен бірге осы телефонда қалады. Firefox оның ашық беттерін осы телефонның беттері ретінде көрсетеді.</string>
 </resources>

@@ -327,7 +327,6 @@
     <string name="dejavu_settings_author">Creato da %1$s</string>
     <string name="dejavu_settings_coffee">Offrimi un caffè</string>
     <string name="dejavu_settings_coffee_summary">Dejavu non ha pubblicità. Se ti piace, un caffè lo aiuta a crescere.</string>
-    <string name="dejavu_workspace_device_note">Questo spazio mostra le schede aperte di un dispositivo del tuo account Mozilla. Il suo nome e la sua icona provengono da quel dispositivo, e i colori che scegli restano su questo telefono.</string>
     <string name="dejavu_settings_safe_browsing">Navigazione sicura di Google</string>
     <string name="dejavu_back">Indietro</string>
     <string name="dejavu_sync_start_title">Unire o ricominciare da zero?</string>
@@ -430,4 +429,37 @@
     <string name="dejavu_settings_screen">Schermo</string>
     <string name="dejavu_settings_hide_system_bars">Nascondi le barre di stato e di navigazione</string>
     <string name="dejavu_settings_hide_system_bars_summary">Mentre è visualizzata una pagina. Scorri dal bordo superiore o inferiore per vederle per un momento.</string>
+    <string name="dejavu_bookmarks_export">Esporta su file</string>
+    <plurals name="dejavu_bookmarks_exported">
+        <item quantity="one">%1$d segnalibro esportato</item>
+        <item quantity="other">%1$d segnalibri esportati</item>
+    </plurals>
+    <string name="dejavu_bookmarks_export_failed">Impossibile esportare i segnalibri. Riprova.</string>
+    <string name="dejavu_workspace_theme_custom">Colore personalizzato</string>
+    <string name="dejavu_workspace_theme_add_color">Aggiungi un colore</string>
+    <string name="dejavu_workspace_theme_remove_color">Rimuovi questo colore</string>
+    <string name="dejavu_workspace_theme_code">Codice colore</string>
+    <string name="dejavu_workspace_theme_color">Colore</string>
+    <string name="dejavu_workspace_wallpaper">Sfondo</string>
+    <string name="dejavu_workspace_wallpaper_hint">L’immagine resta su questo telefono e appare nella home page. I suoi colori diventano il tema che si sincronizza con Zen.</string>
+    <string name="dejavu_workspace_wallpaper_choose">Scegli un’immagine</string>
+    <string name="dejavu_workspace_wallpaper_change">Cambia</string>
+    <string name="dejavu_workspace_wallpaper_blur">Sfocatura</string>
+    <string name="dejavu_workspace_wallpaper_failed">Impossibile aprire questa immagine.</string>
+    <string name="dejavu_workspace_wallpaper_colors">Colori sincronizzati con Zen</string>
+    <string name="dejavu_workspace_wallpaper_hint_local">L’immagine resta su questo telefono e appare nella home page.</string>
+    <string name="dejavu_workspace_wallpaper_colors_local">Colori presi dall’immagine</string>
+    <string name="dejavu_page_info">Dettagli della pagina</string>
+    <string name="dejavu_page_info_container">Contenitore</string>
+    <string name="dejavu_page_info_workspace">Spazio</string>
+    <string name="dejavu_page_info_site_details">Sicurezza e permessi</string>
+    <string name="dejavu_page_info_pinned">Bloccata</string>
+    <string name="dejavu_page_info_essential">Tra i preferiti</string>
+    <string name="dejavu_page_info_reader_view">Modalità lettura</string>
+    <string name="dejavu_page_info_translated">Tradotta</string>
+    <string name="dejavu_menu_reader_view">Modalità lettura</string>
+    <string name="dejavu_menu_close_reader_view">Chiudi Modalità lettura</string>
+    <string name="dejavu_workspace_firefox_limits">Limitazioni di Firefox Sync</string>
+    <string name="dejavu_workspace_firefox_device">Firefox Sync condivide solo le schede aperte di ogni dispositivo. Le schede che apri o chiudi qui si aprono o si chiudono anche su quel dispositivo, ma non puoi bloccare schede, aggiungere cartelle o preferiti, né scegliere un contenitore. Il nome e l’icona provengono dal dispositivo, e i colori che scegli restano su questo telefono.</string>
+    <string name="dejavu_workspace_firefox_own">Firefox Sync non condivide gli spazi, quindi questo spazio, con le sue schede bloccate e cartelle, resta su questo telefono. Firefox mostra le sue schede aperte come schede di questo telefono.</string>
 </resources>

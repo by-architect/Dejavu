@@ -327,7 +327,6 @@
     <string name="dejavu_settings_author">%1$s உருவாக்கியது</string>
     <string name="dejavu_settings_coffee">எனக்கு ஒரு காபி வாங்கித் தாருங்கள்</string>
     <string name="dejavu_settings_coffee_summary">Dejavu-வில் விளம்பரங்கள் இல்லை. உங்களுக்குப் பிடித்திருந்தால், ஒரு காபி அதன் வளர்ச்சிக்கு உதவும்.</string>
-    <string name="dejavu_workspace_device_note">இந்தப் பணியிடம் உங்கள் Mozilla கணக்கில் உள்ள ஒரு சாதனத்தின் திறந்த கீற்றுகளைக் காட்டுகிறது. அதன் பெயரும் சின்னமும் அந்தச் சாதனத்திலிருந்து வருகின்றன, நீங்கள் தேர்ந்தெடுக்கும் நிறங்கள் இந்தக் கைப்பேசியிலேயே இருக்கும்.</string>
     <string name="dejavu_settings_safe_browsing">Google பாதுகாப்பு உலாவல்</string>
     <string name="dejavu_back">பின்செல்</string>
     <string name="dejavu_sync_start_title">ஒன்றிணைக்கவா அல்லது புதிதாகத் தொடங்கவா?</string>
@@ -430,4 +429,37 @@
     <string name="dejavu_settings_screen">திரை</string>
     <string name="dejavu_settings_hide_system_bars">நிலை, வழிசெலுத்தல் பட்டிகளை மறை</string>
     <string name="dejavu_settings_hide_system_bars_summary">ஒரு பக்கம் காட்டப்படும்போது. அவற்றைச் சிறிது நேரம் பார்க்க மேல் அல்லது கீழ் விளிம்பிலிருந்து ஸ்வைப் செய்யவும்.</string>
+    <string name="dejavu_bookmarks_export">கோப்புக்கு ஏற்றுமதி செய்</string>
+    <plurals name="dejavu_bookmarks_exported">
+        <item quantity="one">%1$d புத்தகக்குறி ஏற்றுமதி செய்யப்பட்டது</item>
+        <item quantity="other">%1$d புத்தகக்குறிகள் ஏற்றுமதி செய்யப்பட்டன</item>
+    </plurals>
+    <string name="dejavu_bookmarks_export_failed">புத்தகக்குறிகளை ஏற்றுமதி செய்ய முடியவில்லை. மீண்டும் முயற்சிக்கவும்.</string>
+    <string name="dejavu_workspace_theme_custom">தனிப்பயன் நிறம்</string>
+    <string name="dejavu_workspace_theme_add_color">ஒரு நிறத்தைச் சேர்</string>
+    <string name="dejavu_workspace_theme_remove_color">இந்த நிறத்தை அகற்று</string>
+    <string name="dejavu_workspace_theme_code">நிறக் குறியீடு</string>
+    <string name="dejavu_workspace_theme_color">நிறம்</string>
+    <string name="dejavu_workspace_wallpaper">சுவர்ப்படம்</string>
+    <string name="dejavu_workspace_wallpaper_hint">படம் இந்தக் கைப்பேசியிலேயே இருக்கும், முகப்புப் பக்கத்தில் காட்டப்படும். அதன் நிறங்கள் Zen உடன் ஒத்திசைக்கப்படும் தீமாக மாறும்.</string>
+    <string name="dejavu_workspace_wallpaper_choose">ஒரு படத்தைத் தேர்வுசெய்</string>
+    <string name="dejavu_workspace_wallpaper_change">மாற்று</string>
+    <string name="dejavu_workspace_wallpaper_blur">மங்கல்</string>
+    <string name="dejavu_workspace_wallpaper_failed">இந்தப் படத்தைத் திறக்க முடியவில்லை.</string>
+    <string name="dejavu_workspace_wallpaper_colors">Zen உடன் ஒத்திசைக்கப்படும் நிறங்கள்</string>
+    <string name="dejavu_workspace_wallpaper_hint_local">படம் இந்தக் கைப்பேசியிலேயே இருக்கும், முகப்புப் பக்கத்தில் காட்டப்படும்.</string>
+    <string name="dejavu_workspace_wallpaper_colors_local">படத்திலிருந்து எடுக்கப்பட்ட நிறங்கள்</string>
+    <string name="dejavu_page_info">பக்க விவரங்கள்</string>
+    <string name="dejavu_page_info_container">கொள்கலன்</string>
+    <string name="dejavu_page_info_workspace">பணியிடம்</string>
+    <string name="dejavu_page_info_site_details">பாதுகாப்பும் அனுமதிகளும்</string>
+    <string name="dejavu_page_info_pinned">பொருத்தப்பட்டது</string>
+    <string name="dejavu_page_info_essential">முக்கியமானது</string>
+    <string name="dejavu_page_info_reader_view">வாசகர் பார்வை</string>
+    <string name="dejavu_page_info_translated">மொழிபெயர்க்கப்பட்டது</string>
+    <string name="dejavu_menu_reader_view">வாசகர் பார்வை</string>
+    <string name="dejavu_menu_close_reader_view">வாசிப்பு தோற்றத்தை மூடு</string>
+    <string name="dejavu_workspace_firefox_limits">Firefox Sync-ஆல் வரம்பிடப்பட்டது</string>
+    <string name="dejavu_workspace_firefox_device">Firefox Sync ஒவ்வொரு சாதனத்தின் திறந்த கீற்றுகளை மட்டுமே பகிர்கிறது. நீங்கள் இங்கே திறக்கும் அல்லது மூடும் கீற்றுகள் அந்தச் சாதனத்திலும் திறக்கப்படும் அல்லது மூடப்படும், ஆனால் உங்களால் கீற்றுகளைப் பின் செய்யவோ, கோப்புறைகளையோ முக்கியவையையோ சேர்க்கவோ, கொள்கலனைத் தேர்வுசெய்யவோ முடியாது. பெயரும் சின்னமும் அந்தச் சாதனத்திலிருந்து வருகின்றன, நீங்கள் தேர்ந்தெடுக்கும் நிறங்கள் இந்தக் கைப்பேசியிலேயே இருக்கும்.</string>
+    <string name="dejavu_workspace_firefox_own">Firefox Sync பணியிடங்களைப் பகிர்வதில்லை, எனவே இந்தப் பணியிடம் அதன் பொருத்தப்பட்ட கீற்றுகள் மற்றும் கோப்புறைகளுடன் இந்தக் கைப்பேசியிலேயே இருக்கும். Firefox இந்தப் பணியிடத்தின் திறந்த கீற்றுகளை இந்தக் கைப்பேசியின் கீற்றுகளாகக் காட்டும்.</string>
 </resources>

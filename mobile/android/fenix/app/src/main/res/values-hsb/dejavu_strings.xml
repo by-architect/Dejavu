@@ -341,7 +341,6 @@
     <string name="dejavu_settings_author">Wutworjene wot %1$s</string>
     <string name="dejavu_settings_coffee">Kup mi kofej</string>
     <string name="dejavu_settings_coffee_summary">Dejavu nima wabjenja. Jeli so ći lubi, kofej jemu pomha rosć.</string>
-    <string name="dejavu_workspace_device_note">Tutón dźěłowy rum pokazuje wočinjene rajtarki grata, kotryž je z twojim kontom Mozilla zwjazany. Jeho mjeno a symbol z toho grata pochadźatej, a barby, kotrež wuběraš, na tutym telefonje wostanu.</string>
     <string name="dejavu_settings_safe_browsing">Google Safe Browsing</string>
     <string name="dejavu_back">Wróćo</string>
     <string name="dejavu_sync_start_title">Zjednoćić abo znowa započeć?</string>
@@ -444,4 +443,39 @@
     <string name="dejavu_settings_screen">Wobrazowka</string>
     <string name="dejavu_settings_hide_system_bars">Lajsty statusa a nawigacije schować</string>
     <string name="dejavu_settings_hide_system_bars_summary">Mjeztym zo so strona pokazuje. Ćehńće wot hornjeje abo delnjeje kromy, zo byšće je na wokomik widźeli.</string>
+    <string name="dejavu_bookmarks_export">Do dataje eksportować</string>
+    <plurals name="dejavu_bookmarks_exported">
+        <item quantity="one">%1$d zapołožka je eksportowana</item>
+        <item quantity="two">%1$d zapołožce stej eksportowanej</item>
+        <item quantity="few">%1$d zapołožki su eksportowane</item>
+        <item quantity="other">%1$d zapołožkow je eksportowanych</item>
+    </plurals>
+    <string name="dejavu_bookmarks_export_failed">Zapołožki njedachu so eksportować. Spytaj hišće raz.</string>
+    <string name="dejavu_workspace_theme_custom">Swójska barba</string>
+    <string name="dejavu_workspace_theme_add_color">Barbu přidać</string>
+    <string name="dejavu_workspace_theme_remove_color">Tutu barbu wotstronić</string>
+    <string name="dejavu_workspace_theme_code">Barbowy kod</string>
+    <string name="dejavu_workspace_theme_color">Barba</string>
+    <string name="dejavu_workspace_wallpaper">Pozadkowy wobraz</string>
+    <string name="dejavu_workspace_wallpaper_hint">Wobraz na tutym telefonje wostanje a so na startowej stronje pokazuje. Z jeho barbow nastanje tema, kotraž so z Zen synchronizuje.</string>
+    <string name="dejavu_workspace_wallpaper_choose">Wobraz wubrać</string>
+    <string name="dejavu_workspace_wallpaper_change">Změnić</string>
+    <string name="dejavu_workspace_wallpaper_blur">Rozmazanje</string>
+    <string name="dejavu_workspace_wallpaper_failed">Tutón wobraz njeda so wočinić.</string>
+    <string name="dejavu_workspace_wallpaper_colors">Barby, kotrež so z Zen synchronizuja</string>
+    <string name="dejavu_workspace_wallpaper_hint_local">Wobraz na tutym telefonje wostanje a so na startowej stronje pokazuje.</string>
+    <string name="dejavu_workspace_wallpaper_colors_local">Barby wzate z wobraza</string>
+    <string name="dejavu_page_info">Podrobnosće strony</string>
+    <string name="dejavu_page_info_container">Kontejner</string>
+    <string name="dejavu_page_info_workspace">Dźěłowy rum</string>
+    <string name="dejavu_page_info_site_details">Wěstota a prawa</string>
+    <string name="dejavu_page_info_pinned">Připjaty</string>
+    <string name="dejavu_page_info_essential">W najwažnišich</string>
+    <string name="dejavu_page_info_reader_view">Čitanski napohlad</string>
+    <string name="dejavu_page_info_translated">Přełoženy</string>
+    <string name="dejavu_menu_reader_view">Čitanski napohlad</string>
+    <string name="dejavu_menu_close_reader_view">Čitanski napohlad začinić</string>
+    <string name="dejavu_workspace_firefox_limits">Wobmjezowanja Firefox Sync</string>
+    <string name="dejavu_workspace_firefox_device">Firefox Sync jenož wočinjene rajtarki kóždeho grata dźěli. Rajtarki, kotrež tu wočiniš abo začiniš, so tež na tym graće wočinjeja abo začinjeja, ale njemóžeš rajtarki připjeć, zarjadniki abo najwažniše přidać abo kontejner wubrać. Mjeno a symbol z grata pochadźatej, a barby, kotrež wuběraš, na tutym telefonje wostanu.</string>
+    <string name="dejavu_workspace_firefox_own">Firefox Sync dźěłowe rumy njedźěli, tohodla tutón dźěłowy rum ze swojimi připjatymi rajtarkami a zarjadnikami na tutym telefonje wostanje. Firefox jeho wočinjene rajtarki jako rajtarki tutoho telefona pokazuje.</string>
 </resources>

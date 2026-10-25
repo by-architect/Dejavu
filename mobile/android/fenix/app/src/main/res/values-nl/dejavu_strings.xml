@@ -327,7 +327,6 @@
     <string name="dejavu_settings_author">Gemaakt door %1$s</string>
     <string name="dejavu_settings_coffee">Trakteer me op een koffie</string>
     <string name="dejavu_settings_coffee_summary">Dejavu heeft geen advertenties. Als je ervan geniet, helpt een koffie hem te groeien.</string>
-    <string name="dejavu_workspace_device_note">Deze werkruimte toont de open tabbladen van een apparaat op je Mozilla-account. De naam en het pictogram komen van dat apparaat, en de kleuren die je kiest blijven op deze telefoon.</string>
     <string name="dejavu_settings_safe_browsing">Google Safe Browsing</string>
     <string name="dejavu_back">Terug</string>
     <string name="dejavu_sync_start_title">Samenvoegen of opnieuw beginnen?</string>
@@ -430,4 +429,37 @@
     <string name="dejavu_settings_screen">Scherm</string>
     <string name="dejavu_settings_hide_system_bars">Status- en navigatiebalk verbergen</string>
     <string name="dejavu_settings_hide_system_bars_summary">Terwijl een pagina wordt getoond. Veeg vanaf de boven- of onderrand om ze even te zien.</string>
+    <string name="dejavu_bookmarks_export">Naar bestand exporteren</string>
+    <plurals name="dejavu_bookmarks_exported">
+        <item quantity="one">%1$d bladwijzer geëxporteerd</item>
+        <item quantity="other">%1$d bladwijzers geëxporteerd</item>
+    </plurals>
+    <string name="dejavu_bookmarks_export_failed">Kan bladwijzers niet exporteren. Probeer het opnieuw.</string>
+    <string name="dejavu_workspace_theme_custom">Aangepaste kleur</string>
+    <string name="dejavu_workspace_theme_add_color">Kleur toevoegen</string>
+    <string name="dejavu_workspace_theme_remove_color">Deze kleur verwijderen</string>
+    <string name="dejavu_workspace_theme_code">Kleurcode</string>
+    <string name="dejavu_workspace_theme_color">Kleur</string>
+    <string name="dejavu_workspace_wallpaper">Achtergrond</string>
+    <string name="dejavu_workspace_wallpaper_hint">De afbeelding blijft op deze telefoon en wordt getoond op de startpagina. De kleuren ervan worden het thema dat met Zen wordt gesynchroniseerd.</string>
+    <string name="dejavu_workspace_wallpaper_choose">Afbeelding kiezen</string>
+    <string name="dejavu_workspace_wallpaper_change">Wijzigen</string>
+    <string name="dejavu_workspace_wallpaper_blur">Vervaging</string>
+    <string name="dejavu_workspace_wallpaper_failed">Deze afbeelding kon niet worden geopend.</string>
+    <string name="dejavu_workspace_wallpaper_colors">Kleuren die met Zen worden gesynchroniseerd</string>
+    <string name="dejavu_workspace_wallpaper_hint_local">De afbeelding blijft op deze telefoon en wordt getoond op de startpagina.</string>
+    <string name="dejavu_workspace_wallpaper_colors_local">Kleuren uit de afbeelding</string>
+    <string name="dejavu_page_info">Paginadetails</string>
+    <string name="dejavu_page_info_container">Container</string>
+    <string name="dejavu_page_info_workspace">Werkruimte</string>
+    <string name="dejavu_page_info_site_details">Beveiliging en toestemmingen</string>
+    <string name="dejavu_page_info_pinned">Vastgemaakt</string>
+    <string name="dejavu_page_info_essential">Favoriet</string>
+    <string name="dejavu_page_info_reader_view">Lezerweergave</string>
+    <string name="dejavu_page_info_translated">Vertaald</string>
+    <string name="dejavu_menu_reader_view">Lezerweergave</string>
+    <string name="dejavu_menu_close_reader_view">Lezerweergave sluiten</string>
+    <string name="dejavu_workspace_firefox_limits">Beperkt door Firefox Sync</string>
+    <string name="dejavu_workspace_firefox_device">Firefox Sync deelt alleen de open tabbladen van elk apparaat. Tabbladen die je hier opent of sluit, worden ook op dat apparaat geopend of gesloten, maar je kunt geen tabbladen vastmaken, geen mappen of favorieten toevoegen en geen container kiezen. De naam en het pictogram komen van het apparaat, en de kleuren die je kiest blijven op deze telefoon.</string>
+    <string name="dejavu_workspace_firefox_own">Firefox Sync deelt geen werkruimtes, dus deze werkruimte, met de vastgemaakte tabbladen en mappen erin, blijft op deze telefoon. Firefox toont de open tabbladen ervan als tabbladen van deze telefoon.</string>
 </resources>

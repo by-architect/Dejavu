@@ -334,7 +334,6 @@
     <string name="dejavu_settings_author">Creat de %1$s</string>
     <string name="dejavu_settings_coffee">Cumpără-mi o cafea</string>
     <string name="dejavu_settings_coffee_summary">Dejavu nu are reclame. Dacă îți place, o cafea îl ajută să crească.</string>
-    <string name="dejavu_workspace_device_note">Acest spațiu de lucru afișează filele deschise ale unui dispozitiv din contul tău Mozilla. Numele și pictograma lui vin de pe acel dispozitiv, iar culorile pe care le alegi rămân pe acest telefon.</string>
     <string name="dejavu_settings_safe_browsing">Navigare sigură Google</string>
     <string name="dejavu_back">Înapoi</string>
     <string name="dejavu_sync_start_title">Combini sau începi de la zero?</string>
@@ -437,4 +436,38 @@
     <string name="dejavu_settings_screen">Ecran</string>
     <string name="dejavu_settings_hide_system_bars">Ascunde barele de stare și de navigare</string>
     <string name="dejavu_settings_hide_system_bars_summary">Cât timp este afișată o pagină. Glisează de la marginea de sus sau de jos pentru a le vedea pentru o clipă.</string>
+    <string name="dejavu_bookmarks_export">Exportă în fișier</string>
+    <plurals name="dejavu_bookmarks_exported">
+        <item quantity="one">%1$d marcaj exportat</item>
+        <item quantity="few">%1$d marcaje exportate</item>
+        <item quantity="other">%1$d de marcaje exportate</item>
+    </plurals>
+    <string name="dejavu_bookmarks_export_failed">Nu s-au putut exporta marcajele. Încearcă din nou.</string>
+    <string name="dejavu_workspace_theme_custom">Culoare personalizată</string>
+    <string name="dejavu_workspace_theme_add_color">Adaugă o culoare</string>
+    <string name="dejavu_workspace_theme_remove_color">Elimină această culoare</string>
+    <string name="dejavu_workspace_theme_code">Cod de culoare</string>
+    <string name="dejavu_workspace_theme_color">Culoare</string>
+    <string name="dejavu_workspace_wallpaper">Imagine de fundal</string>
+    <string name="dejavu_workspace_wallpaper_hint">Imaginea rămâne pe acest telefon și apare pe pagina de start. Culorile ei devin tema care se sincronizează cu Zen.</string>
+    <string name="dejavu_workspace_wallpaper_choose">Alege o imagine</string>
+    <string name="dejavu_workspace_wallpaper_change">Schimbă</string>
+    <string name="dejavu_workspace_wallpaper_blur">Estompare</string>
+    <string name="dejavu_workspace_wallpaper_failed">Această imagine nu a putut fi deschisă.</string>
+    <string name="dejavu_workspace_wallpaper_colors">Culori care se sincronizează cu Zen</string>
+    <string name="dejavu_workspace_wallpaper_hint_local">Imaginea rămâne pe acest telefon și apare pe pagina de start.</string>
+    <string name="dejavu_workspace_wallpaper_colors_local">Culori preluate din imagine</string>
+    <string name="dejavu_page_info">Detaliile paginii</string>
+    <string name="dejavu_page_info_container">Container</string>
+    <string name="dejavu_page_info_workspace">Spațiu de lucru</string>
+    <string name="dejavu_page_info_site_details">Securitate și permisiuni</string>
+    <string name="dejavu_page_info_pinned">Fixată</string>
+    <string name="dejavu_page_info_essential">Favorit</string>
+    <string name="dejavu_page_info_reader_view">Mod de lectură</string>
+    <string name="dejavu_page_info_translated">Tradusă</string>
+    <string name="dejavu_menu_reader_view">Mod de lectură</string>
+    <string name="dejavu_menu_close_reader_view">Închide modul de lectură</string>
+    <string name="dejavu_workspace_firefox_limits">Limitat de Firefox Sync</string>
+    <string name="dejavu_workspace_firefox_device">Firefox Sync partajează doar filele deschise ale fiecărui dispozitiv. Filele pe care le deschizi sau le închizi aici se deschid sau se închid și pe acel dispozitiv, dar nu poți fixa file, adăuga foldere sau favorite și nici alege un container. Numele și pictograma vin de pe dispozitiv, iar culorile pe care le alegi rămân pe acest telefon.</string>
+    <string name="dejavu_workspace_firefox_own">Firefox Sync nu partajează spațiile de lucru, așa că acest spațiu de lucru, cu filele fixate și folderele sale, rămâne pe acest telefon. Firefox îi afișează filele deschise ca file ale acestui telefon.</string>
 </resources>

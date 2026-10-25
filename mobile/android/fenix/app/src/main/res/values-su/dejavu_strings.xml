@@ -320,7 +320,6 @@
     <string name="dejavu_settings_author">Dijieun ku %1$s</string>
     <string name="dejavu_settings_coffee">Traktir kuring kopi</string>
     <string name="dejavu_settings_coffee_summary">Dejavu teu aya iklanna. Upami anjeun resep, sacangkir kopi ngabantu Dejavu tumuwuh.</string>
-    <string name="dejavu_workspace_device_note">Rohangan ieu némbongkeun tab nu kabuka tina hiji parabot dina akun Mozilla anjeun. Ngaran jeung ikonna asalna ti parabot éta, sarta warna nu dipilih tetep aya dina telepon ieu.</string>
     <string name="dejavu_settings_safe_browsing">Google Safe Browsing</string>
     <string name="dejavu_back">Mundur</string>
     <string name="dejavu_sync_start_title">Gabungkeun atawa mimitian ti awal?</string>
@@ -423,4 +422,36 @@
     <string name="dejavu_settings_screen">Layar</string>
     <string name="dejavu_settings_hide_system_bars">Sumputkeun bar status jeung navigasi</string>
     <string name="dejavu_settings_hide_system_bars_summary">Nalika kaca dipintonkeun. Usap ti sisi luhur atawa handap pikeun ningali éta sakedap.</string>
+    <string name="dejavu_bookmarks_export">Ékspor ka berkas</string>
+    <plurals name="dejavu_bookmarks_exported">
+        <item quantity="other">%1$d markah diékspor</item>
+    </plurals>
+    <string name="dejavu_bookmarks_export_failed">Teu bisa ngékspor markah. Pecakan deui.</string>
+    <string name="dejavu_workspace_theme_custom">Warna husus</string>
+    <string name="dejavu_workspace_theme_add_color">Tambah warna</string>
+    <string name="dejavu_workspace_theme_remove_color">Piceun warna ieu</string>
+    <string name="dejavu_workspace_theme_code">Kode warna</string>
+    <string name="dejavu_workspace_theme_color">Warna</string>
+    <string name="dejavu_workspace_wallpaper">Latar</string>
+    <string name="dejavu_workspace_wallpaper_hint">Gambarna tetep aya dina telepon ieu sarta témbong dina home page. Warnana jadi téma nu disingkronkeun jeung Zen.</string>
+    <string name="dejavu_workspace_wallpaper_choose">Pilih gambar</string>
+    <string name="dejavu_workspace_wallpaper_change">Ganti</string>
+    <string name="dejavu_workspace_wallpaper_blur">Burem</string>
+    <string name="dejavu_workspace_wallpaper_failed">Gambar ieu teu bisa dibuka.</string>
+    <string name="dejavu_workspace_wallpaper_colors">Warna nu disingkronkeun jeung Zen</string>
+    <string name="dejavu_workspace_wallpaper_hint_local">Gambarna tetep aya dina telepon ieu sarta témbong dina home page.</string>
+    <string name="dejavu_workspace_wallpaper_colors_local">Warna nu dicokot tina gambar</string>
+    <string name="dejavu_page_info">Rincian kaca</string>
+    <string name="dejavu_page_info_container">Wadah</string>
+    <string name="dejavu_page_info_workspace">Rohangan</string>
+    <string name="dejavu_page_info_site_details">Kaamanan jeung idin</string>
+    <string name="dejavu_page_info_pinned">Disemat</string>
+    <string name="dejavu_page_info_essential">Penting</string>
+    <string name="dejavu_page_info_reader_view">Pidangan baca</string>
+    <string name="dejavu_page_info_translated">Ditarjamahkeun</string>
+    <string name="dejavu_menu_reader_view">Pidangan baca</string>
+    <string name="dejavu_menu_close_reader_view">Tutup panémbong pamaca</string>
+    <string name="dejavu_workspace_firefox_limits">Diwatesan ku Firefox Sync</string>
+    <string name="dejavu_workspace_firefox_device">Firefox Sync ngan ukur ngabagikeun tab nu kabuka tina unggal parabot. Tab nu dibuka atawa ditutup di dieu ogé muka atawa nutup dina parabot éta, tapi anjeun teu bisa nyematkeun tab, nambahkeun map atawa Penting, atawa milih wadah. Ngaran jeung ikonna asalna ti parabot, sarta warna nu dipilih tetep aya dina telepon ieu.</string>
+    <string name="dejavu_workspace_firefox_own">Firefox Sync henteu ngabagikeun rohangan, jadi rohangan ieu, kalawan tab nu disemat jeung map-na, tetep aya dina telepon ieu. Firefox némbongkeun tab nu kabuka di rohangan ieu salaku tab tina telepon ieu.</string>
 </resources>

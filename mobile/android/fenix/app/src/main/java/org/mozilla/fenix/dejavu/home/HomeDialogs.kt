@@ -39,6 +39,7 @@ import androidx.compose.material3.Slider
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
+import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
@@ -71,6 +72,8 @@ import org.mozilla.fenix.dejavu.containers.TemporaryContainerIcon
 import org.mozilla.fenix.dejavu.containers.color
 import org.mozilla.fenix.dejavu.containers.splitTemporary
 import org.mozilla.fenix.dejavu.settings.ContainerEditorDialog
+import org.mozilla.fenix.dejavu.sync.DejavuSync
+import org.mozilla.fenix.dejavu.sync.DejavuSyncSource
 import org.mozilla.fenix.dejavu.sync.workspaceIconText
 import org.mozilla.fenix.dejavu.ui.DejavuButtonStyle
 import org.mozilla.fenix.dejavu.ui.DejavuDialog
@@ -119,8 +122,10 @@ internal fun HomeDialogs(
     when (dialog) {
         is HomeDialog.EditWorkspace -> {
             val workspace = state.workspaces.firstOrNull { it.id == dialog.workspaceId }
+            val sync by DejavuSync.status.collectAsState()
             WorkspaceDialog(
                 workspace = workspace,
+                syncsWithFirefox = sync.signedIn && sync.source == DejavuSyncSource.FIREFOX,
                 wallpaper = workspace?.let { wallpapers[it.id] },
                 containers = containers.values.filterNot { it.showsAsTemporary },
                 onCreateContainer = interactor::onCreateContainer,
@@ -321,12 +326,14 @@ internal fun ItemDialogs(
  * Creates or edits a workspace: its icon, name, look and default container. The look is either a theme of colors or
  * a wallpaper, which gives the theme the colors taken from its picture, so that Zen, which syncs themes but not
  * pictures, shows the same colors. [onImportWallpaper] copies a picture picked for the wallpaper, and
- * [onDiscardWallpaper] deletes a copy that ends up unused.
+ * [onDiscardWallpaper] deletes a copy that ends up unused. While workspaces [syncsWithFirefox], the dialog says what
+ * Firefox Sync leaves out.
  */
 @Suppress("LongMethod", "LongParameterList")
 @Composable
 private fun WorkspaceDialog(
     workspace: Workspace?,
+    syncsWithFirefox: Boolean,
     wallpaper: WorkspaceWallpaper?,
     containers: List<ContainerRecord>,
     onCreateContainer: (name: String, color: ContainerColor, icon: ContainerState.Icon) -> String,
@@ -427,12 +434,8 @@ private fun WorkspaceDialog(
                 Spacer(Modifier.width(12.dp))
                 Text(text = name, style = MaterialTheme.typography.titleMedium, modifier = Modifier.weight(1f))
             }
-            Spacer(Modifier.size(8.dp))
-            Text(
-                text = stringResource(R.string.dejavu_workspace_device_note),
-                style = MaterialTheme.typography.bodySmall,
-                color = MaterialTheme.colorScheme.onSurfaceVariant,
-            )
+            Spacer(Modifier.size(12.dp))
+            FirefoxSyncNote(R.string.dejavu_workspace_firefox_device)
         } else {
             Row(verticalAlignment = Alignment.CenterVertically) {
                 WorkspaceIconAvatar(icon = icon, onIconTyped = { icon = it })
@@ -451,6 +454,10 @@ private fun WorkspaceDialog(
                     IconChoice(text = suggestion, selected = icon == suggestion, onClick = { icon = suggestion })
                 }
             }
+            if (syncsWithFirefox) {
+                Spacer(Modifier.size(12.dp))
+                FirefoxSyncNote(R.string.dejavu_workspace_firefox_own)
+            }
         }
 
         Spacer(Modifier.size(16.dp))
@@ -467,6 +474,7 @@ private fun WorkspaceDialog(
         if (usesWallpaper) {
             WallpaperSection(
                 wallpaper = shownWallpaper,
+                syncsWithZen = !isDevice && !syncsWithFirefox,
                 onImport = onImportWallpaper,
                 onPicked = { picked ->
                     dropPicked(keep = picked.file)
@@ -510,7 +518,45 @@ private fun WorkspaceDialog(
 }
 
 private const val MIN_THEME_OPACITY = 0.1f
+private const val NOTE_ALPHA = 0.06f
 private val PICKER_MAX_HEIGHT = 560.dp
+
+/**
+ * What Firefox Sync leaves out of a workspace, [text], since it only shares the open tabs of each device: for the
+ * workspace of a device, or one of the user's own while workspaces sync with Firefox.
+ */
+@Composable
+private fun FirefoxSyncNote(@StringRes text: Int) {
+    Row(
+        modifier = Modifier
+            .fillMaxWidth()
+            .clip(RoundedCornerShape(12.dp))
+            .background(MaterialTheme.colorScheme.onSurface.copy(alpha = NOTE_ALPHA))
+            .padding(12.dp)
+            .semantics(mergeDescendants = true) {},
+    ) {
+        Icon(
+            painter = painterResource(iconsR.drawable.mozac_ic_sync_24),
+            contentDescription = null,
+            tint = MaterialTheme.colorScheme.onSurfaceVariant,
+            modifier = Modifier.size(20.dp),
+        )
+        Spacer(Modifier.width(12.dp))
+        Column {
+            Text(
+                text = stringResource(R.string.dejavu_workspace_firefox_limits),
+                style = MaterialTheme.typography.labelLarge,
+                color = MaterialTheme.colorScheme.onSurface,
+            )
+            Spacer(Modifier.size(2.dp))
+            Text(
+                text = stringResource(text),
+                style = MaterialTheme.typography.bodySmall,
+                color = MaterialTheme.colorScheme.onSurfaceVariant,
+            )
+        }
+    }
+}
 
 /** One of the two looks a workspace can have, colors or a wallpaper, filled while it is the one picked. */
 @Composable

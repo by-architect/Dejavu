@@ -54,6 +54,13 @@
         <item quantity="one">Saved to bookmarks</item>
         <item quantity="other">%1$d tabs saved to bookmarks</item>
     </plurals>
+    <!-- Bookmarks screen menu, next to Firefox's "Import from file": saves every bookmark to an HTML file that Chrome, Firefox, Edge, Safari and other browsers can import. -->
+    <string name="dejavu_bookmarks_export">Export to file</string>
+    <plurals name="dejavu_bookmarks_exported">
+        <item quantity="one">%1$d bookmark exported</item>
+        <item quantity="other">%1$d bookmarks exported</item>
+    </plurals>
+    <string name="dejavu_bookmarks_export_failed">Couldn’t export bookmarks. Try again.</string>
     <plurals name="dejavu_links_copied">
         <item quantity="one">Link copied</item>
         <item quantity="other">%1$d links copied</item>
@@ -92,6 +99,10 @@
     <string name="dejavu_workspace_wallpaper_blur">Blur</string>
     <string name="dejavu_workspace_wallpaper_failed">This picture could not be opened.</string>
     <string name="dejavu_workspace_wallpaper_colors">Colors that sync with Zen</string>
+    <!-- Edit workspace dialog: what the wallpaper section says when the workspace's theme does not sync with Zen. -->
+    <string name="dejavu_workspace_wallpaper_hint_local">The picture stays on this phone and shows on the home screen.</string>
+    <!-- Edit workspace dialog: read by screen readers for the colors taken from the wallpaper, when they do not sync with Zen. -->
+    <string name="dejavu_workspace_wallpaper_colors_local">Colors taken from the picture</string>
     <string name="dejavu_workspace_move_left">Move left</string>
     <string name="dejavu_workspace_move_right">Move right</string>
 
@@ -301,6 +312,9 @@
     <string name="dejavu_menu_bookmark_page">Bookmark</string>
     <string name="dejavu_menu_edit_bookmark">Edit bookmark</string>
     <string name="dejavu_menu_desktop_site">Desktop site</string>
+    <!-- Shows the page as Firefox's Reader view, plain text without ads and clutter. Same words as dejavu_page_info_reader_view. -->
+    <string name="dejavu_menu_reader_view">Reader view</string>
+    <string name="dejavu_menu_close_reader_view">Close reader view</string>
     <string name="dejavu_menu_extensions">Extensions</string>
     <string name="dejavu_menu_manage_extensions">Manage extensions</string>
     <string name="dejavu_menu_passwords">Passwords</string>
@@ -476,8 +490,12 @@
     <string name="pref_key_dejavu_whats_new" translatable="false">pref_key_dejavu_whats_new</string>
     <string name="pref_key_dejavu_author" translatable="false">pref_key_dejavu_author</string>
     <string name="pref_key_dejavu_coffee" translatable="false">pref_key_dejavu_coffee</string>
-    <!-- Edit workspace dialog, for the workspace that shows the open tabs of a computer or phone with Firefox. -->
-    <string name="dejavu_workspace_device_note">This workspace shows the open tabs of a device on your Mozilla account. Its name and icon come from that device, and the colors you pick stay on this phone.</string>
+    <!-- Edit workspace dialog: title of the note that says what Firefox Sync leaves out of workspaces, shown while workspaces sync with Firefox (not Zen). -->
+    <string name="dejavu_workspace_firefox_limits">Limited by Firefox Sync</string>
+    <!-- Edit workspace dialog: the note for the workspace that shows the open tabs of a computer or phone with Firefox. -->
+    <string name="dejavu_workspace_firefox_device">Firefox Sync only shares the open tabs of each device. Tabs you open or close here also open or close on that device, but you can’t pin tabs, add folders or essentials, or choose a container. The name and icon come from the device, and the colors you pick stay on this phone.</string>
+    <!-- Edit workspace dialog: the note for the user's own workspaces while workspaces sync with Firefox. Firefox's list of synced tabs shows them under this phone. -->
+    <string name="dejavu_workspace_firefox_own">Firefox Sync doesn’t share workspaces, so this workspace, with its pinned tabs and folders, stays on this phone. Firefox shows its open tabs as this phone’s tabs.</string>
     <string name="dejavu_container_personal">Personal</string>
     <string name="dejavu_container_work">Work</string>
     <string name="dejavu_container_banking">Banking</string>

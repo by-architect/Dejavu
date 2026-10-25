@@ -327,7 +327,6 @@
     <string name="dejavu_settings_author">Creat per %1$s</string>
     <string name="dejavu_settings_coffee">Pagatz-me un cafè</string>
     <string name="dejavu_settings_coffee_summary">Dejavu a pas cap de publicitat. Se vos agrada, un cafè l’ajuda a créisser.</string>
-    <string name="dejavu_workspace_device_note">Aqueste espaci de trabalh aficha los onglets dobèrts d’un aparelh de vòstre compte Mozilla. Son nom e son icòna venon d’aquel aparelh, e las colors que causissètz demòran sus aqueste telefòn.</string>
     <string name="dejavu_settings_safe_browsing">Navegacion segura de Google</string>
     <string name="dejavu_back">Tornar</string>
     <string name="dejavu_sync_start_title">Fusionar o començar de zèro ?</string>
@@ -430,4 +429,37 @@
     <string name="dejavu_settings_screen">Ecran</string>
     <string name="dejavu_settings_hide_system_bars">Amagar las barras d\'estat e de navegacion</string>
     <string name="dejavu_settings_hide_system_bars_summary">Pendent l\'afichatge d\'una pagina. Fasètz lisar dempuèi lo bòrd superior o inferior per las veire un moment.</string>
+    <string name="dejavu_bookmarks_export">Exportar dins un fichièr</string>
+    <plurals name="dejavu_bookmarks_exported">
+        <item quantity="one">%1$d marcapagina exportat</item>
+        <item quantity="other">%1$d marcapaginas exportats</item>
+    </plurals>
+    <string name="dejavu_bookmarks_export_failed">Impossible d’exportar los marcapaginas. Tornatz ensajar.</string>
+    <string name="dejavu_workspace_theme_custom">Color personalizada</string>
+    <string name="dejavu_workspace_theme_add_color">Apondre una color</string>
+    <string name="dejavu_workspace_theme_remove_color">Levar aquesta color</string>
+    <string name="dejavu_workspace_theme_code">Còdi de color</string>
+    <string name="dejavu_workspace_theme_color">Color</string>
+    <string name="dejavu_workspace_wallpaper">Fons d’ecran</string>
+    <string name="dejavu_workspace_wallpaper_hint">L’imatge demòra sus aqueste telefòn e s’aficha dins la pagina d’acuèlh. Sas colors forman lo tèma que se sincroniza amb Zen.</string>
+    <string name="dejavu_workspace_wallpaper_choose">Causir un imatge</string>
+    <string name="dejavu_workspace_wallpaper_change">Cambiar</string>
+    <string name="dejavu_workspace_wallpaper_blur">Floutatge</string>
+    <string name="dejavu_workspace_wallpaper_failed">Impossible de dobrir aqueste imatge.</string>
+    <string name="dejavu_workspace_wallpaper_colors">Colors sincronizadas amb Zen</string>
+    <string name="dejavu_workspace_wallpaper_hint_local">L’imatge demòra sus aqueste telefòn e s’aficha dins la pagina d’acuèlh.</string>
+    <string name="dejavu_workspace_wallpaper_colors_local">Colors presas de l’imatge</string>
+    <string name="dejavu_page_info">Detalhs de la pagina</string>
+    <string name="dejavu_page_info_container">Contenidor</string>
+    <string name="dejavu_page_info_workspace">Espaci de trabalh</string>
+    <string name="dejavu_page_info_site_details">Seguretat e autorizacions</string>
+    <string name="dejavu_page_info_pinned">Fixat</string>
+    <string name="dejavu_page_info_essential">Essencial</string>
+    <string name="dejavu_page_info_reader_view">Mòde lectura</string>
+    <string name="dejavu_page_info_translated">Traducha</string>
+    <string name="dejavu_menu_reader_view">Mòde lectura</string>
+    <string name="dejavu_menu_close_reader_view">Tampar la vista de lectura</string>
+    <string name="dejavu_workspace_firefox_limits">Limits de Firefox Sync</string>
+    <string name="dejavu_workspace_firefox_device">Firefox Sync parteja sonque los onglets dobèrts de cada aparelh. Los onglets que dobrissètz o tampatz aicí se dobrisson o se tampan tanben sus aquel aparelh, mas podètz pas fixar d’onglets, apondre de dossièrs o d’essencials, ni causir un contenidor. Lo nom e l’icòna venon de l’aparelh, e las colors que causissètz demòran sus aqueste telefòn.</string>
+    <string name="dejavu_workspace_firefox_own">Firefox Sync parteja pas los espacis de trabalh, doncas aqueste espaci de trabalh, amb sos onglets fixats e sos dossièrs, demòra sus aqueste telefòn. Firefox aficha sos onglets dobèrts coma onglets d’aqueste telefòn.</string>
 </resources>

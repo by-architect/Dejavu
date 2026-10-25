@@ -341,7 +341,6 @@
     <string name="dejavu_settings_author">Air a chruthachadh le %1$s</string>
     <string name="dejavu_settings_coffee">Ceannaich cofaidh dhomh</string>
     <string name="dejavu_settings_coffee_summary">Chan eil sanasachd ann an Dejavu. Ma chòrdas e riut, cuidichidh cofaidh leis fàs.</string>
-    <string name="dejavu_workspace_device_note">Seallaidh an t-àite-obrach seo na tabaichean fosgailte aig uidheam air a\' chunntas Mozilla agad. Thig an t-ainm \'s an ìomhaigheag aige on uidheam sin, agus fanaidh na dathan a thaghas tu air an fhòn seo.</string>
     <string name="dejavu_settings_safe_browsing">Brabhsadh Sàbhailte Google</string>
     <string name="dejavu_back">Air ais</string>
     <string name="dejavu_sync_start_title">Co-aonaich no tòisich às ùr?</string>
@@ -444,4 +443,39 @@
     <string name="dejavu_settings_screen">Sgrìn</string>
     <string name="dejavu_settings_hide_system_bars">Falaich bàraichean na staid is na seòladaireachd</string>
     <string name="dejavu_settings_hide_system_bars_summary">Fhad \'s a tha duilleag ga shealltainn. Grad-shlaighd a-steach on oir gu h-àrd no gu h-ìosal airson am faicinn greiseag.</string>
+    <string name="dejavu_bookmarks_export">Às-phortaich gu faidhle</string>
+    <plurals name="dejavu_bookmarks_exported">
+        <item quantity="one">Chaidh %1$d comharra-lìn às-phortadh</item>
+        <item quantity="two">Chaidh %1$d chomharra-lìn às-phortadh</item>
+        <item quantity="few">Chaidh %1$d comharran-lìn às-phortadh</item>
+        <item quantity="other">Chaidh %1$d comharran-lìn às-phortadh</item>
+    </plurals>
+    <string name="dejavu_bookmarks_export_failed">Cha b\' urrainn dhuinn na comharran-lìn às-phortadh. Feuch ris a-rithist.</string>
+    <string name="dejavu_workspace_theme_custom">Dath gnàthaichte</string>
+    <string name="dejavu_workspace_theme_add_color">Cuir dath ris</string>
+    <string name="dejavu_workspace_theme_remove_color">Thoir air falbh an dath seo</string>
+    <string name="dejavu_workspace_theme_code">Còd an datha</string>
+    <string name="dejavu_workspace_theme_color">Dath</string>
+    <string name="dejavu_workspace_wallpaper">Pàipear-balla</string>
+    <string name="dejavu_workspace_wallpaper_hint">Fanaidh an dealbh air an fhòn seo agus nochdaidh e air an duilleag dachaigh. Bidh na dathan aige nan sgeama a thèid a shioncronachadh le Zen.</string>
+    <string name="dejavu_workspace_wallpaper_choose">Tagh dealbh</string>
+    <string name="dejavu_workspace_wallpaper_change">Atharraich</string>
+    <string name="dejavu_workspace_wallpaper_blur">Sgleò</string>
+    <string name="dejavu_workspace_wallpaper_failed">Cha b\' urrainn dhuinn an dealbh seo fhosgladh.</string>
+    <string name="dejavu_workspace_wallpaper_colors">Dathan a thèid a shioncronachadh le Zen</string>
+    <string name="dejavu_workspace_wallpaper_hint_local">Fanaidh an dealbh air an fhòn seo agus nochdaidh e air an duilleag dachaigh.</string>
+    <string name="dejavu_workspace_wallpaper_colors_local">Dathan a chaidh a thoirt on dealbh</string>
+    <string name="dejavu_page_info">Mion-fhiosrachadh na duilleige</string>
+    <string name="dejavu_page_info_container">Soitheach</string>
+    <string name="dejavu_page_info_workspace">Àite-obrach</string>
+    <string name="dejavu_page_info_site_details">Tèarainteachd is ceadan</string>
+    <string name="dejavu_page_info_pinned">Prìnichte</string>
+    <string name="dejavu_page_info_essential">Feumalachd</string>
+    <string name="dejavu_page_info_reader_view">An sealladh leughaidh</string>
+    <string name="dejavu_page_info_translated">Air eadar-theangachadh</string>
+    <string name="dejavu_menu_reader_view">An sealladh leughaidh</string>
+    <string name="dejavu_menu_close_reader_view">Dùin sealladh an leughadair</string>
+    <string name="dejavu_workspace_firefox_limits">Cuingichte le Firefox Sync</string>
+    <string name="dejavu_workspace_firefox_device">Cha co-roinn Firefox Sync ach na tabaichean fosgailte aig gach uidheam. Fosglaidh no dùinidh tabaichean a dh\'fhosglas no a dhùineas tu an-seo air an uidheam sin cuideachd, ach chan urrainn dhut tabaichean a phrìneachadh, pasganan no feumalachdan a chur ris no soitheach a thaghadh. Thig an t-ainm is an ìomhaigheag on uidheam, agus fanaidh na dathan a thaghas tu air an fhòn seo.</string>
+    <string name="dejavu_workspace_firefox_own">Cha co-roinn Firefox Sync àiteachan-obrach, mar sin fanaidh an t-àite-obrach seo, còmhla ris na tabaichean prìnichte is na pasganan aige, air an fhòn seo. Seallaidh Firefox na tabaichean fosgailte aige mar thabaichean an fhòn seo.</string>
 </resources>

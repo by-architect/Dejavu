@@ -327,7 +327,6 @@
     <string name="dejavu_settings_author">Loonud %1$s</string>
     <string name="dejavu_settings_coffee">Osta mulle kohvi</string>
     <string name="dejavu_settings_coffee_summary">Dejavus pole reklaame. Kui see sulle meeldib, aitab kohv sel kasvada.</string>
-    <string name="dejavu_workspace_device_note">See tööruum kuvab su Mozilla kontoga seotud seadme avatud kaardid. Selle nimi ja ikoon tulevad sellelt seadmelt ning su valitud värvid jäävad sellesse telefoni.</string>
     <string name="dejavu_settings_safe_browsing">Google\'i turvaline sirvimine</string>
     <string name="dejavu_back">Tagasi</string>
     <string name="dejavu_sync_start_title">Kas ühendada või alustada nullist?</string>
@@ -430,4 +429,37 @@
     <string name="dejavu_settings_screen">Ekraan</string>
     <string name="dejavu_settings_hide_system_bars">Peida olekuriba ja navigeerimisriba</string>
     <string name="dejavu_settings_hide_system_bars_summary">Kui leht on kuvatud. Nende hetkeks nägemiseks pühkige ülemisest või alumisest servast.</string>
+    <string name="dejavu_bookmarks_export">Ekspordi faili</string>
+    <plurals name="dejavu_bookmarks_exported">
+        <item quantity="one">%1$d järjehoidja eksporditud</item>
+        <item quantity="other">%1$d järjehoidjat eksporditud</item>
+    </plurals>
+    <string name="dejavu_bookmarks_export_failed">Järjehoidjate eksportimine ebaõnnestus. Proovi uuesti.</string>
+    <string name="dejavu_workspace_theme_custom">Kohandatud värv</string>
+    <string name="dejavu_workspace_theme_add_color">Lisa värv</string>
+    <string name="dejavu_workspace_theme_remove_color">Eemalda see värv</string>
+    <string name="dejavu_workspace_theme_code">Värvikood</string>
+    <string name="dejavu_workspace_theme_color">Värv</string>
+    <string name="dejavu_workspace_wallpaper">Taustapilt</string>
+    <string name="dejavu_workspace_wallpaper_hint">Pilt jääb sellesse telefoni ja seda kuvatakse avalehel. Selle värvidest saab teema, mis sünkroonitakse Zeniga.</string>
+    <string name="dejavu_workspace_wallpaper_choose">Vali pilt</string>
+    <string name="dejavu_workspace_wallpaper_change">Muuda</string>
+    <string name="dejavu_workspace_wallpaper_blur">Hägusus</string>
+    <string name="dejavu_workspace_wallpaper_failed">Seda pilti ei õnnestunud avada.</string>
+    <string name="dejavu_workspace_wallpaper_colors">Värvid, mis sünkroonitakse Zeniga</string>
+    <string name="dejavu_workspace_wallpaper_hint_local">Pilt jääb sellesse telefoni ja seda kuvatakse avalehel.</string>
+    <string name="dejavu_workspace_wallpaper_colors_local">Pildilt võetud värvid</string>
+    <string name="dejavu_page_info">Lehe üksikasjad</string>
+    <string name="dejavu_page_info_container">Konteiner</string>
+    <string name="dejavu_page_info_workspace">Tööruum</string>
+    <string name="dejavu_page_info_site_details">Turvalisus ja õigused</string>
+    <string name="dejavu_page_info_pinned">Kinnitatud</string>
+    <string name="dejavu_page_info_essential">Olulistes</string>
+    <string name="dejavu_page_info_reader_view">Lugemisvaade</string>
+    <string name="dejavu_page_info_translated">Tõlgitud</string>
+    <string name="dejavu_menu_reader_view">Lugemisvaade</string>
+    <string name="dejavu_menu_close_reader_view">Sulge lugemisvaade</string>
+    <string name="dejavu_workspace_firefox_limits">Firefox Synci piirangud</string>
+    <string name="dejavu_workspace_firefox_device">Firefox Sync jagab ainult iga seadme avatud kaarte. Kaardid, mille siin avad või suled, avanevad või sulguvad ka selles seadmes, kuid sa ei saa kaarte kinnitada, kaustu ega olulisi lisada ega konteinerit valida. Nimi ja ikoon tulevad seadmelt ning su valitud värvid jäävad sellesse telefoni.</string>
+    <string name="dejavu_workspace_firefox_own">Firefox Sync ei jaga tööruume, seega jääb see tööruum koos oma kinnitatud kaartide ja kaustadega sellesse telefoni. Firefox näitab selle avatud kaarte selle telefoni kaartidena.</string>
 </resources>

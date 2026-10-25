@@ -327,7 +327,6 @@
     <string name="dejavu_settings_author">دروستکراوە لەلایەن %1$s</string>
     <string name="dejavu_settings_coffee">قاوەیەکم بۆ بکڕە</string>
     <string name="dejavu_settings_coffee_summary">Dejavu ڕیکلامی تێدا نییە. ئەگەر بەدڵت بوو، قاوەیەک یارمەتی دەدات گەشە بکات.</string>
-    <string name="dejavu_workspace_device_note">ئەم فەزایە بازدەرە کراوەکانی ئامێرێک لە هەژماری Mozilla ی تۆ پیشان دەدات. ناو و ئایکۆنەکەی لەو ئامێرەوە دێن، و ئەو ڕەنگانەی هەڵیاندەبژێریت لەسەر ئەم مۆبایلە دەمێننەوە.</string>
     <string name="dejavu_settings_safe_browsing">گەڕانی پارێزراوی Google</string>
     <string name="dejavu_back">گەڕانەوە</string>
     <string name="dejavu_sync_start_title">یەکخستن یان دەستپێکردنی نوێ؟</string>
@@ -430,4 +429,37 @@
     <string name="dejavu_settings_screen">شاشە</string>
     <string name="dejavu_settings_hide_system_bars">شاردنەوەی شریتی دۆخ و ڕێنیشاندەر</string>
     <string name="dejavu_settings_hide_system_bars_summary">کاتێک پەڕەیەک پیشان دەدرێت. لە لێواری سەرەوە یان خوارەوە ڕابکێشە بۆ ئەوەی بۆ ساتێک بیانبینیت.</string>
+    <string name="dejavu_bookmarks_export">هەناردەکردن بۆ پەڕگە</string>
+    <plurals name="dejavu_bookmarks_exported">
+        <item quantity="one">%1$d نیشانە هەناردە کرا</item>
+        <item quantity="other">%1$d نیشانە هەناردە کرا</item>
+    </plurals>
+    <string name="dejavu_bookmarks_export_failed">نەتوانرا نیشانەکان هەناردە بکرێن. دووبارە هەوڵ بدەرەوە.</string>
+    <string name="dejavu_workspace_theme_custom">ڕەنگی تایبەت</string>
+    <string name="dejavu_workspace_theme_add_color">زیادکردنی ڕەنگ</string>
+    <string name="dejavu_workspace_theme_remove_color">لابردنی ئەم ڕەنگە</string>
+    <string name="dejavu_workspace_theme_code">کۆدی ڕەنگ</string>
+    <string name="dejavu_workspace_theme_color">ڕەنگ</string>
+    <string name="dejavu_workspace_wallpaper">وێنەی پاشبنەما</string>
+    <string name="dejavu_workspace_wallpaper_hint">وێنەکە لەسەر ئەم مۆبایلە دەمێنێتەوە و لە پەڕەی سەرەکیدا پیشان دەدرێت. ڕەنگەکانی دەبنە ئەو ڕووکارەی لەگەڵ Zen هاوکات دەکرێت.</string>
+    <string name="dejavu_workspace_wallpaper_choose">وێنەیەک هەڵبژێرە</string>
+    <string name="dejavu_workspace_wallpaper_change">گۆڕین</string>
+    <string name="dejavu_workspace_wallpaper_blur">لێڵکردن</string>
+    <string name="dejavu_workspace_wallpaper_failed">نەتوانرا ئەم وێنەیە بکرێتەوە.</string>
+    <string name="dejavu_workspace_wallpaper_colors">ئەو ڕەنگانەی لەگەڵ Zen هاوکات دەکرێن</string>
+    <string name="dejavu_workspace_wallpaper_hint_local">وێنەکە لەسەر ئەم مۆبایلە دەمێنێتەوە و لە پەڕەی سەرەکیدا پیشان دەدرێت.</string>
+    <string name="dejavu_workspace_wallpaper_colors_local">ئەو ڕەنگانەی لە وێنەکە وەرگیراون</string>
+    <string name="dejavu_page_info">وردەکاریی پەڕە</string>
+    <string name="dejavu_page_info_container">کۆنتەینەر</string>
+    <string name="dejavu_page_info_workspace">فەزا</string>
+    <string name="dejavu_page_info_site_details">ئاسایش و ڕێگەپێدانەکان</string>
+    <string name="dejavu_page_info_pinned">چەسپاو</string>
+    <string name="dejavu_page_info_essential">ماڵپەڕی گرنگ</string>
+    <string name="dejavu_page_info_reader_view">شێوازی دۆخی خوێندنەوە</string>
+    <string name="dejavu_page_info_translated">وەرگێڕدراو</string>
+    <string name="dejavu_menu_reader_view">شێوازی دۆخی خوێندنەوە</string>
+    <string name="dejavu_menu_close_reader_view">شێوازی دۆخی خوێندنەوە دابخە</string>
+    <string name="dejavu_workspace_firefox_limits">سنووردارکراو لەلایەن Firefox Sync ەوە</string>
+    <string name="dejavu_workspace_firefox_device">Firefox Sync تەنها بازدەرە کراوەکانی هەر ئامێرێک هاوبەش دەکات. ئەو بازدەرانەی لێرە دەیانکەیتەوە یان دایاندەخەیت، لەو ئامێرەشدا دەکرێنەوە یان دادەخرێن، بەڵام ناتوانیت بازدەر بچەسپێنیت، پۆشە یان ماڵپەڕی گرنگ زیاد بکەیت، یان کۆنتەینەرێک هەڵبژێریت. ناو و ئایکۆن لە ئامێرەکەوە دێن، و ئەو ڕەنگانەی هەڵیاندەبژێریت لەسەر ئەم مۆبایلە دەمێننەوە.</string>
+    <string name="dejavu_workspace_firefox_own">Firefox Sync فەزاکان هاوبەش ناکات، بۆیە ئەم فەزایە، لەگەڵ بازدەرە چەسپاوەکان و پۆشەکانی، لەسەر ئەم مۆبایلە دەمێنێتەوە. Firefox بازدەرە کراوەکانی وەک بازدەرەکانی ئەم مۆبایلە پیشان دەدات.</string>
 </resources>

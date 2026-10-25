@@ -327,7 +327,6 @@
     <string name="dejavu_settings_author">Yettwaxdem sɣur %1$s</string>
     <string name="dejavu_settings_coffee">Aɣ-iyi-d lqahwa</string>
     <string name="dejavu_settings_coffee_summary">Ulac adellel deg Dejavu. Ma yeɛǧeb-ik, lqahwa ad as-tɛiwen ad yimɣur.</string>
-    <string name="dejavu_workspace_device_note">Amkan-agi n umahil yesskan-d iseksal yeldin n yibenk deg umiḍan-ik Mozilla. Isem-is d tugna-s kkan-d seg yibenk-nni, yerna initen i tferneḍ ad qqimen ɣef tiliɣri-agi.</string>
     <string name="dejavu_settings_safe_browsing">Google Safe Browsing</string>
     <string name="dejavu_back">Ɣer deffir</string>
     <string name="dejavu_sync_start_title">Ad tesmezdiḍ neɣ ad tebduḍ seg tazwara?</string>
@@ -430,4 +429,37 @@
     <string name="dejavu_settings_screen">Agdil</string>
     <string name="dejavu_settings_hide_system_bars">Ffer afeggag n waddad d win n yinig</string>
     <string name="dejavu_settings_hide_system_bars_summary">Mi ara d-tettwaskan tasna. Zuɣer seg yiri n ufella neɣ n wadda akken ad ten-twaliḍ cwiṭ.</string>
+    <string name="dejavu_bookmarks_export">Sifeḍ ɣer ufaylu</string>
+    <plurals name="dejavu_bookmarks_exported">
+        <item quantity="one">%1$d n tecraṭ tettwasifeḍ</item>
+        <item quantity="other">%1$d n ticraḍ ttwasifḍent</item>
+    </plurals>
+    <string name="dejavu_bookmarks_export_failed">Asifeḍ n ticraḍ ur yeddi ara. Ɛreḍ tikkelt-nniḍen.</string>
+    <string name="dejavu_workspace_theme_custom">Ini udmawan</string>
+    <string name="dejavu_workspace_theme_add_color">Rnu ini</string>
+    <string name="dejavu_workspace_theme_remove_color">Kkes ini-agi</string>
+    <string name="dejavu_workspace_theme_code">Tangalt n yini</string>
+    <string name="dejavu_workspace_theme_color">Ini</string>
+    <string name="dejavu_workspace_wallpaper">Tugna n ugilal</string>
+    <string name="dejavu_workspace_wallpaper_hint">Tugna teqqim ɣef tiliɣri-agi, tettban-d ɣef tsna tagejdant. Initen-is uɣalen d asentel i yettwasdukkulen akked Zen.</string>
+    <string name="dejavu_workspace_wallpaper_choose">Fren tugna</string>
+    <string name="dejavu_workspace_wallpaper_change">Beddel</string>
+    <string name="dejavu_workspace_wallpaper_blur">Tagut</string>
+    <string name="dejavu_workspace_wallpaper_failed">Tugna-agi ur teldi ara.</string>
+    <string name="dejavu_workspace_wallpaper_colors">Initen i yettwasdukkulen akked Zen</string>
+    <string name="dejavu_workspace_wallpaper_hint_local">Tugna teqqim ɣef tiliɣri-agi, tettban-d ɣef tsna tagejdant.</string>
+    <string name="dejavu_workspace_wallpaper_colors_local">Initen n tugna</string>
+    <string name="dejavu_page_info">Talɣut n tsna</string>
+    <string name="dejavu_page_info_container">Asenduq</string>
+    <string name="dejavu_page_info_workspace">Amkan n umahil</string>
+    <string name="dejavu_page_info_site_details">Taɣellist d yisurag</string>
+    <string name="dejavu_page_info_pinned">Aseksel yessersen</string>
+    <string name="dejavu_page_info_essential">Seg wayen ilaqen</string>
+    <string name="dejavu_page_info_reader_view">Tamuɣli n tɣuri</string>
+    <string name="dejavu_page_info_translated">Tettwasuqel</string>
+    <string name="dejavu_menu_reader_view">Tamuɣli n tɣuri</string>
+    <string name="dejavu_menu_close_reader_view">Mdel tamuɣli n tɣuri</string>
+    <string name="dejavu_workspace_firefox_limits">Tilisa n Firefox Sync</string>
+    <string name="dejavu_workspace_firefox_device">Firefox Sync ibeṭṭu kan iseksal yeldin n yal ibenk. Iseksal i teldiḍ neɣ i tmedleḍ da ad ldin neɣ ad mdlen daɣen ɣef yibenk-nni, maca ur tezmireḍ ara ad tserseḍ iseksal, ad ternuḍ ikuramen neɣ ayen ilaqen, neɣ ad tferneḍ asenduq. Isem d tugna kkan-d seg yibenk, yerna initen i tferneḍ ad qqimen ɣef tiliɣri-agi.</string>
+    <string name="dejavu_workspace_firefox_own">Firefox Sync ur ibeṭṭu ara imukan n umahil, ihi amkan-agi n umahil, s yiseksal-is yessersen d yikuramen-is, ad yeqqim ɣef tiliɣri-agi. Firefox yesskan-d iseksal-is yeldin am iseksal n tiliɣri-agi.</string>
 </resources>

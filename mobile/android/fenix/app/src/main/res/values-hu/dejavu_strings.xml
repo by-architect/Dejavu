@@ -327,7 +327,6 @@
     <string name="dejavu_settings_author">Készítette: %1$s</string>
     <string name="dejavu_settings_coffee">Hívjon meg egy kávéra</string>
     <string name="dejavu_settings_coffee_summary">A Dejavuban nincsenek reklámok. Ha tetszik, egy kávé segíti a fejlődését.</string>
-    <string name="dejavu_workspace_device_note">Ez a munkaterület egy, a Mozilla-fiókjához tartozó eszköz nyitott lapjait jeleníti meg. Neve és ikonja arról az eszközről származik, a választott színek pedig ezen a telefonon maradnak.</string>
     <string name="dejavu_settings_safe_browsing">Google Biztonságos Böngészés</string>
     <string name="dejavu_back">Vissza</string>
     <string name="dejavu_sync_start_title">Egyesítés vagy újrakezdés?</string>
@@ -430,4 +429,37 @@
     <string name="dejavu_settings_screen">Képernyő</string>
     <string name="dejavu_settings_hide_system_bars">Állapotsor és navigációs sáv elrejtése</string>
     <string name="dejavu_settings_hide_system_bars_summary">Amíg egy oldal látható. Húzza be az ujját a felső vagy alsó szélről, hogy egy pillanatra lássa őket.</string>
+    <string name="dejavu_bookmarks_export">Exportálás fájlba</string>
+    <plurals name="dejavu_bookmarks_exported">
+        <item quantity="one">%1$d könyvjelző exportálva</item>
+        <item quantity="other">%1$d könyvjelző exportálva</item>
+    </plurals>
+    <string name="dejavu_bookmarks_export_failed">Nem sikerült a könyvjelzők exportálása. Próbálja újra.</string>
+    <string name="dejavu_workspace_theme_custom">Egyéni szín</string>
+    <string name="dejavu_workspace_theme_add_color">Szín hozzáadása</string>
+    <string name="dejavu_workspace_theme_remove_color">Szín eltávolítása</string>
+    <string name="dejavu_workspace_theme_code">Színkód</string>
+    <string name="dejavu_workspace_theme_color">Szín</string>
+    <string name="dejavu_workspace_wallpaper">Háttérkép</string>
+    <string name="dejavu_workspace_wallpaper_hint">A kép ezen a telefonon marad, és a kezdőlapon jelenik meg. A színeiből lesz a Zennel szinkronizálódó téma.</string>
+    <string name="dejavu_workspace_wallpaper_choose">Kép kiválasztása</string>
+    <string name="dejavu_workspace_wallpaper_change">Módosítás</string>
+    <string name="dejavu_workspace_wallpaper_blur">Elmosás</string>
+    <string name="dejavu_workspace_wallpaper_failed">Ezt a képet nem sikerült megnyitni.</string>
+    <string name="dejavu_workspace_wallpaper_colors">A Zennel szinkronizálódó színek</string>
+    <string name="dejavu_workspace_wallpaper_hint_local">A kép ezen a telefonon marad, és a kezdőlapon jelenik meg.</string>
+    <string name="dejavu_workspace_wallpaper_colors_local">A képből vett színek</string>
+    <string name="dejavu_page_info">Oldal részletei</string>
+    <string name="dejavu_page_info_container">Konténer</string>
+    <string name="dejavu_page_info_workspace">Munkaterület</string>
+    <string name="dejavu_page_info_site_details">Biztonság és engedélyek</string>
+    <string name="dejavu_page_info_pinned">Kitűzve</string>
+    <string name="dejavu_page_info_essential">Kedvenc</string>
+    <string name="dejavu_page_info_reader_view">Olvasó nézet</string>
+    <string name="dejavu_page_info_translated">Lefordítva</string>
+    <string name="dejavu_menu_reader_view">Olvasó nézet</string>
+    <string name="dejavu_menu_close_reader_view">Olvasó nézet bezárása</string>
+    <string name="dejavu_workspace_firefox_limits">A Firefox Sync korlátai</string>
+    <string name="dejavu_workspace_firefox_device">A Firefox Sync csak az egyes eszközök nyitott lapjait osztja meg. Az itt megnyitott vagy bezárt lapok azon az eszközön is megnyílnak vagy bezáródnak, de nem tűzhet ki lapokat, nem adhat hozzá mappákat vagy kedvenceket, és nem választhat konténert. A név és az ikon az eszközről származik, a választott színek pedig ezen a telefonon maradnak.</string>
+    <string name="dejavu_workspace_firefox_own">A Firefox Sync nem osztja meg a munkaterületeket, ezért ez a munkaterület a kitűzött lapjaival és mappáival együtt ezen a telefonon marad. A Firefox a nyitott lapjait ennek a telefonnak a lapjaiként jeleníti meg.</string>
 </resources>

@@ -59,6 +59,7 @@ private const val SEARCH_DELAY_MS = 250L
  *   middleware subscribes on [ViewAppeared] in the normal flow and dispatches [ImportAction.ImportFailed] when a
  *   [FenixImporterEvent.Failure] is emitted.
  * @param lifecycleScope lifecycle bound CoroutineScope scope used to cancel jobs when leaving bookmarks.
+ * @param chooseExportFile Invoked to ask the user for the file every bookmark is exported to.
  */
 @Suppress("LongParameterList", "LargeClass")
 internal class BookmarksMiddleware(
@@ -80,6 +81,7 @@ internal class BookmarksMiddleware(
     private val reportResultGlobally: (BookmarksGlobalResultReport) -> Unit,
     private val importEvents: () -> Flow<FenixImporterEvent>,
     private val lifecycleScope: CoroutineScope,
+    private val chooseExportFile: () -> Unit = {},
 ) : Middleware<BookmarksState, BookmarksAction> {
 
     private var searchJob: Job? = null
@@ -405,6 +407,7 @@ internal class BookmarksMiddleware(
             is ImportAction.ImportFailed -> {
                 store.dispatch(SnackbarAction.ImportFailed)
             }
+            ExportAction.ExportFileClicked -> chooseExportFile()
             is SearchAction.SearchQueryChanged -> {
                 searchJob?.cancel()
                 searchJob = lifecycleScope.launch {
@@ -437,6 +440,7 @@ internal class BookmarksMiddleware(
 
             ImportAction.ImportStarted,
             ImportAction.ImportCancelled,
+            is ExportAction.ExportFinished,
             SearchAction.SearchClicked,
             is SearchAction.ReceivedSearchResults,
             RootOverflowMenuClicked,

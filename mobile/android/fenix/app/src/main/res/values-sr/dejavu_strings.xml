@@ -334,7 +334,6 @@
     <string name="dejavu_settings_author">Направио %1$s</string>
     <string name="dejavu_settings_coffee">Купите ми кафу</string>
     <string name="dejavu_settings_coffee_summary">Dejavu нема огласе. Ако вам се допада, кафа му помаже да расте.</string>
-    <string name="dejavu_workspace_device_note">Овај радни простор приказује отворене језичке уређаја са вашег Mozilla налога. Његово име и икона потичу са тог уређаја, а боје које изаберете остају на овом телефону.</string>
     <string name="dejavu_settings_safe_browsing">Google безбедно прегледање</string>
     <string name="dejavu_back">Назад</string>
     <string name="dejavu_sync_start_title">Спојити или почети изнова?</string>
@@ -437,4 +436,38 @@
     <string name="dejavu_settings_screen">Екран</string>
     <string name="dejavu_settings_hide_system_bars">Сакриј траке статуса и навигације</string>
     <string name="dejavu_settings_hide_system_bars_summary">Док је приказана страница. Превуците од горње или доње ивице да их видите на тренутак.</string>
+    <string name="dejavu_bookmarks_export">Извези у датотеку</string>
+    <plurals name="dejavu_bookmarks_exported">
+        <item quantity="one">%1$d обележивач извезен</item>
+        <item quantity="few">%1$d обележивача извезена</item>
+        <item quantity="other">%1$d обележивача извезено</item>
+    </plurals>
+    <string name="dejavu_bookmarks_export_failed">Нисмо могли да извеземо обележиваче. Покушајте поново.</string>
+    <string name="dejavu_workspace_theme_custom">Прилагођена боја</string>
+    <string name="dejavu_workspace_theme_add_color">Додај боју</string>
+    <string name="dejavu_workspace_theme_remove_color">Уклони ову боју</string>
+    <string name="dejavu_workspace_theme_code">Код боје</string>
+    <string name="dejavu_workspace_theme_color">Боја</string>
+    <string name="dejavu_workspace_wallpaper">Позадина</string>
+    <string name="dejavu_workspace_wallpaper_hint">Слика остаје на овом телефону и приказује се на почетној страници. Њене боје постају тема која се синхронизује са Zen-ом.</string>
+    <string name="dejavu_workspace_wallpaper_choose">Изабери слику</string>
+    <string name="dejavu_workspace_wallpaper_change">Промени</string>
+    <string name="dejavu_workspace_wallpaper_blur">Замагљење</string>
+    <string name="dejavu_workspace_wallpaper_failed">Није могуће отворити ову слику.</string>
+    <string name="dejavu_workspace_wallpaper_colors">Боје које се синхронизују са Zen-ом</string>
+    <string name="dejavu_workspace_wallpaper_hint_local">Слика остаје на овом телефону и приказује се на почетној страници.</string>
+    <string name="dejavu_workspace_wallpaper_colors_local">Боје узете са слике</string>
+    <string name="dejavu_page_info">Детаљи странице</string>
+    <string name="dejavu_page_info_container">Контејнер</string>
+    <string name="dejavu_page_info_workspace">Радни простор</string>
+    <string name="dejavu_page_info_site_details">Безбедност и дозволе</string>
+    <string name="dejavu_page_info_pinned">Закачен</string>
+    <string name="dejavu_page_info_essential">Фаворит</string>
+    <string name="dejavu_page_info_reader_view">Приказ читача</string>
+    <string name="dejavu_page_info_translated">Преведено</string>
+    <string name="dejavu_menu_reader_view">Приказ читача</string>
+    <string name="dejavu_menu_close_reader_view">Затвори приказ читача</string>
+    <string name="dejavu_workspace_firefox_limits">Ограничења Firefox Sync-а</string>
+    <string name="dejavu_workspace_firefox_device">Firefox Sync дели само отворене језичке сваког уређаја. Језичци које отворите или затворите овде отварају се или затварају и на том уређају, али не можете да закачите језичке, додате фасцикле или Фаворите, нити да изаберете контејнер. Назив и икона долазе са уређаја, а боје које изаберете остају на овом телефону.</string>
+    <string name="dejavu_workspace_firefox_own">Firefox Sync не дели радне просторе, па овај радни простор, са својим закаченим језичцима и фасциклама, остаје на овом телефону. Firefox приказује његове отворене језичке као језичке овог телефона.</string>
 </resources>

@@ -327,7 +327,6 @@
     <string name="dejavu_settings_author">Ginawa ni %1$s</string>
     <string name="dejavu_settings_coffee">Ilibre mo ako ng kape</string>
     <string name="dejavu_settings_coffee_summary">Walang ad ang Dejavu. Kung nagugustuhan mo ito, nakakatulong ang isang kape para lumago ito.</string>
-    <string name="dejavu_workspace_device_note">Ipinapakita ng workspace na ito ang mga bukas na tab ng isang device sa iyong Mozilla account. Galing sa device na iyon ang pangalan at icon nito, at nananatili sa teleponong ito ang mga kulay na pipiliin mo.</string>
     <string name="dejavu_settings_safe_browsing">Google Safe Browsing</string>
     <string name="dejavu_back">Bumalik</string>
     <string name="dejavu_sync_start_title">Pagsamahin o magsimula nang bago?</string>
@@ -430,4 +429,37 @@
     <string name="dejavu_settings_screen">Screen</string>
     <string name="dejavu_settings_hide_system_bars">Itago ang status at navigation bar</string>
     <string name="dejavu_settings_hide_system_bars_summary">Habang may ipinapakitang page. Mag-swipe mula sa itaas o ibabang gilid para makita ang mga ito sandali.</string>
+    <string name="dejavu_bookmarks_export">I-export sa file</string>
+    <plurals name="dejavu_bookmarks_exported">
+        <item quantity="one">%1$d na bookmark ang na-export</item>
+        <item quantity="other">%1$d na bookmark ang na-export</item>
+    </plurals>
+    <string name="dejavu_bookmarks_export_failed">Hindi ma-export ang mga bookmark. Subukan ulit.</string>
+    <string name="dejavu_workspace_theme_custom">Custom na kulay</string>
+    <string name="dejavu_workspace_theme_add_color">Magdagdag ng kulay</string>
+    <string name="dejavu_workspace_theme_remove_color">Alisin ang kulay na ito</string>
+    <string name="dejavu_workspace_theme_code">Code ng kulay</string>
+    <string name="dejavu_workspace_theme_color">Kulay</string>
+    <string name="dejavu_workspace_wallpaper">Wallpaper</string>
+    <string name="dejavu_workspace_wallpaper_hint">Mananatili ang larawan sa teleponong ito at lalabas ito sa home page. Ang mga kulay nito ang magiging tema na sini-sync sa Zen.</string>
+    <string name="dejavu_workspace_wallpaper_choose">Pumili ng larawan</string>
+    <string name="dejavu_workspace_wallpaper_change">Palitan</string>
+    <string name="dejavu_workspace_wallpaper_blur">Labo</string>
+    <string name="dejavu_workspace_wallpaper_failed">Hindi mabuksan ang larawang ito.</string>
+    <string name="dejavu_workspace_wallpaper_colors">Mga kulay na sini-sync sa Zen</string>
+    <string name="dejavu_workspace_wallpaper_hint_local">Mananatili ang larawan sa teleponong ito at lalabas ito sa home page.</string>
+    <string name="dejavu_workspace_wallpaper_colors_local">Mga kulay na kinuha mula sa larawan</string>
+    <string name="dejavu_page_info">Mga detalye ng page</string>
+    <string name="dejavu_page_info_container">Container</string>
+    <string name="dejavu_page_info_workspace">Workspace</string>
+    <string name="dejavu_page_info_site_details">Seguridad at mga pahintulot</string>
+    <string name="dejavu_page_info_pinned">Naka-pin</string>
+    <string name="dejavu_page_info_essential">Mahalaga</string>
+    <string name="dejavu_page_info_reader_view">Reader view</string>
+    <string name="dejavu_page_info_translated">Naisalin</string>
+    <string name="dejavu_menu_reader_view">Reader view</string>
+    <string name="dejavu_menu_close_reader_view">Isara ang reader view</string>
+    <string name="dejavu_workspace_firefox_limits">Limitado ng Firefox Sync</string>
+    <string name="dejavu_workspace_firefox_device">Ang mga nakabukas na tab lang ng bawat device ang ibinabahagi ng Firefox Sync. Ang mga tab na binubuksan o isinasara mo rito ay bumubukas o nagsasara rin sa device na iyon, pero hindi ka puwedeng mag-pin ng mga tab, magdagdag ng mga folder o Mahahalaga, o pumili ng container. Galing sa device ang pangalan at icon, at mananatili sa teleponong ito ang mga kulay na pinili mo.</string>
+    <string name="dejavu_workspace_firefox_own">Hindi ibinabahagi ng Firefox Sync ang mga workspace, kaya mananatili sa teleponong ito ang workspace na ito, kasama ang mga naka-pin na tab at folder nito. Ipinapakita ng Firefox ang mga nakabukas na tab nito bilang mga tab ng teleponong ito.</string>
 </resources>

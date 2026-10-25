@@ -327,7 +327,6 @@
     <string name="dejavu_settings_author">%1$s ಅವರಿಂದ ರಚಿಸಲಾಗಿದೆ</string>
     <string name="dejavu_settings_coffee">ನನಗೆ ಒಂದು ಕಾಫಿ ಕೊಡಿಸಿ</string>
     <string name="dejavu_settings_coffee_summary">Dejavu ನಲ್ಲಿ ಜಾಹೀರಾತುಗಳಿಲ್ಲ. ನಿಮಗೆ ಇದು ಇಷ್ಟವಾದರೆ, ಒಂದು ಕಾಫಿ ಇದರ ಬೆಳವಣಿಗೆಗೆ ಸಹಾಯ ಮಾಡುತ್ತದೆ.</string>
-    <string name="dejavu_workspace_device_note">ಈ ಕಾರ್ಯಕ್ಷೇತ್ರವು ನಿಮ್ಮ Mozilla ಖಾತೆಯಲ್ಲಿರುವ ಒಂದು ಸಾಧನದ ತೆರೆದ ಟ್ಯಾಬ್‌ಗಳನ್ನು ತೋರಿಸುತ್ತದೆ. ಇದರ ಹೆಸರು ಮತ್ತು ಚಿಹ್ನೆ ಆ ಸಾಧನದಿಂದ ಬರುತ್ತವೆ, ಮತ್ತು ನೀವು ಆರಿಸುವ ಬಣ್ಣಗಳು ಈ ಫೋನ್‌ನಲ್ಲೇ ಉಳಿಯುತ್ತವೆ.</string>
     <string name="dejavu_settings_safe_browsing">Google ಸುರಕ್ಷಿತ ಬ್ರೌಸಿಂಗ್</string>
     <string name="dejavu_back">ಹಿಂದಕ್ಕೆ</string>
     <string name="dejavu_sync_start_title">ವಿಲೀನಗೊಳಿಸುವುದೇ ಅಥವಾ ಹೊಸದಾಗಿ ಆರಂಭಿಸುವುದೇ?</string>
@@ -430,4 +429,37 @@
     <string name="dejavu_settings_screen">ಪರದೆ</string>
     <string name="dejavu_settings_hide_system_bars">ಸ್ಥಿತಿ ಮತ್ತು ನ್ಯಾವಿಗೇಶನ್ ಬಾರ್‌ಗಳನ್ನು ಮರೆಮಾಡಿ</string>
     <string name="dejavu_settings_hide_system_bars_summary">ಪುಟ ತೋರಿಸುತ್ತಿರುವಾಗ. ಅವುಗಳನ್ನು ಸ್ವಲ್ಪ ಹೊತ್ತು ನೋಡಲು ಮೇಲಿನ ಅಥವಾ ಕೆಳಗಿನ ಅಂಚಿನಿಂದ ಸ್ವೈಪ್ ಮಾಡಿ.</string>
+    <string name="dejavu_bookmarks_export">ಫೈಲ್‌ಗೆ ರಫ್ತು ಮಾಡು</string>
+    <plurals name="dejavu_bookmarks_exported">
+        <item quantity="one">%1$d ಬುಕ್‌ಮಾರ್ಕ್ ರಫ್ತು ಮಾಡಲಾಗಿದೆ</item>
+        <item quantity="other">%1$d ಬುಕ್‌ಮಾರ್ಕ್‌ಗಳು ರಫ್ತು ಮಾಡಲಾಗಿವೆ</item>
+    </plurals>
+    <string name="dejavu_bookmarks_export_failed">ಬುಕ್‌ಮಾರ್ಕ್‌ಗಳನ್ನು ರಫ್ತು ಮಾಡಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ. ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ.</string>
+    <string name="dejavu_workspace_theme_custom">ಕಸ್ಟಮ್ ಬಣ್ಣ</string>
+    <string name="dejavu_workspace_theme_add_color">ಒಂದು ಬಣ್ಣ ಸೇರಿಸು</string>
+    <string name="dejavu_workspace_theme_remove_color">ಈ ಬಣ್ಣವನ್ನು ತೆಗೆದುಹಾಕು</string>
+    <string name="dejavu_workspace_theme_code">ಬಣ್ಣದ ಕೋಡ್</string>
+    <string name="dejavu_workspace_theme_color">ಬಣ್ಣ</string>
+    <string name="dejavu_workspace_wallpaper">ವಾಲ್‌ಪೇಪರ್</string>
+    <string name="dejavu_workspace_wallpaper_hint">ಚಿತ್ರವು ಈ ಫೋನ್‌ನಲ್ಲೇ ಉಳಿಯುತ್ತದೆ ಮತ್ತು ಮುಖಪುಟದಲ್ಲಿ ಕಾಣಿಸುತ್ತದೆ. ಅದರ ಬಣ್ಣಗಳು Zen ಜೊತೆ ಸಿಂಕ್ ಆಗುವ ಥೀಮ್ ಆಗುತ್ತವೆ.</string>
+    <string name="dejavu_workspace_wallpaper_choose">ಚಿತ್ರವನ್ನು ಆರಿಸು</string>
+    <string name="dejavu_workspace_wallpaper_change">ಬದಲಾಯಿಸು</string>
+    <string name="dejavu_workspace_wallpaper_blur">ಮಸುಕು</string>
+    <string name="dejavu_workspace_wallpaper_failed">ಈ ಚಿತ್ರವನ್ನು ತೆರೆಯಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ.</string>
+    <string name="dejavu_workspace_wallpaper_colors">Zen ಜೊತೆ ಸಿಂಕ್ ಆಗುವ ಬಣ್ಣಗಳು</string>
+    <string name="dejavu_workspace_wallpaper_hint_local">ಚಿತ್ರವು ಈ ಫೋನ್‌ನಲ್ಲೇ ಉಳಿಯುತ್ತದೆ ಮತ್ತು ಮುಖಪುಟದಲ್ಲಿ ಕಾಣಿಸುತ್ತದೆ.</string>
+    <string name="dejavu_workspace_wallpaper_colors_local">ಚಿತ್ರದಿಂದ ತೆಗೆದುಕೊಂಡ ಬಣ್ಣಗಳು</string>
+    <string name="dejavu_page_info">ಪುಟದ ವಿವರಗಳು</string>
+    <string name="dejavu_page_info_container">ಕಂಟೇನರ್</string>
+    <string name="dejavu_page_info_workspace">ಕಾರ್ಯಕ್ಷೇತ್ರ</string>
+    <string name="dejavu_page_info_site_details">ಸುರಕ್ಷತೆ ಮತ್ತು ಅನುಮತಿಗಳು</string>
+    <string name="dejavu_page_info_pinned">ಪಿನ್ ಮಾಡಲಾಗಿದೆ</string>
+    <string name="dejavu_page_info_essential">ಅಗತ್ಯವಾದುದು</string>
+    <string name="dejavu_page_info_reader_view">ಓದುಗರ ನೋಟ</string>
+    <string name="dejavu_page_info_translated">ಅನುವಾದಿಸಲಾಗಿದೆ</string>
+    <string name="dejavu_menu_reader_view">ಓದುಗರ ನೋಟ</string>
+    <string name="dejavu_menu_close_reader_view">ಓದುಗರ ನೋಟವನ್ನು ಮುಚ್ಚಿ</string>
+    <string name="dejavu_workspace_firefox_limits">Firefox Sync ನ ಮಿತಿಗಳು</string>
+    <string name="dejavu_workspace_firefox_device">Firefox Sync ಪ್ರತಿ ಸಾಧನದ ತೆರೆದ ಟ್ಯಾಬ್‌ಗಳನ್ನು ಮಾತ್ರ ಹಂಚಿಕೊಳ್ಳುತ್ತದೆ. ನೀವು ಇಲ್ಲಿ ತೆರೆಯುವ ಅಥವಾ ಮುಚ್ಚುವ ಟ್ಯಾಬ್‌ಗಳು ಆ ಸಾಧನದಲ್ಲಿಯೂ ತೆರೆದುಕೊಳ್ಳುತ್ತವೆ ಅಥವಾ ಮುಚ್ಚಿಕೊಳ್ಳುತ್ತವೆ, ಆದರೆ ನೀವು ಟ್ಯಾಬ್‌ಗಳನ್ನು ಪಿನ್ ಮಾಡಲು, ಫೋಲ್ಡರ್‌ಗಳನ್ನು ಅಥವಾ ಅಗತ್ಯವಾದವನ್ನು ಸೇರಿಸಲು, ಅಥವಾ ಕಂಟೇನರ್ ಆರಿಸಲು ಸಾಧ್ಯವಿಲ್ಲ. ಹೆಸರು ಮತ್ತು ಚಿಹ್ನೆ ಸಾಧನದಿಂದ ಬರುತ್ತವೆ, ಮತ್ತು ನೀವು ಆರಿಸುವ ಬಣ್ಣಗಳು ಈ ಫೋನ್‌ನಲ್ಲೇ ಉಳಿಯುತ್ತವೆ.</string>
+    <string name="dejavu_workspace_firefox_own">Firefox Sync ಕಾರ್ಯಕ್ಷೇತ್ರಗಳನ್ನು ಹಂಚಿಕೊಳ್ಳುವುದಿಲ್ಲ, ಆದ್ದರಿಂದ ಈ ಕಾರ್ಯಕ್ಷೇತ್ರವು ಅದರ ಪಿನ್ ಮಾಡಿದ ಟ್ಯಾಬ್‌ಗಳು ಮತ್ತು ಫೋಲ್ಡರ್‌ಗಳೊಂದಿಗೆ ಈ ಫೋನ್‌ನಲ್ಲೇ ಉಳಿಯುತ್ತದೆ. Firefox ಅದರ ತೆರೆದ ಟ್ಯಾಬ್‌ಗಳನ್ನು ಈ ಫೋನ್‌ನ ಟ್ಯಾಬ್‌ಗಳಾಗಿ ತೋರಿಸುತ್ತದೆ.</string>
 </resources>

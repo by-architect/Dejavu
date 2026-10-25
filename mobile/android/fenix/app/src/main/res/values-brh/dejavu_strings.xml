@@ -327,7 +327,6 @@
     <string name="dejavu_settings_author">%1$s نا جوڑ کرتین</string>
     <string name="dejavu_settings_coffee">کنے کافی اس ہلبو</string>
     <string name="dejavu_settings_coffee_summary">Dejavu اٹ ہچو اشتہار اف۔ اگر نی اے پسند کن، کافی اس اے نا بڑھنگ اٹ کمک کن۔</string>
-    <string name="dejavu_workspace_device_note">اے ورک سپیس نی نا Mozilla اکاؤنٹ نا ڈیوائس اس نا ملوکا ٹیباک دکھ ہن۔ اے نا پن او آئیکن او ڈیوائس ٹی ہن، او نی چُنتین رنگاک اے فون پار رہ ہن۔</string>
     <string name="dejavu_settings_safe_browsing">Google Safe Browsing</string>
     <string name="dejavu_back">پدا</string>
     <string name="dejavu_sync_start_title">یکجا کبو یا دوبارہ شروع کبو؟</string>
@@ -430,4 +429,37 @@
     <string name="dejavu_settings_screen">اسکرین</string>
     <string name="dejavu_settings_hide_system_bars">اسٹیٹس او نیویگیشن بار آتے چھپا</string>
     <string name="dejavu_settings_hide_system_bars_summary">ہرا وخت اسہ صفحہ تسنگ۔ اوفتے اسہ لمحہ کن خننگ کن مَلّی یا جہلی کنڑہ آن سوائپ کر۔</string>
+    <string name="dejavu_bookmarks_export">فائل ٹی ایکسپورٹ کبو</string>
+    <plurals name="dejavu_bookmarks_exported">
+        <item quantity="one">%1$d بک مارک ایکسپورٹ ہتین</item>
+        <item quantity="other">%1$d بک مارک ایکسپورٹ ہتین</item>
+    </plurals>
+    <string name="dejavu_bookmarks_export_failed">بک مارکاک ایکسپورٹ نی ہتین۔ دوبارہ کوشش کبو۔</string>
+    <string name="dejavu_workspace_theme_custom">کسٹم رنگ</string>
+    <string name="dejavu_workspace_theme_add_color">رنگ شامل کبو</string>
+    <string name="dejavu_workspace_theme_remove_color">اے رنگ ہٹاؤ</string>
+    <string name="dejavu_workspace_theme_code">رنگ کوڈ</string>
+    <string name="dejavu_workspace_theme_color">رنگ</string>
+    <string name="dejavu_workspace_wallpaper">وال پیپر</string>
+    <string name="dejavu_workspace_wallpaper_hint">تصویر اے فون پار رہ ہس او گھر صفحہ پار دکھ ہس۔ اے نا رنگاک Zen گدا سنک ہننا تھیم بن ہن۔</string>
+    <string name="dejavu_workspace_wallpaper_choose">تصویر چُن</string>
+    <string name="dejavu_workspace_wallpaper_change">بدل</string>
+    <string name="dejavu_workspace_wallpaper_blur">دھندلاہٹ</string>
+    <string name="dejavu_workspace_wallpaper_failed">اے تصویر ملنگپک۔</string>
+    <string name="dejavu_workspace_wallpaper_colors">Zen گدا سنک ہننا رنگاک</string>
+    <string name="dejavu_workspace_wallpaper_hint_local">تصویر اے فون پار رہ ہس او گھر صفحہ پار دکھ ہس۔</string>
+    <string name="dejavu_workspace_wallpaper_colors_local">تصویر ٹی ہلتین رنگاک</string>
+    <string name="dejavu_page_info">صفحہ نا تفصیلاک</string>
+    <string name="dejavu_page_info_container">کنٹینر</string>
+    <string name="dejavu_page_info_workspace">ورک سپیس</string>
+    <string name="dejavu_page_info_site_details">حفاظت او اجازتاک</string>
+    <string name="dejavu_page_info_pinned">پن ہتین</string>
+    <string name="dejavu_page_info_essential">ضروری</string>
+    <string name="dejavu_page_info_reader_view">خواننگ دروشم</string>
+    <string name="dejavu_page_info_translated">ترجمہ مس</string>
+    <string name="dejavu_menu_reader_view">خواننگ دروشم</string>
+    <string name="dejavu_menu_close_reader_view">خواننگ دروشم اے بند کبو</string>
+    <string name="dejavu_workspace_firefox_limits">Firefox Sync نا حداک</string>
+    <string name="dejavu_workspace_firefox_device">Firefox Sync تنہا ہر ڈیوائس نا ملوکا ٹیباک بشخ کن۔ نی ادا مل کنا یا بند کنا ٹیباک اود بی مل ہن یا بند ہن، لیکن نی ٹیب پن کننگ، فولڈر یا ضروری چیز شامل کننگ، یا کنٹینر چُننگ کپیس۔ ناں او آئیکن او ڈیوائس ٹی ہن، او نی چُنتین رنگاک اے فون پار رہ ہن۔</string>
+    <string name="dejavu_workspace_firefox_own">Firefox Sync ورک سپیساک بشخ نی کن، اندا خاطر اے ورک سپیس اپنا پن ٹیباک او فولڈراک سمیت اے فون پار رہ ہس۔ Firefox اے ورک سپیس نا ملوکا ٹیباک اے فون نا ٹیباک طور دکھ ہن۔</string>
 </resources>

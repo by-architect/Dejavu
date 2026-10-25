@@ -327,7 +327,6 @@
     <string name="dejavu_settings_author">Creado por %1$s</string>
     <string name="dejavu_settings_coffee">Invítame un café</string>
     <string name="dejavu_settings_coffee_summary">Dejavu no tiene anuncios. Si te gusta, un café lo ayuda a crecer.</string>
-    <string name="dejavu_workspace_device_note">Este espacio de trabajo muestra las pestañas abiertas de un dispositivo de tu cuenta de Mozilla. Su nombre e ícono vienen de ese dispositivo, y los colores que elijas se quedan en este teléfono.</string>
     <string name="dejavu_settings_safe_browsing">Navegación segura de Google</string>
     <string name="dejavu_back">Ne\' rukùu</string>
     <string name="dejavu_sync_start_title">¿Combinar o empezar de cero?</string>
@@ -430,4 +429,37 @@
     <string name="dejavu_settings_screen">Pantalla</string>
     <string name="dejavu_settings_hide_system_bars">Ocultar las barras de estado y de navegación</string>
     <string name="dejavu_settings_hide_system_bars_summary">Mientras se muestra una página. Desliza desde el borde superior o inferior para verlas un momento.</string>
+    <string name="dejavu_bookmarks_export">Exportar a archivo</string>
+    <plurals name="dejavu_bookmarks_exported">
+        <item quantity="one">%1$d marcador exportado</item>
+        <item quantity="other">%1$d marcadores exportados</item>
+    </plurals>
+    <string name="dejavu_bookmarks_export_failed">No se pudieron exportar los marcadores. Inténtalo de nuevo.</string>
+    <string name="dejavu_workspace_theme_custom">Color personalizado</string>
+    <string name="dejavu_workspace_theme_add_color">Agregar un color</string>
+    <string name="dejavu_workspace_theme_remove_color">Quitar este color</string>
+    <string name="dejavu_workspace_theme_code">Código de color</string>
+    <string name="dejavu_workspace_theme_color">Color</string>
+    <string name="dejavu_workspace_wallpaper">Sa gīnun riña raga’a</string>
+    <string name="dejavu_workspace_wallpaper_hint">La imagen se queda en este teléfono y se muestra en la página de inicio. Sus colores se vuelven el tema que se sincroniza con Zen.</string>
+    <string name="dejavu_workspace_wallpaper_choose">Elegir una imagen</string>
+    <string name="dejavu_workspace_wallpaper_change">Cambiar</string>
+    <string name="dejavu_workspace_wallpaper_blur">Desenfoque</string>
+    <string name="dejavu_workspace_wallpaper_failed">No se pudo abrir esta imagen.</string>
+    <string name="dejavu_workspace_wallpaper_colors">Colores que se sincronizan con Zen</string>
+    <string name="dejavu_workspace_wallpaper_hint_local">La imagen se queda en este teléfono y se muestra en la página de inicio.</string>
+    <string name="dejavu_workspace_wallpaper_colors_local">Colores tomados de la imagen</string>
+    <string name="dejavu_page_info">Detalles de la página</string>
+    <string name="dejavu_page_info_container">Contenedor</string>
+    <string name="dejavu_page_info_workspace">Espacio de trabajo</string>
+    <string name="dejavu_page_info_site_details">Seguridad y permisos</string>
+    <string name="dejavu_page_info_pinned">Fijada</string>
+    <string name="dejavu_page_info_essential">Esencial</string>
+    <string name="dejavu_page_info_reader_view">Sa ni\'iāj duguî\' ahiaa</string>
+    <string name="dejavu_page_info_translated">Ngà nachrunj</string>
+    <string name="dejavu_menu_reader_view">Sa ni\'iāj duguî\' ahiaa</string>
+    <string name="dejavu_menu_close_reader_view">Gāhuī riña a’ue ahiat</string>
+    <string name="dejavu_workspace_firefox_limits">Limitado por Firefox Sync</string>
+    <string name="dejavu_workspace_firefox_device">Firefox Sync solo comparte las pestañas abiertas de cada dispositivo. Las pestañas que abres o cierras aquí también se abren o se cierran en ese dispositivo, pero no puedes fijar pestañas, agregar carpetas ni esenciales, ni elegir un contenedor. El nombre y el ícono vienen del dispositivo, y los colores que elijas se quedan en este teléfono.</string>
+    <string name="dejavu_workspace_firefox_own">Firefox Sync no comparte los espacios de trabajo, así que este espacio de trabajo, con sus pestañas fijadas y carpetas, se queda en este teléfono. Firefox muestra sus pestañas abiertas como pestañas de este teléfono.</string>
 </resources>

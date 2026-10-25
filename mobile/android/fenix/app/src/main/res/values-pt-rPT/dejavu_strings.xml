@@ -334,7 +334,6 @@
     <string name="dejavu_settings_author">Criado por %1$s</string>
     <string name="dejavu_settings_coffee">Paga-me um café</string>
     <string name="dejavu_settings_coffee_summary">O Dejavu não tem anúncios. Se gostas dele, um café ajuda-o a crescer.</string>
-    <string name="dejavu_workspace_device_note">Este espaço de trabalho mostra os separadores abertos de um dispositivo da tua conta Mozilla. O nome e o ícone vêm desse dispositivo, e as cores que escolheres ficam neste telemóvel.</string>
     <string name="dejavu_settings_safe_browsing">Navegação segura da Google</string>
     <string name="dejavu_back">Voltar</string>
     <string name="dejavu_sync_start_title">Juntar ou começar do zero?</string>
@@ -437,4 +436,38 @@
     <string name="dejavu_settings_screen">Ecrã</string>
     <string name="dejavu_settings_hide_system_bars">Ocultar as barras de estado e de navegação</string>
     <string name="dejavu_settings_hide_system_bars_summary">Enquanto uma página é apresentada. Deslize a partir do limite superior ou inferior para as ver por um momento.</string>
+    <string name="dejavu_bookmarks_export">Exportar para ficheiro</string>
+    <plurals name="dejavu_bookmarks_exported">
+        <item quantity="one">%1$d marcador exportado</item>
+        <item quantity="many">%1$d marcadores exportados</item>
+        <item quantity="other">%1$d marcadores exportados</item>
+    </plurals>
+    <string name="dejavu_bookmarks_export_failed">Não foi possível exportar os marcadores. Tente novamente.</string>
+    <string name="dejavu_workspace_theme_custom">Cor personalizada</string>
+    <string name="dejavu_workspace_theme_add_color">Adicionar uma cor</string>
+    <string name="dejavu_workspace_theme_remove_color">Remover esta cor</string>
+    <string name="dejavu_workspace_theme_code">Código da cor</string>
+    <string name="dejavu_workspace_theme_color">Cor</string>
+    <string name="dejavu_workspace_wallpaper">Fundo</string>
+    <string name="dejavu_workspace_wallpaper_hint">A imagem fica neste telemóvel e aparece na página inicial. As cores dela tornam-se o tema que é sincronizado com o Zen.</string>
+    <string name="dejavu_workspace_wallpaper_choose">Escolher uma imagem</string>
+    <string name="dejavu_workspace_wallpaper_change">Mudar</string>
+    <string name="dejavu_workspace_wallpaper_blur">Desfocagem</string>
+    <string name="dejavu_workspace_wallpaper_failed">Não foi possível abrir esta imagem.</string>
+    <string name="dejavu_workspace_wallpaper_colors">Cores sincronizadas com o Zen</string>
+    <string name="dejavu_workspace_wallpaper_hint_local">A imagem fica neste telemóvel e aparece na página inicial.</string>
+    <string name="dejavu_workspace_wallpaper_colors_local">Cores retiradas da imagem</string>
+    <string name="dejavu_page_info">Detalhes da página</string>
+    <string name="dejavu_page_info_container">Contentor</string>
+    <string name="dejavu_page_info_workspace">Espaço de trabalho</string>
+    <string name="dejavu_page_info_site_details">Segurança e permissões</string>
+    <string name="dejavu_page_info_pinned">Fixado</string>
+    <string name="dejavu_page_info_essential">Essencial</string>
+    <string name="dejavu_page_info_reader_view">Vista de leitura</string>
+    <string name="dejavu_page_info_translated">Traduzido</string>
+    <string name="dejavu_menu_reader_view">Vista de leitura</string>
+    <string name="dejavu_menu_close_reader_view">Fechar vista de leitura</string>
+    <string name="dejavu_workspace_firefox_limits">Limitado pelo Firefox Sync</string>
+    <string name="dejavu_workspace_firefox_device">O Firefox Sync só partilha os separadores abertos de cada dispositivo. Os separadores que abres ou fechas aqui também abrem ou fecham nesse dispositivo, mas não podes fixar separadores, adicionar pastas ou essenciais, nem escolher um contentor. O nome e o ícone vêm do dispositivo, e as cores que escolheres ficam neste telemóvel.</string>
+    <string name="dejavu_workspace_firefox_own">O Firefox Sync não partilha espaços de trabalho, por isso este espaço de trabalho, com os separadores fixados e as pastas dele, fica neste telemóvel. No Firefox, os separadores abertos dele aparecem como separadores deste telemóvel.</string>
 </resources>

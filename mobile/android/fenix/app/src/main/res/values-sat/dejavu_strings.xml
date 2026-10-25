@@ -334,7 +334,6 @@
     <string name="dejavu_settings_author">%1$s ᱦᱚᱛᱮᱛᱮ ᱵᱮᱱᱟᱣ ᱟᱠᱟᱱᱟ</string>
     <string name="dejavu_settings_coffee">ᱤᱧ ᱞᱟᱹᱜᱤᱫ ᱢᱤᱫ ᱠᱚᱯᱷᱤ ᱠᱤᱨᱤᱧ ᱢᱮ</string>
     <string name="dejavu_settings_coffee_summary">Dejavu ᱨᱮ ᱡᱟᱦᱟᱱ ᱮᱰ ᱵᱟᱹᱱᱩᱜᱼᱟ ᱾ ᱡᱩᱫᱤ ᱟᱢ ᱱᱚᱶᱟ ᱨᱮ ᱠᱩᱥᱤ ᱢᱮᱱᱟᱢᱟ, ᱢᱤᱫ ᱠᱚᱯᱷᱤ ᱱᱚᱶᱟ ᱵᱟᱲᱦᱟᱣ ᱨᱮ ᱜᱚᱲᱚ ᱮᱢᱟᱭᱟ ᱾</string>
-    <string name="dejavu_workspace_device_note">ᱱᱚᱶᱟ ᱣᱟᱨᱠᱥᱯᱮᱥ ᱫᱚ ᱟᱢᱟᱜ Mozilla ᱟᱠᱟᱩᱱᱴ ᱨᱮᱭᱟᱜ ᱢᱤᱫ ᱰᱮᱵᱟᱭᱤᱥ ᱨᱮᱭᱟᱜ ᱡᱷᱤᱡᱽ ᱠᱟᱱ ᱴᱮᱵᱽ ᱠᱚ ᱩᱫᱩᱜ ᱟ ᱾ ᱱᱚᱶᱟ ᱨᱮᱭᱟᱜ ᱧᱩᱛᱩᱢ ᱟᱨ ᱟᱭᱠᱚᱱ ᱚᱱᱟ ᱰᱮᱵᱟᱭᱤᱥ ᱠᱷᱚᱱ ᱦᱤᱡᱩᱜ ᱟ, ᱟᱨ ᱟᱢ ᱵᱟᱪᱷᱟᱣ ᱟᱠᱟᱱ ᱨᱚᱝ ᱠᱚ ᱱᱚᱶᱟ ᱯᱷᱚᱱ ᱨᱮ ᱜᱮ ᱛᱟᱦᱮᱸ ᱟ ᱾</string>
     <string name="dejavu_settings_safe_browsing">Google Safe Browsing</string>
     <string name="dejavu_back">ᱛᱟᱭᱚᱢ</string>
     <string name="dejavu_sync_start_title">ᱢᱤᱫ ᱢᱮ ᱥᱮ ᱱᱟᱶᱟ ᱛᱮ ᱮᱦᱚᱵ ᱢᱮ?</string>
@@ -437,4 +436,38 @@
     <string name="dejavu_settings_screen">ᱥᱠᱨᱤᱱ</string>
     <string name="dejavu_settings_hide_system_bars">ᱥᱴᱮᱴᱟᱥ ᱟᱨ ᱱᱮᱵᱷᱤᱜᱮᱥᱚᱱ ᱵᱟᱨ ᱩᱠᱩ ᱢᱮ</string>
     <string name="dejavu_settings_hide_system_bars_summary">ᱡᱚᱠᱷᱚᱱ ᱥᱟᱦᱴᱟ ᱩᱫᱩᱜ ᱠᱟᱱᱟ᱾ ᱛᱤᱱᱟᱹᱜ ᱜᱷᱟᱹᱲᱤᱡ ᱧᱮᱞ ᱞᱟᱹᱜᱤᱫ ᱪᱮᱛᱟᱱ ᱥᱮ ᱞᱟᱛᱟᱨ ᱥᱤᱢᱟᱹ ᱠᱷᱚᱱ ᱥᱣᱟᱭᱤᱯ ᱢᱮ᱾</string>
+    <string name="dejavu_bookmarks_export">ᱨᱮᱫᱽ ᱛᱮ ᱤᱫᱤᱭ ᱢᱮ</string>
+    <plurals name="dejavu_bookmarks_exported">
+        <item quantity="one">%1$d ᱵᱩᱠᱢᱟᱨᱠ ᱨᱮᱫᱽ ᱛᱮ ᱤᱫᱤ ᱦᱩᱭ ᱮᱱᱟ</item>
+        <item quantity="two">%1$d ᱵᱩᱠᱢᱟᱨᱠ ᱨᱮᱫᱽ ᱛᱮ ᱤᱫᱤ ᱦᱩᱭ ᱮᱱᱟ</item>
+        <item quantity="other">%1$d ᱵᱩᱠᱢᱟᱨᱠ ᱨᱮᱫᱽ ᱛᱮ ᱤᱫᱤ ᱦᱩᱭ ᱮᱱᱟ</item>
+    </plurals>
+    <string name="dejavu_bookmarks_export_failed">ᱵᱩᱠᱢᱟᱨᱠ ᱵᱟᱝ ᱤᱫᱤ ᱫᱟᱲᱮᱭᱟᱜᱼᱟ ᱾ ᱫᱚᱦᱲᱟ ᱠᱩᱨᱩᱢᱩᱴᱩᱭ ᱢᱮ ᱾</string>
+    <string name="dejavu_workspace_theme_custom">ᱠᱩᱥᱤᱭᱟᱜ ᱨᱚᱝ</string>
+    <string name="dejavu_workspace_theme_add_color">ᱢᱤᱫ ᱨᱚᱝ ᱥᱮᱞᱮᱫᱽ ᱢᱮ</string>
+    <string name="dejavu_workspace_theme_remove_color">ᱱᱚᱶᱟ ᱨᱚᱝ ᱚᱰᱚᱠ ᱢᱮ</string>
+    <string name="dejavu_workspace_theme_code">ᱨᱚᱝ ᱠᱳᱰ</string>
+    <string name="dejavu_workspace_theme_color">ᱨᱚᱝ</string>
+    <string name="dejavu_workspace_wallpaper">ᱠᱟᱸᱛᱷᱪᱤᱛᱟᱹᱨ</string>
+    <string name="dejavu_workspace_wallpaper_hint">ᱪᱤᱛᱟᱹᱨ ᱱᱚᱶᱟ ᱯᱷᱚᱱ ᱨᱮ ᱛᱟᱦᱮᱸ ᱟ ᱟᱨ ᱚᱲᱟᱜ ᱥᱟᱦᱴᱟ ᱨᱮ ᱩᱫᱩᱜ ᱟ ᱾ ᱚᱱᱟ ᱨᱮᱭᱟᱜ ᱨᱚᱝ ᱠᱚ Zen ᱥᱟᱶ ᱥᱤᱝᱠ ᱦᱩᱭᱩᱜ ᱛᱷᱤᱢ ᱦᱩᱭ ᱟ ᱾</string>
+    <string name="dejavu_workspace_wallpaper_choose">ᱢᱤᱫ ᱪᱤᱛᱟᱹᱨ ᱵᱟᱪᱷᱟᱣ ᱢᱮ</string>
+    <string name="dejavu_workspace_wallpaper_change">ᱵᱚᱫᱚᱞ ᱢᱮ</string>
+    <string name="dejavu_workspace_wallpaper_blur">ᱵᱞᱚᱨ</string>
+    <string name="dejavu_workspace_wallpaper_failed">ᱱᱚᱶᱟ ᱪᱤᱛᱟᱹᱨ ᱵᱟᱝ ᱡᱷᱤᱡᱽ ᱫᱟᱲᱮᱭᱟᱜᱼᱟ ᱾</string>
+    <string name="dejavu_workspace_wallpaper_colors">Zen ᱥᱟᱶ ᱥᱤᱝᱠ ᱦᱩᱭᱩᱜ ᱨᱚᱝ ᱠᱚ</string>
+    <string name="dejavu_workspace_wallpaper_hint_local">ᱪᱤᱛᱟᱹᱨ ᱱᱚᱶᱟ ᱯᱷᱚᱱ ᱨᱮ ᱛᱟᱦᱮᱸ ᱟ ᱟᱨ ᱚᱲᱟᱜ ᱥᱟᱦᱴᱟ ᱨᱮ ᱩᱫᱩᱜ ᱟ ᱾</string>
+    <string name="dejavu_workspace_wallpaper_colors_local">ᱪᱤᱛᱟᱹᱨ ᱠᱷᱚᱱ ᱦᱟᱛᱟᱣ ᱨᱚᱝ ᱠᱚ</string>
+    <string name="dejavu_page_info">ᱥᱟᱦᱴᱟ ᱵᱤᱵᱨᱚᱬ</string>
+    <string name="dejavu_page_info_container">ᱠᱚᱱᱴᱮᱱᱟᱨ</string>
+    <string name="dejavu_page_info_workspace">ᱣᱟᱨᱠᱥᱯᱮᱥ</string>
+    <string name="dejavu_page_info_site_details">ᱨᱩᱠᱷᱤᱭᱟᱹ ᱟᱨ ᱪᱷᱟᱹᱰ ᱠᱚ</string>
+    <string name="dejavu_page_info_pinned">ᱯᱤᱱ ᱟᱠᱟᱱᱟ</string>
+    <string name="dejavu_page_info_essential">ᱮᱥᱮᱱᱥᱤᱭᱟᱞ</string>
+    <string name="dejavu_page_info_reader_view">ᱨᱤᱰᱚᱨ ᱵᱷᱭᱩ</string>
+    <string name="dejavu_page_info_translated">ᱛᱚᱨᱡᱚᱢᱟ ᱟᱠᱟᱱᱟ</string>
+    <string name="dejavu_menu_reader_view">ᱨᱤᱰᱚᱨ ᱵᱷᱭᱩ</string>
+    <string name="dejavu_menu_close_reader_view">ᱨᱤᱰᱚᱨ ᱵᱷᱭᱩ ᱵᱚᱸᱫᱚᱭ ᱢᱮ</string>
+    <string name="dejavu_workspace_firefox_limits">Firefox Sync ᱨᱮᱭᱟᱜ ᱥᱤᱢᱟᱹ ᱠᱚ</string>
+    <string name="dejavu_workspace_firefox_device">Firefox Sync ᱫᱚ ᱢᱤᱫ ᱢᱤᱫ ᱰᱮᱵᱟᱭᱤᱥ ᱨᱮᱭᱟᱜ ᱡᱷᱤᱡᱽ ᱠᱟᱱ ᱴᱮᱵᱽ ᱠᱚ ᱜᱮ ᱦᱟᱹᱴᱤᱧ ᱟ ᱾ ᱱᱚᱰᱮ ᱟᱢ ᱡᱷᱤᱡᱽ ᱥᱮ ᱵᱚᱸᱫ ᱠᱟᱱ ᱴᱮᱵᱽ ᱠᱚ ᱚᱱᱟ ᱰᱮᱵᱟᱭᱤᱥ ᱨᱮ ᱦᱚᱸ ᱡᱷᱤᱡᱽ ᱥᱮ ᱵᱚᱸᱫ ᱦᱩᱭ ᱟ, ᱢᱮᱱᱠᱷᱟᱱ ᱟᱢ ᱴᱮᱵᱽ ᱠᱚ ᱯᱤᱱ, ᱯᱷᱚᱞᱰᱚᱨ ᱥᱮ ᱮᱥᱮᱱᱥᱤᱭᱟᱞ ᱠᱚ ᱥᱮᱞᱮᱫᱽ, ᱥᱮ ᱠᱚᱱᱴᱮᱱᱟᱨ ᱵᱟᱪᱷᱟᱣ ᱵᱟᱝ ᱫᱟᱲᱮᱭᱟᱜᱼᱟ ᱾ ᱧᱩᱛᱩᱢ ᱟᱨ ᱟᱭᱠᱚᱱ ᱰᱮᱵᱟᱭᱤᱥ ᱠᱷᱚᱱ ᱧᱟᱢᱚᱜ ᱟ, ᱟᱨ ᱟᱢ ᱵᱟᱪᱷᱟᱣ ᱠᱟᱱ ᱨᱚᱝ ᱠᱚ ᱱᱚᱶᱟ ᱯᱷᱚᱱ ᱨᱮ ᱛᱟᱦᱮᱸ ᱟ ᱾</string>
+    <string name="dejavu_workspace_firefox_own">Firefox Sync ᱫᱚ ᱣᱟᱨᱠᱥᱯᱮᱥ ᱠᱚ ᱵᱟᱭ ᱦᱟᱹᱴᱤᱧ ᱟ, ᱚᱱᱟᱛᱮ ᱱᱚᱶᱟ ᱣᱟᱨᱠᱥᱯᱮᱥ, ᱟᱭᱢᱟᱛ ᱯᱤᱱ ᱴᱮᱵᱽ ᱠᱚ ᱟᱨ ᱯᱷᱚᱞᱰᱚᱨ ᱠᱚ ᱥᱟᱶ, ᱱᱚᱶᱟ ᱯᱷᱚᱱ ᱨᱮ ᱛᱟᱦᱮᱸ ᱟ ᱾ Firefox ᱚᱱᱟ ᱨᱮᱭᱟᱜ ᱡᱷᱤᱡᱽ ᱠᱟᱱ ᱴᱮᱵᱽ ᱠᱚ ᱱᱚᱶᱟ ᱯᱷᱚᱱ ᱨᱮᱭᱟᱜ ᱴᱮᱵᱽ ᱞᱮᱠᱷᱟ ᱩᱫᱩᱜ ᱟ ᱾</string>
 </resources>

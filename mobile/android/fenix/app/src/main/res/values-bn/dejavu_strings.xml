@@ -360,7 +360,6 @@
     <string name="dejavu_settings_author">%1$s-এর তৈরি</string>
     <string name="dejavu_settings_coffee">আমাকে একটি কফি কিনে দিন</string>
     <string name="dejavu_settings_coffee_summary">Dejavu-তে কোনো বিজ্ঞাপন নেই। ভালো লাগলে, একটি কফি এটিকে বেড়ে উঠতে সাহায্য করে।</string>
-    <string name="dejavu_workspace_device_note">এই ওয়ার্কস্পেসটি আপনার Mozilla অ্যাকাউন্টের একটি ডিভাইসের খোলা ট্যাবগুলো দেখায়। এর নাম ও আইকন সেই ডিভাইস থেকে আসে, আর আপনার বেছে নেওয়া রংগুলো এই ফোনেই থাকে।</string>
     <string name="dejavu_settings_safe_browsing">Google নিরাপদ ব্রাউজিং</string>
     <string name="dejavu_back">ফিরে যান</string>
     <string name="dejavu_sync_start_title">একত্রিত করবেন নাকি নতুন করে শুরু করবেন?</string>
@@ -463,4 +462,37 @@
     <string name="dejavu_settings_screen">স্ক্রিন</string>
     <string name="dejavu_settings_hide_system_bars">স্ট্যাটাস ও নেভিগেশন বার লুকান</string>
     <string name="dejavu_settings_hide_system_bars_summary">যখন কোনো পেজ দেখানো হয়। এক মুহূর্তের জন্য দেখতে উপরের বা নিচের প্রান্ত থেকে সোয়াইপ করুন।</string>
+    <string name="dejavu_bookmarks_export">ফাইলে এক্সপোর্ট করুন</string>
+    <plurals name="dejavu_bookmarks_exported">
+        <item quantity="one">%1$d বুকমার্ক এক্সপোর্ট করা হয়েছে</item>
+        <item quantity="other">%1$d বুকমার্ক এক্সপোর্ট করা হয়েছে</item>
+    </plurals>
+    <string name="dejavu_bookmarks_export_failed">বুকমার্ক এক্সপোর্ট করা যায়নি। আবার চেষ্টা করুন।</string>
+    <string name="dejavu_workspace_theme_custom">কাস্টম রং</string>
+    <string name="dejavu_workspace_theme_add_color">একটি রং যোগ করুন</string>
+    <string name="dejavu_workspace_theme_remove_color">এই রংটি সরিয়ে দিন</string>
+    <string name="dejavu_workspace_theme_code">রঙের কোড</string>
+    <string name="dejavu_workspace_theme_color">রং</string>
+    <string name="dejavu_workspace_wallpaper">ওয়ালপেপার</string>
+    <string name="dejavu_workspace_wallpaper_hint">ছবিটি এই ফোনেই থাকে এবং হোম পাতায় দেখায়। এর রংগুলো সেই থিম হয়ে যায়, যা Zen-এর সাথে Sync হয়।</string>
+    <string name="dejavu_workspace_wallpaper_choose">একটি ছবি বেছে নিন</string>
+    <string name="dejavu_workspace_wallpaper_change">পরিবর্তন করুন</string>
+    <string name="dejavu_workspace_wallpaper_blur">ব্লার</string>
+    <string name="dejavu_workspace_wallpaper_failed">এই ছবিটি খোলা যায়নি।</string>
+    <string name="dejavu_workspace_wallpaper_colors">যে রংগুলো Zen-এর সাথে Sync হয়</string>
+    <string name="dejavu_workspace_wallpaper_hint_local">ছবিটি এই ফোনেই থাকে এবং হোম পাতায় দেখায়।</string>
+    <string name="dejavu_workspace_wallpaper_colors_local">ছবি থেকে নেওয়া রং</string>
+    <string name="dejavu_page_info">পাতার বিবরণ</string>
+    <string name="dejavu_page_info_container">কন্টেইনার</string>
+    <string name="dejavu_page_info_workspace">ওয়ার্কস্পেস</string>
+    <string name="dejavu_page_info_site_details">নিরাপত্তা ও অনুমতি</string>
+    <string name="dejavu_page_info_pinned">পিন করা</string>
+    <string name="dejavu_page_info_essential">এসেনশিয়াল</string>
+    <string name="dejavu_page_info_reader_view">পাঠক দর্শন</string>
+    <string name="dejavu_page_info_translated">অনূদিত</string>
+    <string name="dejavu_menu_reader_view">পাঠক দর্শন</string>
+    <string name="dejavu_menu_close_reader_view">পাঠক দর্শন বন্ধ করুন</string>
+    <string name="dejavu_workspace_firefox_limits">Firefox Sync-এর কারণে সীমিত</string>
+    <string name="dejavu_workspace_firefox_device">Firefox Sync শুধু প্রতিটি ডিভাইসের খোলা ট্যাব শেয়ার করে। এখানে আপনি যে ট্যাবগুলো খোলেন বা বন্ধ করেন, সেগুলো সেই ডিভাইসেও খোলে বা বন্ধ হয়, কিন্তু আপনি ট্যাব পিন করতে, ফোল্ডার বা এসেনশিয়াল যোগ করতে, বা কন্টেইনার বেছে নিতে পারবেন না। নাম ও আইকন ডিভাইস থেকে আসে, আর আপনার বেছে নেওয়া রংগুলো এই ফোনেই থাকে।</string>
+    <string name="dejavu_workspace_firefox_own">Firefox Sync ওয়ার্কস্পেস শেয়ার করে না, তাই এই ওয়ার্কস্পেসটি, এর পিন করা ট্যাব ও ফোল্ডারসহ, এই ফোনেই থাকে। Firefox এই ওয়ার্কস্পেসের খোলা ট্যাবগুলো এই ফোনের ট্যাব হিসেবে দেখায়।</string>
 </resources>

@@ -72,6 +72,12 @@ internal fun bookmarksReducer(state: BookmarksState, action: BookmarksAction) =
         RootOverflowMenuClicked -> state.copy(rootMenuShown = true)
         RootOverflowMenuDismissed -> state.copy(rootMenuShown = false)
         is ImportAction.ImportFileClicked -> state.copy(rootMenuShown = false)
+        ExportAction.ExportFileClicked -> state.copy(rootMenuShown = false)
+        is ExportAction.ExportFinished ->
+            state.copy(
+                bookmarksSnackbarState =
+                    action.count?.let { BookmarksSnackbarState.Exported(it) } ?: BookmarksSnackbarState.ExportFailed
+            )
         ImportAction.ImportStarted,
         ImportAction.ImportCancelled,
         is ImportAction.ImportFailed,

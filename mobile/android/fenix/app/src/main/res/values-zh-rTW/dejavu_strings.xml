@@ -320,7 +320,6 @@
     <string name="dejavu_settings_author">由 %1$s 打造</string>
     <string name="dejavu_settings_coffee">請我喝杯咖啡</string>
     <string name="dejavu_settings_coffee_summary">Dejavu 沒有廣告。如果您喜歡它，一杯咖啡能幫助它成長。</string>
-    <string name="dejavu_workspace_device_note">此工作區會顯示您 Mozilla 帳號中某部裝置上開啟的分頁。其名稱和圖示來自該裝置，您選擇的顏色會留在這支手機上。</string>
     <string name="dejavu_settings_safe_browsing">Google 安全瀏覽</string>
     <string name="dejavu_back">上一步</string>
     <string name="dejavu_sync_start_title">要合併還是重新開始？</string>
@@ -423,4 +422,36 @@
     <string name="dejavu_settings_screen">螢幕</string>
     <string name="dejavu_settings_hide_system_bars">隱藏狀態列與導覽列</string>
     <string name="dejavu_settings_hide_system_bars_summary">顯示網頁時。從上緣或下緣向內滑動即可短暫顯示。</string>
+    <string name="dejavu_bookmarks_export">匯出至檔案</string>
+    <plurals name="dejavu_bookmarks_exported">
+        <item quantity="other">已匯出 %1$d 個書籤</item>
+    </plurals>
+    <string name="dejavu_bookmarks_export_failed">無法匯出書籤，請重試。</string>
+    <string name="dejavu_workspace_theme_custom">自訂顏色</string>
+    <string name="dejavu_workspace_theme_add_color">新增顏色</string>
+    <string name="dejavu_workspace_theme_remove_color">移除此顏色</string>
+    <string name="dejavu_workspace_theme_code">色碼</string>
+    <string name="dejavu_workspace_theme_color">顏色</string>
+    <string name="dejavu_workspace_wallpaper">背景圖</string>
+    <string name="dejavu_workspace_wallpaper_hint">圖片只會留在這支手機上，並顯示在主頁。圖片的顏色會成為與 Zen 同步的佈景主題。</string>
+    <string name="dejavu_workspace_wallpaper_choose">選擇圖片</string>
+    <string name="dejavu_workspace_wallpaper_change">變更</string>
+    <string name="dejavu_workspace_wallpaper_blur">模糊</string>
+    <string name="dejavu_workspace_wallpaper_failed">無法開啟此圖片。</string>
+    <string name="dejavu_workspace_wallpaper_colors">與 Zen 同步的顏色</string>
+    <string name="dejavu_workspace_wallpaper_hint_local">圖片只會留在這支手機上，並顯示在主頁。</string>
+    <string name="dejavu_workspace_wallpaper_colors_local">從圖片擷取的顏色</string>
+    <string name="dejavu_page_info">網頁詳細資訊</string>
+    <string name="dejavu_page_info_container">容器</string>
+    <string name="dejavu_page_info_workspace">工作區</string>
+    <string name="dejavu_page_info_site_details">安全性與權限</string>
+    <string name="dejavu_page_info_pinned">已釘選</string>
+    <string name="dejavu_page_info_essential">常用網站</string>
+    <string name="dejavu_page_info_reader_view">閱讀畫面</string>
+    <string name="dejavu_page_info_translated">已翻譯</string>
+    <string name="dejavu_menu_reader_view">閱讀畫面</string>
+    <string name="dejavu_menu_close_reader_view">關閉閱讀畫面</string>
+    <string name="dejavu_workspace_firefox_limits">受 Firefox Sync 限制</string>
+    <string name="dejavu_workspace_firefox_device">Firefox Sync 只會同步每部裝置上開啟的分頁。您在此開啟或關閉的分頁，也會在該裝置上開啟或關閉，但您無法釘選分頁、新增資料夾或常用網站，也無法選擇容器。名稱和圖示來自該裝置，您選擇的顏色會留在這支手機上。</string>
+    <string name="dejavu_workspace_firefox_own">Firefox Sync 不會同步工作區，因此此工作區及其已釘選分頁與資料夾都會留在這支手機上。Firefox 會將此工作區中開啟的分頁顯示為這支手機的分頁。</string>
 </resources>

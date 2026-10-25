@@ -334,7 +334,6 @@
     <string name="dejavu_settings_author">Autor: %1$s</string>
     <string name="dejavu_settings_coffee">Častite me kavom</string>
     <string name="dejavu_settings_coffee_summary">Dejavu nema oglasa. Ako vam se sviđa, kava mu pomaže da raste.</string>
-    <string name="dejavu_workspace_device_note">Ovaj radni prostor prikazuje otvorene kartice jednog uređaja na vašem Mozilla računu. Njegov naziv i ikona dolaze s tog uređaja, a boje koje odaberete ostaju na ovom telefonu.</string>
     <string name="dejavu_settings_safe_browsing">Google sigurno pregledavanje</string>
     <string name="dejavu_back">Natrag</string>
     <string name="dejavu_sync_start_title">Spojiti ili početi ispočetka?</string>
@@ -437,4 +436,38 @@
     <string name="dejavu_settings_screen">Zaslon</string>
     <string name="dejavu_settings_hide_system_bars">Sakrij trake stanja i navigacije</string>
     <string name="dejavu_settings_hide_system_bars_summary">Dok je prikazana stranica. Povucite s gornjeg ili donjeg ruba da ih na trenutak vidite.</string>
+    <string name="dejavu_bookmarks_export">Izvezi u datoteku</string>
+    <plurals name="dejavu_bookmarks_exported">
+        <item quantity="one">%1$d zabilješka izvezena</item>
+        <item quantity="few">%1$d zabilješke izvezene</item>
+        <item quantity="other">%1$d zabilješki izvezeno</item>
+    </plurals>
+    <string name="dejavu_bookmarks_export_failed">Nije moguće izvesti zabilješke. Pokušajte ponovo.</string>
+    <string name="dejavu_workspace_theme_custom">Prilagođena boja</string>
+    <string name="dejavu_workspace_theme_add_color">Dodaj boju</string>
+    <string name="dejavu_workspace_theme_remove_color">Ukloni ovu boju</string>
+    <string name="dejavu_workspace_theme_code">Kôd boje</string>
+    <string name="dejavu_workspace_theme_color">Boja</string>
+    <string name="dejavu_workspace_wallpaper">Pozadina</string>
+    <string name="dejavu_workspace_wallpaper_hint">Slika ostaje na ovom telefonu i prikazuje se na početnoj stranici. Njezine boje postaju tema koja se sinkronizira sa Zenom.</string>
+    <string name="dejavu_workspace_wallpaper_choose">Odaberi sliku</string>
+    <string name="dejavu_workspace_wallpaper_change">Promijeni</string>
+    <string name="dejavu_workspace_wallpaper_blur">Zamućenje</string>
+    <string name="dejavu_workspace_wallpaper_failed">Ovu sliku nije moguće otvoriti.</string>
+    <string name="dejavu_workspace_wallpaper_colors">Boje koje se sinkroniziraju sa Zenom</string>
+    <string name="dejavu_workspace_wallpaper_hint_local">Slika ostaje na ovom telefonu i prikazuje se na početnoj stranici.</string>
+    <string name="dejavu_workspace_wallpaper_colors_local">Boje preuzete sa slike</string>
+    <string name="dejavu_page_info">Detalji stranice</string>
+    <string name="dejavu_page_info_container">Spremnik</string>
+    <string name="dejavu_page_info_workspace">Radni prostor</string>
+    <string name="dejavu_page_info_site_details">Sigurnost i dozvole</string>
+    <string name="dejavu_page_info_pinned">Prikvačeno</string>
+    <string name="dejavu_page_info_essential">Favorit</string>
+    <string name="dejavu_page_info_reader_view">Prikaz čitača</string>
+    <string name="dejavu_page_info_translated">Prevedeno</string>
+    <string name="dejavu_menu_reader_view">Prikaz čitača</string>
+    <string name="dejavu_menu_close_reader_view">Zatvori prikaz čitača</string>
+    <string name="dejavu_workspace_firefox_limits">Ograničenja usluge Firefox Sync</string>
+    <string name="dejavu_workspace_firefox_device">Firefox Sync dijeli samo otvorene kartice svakog uređaja. Kartice koje ovdje otvorite ili zatvorite otvaraju se ili zatvaraju i na tom uređaju, ali ne možete prikvačiti kartice, dodati mape ni Favorite niti odabrati spremnik. Naziv i ikona dolaze s uređaja, a boje koje odaberete ostaju na ovom telefonu.</string>
+    <string name="dejavu_workspace_firefox_own">Firefox Sync ne dijeli radne prostore, pa ovaj radni prostor, s prikvačenim karticama i mapama, ostaje na ovom telefonu. Firefox prikazuje njegove otvorene kartice kao kartice ovog telefona.</string>
 </resources>

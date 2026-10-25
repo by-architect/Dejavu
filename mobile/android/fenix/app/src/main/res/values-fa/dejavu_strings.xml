@@ -327,7 +327,6 @@
     <string name="dejavu_settings_author">ساختهٔ %1$s</string>
     <string name="dejavu_settings_coffee">برایم یک قهوه بخرید</string>
     <string name="dejavu_settings_coffee_summary">Dejavu تبلیغ ندارد. اگر از آن لذت می‌برید، یک قهوه به رشدش کمک می‌کند.</string>
-    <string name="dejavu_workspace_device_note">این فضای کاری زبانه‌های باز یک دستگاه در حساب Mozilla شما را نشان می‌دهد. نام و نمادش از همان دستگاه می‌آید و رنگ‌هایی که انتخاب می‌کنید روی همین گوشی می‌مانند.</string>
     <string name="dejavu_settings_safe_browsing">مرور ایمن Google</string>
     <string name="dejavu_back">بازگشت</string>
     <string name="dejavu_sync_start_title">ادغام یا شروع از نو؟</string>
@@ -430,4 +429,37 @@
     <string name="dejavu_settings_screen">صفحه‌نمایش</string>
     <string name="dejavu_settings_hide_system_bars">پنهان کردن نوار وضعیت و نوار پیمایش</string>
     <string name="dejavu_settings_hide_system_bars_summary">هنگام نمایش یک صفحه. برای دیدن لحظه‌ای آن‌ها، از لبهٔ بالا یا پایین بکشید.</string>
+    <string name="dejavu_bookmarks_export">صادر کردن به فایل</string>
+    <plurals name="dejavu_bookmarks_exported">
+        <item quantity="one">%1$d نشانک صادر شد</item>
+        <item quantity="other">%1$d نشانک صادر شد</item>
+    </plurals>
+    <string name="dejavu_bookmarks_export_failed">صادر کردن نشانک‌ها انجام نشد. دوباره امتحان کنید.</string>
+    <string name="dejavu_workspace_theme_custom">رنگ سفارشی</string>
+    <string name="dejavu_workspace_theme_add_color">افزودن یک رنگ</string>
+    <string name="dejavu_workspace_theme_remove_color">حذف این رنگ</string>
+    <string name="dejavu_workspace_theme_code">کد رنگ</string>
+    <string name="dejavu_workspace_theme_color">رنگ</string>
+    <string name="dejavu_workspace_wallpaper">تصویر پس‌زمینه</string>
+    <string name="dejavu_workspace_wallpaper_hint">تصویر روی همین گوشی می‌ماند و در صفحهٔ اصلی نمایش داده می‌شود. رنگ‌هایش به پوسته‌ای تبدیل می‌شوند که با Zen همگام‌سازی می‌شود.</string>
+    <string name="dejavu_workspace_wallpaper_choose">انتخاب یک تصویر</string>
+    <string name="dejavu_workspace_wallpaper_change">تغییر</string>
+    <string name="dejavu_workspace_wallpaper_blur">محوشدگی</string>
+    <string name="dejavu_workspace_wallpaper_failed">باز کردن این تصویر ممکن نشد.</string>
+    <string name="dejavu_workspace_wallpaper_colors">رنگ‌هایی که با Zen همگام‌سازی می‌شوند</string>
+    <string name="dejavu_workspace_wallpaper_hint_local">تصویر روی همین گوشی می‌ماند و در صفحهٔ اصلی نمایش داده می‌شود.</string>
+    <string name="dejavu_workspace_wallpaper_colors_local">رنگ‌های برگرفته از تصویر</string>
+    <string name="dejavu_page_info">جزئیات صفحه</string>
+    <string name="dejavu_page_info_container">محفظه</string>
+    <string name="dejavu_page_info_workspace">فضای کاری</string>
+    <string name="dejavu_page_info_site_details">امنیت و مجوزها</string>
+    <string name="dejavu_page_info_pinned">سنجاق‌شده</string>
+    <string name="dejavu_page_info_essential">ضروری</string>
+    <string name="dejavu_page_info_reader_view">نمای مطالعه</string>
+    <string name="dejavu_page_info_translated">ترجمه‌شده</string>
+    <string name="dejavu_menu_reader_view">نمای مطالعه</string>
+    <string name="dejavu_menu_close_reader_view">بستن نمای مطالعه</string>
+    <string name="dejavu_workspace_firefox_limits">محدودشده توسط Firefox Sync</string>
+    <string name="dejavu_workspace_firefox_device">Firefox Sync فقط زبانه‌های باز هر دستگاه را به اشتراک می‌گذارد. زبانه‌هایی که اینجا باز یا بسته می‌کنید، روی آن دستگاه هم باز یا بسته می‌شوند، اما نمی‌توانید زبانه سنجاق کنید، پوشه یا ضروریات اضافه کنید یا محفظه انتخاب کنید. نام و نماد از دستگاه می‌آیند و رنگ‌هایی که انتخاب می‌کنید روی همین گوشی می‌مانند.</string>
+    <string name="dejavu_workspace_firefox_own">Firefox Sync فضاهای کاری را به اشتراک نمی‌گذارد، پس این فضای کاری، با زبانه‌های سنجاق‌شده و پوشه‌هایش، روی همین گوشی می‌ماند. Firefox زبانه‌های باز آن را به‌عنوان زبانه‌های این گوشی نشان می‌دهد.</string>
 </resources>

@@ -327,7 +327,6 @@
     <string name="dejavu_settings_author">Criatu di %1$s</string>
     <string name="dejavu_settings_coffee">Pàgami un cafè</string>
     <string name="dejavu_settings_coffee_summary">Dejavu nun havi pubblicità. Si ti piaci, un cafè l\'aiuta a crisciri.</string>
-    <string name="dejavu_workspace_device_note">Stu spazziu di travagghiu mustra i schedi aperti di un dispositivu dû tò cuntu Mozilla. U nomu e l\'icona vennu di ddu dispositivu, e i culuri ca scegghi restanu supra stu tilèfunu.</string>
     <string name="dejavu_settings_safe_browsing">Navicazzioni sicura di Google</string>
     <string name="dejavu_back">Nn\'arrè</string>
     <string name="dejavu_sync_start_title">Unìri o accuminciari di zeru?</string>
@@ -430,4 +429,37 @@
     <string name="dejavu_settings_screen">Schermu</string>
     <string name="dejavu_settings_hide_system_bars">Ammuccia i barri di statu e di navigazzioni</string>
     <string name="dejavu_settings_hide_system_bars_summary">Mentri chi s\'ammustra na pàggina. Sciddica dû bordu supiriuri o nfiriuri pi vìdirli pi nu mumentu.</string>
+    <string name="dejavu_bookmarks_export">Esporta nta un pricu</string>
+    <plurals name="dejavu_bookmarks_exported">
+        <item quantity="one">%1$d nzingalibbru esportatu</item>
+        <item quantity="other">%1$d nzingalibbra esportati</item>
+    </plurals>
+    <string name="dejavu_bookmarks_export_failed">Nun potti esportari i nzingalibbra. Prova arrè.</string>
+    <string name="dejavu_workspace_theme_custom">Culuri pirsunalizzatu</string>
+    <string name="dejavu_workspace_theme_add_color">Junci un culuri</string>
+    <string name="dejavu_workspace_theme_remove_color">Leva stu culuri</string>
+    <string name="dejavu_workspace_theme_code">Còdici dû culuri</string>
+    <string name="dejavu_workspace_theme_color">Culuri</string>
+    <string name="dejavu_workspace_wallpaper">Funnu</string>
+    <string name="dejavu_workspace_wallpaper_hint">A mmàggini resta supra stu tilèfunu e cumpari nnâ pàggina principali. I sò culuri addivèntanu u tema ca si sincronizza cu Zen.</string>
+    <string name="dejavu_workspace_wallpaper_choose">Scegghi na mmàggini</string>
+    <string name="dejavu_workspace_wallpaper_change">Cancia</string>
+    <string name="dejavu_workspace_wallpaper_blur">Sfucatura</string>
+    <string name="dejavu_workspace_wallpaper_failed">Nun potti grapiri sta mmàggini.</string>
+    <string name="dejavu_workspace_wallpaper_colors">Culuri ca si sincronizzanu cu Zen</string>
+    <string name="dejavu_workspace_wallpaper_hint_local">A mmàggini resta supra stu tilèfunu e cumpari nnâ pàggina principali.</string>
+    <string name="dejavu_workspace_wallpaper_colors_local">Culuri pigghiati dâ mmàggini</string>
+    <string name="dejavu_page_info">Minutagghi dâ pàggina</string>
+    <string name="dejavu_page_info_container">Cuntinituri</string>
+    <string name="dejavu_page_info_workspace">Spazziu di travagghiu</string>
+    <string name="dejavu_page_info_site_details">Sicurizza e pirmissi</string>
+    <string name="dejavu_page_info_pinned">Ficcata</string>
+    <string name="dejavu_page_info_essential">Essenziali</string>
+    <string name="dejavu_page_info_reader_view">Mudalità littura</string>
+    <string name="dejavu_page_info_translated">Traduciuta</string>
+    <string name="dejavu_menu_reader_view">Mudalità littura</string>
+    <string name="dejavu_menu_close_reader_view">Chiuji mudalità littura</string>
+    <string name="dejavu_workspace_firefox_limits">Limitatu di Firefox Sync</string>
+    <string name="dejavu_workspace_firefox_device">Firefox Sync sparti sulu i schedi aperti di ogni dispositivu. I schedi ca grapi o chiuji ccà si grapunu o si chiùjunu macari supra ddu dispositivu, ma nun poi ficcari schedi, jùnciri carteddi o essenziali, nè scègghiri un cuntinituri. U nomu e l\'icona vennu dû dispositivu, e i culuri ca scegghi restanu supra stu tilèfunu.</string>
+    <string name="dejavu_workspace_firefox_own">Firefox Sync nun sparti i spazzii di travagghiu, pirciò stu spazziu di travagghiu, cu i sò schedi ficcati e i sò carteddi, resta supra stu tilèfunu. Firefox mustra i sò schedi aperti comu schedi di stu tilèfunu.</string>
 </resources>

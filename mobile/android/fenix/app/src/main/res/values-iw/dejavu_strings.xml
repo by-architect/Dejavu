@@ -334,7 +334,6 @@
     <string name="dejavu_settings_author">נוצר על ידי %1$s</string>
     <string name="dejavu_settings_coffee">קנו לי קפה</string>
     <string name="dejavu_settings_coffee_summary">אין ב-Dejavu פרסומות. אם הוא מוצא חן בעיניכם, קפה עוזר לו לגדול.</string>
-    <string name="dejavu_workspace_device_note">מרחב העבודה הזה מציג את הלשוניות הפתוחות של מכשיר בחשבון Mozilla שלכם. השם והסמל שלו מגיעים מאותו מכשיר, והצבעים שתבחרו נשארים בטלפון הזה.</string>
     <string name="dejavu_settings_safe_browsing">הגלישה הבטוחה של Google</string>
     <string name="dejavu_back">חזרה</string>
     <string name="dejavu_sync_start_title">למזג או להתחיל מחדש?</string>
@@ -437,4 +436,38 @@
     <string name="dejavu_settings_screen">מסך</string>
     <string name="dejavu_settings_hide_system_bars">הסתרת סרגלי המצב והניווט</string>
     <string name="dejavu_settings_hide_system_bars_summary">בזמן הצגת דף. יש להחליק מהקצה העליון או התחתון כדי לראות אותם לרגע.</string>
+    <string name="dejavu_bookmarks_export">ייצוא לקובץ</string>
+    <plurals name="dejavu_bookmarks_exported">
+        <item quantity="one">%1$d סימנייה יוצאה</item>
+        <item quantity="two">%1$d סימניות יוצאו</item>
+        <item quantity="other">%1$d סימניות יוצאו</item>
+    </plurals>
+    <string name="dejavu_bookmarks_export_failed">לא ניתן היה לייצא את הסימניות. נא לנסות שוב.</string>
+    <string name="dejavu_workspace_theme_custom">צבע מותאם אישית</string>
+    <string name="dejavu_workspace_theme_add_color">הוספת צבע</string>
+    <string name="dejavu_workspace_theme_remove_color">הסרת הצבע הזה</string>
+    <string name="dejavu_workspace_theme_code">קוד צבע</string>
+    <string name="dejavu_workspace_theme_color">צבע</string>
+    <string name="dejavu_workspace_wallpaper">תמונת רקע</string>
+    <string name="dejavu_workspace_wallpaper_hint">התמונה נשארת בטלפון הזה ומוצגת בדף הבית. הצבעים שלה הופכים לערכת הנושא שמסתנכרנת עם Zen.</string>
+    <string name="dejavu_workspace_wallpaper_choose">בחירת תמונה</string>
+    <string name="dejavu_workspace_wallpaper_change">החלפה</string>
+    <string name="dejavu_workspace_wallpaper_blur">טשטוש</string>
+    <string name="dejavu_workspace_wallpaper_failed">לא ניתן היה לפתוח את התמונה הזו.</string>
+    <string name="dejavu_workspace_wallpaper_colors">צבעים שמסתנכרנים עם Zen</string>
+    <string name="dejavu_workspace_wallpaper_hint_local">התמונה נשארת בטלפון הזה ומוצגת בדף הבית.</string>
+    <string name="dejavu_workspace_wallpaper_colors_local">צבעים שנלקחו מהתמונה</string>
+    <string name="dejavu_page_info">פרטי הדף</string>
+    <string name="dejavu_page_info_container">מארז</string>
+    <string name="dejavu_page_info_workspace">מרחב עבודה</string>
+    <string name="dejavu_page_info_site_details">אבטחה והרשאות</string>
+    <string name="dejavu_page_info_pinned">מוצמדת</string>
+    <string name="dejavu_page_info_essential">מועדף</string>
+    <string name="dejavu_page_info_reader_view">תצוגת קריאה</string>
+    <string name="dejavu_page_info_translated">מתורגם</string>
+    <string name="dejavu_menu_reader_view">תצוגת קריאה</string>
+    <string name="dejavu_menu_close_reader_view">סגירת תצוגת הקריאה</string>
+    <string name="dejavu_workspace_firefox_limits">המגבלות של Firefox Sync</string>
+    <string name="dejavu_workspace_firefox_device">שירות Firefox Sync משתף רק את הלשוניות הפתוחות של כל מכשיר. לשוניות שאתם פותחים או סוגרים כאן נפתחות או נסגרות גם באותו מכשיר, אבל אי אפשר להצמיד לשוניות, להוסיף תיקיות או מועדפים, או לבחור מארז. השם והסמל מגיעים מהמכשיר, והצבעים שתבחרו נשארים בטלפון הזה.</string>
+    <string name="dejavu_workspace_firefox_own">שירות Firefox Sync לא משתף מרחבי עבודה, ולכן מרחב העבודה הזה, עם הלשוניות המוצמדות והתיקיות שלו, נשאר בטלפון הזה. Firefox מציג את הלשוניות הפתוחות שלו כלשוניות של הטלפון הזה.</string>
 </resources>

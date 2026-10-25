@@ -327,7 +327,6 @@
     <string name="dejavu_settings_author">Аз ҷониби %1$s сохта шудааст</string>
     <string name="dejavu_settings_coffee">Ба ман қаҳва харед</string>
     <string name="dejavu_settings_coffee_summary">Dejavu реклама надорад. Агар ба шумо писанд ояд, як пиёла қаҳва ба рушди он кӯмак мекунад.</string>
-    <string name="dejavu_workspace_device_note">Ин фазо варақаҳои кушодаи яке аз дастгоҳҳои ҳисоби Mozilla-и шуморо нишон медиҳад. Ном ва нишонаи он аз ҳамон дастгоҳ меоянд ва рангҳое, ки шумо интихоб мекунед, дар ин телефон мемонанд.</string>
     <string name="dejavu_settings_safe_browsing">Тамошои бехатари Google</string>
     <string name="dejavu_back">Бозгашт</string>
     <string name="dejavu_sync_start_title">Якҷоя кардан ё аз нав оғоз кардан?</string>
@@ -430,4 +429,37 @@
     <string name="dejavu_settings_screen">Экран</string>
     <string name="dejavu_settings_hide_system_bars">Пинҳон кардани навори ҳолат ва навори паймоиш</string>
     <string name="dejavu_settings_hide_system_bars_summary">Ҳангоми намоиш додани саҳифа. Барои як лаҳза дидани онҳо аз канори боло ё поён ангуштро гузаронед.</string>
+    <string name="dejavu_bookmarks_export">Содир кардан ба файл</string>
+    <plurals name="dejavu_bookmarks_exported">
+        <item quantity="one">%1$d хатбарак содир карда шуд</item>
+        <item quantity="other">%1$d хатбарак содир карда шуд</item>
+    </plurals>
+    <string name="dejavu_bookmarks_export_failed">Содиркунии хатбаракҳо иҷро нашуд. Аз нав кӯшиш кунед.</string>
+    <string name="dejavu_workspace_theme_custom">Ранги фармоишӣ</string>
+    <string name="dejavu_workspace_theme_add_color">Илова кардани ранг</string>
+    <string name="dejavu_workspace_theme_remove_color">Хориҷ кардани ин ранг</string>
+    <string name="dejavu_workspace_theme_code">Рамзи ранг</string>
+    <string name="dejavu_workspace_theme_color">Ранг</string>
+    <string name="dejavu_workspace_wallpaper">Тасвири замина</string>
+    <string name="dejavu_workspace_wallpaper_hint">Тасвир дар ин телефон мемонад ва дар саҳифаи асосӣ нишон дода мешавад. Рангҳои он ба мавзӯе табдил меёбанд, ки бо Zen ҳамоҳанг мешавад.</string>
+    <string name="dejavu_workspace_wallpaper_choose">Интихоб кардани тасвир</string>
+    <string name="dejavu_workspace_wallpaper_change">Иваз кардан</string>
+    <string name="dejavu_workspace_wallpaper_blur">Хирагӣ</string>
+    <string name="dejavu_workspace_wallpaper_failed">Ин тасвир кушода нашуд.</string>
+    <string name="dejavu_workspace_wallpaper_colors">Рангҳое, ки бо Zen ҳамоҳанг мешаванд</string>
+    <string name="dejavu_workspace_wallpaper_hint_local">Тасвир дар ин телефон мемонад ва дар саҳифаи асосӣ нишон дода мешавад.</string>
+    <string name="dejavu_workspace_wallpaper_colors_local">Рангҳое, ки аз тасвир гирифта шудаанд</string>
+    <string name="dejavu_page_info">Тафсилоти саҳифа</string>
+    <string name="dejavu_page_info_container">Контейнер</string>
+    <string name="dejavu_page_info_workspace">Фазо</string>
+    <string name="dejavu_page_info_site_details">Амният ва иҷозатҳо</string>
+    <string name="dejavu_page_info_pinned">Часпонидашуда</string>
+    <string name="dejavu_page_info_essential">Сомонаи муҳим</string>
+    <string name="dejavu_page_info_reader_view">Намоиши хониш</string>
+    <string name="dejavu_page_info_translated">Тарҷумашуда</string>
+    <string name="dejavu_menu_reader_view">Намоиши хониш</string>
+    <string name="dejavu_menu_close_reader_view">Пӯшидани намоиши хониш</string>
+    <string name="dejavu_workspace_firefox_limits">Маҳдудиятҳои Firefox Sync</string>
+    <string name="dejavu_workspace_firefox_device">Firefox Sync танҳо варақаҳои кушодаи ҳар дастгоҳро мубодила мекунад. Варақаҳое, ки шумо дар ин ҷо мекушоед ё мепӯшед, дар он дастгоҳ низ кушода ё пӯшида мешаванд, аммо шумо наметавонед варақаҳоро часпонед, ҷузвдонҳо ё сомонаҳои муҳим илова кунед ё контейнер интихоб кунед. Ном ва нишона аз дастгоҳ меоянд ва рангҳое, ки шумо интихоб мекунед, дар ин телефон мемонанд.</string>
+    <string name="dejavu_workspace_firefox_own">Firefox Sync фазоҳоро мубодила намекунад, аз ин рӯ ин фазо бо варақаҳои часпонидашуда ва ҷузвдонҳояш дар ин телефон мемонад. Firefox варақаҳои кушодаи онро ҳамчун варақаҳои ин телефон нишон медиҳад.</string>
 </resources>

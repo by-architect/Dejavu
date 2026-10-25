@@ -327,7 +327,6 @@
     <string name="dejavu_settings_author">Búið til af %1$s</string>
     <string name="dejavu_settings_coffee">Bjóddu mér upp á kaffi</string>
     <string name="dejavu_settings_coffee_summary">Dejavu er án auglýsinga. Ef þér líkar það, hjálpar kaffibolli því að vaxa.</string>
-    <string name="dejavu_workspace_device_note">Þetta vinnusvæði sýnir opna flipa tækis á Mozilla reikningnum þínum. Heiti þess og táknmynd koma frá því tæki og litirnir sem þú velur haldast á þessum síma.</string>
     <string name="dejavu_settings_safe_browsing">Örugg vöfrun Google</string>
     <string name="dejavu_back">Til baka</string>
     <string name="dejavu_sync_start_title">Sameina eða byrja upp á nýtt?</string>
@@ -430,4 +429,37 @@
     <string name="dejavu_settings_screen">Skjár</string>
     <string name="dejavu_settings_hide_system_bars">Fela stöðustiku og leiðsagnarstiku</string>
     <string name="dejavu_settings_hide_system_bars_summary">Á meðan síða er sýnd. Strjúktu inn frá efri eða neðri brún til að sjá þær í smástund.</string>
+    <string name="dejavu_bookmarks_export">Flytja út í skrá</string>
+    <plurals name="dejavu_bookmarks_exported">
+        <item quantity="one">%1$d bókamerki flutt út</item>
+        <item quantity="other">%1$d bókamerki flutt út</item>
+    </plurals>
+    <string name="dejavu_bookmarks_export_failed">Ekki tókst að flytja út bókamerki. Reyndu aftur.</string>
+    <string name="dejavu_workspace_theme_custom">Sérsniðinn litur</string>
+    <string name="dejavu_workspace_theme_add_color">Bæta við lit</string>
+    <string name="dejavu_workspace_theme_remove_color">Fjarlægja þennan lit</string>
+    <string name="dejavu_workspace_theme_code">Litakóði</string>
+    <string name="dejavu_workspace_theme_color">Litur</string>
+    <string name="dejavu_workspace_wallpaper">Bakgrunnsmynd</string>
+    <string name="dejavu_workspace_wallpaper_hint">Myndin helst á þessum síma og birtist á upphafssíðunni. Litir hennar verða að þemanu sem samstillist við Zen.</string>
+    <string name="dejavu_workspace_wallpaper_choose">Velja mynd</string>
+    <string name="dejavu_workspace_wallpaper_change">Breyta</string>
+    <string name="dejavu_workspace_wallpaper_blur">Óskerpa</string>
+    <string name="dejavu_workspace_wallpaper_failed">Ekki var hægt að opna þessa mynd.</string>
+    <string name="dejavu_workspace_wallpaper_colors">Litir sem samstillast við Zen</string>
+    <string name="dejavu_workspace_wallpaper_hint_local">Myndin helst á þessum síma og birtist á upphafssíðunni.</string>
+    <string name="dejavu_workspace_wallpaper_colors_local">Litir teknir úr myndinni</string>
+    <string name="dejavu_page_info">Upplýsingar um síðu</string>
+    <string name="dejavu_page_info_container">Hólf</string>
+    <string name="dejavu_page_info_workspace">Vinnusvæði</string>
+    <string name="dejavu_page_info_site_details">Öryggi og heimildir</string>
+    <string name="dejavu_page_info_pinned">Festur</string>
+    <string name="dejavu_page_info_essential">Eftirlæti</string>
+    <string name="dejavu_page_info_reader_view">Leshamur</string>
+    <string name="dejavu_page_info_translated">Þýtt</string>
+    <string name="dejavu_menu_reader_view">Leshamur</string>
+    <string name="dejavu_menu_close_reader_view">Loka lesham</string>
+    <string name="dejavu_workspace_firefox_limits">Takmarkað af Firefox Sync</string>
+    <string name="dejavu_workspace_firefox_device">Firefox Sync deilir aðeins opnum flipum hvers tækis. Flipar sem þú opnar eða lokar hér opnast eða lokast líka á því tæki, en þú getur hvorki fest flipa, bætt við möppum eða eftirlætum né valið hólf. Heitið og táknmyndin koma frá tækinu og litirnir sem þú velur haldast á þessum síma.</string>
+    <string name="dejavu_workspace_firefox_own">Firefox Sync deilir ekki vinnusvæðum, svo þetta vinnusvæði, með festum flipum sínum og möppum, helst á þessum síma. Firefox sýnir opna flipa þess sem flipa þessa síma.</string>
 </resources>

@@ -327,7 +327,6 @@
     <string name="dejavu_settings_author">%1$s ਵਲੋਂ ਬਣਾਇਆ</string>
     <string name="dejavu_settings_coffee">ਮੈਨੂੰ ਇੱਕ ਕੌਫ਼ੀ ਪਿਲਾਓ</string>
     <string name="dejavu_settings_coffee_summary">Dejavu ਵਿੱਚ ਕੋਈ ਇਸ਼ਤਿਹਾਰ ਨਹੀਂ ਹਨ। ਜੇ ਤੁਹਾਨੂੰ ਇਹ ਪਸੰਦ ਹੈ, ਤਾਂ ਇੱਕ ਕੌਫ਼ੀ ਇਸ ਨੂੰ ਵਧਣ ਵਿੱਚ ਮਦਦ ਕਰਦੀ ਹੈ।</string>
-    <string name="dejavu_workspace_device_note">ਇਹ ਵਰਕਸਪੇਸ ਤੁਹਾਡੇ Mozilla ਖਾਤੇ ਵਾਲੇ ਕਿਸੇ ਡਿਵਾਈਸ ਦੀਆਂ ਖੁੱਲ੍ਹੀਆਂ ਟੈਬਾਂ ਦਿਖਾਉਂਦੀ ਹੈ। ਇਸ ਦਾ ਨਾਂ ਅਤੇ ਆਈਕਨ ਉਸ ਡਿਵਾਈਸ ਤੋਂ ਆਉਂਦੇ ਹਨ, ਅਤੇ ਤੁਹਾਡੇ ਚੁਣੇ ਰੰਗ ਇਸ ਫ਼ੋਨ ‘ਤੇ ਹੀ ਰਹਿੰਦੇ ਹਨ।</string>
     <string name="dejavu_settings_safe_browsing">Google ਸੁਰੱਖਿਅਤ ਬ੍ਰਾਊਜ਼ਿੰਗ</string>
     <string name="dejavu_back">ਪਿੱਛੇ</string>
     <string name="dejavu_sync_start_title">ਮਿਲਾਉਣਾ ਹੈ ਜਾਂ ਨਵੇਂ ਸਿਰਿਓਂ ਸ਼ੁਰੂ ਕਰਨਾ ਹੈ?</string>
@@ -430,4 +429,37 @@
     <string name="dejavu_settings_screen">ਸਕਰੀਨ</string>
     <string name="dejavu_settings_hide_system_bars">ਸਥਿਤੀ ਅਤੇ ਨੈਵੀਗੇਸ਼ਨ ਪੱਟੀਆਂ ਲੁਕਾਓ</string>
     <string name="dejavu_settings_hide_system_bars_summary">ਜਦੋਂ ਪੰਨਾ ਦਿਖਾਇਆ ਜਾਂਦਾ ਹੈ। ਉਹਨਾਂ ਨੂੰ ਇੱਕ ਪਲ ਲਈ ਵੇਖਣ ਲਈ ਉੱਪਰਲੇ ਜਾਂ ਹੇਠਲੇ ਕਿਨਾਰੇ ਤੋਂ ਸਵਾਈਪ ਕਰੋ।</string>
+    <string name="dejavu_bookmarks_export">ਫ਼ਾਇਲ ਵਿੱਚ ਐਕਸਪੋਰਟ ਕਰੋ</string>
+    <plurals name="dejavu_bookmarks_exported">
+        <item quantity="one">%1$d ਬੁੱਕਮਾਰਕ ਐਕਸਪੋਰਟ ਕੀਤਾ ਗਿਆ</item>
+        <item quantity="other">%1$d ਬੁੱਕਮਾਰਕ ਐਕਸਪੋਰਟ ਕੀਤੇ ਗਏ</item>
+    </plurals>
+    <string name="dejavu_bookmarks_export_failed">ਬੁੱਕਮਾਰਕ ਐਕਸਪੋਰਟ ਨਹੀਂ ਕੀਤੇ ਜਾ ਸਕੇ। ਫੇਰ ਕੋਸ਼ਿਸ਼ ਕਰਿਓ।</string>
+    <string name="dejavu_workspace_theme_custom">ਕਸਟਮ ਰੰਗ</string>
+    <string name="dejavu_workspace_theme_add_color">ਰੰਗ ਜੋੜੋ</string>
+    <string name="dejavu_workspace_theme_remove_color">ਇਹ ਰੰਗ ਹਟਾਓ</string>
+    <string name="dejavu_workspace_theme_code">ਰੰਗ ਕੋਡ</string>
+    <string name="dejavu_workspace_theme_color">ਰੰਗ</string>
+    <string name="dejavu_workspace_wallpaper">ਵਾਲਪੇਪਰ</string>
+    <string name="dejavu_workspace_wallpaper_hint">ਤਸਵੀਰ ਇਸ ਫ਼ੋਨ ‘ਤੇ ਹੀ ਰਹਿੰਦੀ ਹੈ ਅਤੇ ਹੋਮ ਸਫ਼ੇ ‘ਤੇ ਦਿਖਾਈ ਦਿੰਦੀ ਹੈ। ਇਸ ਦੇ ਰੰਗ ਥੀਮ ਬਣ ਕੇ Zen ਨਾਲ ਸਿੰਕ ਹੁੰਦੇ ਹਨ।</string>
+    <string name="dejavu_workspace_wallpaper_choose">ਤਸਵੀਰ ਚੁਣੋ</string>
+    <string name="dejavu_workspace_wallpaper_change">ਬਦਲੋ</string>
+    <string name="dejavu_workspace_wallpaper_blur">ਧੁੰਦਲਾਪਣ</string>
+    <string name="dejavu_workspace_wallpaper_failed">ਇਹ ਤਸਵੀਰ ਖੋਲ੍ਹੀ ਨਹੀਂ ਜਾ ਸਕੀ।</string>
+    <string name="dejavu_workspace_wallpaper_colors">Zen ਨਾਲ ਸਿੰਕ ਹੋਣ ਵਾਲੇ ਰੰਗ</string>
+    <string name="dejavu_workspace_wallpaper_hint_local">ਤਸਵੀਰ ਇਸ ਫ਼ੋਨ ‘ਤੇ ਹੀ ਰਹਿੰਦੀ ਹੈ ਅਤੇ ਹੋਮ ਸਫ਼ੇ ‘ਤੇ ਦਿਖਾਈ ਦਿੰਦੀ ਹੈ।</string>
+    <string name="dejavu_workspace_wallpaper_colors_local">ਤਸਵੀਰ ਤੋਂ ਲਏ ਗਏ ਰੰਗ</string>
+    <string name="dejavu_page_info">ਸਫ਼ੇ ਦੇ ਵੇਰਵੇ</string>
+    <string name="dejavu_page_info_container">ਕੰਟੇਨਰ</string>
+    <string name="dejavu_page_info_workspace">ਵਰਕਸਪੇਸ</string>
+    <string name="dejavu_page_info_site_details">ਸੁਰੱਖਿਆ ਅਤੇ ਇਜਾਜ਼ਤਾਂ</string>
+    <string name="dejavu_page_info_pinned">ਪਿੰਨ ਕੀਤੀ</string>
+    <string name="dejavu_page_info_essential">ਜ਼ਰੂਰੀ</string>
+    <string name="dejavu_page_info_reader_view">ਪੜ੍ਹਾਕੂ ਝਲਕ</string>
+    <string name="dejavu_page_info_translated">ਅਨੁਵਾਦ ਕੀਤਾ</string>
+    <string name="dejavu_menu_reader_view">ਪੜ੍ਹਾਕੂ ਝਲਕ</string>
+    <string name="dejavu_menu_close_reader_view">ਪੜ੍ਹਨ ਝਲਕ ਬੰਦ ਕਰੋ</string>
+    <string name="dejavu_workspace_firefox_limits">Firefox Sync ਵਲੋਂ ਸੀਮਤ</string>
+    <string name="dejavu_workspace_firefox_device">Firefox Sync ਹਰ ਡਿਵਾਈਸ ਦੀਆਂ ਸਿਰਫ਼ ਖੁੱਲ੍ਹੀਆਂ ਟੈਬਾਂ ਸਾਂਝੀਆਂ ਕਰਦਾ ਹੈ। ਜਿਹੜੀਆਂ ਟੈਬਾਂ ਤੁਸੀਂ ਇੱਥੇ ਖੋਲ੍ਹਦੇ ਜਾਂ ਬੰਦ ਕਰਦੇ ਹੋ, ਉਹ ਉਸ ਡਿਵਾਈਸ ‘ਤੇ ਵੀ ਖੁੱਲ੍ਹ ਜਾਂ ਬੰਦ ਹੋ ਜਾਂਦੀਆਂ ਹਨ, ਪਰ ਤੁਸੀਂ ਨਾ ਟੈਬਾਂ ਪਿੰਨ ਕਰ ਸਕਦੇ ਹੋ, ਨਾ ਫੋਲਡਰ ਜਾਂ ਜ਼ਰੂਰੀ ਜੋੜ ਸਕਦੇ ਹੋ, ਅਤੇ ਨਾ ਹੀ ਕੰਟੇਨਰ ਚੁਣ ਸਕਦੇ ਹੋ। ਨਾਂ ਅਤੇ ਆਈਕਨ ਉਸ ਡਿਵਾਈਸ ਤੋਂ ਆਉਂਦੇ ਹਨ, ਅਤੇ ਤੁਹਾਡੇ ਚੁਣੇ ਰੰਗ ਇਸ ਫ਼ੋਨ ‘ਤੇ ਹੀ ਰਹਿੰਦੇ ਹਨ।</string>
+    <string name="dejavu_workspace_firefox_own">Firefox Sync ਵਰਕਸਪੇਸਾਂ ਸਾਂਝੀਆਂ ਨਹੀਂ ਕਰਦਾ, ਇਸ ਲਈ ਇਹ ਵਰਕਸਪੇਸ, ਆਪਣੀਆਂ ਪਿੰਨ ਕੀਤੀਆਂ ਟੈਬਾਂ ਅਤੇ ਫੋਲਡਰਾਂ ਸਮੇਤ, ਇਸ ਫ਼ੋਨ ‘ਤੇ ਹੀ ਰਹਿੰਦੀ ਹੈ। Firefox ਇਸ ਦੀਆਂ ਖੁੱਲ੍ਹੀਆਂ ਟੈਬਾਂ ਨੂੰ ਇਸ ਫ਼ੋਨ ਦੀਆਂ ਟੈਬਾਂ ਵਜੋਂ ਦਿਖਾਉਂਦਾ ਹੈ।</string>
 </resources>

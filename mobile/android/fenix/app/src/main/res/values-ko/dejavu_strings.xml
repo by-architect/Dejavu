@@ -320,7 +320,6 @@
     <string name="dejavu_settings_author">%1$s 제작</string>
     <string name="dejavu_settings_coffee">커피 한 잔 사 주세요</string>
     <string name="dejavu_settings_coffee_summary">Dejavu에는 광고가 없습니다. 마음에 드신다면 커피 한 잔이 Dejavu의 성장에 힘이 됩니다.</string>
-    <string name="dejavu_workspace_device_note">이 작업 공간은 Mozilla 계정에 연결된 기기의 열린 탭을 표시합니다. 이름과 아이콘은 해당 기기에서 가져오며, 선택한 색상은 이 휴대폰에만 적용됩니다.</string>
     <string name="dejavu_settings_safe_browsing">Google 세이프 브라우징</string>
     <string name="dejavu_back">뒤로</string>
     <string name="dejavu_sync_start_title">병합할까요, 새로 시작할까요?</string>
@@ -423,4 +422,36 @@
     <string name="dejavu_settings_screen">화면</string>
     <string name="dejavu_settings_hide_system_bars">상태 표시줄과 탐색 메뉴 숨기기</string>
     <string name="dejavu_settings_hide_system_bars_summary">페이지가 표시되는 동안. 위쪽이나 아래쪽 가장자리에서 스와이프하면 잠시 볼 수 있습니다.</string>
+    <string name="dejavu_bookmarks_export">파일로 내보내기</string>
+    <plurals name="dejavu_bookmarks_exported">
+        <item quantity="other">북마크 %1$d개를 내보냈습니다</item>
+    </plurals>
+    <string name="dejavu_bookmarks_export_failed">북마크를 내보낼 수 없습니다. 다시 시도하세요.</string>
+    <string name="dejavu_workspace_theme_custom">사용자 지정 색상</string>
+    <string name="dejavu_workspace_theme_add_color">색상 추가</string>
+    <string name="dejavu_workspace_theme_remove_color">이 색상 제거</string>
+    <string name="dejavu_workspace_theme_code">색상 코드</string>
+    <string name="dejavu_workspace_theme_color">색상</string>
+    <string name="dejavu_workspace_wallpaper">배경 화면</string>
+    <string name="dejavu_workspace_wallpaper_hint">이미지는 이 휴대폰에만 저장되며 홈 화면에 표시됩니다. 이미지의 색상은 Zen과 동기화되는 테마가 됩니다.</string>
+    <string name="dejavu_workspace_wallpaper_choose">이미지 선택</string>
+    <string name="dejavu_workspace_wallpaper_change">변경</string>
+    <string name="dejavu_workspace_wallpaper_blur">흐림 효과</string>
+    <string name="dejavu_workspace_wallpaper_failed">이 이미지를 열 수 없습니다.</string>
+    <string name="dejavu_workspace_wallpaper_colors">Zen과 동기화되는 색상</string>
+    <string name="dejavu_workspace_wallpaper_hint_local">이미지는 이 휴대폰에만 저장되며 홈 화면에 표시됩니다.</string>
+    <string name="dejavu_workspace_wallpaper_colors_local">이미지에서 가져온 색상</string>
+    <string name="dejavu_page_info">페이지 상세 정보</string>
+    <string name="dejavu_page_info_container">컨테이너</string>
+    <string name="dejavu_page_info_workspace">작업 공간</string>
+    <string name="dejavu_page_info_site_details">보안 및 권한</string>
+    <string name="dejavu_page_info_pinned">고정됨</string>
+    <string name="dejavu_page_info_essential">필수 사이트</string>
+    <string name="dejavu_page_info_reader_view">읽기 모드</string>
+    <string name="dejavu_page_info_translated">번역됨</string>
+    <string name="dejavu_menu_reader_view">읽기 모드</string>
+    <string name="dejavu_menu_close_reader_view">읽기 모드 닫기</string>
+    <string name="dejavu_workspace_firefox_limits">Firefox Sync로 인한 제한</string>
+    <string name="dejavu_workspace_firefox_device">Firefox Sync는 각 기기의 열린 탭만 공유합니다. 여기서 열거나 닫은 탭은 해당 기기에서도 열리거나 닫히지만, 탭을 고정하거나 폴더나 필수 사이트를 추가하거나 컨테이너를 선택할 수는 없습니다. 이름과 아이콘은 해당 기기에서 가져오며, 선택한 색상은 이 휴대폰에만 적용됩니다.</string>
+    <string name="dejavu_workspace_firefox_own">Firefox Sync는 작업 공간을 공유하지 않으므로 이 작업 공간은 고정된 탭 및 폴더와 함께 이 휴대폰에만 남아 있습니다. Firefox에서는 이 작업 공간의 열린 탭이 이 휴대폰의 탭으로 표시됩니다.</string>
 </resources>

@@ -327,7 +327,6 @@
     <string name="dejavu_settings_author">%1$s ياسىغان</string>
     <string name="dejavu_settings_coffee">ماڭا بىر قەھۋە ئېلىپ بېرىڭ</string>
     <string name="dejavu_settings_coffee_summary">Dejavu دا ئېلان يوق. ياقتۇرسىڭىز، بىر قەھۋە ئۇنىڭ تەرەققىي قىلىشىغا ياردەم بېرىدۇ.</string>
-    <string name="dejavu_workspace_device_note">بۇ خىزمەت دائىرىسى Mozilla ھېساباتىڭىزدىكى بىر ئۈسكۈنىنىڭ ئوچۇق بەتكۈچلىرىنى كۆرسىتىدۇ. ئۇنىڭ ئىسمى ۋە سىنبەلگىسى شۇ ئۈسكۈنىدىن كېلىدۇ، سىز تاللىغان رەڭلەر بۇ تېلېفوندا قالىدۇ.</string>
     <string name="dejavu_settings_safe_browsing">Google بىخەتەر كۆرۈش</string>
     <string name="dejavu_back">قايت</string>
     <string name="dejavu_sync_start_title">بىرلەشتۈرەمسىز ياكى يېڭىدىن باشلامسىز؟</string>
@@ -430,4 +429,37 @@
     <string name="dejavu_settings_screen">ئېكران</string>
     <string name="dejavu_settings_hide_system_bars">ھالەت ۋە يول باشلاش بالدىقىنى يوشۇرۇش</string>
     <string name="dejavu_settings_hide_system_bars_summary">بەت كۆرسىتىلىۋاتقاندا. ئۇلارنى بىر دەم كۆرۈش ئۈچۈن ئۈستى ياكى ئاستى گىرۋىكىدىن سىيرىڭ.</string>
+    <string name="dejavu_bookmarks_export">ھۆججەتكە چىقار</string>
+    <plurals name="dejavu_bookmarks_exported">
+        <item quantity="one">%1$d خەتكۈچ چىقىرىلدى</item>
+        <item quantity="other">%1$d خەتكۈچ چىقىرىلدى</item>
+    </plurals>
+    <string name="dejavu_bookmarks_export_failed">خەتكۈچنى چىقىرالمايدۇ. قايتا سىناڭ.</string>
+    <string name="dejavu_workspace_theme_custom">ئىختىيارىي رەڭ</string>
+    <string name="dejavu_workspace_theme_add_color">رەڭ قوش</string>
+    <string name="dejavu_workspace_theme_remove_color">بۇ رەڭنى چىقار</string>
+    <string name="dejavu_workspace_theme_code">رەڭ كودى</string>
+    <string name="dejavu_workspace_theme_color">رەڭ</string>
+    <string name="dejavu_workspace_wallpaper">تام قەغىزى</string>
+    <string name="dejavu_workspace_wallpaper_hint">سۈرەت بۇ تېلېفوندا قالىدۇ ۋە باش بەتتە كۆرۈنىدۇ. ئۇنىڭ رەڭلىرى Zen بىلەن قەدەمداشلىنىدىغان تېمىغا ئايلىنىدۇ.</string>
+    <string name="dejavu_workspace_wallpaper_choose">سۈرەت تاللا</string>
+    <string name="dejavu_workspace_wallpaper_change">ئۆزگەرت</string>
+    <string name="dejavu_workspace_wallpaper_blur">غۇۋالىق</string>
+    <string name="dejavu_workspace_wallpaper_failed">بۇ سۈرەتنى ئاچقىلى بولمىدى.</string>
+    <string name="dejavu_workspace_wallpaper_colors">Zen بىلەن قەدەمداشلىنىدىغان رەڭلەر</string>
+    <string name="dejavu_workspace_wallpaper_hint_local">سۈرەت بۇ تېلېفوندا قالىدۇ ۋە باش بەتتە كۆرۈنىدۇ.</string>
+    <string name="dejavu_workspace_wallpaper_colors_local">سۈرەتتىن ئېلىنغان رەڭلەر</string>
+    <string name="dejavu_page_info">بەت تەپسىلاتى</string>
+    <string name="dejavu_page_info_container">قاچا</string>
+    <string name="dejavu_page_info_workspace">خىزمەت دائىرىسى</string>
+    <string name="dejavu_page_info_site_details">بىخەتەرلىك ۋە ئىجازەتلەر</string>
+    <string name="dejavu_page_info_pinned">مىخلانغان</string>
+    <string name="dejavu_page_info_essential">مۇھىم</string>
+    <string name="dejavu_page_info_reader_view">ئوقۇرمەن كۆرۈنۈشى</string>
+    <string name="dejavu_page_info_translated">تەرجىمە قىلىندى</string>
+    <string name="dejavu_menu_reader_view">ئوقۇرمەن كۆرۈنۈشى</string>
+    <string name="dejavu_menu_close_reader_view">ئوقۇرمەن كۆرۈنۈشىنى ياپ</string>
+    <string name="dejavu_workspace_firefox_limits">Firefox Sync نىڭ چەكلىمىلىرى</string>
+    <string name="dejavu_workspace_firefox_device">ھەر بىر ئۈسكۈنىنىڭ پەقەت ئوچۇق بەتكۈچلىرىلا Firefox Sync ئارقىلىق ھەمبەھىرلىنىدۇ. بۇ يەردە ئاچقان ياكى ياپقان بەتكۈچلىرىڭىز شۇ ئۈسكۈنىدىمۇ ئېچىلىدۇ ياكى تاقىلىدۇ، ئەمما بەتكۈچ مىخلاش، قىسقۇچ ياكى مۇھىم قوشۇش، ياكى قاچا تاللاش مۇمكىن ئەمەس. ئىسمى ۋە سىنبەلگىسى ئۈسكۈنىدىن كېلىدۇ، سىز تاللىغان رەڭلەر بۇ تېلېفوندا قالىدۇ.</string>
+    <string name="dejavu_workspace_firefox_own">خىزمەت دائىرىلىرى Firefox Sync ئارقىلىق ھەمبەھىرلەنمەيدۇ، شۇڭا بۇ خىزمەت دائىرىسى مىخلانغان بەتكۈچلىرى ۋە قىسقۇچلىرى بىلەن بىرگە بۇ تېلېفوندا قالىدۇ. Firefox ئۇنىڭ ئوچۇق بەتكۈچلىرىنى بۇ تېلېفوننىڭ بەتكۈچلىرى سۈپىتىدە كۆرسىتىدۇ.</string>
 </resources>

@@ -242,3 +242,12 @@ internal sealed class ImportAction : BookmarksAction {
         internal data object FromMenu : ImportFileClicked()
     }
 }
+
+// Dejavu: every bookmark can be saved to a file other browsers import.
+internal sealed class ExportAction : BookmarksAction {
+    /** The user asked to save every bookmark to a file. */
+    internal data object ExportFileClicked : ExportAction()
+
+    /** The bookmarks were saved to the file the user picked, [count] of them, or `null` when they could not be. */
+    internal data class ExportFinished(val count: Int?) : ExportAction()
+}

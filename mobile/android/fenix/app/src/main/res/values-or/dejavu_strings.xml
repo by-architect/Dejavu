@@ -327,7 +327,6 @@
     <string name="dejavu_settings_author">%1$s ଙ୍କ ଦ୍ୱାରା ତିଆରି</string>
     <string name="dejavu_settings_coffee">ମୋତେ ଗୋଟିଏ କଫି କିଣିଦିଅନ୍ତୁ</string>
     <string name="dejavu_settings_coffee_summary">Dejavu ରେ କୌଣସି ବିଜ୍ଞାପନ ନାହିଁ। ଯଦି ଆପଣଙ୍କୁ ଏହା ଭଲ ଲାଗେ, ଗୋଟିଏ କଫି ଏହାକୁ ବଢ଼ିବାରେ ସାହାଯ୍ୟ କରେ।</string>
-    <string name="dejavu_workspace_device_note">ଏହି କାର୍ଯ୍ୟକ୍ଷେତ୍ର ଆପଣଙ୍କ Mozilla ଆକାଉଣ୍ଟରେ ଥିବା ଏକ ଡିଭାଇସର ଖୋଲା ଟ୍ୟାବ୍ ଦେଖାଏ। ଏହାର ନାମ ଏବଂ ଆଇକନ୍ ସେହି ଡିଭାଇସରୁ ଆସେ, ଏବଂ ଆପଣ ବାଛୁଥିବା ରଙ୍ଗ ଏହି ଫୋନ୍‌ରେ ରହେ।</string>
     <string name="dejavu_settings_safe_browsing">Google ସୁରକ୍ଷିତ ବ୍ରାଉଜିଂ</string>
     <string name="dejavu_back">ପଛକୁ</string>
     <string name="dejavu_sync_start_title">ମିଶାଇବେ ନା ନୂଆରୁ ଆରମ୍ଭ କରିବେ?</string>
@@ -430,4 +429,37 @@
     <string name="dejavu_settings_screen">ସ୍କ୍ରିନ</string>
     <string name="dejavu_settings_hide_system_bars">ଷ୍ଟାଟସ ଏବଂ ନାଭିଗେସନ ବାର ଲୁଚାନ୍ତୁ</string>
     <string name="dejavu_settings_hide_system_bars_summary">ଯେତେବେଳେ ଏକ ପୃଷ୍ଠା ଦେଖାଯାଏ। ସେଗୁଡ଼ିକୁ କିଛି ସମୟ ଦେଖିବା ପାଇଁ ଉପର କିମ୍ବା ତଳ ଧାରରୁ ସ୍ୱାଇପ କରନ୍ତୁ।</string>
+    <string name="dejavu_bookmarks_export">ଫାଇଲକୁ ରପ୍ତାନି କରନ୍ତୁ</string>
+    <plurals name="dejavu_bookmarks_exported">
+        <item quantity="one">%1$d ବୁକମାର୍କ ରପ୍ତାନି ହେଲା</item>
+        <item quantity="other">%1$d ବୁକମାର୍କ ରପ୍ତାନି ହେଲା</item>
+    </plurals>
+    <string name="dejavu_bookmarks_export_failed">ବୁକମାର୍କ ରପ୍ତାନି କରିହେଲା ନାହିଁ। ପୁଣି ଚେଷ୍ଟା କରନ୍ତୁ।</string>
+    <string name="dejavu_workspace_theme_custom">କଷ୍ଟମ୍ ରଙ୍ଗ</string>
+    <string name="dejavu_workspace_theme_add_color">ଏକ ରଙ୍ଗ ଯୋଡନ୍ତୁ</string>
+    <string name="dejavu_workspace_theme_remove_color">ଏହି ରଙ୍ଗ ହଟାନ୍ତୁ</string>
+    <string name="dejavu_workspace_theme_code">ରଙ୍ଗ କୋଡ୍</string>
+    <string name="dejavu_workspace_theme_color">ରଙ୍ଗ</string>
+    <string name="dejavu_workspace_wallpaper">ୱାଲପେପର</string>
+    <string name="dejavu_workspace_wallpaper_hint">ଛବିଟି ଏହି ଫୋନ୍‌ରେ ରହେ ଏବଂ ହୋମ୍ ପୃଷ୍ଠାରେ ଦେଖାଯାଏ। ଏହାର ରଙ୍ଗ Zen ସହିତ ସିଙ୍କ ହେଉଥିବା ଥିମ୍ ହୋଇଯାଏ।</string>
+    <string name="dejavu_workspace_wallpaper_choose">ଏକ ଛବି ବାଛନ୍ତୁ</string>
+    <string name="dejavu_workspace_wallpaper_change">ବଦଳାନ୍ତୁ</string>
+    <string name="dejavu_workspace_wallpaper_blur">ଅସ୍ପଷ୍ଟତା</string>
+    <string name="dejavu_workspace_wallpaper_failed">ଏହି ଛବି ଖୋଲିହେଲା ନାହିଁ।</string>
+    <string name="dejavu_workspace_wallpaper_colors">Zen ସହିତ ସିଙ୍କ ହେଉଥିବା ରଙ୍ଗ</string>
+    <string name="dejavu_workspace_wallpaper_hint_local">ଛବିଟି ଏହି ଫୋନ୍‌ରେ ରହେ ଏବଂ ହୋମ୍ ପୃଷ୍ଠାରେ ଦେଖାଯାଏ।</string>
+    <string name="dejavu_workspace_wallpaper_colors_local">ଛବିରୁ ନିଆଯାଇଥିବା ରଙ୍ଗ</string>
+    <string name="dejavu_page_info">ପୃଷ୍ଠା ବିବରଣୀ</string>
+    <string name="dejavu_page_info_container">କଣ୍ଟେନର</string>
+    <string name="dejavu_page_info_workspace">କାର୍ଯ୍ୟକ୍ଷେତ୍ର</string>
+    <string name="dejavu_page_info_site_details">ସୁରକ୍ଷା ଏବଂ ଅନୁମତି</string>
+    <string name="dejavu_page_info_pinned">ପିନ୍ କରାଯାଇଛି</string>
+    <string name="dejavu_page_info_essential">ଆବଶ୍ୟକୀୟ</string>
+    <string name="dejavu_page_info_reader_view">ପାଠକ ଦୃଶ୍ୟ</string>
+    <string name="dejavu_page_info_translated">ଅନୁବାଦିତ</string>
+    <string name="dejavu_menu_reader_view">ପାଠକ ଦୃଶ୍ୟ</string>
+    <string name="dejavu_menu_close_reader_view">ପାଠକ ଦୃଶ୍ୟ ବନ୍ଦ କରନ୍ତୁ</string>
+    <string name="dejavu_workspace_firefox_limits">Firefox Sync ଦ୍ୱାରା ସୀମିତ</string>
+    <string name="dejavu_workspace_firefox_device">Firefox Sync କେବଳ ପ୍ରତ୍ୟେକ ଡିଭାଇସର ଖୋଲା ଟ୍ୟାବ୍ ସେୟାର କରେ। ଆପଣ ଏଠାରେ ଖୋଲୁଥିବା କିମ୍ବା ବନ୍ଦ କରୁଥିବା ଟ୍ୟାବ୍ ସେହି ଡିଭାଇସରେ ମଧ୍ୟ ଖୋଲେ କିମ୍ବା ବନ୍ଦ ହୁଏ, କିନ୍ତୁ ଆପଣ ଟ୍ୟାବ୍ ପିନ୍ କରିପାରିବେ ନାହିଁ, ଫୋଲଡର କିମ୍ବା ଆବଶ୍ୟକୀୟ ଯୋଡିପାରିବେ ନାହିଁ, କିମ୍ବା କଣ୍ଟେନର ବାଛିପାରିବେ ନାହିଁ। ନାମ ଏବଂ ଆଇକନ୍ ଡିଭାଇସରୁ ଆସେ, ଏବଂ ଆପଣ ବାଛୁଥିବା ରଙ୍ଗ ଏହି ଫୋନ୍‌ରେ ରହେ।</string>
+    <string name="dejavu_workspace_firefox_own">Firefox Sync କାର୍ଯ୍ୟକ୍ଷେତ୍ର ସେୟାର କରେ ନାହିଁ, ତେଣୁ ଏହି କାର୍ଯ୍ୟକ୍ଷେତ୍ର ଏହାର ପିନ୍ ଟ୍ୟାବ୍ ଏବଂ ଫୋଲଡର ସହିତ ଏହି ଫୋନ୍‌ରେ ରହେ। Firefox ଏହାର ଖୋଲା ଟ୍ୟାବ୍‌କୁ ଏହି ଫୋନ୍‌ର ଟ୍ୟାବ୍ ଭାବେ ଦେଖାଏ।</string>
 </resources>

@@ -327,7 +327,6 @@
     <string name="dejavu_settings_author">%1$s тарафыннан ясалган</string>
     <string name="dejavu_settings_coffee">Миңа кофе алып бирегез</string>
     <string name="dejavu_settings_coffee_summary">Dejavu-да реклама юк. Ошаса, бер чынаяк кофе аңа үсәргә ярдәм итә.</string>
-    <string name="dejavu_workspace_device_note">Бу эш өлкәсе Mozilla хисап язмагыздагы бер җиһазның ачык табларын күрсәтә. Аның исеме һәм билгечеге шул җиһаздан килә, ә сез сайлаган төсләр бу телефонда кала.</string>
     <string name="dejavu_settings_safe_browsing">Google куркынычсыз карау</string>
     <string name="dejavu_back">Артка</string>
     <string name="dejavu_sync_start_title">Берләштерергәме, әллә яңадан башларгамы?</string>
@@ -430,4 +429,37 @@
     <string name="dejavu_settings_screen">Экран</string>
     <string name="dejavu_settings_hide_system_bars">Хәл һәм навигация тасмаларын яшерү</string>
     <string name="dejavu_settings_hide_system_bars_summary">Бит күрсәтелгәндә. Аларны бер мизгелгә күрү өчен өске яки аскы читтән тартыгыз.</string>
+    <string name="dejavu_bookmarks_export">Файлга экспортлау</string>
+    <plurals name="dejavu_bookmarks_exported">
+        <item quantity="one">%1$d кыстыргыч экспортланды</item>
+        <item quantity="other">%1$d кыстыргыч экспортланды</item>
+    </plurals>
+    <string name="dejavu_bookmarks_export_failed">Кыстыргычларны экспортлап булмады. Яңадан тырышып карагыз.</string>
+    <string name="dejavu_workspace_theme_custom">Махсус төс</string>
+    <string name="dejavu_workspace_theme_add_color">Төс өстәү</string>
+    <string name="dejavu_workspace_theme_remove_color">Бу төсне чыгару</string>
+    <string name="dejavu_workspace_theme_code">Төс коды</string>
+    <string name="dejavu_workspace_theme_color">Төс</string>
+    <string name="dejavu_workspace_wallpaper">Фон рәсеме</string>
+    <string name="dejavu_workspace_wallpaper_hint">Рәсем бу телефонда кала һәм баш биттә күренә. Аның төсләре Zen белән синхронлаштырыла торган темага әверелә.</string>
+    <string name="dejavu_workspace_wallpaper_choose">Рәсем сайлау</string>
+    <string name="dejavu_workspace_wallpaper_change">Алыштыру</string>
+    <string name="dejavu_workspace_wallpaper_blur">Томанлык</string>
+    <string name="dejavu_workspace_wallpaper_failed">Бу рәсемне ачып булмады.</string>
+    <string name="dejavu_workspace_wallpaper_colors">Zen белән синхронлаштырыла торган төсләр</string>
+    <string name="dejavu_workspace_wallpaper_hint_local">Рәсем бу телефонда кала һәм баш биттә күренә.</string>
+    <string name="dejavu_workspace_wallpaper_colors_local">Рәсемнән алынган төсләр</string>
+    <string name="dejavu_page_info">Бит турында мәгълүмат</string>
+    <string name="dejavu_page_info_container">Контейнер</string>
+    <string name="dejavu_page_info_workspace">Эш өлкәсе</string>
+    <string name="dejavu_page_info_site_details">Хәвефсезлек һәм рөхсәтләр</string>
+    <string name="dejavu_page_info_pinned">Беркетелгән</string>
+    <string name="dejavu_page_info_essential">Төп сайт</string>
+    <string name="dejavu_page_info_reader_view">Уку режимы</string>
+    <string name="dejavu_page_info_translated">Тәрҗемә ителгән</string>
+    <string name="dejavu_menu_reader_view">Уку режимы</string>
+    <string name="dejavu_menu_close_reader_view">Уку режимын ябу</string>
+    <string name="dejavu_workspace_firefox_limits">Firefox Sync белән чикләнгән</string>
+    <string name="dejavu_workspace_firefox_device">Firefox Sync һәр җиһазның ачык табларын гына уртаклаша. Монда ачкан яки япкан табларыгыз шул җиһазда да ачыла яки ябыла, ләкин сез табларны беркетә, папкалар яки төп сайтлар өсти, яисә контейнер сайлый алмыйсыз. Исем һәм билгечек җиһаздан килә, ә сез сайлаган төсләр бу телефонда кала.</string>
+    <string name="dejavu_workspace_firefox_own">Firefox Sync эш өлкәләрен уртаклашмый, шуңа күрә бу эш өлкәсе беркетелгән таблары һәм папкалары белән бу телефонда кала. Firefox бу эш өлкәсенең ачык табларын бу телефонның таблары итеп күрсәтә.</string>
 </resources>

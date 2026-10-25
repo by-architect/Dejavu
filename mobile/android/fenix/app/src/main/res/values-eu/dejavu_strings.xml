@@ -327,7 +327,6 @@
     <string name="dejavu_settings_author">Sortzailea: %1$s</string>
     <string name="dejavu_settings_coffee">Erosidazu kafe bat</string>
     <string name="dejavu_settings_coffee_summary">Dejavuk ez du iragarkirik. Gustuko baduzu, kafe batek hazten laguntzen dio.</string>
-    <string name="dejavu_workspace_device_note">Laneremu honek zure Mozilla kontuko gailu baten irekitako fitxak erakusten ditu. Bere izena eta ikonoa gailu horretatik datoz, eta aukeratzen dituzun koloreak telefono honetan geratzen dira.</string>
     <string name="dejavu_settings_safe_browsing">Google-ren nabigatze segurua</string>
     <string name="dejavu_back">Atzera</string>
     <string name="dejavu_sync_start_title">Bateratu ala hutsetik hasi?</string>
@@ -430,4 +429,37 @@
     <string name="dejavu_settings_screen">Pantaila</string>
     <string name="dejavu_settings_hide_system_bars">Ezkutatu egoera- eta nabigazio-barrak</string>
     <string name="dejavu_settings_hide_system_bars_summary">Orri bat erakusten den bitartean. Pasatu hatza goiko edo beheko ertzetik une batez ikusteko.</string>
+    <string name="dejavu_bookmarks_export">Esportatu fitxategira</string>
+    <plurals name="dejavu_bookmarks_exported">
+        <item quantity="one">%1$d laster-marka esportatu da</item>
+        <item quantity="other">%1$d laster-marka esportatu dira</item>
+    </plurals>
+    <string name="dejavu_bookmarks_export_failed">Ezin dira laster-markak esportatu. Saiatu berriro.</string>
+    <string name="dejavu_workspace_theme_custom">Kolore pertsonalizatua</string>
+    <string name="dejavu_workspace_theme_add_color">Gehitu kolore bat</string>
+    <string name="dejavu_workspace_theme_remove_color">Kendu kolore hau</string>
+    <string name="dejavu_workspace_theme_code">Kolore-kodea</string>
+    <string name="dejavu_workspace_theme_color">Kolorea</string>
+    <string name="dejavu_workspace_wallpaper">Horma-papera</string>
+    <string name="dejavu_workspace_wallpaper_hint">Irudia telefono honetan geratzen da eta hasierako orrian erakusten da. Bere koloreak Zenekin sinkronizatzen den gaia bihurtzen dira.</string>
+    <string name="dejavu_workspace_wallpaper_choose">Aukeratu irudi bat</string>
+    <string name="dejavu_workspace_wallpaper_change">Aldatu</string>
+    <string name="dejavu_workspace_wallpaper_blur">Lausotzea</string>
+    <string name="dejavu_workspace_wallpaper_failed">Ezin izan da irudi hau ireki.</string>
+    <string name="dejavu_workspace_wallpaper_colors">Zenekin sinkronizatzen diren koloreak</string>
+    <string name="dejavu_workspace_wallpaper_hint_local">Irudia telefono honetan geratzen da eta hasierako orrian erakusten da.</string>
+    <string name="dejavu_workspace_wallpaper_colors_local">Iruditik hartutako koloreak</string>
+    <string name="dejavu_page_info">Orriaren xehetasunak</string>
+    <string name="dejavu_page_info_container">Edukiontzia</string>
+    <string name="dejavu_page_info_workspace">Laneremua</string>
+    <string name="dejavu_page_info_site_details">Segurtasuna eta baimenak</string>
+    <string name="dejavu_page_info_pinned">Finkatuta</string>
+    <string name="dejavu_page_info_essential">Funtsezkoa</string>
+    <string name="dejavu_page_info_reader_view">Irakurtzeko ikuspegia</string>
+    <string name="dejavu_page_info_translated">Itzulita</string>
+    <string name="dejavu_menu_reader_view">Irakurtzeko ikuspegia</string>
+    <string name="dejavu_menu_close_reader_view">Itxi irakurtzeko ikuspegia</string>
+    <string name="dejavu_workspace_firefox_limits">Firefox Sync-ek mugatuta</string>
+    <string name="dejavu_workspace_firefox_device">Firefox Sync-ek gailu bakoitzaren fitxa irekiak soilik partekatzen ditu. Hemen irekitzen edo ixten dituzun fitxak gailu horretan ere irekitzen edo ixten dira, baina ezin dituzu fitxak finkatu, karpetak edo funtsezkoak gehitu, ezta edukiontzirik aukeratu ere. Izena eta ikonoa gailutik datoz, eta aukeratzen dituzun koloreak telefono honetan geratzen dira.</string>
+    <string name="dejavu_workspace_firefox_own">Firefox Sync-ek ez ditu laneremuak partekatzen; beraz, laneremu hau, bere finkatutako fitxa eta karpetekin, telefono honetan geratzen da. Firefoxek bere fitxa irekiak telefono honetako fitxa gisa erakusten ditu.</string>
 </resources>

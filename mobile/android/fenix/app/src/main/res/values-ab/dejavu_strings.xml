@@ -327,7 +327,6 @@
     <string name="dejavu_settings_author">Аԥызҵаз: %1$s</string>
     <string name="dejavu_settings_coffee">Акаҳуа исзаашәхәа</string>
     <string name="dejavu_settings_coffee_summary">Dejavu аҟны аӡыргақәа ыҟаӡам. Ишәгәаԥхозар, акаҳуа иара аизҳара иацхраауеит.</string>
-    <string name="dejavu_workspace_device_note">Ари аҭыԥ шәы Mozilla аккаунт аҟны иҟоу амашьынак иаарту абларҭақәа иаанарԥшуеит. Ахьӡи аиконкеи уи амашьына аҟынтә иаауеит, иалышәхуа аԥштәқәа ари ателефон аҟны иаанхоит.</string>
     <string name="dejavu_settings_safe_browsing">Google Safe Browsing</string>
     <string name="dejavu_back">Шьҭахьҟа</string>
     <string name="dejavu_sync_start_title">Аидкылара ма ҿыц алагара?</string>
@@ -430,4 +429,37 @@
     <string name="dejavu_settings_screen">Аекран</string>
     <string name="dejavu_settings_hide_system_bars">Аҭагылазаашьеи анавигациеи рпанельқәа рыҵаҵыхра</string>
     <string name="dejavu_settings_hide_system_bars_summary">Адаҟьа анаарԥшуа. Уеизгьы иаразнак рбара азы, аекран хыхьтәи ма ҵаҟатәи аҿықә аҟнытә ишьҭыҵ.</string>
+    <string name="dejavu_bookmarks_export">Афаил ахь аекспорт</string>
+    <plurals name="dejavu_bookmarks_exported">
+        <item quantity="one">Аекспорт зауз адыргақәа: %1$d</item>
+        <item quantity="other">Аекспорт зауз адыргақәа: %1$d</item>
+    </plurals>
+    <string name="dejavu_bookmarks_export_failed">Адыргақәа аекспорт алымшеит. Даҽазнык шәҽазышәшәа.</string>
+    <string name="dejavu_workspace_theme_custom">Ахатә аԥштәы</string>
+    <string name="dejavu_workspace_theme_add_color">Аԥштәы адалаӡара</string>
+    <string name="dejavu_workspace_theme_remove_color">Ари аԥштәы аныхра</string>
+    <string name="dejavu_workspace_theme_code">Аԥштәы акод</string>
+    <string name="dejavu_workspace_theme_color">Аԥштәы</string>
+    <string name="dejavu_workspace_wallpaper">Аҭӡамц</string>
+    <string name="dejavu_workspace_wallpaper_hint">Асахьа ари ателефон аҟны иаанхоит, насгьы ахатә даҟьаҿы иаадырԥшуеит. Асахьа аԥштәқәа Zen ала асинхронизациа змоу атема иҟалоит.</string>
+    <string name="dejavu_workspace_wallpaper_choose">Асахьа алхра</string>
+    <string name="dejavu_workspace_wallpaper_change">Аԥсахра</string>
+    <string name="dejavu_workspace_wallpaper_blur">Аразмытие</string>
+    <string name="dejavu_workspace_wallpaper_failed">Ари асахьа аартра алымшеит.</string>
+    <string name="dejavu_workspace_wallpaper_colors">Zen ала асинхронизациа змоу аԥштәқәа</string>
+    <string name="dejavu_workspace_wallpaper_hint_local">Асахьа ари ателефон аҟны иаанхоит, насгьы ахатә даҟьаҿы иаадырԥшуеит.</string>
+    <string name="dejavu_workspace_wallpaper_colors_local">Асахьа аԥштәқәа</string>
+    <string name="dejavu_page_info">Адаҟьа иазку адыррақәа</string>
+    <string name="dejavu_page_info_container">Аконтейнер</string>
+    <string name="dejavu_page_info_workspace">Аҭыԥ</string>
+    <string name="dejavu_page_info_site_details">Ашәарҭадареи азинқәеи</string>
+    <string name="dejavu_page_info_pinned">Ификсациатә</string>
+    <string name="dejavu_page_info_essential">Иҵакыу сайт</string>
+    <string name="dejavu_page_info_reader_view">Аԥхьара аԥшра</string>
+    <string name="dejavu_page_info_translated">Еиҭагоуп</string>
+    <string name="dejavu_menu_reader_view">Аԥхьара аԥшра</string>
+    <string name="dejavu_menu_close_reader_view">Аԥхьара аҿаԥшыра арктәуп</string>
+    <string name="dejavu_workspace_firefox_limits">Firefox Sync аҳәаақәа</string>
+    <string name="dejavu_workspace_firefox_device">Firefox Sync ала амашьына цыԥхьаӡа иаарту абларҭақәа мацара рсинхронизациа мҩаԥысуеит. Ара абларҭақәа иаашәыртыр ма ишәаркыр, уи амашьына аҟынгьы иаартхоит ма иаркхоит, аха абларҭақәа рфиксациа, апапкақәа ма иҵакыу сайтқәа рыдалаӡара, ма аконтейнер алхра шәылшом. Ахьӡи аиконкеи амашьына аҟынтә иаауеит, насгьы иалышәхуа аԥштәқәа ари ателефон аҟны иаанхоит.</string>
+    <string name="dejavu_workspace_firefox_own">Firefox Sync ала аҭыԥқәа рсинхронизациа мҩаԥысуам, убри аҟынтә ари аҭыԥ, ификсациатә абларҭақәеи апапкақәеи аманы, ари ателефон аҟны иаанхоит. Firefox ари аҭыԥ иаарту абларҭақәа ари ателефон абларҭақәа реиԥш иаанарԥшуеит.</string>
 </resources>

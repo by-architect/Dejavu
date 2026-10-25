@@ -334,7 +334,6 @@
     <string name="dejavu_settings_author">Creà da %1$s</string>
     <string name="dejavu_settings_coffee">Pàgheme un cafè</string>
     <string name="dejavu_settings_coffee_summary">Dejavu no’l ga publicità. Se el te piase, un cafè el lo juta a crésser.</string>
-    <string name="dejavu_workspace_device_note">Sto spasio de laoro el mostra łe schede verte de un aparechio del to account Mozilla. El so nome e ła so icona i vien da quel aparechio, e i coƚori che te sielsi i resta so sto tełèfono.</string>
     <string name="dejavu_settings_safe_browsing">Navegasion segura de Google</string>
     <string name="dejavu_back">Indrio</string>
     <string name="dejavu_sync_start_title">Conbinar o scomensar da novo?</string>
@@ -437,4 +436,38 @@
     <string name="dejavu_settings_screen">Schermo</string>
     <string name="dejavu_settings_hide_system_bars">Scondi le bare de stato e de navegasion</string>
     <string name="dejavu_settings_hide_system_bars_summary">Co se mostra na pagina. Scori dal bordo de sora o de soto par vedarle par un momento.</string>
+    <string name="dejavu_bookmarks_export">Esporta in un file</string>
+    <plurals name="dejavu_bookmarks_exported">
+        <item quantity="one">%1$d segnaƚibro esportà</item>
+        <item quantity="many">%1$d segnaƚibri esportà</item>
+        <item quantity="other">%1$d segnaƚibri esportà</item>
+    </plurals>
+    <string name="dejavu_bookmarks_export_failed">No xe stà posibiłe esportar i segnaƚibri. Prova torna.</string>
+    <string name="dejavu_workspace_theme_custom">Coƚor personałizà</string>
+    <string name="dejavu_workspace_theme_add_color">Gionta un coƚor</string>
+    <string name="dejavu_workspace_theme_remove_color">Cava via sto coƚor</string>
+    <string name="dejavu_workspace_theme_code">Còdaze del coƚor</string>
+    <string name="dejavu_workspace_theme_color">Coƚor</string>
+    <string name="dejavu_workspace_wallpaper">Sfondo</string>
+    <string name="dejavu_workspace_wallpaper_hint">L’imagine ła resta so sto tełèfono e ła vien fora inte ła pagina prinsipałe. I so coƚori i deventa el tema che se sincroniza co Zen.</string>
+    <string name="dejavu_workspace_wallpaper_choose">Sielsi na imagine</string>
+    <string name="dejavu_workspace_wallpaper_change">Cambia</string>
+    <string name="dejavu_workspace_wallpaper_blur">Sfocadura</string>
+    <string name="dejavu_workspace_wallpaper_failed">No xe stà posibiłe vèrxer sta imagine.</string>
+    <string name="dejavu_workspace_wallpaper_colors">Coƚori che se sincroniza co Zen</string>
+    <string name="dejavu_workspace_wallpaper_hint_local">L’imagine ła resta so sto tełèfono e ła vien fora inte ła pagina prinsipałe.</string>
+    <string name="dejavu_workspace_wallpaper_colors_local">Coƚori ciapà da l’imagine</string>
+    <string name="dejavu_page_info">Detaji de ła pagina</string>
+    <string name="dejavu_page_info_container">Contenidor</string>
+    <string name="dejavu_page_info_workspace">Spasio de laoro</string>
+    <string name="dejavu_page_info_site_details">Sicuresa e parmesi</string>
+    <string name="dejavu_page_info_pinned">Fisà</string>
+    <string name="dejavu_page_info_essential">Essensiałe</string>
+    <string name="dejavu_page_info_reader_view">Modalità ƚetura</string>
+    <string name="dejavu_page_info_translated">Tradota</string>
+    <string name="dejavu_menu_reader_view">Modalità ƚetura</string>
+    <string name="dejavu_menu_close_reader_view">Sara ła modalità ƚetura</string>
+    <string name="dejavu_workspace_firefox_limits">Łimità da Firefox Sync</string>
+    <string name="dejavu_workspace_firefox_device">Firefox Sync el condivide soło łe schede verte de onji aparechio. Łe schede che te verxi o te sari qua łe se verxe o łe se sara anca so quel aparechio, ma no te pol fisar schede, giontar cartełe o essensiałi, o sielser un contenidor. El nome e ła icona i vien da l’aparechio, e i coƚori che te sielsi i resta so sto tełèfono.</string>
+    <string name="dejavu_workspace_firefox_own">Firefox Sync no’l condivide i spasi de laoro, cusì sto spasio de laoro, co łe so schede fisà e łe so cartełe, el resta so sto tełèfono. Firefox el mostra łe so schede verte come schede de sto tełèfono.</string>
 </resources>

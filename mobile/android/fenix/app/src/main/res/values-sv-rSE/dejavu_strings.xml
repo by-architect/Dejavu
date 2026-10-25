@@ -327,7 +327,6 @@
     <string name="dejavu_settings_author">Skapad av %1$s</string>
     <string name="dejavu_settings_coffee">Bjud mig på en kaffe</string>
     <string name="dejavu_settings_coffee_summary">Dejavu har inga annonser. Om du gillar appen hjälper en kaffe den att växa.</string>
-    <string name="dejavu_workspace_device_note">Den här arbetsytan visar de öppna flikarna på en enhet i ditt Mozilla-konto. Namnet och ikonen kommer från den enheten, och färgerna du väljer stannar på den här telefonen.</string>
     <string name="dejavu_settings_safe_browsing">Google Säker webbsökning</string>
     <string name="dejavu_back">Tillbaka</string>
     <string name="dejavu_sync_start_title">Slå ihop eller börja om?</string>
@@ -430,4 +429,37 @@
     <string name="dejavu_settings_screen">Skärm</string>
     <string name="dejavu_settings_hide_system_bars">Dölj status- och navigeringsfältet</string>
     <string name="dejavu_settings_hide_system_bars_summary">Medan en sida visas. Svep in från över- eller underkanten för att se dem en stund.</string>
+    <string name="dejavu_bookmarks_export">Exportera till fil</string>
+    <plurals name="dejavu_bookmarks_exported">
+        <item quantity="one">%1$d bokmärke exporterat</item>
+        <item quantity="other">%1$d bokmärken exporterade</item>
+    </plurals>
+    <string name="dejavu_bookmarks_export_failed">Det gick inte att exportera bokmärken. Försök igen.</string>
+    <string name="dejavu_workspace_theme_custom">Anpassad färg</string>
+    <string name="dejavu_workspace_theme_add_color">Lägg till en färg</string>
+    <string name="dejavu_workspace_theme_remove_color">Ta bort den här färgen</string>
+    <string name="dejavu_workspace_theme_code">Färgkod</string>
+    <string name="dejavu_workspace_theme_color">Färg</string>
+    <string name="dejavu_workspace_wallpaper">Bakgrundsbild</string>
+    <string name="dejavu_workspace_wallpaper_hint">Bilden stannar på den här telefonen och visas på hemsidan. Dess färger blir temat som synkroniseras med Zen.</string>
+    <string name="dejavu_workspace_wallpaper_choose">Välj en bild</string>
+    <string name="dejavu_workspace_wallpaper_change">Ändra</string>
+    <string name="dejavu_workspace_wallpaper_blur">Oskärpa</string>
+    <string name="dejavu_workspace_wallpaper_failed">Den här bilden kunde inte öppnas.</string>
+    <string name="dejavu_workspace_wallpaper_colors">Färger som synkroniseras med Zen</string>
+    <string name="dejavu_workspace_wallpaper_hint_local">Bilden stannar på den här telefonen och visas på hemsidan.</string>
+    <string name="dejavu_workspace_wallpaper_colors_local">Färger hämtade från bilden</string>
+    <string name="dejavu_page_info">Sidinformation</string>
+    <string name="dejavu_page_info_container">Behållare</string>
+    <string name="dejavu_page_info_workspace">Arbetsyta</string>
+    <string name="dejavu_page_info_site_details">Säkerhet och behörigheter</string>
+    <string name="dejavu_page_info_pinned">Fäst</string>
+    <string name="dejavu_page_info_essential">Favorit</string>
+    <string name="dejavu_page_info_reader_view">Läsvy</string>
+    <string name="dejavu_page_info_translated">Översatt</string>
+    <string name="dejavu_menu_reader_view">Läsvy</string>
+    <string name="dejavu_menu_close_reader_view">Stäng läsarvy</string>
+    <string name="dejavu_workspace_firefox_limits">Begränsas av Firefox Sync</string>
+    <string name="dejavu_workspace_firefox_device">Firefox Sync delar bara de öppna flikarna på varje enhet. Flikar du öppnar eller stänger här öppnas eller stängs även på den enheten, men du kan inte fästa flikar, lägga till mappar eller favoriter, eller välja en behållare. Namnet och ikonen kommer från enheten, och färgerna du väljer stannar på den här telefonen.</string>
+    <string name="dejavu_workspace_firefox_own">Firefox Sync delar inte arbetsytor, så den här arbetsytan, med sina fästa flikar och mappar, stannar på den här telefonen. Firefox visar dess öppna flikar som den här telefonens flikar.</string>
 </resources>

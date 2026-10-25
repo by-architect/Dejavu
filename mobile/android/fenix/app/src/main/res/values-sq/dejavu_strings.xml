@@ -327,7 +327,6 @@
     <string name="dejavu_settings_author">Krijuar nga %1$s</string>
     <string name="dejavu_settings_coffee">Më blini një kafe</string>
     <string name="dejavu_settings_coffee_summary">Dejavu s\'ka reklama. Nëse ju pëlqen, një kafe e ndihmon të rritet.</string>
-    <string name="dejavu_workspace_device_note">Kjo hapësirë pune shfaq skedat e hapura të një pajisjeje në llogarinë tuaj Mozilla. Emri dhe ikona e saj vijnë nga ajo pajisje, ndërsa ngjyrat që zgjidhni mbeten në këtë telefon.</string>
     <string name="dejavu_settings_safe_browsing">Shfletim i sigurt nga Google</string>
     <string name="dejavu_back">Mbrapsht</string>
     <string name="dejavu_sync_start_title">Të përzihen, apo të fillohet nga e para?</string>
@@ -430,4 +429,37 @@
     <string name="dejavu_settings_screen">Ekrani</string>
     <string name="dejavu_settings_hide_system_bars">Fshih shiritat e gjendjes dhe të lëvizjes</string>
     <string name="dejavu_settings_hide_system_bars_summary">Teksa shfaqet një faqe. Rrëshqitni nga skaji i sipërm ose i poshtëm që t\'i shihni për një çast.</string>
+    <string name="dejavu_bookmarks_export">Eksporto në kartelë</string>
+    <plurals name="dejavu_bookmarks_exported">
+        <item quantity="one">%1$d faqerojtës u eksportua</item>
+        <item quantity="other">%1$d faqerojtës u eksportuan</item>
+    </plurals>
+    <string name="dejavu_bookmarks_export_failed">S\'u eksportuan dot faqerojtësit. Riprovoni.</string>
+    <string name="dejavu_workspace_theme_custom">Ngjyrë vetjake</string>
+    <string name="dejavu_workspace_theme_add_color">Shto ngjyrë</string>
+    <string name="dejavu_workspace_theme_remove_color">Hiqe këtë ngjyrë</string>
+    <string name="dejavu_workspace_theme_code">Kod ngjyre</string>
+    <string name="dejavu_workspace_theme_color">Ngjyrë</string>
+    <string name="dejavu_workspace_wallpaper">Sfond</string>
+    <string name="dejavu_workspace_wallpaper_hint">Figura mbetet në këtë telefon dhe shfaqet në faqen kreu. Ngjyrat e saj bëhen tema që njëkohësohet me Zen-in.</string>
+    <string name="dejavu_workspace_wallpaper_choose">Zgjidhni një figurë</string>
+    <string name="dejavu_workspace_wallpaper_change">Ndryshoje</string>
+    <string name="dejavu_workspace_wallpaper_blur">Turbullim</string>
+    <string name="dejavu_workspace_wallpaper_failed">Kjo figurë s\'u hap dot.</string>
+    <string name="dejavu_workspace_wallpaper_colors">Ngjyra që njëkohësohen me Zen-in</string>
+    <string name="dejavu_workspace_wallpaper_hint_local">Figura mbetet në këtë telefon dhe shfaqet në faqen kreu.</string>
+    <string name="dejavu_workspace_wallpaper_colors_local">Ngjyra të marra nga figura</string>
+    <string name="dejavu_page_info">Hollësi faqeje</string>
+    <string name="dejavu_page_info_container">Kontejner</string>
+    <string name="dejavu_page_info_workspace">Hapësirë pune</string>
+    <string name="dejavu_page_info_site_details">Siguri dhe leje</string>
+    <string name="dejavu_page_info_pinned">E fiksuar</string>
+    <string name="dejavu_page_info_essential">Thelbësore</string>
+    <string name="dejavu_page_info_reader_view">Pamja Lexues</string>
+    <string name="dejavu_page_info_translated">E përkthyer</string>
+    <string name="dejavu_menu_reader_view">Pamja Lexues</string>
+    <string name="dejavu_menu_close_reader_view">Mbylle pamjen lexues</string>
+    <string name="dejavu_workspace_firefox_limits">Kufizime nga Firefox Sync</string>
+    <string name="dejavu_workspace_firefox_device">Firefox Sync njëkohëson vetëm skedat e hapura të çdo pajisjeje. Skedat që hapni ose mbyllni këtu hapen ose mbyllen edhe në atë pajisje, por s\'mund të fiksoni skeda, të shtoni dosje apo thelbësore, ose të zgjidhni një kontejner. Emri dhe ikona vijnë nga pajisja, ndërsa ngjyrat që zgjidhni mbeten në këtë telefon.</string>
+    <string name="dejavu_workspace_firefox_own">Firefox Sync s\'njëkohëson hapësira pune, ndaj kjo hapësirë pune, me skedat e saj të fiksuara dhe dosjet, mbetet në këtë telefon. Firefox-i i shfaq skedat e saj të hapura si skeda të këtij telefoni.</string>
 </resources>

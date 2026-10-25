@@ -327,7 +327,6 @@
     <string name="dejavu_settings_author">%1$s రూపొందించారు</string>
     <string name="dejavu_settings_coffee">నాకు ఒక కాఫీ కొనివ్వండి</string>
     <string name="dejavu_settings_coffee_summary">Dejavuలో ప్రకటనలు లేవు. మీకు నచ్చితే, ఒక కాఫీ దాని ఎదుగుదలకు సహాయపడుతుంది.</string>
-    <string name="dejavu_workspace_device_note">ఈ కార్యస్థలం మీ Mozilla ఖాతాలోని ఒక పరికరం యొక్క తెరిచిన ట్యాబులను చూపిస్తుంది. దీని పేరు మరియు చిహ్నం ఆ పరికరం నుండి వస్తాయి, మరియు మీరు ఎంచుకునే రంగులు ఈ ఫోనులోనే ఉంటాయి.</string>
     <string name="dejavu_settings_safe_browsing">Google సురక్షిత బ్రౌజింగ్</string>
     <string name="dejavu_back">వెనుకకు</string>
     <string name="dejavu_sync_start_title">విలీనం చేయాలా లేదా కొత్తగా ప్రారంభించాలా?</string>
@@ -430,4 +429,37 @@
     <string name="dejavu_settings_screen">స్క్రీన్</string>
     <string name="dejavu_settings_hide_system_bars">స్టేటస్, నావిగేషన్ బార్‌లను దాచు</string>
     <string name="dejavu_settings_hide_system_bars_summary">పేజీ చూపబడుతున్నప్పుడు. వాటిని ఒక్క క్షణం చూడటానికి పై లేదా కింది అంచు నుండి స్వైప్ చేయండి.</string>
+    <string name="dejavu_bookmarks_export">ఫైలుకు ఎగుమతి చేయి</string>
+    <plurals name="dejavu_bookmarks_exported">
+        <item quantity="one">%1$d ఇష్టాంశం ఎగుమతి చేయబడింది</item>
+        <item quantity="other">%1$d ఇష్టాంశాలు ఎగుమతి చేయబడ్డాయి</item>
+    </plurals>
+    <string name="dejavu_bookmarks_export_failed">ఇష్టాంశాలను ఎగుమతి చేయలేకపోయింది. మళ్లీ ప్రయత్నించండి.</string>
+    <string name="dejavu_workspace_theme_custom">అనుకూల రంగు</string>
+    <string name="dejavu_workspace_theme_add_color">ఒక రంగును చేర్చు</string>
+    <string name="dejavu_workspace_theme_remove_color">ఈ రంగును తీసివేయి</string>
+    <string name="dejavu_workspace_theme_code">రంగు కోడ్</string>
+    <string name="dejavu_workspace_theme_color">రంగు</string>
+    <string name="dejavu_workspace_wallpaper">వాల్‌పేపర్</string>
+    <string name="dejavu_workspace_wallpaper_hint">చిత్రం ఈ ఫోనులోనే ఉంటుంది మరియు హోమ్ పేజీలో కనిపిస్తుంది. దాని రంగులు Zenతో సింక్ అయ్యే థీమ్‌గా మారతాయి.</string>
+    <string name="dejavu_workspace_wallpaper_choose">ఒక చిత్రాన్ని ఎంచుకో</string>
+    <string name="dejavu_workspace_wallpaper_change">మార్చు</string>
+    <string name="dejavu_workspace_wallpaper_blur">మసక</string>
+    <string name="dejavu_workspace_wallpaper_failed">ఈ చిత్రాన్ని తెరవలేకపోయింది.</string>
+    <string name="dejavu_workspace_wallpaper_colors">Zenతో సింక్ అయ్యే రంగులు</string>
+    <string name="dejavu_workspace_wallpaper_hint_local">చిత్రం ఈ ఫోనులోనే ఉంటుంది మరియు హోమ్ పేజీలో కనిపిస్తుంది.</string>
+    <string name="dejavu_workspace_wallpaper_colors_local">చిత్రం నుండి తీసుకున్న రంగులు</string>
+    <string name="dejavu_page_info">పేజీ వివరాలు</string>
+    <string name="dejavu_page_info_container">కంటైనర్</string>
+    <string name="dejavu_page_info_workspace">కార్యస్థలం</string>
+    <string name="dejavu_page_info_site_details">భద్రత మరియు అనుమతులు</string>
+    <string name="dejavu_page_info_pinned">పిన్ చేయబడింది</string>
+    <string name="dejavu_page_info_essential">ముఖ్యమైనది</string>
+    <string name="dejavu_page_info_reader_view">చదివే వీక్షణ</string>
+    <string name="dejavu_page_info_translated">అనువదించబడింది</string>
+    <string name="dejavu_menu_reader_view">చదివే వీక్షణ</string>
+    <string name="dejavu_menu_close_reader_view">చదివే వీక్షణను మూసివేయి</string>
+    <string name="dejavu_workspace_firefox_limits">Firefox Sync పరిమితులు</string>
+    <string name="dejavu_workspace_firefox_device">Firefox Sync ప్రతి పరికరం యొక్క తెరిచిన ట్యాబులను మాత్రమే పంచుకుంటుంది. మీరు ఇక్కడ తెరిచే లేదా మూసివేసే ట్యాబులు ఆ పరికరంలో కూడా తెరుచుకుంటాయి లేదా మూసుకుంటాయి, కానీ మీరు ట్యాబులను పిన్ చేయలేరు, ఫోల్డర్లను లేదా ముఖ్యమైనవాటిని చేర్చలేరు, లేదా కంటైనర్‌ను ఎంచుకోలేరు. పేరు మరియు చిహ్నం పరికరం నుండి వస్తాయి, మరియు మీరు ఎంచుకునే రంగులు ఈ ఫోనులోనే ఉంటాయి.</string>
+    <string name="dejavu_workspace_firefox_own">Firefox Sync కార్యస్థలాలను పంచుకోదు, కాబట్టి ఈ కార్యస్థలం, దాని పిన్ చేసిన ట్యాబులు మరియు ఫోల్డర్లతో సహా, ఈ ఫోనులోనే ఉంటుంది. Firefox దీని తెరిచిన ట్యాబులను ఈ ఫోను ట్యాబులుగా చూపిస్తుంది.</string>
 </resources>

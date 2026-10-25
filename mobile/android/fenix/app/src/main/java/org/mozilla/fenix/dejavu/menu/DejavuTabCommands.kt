@@ -15,6 +15,8 @@ import mozilla.components.browser.state.action.TabListAction
 import mozilla.components.browser.state.state.TabSessionState
 import org.mozilla.fenix.R
 import org.mozilla.fenix.components.Components
+import org.mozilla.fenix.components.appstate.AppAction.ReaderViewAction.ReaderViewDismissed
+import org.mozilla.fenix.components.appstate.AppAction.ReaderViewAction.ReaderViewStarted
 import org.mozilla.fenix.dejavu.actions.ActionContext
 import org.mozilla.fenix.dejavu.actions.CustomAction
 import org.mozilla.fenix.dejavu.actions.CustomActionRunner
@@ -54,6 +56,8 @@ internal class DejavuTabCommands(
             MoreMenuItem.RESET_PINNED_URL -> pin?.url?.let { sessionUseCases.loadUrl(it, tab.id) }
             MoreMenuItem.REPLACE_PINNED_URL -> pin?.let { repository.replacePinUrl(it.id, tab.content.url, tab.content.title) }
             MoreMenuItem.SPLIT_VIEW -> repository.unsplit(setOf(tab.id))
+            MoreMenuItem.READER_VIEW ->
+                components.appStore.dispatch(if (tab.readerState.active) ReaderViewDismissed else ReaderViewStarted)
             else -> return false
         }
         return true

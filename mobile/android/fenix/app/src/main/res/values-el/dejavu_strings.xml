@@ -327,7 +327,6 @@
     <string name="dejavu_settings_author">Δημιουργός: %1$s</string>
     <string name="dejavu_settings_coffee">Κεράστε με έναν καφέ</string>
     <string name="dejavu_settings_coffee_summary">Το Dejavu δεν έχει διαφημίσεις. Αν σας αρέσει, ένας καφές το βοηθά να μεγαλώσει.</string>
-    <string name="dejavu_workspace_device_note">Αυτός ο χώρος εργασίας εμφανίζει τις ανοικτές καρτέλες μιας συσκευής του λογαριασμού σας Mozilla. Το όνομα και το εικονίδιό του προέρχονται από εκείνη τη συσκευή, και τα χρώματα που επιλέγετε μένουν σε αυτό το τηλέφωνο.</string>
     <string name="dejavu_settings_safe_browsing">Ασφαλής περιήγηση Google</string>
     <string name="dejavu_back">Πίσω</string>
     <string name="dejavu_sync_start_title">Συγχώνευση ή νέα αρχή?</string>
@@ -430,4 +429,37 @@
     <string name="dejavu_settings_screen">Οθόνη</string>
     <string name="dejavu_settings_hide_system_bars">Απόκρυψη γραμμών κατάστασης και πλοήγησης</string>
     <string name="dejavu_settings_hide_system_bars_summary">Όσο εμφανίζεται μια σελίδα. Σύρετε από το πάνω ή το κάτω άκρο για να τις δείτε για λίγο.</string>
+    <string name="dejavu_bookmarks_export">Εξαγωγή σε αρχείο</string>
+    <plurals name="dejavu_bookmarks_exported">
+        <item quantity="one">%1$d σελιδοδείκτης εξήχθη</item>
+        <item quantity="other">%1$d σελιδοδείκτες εξήχθησαν</item>
+    </plurals>
+    <string name="dejavu_bookmarks_export_failed">Δεν ήταν δυνατή η εξαγωγή σελιδοδεικτών. Δοκιμάστε ξανά.</string>
+    <string name="dejavu_workspace_theme_custom">Προσαρμοσμένο χρώμα</string>
+    <string name="dejavu_workspace_theme_add_color">Προσθήκη χρώματος</string>
+    <string name="dejavu_workspace_theme_remove_color">Αφαίρεση αυτού του χρώματος</string>
+    <string name="dejavu_workspace_theme_code">Κωδικός χρώματος</string>
+    <string name="dejavu_workspace_theme_color">Χρώμα</string>
+    <string name="dejavu_workspace_wallpaper">Ταπετσαρία</string>
+    <string name="dejavu_workspace_wallpaper_hint">Η εικόνα παραμένει σε αυτό το τηλέφωνο και εμφανίζεται στην αρχική σελίδα. Τα χρώματά της γίνονται το θέμα που συγχρονίζεται με το Zen.</string>
+    <string name="dejavu_workspace_wallpaper_choose">Επιλογή εικόνας</string>
+    <string name="dejavu_workspace_wallpaper_change">Αλλαγή</string>
+    <string name="dejavu_workspace_wallpaper_blur">Θόλωμα</string>
+    <string name="dejavu_workspace_wallpaper_failed">Δεν ήταν δυνατό το άνοιγμα αυτής της εικόνας.</string>
+    <string name="dejavu_workspace_wallpaper_colors">Χρώματα που συγχρονίζονται με το Zen</string>
+    <string name="dejavu_workspace_wallpaper_hint_local">Η εικόνα παραμένει σε αυτό το τηλέφωνο και εμφανίζεται στην αρχική σελίδα.</string>
+    <string name="dejavu_workspace_wallpaper_colors_local">Χρώματα από την εικόνα</string>
+    <string name="dejavu_page_info">Λεπτομέρειες σελίδας</string>
+    <string name="dejavu_page_info_container">Περιέκτης</string>
+    <string name="dejavu_page_info_workspace">Χώρος εργασίας</string>
+    <string name="dejavu_page_info_site_details">Ασφάλεια και δικαιώματα</string>
+    <string name="dejavu_page_info_pinned">Καρφιτσωμένη</string>
+    <string name="dejavu_page_info_essential">Στα αγαπημένα</string>
+    <string name="dejavu_page_info_reader_view">Προβολή ανάγνωσης</string>
+    <string name="dejavu_page_info_translated">Μεταφράστηκε</string>
+    <string name="dejavu_menu_reader_view">Προβολή ανάγνωσης</string>
+    <string name="dejavu_menu_close_reader_view">Κλείσιμο προβολής ανάγνωσης</string>
+    <string name="dejavu_workspace_firefox_limits">Περιορισμοί του Firefox Sync</string>
+    <string name="dejavu_workspace_firefox_device">Το Firefox Sync μοιράζεται μόνο τις ανοικτές καρτέλες κάθε συσκευής. Οι καρτέλες που ανοίγετε ή κλείνετε εδώ ανοίγουν ή κλείνουν και σε εκείνη τη συσκευή, αλλά δεν μπορείτε να καρφιτσώνετε καρτέλες, να προσθέτετε φακέλους ή αγαπημένα ή να επιλέγετε περιέκτη. Το όνομα και το εικονίδιο προέρχονται από τη συσκευή, ενώ τα χρώματα που επιλέγετε παραμένουν σε αυτό το τηλέφωνο.</string>
+    <string name="dejavu_workspace_firefox_own">Το Firefox Sync δεν μοιράζεται χώρους εργασίας, οπότε αυτός ο χώρος εργασίας, μαζί με τις καρφιτσωμένες καρτέλες και τους φακέλους του, παραμένει σε αυτό το τηλέφωνο. Το Firefox εμφανίζει τις ανοικτές καρτέλες του ως καρτέλες αυτού του τηλεφώνου.</string>
 </resources>

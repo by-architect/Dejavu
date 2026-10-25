@@ -327,7 +327,6 @@
     <string name="dejavu_settings_author">ساخته %1$s</string>
     <string name="dejavu_settings_coffee">یه قهوه سیم بخر</string>
     <string name="dejavu_settings_coffee_summary">Dejavu تبلیغ نداره. اگه خوشت اومد، یه قهوه کمکش می‌کنه که گپ بۊ.</string>
-    <string name="dejavu_workspace_device_note">ای فضا بلگه یل واز یه دستگاه ره که رو حساب Mozilla ته نشون می‌ده. نوم و آیکونش ز همو دستگاه میان، و رنگ یلی که پسند می‌کنی رو ای گوشی می‌مونن.</string>
     <string name="dejavu_settings_safe_browsing">مرور ایمن Google</string>
     <string name="dejavu_back">وورگشتن</string>
     <string name="dejavu_sync_start_title">یکی کردن یا شروع ز نۊ؟</string>
@@ -430,4 +429,37 @@
     <string name="dejavu_settings_screen">صفحه نمایش</string>
     <string name="dejavu_settings_hide_system_bars">قایم کردن نوار وضعیت و ناوبری</string>
     <string name="dejavu_settings_hide_system_bars_summary">وختی یه صفحه نشون داده ابو. سی دیدنشون سی یه لحظه، از لبه بالا یا پایین بکشین.</string>
+    <string name="dejavu_bookmarks_export">و در بردن بره فایل</string>
+    <plurals name="dejavu_bookmarks_exported">
+        <item quantity="one">%1$d نشووکا و در برده وابی</item>
+        <item quantity="other">%1$d نشووکا و در برده وابی</item>
+    </plurals>
+    <string name="dejavu_bookmarks_export_failed">نترست نشووکا ن و در بره. ز نۊ قپ ریت کۊنین.</string>
+    <string name="dejavu_workspace_theme_custom">رنگ سفارشی</string>
+    <string name="dejavu_workspace_theme_add_color">ٱووردن رنگ</string>
+    <string name="dejavu_workspace_theme_remove_color">دراوردن ای رنگ</string>
+    <string name="dejavu_workspace_theme_code">کد رنگ</string>
+    <string name="dejavu_workspace_theme_color">رنگ</string>
+    <string name="dejavu_workspace_wallpaper">کاقز دیواری</string>
+    <string name="dejavu_workspace_wallpaper_hint">شؽوات رو ای گوشی می‌مونه و من صفحه خونه نشون داده می‌بۊ. رنگ یلش زمینه‌ای می‌بن که با Zen همگام می‌بۊ.</string>
+    <string name="dejavu_workspace_wallpaper_choose">یه شؽوات پسند کو</string>
+    <string name="dejavu_workspace_wallpaper_change">آلشت</string>
+    <string name="dejavu_workspace_wallpaper_blur">تاری</string>
+    <string name="dejavu_workspace_wallpaper_failed">نترست ای شؽوات ن واز کونه.</string>
+    <string name="dejavu_workspace_wallpaper_colors">رنگ یلی که با Zen همگام می‌بن</string>
+    <string name="dejavu_workspace_wallpaper_hint_local">شؽوات رو ای گوشی می‌مونه و من صفحه خونه نشون داده می‌بۊ.</string>
+    <string name="dejavu_workspace_wallpaper_colors_local">رنگ یلی که ز شؽوات گرته وابیدن</string>
+    <string name="dejavu_page_info">جۊزعیات بلگه</string>
+    <string name="dejavu_page_info_container">کانتینر</string>
+    <string name="dejavu_page_info_workspace">فضا</string>
+    <string name="dejavu_page_info_site_details">امنیت و موجوزا</string>
+    <string name="dejavu_page_info_pinned">سنجاق‌وابیده</string>
+    <string name="dejavu_page_info_essential">سایت مهم</string>
+    <string name="dejavu_page_info_reader_view">نما خۊندنی</string>
+    <string name="dejavu_page_info_translated">ولرنیڌه</string>
+    <string name="dejavu_menu_reader_view">نما خۊندنی</string>
+    <string name="dejavu_menu_close_reader_view">بستن نما خۊندنی</string>
+    <string name="dejavu_workspace_firefox_limits">محدود وابیده وا Firefox Sync</string>
+    <string name="dejavu_workspace_firefox_device">Firefox Sync فقط بلگه یل واز هر دستگاه ره یک رسۊوی می‌کنه. بلگه یلی که اینه واز می‌کنی یا می‌بندی، رو اون دستگاه ام واز یا بسته می‌بن، اما نمی‌تونی بلگه سنجاق کنی، پوشه یا سایت مهم بیاری، یا کانتینر پسند کنی. نوم و آیکون ز همو دستگاه میان، و رنگ یلی که پسند می‌کنی رو ای گوشی می‌مونن.</string>
+    <string name="dejavu_workspace_firefox_own">Firefox Sync فضا یل ره یک رسۊوی نمی‌کنه، سی همی ای فضا، وا بلگه یل سنجاق‌وابیده و پوشه یلش، رو ای گوشی می‌مونه. Firefox بلگه یل وازش ره به عنوان بلگه یل ای گوشی نشون می‌ده.</string>
 </resources>

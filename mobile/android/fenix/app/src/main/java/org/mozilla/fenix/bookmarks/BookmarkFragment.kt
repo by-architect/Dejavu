@@ -4,7 +4,9 @@
 
 package org.mozilla.fenix.bookmarks
 
+import android.content.ActivityNotFoundException
 import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -19,6 +21,7 @@ import androidx.navigation.NavDirections
 import androidx.navigation.NavHostController
 import androidx.navigation.fragment.findNavController
 import kotlinx.coroutines.flow.MutableSharedFlow
+import kotlinx.coroutines.launch
 import mozilla.components.compose.browser.toolbar.store.BrowserToolbarState
 import mozilla.components.compose.browser.toolbar.store.BrowserToolbarStore
 import mozilla.components.compose.browser.toolbar.store.Mode
@@ -34,6 +37,7 @@ import org.mozilla.fenix.components.accounts.FenixFxAEntryPoint
 import org.mozilla.fenix.components.appstate.AppAction
 import org.mozilla.fenix.components.share.ShareSheetChooserAction
 import org.mozilla.fenix.components.share.ShareSource
+import org.mozilla.fenix.dejavu.bookmarks.BookmarksFile
 import org.mozilla.fenix.e2e.SystemInsetsPaddedFragment
 import org.mozilla.fenix.ext.bookmarkStorage
 import org.mozilla.fenix.ext.hideToolbar
@@ -80,6 +84,13 @@ class BookmarkFragment : Fragment(), SystemInsetsPaddedFragment {
         }
 
     private val importResultFlow = MutableSharedFlow<FenixImporterEvent>(extraBufferCapacity = 1)
+
+    // Dejavu: every bookmark can be saved to a file other browsers import, which the user picks here.
+    private val exportLauncher: ActivityResultLauncher<String> =
+        registerForActivityResult(ActivityResultContracts.CreateDocument(BookmarksFile.MIME_TYPE)) { uri ->
+            uri?.let(::exportBookmarks)
+        }
+    private var bookmarksStore: BookmarksStore? = null
 
     @Suppress("LongMethod")
     override fun onCreateView(
@@ -197,11 +208,13 @@ class BookmarkFragment : Fragment(), SystemInsetsPaddedFragment {
                                         )
                                     },
                                     importEvents = { importResultFlow },
+                                    chooseExportFile = ::chooseExportFile,
                                 ),
                             ),
                     )
                 }
 
+            bookmarksStore = store
             store
         }
         return content {
@@ -227,6 +240,23 @@ class BookmarkFragment : Fragment(), SystemInsetsPaddedFragment {
             ImportBookmarksDialogFragment.decodeResult(bundle)?.let {
                 importResultFlow.tryEmit(it)
             }
+        }
+    }
+
+    private fun chooseExportFile() {
+        try {
+            exportLauncher.launch(BookmarksFile.NAME)
+        } catch (e: ActivityNotFoundException) {
+            lifecycleScope.launch { bookmarksStore?.dispatch(ExportAction.ExportFinished(count = null)) }
+        }
+    }
+
+    private fun exportBookmarks(uri: Uri) {
+        val context = requireContext().applicationContext
+        val storage = requireComponents.core.bookmarksStorage
+        lifecycleScope.launch {
+            val count = BookmarksFile.export(context, storage, uri, composeRootTitles(context))
+            bookmarksStore?.dispatch(ExportAction.ExportFinished(count))
         }
     }
 

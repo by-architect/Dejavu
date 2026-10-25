@@ -320,7 +320,6 @@
     <string name="dejavu_settings_author">由 %1$s 创建</string>
     <string name="dejavu_settings_coffee">请我喝杯咖啡</string>
     <string name="dejavu_settings_coffee_summary">Dejavu 没有广告。如果您喜欢它，一杯咖啡能帮助它成长。</string>
-    <string name="dejavu_workspace_device_note">此工作区显示您 Mozilla 账户中某台设备上打开的标签页。其名称和图标来自该设备，您选择的颜色会保留在此手机上。</string>
     <string name="dejavu_settings_safe_browsing">Google 安全浏览</string>
     <string name="dejavu_back">上一步</string>
     <string name="dejavu_sync_start_title">合并还是重新开始？</string>
@@ -423,4 +422,36 @@
     <string name="dejavu_settings_screen">屏幕</string>
     <string name="dejavu_settings_hide_system_bars">隐藏状态栏和导航栏</string>
     <string name="dejavu_settings_hide_system_bars_summary">显示网页时。从上边缘或下边缘向内滑动可短暂显示它们。</string>
+    <string name="dejavu_bookmarks_export">导出到文件</string>
+    <plurals name="dejavu_bookmarks_exported">
+        <item quantity="other">已导出 %1$d 个书签</item>
+    </plurals>
+    <string name="dejavu_bookmarks_export_failed">无法导出书签，请重试。</string>
+    <string name="dejavu_workspace_theme_custom">自定义颜色</string>
+    <string name="dejavu_workspace_theme_add_color">添加颜色</string>
+    <string name="dejavu_workspace_theme_remove_color">移除此颜色</string>
+    <string name="dejavu_workspace_theme_code">颜色代码</string>
+    <string name="dejavu_workspace_theme_color">颜色</string>
+    <string name="dejavu_workspace_wallpaper">壁纸</string>
+    <string name="dejavu_workspace_wallpaper_hint">图片保留在此手机上，并显示在主页上。其颜色将成为与 Zen 同步的主题。</string>
+    <string name="dejavu_workspace_wallpaper_choose">选择图片</string>
+    <string name="dejavu_workspace_wallpaper_change">更换</string>
+    <string name="dejavu_workspace_wallpaper_blur">模糊</string>
+    <string name="dejavu_workspace_wallpaper_failed">无法打开此图片。</string>
+    <string name="dejavu_workspace_wallpaper_colors">与 Zen 同步的颜色</string>
+    <string name="dejavu_workspace_wallpaper_hint_local">图片保留在此手机上，并显示在主页上。</string>
+    <string name="dejavu_workspace_wallpaper_colors_local">从图片中提取的颜色</string>
+    <string name="dejavu_page_info">页面详情</string>
+    <string name="dejavu_page_info_container">容器</string>
+    <string name="dejavu_page_info_workspace">工作区</string>
+    <string name="dejavu_page_info_site_details">安全与权限</string>
+    <string name="dejavu_page_info_pinned">已固定</string>
+    <string name="dejavu_page_info_essential">常用网站</string>
+    <string name="dejavu_page_info_reader_view">阅读模式</string>
+    <string name="dejavu_page_info_translated">已翻译</string>
+    <string name="dejavu_menu_reader_view">阅读模式</string>
+    <string name="dejavu_menu_close_reader_view">关闭阅读模式</string>
+    <string name="dejavu_workspace_firefox_limits">受 Firefox Sync 限制</string>
+    <string name="dejavu_workspace_firefox_device">Firefox Sync 仅共享每台设备上打开的标签页。您在此处打开或关闭的标签页也会在该设备上打开或关闭，但您无法固定标签页、添加文件夹或常用网站，也无法选择容器。名称和图标来自该设备，您选择的颜色会保留在此手机上。</string>
+    <string name="dejavu_workspace_firefox_own">Firefox Sync 不共享工作区，所以此工作区及其固定标签页和文件夹会保留在此手机上。Firefox 会将其打开的标签页显示为此手机的标签页。</string>
 </resources>

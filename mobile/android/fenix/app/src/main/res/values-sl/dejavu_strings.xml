@@ -341,7 +341,6 @@
     <string name="dejavu_settings_author">Ustvaril %1$s</string>
     <string name="dejavu_settings_coffee">Kupite mi kavo</string>
     <string name="dejavu_settings_coffee_summary">Dejavu nima oglasov. Če vam je všeč, mu kava pomaga rasti.</string>
-    <string name="dejavu_workspace_device_note">Ta delovni prostor prikazuje odprte zavihke naprave v vašem računu Mozilla. Njegovo ime in ikona prihajata iz tiste naprave, barve, ki jih izberete, pa ostanejo na tem telefonu.</string>
     <string name="dejavu_settings_safe_browsing">Google Varno brskanje</string>
     <string name="dejavu_back">Nazaj</string>
     <string name="dejavu_sync_start_title">Združiti ali začeti znova?</string>
@@ -444,4 +443,39 @@
     <string name="dejavu_settings_screen">Zaslon</string>
     <string name="dejavu_settings_hide_system_bars">Skrij vrstici stanja in krmarjenja</string>
     <string name="dejavu_settings_hide_system_bars_summary">Med prikazom strani. Povlecite z zgornjega ali spodnjega roba, da ju za trenutek vidite.</string>
+    <string name="dejavu_bookmarks_export">Izvozi v datoteko</string>
+    <plurals name="dejavu_bookmarks_exported">
+        <item quantity="one">%1$d zaznamek izvožen</item>
+        <item quantity="two">%1$d zaznamka izvožena</item>
+        <item quantity="few">%1$d zaznamki izvoženi</item>
+        <item quantity="other">%1$d zaznamkov izvoženih</item>
+    </plurals>
+    <string name="dejavu_bookmarks_export_failed">Zaznamkov ni bilo mogoče izvoziti. Poskusite znova.</string>
+    <string name="dejavu_workspace_theme_custom">Barva po meri</string>
+    <string name="dejavu_workspace_theme_add_color">Dodaj barvo</string>
+    <string name="dejavu_workspace_theme_remove_color">Odstrani to barvo</string>
+    <string name="dejavu_workspace_theme_code">Koda barve</string>
+    <string name="dejavu_workspace_theme_color">Barva</string>
+    <string name="dejavu_workspace_wallpaper">Ozadje</string>
+    <string name="dejavu_workspace_wallpaper_hint">Slika ostane na tem telefonu in se prikaže na domači strani. Njene barve postanejo tema, ki se sinhronizira z Zenom.</string>
+    <string name="dejavu_workspace_wallpaper_choose">Izberi sliko</string>
+    <string name="dejavu_workspace_wallpaper_change">Spremeni</string>
+    <string name="dejavu_workspace_wallpaper_blur">Zameglitev</string>
+    <string name="dejavu_workspace_wallpaper_failed">Te slike ni bilo mogoče odpreti.</string>
+    <string name="dejavu_workspace_wallpaper_colors">Barve, ki se sinhronizirajo z Zenom</string>
+    <string name="dejavu_workspace_wallpaper_hint_local">Slika ostane na tem telefonu in se prikaže na domači strani.</string>
+    <string name="dejavu_workspace_wallpaper_colors_local">Barve iz slike</string>
+    <string name="dejavu_page_info">Podrobnosti strani</string>
+    <string name="dejavu_page_info_container">Vsebnik</string>
+    <string name="dejavu_page_info_workspace">Delovni prostor</string>
+    <string name="dejavu_page_info_site_details">Varnost in dovoljenja</string>
+    <string name="dejavu_page_info_pinned">Pripeto</string>
+    <string name="dejavu_page_info_essential">Izbrano</string>
+    <string name="dejavu_page_info_reader_view">Bralni pogled</string>
+    <string name="dejavu_page_info_translated">Prevedeno</string>
+    <string name="dejavu_menu_reader_view">Bralni pogled</string>
+    <string name="dejavu_menu_close_reader_view">Zapri bralni pogled</string>
+    <string name="dejavu_workspace_firefox_limits">Omejitve storitve Firefox Sync</string>
+    <string name="dejavu_workspace_firefox_device">Firefox Sync deli samo odprte zavihke vsake naprave. Zavihki, ki jih tukaj odprete ali zaprete, se odprejo ali zaprejo tudi na tisti napravi, vendar ne morete pripeti zavihkov, dodati map ali Izbranega ali izbrati vsebnika. Ime in ikona prihajata iz naprave, barve, ki jih izberete, pa ostanejo na tem telefonu.</string>
+    <string name="dejavu_workspace_firefox_own">Firefox Sync ne deli delovnih prostorov, zato ta delovni prostor s svojimi pripetimi zavihki in mapami ostane na tem telefonu. Firefox prikazuje njegove odprte zavihke kot zavihke tega telefona.</string>
 </resources>

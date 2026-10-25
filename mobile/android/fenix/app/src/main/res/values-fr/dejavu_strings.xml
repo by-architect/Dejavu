@@ -327,7 +327,6 @@
     <string name="dejavu_settings_author">Créé par %1$s</string>
     <string name="dejavu_settings_coffee">Offre-moi un café</string>
     <string name="dejavu_settings_coffee_summary">Dejavu n’a pas de publicité. Si tu l’apprécies, un café l’aide à grandir.</string>
-    <string name="dejavu_workspace_device_note">Cet espace affiche les onglets ouverts d’un appareil de ton compte Mozilla. Son nom et son icône viennent de cet appareil, et les couleurs que tu choisis restent sur ce téléphone.</string>
     <string name="dejavu_settings_safe_browsing">Navigation sécurisée de Google</string>
     <string name="dejavu_back">Retour</string>
     <string name="dejavu_sync_start_title">Fusionner ou repartir de zéro ?</string>
@@ -430,4 +429,37 @@
     <string name="dejavu_settings_screen">Écran</string>
     <string name="dejavu_settings_hide_system_bars">Masquer les barres d\'état et de navigation</string>
     <string name="dejavu_settings_hide_system_bars_summary">Pendant l\'affichage d\'une page. Balayez depuis le bord supérieur ou inférieur pour les voir un instant.</string>
+    <string name="dejavu_bookmarks_export">Exporter vers un fichier</string>
+    <plurals name="dejavu_bookmarks_exported">
+        <item quantity="one">%1$d marque-page exporté</item>
+        <item quantity="other">%1$d marque-pages exportés</item>
+    </plurals>
+    <string name="dejavu_bookmarks_export_failed">Impossible d’exporter les marque-pages. Veuillez réessayer.</string>
+    <string name="dejavu_workspace_theme_custom">Couleur personnalisée</string>
+    <string name="dejavu_workspace_theme_add_color">Ajouter une couleur</string>
+    <string name="dejavu_workspace_theme_remove_color">Retirer cette couleur</string>
+    <string name="dejavu_workspace_theme_code">Code couleur</string>
+    <string name="dejavu_workspace_theme_color">Couleur</string>
+    <string name="dejavu_workspace_wallpaper">Fond d’écran</string>
+    <string name="dejavu_workspace_wallpaper_hint">L’image reste sur ce téléphone et s’affiche sur la page d’accueil. Ses couleurs deviennent le thème synchronisé avec Zen.</string>
+    <string name="dejavu_workspace_wallpaper_choose">Choisir une image</string>
+    <string name="dejavu_workspace_wallpaper_change">Changer</string>
+    <string name="dejavu_workspace_wallpaper_blur">Flou</string>
+    <string name="dejavu_workspace_wallpaper_failed">Impossible d’ouvrir cette image.</string>
+    <string name="dejavu_workspace_wallpaper_colors">Couleurs synchronisées avec Zen</string>
+    <string name="dejavu_workspace_wallpaper_hint_local">L’image reste sur ce téléphone et s’affiche sur la page d’accueil.</string>
+    <string name="dejavu_workspace_wallpaper_colors_local">Couleurs tirées de l’image</string>
+    <string name="dejavu_page_info">Détails de la page</string>
+    <string name="dejavu_page_info_container">Conteneur</string>
+    <string name="dejavu_page_info_workspace">Espace</string>
+    <string name="dejavu_page_info_site_details">Sécurité et autorisations</string>
+    <string name="dejavu_page_info_pinned">Épinglé</string>
+    <string name="dejavu_page_info_essential">Favori</string>
+    <string name="dejavu_page_info_reader_view">Mode lecture</string>
+    <string name="dejavu_page_info_translated">Traduit</string>
+    <string name="dejavu_menu_reader_view">Mode lecture</string>
+    <string name="dejavu_menu_close_reader_view">Quitter le mode lecture</string>
+    <string name="dejavu_workspace_firefox_limits">Limité par Firefox Sync</string>
+    <string name="dejavu_workspace_firefox_device">Firefox Sync ne partage que les onglets ouverts de chaque appareil. Les onglets que tu ouvres ou fermes ici s’ouvrent ou se ferment aussi sur l’appareil, mais tu ne peux ni épingler d’onglets, ni ajouter de dossiers ou de favoris, ni choisir de conteneur. Le nom et l’icône viennent de l’appareil, et les couleurs que tu choisis restent sur ce téléphone.</string>
+    <string name="dejavu_workspace_firefox_own">Firefox Sync ne partage pas les espaces, donc cet espace, avec ses onglets épinglés et ses dossiers, reste sur ce téléphone. Dans Firefox, les onglets ouverts de cet espace apparaissent comme ceux de ce téléphone.</string>
 </resources>

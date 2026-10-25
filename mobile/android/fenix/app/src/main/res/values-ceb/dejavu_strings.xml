@@ -327,7 +327,6 @@
     <string name="dejavu_settings_author">Gihimo ni %1$s</string>
     <string name="dejavu_settings_coffee">Paliti ko og kape</string>
     <string name="dejavu_settings_coffee_summary">Walay ads ang Dejavu. Kung ganahan ka niini, ang usa ka kape makatabang niini nga motubo.</string>
-    <string name="dejavu_workspace_device_note">Kini nga workspace nagpakita sa naabli nga mga tab sa usa ka device sa imong Mozilla account. Ang ngalan ug icon niini gikan sa maong device, ug ang mga kolor nga imong pilion magpabilin niini nga telepono.</string>
     <string name="dejavu_settings_safe_browsing">Google Safe Browsing</string>
     <string name="dejavu_back">Balik</string>
     <string name="dejavu_sync_start_title">Hiusahon o magsugod og bag-o?</string>
@@ -430,4 +429,37 @@
     <string name="dejavu_settings_screen">Screen</string>
     <string name="dejavu_settings_hide_system_bars">Itago ang status ug navigation bar</string>
     <string name="dejavu_settings_hide_system_bars_summary">Samtang gipakita ang usa ka panid. I-swipe gikan sa ibabaw o ubos nga ngilit aron makita kini kadiyot.</string>
+    <string name="dejavu_bookmarks_export">i-Export sa file</string>
+    <plurals name="dejavu_bookmarks_exported">
+        <item quantity="one">%1$d ka bookmark ang na-export</item>
+        <item quantity="other">%1$d ka bookmark ang na-export</item>
+    </plurals>
+    <string name="dejavu_bookmarks_export_failed">Dili ma-export ang mga bookmark. Sulayi pag-usab.</string>
+    <string name="dejavu_workspace_theme_custom">Custom nga kolor</string>
+    <string name="dejavu_workspace_theme_add_color">Pagdugang og kolor</string>
+    <string name="dejavu_workspace_theme_remove_color">Kuhaa kini nga kolor</string>
+    <string name="dejavu_workspace_theme_code">Code sa kolor</string>
+    <string name="dejavu_workspace_theme_color">Kolor</string>
+    <string name="dejavu_workspace_wallpaper">Wallpaper</string>
+    <string name="dejavu_workspace_wallpaper_hint">Ang hulagway magpabilin niini nga telepono ug makita sa home page. Ang mga kolor niini mahimong tema nga ma-sync sa Zen.</string>
+    <string name="dejavu_workspace_wallpaper_choose">Pagpili og hulagway</string>
+    <string name="dejavu_workspace_wallpaper_change">Ilisi</string>
+    <string name="dejavu_workspace_wallpaper_blur">Blur</string>
+    <string name="dejavu_workspace_wallpaper_failed">Dili maabli kini nga hulagway.</string>
+    <string name="dejavu_workspace_wallpaper_colors">Mga kolor nga ma-sync sa Zen</string>
+    <string name="dejavu_workspace_wallpaper_hint_local">Ang hulagway magpabilin niini nga telepono ug makita sa home page.</string>
+    <string name="dejavu_workspace_wallpaper_colors_local">Mga kolor nga gikuha gikan sa hulagway</string>
+    <string name="dejavu_page_info">Mga detalye sa panid</string>
+    <string name="dejavu_page_info_container">Container</string>
+    <string name="dejavu_page_info_workspace">Workspace</string>
+    <string name="dejavu_page_info_site_details">Seguridad ug mga permiso</string>
+    <string name="dejavu_page_info_pinned">Naka-pin</string>
+    <string name="dejavu_page_info_essential">Mahinungdanon</string>
+    <string name="dejavu_page_info_reader_view">Reader view</string>
+    <string name="dejavu_page_info_translated">Nahubad</string>
+    <string name="dejavu_menu_reader_view">Reader view</string>
+    <string name="dejavu_menu_close_reader_view">i-Close ang reader view</string>
+    <string name="dejavu_workspace_firefox_limits">Limitado sa Firefox Sync</string>
+    <string name="dejavu_workspace_firefox_device">Ang Firefox Sync nagpaambit lang sa naabli nga mga tab sa matag device. Ang mga tab nga imong ablihan o sirad-an dinhi maabli o masira usab sa maong device, apan dili ka maka-pin og mga tab, makadugang og mga folder o Mahinungdanon, o makapili og container. Ang ngalan ug icon gikan sa device, ug ang mga kolor nga imong pilion magpabilin niini nga telepono.</string>
+    <string name="dejavu_workspace_firefox_own">Ang Firefox Sync wala nagpaambit sa mga workspace, busa kini nga workspace, uban sa iyang naka-pin nga mga tab ug mga folder, magpabilin niini nga telepono. Gipakita sa Firefox ang naabli nga mga tab niini isip mga tab niini nga telepono.</string>
 </resources>

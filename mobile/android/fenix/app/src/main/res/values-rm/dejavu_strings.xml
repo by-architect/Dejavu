@@ -327,7 +327,6 @@
     <string name="dejavu_settings_author">Creà da %1$s</string>
     <string name="dejavu_settings_coffee">Paja in caffè a mai</string>
     <string name="dejavu_settings_coffee_summary">Dejavu n’ha naginas reclamas. Sch’el ta plascha, al gida in caffè a crescher.</string>
-    <string name="dejavu_workspace_device_note">Quest spazi da lavur mussa ils tabs averts d’in apparat da tes conto Mozilla. Ses num e sia icona vegnan da quel apparat, e las colurs che ti tschernas restan sin quest telefon.</string>
     <string name="dejavu_settings_safe_browsing">Navigaziun segira da Google</string>
     <string name="dejavu_back">Enavos</string>
     <string name="dejavu_sync_start_title">Unir u cumenzar da nov?</string>
@@ -430,4 +429,37 @@
     <string name="dejavu_settings_screen">Visur</string>
     <string name="dejavu_settings_hide_system_bars">Zuppentar las travs da status e da navigaziun</string>
     <string name="dejavu_settings_hide_system_bars_summary">Durant ch\'ina pagina vegn mussada. Stritgar naven dal ur sura u sut per las vesair per in mument.</string>
+    <string name="dejavu_bookmarks_export">Exportar en ina datoteca</string>
+    <plurals name="dejavu_bookmarks_exported">
+        <item quantity="one">%1$d segnapagina exportà</item>
+        <item quantity="other">%1$d segnapaginas exportads</item>
+    </plurals>
+    <string name="dejavu_bookmarks_export_failed">Impussibel d’exportar ils segnapaginas. Emprova anc ina giada.</string>
+    <string name="dejavu_workspace_theme_custom">Colur persunalisada</string>
+    <string name="dejavu_workspace_theme_add_color">Agiuntar ina colur</string>
+    <string name="dejavu_workspace_theme_remove_color">Allontanar questa colur</string>
+    <string name="dejavu_workspace_theme_code">Code da colur</string>
+    <string name="dejavu_workspace_theme_color">Colur</string>
+    <string name="dejavu_workspace_wallpaper">Maletg dal fund davos</string>
+    <string name="dejavu_workspace_wallpaper_hint">Il maletg resta sin quest telefon e cumpara sin la pagina da partenza. Sias colurs daventan il tema che vegn sincronisà cun Zen.</string>
+    <string name="dejavu_workspace_wallpaper_choose">Tscherner in maletg</string>
+    <string name="dejavu_workspace_wallpaper_change">Midar</string>
+    <string name="dejavu_workspace_wallpaper_blur">Nunclerezza</string>
+    <string name="dejavu_workspace_wallpaper_failed">Impussibel d’avrir quest maletg.</string>
+    <string name="dejavu_workspace_wallpaper_colors">Colurs sincronisadas cun Zen</string>
+    <string name="dejavu_workspace_wallpaper_hint_local">Il maletg resta sin quest telefon e cumpara sin la pagina da partenza.</string>
+    <string name="dejavu_workspace_wallpaper_colors_local">Colurs prendidas dal maletg</string>
+    <string name="dejavu_page_info">Detagls da la pagina</string>
+    <string name="dejavu_page_info_container">Container</string>
+    <string name="dejavu_page_info_workspace">Spazi da lavur</string>
+    <string name="dejavu_page_info_site_details">Segirezza ed autorisaziuns</string>
+    <string name="dejavu_page_info_pinned">Fixà</string>
+    <string name="dejavu_page_info_essential">Essenzial</string>
+    <string name="dejavu_page_info_reader_view">Modus da lectura</string>
+    <string name="dejavu_page_info_translated">Translatada</string>
+    <string name="dejavu_menu_reader_view">Modus da lectura</string>
+    <string name="dejavu_menu_close_reader_view">Serrar la vista da lectura</string>
+    <string name="dejavu_workspace_firefox_limits">Limitaziuns da Firefox Sync</string>
+    <string name="dejavu_workspace_firefox_device">Firefox Sync cundivida mo ils tabs averts da mintga apparat. Tabs che ti avras u serras qua vegnan er averts u serrads sin quel apparat, ma ti na pos betg fixar tabs, agiuntar dossiers u essenzials ni tscherner in container. Il num e l’icona vegnan da l’apparat, e las colurs che ti tschernas restan sin quest telefon.</string>
+    <string name="dejavu_workspace_firefox_own">Firefox Sync na cundivida betg ils spazis da lavur, perquai resta quest spazi da lavur, cun ses tabs fixads e dossiers, sin quest telefon. Firefox mussa ses tabs averts sco tabs da quest telefon.</string>
 </resources>

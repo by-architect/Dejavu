@@ -320,7 +320,6 @@
     <string name="dejavu_settings_author">ສ້າງໂດຍ %1$s</string>
     <string name="dejavu_settings_coffee">ລ້ຽງກາເຟຂ້ອຍຈອກໜຶ່ງ</string>
     <string name="dejavu_settings_coffee_summary">Dejavu ບໍ່ມີໂຄສະນາ. ຖ້າທ່ານມັກມັນ, ກາເຟຈອກໜຶ່ງຊ່ວຍໃຫ້ມັນເຕີບໂຕ.</string>
-    <string name="dejavu_workspace_device_note">ພື້ນທີ່ເຮັດວຽກນີ້ສະແດງແທັບທີ່ເປີດຢູ່ຂອງອຸປະກອນໜຶ່ງໃນບັນຊີ Mozilla ຂອງທ່ານ. ຊື່ ແລະ ໄອຄອນຂອງມັນມາຈາກອຸປະກອນນັ້ນ, ແລະ ສີທີ່ທ່ານເລືອກຈະຢູ່ໃນໂທລະສັບນີ້.</string>
     <string name="dejavu_settings_safe_browsing">Google Safe Browsing</string>
     <string name="dejavu_back">ກັບຄືນ</string>
     <string name="dejavu_sync_start_title">ລວມເຂົ້າກັນ ຫຼື ເລີ່ມໃໝ່?</string>
@@ -423,4 +422,36 @@
     <string name="dejavu_settings_screen">ໜ້າຈໍ</string>
     <string name="dejavu_settings_hide_system_bars">ເຊື່ອງແຖບສະຖານະ ແລະ ແຖບນຳທາງ</string>
     <string name="dejavu_settings_hide_system_bars_summary">ໃນຂະນະທີ່ສະແດງໜ້າເວັບ. ປັດເຂົ້າຈາກຂອບເທິງ ຫຼື ລຸ່ມ ເພື່ອເບິ່ງພວກມັນຊົ່ວຄາວ.</string>
+    <string name="dejavu_bookmarks_export">ສົ່ງອອກເປັນໄຟລ໌</string>
+    <plurals name="dejavu_bookmarks_exported">
+        <item quantity="other">ສົ່ງອອກບຸກມາກແລ້ວ %1$d ອັນ</item>
+    </plurals>
+    <string name="dejavu_bookmarks_export_failed">ບໍ່ສາມາດສົ່ງອອກບຸກມາກໄດ້. ລອງໃຫມ່ອີກຄັ້ງ.</string>
+    <string name="dejavu_workspace_theme_custom">ສີກຳນົດເອງ</string>
+    <string name="dejavu_workspace_theme_add_color">ເພີ່ມສີ</string>
+    <string name="dejavu_workspace_theme_remove_color">ເອົາສີນີ້ອອກ</string>
+    <string name="dejavu_workspace_theme_code">ລະຫັດສີ</string>
+    <string name="dejavu_workspace_theme_color">ສີ</string>
+    <string name="dejavu_workspace_wallpaper">ພາບພື້ນຫຼັງ</string>
+    <string name="dejavu_workspace_wallpaper_hint">ຮູບຈະຢູ່ໃນໂທລະສັບນີ້ ແລະ ສະແດງຢູ່ໜ້າຫຼັກ. ສີຂອງມັນຈະກາຍເປັນຮູບແບບທີ່ຊິງຄ໌ກັບ Zen.</string>
+    <string name="dejavu_workspace_wallpaper_choose">ເລືອກຮູບ</string>
+    <string name="dejavu_workspace_wallpaper_change">ປ່ຽນ</string>
+    <string name="dejavu_workspace_wallpaper_blur">ຄວາມມົວ</string>
+    <string name="dejavu_workspace_wallpaper_failed">ບໍ່ສາມາດເປີດຮູບນີ້ໄດ້.</string>
+    <string name="dejavu_workspace_wallpaper_colors">ສີທີ່ຊິງຄ໌ກັບ Zen</string>
+    <string name="dejavu_workspace_wallpaper_hint_local">ຮູບຈະຢູ່ໃນໂທລະສັບນີ້ ແລະ ສະແດງຢູ່ໜ້າຫຼັກ.</string>
+    <string name="dejavu_workspace_wallpaper_colors_local">ສີທີ່ເອົາມາຈາກຮູບ</string>
+    <string name="dejavu_page_info">ລາຍລະອຽດຂອງໜ້າ</string>
+    <string name="dejavu_page_info_container">ຄອນເທນເນີ</string>
+    <string name="dejavu_page_info_workspace">ພື້ນທີ່ເຮັດວຽກ</string>
+    <string name="dejavu_page_info_site_details">ຄວາມປອດໄພ ແລະ ການອະນຸຍາດ</string>
+    <string name="dejavu_page_info_pinned">ປັກໄວ້</string>
+    <string name="dejavu_page_info_essential">ສິ່ງສຳຄັນ</string>
+    <string name="dejavu_page_info_reader_view">ມຸມມອງຂອງຜູ້ອ່ານ</string>
+    <string name="dejavu_page_info_translated">ແປແລ້ວ</string>
+    <string name="dejavu_menu_reader_view">ມຸມມອງຂອງຜູ້ອ່ານ</string>
+    <string name="dejavu_menu_close_reader_view">ປິດມຸມມອງຜູ້ອ່ານ</string>
+    <string name="dejavu_workspace_firefox_limits">ຖືກຈຳກັດໂດຍ Firefox Sync</string>
+    <string name="dejavu_workspace_firefox_device">Firefox Sync ແບ່ງປັນສະເພາະແທັບທີ່ເປີດຢູ່ຂອງແຕ່ລະອຸປະກອນ. ແທັບທີ່ທ່ານເປີດ ຫຼື ປິດຢູ່ບ່ອນນີ້ ຈະເປີດ ຫຼື ປິດຢູ່ອຸປະກອນນັ້ນນຳ, ແຕ່ທ່ານບໍ່ສາມາດປັກແທັບ, ເພີ່ມໂຟນເດີ ຫຼື ສິ່ງສຳຄັນ, ຫຼື ເລືອກຄອນເທນເນີໄດ້. ຊື່ ແລະ ໄອຄອນມາຈາກອຸປະກອນນັ້ນ, ແລະ ສີທີ່ທ່ານເລືອກຈະຢູ່ໃນໂທລະສັບນີ້.</string>
+    <string name="dejavu_workspace_firefox_own">Firefox Sync ບໍ່ໄດ້ແບ່ງປັນພື້ນທີ່ເຮັດວຽກ, ສະນັ້ນພື້ນທີ່ເຮັດວຽກນີ້ ພ້ອມແທັບທີ່ປັກໄວ້ ແລະ ໂຟນເດີຂອງມັນ ຈະຢູ່ໃນໂທລະສັບນີ້. Firefox ຈະສະແດງແທັບທີ່ເປີດຢູ່ຂອງມັນເປັນແທັບຂອງໂທລະສັບນີ້.</string>
 </resources>

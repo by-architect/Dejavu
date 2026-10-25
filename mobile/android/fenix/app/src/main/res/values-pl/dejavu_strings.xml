@@ -341,7 +341,6 @@
     <string name="dejavu_settings_author">Autorstwa %1$s</string>
     <string name="dejavu_settings_coffee">Postaw mi kawę</string>
     <string name="dejavu_settings_coffee_summary">Dejavu nie ma reklam. Jeśli ci się podoba, kawa pomaga jej się rozwijać.</string>
-    <string name="dejavu_workspace_device_note">Ten obszar roboczy pokazuje otwarte karty urządzenia połączonego z twoim kontem Mozilli. Jego nazwa i ikona pochodzą z tego urządzenia, a wybrane przez ciebie kolory pozostają na tym telefonie.</string>
     <string name="dejavu_settings_safe_browsing">Bezpieczne przeglądanie Google</string>
     <string name="dejavu_back">Wstecz</string>
     <string name="dejavu_sync_start_title">Scalić czy zacząć od nowa?</string>
@@ -444,4 +443,39 @@
     <string name="dejavu_settings_screen">Ekran</string>
     <string name="dejavu_settings_hide_system_bars">Ukryj paski stanu i nawigacji</string>
     <string name="dejavu_settings_hide_system_bars_summary">Gdy wyświetlana jest strona. Przesuń palcem od górnej lub dolnej krawędzi, aby na chwilę je zobaczyć.</string>
+    <string name="dejavu_bookmarks_export">Eksportuj do pliku</string>
+    <plurals name="dejavu_bookmarks_exported">
+        <item quantity="one">Wyeksportowano %1$d zakładkę</item>
+        <item quantity="few">Wyeksportowano %1$d zakładki</item>
+        <item quantity="many">Wyeksportowano %1$d zakładek</item>
+        <item quantity="other">Wyeksportowano %1$d zakładki</item>
+    </plurals>
+    <string name="dejavu_bookmarks_export_failed">Nie można wyeksportować zakładek. Spróbuj ponownie.</string>
+    <string name="dejavu_workspace_theme_custom">Własny kolor</string>
+    <string name="dejavu_workspace_theme_add_color">Dodaj kolor</string>
+    <string name="dejavu_workspace_theme_remove_color">Usuń ten kolor</string>
+    <string name="dejavu_workspace_theme_code">Kod koloru</string>
+    <string name="dejavu_workspace_theme_color">Kolor</string>
+    <string name="dejavu_workspace_wallpaper">Tapeta</string>
+    <string name="dejavu_workspace_wallpaper_hint">Obraz pozostaje na tym telefonie i jest wyświetlany na stronie startowej. Jego kolory stają się motywem synchronizowanym z Zen.</string>
+    <string name="dejavu_workspace_wallpaper_choose">Wybierz obraz</string>
+    <string name="dejavu_workspace_wallpaper_change">Zmień</string>
+    <string name="dejavu_workspace_wallpaper_blur">Rozmycie</string>
+    <string name="dejavu_workspace_wallpaper_failed">Nie można otworzyć tego obrazu.</string>
+    <string name="dejavu_workspace_wallpaper_colors">Kolory synchronizowane z Zen</string>
+    <string name="dejavu_workspace_wallpaper_hint_local">Obraz pozostaje na tym telefonie i jest wyświetlany na stronie startowej.</string>
+    <string name="dejavu_workspace_wallpaper_colors_local">Kolory pobrane z obrazu</string>
+    <string name="dejavu_page_info">Szczegóły strony</string>
+    <string name="dejavu_page_info_container">Kontener</string>
+    <string name="dejavu_page_info_workspace">Obszar roboczy</string>
+    <string name="dejavu_page_info_site_details">Bezpieczeństwo i uprawnienia</string>
+    <string name="dejavu_page_info_pinned">Przypięta</string>
+    <string name="dejavu_page_info_essential">Ulubiona</string>
+    <string name="dejavu_page_info_reader_view">Popraw czytelność</string>
+    <string name="dejavu_page_info_translated">Przetłumaczona</string>
+    <string name="dejavu_menu_reader_view">Popraw czytelność</string>
+    <string name="dejavu_menu_close_reader_view">Wygląd oryginalny</string>
+    <string name="dejavu_workspace_firefox_limits">Ograniczone przez Firefox Sync</string>
+    <string name="dejavu_workspace_firefox_device">Firefox Sync udostępnia tylko otwarte karty każdego urządzenia. Karty otwierane lub zamykane tutaj otwierają się lub zamykają też na tym urządzeniu, ale nie możesz przypinać kart, dodawać folderów ani ulubionych, ani wybierać kontenera. Nazwa i ikona pochodzą z urządzenia, a wybrane przez ciebie kolory pozostają na tym telefonie.</string>
+    <string name="dejavu_workspace_firefox_own">Firefox Sync nie udostępnia obszarów roboczych, więc ten obszar roboczy wraz z przypiętymi kartami i folderami pozostaje na tym telefonie. Firefox pokazuje jego otwarte karty jako karty tego telefonu.</string>
 </resources>

@@ -327,7 +327,6 @@
     <string name="dejavu_settings_author">Kreita de %1$s</string>
     <string name="dejavu_settings_coffee">Aĉetu al mi kafon</string>
     <string name="dejavu_settings_coffee_summary">Dejavu ne havas reklamojn. Se ĝi plaĉas al vi, kafo helpas ĝin kreski.</string>
-    <string name="dejavu_workspace_device_note">Ĉi tiu laborspaco montras la malfermitajn langetojn de aparato en via Mozilla-konto. Ĝiaj nomo kaj piktogramo venas de tiu aparato, kaj la koloroj, kiujn vi elektas, restas sur ĉi tiu telefono.</string>
     <string name="dejavu_settings_safe_browsing">Sekura retumado de Google</string>
     <string name="dejavu_back">Reen</string>
     <string name="dejavu_sync_start_title">Ĉu kunfandi aŭ komenci de nulo?</string>
@@ -430,4 +429,37 @@
     <string name="dejavu_settings_screen">Ekrano</string>
     <string name="dejavu_settings_hide_system_bars">Kaŝi la statan kaj navigan stangojn</string>
     <string name="dejavu_settings_hide_system_bars_summary">Dum paĝo estas montrata. Ŝovu de la supra aŭ malsupra rando por vidi ilin dum momento.</string>
+    <string name="dejavu_bookmarks_export">Eksporti al dosiero</string>
+    <plurals name="dejavu_bookmarks_exported">
+        <item quantity="one">%1$d legosigno eksportita</item>
+        <item quantity="other">%1$d legosignoj eksportitaj</item>
+    </plurals>
+    <string name="dejavu_bookmarks_export_failed">Ne eblis eksporti legosignojn. Provu denove.</string>
+    <string name="dejavu_workspace_theme_custom">Propra koloro</string>
+    <string name="dejavu_workspace_theme_add_color">Aldoni koloron</string>
+    <string name="dejavu_workspace_theme_remove_color">Forigi ĉi tiun koloron</string>
+    <string name="dejavu_workspace_theme_code">Kolorkodo</string>
+    <string name="dejavu_workspace_theme_color">Koloro</string>
+    <string name="dejavu_workspace_wallpaper">Ekranfono</string>
+    <string name="dejavu_workspace_wallpaper_hint">La bildo restas sur ĉi tiu telefono kaj aperas sur la hejmpaĝo. Ĝiaj koloroj iĝas la etoso, kiu sinkroniĝas kun Zen.</string>
+    <string name="dejavu_workspace_wallpaper_choose">Elekti bildon</string>
+    <string name="dejavu_workspace_wallpaper_change">Ŝanĝi</string>
+    <string name="dejavu_workspace_wallpaper_blur">Malklarigo</string>
+    <string name="dejavu_workspace_wallpaper_failed">Ne eblis malfermi ĉi tiun bildon.</string>
+    <string name="dejavu_workspace_wallpaper_colors">Koloroj, kiuj sinkroniĝas kun Zen</string>
+    <string name="dejavu_workspace_wallpaper_hint_local">La bildo restas sur ĉi tiu telefono kaj aperas sur la hejmpaĝo.</string>
+    <string name="dejavu_workspace_wallpaper_colors_local">Koloroj prenitaj el la bildo</string>
+    <string name="dejavu_page_info">Detaloj de la paĝo</string>
+    <string name="dejavu_page_info_container">Ujo</string>
+    <string name="dejavu_page_info_workspace">Laborspaco</string>
+    <string name="dejavu_page_info_site_details">Sekureco kaj permesoj</string>
+    <string name="dejavu_page_info_pinned">Pinglita</string>
+    <string name="dejavu_page_info_essential">Esencaĵo</string>
+    <string name="dejavu_page_info_reader_view">Legila vido</string>
+    <string name="dejavu_page_info_translated">Tradukita</string>
+    <string name="dejavu_menu_reader_view">Legila vido</string>
+    <string name="dejavu_menu_close_reader_view">Fermi legilan vidon</string>
+    <string name="dejavu_workspace_firefox_limits">Limigita de Firefox Sync</string>
+    <string name="dejavu_workspace_firefox_device">Firefox Sync dividas nur la malfermitajn langetojn de ĉiu aparato. Langetoj, kiujn vi malfermas aŭ fermas ĉi tie, ankaŭ malfermiĝas aŭ fermiĝas sur tiu aparato, sed vi ne povas pingli langetojn, aldoni dosierujojn aŭ esencaĵojn, nek elekti ujon. La nomo kaj piktogramo venas de la aparato, kaj la koloroj, kiujn vi elektas, restas sur ĉi tiu telefono.</string>
+    <string name="dejavu_workspace_firefox_own">Firefox Sync ne dividas laborspacojn, do ĉi tiu laborspaco, kun siaj pinglitaj langetoj kaj dosierujoj, restas sur ĉi tiu telefono. Firefox montras ĝiajn malfermitajn langetojn kiel langetojn de ĉi tiu telefono.</string>
 </resources>

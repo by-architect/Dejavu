@@ -327,7 +327,6 @@
     <string name="dejavu_settings_author">Xb\'an ruma %1$s</string>
     <string name="dejavu_settings_coffee">Taloq\'oj jun kafe chuwe</string>
     <string name="dejavu_settings_coffee_summary">Majun taq eltzijol pa Dejavu. We nuqa chawäch, jun kafe nuto\' richin nik\'iy.</string>
-    <string name="dejavu_workspace_device_note">Re samajib\'äl re\' nuk\'ut ri jaqäl taq ruwi\' richin jun okisaxel pa ri Rukwenta Mozilla. Rub\'i\' chuqa\' ruretal yepe pa ri okisaxel ri\', chuqa\' ri taq b\'onil nacha\' yekanäj pa re oyonib\'äl re\'.</string>
     <string name="dejavu_settings_safe_browsing">Google Safe Browsing</string>
     <string name="dejavu_back">Chi rij</string>
     <string name="dejavu_sync_start_title">¿Ketunüx o titikirisäx chik?</string>
@@ -430,4 +429,37 @@
     <string name="dejavu_settings_screen">Ruwäch</string>
     <string name="dejavu_settings_hide_system_bars">Kewewäx ri kikajtz\'ik rub\'anikil chuqa\' rub\'eyal okem</string>
     <string name="dejavu_settings_hide_system_bars_summary">Toq niwachin jun ruxaq. Tajurulaj pa ruchi\' ajsik o ikim richin ye\'atz\'ët jun ka\'i\' ramaj.</string>
+    <string name="dejavu_bookmarks_export">Tik\'wäx el pa jun yakb\'äl</string>
+    <plurals name="dejavu_bookmarks_exported">
+        <item quantity="one">%1$d yaketal xk\'wäx el</item>
+        <item quantity="other">%1$d taq yaketal xek\'wäx el</item>
+    </plurals>
+    <string name="dejavu_bookmarks_export_failed">Man xek\'wäx ta el ri taq yaketal. Tatojtob\'ej chik.</string>
+    <string name="dejavu_workspace_theme_custom">Ruyon b\'onil</string>
+    <string name="dejavu_workspace_theme_add_color">Titz\'aqatisäx jun b\'onil</string>
+    <string name="dejavu_workspace_theme_remove_color">Tirelesäx re b\'onil re\'</string>
+    <string name="dejavu_workspace_theme_code">Rukod b\'onil</string>
+    <string name="dejavu_workspace_theme_color">Rub\'onil</string>
+    <string name="dejavu_workspace_wallpaper">Rupam ruwäch</string>
+    <string name="dejavu_workspace_wallpaper_hint">Ri wachib\'äl nikanäj pa re oyonib\'äl re\' chuqa\' nik\'ut pa ri jay ruxaq. Ri taq rub\'onil nikib\'än ri rub\'anikil ri nijunamirisäx rik\'in Zen.</string>
+    <string name="dejavu_workspace_wallpaper_choose">Tacha\' jun wachib\'äl</string>
+    <string name="dejavu_workspace_wallpaper_change">Tijal</string>
+    <string name="dejavu_workspace_wallpaper_blur">Desenfoque</string>
+    <string name="dejavu_workspace_wallpaper_failed">Man xjaq ta re wachib\'äl re\'.</string>
+    <string name="dejavu_workspace_wallpaper_colors">Taq b\'onil ri yejunamirisäx rik\'in Zen</string>
+    <string name="dejavu_workspace_wallpaper_hint_local">Ri wachib\'äl nikanäj pa re oyonib\'äl re\' chuqa\' nik\'ut pa ri jay ruxaq.</string>
+    <string name="dejavu_workspace_wallpaper_colors_local">Taq b\'onil elesan pa ri wachib\'äl</string>
+    <string name="dejavu_page_info">Taq b\'anikil richin ruxaq</string>
+    <string name="dejavu_page_info_container">K\'olib\'äl</string>
+    <string name="dejavu_page_info_workspace">Samajib\'äl</string>
+    <string name="dejavu_page_info_site_details">Jikomal chuqa\' taq ya\'oj q\'ij</string>
+    <string name="dejavu_page_info_pinned">Ximon</string>
+    <string name="dejavu_page_info_essential">Rajawaxel</string>
+    <string name="dejavu_page_info_reader_view">Sik\'inem tz\'etoj</string>
+    <string name="dejavu_page_info_translated">Xtz\'alq\'omïx</string>
+    <string name="dejavu_menu_reader_view">Sik\'inem tz\'etoj</string>
+    <string name="dejavu_menu_close_reader_view">Titz\'apïx rutz\'etik sik\'inïk</string>
+    <string name="dejavu_workspace_firefox_limits">Ri man nujunamirisaj ta Firefox Sync</string>
+    <string name="dejavu_workspace_firefox_device">Firefox Sync xa xe nukomonij ri jaqäl taq ruwi\' richin chi jujunal okisaxel. Ri taq ruwi\' ye\'ajaq o ye\'atz\'apij wawe\' chuqa\' yejaq o yetz\'apïx pa ri okisaxel ri\', po man yatikïr ta ye\'axim taq ruwi\', ye\'atz\'aqatisaj taq karpeta o taq rajawaxel, o nacha\' jun k\'olib\'äl. Rub\'i\' chuqa\' ruretal yepe pa ri okisaxel, chuqa\' ri taq b\'onil nacha\' yekanäj pa re oyonib\'äl re\'.</string>
+    <string name="dejavu_workspace_firefox_own">Firefox Sync man nukomonij ta ri taq samajib\'äl, ruma ri\' re samajib\'äl re\', rik\'in ri ximon taq ruwi\' chuqa\' ri taq karpeta, nikanäj pa re oyonib\'äl re\'. Firefox nuk\'ut ri jaqäl taq ruwi\' achi\'el ri taq ruwi\' re oyonib\'äl re\'.</string>
 </resources>

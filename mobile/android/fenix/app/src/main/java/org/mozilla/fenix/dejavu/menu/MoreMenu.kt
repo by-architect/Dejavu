@@ -32,6 +32,7 @@ enum class MoreMenuItem(
     FORWARD("forward", R.string.dejavu_menu_forward, iconsR.drawable.mozac_ic_forward_24),
     SHARE("share", R.string.dejavu_menu_share, iconsR.drawable.mozac_ic_share_android_24),
     REFRESH("refresh", R.string.dejavu_menu_refresh, iconsR.drawable.mozac_ic_arrow_clockwise_24),
+    READER_VIEW("reader_view", R.string.dejavu_menu_reader_view, iconsR.drawable.mozac_ic_reader_view_24),
     FIND_IN_PAGE("find_in_page", R.string.dejavu_menu_find_in_page, iconsR.drawable.mozac_ic_find_in_page_24),
     BOOKMARK_PAGE("bookmark_page", R.string.dejavu_menu_bookmark_page, iconsR.drawable.mozac_ic_bookmark_24),
     DESKTOP_SITE("desktop_site", R.string.dejavu_menu_desktop_site, iconsR.drawable.mozac_ic_device_desktop_24),
@@ -128,7 +129,7 @@ object MoreMenuLayout {
     const val MAX_PER_ROW = 4
 
     val DEFAULT: List<List<String>> = listOf(
-        listOf(MoreMenuItem.BACK, MoreMenuItem.FORWARD, MoreMenuItem.SHARE, MoreMenuItem.REFRESH),
+        listOf(MoreMenuItem.READER_VIEW, MoreMenuItem.FORWARD, MoreMenuItem.SHARE, MoreMenuItem.REFRESH),
         listOf(MoreMenuItem.FIND_IN_PAGE, MoreMenuItem.DESKTOP_SITE, MoreMenuItem.PIN_TAB, MoreMenuItem.OPEN_IN_APP),
         listOf(MoreMenuItem.EXTENSIONS),
         listOf(MoreMenuItem.HISTORY, MoreMenuItem.BOOKMARKS, MoreMenuItem.DOWNLOADS, MoreMenuItem.PASSWORDS),
@@ -191,13 +192,21 @@ object ActionsBarLayout {
         MoreMenuEntry.Search.key,
     )
 
+    /** The first row of the menu's default before Reader view took the place of Back in it. */
+    private val FIRST_ROW_WITH_BACK = listOf(
+        MoreMenuItem.BACK.key,
+        MoreMenuItem.FORWARD.key,
+        MoreMenuItem.SHARE.key,
+        MoreMenuItem.REFRESH.key,
+    )
+
     /**
      * The bar Dejavu showed before it could be changed on its own: the first row of the menu laid out as [menuRows]
      * and Search, around Home in the middle. A menu whose first row was never changed gives [DEFAULT] instead.
      */
     fun fromMenu(menuRows: List<List<String>>): List<String> {
         val firstRow = menuRows.firstOrNull().orEmpty()
-        if (firstRow == MoreMenuLayout.DEFAULT.first()) return DEFAULT
+        if (firstRow == MoreMenuLayout.DEFAULT.first() || firstRow == FIRST_ROW_WITH_BACK) return DEFAULT
         val buttons = firstRow + MoreMenuEntry.Search.key
         return buttons.toMutableList().apply { add(size / 2, MoreMenuEntry.Home.key) }.distinct().take(MAX_BUTTONS)
     }

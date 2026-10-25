@@ -334,7 +334,6 @@
     <string name="dejavu_settings_author">Criado por %1$s</string>
     <string name="dejavu_settings_coffee">Me pague um café</string>
     <string name="dejavu_settings_coffee_summary">O Dejavu não tem anúncios. Se você gosta dele, um café o ajuda a crescer.</string>
-    <string name="dejavu_workspace_device_note">Este espaço de trabalho mostra as abas abertas de um dispositivo da sua conta da Mozilla. O nome e o ícone vêm desse dispositivo, e as cores que você escolher ficam neste celular.</string>
     <string name="dejavu_settings_safe_browsing">Navegação segura do Google</string>
     <string name="dejavu_back">Voltar</string>
     <string name="dejavu_sync_start_title">Mesclar ou começar do zero?</string>
@@ -437,4 +436,38 @@
     <string name="dejavu_settings_screen">Tela</string>
     <string name="dejavu_settings_hide_system_bars">Ocultar as barras de status e de navegação</string>
     <string name="dejavu_settings_hide_system_bars_summary">Enquanto uma página é exibida. Deslize a partir da borda superior ou inferior para vê-las por um momento.</string>
+    <string name="dejavu_bookmarks_export">Exportar para arquivo</string>
+    <plurals name="dejavu_bookmarks_exported">
+        <item quantity="one">%1$d favorito exportado</item>
+        <item quantity="many">%1$d favoritos exportados</item>
+        <item quantity="other">%1$d favoritos exportados</item>
+    </plurals>
+    <string name="dejavu_bookmarks_export_failed">Não foi possível exportar favoritos. Tente novamente.</string>
+    <string name="dejavu_workspace_theme_custom">Cor personalizada</string>
+    <string name="dejavu_workspace_theme_add_color">Adicionar uma cor</string>
+    <string name="dejavu_workspace_theme_remove_color">Remover esta cor</string>
+    <string name="dejavu_workspace_theme_code">Código da cor</string>
+    <string name="dejavu_workspace_theme_color">Cor</string>
+    <string name="dejavu_workspace_wallpaper">Fundo de tela</string>
+    <string name="dejavu_workspace_wallpaper_hint">A imagem fica neste celular e aparece na página inicial. As cores dela se tornam o tema que é sincronizado com o Zen.</string>
+    <string name="dejavu_workspace_wallpaper_choose">Escolher uma imagem</string>
+    <string name="dejavu_workspace_wallpaper_change">Mudar</string>
+    <string name="dejavu_workspace_wallpaper_blur">Desfoque</string>
+    <string name="dejavu_workspace_wallpaper_failed">Não foi possível abrir esta imagem.</string>
+    <string name="dejavu_workspace_wallpaper_colors">Cores sincronizadas com o Zen</string>
+    <string name="dejavu_workspace_wallpaper_hint_local">A imagem fica neste celular e aparece na página inicial.</string>
+    <string name="dejavu_workspace_wallpaper_colors_local">Cores tiradas da imagem</string>
+    <string name="dejavu_page_info">Detalhes da página</string>
+    <string name="dejavu_page_info_container">Contêiner</string>
+    <string name="dejavu_page_info_workspace">Espaço de trabalho</string>
+    <string name="dejavu_page_info_site_details">Segurança e permissões</string>
+    <string name="dejavu_page_info_pinned">Fixada</string>
+    <string name="dejavu_page_info_essential">Essencial</string>
+    <string name="dejavu_page_info_reader_view">Modo de leitura</string>
+    <string name="dejavu_page_info_translated">Traduzida</string>
+    <string name="dejavu_menu_reader_view">Modo de leitura</string>
+    <string name="dejavu_menu_close_reader_view">Fechar modo de leitura</string>
+    <string name="dejavu_workspace_firefox_limits">Limitado pelo Firefox Sync</string>
+    <string name="dejavu_workspace_firefox_device">O Firefox Sync só compartilha as abas abertas de cada dispositivo. As abas que você abre ou fecha aqui também abrem ou fecham nesse dispositivo, mas você não pode fixar abas, adicionar pastas ou essenciais, nem escolher um contêiner. O nome e o ícone vêm do dispositivo, e as cores que você escolher ficam neste celular.</string>
+    <string name="dejavu_workspace_firefox_own">O Firefox Sync não compartilha espaços de trabalho, então este espaço de trabalho, com as abas fixadas e pastas dele, fica neste celular. O Firefox mostra as abas abertas dele como abas deste celular.</string>
 </resources>

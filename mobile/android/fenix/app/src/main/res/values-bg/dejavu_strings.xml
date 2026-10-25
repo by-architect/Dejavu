@@ -327,7 +327,6 @@
     <string name="dejavu_settings_author">Създадено от %1$s</string>
     <string name="dejavu_settings_coffee">Купете ми кафе</string>
     <string name="dejavu_settings_coffee_summary">Dejavu няма реклами. Ако ви харесва, едно кафе му помага да расте.</string>
-    <string name="dejavu_workspace_device_note">Това работно пространство показва отворените раздели на устройство от профила ви в Mozilla. Името и иконата му идват от самото устройство, а цветовете, които изберете, остават на този телефон.</string>
     <string name="dejavu_settings_safe_browsing">Безопасно сърфиране с Google</string>
     <string name="dejavu_back">Назад</string>
     <string name="dejavu_sync_start_title">Обединяване или започване на чисто?</string>
@@ -430,4 +429,37 @@
     <string name="dejavu_settings_screen">Екран</string>
     <string name="dejavu_settings_hide_system_bars">Скриване на лентите за състояние и навигация</string>
     <string name="dejavu_settings_hide_system_bars_summary">Докато се показва страница. Плъзнете от горния или долния край, за да ги видите за момент.</string>
+    <string name="dejavu_bookmarks_export">Изнасяне във файл</string>
+    <plurals name="dejavu_bookmarks_exported">
+        <item quantity="one">%1$d отметка изнесена</item>
+        <item quantity="other">%1$d отметки изнесени</item>
+    </plurals>
+    <string name="dejavu_bookmarks_export_failed">Отметките не можаха да бъдат изнесени. Опитайте отново.</string>
+    <string name="dejavu_workspace_theme_custom">Цвят по избор</string>
+    <string name="dejavu_workspace_theme_add_color">Добавяне на цвят</string>
+    <string name="dejavu_workspace_theme_remove_color">Премахване на този цвят</string>
+    <string name="dejavu_workspace_theme_code">Код на цвета</string>
+    <string name="dejavu_workspace_theme_color">Цвят</string>
+    <string name="dejavu_workspace_wallpaper">Тапет</string>
+    <string name="dejavu_workspace_wallpaper_hint">Изображението остава на този телефон и се показва на началната страница. Цветовете му стават темата, която се синхронизира със Zen.</string>
+    <string name="dejavu_workspace_wallpaper_choose">Избиране на изображение</string>
+    <string name="dejavu_workspace_wallpaper_change">Смяна</string>
+    <string name="dejavu_workspace_wallpaper_blur">Замъгляване</string>
+    <string name="dejavu_workspace_wallpaper_failed">Това изображение не можа да бъде отворено.</string>
+    <string name="dejavu_workspace_wallpaper_colors">Цветове, които се синхронизират със Zen</string>
+    <string name="dejavu_workspace_wallpaper_hint_local">Изображението остава на този телефон и се показва на началната страница.</string>
+    <string name="dejavu_workspace_wallpaper_colors_local">Цветове, взети от изображението</string>
+    <string name="dejavu_page_info">Подробности за страницата</string>
+    <string name="dejavu_page_info_container">Контейнер</string>
+    <string name="dejavu_page_info_workspace">Работно пространство</string>
+    <string name="dejavu_page_info_site_details">Сигурност и разрешения</string>
+    <string name="dejavu_page_info_pinned">Закачен</string>
+    <string name="dejavu_page_info_essential">В Любими</string>
+    <string name="dejavu_page_info_reader_view">Изглед за четене</string>
+    <string name="dejavu_page_info_translated">Преведено</string>
+    <string name="dejavu_menu_reader_view">Изглед за четене</string>
+    <string name="dejavu_menu_close_reader_view">Изход от изглед за четене</string>
+    <string name="dejavu_workspace_firefox_limits">Ограничено от Firefox Sync</string>
+    <string name="dejavu_workspace_firefox_device">Firefox Sync споделя само отворените раздели на всяко устройство. Разделите, които отваряте или затваряте тук, се отварят или затварят и на това устройство, но не можете да закачате раздели, да добавяте папки или Любими, нито да избирате контейнер. Името и иконата идват от устройството, а цветовете, които изберете, остават на този телефон.</string>
+    <string name="dejavu_workspace_firefox_own">Firefox Sync не споделя работни пространства, затова това работно пространство, заедно със закачените си раздели и папки, остава на този телефон. Firefox показва отворените му раздели като раздели на този телефон.</string>
 </resources>

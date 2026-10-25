@@ -347,7 +347,6 @@
     <string name="dejavu_settings_author">%1$s tarafından oluşturuldu</string>
     <string name="dejavu_settings_coffee">Bana bir kahve ısmarlayın</string>
     <string name="dejavu_settings_coffee_summary">Dejavu\'da reklam yok. Beğendiyseniz bir kahve onun büyümesine yardımcı olur.</string>
-    <string name="dejavu_workspace_device_note">Bu çalışma alanı, Mozilla hesabınızdaki bir cihazın açık sekmelerini gösterir. Adı ve simgesi o cihazdan gelir; seçtiğiniz renkler bu telefonda kalır.</string>
     <string name="dejavu_settings_safe_browsing">Google Güvenli Tarama</string>
     <string name="dejavu_back">Geri</string>
     <string name="dejavu_sync_start_title">Birleştirilsin mi, sıfırdan mı başlansın?</string>
@@ -450,4 +449,17 @@
     <string name="dejavu_settings_screen">Ekran</string>
     <string name="dejavu_settings_hide_system_bars">Durum ve gezinme çubuklarını gizle</string>
     <string name="dejavu_settings_hide_system_bars_summary">Bir sayfa gösterilirken. Kısa bir süre görmek için üst veya alt kenardan kaydırın.</string>
+    <string name="dejavu_bookmarks_export">Dosyaya dışa aktar</string>
+    <plurals name="dejavu_bookmarks_exported">
+        <item quantity="one">%1$d yer imi dışa aktarıldı</item>
+        <item quantity="other">%1$d yer imi dışa aktarıldı</item>
+    </plurals>
+    <string name="dejavu_bookmarks_export_failed">Yer imleri dışa aktarılamadı. Yeniden deneyin.</string>
+    <string name="dejavu_workspace_wallpaper_hint_local">Resim bu telefonda kalır ve ana ekranda görünür.</string>
+    <string name="dejavu_workspace_wallpaper_colors_local">Resimden alınan renkler</string>
+    <string name="dejavu_menu_reader_view">Okuyucu görünümü</string>
+    <string name="dejavu_menu_close_reader_view">Okuyucu görünümünü kapat</string>
+    <string name="dejavu_workspace_firefox_limits">Firefox Sync nedeniyle sınırlı</string>
+    <string name="dejavu_workspace_firefox_device">Firefox Sync her cihazın yalnızca açık sekmelerini paylaşır. Burada açtığınız veya kapattığınız sekmeler o cihazda da açılır veya kapanır, ancak sekme sabitleyemez, klasör veya temel sekme ekleyemez ya da kapsayıcı seçemezsiniz. Adı ve simgesi cihazdan gelir; seçtiğiniz renkler bu telefonda kalır.</string>
+    <string name="dejavu_workspace_firefox_own">Firefox Sync çalışma alanlarını paylaşmaz, bu yüzden bu çalışma alanı sabitlenmiş sekmeleri ve klasörleriyle birlikte bu telefonda kalır. Firefox, açık sekmelerini bu telefonun sekmeleri olarak gösterir.</string>
 </resources>

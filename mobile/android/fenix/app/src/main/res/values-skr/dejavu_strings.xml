@@ -327,7 +327,6 @@
     <string name="dejavu_settings_author">%1$s دا بݨایا ہویا</string>
     <string name="dejavu_settings_coffee">میکوں ہک کافی پلاؤ</string>
     <string name="dejavu_settings_coffee_summary">Dejavu وچ کوئی اشتہار کائنی۔ جے ایہ تہاکوں چنڳا لڳدا ہے، تاں ہک کافی ایندے ودھݨ وچ مدد کریندی ہے۔</string>
-    <string name="dejavu_workspace_device_note">ایہ ورک سپیس تہاݙے Mozilla کھاتے وچ ہک ڈیوائس دیاں کھلیاں ٹیباں ݙکھیندی ہے۔ ایندا ناں تے آئیکان اوں ڈیوائس کنوں آندے ہن، تے جہڑے رنگ تساں چُݨدے ہو اوہ ایں فون تے رہندے ہن۔</string>
     <string name="dejavu_settings_safe_browsing">Google محفوظ براؤزنگ</string>
     <string name="dejavu_back">پچھوں</string>
     <string name="dejavu_sync_start_title">ملاؤ یا نویں سرے کنوں شروع کرو؟</string>
@@ -430,4 +429,37 @@
     <string name="dejavu_settings_screen">سکرین</string>
     <string name="dejavu_settings_hide_system_bars">سٹیٹس تے نیویگیشن بار لُکاؤ</string>
     <string name="dejavu_settings_hide_system_bars_summary">جݙݨ کوئی ورقہ ݙکھایا ویندا پیا ہووے۔ انہاں کوں ہک پل کیتے ݙیکھݨ کیتے اُتلے یا تلے کنارے کنوں سوائپ کرو۔</string>
+    <string name="dejavu_bookmarks_export">فائل وچ برآمد کرو</string>
+    <plurals name="dejavu_bookmarks_exported">
+        <item quantity="one">%1$d نشانی برآمد تھی ڳئی</item>
+        <item quantity="other">%1$d نشانیاں برآمد تھی ڳیاں</item>
+    </plurals>
+    <string name="dejavu_bookmarks_export_failed">نشانیاں برآمد کائنی تھی سڳیاں۔ ولدا کوشش کرو۔</string>
+    <string name="dejavu_workspace_theme_custom">من پسند رنگ</string>
+    <string name="dejavu_workspace_theme_add_color">رنگ شامل کرو</string>
+    <string name="dejavu_workspace_theme_remove_color">ایہ رنگ ہٹاؤ</string>
+    <string name="dejavu_workspace_theme_code">رنگ دا کوڈ</string>
+    <string name="dejavu_workspace_theme_color">رنگ</string>
+    <string name="dejavu_workspace_wallpaper">وال پیپر</string>
+    <string name="dejavu_workspace_wallpaper_hint">تصویر ایں فون تے رہندی ہے تے مکھ پنے تے ݙسدی ہے۔ ایندے رنگ اوہ تھیم بݨ ویندے ہن جہڑا Zen نال ہم وقت تھیندا ہے۔</string>
+    <string name="dejavu_workspace_wallpaper_choose">تصویر چُݨو</string>
+    <string name="dejavu_workspace_wallpaper_change">وٹاؤ</string>
+    <string name="dejavu_workspace_wallpaper_blur">دھندلاہٹ</string>
+    <string name="dejavu_workspace_wallpaper_failed">ایہ تصویر کائنی کھل سڳی۔</string>
+    <string name="dejavu_workspace_wallpaper_colors">Zen نال ہم وقت تھیوݨ آلے رنگ</string>
+    <string name="dejavu_workspace_wallpaper_hint_local">تصویر ایں فون تے رہندی ہے تے مکھ پنے تے ݙسدی ہے۔</string>
+    <string name="dejavu_workspace_wallpaper_colors_local">تصویر کنوں گھدے ڳئے رنگ</string>
+    <string name="dejavu_page_info">ورقے دیاں تفصیلاں</string>
+    <string name="dejavu_page_info_container">کنٹینر</string>
+    <string name="dejavu_page_info_workspace">ورک سپیس</string>
+    <string name="dejavu_page_info_site_details">حفاظت تے اجازتاں</string>
+    <string name="dejavu_page_info_pinned">پن تھئی</string>
+    <string name="dejavu_page_info_essential">ضروری ٹیب</string>
+    <string name="dejavu_page_info_reader_view">قاری نظارہ</string>
+    <string name="dejavu_page_info_translated">ترجمہ تھیا ہویا</string>
+    <string name="dejavu_menu_reader_view">قاری نظارہ</string>
+    <string name="dejavu_menu_close_reader_view">قاری نظارہ بند کرو</string>
+    <string name="dejavu_workspace_firefox_limits">Firefox Sync دیاں حداں</string>
+    <string name="dejavu_workspace_firefox_device">Firefox Sync ہر ڈیوائس دیاں صرف کھلیاں ٹیباں شیئر کریندا ہے۔ جہڑیاں ٹیباں تساں اِتھاں کھولیندے یا بند کریندے ہو، اوہ اوں ڈیوائس تے وی کھلدیاں یا بند تھیندیاں ہن، پر تساں نہ ٹیباں پن کر سڳدے ہو، نہ فولڈر یا ضروری ٹیباں شامل کر سڳدے ہو، تے نہ کنٹینر چُݨ سڳدے ہو۔ ناں تے آئیکان ڈیوائس کنوں آندے ہن، تے جہڑے رنگ تساں چُݨدے ہو اوہ ایں فون تے رہندے ہن۔</string>
+    <string name="dejavu_workspace_firefox_own">Firefox Sync ورک سپیساں شیئر کائنی کریندا، ایں کیتے ایہ ورک سپیس، آپݨیاں پن تھیاں ٹیباں تے فولڈراں سمیت، ایں فون تے رہندی ہے۔ Firefox ایندیاں کھلیاں ٹیباں کوں ایں فون دیاں ٹیباں دے طور تے ݙکھیندا ہے۔</string>
 </resources>

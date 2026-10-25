@@ -327,7 +327,6 @@
     <string name="dejavu_settings_author">Ji hêla %1$s ve hatiye afirandin</string>
     <string name="dejavu_settings_coffee">Qehweyekê ji min re bikire</string>
     <string name="dejavu_settings_coffee_summary">Dejavu bê reklam e. Heke tu jê hez dikî, qehweyek dibe alîkar ku ew pêş bikeve.</string>
-    <string name="dejavu_workspace_device_note">Ev qad hilpekînên vekirî yên amûreke li ser hesabê te yê Mozilla nîşan dide. Nav û îkona wê ji wê amûrê tên, û rengên ku tu hildibijêrî li ser vê telefonê dimînin.</string>
     <string name="dejavu_settings_safe_browsing">Gerîna Ewle ya Google</string>
     <string name="dejavu_back">Paşve</string>
     <string name="dejavu_sync_start_title">Bike yek an ji nû ve dest pê bike?</string>
@@ -430,4 +429,37 @@
     <string name="dejavu_settings_screen">Ekran</string>
     <string name="dejavu_settings_hide_system_bars">Darikên rewşê û navîgasyonê veşêre</string>
     <string name="dejavu_settings_hide_system_bars_summary">Dema rûpelek tê nîşandan. Ji bo ku tu wan ji bo demekê bibînî, ji qeraxa jor an jêr bikişîne.</string>
+    <string name="dejavu_bookmarks_export">Wek dosye derxîne</string>
+    <plurals name="dejavu_bookmarks_exported">
+        <item quantity="one">%1$d bijare hate derxistin</item>
+        <item quantity="other">%1$d bijare hatin derxistin</item>
+    </plurals>
+    <string name="dejavu_bookmarks_export_failed">Bijare nehatin derxistin. Dîsa biceribîne.</string>
+    <string name="dejavu_workspace_theme_custom">Rengê taybet</string>
+    <string name="dejavu_workspace_theme_add_color">Rengekî zêde bike</string>
+    <string name="dejavu_workspace_theme_remove_color">Vî rengî rake</string>
+    <string name="dejavu_workspace_theme_code">Koda rengî</string>
+    <string name="dejavu_workspace_theme_color">Reng</string>
+    <string name="dejavu_workspace_wallpaper">Wêneyê dîwêr</string>
+    <string name="dejavu_workspace_wallpaper_hint">Wêne li ser vê telefonê dimîne û li rûpela malê tê nîşandan. Rengên wî dibin dirbê ku bi Zen re tê hevdemkirin.</string>
+    <string name="dejavu_workspace_wallpaper_choose">Wêneyekî hilbijêre</string>
+    <string name="dejavu_workspace_wallpaper_change">Biguherîne</string>
+    <string name="dejavu_workspace_wallpaper_blur">Nezelalî</string>
+    <string name="dejavu_workspace_wallpaper_failed">Ev wêne nehat vekirin.</string>
+    <string name="dejavu_workspace_wallpaper_colors">Rengên ku bi Zen re tên hevdemkirin</string>
+    <string name="dejavu_workspace_wallpaper_hint_local">Wêne li ser vê telefonê dimîne û li rûpela malê tê nîşandan.</string>
+    <string name="dejavu_workspace_wallpaper_colors_local">Rengên ji wêneyê hatine girtin</string>
+    <string name="dejavu_page_info">Hûrguliyên rûpelê</string>
+    <string name="dejavu_page_info_container">Konteyner</string>
+    <string name="dejavu_page_info_workspace">Qad</string>
+    <string name="dejavu_page_info_site_details">Ewlehî û destûr</string>
+    <string name="dejavu_page_info_pinned">Sabît</string>
+    <string name="dejavu_page_info_essential">Malpera girîng</string>
+    <string name="dejavu_page_info_reader_view">Moda xwînerê</string>
+    <string name="dejavu_page_info_translated">Wergerandî</string>
+    <string name="dejavu_menu_reader_view">Moda xwînerê</string>
+    <string name="dejavu_menu_close_reader_view">Moda xwînerê bigire</string>
+    <string name="dejavu_workspace_firefox_limits">Sînorên Firefox Sync</string>
+    <string name="dejavu_workspace_firefox_device">Firefox Sync tenê hilpekînên vekirî yên her amûrê parve dike. Hilpekînên ku tu li vir vedikî an digirî, li ser wê amûrê jî vedibin an tên girtin, lê tu nikarî hilpekînan bizeliqînî, peldank an malperên girîng zêde bikî, an konteynerekê hilbijêrî. Nav û îkon ji amûrê tên, û rengên ku tu hildibijêrî li ser vê telefonê dimînin.</string>
+    <string name="dejavu_workspace_firefox_own">Firefox Sync qadan parve nake, ji ber vê yekê ev qad, bi hilpekînên xwe yên sabît û peldankên xwe re, li ser vê telefonê dimîne. Firefox hilpekînên wê yên vekirî wek hilpekînên vê telefonê nîşan dide.</string>
 </resources>

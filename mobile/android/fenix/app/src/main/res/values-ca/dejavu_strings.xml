@@ -334,7 +334,6 @@
     <string name="dejavu_settings_author">Creat per %1$s</string>
     <string name="dejavu_settings_coffee">Convideu-me a un cafè</string>
     <string name="dejavu_settings_coffee_summary">El Dejavu no té anuncis. Si us agrada, un cafè l\'ajuda a créixer.</string>
-    <string name="dejavu_workspace_device_note">Aquest espai de treball mostra les pestanyes obertes d\'un dispositiu del vostre compte de Mozilla. El nom i la icona provenen d\'aquell dispositiu, i els colors que trieu es queden en aquest telèfon.</string>
     <string name="dejavu_settings_safe_browsing">Navegació segura de Google</string>
     <string name="dejavu_back">Enrere</string>
     <string name="dejavu_sync_start_title">Combinar o començar de zero?</string>
@@ -437,4 +436,38 @@
     <string name="dejavu_settings_screen">Pantalla</string>
     <string name="dejavu_settings_hide_system_bars">Amaga les barres d\'estat i de navegació</string>
     <string name="dejavu_settings_hide_system_bars_summary">Mentre es mostra una pàgina. Llisqueu des de la vora superior o inferior per veure-les un moment.</string>
+    <string name="dejavu_bookmarks_export">Exporta a un fitxer</string>
+    <plurals name="dejavu_bookmarks_exported">
+        <item quantity="one">%1$d adreça d\'interès exportada</item>
+        <item quantity="many">%1$d adreces d\'interès exportades</item>
+        <item quantity="other">%1$d adreces d\'interès exportades</item>
+    </plurals>
+    <string name="dejavu_bookmarks_export_failed">No s\'han pogut exportar les adreces d\'interès. Torneu-ho a provar.</string>
+    <string name="dejavu_workspace_theme_custom">Color personalitzat</string>
+    <string name="dejavu_workspace_theme_add_color">Afegeix un color</string>
+    <string name="dejavu_workspace_theme_remove_color">Treu aquest color</string>
+    <string name="dejavu_workspace_theme_code">Codi de color</string>
+    <string name="dejavu_workspace_theme_color">Color</string>
+    <string name="dejavu_workspace_wallpaper">Fons de pantalla</string>
+    <string name="dejavu_workspace_wallpaper_hint">La imatge es queda en aquest telèfon i es mostra a la pàgina d\'inici. Els seus colors es converteixen en el tema que se sincronitza amb el Zen.</string>
+    <string name="dejavu_workspace_wallpaper_choose">Tria una imatge</string>
+    <string name="dejavu_workspace_wallpaper_change">Canvia</string>
+    <string name="dejavu_workspace_wallpaper_blur">Desenfocament</string>
+    <string name="dejavu_workspace_wallpaper_failed">No s\'ha pogut obrir aquesta imatge.</string>
+    <string name="dejavu_workspace_wallpaper_colors">Colors que se sincronitzen amb el Zen</string>
+    <string name="dejavu_workspace_wallpaper_hint_local">La imatge es queda en aquest telèfon i es mostra a la pàgina d\'inici.</string>
+    <string name="dejavu_workspace_wallpaper_colors_local">Colors extrets de la imatge</string>
+    <string name="dejavu_page_info">Detalls de la pàgina</string>
+    <string name="dejavu_page_info_container">Contenidor</string>
+    <string name="dejavu_page_info_workspace">Espai de treball</string>
+    <string name="dejavu_page_info_site_details">Seguretat i permisos</string>
+    <string name="dejavu_page_info_pinned">Fixada</string>
+    <string name="dejavu_page_info_essential">Essencial</string>
+    <string name="dejavu_page_info_reader_view">Vista de lectura</string>
+    <string name="dejavu_page_info_translated">Traduïda</string>
+    <string name="dejavu_menu_reader_view">Vista de lectura</string>
+    <string name="dejavu_menu_close_reader_view">Tanca la vista de lectura</string>
+    <string name="dejavu_workspace_firefox_limits">Limitat pel Firefox Sync</string>
+    <string name="dejavu_workspace_firefox_device">El Firefox Sync només comparteix les pestanyes obertes de cada dispositiu. Les pestanyes que obriu o tanqueu aquí també s\'obren o es tanquen en aquell dispositiu, però no podeu fixar pestanyes, afegir carpetes ni essencials, ni triar un contenidor. El nom i la icona provenen del dispositiu, i els colors que trieu es queden en aquest telèfon.</string>
+    <string name="dejavu_workspace_firefox_own">El Firefox Sync no comparteix els espais de treball, de manera que aquest espai de treball, amb les seves pestanyes fixades i carpetes, es queda en aquest telèfon. El Firefox mostra les seves pestanyes obertes com a pestanyes d\'aquest telèfon.</string>
 </resources>

@@ -334,7 +334,6 @@
     <string name="dejavu_settings_author">Napravio %1$s</string>
     <string name="dejavu_settings_coffee">Kupite mi kafu</string>
     <string name="dejavu_settings_coffee_summary">Dejavu nema reklama. Ako vam se sviđa, kafa mu pomaže da raste.</string>
-    <string name="dejavu_workspace_device_note">Ovaj radni prostor prikazuje otvorene tabove uređaja na vašem Mozilla računu. Njegov naziv i ikona dolaze s tog uređaja, a boje koje odaberete ostaju na ovom telefonu.</string>
     <string name="dejavu_settings_safe_browsing">Google sigurno pregledanje</string>
     <string name="dejavu_back">Nazad</string>
     <string name="dejavu_sync_start_title">Spojiti ili početi ispočetka?</string>
@@ -437,4 +436,38 @@
     <string name="dejavu_settings_screen">Ekran</string>
     <string name="dejavu_settings_hide_system_bars">Sakrij trake statusa i navigacije</string>
     <string name="dejavu_settings_hide_system_bars_summary">Dok je prikazana stranica. Prevucite od gornje ili donje ivice da ih vidite na trenutak.</string>
+    <string name="dejavu_bookmarks_export">Izvezi u datoteku</string>
+    <plurals name="dejavu_bookmarks_exported">
+        <item quantity="one">%1$d oznaka izvezena</item>
+        <item quantity="few">%1$d oznake izvezene</item>
+        <item quantity="other">%1$d oznaka izvezeno</item>
+    </plurals>
+    <string name="dejavu_bookmarks_export_failed">Nije moguće izvesti oznake. Pokušajte ponovo.</string>
+    <string name="dejavu_workspace_theme_custom">Prilagođena boja</string>
+    <string name="dejavu_workspace_theme_add_color">Dodaj boju</string>
+    <string name="dejavu_workspace_theme_remove_color">Ukloni ovu boju</string>
+    <string name="dejavu_workspace_theme_code">Kod boje</string>
+    <string name="dejavu_workspace_theme_color">Boja</string>
+    <string name="dejavu_workspace_wallpaper">Pozadina</string>
+    <string name="dejavu_workspace_wallpaper_hint">Slika ostaje na ovom telefonu i prikazuje se na početnoj stranici. Njene boje postaju tema koja se sinhronizuje sa Zenom.</string>
+    <string name="dejavu_workspace_wallpaper_choose">Izaberi sliku</string>
+    <string name="dejavu_workspace_wallpaper_change">Promijeni</string>
+    <string name="dejavu_workspace_wallpaper_blur">Zamućenje</string>
+    <string name="dejavu_workspace_wallpaper_failed">Nije moguće otvoriti ovu sliku.</string>
+    <string name="dejavu_workspace_wallpaper_colors">Boje koje se sinhronizuju sa Zenom</string>
+    <string name="dejavu_workspace_wallpaper_hint_local">Slika ostaje na ovom telefonu i prikazuje se na početnoj stranici.</string>
+    <string name="dejavu_workspace_wallpaper_colors_local">Boje preuzete iz slike</string>
+    <string name="dejavu_page_info">Detalji stranice</string>
+    <string name="dejavu_page_info_container">Kontejner</string>
+    <string name="dejavu_page_info_workspace">Radni prostor</string>
+    <string name="dejavu_page_info_site_details">Sigurnost i dozvole</string>
+    <string name="dejavu_page_info_pinned">Prikvačen</string>
+    <string name="dejavu_page_info_essential">Favorit</string>
+    <string name="dejavu_page_info_reader_view">Prikaz za čitanje</string>
+    <string name="dejavu_page_info_translated">Prevedeno</string>
+    <string name="dejavu_menu_reader_view">Prikaz za čitanje</string>
+    <string name="dejavu_menu_close_reader_view">Zatvori prikaz za čitanje</string>
+    <string name="dejavu_workspace_firefox_limits">Firefox Sync ima ograničenja</string>
+    <string name="dejavu_workspace_firefox_device">Firefox Sync dijeli samo otvorene tabove svakog uređaja. Tabovi koje ovdje otvorite ili zatvorite otvaraju se ili zatvaraju i na tom uređaju, ali ne možete prikvačiti tabove, dodati foldere ili Favorite niti izabrati kontejner. Naziv i ikona dolaze s uređaja, a boje koje odaberete ostaju na ovom telefonu.</string>
+    <string name="dejavu_workspace_firefox_own">Firefox Sync ne dijeli radne prostore, pa ovaj radni prostor, sa svojim prikvačenim tabovima i folderima, ostaje na ovom telefonu. Firefox prikazuje njegove otvorene tabove kao tabove ovog telefona.</string>
 </resources>

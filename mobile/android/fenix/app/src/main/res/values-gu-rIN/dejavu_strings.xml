@@ -360,7 +360,6 @@
     <string name="dejavu_settings_author">%1$s દ્વારા બનાવેલ</string>
     <string name="dejavu_settings_coffee">મને એક કૉફી પીવડાવો</string>
     <string name="dejavu_settings_coffee_summary">Dejavu માં કોઈ જાહેરાતો નથી. જો તમને તે ગમે, તો એક કૉફી તેને વિકસવામાં મદદ કરે છે.</string>
-    <string name="dejavu_workspace_device_note">આ વર્કસ્પેસ તમારા Mozilla એકાઉન્ટ પરના એક ઉપકરણની ખુલ્લી ટૅબ્સ બતાવે છે. તેનું નામ અને આઇકન તે ઉપકરણમાંથી આવે છે, અને તમે પસંદ કરો છો તે રંગો આ ફોન પર જ રહે છે.</string>
     <string name="dejavu_settings_safe_browsing">Google સુરક્ષિત બ્રાઉઝિંગ</string>
     <string name="dejavu_back">પાછળ</string>
     <string name="dejavu_sync_start_title">મર્જ કરીએ કે નવેસરથી શરૂ કરીએ?</string>
@@ -463,4 +462,37 @@
     <string name="dejavu_settings_screen">સ્ક્રીન</string>
     <string name="dejavu_settings_hide_system_bars">સ્ટેટસ અને નેવિગેશન બાર છુપાવો</string>
     <string name="dejavu_settings_hide_system_bars_summary">જ્યારે પેજ બતાવાય ત્યારે. તેમને થોડી વાર જોવા માટે ઉપર કે નીચેની કિનારીથી સ્વાઇપ કરો.</string>
+    <string name="dejavu_bookmarks_export">ફાઇલમાં નિકાસ કરો</string>
+    <plurals name="dejavu_bookmarks_exported">
+        <item quantity="one">%1$d બુકમાર્કની નિકાસ કરી</item>
+        <item quantity="other">%1$d બુકમાર્ક્સની નિકાસ કરી</item>
+    </plurals>
+    <string name="dejavu_bookmarks_export_failed">બુકમાર્ક્સની નિકાસ કરી શકાઈ નહીં. ફરી પ્રયાસ કરો.</string>
+    <string name="dejavu_workspace_theme_custom">કસ્ટમ રંગ</string>
+    <string name="dejavu_workspace_theme_add_color">રંગ ઉમેરો</string>
+    <string name="dejavu_workspace_theme_remove_color">આ રંગ દૂર કરો</string>
+    <string name="dejavu_workspace_theme_code">રંગ કોડ</string>
+    <string name="dejavu_workspace_theme_color">રંગ</string>
+    <string name="dejavu_workspace_wallpaper">વૉલપેપર</string>
+    <string name="dejavu_workspace_wallpaper_hint">છબી આ ફોન પર જ રહે છે અને મુખ્ય પૃષ્ઠ પર દેખાય છે. તેના રંગો એ થીમ બને છે જે Zen સાથે સમન્વયિત થાય છે.</string>
+    <string name="dejavu_workspace_wallpaper_choose">છબી પસંદ કરો</string>
+    <string name="dejavu_workspace_wallpaper_change">બદલો</string>
+    <string name="dejavu_workspace_wallpaper_blur">ઝાંખપ</string>
+    <string name="dejavu_workspace_wallpaper_failed">આ છબી ખોલી શકાઈ નહીં.</string>
+    <string name="dejavu_workspace_wallpaper_colors">Zen સાથે સમન્વયિત થતા રંગો</string>
+    <string name="dejavu_workspace_wallpaper_hint_local">છબી આ ફોન પર જ રહે છે અને મુખ્ય પૃષ્ઠ પર દેખાય છે.</string>
+    <string name="dejavu_workspace_wallpaper_colors_local">છબીમાંથી લીધેલા રંગો</string>
+    <string name="dejavu_page_info">પૃષ્ઠની વિગતો</string>
+    <string name="dejavu_page_info_container">કન્ટેનર</string>
+    <string name="dejavu_page_info_workspace">વર્કસ્પેસ</string>
+    <string name="dejavu_page_info_site_details">સુરક્ષા અને પરવાનગીઓ</string>
+    <string name="dejavu_page_info_pinned">પિન કરેલી</string>
+    <string name="dejavu_page_info_essential">એસેન્શિયલ</string>
+    <string name="dejavu_page_info_reader_view">વાંચકો જુઓ</string>
+    <string name="dejavu_page_info_translated">અનુવાદિત</string>
+    <string name="dejavu_menu_reader_view">વાંચકો જુઓ</string>
+    <string name="dejavu_menu_close_reader_view">વાંચકો જુઓ બંધ કરો</string>
+    <string name="dejavu_workspace_firefox_limits">Firefox Sync દ્વારા મર્યાદિત</string>
+    <string name="dejavu_workspace_firefox_device">Firefox Sync દરેક ઉપકરણની ફક્ત ખુલ્લી ટૅબ્સ જ શેર કરે છે. તમે અહીં ખોલો કે બંધ કરો છો તે ટૅબ્સ તે ઉપકરણ પર પણ ખૂલે કે બંધ થાય છે, પરંતુ તમે ટૅબ્સ પિન કરી શકતા નથી, ફોલ્ડર્સ કે એસેન્શિયલ્સ ઉમેરી શકતા નથી, કે કન્ટેનર પસંદ કરી શકતા નથી. નામ અને આઇકન ઉપકરણમાંથી આવે છે, અને તમે પસંદ કરો છો તે રંગો આ ફોન પર જ રહે છે.</string>
+    <string name="dejavu_workspace_firefox_own">Firefox Sync વર્કસ્પેસ શેર કરતું નથી, તેથી આ વર્કસ્પેસ, તેની પિન કરેલી ટૅબ્સ અને ફોલ્ડર્સ સાથે, આ ફોન પર જ રહે છે. Firefox તેની ખુલ્લી ટૅબ્સને આ ફોનની ટૅબ્સ તરીકે બતાવે છે.</string>
 </resources>

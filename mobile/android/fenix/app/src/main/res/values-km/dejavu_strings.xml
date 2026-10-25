@@ -320,7 +320,6 @@
     <string name="dejavu_settings_author">បង្កើតដោយ %1$s</string>
     <string name="dejavu_settings_coffee">ទិញកាហ្វេឲ្យខ្ញុំមួយកែវ</string>
     <string name="dejavu_settings_coffee_summary">Dejavu គ្មានការផ្សាយពាណិជ្ជកម្មទេ។ ប្រសិនបើអ្នកចូលចិត្តវា កាហ្វេមួយកែវជួយឲ្យវារីកចម្រើន។</string>
-    <string name="dejavu_workspace_device_note">ចន្លោះការងារនេះបង្ហាញផ្ទាំងដែលបើករបស់ឧបករណ៍មួយនៅលើគណនី Mozilla របស់អ្នក។ ឈ្មោះ និងរូបតំណាងរបស់វាមកពីឧបករណ៍នោះ ហើយពណ៌ដែលអ្នកជ្រើសរើសនៅតែលើទូរស័ព្ទនេះ។</string>
     <string name="dejavu_settings_safe_browsing">Google Safe Browsing</string>
     <string name="dejavu_back">ថយក្រោយ</string>
     <string name="dejavu_sync_start_title">បញ្ចូលគ្នា ឬចាប់ផ្ដើមថ្មី?</string>
@@ -423,4 +422,36 @@
     <string name="dejavu_settings_screen">អេក្រង់</string>
     <string name="dejavu_settings_hide_system_bars">លាក់របារស្ថានភាព និងរបាររុករក</string>
     <string name="dejavu_settings_hide_system_bars_summary">ពេលទំព័រកំពុងបង្ហាញ។ អូសចូលពីគែមខាងលើ ឬខាងក្រោម ដើម្បីមើលពួកវាមួយភ្លែត។</string>
+    <string name="dejavu_bookmarks_export">នាំចេញទៅឯកសារ</string>
+    <plurals name="dejavu_bookmarks_exported">
+        <item quantity="other">%1$d ចំណាំបាននាំចេញ</item>
+    </plurals>
+    <string name="dejavu_bookmarks_export_failed">មិនអាចនាំចេញចំណាំបានទេ។ សូមព្យាយាមម្ដងទៀត។</string>
+    <string name="dejavu_workspace_theme_custom">ពណ៌ផ្ទាល់ខ្លួន</string>
+    <string name="dejavu_workspace_theme_add_color">បន្ថែមពណ៌មួយ</string>
+    <string name="dejavu_workspace_theme_remove_color">ដកពណ៌នេះចេញ</string>
+    <string name="dejavu_workspace_theme_code">កូដពណ៌</string>
+    <string name="dejavu_workspace_theme_color">ពណ៌</string>
+    <string name="dejavu_workspace_wallpaper">ផ្ទាំងរូបភាព</string>
+    <string name="dejavu_workspace_wallpaper_hint">រូបភាពនៅតែលើទូរស័ព្ទនេះ ហើយបង្ហាញនៅលើទំព័រដើម។ ពណ៌របស់វាក្លាយជាស្បែកដែលធ្វើសមកាលកម្មជាមួយ Zen។</string>
+    <string name="dejavu_workspace_wallpaper_choose">ជ្រើសរើសរូបភាព</string>
+    <string name="dejavu_workspace_wallpaper_change">ប្ដូរ</string>
+    <string name="dejavu_workspace_wallpaper_blur">ភាពព្រិល</string>
+    <string name="dejavu_workspace_wallpaper_failed">មិនអាចបើករូបភាពនេះបានទេ។</string>
+    <string name="dejavu_workspace_wallpaper_colors">ពណ៌ដែលធ្វើសមកាលកម្មជាមួយ Zen</string>
+    <string name="dejavu_workspace_wallpaper_hint_local">រូបភាពនៅតែលើទូរស័ព្ទនេះ ហើយបង្ហាញនៅលើទំព័រដើម។</string>
+    <string name="dejavu_workspace_wallpaper_colors_local">ពណ៌ដែលយកពីរូបភាព</string>
+    <string name="dejavu_page_info">ព័ត៌មានលម្អិតអំពីទំព័រ</string>
+    <string name="dejavu_page_info_container">កុងតឺន័រ</string>
+    <string name="dejavu_page_info_workspace">ចន្លោះការងារ</string>
+    <string name="dejavu_page_info_site_details">សុវត្ថិភាព និងការអនុញ្ញាត</string>
+    <string name="dejavu_page_info_pinned">បានខ្ទាស់</string>
+    <string name="dejavu_page_info_essential">សំខាន់</string>
+    <string name="dejavu_page_info_reader_view">ទិដ្ឋភាពអ្នកអាន</string>
+    <string name="dejavu_page_info_translated">បានបកប្រែ</string>
+    <string name="dejavu_menu_reader_view">ទិដ្ឋភាពអ្នកអាន</string>
+    <string name="dejavu_menu_close_reader_view">បិទទិដ្ឋភាពអ្នកអាន</string>
+    <string name="dejavu_workspace_firefox_limits">មានកម្រិតដោយ Firefox Sync</string>
+    <string name="dejavu_workspace_firefox_device">Firefox Sync ចែករំលែកតែផ្ទាំងដែលបើករបស់ឧបករណ៍នីមួយៗប៉ុណ្ណោះ។ ផ្ទាំងដែលអ្នកបើក ឬបិទនៅទីនេះ ក៏បើក ឬបិទនៅលើឧបករណ៍នោះផងដែរ ប៉ុន្តែអ្នកមិនអាចខ្ទាស់ផ្ទាំង បន្ថែមថត ឬសំខាន់ៗ ឬជ្រើសរើសកុងតឺន័របានទេ។ ឈ្មោះ និងរូបតំណាងមកពីឧបករណ៍នោះ ហើយពណ៌ដែលអ្នកជ្រើសរើសនៅតែលើទូរស័ព្ទនេះ។</string>
+    <string name="dejavu_workspace_firefox_own">Firefox Sync មិនចែករំលែកចន្លោះការងារទេ ដូច្នេះចន្លោះការងារនេះ រួមទាំងផ្ទាំងបានខ្ទាស់ និងថតរបស់វា នៅតែលើទូរស័ព្ទនេះ។ Firefox បង្ហាញផ្ទាំងដែលបើករបស់ចន្លោះការងារនេះជាផ្ទាំងរបស់ទូរស័ព្ទនេះ។</string>
 </resources>

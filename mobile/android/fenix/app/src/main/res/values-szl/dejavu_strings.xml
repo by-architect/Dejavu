@@ -341,7 +341,6 @@
     <string name="dejavu_settings_author">Zrobiōne bez %1$s</string>
     <string name="dejavu_settings_coffee">Postow mi kawa</string>
     <string name="dejavu_settings_coffee_summary">Dejavu niy mo reklam. Jak ci sie podobo, kawa pōmoże jij sie rozwijać.</string>
-    <string name="dejavu_workspace_device_note">Tyn plac pokazuje ôdewrzite karty geratu na twojim kōncie Mozilla. Jego miano i ikōna pochodzōm z tego geratu, a farby, kere ôbieresz, ôstajōm na tym telefōnie.</string>
     <string name="dejavu_settings_safe_browsing">Bezpieczne przeglōndanie Google</string>
     <string name="dejavu_back">Nazod</string>
     <string name="dejavu_sync_start_title">Połōnczyć abo zaczōnć ôd nowa?</string>
@@ -444,4 +443,39 @@
     <string name="dejavu_settings_screen">Ekran</string>
     <string name="dejavu_settings_hide_system_bars">Skryj paski statusu i nawigacyje</string>
     <string name="dejavu_settings_hide_system_bars_summary">Kej sie pokazuje strona. Przesuń palcym ôd wiyrchnij abo spodnij krawyńdzi, coby je na chwila ôbejrzeć.</string>
+    <string name="dejavu_bookmarks_export">Eksportuj do zbioru</string>
+    <plurals name="dejavu_bookmarks_exported">
+        <item quantity="one">Wyeksportowano %1$d zokłodka</item>
+        <item quantity="few">Wyeksportowano %1$d zokłodki</item>
+        <item quantity="many">Wyeksportowano %1$d zokłodek</item>
+        <item quantity="other">Wyeksportowano %1$d zokłodki</item>
+    </plurals>
+    <string name="dejavu_bookmarks_export_failed">Niy szło wyeksportować zokłodek. Sprōbuj jeszcze roz.</string>
+    <string name="dejavu_workspace_theme_custom">Włosno farba</string>
+    <string name="dejavu_workspace_theme_add_color">Dodej farba</string>
+    <string name="dejavu_workspace_theme_remove_color">Wyciep ta farba</string>
+    <string name="dejavu_workspace_theme_code">Kod farby</string>
+    <string name="dejavu_workspace_theme_color">Farba</string>
+    <string name="dejavu_workspace_wallpaper">Tapeta</string>
+    <string name="dejavu_workspace_wallpaper_hint">Ôbrozek ôstowo na tym telefōnie i pokazuje sie na strōnie dōm. Jego farby stowajōm sie motywym, kery sie synchronizuje z Zen.</string>
+    <string name="dejavu_workspace_wallpaper_choose">Ôbier ôbrozek</string>
+    <string name="dejavu_workspace_wallpaper_change">Zmiyń</string>
+    <string name="dejavu_workspace_wallpaper_blur">Rozmycie</string>
+    <string name="dejavu_workspace_wallpaper_failed">Niy szło ôdewrzić tego ôbrozka.</string>
+    <string name="dejavu_workspace_wallpaper_colors">Farby synchronizowane z Zen</string>
+    <string name="dejavu_workspace_wallpaper_hint_local">Ôbrozek ôstowo na tym telefōnie i pokazuje sie na strōnie dōm.</string>
+    <string name="dejavu_workspace_wallpaper_colors_local">Farby wziynte z ôbrozka</string>
+    <string name="dejavu_page_info">Szczegōły strōny</string>
+    <string name="dejavu_page_info_container">Kōntyner</string>
+    <string name="dejavu_page_info_workspace">Plac</string>
+    <string name="dejavu_page_info_site_details">Bezpieczyństwo i przizwolynia</string>
+    <string name="dejavu_page_info_pinned">Przipiynto</string>
+    <string name="dejavu_page_info_essential">Nojważniejszo</string>
+    <string name="dejavu_page_info_reader_view">Wyglōnd do czytanio</string>
+    <string name="dejavu_page_info_translated">Przetłōmaczōno</string>
+    <string name="dejavu_menu_reader_view">Wyglōnd do czytanio</string>
+    <string name="dejavu_menu_close_reader_view">Zawrzij wyglōnd do czytanio</string>
+    <string name="dejavu_workspace_firefox_limits">Ôgraniczynia Firefox Sync</string>
+    <string name="dejavu_workspace_firefox_device">Firefox Sync udostympnio ino ôdewrzite karty kożdego geratu. Karty, kere sam ôdwiyrosz abo zawiyrosz, ôdwiyrajōm abo zawiyrajōm sie tyż na tamtym geracie, ale niy możesz przipinać kart, dodować foldrōw ani nojważniejszych, ani ôbiyrać kōntynera. Miano i ikōna pochodzōm z geratu, a farby, kere ôbieresz, ôstajōm na tym telefōnie.</string>
+    <string name="dejavu_workspace_firefox_own">Firefox Sync niy udostympnio placōw, tōż tyn plac, ze swojimi przipiyntymi kartami i foldrami, ôstowo na tym telefōnie. Firefox pokazuje jego ôdewrzite karty jako karty tego telefōnu.</string>
 </resources>
