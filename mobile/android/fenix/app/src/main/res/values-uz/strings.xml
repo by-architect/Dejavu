@@ -505,8 +505,6 @@
     Title of preference for tabs management
   -->
   <string name="preferences_tabs">Varaqlar</string>
-  <!-- Title of preference that allows a user to specify the tab view -->
-  <string name="preferences_tab_view">Varaqni koʻrish</string>
   <!-- Option for a list tab view -->
   <string name="tab_view_list">Roʻyxat</string>
   <!-- Option for a grid tab view -->
@@ -543,13 +541,7 @@
   <string name="close_tabs_after_one_week_summary">Bir haftadan keyin yopish</string>
   <!-- Summary for tabs preference when auto closing tabs setting is set to auto close tabs after one month -->
   <string name="close_tabs_after_one_month_summary">Bir oydan keyin yopish</string>
-  <!--
-    Inactive tabs
-
-    Category header of a preference that allows a user to enable or disable the inactive tabs feature
-  -->
-  <string name="preferences_inactive_tabs">Eski varaqlarni nofaol holatga oʻtkazish</string>
-  <!-- Title of inactive tabs preference -->
+  <!-- Summary of the preference that allows a user to enable or disable the inactive tabs feature. -->
   <string name="preferences_inactive_tabs_title">Ikki hafta davomida ochilmagan varaqlar nofaol boʻlimga oʻtkaziladi.</string>
   <!--
     Studies
@@ -618,16 +610,6 @@
     %1$d is the number of bookmarks selected
   -->
   <string name="history_multi_select_title">Tanlandi: %1$d</string>
-  <!-- Text for the header that groups the history for today -->
-  <string name="history_today">Bugun</string>
-  <!-- Text for the header that groups the history for yesterday -->
-  <string name="history_yesterday">Kecha</string>
-  <!-- Text for the header that groups the history the past 7 days -->
-  <string name="history_7_days">Soʻnggi 7 kun</string>
-  <!-- Text for the header that groups the history the past 30 days -->
-  <string name="history_30_days">Soʻnggi 30 kun</string>
-  <!-- Text for the header that groups the history older than the last month -->
-  <string name="history_older">Eskiroq</string>
   <!-- Text shown when no history exists -->
   <string name="history_empty_message">Tarix yoʻq</string>
   <!--

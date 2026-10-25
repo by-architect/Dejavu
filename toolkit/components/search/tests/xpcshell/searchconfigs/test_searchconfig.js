@@ -183,34 +183,6 @@ async function populateWikipediaConfig() {
 
 const test = new SearchConfigTest([
   {
-    identifier: "amazondotcom-us",
-    default: {
-      // Not default anywhere.
-    },
-    available: {
-      included: [
-        {
-          // The main regions we ship Amazon to. Below this are special cases.
-          regions: ["us"],
-        },
-      ],
-    },
-    details: [
-      {
-        domain: "amazon.com",
-        telemetryId: "amazondotcom-us-adm",
-        aliases: ["@amazon"],
-        included: [
-          {
-            regions: ["us"],
-          },
-        ],
-        noSuggestionsURL: true,
-        searchUrlCode: "tag=admarketus-20",
-      },
-    ],
-  },
-  {
     identifier: "baidu",
     aliases: ["@百度", "@baidu"],
     default: {
@@ -230,9 +202,17 @@ const test = new SearchConfigTest([
     },
     details: [
       {
-        included: [{}],
+        included: [{ regions: "cn" }],
+        domain: "baidu.com",
+        telemetryId: "baidu-cn",
+        searchUrlCode: "tn=07175415_dg",
+      },
+      {
+        included: [{ locales: "zh-CN" }],
+        excluded: [{ regions: "cn" }],
         domain: "baidu.com",
         telemetryId: "baidu",
+        searchUrlCode: null,
       },
     ],
   },

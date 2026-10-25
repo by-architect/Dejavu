@@ -461,8 +461,6 @@
     Title of preference for tabs management
   -->
   <string name="preferences_tabs">Àwọn táàbù</string>
-  <!-- Title of preference that allows a user to specify the tab view -->
-  <string name="preferences_tab_view">Wíwo táàbù</string>
   <!-- Option for a list tab view -->
   <string name="tab_view_list">Àtòkọ</string>
   <!-- Option for a grid tab view -->
@@ -499,13 +497,7 @@
   <string name="close_tabs_after_one_week_summary">Padé lẹ́yìn ọ̀sẹ̀ kan</string>
   <!-- Summary for tabs preference when auto closing tabs setting is set to auto close tabs after one month -->
   <string name="close_tabs_after_one_month_summary">Padé lẹ́yìn oṣù kan</string>
-  <!--
-    Inactive tabs
-
-    Category header of a preference that allows a user to enable or disable the inactive tabs feature
-  -->
-  <string name="preferences_inactive_tabs">Gbé àwọn táàbù àtijọ́ lọ sí àìṣiṣẹ́</string>
-  <!-- Title of inactive tabs preference -->
+  <!-- Summary of the preference that allows a user to enable or disable the inactive tabs feature. -->
   <string name="preferences_inactive_tabs_title">Àwọn táàbù tí o kò tíì wò fún ọ̀sẹ̀ méjì má a lọ sí abala àìṣiṣẹ́.</string>
   <!--
     Studies
@@ -574,16 +566,6 @@
     %1$d is the number of bookmarks selected
   -->
   <string name="history_multi_select_title">%1$d ti yàn</string>
-  <!-- Text for the header that groups the history for today -->
-  <string name="history_today">Òní</string>
-  <!-- Text for the header that groups the history for yesterday -->
-  <string name="history_yesterday">Àná</string>
-  <!-- Text for the header that groups the history the past 7 days -->
-  <string name="history_7_days">Ọjọ́ méje sẹ́yìn</string>
-  <!-- Text for the header that groups the history the past 30 days -->
-  <string name="history_30_days">Ọgbọ̀n ọjọ́ sẹ́yìn</string>
-  <!-- Text for the header that groups the history older than the last month -->
-  <string name="history_older">Ti pẹ́ jù</string>
   <!-- Text shown when no history exists -->
   <string name="history_empty_message">Kò sí ìtàn níbí</string>
   <!--

@@ -567,6 +567,25 @@ class BrowserToolbarMiddlewareTest {
     }
 
     @Test
+    fun `GIVEN menu customization is enabled WHEN clicking the menu button THEN open the customizable menu`() {
+        every { navController.currentDestination?.id } returns R.id.browserFragment
+        settings.isMenuCustomizationEnabled = true
+
+        val middleware = buildMiddleware()
+        val toolbarStore = buildStore(middleware)
+        val menuButton = toolbarStore.state.displayState.browserActionsEnd[2] as ActionButtonRes
+
+        toolbarStore.dispatch(menuButton.onClick as BrowserToolbarEvent)
+
+        verify {
+            navController.navigate(
+                BrowserFragmentDirections.actionBrowserFragmentToMenuFragment(accessPoint = MenuAccessPoint.Browser),
+                null,
+            )
+        }
+    }
+
+    @Test
     fun `GIVEN browsing in normal mode WHEN clicking the tab counter button THEN open the tabs tray in normal mode`() {
         every { navController.currentDestination?.id } returns R.id.browserFragment
         val browsingModeManager = SimpleBrowsingModeManager(Normal)
@@ -1380,6 +1399,7 @@ class BrowserToolbarMiddlewareTest {
             settings.toolbarSimpleShortcutKey = ShortcutType.SHARE.value
             val browserScreenStore = buildBrowserScreenStore()
             val captureMiddleware = CaptureActionsMiddleware<BrowserState, BrowserAction>()
+            // A content:// tab is only treated as PDF-shareable once `content.isPdf` is set.
             val currentTab = createTab("content://test", private = false)
             val browserStore =
                 BrowserStore(
@@ -1390,11 +1410,12 @@ class BrowserToolbarMiddlewareTest {
                         ),
                     middleware = listOf(captureMiddleware),
                 )
+            val shareSheetLauncher = mockk<ShareSheetLauncher>(relaxed = true)
             val middleware =
                 buildMiddleware(
                     browserScreenStore = browserScreenStore,
                     browserStore = browserStore,
-                    shareUseCases = ShareUseCases(browserStore, mockk<ShareSheetLauncher>(relaxed = true), settings),
+                    shareUseCases = ShareUseCases(browserStore, shareSheetLauncher, settings),
                     isWideScreen = { true },
                 )
             val toolbarStore = buildStore(middleware)
@@ -1405,9 +1426,15 @@ class BrowserToolbarMiddlewareTest {
 
             toolbarStore.dispatch(shareButton.onClick as BrowserToolbarEvent)
             testDispatcher.scheduler.advanceUntilIdle()
-            captureMiddleware.assertLastAction(ShareResourceAction.AddShareAction::class) {
-                assertEquals(currentTab.id, it.tabId)
-                assertEquals(ShareResourceState.LocalResource(currentTab.content.url, INTENT_TYPE_PDF), it.resource)
+            captureMiddleware.assertNotDispatched(ShareResourceAction.AddShareAction::class)
+            verify {
+                shareSheetLauncher.showSystemShareSheet(
+                    id = currentTab.id,
+                    url = currentTab.content.url,
+                    title = currentTab.content.title,
+                    isPrivate = currentTab.content.private,
+                    isCustomTab = false,
+                )
             }
         }
 

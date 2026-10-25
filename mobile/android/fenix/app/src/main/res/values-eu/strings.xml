@@ -709,6 +709,14 @@
   <string name="search_widget_text_long">Bilatu webean</string>
   <!-- Content description (not visible, for screen readers etc.): Voice search -->
   <string name="search_widget_voice">Ahots bidezko bilaketa</string>
+  <!-- Content description (not visible, for screen readers etc.): Button in the search widget that starts a search in a private tab -->
+  <string name="search_widget_private_search">Bilatu modu pribatuan</string>
+  <!-- Widget description in the widget picker screen for the search bar widget that includes buttons for private search and for voice search -->
+  <string name="search_bar_widget_description">Bilaketa pribatua eta ahots bidezko bilaketa duen bilaketa-barra</string>
+  <!-- Widget description in the widget picker screen for the search bar widget that includes buttons for image search, private search and voice search -->
+  <string name="search_bar_with_lens_widget_description">Bilaketa pribatua eta irudi eta ahots bidezko bilaketa duen bilaketa-barra</string>
+  <!-- Widget description in the widget picker screen for the compact search bar widget -->
+  <string name="compact_search_bar_widget_description">Bilaketa-barra trinkoa</string>
   <!--
     Preferences
 
@@ -806,6 +814,8 @@
   <string name="preferences_override_sync_tokenserver">Sinkronizaziorako zerbitzari pertsonalizatua</string>
   <!-- Preference category for account information -->
   <string name="preferences_category_account">Kontua</string>
+  <!-- Preference category for sync controls. Sync can be translated, it's just short for ”Synchronization” in English. -->
+  <string name="preferences_category_sync_controls">Sinkronizazioa</string>
   <!-- Preference for changing where the AddressBar is positioned -->
   <string name="preferences_toolbar_2">Helbide-barraren kokapena</string>
   <!-- Preference for changing toolbar layout -->
@@ -862,6 +872,8 @@
   <string name="preferences_search_synced_tabs">Bilatu sinkronizatutako fitxak</string>
   <!-- Preference for account settings -->
   <string name="preferences_account_settings">Kontu-ezarpenak</string>
+  <!-- Preference for account and sync settings -->
+  <string name="preferences_account_and_sync_settings">Kontua eta sinkronizazioa</string>
   <!-- Preference for enabling url autocomplete -->
   <string name="preferences_enable_autocomplete_urls">Osatu automatikoki URLak</string>
   <!-- Preference title for switch preference to show sponsored Firefox Suggest search suggestions -->
@@ -1141,6 +1153,12 @@
   <string name="preferences_sync_now">Sinkronizatu orain</string>
   <!-- Preference category for sync -->
   <string name="preferences_sync_category">Aukeratu zer sinkronizatu</string>
+  <!-- Preference category for sync controls -->
+  <string name="preferences_category_sync">Sinkronizatutako datuak</string>
+  <!-- Summary for the sync preference category. -->
+  <string name="preferences_sync_category_summary">Kudeatu zer sinkronizatzen den konektatutako zure gailu guztien artean</string>
+  <!-- Summary for the sync preference category, when user has disabled all synchronisation items. -->
+  <string name="preferences_sync_category_no_engine_selected_summary">Ez zara ezer sinkronizatzen ari. Aukeratu zer sinkronizatuko den zure gailuen artean.</string>
   <!-- Preference for syncing history -->
   <string name="preferences_sync_history">Historia</string>
   <!-- Preference for syncing bookmarks -->
@@ -1153,6 +1171,10 @@
   <string name="preferences_sign_out">Amaitu saioa</string>
   <!-- Preference displays and allows changing current FxA device name -->
   <string name="preferences_sync_device_name">Gailuaren izena</string>
+  <!-- Preference category for Device name -->
+  <string name="preferences_device_name_category">Gailuaren izena</string>
+  <!-- Label for the Preference that displays and allows changing current device name on Mozilla Account -->
+  <string name="preferences_sync_change_device_name">Aldatu gailuaren izena</string>
   <!-- Text shown when user enters empty device name -->
   <string name="empty_device_name_error">Gailuaren izenak ezin du hutsik egon.</string>
   <!-- Label indicating that sync is in progress -->
@@ -1272,8 +1294,6 @@
   <string name="preference_simple_toolbar">Sinplea</string>
   <!-- Preference for using expanded toolbar -->
   <string name="preference_expanded_toolbar">Zabaldua</string>
-  <!-- Preference description indicating the toolbar location preference is disabled when the tab strip is enabled -->
-  <string name="preference_toolbar_pref_disabled_explanation">Helbide-barrak goian egon behar du fitxa-barra erakustean.</string>
   <!-- New tab shortcut in toolbar customization -->
   <string name="toolbar_customize_shortcut_new_tab">Ireki fitxa berria</string>
   <!-- Share shortcut in toolbar customization -->
@@ -1355,6 +1375,8 @@
   <string name="library_desktop_bookmarks_unfiled">Beste laster-markak</string>
   <!-- Option in Library to open History page -->
   <string name="library_history">Historia</string>
+  <!-- Content description (not visible, for screen readers etc.) for the check mark that replaces a site's icon in History and Recently closed tabs when the item is selected -->
+  <string name="library_item_selected_content_description">Hautatuta</string>
   <!-- Settings Page Title -->
   <string name="settings_title">Ezarpenak</string>
   <!-- Content description (not visible, for screen readers etc.): "Close button for library settings" -->
@@ -1405,8 +1427,8 @@
     Title of preference for tabs management
   -->
   <string name="preferences_tabs">Fitxak</string>
-  <!-- Title of preference that allows a user to specify the tab view -->
-  <string name="preferences_tab_view">Fitxen ikuspegia</string>
+  <!-- Title of preference that allows a user to specify the tab layout -->
+  <string name="preferences_tab_layout">Fitxen diseinua</string>
   <!-- Option for a list tab view -->
   <string name="tab_view_list">Zerrenda</string>
   <!-- Option for a grid tab view -->
@@ -1454,15 +1476,19 @@
   <!-- Summary for homepage preference indicating opening the homepage when re-opening the app after four hours of inactivity -->
   <string name="opening_screen_after_four_hours_of_inactivity_summary">Ireki hasiera-orrian lau ordu ondoren</string>
   <!--
-    Inactive tabs
+    Tab organization
 
-    Category header of a preference that allows a user to enable or disable the inactive tabs feature
+    Category header for the preferences that control how tabs are organized
   -->
-  <string name="preferences_inactive_tabs">Eraman fitxa zaharrak inaktiboetara</string>
-  <!-- Title of inactive tabs preference -->
+  <string name="preferences_tab_organization">Fitxen antolaketa</string>
+  <!-- Title of the preference that allows a user to enable or disable the inactive tabs feature -->
+  <string name="preferences_inactive_tabs_toggle_title">Fitxa inaktiboak</string>
+  <!-- Summary of the preference that allows a user to enable or disable the inactive tabs feature. -->
   <string name="preferences_inactive_tabs_title">Azken bi asteetan ikusi ez dituzun fitxak inaktiboen atalera eramaten dira.</string>
-  <!-- Title for the preference to enable or disable the tab groups feature -->
-  <string name="preferences_tab_groups_feature">Gaitu fitxa-taldeak</string>
+  <!-- Title of the preference that allows a user to enable or disable the tab groups feature -->
+  <string name="preferences_tab_groups_title">Fitxa-taldeak</string>
+  <!-- Summary of the preference that allows a user to enable or disable the tab groups feature -->
+  <string name="preferences_tab_groups_description">Antolatu fitxak izenda eta gorde ditzakezun taldeetan.</string>
   <!--
     Privacy report
 
@@ -1678,6 +1704,11 @@
   <string name="close_tab_and_delete_group_confirmation_dialog_cancel">Utzi</string>
   <!-- Content description for the three dot button next to a tab group" -->
   <string name="tab_group_three_dot_button_content_description">Aukera gehiago</string>
+  <!--
+    Content description for the Expand button on the contracted menu for a tab group:
+    when tapped, tabs are displayed in an expanded grid or list view, taking up the full screen.
+  -->
+  <string name="tab_groups_strip_expand_group_content_description">Zabaldu fitxak pantaila osoan erakusteko</string>
   <!-- Text shown on the edit button for a tab group on the three dot menu -->
   <string name="tab_group_three_dot_menu_edit">Editatu</string>
   <!-- Text shown on the ungroup button for a tab group on the three dot menu -->
@@ -1745,16 +1776,6 @@
     %1$d is the number of bookmarks selected
   -->
   <string name="history_multi_select_title">%1$d hautatuta</string>
-  <!-- Text for the header that groups the history for today -->
-  <string name="history_today">Gaur</string>
-  <!-- Text for the header that groups the history for yesterday -->
-  <string name="history_yesterday">Atzo</string>
-  <!-- Text for the header that groups the history the past 7 days -->
-  <string name="history_7_days">Azken 7 egunak</string>
-  <!-- Text for the header that groups the history the past 30 days -->
-  <string name="history_30_days">Azken 30 egunak</string>
-  <!-- Text for the header that groups the history older than the last month -->
-  <string name="history_older">Zaharragoa</string>
   <!-- Text shown when no history exists -->
   <string name="history_empty_message">Historiarik ez hemen</string>
   <!--
@@ -2383,12 +2404,12 @@
   <string name="sync_sign_in">Hasi saioa Sync-en</string>
   <!-- An option from the share dialog to send link to all other sync devices -->
   <string name="sync_send_to_all">Bidali gailu guztietara</string>
-  <!-- Text displayed when no other sync devices are available for link sharing -->
-  <string name="sync_no_devices_available">Ez dago gailurik erabilgarri</string>
-  <!-- Text displayed when no other sync devices are available for link sharing. -->
-  <string name="sync_no_devices_available_description">Kontu honetan saioa hasita duten eta sinkronizatzen ari diren gailuak hemen agertuko dira.</string>
   <!-- An option from the share dialog to reconnect to sync -->
   <string name="sync_reconnect">Birkonektatu Sync-era</string>
+  <!-- Label for the button in the share dialog that sends the tab to the selected sync devices -->
+  <string name="sync_send_to_selected_devices">Bidali</string>
+  <!-- Content description announced when a device is selected in the share dialog -->
+  <string name="send_to_devices_device_selected_content_description">Hautatuta</string>
   <!-- Text displayed when sync is offline and cannot be accessed -->
   <string name="sync_offline">Deskonektatuta</string>
   <!-- An option to connect additional devices -->
@@ -2421,10 +2442,14 @@
   <string name="sync_send_tab_empty_state_title">Konektatutako gailurik ez</string>
   <!-- Send tab to synced devices: Empty state message - Displayed when the user has no synced devices -->
   <string name="sync_send_tab_empty_state_description" tools:ignore="BrandUsage">Fitxa bat bidaltzeko, hasi saioa Firefoxen gutxienez beste gailu batean.</string>
+  <!-- Send tab to synced devices: Empty state link - Displayed when the user has no synced devices -->
+  <string name="sync_send_tab_empty_state_link">Ikasi nola konekta dezakezun gailu bat</string>
   <!-- Send tab to synced devices: Connectivity Error title -->
   <string name="sync_send_tab_error_connection_title">Egiaztatu zure Interneterako konexioa</string>
   <!-- Send tab to synced devices: Connectivity Error message - Suggested user action after internet connection has been established -->
   <string name="sync_send_tab_error_connection_text">Gero saiatu fitxa berriro bidaltzen.</string>
+  <!-- Send tab to synced devices: Connectivity Error button - When tapped, refreshes the list of connected devices. -->
+  <string name="sync_send_tab_error_connection_button">Saiatu berriro</string>
   <!--
     Notifications
 
@@ -2607,6 +2632,12 @@
   <string name="sign_in_create_account_text" tools:ignore="BrandUsage"><![CDATA[Ez daukazu konturik? <u>Sortu kontua</u> Firefox gailuen artean sinkronizatzeko.]]></string>
   <!-- Text shown in confirmation dialog to sign out of account. %s is the name of the app (for example "Firefox"). -->
   <string name="sign_out_confirmation_message_2">%s(e)k zure kontuarekin sinkronizatzeari utziko dio baina ez du gailu honetako zure nabigatze-daturik ezabatuko.</string>
+  <!-- Title of the confirmation dialog shown when the user signs out of their account -->
+  <string name="sign_out_dialog_title">Amaitu zure kontuko saioa?</string>
+  <!-- Body of the confirmation dialog shown when the user signs out of their account -->
+  <string name="sign_out_dialog_message">Sinkronizatutako datuek zure kontuan gordeta jarraituko dute.</string>
+  <!-- Text for the primary action button of the confirmation dialog shown when the user signs out of their account -->
+  <string name="sign_out_dialog_confirm_button">Amaitu saioa</string>
   <!-- Option to continue signing out of account shown in confirmation dialog to sign out of account -->
   <string name="sign_out_disconnect">Deskonektatu</string>
   <!-- Option to cancel signing out shown in confirmation dialog to sign out of account -->
@@ -3027,8 +3058,6 @@
   <string name="preferences_ip_protection_beta_badge_label">BETA</string>
   <!-- Title for the browser VPN settings screen (displayed in the app bar) -->
   <string name="ip_protection_settings_title">Integratutako VPNa</string>
-  <!-- Title for the browser VPN settings screen (displayed in the app bar) -->
-  <string name="ip_protection_title">VPN</string>
   <!-- Label for the browser VPN toggle on the settings screen -->
   <string name="ip_protection_toggle_label">VPN</string>
   <!-- Content description for the browser VPN settings screen top bar back button -->
@@ -3123,8 +3152,6 @@
   <string name="ip_protection_data_limit_reached_snackbar">VPN datuen %1$d GB erabilita. Sarbidea datorren hilabetean berrezarriko da.</string>
   <!-- Snackbar (in-app pop-up notification) action button text that takes the user to the VPN settings screen. -->
   <string name="ip_protection_open_settings_snackbar_action">Ezarpenak</string>
-  <!-- Snackbar (in-app pop-up notification) action button text that takes the user to the VPN settings screen. -->
-  <string name="ip_protection_data_limit_reached_snackbar_action">Ezarpenak</string>
   <!-- Description shown on the browser VPN settings screen prompting the user to turn the VPN on. -->
   <string name="ip_protection_settings_description" tools:ignore="UnusedResources">Aktibatu VPNa zure nabigazioa pribatuagoa egin eta aztarna jarraitzeko zailagoa izan dadin.</string>
   <!-- Title shown on the browser VPN settings screen for location selection section. -->
@@ -4498,6 +4525,16 @@
   <string name="lens_camera_mode_qr">QR eskanerra</string>
   <!-- Toast shown when the user picks an image from the gallery in QR mode but no QR code is found in it -->
   <string name="lens_camera_qr_no_code_found">Ez da QR koderik aurkitu irudian</string>
+  <!-- Status shown under an image picked from the gallery while it is being sent to Google Lens for a visual search -->
+  <string name="lens_camera_loading_status">Bilatzen</string>
+  <!-- Button shown under an image picked from the gallery while it is being sent to Google Lens. Tapping it stops the search and returns to the camera. -->
+  <string name="lens_camera_loading_cancel_button">Utzi</string>
+  <!-- Snackbar message shown when an image picked from the gallery could not be opened or read, so it was never sent to Google Lens. Shown after returning to the camera. -->
+  <string name="lens_camera_image_load_failed">Ezin izan da irudi hau kargatu. Probatu beste batekin.</string>
+  <!-- Snackbar message shown when an image picked from the gallery could not be searched because of a network problem or an error from Google Lens. Shown after returning to the camera, next to the lens_camera_upload_failed_retry_button action. -->
+  <string name="lens_camera_upload_failed">Ezin izan dira Google Lens-eko emaitzak eskuratu</string>
+  <!-- Action in the snackbar shown when an image picked from the gallery could not be searched with Google Lens. Tapping it searches the same image again. -->
+  <string name="lens_camera_upload_failed_retry_button">Saiatu berriro</string>
   <!-- Title of the bottom sheet shown the first time the user opens the Google Lens camera screen -->
   <string name="lens_opt_out_title">Bilatu Google Lens erabiliz</string>
   <!-- Description of the bottom sheet shown the first time the user opens the Google Lens camera screen -->
@@ -4586,4 +4623,6 @@
   <string name="reader_mode_panel_content_description">Irakurketa moduaren aukerak</string>
   <!-- Content description for the button in reader mode panel that turns on the read aloud feature (playback of content begins when button is pressed) -->
   <string name="reader_mode_panel_listen_content_description">Irakurri ozenki</string>
+  <!-- Content description for media player displayed in Reader Mode when the Listen to Page (Read Aloud) feature is selected -->
+  <string name="reader_mode_panel_media_player_content_description">Multimedia erreproduzigailua</string>
 </resources>

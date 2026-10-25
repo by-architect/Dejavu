@@ -174,6 +174,7 @@ class AdjustMetricsService(
             isUserMolocoAttributed = settings.isUserMolocoAttributed,
             isUserRakutenAttributed = settings.isUserRakutenAttributed,
             isUserSkyflagAttributed = settings.isUserSkyflagAttributed,
+            isUserQuoraAttributed = settings.isUserQuoraAttributed,
             controller = thirdPartySharingController,
         )
 
@@ -264,6 +265,7 @@ class AdjustMetricsService(
             isUserMolocoAttributed: Boolean,
             isUserRakutenAttributed: Boolean,
             isUserSkyflagAttributed: Boolean,
+            isUserQuoraAttributed: Boolean,
             controller: ThirdPartySharingController = AdjustThirdPartySharingController(),
         ) {
             when (distribution) {
@@ -277,7 +279,7 @@ class AdjustMetricsService(
                         isUserRedditAttributed -> controller.enableThirdPartySharingForPartner(REDDIT_PARTNER_ID)
                         isUserXTwitterAttributed -> controller.enableThirdPartySharingForPartner(X_TWITTER_PARTNER_ID)
                         isUserMolocoAttributed -> controller.enableThirdPartySharingForPartner(MOLOCO_PARTNER_ID)
-                        isUserRakutenAttributed || isUserSkyflagAttributed ->
+                        isUserRakutenAttributed || isUserSkyflagAttributed || isUserQuoraAttributed ->
                             controller.enableThirdPartySharingForPartner(DYNAMIC_CALLBACK_ID)
                         else -> controller.enableThirdPartySharingForPartner(GOOGLE_PARTNER_ID)
                     }

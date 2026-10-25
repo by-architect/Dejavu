@@ -144,6 +144,17 @@ WindowGlobalParent::WindowGlobalParent(
   MOZ_DIAGNOSTIC_ASSERT(XRE_IsParentProcess(), "Parent process only");
 }
 
+// An error page's own load has no session history load, so it is attributed to
+// the load which failed, if that got far enough to have a handle.
+static uint64_t HistoryLoadIdFromHandles(
+    ParentProcessChannelHandle* aDocumentHandle,
+    ParentProcessChannelHandle* aFailedHandle) {
+  if (uint64_t id = aDocumentHandle ? aDocumentHandle->HistoryLoadId() : 0) {
+    return id;
+  }
+  return aFailedHandle ? aFailedHandle->HistoryLoadId() : 0;
+}
+
 already_AddRefed<WindowGlobalParent> WindowGlobalParent::CreateDisconnected(
     const WindowGlobalInit& aInit, ContentParent* aForProcess) {
   RefPtr<CanonicalBrowsingContext> browsingContext =
@@ -209,7 +220,23 @@ already_AddRefed<WindowGlobalParent> WindowGlobalParent::CreateDisconnected(
     }
   }
 
+  wgp->mDocumentHistoryLoadId = HistoryLoadIdFromHandles(
+      aInit.documentChannelHandle(), aInit.failedChannelHandle());
+
   return wgp.forget();
+}
+
+void WindowGlobalParent::InitFromContentProcess(const FieldValues& aRequested,
+                                                ContentParent* aSource) {
+  MOZ_ASSERT(GetContentParent() == aSource);
+  MOZ_DIAGNOSTIC_ASSERT(!BrowsingContext()->GetWindowContexts().Contains(this),
+                        "must reconcile before Init registers this context");
+
+  Transaction correction;
+  Transaction::ReconcileInitialFields(this, FieldValues(aRequested), aSource,
+                                      correction);
+  Init();
+  correction.SendCorrection(this, aSource);
 }
 
 void WindowGlobalParent::Init() {
@@ -334,17 +361,12 @@ already_AddRefed<WindowGlobalChild> WindowGlobalParent::GetChildActor() {
 }
 
 BrowserParent* WindowGlobalParent::GetBrowserParent() const {
-  if (IsInProcess() || !CanSend()) {
-    return nullptr;
-  }
-  return static_cast<BrowserParent*>(Manager());
+  return IsInProcess() ? nullptr : static_cast<BrowserParent*>(Manager());
 }
 
-ContentParent* WindowGlobalParent::GetContentParent() {
-  if (IsInProcess() || !CanSend()) {
-    return nullptr;
-  }
-  return static_cast<ContentParent*>(Manager()->Manager());
+ContentParent* WindowGlobalParent::GetContentParent() const {
+  BrowserParent* browserParent = GetBrowserParent();
+  return browserParent ? browserParent->Manager() : nullptr;
 }
 
 already_AddRefed<nsFrameLoader> WindowGlobalParent::GetRootFrameLoader() {
@@ -359,13 +381,13 @@ already_AddRefed<nsFrameLoader> WindowGlobalParent::GetRootFrameLoader() {
 }
 
 uint64_t WindowGlobalParent::ContentParentId() {
-  RefPtr<BrowserParent> browserParent = GetBrowserParent();
-  return browserParent ? browserParent->Manager()->ChildID() : 0;
+  ContentParent* contentParent = GetContentParent();
+  return contentParent ? contentParent->ChildID() : 0;
 }
 
 int32_t WindowGlobalParent::OsPid() {
-  RefPtr<BrowserParent> browserParent = GetBrowserParent();
-  return browserParent ? browserParent->Manager()->Pid() : -1;
+  ContentParent* contentParent = GetContentParent();
+  return contentParent ? contentParent->Pid() : -1;
 }
 
 // A WindowGlobalPaernt is the root in its process if it has no parent, or its
@@ -677,8 +699,8 @@ IPCResult WindowGlobalParent::RecvRawMessage(const JSActorMessageMeta& aMeta,
 }
 
 const RemoteType& WindowGlobalParent::GetRemoteType() const {
-  if (RefPtr<BrowserParent> browserParent = GetBrowserParent()) {
-    return browserParent->Manager()->GetRemoteType();
+  if (ContentParent* contentParent = GetContentParent()) {
+    return contentParent->GetRemoteType();
   }
 
   return RemoteType::NotRemote();
@@ -879,6 +901,8 @@ mozilla::ipc::IPCResult WindowGlobalParent::RecvUpdateChannels(
 
   mDocumentChannel = documentChannel;
   mFailedChannel = failedChannel;
+  mDocumentHistoryLoadId =
+      HistoryLoadIdFromHandles(aDocumentHandle, aFailedHandle);
 
   return IPC_OK();
 }
@@ -1910,8 +1934,7 @@ void WindowGlobalParent::ActorDestroy(ActorDestroyReason aWhy) {
   // at end-of-page.
   MaybeReportContentBlockingLog();
   if (!IsInProcess()) {
-    RefPtr<BrowserParent> browserParent =
-        static_cast<BrowserParent*>(Manager());
+    RefPtr<BrowserParent> browserParent = GetBrowserParent();
     if (browserParent) {
       nsCOMPtr<nsILoadContext> loadContext = browserParent->GetLoadContext();
       if (loadContext && !loadContext->UsePrivateBrowsing() &&
@@ -2004,8 +2027,8 @@ nsIGlobalObject* WindowGlobalParent::GetParentObject() {
 }
 
 nsIDOMProcessParent* WindowGlobalParent::GetDomProcess() {
-  if (RefPtr<BrowserParent> browserParent = GetBrowserParent()) {
-    return browserParent->Manager();
+  if (ContentParent* contentParent = GetContentParent()) {
+    return contentParent;
   }
   return InProcessParent::Singleton();
 }
@@ -2029,8 +2052,7 @@ bool WindowGlobalParent::ShouldTrackSiteOriginTelemetry() {
     return false;
   }
 
-  RefPtr<BrowserParent> browserParent = GetBrowserParent();
-  if (!browserParent || !browserParent->Manager()->GetRemoteType().IsWeb()) {
+  if (!GetRemoteType().IsWeb()) {
     return false;
   }
 
@@ -2268,7 +2290,7 @@ mozilla::ipc::IPCResult WindowGlobalParent::RecvPDocAccessibleConstructor(
 
   RefPtr<WindowGlobalParent> embedderWgp =
       GetBrowsingContext()->GetEmbedderWindowGlobal();
-  if (NS_WARN_IF(!IsTop() && !embedderWgp)) {
+  if (NS_WARN_IF(!IsTop() && (!embedderWgp || embedderWgp->IsDiscarded()))) {
     // This is an iframe, but it doesn't have a valid embedder WindowGlobal.
     // This can happen if the parent BrowsingContext navigated somewhere else
     // while the embedded document was loading. This isn't an error, but it does

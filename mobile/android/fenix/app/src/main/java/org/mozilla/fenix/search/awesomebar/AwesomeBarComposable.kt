@@ -110,7 +110,6 @@ private fun Modifier.awesomeBarContentWidth(useAddressBarFocusMode: Boolean) =
  * @param suggestionsAtBottom Whether the suggestions start at the bottom, next to an address bar shown there while
  *   searching. Defaults to the position of the address bar.
  */
-@Suppress("LongParameterList")
 class AwesomeBarComposable(
     private val activity: HomeActivity,
     private val fragment: Fragment,

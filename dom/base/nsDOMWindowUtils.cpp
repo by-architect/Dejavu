@@ -59,6 +59,7 @@
 #include "nsError.h"
 #include "nsFocusManager.h"
 #include "nsFrameManager.h"
+#include "nsGlobalWindowInner.h"
 #include "nsGlobalWindowOuter.h"
 #include "nsIDocShell.h"
 #include "nsIFrame.h"
@@ -755,6 +756,7 @@ nsDOMWindowUtils::SendWheelEvent(float aX, float aY, double aDeltaX,
   wheelEvent.mLineOrPageDeltaX = aLineOrPageDeltaX;
   wheelEvent.mLineOrPageDeltaY = aLineOrPageDeltaY;
   wheelEvent.mCallbackId = notifier.SaveCallback();
+  wheelEvent.mFlags.mIsSynthesizedForTests = true;
 
   nsPresContext* presContext = GetPresContext();
   NS_ENSURE_TRUE(presContext, NS_ERROR_FAILURE);
@@ -2413,7 +2415,11 @@ nsDOMWindowUtils::SendContentCommandEvent(const nsAString& aType,
                                           const nsAString& aString,
                                           uint32_t aOffset,
                                           const nsAString& aReplaceSrcString,
-                                          uint32_t aAdditionalFlags) {
+                                          uint32_t aAdditionalFlags,
+                                          bool* aOutEnabled) {
+  MOZ_ASSERT(aOutEnabled);
+  *aOutEnabled = false;
+
   // get the widget to send the event to
   const nsCOMPtr<nsIWidget> widget = GetWidget();
   if (!widget) [[unlikely]] {
@@ -2464,6 +2470,7 @@ nsDOMWindowUtils::SendContentCommandEvent(const nsAString& aType,
   }
 
   dispatcher->DispatchContentCommandEvent(event);
+  *aOutEnabled = event.mSucceeded && event.mIsEnabled;
   return NS_OK;
 }
 
@@ -2792,6 +2799,12 @@ nsDOMWindowUtils::GetIsTestControllingRefreshes(bool* aResult) {
   *aResult =
       pc ? pc->RefreshDriver()->IsTestControllingRefreshesEnabled() : false;
 
+  return NS_OK;
+}
+
+NS_IMETHODIMP
+nsDOMWindowUtils::GetIsMouseDown(bool* aResult) {
+  *aResult = nsGlobalWindowInner::sMouseDown;
   return NS_OK;
 }
 

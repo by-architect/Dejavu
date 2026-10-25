@@ -2791,7 +2791,8 @@ void SdpOfferAnswerHandler::ApplyRemoteDescriptionUpdateTransceiverState(
       // direction.
       transceiver->set_current_direction(local_direction);
       // 2.2.8.1.11.[3-6]: Set the transport internal slots.
-      if (transceiver->mid()) {
+      // A stopped transceiver has no channel and therefore no transport.
+      if (transceiver->mid() && !transceiver->stopped()) {
         auto it = dtls_transports_by_mid.find(*transceiver->mid());
         RTC_DCHECK(it != dtls_transports_by_mid.end());
         transceiver->SetTransport(it->second.transport,
@@ -4758,7 +4759,10 @@ SdpOfferAnswerHandler::AssociateTransceiver(
     // mapping between transceivers and m= section indices established when
     // creating the offer.
     if (!transceiver) {
-      transceiver = transceivers()->FindByMLineIndex(mline_index);
+      // Only consider transceivers that are not yet associated. The channel of
+      // an associated transceiver stays bound to the MID it was created for
+      // (and to the transport of that MID), so the MID must not change.
+      transceiver = transceivers()->FindUnassociatedByMLineIndex(mline_index);
     }
     if (!transceiver) {
       // This may happen normally when media sections are rejected.
@@ -4871,7 +4875,8 @@ void SdpOfferAnswerHandler::UpdateTransceiverChannel(
   TRACE_EVENT0("webrtc", "SdpOfferAnswerHandler::UpdateTransceiverChannel");
   RTC_DCHECK(IsUnifiedPlan());
   RTC_DCHECK(transceiver);
-  if (content.rejected) {
+  // A stopped transceiver must not have a channel.
+  if (content.rejected || transceiver->internal()->stopped()) {
     if (transceiver->internal()->HasChannel()) {
       network_teardown_tasks.Add(
           transceiver->internal()->GetClearChannelNetworkTask());
@@ -5961,6 +5966,10 @@ void SdpOfferAnswerHandler::RemoveStoppedTransceivers() {
   }
   // Traverse a copy of the transceiver list.
   auto transceiver_list = transceivers()->List();
+  // Batched channel teardown for removed transceivers. The tasks run at the
+  // end of this function while `transceiver_list` still holds references.
+  ScopedOperationsBatcher network_teardown_tasks(context_->network_thread());
+  ScopedOperationsBatcher worker_tasks(context_->worker_thread());
   for (const auto& transceiver : transceiver_list) {
     // 3.2.10.1.1: If transceiver is stopped, associated with an m= section
     //             and the associated m= section is rejected in
@@ -5986,8 +5995,19 @@ void SdpOfferAnswerHandler::RemoveStoppedTransceivers() {
       RTC_LOG(LS_INFO)
           << "Dropping stopped transceiver that was never associated";
     }
+    // Make sure the channel is cleared before the transceiver is removed.
+    if (transceiver->internal()->HasChannel()) {
+      network_teardown_tasks.Add(
+          transceiver->internal()->GetClearChannelNetworkTask());
+      worker_tasks.Add(transceiver->internal()->GetDeleteChannelWorkerTask(
+          /*stop_senders=*/false));
+    }
     transceivers()->Remove(transceiver);
   }
+  RTCError error = network_teardown_tasks.Run();
+  RTC_DCHECK(error.ok());
+  error = worker_tasks.Run();
+  RTC_DCHECK(error.ok());
 }
 
 void SdpOfferAnswerHandler::RemoveUnusedChannels(

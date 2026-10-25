@@ -2,6 +2,8 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
+/** @import {Store} from "resource://newtab/lib/Store.sys.mjs" */
+
 /**
  * Picture of the Day widget - data flow overview
  *
@@ -80,6 +82,9 @@ const PREF_ENDPOINTS_ALLOWLIST = "discoverystream.endpoints";
  * source lacks them, so callers must treat them as optional.
  */
 export class PictureOfTheDayFeed {
+  /** @type {Store} */
+  store = null;
+
   constructor() {
     this.loaded = false;
     this.merino = null;
@@ -103,8 +108,7 @@ export class PictureOfTheDayFeed {
   }
 
   // Resolve the Merino endpoint, guarding it against the shared endpoint
-  // allowlist so a mis-set pref can't point the fetch at an arbitrary host
-  // (mirrors SportsFeed).
+  // allowlist so a mis-set pref can't point the fetch at an arbitrary host.
   getEndpoint() {
     const { values } = this.store.getState().Prefs;
     const endpoint = values[PREF_ENDPOINT];

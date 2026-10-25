@@ -55,6 +55,9 @@ done
 for locale in $REPACK_LIMIT_LOCALES; do
     args+=(--limit-locale "$locale")
 done
+for taskid in $UPSTREAM_TASKIDS; do
+    args+=(--taskid "$taskid")
+done
 
 cd "$GECKO_PATH"
 ./mach python python/mozrelease/mozrelease/partner_repack.py "${args[@]}"

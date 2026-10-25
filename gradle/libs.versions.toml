@@ -1,7 +1,7 @@
 [versions]
 # AGP
-android-gradle-plugin = "9.4.0" # Keep lint version in sync
-android-lint = "32.4.0"
+android-gradle-plugin = "9.4.1" # Keep lint version in sync
+android-lint = "32.4.1"
 
 # Kotlin
 coroutines = "1.11.0"
@@ -10,7 +10,7 @@ serialization = "1.11.0"
 
 # AndroidX
 activity = "1.13.0"
-annotation = "1.10.0"
+annotation = "1.11.0"
 annotation-experimental = "1.6.0"
 appcompat = "1.8.0"
 arch = "2.2.0"
@@ -25,20 +25,20 @@ concurrent = "1.3.0"
 constraintlayout = "2.2.2"
 constraintlayout-compose = "1.1.2"
 coordinatorlayout = "1.3.0"
-core = "1.19.0"
+core = "1.19.1"
 core-splashscreen = "1.2.0"
 datastore = "1.2.1"
 datastore-core = "1.2.1"
 documentfile = "1.1.0"
 drawerlayout = "1.2.0"
-emoji2 = "1.6.0"
+emoji2 = "1.7.0"
 exifinterface = "1.4.2"
-fragment = "1.9.0"
+fragment = "1.9.1"
 lifecycle = "2.11.0"
 media = "1.7.1"
 media3 = "1.11.1"
-navigation = "2.10.1"
-navigation3 = "1.1.7"
+navigation = "2.10.2"
+navigation3 = "1.2.0"
 paging = "3.5.1"
 palette = "1.0.0"
 preference = "1.2.1"
@@ -48,24 +48,17 @@ room = "2.8.5"
 savedstate = "1.5.0"
 startup = "1.2.0"
 swiperefreshlayout = "1.2.0"
-transition = "1.7.1"
+transition = "1.7.2"
 viewpager2 = "1.1.0"
 window = "1.5.1"
-work = "2.11.2"
+work = "2.12.0"
 
 # Google other
 accompanist = "0.37.3"
-firebase-messaging = "25.0.2"
-installreferrer = "2.2"
 ksp = "2.3.11"
 material = "1.14.0"
 mlkit-prompt = "1.0.0-beta4"
 osslicenses-plugin = "0.13.0"
-play-integrity = "1.6.0"
-play-review = "2.0.2"
-play-services-ads-id = "18.3.0"
-play-services-base = "18.10.1"
-play-services-fido = "21.3.1"
 protobuf = "4.36.1"
 
 # Gradle plugins
@@ -80,13 +73,15 @@ tomlj = "1.1.1"
 
 # Linters
 androidx-lint = "1.0.0"
+# Fix LongParameterList thresholds to preserve behavior when we update from 1.23.8
+# see - https://github.com/detekt/detekt/issues/3679
 detekt = "1.23.8"
 google-java-format = "1.28.0"
 ktfmt = "0.64"
 spotless = "8.10.2"
 
 # Mozilla
-glean = "70.2.0"
+glean = "70.2.1"
 
 # Testing libraries
 androidx-test = "1.7.0"
@@ -108,14 +103,15 @@ robolectric = "4.17"
 adjust = "5.8.0"
 androidsvg = "1.4"
 disklrucache = "2.0.2"
-jetbrains-markdown = "0.7.14"
+jetbrains-markdown = "0.7.16"
 jna = "5.19.1"
 json = "20260814"
 jsoup = "1.23.2"
 lottie = "6.7.1"
+microg = "0.3.16.252432"
 okhttp = "5.5.0"
 okio = "3.18.2"
-sentry = "8.55.0"
+sentry = "8.58.0"
 zxing = "3.5.4"
 
 [libraries]
@@ -130,7 +126,6 @@ kotlin-serialization = { module = "org.jetbrains.kotlin.plugin.serialization:org
 kotlin-test = { module = "org.jetbrains.kotlin:kotlin-test-junit", version.ref = "kotlin" }
 kotlinx-coroutines = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-android", version.ref = "coroutines" }
 kotlinx-coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "coroutines" }
-kotlinx-coroutines-play-services = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-play-services", version.ref = "coroutines" }
 kotlinx-coroutines-test = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-test", version.ref = "coroutines" }
 kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "serialization" }
 
@@ -231,21 +226,15 @@ androidx-compose-ui-tooling-preview = { module = "androidx.compose.ui:ui-tooling
 
 # Google other
 accompanist-drawablepainter = { module = "com.google.accompanist:accompanist-drawablepainter", version.ref = "accompanist" }
-firebase-messaging = { module = "com.google.firebase:firebase-messaging", version.ref = "firebase-messaging" }
 google-material = { module = "com.google.android.material:material", version.ref = "material" }
-installreferrer = { module = "com.android.installreferrer:installreferrer", version.ref = "installreferrer" }
 ksp-symbol-processing-aa = { module = "com.google.devtools.ksp:symbol-processing-aa", version.ref = "ksp" }
 ksp-symbol-processing-aa-embeddable = { module = "com.google.devtools.ksp:symbol-processing-aa-embeddable", version.ref = "ksp" }
 ksp-symbol-processing-api = { module = "com.google.devtools.ksp:symbol-processing-api", version.ref = "ksp" }
 ksp-symbol-processing-common-deps = { module = "com.google.devtools.ksp:symbol-processing-common-deps", version.ref = "ksp" }
 mlkit-prompt = { module = "com.google.mlkit:genai-prompt", version.ref = "mlkit-prompt" }
 osslicenses-plugin = { module = "com.google.android.gms:oss-licenses-plugin", version.ref = "osslicenses-plugin" }
-play-integrity = { module = "com.google.android.play:integrity", version.ref = "play-integrity" }
-play-review = { module = "com.google.android.play:review", version.ref = "play-review" }
-play-review-ktx = { module = "com.google.android.play:review-ktx", version.ref = "play-review" }
-play-services-ads-id = { module = "com.google.android.gms:play-services-ads-identifier", version.ref = "play-services-ads-id" }
-play-services-base = { module = "com.google.android.gms:play-services-base", version.ref = "play-services-base" }
-play-services-fido = { module = "com.google.android.gms:play-services-fido", version.ref = "play-services-fido" }
+play-services-ads-id = { module = "org.microg.gms:play-services-ads-identifier", version.ref = "microg" }
+play-services-tasks = { module = "org.microg.gms:play-services-tasks", version.ref = "microg" }
 protobuf-compiler = { module = "com.google.protobuf:protoc", version.ref = "protobuf" }
 protobuf-javalite = { module = "com.google.protobuf:protobuf-javalite", version.ref = "protobuf" }
 

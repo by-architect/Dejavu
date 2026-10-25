@@ -297,8 +297,6 @@
   <string name="browser_menu_default_banner_title">Met %1$s come predefinît</string>
   <!-- Label text within the set as default banner -->
   <string name="browser_menu_default_banner_subtitle_2">Svelt, riservât e fat propite par te.</string>
-  <!-- Content description (not visible, for screen readers etc.) for the button that dismisses the set as default banner in the menu -->
-  <string name="browser_menu_default_banner_dismiss_promotion">Siere promozion</string>
   <!-- Content description (not visible, for screen readers etc.) for recommended extensions in main menu -->
   <string name="browser_menu_recommended_extensions_content_description">Altris informazions</string>
   <!--
@@ -1240,8 +1238,6 @@
   <string name="preference_simple_toolbar">Semplice</string>
   <!-- Preference for using expanded toolbar -->
   <string name="preference_expanded_toolbar">Slargjade</string>
-  <!-- Preference description indicating the toolbar location preference is disabled when the tab strip is enabled -->
-  <string name="preference_toolbar_pref_disabled_explanation">Tu scugnis plaçâ la sbare de direzion adalt cuant che e ven mostrade la sbare des schedis.</string>
   <!-- New tab shortcut in toolbar customization -->
   <string name="toolbar_customize_shortcut_new_tab">Vierç une gnove schede</string>
   <!-- Share shortcut in toolbar customization -->
@@ -1362,8 +1358,6 @@
     Title of preference for tabs management
   -->
   <string name="preferences_tabs">Schedis</string>
-  <!-- Title of preference that allows a user to specify the tab view -->
-  <string name="preferences_tab_view">Viodude schedis</string>
   <!-- Option for a list tab view -->
   <string name="tab_view_list">Liste</string>
   <!-- Option for a grid tab view -->
@@ -1408,13 +1402,7 @@
   <string name="opening_screen_last_tab_summary">Vierç su la ultime schede</string>
   <!-- Summary for homepage preference indicating opening the homepage when re-opening the app after four hours of inactivity -->
   <string name="opening_screen_after_four_hours_of_inactivity_summary">Vierç su la pagjine iniziâl dopo cuatri oris</string>
-  <!--
-    Inactive tabs
-
-    Category header of a preference that allows a user to enable or disable the inactive tabs feature
-  -->
-  <string name="preferences_inactive_tabs">Sposte lis schedis vecjis te sezion inativis</string>
-  <!-- Title of inactive tabs preference -->
+  <!-- Summary of the preference that allows a user to enable or disable the inactive tabs feature. -->
   <string name="preferences_inactive_tabs_title">Lis schedis che no tu visualizis di dôs setemanis a vegnin spostadis te sezion inativis.</string>
   <!--
     Studies
@@ -1660,16 +1648,6 @@
     %1$d is the number of bookmarks selected
   -->
   <string name="history_multi_select_title">%1$d selezionâts</string>
-  <!-- Text for the header that groups the history for today -->
-  <string name="history_today">Vuê</string>
-  <!-- Text for the header that groups the history for yesterday -->
-  <string name="history_yesterday">Îr</string>
-  <!-- Text for the header that groups the history the past 7 days -->
-  <string name="history_7_days">Ultins 7 dîs</string>
-  <!-- Text for the header that groups the history the past 30 days -->
-  <string name="history_30_days">Ultins 30 dîs</string>
-  <!-- Text for the header that groups the history older than the last month -->
-  <string name="history_older">Plui vecjos</string>
   <!-- Text shown when no history exists -->
   <string name="history_empty_message">Nissune cronologjie achì</string>
   <!--
@@ -2904,8 +2882,6 @@
   <string name="preferences_ip_protection_title_2">VPN integrade</string>
   <!-- Label for the BETA badge for the browser VPN entry in the settings list -->
   <string name="preferences_ip_protection_beta_badge_label">BETA</string>
-  <!-- Title for the browser VPN settings screen (displayed in the app bar) -->
-  <string name="ip_protection_title">VPN</string>
   <!-- Label for the browser VPN toggle on the settings screen -->
   <string name="ip_protection_toggle_label">VPN</string>
   <!-- Content description for the browser VPN settings screen top bar back button -->
@@ -2990,8 +2966,6 @@
     %1$d is the total monthly allowance in GB (for example "50").
   -->
   <string name="ip_protection_data_limit_reached_snackbar">Tu âs doprât %1$d GB di dâts VPN. L’acès ae VPN al vignarà ristabilît tal prossim mês.</string>
-  <!-- Snackbar (in-app pop-up notification) action button text that takes the user to the VPN settings screen. -->
-  <string name="ip_protection_data_limit_reached_snackbar_action">Impostazions</string>
   <!--
     Autofill
 

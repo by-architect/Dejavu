@@ -3302,10 +3302,17 @@ void IRGenerator::emitIdGuard(ValOperandId valId, const Value& idVal, jsid id) {
       writer.guardSpecificValue(valId, idVal);
       break;
     case ValueType::Int32:
-    case ValueType::Double:
+    case ValueType::Double: {
       MOZ_ASSERT(!IsNumberIndex(idVal));
-      writer.guardSpecificValue(valId, idVal);
+      int32_t int32Value;
+      if (mozilla::NumberEqualsInt32(idVal.toNumber(), &int32Value)) {
+        Int32OperandId intId = writer.guardToInt32Index(valId);
+        writer.guardSpecificInt32(intId, int32Value);
+      } else {
+        writer.guardSpecificValue(valId, idVal);
+      }
       break;
+    }
     default:
       MOZ_CRASH("Unexpected type in emitIdGuard");
   }
@@ -8190,6 +8197,12 @@ AttachDecision InlinableNativeIRGenerator::tryAttachStringSplitString() {
   MOZ_ASSERT(argsLength() == 2);
   MOZ_ASSERT(arg(0).isString());
   MOZ_ASSERT(arg(1).isString());
+
+  // Ensure Array is resolved on the global object for MStringSplit in Ion.
+  if (!GlobalObject::getArrayShapeWithDefaultProto(cx_)) {
+    cx_->recoverFromResourceExhaustion();
+    return AttachDecision::NoAction;
+  }
 
   // Initialize the input operand.
   initializeInputOperand();
@@ -15899,7 +15912,8 @@ AttachDecision UnaryArithIRGenerator::tryAttachStringNumber() {
 }
 
 AttachDecision UnaryArithIRGenerator::tryAttachDateToNumber() {
-  if (!val_.isObject() || !val_.toObject().is<DateObject>()) {
+  if (!val_.isObject() || !val_.toObject().is<DateObject>() ||
+      !res_.isNumber()) {
     return AttachDecision::NoAction;
   }
 
@@ -15909,7 +15923,6 @@ AttachDecision UnaryArithIRGenerator::tryAttachDateToNumber() {
   if (!canOptimizeDateObjectToNumber(obj, &info)) {
     return AttachDecision::NoAction;
   }
-  MOZ_ASSERT(res_.isNumber());
 
   ValOperandId valId(writer.setInputOperandId(0));
   NumberOperandId numId = emitGuardDateObjectToNumber(obj, valId, info);

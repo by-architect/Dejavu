@@ -62,7 +62,7 @@ import mozilla.components.support.ktx.kotlin.stripCommonSubdomains
  * @property ioDispatcher The dispatcher for the work that must not run on the thread the store dispatched on.
  * @property chunker Splits article text into the chunks.
  */
-@Suppress("LongParameterList")
+@Suppress("TooManyFunctions")
 class ListenMiddleware(
     private val browserStore: BrowserStore,
     private val contentProvider: ContentProvider,
@@ -80,6 +80,7 @@ class ListenMiddleware(
     private var contentJob: Job? = null
     private var tabClosureJob: Job? = null
     private var voicesJob: Job? = null
+    private var refreshVoicesJob: Job? = null
     private var playbackStatusJob: Job? = null
 
     // The end of every session so far, chained.
@@ -173,13 +174,16 @@ class ListenMiddleware(
             ListenAction.Controls.PlayPauseClicked -> store.togglePlayback()
             ListenAction.Controls.RewindClicked -> store.skipBy(-SEEK_BACK_INCREMENT_MS)
             ListenAction.Controls.ForwardClicked -> store.skipBy(SEEK_FORWARD_INCREMENT_MS)
-
-            is ListenAction.Controls -> Unit
+            ListenAction.Controls.VoicesClicked -> store.refreshVoices()
+            is ListenAction.Controls.PlaybackSpeedSelected ->
+                scope.launch { playbackController.setSpeed(action.playbackSpeed) }
             is ListenAction.Playback,
+            is ListenAction.Controls,
             ListenAction.Content.ContentUnavailable,
             is ListenAction.Voices.AvailableVoicesLoaded,
             ListenAction.Voices.NoOfflineVoicesAvailable,
             ListenAction.Synthesis.SynthesisFailed,
+            is ListenAction.ModeChanged,
             ListenAction.ErrorDismissed -> Unit
         }
     }
@@ -379,6 +383,48 @@ class ListenMiddleware(
                 true
             }
         }
+
+    /**
+     * Refreshes the voices that are loaded for the player. Will select a fallback voice if the selected voice is no
+     * longer available, or the user has not made a selection. Will pause playback and show an error if no voices are
+     * available.
+     */
+    private fun ListenStore.refreshVoices() {
+        val languageTag = state.languageTag ?: return
+        // abandon a refresh before the page has loaded the first time
+        if (state.voiceState.loadState != VoiceLoadState.Loaded) return
+        refreshVoicesJob?.cancel()
+        refreshVoicesJob = scope.launch {
+            val voices = withContext(ioDispatcher) { synthesizer().loadAvailableVoices(languageTag) }
+            val selected = state.voiceState.selectedVoice
+
+            when {
+                voices.isEmpty() -> {
+                    if (
+                        state.playbackState.phase == PlaybackPhase.Playing ||
+                            state.playbackState.phase == PlaybackPhase.Buffering
+                    ) {
+                        playbackController.pause()
+                    }
+                    dispatch(ListenAction.Voices.NoOfflineVoicesAvailable)
+                }
+                selected != null && selected in voices ->
+                    dispatch(
+                        ListenAction.Voices.AvailableVoicesLoaded(
+                            voices = voices,
+                            selectedVoice = selected,
+                        )
+                    )
+                else -> {
+                    val fallback = voices.loadSavedVoiceFor(languageTag)
+                    dispatch(
+                        ListenAction.Voices.AvailableVoicesLoaded(voices = voices, selectedVoice = selected ?: fallback)
+                    )
+                    dispatch(ListenAction.Voices.VoiceSelected(fallback))
+                }
+            }
+        }
+    }
 
     private suspend fun List<Voice>.loadSavedVoiceFor(langTag: String): Voice {
         val savedId = settings.getSelectedVoiceId(langTag.language)
@@ -677,6 +723,7 @@ class ListenMiddleware(
     private fun endSession(releasePlayback: Boolean) {
         contentJob?.cancel()
         voicesJob?.cancel()
+        refreshVoicesJob?.cancel()
         tabClosureJob?.cancel()
         article = null
         playRequested = false

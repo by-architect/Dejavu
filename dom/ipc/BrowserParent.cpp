@@ -22,6 +22,7 @@
 #include "mozilla/MiscEvents.h"
 #include "mozilla/MouseEvents.h"
 #include "mozilla/NativeKeyBindingsType.h"
+#include "mozilla/NeverDestroyed.h"
 #include "mozilla/Preferences.h"
 #include "mozilla/PresShell.h"
 #include "mozilla/ProcessHangMonitor.h"
@@ -174,13 +175,6 @@ LazyLogModule gBrowserFocusLog("BrowserFocus");
 #define LOGBROWSERFOCUS(args) \
   MOZ_LOG(gBrowserFocusLog, mozilla::LogLevel::Debug, args)
 
-/* static */
-BrowserParent* BrowserParent::sFocus = nullptr;
-/* static */
-BrowserParent* BrowserParent::sTopLevelWebFocus = nullptr;
-/* static */
-BrowserParent* BrowserParent::sLastMouseRemoteTarget = nullptr;
-
 // The flags passed by the webProgress notifications are 16 bits shifted
 // from the ones registered by webProgressListeners.
 #define NOTIFY_FLAG_SHIFT 16
@@ -260,8 +254,8 @@ constinit Maybe<RequestingAccessKeyEventData::Data>
 
 namespace dom {
 
-BrowserParent::LayerToBrowserParentTable*
-    BrowserParent::sLayerToBrowserParentTable = nullptr;
+StaticAutoPtr<BrowserParent::LayerToBrowserParentTable>
+    BrowserParent::sLayerToBrowserParentTable;
 
 NS_INTERFACE_MAP_BEGIN_CYCLE_COLLECTION(BrowserParent)
   NS_INTERFACE_MAP_ENTRY(nsIAuthPromptProvider)
@@ -363,11 +357,29 @@ BrowserParent::~BrowserParent() {
 }
 
 /* static */
-BrowserParent* BrowserParent::GetFocused() { return sFocus; }
+WeakPtr<BrowserParent>& BrowserParent::FocusSlot() {
+  static NeverDestroyed<WeakPtr<BrowserParent>> sFocus;
+  return *sFocus;
+}
+
+/* static */
+WeakPtr<BrowserParent>& BrowserParent::TopLevelWebFocusSlot() {
+  static NeverDestroyed<WeakPtr<BrowserParent>> sTopLevelWebFocus;
+  return *sTopLevelWebFocus;
+}
+
+/* static */
+WeakPtr<BrowserParent>& BrowserParent::LastMouseRemoteTargetSlot() {
+  static NeverDestroyed<WeakPtr<BrowserParent>> sLastMouseRemoteTarget;
+  return *sLastMouseRemoteTarget;
+}
+
+/* static */
+BrowserParent* BrowserParent::GetFocused() { return FocusSlot().get(); }
 
 /* static */
 BrowserParent* BrowserParent::GetLastMouseRemoteTarget() {
-  return sLastMouseRemoteTarget;
+  return LastMouseRemoteTargetSlot().get();
 }
 
 /*static*/
@@ -432,7 +444,6 @@ void BrowserParent::RemoveBrowserParentFromTable(layers::LayersId aLayersId) {
   }
   sLayerToBrowserParentTable->Remove(uint64_t(aLayersId));
   if (sLayerToBrowserParentTable->Count() == 0) {
-    delete sLayerToBrowserParentTable;
     sLayerToBrowserParentTable = nullptr;
   }
 }
@@ -709,12 +720,12 @@ void BrowserParent::Deactivated() {
     (void)RecvHideTooltip();
   }
   UnsetTopLevelWebFocus(this);
-  if (sFocus == this) {
-    sFocus = sTopLevelWebFocus;
+  if (FocusSlot() == this) {
+    FocusSlot() = TopLevelWebFocusSlot();
     LOGBROWSERFOCUS(
         ("Deactivated moved focus to top-level web; old: %p, new: %p", this,
-         sFocus));
-    IMEStateManager::OnFocusMovedBetweenBrowsers(this, sFocus);
+         FocusSlot().get()));
+    IMEStateManager::OnFocusMovedBetweenBrowsers(this, FocusSlot().get());
   }
   UnsetLastMouseRemoteTarget(this);
   PointerLockManager::ReleaseLockedRemoteTarget(this);
@@ -800,7 +811,7 @@ void BrowserParent::ActorDestroy(ActorDestroyReason why) {
   // Need to close undeleted ContentPermissionRequestParents before tab is
   // closed.
   // FIXME: Why is PContentPermissionRequest not managed by PBrowser?
-  nsTArray<PContentPermissionRequestParent*> parentArray =
+  nsTArray<RefPtr<ContentPermissionRequestParent>> parentArray =
       nsContentPermissionUtils::GetContentPermissionRequestParentById(mTabId);
   for (auto& permissionRequestParent : parentArray) {
     (void)PContentPermissionRequestParent::Send__delete__(
@@ -1350,11 +1361,21 @@ IPCResult BrowserParent::RecvNewWindowGlobal(
                                                      __func__);
   }
 
-  // Construct our new WindowGlobalParent, bind, and initialize it.
+  // Construct our new WindowGlobalParent from the fields derived here, bind it,
+  // and reconcile the fields the content process sent.
+  WindowGlobalInit derivedInit(aInit);
+  derivedInit.context().mFields =
+      WindowGlobalActor::ComputeInitialFields(browsingContext);
   RefPtr<WindowGlobalParent> wgp =
-      WindowGlobalParent::CreateDisconnected(aInit, Manager());
-  BindPWindowGlobalEndpoint(std::move(aEndpoint), wgp);
-  wgp->Init();
+      WindowGlobalParent::CreateDisconnected(derivedInit, Manager());
+  if (!wgp) {
+    return IPC_FAIL(this, "Failed to create WindowGlobalParent");
+  }
+
+  if (NS_WARN_IF(!BindPWindowGlobalEndpoint(std::move(aEndpoint), wgp))) {
+    return IPC_FAIL(this, "BindPWindowGlobalEndpoint failed");
+  }
+  wgp->InitFromContentProcess(aInit.context().mFields, Manager());
   return IPC_OK();
 }
 
@@ -1422,13 +1443,14 @@ void BrowserParent::SendRealMouseEvent(WidgetMouseEvent& aMouseOrPointerEvent) {
   if (aMouseOrPointerEvent.mReason == WidgetMouseEvent::eReal) {
     if (aMouseOrPointerEvent.mMessage == eMouseExitFromWidget) {
       // Since we are leaving this remote target, so don't need to update
-      // sLastMouseRemoteTarget, and if we are sLastMouseRemoteTarget, reset it
-      // to null.
+      // LastMouseRemoteTargetSlot(), and if we are LastMouseRemoteTargetSlot(),
+      // reset it to null.
       BrowserParent::UnsetLastMouseRemoteTarget(this);
     } else {
       // Last remote target should not be changed without eMouseExitFromWidget.
-      MOZ_ASSERT_IF(sLastMouseRemoteTarget, sLastMouseRemoteTarget == this);
-      sLastMouseRemoteTarget = this;
+      MOZ_ASSERT_IF(LastMouseRemoteTargetSlot(),
+                    LastMouseRemoteTargetSlot().get() == this);
+      LastMouseRemoteTargetSlot() = this;
     }
   }
 
@@ -2102,7 +2124,11 @@ void BrowserParent::SendRealKeyEvent(WidgetKeyboardEvent& aEvent) {
   NS_WARNING_ASSERTION(ok, "PBrowserParent::SendRealKeyEvent() failed");
   MOZ_ASSERT(!ok || aEvent.HasBeenPostedToRemoteProcess());
   if (ok && aEvent.IsWaitingReplyFromRemoteProcess()) {
-    mWaitingReplyKeyboardEvents.AppendElement(sendKeyEventData);
+    // Although mAlternativeCharCodes contains only 3 items at most and each
+    // item is small, but let's assign it only when we actually store the data
+    // for avoiding unnecessary allocation.
+    sendKeyEventData.mAlternativeCharCodes = aEvent.mAlternativeCharCodes;
+    mWaitingReplyKeyboardEvents.AppendElement(std::move(sendKeyEventData));
   }
 }
 
@@ -2766,7 +2792,11 @@ mozilla::ipc::IPCResult BrowserParent::RecvReplyKeyEvent(
             NS_WARN_IF(data.mModifiers != aEvent.mModifiers) ||
             // The child process should've already cleared the editor commands
             // because we don't use them.
-            NS_WARN_IF(aEvent.HasEditCommands())) {
+            NS_WARN_IF(aEvent.HasEditCommands()) ||
+            // Let's avoid triggering unintended keyboard shortcuts or access
+            // keys.
+            NS_WARN_IF(data.mAlternativeCharCodes !=
+                       aEvent.mAlternativeCharCodes)) {
           // Got different event data from what we stored before dispatching an
           // event with the ID.
           return Nothing();
@@ -3306,7 +3336,7 @@ void BrowserParent::SetTopLevelWebFocus(BrowserParent* aBrowserParent) {
   BrowserParent* old = GetFocused();
   if (aBrowserParent && !aBrowserParent->GetBrowserBridgeParent()) {
     // top-level Web content
-    sTopLevelWebFocus = aBrowserParent;
+    TopLevelWebFocusSlot() = aBrowserParent;
     BrowserParent* bp = UpdateFocus();
     if (old != bp) {
       LOGBROWSERFOCUS(
@@ -3319,10 +3349,10 @@ void BrowserParent::SetTopLevelWebFocus(BrowserParent* aBrowserParent) {
 /* static */
 void BrowserParent::UnsetTopLevelWebFocus(BrowserParent* aBrowserParent) {
   BrowserParent* old = GetFocused();
-  if (sTopLevelWebFocus == aBrowserParent) {
+  if (TopLevelWebFocusSlot() == aBrowserParent) {
     // top-level Web content
-    sTopLevelWebFocus = nullptr;
-    sFocus = nullptr;
+    TopLevelWebFocusSlot() = nullptr;
+    FocusSlot() = nullptr;
     if (old) {
       LOGBROWSERFOCUS(
           ("UnsetTopLevelWebFocus moved focus to chrome; old: %p", old));
@@ -3354,8 +3384,8 @@ mozilla::ipc::IPCResult BrowserParent::RecvPerformHapticFeedback(
 
 /* static */
 BrowserParent* BrowserParent::UpdateFocus() {
-  if (!sTopLevelWebFocus) {
-    sFocus = nullptr;
+  if (!TopLevelWebFocusSlot()) {
+    FocusSlot() = nullptr;
     return nullptr;
   }
   nsFocusManager* fm = nsFocusManager::GetFocusManager();
@@ -3371,7 +3401,7 @@ BrowserParent* BrowserParent::UpdateFocus() {
       WindowGlobalParent* globalTop = canonicalTop->GetCurrentWindowGlobal();
       if (globalTop) {
         RefPtr<BrowserParent> globalTopParent = globalTop->GetBrowserParent();
-        if (sTopLevelWebFocus == globalTopParent) {
+        if (TopLevelWebFocusSlot() == globalTopParent.get()) {
           CanonicalBrowsingContext* canonical = bc->Canonical();
           MOZ_ASSERT(
               canonical,
@@ -3380,8 +3410,8 @@ BrowserParent* BrowserParent::UpdateFocus() {
           WindowGlobalParent* global = canonical->GetCurrentWindowGlobal();
           if (global) {
             RefPtr<BrowserParent> parent = global->GetBrowserParent();
-            sFocus = parent;
-            return sFocus;
+            FocusSlot() = parent.get();
+            return FocusSlot().get();
           }
           LOGBROWSERFOCUS(
               ("Focused BrowsingContext did not have WindowGlobalParent."));
@@ -3392,21 +3422,21 @@ BrowserParent* BrowserParent::UpdateFocus() {
       }
     }
   }
-  sFocus = sTopLevelWebFocus;
-  return sFocus;
+  FocusSlot() = TopLevelWebFocusSlot();
+  return FocusSlot().get();
 }
 
 /* static */
 void BrowserParent::UnsetTopLevelWebFocusAll() {
-  if (sTopLevelWebFocus) {
-    UnsetTopLevelWebFocus(sTopLevelWebFocus);
+  if (TopLevelWebFocusSlot()) {
+    UnsetTopLevelWebFocus(TopLevelWebFocusSlot().get());
   }
 }
 
 /* static */
 void BrowserParent::UnsetLastMouseRemoteTarget(BrowserParent* aBrowserParent) {
-  if (sLastMouseRemoteTarget == aBrowserParent) {
-    sLastMouseRemoteTarget = nullptr;
+  if (LastMouseRemoteTargetSlot() == aBrowserParent) {
+    LastMouseRemoteTargetSlot() = nullptr;
   }
 }
 
@@ -4278,7 +4308,7 @@ BrowserParent* BrowserParent::TopLevelBrowserParent() {
 
 mozilla::ipc::IPCResult BrowserParent::RecvRequestPointerLock(
     const bool& aUnadjustedMovement, RequestPointerLockResolver&& aResolve) {
-  if (sTopLevelWebFocus != TopLevelBrowserParent()) {
+  if (TopLevelWebFocusSlot().get() != TopLevelBrowserParent()) {
     aResolve("PointerLockDeniedNotFocused"_ns);
     return IPC_OK();
   }

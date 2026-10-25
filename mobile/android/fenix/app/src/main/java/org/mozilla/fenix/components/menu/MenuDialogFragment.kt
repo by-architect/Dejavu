@@ -580,6 +580,7 @@ class MenuDialogFragment : BottomSheetDialogFragment() {
                                 webExtensionMenuCount = webExtensionsCount,
                                 isAllWebExtensionsDisabled = isAllWebExtensionsDisabled,
                                 showIPProtection = components.ipProtection.store.state.isEligible,
+                                showPasswords = settings.isAutofillSupported,
                                 ipProtectionMenuState = ipProtectionMenuState,
                                 onMozillaAccountButtonClick = {
                                     menuStore.dispatch(
@@ -612,11 +613,11 @@ class MenuDialogFragment : BottomSheetDialogFragment() {
                                     menuStore.dispatch(MenuAction.FindInPage)
                                 },
                                 onBannerClick = {
-                                    menuStore.dispatch(MenuAction.MenuBanner)
+                                    menuStore.dispatch(MenuAction.DefaultBrowserMenuBannerClicked)
                                     (context as? Activity)?.openSetDefaultBrowserOption()
                                 },
                                 onBannerDismiss = {
-                                    menuStore.dispatch(MenuAction.DismissMenuBanner)
+                                    menuStore.dispatch(MenuAction.DefaultBrowserMenuBannerDismissed)
                                     shouldShowMenuBanner = false
                                 },
                                 onExtensionsMenuClick = {

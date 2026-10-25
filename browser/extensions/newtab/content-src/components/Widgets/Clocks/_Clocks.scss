@@ -28,12 +28,7 @@
     border-start-start-radius: var(--border-radius-large);
     border-start-end-radius: var(--border-radius-large);
     opacity: 0;
-    // Use shared size-change transition variables from widget-base-style mixin
-    // so all widgets animate size changes consistently.
-    transition:
-      opacity 180ms ease,
-      block-size var(--widget-size-transition-duration) var(--widget-size-transition-easing),
-      padding var(--widget-size-transition-duration) var(--widget-size-transition-easing);
+    transition: opacity 180ms ease;
     pointer-events: none;
     z-index: 1;
 
@@ -373,15 +368,12 @@
     min-block-size: 0;
     transition:
       padding-block-start var(--widget-size-transition-duration) var(--widget-size-transition-easing),
-      gap var(--widget-size-transition-duration) var(--widget-size-transition-easing);
-  }
+      gap var(--widget-size-transition-duration) var(--widget-size-transition-easing),
+      transform var(--widget-size-transition-duration) var(--widget-size-transition-easing);
 
-  &:not(.is-panel-open):hover .clocks-list,
-  &:not(.is-panel-open):focus-within .clocks-list {
-    // Reserve header room for the hover controls so they don't overlap the
-    // first visible clock row.
-    /* stylelint-disable-next-line stylelint-plugin-mozilla/use-design-tokens, declaration-property-value-disallowed-list */
-    padding-block-start: 2.25rem;
+    @media (prefers-reduced-motion: reduce) {
+      transition: none;
+    }
   }
 
   // An open panel owns the whole card, so drop the rows instead of leaving
@@ -648,22 +640,6 @@
   }
 
   &.small-widget {
-    .widget-toolbar {
-      block-size: var(--size-item-large);
-      padding-block-start: var(--space-xxsmall);
-      padding-block-end: 0;
-      padding-inline-end: var(--space-large);
-    }
-
-    .widget-toolbar moz-button::part(button) {
-      // Small 2x2 widgets need a slightly smaller toolbar button so the
-      // keyboard focus ring can fit cleanly in the top-right corner.
-      // stylelint-disable-next-line stylelint-plugin-mozilla/use-design-tokens
-      block-size: 1.75rem;
-      // stylelint-disable-next-line stylelint-plugin-mozilla/use-design-tokens
-      inline-size: 1.75rem;
-    }
-
     .widget-toolbar moz-button {
       /* moz-button draws its focus ring from the internal button background
          using this variable, so tighten the offset at the host level. */
@@ -674,6 +650,7 @@
       flex-direction: column;
       justify-content: center;
       gap: var(--space-small);
+      transform-origin: bottom center;
     }
 
     .clocks-row {
@@ -719,46 +696,8 @@
     }
   }
 
-  &.small-widget:not(.is-panel-open):hover .clocks-list,
-  &.small-widget:not(.is-panel-open):focus-within .clocks-list {
-    justify-content: flex-start;
-    /* stylelint-disable-next-line stylelint-plugin-mozilla/use-design-tokens, declaration-property-value-disallowed-list */
-    padding-block-start: 1.5rem;
-  }
-
-  &.small-widget[data-clock-count='2']:not(.is-panel-open):hover .clocks-list,
-  &.small-widget[data-clock-count='2']:not(.is-panel-open):focus-within .clocks-list {
-    /* Two full rows with timezone text need a slightly smaller header lane. */
-    /* stylelint-disable-next-line stylelint-plugin-mozilla/use-design-tokens, declaration-property-value-disallowed-list */
-    padding-block-start: 1rem;
-  }
-
-  &.small-widget[data-clock-count='2']:not(.is-panel-open):hover .clocks-row,
-  &.small-widget[data-clock-count='2']:not(.is-panel-open):focus-within .clocks-row {
-    padding-block: var(--space-xsmall);
-  }
-
-  &.small-widget[data-clock-count='4']:not(.is-panel-open):hover .clocks-list,
-  &.small-widget[data-clock-count='4']:not(.is-panel-open):focus-within .clocks-list {
-    /* Only the menu remains at 4 clocks, so reserve less header room. */
-    /* stylelint-disable-next-line stylelint-plugin-mozilla/use-design-tokens, declaration-property-value-disallowed-list */
-    padding-block-start: 0.85rem;
-  }
-
-  &.medium-widget:not(.is-panel-open):hover .clocks-list,
-  &.medium-widget:not(.is-panel-open):focus-within .clocks-list {
-    padding-block-start: var(--space-medium);
-  }
-
-  &.medium-widget[data-clock-count='3']:not(.is-panel-open):hover .clocks-list,
-  &.medium-widget[data-clock-count='3']:not(.is-panel-open):focus-within .clocks-list {
-    /* stylelint-disable-next-line stylelint-plugin-mozilla/use-design-tokens, declaration-property-value-disallowed-list */
-    padding-block-start: 1.25rem;
-  }
-
-  &.medium-widget[data-clock-count='3']:not(.is-panel-open):hover .clocks-row,
-  &.medium-widget[data-clock-count='3']:not(.is-panel-open):focus-within .clocks-row {
-    padding-block: var(--space-small);
+  &.small-widget:not(.is-panel-open):is(:hover, :focus-within) .clocks-list {
+    transform: scale(0.8);
   }
 
   // 10px inline padding has no --space-* token (scale jumps 0.5->0.75rem).
@@ -912,11 +851,6 @@
   }
 
   &.large-widget {
-    .widget-toolbar {
-      padding-block-start: var(--space-small);
-      padding-inline-end: var(--space-large);
-    }
-
     .widget-toolbar moz-button {
       --focus-outline-offset: var(--focus-outline-inset);
     }
@@ -966,7 +900,7 @@
     &[data-clock-count='4'] {
       .clocks-list {
         gap: var(--space-small);
-        padding-block-start: 0;
+        padding-block-start: var(--space-large);
         transition-property: gap;
       }
 
@@ -1034,15 +968,5 @@
     .clocks-meta:has(.clocks-label-chip) .clocks-timezone {
       font-size: var(--font-size-heading-medium);
     }
-  }
-
-  &.large-widget.is-hero:not(.is-panel-open):hover .clocks-list,
-  &.large-widget.is-hero:not(.is-panel-open):focus-within .clocks-list {
-    padding-block-start: 0;
-  }
-
-  &.large-widget[data-clock-count='2']:not(.is-panel-open):hover .clocks-list,
-  &.large-widget[data-clock-count='2']:not(.is-panel-open):focus-within .clocks-list {
-    padding-block-start: 0;
   }
 }

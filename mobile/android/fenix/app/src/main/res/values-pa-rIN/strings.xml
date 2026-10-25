@@ -709,6 +709,14 @@
   <string name="search_widget_text_long">ਵੈੱਬ ‘ਤੇ ਖੋਜੋ</string>
   <!-- Content description (not visible, for screen readers etc.): Voice search -->
   <string name="search_widget_voice">ਆਵਾਜ਼ ਰਾਹੀਂ ਖੋਜੋ</string>
+  <!-- Content description (not visible, for screen readers etc.): Button in the search widget that starts a search in a private tab -->
+  <string name="search_widget_private_search">ਪ੍ਰਾਈਵੇਟ ਖੋਜ</string>
+  <!-- Widget description in the widget picker screen for the search bar widget that includes buttons for private search and for voice search -->
+  <string name="search_bar_widget_description">ਪ੍ਰਾਈਵੇਟ ਅਤੇ ਆਵਾਜ਼ ਖੋਜ ਨਾਲ ਲੈੱਸ ਖੋਜ ਪੱਟੀ</string>
+  <!-- Widget description in the widget picker screen for the search bar widget that includes buttons for image search, private search and voice search -->
+  <string name="search_bar_with_lens_widget_description">ਚਿੱਤਰ, ਪ੍ਰਾਈਵੇਟ ਅਤੇ ਆਵਾਜ਼ ਖੋਜ ਨਾਲ ਲੈੱਸ ਖੋਜ ਪੱਟੀ</string>
+  <!-- Widget description in the widget picker screen for the compact search bar widget -->
+  <string name="compact_search_bar_widget_description">ਸੰਖੇਪ ਖੋਜ ਪੱਟੀ</string>
   <!--
     Preferences
 
@@ -806,6 +814,8 @@
   <string name="preferences_override_sync_tokenserver">ਪਸੰਦੀਦਾ ਸਿੰਕ ਸਰਵਰ</string>
   <!-- Preference category for account information -->
   <string name="preferences_category_account">ਖਾਤਾ</string>
+  <!-- Preference category for sync controls. Sync can be translated, it's just short for ”Synchronization” in English. -->
+  <string name="preferences_category_sync_controls">ਸਿੰਕ</string>
   <!-- Preference for changing where the AddressBar is positioned -->
   <string name="preferences_toolbar_2">ਸਿਰਨਾਵਾਂ ਪੱਟੀ ਦਾ ਟਿਕਾਣਾ</string>
   <!-- Preference for changing toolbar layout -->
@@ -862,6 +872,8 @@
   <string name="preferences_search_synced_tabs">ਸਿੰਕ ਕੀਤੀਆਂ ਟੈਬਾਂ ਨੂੰ ਖੋਲ੍ਹੋ</string>
   <!-- Preference for account settings -->
   <string name="preferences_account_settings">ਖਾਤਾ ਸੈਟਿੰਗਾਂ</string>
+  <!-- Preference for account and sync settings -->
+  <string name="preferences_account_and_sync_settings">ਖਾਤਾ ਅਤੇ ਸਿੰਕ</string>
   <!-- Preference for enabling url autocomplete -->
   <string name="preferences_enable_autocomplete_urls">ਆਪੇ-ਪੂਰਨ URL</string>
   <!-- Preference title for switch preference to show sponsored Firefox Suggest search suggestions -->
@@ -909,6 +921,8 @@
   <string name="preference_downloads_folder_permission_lost" tools:ignore="UnusedResources">ਤੁਹਾਨੂੰ ਇਹ ਫੋਲਡਰ ਵਰਤਣ ਲਈ ਇਜਾਜ਼ਤ ਨਹੀਂ ਹੈ। ਵੱਖਰੇ ਨੂੰ ਚੁਣਨ ਦੀ ਕੋਸ਼ਿਸ਼ ਕਰੋ।</string>
   <!-- Preference title for choosing an app to handle downloads -->
   <string name="preferences_choose_app_for_downloads">ਹੋਰ ਐਪ ਨਾਲ ਡਾਊਨਲੋਡਾਂ ਦਾ ਇੰਤਜ਼ਾਮ ਕਰੋ</string>
+  <!-- Message shown when no app is available to let the user pick a download folder. -->
+  <string name="preferences_downloads_no_folder_picker_available">ਇਸ ਡਿਵਾਈਸ ਉੱਤੇ ਚੋਣਕਾਰ ਫੋਲਡਰ ਖੋਲ੍ਹਣ ਲਈ ਅਸਮਰੱਥ ਹੈ।</string>
   <!-- Preference category for deleting or removing downloads -->
   <string name="preferences_category_delete_or_remove_downloads">ਡਾਊਨਲੋਡ ਨੂੰ ਹਟਾਓ ਜਾਂ ਮਿਟਾਓ</string>
   <string name="preferences_downloads_delete_from_device">ਡਿਵਾਈਸ ਤੋਂ ਹਟਾਓ</string>
@@ -1139,6 +1153,12 @@
   <string name="preferences_sync_now">ਹੁਣੇ ਸਿੰਕ ਕਰੋ</string>
   <!-- Preference category for sync -->
   <string name="preferences_sync_category">ਚੁਣੋ ਕਿ ਕੀ ਸਿੰਕ ਕਰਨਾ ਹੈ</string>
+  <!-- Preference category for sync controls -->
+  <string name="preferences_category_sync">ਸਿੰਕ ਕੀਤਾ ਡਾਟਾ</string>
+  <!-- Summary for the sync preference category. -->
+  <string name="preferences_sync_category_summary">ਆਪਣੇ ਸਾਰੇ ਡਿਵਾਈਸਾਂ ਵਿਚਾਲੇ ਹੋਣ ਵਾਲੇ ਸਿੰਕ ਦਾ ਇੰਤਜ਼ਾਮ ਕਰੋ</string>
+  <!-- Summary for the sync preference category, when user has disabled all synchronisation items. -->
+  <string name="preferences_sync_category_no_engine_selected_summary">ਤੁਸੀਂ ਕੁਝ ਵੀ ਸਿੰਕ ਨਹੀਂ ਕਰ ਰਹੇ ਹੋ। ਚੋਣ ਕਰੋ ਕਿ ਕਿਹੜੀਆਂ ਚੀਜ਼ਾਂ ਨੂੰ ਤੁਹਾਡੇ ਡਿਵਾਈਸਾਂ ਵਿੱਚ ਸਿੰਕ ਰੱਖਣਾ ਹੈ।</string>
   <!-- Preference for syncing history -->
   <string name="preferences_sync_history">ਅਤੀਤ</string>
   <!-- Preference for syncing bookmarks -->
@@ -1151,6 +1171,10 @@
   <string name="preferences_sign_out">ਸਾਈਨ ਆਉਟ</string>
   <!-- Preference displays and allows changing current FxA device name -->
   <string name="preferences_sync_device_name">ਡਿਵਾਈਸ ਦਾ ਨਾਂ</string>
+  <!-- Preference category for Device name -->
+  <string name="preferences_device_name_category">ਡਿਵਾਈਸ ਦਾ ਨਾਂ</string>
+  <!-- Label for the Preference that displays and allows changing current device name on Mozilla Account -->
+  <string name="preferences_sync_change_device_name">ਡਿਵਾਈਸ ਦਾ ਨਾਂ ਬਦਲੋ</string>
   <!-- Text shown when user enters empty device name -->
   <string name="empty_device_name_error">ਡਿਵਾਈਸ ਦਾ ਨਾਂ ਖਾਲੀ ਨਹੀਂ ਹੋ ਸਕਦਾ।</string>
   <!-- Label indicating that sync is in progress -->
@@ -1270,8 +1294,6 @@
   <string name="preference_simple_toolbar">ਸਧਾਰਨ</string>
   <!-- Preference for using expanded toolbar -->
   <string name="preference_expanded_toolbar">Expanded</string>
-  <!-- Preference description indicating the toolbar location preference is disabled when the tab strip is enabled -->
-  <string name="preference_toolbar_pref_disabled_explanation">ਜਦੋਂ ਟੈਬ ਪੱਟੀ ਨੂੰ ਦਿਖਾਇਆ ਜਾਵੇ ਤਾਂ ਸਿਰਨਾਵਾਂ ਪੱਟੀ ਹਮੇਸ਼ਾਂ ਉੱਤੇ ਹੋਣੀ ਚਾਹੀਦੀ ਹੈ।</string>
   <!-- New tab shortcut in toolbar customization -->
   <string name="toolbar_customize_shortcut_new_tab">ਕੋਈ ਨਵੀਂ ਟੈਬ ਖੋਲ੍ਹੋ</string>
   <!-- Share shortcut in toolbar customization -->
@@ -1353,6 +1375,8 @@
   <string name="library_desktop_bookmarks_unfiled">ਹੋਰ ਬੁੱਕਮਾਰਕ</string>
   <!-- Option in Library to open History page -->
   <string name="library_history">ਅਤੀਤ</string>
+  <!-- Content description (not visible, for screen readers etc.) for the check mark that replaces a site's icon in History and Recently closed tabs when the item is selected -->
+  <string name="library_item_selected_content_description">ਚੁਣਿਆ</string>
   <!-- Settings Page Title -->
   <string name="settings_title">ਸੈਟਿੰਗਾਂ</string>
   <!-- Content description (not visible, for screen readers etc.): "Close button for library settings" -->
@@ -1403,8 +1427,8 @@
     Title of preference for tabs management
   -->
   <string name="preferences_tabs">ਟੈਬਾਂ</string>
-  <!-- Title of preference that allows a user to specify the tab view -->
-  <string name="preferences_tab_view">ਟੈਬ ਵੇਖੋ</string>
+  <!-- Title of preference that allows a user to specify the tab layout -->
+  <string name="preferences_tab_layout">ਟੈਬ ਖਾਕਾ</string>
   <!-- Option for a list tab view -->
   <string name="tab_view_list">ਸੂਚੀ</string>
   <!-- Option for a grid tab view -->
@@ -1452,15 +1476,19 @@
   <!-- Summary for homepage preference indicating opening the homepage when re-opening the app after four hours of inactivity -->
   <string name="opening_screen_after_four_hours_of_inactivity_summary">ਚਾਰ ਘੰਟਿਆਂ ਬਾਅਦ ਮੁੱਖ-ਸਫ਼਼ੇ ਉੱਤੇ ਖੋਲ੍ਹੋ</string>
   <!--
-    Inactive tabs
+    Tab organization
 
-    Category header of a preference that allows a user to enable or disable the inactive tabs feature
+    Category header for the preferences that control how tabs are organized
   -->
-  <string name="preferences_inactive_tabs">ਪੁਰਾਣੀਆਂ ਟੈਬਾਂ ਨੂੰ ਨਾ-ਸਰਗਰਮ ਵਿੱਚ ਭੇਜੋ</string>
-  <!-- Title of inactive tabs preference -->
+  <string name="preferences_tab_organization">ਟੈਬ ਪ੍ਰਬੰਧ</string>
+  <!-- Title of the preference that allows a user to enable or disable the inactive tabs feature -->
+  <string name="preferences_inactive_tabs_toggle_title">ਨਾ-ਸਰਗਰਮ ਟੈਬਾਂ</string>
+  <!-- Summary of the preference that allows a user to enable or disable the inactive tabs feature. -->
   <string name="preferences_inactive_tabs_title">ਪਿਛਲੇ ਦੋ ਹਫ਼ਤਿਆਂ ਵਿੱਚ ਤੁਹਾਡੇ ਵਲੋਂ ਨਾ ਵੇਖੀਆਂ ਟੈਬਾਂ ਨੂੰ ਨਾ-ਸਰਗਰਮ ਭਾਗ ਵਿੱਚ ਭੇਜਿਆ ਜਾਂਦਾ ਹੈ।</string>
-  <!-- Title for the preference to enable or disable the tab groups feature -->
-  <string name="preferences_tab_groups_feature">ਟੈਬ ਗਰੁੱਪ ਨੂੰ ਸਮਰੱਥ ਕਰੋ</string>
+  <!-- Title of the preference that allows a user to enable or disable the tab groups feature -->
+  <string name="preferences_tab_groups_title">ਟੈਬ ਗਰੁੱਪ</string>
+  <!-- Summary of the preference that allows a user to enable or disable the tab groups feature -->
+  <string name="preferences_tab_groups_description">ਆਪਣੀਆਂ ਟੈਬਾਂ ਦਾ ਗਰੁੱਪ ਵਿੱਚ ਪ੍ਰਬੰਧ ਕਰੋ ਤਾਂ ਤੁਸੀਂ ਉਹਨਾਂ ਨੂੰ ਨਾਂ ਦੇ ਕੇ ਸੰਭਾਲ ਸਕੋ।</string>
   <!--
     Privacy report
 
@@ -1676,6 +1704,11 @@
   <string name="close_tab_and_delete_group_confirmation_dialog_cancel">ਰੱਦ ਕਰੋ</string>
   <!-- Content description for the three dot button next to a tab group" -->
   <string name="tab_group_three_dot_button_content_description">ਹੋਰ ਚੋਣਾਂ</string>
+  <!--
+    Content description for the Expand button on the contracted menu for a tab group:
+    when tapped, tabs are displayed in an expanded grid or list view, taking up the full screen.
+  -->
+  <string name="tab_groups_strip_expand_group_content_description">ਟੈਬਾਂ ਨੂੰ ਪੂਰੀ ਸਕਰੀਨ ਉੱਤੇ ਵੇਖਣ ਲਈ ਫੈਲਾਓ</string>
   <!-- Text shown on the edit button for a tab group on the three dot menu -->
   <string name="tab_group_three_dot_menu_edit">ਸੋਧੋ</string>
   <!-- Text shown on the ungroup button for a tab group on the three dot menu -->
@@ -1743,16 +1776,6 @@
     %1$d is the number of bookmarks selected
   -->
   <string name="history_multi_select_title">%1$d ਚੁਣੇ</string>
-  <!-- Text for the header that groups the history for today -->
-  <string name="history_today">ਅੱਜ</string>
-  <!-- Text for the header that groups the history for yesterday -->
-  <string name="history_yesterday">ਕੱਲ੍ਹ</string>
-  <!-- Text for the header that groups the history the past 7 days -->
-  <string name="history_7_days">ਪਿਛਲੇ 7 ਦਿਨ</string>
-  <!-- Text for the header that groups the history the past 30 days -->
-  <string name="history_30_days">ਪਿਛਲੇ 30 ਦਿਨ</string>
-  <!-- Text for the header that groups the history older than the last month -->
-  <string name="history_older">ਹੋਰ ਪੁਰਾਣੇ</string>
   <!-- Text shown when no history exists -->
   <string name="history_empty_message">ਇ਼ੱਥੇ ਕੋਈ ਅਤੀਤ ਨਹੀਂ ਹੈ</string>
   <!--
@@ -2381,12 +2404,12 @@
   <string name="sync_sign_in">ਸਿੰਕ ਕਰਨ ਲਈ ਸਾਈਨ ਇਨ ਕਰੋ</string>
   <!-- An option from the share dialog to send link to all other sync devices -->
   <string name="sync_send_to_all">ਸਾਰੇ ਡਿਵਾਈਸਾਂ ‘ਤੇ ਭੇਜੋ</string>
-  <!-- Text displayed when no other sync devices are available for link sharing -->
-  <string name="sync_no_devices_available">ਕੋਈ ਡਿਵਾਈਸ ਮੌਜੂਦ ਨਹੀਂ ਹੈ</string>
-  <!-- Text displayed when no other sync devices are available for link sharing. -->
-  <string name="sync_no_devices_available_description">ਇਸ ਖਾਤੇ ਨਾਲ ਕੋਈ ਵੀ ਸਾਈਨ ਇਨ ਹੋਇਆ ਅਤੇ ਸਿੰਕ ਕੀਤੇ ਡਿਵਾਈਸ ਨੁੰ ਇੱਥੇ ਦਿਖਾਇਆ ਜਾਵੇਗਾ।</string>
   <!-- An option from the share dialog to reconnect to sync -->
   <string name="sync_reconnect">ਸਿੰਕ ਕਰਨ ਲਈ ਮੁੜ-ਕਨੈਕਟ ਕਰੋ</string>
+  <!-- Label for the button in the share dialog that sends the tab to the selected sync devices -->
+  <string name="sync_send_to_selected_devices">ਭੇਜੋ</string>
+  <!-- Content description announced when a device is selected in the share dialog -->
+  <string name="send_to_devices_device_selected_content_description">ਚੁਣਿਆ</string>
   <!-- Text displayed when sync is offline and cannot be accessed -->
   <string name="sync_offline">ਆਫਲਾਈਨ</string>
   <!-- An option to connect additional devices -->
@@ -2419,10 +2442,14 @@
   <string name="sync_send_tab_empty_state_title">ਕੋਈ ਕਨੈਕਟ ਹੋਇਆ ਡਿਵਾਈਸ ਨਹੀਂ ਹੈ</string>
   <!-- Send tab to synced devices: Empty state message - Displayed when the user has no synced devices -->
   <string name="sync_send_tab_empty_state_description" tools:ignore="BrandUsage">ਟੈਬ ਭੇਜਣ ਲਈ, ਘੱਟੋ-ਘੱਟ ਹੋਰ ਡਿਵਾਈਸ ਉੱਤੇ Firefox ਵਿੱਚ ਸਾਈਨ ਇਨ ਕਰੋ।</string>
+  <!-- Send tab to synced devices: Empty state link - Displayed when the user has no synced devices -->
+  <string name="sync_send_tab_empty_state_link">ਡਿਵਾਈਸ ਨਾਲ ਕਨੈਕਟ ਕਰਨਾ ਬਾਰੇ ਸਿੱਖੋ</string>
   <!-- Send tab to synced devices: Connectivity Error title -->
   <string name="sync_send_tab_error_connection_title">ਆਪਣੇ ਇੰਟਰਨੈੱਟ ਦੀ ਜਾਂਚ ਕਰੋ</string>
   <!-- Send tab to synced devices: Connectivity Error message - Suggested user action after internet connection has been established -->
   <string name="sync_send_tab_error_connection_text">ਫੇਰ ਆਪਣੀ ਟੈਬ ਭੇਜਣ ਦੀ ਮੁੜ-ਕੋਸ਼ਿਸ਼ ਕਰੋ।</string>
+  <!-- Send tab to synced devices: Connectivity Error button - When tapped, refreshes the list of connected devices. -->
+  <string name="sync_send_tab_error_connection_button">ਮੁੜ-ਕੋਸ਼ਿਸ਼</string>
   <!--
     Notifications
 
@@ -2605,6 +2632,12 @@
   <string name="sign_in_create_account_text" tools:ignore="BrandUsage"><![CDATA[ਖਾਤਾ ਨਹੀਂ ਹੈ?<u>ਡਿਵਾਈਸਾਂ ਵਿਚਾਲੇ</u> Firefox ਸਿੰਕ ਕਰਨ ਲਈ ਬਣਾਓ।]]></string>
   <!-- Text shown in confirmation dialog to sign out of account. %s is the name of the app (for example "Firefox"). -->
   <string name="sign_out_confirmation_message_2">%s ਤੁਹਾਡੇ ਖਾਤੇ ਨਾਲ ਸਿੰਕ ਕਰਨਾ ਰੋਕ ਦੇਵੇਗਾ, ਪਰ ਇਸ ਡਿਵਾਈਸ ਉੱਤੇ ਤੁਹਾਡੇ ਬਰਾਊਜ਼ ਕੀਤੇ ਡਾਟੇ ਨੂੰ ਹਟਾਏਗਾ ਨਹੀਂ।</string>
+  <!-- Title of the confirmation dialog shown when the user signs out of their account -->
+  <string name="sign_out_dialog_title">ਆਪਣੇ ਖਾਤੇ ਵਿੱਚੋਂ ਸਾਈਨ ਆਉਟ ਕਰਨਾ ਹੈ?</string>
+  <!-- Body of the confirmation dialog shown when the user signs out of their account -->
+  <string name="sign_out_dialog_message">ਸਿੰਕ ਕੀਤਾ ਡਾਟਾ ਤੁਹਾਡੇ ਖਾਤੇ ਵਿੱਚ ਸੰਭਾਲਿਆ ਰਹਿੰਦਾ ਹੈ।</string>
+  <!-- Text for the primary action button of the confirmation dialog shown when the user signs out of their account -->
+  <string name="sign_out_dialog_confirm_button">ਸਾਈਨ ਆਉਟ</string>
   <!-- Option to continue signing out of account shown in confirmation dialog to sign out of account -->
   <string name="sign_out_disconnect">ਡਿਸ-ਕਨੈਕਟ ਕਰੋ</string>
   <!-- Option to cancel signing out shown in confirmation dialog to sign out of account -->
@@ -3025,8 +3058,6 @@
   <string name="preferences_ip_protection_beta_badge_label">ਬੀਟਾ</string>
   <!-- Title for the browser VPN settings screen (displayed in the app bar) -->
   <string name="ip_protection_settings_title">ਵਿੱਚੇ ਮੌਜੂਦ VPN</string>
-  <!-- Title for the browser VPN settings screen (displayed in the app bar) -->
-  <string name="ip_protection_title">VPN</string>
   <!-- Label for the browser VPN toggle on the settings screen -->
   <string name="ip_protection_toggle_label">VPN</string>
   <!-- Content description for the browser VPN settings screen top bar back button -->
@@ -3121,8 +3152,6 @@
   <string name="ip_protection_data_limit_reached_snackbar">VPN ਦੇ %1$d GB ਨੂੰ ਵਰਤਿਆ ਗਿਆ ਹੈ। ਪਹੁੰਚ ਅਗਲੇ ਮਹੀਨੇ ਮੁੜ-ਸੈੱਟ ਹੋਵੇਗੀ।</string>
   <!-- Snackbar (in-app pop-up notification) action button text that takes the user to the VPN settings screen. -->
   <string name="ip_protection_open_settings_snackbar_action">ਸੈਟਿੰਗਾਂ</string>
-  <!-- Snackbar (in-app pop-up notification) action button text that takes the user to the VPN settings screen. -->
-  <string name="ip_protection_data_limit_reached_snackbar_action">ਸੈਟਿੰਗਾਂ</string>
   <!-- Description shown on the browser VPN settings screen prompting the user to turn the VPN on. -->
   <string name="ip_protection_settings_description" tools:ignore="UnusedResources">ਆਪਣੀ ਬਰਾਊਜ਼ਿੰਗ ਨੂੰ ਵੱਧ ਪ੍ਰਾਈਵੇਟ ਅਤੇ ਸੂਹ ਲੈਣਾ ਔਖਾ ਬਣਾਉਣ ਵਾਸਤੇ VPN ਨੂੰ ਚਾਲੂ ਕਰੋ।</string>
   <!-- Title shown on the browser VPN settings screen for location selection section. -->
@@ -4496,6 +4525,16 @@
   <string name="lens_camera_mode_qr">QR ਸਕੈਨਰ</string>
   <!-- Toast shown when the user picks an image from the gallery in QR mode but no QR code is found in it -->
   <string name="lens_camera_qr_no_code_found">ਚਿੱਤਰ ਵਿੱਚ ਕੋਈ QR ਕੋਡ ਨਹੀਂ ਮਿਲਿਆ</string>
+  <!-- Status shown under an image picked from the gallery while it is being sent to Google Lens for a visual search -->
+  <string name="lens_camera_loading_status">ਇਸ ਨੂੰ ਲੱਭੋ</string>
+  <!-- Button shown under an image picked from the gallery while it is being sent to Google Lens. Tapping it stops the search and returns to the camera. -->
+  <string name="lens_camera_loading_cancel_button">ਰੱਦ ਕਰੋ</string>
+  <!-- Snackbar message shown when an image picked from the gallery could not be opened or read, so it was never sent to Google Lens. Shown after returning to the camera. -->
+  <string name="lens_camera_image_load_failed">ਇਹ ਚਿੱਤਰ ਲੋਡ ਨਹੀਂ ਕੀਤਾ ਜਾ ਸਕਿਆ। ਵੱਖਰੇ ਨਾਲ ਅਜ਼ਮਾਓ।</string>
+  <!-- Snackbar message shown when an image picked from the gallery could not be searched because of a network problem or an error from Google Lens. Shown after returning to the camera, next to the lens_camera_upload_failed_retry_button action. -->
+  <string name="lens_camera_upload_failed">Google Lens ਤੋਂ ਨਤੀਜੇ ਲਏ ਨਹੀਂ ਜਾ ਸਕੇ</string>
+  <!-- Action in the snackbar shown when an image picked from the gallery could not be searched with Google Lens. Tapping it searches the same image again. -->
+  <string name="lens_camera_upload_failed_retry_button">ਫੇਰ ਕੋਸ਼ਿਸ਼ ਕਰੋ</string>
   <!-- Title of the bottom sheet shown the first time the user opens the Google Lens camera screen -->
   <string name="lens_opt_out_title">ਇਸ ਨੂੰ Google Lens ਨਾਲ ਲੱਭੋ</string>
   <!-- Description of the bottom sheet shown the first time the user opens the Google Lens camera screen -->
@@ -4584,4 +4623,6 @@
   <string name="reader_mode_panel_content_description">ਪੜ੍ਹਨ ਢੰਗ ਚੋਣਾਂ</string>
   <!-- Content description for the button in reader mode panel that turns on the read aloud feature (playback of content begins when button is pressed) -->
   <string name="reader_mode_panel_listen_content_description">ਉੱਚੀ ਪੜ੍ਹੋ</string>
+  <!-- Content description for media player displayed in Reader Mode when the Listen to Page (Read Aloud) feature is selected -->
+  <string name="reader_mode_panel_media_player_content_description">ਮੀਡੀਆ ਪਲੇਅਰ</string>
 </resources>

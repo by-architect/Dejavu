@@ -18,7 +18,7 @@
 #include "mozilla/StaticPrefs_layout.h"
 #include "mozilla/StaticPrefs_ui.h"
 #include "mozilla/ToString.h"
-#include "mozilla/layers/APZInputBridge.h"
+#include "mozilla/layers/APZBridge.h"
 #include "mozilla/layers/APZThreadUtils.h"
 
 static mozilla::LazyLogModule sApzInpLog("apz.inputqueue");
@@ -435,7 +435,7 @@ static bool CanScrollTargetHorizontally(const PanGestureInput& aInitialEvent,
   horizontalComponent.mPanDisplacement.y = 0;
   ScrollDirections allowedScrollDirections;
   RefPtr<AsyncPanZoomController> horizontallyScrollableAPZC =
-      aBlock->GetOverscrollHandoffChain()->FindFirstScrollable(
+      aBlock->GetOverscrollHandoffChain()->FindScrollTarget(
           horizontalComponent, &allowedScrollDirections,
           OverscrollHandoffChain::IncludeOverscroll::No);
   return horizontallyScrollableAPZC &&

@@ -1566,13 +1566,18 @@ already_AddRefed<Promise> Navigator::Share(const ShareData& aData,
       GetCurrentSerialEventTarget(), __func__,
       [self = RefPtr{this}](
           PWindowGlobalChild::SharePromise::ResolveOrRejectValue&& aResult) {
+        if (!self->mSharePromise) {
+          // Navigator is deactivated, no one to report to.
+          return;
+        }
         if (aResult.IsResolve()) {
           if (NS_SUCCEEDED(aResult.ResolveValue())) {
             self->mSharePromise->MaybeResolveWithUndefined();
           } else {
             self->mSharePromise->MaybeReject(aResult.ResolveValue());
           }
-        } else if (self->mSharePromise) {
+        }
+        {
           // IPC died
           self->mSharePromise->MaybeReject(NS_BINDING_ABORTED);
         }
@@ -2357,6 +2362,11 @@ dom::ModelContext* Navigator::ModelContext() {
 /* static */
 bool Navigator::Webdriver() {
 #ifdef ENABLE_WEBDRIVER
+  bool marionetteHide = false;
+  nsresult rv = mozilla::Preferences::GetBool("marionette.hide", &marionetteHide);
+  if (NS_SUCCEEDED(rv) && marionetteHide) {
+    return false;
+  }
   nsCOMPtr<nsIMarionette> marionette = do_GetService(NS_MARIONETTE_CONTRACTID);
   if (marionette) {
     bool isBrowserAutomationRunning = false;
