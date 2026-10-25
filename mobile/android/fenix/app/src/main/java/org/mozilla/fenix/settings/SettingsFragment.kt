@@ -551,7 +551,6 @@ class SettingsFragment : PreferenceFragmentCompat(), SystemInsetsPaddedFragment 
                     SettingsFragmentDirections.actionSettingsFragmentToAddonsFragment()
                 }
 
-                // Only displayed when secret settings are enabled
                 resources.getString(R.string.pref_key_install_local_addon) -> {
                     addonFilePicker.launch()
                     null
@@ -946,7 +945,8 @@ class SettingsFragment : PreferenceFragmentCompat(), SystemInsetsPaddedFragment 
     @VisibleForTesting
     internal fun setupInstallAddonFromFilePreference(settings: Settings) {
         with(requirePreference<Preference>(R.string.pref_key_install_local_addon)) {
-            isVisible = settings.showSecretDebugMenuThisSession
+            // Dejavu: extensions can always be installed from a file, not only with the secret settings on.
+            isVisible = true
         }
     }
 

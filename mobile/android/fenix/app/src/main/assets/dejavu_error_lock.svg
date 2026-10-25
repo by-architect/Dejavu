@@ -1,13 +1,8 @@
 <!-- This Source Code Form is subject to the terms of the Mozilla Public
    - License, v. 2.0. If a copy of the MPL was not distributed with this
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
-<!-- Dejavu's lock picture for error pages, made by scripts/dejavu-illustrations.py. -->
-<svg xmlns="http://www.w3.org/2000/svg" width="200" height="160" viewBox="0 0 200 160">
-<defs><linearGradient id="g" gradientUnits="userSpaceOnUse" x1="38" y1="34" x2="142" y2="138"><stop offset="0" stop-color="#FFEDC2"/><stop offset="0.55" stop-color="#FFD67A"/><stop offset="1" stop-color="#F2B84B"/></linearGradient></defs>
-<path d="M68,72 a50,50 0 1 0 100,0 a50,50 0 1 0 -100,0 z" fill="#F2B84B" fill-opacity="0.3"/>
-<path d="M38,86 a52,52 0 1 0 104,0 a52,52 0 1 0 -104,0 z" fill="url(#g)" fill-opacity="1"/>
-<path d="M84,76 v-14 a16,16 0 0 1 32,0 v14" fill="none" fill-opacity="1" stroke="#5A452A" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="1"/>
-<path d="M79,72 h42 a7,7 0 0 1 7,7 v32 a7,7 0 0 1 -7,7 h-42 a7,7 0 0 1 -7,-7 v-32 a7,7 0 0 1 7,-7 z" fill="#5A452A" fill-opacity="1"/>
-<path d="M94.5,90 a5.5,5.5 0 1 0 11.0,0 a5.5,5.5 0 1 0 -11.0,0 z" fill="#FFF8E6" fill-opacity="1"/>
-<path d="M100,93 v10" fill="none" fill-opacity="1" stroke="#FFF8E6" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="1"/>
+<!-- Dejavu's lock picture for error pages, made by scripts/make-media-illustrations.py. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 24 24">
+<path d="M16.18,12.75C16.77,11.75 18.231,11.75 18.82,12.75L22.791,19.49C23.339,20.42 22.755,21.617 21.675,21.748C20.128,21.935 18.722,22 17.5,22C15.99,22 14.598,21.901 13.344,21.75C12.252,21.618 11.656,20.428 12.21,19.488L16.18,12.75ZM17.5,19C17.086,19 16.75,19.336 16.75,19.75C16.75,20.164 17.086,20.5 17.5,20.5C17.914,20.5 18.25,20.164 18.25,19.75C18.25,19.336 17.914,19 17.5,19ZM17.5,14.5C17.086,14.5 16.75,14.836 16.75,15.25V17C16.75,17.414 17.086,17.75 17.5,17.75C17.914,17.75 18.25,17.414 18.25,17V15.25C18.25,14.836 17.914,14.5 17.5,14.5Z" fill="#15141A"/>
+<path d="M9,1C11.761,1 14,3.239 14,6V9.384C14.091,9.398 14.182,9.411 14.273,9.426C15.149,9.57 15.883,10.061 16.371,10.74C15.814,10.963 15.335,11.34 14.992,11.856C14.766,11.498 14.418,11.224 13.989,11.154C12.345,10.886 10.666,10.75 9,10.75C7.349,10.75 5.685,10.884 4.055,11.148C3.299,11.27 2.75,11.912 2.75,12.676V17.327C2.75,18.076 3.292,18.729 4.011,18.846C6.22,19.207 8.48,19.304 10.722,19.18L10.723,19.179C10.505,19.744 10.451,20.351 10.589,20.935C10.059,20.962 9.53,21 9.001,21C7.242,21 5.467,20.856 3.729,20.573C2.148,20.314 1.001,18.95 1.001,17.327V12.676C1.001,11.049 2.168,9.679 3.776,9.419C3.851,9.407 3.925,9.396 4,9.385V6C4,3.239 6.239,1 9,1ZM9,2.75C7.205,2.75 5.75,4.205 5.75,6V9.162C7.907,8.948 10.091,8.948 12.25,9.162V6C12.25,4.205 10.795,2.75 9,2.75Z" fill="#15141A"/>
 </svg>

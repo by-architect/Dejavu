@@ -93,7 +93,7 @@ class SettingsFragmentTest {
 
     @OptIn(ExperimentalCoroutinesApi::class) // advanceUntilIdle
     @Test
-    fun `Install add-on from file pref is visible if debug menu active and feature is enabled`() = runTest {
+    fun `Install add-on from file pref is always visible`() = runTest {
         val settingsFragment = SettingsFragment()
         val activity = Robolectric.buildActivity(FragmentActivity::class.java).create().get()
 
@@ -106,14 +106,10 @@ class SettingsFragmentTest {
                 settingsFragment.getPreferenceKey(R.string.pref_key_install_local_addon)
             )
 
-        settingsFragment.setupInstallAddonFromFilePreference(mockk(relaxed = true))
-        assertNotNull(preference)
-        assertFalse(preference.isVisible)
-
         val settings: Settings = mockk(relaxed = true)
-
-        every { settings.showSecretDebugMenuThisSession } returns true
+        every { settings.showSecretDebugMenuThisSession } returns false
         settingsFragment.setupInstallAddonFromFilePreference(settings)
+        assertNotNull(preference)
         assertTrue(preference.isVisible)
     }
 

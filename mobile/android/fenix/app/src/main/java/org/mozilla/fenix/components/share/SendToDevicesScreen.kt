@@ -215,7 +215,7 @@ private fun NoDevicesAvailableScreen(onLearnMoreClicked: () -> Unit) {
         Image(
             painter = painterResource(id = R.drawable.dejavu_illustration_devices),
             contentDescription = null,
-            modifier = Modifier.width(210.dp).align(Alignment.CenterHorizontally),
+            modifier = Modifier.align(Alignment.CenterHorizontally),
         )
 
         Column(verticalArrangement = Arrangement.spacedBy(8.dp)) {
@@ -308,7 +308,7 @@ private fun NoInternetConnectionScreen(onRetryClicked: () -> Unit) {
         Image(
             painter = painterResource(id = R.drawable.dejavu_illustration_offline),
             contentDescription = null,
-            modifier = Modifier.width(176.dp).align(Alignment.CenterHorizontally),
+            modifier = Modifier.align(Alignment.CenterHorizontally),
         )
         Column(
             verticalArrangement = Arrangement.spacedBy(8.dp),

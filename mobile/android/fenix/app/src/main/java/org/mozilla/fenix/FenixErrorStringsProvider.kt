@@ -29,7 +29,7 @@ class FenixErrorStringsProvider : DefaultErrorStringsProvider() {
 
             else -> defaultStrings
         }
-        // Dejavu: its own pictures, made by scripts/dejavu-illustrations.py, instead of Firefox's.
+        // Dejavu: its own pictures, made by scripts/make-media-illustrations.py, instead of Firefox's.
         return strings.copy(imageName = strings.imageName?.let { dejavuErrorPicture(errorType) })
     }
 

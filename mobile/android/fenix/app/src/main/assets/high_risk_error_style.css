@@ -27,3 +27,8 @@ p {
     }
   }
 }
+
+/* Dejavu's pictures are drawn in dark text, and this page's text is white. */
+#errorImage {
+  filter: invert(1);
+}
