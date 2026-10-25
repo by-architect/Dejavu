@@ -470,4 +470,6 @@
     <string name="dejavu_feature_bar_layouts">Поставете адресната лента отгоре или отдолу</string>
     <string name="dejavu_feature_wallpaper">Задайте тапет на работно пространство</string>
     <string name="dejavu_feature_save_page">Запазвайте страници, за да ги четете без интернет</string>
+    <string name="dejavu_recent_search_text">Изтрийте това търсене от скорошните търсения или изчистете всички.</string>
+    <string name="dejavu_recent_search_clear">Изчистване на историята на търсенията</string>
 </resources>

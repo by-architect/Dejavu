@@ -462,4 +462,6 @@
     <string name="dejavu_feature_bar_layouts">ວາງແຖບທີ່ຢູ່ໄວ້ເທິງ ຫຼື ລຸ່ມ</string>
     <string name="dejavu_feature_wallpaper">ໃສ່ພາບພື້ນຫຼັງໃຫ້ພື້ນທີ່ເຮັດວຽກ</string>
     <string name="dejavu_feature_save_page">ບັນທຶກໜ້າເພື່ອອ່ານໂດຍບໍ່ມີອິນເຕີເນັດ</string>
+    <string name="dejavu_recent_search_text">ລຶບການຄົ້ນຫານີ້ອອກຈາກການຄົ້ນຫາຫຼ້າສຸດຂອງທ່ານ ຫຼື ລຶບທັງໝົດ.</string>
+    <string name="dejavu_recent_search_clear">ລຶບປະຫວັດການຄົ້ນຫາ</string>
 </resources>

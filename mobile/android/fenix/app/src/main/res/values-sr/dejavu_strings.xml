@@ -478,4 +478,6 @@
     <string name="dejavu_feature_bar_layouts">Поставите адресну траку на врх или на дно</string>
     <string name="dejavu_feature_wallpaper">Дајте радном простору позадину</string>
     <string name="dejavu_feature_save_page">Сачувајте странице за читање без интернета</string>
+    <string name="dejavu_recent_search_text">Обришите ову претрагу из недавних претрага или обришите све.</string>
+    <string name="dejavu_recent_search_clear">Обриши историју претраге</string>
 </resources>

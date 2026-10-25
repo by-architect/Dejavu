@@ -470,4 +470,6 @@
     <string name="dejavu_feature_bar_layouts">Адресқәа рпанель хыхь ма ҵаҟа аҭыԥ аҟны иҭаԥ</string>
     <string name="dejavu_feature_wallpaper">Аҭыԥ аҭӡамц иаҭатәуп</string>
     <string name="dejavu_feature_save_page">Адаҟьақәа интернет алагала аҩра аҟынтә ахәаԥшразы иасохранитәуп</string>
+    <string name="dejavu_recent_search_text">Ари ахцәажәара ианыхтәуп аҿыхра аҟынтә, ма зегьы ианыхтәуп.</string>
+    <string name="dejavu_recent_search_clear">Аҿаԥшра аҭоурых аныхра</string>
 </resources>

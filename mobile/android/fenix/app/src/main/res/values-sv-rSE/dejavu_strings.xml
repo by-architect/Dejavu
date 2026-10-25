@@ -470,4 +470,6 @@
     <string name="dejavu_feature_bar_layouts">Placera adressfältet överst eller nederst</string>
     <string name="dejavu_feature_wallpaper">Ge en arbetsyta en bakgrundsbild</string>
     <string name="dejavu_feature_save_page">Spara sidor för att läsa utan internet</string>
+    <string name="dejavu_recent_search_text">Ta bort den här sökningen från dina senaste sökningar, eller rensa alla.</string>
+    <string name="dejavu_recent_search_clear">Rensa sökhistorik</string>
 </resources>

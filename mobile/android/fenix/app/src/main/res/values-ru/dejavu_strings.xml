@@ -486,4 +486,6 @@
     <string name="dejavu_feature_bar_layouts">Поместите адресную строку сверху или снизу</string>
     <string name="dejavu_feature_wallpaper">Задайте обои для рабочего пространства</string>
     <string name="dejavu_feature_save_page">Сохраняйте страницы, чтобы читать без интернета</string>
+    <string name="dejavu_recent_search_text">Удалите этот запрос из недавних или очистите все.</string>
+    <string name="dejavu_recent_search_clear">Очистить историю поиска</string>
 </resources>

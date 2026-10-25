@@ -470,4 +470,6 @@
     <string name="dejavu_feature_bar_layouts">Metu la adresan strion supre aŭ malsupre</string>
     <string name="dejavu_feature_wallpaper">Donu ekranfonon al laborspaco</string>
     <string name="dejavu_feature_save_page">Konservu paĝojn por legi sen interreto</string>
+    <string name="dejavu_recent_search_text">Forigu ĉi tiun serĉon el la ĵusaj serĉoj, aŭ forigu ĉiujn.</string>
+    <string name="dejavu_recent_search_clear">Forigi serĉhistorion</string>
 </resources>

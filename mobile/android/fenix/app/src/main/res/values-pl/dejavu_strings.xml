@@ -486,4 +486,6 @@
     <string name="dejavu_feature_bar_layouts">Umieść pasek adresu na górze lub na dole</string>
     <string name="dejavu_feature_wallpaper">Ustaw tapetę dla obszaru roboczego</string>
     <string name="dejavu_feature_save_page">Zapisuj strony, aby czytać je bez internetu</string>
+    <string name="dejavu_recent_search_text">Usuń to wyszukiwanie z ostatnich wyszukiwań lub wyczyść wszystkie.</string>
+    <string name="dejavu_recent_search_clear">Wyczyść historię wyszukiwania</string>
 </resources>

@@ -8,6 +8,7 @@ import android.graphics.Bitmap
 import android.graphics.drawable.Drawable
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.clickable
+import androidx.compose.foundation.combinedClickable
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.IntrinsicSize
@@ -57,7 +58,10 @@ internal fun Suggestion(
 ) {
     Row(
         modifier =
-            Modifier.clickable { onSuggestionClicked() }
+            Modifier.combinedClickable(
+                    onLongClick = suggestion.onSuggestionLongClicked,
+                    onClick = onSuggestionClicked,
+                )
                 .defaultMinSize(minHeight = AcornTheme.layout.space.static600)
                 .testTag(AwesomeBarTestTags.SUGGESTION)
                 .padding(start = AcornTheme.layout.space.dynamic200, end = AcornTheme.layout.space.dynamic50)

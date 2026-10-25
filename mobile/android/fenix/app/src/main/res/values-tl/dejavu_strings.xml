@@ -470,4 +470,6 @@
     <string name="dejavu_feature_bar_layouts">Ilagay ang address bar sa itaas o sa ibaba</string>
     <string name="dejavu_feature_wallpaper">Magbigay ng wallpaper sa workspace</string>
     <string name="dejavu_feature_save_page">I-save ang mga pahina para mabasa nang walang internet</string>
+    <string name="dejavu_recent_search_text">Burahin ang hinahanap na ito sa mga hinahanap kamakailan, o i-clear ang lahat.</string>
+    <string name="dejavu_recent_search_clear">I-clear ang kasaysayan ng paghahanap</string>
 </resources>

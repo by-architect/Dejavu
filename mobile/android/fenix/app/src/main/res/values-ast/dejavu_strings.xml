@@ -470,4 +470,6 @@
     <string name="dejavu_feature_bar_layouts">Pon la barra de direiciones arriba o abaxo</string>
     <string name="dejavu_feature_wallpaper">Da un fondu de pantalla a un espaciu de trabayu</string>
     <string name="dejavu_feature_save_page">Guarda páxines pa lleelo ensin internet</string>
+    <string name="dejavu_recent_search_text">Desanicia esta gueta de les guetes recientes o desanicia toles guetes.</string>
+    <string name="dejavu_recent_search_clear">Desaniciar l\'historial de guetes</string>
 </resources>

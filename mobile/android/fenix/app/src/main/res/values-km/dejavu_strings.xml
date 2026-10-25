@@ -462,4 +462,6 @@
     <string name="dejavu_feature_bar_layouts">ដាក់របារអាសយដ្ឋាននៅខាងលើ ឬខាងក្រោម</string>
     <string name="dejavu_feature_wallpaper">ដាក់ផ្ទាំងរូបភាពឱ្យចន្លោះការងារ</string>
     <string name="dejavu_feature_save_page">រក្សាទុកទំព័រដើម្បីអានដោយគ្មានអ៊ីនធឺណិត</string>
+    <string name="dejavu_recent_search_text">លុបការស្វែងរកនេះចេញពីការស្វែងរកថ្មីៗរបស់អ្នក ឬសម្អាតទាំងអស់។</string>
+    <string name="dejavu_recent_search_clear">សម្អាតប្រវត្តិស្វែងរក</string>
 </resources>

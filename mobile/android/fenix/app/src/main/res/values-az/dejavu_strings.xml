@@ -470,4 +470,6 @@
     <string name="dejavu_feature_bar_layouts">Ünvan sətrini yuxarıda və ya aşağıda yerləşdirin</string>
     <string name="dejavu_feature_wallpaper">İş sahəsinə divar kağızı verin</string>
     <string name="dejavu_feature_save_page">Səhifələri internetsiz oxumaq üçün saxlayın</string>
+    <string name="dejavu_recent_search_text">Bu axtarışı son axtarışlardan silin və ya hamısını təmizləyin.</string>
+    <string name="dejavu_recent_search_clear">Axtarış tarixçəsini təmizlə</string>
 </resources>

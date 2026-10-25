@@ -502,4 +502,6 @@
     <string name="dejavu_feature_bar_layouts">Rhoi\'r bar cyfeiriad ar y brig neu\'r gwaelod</string>
     <string name="dejavu_feature_wallpaper">Rhoi papur wal i weithle</string>
     <string name="dejavu_feature_save_page">Cadw tudalennau i\'w darllen heb y rhyngrwyd</string>
+    <string name="dejavu_recent_search_text">Dileu\'r chwiliad hwn o\'ch chwiliadau diweddar, neu ddileu pob un.</string>
+    <string name="dejavu_recent_search_clear">Dileu hanes chwilio</string>
 </resources>

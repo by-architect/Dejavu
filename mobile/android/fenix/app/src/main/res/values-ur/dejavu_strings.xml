@@ -470,4 +470,6 @@
     <string name="dejavu_feature_bar_layouts">ایڈریس بار کو اوپر یا نیچے رکھیں</string>
     <string name="dejavu_feature_wallpaper">ورک اسپیس کو وال پیپر دیں</string>
     <string name="dejavu_feature_save_page">انٹرنیٹ کے بغیر پڑھنے کے لیے صفحات محفوظ کریں</string>
+    <string name="dejavu_recent_search_text">اس تلاش کو حالیہ تلاشوں سے مٹائیں، یا تمام کو صاف کریں۔</string>
+    <string name="dejavu_recent_search_clear">تلاش کی سابقات مٹائیں</string>
 </resources>

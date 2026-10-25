@@ -462,4 +462,6 @@
     <string name="dejavu_feature_bar_layouts">アドレスバーを画面の上部または下部に配置</string>
     <string name="dejavu_feature_wallpaper">ワークスペースに壁紙を設定</string>
     <string name="dejavu_feature_save_page">ページを保存してオフラインで読む</string>
+    <string name="dejavu_recent_search_text">この検索を最近の検索から削除するか、すべて消去します。</string>
+    <string name="dejavu_recent_search_clear">検索履歴を消去</string>
 </resources>

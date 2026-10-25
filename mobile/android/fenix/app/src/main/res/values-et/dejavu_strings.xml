@@ -470,4 +470,6 @@
     <string name="dejavu_feature_bar_layouts">Pane aadressiriba üles või alla</string>
     <string name="dejavu_feature_wallpaper">Anna tööruumile taustapilt</string>
     <string name="dejavu_feature_save_page">Salvesta lehed, et neid ilma internetita lugeda</string>
+    <string name="dejavu_recent_search_text">Kustuta see otsing hiljutiste otsingute hulgast või tühjenda need kõik.</string>
+    <string name="dejavu_recent_search_clear">Kustuta otsinguajalugu</string>
 </resources>

@@ -470,4 +470,6 @@
     <string name="dejavu_feature_bar_layouts">Set de adresbalke boppe-oan of ûnderoan</string>
     <string name="dejavu_feature_wallpaper">Jou in wurkromte in eftergrûn</string>
     <string name="dejavu_feature_save_page">Bewarje siden om sûnder ynternet te lêzen</string>
+    <string name="dejavu_recent_search_text">Wiskje dizze sykopdracht út jo resinte sykopdrachten, of wiskje se allegear.</string>
+    <string name="dejavu_recent_search_clear">Sykskiednis wiskje</string>
 </resources>

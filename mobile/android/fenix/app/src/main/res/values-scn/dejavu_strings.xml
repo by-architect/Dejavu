@@ -470,4 +470,6 @@
     <string name="dejavu_feature_bar_layouts">Metti la barra di l\'indirizzu susu o iusu</string>
     <string name="dejavu_feature_wallpaper">Duna un funnu a un spaziu di travagghiu</string>
     <string name="dejavu_feature_save_page">Sarva i pàggini pi leggiri senza internet</string>
+    <string name="dejavu_recent_search_text">Scancella stu risciutu di li risciduti ricenti, o scancella tutti quanti.</string>
+    <string name="dejavu_recent_search_clear">Scancella la crunuluggìa dî risciduti</string>
 </resources>

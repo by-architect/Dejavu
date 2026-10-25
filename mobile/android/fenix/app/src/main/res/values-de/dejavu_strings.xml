@@ -470,4 +470,6 @@
     <string name="dejavu_feature_bar_layouts">Adressleiste oben oder unten platzieren</string>
     <string name="dejavu_feature_wallpaper">Einem Arbeitsbereich ein Hintergrundbild geben</string>
     <string name="dejavu_feature_save_page">Seiten speichern und ohne Internet lesen</string>
+    <string name="dejavu_recent_search_text">Diese Suchanfrage aus den letzten Suchanfragen löschen oder alle löschen.</string>
+    <string name="dejavu_recent_search_clear">Suchverlauf löschen</string>
 </resources>

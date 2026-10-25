@@ -470,4 +470,6 @@
     <string name="dejavu_feature_bar_layouts">მისამართების ველი განათავსეთ ზემოთ ან ქვემოთ</string>
     <string name="dejavu_feature_wallpaper">მიეცით სივრცეს ფონი</string>
     <string name="dejavu_feature_save_page">შეინახეთ გვერდები ინტერნეტის გარეშე წასაკითხად</string>
+    <string name="dejavu_recent_search_text">წაშალეთ ეს ძიება ბოლო ძიებებიდან ან გაასუფთავეთ ყველა.</string>
+    <string name="dejavu_recent_search_clear">ძიების ისტორიის გასუფთავება</string>
 </resources>

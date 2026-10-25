@@ -470,4 +470,6 @@
     <string name="dejavu_feature_bar_layouts">Manzil panelini yuqoriga yoki pastga joylang</string>
     <string name="dejavu_feature_wallpaper">Ish maydoniga fon rasmi qo\'ying</string>
     <string name="dejavu_feature_save_page">Sahifalarni internetsiz o\'qish uchun saqlang</string>
+    <string name="dejavu_recent_search_text">Bu qidiruvni soʻnggi qidiruvlardan oʻchiring yoki barchasini tozalang.</string>
+    <string name="dejavu_recent_search_clear">Qidiruv tarixini oʻchirish</string>
 </resources>

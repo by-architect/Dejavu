@@ -470,4 +470,6 @@
     <string name="dejavu_feature_bar_layouts">Pone le barra de adresse in alto o in basso</string>
     <string name="dejavu_feature_wallpaper">Da un fundo a un spatio de labor</string>
     <string name="dejavu_feature_save_page">Salva paginas pro leger los sin internet</string>
+    <string name="dejavu_recent_search_text">Dele iste recerca de tu recercas recente, o rade los omnes.</string>
+    <string name="dejavu_recent_search_clear">Rader le chronologia de recercas</string>
 </resources>

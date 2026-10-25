@@ -502,4 +502,6 @@
     <string name="dejavu_feature_bar_layouts">ضع شريط العنوان في الأعلى أو الأسفل</string>
     <string name="dejavu_feature_wallpaper">امنح مساحة العمل خلفية</string>
     <string name="dejavu_feature_save_page">احفظ الصفحات لقراءتها بدون إنترنت</string>
+    <string name="dejavu_recent_search_text">احذف عملية البحث هذه من عمليات البحث الأخيرة، أو امسحها كلها.</string>
+    <string name="dejavu_recent_search_clear">امسح سجل البحث</string>
 </resources>

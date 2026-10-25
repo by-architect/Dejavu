@@ -470,4 +470,6 @@
     <string name="dejavu_feature_bar_layouts">Adres çubuğunu üste veya alta yerleştirin</string>
     <string name="dejavu_feature_wallpaper">Çalışma alanına duvar kağıdı verin</string>
     <string name="dejavu_feature_save_page">Sayfaları internetsiz okumak için kaydedin</string>
+    <string name="dejavu_recent_search_text">Bu aramayı son aramalarınızdan silin veya tümünü temizleyin.</string>
+    <string name="dejavu_recent_search_clear">Arama geçmişini temizle</string>
 </resources>

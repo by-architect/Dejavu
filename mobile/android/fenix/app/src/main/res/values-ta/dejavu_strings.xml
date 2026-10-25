@@ -470,4 +470,6 @@
     <string name="dejavu_feature_bar_layouts">முகவரிப் பட்டையை மேலே அல்லது கீழே வைக்கவும்</string>
     <string name="dejavu_feature_wallpaper">பணியிடத்திற்கு சுவர்ப்படம் அமைக்கவும்</string>
     <string name="dejavu_feature_save_page">இணையம் இல்லாமல் படிக்க பக்கங்களைச் சேமிக்கவும்</string>
+    <string name="dejavu_recent_search_text">இந்தத் தேடலை சமீபத்திய தேடல்களிலிருந்து நீக்கவும், அல்லது அனைத்தையும் அழிக்கவும்.</string>
+    <string name="dejavu_recent_search_clear">தேடல் வரலாற்றை அழி</string>
 </resources>

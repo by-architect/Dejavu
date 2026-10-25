@@ -486,4 +486,6 @@
     <string name="dejavu_feature_bar_layouts">Розмістіть панель адреси вгорі або внизу</string>
     <string name="dejavu_feature_wallpaper">Встановіть шпалери для робочого простору</string>
     <string name="dejavu_feature_save_page">Зберігайте сторінки, щоб читати без інтернету</string>
+    <string name="dejavu_recent_search_text">Видаліть цей пошук із недавніх пошуків або очистьте всі.</string>
+    <string name="dejavu_recent_search_clear">Очистити історію пошуку</string>
 </resources>

@@ -19,6 +19,7 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.DisposableEffect
 import androidx.compose.runtime.LaunchedEffect
+import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.derivedStateOf
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.remember
@@ -60,6 +61,8 @@ import org.mozilla.fenix.components.Components
 import org.mozilla.fenix.components.appstate.AppAction.SearchAction.SearchEnded
 import org.mozilla.fenix.components.metrics.MetricsUtils
 import org.mozilla.fenix.dejavu.browser.DejavuToolbar
+import org.mozilla.fenix.dejavu.browser.RecentSearchMenu
+import org.mozilla.fenix.dejavu.browser.RecentSearchMenuDialog
 import org.mozilla.fenix.dejavu.browser.searchScreenBackground
 import org.mozilla.fenix.ext.components
 import org.mozilla.fenix.ext.getRootView
@@ -298,7 +301,9 @@ class AwesomeBarComposable(
                             },
                             onScroll = { view.hideKeyboard() },
                             profiler = components.core.engine.profiler,
+                            refreshKey = RecentSearchMenu.changes.collectAsState().value,
                         )
+                        RecentSearchMenuDialog()
                     }
                 }
             } else if (showScrimWhenNoSuggestions) {

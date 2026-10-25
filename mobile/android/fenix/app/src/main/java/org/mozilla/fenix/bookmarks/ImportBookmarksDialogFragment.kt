@@ -4,11 +4,31 @@
 
 package org.mozilla.fenix.bookmarks
 
+import android.graphics.Color
+import android.graphics.drawable.ColorDrawable
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.view.WindowManager
 import androidx.annotation.VisibleForTesting
+import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.layout.width
+import androidx.compose.material3.CircularProgressIndicator
+import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.Text
+import androidx.compose.runtime.Composable
+import androidx.compose.runtime.CompositionLocalProvider
+import androidx.compose.runtime.LaunchedEffect
+import androidx.compose.runtime.collectAsState
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.remember
+import androidx.compose.ui.Alignment
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.unit.dp
 import androidx.fragment.app.DialogFragment
 import androidx.fragment.compose.content
 import androidx.lifecycle.Lifecycle
@@ -19,6 +39,7 @@ import mozilla.appservices.places.BookmarkRoot
 import mozilla.components.concept.bookmark.parser.BookmarksFileParser
 import mozilla.components.concept.bookmarks.file.BookmarksFileImporter
 import mozilla.components.feature.importer.BookmarkImporter
+import mozilla.components.feature.importer.R as importerR
 import mozilla.components.feature.importer.ImporterEvent
 import mozilla.components.lib.bookmark.parser.jsoup.jsoupParser
 import mozilla.components.lib.bookmarks.file.htmlImporter
@@ -26,14 +47,44 @@ import org.mozilla.fenix.R
 import org.mozilla.fenix.bookmarks.importer.FenixBookmarkImporterError
 import org.mozilla.fenix.bookmarks.importer.FenixImporterEvent
 import org.mozilla.fenix.bookmarks.importer.toFenixError
+import org.mozilla.fenix.dejavu.settings.workspaceRepository
+import org.mozilla.fenix.dejavu.ui.DejavuDialog
+import org.mozilla.fenix.dejavu.ui.DejavuDialogButton
+import org.mozilla.fenix.dejavu.ui.LocalPopupTheme
 import org.mozilla.fenix.ext.requireComponents
+import org.mozilla.fenix.theme.FirefoxTheme
 
 internal class ImportBookmarksDialogFragment : DialogFragment() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setStyle(STYLE_NO_FRAME, 0)
+    }
+
+    override fun onStart() {
+        super.onStart()
+        // The fragment's own window stays out of sight: the importer shows the file picker and then its own dialog.
+        dialog?.window?.apply {
+            setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
+            clearFlags(WindowManager.LayoutParams.FLAG_DIM_BEHIND)
+        }
+    }
+
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?,
     ): View = content {
+        FirefoxTheme {
+            val repository = remember { workspaceRepository() }
+            val workspaces by repository.state.collectAsState()
+            CompositionLocalProvider(LocalPopupTheme provides workspaces.activeWorkspace?.theme) {
+                ImportBookmarks()
+            }
+        }
+    }
+
+    @Composable
+    private fun ImportBookmarks() {
         BookmarkImporter(
             importer =
                 BookmarksFileImporter.htmlImporter(
@@ -53,6 +104,7 @@ internal class ImportBookmarksDialogFragment : DialogFragment() {
                 )
                 dismissWhenFinished(event, lifecycle) { dismiss() }
             },
+            loadingDialog = { started, cancel -> ImportingDialog(onImportStarted = started, onCancel = cancel) },
         )
     }
 
@@ -80,6 +132,32 @@ internal class ImportBookmarksDialogFragment : DialogFragment() {
                 RESULT_CANCELLED -> FenixImporterEvent.Canceled
                 else -> null
             }
+    }
+}
+
+/** The bookmarks being imported, in Dejavu's look; it starts the import once it shows. */
+@Composable
+private fun ImportingDialog(onImportStarted: () -> Unit, onCancel: () -> Unit) {
+    LaunchedEffect(Unit) { onImportStarted() }
+    DejavuDialog(
+        title = stringResource(importerR.string.mozac_feature_importer_dialog_title),
+        onDismissRequest = {},
+        buttons = {
+            DejavuDialogButton(
+                text = stringResource(importerR.string.mozac_feature_importer_dialog_cancel),
+                onClick = onCancel,
+            )
+        },
+    ) {
+        Row(verticalAlignment = Alignment.CenterVertically) {
+            CircularProgressIndicator(
+                color = MaterialTheme.colorScheme.primary,
+                strokeWidth = 3.dp,
+                modifier = Modifier.size(28.dp),
+            )
+            Spacer(Modifier.width(16.dp))
+            Text(text = stringResource(importerR.string.mozac_feature_importer_dialog_description))
+        }
     }
 }
 

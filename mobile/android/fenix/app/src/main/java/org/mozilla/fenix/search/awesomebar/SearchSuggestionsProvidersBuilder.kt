@@ -40,6 +40,7 @@ import org.mozilla.fenix.browser.browsingmode.BrowsingModeManager
 import org.mozilla.fenix.components.Components
 import org.mozilla.fenix.components.Core.Companion.METADATA_HISTORY_SUGGESTION_LIMIT
 import org.mozilla.fenix.components.Core.Companion.METADATA_SHORTCUT_SUGGESTION_LIMIT
+import org.mozilla.fenix.dejavu.browser.RecentSearchMenu
 import org.mozilla.fenix.ext.containsQueryParameters
 import org.mozilla.fenix.search.SearchEngineSource
 
@@ -382,6 +383,7 @@ class SearchSuggestionsProvidersBuilder(
             icon = suggestionIconProvider.getHistoryIconBitmap(),
             engine = engineForSpeculativeConnects,
             suggestionsHeader = suggestionsStringsProvider.forRecentSearches(),
+            onSuggestionLongClicked = RecentSearchMenu::open,
         )
     }
 

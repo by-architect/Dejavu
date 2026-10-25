@@ -486,4 +486,6 @@
     <string name="dejavu_feature_bar_layouts">Adreso lauką dėkite viršuje arba apačioje</string>
     <string name="dejavu_feature_wallpaper">Suteikite darbo erdvei foną</string>
     <string name="dejavu_feature_save_page">Įrašykite tinklalapius, kad skaitytumėte be interneto</string>
+    <string name="dejavu_recent_search_text">Pašalinkite šią paiešką iš neseniai ieškotų arba išvalykite visas.</string>
+    <string name="dejavu_recent_search_clear">Išvalyti paieškų žurnalą</string>
 </resources>

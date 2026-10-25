@@ -470,4 +470,6 @@
     <string name="dejavu_feature_bar_layouts">ලිපින තීරුව ඉහළ හෝ පහළ තබන්න</string>
     <string name="dejavu_feature_wallpaper">වැඩබිමකට බිතුපතක් දෙන්න</string>
     <string name="dejavu_feature_save_page">අන්තර්ජාලය නැතිව කියවීමට පිටු සුරකින්න</string>
+    <string name="dejavu_recent_search_text">මෙම සෙවුම මෑත සෙවුම් වලින් මකන්න, නැතහොත් සියල්ල හිස් කරන්න.</string>
+    <string name="dejavu_recent_search_clear">සෙවුම් ඉතිහාසය මකන්න</string>
 </resources>

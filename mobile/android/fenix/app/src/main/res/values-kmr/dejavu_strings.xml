@@ -470,4 +470,6 @@
     <string name="dejavu_feature_bar_layouts">Darika navnîşanan li jor an jêr bi cih bike</string>
     <string name="dejavu_feature_wallpaper">Wêneyê dîwêr bide qadekê</string>
     <string name="dejavu_feature_save_page">Rûpelan tomar bike da ku bê înternetê bixwînî</string>
+    <string name="dejavu_recent_search_text">Ev lêgerîn ji lêgerînên xwe yên borî jê bibe an jî hemûyan paqij bike.</string>
+    <string name="dejavu_recent_search_clear">Raboriya lêgerînê paqij bike</string>
 </resources>

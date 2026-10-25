@@ -16,11 +16,15 @@ import mozilla.components.concept.bookmarks.file.BookmarksFileImporter
  * internal [ImporterStore].
  *
  * @param onEventReceived Invoked when the import flow has received an import event.
+ * @param loadingDialog The dialog shown while the import runs, given what [ImporterDialog] is given.
  */
 @Composable
 fun BookmarkImporter(
     importer: BookmarksFileImporter,
     onEventReceived: (ImporterEvent) -> Unit,
+    loadingDialog: @Composable (onImportStarted: () -> Unit, onCancel: () -> Unit) -> Unit = { started, cancel ->
+        ImporterDialog(onImportStarted = started, onCancel = cancel)
+    },
 ) {
     val viewModel: ImporterViewModel = viewModel(factory = ImporterViewModel.factory(importer))
     val state by viewModel.store.stateFlow.collectAsState(initial = viewModel.store.state)
@@ -43,12 +47,12 @@ fun BookmarkImporter(
             )
         }
         ImporterState.Loading -> {
-            ImporterDialog(
-                onImportStarted = {
+            loadingDialog(
+                {
                     viewModel.store.dispatch(ImporterAction.ImportStarted)
                     onEventReceived(ImporterEvent.Started)
                 },
-                onCancel = {
+                {
                     viewModel.store.dispatch(ImporterAction.ImportCancelled)
                 },
             )

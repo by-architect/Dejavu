@@ -470,4 +470,6 @@
     <string name="dejavu_feature_bar_layouts">Mánzil qatarın joqarıǵa yamasa tómenge qoyıń</string>
     <string name="dejavu_feature_wallpaper">Jumıs maydanına fon súwreti beriń</string>
     <string name="dejavu_feature_save_page">Betlerdi internetsiz oqıw ushın saqlań</string>
+    <string name="dejavu_recent_search_text">Bul izlewdi sońǵı izlewlerińizden óshiriń yamasa barlıǵın tazalań.</string>
+    <string name="dejavu_recent_search_clear">Izlew tariyxın tazalaw</string>
 </resources>

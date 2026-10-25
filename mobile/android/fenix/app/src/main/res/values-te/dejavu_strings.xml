@@ -470,4 +470,6 @@
     <string name="dejavu_feature_bar_layouts">చిరునామా పట్టీని పైన లేదా కింద ఉంచండి</string>
     <string name="dejavu_feature_wallpaper">కార్యస్థలానికి వాల్‌పేపర్ ఇవ్వండి</string>
     <string name="dejavu_feature_save_page">ఇంటర్నెట్ లేకుండా చదవడానికి పేజీలను భద్రపరచండి</string>
+    <string name="dejavu_recent_search_text">ఈ శోధనను ఇటీవలి శోధనల నుండి తొలగించండి, లేదా అన్నింటినీ తొలగించండి.</string>
+    <string name="dejavu_recent_search_clear">శోధన చరిత్రను తొలగించు</string>
 </resources>

@@ -462,4 +462,6 @@
     <string name="dejavu_feature_bar_layouts">Selapkeun bar alamat di luhur atawa handap</string>
     <string name="dejavu_feature_wallpaper">Pasihan latar pikeun rohangan</string>
     <string name="dejavu_feature_save_page">Simpen kaca pikeun dibaca tanpa internét</string>
+    <string name="dejavu_recent_search_text">Hapus pamilarian ieu tina pamilarian panungtungan, atawa hapus sakabéhna.</string>
+    <string name="dejavu_recent_search_clear">Hapus jujutan pamilarian</string>
 </resources>

@@ -470,4 +470,6 @@
     <string name="dejavu_feature_bar_layouts">Mette a barra di indirissi in çimma o in fondo</string>
     <string name="dejavu_feature_wallpaper">Dà un sfondo a un spaçio de travaggio</string>
     <string name="dejavu_feature_save_page">Sarva e pagine pe lêze sensa Internet</string>
+    <string name="dejavu_recent_search_text">Scancella sta riçerca da-e teu riçerche recenti, ò scancellile tutte.</string>
+    <string name="dejavu_recent_search_clear">Scancella a stöia de riçerche</string>
 </resources>

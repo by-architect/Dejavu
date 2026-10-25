@@ -486,4 +486,6 @@
     <string name="dejavu_feature_bar_layouts">Змесціце адрасны радок уверсе або ўнізе</string>
     <string name="dejavu_feature_wallpaper">Дайце прасторы шпалеры</string>
     <string name="dejavu_feature_save_page">Захоўвайце старонкі, каб чытаць без інтэрнэту</string>
+    <string name="dejavu_recent_search_text">Выдаліце гэты пошук са спісу нядаўніх пошукаў або ачысціце ўсе.</string>
+    <string name="dejavu_recent_search_clear">Ачысціць гісторыю пошуку</string>
 </resources>

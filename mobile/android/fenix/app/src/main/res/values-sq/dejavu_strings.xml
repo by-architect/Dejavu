@@ -470,4 +470,6 @@
     <string name="dejavu_feature_bar_layouts">Vendoseni shtyllën e adresave sipër ose poshtë</string>
     <string name="dejavu_feature_wallpaper">Jepini një sfond një hapësire pune</string>
     <string name="dejavu_feature_save_page">Ruani faqe për t\'i lexuar pa internet</string>
+    <string name="dejavu_recent_search_text">Fshije këtë kërkim nga kërkimet e fundit, ose pastroji të gjitha.</string>
+    <string name="dejavu_recent_search_clear">Fshije historikun e kërkimeve</string>
 </resources>

@@ -470,4 +470,6 @@
     <string name="dejavu_feature_bar_layouts">Адрестік жолақты жоғарыға немесе төменге қойыңыз</string>
     <string name="dejavu_feature_wallpaper">Жұмыс кеңістігіне тұсқағаз беріңіз</string>
     <string name="dejavu_feature_save_page">Беттерді интернетсіз оқу үшін сақтаңыз</string>
+    <string name="dejavu_recent_search_text">Бұл іздеуді соңғы іздеулерден өшіріңіз немесе барлығын тазалаңыз.</string>
+    <string name="dejavu_recent_search_clear">Іздеу тарихын тазалау</string>
 </resources>

@@ -470,4 +470,6 @@
     <string name="dejavu_feature_bar_layouts">Адрес юлын өскә яки аска куегыз</string>
     <string name="dejavu_feature_wallpaper">Эш өлкәсенә фон рәсеме куегыз</string>
     <string name="dejavu_feature_save_page">Битләрне интернетсыз укыр өчен саклагыз</string>
+    <string name="dejavu_recent_search_text">Бу эзләүне соңгы эзләүләрдән бетерегез яки барысын да чистартыгыз.</string>
+    <string name="dejavu_recent_search_clear">Эзләү тарихын бетерү</string>
 </resources>

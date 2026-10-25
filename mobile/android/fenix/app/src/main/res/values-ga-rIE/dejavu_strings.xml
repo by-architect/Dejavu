@@ -494,4 +494,6 @@
     <string name="dejavu_feature_bar_layouts">Cuir an barra seoltaí ag an mbarr nó ag an mbun</string>
     <string name="dejavu_feature_wallpaper">Tabhair cúlbhrat do spás oibre</string>
     <string name="dejavu_feature_save_page">Sábháil leathanaigh le léamh gan idirlíon</string>
+    <string name="dejavu_recent_search_text">Scrios an cuardach seo de do chuardaigh le déanaí, nó glan iad uile.</string>
+    <string name="dejavu_recent_search_clear">Glan stair cuardaigh</string>
 </resources>

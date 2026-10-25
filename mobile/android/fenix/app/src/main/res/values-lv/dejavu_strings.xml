@@ -478,4 +478,6 @@
     <string name="dejavu_feature_bar_layouts">Novietojiet adreses joslu augšā vai apakšā</string>
     <string name="dejavu_feature_wallpaper">Iestatiet darbvietai fona attēlu</string>
     <string name="dejavu_feature_save_page">Saglabājiet lapas, lai lasītu bez interneta</string>
+    <string name="dejavu_recent_search_text">Dzēst šo meklēšanu no nesenajiem meklējumiem vai notīrīt tos visus.</string>
+    <string name="dejavu_recent_search_clear">Notīrīt meklēšanas vēsturi</string>
 </resources>

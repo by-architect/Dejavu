@@ -470,4 +470,6 @@
     <string name="dejavu_feature_bar_layouts">شریتی ناونیشان لە سەرەوە یان خوارەوە دابنێ</string>
     <string name="dejavu_feature_wallpaper">وێنەی پاشبنەما بە فەزایەک بدە</string>
     <string name="dejavu_feature_save_page">پەڕەکان پاشەکەوت بکە بۆ خوێندنەوە بێ ئینتەرنێت</string>
+    <string name="dejavu_recent_search_text">ئەم گەڕانە لە گەڕانە تازەکان بسڕەوە، یان هەموویان بسڕەوە.</string>
+    <string name="dejavu_recent_search_clear">مێژووی گەڕان بسڕەوە</string>
 </resources>

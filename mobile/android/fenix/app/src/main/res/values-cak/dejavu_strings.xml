@@ -470,4 +470,6 @@
     <string name="dejavu_feature_bar_layouts">Tab\'än ri ochochib\'äl ajsik chi ruwi\' o chi kaj</string>
     <string name="dejavu_feature_wallpaper">Tya\' rupam ruwäch chi jun samajib\'äl</string>
     <string name="dejavu_feature_save_page">Tiyak taq ruxaq richin nitz\'ët mawi k\'amab\'ey</string>
+    <string name="dejavu_recent_search_text">Tiyuj re kanoxïk re\' chi kech ri nimakol kekanöx, o tiyuj ronojel.</string>
+    <string name="dejavu_recent_search_clear">Tiyuj natab\'äl chi kanoxïk</string>
 </resources>

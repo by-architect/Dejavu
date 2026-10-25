@@ -462,4 +462,6 @@
     <string name="dejavu_feature_bar_layouts">Pasang bar alamat di duur utawi di beten</string>
     <string name="dejavu_feature_wallpaper">Baang genah gambar latar</string>
     <string name="dejavu_feature_save_page">Simpen halaman anggen baca tanpa internet</string>
+    <string name="dejavu_recent_search_text">Hapus pencarian puniki saking pencarian sané anyar, utawi hapus sami.</string>
+    <string name="dejavu_recent_search_clear">Hapus riwayat pencarian</string>
 </resources>

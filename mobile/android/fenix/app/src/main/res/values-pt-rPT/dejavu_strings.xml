@@ -478,4 +478,6 @@
     <string name="dejavu_feature_bar_layouts">Coloca a barra de endereço em cima ou em baixo</string>
     <string name="dejavu_feature_wallpaper">Dá um fundo a um espaço de trabalho</string>
     <string name="dejavu_feature_save_page">Guarda páginas para ler sem internet</string>
+    <string name="dejavu_recent_search_text">Elimine esta pesquisa das suas pesquisas recentes ou limpe todas.</string>
+    <string name="dejavu_recent_search_clear">Limpar histórico de pesquisa</string>
 </resources>

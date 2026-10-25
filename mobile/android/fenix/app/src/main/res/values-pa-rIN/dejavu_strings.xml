@@ -470,4 +470,6 @@
     <string name="dejavu_feature_bar_layouts">ਪਤਾ ਪੱਟੀ ਨੂੰ ਉੱਪਰ ਜਾਂ ਹੇਠਾਂ ਰੱਖੋ</string>
     <string name="dejavu_feature_wallpaper">ਵਰਕਸਪੇਸ ਨੂੰ ਵਾਲਪੇਪਰ ਦਿਓ</string>
     <string name="dejavu_feature_save_page">ਇੰਟਰਨੈੱਟ ਤੋਂ ਬਿਨਾਂ ਪੜ੍ਹਨ ਲਈ ਸਫ਼ੇ ਸੰਭਾਲੋ</string>
+    <string name="dejavu_recent_search_text">ਇਸ ਖੋਜ ਨੂੰ ਆਪਣੀਆਂ ਸੱਜਰੀਆਂ ਖੋਜਾਂ ਵਿੱਚੋਂ ਹਟਾਓ, ਜਾਂ ਸਭ ਨੂੰ ਸਾਫ਼ ਕਰੋ।</string>
+    <string name="dejavu_recent_search_clear">ਖੋਜ ਅਤੀਤ ਸਾਫ਼ ਕਰੋ</string>
 </resources>

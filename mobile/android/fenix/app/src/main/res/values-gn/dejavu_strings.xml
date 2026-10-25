@@ -470,4 +470,6 @@
     <string name="dejavu_feature_bar_layouts">Emoĩ kundaharape barra yvate térã guýpe</string>
     <string name="dejavu_feature_wallpaper">Eme\'ẽ tembiapo rendápe mba\'erechaha rugua</string>
     <string name="dejavu_feature_save_page">Eñongatu kuatiarogue emoñe\'ẽ hag̃ua internet’ỹre</string>
+    <string name="dejavu_recent_search_text">Emboguete ko jeheka umi ojeheka ramóvagui, térã emboguete opaite.</string>
+    <string name="dejavu_recent_search_clear">Emboguete jeheka rembiasakue</string>
 </resources>

@@ -486,4 +486,6 @@
     <string name="dejavu_feature_bar_layouts">Naslovno vrstico postavite na vrh ali na dno</string>
     <string name="dejavu_feature_wallpaper">Delovnemu prostoru nastavite ozadje</string>
     <string name="dejavu_feature_save_page">Shranite strani za branje brez interneta</string>
+    <string name="dejavu_recent_search_text">Izbrišite to iskanje iz nedavnih iskanj ali počistite vsa.</string>
+    <string name="dejavu_recent_search_clear">Izbriši zgodovino iskanja</string>
 </resources>

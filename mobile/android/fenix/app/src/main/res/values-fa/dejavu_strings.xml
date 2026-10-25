@@ -470,4 +470,6 @@
     <string name="dejavu_feature_bar_layouts">نوار نشانی را بالا یا پایین بگذارید</string>
     <string name="dejavu_feature_wallpaper">به یک فضای کاری تصویر پس‌زمینه بدهید</string>
     <string name="dejavu_feature_save_page">صفحه‌ها را برای خواندن بدون اینترنت ذخیره کنید</string>
+    <string name="dejavu_recent_search_text">این جست‌وجو را از جست‌وجوهای اخیر حذف کنید یا همه را پاک کنید.</string>
+    <string name="dejavu_recent_search_clear">پاک کردن تاریخچه جست‌وجو</string>
 </resources>

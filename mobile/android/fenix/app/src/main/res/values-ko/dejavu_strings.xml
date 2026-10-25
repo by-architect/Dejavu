@@ -462,4 +462,6 @@
     <string name="dejavu_feature_bar_layouts">주소 표시줄을 위쪽이나 아래쪽에 두세요</string>
     <string name="dejavu_feature_wallpaper">작업 공간에 배경 화면을 지정하세요</string>
     <string name="dejavu_feature_save_page">인터넷 없이 읽을 페이지를 저장하세요</string>
+    <string name="dejavu_recent_search_text">최근 검색에서 이 검색을 삭제하거나 모두 지울 수 있습니다.</string>
+    <string name="dejavu_recent_search_clear">검색 기록 삭제</string>
 </resources>

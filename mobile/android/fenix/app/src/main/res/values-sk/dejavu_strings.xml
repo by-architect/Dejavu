@@ -486,4 +486,6 @@
     <string name="dejavu_feature_bar_layouts">Umiestnite panel s adresou hore alebo dole</string>
     <string name="dejavu_feature_wallpaper">Nastavte pracovnému priestoru tapetu</string>
     <string name="dejavu_feature_save_page">Ukladajte stránky na čítanie bez internetu</string>
+    <string name="dejavu_recent_search_text">Odstrániť toto vyhľadávanie z nedávnych vyhľadávaní alebo vymazať všetky.</string>
+    <string name="dejavu_recent_search_clear">Vymazať históriu vyhľadávania</string>
 </resources>

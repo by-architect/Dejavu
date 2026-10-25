@@ -470,4 +470,6 @@
     <string name="dejavu_feature_bar_layouts">വിലാസ ബാർ മുകളിലോ താഴെയോ വയ്ക്കുക</string>
     <string name="dejavu_feature_wallpaper">ഒരു പണിയിടത്തിന് വാൾപേപ്പർ നൽകുക</string>
     <string name="dejavu_feature_save_page">ഇന്റർനെറ്റ് ഇല്ലാതെ വായിക്കാൻ താളുകൾ കരുതിവയ്ക്കുക</string>
+    <string name="dejavu_recent_search_text">ഈ തിരയൽ നിങ്ങളുടെ സമീപകാല തിരയലുകളിൽ നിന്ന് ഇല്ലാതാക്കുക, അല്ലെങ്കിൽ എല്ലാം മായ്ക്കുക.</string>
+    <string name="dejavu_recent_search_clear">തിരയൽ ചരിത്രം മായ്ക്കുക</string>
 </resources>

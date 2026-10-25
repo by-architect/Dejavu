@@ -470,4 +470,6 @@
     <string name="dejavu_feature_bar_layouts">Zet de adresbalk boven- of onderaan</string>
     <string name="dejavu_feature_wallpaper">Geef een werkruimte een achtergrond</string>
     <string name="dejavu_feature_save_page">Sla pagina\'s op om zonder internet te lezen</string>
+    <string name="dejavu_recent_search_text">Verwijder deze zoekopdracht uit je recente zoekopdrachten of wis ze allemaal.</string>
+    <string name="dejavu_recent_search_clear">Zoekgeschiedenis wissen</string>
 </resources>

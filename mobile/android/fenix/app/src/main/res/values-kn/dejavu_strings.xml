@@ -470,4 +470,6 @@
     <string name="dejavu_feature_bar_layouts">ವಿಳಾಸ ಪಟ್ಟಿಯನ್ನು ಮೇಲೆ ಅಥವಾ ಕೆಳಗೆ ಇರಿಸಿ</string>
     <string name="dejavu_feature_wallpaper">ಕಾರ್ಯಕ್ಷೇತ್ರಕ್ಕೆ ವಾಲ್‌ಪೇಪರ್ ನೀಡಿ</string>
     <string name="dejavu_feature_save_page">ಇಂಟರ್ನೆಟ್ ಇಲ್ಲದೆ ಓದಲು ಪುಟಗಳನ್ನು ಉಳಿಸಿ</string>
+    <string name="dejavu_recent_search_text">ಈ ಹುಡುಕಾಟವನ್ನು ನಿಮ್ಮ ಇತ್ತೀಚಿನ ಹುಡುಕಾಟಗಳಿಂದ ಅಳಿಸಿ, ಅಥವಾ ಎಲ್ಲವನ್ನೂ ತೆರವುಗೊಳಿಸಿ.</string>
+    <string name="dejavu_recent_search_clear">ಹುಡುಕಾಟ ಇತಿಹಾಸವನ್ನು ತೆರವುಗೊಳಿಸಿ</string>
 </resources>

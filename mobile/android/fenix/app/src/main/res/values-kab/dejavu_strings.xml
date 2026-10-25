@@ -470,4 +470,6 @@
     <string name="dejavu_feature_bar_layouts">Err afeggag n tansiwin ɣer ufella neɣ ɣer wadda</string>
     <string name="dejavu_feature_wallpaper">Efk tugna n ugilal i umkan n umahil</string>
     <string name="dejavu_feature_save_page">Sekles isebtar akken ad ten-teɣreḍ war internet</string>
+    <string name="dejavu_recent_search_text">Kkes anadi-agi seg inadiyen-ik n melmi kan, neɣ sfeḍ-iten akk.</string>
+    <string name="dejavu_recent_search_clear">Sfeḍ amazray n unadi</string>
 </resources>

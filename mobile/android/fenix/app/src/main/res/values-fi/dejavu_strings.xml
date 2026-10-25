@@ -470,4 +470,6 @@
     <string name="dejavu_feature_bar_layouts">Aseta osoitepalkki ylös tai alas</string>
     <string name="dejavu_feature_wallpaper">Anna työtilalle taustakuva</string>
     <string name="dejavu_feature_save_page">Tallenna sivuja luettavaksi ilman internetiä</string>
+    <string name="dejavu_recent_search_text">Poista tämä haku viimeisimmistä hauista tai tyhjennä ne kaikki.</string>
+    <string name="dejavu_recent_search_clear">Tyhjennä hakuhistoria</string>
 </resources>

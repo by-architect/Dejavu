@@ -494,4 +494,6 @@
     <string name="dejavu_feature_bar_layouts">Lakaat ar varrenn chomlec\'h e krec\'h pe en traoñ</string>
     <string name="dejavu_feature_wallpaper">Reiñ un drekleur d\'un egor labour</string>
     <string name="dejavu_feature_save_page">Enrollañ pajennoù evit lenn hep Internet</string>
+    <string name="dejavu_recent_search_text">Dilemel an enklask-mañ eus an enklaskoù nevez, pe skarzhañ an holl.</string>
+    <string name="dejavu_recent_search_clear">Dilemel roll istor an enklaskoù</string>
 </resources>

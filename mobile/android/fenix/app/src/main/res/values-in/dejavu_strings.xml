@@ -462,4 +462,6 @@
     <string name="dejavu_feature_bar_layouts">Taruh bilah alamat di atas atau bawah</string>
     <string name="dejavu_feature_wallpaper">Beri wallpaper untuk ruang kerja</string>
     <string name="dejavu_feature_save_page">Simpan laman untuk dibaca tanpa internet</string>
+    <string name="dejavu_recent_search_text">Hapus pencarian ini dari pencarian terkini Anda, atau hapus semuanya.</string>
+    <string name="dejavu_recent_search_clear">Hapus riwayat pencarian</string>
 </resources>

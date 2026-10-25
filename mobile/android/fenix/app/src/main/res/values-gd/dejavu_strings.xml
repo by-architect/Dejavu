@@ -486,4 +486,6 @@
     <string name="dejavu_feature_bar_layouts">Cuir bàr an t-seòlaidh aig a’ bhàrr no aig a’ bhonn</string>
     <string name="dejavu_feature_wallpaper">Thoir pàipear-balla do dh’àite-obrach</string>
     <string name="dejavu_feature_save_page">Sàbhail duilleagan airson an leughadh gun eadar-lìn</string>
+    <string name="dejavu_recent_search_text">Sguab às an luirg seo à na luirg o chionn goirid, no sguab às na luirg uile.</string>
+    <string name="dejavu_recent_search_clear">Sguab às eachdraidh nan lorg</string>
 </resources>

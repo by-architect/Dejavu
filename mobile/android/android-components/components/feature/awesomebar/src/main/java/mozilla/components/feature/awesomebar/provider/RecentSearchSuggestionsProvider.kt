@@ -40,6 +40,7 @@ private const val MAXIMUM_ALLOWED_SUGGESTIONS_LIMIT_REACHED =
  * @param engine optional [Engine] instance to call [Engine.speculativeConnect] for the highest scored suggestion URL.
  * @param showEditSuggestion optional parameter to specify if the suggestion should show the edit button.
  * @param suggestionsHeader optional parameter to specify if the suggestion should have a header
+ * @param onSuggestionLongClicked optional callback for a suggestion long-pressed by the user, with its search term.
  */
 class RecentSearchSuggestionsProvider(
     private val historyStorage: PlacesHistoryStorage,
@@ -51,6 +52,7 @@ class RecentSearchSuggestionsProvider(
     private val engine: Engine? = null,
     private val showEditSuggestion: Boolean = true,
     private val suggestionsHeader: String? = null,
+    private val onSuggestionLongClicked: ((searchTerm: String) -> Unit)? = null,
 ) : AwesomeBar.SuggestionProvider {
     init {
         if (maxNumberOfSuggestions > SEARCH_TERMS_MAXIMUM_ALLOWED_SUGGESTIONS_LIMIT) {
@@ -99,6 +101,7 @@ class RecentSearchSuggestionsProvider(
             icon = icon,
             searchUseCase = searchUseCase,
             showEditSuggestion = showEditSuggestion,
+            onSuggestionLongClicked = onSuggestionLongClicked,
         )
     }
 }
@@ -109,6 +112,7 @@ private fun Iterable<HistoryMetadata>.into(
     icon: Bitmap?,
     searchUseCase: SearchUseCase,
     showEditSuggestion: Boolean = true,
+    onSuggestionLongClicked: ((searchTerm: String) -> Unit)? = null,
 ): List<AwesomeBar.Suggestion> {
     return this.mapIndexedNotNull { index, result ->
         val safeSearchTerm = result.key.searchTerm ?: return@mapIndexedNotNull null
@@ -126,6 +130,7 @@ private fun Iterable<HistoryMetadata>.into(
                 searchUseCase.invoke(safeSearchTerm)
                 emitRecentSearchSuggestionClickedFact(index)
             },
+            onSuggestionLongClicked = onSuggestionLongClicked?.let { { it(safeSearchTerm) } },
         )
     }
 }

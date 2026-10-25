@@ -503,4 +503,6 @@
     <string name="dejavu_feature_bar_layouts">ঠিকানা বার উপরে বা নিচে রাখুন</string>
     <string name="dejavu_feature_wallpaper">ওয়ার্কস্পেসকে ওয়ালপেপার দিন</string>
     <string name="dejavu_feature_save_page">ইন্টারনেট ছাড়া পড়তে পাতা সংরক্ষণ করুন</string>
+    <string name="dejavu_recent_search_text">সাম্প্রতিক অনুসন্ধান থেকে এই অনুসন্ধানটি মুছুন, অথবা সবগুলো মুছে ফেলুন।</string>
+    <string name="dejavu_recent_search_clear">অনুসন্ধানের ইতিহাস মুছুন</string>
 </resources>

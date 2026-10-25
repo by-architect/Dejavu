@@ -470,4 +470,6 @@
     <string name="dejavu_feature_bar_layouts">نوار نشۊوی ن بالا یا ژیر بذار</string>
     <string name="dejavu_feature_wallpaper">به فضا کاقز دیواری بئه</string>
     <string name="dejavu_feature_save_page">بلگه یل ن سی خنن بدۊن اینترنت زفت بکه</string>
+    <string name="dejavu_recent_search_text">ای دیندایی ن له پیتینیڌنا دیندایی پاک کۊنین، یا هؤمه ن پاک کۊنین.</string>
+    <string name="dejavu_recent_search_clear">پاک کردن ویرگار دیندایی</string>
 </resources>

@@ -573,6 +573,11 @@
     <!-- Feature tour title, in the chapter of Dejavu 3.0: Save page in the More menu saves the page as one file that opens without internet. -->
     <string name="dejavu_feature_save_page">Save pages to read without internet</string>
 
+    <!-- Popup of a recent search long-pressed in the search screen; its title is the search itself. -->
+    <string name="dejavu_recent_search_text">Delete this search from your recent searches, or clear all of them.</string>
+    <!-- Button of that popup that deletes every recent search, leaving the history of visited pages as it is. -->
+    <string name="dejavu_recent_search_clear">Clear search history</string>
+
     <!-- Switch in the tracking protection settings for Google Safe Browsing, which warns about phishing and malware sites. -->
     <string name="dejavu_settings_safe_browsing">Google Safe Browsing</string>
     <!-- Title of the warning shown when a tab opens about:config, Gecko's page of advanced preferences. Keep "about:config" as it is. -->

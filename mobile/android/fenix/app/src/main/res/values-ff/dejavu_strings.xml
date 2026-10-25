@@ -470,4 +470,6 @@
     <string name="dejavu_feature_bar_layouts">Place la barre d\'adresse en haut ou en bas</string>
     <string name="dejavu_feature_wallpaper">Donne un ɗeerol ɓalal à un espace de travail</string>
     <string name="dejavu_feature_save_page">Enregistre des pages pour les lire sans internet</string>
+    <string name="dejavu_recent_search_text">Momtu ngall ɗaŋtol ɗoo diga ɗaŋtooji cakkitiiji maa, malla ɓesngu fof.</string>
+    <string name="dejavu_recent_search_clear">Momtu aslol ɗaŋtooji</string>
 </resources>

@@ -470,4 +470,6 @@
     <string name="dejavu_feature_bar_layouts">Placer adresselinjen øverst eller nederst</string>
     <string name="dejavu_feature_wallpaper">Giv et arbejdsområde en baggrund</string>
     <string name="dejavu_feature_save_page">Gem sider, så du kan læse dem uden internet</string>
+    <string name="dejavu_recent_search_text">Slet denne søgning fra dine seneste søgninger, eller slet dem alle.</string>
+    <string name="dejavu_recent_search_clear">Slet søgehistorik</string>
 </resources>

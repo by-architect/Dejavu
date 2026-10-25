@@ -54,6 +54,7 @@ private const val CURRENT_TAB_DETAILS_MIN_HEIGHT = 72
  * @param onCurrentSiteDetailsInteraction Invoked when the user interacts with any of the shown buttons.
  * @param onVisibilityStateUpdated Gets invoked when the list of currently displayed suggestions changes.
  * @param onScroll Gets invoked at the beginning of the user performing a scroll gesture.
+ * @param refreshKey Asks the providers for suggestions again whenever it changes, like after some were deleted.
  */
 @Composable
 fun AwesomeBar(
@@ -70,6 +71,7 @@ fun AwesomeBar(
     onVisibilityStateUpdated: (AwesomeBar.VisibilityState) -> Unit = {},
     onScroll: () -> Unit = {},
     profiler: Profiler? = null,
+    refreshKey: Any? = null,
 ) {
     val groups =
         remember(providers) {
@@ -98,6 +100,7 @@ fun AwesomeBar(
         onVisibilityStateUpdated = onVisibilityStateUpdated,
         onScroll = onScroll,
         profiler = profiler,
+        refreshKey = refreshKey,
     )
 }
 
@@ -116,6 +119,7 @@ fun AwesomeBar(
  * @param onCurrentSiteDetailsInteraction Invoked when the user interacts with any of the shown buttons.
  * @param onVisibilityStateUpdated Gets invoked when the list of currently displayed suggestions changes.
  * @param onScroll Gets invoked at the beginning of the user performing a scroll gesture.
+ * @param refreshKey Asks the providers for suggestions again whenever it changes, like after some were deleted.
  */
 @Composable
 @Suppress("LongMethod", "CognitiveComplexMethod")
@@ -133,6 +137,7 @@ fun AwesomeBar(
     onVisibilityStateUpdated: (AwesomeBar.VisibilityState) -> Unit = {},
     onScroll: () -> Unit = {},
     profiler: Profiler? = null,
+    refreshKey: Any? = null,
 ) {
     val density = LocalDensity.current
     var tabDetailsHeight by remember { mutableStateOf(CURRENT_TAB_DETAILS_MIN_HEIGHT.dp) }
@@ -189,7 +194,7 @@ fun AwesomeBar(
                 }
             }
 
-        LaunchedEffect(text, fetcher) {
+        LaunchedEffect(text, fetcher, refreshKey) {
             fetcher.fetch(text)
         }
 

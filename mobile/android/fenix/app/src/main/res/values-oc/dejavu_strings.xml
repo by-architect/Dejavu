@@ -470,4 +470,6 @@
     <string name="dejavu_feature_bar_layouts">Plaçatz la barra d’adreça en naut o en bas</string>
     <string name="dejavu_feature_wallpaper">Donatz un fons d’ecran a un espaci de trabalh</string>
     <string name="dejavu_feature_save_page">Enregistratz de paginas per las legir sens Internet</string>
+    <string name="dejavu_recent_search_text">Suprimissètz aquesta recèrca de vòstras recèrcas recentas, o escafatz-las totas.</string>
+    <string name="dejavu_recent_search_clear">Escafar l’istoric de recèrca</string>
 </resources>

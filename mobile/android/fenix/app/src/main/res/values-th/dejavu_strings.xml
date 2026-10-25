@@ -462,4 +462,6 @@
     <string name="dejavu_feature_bar_layouts">วางแถบที่อยู่ไว้ด้านบนหรือด้านล่าง</string>
     <string name="dejavu_feature_wallpaper">ตั้งรูปพื้นหลังให้พื้นที่ทำงาน</string>
     <string name="dejavu_feature_save_page">บันทึกหน้าไว้อ่านโดยไม่ต้องใช้อินเทอร์เน็ต</string>
+    <string name="dejavu_recent_search_text">ลบการค้นหานี้ออกจากคำค้นหาล่าสุด หรือล้างทั้งหมด</string>
+    <string name="dejavu_recent_search_clear">ล้างประวัติการค้นหา</string>
 </resources>

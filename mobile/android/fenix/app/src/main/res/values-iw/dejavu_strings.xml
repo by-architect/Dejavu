@@ -478,4 +478,6 @@
     <string name="dejavu_feature_bar_layouts">מקמו את שורת הכתובת למעלה או למטה</string>
     <string name="dejavu_feature_wallpaper">תנו תמונת רקע למרחב עבודה</string>
     <string name="dejavu_feature_save_page">שמרו דפים כדי לקרוא אותם בלי אינטרנט</string>
+    <string name="dejavu_recent_search_text">אפשר למחוק את החיפוש הזה מהחיפושים האחרונים, או לנקות את כולם.</string>
+    <string name="dejavu_recent_search_clear">ניקוי היסטוריית החיפושים</string>
 </resources>

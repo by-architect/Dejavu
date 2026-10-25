@@ -470,4 +470,6 @@
     <string name="dejavu_feature_bar_layouts">د پتې نوار پورته یا ښکته ځای کړئ</string>
     <string name="dejavu_feature_wallpaper">ساحې ته شالید انځور ورکړئ</string>
     <string name="dejavu_feature_save_page">پاڼې خوندي کړئ ترڅو پرته له انټرنېټه یې ولولئ</string>
+    <string name="dejavu_recent_search_text">دا لټون له خپلو وروستیو لټونونو لرې کړئ، یا ټول پاک کړئ.</string>
+    <string name="dejavu_recent_search_clear">د لټون تاریخچه پاکه کړئ</string>
 </resources>

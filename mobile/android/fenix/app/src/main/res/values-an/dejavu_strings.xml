@@ -470,4 +470,6 @@
     <string name="dejavu_feature_bar_layouts">Mete a barra d\'adrezas dalto u debaixo</string>
     <string name="dejavu_feature_wallpaper">Da un fondo de pantalla a un espacio de treballo</string>
     <string name="dejavu_feature_save_page">Alza pachinas pa leyer-las sin internet</string>
+    <string name="dejavu_recent_search_text">Borrar esta busca d’as busques recients u borrar-las toz.</string>
+    <string name="dejavu_recent_search_clear">Borrar l’historial de busca</string>
 </resources>

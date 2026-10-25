@@ -470,4 +470,6 @@
     <string name="dejavu_feature_bar_layouts">Ibutang ang address bar sa taas o sa ubos</string>
     <string name="dejavu_feature_wallpaper">Hatagi og wallpaper ang workspace</string>
     <string name="dejavu_feature_save_page">I-save ang mga page aron mabasa nga walay internet</string>
+    <string name="dejavu_recent_search_text">Papasa kini nga pagpangita gikan sa bag-ong mga pagpangita, o papasa tanan.</string>
+    <string name="dejavu_recent_search_clear">Papasa ang kasaysayan sa pagpangita</string>
 </resources>

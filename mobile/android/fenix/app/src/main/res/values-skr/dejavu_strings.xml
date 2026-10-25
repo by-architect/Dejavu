@@ -470,4 +470,6 @@
     <string name="dejavu_feature_bar_layouts">پتہ پٹی چوٹی تے یا تلے رکھو</string>
     <string name="dejavu_feature_wallpaper">ورک سپیس کوں وال پیپر ݙیوو</string>
     <string name="dejavu_feature_save_page">انٹرنیٹ کنوں بغیر پڑھݨ کیتے ورقے محفوظ کرو</string>
+    <string name="dejavu_recent_search_text">اے ڳولا ہالی دیاں ڳولا کنوں مٹاؤ، یا ساریاں صاف کرو۔</string>
+    <string name="dejavu_recent_search_clear">ڳولا دی تاریخ مٹاؤ</string>
 </resources>

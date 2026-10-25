@@ -470,4 +470,6 @@
     <string name="dejavu_feature_bar_layouts">የአድራሻ አሞሌን ከላይ ወይም ከታች ያድርጉ</string>
     <string name="dejavu_feature_wallpaper">ለስራ ቦታ ልጣፍ ይስጡ</string>
     <string name="dejavu_feature_save_page">ገጾችን ያለ በይነመረብ ለማንበብ ያስቀምጡ</string>
+    <string name="dejavu_recent_search_text">ይህን ፍለጋ ከቅርብ ጊዜ ፍለጋዎች ሰርዝ፣ ወይም ሁሉንም አጽዳ።</string>
+    <string name="dejavu_recent_search_clear">የፍለጋ ታሪክን አጽዳ</string>
 </resources>

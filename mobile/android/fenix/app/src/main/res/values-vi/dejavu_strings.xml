@@ -462,4 +462,6 @@
     <string name="dejavu_feature_bar_layouts">Đặt thanh địa chỉ ở trên cùng hoặc dưới cùng</string>
     <string name="dejavu_feature_wallpaper">Đặt hình nền cho không gian làm việc</string>
     <string name="dejavu_feature_save_page">Lưu trang để đọc khi không có internet</string>
+    <string name="dejavu_recent_search_text">Xóa tìm kiếm này khỏi danh sách tìm kiếm gần đây, hoặc xóa tất cả.</string>
+    <string name="dejavu_recent_search_clear">Xóa lịch sử tìm kiếm</string>
 </resources>

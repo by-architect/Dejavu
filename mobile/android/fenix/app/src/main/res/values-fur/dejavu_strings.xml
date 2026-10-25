@@ -470,4 +470,6 @@
     <string name="dejavu_feature_bar_layouts">Met la sbare de direzion in alt o in bas</string>
     <string name="dejavu_feature_wallpaper">Da un fonts a un spazi di lavôr</string>
     <string name="dejavu_feature_save_page">Salve lis pagjinis par lei cence internet</string>
+    <string name="dejavu_recent_search_text">Elimine cheste ricerche des tôs ricercjis resintis o scancele ducj.</string>
+    <string name="dejavu_recent_search_clear">Scancele la cronologjie des ricercjis</string>
 </resources>

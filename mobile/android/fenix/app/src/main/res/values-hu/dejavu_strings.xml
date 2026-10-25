@@ -470,4 +470,6 @@
     <string name="dejavu_feature_bar_layouts">Tegye a címsávot felülre vagy alulra</string>
     <string name="dejavu_feature_wallpaper">Adjon háttérképet a munkaterületnek</string>
     <string name="dejavu_feature_save_page">Mentse az oldalakat, hogy internet nélkül olvashassa őket</string>
+    <string name="dejavu_recent_search_text">Törölje ezt a keresést a legutóbbi keresések közül, vagy törölje az összeset.</string>
+    <string name="dejavu_recent_search_clear">Keresési előzmények törlése</string>
 </resources>

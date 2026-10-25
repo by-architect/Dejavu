@@ -470,4 +470,6 @@
     <string name="dejavu_feature_bar_layouts">Settu veffangastikuna efst eða neðst</string>
     <string name="dejavu_feature_wallpaper">Gefðu vinnusvæði bakgrunnsmynd</string>
     <string name="dejavu_feature_save_page">Vistaðu síður til að lesa án nets</string>
+    <string name="dejavu_recent_search_text">Eyddu þessari leit úr nýlegum leitum eða hreinsaðu þær allar.</string>
+    <string name="dejavu_recent_search_clear">Hreinsa leitarferil</string>
 </resources>

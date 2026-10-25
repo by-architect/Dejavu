@@ -470,4 +470,6 @@
     <string name="dejavu_feature_bar_layouts">ଠିକଣା ବାର୍‌କୁ ଉପରେ କି ତଳେ ରଖନ୍ତୁ</string>
     <string name="dejavu_feature_wallpaper">କାର୍ଯ୍ୟକ୍ଷେତ୍ରକୁ ଏକ ୱାଲପେପର ଦିଅନ୍ତୁ</string>
     <string name="dejavu_feature_save_page">ଇଣ୍ଟରନେଟ୍ ବିନା ପଢ଼ିବାକୁ ପୃଷ୍ଠାଗୁଡ଼ିକ ସେଭ୍ କରନ୍ତୁ</string>
+    <string name="dejavu_recent_search_text">ଏହି ସନ୍ଧାନକୁ ଆପଣଙ୍କ ସାମ୍ପ୍ରତିକ ସନ୍ଧାନରୁ ଡିଲିଟ୍ କରନ୍ତୁ, ଅଥବା ସବୁ ଖାଲି କରନ୍ତୁ।</string>
+    <string name="dejavu_recent_search_clear">ସନ୍ଧାନ ଇତିହାସ ଖାଲି କରନ୍ତୁ</string>
 </resources>

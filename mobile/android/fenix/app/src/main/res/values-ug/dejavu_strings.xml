@@ -470,4 +470,6 @@
     <string name="dejavu_feature_bar_layouts">ئادرېس بالدىقىنى يۇقىرىغا ياكى تۆۋەنگە قويۇڭ</string>
     <string name="dejavu_feature_wallpaper">خىزمەت دائىرىسىگە تام قەغىزى تەڭشەڭ</string>
     <string name="dejavu_feature_save_page">ئىنتېرنېتسىز ئوقۇش ئۈچۈن بەتلەرنى ساقلاڭ</string>
+    <string name="dejavu_recent_search_text">بۇ ئىزدەشنى يېقىنقى ئىزدەشتىن ئۆچۈرۈڭ ياكى ھەممىسىنى تازىلاڭ.</string>
+    <string name="dejavu_recent_search_clear">ئىزدەش تارىخىنى ئۆچۈرۈش</string>
 </resources>

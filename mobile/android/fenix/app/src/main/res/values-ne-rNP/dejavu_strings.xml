@@ -470,4 +470,6 @@
     <string name="dejavu_feature_bar_layouts">ठेगाना पट्टी माथि वा तल राख्नुहोस्</string>
     <string name="dejavu_feature_wallpaper">कार्यक्षेत्रलाई वालपेपर दिनुहोस्</string>
     <string name="dejavu_feature_save_page">इन्टरनेट बिना पढ्न पृष्ठहरू सुरक्षित गर्नुहोस्</string>
+    <string name="dejavu_recent_search_text">यो खोजलाई हालैका खोजहरूबाट मेटाउनुहोस्, वा सबै खाली गर्नुहोस्।</string>
+    <string name="dejavu_recent_search_clear">खोज इतिहास खाली गर्नुहोस्</string>
 </resources>

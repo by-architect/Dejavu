@@ -503,4 +503,6 @@
     <string name="dejavu_feature_bar_layouts">સરનામાં બારને ઉપર અથવા નીચે રાખો</string>
     <string name="dejavu_feature_wallpaper">વર્કસ્પેસને વૉલપેપર આપો</string>
     <string name="dejavu_feature_save_page">ઇન્ટરનેટ વગર વાંચવા માટે પૃષ્ઠો સાચવો</string>
+    <string name="dejavu_recent_search_text">તમારી તાજેતરની શોધોમાંથી આ શોધ કાઢી નાખો, અથવા બધી સાફ કરો.</string>
+    <string name="dejavu_recent_search_clear">શોધ ઇતિહાસ સાફ કરો</string>
 </resources>

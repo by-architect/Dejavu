@@ -470,4 +470,6 @@
     <string name="dejavu_feature_bar_layouts">Mette a barra d\'indirizzu insù o in ghjò</string>
     <string name="dejavu_feature_wallpaper">Date un sfondulu à un spaziu di travagliu</string>
     <string name="dejavu_feature_save_page">Arregistrate e pagine per leghje le senza internet</string>
+    <string name="dejavu_recent_search_text">Squassà sta ricerca da e ricerche recente, o squassà le tutte.</string>
+    <string name="dejavu_recent_search_clear">Squassà a cronolugia di ricerche</string>
 </resources>

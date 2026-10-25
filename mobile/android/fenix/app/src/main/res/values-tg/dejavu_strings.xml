@@ -470,4 +470,6 @@
     <string name="dejavu_feature_bar_layouts">Навори нишониро дар боло ё поин ҷойгир кунед</string>
     <string name="dejavu_feature_wallpaper">Ба фазои корӣ тасвири замина диҳед</string>
     <string name="dejavu_feature_save_page">Саҳифаҳоро барои хондан бе интернет нигоҳ доред</string>
+    <string name="dejavu_recent_search_text">Ин ҷустуҷӯро аз ҷустуҷӯҳои охирин нест кунед ё ҳамаашро тоза намоед.</string>
+    <string name="dejavu_recent_search_clear">Нест кардани таърихи ҷустуҷӯ</string>
 </resources>

@@ -470,4 +470,6 @@
     <string name="dejavu_feature_bar_layouts">Հասցեագոտին դրեք վերևում կամ ներքևում</string>
     <string name="dejavu_feature_wallpaper">Տվեք տարածքին պաստառ</string>
     <string name="dejavu_feature_save_page">Պահեք էջերը՝ առանց համացանցի կարդալու համար</string>
+    <string name="dejavu_recent_search_text">Ջնջեք այս որոնումը վերջին որոնումներից կամ մաքրեք բոլորը։</string>
+    <string name="dejavu_recent_search_clear">Մաքրել որոնումների պատմությունը</string>
 </resources>

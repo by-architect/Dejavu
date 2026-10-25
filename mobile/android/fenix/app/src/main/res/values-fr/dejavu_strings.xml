@@ -470,4 +470,6 @@
     <string name="dejavu_feature_bar_layouts">Place la barre d’adresse en haut ou en bas</string>
     <string name="dejavu_feature_wallpaper">Donne un fond d’écran à un espace</string>
     <string name="dejavu_feature_save_page">Enregistre des pages pour les lire sans internet</string>
+    <string name="dejavu_recent_search_text">Supprimez cette recherche de vos recherches récentes, ou effacez-les toutes.</string>
+    <string name="dejavu_recent_search_clear">Effacer l’historique des recherches</string>
 </resources>

@@ -118,6 +118,8 @@ interface AwesomeBar {
      * @property flags A set of [Flag] values for this [Suggestion].
      * @property onSuggestionClicked A callback to be executed when the [Suggestion] was clicked by the user.
      * @property onChipClicked A callback to be executed when a [Chip] was clicked by the user.
+     * @property onSuggestionLongClicked A callback to be executed when the [Suggestion] was long-pressed by the user, or
+     *   `null` when long-pressing it does nothing.
      * @property score A score used to rank suggestions of this provider against each other. A suggestion with a higher
      *   score will be shown on top of suggestions with a lower score.
      * @property metadata Opaque metadata associated with this [Suggestion]. A [SuggestionProvider] can use this field
@@ -139,6 +141,7 @@ interface AwesomeBar {
         val onRemovalClicked: (() -> Unit)? = null,
         override val score: Int = 0,
         val metadata: Map<String, Any>? = null,
+        val onSuggestionLongClicked: (() -> Unit)? = null,
     ) : SuggestionItem {
         /**
          * Chips are compact actions that are shown as part of a suggestion. For example a [Suggestion] from a search
