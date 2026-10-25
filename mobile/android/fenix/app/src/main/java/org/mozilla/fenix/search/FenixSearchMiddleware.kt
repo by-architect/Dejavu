@@ -61,6 +61,7 @@ import org.mozilla.fenix.components.search.HISTORY_SEARCH_ENGINE_ID
 import org.mozilla.fenix.components.search.TABS_SEARCH_ENGINE_ID
 import org.mozilla.fenix.components.share.ShareSource
 import org.mozilla.fenix.components.usecases.ShareUseCases
+import org.mozilla.fenix.dejavu.browser.NewTabSearch
 import org.mozilla.fenix.ext.components
 import org.mozilla.fenix.ext.nav
 import org.mozilla.fenix.ext.telemetryName
@@ -288,7 +289,8 @@ class FenixSearchMiddleware(
         val shouldShowCurrentWebsiteDetails =
             settings.showAddressBarInFocusMode &&
                 query.isBlank() &&
-                appStore.state.searchState.sourceTabId?.let { browserStore.state.findTab(it) } != null
+                appStore.state.searchState.sourceTabId?.let { browserStore.state.findTab(it) } != null &&
+                !NewTabSearch.isFor(appStore.state.searchState.sourceTabId)
         val shouldShowSuggestions =
             shouldShowTrendingSearches || shouldShowSearchSuggestions || shouldShowCurrentWebsiteDetails
 
@@ -355,7 +357,7 @@ class FenixSearchMiddleware(
                         if (settings.enableHomepageAsNewTab) {
                             false
                         } else {
-                            store.state.tabId == null
+                            store.state.tabId == null || NewTabSearch.isFor(store.state.tabId)
                         },
                     usePrivateMode = browsingModeManager.mode.isPrivate,
                     flags = flags,
@@ -383,7 +385,7 @@ class FenixSearchMiddleware(
                         if (settings.enableHomepageAsNewTab) {
                             false
                         } else {
-                            store.state.tabId == null
+                            store.state.tabId == null || NewTabSearch.isFor(store.state.tabId)
                         },
                     usePrivateMode = browsingModeManager.mode.isPrivate,
                     forceSearch = true,

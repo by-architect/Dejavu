@@ -55,6 +55,7 @@ import org.mozilla.fenix.components.appstate.VoiceSearchAction.VoiceInputRequest
 import org.mozilla.fenix.components.metrics.MetricsUtils
 import org.mozilla.fenix.dejavu.browser.DejavuSearchChips
 import org.mozilla.fenix.dejavu.browser.DejavuToolbar
+import org.mozilla.fenix.dejavu.browser.NewTabSearch
 import org.mozilla.fenix.theme.FirefoxTheme
 import org.mozilla.fenix.utils.Settings
 import org.mozilla.fenix.wallpapers.WallpaperTheme
@@ -192,7 +193,8 @@ internal class HomeToolbarComposable(
 
             // Dejavu: where the new tab opens and which search engine it searches with, above the address bar.
             if (DejavuToolbar.enabled) {
-                DejavuSearchChips(newTab = appStore.state.searchState.sourceTabId == null)
+                val sourceTabId = appStore.state.searchState.sourceTabId
+                DejavuSearchChips(newTab = sourceTabId == null || NewTabSearch.isFor(sourceTabId))
             }
 
             if (shouldShowTabStrip) {

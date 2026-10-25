@@ -61,6 +61,7 @@ import org.mozilla.fenix.components.Components
 import org.mozilla.fenix.components.appstate.AppAction.SearchAction.SearchEnded
 import org.mozilla.fenix.components.metrics.MetricsUtils
 import org.mozilla.fenix.dejavu.browser.DejavuToolbar
+import org.mozilla.fenix.dejavu.browser.NewTabSearch
 import org.mozilla.fenix.dejavu.browser.RecentSearchMenu
 import org.mozilla.fenix.dejavu.browser.RecentSearchMenuDialog
 import org.mozilla.fenix.dejavu.browser.searchScreenBackground
@@ -252,7 +253,8 @@ class AwesomeBarComposable(
                 ) {
                     val currentTabDetailsToShow =
                         remember(state.query.isBlank()) {
-                            when (state.query.isBlank() && showCurrentTabData) {
+                            val forNewTab = NewTabSearch.isFor(appStore.state.searchState.sourceTabId)
+                            when (state.query.isBlank() && showCurrentTabData && !forNewTab) {
                                 true -> state.currentTabData ?: sourceTabData()
                                 else -> null
                             }

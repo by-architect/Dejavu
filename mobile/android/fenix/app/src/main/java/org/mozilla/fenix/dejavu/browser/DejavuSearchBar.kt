@@ -156,3 +156,25 @@ object DejavuSearchStart {
     /** Whether the search starting now was started from the bottom of the screen. */
     fun isFromBottom(): Boolean = startedAt != 0L && SystemClock.elapsedRealtime() - startedAt < VALID_FOR_MS
 }
+
+/**
+ * A search started with New tab over a shown page. It opens over the page, as tapping the address bar does, and what
+ * is searched or typed opens in a new tab instead of in that page's tab.
+ */
+object NewTabSearch {
+    @Volatile
+    private var tabId: String? = null
+
+    /** Starts a search over the tab with [tabId] that opens in a new tab. */
+    fun start(tabId: String) {
+        this.tabId = tabId
+    }
+
+    /** Lets the next search started from a page open in that page, as usual. */
+    fun clear() {
+        tabId = null
+    }
+
+    /** Whether the search started from the tab with [sourceTabId] opens in a new tab rather than in that tab. */
+    fun isFor(sourceTabId: String?): Boolean = sourceTabId != null && sourceTabId == tabId
+}

@@ -147,6 +147,7 @@ import org.mozilla.fenix.components.toolbar.TabCounterInteractions.TabCounterLon
 import org.mozilla.fenix.components.usecases.ShareUseCases
 import org.mozilla.fenix.dejavu.browser.DejavuToolbar
 import org.mozilla.fenix.dejavu.browser.DejavuToolbarEvent
+import org.mozilla.fenix.dejavu.browser.NewTabSearch
 import org.mozilla.fenix.dejavu.browser.SearchBackdrop
 import org.mozilla.fenix.dejavu.browser.TabZoom
 import org.mozilla.fenix.ext.canGoBackInHistoryOrToStories
@@ -431,6 +432,7 @@ class BrowserToolbarMiddleware(
 
             is OriginClicked -> {
                 Events.searchBarTapped.record(Events.SearchBarTappedExtra("BROWSER"))
+                NewTabSearch.clear()
 
                 val selectedTab = browserStore.state.selectedTab ?: return
                 val searchTerms = selectedTab.content.searchTerms

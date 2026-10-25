@@ -23,7 +23,10 @@ import org.mozilla.fenix.dejavu.NewTabContainerChoice
 import org.mozilla.fenix.dejavu.actions.ActionContext
 import org.mozilla.fenix.dejavu.actions.CustomAction
 import org.mozilla.fenix.dejavu.actions.CustomActionRunner
+import org.mozilla.fenix.dejavu.browser.DejavuSearchStart
+import org.mozilla.fenix.dejavu.browser.NewTabSearch
 import org.mozilla.fenix.dejavu.browser.SavePage
+import org.mozilla.fenix.dejavu.browser.SearchBackdrop
 import org.mozilla.fenix.dejavu.containers.DejavuContainerStorage
 import org.mozilla.fenix.dejavu.home.folderPathOf
 import org.mozilla.fenix.dejavu.settings.DejavuSettings
@@ -131,5 +134,16 @@ internal class DejavuTabCommands(
  */
 internal fun openNewTab(navController: NavController, tab: TabSessionState) {
     if (tab.content.private) NewTabContainerChoice.setPrivate() else NewTabContainerChoice.clear()
-    navController.navigate(NavGraphDirections.actionGlobalHome(focusOnAddressBar = true))
+    if (navController.currentDestination?.id != R.id.browserFragment) {
+        NewTabSearch.clear()
+        navController.navigate(NavGraphDirections.actionGlobalHome(focusOnAddressBar = true))
+        return
+    }
+    NewTabSearch.start(tab.id)
+    if (DejavuSettings.get(navController.context).barsLayout.value.addressBarAtBottom) DejavuSearchStart.fromBottom()
+    SearchBackdrop.capturePage(tab.id) {
+        navController.navigate(
+            NavGraphDirections.actionGlobalHome(focusOnAddressBar = true, sessionToStartSearchFor = tab.id),
+        )
+    }
 }
