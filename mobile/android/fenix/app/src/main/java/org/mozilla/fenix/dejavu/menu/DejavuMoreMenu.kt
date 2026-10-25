@@ -138,7 +138,9 @@ private fun MoreMenuItem.look(state: MoreMenuState): EntryLook {
             val label = stringResource(R.string.dejavu_menu_close_reader_view)
             EntryLook(label, iconsR.drawable.mozac_ic_reader_view_fill_24, active = true)
         } else {
-            default.copy(enabled = state.isReaderable)
+            // Firefox offers it only on pages its check takes for articles; Dejavu lets every web page try, as the
+            // check leaves out pages like Wikipedia's main page, and a page with nothing to show stays as it is.
+            default.copy(enabled = state.isReaderable || (state.isWebPage && !state.isPdf))
         }
         // A pinned tab of a device can still be unpinned here, which leaves it pinned on the device.
         MoreMenuItem.PIN_TAB -> if (state.isPinned) {
