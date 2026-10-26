@@ -56,11 +56,11 @@ class WorkspaceWallpapersTest {
         val second = picture("second.jpg")
 
         store.set("work", WorkspaceWallpaper("first.jpg"))
-        store.set("work", WorkspaceWallpaper("second.jpg", blur = 0.1f))
+        store.set("work", WorkspaceWallpaper("second.jpg", intensity = 0.9f))
 
         awaitGone(first)
         assertTrue(second.exists())
-        assertEquals(mapOf("work" to WorkspaceWallpaper("second.jpg", blur = 0.1f)), store.wallpapers.value)
+        assertEquals(mapOf("work" to WorkspaceWallpaper("second.jpg", intensity = 0.9f)), store.wallpapers.value)
 
         store.set("work", null)
 
@@ -85,17 +85,23 @@ class WorkspaceWallpapersTest {
         picture("beach.jpg")
 
         val id = repository.addWorkspace("Holiday", containerId = null, icon = null, theme = null)
-        store.set(id, WorkspaceWallpaper("beach.jpg", blur = 0.2f))
+        store.set(id, WorkspaceWallpaper("beach.jpg", intensity = 0.8f))
 
         assertEquals(id, repository.state.value.activeWorkspaceId)
         assertEquals("Holiday", repository.state.value.workspaces.single { it.id == id }.name)
-        assertEquals(mapOf(id to WorkspaceWallpaper("beach.jpg", blur = 0.2f)), newStore().wallpapers.value)
+        assertEquals(mapOf(id to WorkspaceWallpaper("beach.jpg", intensity = 0.8f)), newStore().wallpapers.value)
     }
 
     @Test
     fun `wallpapers are read back as they were written`() {
         val wallpapers = mapOf(
-            "work" to WorkspaceWallpaper(file = "a.jpg", blur = 0.2f, colors = listOf(RED, GREEN, BLUE)),
+            "work" to WorkspaceWallpaper(
+                file = "a.jpg",
+                intensity = 0.2f,
+                colors = listOf(RED, GREEN, BLUE),
+                light = 0.75f,
+                dark = 0.0625f,
+            ),
             "home" to WorkspaceWallpaper(file = "b.jpg"),
         )
 
@@ -117,14 +123,30 @@ class WorkspaceWallpapersTest {
     }
 
     @Test
-    fun `a blur out of range is brought back in, and a missing one takes the default`() {
+    fun `an intensity out of range is brought back in, and a missing one takes the default`() {
         val read = readWallpapers(
-            """{"work":{"file":"a.jpg","blur":3},"play":{"file":"c.jpg","blur":-1},"home":{"file":"b.jpg"}}""",
+            """{"a":{"file":"a.jpg","intensity":3},"c":{"file":"c.jpg","intensity":-1},"b":{"file":"b.jpg"}}""",
         )
 
-        assertEquals(WorkspaceWallpaper("a.jpg", blur = 1f), read["work"])
-        assertEquals(WorkspaceWallpaper("c.jpg", blur = 0f), read["play"])
-        assertEquals(WorkspaceWallpaper("b.jpg"), read["home"])
+        assertEquals(WorkspaceWallpaper("a.jpg", intensity = 1f), read["a"])
+        assertEquals(WorkspaceWallpaper("c.jpg", intensity = 0f), read["c"])
+        assertEquals(WorkspaceWallpaper("b.jpg"), read["b"])
+    }
+
+    @Test
+    fun `a wallpaper saved blurred shows the less, the more it was blurred`() {
+        val read = readWallpapers("""{"work":{"file":"a.jpg","blur":0.75},"home":{"file":"b.jpg","blur":0}}""")
+
+        assertEquals(0.25f, read["work"]?.intensity ?: 0f, 0.001f)
+        assertEquals(1f, read["home"]?.intensity ?: 0f, 0.001f)
+    }
+
+    @Test
+    fun `shades that are not numbers are left out`() {
+        val read = readWallpapers("""{"work":{"file":"a.jpg","light":"bright","dark":0.5}}""")
+
+        assertEquals(null, read["work"]?.light)
+        assertEquals(0.5f, read["work"]?.dark ?: 0f, 0.001f)
     }
 
     @Test
@@ -198,6 +220,28 @@ class WorkspaceWallpapersTest {
         assertEquals(emptyList<Int>(), gradientColorsOf(IntArray(WIDTH * HEIGHT), WIDTH, HEIGHT))
     }
 
+    @Test
+    fun `the shades of a picture are how light its lightest tenth is and how dark its darkest tenth is`() {
+        val pixels = pixels { x, _ -> if (x < 4) WHITE else if (x < 32) GRAY else BLACK }
+        val (light, dark) = checkNotNull(shadesOf(pixels))
+
+        assertEquals(1f, light, 0.001f)
+        assertEquals(0f, dark, 0.001f)
+    }
+
+    @Test
+    fun `a picture of one color is as light as it is dark`() {
+        val (light, dark) = checkNotNull(shadesOf(pixels { _, _ -> GRAY }))
+
+        assertEquals(light, dark, 0.001f)
+        assertEquals(0.2158f, light, 0.001f)
+    }
+
+    @Test
+    fun `a see-through picture has no shades`() {
+        assertEquals(null, shadesOf(IntArray(WIDTH * HEIGHT)))
+    }
+
     private companion object {
         const val WAIT_MS = 5_000L
         const val WIDTH = 36
@@ -207,6 +251,8 @@ class WorkspaceWallpapersTest {
         val GREEN = 0xFF43A047.toInt()
         val BLUE = 0xFF1E88E5.toInt()
         val WHITE = 0xFFFFFFFF.toInt()
+        val BLACK = 0xFF000000.toInt()
+        val GRAY = 0xFF808080.toInt()
         val DARK = 0xFF1E1E1E.toInt()
     }
 }

@@ -452,7 +452,6 @@
     <string name="dejavu_workspace_wallpaper_hint">La imatge es queda en aquest telèfon i es mostra a la pàgina d\'inici. Els seus colors es converteixen en el tema que se sincronitza amb el Zen.</string>
     <string name="dejavu_workspace_wallpaper_choose">Tria una imatge</string>
     <string name="dejavu_workspace_wallpaper_change">Canvia</string>
-    <string name="dejavu_workspace_wallpaper_blur">Desenfocament</string>
     <string name="dejavu_workspace_wallpaper_failed">No s\'ha pogut obrir aquesta imatge.</string>
     <string name="dejavu_workspace_wallpaper_colors">Colors que se sincronitzen amb el Zen</string>
     <string name="dejavu_workspace_wallpaper_hint_local">La imatge es queda en aquest telèfon i es mostra a la pàgina d\'inici.</string>

@@ -444,7 +444,6 @@
     <string name="dejavu_workspace_wallpaper_hint">L’image reste sur ce téléphone et s’affiche sur la page d’accueil. Ses couleurs deviennent le thème synchronisé avec Zen.</string>
     <string name="dejavu_workspace_wallpaper_choose">Choisir une image</string>
     <string name="dejavu_workspace_wallpaper_change">Changer</string>
-    <string name="dejavu_workspace_wallpaper_blur">Flou</string>
     <string name="dejavu_workspace_wallpaper_failed">Impossible d’ouvrir cette image.</string>
     <string name="dejavu_workspace_wallpaper_colors">Couleurs synchronisées avec Zen</string>
     <string name="dejavu_workspace_wallpaper_hint_local">L’image reste sur ce téléphone et s’affiche sur la page d’accueil.</string>

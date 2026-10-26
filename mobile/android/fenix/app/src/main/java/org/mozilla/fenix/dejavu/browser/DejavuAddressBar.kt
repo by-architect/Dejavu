@@ -32,7 +32,6 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
-import androidx.compose.runtime.staticCompositionLocalOf
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.composed
@@ -51,6 +50,7 @@ import androidx.compose.ui.semantics.contentDescription
 import androidx.compose.ui.semantics.customActions
 import androidx.compose.ui.semantics.role
 import androidx.compose.ui.semantics.semantics
+import androidx.compose.ui.text.TextLayoutResult
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
@@ -60,7 +60,6 @@ import mozilla.components.browser.state.selector.selectedTab
 import mozilla.components.browser.state.state.SecurityInfo
 import mozilla.components.browser.state.state.TabSessionState
 import mozilla.components.browser.toolbar.R as browserToolbarR
-import mozilla.components.compose.base.progressbar.AnimatedProgressBar
 import mozilla.components.compose.browser.toolbar.ActionContainer
 import mozilla.components.compose.browser.toolbar.R as toolbarR
 import mozilla.components.compose.browser.toolbar.concept.Action
@@ -98,10 +97,11 @@ import org.mozilla.fenix.dejavu.workspaces.SplitOrientation
 /**
  * Dejavu's address bar while a page is shown: only its state, like Safari's. A field in the app's colors shows the
  * page title in the middle, with the site's security icon next to it and the site's domain in small letters below it.
- * The tab's container, or the "no container" icon, sits at its start. The bar shows above pages or below them, as the
- * layout of the bars has it, see [BarsLayout], with the button the user chose on each side of the field; a side without
- * one leaves its room to the field. Tapping the bar starts a search, and long-pressing it copies the address or pastes
- * one. Where no actions bar opens the "More" menu, swiping the bar opens it; elsewhere swiping it does nothing.
+ * While the page loads, colors run through the domain's letters instead of a loading bar. The tab's container, or the
+ * "no container" icon, sits at its start. The bar shows above pages or below them, as the layout of the bars has it,
+ * see [BarsLayout], with the button the user chose on each side of the field; a side without one leaves its room to
+ * the field. Tapping the bar starts a search, and long-pressing it copies the address or pastes one. Where no actions
+ * bar opens the "More" menu, swiping the bar opens it; elsewhere swiping it does nothing.
  *
  * @param store The store of the address bar.
  */
@@ -120,6 +120,7 @@ fun DejavuAddressBar(store: BrowserToolbarStore) {
     val hint = stringResource(origin.hint)
     val text = origin.url?.toString()?.takeIf { it.isNotBlank() } ?: origin.title?.takeIf { it.isNotBlank() } ?: hint
     val url by components.core.store.observeAsComposableState { it.selectedTab?.content?.url }
+    val loading by components.core.store.observeAsComposableState { it.selectedTab?.content?.loading == true }
     val haptic = LocalHapticFeedback.current
     var menuOpen by remember { mutableStateOf(false) }
     val theme = shownWorkspaceTheme()
@@ -149,20 +150,13 @@ fun DejavuAddressBar(store: BrowserToolbarStore) {
                     text = text,
                     isHint = text == hint,
                     url = url,
+                    loading = loading,
                     container = containerAction(),
                     pageActions = display.pageActionsStart,
                     onInteraction = { store.dispatch(it) },
                     modifier = Modifier.align(Alignment.Center),
                 )
             }
-        }
-        display.progressBarConfig?.let { config ->
-            AnimatedProgressBar(
-                progress = config.progress,
-                color = config.color,
-                trackColor = Color.Transparent,
-                modifier = Modifier.align(progressEdge(sides.layout)),
-            )
         }
         CompositionLocalProvider(LocalPopupTheme provides theme) {
             LongPressMenu(
@@ -241,6 +235,7 @@ private fun DejavuSplitAddressBar(store: BrowserToolbarStore, split: ShownSplit)
                 title = title,
                 isHint = title == hint,
                 url = tab.content.url,
+                loading = tab.content.loading,
                 container = container,
                 pageActions = pageActions,
                 onInteraction = onInteraction,
@@ -262,6 +257,7 @@ private fun DejavuSplitAddressBar(store: BrowserToolbarStore, split: ShownSplit)
                         text = title,
                         isHint = title == hint,
                         url = tab.content.url,
+                        loading = tab.content.loading,
                         container = container,
                         pageActions = pageActions,
                         onInteraction = onInteraction,
@@ -269,18 +265,6 @@ private fun DejavuSplitAddressBar(store: BrowserToolbarStore, split: ShownSplit)
                     )
                 }
             }
-        }
-    }
-
-    @Composable
-    fun Progress(modifier: Modifier) {
-        display.progressBarConfig?.let { config ->
-            AnimatedProgressBar(
-                progress = config.progress,
-                color = config.color,
-                trackColor = Color.Transparent,
-                modifier = modifier,
-            )
         }
     }
 
@@ -311,15 +295,12 @@ private fun DejavuSplitAddressBar(store: BrowserToolbarStore, split: ShownSplit)
                     }
                 }
             }
-            Progress(Modifier.align(progressEdge(sides.layout)))
         } else {
             Row(modifier = Modifier.fillMaxSize()) {
                 shown.forEachIndexed { index, tab ->
                     val share = if (index == 0) split.fraction else 1f - split.fraction
-                    // Side by side, the page in focus shows its progress below its own field.
                     Box(modifier = Modifier.weight(share).fillMaxHeight()) {
                         Page(tab, Modifier.fillMaxSize())
-                        if (tab.id == selectedId) Progress(Modifier.align(progressEdge(sides.layout)))
                     }
                 }
             }
@@ -340,41 +321,32 @@ private fun DejavuSplitAddressBar(store: BrowserToolbarStore, split: ShownSplit)
 
 /**
  * A page of a split shown top and bottom, in a row of the address field: [container] at its start, the page's [title]
- * and the domain of [url] below it, and [pageActions] at its end.
+ * and the domain of [url] below it, with colors running through the domain while the page is [loading], and
+ * [pageActions] at its end.
  */
+@Suppress("LongParameterList")
 @Composable
 private fun SplitPageRow(
     title: String,
     isHint: Boolean,
     url: String,
+    loading: Boolean,
     container: Action?,
     pageActions: List<Action>,
     onInteraction: (BrowserToolbarEvent) -> Unit,
     modifier: Modifier = Modifier,
 ) {
-    val domain = domainOf(url)?.takeUnless { title.contains(it, ignoreCase = true) }
     Row(verticalAlignment = Alignment.CenterVertically, modifier = modifier.padding(horizontal = FIELD_PADDING)) {
         Box(contentAlignment = Alignment.Center, modifier = Modifier.size(SLOT_SIZE)) {
             ActionContainer(actions = listOfNotNull(container), onInteraction = onInteraction)
         }
         Column(modifier = Modifier.weight(1f).padding(end = TITLE_END_PADDING).clearAndSetSemantics {}) {
-            Text(
+            TitleAndDomain(
                 text = title,
-                style = MaterialTheme.typography.bodyMedium,
-                fontWeight = FontWeight.Medium,
                 color = if (isHint) MaterialTheme.colorScheme.onSurfaceVariant else MaterialTheme.colorScheme.onSurface,
-                maxLines = 1,
-                overflow = TextOverflow.Ellipsis,
+                domain = domainOf(url),
+                loading = loading,
             )
-            domain?.let {
-                Text(
-                    text = it,
-                    style = MaterialTheme.typography.labelSmall,
-                    color = MaterialTheme.colorScheme.onSurfaceVariant,
-                    maxLines = 1,
-                    overflow = TextOverflow.Ellipsis,
-                )
-            }
         }
         Box(contentAlignment = Alignment.Center, modifier = Modifier.size(SLOT_SIZE)) {
             ActionContainer(actions = pageActions, onInteraction = onInteraction)
@@ -397,6 +369,7 @@ internal fun DejavuAddressBarPreview(tab: TabSessionState) {
                     text = text,
                     isHint = text == hint,
                     url = tab.content.url,
+                    loading = tab.content.loading,
                     container = containerAction(tab.id),
                     pageActions = listOfNotNull(siteInfoPreview(tab)),
                     onInteraction = {},
@@ -527,25 +500,13 @@ private fun barActions(store: BrowserToolbarStore, layout: BarsLayout): List<Cus
     )
 }
 
-/** Whether the address bar floats over the bottom of the page, see [BelowPages]. */
-internal val LocalAddressBarFloats = staticCompositionLocalOf { false }
-
 /**
- * The rounded surface of a part of the address bar, [color] in [shape]. Below pages the bar floats over the page, so
- * there its parts get the outline the actions bar has, to stand out from the page.
+ * The rounded surface of a part of the address bar, [color] in [shape], with the outline the actions bar has, so it
+ * stands out from the page above pages as below them.
  */
 private fun Modifier.barSurface(shape: Shape, color: Color): Modifier = composed {
-    val surface = clip(shape).background(color)
-    if (LocalAddressBarFloats.current) {
-        surface.border(1.dp, MaterialTheme.colorScheme.onSurface.copy(alpha = BORDER_ALPHA), shape)
-    } else {
-        surface
-    }
+    clip(shape).background(color).border(1.dp, MaterialTheme.colorScheme.onSurface.copy(alpha = BORDER_ALPHA), shape)
 }
-
-/** The edge of the address bar its loading progress shows along: the one next to the page. */
-private fun progressEdge(layout: BarsLayout): Alignment =
-    if (layout.addressBarAtBottom) Alignment.TopCenter else Alignment.BottomCenter
 
 /** Starts a search from the address bar; one below pages keeps the search screen there, right above the keyboard. */
 private fun PageOrigin.startSearch(store: BrowserToolbarStore, layout: BarsLayout) {
@@ -557,19 +518,20 @@ private fun PageOrigin.startSearch(store: BrowserToolbarStore, layout: BarsLayou
 /**
  * The rounded field of the address bar: [container] at its start, [text] in the middle, with the domain of [url] in
  * small letters below the text unless the text already says it, and [pageActions], the site's security icon, at its
- * end.
+ * end. While the page is [loading], colors run through the domain's letters.
  */
+@Suppress("LongParameterList")
 @Composable
 private fun AddressField(
     text: String,
     isHint: Boolean,
     url: String?,
+    loading: Boolean,
     container: Action?,
     pageActions: List<Action>,
     onInteraction: (BrowserToolbarEvent) -> Unit,
     modifier: Modifier = Modifier,
 ) {
-    val domain = url?.let(::domainOf)?.takeUnless { text.contains(it, ignoreCase = true) }
     Row(
         verticalAlignment = Alignment.CenterVertically,
         modifier = modifier
@@ -587,33 +549,56 @@ private fun AddressField(
                 horizontalAlignment = Alignment.CenterHorizontally,
                 modifier = Modifier.padding(horizontal = TITLE_END_PADDING).clearAndSetSemantics {},
             ) {
-                Text(
+                TitleAndDomain(
                     text = text,
-                    style = MaterialTheme.typography.bodyMedium,
-                    fontWeight = FontWeight.Medium,
                     color = if (isHint) {
                         MaterialTheme.colorScheme.onSurfaceVariant
                     } else {
                         MaterialTheme.colorScheme.onSurface
                     },
-                    maxLines = 1,
-                    overflow = TextOverflow.Ellipsis,
+                    domain = url?.let(::domainOf),
+                    loading = loading,
                 )
-                domain?.let {
-                    Text(
-                        text = it,
-                        style = MaterialTheme.typography.labelSmall,
-                        color = MaterialTheme.colorScheme.onSurfaceVariant,
-                        maxLines = 1,
-                        overflow = TextOverflow.Ellipsis,
-                    )
-                }
             }
         }
         // As wide as the container's slot, so the title stays in the middle.
         Box(contentAlignment = Alignment.Center, modifier = Modifier.size(SLOT_SIZE)) {
             ActionContainer(actions = pageActions, onInteraction = onInteraction)
         }
+    }
+}
+
+/**
+ * [text], a page's title, in [color], with its [domain] in small letters below it unless the text already says it.
+ * While the page is [loading], colors run through the domain's letters: those below the title, or those in it.
+ */
+@Composable
+private fun TitleAndDomain(text: String, color: Color, domain: String?, loading: Boolean) {
+    val inTitle = domain?.takeIf { text.contains(it, ignoreCase = true) }
+    val titleLayout = remember { arrayOfNulls<TextLayoutResult>(1) }
+    Text(
+        text = text,
+        style = MaterialTheme.typography.bodyMedium,
+        fontWeight = FontWeight.Medium,
+        color = color,
+        maxLines = 1,
+        overflow = TextOverflow.Ellipsis,
+        onTextLayout = { titleLayout[0] = it },
+        modifier = if (inTitle != null) {
+            Modifier.loadingColors(loading) { titleLayout[0]?.rangeOf(text, inTitle) }
+        } else {
+            Modifier
+        },
+    )
+    if (domain != null && inTitle == null) {
+        Text(
+            text = domain,
+            style = MaterialTheme.typography.labelSmall,
+            color = MaterialTheme.colorScheme.onSurfaceVariant,
+            maxLines = 1,
+            overflow = TextOverflow.Ellipsis,
+            modifier = Modifier.loadingColors(loading),
+        )
     }
 }
 

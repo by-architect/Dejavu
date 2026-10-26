@@ -16,6 +16,7 @@ import java.io.File
 import java.util.UUID
 import kotlin.math.max
 import kotlin.math.min
+import kotlin.math.pow
 import kotlin.math.roundToInt
 import kotlin.math.sqrt
 import kotlinx.coroutines.CoroutineScope
@@ -31,20 +32,26 @@ import org.json.JSONArray
 import org.json.JSONObject
 
 /**
- * A picture a workspace shows on the home screen in place of its theme's gradient.
+ * A picture a workspace shows on the home screen in place of its theme's gradient, under a veil of its own colors that
+ * keeps the text over it easy to read.
  *
  * @param file The picture's name in the folder of [WorkspaceWallpapers].
- * @param blur How blurred the picture is, from sharp at 0 to the most blurred at 1.
+ * @param intensity How strongly the picture shows through its veil, from the most veiled at 0 to the clearest at 1.
  * @param colors The colors of the gradient that sums up the picture, which the workspace takes as its theme so that
  * Zen, which syncs themes but not pictures, shows the same colors. Empty until they are taken from the picture.
+ * @param light How light the lightest parts of the picture are, as a relative luminance: a tenth of it is lighter.
+ * @param dark How dark the darkest parts of the picture are: a tenth of it is darker. Both are `null` until they are
+ * taken from the picture.
  */
 data class WorkspaceWallpaper(
     val file: String,
-    val blur: Float = DEFAULT_BLUR,
+    val intensity: Float = DEFAULT_INTENSITY,
     val colors: List<Int> = emptyList(),
+    val light: Float? = null,
+    val dark: Float? = null,
 ) {
     companion object {
-        const val DEFAULT_BLUR = 0.4f
+        const val DEFAULT_INTENSITY = 0.6f
     }
 }
 
@@ -64,7 +71,7 @@ class WorkspaceWallpapers private constructor(context: Context) {
     init {
         io.launch {
             deleteUnusedPictures()
-            addMissingColors()
+            addMissingLooks()
         }
     }
 
@@ -94,21 +101,21 @@ class WorkspaceWallpapers private constructor(context: Context) {
 
     /**
      * Copies the picture at [uri] into the app's files, upright and just big enough to cover a screen of
-     * [screenWidth] by [screenHeight] pixels, and returns a wallpaper of it with the colors of the part the screen
-     * shows; `null` when it cannot be read.
+     * [screenWidth] by [screenHeight] pixels, and returns a wallpaper of it with the colors and the shades of the part
+     * the screen shows; `null` when it cannot be read.
      */
     suspend fun importPicture(uri: Uri, screenWidth: Int, screenHeight: Int): WorkspaceWallpaper? =
         withContext(Dispatchers.IO) {
             runCatching {
                 val picture = decodeUpright(uri, screenWidth, screenHeight) ?: return@runCatching null
-                val colors = picture.gradientColors(screenWidth, screenHeight)
+                val look = picture.lookOnScreen(screenWidth, screenHeight)
                 val name = "${UUID.randomUUID()}.jpg"
                 val file = pictureFile(name)
                 file.parentFile?.mkdirs()
                 val written = file.outputStream().use { picture.compress(Bitmap.CompressFormat.JPEG, JPEG_QUALITY, it) }
                 picture.recycle()
                 if (!written) file.delete()
-                WorkspaceWallpaper(file = name, colors = colors).takeIf { written }
+                look.applyTo(WorkspaceWallpaper(file = name)).takeIf { written }
             }.getOrNull()
         }
 
@@ -139,24 +146,25 @@ class WorkspaceWallpapers private constructor(context: Context) {
         File(appContext.filesDir, FOLDER).listFiles()?.filter { it.name !in used }?.forEach { it.delete() }
     }
 
-    /** Takes the colors of the pictures of wallpapers saved without them, before wallpapers had colors. */
-    private fun addMissingColors() {
+    /**
+     * Takes the colors and the shades of the pictures of wallpapers saved without them, before wallpapers had colors,
+     * and before they had shades.
+     */
+    private fun addMissingLooks() {
         val screen = appContext.resources.displayMetrics
-        val found = _wallpapers.value.values.filter { it.colors.isEmpty() }.mapNotNull { wallpaper ->
+        val missing = _wallpapers.value.values.filter { it.colors.isEmpty() || it.light == null }
+        val found = missing.mapNotNull { wallpaper ->
             val options = BitmapFactory.Options().apply { inSampleSize = COLOR_SAMPLE_SIZE }
             val picture = runCatching { BitmapFactory.decodeFile(pictureFile(wallpaper.file).path, options) }
                 .getOrNull() ?: return@mapNotNull null
-            val colors = picture.gradientColors(screen.widthPixels, screen.heightPixels)
+            val look = picture.lookOnScreen(screen.widthPixels, screen.heightPixels)
             picture.recycle()
-            colors.takeIf { it.isNotEmpty() }?.let { wallpaper.file to it }
+            wallpaper.file to look
         }.toMap()
         if (found.isEmpty()) return
         var changed: Map<String, WorkspaceWallpaper>? = null
         _wallpapers.update { old ->
-            val new = old.mapValues { (_, wallpaper) ->
-                val colors = found[wallpaper.file]?.takeIf { wallpaper.colors.isEmpty() }
-                colors?.let { wallpaper.copy(colors = it) } ?: wallpaper
-            }
+            val new = old.mapValues { (_, wallpaper) -> found[wallpaper.file]?.applyTo(wallpaper) ?: wallpaper }
             changed = new.takeIf { new != old }
             new
         }
@@ -181,8 +189,13 @@ class WorkspaceWallpapers private constructor(context: Context) {
 }
 
 private const val KEY_FILE = "file"
-private const val KEY_BLUR = "blur"
+private const val KEY_INTENSITY = "intensity"
 private const val KEY_COLORS = "colors"
+private const val KEY_LIGHT = "light"
+private const val KEY_DARK = "dark"
+
+// Before wallpapers had a veil, they were blurred, as much as this said: the more blurred, the less they showed.
+private const val KEY_BLUR = "blur"
 
 /** As many colors as a theme synced with Zen can have. */
 private const val GRADIENT_COLORS = 3
@@ -194,6 +207,16 @@ private const val MIN_COLOR_DISTANCE = 40.0
 
 /** How much more a vivid color counts than a gray one covering as much of the picture. */
 private const val VIVID_WEIGHT = 3f
+
+/** The share of a picture lighter than its light end, and darker than its dark end. */
+private const val SHADE_SHARE = 0.1f
+private const val SRGB_KNEE = 0.04045f
+private const val SRGB_SLOPE = 12.92f
+private const val SRGB_OFFSET = 0.055f
+private const val SRGB_GAMMA = 2.4f
+private const val LUMA_RED = 0.2126f
+private const val LUMA_GREEN = 0.7152f
+private const val LUMA_BLUE = 0.0722f
 private const val COLOR_SAMPLE_SIZE = 4
 private const val QUARTER_TURN = 90f
 
@@ -212,15 +235,25 @@ internal fun readWallpapers(json: String?): Map<String, WorkspaceWallpaper> {
         // Only a bare file name, so a wallpaper can never point out of its folder.
         val file = item.optString(KEY_FILE).takeIf { it.isNotEmpty() && File(it).name == it } ?: return@mapNotNull null
         val colors = item.optJSONArray(KEY_COLORS)
+        val intensity = when {
+            item.has(KEY_INTENSITY) -> item.optDouble(KEY_INTENSITY).toFloat()
+            item.has(KEY_BLUR) -> 1f - item.optDouble(KEY_BLUR).toFloat()
+            else -> WorkspaceWallpaper.DEFAULT_INTENSITY
+        }
         workspaceId to WorkspaceWallpaper(
             file = file,
-            blur = item.optDouble(KEY_BLUR, WorkspaceWallpaper.DEFAULT_BLUR.toDouble()).toFloat().coerceIn(0f, 1f),
+            intensity = intensity.takeUnless { it.isNaN() }?.coerceIn(0f, 1f) ?: WorkspaceWallpaper.DEFAULT_INTENSITY,
             colors = (0 until (colors?.length() ?: 0))
                 .mapNotNull { (colors?.opt(it) as? Number)?.toInt() }
                 .take(GRADIENT_COLORS),
+            light = item.optShade(KEY_LIGHT),
+            dark = item.optShade(KEY_DARK),
         )
     }.toMap()
 }
+
+private fun JSONObject.optShade(key: String): Float? =
+    (opt(key) as? Number)?.toFloat()?.takeUnless { it.isNaN() }?.coerceIn(0f, 1f)
 
 internal fun writeWallpapers(wallpapers: Map<String, WorkspaceWallpaper>): String = JSONObject().apply {
     wallpapers.forEach { (workspaceId, wallpaper) ->
@@ -228,8 +261,12 @@ internal fun writeWallpapers(wallpapers: Map<String, WorkspaceWallpaper>): Strin
             workspaceId,
             JSONObject()
                 .put(KEY_FILE, wallpaper.file)
-                .put(KEY_BLUR, wallpaper.blur.toDouble())
-                .put(KEY_COLORS, JSONArray(wallpaper.colors)),
+                .put(KEY_INTENSITY, wallpaper.intensity.toDouble())
+                .put(KEY_COLORS, JSONArray(wallpaper.colors))
+                .apply {
+                    wallpaper.light?.let { put(KEY_LIGHT, it.toDouble()) }
+                    wallpaper.dark?.let { put(KEY_DARK, it.toDouble()) }
+                },
         )
     }
 }.toString()
@@ -304,8 +341,18 @@ internal fun gradientColorsOf(pixels: IntArray, width: Int, height: Int): List<I
     return colors
 }
 
-/** [gradientColorsOf] the part of this picture that covers a screen of [screenWidth] by [screenHeight] pixels. */
-private fun Bitmap.gradientColors(screenWidth: Int, screenHeight: Int): List<Int> {
+/** How a picture looks on the screen: the [colors] of its gradient, and how [light] and [dark] it is at its ends. */
+private class PictureLook(val colors: List<Int>, val light: Float?, val dark: Float?) {
+    /** [wallpaper] with this look, keeping colors and shades it had when none were found. */
+    fun applyTo(wallpaper: WorkspaceWallpaper) = wallpaper.copy(
+        colors = wallpaper.colors.ifEmpty { colors },
+        light = light ?: wallpaper.light,
+        dark = dark ?: wallpaper.dark,
+    )
+}
+
+/** How the part of this picture that covers a screen of [screenWidth] by [screenHeight] pixels looks. */
+private fun Bitmap.lookOnScreen(screenWidth: Int, screenHeight: Int): PictureLook {
     val scale = max(screenWidth.toFloat() / width, screenHeight.toFloat() / height)
     val shownWidth = screenWidth / scale
     val shownHeight = screenHeight / scale
@@ -317,7 +364,31 @@ private fun Bitmap.gradientColors(screenWidth: Int, screenHeight: Int): List<Int
         val y = top + (index / SAMPLE_COLUMNS + 0.5f) * shownHeight / rows
         getPixel(x.toInt().coerceIn(0, width - 1), y.toInt().coerceIn(0, height - 1))
     }
-    return gradientColorsOf(pixels, SAMPLE_COLUMNS, rows)
+    val shades = shadesOf(pixels)
+    return PictureLook(gradientColorsOf(pixels, SAMPLE_COLUMNS, rows), shades?.first, shades?.second)
+}
+
+/**
+ * How light the lightest tenth of [pixels] is and how dark the darkest tenth is, as relative luminances; `null` for a
+ * see-through picture.
+ */
+internal fun shadesOf(pixels: IntArray): Pair<Float, Float>? {
+    val luminances = pixels.filter { it ushr 24 >= MIN_ALPHA }.map(::luminanceOf).sorted()
+    if (luminances.isEmpty()) return null
+    val last = luminances.size - 1
+    return luminances[(last * (1f - SHADE_SHARE)).roundToInt()] to luminances[(last * SHADE_SHARE).roundToInt()]
+}
+
+/** The relative luminance of the color [argb], from 0 for black to 1 for white. */
+private fun luminanceOf(argb: Int): Float {
+    fun linear(channel: Int): Float {
+        val value = channel / CHANNEL_MAX.toFloat()
+        if (value <= SRGB_KNEE) return value / SRGB_SLOPE
+        return ((value + SRGB_OFFSET) / (1 + SRGB_OFFSET)).pow(SRGB_GAMMA)
+    }
+    return LUMA_RED * linear((argb shr 16) and CHANNEL_MAX) +
+        LUMA_GREEN * linear((argb shr 8) and CHANNEL_MAX) +
+        LUMA_BLUE * linear(argb and CHANNEL_MAX)
 }
 
 private fun opaque(red: Int, green: Int, blue: Int): Int =

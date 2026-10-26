@@ -444,7 +444,6 @@
     <string name="dejavu_workspace_wallpaper_hint">تصویر روی همین گوشی می‌ماند و در صفحهٔ اصلی نمایش داده می‌شود. رنگ‌هایش به پوسته‌ای تبدیل می‌شوند که با Zen همگام‌سازی می‌شود.</string>
     <string name="dejavu_workspace_wallpaper_choose">انتخاب یک تصویر</string>
     <string name="dejavu_workspace_wallpaper_change">تغییر</string>
-    <string name="dejavu_workspace_wallpaper_blur">محوشدگی</string>
     <string name="dejavu_workspace_wallpaper_failed">باز کردن این تصویر ممکن نشد.</string>
     <string name="dejavu_workspace_wallpaper_colors">رنگ‌هایی که با Zen همگام‌سازی می‌شوند</string>
     <string name="dejavu_workspace_wallpaper_hint_local">تصویر روی همین گوشی می‌ماند و در صفحهٔ اصلی نمایش داده می‌شود.</string>

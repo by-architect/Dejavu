@@ -247,6 +247,7 @@ fun DejavuHome(
     SecureWindowWhile(privatePageShown)
     val currentWorkspace = state.workspaces.getOrNull(pagerState.currentPage) ?: state.workspaces.last()
     val tabsById = remember(tabs) { tabs.associateBy { it.id } }
+    val openTabIds = tabsById.keys
     // The workspace of a device on the account shows what the device has, which has no essentials.
     val essentials = if (onPrivatePage || currentWorkspace.device != null) {
         emptyList()
@@ -263,6 +264,16 @@ fun DejavuHome(
 
     // A wallpaper takes the place of its workspace's gradient, whose colors were taken from it.
     fun gradientAt(page: Int): WorkspaceTheme? = themeAt(page).takeIf { wallpaperAt(page) == null }
+
+    // Wallpapers show sharp under a veil of their own colors, which keeps the text over them easy to read.
+    val surface = MaterialTheme.colorScheme.surface
+    val onSurface = MaterialTheme.colorScheme.onSurface
+    val veils = remember(wallpapers, surface, onSurface) {
+        wallpapers.mapValues { (_, wallpaper) -> veilOf(wallpaper, surface, onSurface) }
+    }
+
+    fun veilAt(page: Int): Veil? =
+        if (page == privateIndex) null else state.workspaces.getOrNull(page)?.let { veils[it.id] }
 
     // Like Zen, there is only one private workspace: asking for a private tab elsewhere leads to it once it exists.
     val newPrivateTab: () -> Unit = {
@@ -452,18 +463,22 @@ fun DejavuHome(
     // Dialogs and menus take on the look of the workspace they open over.
     CompositionLocalProvider(LocalPopupTheme provides themeAt(pagerState.currentPage)) {
         // The wallpapers and the theme are drawn behind the system bars too, with the content kept clear of them.
-        val surface = MaterialTheme.colorScheme.surface
         Box(modifier = modifier.fillMaxSize().background(surface)) {
             if (wallpapers.isNotEmpty()) WallpaperLayers(pagerState, ::wallpaperAt)
-            // The theme over the plain background, which lightly covers the wallpapers too.
+            // The theme over the plain background, or the veil over a wallpaper.
             Box(
                 modifier = Modifier
                     .fillMaxSize()
-                    .graphicsLayer { alpha = coverAt(pagerState.position, ::wallpaperAt) }
+                    .graphicsLayer { alpha = coverAt(pagerState.position) { veilAt(it)?.alpha ?: 1f } }
                     .drawBehind {
                         val position = pagerState.position
                         val page = floor(position).toInt()
-                        if (wallpaperAt(page) != null || wallpaperAt(page + 1) != null) drawRect(surface)
+                        val veil = veilAt(page)
+                        val nextVeil = veilAt(page + 1)
+                        if (veil != null || nextVeil != null) {
+                            val plain = listOf(surface)
+                            drawVeil(veil?.colors ?: plain, nextVeil?.colors ?: plain, position - page)
+                        }
                         drawWorkspaceTheme(
                             theme = gradientAt(page),
                             next = gradientAt(page + 1),
@@ -641,6 +656,7 @@ fun DejavuHome(
                             hasClosedTab = hasClosedTab,
                             hasClipboardLink = hasClipboardLink,
                             revealTabId = revealTabId,
+                            openTabIds = openTabIds,
                         )
                     }
 

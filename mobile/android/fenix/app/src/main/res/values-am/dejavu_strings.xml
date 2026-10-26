@@ -444,7 +444,6 @@
     <string name="dejavu_workspace_wallpaper_hint">ምስሉ በዚህ ስልክ ላይ ይቆያል እና በመነሻ ገጹ ላይ ይታያል። ቀለሞቹ ከZen ጋር የሚመሳሰለው ገጽታ ይሆናሉ።</string>
     <string name="dejavu_workspace_wallpaper_choose">ምስል ምረጥ</string>
     <string name="dejavu_workspace_wallpaper_change">ቀይር</string>
-    <string name="dejavu_workspace_wallpaper_blur">ብዥታ</string>
     <string name="dejavu_workspace_wallpaper_failed">ይህን ምስል መክፈት አልተቻለም።</string>
     <string name="dejavu_workspace_wallpaper_colors">ከZen ጋር የሚመሳሰሉ ቀለሞች</string>
     <string name="dejavu_workspace_wallpaper_hint_local">ምስሉ በዚህ ስልክ ላይ ይቆያል እና በመነሻ ገጹ ላይ ይታያል።</string>

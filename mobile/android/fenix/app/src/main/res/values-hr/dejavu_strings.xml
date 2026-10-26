@@ -452,7 +452,6 @@
     <string name="dejavu_workspace_wallpaper_hint">Slika ostaje na ovom telefonu i prikazuje se na početnoj stranici. Njezine boje postaju tema koja se sinkronizira sa Zenom.</string>
     <string name="dejavu_workspace_wallpaper_choose">Odaberi sliku</string>
     <string name="dejavu_workspace_wallpaper_change">Promijeni</string>
-    <string name="dejavu_workspace_wallpaper_blur">Zamućenje</string>
     <string name="dejavu_workspace_wallpaper_failed">Ovu sliku nije moguće otvoriti.</string>
     <string name="dejavu_workspace_wallpaper_colors">Boje koje se sinkroniziraju sa Zenom</string>
     <string name="dejavu_workspace_wallpaper_hint_local">Slika ostaje na ovom telefonu i prikazuje se na početnoj stranici.</string>

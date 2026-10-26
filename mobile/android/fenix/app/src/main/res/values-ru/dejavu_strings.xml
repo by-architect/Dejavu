@@ -460,7 +460,6 @@
     <string name="dejavu_workspace_wallpaper_hint">Изображение остаётся на этом телефоне и показывается на главной странице. Его цвета становятся темой, которая синхронизируется с Zen.</string>
     <string name="dejavu_workspace_wallpaper_choose">Выбрать изображение</string>
     <string name="dejavu_workspace_wallpaper_change">Изменить</string>
-    <string name="dejavu_workspace_wallpaper_blur">Размытие</string>
     <string name="dejavu_workspace_wallpaper_failed">Не удалось открыть это изображение.</string>
     <string name="dejavu_workspace_wallpaper_colors">Цвета, которые синхронизируются с Zen</string>
     <string name="dejavu_workspace_wallpaper_hint_local">Изображение остаётся на этом телефоне и показывается на главной странице.</string>

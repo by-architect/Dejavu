@@ -391,7 +391,7 @@ internal class GenieView(context: Context, val button: PageGenie.Button, private
         val into = buttonBounds?.translate(offset)
         val step = if (into == null) 0f else tau
         genieMesh(target, into ?: target, step, MESH_COLUMNS, MESH_ROWS, verts)
-        val alpha = (1f - smoothstep(VANISH_FROM, 1f, step)) * shown
+        val alpha = genieAlpha(step) * shown
         if (alpha <= 0f) return
         paint.alpha = (alpha.coerceIn(0f, 1f) * 255).roundToInt()
         canvas.drawBitmapMesh(page ?: plain, MESH_COLUMNS, MESH_ROWS, verts, 0, null, 0, paint)
@@ -405,27 +405,46 @@ internal class GenieView(context: Context, val button: PageGenie.Button, private
  * upwards.
  */
 internal fun genieMesh(page: Rect, button: Rect, tau: Float, columns: Int, rows: Int, verts: FloatArray) {
-    val bend = smoothstep(0f, BEND_END, tau)
-    val slide = smoothstep(SLIDE_START, 1f, tau)
-    val downwards = button.center.y >= page.center.y
-    val top = lerp(page.top, button.top, slide)
-    val bottom = lerp(page.bottom, button.bottom, slide)
-    // The funnel narrows between the page's far edge and the near edge of the button.
-    val neckFrom = if (downwards) page.top else page.bottom
-    val neckTo = if (downwards) button.top else button.bottom
     var i = 0
     for (row in 0..rows) {
-        val y = lerp(top, bottom, row.toFloat() / rows)
-        val along = if (neckTo == neckFrom) 1f else ((y - neckFrom) / (neckTo - neckFrom)).coerceIn(0f, 1f)
-        val narrowing = bend * smoothstep(0f, 1f, along)
-        val left = lerp(page.left, button.left, narrowing)
-        val right = lerp(page.right, button.right, narrowing)
+        val line = genieLine(page, button, tau, row.toFloat() / rows)
         for (column in 0..columns) {
-            verts[i++] = lerp(left, right, column.toFloat() / columns)
-            verts[i++] = y
+            verts[i++] = lerp(line.start, line.end, column.toFloat() / columns)
+            verts[i++] = line.along
         }
     }
 }
+
+/**
+ * A line across a page in a genie, see [genieMesh]: [along] is where it is down the funnel, and it spans from [start]
+ * to [end] across it.
+ */
+internal class GenieLine(val along: Float, val start: Float, val end: Float)
+
+/**
+ * Where the line across [page] [fraction] of the way down it goes in the genie that draws the page [tau] of the way
+ * into [button], see [genieMesh]. Unless [downThePage], the funnel runs along the page from its start to its end
+ * instead, like for a row going into a button at its end: then [GenieLine.along] is across the screen, and the line
+ * spans from top to bottom.
+ */
+internal fun genieLine(page: Rect, button: Rect, tau: Float, fraction: Float, downThePage: Boolean = true): GenieLine {
+    if (!downThePage) return genieLine(page.transposed(), button.transposed(), tau, fraction)
+    val bend = smoothstep(0f, BEND_END, tau)
+    val slide = smoothstep(SLIDE_START, 1f, tau)
+    val downwards = button.center.y >= page.center.y
+    val y = lerp(lerp(page.top, button.top, slide), lerp(page.bottom, button.bottom, slide), fraction)
+    // The funnel narrows between the page's far edge and the near edge of the button.
+    val neckFrom = if (downwards) page.top else page.bottom
+    val neckTo = if (downwards) button.top else button.bottom
+    val along = if (neckTo == neckFrom) 1f else ((y - neckFrom) / (neckTo - neckFrom)).coerceIn(0f, 1f)
+    val narrowing = bend * smoothstep(0f, 1f, along)
+    return GenieLine(y, lerp(page.left, button.left, narrowing), lerp(page.right, button.right, narrowing))
+}
+
+/** How much of a genie still shows [tau] of the way into its button: it fades as it goes in. */
+internal fun genieAlpha(tau: Float): Float = 1f - smoothstep(VANISH_FROM, 1f, tau)
+
+private fun Rect.transposed() = Rect(top, left, bottom, right)
 
 private fun smoothstep(from: Float, to: Float, value: Float): Float {
     val t = ((value - from) / (to - from)).coerceIn(0f, 1f)

@@ -444,7 +444,6 @@
     <string name="dejavu_workspace_wallpaper_hint">Şəkil bu telefonda qalır və ana səhifədə göstərilir. Onun rəngləri Zen ilə sinxronlaşdırılan temaya çevrilir.</string>
     <string name="dejavu_workspace_wallpaper_choose">Şəkil seç</string>
     <string name="dejavu_workspace_wallpaper_change">Dəyiş</string>
-    <string name="dejavu_workspace_wallpaper_blur">Bulanıqlıq</string>
     <string name="dejavu_workspace_wallpaper_failed">Bu şəkli açmaq mümkün olmadı.</string>
     <string name="dejavu_workspace_wallpaper_colors">Zen ilə sinxronlaşdırılan rənglər</string>
     <string name="dejavu_workspace_wallpaper_hint_local">Şəkil bu telefonda qalır və ana səhifədə göstərilir.</string>

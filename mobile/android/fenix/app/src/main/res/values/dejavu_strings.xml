@@ -96,7 +96,6 @@
     <string name="dejavu_workspace_wallpaper_hint">The picture stays on this phone and shows on the home screen. Its colors become the theme that syncs with Zen.</string>
     <string name="dejavu_workspace_wallpaper_choose">Choose a picture</string>
     <string name="dejavu_workspace_wallpaper_change">Change</string>
-    <string name="dejavu_workspace_wallpaper_blur">Blur</string>
     <string name="dejavu_workspace_wallpaper_failed">This picture could not be opened.</string>
     <string name="dejavu_workspace_wallpaper_colors">Colors that sync with Zen</string>
     <!-- Edit workspace dialog: what the wallpaper section says when the workspace's theme does not sync with Zen. -->

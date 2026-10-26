@@ -444,7 +444,6 @@
     <string name="dejavu_workspace_wallpaper_hint">Պատկերը մնում է այս հեռախոսում և ցուցադրվում է գլխավոր էջում։ Դրա գույները դառնում են այն թեման, որը համաժամացվում է Zen֊ի հետ։</string>
     <string name="dejavu_workspace_wallpaper_choose">Ընտրել պատկեր</string>
     <string name="dejavu_workspace_wallpaper_change">Փոխել</string>
-    <string name="dejavu_workspace_wallpaper_blur">Լղոզում</string>
     <string name="dejavu_workspace_wallpaper_failed">Չհաջողվեց բացել այս պատկերը։</string>
     <string name="dejavu_workspace_wallpaper_colors">Գույներ, որոնք համաժամացվում են Zen֊ի հետ</string>
     <string name="dejavu_workspace_wallpaper_hint_local">Պատկերը մնում է այս հեռախոսում և ցուցադրվում է գլխավոր էջում։</string>

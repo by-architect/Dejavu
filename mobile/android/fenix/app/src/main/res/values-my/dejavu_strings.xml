@@ -436,7 +436,6 @@
     <string name="dejavu_workspace_wallpaper_hint">ပုံသည် ဤဖုန်းတွင်သာ ရှိနေပြီး ပင်မစာမျက်နှာတွင် ပြသမည်။ ၎င်း၏ အရောင်များသည် Zen နှင့် စင့်ခ်ချသော ပုံစံ ဖြစ်လာမည်။</string>
     <string name="dejavu_workspace_wallpaper_choose">ပုံတစ်ပုံ ရွေးရန်</string>
     <string name="dejavu_workspace_wallpaper_change">ပြောင်းရန်</string>
-    <string name="dejavu_workspace_wallpaper_blur">မှုန်ဝါးမှု</string>
     <string name="dejavu_workspace_wallpaper_failed">ဤပုံကို ဖွင့်၍ မရပါ။</string>
     <string name="dejavu_workspace_wallpaper_colors">Zen နှင့် စင့်ခ်ချသော အရောင်များ</string>
     <string name="dejavu_workspace_wallpaper_hint_local">ပုံသည် ဤဖုန်းတွင်သာ ရှိနေပြီး ပင်မစာမျက်နှာတွင် ပြသမည်။</string>

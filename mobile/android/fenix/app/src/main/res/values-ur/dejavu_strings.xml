@@ -444,7 +444,6 @@
     <string name="dejavu_workspace_wallpaper_hint">تصویر اسی فون پر رہتی ہے اور ہوم پیج پر دکھائی دیتی ہے۔ اس کے رنگ وہ تھیم بن جاتے ہیں جو Zen کے ساتھ ہم وقت ہوتی ہے۔</string>
     <string name="dejavu_workspace_wallpaper_choose">تصویر منتخب کریں</string>
     <string name="dejavu_workspace_wallpaper_change">تبدیل کریں</string>
-    <string name="dejavu_workspace_wallpaper_blur">دھندلاپن</string>
     <string name="dejavu_workspace_wallpaper_failed">یہ تصویر نہیں کھولی جا سکی۔</string>
     <string name="dejavu_workspace_wallpaper_colors">Zen کے ساتھ ہم وقت ہونے والے رنگ</string>
     <string name="dejavu_workspace_wallpaper_hint_local">تصویر اسی فون پر رہتی ہے اور ہوم پیج پر دکھائی دیتی ہے۔</string>

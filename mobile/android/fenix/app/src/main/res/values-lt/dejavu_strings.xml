@@ -460,7 +460,6 @@
     <string name="dejavu_workspace_wallpaper_hint">Paveikslėlis lieka šiame telefone ir rodomas pradžios puslapyje. Jo spalvos tampa tema, kuri sinchronizuojama su Zen.</string>
     <string name="dejavu_workspace_wallpaper_choose">Pasirinkti paveikslėlį</string>
     <string name="dejavu_workspace_wallpaper_change">Keisti</string>
-    <string name="dejavu_workspace_wallpaper_blur">Suliejimas</string>
     <string name="dejavu_workspace_wallpaper_failed">Nepavyko atverti šio paveikslėlio.</string>
     <string name="dejavu_workspace_wallpaper_colors">Spalvos, sinchronizuojamos su Zen</string>
     <string name="dejavu_workspace_wallpaper_hint_local">Paveikslėlis lieka šiame telefone ir rodomas pradžios puslapyje.</string>

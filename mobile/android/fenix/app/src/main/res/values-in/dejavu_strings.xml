@@ -436,7 +436,6 @@
     <string name="dejavu_workspace_wallpaper_hint">Gambar tetap ada di ponsel ini dan ditampilkan di beranda. Warnanya menjadi tema yang disinkronkan dengan Zen.</string>
     <string name="dejavu_workspace_wallpaper_choose">Pilih gambar</string>
     <string name="dejavu_workspace_wallpaper_change">Ubah</string>
-    <string name="dejavu_workspace_wallpaper_blur">Buram</string>
     <string name="dejavu_workspace_wallpaper_failed">Gambar ini tidak dapat dibuka.</string>
     <string name="dejavu_workspace_wallpaper_colors">Warna yang disinkronkan dengan Zen</string>
     <string name="dejavu_workspace_wallpaper_hint_local">Gambar tetap ada di ponsel ini dan ditampilkan di beranda.</string>

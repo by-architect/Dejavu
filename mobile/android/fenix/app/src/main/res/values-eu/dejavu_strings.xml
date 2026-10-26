@@ -444,7 +444,6 @@
     <string name="dejavu_workspace_wallpaper_hint">Irudia telefono honetan geratzen da eta hasierako orrian erakusten da. Bere koloreak Zenekin sinkronizatzen den gaia bihurtzen dira.</string>
     <string name="dejavu_workspace_wallpaper_choose">Aukeratu irudi bat</string>
     <string name="dejavu_workspace_wallpaper_change">Aldatu</string>
-    <string name="dejavu_workspace_wallpaper_blur">Lausotzea</string>
     <string name="dejavu_workspace_wallpaper_failed">Ezin izan da irudi hau ireki.</string>
     <string name="dejavu_workspace_wallpaper_colors">Zenekin sinkronizatzen diren koloreak</string>
     <string name="dejavu_workspace_wallpaper_hint_local">Irudia telefono honetan geratzen da eta hasierako orrian erakusten da.</string>

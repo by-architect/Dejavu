@@ -436,7 +436,6 @@
     <string name="dejavu_workspace_wallpaper_hint">이미지는 이 휴대폰에만 저장되며 홈 화면에 표시됩니다. 이미지의 색상은 Zen과 동기화되는 테마가 됩니다.</string>
     <string name="dejavu_workspace_wallpaper_choose">이미지 선택</string>
     <string name="dejavu_workspace_wallpaper_change">변경</string>
-    <string name="dejavu_workspace_wallpaper_blur">흐림 효과</string>
     <string name="dejavu_workspace_wallpaper_failed">이 이미지를 열 수 없습니다.</string>
     <string name="dejavu_workspace_wallpaper_colors">Zen과 동기화되는 색상</string>
     <string name="dejavu_workspace_wallpaper_hint_local">이미지는 이 휴대폰에만 저장되며 홈 화면에 표시됩니다.</string>

@@ -10,7 +10,6 @@ import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.runtime.Composable
-import androidx.compose.runtime.CompositionLocalProvider
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.remember
@@ -105,13 +104,13 @@ fun DejavuBottomBar(store: BrowserToolbarStore, onEvent: (BrowserToolbarEvent) -
 }
 
 /**
- * Places the address bar below pages, above the navigation bar also while it is hidden, where it floats over the page,
- * see [LocalAddressBarFloats].
+ * Places the address bar below pages, above the navigation bar also while it is hidden, where it floats over the
+ * page.
  */
 @Composable
 internal fun BelowPages(content: @Composable () -> Unit) {
     Box(modifier = Modifier.navigationBarRoomPadding().padding(bottom = BOTTOM_ADDRESS_BAR_MARGIN)) {
-        CompositionLocalProvider(LocalAddressBarFloats provides true, content = content)
+        content()
     }
 }
 

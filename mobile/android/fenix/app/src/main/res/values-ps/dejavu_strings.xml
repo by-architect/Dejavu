@@ -444,7 +444,6 @@
     <string name="dejavu_workspace_wallpaper_hint">انځور په دې تلیفون کې پاتې کېږي او په کور پاڼه کې ښکاري. د هغه رنګونه هغه طرح جوړوي چې له Zen سره همغږي کېږي.</string>
     <string name="dejavu_workspace_wallpaper_choose">انځور ټاکل</string>
     <string name="dejavu_workspace_wallpaper_change">بدلول</string>
-    <string name="dejavu_workspace_wallpaper_blur">تتوالی</string>
     <string name="dejavu_workspace_wallpaper_failed">دا انځور خلاص نه شو.</string>
     <string name="dejavu_workspace_wallpaper_colors">هغه رنګونه چې له Zen سره همغږي کېږي</string>
     <string name="dejavu_workspace_wallpaper_hint_local">انځور په دې تلیفون کې پاتې کېږي او په کور پاڼه کې ښکاري.</string>

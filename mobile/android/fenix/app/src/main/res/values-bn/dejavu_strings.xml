@@ -477,7 +477,6 @@
     <string name="dejavu_workspace_wallpaper_hint">ছবিটি এই ফোনেই থাকে এবং হোম পাতায় দেখায়। এর রংগুলো সেই থিম হয়ে যায়, যা Zen-এর সাথে Sync হয়।</string>
     <string name="dejavu_workspace_wallpaper_choose">একটি ছবি বেছে নিন</string>
     <string name="dejavu_workspace_wallpaper_change">পরিবর্তন করুন</string>
-    <string name="dejavu_workspace_wallpaper_blur">ব্লার</string>
     <string name="dejavu_workspace_wallpaper_failed">এই ছবিটি খোলা যায়নি।</string>
     <string name="dejavu_workspace_wallpaper_colors">যে রংগুলো Zen-এর সাথে Sync হয়</string>
     <string name="dejavu_workspace_wallpaper_hint_local">ছবিটি এই ফোনেই থাকে এবং হোম পাতায় দেখায়।</string>

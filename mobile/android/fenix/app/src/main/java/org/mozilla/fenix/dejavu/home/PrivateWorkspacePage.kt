@@ -6,6 +6,7 @@ package org.mozilla.fenix.dejavu.home
 
 import android.view.WindowManager
 import androidx.compose.foundation.clickable
+import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
@@ -23,6 +24,7 @@ import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
+import androidx.compose.runtime.SideEffect
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
@@ -77,7 +79,8 @@ private var windowSecuredHere = false
 
 /**
  * The private tabs, shown as a workspace of their own while any are open. It cannot hold pinned tabs, folders or
- * essentials, and is not saved: it goes away with its last tab.
+ * essentials, and is not saved: it goes away with its last tab. A closing tab pours into its close button, see
+ * [RowMotions].
  */
 @Composable
 internal fun PrivateWorkspacePage(
@@ -89,92 +92,112 @@ internal fun PrivateWorkspacePage(
     onCloseAll: () -> Unit,
 ) {
     val close = RowAction.BuiltIn(TabAction.CLOSE)
-    LazyColumn(modifier = Modifier.fillMaxSize().padding(horizontal = 8.dp)) {
-        item(key = "header") {
-            Row(
-                verticalAlignment = Alignment.CenterVertically,
-                modifier = Modifier.fillMaxWidth().padding(start = 12.dp, top = 4.dp, bottom = 4.dp),
-            ) {
-                Icon(
-                    painter = painterResource(R.drawable.dejavu_ic_private_tab_24),
-                    contentDescription = null,
-                    tint = MaterialTheme.colorScheme.onSurfaceVariant,
-                    modifier = Modifier.size(18.dp),
-                )
-                Spacer(Modifier.width(8.dp))
-                Text(
-                    text = stringResource(R.string.dejavu_private_workspace),
-                    style = MaterialTheme.typography.titleSmall,
-                    fontWeight = FontWeight.Bold,
-                    color = MaterialTheme.colorScheme.onSurfaceVariant,
-                    modifier = Modifier.weight(1f),
-                )
-                TextButton(onClick = onCloseAll) {
+    val motions = rememberRowMotions()
+    val plan = motions.plan(
+        rows = tabs.associate { it.id to setOf(it.id) },
+        openTabIds = tabs.mapTo(mutableSetOf()) { it.id },
+        reopenedTabId = null,
+    )
+    SideEffect { motions.start(plan, flights = false) }
+    val placement = motions.placementSpec(plan)
+    Box(modifier = Modifier.fillMaxSize()) {
+        LazyColumn(modifier = Modifier.fillMaxSize().padding(horizontal = 8.dp)) {
+            item(key = "header") {
+                Row(
+                    verticalAlignment = Alignment.CenterVertically,
+                    modifier = Modifier
+                        .animateItem(fadeInSpec = null, placementSpec = placement, fadeOutSpec = null)
+                        .fillMaxWidth()
+                        .padding(start = 12.dp, top = 4.dp, bottom = 4.dp),
+                ) {
                     Icon(
-                        painter = painterResource(iconsR.drawable.mozac_ic_delete_24),
+                        painter = painterResource(R.drawable.dejavu_ic_private_tab_24),
                         contentDescription = null,
-                        tint = MaterialTheme.colorScheme.error,
+                        tint = MaterialTheme.colorScheme.onSurfaceVariant,
                         modifier = Modifier.size(18.dp),
                     )
-                    Spacer(Modifier.width(6.dp))
+                    Spacer(Modifier.width(8.dp))
                     Text(
-                        text = stringResource(R.string.dejavu_private_close_all),
-                        style = MaterialTheme.typography.labelLarge,
-                        color = MaterialTheme.colorScheme.error,
+                        text = stringResource(R.string.dejavu_private_workspace),
+                        style = MaterialTheme.typography.titleSmall,
+                        fontWeight = FontWeight.Bold,
+                        color = MaterialTheme.colorScheme.onSurfaceVariant,
+                        modifier = Modifier.weight(1f),
+                    )
+                    TextButton(onClick = onCloseAll) {
+                        Icon(
+                            painter = painterResource(iconsR.drawable.mozac_ic_delete_24),
+                            contentDescription = null,
+                            tint = MaterialTheme.colorScheme.error,
+                            modifier = Modifier.size(18.dp),
+                        )
+                        Spacer(Modifier.width(6.dp))
+                        Text(
+                            text = stringResource(R.string.dejavu_private_close_all),
+                            style = MaterialTheme.typography.labelLarge,
+                            color = MaterialTheme.colorScheme.error,
+                        )
+                    }
+                }
+            }
+            item(key = "divider") {
+                HorizontalDivider(
+                    color = MaterialTheme.colorScheme.outlineVariant,
+                    modifier = Modifier
+                        .animateItem(fadeInSpec = null, placementSpec = placement, fadeOutSpec = null)
+                        .padding(start = 12.dp, end = 12.dp, top = 4.dp, bottom = 4.dp),
+                )
+            }
+            item(key = "new_tab") {
+                val taps = rememberIconTaps()
+                Row(
+                    verticalAlignment = Alignment.CenterVertically,
+                    modifier = Modifier
+                        .animateItem(fadeInSpec = null, placementSpec = placement, fadeOutSpec = null)
+                        .fillMaxWidth()
+                        .clip(RoundedCornerShape(16.dp))
+                        .clickable {
+                            taps.tap()
+                            onNewTab()
+                        }
+                        .padding(horizontal = 12.dp, vertical = 14.dp),
+                ) {
+                    TapIcon(
+                        icon = R.drawable.dejavu_ic_new_tab_24,
+                        taps = taps,
+                        tint = MaterialTheme.colorScheme.onSurfaceVariant,
+                        modifier = Modifier.size(20.dp).padding(start = 3.dp),
+                    )
+                    Spacer(Modifier.width(19.dp))
+                    Text(
+                        text = stringResource(R.string.dejavu_new_private_tab),
+                        style = MaterialTheme.typography.bodyLarge,
+                        color = MaterialTheme.colorScheme.onSurfaceVariant,
                     )
                 }
             }
-        }
-        item(key = "divider") {
-            HorizontalDivider(
-                color = MaterialTheme.colorScheme.outlineVariant,
-                modifier = Modifier.padding(start = 12.dp, end = 12.dp, top = 4.dp, bottom = 4.dp),
-            )
-        }
-        item(key = "new_tab") {
-            val taps = rememberIconTaps()
-            Row(
-                verticalAlignment = Alignment.CenterVertically,
-                modifier = Modifier
-                    .fillMaxWidth()
-                    .clip(RoundedCornerShape(16.dp))
-                    .clickable {
-                        taps.tap()
-                        onNewTab()
-                    }
-                    .padding(horizontal = 12.dp, vertical = 14.dp),
-            ) {
-                TapIcon(
-                    icon = R.drawable.dejavu_ic_new_tab_24,
-                    taps = taps,
-                    tint = MaterialTheme.colorScheme.onSurfaceVariant,
-                    modifier = Modifier.size(20.dp).padding(start = 3.dp),
-                )
-                Spacer(Modifier.width(19.dp))
-                Text(
-                    text = stringResource(R.string.dejavu_new_private_tab),
-                    style = MaterialTheme.typography.bodyLarge,
-                    color = MaterialTheme.colorScheme.onSurfaceVariant,
+            items(tabs, key = { it.id }) { tab ->
+                TabRow(
+                    title = tab.displayTitle,
+                    url = tab.content.url,
+                    depth = 0,
+                    container = null,
+                    isAwake = tab.isAwake,
+                    isCurrent = tab.id == selectedTabId,
+                    isSplit = false,
+                    selection = null,
+                    actions = listOf(close),
+                    onAction = { onCloseTab(tab) },
+                    onClick = { onTabClick(tab) },
+                    isPrivate = true,
+                    icon = tab.content.icon,
+                    modifier = Modifier
+                        .animateItem(fadeInSpec = null, placementSpec = placement, fadeOutSpec = null)
+                        .motionRow(motions, tab.id)
+                        .tabZoomTarget(tab.id),
                 )
             }
         }
-        items(tabs, key = { it.id }) { tab ->
-            TabRow(
-                title = tab.displayTitle,
-                url = tab.content.url,
-                depth = 0,
-                container = null,
-                isAwake = tab.isAwake,
-                isCurrent = tab.id == selectedTabId,
-                isSplit = false,
-                selection = null,
-                actions = listOf(close),
-                onAction = { onCloseTab(tab) },
-                onClick = { onTabClick(tab) },
-                isPrivate = true,
-                icon = tab.content.icon,
-                modifier = Modifier.tabZoomTarget(tab.id),
-            )
-        }
+        RowMotionsOverlay(motions, modifier = Modifier.matchParentSize().padding(horizontal = 8.dp))
     }
 }

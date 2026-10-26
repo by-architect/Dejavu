@@ -444,7 +444,6 @@
     <string name="dejavu_workspace_wallpaper_hint">La imaxe queda nesti teléfonu y s\'amuesa na pantalla d\'aniciu. Los sos colores pasen a ser el tema que se sincroniza con Zen.</string>
     <string name="dejavu_workspace_wallpaper_choose">Escoyer una imaxe</string>
     <string name="dejavu_workspace_wallpaper_change">Camudar</string>
-    <string name="dejavu_workspace_wallpaper_blur">Desenfoque</string>
     <string name="dejavu_workspace_wallpaper_failed">Nun se pudo abrir esta imaxe.</string>
     <string name="dejavu_workspace_wallpaper_colors">Colores que se sincronicen con Zen</string>
     <string name="dejavu_workspace_wallpaper_hint_local">La imaxe queda nesti teléfonu y s\'amuesa na pantalla d\'aniciu.</string>

@@ -436,7 +436,6 @@
     <string name="dejavu_workspace_wallpaper_hint">รูปภาพจะอยู่บนโทรศัพท์เครื่องนี้เท่านั้นและแสดงบนหน้าแรก สีของรูปภาพจะกลายเป็นธีมที่ซิงค์กับ Zen</string>
     <string name="dejavu_workspace_wallpaper_choose">เลือกรูปภาพ</string>
     <string name="dejavu_workspace_wallpaper_change">เปลี่ยน</string>
-    <string name="dejavu_workspace_wallpaper_blur">ความเบลอ</string>
     <string name="dejavu_workspace_wallpaper_failed">ไม่สามารถเปิดรูปภาพนี้ได้</string>
     <string name="dejavu_workspace_wallpaper_colors">สีที่ซิงค์กับ Zen</string>
     <string name="dejavu_workspace_wallpaper_hint_local">รูปภาพจะอยู่บนโทรศัพท์เครื่องนี้เท่านั้นและแสดงบนหน้าแรก</string>

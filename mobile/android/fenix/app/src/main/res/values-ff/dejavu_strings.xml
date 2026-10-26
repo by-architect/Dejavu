@@ -444,7 +444,6 @@
     <string name="dejavu_workspace_wallpaper_hint">L\'image reste sur ce téléphone et s\'affiche sur la page d\'accueil. Ses couleurs deviennent le thème qui se synchronise avec Zen.</string>
     <string name="dejavu_workspace_wallpaper_choose">Suɓo natal</string>
     <string name="dejavu_workspace_wallpaper_change">Waylu</string>
-    <string name="dejavu_workspace_wallpaper_blur">Flou</string>
     <string name="dejavu_workspace_wallpaper_failed">Horiima udditde natal ngal.</string>
     <string name="dejavu_workspace_wallpaper_colors">Couleurs synchronisées avec Zen</string>
     <string name="dejavu_workspace_wallpaper_hint_local">L\'image reste sur ce téléphone et s\'affiche sur la page d\'accueil.</string>

@@ -452,7 +452,6 @@
     <string name="dejavu_workspace_wallpaper_hint">Слика остаје на овом телефону и приказује се на почетној страници. Њене боје постају тема која се синхронизује са Zen-ом.</string>
     <string name="dejavu_workspace_wallpaper_choose">Изабери слику</string>
     <string name="dejavu_workspace_wallpaper_change">Промени</string>
-    <string name="dejavu_workspace_wallpaper_blur">Замагљење</string>
     <string name="dejavu_workspace_wallpaper_failed">Није могуће отворити ову слику.</string>
     <string name="dejavu_workspace_wallpaper_colors">Боје које се синхронизују са Zen-ом</string>
     <string name="dejavu_workspace_wallpaper_hint_local">Слика остаје на овом телефону и приказује се на почетној страници.</string>

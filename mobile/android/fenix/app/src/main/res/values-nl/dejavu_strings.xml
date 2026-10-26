@@ -444,7 +444,6 @@
     <string name="dejavu_workspace_wallpaper_hint">De afbeelding blijft op deze telefoon en wordt getoond op de startpagina. De kleuren ervan worden het thema dat met Zen wordt gesynchroniseerd.</string>
     <string name="dejavu_workspace_wallpaper_choose">Afbeelding kiezen</string>
     <string name="dejavu_workspace_wallpaper_change">Wijzigen</string>
-    <string name="dejavu_workspace_wallpaper_blur">Vervaging</string>
     <string name="dejavu_workspace_wallpaper_failed">Deze afbeelding kon niet worden geopend.</string>
     <string name="dejavu_workspace_wallpaper_colors">Kleuren die met Zen worden gesynchroniseerd</string>
     <string name="dejavu_workspace_wallpaper_hint_local">De afbeelding blijft op deze telefoon en wordt getoond op de startpagina.</string>

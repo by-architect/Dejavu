@@ -452,7 +452,6 @@
     <string name="dejavu_workspace_wallpaper_hint">Imaginea rămâne pe acest telefon și apare pe pagina de start. Culorile ei devin tema care se sincronizează cu Zen.</string>
     <string name="dejavu_workspace_wallpaper_choose">Alege o imagine</string>
     <string name="dejavu_workspace_wallpaper_change">Schimbă</string>
-    <string name="dejavu_workspace_wallpaper_blur">Estompare</string>
     <string name="dejavu_workspace_wallpaper_failed">Această imagine nu a putut fi deschisă.</string>
     <string name="dejavu_workspace_wallpaper_colors">Culori care se sincronizează cu Zen</string>
     <string name="dejavu_workspace_wallpaper_hint_local">Imaginea rămâne pe acest telefon și apare pe pagina de start.</string>

@@ -444,7 +444,6 @@
     <string name="dejavu_workspace_wallpaper_hint">Kuva pysyy tässä puhelimessa ja näkyy aloitussivulla. Sen väreistä tulee teema, joka synkronoituu Zenin kanssa.</string>
     <string name="dejavu_workspace_wallpaper_choose">Valitse kuva</string>
     <string name="dejavu_workspace_wallpaper_change">Vaihda</string>
-    <string name="dejavu_workspace_wallpaper_blur">Sumennus</string>
     <string name="dejavu_workspace_wallpaper_failed">Tätä kuvaa ei voitu avata.</string>
     <string name="dejavu_workspace_wallpaper_colors">Zenin kanssa synkronoituvat värit</string>
     <string name="dejavu_workspace_wallpaper_hint_local">Kuva pysyy tässä puhelimessa ja näkyy aloitussivulla.</string>

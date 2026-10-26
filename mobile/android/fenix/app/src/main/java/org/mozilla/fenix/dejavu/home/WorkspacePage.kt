@@ -46,6 +46,7 @@ import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.DisposableEffect
 import androidx.compose.runtime.LaunchedEffect
+import androidx.compose.runtime.SideEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
@@ -253,6 +254,7 @@ internal fun WorkspacePage(
     hasClosedTab: Boolean = false,
     hasClipboardLink: Boolean = false,
     revealTabId: String? = null,
+    openTabIds: Set<String> = emptySet(),
 ) {
     val tabsById = tabs.associateBy { it.id }
     val awakeTabIds = tabs.filter { it.isAwake }.map { it.id }.toSet()
@@ -266,6 +268,17 @@ internal fun WorkspacePage(
     // The key of the row each pinned item and tab shows on, for the ones sharing a row with a split view partner.
     val lineKeys = pinLines.flatMap { line -> line.entries.map { PIN_PREFIX + it.item.id to line.key } }.toMap() +
         lines.flatMap { line -> line.tabs.map { TAB_PREFIX + it.id to line.key } }
+
+    // Rows come and go and move between the pinned and the other tabs in motions of their own, see RowMotions.
+    val motions = rememberRowMotions()
+    val rowTabs = pinLines.associate { line ->
+        line.key to line.entries.mapNotNullTo(mutableSetOf()) { entry -> entry.item.tabId?.takeIf { it in tabsById } }
+    } + lines.associate { line -> line.key to line.tabs.mapTo(mutableSetOf()) { it.id } }
+    val plan = motions.plan(rowTabs, openTabIds, revealTabId)
+    // The cards of a drag land on the rows their tabs moved to by themselves.
+    val flights = drag == null && !dragStack.landing
+    SideEffect { motions.start(plan, flights) }
+    val placement = motions.placementSpec(plan)
 
     val listState = rememberLazyListState()
     val pageContent = PageContent(state, otherTabs, workspace, pinLines, lines, lineKeys, tabsById, containers)
@@ -376,13 +389,18 @@ internal fun WorkspacePage(
                     onEdit = callbacks.onEditWorkspace,
                     onDelete = callbacks.onDeleteWorkspace,
                     onMove = callbacks.onMoveWorkspace,
-                    modifier = Modifier.dropLine(dropLines?.of(KEY_HEADER), lineColor, insideColor),
+                    reopenButton = Modifier.motionButton(motions, MotionButton.REOPEN),
+                    modifier = Modifier
+                        .animateItem(fadeInSpec = null, placementSpec = placement, fadeOutSpec = null)
+                        .dropLine(dropLines?.of(KEY_HEADER), lineColor, insideColor),
                 )
             }
 
             items(pinLines, key = { it.key }) { line ->
                 val key = line.key
                 val rowModifier = Modifier
+                    .animateItem(fadeInSpec = null, placementSpec = placement, fadeOutSpec = null)
+                    .motionRow(motions, key)
                     .dropLine(dropLines?.of(key), lineColor, insideColor)
                     .rowAlpha(key)
                 val entry = line.entries.first()
@@ -450,9 +468,16 @@ internal fun WorkspacePage(
 
             item(key = KEY_DIVIDER) {
                 SectionDivider(
-                    showClear = otherTabs.isNotEmpty() && selection == null,
-                    onClear = callbacks.onClearUnpinned,
-                    modifier = Modifier.dropLine(dropLines?.of(KEY_DIVIDER), lineColor, insideColor),
+                    // The cleared tabs pour into the Clear button, which stays until they are in.
+                    showClear = (otherTabs.isNotEmpty() || plan.clear || motions.isClearing) && selection == null,
+                    onClear = {
+                        motions.clearTapped()
+                        callbacks.onClearUnpinned()
+                    },
+                    clearButton = Modifier.motionButton(motions, MotionButton.CLEAR),
+                    modifier = Modifier
+                        .animateItem(fadeInSpec = null, placementSpec = placement, fadeOutSpec = null)
+                        .dropLine(dropLines?.of(KEY_DIVIDER), lineColor, insideColor),
                 )
             }
 
@@ -465,13 +490,20 @@ internal fun WorkspacePage(
                     onNewTabInContainer = callbacks.onNewTabInContainer,
                     onNewPrivateTab = callbacks.onNewPrivateTab,
                     onManageContainers = callbacks.onManageContainers,
-                    modifier = Modifier.dropLine(dropLines?.of(KEY_NEW_TAB), lineColor, insideColor),
+                    modifier = Modifier
+                        .animateItem(fadeInSpec = null, placementSpec = placement, fadeOutSpec = null)
+                        .dropLine(dropLines?.of(KEY_NEW_TAB), lineColor, insideColor),
                 )
             }
 
             items(lines, key = { it.key }) { line ->
                 val key = line.key
                 val tab = line.tabs.first()
+                val rowModifier = Modifier
+                    .animateItem(fadeInSpec = null, placementSpec = placement, fadeOutSpec = null)
+                    .motionRow(motions, key)
+                    .dropLine(dropLines?.of(key), lineColor, insideColor)
+                    .rowAlpha(key)
                 if (line.tabs.size > 1) {
                     TabPairRow(
                         halves = line.tabs.map { half ->
@@ -486,9 +518,7 @@ internal fun WorkspacePage(
                         },
                         depth = 0,
                         isCurrent = line.tabs.any { it.id == selectedTabId },
-                        modifier = Modifier
-                            .dropLine(dropLines?.of(key), lineColor, insideColor)
-                            .rowAlpha(key),
+                        modifier = rowModifier,
                     )
                     return@items
                 }
@@ -509,13 +539,11 @@ internal fun WorkspacePage(
                     actions = rowActions(unpinnedRowActions, targets, isPinned = false),
                     onAction = { callbacks.onRowAction(it, targets) },
                     onClick = { if (drag == null) callbacks.onTabClick(tab) },
-                    modifier = Modifier
-                        .dropLine(dropLines?.of(key), lineColor, insideColor)
-                        .rowAlpha(key)
-                        .tabZoomTarget(tab.id),
+                    modifier = rowModifier.tabZoomTarget(tab.id),
                 )
             }
         }
+        RowMotionsOverlay(motions, modifier = Modifier.matchParentSize().padding(horizontal = ListPadding))
     }
 }
 
@@ -809,11 +837,15 @@ private fun Modifier.dropLine(line: DropLine?, lineColor: Color, insideColor: Co
         }
     }
 
-/** The line between pinned and unpinned tabs, with Zen's "Clear" button for the unpinned ones. */
+/**
+ * The line between pinned and unpinned tabs, with Zen's "Clear" button for the unpinned ones, which [clearButton] is
+ * given to.
+ */
 @Composable
 private fun SectionDivider(
     showClear: Boolean,
     onClear: () -> Unit,
+    clearButton: Modifier,
     modifier: Modifier = Modifier,
 ) {
     Row(
@@ -825,6 +857,7 @@ private fun SectionDivider(
             TextButton(
                 onClick = onClear,
                 colors = ButtonDefaults.textButtonColors(contentColor = MaterialTheme.colorScheme.onSurfaceVariant),
+                modifier = clearButton,
             ) {
                 Icon(
                     painter = painterResource(iconsR.drawable.mozac_ic_chevron_down_16),
@@ -961,6 +994,7 @@ private fun NewTabRow(
  * Workspace name with its default container and icon on the left; tapping the name edits the workspace. On the right,
  * opening the link in the clipboard while [canOpenClipboard] and reopening the tab closed last while
  * [canReopenClosedTab], which [tabButtonsEnabled] allows outside selection mode, then a new folder and the workspace menu.
+ * [reopenButton] is given to the button that reopens closed tabs.
  */
 @Suppress("LongParameterList", "LongMethod")
 @Composable
@@ -981,6 +1015,7 @@ private fun WorkspaceHeader(
     onEdit: () -> Unit,
     onDelete: () -> Unit,
     onMove: (delta: Int) -> Unit,
+    reopenButton: Modifier,
     modifier: Modifier = Modifier,
 ) {
     var menuOpen by remember { mutableStateOf(false) }
@@ -1024,6 +1059,7 @@ private fun WorkspaceHeader(
             description = R.string.dejavu_reopen_closed_tab,
             enabled = tabButtonsEnabled && canReopenClosedTab,
             onClick = onReopenClosedTab,
+            modifier = reopenButton,
         )
         // The workspace of a device on the account cannot have folders of its own, nor be deleted: sync handles it.
         if (!isDevice) {
@@ -1489,7 +1525,13 @@ private fun RowActionButton(action: RowAction, onAction: (RowAction) -> Unit) {
 }
 
 @Composable
-private fun SmallIconButton(icon: Int, @StringRes description: Int, enabled: Boolean = true, onClick: () -> Unit) {
+private fun SmallIconButton(
+    icon: Int,
+    @StringRes description: Int,
+    enabled: Boolean = true,
+    modifier: Modifier = Modifier,
+    onClick: () -> Unit,
+) {
     val taps = rememberIconTaps()
     IconButton(
         onClick = {
@@ -1497,6 +1539,7 @@ private fun SmallIconButton(icon: Int, @StringRes description: Int, enabled: Boo
             onClick()
         },
         enabled = enabled,
+        modifier = modifier,
     ) {
         TapIcon(
             icon = icon,

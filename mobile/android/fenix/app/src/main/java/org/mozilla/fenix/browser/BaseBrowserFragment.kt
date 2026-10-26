@@ -36,6 +36,7 @@ import androidx.coordinatorlayout.widget.CoordinatorLayout
 import androidx.core.content.getSystemService
 import androidx.core.text.HtmlCompat
 import androidx.core.view.OnApplyWindowInsetsListener
+import androidx.core.view.ViewCompat
 import androidx.core.view.isVisible
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.lifecycleScope
@@ -2601,12 +2602,15 @@ abstract class BaseBrowserFragment :
     }
 
     private fun launchFindInPageFeature(view: View, store: BrowserStore) {
+        val findInPageHeight = requireComponents.settings.getBrowserToolbarHeight(requireContext())
         if (findInPageIntegration.get() == null) {
             val findInPageBar =
                 view.findViewById(R.id.findInPageView)
                     ?: (binding.findInPageViewStub.inflate() as FindInPageBar).also { bar ->
                         // Pages run behind the navigation bar in Dejavu's browser, so the bar keeps above it.
-                        if (DejavuToolbar.enabled && customTabSessionId == null) bar.padForNavigationBar()
+                        if (DejavuToolbar.enabled && customTabSessionId == null) {
+                            bar.padForNavigationBar(contentHeight = findInPageHeight)
+                        }
                     }
             findInPageIntegration.set(
                 feature =
@@ -2616,7 +2620,7 @@ abstract class BaseBrowserFragment :
                         sessionId = customTabSessionId,
                         view = findInPageBar,
                         engineView = binding.engineView,
-                        findInPageHeight = requireComponents.settings.getBrowserToolbarHeight(requireContext()),
+                        findInPageHeight = findInPageHeight,
                         toolbarsHideCallback = {
                             expandBrowserView()
                         },
@@ -2630,6 +2634,10 @@ abstract class BaseBrowserFragment :
             )
         }
         findInPageIntegration.withFeature { it.launch() }
+        // Dejavu: launching gives the bar the height of its content again, without the room it keeps below it.
+        if (DejavuToolbar.enabled && customTabSessionId == null) {
+            view.findViewById<View>(R.id.findInPageView)?.let(ViewCompat::requestApplyInsets)
+        }
     }
 
     @Suppress("CognitiveComplexMethod")

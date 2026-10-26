@@ -476,7 +476,6 @@
     <string name="dejavu_workspace_wallpaper_hint">Mae’r ddelwedd yn aros ar y ffôn hwn ac yn ymddangos ar y dudalen gartref. Mae ei lliwiau’n troi’n thema sy’n cydweddu â Zen.</string>
     <string name="dejavu_workspace_wallpaper_choose">Dewis delwedd</string>
     <string name="dejavu_workspace_wallpaper_change">Newid</string>
-    <string name="dejavu_workspace_wallpaper_blur">Aneglurder</string>
     <string name="dejavu_workspace_wallpaper_failed">Methu agor y ddelwedd hon.</string>
     <string name="dejavu_workspace_wallpaper_colors">Lliwiau sy’n cydweddu â Zen</string>
     <string name="dejavu_workspace_wallpaper_hint_local">Mae’r ddelwedd yn aros ar y ffôn hwn ac yn ymddangos ar y dudalen gartref.</string>

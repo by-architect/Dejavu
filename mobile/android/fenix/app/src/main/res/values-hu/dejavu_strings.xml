@@ -444,7 +444,6 @@
     <string name="dejavu_workspace_wallpaper_hint">A kép ezen a telefonon marad, és a kezdőlapon jelenik meg. A színeiből lesz a Zennel szinkronizálódó téma.</string>
     <string name="dejavu_workspace_wallpaper_choose">Kép kiválasztása</string>
     <string name="dejavu_workspace_wallpaper_change">Módosítás</string>
-    <string name="dejavu_workspace_wallpaper_blur">Elmosás</string>
     <string name="dejavu_workspace_wallpaper_failed">Ezt a képet nem sikerült megnyitni.</string>
     <string name="dejavu_workspace_wallpaper_colors">A Zennel szinkronizálódó színek</string>
     <string name="dejavu_workspace_wallpaper_hint_local">A kép ezen a telefonon marad, és a kezdőlapon jelenik meg.</string>

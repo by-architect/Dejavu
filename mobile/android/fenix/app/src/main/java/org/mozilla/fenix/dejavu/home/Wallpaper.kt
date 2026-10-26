@@ -6,10 +6,8 @@ package org.mozilla.fenix.dejavu.home
 
 import android.content.ActivityNotFoundException
 import android.content.Context
-import android.graphics.Bitmap
 import android.graphics.BitmapFactory
 import android.net.Uri
-import android.os.Build
 import android.util.LruCache
 import androidx.activity.compose.rememberLauncherForActivityResult
 import androidx.activity.result.PickVisualMediaRequest
@@ -36,6 +34,7 @@ import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.Immutable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.derivedStateOf
 import androidx.compose.runtime.getValue
@@ -48,13 +47,18 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
-import androidx.compose.ui.graphics.BlurEffect
+import androidx.compose.ui.draw.drawBehind
+import androidx.compose.ui.geometry.Offset
+import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.ImageBitmap
-import androidx.compose.ui.graphics.TileMode
 import androidx.compose.ui.graphics.asAndroidBitmap
 import androidx.compose.ui.graphics.asImageBitmap
+import androidx.compose.ui.graphics.drawscope.DrawScope
 import androidx.compose.ui.graphics.graphicsLayer
+import androidx.compose.ui.graphics.lerp
+import androidx.compose.ui.graphics.luminance
+import androidx.compose.ui.graphics.toArgb
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.platform.LocalConfiguration
 import androidx.compose.ui.platform.LocalContext
@@ -63,10 +67,11 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.semantics.contentDescription
 import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.unit.dp
-import androidx.core.graphics.scale
+import androidx.core.graphics.ColorUtils
 import kotlin.math.floor
 import kotlin.math.max
-import kotlin.math.roundToInt
+import kotlin.math.min
+import kotlin.math.pow
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
@@ -77,35 +82,110 @@ import org.mozilla.fenix.dejavu.ui.DejavuPopup
 import org.mozilla.fenix.dejavu.workspaces.WorkspaceWallpaper
 import org.mozilla.fenix.dejavu.workspaces.WorkspaceWallpapers
 
-/** How blurred a wallpaper is on the home screen at the highest blur setting. */
-private val MAX_BLUR = 64.dp
 private val PREVIEW_WIDTH = 64.dp
 private val COLOR_DOT = 14.dp
-
-/** How much of the plain background covers a wallpaper, so that the text over it stays easy to read. */
-internal const val WALLPAPER_COVER = 0.4f
-
-/** Older Android versions cannot blur while drawing, so they show a smaller copy of the picture, in this many steps. */
-private const val SOFT_LEVELS = 8
-private const val SOFT_SHRINK_PER_LEVEL = 3
 private const val CACHE_SHARE = 8
 
-private val canBlurLive: Boolean
-    get() = Build.VERSION.SDK_INT >= Build.VERSION_CODES.S
+/** How much of their color the picture's colors keep in its veil, which takes the lightness of the background. */
+private const val VEIL_CHROMA = 0.6f
+
+/** The veil keeps the text over the picture at least this readable, as a contrast ratio, as far as it can. */
+private const val READABLE_CONTRAST = 5.5f
+
+/** How much of the picture the veil covers when its shades are not known yet. */
+private const val DEFAULT_VEIL = 0.6f
+
+/** How far a wallpaper's intensity takes its veil from the readable one, from one end of the slider to the other. */
+private const val INTENSITY_REACH = 0.6f
+private const val MIN_VEIL = 0.15f
+private const val MAX_VEIL = 0.92f
+private const val VEIL_STEP = 0.01f
+private const val VEIL_STOPS = 3
+private const val CONTRAST_OFFSET = 0.05f
 
 /** Where the pages are while swiping: the index of the page on the left, plus how far the next one has come in. */
 internal val PagerState.position: Float
     get() = currentPage + currentPageOffsetFraction
 
 /**
- * How much the home's plain background covers what lies under it at [position] among the pages: [WALLPAPER_COVER]
- * over a page's wallpaper, fully on a page without one, whose theme then shows as it is, and in between while swiping.
+ * How much the home's cover hides what lies under it at [position] among the pages, given the cover of each page by
+ * [coverOf]: the veil of a page's wallpaper, see [Veil], or all of it on a page without one, whose theme then shows as
+ * it is. In between while swiping.
  */
-internal fun coverAt(position: Float, wallpaperAt: (Int) -> WorkspaceWallpaper?): Float {
+internal fun coverAt(position: Float, coverOf: (Int) -> Float): Float {
     val page = floor(position).toInt()
-    val from = if (wallpaperAt(page) != null) WALLPAPER_COVER else 1f
-    val to = if (wallpaperAt(page + 1) != null) WALLPAPER_COVER else 1f
+    val from = coverOf(page)
+    val to = coverOf(page + 1)
     return from + (to - from) * (position - page)
+}
+
+/**
+ * The veil over a wallpaper on the home screen, in place of a blur, which tires the eyes: a gradient of the picture's
+ * own [colors] at the lightness of the background, covering [alpha] of the picture.
+ */
+@Immutable
+internal class Veil(val colors: List<Color>, val alpha: Float)
+
+/**
+ * The veil of [wallpaper] over a background of [surface], with text of [text] on it. It covers just enough of the
+ * picture for the text to read well over its lightest parts, or its darkest ones under dark text; a wallpaper's
+ * intensity shows the picture more or less than that.
+ */
+internal fun veilOf(wallpaper: WorkspaceWallpaper, surface: Color, text: Color): Veil {
+    val colors = wallpaper.colors.map { tinted(Color(it), surface) }.ifEmpty { listOf(surface) }
+    val veil = colors[colors.size / 2]
+    val shade = if (text.luminance() > veil.luminance()) wallpaper.light else wallpaper.dark
+    val readable = shade?.let { readableVeil(it, veil.luminance(), text.luminance()) } ?: DEFAULT_VEIL
+    val alpha = readable + (WorkspaceWallpaper.DEFAULT_INTENSITY - wallpaper.intensity) * INTENSITY_REACH
+    return Veil(colors, alpha.coerceIn(MIN_VEIL, MAX_VEIL))
+}
+
+/** [color]'s hue at [surface]'s lightness, keeping [VEIL_CHROMA] of its color. */
+private fun tinted(color: Color, surface: Color): Color {
+    val lab = DoubleArray(LAB_CHANNELS).also { ColorUtils.colorToLAB(color.toArgb(), it) }
+    val base = DoubleArray(LAB_CHANNELS).also { ColorUtils.colorToLAB(surface.toArgb(), it) }
+    return Color(ColorUtils.LABToColor(base[0], lab[1] * VEIL_CHROMA, lab[2] * VEIL_CHROMA))
+}
+
+private const val LAB_CHANNELS = 3
+
+/**
+ * The least of a veil of [veil] luminance that covers a part of a picture of [shade] luminance for text of [text]
+ * luminance to read on it, blending the way Android draws, in sRGB.
+ */
+internal fun readableVeil(shade: Float, veil: Float, text: Float): Float {
+    val under = toSrgb(shade)
+    val over = toSrgb(veil)
+    var alpha = 0f
+    while (alpha < 1f) {
+        val shown = toLinear(under + (over - under) * alpha)
+        val ratio = (max(shown, text) + CONTRAST_OFFSET) / (min(shown, text) + CONTRAST_OFFSET)
+        if (ratio >= READABLE_CONTRAST) return alpha
+        alpha += VEIL_STEP
+    }
+    return 1f
+}
+
+private fun toSrgb(linear: Float): Float =
+    if (linear <= LINEAR_KNEE) linear * SRGB_SLOPE else (1 + SRGB_OFFSET) * linear.pow(1 / SRGB_GAMMA) - SRGB_OFFSET
+
+private fun toLinear(srgb: Float): Float =
+    if (srgb <= SRGB_KNEE) srgb / SRGB_SLOPE else ((srgb + SRGB_OFFSET) / (1 + SRGB_OFFSET)).pow(SRGB_GAMMA)
+
+private const val LINEAR_KNEE = 0.0031308f
+private const val SRGB_KNEE = 0.04045f
+private const val SRGB_SLOPE = 12.92f
+private const val SRGB_OFFSET = 0.055f
+private const val SRGB_GAMMA = 2.4f
+
+/**
+ * Draws the veil of a page's wallpaper of [colors], [fraction] of the way to the veil of [next] while swiping, from the
+ * top start corner to the bottom end corner, at [alpha].
+ */
+internal fun DrawScope.drawVeil(colors: List<Color>, next: List<Color>, fraction: Float, alpha: Float = 1f) {
+    fun List<Color>.at(stop: Int) = this[(stop * size / VEIL_STOPS).coerceAtMost(size - 1)]
+    val stops = (0 until VEIL_STOPS).map { lerp(colors.at(it), next.at(it), fraction) }
+    drawRect(Brush.linearGradient(stops, start = Offset.Zero, end = Offset(size.width, size.height)), alpha = alpha)
 }
 
 /**
@@ -129,8 +209,9 @@ internal fun WallpaperLayers(pagerState: PagerState, wallpaperAt: (Int) -> Works
 
 /**
  * The workspace dialog's wallpaper choice: a small picture of the home screen with [wallpaper], a button to pick a
- * picture, the colors taken from it for the theme, and a slider for how blurred it is. [onImport] copies a picked
- * picture into a wallpaper, which then goes to [onPicked]. The theme of a workspace that [syncsWithZen] goes to Zen.
+ * picture, the colors taken from it for the theme, and a slider for how strongly it shows through its veil. [onImport]
+ * copies a picked picture into a wallpaper, which then goes to [onPicked]. The theme of a workspace that [syncsWithZen]
+ * goes to Zen.
  */
 @Composable
 internal fun WallpaperSection(
@@ -138,7 +219,7 @@ internal fun WallpaperSection(
     syncsWithZen: Boolean,
     onImport: suspend (Uri) -> WorkspaceWallpaper?,
     onPicked: (WorkspaceWallpaper) -> Unit,
-    onBlurChange: (Float) -> Unit,
+    onIntensityChange: (Float) -> Unit,
 ) {
     val scope = rememberCoroutineScope()
     var importing by remember { mutableStateOf(false) }
@@ -201,7 +282,7 @@ internal fun WallpaperSection(
         }
     }
     wallpaper?.let { current ->
-        SliderRow(R.string.dejavu_workspace_wallpaper_blur, current.blur, 0f..1f, onBlurChange)
+        SliderRow(R.string.dejavu_workspace_theme_intensity, current.intensity, 0f..1f, onIntensityChange)
     }
 }
 
@@ -238,6 +319,7 @@ private fun PictureColors(colors: List<Int>, syncsWithZen: Boolean) {
 private fun WallpaperPreview(wallpaper: WorkspaceWallpaper?, importing: Boolean, onClick: () -> Unit) {
     val configuration = LocalConfiguration.current
     val surface = MaterialTheme.colorScheme.surface
+    val text = MaterialTheme.colorScheme.onSurface
     val shape = RoundedCornerShape(12.dp)
     Box(
         contentAlignment = Alignment.Center,
@@ -250,12 +332,9 @@ private fun WallpaperPreview(wallpaper: WorkspaceWallpaper?, importing: Boolean,
             .clickable(enabled = !importing, onClick = onClick),
     ) {
         wallpaper?.let {
-            WallpaperImage(
-                wallpaper = it,
-                modifier = Modifier.fillMaxSize(),
-                blurScale = PREVIEW_WIDTH.value / configuration.screenWidthDp.coerceAtLeast(1),
-            )
-            Box(modifier = Modifier.fillMaxSize().background(surface.copy(alpha = WALLPAPER_COVER)))
+            WallpaperImage(wallpaper = it, modifier = Modifier.fillMaxSize())
+            val veil = remember(it, surface, text) { veilOf(it, surface, text) }
+            Spacer(modifier = Modifier.fillMaxSize().drawBehind { drawVeil(veil.colors, veil.colors, 0f, veil.alpha) })
         }
         if (importing) {
             CircularProgressIndicator(modifier = Modifier.size(24.dp), strokeWidth = 2.dp)
@@ -270,41 +349,34 @@ private fun WallpaperPreview(wallpaper: WorkspaceWallpaper?, importing: Boolean,
 }
 
 /**
- * [wallpaper]'s picture, cropped to fill its place and blurred as much as it asks for. [blurScale] shrinks the blur
- * for a small picture of the home screen. [alpha] is read while drawing, so changing it redraws nothing else.
+ * [wallpaper]'s picture, sharp and cropped to fill its place. [alpha] is read while drawing, so changing it redraws
+ * nothing else.
  */
 @Composable
 private fun WallpaperImage(
     wallpaper: WorkspaceWallpaper,
     modifier: Modifier = Modifier,
-    blurScale: Float = 1f,
     alpha: () -> Float = { 1f },
 ) {
-    val softness = if (canBlurLive) 0 else (wallpaper.blur * SOFT_LEVELS).roundToInt()
-    val image = rememberWallpaperImage(wallpaper.file, softness) ?: return
+    val image = rememberWallpaperImage(wallpaper.file) ?: return
     Image(
         bitmap = image,
         contentDescription = null,
         contentScale = ContentScale.Crop,
         modifier = modifier.graphicsLayer {
             this.alpha = alpha().coerceIn(0f, 1f)
-            val radius = MAX_BLUR.toPx() * wallpaper.blur * blurScale
-            renderEffect = if (canBlurLive && radius > 0f) BlurEffect(radius, radius, TileMode.Clamp) else null
             clip = true
         },
     )
 }
 
-/**
- * The picture [file], read in the background, shrunk by [softness] steps where it cannot be blurred while drawing.
- * Until another softness is read, the one read before stays.
- */
+/** The picture [file], read in the background. */
 @Composable
-private fun rememberWallpaperImage(file: String, softness: Int): ImageBitmap? {
+private fun rememberWallpaperImage(file: String): ImageBitmap? {
     val context = LocalContext.current
-    var image by remember(file) { mutableStateOf(WallpaperPictures.cached(file, softness)) }
-    LaunchedEffect(file, softness) {
-        image = WallpaperPictures.cached(file, softness) ?: WallpaperPictures.read(context, file, softness) ?: image
+    var image by remember(file) { mutableStateOf(WallpaperPictures.cached(file)) }
+    LaunchedEffect(file) {
+        image = WallpaperPictures.cached(file) ?: WallpaperPictures.read(context, file) ?: image
     }
     return image
 }
@@ -316,33 +388,11 @@ private object WallpaperPictures {
         override fun sizeOf(key: String, value: ImageBitmap) = value.asAndroidBitmap().allocationByteCount
     }
 
-    private fun key(file: String, softness: Int) = "$file/$softness"
+    fun cached(file: String): ImageBitmap? = cache.get(file)
 
-    fun cached(file: String, softness: Int): ImageBitmap? = cache.get(key(file, softness))
-
-    suspend fun read(context: Context, file: String, softness: Int): ImageBitmap? = withContext(Dispatchers.IO) {
+    suspend fun read(context: Context, file: String): ImageBitmap? = withContext(Dispatchers.IO) {
         val path = WorkspaceWallpapers.get(context).pictureFile(file).path
-        val shown = runCatching {
-            val picture = BitmapFactory.decodeFile(path) ?: return@runCatching null
-            if (softness > 0) picture.shrunk(1 + softness * SOFT_SHRINK_PER_LEVEL) else picture
-        }.getOrNull() ?: return@withContext null
-        shown.asImageBitmap().also { cache.put(key(file, softness), it) }
-    }
-}
-
-/** A copy [factor] times smaller, shrunk by halves so that every pixel counts, which looks blurred when drawn big. */
-private fun Bitmap.shrunk(factor: Int): Bitmap {
-    val targetWidth = max(1, width / factor)
-    val targetHeight = max(1, height / factor)
-    var bitmap = this
-    while (bitmap.width / 2 >= targetWidth && bitmap.height / 2 >= targetHeight) {
-        val half = bitmap.scale(bitmap.width / 2, bitmap.height / 2)
-        if (bitmap !== this) bitmap.recycle()
-        bitmap = half
-    }
-    return if (bitmap.width == targetWidth && bitmap.height == targetHeight) {
-        bitmap
-    } else {
-        bitmap.scale(targetWidth, targetHeight).also { if (bitmap !== this) bitmap.recycle() }
+        val picture = runCatching { BitmapFactory.decodeFile(path) }.getOrNull() ?: return@withContext null
+        picture.asImageBitmap().also { cache.put(file, it) }
     }
 }

@@ -444,7 +444,6 @@
     <string name="dejavu_workspace_wallpaper_hint">Ang litrato nagapabilin sa sini nga telepono kag ginapakita sa home page. Ang iya mga kolor mangin tema nga nagasync upod ang Zen.</string>
     <string name="dejavu_workspace_wallpaper_choose">Magpili sang litrato</string>
     <string name="dejavu_workspace_wallpaper_change">Baylui</string>
-    <string name="dejavu_workspace_wallpaper_blur">Blur</string>
     <string name="dejavu_workspace_wallpaper_failed">Indi mabuksan ini nga litrato.</string>
     <string name="dejavu_workspace_wallpaper_colors">Mga kolor nga nagasync upod ang Zen</string>
     <string name="dejavu_workspace_wallpaper_hint_local">Ang litrato nagapabilin sa sini nga telepono kag ginapakita sa home page.</string>

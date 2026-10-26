@@ -436,7 +436,6 @@
     <string name="dejavu_workspace_wallpaper_hint">圖片只會留在這支手機上，並顯示在主頁。圖片的顏色會成為與 Zen 同步的佈景主題。</string>
     <string name="dejavu_workspace_wallpaper_choose">選擇圖片</string>
     <string name="dejavu_workspace_wallpaper_change">變更</string>
-    <string name="dejavu_workspace_wallpaper_blur">模糊</string>
     <string name="dejavu_workspace_wallpaper_failed">無法開啟此圖片。</string>
     <string name="dejavu_workspace_wallpaper_colors">與 Zen 同步的顏色</string>
     <string name="dejavu_workspace_wallpaper_hint_local">圖片只會留在這支手機上，並顯示在主頁。</string>

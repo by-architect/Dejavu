@@ -444,7 +444,6 @@
     <string name="dejavu_workspace_wallpaper_hint">Rasm shu telefonda qoladi va bosh sahifada ko\'rsatiladi. Uning ranglari Zen bilan sinxronlashtiriladigan mavzuga aylanadi.</string>
     <string name="dejavu_workspace_wallpaper_choose">Rasm tanlash</string>
     <string name="dejavu_workspace_wallpaper_change">O\'zgartirish</string>
-    <string name="dejavu_workspace_wallpaper_blur">Xiralik</string>
     <string name="dejavu_workspace_wallpaper_failed">Bu rasmni ochib bo\'lmadi.</string>
     <string name="dejavu_workspace_wallpaper_colors">Zen bilan sinxronlashtiriladigan ranglar</string>
     <string name="dejavu_workspace_wallpaper_hint_local">Rasm shu telefonda qoladi va bosh sahifada ko\'rsatiladi.</string>

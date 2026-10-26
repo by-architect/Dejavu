@@ -444,7 +444,6 @@
     <string name="dejavu_workspace_wallpaper_hint">රූපය මෙම දුරකථනයේම පවතින අතර මුල් පිටුවේ පෙන්වයි. එහි වර්ණ Zen සමඟ සමමුහුර්ත වන තේමාව බවට පත් වේ.</string>
     <string name="dejavu_workspace_wallpaper_choose">රූපයක් තෝරන්න</string>
     <string name="dejavu_workspace_wallpaper_change">වෙනස් කරන්න</string>
-    <string name="dejavu_workspace_wallpaper_blur">බොඳ කිරීම</string>
     <string name="dejavu_workspace_wallpaper_failed">මෙම රූපය විවෘත කළ නොහැකි විය.</string>
     <string name="dejavu_workspace_wallpaper_colors">Zen සමඟ සමමුහුර්ත වන වර්ණ</string>
     <string name="dejavu_workspace_wallpaper_hint_local">රූපය මෙම දුරකථනයේම පවතින අතර මුල් පිටුවේ පෙන්වයි.</string>

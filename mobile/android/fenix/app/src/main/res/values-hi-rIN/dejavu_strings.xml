@@ -477,7 +477,6 @@
     <string name="dejavu_workspace_wallpaper_hint">इमेज इसी फ़ोन पर रहती है और होमपेज पर दिखती है। इसके कलर से वह थीम बनती है जो Zen के साथ सिंक होती है।</string>
     <string name="dejavu_workspace_wallpaper_choose">इमेज चुनें</string>
     <string name="dejavu_workspace_wallpaper_change">बदलें</string>
-    <string name="dejavu_workspace_wallpaper_blur">ब्लर</string>
     <string name="dejavu_workspace_wallpaper_failed">यह इमेज खोली नहीं जा सकी।</string>
     <string name="dejavu_workspace_wallpaper_colors">Zen के साथ सिंक होने वाले कलर</string>
     <string name="dejavu_workspace_wallpaper_hint_local">इमेज इसी फ़ोन पर रहती है और होमपेज पर दिखती है।</string>

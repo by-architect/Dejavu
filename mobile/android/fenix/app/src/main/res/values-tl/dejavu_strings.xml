@@ -444,7 +444,6 @@
     <string name="dejavu_workspace_wallpaper_hint">Mananatili ang larawan sa teleponong ito at lalabas ito sa home page. Ang mga kulay nito ang magiging tema na sini-sync sa Zen.</string>
     <string name="dejavu_workspace_wallpaper_choose">Pumili ng larawan</string>
     <string name="dejavu_workspace_wallpaper_change">Palitan</string>
-    <string name="dejavu_workspace_wallpaper_blur">Labo</string>
     <string name="dejavu_workspace_wallpaper_failed">Hindi mabuksan ang larawang ito.</string>
     <string name="dejavu_workspace_wallpaper_colors">Mga kulay na sini-sync sa Zen</string>
     <string name="dejavu_workspace_wallpaper_hint_local">Mananatili ang larawan sa teleponong ito at lalabas ito sa home page.</string>

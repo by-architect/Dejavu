@@ -56,13 +56,23 @@ fun View.padForSystemBarsAtSides(window: Window, onBarsChanged: () -> Unit) {
 
 /**
  * Keeps the content of [this] view, at the bottom of the browser, above the navigation bar the page runs behind, also
- * while it is hidden over pages.
+ * while it is hidden over pages. Above the keyboard, the navigation bar is out of the way. A view [contentHeight] tall,
+ * like the find in page bar, grows by the room it keeps, so its content keeps its height.
  */
-fun View.padForNavigationBar() {
+fun View.padForNavigationBar(contentHeight: Int? = null) {
     val ownPadding = paddingBottom
     ViewCompat.setOnApplyWindowInsetsListener(this) { view, insets ->
-        val bar = insets.getInsetsIgnoringVisibility(WindowInsetsCompat.Type.navigationBars()).bottom
+        val bar = if (insets.isVisible(WindowInsetsCompat.Type.ime())) {
+            0
+        } else {
+            insets.getInsetsIgnoringVisibility(WindowInsetsCompat.Type.navigationBars()).bottom
+        }
         view.updatePadding(bottom = ownPadding + bar)
+        contentHeight?.let { height ->
+            view.layoutParams?.takeIf { it.height != height + ownPadding + bar }?.let {
+                view.updateLayoutParams { this.height = height + ownPadding + bar }
+            }
+        }
         insets
     }
     ViewCompat.requestApplyInsets(this)

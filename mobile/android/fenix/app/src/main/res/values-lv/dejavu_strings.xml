@@ -452,7 +452,6 @@
     <string name="dejavu_workspace_wallpaper_hint">Attēls paliek šajā tālrunī un tiek rādīts sākuma lapā. Tā krāsas kļūst par motīvu, kas tiek sinhronizēts ar Zen.</string>
     <string name="dejavu_workspace_wallpaper_choose">Izvēlēties attēlu</string>
     <string name="dejavu_workspace_wallpaper_change">Mainīt</string>
-    <string name="dejavu_workspace_wallpaper_blur">Izpludinājums</string>
     <string name="dejavu_workspace_wallpaper_failed">Šo attēlu neizdevās atvērt.</string>
     <string name="dejavu_workspace_wallpaper_colors">Krāsas, kas tiek sinhronizētas ar Zen</string>
     <string name="dejavu_workspace_wallpaper_hint_local">Attēls paliek šajā tālrunī un tiek rādīts sākuma lapā.</string>

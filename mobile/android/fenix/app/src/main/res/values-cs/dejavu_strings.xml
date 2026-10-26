@@ -460,7 +460,6 @@
     <string name="dejavu_workspace_wallpaper_hint">Obrázek zůstane v tomto telefonu a zobrazí se na domovské stránce. Jeho barvy se stanou motivem, který se synchronizuje se Zenem.</string>
     <string name="dejavu_workspace_wallpaper_choose">Vybrat obrázek</string>
     <string name="dejavu_workspace_wallpaper_change">Změnit</string>
-    <string name="dejavu_workspace_wallpaper_blur">Rozmazání</string>
     <string name="dejavu_workspace_wallpaper_failed">Tento obrázek se nepodařilo otevřít.</string>
     <string name="dejavu_workspace_wallpaper_colors">Barvy synchronizované se Zenem</string>
     <string name="dejavu_workspace_wallpaper_hint_local">Obrázek zůstane v tomto telefonu a zobrazí se na domovské stránce.</string>

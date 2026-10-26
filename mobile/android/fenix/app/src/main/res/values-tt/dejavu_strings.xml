@@ -444,7 +444,6 @@
     <string name="dejavu_workspace_wallpaper_hint">Рәсем бу телефонда кала һәм баш биттә күренә. Аның төсләре Zen белән синхронлаштырыла торган темага әверелә.</string>
     <string name="dejavu_workspace_wallpaper_choose">Рәсем сайлау</string>
     <string name="dejavu_workspace_wallpaper_change">Алыштыру</string>
-    <string name="dejavu_workspace_wallpaper_blur">Томанлык</string>
     <string name="dejavu_workspace_wallpaper_failed">Бу рәсемне ачып булмады.</string>
     <string name="dejavu_workspace_wallpaper_colors">Zen белән синхронлаштырыла торган төсләр</string>
     <string name="dejavu_workspace_wallpaper_hint_local">Рәсем бу телефонда кала һәм баш биттә күренә.</string>

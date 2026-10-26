@@ -444,7 +444,6 @@
     <string name="dejavu_workspace_wallpaper_hint">La bildo restas sur ĉi tiu telefono kaj aperas sur la hejmpaĝo. Ĝiaj koloroj iĝas la etoso, kiu sinkroniĝas kun Zen.</string>
     <string name="dejavu_workspace_wallpaper_choose">Elekti bildon</string>
     <string name="dejavu_workspace_wallpaper_change">Ŝanĝi</string>
-    <string name="dejavu_workspace_wallpaper_blur">Malklarigo</string>
     <string name="dejavu_workspace_wallpaper_failed">Ne eblis malfermi ĉi tiun bildon.</string>
     <string name="dejavu_workspace_wallpaper_colors">Koloroj, kiuj sinkroniĝas kun Zen</string>
     <string name="dejavu_workspace_wallpaper_hint_local">La bildo restas sur ĉi tiu telefono kaj aperas sur la hejmpaĝo.</string>

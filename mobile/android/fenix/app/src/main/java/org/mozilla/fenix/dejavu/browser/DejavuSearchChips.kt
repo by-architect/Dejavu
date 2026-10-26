@@ -7,6 +7,7 @@ package org.mozilla.fenix.dejavu.browser
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.horizontalScroll
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -37,6 +38,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.asImageBitmap
 import androidx.compose.ui.graphics.painter.BitmapPainter
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.semantics.Role
 import androidx.compose.ui.text.style.TextOverflow
@@ -214,6 +216,57 @@ private fun EngineChips() {
                 } else {
                     Image(painter = painter, contentDescription = null, modifier = Modifier.size(CHIP_ICON))
                 }
+            }
+        }
+    }
+}
+
+/**
+ * The chip that fills [link], the link in the clipboard, into the address bar with [onClick], on a line of its own
+ * above the other chips. It shows the link's domain after its name.
+ */
+@Composable
+fun DejavuClipboardChip(link: String?, onClick: () -> Unit, modifier: Modifier = Modifier) {
+    val domain = link?.let(::domainOf)
+    Row(
+        modifier = modifier
+            .fillMaxWidth()
+            .background(searchScreenBackground())
+            .padding(horizontal = 12.dp, vertical = 4.dp),
+    ) {
+        Row(
+            verticalAlignment = Alignment.CenterVertically,
+            modifier = Modifier
+                .height(36.dp)
+                .clip(CircleShape)
+                .background(MaterialTheme.colorScheme.surfaceContainerHigh)
+                .clickable(role = Role.Button, onClick = onClick)
+                .padding(horizontal = 12.dp),
+        ) {
+            Icon(
+                painter = painterResource(R.drawable.dejavu_ic_clipboard_24),
+                contentDescription = null,
+                tint = MaterialTheme.colorScheme.onSurfaceVariant,
+                modifier = Modifier.size(CHIP_ICON),
+            )
+            Spacer(Modifier.width(6.dp))
+            Text(
+                text = stringResource(R.string.awesomebar_clipboard_title),
+                style = MaterialTheme.typography.labelLarge,
+                color = MaterialTheme.colorScheme.onSurface,
+                maxLines = 1,
+            )
+            domain?.let {
+                Spacer(Modifier.width(6.dp))
+                // A long domain gives way to the label.
+                Text(
+                    text = it,
+                    style = MaterialTheme.typography.labelLarge,
+                    color = MaterialTheme.colorScheme.onSurfaceVariant,
+                    maxLines = 1,
+                    overflow = TextOverflow.Ellipsis,
+                    modifier = Modifier.weight(1f, fill = false),
+                )
             }
         }
     }

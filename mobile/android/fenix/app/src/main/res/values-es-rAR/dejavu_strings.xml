@@ -452,7 +452,6 @@
     <string name="dejavu_workspace_wallpaper_hint">La imagen se queda en este teléfono y se muestra en la página de inicio. Sus colores se convierten en el tema que se sincroniza con Zen.</string>
     <string name="dejavu_workspace_wallpaper_choose">Elegir una imagen</string>
     <string name="dejavu_workspace_wallpaper_change">Cambiar</string>
-    <string name="dejavu_workspace_wallpaper_blur">Desenfoque</string>
     <string name="dejavu_workspace_wallpaper_failed">No se pudo abrir esta imagen.</string>
     <string name="dejavu_workspace_wallpaper_colors">Colores que se sincronizan con Zen</string>
     <string name="dejavu_workspace_wallpaper_hint_local">La imagen se queda en este teléfono y se muestra en la página de inicio.</string>

@@ -444,7 +444,6 @@
     <string name="dejavu_workspace_wallpaper_hint">Сурет осы телефонда қалады және басты бетте көрсетіледі. Оның түстері Zen-мен синхрондалатын темаға айналады.</string>
     <string name="dejavu_workspace_wallpaper_choose">Сурет таңдау</string>
     <string name="dejavu_workspace_wallpaper_change">Өзгерту</string>
-    <string name="dejavu_workspace_wallpaper_blur">Бұлыңғырлау</string>
     <string name="dejavu_workspace_wallpaper_failed">Бұл суретті ашу мүмкін болмады.</string>
     <string name="dejavu_workspace_wallpaper_colors">Zen-мен синхрондалатын түстер</string>
     <string name="dejavu_workspace_wallpaper_hint_local">Сурет осы телефонда қалады және басты бетте көрсетіледі.</string>

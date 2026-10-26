@@ -444,7 +444,6 @@
     <string name="dejavu_workspace_wallpaper_hint">Изображението остава на този телефон и се показва на началната страница. Цветовете му стават темата, която се синхронизира със Zen.</string>
     <string name="dejavu_workspace_wallpaper_choose">Избиране на изображение</string>
     <string name="dejavu_workspace_wallpaper_change">Смяна</string>
-    <string name="dejavu_workspace_wallpaper_blur">Замъгляване</string>
     <string name="dejavu_workspace_wallpaper_failed">Това изображение не можа да бъде отворено.</string>
     <string name="dejavu_workspace_wallpaper_colors">Цветове, които се синхронизират със Zen</string>
     <string name="dejavu_workspace_wallpaper_hint_local">Изображението остава на този телефон и се показва на началната страница.</string>

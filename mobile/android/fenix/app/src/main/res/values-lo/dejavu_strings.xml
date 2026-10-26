@@ -436,7 +436,6 @@
     <string name="dejavu_workspace_wallpaper_hint">ຮູບຈະຢູ່ໃນໂທລະສັບນີ້ ແລະ ສະແດງຢູ່ໜ້າຫຼັກ. ສີຂອງມັນຈະກາຍເປັນຮູບແບບທີ່ຊິງຄ໌ກັບ Zen.</string>
     <string name="dejavu_workspace_wallpaper_choose">ເລືອກຮູບ</string>
     <string name="dejavu_workspace_wallpaper_change">ປ່ຽນ</string>
-    <string name="dejavu_workspace_wallpaper_blur">ຄວາມມົວ</string>
     <string name="dejavu_workspace_wallpaper_failed">ບໍ່ສາມາດເປີດຮູບນີ້ໄດ້.</string>
     <string name="dejavu_workspace_wallpaper_colors">ສີທີ່ຊິງຄ໌ກັບ Zen</string>
     <string name="dejavu_workspace_wallpaper_hint_local">ຮູບຈະຢູ່ໃນໂທລະສັບນີ້ ແລະ ສະແດງຢູ່ໜ້າຫຼັກ.</string>

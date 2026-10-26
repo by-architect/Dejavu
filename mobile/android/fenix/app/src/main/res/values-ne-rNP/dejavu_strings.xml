@@ -444,7 +444,6 @@
     <string name="dejavu_workspace_wallpaper_hint">तस्वीर यही फोनमा रहन्छ र होम पृष्ठमा देखिन्छ। यसका रङहरु Zen सँग सिंक हुने थिम बन्छन्।</string>
     <string name="dejavu_workspace_wallpaper_choose">तस्वीर छान्नुहोस्</string>
     <string name="dejavu_workspace_wallpaper_change">बदल्नुहोस्</string>
-    <string name="dejavu_workspace_wallpaper_blur">धमिलोपन</string>
     <string name="dejavu_workspace_wallpaper_failed">यो तस्वीर खोल्न सकिएन।</string>
     <string name="dejavu_workspace_wallpaper_colors">Zen सँग सिंक हुने रङहरु</string>
     <string name="dejavu_workspace_wallpaper_hint_local">तस्वीर यही फोनमा रहन्छ र होम पृष्ठमा देखिन्छ।</string>

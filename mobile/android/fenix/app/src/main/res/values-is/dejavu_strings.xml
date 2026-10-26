@@ -444,7 +444,6 @@
     <string name="dejavu_workspace_wallpaper_hint">Myndin helst á þessum síma og birtist á upphafssíðunni. Litir hennar verða að þemanu sem samstillist við Zen.</string>
     <string name="dejavu_workspace_wallpaper_choose">Velja mynd</string>
     <string name="dejavu_workspace_wallpaper_change">Breyta</string>
-    <string name="dejavu_workspace_wallpaper_blur">Óskerpa</string>
     <string name="dejavu_workspace_wallpaper_failed">Ekki var hægt að opna þessa mynd.</string>
     <string name="dejavu_workspace_wallpaper_colors">Litir sem samstillast við Zen</string>
     <string name="dejavu_workspace_wallpaper_hint_local">Myndin helst á þessum síma og birtist á upphafssíðunni.</string>

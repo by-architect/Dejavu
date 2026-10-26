@@ -444,7 +444,6 @@
     <string name="dejavu_workspace_wallpaper_hint">Η εικόνα παραμένει σε αυτό το τηλέφωνο και εμφανίζεται στην αρχική σελίδα. Τα χρώματά της γίνονται το θέμα που συγχρονίζεται με το Zen.</string>
     <string name="dejavu_workspace_wallpaper_choose">Επιλογή εικόνας</string>
     <string name="dejavu_workspace_wallpaper_change">Αλλαγή</string>
-    <string name="dejavu_workspace_wallpaper_blur">Θόλωμα</string>
     <string name="dejavu_workspace_wallpaper_failed">Δεν ήταν δυνατό το άνοιγμα αυτής της εικόνας.</string>
     <string name="dejavu_workspace_wallpaper_colors">Χρώματα που συγχρονίζονται με το Zen</string>
     <string name="dejavu_workspace_wallpaper_hint_local">Η εικόνα παραμένει σε αυτό το τηλέφωνο και εμφανίζεται στην αρχική σελίδα.</string>

@@ -452,7 +452,6 @@
     <string name="dejavu_workspace_wallpaper_hint">התמונה נשארת בטלפון הזה ומוצגת בדף הבית. הצבעים שלה הופכים לערכת הנושא שמסתנכרנת עם Zen.</string>
     <string name="dejavu_workspace_wallpaper_choose">בחירת תמונה</string>
     <string name="dejavu_workspace_wallpaper_change">החלפה</string>
-    <string name="dejavu_workspace_wallpaper_blur">טשטוש</string>
     <string name="dejavu_workspace_wallpaper_failed">לא ניתן היה לפתוח את התמונה הזו.</string>
     <string name="dejavu_workspace_wallpaper_colors">צבעים שמסתנכרנים עם Zen</string>
     <string name="dejavu_workspace_wallpaper_hint_local">התמונה נשארת בטלפון הזה ומוצגת בדף הבית.</string>

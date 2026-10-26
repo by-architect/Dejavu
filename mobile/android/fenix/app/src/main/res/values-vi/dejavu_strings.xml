@@ -436,7 +436,6 @@
     <string name="dejavu_workspace_wallpaper_hint">Hình ảnh ở lại trên điện thoại này và hiển thị trên trang chủ. Màu của hình ảnh trở thành giao diện được đồng bộ hóa với Zen.</string>
     <string name="dejavu_workspace_wallpaper_choose">Chọn một hình ảnh</string>
     <string name="dejavu_workspace_wallpaper_change">Thay đổi</string>
-    <string name="dejavu_workspace_wallpaper_blur">Làm mờ</string>
     <string name="dejavu_workspace_wallpaper_failed">Không thể mở hình ảnh này.</string>
     <string name="dejavu_workspace_wallpaper_colors">Các màu được đồng bộ hóa với Zen</string>
     <string name="dejavu_workspace_wallpaper_hint_local">Hình ảnh ở lại trên điện thoại này và hiển thị trên trang chủ.</string>

@@ -460,7 +460,6 @@
     <string name="dejavu_workspace_wallpaper_hint">Obraz pozostaje na tym telefonie i jest wyświetlany na stronie startowej. Jego kolory stają się motywem synchronizowanym z Zen.</string>
     <string name="dejavu_workspace_wallpaper_choose">Wybierz obraz</string>
     <string name="dejavu_workspace_wallpaper_change">Zmień</string>
-    <string name="dejavu_workspace_wallpaper_blur">Rozmycie</string>
     <string name="dejavu_workspace_wallpaper_failed">Nie można otworzyć tego obrazu.</string>
     <string name="dejavu_workspace_wallpaper_colors">Kolory synchronizowane z Zen</string>
     <string name="dejavu_workspace_wallpaper_hint_local">Obraz pozostaje na tym telefonie i jest wyświetlany na stronie startowej.</string>

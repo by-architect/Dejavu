@@ -444,7 +444,6 @@
     <string name="dejavu_workspace_wallpaper_hint">Pilt jääb sellesse telefoni ja seda kuvatakse avalehel. Selle värvidest saab teema, mis sünkroonitakse Zeniga.</string>
     <string name="dejavu_workspace_wallpaper_choose">Vali pilt</string>
     <string name="dejavu_workspace_wallpaper_change">Muuda</string>
-    <string name="dejavu_workspace_wallpaper_blur">Hägusus</string>
     <string name="dejavu_workspace_wallpaper_failed">Seda pilti ei õnnestunud avada.</string>
     <string name="dejavu_workspace_wallpaper_colors">Värvid, mis sünkroonitakse Zeniga</string>
     <string name="dejavu_workspace_wallpaper_hint_local">Pilt jääb sellesse telefoni ja seda kuvatakse avalehel.</string>

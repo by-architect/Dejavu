@@ -476,7 +476,6 @@
     <string name="dejavu_workspace_wallpaper_hint">تبقى الصورة على هذا الهاتف وتظهر في الصفحة الرئيسية. وتصبح ألوانها السمة التي تُزامَن مع Zen.</string>
     <string name="dejavu_workspace_wallpaper_choose">اختر صورة</string>
     <string name="dejavu_workspace_wallpaper_change">تغيير</string>
-    <string name="dejavu_workspace_wallpaper_blur">التمويه</string>
     <string name="dejavu_workspace_wallpaper_failed">تعذّر فتح هذه الصورة.</string>
     <string name="dejavu_workspace_wallpaper_colors">الألوان التي تُزامَن مع Zen</string>
     <string name="dejavu_workspace_wallpaper_hint_local">تبقى الصورة على هذا الهاتف وتظهر في الصفحة الرئيسية.</string>

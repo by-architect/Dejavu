@@ -460,7 +460,6 @@
     <string name="dejavu_workspace_wallpaper_hint">Obrázok zostane na tomto telefóne a zobrazí sa na domovskej stránke. Jeho farby sa stanú témou, ktorá sa synchronizuje so Zenom.</string>
     <string name="dejavu_workspace_wallpaper_choose">Vybrať obrázok</string>
     <string name="dejavu_workspace_wallpaper_change">Zmeniť</string>
-    <string name="dejavu_workspace_wallpaper_blur">Rozmazanie</string>
     <string name="dejavu_workspace_wallpaper_failed">Tento obrázok sa nepodarilo otvoriť.</string>
     <string name="dejavu_workspace_wallpaper_colors">Farby synchronizované so Zenom</string>
     <string name="dejavu_workspace_wallpaper_hint_local">Obrázok zostane na tomto telefóne a zobrazí sa na domovskej stránke.</string>

@@ -444,7 +444,6 @@
     <string name="dejavu_workspace_wallpaper_hint">Billedet bliver på denne telefon og vises på hjemmesiden. Dets farver bliver til det tema, der synkroniseres med Zen.</string>
     <string name="dejavu_workspace_wallpaper_choose">Vælg et billede</string>
     <string name="dejavu_workspace_wallpaper_change">Skift</string>
-    <string name="dejavu_workspace_wallpaper_blur">Sløring</string>
     <string name="dejavu_workspace_wallpaper_failed">Dette billede kunne ikke åbnes.</string>
     <string name="dejavu_workspace_wallpaper_colors">Farver, der synkroniseres med Zen</string>
     <string name="dejavu_workspace_wallpaper_hint_local">Billedet bliver på denne telefon og vises på hjemmesiden.</string>

@@ -60,6 +60,7 @@ import org.mozilla.fenix.components.AppStore
 import org.mozilla.fenix.components.Components
 import org.mozilla.fenix.components.appstate.AppAction.SearchAction.SearchEnded
 import org.mozilla.fenix.components.metrics.MetricsUtils
+import org.mozilla.fenix.dejavu.browser.DejavuClipboardChip
 import org.mozilla.fenix.dejavu.browser.DejavuToolbar
 import org.mozilla.fenix.dejavu.browser.NewTabSearch
 import org.mozilla.fenix.dejavu.browser.RecentSearchMenu
@@ -187,20 +188,7 @@ class AwesomeBarComposable(
         }
 
         if (isSearchActive && shouldShowClipboardBar && orientation == AwesomeBarOrientation.TOP) {
-            val url = components.clipboardHandler.extractURL()
-
-            ClipboardSuggestionBar(
-                modifier = Modifier.awesomeBarContentWidth(showCurrentTabData),
-                shouldUseBottomToolbar = components.settings.shouldUseBottomToolbar,
-                backgroundColor = clipboardBarBackground,
-                onClick = {
-                    url?.let {
-                        toolbarStore.dispatch(
-                            SearchQueryUpdated(query = BrowserToolbarQuery(url), isQueryPrefilled = true)
-                        )
-                    }
-                },
-            )
+            ClipboardBar(Modifier.awesomeBarContentWidth(showCurrentTabData), clipboardBarBackground)
         }
 
         if (isSearchActive) {
@@ -329,21 +317,30 @@ class AwesomeBarComposable(
         }
 
         if (isSearchActive && shouldShowClipboardBar && orientation == AwesomeBarOrientation.BOTTOM) {
-            val url = components.clipboardHandler.extractURL()
-
-            ClipboardSuggestionBar(
-                modifier = Modifier.awesomeBarContentWidth(showCurrentTabData),
-                shouldUseBottomToolbar = components.settings.shouldUseBottomToolbar,
-                backgroundColor = clipboardBarBackground,
-                onClick = {
-                    url?.let {
-                        toolbarStore.dispatch(
-                            SearchQueryUpdated(query = BrowserToolbarQuery(url), isQueryPrefilled = true)
-                        )
-                    }
-                },
-            )
+            ClipboardBar(Modifier.awesomeBarContentWidth(showCurrentTabData), clipboardBarBackground)
         }
+    }
+
+    /** The suggestion to fill the link in the clipboard into the address bar. */
+    @Composable
+    private fun ClipboardBar(modifier: Modifier, backgroundColor: Color) {
+        val url = components.clipboardHandler.extractURL()
+        val fill = {
+            url?.let {
+                toolbarStore.dispatch(SearchQueryUpdated(query = BrowserToolbarQuery(url), isQueryPrefilled = true))
+            }
+        }
+        // Dejavu: a chip on a line of its own, like the chips below it.
+        if (DejavuToolbar.enabled) {
+            DejavuClipboardChip(link = url, onClick = { fill() }, modifier = modifier)
+            return
+        }
+        ClipboardSuggestionBar(
+            modifier = modifier,
+            shouldUseBottomToolbar = components.settings.shouldUseBottomToolbar,
+            backgroundColor = backgroundColor,
+            onClick = { fill() },
+        )
     }
 
     private fun initializeSearchStore() =

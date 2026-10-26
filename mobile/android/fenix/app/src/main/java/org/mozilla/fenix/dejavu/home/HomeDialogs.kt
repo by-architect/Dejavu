@@ -478,9 +478,9 @@ private fun WorkspaceDialog(
                 onImport = onImportWallpaper,
                 onPicked = { picked ->
                     dropPicked(keep = picked.file)
-                    shownWallpaper = picked.copy(blur = shownWallpaper?.blur ?: picked.blur)
+                    shownWallpaper = picked.copy(intensity = shownWallpaper?.intensity ?: picked.intensity)
                 },
-                onBlurChange = { blur -> shownWallpaper = shownWallpaper?.copy(blur = blur) },
+                onIntensityChange = { intensity -> shownWallpaper = shownWallpaper?.copy(intensity = intensity) },
             )
         } else {
             ThemeColors(theme = theme, onChange = { theme = it }, onCustomColors = { pickingColors = true })
