@@ -18,7 +18,6 @@ import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.update
 import kotlinx.coroutines.launch
 import mozilla.components.concept.storage.HistoryMetadataStorage
-import mozilla.components.ui.icons.R as iconsR
 import org.mozilla.fenix.R
 import org.mozilla.fenix.components.components
 import org.mozilla.fenix.dejavu.ui.DejavuButtonGap
@@ -80,7 +79,7 @@ fun RecentSearchMenuDialog() {
     val storage = components.core.historyStorage
     DejavuDialog(
         title = term,
-        icon = iconsR.drawable.mozac_ic_history_24,
+        icon = R.drawable.dejavu_ic_history_24,
         onDismissRequest = RecentSearchMenu::close,
         buttons = {
             DejavuDialogButton(

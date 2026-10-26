@@ -17,7 +17,6 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
-import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.collectAsState
@@ -33,7 +32,6 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.platform.LocalView
-import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.semantics.CustomAccessibilityAction
 import androidx.compose.ui.semantics.Role
@@ -64,6 +62,8 @@ import org.mozilla.fenix.dejavu.browser.shownWorkspaceTheme
 import org.mozilla.fenix.dejavu.browser.tabOrShown
 import org.mozilla.fenix.dejavu.browser.workspaceTheme
 import org.mozilla.fenix.dejavu.settings.DejavuSettings
+import org.mozilla.fenix.dejavu.ui.TapIcon
+import org.mozilla.fenix.dejavu.ui.rememberIconTaps
 import org.mozilla.fenix.dejavu.workspaces.SplitOrientation
 import org.mozilla.fenix.dejavu.workspaces.WorkspaceRepository
 import org.mozilla.fenix.ext.components as contextComponents
@@ -212,6 +212,7 @@ private class BarItem(val look: EntryLook, val onClick: () -> Unit)
 @Composable
 private fun BarButton(item: BarItem, a11yActions: List<CustomAccessibilityAction>, modifier: Modifier = Modifier) {
     val look = item.look
+    val taps = rememberIconTaps()
     Box(contentAlignment = Alignment.Center, modifier = modifier) {
         Box(
             contentAlignment = Alignment.Center,
@@ -219,16 +220,19 @@ private fun BarButton(item: BarItem, a11yActions: List<CustomAccessibilityAction
                 .size(48.dp)
                 .clip(CircleShape)
                 .background(if (look.active) MaterialTheme.colorScheme.secondaryContainer else Color.Transparent)
-                .clickable(enabled = look.enabled, role = Role.Button, onClick = item.onClick)
+                .clickable(enabled = look.enabled, role = Role.Button) {
+                    taps.tap()
+                    item.onClick()
+                }
                 .semantics {
                     contentDescription = look.label
                     customActions = a11yActions
                 }
                 .alpha(if (look.enabled) 1f else DISABLED_ALPHA),
         ) {
-            Icon(
-                painter = painterResource(look.icon),
-                contentDescription = null,
+            TapIcon(
+                icon = look.icon,
+                taps = taps,
                 tint = if (look.active) MaterialTheme.colorScheme.onSecondaryContainer else MaterialTheme.colorScheme.onSurface,
                 modifier = Modifier.size(22.dp),
             )

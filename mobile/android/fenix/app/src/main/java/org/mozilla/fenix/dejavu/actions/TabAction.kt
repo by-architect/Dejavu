@@ -67,8 +67,8 @@ enum class TabAction(
         Everywhere - ActionPlace.UNPINNED_ROWS,
     ),
     SLEEP("sleep", R.string.dejavu_action_sleep, R.drawable.dejavu_ic_sleep_24, Everywhere),
-    BOOKMARK("bookmark", R.string.dejavu_action_bookmark, iconsR.drawable.mozac_ic_bookmark_24, Everywhere),
-    SHARE("share", R.string.dejavu_action_share, iconsR.drawable.mozac_ic_share_android_24, Everywhere),
+    BOOKMARK("bookmark", R.string.dejavu_action_bookmark, R.drawable.dejavu_ic_bookmark_add_24, Everywhere),
+    SHARE("share", R.string.dejavu_action_share, R.drawable.dejavu_ic_share_24, Everywhere),
     COPY_LINK("copy_link", R.string.dejavu_action_copy_link, iconsR.drawable.mozac_ic_link_24, Everywhere),
     DUPLICATE("duplicate", R.string.dejavu_action_duplicate, iconsR.drawable.mozac_ic_copy_24, Everywhere),
     MOVE_TO_WORKSPACE(
@@ -113,7 +113,7 @@ enum class TabAction(
     NEW_FOLDER(
         "new_folder",
         R.string.dejavu_action_new_folder,
-        iconsR.drawable.mozac_ic_folder_add_24,
+        R.drawable.dejavu_ic_create_folder_24,
         Everywhere - ActionPlace.FOLDER_ROWS,
     ),
     RESET_PIN(
@@ -143,7 +143,7 @@ enum class TabAction(
     NEW_SUBFOLDER(
         "new_subfolder",
         R.string.dejavu_folder_new_subfolder,
-        iconsR.drawable.mozac_ic_folder_add_24,
+        R.drawable.dejavu_ic_create_folder_24,
         setOf(ActionPlace.FOLDER_ROWS, ActionPlace.SELECTION),
     ),
     RENAME_FOLDER(

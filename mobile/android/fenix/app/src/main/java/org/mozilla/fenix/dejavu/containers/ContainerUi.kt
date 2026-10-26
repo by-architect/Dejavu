@@ -17,6 +17,9 @@ import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 import mozilla.components.browser.state.state.ContainerState
 import org.mozilla.fenix.R
+import org.mozilla.fenix.dejavu.ui.IconTaps
+import org.mozilla.fenix.dejavu.ui.TapIcon
+import org.mozilla.fenix.dejavu.ui.rememberIconTaps
 
 /** Icon of a container, taken from Firefox desktop. */
 @get:DrawableRes
@@ -69,14 +72,16 @@ fun NoContainerIcon(
     )
 }
 
-/** Stands for a new temporary container. */
+/** Stands for a new temporary container. With [taps], it moves when its button is tapped. */
 @Composable
 fun TemporaryContainerIcon(
     modifier: Modifier = Modifier,
     size: Dp = 20.dp,
+    taps: IconTaps = rememberIconTaps(),
 ) {
-    Icon(
-        painter = painterResource(R.drawable.dejavu_ic_temporary_container_24),
+    TapIcon(
+        icon = R.drawable.dejavu_ic_temporary_container_24,
+        taps = taps,
         contentDescription = stringResource(R.string.dejavu_temporary_container),
         tint = MaterialTheme.colorScheme.onSurfaceVariant,
         modifier = modifier.size(size),

@@ -755,7 +755,7 @@ private fun FolderPickerDialog(
         }
         PickerRow(
             label = stringResource(R.string.dejavu_action_new_folder),
-            leading = { PickerIcon(iconsR.drawable.mozac_ic_folder_add_24) },
+            leading = { PickerIcon(R.drawable.dejavu_ic_create_folder_24) },
             onClick = onNewFolder,
         )
     }

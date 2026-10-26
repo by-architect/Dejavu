@@ -38,6 +38,8 @@ import org.mozilla.fenix.R
 import org.mozilla.fenix.dejavu.actions.RowAction
 import org.mozilla.fenix.dejavu.actions.TabAction
 import org.mozilla.fenix.dejavu.browser.tabZoomTarget
+import org.mozilla.fenix.dejavu.ui.TapIcon
+import org.mozilla.fenix.dejavu.ui.rememberIconTaps
 import org.mozilla.fenix.dejavu.workspaces.WorkspaceTheme
 import org.mozilla.fenix.ext.components
 
@@ -94,7 +96,7 @@ internal fun PrivateWorkspacePage(
                 modifier = Modifier.fillMaxWidth().padding(start = 12.dp, top = 4.dp, bottom = 4.dp),
             ) {
                 Icon(
-                    painter = painterResource(iconsR.drawable.mozac_ic_private_mode_24),
+                    painter = painterResource(R.drawable.dejavu_ic_private_tab_24),
                     contentDescription = null,
                     tint = MaterialTheme.colorScheme.onSurfaceVariant,
                     modifier = Modifier.size(18.dp),
@@ -130,17 +132,21 @@ internal fun PrivateWorkspacePage(
             )
         }
         item(key = "new_tab") {
+            val taps = rememberIconTaps()
             Row(
                 verticalAlignment = Alignment.CenterVertically,
                 modifier = Modifier
                     .fillMaxWidth()
                     .clip(RoundedCornerShape(16.dp))
-                    .clickable(onClick = onNewTab)
+                    .clickable {
+                        taps.tap()
+                        onNewTab()
+                    }
                     .padding(horizontal = 12.dp, vertical = 14.dp),
             ) {
-                Icon(
-                    painter = painterResource(iconsR.drawable.mozac_ic_plus_24),
-                    contentDescription = null,
+                TapIcon(
+                    icon = R.drawable.dejavu_ic_new_tab_24,
+                    taps = taps,
                     tint = MaterialTheme.colorScheme.onSurfaceVariant,
                     modifier = Modifier.size(20.dp).padding(start = 3.dp),
                 )

@@ -106,7 +106,9 @@ import org.mozilla.fenix.dejavu.containers.ContainerRecord
 import org.mozilla.fenix.dejavu.containers.color
 import org.mozilla.fenix.dejavu.sync.workspaceIconText
 import org.mozilla.fenix.dejavu.ui.LocalPopupTheme
+import org.mozilla.fenix.dejavu.ui.TapIcon
 import org.mozilla.fenix.dejavu.ui.glass
+import org.mozilla.fenix.dejavu.ui.rememberIconTaps
 import org.mozilla.fenix.dejavu.workspaces.PinnedItem
 import org.mozilla.fenix.dejavu.workspaces.Workspace
 import org.mozilla.fenix.dejavu.workspaces.WorkspaceState
@@ -698,7 +700,7 @@ private fun TopBar(interactor: DejavuHomeInteractor, onSearchClick: () -> Unit) 
         modifier = Modifier.fillMaxWidth().height(64.dp).padding(horizontal = 4.dp),
     ) {
         BarIconButton(
-            icon = iconsR.drawable.mozac_ic_avatar_circle_24,
+            icon = R.drawable.dejavu_ic_profile_24,
             contentDescription = stringResource(R.string.dejavu_account),
             onClick = interactor::onAccountClick,
             modifier = Modifier.genieButton(PageGenie.Button.ACCOUNT),
@@ -714,7 +716,7 @@ private fun TopBar(interactor: DejavuHomeInteractor, onSearchClick: () -> Unit) 
                 .padding(horizontal = 16.dp),
         ) {
             Icon(
-                painter = painterResource(iconsR.drawable.mozac_ic_search_24),
+                painter = painterResource(R.drawable.dejavu_ic_search_24),
                 contentDescription = null,
                 tint = MaterialTheme.colorScheme.onSurfaceVariant,
                 modifier = Modifier.size(20.dp),
@@ -730,7 +732,7 @@ private fun TopBar(interactor: DejavuHomeInteractor, onSearchClick: () -> Unit) 
         }
 
         BarIconButton(
-            icon = iconsR.drawable.mozac_ic_settings_24,
+            icon = R.drawable.dejavu_ic_settings_24,
             contentDescription = stringResource(R.string.dejavu_settings),
             onClick = interactor::onSettingsClick,
             modifier = Modifier.genieButton(PageGenie.Button.SETTINGS),
@@ -966,7 +968,7 @@ private fun WorkspaceBar(
             modifier = Modifier.genieButton(PageGenie.Button.DOWNLOADS),
         )
         BarIconButton(
-            icon = iconsR.drawable.mozac_ic_extension_24,
+            icon = R.drawable.dejavu_ic_extensions_24,
             contentDescription = stringResource(R.string.dejavu_extensions),
             onClick = onExtensionsClick,
         )
@@ -1021,12 +1023,16 @@ private fun WorkspaceBar(
                 )
             }
             if (hasPrivate) {
+                val privateTaps = rememberIconTaps()
                 Box(
                     contentAlignment = Alignment.Center,
                     modifier = Modifier
                         .size(WorkspaceCellSize)
                         .clip(CircleShape)
-                        .clickable(onClickLabel = stringResource(R.string.dejavu_private_workspace), onClick = onPrivateClick),
+                        .clickable(onClickLabel = stringResource(R.string.dejavu_private_workspace)) {
+                            privateTaps.tap()
+                            onPrivateClick()
+                        },
                 ) {
                     Box(
                         contentAlignment = Alignment.Center,
@@ -1037,8 +1043,9 @@ private fun WorkspaceBar(
                                 if (isPrivateActive) MaterialTheme.colorScheme.surfaceContainerHighest else Color.Transparent,
                             ),
                     ) {
-                        Icon(
-                            painter = painterResource(iconsR.drawable.mozac_ic_private_mode_24),
+                        TapIcon(
+                            icon = R.drawable.dejavu_ic_private_tab_24,
+                            taps = privateTaps,
                             contentDescription = stringResource(R.string.dejavu_private_workspace),
                             tint = MaterialTheme.colorScheme.onSurface,
                             modifier = Modifier.size(18.dp).alpha(if (isPrivateActive) 1f else INACTIVE_ICON_ALPHA),
@@ -1049,13 +1056,13 @@ private fun WorkspaceBar(
         }
 
         BarIconButton(
-            icon = iconsR.drawable.mozac_ic_bookmark_tray_24,
+            icon = R.drawable.dejavu_ic_bookmarks_24,
             contentDescription = stringResource(R.string.dejavu_bookmarks),
             onClick = onBookmarksClick,
             modifier = Modifier.genieButton(PageGenie.Button.BOOKMARKS),
         )
         BarIconButton(
-            icon = iconsR.drawable.mozac_ic_history_24,
+            icon = R.drawable.dejavu_ic_history_24,
             contentDescription = stringResource(R.string.dejavu_history),
             onClick = onHistoryClick,
             modifier = Modifier.genieButton(PageGenie.Button.HISTORY),

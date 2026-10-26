@@ -44,7 +44,6 @@ import mozilla.components.browser.state.selector.selectedTab
 import mozilla.components.browser.state.state.TabSessionState
 import mozilla.components.feature.addons.Addon
 import mozilla.components.lib.state.ext.observeAsComposableState
-import mozilla.components.ui.icons.R as iconsR
 import org.mozilla.fenix.R
 import org.mozilla.fenix.components.Components
 import org.mozilla.fenix.components.components
@@ -245,7 +244,7 @@ private fun MoreMenuContent(
                 modifier = Modifier.fillMaxWidth().padding(horizontal = 12.dp, vertical = 8.dp),
             ) {
                 Icon(
-                    painter = painterResource(iconsR.drawable.mozac_ic_extension_24),
+                    painter = painterResource(R.drawable.dejavu_ic_extensions_24),
                     contentDescription = null,
                     tint = MaterialTheme.colorScheme.onSurface,
                 )

@@ -40,7 +40,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/title_sign_in"
-            app:srcCompat="@drawable/dejavu_illustration_devices" />
+            app:srcCompat="@drawable/dejavu_illustration_account" />
 
         <TextView
             android:id="@+id/signInInstructions"

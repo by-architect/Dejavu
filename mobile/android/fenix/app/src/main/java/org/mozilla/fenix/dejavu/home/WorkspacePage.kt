@@ -94,6 +94,8 @@ import org.mozilla.fenix.dejavu.ui.DejavuDropdownMenu
 import org.mozilla.fenix.dejavu.ui.DejavuMenuDivider
 import org.mozilla.fenix.dejavu.ui.DejavuMenuItem
 import org.mozilla.fenix.dejavu.ui.DejavuMenuLabel
+import org.mozilla.fenix.dejavu.ui.TapIcon
+import org.mozilla.fenix.dejavu.ui.rememberIconTaps
 import org.mozilla.fenix.dejavu.workspaces.PinnedItem
 import org.mozilla.fenix.dejavu.workspaces.Workspace
 import org.mozilla.fenix.dejavu.workspaces.WorkspaceState
@@ -855,18 +857,26 @@ private fun NewTabRow(
     modifier: Modifier = Modifier,
 ) {
     var menuOpen by remember { mutableStateOf(false) }
+    val taps = rememberIconTaps()
     Box(modifier = modifier) {
         Row(
             verticalAlignment = Alignment.CenterVertically,
             modifier = Modifier
                 .fillMaxWidth()
                 .clip(RowShape)
-                .combinedClickable(enabled = enabled, onClick = onClick, onLongClick = { menuOpen = true })
+                .combinedClickable(
+                    enabled = enabled,
+                    onClick = {
+                        taps.tap()
+                        onClick()
+                    },
+                    onLongClick = { menuOpen = true },
+                )
                 .padding(horizontal = 12.dp, vertical = 14.dp),
         ) {
-            Icon(
-                painter = painterResource(iconsR.drawable.mozac_ic_plus_24),
-                contentDescription = null,
+            TapIcon(
+                icon = R.drawable.dejavu_ic_new_tab_24,
+                taps = taps,
                 tint = MaterialTheme.colorScheme.onSurfaceVariant,
                 modifier = Modifier.size(20.dp).padding(start = 3.dp),
             )
@@ -896,7 +906,7 @@ private fun NewTabRow(
                 text = stringResource(R.string.dejavu_new_private_tab),
                 leadingIcon = {
                     Icon(
-                        painter = painterResource(iconsR.drawable.mozac_ic_private_mode_24),
+                        painter = painterResource(R.drawable.dejavu_ic_private_tab_24),
                         contentDescription = null,
                         modifier = Modifier.size(20.dp),
                     )
@@ -1004,20 +1014,24 @@ private fun WorkspaceHeader(
             )
         }
         SmallIconButton(
-            icon = iconsR.drawable.mozac_ic_clipboard_24,
+            icon = R.drawable.dejavu_ic_clipboard_24,
             description = R.string.dejavu_open_clipboard_link,
             enabled = tabButtonsEnabled && canOpenClipboard,
             onClick = onOpenClipboard,
         )
         SmallIconButton(
-            icon = iconsR.drawable.mozac_ic_arrow_counter_clockwise_24,
+            icon = R.drawable.dejavu_ic_reopen_tab_24,
             description = R.string.dejavu_reopen_closed_tab,
             enabled = tabButtonsEnabled && canReopenClosedTab,
             onClick = onReopenClosedTab,
         )
         // The workspace of a device on the account cannot have folders of its own, nor be deleted: sync handles it.
         if (!isDevice) {
-            SmallIconButton(iconsR.drawable.mozac_ic_folder_add_24, R.string.dejavu_action_new_folder, onClick = onNewFolder)
+            SmallIconButton(
+                icon = R.drawable.dejavu_ic_create_folder_24,
+                description = R.string.dejavu_action_new_folder,
+                onClick = onNewFolder,
+            )
         }
         Box {
             SmallIconButton(iconsR.drawable.mozac_ic_ellipsis_vertical_24, R.string.dejavu_workspace_menu) {
@@ -1184,16 +1198,7 @@ private fun FolderRow(
         if (selection != null) {
             SelectionMark(selected = selection)
         } else if (actions.isNotEmpty()) {
-            actions.forEach { action ->
-                IconButton(onClick = { onAction(action) }) {
-                    Icon(
-                        painter = painterResource(action.icon),
-                        contentDescription = action.label,
-                        tint = MaterialTheme.colorScheme.onSurfaceVariant,
-                        modifier = Modifier.size(20.dp),
-                    )
-                }
-            }
+            actions.forEach { action -> RowActionButton(action, onAction) }
         } else if (folder.collapsed && childCount > 0) {
             Text(
                 text = childCount.toString(),
@@ -1303,16 +1308,7 @@ internal fun TabRow(
             )
         }
         if (selection == null) {
-            actions.forEach { action ->
-                IconButton(onClick = { onAction(action) }) {
-                    Icon(
-                        painter = painterResource(action.icon),
-                        contentDescription = action.label,
-                        tint = MaterialTheme.colorScheme.onSurfaceVariant,
-                        modifier = Modifier.size(20.dp),
-                    )
-                }
-            }
+            actions.forEach { action -> RowActionButton(action, onAction) }
         } else {
             SelectionMark(selected = selection)
         }
@@ -1472,11 +1468,39 @@ private fun SelectionMark(selected: Boolean) {
     }
 }
 
+/** A button of a row: [action], which [onAction] carries out on what the row stands for. */
+@Composable
+private fun RowActionButton(action: RowAction, onAction: (RowAction) -> Unit) {
+    val taps = rememberIconTaps()
+    IconButton(
+        onClick = {
+            taps.tap()
+            onAction(action)
+        },
+    ) {
+        TapIcon(
+            icon = action.icon,
+            taps = taps,
+            contentDescription = action.label,
+            tint = MaterialTheme.colorScheme.onSurfaceVariant,
+            modifier = Modifier.size(20.dp),
+        )
+    }
+}
+
 @Composable
 private fun SmallIconButton(icon: Int, @StringRes description: Int, enabled: Boolean = true, onClick: () -> Unit) {
-    IconButton(onClick = onClick, enabled = enabled) {
-        Icon(
-            painter = painterResource(icon),
+    val taps = rememberIconTaps()
+    IconButton(
+        onClick = {
+            taps.tap()
+            onClick()
+        },
+        enabled = enabled,
+    ) {
+        TapIcon(
+            icon = icon,
+            taps = taps,
             contentDescription = stringResource(description),
             tint = MaterialTheme.colorScheme.onSurfaceVariant.copy(alpha = if (enabled) 1f else DISABLED_ALPHA),
             modifier = Modifier.size(20.dp),

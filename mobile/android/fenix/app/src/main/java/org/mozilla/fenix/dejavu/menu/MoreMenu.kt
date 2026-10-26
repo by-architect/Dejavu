@@ -30,18 +30,18 @@ enum class MoreMenuItem(
 ) {
     BACK("back", R.string.dejavu_menu_back, iconsR.drawable.mozac_ic_back_24),
     FORWARD("forward", R.string.dejavu_menu_forward, iconsR.drawable.mozac_ic_forward_24),
-    SHARE("share", R.string.dejavu_menu_share, iconsR.drawable.mozac_ic_share_android_24),
-    REFRESH("refresh", R.string.dejavu_menu_refresh, iconsR.drawable.mozac_ic_arrow_clockwise_24),
+    SHARE("share", R.string.dejavu_menu_share, R.drawable.dejavu_ic_share_24),
+    REFRESH("refresh", R.string.dejavu_menu_refresh, R.drawable.dejavu_ic_refresh_24),
     READER_VIEW("reader_view", R.string.dejavu_menu_reader_view, iconsR.drawable.mozac_ic_reader_view_24),
-    NEW_TAB("new_tab", R.string.dejavu_menu_new_tab, iconsR.drawable.mozac_ic_plus_24),
-    FIND_IN_PAGE("find_in_page", R.string.dejavu_menu_find_in_page, iconsR.drawable.mozac_ic_find_in_page_24),
-    BOOKMARK_PAGE("bookmark_page", R.string.dejavu_menu_bookmark_page, iconsR.drawable.mozac_ic_bookmark_24),
+    NEW_TAB("new_tab", R.string.dejavu_menu_new_tab, R.drawable.dejavu_ic_new_tab_24),
+    FIND_IN_PAGE("find_in_page", R.string.dejavu_menu_find_in_page, R.drawable.dejavu_ic_find_in_page_24),
+    BOOKMARK_PAGE("bookmark_page", R.string.dejavu_menu_bookmark_page, R.drawable.dejavu_ic_bookmark_add_24),
     DESKTOP_SITE("desktop_site", R.string.dejavu_menu_desktop_site, iconsR.drawable.mozac_ic_device_desktop_24),
-    EXTENSIONS("extensions", R.string.dejavu_menu_extensions, iconsR.drawable.mozac_ic_extension_24),
-    PASSWORDS("passwords", R.string.dejavu_menu_passwords, iconsR.drawable.mozac_ic_login_24),
-    BOOKMARKS("bookmarks", R.string.dejavu_menu_bookmarks, iconsR.drawable.mozac_ic_bookmark_tray_24),
-    DOWNLOADS("downloads", R.string.dejavu_menu_downloads, iconsR.drawable.mozac_ic_download_24),
-    HISTORY("history", R.string.dejavu_menu_history, iconsR.drawable.mozac_ic_history_24),
+    EXTENSIONS("extensions", R.string.dejavu_menu_extensions, R.drawable.dejavu_ic_extensions_24),
+    PASSWORDS("passwords", R.string.dejavu_menu_passwords, R.drawable.dejavu_ic_passwords_24),
+    BOOKMARKS("bookmarks", R.string.dejavu_menu_bookmarks, R.drawable.dejavu_ic_bookmarks_24),
+    DOWNLOADS("downloads", R.string.dejavu_menu_downloads, R.drawable.dejavu_ic_downloads_24),
+    HISTORY("history", R.string.dejavu_menu_history, R.drawable.dejavu_ic_history_24),
     TRANSLATE("translate", R.string.dejavu_menu_translate, iconsR.drawable.mozac_ic_translate_24),
     PIN_TAB("pin_tab", R.string.dejavu_menu_pin_tab, iconsR.drawable.mozac_ic_pin_24),
     ESSENTIAL_TAB("essential_tab", R.string.dejavu_menu_essential_tab, iconsR.drawable.mozac_ic_grid_add_24),
@@ -56,7 +56,7 @@ enum class MoreMenuItem(
     // What the split view entry turns into on screens with room for both ways of splitting; never put by the user.
     SPLIT_TOP_AND_BOTTOM("split_top_and_bottom", R.string.dejavu_split_top_and_bottom, R.drawable.dejavu_ic_split_24),
     SPLIT_SIDE_BY_SIDE("split_side_by_side", R.string.dejavu_split_side_by_side, R.drawable.dejavu_ic_split_side_24),
-    SETTINGS("settings", R.string.dejavu_menu_settings, iconsR.drawable.mozac_ic_settings_24),
+    SETTINGS("settings", R.string.dejavu_menu_settings, R.drawable.dejavu_ic_settings_24),
     ;
 
     companion object {

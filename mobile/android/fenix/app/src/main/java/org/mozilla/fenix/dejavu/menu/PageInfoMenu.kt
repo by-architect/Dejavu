@@ -353,7 +353,7 @@ private fun AddressCard(url: String, onCopy: () -> Unit, onShare: (() -> Unit)?)
                 onClick = onCopy,
             )
             onShare?.let {
-                CardButton(iconsR.drawable.mozac_ic_share_android_24, stringResource(R.string.dejavu_menu_share), it)
+                CardButton(R.drawable.dejavu_ic_share_24, stringResource(R.string.dejavu_menu_share), it)
             }
         }
     }
@@ -479,7 +479,7 @@ private fun WorkspaceRow(workspace: Workspace?, container: ContainerRecord?, onC
                 WorkspaceMark(workspace, container)
             } else {
                 Icon(
-                    painter = painterResource(iconsR.drawable.mozac_ic_private_mode_24),
+                    painter = painterResource(R.drawable.dejavu_ic_private_tab_24),
                     contentDescription = null,
                     tint = MaterialTheme.colorScheme.onSurface,
                     modifier = Modifier.size(ROW_ICON_SIZE),

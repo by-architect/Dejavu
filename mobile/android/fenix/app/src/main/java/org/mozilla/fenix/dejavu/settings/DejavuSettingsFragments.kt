@@ -134,7 +134,7 @@ enum class ActionList(
         R.string.dejavu_settings_pinned_actions_hint,
         R.string.dejavu_settings_close_pinned_hint,
     ),
-    UNPINNED(ActionPlace.UNPINNED_ROWS, iconsR.drawable.mozac_ic_tab_24, R.string.dejavu_settings_unpinned_actions_hint),
+    UNPINNED(ActionPlace.UNPINNED_ROWS, R.drawable.dejavu_ic_tabs_24, R.string.dejavu_settings_unpinned_actions_hint),
     FOLDERS(
         ActionPlace.FOLDER_ROWS,
         iconsR.drawable.mozac_ic_folder_24,

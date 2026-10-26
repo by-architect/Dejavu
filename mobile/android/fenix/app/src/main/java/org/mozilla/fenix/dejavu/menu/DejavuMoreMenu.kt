@@ -70,6 +70,8 @@ import org.mozilla.fenix.dejavu.browser.shownWorkspaceTheme
 import org.mozilla.fenix.dejavu.browser.statusBarRoomPadding
 import org.mozilla.fenix.dejavu.browser.workspaceTheme
 import org.mozilla.fenix.dejavu.home.displayTitle
+import org.mozilla.fenix.dejavu.ui.TapIcon
+import org.mozilla.fenix.dejavu.ui.rememberIconTaps
 import org.mozilla.fenix.dejavu.workspaces.SplitOrientation
 
 /** What the "More" menu shows about the tab it was opened for. */
@@ -110,8 +112,9 @@ internal fun MoreMenuEntry.look(state: MoreMenuState): EntryLook = when (this) {
     // A custom action sends the page to a server, so it does not run on a private tab, like pinning and moving it.
     is MoreMenuEntry.Custom ->
         EntryLook(action.name, iconsR.drawable.mozac_ic_lightning_24, enabled = state.isWebPage && !state.isPrivate)
-    MoreMenuEntry.Home -> EntryLook(stringResource(R.string.dejavu_actions_bar_home), iconsR.drawable.mozac_ic_home_24)
-    MoreMenuEntry.Search -> EntryLook(stringResource(R.string.dejavu_actions_bar_search), iconsR.drawable.mozac_ic_search_24)
+    MoreMenuEntry.Home -> EntryLook(stringResource(R.string.dejavu_actions_bar_home), R.drawable.dejavu_ic_home_24)
+    MoreMenuEntry.Search ->
+        EntryLook(stringResource(R.string.dejavu_actions_bar_search), R.drawable.dejavu_ic_search_24)
 }
 
 @Composable
@@ -129,7 +132,8 @@ private fun MoreMenuItem.look(state: MoreMenuState): EntryLook {
             default
         }
         MoreMenuItem.BOOKMARK_PAGE -> if (state.isBookmarked) {
-            EntryLook(stringResource(R.string.dejavu_menu_edit_bookmark), iconsR.drawable.mozac_ic_bookmark_fill_24, active = true)
+            val label = stringResource(R.string.dejavu_menu_edit_bookmark)
+            EntryLook(label, R.drawable.dejavu_ic_bookmarked_24, active = true)
         } else {
             default.copy(enabled = state.isWebPage)
         }
@@ -418,6 +422,7 @@ fun ExtensionsDrawer(
     onManage: () -> Unit,
 ) {
     val chevronRotation by animateFloatAsState(targetValue = if (expanded) HALF_TURN else 0f, label = "ExtensionsChevron")
+    val taps = rememberIconTaps()
     Column(
         modifier = Modifier
             .fillMaxWidth()
@@ -429,14 +434,13 @@ fun ExtensionsDrawer(
             verticalAlignment = Alignment.CenterVertically,
             modifier = Modifier
                 .fillMaxWidth()
-                .clickable(onClick = if (extensions.isEmpty()) onManage else onToggle)
+                .clickable {
+                    taps.tap()
+                    if (extensions.isEmpty()) onManage() else onToggle()
+                }
                 .padding(horizontal = 16.dp, vertical = 12.dp),
         ) {
-            Icon(
-                painter = painterResource(iconsR.drawable.mozac_ic_extension_24),
-                contentDescription = null,
-                tint = MaterialTheme.colorScheme.onSurface,
-            )
+            TapIcon(icon = R.drawable.dejavu_ic_extensions_24, taps = taps, tint = MaterialTheme.colorScheme.onSurface)
             Spacer(Modifier.width(14.dp))
             Column(modifier = Modifier.weight(1f)) {
                 Text(
@@ -486,7 +490,7 @@ fun ExtensionList(extensions: List<WebExtensionMenuItem>, onManage: () -> Unit) 
                 .padding(horizontal = 16.dp, vertical = 14.dp),
         ) {
             Icon(
-                painter = painterResource(iconsR.drawable.mozac_ic_settings_24),
+                painter = painterResource(R.drawable.dejavu_ic_settings_24),
                 contentDescription = null,
                 tint = MaterialTheme.colorScheme.onSurfaceVariant,
                 modifier = Modifier.size(20.dp),
@@ -518,7 +522,7 @@ private fun ExtensionRow(extension: WebExtensionMenuItem) {
             Image(bitmap = icon.asImageBitmap(), contentDescription = null, modifier = Modifier.size(24.dp))
         } else {
             Icon(
-                painter = painterResource(iconsR.drawable.mozac_ic_extension_24),
+                painter = painterResource(R.drawable.dejavu_ic_extensions_24),
                 contentDescription = null,
                 tint = MaterialTheme.colorScheme.onSurfaceVariant,
                 modifier = Modifier.size(24.dp),

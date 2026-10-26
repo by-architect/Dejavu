@@ -23,7 +23,6 @@ import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
-import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -44,7 +43,6 @@ import androidx.compose.ui.graphics.Shape
 import androidx.compose.ui.hapticfeedback.HapticFeedbackType
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.platform.LocalHapticFeedback
-import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.semantics.CustomAccessibilityAction
 import androidx.compose.ui.semantics.Role
@@ -93,6 +91,8 @@ import org.mozilla.fenix.dejavu.settings.DejavuSettings
 import org.mozilla.fenix.dejavu.ui.DejavuDropdownMenu
 import org.mozilla.fenix.dejavu.ui.DejavuMenuItem
 import org.mozilla.fenix.dejavu.ui.LocalPopupTheme
+import org.mozilla.fenix.dejavu.ui.TapIcon
+import org.mozilla.fenix.dejavu.ui.rememberIconTaps
 import org.mozilla.fenix.dejavu.workspaces.SplitOrientation
 
 /**
@@ -485,20 +485,22 @@ private fun SideButton(
     val state = barTab.state
     val look = entry.look(state)
     val colors = MaterialTheme.colorScheme
+    val taps = rememberIconTaps()
     Box(
         contentAlignment = Alignment.Center,
         modifier = Modifier
             .size(ADDRESS_FIELD_HEIGHT)
             .barSurface(CircleShape, if (look.active) colors.secondaryContainer else colors.surfaceContainerHigh)
             .clickable(enabled = look.enabled, role = Role.Button) {
+                taps.tap()
                 if (entry == MoreMenuEntry.Search) onSearch() else entry.tap(state, source, onEvent, ask)
             }
             .semantics { contentDescription = look.label }
             .alpha(if (look.enabled) 1f else DISABLED_ALPHA),
     ) {
-        Icon(
-            painter = painterResource(look.icon),
-            contentDescription = null,
+        TapIcon(
+            icon = look.icon,
+            taps = taps,
             tint = if (look.active) colors.onSecondaryContainer else colors.onSurface,
             modifier = Modifier.size(SIDE_ICON_SIZE),
         )

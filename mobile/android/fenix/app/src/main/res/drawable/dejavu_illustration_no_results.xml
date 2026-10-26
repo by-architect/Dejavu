@@ -2,7 +2,7 @@
 <!-- This Source Code Form is subject to the terms of the Mozilla Public
    - License, v. 2.0. If a copy of the MPL was not distributed with this
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
-<!-- Dejavu's no results picture, Firefox's mozac_ic_search_24 in the page's icon color, made by
+<!-- Dejavu's no results picture, its dejavu_ic_search_24 in the page's icon color, made by
      scripts/make-media-illustrations.py. -->
 <vector xmlns:android="http://schemas.android.com/apk/res/android"
     android:width="72dp"
@@ -10,6 +10,16 @@
     android:viewportWidth="24"
     android:viewportHeight="24">
     <path
-        android:pathData="M10.5,4C14.642,4 18,7.358 18,11.5C18,13.255 17.395,14.868 16.385,16.146L19.745,19.506C20.086,19.848 20.086,20.402 19.745,20.743C19.574,20.914 19.349,20.999 19.126,20.999C18.903,20.999 18.678,20.914 18.507,20.743L15.146,17.384C13.869,18.394 12.256,19 10.5,19C6.358,19 3,15.642 3,11.5C3,7.358 6.358,4 10.5,4ZM10.5,5.75C7.324,5.75 4.75,8.324 4.75,11.5C4.75,14.676 7.324,17.25 10.5,17.25C13.676,17.25 16.25,14.676 16.25,11.5C16.25,8.324 13.676,5.75 10.5,5.75Z"
-        android:fillColor="?attr/colorOnSurface" />
+        android:strokeColor="?attr/colorOnSurface"
+        android:strokeWidth="1.5"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:pathData="M11 20C15.9706 20 20 15.9706 20 11C20 6.02944 15.9706 2 11 2C6.02944 2 2 6.02944 2 11C2 15.9706 6.02944 20 11 20Z" />
+    <path
+        android:strokeColor="?attr/colorOnSurface"
+        android:strokeWidth="1.5"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:strokeAlpha="0.4"
+        android:pathData="M18.9304 20.6898C19.4604 22.2898 20.6704 22.4498 21.6004 21.0498C22.4504 19.7698 21.8904 18.7198 20.3504 18.7198C19.2104 18.7098 18.5704 19.5998 18.9304 20.6898Z" />
 </vector>

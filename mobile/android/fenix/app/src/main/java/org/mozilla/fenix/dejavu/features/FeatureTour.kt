@@ -105,7 +105,7 @@ enum class DejavuFeature(
     @param:StringRes val title: Int,
     @param:RawRes val animation: Int,
     val where: List<Int> = emptyList(),
-    @param:DrawableRes val whereIcon: Int = iconsR.drawable.mozac_ic_settings_24,
+    @param:DrawableRes val whereIcon: Int = R.drawable.dejavu_ic_settings_24,
 ) {
     SLEEP(
         R.string.dejavu_feature_sleep,
@@ -132,7 +132,7 @@ enum class DejavuFeature(
         R.string.dejavu_feature_zen_sync,
         R.raw.dejavu_feature_zen_sync,
         listOf(R.string.preferences_account_settings, R.string.dejavu_sync_source),
-        iconsR.drawable.mozac_ic_avatar_circle_24,
+        R.drawable.dejavu_ic_profile_24,
     ),
     FOLDERS(R.string.dejavu_feature_folders, R.raw.dejavu_feature_folders),
     DRAG(R.string.dejavu_feature_drag, R.raw.dejavu_feature_drag),
@@ -142,7 +142,7 @@ enum class DejavuFeature(
         R.string.dejavu_feature_firefox_sync,
         R.raw.dejavu_feature_firefox_sync,
         listOf(R.string.preferences_account_settings, R.string.dejavu_sync_source),
-        iconsR.drawable.mozac_ic_avatar_circle_24,
+        R.drawable.dejavu_ic_profile_24,
     ),
     TAB_ZOOM(R.string.dejavu_feature_tab_zoom, R.raw.dejavu_feature_tab_zoom),
     BAR_LAYOUTS(

@@ -645,7 +645,7 @@ private fun FieldBlock(showsIcon: Boolean, modifier: Modifier = Modifier) {
     ) {
         if (showsIcon) {
             Icon(
-                painter = painterResource(iconsR.drawable.mozac_ic_search_24),
+                painter = painterResource(R.drawable.dejavu_ic_search_24),
                 contentDescription = null,
                 tint = MaterialTheme.colorScheme.onSurfaceVariant,
                 modifier = Modifier.size(22.dp),

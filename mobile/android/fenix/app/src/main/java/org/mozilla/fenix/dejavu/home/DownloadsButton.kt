@@ -114,7 +114,7 @@ private val RunningStatuses = setOf(
 
 /**
  * The downloads button of the home screen. While files download, a ring around the icon fills as they do, or spins
- * while their size is unknown, and the arrow keeps sinking into the tray and dropping back in; a number counts the
+ * while their size is unknown, and the arrow keeps sinking into the bowl and dropping back in; a number counts the
  * downloads past one. When the last one finishes the ring fills, pops and a check mark takes the arrow's place for a
  * moment; when it fails the ring flashes red and the icon shakes. Paused downloads hold everything still.
  *
@@ -314,15 +314,16 @@ private fun DrawScope.drawRing(sweep: Float?, spin: Float, color: Color, trackCo
 }
 
 /**
- * Firefox's download icon, the tray and the arrow [drop] icon units below its place, [glyphScale] of its size. The
- * arrow shows only between the top of the icon and the rim of the tray, so it sinks into the tray and drops in from
+ * Dejavu's downloads icon, the bowl and the arrow [drop] icon units below its place, [glyphScale] of its size. The
+ * arrow shows only between the top of the icon and the bottom of the bowl, so it sinks into the bowl and drops in from
  * above.
  */
 private fun DrawScope.drawGlyph(tray: Path, arrow: Path, drop: Float, color: Color, glyphScale: Float) {
+    val line = Stroke(width = GLYPH_STROKE, cap = StrokeCap.Round, join = StrokeJoin.Round)
     inIconUnits(glyphScale) {
-        drawPath(tray, color)
+        drawPath(tray, color, style = line)
         clipRect(top = ARROW_CLIP_TOP, bottom = ARROW_CLIP_BOTTOM) {
-            translate(top = drop) { drawPath(arrow, color) }
+            translate(top = drop) { drawPath(arrow, color.copy(alpha = color.alpha * ARROW_ALPHA), style = line) }
         }
     }
 }
@@ -392,32 +393,26 @@ private const val SPIN_MAX_SWEEP = 200f
 private const val RING_POP = 0.12f
 private const val SHAKES = 3
 
-// The paths of Firefox's mozac_ic_download_24: the tray, and the arrow above it.
-private const val TRAY_PATH = "M20.125,17C20.608,17 21,17.392 21,17.875V18.462C21,19.999 19.881,21.336 18.336,21.555" +
-    "C16.47,21.819 14.342,22 12,22C10.178,22 8.05,21.89 5.695,21.559C4.154,21.342 3,20.017 3,18.459V17.875" +
-    "C3,17.392 3.392,17 3.875,17C4.358,17 4.75,17.392 4.75,17.875V18.459C4.75,19.143 5.26,19.73 5.938,19.825" +
-    "C8.202,20.144 10.248,20.25 12,20.25C14.252,20.25 16.297,20.075 18.091,19.821C18.749,19.728 19.25,19.151 " +
-    "19.25,18.462V17.875C19.25,17.392 19.642,17 20.125,17Z"
-private const val ARROW_PATH = "M12,3C12.483,3 12.875,3.392 12.875,3.875V14.528L16.005,11.399C16.347,11.057 " +
-    "16.901,11.057 17.243,11.399C17.584,11.741 17.584,12.295 17.243,12.637L13.502,16.378C13.101,16.779 " +
-    "12.566,16.999 11.999,16.999C11.432,16.999 10.898,16.779 10.497,16.378L6.756,12.637C6.415,12.295 " +
-    "6.415,11.741 6.756,11.399C7.098,11.057 7.652,11.057 7.994,11.399L11.125,14.529V3.875C11.125,3.392 " +
-    "11.517,3 12,3Z"
+// The lines of dejavu_ic_downloads_24: the bowl, and the arrow in it, drawn lighter.
+private const val TRAY_PATH = "M20 12.1802C20 16.6002 17 20.1802 12 20.1802C7 20.1802 4 16.6002 4 12.1802"
+private const val ARROW_PATH = "M11.8809 4V14.17M9.32031 11.6797L11.8803 14.2397L14.4403 11.6797"
+private const val GLYPH_STROKE = 1.5f
+private const val ARROW_ALPHA = 0.4f
 
-// The arrow shows between these lines, in icon units: from above the icon down to the rim of the tray.
+// The arrow shows between these lines, in icon units: from above the icon down to the bottom of the bowl.
 private const val ARROW_CLIP_TOP = 0.5f
-private const val ARROW_CLIP_BOTTOM = 17f
-private const val SINK_DEPTH = 14f
-private const val ENTER_HEIGHT = 14f
+private const val ARROW_CLIP_BOTTOM = 19.4f
+private const val SINK_DEPTH = 16.5f
+private const val ENTER_HEIGHT = 15f
 
-// The check mark, in icon units, above the tray.
+// The check mark, in icon units, above the bowl.
 private const val CHECK_START_X = 7.6f
 private const val CHECK_START_Y = 10.4f
 private const val CHECK_CORNER_X = 10.8f
 private const val CHECK_CORNER_Y = 13.6f
 private const val CHECK_END_X = 16.6f
 private const val CHECK_END_Y = 7.2f
-private const val CHECK_STROKE = 1.9f
+private const val CHECK_STROKE = 1.6f
 
 private const val ARROW_LOOP_MS = 1400
 private const val SPIN_MS = 1100

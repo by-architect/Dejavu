@@ -82,7 +82,7 @@ internal fun DejavuDownloadDialog(
     CompositionLocalProvider(LocalPopupTheme provides shownWorkspaceTheme()) {
         DejavuDialogCard(
             title = title,
-            icon = iconsR.drawable.mozac_ic_download_24,
+            icon = R.drawable.dejavu_ic_downloads_24,
             buttons = {
                 DejavuDialogButton(
                     text = stringResource(downloadsR.string.mozac_feature_downloads_dialog_cancel),

@@ -37,7 +37,6 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.asImageBitmap
 import androidx.compose.ui.graphics.painter.BitmapPainter
 import androidx.compose.ui.platform.LocalContext
-import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.semantics.Role
 import androidx.compose.ui.text.style.TextOverflow
@@ -47,7 +46,6 @@ import mozilla.components.browser.state.selector.findTab
 import mozilla.components.browser.state.state.TabSessionState
 import mozilla.components.browser.state.state.selectedOrDefaultSearchEngine
 import mozilla.components.lib.state.ext.observeAsComposableState
-import mozilla.components.ui.icons.R as iconsR
 import org.mozilla.fenix.R
 import org.mozilla.fenix.components.appstate.AppAction.SearchAction.SearchEngineSelected
 import org.mozilla.fenix.components.appstate.AppAction.SearchAction.SearchStarted
@@ -59,6 +57,9 @@ import org.mozilla.fenix.dejavu.containers.ContainerRecord
 import org.mozilla.fenix.dejavu.containers.DejavuContainerStorage
 import org.mozilla.fenix.dejavu.containers.TemporaryContainerIcon
 import org.mozilla.fenix.dejavu.settings.DejavuSettings
+import org.mozilla.fenix.dejavu.ui.IconTaps
+import org.mozilla.fenix.dejavu.ui.TapIcon
+import org.mozilla.fenix.dejavu.ui.rememberIconTaps
 import org.mozilla.fenix.dejavu.workspaces.WorkspaceRepository
 import org.mozilla.fenix.search.ext.searchEngineShortcuts
 
@@ -157,18 +158,18 @@ private fun ContainerChips(editedTab: TabSessionState?) {
                 label = stringResource(R.string.dejavu_search_chip_temporary),
                 selected = picked == TabPlace.Temporary,
                 onClick = { pick(TabPlace.Temporary) },
-            ) {
-                TemporaryContainerIcon(size = CHIP_ICON)
+            ) { taps ->
+                TemporaryContainerIcon(size = CHIP_ICON, taps = taps)
             }
         }
         SearchChip(
             label = stringResource(R.string.dejavu_private_workspace),
             selected = picked == TabPlace.Private,
             onClick = { pick(TabPlace.Private) },
-        ) {
-            Icon(
-                painter = painterResource(iconsR.drawable.mozac_ic_private_mode_24),
-                contentDescription = null,
+        ) { taps ->
+            TapIcon(
+                icon = R.drawable.dejavu_ic_private_tab_24,
+                taps = taps,
                 tint = MaterialTheme.colorScheme.onSurfaceVariant,
                 modifier = Modifier.size(CHIP_ICON),
             )
@@ -232,7 +233,13 @@ private fun ChipRow(content: @Composable RowScope.() -> Unit) {
 }
 
 @Composable
-private fun SearchChip(label: String, selected: Boolean, onClick: () -> Unit, leading: @Composable () -> Unit) {
+private fun SearchChip(
+    label: String,
+    selected: Boolean,
+    onClick: () -> Unit,
+    leading: @Composable (IconTaps) -> Unit,
+) {
+    val taps = rememberIconTaps()
     Row(
         verticalAlignment = Alignment.CenterVertically,
         modifier = Modifier
@@ -242,10 +249,13 @@ private fun SearchChip(label: String, selected: Boolean, onClick: () -> Unit, le
                 if (selected) MaterialTheme.colorScheme.primaryContainer else MaterialTheme.colorScheme.surfaceContainerHigh,
             )
             .border(1.dp, if (selected) MaterialTheme.colorScheme.primary else Color.Transparent, CircleShape)
-            .selectable(selected = selected, role = Role.RadioButton, onClick = onClick)
+            .selectable(selected = selected, role = Role.RadioButton) {
+                taps.tap()
+                onClick()
+            }
             .padding(horizontal = 12.dp),
     ) {
-        leading()
+        leading(taps)
         Spacer(Modifier.width(6.dp))
         Text(
             text = label,

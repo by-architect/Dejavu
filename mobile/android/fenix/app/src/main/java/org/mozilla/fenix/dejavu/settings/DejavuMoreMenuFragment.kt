@@ -64,8 +64,8 @@ internal val MoreMenuEntry.icon: Int
         is MoreMenuEntry.BuiltIn -> item.icon
         is MoreMenuEntry.Tab -> action.icon
         is MoreMenuEntry.Custom -> iconsR.drawable.mozac_ic_lightning_24
-        MoreMenuEntry.Home -> iconsR.drawable.mozac_ic_home_24
-        MoreMenuEntry.Search -> iconsR.drawable.mozac_ic_search_24
+        MoreMenuEntry.Home -> R.drawable.dejavu_ic_home_24
+        MoreMenuEntry.Search -> R.drawable.dejavu_ic_search_24
     }
 
 internal val MoreMenuEntry.label: String
