@@ -72,6 +72,8 @@ data class BrowserToolbarCFR(
  *   using a bottom toolbar and the user is entering text in a website.
  * @param browserActionsColor Optional `onSurface` color override applied only to the display toolbar's browser actions
  *   (outside the URL bounding box), leaving page actions unchanged.
+ * @param seeThroughWhileEditing Dejavu: whether the edit toolbar lets what lies behind it show around its field, for
+ *   search screens that show what lies behind them blurred.
  */
 @Composable
 fun BrowserToolbar(
@@ -79,6 +81,7 @@ fun BrowserToolbar(
     cfr: BrowserToolbarCFR? = null,
     useMinimalBottomToolbarWhenEnteringText: Boolean = false,
     browserActionsColor: Color? = null,
+    seeThroughWhileEditing: Boolean = false,
 ) {
     val uiState by store.observeAsComposableState { it }
     val cfrProperties = browserToolbarCFRProperties(uiState.gravity)
@@ -93,12 +96,12 @@ fun BrowserToolbar(
             usePrivateModeQueries = uiState.editState.isQueryPrivate,
             gravity = uiState.gravity,
             backgroundColor =
-                if (store.state.editState.query.current.isEmpty()) {
-                    backgroundColor
-                } else {
-                    MaterialTheme.colorScheme.surface
+                when {
+                    seeThroughWhileEditing -> Color.Transparent
+                    store.state.editState.query.current.isEmpty() -> backgroundColor
+                    else -> MaterialTheme.colorScheme.surface
                 },
-            outlineColor = outlineColor,
+            outlineColor = if (seeThroughWhileEditing) Color.Transparent else outlineColor,
             suggestion = uiState.editState.suggestion,
             editActionsStart = uiState.editState.editActionsStart,
             editActionsEnd = uiState.editState.editActionsEnd,

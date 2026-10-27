@@ -11,8 +11,14 @@ import android.graphics.Bitmap
  * page's top edge; `null` while [view] shows no page. Only GeckoView's own package reaches the display that pictures a
  * part of the page instead of all of it.
  */
-fun captureTopEdge(view: GeckoView, samples: Int): GeckoResult<Bitmap>? {
+fun captureTopEdge(view: GeckoView, samples: Int): GeckoResult<Bitmap>? = captureRow(view, 0, samples)
+
+/**
+ * Dejavu: pictures the row of pixels [y] pixels down what [view] shows, scaled down to [samples] pixels, like
+ * [captureTopEdge] does with its top row; `null` while [view] shows no page.
+ */
+fun captureRow(view: GeckoView, y: Int, samples: Int): GeckoResult<Bitmap>? {
     val display = view.session?.display ?: return null
-    if (view.width == 0) return null
-    return display.screenshot().source(0, 0, view.width, 1).size(samples, 1).capture()
+    if (view.width == 0 || view.height == 0) return null
+    return display.screenshot().source(0, y.coerceIn(0, view.height - 1), view.width, 1).size(samples, 1).capture()
 }

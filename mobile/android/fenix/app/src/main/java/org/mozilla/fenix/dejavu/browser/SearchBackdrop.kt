@@ -33,8 +33,11 @@ import androidx.compose.ui.unit.dp
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 
-private val BLUR_RADIUS = 24.dp
-private const val SCRIM_ALPHA = 0.65f
+/** How much the search screens blur what lies behind them, and the settings what they opened over. */
+internal val SEARCH_BLUR_RADIUS = 24.dp
+
+/** How much of the app's background color veils what lies behind the search screens and the settings. */
+internal const val SEARCH_SCRIM_ALPHA = 0.65f
 private const val BLUR_DURATION_MS = 280
 
 /** Whether Android can blur what lies behind the search screens; older versions keep their plain background. */
@@ -121,7 +124,7 @@ internal fun SearchPageBackdrop(active: Boolean, modifier: Modifier = Modifier) 
             drawImage(page.bitmap, topLeft = page.offset - origin)
         }
         Canvas(modifier = Modifier.matchParentSize()) {
-            drawRect(surface, alpha = SCRIM_ALPHA * progress.value)
+            drawRect(surface, alpha = SEARCH_SCRIM_ALPHA * progress.value)
         }
     }
 }
@@ -143,7 +146,7 @@ internal fun Modifier.blurBehindSearch(active: Boolean): Modifier {
     return this
         .drawWithContent {
             drawContent()
-            if (progress.value > 0f) drawRect(surface, alpha = SCRIM_ALPHA * progress.value)
+            if (progress.value > 0f) drawRect(surface, alpha = SEARCH_SCRIM_ALPHA * progress.value)
         }
         .graphicsLayer { blurBy(progress.value) }
 }
@@ -158,7 +161,7 @@ fun searchScreenBackground(opaque: Color = MaterialTheme.colorScheme.surface): C
     if (isSearchScreenSeeThrough) Color.Transparent else opaque
 
 private fun GraphicsLayerScope.blurBy(progress: Float) {
-    val radius = BLUR_RADIUS.toPx() * progress
+    val radius = SEARCH_BLUR_RADIUS.toPx() * progress
     renderEffect = if (radius > 0f) BlurEffect(radius, radius, TileMode.Clamp) else null
     clip = true
 }

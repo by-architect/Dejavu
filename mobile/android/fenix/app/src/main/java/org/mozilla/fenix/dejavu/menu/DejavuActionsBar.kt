@@ -62,6 +62,7 @@ import org.mozilla.fenix.dejavu.browser.shownWorkspaceTheme
 import org.mozilla.fenix.dejavu.browser.tabOrShown
 import org.mozilla.fenix.dejavu.browser.workspaceTheme
 import org.mozilla.fenix.dejavu.settings.DejavuSettings
+import org.mozilla.fenix.dejavu.settings.SettingsBackdrop
 import org.mozilla.fenix.dejavu.ui.TapIcon
 import org.mozilla.fenix.dejavu.ui.rememberIconTaps
 import org.mozilla.fenix.dejavu.workspaces.SplitOrientation
@@ -301,7 +302,9 @@ internal fun runActionsBarEntry(context: Context, navController: NavController, 
             navController.nav(R.id.browserFragment, NavGraphDirections.actionGlobalBookmarkFragment(BookmarkRoot.Mobile.id))
         MoreMenuItem.DOWNLOADS -> navController.nav(R.id.browserFragment, NavGraphDirections.actionGlobalDownloadsFragment())
         MoreMenuItem.HISTORY -> navController.nav(R.id.browserFragment, NavGraphDirections.actionGlobalHistoryFragment())
-        MoreMenuItem.SETTINGS -> navController.nav(R.id.browserFragment, NavGraphDirections.actionGlobalSettingsFragment())
+        MoreMenuItem.SETTINGS -> SettingsBackdrop.openOverPage(tab.id) {
+            navController.nav(R.id.browserFragment, NavGraphDirections.actionGlobalSettingsFragment())
+        }
         MoreMenuItem.OPEN_IN_APP -> {
             val redirect = components.useCases.appLinksUseCases.appLinkRedirect(tab.content.url)
             if (redirect.hasExternalApp()) {

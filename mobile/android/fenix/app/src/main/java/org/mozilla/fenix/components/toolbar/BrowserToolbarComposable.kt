@@ -60,6 +60,7 @@ import org.mozilla.fenix.dejavu.browser.DejavuSearchChips
 import org.mozilla.fenix.dejavu.browser.DejavuToolbar
 import org.mozilla.fenix.dejavu.browser.SearchPageBackdrop
 import org.mozilla.fenix.dejavu.browser.currentBarsLayout
+import org.mozilla.fenix.dejavu.browser.isSearchScreenSeeThrough
 import org.mozilla.fenix.dejavu.browser.statusBarRoomPadding
 import org.mozilla.fenix.theme.FirefoxTheme
 import org.mozilla.fenix.utils.Settings
@@ -193,6 +194,7 @@ class BrowserToolbarComposable(
                                                             cfr = toolbarCFR,
                                                             useMinimalBottomToolbarWhenEnteringText =
                                                                 settings.shouldUseMinimalBottomToolbarWhenEnteringText,
+                                                            seeThroughWhileEditing = isSearchScreenSeeThrough,
                                                         )
                                                     }
                                                 }

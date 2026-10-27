@@ -56,6 +56,7 @@ import org.mozilla.fenix.components.metrics.MetricsUtils
 import org.mozilla.fenix.dejavu.browser.DejavuSearchChips
 import org.mozilla.fenix.dejavu.browser.DejavuToolbar
 import org.mozilla.fenix.dejavu.browser.NewTabSearch
+import org.mozilla.fenix.dejavu.browser.isSearchScreenSeeThrough
 import org.mozilla.fenix.theme.FirefoxTheme
 import org.mozilla.fenix.utils.Settings
 import org.mozilla.fenix.wallpapers.WallpaperTheme
@@ -242,6 +243,8 @@ internal class HomeToolbarComposable(
                 BrowserToolbar(
                     store = toolbarStore,
                     browserActionsColor = wallpaperTextColor,
+                    // Dejavu: the workspaces show blurred around the search field too.
+                    seeThroughWhileEditing = isSearchScreenSeeThrough,
                 )
             }
         }

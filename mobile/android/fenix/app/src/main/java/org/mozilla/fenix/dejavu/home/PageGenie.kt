@@ -40,6 +40,7 @@ import java.lang.ref.WeakReference
 import java.util.WeakHashMap
 import kotlin.math.roundToInt
 import org.mozilla.fenix.R
+import org.mozilla.fenix.dejavu.settings.SettingsBackdrop
 
 private const val OPEN_MS = 520L
 private const val CLOSE_MS = 480L
@@ -124,6 +125,8 @@ internal object PageGenie {
                 return@pictureWindow
             }
             view.home = home
+            // The settings show the home screen blurred behind them.
+            if (button == Button.SETTINGS) SettingsBackdrop.opensOver(home)
             view.pour(kept[button]) {
                 awaited = view
                 navigate()
@@ -465,7 +468,7 @@ private fun boundsOf(view: View): Rect {
 }
 
 /** Pictures what [window], the root of [activity]'s window, shows, or gives `null` when it cannot. */
-private fun pictureWindow(activity: Activity, window: View, done: (Bitmap?) -> Unit) {
+internal fun pictureWindow(activity: Activity, window: View, done: (Bitmap?) -> Unit) {
     val bitmap = runCatching { Bitmap.createBitmap(window.width, window.height, Bitmap.Config.ARGB_8888) }.getOrNull()
     if (bitmap == null) {
         done(null)

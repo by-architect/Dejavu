@@ -37,6 +37,7 @@ import mozilla.components.lib.state.ext.flow
 import org.mozilla.fenix.R
 import org.mozilla.fenix.components.AppStore
 import org.mozilla.geckoview.GeckoView
+import org.mozilla.geckoview.captureRow
 import org.mozilla.geckoview.captureTopEdge
 
 private const val EDGE_SAMPLES = 24
@@ -52,9 +53,9 @@ private const val OPAQUE = 0xFF shl 24
 /**
  * Paints what shows above the page, behind Dejavu's address bar and the status bar, in the color along the page's top
  * edge, so the address bar floats over the page as in Candy instead of over a band in the app's color. The status bar's
- * icons turn dark over light pages and light over dark ones, and so does the fade behind them. While a search screen
- * covers the page, they follow the app's theme again, and so does all of it while a split view shows two pages between
- * bars that stay in place.
+ * icons turn dark over light pages and light over dark ones, and so does the fade behind them; the navigation bar's
+ * icons do the same over the page behind them. While a search screen covers the page, they follow the app's theme
+ * again, and so does all of it while a split view shows two pages between bars that stay in place.
  *
  * @param behindPage The view whose background shows above the page.
  * @param layout The browser layout holding the fade behind the status bar.
@@ -136,25 +137,34 @@ internal class PageTint(
         }
     }
 
-    /** Tints like the page of the tab with [tabId] shows at its top now, and remembers that color for the tab. */
+    /**
+     * Tints like the page of the tab with [tabId] shows at its top and behind the navigation bar now, and remembers
+     * those colors for the tab.
+     */
     private suspend fun tintLike(tabId: String) {
         val view = (engineView.asView() as? ViewGroup)?.children?.firstOrNull { it is GeckoView } as? GeckoView
         if (view == null || !view.isAttachedToWindow) return
         val edge = captureTopEdge(view, EDGE_SAMPLES)?.valueOrNull() ?: return
-        val color = edge.topEdgeColor()
+        val top = edge.topEdgeColor()
         edge.recycle()
-        rememberedColors.put(tabId, color)
-        tint(color)
+        val row = captureRow(view, view.rowBehindNavigationBar(), EDGE_SAMPLES)?.valueOrNull()
+        val colors = PageColors(top, bottom = row?.topEdgeColor() ?: top)
+        row?.recycle()
+        rememberedColors.put(tabId, colors)
+        tint(colors)
     }
 
-    private fun tint(color: Int) {
-        val isLightPage = isLight(color)
-        if (color != tinted) {
-            tinted = color
-            behindPage.setBackgroundColor(color)
+    private fun tint(colors: PageColors) {
+        val isLightPage = isLight(colors.top)
+        if (colors.top != tinted) {
+            tinted = colors.top
+            behindPage.setBackgroundColor(colors.top)
             layout.tintStatusBarScrim(if (isLightPage) Color.WHITE else Color.BLACK)
         }
-        WindowCompat.getInsetsController(window, window.decorView).isAppearanceLightStatusBars = isLightPage
+        WindowCompat.getInsetsController(window, window.decorView).apply {
+            isAppearanceLightStatusBars = isLightPage
+            isAppearanceLightNavigationBars = isLight(colors.bottom)
+        }
     }
 
     private fun untint() {
@@ -175,13 +185,22 @@ internal class PageTint(
     )
 
     companion object {
-        private val rememberedColors = LruCache<String, Int>(REMEMBERED_TABS)
+        private val rememberedColors = LruCache<String, PageColors>(REMEMBERED_TABS)
 
         /** Shows the tab with [tabId] with [color] above its page, until its page is pictured again. */
         fun rememberColor(tabId: String, color: Int) {
-            rememberedColors.put(tabId, color)
+            rememberedColors.put(tabId, PageColors(color, bottom = rememberedColors[tabId]?.bottom ?: color))
         }
     }
+}
+
+/** The color along the top edge of a page, and the one of the page behind the navigation bar. */
+private class PageColors(val top: Int, val bottom: Int)
+
+/** The row of [this] page view behind the middle of the navigation bar, or its last row without one. */
+private fun View.rowBehindNavigationBar(): Int {
+    val top = IntArray(2).also(::getLocationInWindow)[1]
+    return rootView.height - navigationBarHeight / 2 - top
 }
 
 /** Whether dark text and icons stand out more than light ones on [color]. */

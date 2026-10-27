@@ -8,6 +8,8 @@ import android.app.Activity
 import android.content.Context
 import android.content.Intent
 import android.content.res.Configuration
+import android.os.Build.VERSION.SDK_INT
+import android.os.Build.VERSION_CODES
 import android.util.TypedValue
 import android.view.Window
 import androidx.annotation.AnyRes
@@ -121,6 +123,12 @@ abstract class ThemeManager {
         }
 
         private fun updateNavigationBar(window: Window, context: Context) {
+            // Dejavu: from Android 13 on the window runs edge to edge, and the navigation bar shows what each screen
+            // draws behind it, as it does from Android 15 on, instead of a band in the app's color.
+            if (SDK_INT >= VERSION_CODES.TIRAMISU) {
+                window.setNavigationBarColorCompat(android.graphics.Color.TRANSPARENT)
+                return
+            }
             window.setNavigationBarColorCompat(context.getColorFromAttr(materialR.attr.colorSurface))
         }
 

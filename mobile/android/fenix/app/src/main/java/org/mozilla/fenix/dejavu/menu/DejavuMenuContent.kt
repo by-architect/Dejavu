@@ -54,6 +54,7 @@ import org.mozilla.fenix.components.menu.store.WebExtensionMenuItem
 import org.mozilla.fenix.dejavu.actions.TabAction
 import org.mozilla.fenix.dejavu.browser.SplitSpace
 import org.mozilla.fenix.dejavu.settings.DejavuSettings
+import org.mozilla.fenix.dejavu.settings.SettingsBackdrop
 import org.mozilla.fenix.dejavu.workspaces.SplitOrientation
 import org.mozilla.fenix.dejavu.workspaces.WorkspaceRepository
 import org.mozilla.fenix.dejavu.workspaces.WorkspaceState
@@ -470,7 +471,7 @@ private class MenuActions(
             MoreMenuItem.HISTORY -> dispatch(MenuAction.Navigate.History)
             MoreMenuItem.TRANSLATE -> dispatch(MenuAction.Navigate.Translate)
             MoreMenuItem.OPEN_IN_APP -> dispatch(MenuAction.OpenInApp)
-            MoreMenuItem.SETTINGS -> dispatch(MenuAction.Navigate.Settings)
+            MoreMenuItem.SETTINGS -> SettingsBackdrop.openOverPage(tab.id) { dispatch(MenuAction.Navigate.Settings) }
             else -> Unit
         }
     }
