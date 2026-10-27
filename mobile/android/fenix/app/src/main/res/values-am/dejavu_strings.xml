@@ -419,14 +419,12 @@
     <string name="dejavu_protection_links">ከአገናኞች መከታተያን አስወግድ</string>
     <string name="dejavu_protection_hint">የበራ ጥበቃ የበለጠ ደህንነትዎን ይጠብቃል። እያንዳንዱ ጥበቃ ከምን እንደሚጠብቅ እና በእሱ ምክንያት ምን መስራት ሊያቆም እንደሚችል ይናገራል።</string>
     <string name="dejavu_sync_zen_hint_unpinned">በZen ውስጥ ቅንብሮችን፣ ከዚያም Syncን ይክፈቱ፣ እና የጎን አሞሌ ማመሳሰልን ያብሩ።</string>
-    <string name="dejavu_settings_bars">አሞሌዎች እና ምናሌ</string>
     <string name="dejavu_bars_actions_bar">የአድራሻ አሞሌ ከላይ፣ የእርምጃዎች አሞሌ ከታች</string>
     <string name="dejavu_bars_actions_bar_summary">ተጨማሪ ምናሌውን ለመክፈት የእርምጃዎች አሞሌን ወደ ላይ ያንሸራትቱ።</string>
     <string name="dejavu_bars_top">የአድራሻ አሞሌ ከላይ</string>
     <string name="dejavu_bars_top_summary">የእርምጃዎች አሞሌ የለም። ተጨማሪ ምናሌውን ለመክፈት የአድራሻ አሞሌን ወደ ታች ያንሸራትቱ።</string>
     <string name="dejavu_bars_bottom">የአድራሻ አሞሌ ከታች</string>
     <string name="dejavu_bars_bottom_summary">የእርምጃዎች አሞሌ የለም። ተጨማሪ ምናሌውን ለመክፈት የአድራሻ አሞሌን ወደ ላይ ያንሸራትቱ።</string>
-    <string name="dejavu_settings_screen">ማያ ገጽ</string>
     <string name="dejavu_settings_hide_system_bars">የሁኔታ እና የአሰሳ አሞሌዎችን ደብቅ</string>
     <string name="dejavu_settings_hide_system_bars_summary">ገጽ በሚታይበት ጊዜ። ለአፍታ ለማየት ከላይ ወይም ከታች ጠርዝ ያንሸራትቱ።</string>
     <string name="dejavu_bookmarks_export">ወደ ፋይል ላክ</string>
@@ -471,9 +469,18 @@
     <string name="dejavu_feature_save_page">ገጾችን ያለ በይነመረብ ለማንበብ ያስቀምጡ</string>
     <string name="dejavu_recent_search_text">ይህን ፍለጋ ከቅርብ ጊዜ ፍለጋዎች ሰርዝ፣ ወይም ሁሉንም አጽዳ።</string>
     <string name="dejavu_recent_search_clear">የፍለጋ ታሪክን አጽዳ</string>
-    <string name="dejavu_settings_home_screen">መነሻ ማያ ገጽ</string>
     <string name="dejavu_home_search_top">የፍለጋ አሞሌ ከላይ</string>
     <string name="dejavu_home_search_top_summary">የስራ ቦታዎች፣ የወረዱ፣ ቅጥያዎች፣ እልባቶች እና ታሪክ ከታች ይገኛሉ።</string>
     <string name="dejavu_home_search_bottom">የፍለጋ አሞሌ ከታች</string>
     <string name="dejavu_home_search_bottom_summary">ለመድረስ ይቀላል። የስራ ቦታዎች፣ የወረዱ፣ ቅጥያዎች፣ እልባቶች እና ታሪክ ወደ ላይ ይዛወራሉ።</string>
+    <string name="dejavu_settings_autoclose_tabs">ትሮችን በራስ-ሰር ዝጋ</string>
+    <string name="dejavu_settings_tabs_workspaces">ትሮች፣ የስራ ቦታዎች እና መያዣዎች</string>
+    <string name="dejavu_settings_tabs_workspaces_summary">ትሮችን መዝጋት፣ የተኙ ትሮች፣ መያዣዎች፣ መነሻ ገጽ እና አገናኞች</string>
+    <string name="dejavu_settings_customize_summary">ገጽታ፣ የትር እርምጃዎች፣ ምናሌ፣ አሞሌዎች፣ የይለፍ ቃሎች እና ቋንቋ</string>
+    <string name="dejavu_settings_bars_2">አሞሌዎች</string>
+    <string name="dejavu_settings_bars_summary">የድር ገጽ፣ መነሻ ገጽ፣ ሙሉ ማያ ገጽ፣ የትር አሞሌ እና የእጅ ምልክቶች</string>
+    <string name="dejavu_settings_web_page">የድር ገጽ</string>
+    <string name="dejavu_settings_full_screen">ሙሉ ማያ ገጽ</string>
+    <string name="dejavu_settings_passwords_language">የይለፍ ቃሎች እና ቋንቋ</string>
+    <string name="dejavu_settings_passwords_language_summary">ራስ ሙላ፣ ተደራሽነት፣ ትርጉሞች እና የAI መቆጣጠሪያዎች</string>
 </resources>

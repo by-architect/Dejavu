@@ -412,14 +412,12 @@
     <string name="dejavu_protection_links">リンクからトラッキングを削除する</string>
     <string name="dejavu_protection_hint">保護機能をオンにすると、より安全になります。それぞれの説明に、何から守るか、そのせいで何が動かなくなる可能性があるかが書かれています。</string>
     <string name="dejavu_sync_zen_hint_unpinned">Zenで「設定」を開き、「同期」でサイドバーの同期をオンにしてください。</string>
-    <string name="dejavu_settings_bars">バーとメニュー</string>
     <string name="dejavu_bars_actions_bar">アドレスバーを画面上部、アクションバーを画面下部に表示</string>
     <string name="dejavu_bars_actions_bar_summary">アクションバーを上にスワイプすると、その他メニューが開きます。</string>
     <string name="dejavu_bars_top">アドレスバーを画面上部に表示</string>
     <string name="dejavu_bars_top_summary">アクションバーは表示されません。アドレスバーを下にスワイプすると、その他メニューが開きます。</string>
     <string name="dejavu_bars_bottom">アドレスバーを画面下部に表示</string>
     <string name="dejavu_bars_bottom_summary">アクションバーは表示されません。アドレスバーを上にスワイプすると、その他メニューが開きます。</string>
-    <string name="dejavu_settings_screen">画面</string>
     <string name="dejavu_settings_hide_system_bars">ステータスバーとナビゲーションバーを非表示にする</string>
     <string name="dejavu_settings_hide_system_bars_summary">ページの表示中。上端または下端からスワイプすると、少しの間表示されます。</string>
     <string name="dejavu_bookmarks_export">ファイルにエクスポート</string>
@@ -463,9 +461,18 @@
     <string name="dejavu_feature_save_page">ページを保存してオフラインで読む</string>
     <string name="dejavu_recent_search_text">この検索を最近の検索から削除するか、すべて消去します。</string>
     <string name="dejavu_recent_search_clear">検索履歴を消去</string>
-    <string name="dejavu_settings_home_screen">ホーム画面</string>
     <string name="dejavu_home_search_top">検索バーを画面上部に表示</string>
     <string name="dejavu_home_search_top_summary">ワークスペース、ダウンロード一覧、拡張機能、ブックマーク、表示履歴は画面下部に並びます。</string>
     <string name="dejavu_home_search_bottom">検索バーを画面下部に表示</string>
     <string name="dejavu_home_search_bottom_summary">手が届きやすくなります。ワークスペース、ダウンロード一覧、拡張機能、ブックマーク、表示履歴は画面上部に移動します。</string>
+    <string name="dejavu_settings_autoclose_tabs">タブを自動的に閉じる</string>
+    <string name="dejavu_settings_tabs_workspaces">タブ、ワークスペース、コンテナー</string>
+    <string name="dejavu_settings_tabs_workspaces_summary">タブの閉じ方とスリープ、コンテナー、ホームページ、リンク</string>
+    <string name="dejavu_settings_customize_summary">テーマ、タブの操作、メニュー、バー、パスワード、言語</string>
+    <string name="dejavu_settings_bars_2">バー</string>
+    <string name="dejavu_settings_bars_summary">ウェブページ、ホームページ、全画面表示、タブバー、ジェスチャー</string>
+    <string name="dejavu_settings_web_page">ウェブページ</string>
+    <string name="dejavu_settings_full_screen">全画面表示</string>
+    <string name="dejavu_settings_passwords_language">パスワードと言語</string>
+    <string name="dejavu_settings_passwords_language_summary">自動入力、アクセシビリティ、翻訳、AI 制御</string>
 </resources>

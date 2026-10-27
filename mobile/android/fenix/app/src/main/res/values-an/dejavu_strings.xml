@@ -419,14 +419,12 @@
     <string name="dejavu_protection_links">Quitar o seguimiento d\'os vinclos</string>
     <string name="dejavu_protection_hint">Una protección activada te mantién mas seguro. Cada una diz de qué te protiche y qué puede deixar de funcionar por ella.</string>
     <string name="dejavu_sync_zen_hint_unpinned">En Zen, ubre Achustes, dimpués Sincronización, y activa la sincronización de la barra lateral.</string>
-    <string name="dejavu_settings_bars">Barras y menú</string>
     <string name="dejavu_bars_actions_bar">Barra d\'adrezas dalto, barra d\'accions abaixo</string>
     <string name="dejavu_bars_actions_bar_summary">Esliza enta alto a barra d\'accions pa ubrir o menú Más.</string>
     <string name="dejavu_bars_top">Barra d\'adrezas dalto</string>
     <string name="dejavu_bars_top_summary">Sin barra d\'accions. Esliza enta baixo a barra d\'adrezas pa ubrir o menú Más.</string>
     <string name="dejavu_bars_bottom">Barra d\'adrezas abaixo</string>
     <string name="dejavu_bars_bottom_summary">Sin barra d\'accions. Esliza enta alto a barra d\'adrezas pa ubrir o menú Más.</string>
-    <string name="dejavu_settings_screen">Pantalla</string>
     <string name="dejavu_settings_hide_system_bars">Amagar as barras d\'estau y de navegación</string>
     <string name="dejavu_settings_hide_system_bars_summary">Mientres se veye una pachina. Esliza dende o canto superior u inferior pa veyer-las un momento.</string>
     <string name="dejavu_bookmarks_export">Exportar a un fichero</string>
@@ -471,9 +469,18 @@
     <string name="dejavu_feature_save_page">Alza pachinas pa leyer-las sin internet</string>
     <string name="dejavu_recent_search_text">Borrar esta busca d’as busques recients u borrar-las toz.</string>
     <string name="dejavu_recent_search_clear">Borrar l’historial de busca</string>
-    <string name="dejavu_settings_home_screen">Pantalla d\'inicio</string>
     <string name="dejavu_home_search_top">Barra de busca dalto</string>
     <string name="dejavu_home_search_top_summary">Espacios de treballo, descargas, estensions, marcadors y historial abaixo.</string>
     <string name="dejavu_home_search_bottom">Barra de busca abaixo</string>
     <string name="dejavu_home_search_bottom_summary">Mas fázil d\'alcanzar. Os espacios de treballo, as descargas, as estensions, os marcadors y o historial se mueven enta alto.</string>
+    <string name="dejavu_settings_autoclose_tabs">Zarrar pestanyas automaticament</string>
+    <string name="dejavu_settings_tabs_workspaces">Pestanyas, espacios de treballo y contenedors</string>
+    <string name="dejavu_settings_tabs_workspaces_summary">Zarrar y adormir pestanyas, contenedors, pachina d\'inicio y vinclos</string>
+    <string name="dejavu_settings_customize_summary">Tema, accions d\'as pestanyas, menú, barras, contrasenyas y idioma</string>
+    <string name="dejavu_settings_bars_2">Barras</string>
+    <string name="dejavu_settings_bars_summary">Pachina web, pachina d\'inicio, pantalla completa, barra de pestanyas y cenyos</string>
+    <string name="dejavu_settings_web_page">Pachina web</string>
+    <string name="dejavu_settings_full_screen">Pantalla completa</string>
+    <string name="dejavu_settings_passwords_language">Contrasenyas y idioma</string>
+    <string name="dejavu_settings_passwords_language_summary">Autocompletar, accesibilidat, traduccions y controls d\'IA</string>
 </resources>

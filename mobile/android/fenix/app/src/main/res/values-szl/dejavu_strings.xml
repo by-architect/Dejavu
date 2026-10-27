@@ -433,14 +433,12 @@
     <string name="dejavu_protection_links">Wyciep śledzynie z linkōw</string>
     <string name="dejavu_protection_hint">Załōnczōno ôchrōna trzimo cie bezpieczniyj. Kożdo pisze, przed czym chrōni i co skuli nij może przestać fungować.</string>
     <string name="dejavu_sync_zen_hint_unpinned">W Zen ôdewrzij Sztalōnki, potym Synchronizacyjo, i włōncz synchronizacyjo bocznego posku.</string>
-    <string name="dejavu_settings_bars">Poski i menu</string>
     <string name="dejavu_bars_actions_bar">Posek z adresōm na wiyrchu, posek akcyji na spodku</string>
     <string name="dejavu_bars_actions_bar_summary">Przeciōng posek akcyji w gōra, coby ôdewrzić menu „Wiyncyj”.</string>
     <string name="dejavu_bars_top">Posek z adresōm na wiyrchu</string>
     <string name="dejavu_bars_top_summary">Bez posku akcyji. Przeciōng posek z adresōm na dōł, coby ôdewrzić menu „Wiyncyj”.</string>
     <string name="dejavu_bars_bottom">Posek z adresōm na spodku</string>
     <string name="dejavu_bars_bottom_summary">Bez posku akcyji. Przeciōng posek z adresōm w gōra, coby ôdewrzić menu „Wiyncyj”.</string>
-    <string name="dejavu_settings_screen">Ekran</string>
     <string name="dejavu_settings_hide_system_bars">Skryj paski statusu i nawigacyje</string>
     <string name="dejavu_settings_hide_system_bars_summary">Kej sie pokazuje strona. Przesuń palcym ôd wiyrchnij abo spodnij krawyńdzi, coby je na chwila ôbejrzeć.</string>
     <string name="dejavu_bookmarks_export">Eksportuj do zbioru</string>
@@ -487,9 +485,18 @@
     <string name="dejavu_feature_save_page">Zapisuj strōny do czytaniŏ bez internetu</string>
     <string name="dejavu_recent_search_text">Skasuj ta szukanie ze ostatnich szukań abo wyczyść wszyjske.</string>
     <string name="dejavu_recent_search_clear">Skasuj historyjo szukanio</string>
-    <string name="dejavu_settings_home_screen">Sztartowy ekran</string>
     <string name="dejavu_home_search_top">Posek szukanio na wiyrchu</string>
     <string name="dejavu_home_search_top_summary">Place, pobrania, rozszyrzynia, zokłodki i historyjo na spodku.</string>
     <string name="dejavu_home_search_bottom">Posek szukanio na spodku</string>
     <string name="dejavu_home_search_bottom_summary">Łatwij dostympne. Place, pobrania, rozszyrzynia, zokłodki i historyjo idōm na wiyrch.</string>
+    <string name="dejavu_settings_autoclose_tabs">Autōmatyczne zawiyranie kart</string>
+    <string name="dejavu_settings_tabs_workspaces">Karty, place i kōntynery</string>
+    <string name="dejavu_settings_tabs_workspaces_summary">Zawiyranie i usypianie kart, kōntynery, dōmowo strōna i linki</string>
+    <string name="dejavu_settings_customize_summary">Motyw, akcyje kart, menu, poski, hasła i godka</string>
+    <string name="dejavu_settings_bars_2">Poski</string>
+    <string name="dejavu_settings_bars_summary">Strōna internetowo, dōmowo strōna, połny ekran, posek z kartami i gesty</string>
+    <string name="dejavu_settings_web_page">Strōna internetowo</string>
+    <string name="dejavu_settings_full_screen">Połny ekran</string>
+    <string name="dejavu_settings_passwords_language">Hasła i godka</string>
+    <string name="dejavu_settings_passwords_language_summary">Autōmatyczne wypołnianie, dostympność, przekłady i sterowanie SI</string>
 </resources>

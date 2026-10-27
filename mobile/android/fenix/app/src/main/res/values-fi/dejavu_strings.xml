@@ -419,14 +419,12 @@
     <string name="dejavu_protection_links">Poista seuranta linkeistä</string>
     <string name="dejavu_protection_hint">Käytössä oleva suojaus pitää sinut turvallisempana. Jokainen kertoo, miltä se suojaa ja mikä voi lakata toimimasta sen takia.</string>
     <string name="dejavu_sync_zen_hint_unpinned">Avaa Zenissä Asetukset, sitten Synkronointi, ja ota sivupalkin synkronointi käyttöön.</string>
-    <string name="dejavu_settings_bars">Palkit ja valikko</string>
     <string name="dejavu_bars_actions_bar">Osoitepalkki ylhäällä, toimintopalkki alhaalla</string>
     <string name="dejavu_bars_actions_bar_summary">Avaa lisävalikko pyyhkäisemällä toimintopalkkia ylös.</string>
     <string name="dejavu_bars_top">Osoitepalkki ylhäällä</string>
     <string name="dejavu_bars_top_summary">Ei toimintopalkkia. Avaa lisävalikko pyyhkäisemällä osoitepalkkia alas.</string>
     <string name="dejavu_bars_bottom">Osoitepalkki alhaalla</string>
     <string name="dejavu_bars_bottom_summary">Ei toimintopalkkia. Avaa lisävalikko pyyhkäisemällä osoitepalkkia ylös.</string>
-    <string name="dejavu_settings_screen">Näyttö</string>
     <string name="dejavu_settings_hide_system_bars">Piilota tila- ja navigointipalkki</string>
     <string name="dejavu_settings_hide_system_bars_summary">Kun sivu on näkyvissä. Pyyhkäise ylä- tai alareunasta nähdäksesi ne hetkeksi.</string>
     <string name="dejavu_bookmarks_export">Vie tiedostoon</string>
@@ -471,9 +469,18 @@
     <string name="dejavu_feature_save_page">Tallenna sivuja luettavaksi ilman internetiä</string>
     <string name="dejavu_recent_search_text">Poista tämä haku viimeisimmistä hauista tai tyhjennä ne kaikki.</string>
     <string name="dejavu_recent_search_clear">Tyhjennä hakuhistoria</string>
-    <string name="dejavu_settings_home_screen">Aloitusnäyttö</string>
     <string name="dejavu_home_search_top">Hakupalkki ylhäällä</string>
     <string name="dejavu_home_search_top_summary">Työtilat, lataukset, laajennukset, kirjanmerkit ja historia alhaalla.</string>
     <string name="dejavu_home_search_bottom">Hakupalkki alhaalla</string>
     <string name="dejavu_home_search_bottom_summary">Helpommin ulottuvilla. Työtilat, lataukset, laajennukset, kirjanmerkit ja historia siirtyvät ylös.</string>
+    <string name="dejavu_settings_autoclose_tabs">Välilehtien automaattinen sulkeminen</string>
+    <string name="dejavu_settings_tabs_workspaces">Välilehdet, työtilat ja säiliöt</string>
+    <string name="dejavu_settings_tabs_workspaces_summary">Välilehtien sulkeminen ja lepotila, säiliöt, kotisivu ja linkit</string>
+    <string name="dejavu_settings_customize_summary">Teema, välilehtitoiminnot, valikko, palkit, salasanat ja kieli</string>
+    <string name="dejavu_settings_bars_2">Palkit</string>
+    <string name="dejavu_settings_bars_summary">Verkkosivu, kotisivu, koko näyttö, välilehtipalkki ja eleet</string>
+    <string name="dejavu_settings_web_page">Verkkosivu</string>
+    <string name="dejavu_settings_full_screen">Koko näyttö</string>
+    <string name="dejavu_settings_passwords_language">Salasanat ja kieli</string>
+    <string name="dejavu_settings_passwords_language_summary">Automaattinen täyttö, saavutettavuus, käännökset ja tekoälyn säätimet</string>
 </resources>

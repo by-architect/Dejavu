@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+
+<!-- Dejavu: Customize's bars, tab bar and gestures, on a screen of their own. -->
+<androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.preference.PreferenceCategory
+        android:layout="@layout/preference_cat_style"
+        android:title="@string/preferences_toolbar_2"
+        android:key="@string/pref_key_customization_category_toolbar"
+        app:iconSpaceReserved="false"
+        app:isPreferenceVisible="false">
+        <org.mozilla.fenix.settings.RadioButtonPreference
+            android:key="@string/pref_key_toolbar_top"
+            android:title="@string/preference_top_toolbar" />
+        <org.mozilla.fenix.settings.RadioButtonPreference
+            android:key="@string/pref_key_toolbar_bottom"
+            android:title="@string/preference_bottom_toolbar" />
+    </androidx.preference.PreferenceCategory>
+
+    <androidx.preference.PreferenceCategory
+        android:layout="@layout/preference_cat_style"
+        android:title="@string/dejavu_settings_web_page"
+        app:iconSpaceReserved="false">
+        <org.mozilla.fenix.settings.RadioButtonPreference
+            android:key="@string/pref_key_dejavu_bars_actions_bar"
+            android:title="@string/dejavu_bars_actions_bar"
+            android:summary="@string/dejavu_bars_actions_bar_summary" />
+        <org.mozilla.fenix.settings.RadioButtonPreference
+            android:key="@string/pref_key_dejavu_bars_top"
+            android:title="@string/dejavu_bars_top"
+            android:summary="@string/dejavu_bars_top_summary" />
+        <org.mozilla.fenix.settings.RadioButtonPreference
+            android:key="@string/pref_key_dejavu_bars_bottom"
+            android:title="@string/dejavu_bars_bottom"
+            android:summary="@string/dejavu_bars_bottom_summary" />
+    </androidx.preference.PreferenceCategory>
+
+    <androidx.preference.PreferenceCategory
+        android:layout="@layout/preference_cat_style"
+        android:title="@string/preferences_home_2"
+        app:iconSpaceReserved="false">
+        <org.mozilla.fenix.settings.RadioButtonPreference
+            android:key="@string/pref_key_dejavu_home_search_top"
+            android:title="@string/dejavu_home_search_top"
+            android:summary="@string/dejavu_home_search_top_summary" />
+        <org.mozilla.fenix.settings.RadioButtonPreference
+            android:key="@string/pref_key_dejavu_home_search_bottom"
+            android:title="@string/dejavu_home_search_bottom"
+            android:summary="@string/dejavu_home_search_bottom_summary" />
+    </androidx.preference.PreferenceCategory>
+
+    <androidx.preference.PreferenceCategory
+        android:layout="@layout/preference_cat_style"
+        android:title="@string/dejavu_settings_full_screen"
+        app:iconSpaceReserved="false">
+        <androidx.preference.SwitchPreferenceCompat
+            app:iconSpaceReserved="false"
+            android:key="@string/pref_key_dejavu_hide_system_bars"
+            android:persistent="false"
+            android:title="@string/dejavu_settings_hide_system_bars"
+            android:summary="@string/dejavu_settings_hide_system_bars_summary" />
+    </androidx.preference.PreferenceCategory>
+
+    <androidx.preference.PreferenceCategory
+        android:layout="@layout/preference_cat_style"
+        android:title="@string/preferences_tab_strip"
+        app:iconSpaceReserved="false">
+        <androidx.preference.SwitchPreferenceCompat
+            android:key="@string/pref_key_tab_strip_show"
+            android:title="@string/preference_tab_strip_show" />
+    </androidx.preference.PreferenceCategory>
+
+    <androidx.preference.PreferenceCategory
+      android:layout="@layout/preference_cat_style"
+      android:title="@string/preference_tab_strip_location_header"
+      android:key="@string/pref_key_tab_strip_location"
+      app:iconSpaceReserved="false">
+      <org.mozilla.fenix.settings.RadioButtonPreference
+        android:key="@string/pref_key_tab_bar_top"
+        android:title="@string/preference_top_tab_strip" />
+      <org.mozilla.fenix.settings.RadioButtonPreference
+        android:key="@string/pref_key_tab_bar_bottom"
+        android:title="@string/preference_bottom_tab_strip" />
+    </androidx.preference.PreferenceCategory>
+
+    <androidx.preference.PreferenceCategory
+        android:layout="@layout/preference_cat_style"
+        android:title="@string/preferences_toolbar_layout"
+        android:key="@string/pref_key_customization_category_toolbar_layout"
+        android:visible="false"
+        app:iconSpaceReserved="false">
+        <org.mozilla.fenix.settings.ToggleRadioButtonPreference
+            android:key="@string/pref_key_toolbar_expanded"
+            app:sharedPreferenceKey="pref_key_toolbar_expanded"
+            app:falseOptionTitle="@string/preference_simple_toolbar"
+            app:trueOptionTitle="@string/preference_expanded_toolbar" />
+    </androidx.preference.PreferenceCategory>
+
+    <!-- Toolbar shortcut picker. Dejavu: the first row of the "More" menu is the actions bar instead. -->
+    <androidx.preference.PreferenceCategory
+        android:key="@string/pref_key_customization_category_toolbar_shortcut"
+        android:layout="@layout/preference_cat_style"
+        android:title="@string/preferences_toolbar_shortcut"
+        app:iconSpaceReserved="false"
+        app:isPreferenceVisible="false" />
+
+    <androidx.preference.PreferenceCategory
+        android:layout="@layout/preference_cat_style"
+        android:title="@string/preferences_gestures"
+        app:iconSpaceReserved="false">
+        <androidx.preference.SwitchPreferenceCompat
+            android:key="@string/pref_key_website_pull_to_refresh"
+            android:title="@string/preference_gestures_website_pull_to_refresh"
+            app:isPreferenceVisible="false" />
+        <androidx.preference.SwitchPreferenceCompat
+            android:key="@string/pref_key_dynamic_toolbar"
+            android:title="@string/preference_gestures_dynamic_toolbar" />
+        <androidx.preference.SwitchPreferenceCompat
+            android:key="@string/pref_key_swipe_toolbar_switch_tabs"
+            android:title="@string/preference_gestures_swipe_toolbar_switch_tabs_2" />
+        <androidx.preference.SwitchPreferenceCompat
+            android:key="@string/pref_key_swipe_toolbar_show_tabs"
+            android:title="@string/preference_gestures_swipe_toolbar_show_tabs_2" />
+        <androidx.preference.SwitchPreferenceCompat
+            android:key="@string/pref_key_shake_gesture_enabled"
+            android:title="@string/preferences_shake_to_summarize"
+            app:isPreferenceVisible="false" />
+    </androidx.preference.PreferenceCategory>
+</androidx.preference.PreferenceScreen>

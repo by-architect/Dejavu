@@ -433,14 +433,12 @@
     <string name="dejavu_protection_links">Slědowanje z wotkazow wotstronić</string>
     <string name="dejavu_protection_hint">Zmóžnjeny škit wašu wěstotu powyšuje. Kóždy praji, před čim škita a što móže jeho dla hižo njefungować.</string>
     <string name="dejavu_sync_zen_hint_unpinned">W Zen wočini Nastajenja, potom Synchronizacija, a zapinaj synchronizaciju bóčnicy.</string>
-    <string name="dejavu_settings_bars">Lajsty a meni</string>
     <string name="dejavu_bars_actions_bar">Adresowe polo horjeka, akcijowa lajsta deleka</string>
     <string name="dejavu_bars_actions_bar_summary">Trějće akcijowu lajstu horje, zo by so dalši meni wočinił.</string>
     <string name="dejavu_bars_top">Adresowe polo horjeka</string>
     <string name="dejavu_bars_top_summary">Žana akcijowa lajsta. Trějće adresowe polo dele, zo by so dalši meni wočinił.</string>
     <string name="dejavu_bars_bottom">Adresowe polo deleka</string>
     <string name="dejavu_bars_bottom_summary">Žana akcijowa lajsta. Trějće adresowe polo horje, zo by so dalši meni wočinił.</string>
-    <string name="dejavu_settings_screen">Wobrazowka</string>
     <string name="dejavu_settings_hide_system_bars">Lajsty statusa a nawigacije schować</string>
     <string name="dejavu_settings_hide_system_bars_summary">Mjeztym zo so strona pokazuje. Ćehńće wot hornjeje abo delnjeje kromy, zo byšće je na wokomik widźeli.</string>
     <string name="dejavu_bookmarks_export">Do dataje eksportować</string>
@@ -487,9 +485,18 @@
     <string name="dejavu_feature_save_page">Strony składować, zo by je bjez interneta čitał</string>
     <string name="dejavu_recent_search_text">Zhašej tute pytanje z najnowšich pytanjow abo zhašej wšě.</string>
     <string name="dejavu_recent_search_clear">Pytanja-historiju zhašeć</string>
-    <string name="dejavu_settings_home_screen">Domowa wobrazowka</string>
     <string name="dejavu_home_search_top">Pytanska lajsta horjeka</string>
     <string name="dejavu_home_search_top_summary">Dźěłowe rumy, sćehnjenja, rozšěrjenja, zapołožki a historija deleka.</string>
     <string name="dejavu_home_search_bottom">Pytanska lajsta deleka</string>
     <string name="dejavu_home_search_bottom_summary">Lóšo docpějomne. Dźěłowe rumy, sćehnjenja, rozšěrjenja, zapołožki a historija so horje přesunu.</string>
+    <string name="dejavu_settings_autoclose_tabs">Rajtarki awtomatisce začinić</string>
+    <string name="dejavu_settings_tabs_workspaces">Rajtarki, dźěłowe rumy a kontejnery</string>
+    <string name="dejavu_settings_tabs_workspaces_summary">Začinjenje a spanje rajtarkow, kontejnery, startowa strona a wotkazy</string>
+    <string name="dejavu_settings_customize_summary">Drasta, akcije za rajtarki, meni, lajsty, hesła a rěč</string>
+    <string name="dejavu_settings_bars_2">Lajsty</string>
+    <string name="dejavu_settings_bars_summary">Webstrona, startowa strona, połna wobrazowka, lajsta rajtarkow a gesty</string>
+    <string name="dejavu_settings_web_page">Webstrona</string>
+    <string name="dejavu_settings_full_screen">Połna wobrazowka</string>
+    <string name="dejavu_settings_passwords_language">Hesła a rěč</string>
+    <string name="dejavu_settings_passwords_language_summary">Awtomatiske wupjelnjenje, bjezbarjernosć, přełožki a wodźenske elementy KI</string>
 </resources>

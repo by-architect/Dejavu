@@ -447,14 +447,12 @@
     <string name="dejavu_protection_links">Tynnu tracio o ddolenni</string>
     <string name="dejavu_protection_hint">Mae diogelwch sydd ymlaen yn eich cadw\'n fwy diogel. Mae pob un yn dweud rhag beth mae\'n eich diogelu a beth all roi\'r gorau i weithio o\'i herwydd.</string>
     <string name="dejavu_sync_zen_hint_unpinned">Yn Zen, agorwch Gosodiadau, yna Sync, a throwch cydweddu’r bar ochr ymlaen.</string>
-    <string name="dejavu_settings_bars">Bariau a dewislen</string>
     <string name="dejavu_bars_actions_bar">Bar cyfeiriad ar y brig, bar gweithredoedd ar y gwaelod</string>
     <string name="dejavu_bars_actions_bar_summary">Llithrwch y bar gweithredoedd i fyny i agor y ddewislen Mwy.</string>
     <string name="dejavu_bars_top">Bar cyfeiriad ar y brig</string>
     <string name="dejavu_bars_top_summary">Dim bar gweithredoedd. Llithrwch y bar cyfeiriad i lawr i agor y ddewislen Mwy.</string>
     <string name="dejavu_bars_bottom">Bar cyfeiriad ar y gwaelod</string>
     <string name="dejavu_bars_bottom_summary">Dim bar gweithredoedd. Llithrwch y bar cyfeiriad i fyny i agor y ddewislen Mwy.</string>
-    <string name="dejavu_settings_screen">Sgrin</string>
     <string name="dejavu_settings_hide_system_bars">Cuddio\'r bariau statws a llywio</string>
     <string name="dejavu_settings_hide_system_bars_summary">Tra bo tudalen yn cael ei dangos. Llithrwch i mewn o\'r ymyl uchaf neu isaf i\'w gweld am eiliad.</string>
     <string name="dejavu_bookmarks_export">Allforio i ffeil</string>
@@ -503,9 +501,18 @@
     <string name="dejavu_feature_save_page">Cadw tudalennau i\'w darllen heb y rhyngrwyd</string>
     <string name="dejavu_recent_search_text">Dileu\'r chwiliad hwn o\'ch chwiliadau diweddar, neu ddileu pob un.</string>
     <string name="dejavu_recent_search_clear">Dileu hanes chwilio</string>
-    <string name="dejavu_settings_home_screen">Sgrin gartref</string>
     <string name="dejavu_home_search_top">Bar chwilio ar y brig</string>
     <string name="dejavu_home_search_top_summary">Gweithleoedd, llwythi, estyniadau, nodau tudalen a hanes ar y gwaelod.</string>
     <string name="dejavu_home_search_bottom">Bar chwilio ar y gwaelod</string>
     <string name="dejavu_home_search_bottom_summary">Haws ei gyrraedd. Mae gweithleoedd, llwythi, estyniadau, nodau tudalen a hanes yn symud i’r brig.</string>
+    <string name="dejavu_settings_autoclose_tabs">Awtogau tabiau</string>
+    <string name="dejavu_settings_tabs_workspaces">Tabiau, gweithleoedd a chynwysyddion</string>
+    <string name="dejavu_settings_tabs_workspaces_summary">Tabiau’n cau ac yn cysgu, cynwysyddion, tudalen cartref a dolenni</string>
+    <string name="dejavu_settings_customize_summary">Thema, gweithredoedd tabiau, dewislen, bariau, cyfrineiriau ac iaith</string>
+    <string name="dejavu_settings_bars_2">Bariau</string>
+    <string name="dejavu_settings_bars_summary">Tudalen we, tudalen cartref, sgrin lawn, bar tabiau ac ystumiau</string>
+    <string name="dejavu_settings_web_page">Tudalen we</string>
+    <string name="dejavu_settings_full_screen">Sgrin lawn</string>
+    <string name="dejavu_settings_passwords_language">Cyfrineiriau ac iaith</string>
+    <string name="dejavu_settings_passwords_language_summary">Awtolanw, hygyrchedd, cyfieithu a rheolyddion AI</string>
 </resources>

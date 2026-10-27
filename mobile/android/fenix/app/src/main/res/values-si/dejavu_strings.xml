@@ -419,14 +419,12 @@
     <string name="dejavu_protection_links">සබැඳිවලින් ලුහුබැඳීම ඉවත් කරන්න</string>
     <string name="dejavu_protection_hint">සක්‍රිය රැකවරණයක් ඔබව වඩාත් ආරක්ෂිතව තබයි. එක් එක් රැකවරණය එය ආරක්ෂා කරන්නේ කුමකින්ද සහ එය නිසා ක්‍රියා නොකළ හැක්කේ කුමක්ද යන්න පවසයි.</string>
     <string name="dejavu_sync_zen_hint_unpinned">Zen හි, සැකසුම් විවෘත කර, පසුව Sync තෝරා, පැති තීරු සමමුහුර්තකරණය ක්‍රියාත්මක කරන්න.</string>
-    <string name="dejavu_settings_bars">තීරු සහ මෙනුව</string>
     <string name="dejavu_bars_actions_bar">ලිපින තීරුව ඉහළින්, ක්‍රියා තීරුව පහළින්</string>
     <string name="dejavu_bars_actions_bar_summary">තව මෙනුව විවෘත කිරීමට ක්‍රියා තීරුව ඉහළට අදින්න.</string>
     <string name="dejavu_bars_top">ලිපින තීරුව ඉහළින්</string>
     <string name="dejavu_bars_top_summary">ක්‍රියා තීරුවක් නැත. තව මෙනුව විවෘත කිරීමට ලිපින තීරුව පහළට අදින්න.</string>
     <string name="dejavu_bars_bottom">ලිපින තීරුව පහළින්</string>
     <string name="dejavu_bars_bottom_summary">ක්‍රියා තීරුවක් නැත. තව මෙනුව විවෘත කිරීමට ලිපින තීරුව ඉහළට අදින්න.</string>
-    <string name="dejavu_settings_screen">තිරය</string>
     <string name="dejavu_settings_hide_system_bars">තත්ත්ව සහ සංචාලන තීරු සඟවන්න</string>
     <string name="dejavu_settings_hide_system_bars_summary">පිටුවක් පෙන්වන අතරතුර. ඒවා මොහොතකට බැලීමට ඉහළ හෝ පහළ දාරයේ සිට ස්වයිප් කරන්න.</string>
     <string name="dejavu_bookmarks_export">ගොනුවකට නිර්යාත කරන්න</string>
@@ -471,9 +469,18 @@
     <string name="dejavu_feature_save_page">අන්තර්ජාලය නැතිව කියවීමට පිටු සුරකින්න</string>
     <string name="dejavu_recent_search_text">මෙම සෙවුම මෑත සෙවුම් වලින් මකන්න, නැතහොත් සියල්ල හිස් කරන්න.</string>
     <string name="dejavu_recent_search_clear">සෙවුම් ඉතිහාසය මකන්න</string>
-    <string name="dejavu_settings_home_screen">මුල් තිරය</string>
     <string name="dejavu_home_search_top">සෙවුම් තීරුව ඉහළින්</string>
     <string name="dejavu_home_search_top_summary">අවකාශ, බාගැනීම්, දිගු, පොත්යොමු සහ ඉතිහාසය පහළින්.</string>
     <string name="dejavu_home_search_bottom">සෙවුම් තීරුව පහළින්</string>
     <string name="dejavu_home_search_bottom_summary">ළඟා වීමට වඩා පහසුයි. අවකාශ, බාගැනීම්, දිගු, පොත්යොමු සහ ඉතිහාසය ඉහළට ගෙනයනු ලැබේ.</string>
+    <string name="dejavu_settings_autoclose_tabs">පටිති ස්වයං වැසීම</string>
+    <string name="dejavu_settings_tabs_workspaces">පටිති, අවකාශ සහ බහාලුම්</string>
+    <string name="dejavu_settings_tabs_workspaces_summary">පටිති වැසීම සහ නිදි කිරීම, බහාලුම්, මුල් පිටුව සහ සබැඳි</string>
+    <string name="dejavu_settings_customize_summary">තේමාව, පටිති ක්‍රියා, මෙනුව, තීරු, මුරපද සහ භාෂාව</string>
+    <string name="dejavu_settings_bars_2">තීරු</string>
+    <string name="dejavu_settings_bars_summary">වියමන පිටුව, මුල් පිටුව, පූර්ණ තිරය, පටිති තීරුව සහ අභින</string>
+    <string name="dejavu_settings_web_page">වියමන පිටුව</string>
+    <string name="dejavu_settings_full_screen">පූර්ණ තිරය</string>
+    <string name="dejavu_settings_passwords_language">මුරපද සහ භාෂාව</string>
+    <string name="dejavu_settings_passwords_language_summary">ස්වයං පිරවීම, ප්‍රවේශ්‍යතාව, පරිවර්තන සහ AI පාලන</string>
 </resources>

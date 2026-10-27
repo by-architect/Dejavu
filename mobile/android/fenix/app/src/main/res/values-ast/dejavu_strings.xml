@@ -419,14 +419,12 @@
     <string name="dejavu_protection_links">Quitar el rastrexu de los enllaces</string>
     <string name="dejavu_protection_hint">Una proteición activada caltiénte más seguru. Cada una diz de qué te protexe y qué pue dexar de funcionar por ella.</string>
     <string name="dejavu_sync_zen_hint_unpinned">En Zen, abri Configuración, dempués Sincronización, y activa la sincronización de la barra llateral.</string>
-    <string name="dejavu_settings_bars">Barres y menú</string>
     <string name="dejavu_bars_actions_bar">Barra de direiciones arriba, barra d\'aiciones abaxo</string>
     <string name="dejavu_bars_actions_bar_summary">Esliza p\'arriba la barra d\'aiciones p\'abrir el menú Más.</string>
     <string name="dejavu_bars_top">Barra de direiciones arriba</string>
     <string name="dejavu_bars_top_summary">Ensin barra d\'aiciones. Esliza p\'abaxo la barra de direiciones p\'abrir el menú Más.</string>
     <string name="dejavu_bars_bottom">Barra de direiciones abaxo</string>
     <string name="dejavu_bars_bottom_summary">Ensin barra d\'aiciones. Esliza p\'arriba la barra de direiciones p\'abrir el menú Más.</string>
-    <string name="dejavu_settings_screen">Pantalla</string>
     <string name="dejavu_settings_hide_system_bars">Anubrir les barres d\'estáu y de navegación</string>
     <string name="dejavu_settings_hide_system_bars_summary">Mentanto s\'amuesa una páxina. Esliza dende\'l berbesu cimeru o baxeru pa veles un momentu.</string>
     <string name="dejavu_bookmarks_export">Esportar a un ficheru</string>
@@ -471,9 +469,18 @@
     <string name="dejavu_feature_save_page">Guarda páxines pa lleelo ensin internet</string>
     <string name="dejavu_recent_search_text">Desanicia esta gueta de les guetes recientes o desanicia toles guetes.</string>
     <string name="dejavu_recent_search_clear">Desaniciar l\'historial de guetes</string>
-    <string name="dejavu_settings_home_screen">Pantalla d\'aniciu</string>
     <string name="dejavu_home_search_top">Barra de gueta arriba</string>
     <string name="dejavu_home_search_top_summary">Espacios de trabayu, descargues, estensiones, marcadores y historial abaxo.</string>
     <string name="dejavu_home_search_bottom">Barra de gueta abaxo</string>
     <string name="dejavu_home_search_bottom_summary">Más fácil d\'algamar. Los espacios de trabayu, les descargues, les estensiones, los marcadores y l\'historial muévense arriba.</string>
+    <string name="dejavu_settings_autoclose_tabs">Zarru automáticu de llingüetes</string>
+    <string name="dejavu_settings_tabs_workspaces">Llingüetes, espacios de trabayu y contenedores</string>
+    <string name="dejavu_settings_tabs_workspaces_summary">Zarru y suañu de llingüetes, contenedores, páxina d\'aniciu y enllaces</string>
+    <string name="dejavu_settings_customize_summary">Estilu, aiciones de les llingüetes, menú, barres, contraseñes y llingua</string>
+    <string name="dejavu_settings_bars_2">Barres</string>
+    <string name="dejavu_settings_bars_summary">Páxina web, páxina d\'aniciu, pantalla completa, barra de llingüetes y xestos</string>
+    <string name="dejavu_settings_web_page">Páxina web</string>
+    <string name="dejavu_settings_full_screen">Pantalla completa</string>
+    <string name="dejavu_settings_passwords_language">Contraseñes y llingua</string>
+    <string name="dejavu_settings_passwords_language_summary">Rellenu automáticu, accesibilidá, traducciones y controles d\'IA</string>
 </resources>

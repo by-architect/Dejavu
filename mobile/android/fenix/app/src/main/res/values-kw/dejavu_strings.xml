@@ -447,14 +447,12 @@
     <string name="dejavu_protection_links">Dilea holya a-dhiworth kevrennow</string>
     <string name="dejavu_protection_hint">Difresyans gweythresys a\'gas gwith moy diogel. Pub huni a lever pyth a wra ev difres orto, ha pyth a yll hedhi a oberi awos ev.</string>
     <string name="dejavu_sync_zen_hint_unpinned">Yn Zen, igeri Settyansow, ena Kesunyans, ha treylya yn ban kesunyans an barr-esedh.</string>
-    <string name="dejavu_settings_bars">Barrow ha roll</string>
     <string name="dejavu_bars_actions_bar">Barr trigva a-wartha, barr oberennow a-woles</string>
     <string name="dejavu_bars_actions_bar_summary">Skubel an barr oberennow yn ban rag igeri an Roll Moy.</string>
     <string name="dejavu_bars_top">Barr trigva a-wartha</string>
     <string name="dejavu_bars_top_summary">Barr oberennow vyth. Skubel an barr trigva war-nans rag igeri an Roll Moy.</string>
     <string name="dejavu_bars_bottom">Barr trigva a-woles</string>
     <string name="dejavu_bars_bottom_summary">Barr oberennow vyth. Skubel an barr trigva yn ban rag igeri an Roll Moy.</string>
-    <string name="dejavu_settings_screen">Skrin</string>
     <string name="dejavu_settings_hide_system_bars">Kudha an barrow studh ha lewyans</string>
     <string name="dejavu_settings_hide_system_bars_summary">Hag yw folen diskwedhys. Slynk a-ji dhyworth an amal a-wartha po a-woles rag aga gweles pols.</string>
     <string name="dejavu_bookmarks_export">Esperthi dhe restren</string>
@@ -503,9 +501,18 @@
     <string name="dejavu_feature_save_page">Gwitha folennow rag redya heb kesrosweyth</string>
     <string name="dejavu_recent_search_text">Dilea an whilas ma a\'th whilasow dhiwettha, po dilea aga hepkor oll.</string>
     <string name="dejavu_recent_search_clear">Dilea istori whilas</string>
-    <string name="dejavu_settings_home_screen">Skrin tre</string>
     <string name="dejavu_home_search_top">Barr whilas a-wartha</string>
     <string name="dejavu_home_search_top_summary">Tyleryow-ober, iskargow, kressansow, merkow hag istori a-woles.</string>
     <string name="dejavu_home_search_bottom">Barr whilas a-woles</string>
     <string name="dejavu_home_search_bottom_summary">Es dhe dhrehedhes. Tyleryow-ober, iskargow, kressansow, merkow hag istori a vydh a-wartha.</string>
+    <string name="dejavu_settings_autoclose_tabs">Degea tabow yn awtomatek</string>
+    <string name="dejavu_settings_tabs_workspaces">Tabow, tyleryow-ober ha kontaynerow</string>
+    <string name="dejavu_settings_tabs_workspaces_summary">Degea tabow, tabow ow koska, kontaynerow, folen dre ha kevrennow</string>
+    <string name="dejavu_settings_customize_summary">Tem, oberennow tabow, roll, barrow, geryow tremena ha yeth</string>
+    <string name="dejavu_settings_bars_2">Barrow</string>
+    <string name="dejavu_settings_bars_summary">Folen wias, folen dre, skrin leun, barr tabow ha gwayansow</string>
+    <string name="dejavu_settings_web_page">Folen wias</string>
+    <string name="dejavu_settings_full_screen">Skrin leun</string>
+    <string name="dejavu_settings_passwords_language">Geryow tremena ha yeth</string>
+    <string name="dejavu_settings_passwords_language_summary">Lenwel awtomatek, hedhadewder, treylyansow ha rewlyansow AI</string>
 </resources>

@@ -433,14 +433,12 @@
     <string name="dejavu_protection_links">Odstraňovat sledování z odkazů</string>
     <string name="dejavu_protection_hint">Zapnutá ochrana zvyšuje vaše bezpečí. U každé je uvedeno, před čím chrání a co kvůli ní nemusí fungovat.</string>
     <string name="dejavu_sync_zen_hint_unpinned">V Zen otevřete Nastavení, poté Synchronizaci, a zapněte synchronizaci bočního panelu.</string>
-    <string name="dejavu_settings_bars">Lišty a nabídka</string>
     <string name="dejavu_bars_actions_bar">Adresní řádek nahoře, lišta akcí dole</string>
     <string name="dejavu_bars_actions_bar_summary">Přejetím lišty akcí nahoru otevřete nabídku Více.</string>
     <string name="dejavu_bars_top">Adresní řádek nahoře</string>
     <string name="dejavu_bars_top_summary">Žádná lišta akcí. Přejetím adresního řádku dolů otevřete nabídku Více.</string>
     <string name="dejavu_bars_bottom">Adresní řádek dole</string>
     <string name="dejavu_bars_bottom_summary">Žádná lišta akcí. Přejetím adresního řádku nahoru otevřete nabídku Více.</string>
-    <string name="dejavu_settings_screen">Obrazovka</string>
     <string name="dejavu_settings_hide_system_bars">Skrýt stavový a navigační panel</string>
     <string name="dejavu_settings_hide_system_bars_summary">Při zobrazení stránky. Přejetím od horního nebo dolního okraje je na chvíli zobrazíte.</string>
     <string name="dejavu_bookmarks_export">Exportovat do souboru</string>
@@ -487,9 +485,18 @@
     <string name="dejavu_feature_save_page">Ukládejte stránky a čtěte je bez internetu</string>
     <string name="dejavu_recent_search_text">Odstraní toto hledání z nedávno vyhledávaných, nebo vymaže všechna.</string>
     <string name="dejavu_recent_search_clear">Vymazat historii hledání</string>
-    <string name="dejavu_settings_home_screen">Domovská obrazovka</string>
     <string name="dejavu_home_search_top">Vyhledávací řádek nahoře</string>
     <string name="dejavu_home_search_top_summary">Pracovní prostory, stahování, rozšíření, záložky a historie dole.</string>
     <string name="dejavu_home_search_bottom">Vyhledávací řádek dole</string>
     <string name="dejavu_home_search_bottom_summary">Snáze dosažitelné. Pracovní prostory, stahování, rozšíření, záložky a historie se přesunou nahoru.</string>
+    <string name="dejavu_settings_autoclose_tabs">Automatické zavírání panelů</string>
+    <string name="dejavu_settings_tabs_workspaces">Panely, pracovní prostory a kontejnery</string>
+    <string name="dejavu_settings_tabs_workspaces_summary">Zavírání a uspávání panelů, kontejnery, domovská stránka a odkazy</string>
+    <string name="dejavu_settings_customize_summary">Vzhled, akce panelů, nabídka, lišty, hesla a jazyk</string>
+    <string name="dejavu_settings_bars_2">Lišty</string>
+    <string name="dejavu_settings_bars_summary">Webová stránka, domovská stránka, celá obrazovka, lišta panelů a gesta</string>
+    <string name="dejavu_settings_web_page">Webová stránka</string>
+    <string name="dejavu_settings_full_screen">Celá obrazovka</string>
+    <string name="dejavu_settings_passwords_language">Hesla a jazyk</string>
+    <string name="dejavu_settings_passwords_language_summary">Automatické vyplňování, přístupnost, překlady a ovládání AI</string>
 </resources>

@@ -419,14 +419,12 @@
     <string name="dejavu_protection_links">Allontanar il fastizar da colliaziuns</string>
     <string name="dejavu_protection_hint">Ina protecziun activada ta tegna pli segir. Mintgina di cunter tge ch\'ella protegia e tge che po chalar da funcziunar pervia dad ella.</string>
     <string name="dejavu_sync_zen_hint_unpinned">En Zen, avra Parameters, lura Sync, ed activescha la sincronisaziun da la trav laterala.</string>
-    <string name="dejavu_settings_bars">Travs e menu</string>
     <string name="dejavu_bars_actions_bar">Trav d’adressas survart, trav d’acziuns sutvart</string>
     <string name="dejavu_bars_actions_bar_summary">Stritgar si la trav d’acziuns per avrir il menu Dapli.</string>
     <string name="dejavu_bars_top">Trav d’adressas survart</string>
     <string name="dejavu_bars_top_summary">Nagina trav d’acziuns. Stritgar giu la trav d’adressas per avrir il menu Dapli.</string>
     <string name="dejavu_bars_bottom">Trav d’adressas sutvart</string>
     <string name="dejavu_bars_bottom_summary">Nagina trav d’acziuns. Stritgar si la trav d’adressas per avrir il menu Dapli.</string>
-    <string name="dejavu_settings_screen">Visur</string>
     <string name="dejavu_settings_hide_system_bars">Zuppentar las travs da status e da navigaziun</string>
     <string name="dejavu_settings_hide_system_bars_summary">Durant ch\'ina pagina vegn mussada. Stritgar naven dal ur sura u sut per las vesair per in mument.</string>
     <string name="dejavu_bookmarks_export">Exportar en ina datoteca</string>
@@ -471,9 +469,18 @@
     <string name="dejavu_feature_save_page">Memorisar paginas per las leger senza internet</string>
     <string name="dejavu_recent_search_text">Stizza questa tschertga da tias tschertgas recentas u stizza tuttas.</string>
     <string name="dejavu_recent_search_clear">Stizzar la cronologia da tschertga</string>
-    <string name="dejavu_settings_home_screen">Visur da partenza</string>
     <string name="dejavu_home_search_top">Trav da tschertga survart</string>
     <string name="dejavu_home_search_top_summary">Spazis da lavur, telechargiadas, extensiuns, segnapaginas e cronologia sutvart.</string>
     <string name="dejavu_home_search_bottom">Trav da tschertga sutvart</string>
     <string name="dejavu_home_search_bottom_summary">Pli simpel da cuntanscher. Spazis da lavur, telechargiadas, extensiuns, segnapaginas e cronologia vegnan spustads survart.</string>
+    <string name="dejavu_settings_autoclose_tabs">Serrar automaticamain tabs</string>
+    <string name="dejavu_settings_tabs_workspaces">Tabs, spazis da lavur e containers</string>
+    <string name="dejavu_settings_tabs_workspaces_summary">Serrar e metter en pausa tabs, containers, pagina da partenza e colliaziuns</string>
+    <string name="dejavu_settings_customize_summary">Design, acziuns dals tabs, menu, travs, pleds-clav e lingua</string>
+    <string name="dejavu_settings_bars_2">Travs</string>
+    <string name="dejavu_settings_bars_summary">Pagina web, pagina da partenza, maletg entir, trav da tabs e gests</string>
+    <string name="dejavu_settings_web_page">Pagina web</string>
+    <string name="dejavu_settings_full_screen">Maletg entir</string>
+    <string name="dejavu_settings_passwords_language">Pleds-clav e lingua</string>
+    <string name="dejavu_settings_passwords_language_summary">Endataziun automatica, accessibladad, translaziuns e controllas IA</string>
 </resources>

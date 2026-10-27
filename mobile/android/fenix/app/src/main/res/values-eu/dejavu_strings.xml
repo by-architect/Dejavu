@@ -419,14 +419,12 @@
     <string name="dejavu_protection_links">Kendu jarraipena esteketatik</string>
     <string name="dejavu_protection_hint">Aktibatuta dagoen babes batek seguruago mantentzen zaitu. Bakoitzak esaten du zeren aurka babesten duen eta haren ondorioz zerk utz diezaiokeen funtzionatzeari.</string>
     <string name="dejavu_sync_zen_hint_unpinned">Zenen, ireki Ezarpenak, ondoren Sinkronizazioa, eta aktibatu albo-barraren sinkronizazioa.</string>
-    <string name="dejavu_settings_bars">Barrak eta menua</string>
     <string name="dejavu_bars_actions_bar">Helbide-barra goian, ekintza-barra behean</string>
     <string name="dejavu_bars_actions_bar_summary">Pasatu ekintza-barra gora «Gehiago» menua irekitzeko.</string>
     <string name="dejavu_bars_top">Helbide-barra goian</string>
     <string name="dejavu_bars_top_summary">Ekintza-barrarik ez. Pasatu helbide-barra behera «Gehiago» menua irekitzeko.</string>
     <string name="dejavu_bars_bottom">Helbide-barra behean</string>
     <string name="dejavu_bars_bottom_summary">Ekintza-barrarik ez. Pasatu helbide-barra gora «Gehiago» menua irekitzeko.</string>
-    <string name="dejavu_settings_screen">Pantaila</string>
     <string name="dejavu_settings_hide_system_bars">Ezkutatu egoera- eta nabigazio-barrak</string>
     <string name="dejavu_settings_hide_system_bars_summary">Orri bat erakusten den bitartean. Pasatu hatza goiko edo beheko ertzetik une batez ikusteko.</string>
     <string name="dejavu_bookmarks_export">Esportatu fitxategira</string>
@@ -471,9 +469,18 @@
     <string name="dejavu_feature_save_page">Gorde orriak internetik gabe irakurtzeko</string>
     <string name="dejavu_recent_search_text">Ezabatu bilaketa hau azken bilaketetatik, edo garbitu guztiak.</string>
     <string name="dejavu_recent_search_clear">Garbitu bilaketa-historia</string>
-    <string name="dejavu_settings_home_screen">Hasierako pantaila</string>
     <string name="dejavu_home_search_top">Bilaketa-barra goian</string>
     <string name="dejavu_home_search_top_summary">Laneremuak, deskargak, hedapenak, laster-markak eta historia behean.</string>
     <string name="dejavu_home_search_bottom">Bilaketa-barra behean</string>
     <string name="dejavu_home_search_bottom_summary">Iristeko errazagoa. Laneremuak, deskargak, hedapenak, laster-markak eta historia gora mugitzen dira.</string>
+    <string name="dejavu_settings_autoclose_tabs">Itxi fitxak automatikoki</string>
+    <string name="dejavu_settings_tabs_workspaces">Fitxak, laneremuak eta edukiontziak</string>
+    <string name="dejavu_settings_tabs_workspaces_summary">Fitxak ixtea eta esekitzea, edukiontziak, hasiera-orria eta estekak</string>
+    <string name="dejavu_settings_customize_summary">Itxura, fitxen ekintzak, menua, barrak, pasahitzak eta hizkuntza</string>
+    <string name="dejavu_settings_bars_2">Barrak</string>
+    <string name="dejavu_settings_bars_summary">Web orria, hasiera-orria, pantaila osoa, fitxa-barra eta keinuak</string>
+    <string name="dejavu_settings_web_page">Web orria</string>
+    <string name="dejavu_settings_full_screen">Pantaila osoa</string>
+    <string name="dejavu_settings_passwords_language">Pasahitzak eta hizkuntza</string>
+    <string name="dejavu_settings_passwords_language_summary">Betetze automatikoa, erabilgarritasuna, itzulpenak eta AA kontrolak</string>
 </resources>

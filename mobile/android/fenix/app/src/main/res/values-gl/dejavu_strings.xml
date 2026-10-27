@@ -419,14 +419,12 @@
     <string name="dejavu_protection_links">Quitar o rastrexo das ligazóns</string>
     <string name="dejavu_protection_hint">Unha protección activada dáche máis seguranza. Cada unha di de que te protexe e que pode deixar de funcionar por culpa dela.</string>
     <string name="dejavu_sync_zen_hint_unpinned">En Zen, abre Configuración e logo Sincronización, e activa a sincronización da barra lateral.</string>
-    <string name="dejavu_settings_bars">Barras e menú</string>
     <string name="dejavu_bars_actions_bar">Barra de enderezos arriba, barra de accións abaixo</string>
     <string name="dejavu_bars_actions_bar_summary">Despraza a barra de accións cara arriba para abrir o menú «Máis».</string>
     <string name="dejavu_bars_top">Barra de enderezos arriba</string>
     <string name="dejavu_bars_top_summary">Sen barra de accións. Despraza a barra de enderezos cara abaixo para abrir o menú «Máis».</string>
     <string name="dejavu_bars_bottom">Barra de enderezos abaixo</string>
     <string name="dejavu_bars_bottom_summary">Sen barra de accións. Despraza a barra de enderezos cara arriba para abrir o menú «Máis».</string>
-    <string name="dejavu_settings_screen">Pantalla</string>
     <string name="dejavu_settings_hide_system_bars">Agochar as barras de estado e de navegación</string>
     <string name="dejavu_settings_hide_system_bars_summary">Mentres se mostra unha páxina. Esvara desde o bordo superior ou inferior para velas un momento.</string>
     <string name="dejavu_bookmarks_export">Exportar a un ficheiro</string>
@@ -471,9 +469,18 @@
     <string name="dejavu_feature_save_page">Garda páxinas para lelas sen internet</string>
     <string name="dejavu_recent_search_text">Elimina esta busca das túas buscas recentes ou borra todas.</string>
     <string name="dejavu_recent_search_clear">Borrar historial de buscas</string>
-    <string name="dejavu_settings_home_screen">Pantalla de inicio</string>
     <string name="dejavu_home_search_top">Barra de busca arriba</string>
     <string name="dejavu_home_search_top_summary">Espazos de traballo, descargas, extensións, marcadores e historial abaixo.</string>
     <string name="dejavu_home_search_bottom">Barra de busca abaixo</string>
     <string name="dejavu_home_search_bottom_summary">Máis fácil de alcanzar. Os espazos de traballo, as descargas, as extensións, os marcadores e o historial móvense arriba.</string>
+    <string name="dejavu_settings_autoclose_tabs">Peche automático de lapelas</string>
+    <string name="dejavu_settings_tabs_workspaces">Lapelas, espazos de traballo e contedores</string>
+    <string name="dejavu_settings_tabs_workspaces_summary">Peche e sono das lapelas, contedores, páxina de inicio e ligazóns</string>
+    <string name="dejavu_settings_customize_summary">Tema, accións das lapelas, menú, barras, contrasinais e idioma</string>
+    <string name="dejavu_settings_bars_2">Barras</string>
+    <string name="dejavu_settings_bars_summary">Páxina web, páxina de inicio, pantalla completa, barra de pestanas e xestos</string>
+    <string name="dejavu_settings_web_page">Páxina web</string>
+    <string name="dejavu_settings_full_screen">Pantalla completa</string>
+    <string name="dejavu_settings_passwords_language">Contrasinais e idioma</string>
+    <string name="dejavu_settings_passwords_language_summary">Completado automático, accesibilidade, traducións e controis da IA</string>
 </resources>

@@ -433,14 +433,12 @@
     <string name="dejavu_protection_links">Slědowanje z wótkazow wótwónoźeś</string>
     <string name="dejavu_protection_hint">Zašaltowany šćit wam wěcej wěstoty dawa. Kuždy groni, pśed cym šćita a co snaź dla njogo wěcej njefunkcioněrujo.</string>
     <string name="dejavu_sync_zen_hint_unpinned">W Zen wócyni Nastajenja, pón Synchronizacija, a zapopń synchronizaciju bócnicy.</string>
-    <string name="dejavu_settings_bars">Lajsty a meni</string>
     <string name="dejavu_bars_actions_bar">Adresowe pólo górjejce, akcijowa lajsta dołojce</string>
     <string name="dejavu_bars_actions_bar_summary">Pótegniśo akcijowu lajstu górjej, aby dalšny meni wócynił.</string>
     <string name="dejavu_bars_top">Adresowe pólo górjejce</string>
     <string name="dejavu_bars_top_summary">Žedna akcijowa lajsta. Pótegniśo adresowe pólo dołoj, aby dalšny meni wócynił.</string>
     <string name="dejavu_bars_bottom">Adresowe pólo dołojce</string>
     <string name="dejavu_bars_bottom_summary">Žedna akcijowa lajsta. Pótegniśo adresowe pólo górjej, aby dalšny meni wócynił.</string>
-    <string name="dejavu_settings_screen">Wobrazowka</string>
     <string name="dejavu_settings_hide_system_bars">Lejstwy statusa a nawigacije schowaś</string>
     <string name="dejavu_settings_hide_system_bars_summary">Mjaztym až se bok pokazujo. Póśěgniśo wót górnego abo dolnego kšoma, aby je na wokognuśe wiźeł.</string>
     <string name="dejavu_bookmarks_export">Do dataje eksportěrowaś</string>
@@ -487,9 +485,18 @@
     <string name="dejavu_feature_save_page">Boki składowaś, aby je bźez internetu cytał</string>
     <string name="dejavu_recent_search_text">Toś to pytanje z nejnowšych pytanjow wulašowaś abo wšykne wulašowaś.</string>
     <string name="dejavu_recent_search_clear">Pytańsku historiju wulašowaś</string>
-    <string name="dejavu_settings_home_screen">Startowa wobrazowka</string>
     <string name="dejavu_home_search_top">Pytańske pólo górjejce</string>
     <string name="dejavu_home_search_top_summary">Źěłowe rumy, ześěgnjenja, rozšyrjenja, cytańske znamjenja a historija dołojce.</string>
     <string name="dejavu_home_search_bottom">Pytańske pólo dołojce</string>
     <string name="dejavu_home_search_bottom_summary">Lažčej dosegnuś. Źěłowe rumy, ześěgnjenja, rozšyrjenja, cytańske znamjenja a historija se pśesuwaju górjej.</string>
+    <string name="dejavu_settings_autoclose_tabs">Rejtariki awtomatiski zacyniś</string>
+    <string name="dejavu_settings_tabs_workspaces">Rejtariki, źěłowe rumy a kontejnery</string>
+    <string name="dejavu_settings_tabs_workspaces_summary">Zacynjanje a spanje rejtarikow, kontejnery, startowy bok a wótkazy</string>
+    <string name="dejavu_settings_customize_summary">Drastwa, akcije za rejtariki, meni, rědki, gronidła a rěc</string>
+    <string name="dejavu_settings_bars_2">Lejstwy</string>
+    <string name="dejavu_settings_bars_summary">Webbok, startowy bok, połna wobrazowka, rědka rejtarikow a gesty</string>
+    <string name="dejavu_settings_web_page">Webbok</string>
+    <string name="dejavu_settings_full_screen">Połna wobrazowka</string>
+    <string name="dejavu_settings_passwords_language">Gronidła a rěc</string>
+    <string name="dejavu_settings_passwords_language_summary">Awtomatiske wupołnjowanje, bźezbariernosć, pśełožki a wóźeńske elementy KI</string>
 </resources>

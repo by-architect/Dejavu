@@ -14,6 +14,9 @@
     <string name="pref_key_dejavu_network_location" translatable="false">pref_key_dejavu_network_location</string>
     <string name="pref_key_dejavu_strip_link_tracking" translatable="false">pref_key_dejavu_strip_link_tracking</string>
     <string name="pref_key_dejavu_tracking_protection" translatable="false">pref_key_dejavu_tracking_protection</string>
+    <string name="pref_key_dejavu_tabs_workspaces" translatable="false">pref_key_dejavu_tabs_workspaces</string>
+    <string name="pref_key_dejavu_bars" translatable="false">pref_key_dejavu_bars</string>
+    <string name="pref_key_dejavu_passwords_language" translatable="false">pref_key_dejavu_passwords_language</string>
     <!-- Name of Mozilla's browser, for texts about Mozilla's own services like Firefox Suggest. -->
     <string name="dejavu_firefox_name" translatable="false" tools:ignore="BrandUsage">Firefox</string>
 
@@ -270,6 +273,8 @@
 
     <!-- Tabs settings -->
     <string name="dejavu_preferences_close_unpinned_tabs">Close unpinned tabs</string>
+    <!-- Settings entry and screen title for closing unpinned tabs on their own after a day, a week or a month. -->
+    <string name="dejavu_settings_autoclose_tabs">Auto-close tabs</string>
 
     <!-- Menu of a long-pressed link -->
     <string name="dejavu_link_open_in_split_view">Open in split view</string>
@@ -366,12 +371,10 @@
     <string name="dejavu_more_menu_hide_edit">Hide edit button</string>
     <string name="dejavu_more_menu_hide_edit_summary">The Edit button at the bottom of the More menu</string>
 
-    <!-- Settings: Customize, where the address bar and the actions bar show around web pages, and how the More menu opens -->
+    <!-- Settings: Bars, where the address bar and the actions bar show around web pages, and how the More menu opens -->
     <string name="pref_key_dejavu_bars_actions_bar" translatable="false">pref_key_dejavu_bars_actions_bar</string>
     <string name="pref_key_dejavu_bars_top" translatable="false">pref_key_dejavu_bars_top</string>
     <string name="pref_key_dejavu_bars_bottom" translatable="false">pref_key_dejavu_bars_bottom</string>
-    <!-- Title of the group of three choices below, and of the More menu editor and its switch. -->
-    <string name="dejavu_settings_bars">Bars and menu</string>
     <string name="dejavu_bars_actions_bar">Address bar at the top, actions bar at the bottom</string>
     <string name="dejavu_bars_actions_bar_summary">Swipe the actions bar up to open the More menu.</string>
     <string name="dejavu_bars_top">Address bar at the top</string>
@@ -379,11 +382,9 @@
     <string name="dejavu_bars_bottom">Address bar at the bottom</string>
     <string name="dejavu_bars_bottom_summary">No actions bar. Swipe the address bar up to open the More menu.</string>
 
-    <!-- Settings: Customize, where the home screen shows its search bar, with the account and settings buttons beside it -->
+    <!-- Settings: Bars, where the home screen shows its search bar, with the account and settings buttons beside it -->
     <string name="pref_key_dejavu_home_search_top" translatable="false">pref_key_dejavu_home_search_top</string>
     <string name="pref_key_dejavu_home_search_bottom" translatable="false">pref_key_dejavu_home_search_bottom</string>
-    <!-- Title of the group of the two choices below, about the home screen, where the workspaces and their tabs show. -->
-    <string name="dejavu_settings_home_screen">Home screen</string>
     <string name="dejavu_home_search_top">Search bar at the top</string>
     <!-- The bar at the bottom holds the workspaces and the downloads, extensions, bookmarks and history buttons. -->
     <string name="dejavu_home_search_top_summary">Workspaces, downloads, extensions, bookmarks and history at the bottom.</string>
@@ -391,11 +392,30 @@
     <!-- The search bar moves to the bottom and the bar of the workspaces and buttons goes to the top, in its place. -->
     <string name="dejavu_home_search_bottom_summary">Easier to reach. Workspaces, downloads, extensions, bookmarks and history move to the top.</string>
 
-    <!-- Settings: Customize, hiding the phone's status bar and navigation bar while a page is shown -->
+    <!-- Settings: Bars, hiding the phone's status bar and navigation bar while a page is shown -->
     <string name="pref_key_dejavu_hide_system_bars" translatable="false">pref_key_dejavu_hide_system_bars</string>
-    <string name="dejavu_settings_screen">Screen</string>
     <string name="dejavu_settings_hide_system_bars">Hide status and navigation bars</string>
     <string name="dejavu_settings_hide_system_bars_summary">While a page is shown. Swipe in from the top or bottom edge to see them for a moment.</string>
+
+    <!-- Settings: the screens that group the settings under General -->
+    <!-- Settings entry and screen title, under General, for the settings of tabs, workspaces and containers. -->
+    <string name="dejavu_settings_tabs_workspaces">Tabs, workspaces and containers</string>
+    <!-- Summary of "Tabs, workspaces and containers": what its screen holds. -->
+    <string name="dejavu_settings_tabs_workspaces_summary">Closing and sleeping tabs, containers, homepage and links</string>
+    <!-- Summary of the Customize entry under General: what its screen holds. -->
+    <string name="dejavu_settings_customize_summary">Theme, tab actions, menu, bars, passwords and language</string>
+    <!-- Settings entry and screen title, in Customize, for where the bars show on web pages and on the home screen, hiding the status and navigation bars, the tab bar and the gestures. -->
+    <string name="dejavu_settings_bars_2">Bars</string>
+    <!-- Summary of "Bars": what its screen holds. -->
+    <string name="dejavu_settings_bars_summary">Web page, homepage, full screen, tab bar and gestures</string>
+    <!-- Title of the group of choices of where the address bar and the actions bar show around web pages. -->
+    <string name="dejavu_settings_web_page">Web page</string>
+    <!-- Title over the switch that hides the phone's status bar and navigation bar while a page is shown. -->
+    <string name="dejavu_settings_full_screen">Full screen</string>
+    <!-- Settings entry and screen title, in Customize, for passwords, autofill, accessibility, language, translations and AI controls. -->
+    <string name="dejavu_settings_passwords_language">Passwords and language</string>
+    <!-- Summary of "Passwords and language": what else its screen holds. -->
+    <string name="dejavu_settings_passwords_language_summary">Autofill, accessibility, translations and AI controls</string>
 
     <!-- Account page: syncing workspaces with Firefox or Zen, under Sync and among what to sync -->
     <string name="pref_key_dejavu_sync_enabled" translatable="false">pref_key_dejavu_sync_enabled</string>

@@ -412,14 +412,12 @@
     <string name="dejavu_protection_links">ลบการติดตามออกจากลิงก์</string>
     <string name="dejavu_protection_hint">การป้องกันที่เปิดอยู่ช่วยให้คุณปลอดภัยยิ่งขึ้น แต่ละรายการจะบอกว่าป้องกันอะไร และอะไรที่อาจใช้งานไม่ได้เพราะการป้องกันนั้น</string>
     <string name="dejavu_sync_zen_hint_unpinned">ใน Zen ให้เปิดการตั้งค่า จากนั้นไปที่การซิงค์ และเปิดใช้งานการซิงค์แถบด้านข้าง</string>
-    <string name="dejavu_settings_bars">แถบและเมนู</string>
     <string name="dejavu_bars_actions_bar">แถบที่อยู่ด้านบน แถบการดำเนินการด้านล่าง</string>
     <string name="dejavu_bars_actions_bar_summary">ปัดแถบการดำเนินการขึ้นเพื่อเปิดเมนูเพิ่มเติม</string>
     <string name="dejavu_bars_top">แถบที่อยู่ด้านบน</string>
     <string name="dejavu_bars_top_summary">ไม่มีแถบการดำเนินการ ปัดแถบที่อยู่ลงเพื่อเปิดเมนูเพิ่มเติม</string>
     <string name="dejavu_bars_bottom">แถบที่อยู่ด้านล่าง</string>
     <string name="dejavu_bars_bottom_summary">ไม่มีแถบการดำเนินการ ปัดแถบที่อยู่ขึ้นเพื่อเปิดเมนูเพิ่มเติม</string>
-    <string name="dejavu_settings_screen">หน้าจอ</string>
     <string name="dejavu_settings_hide_system_bars">ซ่อนแถบสถานะและแถบนำทาง</string>
     <string name="dejavu_settings_hide_system_bars_summary">ขณะแสดงหน้าเว็บ ปัดเข้ามาจากขอบบนหรือขอบล่างเพื่อดูแถบเหล่านี้ชั่วครู่</string>
     <string name="dejavu_bookmarks_export">ส่งออกไปยังไฟล์</string>
@@ -463,9 +461,18 @@
     <string name="dejavu_feature_save_page">บันทึกหน้าไว้อ่านโดยไม่ต้องใช้อินเทอร์เน็ต</string>
     <string name="dejavu_recent_search_text">ลบการค้นหานี้ออกจากคำค้นหาล่าสุด หรือล้างทั้งหมด</string>
     <string name="dejavu_recent_search_clear">ล้างประวัติการค้นหา</string>
-    <string name="dejavu_settings_home_screen">หน้าจอหลัก</string>
     <string name="dejavu_home_search_top">แถบค้นหาด้านบน</string>
     <string name="dejavu_home_search_top_summary">พื้นที่ทำงาน การดาวน์โหลด ส่วนขยาย ที่คั่นหน้า และประวัติจะอยู่ด้านล่าง</string>
     <string name="dejavu_home_search_bottom">แถบค้นหาด้านล่าง</string>
     <string name="dejavu_home_search_bottom_summary">เอื้อมถึงง่ายกว่า พื้นที่ทำงาน การดาวน์โหลด ส่วนขยาย ที่คั่นหน้า และประวัติจะย้ายไปด้านบน</string>
+    <string name="dejavu_settings_autoclose_tabs">ปิดแท็บอัตโนมัติ</string>
+    <string name="dejavu_settings_tabs_workspaces">แท็บ พื้นที่ทำงาน และคอนเทนเนอร์</string>
+    <string name="dejavu_settings_tabs_workspaces_summary">การปิดและการพักแท็บ คอนเทนเนอร์ หน้าแรก และลิงก์</string>
+    <string name="dejavu_settings_customize_summary">ชุดตกแต่ง การดำเนินการของแท็บ เมนู แถบ รหัสผ่าน และภาษา</string>
+    <string name="dejavu_settings_bars_2">แถบ</string>
+    <string name="dejavu_settings_bars_summary">หน้าเว็บ หน้าแรก เต็มหน้าจอ แถบแท็บ และท่าทาง</string>
+    <string name="dejavu_settings_web_page">หน้าเว็บ</string>
+    <string name="dejavu_settings_full_screen">เต็มหน้าจอ</string>
+    <string name="dejavu_settings_passwords_language">รหัสผ่านและภาษา</string>
+    <string name="dejavu_settings_passwords_language_summary">การเติมอัตโนมัติ การช่วยเข้าถึง การแปล และส่วนควบคุม AI</string>
 </resources>

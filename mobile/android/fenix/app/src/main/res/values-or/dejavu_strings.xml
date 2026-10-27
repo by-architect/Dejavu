@@ -419,14 +419,12 @@
     <string name="dejavu_protection_links">ଲିଙ୍କରୁ ଟ୍ରାକିଂ ହଟାନ୍ତୁ</string>
     <string name="dejavu_protection_hint">ଚାଲୁ ଥିବା ସୁରକ୍ଷା ଆପଣଙ୍କୁ ଅଧିକ ସୁରକ୍ଷିତ ରଖେ। ପ୍ରତ୍ୟେକଟି କହେ ଯେ ଏହା କେଉଁଥିରୁ ରକ୍ଷା କରେ ଏବଂ ଏହା ଯୋଗୁଁ କ\'ଣ କାମ କରିବା ବନ୍ଦ କରିପାରେ।</string>
     <string name="dejavu_sync_zen_hint_unpinned">Zen ରେ, ସେଟିଂସମୂହ ଖୋଲନ୍ତୁ, ତାପରେ ସିଙ୍କ, ଏବଂ ସାଇଡବାର ସିଙ୍କ ଅନ୍ କରନ୍ତୁ।</string>
-    <string name="dejavu_settings_bars">ବାର୍ ଏବଂ ମେନୁ</string>
     <string name="dejavu_bars_actions_bar">ଉପରେ ଠିକଣା ବାର୍, ତଳେ କାର୍ଯ୍ୟ ବାର୍</string>
     <string name="dejavu_bars_actions_bar_summary">ଅଧିକ ମେନୁ ଖୋଲିବାକୁ କାର୍ଯ୍ୟ ବାର୍‌କୁ ଉପରକୁ ସ୍ୱାଇପ୍ କରନ୍ତୁ।</string>
     <string name="dejavu_bars_top">ଉପରେ ଠିକଣା ବାର୍</string>
     <string name="dejavu_bars_top_summary">କାର୍ଯ୍ୟ ବାର୍ ନାହିଁ। ଅଧିକ ମେନୁ ଖୋଲିବାକୁ ଠିକଣା ବାର୍‌କୁ ତଳକୁ ସ୍ୱାଇପ୍ କରନ୍ତୁ।</string>
     <string name="dejavu_bars_bottom">ତଳେ ଠିକଣା ବାର୍</string>
     <string name="dejavu_bars_bottom_summary">କାର୍ଯ୍ୟ ବାର୍ ନାହିଁ। ଅଧିକ ମେନୁ ଖୋଲିବାକୁ ଠିକଣା ବାର୍‌କୁ ଉପରକୁ ସ୍ୱାଇପ୍ କରନ୍ତୁ।</string>
-    <string name="dejavu_settings_screen">ସ୍କ୍ରିନ</string>
     <string name="dejavu_settings_hide_system_bars">ଷ୍ଟାଟସ ଏବଂ ନାଭିଗେସନ ବାର ଲୁଚାନ୍ତୁ</string>
     <string name="dejavu_settings_hide_system_bars_summary">ଯେତେବେଳେ ଏକ ପୃଷ୍ଠା ଦେଖାଯାଏ। ସେଗୁଡ଼ିକୁ କିଛି ସମୟ ଦେଖିବା ପାଇଁ ଉପର କିମ୍ବା ତଳ ଧାରରୁ ସ୍ୱାଇପ କରନ୍ତୁ।</string>
     <string name="dejavu_bookmarks_export">ଫାଇଲକୁ ରପ୍ତାନି କରନ୍ତୁ</string>
@@ -471,9 +469,18 @@
     <string name="dejavu_feature_save_page">ଇଣ୍ଟରନେଟ୍ ବିନା ପଢ଼ିବାକୁ ପୃଷ୍ଠାଗୁଡ଼ିକ ସେଭ୍ କରନ୍ତୁ</string>
     <string name="dejavu_recent_search_text">ଏହି ସନ୍ଧାନକୁ ଆପଣଙ୍କ ସାମ୍ପ୍ରତିକ ସନ୍ଧାନରୁ ଡିଲିଟ୍ କରନ୍ତୁ, ଅଥବା ସବୁ ଖାଲି କରନ୍ତୁ।</string>
     <string name="dejavu_recent_search_clear">ସନ୍ଧାନ ଇତିହାସ ଖାଲି କରନ୍ତୁ</string>
-    <string name="dejavu_settings_home_screen">ହୋମ୍ ସ୍କ୍ରିନ୍</string>
     <string name="dejavu_home_search_top">ଉପରେ ସନ୍ଧାନ ବାର୍</string>
     <string name="dejavu_home_search_top_summary">କାର୍ଯ୍ୟକ୍ଷେତ୍ର, ଡାଉନଲୋଡ୍, ଏକ୍ସଟେନସନ, ବୁକମାର୍କ ଏବଂ ଇତିହାସ ତଳେ ଅଛି।</string>
     <string name="dejavu_home_search_bottom">ତଳେ ସନ୍ଧାନ ବାର୍</string>
     <string name="dejavu_home_search_bottom_summary">ପହଞ୍ଚିବା ଅଧିକ ସହଜ। କାର୍ଯ୍ୟକ୍ଷେତ୍ର, ଡାଉନଲୋଡ୍, ଏକ୍ସଟେନସନ, ବୁକମାର୍କ ଏବଂ ଇତିହାସ ଉପରକୁ ଚାଲିଯାଏ।</string>
+    <string name="dejavu_settings_autoclose_tabs">ଟ୍ୟାବ୍ ସ୍ୱଚାଳିତ ଭାବେ ବନ୍ଦ କରନ୍ତୁ</string>
+    <string name="dejavu_settings_tabs_workspaces">ଟ୍ୟାବ୍, କାର୍ଯ୍ୟକ୍ଷେତ୍ର ଏବଂ କଣ୍ଟେନର</string>
+    <string name="dejavu_settings_tabs_workspaces_summary">ଟ୍ୟାବ୍ ବନ୍ଦ କରିବା ଓ ସ୍ଲିପ୍ କରିବା, କଣ୍ଟେନର, ହୋମ୍ ପୃଷ୍ଠା ଏବଂ ଲିଙ୍କ୍</string>
+    <string name="dejavu_settings_customize_summary">ଥିମ୍, ଟ୍ୟାବ୍ କାର୍ଯ୍ୟ, ମେନୁ, ବାର୍, ପାସୱାର୍ଡ ଏବଂ ଭାଷା</string>
+    <string name="dejavu_settings_bars_2">ବାର୍‌ଗୁଡ଼ିକ</string>
+    <string name="dejavu_settings_bars_summary">ୱେବ ପୃଷ୍ଠା, ହୋମ୍ ପୃଷ୍ଠା, ପୂର୍ଣ୍ଣ ସ୍କ୍ରିନ୍, ଟ୍ୟାବ୍ ବାର୍ ଏବଂ ଜେଶ୍ଚର୍</string>
+    <string name="dejavu_settings_web_page">ୱେବ ପୃଷ୍ଠା</string>
+    <string name="dejavu_settings_full_screen">ପୂର୍ଣ୍ଣ ସ୍କ୍ରିନ୍</string>
+    <string name="dejavu_settings_passwords_language">ପାସୱାର୍ଡ ଏବଂ ଭାଷା</string>
+    <string name="dejavu_settings_passwords_language_summary">ଅଟୋଫିଲ୍, ଅଭିଗମ୍ୟତା, ଅନୁବାଦ ଏବଂ AI ନିୟନ୍ତ୍ରଣ</string>
 </resources>

@@ -412,14 +412,12 @@
     <string name="dejavu_protection_links">o weka e alasa jan tan nasin lipu</string>
     <string name="dejavu_protection_hint">awen li open la, sina awen mute. awen wan wan li toki e ni: ona li weka e ike seme, li ken pakala e seme.</string>
     <string name="dejavu_sync_zen_hint_unpinned">lon Zen, o open e nasin ilo, la o open e sama, la o ken e sama pi poki poka.</string>
-    <string name="dejavu_settings_bars">linja en ilo mute</string>
     <string name="dejavu_bars_actions_bar">linja pi nasin lipu lon sewi, linja ilo lon anpa</string>
     <string name="dejavu_bars_actions_bar_summary">o tawa sewi e linja ilo tawa open e ilo mute.</string>
     <string name="dejavu_bars_top">linja pi nasin lipu lon sewi</string>
     <string name="dejavu_bars_top_summary">linja ilo li lon ala. o tawa anpa e linja pi nasin lipu tawa open e ilo mute.</string>
     <string name="dejavu_bars_bottom">linja pi nasin lipu lon anpa</string>
     <string name="dejavu_bars_bottom_summary">linja ilo li lon ala. o tawa sewi e linja pi nasin lipu tawa open e ilo mute.</string>
-    <string name="dejavu_settings_screen">sinpin</string>
     <string name="dejavu_settings_hide_system_bars">o len e linja sona e linja tawa</string>
     <string name="dejavu_settings_hide_system_bars_summary">tenpo pi lipu lukin. sina wile lukin lili e ona la, o tawa tan poka sewi anu poka anpa.</string>
     <string name="dejavu_bookmarks_export">o pana e lipu awen tawa lipu sin</string>
@@ -463,9 +461,18 @@
     <string name="dejavu_feature_save_page">o awen e lipu tawa lukin ala pi ilo kalama</string>
     <string name="dejavu_recent_search_text">o weka e alasa ni tan kulupu pi alasa pini, anu o weka e ale.</string>
     <string name="dejavu_recent_search_clear">o weka e lipu pi alasa pini ale</string>
-    <string name="dejavu_settings_home_screen">lipu open</string>
     <string name="dejavu_home_search_top">linja alasa lon sewi</string>
     <string name="dejavu_home_search_top_summary">kulupu poki, jo lipu, ilo namako, lipu awen, en lukin pini lipu li lon anpa.</string>
     <string name="dejavu_home_search_bottom">linja alasa lon anpa</string>
     <string name="dejavu_home_search_bottom_summary">luka sina li ken kama tawa ni kepeken pali lili. kulupu poki, jo lipu, ilo namako, lipu awen, en lukin pini lipu li tawa sewi.</string>
+    <string name="dejavu_settings_autoclose_tabs">o pini e poki kepeken lawa sina ala</string>
+    <string name="dejavu_settings_tabs_workspaces">poki, kulupu poki, en leko</string>
+    <string name="dejavu_settings_tabs_workspaces_summary">pini poki, poki lape, leko, lipu open, en nasin lipu</string>
+    <string name="dejavu_settings_customize_summary">kule, pali pi poki, ilo mute, linja, nimi open, en toki ilo</string>
+    <string name="dejavu_settings_bars_2">linja</string>
+    <string name="dejavu_settings_bars_summary">lipu linluwi, lipu open, lukin suli, linja poki, en pilin nena</string>
+    <string name="dejavu_settings_web_page">lipu linluwi</string>
+    <string name="dejavu_settings_full_screen">lukin suli</string>
+    <string name="dejavu_settings_passwords_language">nimi open en toki ilo</string>
+    <string name="dejavu_settings_passwords_language_summary">pana sona pi ilo taso, pona pi kepeken ale, ante toki lipu, en lawa pi ilo AI</string>
 </resources>

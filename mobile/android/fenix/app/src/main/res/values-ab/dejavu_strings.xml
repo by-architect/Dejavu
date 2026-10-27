@@ -419,14 +419,12 @@
     <string name="dejavu_protection_links">Алинкқәа рҟынтә ашьҭаԥшра аныхра</string>
     <string name="dejavu_protection_hint">Иаҿыку ахьчара еиҳа шәахьчоит. Ахьчара цыԥхьаӡа иаҳәоит иззыхьчо, насгьы уи иахҟьаны аус ауамзар ҟалоз.</string>
     <string name="dejavu_sync_zen_hint_unpinned">Zen аҟны, «Архиарақәа» аартын, унтi «Асинхронизация», насгьы аҭаны панель расинхронизациа алагаз.</string>
-    <string name="dejavu_settings_bars">Апанельқәеи аменюи</string>
     <string name="dejavu_bars_actions_bar">Адресқәа рпанель хыхь, аҟаҵарақәа рпанель ҵаҟа</string>
     <string name="dejavu_bars_actions_bar_summary">Адополнительнатә меню аартразы аҟаҵарақәа рпанель хыхь ахь иҵыхтәуп.</string>
     <string name="dejavu_bars_top">Адресқәа рпанель хыхь</string>
     <string name="dejavu_bars_top_summary">Аҟаҵарақәа рпанель ада. Адополнительнатә меню аартразы адресқәа рпанель алада иҵыхтәуп.</string>
     <string name="dejavu_bars_bottom">Адресқәа рпанель ҵаҟа</string>
     <string name="dejavu_bars_bottom_summary">Аҟаҵарақәа рпанель ада. Адополнительнатә меню аартразы адресқәа рпанель хыхь ахь иҵыхтәуп.</string>
-    <string name="dejavu_settings_screen">Аекран</string>
     <string name="dejavu_settings_hide_system_bars">Аҭагылазаашьеи анавигациеи рпанельқәа рыҵаҵыхра</string>
     <string name="dejavu_settings_hide_system_bars_summary">Адаҟьа анаарԥшуа. Уеизгьы иаразнак рбара азы, аекран хыхьтәи ма ҵаҟатәи аҿықә аҟнытә ишьҭыҵ.</string>
     <string name="dejavu_bookmarks_export">Афаил ахь аекспорт</string>
@@ -471,9 +469,18 @@
     <string name="dejavu_feature_save_page">Адаҟьақәа интернет алагала аҩра аҟынтә ахәаԥшразы иасохранитәуп</string>
     <string name="dejavu_recent_search_text">Ари ахцәажәара ианыхтәуп аҿыхра аҟынтә, ма зегьы ианыхтәуп.</string>
     <string name="dejavu_recent_search_clear">Аҿаԥшра аҭоурых аныхра</string>
-    <string name="dejavu_settings_home_screen">Аҩны аекран</string>
     <string name="dejavu_home_search_top">Аԥшаара апанель хыхь</string>
     <string name="dejavu_home_search_top_summary">Аҭыԥқәа, аҭагаларақәа, аиҵыхрақәа, адыргақәа, ахҭыс ҵаҟа иҟоуп.</string>
     <string name="dejavu_home_search_bottom">Аԥшаара апанель ҵаҟа</string>
     <string name="dejavu_home_search_bottom_summary">Ахархәара иаҳа иуадаҩым. Аҭыԥқәа, аҭагаларақәа, аиҵыхрақәа, адыргақәа, ахҭыс хыхь ицоит.</string>
+    <string name="dejavu_settings_autoclose_tabs">Абларҭақәа автоматла аркра</string>
+    <string name="dejavu_settings_tabs_workspaces">Абларҭақәеи аҭыԥқәеи аконтейнерқәеи</string>
+    <string name="dejavu_settings_tabs_workspaces_summary">Абларҭақәа ркра, ицәо абларҭақәа, аконтейнерқәа, ахатә даҟьа, насгьы алинкқәа</string>
+    <string name="dejavu_settings_customize_summary">Амаҭәар, абларҭа аҟаҵарақәа, аменю, апанельқәа, амаӡажәақәа, насгьы абызшәа</string>
+    <string name="dejavu_settings_bars_2">Апанельқәа</string>
+    <string name="dejavu_settings_bars_summary">Авеб-даҟьа, ахатә даҟьа, аекран зегьы, абларҭақәа рпанель, насгьы анапқәа</string>
+    <string name="dejavu_settings_web_page">Авеб-даҟьа</string>
+    <string name="dejavu_settings_full_screen">Аекран зегьы</string>
+    <string name="dejavu_settings_passwords_language">Амаӡажәақәеи абызшәеи</string>
+    <string name="dejavu_settings_passwords_language_summary">Автохарҭәаара, азнеира алшара, аиҭагақәа, насгьы AI анапхгара</string>
 </resources>

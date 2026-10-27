@@ -419,14 +419,12 @@
     <string name="dejavu_protection_links">Forigi spuradon el ligiloj</string>
     <string name="dejavu_protection_hint">Ŝaltita protekto tenas vin pli sekura. Ĉiu diras, kontraŭ kio ĝi gardas vin kaj kio povas ĉesi funkcii pro ĝi.</string>
     <string name="dejavu_sync_zen_hint_unpinned">En Zen, malfermu Agordojn, poste Sinkronigon, kaj ŝaltu sinkronigon de la flanka breto.</string>
-    <string name="dejavu_settings_bars">Strioj kaj menuo</string>
     <string name="dejavu_bars_actions_bar">Adresa strio supre, agostrio malsupre</string>
     <string name="dejavu_bars_actions_bar_summary">Ŝovu la agostrion supren por malfermi la pluan menuon.</string>
     <string name="dejavu_bars_top">Adresa strio supre</string>
     <string name="dejavu_bars_top_summary">Neniu agostrio. Ŝovu la adresan strion malsupren por malfermi la pluan menuon.</string>
     <string name="dejavu_bars_bottom">Adresa strio malsupre</string>
     <string name="dejavu_bars_bottom_summary">Neniu agostrio. Ŝovu la adresan strion supren por malfermi la pluan menuon.</string>
-    <string name="dejavu_settings_screen">Ekrano</string>
     <string name="dejavu_settings_hide_system_bars">Kaŝi la statan kaj navigan stangojn</string>
     <string name="dejavu_settings_hide_system_bars_summary">Dum paĝo estas montrata. Ŝovu de la supra aŭ malsupra rando por vidi ilin dum momento.</string>
     <string name="dejavu_bookmarks_export">Eksporti al dosiero</string>
@@ -471,9 +469,18 @@
     <string name="dejavu_feature_save_page">Konservu paĝojn por legi sen interreto</string>
     <string name="dejavu_recent_search_text">Forigu ĉi tiun serĉon el la ĵusaj serĉoj, aŭ forigu ĉiujn.</string>
     <string name="dejavu_recent_search_clear">Forigi serĉhistorion</string>
-    <string name="dejavu_settings_home_screen">Hejmekrano</string>
     <string name="dejavu_home_search_top">Serĉa strio supre</string>
     <string name="dejavu_home_search_top_summary">Laborspacoj, elŝutoj, etendaĵoj, legosignoj kaj historio malsupre.</string>
     <string name="dejavu_home_search_bottom">Serĉa strio malsupre</string>
     <string name="dejavu_home_search_bottom_summary">Pli facile atingebla. Laborspacoj, elŝutoj, etendaĵoj, legosignoj kaj historio moviĝas supren.</string>
+    <string name="dejavu_settings_autoclose_tabs">Aŭtomate fermi langetojn</string>
+    <string name="dejavu_settings_tabs_workspaces">Langetoj, laborspacoj kaj ujoj</string>
+    <string name="dejavu_settings_tabs_workspaces_summary">Fermo kaj dormigo de langetoj, ujoj, eka paĝo kaj ligiloj</string>
+    <string name="dejavu_settings_customize_summary">Etoso, agoj de langetoj, menuo, strioj, pasvortoj kaj lingvo</string>
+    <string name="dejavu_settings_bars_2">Strioj</string>
+    <string name="dejavu_settings_bars_summary">Retpaĝo, eka paĝo, plena ekrano, langeta strio kaj gestoj</string>
+    <string name="dejavu_settings_web_page">Retpaĝo</string>
+    <string name="dejavu_settings_full_screen">Plena ekrano</string>
+    <string name="dejavu_settings_passwords_language">Pasvortoj kaj lingvo</string>
+    <string name="dejavu_settings_passwords_language_summary">Aŭtomata plenigo, alirebleco, tradukoj kaj regiloj de AI</string>
 </resources>

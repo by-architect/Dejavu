@@ -419,14 +419,12 @@
     <string name="dejavu_protection_links">حذف ردیابی از پیوندها</string>
     <string name="dejavu_protection_hint">محافظتی که روشن است شما را امن‌تر نگه می‌دارد. هر کدام می‌گوید شما را در برابر چه چیزی محافظت می‌کند و چه چیزی ممکن است به خاطر آن از کار بیفتد.</string>
     <string name="dejavu_sync_zen_hint_unpinned">در Zen، تنظیمات و سپس همگام‌سازی را باز کنید و همگام‌سازی نوارکناری را روشن کنید.</string>
-    <string name="dejavu_settings_bars">نوارها و منو</string>
     <string name="dejavu_bars_actions_bar">نوار نشانی در بالا، نوار کنش‌ها در پایین</string>
     <string name="dejavu_bars_actions_bar_summary">برای باز کردن منوی «بیشتر»، نوار کنش‌ها را به بالا بکشید.</string>
     <string name="dejavu_bars_top">نوار نشانی در بالا</string>
     <string name="dejavu_bars_top_summary">بدون نوار کنش‌ها. برای باز کردن منوی «بیشتر»، نوار نشانی را به پایین بکشید.</string>
     <string name="dejavu_bars_bottom">نوار نشانی در پایین</string>
     <string name="dejavu_bars_bottom_summary">بدون نوار کنش‌ها. برای باز کردن منوی «بیشتر»، نوار نشانی را به بالا بکشید.</string>
-    <string name="dejavu_settings_screen">صفحه‌نمایش</string>
     <string name="dejavu_settings_hide_system_bars">پنهان کردن نوار وضعیت و نوار پیمایش</string>
     <string name="dejavu_settings_hide_system_bars_summary">هنگام نمایش یک صفحه. برای دیدن لحظه‌ای آن‌ها، از لبهٔ بالا یا پایین بکشید.</string>
     <string name="dejavu_bookmarks_export">صادر کردن به فایل</string>
@@ -471,9 +469,18 @@
     <string name="dejavu_feature_save_page">صفحه‌ها را برای خواندن بدون اینترنت ذخیره کنید</string>
     <string name="dejavu_recent_search_text">این جست‌وجو را از جست‌وجوهای اخیر حذف کنید یا همه را پاک کنید.</string>
     <string name="dejavu_recent_search_clear">پاک کردن تاریخچه جست‌وجو</string>
-    <string name="dejavu_settings_home_screen">صفحهٔ اصلی</string>
     <string name="dejavu_home_search_top">نوار جست‌وجو در بالا</string>
     <string name="dejavu_home_search_top_summary">فضاهای کاری، دانلودها، افزونه‌ها، نشانک‌ها و تاریخچه در پایین.</string>
     <string name="dejavu_home_search_bottom">نوار جست‌وجو در پایین</string>
     <string name="dejavu_home_search_bottom_summary">دسترسی آسان‌تر. فضاهای کاری، دانلودها، افزونه‌ها، نشانک‌ها و تاریخچه به بالا منتقل می‌شوند.</string>
+    <string name="dejavu_settings_autoclose_tabs">بستن خودکار زبانه‌ها</string>
+    <string name="dejavu_settings_tabs_workspaces">زبانه‌ها، فضاهای کاری و محفظه‌ها</string>
+    <string name="dejavu_settings_tabs_workspaces_summary">بستن و خواباندن زبانه‌ها، محفظه‌ها، صفحهٔ اصلی و پیوندها</string>
+    <string name="dejavu_settings_customize_summary">تم، کنش‌های زبانه، منو، نوارها، گذرواژه‌ها و زبان</string>
+    <string name="dejavu_settings_bars_2">نوارها</string>
+    <string name="dejavu_settings_bars_summary">صفحهٔ وب، صفحهٔ اصلی، تمام‌صفحه، نوار زبانه‌ها و ژست‌های حرکتی</string>
+    <string name="dejavu_settings_web_page">صفحهٔ وب</string>
+    <string name="dejavu_settings_full_screen">تمام‌صفحه</string>
+    <string name="dejavu_settings_passwords_language">گذرواژه‌ها و زبان</string>
+    <string name="dejavu_settings_passwords_language_summary">تکمیل خودکار، دسترسی‌پذیری، ترجمه‌ها و کنترل‌های هوش مصنوعی</string>
 </resources>

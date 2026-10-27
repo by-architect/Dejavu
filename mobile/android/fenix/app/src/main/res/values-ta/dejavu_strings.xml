@@ -419,14 +419,12 @@
     <string name="dejavu_protection_links">இணைப்புகளிலிருந்து பின்தொடர்தலை அகற்று</string>
     <string name="dejavu_protection_hint">இயக்கத்தில் உள்ள பாதுகாப்பு உங்களை மேலும் பாதுகாப்பாக வைத்திருக்கும். ஒவ்வொன்றும் எதிலிருந்து காக்கிறது, அதனால் எது வேலை செய்யாமல் போகலாம் என்பதைச் சொல்லும்.</string>
     <string name="dejavu_sync_zen_hint_unpinned">Zen-இல், அமைவுகளைத் திறந்து, பிறகு ஒத்திசைவைத் திறந்து, பக்கப்பட்டி ஒத்திசைவை இயக்கவும்.</string>
-    <string name="dejavu_settings_bars">பட்டைகளும் பட்டியும்</string>
     <string name="dejavu_bars_actions_bar">முகவரிப் பட்டை மேலே, செயல் பட்டை கீழே</string>
     <string name="dejavu_bars_actions_bar_summary">மேலும் பட்டியைத் திறக்க செயல் பட்டையை மேலே ஸ்வைப் செய்யவும்.</string>
     <string name="dejavu_bars_top">முகவரிப் பட்டை மேலே</string>
     <string name="dejavu_bars_top_summary">செயல் பட்டை இல்லை. மேலும் பட்டியைத் திறக்க முகவரிப் பட்டையைக் கீழே ஸ்வைப் செய்யவும்.</string>
     <string name="dejavu_bars_bottom">முகவரிப் பட்டை கீழே</string>
     <string name="dejavu_bars_bottom_summary">செயல் பட்டை இல்லை. மேலும் பட்டியைத் திறக்க முகவரிப் பட்டையை மேலே ஸ்வைப் செய்யவும்.</string>
-    <string name="dejavu_settings_screen">திரை</string>
     <string name="dejavu_settings_hide_system_bars">நிலை, வழிசெலுத்தல் பட்டிகளை மறை</string>
     <string name="dejavu_settings_hide_system_bars_summary">ஒரு பக்கம் காட்டப்படும்போது. அவற்றைச் சிறிது நேரம் பார்க்க மேல் அல்லது கீழ் விளிம்பிலிருந்து ஸ்வைப் செய்யவும்.</string>
     <string name="dejavu_bookmarks_export">கோப்புக்கு ஏற்றுமதி செய்</string>
@@ -471,9 +469,18 @@
     <string name="dejavu_feature_save_page">இணையம் இல்லாமல் படிக்க பக்கங்களைச் சேமிக்கவும்</string>
     <string name="dejavu_recent_search_text">இந்தத் தேடலை சமீபத்திய தேடல்களிலிருந்து நீக்கவும், அல்லது அனைத்தையும் அழிக்கவும்.</string>
     <string name="dejavu_recent_search_clear">தேடல் வரலாற்றை அழி</string>
-    <string name="dejavu_settings_home_screen">முகப்புத் திரை</string>
     <string name="dejavu_home_search_top">தேடல் பட்டை மேலே</string>
     <string name="dejavu_home_search_top_summary">பணியிடங்கள், பதிவிறக்கங்கள், நீட்சிகள், புத்தகக்குறிகள் மற்றும் வரலாறு கீழே இருக்கும்.</string>
     <string name="dejavu_home_search_bottom">தேடல் பட்டை கீழே</string>
     <string name="dejavu_home_search_bottom_summary">இன்னும் எளிதாக எட்டலாம். பணியிடங்கள், பதிவிறக்கங்கள், நீட்சிகள், புத்தகக்குறிகள் மற்றும் வரலாறு மேலே நகர்த்தப்படும்.</string>
+    <string name="dejavu_settings_autoclose_tabs">கீற்றுகளைத் தானாக மூடு</string>
+    <string name="dejavu_settings_tabs_workspaces">கீற்றுகள், பணியிடங்கள் மற்றும் கொள்கலன்கள்</string>
+    <string name="dejavu_settings_tabs_workspaces_summary">கீற்றுகளை மூடுதல், உறங்கவைத்தல், கொள்கலன்கள், முகப்புப் பக்கம் மற்றும் இணைப்புகள்</string>
+    <string name="dejavu_settings_customize_summary">கருப்பொருள், கீற்றுச் செயல்கள், பட்டி, பட்டைகள், கடவுச்சொற்கள் மற்றும் மொழி</string>
+    <string name="dejavu_settings_bars_2">பட்டைகள்</string>
+    <string name="dejavu_settings_bars_summary">வலைப்பக்கம், முகப்புப் பக்கம், முழு திரை, கீற்றுப் பட்டை மற்றும் சைகைகள்</string>
+    <string name="dejavu_settings_web_page">வலைப்பக்கம்</string>
+    <string name="dejavu_settings_full_screen">முழு திரை</string>
+    <string name="dejavu_settings_passwords_language">கடவுச்சொற்களும் மொழியும்</string>
+    <string name="dejavu_settings_passwords_language_summary">தானாக நிரப்புதல், அணுகுத்திறன், மொழிபெயர்ப்புகள் மற்றும் AI கட்டுப்பாடுகள்</string>
 </resources>

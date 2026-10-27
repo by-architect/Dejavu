@@ -419,14 +419,12 @@
     <string name="dejavu_protection_links">Сілтемелерден бақылауды алып тастау</string>
     <string name="dejavu_protection_hint">Қосулы қорғаныс сізді қауіпсізірек етеді. Әрқайсысы неден қорғайтынын және оның салдарынан не жұмыс істемей қалуы мүмкін екенін айтады.</string>
     <string name="dejavu_sync_zen_hint_unpinned">Zen-де Баптауларды, содан кейін Синхрондауды ашыңыз және бүйірлік тақта синхрондауын қосыңыз.</string>
-    <string name="dejavu_settings_bars">Тақталар және мәзір</string>
     <string name="dejavu_bars_actions_bar">Адрестік жолақ жоғарыда, әрекеттер тақтасы төменде</string>
     <string name="dejavu_bars_actions_bar_summary">«Көбірек» мәзірін ашу үшін әрекеттер тақтасын жоғары сырғытыңыз.</string>
     <string name="dejavu_bars_top">Адрестік жолақ жоғарыда</string>
     <string name="dejavu_bars_top_summary">Әрекеттер тақтасы жоқ. «Көбірек» мәзірін ашу үшін адрестік жолақты төмен сырғытыңыз.</string>
     <string name="dejavu_bars_bottom">Адрестік жолақ төменде</string>
     <string name="dejavu_bars_bottom_summary">Әрекеттер тақтасы жоқ. «Көбірек» мәзірін ашу үшін адрестік жолақты жоғары сырғытыңыз.</string>
-    <string name="dejavu_settings_screen">Экран</string>
     <string name="dejavu_settings_hide_system_bars">Күй және навигация жолақтарын жасыру</string>
     <string name="dejavu_settings_hide_system_bars_summary">Бет көрсетіліп тұрғанда. Оларды бір сәтке көру үшін жоғарғы не төменгі жиектен сырғытыңыз.</string>
     <string name="dejavu_bookmarks_export">Файлға экспорттау</string>
@@ -471,9 +469,18 @@
     <string name="dejavu_feature_save_page">Беттерді интернетсіз оқу үшін сақтаңыз</string>
     <string name="dejavu_recent_search_text">Бұл іздеуді соңғы іздеулерден өшіріңіз немесе барлығын тазалаңыз.</string>
     <string name="dejavu_recent_search_clear">Іздеу тарихын тазалау</string>
-    <string name="dejavu_settings_home_screen">Басты экран</string>
     <string name="dejavu_home_search_top">Іздеу жолағы жоғарыда</string>
     <string name="dejavu_home_search_top_summary">Жұмыс кеңістіктері, жүктемелер, кеңейтулер, бетбелгілер және шолу тарихы төменде.</string>
     <string name="dejavu_home_search_bottom">Іздеу жолағы төменде</string>
     <string name="dejavu_home_search_bottom_summary">Қолжетімдірек. Жұмыс кеңістіктері, жүктемелер, кеңейтулер, бетбелгілер және шолу тарихы жоғарыға көшеді.</string>
+    <string name="dejavu_settings_autoclose_tabs">Беттерді автожабу</string>
+    <string name="dejavu_settings_tabs_workspaces">Беттер, жұмыс кеңістіктері және контейнерлер</string>
+    <string name="dejavu_settings_tabs_workspaces_summary">Беттерді жабу мен ұйықтату, контейнерлер, үй парағы және сілтемелер</string>
+    <string name="dejavu_settings_customize_summary">Тема, бет әрекеттері, мәзір, жолақтар, парольдер және тіл</string>
+    <string name="dejavu_settings_bars_2">Жолақтар</string>
+    <string name="dejavu_settings_bars_summary">Веб-парақ, үй парағы, толық экран, беттер жолағы және ым қимылдар</string>
+    <string name="dejavu_settings_web_page">Веб-парақ</string>
+    <string name="dejavu_settings_full_screen">Толық экран</string>
+    <string name="dejavu_settings_passwords_language">Парольдер және тіл</string>
+    <string name="dejavu_settings_passwords_language_summary">Автотолтыру, қолжетерлілік, аудармалар және ЖИ басқару элементтері</string>
 </resources>

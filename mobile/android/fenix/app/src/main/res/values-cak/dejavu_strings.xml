@@ -419,14 +419,12 @@
     <string name="dejavu_protection_links">Tiyuj ri ojqanem pa taq ximonel</string>
     <string name="dejavu_protection_hint">Jun chajinïk tzijon yatruchajij. Chikijujunal nub\'ij chuwäch achike yatruchajij chuqa\' achike rik\'in jub\'a\' man xtisamäj ta ruma rija\'.</string>
     <string name="dejavu_sync_zen_hint_unpinned">Pa Zen, tajäq Nuk\'ulem, k\'a ri\' Junamirisanik, k\'a ri\' tatzija\' ri junamirisanik richin sidebar.</string>
-    <string name="dejavu_settings_bars">Taq kajtz\'ik chuqa\' menú</string>
     <string name="dejavu_bars_actions_bar">Kikajtz\'ik ochochib\'äl ajsik, cholaj b\'anob\'äl ikim</string>
     <string name="dejavu_bars_actions_bar_summary">Tajurula\' ri cholaj b\'anob\'äl ajsik richin najäq ri menú Ch\'aqa\' chik.</string>
     <string name="dejavu_bars_top">Kikajtz\'ik ochochib\'äl ajsik</string>
     <string name="dejavu_bars_top_summary">Majun cholaj b\'anob\'äl. Tajurula\' ri kikajtz\'ik ochochib\'äl chuxe\' richin najäq ri menú Ch\'aqa\' chik.</string>
     <string name="dejavu_bars_bottom">Kikajtz\'ik ochochib\'äl ikim</string>
     <string name="dejavu_bars_bottom_summary">Majun cholaj b\'anob\'äl. Tajurula\' ri kikajtz\'ik ochochib\'äl ajsik richin najäq ri menú Ch\'aqa\' chik.</string>
-    <string name="dejavu_settings_screen">Ruwäch</string>
     <string name="dejavu_settings_hide_system_bars">Kewewäx ri kikajtz\'ik rub\'anikil chuqa\' rub\'eyal okem</string>
     <string name="dejavu_settings_hide_system_bars_summary">Toq niwachin jun ruxaq. Tajurulaj pa ruchi\' ajsik o ikim richin ye\'atz\'ët jun ka\'i\' ramaj.</string>
     <string name="dejavu_bookmarks_export">Tik\'wäx el pa jun yakb\'äl</string>
@@ -471,9 +469,18 @@
     <string name="dejavu_feature_save_page">Tiyak taq ruxaq richin nitz\'ët mawi k\'amab\'ey</string>
     <string name="dejavu_recent_search_text">Tiyuj re kanoxïk re\' chi kech ri nimakol kekanöx, o tiyuj ronojel.</string>
     <string name="dejavu_recent_search_clear">Tiyuj natab\'äl chi kanoxïk</string>
-    <string name="dejavu_settings_home_screen">Rutikirib\'al ruwa</string>
     <string name="dejavu_home_search_top">Kikajtz\'ik kanoxïk ajsik</string>
     <string name="dejavu_home_search_top_summary">Taq samajib\'äl, taq qasanïk, taq k\'amal, taq yaketal chuqa\' natab\'äl ikim.</string>
     <string name="dejavu_home_search_bottom">Kikajtz\'ik kanoxïk ikim</string>
     <string name="dejavu_home_search_bottom_summary">Man k\'ayew ta richin nawokisaj. Taq samajib\'äl, taq qasanïk, taq k\'amal, taq yaketal chuqa\' natab\'äl yeb\'e pa ajsik.</string>
+    <string name="dejavu_settings_autoclose_tabs">Ketz\'apïx kiyon ri taq ruwi\'</string>
+    <string name="dejavu_settings_tabs_workspaces">Taq ruwi\', taq samajib\'äl chuqa\' taq k\'olib\'äl</string>
+    <string name="dejavu_settings_tabs_workspaces_summary">Ruyonil tz\'apinïk, warinäq taq ruwi\', taq k\'olib\'äl, ruxaq tikirib\'äl chuqa\' taq k\'amab\'äl</string>
+    <string name="dejavu_settings_customize_summary">Wachinel, b\'anob\'äl richin taq ruwi\', menú, taq kajtz\'ik, ewan taq tzij chuqa\' ch\'ab\'äl</string>
+    <string name="dejavu_settings_bars_2">Taq kajtz\'ik</string>
+    <string name="dejavu_settings_bars_summary">Ruxaq ajk\'amaya\'l, ruxaq tikirib\'äl, tz\'aqät ruwa, rusamajib\'al ruwi\' chuqa\' b\'anoj paläj</string>
+    <string name="dejavu_settings_web_page">Ruxaq ajk\'amaya\'l</string>
+    <string name="dejavu_settings_full_screen">Tz\'aqät ruwa</string>
+    <string name="dejavu_settings_passwords_language">Ewan taq tzij chuqa\' ch\'ab\'äl</string>
+    <string name="dejavu_settings_passwords_language_summary">Nunojisaj pa ruyonil, okel, taq tzalq\'omanïk chuqa\' IA taq samajib\'äl</string>
 </resources>

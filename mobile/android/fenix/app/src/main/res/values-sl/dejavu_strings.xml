@@ -433,14 +433,12 @@
     <string name="dejavu_protection_links">Odstrani sledenje iz povezav</string>
     <string name="dejavu_protection_hint">Vklopljena zaščita vas bolje varuje. Pri vsaki piše, pred čim vas ščiti in kaj lahko zaradi nje preneha delovati.</string>
     <string name="dejavu_sync_zen_hint_unpinned">V Zenu odprite Nastavitve, nato Sinhronizacija, in vklopite sinhronizacijo stranske vrstice.</string>
-    <string name="dejavu_settings_bars">Vrstice in meni</string>
     <string name="dejavu_bars_actions_bar">Naslovna vrstica zgoraj, vrstica dejanj spodaj</string>
     <string name="dejavu_bars_actions_bar_summary">Povlecite vrstico dejanj navzgor, da odprete meni „Več“.</string>
     <string name="dejavu_bars_top">Naslovna vrstica zgoraj</string>
     <string name="dejavu_bars_top_summary">Brez vrstice dejanj. Povlecite naslovno vrstico navzdol, da odprete meni „Več“.</string>
     <string name="dejavu_bars_bottom">Naslovna vrstica spodaj</string>
     <string name="dejavu_bars_bottom_summary">Brez vrstice dejanj. Povlecite naslovno vrstico navzgor, da odprete meni „Več“.</string>
-    <string name="dejavu_settings_screen">Zaslon</string>
     <string name="dejavu_settings_hide_system_bars">Skrij vrstici stanja in krmarjenja</string>
     <string name="dejavu_settings_hide_system_bars_summary">Med prikazom strani. Povlecite z zgornjega ali spodnjega roba, da ju za trenutek vidite.</string>
     <string name="dejavu_bookmarks_export">Izvozi v datoteko</string>
@@ -487,9 +485,18 @@
     <string name="dejavu_feature_save_page">Shranite strani za branje brez interneta</string>
     <string name="dejavu_recent_search_text">Izbrišite to iskanje iz nedavnih iskanj ali počistite vsa.</string>
     <string name="dejavu_recent_search_clear">Izbriši zgodovino iskanja</string>
-    <string name="dejavu_settings_home_screen">Domači zaslon</string>
     <string name="dejavu_home_search_top">Iskalna vrstica zgoraj</string>
     <string name="dejavu_home_search_top_summary">Delovni prostori, prenosi, razširitve, zaznamki in zgodovina spodaj.</string>
     <string name="dejavu_home_search_bottom">Iskalna vrstica spodaj</string>
     <string name="dejavu_home_search_bottom_summary">Lažje dosegljivo. Delovni prostori, prenosi, razširitve, zaznamki in zgodovina se premaknejo na vrh.</string>
+    <string name="dejavu_settings_autoclose_tabs">Samodejno zapiranje zavihkov</string>
+    <string name="dejavu_settings_tabs_workspaces">Zavihki, delovni prostori in vsebniki</string>
+    <string name="dejavu_settings_tabs_workspaces_summary">Zapiranje in uspavanje zavihkov, vsebniki, domača stran in povezave</string>
+    <string name="dejavu_settings_customize_summary">Tema, dejanja zavihkov, meni, vrstice, gesla in jezik</string>
+    <string name="dejavu_settings_bars_2">Vrstice</string>
+    <string name="dejavu_settings_bars_summary">Spletna stran, domača stran, celozaslonski način, vrstica z zavihki in poteze</string>
+    <string name="dejavu_settings_web_page">Spletna stran</string>
+    <string name="dejavu_settings_full_screen">Celozaslonski način</string>
+    <string name="dejavu_settings_passwords_language">Gesla in jezik</string>
+    <string name="dejavu_settings_passwords_language_summary">Samodejno izpolnjevanje, dostopnost, prevajanje in nadzor UI</string>
 </resources>

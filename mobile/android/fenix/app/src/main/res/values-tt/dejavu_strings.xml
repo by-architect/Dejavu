@@ -419,14 +419,12 @@
     <string name="dejavu_protection_links">Сылтамалардан күзәтүне бетерү</string>
     <string name="dejavu_protection_hint">Кабызылган саклау сезне куркынычсызрак итә. Һәрберсе нәрсәдән саклаганын һәм аның аркасында нәрсә эшләмәскә мөмкин икәнен әйтә.</string>
     <string name="dejavu_sync_zen_hint_unpinned">Zen-дә Көйләүләрне, аннары Синхронлаштыруны ачыгыз һәм як панель синхронлаштыруын кабызыгыз.</string>
-    <string name="dejavu_settings_bars">Панельләр һәм меню</string>
     <string name="dejavu_bars_actions_bar">Адрес юлы өстә, гамәлләр панеле аста</string>
     <string name="dejavu_bars_actions_bar_summary">«Тагын» менюсын ачу өчен гамәлләр панелен өскә шудырыгыз.</string>
     <string name="dejavu_bars_top">Адрес юлы өстә</string>
     <string name="dejavu_bars_top_summary">Гамәлләр панеле юк. «Тагын» менюсын ачу өчен адрес юлын аска шудырыгыз.</string>
     <string name="dejavu_bars_bottom">Адрес юлы аста</string>
     <string name="dejavu_bars_bottom_summary">Гамәлләр панеле юк. «Тагын» менюсын ачу өчен адрес юлын өскә шудырыгыз.</string>
-    <string name="dejavu_settings_screen">Экран</string>
     <string name="dejavu_settings_hide_system_bars">Хәл һәм навигация тасмаларын яшерү</string>
     <string name="dejavu_settings_hide_system_bars_summary">Бит күрсәтелгәндә. Аларны бер мизгелгә күрү өчен өске яки аскы читтән тартыгыз.</string>
     <string name="dejavu_bookmarks_export">Файлга экспортлау</string>
@@ -471,9 +469,18 @@
     <string name="dejavu_feature_save_page">Битләрне интернетсыз укыр өчен саклагыз</string>
     <string name="dejavu_recent_search_text">Бу эзләүне соңгы эзләүләрдән бетерегез яки барысын да чистартыгыз.</string>
     <string name="dejavu_recent_search_clear">Эзләү тарихын бетерү</string>
-    <string name="dejavu_settings_home_screen">Баш экран</string>
     <string name="dejavu_home_search_top">Эзләү юлы өстә</string>
     <string name="dejavu_home_search_top_summary">Эш өлкәләре, йөкләп алулар, киңәйтүләр, кыстыргычлар һәм тарих аста.</string>
     <string name="dejavu_home_search_bottom">Эзләү юлы аста</string>
     <string name="dejavu_home_search_bottom_summary">Ирешү җиңелрәк. Эш өлкәләре, йөкләп алулар, киңәйтүләр, кыстыргычлар һәм тарих өскә күчә.</string>
+    <string name="dejavu_settings_autoclose_tabs">Табларны автоматик ябу</string>
+    <string name="dejavu_settings_tabs_workspaces">Таблар, эш өлкәләре һәм контейнерләр</string>
+    <string name="dejavu_settings_tabs_workspaces_summary">Табларны ябу һәм йоклату, контейнерләр, баш бит һәм сылтамалар</string>
+    <string name="dejavu_settings_customize_summary">Тема, таб гамәлләре, меню, панельләр, серсүзләр һәм тел</string>
+    <string name="dejavu_settings_bars_2">Панельләр</string>
+    <string name="dejavu_settings_bars_summary">Веб-бит, баш бит, тулы экран, таблар панеле һәм ишарәләр</string>
+    <string name="dejavu_settings_web_page">Веб-бит</string>
+    <string name="dejavu_settings_full_screen">Тулы экран</string>
+    <string name="dejavu_settings_passwords_language">Серсүзләр һәм тел</string>
+    <string name="dejavu_settings_passwords_language_summary">Автотутыру, кулайлык, тәрҗемәләр һәм ЯИ белән идарә итү</string>
 </resources>

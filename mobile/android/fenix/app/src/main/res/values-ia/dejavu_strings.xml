@@ -419,14 +419,12 @@
     <string name="dejavu_protection_links">Remover le traciamento del ligamines</string>
     <string name="dejavu_protection_hint">Un protection active te mantene plus secur. Cata una dice contra que illo protege e lo que pote cessar de functionar a causa de illo.</string>
     <string name="dejavu_sync_zen_hint_unpinned">In Zen, aperi Parametros, postea Synchronisation, e activa le synchronisation del barra lateral.</string>
-    <string name="dejavu_settings_bars">Barras e menu</string>
     <string name="dejavu_bars_actions_bar">Barra de adresse in alto, barra de actiones in basso</string>
     <string name="dejavu_bars_actions_bar_summary">Glissa le barra de actiones verso alto pro aperir le menu ‘Plus’.</string>
     <string name="dejavu_bars_top">Barra de adresse in alto</string>
     <string name="dejavu_bars_top_summary">Nulle barra de actiones. Glissa le barra de adresse verso basso pro aperir le menu ‘Plus’.</string>
     <string name="dejavu_bars_bottom">Barra de adresse in basso</string>
     <string name="dejavu_bars_bottom_summary">Nulle barra de actiones. Glissa le barra de adresse verso alto pro aperir le menu ‘Plus’.</string>
-    <string name="dejavu_settings_screen">Schermo</string>
     <string name="dejavu_settings_hide_system_bars">Celar le barras de stato e de navigation</string>
     <string name="dejavu_settings_hide_system_bars_summary">Durante que un pagina es monstrate. Glissa ab le bordo superior o inferior pro vider los un momento.</string>
     <string name="dejavu_bookmarks_export">Exportar a file</string>
@@ -471,9 +469,18 @@
     <string name="dejavu_feature_save_page">Salva paginas pro leger los sin internet</string>
     <string name="dejavu_recent_search_text">Dele iste recerca de tu recercas recente, o rade los omnes.</string>
     <string name="dejavu_recent_search_clear">Rader le chronologia de recercas</string>
-    <string name="dejavu_settings_home_screen">Schermo initial</string>
     <string name="dejavu_home_search_top">Barra de recerca in alto</string>
     <string name="dejavu_home_search_top_summary">Spatios de labor, discargamentos, extensiones, marcapaginas e chronologia in basso.</string>
     <string name="dejavu_home_search_bottom">Barra de recerca in basso</string>
     <string name="dejavu_home_search_bottom_summary">Plus facile a attinger. Spatios de labor, discargamentos, extensiones, marcapaginas e chronologia se move in alto.</string>
+    <string name="dejavu_settings_autoclose_tabs">Auto-clauder schedas</string>
+    <string name="dejavu_settings_tabs_workspaces">Schedas, spatios de labor e recipientes</string>
+    <string name="dejavu_settings_tabs_workspaces_summary">Clauder e addormir schedas, recipientes, pagina initial e ligamines</string>
+    <string name="dejavu_settings_customize_summary">Thema, actiones de schedas, menu, barras, contrasignos e lingua</string>
+    <string name="dejavu_settings_bars_2">Barras</string>
+    <string name="dejavu_settings_bars_summary">Pagina web, pagina initial, plen schermo, barra de schedas e gestos</string>
+    <string name="dejavu_settings_web_page">Pagina web</string>
+    <string name="dejavu_settings_full_screen">Plen schermo</string>
+    <string name="dejavu_settings_passwords_language">Contrasignos e lingua</string>
+    <string name="dejavu_settings_passwords_language_summary">Autoplenar, accessibilitate, traductiones e controlos de IA</string>
 </resources>

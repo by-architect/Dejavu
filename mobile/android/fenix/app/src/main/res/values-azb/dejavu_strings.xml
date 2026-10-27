@@ -419,14 +419,12 @@
     <string name="dejavu_protection_links">لینک‌لردن ایزله‌مه‌نی سیل</string>
     <string name="dejavu_protection_hint">آچیق اولان قوروما سیزی داها گوونلی ساخلاییر. هر بیری نه‌دن قورودوغونو و اونون اوزوندن نه‌یین ایشله‌مه‌یی دایاندیرا بیله‌جگینی دئییر.</string>
     <string name="dejavu_sync_zen_hint_unpinned">Zen-ده تنظیم‌لری، سونرا همگام‌سازینی آچین و یان پانل همگام‌سازی‌سینی فعاللاشدیرین.</string>
-    <string name="dejavu_settings_bars">پانئل‌لر و منو</string>
     <string name="dejavu_bars_actions_bar">آدرس چوبوغو یوخاریدا، عملیات‌لار پانئلی آشاغیدا</string>
     <string name="dejavu_bars_actions_bar_summary">«داها چوخ» منوسونو آچماق اوچون عملیات‌لار پانئلینی یوخاری سوروشدورون.</string>
     <string name="dejavu_bars_top">آدرس چوبوغو یوخاریدا</string>
     <string name="dejavu_bars_top_summary">عملیات‌لار پانئلی یوخدور. «داها چوخ» منوسونو آچماق اوچون آدرس چوبوغونو آشاغی سوروشدورون.</string>
     <string name="dejavu_bars_bottom">آدرس چوبوغو آشاغیدا</string>
     <string name="dejavu_bars_bottom_summary">عملیات‌لار پانئلی یوخدور. «داها چوخ» منوسونو آچماق اوچون آدرس چوبوغونو یوخاری سوروشدورون.</string>
-    <string name="dejavu_settings_screen">اکران</string>
     <string name="dejavu_settings_hide_system_bars">وضعیت و ناویقاسیا پانل‌لرینی گیزلت</string>
     <string name="dejavu_settings_hide_system_bars_summary">بیر صفحه گؤستریلنده. اونلاری بیر آن گؤرمک اوچون یوخاری یا آشاغی قیراغیندان سوروشدورون.</string>
     <string name="dejavu_bookmarks_export">فایلا ایخراج ات</string>
@@ -471,9 +469,18 @@
     <string name="dejavu_feature_save_page">صفحه‌لری اینترنئتسیز اوخوماق اوچون ساخلایین</string>
     <string name="dejavu_recent_search_text">بو آختاریشی سون آختاریشلاردان سیل، یا هامیسینی تمیزله.</string>
     <string name="dejavu_recent_search_clear">آختاریش گئچمیشینی سیل</string>
-    <string name="dejavu_settings_home_screen">آنا اکران</string>
     <string name="dejavu_home_search_top">آختاریش چوبوغو یوخاریدا</string>
     <string name="dejavu_home_search_top_summary">ایش ساحه‌لری، یئندیرنلر، اوزانتی‌لار، بوکمارک‌لار و گئچمیش آشاغیدا.</string>
     <string name="dejavu_home_search_bottom">آختاریش چوبوغو آشاغیدا</string>
     <string name="dejavu_home_search_bottom_summary">چاتماق داها آساندیر. ایش ساحه‌لری، یئندیرنلر، اوزانتی‌لار، بوکمارک‌لار و گئچمیش یوخاریا کؤچورولور.</string>
+    <string name="dejavu_settings_autoclose_tabs">تاغلاری اوتوماتیک باغلا</string>
+    <string name="dejavu_settings_tabs_workspaces">تاغلار، ایش ساحه‌لری و کانتینرلر</string>
+    <string name="dejavu_settings_tabs_workspaces_summary">تاغلارین باغلانماسی و یوخوسو، کانتینرلر، آنایارپاق و لینکلر</string>
+    <string name="dejavu_settings_customize_summary">تم، تاغ عملیات‌لاری، منو، چوبوقلار، رمز‌لر و دیل</string>
+    <string name="dejavu_settings_bars_2">چوبوقلار</string>
+    <string name="dejavu_settings_bars_summary">وب صفحه، آنایارپاق، بوتون صفحه، تاغ چوبوغو و ایشاره‌لر</string>
+    <string name="dejavu_settings_web_page">وب صفحه</string>
+    <string name="dejavu_settings_full_screen">بوتون صفحه</string>
+    <string name="dejavu_settings_passwords_language">رمز‌لر و دیل</string>
+    <string name="dejavu_settings_passwords_language_summary">اؤز اؤزونه دوْلدورما، اَل چاتانلیق، ترجومه‌لر و AI کونترول‌لاری</string>
 </resources>

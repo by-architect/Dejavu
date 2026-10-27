@@ -419,14 +419,12 @@
     <string name="dejavu_protection_links">Nyomkövetés eltávolítása a hivatkozásokból</string>
     <string name="dejavu_protection_hint">A bekapcsolt védelem nagyobb biztonságot ad. Mindegyik megmondja, mi ellen véd, és mi állhat le miatta.</string>
     <string name="dejavu_sync_zen_hint_unpinned">A Zenben nyissa meg a Beállításokat, majd a Szinkronizálást, és kapcsolja be az oldalsó sáv szinkronizálását.</string>
-    <string name="dejavu_settings_bars">Sávok és menü</string>
     <string name="dejavu_bars_actions_bar">Címsáv felül, műveletsáv alul</string>
     <string name="dejavu_bars_actions_bar_summary">Húzza felfelé a műveletsávot a Továbbiak menü megnyitásához.</string>
     <string name="dejavu_bars_top">Címsáv felül</string>
     <string name="dejavu_bars_top_summary">Nincs műveletsáv. Húzza lefelé a címsávot a Továbbiak menü megnyitásához.</string>
     <string name="dejavu_bars_bottom">Címsáv alul</string>
     <string name="dejavu_bars_bottom_summary">Nincs műveletsáv. Húzza felfelé a címsávot a Továbbiak menü megnyitásához.</string>
-    <string name="dejavu_settings_screen">Képernyő</string>
     <string name="dejavu_settings_hide_system_bars">Állapotsor és navigációs sáv elrejtése</string>
     <string name="dejavu_settings_hide_system_bars_summary">Amíg egy oldal látható. Húzza be az ujját a felső vagy alsó szélről, hogy egy pillanatra lássa őket.</string>
     <string name="dejavu_bookmarks_export">Exportálás fájlba</string>
@@ -471,9 +469,18 @@
     <string name="dejavu_feature_save_page">Mentse az oldalakat, hogy internet nélkül olvashassa őket</string>
     <string name="dejavu_recent_search_text">Törölje ezt a keresést a legutóbbi keresések közül, vagy törölje az összeset.</string>
     <string name="dejavu_recent_search_clear">Keresési előzmények törlése</string>
-    <string name="dejavu_settings_home_screen">Kezdőképernyő</string>
     <string name="dejavu_home_search_top">Keresősáv felül</string>
     <string name="dejavu_home_search_top_summary">Munkaterületek, letöltések, kiegészítők, könyvjelzők és előzmények alul.</string>
     <string name="dejavu_home_search_bottom">Keresősáv alul</string>
     <string name="dejavu_home_search_bottom_summary">Könnyebben elérhető. A munkaterületek, letöltések, kiegészítők, könyvjelzők és előzmények felülre kerülnek.</string>
+    <string name="dejavu_settings_autoclose_tabs">Lapok automatikus bezárása</string>
+    <string name="dejavu_settings_tabs_workspaces">Lapok, munkaterületek és konténerek</string>
+    <string name="dejavu_settings_tabs_workspaces_summary">Lapok bezárása és elaltatása, konténerek, kezdőlap és hivatkozások</string>
+    <string name="dejavu_settings_customize_summary">Téma, lapműveletek, menü, sávok, jelszavak és nyelv</string>
+    <string name="dejavu_settings_bars_2">Sávok</string>
+    <string name="dejavu_settings_bars_summary">Weboldal, kezdőlap, teljes képernyő, lapsáv és kézmozdulatok</string>
+    <string name="dejavu_settings_web_page">Weboldal</string>
+    <string name="dejavu_settings_full_screen">Teljes képernyő</string>
+    <string name="dejavu_settings_passwords_language">Jelszavak és nyelv</string>
+    <string name="dejavu_settings_passwords_language_summary">Automatikus kitöltés, akadálymentesítés, fordítások és MI vezérlők</string>
 </resources>

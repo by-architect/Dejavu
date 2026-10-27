@@ -419,14 +419,12 @@
     <string name="dejavu_protection_links">ئۇلانمىلاردىكى ئىز قوغلاشنى چىقىرىۋېتىدۇ</string>
     <string name="dejavu_protection_hint">ئوچۇق تۇرغان قوغداش سىزنى تېخىمۇ بىخەتەر قىلىدۇ. ھەر بىرى نېمىدىن قوغدايدىغانلىقىنى ۋە ئۇنىڭ سەۋەبىدىن نېمىلەرنىڭ ئىشلىمەي قېلىشى مۇمكىنلىكىنى ئېيتىدۇ.</string>
     <string name="dejavu_sync_zen_hint_unpinned">Zen دا تەڭشەكنى، ئاندىن قەدەمداشلاشنى ئېچىڭ ۋە يان پانېل قەدەمداشلىشىنى ئېچىڭ.</string>
-    <string name="dejavu_settings_bars">بالداقلار ۋە تىزىملىك</string>
     <string name="dejavu_bars_actions_bar">ئادرېس بالدىقى يۇقىرىدا، مەشغۇلات بالدىقى تۆۋەندە</string>
     <string name="dejavu_bars_actions_bar_summary">«تېخىمۇ كۆپ» تىزىملىكىنى ئېچىش ئۈچۈن مەشغۇلات بالدىقىنى ئۈستىگە سۈرۈڭ.</string>
     <string name="dejavu_bars_top">ئادرېس بالدىقى يۇقىرىدا</string>
     <string name="dejavu_bars_top_summary">مەشغۇلات بالدىقى يوق. «تېخىمۇ كۆپ» تىزىملىكىنى ئېچىش ئۈچۈن ئادرېس بالدىقىنى ئاستىغا سۈرۈڭ.</string>
     <string name="dejavu_bars_bottom">ئادرېس بالدىقى تۆۋەندە</string>
     <string name="dejavu_bars_bottom_summary">مەشغۇلات بالدىقى يوق. «تېخىمۇ كۆپ» تىزىملىكىنى ئېچىش ئۈچۈن ئادرېس بالدىقىنى ئۈستىگە سۈرۈڭ.</string>
-    <string name="dejavu_settings_screen">ئېكران</string>
     <string name="dejavu_settings_hide_system_bars">ھالەت ۋە يول باشلاش بالدىقىنى يوشۇرۇش</string>
     <string name="dejavu_settings_hide_system_bars_summary">بەت كۆرسىتىلىۋاتقاندا. ئۇلارنى بىر دەم كۆرۈش ئۈچۈن ئۈستى ياكى ئاستى گىرۋىكىدىن سىيرىڭ.</string>
     <string name="dejavu_bookmarks_export">ھۆججەتكە چىقار</string>
@@ -471,9 +469,18 @@
     <string name="dejavu_feature_save_page">ئىنتېرنېتسىز ئوقۇش ئۈچۈن بەتلەرنى ساقلاڭ</string>
     <string name="dejavu_recent_search_text">بۇ ئىزدەشنى يېقىنقى ئىزدەشتىن ئۆچۈرۈڭ ياكى ھەممىسىنى تازىلاڭ.</string>
     <string name="dejavu_recent_search_clear">ئىزدەش تارىخىنى ئۆچۈرۈش</string>
-    <string name="dejavu_settings_home_screen">باش ئېكران</string>
     <string name="dejavu_home_search_top">ئىزدەش بالدىقى يۇقىرىدا</string>
     <string name="dejavu_home_search_top_summary">خىزمەت دائىرىلىرى، چۈشۈرۈلمىلەر، كېڭەيتمىلەر، خەتكۈچلەر ۋە تارىخ تۆۋەندە.</string>
     <string name="dejavu_home_search_bottom">ئىزدەش بالدىقى تۆۋەندە</string>
     <string name="dejavu_home_search_bottom_summary">يېتىشى ئاسانراق. خىزمەت دائىرىلىرى، چۈشۈرۈلمىلەر، كېڭەيتمىلەر، خەتكۈچلەر ۋە تارىخ يۇقىرىغا يۆتكىلىدۇ.</string>
+    <string name="dejavu_settings_autoclose_tabs">بەتكۈچلەرنى ئاپتوماتىك ياپ</string>
+    <string name="dejavu_settings_tabs_workspaces">بەتكۈچلەر، خىزمەت دائىرىلىرى ۋە قاچىلار</string>
+    <string name="dejavu_settings_tabs_workspaces_summary">بەتكۈچلەرنى يېپىش ۋە ئۇخلىتىش، قاچىلار، باشبەت ۋە ئۇلانمىلار</string>
+    <string name="dejavu_settings_customize_summary">ئۇسلۇب، بەتكۈچ مەشغۇلاتلىرى، تىزىملىك، بالداقلار، ئىم ۋە تىل</string>
+    <string name="dejavu_settings_bars_2">بالداقلار</string>
+    <string name="dejavu_settings_bars_summary">تور بەت، باشبەت، پۈتۈن ئېكران، بەتكۈچ بالداق ۋە قول ئىشارىسى</string>
+    <string name="dejavu_settings_web_page">تور بەت</string>
+    <string name="dejavu_settings_full_screen">پۈتۈن ئېكران</string>
+    <string name="dejavu_settings_passwords_language">ئىم ۋە تىل</string>
+    <string name="dejavu_settings_passwords_language_summary">ئاپتوماتىك تولدۇر، قۇلايلىقلار، تەرجىمە ۋە سۈنئىي ئەقىل تىزگىنى</string>
 </resources>

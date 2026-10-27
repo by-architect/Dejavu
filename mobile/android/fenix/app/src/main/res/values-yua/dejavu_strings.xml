@@ -419,14 +419,12 @@
     <string name="dejavu_protection_links">Quitar el rastreo de los enlaces</string>
     <string name="dejavu_protection_hint">Jump\'éel kanáantaj activado ku kanáantikech maas ma\'alob. Cada jump\'éel ku ya\'alik ba\'ax ku bloqueartik yéetel ba\'ax je\'el u xu\'ulul u meyaj tu yo\'olal.</string>
     <string name="dejavu_sync_zen_hint_unpinned">En Zen, abre Configuración, luego Sincronización, y activa la sincronización de la barra lateral.</string>
-    <string name="dejavu_settings_bars">Barras yéetel menú</string>
     <string name="dejavu_bars_actions_bar">Barra de direcciones arriba, barra de acciones abajo</string>
     <string name="dejavu_bars_actions_bar_summary">Desliza hacia arriba la barra de acciones para abrir el menú Más.</string>
     <string name="dejavu_bars_top">Barra de direcciones arriba</string>
     <string name="dejavu_bars_top_summary">Mina\'an barra de acciones. Desliza hacia abajo la barra de direcciones para abrir el menú Más.</string>
     <string name="dejavu_bars_bottom">Barra de direcciones abajo</string>
     <string name="dejavu_bars_bottom_summary">Mina\'an barra de acciones. Desliza hacia arriba la barra de direcciones para abrir el menú Más.</string>
-    <string name="dejavu_settings_screen">Pantalla</string>
     <string name="dejavu_settings_hide_system_bars">Ocultar las barras de estado y de navegación</string>
     <string name="dejavu_settings_hide_system_bars_summary">Mientras se muestra una página. Desliza desde el borde superior o inferior para verlas un momento.</string>
     <string name="dejavu_bookmarks_export">Exportar a archivo</string>
@@ -471,9 +469,18 @@
     <string name="dejavu_feature_save_page">Guarda páginas para leerlas sin internet</string>
     <string name="dejavu_recent_search_text">Quita esta búsqueda de tus búsquedas recientes, o borra todas.</string>
     <string name="dejavu_recent_search_clear">Borrar historial de búsquedas</string>
-    <string name="dejavu_settings_home_screen">Pantalla de inicio</string>
     <string name="dejavu_home_search_top">Barra de búsqueda arriba</string>
     <string name="dejavu_home_search_top_summary">Espacios de trabajo, descargas, extensiones, marcadores yéetel historial abajo.</string>
     <string name="dejavu_home_search_bottom">Barra de búsqueda abajo</string>
     <string name="dejavu_home_search_bottom_summary">Más fácil de alcanzar. Espacios de trabajo, descargas, extensiones, marcadores yéetel historial se mueven arriba.</string>
+    <string name="dejavu_settings_autoclose_tabs">Cierre automático de pestañas</string>
+    <string name="dejavu_settings_tabs_workspaces">Pestañas, espacios de trabajo yéetel contenedores</string>
+    <string name="dejavu_settings_tabs_workspaces_summary">Cerrar y dormir pestañas, contenedores, página de inicio yéetel enlaces</string>
+    <string name="dejavu_settings_customize_summary">Tema, acciones de pestaña, menú, barras, contraseñas yéetel idioma</string>
+    <string name="dejavu_settings_bars_2">Barras</string>
+    <string name="dejavu_settings_bars_summary">Página web, página de inicio, pantalla completa, barra de pestañas yéetel gestos</string>
+    <string name="dejavu_settings_web_page">Página web</string>
+    <string name="dejavu_settings_full_screen">Pantalla completa</string>
+    <string name="dejavu_settings_passwords_language">Contraseñas yéetel idioma</string>
+    <string name="dejavu_settings_passwords_language_summary">Autocompletar, accesibilidad, traducciones yéetel controles de IA</string>
 </resources>

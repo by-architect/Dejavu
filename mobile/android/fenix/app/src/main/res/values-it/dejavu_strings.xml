@@ -419,14 +419,12 @@
     <string name="dejavu_protection_links">Rimuovi il tracciamento dai link</string>
     <string name="dejavu_protection_hint">Una protezione attiva aumenta la tua sicurezza. Ognuna spiega da cosa ti protegge e cosa potrebbe smettere di funzionare a causa sua.</string>
     <string name="dejavu_sync_zen_hint_unpinned">In Zen, apri Impostazioni, poi Sincronizzazione, e attiva la sincronizzazione della barra laterale.</string>
-    <string name="dejavu_settings_bars">Barre e menu</string>
     <string name="dejavu_bars_actions_bar">Barra degli indirizzi in alto, barra delle azioni in basso</string>
     <string name="dejavu_bars_actions_bar_summary">Scorri verso l’alto la barra delle azioni per aprire il menu «Altro».</string>
     <string name="dejavu_bars_top">Barra degli indirizzi in alto</string>
     <string name="dejavu_bars_top_summary">Nessuna barra delle azioni. Scorri verso il basso la barra degli indirizzi per aprire il menu «Altro».</string>
     <string name="dejavu_bars_bottom">Barra degli indirizzi in basso</string>
     <string name="dejavu_bars_bottom_summary">Nessuna barra delle azioni. Scorri verso l’alto la barra degli indirizzi per aprire il menu «Altro».</string>
-    <string name="dejavu_settings_screen">Schermo</string>
     <string name="dejavu_settings_hide_system_bars">Nascondi le barre di stato e di navigazione</string>
     <string name="dejavu_settings_hide_system_bars_summary">Mentre è visualizzata una pagina. Scorri dal bordo superiore o inferiore per vederle per un momento.</string>
     <string name="dejavu_bookmarks_export">Esporta su file</string>
@@ -471,9 +469,18 @@
     <string name="dejavu_feature_save_page">Salva le pagine per leggerle senza internet</string>
     <string name="dejavu_recent_search_text">Elimina questa ricerca dalle ricerche recenti oppure cancellale tutte.</string>
     <string name="dejavu_recent_search_clear">Cancella cronologia delle ricerche</string>
-    <string name="dejavu_settings_home_screen">Schermata iniziale</string>
     <string name="dejavu_home_search_top">Barra di ricerca in alto</string>
     <string name="dejavu_home_search_top_summary">Spazi, download, estensioni, segnalibri e cronologia in basso.</string>
     <string name="dejavu_home_search_bottom">Barra di ricerca in basso</string>
     <string name="dejavu_home_search_bottom_summary">Più facile da raggiungere. Spazi, download, estensioni, segnalibri e cronologia si spostano in alto.</string>
+    <string name="dejavu_settings_autoclose_tabs">Chiusura automatica delle schede</string>
+    <string name="dejavu_settings_tabs_workspaces">Schede, spazi e contenitori</string>
+    <string name="dejavu_settings_tabs_workspaces_summary">Chiusura e sospensione delle schede, contenitori, pagina iniziale e link</string>
+    <string name="dejavu_settings_customize_summary">Tema, azioni sulle schede, menu, barre, password e lingua</string>
+    <string name="dejavu_settings_bars_2">Barre</string>
+    <string name="dejavu_settings_bars_summary">Pagina web, pagina iniziale, schermo intero, barra delle schede e gesti</string>
+    <string name="dejavu_settings_web_page">Pagina web</string>
+    <string name="dejavu_settings_full_screen">Schermo intero</string>
+    <string name="dejavu_settings_passwords_language">Password e lingua</string>
+    <string name="dejavu_settings_passwords_language_summary">Compilazione automatica, accessibilità, traduzioni e controlli IA</string>
 </resources>

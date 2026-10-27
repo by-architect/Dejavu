@@ -412,14 +412,12 @@
     <string name="dejavu_protection_links">Yọ ìtọpasẹ̀ kúrò nínú àwọn líǹkì</string>
     <string name="dejavu_protection_hint">Ààbò tí ó wà ní títàn ń jẹ́ kí o túbọ̀ wà láìléwu. Ọ̀kọ̀ọ̀kan sọ ohun tí ó ń dáàbò bò ọ́ lọ́wọ́ rẹ̀ àti ohun tí ó lè má ṣiṣẹ́ mọ́ nítorí rẹ̀.</string>
     <string name="dejavu_sync_zen_hint_unpinned">Nínú Zen, ṣí Settings, lẹ́yìn náà Sync, kí o sì tan sidebar sync.</string>
-    <string name="dejavu_settings_bars">Àwọn Ọ̀pá àti Menu</string>
     <string name="dejavu_bars_actions_bar">Ọ̀pá Àdírẹ́sì lókè, Ọ̀pá Iṣe ní ìsàlẹ̀</string>
     <string name="dejavu_bars_actions_bar_summary">Fa Ọ̀pá Iṣe sókè láti ṣí Menu Àfikún.</string>
     <string name="dejavu_bars_top">Ọ̀pá Àdírẹ́sì lókè</string>
     <string name="dejavu_bars_top_summary">Kò sí Ọ̀pá Iṣe. Fa Ọ̀pá Àdírẹ́sì sísàlẹ̀ láti ṣí Menu Àfikún.</string>
     <string name="dejavu_bars_bottom">Ọ̀pá Àdírẹ́sì ní ìsàlẹ̀</string>
     <string name="dejavu_bars_bottom_summary">Kò sí Ọ̀pá Iṣe. Fa Ọ̀pá Àdírẹ́sì sókè láti ṣí Menu Àfikún.</string>
-    <string name="dejavu_settings_screen">Ojú ìbòjú</string>
     <string name="dejavu_settings_hide_system_bars">Fi ọ̀pá ipò àti ọ̀pá ìtọ́sọ́nà pamọ́</string>
     <string name="dejavu_settings_hide_system_bars_summary">Nígbà tí ojú-ìwé kan bá ń hàn. Ra wọlé láti etí òkè tàbí ìsàlẹ̀ láti rí wọn fún ìṣẹ́jú kan.</string>
     <string name="dejavu_bookmarks_export">Kó jáde sí fáìlì</string>
@@ -463,9 +461,18 @@
     <string name="dejavu_feature_save_page">Fi àwọn ojú-ìwé pamọ́ láti kà láìsí íńtánẹ́ẹ̀tì</string>
     <string name="dejavu_recent_search_text">Pa ìwádìí yìí rẹ́ kúrò nínú àwọn ìwádìí àìpẹ́ yìí, tàbí pa gbogbo wọn rẹ́.</string>
     <string name="dejavu_recent_search_clear">Pa ìtàn ìwádìí rẹ́</string>
-    <string name="dejavu_settings_home_screen">Ojú ìbòjú ilé</string>
     <string name="dejavu_home_search_top">Ọ̀pá Ìwádìí lókè</string>
     <string name="dejavu_home_search_top_summary">Àwọn ibi-iṣẹ́, àwọn ìgbàsílẹ̀, àwọn ìfikún, àwọn àmì-ìwé àti ìtàn wà ní ìsàlẹ̀.</string>
     <string name="dejavu_home_search_bottom">Ọ̀pá Ìwádìí ní ìsàlẹ̀</string>
     <string name="dejavu_home_search_bottom_summary">Ó rọrùn sí i láti dé. Àwọn ibi-iṣẹ́, àwọn ìgbàsílẹ̀, àwọn ìfikún, àwọn àmì-ìwé àti ìtàn yóò lọ sí òkè.</string>
+    <string name="dejavu_settings_autoclose_tabs">Pa àwọn táàbù dé láìfọwọ́ yi</string>
+    <string name="dejavu_settings_tabs_workspaces">Àwọn táàbù, àwọn ibi-iṣẹ́ àti àwọn container</string>
+    <string name="dejavu_settings_tabs_workspaces_summary">Títì àti sísùn àwọn táàbù, àwọn container, ojú ìwé ìbẹ̀rẹ̀ àti àwọn líǹkì</string>
+    <string name="dejavu_settings_customize_summary">Kókó, àwọn iṣe táàbù, menu, àwọn ọ̀pá, àwọn ọ̀rọ̀ ìgbaniwọlé àti èdè</string>
+    <string name="dejavu_settings_bars_2">Àwọn Ọ̀pá</string>
+    <string name="dejavu_settings_bars_summary">Ojú-ìwé wẹ́ẹ̀bù, ojú ìwé ìbẹ̀rẹ̀, ìwòran gbogbogbò, ọ̀pá táàbù àti àwọn ìfarajúwèé</string>
+    <string name="dejavu_settings_web_page">Ojú-ìwé wẹ́ẹ̀bù</string>
+    <string name="dejavu_settings_full_screen">Ìwòran gbogbogbò</string>
+    <string name="dejavu_settings_passwords_language">Àwọn ọ̀rọ̀ ìgbaniwọlé àti èdè</string>
+    <string name="dejavu_settings_passwords_language_summary">Fi si láìfọwọ́ yi, ìgbaniláàyè, àwọn ìtúmọ̀ àti ìṣàkóso AI</string>
 </resources>

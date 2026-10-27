@@ -419,14 +419,12 @@
     <string name="dejavu_protection_links">Tracking uit links verwijderen</string>
     <string name="dejavu_protection_hint">Een bescherming die aan staat, houdt je veiliger. Bij elke bescherming staat waartegen ze beschermt en wat er daardoor mogelijk niet meer werkt.</string>
     <string name="dejavu_sync_zen_hint_unpinned">Open in Zen Instellingen, dan Synchronisatie, en zet synchronisatie van de zijbalk aan.</string>
-    <string name="dejavu_settings_bars">Balken en menu</string>
     <string name="dejavu_bars_actions_bar">Adresbalk bovenaan, actiebalk onderaan</string>
     <string name="dejavu_bars_actions_bar_summary">Veeg de actiebalk omhoog om het menu “Meer” te openen.</string>
     <string name="dejavu_bars_top">Adresbalk bovenaan</string>
     <string name="dejavu_bars_top_summary">Geen actiebalk. Veeg de adresbalk omlaag om het menu “Meer” te openen.</string>
     <string name="dejavu_bars_bottom">Adresbalk onderaan</string>
     <string name="dejavu_bars_bottom_summary">Geen actiebalk. Veeg de adresbalk omhoog om het menu “Meer” te openen.</string>
-    <string name="dejavu_settings_screen">Scherm</string>
     <string name="dejavu_settings_hide_system_bars">Status- en navigatiebalk verbergen</string>
     <string name="dejavu_settings_hide_system_bars_summary">Terwijl een pagina wordt getoond. Veeg vanaf de boven- of onderrand om ze even te zien.</string>
     <string name="dejavu_bookmarks_export">Naar bestand exporteren</string>
@@ -471,9 +469,18 @@
     <string name="dejavu_feature_save_page">Sla pagina\'s op om zonder internet te lezen</string>
     <string name="dejavu_recent_search_text">Verwijder deze zoekopdracht uit je recente zoekopdrachten of wis ze allemaal.</string>
     <string name="dejavu_recent_search_clear">Zoekgeschiedenis wissen</string>
-    <string name="dejavu_settings_home_screen">Startscherm</string>
     <string name="dejavu_home_search_top">Zoekbalk bovenaan</string>
     <string name="dejavu_home_search_top_summary">Werkruimtes, downloads, extensies, bladwijzers en geschiedenis onderaan.</string>
     <string name="dejavu_home_search_bottom">Zoekbalk onderaan</string>
     <string name="dejavu_home_search_bottom_summary">Makkelijker te bereiken. Werkruimtes, downloads, extensies, bladwijzers en geschiedenis verplaatsen naar boven.</string>
+    <string name="dejavu_settings_autoclose_tabs">Tabbladen automatisch sluiten</string>
+    <string name="dejavu_settings_tabs_workspaces">Tabbladen, werkruimtes en containers</string>
+    <string name="dejavu_settings_tabs_workspaces_summary">Tabbladen sluiten en laten slapen, containers, startpagina en links</string>
+    <string name="dejavu_settings_customize_summary">Thema, tabbladacties, menu, balken, wachtwoorden en taal</string>
+    <string name="dejavu_settings_bars_2">Balken</string>
+    <string name="dejavu_settings_bars_summary">Webpagina, startpagina, volledig scherm, tabbladenbalk en bewegingen</string>
+    <string name="dejavu_settings_web_page">Webpagina</string>
+    <string name="dejavu_settings_full_screen">Volledig scherm</string>
+    <string name="dejavu_settings_passwords_language">Wachtwoorden en taal</string>
+    <string name="dejavu_settings_passwords_language_summary">Automatisch invullen, toegankelijkheid, vertalingen en AI-bedieningselementen</string>
 </resources>

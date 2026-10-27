@@ -419,14 +419,12 @@
     <string name="dejavu_protection_links">دراوردن ردیابی ز لینکیل</string>
     <string name="dejavu_protection_hint">هر محافظتی که روشن بوئه، تو ن امن‌تر نگه مئداره. هر کدوم مئگه ز چی محافظت مئکنه و چی ممکنه سی اون ز کار بکفه.</string>
     <string name="dejavu_sync_zen_hint_unpinned">من Zen، «سامووا» ره وا کو، بعد «همگام کردن»، و همگام کردن نوار پهلو ره روشن کو.</string>
-    <string name="dejavu_settings_bars">نوار یل و منو</string>
     <string name="dejavu_bars_actions_bar">نوار نشۊوی بالا، نوار کار یل ژیر</string>
     <string name="dejavu_bars_actions_bar_summary">سی واز کردن منوی دیه، نوار کار یل ن و بالا بکش.</string>
     <string name="dejavu_bars_top">نوار نشۊوی بالا</string>
     <string name="dejavu_bars_top_summary">بدون نوار کار یل. سی واز کردن منوی دیه، نوار نشۊوی ن و پایین بکش.</string>
     <string name="dejavu_bars_bottom">نوار نشۊوی ژیر</string>
     <string name="dejavu_bars_bottom_summary">بدون نوار کار یل. سی واز کردن منوی دیه، نوار نشۊوی ن و بالا بکش.</string>
-    <string name="dejavu_settings_screen">صفحه نمایش</string>
     <string name="dejavu_settings_hide_system_bars">قایم کردن نوار وضعیت و ناوبری</string>
     <string name="dejavu_settings_hide_system_bars_summary">وختی یه صفحه نشون داده ابو. سی دیدنشون سی یه لحظه، از لبه بالا یا پایین بکشین.</string>
     <string name="dejavu_bookmarks_export">و در بردن بره فایل</string>
@@ -471,9 +469,18 @@
     <string name="dejavu_feature_save_page">بلگه یل ن سی خنن بدۊن اینترنت زفت بکه</string>
     <string name="dejavu_recent_search_text">ای دیندایی ن له پیتینیڌنا دیندایی پاک کۊنین، یا هؤمه ن پاک کۊنین.</string>
     <string name="dejavu_recent_search_clear">پاک کردن ویرگار دیندایی</string>
-    <string name="dejavu_settings_home_screen">صفحه خونه</string>
     <string name="dejavu_home_search_top">نوار پیتینیڌن بالا</string>
     <string name="dejavu_home_search_top_summary">فضا یل، دانلودا، وردنی یل، نشووکا و ویرگار ژیر نشون داده می‌بن.</string>
     <string name="dejavu_home_search_bottom">نوار پیتینیڌن ژیر</string>
     <string name="dejavu_home_search_bottom_summary">رسیڌن آسووݩ‌تره. فضا یل، دانلودا، وردنی یل، نشووکا و ویرگار می‌رن بالا.</string>
+    <string name="dejavu_settings_autoclose_tabs">بستن خوتکار بلگه یل</string>
+    <string name="dejavu_settings_tabs_workspaces">بلگه یل، فضا یل و کانتینر یل</string>
+    <string name="dejavu_settings_tabs_workspaces_summary">بستن بلگه یل، بلگه یل خوابیده، کانتینر یل، بلگه هووه و لینک یل</string>
+    <string name="dejavu_settings_customize_summary">زمینه، کار یل بلگه، منو، نوار یل، رزما و زووݩ</string>
+    <string name="dejavu_settings_bars_2">نوار یل</string>
+    <string name="dejavu_settings_bars_summary">بلگه وب، بلگه هووه، نما پوی بلگه، نوار بلگه و اشاره یل</string>
+    <string name="dejavu_settings_web_page">بلگه وب</string>
+    <string name="dejavu_settings_full_screen">نما پوی بلگه</string>
+    <string name="dejavu_settings_passwords_language">رزما و زووݩ</string>
+    <string name="dejavu_settings_passwords_language_summary">پور کردن خوتکار، دسرسی پزیری، ولرنیڌنا و کونتورولا هۊش مسنۊعی</string>
 </resources>

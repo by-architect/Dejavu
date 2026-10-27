@@ -426,14 +426,12 @@
     <string name="dejavu_protection_links">ᱞᱤᱝᱠ ᱠᱚ ᱠᱷᱚᱱ ᱯᱟᱧᱡᱟ ᱚᱰᱚᱠ ᱢᱮ</string>
     <string name="dejavu_protection_hint">ᱪᱟᱹᱞᱩ ᱨᱩᱠᱷᱤᱭᱟᱹ ᱫᱚ ᱟᱢ ᱟᱨᱦᱚᱸ ᱨᱩᱠᱷᱤᱭᱟᱹ ᱛᱮ ᱫᱚᱦᱚ ᱢᱮᱭᱟ ᱾ ᱢᱤᱫ ᱢᱤᱫ ᱨᱩᱠᱷᱤᱭᱟᱹ ᱩᱫᱩᱜ ᱮᱫᱟ ᱡᱮ ᱚᱱᱟ ᱪᱮᱫ ᱴᱷᱮᱱ ᱠᱷᱚᱱ ᱨᱩᱠᱷᱤᱭᱟᱹ ᱮᱫᱟ ᱟᱨ ᱚᱱᱟ ᱠᱷᱟᱹᱛᱤᱨ ᱪᱮᱫ ᱠᱟᱹᱢᱤ ᱵᱚᱸᱫᱚᱜ ᱫᱟᱲᱮᱭᱟᱜᱼᱟ ᱾</string>
     <string name="dejavu_sync_zen_hint_unpinned">Zen ᱨᱮ, ᱥᱟᱡᱟᱣ ᱡᱷᱤᱡᱽ ᱢᱮ, ᱚᱱᱟ ᱛᱟᱭᱚᱢ ᱥᱤᱝᱠ, ᱟᱨ ᱥᱟᱭᱰᱵᱟᱨ ᱥᱤᱝᱠ ᱚᱱ ᱢᱮ ᱾</string>
-    <string name="dejavu_settings_bars">ᱵᱟᱨ ᱠᱚ ᱟᱨ ᱢᱮᱱᱩ</string>
     <string name="dejavu_bars_actions_bar">ᱪᱮᱛᱟᱱ ᱨᱮ ᱴᱷᱤᱠᱟᱱᱟ ᱵᱟᱨ, ᱞᱟᱛᱟᱨ ᱨᱮ ᱮᱠᱥᱚᱱ ᱵᱟᱨ</string>
     <string name="dejavu_bars_actions_bar_summary">ᱢᱚᱨ ᱢᱮᱱᱩ ᱡᱷᱤᱡᱽ ᱞᱟᱹᱜᱤᱫ ᱮᱠᱥᱚᱱ ᱵᱟᱨ ᱪᱮᱛᱟᱱ ᱛᱮ ᱥᱣᱟᱭᱤᱯ ᱢᱮ ᱾</string>
     <string name="dejavu_bars_top">ᱪᱮᱛᱟᱱ ᱨᱮ ᱴᱷᱤᱠᱟᱱᱟ ᱵᱟᱨ</string>
     <string name="dejavu_bars_top_summary">ᱮᱠᱥᱚᱱ ᱵᱟᱨ ᱵᱟᱹᱱᱩᱜᱼᱟ ᱾ ᱢᱚᱨ ᱢᱮᱱᱩ ᱡᱷᱤᱡᱽ ᱞᱟᱹᱜᱤᱫ ᱴᱷᱤᱠᱟᱱᱟ ᱵᱟᱨ ᱞᱟᱛᱟᱨ ᱛᱮ ᱥᱣᱟᱭᱤᱯ ᱢᱮ ᱾</string>
     <string name="dejavu_bars_bottom">ᱞᱟᱛᱟᱨ ᱨᱮ ᱴᱷᱤᱠᱟᱱᱟ ᱵᱟᱨ</string>
     <string name="dejavu_bars_bottom_summary">ᱮᱠᱥᱚᱱ ᱵᱟᱨ ᱵᱟᱹᱱᱩᱜᱼᱟ ᱾ ᱢᱚᱨ ᱢᱮᱱᱩ ᱡᱷᱤᱡᱽ ᱞᱟᱹᱜᱤᱫ ᱴᱷᱤᱠᱟᱱᱟ ᱵᱟᱨ ᱪᱮᱛᱟᱱ ᱛᱮ ᱥᱣᱟᱭᱤᱯ ᱢᱮ ᱾</string>
-    <string name="dejavu_settings_screen">ᱥᱠᱨᱤᱱ</string>
     <string name="dejavu_settings_hide_system_bars">ᱥᱴᱮᱴᱟᱥ ᱟᱨ ᱱᱮᱵᱷᱤᱜᱮᱥᱚᱱ ᱵᱟᱨ ᱩᱠᱩ ᱢᱮ</string>
     <string name="dejavu_settings_hide_system_bars_summary">ᱡᱚᱠᱷᱚᱱ ᱥᱟᱦᱴᱟ ᱩᱫᱩᱜ ᱠᱟᱱᱟ᱾ ᱛᱤᱱᱟᱹᱜ ᱜᱷᱟᱹᱲᱤᱡ ᱧᱮᱞ ᱞᱟᱹᱜᱤᱫ ᱪᱮᱛᱟᱱ ᱥᱮ ᱞᱟᱛᱟᱨ ᱥᱤᱢᱟᱹ ᱠᱷᱚᱱ ᱥᱣᱟᱭᱤᱯ ᱢᱮ᱾</string>
     <string name="dejavu_bookmarks_export">ᱨᱮᱫᱽ ᱛᱮ ᱤᱫᱤᱭ ᱢᱮ</string>
@@ -479,9 +477,18 @@
     <string name="dejavu_feature_save_page">ᱤᱱᱴᱟᱨᱱᱮᱴ ᱵᱷᱮᱜᱟᱨ ᱯᱟᱲᱦᱟᱣ ᱞᱟᱹᱜᱤᱫ ᱥᱟᱦᱴᱟ ᱠᱚ ᱥᱟᱧᱪᱟᱣ ᱢᱮ</string>
     <string name="dejavu_recent_search_text">ᱱᱚᱶᱟ ᱥᱮᱸᱫᱽᱨᱟ ᱫᱚ ᱱᱤᱛᱚᱜᱟᱜ ᱥᱮᱸᱫᱽᱨᱟ ᱠᱚ ᱛᱮᱛᱟᱭ ᱢᱮᱴᱟᱣ ᱢᱮ, ᱵᱟᱝᱠᱷᱟᱱ ᱡᱚᱛᱚ ᱢᱮᱴᱟᱣ ᱢᱮ ।</string>
     <string name="dejavu_recent_search_clear">ᱥᱮᱸᱫᱽᱨᱟ ᱱᱟᱜᱟᱢ ᱢᱮᱴᱟᱣ ᱢᱮ</string>
-    <string name="dejavu_settings_home_screen">ᱚᱲᱟᱜ ᱥᱠᱨᱤᱱ</string>
     <string name="dejavu_home_search_top">ᱪᱮᱛᱟᱱ ᱨᱮ ᱥᱮᱸᱫᱽᱨᱟ ᱵᱟᱨ</string>
     <string name="dejavu_home_search_top_summary">ᱣᱟᱨᱠᱥᱯᱮᱥ ᱠᱚ, ᱰᱟᱣᱱᱞᱚᱰ ᱠᱚ, ᱮᱠᱥᱴᱮᱱᱥᱚᱱᱠᱚ, ᱵᱩᱠᱢᱟᱨᱠ ᱠᱚ ᱟᱨ ᱱᱟᱜᱟᱢ ᱞᱟᱛᱟᱨ ᱨᱮ ᱢᱮᱱᱟᱜᱼᱟ ᱾</string>
     <string name="dejavu_home_search_bottom">ᱞᱟᱛᱟᱨ ᱨᱮ ᱥᱮᱸᱫᱽᱨᱟ ᱵᱟᱨ</string>
     <string name="dejavu_home_search_bottom_summary">ᱥᱮᱴᱮᱨᱚᱜ ᱞᱟᱹᱜᱤᱫ ᱵᱟᱹᱲᱛᱤ ᱟᱞᱜᱟ ᱾ ᱣᱟᱨᱠᱥᱯᱮᱥ ᱠᱚ, ᱰᱟᱣᱱᱞᱚᱰ ᱠᱚ, ᱮᱠᱥᱴᱮᱱᱥᱚᱱᱠᱚ, ᱵᱩᱠᱢᱟᱨᱠ ᱠᱚ ᱟᱨ ᱱᱟᱜᱟᱢ ᱪᱮᱛᱟᱱ ᱛᱮ ᱩᱪᱟᱹᱲ ᱟᱠᱟᱱᱟ ᱾</string>
+    <string name="dejavu_settings_autoclose_tabs">ᱴᱮᱵᱽ ᱠᱚ ᱟᱡᱛᱮ ᱵᱚᱸᱫ ᱢᱮ</string>
+    <string name="dejavu_settings_tabs_workspaces">ᱴᱮᱵᱽ ᱠᱚ, ᱣᱟᱨᱠᱥᱯᱮᱥ ᱠᱚ ᱟᱨ ᱠᱚᱱᱴᱮᱱᱟᱨ ᱠᱚ</string>
+    <string name="dejavu_settings_tabs_workspaces_summary">ᱴᱮᱵᱽ ᱠᱚ ᱵᱚᱸᱫ ᱟᱨ ᱥᱞᱤᱯ, ᱠᱚᱱᱴᱮᱱᱟᱨ ᱠᱚ, ᱚᱲᱟᱜ ᱥᱟᱦᱴᱟ ᱟᱨ ᱞᱤᱸᱠ ᱠᱚ</string>
+    <string name="dejavu_settings_customize_summary">ᱩᱭᱦᱟᱹᱨ, ᱴᱮᱵᱽ ᱮᱠᱥᱚᱱ ᱠᱚ, ᱢᱮᱱᱩ, ᱵᱟᱨ ᱠᱚ, ᱫᱟᱱᱟᱝ ᱥᱟᱵᱟᱫᱽ ᱠᱚ ᱟᱨ ᱯᱟᱹᱨᱥᱤ</string>
+    <string name="dejavu_settings_bars_2">ᱵᱟᱨ ᱠᱚ</string>
+    <string name="dejavu_settings_bars_summary">ᱣᱮᱵᱽ ᱥᱟᱦᱴᱟ, ᱚᱲᱟᱜ ᱥᱟᱦᱴᱟ, ᱯᱩᱨᱟᱹ ᱤᱥᱠᱨᱤᱱ, ᱴᱮᱵᱽ ᱵᱟᱨ ᱟᱨ ᱪᱤᱱᱦᱟᱹ ᱠᱚ</string>
+    <string name="dejavu_settings_web_page">ᱣᱮᱵᱽ ᱥᱟᱦᱴᱟ</string>
+    <string name="dejavu_settings_full_screen">ᱯᱩᱨᱟᱹ ᱤᱥᱠᱨᱤᱱ</string>
+    <string name="dejavu_settings_passwords_language">ᱫᱟᱱᱟᱝ ᱥᱟᱵᱟᱫᱽ ᱠᱚ ᱟᱨ ᱯᱟᱹᱨᱥᱤ</string>
+    <string name="dejavu_settings_passwords_language_summary">ᱟᱡ ᱛᱮ ᱯᱩᱨᱟᱹᱣ, ᱟᱹᱛᱩᱨ ᱫᱟᱲᱮᱭᱟᱜ, ᱛᱚᱨᱡᱚᱢᱟᱠᱚ ᱟᱨ AI ᱠᱟᱵᱚᱡᱽ</string>
 </resources>

@@ -15,6 +15,9 @@
     <include app:graph="@navigation/dejavu_tab_sleep_graph" />
     <include app:graph="@navigation/dejavu_tracking_protection_graph" />
     <include app:graph="@navigation/dejavu_more_menu_graph" />
+    <include app:graph="@navigation/dejavu_tabs_workspaces_graph" />
+    <include app:graph="@navigation/dejavu_bars_graph" />
+    <include app:graph="@navigation/dejavu_passwords_language_graph" />
 
     <action
         android:id="@+id/action_startup_home"
@@ -886,7 +889,7 @@
     <fragment
         android:id="@+id/tabsSettingsFragment"
         android:name="org.mozilla.fenix.settings.TabsSettingsFragment"
-        android:label="@string/preferences_tabs" >
+        android:label="@string/dejavu_settings_autoclose_tabs" >
         <argument
             android:name="preference_to_scroll_to"
             android:defaultValue="@null"

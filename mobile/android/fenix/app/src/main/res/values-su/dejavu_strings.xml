@@ -412,14 +412,12 @@
     <string name="dejavu_protection_links">Piceun palacakan tina tutumbu</string>
     <string name="dejavu_protection_hint">Panyalindungan anu hurung ngajaga anjeun leuwih aman. Masing-masing nyebutkeun tina naon éta ngajaga anjeun jeung naon anu bisa eureun jalan kusabab éta.</string>
     <string name="dejavu_sync_zen_hint_unpinned">Dina Zen, buka Settings, tuluy Sync, jeung hurungkeun sidebar sync.</string>
-    <string name="dejavu_settings_bars">Bar jeung menu</string>
     <string name="dejavu_bars_actions_bar">Bar alamat di luhur, bar aksi di handap</string>
     <string name="dejavu_bars_actions_bar_summary">Usapkeun bar aksi ka luhur pikeun muka Menu tambahan.</string>
     <string name="dejavu_bars_top">Bar alamat di luhur</string>
     <string name="dejavu_bars_top_summary">Teu aya bar aksi. Usapkeun bar alamat ka handap pikeun muka Menu tambahan.</string>
     <string name="dejavu_bars_bottom">Bar alamat di handap</string>
     <string name="dejavu_bars_bottom_summary">Teu aya bar aksi. Usapkeun bar alamat ka luhur pikeun muka Menu tambahan.</string>
-    <string name="dejavu_settings_screen">Layar</string>
     <string name="dejavu_settings_hide_system_bars">Sumputkeun bar status jeung navigasi</string>
     <string name="dejavu_settings_hide_system_bars_summary">Nalika kaca dipintonkeun. Usap ti sisi luhur atawa handap pikeun ningali éta sakedap.</string>
     <string name="dejavu_bookmarks_export">Ékspor ka berkas</string>
@@ -463,9 +461,18 @@
     <string name="dejavu_feature_save_page">Simpen kaca pikeun dibaca tanpa internét</string>
     <string name="dejavu_recent_search_text">Hapus pamilarian ieu tina pamilarian panungtungan, atawa hapus sakabéhna.</string>
     <string name="dejavu_recent_search_clear">Hapus jujutan pamilarian</string>
-    <string name="dejavu_settings_home_screen">Layar utama</string>
     <string name="dejavu_home_search_top">Bar pamilarian di luhur</string>
     <string name="dejavu_home_search_top_summary">Rohangan, undeuran, éksténsi, markah, jeung jujutan di handap.</string>
     <string name="dejavu_home_search_bottom">Bar pamilarian di handap</string>
     <string name="dejavu_home_search_bottom_summary">Leuwih gampang dijangkau. Rohangan, undeuran, éksténsi, markah, jeung jujutan pindah ka luhur.</string>
+    <string name="dejavu_settings_autoclose_tabs">Nutup tab otomatis</string>
+    <string name="dejavu_settings_tabs_workspaces">Tab, rohangan jeung wadah</string>
+    <string name="dejavu_settings_tabs_workspaces_summary">Nutup jeung nyarékeun tab, wadah, tepas jeung tutumbu</string>
+    <string name="dejavu_settings_customize_summary">Téma, aksi tab, menu, bar, kecap sandi jeung basa</string>
+    <string name="dejavu_settings_bars_2">Bar</string>
+    <string name="dejavu_settings_bars_summary">Kaca raramat, tepas, layar pinuh, bar tab jeung réngkak</string>
+    <string name="dejavu_settings_web_page">Kaca raramat</string>
+    <string name="dejavu_settings_full_screen">Layar pinuh</string>
+    <string name="dejavu_settings_passwords_language">Kecap sandi jeung basa</string>
+    <string name="dejavu_settings_passwords_language_summary">Eusi otomatis, aksésibilitas, tarjamah jeung kontrol AI</string>
 </resources>

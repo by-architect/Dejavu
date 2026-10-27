@@ -412,14 +412,12 @@
     <string name="dejavu_protection_links">Hapus pelacakan dari tautan</string>
     <string name="dejavu_protection_hint">Perlindungan yang aktif membuat Anda lebih aman. Masing-masing menjelaskan apa yang dicegahnya dan apa yang mungkin berhenti berfungsi karenanya.</string>
     <string name="dejavu_sync_zen_hint_unpinned">Di Zen, buka Pengaturan, lalu Sinkronisasi, dan aktifkan sinkronisasi sidebar.</string>
-    <string name="dejavu_settings_bars">Bilah dan menu</string>
     <string name="dejavu_bars_actions_bar">Bilah alamat di atas, bilah tindakan di bawah</string>
     <string name="dejavu_bars_actions_bar_summary">Geser bilah tindakan ke atas untuk membuka Menu lainnya.</string>
     <string name="dejavu_bars_top">Bilah alamat di atas</string>
     <string name="dejavu_bars_top_summary">Tanpa bilah tindakan. Geser bilah alamat ke bawah untuk membuka Menu lainnya.</string>
     <string name="dejavu_bars_bottom">Bilah alamat di bawah</string>
     <string name="dejavu_bars_bottom_summary">Tanpa bilah tindakan. Geser bilah alamat ke atas untuk membuka Menu lainnya.</string>
-    <string name="dejavu_settings_screen">Layar</string>
     <string name="dejavu_settings_hide_system_bars">Sembunyikan bilah status dan navigasi</string>
     <string name="dejavu_settings_hide_system_bars_summary">Saat halaman ditampilkan. Usap dari tepi atas atau bawah untuk melihatnya sejenak.</string>
     <string name="dejavu_bookmarks_export">Ekspor ke berkas</string>
@@ -463,9 +461,18 @@
     <string name="dejavu_feature_save_page">Simpan laman untuk dibaca tanpa internet</string>
     <string name="dejavu_recent_search_text">Hapus pencarian ini dari pencarian terkini Anda, atau hapus semuanya.</string>
     <string name="dejavu_recent_search_clear">Hapus riwayat pencarian</string>
-    <string name="dejavu_settings_home_screen">Layar utama</string>
     <string name="dejavu_home_search_top">Bilah pencarian di atas</string>
     <string name="dejavu_home_search_top_summary">Ruang kerja, unduhan, ekstensi, markah, dan riwayat di bawah.</string>
     <string name="dejavu_home_search_bottom">Bilah pencarian di bawah</string>
     <string name="dejavu_home_search_bottom_summary">Lebih mudah dijangkau. Ruang kerja, unduhan, ekstensi, markah, dan riwayat dipindahkan ke atas.</string>
+    <string name="dejavu_settings_autoclose_tabs">Tutup otomatis tab</string>
+    <string name="dejavu_settings_tabs_workspaces">Tab, ruang kerja, dan wadah</string>
+    <string name="dejavu_settings_tabs_workspaces_summary">Menutup dan menidurkan tab, wadah, beranda, dan tautan</string>
+    <string name="dejavu_settings_customize_summary">Tema, tindakan tab, menu, bilah, sandi, dan bahasa</string>
+    <string name="dejavu_settings_bars_2">Bilah</string>
+    <string name="dejavu_settings_bars_summary">Halaman web, beranda, layar penuh, bilah tab, dan gestur</string>
+    <string name="dejavu_settings_web_page">Halaman web</string>
+    <string name="dejavu_settings_full_screen">Layar penuh</string>
+    <string name="dejavu_settings_passwords_language">Sandi dan bahasa</string>
+    <string name="dejavu_settings_passwords_language_summary">Isi otomatis, aksesibilitas, terjemahan, dan kendali AI</string>
 </resources>

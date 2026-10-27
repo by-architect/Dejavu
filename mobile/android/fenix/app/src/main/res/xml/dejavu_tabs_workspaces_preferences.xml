@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+
+<!-- Dejavu: the settings of tabs, workspaces and containers, opened from General. -->
+<androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.preference.Preference
+        app:iconSpaceReserved="false"
+        app:widgetLayout="@layout/dejavu_preference_badge"
+        android:key="@string/pref_key_tabs"
+        android:title="@string/dejavu_settings_autoclose_tabs" />
+
+    <androidx.preference.Preference
+        app:iconSpaceReserved="false"
+        app:widgetLayout="@layout/dejavu_preference_badge"
+        android:key="@string/pref_key_dejavu_tab_sleep"
+        android:title="@string/dejavu_settings_tab_sleep"
+        android:summary="@string/dejavu_settings_tab_sleep_summary" />
+
+    <androidx.preference.Preference
+        app:iconSpaceReserved="false"
+        app:widgetLayout="@layout/dejavu_preference_badge"
+        android:key="@string/pref_key_dejavu_containers"
+        android:title="@string/dejavu_settings_containers"
+        android:summary="@string/dejavu_settings_containers_entry_summary" />
+
+    <androidx.preference.Preference
+        app:iconSpaceReserved="false"
+        android:key="@string/pref_key_home"
+        android:title="@string/preferences_home_2" />
+
+    <androidx.preference.Preference
+        app:iconSpaceReserved="false"
+        app:widgetLayout="@layout/dejavu_preference_badge"
+        android:key="@string/pref_key_dejavu_external_links"
+        android:title="@string/dejavu_settings_external_links"
+        android:summary="@string/dejavu_settings_external_links_summary" />
+
+    <androidx.preference.Preference
+        app:iconSpaceReserved="false"
+        android:key="@string/pref_key_open_links_in_apps"
+        android:title="@string/preferences_open_links_in_apps" />
+</androidx.preference.PreferenceScreen>

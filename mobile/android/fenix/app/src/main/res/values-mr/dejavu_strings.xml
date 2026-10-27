@@ -419,14 +419,12 @@
     <string name="dejavu_protection_links">लिंकमधून ट्रॅकिंग काढा</string>
     <string name="dejavu_protection_hint">सुरू असलेले संरक्षण तुम्हाला अधिक सुरक्षित ठेवते. प्रत्येक संरक्षण ते कशापासून वाचवते आणि त्यामुळे काय काम करणे थांबवू शकते, हे सांगते.</string>
     <string name="dejavu_sync_zen_hint_unpinned">Zen मध्ये, सेटिंग उघडा, नंतर सिंक, आणि साइडबार सिंक सुरू करा.</string>
-    <string name="dejavu_settings_bars">पट्ट्या आणि मेनू</string>
     <string name="dejavu_bars_actions_bar">पत्ता पट्टी वरती, क्रिया पट्टी तळाशी</string>
     <string name="dejavu_bars_actions_bar_summary">अधिक मेनू उघडण्यासाठी क्रिया पट्टी वर स्वाइप करा.</string>
     <string name="dejavu_bars_top">पत्ता पट्टी वरती</string>
     <string name="dejavu_bars_top_summary">क्रिया पट्टी नाही. अधिक मेनू उघडण्यासाठी पत्ता पट्टी खाली स्वाइप करा.</string>
     <string name="dejavu_bars_bottom">पत्ता पट्टी तळाशी</string>
     <string name="dejavu_bars_bottom_summary">क्रिया पट्टी नाही. अधिक मेनू उघडण्यासाठी पत्ता पट्टी वर स्वाइप करा.</string>
-    <string name="dejavu_settings_screen">स्क्रीन</string>
     <string name="dejavu_settings_hide_system_bars">स्टेटस आणि नेव्हिगेशन बार लपवा</string>
     <string name="dejavu_settings_hide_system_bars_summary">पेज दाखवले जात असताना. त्यांना क्षणभर पाहण्यासाठी वरच्या किंवा खालच्या कडेवरून स्वाइप करा.</string>
     <string name="dejavu_bookmarks_export">फाइलमध्ये निर्यात करा</string>
@@ -471,9 +469,18 @@
     <string name="dejavu_feature_save_page">इंटरनेटशिवाय वाचण्यासाठी पृष्ठे सेव्ह करा</string>
     <string name="dejavu_recent_search_text">ही शोध तुमच्या अलीकडील शोधांमधून नष्ट करा किंवा सर्व साफ करा.</string>
     <string name="dejavu_recent_search_clear">शोध इतिहास साफ करा</string>
-    <string name="dejavu_settings_home_screen">मुख्य स्क्रीन</string>
     <string name="dejavu_home_search_top">शोध पट्टी वरती</string>
     <string name="dejavu_home_search_top_summary">कार्यक्षेत्रे, डाउनलोड, एक्सटेन्शन, बुकमार्क आणि इतिहास तळाशी असतात.</string>
     <string name="dejavu_home_search_bottom">शोध पट्टी तळाशी</string>
     <string name="dejavu_home_search_bottom_summary">पोहोचण्यास अधिक सोपे. कार्यक्षेत्रे, डाउनलोड, एक्सटेन्शन, बुकमार्क आणि इतिहास वरती जातात.</string>
+    <string name="dejavu_settings_autoclose_tabs">टॅब आपोआप बंद करा</string>
+    <string name="dejavu_settings_tabs_workspaces">टॅब, कार्यक्षेत्रे आणि कंटेनर</string>
+    <string name="dejavu_settings_tabs_workspaces_summary">टॅब बंद करणे, स्लीप मोडमधील टॅब, कंटेनर, मुख्यपृष्ठ आणि लिंक</string>
+    <string name="dejavu_settings_customize_summary">रंगयोजना, टॅब क्रिया, मेनू, पट्ट्या, पासवर्ड आणि भाषा</string>
+    <string name="dejavu_settings_bars_2">पट्ट्या</string>
+    <string name="dejavu_settings_bars_summary">वेब पृष्ठ, मुख्यपृष्ठ, पूर्ण स्क्रीन, टॅब पट्टी आणि जेश्चर</string>
+    <string name="dejavu_settings_web_page">वेब पृष्ठ</string>
+    <string name="dejavu_settings_full_screen">पूर्ण स्क्रीन</string>
+    <string name="dejavu_settings_passwords_language">पासवर्ड आणि भाषा</string>
+    <string name="dejavu_settings_passwords_language_summary">ऑटोफिल, सुलभता, भाषांतरे आणि AI नियंत्रणे</string>
 </resources>

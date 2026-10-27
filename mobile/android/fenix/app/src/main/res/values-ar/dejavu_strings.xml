@@ -447,14 +447,12 @@
     <string name="dejavu_protection_links">أزِل التعقّب من الروابط</string>
     <string name="dejavu_protection_hint">الحماية المفعّلة تُبقيك أكثر أمانًا. كل حماية تقول ممّ تحميك وما الذي قد يتوقف عن العمل بسببها.</string>
     <string name="dejavu_sync_zen_hint_unpinned">في Zen، افتح الإعدادات ثم المزامنة، وفعّل مزامنة الشريط الجانبي.</string>
-    <string name="dejavu_settings_bars">الأشرطة والقائمة</string>
     <string name="dejavu_bars_actions_bar">شريط العنوان بالأعلى، وشريط الإجراءات بالأسفل</string>
     <string name="dejavu_bars_actions_bar_summary">اسحب شريط الإجراءات لأعلى لفتح قائمة «المزيد».</string>
     <string name="dejavu_bars_top">شريط العنوان بالأعلى</string>
     <string name="dejavu_bars_top_summary">بلا شريط إجراءات. اسحب شريط العنوان لأسفل لفتح قائمة «المزيد».</string>
     <string name="dejavu_bars_bottom">شريط العنوان بالأسفل</string>
     <string name="dejavu_bars_bottom_summary">بلا شريط إجراءات. اسحب شريط العنوان لأعلى لفتح قائمة «المزيد».</string>
-    <string name="dejavu_settings_screen">الشاشة</string>
     <string name="dejavu_settings_hide_system_bars">إخفاء شريطي الحالة والتنقل</string>
     <string name="dejavu_settings_hide_system_bars_summary">أثناء عرض صفحة. اسحب من الحافة العلوية أو السفلية لرؤيتهما لحظة.</string>
     <string name="dejavu_bookmarks_export">صدِّر إلى ملف</string>
@@ -503,9 +501,18 @@
     <string name="dejavu_feature_save_page">احفظ الصفحات لقراءتها بدون إنترنت</string>
     <string name="dejavu_recent_search_text">احذف عملية البحث هذه من عمليات البحث الأخيرة، أو امسحها كلها.</string>
     <string name="dejavu_recent_search_clear">امسح سجل البحث</string>
-    <string name="dejavu_settings_home_screen">الشاشة الرئيسية</string>
     <string name="dejavu_home_search_top">شريط البحث بالأعلى</string>
     <string name="dejavu_home_search_top_summary">تظهر مساحات العمل والتنزيلات والامتدادات والعلامات والتأريخ بالأسفل.</string>
     <string name="dejavu_home_search_bottom">شريط البحث بالأسفل</string>
     <string name="dejavu_home_search_bottom_summary">أسهل في الوصول إليه. تنتقل مساحات العمل والتنزيلات والامتدادات والعلامات والتأريخ إلى الأعلى.</string>
+    <string name="dejavu_settings_autoclose_tabs">الإغلاق التلقائي للتبويبات</string>
+    <string name="dejavu_settings_tabs_workspaces">التبويبات ومساحات العمل والحاويات</string>
+    <string name="dejavu_settings_tabs_workspaces_summary">إغلاق التبويبات وتنويمها، والحاويات، وصفحة البداية، والروابط</string>
+    <string name="dejavu_settings_customize_summary">السمة، وإجراءات التبويبات، والقائمة، والأشرطة، وكلمات المرور، واللغة</string>
+    <string name="dejavu_settings_bars_2">الأشرطة</string>
+    <string name="dejavu_settings_bars_summary">صفحة الوِب، وصفحة البداية، وملء الشاشة، وشريط التبويب، والإيماءات</string>
+    <string name="dejavu_settings_web_page">صفحة الوِب</string>
+    <string name="dejavu_settings_full_screen">ملء الشاشة</string>
+    <string name="dejavu_settings_passwords_language">كلمات المرور واللغة</string>
+    <string name="dejavu_settings_passwords_language_summary">الملء التلقائي، والإتاحة، والترجمات، والتحكم بالذكاء الاصطناعي</string>
 </resources>

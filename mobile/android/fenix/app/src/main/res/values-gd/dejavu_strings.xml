@@ -433,14 +433,12 @@
     <string name="dejavu_protection_links">Thoir an tracadh air falbh o cheanglaichean</string>
     <string name="dejavu_protection_hint">Cumaidh dìon a tha air nas sàbhailte thu. Innsidh gach fear dè on dìon e thu agus dè dh\'fhaodadh stad ag obair air a sgàth.</string>
     <string name="dejavu_sync_zen_hint_unpinned">Ann an Zen, fosgail Roghainnean, an uairsin Sioncronachadh, agus cuir air sioncronachadh a\' bhàr-thaoibh.</string>
-    <string name="dejavu_settings_bars">Bàraichean is clàr-taice</string>
     <string name="dejavu_bars_actions_bar">Bàr an t-seòlaidh aig a\' bhàrr, bàr ghnìomhan aig a\' bhonn</string>
     <string name="dejavu_bars_actions_bar_summary">Grad-shlaighd am bàr ghnìomhan suas gus an clàr-taice Barrachd fhosgladh.</string>
     <string name="dejavu_bars_top">Bàr an t-seòlaidh aig a\' bhàrr</string>
     <string name="dejavu_bars_top_summary">Gun bhàr ghnìomhan. Grad-shlaighd bàr an t-seòlaidh sìos gus an clàr-taice Barrachd fhosgladh.</string>
     <string name="dejavu_bars_bottom">Bàr an t-seòlaidh aig a\' bhonn</string>
     <string name="dejavu_bars_bottom_summary">Gun bhàr ghnìomhan. Grad-shlaighd bàr an t-seòlaidh suas gus an clàr-taice Barrachd fhosgladh.</string>
-    <string name="dejavu_settings_screen">Sgrìn</string>
     <string name="dejavu_settings_hide_system_bars">Falaich bàraichean na staid is na seòladaireachd</string>
     <string name="dejavu_settings_hide_system_bars_summary">Fhad \'s a tha duilleag ga shealltainn. Grad-shlaighd a-steach on oir gu h-àrd no gu h-ìosal airson am faicinn greiseag.</string>
     <string name="dejavu_bookmarks_export">Às-phortaich gu faidhle</string>
@@ -487,9 +485,18 @@
     <string name="dejavu_feature_save_page">Sàbhail duilleagan airson an leughadh gun eadar-lìn</string>
     <string name="dejavu_recent_search_text">Sguab às an luirg seo à na luirg o chionn goirid, no sguab às na luirg uile.</string>
     <string name="dejavu_recent_search_clear">Sguab às eachdraidh nan lorg</string>
-    <string name="dejavu_settings_home_screen">An sgrìn-dachaigh</string>
     <string name="dejavu_home_search_top">Bàr an luirg aig a\' bhàrr</string>
     <string name="dejavu_home_search_top_summary">Àiteachan-obrach, luchdaidhean a-nuas, leudachain, comharran-lìn agus an eachdraidh aig a\' bhonn.</string>
     <string name="dejavu_home_search_bottom">Bàr an luirg aig a\' bhonn</string>
     <string name="dejavu_home_search_bottom_summary">Nas fhasa ruigsinn. Thèid na h-àiteachan-obrach, luchdaidhean a-nuas, leudachain, comharran-lìn agus an eachdraidh a ghluasad dhan bhàrr.</string>
+    <string name="dejavu_settings_autoclose_tabs">Dùin tabaichean gu fèin-obrachail</string>
+    <string name="dejavu_settings_tabs_workspaces">Tabaichean, àiteachan-obrach agus soithichean</string>
+    <string name="dejavu_settings_tabs_workspaces_summary">Dùnadh is cadal nan tabaichean, soithichean, duilleag-dhachaigh agus ceanglaichean</string>
+    <string name="dejavu_settings_customize_summary">Ùrlar, gnìomhan nan tabaichean, clàr-taice, bàraichean, faclan-faire agus cànan</string>
+    <string name="dejavu_settings_bars_2">Bàraichean</string>
+    <string name="dejavu_settings_bars_summary">Duilleag-lìn, duilleag-dhachaigh, làn-sgrìn, bàr nan tabaichean agus gluasadan</string>
+    <string name="dejavu_settings_web_page">Duilleag-lìn</string>
+    <string name="dejavu_settings_full_screen">Làn-sgrìn</string>
+    <string name="dejavu_settings_passwords_language">Faclan-faire agus cànan</string>
+    <string name="dejavu_settings_passwords_language_summary">Fèin-lìonadh, so-ruigsinneachd, eadar-theangachaidhean agus smachd air IF</string>
 </resources>

@@ -419,14 +419,12 @@
     <string name="dejavu_protection_links">لنکاں توں ٹریکنگ ہٹاؤ</string>
     <string name="dejavu_protection_hint">چالو حفاظت تہانوں ہور محفوظ رکھدی اے۔ ہر اک دسدی اے کہ ایہہ کس توں بچاندی اے تے ایہدی وجہ توں کیہ کم کرنا بند کر سکدا اے۔</string>
     <string name="dejavu_sync_zen_hint_unpinned">Zen وچ، سیٹنگاں کھولھو، فیر Sync، تے سائیڈبار سنک آن کرو۔</string>
-    <string name="dejavu_settings_bars">باراں تے مینو</string>
     <string name="dejavu_bars_actions_bar">پتہ بار اُتے، ایکشن بار تلے</string>
     <string name="dejavu_bars_actions_bar_summary">ہور مینو کھولن لئی ایکشن بار نوں اُتے سوائپ کرو۔</string>
     <string name="dejavu_bars_top">پتہ بار اُتے</string>
     <string name="dejavu_bars_top_summary">کوئی ایکشن بار نئيں۔ ہور مینو کھولن لئی پتہ بار نوں تلے سوائپ کرو۔</string>
     <string name="dejavu_bars_bottom">پتہ بار تلے</string>
     <string name="dejavu_bars_bottom_summary">کوئی ایکشن بار نئيں۔ ہور مینو کھولن لئی پتہ بار نوں اُتے سوائپ کرو۔</string>
-    <string name="dejavu_settings_screen">سکرین</string>
     <string name="dejavu_settings_hide_system_bars">سٹیٹس تے نیویگیشن بار لکاؤ</string>
     <string name="dejavu_settings_hide_system_bars_summary">جدوں کوئی صفحہ وکھایا جا رہیا ہووے۔ اوہناں نوں اک پل لئی ویکھن لئی اُتلے یا تھلے کنارے توں سوائپ کرو۔</string>
     <string name="dejavu_bookmarks_export">فائل وچ ایکسپورٹ کرو</string>
@@ -471,9 +469,18 @@
     <string name="dejavu_feature_save_page">انٹرنیٹ توں بنا پڑھن لئی صفحے سیو کرو</string>
     <string name="dejavu_recent_search_text">ایس کھوج نوں اپنیاں تازہ کھوجاں چوں ہٹاؤ، یا سبھ نوں صاف کرو۔</string>
     <string name="dejavu_recent_search_clear">کھوج دی تاریخ صاف کرو</string>
-    <string name="dejavu_settings_home_screen">ہوم سکرین</string>
     <string name="dejavu_home_search_top">کھوج بار اُتے</string>
     <string name="dejavu_home_search_top_summary">ورک سپیساں، ڈاؤن‌لوڈ، پھیلاؤ، بُک مارک تے تریخ تلے نیں۔</string>
     <string name="dejavu_home_search_bottom">کھوج بار تلے</string>
     <string name="dejavu_home_search_bottom_summary">پہنچنا ہور سوکھا۔ ورک سپیساں، ڈاؤن‌لوڈ، پھیلاؤ، بُک مارک تے تریخ اُتے چلے جاندے نیں۔</string>
+    <string name="dejavu_settings_autoclose_tabs">ٹیباں نوں آپے بند کرو</string>
+    <string name="dejavu_settings_tabs_workspaces">ٹیباں، ورک سپیساں تے کنٹینر</string>
+    <string name="dejavu_settings_tabs_workspaces_summary">ٹیباں بند کرنا تے سلاؤݨا، کنٹینر، مکھ صفحہ تے لنک</string>
+    <string name="dejavu_settings_customize_summary">روپ ریکھا، ٹیب ایکشن، مینو، باراں، پاس‌ورڈ تے بولی</string>
+    <string name="dejavu_settings_bars_2">باراں</string>
+    <string name="dejavu_settings_bars_summary">ویب صفحہ، مکھ صفحہ، پوری سکرین، ٹیب بار تے اشارے</string>
+    <string name="dejavu_settings_web_page">ویب صفحہ</string>
+    <string name="dejavu_settings_full_screen">پوری سکرین</string>
+    <string name="dejavu_settings_passwords_language">پاس‌ورڈ تے بولی</string>
+    <string name="dejavu_settings_passwords_language_summary">آپے بھرو، رسائیت، ترجمے تے AI کنٹرول</string>
 </resources>

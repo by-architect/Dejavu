@@ -452,14 +452,12 @@
     <string name="dejavu_protection_links">লিঙ্ক থেকে ট্র্যাকিং সরান</string>
     <string name="dejavu_protection_hint">চালু থাকা সুরক্ষা আপনাকে আরও নিরাপদ রাখে। প্রতিটি সুরক্ষা জানায় এটি কীসের থেকে রক্ষা করে এবং এর কারণে কী কাজ করা বন্ধ করতে পারে।</string>
     <string name="dejavu_sync_zen_hint_unpinned">Zen-এ সেটিংস, তারপর Sync খুলুন এবং সাইডবার Sync চালু করুন।</string>
-    <string name="dejavu_settings_bars">বার ও মেনু</string>
     <string name="dejavu_bars_actions_bar">ঠিকানা বার উপরে, অ্যাকশন বার নিচে</string>
     <string name="dejavu_bars_actions_bar_summary">আরও অপশন মেনু খুলতে অ্যাকশন বারটি উপরে সোয়াইপ করুন।</string>
     <string name="dejavu_bars_top">ঠিকানা বার উপরে</string>
     <string name="dejavu_bars_top_summary">কোনো অ্যাকশন বার নেই। আরও অপশন মেনু খুলতে ঠিকানা বারটি নিচে সোয়াইপ করুন।</string>
     <string name="dejavu_bars_bottom">ঠিকানা বার নিচে</string>
     <string name="dejavu_bars_bottom_summary">কোনো অ্যাকশন বার নেই। আরও অপশন মেনু খুলতে ঠিকানা বারটি উপরে সোয়াইপ করুন।</string>
-    <string name="dejavu_settings_screen">স্ক্রিন</string>
     <string name="dejavu_settings_hide_system_bars">স্ট্যাটাস ও নেভিগেশন বার লুকান</string>
     <string name="dejavu_settings_hide_system_bars_summary">যখন কোনো পেজ দেখানো হয়। এক মুহূর্তের জন্য দেখতে উপরের বা নিচের প্রান্ত থেকে সোয়াইপ করুন।</string>
     <string name="dejavu_bookmarks_export">ফাইলে এক্সপোর্ট করুন</string>
@@ -504,9 +502,18 @@
     <string name="dejavu_feature_save_page">ইন্টারনেট ছাড়া পড়তে পাতা সংরক্ষণ করুন</string>
     <string name="dejavu_recent_search_text">সাম্প্রতিক অনুসন্ধান থেকে এই অনুসন্ধানটি মুছুন, অথবা সবগুলো মুছে ফেলুন।</string>
     <string name="dejavu_recent_search_clear">অনুসন্ধানের ইতিহাস মুছুন</string>
-    <string name="dejavu_settings_home_screen">হোম স্ক্রিন</string>
     <string name="dejavu_home_search_top">অনুসন্ধান বার উপরে</string>
     <string name="dejavu_home_search_top_summary">ওয়ার্কস্পেস, ডাউনলোড, এক্সটেনশন, বুকমার্ক ও ইতিহাস নিচে থাকে।</string>
     <string name="dejavu_home_search_bottom">অনুসন্ধান বার নিচে</string>
     <string name="dejavu_home_search_bottom_summary">নাগাল পাওয়া আরও সহজ। ওয়ার্কস্পেস, ডাউনলোড, এক্সটেনশন, বুকমার্ক ও ইতিহাস উপরে চলে যায়।</string>
+    <string name="dejavu_settings_autoclose_tabs">স্বয়ংক্রিয়ভাবে ট্যাব বন্ধ করুন</string>
+    <string name="dejavu_settings_tabs_workspaces">ট্যাব, ওয়ার্কস্পেস ও কন্টেইনার</string>
+    <string name="dejavu_settings_tabs_workspaces_summary">ট্যাব বন্ধ ও স্লিপ মোড, কন্টেইনার, হোম পাতা ও লিঙ্ক</string>
+    <string name="dejavu_settings_customize_summary">থিম, ট্যাব অ্যাকশন, মেনু, বার, পাসওয়ার্ড ও ভাষা</string>
+    <string name="dejavu_settings_bars_2">বারসমূহ</string>
+    <string name="dejavu_settings_bars_summary">ওয়েব পাতা, হোম পাতা, পূর্ণ পর্দা, ট্যাব বার ও জেসচার</string>
+    <string name="dejavu_settings_web_page">ওয়েব পাতা</string>
+    <string name="dejavu_settings_full_screen">পূর্ণ পর্দা</string>
+    <string name="dejavu_settings_passwords_language">পাসওয়ার্ড ও ভাষা</string>
+    <string name="dejavu_settings_passwords_language_summary">অটোফিল, প্রবেশযোগ্যতা, অনুবাদ ও AI নিয়ন্ত্রণ</string>
 </resources>

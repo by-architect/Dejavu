@@ -412,14 +412,12 @@
     <string name="dejavu_protection_links">Xóa phần theo dõi khỏi liên kết</string>
     <string name="dejavu_protection_hint">Một tính năng bảo vệ đang bật giúp bạn an toàn hơn. Mỗi tính năng cho biết nó chống lại điều gì và những gì có thể ngừng hoạt động vì nó.</string>
     <string name="dejavu_sync_zen_hint_unpinned">Trong Zen, mở Cài đặt, rồi vào Đồng bộ hóa, và bật đồng bộ hóa thanh bên.</string>
-    <string name="dejavu_settings_bars">Các thanh và trình đơn</string>
     <string name="dejavu_bars_actions_bar">Thanh địa chỉ ở trên cùng, thanh thao tác ở dưới cùng</string>
     <string name="dejavu_bars_actions_bar_summary">Vuốt thanh thao tác lên để mở Trình đơn khác.</string>
     <string name="dejavu_bars_top">Thanh địa chỉ ở trên cùng</string>
     <string name="dejavu_bars_top_summary">Không có thanh thao tác. Vuốt thanh địa chỉ xuống để mở Trình đơn khác.</string>
     <string name="dejavu_bars_bottom">Thanh địa chỉ ở dưới cùng</string>
     <string name="dejavu_bars_bottom_summary">Không có thanh thao tác. Vuốt thanh địa chỉ lên để mở Trình đơn khác.</string>
-    <string name="dejavu_settings_screen">Màn hình</string>
     <string name="dejavu_settings_hide_system_bars">Ẩn thanh trạng thái và thanh điều hướng</string>
     <string name="dejavu_settings_hide_system_bars_summary">Khi đang hiển thị một trang. Vuốt từ cạnh trên hoặc cạnh dưới để xem chúng trong giây lát.</string>
     <string name="dejavu_bookmarks_export">Xuất ra tập tin</string>
@@ -463,9 +461,18 @@
     <string name="dejavu_feature_save_page">Lưu trang để đọc khi không có internet</string>
     <string name="dejavu_recent_search_text">Xóa tìm kiếm này khỏi danh sách tìm kiếm gần đây, hoặc xóa tất cả.</string>
     <string name="dejavu_recent_search_clear">Xóa lịch sử tìm kiếm</string>
-    <string name="dejavu_settings_home_screen">Màn hình chính</string>
     <string name="dejavu_home_search_top">Thanh tìm kiếm ở trên cùng</string>
     <string name="dejavu_home_search_top_summary">Không gian làm việc, tải xuống, tiện ích, dấu trang và lịch sử ở dưới cùng.</string>
     <string name="dejavu_home_search_bottom">Thanh tìm kiếm ở dưới cùng</string>
     <string name="dejavu_home_search_bottom_summary">Dễ với tới hơn. Không gian làm việc, tải xuống, tiện ích, dấu trang và lịch sử sẽ chuyển lên trên cùng.</string>
+    <string name="dejavu_settings_autoclose_tabs">Tự động đóng thẻ</string>
+    <string name="dejavu_settings_tabs_workspaces">Thẻ, không gian làm việc và vùng chứa</string>
+    <string name="dejavu_settings_tabs_workspaces_summary">Đóng thẻ, thẻ tạm ngủ, vùng chứa, trang chủ và liên kết</string>
+    <string name="dejavu_settings_customize_summary">Chủ đề, thao tác thẻ, trình đơn, các thanh, mật khẩu và ngôn ngữ</string>
+    <string name="dejavu_settings_bars_2">Các thanh</string>
+    <string name="dejavu_settings_bars_summary">Trang web, trang chủ, toàn màn hình, thanh thẻ và cử chỉ</string>
+    <string name="dejavu_settings_web_page">Trang web</string>
+    <string name="dejavu_settings_full_screen">Toàn màn hình</string>
+    <string name="dejavu_settings_passwords_language">Mật khẩu và ngôn ngữ</string>
+    <string name="dejavu_settings_passwords_language_summary">Tự động điền, trợ năng, dịch và kiểm soát AI</string>
 </resources>

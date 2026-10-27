@@ -419,14 +419,12 @@
     <string name="dejavu_protection_links">Momtu dewindagol e jokke</string>
     <string name="dejavu_protection_hint">So ndeenka hurmii, ina ɓeydana ma kisal. Kala ndeenka ina hollira ko ndeentata ma e ko waawi darde gollude sabu mayre.</string>
     <string name="dejavu_sync_zen_hint_unpinned">Dans Zen, ouvre Paramètres, puis Synchronisation, et active la synchronisation de la barre latérale.</string>
-    <string name="dejavu_settings_bars">Barres et menu</string>
     <string name="dejavu_bars_actions_bar">Barre d\'adresse en haut, barre d\'actions en bas</string>
     <string name="dejavu_bars_actions_bar_summary">Fais glisser la barre d\'actions vers le haut pour ouvrir le menu Plus.</string>
     <string name="dejavu_bars_top">Barre d\'adresse en haut</string>
     <string name="dejavu_bars_top_summary">Alaa barre d\'actions. Fais glisser la barre d\'adresse vers le bas pour ouvrir le menu Plus.</string>
     <string name="dejavu_bars_bottom">Barre d\'adresse en bas</string>
     <string name="dejavu_bars_bottom_summary">Alaa barre d\'actions. Fais glisser la barre d\'adresse vers le haut pour ouvrir le menu Plus.</string>
-    <string name="dejavu_settings_screen">Écran</string>
     <string name="dejavu_settings_hide_system_bars">Masquer les barres d\'état et de navigation</string>
     <string name="dejavu_settings_hide_system_bars_summary">Pendant l\'affichage d\'une page. Balayez depuis le bord supérieur ou inférieur pour les voir un instant.</string>
     <string name="dejavu_bookmarks_export">Yaltin to fiilde</string>
@@ -471,9 +469,18 @@
     <string name="dejavu_feature_save_page">Enregistre des pages pour les lire sans internet</string>
     <string name="dejavu_recent_search_text">Momtu ngall ɗaŋtol ɗoo diga ɗaŋtooji cakkitiiji maa, malla ɓesngu fof.</string>
     <string name="dejavu_recent_search_clear">Momtu aslol ɗaŋtooji</string>
-    <string name="dejavu_settings_home_screen">Écran d\'accueil</string>
     <string name="dejavu_home_search_top">Barre de recherche en haut</string>
     <string name="dejavu_home_search_top_summary">Espaces de travail, gaawte, extensions, signets et aslol en bas.</string>
     <string name="dejavu_home_search_bottom">Barre de recherche en bas</string>
     <string name="dejavu_home_search_bottom_summary">Plus facile à atteindre. Les espaces de travail, gaawte, extensions, signets et aslol passent en haut.</string>
+    <string name="dejavu_settings_autoclose_tabs">Uddu tabbe e jaajol</string>
+    <string name="dejavu_settings_tabs_workspaces">Tabbe, espaces de travail et conteneurs</string>
+    <string name="dejavu_settings_tabs_workspaces_summary">Fermeture et mise en veille des tabbe, conteneurs, hello jaɓɓorgo et liens</string>
+    <string name="dejavu_settings_customize_summary">Siŋkoore, actions des tabbe, menu, barres, mots de passe et ɗemngal</string>
+    <string name="dejavu_settings_bars_2">Barres</string>
+    <string name="dejavu_settings_bars_summary">Hello geese, hello jaɓɓorgo, plein écran, barre des tabbe et beese junngo</string>
+    <string name="dejavu_settings_web_page">Hello geese</string>
+    <string name="dejavu_settings_full_screen">Plein écran</string>
+    <string name="dejavu_settings_passwords_language">Mots de passe et ɗemngal</string>
+    <string name="dejavu_settings_passwords_language_summary">Humpit e jaajol, keɓogol, traductions et contrôles de l\'IA</string>
 </resources>

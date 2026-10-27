@@ -419,14 +419,12 @@
     <string name="dejavu_protection_links">Gjave il tracament dai colegaments</string>
     <string name="dejavu_protection_hint">Une protezion ative ti ten plui al sigûr. Ognidune e dîs di ce che ti protêç e ce che al podarès smeti di funzionâ par colpe sô.</string>
     <string name="dejavu_sync_zen_hint_unpinned">In Zen, vierç Impostazions, dopo Sincronizazion, e ative la sincronizazion de sbare laterâl.</string>
-    <string name="dejavu_settings_bars">Sbaris e menù</string>
     <string name="dejavu_bars_actions_bar">Sbare de direzion in alt, sbare des azions in bas</string>
     <string name="dejavu_bars_actions_bar_summary">Scor in sù la sbare des azions par vierzi il menù Plui.</string>
     <string name="dejavu_bars_top">Sbare de direzion in alt</string>
     <string name="dejavu_bars_top_summary">Nissune sbare des azions. Scor in jù la sbare de direzion par vierzi il menù Plui.</string>
     <string name="dejavu_bars_bottom">Sbare de direzion in bas</string>
     <string name="dejavu_bars_bottom_summary">Nissune sbare des azions. Scor in sù la sbare de direzion par vierzi il menù Plui.</string>
-    <string name="dejavu_settings_screen">Schermi</string>
     <string name="dejavu_settings_hide_system_bars">Plate lis sbaris di stât e di navigazion</string>
     <string name="dejavu_settings_hide_system_bars_summary">Intant che e ven mostrade une pagjine. Scor dal ôr parsore o parsot par viodilis par un moment.</string>
     <string name="dejavu_bookmarks_export">Espuarte su file</string>
@@ -471,9 +469,18 @@
     <string name="dejavu_feature_save_page">Salve lis pagjinis par lei cence internet</string>
     <string name="dejavu_recent_search_text">Elimine cheste ricerche des tôs ricercjis resintis o scancele ducj.</string>
     <string name="dejavu_recent_search_clear">Scancele la cronologjie des ricercjis</string>
-    <string name="dejavu_settings_home_screen">Videade iniziâl</string>
     <string name="dejavu_home_search_top">Sbare de ricercje in alt</string>
     <string name="dejavu_home_search_top_summary">Spazis di lavôr, discjamâts, estensions, segnelibris e cronologjie in bas.</string>
     <string name="dejavu_home_search_bottom">Sbare de ricercje in bas</string>
     <string name="dejavu_home_search_bottom_summary">Plui facil di rivâ. Spazis di lavôr, discjamâts, estensions, segnelibris e cronologjie a van in alt.</string>
+    <string name="dejavu_settings_autoclose_tabs">Siere in automatic lis schedis</string>
+    <string name="dejavu_settings_tabs_workspaces">Schedis, spazis di lavôr e contenidôrs</string>
+    <string name="dejavu_settings_tabs_workspaces_summary">Sierâ e indurmidî lis schedis, contenidôrs, pagjine iniziâl e leams</string>
+    <string name="dejavu_settings_customize_summary">Teme, azions des schedis, menù, sbaris, passwords e lenghe</string>
+    <string name="dejavu_settings_bars_2">Sbaris</string>
+    <string name="dejavu_settings_bars_summary">Pagjine web, pagjine iniziâl, plen schermi, sbare des schedis e mots</string>
+    <string name="dejavu_settings_web_page">Pagjine web</string>
+    <string name="dejavu_settings_full_screen">Plen schermi</string>
+    <string name="dejavu_settings_passwords_language">Passwords e lenghe</string>
+    <string name="dejavu_settings_passwords_language_summary">Compilazion automatiche, acès facilitât, traduzions e controi IA</string>
 </resources>

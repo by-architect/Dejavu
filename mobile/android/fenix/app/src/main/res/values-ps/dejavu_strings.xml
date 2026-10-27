@@ -419,14 +419,12 @@
     <string name="dejavu_protection_links">له لینکونو تعقیب لرې کول</string>
     <string name="dejavu_protection_hint">چالانه ساتنه تاسو ډېر خوندي ساتي. هره یوه وايي چې د څه پر وړاندې ساتنه کوي او د هغې له امله کېدای شي څه کار پرېږدي.</string>
     <string name="dejavu_sync_zen_hint_unpinned">په Zen کې، «امستنې» خلاص کړئ، بیا «همغږي کول»، او د څنګ پټې همغږي فعاله کړئ.</string>
-    <string name="dejavu_settings_bars">نوارونه او مینو</string>
     <string name="dejavu_bars_actions_bar">د پتې نوار پورته، د کړنو نوار لاندې</string>
     <string name="dejavu_bars_actions_bar_summary">د نور مینو د خلاصولو لپاره د کړنو نوار پورته کش کړئ.</string>
     <string name="dejavu_bars_top">د پتې نوار پورته</string>
     <string name="dejavu_bars_top_summary">د کړنو نوار نشته. د نور مینو د خلاصولو لپاره د پتې نوار ښکته کش کړئ.</string>
     <string name="dejavu_bars_bottom">د پتې نوار لاندې</string>
     <string name="dejavu_bars_bottom_summary">د کړنو نوار نشته. د نور مینو د خلاصولو لپاره د پتې نوار پورته کش کړئ.</string>
-    <string name="dejavu_settings_screen">پرده</string>
     <string name="dejavu_settings_hide_system_bars">د حالت او نېویګېشن پټۍ پټې کړئ</string>
     <string name="dejavu_settings_hide_system_bars_summary">کله چې یوه پاڼه ښودل کېږي. د یوې شېبې لپاره د لیدو لپاره له پورتنۍ یا ښکتنۍ څنډې څخه سوایپ کړئ.</string>
     <string name="dejavu_bookmarks_export">فایل ته صادرول</string>
@@ -471,9 +469,18 @@
     <string name="dejavu_feature_save_page">پاڼې خوندي کړئ ترڅو پرته له انټرنېټه یې ولولئ</string>
     <string name="dejavu_recent_search_text">دا لټون له خپلو وروستیو لټونونو لرې کړئ، یا ټول پاک کړئ.</string>
     <string name="dejavu_recent_search_clear">د لټون تاریخچه پاکه کړئ</string>
-    <string name="dejavu_settings_home_screen">کور پرده</string>
     <string name="dejavu_home_search_top">د لټون نوار پورته</string>
     <string name="dejavu_home_search_top_summary">ساحې، ډاونلوډونه، وروستاړي، یادنښې او تاریخچه لاندې ښکاري.</string>
     <string name="dejavu_home_search_bottom">د لټون نوار لاندې</string>
     <string name="dejavu_home_search_bottom_summary">لاسرسی لا اسانه دی. ساحې، ډاونلوډونه، وروستاړي، یادنښې او تاریخچه پورته لور ته لېږدېږي.</string>
+    <string name="dejavu_settings_autoclose_tabs">ټبونه په اوتومات ډول بندول</string>
+    <string name="dejavu_settings_tabs_workspaces">ټبونه، ساحې او کانتینرونه</string>
+    <string name="dejavu_settings_tabs_workspaces_summary">د ټبونو بندول او ویده کول، کانتینرونه، کور پاڼه او لینکونه</string>
+    <string name="dejavu_settings_customize_summary">طرح، د ټب کړنې، مینو، نوارونه، پاسورډونه او ژبه</string>
+    <string name="dejavu_settings_bars_2">نوارونه</string>
+    <string name="dejavu_settings_bars_summary">وېب پاڼه، کور پاڼه، بشپړ سکرين، د ټبونو نوار او اشارې</string>
+    <string name="dejavu_settings_web_page">وېب پاڼه</string>
+    <string name="dejavu_settings_full_screen">بشپړ سکرين</string>
+    <string name="dejavu_settings_passwords_language">پاسورډونه او ژبه</string>
+    <string name="dejavu_settings_passwords_language_summary">اوتومات ډکول، لاسرسی، ژباړې او د AI کنټرولونه</string>
 </resources>

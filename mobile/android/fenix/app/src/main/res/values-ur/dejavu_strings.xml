@@ -419,14 +419,12 @@
     <string name="dejavu_protection_links">روابط سے ٹریکنگ ہٹائیں</string>
     <string name="dejavu_protection_hint">جو تحفظ آن ہو وہ آپ کو زیادہ محفوظ رکھتا ہے۔ ہر ایک بتاتا ہے کہ وہ کس چیز سے بچاتا ہے اور اس کی وجہ سے کیا کام کرنا چھوڑ سکتا ہے۔</string>
     <string name="dejavu_sync_zen_hint_unpinned">Zen میں، سیٹنگز کھولیں، پھر سنک، اور سائیڈ بار ہم وقت سازی کو آن کریں۔</string>
-    <string name="dejavu_settings_bars">بارز اور مینو</string>
     <string name="dejavu_bars_actions_bar">پتہ بار اوپر، ایکشن بار نیچے</string>
     <string name="dejavu_bars_actions_bar_summary">مزید کا مینو کھولنے کے لیے ایکشن بار کو اوپر سوائپ کریں۔</string>
     <string name="dejavu_bars_top">پتہ بار اوپر</string>
     <string name="dejavu_bars_top_summary">کوئی ایکشن بار نہیں۔ مزید کا مینو کھولنے کے لیے پتہ بار کو نیچے سوائپ کریں۔</string>
     <string name="dejavu_bars_bottom">پتہ بار نیچے</string>
     <string name="dejavu_bars_bottom_summary">کوئی ایکشن بار نہیں۔ مزید کا مینو کھولنے کے لیے پتہ بار کو اوپر سوائپ کریں۔</string>
-    <string name="dejavu_settings_screen">اسکرین</string>
     <string name="dejavu_settings_hide_system_bars">اسٹیٹس اور نیویگیشن بار چھپائیں</string>
     <string name="dejavu_settings_hide_system_bars_summary">جب کوئی صفحہ دکھایا جا رہا ہو۔ انہیں ایک لمحے کے لیے دیکھنے کے لیے اوپر یا نیچے کے کنارے سے سوائپ کریں۔</string>
     <string name="dejavu_bookmarks_export">فائل میں برآمد کریں</string>
@@ -471,9 +469,18 @@
     <string name="dejavu_feature_save_page">انٹرنیٹ کے بغیر پڑھنے کے لیے صفحات محفوظ کریں</string>
     <string name="dejavu_recent_search_text">اس تلاش کو حالیہ تلاشوں سے مٹائیں، یا تمام کو صاف کریں۔</string>
     <string name="dejavu_recent_search_clear">تلاش کی سابقات مٹائیں</string>
-    <string name="dejavu_settings_home_screen">ہوم اسکرین</string>
     <string name="dejavu_home_search_top">تلاش بار اوپر</string>
     <string name="dejavu_home_search_top_summary">ورک اسپیسز، ڈاؤن لوڈز، ایکسٹینشنز، بک مارکس اور سابقات نیچے ہوں گے۔</string>
     <string name="dejavu_home_search_bottom">تلاش بار نیچے</string>
     <string name="dejavu_home_search_bottom_summary">پہنچنا زیادہ آسان ہے۔ ورک اسپیسز، ڈاؤن لوڈز، ایکسٹینشنز، بک مارکس اور سابقات اوپر منتقل ہو جاتے ہیں۔</string>
+    <string name="dejavu_settings_autoclose_tabs">ٹیبز خودکار بند کریں</string>
+    <string name="dejavu_settings_tabs_workspaces">ٹیبز، ورک اسپیسز اور کنٹینرز</string>
+    <string name="dejavu_settings_tabs_workspaces_summary">ٹیبز کو بند کرنا اور سلانا، کنٹینرز، ابتدائی صفحہ اور لنکس</string>
+    <string name="dejavu_settings_customize_summary">تھیم، ٹیب ایکشنز، مینو، بارز، پاس ورڈز اور زبان</string>
+    <string name="dejavu_settings_bars_2">بارز</string>
+    <string name="dejavu_settings_bars_summary">ویب صفحہ، ابتدائی صفحہ، فل اسکرین، ٹیب بار اور اشارے</string>
+    <string name="dejavu_settings_web_page">ویب صفحہ</string>
+    <string name="dejavu_settings_full_screen">فل اسکرین</string>
+    <string name="dejavu_settings_passwords_language">پاس ورڈز اور زبان</string>
+    <string name="dejavu_settings_passwords_language_summary">آٹو فل، رسائی پزیری، ترجمے اور AI کنٹرولز</string>
 </resources>

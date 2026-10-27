@@ -419,14 +419,12 @@
     <string name="dejavu_protection_links">Kkes aḍfar seg yiseɣwan</string>
     <string name="dejavu_protection_hint">Ammesten yermden ad k-yeǧǧ deg laman ugar. Yal yiwen yeqqar-d ayen mgal i k-yettmesten d wayen izemren ad yeḥbes ssebba-s.</string>
     <string name="dejavu_sync_zen_hint_unpinned">Deg Zen, rẓem Tisɣal, sakin Asdukel, rnu sermed asdukel n ugalis adisan.</string>
-    <string name="dejavu_settings_bars">Ifeggagen d umuɣ</string>
     <string name="dejavu_bars_actions_bar">Afeggag n tansa deg ufella, afeggag n tigawin deg wadda</string>
     <string name="dejavu_bars_actions_bar_summary">Zuɣer afeggag n tigawin ɣer sennig akken ad terẓmeḍ Umuɣ Ugar.</string>
     <string name="dejavu_bars_top">Afeggag n tansa deg ufella</string>
     <string name="dejavu_bars_top_summary">War afeggag n tigawin. Zuɣer afeggag n tansa ɣer wadda akken ad terẓmeḍ Umuɣ Ugar.</string>
     <string name="dejavu_bars_bottom">Afeggag n tansa deg wadda</string>
     <string name="dejavu_bars_bottom_summary">War afeggag n tigawin. Zuɣer afeggag n tansa ɣer sennig akken ad terẓmeḍ Umuɣ Ugar.</string>
-    <string name="dejavu_settings_screen">Agdil</string>
     <string name="dejavu_settings_hide_system_bars">Ffer afeggag n waddad d win n yinig</string>
     <string name="dejavu_settings_hide_system_bars_summary">Mi ara d-tettwaskan tasna. Zuɣer seg yiri n ufella neɣ n wadda akken ad ten-twaliḍ cwiṭ.</string>
     <string name="dejavu_bookmarks_export">Sifeḍ ɣer ufaylu</string>
@@ -471,9 +469,18 @@
     <string name="dejavu_feature_save_page">Sekles isebtar i leqqraya war internet</string>
     <string name="dejavu_recent_search_text">Kkes anadi-a seg inadiyen n zdat, neɣ kkes akk.</string>
     <string name="dejavu_recent_search_clear">Kkes amazray n unadi</string>
-    <string name="dejavu_settings_home_screen">Agdil agejdan</string>
     <string name="dejavu_home_search_top">Afeggag n unadi deg ufella</string>
     <string name="dejavu_home_search_top_summary">Imukan n umahil, agamen, isiɣzaf, ticraḍ n tsna, azray deg wadda.</string>
     <string name="dejavu_home_search_bottom">Afeggag n unadi deg wadda</string>
     <string name="dejavu_home_search_bottom_summary">Fessus ugar ad tawḍeḍ ɣer-s. Imukan n umahil, agamen, isiɣzaf, ticraḍ n tsna, azray ad ddun ɣer ufella.</string>
+    <string name="dejavu_settings_autoclose_tabs">Amdal awurman n yiseksal</string>
+    <string name="dejavu_settings_tabs_workspaces">Iseksal, imukan n umahil d yisenduqen</string>
+    <string name="dejavu_settings_tabs_workspaces_summary">Amdal d yiḍes n yiseksal, isenduqen, tasna tagejdant d yiseɣwan</string>
+    <string name="dejavu_settings_customize_summary">Asgum, tigawin n useksel, umuɣ, ifeggagen, awalen uffiren d tutlayt</string>
+    <string name="dejavu_settings_bars_2">Ifeggagen</string>
+    <string name="dejavu_settings_bars_summary">Tasna web, tasna tagejdant, agdil aččuran, afeggag n yiseksal d yisillifen</string>
+    <string name="dejavu_settings_web_page">Tasna web</string>
+    <string name="dejavu_settings_full_screen">Agdil aččuran</string>
+    <string name="dejavu_settings_passwords_language">Awalen uffiren d tutlayt</string>
+    <string name="dejavu_settings_passwords_language_summary">Taččart tawurmant, tuffart, tisuqilin d yisenqaden n AI</string>
 </resources>

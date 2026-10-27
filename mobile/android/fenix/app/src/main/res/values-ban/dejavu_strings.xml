@@ -412,14 +412,12 @@
     <string name="dejavu_protection_links">Icalang pelacakan saking link</string>
     <string name="dejavu_protection_hint">Pangraksa sane urip ngawinang ragane sayan aman. Suang-suang nyinahang saking napi ipun ngaraksa miwah napi sane prasida nenten mamargi duaning ipun.</string>
     <string name="dejavu_sync_zen_hint_unpinned">Di Zen, bukak Settings, lantas Sync, lan idupang sidebar sync.</string>
-    <string name="dejavu_settings_bars">Bar lan menu</string>
     <string name="dejavu_bars_actions_bar">Bar alamat di duur, bar aksi di beten</string>
     <string name="dejavu_bars_actions_bar_summary">Usap bar aksi ka duur anggen ngungkab Menu tambahan.</string>
     <string name="dejavu_bars_top">Bar alamat di duur</string>
     <string name="dejavu_bars_top_summary">Tusing ada bar aksi. Usap bar alamat ka beten anggen ngungkab Menu tambahan.</string>
     <string name="dejavu_bars_bottom">Bar alamat di beten</string>
     <string name="dejavu_bars_bottom_summary">Tusing ada bar aksi. Usap bar alamat ka duur anggen ngungkab Menu tambahan.</string>
-    <string name="dejavu_settings_screen">Layar</string>
     <string name="dejavu_settings_hide_system_bars">Engkebang bar status miwah navigasi</string>
     <string name="dejavu_settings_hide_system_bars_summary">Rikala kaca kaedengang. Gesér saking pinggir duur utawi beten anggen nyingakin ipun akejep.</string>
     <string name="dejavu_bookmarks_export">Ekspor ka file</string>
@@ -463,9 +461,18 @@
     <string name="dejavu_feature_save_page">Simpen halaman anggen baca tanpa internet</string>
     <string name="dejavu_recent_search_text">Hapus pencarian puniki saking pencarian sané anyar, utawi hapus sami.</string>
     <string name="dejavu_recent_search_clear">Hapus riwayat pencarian</string>
-    <string name="dejavu_settings_home_screen">Layar utama</string>
     <string name="dejavu_home_search_top">Bar pencarian di duur</string>
     <string name="dejavu_home_search_top_summary">Genah, unduhan, ekstensi, markah, lan riwayat di beten.</string>
     <string name="dejavu_home_search_bottom">Bar pencarian di beten</string>
     <string name="dejavu_home_search_bottom_summary">Langkung gampang kajangkau. Genah, unduhan, ekstensi, markah, lan riwayat pindah ka duur.</string>
+    <string name="dejavu_settings_autoclose_tabs">Tutup tab otomatis</string>
+    <string name="dejavu_settings_tabs_workspaces">Tab, genah, lan wadah</string>
+    <string name="dejavu_settings_tabs_workspaces_summary">Nutup tab, tab pules, wadah, home page, lan link</string>
+    <string name="dejavu_settings_customize_summary">Tema, aksi tab, menu, bar, kruna sandi, lan basa</string>
+    <string name="dejavu_settings_bars_2">Bar</string>
+    <string name="dejavu_settings_bars_summary">Kaca web, home page, layar penuh, bar tab, lan gestur</string>
+    <string name="dejavu_settings_web_page">Kaca web</string>
+    <string name="dejavu_settings_full_screen">Layar penuh</string>
+    <string name="dejavu_settings_passwords_language">Kruna sandi lan basa</string>
+    <string name="dejavu_settings_passwords_language_summary">Isi otomatis, aksesibilitas, terjemahan, lan kontrol AI</string>
 </resources>

@@ -426,14 +426,12 @@
     <string name="dejavu_protection_links">Elimină urmărirea din linkuri</string>
     <string name="dejavu_protection_hint">O protecție activată te ține mai în siguranță. Fiecare spune de ce te apără și ce poate să nu mai funcționeze din cauza ei.</string>
     <string name="dejavu_sync_zen_hint_unpinned">În Zen, deschide Setări, apoi Sincronizare, și activează sincronizarea barei laterale.</string>
-    <string name="dejavu_settings_bars">Bare și meniu</string>
     <string name="dejavu_bars_actions_bar">Bara de adrese sus, bara de acțiuni jos</string>
     <string name="dejavu_bars_actions_bar_summary">Glisează bara de acțiuni în sus pentru a deschide meniul „Mai multe”.</string>
     <string name="dejavu_bars_top">Bara de adrese sus</string>
     <string name="dejavu_bars_top_summary">Fără bară de acțiuni. Glisează bara de adrese în jos pentru a deschide meniul „Mai multe”.</string>
     <string name="dejavu_bars_bottom">Bara de adrese jos</string>
     <string name="dejavu_bars_bottom_summary">Fără bară de acțiuni. Glisează bara de adrese în sus pentru a deschide meniul „Mai multe”.</string>
-    <string name="dejavu_settings_screen">Ecran</string>
     <string name="dejavu_settings_hide_system_bars">Ascunde barele de stare și de navigare</string>
     <string name="dejavu_settings_hide_system_bars_summary">Cât timp este afișată o pagină. Glisează de la marginea de sus sau de jos pentru a le vedea pentru o clipă.</string>
     <string name="dejavu_bookmarks_export">Exportă în fișier</string>
@@ -479,9 +477,18 @@
     <string name="dejavu_feature_save_page">Salvează pagini pentru a le citi fără internet</string>
     <string name="dejavu_recent_search_text">Șterge această căutare din căutările recente sau șterge-le pe toate.</string>
     <string name="dejavu_recent_search_clear">Șterge istoricul căutărilor</string>
-    <string name="dejavu_settings_home_screen">Ecran principal</string>
     <string name="dejavu_home_search_top">Bara de căutare sus</string>
     <string name="dejavu_home_search_top_summary">Spații de lucru, descărcări, extensii, marcaje și istoric jos.</string>
     <string name="dejavu_home_search_bottom">Bara de căutare jos</string>
     <string name="dejavu_home_search_bottom_summary">Mai ușor de atins. Spații de lucru, descărcări, extensii, marcaje și istoric se mută sus.</string>
+    <string name="dejavu_settings_autoclose_tabs">Închide automat filele</string>
+    <string name="dejavu_settings_tabs_workspaces">File, spații de lucru și containere</string>
+    <string name="dejavu_settings_tabs_workspaces_summary">Închiderea și hibernarea filelor, containere, pagină de start și linkuri</string>
+    <string name="dejavu_settings_customize_summary">Temă, acțiuni pentru file, meniu, bare, parole și limbă</string>
+    <string name="dejavu_settings_bars_2">Bare</string>
+    <string name="dejavu_settings_bars_summary">Pagină web, pagină de start, ecran complet, bară de file și gesturi</string>
+    <string name="dejavu_settings_web_page">Pagină web</string>
+    <string name="dejavu_settings_full_screen">Ecran complet</string>
+    <string name="dejavu_settings_passwords_language">Parole și limbă</string>
+    <string name="dejavu_settings_passwords_language_summary">Completare automată, accesibilitate, traduceri și comenzi AI</string>
 </resources>

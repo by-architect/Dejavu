@@ -419,14 +419,12 @@
     <string name="dejavu_protection_links">Siltemelerden baqlawdı alıp taslaw</string>
     <string name="dejavu_protection_hint">Qosılǵan qorǵaw sizdi qáwipsizirek etedi. Hár biri neden qorǵaytuǵının hám onıń sebebinen neniń islemey qalıwı múmkin ekenin aytadı.</string>
     <string name="dejavu_sync_zen_hint_unpinned">Zen-de Sazlawlardı, soń Sinxronlastırıwdı ashıń hám yan panel sinxronlastırıwın qosıń.</string>
-    <string name="dejavu_settings_bars">Paneller hám menyu</string>
     <string name="dejavu_bars_actions_bar">Mánzil qatarı joqarıda, áreketler paneli tómende</string>
     <string name="dejavu_bars_actions_bar_summary">«Kóbirek» menyusin ashıw ushın áreketler panelin joqarıǵa sırǵıtıń.</string>
     <string name="dejavu_bars_top">Mánzil qatarı joqarıda</string>
     <string name="dejavu_bars_top_summary">Áreketler paneli joq. «Kóbirek» menyusin ashıw ushın mánzil qatarın tómenge sırǵıtıń.</string>
     <string name="dejavu_bars_bottom">Mánzil qatarı tómende</string>
     <string name="dejavu_bars_bottom_summary">Áreketler paneli joq. «Kóbirek» menyusin ashıw ushın mánzil qatarın joqarıǵa sırǵıtıń.</string>
-    <string name="dejavu_settings_screen">Ekran</string>
     <string name="dejavu_settings_hide_system_bars">Jaǵday hám navigaciya panellerin jasırıw</string>
     <string name="dejavu_settings_hide_system_bars_summary">Bet kórsetilip turǵanda. Olardı bir sátke kóriw ushın joqarǵı yamasa tómengi shetten sırǵıtıń.</string>
     <string name="dejavu_bookmarks_export">Faylǵa eksportlaw</string>
@@ -471,9 +469,18 @@
     <string name="dejavu_feature_save_page">Betlerdi internetsiz oqıw ushın saqlań</string>
     <string name="dejavu_recent_search_text">Bul izlewdi sońǵı izlewlerińizden óshiriń yamasa barlıǵın tazalań.</string>
     <string name="dejavu_recent_search_clear">Izlew tariyxın tazalaw</string>
-    <string name="dejavu_settings_home_screen">Bas ekran</string>
     <string name="dejavu_home_search_top">Izlew qatarı joqarıda</string>
     <string name="dejavu_home_search_top_summary">Jumıs maydanları, júklengenler, keńeytiwler, betbelgiler hám tariyx tómende.</string>
     <string name="dejavu_home_search_bottom">Izlew qatarı tómende</string>
     <string name="dejavu_home_search_bottom_summary">Jetiwge ańsatıraq. Jumıs maydanları, júklengenler, keńeytiwler, betbelgiler hám tariyx joqarıǵa kóshedi.</string>
+    <string name="dejavu_settings_autoclose_tabs">Betlerdi avtomat tárizde jabıw</string>
+    <string name="dejavu_settings_tabs_workspaces">Betler, jumıs maydanları hám konteynerler</string>
+    <string name="dejavu_settings_tabs_workspaces_summary">Betlerdi jabıw hám uyqıǵa jiberiw, konteynerler, bas bet hám siltemeler</string>
+    <string name="dejavu_settings_customize_summary">Tema, bet áreketleri, menyu, paneller, paroller hám til</string>
+    <string name="dejavu_settings_bars_2">Paneller</string>
+    <string name="dejavu_settings_bars_summary">Veb-bet, bas bet, tolıq ekran, betler paneli hám háreketler</string>
+    <string name="dejavu_settings_web_page">Veb-bet</string>
+    <string name="dejavu_settings_full_screen">Tolıq ekran</string>
+    <string name="dejavu_settings_passwords_language">Paroller hám til</string>
+    <string name="dejavu_settings_passwords_language_summary">Avtomat tárizde toltırıw, arnawlı imkaniyatlar, awdarmalar hám AI basqarıwları</string>
 </resources>

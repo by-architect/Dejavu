@@ -419,14 +419,12 @@
     <string name="dejavu_protection_links">Fjarlægja rakningu úr tenglum</string>
     <string name="dejavu_protection_hint">Vörn sem kveikt er á eykur öryggi þitt. Hver og ein segir gegn hverju hún ver og hvað gæti hætt að virka vegna hennar.</string>
     <string name="dejavu_sync_zen_hint_unpinned">Í Zen skaltu opna Stillingar, svo Samstillingu, og kveikja á samstillingu hliðarstikunnar.</string>
-    <string name="dejavu_settings_bars">Stikur og valmynd</string>
     <string name="dejavu_bars_actions_bar">Veffangastika efst, aðgerðastika neðst</string>
     <string name="dejavu_bars_actions_bar_summary">Strjúktu aðgerðastikuna upp til að opna valmyndina „Meira“.</string>
     <string name="dejavu_bars_top">Veffangastika efst</string>
     <string name="dejavu_bars_top_summary">Engin aðgerðastika. Strjúktu veffangastikuna niður til að opna valmyndina „Meira“.</string>
     <string name="dejavu_bars_bottom">Veffangastika neðst</string>
     <string name="dejavu_bars_bottom_summary">Engin aðgerðastika. Strjúktu veffangastikuna upp til að opna valmyndina „Meira“.</string>
-    <string name="dejavu_settings_screen">Skjár</string>
     <string name="dejavu_settings_hide_system_bars">Fela stöðustiku og leiðsagnarstiku</string>
     <string name="dejavu_settings_hide_system_bars_summary">Á meðan síða er sýnd. Strjúktu inn frá efri eða neðri brún til að sjá þær í smástund.</string>
     <string name="dejavu_bookmarks_export">Flytja út í skrá</string>
@@ -471,9 +469,18 @@
     <string name="dejavu_feature_save_page">Vistaðu síður til að lesa án nets</string>
     <string name="dejavu_recent_search_text">Eyddu þessari leit úr nýlegum leitum eða hreinsaðu þær allar.</string>
     <string name="dejavu_recent_search_clear">Hreinsa leitarferil</string>
-    <string name="dejavu_settings_home_screen">Upphafsskjár</string>
     <string name="dejavu_home_search_top">Leitarstika efst</string>
     <string name="dejavu_home_search_top_summary">Vinnusvæði, sóttar skrár, forritsaukar, bókamerki og ferill neðst.</string>
     <string name="dejavu_home_search_bottom">Leitarstika neðst</string>
     <string name="dejavu_home_search_bottom_summary">Auðveldara að ná til. Vinnusvæði, sóttar skrár, forritsaukar, bókamerki og ferill færast efst.</string>
+    <string name="dejavu_settings_autoclose_tabs">Sjálfvirk lokun flipa</string>
+    <string name="dejavu_settings_tabs_workspaces">Flipar, vinnusvæði og hólf</string>
+    <string name="dejavu_settings_tabs_workspaces_summary">Lokun og svæfing flipa, hólf, upphafssíða og tenglar</string>
+    <string name="dejavu_settings_customize_summary">Þema, aðgerðir flipa, valmynd, stikur, lykilorð og tungumál</string>
+    <string name="dejavu_settings_bars_2">Stikur</string>
+    <string name="dejavu_settings_bars_summary">Vefsíða, upphafssíða, fullur skjár, flipastika og bendingar</string>
+    <string name="dejavu_settings_web_page">Vefsíða</string>
+    <string name="dejavu_settings_full_screen">Fullur skjár</string>
+    <string name="dejavu_settings_passwords_language">Lykilorð og tungumál</string>
+    <string name="dejavu_settings_passwords_language_summary">Sjálfvirk útfylling, aðgengileiki, þýðingar og gervigreindarstýringar</string>
 </resources>

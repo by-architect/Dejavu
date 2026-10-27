@@ -419,14 +419,12 @@
     <string name="dejavu_protection_links">Tracking aus Links entfernen</string>
     <string name="dejavu_protection_hint">Ein aktivierter Schutz macht dich sicherer. Bei jedem steht, wovor er schützt und was deswegen vielleicht nicht mehr funktioniert.</string>
     <string name="dejavu_sync_zen_hint_unpinned">Öffne in Zen die Einstellungen, dann Sync, und aktiviere die Synchronisierung der Seitenleiste.</string>
-    <string name="dejavu_settings_bars">Leisten und Menü</string>
     <string name="dejavu_bars_actions_bar">Adressleiste oben, Aktionsleiste unten</string>
     <string name="dejavu_bars_actions_bar_summary">Aktionsleiste nach oben wischen, um das Menü „Mehr“ zu öffnen.</string>
     <string name="dejavu_bars_top">Adressleiste oben</string>
     <string name="dejavu_bars_top_summary">Keine Aktionsleiste. Adressleiste nach unten wischen, um das Menü „Mehr“ zu öffnen.</string>
     <string name="dejavu_bars_bottom">Adressleiste unten</string>
     <string name="dejavu_bars_bottom_summary">Keine Aktionsleiste. Adressleiste nach oben wischen, um das Menü „Mehr“ zu öffnen.</string>
-    <string name="dejavu_settings_screen">Bildschirm</string>
     <string name="dejavu_settings_hide_system_bars">Status- und Navigationsleiste ausblenden</string>
     <string name="dejavu_settings_hide_system_bars_summary">Während eine Seite angezeigt wird. Vom oberen oder unteren Rand wischen, um sie kurz zu sehen.</string>
     <string name="dejavu_bookmarks_export">In Datei exportieren</string>
@@ -471,9 +469,18 @@
     <string name="dejavu_feature_save_page">Seiten speichern und ohne Internet lesen</string>
     <string name="dejavu_recent_search_text">Diese Suchanfrage aus den letzten Suchanfragen löschen oder alle löschen.</string>
     <string name="dejavu_recent_search_clear">Suchverlauf löschen</string>
-    <string name="dejavu_settings_home_screen">Startbildschirm</string>
     <string name="dejavu_home_search_top">Suchleiste oben</string>
     <string name="dejavu_home_search_top_summary">Arbeitsbereiche, Downloads, Erweiterungen, Lesezeichen und Chronik unten.</string>
     <string name="dejavu_home_search_bottom">Suchleiste unten</string>
     <string name="dejavu_home_search_bottom_summary">Leichter zu erreichen. Arbeitsbereiche, Downloads, Erweiterungen, Lesezeichen und Chronik wandern nach oben.</string>
+    <string name="dejavu_settings_autoclose_tabs">Tabs automatisch schließen</string>
+    <string name="dejavu_settings_tabs_workspaces">Tabs, Arbeitsbereiche und Container</string>
+    <string name="dejavu_settings_tabs_workspaces_summary">Tabs schließen und schlafen legen, Container, Startseite und Links</string>
+    <string name="dejavu_settings_customize_summary">Theme, Tab-Aktionen, Menü, Leisten, Passwörter und Sprache</string>
+    <string name="dejavu_settings_bars_2">Leisten</string>
+    <string name="dejavu_settings_bars_summary">Webseite, Startseite, Vollbild, Tab-Leiste und Gesten</string>
+    <string name="dejavu_settings_web_page">Webseite</string>
+    <string name="dejavu_settings_full_screen">Vollbild</string>
+    <string name="dejavu_settings_passwords_language">Passwörter und Sprache</string>
+    <string name="dejavu_settings_passwords_language_summary">Automatisches Ausfüllen, Barrierefreiheit, Übersetzungen und KI-Steuerung</string>
 </resources>

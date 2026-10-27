@@ -419,14 +419,12 @@
     <string name="dejavu_protection_links">Keçidlərdən izləməni sil</string>
     <string name="dejavu_protection_hint">Açıq olan qoruma sizi daha təhlükəsiz saxlayır. Hər biri nədən qoruduğunu və onun ucbatından nəyin işləməyi dayandıra biləcəyini göstərir.</string>
     <string name="dejavu_sync_zen_hint_unpinned">Zen-də Tənzimləmələri, sonra Sinxronlaşdırmanı açın və yan panel sinxronlaşdırmasını aktivləşdirin.</string>
-    <string name="dejavu_settings_bars">Panellər və menyu</string>
     <string name="dejavu_bars_actions_bar">Ünvan sətri yuxarıda, əməliyyatlar paneli aşağıda</string>
     <string name="dejavu_bars_actions_bar_summary">“Daha çox” menyusunu açmaq üçün əməliyyatlar panelini yuxarı sürüşdürün.</string>
     <string name="dejavu_bars_top">Ünvan sətri yuxarıda</string>
     <string name="dejavu_bars_top_summary">Əməliyyatlar paneli yoxdur. “Daha çox” menyusunu açmaq üçün ünvan sətrini aşağı sürüşdürün.</string>
     <string name="dejavu_bars_bottom">Ünvan sətri aşağıda</string>
     <string name="dejavu_bars_bottom_summary">Əməliyyatlar paneli yoxdur. “Daha çox” menyusunu açmaq üçün ünvan sətrini yuxarı sürüşdürün.</string>
-    <string name="dejavu_settings_screen">Ekran</string>
     <string name="dejavu_settings_hide_system_bars">Status və naviqasiya panellərini gizlət</string>
     <string name="dejavu_settings_hide_system_bars_summary">Səhifə göstərilərkən. Onları bir anlıq görmək üçün yuxarı və ya aşağı kənardan sürüşdürün.</string>
     <string name="dejavu_bookmarks_export">Fayla ixrac et</string>
@@ -471,9 +469,18 @@
     <string name="dejavu_feature_save_page">Səhifələri internetsiz oxumaq üçün saxlayın</string>
     <string name="dejavu_recent_search_text">Bu axtarışı son axtarışlardan silin və ya hamısını təmizləyin.</string>
     <string name="dejavu_recent_search_clear">Axtarış tarixçəsini təmizlə</string>
-    <string name="dejavu_settings_home_screen">Ana ekran</string>
     <string name="dejavu_home_search_top">Axtarış sətri yuxarıda</string>
     <string name="dejavu_home_search_top_summary">İş sahələri, endirmələr, əlavələr, əlfəcinlər və tarixçə aşağıda.</string>
     <string name="dejavu_home_search_bottom">Axtarış sətri aşağıda</string>
     <string name="dejavu_home_search_bottom_summary">Çatmaq daha asandır. İş sahələri, endirmələr, əlavələr, əlfəcinlər və tarixçə yuxarıya köçürülür.</string>
+    <string name="dejavu_settings_autoclose_tabs">Vərəqləri avtomatik bağla</string>
+    <string name="dejavu_settings_tabs_workspaces">Vərəqlər, iş sahələri və konteynerlər</string>
+    <string name="dejavu_settings_tabs_workspaces_summary">Vərəqlərin bağlanması və yuxusu, konteynerlər, ana səhifə və keçidlər</string>
+    <string name="dejavu_settings_customize_summary">Mövzu, vərəq əməliyyatları, menyu, panellər, parollar və dil</string>
+    <string name="dejavu_settings_bars_2">Panellər</string>
+    <string name="dejavu_settings_bars_summary">Veb səhifə, ana səhifə, tam ekran, vərəq paneli və jestlər</string>
+    <string name="dejavu_settings_web_page">Veb səhifə</string>
+    <string name="dejavu_settings_full_screen">Tam ekran</string>
+    <string name="dejavu_settings_passwords_language">Parollar və dil</string>
+    <string name="dejavu_settings_passwords_language_summary">Avtomatik doldurma, əlçatanlıq, tərcümələr və süni intellekt idarəetməsi</string>
 </resources>

@@ -419,14 +419,12 @@
     <string name="dejavu_protection_links">شوێنکەوتن لە بەستەرەکان لاببە</string>
     <string name="dejavu_protection_hint">پاراستنێکی چالاک زیاتر پارێزراوت دەکات. هەر یەکێکیان دەڵێت لە چی دەتپارێزێت و چی لەوانەیە بەهۆیەوە کار نەکات.</string>
     <string name="dejavu_sync_zen_hint_unpinned">لە Zen دا، «ڕێکخستنەکان» بکەرەوە، پاشان «هاوکاتکردن»، و هاوکاتکردنی لاتەنیشت چالاک بکە.</string>
-    <string name="dejavu_settings_bars">شریتەکان و پێڕست</string>
     <string name="dejavu_bars_actions_bar">شریتی ناونیشان لە سەرەوە، شریتی کردارەکان لە خوارەوە</string>
     <string name="dejavu_bars_actions_bar_summary">شریتی کردارەکان بۆ سەرەوە ڕابکێشە بۆ کردنەوەی پێڕستی زیاتر.</string>
     <string name="dejavu_bars_top">شریتی ناونیشان لە سەرەوە</string>
     <string name="dejavu_bars_top_summary">بێ شریتی کردارەکان. شریتی ناونیشان بۆ خوارەوە ڕابکێشە بۆ کردنەوەی پێڕستی زیاتر.</string>
     <string name="dejavu_bars_bottom">شریتی ناونیشان لە خوارەوە</string>
     <string name="dejavu_bars_bottom_summary">بێ شریتی کردارەکان. شریتی ناونیشان بۆ سەرەوە ڕابکێشە بۆ کردنەوەی پێڕستی زیاتر.</string>
-    <string name="dejavu_settings_screen">شاشە</string>
     <string name="dejavu_settings_hide_system_bars">شاردنەوەی شریتی دۆخ و ڕێنیشاندەر</string>
     <string name="dejavu_settings_hide_system_bars_summary">کاتێک پەڕەیەک پیشان دەدرێت. لە لێواری سەرەوە یان خوارەوە ڕابکێشە بۆ ئەوەی بۆ ساتێک بیانبینیت.</string>
     <string name="dejavu_bookmarks_export">هەناردەکردن بۆ پەڕگە</string>
@@ -471,9 +469,18 @@
     <string name="dejavu_feature_save_page">پەڕەکان پاشەکەوت بکە بۆ خوێندنەوە بێ ئینتەرنێت</string>
     <string name="dejavu_recent_search_text">ئەم گەڕانە لە گەڕانە تازەکان بسڕەوە، یان هەموویان بسڕەوە.</string>
     <string name="dejavu_recent_search_clear">مێژووی گەڕان بسڕەوە</string>
-    <string name="dejavu_settings_home_screen">شاشەی سەرەکی</string>
     <string name="dejavu_home_search_top">شریتی گەڕان لە سەرەوە</string>
     <string name="dejavu_home_search_top_summary">فەزاکان، داگرتنەکان، پێوەکراوەکان، نیشانەکان و مێژوو لە خوارەوە پیشان دەدرێن.</string>
     <string name="dejavu_home_search_bottom">شریتی گەڕان لە خوارەوە</string>
     <string name="dejavu_home_search_bottom_summary">گەیشتنی ئاسانترە. فەزاکان، داگرتنەکان، پێوەکراوەکان، نیشانەکان و مێژوو دەگوازرێنەوە بۆ سەرەوە.</string>
+    <string name="dejavu_settings_autoclose_tabs">داخستنی خۆکاری بازدەرەکان</string>
+    <string name="dejavu_settings_tabs_workspaces">بازدەرەکان، فەزاکان و کۆنتەینەرەکان</string>
+    <string name="dejavu_settings_tabs_workspaces_summary">داخستن و خەوتاندنی بازدەرەکان، کۆنتەینەرەکان، پەڕەی سەرەکی و بەستەرەکان</string>
+    <string name="dejavu_settings_customize_summary">ڕووکار، کردارەکانی بازدەر، پێڕست، شریتەکان، وشە نهێنییەکان و زمان</string>
+    <string name="dejavu_settings_bars_2">شریتەکان</string>
+    <string name="dejavu_settings_bars_summary">پەڕەی وێب، پەڕەی سەرەکی، پڕبەشاشە، شریتی بازدەرەکان و جوڵاندنەکان</string>
+    <string name="dejavu_settings_web_page">پەڕەی وێب</string>
+    <string name="dejavu_settings_full_screen">پڕبەشاشە</string>
+    <string name="dejavu_settings_passwords_language">وشە نهێنییەکان و زمان</string>
+    <string name="dejavu_settings_passwords_language_summary">پڕکردنەوەی خۆکار، دەستپێگەیشتن، وەرگێڕانەکان و کۆنترۆڵەکانی AI</string>
 </resources>

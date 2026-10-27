@@ -419,14 +419,12 @@
     <string name="dejavu_protection_links">Leva o traciamento da-i ligammi</string>
     <string name="dejavu_protection_hint">Unna proteçion ativa a te mantegne ciù seguo. Ògnunn-a a dixe da cöse a te protezze e cöse o peu no fonçionâ ciù pe caxon sò.</string>
     <string name="dejavu_sync_zen_hint_unpinned">Inte Zen, arvi Inpostaçioin, poi Sincronizzaçion, e attivi a sincronizzaçion de a barra laterale.</string>
-    <string name="dejavu_settings_bars">Barre e menû</string>
     <string name="dejavu_bars_actions_bar">Barra di indirissi in çimma, barra de-e açioin in fondo</string>
     <string name="dejavu_bars_actions_bar_summary">Fa scorrî in sciù a barra de-e açioin pe arvî o menû Ciù.</string>
     <string name="dejavu_bars_top">Barra di indirissi in çimma</string>
     <string name="dejavu_bars_top_summary">Nisciunn-a barra de-e açioin. Fa scorrî in zu a barra di indirissi pe arvî o menû Ciù.</string>
     <string name="dejavu_bars_bottom">Barra di indirissi in fondo</string>
     <string name="dejavu_bars_bottom_summary">Nisciunn-a barra de-e açioin. Fa scorrî in sciù a barra di indirissi pe arvî o menû Ciù.</string>
-    <string name="dejavu_settings_screen">Schermo</string>
     <string name="dejavu_settings_hide_system_bars">Ascondi e bare de stato e de navegaçion</string>
     <string name="dejavu_settings_hide_system_bars_summary">Quande se mostra \'na pagina. Scorri da-o bòrdo de d\'ato ò de d\'abasso pe vedile pe \'n momento.</string>
     <string name="dejavu_bookmarks_export">Esporta inte \'n schedaio</string>
@@ -471,9 +469,18 @@
     <string name="dejavu_feature_save_page">Sarva e pagine pe lêze sensa Internet</string>
     <string name="dejavu_recent_search_text">Scancella sta riçerca da-e teu riçerche recenti, ò scancellile tutte.</string>
     <string name="dejavu_recent_search_clear">Scancella a stöia de riçerche</string>
-    <string name="dejavu_settings_home_screen">Scermo prinçipâ</string>
     <string name="dejavu_home_search_top">Barra de riçerca in çimma</string>
     <string name="dejavu_home_search_top_summary">Spaçi de travaggio, descaregamenti, estensioin, segnalibbri e stöia in fondo.</string>
     <string name="dejavu_home_search_bottom">Barra de riçerca in fondo</string>
     <string name="dejavu_home_search_bottom_summary">Ciù façile da arrivâ. Spaçi de travaggio, descaregamenti, estensioin, segnalibbri e stöia van in çimma.</string>
+    <string name="dejavu_settings_autoclose_tabs">Særa i feuggi in aotomatico</string>
+    <string name="dejavu_settings_tabs_workspaces">Feuggi, spaçi de travaggio e contenitoi</string>
+    <string name="dejavu_settings_tabs_workspaces_summary">Særâ e addormî i feuggi, contenitoi, pagina prinçipâ e ligammi</string>
+    <string name="dejavu_settings_customize_summary">Tema, açioin di feuggi, menû, barre, poule segrete e lengoa</string>
+    <string name="dejavu_settings_bars_2">Barre</string>
+    <string name="dejavu_settings_bars_summary">Pagina web, pagina prinçipâ, a tutto schermo, barra di feuggi e gesti</string>
+    <string name="dejavu_settings_web_page">Pagina web</string>
+    <string name="dejavu_settings_full_screen">A tutto schermo</string>
+    <string name="dejavu_settings_passwords_language">Poule segrete e lengoa</string>
+    <string name="dejavu_settings_passwords_language_summary">Aoto-inpimento, acesibilitæ, traduçioin e contròlli IA</string>
 </resources>

@@ -419,14 +419,12 @@
     <string name="dejavu_protection_links">Leva u trazzamentu dî lijami</string>
     <string name="dejavu_protection_hint">Na prutizzioni attiva ti teni cchiù sicuru. Ognuna dici di chi cosa ti prutegi e chi cosa pò smèttiri di funziunari pi causa sò.</string>
     <string name="dejavu_sync_zen_hint_unpinned">Nta Zen, grapi Mpustazzioni, doppu Sincronizzazzioni, e attiva a sincronizzazzioni dâ barra laterali.</string>
-    <string name="dejavu_settings_bars">Barri e menù</string>
     <string name="dejavu_bars_actions_bar">Barra di l\'indirizzu susu, barra dî azzioni jusu</string>
     <string name="dejavu_bars_actions_bar_summary">Tira ncapu a barra dî azzioni pi grapiri u menù Cchiù.</string>
     <string name="dejavu_bars_top">Barra di l\'indirizzu susu</string>
     <string name="dejavu_bars_top_summary">Nudda barra dî azzioni. Tira jusu a barra di l\'indirizzu pi grapiri u menù Cchiù.</string>
     <string name="dejavu_bars_bottom">Barra di l\'indirizzu jusu</string>
     <string name="dejavu_bars_bottom_summary">Nudda barra dî azzioni. Tira ncapu a barra di l\'indirizzu pi grapiri u menù Cchiù.</string>
-    <string name="dejavu_settings_screen">Schermu</string>
     <string name="dejavu_settings_hide_system_bars">Ammuccia i barri di statu e di navigazzioni</string>
     <string name="dejavu_settings_hide_system_bars_summary">Mentri chi s\'ammustra na pàggina. Sciddica dû bordu supiriuri o nfiriuri pi vìdirli pi nu mumentu.</string>
     <string name="dejavu_bookmarks_export">Esporta nta un pricu</string>
@@ -471,9 +469,18 @@
     <string name="dejavu_feature_save_page">Sarva i pàggini pi leggiri senza internet</string>
     <string name="dejavu_recent_search_text">Scancella stu risciutu di li risciduti ricenti, o scancella tutti quanti.</string>
     <string name="dejavu_recent_search_clear">Scancella la crunuluggìa dî risciduti</string>
-    <string name="dejavu_settings_home_screen">Schermata principali</string>
     <string name="dejavu_home_search_top">Barra di ricerca susu</string>
     <string name="dejavu_home_search_top_summary">Spazzi di travagghiu, scarricamenti, stinneri, nzingalibbra e crunuluggìa jusu.</string>
     <string name="dejavu_home_search_bottom">Barra di ricerca jusu</string>
     <string name="dejavu_home_search_bottom_summary">Cchiù facili di arrivari. Spazzi di travagghiu, scarricamenti, stinneri, nzingalibbra e crunuluggìa vannu susu.</string>
+    <string name="dejavu_settings_autoclose_tabs">Chiujuta autumàtica dî schedi</string>
+    <string name="dejavu_settings_tabs_workspaces">Schedi, spazzi di travagghiu e cuntinituri</string>
+    <string name="dejavu_settings_tabs_workspaces_summary">Chiujuta e sonnu dî schedi, cuntinituri, pàggina mastra e lijami</string>
+    <string name="dejavu_settings_customize_summary">Tema, azzioni dî schedi, menù, barri, chiavi e lingua</string>
+    <string name="dejavu_settings_bars_2">Barri</string>
+    <string name="dejavu_settings_bars_summary">Pàggina web, pàggina mastra, tuttu schirmu, barra dî schedi e muvimenti</string>
+    <string name="dejavu_settings_web_page">Pàggina web</string>
+    <string name="dejavu_settings_full_screen">Tuttu schirmu</string>
+    <string name="dejavu_settings_passwords_language">Chiavi e lingua</string>
+    <string name="dejavu_settings_passwords_language_summary">Jinchimentu autumàticu, accissibbilità, traduzzioni e cuntrolli IA</string>
 </resources>

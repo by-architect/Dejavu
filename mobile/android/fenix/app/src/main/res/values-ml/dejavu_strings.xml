@@ -419,14 +419,12 @@
     <string name="dejavu_protection_links">ലിങ്കുകളിൽ നിന്ന് ട്രാക്കിങ് നീക്കുക</string>
     <string name="dejavu_protection_hint">ഓണാക്കിയ ഒരു സംരക്ഷണം നിങ്ങളെ കൂടുതൽ സുരക്ഷിതരാക്കുന്നു. ഓരോന്നും എന്തിൽ നിന്നാണ് സംരക്ഷിക്കുന്നതെന്നും അതുകാരണം എന്ത് പ്രവർത്തിക്കാതായേക്കാമെന്നും പറയുന്നു.</string>
     <string name="dejavu_sync_zen_hint_unpinned">Zen-ൽ, ക്രമീകരണങ്ങൾ തുറന്ന്, പിന്നെ സിങ്ക് തുറന്ന്, സൈഡ്‌ബാർ സിങ്ക് ഓൺ ചെയ്യുക.</string>
-    <string name="dejavu_settings_bars">ബാറുകളും മെനുവും</string>
     <string name="dejavu_bars_actions_bar">വിലാസ ബാർ മുകളിൽ, പ്രവർത്തന ബാർ താഴെ</string>
     <string name="dejavu_bars_actions_bar_summary">കൂടുതൽ മെനു തുറക്കാൻ പ്രവർത്തന ബാർ മുകളിലേക്ക് സ്വൈപ്പ് ചെയ്യുക.</string>
     <string name="dejavu_bars_top">വിലാസ ബാർ മുകളിൽ</string>
     <string name="dejavu_bars_top_summary">പ്രവർത്തന ബാർ ഇല്ല. കൂടുതൽ മെനു തുറക്കാൻ വിലാസ ബാർ താഴേക്ക് സ്വൈപ്പ് ചെയ്യുക.</string>
     <string name="dejavu_bars_bottom">വിലാസ ബാർ താഴെ</string>
     <string name="dejavu_bars_bottom_summary">പ്രവർത്തന ബാർ ഇല്ല. കൂടുതൽ മെനു തുറക്കാൻ വിലാസ ബാർ മുകളിലേക്ക് സ്വൈപ്പ് ചെയ്യുക.</string>
-    <string name="dejavu_settings_screen">സ്ക്രീൻ</string>
     <string name="dejavu_settings_hide_system_bars">സ്റ്റാറ്റസ്, നാവിഗേഷൻ ബാറുകൾ മറയ്ക്കുക</string>
     <string name="dejavu_settings_hide_system_bars_summary">ഒരു പേജ് കാണിക്കുമ്പോൾ. അവ ഒരു നിമിഷം കാണാൻ മുകളിലെയോ താഴത്തെയോ അരികിൽ നിന്ന് സ്വൈപ്പ് ചെയ്യുക.</string>
     <string name="dejavu_bookmarks_export">ഫയലിലേക്കു് കയറ്റുമതിക്കുക</string>
@@ -471,9 +469,18 @@
     <string name="dejavu_feature_save_page">ഇന്റർനെറ്റ് ഇല്ലാതെ വായിക്കാൻ താളുകൾ കരുതിവയ്ക്കുക</string>
     <string name="dejavu_recent_search_text">ഈ തിരയൽ നിങ്ങളുടെ സമീപകാല തിരയലുകളിൽ നിന്ന് ഇല്ലാതാക്കുക, അല്ലെങ്കിൽ എല്ലാം മായ്ക്കുക.</string>
     <string name="dejavu_recent_search_clear">തിരയൽ ചരിത്രം മായ്ക്കുക</string>
-    <string name="dejavu_settings_home_screen">ഹോം സ്ക്രീൻ</string>
     <string name="dejavu_home_search_top">തിരയൽ ബാർ മുകളിൽ</string>
     <string name="dejavu_home_search_top_summary">പണിയിടങ്ങൾ, ഇറക്കിവയ്ക്കലുകൾ, വിപുലീകരണങ്ങൾ, അടയാളക്കുറിപ്പുകള്‍, നാള്‍വഴി എന്നിവ താഴെയാണ്.</string>
     <string name="dejavu_home_search_bottom">തിരയൽ ബാർ താഴെ</string>
     <string name="dejavu_home_search_bottom_summary">എത്താൻ എളുപ്പം. പണിയിടങ്ങൾ, ഇറക്കിവയ്ക്കലുകൾ, വിപുലീകരണങ്ങൾ, അടയാളക്കുറിപ്പുകള്‍, നാള്‍വഴി എന്നിവ മുകളിലേക്ക് മാറുന്നു.</string>
+    <string name="dejavu_settings_autoclose_tabs">ടാബുകൾ സ്വയം അടയ്ക്കുക</string>
+    <string name="dejavu_settings_tabs_workspaces">ടാബുകളും പണിയിടങ്ങളും കണ്ടെയ്നറുകളും</string>
+    <string name="dejavu_settings_tabs_workspaces_summary">ടാബുകൾ അടയ്ക്കലും സ്ലീപ്പിലാക്കലും, കണ്ടെയ്നറുകൾ, ആമുഖം, ലിങ്കുകൾ</string>
+    <string name="dejavu_settings_customize_summary">കെട്ടും മട്ടും, ടാബ് പ്രവർത്തനങ്ങൾ, മെനു, ബാറുകൾ, ഒളിവാക്കുകൾ, ഭാഷ</string>
+    <string name="dejavu_settings_bars_2">ബാറുകൾ</string>
+    <string name="dejavu_settings_bars_summary">വെബ് താൾ, ആമുഖം, പൂർണ്ണ പ്രതലം, ടാബുപ്പട്ട, ആംഗ്യങ്ങൾ</string>
+    <string name="dejavu_settings_web_page">വെബ് താൾ</string>
+    <string name="dejavu_settings_full_screen">പൂർണ്ണ പ്രതലം</string>
+    <string name="dejavu_settings_passwords_language">ഒളിവാക്കുകളും ഭാഷയും</string>
+    <string name="dejavu_settings_passwords_language_summary">തന്നെതാനെ പൂരിപ്പിക്കുക, ആക്സസ്സെബിലിറ്റി, വിവർത്തനങ്ങൾ, AI നിയന്ത്രണങ്ങൾ</string>
 </resources>

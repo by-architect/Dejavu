@@ -419,14 +419,12 @@
     <string name="dejavu_protection_links">Ta bort spårning från länkar</string>
     <string name="dejavu_protection_hint">Ett skydd som är på gör dig säkrare. Vid varje skydd står vad det skyddar mot och vad som kan sluta fungera på grund av det.</string>
     <string name="dejavu_sync_zen_hint_unpinned">I Zen öppnar du Inställningar, sedan Synkronisering, och slår på synkronisering av sidofältet.</string>
-    <string name="dejavu_settings_bars">Fält och meny</string>
     <string name="dejavu_bars_actions_bar">Adressfältet överst, åtgärdsfältet nederst</string>
     <string name="dejavu_bars_actions_bar_summary">Svep åtgärdsfältet uppåt för att öppna Mer-menyn.</string>
     <string name="dejavu_bars_top">Adressfältet överst</string>
     <string name="dejavu_bars_top_summary">Inget åtgärdsfält. Svep adressfältet nedåt för att öppna Mer-menyn.</string>
     <string name="dejavu_bars_bottom">Adressfältet nederst</string>
     <string name="dejavu_bars_bottom_summary">Inget åtgärdsfält. Svep adressfältet uppåt för att öppna Mer-menyn.</string>
-    <string name="dejavu_settings_screen">Skärm</string>
     <string name="dejavu_settings_hide_system_bars">Dölj status- och navigeringsfältet</string>
     <string name="dejavu_settings_hide_system_bars_summary">Medan en sida visas. Svep in från över- eller underkanten för att se dem en stund.</string>
     <string name="dejavu_bookmarks_export">Exportera till fil</string>
@@ -471,9 +469,18 @@
     <string name="dejavu_feature_save_page">Spara sidor för att läsa utan internet</string>
     <string name="dejavu_recent_search_text">Ta bort den här sökningen från dina senaste sökningar, eller rensa alla.</string>
     <string name="dejavu_recent_search_clear">Rensa sökhistorik</string>
-    <string name="dejavu_settings_home_screen">Startskärm</string>
     <string name="dejavu_home_search_top">Sökfältet överst</string>
     <string name="dejavu_home_search_top_summary">Arbetsytor, hämtningar, tillägg, bokmärken och historik nederst.</string>
     <string name="dejavu_home_search_bottom">Sökfältet nederst</string>
     <string name="dejavu_home_search_bottom_summary">Lättare att nå. Arbetsytor, hämtningar, tillägg, bokmärken och historik flyttas överst.</string>
+    <string name="dejavu_settings_autoclose_tabs">Stäng flikar automatiskt</string>
+    <string name="dejavu_settings_tabs_workspaces">Flikar, arbetsytor och behållare</string>
+    <string name="dejavu_settings_tabs_workspaces_summary">Stängning och vilande flikar, behållare, startsida och länkar</string>
+    <string name="dejavu_settings_customize_summary">Tema, flikåtgärder, meny, fält, lösenord och språk</string>
+    <string name="dejavu_settings_bars_2">Fält</string>
+    <string name="dejavu_settings_bars_summary">Webbsida, startsida, helskärm, flikfält och gester</string>
+    <string name="dejavu_settings_web_page">Webbsida</string>
+    <string name="dejavu_settings_full_screen">Helskärm</string>
+    <string name="dejavu_settings_passwords_language">Lösenord och språk</string>
+    <string name="dejavu_settings_passwords_language_summary">Autofyll, hjälpmedel, översättningar och AI-kontroller</string>
 </resources>

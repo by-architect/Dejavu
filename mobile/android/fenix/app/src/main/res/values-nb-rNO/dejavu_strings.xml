@@ -419,14 +419,12 @@
     <string name="dejavu_protection_links">Fjern sporing fra lenker</string>
     <string name="dejavu_protection_hint">En beskyttelse som er på, gjør deg tryggere. Hver av dem forteller hva den beskytter mot, og hva som kan slutte å virke på grunn av den.</string>
     <string name="dejavu_sync_zen_hint_unpinned">Åpne Innstillinger i Zen, deretter Synkronisering, og slå på synkronisering av sidepanelet.</string>
-    <string name="dejavu_settings_bars">Verktøylinjer og meny</string>
     <string name="dejavu_bars_actions_bar">Adresselinje øverst, handlingslinje nederst</string>
     <string name="dejavu_bars_actions_bar_summary">Sveip opp handlingslinjen for å åpne Mer-menyen.</string>
     <string name="dejavu_bars_top">Adresselinje øverst</string>
     <string name="dejavu_bars_top_summary">Ingen handlingslinje. Sveip ned adresselinjen for å åpne Mer-menyen.</string>
     <string name="dejavu_bars_bottom">Adresselinje nederst</string>
     <string name="dejavu_bars_bottom_summary">Ingen handlingslinje. Sveip opp adresselinjen for å åpne Mer-menyen.</string>
-    <string name="dejavu_settings_screen">Skjerm</string>
     <string name="dejavu_settings_hide_system_bars">Skjul status- og navigasjonsfeltet</string>
     <string name="dejavu_settings_hide_system_bars_summary">Mens en side vises. Sveip inn fra øvre eller nedre kant for å se dem et øyeblikk.</string>
     <string name="dejavu_bookmarks_export">Eksporter til fil</string>
@@ -471,9 +469,18 @@
     <string name="dejavu_feature_save_page">Lagre sider du kan lese uten internett</string>
     <string name="dejavu_recent_search_text">Slett dette søket fra de nylige søkene dine, eller tøm alle.</string>
     <string name="dejavu_recent_search_clear">Tøm søkehistorikk</string>
-    <string name="dejavu_settings_home_screen">Startskjerm</string>
     <string name="dejavu_home_search_top">Søkelinje øverst</string>
     <string name="dejavu_home_search_top_summary">Arbeidsområder, nedlastinger, utvidelser, bokmerker og historikk nederst.</string>
     <string name="dejavu_home_search_bottom">Søkelinje nederst</string>
     <string name="dejavu_home_search_bottom_summary">Lettere å nå. Arbeidsområder, nedlastinger, utvidelser, bokmerker og historikk flyttes øverst.</string>
+    <string name="dejavu_settings_autoclose_tabs">Lukk faner automatisk</string>
+    <string name="dejavu_settings_tabs_workspaces">Faner, arbeidsområder og beholdere</string>
+    <string name="dejavu_settings_tabs_workspaces_summary">Lukking av faner, faner i dvale, beholdere, startside og lenker</string>
+    <string name="dejavu_settings_customize_summary">Tema, fanehandlinger, meny, linjer, passord og språk</string>
+    <string name="dejavu_settings_bars_2">Linjer</string>
+    <string name="dejavu_settings_bars_summary">Nettside, startside, fullskjerm, fanelinje og bevegelser</string>
+    <string name="dejavu_settings_web_page">Nettside</string>
+    <string name="dejavu_settings_full_screen">Fullskjerm</string>
+    <string name="dejavu_settings_passwords_language">Passord og språk</string>
+    <string name="dejavu_settings_passwords_language_summary">Autofyll, tilgjengelighet, oversettelser og AI-kontroller</string>
 </resources>

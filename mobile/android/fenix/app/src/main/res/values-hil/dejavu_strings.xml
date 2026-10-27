@@ -419,14 +419,12 @@
     <string name="dejavu_protection_links">Kuhaa ang pagsunod sa mga link</string>
     <string name="dejavu_protection_hint">Ang proteksyon nga naka-on nagahimo sa imo nga mas luwas. Ginasiling sang kada isa kon ano ang ginapugngan sini kag kon ano ang mahimo indi na mag-obra tungod sini.</string>
     <string name="dejavu_sync_zen_hint_unpinned">Sa Zen, abrihan ang Settings, dayon Sync, kag i-on ang sidebar sync.</string>
-    <string name="dejavu_settings_bars">Mga bar kag menu</string>
     <string name="dejavu_bars_actions_bar">Bar sang address sa ibabaw, bar sang mga aksyon sa idalom</string>
     <string name="dejavu_bars_actions_bar_summary">I-swipe pataas ang bar sang mga aksyon para maabrihan ang Dugang nga menu.</string>
     <string name="dejavu_bars_top">Bar sang address sa ibabaw</string>
     <string name="dejavu_bars_top_summary">Wala sing bar sang mga aksyon. I-swipe padulhog ang bar sang address para maabrihan ang Dugang nga menu.</string>
     <string name="dejavu_bars_bottom">Bar sang address sa idalom</string>
     <string name="dejavu_bars_bottom_summary">Wala sing bar sang mga aksyon. I-swipe pataas ang bar sang address para maabrihan ang Dugang nga menu.</string>
-    <string name="dejavu_settings_screen">Screen</string>
     <string name="dejavu_settings_hide_system_bars">Tagua ang status kag navigation bar</string>
     <string name="dejavu_settings_hide_system_bars_summary">Samtang ginapakita ang isa ka pahina. I-swipe halin sa ibabaw ukon idalom nga kilid para makita sila sing makadali.</string>
     <string name="dejavu_bookmarks_export">i-Export sa file</string>
@@ -471,9 +469,18 @@
     <string name="dejavu_feature_save_page">i-Save ang mga page agud mabasa nga wala internet</string>
     <string name="dejavu_recent_search_text">Tanggala ini nga pagpangita sa imo bag-o nga mga pagpangita, ukon hapuson tanan.</string>
     <string name="dejavu_recent_search_clear">Hapuson ang kasaysayan sang pagpangita</string>
-    <string name="dejavu_settings_home_screen">Home screen</string>
     <string name="dejavu_home_search_top">Bar sang pagpangita sa ibabaw</string>
     <string name="dejavu_home_search_top_summary">Mga workspace, download, extension, bookmark kag kasaysayan sa idalom.</string>
     <string name="dejavu_home_search_bottom">Bar sang pagpangita sa idalom</string>
     <string name="dejavu_home_search_bottom_summary">Mas masayon maabot. Ang mga workspace, download, extension, bookmark kag kasaysayan magasaylo sa ibabaw.</string>
+    <string name="dejavu_settings_autoclose_tabs">Awtomatiko nga pagsira sang mga tab</string>
+    <string name="dejavu_settings_tabs_workspaces">Mga tab, workspace kag container</string>
+    <string name="dejavu_settings_tabs_workspaces_summary">Pagsira kag pagpatulog sang mga tab, mga container, home page kag mga link</string>
+    <string name="dejavu_settings_customize_summary">Tema, mga aksyon sang tab, menu, mga bar, mga password kag lenggwahe</string>
+    <string name="dejavu_settings_bars_2">Mga Bar</string>
+    <string name="dejavu_settings_bars_summary">Web page, home page, bug-os nga screen, bar sang mga tab kag mga gesture</string>
+    <string name="dejavu_settings_web_page">Web page</string>
+    <string name="dejavu_settings_full_screen">Bug-os nga screen</string>
+    <string name="dejavu_settings_passwords_language">Mga password kag lenggwahe</string>
+    <string name="dejavu_settings_passwords_language_summary">Autofill, kasayuran, mga paghubad kag mga kontrol sang AI</string>
 </resources>

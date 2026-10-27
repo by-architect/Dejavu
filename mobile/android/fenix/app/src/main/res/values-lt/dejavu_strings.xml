@@ -433,14 +433,12 @@
     <string name="dejavu_protection_links">Šalinti stebėjimą iš nuorodų</string>
     <string name="dejavu_protection_hint">Įjungta apsauga padeda jums būti saugesniems. Prie kiekvienos parašyta, nuo ko ji saugo ir kas dėl jos gali nustoti veikti.</string>
     <string name="dejavu_sync_zen_hint_unpinned">Zen naršyklėje atverkite Nuostatos, tada Sinchronizavimas, ir įjunkite šoninės juostos sinchronizavimą.</string>
-    <string name="dejavu_settings_bars">Juostos ir meniu</string>
     <string name="dejavu_bars_actions_bar">Adreso laukas viršuje, veiksmų juosta apačioje</string>
     <string name="dejavu_bars_actions_bar_summary">Perbraukite veiksmų juostą aukštyn, kad atvertumėte meniu „Daugiau“.</string>
     <string name="dejavu_bars_top">Adreso laukas viršuje</string>
     <string name="dejavu_bars_top_summary">Be veiksmų juostos. Perbraukite adreso lauką žemyn, kad atvertumėte meniu „Daugiau“.</string>
     <string name="dejavu_bars_bottom">Adreso laukas apačioje</string>
     <string name="dejavu_bars_bottom_summary">Be veiksmų juostos. Perbraukite adreso lauką aukštyn, kad atvertumėte meniu „Daugiau“.</string>
-    <string name="dejavu_settings_screen">Ekranas</string>
     <string name="dejavu_settings_hide_system_bars">Slėpti būsenos ir naršymo juostas</string>
     <string name="dejavu_settings_hide_system_bars_summary">Kol rodomas puslapis. Perbraukite nuo viršutinio ar apatinio krašto, kad trumpam jas pamatytumėte.</string>
     <string name="dejavu_bookmarks_export">Eksportuoti į failą</string>
@@ -487,9 +485,18 @@
     <string name="dejavu_feature_save_page">Įrašykite tinklalapius, kad skaitytumėte be interneto</string>
     <string name="dejavu_recent_search_text">Pašalinkite šią paiešką iš neseniai ieškotų arba išvalykite visas.</string>
     <string name="dejavu_recent_search_clear">Išvalyti paieškų žurnalą</string>
-    <string name="dejavu_settings_home_screen">Pradžios ekranas</string>
     <string name="dejavu_home_search_top">Paieškos laukas viršuje</string>
     <string name="dejavu_home_search_top_summary">Darbo erdvės, atsiuntimai, plėtiniai, adresynas ir žurnalas apačioje.</string>
     <string name="dejavu_home_search_bottom">Paieškos laukas apačioje</string>
     <string name="dejavu_home_search_bottom_summary">Lengviau pasiekti. Darbo erdvės, atsiuntimai, plėtiniai, adresynas ir žurnalas persikelia į viršų.</string>
+    <string name="dejavu_settings_autoclose_tabs">Automatinis kortelių užvėrimas</string>
+    <string name="dejavu_settings_tabs_workspaces">Kortelės, darbo erdvės ir konteineriai</string>
+    <string name="dejavu_settings_tabs_workspaces_summary">Kortelių užvėrimas ir užmigdymas, konteineriai, pradžios tinklalapis ir nuorodos</string>
+    <string name="dejavu_settings_customize_summary">Grafinis apvalkalas, kortelių veiksmai, meniu, juostos, slaptažodžiai ir kalba</string>
+    <string name="dejavu_settings_bars_2">Juostos</string>
+    <string name="dejavu_settings_bars_summary">Tinklalapis, pradžios tinklalapis, visas ekranas, kortelių juosta ir gestai</string>
+    <string name="dejavu_settings_web_page">Tinklalapis</string>
+    <string name="dejavu_settings_full_screen">Visas ekranas</string>
+    <string name="dejavu_settings_passwords_language">Slaptažodžiai ir kalba</string>
+    <string name="dejavu_settings_passwords_language_summary">Automatinis užpildymas, pritaikymas neįgaliesiems, vertimai ir DI valdikliai</string>
 </resources>

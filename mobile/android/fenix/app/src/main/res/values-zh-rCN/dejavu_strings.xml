@@ -412,14 +412,12 @@
     <string name="dejavu_protection_links">移除链接中的跟踪信息</string>
     <string name="dejavu_protection_hint">开启的保护功能能让您更安全。每项都会说明它防范什么，以及可能因此无法正常使用的功能。</string>
     <string name="dejavu_sync_zen_hint_unpinned">在 Zen 中打开“设置”,然后进入“同步”,开启侧边栏同步。</string>
-    <string name="dejavu_settings_bars">工具栏和菜单</string>
     <string name="dejavu_bars_actions_bar">地址栏在顶部，操作栏在底部</string>
     <string name="dejavu_bars_actions_bar_summary">向上滑动操作栏即可打开更多菜单。</string>
     <string name="dejavu_bars_top">地址栏在顶部</string>
     <string name="dejavu_bars_top_summary">无操作栏。向下滑动地址栏即可打开更多菜单。</string>
     <string name="dejavu_bars_bottom">地址栏在底部</string>
     <string name="dejavu_bars_bottom_summary">无操作栏。向上滑动地址栏即可打开更多菜单。</string>
-    <string name="dejavu_settings_screen">屏幕</string>
     <string name="dejavu_settings_hide_system_bars">隐藏状态栏和导航栏</string>
     <string name="dejavu_settings_hide_system_bars_summary">显示网页时。从上边缘或下边缘向内滑动可短暂显示它们。</string>
     <string name="dejavu_bookmarks_export">导出到文件</string>
@@ -463,9 +461,18 @@
     <string name="dejavu_feature_save_page">保存页面，无需联网即可阅读</string>
     <string name="dejavu_recent_search_text">从近期搜索中删除此搜索，或清除全部搜索。</string>
     <string name="dejavu_recent_search_clear">清除搜索历史记录</string>
-    <string name="dejavu_settings_home_screen">主屏幕</string>
     <string name="dejavu_home_search_top">搜索栏在顶部</string>
     <string name="dejavu_home_search_top_summary">工作区、下载、扩展、书签和历史记录在底部。</string>
     <string name="dejavu_home_search_bottom">搜索栏在底部</string>
     <string name="dejavu_home_search_bottom_summary">更容易够到。工作区、下载、扩展、书签和历史记录移至顶部。</string>
+    <string name="dejavu_settings_autoclose_tabs">自动关闭标签页</string>
+    <string name="dejavu_settings_tabs_workspaces">标签页、工作区和容器</string>
+    <string name="dejavu_settings_tabs_workspaces_summary">标签页关闭与休眠、容器、主页和链接</string>
+    <string name="dejavu_settings_customize_summary">主题、标签页操作、菜单、工具栏、密码和语言</string>
+    <string name="dejavu_settings_bars_2">工具栏</string>
+    <string name="dejavu_settings_bars_summary">网页、主页、全屏、标签页栏和手势</string>
+    <string name="dejavu_settings_web_page">网页</string>
+    <string name="dejavu_settings_full_screen">全屏</string>
+    <string name="dejavu_settings_passwords_language">密码和语言</string>
+    <string name="dejavu_settings_passwords_language_summary">自动填充、无障碍环境、翻译和 AI 控制</string>
 </resources>

@@ -433,14 +433,12 @@
     <string name="dejavu_protection_links">Вилучати стеження з посилань</string>
     <string name="dejavu_protection_hint">Увімкнений захист тримає вас у більшій безпеці. Кожен пояснює, від чого він захищає і що через нього може перестати працювати.</string>
     <string name="dejavu_sync_zen_hint_unpinned">У Zen відкрийте «Налаштування», потім «Синхронізацію», і увімкніть синхронізацію бічної панелі.</string>
-    <string name="dejavu_settings_bars">Панелі й меню</string>
     <string name="dejavu_bars_actions_bar">Панель адреси вгорі, панель дій внизу</string>
     <string name="dejavu_bars_actions_bar_summary">Проведіть по панелі дій вгору, щоб відкрити меню «Ще».</string>
     <string name="dejavu_bars_top">Панель адреси вгорі</string>
     <string name="dejavu_bars_top_summary">Без панелі дій. Проведіть по панелі адреси вниз, щоб відкрити меню «Ще».</string>
     <string name="dejavu_bars_bottom">Панель адреси внизу</string>
     <string name="dejavu_bars_bottom_summary">Без панелі дій. Проведіть по панелі адреси вгору, щоб відкрити меню «Ще».</string>
-    <string name="dejavu_settings_screen">Екран</string>
     <string name="dejavu_settings_hide_system_bars">Приховувати рядок стану й панель навігації</string>
     <string name="dejavu_settings_hide_system_bars_summary">Поки показано сторінку. Проведіть від верхнього або нижнього краю, щоб ненадовго їх побачити.</string>
     <string name="dejavu_bookmarks_export">Експортувати у файл</string>
@@ -487,9 +485,18 @@
     <string name="dejavu_feature_save_page">Зберігайте сторінки, щоб читати без інтернету</string>
     <string name="dejavu_recent_search_text">Видаліть цей пошук із недавніх пошуків або очистьте всі.</string>
     <string name="dejavu_recent_search_clear">Очистити історію пошуку</string>
-    <string name="dejavu_settings_home_screen">Головний екран</string>
     <string name="dejavu_home_search_top">Панель пошуку вгорі</string>
     <string name="dejavu_home_search_top_summary">Робочі простори, завантаження, розширення, закладки та історія внизу.</string>
     <string name="dejavu_home_search_bottom">Панель пошуку внизу</string>
     <string name="dejavu_home_search_bottom_summary">Легше дотягнутися. Робочі простори, завантаження, розширення, закладки та історія переміщуються вгору.</string>
+    <string name="dejavu_settings_autoclose_tabs">Автозакриття вкладок</string>
+    <string name="dejavu_settings_tabs_workspaces">Вкладки, робочі простори й контейнери</string>
+    <string name="dejavu_settings_tabs_workspaces_summary">Закриття й присипляння вкладок, контейнери, домівка та посилання</string>
+    <string name="dejavu_settings_customize_summary">Тема, дії для вкладок, меню, панелі, паролі та мова</string>
+    <string name="dejavu_settings_bars_2">Панелі</string>
+    <string name="dejavu_settings_bars_summary">Вебсторінка, домівка, повноекранний режим, панель вкладок і жести</string>
+    <string name="dejavu_settings_web_page">Вебсторінка</string>
+    <string name="dejavu_settings_full_screen">Повноекранний режим</string>
+    <string name="dejavu_settings_passwords_language">Паролі й мова</string>
+    <string name="dejavu_settings_passwords_language_summary">Автозаповнення, доступність, переклади та керування ШІ</string>
 </resources>

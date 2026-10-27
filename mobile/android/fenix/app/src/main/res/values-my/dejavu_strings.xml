@@ -412,14 +412,12 @@
     <string name="dejavu_protection_links">လင့်ခ်များမှ ခြေရာခံမှုကို ဖယ်ရှားရန်</string>
     <string name="dejavu_protection_hint">ဖွင့်ထားသော ကာကွယ်မှုသည် သင့်ကို ပိုလုံခြုံစေသည်။ တစ်ခုစီက ဘာကို ကာကွယ်ပေးသည်နှင့် ၎င်းကြောင့် ဘာများ အလုပ်မလုပ်တော့နိုင်သည်ကို ပြောပြသည်။</string>
     <string name="dejavu_sync_zen_hint_unpinned">Zen တွင် Settings ကိုဖွင့်ပြီး Sync ကို ရွေးပါ၊ ထို့နောက် sidebar sync ကို ဖွင့်ပါ။</string>
-    <string name="dejavu_settings_bars">ဘားများနှင့် မီနူး</string>
     <string name="dejavu_bars_actions_bar">လိပ်စာဘား အပေါ်တွင်၊ လုပ်ဆောင်ချက်ဘား အောက်ခြေတွင်</string>
     <string name="dejavu_bars_actions_bar_summary">နောက်ထပ် မီနူးကို ဖွင့်ရန် လုပ်ဆောင်ချက်ဘားကို အပေါ်သို့ ပွတ်ဆွဲပါ။</string>
     <string name="dejavu_bars_top">လိပ်စာဘား အပေါ်တွင်</string>
     <string name="dejavu_bars_top_summary">လုပ်ဆောင်ချက်ဘား မရှိပါ။ နောက်ထပ် မီနူးကို ဖွင့်ရန် လိပ်စာဘားကို အောက်သို့ ပွတ်ဆွဲပါ။</string>
     <string name="dejavu_bars_bottom">လိပ်စာဘား အောက်ခြေတွင်</string>
     <string name="dejavu_bars_bottom_summary">လုပ်ဆောင်ချက်ဘား မရှိပါ။ နောက်ထပ် မီနူးကို ဖွင့်ရန် လိပ်စာဘားကို အပေါ်သို့ ပွတ်ဆွဲပါ။</string>
-    <string name="dejavu_settings_screen">မျက်နှာပြင်</string>
     <string name="dejavu_settings_hide_system_bars">အခြေအနေနှင့် လမ်းညွှန်ဘားများကို ဖျောက်ရန်</string>
     <string name="dejavu_settings_hide_system_bars_summary">စာမျက်နှာ ပြသနေစဉ်။ ခဏကြည့်ရန် အပေါ် သို့မဟုတ် အောက်အစွန်းမှ ပွတ်ဆွဲပါ။</string>
     <string name="dejavu_bookmarks_export">ဖိုင်သို့ ထုတ်ယူရန်</string>
@@ -463,9 +461,18 @@
     <string name="dejavu_feature_save_page">အင်တာနက်မလိုဘဲ ဖတ်ရန် စာမျက်နှာများ သိမ်းပါ</string>
     <string name="dejavu_recent_search_text">ဤရှာဖွေမှုကို မကြာသေးမီ ရှာဖွေမှုများမှ ဖျက်ပါ၊ သို့မဟုတ် အားလုံးကို ရှင်းလင်းပါ။</string>
     <string name="dejavu_recent_search_clear">ရှာဖွေမှုမှတ်တမ်းကို ရှင်းလင်းပါ</string>
-    <string name="dejavu_settings_home_screen">ပင်မစခရင်</string>
     <string name="dejavu_home_search_top">ရှာဖွေရေးဘား အပေါ်တွင်</string>
     <string name="dejavu_home_search_top_summary">လုပ်ငန်းခွင်များ၊ ဆွဲချချက်များ၊ ထပ်ဆောင်းများ၊ စာမှတ်များနှင့် မှတ်တမ်းတို့သည် အောက်ခြေတွင် ရှိပါသည်။</string>
     <string name="dejavu_home_search_bottom">ရှာဖွေရေးဘား အောက်ခြေတွင်</string>
     <string name="dejavu_home_search_bottom_summary">လက်လှမ်းမီရန် ပိုလွယ်ကူသည်။ လုပ်ငန်းခွင်များ၊ ဆွဲချချက်များ၊ ထပ်ဆောင်းများ၊ စာမှတ်များနှင့် မှတ်တမ်းတို့သည် အပေါ်သို့ ရွှေ့သွားပါမည်။</string>
+    <string name="dejavu_settings_autoclose_tabs">တက်ဗ်များကို အလိုအလျောက် ပိတ်ရန်</string>
+    <string name="dejavu_settings_tabs_workspaces">တက်ဗ်များ၊ လုပ်ငန်းခွင်များနှင့် ကွန်တိန်နာများ</string>
+    <string name="dejavu_settings_tabs_workspaces_summary">တက်ဗ်များ ပိတ်ခြင်းနှင့် အိပ်စေခြင်း၊ ကွန်တိန်နာများ၊ ပင်မစာမျက်နှာနှင့် လင့်ခ်များ</string>
+    <string name="dejavu_settings_customize_summary">အခင်းအကျင်းများ၊ တက်ဗ် လုပ်ဆောင်ချက်များ၊ မီနူး၊ ဘားများ၊ ပက်စ်ဝေါ့များနှင့် ဘာသာစကား</string>
+    <string name="dejavu_settings_bars_2">ဘားများ</string>
+    <string name="dejavu_settings_bars_summary">ဝဘ်စာမျက်နှာ၊ ပင်မစာမျက်နှာ၊ မျက်နှာပြင်အပြည့်၊ တက်ဗ်ဘားနှင့် လက်ဟန်အမူအရာများ</string>
+    <string name="dejavu_settings_web_page">ဝဘ်စာမျက်နှာ</string>
+    <string name="dejavu_settings_full_screen">မျက်နှာပြင်အပြည့်</string>
+    <string name="dejavu_settings_passwords_language">ပက်စ်ဝေါ့များနှင့် ဘာသာစကား</string>
+    <string name="dejavu_settings_passwords_language_summary">အလိုအလျောက်ဖြည့်ခြင်း၊ အသုံးပြုခွင့်၊ ဘာသာပြန်ချက်များနှင့် AI ထိန်းချုပ်မှုများ</string>
 </resources>

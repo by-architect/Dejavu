@@ -419,14 +419,12 @@
     <string name="dejavu_protection_links">లింకుల నుండి ట్రాకింగ్‌ను తీసివేయి</string>
     <string name="dejavu_protection_hint">ఆన్‌లో ఉన్న రక్షణ మిమ్మల్ని మరింత సురక్షితంగా ఉంచుతుంది. ప్రతి ఒక్కటీ దేని నుండి కాపాడుతుందో, దాని వల్ల ఏది పనిచేయకపోవచ్చో చెబుతుంది.</string>
     <string name="dejavu_sync_zen_hint_unpinned">Zenలో, అమరికలు తెరిచి, తర్వాత సింక్‌ను తెరిచి, సైడ్‌బార్ సింక్‌ను ఆన్ చేయండి.</string>
-    <string name="dejavu_settings_bars">పట్టీలు మరియు మెనూ</string>
     <string name="dejavu_bars_actions_bar">చిరునామా పట్టీ పైన, చర్యల పట్టీ దిగువన</string>
     <string name="dejavu_bars_actions_bar_summary">మరిన్ని మెనూను తెరవడానికి చర్యల పట్టీని పైకి స్వైప్ చేయండి.</string>
     <string name="dejavu_bars_top">చిరునామా పట్టీ పైన</string>
     <string name="dejavu_bars_top_summary">చర్యల పట్టీ లేదు. మరిన్ని మెనూను తెరవడానికి చిరునామా పట్టీని కిందికి స్వైప్ చేయండి.</string>
     <string name="dejavu_bars_bottom">చిరునామా పట్టీ దిగువన</string>
     <string name="dejavu_bars_bottom_summary">చర్యల పట్టీ లేదు. మరిన్ని మెనూను తెరవడానికి చిరునామా పట్టీని పైకి స్వైప్ చేయండి.</string>
-    <string name="dejavu_settings_screen">స్క్రీన్</string>
     <string name="dejavu_settings_hide_system_bars">స్టేటస్, నావిగేషన్ బార్‌లను దాచు</string>
     <string name="dejavu_settings_hide_system_bars_summary">పేజీ చూపబడుతున్నప్పుడు. వాటిని ఒక్క క్షణం చూడటానికి పై లేదా కింది అంచు నుండి స్వైప్ చేయండి.</string>
     <string name="dejavu_bookmarks_export">ఫైలుకు ఎగుమతి చేయి</string>
@@ -471,9 +469,18 @@
     <string name="dejavu_feature_save_page">ఇంటర్నెట్ లేకుండా చదవడానికి పేజీలను భద్రపరచండి</string>
     <string name="dejavu_recent_search_text">ఈ శోధనను ఇటీవలి శోధనల నుండి తొలగించండి, లేదా అన్నింటినీ తొలగించండి.</string>
     <string name="dejavu_recent_search_clear">శోధన చరిత్రను తొలగించు</string>
-    <string name="dejavu_settings_home_screen">హోమ్ స్క్రీన్</string>
     <string name="dejavu_home_search_top">శోధన పట్టీ పైన</string>
     <string name="dejavu_home_search_top_summary">కార్యస్థలాలు, దింపుకోళ్ళు, పొడగింతలు, ఇష్టాంశాలు మరియు చరిత్ర దిగువన ఉంటాయి.</string>
     <string name="dejavu_home_search_bottom">శోధన పట్టీ దిగువన</string>
     <string name="dejavu_home_search_bottom_summary">మరింత సులభంగా చేరుకోవచ్చు. కార్యస్థలాలు, దింపుకోళ్ళు, పొడగింతలు, ఇష్టాంశాలు మరియు చరిత్ర పైకి తరలించబడతాయి.</string>
+    <string name="dejavu_settings_autoclose_tabs">ట్యాబుల స్వయంచాలక మూసివేత</string>
+    <string name="dejavu_settings_tabs_workspaces">ట్యాబులు, కార్యస్థలాలు మరియు కంటైనర్లు</string>
+    <string name="dejavu_settings_tabs_workspaces_summary">ట్యాబుల మూసివేత, స్లీప్, కంటైనర్లు, ముంగిలిపేజీ మరియు లింకులు</string>
+    <string name="dejavu_settings_customize_summary">అలంకారం, ట్యాబు చర్యలు, మెనూ, పట్టీలు, సంకేతపదాలు మరియు భాష</string>
+    <string name="dejavu_settings_bars_2">పట్టీలు</string>
+    <string name="dejavu_settings_bars_summary">వెబ్ పేజీ, ముంగిలిపేజీ, నిండు తెర, ట్యాబుల పట్టీ మరియు సైగలు</string>
+    <string name="dejavu_settings_web_page">వెబ్ పేజీ</string>
+    <string name="dejavu_settings_full_screen">నిండు తెర</string>
+    <string name="dejavu_settings_passwords_language">సంకేతపదాలు మరియు భాష</string>
+    <string name="dejavu_settings_passwords_language_summary">స్వయంచాలక పూరణ, ప్రాప్యత, అనువాదాలు మరియు AI నియంత్రణలు</string>
 </resources>

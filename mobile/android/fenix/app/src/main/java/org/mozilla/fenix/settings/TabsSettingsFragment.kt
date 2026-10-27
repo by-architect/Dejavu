@@ -42,7 +42,8 @@ class TabsSettingsFragment : PreferenceFragmentCompat(), SystemInsetsPaddedFragm
 
     override fun onResume() {
         super.onResume()
-        showToolbar(getString(R.string.preferences_tabs))
+        // Dejavu: this screen only chooses when unpinned tabs close.
+        showToolbar(getString(R.string.dejavu_settings_autoclose_tabs))
 
         setupPreferences()
         args.preferenceToScrollTo?.let {

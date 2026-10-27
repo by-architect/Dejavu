@@ -419,14 +419,12 @@
     <string name="dejavu_protection_links">Премахване на проследяването от връзките</string>
     <string name="dejavu_protection_hint">Включената защита повишава вашата безопасност. Всяка казва от какво ви пази и какво може да спре да работи заради нея.</string>
     <string name="dejavu_sync_zen_hint_unpinned">В Zen отворете Настройки, после Синхронизиране, и включете синхронизирането на страничния панел.</string>
-    <string name="dejavu_settings_bars">Ленти и меню</string>
     <string name="dejavu_bars_actions_bar">Адресна лента отгоре, лента с действия отдолу</string>
     <string name="dejavu_bars_actions_bar_summary">Плъзнете лентата с действия нагоре, за да отворите меню „Още“.</string>
     <string name="dejavu_bars_top">Адресна лента отгоре</string>
     <string name="dejavu_bars_top_summary">Без лента с действия. Плъзнете адресната лента надолу, за да отворите меню „Още“.</string>
     <string name="dejavu_bars_bottom">Адресна лента отдолу</string>
     <string name="dejavu_bars_bottom_summary">Без лента с действия. Плъзнете адресната лента нагоре, за да отворите меню „Още“.</string>
-    <string name="dejavu_settings_screen">Екран</string>
     <string name="dejavu_settings_hide_system_bars">Скриване на лентите за състояние и навигация</string>
     <string name="dejavu_settings_hide_system_bars_summary">Докато се показва страница. Плъзнете от горния или долния край, за да ги видите за момент.</string>
     <string name="dejavu_bookmarks_export">Изнасяне във файл</string>
@@ -471,9 +469,18 @@
     <string name="dejavu_feature_save_page">Запазвайте страници, за да ги четете без интернет</string>
     <string name="dejavu_recent_search_text">Изтрийте това търсене от скорошните търсения или изчистете всички.</string>
     <string name="dejavu_recent_search_clear">Изчистване на историята на търсенията</string>
-    <string name="dejavu_settings_home_screen">Начален екран</string>
     <string name="dejavu_home_search_top">Лента за търсене отгоре</string>
     <string name="dejavu_home_search_top_summary">Работните пространства, изтеглянията, разширенията, отметките и историята са отдолу.</string>
     <string name="dejavu_home_search_bottom">Лента за търсене отдолу</string>
     <string name="dejavu_home_search_bottom_summary">По-лесен достъп. Работните пространства, изтеглянията, разширенията, отметките и историята се преместват отгоре.</string>
+    <string name="dejavu_settings_autoclose_tabs">Автоматично затваряне на раздели</string>
+    <string name="dejavu_settings_tabs_workspaces">Раздели, работни пространства и контейнери</string>
+    <string name="dejavu_settings_tabs_workspaces_summary">Затваряне и приспиване на раздели, контейнери, начална страница и връзки</string>
+    <string name="dejavu_settings_customize_summary">Тема, действия с раздели, меню, ленти, пароли и език</string>
+    <string name="dejavu_settings_bars_2">Ленти</string>
+    <string name="dejavu_settings_bars_summary">Уеб страница, начална страница, цял екран, лента с раздели и жестове</string>
+    <string name="dejavu_settings_web_page">Уеб страница</string>
+    <string name="dejavu_settings_full_screen">Цял екран</string>
+    <string name="dejavu_settings_passwords_language">Пароли и език</string>
+    <string name="dejavu_settings_passwords_language_summary">Автоматично попълване, достъпност, преводи и AI контроли</string>
 </resources>

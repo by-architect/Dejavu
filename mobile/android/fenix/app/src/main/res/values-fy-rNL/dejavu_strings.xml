@@ -419,14 +419,12 @@
     <string name="dejavu_protection_links">Folgjen út keppelingen fuortsmite</string>
     <string name="dejavu_protection_hint">In beskerming dy\'t ynskeakele is, hâldt jo feiliger. Elk fertelt wêr\'t it jo tsjin beskermet en wat dêrtroch miskien net mear wurket.</string>
     <string name="dejavu_sync_zen_hint_unpinned">Iepenje yn Zen de Ynstellingen, dan Syngronisaasje, en set de syngronisaasje fan de sidebalke oan.</string>
-    <string name="dejavu_settings_bars">Balken en menu</string>
     <string name="dejavu_bars_actions_bar">Adresbalke boppe-oan, aksjebalke ûnderoan</string>
     <string name="dejavu_bars_actions_bar_summary">Fei de aksjebalke omheech om it Mear-menu te iepenjen.</string>
     <string name="dejavu_bars_top">Adresbalke boppe-oan</string>
     <string name="dejavu_bars_top_summary">Gjin aksjebalke. Fei de adresbalke omleech om it Mear-menu te iepenjen.</string>
     <string name="dejavu_bars_bottom">Adresbalke ûnderoan</string>
     <string name="dejavu_bars_bottom_summary">Gjin aksjebalke. Fei de adresbalke omheech om it Mear-menu te iepenjen.</string>
-    <string name="dejavu_settings_screen">Skerm</string>
     <string name="dejavu_settings_hide_system_bars">Status- en navigaasjebalke ferstopje</string>
     <string name="dejavu_settings_hide_system_bars_summary">Wylst in side toand wurdt. Fei fan de boppe- of ûnderrâne om se efkes te sjen.</string>
     <string name="dejavu_bookmarks_export">Nei bestân eksportearje</string>
@@ -471,9 +469,18 @@
     <string name="dejavu_feature_save_page">Bewarje siden om sûnder ynternet te lêzen</string>
     <string name="dejavu_recent_search_text">Wiskje dizze sykopdracht út jo resinte sykopdrachten, of wiskje se allegear.</string>
     <string name="dejavu_recent_search_clear">Sykskiednis wiskje</string>
-    <string name="dejavu_settings_home_screen">Startskerm</string>
     <string name="dejavu_home_search_top">Sykbalke boppe-oan</string>
     <string name="dejavu_home_search_top_summary">Wurkromten, downloads, utwreidingen, blêdwizers en skiednis ûnderoan.</string>
     <string name="dejavu_home_search_bottom">Sykbalke ûnderoan</string>
     <string name="dejavu_home_search_bottom_summary">Makliker te berikken. Wurkromten, downloads, utwreidingen, blêdwizers en skiednis ferhúzje nei boppen.</string>
+    <string name="dejavu_settings_autoclose_tabs">Ljepblêden automatysk slute</string>
+    <string name="dejavu_settings_tabs_workspaces">Ljepblêden, wurkromten en konteners</string>
+    <string name="dejavu_settings_tabs_workspaces_summary">Ljepblêden slute en sliepe litte, konteners, startside en keppelingen</string>
+    <string name="dejavu_settings_customize_summary">Tema, aksjes foar ljepblêden, menu, balken, wachtwurden en taal</string>
+    <string name="dejavu_settings_bars_2">Balken</string>
+    <string name="dejavu_settings_bars_summary">Webside, startside, folslein skerm, ljepblêdenbalke en bewegingen</string>
+    <string name="dejavu_settings_web_page">Webside</string>
+    <string name="dejavu_settings_full_screen">Folslein skerm</string>
+    <string name="dejavu_settings_passwords_language">Wachtwurden en taal</string>
+    <string name="dejavu_settings_passwords_language_summary">Automatysk ynfolje, tagonklikheid, oersettingen en AI-betsjinningseleminten</string>
 </resources>

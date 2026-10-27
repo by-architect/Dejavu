@@ -419,14 +419,12 @@
     <string name="dejavu_protection_links">ਲਿੰਕਾਂ ਤੋਂ ਟਰੈਕਿੰਗ ਹਟਾਓ</string>
     <string name="dejavu_protection_hint">ਚਾਲੂ ਸੁਰੱਖਿਆ ਤੁਹਾਨੂੰ ਵੱਧ ਸੁਰੱਖਿਅਤ ਰੱਖਦੀ ਹੈ। ਹਰ ਇੱਕ ਦੱਸਦੀ ਹੈ ਕਿ ਇਹ ਕਿਸ ਤੋਂ ਬਚਾਉਂਦੀ ਹੈ ਅਤੇ ਇਸ ਕਾਰਨ ਕੀ ਕੰਮ ਕਰਨਾ ਬੰਦ ਕਰ ਸਕਦਾ ਹੈ।</string>
     <string name="dejavu_sync_zen_hint_unpinned">Zen ਵਿੱਚ, ਸੈਟਿੰਗਾਂ ਖੋਲ੍ਹੋ, ਫਿਰ ਸਿੰਕ, ਅਤੇ ਸਾਈਡਬਾਰ ਸਿੰਕ ਚਾਲੂ ਕਰੋ।</string>
-    <string name="dejavu_settings_bars">ਪੱਟੀਆਂ ਅਤੇ ਮੀਨੂ</string>
     <string name="dejavu_bars_actions_bar">ਪਤਾ ਪੱਟੀ ਉੱਪਰ, ਕਾਰਵਾਈ ਪੱਟੀ ਹੇਠਾਂ</string>
     <string name="dejavu_bars_actions_bar_summary">ਹੋਰ ਮੀਨੂ ਖੋਲ੍ਹਣ ਲਈ ਕਾਰਵਾਈ ਪੱਟੀ ਨੂੰ ਉੱਪਰ ਸਵਾਈਪ ਕਰੋ।</string>
     <string name="dejavu_bars_top">ਪਤਾ ਪੱਟੀ ਉੱਪਰ</string>
     <string name="dejavu_bars_top_summary">ਕੋਈ ਕਾਰਵਾਈ ਪੱਟੀ ਨਹੀਂ। ਹੋਰ ਮੀਨੂ ਖੋਲ੍ਹਣ ਲਈ ਪਤਾ ਪੱਟੀ ਨੂੰ ਹੇਠਾਂ ਸਵਾਈਪ ਕਰੋ।</string>
     <string name="dejavu_bars_bottom">ਪਤਾ ਪੱਟੀ ਹੇਠਾਂ</string>
     <string name="dejavu_bars_bottom_summary">ਕੋਈ ਕਾਰਵਾਈ ਪੱਟੀ ਨਹੀਂ। ਹੋਰ ਮੀਨੂ ਖੋਲ੍ਹਣ ਲਈ ਪਤਾ ਪੱਟੀ ਨੂੰ ਉੱਪਰ ਸਵਾਈਪ ਕਰੋ।</string>
-    <string name="dejavu_settings_screen">ਸਕਰੀਨ</string>
     <string name="dejavu_settings_hide_system_bars">ਸਥਿਤੀ ਅਤੇ ਨੈਵੀਗੇਸ਼ਨ ਪੱਟੀਆਂ ਲੁਕਾਓ</string>
     <string name="dejavu_settings_hide_system_bars_summary">ਜਦੋਂ ਪੰਨਾ ਦਿਖਾਇਆ ਜਾਂਦਾ ਹੈ। ਉਹਨਾਂ ਨੂੰ ਇੱਕ ਪਲ ਲਈ ਵੇਖਣ ਲਈ ਉੱਪਰਲੇ ਜਾਂ ਹੇਠਲੇ ਕਿਨਾਰੇ ਤੋਂ ਸਵਾਈਪ ਕਰੋ।</string>
     <string name="dejavu_bookmarks_export">ਫ਼ਾਇਲ ਵਿੱਚ ਐਕਸਪੋਰਟ ਕਰੋ</string>
@@ -471,9 +469,18 @@
     <string name="dejavu_feature_save_page">ਇੰਟਰਨੈੱਟ ਤੋਂ ਬਿਨਾਂ ਪੜ੍ਹਨ ਲਈ ਸਫ਼ੇ ਸੰਭਾਲੋ</string>
     <string name="dejavu_recent_search_text">ਇਸ ਖੋਜ ਨੂੰ ਆਪਣੀਆਂ ਸੱਜਰੀਆਂ ਖੋਜਾਂ ਵਿੱਚੋਂ ਹਟਾਓ, ਜਾਂ ਸਭ ਨੂੰ ਸਾਫ਼ ਕਰੋ।</string>
     <string name="dejavu_recent_search_clear">ਖੋਜ ਅਤੀਤ ਸਾਫ਼ ਕਰੋ</string>
-    <string name="dejavu_settings_home_screen">ਹੋਮ ਸਕਰੀਨ</string>
     <string name="dejavu_home_search_top">ਖੋਜ ਪੱਟੀ ਉੱਪਰ</string>
     <string name="dejavu_home_search_top_summary">ਵਰਕਸਪੇਸਾਂ, ਡਾਊਨਲੋਡ, ਇਕਸਟੈਨਸ਼ਨਾਂ, ਬੁੱਕਮਾਰਕ ਅਤੇ ਅਤੀਤ ਹੇਠਾਂ ਹਨ।</string>
     <string name="dejavu_home_search_bottom">ਖੋਜ ਪੱਟੀ ਹੇਠਾਂ</string>
     <string name="dejavu_home_search_bottom_summary">ਪਹੁੰਚਣਾ ਹੋਰ ਸੌਖਾ। ਵਰਕਸਪੇਸਾਂ, ਡਾਊਨਲੋਡ, ਇਕਸਟੈਨਸ਼ਨਾਂ, ਬੁੱਕਮਾਰਕ ਅਤੇ ਅਤੀਤ ਉੱਪਰ ਚਲੇ ਜਾਂਦੇ ਹਨ।</string>
+    <string name="dejavu_settings_autoclose_tabs">ਟੈਬਾਂ ਨੂੰ ਆਪੇ-ਬੰਦ ਕਰੋ</string>
+    <string name="dejavu_settings_tabs_workspaces">ਟੈਬਾਂ, ਵਰਕਸਪੇਸਾਂ ਅਤੇ ਕੰਟੇਨਰ</string>
+    <string name="dejavu_settings_tabs_workspaces_summary">ਟੈਬਾਂ ਨੂੰ ਬੰਦ ਕਰਨਾ ਅਤੇ ਸਲੀਪ ਮੋਡ, ਕੰਟੇਨਰ, ਮੁੱਖ ਸਫ਼ਾ ਅਤੇ ਲਿੰਕ</string>
+    <string name="dejavu_settings_customize_summary">ਥੀਮ, ਟੈਬ ਕਾਰਵਾਈਆਂ, ਮੀਨੂ, ਪੱਟੀਆਂ, ਪਾਸਵਰਡ ਅਤੇ ਭਾਸ਼ਾ</string>
+    <string name="dejavu_settings_bars_2">ਪੱਟੀਆਂ</string>
+    <string name="dejavu_settings_bars_summary">ਵੈੱਬ ਸਫ਼ਾ, ਮੁੱਖ ਸਫ਼ਾ, ਪੂਰੀ ਸਕਰੀਨ, ਟੈਬ ਪੱਟੀ ਅਤੇ ਇਸ਼ਾਰੇ</string>
+    <string name="dejavu_settings_web_page">ਵੈੱਬ ਸਫ਼ਾ</string>
+    <string name="dejavu_settings_full_screen">ਪੂਰੀ ਸਕਰੀਨ</string>
+    <string name="dejavu_settings_passwords_language">ਪਾਸਵਰਡ ਅਤੇ ਭਾਸ਼ਾ</string>
+    <string name="dejavu_settings_passwords_language_summary">ਆਪੇ-ਭਰੋ, ਅਸੈਸਬਿਲਟੀ, ਅਨੁਵਾਦ ਅਤੇ AI ਕੰਟਰੋਲ</string>
 </resources>

@@ -419,14 +419,12 @@
     <string name="dejavu_protection_links">ბმულებიდან თვალთვალის მოცილება</string>
     <string name="dejavu_protection_hint">ჩართული დაცვა უფრო მეტად გიცავთ. თითოეულთან წერია, რისგან იცავს და რამ შეიძლება შეწყვიტოს მუშაობა მის გამო.</string>
     <string name="dejavu_sync_zen_hint_unpinned">Zen-ში გახსენით „პარამეტრები“, შემდეგ „სინქრონიზაცია“ და ჩართეთ გვერდითი პანელის სინქრონიზაცია.</string>
-    <string name="dejavu_settings_bars">ზოლები და მენიუ</string>
     <string name="dejavu_bars_actions_bar">მისამართების ველი ზემოთ, მოქმედებების ზოლი ქვემოთ</string>
     <string name="dejavu_bars_actions_bar_summary">დამატებითი მენიუს გასახსნელად გადაფურცლეთ მოქმედებების ზოლი ზემოთ.</string>
     <string name="dejavu_bars_top">მისამართების ველი ზემოთ</string>
     <string name="dejavu_bars_top_summary">მოქმედებების ზოლის გარეშე. დამატებითი მენიუს გასახსნელად გადაფურცლეთ მისამართების ველი ქვემოთ.</string>
     <string name="dejavu_bars_bottom">მისამართების ველი ქვემოთ</string>
     <string name="dejavu_bars_bottom_summary">მოქმედებების ზოლის გარეშე. დამატებითი მენიუს გასახსნელად გადაფურცლეთ მისამართების ველი ზემოთ.</string>
-    <string name="dejavu_settings_screen">ეკრანი</string>
     <string name="dejavu_settings_hide_system_bars">მდგომარეობისა და ნავიგაციის ზოლების დამალვა</string>
     <string name="dejavu_settings_hide_system_bars_summary">როცა გვერდი ჩანს. ზედა ან ქვედა კიდიდან გადაფურცლეთ, რომ წამით დაინახოთ.</string>
     <string name="dejavu_bookmarks_export">ფაილში გატანა</string>
@@ -471,9 +469,18 @@
     <string name="dejavu_feature_save_page">შეინახეთ გვერდები ინტერნეტის გარეშე წასაკითხად</string>
     <string name="dejavu_recent_search_text">წაშალეთ ეს ძიება ბოლო ძიებებიდან ან გაასუფთავეთ ყველა.</string>
     <string name="dejavu_recent_search_clear">ძიების ისტორიის გასუფთავება</string>
-    <string name="dejavu_settings_home_screen">საწყისი ეკრანი</string>
     <string name="dejavu_home_search_top">საძიებო ველი ზემოთ</string>
     <string name="dejavu_home_search_top_summary">სივრცეები, ჩამოტვირთვები, გაფართოებები, სანიშნები და ისტორია ქვემოთ.</string>
     <string name="dejavu_home_search_bottom">საძიებო ველი ქვემოთ</string>
     <string name="dejavu_home_search_bottom_summary">უფრო ადვილად ხელმისაწვდომია. სივრცეები, ჩამოტვირთვები, გაფართოებები, სანიშნები და ისტორია ზემოთ გადავა.</string>
+    <string name="dejavu_settings_autoclose_tabs">ჩანართების თვითდახურვა</string>
+    <string name="dejavu_settings_tabs_workspaces">ჩანართები, სივრცეები და კონტეინერები</string>
+    <string name="dejavu_settings_tabs_workspaces_summary">ჩანართების დახურვა და დაძინება, კონტეინერები, საწყისი გვერდი და ბმულები</string>
+    <string name="dejavu_settings_customize_summary">თემა, ჩანართის მოქმედებები, მენიუ, ზოლები, პაროლები და ენა</string>
+    <string name="dejavu_settings_bars_2">ზოლები</string>
+    <string name="dejavu_settings_bars_summary">ვებგვერდი, საწყისი გვერდი, სრული ეკრანი, ჩანართის ზოლი და ჟესტები</string>
+    <string name="dejavu_settings_web_page">ვებგვერდი</string>
+    <string name="dejavu_settings_full_screen">სრული ეკრანი</string>
+    <string name="dejavu_settings_passwords_language">პაროლები და ენა</string>
+    <string name="dejavu_settings_passwords_language_summary">თვითშევსება, ხელმისაწვდომობა, თარგმანები და AI-სამართავი</string>
 </resources>

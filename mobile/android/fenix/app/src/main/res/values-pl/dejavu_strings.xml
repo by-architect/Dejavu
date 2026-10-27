@@ -433,14 +433,12 @@
     <string name="dejavu_protection_links">Usuwanie śledzenia z odnośników</string>
     <string name="dejavu_protection_hint">Włączona ochrona zwiększa Twoje bezpieczeństwo. Przy każdej jest napisane, przed czym chroni i co może przez nią przestać działać.</string>
     <string name="dejavu_sync_zen_hint_unpinned">W Zen otwórz Ustawienia, potem Synchronizację, i włącz synchronizację paska bocznego.</string>
-    <string name="dejavu_settings_bars">Paski i menu</string>
     <string name="dejavu_bars_actions_bar">Pasek adresu na górze, pasek akcji na dole</string>
     <string name="dejavu_bars_actions_bar_summary">Przeciągnij pasek akcji w górę, aby otworzyć menu „Więcej”.</string>
     <string name="dejavu_bars_top">Pasek adresu na górze</string>
     <string name="dejavu_bars_top_summary">Brak paska akcji. Przeciągnij pasek adresu w dół, aby otworzyć menu „Więcej”.</string>
     <string name="dejavu_bars_bottom">Pasek adresu na dole</string>
     <string name="dejavu_bars_bottom_summary">Brak paska akcji. Przeciągnij pasek adresu w górę, aby otworzyć menu „Więcej”.</string>
-    <string name="dejavu_settings_screen">Ekran</string>
     <string name="dejavu_settings_hide_system_bars">Ukryj paski stanu i nawigacji</string>
     <string name="dejavu_settings_hide_system_bars_summary">Gdy wyświetlana jest strona. Przesuń palcem od górnej lub dolnej krawędzi, aby na chwilę je zobaczyć.</string>
     <string name="dejavu_bookmarks_export">Eksportuj do pliku</string>
@@ -487,9 +485,18 @@
     <string name="dejavu_feature_save_page">Zapisuj strony, aby czytać je bez internetu</string>
     <string name="dejavu_recent_search_text">Usuń to wyszukiwanie z ostatnich wyszukiwań lub wyczyść wszystkie.</string>
     <string name="dejavu_recent_search_clear">Wyczyść historię wyszukiwania</string>
-    <string name="dejavu_settings_home_screen">Ekran główny</string>
     <string name="dejavu_home_search_top">Pasek wyszukiwania na górze</string>
     <string name="dejavu_home_search_top_summary">Obszary robocze, pobrane pliki, rozszerzenia, zakładki i historia na dole.</string>
     <string name="dejavu_home_search_bottom">Pasek wyszukiwania na dole</string>
     <string name="dejavu_home_search_bottom_summary">Łatwiej dosięgnąć. Obszary robocze, pobrane pliki, rozszerzenia, zakładki i historia przenoszą się na górę.</string>
+    <string name="dejavu_settings_autoclose_tabs">Automatyczne zamykanie kart</string>
+    <string name="dejavu_settings_tabs_workspaces">Karty, obszary robocze i kontenery</string>
+    <string name="dejavu_settings_tabs_workspaces_summary">Zamykanie i usypianie kart, kontenery, strona startowa i odnośniki</string>
+    <string name="dejavu_settings_customize_summary">Motyw, akcje na kartach, menu, paski, hasła i język</string>
+    <string name="dejavu_settings_bars_2">Paski</string>
+    <string name="dejavu_settings_bars_summary">Strona internetowa, strona startowa, pełny ekran, pasek kart i gesty</string>
+    <string name="dejavu_settings_web_page">Strona internetowa</string>
+    <string name="dejavu_settings_full_screen">Pełny ekran</string>
+    <string name="dejavu_settings_passwords_language">Hasła i język</string>
+    <string name="dejavu_settings_passwords_language_summary">Automatyczne wypełnianie, ułatwienia dostępu, tłumaczenia i sterowanie SI</string>
 </resources>

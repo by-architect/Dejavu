@@ -438,14 +438,12 @@
     <string name="dejavu_protection_links">Bağlantılardaki takip kısımlarını kaldır</string>
     <string name="dejavu_protection_hint">Açık olan her koruma sizi daha güvende tutar. Her biri neye karşı koruduğunu ve bu yüzden nelerin çalışmayabileceğini söyler.</string>
     <string name="dejavu_sync_zen_hint_unpinned">Zen\'de Ayarlar\'ı, ardından Eşitleme\'yi açın ve kenar çubuğu eşitlemesini açın.</string>
-    <string name="dejavu_settings_bars">Çubuklar ve menü</string>
     <string name="dejavu_bars_actions_bar">Adres çubuğu üstte, eylem çubuğu altta</string>
     <string name="dejavu_bars_actions_bar_summary">Diğer menüsünü açmak için eylem çubuğunu yukarı kaydırın.</string>
     <string name="dejavu_bars_top">Adres çubuğu üstte</string>
     <string name="dejavu_bars_top_summary">Eylem çubuğu yok. Diğer menüsünü açmak için adres çubuğunu aşağı kaydırın.</string>
     <string name="dejavu_bars_bottom">Adres çubuğu altta</string>
     <string name="dejavu_bars_bottom_summary">Eylem çubuğu yok. Diğer menüsünü açmak için adres çubuğunu yukarı kaydırın.</string>
-    <string name="dejavu_settings_screen">Ekran</string>
     <string name="dejavu_settings_hide_system_bars">Durum ve gezinme çubuklarını gizle</string>
     <string name="dejavu_settings_hide_system_bars_summary">Bir sayfa gösterilirken. Kısa bir süre görmek için üst veya alt kenardan kaydırın.</string>
     <string name="dejavu_bookmarks_export">Dosyaya dışa aktar</string>
@@ -471,9 +469,18 @@
     <string name="dejavu_feature_save_page">Sayfaları internetsiz okumak için kaydedin</string>
     <string name="dejavu_recent_search_text">Bu aramayı son aramalarınızdan silin veya tümünü temizleyin.</string>
     <string name="dejavu_recent_search_clear">Arama geçmişini temizle</string>
-    <string name="dejavu_settings_home_screen">Ana ekran</string>
     <string name="dejavu_home_search_top">Arama çubuğu üstte</string>
     <string name="dejavu_home_search_top_summary">Çalışma alanları, indirilenler, uzantılar, yer imleri ve geçmiş altta.</string>
     <string name="dejavu_home_search_bottom">Arama çubuğu altta</string>
     <string name="dejavu_home_search_bottom_summary">Ulaşması daha kolay. Çalışma alanları, indirilenler, uzantılar, yer imleri ve geçmiş üste taşınır.</string>
+    <string name="dejavu_settings_autoclose_tabs">Sekmeleri otomatik kapat</string>
+    <string name="dejavu_settings_tabs_workspaces">Sekmeler, çalışma alanları ve kapsayıcılar</string>
+    <string name="dejavu_settings_tabs_workspaces_summary">Sekme kapatma ve uyutma, kapsayıcılar, giriş sayfası ve bağlantılar</string>
+    <string name="dejavu_settings_customize_summary">Tema, sekme eylemleri, menü, çubuklar, parolalar ve dil</string>
+    <string name="dejavu_settings_bars_2">Çubuklar</string>
+    <string name="dejavu_settings_bars_summary">Web sayfası, giriş sayfası, tam ekran, sekme çubuğu ve parmak hareketleri</string>
+    <string name="dejavu_settings_web_page">Web sayfası</string>
+    <string name="dejavu_settings_full_screen">Tam ekran</string>
+    <string name="dejavu_settings_passwords_language">Parolalar ve dil</string>
+    <string name="dejavu_settings_passwords_language_summary">Otomatik doldurma, erişilebilirlik, çeviriler ve yapay zekâ kontrolleri</string>
 </resources>

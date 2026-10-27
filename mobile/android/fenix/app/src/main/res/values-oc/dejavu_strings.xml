@@ -419,14 +419,12 @@
     <string name="dejavu_protection_links">Levar lo seguiment dels ligams</string>
     <string name="dejavu_protection_hint">Una proteccion activada vos garda mai en seguretat. Cada una ditz de qué vos protegís e çò que pòt arrestar de foncionar a causa d\'ela.</string>
     <string name="dejavu_sync_zen_hint_unpinned">Dins Zen, dobrissètz Paramètres, puèi Sincronizacion, e activatz la sincronizacion de la barra laterala.</string>
-    <string name="dejavu_settings_bars">Barras e menú</string>
     <string name="dejavu_bars_actions_bar">Barra d’adreça en naut, barra d’accions en bas</string>
     <string name="dejavu_bars_actions_bar_summary">Fasètz lisar la barra d’accions cap amont per dobrir lo menú Mai.</string>
     <string name="dejavu_bars_top">Barra d’adreça en naut</string>
     <string name="dejavu_bars_top_summary">Cap de barra d’accions. Fasètz lisar la barra d’adreça cap aval per dobrir lo menú Mai.</string>
     <string name="dejavu_bars_bottom">Barra d’adreça en bas</string>
     <string name="dejavu_bars_bottom_summary">Cap de barra d’accions. Fasètz lisar la barra d’adreça cap amont per dobrir lo menú Mai.</string>
-    <string name="dejavu_settings_screen">Ecran</string>
     <string name="dejavu_settings_hide_system_bars">Amagar las barras d\'estat e de navegacion</string>
     <string name="dejavu_settings_hide_system_bars_summary">Pendent l\'afichatge d\'una pagina. Fasètz lisar dempuèi lo bòrd superior o inferior per las veire un moment.</string>
     <string name="dejavu_bookmarks_export">Exportar dins un fichièr</string>
@@ -471,9 +469,18 @@
     <string name="dejavu_feature_save_page">Enregistratz de paginas per las legir sens Internet</string>
     <string name="dejavu_recent_search_text">Suprimissètz aquesta recèrca de vòstras recèrcas recentas, o escafatz-las totas.</string>
     <string name="dejavu_recent_search_clear">Escafar l’istoric de recèrca</string>
-    <string name="dejavu_settings_home_screen">Ecran d’acuèlh</string>
     <string name="dejavu_home_search_top">Barra de recèrca en naut</string>
     <string name="dejavu_home_search_top_summary">Espacis de trabalh, telecargaments, extensions, marcapaginas e istoric en bas.</string>
     <string name="dejavu_home_search_bottom">Barra de recèrca en bas</string>
     <string name="dejavu_home_search_bottom_summary">Mai aisit d’aténher. Espacis de trabalh, telecargaments, extensions, marcapaginas e istoric se desplaçan en naut.</string>
+    <string name="dejavu_settings_autoclose_tabs">Tampar automaticament los onglets</string>
+    <string name="dejavu_settings_tabs_workspaces">Onglets, espacis de trabalh e contenidors</string>
+    <string name="dejavu_settings_tabs_workspaces_summary">Tampar e metre en velha los onglets, contenidors, pagina d’acuèlh e ligams</string>
+    <string name="dejavu_settings_customize_summary">Tèma, accions dels onglets, menú, barras, senhals e lenga</string>
+    <string name="dejavu_settings_bars_2">Barras</string>
+    <string name="dejavu_settings_bars_summary">Pagina web, pagina d’acuèlh, plen ecran, barra d’onglets e gèstes</string>
+    <string name="dejavu_settings_web_page">Pagina web</string>
+    <string name="dejavu_settings_full_screen">Plen ecran</string>
+    <string name="dejavu_settings_passwords_language">Senhals e lenga</string>
+    <string name="dejavu_settings_passwords_language_summary">Emplenament automatic, accessibilitat, traduccions e contraròtles IA</string>
 </resources>

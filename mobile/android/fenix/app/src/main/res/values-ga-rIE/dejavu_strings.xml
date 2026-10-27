@@ -440,14 +440,12 @@
     <string name="dejavu_protection_links">Bain lorgaireacht de naisc</string>
     <string name="dejavu_protection_hint">Coinníonn cosaint atá ar siúl níos sábháilte thú. Insíonn gach ceann acu cad a gcosnaíonn sé thú air, agus cad a d\'fhéadfadh stopadh ag obair dá bharr.</string>
     <string name="dejavu_sync_zen_hint_unpinned">I Zen, oscail Socruithe, ansin Sioncrónú, agus cuir sioncrónú an bharra taoibh ar siúl.</string>
-    <string name="dejavu_settings_bars">Barraí agus roghchlár</string>
     <string name="dejavu_bars_actions_bar">Barra seoltaí ag an mbarr, barra gníomhartha ag an mbun</string>
     <string name="dejavu_bars_actions_bar_summary">Svaidhpeáil an barra gníomhartha suas chun an roghchlár ‘Tuilleadh’ a oscailt.</string>
     <string name="dejavu_bars_top">Barra seoltaí ag an mbarr</string>
     <string name="dejavu_bars_top_summary">Níl aon bharra gníomhartha ann. Svaidhpeáil an barra seoltaí síos chun an roghchlár ‘Tuilleadh’ a oscailt.</string>
     <string name="dejavu_bars_bottom">Barra seoltaí ag an mbun</string>
     <string name="dejavu_bars_bottom_summary">Níl aon bharra gníomhartha ann. Svaidhpeáil an barra seoltaí suas chun an roghchlár ‘Tuilleadh’ a oscailt.</string>
-    <string name="dejavu_settings_screen">Scáileán</string>
     <string name="dejavu_settings_hide_system_bars">Folaigh na barraí stádais agus nascleanúna</string>
     <string name="dejavu_settings_hide_system_bars_summary">Fad is atá leathanach ar taispeáint. Svaidhpeáil isteach ón imeall uachtarach nó íochtarach chun iad a fheiceáil ar feadh nóiméid.</string>
     <string name="dejavu_bookmarks_export">Easpórtáil go comhad</string>
@@ -495,9 +493,18 @@
     <string name="dejavu_feature_save_page">Sábháil leathanaigh le léamh gan idirlíon</string>
     <string name="dejavu_recent_search_text">Scrios an cuardach seo de do chuardaigh le déanaí, nó glan iad uile.</string>
     <string name="dejavu_recent_search_clear">Glan stair cuardaigh</string>
-    <string name="dejavu_settings_home_screen">Scáileán baile</string>
     <string name="dejavu_home_search_top">Barra cuardaigh ag an mbarr</string>
     <string name="dejavu_home_search_top_summary">Spásanna oibre, íoslódálacha, eisínteachtaí, leabharmharcanna agus stair ag an mbun.</string>
     <string name="dejavu_home_search_bottom">Barra cuardaigh ag an mbun</string>
     <string name="dejavu_home_search_bottom_summary">Níos éasca a shroicheadh. Bogtar spásanna oibre, íoslódálacha, eisínteachtaí, leabharmharcanna agus stair go dtí an barr.</string>
+    <string name="dejavu_settings_autoclose_tabs">Dún cluaisíní go huathoibríoch</string>
+    <string name="dejavu_settings_tabs_workspaces">Cluaisíní, spásanna oibre agus coimeádáin</string>
+    <string name="dejavu_settings_tabs_workspaces_summary">Dúnadh agus codladh cluaisíní, coimeádáin, leathanach baile agus naisc</string>
+    <string name="dejavu_settings_customize_summary">Téama, gníomhartha cluaisíní, roghchlár, barraí, focail fhaire agus teanga</string>
+    <string name="dejavu_settings_bars_2">Barraí</string>
+    <string name="dejavu_settings_bars_summary">Leathanach Gréasáin, leathanach baile, lánscáileán, barra cluaisíní agus gothaí</string>
+    <string name="dejavu_settings_web_page">Leathanach Gréasáin</string>
+    <string name="dejavu_settings_full_screen">Lánscáileán</string>
+    <string name="dejavu_settings_passwords_language">Focail fhaire agus teanga</string>
+    <string name="dejavu_settings_passwords_language_summary">Uathlíonadh, inrochtaineacht, aistriúcháin agus rialtáin IS</string>
 </resources>

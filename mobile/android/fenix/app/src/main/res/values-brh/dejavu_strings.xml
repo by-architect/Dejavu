@@ -419,14 +419,12 @@
     <string name="dejavu_protection_links">لنکاک آن ٹریکنگ ہٹاؤ</string>
     <string name="dejavu_protection_hint">آن حفاظت نُمے زیات محفوظ تخک۔ ہر حفاظت پاریک کہ او انت آن حفاظت کیک، او ممکن اے کہ ایہنا وجہ آن انت کاریم کپک۔</string>
     <string name="dejavu_sync_zen_hint_unpinned">Zen اٹ، سیٹنگاک مل، پہ Sync، او سائیڈبار سنک آن کبو۔</string>
-    <string name="dejavu_settings_bars">باراک او مینو</string>
     <string name="dejavu_bars_actions_bar">ڈس بار برز، ایکشن بار شیف</string>
     <string name="dejavu_bars_actions_bar_summary">مور مینو ملنگ کن ایکشن بار اے بُرزا سوائپ کبو۔</string>
     <string name="dejavu_bars_top">ڈس بار برز</string>
     <string name="dejavu_bars_top_summary">ایکشن بار کائی نی۔ مور مینو ملنگ کن ڈس بار اے تلی سوائپ کبو۔</string>
     <string name="dejavu_bars_bottom">ڈس بار شیف</string>
     <string name="dejavu_bars_bottom_summary">ایکشن بار کائی نی۔ مور مینو ملنگ کن ڈس بار اے بُرزا سوائپ کبو۔</string>
-    <string name="dejavu_settings_screen">اسکرین</string>
     <string name="dejavu_settings_hide_system_bars">اسٹیٹس او نیویگیشن بار آتے چھپا</string>
     <string name="dejavu_settings_hide_system_bars_summary">ہرا وخت اسہ صفحہ تسنگ۔ اوفتے اسہ لمحہ کن خننگ کن مَلّی یا جہلی کنڑہ آن سوائپ کر۔</string>
     <string name="dejavu_bookmarks_export">فائل ٹی ایکسپورٹ کبو</string>
@@ -471,9 +469,18 @@
     <string name="dejavu_feature_save_page">صفحاتے انٹرنیٹ اٹ بغیر ہناؤ کن سیو کبو</string>
     <string name="dejavu_recent_search_text">اے پٹنگ زاتیاٹ پٹنگاں چہ مٹائیں، یا ہمے مٹائیں۔</string>
     <string name="dejavu_recent_search_clear">پٹنگ تاریخچہ مٹائفبو</string>
-    <string name="dejavu_settings_home_screen">ہوم سکرین</string>
     <string name="dejavu_home_search_top">پٹنگ بار برز</string>
     <string name="dejavu_home_search_top_summary">ورک سپیساک، ڈاونلوڈآک، ایکسٹینشناک، بک مارکاک او تاریخچہ شیف۔</string>
     <string name="dejavu_home_search_bottom">پٹنگ بار شیف</string>
     <string name="dejavu_home_search_bottom_summary">پُہتنگ آسان تر۔ ورک سپیساک، ڈاونلوڈآک، ایکسٹینشناک، بک مارکاک او تاریخچہ برز چل ہن۔</string>
+    <string name="dejavu_settings_autoclose_tabs">ٹیباتے تینٹ بند کبو</string>
+    <string name="dejavu_settings_tabs_workspaces">ٹیباک، ورک سپیساک او کنٹینراک</string>
+    <string name="dejavu_settings_tabs_workspaces_summary">ٹیب بند کننگ، سلیپ ٹیباک، کنٹینراک، مون نا پنہ او لنکاک</string>
+    <string name="dejavu_settings_customize_summary">تیم، ٹیب ایکشناک، مینو، باراک، کلیت لوزاک او زبان</string>
+    <string name="dejavu_settings_bars_2">باراک</string>
+    <string name="dejavu_settings_bars_summary">ویب پنہ، مون نا پنہ، پورا اسکرین، ٹیب بار او اشاراک</string>
+    <string name="dejavu_settings_web_page">ویب پنہ</string>
+    <string name="dejavu_settings_full_screen">پورا اسکرین</string>
+    <string name="dejavu_settings_passwords_language">کلیت لوزاک او زبان</string>
+    <string name="dejavu_settings_passwords_language_summary">آٹو فل، رسائی پذیری، مٹ اک او AI کنٹرولاک</string>
 </resources>

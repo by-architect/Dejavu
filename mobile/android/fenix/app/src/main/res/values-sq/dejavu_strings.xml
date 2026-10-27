@@ -419,14 +419,12 @@
     <string name="dejavu_protection_links">Hiq gjurmimin nga lidhjet</string>
     <string name="dejavu_protection_hint">Një mbrojtje e aktivizuar ju mban më të sigurt. Secila thotë nga çfarë ju mbron dhe çfarë mund të ndalë së punuari për shkak të saj.</string>
     <string name="dejavu_sync_zen_hint_unpinned">Në Zen, hapni Rregullime, mandej Njëkohësim, dhe aktivizoni njëkohësimin e panelit anësor.</string>
-    <string name="dejavu_settings_bars">Shirita dhe menu</string>
     <string name="dejavu_bars_actions_bar">Shtylla e adresave sipër, shiriti i veprimeve poshtë</string>
     <string name="dejavu_bars_actions_bar_summary">Fërkojeni për sipër shiritin e veprimeve, që të hapet menuja «Më Tepër».</string>
     <string name="dejavu_bars_top">Shtylla e adresave sipër</string>
     <string name="dejavu_bars_top_summary">Pa shirit veprimesh. Fërkojeni për poshtë shtyllën e adresave, që të hapet menuja «Më Tepër».</string>
     <string name="dejavu_bars_bottom">Shtylla e adresave poshtë</string>
     <string name="dejavu_bars_bottom_summary">Pa shirit veprimesh. Fërkojeni për sipër shtyllën e adresave, që të hapet menuja «Më Tepër».</string>
-    <string name="dejavu_settings_screen">Ekrani</string>
     <string name="dejavu_settings_hide_system_bars">Fshih shiritat e gjendjes dhe të lëvizjes</string>
     <string name="dejavu_settings_hide_system_bars_summary">Teksa shfaqet një faqe. Rrëshqitni nga skaji i sipërm ose i poshtëm që t\'i shihni për një çast.</string>
     <string name="dejavu_bookmarks_export">Eksporto në kartelë</string>
@@ -471,9 +469,18 @@
     <string name="dejavu_feature_save_page">Ruani faqe për t\'i lexuar pa internet</string>
     <string name="dejavu_recent_search_text">Fshije këtë kërkim nga kërkimet e fundit, ose pastroji të gjitha.</string>
     <string name="dejavu_recent_search_clear">Fshije historikun e kërkimeve</string>
-    <string name="dejavu_settings_home_screen">Ekrani kryesor</string>
     <string name="dejavu_home_search_top">Shtylla e kërkimeve sipër</string>
     <string name="dejavu_home_search_top_summary">Hapësirat e punës, shkarkimet, zgjerimet, faqerojtësit dhe historiku poshtë.</string>
     <string name="dejavu_home_search_bottom">Shtylla e kërkimeve poshtë</string>
     <string name="dejavu_home_search_bottom_summary">Më e lehtë për t\'u arritur. Hapësirat e punës, shkarkimet, zgjerimet, faqerojtësit dhe historiku lëvizin sipër.</string>
+    <string name="dejavu_settings_autoclose_tabs">Vetëmbyllje skedash</string>
+    <string name="dejavu_settings_tabs_workspaces">Skeda, hapësira pune dhe kontejnerë</string>
+    <string name="dejavu_settings_tabs_workspaces_summary">Mbyllje dhe pezullim skedash, kontejnerë, faqe hyrëse dhe lidhje</string>
+    <string name="dejavu_settings_customize_summary">Temë, veprime skedash, menu, shtylla, fjalëkalime dhe gjuhë</string>
+    <string name="dejavu_settings_bars_2">Shtylla</string>
+    <string name="dejavu_settings_bars_summary">Faqe web, faqe hyrëse, sa krejt ekrani, shtyllë skedash dhe gjeste</string>
+    <string name="dejavu_settings_web_page">Faqe web</string>
+    <string name="dejavu_settings_full_screen">Sa krejt ekrani</string>
+    <string name="dejavu_settings_passwords_language">Fjalëkalime dhe gjuhë</string>
+    <string name="dejavu_settings_passwords_language_summary">Vetëplotësime, përdorim nga persona me aftësi të kufizuara, përkthime dhe kontrolle IA</string>
 </resources>

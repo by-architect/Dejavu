@@ -412,14 +412,12 @@
     <string name="dejavu_protection_links">ລຶບການຕິດຕາມອອກຈາກລິ້ງ</string>
     <string name="dejavu_protection_hint">ການປ້ອງກັນທີ່ເປີດຢູ່ຊ່ວຍໃຫ້ທ່ານປອດໄພຂຶ້ນ. ແຕ່ລະອັນບອກວ່າມັນປ້ອງກັນຫຍັງ ແລະ ອາດມີຫຍັງທີ່ຢຸດເຮັດວຽກຍ້ອນມັນ.</string>
     <string name="dejavu_sync_zen_hint_unpinned">ໃນ Zen, ເປີດການຕັ້ງຄ່າ, ແລ້ວໄປທີ່ Sync, ແລະ ເປີດການຊິງຄ໌ແຖບຂ້າງ.</string>
-    <string name="dejavu_settings_bars">ແຖບ ແລະ ເມນູ</string>
     <string name="dejavu_bars_actions_bar">ແຖບທີ່ຢູ່ຢູ່ທາງເທິງ, ແຖບຄຳສັ່ງຢູ່ທາງລຸ່ມ</string>
     <string name="dejavu_bars_actions_bar_summary">ປັດແຖບຄຳສັ່ງຂຶ້ນເພື່ອເປີດເມນູເພີ່ມເຕີມ.</string>
     <string name="dejavu_bars_top">ແຖບທີ່ຢູ່ຢູ່ທາງເທິງ</string>
     <string name="dejavu_bars_top_summary">ບໍ່ມີແຖບຄຳສັ່ງ. ປັດແຖບທີ່ຢູ່ລົງເພື່ອເປີດເມນູເພີ່ມເຕີມ.</string>
     <string name="dejavu_bars_bottom">ແຖບທີ່ຢູ່ຢູ່ທາງລຸ່ມ</string>
     <string name="dejavu_bars_bottom_summary">ບໍ່ມີແຖບຄຳສັ່ງ. ປັດແຖບທີ່ຢູ່ຂຶ້ນເພື່ອເປີດເມນູເພີ່ມເຕີມ.</string>
-    <string name="dejavu_settings_screen">ໜ້າຈໍ</string>
     <string name="dejavu_settings_hide_system_bars">ເຊື່ອງແຖບສະຖານະ ແລະ ແຖບນຳທາງ</string>
     <string name="dejavu_settings_hide_system_bars_summary">ໃນຂະນະທີ່ສະແດງໜ້າເວັບ. ປັດເຂົ້າຈາກຂອບເທິງ ຫຼື ລຸ່ມ ເພື່ອເບິ່ງພວກມັນຊົ່ວຄາວ.</string>
     <string name="dejavu_bookmarks_export">ສົ່ງອອກເປັນໄຟລ໌</string>
@@ -463,9 +461,18 @@
     <string name="dejavu_feature_save_page">ບັນທຶກໜ້າເພື່ອອ່ານໂດຍບໍ່ມີອິນເຕີເນັດ</string>
     <string name="dejavu_recent_search_text">ລຶບການຄົ້ນຫານີ້ອອກຈາກການຄົ້ນຫາຫຼ້າສຸດຂອງທ່ານ ຫຼື ລຶບທັງໝົດ.</string>
     <string name="dejavu_recent_search_clear">ລຶບປະຫວັດການຄົ້ນຫາ</string>
-    <string name="dejavu_settings_home_screen">ໜ້າຈໍຫຼັກ</string>
     <string name="dejavu_home_search_top">ແຖບຄົ້ນຫາຢູ່ທາງເທິງ</string>
     <string name="dejavu_home_search_top_summary">ພື້ນທີ່ເຮັດວຽກ, ດາວໂຫລດ, ສ່ວນຂະຫຍາຍ, ບຸກມາກ ແລະ ປະຫວັດ ຢູ່ທາງລຸ່ມ.</string>
     <string name="dejavu_home_search_bottom">ແຖບຄົ້ນຫາຢູ່ທາງລຸ່ມ</string>
     <string name="dejavu_home_search_bottom_summary">ເອື້ອມເຖິງງ່າຍກວ່າ. ພື້ນທີ່ເຮັດວຽກ, ດາວໂຫລດ, ສ່ວນຂະຫຍາຍ, ບຸກມາກ ແລະ ປະຫວັດ ຍ້າຍໄປທາງເທິງ.</string>
+    <string name="dejavu_settings_autoclose_tabs">ປິດແທັບອັດຕະໂນມັດ</string>
+    <string name="dejavu_settings_tabs_workspaces">ແທັບ, ພື້ນທີ່ເຮັດວຽກ ແລະ ຄອນເທນເນີ</string>
+    <string name="dejavu_settings_tabs_workspaces_summary">ການປິດແທັບ, ແທັບທີ່ພັກ, ຄອນເທນເນີ, ຫນ້າທຳອິດ ແລະ ລິ້ງ</string>
+    <string name="dejavu_settings_customize_summary">ຊຸດປັບແຕ່ງ, ຄຳສັ່ງແທັບ, ເມນູ, ແຖບຕ່າງໆ, ລະຫັດຜ່ານ ແລະ ພາສາ</string>
+    <string name="dejavu_settings_bars_2">ແຖບຕ່າງໆ</string>
+    <string name="dejavu_settings_bars_summary">ຫນ້າເວັບ, ຫນ້າທຳອິດ, ເຕັມຫນ້າຈໍ, ແຖບແທັບ ແລະ ທ່າທາງ</string>
+    <string name="dejavu_settings_web_page">ຫນ້າເວັບ</string>
+    <string name="dejavu_settings_full_screen">ເຕັມຫນ້າຈໍ</string>
+    <string name="dejavu_settings_passwords_language">ລະຫັດຜ່ານ ແລະ ພາສາ</string>
+    <string name="dejavu_settings_passwords_language_summary">ຕື່ມຂໍ້ມູນອັດຕະໂນມັດ, ສິ່ງອຳນວຍຄວາມສະດວກ, ການແປ ແລະ ການຄວບຄຸມ AI</string>
 </resources>

@@ -419,14 +419,12 @@
     <string name="dejavu_protection_links">Havolalardan kuzatuvni olib tashlash</string>
     <string name="dejavu_protection_hint">Yoqilgan himoya sizni xavfsizroq saqlaydi. Har biri nimadan himoya qilishini va shu sababli nima ishlamay qolishi mumkinligini aytadi.</string>
     <string name="dejavu_sync_zen_hint_unpinned">Zen-da Sozlamalarni, keyin Sinxronlashtirishni oching va yon panel sinxronlashini yoqing.</string>
-    <string name="dejavu_settings_bars">Panellar va menyu</string>
     <string name="dejavu_bars_actions_bar">Manzil paneli yuqorida, amallar paneli pastda</string>
     <string name="dejavu_bars_actions_bar_summary">«Ko\'proq» menyusini ochish uchun amallar panelini yuqoriga suring.</string>
     <string name="dejavu_bars_top">Manzil paneli yuqorida</string>
     <string name="dejavu_bars_top_summary">Amallar paneli yo\'q. «Ko\'proq» menyusini ochish uchun manzil panelini pastga suring.</string>
     <string name="dejavu_bars_bottom">Manzil paneli pastda</string>
     <string name="dejavu_bars_bottom_summary">Amallar paneli yo\'q. «Ko\'proq» menyusini ochish uchun manzil panelini yuqoriga suring.</string>
-    <string name="dejavu_settings_screen">Ekran</string>
     <string name="dejavu_settings_hide_system_bars">Holat va navigatsiya panellarini yashirish</string>
     <string name="dejavu_settings_hide_system_bars_summary">Sahifa ko‘rsatilayotganda. Ularni bir lahza ko‘rish uchun yuqori yoki pastki chetdan suring.</string>
     <string name="dejavu_bookmarks_export">Faylga eksport qilish</string>
@@ -471,9 +469,18 @@
     <string name="dejavu_feature_save_page">Sahifalarni internetsiz o\'qish uchun saqlang</string>
     <string name="dejavu_recent_search_text">Bu qidiruvni soʻnggi qidiruvlardan oʻchiring yoki barchasini tozalang.</string>
     <string name="dejavu_recent_search_clear">Qidiruv tarixini oʻchirish</string>
-    <string name="dejavu_settings_home_screen">Bosh ekran</string>
     <string name="dejavu_home_search_top">Qidiruv paneli yuqorida</string>
     <string name="dejavu_home_search_top_summary">Ish maydonlari, yuklanmalar, kengaytmalar, xatcho\'plar va tarix pastda.</string>
     <string name="dejavu_home_search_bottom">Qidiruv paneli pastda</string>
     <string name="dejavu_home_search_bottom_summary">Yetib borish osonroq. Ish maydonlari, yuklanmalar, kengaytmalar, xatcho\'plar va tarix yuqoriga ko\'chadi.</string>
+    <string name="dejavu_settings_autoclose_tabs">Varaqlarni avtomatik yopish</string>
+    <string name="dejavu_settings_tabs_workspaces">Varaqlar, ish maydonlari va konteynerlar</string>
+    <string name="dejavu_settings_tabs_workspaces_summary">Varaqlarni yopish va uxlatish, konteynerlar, bosh sahifa va havolalar</string>
+    <string name="dejavu_settings_customize_summary">Mavzu, varaq amallari, menyu, panellar, parollar va til</string>
+    <string name="dejavu_settings_bars_2">Panellar</string>
+    <string name="dejavu_settings_bars_summary">Veb-sahifa, bosh sahifa, toʻliq ekran, varaqlar paneli va ishoralar</string>
+    <string name="dejavu_settings_web_page">Veb-sahifa</string>
+    <string name="dejavu_settings_full_screen">Toʻliq ekran</string>
+    <string name="dejavu_settings_passwords_language">Parollar va til</string>
+    <string name="dejavu_settings_passwords_language_summary">Avtomatik toʻldirish, qulaylik, tarjimalar va SI boshqaruvi</string>
 </resources>

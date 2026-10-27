@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/dejavu_tabs_workspaces_graph"
+    app:startDestination="@id/dejavuTabsWorkspacesFragment">
+
+    <fragment
+        android:id="@+id/dejavuTabsWorkspacesFragment"
+        android:name="org.mozilla.fenix.dejavu.settings.DejavuTabsWorkspacesFragment"
+        android:label="@string/dejavu_settings_tabs_workspaces">
+        <argument
+            android:name="preference_to_scroll_to"
+            android:defaultValue="@null"
+            app:argType="string"
+            app:nullable="true" />
+    </fragment>
+</navigation>

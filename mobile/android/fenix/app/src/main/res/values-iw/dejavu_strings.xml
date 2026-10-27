@@ -426,14 +426,12 @@
     <string name="dejavu_protection_links">הסרת מעקב מקישורים</string>
     <string name="dejavu_protection_hint">הגנה פעילה שומרת עליך טוב יותר. כל הגנה מסבירה ממה היא מגנה ומה עלול להפסיק לעבוד בגללה.</string>
     <string name="dejavu_sync_zen_hint_unpinned">ב-Zen, פתחו את ההגדרות, ואז את הסנכרון, והפעילו את סנכרון סרגל הצד.</string>
-    <string name="dejavu_settings_bars">סרגלים ותפריט</string>
     <string name="dejavu_bars_actions_bar">שורת הכתובת למעלה, סרגל הפעולות למטה</string>
     <string name="dejavu_bars_actions_bar_summary">החליקו את סרגל הפעולות למעלה כדי לפתוח את תפריט “עוד”.</string>
     <string name="dejavu_bars_top">שורת הכתובת למעלה</string>
     <string name="dejavu_bars_top_summary">ללא סרגל פעולות. החליקו את שורת הכתובת למטה כדי לפתוח את תפריט “עוד”.</string>
     <string name="dejavu_bars_bottom">שורת הכתובת למטה</string>
     <string name="dejavu_bars_bottom_summary">ללא סרגל פעולות. החליקו את שורת הכתובת למעלה כדי לפתוח את תפריט “עוד”.</string>
-    <string name="dejavu_settings_screen">מסך</string>
     <string name="dejavu_settings_hide_system_bars">הסתרת סרגלי המצב והניווט</string>
     <string name="dejavu_settings_hide_system_bars_summary">בזמן הצגת דף. יש להחליק מהקצה העליון או התחתון כדי לראות אותם לרגע.</string>
     <string name="dejavu_bookmarks_export">ייצוא לקובץ</string>
@@ -479,9 +477,18 @@
     <string name="dejavu_feature_save_page">שמרו דפים כדי לקרוא אותם בלי אינטרנט</string>
     <string name="dejavu_recent_search_text">אפשר למחוק את החיפוש הזה מהחיפושים האחרונים, או לנקות את כולם.</string>
     <string name="dejavu_recent_search_clear">ניקוי היסטוריית החיפושים</string>
-    <string name="dejavu_settings_home_screen">מסך הבית</string>
     <string name="dejavu_home_search_top">שורת החיפוש למעלה</string>
     <string name="dejavu_home_search_top_summary">מרחבי עבודה, הורדות, הרחבות, סימניות והיסטוריה למטה.</string>
     <string name="dejavu_home_search_bottom">שורת החיפוש למטה</string>
     <string name="dejavu_home_search_bottom_summary">קל יותר להגיע אליה. מרחבי עבודה, הורדות, הרחבות, סימניות והיסטוריה עוברים למעלה.</string>
+    <string name="dejavu_settings_autoclose_tabs">סגירה אוטומטית של לשוניות</string>
+    <string name="dejavu_settings_tabs_workspaces">לשוניות, מרחבי עבודה ומארזים</string>
+    <string name="dejavu_settings_tabs_workspaces_summary">סגירה והרדמה של לשוניות, מארזים, מסך הבית וקישורים</string>
+    <string name="dejavu_settings_customize_summary">ערכת נושא, פעולות לשוניות, תפריט, סרגלים, ססמאות ושפה</string>
+    <string name="dejavu_settings_bars_2">סרגלים</string>
+    <string name="dejavu_settings_bars_summary">דף אינטרנט, מסך הבית, מסך מלא, סרגל הלשוניות ומחוות</string>
+    <string name="dejavu_settings_web_page">דף אינטרנט</string>
+    <string name="dejavu_settings_full_screen">מסך מלא</string>
+    <string name="dejavu_settings_passwords_language">ססמאות ושפה</string>
+    <string name="dejavu_settings_passwords_language_summary">מילוי אוטומטי, נגישות, תרגומים ובקרי בינה מלאכותית</string>
 </resources>

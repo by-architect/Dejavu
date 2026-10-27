@@ -426,14 +426,12 @@
     <string name="dejavu_protection_links">Ukloni praćenje iz poveznica</string>
     <string name="dejavu_protection_hint">Uključena zaštita povećava tvoju sigurnost. Svaka kaže od čega štiti i što zbog nje može prestati raditi.</string>
     <string name="dejavu_sync_zen_hint_unpinned">U Zenu otvorite Postavke, zatim Sinkronizacija, i uključite sinkronizaciju bočne trake.</string>
-    <string name="dejavu_settings_bars">Trake i izbornik</string>
     <string name="dejavu_bars_actions_bar">Adresna traka gore, traka radnji dolje</string>
     <string name="dejavu_bars_actions_bar_summary">Povucite traku radnji prema gore za otvaranje izbornika „Više“.</string>
     <string name="dejavu_bars_top">Adresna traka gore</string>
     <string name="dejavu_bars_top_summary">Bez trake radnji. Povucite adresnu traku prema dolje za otvaranje izbornika „Više“.</string>
     <string name="dejavu_bars_bottom">Adresna traka dolje</string>
     <string name="dejavu_bars_bottom_summary">Bez trake radnji. Povucite adresnu traku prema gore za otvaranje izbornika „Više“.</string>
-    <string name="dejavu_settings_screen">Zaslon</string>
     <string name="dejavu_settings_hide_system_bars">Sakrij trake stanja i navigacije</string>
     <string name="dejavu_settings_hide_system_bars_summary">Dok je prikazana stranica. Povucite s gornjeg ili donjeg ruba da ih na trenutak vidite.</string>
     <string name="dejavu_bookmarks_export">Izvezi u datoteku</string>
@@ -479,9 +477,18 @@
     <string name="dejavu_feature_save_page">Spremite stranice za čitanje bez interneta</string>
     <string name="dejavu_recent_search_text">Izbriši ovu pretragu iz nedavnih pretraga ili izbriši sve.</string>
     <string name="dejavu_recent_search_clear">Očisti povijest pretraga</string>
-    <string name="dejavu_settings_home_screen">Početni zaslon</string>
     <string name="dejavu_home_search_top">Traka za pretraživanje gore</string>
     <string name="dejavu_home_search_top_summary">Radni prostori, preuzimanja, dodaci, zabilješke i povijest dolje.</string>
     <string name="dejavu_home_search_bottom">Traka za pretraživanje dolje</string>
     <string name="dejavu_home_search_bottom_summary">Lakše dostupno. Radni prostori, preuzimanja, dodaci, zabilješke i povijest premještaju se gore.</string>
+    <string name="dejavu_settings_autoclose_tabs">Automatsko zatvaranje kartica</string>
+    <string name="dejavu_settings_tabs_workspaces">Kartice, radni prostori i spremnici</string>
+    <string name="dejavu_settings_tabs_workspaces_summary">Zatvaranje i uspavljivanje kartica, spremnici, početna stranica i poveznice</string>
+    <string name="dejavu_settings_customize_summary">Tema, radnje kartica, izbornik, trake, lozinke i jezik</string>
+    <string name="dejavu_settings_bars_2">Trake</string>
+    <string name="dejavu_settings_bars_summary">Web-stranica, početna stranica, cijeli ekran, traka s karticama i geste</string>
+    <string name="dejavu_settings_web_page">Web-stranica</string>
+    <string name="dejavu_settings_full_screen">Cijeli ekran</string>
+    <string name="dejavu_settings_passwords_language">Lozinke i jezik</string>
+    <string name="dejavu_settings_passwords_language_summary">Automatsko ispunjavanje, pristupačnost, prijevodi i kontrole umjetne inteligencije</string>
 </resources>

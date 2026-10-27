@@ -419,14 +419,12 @@
     <string name="dejavu_protection_links">Boga sa sighidura dae is ligòngios</string>
     <string name="dejavu_protection_hint">Una protetzione ativa ti mantenet prus seguru. Dònnia una narat dae ite ti amparat e ite podet non funtzionare prus a càusa sua.</string>
     <string name="dejavu_sync_zen_hint_unpinned">In Zen, aberi Cunfiguratzione, a pustis Sincronizatzione, e ativa sa sincronizatzione de sa barra laterale.</string>
-    <string name="dejavu_settings_bars">Barras e menu</string>
     <string name="dejavu_bars_actions_bar">Barra de indiritzos in artu, barra de is atziones in bàsciu</string>
     <string name="dejavu_bars_actions_bar_summary">Iscurre a susu sa barra de is atziones pro abèrrere su menu Prus.</string>
     <string name="dejavu_bars_top">Barra de indiritzos in artu</string>
     <string name="dejavu_bars_top_summary">Nissuna barra de is atziones. Iscurre a bàsciu sa barra de indiritzos pro abèrrere su menu Prus.</string>
     <string name="dejavu_bars_bottom">Barra de indiritzos in bàsciu</string>
     <string name="dejavu_bars_bottom_summary">Nissuna barra de is atziones. Iscurre a susu sa barra de indiritzos pro abèrrere su menu Prus.</string>
-    <string name="dejavu_settings_screen">Ischermu</string>
     <string name="dejavu_settings_hide_system_bars">Cua sas barras de istadu e de navigatzione</string>
     <string name="dejavu_settings_hide_system_bars_summary">Cando si mustrat una pàgina. Iscurre dae s\'oru de susu o de giosso pro las bìdere unu momentu.</string>
     <string name="dejavu_bookmarks_export">Esporta in un\'archìviu</string>
@@ -471,9 +469,18 @@
     <string name="dejavu_feature_save_page">Sarva pàginas pro las lèghere sene internet</string>
     <string name="dejavu_recent_search_text">Cantzella custa chirca dae is chircas reghentes tuas, o lìmpia totu.</string>
     <string name="dejavu_recent_search_clear">Lìmpia sa cronologia de chirca</string>
-    <string name="dejavu_settings_home_screen">Ischermu printzipale</string>
     <string name="dejavu_home_search_top">Barra de chirca in artu</string>
     <string name="dejavu_home_search_top_summary">Ispàtzios de traballu, iscarrigamentos, estensiones, sinnalibros e cronologia in bàsciu.</string>
     <string name="dejavu_home_search_bottom">Barra de chirca in bàsciu</string>
     <string name="dejavu_home_search_bottom_summary">Prus fàtzile de arribare. Ispàtzios de traballu, iscarrigamentos, estensiones, sinnalibros e cronologia si moven in artu.</string>
+    <string name="dejavu_settings_autoclose_tabs">Serrada automàtica de is ischedas</string>
+    <string name="dejavu_settings_tabs_workspaces">Ischedas, ispàtzios de traballu e cuntenidores</string>
+    <string name="dejavu_settings_tabs_workspaces_summary">Serrada e sonnu de is ischedas, cuntenidores, pàgina printzipale e ligàmenes</string>
+    <string name="dejavu_settings_customize_summary">Tema, atziones de is ischedas, menu, barras, craes e lìngua</string>
+    <string name="dejavu_settings_bars_2">Barras</string>
+    <string name="dejavu_settings_bars_summary">Pàgina web, pàgina printzipale, ischermu intreu, barra de is ischedas e gestos</string>
+    <string name="dejavu_settings_web_page">Pàgina web</string>
+    <string name="dejavu_settings_full_screen">Ischermu intreu</string>
+    <string name="dejavu_settings_passwords_language">Craes e lìngua</string>
+    <string name="dejavu_settings_passwords_language_summary">Cumpletamentu automàticu, atzessibilidade, tradutziones e controllos de s\'IA</string>
 </resources>

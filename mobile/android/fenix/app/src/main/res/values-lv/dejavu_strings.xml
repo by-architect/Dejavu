@@ -426,14 +426,12 @@
     <string name="dejavu_protection_links">Noņemt izsekošanu no saitēm</string>
     <string name="dejavu_protection_hint">Ieslēgta aizsardzība jūs labāk pasargā. Katra pasaka, no kā tā sargā un kas tās dēļ var pārstāt darboties.</string>
     <string name="dejavu_sync_zen_hint_unpinned">Zen atveriet Iestatījumi, tad Sinhronizācija, un ieslēdziet sānjoslas sinhronizāciju.</string>
-    <string name="dejavu_settings_bars">Joslas un izvēlne</string>
     <string name="dejavu_bars_actions_bar">Adreses josla augšā, darbību josla apakšā</string>
     <string name="dejavu_bars_actions_bar_summary">Velciet darbību joslu uz augšu, lai atvērtu izvēlni „Vairāk”.</string>
     <string name="dejavu_bars_top">Adreses josla augšā</string>
     <string name="dejavu_bars_top_summary">Bez darbību joslas. Velciet adreses joslu uz leju, lai atvērtu izvēlni „Vairāk”.</string>
     <string name="dejavu_bars_bottom">Adreses josla apakšā</string>
     <string name="dejavu_bars_bottom_summary">Bez darbību joslas. Velciet adreses joslu uz augšu, lai atvērtu izvēlni „Vairāk”.</string>
-    <string name="dejavu_settings_screen">Ekrāns</string>
     <string name="dejavu_settings_hide_system_bars">Paslēpt statusa un navigācijas joslas</string>
     <string name="dejavu_settings_hide_system_bars_summary">Kamēr tiek rādīta lapa. Pavelciet no augšējās vai apakšējās malas, lai uz brīdi tās redzētu.</string>
     <string name="dejavu_bookmarks_export">Eksportēt uz datni</string>
@@ -479,9 +477,18 @@
     <string name="dejavu_feature_save_page">Saglabājiet lapas, lai lasītu bez interneta</string>
     <string name="dejavu_recent_search_text">Dzēst šo meklēšanu no nesenajiem meklējumiem vai notīrīt tos visus.</string>
     <string name="dejavu_recent_search_clear">Notīrīt meklēšanas vēsturi</string>
-    <string name="dejavu_settings_home_screen">Sākuma ekrāns</string>
     <string name="dejavu_home_search_top">Meklēšanas josla augšā</string>
     <string name="dejavu_home_search_top_summary">Darbvietas, lejupielādes, paplašinājumi, grāmatzīmes un vēsture apakšā.</string>
     <string name="dejavu_home_search_bottom">Meklēšanas josla apakšā</string>
     <string name="dejavu_home_search_bottom_summary">Vieglāk aizsniegt. Darbvietas, lejupielādes, paplašinājumi, grāmatzīmes un vēsture pārvietojas uz augšu.</string>
+    <string name="dejavu_settings_autoclose_tabs">Automātiski aizvērt cilnes</string>
+    <string name="dejavu_settings_tabs_workspaces">Cilnes, darbvietas un konteineri</string>
+    <string name="dejavu_settings_tabs_workspaces_summary">Ciļņu aizvēršana un iemidzināšana, konteineri, sākumlapa un saites</string>
+    <string name="dejavu_settings_customize_summary">Motīvs, ciļņu darbības, izvēlne, joslas, paroles un valoda</string>
+    <string name="dejavu_settings_bars_2">Joslas</string>
+    <string name="dejavu_settings_bars_summary">Tīmekļa lapa, sākumlapa, pilnekrāns, ciļņu josla un žesti</string>
+    <string name="dejavu_settings_web_page">Tīmekļa lapa</string>
+    <string name="dejavu_settings_full_screen">Pilnekrāns</string>
+    <string name="dejavu_settings_passwords_language">Paroles un valoda</string>
+    <string name="dejavu_settings_passwords_language_summary">Automātiskā aizpilde, piekļūstamība, tulkojumi un MI vadīklas</string>
 </resources>

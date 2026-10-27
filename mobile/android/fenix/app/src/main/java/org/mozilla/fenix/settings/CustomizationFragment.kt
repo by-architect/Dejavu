@@ -10,6 +10,7 @@ import android.os.Build
 import android.os.Build.VERSION.SDK_INT
 import android.os.Bundle
 import android.view.View
+import androidx.annotation.IdRes
 import androidx.appcompat.app.AppCompatDelegate
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
@@ -40,7 +41,7 @@ import org.mozilla.fenix.ext.isTallWindow
 import org.mozilla.fenix.ext.isWideWindow
 import org.mozilla.fenix.ext.requireComponents
 import org.mozilla.fenix.ext.showToolbar
-import org.mozilla.fenix.settings.settingssearch.PreferenceFileInformation.CustomizationPreferences
+import org.mozilla.fenix.settings.settingssearch.PreferenceFileInformation.DejavuBarsPreferences
 import org.mozilla.fenix.settings.settingssearch.SettingsSearchItem
 import org.mozilla.fenix.settings.settingssearch.SettingsSearchProvider
 import org.mozilla.fenix.translations.TranslationsEnabledSettings
@@ -49,13 +50,20 @@ import org.mozilla.fenix.utils.view.addToRadioGroup
 
 /** Lets the user customize the UI. */
 @Suppress("TooManyFunctions")
-class CustomizationFragment : PreferenceFragmentCompat(), SystemInsetsPaddedFragment {
+open class CustomizationFragment : PreferenceFragmentCompat(), SystemInsetsPaddedFragment {
     private lateinit var radioLightTheme: RadioButtonPreference
     private lateinit var radioDarkTheme: RadioButtonPreference
     private lateinit var radioDarkestTheme: RadioButtonPreference
     private lateinit var radioAutoBatteryTheme: RadioButtonPreference
     private lateinit var radioFollowDeviceTheme: RadioButtonPreference
     private val args by navArgs<CustomizationFragmentArgs>()
+
+    /**
+     * Dejavu: Customize shows the theme and opens the bars, the tab bar and the gestures, which this fragment shows on
+     * a screen of their own as [org.mozilla.fenix.dejavu.settings.DejavuBarsFragment].
+     */
+    protected open val showsBars: Boolean
+        get() = false
 
     // Cached reactive feature state used when (re)building preferences.
     // Defaults match the DataStore defaults (summarization off, translations on)
@@ -68,7 +76,10 @@ class CustomizationFragment : PreferenceFragmentCompat(), SystemInsetsPaddedFrag
         )
 
     override fun onCreatePreferences(savedInstanceState: Bundle?, rootKey: String?) {
-        setPreferencesFromResource(R.xml.customization_preferences, rootKey)
+        setPreferencesFromResource(
+            if (showsBars) R.xml.dejavu_bars_preferences else R.xml.customization_preferences,
+            rootKey,
+        )
 
         setupPreferences(dynamicFeaturesStatus)
     }
@@ -104,7 +115,7 @@ class CustomizationFragment : PreferenceFragmentCompat(), SystemInsetsPaddedFrag
 
     override fun onResume() {
         super.onResume()
-        showToolbar(getString(R.string.preferences_customize))
+        showToolbar(getString(if (showsBars) R.string.dejavu_settings_bars_2 else R.string.preferences_customize))
         args.preferenceToScrollTo?.let {
             scrollToPreferenceWithHighlight(it)
         }
@@ -113,12 +124,16 @@ class CustomizationFragment : PreferenceFragmentCompat(), SystemInsetsPaddedFrag
     private fun setupPreferences(status: DynamicFeaturesStatus) {
         dynamicFeaturesStatus = status
 
-        bindFollowDeviceTheme()
-        bindDarkTheme()
-        bindDarkestTheme()
-        bindLightTheme()
-        bindAutoBatteryTheme()
-        setupRadioGroups()
+        if (!showsBars) {
+            bindFollowDeviceTheme()
+            bindDarkTheme()
+            bindDarkestTheme()
+            bindLightTheme()
+            bindAutoBatteryTheme()
+            setupRadioGroups()
+            setupMoreMenuEditButton()
+            return
+        }
         setupToolbarCategory()
         setupTabStripDisplayCategory()
         setupTabStripLocationCategory()
@@ -126,7 +141,6 @@ class CustomizationFragment : PreferenceFragmentCompat(), SystemInsetsPaddedFrag
         updateToolbarShortcut()
         setupBarsCategory()
         setupHomeSearchCategory()
-        setupMoreMenuEditButton()
         setupSystemBarsSwitch()
 
         // if tab strip is enabled, swipe toolbar to switch tabs should not be enabled so the
@@ -465,10 +479,13 @@ class CustomizationFragment : PreferenceFragmentCompat(), SystemInsetsPaddedFrag
 
     override fun onPreferenceTreeClick(preference: Preference): Boolean {
         when (preference.key) {
-            resources.getString(R.string.pref_key_dejavu_more_menu) -> {
-                findNavController().navigate(R.id.dejavu_more_menu_graph)
-                return true
-            }
+            resources.getString(R.string.pref_key_dejavu_tab_actions) ->
+                return openDejavuScreen(R.id.dejavu_tab_actions_graph)
+            resources.getString(R.string.pref_key_dejavu_more_menu) ->
+                return openDejavuScreen(R.id.dejavu_more_menu_graph)
+            resources.getString(R.string.pref_key_dejavu_bars) -> return openDejavuScreen(R.id.dejavu_bars_graph)
+            resources.getString(R.string.pref_key_dejavu_passwords_language) ->
+                return openDejavuScreen(R.id.dejavu_passwords_language_graph)
             resources.getString(R.string.pref_key_website_pull_to_refresh) -> {
                 PullToRefreshInBrowser.enabled.set(requireComponents.settings.isPullToRefreshEnabledInBrowser)
             }
@@ -479,8 +496,16 @@ class CustomizationFragment : PreferenceFragmentCompat(), SystemInsetsPaddedFrag
         return super.onPreferenceTreeClick(preference)
     }
 
+    /** Dejavu: opens one of the screens Customize leads to, only once when its entry is tapped twice. */
+    private fun openDejavuScreen(@IdRes graph: Int): Boolean {
+        val navController = findNavController()
+        if (navController.currentDestination?.id == R.id.customizationFragment) navController.navigate(graph)
+        return true
+    }
+
     override fun onConfigurationChanged(newConfig: Configuration) {
         super.onConfigurationChanged(newConfig)
+        if (!showsBars) return
         setupToolbarLayout()
         updateToolbarShortcut()
     }
@@ -503,7 +528,8 @@ class CustomizationFragment : PreferenceFragmentCompat(), SystemInsetsPaddedFrag
 
 /** Provides the toolbar shortcuts options for use in settings search. */
 object ToolbarShortcutSettingsSearchProvider : SettingsSearchProvider {
-    private val preferenceFileInformation = CustomizationPreferences
+    // Dejavu: the toolbar settings are on the bars' own screen.
+    private val preferenceFileInformation = DejavuBarsPreferences
 
     override fun getSearchItems(context: Context) =
         listOf(

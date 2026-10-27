@@ -419,14 +419,12 @@
     <string name="dejavu_protection_links">Αφαίρεση καταγραφής από συνδέσμους</string>
     <string name="dejavu_protection_hint">Μια προστασία που είναι ενεργή σάς κρατά πιο ασφαλείς. Η καθεμία λέει από τι σας προστατεύει και τι μπορεί να σταματήσει να λειτουργεί εξαιτίας της.</string>
     <string name="dejavu_sync_zen_hint_unpinned">Στο Zen, ανοίξτε τις Ρυθμίσεις, μετά τον Συγχρονισμό, και ενεργοποιήστε τον συγχρονισμό της πλευρικής γραμμής.</string>
-    <string name="dejavu_settings_bars">Γραμμές και μενού</string>
     <string name="dejavu_bars_actions_bar">Γραμμή διευθύνσεων πάνω, γραμμή ενεργειών κάτω</string>
     <string name="dejavu_bars_actions_bar_summary">Σύρετε τη γραμμή ενεργειών προς τα πάνω για να ανοίξει το μενού «Περισσότερα».</string>
     <string name="dejavu_bars_top">Γραμμή διευθύνσεων πάνω</string>
     <string name="dejavu_bars_top_summary">Χωρίς γραμμή ενεργειών. Σύρετε τη γραμμή διευθύνσεων προς τα κάτω για να ανοίξει το μενού «Περισσότερα».</string>
     <string name="dejavu_bars_bottom">Γραμμή διευθύνσεων κάτω</string>
     <string name="dejavu_bars_bottom_summary">Χωρίς γραμμή ενεργειών. Σύρετε τη γραμμή διευθύνσεων προς τα πάνω για να ανοίξει το μενού «Περισσότερα».</string>
-    <string name="dejavu_settings_screen">Οθόνη</string>
     <string name="dejavu_settings_hide_system_bars">Απόκρυψη γραμμών κατάστασης και πλοήγησης</string>
     <string name="dejavu_settings_hide_system_bars_summary">Όσο εμφανίζεται μια σελίδα. Σύρετε από το πάνω ή το κάτω άκρο για να τις δείτε για λίγο.</string>
     <string name="dejavu_bookmarks_export">Εξαγωγή σε αρχείο</string>
@@ -471,9 +469,18 @@
     <string name="dejavu_feature_save_page">Αποθηκεύστε σελίδες για ανάγνωση χωρίς σύνδεση</string>
     <string name="dejavu_recent_search_text">Διαγράψτε αυτήν την αναζήτηση από τις πρόσφατες αναζητήσεις ή διαγράψτε όλες.</string>
     <string name="dejavu_recent_search_clear">Διαγραφή ιστορικού αναζήτησης</string>
-    <string name="dejavu_settings_home_screen">Αρχική οθόνη</string>
     <string name="dejavu_home_search_top">Γραμμή αναζήτησης πάνω</string>
     <string name="dejavu_home_search_top_summary">Χώροι εργασίας, λήψεις, επεκτάσεις, σελιδοδείκτες και ιστορικό στο κάτω μέρος.</string>
     <string name="dejavu_home_search_bottom">Γραμμή αναζήτησης κάτω</string>
     <string name="dejavu_home_search_bottom_summary">Πιο εύκολη πρόσβαση. Οι χώροι εργασίας, οι λήψεις, οι επεκτάσεις, οι σελιδοδείκτες και το ιστορικό μετακινούνται στο πάνω μέρος.</string>
+    <string name="dejavu_settings_autoclose_tabs">Αυτόματο κλείσιμο καρτελών</string>
+    <string name="dejavu_settings_tabs_workspaces">Καρτέλες, χώροι εργασίας και περιέκτες</string>
+    <string name="dejavu_settings_tabs_workspaces_summary">Κλείσιμο και αδρανοποίηση καρτελών, περιέκτες, αρχική σελίδα και σύνδεσμοι</string>
+    <string name="dejavu_settings_customize_summary">Θέμα, ενέργειες καρτελών, μενού, γραμμές, κωδικοί πρόσβασης και γλώσσα</string>
+    <string name="dejavu_settings_bars_2">Γραμμές</string>
+    <string name="dejavu_settings_bars_summary">Ιστοσελίδα, αρχική σελίδα, πλήρης οθόνη, γραμμή καρτελών και χειρονομίες</string>
+    <string name="dejavu_settings_web_page">Ιστοσελίδα</string>
+    <string name="dejavu_settings_full_screen">Πλήρης οθόνη</string>
+    <string name="dejavu_settings_passwords_language">Κωδικοί πρόσβασης και γλώσσα</string>
+    <string name="dejavu_settings_passwords_language_summary">Αυτόματη συμπλήρωση, προσβασιμότητα, μεταφράσεις και επιλογές ελέγχου ΤΝ</string>
 </resources>

@@ -419,14 +419,12 @@
     <string name="dejavu_protection_links">Eemaldatakse linkidest jälitamine</string>
     <string name="dejavu_protection_hint">Sisse lülitatud kaitse hoiab sind turvalisemana. Iga kaitse ütleb, mille eest see kaitseb ja mis võib selle tõttu töötamast lakata.</string>
     <string name="dejavu_sync_zen_hint_unpinned">Ava Zenis Sätted, siis Sünkroonimine, ja lülita sisse külgriba sünkroonimine.</string>
-    <string name="dejavu_settings_bars">Ribad ja menüü</string>
     <string name="dejavu_bars_actions_bar">Aadressiriba üleval, tegevusriba all</string>
     <string name="dejavu_bars_actions_bar_summary">Libista tegevusriba üles, et menüü „Rohkem” avada.</string>
     <string name="dejavu_bars_top">Aadressiriba üleval</string>
     <string name="dejavu_bars_top_summary">Tegevusriba puudub. Libista aadressiriba alla, et menüü „Rohkem” avada.</string>
     <string name="dejavu_bars_bottom">Aadressiriba all</string>
     <string name="dejavu_bars_bottom_summary">Tegevusriba puudub. Libista aadressiriba üles, et menüü „Rohkem” avada.</string>
-    <string name="dejavu_settings_screen">Ekraan</string>
     <string name="dejavu_settings_hide_system_bars">Peida olekuriba ja navigeerimisriba</string>
     <string name="dejavu_settings_hide_system_bars_summary">Kui leht on kuvatud. Nende hetkeks nägemiseks pühkige ülemisest või alumisest servast.</string>
     <string name="dejavu_bookmarks_export">Ekspordi faili</string>
@@ -471,9 +469,18 @@
     <string name="dejavu_feature_save_page">Salvesta lehed, et neid ilma internetita lugeda</string>
     <string name="dejavu_recent_search_text">Kustuta see otsing hiljutiste otsingute hulgast või tühjenda need kõik.</string>
     <string name="dejavu_recent_search_clear">Kustuta otsinguajalugu</string>
-    <string name="dejavu_settings_home_screen">Avaekraan</string>
     <string name="dejavu_home_search_top">Otsinguriba üleval</string>
     <string name="dejavu_home_search_top_summary">Tööruumid, allalaadimised, lisad, järjehoidjad ja ajalugu all.</string>
     <string name="dejavu_home_search_bottom">Otsinguriba all</string>
     <string name="dejavu_home_search_bottom_summary">Käepärasem. Tööruumid, allalaadimised, lisad, järjehoidjad ja ajalugu liiguvad üles.</string>
+    <string name="dejavu_settings_autoclose_tabs">Kaartide automaatne sulgemine</string>
+    <string name="dejavu_settings_tabs_workspaces">Kaardid, tööruumid ja konteinerid</string>
+    <string name="dejavu_settings_tabs_workspaces_summary">Kaartide sulgemine ja uinutamine, konteinerid, avaleht ja lingid</string>
+    <string name="dejavu_settings_customize_summary">Teema, kaartide tegevused, menüü, ribad, paroolid ja keel</string>
+    <string name="dejavu_settings_bars_2">Ribad</string>
+    <string name="dejavu_settings_bars_summary">Veebileht, avaleht, täisekraan, kaardiriba ja žestid</string>
+    <string name="dejavu_settings_web_page">Veebileht</string>
+    <string name="dejavu_settings_full_screen">Täisekraan</string>
+    <string name="dejavu_settings_passwords_language">Paroolid ja keel</string>
+    <string name="dejavu_settings_passwords_language_summary">Automaatne täitmine, hõlbustus, tõlkimine ja tehisaru juhtimine</string>
 </resources>
