@@ -108,16 +108,33 @@ class WorkspaceWallpapers private constructor(context: Context) {
         withContext(Dispatchers.IO) {
             runCatching {
                 val picture = decodeUpright(uri, screenWidth, screenHeight) ?: return@runCatching null
-                val look = picture.lookOnScreen(screenWidth, screenHeight)
-                val name = "${UUID.randomUUID()}.jpg"
-                val file = pictureFile(name)
-                file.parentFile?.mkdirs()
-                val written = file.outputStream().use { picture.compress(Bitmap.CompressFormat.JPEG, JPEG_QUALITY, it) }
-                picture.recycle()
-                if (!written) file.delete()
-                look.applyTo(WorkspaceWallpaper(file = name)).takeIf { written }
+                keep(picture, "${UUID.randomUUID()}.jpg", screenWidth, screenHeight)
             }.getOrNull()
         }
+
+    /**
+     * Keeps a picture of [art] drawn for a screen of [screenWidth] by [screenHeight] pixels, and returns a wallpaper of
+     * it; `null` when it cannot be kept.
+     */
+    suspend fun importArt(art: WallpaperArt, screenWidth: Int, screenHeight: Int): WorkspaceWallpaper? =
+        withContext(Dispatchers.IO) {
+            runCatching {
+                val picture = art.draw(screenWidth, screenHeight)
+                val name = "${WallpaperArt.FILE_PREFIX}${art.key}-${UUID.randomUUID()}.jpg"
+                keep(picture, name, screenWidth, screenHeight)
+            }.getOrNull()
+        }
+
+    /** Writes [picture] as [name], recycles it, and returns a wallpaper of it, or `null` when it was not written. */
+    private fun keep(picture: Bitmap, name: String, screenWidth: Int, screenHeight: Int): WorkspaceWallpaper? {
+        val look = picture.lookOnScreen(screenWidth, screenHeight)
+        val file = pictureFile(name)
+        file.parentFile?.mkdirs()
+        val written = file.outputStream().use { picture.compress(Bitmap.CompressFormat.JPEG, JPEG_QUALITY, it) }
+        picture.recycle()
+        if (!written) file.delete()
+        return look.applyTo(WorkspaceWallpaper(file = name)).takeIf { written }
+    }
 
     private fun decodeUpright(uri: Uri, screenWidth: Int, screenHeight: Int): Bitmap? {
         val resolver = appContext.contentResolver

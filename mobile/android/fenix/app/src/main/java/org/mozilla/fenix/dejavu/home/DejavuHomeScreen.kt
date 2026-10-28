@@ -82,6 +82,7 @@ import org.mozilla.fenix.dejavu.settings.resolveSelectionActions
 import org.mozilla.fenix.dejavu.sync.DejavuSync
 import org.mozilla.fenix.dejavu.sync.SyncSourceDialog
 import org.mozilla.fenix.dejavu.ui.LocalPopupTheme
+import org.mozilla.fenix.dejavu.welcome.Welcome
 import org.mozilla.fenix.dejavu.workspaces.PinPlacement
 import org.mozilla.fenix.dejavu.workspaces.PinSource
 import org.mozilla.fenix.dejavu.workspaces.PinnedItem
@@ -232,9 +233,21 @@ fun ComposeView.setDejavuHomeContent(
                 }
             }
 
-            val dueChapters = remember { FeatureTour.dueChapters(settings, updated = context.wasUpdated()) }
+            // A fresh install shows the welcome pages first, then the feature tour.
+            val updated = remember { context.wasUpdated() }
+            val welcomeSeen by settings.welcomeSeen.collectAsState()
+            val welcomeDue = Welcome.isDue(welcomeSeen, updated)
+            LaunchedEffect(Unit) {
+                if (Welcome.isDue(settings.welcomeSeen.value, updated)) {
+                    Welcome.openAtStart(navController)
+                } else if (!settings.welcomeSeen.value) {
+                    settings.setWelcomeSeen(true)
+                }
+            }
+
+            val dueChapters = remember { FeatureTour.dueChapters(settings, updated = updated) }
             var showTour by remember { mutableStateOf(dueChapters.isNotEmpty()) }
-            if (showTour) {
+            if (showTour && !welcomeDue) {
                 CompositionLocalProvider(LocalPopupTheme provides workspaceState.activeWorkspace?.theme) {
                     FeatureTourDialog(
                         chapters = dueChapters,

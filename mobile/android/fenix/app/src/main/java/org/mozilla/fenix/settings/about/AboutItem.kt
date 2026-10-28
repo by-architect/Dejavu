@@ -13,6 +13,9 @@ sealed class AboutItem {
 
     /** Dejavu: the tour of Dejavu's features. */
     object FeatureTour : AboutItem()
+
+    /** Dejavu: the welcome pages a fresh install starts with. */
+    object Welcome : AboutItem()
 }
 
 enum class AboutItemType {

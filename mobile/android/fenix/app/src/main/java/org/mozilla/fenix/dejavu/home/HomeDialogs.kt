@@ -560,7 +560,7 @@ private fun FirefoxSyncNote(@StringRes text: Int) {
 
 /** One of the two looks a workspace can have, colors or a wallpaper, filled while it is the one picked. */
 @Composable
-private fun LookChip(@StringRes label: Int, selected: Boolean, onClick: () -> Unit) {
+internal fun LookChip(@StringRes label: Int, selected: Boolean, onClick: () -> Unit) {
     val scheme = MaterialTheme.colorScheme
     Box(
         contentAlignment = Alignment.Center,
@@ -587,7 +587,7 @@ private fun LookChip(@StringRes label: Int, selected: Boolean, onClick: () -> Un
  * intensity and grain. [onCustomColors] opens the color picker.
  */
 @Composable
-private fun ThemeColors(theme: WorkspaceTheme?, onChange: (WorkspaceTheme?) -> Unit, onCustomColors: () -> Unit) {
+internal fun ThemeColors(theme: WorkspaceTheme?, onChange: (WorkspaceTheme?) -> Unit, onCustomColors: () -> Unit) {
     // A workspace in colors of the user's own shows them at the end of the row, scrolled into view.
     val customColors = theme?.colors?.takeIf { it !in themePresets }
     val themeRow = rememberLazyListState()

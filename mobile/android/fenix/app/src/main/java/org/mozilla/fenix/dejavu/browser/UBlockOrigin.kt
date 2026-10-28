@@ -9,6 +9,7 @@ import android.content.SharedPreferences
 import android.os.SystemClock
 import androidx.annotation.VisibleForTesting
 import androidx.core.content.edit
+import kotlinx.coroutines.launch
 import mozilla.components.browser.state.action.BrowserAction
 import mozilla.components.browser.state.action.WebExtensionAction
 import mozilla.components.browser.state.state.BrowserState
@@ -26,8 +27,9 @@ import org.mozilla.fenix.ext.components
  * uBlock Origin, the ad and tracker blocker, which a fresh install of Dejavu adds from addons.mozilla.org in the
  * background, allowed in private tabs too and without the add-on dialogs. When it cannot be downloaded, the next start
  * tries again. An update of Dejavu does not add it, and once it was added Dejavu never adds it again, also after the
- * user removed it. Only the install started here goes without dialogs: the add-on must come from [URL], which only the
- * real uBlock Origin can, also when add-on signatures are not checked.
+ * user removed it, or chose on the welcome pages to block trackers only. Only the install started here goes without
+ * dialogs: the add-on must come from [URL], which only the real uBlock Origin can, also when add-on signatures are not
+ * checked.
  */
 object UBlockOrigin {
     const val ID = "uBlock0@raymondhill.net"
@@ -40,6 +42,7 @@ object UBlockOrigin {
     private const val KEY_STATE = "ublock_origin"
     private const val DUE = "due"
     private const val DONE = "done"
+    private const val DECLINED = "declined"
 
     // How long its prompts are answered without dialogs: while it installs, and for prompts that arrive after.
     private const val QUIET_INSTALL_MS = 120_000L
@@ -79,13 +82,51 @@ object UBlockOrigin {
     /** Adds uBlock Origin when this install is due to get it and the add-ons the engine has, [installed], lack it. */
     fun addIfDue(context: Context, installed: List<WebExtension>) {
         val prefs = context.getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE)
-        val state = prefs.getString(KEY_STATE, null)
-            ?: (if (context.wasUpdated()) DONE else DUE).also { prefs.edit { putString(KEY_STATE, it) } }
+        val state = stateOf(context, prefs)
+        if (!prefs.contains(KEY_STATE)) prefs.edit { putString(KEY_STATE, state) }
         if (state != DUE) return
         if (installed.any { it.id == ID }) {
             prefs.edit { putString(KEY_STATE, DONE) }
         } else if (SystemClock.elapsedRealtime() >= quietUntil) {
             install(context, prefs)
+        }
+    }
+
+    /** Whether ads are blocked: uBlock Origin is there, or about to be added. */
+    fun blocksAds(context: Context): Boolean {
+        val state = stateOf(context, context.getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE))
+        return state == DUE || (state != DECLINED && isInstalled(context))
+    }
+
+    /**
+     * Blocks ads with uBlock Origin, which is added unless it is there, or stops blocking them: uBlock Origin is
+     * removed, and Dejavu does not add it again by itself. The welcome pages ask.
+     */
+    fun setBlocksAds(context: Context, block: Boolean) {
+        val prefs = context.getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE)
+        when {
+            block && isInstalled(context) -> prefs.edit { putString(KEY_STATE, DONE) }
+            block -> {
+                prefs.edit { putString(KEY_STATE, DUE) }
+                // An install already under way ends as wanted.
+                if (SystemClock.elapsedRealtime() >= quietUntil) install(context, prefs)
+            }
+            else -> {
+                prefs.edit { putString(KEY_STATE, DECLINED) }
+                if (isInstalled(context)) remove(context)
+            }
+        }
+    }
+
+    private fun stateOf(context: Context, prefs: SharedPreferences): String =
+        prefs.getString(KEY_STATE, null) ?: if (context.wasUpdated()) DONE else DUE
+
+    private fun isInstalled(context: Context) = context.components.core.store.state.extensions.containsKey(ID)
+
+    private fun remove(context: Context) {
+        val manager = context.components.addonManager
+        context.components.applicationScope.launch {
+            runCatching { manager.getAddonByID(ID) }.getOrNull()?.let { manager.uninstallAddon(it) }
         }
     }
 
@@ -96,8 +137,13 @@ object UBlockOrigin {
         context.components.addonManager.installAddon(
             url = URL,
             installationMethod = InstallationMethod.MANAGER,
-            onSuccess = {
-                prefs.edit { putString(KEY_STATE, DONE) }
+            onSuccess = { addon ->
+                // Blocking ads may have been turned off while it was downloading.
+                if (prefs.getString(KEY_STATE, null) == DECLINED) {
+                    context.components.addonManager.uninstallAddon(addon)
+                } else {
+                    prefs.edit { putString(KEY_STATE, DONE) }
+                }
                 failureUnclaimed = false
                 ended()
             },

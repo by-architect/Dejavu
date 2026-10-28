@@ -54,6 +54,8 @@ class DejavuSettings private constructor(context: Context) {
     private val _addressBarButtons = MutableStateFlow(readAddressBarButtons())
     private val _actionsBarKeys = MutableStateFlow(readActionsBar())
     private val _tabSleepMinutes = MutableStateFlow(prefs.getInt(KEY_TAB_SLEEP_MINUTES, DEFAULT_TAB_SLEEP_MINUTES))
+    private val _awakeTabLimit = MutableStateFlow(prefs.getInt(KEY_AWAKE_TAB_LIMIT, DEFAULT_AWAKE_TAB_LIMIT))
+    private val _welcomeSeen = MutableStateFlow(prefs.getBoolean(KEY_WELCOME_SEEN, false))
     private val _hiddenSelectionKeys = MutableStateFlow(
         prefs.getString(KEY_HIDDEN_SELECTION_ACTIONS, null)?.split(",")?.filter { it.isNotBlank() }?.toSet().orEmpty(),
     )
@@ -118,6 +120,24 @@ class DejavuSettings private constructor(context: Context) {
     fun setTabSleepMinutes(minutes: Int) {
         _tabSleepMinutes.value = minutes
         prefs.edit { putInt(KEY_TAB_SLEEP_MINUTES, minutes) }
+    }
+
+    /**
+     * The most tabs awake at once, or 0 for no limit: when one more wakes up, the one used longest ago goes to sleep.
+     */
+    val awakeTabLimit: StateFlow<Int> = _awakeTabLimit.asStateFlow()
+
+    fun setAwakeTabLimit(limit: Int) {
+        _awakeTabLimit.value = limit
+        prefs.edit { putInt(KEY_AWAKE_TAB_LIMIT, limit) }
+    }
+
+    /** Whether the welcome pages a fresh install starts with were shown, or are not due as Dejavu was updated. */
+    val welcomeSeen: StateFlow<Boolean> = _welcomeSeen.asStateFlow()
+
+    fun setWelcomeSeen(seen: Boolean) {
+        _welcomeSeen.value = seen
+        prefs.edit { putBoolean(KEY_WELCOME_SEEN, seen) }
     }
 
     /** The version of the feature tour the user has seen, 0 for none. */
@@ -353,6 +373,12 @@ class DejavuSettings private constructor(context: Context) {
         /** How long a tab stays awake by default after it was last looked at. */
         const val DEFAULT_TAB_SLEEP_MINUTES = 20
 
+        /**
+         * How many tabs stay awake at once by default. On a 4 GB phone each awake tab took about 65 MB, so six keep
+         * Dejavu near 900 MB with more than 1 GB left for the keyboard and other apps, while 40 took 2.8 GB (#240).
+         */
+        const val DEFAULT_AWAKE_TAB_LIMIT = 6
+
         // Kept from before the rename to Dejavu, so saved data still loads.
         private const val PREFS_NAME = "kaizen_settings"
         private const val SECRETS_NAME = "dejavu_secrets"
@@ -376,6 +402,8 @@ class DejavuSettings private constructor(context: Context) {
         private const val KEY_ACTIONS_BAR = "actions_bar"
         private const val KEY_HISTORY_GROUPING = "history_grouping"
         private const val KEY_TAB_SLEEP_MINUTES = "tab_sleep_minutes"
+        private const val KEY_AWAKE_TAB_LIMIT = "awake_tab_limit"
+        private const val KEY_WELCOME_SEEN = "welcome_seen"
         private const val KEY_FEATURE_TOUR_SEEN = "feature_tour_seen"
         private const val KEY_WHATS_NEW_SEEN = "whats_new_seen"
         private val DEFAULT_PINNED_ROW_ACTIONS = listOf(TabAction.CLOSE)

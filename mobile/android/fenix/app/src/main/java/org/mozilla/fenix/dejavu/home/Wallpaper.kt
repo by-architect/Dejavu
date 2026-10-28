@@ -353,7 +353,7 @@ private fun WallpaperPreview(wallpaper: WorkspaceWallpaper?, importing: Boolean,
  * nothing else.
  */
 @Composable
-private fun WallpaperImage(
+internal fun WallpaperImage(
     wallpaper: WorkspaceWallpaper,
     modifier: Modifier = Modifier,
     alpha: () -> Float = { 1f },

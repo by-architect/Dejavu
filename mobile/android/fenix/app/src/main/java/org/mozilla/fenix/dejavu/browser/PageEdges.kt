@@ -47,7 +47,8 @@ fun View.padForSystemBarsAtSides(window: Window, onBarsChanged: () -> Unit) {
             insets.getInsetsIgnoringVisibility(WindowInsetsCompat.Type.navigationBars()).bottom
         if (heights != bars) {
             bars = heights
-            view.post(onBarsChanged)
+            // Not once the layout is gone, as when a link opened in a private tab rebuilt the screen meanwhile.
+            view.post { if (view.isAttachedToWindow) onBarsChanged() }
         }
         insets
     }

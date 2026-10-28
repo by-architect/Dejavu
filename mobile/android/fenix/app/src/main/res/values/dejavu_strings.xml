@@ -566,6 +566,20 @@
     <string name="dejavu_tab_sleep_after_hour">After an hour without use</string>
     <!-- Choice: tabs never sleep by themselves. -->
     <string name="dejavu_tab_sleep_never">Never</string>
+    <!-- Heading over the choices of how many tabs stay awake at once in the sleeping tabs settings. -->
+    <string name="dejavu_tab_sleep_limit">Tabs awake at once</string>
+    <!-- Choice: at most 3 tabs stay awake at once. -->
+    <string name="dejavu_tab_sleep_limit_3">Up to 3 tabs</string>
+    <!-- Choice: at most 6 tabs stay awake at once. -->
+    <string name="dejavu_tab_sleep_limit_6">Up to 6 tabs</string>
+    <!-- Choice: at most 10 tabs stay awake at once. -->
+    <string name="dejavu_tab_sleep_limit_10">Up to 10 tabs</string>
+    <!-- Choice: at most 20 tabs stay awake at once. -->
+    <string name="dejavu_tab_sleep_limit_20">Up to 20 tabs</string>
+    <!-- Choice: any number of tabs can be awake; none sleeps because of how many there are. -->
+    <string name="dejavu_tab_sleep_no_limit">No limit</string>
+    <!-- Explanation under the choices of how many tabs stay awake at once. -->
+    <string name="dejavu_tab_sleep_limit_hint">When one more tab wakes up, the tab you used longest ago goes to sleep.</string>
     <!-- Text of the screen shown after Dejavu crashed while starting. %1$s is the name of the app. -->
     <string name="dejavu_startup_crash_body">There was a problem opening %1$s. Reopen it to keep browsing.</string>
     <!-- Feature tour: shown once when Dejavu starts, and from About. Each page shows one feature with a short animation. -->
@@ -603,6 +617,68 @@
     <string name="dejavu_feature_wallpaper">Give a workspace a wallpaper</string>
     <!-- Feature tour title, in the chapter of Dejavu 3.0: Save page in the More menu saves the page as one file that opens without internet. -->
     <string name="dejavu_feature_save_page">Save pages to read without internet</string>
+
+    <!-- Welcome pages: shown once when a fresh install of Dejavu starts, before the feature tour, and again from About. Each page makes one choice, kept at once. Their Back, Next and Skip buttons use dejavu_back, dejavu_features_next and dejavu_features_skip. -->
+    <!-- About entry that opens the welcome pages again. -->
+    <string name="dejavu_welcome_setup">Set up Dejavu</string>
+    <!-- Button of the first welcome page that goes on to the choices. -->
+    <string name="dejavu_welcome_start">Get started</string>
+    <!-- Button of the last welcome page that closes them and shows the home screen. -->
+    <string name="dejavu_welcome_done">Start browsing</string>
+    <!-- Title of the first welcome page. -->
+    <string name="dejavu_welcome_title">Welcome to Dejavu</string>
+    <!-- Text of the first welcome page. -->
+    <string name="dejavu_welcome_text">A browser of workspaces, pinned tabs and gestures. Choose a few things now, and change them any time in Settings.</string>
+    <!-- Title of the welcome page that picks the default search engine from a list. -->
+    <string name="dejavu_welcome_search_title">Choose your search engine</string>
+    <!-- Text of the search engine page. -->
+    <string name="dejavu_welcome_search_text">What you type in the address bar is searched with it.</string>
+    <!-- Description under the switch "Show search suggestions" on the search engine page. -->
+    <string name="dejavu_welcome_suggestions_text">Your search engine gets what you type while you type it.</string>
+    <!-- Title of the welcome page that picks the home screen's wallpaper, or colors on its other tab. -->
+    <string name="dejavu_welcome_look_title">Pick a wallpaper</string>
+    <!-- Text of the wallpaper page. -->
+    <string name="dejavu_welcome_look_text">Your home screen shows it behind your tabs, or colors of your choice instead.</string>
+    <!-- Wallpaper page: the choice of no wallpaper, read out by screen readers. -->
+    <string name="dejavu_welcome_wallpaper_none">No wallpaper</string>
+    <!-- Wallpaper page: one of the wallpapers Dejavu draws, read out by screen readers. %1$d is its number in the row. -->
+    <string name="dejavu_welcome_wallpaper_number">Wallpaper %1$d</string>
+    <!-- Wallpaper page: the choice that picks one of the user's own pictures from the phone. -->
+    <string name="dejavu_welcome_wallpaper_photo">Your photos</string>
+    <!-- Title of the welcome page that picks where the address bar goes on web pages and where the search bar goes on the home screen. -->
+    <string name="dejavu_welcome_bars_title">Where do the bars go?</string>
+    <!-- Text of the bars page. -->
+    <string name="dejavu_welcome_bars_text">Pick one for web pages and one for the home screen.</string>
+    <!-- Heading on the bars page over the choices for web pages. -->
+    <string name="dejavu_welcome_bars_pages">On web pages</string>
+    <!-- Heading on the bars page over the choices for the home screen. -->
+    <string name="dejavu_welcome_bars_home">On the home screen</string>
+    <!-- Title of the welcome page that picks the light or dark theme, or following the phone's theme. -->
+    <string name="dejavu_welcome_theme_title">Light or dark?</string>
+    <!-- Text of the theme page. -->
+    <string name="dejavu_welcome_theme_text">Dejavu can follow your phone, or always look the same.</string>
+    <!-- Title of the welcome page that asks whether ads are blocked too, with the add-on uBlock Origin. -->
+    <string name="dejavu_welcome_ads_title">Block ads too?</string>
+    <!-- Text of the ads page. Keep the name "uBlock Origin" as it is. -->
+    <string name="dejavu_welcome_ads_text">Dejavu always blocks trackers. uBlock Origin, a free add-on, can remove ads as well.</string>
+    <!-- Ads page choice: block ads with uBlock Origin, and trackers. -->
+    <string name="dejavu_welcome_ads_block">Block ads and trackers</string>
+    <!-- Description of that choice. Keep the name "uBlock Origin" as it is. -->
+    <string name="dejavu_welcome_ads_block_summary">Adds uBlock Origin.</string>
+    <!-- Ads page choice: block trackers but let pages show their ads; uBlock Origin is not added. -->
+    <string name="dejavu_welcome_ads_allow">Block trackers only</string>
+    <!-- Description of that choice. -->
+    <string name="dejavu_welcome_ads_allow_summary">Pages show their ads.</string>
+    <!-- Title of the welcome page that makes Dejavu the phone's default browser. -->
+    <string name="dejavu_welcome_default_title">Make Dejavu your default browser</string>
+    <!-- Text of the default browser page. -->
+    <string name="dejavu_welcome_default_text">Links you tap in other apps open in Dejavu.</string>
+    <!-- Default browser page, once Dejavu is the default browser. -->
+    <string name="dejavu_welcome_default_done">Dejavu is your default browser.</string>
+    <!-- Title of the last welcome page, which offers to sign in to sync. -->
+    <string name="dejavu_welcome_sync_title">Your workspaces on every device</string>
+    <!-- Text of the sync page. Keep the names "Zen" and "Firefox" as they are. -->
+    <string name="dejavu_welcome_sync_text">Sign in with a Mozilla account to sync workspaces, pinned tabs and essentials with Zen, or tabs with Firefox.</string>
 
     <!-- Popup of a recent search long-pressed in the search screen; its title is the search itself. -->
     <string name="dejavu_recent_search_text">Delete this search from your recent searches, or clear all of them.</string>

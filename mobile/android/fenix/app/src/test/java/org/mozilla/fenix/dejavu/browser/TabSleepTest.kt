@@ -13,7 +13,10 @@ import mozilla.components.concept.engine.EngineSession
 import mozilla.components.concept.engine.media.RecordingDevice
 import mozilla.components.concept.engine.mediasession.MediaSession
 import org.junit.Assert.assertEquals
+import org.junit.Assert.assertTrue
 import org.junit.Test
+import org.mozilla.fenix.dejavu.settings.DejavuSettings
+import org.mozilla.fenix.dejavu.settings.DejavuTabSleepFragment
 
 class TabSleepTest {
     private val session: EngineSession = mockk(relaxed = true)
@@ -85,5 +88,73 @@ class TabSleepTest {
         val sleeping = TabSleep.tabsForMemory(state, emptyMap(), keep = setOf("shown"))
 
         assertEquals(listOf("b", "a"), sleeping)
+    }
+
+    @Test
+    fun `one tab beyond the limit puts the tab used longest ago to sleep`() {
+        val state = state(
+            awake("c", lastAccess = 3),
+            awake("a", lastAccess = 1),
+            awake("b", lastAccess = 2),
+            awake("shown", lastAccess = 0),
+            selected = "shown",
+        )
+
+        val sleeping = TabSleep.tabsOverLimit(state, emptyMap(), keep = setOf("shown"), limit = 3)
+
+        assertEquals(listOf("a"), sleeping)
+    }
+
+    @Test
+    fun `tabs that must stay awake count toward the limit while the next ones sleep`() {
+        val playing = awake("playing", lastAccess = 1).copy(
+            mediaSessionState = MediaSessionState(
+                controller = mockk(relaxed = true),
+                playbackState = MediaSession.PlaybackState.PLAYING,
+            ),
+        )
+        val state = state(
+            playing,
+            awake("b", lastAccess = 2),
+            awake("c", lastAccess = 3),
+            awake("shown"),
+            selected = "shown",
+        )
+
+        val sleeping = TabSleep.tabsOverLimit(state, emptyMap(), keep = setOf("shown"), limit = 2)
+
+        assertEquals(listOf("b", "c"), sleeping)
+    }
+
+    @Test
+    fun `sleeping tabs do not count toward the limit`() {
+        val asleep = createTab(url = "https://asleep.example/", id = "asleep", createdAt = 0L)
+        val state = state(asleep, awake("a", lastAccess = 1), awake("shown"), selected = "shown")
+
+        val sleeping = TabSleep.tabsOverLimit(state, emptyMap(), keep = setOf("shown"), limit = 2)
+
+        assertEquals(emptyList<String>(), sleeping)
+    }
+
+    @Test
+    fun `a tab left a moment ago counts as recently used for the limit`() {
+        val state = state(
+            awake("read", lastAccess = 1),
+            awake("other", lastAccess = 2),
+            awake("shown"),
+            selected = "shown",
+        )
+
+        val sleeping = TabSleep.tabsOverLimit(state, mapOf("read" to 50L), keep = setOf("shown"), limit = 2)
+
+        assertEquals(listOf("other"), sleeping)
+    }
+
+    @Test
+    fun `the default limit is one of the choices in the settings`() {
+        val limits = DejavuTabSleepFragment.AWAKE_LIMITS.map { it.first }
+
+        assertTrue(DejavuSettings.DEFAULT_AWAKE_TAB_LIMIT in limits)
+        assertTrue(0 in limits)
     }
 }

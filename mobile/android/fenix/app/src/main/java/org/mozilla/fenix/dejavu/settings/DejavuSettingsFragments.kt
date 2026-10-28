@@ -555,12 +555,16 @@ class DejavuContainersFragment : DejavuComposeFragment(R.string.dejavu_settings_
     }
 }
 
-/** Chooses how long a tab stays awake after it was last looked at, see [TabSleepMiddleware]. */
+/**
+ * Chooses how long a tab stays awake after it was last looked at, and how many tabs stay awake at once, see
+ * [TabSleepMiddleware].
+ */
 class DejavuTabSleepFragment : DejavuComposeFragment(R.string.dejavu_settings_tab_sleep) {
     @Composable
     override fun DejavuScreen() {
         val settings = remember { dejavuSettings() }
         val minutes by settings.tabSleepMinutes.collectAsState()
+        val limit by settings.awakeTabLimit.collectAsState()
         Column(modifier = Modifier.fillMaxSize().verticalScroll(rememberScrollState())) {
             Text(
                 text = stringResource(R.string.dejavu_tab_sleep_hint),
@@ -573,34 +577,51 @@ class DejavuTabSleepFragment : DejavuComposeFragment(R.string.dejavu_settings_ta
                 modifier = Modifier.padding(horizontal = 16.dp),
             )
             SLEEP_CHOICES.forEachIndexed { index, choice ->
-                val label = when (choice) {
-                    0 -> stringResource(R.string.dejavu_tab_sleep_never)
-                    MINUTES_PER_HOUR -> stringResource(R.string.dejavu_tab_sleep_after_hour)
-                    else -> pluralStringResource(R.plurals.dejavu_tab_sleep_after_minutes, choice, choice)
-                }
-                Row(
-                    verticalAlignment = Alignment.CenterVertically,
-                    modifier = Modifier
-                        .settingsCard(index, SLEEP_CHOICES.size)
-                        .fillMaxWidth()
-                        .clickable { settings.setTabSleepMinutes(choice) }
-                        .padding(horizontal = 8.dp, vertical = 4.dp),
-                ) {
-                    RadioButton(selected = minutes == choice, onClick = { settings.setTabSleepMinutes(choice) })
-                    Text(
-                        text = label,
-                        style = MaterialTheme.typography.bodyLarge,
-                        color = MaterialTheme.colorScheme.onSurface,
-                    )
-                }
+                ChoiceRow(
+                    label = when (choice) {
+                        0 -> stringResource(R.string.dejavu_tab_sleep_never)
+                        MINUTES_PER_HOUR -> stringResource(R.string.dejavu_tab_sleep_after_hour)
+                        else -> pluralStringResource(R.plurals.dejavu_tab_sleep_after_minutes, choice, choice)
+                    },
+                    selected = minutes == choice,
+                    modifier = Modifier.settingsCard(index, SLEEP_CHOICES.size),
+                    onClick = { settings.setTabSleepMinutes(choice) },
+                )
             }
-            Spacer(Modifier.height(24.dp))
+            SettingsSectionHeader(
+                text = stringResource(R.string.dejavu_tab_sleep_limit),
+                modifier = Modifier.padding(start = 16.dp, end = 16.dp, top = 16.dp),
+            )
+            AWAKE_LIMITS.forEachIndexed { index, (choice, label) ->
+                ChoiceRow(
+                    label = stringResource(label),
+                    selected = limit == choice,
+                    modifier = Modifier.settingsCard(index, AWAKE_LIMITS.size),
+                    onClick = { settings.setAwakeTabLimit(choice) },
+                )
+            }
+            Text(
+                text = stringResource(R.string.dejavu_tab_sleep_limit_hint),
+                style = MaterialTheme.typography.bodyMedium,
+                color = MaterialTheme.colorScheme.onSurfaceVariant,
+                modifier = Modifier.padding(16.dp),
+            )
+            Spacer(Modifier.height(8.dp))
         }
     }
 
-    private companion object {
-        const val MINUTES_PER_HOUR = 60
-        val SLEEP_CHOICES = listOf(10, DejavuSettings.DEFAULT_TAB_SLEEP_MINUTES, MINUTES_PER_HOUR, 0)
+    internal companion object {
+        private const val MINUTES_PER_HOUR = 60
+        private val SLEEP_CHOICES = listOf(10, DejavuSettings.DEFAULT_TAB_SLEEP_MINUTES, MINUTES_PER_HOUR, 0)
+
+        /** The limits of awake tabs to choose from, 0 for none, with their labels. */
+        val AWAKE_LIMITS = listOf(
+            3 to R.string.dejavu_tab_sleep_limit_3,
+            6 to R.string.dejavu_tab_sleep_limit_6,
+            10 to R.string.dejavu_tab_sleep_limit_10,
+            20 to R.string.dejavu_tab_sleep_limit_20,
+            0 to R.string.dejavu_tab_sleep_no_limit,
+        )
     }
 }
 
@@ -707,26 +728,27 @@ class DejavuExternalLinksFragment : DejavuComposeFragment(R.string.dejavu_settin
     private companion object {
         const val DISABLED_ALPHA = 0.4f
     }
+}
 
-    @Composable
-    private fun ChoiceRow(
-        label: String,
-        selected: Boolean,
-        onClick: () -> Unit,
-        modifier: Modifier = Modifier,
-        leading: (@Composable () -> Unit)? = null,
+/** A choice of a settings screen, a radio button with [label] and maybe a [leading] icon. */
+@Composable
+private fun ChoiceRow(
+    label: String,
+    selected: Boolean,
+    onClick: () -> Unit,
+    modifier: Modifier = Modifier,
+    leading: (@Composable () -> Unit)? = null,
+) {
+    Row(
+        verticalAlignment = Alignment.CenterVertically,
+        modifier = modifier.fillMaxWidth().clickable(onClick = onClick).padding(horizontal = 8.dp, vertical = 4.dp),
     ) {
-        Row(
-            verticalAlignment = Alignment.CenterVertically,
-            modifier = modifier.fillMaxWidth().clickable(onClick = onClick).padding(horizontal = 8.dp, vertical = 4.dp),
-        ) {
-            RadioButton(selected = selected, onClick = onClick)
-            if (leading != null) {
-                leading()
-                Spacer(Modifier.width(12.dp))
-            }
-            Text(text = label, style = MaterialTheme.typography.bodyLarge, color = MaterialTheme.colorScheme.onSurface)
+        RadioButton(selected = selected, onClick = onClick)
+        if (leading != null) {
+            leading()
+            Spacer(Modifier.width(12.dp))
         }
+        Text(text = label, style = MaterialTheme.typography.bodyLarge, color = MaterialTheme.colorScheme.onSurface)
     }
 }
 
