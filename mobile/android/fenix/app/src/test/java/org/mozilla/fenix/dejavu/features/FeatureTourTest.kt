@@ -52,6 +52,18 @@ class FeatureTourTest {
     }
 
     @Test
+    fun `after the welcome pages, a fresh install sees only the basics and an update nothing`() {
+        val fresh = newSettings().apply { FeatureTour.skipReleases(this) }
+        assertEquals(listOf(FeatureTour.Basics), FeatureTour.dueChapters(fresh, updated = false))
+
+        val from2 = newSettings().apply { whatsNewSeen = "2.0" }
+        FeatureTour.skipReleases(from2)
+        assertTrue(FeatureTour.dueChapters(from2, updated = true).isEmpty())
+        FeatureTour.markSeen(fresh)
+        assertTrue(FeatureTour.dueChapters(fresh, updated = false).isEmpty())
+    }
+
+    @Test
     fun `versions compare part by part`() {
         assertTrue(FeatureTour.compareVersions("2.0", "1.8") > 0)
         assertTrue(FeatureTour.compareVersions("1.10", "1.9") > 0)

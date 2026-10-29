@@ -14,7 +14,7 @@ import androidx.core.graphics.scale
 import androidx.exifinterface.media.ExifInterface
 import java.io.File
 import java.util.UUID
-import java.util.concurrent.atomic.AtomicInteger
+import java.util.concurrent.ConcurrentHashMap
 import kotlin.math.max
 import kotlin.math.min
 import kotlin.math.pow
@@ -69,8 +69,9 @@ class WorkspaceWallpapers private constructor(context: Context) {
     /** The wallpapers, by the id of their workspace. */
     val wallpapers: StateFlow<Map<String, WorkspaceWallpaper>> = _wallpapers.asStateFlow()
 
-    // How many times a wallpaper was given or taken away, so one drawn meanwhile can tell it came too late.
-    private val changes = AtomicInteger()
+    // How many times each workspace was given a wallpaper or had it taken away, so one drawn meanwhile can tell it came
+    // too late.
+    private val changes = ConcurrentHashMap<String, Int>()
 
     private val tidied = io.launch {
         deleteUnusedPictures()
@@ -79,7 +80,7 @@ class WorkspaceWallpapers private constructor(context: Context) {
 
     /** Gives workspace [workspaceId] [wallpaper], or no wallpaper. A picture no workspace shows anymore is deleted. */
     fun set(workspaceId: String, wallpaper: WorkspaceWallpaper?) {
-        changes.incrementAndGet()
+        changes.merge(workspaceId, 1, Int::plus)
         var replaced: String? = null
         var changed: Map<String, WorkspaceWallpaper>? = null
         _wallpapers.update { old ->
@@ -93,20 +94,23 @@ class WorkspaceWallpapers private constructor(context: Context) {
     }
 
     /**
-     * Gives workspace [workspaceId] the wallpaper a fresh Dejavu starts with, [WallpaperArt.GOLD] drawn for a screen of
-     * [screenWidth] by [screenHeight] pixels, unless it has a wallpaper, or a wallpaper is given or taken away before it
-     * is drawn.
+     * Gives each workspace of [arts], by its id, the wallpaper a fresh Dejavu starts it with, drawn for a screen of
+     * [screenWidth] by [screenHeight] pixels, unless it has a wallpaper, or one is given or taken away before it is
+     * drawn.
      */
-    fun giveFirstWallpaper(workspaceId: String, screenWidth: Int, screenHeight: Int) {
-        if (workspaceId in _wallpapers.value) return
-        val before = changes.get()
+    fun giveFirstWallpapers(arts: Map<String, WallpaperArt>, screenWidth: Int, screenHeight: Int) {
+        val due = arts.filterKeys { it !in _wallpapers.value }
+        if (due.isEmpty()) return
+        val before = due.keys.associateWith { changes[it] ?: 0 }
         io.launch {
             tidied.join()
-            val wallpaper = importArt(WallpaperArt.GOLD, screenWidth, screenHeight) ?: return@launch
-            if (changes.get() == before && workspaceId !in _wallpapers.value) {
-                set(workspaceId, wallpaper)
-            } else {
-                pictureFile(wallpaper.file).delete()
+            due.forEach { (workspaceId, art) ->
+                val wallpaper = importArt(art, screenWidth, screenHeight) ?: return@forEach
+                if ((changes[workspaceId] ?: 0) == before[workspaceId] && workspaceId !in _wallpapers.value) {
+                    set(workspaceId, wallpaper)
+                } else {
+                    pictureFile(wallpaper.file).delete()
+                }
             }
         }
     }

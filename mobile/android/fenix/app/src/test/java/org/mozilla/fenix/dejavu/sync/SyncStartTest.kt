@@ -36,6 +36,22 @@ class SyncStartTest {
     }
 
     @Test
+    fun `the examples a fresh Dejavu starts with are nothing to merge, until changed`() {
+        val repository = newRepository()
+        repository.giveStarters(workName = "Work", folderName = "Tools")
+
+        assertNull(OwnData.of(repository.state.value, emptyList(), DEFAULT_NAME))
+
+        Thread.sleep(LATER_MS)
+        val work = repository.state.value.workspaces.last()
+        repository.updateWorkspace(work.id, "Office", work.containerId, icon = null, theme = work.theme)
+        assertEquals(
+            OwnData(workspaces = 2, pinned = 0, essentials = 0, folders = 0, tabs = 0),
+            OwnData.of(repository.state.value, emptyList(), DEFAULT_NAME),
+        )
+    }
+
+    @Test
     fun `open tabs, pinned tabs, folders, essentials and workspaces are counted`() {
         val repository = newRepository()
         val home = repository.state.value.activeWorkspaceId
@@ -99,5 +115,8 @@ class SyncStartTest {
 
     private companion object {
         const val DEFAULT_NAME = "Home"
+
+        // Long enough for a change to come a millisecond after the examples.
+        const val LATER_MS = 5L
     }
 }

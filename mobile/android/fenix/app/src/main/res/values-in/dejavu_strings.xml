@@ -512,4 +512,10 @@
     <string name="dejavu_welcome_sync_text">Masuk dengan akun Mozilla untuk menyinkronkan ruang kerja, tab yang disemat, dan situs penting dengan Zen, atau tab dengan Firefox.</string>
     <string name="dejavu_settings_matrix">Mengobrol di Matrix</string>
     <string name="dejavu_settings_matrix_summary">Ajukan pertanyaan, usulkan fitur, atau laporkan bug</string>
+    <string name="dejavu_menu_clear_data">Bersihkan data</string>
+    <string name="dejavu_menu_clear_data_and_quit">Bersihkan data dan keluar</string>
+    <string name="dejavu_clear_data_button">Tombol “Bersihkan data”</string>
+    <string name="dejavu_clear_data_button_summary">Data yang dihapus oleh “Bersihkan data” dan “Bersihkan data dan keluar”. Menekan lama “Bersihkan” di layar beranda juga akan menghapusnya.</string>
+    <string name="dejavu_clear_data_choose">Pilih dulu apa yang ingin dibersihkan</string>
+    <string name="dejavu_starter_folder">Alat</string>
 </resources>

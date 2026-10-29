@@ -520,4 +520,10 @@
     <string name="dejavu_welcome_sync_text">Zen ಜೊತೆ ಕಾರ್ಯಕ್ಷೇತ್ರಗಳು, ಪಿನ್ ಮಾಡಿದ ಟ್ಯಾಬ್‌ಗಳು ಮತ್ತು ಅಗತ್ಯವಾದವನ್ನು, ಅಥವಾ Firefox ಜೊತೆ ಟ್ಯಾಬ್‌ಗಳನ್ನು ಸಿಂಕ್ ಮಾಡಲು Mozilla ಖಾತೆಯೊಂದಿಗೆ ಸೈನ್ ಇನ್ ಮಾಡಿ.</string>
     <string name="dejavu_settings_matrix">Matrix ನಲ್ಲಿ ಚಾಟ್ ಮಾಡಿ</string>
     <string name="dejavu_settings_matrix_summary">ಪ್ರಶ್ನೆ ಕೇಳಿ, ವೈಶಿಷ್ಟ್ಯವನ್ನು ಸೂಚಿಸಿ ಅಥವಾ ದೋಷವನ್ನು ವರದಿ ಮಾಡಿ</string>
+    <string name="dejavu_menu_clear_data">ಡೇಟಾ ತೆರವುಗೊಳಿಸು</string>
+    <string name="dejavu_menu_clear_data_and_quit">ಡೇಟಾ ತೆರವುಗೊಳಿಸಿ ನಿರ್ಗಮಿಸು</string>
+    <string name="dejavu_clear_data_button">“ಡೇಟಾ ತೆರವುಗೊಳಿಸು” ಬಟನ್</string>
+    <string name="dejavu_clear_data_button_summary">“ಡೇಟಾ ತೆರವುಗೊಳಿಸು” ಮತ್ತು “ಡೇಟಾ ತೆರವುಗೊಳಿಸಿ ನಿರ್ಗಮಿಸು” ಅಳಿಸುವ ಡೇಟಾ. ಮುಖಪುಟದಲ್ಲಿ “ತೆರವುಗೊಳಿಸು” ಅನ್ನು ಒತ್ತಿ ಹಿಡಿದಾಗಲೂ ಇದೇ ಡೇಟಾವನ್ನು ಅಳಿಸಲಾಗುತ್ತದೆ.</string>
+    <string name="dejavu_clear_data_choose">ಮೊದಲು ಏನನ್ನು ತೆರವುಗೊಳಿಸಬೇಕೆಂದು ಆಯ್ಕೆಮಾಡಿ</string>
+    <string name="dejavu_starter_folder">ಉಪಕರಣಗಳು</string>
 </resources>

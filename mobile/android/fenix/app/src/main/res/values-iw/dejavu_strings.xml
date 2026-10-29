@@ -528,4 +528,10 @@
     <string name="dejavu_welcome_sync_text">היכנסו עם חשבון Mozilla כדי לסנכרן מרחבי עבודה, לשוניות מוצמדות ומועדפים עם Zen, או לשוניות עם Firefox.</string>
     <string name="dejavu_settings_matrix">צ׳אט ב-Matrix</string>
     <string name="dejavu_settings_matrix_summary">שאלו שאלה, הציעו תכונה או דווחו על באג</string>
+    <string name="dejavu_menu_clear_data">ניקוי נתונים</string>
+    <string name="dejavu_menu_clear_data_and_quit">ניקוי נתונים ויציאה</string>
+    <string name="dejavu_clear_data_button">כפתור ״ניקוי נתונים״</string>
+    <string name="dejavu_clear_data_button_summary">מה נמחק בלחיצה על ״ניקוי נתונים״ או על ״ניקוי נתונים ויציאה״. לחיצה ארוכה על ״ניקוי״ במסך הבית מוחקת את אותם הנתונים.</string>
+    <string name="dejavu_clear_data_choose">יש לבחור קודם מה לנקות</string>
+    <string name="dejavu_starter_folder">כלים</string>
 </resources>

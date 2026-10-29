@@ -536,4 +536,10 @@
     <string name="dejavu_welcome_sync_text">Увайдзіце з уліковым запісам Mozilla, каб сінхранізаваць прасторы, замацаваныя карткі і важнае з Zen або карткі з Firefox.</string>
     <string name="dejavu_settings_matrix">Чат у Matrix</string>
     <string name="dejavu_settings_matrix_summary">Задайце пытанне, прапануйце функцыю або паведаміце пра памылку</string>
+    <string name="dejavu_menu_clear_data">Ачысціць дадзеныя</string>
+    <string name="dejavu_menu_clear_data_and_quit">Ачысціць дадзеныя і выйсці</string>
+    <string name="dejavu_clear_data_button">Кнопка «Ачысціць дадзеныя»</string>
+    <string name="dejavu_clear_data_button_summary">Што выдаляюць «Ачысціць дадзеныя» і «Ачысціць дадзеныя і выйсці». Доўгае націсканне кнопкі «Ачысціць» на галоўным экране таксама выдаляе гэтыя дадзеныя.</string>
+    <string name="dejavu_clear_data_choose">Спачатку выберыце, што ачысціць</string>
+    <string name="dejavu_starter_folder">Інструменты</string>
 </resources>

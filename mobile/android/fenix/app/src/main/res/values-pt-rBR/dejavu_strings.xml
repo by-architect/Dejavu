@@ -528,4 +528,10 @@
     <string name="dejavu_welcome_sync_text">Entre com uma conta da Mozilla para sincronizar espaços de trabalho, abas fixadas e essenciais com o Zen, ou abas com o Firefox.</string>
     <string name="dejavu_settings_matrix">Converse no Matrix</string>
     <string name="dejavu_settings_matrix_summary">Faça uma pergunta, sugira um recurso ou relate um bug</string>
+    <string name="dejavu_menu_clear_data">Limpar dados</string>
+    <string name="dejavu_menu_clear_data_and_quit">Limpar dados e sair</string>
+    <string name="dejavu_clear_data_button">Botão “Limpar dados”</string>
+    <string name="dejavu_clear_data_button_summary">O que “Limpar dados” e “Limpar dados e sair” excluem. Manter “Limpar” pressionado na tela inicial também exclui esses dados.</string>
+    <string name="dejavu_clear_data_choose">Primeiro escolha o que limpar</string>
+    <string name="dejavu_starter_folder">Ferramentas</string>
 </resources>

@@ -132,7 +132,7 @@ class DejavuSettings private constructor(context: Context) {
         prefs.edit { putInt(KEY_AWAKE_TAB_LIMIT, limit) }
     }
 
-    /** Whether the welcome pages a fresh install starts with were shown, or are not due as Dejavu was updated. */
+    /** Whether the welcome pages were shown, or are not due, as Dejavu was updated from a version that had them. */
     val welcomeSeen: StateFlow<Boolean> = _welcomeSeen.asStateFlow()
 
     fun setWelcomeSeen(seen: Boolean) {
@@ -149,6 +149,11 @@ class DejavuSettings private constructor(context: Context) {
     var whatsNewSeen: String?
         get() = prefs.getString(KEY_WHATS_NEW_SEEN, null)
         set(value) = prefs.edit { putString(KEY_WHATS_NEW_SEEN, value) }
+
+    /** When Clear data last deleted the data pages leave behind, like cookies, in milliseconds, or 0. */
+    var clearedDataAt: Long
+        get() = prefs.getLong(KEY_CLEARED_DATA_AT, 0L)
+        set(value) = prefs.edit { putLong(KEY_CLEARED_DATA_AT, value) }
 
     /** How History lists pages. */
     var historyGrouping: HistoryGrouping
@@ -404,6 +409,7 @@ class DejavuSettings private constructor(context: Context) {
         private const val KEY_TAB_SLEEP_MINUTES = "tab_sleep_minutes"
         private const val KEY_AWAKE_TAB_LIMIT = "awake_tab_limit"
         private const val KEY_WELCOME_SEEN = "welcome_seen"
+        private const val KEY_CLEARED_DATA_AT = "cleared_data_at"
         private const val KEY_FEATURE_TOUR_SEEN = "feature_tour_seen"
         private const val KEY_WHATS_NEW_SEEN = "whats_new_seen"
         private val DEFAULT_PINNED_ROW_ACTIONS = listOf(TabAction.CLOSE)

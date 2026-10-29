@@ -520,4 +520,10 @@
     <string name="dejavu_welcome_sync_text">Mag-sign in gamit ang Mozilla account para i-sync ang mga workspace, naka-pin nga mga tab kag Importante upod ang Zen, ukon mga tab upod ang Firefox.</string>
     <string name="dejavu_settings_matrix">Mag-chat sa Matrix</string>
     <string name="dejavu_settings_matrix_summary">Mamangkot, mag-suggest sang feature, ukon mag-report sang bug</string>
+    <string name="dejavu_menu_clear_data">i-Clear ang data</string>
+    <string name="dejavu_menu_clear_data_and_quit">i-Clear ang data kag mag-quit</string>
+    <string name="dejavu_clear_data_button">Button nga “i-Clear ang data”</string>
+    <string name="dejavu_clear_data_button_summary">Ang mga ginadelete sang “i-Clear ang data” kag “i-Clear ang data kag mag-quit”. Kon kaptan mo sing madugay ang i-Clear sa home screen, madelete man ini.</string>
+    <string name="dejavu_clear_data_choose">Pilia anay kon ano ang i-clear</string>
+    <string name="dejavu_starter_folder">Mga Gamit</string>
 </resources>

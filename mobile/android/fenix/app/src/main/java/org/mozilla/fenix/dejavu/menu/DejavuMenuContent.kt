@@ -52,6 +52,7 @@ import org.mozilla.fenix.components.menu.store.MenuAction
 import org.mozilla.fenix.components.menu.store.MenuStore
 import org.mozilla.fenix.components.menu.store.WebExtensionMenuItem
 import org.mozilla.fenix.dejavu.actions.TabAction
+import org.mozilla.fenix.dejavu.browser.ClearData
 import org.mozilla.fenix.dejavu.browser.SplitSpace
 import org.mozilla.fenix.dejavu.settings.DejavuSettings
 import org.mozilla.fenix.dejavu.settings.PageBackdrop
@@ -445,6 +446,17 @@ private class MenuActions(
             }
             dismiss()
             openNewTab(navController, tab)
+            return
+        }
+        if (item == MoreMenuItem.CLEAR_DATA || item == MoreMenuItem.CLEAR_DATA_AND_QUIT) {
+            val showChoices = { PageBackdrop.openOverPage(tab.id) { ClearData.showChoices(navController) } }
+            val clear = { ClearData.run(context, showChoices, quit = item == MoreMenuItem.CLEAR_DATA_AND_QUIT) }
+            if (closer != null) {
+                closer.close { clear() }
+                return
+            }
+            dismiss()
+            clear()
             return
         }
         if (commands.run(item, workspaces)) {

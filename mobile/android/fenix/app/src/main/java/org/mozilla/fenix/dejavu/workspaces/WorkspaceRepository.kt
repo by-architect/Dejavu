@@ -53,6 +53,27 @@ class WorkspaceRepository private constructor(context: Context) {
     /** Saves the workspaces as they are, so that the ones a fresh Dejavu starts with keep their ids. */
     fun save() = prefs.edit { putString(KEY_STATE, WorkspaceSerializer.write(_state.value)) }
 
+    /**
+     * Gives a fresh install the examples it starts with, see [StarterWorkspaces]: the Work workspace named [workName],
+     * and in Home the folder [folderName] with its pinned tabs, and the essentials. Only once, and only while Home is
+     * the one workspace, untouched and without pinned tabs. Saved at once. Returns whether it gave them.
+     */
+    fun giveStarters(workName: String, folderName: String): Boolean {
+        if (prefs.getBoolean(KEY_STARTERS_GIVEN, false)) return false
+        prefs.edit { putBoolean(KEY_STARTERS_GIVEN, true) }
+        val now = now()
+        var given = false
+        mutate(saveNow = true) { state ->
+            val home = state.workspaces.singleOrNull()?.takeIf { it.isLikeNew(defaultName) && state.pins.isEmpty() }
+            given = home != null
+            if (home == null) state else StarterWorkspaces.around(state, home, workName, folderName, now)
+        }
+        return given
+    }
+
+    /** Removes the examples a fresh install started with that are still as they came, see [withoutStarters]. */
+    fun dropStarters() = mutate(saveNow = true) { it.withoutStarters() }
+
     fun selectWorkspace(id: String) = mutate { state ->
         if (state.workspaces.none { it.id == id }) state else state.copy(activeWorkspaceId = id)
     }
@@ -397,7 +418,9 @@ class WorkspaceRepository private constructor(context: Context) {
                 pin
             } else {
                 changed = true
-                pin.copy(title = title, updatedAt = now())
+                // An example a fresh install started with stays as it came, see withoutStarters.
+                val asItCame = pin.id in state.starters && pin.updatedAt == pin.createdAt
+                pin.copy(title = title, updatedAt = if (asItCame) pin.updatedAt else now())
             }
         }
         if (changed) state.copy(pins = pins) else state
@@ -689,6 +712,7 @@ class WorkspaceRepository private constructor(context: Context) {
         // Kept from before the rename to Dejavu, so saved data still loads.
         private const val PREFS_NAME = "kaizen_workspaces"
         private const val KEY_STATE = "state"
+        private const val KEY_STARTERS_GIVEN = "starters_given"
 
         @Volatile
         private var instance: WorkspaceRepository? = null

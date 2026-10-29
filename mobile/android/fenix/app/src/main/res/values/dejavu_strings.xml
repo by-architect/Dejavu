@@ -348,6 +348,24 @@
     <string name="dejavu_menu_split_no_tabs">There are no other tabs in this workspace.</string>
     <string name="dejavu_menu_settings">Settings</string>
     <string name="dejavu_menu_edit">Edit</string>
+    <!-- Entry of the browser's menu and bars that deletes the browsing data chosen under "Clear data button" in the "Delete browsing data on quit" settings. -->
+    <string name="dejavu_menu_clear_data">Clear data</string>
+    <!-- Entry of the browser's menu and bars that deletes the same browsing data as "Clear data", then closes Dejavu. -->
+    <string name="dejavu_menu_clear_data_and_quit">Clear data and quit</string>
+    <!-- Heading in the "Delete browsing data on quit" settings, over the kinds of browsing data that "Clear data" deletes. -->
+    <string name="dejavu_clear_data_button">Clear data button</string>
+    <!-- Text under the "Clear data button" heading. "Clear" is the button on the home screen that closes the tabs below the line. -->
+    <string name="dejavu_clear_data_button_summary">What “Clear data” and “Clear data and quit” delete. Holding Clear on the home screen deletes it too.</string>
+    <!-- Short message when "Clear data" is used before any kind of browsing data was chosen; its settings open. -->
+    <string name="dejavu_clear_data_choose">Choose what to clear first</string>
+    <string name="pref_key_dejavu_clear_data" translatable="false">pref_key_dejavu_clear_data</string>
+    <string name="pref_key_dejavu_clear_data_summary" translatable="false">pref_key_dejavu_clear_data_summary</string>
+    <string name="pref_key_dejavu_clear_data_tabs" translatable="false">pref_key_dejavu_clear_data_tabs</string>
+    <string name="pref_key_dejavu_clear_data_history" translatable="false">pref_key_dejavu_clear_data_history</string>
+    <string name="pref_key_dejavu_clear_data_cookies" translatable="false">pref_key_dejavu_clear_data_cookies</string>
+    <string name="pref_key_dejavu_clear_data_cache" translatable="false">pref_key_dejavu_clear_data_cache</string>
+    <string name="pref_key_dejavu_clear_data_permissions" translatable="false">pref_key_dejavu_clear_data_permissions</string>
+    <string name="pref_key_dejavu_clear_data_downloads" translatable="false">pref_key_dejavu_clear_data_downloads</string>
 
     <!-- Settings: "More" menu editor -->
     <string name="pref_key_dejavu_more_menu" translatable="false">pref_key_dejavu_more_menu</string>
@@ -539,6 +557,8 @@
     <string name="dejavu_workspace_firefox_own">Firefox Sync doesn’t share workspaces, so this workspace, with its pinned tabs and folders, stays on this phone. Firefox shows its open tabs as this phone’s tabs.</string>
     <string name="dejavu_container_personal">Personal</string>
     <string name="dejavu_container_work">Work</string>
+    <!-- Name of the folder of pinned tabs that a fresh install's Home workspace starts with: a map, a translator and a weather site. -->
+    <string name="dejavu_starter_folder">Tools</string>
     <string name="dejavu_container_banking">Banking</string>
     <string name="dejavu_container_shopping">Shopping</string>
     <!-- History: title of the button and dialog that choose how History lists pages. -->

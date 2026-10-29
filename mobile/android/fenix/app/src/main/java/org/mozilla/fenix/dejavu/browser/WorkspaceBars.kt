@@ -23,30 +23,25 @@ import androidx.compose.ui.platform.LocalView
 import mozilla.components.lib.state.ext.observeAsComposableState
 import org.mozilla.fenix.dejavu.home.drawWorkspaceTheme
 import org.mozilla.fenix.dejavu.home.rememberGrainBrush
+import org.mozilla.fenix.dejavu.ui.popupThemeOf
+import org.mozilla.fenix.dejavu.ui.workspacePopupTheme
 import org.mozilla.fenix.dejavu.workspaces.WorkspaceRepository
-import org.mozilla.fenix.dejavu.workspaces.WorkspaceState
 import org.mozilla.fenix.dejavu.workspaces.WorkspaceTheme
 import org.mozilla.fenix.ext.components
 
 /**
- * The theme of the workspace of the tab with [tabId], or of the shown tab when `null`; `null` for a private tab or a
- * workspace without one.
+ * The colors that the bars around the tab with [tabId], or the shown tab when `null`, and the menus over it take on:
+ * those of its workspace's wallpaper, see [popupThemeOf]; `null` for a private tab or a workspace without a wallpaper.
  */
 @Composable
-internal fun shownWorkspaceTheme(tabId: String? = null): WorkspaceTheme? {
+internal fun shownPopupTheme(tabId: String? = null): WorkspaceTheme? {
     val context = LocalContext.current
     val themedTabId by context.components.core.store.observeAsComposableState { state ->
         state.tabOrShown(tabId)?.takeUnless { it.content.private }?.id
     }
     val repository = remember(context) { WorkspaceRepository.get(context) }
     val workspaces by repository.state.collectAsState()
-    return themedTabId?.let { workspaces.themeOfTab(it) }
-}
-
-/** The theme of the workspace tab [tabId] is in, if that workspace has one. */
-internal fun WorkspaceState.themeOfTab(tabId: String): WorkspaceTheme? {
-    val workspaceId = workspaceOf(tabId)
-    return workspaces.firstOrNull { it.id == workspaceId }?.theme
+    return workspacePopupTheme(themedTabId?.let(workspaces::workspaceOf))
 }
 
 /**

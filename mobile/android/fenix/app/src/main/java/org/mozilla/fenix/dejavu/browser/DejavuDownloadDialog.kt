@@ -79,7 +79,7 @@ internal fun DejavuDownloadDialog(
     val isInvalid = name.text.contains("/")
     val canDownload = enableConfirmButton(fileName = name.text.trim().withExtension(extension))
 
-    CompositionLocalProvider(LocalPopupTheme provides shownWorkspaceTheme()) {
+    CompositionLocalProvider(LocalPopupTheme provides shownPopupTheme()) {
         DejavuDialogCard(
             title = title,
             icon = R.drawable.dejavu_ic_downloads_24,

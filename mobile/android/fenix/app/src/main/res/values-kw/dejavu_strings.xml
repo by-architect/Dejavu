@@ -552,4 +552,10 @@
     <string name="dejavu_welcome_sync_text">Sina ajy gans akont Mozilla rag kesunya tyleryow-ober, tabow fastyes ha Pythow Poesek gans Zen, po tabow gans Firefox.</string>
     <string name="dejavu_settings_matrix">Keskows war Matrix</string>
     <string name="dejavu_settings_matrix_summary">Govyn neppyth, profya tra nowydh po derivas fowt</string>
+    <string name="dejavu_menu_clear_data">Glanhe an data</string>
+    <string name="dejavu_menu_clear_data_and_quit">Glanhe an data ha degea</string>
+    <string name="dejavu_clear_data_button">Boton “Glanhe an data”</string>
+    <string name="dejavu_clear_data_button_summary">An pyth a vydh dileys gans “Glanhe an data” ha “Glanhe an data ha degea”. Synsi “Glanhe” war an skrin tre a wra y dhilea ynwedh.</string>
+    <string name="dejavu_clear_data_choose">Dewis kyns oll pyth dhe lanhe</string>
+    <string name="dejavu_starter_folder">Toulys</string>
 </resources>

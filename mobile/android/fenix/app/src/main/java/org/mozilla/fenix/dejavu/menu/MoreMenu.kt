@@ -56,6 +56,12 @@ enum class MoreMenuItem(
     // What the split view entry turns into on screens with room for both ways of splitting; never put by the user.
     SPLIT_TOP_AND_BOTTOM("split_top_and_bottom", R.string.dejavu_split_top_and_bottom, R.drawable.dejavu_ic_split_24),
     SPLIT_SIDE_BY_SIDE("split_side_by_side", R.string.dejavu_split_side_by_side, R.drawable.dejavu_ic_split_side_24),
+    CLEAR_DATA("clear_data", R.string.dejavu_menu_clear_data, iconsR.drawable.mozac_ic_data_clearance_24),
+    CLEAR_DATA_AND_QUIT(
+        "clear_data_and_quit",
+        R.string.dejavu_menu_clear_data_and_quit,
+        iconsR.drawable.mozac_ic_cross_circle_fill_24,
+    ),
     SETTINGS("settings", R.string.dejavu_menu_settings, R.drawable.dejavu_ic_settings_24),
     ;
 
@@ -131,11 +137,22 @@ object MoreMenuLayout {
     const val MAX_PER_ROW = 4
 
     val DEFAULT: List<List<String>> = listOf(
-        listOf(MoreMenuItem.READER_VIEW, MoreMenuItem.FORWARD, MoreMenuItem.SHARE, MoreMenuItem.REFRESH),
-        listOf(MoreMenuItem.FIND_IN_PAGE, MoreMenuItem.DESKTOP_SITE, MoreMenuItem.PIN_TAB, MoreMenuItem.OPEN_IN_APP),
-        listOf(MoreMenuItem.EXTENSIONS),
-        listOf(MoreMenuItem.HISTORY, MoreMenuItem.BOOKMARKS, MoreMenuItem.DOWNLOADS, MoreMenuItem.PASSWORDS),
-    ).map { row -> row.map { it.key } }
+        listOf(MoreMenuItem.BACK.key, MoreMenuItem.FORWARD.key, MoreMenuItem.REFRESH.key, TabAction.CLOSE.key),
+        listOf(
+            MoreMenuItem.READER_VIEW.key,
+            MoreMenuItem.FIND_IN_PAGE.key,
+            MoreMenuItem.DESKTOP_SITE.key,
+            MoreMenuItem.TRANSLATE.key,
+        ),
+        listOf(MoreMenuItem.EXTENSIONS.key),
+        listOf(
+            MoreMenuItem.BOOKMARK_PAGE.key,
+            MoreMenuItem.PIN_TAB.key,
+            MoreMenuItem.ESSENTIAL_TAB.key,
+            MoreMenuItem.SAVE_AS_PDF.key,
+        ),
+        listOf(TabAction.SLEEP.key, TabAction.COPY_LINK.key, MoreMenuItem.OPEN_IN_APP.key, MoreMenuItem.SPLIT_VIEW.key),
+    )
 
     /** Whether the entry with [key] fills a row on its own. */
     fun isFullRow(key: String): Boolean = key == MoreMenuItem.EXTENSIONS.key
@@ -194,13 +211,10 @@ object ActionsBarLayout {
         MoreMenuEntry.Search.key,
     )
 
-    /** The first row of the menu's default before Reader view took the place of Back in it. */
-    private val FIRST_ROW_WITH_BACK = listOf(
-        MoreMenuItem.BACK.key,
-        MoreMenuItem.FORWARD.key,
-        MoreMenuItem.SHARE.key,
-        MoreMenuItem.REFRESH.key,
-    )
+    /** The first rows the menu's default had before: with Back, then with Reader view in its place. */
+    private val OLD_FIRST_ROWS = listOf(MoreMenuItem.BACK, MoreMenuItem.READER_VIEW).map { first ->
+        listOf(first.key, MoreMenuItem.FORWARD.key, MoreMenuItem.SHARE.key, MoreMenuItem.REFRESH.key)
+    }
 
     /**
      * The bar Dejavu showed before it could be changed on its own: the first row of the menu laid out as [menuRows]
@@ -208,7 +222,9 @@ object ActionsBarLayout {
      */
     fun fromMenu(menuRows: List<List<String>>): List<String> {
         val firstRow = menuRows.firstOrNull().orEmpty()
-        if (firstRow == MoreMenuLayout.DEFAULT.first() || firstRow == FIRST_ROW_WITH_BACK) return DEFAULT
+        if (firstRow == MoreMenuLayout.DEFAULT.first() || firstRow in OLD_FIRST_ROWS) {
+            return DEFAULT
+        }
         val buttons = firstRow + MoreMenuEntry.Search.key
         return buttons.toMutableList().apply { add(size / 2, MoreMenuEntry.Home.key) }.distinct().take(MAX_BUTTONS)
     }

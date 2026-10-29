@@ -16,9 +16,11 @@ import androidx.compose.foundation.gestures.animateScrollBy
 import androidx.compose.foundation.gestures.scrollBy
 import androidx.compose.foundation.indication
 import androidx.compose.foundation.interaction.MutableInteractionSource
+import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.defaultMinSize
 import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -42,7 +44,6 @@ import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
-import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.DisposableEffect
 import androidx.compose.runtime.LaunchedEffect
@@ -67,6 +68,7 @@ import androidx.compose.ui.platform.LocalDensity
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.pluralStringResource
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.semantics.Role
 import androidx.compose.ui.semantics.contentDescription
 import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.text.font.FontWeight
@@ -149,6 +151,8 @@ data class WorkspacePageCallbacks(
     val onNewPrivateTab: () -> Unit,
     val onManageContainers: () -> Unit,
     val onClearUnpinned: () -> Unit,
+    /** Deletes the data chosen for Clear data, from holding Clear, or tapping it with no unpinned tabs. */
+    val onClearData: () -> Unit,
     val onReopenClosedTab: () -> Unit,
     val onOpenClipboard: () -> Unit,
     /** The row of the tab to reveal is in view. */
@@ -255,6 +259,8 @@ internal fun WorkspacePage(
     hasClipboardLink: Boolean = false,
     revealTabId: String? = null,
     openTabIds: Set<String> = emptySet(),
+    hasDataToClear: Boolean = false,
+    dataPour: DataPour? = null,
 ) {
     val tabsById = tabs.associateBy { it.id }
     val awakeTabIds = tabs.filter { it.isAwake }.map { it.id }.toSet()
@@ -467,14 +473,19 @@ internal fun WorkspacePage(
             }
 
             item(key = KEY_DIVIDER) {
+                // The cleared tabs and data pour into the Clear button, which stays until they are in.
+                val clearing = plan.clear || motions.isClearing || dataPour?.isPouring == true
                 SectionDivider(
-                    // The cleared tabs pour into the Clear button, which stays until they are in.
-                    showClear = (otherTabs.isNotEmpty() || plan.clear || motions.isClearing) && selection == null,
+                    showClear = (otherTabs.isNotEmpty() || hasDataToClear || clearing) && selection == null,
                     onClear = {
                         motions.clearTapped()
-                        callbacks.onClearUnpinned()
+                        if (otherTabs.isNotEmpty()) callbacks.onClearUnpinned() else callbacks.onClearData()
                     },
-                    clearButton = Modifier.motionButton(motions, MotionButton.CLEAR),
+                    onClearData = {
+                        motions.clearTapped()
+                        callbacks.onClearData()
+                    },
+                    clearButton = Modifier.motionButton(motions, MotionButton.CLEAR).dataPourTarget(dataPour),
                     modifier = Modifier
                         .animateItem(fadeInSpec = null, placementSpec = placement, fadeOutSpec = null)
                         .dropLine(dropLines?.of(KEY_DIVIDER), lineColor, insideColor),
@@ -839,12 +850,13 @@ private fun Modifier.dropLine(line: DropLine?, lineColor: Color, insideColor: Co
 
 /**
  * The line between pinned and unpinned tabs, with Zen's "Clear" button for the unpinned ones, which [clearButton] is
- * given to.
+ * given to. Holding it runs [onClearData] instead.
  */
 @Composable
 private fun SectionDivider(
     showClear: Boolean,
     onClear: () -> Unit,
+    onClearData: () -> Unit,
     clearButton: Modifier,
     modifier: Modifier = Modifier,
 ) {
@@ -855,18 +867,34 @@ private fun SectionDivider(
         // The line has the color of New Tab below it.
         HorizontalDivider(modifier = Modifier.weight(1f), color = MaterialTheme.colorScheme.onSurfaceVariant)
         if (showClear) {
-            TextButton(
-                onClick = onClear,
-                colors = ButtonDefaults.textButtonColors(contentColor = MaterialTheme.colorScheme.onSurfaceVariant),
-                modifier = clearButton,
+            // A text button that can be held too.
+            Row(
+                verticalAlignment = Alignment.CenterVertically,
+                horizontalArrangement = Arrangement.Center,
+                modifier = clearButton
+                    .defaultMinSize(minWidth = ButtonDefaults.MinWidth, minHeight = ButtonDefaults.MinHeight)
+                    .clip(CircleShape)
+                    .combinedClickable(
+                        role = Role.Button,
+                        onLongClickLabel = stringResource(R.string.dejavu_menu_clear_data),
+                        onLongClick = onClearData,
+                        onClick = onClear,
+                    )
+                    .padding(ButtonDefaults.TextButtonContentPadding),
             ) {
+                val color = MaterialTheme.colorScheme.onSurfaceVariant
                 Icon(
                     painter = painterResource(iconsR.drawable.mozac_ic_chevron_down_16),
                     contentDescription = null,
+                    tint = color,
                     modifier = Modifier.size(14.dp),
                 )
                 Spacer(Modifier.width(4.dp))
-                Text(stringResource(R.string.dejavu_clear_unpinned), style = MaterialTheme.typography.labelLarge)
+                Text(
+                    text = stringResource(R.string.dejavu_clear_unpinned),
+                    style = MaterialTheme.typography.labelLarge,
+                    color = color,
+                )
             }
         } else {
             Spacer(Modifier.width(12.dp))

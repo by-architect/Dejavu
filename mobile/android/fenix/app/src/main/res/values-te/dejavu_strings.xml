@@ -520,4 +520,10 @@
     <string name="dejavu_welcome_sync_text">Mozilla ఖాతాతో సైన్ ఇన్ చేసి, కార్యస్థలాలు, పిన్ చేసిన ట్యాబులు, ముఖ్యమైనవాటిని Zen బ్రౌజర్‌తో, లేదా ట్యాబులను Firefox బ్రౌజర్‌తో సింక్ చేయండి.</string>
     <string name="dejavu_settings_matrix">Matrixలో చాట్ చేయండి</string>
     <string name="dejavu_settings_matrix_summary">ప్రశ్న అడగండి, సౌలభ్యాన్ని సూచించండి లేదా లోపాన్ని నివేదించండి</string>
+    <string name="dejavu_menu_clear_data">డేటాను తుడిచివేయి</string>
+    <string name="dejavu_menu_clear_data_and_quit">డేటాను తుడిచివేసి నిష్క్రమించు</string>
+    <string name="dejavu_clear_data_button">“డేటాను తుడిచివేయి” బొత్తం</string>
+    <string name="dejavu_clear_data_button_summary">“డేటాను తుడిచివేయి” మరియు “డేటాను తుడిచివేసి నిష్క్రమించు” తొలగించేవి ఇవే. హోమ్ తెరపై తుడిచివేయి బొత్తాన్ని నొక్కి పట్టుకోవడం కూడా వీటిని తొలగిస్తుంది.</string>
+    <string name="dejavu_clear_data_choose">ముందుగా ఏమి తుడిచివేయాలో ఎంచుకోండి</string>
+    <string name="dejavu_starter_folder">సాధనాలు</string>
 </resources>

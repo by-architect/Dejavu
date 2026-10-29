@@ -512,4 +512,10 @@
     <string name="dejavu_welcome_sync_text">ចូលគណនី Mozilla ដើម្បីធ្វើសមកាលកម្មចន្លោះការងារ ផ្ទាំងបានខ្ទាស់ និងសំខាន់ៗជាមួយ Zen ឬផ្ទាំងជាមួយ Firefox។</string>
     <string name="dejavu_settings_matrix">ជជែកនៅលើ Matrix</string>
     <string name="dejavu_settings_matrix_summary">សួរសំណួរ ស្នើមុខងារ ឬរាយការណ៍កំហុស</string>
+    <string name="dejavu_menu_clear_data">សម្អាតទិន្នន័យ</string>
+    <string name="dejavu_menu_clear_data_and_quit">សម្អាតទិន្នន័យ និងចេញ</string>
+    <string name="dejavu_clear_data_button">ប៊ូតុងសម្អាតទិន្នន័យ</string>
+    <string name="dejavu_clear_data_button_summary">ទិន្នន័យដែល «សម្អាតទិន្នន័យ» និង «សម្អាតទិន្នន័យ និងចេញ» លុប។ ការចុចឱ្យជាប់លើប៊ូតុង សម្អាត នៅលើអេក្រង់ដើម ក៏លុបទិន្នន័យនេះដែរ។</string>
+    <string name="dejavu_clear_data_choose">ជ្រើសរើសអ្វីដែលត្រូវសម្អាតជាមុនសិន</string>
+    <string name="dejavu_starter_folder">ឧបករណ៍</string>
 </resources>

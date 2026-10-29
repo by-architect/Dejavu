@@ -528,4 +528,10 @@
     <string name="dejavu_welcome_sync_text">Entra co un account Mozilla par sincronizar spasi de laoro, schede fisà e essensiałi co Zen, o łe schede co Firefox.</string>
     <string name="dejavu_settings_matrix">Ciàcoła su Matrix</string>
     <string name="dejavu_settings_matrix_summary">Fà na domanda, propóni na funsion o segnała un eror</string>
+    <string name="dejavu_menu_clear_data">Scanseƚa i dati</string>
+    <string name="dejavu_menu_clear_data_and_quit">Scanseƚa i dati e va fora</string>
+    <string name="dejavu_clear_data_button">Boton Scanseƚa i dati</string>
+    <string name="dejavu_clear_data_button_summary">I dati che “Scanseƚa i dati” e “Scanseƚa i dati e va fora” i scanseƚa. Anca tegnendo strucà Neta su ƚa pàgina de casa i vien scanseƚà.</string>
+    <string name="dejavu_clear_data_choose">Sernisi prima i dati da scanseƚar</string>
+    <string name="dejavu_starter_folder">Strumenti</string>
 </resources>

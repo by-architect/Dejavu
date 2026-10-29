@@ -520,4 +520,10 @@
     <string name="dejavu_welcome_sync_text">Zen ସହିତ କାର୍ଯ୍ୟକ୍ଷେତ୍ର, ପିନ୍ ଟ୍ୟାବ୍ ଏବଂ ଆବଶ୍ୟକୀୟ, କିମ୍ବା Firefox ସହିତ ଟ୍ୟାବ୍ ସିଙ୍କ କରିବାକୁ ଏକ Mozilla ଆକାଉଣ୍ଟରେ ସାଇନ୍ ଇନ୍ କରନ୍ତୁ।</string>
     <string name="dejavu_settings_matrix">Matrix ରେ ଚାଟ୍ କରନ୍ତୁ</string>
     <string name="dejavu_settings_matrix_summary">ପ୍ରଶ୍ନ ପଚାରନ୍ତୁ, ବୈଶିଷ୍ଟ୍ୟର ପରାମର୍ଶ ଦିଅନ୍ତୁ କିମ୍ବା ତ୍ରୁଟି ରିପୋର୍ଟ କରନ୍ତୁ</string>
+    <string name="dejavu_menu_clear_data">ଡାଟା ସଫା କରନ୍ତୁ</string>
+    <string name="dejavu_menu_clear_data_and_quit">ଡାଟା ସଫା କରି ବାହାରନ୍ତୁ</string>
+    <string name="dejavu_clear_data_button">“ଡାଟା ସଫା କରନ୍ତୁ” ବଟନ୍</string>
+    <string name="dejavu_clear_data_button_summary">“ଡାଟା ସଫା କରନ୍ତୁ” ଓ “ଡାଟା ସଫା କରି ବାହାରନ୍ତୁ” ଦ୍ୱାରା ଡିଲିଟ୍ ହେଉଥିବା ଡାଟା। ହୋମ୍ ସ୍କ୍ରିନ୍‌ରେ “ସଫା କରନ୍ତୁ” ଦବାଇ ଧରିଲେ ମଧ୍ୟ ଏହା ଡିଲିଟ୍ ହୁଏ।</string>
+    <string name="dejavu_clear_data_choose">ପ୍ରଥମେ କଣ ସଫା କରିବେ ତାହା ବାଛନ୍ତୁ</string>
+    <string name="dejavu_starter_folder">ଉପକରଣ</string>
 </resources>

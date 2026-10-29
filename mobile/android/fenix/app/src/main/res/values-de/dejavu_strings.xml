@@ -520,4 +520,10 @@
     <string name="dejavu_welcome_sync_text">Melde dich mit einem Mozilla-Konto an, um Arbeitsbereiche, angeheftete Tabs und Favoriten mit Zen oder Tabs mit Firefox zu synchronisieren.</string>
     <string name="dejavu_settings_matrix">Auf Matrix chatten</string>
     <string name="dejavu_settings_matrix_summary">Stell eine Frage, schlag eine Funktion vor oder melde einen Fehler</string>
+    <string name="dejavu_menu_clear_data">Daten löschen</string>
+    <string name="dejavu_menu_clear_data_and_quit">Daten löschen und beenden</string>
+    <string name="dejavu_clear_data_button">Schaltfläche „Daten löschen“</string>
+    <string name="dejavu_clear_data_button_summary">Was „Daten löschen“ und „Daten löschen und beenden“ löschen. Langes Tippen auf „Leeren“ auf der Startseite löscht diese Daten ebenfalls.</string>
+    <string name="dejavu_clear_data_choose">Wählen Sie zuerst aus, was gelöscht werden soll</string>
+    <string name="dejavu_starter_folder">Werkzeuge</string>
 </resources>

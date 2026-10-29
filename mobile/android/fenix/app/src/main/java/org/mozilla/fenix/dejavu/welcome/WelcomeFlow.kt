@@ -80,6 +80,7 @@ import org.mozilla.fenix.dejavu.ui.DejavuButtonStyle
 import org.mozilla.fenix.dejavu.ui.DejavuDialogButton
 import org.mozilla.fenix.dejavu.ui.LocalPopupTheme
 import org.mozilla.fenix.dejavu.ui.glass
+import org.mozilla.fenix.dejavu.ui.popupThemeOf
 import org.mozilla.fenix.dejavu.workspaces.WorkspaceRepository
 import org.mozilla.fenix.dejavu.workspaces.WorkspaceTheme
 import org.mozilla.fenix.dejavu.workspaces.WorkspaceWallpaper
@@ -165,8 +166,8 @@ internal fun WelcomeFlow(page: Int, onPage: (Int) -> Unit, onDone: (signIn: Bool
                             .verticalScroll(rememberScrollState())
                             .padding(horizontal = PAGE_MARGIN, vertical = 12.dp),
                     ) {
-                        // Dialogs opened from the pages, like the color picker, take on the colors picked.
-                        CompositionLocalProvider(LocalPopupTheme provides look?.theme) {
+                        // Dialogs opened from the pages take on the colors of the wallpaper picked.
+                        CompositionLocalProvider(LocalPopupTheme provides popupThemeOf(look?.wallpaper)) {
                             WelcomePageContent(page = pages[index], look = look, onSignIn = { onDone(true) })
                         }
                     }

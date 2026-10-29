@@ -75,7 +75,7 @@ import org.mozilla.fenix.dejavu.browser.BOTTOM_ADDRESS_BAR_MARGIN
 import org.mozilla.fenix.dejavu.browser.BarsLayout
 import org.mozilla.fenix.dejavu.browser.currentBarsLayout
 import org.mozilla.fenix.dejavu.browser.navigationBarRoomPadding
-import org.mozilla.fenix.dejavu.browser.shownWorkspaceTheme
+import org.mozilla.fenix.dejavu.browser.shownPopupTheme
 import org.mozilla.fenix.dejavu.browser.statusBarRoomPadding
 import org.mozilla.fenix.dejavu.browser.workspaceTheme
 
@@ -296,7 +296,7 @@ private fun PanelLayout(
                 clip = true
             }
             .background(MaterialTheme.colorScheme.surface)
-            .workspaceTheme(shownWorkspaceTheme())
+            .workspaceTheme(shownPopupTheme())
             .border(1.dp, MaterialTheme.colorScheme.onSurface.copy(alpha = BORDER_ALPHA), look.shape),
     ) { measurables, constraints ->
         val width = constraints.maxWidth

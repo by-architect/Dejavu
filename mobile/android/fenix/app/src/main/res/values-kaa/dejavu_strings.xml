@@ -520,4 +520,10 @@
     <string name="dejavu_welcome_sync_text">Jumıs maydanların, bekitilgen betlerdi hám tiykarǵılardı Zen penen yamasa betlerdi Firefox penen sinxronlastırıw ushın Mozilla akkauntı menen kiriń.</string>
     <string name="dejavu_settings_matrix">Matrix-te sóylesiń</string>
     <string name="dejavu_settings_matrix_summary">Soraw beriń, imkaniyat usınıń yamasa qáte haqqında xabarlań</string>
+    <string name="dejavu_menu_clear_data">Maǵlıwmatlardı tazalaw</string>
+    <string name="dejavu_menu_clear_data_and_quit">Maǵlıwmatlardı tazalaw hám shıǵıw</string>
+    <string name="dejavu_clear_data_button">«Maǵlıwmatlardı tazalaw» túymesi</string>
+    <string name="dejavu_clear_data_button_summary">«Maǵlıwmatlardı tazalaw» hám «Maǵlıwmatlardı tazalaw hám shıǵıw» óshiretuǵın nárseler. Bas ekrandaǵı «Tazalaw» túymesin basıp turıw da olardı óshiredi.</string>
+    <string name="dejavu_clear_data_choose">Dáslep neni tazalawdı tańlań</string>
+    <string name="dejavu_starter_folder">Qurallar</string>
 </resources>

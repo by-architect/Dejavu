@@ -53,12 +53,13 @@ import org.mozilla.fenix.components.appstate.AppAction.FindInPageAction
 import org.mozilla.fenix.components.components
 import org.mozilla.fenix.components.toolbar.DisplayActions
 import org.mozilla.fenix.dejavu.actions.TabAction
+import org.mozilla.fenix.dejavu.browser.ClearData
 import org.mozilla.fenix.dejavu.browser.DejavuToolbar
 import org.mozilla.fenix.dejavu.browser.SplitScreen
 import org.mozilla.fenix.dejavu.browser.SplitSpace
 import org.mozilla.fenix.dejavu.browser.navigationBarRoomPadding
 import org.mozilla.fenix.dejavu.browser.openDejavuMenu
-import org.mozilla.fenix.dejavu.browser.shownWorkspaceTheme
+import org.mozilla.fenix.dejavu.browser.shownPopupTheme
 import org.mozilla.fenix.dejavu.browser.tabOrShown
 import org.mozilla.fenix.dejavu.browser.workspaceTheme
 import org.mozilla.fenix.dejavu.settings.DejavuSettings
@@ -98,7 +99,7 @@ fun DejavuActionsBar(onEvent: (BrowserToolbarEvent) -> Unit, tabId: String? = nu
             .height(BAR_HEIGHT)
             .clip(BAR_SHAPE)
             .background(MaterialTheme.colorScheme.surface)
-            .workspaceTheme(shownWorkspaceTheme(tabId))
+            .workspaceTheme(shownPopupTheme(tabId))
             .border(1.dp, MaterialTheme.colorScheme.onSurface.copy(alpha = BORDER_ALPHA), BAR_SHAPE),
     ) {
         val buttons = entries.forSplitWays(state.splitWays, state.isSplit).map { entry ->
@@ -312,6 +313,11 @@ internal fun runActionsBarEntry(context: Context, navController: NavController, 
         MoreMenuItem.SETTINGS -> PageBackdrop.openOverPage(tab.id) {
             navController.nav(R.id.browserFragment, NavGraphDirections.actionGlobalSettingsFragment())
         }
+        MoreMenuItem.CLEAR_DATA, MoreMenuItem.CLEAR_DATA_AND_QUIT -> ClearData.run(
+            context = context,
+            showChoices = { PageBackdrop.openOverPage(tab.id) { ClearData.showChoices(navController) } },
+            quit = item == MoreMenuItem.CLEAR_DATA_AND_QUIT,
+        )
         MoreMenuItem.OPEN_IN_APP -> {
             val redirect = components.useCases.appLinksUseCases.appLinkRedirect(tab.content.url)
             if (redirect.hasExternalApp()) {

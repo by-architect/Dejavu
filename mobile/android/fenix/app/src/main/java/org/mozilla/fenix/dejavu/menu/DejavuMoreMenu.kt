@@ -66,7 +66,7 @@ import mozilla.components.ui.icons.R as iconsR
 import org.mozilla.fenix.R
 import org.mozilla.fenix.components.menu.store.WebExtensionMenuItem
 import org.mozilla.fenix.dejavu.browser.navigationBarRoomPadding
-import org.mozilla.fenix.dejavu.browser.shownWorkspaceTheme
+import org.mozilla.fenix.dejavu.browser.shownPopupTheme
 import org.mozilla.fenix.dejavu.browser.statusBarRoomPadding
 import org.mozilla.fenix.dejavu.browser.workspaceTheme
 import org.mozilla.fenix.dejavu.home.displayTitle
@@ -177,7 +177,8 @@ private fun MoreMenuItem.look(state: MoreMenuState): EntryLook {
         // Reader view and the PDF viewer are the browser's own pages, which the page saver cannot read.
         MoreMenuItem.SAVE_PAGE -> default.copy(enabled = state.isWebPage && !state.isInReaderView && !state.isPdf)
         MoreMenuItem.NEW_TAB, MoreMenuItem.EXTENSIONS, MoreMenuItem.PASSWORDS, MoreMenuItem.BOOKMARKS,
-        MoreMenuItem.DOWNLOADS, MoreMenuItem.HISTORY, MoreMenuItem.SETTINGS,
+        MoreMenuItem.DOWNLOADS, MoreMenuItem.HISTORY, MoreMenuItem.SETTINGS, MoreMenuItem.CLEAR_DATA,
+        MoreMenuItem.CLEAR_DATA_AND_QUIT,
         -> default
     }
 }
@@ -225,7 +226,7 @@ fun MoreMenuSheet(
             .graphicsLayer { translationY = shownOffset }
             .clip(shape)
             .background(MaterialTheme.colorScheme.surface)
-            .workspaceTheme(shownWorkspaceTheme())
+            .workspaceTheme(shownPopupTheme())
             .then(if (fromTop) Modifier.statusBarRoomPadding() else Modifier.navigationBarRoomPadding())
             .nestedScroll(if (fromTop) swipeUp else bottomSheetScroll),
     ) {

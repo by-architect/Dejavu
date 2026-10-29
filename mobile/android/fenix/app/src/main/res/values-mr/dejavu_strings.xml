@@ -520,4 +520,10 @@
     <string name="dejavu_welcome_sync_text">Zen सह कार्यक्षेत्रे, पिन केलेले टॅब आणि आवश्यक, किंवा Firefox सह टॅब सिंक करण्यासाठी Mozilla खात्याने साइन इन करा.</string>
     <string name="dejavu_settings_matrix">Matrix वर चॅट करा</string>
     <string name="dejavu_settings_matrix_summary">प्रश्न विचारा, वैशिष्ट्य सुचवा किंवा त्रुटी कळवा</string>
+    <string name="dejavu_menu_clear_data">डेटा साफ करा</string>
+    <string name="dejavu_menu_clear_data_and_quit">डेटा साफ करून बंद करा</string>
+    <string name="dejavu_clear_data_button">“डेटा साफ करा” बटण</string>
+    <string name="dejavu_clear_data_button_summary">“डेटा साफ करा” आणि “डेटा साफ करून बंद करा” खालील गोष्टी हटवतात. मुख्यपृष्ठावर “साफ करा” दाबून धरल्यानेही त्या हटवल्या जातात.</string>
+    <string name="dejavu_clear_data_choose">आधी काय साफ करायचे ते निवडा</string>
+    <string name="dejavu_starter_folder">साधने</string>
 </resources>

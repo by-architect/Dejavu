@@ -520,4 +520,10 @@
     <string name="dejavu_welcome_sync_text">Meld jo oan mei in Mozilla-akkount om wurkromten, fêstsette ljepblêden en essinsjes mei Zen te syngronisearjen, of ljepblêden mei Firefox.</string>
     <string name="dejavu_settings_matrix">Chatte op Matrix</string>
     <string name="dejavu_settings_matrix_summary">Stel in fraach, doch in útstel foar in funksje of meld in flater</string>
+    <string name="dejavu_menu_clear_data">Gegevens fuortsmite</string>
+    <string name="dejavu_menu_clear_data_and_quit">Gegevens fuortsmite en ôfslute</string>
+    <string name="dejavu_clear_data_button">Knop ‘Gegevens fuortsmite’</string>
+    <string name="dejavu_clear_data_button_summary">Wat ‘Gegevens fuortsmite’ en ‘Gegevens fuortsmite en ôfslute’ fuortsmite. As jo op de startside lang op ‘Opromje’ drukke, wurdt dit ek fuortsmiten.</string>
+    <string name="dejavu_clear_data_choose">Kies earst wat jo fuortsmite wolle</string>
+    <string name="dejavu_starter_folder">Ark</string>
 </resources>

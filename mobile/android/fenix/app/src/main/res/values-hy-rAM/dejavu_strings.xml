@@ -520,4 +520,10 @@
     <string name="dejavu_welcome_sync_text">Մուտք գործեք Mozilla հաշվով՝ տարածքները, ամրացված ներդիրներն ու կարևոր կայքերը Zen դիտարկիչի հետ, կամ ներդիրները Firefox դիտարկիչի հետ համաժամացնելու համար։</string>
     <string name="dejavu_settings_matrix">Զրուցեք Matrix֊ում</string>
     <string name="dejavu_settings_matrix_summary">Հարց տվեք, առաջարկեք գործառույթ կամ հայտնեք սխալի մասին</string>
+    <string name="dejavu_menu_clear_data">Մաքրել տվյալները</string>
+    <string name="dejavu_menu_clear_data_and_quit">Մաքրել տվյալները և փակել</string>
+    <string name="dejavu_clear_data_button">«Մաքրել տվյալները» կոճակ</string>
+    <string name="dejavu_clear_data_button_summary">Այն, ինչ ջնջում են «Մաքրել տվյալները» և «Մաքրել տվյալները և փակել» կոճակները։ Գլխավոր էկրանին «Մաքրել» կոճակը սեղմած պահելը նույնպես ջնջում է դրանք։</string>
+    <string name="dejavu_clear_data_choose">Նախ ընտրեք, թե ինչ մաքրել</string>
+    <string name="dejavu_starter_folder">Գործիքներ</string>
 </resources>

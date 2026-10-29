@@ -74,6 +74,10 @@ internal object WorkspaceSerializer {
             (0 until ids.length()).mapNotNull { ids.optString(it).ifEmpty { null } }.toSet()
         }.orEmpty()
 
+        val starters = root?.optJSONArray("starters")?.let { ids ->
+            (0 until ids.length()).mapNotNull { ids.optString(it).ifEmpty { null } }.toSet()
+        }.orEmpty()
+
         return WorkspaceState(
             workspaces,
             pins,
@@ -84,6 +88,7 @@ internal object WorkspaceSerializer {
             tabSyncIds,
             pinnedSplits,
             openedByPages,
+            starters,
         )
     }
 
@@ -139,6 +144,7 @@ internal object WorkspaceSerializer {
         put("tabTitles", JSONObject(state.tabTitles))
         put("tabSyncIds", JSONObject(state.tabSyncIds))
         put("openedByPages", JSONArray(state.openedByPages))
+        if (state.starters.isNotEmpty()) put("starters", JSONArray(state.starters))
         put(
             "splits",
             JSONArray().apply {

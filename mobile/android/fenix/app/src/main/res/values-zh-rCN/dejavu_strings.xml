@@ -512,4 +512,10 @@
     <string name="dejavu_welcome_sync_text">登录 Mozilla 账户，即可与 Zen 同步工作区、固定标签页和常用网站，或与 Firefox 同步标签页。</string>
     <string name="dejavu_settings_matrix">在 Matrix 上聊天</string>
     <string name="dejavu_settings_matrix_summary">提问、提出功能建议或报告错误</string>
+    <string name="dejavu_menu_clear_data">清除数据</string>
+    <string name="dejavu_menu_clear_data_and_quit">清除数据并退出</string>
+    <string name="dejavu_clear_data_button">“清除数据”按钮</string>
+    <string name="dejavu_clear_data_button_summary">“清除数据”和“清除数据并退出”要删除的内容。在主页上长按“清除”也会删除这些内容。</string>
+    <string name="dejavu_clear_data_choose">请先选择要清除的内容</string>
+    <string name="dejavu_starter_folder">工具</string>
 </resources>

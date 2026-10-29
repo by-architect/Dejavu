@@ -520,4 +520,10 @@
     <string name="dejavu_welcome_sync_text">പണിയിടങ്ങളും പിൻ ചെയ്ത ടാബുകളും പ്രധാനപ്പെട്ടവയും Zen ബ്രൗസറുമായോ ടാബുകൾ Firefox ബ്രൗസറുമായോ സിങ്ക് ചെയ്യാൻ ഒരു Mozilla അക്കൗണ്ട് ഉപയോഗിച്ച് സൈൻ ഇൻ ചെയ്യുക.</string>
     <string name="dejavu_settings_matrix">Matrix-ൽ ചാറ്റ് ചെയ്യൂ</string>
     <string name="dejavu_settings_matrix_summary">ചോദ്യം ചോദിക്കൂ, സവിശേഷത നിർദ്ദേശിക്കൂ അല്ലെങ്കിൽ പിഴവ് അറിയിക്കൂ</string>
+    <string name="dejavu_menu_clear_data">ദത്ത മായ്ക്കുക</string>
+    <string name="dejavu_menu_clear_data_and_quit">ദത്ത മായ്ച്ച് പുറത്തുകടക്കുക</string>
+    <string name="dejavu_clear_data_button">“ദത്ത മായ്ക്കുക” ബട്ടൺ</string>
+    <string name="dejavu_clear_data_button_summary">“ദത്ത മായ്ക്കുക”, “ദത്ത മായ്ച്ച് പുറത്തുകടക്കുക” എന്നിവ മായ്ക്കുന്ന ദത്ത. ഹോം സ്ക്രീനിലെ “മായ്ക്കുക” അമർത്തിപ്പിടിച്ചാലും ഇവ മായ്ക്കപ്പെടും.</string>
+    <string name="dejavu_clear_data_choose">ആദ്യം എന്താണ് മായ്ക്കേണ്ടതെന്ന് തിരഞ്ഞെടുക്കുക</string>
+    <string name="dejavu_starter_folder">ഉപകരണങ്ങൾ</string>
 </resources>

@@ -528,4 +528,10 @@
     <string name="dejavu_welcome_sync_text">Пријавите се Mozilla налогом да бисте синхронизовали радне просторе, закачене језичке и Фаворите са Zen-ом, или језичке са Firefox-ом.</string>
     <string name="dejavu_settings_matrix">Ћаскајте на Matrix-у</string>
     <string name="dejavu_settings_matrix_summary">Поставите питање, предложите функцију или пријавите грешку</string>
+    <string name="dejavu_menu_clear_data">Очисти податке</string>
+    <string name="dejavu_menu_clear_data_and_quit">Очисти податке и затвори</string>
+    <string name="dejavu_clear_data_button">Дугме „Очисти податке“</string>
+    <string name="dejavu_clear_data_button_summary">Шта бришу „Очисти податке“ и „Очисти податке и затвори“. Дуги притисак на „Очисти“ на почетном екрану брише исто.</string>
+    <string name="dejavu_clear_data_choose">Прво изаберите шта да се очисти</string>
+    <string name="dejavu_starter_folder">Алатке</string>
 </resources>

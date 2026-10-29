@@ -90,6 +90,7 @@ import org.mozilla.fenix.dejavu.ui.DejavuFittedText
 import org.mozilla.fenix.dejavu.ui.DejavuPopup
 import org.mozilla.fenix.dejavu.ui.LocalPopupTheme
 import org.mozilla.fenix.dejavu.ui.popupGlow
+import org.mozilla.fenix.dejavu.ui.workspacePopupTheme
 import org.mozilla.fenix.theme.FirefoxTheme
 
 /**
@@ -215,21 +216,28 @@ object FeatureTour {
 
     /**
      * The chapters to show when Dejavu starts, none when there is nothing new. [updated] tells an update apart from a
-     * fresh install. Versions before 2.0 did not keep which version was seen: their users saw the basics when they had
-     * 1.6, or came from an older version, so they see every version since.
+     * fresh install, which shows the basics until they were seen, also when the welcome pages left out what the
+     * versions brought, see [skipReleases]. Versions before 2.0 did not keep which version was seen: their users saw
+     * the basics when they had 1.6, or came from an older version, so they see every version since.
      */
     fun dueChapters(settings: DejavuSettings, updated: Boolean): List<TourChapter> {
         val seen = settings.whatsNewSeen
+        val basics = listOf(Basics).takeIf { !updated && settings.featureTourSeen < VERSION }.orEmpty()
         return when {
-            seen != null -> Releases.filter { compareVersions(it.version.orEmpty(), seen) > 0 }
+            seen != null -> basics + Releases.filter { compareVersions(it.version.orEmpty(), seen) > 0 }
             updated || settings.featureTourSeen >= VERSION -> Releases
-            else -> listOf(Basics) + Releases.takeLast(1)
+            else -> basics + Releases.takeLast(1)
         }
     }
 
     /** Remembers that everything up to the newest version was shown, also when it was skipped. */
     fun markSeen(settings: DejavuSettings) {
         settings.featureTourSeen = VERSION
+        skipReleases(settings)
+    }
+
+    /** Leaves out what the versions up to the newest one brought, for someone who saw the welcome pages instead. */
+    fun skipReleases(settings: DejavuSettings) {
         Releases.lastOrNull()?.version?.let { settings.whatsNewSeen = it }
     }
 
@@ -516,7 +524,8 @@ class DejavuFeatureTourFragment : DialogFragment() {
                 FirefoxTheme {
                     val repository = remember { workspaceRepository() }
                     val workspaces by repository.state.collectAsState()
-                    CompositionLocalProvider(LocalPopupTheme provides workspaces.activeWorkspace?.theme) {
+                    val popupTheme = workspacePopupTheme(workspaces.activeWorkspaceId)
+                    CompositionLocalProvider(LocalPopupTheme provides popupTheme) {
                         Box(contentAlignment = Alignment.Center, modifier = Modifier.fillMaxWidth()) {
                             // Every chapter, opened on what the newest version brought.
                             val chapters = FeatureTour.All

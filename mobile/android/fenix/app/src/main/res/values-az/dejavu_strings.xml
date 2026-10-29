@@ -520,4 +520,10 @@
     <string name="dejavu_welcome_sync_text">İş sahələrini, bərkidilmiş vərəqləri və əsasları Zen ilə, vərəqləri isə Firefox ilə sinxronlaşdırmaq üçün Mozilla hesabı ilə daxil olun.</string>
     <string name="dejavu_settings_matrix">Matrix-də söhbət edin</string>
     <string name="dejavu_settings_matrix_summary">Sual verin, funksiya təklif edin və ya xəta barədə bildirin</string>
+    <string name="dejavu_menu_clear_data">Məlumatları təmizlə</string>
+    <string name="dejavu_menu_clear_data_and_quit">Məlumatları təmizlə və çıx</string>
+    <string name="dejavu_clear_data_button">«Məlumatları təmizlə» düyməsi</string>
+    <string name="dejavu_clear_data_button_summary">«Məlumatları təmizlə» və «Məlumatları təmizlə və çıx» ilə silinən məlumatlar. Ana ekranda Təmizlə düyməsini basıb saxladıqda da onlar silinir.</string>
+    <string name="dejavu_clear_data_choose">Əvvəlcə nəyi təmizləyəcəyinizi seçin</string>
+    <string name="dejavu_starter_folder">Alətlər</string>
 </resources>

@@ -512,4 +512,10 @@
     <string name="dejavu_welcome_sync_text">o kepeken e nimi Mozilla. ni la, sina ken sama e kulupu poki e poki awen e lipu suli kepeken ilo Zen, anu e poki kepeken ilo Firefox.</string>
     <string name="dejavu_settings_matrix">o toki lon ilo Matrix</string>
     <string name="dejavu_settings_matrix_summary">o toki e wile sona, e wile pi ijo sin anu e pakala</string>
+    <string name="dejavu_menu_clear_data">o weka e sona</string>
+    <string name="dejavu_menu_clear_data_and_quit">o weka e sona, o weka tan ilo</string>
+    <string name="dejavu_clear_data_button">nena “o weka e sona”</string>
+    <string name="dejavu_clear_data_button_summary">“o weka e sona” en “o weka e sona, o weka tan ilo” li weka e ijo ni. sina luka awen e nena “o weka” lon lipu tomo la ijo ni li weka kin.</string>
+    <string name="dejavu_clear_data_choose">nanpa wan la, o wile e ijo tawa weka</string>
+    <string name="dejavu_starter_folder">ilo</string>
 </resources>

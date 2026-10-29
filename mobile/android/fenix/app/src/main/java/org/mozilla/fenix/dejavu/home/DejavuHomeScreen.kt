@@ -24,6 +24,7 @@ import androidx.compose.runtime.CompositionLocalProvider
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableIntStateOf
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.rememberCoroutineScope
@@ -31,6 +32,7 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.ComposeView
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
 import androidx.navigation.NavDirections
@@ -62,6 +64,7 @@ import org.mozilla.fenix.dejavu.NewTabContainerChoice
 import org.mozilla.fenix.dejavu.actions.ActionPlace
 import org.mozilla.fenix.dejavu.actions.CustomAction
 import org.mozilla.fenix.dejavu.actions.TabAction
+import org.mozilla.fenix.dejavu.browser.ClearData
 import org.mozilla.fenix.dejavu.browser.DejavuSearchOverlay
 import org.mozilla.fenix.dejavu.browser.DejavuSearchStart
 import org.mozilla.fenix.dejavu.browser.SearchBackdrop
@@ -82,6 +85,7 @@ import org.mozilla.fenix.dejavu.settings.resolveSelectionActions
 import org.mozilla.fenix.dejavu.sync.DejavuSync
 import org.mozilla.fenix.dejavu.sync.SyncSourceDialog
 import org.mozilla.fenix.dejavu.ui.LocalPopupTheme
+import org.mozilla.fenix.dejavu.ui.workspacePopupTheme
 import org.mozilla.fenix.dejavu.welcome.Welcome
 import org.mozilla.fenix.dejavu.workspaces.PinPlacement
 import org.mozilla.fenix.dejavu.workspaces.PinSource
@@ -92,6 +96,7 @@ import org.mozilla.fenix.dejavu.workspaces.WorkspaceState
 import org.mozilla.fenix.dejavu.workspaces.WorkspaceTheme
 import org.mozilla.fenix.dejavu.workspaces.WorkspaceWallpaper
 import org.mozilla.fenix.dejavu.workspaces.WorkspaceWallpapers
+import org.mozilla.fenix.settings.deletebrowsingdata.DeleteBrowsingDataOnQuitType
 import org.mozilla.fenix.theme.FirefoxTheme
 
 /**
@@ -124,6 +129,8 @@ fun ComposeView.setDejavuHomeContent(
             val wallpaperStore = remember { fenix.readOnMainThread { WorkspaceWallpapers.get(context) } }
             val scope = rememberCoroutineScope()
             val snackbarHostState = remember { SnackbarHostState() }
+            // Counts the times Clear data deleted data, to look again at what is left to delete.
+            var dataCleared by remember { mutableIntStateOf(0) }
             val interactor = remember {
                 DefaultDejavuHomeInteractor(
                     context = context,
@@ -136,8 +143,10 @@ fun ComposeView.setDejavuHomeContent(
                     scope = scope,
                     snackbar = snackbarHostState,
                     openTab = onOpenTab,
+                    onDataCleared = { dataCleared++ },
                 )
             }
+            val hasDataToClear = rememberHasDataToClear(dataCleared)
 
             val workspaceState by repository.state.collectAsState()
             val wallpapers by wallpaperStore.wallpapers.collectAsState()
@@ -208,6 +217,7 @@ fun ComposeView.setDejavuHomeContent(
                     downloads = downloads,
                     interactor = interactor,
                     searchAtBottom = searchAtBottom,
+                    hasDataToClear = hasDataToClear,
                 )
 
                 if (showsPage) {
@@ -234,23 +244,24 @@ fun ComposeView.setDejavuHomeContent(
                 }
             }
 
-            // A fresh install shows the welcome pages first, then the feature tour.
+            // A fresh install, and an update from a Dejavu without them, shows the welcome pages first, then the tour.
             val updated = remember { context.wasUpdated() }
             val welcomeSeen by settings.welcomeSeen.collectAsState()
-            val welcomeDue = Welcome.isDue(welcomeSeen, updated)
+            val welcomeDue = Welcome.isDue(welcomeSeen, updated, settings.whatsNewSeen)
             LaunchedEffect(Unit) {
-                if (Welcome.isDue(settings.welcomeSeen.value, updated)) {
-                    Welcome.giveFirstLook(context, repository, wallpaperStore)
+                if (Welcome.isDue(settings.welcomeSeen.value, updated, settings.whatsNewSeen)) {
+                    if (!updated) Welcome.giveFirstLook(context, repository, wallpaperStore)
                     Welcome.openAtStart(navController)
                 } else if (!settings.welcomeSeen.value) {
                     settings.setWelcomeSeen(true)
                 }
             }
 
-            val dueChapters = remember { FeatureTour.dueChapters(settings, updated = updated) }
-            var showTour by remember { mutableStateOf(dueChapters.isNotEmpty()) }
+            val dueChapters = remember(welcomeDue) { FeatureTour.dueChapters(settings, updated = updated) }
+            var showTour by remember(dueChapters) { mutableStateOf(dueChapters.isNotEmpty()) }
+            val popupTheme = workspacePopupTheme(workspaceState.activeWorkspaceId)
             if (showTour && !welcomeDue) {
-                CompositionLocalProvider(LocalPopupTheme provides workspaceState.activeWorkspace?.theme) {
+                CompositionLocalProvider(LocalPopupTheme provides popupTheme) {
                     FeatureTourDialog(
                         chapters = dueChapters,
                         onDismiss = {
@@ -264,7 +275,7 @@ fun ComposeView.setDejavuHomeContent(
             // Once Dejavu found what the account syncs from Firefox and Zen, it asks which one workspaces follow.
             val syncStatus by DejavuSync.status.collectAsState()
             if (!showTour && syncStatus.askSource) {
-                CompositionLocalProvider(LocalPopupTheme provides workspaceState.activeWorkspace?.theme) {
+                CompositionLocalProvider(LocalPopupTheme provides popupTheme) {
                     SyncSourceDialog(
                         status = syncStatus,
                         workspaces = workspaceState,
@@ -282,6 +293,24 @@ fun ComposeView.setDejavuHomeContent(
             }
         }
     }
+}
+
+/**
+ * Whether the data chosen for Clear data has anything to delete, see [ClearData.hasData]: looked at again as tabs,
+ * recently closed tabs and downloads come and go, and after Clear data deleted data, which [cleared] counts.
+ */
+@Composable
+private fun rememberHasDataToClear(cleared: Int): Boolean {
+    val context = LocalContext.current
+    val store = components.core.store
+    val chosen = remember(cleared) { ClearData.chosen(context) }
+    val clearedAt = remember(cleared) { DejavuSettings.get(context).clearedDataAt }
+    val tabs by store.observeAsComposableState { it.tabs.size }
+    val closedTabs by store.observeAsComposableState { it.closedTabs.size }
+    val downloads by store.observeAsComposableState { it.downloads.size }
+    var lastVisit by remember { mutableStateOf<Long?>(null) }
+    LaunchedEffect(chosen, cleared, tabs) { lastVisit = ClearData.lastVisit(context) }
+    return ClearData.hasData(chosen, tabs, closedTabs, downloads, lastVisit, clearedAt)
 }
 
 /**
@@ -305,6 +334,7 @@ private class DefaultDejavuHomeInteractor(
     private val openTab: (String) -> Unit,
     private val containerStorage: DejavuContainerStorage,
     private val wallpapers: WorkspaceWallpapers,
+    private val onDataCleared: () -> Unit,
     private val runner: TabActionRunner = TabActionRunner(
         context = context,
         components = components,
@@ -508,6 +538,9 @@ private class DefaultDejavuHomeInteractor(
 
     override fun onMoveEssential(pinId: String, index: Int) =
         repository.moveEssential(pinId, index, settings.essentialsPerContainer.value)
+
+    override fun onClearData(): Set<DeleteBrowsingDataOnQuitType> =
+        ClearData.run(context, showChoices = { ClearData.showChoices(navController) }, onCleared = onDataCleared)
 
     override fun onClearUnpinned(workspaceId: String) {
         val state = repository.state.value

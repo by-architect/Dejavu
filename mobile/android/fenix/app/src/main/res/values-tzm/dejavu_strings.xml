@@ -520,4 +520,10 @@
     <string name="dejavu_welcome_sync_text">Kcem s umiḍan Mozilla akken ad tesdukkleḍ imukan n umahil, iseksal yessersen d wayen ilaqen akked Zen, neɣ iseksal akked Firefox.</string>
     <string name="dejavu_settings_matrix">Mmeslay deg Matrix</string>
     <string name="dejavu_settings_matrix_summary">Seqsi, sumer tamahilt neɣ mmel-d tuccḍa</string>
+    <string name="dejavu_menu_clear_data">Sfeḍ isefka</string>
+    <string name="dejavu_menu_clear_data_and_quit">Sfeḍ isefka, ffeɣ</string>
+    <string name="dejavu_clear_data_button">Taqeffalt «Sfeḍ isefka»</string>
+    <string name="dejavu_clear_data_button_summary">Isefka ad kksen «Sfeḍ isefka» d «Sfeḍ isefka, ffeɣ». Ma teṭṭfeḍ Sfeḍ g ugdil n uxxam, ad ten-yekkes daɣ.</string>
+    <string name="dejavu_clear_data_choose">Sti tazwara ma ad tesfeḍeḍ</string>
+    <string name="dejavu_starter_folder">Imassen</string>
 </resources>

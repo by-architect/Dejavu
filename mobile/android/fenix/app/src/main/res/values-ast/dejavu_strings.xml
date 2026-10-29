@@ -520,4 +520,10 @@
     <string name="dejavu_welcome_sync_text">Anicia sesión con una cuenta Mozilla pa sincronizar espacios de trabayu, llingüetes fixaes y esenciales con Zen, o llingüetes con Firefox.</string>
     <string name="dejavu_settings_matrix">Charra en Matrix</string>
     <string name="dejavu_settings_matrix_summary">Fai una entruga, propón una función o informa d\'un fallu</string>
+    <string name="dejavu_menu_clear_data">Llimpiar los datos</string>
+    <string name="dejavu_menu_clear_data_and_quit">Llimpiar los datos y colar</string>
+    <string name="dejavu_clear_data_button">Botón «Llimpiar los datos»</string>
+    <string name="dejavu_clear_data_button_summary">Lo que desanicien «Llimpiar los datos» y «Llimpiar los datos y colar». Mantener primíu «Llimpiar» na pantalla d\'aniciu tamién lo desanicia.</string>
+    <string name="dejavu_clear_data_choose">Escueyi primero qué llimpiar</string>
+    <string name="dejavu_starter_folder">Ferramientes</string>
 </resources>

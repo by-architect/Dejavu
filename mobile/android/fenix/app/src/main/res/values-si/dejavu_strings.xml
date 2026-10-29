@@ -520,4 +520,10 @@
     <string name="dejavu_welcome_sync_text">අවකාශ, අමුණන ලද පටිති සහ අත්‍යවශ්‍යයන් Zen සමඟ, නැතහොත් පටිති Firefox සමඟ සමමුහුර්ත කිරීමට Mozilla ගිණුමකින් පිවිසෙන්න.</string>
     <string name="dejavu_settings_matrix">Matrix හි කතාබස් කරන්න</string>
     <string name="dejavu_settings_matrix_summary">ප්‍රශ්නයක් අසන්න, විශේෂාංගයක් යෝජනා කරන්න හෝ දෝෂයක් වාර්තා කරන්න</string>
+    <string name="dejavu_menu_clear_data">දත්ත හිස් කරන්න</string>
+    <string name="dejavu_menu_clear_data_and_quit">දත්ත හිස් කර ඉවත් වන්න</string>
+    <string name="dejavu_clear_data_button">“දත්ත හිස් කරන්න” බොත්තම</string>
+    <string name="dejavu_clear_data_button_summary">“දත්ත හිස් කරන්න” සහ “දත්ත හිස් කර ඉවත් වන්න” මගින් මැකෙන දත්ත. මුල් තිරයේ “හිස් කරන්න” ඔබාගෙන සිටීමෙන් ද එම දත්ත මැකේ.</string>
+    <string name="dejavu_clear_data_choose">පළමුව හිස් කළ යුතු දේ තෝරන්න</string>
+    <string name="dejavu_starter_folder">මෙවලම්</string>
 </resources>

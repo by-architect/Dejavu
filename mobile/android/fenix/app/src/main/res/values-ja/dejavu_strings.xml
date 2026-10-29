@@ -512,4 +512,10 @@
     <string name="dejavu_welcome_sync_text">Mozillaアカウントでサインインすると、ワークスペース、ピン留めタブ、よく使うサイトをZenと、タブをFirefoxと同期できます。</string>
     <string name="dejavu_settings_matrix">Matrixでチャット</string>
     <string name="dejavu_settings_matrix_summary">質問や機能の提案、バグの報告ができます</string>
+    <string name="dejavu_menu_clear_data">データを消去</string>
+    <string name="dejavu_menu_clear_data_and_quit">データを消去して終了</string>
+    <string name="dejavu_clear_data_button">「データを消去」ボタン</string>
+    <string name="dejavu_clear_data_button_summary">「データを消去」と「データを消去して終了」で以下の項目が削除されます。ホーム画面で「消去」を長押ししても削除されます。</string>
+    <string name="dejavu_clear_data_choose">まず消去する項目を選んでください</string>
+    <string name="dejavu_starter_folder">ツール</string>
 </resources>

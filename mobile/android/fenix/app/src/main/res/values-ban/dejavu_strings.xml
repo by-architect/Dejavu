@@ -512,4 +512,10 @@
     <string name="dejavu_welcome_sync_text">Sign in nganggon akun Mozilla anggon nyinkronang genah, tab kasemat, lan Penting ajak Zen, wiadin tab ajak Firefox.</string>
     <string name="dejavu_settings_matrix">Ngorta ring Matrix</string>
     <string name="dejavu_settings_matrix_summary">Metakon, usulang fitur, utawi laporang bug</string>
+    <string name="dejavu_menu_clear_data">Bersihang data</string>
+    <string name="dejavu_menu_clear_data_and_quit">Bersihang data tur medal</string>
+    <string name="dejavu_clear_data_button">Tombol “Bersihang data”</string>
+    <string name="dejavu_clear_data_button_summary">Data sane kaapus olih “Bersihang data” lan “Bersihang data tur medal”. Nekan suwé “Bersihang” ring layar utama taler ngapus data punika.</string>
+    <string name="dejavu_clear_data_choose">Pilih dumun data sane jagi kabersihang</string>
+    <string name="dejavu_starter_folder">Piranti</string>
 </resources>

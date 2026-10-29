@@ -76,6 +76,7 @@ import org.mozilla.fenix.dejavu.ui.DejavuButtonStyle
 import org.mozilla.fenix.dejavu.ui.DejavuDialog
 import org.mozilla.fenix.dejavu.ui.DejavuDialogButton
 import org.mozilla.fenix.dejavu.ui.LocalPopupTheme
+import org.mozilla.fenix.dejavu.ui.workspacePopupTheme
 import org.mozilla.fenix.dejavu.workspaces.WorkspaceRepository
 import org.mozilla.fenix.e2e.SystemInsetsPaddedFragment
 import org.mozilla.fenix.ext.requireComponents
@@ -100,7 +101,8 @@ abstract class DejavuComposeFragment(@param:StringRes private val defaultTitle: 
                     // Dialogs and menus take on the look of the workspace shown on the home screen.
                     val repository = remember { workspaceRepository() }
                     val workspaces by repository.state.collectAsState()
-                    CompositionLocalProvider(LocalPopupTheme provides workspaces.activeWorkspace?.theme) {
+                    val popupTheme = workspacePopupTheme(workspaces.activeWorkspaceId)
+                    CompositionLocalProvider(LocalPopupTheme provides popupTheme) {
                         DejavuScreen()
                     }
                 }

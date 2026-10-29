@@ -19,36 +19,64 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.NavController
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.navOptions
+import mozilla.components.browser.icons.IconRequest
 import org.mozilla.fenix.NavGraphDirections
 import org.mozilla.fenix.R
 import org.mozilla.fenix.components.accounts.FenixFxAEntryPoint
+import org.mozilla.fenix.dejavu.features.FeatureTour
+import org.mozilla.fenix.dejavu.settings.DejavuSettings
 import org.mozilla.fenix.dejavu.settings.dejavuSettings
+import org.mozilla.fenix.dejavu.workspaces.StarterWorkspaces
 import org.mozilla.fenix.dejavu.workspaces.WorkspaceRepository
-import org.mozilla.fenix.dejavu.workspaces.WorkspaceTheme
 import org.mozilla.fenix.dejavu.workspaces.WorkspaceWallpapers
+import org.mozilla.fenix.ext.components
 import org.mozilla.fenix.ext.hideToolbar
 import org.mozilla.fenix.theme.FirefoxTheme
 
 /**
  * The welcome pages a fresh install of Dejavu starts with, apart from the feature tour, which follows them: a few
- * choices to set Dejavu up, each kept as soon as it is made. About opens them again.
+ * choices to set Dejavu up, each kept as soon as it is made. An update from a Dejavu without them shows them once, with
+ * the choices made before. About opens them again.
  */
 object Welcome {
+    /** The version of Dejavu the welcome pages came with. */
+    private const val FIRST_VERSION = "3.0"
+
     private var openedAtStart = false
 
-    /** Whether the welcome pages are due: on a fresh install, until they were [seen]. An update never shows them. */
-    fun isDue(seen: Boolean, updated: Boolean): Boolean = !seen && !updated
+    /**
+     * Whether the welcome pages are due, until they were [seen]: on a fresh install, and after an update from a version
+     * older than [FIRST_VERSION]. [whatsNewSeen] is the version whose news the user saw last, see
+     * [DejavuSettings.whatsNewSeen]; versions before 2.0 kept none.
+     */
+    fun isDue(seen: Boolean, updated: Boolean, whatsNewSeen: String?): Boolean =
+        !seen && (!updated || whatsNewSeen == null || FeatureTour.compareVersions(whatsNewSeen, FIRST_VERSION) < 0)
 
     /**
-     * Gives the workspace a fresh Dejavu starts with its first look, the gold wallpaper, while it still has the gold
-     * theme it starts with and no wallpaper. The workspaces are saved first, so it stays with that workspace.
+     * Gives a fresh Dejavu the examples it starts with, see [StarterWorkspaces], and its workspaces their first look:
+     * the wallpapers they start with, while they still have the colors they started with and no wallpaper. The
+     * workspaces are saved first, so the wallpapers stay with them.
      */
     fun giveFirstLook(context: Context, repository: WorkspaceRepository, wallpapers: WorkspaceWallpapers) {
-        val workspace = repository.state.value.workspaces.singleOrNull() ?: return
-        if (workspace.theme != WorkspaceTheme.Gold) return
+        val given = repository.giveStarters(
+            workName = context.getString(R.string.dejavu_container_work),
+            folderName = context.getString(R.string.dejavu_starter_folder),
+        )
+        if (given) loadStarterIcons(context)
+        val looks = StarterWorkspaces.firstWallpapers(repository.state.value)
+        if (looks.isEmpty()) return
         repository.save()
         val screen = context.resources.displayMetrics
-        wallpapers.giveFirstWallpaper(workspace.id, screen.widthPixels, screen.heightPixels)
+        wallpapers.giveFirstWallpapers(looks, screen.widthPixels, screen.heightPixels)
+    }
+
+    /** Fetches the icons of the examples from their sites, so they show before the pages were opened. */
+    private fun loadStarterIcons(context: Context) {
+        val icons = context.components.core.icons
+        (StarterWorkspaces.Essentials + StarterWorkspaces.Tools).forEach { site ->
+            val icon = IconRequest.Resource(url = site.icon, type = IconRequest.Resource.Type.FAVICON)
+            icons.loadIcon(IconRequest(url = site.url, resources = listOf(icon)))
+        }
     }
 
     /**
@@ -118,9 +146,14 @@ class DejavuWelcomeFragment : Fragment() {
         outState.putInt(KEY_PAGE, page)
     }
 
-    /** Leaves the welcome pages, for the account's sign-in when [signIn]. */
+    /**
+     * Leaves the welcome pages, for the account's sign-in when [signIn]. Whoever saw them is not shown what the
+     * versions of Dejavu brought.
+     */
     private fun finish(signIn: Boolean) {
-        dejavuSettings().setWelcomeSeen(true)
+        val settings = dejavuSettings()
+        if (!settings.welcomeSeen.value) FeatureTour.skipReleases(settings)
+        settings.setWelcomeSeen(true)
         val navController = findNavController()
         navController.popBackStack(R.id.dejavu_welcome_graph, true)
         if (signIn) {

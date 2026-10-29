@@ -4,6 +4,7 @@
 
 package org.mozilla.fenix.dejavu.ui
 
+import android.os.StrictMode
 import android.view.Window
 import android.view.WindowManager
 import androidx.annotation.DrawableRes
@@ -41,7 +42,10 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.CompositionLocalProvider
 import androidx.compose.runtime.ReadOnlyComposable
 import androidx.compose.runtime.SideEffect
+import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.compositionLocalOf
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
@@ -53,6 +57,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.Shape
 import androidx.compose.ui.layout.Layout
 import androidx.compose.ui.layout.layoutId
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.platform.LocalView
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.TextStyle
@@ -67,10 +72,12 @@ import androidx.compose.ui.window.DialogWindowProvider
 import org.mozilla.fenix.dejavu.home.drawWorkspaceTheme
 import org.mozilla.fenix.dejavu.home.rememberGrainBrush
 import org.mozilla.fenix.dejavu.workspaces.WorkspaceTheme
+import org.mozilla.fenix.dejavu.workspaces.WorkspaceWallpaper
+import org.mozilla.fenix.dejavu.workspaces.WorkspaceWallpapers
+import org.mozilla.fenix.ext.components
 
 /**
- * Dejavu's look for dialogs and menus: a warm card lit by a little gold from its top corner, like the logo, with a
- * hairline edge. [DejavuTextField] is the text field that goes with it, and `dejavu_styles.xml` gives the dialogs
+ * Dejavu's look for dialogs and menus: a card lit a little from its top corner, with a hairline edge. [DejavuTextField] is the text field that goes with it, and `dejavu_styles.xml` gives the dialogs
  * made of views the same shape, colors and buttons.
  */
 object DejavuPopup {
@@ -88,17 +95,39 @@ object DejavuPopup {
         @Composable @ReadOnlyComposable
         get() = MaterialTheme.colorScheme.onSurface.copy(alpha = EDGE_ALPHA)
 
-    /** The gold light in the top corner of dialogs and menus. */
+    /** The light in the top corner of dialogs and menus. */
     val glowColor: Color
         @Composable @ReadOnlyComposable
         get() = MaterialTheme.colorScheme.primary.copy(alpha = GLOW_ALPHA)
 }
 
 /**
- * The theme of the workspace that dialogs and menus open over, so they take on its colors. Screens that show a
- * workspace provide it; without one, popups keep their plain fill.
+ * The colors of the workspace that dialogs and menus open over, see [popupThemeOf]. Screens that show a workspace
+ * provide them; without them, popups keep their plain fill.
  */
 val LocalPopupTheme = compositionLocalOf<WorkspaceTheme?> { null }
+
+/**
+ * The colors that dialogs, menus and the bars around pages take on over a workspace with [wallpaper]: those of the
+ * wallpaper, or none without one, so they keep the plain light or dark fill. The workspace's own gradient stays on the
+ * home screen.
+ */
+fun popupThemeOf(wallpaper: WorkspaceWallpaper?): WorkspaceTheme? =
+    wallpaper?.colors?.takeIf { it.isNotEmpty() }?.let { WorkspaceTheme(colors = it) }
+
+/** [popupThemeOf] the wallpaper of workspace [workspaceId], or none for no workspace. */
+@Composable
+fun workspacePopupTheme(workspaceId: String?): WorkspaceTheme? {
+    val context = LocalContext.current
+    val store = remember(context) {
+        context.components.strictMode.allowViolation(StrictMode::allowThreadDiskReads) {
+            WorkspaceWallpapers.get(context)
+        }
+    }
+    val wallpapers by store.wallpapers.collectAsState()
+    val wallpaper = workspaceId?.let { wallpapers[it] }
+    return remember(wallpaper) { popupThemeOf(wallpaper) }
+}
 
 /**
  * Paints [DejavuPopup]'s light, which fades out from the top start corner, behind the content, over the colors of

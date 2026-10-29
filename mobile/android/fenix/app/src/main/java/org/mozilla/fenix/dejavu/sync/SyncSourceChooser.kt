@@ -34,6 +34,7 @@ import org.mozilla.fenix.dejavu.ui.DejavuDialog
 import org.mozilla.fenix.dejavu.ui.DejavuDialogButton
 import org.mozilla.fenix.dejavu.ui.DejavuPopup
 import org.mozilla.fenix.dejavu.workspaces.WorkspaceState
+import org.mozilla.fenix.dejavu.workspaces.withoutStarters
 
 /**
  * Asks which browser workspaces sync with, showing what the account has of each. When this device has workspaces or
@@ -141,14 +142,16 @@ internal data class OwnData(
 ) {
     companion object {
         /**
-         * What [state] and the open [tabs] that are not private hold, or `null` when that is only the empty workspace
-         * a fresh Dejavu starts with, named [defaultName], so there is nothing to merge.
+         * What [state] and the open [tabs] that are not private hold, or `null` when that is only the workspaces a
+         * fresh Dejavu starts with, the one named [defaultName] and the examples as they came, so there is nothing to
+         * merge.
          */
         fun of(state: WorkspaceState, tabs: List<TabSessionState>, defaultName: String): OwnData? {
-            val workspaces = state.workspaces.filter { it.device == null }
+            val own = state.withoutStarters()
+            val workspaces = own.workspaces.filter { it.device == null }
             val workspaceIds = workspaces.map { it.id }.toSet()
-            val pins = state.pins.filter { it.essential || it.workspaceId in workspaceIds }
-            val open = tabs.filterNot { state.isDeviceWorkspace(state.workspaceOf(it.id)) }
+            val pins = own.pins.filter { it.essential || it.workspaceId in workspaceIds }
+            val open = tabs.filterNot { own.isDeviceWorkspace(own.workspaceOf(it.id)) }
             val untouched = workspaces.size <= 1 && workspaces.all { it.isLikeNew(defaultName) }
             if (untouched && pins.isEmpty() && open.isEmpty()) return null
             return OwnData(

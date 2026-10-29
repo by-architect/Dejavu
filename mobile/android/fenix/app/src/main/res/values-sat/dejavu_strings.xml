@@ -528,4 +528,10 @@
     <string name="dejavu_welcome_sync_text">Zen ᱥᱟᱶ ᱣᱟᱨᱠᱥᱯᱮᱥ ᱠᱚ, ᱯᱤᱱ ᱴᱮᱵᱽ ᱠᱚ ᱟᱨ ᱮᱥᱮᱱᱥᱤᱭᱟᱞ ᱠᱚ, ᱥᱮ Firefox ᱥᱟᱶ ᱴᱮᱵᱽ ᱠᱚ ᱥᱤᱝᱠ ᱞᱟᱹᱜᱤᱫ Mozilla ᱟᱠᱟᱩᱱᱴ ᱛᱮ ᱥᱟᱭᱤᱱ ᱤᱱ ᱢᱮ ᱾</string>
     <string name="dejavu_settings_matrix">Matrix ᱨᱮ ᱜᱟᱞᱢᱟᱨᱟᱣ</string>
     <string name="dejavu_settings_matrix_summary">ᱠᱩᱠᱞᱤ ᱠᱩᱞᱤ ᱢᱮ, ᱯᱷᱤᱪᱚᱨ ᱥᱩᱡᱷᱟᱹᱣ ᱢᱮ ᱟᱨᱵᱟᱝ ᱵᱟᱜᱽ ᱨᱤᱯᱚᱨᱴ ᱢᱮ</string>
+    <string name="dejavu_menu_clear_data">ᱰᱟᱴᱟ ᱠᱞᱤᱭᱟᱨ ᱢᱮ</string>
+    <string name="dejavu_menu_clear_data_and_quit">ᱰᱟᱴᱟ ᱠᱞᱤᱭᱟᱨ ᱟᱨ ᱵᱟᱹᱜᱤ ᱢᱮ</string>
+    <string name="dejavu_clear_data_button">“ᱰᱟᱴᱟ ᱠᱞᱤᱭᱟᱨ ᱢᱮ” ᱵᱩᱛᱟᱹᱢ</string>
+    <string name="dejavu_clear_data_button_summary">“ᱰᱟᱴᱟ ᱠᱞᱤᱭᱟᱨ ᱢᱮ” ᱟᱨ “ᱰᱟᱴᱟ ᱠᱞᱤᱭᱟᱨ ᱟᱨ ᱵᱟᱹᱜᱤ ᱢᱮ” ᱦᱚᱛᱮᱛᱮ ᱡᱟᱦᱟᱸ ᱢᱮᱴᱟᱣᱚᱜᱼᱟ ᱾ ᱚᱲᱟᱜ ᱥᱠᱨᱤᱱ ᱨᱮ “ᱠᱞᱤᱭᱟᱨ ᱢᱮ” ᱡᱤᱞᱤᱧ ᱚᱛᱟ ᱠᱷᱟᱱ ᱦᱚᱸ ᱱᱚᱶᱟ ᱢᱮᱴᱟᱣᱚᱜᱼᱟ ᱾</string>
+    <string name="dejavu_clear_data_choose">ᱯᱩᱭᱞᱩ ᱪᱮᱫ ᱠᱞᱤᱭᱟᱨ ᱦᱩᱭᱩᱜᱼᱟ ᱵᱟᱪᱷᱟᱣ ᱢᱮ</string>
+    <string name="dejavu_starter_folder">ᱦᱟᱹᱛᱤᱭᱟᱹᱨ ᱠᱚ</string>
 </resources>

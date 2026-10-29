@@ -32,10 +32,18 @@ class WelcomeTest {
             .newInstance(testContext)
 
     @Test
-    fun `the welcome pages are due on a fresh install until they were seen, and never after an update`() {
-        assertTrue(Welcome.isDue(seen = false, updated = false))
-        assertFalse(Welcome.isDue(seen = true, updated = false))
-        assertFalse(Welcome.isDue(seen = false, updated = true))
+    fun `the welcome pages are due on a fresh install and after an update from before 3_0, until they were seen`() {
+        assertTrue(Welcome.isDue(seen = false, updated = false, whatsNewSeen = null))
+        assertFalse(Welcome.isDue(seen = true, updated = false, whatsNewSeen = null))
+        assertTrue(Welcome.isDue(seen = false, updated = true, whatsNewSeen = "2.0"))
+        assertTrue(Welcome.isDue(seen = false, updated = true, whatsNewSeen = null))
+        assertFalse(Welcome.isDue(seen = true, updated = true, whatsNewSeen = "2.0"))
+    }
+
+    @Test
+    fun `an update from 3_0 on never shows the welcome pages`() {
+        assertFalse(Welcome.isDue(seen = false, updated = true, whatsNewSeen = "3.0"))
+        assertFalse(Welcome.isDue(seen = false, updated = true, whatsNewSeen = "3.1"))
     }
 
     @Test
@@ -56,19 +64,31 @@ class WelcomeTest {
     }
 
     @Test
-    fun `a fresh workspace gets the gold wallpaper first, unless it has a wallpaper`() {
+    fun `a fresh install gets Work next to Home, with the gold wallpaper for Home and the aurora for Work`() {
+        val repository = newRepository()
+        val wallpapers = newWallpapers()
+        val home = repository.state.value.workspaces.single()
+
+        Welcome.giveFirstLook(testContext, repository, wallpapers)
+
+        val workspaces = repository.state.value.workspaces
+        assertEquals(home.id, workspaces.first().id)
+        assertEquals(2, workspaces.size)
+        assertEquals(WallpaperArt.GOLD, WallpaperArt.of(waitForWallpaper(wallpapers, home.id)))
+        assertEquals(WallpaperArt.AURORA, WallpaperArt.of(waitForWallpaper(wallpapers, workspaces.last().id)))
+        assertEquals(WorkspaceTheme.Gold, workspaces.first().theme)
+    }
+
+    @Test
+    fun `a workspace that has a wallpaper keeps it`() {
         val repository = newRepository()
         val wallpapers = newWallpapers()
         val workspace = repository.state.value.workspaces.single()
-
-        wallpapers.giveFirstWallpaper(workspace.id, screenWidth = 36, screenHeight = 80)
-
-        assertEquals(WallpaperArt.GOLD, WallpaperArt.of(waitForWallpaper(wallpapers, workspace.id)))
-        assertEquals(WorkspaceTheme.Gold, repository.state.value.workspaces.single().theme)
-
         val mine = WorkspaceWallpaper("mine.jpg")
         wallpapers.set(workspace.id, mine)
-        wallpapers.giveFirstWallpaper(workspace.id, screenWidth = 36, screenHeight = 80)
+
+        wallpapers.giveFirstWallpapers(mapOf(workspace.id to WallpaperArt.GOLD), screenWidth = 36, screenHeight = 80)
+        Thread.sleep(WAIT_STEP_MS * 4)
 
         assertEquals(mine, wallpapers.wallpapers.value[workspace.id])
     }

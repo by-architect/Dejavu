@@ -520,4 +520,10 @@
     <string name="dejavu_welcome_sync_text">Cunnettitevi cù un contu Mozilla per sincrunizà i spazii di travagliu, l\'unghjette fissate è l\'essenziali cù Zen, o l\'unghjette cù Firefox.</string>
     <string name="dejavu_settings_matrix">Chjachjarate nant\'à Matrix</string>
     <string name="dejavu_settings_matrix_summary">Fate una dumanda, prupunite una funzione o signalate un sbagliu</string>
+    <string name="dejavu_menu_clear_data">Squassà i dati</string>
+    <string name="dejavu_menu_clear_data_and_quit">Squassà i dati è esce</string>
+    <string name="dejavu_clear_data_button">Buttone Squassà i dati</string>
+    <string name="dejavu_clear_data_button_summary">Ciò chì squassanu « Squassà i dati » è « Squassà i dati è esce ». Tenendu appughjatu Viotà nant\'à u screnu d\'accolta, si squassa dinù.</string>
+    <string name="dejavu_clear_data_choose">Sceglite prima ciò chì vulete squassà</string>
+    <string name="dejavu_starter_folder">Attrezzi</string>
 </resources>

@@ -123,7 +123,7 @@ fun DejavuAddressBar(store: BrowserToolbarStore) {
     val loading by components.core.store.observeAsComposableState { it.selectedTab?.content?.loading == true }
     val haptic = LocalHapticFeedback.current
     var menuOpen by remember { mutableStateOf(false) }
-    val theme = shownWorkspaceTheme()
+    val theme = shownPopupTheme()
     val actions = barActions(store, sides.layout)
     val search = { origin.startSearch(store, sides.layout) }
 
@@ -192,7 +192,7 @@ private fun DejavuSplitAddressBar(store: BrowserToolbarStore, split: ShownSplit)
     val context = LocalContext.current
     val haptic = LocalHapticFeedback.current
     var menuOpen by remember { mutableStateOf(false) }
-    val theme = shownWorkspaceTheme()
+    val theme = shownPopupTheme()
     val turnTo = stringResource(R.string.dejavu_split_focus)
     val stacked = split.orientation == SplitOrientation.TOP_AND_BOTTOM
     val shown = tabs

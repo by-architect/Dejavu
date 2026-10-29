@@ -520,4 +520,10 @@
     <string name="dejavu_welcome_sync_text">Ish maydonlari, mahkamlangan varaqlar va muhimlarni Zen bilan yoki varaqlarni Firefox bilan sinxronlashtirish uchun Mozilla hisobi bilan kiring.</string>
     <string name="dejavu_settings_matrix">Matrix-da suhbatlashing</string>
     <string name="dejavu_settings_matrix_summary">Savol bering, imkoniyat taklif qiling yoki xato haqida xabar bering</string>
+    <string name="dejavu_menu_clear_data">Ma\'lumotlarni tozalash</string>
+    <string name="dejavu_menu_clear_data_and_quit">Ma\'lumotlarni tozalash va chiqish</string>
+    <string name="dejavu_clear_data_button">“Ma\'lumotlarni tozalash” tugmasi</string>
+    <string name="dejavu_clear_data_button_summary">“Ma\'lumotlarni tozalash” va “Ma\'lumotlarni tozalash va chiqish” o\'chiradigan narsalar. Bosh ekrandagi “Tozalash” tugmasini bosib turish ham ularni o\'chiradi.</string>
+    <string name="dejavu_clear_data_choose">Avval nimani tozalashni tanlang</string>
+    <string name="dejavu_starter_folder">Vositalar</string>
 </resources>

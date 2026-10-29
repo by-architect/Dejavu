@@ -512,4 +512,10 @@
     <string name="dejavu_welcome_sync_text">Đăng nhập bằng tài khoản Mozilla để đồng bộ hóa không gian làm việc, thẻ đã ghim và trang thiết yếu với Zen, hoặc thẻ với Firefox.</string>
     <string name="dejavu_settings_matrix">Trò chuyện trên Matrix</string>
     <string name="dejavu_settings_matrix_summary">Đặt câu hỏi, đề xuất tính năng hoặc báo lỗi</string>
+    <string name="dejavu_menu_clear_data">Xóa dữ liệu</string>
+    <string name="dejavu_menu_clear_data_and_quit">Xóa dữ liệu và thoát</string>
+    <string name="dejavu_clear_data_button">Nút “Xóa dữ liệu”</string>
+    <string name="dejavu_clear_data_button_summary">Những dữ liệu bị xóa khi dùng “Xóa dữ liệu” và “Xóa dữ liệu và thoát”. Nhấn giữ “Xóa hết” trên trang chủ cũng sẽ xóa những dữ liệu này.</string>
+    <string name="dejavu_clear_data_choose">Trước tiên, hãy chọn những gì cần xóa</string>
+    <string name="dejavu_starter_folder">Công cụ</string>
 </resources>

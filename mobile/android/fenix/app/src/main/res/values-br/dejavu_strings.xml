@@ -544,4 +544,10 @@
     <string name="dejavu_welcome_sync_text">Kevreit gant ur gont Mozilla evit goubredañ an egorioù labour, an ivinelloù spilhennet hag an traoù pouezus gant Zen, pe an ivinelloù gant Firefox.</string>
     <string name="dejavu_settings_matrix">Kaozeal war Matrix</string>
     <string name="dejavu_settings_matrix_summary">Savit ur goulenn, kinnigit ur mennozh pe danevellit ur fazi</string>
+    <string name="dejavu_menu_clear_data">Skarzhañ ar roadennoù</string>
+    <string name="dejavu_menu_clear_data_and_quit">Skarzhañ ar roadennoù ha kuitaat</string>
+    <string name="dejavu_clear_data_button">Afell “Skarzhañ ar roadennoù”</string>
+    <string name="dejavu_clear_data_button_summary">Ar pezh a vez dilamet gant “Skarzhañ ar roadennoù” ha “Skarzhañ ar roadennoù ha kuitaat”. Dilamet e vez ivez en ur bouezañ pell war “Skarzhañ” er skramm degemer.</string>
+    <string name="dejavu_clear_data_choose">Dibabit da gentañ ar pezh da skarzhañ</string>
+    <string name="dejavu_starter_folder">Ostilhoù</string>
 </resources>

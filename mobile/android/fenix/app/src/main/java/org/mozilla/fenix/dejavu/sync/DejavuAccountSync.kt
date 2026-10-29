@@ -30,6 +30,7 @@ import mozilla.components.support.ktx.android.content.getColorFromAttr
 import org.mozilla.fenix.R
 import org.mozilla.fenix.dejavu.settings.workspaceRepository
 import org.mozilla.fenix.dejavu.ui.LocalPopupTheme
+import org.mozilla.fenix.dejavu.ui.workspacePopupTheme
 import org.mozilla.fenix.ext.components
 import org.mozilla.fenix.settings.requirePreference
 import org.mozilla.fenix.theme.FirefoxTheme
@@ -127,7 +128,7 @@ class DejavuAccountSync(private val fragment: PreferenceFragmentCompat, private 
                 val workspaces by repository.state.collectAsState()
                 val tabs by context.components.core.store.observeAsComposableState { it.normalTabs }
                 val status by DejavuSync.status.collectAsState()
-                CompositionLocalProvider(LocalPopupTheme provides workspaces.activeWorkspace?.theme) {
+                CompositionLocalProvider(LocalPopupTheme provides workspacePopupTheme(workspaces.activeWorkspaceId)) {
                     SyncSourceDialog(
                         status = status,
                         workspaces = workspaces,

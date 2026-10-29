@@ -536,4 +536,10 @@
     <string name="dejavu_welcome_sync_text">Clàraich a-steach le cunntas Mozilla gus àiteachan-obrach, tabaichean prìnichte is feumalachdan a shioncronachadh le Zen, no tabaichean le Firefox.</string>
     <string name="dejavu_settings_matrix">Cabadaich air Matrix</string>
     <string name="dejavu_settings_matrix_summary">Faighnich ceist, mol gleus no dèan aithris air buga</string>
+    <string name="dejavu_menu_clear_data">Falamhaich an dàta</string>
+    <string name="dejavu_menu_clear_data_and_quit">Falamhaich an dàta agus fàg</string>
+    <string name="dejavu_clear_data_button">Am putan “Falamhaich an dàta”</string>
+    <string name="dejavu_clear_data_button_summary">Na thèid a sguabadh às le “Falamhaich an dàta” agus “Falamhaich an dàta agus fàg”. Ma chumas tu do mheur air “Falamhaich” air an sgrìn-dhachaigh, thèid seo a sguabadh às cuideachd.</string>
+    <string name="dejavu_clear_data_choose">Tagh an toiseach na thèid fhalamhachadh</string>
+    <string name="dejavu_starter_folder">Innealan</string>
 </resources>

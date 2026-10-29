@@ -512,4 +512,10 @@
     <string name="dejavu_welcome_sync_text">ลงชื่อเข้าใช้ด้วยบัญชี Mozilla เพื่อซิงค์พื้นที่ทำงาน แท็บที่ปักหมุด และเว็บที่ใช้บ่อยกับ Zen หรือซิงค์แท็บกับ Firefox</string>
     <string name="dejavu_settings_matrix">แชทบน Matrix</string>
     <string name="dejavu_settings_matrix_summary">ถามคำถาม เสนอแนะคุณลักษณะ หรือรายงานข้อผิดพลาด</string>
+    <string name="dejavu_menu_clear_data">ล้างข้อมูล</string>
+    <string name="dejavu_menu_clear_data_and_quit">ล้างข้อมูลและออก</string>
+    <string name="dejavu_clear_data_button">ปุ่ม “ล้างข้อมูล”</string>
+    <string name="dejavu_clear_data_button_summary">“ล้างข้อมูล” และ “ล้างข้อมูลและออก” จะลบรายการด้านล่าง การแตะ “ล้าง” ค้างไว้ที่หน้าแรกก็จะลบรายการเหล่านี้ด้วย</string>
+    <string name="dejavu_clear_data_choose">เลือกสิ่งที่จะล้างก่อน</string>
+    <string name="dejavu_starter_folder">เครื่องมือ</string>
 </resources>

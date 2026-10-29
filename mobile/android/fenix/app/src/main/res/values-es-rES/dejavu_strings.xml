@@ -528,4 +528,10 @@
     <string name="dejavu_welcome_sync_text">Inicia sesión con una cuenta de Mozilla para sincronizar espacios de trabajo, pestañas fijadas y esenciales con Zen, o pestañas con Firefox.</string>
     <string name="dejavu_settings_matrix">Chatea en Matrix</string>
     <string name="dejavu_settings_matrix_summary">Haz una pregunta, sugiere una función o informa de un error</string>
+    <string name="dejavu_menu_clear_data">Borrar datos</string>
+    <string name="dejavu_menu_clear_data_and_quit">Borrar datos y salir</string>
+    <string name="dejavu_clear_data_button">Botón «Borrar datos»</string>
+    <string name="dejavu_clear_data_button_summary">Lo que eliminan «Borrar datos» y «Borrar datos y salir». Mantener pulsado Borrar en la pantalla de inicio también lo elimina.</string>
+    <string name="dejavu_clear_data_choose">Elige primero qué borrar</string>
+    <string name="dejavu_starter_folder">Herramientas</string>
 </resources>

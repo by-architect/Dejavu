@@ -175,6 +175,8 @@ enum class SplitOrientation(val key: String) {
  * @property openedByPages Open tabs that a page opened by itself, like a pop-up, rather than the user. They stay on
  *   this device and are never sent to a Firefox computer, until the user moves them to a workspace. Local to this
  *   device.
+ * @property starters Ids of the workspaces and pinned items a fresh install started with as examples, see
+ *   [StarterWorkspaces]. Local to this device.
  */
 data class WorkspaceState(
     val workspaces: List<Workspace>,
@@ -186,6 +188,7 @@ data class WorkspaceState(
     val tabSyncIds: Map<String, String> = emptyMap(),
     val pinnedSplits: List<PinnedSplit> = emptyList(),
     val openedByPages: Set<String> = emptySet(),
+    val starters: Set<String> = emptySet(),
 ) {
     val activeIndex: Int
         get() = workspaces.indexOfFirst { it.id == activeWorkspaceId }.coerceAtLeast(0)

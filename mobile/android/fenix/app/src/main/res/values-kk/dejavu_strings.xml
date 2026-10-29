@@ -520,4 +520,10 @@
     <string name="dejavu_welcome_sync_text">Жұмыс кеңістіктерін, бекітілген беттерді және негізгілерді Zen-мен, ал беттерді Firefox-пен синхрондау үшін Mozilla есептік жазбасымен кіріңіз.</string>
     <string name="dejavu_settings_matrix">Matrix-те сөйлесу</string>
     <string name="dejavu_settings_matrix_summary">Сұрақ қойыңыз, мүмкіндік ұсыныңыз немесе қате туралы хабарлаңыз</string>
+    <string name="dejavu_menu_clear_data">Деректерді тазалау</string>
+    <string name="dejavu_menu_clear_data_and_quit">Деректерді тазалап, жұмысты аяқтау</string>
+    <string name="dejavu_clear_data_button">«Деректерді тазалау» батырмасы</string>
+    <string name="dejavu_clear_data_button_summary">«Деректерді тазалау» және «Деректерді тазалап, жұмысты аяқтау» өшіретін деректер. Басты экрандағы «Тазалау» батырмасын басып тұру да осы деректерді өшіреді.</string>
+    <string name="dejavu_clear_data_choose">Алдымен нені тазалау керектігін таңдаңыз</string>
+    <string name="dejavu_starter_folder">Құралдар</string>
 </resources>

@@ -520,4 +520,10 @@
     <string name="dejavu_welcome_sync_text">ورک اسپیسز، پن کردہ ٹیبز اور اہم کو Zen کے ساتھ، یا ٹیبز کو Firefox کے ساتھ ہم وقت کرنے کے لیے Mozilla اکاؤنٹ سے سائن اِن کریں۔</string>
     <string name="dejavu_settings_matrix">Matrix پر چیٹ کریں</string>
     <string name="dejavu_settings_matrix_summary">سوال پوچھیں، کوئی فیچر تجویز کریں یا بگ کی اطلاع دیں</string>
+    <string name="dejavu_menu_clear_data">ڈیٹا صاف کریں</string>
+    <string name="dejavu_menu_clear_data_and_quit">ڈیٹا صاف کر کے بند کریں</string>
+    <string name="dejavu_clear_data_button">”ڈیٹا صاف کریں“ بٹن</string>
+    <string name="dejavu_clear_data_button_summary">جو کچھ ”ڈیٹا صاف کریں“ اور ”ڈیٹا صاف کر کے بند کریں“ مٹاتے ہیں۔ ہوم اسکرین پر ”صاف کریں“ کو دبائے رکھنے سے بھی یہی مٹ جاتا ہے۔</string>
+    <string name="dejavu_clear_data_choose">پہلے منتخب کریں کہ کیا صاف کرنا ہے</string>
+    <string name="dejavu_starter_folder">اوزار</string>
 </resources>

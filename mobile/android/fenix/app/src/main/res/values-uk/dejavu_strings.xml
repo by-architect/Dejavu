@@ -536,4 +536,10 @@
     <string name="dejavu_welcome_sync_text">Увійдіть з обліковим записом Mozilla, щоб синхронізувати робочі простори, закріплені вкладки й обране з Zen або вкладки з Firefox.</string>
     <string name="dejavu_settings_matrix">Чат у Matrix</string>
     <string name="dejavu_settings_matrix_summary">Поставте запитання, запропонуйте функцію або повідомте про помилку</string>
+    <string name="dejavu_menu_clear_data">Очистити дані</string>
+    <string name="dejavu_menu_clear_data_and_quit">Очистити дані й вийти</string>
+    <string name="dejavu_clear_data_button">Кнопка «Очистити дані»</string>
+    <string name="dejavu_clear_data_button_summary">Що видаляють «Очистити дані» та «Очистити дані й вийти». Довге натискання кнопки «Очистити» на головному екрані також видаляє ці дані.</string>
+    <string name="dejavu_clear_data_choose">Спочатку виберіть, що очистити</string>
+    <string name="dejavu_starter_folder">Інструменти</string>
 </resources>

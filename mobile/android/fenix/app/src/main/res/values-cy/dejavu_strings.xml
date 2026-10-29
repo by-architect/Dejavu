@@ -552,4 +552,10 @@
     <string name="dejavu_welcome_sync_text">Mewngofnodwch gyda chyfrif Mozilla i gydweddu gweithleoedd, tabiau wedi’u pinio a hanfodion â Zen, neu dabiau â Firefox.</string>
     <string name="dejavu_settings_matrix">Sgwrsio ar Matrix</string>
     <string name="dejavu_settings_matrix_summary">Gofynnwch gwestiwn, awgrymwch nodwedd neu adroddwch am nam</string>
+    <string name="dejavu_menu_clear_data">Clirio data</string>
+    <string name="dejavu_menu_clear_data_and_quit">Clirio data a gadael</string>
+    <string name="dejavu_clear_data_button">Botwm clirio data</string>
+    <string name="dejavu_clear_data_button_summary">Yr hyn y mae “Clirio data” a “Clirio data a gadael” yn ei ddileu. Mae pwyso a dal y botwm Clirio ar y sgrin cartref yn ei ddileu hefyd.</string>
+    <string name="dejavu_clear_data_choose">Dewiswch beth i\'w glirio yn gyntaf</string>
+    <string name="dejavu_starter_folder">Offer</string>
 </resources>

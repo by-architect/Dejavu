@@ -528,4 +528,10 @@
     <string name="dejavu_welcome_sync_text">Prijavite se Mozilla računom da sinhronizujete radne prostore, prikvačene tabove i Favorite sa Zenom ili tabove sa Firefoxom.</string>
     <string name="dejavu_settings_matrix">Razgovarajte na Matrixu</string>
     <string name="dejavu_settings_matrix_summary">Postavite pitanje, predložite funkciju ili prijavite grešku</string>
+    <string name="dejavu_menu_clear_data">Obriši podatke</string>
+    <string name="dejavu_menu_clear_data_and_quit">Obriši podatke i zatvori</string>
+    <string name="dejavu_clear_data_button">Dugme „Obriši podatke“</string>
+    <string name="dejavu_clear_data_button_summary">Ono što brišu „Obriši podatke“ i „Obriši podatke i zatvori“. To briše i dugi pritisak na dugme Očisti na početnom ekranu.</string>
+    <string name="dejavu_clear_data_choose">Prvo odaberite šta želite obrisati</string>
+    <string name="dejavu_starter_folder">Alati</string>
 </resources>

@@ -536,4 +536,10 @@
     <string name="dejavu_welcome_sync_text">Pśizjaw se z Mozilla-kontom, aby źěłowe rumy, pśipěte rejtariki a nejwažnjejše ze Zen abo rejtariki z Firefox synchronizěrował.</string>
     <string name="dejavu_settings_matrix">Chat pśez Matrix</string>
     <string name="dejavu_settings_matrix_summary">Pšašaj se, naraź funkciju abo daj zmólku k wěsći</string>
+    <string name="dejavu_menu_clear_data">Daty wulašowaś</string>
+    <string name="dejavu_menu_clear_data_and_quit">Daty wulašowaś a skóńcyś</string>
+    <string name="dejavu_clear_data_button">Tłocašk „Daty wulašowaś“</string>
+    <string name="dejavu_clear_data_button_summary">Wubjeŕśo, což „Daty wulašowaś“ a „Daty wulašowaś a skóńcyś“ wulašujotej. To se teke wulašujo, gaž na startowej wobrazowce „Wuprozniś“ dłujko tłocyśo.</string>
+    <string name="dejavu_clear_data_choose">Wubjeŕśo nejpjerwjej, což ma se wulašowaś</string>
+    <string name="dejavu_starter_folder">Rědy</string>
 </resources>

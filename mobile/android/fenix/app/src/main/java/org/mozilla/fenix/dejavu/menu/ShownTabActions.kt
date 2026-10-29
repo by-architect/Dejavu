@@ -22,7 +22,6 @@ import org.mozilla.fenix.R
 import org.mozilla.fenix.components.components
 import org.mozilla.fenix.dejavu.actions.TabAction
 import org.mozilla.fenix.dejavu.browser.closeShownTab
-import org.mozilla.fenix.dejavu.browser.themeOfTab
 import org.mozilla.fenix.dejavu.containers.DejavuContainerStorage
 import org.mozilla.fenix.dejavu.home.ActionTargets
 import org.mozilla.fenix.dejavu.home.DeviceTabActions
@@ -34,6 +33,7 @@ import org.mozilla.fenix.dejavu.home.label
 import org.mozilla.fenix.dejavu.home.titleOf
 import org.mozilla.fenix.dejavu.settings.DejavuSettings
 import org.mozilla.fenix.dejavu.ui.LocalPopupTheme
+import org.mozilla.fenix.dejavu.ui.workspacePopupTheme
 import org.mozilla.fenix.dejavu.workspaces.WorkspaceRepository
 import org.mozilla.fenix.dejavu.workspaces.WorkspaceState
 import org.mozilla.fenix.ext.components as contextComponents
@@ -133,7 +133,7 @@ internal fun ShownTabActionDialog(
         LaunchedEffect(Unit) { onDone() }
         return
     }
-    val theme = if (tab.content.private) null else workspaces.themeOfTab(tab.id)
+    val theme = workspacePopupTheme(if (tab.content.private) null else workspaces.workspaceOf(tab.id))
     CompositionLocalProvider(LocalPopupTheme provides theme) {
         ItemDialogs(
             dialog = dialog,

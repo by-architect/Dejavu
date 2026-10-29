@@ -536,4 +536,10 @@
     <string name="dejavu_welcome_sync_text">Přizjew so z kontom Mozilla, zo by dźěłowe rumy, připjate rajtarki a najwažniše z Zen abo rajtarki z Firefox synchronizował.</string>
     <string name="dejavu_settings_matrix">Chat přez Matrix</string>
     <string name="dejavu_settings_matrix_summary">Praš so, namjetuj funkciju abo zdźěl zmylk</string>
+    <string name="dejavu_menu_clear_data">Daty zhašeć</string>
+    <string name="dejavu_menu_clear_data_and_quit">Daty zhašeć a skónčić</string>
+    <string name="dejavu_clear_data_button">Tłóčatko „Daty zhašeć“</string>
+    <string name="dejavu_clear_data_button_summary">Wubjerće, štož „Daty zhašeć“ a „Daty zhašeć a skónčić“ zhašatej. To so tež zhaša, hdyž na startowej wobrazowce „Wuprózdnić“ dołho tłóčiće.</string>
+    <string name="dejavu_clear_data_choose">Wubjerće najprjedy, štož ma so zhašeć</string>
+    <string name="dejavu_starter_folder">Nastroje</string>
 </resources>

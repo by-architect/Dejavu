@@ -99,6 +99,7 @@ import org.mozilla.fenix.dejavu.actions.TabAction
 import org.mozilla.fenix.dejavu.actions.forSplitWays
 import org.mozilla.fenix.dejavu.actions.icon
 import org.mozilla.fenix.dejavu.actions.label
+import org.mozilla.fenix.dejavu.browser.ClearData
 import org.mozilla.fenix.dejavu.browser.SplitSpace
 import org.mozilla.fenix.dejavu.containers.ContainerColor
 import org.mozilla.fenix.dejavu.containers.ContainerPick
@@ -108,6 +109,7 @@ import org.mozilla.fenix.dejavu.sync.workspaceIconText
 import org.mozilla.fenix.dejavu.ui.LocalPopupTheme
 import org.mozilla.fenix.dejavu.ui.TapIcon
 import org.mozilla.fenix.dejavu.ui.glass
+import org.mozilla.fenix.dejavu.ui.popupThemeOf
 import org.mozilla.fenix.dejavu.ui.rememberIconTaps
 import org.mozilla.fenix.dejavu.workspaces.PinnedItem
 import org.mozilla.fenix.dejavu.workspaces.WallpaperArt
@@ -115,6 +117,7 @@ import org.mozilla.fenix.dejavu.workspaces.Workspace
 import org.mozilla.fenix.dejavu.workspaces.WorkspaceState
 import org.mozilla.fenix.dejavu.workspaces.WorkspaceTheme
 import org.mozilla.fenix.dejavu.workspaces.WorkspaceWallpaper
+import org.mozilla.fenix.settings.deletebrowsingdata.DeleteBrowsingDataOnQuitType
 
 /**
  * User actions on the Dejavu home screen that leave the screen's own UI state.
@@ -172,6 +175,12 @@ interface DejavuHomeInteractor : TabEditor {
 
     /** Closes the unpinned tabs of [workspaceId], with a way to undo. */
     fun onClearUnpinned(workspaceId: String)
+
+    /**
+     * Deletes the data chosen for Clear data, see [ClearData], or opens its settings when nothing is chosen. Returns
+     * the kinds of data being deleted.
+     */
+    fun onClearData(): Set<DeleteBrowsingDataOnQuitType>
     fun onToggleFolder(folderId: String)
     fun onSearchClick()
 
@@ -201,6 +210,7 @@ interface DejavuHomeInteractor : TabEditor {
  * link to open. [wallpapers] are the pictures workspaces show under their theme, by workspace id. The search bar, with
  * the account and settings buttons, shows on top and the workspace bar at the bottom, or the other way round when
  * [searchAtBottom]; selecting keeps its bars where they are, the selection on top and its actions at the bottom.
+ * [hasDataToClear] tells whether the data chosen for Clear data has anything to delete, which shows the Clear button.
  */
 @Suppress("LongMethod", "LongParameterList", "CognitiveComplexMethod", "CyclomaticComplexMethod")
 @Composable
@@ -222,6 +232,7 @@ fun DejavuHome(
     interactor: DejavuHomeInteractor,
     modifier: Modifier = Modifier,
     searchAtBottom: Boolean = false,
+    hasDataToClear: Boolean = false,
 ) {
     // The private workspace is an extra last page, there while private tabs are open.
     val privateIndex = state.workspaces.size.takeIf { privateTabs.isNotEmpty() }
@@ -238,6 +249,7 @@ fun DejavuHome(
     val dragStack = remember { DragStackState(scope) }
     var pagesWidth by remember { mutableIntStateOf(0) }
     var revealTabId by remember { mutableStateOf<String?>(null) }
+    val pour = remember { DataPour() }
     val onPrivatePage = privateIndex != null && pagerState.currentPage == privateIndex
     // While any of the private workspace shows, even halfway through a swipe.
     val privatePageShown by remember(privateIndex) {
@@ -265,6 +277,10 @@ fun DejavuHome(
 
     fun wallpaperAt(page: Int): WorkspaceWallpaper? =
         if (page == privateIndex) null else state.workspaces.getOrNull(page)?.let { wallpapers[it.id] }
+
+    // Private browsing keeps its own colors.
+    fun popupThemeAt(page: Int): WorkspaceTheme? =
+        if (page == privateIndex) privateWorkspaceTheme else popupThemeOf(wallpaperAt(page))
 
     // A wallpaper takes the place of its workspace's gradient, whose colors were taken from it.
     fun gradientAt(page: Int): WorkspaceTheme? = themeAt(page).takeIf { wallpaperAt(page) == null }
@@ -455,6 +471,18 @@ fun DejavuHome(
         selection = null
     }
 
+    // The data Clear data deletes pours out of History, for the pages and what they leave behind, and Downloads.
+    fun clearData() {
+        val types = interactor.onClearData()
+        val buttons = listOfNotNull(
+            PageGenie.Button.HISTORY.takeIf {
+                types.any { it == DeleteBrowsingDataOnQuitType.HISTORY || it in ClearData.SiteData }
+            },
+            PageGenie.Button.DOWNLOADS.takeIf { DeleteBrowsingDataOnQuitType.DOWNLOADS in types },
+        )
+        if (buttons.isNotEmpty()) scope.launch { pour.play(buttons) }
+    }
+
     fun onPinClick(pin: PinnedItem) {
         val current = selection
         if (current != null) {
@@ -464,8 +492,8 @@ fun DejavuHome(
         }
     }
 
-    // Dialogs and menus take on the look of the workspace they open over.
-    CompositionLocalProvider(LocalPopupTheme provides themeAt(pagerState.currentPage)) {
+    // Dialogs and menus take on the colors of the wallpaper of the workspace they open over.
+    CompositionLocalProvider(LocalPopupTheme provides popupThemeAt(pagerState.currentPage)) {
         // The wallpapers and the theme are drawn behind the system bars too, with the content kept clear of them.
         Box(modifier = modifier.fillMaxSize().background(surface)) {
             if (wallpapers.isNotEmpty()) WallpaperLayers(pagerState, ::wallpaperAt)
@@ -650,6 +678,7 @@ fun DejavuHome(
                                 onNewPrivateTab = newPrivateTab,
                                 onManageContainers = interactor::onManageContainers,
                                 onClearUnpinned = { interactor.onClearUnpinned(workspace.id) },
+                                onClearData = ::clearData,
                                 onReopenClosedTab = { revealTabId = interactor.onReopenClosedTab() },
                                 onOpenClipboard = { interactor.onOpenClipboardLink(workspace.id) },
                                 onRevealed = { revealTabId = null },
@@ -661,6 +690,8 @@ fun DejavuHome(
                             hasClipboardLink = hasClipboardLink,
                             revealTabId = revealTabId,
                             openTabIds = openTabIds,
+                            hasDataToClear = hasDataToClear,
+                            dataPour = pour.takeIf { page == pagerState.currentPage },
                         )
                     }
 
@@ -698,6 +729,7 @@ fun DejavuHome(
                     )
                 }
             }
+            DataPourOverlay(pour, Modifier.fillMaxSize())
         }
 
         dialog?.let { current ->

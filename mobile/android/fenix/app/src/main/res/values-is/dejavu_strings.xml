@@ -520,4 +520,10 @@
     <string name="dejavu_welcome_sync_text">Skráðu þig inn með Mozilla reikningi til að samstilla vinnusvæði, festa flipa og eftirlæti við Zen, eða flipa við Firefox.</string>
     <string name="dejavu_settings_matrix">Spjalla á Matrix</string>
     <string name="dejavu_settings_matrix_summary">Spurðu spurningar, stingdu upp á eiginleika eða tilkynntu villu</string>
+    <string name="dejavu_menu_clear_data">Hreinsa gögn</string>
+    <string name="dejavu_menu_clear_data_and_quit">Hreinsa gögn og hætta</string>
+    <string name="dejavu_clear_data_button">Hnappur til að hreinsa gögn</string>
+    <string name="dejavu_clear_data_button_summary">Það sem „Hreinsa gögn“ og „Hreinsa gögn og hætta“ eyða. Að ýta lengi á hnappinn Hreinsa á heimaskjánum eyðir því líka.</string>
+    <string name="dejavu_clear_data_choose">Veldu fyrst hvað á að hreinsa</string>
+    <string name="dejavu_starter_folder">Verkfæri</string>
 </resources>

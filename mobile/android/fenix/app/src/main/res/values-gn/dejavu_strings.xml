@@ -520,4 +520,10 @@
     <string name="dejavu_welcome_sync_text">Eike peteĩ kuenta Mozilla-gua reheve esincroniza hag̃ua tembiapo renda, tendayke mboguapypyre ha iporãvéva Zen ndive, térã tendayke Firefox ndive.</string>
     <string name="dejavu_settings_matrix">Eñomongeta Matrix-pe</string>
     <string name="dejavu_settings_matrix_summary">Eporandu, eikuave’ẽ peteĩ mba’e pyahu térã emomarandu peteĩ jejavy</string>
+    <string name="dejavu_menu_clear_data">Emboguete mba\'ekuaarã</string>
+    <string name="dejavu_menu_clear_data_and_quit">Emboguete mba\'ekuaarã ha esẽ</string>
+    <string name="dejavu_clear_data_button">Votõ Emboguete mba\'ekuaarã</string>
+    <string name="dejavu_clear_data_button_summary">Umi mba\'e “Emboguete mba\'ekuaarã” ha “Emboguete mba\'ekuaarã ha esẽ” omboguetéva. Ejopy are Mboty mba\'erechaha ñepyrũme ha oñemboguete avei.</string>
+    <string name="dejavu_clear_data_choose">Eiporavo raẽ mba\'épa emboguetéta</string>
+    <string name="dejavu_starter_folder">Tembiporu</string>
 </resources>

@@ -520,4 +520,10 @@
     <string name="dejavu_welcome_sync_text">بە هەژمارێکی Mozilla بچۆ ژوورەوە بۆ هاوکاتکردنی فەزاکان، بازدەرە چەسپاوەکان و ماڵپەڕە گرنگەکان لەگەڵ Zen، یان بازدەرەکان لەگەڵ Firefox.</string>
     <string name="dejavu_settings_matrix">لە Matrix گفتوگۆ بکە</string>
     <string name="dejavu_settings_matrix_summary">پرسیارێک بکە، تایبەتمەندییەک پێشنیار بکە یان هەڵەیەک ڕاپۆرت بکە</string>
+    <string name="dejavu_menu_clear_data">خاوێنکردنەوەی زانیاری</string>
+    <string name="dejavu_menu_clear_data_and_quit">خاوێنکردنەوەی زانیاری و دەرچوون</string>
+    <string name="dejavu_clear_data_button">دوگمەی «خاوێنکردنەوەی زانیاری»</string>
+    <string name="dejavu_clear_data_button_summary">ئەوەی «خاوێنکردنەوەی زانیاری» و «خاوێنکردنەوەی زانیاری و دەرچوون» دەیسڕنەوە. پەنجە ڕاگرتن لەسەر «خاوێنکردنەوە» لە شاشەی سەرەکی هەمان شت دەسڕێتەوە.</string>
+    <string name="dejavu_clear_data_choose">سەرەتا هەڵبژێرە چی خاوێن بکرێتەوە</string>
+    <string name="dejavu_starter_folder">ئامرازەکان</string>
 </resources>

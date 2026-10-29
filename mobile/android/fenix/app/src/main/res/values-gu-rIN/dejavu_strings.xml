@@ -553,4 +553,10 @@
     <string name="dejavu_welcome_sync_text">Zen સાથે વર્કસ્પેસ, પિન કરેલી ટૅબ્સ અને એસેન્શિયલ્સ, અથવા Firefox સાથે ટૅબ્સ સમન્વયિત કરવા માટે Mozilla એકાઉન્ટથી સાઇન ઇન કરો.</string>
     <string name="dejavu_settings_matrix">Matrix પર ચૅટ કરો</string>
     <string name="dejavu_settings_matrix_summary">પ્રશ્ન પૂછો, સુવિધા સૂચવો અથવા ભૂલની જાણ કરો</string>
+    <string name="dejavu_menu_clear_data">ડેટા સાફ કરો</string>
+    <string name="dejavu_menu_clear_data_and_quit">ડેટા સાફ કરો અને છોડો</string>
+    <string name="dejavu_clear_data_button">“ડેટા સાફ કરો” બટન</string>
+    <string name="dejavu_clear_data_button_summary">“ડેટા સાફ કરો” અને “ડેટા સાફ કરો અને છોડો” દ્વારા કાઢી નાખવામાં આવતો ડેટા. હોમ સ્ક્રીન પર “સાફ કરો” દબાવી રાખવાથી પણ તે કાઢી નાખવામાં આવે છે.</string>
+    <string name="dejavu_clear_data_choose">પહેલાં પસંદ કરો કે શું સાફ કરવું</string>
+    <string name="dejavu_starter_folder">સાધનો</string>
 </resources>
