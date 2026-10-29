@@ -852,7 +852,8 @@ private fun SectionDivider(
         verticalAlignment = Alignment.CenterVertically,
         modifier = modifier.fillMaxWidth().height(44.dp).padding(start = 12.dp),
     ) {
-        HorizontalDivider(modifier = Modifier.weight(1f), color = MaterialTheme.colorScheme.outlineVariant)
+        // The line has the color of New Tab below it.
+        HorizontalDivider(modifier = Modifier.weight(1f), color = MaterialTheme.colorScheme.onSurfaceVariant)
         if (showClear) {
             TextButton(
                 onClick = onClear,

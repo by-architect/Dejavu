@@ -440,8 +440,6 @@
     <string name="dejavu_workspace_theme_color">Rub\'onil</string>
     <string name="dejavu_workspace_wallpaper">Rupam ruwäch</string>
     <string name="dejavu_workspace_wallpaper_hint">Ri wachib\'äl nikanäj pa re oyonib\'äl re\' chuqa\' nik\'ut pa ri jay ruxaq. Ri taq rub\'onil nikib\'än ri rub\'anikil ri nijunamirisäx rik\'in Zen.</string>
-    <string name="dejavu_workspace_wallpaper_choose">Tacha\' jun wachib\'äl</string>
-    <string name="dejavu_workspace_wallpaper_change">Tijal</string>
     <string name="dejavu_workspace_wallpaper_failed">Man xjaq ta re wachib\'äl re\'.</string>
     <string name="dejavu_workspace_wallpaper_colors">Taq b\'onil ri yejunamirisäx rik\'in Zen</string>
     <string name="dejavu_workspace_wallpaper_hint_local">Ri wachib\'äl nikanäj pa re oyonib\'äl re\' chuqa\' nik\'ut pa ri jay ruxaq.</string>
@@ -476,7 +474,7 @@
     <string name="dejavu_settings_autoclose_tabs">Ketz\'apïx kiyon ri taq ruwi\'</string>
     <string name="dejavu_settings_tabs_workspaces">Taq ruwi\', taq samajib\'äl chuqa\' taq k\'olib\'äl</string>
     <string name="dejavu_settings_tabs_workspaces_summary">Ruyonil tz\'apinïk, warinäq taq ruwi\', taq k\'olib\'äl, ruxaq tikirib\'äl chuqa\' taq k\'amab\'äl</string>
-    <string name="dejavu_settings_customize_summary">Wachinel, b\'anob\'äl richin taq ruwi\', menú, taq kajtz\'ik, ewan taq tzij chuqa\' ch\'ab\'äl</string>
+    <string name="dejavu_settings_customize_summary">Wachinel, b\'anob\'äl richin taq ruwi\', menú chuqa\' taq kajtz\'ik</string>
     <string name="dejavu_settings_bars_2">Taq kajtz\'ik</string>
     <string name="dejavu_settings_bars_summary">Ruxaq ajk\'amaya\'l, ruxaq tikirib\'äl, tz\'aqät ruwa, rusamajib\'al ruwi\' chuqa\' b\'anoj paläj</string>
     <string name="dejavu_settings_web_page">Ruxaq ajk\'amaya\'l</string>
@@ -520,4 +518,6 @@
     <string name="dejavu_welcome_default_done">Wakami Dejavu ri nab\'ey awokik\'amaya\'l.</string>
     <string name="dejavu_welcome_sync_title">Ri taq asamajib\'äl pa ronojel taq awokisaxel</string>
     <string name="dejavu_welcome_sync_text">Tatok pa jun Rukwenta Mozilla richin najunamirisaj taq samajib\'äl, ximon taq ruwi\' chuqa\' taq rajawaxel rik\'in Zen, o taq ruwi\' rik\'in Firefox.</string>
+    <string name="dejavu_settings_matrix">Katzijon pa Matrix</string>
+    <string name="dejavu_settings_matrix_summary">Tab\'ana\' jun k\'utuj, tachilab\'ej jun samaj o taya\' rutzijol jun sachoj</string>
 </resources>

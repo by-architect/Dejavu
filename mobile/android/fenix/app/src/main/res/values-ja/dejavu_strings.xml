@@ -432,8 +432,6 @@
     <string name="dejavu_workspace_theme_color">色</string>
     <string name="dejavu_workspace_wallpaper">壁紙</string>
     <string name="dejavu_workspace_wallpaper_hint">画像はこのスマートフォンだけに保存され、ホーム画面に表示されます。画像の色が、Zenと同期されるテーマになります。</string>
-    <string name="dejavu_workspace_wallpaper_choose">画像を選択</string>
-    <string name="dejavu_workspace_wallpaper_change">変更</string>
     <string name="dejavu_workspace_wallpaper_failed">この画像を開けませんでした。</string>
     <string name="dejavu_workspace_wallpaper_colors">Zenと同期される色</string>
     <string name="dejavu_workspace_wallpaper_hint_local">画像はこのスマートフォンだけに保存され、ホーム画面に表示されます。</string>
@@ -468,7 +466,7 @@
     <string name="dejavu_settings_autoclose_tabs">タブを自動的に閉じる</string>
     <string name="dejavu_settings_tabs_workspaces">タブ、ワークスペース、コンテナー</string>
     <string name="dejavu_settings_tabs_workspaces_summary">タブの閉じ方とスリープ、コンテナー、ホームページ、リンク</string>
-    <string name="dejavu_settings_customize_summary">テーマ、タブの操作、メニュー、バー、パスワード、言語</string>
+    <string name="dejavu_settings_customize_summary">テーマ、タブの操作、メニュー、バー</string>
     <string name="dejavu_settings_bars_2">バー</string>
     <string name="dejavu_settings_bars_summary">ウェブページ、ホームページ、全画面表示、タブバー、ジェスチャー</string>
     <string name="dejavu_settings_web_page">ウェブページ</string>
@@ -512,4 +510,6 @@
     <string name="dejavu_welcome_default_done">Dejavuは既定のブラウザーです。</string>
     <string name="dejavu_welcome_sync_title">すべての端末でワークスペースを利用</string>
     <string name="dejavu_welcome_sync_text">Mozillaアカウントでサインインすると、ワークスペース、ピン留めタブ、よく使うサイトをZenと、タブをFirefoxと同期できます。</string>
+    <string name="dejavu_settings_matrix">Matrixでチャット</string>
+    <string name="dejavu_settings_matrix_summary">質問や機能の提案、バグの報告ができます</string>
 </resources>

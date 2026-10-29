@@ -464,8 +464,6 @@
     <string name="dejavu_workspace_theme_color">Dath</string>
     <string name="dejavu_workspace_wallpaper">Cúlbhrat</string>
     <string name="dejavu_workspace_wallpaper_hint">Fanann an pictiúr ar an bhfón seo agus taispeántar ar an leathanach baile é. Déantar an téama a shioncronaítear le Zen as a dhathanna.</string>
-    <string name="dejavu_workspace_wallpaper_choose">Roghnaigh pictiúr</string>
-    <string name="dejavu_workspace_wallpaper_change">Athraigh</string>
     <string name="dejavu_workspace_wallpaper_failed">Níorbh fhéidir an pictiúr seo a oscailt.</string>
     <string name="dejavu_workspace_wallpaper_colors">Dathanna a shioncronaítear le Zen</string>
     <string name="dejavu_workspace_wallpaper_hint_local">Fanann an pictiúr ar an bhfón seo agus taispeántar ar an leathanach baile é.</string>
@@ -500,7 +498,7 @@
     <string name="dejavu_settings_autoclose_tabs">Dún cluaisíní go huathoibríoch</string>
     <string name="dejavu_settings_tabs_workspaces">Cluaisíní, spásanna oibre agus coimeádáin</string>
     <string name="dejavu_settings_tabs_workspaces_summary">Dúnadh agus codladh cluaisíní, coimeádáin, leathanach baile agus naisc</string>
-    <string name="dejavu_settings_customize_summary">Téama, gníomhartha cluaisíní, roghchlár, barraí, focail fhaire agus teanga</string>
+    <string name="dejavu_settings_customize_summary">Téama, gníomhartha cluaisíní, roghchlár agus barraí</string>
     <string name="dejavu_settings_bars_2">Barraí</string>
     <string name="dejavu_settings_bars_summary">Leathanach Gréasáin, leathanach baile, lánscáileán, barra cluaisíní agus gothaí</string>
     <string name="dejavu_settings_web_page">Leathanach Gréasáin</string>
@@ -544,4 +542,6 @@
     <string name="dejavu_welcome_default_done">Is é Dejavu do bhrabhsálaí réamhshocraithe.</string>
     <string name="dejavu_welcome_sync_title">Do spásanna oibre ar gach gléas</string>
     <string name="dejavu_welcome_sync_text">Sínigh isteach le cuntas Mozilla chun spásanna oibre, cluaisíní greamaithe agus riachtanais a shioncronú le Zen, nó cluaisíní le Firefox.</string>
+    <string name="dejavu_settings_matrix">Comhrá ar Matrix</string>
+    <string name="dejavu_settings_matrix_summary">Cuir ceist, mol gné nó tuairiscigh fabht</string>
 </resources>

@@ -440,8 +440,6 @@
     <string name="dejavu_workspace_theme_color">Аԥштәы</string>
     <string name="dejavu_workspace_wallpaper">Аҭӡамц</string>
     <string name="dejavu_workspace_wallpaper_hint">Асахьа ари ателефон аҟны иаанхоит, насгьы ахатә даҟьаҿы иаадырԥшуеит. Асахьа аԥштәқәа Zen ала асинхронизациа змоу атема иҟалоит.</string>
-    <string name="dejavu_workspace_wallpaper_choose">Асахьа алхра</string>
-    <string name="dejavu_workspace_wallpaper_change">Аԥсахра</string>
     <string name="dejavu_workspace_wallpaper_failed">Ари асахьа аартра алымшеит.</string>
     <string name="dejavu_workspace_wallpaper_colors">Zen ала асинхронизациа змоу аԥштәқәа</string>
     <string name="dejavu_workspace_wallpaper_hint_local">Асахьа ари ателефон аҟны иаанхоит, насгьы ахатә даҟьаҿы иаадырԥшуеит.</string>
@@ -476,7 +474,7 @@
     <string name="dejavu_settings_autoclose_tabs">Абларҭақәа автоматла аркра</string>
     <string name="dejavu_settings_tabs_workspaces">Абларҭақәеи аҭыԥқәеи аконтейнерқәеи</string>
     <string name="dejavu_settings_tabs_workspaces_summary">Абларҭақәа ркра, ицәо абларҭақәа, аконтейнерқәа, ахатә даҟьа, насгьы алинкқәа</string>
-    <string name="dejavu_settings_customize_summary">Амаҭәар, абларҭа аҟаҵарақәа, аменю, апанельқәа, амаӡажәақәа, насгьы абызшәа</string>
+    <string name="dejavu_settings_customize_summary">Амаҭәар, абларҭа аҟаҵарақәа, аменю, насгьы апанельқәа</string>
     <string name="dejavu_settings_bars_2">Апанельқәа</string>
     <string name="dejavu_settings_bars_summary">Авеб-даҟьа, ахатә даҟьа, аекран зегьы, абларҭақәа рпанель, насгьы анапқәа</string>
     <string name="dejavu_settings_web_page">Авеб-даҟьа</string>
@@ -520,4 +518,6 @@
     <string name="dejavu_welcome_default_done">Dejavu шәбраузер хадоуп.</string>
     <string name="dejavu_welcome_sync_title">Шәыҭыԥқәа аиқәыршәага цыԥхьаӡа аҟны</string>
     <string name="dejavu_welcome_sync_text">Аҭыԥқәа, ификсациатә абларҭақәа, иҵакыу сайтқәа Zen ала, ма абларҭақәа Firefox ала рсинхронизациа азы, Mozilla аккаунт ала шәыҭал.</string>
+    <string name="dejavu_settings_matrix">Matrix аҟны аицәажәара</string>
+    <string name="dejavu_settings_matrix_summary">Азҵаарақәа, ажәалагалақәа, насгьы агхақәа</string>
 </resources>

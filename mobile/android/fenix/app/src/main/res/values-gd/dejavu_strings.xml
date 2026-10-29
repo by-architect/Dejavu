@@ -456,8 +456,6 @@
     <string name="dejavu_workspace_theme_color">Dath</string>
     <string name="dejavu_workspace_wallpaper">Pàipear-balla</string>
     <string name="dejavu_workspace_wallpaper_hint">Fanaidh an dealbh air an fhòn seo agus nochdaidh e air an duilleag dachaigh. Bidh na dathan aige nan sgeama a thèid a shioncronachadh le Zen.</string>
-    <string name="dejavu_workspace_wallpaper_choose">Tagh dealbh</string>
-    <string name="dejavu_workspace_wallpaper_change">Atharraich</string>
     <string name="dejavu_workspace_wallpaper_failed">Cha b\' urrainn dhuinn an dealbh seo fhosgladh.</string>
     <string name="dejavu_workspace_wallpaper_colors">Dathan a thèid a shioncronachadh le Zen</string>
     <string name="dejavu_workspace_wallpaper_hint_local">Fanaidh an dealbh air an fhòn seo agus nochdaidh e air an duilleag dachaigh.</string>
@@ -492,7 +490,7 @@
     <string name="dejavu_settings_autoclose_tabs">Dùin tabaichean gu fèin-obrachail</string>
     <string name="dejavu_settings_tabs_workspaces">Tabaichean, àiteachan-obrach agus soithichean</string>
     <string name="dejavu_settings_tabs_workspaces_summary">Dùnadh is cadal nan tabaichean, soithichean, duilleag-dhachaigh agus ceanglaichean</string>
-    <string name="dejavu_settings_customize_summary">Ùrlar, gnìomhan nan tabaichean, clàr-taice, bàraichean, faclan-faire agus cànan</string>
+    <string name="dejavu_settings_customize_summary">Ùrlar, gnìomhan nan tabaichean, clàr-taice agus bàraichean</string>
     <string name="dejavu_settings_bars_2">Bàraichean</string>
     <string name="dejavu_settings_bars_summary">Duilleag-lìn, duilleag-dhachaigh, làn-sgrìn, bàr nan tabaichean agus gluasadan</string>
     <string name="dejavu_settings_web_page">Duilleag-lìn</string>
@@ -536,4 +534,6 @@
     <string name="dejavu_welcome_default_done">\'S e Dejavu am brabhsair bunaiteach agad.</string>
     <string name="dejavu_welcome_sync_title">Na h-àiteachan-obrach agad air gach uidheam</string>
     <string name="dejavu_welcome_sync_text">Clàraich a-steach le cunntas Mozilla gus àiteachan-obrach, tabaichean prìnichte is feumalachdan a shioncronachadh le Zen, no tabaichean le Firefox.</string>
+    <string name="dejavu_settings_matrix">Cabadaich air Matrix</string>
+    <string name="dejavu_settings_matrix_summary">Faighnich ceist, mol gleus no dèan aithris air buga</string>
 </resources>

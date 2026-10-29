@@ -448,8 +448,6 @@
     <string name="dejavu_workspace_theme_color">Culoare</string>
     <string name="dejavu_workspace_wallpaper">Imagine de fundal</string>
     <string name="dejavu_workspace_wallpaper_hint">Imaginea rămâne pe acest telefon și apare pe pagina de start. Culorile ei devin tema care se sincronizează cu Zen.</string>
-    <string name="dejavu_workspace_wallpaper_choose">Alege o imagine</string>
-    <string name="dejavu_workspace_wallpaper_change">Schimbă</string>
     <string name="dejavu_workspace_wallpaper_failed">Această imagine nu a putut fi deschisă.</string>
     <string name="dejavu_workspace_wallpaper_colors">Culori care se sincronizează cu Zen</string>
     <string name="dejavu_workspace_wallpaper_hint_local">Imaginea rămâne pe acest telefon și apare pe pagina de start.</string>
@@ -484,7 +482,7 @@
     <string name="dejavu_settings_autoclose_tabs">Închide automat filele</string>
     <string name="dejavu_settings_tabs_workspaces">File, spații de lucru și containere</string>
     <string name="dejavu_settings_tabs_workspaces_summary">Închiderea și hibernarea filelor, containere, pagină de start și linkuri</string>
-    <string name="dejavu_settings_customize_summary">Temă, acțiuni pentru file, meniu, bare, parole și limbă</string>
+    <string name="dejavu_settings_customize_summary">Temă, acțiuni pentru file, meniu și bare</string>
     <string name="dejavu_settings_bars_2">Bare</string>
     <string name="dejavu_settings_bars_summary">Pagină web, pagină de start, ecran complet, bară de file și gesturi</string>
     <string name="dejavu_settings_web_page">Pagină web</string>
@@ -528,4 +526,6 @@
     <string name="dejavu_welcome_default_done">Dejavu este browserul tău implicit.</string>
     <string name="dejavu_welcome_sync_title">Spațiile tale de lucru pe orice dispozitiv</string>
     <string name="dejavu_welcome_sync_text">Conectează-te cu un cont Mozilla pentru a sincroniza spațiile de lucru, filele fixate și favoritele cu Zen sau filele cu Firefox.</string>
+    <string name="dejavu_settings_matrix">Discută pe Matrix</string>
+    <string name="dejavu_settings_matrix_summary">Pune o întrebare, sugerează o funcționalitate sau raportează o eroare</string>
 </resources>

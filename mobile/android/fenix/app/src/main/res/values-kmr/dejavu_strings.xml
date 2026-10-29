@@ -440,8 +440,6 @@
     <string name="dejavu_workspace_theme_color">Reng</string>
     <string name="dejavu_workspace_wallpaper">Wêneyê dîwêr</string>
     <string name="dejavu_workspace_wallpaper_hint">Wêne li ser vê telefonê dimîne û li rûpela malê tê nîşandan. Rengên wî dibin dirbê ku bi Zen re tê hevdemkirin.</string>
-    <string name="dejavu_workspace_wallpaper_choose">Wêneyekî hilbijêre</string>
-    <string name="dejavu_workspace_wallpaper_change">Biguherîne</string>
     <string name="dejavu_workspace_wallpaper_failed">Ev wêne nehat vekirin.</string>
     <string name="dejavu_workspace_wallpaper_colors">Rengên ku bi Zen re tên hevdemkirin</string>
     <string name="dejavu_workspace_wallpaper_hint_local">Wêne li ser vê telefonê dimîne û li rûpela malê tê nîşandan.</string>
@@ -476,7 +474,7 @@
     <string name="dejavu_settings_autoclose_tabs">Hilpekînan xweber bigire</string>
     <string name="dejavu_settings_tabs_workspaces">Hilpekîn, qad û konteyner</string>
     <string name="dejavu_settings_tabs_workspaces_summary">Girtin û xewandina hilpekînan, konteyner, serrûpel û girêdan</string>
-    <string name="dejavu_settings_customize_summary">Rûkar, çalakiyên hilpekînê, menu, darik, şîfre û ziman</string>
+    <string name="dejavu_settings_customize_summary">Rûkar, çalakiyên hilpekînê, menu û darik</string>
     <string name="dejavu_settings_bars_2">Darik</string>
     <string name="dejavu_settings_bars_summary">Rûpela webê, serrûpel, ekrana tije, darika hilpekînan û hereketên tiliyan</string>
     <string name="dejavu_settings_web_page">Rûpela webê</string>
@@ -520,4 +518,6 @@
     <string name="dejavu_welcome_default_done">Dejavu geroka te ya sereke ye.</string>
     <string name="dejavu_welcome_sync_title">Qadên te li ser her amûrê</string>
     <string name="dejavu_welcome_sync_text">Bi hesabekî Mozilla têkeve da ku qad, hilpekînên sabît û malperên girîng bi Zen re, an jî hilpekînan bi Firefox re hevdem bikî.</string>
+    <string name="dejavu_settings_matrix">Li ser Matrixê sohbet bike</string>
+    <string name="dejavu_settings_matrix_summary">Pirsekê bipirse, taybetmendiyekê pêşniyar bike an çewtiyekê ragihîne</string>
 </resources>

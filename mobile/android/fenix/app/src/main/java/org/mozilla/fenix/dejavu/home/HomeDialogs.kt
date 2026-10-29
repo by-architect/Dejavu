@@ -81,6 +81,7 @@ import org.mozilla.fenix.dejavu.ui.DejavuDialogButton
 import org.mozilla.fenix.dejavu.ui.DejavuPopup
 import org.mozilla.fenix.dejavu.ui.DejavuTextField
 import org.mozilla.fenix.dejavu.workspaces.MAX_FOLDER_DEPTH
+import org.mozilla.fenix.dejavu.workspaces.WallpaperArt
 import org.mozilla.fenix.dejavu.workspaces.Workspace
 import org.mozilla.fenix.dejavu.workspaces.WorkspaceState
 import org.mozilla.fenix.dejavu.workspaces.WorkspaceTheme
@@ -129,6 +130,7 @@ internal fun HomeDialogs(
                 wallpaper = workspace?.let { wallpapers[it.id] },
                 containers = containers.values.filterNot { it.showsAsTemporary },
                 onCreateContainer = interactor::onCreateContainer,
+                onDrawWallpaper = interactor::onDrawWallpaper,
                 onImportWallpaper = interactor::onImportWallpaper,
                 onDiscardWallpaper = interactor::onDiscardWallpaper,
                 onSave = { name, containerId, icon, theme, wallpaper ->
@@ -325,8 +327,8 @@ internal fun ItemDialogs(
 /**
  * Creates or edits a workspace: its icon, name, look and default container. The look is either a theme of colors or
  * a wallpaper, which gives the theme the colors taken from its picture, so that Zen, which syncs themes but not
- * pictures, shows the same colors. [onImportWallpaper] copies a picture picked for the wallpaper, and
- * [onDiscardWallpaper] deletes a copy that ends up unused. While workspaces [syncsWithFirefox], the dialog says what
+ * pictures, shows the same colors. [onDrawWallpaper] draws a wallpaper Dejavu draws, [onImportWallpaper] copies a
+ * picture picked for the wallpaper, and [onDiscardWallpaper] deletes a picture that ends up unused. While workspaces [syncsWithFirefox], the dialog says what
  * Firefox Sync leaves out.
  */
 @Suppress("LongMethod", "LongParameterList")
@@ -337,6 +339,7 @@ private fun WorkspaceDialog(
     wallpaper: WorkspaceWallpaper?,
     containers: List<ContainerRecord>,
     onCreateContainer: (name: String, color: ContainerColor, icon: ContainerState.Icon) -> String,
+    onDrawWallpaper: suspend (WallpaperArt) -> WorkspaceWallpaper?,
     onImportWallpaper: suspend (Uri) -> WorkspaceWallpaper?,
     onDiscardWallpaper: (file: String) -> Unit,
     onSave: (
@@ -475,6 +478,7 @@ private fun WorkspaceDialog(
             WallpaperSection(
                 wallpaper = shownWallpaper,
                 syncsWithZen = !isDevice && !syncsWithFirefox,
+                onDraw = onDrawWallpaper,
                 onImport = onImportWallpaper,
                 onPicked = { picked ->
                     dropPicked(keep = picked.file)

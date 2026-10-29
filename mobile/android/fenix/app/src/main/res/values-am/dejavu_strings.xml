@@ -440,8 +440,6 @@
     <string name="dejavu_workspace_theme_color">ቀለም</string>
     <string name="dejavu_workspace_wallpaper">ልጣፍ</string>
     <string name="dejavu_workspace_wallpaper_hint">ምስሉ በዚህ ስልክ ላይ ይቆያል እና በመነሻ ገጹ ላይ ይታያል። ቀለሞቹ ከZen ጋር የሚመሳሰለው ገጽታ ይሆናሉ።</string>
-    <string name="dejavu_workspace_wallpaper_choose">ምስል ምረጥ</string>
-    <string name="dejavu_workspace_wallpaper_change">ቀይር</string>
     <string name="dejavu_workspace_wallpaper_failed">ይህን ምስል መክፈት አልተቻለም።</string>
     <string name="dejavu_workspace_wallpaper_colors">ከZen ጋር የሚመሳሰሉ ቀለሞች</string>
     <string name="dejavu_workspace_wallpaper_hint_local">ምስሉ በዚህ ስልክ ላይ ይቆያል እና በመነሻ ገጹ ላይ ይታያል።</string>
@@ -476,7 +474,7 @@
     <string name="dejavu_settings_autoclose_tabs">ትሮችን በራስ-ሰር ዝጋ</string>
     <string name="dejavu_settings_tabs_workspaces">ትሮች፣ የስራ ቦታዎች እና መያዣዎች</string>
     <string name="dejavu_settings_tabs_workspaces_summary">ትሮችን መዝጋት፣ የተኙ ትሮች፣ መያዣዎች፣ መነሻ ገጽ እና አገናኞች</string>
-    <string name="dejavu_settings_customize_summary">ገጽታ፣ የትር እርምጃዎች፣ ምናሌ፣ አሞሌዎች፣ የይለፍ ቃሎች እና ቋንቋ</string>
+    <string name="dejavu_settings_customize_summary">ገጽታ፣ የትር እርምጃዎች፣ ምናሌ እና አሞሌዎች</string>
     <string name="dejavu_settings_bars_2">አሞሌዎች</string>
     <string name="dejavu_settings_bars_summary">የድር ገጽ፣ መነሻ ገጽ፣ ሙሉ ማያ ገጽ፣ የትር አሞሌ እና የእጅ ምልክቶች</string>
     <string name="dejavu_settings_web_page">የድር ገጽ</string>
@@ -520,4 +518,6 @@
     <string name="dejavu_welcome_default_done">Dejavu ነባሪ አሳሽዎ ነው።</string>
     <string name="dejavu_welcome_sync_title">የስራ ቦታዎችዎ በእያንዳንዱ መሣሪያ ላይ</string>
     <string name="dejavu_welcome_sync_text">የስራ ቦታዎችን፣ የተሰኩ ትሮችን እና አስፈላጊዎችን ከ Zen ጋር፣ ወይም ትሮችን ከ Firefox ጋር ለማመሳሰል Mozilla መለያ ተጠቅመው ይግቡ።</string>
+    <string name="dejavu_settings_matrix">በMatrix ላይ ይወያዩ</string>
+    <string name="dejavu_settings_matrix_summary">ጥያቄ ይጠይቁ፣ ባህሪ ይጠቁሙ ወይም ስህተት ሪፖርት ያድርጉ</string>
 </resources>

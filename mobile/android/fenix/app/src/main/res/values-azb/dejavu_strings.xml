@@ -440,8 +440,6 @@
     <string name="dejavu_workspace_theme_color">رنگ</string>
     <string name="dejavu_workspace_wallpaper">دال پرده</string>
     <string name="dejavu_workspace_wallpaper_hint">عکس بو تلفنده قالیر و آنا صفحه‌ده گؤرونور. اونون رنگلری Zen ایله همگام‌سازی اولونان تمه چئوریلیر.</string>
-    <string name="dejavu_workspace_wallpaper_choose">عکس سئچ</string>
-    <string name="dejavu_workspace_wallpaper_change">دَییش</string>
     <string name="dejavu_workspace_wallpaper_failed">بو عکس آچیلا بیلمه‌دی.</string>
     <string name="dejavu_workspace_wallpaper_colors">Zen ایله همگام‌سازی اولونان رنگلر</string>
     <string name="dejavu_workspace_wallpaper_hint_local">عکس بو تلفنده قالیر و آنا صفحه‌ده گؤرونور.</string>
@@ -476,7 +474,7 @@
     <string name="dejavu_settings_autoclose_tabs">تاغلاری اوتوماتیک باغلا</string>
     <string name="dejavu_settings_tabs_workspaces">تاغلار، ایش ساحه‌لری و کانتینرلر</string>
     <string name="dejavu_settings_tabs_workspaces_summary">تاغلارین باغلانماسی و یوخوسو، کانتینرلر، آنایارپاق و لینکلر</string>
-    <string name="dejavu_settings_customize_summary">تم، تاغ عملیات‌لاری، منو، چوبوقلار، رمز‌لر و دیل</string>
+    <string name="dejavu_settings_customize_summary">تم، تاغ عملیات‌لاری، منو و چوبوقلار</string>
     <string name="dejavu_settings_bars_2">چوبوقلار</string>
     <string name="dejavu_settings_bars_summary">وب صفحه، آنایارپاق، بوتون صفحه، تاغ چوبوغو و ایشاره‌لر</string>
     <string name="dejavu_settings_web_page">وب صفحه</string>
@@ -520,4 +518,6 @@
     <string name="dejavu_welcome_default_done">Dejavu وارساییلان مورورچونوزدور.</string>
     <string name="dejavu_welcome_sync_title">ایش ساحه‌لرینیز هر جیهازدا</string>
     <string name="dejavu_welcome_sync_text">ایش ساحه‌لرینی، برکیدیلمیش تاغلاری و اساس‌لاری Zen ایله، یا تاغلاری Firefox ایله همگام‌سازی ائتمک اوچون Mozilla حسابی ایله داخل اولون.</string>
+    <string name="dejavu_settings_matrix">Matrix-ده صحبت ائدین</string>
+    <string name="dejavu_settings_matrix_summary">سوال وئرین، بیر خصوصیت تکلیف ائدین یا بیر خطا بیلدیرین</string>
 </resources>

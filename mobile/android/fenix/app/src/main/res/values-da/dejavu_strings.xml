@@ -440,8 +440,6 @@
     <string name="dejavu_workspace_theme_color">Farve</string>
     <string name="dejavu_workspace_wallpaper">Baggrund</string>
     <string name="dejavu_workspace_wallpaper_hint">Billedet bliver på denne telefon og vises på hjemmesiden. Dets farver bliver til det tema, der synkroniseres med Zen.</string>
-    <string name="dejavu_workspace_wallpaper_choose">Vælg et billede</string>
-    <string name="dejavu_workspace_wallpaper_change">Skift</string>
     <string name="dejavu_workspace_wallpaper_failed">Dette billede kunne ikke åbnes.</string>
     <string name="dejavu_workspace_wallpaper_colors">Farver, der synkroniseres med Zen</string>
     <string name="dejavu_workspace_wallpaper_hint_local">Billedet bliver på denne telefon og vises på hjemmesiden.</string>
@@ -476,7 +474,7 @@
     <string name="dejavu_settings_autoclose_tabs">Luk faneblade automatisk</string>
     <string name="dejavu_settings_tabs_workspaces">Faneblade, arbejdsområder og beholdere</string>
     <string name="dejavu_settings_tabs_workspaces_summary">Automatisk lukning, faneblade i dvale, beholdere, startside og links</string>
-    <string name="dejavu_settings_customize_summary">Tema, handlinger for faneblade, menu, linjer, adgangskoder og sprog</string>
+    <string name="dejavu_settings_customize_summary">Tema, handlinger for faneblade, menu og linjer</string>
     <string name="dejavu_settings_bars_2">Linjer</string>
     <string name="dejavu_settings_bars_summary">Webside, startside, fuld skærm, fanebladslinje og bevægelser</string>
     <string name="dejavu_settings_web_page">Webside</string>
@@ -520,4 +518,6 @@
     <string name="dejavu_welcome_default_done">Dejavu er din standardbrowser.</string>
     <string name="dejavu_welcome_sync_title">Dine arbejdsområder på alle enheder</string>
     <string name="dejavu_welcome_sync_text">Log ind med en Mozilla-konto for at synkronisere arbejdsområder, fastgjorte faneblade og favoritter med Zen eller faneblade med Firefox.</string>
+    <string name="dejavu_settings_matrix">Chat på Matrix</string>
+    <string name="dejavu_settings_matrix_summary">Stil et spørgsmål, foreslå en funktion eller rapportér en fejl</string>
 </resources>

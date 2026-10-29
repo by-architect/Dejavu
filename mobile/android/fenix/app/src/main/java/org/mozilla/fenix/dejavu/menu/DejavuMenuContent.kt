@@ -54,7 +54,7 @@ import org.mozilla.fenix.components.menu.store.WebExtensionMenuItem
 import org.mozilla.fenix.dejavu.actions.TabAction
 import org.mozilla.fenix.dejavu.browser.SplitSpace
 import org.mozilla.fenix.dejavu.settings.DejavuSettings
-import org.mozilla.fenix.dejavu.settings.SettingsBackdrop
+import org.mozilla.fenix.dejavu.settings.PageBackdrop
 import org.mozilla.fenix.dejavu.workspaces.SplitOrientation
 import org.mozilla.fenix.dejavu.workspaces.WorkspaceRepository
 import org.mozilla.fenix.dejavu.workspaces.WorkspaceState
@@ -465,13 +465,13 @@ private class MenuActions(
             MoreMenuItem.DESKTOP_SITE -> dispatch(
                 if (state.isDesktopMode) MenuAction.RequestMobileSite else MenuAction.RequestDesktopSite,
             )
-            MoreMenuItem.PASSWORDS -> dispatch(MenuAction.Navigate.Passwords)
-            MoreMenuItem.BOOKMARKS -> dispatch(MenuAction.Navigate.Bookmarks)
-            MoreMenuItem.DOWNLOADS -> dispatch(MenuAction.Navigate.Downloads)
-            MoreMenuItem.HISTORY -> dispatch(MenuAction.Navigate.History)
+            MoreMenuItem.PASSWORDS -> PageBackdrop.openOverPage(tab.id) { dispatch(MenuAction.Navigate.Passwords) }
+            MoreMenuItem.BOOKMARKS -> PageBackdrop.openOverPage(tab.id) { dispatch(MenuAction.Navigate.Bookmarks) }
+            MoreMenuItem.DOWNLOADS -> PageBackdrop.openOverPage(tab.id) { dispatch(MenuAction.Navigate.Downloads) }
+            MoreMenuItem.HISTORY -> PageBackdrop.openOverPage(tab.id) { dispatch(MenuAction.Navigate.History) }
             MoreMenuItem.TRANSLATE -> dispatch(MenuAction.Navigate.Translate)
             MoreMenuItem.OPEN_IN_APP -> dispatch(MenuAction.OpenInApp)
-            MoreMenuItem.SETTINGS -> SettingsBackdrop.openOverPage(tab.id) { dispatch(MenuAction.Navigate.Settings) }
+            MoreMenuItem.SETTINGS -> PageBackdrop.openOverPage(tab.id) { dispatch(MenuAction.Navigate.Settings) }
             else -> Unit
         }
     }

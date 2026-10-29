@@ -440,8 +440,6 @@
     <string name="dejavu_workspace_theme_color">நிறம்</string>
     <string name="dejavu_workspace_wallpaper">சுவர்ப்படம்</string>
     <string name="dejavu_workspace_wallpaper_hint">படம் இந்தக் கைப்பேசியிலேயே இருக்கும், முகப்புப் பக்கத்தில் காட்டப்படும். அதன் நிறங்கள் Zen உடன் ஒத்திசைக்கப்படும் தீமாக மாறும்.</string>
-    <string name="dejavu_workspace_wallpaper_choose">ஒரு படத்தைத் தேர்வுசெய்</string>
-    <string name="dejavu_workspace_wallpaper_change">மாற்று</string>
     <string name="dejavu_workspace_wallpaper_failed">இந்தப் படத்தைத் திறக்க முடியவில்லை.</string>
     <string name="dejavu_workspace_wallpaper_colors">Zen உடன் ஒத்திசைக்கப்படும் நிறங்கள்</string>
     <string name="dejavu_workspace_wallpaper_hint_local">படம் இந்தக் கைப்பேசியிலேயே இருக்கும், முகப்புப் பக்கத்தில் காட்டப்படும்.</string>
@@ -476,7 +474,7 @@
     <string name="dejavu_settings_autoclose_tabs">கீற்றுகளைத் தானாக மூடு</string>
     <string name="dejavu_settings_tabs_workspaces">கீற்றுகள், பணியிடங்கள் மற்றும் கொள்கலன்கள்</string>
     <string name="dejavu_settings_tabs_workspaces_summary">கீற்றுகளை மூடுதல், உறங்கவைத்தல், கொள்கலன்கள், முகப்புப் பக்கம் மற்றும் இணைப்புகள்</string>
-    <string name="dejavu_settings_customize_summary">கருப்பொருள், கீற்றுச் செயல்கள், பட்டி, பட்டைகள், கடவுச்சொற்கள் மற்றும் மொழி</string>
+    <string name="dejavu_settings_customize_summary">கருப்பொருள், கீற்றுச் செயல்கள், பட்டி மற்றும் பட்டைகள்</string>
     <string name="dejavu_settings_bars_2">பட்டைகள்</string>
     <string name="dejavu_settings_bars_summary">வலைப்பக்கம், முகப்புப் பக்கம், முழு திரை, கீற்றுப் பட்டை மற்றும் சைகைகள்</string>
     <string name="dejavu_settings_web_page">வலைப்பக்கம்</string>
@@ -520,4 +518,6 @@
     <string name="dejavu_welcome_default_done">Dejavu உங்கள் இயல்புநிலை உலாவி.</string>
     <string name="dejavu_welcome_sync_title">எல்லாச் சாதனங்களிலும் உங்கள் பணியிடங்கள்</string>
     <string name="dejavu_welcome_sync_text">Zen உடன் பணியிடங்கள், பொருத்தப்பட்ட கீற்றுகள், முக்கியவை, அல்லது Firefox உடன் கீற்றுகளை ஒத்திசைக்க Mozilla கணக்கில் உள்நுழையவும்.</string>
+    <string name="dejavu_settings_matrix">Matrix-இல் உரையாடுங்கள்</string>
+    <string name="dejavu_settings_matrix_summary">கேள்வி கேளுங்கள், புதிய அம்சத்தைப் பரிந்துரையுங்கள் அல்லது பிழையைப் புகாரளியுங்கள்</string>
 </resources>

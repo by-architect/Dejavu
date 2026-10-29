@@ -440,8 +440,6 @@
     <string name="dejavu_workspace_theme_color">Цвят</string>
     <string name="dejavu_workspace_wallpaper">Тапет</string>
     <string name="dejavu_workspace_wallpaper_hint">Изображението остава на този телефон и се показва на началната страница. Цветовете му стават темата, която се синхронизира със Zen.</string>
-    <string name="dejavu_workspace_wallpaper_choose">Избиране на изображение</string>
-    <string name="dejavu_workspace_wallpaper_change">Смяна</string>
     <string name="dejavu_workspace_wallpaper_failed">Това изображение не можа да бъде отворено.</string>
     <string name="dejavu_workspace_wallpaper_colors">Цветове, които се синхронизират със Zen</string>
     <string name="dejavu_workspace_wallpaper_hint_local">Изображението остава на този телефон и се показва на началната страница.</string>
@@ -476,7 +474,7 @@
     <string name="dejavu_settings_autoclose_tabs">Автоматично затваряне на раздели</string>
     <string name="dejavu_settings_tabs_workspaces">Раздели, работни пространства и контейнери</string>
     <string name="dejavu_settings_tabs_workspaces_summary">Затваряне и приспиване на раздели, контейнери, начална страница и връзки</string>
-    <string name="dejavu_settings_customize_summary">Тема, действия с раздели, меню, ленти, пароли и език</string>
+    <string name="dejavu_settings_customize_summary">Тема, действия с раздели, меню и ленти</string>
     <string name="dejavu_settings_bars_2">Ленти</string>
     <string name="dejavu_settings_bars_summary">Уеб страница, начална страница, цял екран, лента с раздели и жестове</string>
     <string name="dejavu_settings_web_page">Уеб страница</string>
@@ -520,4 +518,6 @@
     <string name="dejavu_welcome_default_done">Dejavu е вашият браузър по подразбиране.</string>
     <string name="dejavu_welcome_sync_title">Работните ви пространства на всяко устройство</string>
     <string name="dejavu_welcome_sync_text">Влезте с профил в Mozilla, за да синхронизирате работни пространства, закачени раздели и Любими със Zen или раздели с Firefox.</string>
+    <string name="dejavu_settings_matrix">Чат в Matrix</string>
+    <string name="dejavu_settings_matrix_summary">Задайте въпрос, предложете функция или съобщете за грешка</string>
 </resources>

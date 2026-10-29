@@ -440,8 +440,6 @@
     <string name="dejavu_workspace_theme_color">Ngjyrë</string>
     <string name="dejavu_workspace_wallpaper">Sfond</string>
     <string name="dejavu_workspace_wallpaper_hint">Figura mbetet në këtë telefon dhe shfaqet në faqen kreu. Ngjyrat e saj bëhen tema që njëkohësohet me Zen-in.</string>
-    <string name="dejavu_workspace_wallpaper_choose">Zgjidhni një figurë</string>
-    <string name="dejavu_workspace_wallpaper_change">Ndryshoje</string>
     <string name="dejavu_workspace_wallpaper_failed">Kjo figurë s\'u hap dot.</string>
     <string name="dejavu_workspace_wallpaper_colors">Ngjyra që njëkohësohen me Zen-in</string>
     <string name="dejavu_workspace_wallpaper_hint_local">Figura mbetet në këtë telefon dhe shfaqet në faqen kreu.</string>
@@ -476,7 +474,7 @@
     <string name="dejavu_settings_autoclose_tabs">Vetëmbyllje skedash</string>
     <string name="dejavu_settings_tabs_workspaces">Skeda, hapësira pune dhe kontejnerë</string>
     <string name="dejavu_settings_tabs_workspaces_summary">Mbyllje dhe pezullim skedash, kontejnerë, faqe hyrëse dhe lidhje</string>
-    <string name="dejavu_settings_customize_summary">Temë, veprime skedash, menu, shtylla, fjalëkalime dhe gjuhë</string>
+    <string name="dejavu_settings_customize_summary">Temë, veprime skedash, menu dhe shtylla</string>
     <string name="dejavu_settings_bars_2">Shtylla</string>
     <string name="dejavu_settings_bars_summary">Faqe web, faqe hyrëse, sa krejt ekrani, shtyllë skedash dhe gjeste</string>
     <string name="dejavu_settings_web_page">Faqe web</string>
@@ -520,4 +518,6 @@
     <string name="dejavu_welcome_default_done">Dejavu është shfletuesi juaj parazgjedhje.</string>
     <string name="dejavu_welcome_sync_title">Hapësirat tuaja të punës në çdo pajisje</string>
     <string name="dejavu_welcome_sync_text">Bëni hyrjen me një llogari Mozilla, që të njëkohësoni hapësira pune, skeda të fiksuara dhe thelbësore me Zen-in, ose skeda me Firefox-in.</string>
+    <string name="dejavu_settings_matrix">Bisedoni në Matrix</string>
+    <string name="dejavu_settings_matrix_summary">Bëni një pyetje, sugjeroni një veçori ose njoftoni një të metë</string>
 </resources>

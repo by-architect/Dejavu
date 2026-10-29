@@ -8,6 +8,8 @@ import androidx.compose.material3.ColorScheme
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.CompositionLocalProvider
 import androidx.compose.runtime.ReadOnlyComposable
+import androidx.compose.runtime.remember
+import androidx.compose.ui.platform.LocalView
 import mozilla.components.compose.base.theme.AcornColors
 import mozilla.components.compose.base.theme.AcornGradientScheme
 import mozilla.components.compose.base.theme.AcornTheme
@@ -27,6 +29,7 @@ import mozilla.components.compose.base.theme.oledAcornGradientScheme
 import mozilla.components.compose.base.theme.oledColorPalette
 import mozilla.components.compose.base.theme.privateAcornGradientScheme
 import mozilla.components.compose.base.theme.privateColorPalette
+import org.mozilla.fenix.dejavu.settings.PageBackdrop
 import org.mozilla.fenix.dejavu.ui.DejavuColors
 
 /**
@@ -48,13 +51,26 @@ fun FirefoxTheme(
             Theme.Private -> privateColorPalette
         }
 
-    val colorScheme: ColorScheme =
+    // Dejavu: the screens of full-screen pages let the backdrop behind them show through their backgrounds.
+    val view = LocalView.current
+    val seeThrough = remember(view) { PageBackdrop.showsThrough(view) }
+    val themeColorScheme: ColorScheme =
         DejavuColors.colorScheme(theme) ?: when (theme) {
             Theme.Light -> acornLightColorScheme()
             Theme.Dark -> acornDarkColorScheme()
             Theme.Oled -> acornOledColorScheme()
             Theme.Private -> acornPrivateColorScheme()
         }
+    val colorScheme = remember(themeColorScheme, seeThrough) {
+        if (seeThrough) {
+            themeColorScheme.copy(
+                background = themeColorScheme.background.copy(alpha = 0f),
+                surface = themeColorScheme.surface.copy(alpha = 0f),
+            )
+        } else {
+            themeColorScheme
+        }
+    }
 
     val gradients: AcornGradientScheme =
         DejavuColors.gradients(theme) ?: when (theme) {

@@ -440,8 +440,6 @@
     <string name="dejavu_workspace_theme_color">Төс</string>
     <string name="dejavu_workspace_wallpaper">Фон рәсеме</string>
     <string name="dejavu_workspace_wallpaper_hint">Рәсем бу телефонда кала һәм баш биттә күренә. Аның төсләре Zen белән синхронлаштырыла торган темага әверелә.</string>
-    <string name="dejavu_workspace_wallpaper_choose">Рәсем сайлау</string>
-    <string name="dejavu_workspace_wallpaper_change">Алыштыру</string>
     <string name="dejavu_workspace_wallpaper_failed">Бу рәсемне ачып булмады.</string>
     <string name="dejavu_workspace_wallpaper_colors">Zen белән синхронлаштырыла торган төсләр</string>
     <string name="dejavu_workspace_wallpaper_hint_local">Рәсем бу телефонда кала һәм баш биттә күренә.</string>
@@ -476,7 +474,7 @@
     <string name="dejavu_settings_autoclose_tabs">Табларны автоматик ябу</string>
     <string name="dejavu_settings_tabs_workspaces">Таблар, эш өлкәләре һәм контейнерләр</string>
     <string name="dejavu_settings_tabs_workspaces_summary">Табларны ябу һәм йоклату, контейнерләр, баш бит һәм сылтамалар</string>
-    <string name="dejavu_settings_customize_summary">Тема, таб гамәлләре, меню, панельләр, серсүзләр һәм тел</string>
+    <string name="dejavu_settings_customize_summary">Тема, таб гамәлләре, меню һәм панельләр</string>
     <string name="dejavu_settings_bars_2">Панельләр</string>
     <string name="dejavu_settings_bars_summary">Веб-бит, баш бит, тулы экран, таблар панеле һәм ишарәләр</string>
     <string name="dejavu_settings_web_page">Веб-бит</string>
@@ -520,4 +518,6 @@
     <string name="dejavu_welcome_default_done">Dejavu — сезнең төп браузерыгыз.</string>
     <string name="dejavu_welcome_sync_title">Эш өлкәләрегез һәр җиһазда</string>
     <string name="dejavu_welcome_sync_text">Эш өлкәләрен, беркетелгән табларны һәм төп сайтларны Zen белән, яки табларны Firefox белән синхронлаштыру өчен Mozilla хисап язмасы белән керегез.</string>
+    <string name="dejavu_settings_matrix">Matrix аша сөйләшегез</string>
+    <string name="dejavu_settings_matrix_summary">Сорау бирегез, функция тәкъдим итегез яки хата турында хәбәр итегез</string>
 </resources>

@@ -456,8 +456,6 @@
     <string name="dejavu_workspace_theme_color">Barwa</string>
     <string name="dejavu_workspace_wallpaper">Slězynowy wobraz</string>
     <string name="dejavu_workspace_wallpaper_hint">Wobraz wóstanjo na toś tom telefonje a pokazujo se na startowem boku. Z jogo barwow nastanjo tema, kótaraž se ze Zen synchronizěrujo.</string>
-    <string name="dejavu_workspace_wallpaper_choose">Wobraz wubraś</string>
-    <string name="dejavu_workspace_wallpaper_change">Změniś</string>
     <string name="dejavu_workspace_wallpaper_failed">Toś ten wobraz njedajo se wócyniś.</string>
     <string name="dejavu_workspace_wallpaper_colors">Barwy, kótarež se ze Zen synchronizěruju</string>
     <string name="dejavu_workspace_wallpaper_hint_local">Wobraz wóstanjo na toś tom telefonje a pokazujo se na startowem boku.</string>
@@ -492,7 +490,7 @@
     <string name="dejavu_settings_autoclose_tabs">Rejtariki awtomatiski zacyniś</string>
     <string name="dejavu_settings_tabs_workspaces">Rejtariki, źěłowe rumy a kontejnery</string>
     <string name="dejavu_settings_tabs_workspaces_summary">Zacynjanje a spanje rejtarikow, kontejnery, startowy bok a wótkazy</string>
-    <string name="dejavu_settings_customize_summary">Drastwa, akcije za rejtariki, meni, rědki, gronidła a rěc</string>
+    <string name="dejavu_settings_customize_summary">Drastwa, akcije za rejtariki, meni a rědki</string>
     <string name="dejavu_settings_bars_2">Lejstwy</string>
     <string name="dejavu_settings_bars_summary">Webbok, startowy bok, połna wobrazowka, rědka rejtarikow a gesty</string>
     <string name="dejavu_settings_web_page">Webbok</string>
@@ -536,4 +534,6 @@
     <string name="dejavu_welcome_default_done">Dejavu jo twój standardny wobglědowak.</string>
     <string name="dejavu_welcome_sync_title">Twóje źěłowe rumy na kuždem rěźe</string>
     <string name="dejavu_welcome_sync_text">Pśizjaw se z Mozilla-kontom, aby źěłowe rumy, pśipěte rejtariki a nejwažnjejše ze Zen abo rejtariki z Firefox synchronizěrował.</string>
+    <string name="dejavu_settings_matrix">Chat pśez Matrix</string>
+    <string name="dejavu_settings_matrix_summary">Pšašaj se, naraź funkciju abo daj zmólku k wěsći</string>
 </resources>

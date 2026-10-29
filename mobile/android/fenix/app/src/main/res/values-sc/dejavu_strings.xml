@@ -440,8 +440,6 @@
     <string name="dejavu_workspace_theme_color">Colore</string>
     <string name="dejavu_workspace_wallpaper">Isfundu de ischermu</string>
     <string name="dejavu_workspace_wallpaper_hint">S\'immàgine abarrat in custu telèfonu e si bidet in sa pàgina printzipale. Is colores suos diventant su tema chi si sincronizat cun Zen.</string>
-    <string name="dejavu_workspace_wallpaper_choose">Sèbera un\'immàgine</string>
-    <string name="dejavu_workspace_wallpaper_change">Muda</string>
     <string name="dejavu_workspace_wallpaper_failed">No est istadu possìbile abèrrere custa immàgine.</string>
     <string name="dejavu_workspace_wallpaper_colors">Colores chi si sincronizant cun Zen</string>
     <string name="dejavu_workspace_wallpaper_hint_local">S\'immàgine abarrat in custu telèfonu e si bidet in sa pàgina printzipale.</string>
@@ -476,7 +474,7 @@
     <string name="dejavu_settings_autoclose_tabs">Serrada automàtica de is ischedas</string>
     <string name="dejavu_settings_tabs_workspaces">Ischedas, ispàtzios de traballu e cuntenidores</string>
     <string name="dejavu_settings_tabs_workspaces_summary">Serrada e sonnu de is ischedas, cuntenidores, pàgina printzipale e ligàmenes</string>
-    <string name="dejavu_settings_customize_summary">Tema, atziones de is ischedas, menu, barras, craes e lìngua</string>
+    <string name="dejavu_settings_customize_summary">Tema, atziones de is ischedas, menu e barras</string>
     <string name="dejavu_settings_bars_2">Barras</string>
     <string name="dejavu_settings_bars_summary">Pàgina web, pàgina printzipale, ischermu intreu, barra de is ischedas e gestos</string>
     <string name="dejavu_settings_web_page">Pàgina web</string>
@@ -520,4 +518,6 @@
     <string name="dejavu_welcome_default_done">Dejavu est su navigadore predefinidu tuo.</string>
     <string name="dejavu_welcome_sync_title">Is ispàtzios de traballu tuos in dònnia dispositivu</string>
     <string name="dejavu_welcome_sync_text">Intra cun unu contu Mozilla pro sincronizare ispàtzios de traballu, ischedas fissadas e essentziales cun Zen, o ischedas cun Firefox.</string>
+    <string name="dejavu_settings_matrix">Chistiona in Matrix</string>
+    <string name="dejavu_settings_matrix_summary">Faghe una pregunta, cussìgia una funtzione o sinnala unu errore</string>
 </resources>

@@ -440,8 +440,6 @@
     <string name="dejavu_workspace_theme_color">رنگ</string>
     <string name="dejavu_workspace_wallpaper">وال پیپر</string>
     <string name="dejavu_workspace_wallpaper_hint">تصویر اسی فون پر رہتی ہے اور ہوم پیج پر دکھائی دیتی ہے۔ اس کے رنگ وہ تھیم بن جاتے ہیں جو Zen کے ساتھ ہم وقت ہوتی ہے۔</string>
-    <string name="dejavu_workspace_wallpaper_choose">تصویر منتخب کریں</string>
-    <string name="dejavu_workspace_wallpaper_change">تبدیل کریں</string>
     <string name="dejavu_workspace_wallpaper_failed">یہ تصویر نہیں کھولی جا سکی۔</string>
     <string name="dejavu_workspace_wallpaper_colors">Zen کے ساتھ ہم وقت ہونے والے رنگ</string>
     <string name="dejavu_workspace_wallpaper_hint_local">تصویر اسی فون پر رہتی ہے اور ہوم پیج پر دکھائی دیتی ہے۔</string>
@@ -476,7 +474,7 @@
     <string name="dejavu_settings_autoclose_tabs">ٹیبز خودکار بند کریں</string>
     <string name="dejavu_settings_tabs_workspaces">ٹیبز، ورک اسپیسز اور کنٹینرز</string>
     <string name="dejavu_settings_tabs_workspaces_summary">ٹیبز کو بند کرنا اور سلانا، کنٹینرز، ابتدائی صفحہ اور لنکس</string>
-    <string name="dejavu_settings_customize_summary">تھیم، ٹیب ایکشنز، مینو، بارز، پاس ورڈز اور زبان</string>
+    <string name="dejavu_settings_customize_summary">تھیم، ٹیب ایکشنز، مینو اور بارز</string>
     <string name="dejavu_settings_bars_2">بارز</string>
     <string name="dejavu_settings_bars_summary">ویب صفحہ، ابتدائی صفحہ، فل اسکرین، ٹیب بار اور اشارے</string>
     <string name="dejavu_settings_web_page">ویب صفحہ</string>
@@ -520,4 +518,6 @@
     <string name="dejavu_welcome_default_done">Dejavu آپ کا ڈیفالٹ براؤزر ہے۔</string>
     <string name="dejavu_welcome_sync_title">آپ کی ورک اسپیسز ہر آلے پر</string>
     <string name="dejavu_welcome_sync_text">ورک اسپیسز، پن کردہ ٹیبز اور اہم کو Zen کے ساتھ، یا ٹیبز کو Firefox کے ساتھ ہم وقت کرنے کے لیے Mozilla اکاؤنٹ سے سائن اِن کریں۔</string>
+    <string name="dejavu_settings_matrix">Matrix پر چیٹ کریں</string>
+    <string name="dejavu_settings_matrix_summary">سوال پوچھیں، کوئی فیچر تجویز کریں یا بگ کی اطلاع دیں</string>
 </resources>

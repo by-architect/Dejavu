@@ -448,8 +448,6 @@
     <string name="dejavu_workspace_theme_color">Boja</string>
     <string name="dejavu_workspace_wallpaper">Pozadina</string>
     <string name="dejavu_workspace_wallpaper_hint">Slika ostaje na ovom telefonu i prikazuje se na početnoj stranici. Njezine boje postaju tema koja se sinkronizira sa Zenom.</string>
-    <string name="dejavu_workspace_wallpaper_choose">Odaberi sliku</string>
-    <string name="dejavu_workspace_wallpaper_change">Promijeni</string>
     <string name="dejavu_workspace_wallpaper_failed">Ovu sliku nije moguće otvoriti.</string>
     <string name="dejavu_workspace_wallpaper_colors">Boje koje se sinkroniziraju sa Zenom</string>
     <string name="dejavu_workspace_wallpaper_hint_local">Slika ostaje na ovom telefonu i prikazuje se na početnoj stranici.</string>
@@ -484,7 +482,7 @@
     <string name="dejavu_settings_autoclose_tabs">Automatsko zatvaranje kartica</string>
     <string name="dejavu_settings_tabs_workspaces">Kartice, radni prostori i spremnici</string>
     <string name="dejavu_settings_tabs_workspaces_summary">Zatvaranje i uspavljivanje kartica, spremnici, početna stranica i poveznice</string>
-    <string name="dejavu_settings_customize_summary">Tema, radnje kartica, izbornik, trake, lozinke i jezik</string>
+    <string name="dejavu_settings_customize_summary">Tema, radnje kartica, izbornik i trake</string>
     <string name="dejavu_settings_bars_2">Trake</string>
     <string name="dejavu_settings_bars_summary">Web-stranica, početna stranica, cijeli ekran, traka s karticama i geste</string>
     <string name="dejavu_settings_web_page">Web-stranica</string>
@@ -528,4 +526,6 @@
     <string name="dejavu_welcome_default_done">Dejavu je vaš zadani preglednik.</string>
     <string name="dejavu_welcome_sync_title">Vaši radni prostori na svakom uređaju</string>
     <string name="dejavu_welcome_sync_text">Prijavite se Mozilla računom za sinkronizaciju radnih prostora, prikvačenih kartica i Favorita sa Zenom ili kartica s Firefoxom.</string>
+    <string name="dejavu_settings_matrix">Razgovarajte na Matrixu</string>
+    <string name="dejavu_settings_matrix_summary">Postavite pitanje, predložite značajku ili prijavite grešku</string>
 </resources>

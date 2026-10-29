@@ -440,8 +440,6 @@
     <string name="dejavu_workspace_theme_color">రంగు</string>
     <string name="dejavu_workspace_wallpaper">వాల్‌పేపర్</string>
     <string name="dejavu_workspace_wallpaper_hint">చిత్రం ఈ ఫోనులోనే ఉంటుంది మరియు హోమ్ పేజీలో కనిపిస్తుంది. దాని రంగులు Zenతో సింక్ అయ్యే థీమ్‌గా మారతాయి.</string>
-    <string name="dejavu_workspace_wallpaper_choose">ఒక చిత్రాన్ని ఎంచుకో</string>
-    <string name="dejavu_workspace_wallpaper_change">మార్చు</string>
     <string name="dejavu_workspace_wallpaper_failed">ఈ చిత్రాన్ని తెరవలేకపోయింది.</string>
     <string name="dejavu_workspace_wallpaper_colors">Zenతో సింక్ అయ్యే రంగులు</string>
     <string name="dejavu_workspace_wallpaper_hint_local">చిత్రం ఈ ఫోనులోనే ఉంటుంది మరియు హోమ్ పేజీలో కనిపిస్తుంది.</string>
@@ -476,7 +474,7 @@
     <string name="dejavu_settings_autoclose_tabs">ట్యాబుల స్వయంచాలక మూసివేత</string>
     <string name="dejavu_settings_tabs_workspaces">ట్యాబులు, కార్యస్థలాలు మరియు కంటైనర్లు</string>
     <string name="dejavu_settings_tabs_workspaces_summary">ట్యాబుల మూసివేత, స్లీప్, కంటైనర్లు, ముంగిలిపేజీ మరియు లింకులు</string>
-    <string name="dejavu_settings_customize_summary">అలంకారం, ట్యాబు చర్యలు, మెనూ, పట్టీలు, సంకేతపదాలు మరియు భాష</string>
+    <string name="dejavu_settings_customize_summary">అలంకారం, ట్యాబు చర్యలు, మెనూ మరియు పట్టీలు</string>
     <string name="dejavu_settings_bars_2">పట్టీలు</string>
     <string name="dejavu_settings_bars_summary">వెబ్ పేజీ, ముంగిలిపేజీ, నిండు తెర, ట్యాబుల పట్టీ మరియు సైగలు</string>
     <string name="dejavu_settings_web_page">వెబ్ పేజీ</string>
@@ -520,4 +518,6 @@
     <string name="dejavu_welcome_default_done">Dejavu మీ డిఫాల్ట్ బ్రౌజర్.</string>
     <string name="dejavu_welcome_sync_title">ప్రతి పరికరంలో మీ కార్యస్థలాలు</string>
     <string name="dejavu_welcome_sync_text">Mozilla ఖాతాతో సైన్ ఇన్ చేసి, కార్యస్థలాలు, పిన్ చేసిన ట్యాబులు, ముఖ్యమైనవాటిని Zen బ్రౌజర్‌తో, లేదా ట్యాబులను Firefox బ్రౌజర్‌తో సింక్ చేయండి.</string>
+    <string name="dejavu_settings_matrix">Matrixలో చాట్ చేయండి</string>
+    <string name="dejavu_settings_matrix_summary">ప్రశ్న అడగండి, సౌలభ్యాన్ని సూచించండి లేదా లోపాన్ని నివేదించండి</string>
 </resources>

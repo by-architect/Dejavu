@@ -440,8 +440,6 @@
     <string name="dejavu_workspace_theme_color">Χρώμα</string>
     <string name="dejavu_workspace_wallpaper">Ταπετσαρία</string>
     <string name="dejavu_workspace_wallpaper_hint">Η εικόνα παραμένει σε αυτό το τηλέφωνο και εμφανίζεται στην αρχική σελίδα. Τα χρώματά της γίνονται το θέμα που συγχρονίζεται με το Zen.</string>
-    <string name="dejavu_workspace_wallpaper_choose">Επιλογή εικόνας</string>
-    <string name="dejavu_workspace_wallpaper_change">Αλλαγή</string>
     <string name="dejavu_workspace_wallpaper_failed">Δεν ήταν δυνατό το άνοιγμα αυτής της εικόνας.</string>
     <string name="dejavu_workspace_wallpaper_colors">Χρώματα που συγχρονίζονται με το Zen</string>
     <string name="dejavu_workspace_wallpaper_hint_local">Η εικόνα παραμένει σε αυτό το τηλέφωνο και εμφανίζεται στην αρχική σελίδα.</string>
@@ -476,7 +474,7 @@
     <string name="dejavu_settings_autoclose_tabs">Αυτόματο κλείσιμο καρτελών</string>
     <string name="dejavu_settings_tabs_workspaces">Καρτέλες, χώροι εργασίας και περιέκτες</string>
     <string name="dejavu_settings_tabs_workspaces_summary">Κλείσιμο και αδρανοποίηση καρτελών, περιέκτες, αρχική σελίδα και σύνδεσμοι</string>
-    <string name="dejavu_settings_customize_summary">Θέμα, ενέργειες καρτελών, μενού, γραμμές, κωδικοί πρόσβασης και γλώσσα</string>
+    <string name="dejavu_settings_customize_summary">Θέμα, ενέργειες καρτελών, μενού και γραμμές</string>
     <string name="dejavu_settings_bars_2">Γραμμές</string>
     <string name="dejavu_settings_bars_summary">Ιστοσελίδα, αρχική σελίδα, πλήρης οθόνη, γραμμή καρτελών και χειρονομίες</string>
     <string name="dejavu_settings_web_page">Ιστοσελίδα</string>
@@ -520,4 +518,6 @@
     <string name="dejavu_welcome_default_done">Το Dejavu είναι το προεπιλεγμένο σας πρόγραμμα περιήγησης.</string>
     <string name="dejavu_welcome_sync_title">Οι χώροι εργασίας σας σε κάθε συσκευή</string>
     <string name="dejavu_welcome_sync_text">Συνδεθείτε με λογαριασμό Mozilla για να συγχρονίζετε χώρους εργασίας, καρφιτσωμένες καρτέλες και αγαπημένα με το Zen, ή καρτέλες με το Firefox.</string>
+    <string name="dejavu_settings_matrix">Συνομιλία στο Matrix</string>
+    <string name="dejavu_settings_matrix_summary">Κάντε μια ερώτηση, προτείνετε μια λειτουργία ή αναφέρετε ένα σφάλμα</string>
 </resources>

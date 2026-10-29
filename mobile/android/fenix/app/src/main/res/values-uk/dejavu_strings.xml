@@ -456,8 +456,6 @@
     <string name="dejavu_workspace_theme_color">Колір</string>
     <string name="dejavu_workspace_wallpaper">Шпалери</string>
     <string name="dejavu_workspace_wallpaper_hint">Зображення залишається на цьому телефоні й показується на головній сторінці. Його кольори стають темою, що синхронізується з Zen.</string>
-    <string name="dejavu_workspace_wallpaper_choose">Вибрати зображення</string>
-    <string name="dejavu_workspace_wallpaper_change">Змінити</string>
     <string name="dejavu_workspace_wallpaper_failed">Не вдалося відкрити це зображення.</string>
     <string name="dejavu_workspace_wallpaper_colors">Кольори, що синхронізуються з Zen</string>
     <string name="dejavu_workspace_wallpaper_hint_local">Зображення залишається на цьому телефоні й показується на головній сторінці.</string>
@@ -492,7 +490,7 @@
     <string name="dejavu_settings_autoclose_tabs">Автозакриття вкладок</string>
     <string name="dejavu_settings_tabs_workspaces">Вкладки, робочі простори й контейнери</string>
     <string name="dejavu_settings_tabs_workspaces_summary">Закриття й присипляння вкладок, контейнери, домівка та посилання</string>
-    <string name="dejavu_settings_customize_summary">Тема, дії для вкладок, меню, панелі, паролі та мова</string>
+    <string name="dejavu_settings_customize_summary">Тема, дії для вкладок, меню та панелі</string>
     <string name="dejavu_settings_bars_2">Панелі</string>
     <string name="dejavu_settings_bars_summary">Вебсторінка, домівка, повноекранний режим, панель вкладок і жести</string>
     <string name="dejavu_settings_web_page">Вебсторінка</string>
@@ -536,4 +534,6 @@
     <string name="dejavu_welcome_default_done">Dejavu — ваш типовий браузер.</string>
     <string name="dejavu_welcome_sync_title">Ваші робочі простори на кожному пристрої</string>
     <string name="dejavu_welcome_sync_text">Увійдіть з обліковим записом Mozilla, щоб синхронізувати робочі простори, закріплені вкладки й обране з Zen або вкладки з Firefox.</string>
+    <string name="dejavu_settings_matrix">Чат у Matrix</string>
+    <string name="dejavu_settings_matrix_summary">Поставте запитання, запропонуйте функцію або повідомте про помилку</string>
 </resources>

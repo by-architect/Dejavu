@@ -86,6 +86,7 @@ import org.mozilla.fenix.dejavu.welcome.Welcome
 import org.mozilla.fenix.dejavu.workspaces.PinPlacement
 import org.mozilla.fenix.dejavu.workspaces.PinSource
 import org.mozilla.fenix.dejavu.workspaces.PinnedItem
+import org.mozilla.fenix.dejavu.workspaces.WallpaperArt
 import org.mozilla.fenix.dejavu.workspaces.WorkspaceRepository
 import org.mozilla.fenix.dejavu.workspaces.WorkspaceState
 import org.mozilla.fenix.dejavu.workspaces.WorkspaceTheme
@@ -239,6 +240,7 @@ fun ComposeView.setDejavuHomeContent(
             val welcomeDue = Welcome.isDue(welcomeSeen, updated)
             LaunchedEffect(Unit) {
                 if (Welcome.isDue(settings.welcomeSeen.value, updated)) {
+                    Welcome.giveFirstLook(context, repository, wallpaperStore)
                     Welcome.openAtStart(navController)
                 } else if (!settings.welcomeSeen.value) {
                     settings.setWelcomeSeen(true)
@@ -336,6 +338,11 @@ private class DefaultDejavuHomeInteractor(
             workspaceId
         }
         wallpapers.set(savedId, wallpaper)
+    }
+
+    override suspend fun onDrawWallpaper(art: WallpaperArt): WorkspaceWallpaper? {
+        val screen = context.resources.displayMetrics
+        return wallpapers.importArt(art, screen.widthPixels, screen.heightPixels)
     }
 
     override suspend fun onImportWallpaper(uri: Uri): WorkspaceWallpaper? {

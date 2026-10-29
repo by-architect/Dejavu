@@ -473,8 +473,6 @@
     <string name="dejavu_workspace_theme_color">রং</string>
     <string name="dejavu_workspace_wallpaper">ওয়ালপেপার</string>
     <string name="dejavu_workspace_wallpaper_hint">ছবিটি এই ফোনেই থাকে এবং হোম পাতায় দেখায়। এর রংগুলো সেই থিম হয়ে যায়, যা Zen-এর সাথে Sync হয়।</string>
-    <string name="dejavu_workspace_wallpaper_choose">একটি ছবি বেছে নিন</string>
-    <string name="dejavu_workspace_wallpaper_change">পরিবর্তন করুন</string>
     <string name="dejavu_workspace_wallpaper_failed">এই ছবিটি খোলা যায়নি।</string>
     <string name="dejavu_workspace_wallpaper_colors">যে রংগুলো Zen-এর সাথে Sync হয়</string>
     <string name="dejavu_workspace_wallpaper_hint_local">ছবিটি এই ফোনেই থাকে এবং হোম পাতায় দেখায়।</string>
@@ -509,7 +507,7 @@
     <string name="dejavu_settings_autoclose_tabs">স্বয়ংক্রিয়ভাবে ট্যাব বন্ধ করুন</string>
     <string name="dejavu_settings_tabs_workspaces">ট্যাব, ওয়ার্কস্পেস ও কন্টেইনার</string>
     <string name="dejavu_settings_tabs_workspaces_summary">ট্যাব বন্ধ ও স্লিপ মোড, কন্টেইনার, হোম পাতা ও লিঙ্ক</string>
-    <string name="dejavu_settings_customize_summary">থিম, ট্যাব অ্যাকশন, মেনু, বার, পাসওয়ার্ড ও ভাষা</string>
+    <string name="dejavu_settings_customize_summary">থিম, ট্যাব অ্যাকশন, মেনু ও বার</string>
     <string name="dejavu_settings_bars_2">বারসমূহ</string>
     <string name="dejavu_settings_bars_summary">ওয়েব পাতা, হোম পাতা, পূর্ণ পর্দা, ট্যাব বার ও জেসচার</string>
     <string name="dejavu_settings_web_page">ওয়েব পাতা</string>
@@ -553,4 +551,6 @@
     <string name="dejavu_welcome_default_done">Dejavu এখন আপনার ডিফল্ট ব্রাউজার।</string>
     <string name="dejavu_welcome_sync_title">প্রতিটি ডিভাইসে আপনার ওয়ার্কস্পেস</string>
     <string name="dejavu_welcome_sync_text">Mozilla অ্যাকাউন্ট দিয়ে সাইন ইন করে Zen ব্রাউজারের সাথে ওয়ার্কস্পেস, পিন করা ট্যাব ও এসেনশিয়াল, অথবা Firefox ব্রাউজারের সাথে ট্যাব সিঙ্ক করুন।</string>
+    <string name="dejavu_settings_matrix">Matrix-এ চ্যাট করুন</string>
+    <string name="dejavu_settings_matrix_summary">প্রশ্ন করুন, ফিচারের পরামর্শ দিন বা বাগ রিপোর্ট করুন</string>
 </resources>

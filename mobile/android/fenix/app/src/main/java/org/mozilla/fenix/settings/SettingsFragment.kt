@@ -73,6 +73,7 @@ import org.mozilla.fenix.components.accounts.FenixFxAEntryPoint
 import org.mozilla.fenix.databinding.AmoCollectionOverrideDialogBinding
 import org.mozilla.fenix.dejavu.DejavuLinks
 import org.mozilla.fenix.dejavu.features.DejavuFeatureTourFragment
+import org.mozilla.fenix.dejavu.settings.slideTo
 import org.mozilla.fenix.e2e.SystemInsetsPaddedFragment
 import org.mozilla.fenix.ext.application
 import org.mozilla.fenix.ext.components
@@ -361,7 +362,7 @@ class SettingsFragment : PreferenceFragmentCompat(), SystemInsetsPaddedFragment 
 
         val directions: NavDirections? =
             when (preference.key) {
-                // Dejavu: what each version brought, who makes Dejavu, and a way to support it.
+                // Dejavu: what each version brought, who makes Dejavu, its chat room, and a way to support it.
                 resources.getString(R.string.pref_key_dejavu_whats_new) -> {
                     DejavuFeatureTourFragment().show(parentFragmentManager, DejavuFeatureTourFragment.TAG)
                     null
@@ -369,6 +370,11 @@ class SettingsFragment : PreferenceFragmentCompat(), SystemInsetsPaddedFragment 
 
                 resources.getString(R.string.pref_key_dejavu_author) -> {
                     openDejavuPage(DejavuLinks.SOURCE_CODE)
+                    null
+                }
+
+                resources.getString(R.string.pref_key_dejavu_matrix) -> {
+                    openDejavuPage(DejavuLinks.MATRIX)
                     null
                 }
 
@@ -402,9 +408,14 @@ class SettingsFragment : PreferenceFragmentCompat(), SystemInsetsPaddedFragment 
                 }
 
                 // Dejavu: the tabs, the homepage, where links open, the tab actions, passwords and language moved to
-                // DejavuTabsWorkspacesFragment and Customize, which open the screens they opened here.
+                // DejavuTabsWorkspacesFragment, Customize and DejavuPasswordsLanguageFragment, which open the screens
+                // they opened here.
                 resources.getString(R.string.pref_key_dejavu_tabs_workspaces) -> {
                     ActionOnlyNavDirections(R.id.dejavu_tabs_workspaces_graph)
+                }
+
+                resources.getString(R.string.pref_key_dejavu_passwords_language) -> {
+                    ActionOnlyNavDirections(R.id.dejavu_passwords_language_graph)
                 }
 
                 resources.getString(R.string.pref_key_dejavu_tracking_protection) -> {
@@ -691,7 +702,12 @@ class SettingsFragment : PreferenceFragmentCompat(), SystemInsetsPaddedFragment 
     private fun navigateFromSettings(directions: NavDirections) {
         view?.findNavController()?.let { navController ->
             if (navController.currentDestination?.id == R.id.settingsFragment) {
-                navController.navigate(directions)
+                // Dejavu: its own screens slide in from the side too, as Firefox's screens do.
+                if (directions is ActionOnlyNavDirections) {
+                    navController.slideTo(directions.actionId, directions.arguments)
+                } else {
+                    navController.navigate(directions)
+                }
             }
         }
     }

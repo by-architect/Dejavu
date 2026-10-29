@@ -456,8 +456,6 @@
     <string name="dejavu_workspace_theme_color">Колер</string>
     <string name="dejavu_workspace_wallpaper">Шпалеры</string>
     <string name="dejavu_workspace_wallpaper_hint">Выява застаецца на гэтым тэлефоне і паказваецца на галоўнай старонцы. Яе колеры становяцца тэмай, якая сінхранізуецца з Zen.</string>
-    <string name="dejavu_workspace_wallpaper_choose">Выбраць выяву</string>
-    <string name="dejavu_workspace_wallpaper_change">Змяніць</string>
     <string name="dejavu_workspace_wallpaper_failed">Не ўдалося адкрыць гэтую выяву.</string>
     <string name="dejavu_workspace_wallpaper_colors">Колеры, якія сінхранізуюцца з Zen</string>
     <string name="dejavu_workspace_wallpaper_hint_local">Выява застаецца на гэтым тэлефоне і паказваецца на галоўнай старонцы.</string>
@@ -492,7 +490,7 @@
     <string name="dejavu_settings_autoclose_tabs">Аўтаматычна закрываць карткі</string>
     <string name="dejavu_settings_tabs_workspaces">Карткі, прасторы і кантэйнеры</string>
     <string name="dejavu_settings_tabs_workspaces_summary">Закрыццё і сон картак, кантэйнеры, хатняя старонка і спасылкі</string>
-    <string name="dejavu_settings_customize_summary">Тэма, дзеянні з карткамі, меню, панэлі, паролі і мова</string>
+    <string name="dejavu_settings_customize_summary">Тэма, дзеянні з карткамі, меню і панэлі</string>
     <string name="dejavu_settings_bars_2">Панэлі</string>
     <string name="dejavu_settings_bars_summary">Вэб-старонка, хатняя старонка, поўнаэкранны рэжым, панэль картак і жэсты</string>
     <string name="dejavu_settings_web_page">Вэб-старонка</string>
@@ -536,4 +534,6 @@
     <string name="dejavu_welcome_default_done">Dejavu — ваш прадвызначаны браўзер.</string>
     <string name="dejavu_welcome_sync_title">Вашы прасторы на кожнай прыладзе</string>
     <string name="dejavu_welcome_sync_text">Увайдзіце з уліковым запісам Mozilla, каб сінхранізаваць прасторы, замацаваныя карткі і важнае з Zen або карткі з Firefox.</string>
+    <string name="dejavu_settings_matrix">Чат у Matrix</string>
+    <string name="dejavu_settings_matrix_summary">Задайце пытанне, прапануйце функцыю або паведаміце пра памылку</string>
 </resources>

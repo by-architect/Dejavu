@@ -62,7 +62,7 @@ import org.mozilla.fenix.dejavu.browser.shownWorkspaceTheme
 import org.mozilla.fenix.dejavu.browser.tabOrShown
 import org.mozilla.fenix.dejavu.browser.workspaceTheme
 import org.mozilla.fenix.dejavu.settings.DejavuSettings
-import org.mozilla.fenix.dejavu.settings.SettingsBackdrop
+import org.mozilla.fenix.dejavu.settings.PageBackdrop
 import org.mozilla.fenix.dejavu.ui.TapIcon
 import org.mozilla.fenix.dejavu.ui.rememberIconTaps
 import org.mozilla.fenix.dejavu.workspaces.SplitOrientation
@@ -297,12 +297,19 @@ internal fun runActionsBarEntry(context: Context, navController: NavController, 
         MoreMenuItem.FIND_IN_PAGE -> components.appStore.dispatch(FindInPageAction.FindInPageStarted)
         MoreMenuItem.DESKTOP_SITE ->
             components.useCases.sessionUseCases.requestDesktopSite(!tab.content.desktopMode, tab.id)
-        MoreMenuItem.PASSWORDS -> navController.nav(R.id.browserFragment, NavGraphDirections.actionLoginsListFragment())
-        MoreMenuItem.BOOKMARKS ->
+        MoreMenuItem.PASSWORDS -> PageBackdrop.openOverPage(tab.id) {
+            navController.nav(R.id.browserFragment, NavGraphDirections.actionLoginsListFragment())
+        }
+        MoreMenuItem.BOOKMARKS -> PageBackdrop.openOverPage(tab.id) {
             navController.nav(R.id.browserFragment, NavGraphDirections.actionGlobalBookmarkFragment(BookmarkRoot.Mobile.id))
-        MoreMenuItem.DOWNLOADS -> navController.nav(R.id.browserFragment, NavGraphDirections.actionGlobalDownloadsFragment())
-        MoreMenuItem.HISTORY -> navController.nav(R.id.browserFragment, NavGraphDirections.actionGlobalHistoryFragment())
-        MoreMenuItem.SETTINGS -> SettingsBackdrop.openOverPage(tab.id) {
+        }
+        MoreMenuItem.DOWNLOADS -> PageBackdrop.openOverPage(tab.id) {
+            navController.nav(R.id.browserFragment, NavGraphDirections.actionGlobalDownloadsFragment())
+        }
+        MoreMenuItem.HISTORY -> PageBackdrop.openOverPage(tab.id) {
+            navController.nav(R.id.browserFragment, NavGraphDirections.actionGlobalHistoryFragment())
+        }
+        MoreMenuItem.SETTINGS -> PageBackdrop.openOverPage(tab.id) {
             navController.nav(R.id.browserFragment, NavGraphDirections.actionGlobalSettingsFragment())
         }
         MoreMenuItem.OPEN_IN_APP -> {

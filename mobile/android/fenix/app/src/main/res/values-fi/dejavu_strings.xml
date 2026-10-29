@@ -440,8 +440,6 @@
     <string name="dejavu_workspace_theme_color">Väri</string>
     <string name="dejavu_workspace_wallpaper">Taustakuva</string>
     <string name="dejavu_workspace_wallpaper_hint">Kuva pysyy tässä puhelimessa ja näkyy aloitussivulla. Sen väreistä tulee teema, joka synkronoituu Zenin kanssa.</string>
-    <string name="dejavu_workspace_wallpaper_choose">Valitse kuva</string>
-    <string name="dejavu_workspace_wallpaper_change">Vaihda</string>
     <string name="dejavu_workspace_wallpaper_failed">Tätä kuvaa ei voitu avata.</string>
     <string name="dejavu_workspace_wallpaper_colors">Zenin kanssa synkronoituvat värit</string>
     <string name="dejavu_workspace_wallpaper_hint_local">Kuva pysyy tässä puhelimessa ja näkyy aloitussivulla.</string>
@@ -476,7 +474,7 @@
     <string name="dejavu_settings_autoclose_tabs">Välilehtien automaattinen sulkeminen</string>
     <string name="dejavu_settings_tabs_workspaces">Välilehdet, työtilat ja säiliöt</string>
     <string name="dejavu_settings_tabs_workspaces_summary">Välilehtien sulkeminen ja lepotila, säiliöt, kotisivu ja linkit</string>
-    <string name="dejavu_settings_customize_summary">Teema, välilehtitoiminnot, valikko, palkit, salasanat ja kieli</string>
+    <string name="dejavu_settings_customize_summary">Teema, välilehtitoiminnot, valikko ja palkit</string>
     <string name="dejavu_settings_bars_2">Palkit</string>
     <string name="dejavu_settings_bars_summary">Verkkosivu, kotisivu, koko näyttö, välilehtipalkki ja eleet</string>
     <string name="dejavu_settings_web_page">Verkkosivu</string>
@@ -520,4 +518,6 @@
     <string name="dejavu_welcome_default_done">Dejavu on oletusselaimesi.</string>
     <string name="dejavu_welcome_sync_title">Työtilasi kaikilla laitteilla</string>
     <string name="dejavu_welcome_sync_text">Kirjaudu Mozilla-tilillä ja synkronoi työtilat, kiinnitetyt välilehdet ja suosikit Zenin kanssa tai välilehdet Firefoxin kanssa.</string>
+    <string name="dejavu_settings_matrix">Keskustele Matrixissa</string>
+    <string name="dejavu_settings_matrix_summary">Esitä kysymys, ehdota ominaisuutta tai ilmoita virheestä</string>
 </resources>

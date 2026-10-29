@@ -440,8 +440,6 @@
     <string name="dejavu_workspace_theme_color">Sa\'y</string>
     <string name="dejavu_workspace_wallpaper">Mba\'erechaha rugua</string>
     <string name="dejavu_workspace_wallpaper_hint">Ta\'ãnga opyta ko pumbyrýpe ha ojehechauka óga kuatiaroguépe. Isa\'y oiko pe tema oñesincronizáva Zen ndive.</string>
-    <string name="dejavu_workspace_wallpaper_choose">Eiporavo peteĩ ta\'ãnga</string>
-    <string name="dejavu_workspace_wallpaper_change">Emoambue</string>
     <string name="dejavu_workspace_wallpaper_failed">Ndaikatúi ojejuruja ko ta\'ãnga.</string>
     <string name="dejavu_workspace_wallpaper_colors">Sa\'y oñesincronizáva Zen ndive</string>
     <string name="dejavu_workspace_wallpaper_hint_local">Ta\'ãnga opyta ko pumbyrýpe ha ojehechauka óga kuatiaroguépe.</string>
@@ -476,7 +474,7 @@
     <string name="dejavu_settings_autoclose_tabs">Tendayke mboty jehegui</string>
     <string name="dejavu_settings_tabs_workspaces">Tendayke, tembiapo renda ha ryrukuéra</string>
     <string name="dejavu_settings_tabs_workspaces_summary">Tendayke mboty ha mboke, ryrukuéra, kuatiarogue ñepyrũ ha enlace</string>
-    <string name="dejavu_settings_customize_summary">Téma, tendayke rembiapo, menu, barrakuéra, ñe’ẽñemi ha ñe’ẽ</string>
+    <string name="dejavu_settings_customize_summary">Téma, tendayke rembiapo, menu ha barrakuéra</string>
     <string name="dejavu_settings_bars_2">Barrakuéra</string>
     <string name="dejavu_settings_bars_summary">Ñandutirovetã, kuatiarogue ñepyrũ, mba’erechaha tuichavéva, tendayke rupa ha ñeha’ãnga</string>
     <string name="dejavu_settings_web_page">Ñandutirovetã</string>
@@ -520,4 +518,6 @@
     <string name="dejavu_welcome_default_done">Dejavu ha\'e ne kundahára ypykuéva.</string>
     <string name="dejavu_welcome_sync_title">Ne tembiapo renda opaite mba\'e\'okápe</string>
     <string name="dejavu_welcome_sync_text">Eike peteĩ kuenta Mozilla-gua reheve esincroniza hag̃ua tembiapo renda, tendayke mboguapypyre ha iporãvéva Zen ndive, térã tendayke Firefox ndive.</string>
+    <string name="dejavu_settings_matrix">Eñomongeta Matrix-pe</string>
+    <string name="dejavu_settings_matrix_summary">Eporandu, eikuave’ẽ peteĩ mba’e pyahu térã emomarandu peteĩ jejavy</string>
 </resources>

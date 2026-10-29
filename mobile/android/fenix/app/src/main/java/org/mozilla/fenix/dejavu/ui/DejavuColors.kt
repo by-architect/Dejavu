@@ -21,54 +21,41 @@ import mozilla.components.compose.base.theme.oledColorPalette
 import mozilla.components.compose.base.utils.ColorStop
 
 /**
- * Dejavu's golden yellow look, on gold tinted charcoal in the dark themes and gold tinted paper in the light one. Private browsing
- * keeps Firefox's purple. The same colors are in `dejavu_colors.xml` for the screens made of views.
+ * Dejavu's neutral look: dark grays in the dark themes and light ones in the light theme, with a near white or near
+ * black accent, so the colors come from the themes and wallpapers of the workspaces. Private browsing keeps Firefox's
+ * purple. The same colors are in `dejavu_colors.xml` for the screens made of views; each gray is named after its
+ * lightness, from 0 for black to 100.
  */
 object DejavuColors {
-    private val Gold10 = Color(0xFF261A00)
-    private val Gold20 = Color(0xFF3F2E00)
-    private val Gold30 = Color(0xFF5C4200)
-    private val Gold45 = Color(0xFF8C6300)
-    private val Gold80 = Color(0xFFFFC83D)
-    private val Gold90 = Color(0xFFFFDF9E)
+    private val Gray6 = Color(0xFF121212)
+    private val Gray7 = Color(0xFF161616)
+    private val Gray10 = Color(0xFF1B1B1B)
+    private val Gray10A70 = Color(0xB21B1B1B)
+    private val Gray14 = Color(0xFF232323)
+    private val Gray18 = Color(0xFF2B2B2B)
+    private val Gray19 = Color(0xFF2E2E2E)
+    private val Gray20 = Color(0xFF303030)
+    private val Gray25 = Color(0xFF3C3C3C)
+    private val Gray27 = Color(0xFF404040)
+    private val Gray30 = Color(0xFF464646)
+    private val Gray33 = Color(0xFF4D4D4D)
+    private val Gray42 = Color(0xFF626262)
+    private val Gray45 = Color(0xFF6A6A6A)
+    private val Gray52 = Color(0xFF7C7C7C)
+    private val Gray60 = Color(0xFF909090)
+    private val Gray73 = Color(0xFFB3B3B3)
+    private val Gray79 = Color(0xFFC4C4C4)
+    private val Gray81 = Color(0xFFC9C9C9)
+    private val Gray84 = Color(0xFFD1D1D1)
+    private val Gray90 = Color(0xFFE3E3E3)
+    private val Gray91 = Color(0xFFE6E6E6)
+    private val Gray94 = Color(0xFFEDEDED)
+    private val Gray95 = Color(0xFFF0F0F0)
+    private val Gray95A70 = Color(0xB2F0F0F0)
+    private val Gray96 = Color(0xFFF3F3F3)
+    private val Gray97 = Color(0xFFF6F6F6)
+    private val Gray99 = Color(0xFFFBFBFB)
 
-    private val Sand10 = Color(0xFF2A2010)
-    private val Sand20 = Color(0xFF3D2E14)
-    private val Sand30 = Color(0xFF4A3F2C)
-    private val Sand35 = Color(0xFF332A1C)
-    private val Sand80 = Color(0xFFDDC7A0)
-    private val Sand90 = Color(0xFFF3E5C8)
-
-    private val Amber20 = Color(0xFF472A00)
-    private val Amber40 = Color(0xFF9C5700)
-    private val Amber90 = Color(0xFF2E1500)
-    private val Amber80 = Color(0xFFF5BD7A)
-    private val Amber95 = Color(0xFFFFF1DC)
-
-    private val Warm0 = Color(0xFFFFFBF5)
-    private val Warm10 = Color(0xFFF2EDE4)
-    private val Warm15 = Color(0xFFE8E2D7)
-    private val Warm20 = Color(0xFFD9D2C6)
-    private val Warm25 = Color(0xFFCAC3B7)
-    private val Warm30 = Color(0xFFB9B2A6)
-    private val Warm40 = Color(0xFF978F83)
-    private val Warm45 = Color(0xFF827B70)
-    private val Warm50 = Color(0xFF686157)
-    private val Warm55 = Color(0xFF524C44)
-    private val Warm60 = Color(0xFF403B34)
-    private val Warm65 = Color(0xFF322E28)
-    private val Warm70 = Color(0xFF26231E)
-    private val Warm80 = Color(0xFF181613)
-    private val Warm85 = Color(0xFF13120F)
-    private val Warm90 = Color(0xFF12110E)
-
-    private val Gilt5 = Color(0xFFFBF6E8)
-    private val Gilt75 = Color(0xFF1F1B11)
-
-    private val Ink = Color(0xFF1F1B13)
-    private val InkA70 = Color(0xB21F1B13)
-    private val Paper = Color(0xFFF5F0E6)
-    private val PaperA70 = Color(0xB2F5F0E6)
     private val Scrim = Color(0x80000000)
     private val White = Color(0xFFFFFFFF)
     private val Black = Color(0xFF000000)
@@ -96,155 +83,155 @@ object DejavuColors {
         Theme.Private -> null
     }
 
-    private fun goldGradient(from: Color, to: Color) = AcornGradient(
+    private fun accentGradient(from: Color, to: Color) = AcornGradient(
         type = AcornGradientType.Linear(angleInDegrees = GRADIENT_ANGLE),
         colorStops = listOf(ColorStop(0f, from), ColorStop(GRADIENT_END, to)),
     )
 
-    private val lightGradients = goldGradient(Color(0xFFD9A100), Gold45).let {
+    private val lightGradients = accentGradient(Gray45, Gray19).let {
         lightAcornGradientScheme.copy(accent = it, tabOutline = it)
     }
 
-    private val darkGradients = goldGradient(Gold90, Gold80).let {
+    private val darkGradients = accentGradient(Gray95, Gray81).let {
         darkAcornGradientScheme.copy(accent = it, tabOutline = it)
     }
 
     private val lightPalette = lightColorPalette.copy(
-        information = Gold45,
+        information = Gray19,
         onInformation = White,
-        informationContainer = Gold90,
-        onInformationContainer = Gold10,
-        surfaceDimVariant = Warm10,
-        surfaceContainerSelected = Warm25,
-        autofillText = Warm30,
-        selectedText = Warm25,
-        sheetOutline = Gilt5,
+        informationContainer = Gray90,
+        onInformationContainer = Gray10,
+        surfaceDimVariant = Gray94,
+        surfaceContainerSelected = Gray79,
+        autofillText = Gray73,
+        selectedText = Gray79,
+        sheetOutline = Gray97,
     )
 
     private val darkPalette = darkColorPalette.copy(
-        information = Gold80,
-        onInformation = Gold20,
-        informationContainer = Gold30,
-        onInformationContainer = Gold90,
-        surfaceDimVariant = Warm80,
-        surfaceContainerSelected = Warm55,
-        autofillText = Sand80.copy(alpha = AUTOFILL_ALPHA),
-        selectedText = Warm45,
-        sheetOutline = Gilt75,
+        information = Gray90,
+        onInformation = Gray20,
+        informationContainer = Gray30,
+        onInformationContainer = Gray90,
+        surfaceDimVariant = Gray7,
+        surfaceContainerSelected = Gray33,
+        autofillText = Gray81.copy(alpha = AUTOFILL_ALPHA),
+        selectedText = Gray52,
+        sheetOutline = Gray10,
     )
 
     private val oledPalette = oledColorPalette.copy(
-        information = Gold80,
-        onInformation = Gold20,
-        informationContainer = Gold30,
-        onInformationContainer = Warm20,
-        surfaceDimVariant = Warm90,
-        surfaceContainerSelected = Warm65,
-        autofillText = Sand30,
-        selectedText = Warm60,
-        sheetOutline = Warm65,
+        information = Gray90,
+        onInformation = Gray20,
+        informationContainer = Gray30,
+        onInformationContainer = Gray84,
+        surfaceDimVariant = Gray6,
+        surfaceContainerSelected = Gray19,
+        autofillText = Gray27,
+        selectedText = Gray25,
+        sheetOutline = Gray19,
     )
 
     private val dark: ColorScheme = darkColorScheme(
-        primary = Gold80,
-        onPrimary = Gold20,
-        primaryContainer = Gold30,
-        onPrimaryContainer = Gold90,
-        // Snackbars and tooltips are black in the dark themes, with gold buttons.
-        inversePrimary = Gold80,
-        secondary = Sand80,
-        onSecondary = Sand20,
-        secondaryContainer = Sand30,
-        onSecondaryContainer = Sand90,
-        tertiary = Amber80,
-        onTertiary = Amber20,
-        tertiaryContainer = Sand35,
-        onTertiaryContainer = Paper,
-        background = Gilt75,
-        onBackground = Paper,
-        surface = Gilt75,
-        onSurface = Paper,
-        surfaceVariant = Warm65,
-        onSurfaceVariant = PaperA70,
-        surfaceTint = Warm50,
+        primary = Gray90,
+        onPrimary = Gray10,
+        primaryContainer = Gray30,
+        onPrimaryContainer = Gray90,
+        // Snackbars and tooltips are black in the dark themes, with light buttons.
+        inversePrimary = Gray90,
+        secondary = Gray81,
+        onSecondary = Gray20,
+        secondaryContainer = Gray27,
+        onSecondaryContainer = Gray91,
+        tertiary = Gray81,
+        onTertiary = Gray20,
+        tertiaryContainer = Gray18,
+        onTertiaryContainer = Gray95,
+        background = Gray10,
+        onBackground = Gray95,
+        surface = Gray10,
+        onSurface = Gray95,
+        surfaceVariant = Gray19,
+        onSurfaceVariant = Gray95A70,
+        surfaceTint = Gray42,
         inverseSurface = Black,
-        inverseOnSurface = Paper,
+        inverseOnSurface = Gray95,
         error = Color(0xFFFF8090),
-        onError = Warm80,
+        onError = Gray7,
         errorContainer = Color(0xFF69172D),
-        onErrorContainer = Paper,
-        outline = Warm45,
-        outlineVariant = Warm60,
+        onErrorContainer = Gray95,
+        outline = Gray52,
+        outlineVariant = Gray25,
         scrim = Scrim,
-        surfaceBright = Warm65,
-        surfaceDim = Warm85,
-        surfaceContainer = Gilt75,
-        surfaceContainerHigh = Warm70,
-        surfaceContainerHighest = Warm65,
-        surfaceContainerLow = Warm80,
-        surfaceContainerLowest = Warm85,
+        surfaceBright = Gray19,
+        surfaceDim = Gray6,
+        surfaceContainer = Gray10,
+        surfaceContainerHigh = Gray14,
+        surfaceContainerHighest = Gray19,
+        surfaceContainerLow = Gray7,
+        surfaceContainerLowest = Gray6,
     )
 
     private val oled: ColorScheme = dark.copy(
-        onPrimaryContainer = Warm20,
-        secondaryContainer = Sand35,
-        onSecondaryContainer = Warm20,
-        tertiaryContainer = Warm90,
-        onTertiaryContainer = Warm20,
+        onPrimaryContainer = Gray84,
+        secondaryContainer = Gray18,
+        onSecondaryContainer = Gray84,
+        tertiaryContainer = Gray6,
+        onTertiaryContainer = Gray84,
         background = Black,
-        onBackground = Warm20,
+        onBackground = Gray84,
         surface = Black,
-        onSurface = Warm20,
-        onSurfaceVariant = Warm40,
+        onSurface = Gray84,
+        onSurfaceVariant = Gray60,
         errorContainer = Color(0xFF42121F),
-        onErrorContainer = Warm20,
-        outline = Warm50,
-        outlineVariant = Warm65,
-        surfaceBright = Warm80,
+        onErrorContainer = Gray84,
+        outline = Gray42,
+        outlineVariant = Gray19,
+        surfaceBright = Gray7,
         surfaceDim = Black,
         surfaceContainer = Black,
-        surfaceContainerHigh = Warm90,
-        surfaceContainerHighest = Warm80,
-        surfaceContainerLow = Warm90,
+        surfaceContainerHigh = Gray6,
+        surfaceContainerHighest = Gray7,
+        surfaceContainerLow = Gray6,
         surfaceContainerLowest = Black,
     )
 
     private val light: ColorScheme = lightColorScheme(
-        primary = Gold45,
+        primary = Gray19,
         onPrimary = White,
-        primaryContainer = Gold90,
-        onPrimaryContainer = Gold10,
-        inversePrimary = Gold80,
-        secondary = Warm50,
+        primaryContainer = Gray90,
+        onPrimaryContainer = Gray10,
+        inversePrimary = Gray90,
+        secondary = Gray42,
         onSecondary = White,
-        secondaryContainer = Sand90,
-        onSecondaryContainer = Sand10,
-        tertiary = Amber40,
+        secondaryContainer = Gray91,
+        onSecondaryContainer = Gray14,
+        tertiary = Gray45,
         onTertiary = White,
-        tertiaryContainer = Amber95,
-        onTertiaryContainer = Amber90,
-        background = Gilt5,
-        onBackground = Ink,
-        surface = Gilt5,
-        onSurface = Ink,
-        surfaceVariant = Warm15,
-        onSurfaceVariant = InkA70,
-        surfaceTint = Warm30,
-        inverseSurface = Warm70,
+        tertiaryContainer = Gray96,
+        onTertiaryContainer = Gray10,
+        background = Gray97,
+        onBackground = Gray10,
+        surface = Gray97,
+        onSurface = Gray10,
+        surfaceVariant = Gray90,
+        onSurfaceVariant = Gray10A70,
+        surfaceTint = Gray73,
+        inverseSurface = Gray14,
         inverseOnSurface = White,
         error = Color(0xFFC52D4F),
         onError = White,
         errorContainer = Color(0xFFFFD0D7),
-        onErrorContainer = Ink,
-        outline = Warm45,
-        outlineVariant = Warm15,
+        onErrorContainer = Gray10,
+        outline = Gray52,
+        outlineVariant = Gray90,
         scrim = Scrim,
         surfaceBright = White,
-        surfaceDim = Warm15,
-        surfaceContainer = Gilt5,
-        surfaceContainerHigh = Warm10,
-        surfaceContainerHighest = Warm15,
-        surfaceContainerLow = Warm0,
+        surfaceDim = Gray90,
+        surfaceContainer = Gray97,
+        surfaceContainerHigh = Gray94,
+        surfaceContainerHighest = Gray90,
+        surfaceContainerLow = Gray99,
         surfaceContainerLowest = White,
     )
 

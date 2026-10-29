@@ -440,8 +440,6 @@
     <string name="dejavu_workspace_theme_color">Գույն</string>
     <string name="dejavu_workspace_wallpaper">Պաստառ</string>
     <string name="dejavu_workspace_wallpaper_hint">Պատկերը մնում է այս հեռախոսում և ցուցադրվում է գլխավոր էջում։ Դրա գույները դառնում են այն թեման, որը համաժամացվում է Zen֊ի հետ։</string>
-    <string name="dejavu_workspace_wallpaper_choose">Ընտրել պատկեր</string>
-    <string name="dejavu_workspace_wallpaper_change">Փոխել</string>
     <string name="dejavu_workspace_wallpaper_failed">Չհաջողվեց բացել այս պատկերը։</string>
     <string name="dejavu_workspace_wallpaper_colors">Գույներ, որոնք համաժամացվում են Zen֊ի հետ</string>
     <string name="dejavu_workspace_wallpaper_hint_local">Պատկերը մնում է այս հեռախոսում և ցուցադրվում է գլխավոր էջում։</string>
@@ -476,7 +474,7 @@
     <string name="dejavu_settings_autoclose_tabs">Ինքնափակել ներդիրները</string>
     <string name="dejavu_settings_tabs_workspaces">Ներդիրներ, տարածքներ և կոնտեյներներ</string>
     <string name="dejavu_settings_tabs_workspaces_summary">Ներդիրների փակում և քնեցում, կոնտեյներներ, տնէջ և հղումներ</string>
-    <string name="dejavu_settings_customize_summary">Ոճ, ներդիրի գործողություններ, ցանկ, գոտիներ, գաղտնաբառեր և լեզու</string>
+    <string name="dejavu_settings_customize_summary">Ոճ, ներդիրի գործողություններ, ցանկ և գոտիներ</string>
     <string name="dejavu_settings_bars_2">Գոտիներ</string>
     <string name="dejavu_settings_bars_summary">Վեբ էջ, տնէջ, լիաէկրան, ներդիրների գոտի և ժեստեր</string>
     <string name="dejavu_settings_web_page">Վեբ էջ</string>
@@ -520,4 +518,6 @@
     <string name="dejavu_welcome_default_done">Ձեր սկզբնադիր դիտարկիչը Dejavu է։</string>
     <string name="dejavu_welcome_sync_title">Ձեր տարածքները բոլոր սարքերում</string>
     <string name="dejavu_welcome_sync_text">Մուտք գործեք Mozilla հաշվով՝ տարածքները, ամրացված ներդիրներն ու կարևոր կայքերը Zen դիտարկիչի հետ, կամ ներդիրները Firefox դիտարկիչի հետ համաժամացնելու համար։</string>
+    <string name="dejavu_settings_matrix">Զրուցեք Matrix֊ում</string>
+    <string name="dejavu_settings_matrix_summary">Հարց տվեք, առաջարկեք գործառույթ կամ հայտնեք սխալի մասին</string>
 </resources>

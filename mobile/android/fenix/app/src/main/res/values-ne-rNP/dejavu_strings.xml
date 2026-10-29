@@ -440,8 +440,6 @@
     <string name="dejavu_workspace_theme_color">रङ</string>
     <string name="dejavu_workspace_wallpaper">वालपेपर</string>
     <string name="dejavu_workspace_wallpaper_hint">तस्वीर यही फोनमा रहन्छ र होम पृष्ठमा देखिन्छ। यसका रङहरु Zen सँग सिंक हुने थिम बन्छन्।</string>
-    <string name="dejavu_workspace_wallpaper_choose">तस्वीर छान्नुहोस्</string>
-    <string name="dejavu_workspace_wallpaper_change">बदल्नुहोस्</string>
     <string name="dejavu_workspace_wallpaper_failed">यो तस्वीर खोल्न सकिएन।</string>
     <string name="dejavu_workspace_wallpaper_colors">Zen सँग सिंक हुने रङहरु</string>
     <string name="dejavu_workspace_wallpaper_hint_local">तस्वीर यही फोनमा रहन्छ र होम पृष्ठमा देखिन्छ।</string>
@@ -476,7 +474,7 @@
     <string name="dejavu_settings_autoclose_tabs">ट्याबहरु स्वतः बन्द गर्नुहोस्</string>
     <string name="dejavu_settings_tabs_workspaces">ट्याबहरु, कार्यक्षेत्रहरु र कन्टेनरहरु</string>
     <string name="dejavu_settings_tabs_workspaces_summary">ट्याबहरु बन्द गर्ने र स्लीपमा राख्ने, कन्टेनरहरु, गृहपृष्ठ र लिङ्कहरु</string>
-    <string name="dejavu_settings_customize_summary">थीम, ट्याब कार्यहरु, मेनु, पट्टीहरु, पासवर्डहरु र भाषा</string>
+    <string name="dejavu_settings_customize_summary">थीम, ट्याब कार्यहरु, मेनु र पट्टीहरु</string>
     <string name="dejavu_settings_bars_2">पट्टीहरु</string>
     <string name="dejavu_settings_bars_summary">वेब पृष्ठ, गृहपृष्ठ, पूर्ण स्क्रिन, ट्याब पट्टी र इशाराहरु</string>
     <string name="dejavu_settings_web_page">वेब पृष्ठ</string>
@@ -520,4 +518,6 @@
     <string name="dejavu_welcome_default_done">Dejavu तपाईंको पूर्वनिर्धारित ब्राउजर हो।</string>
     <string name="dejavu_welcome_sync_title">हरेक उपकरणमा तपाईंका कार्यक्षेत्रहरु</string>
     <string name="dejavu_welcome_sync_text">कार्यक्षेत्र, पिन गरिएका ट्याब र आवश्यकलाई Zen सँग, वा ट्याबहरुलाई Firefox सँग सिंक गर्न Mozilla खातामार्फत साइन इन गर्नुहोस्।</string>
+    <string name="dejavu_settings_matrix">Matrix मा च्याट गर्नुहोस्</string>
+    <string name="dejavu_settings_matrix_summary">प्रश्न सोध्नुहोस्, सुविधा सुझाउनुहोस् वा त्रुटि रिपोर्ट गर्नुहोस्</string>
 </resources>

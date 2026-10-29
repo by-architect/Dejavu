@@ -440,8 +440,6 @@
     <string name="dejavu_workspace_theme_color">Kleur</string>
     <string name="dejavu_workspace_wallpaper">Achtergrond</string>
     <string name="dejavu_workspace_wallpaper_hint">De afbeelding blijft op deze telefoon en wordt getoond op de startpagina. De kleuren ervan worden het thema dat met Zen wordt gesynchroniseerd.</string>
-    <string name="dejavu_workspace_wallpaper_choose">Afbeelding kiezen</string>
-    <string name="dejavu_workspace_wallpaper_change">Wijzigen</string>
     <string name="dejavu_workspace_wallpaper_failed">Deze afbeelding kon niet worden geopend.</string>
     <string name="dejavu_workspace_wallpaper_colors">Kleuren die met Zen worden gesynchroniseerd</string>
     <string name="dejavu_workspace_wallpaper_hint_local">De afbeelding blijft op deze telefoon en wordt getoond op de startpagina.</string>
@@ -476,7 +474,7 @@
     <string name="dejavu_settings_autoclose_tabs">Tabbladen automatisch sluiten</string>
     <string name="dejavu_settings_tabs_workspaces">Tabbladen, werkruimtes en containers</string>
     <string name="dejavu_settings_tabs_workspaces_summary">Tabbladen sluiten en laten slapen, containers, startpagina en links</string>
-    <string name="dejavu_settings_customize_summary">Thema, tabbladacties, menu, balken, wachtwoorden en taal</string>
+    <string name="dejavu_settings_customize_summary">Thema, tabbladacties, menu en balken</string>
     <string name="dejavu_settings_bars_2">Balken</string>
     <string name="dejavu_settings_bars_summary">Webpagina, startpagina, volledig scherm, tabbladenbalk en bewegingen</string>
     <string name="dejavu_settings_web_page">Webpagina</string>
@@ -520,4 +518,6 @@
     <string name="dejavu_welcome_default_done">Dejavu is je standaardbrowser.</string>
     <string name="dejavu_welcome_sync_title">Je werkruimtes op elk apparaat</string>
     <string name="dejavu_welcome_sync_text">Meld je aan met een Mozilla-account om werkruimtes, vastgemaakte tabbladen en favorieten met Zen te synchroniseren, of tabbladen met Firefox.</string>
+    <string name="dejavu_settings_matrix">Chat op Matrix</string>
+    <string name="dejavu_settings_matrix_summary">Vraag iets, stel een functie voor of meld een bug</string>
 </resources>

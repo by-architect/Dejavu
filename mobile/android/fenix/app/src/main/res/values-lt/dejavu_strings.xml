@@ -456,8 +456,6 @@
     <string name="dejavu_workspace_theme_color">Spalva</string>
     <string name="dejavu_workspace_wallpaper">Fonas</string>
     <string name="dejavu_workspace_wallpaper_hint">Paveikslėlis lieka šiame telefone ir rodomas pradžios puslapyje. Jo spalvos tampa tema, kuri sinchronizuojama su Zen.</string>
-    <string name="dejavu_workspace_wallpaper_choose">Pasirinkti paveikslėlį</string>
-    <string name="dejavu_workspace_wallpaper_change">Keisti</string>
     <string name="dejavu_workspace_wallpaper_failed">Nepavyko atverti šio paveikslėlio.</string>
     <string name="dejavu_workspace_wallpaper_colors">Spalvos, sinchronizuojamos su Zen</string>
     <string name="dejavu_workspace_wallpaper_hint_local">Paveikslėlis lieka šiame telefone ir rodomas pradžios puslapyje.</string>
@@ -492,7 +490,7 @@
     <string name="dejavu_settings_autoclose_tabs">Automatinis kortelių užvėrimas</string>
     <string name="dejavu_settings_tabs_workspaces">Kortelės, darbo erdvės ir konteineriai</string>
     <string name="dejavu_settings_tabs_workspaces_summary">Kortelių užvėrimas ir užmigdymas, konteineriai, pradžios tinklalapis ir nuorodos</string>
-    <string name="dejavu_settings_customize_summary">Grafinis apvalkalas, kortelių veiksmai, meniu, juostos, slaptažodžiai ir kalba</string>
+    <string name="dejavu_settings_customize_summary">Grafinis apvalkalas, kortelių veiksmai, meniu ir juostos</string>
     <string name="dejavu_settings_bars_2">Juostos</string>
     <string name="dejavu_settings_bars_summary">Tinklalapis, pradžios tinklalapis, visas ekranas, kortelių juosta ir gestai</string>
     <string name="dejavu_settings_web_page">Tinklalapis</string>
@@ -536,4 +534,6 @@
     <string name="dejavu_welcome_default_done">Dejavu yra jūsų numatytoji naršyklė.</string>
     <string name="dejavu_welcome_sync_title">Jūsų darbo erdvės visuose įrenginiuose</string>
     <string name="dejavu_welcome_sync_text">Prisijunkite prie Mozilla paskyros, kad sinchronizuotumėte darbo erdves, prisegtas korteles ir Mėgstamiausius su Zen arba korteles su Firefox.</string>
+    <string name="dejavu_settings_matrix">Pokalbiai Matrix tinkle</string>
+    <string name="dejavu_settings_matrix_summary">Užduokite klausimą, pasiūlykite funkciją arba praneškite apie klaidą</string>
 </resources>

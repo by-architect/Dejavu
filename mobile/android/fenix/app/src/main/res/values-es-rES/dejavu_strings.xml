@@ -448,8 +448,6 @@
     <string name="dejavu_workspace_theme_color">Color</string>
     <string name="dejavu_workspace_wallpaper">Fondo de pantalla</string>
     <string name="dejavu_workspace_wallpaper_hint">La imagen se queda en este teléfono y se muestra en la página de inicio. Sus colores pasan a ser el tema que se sincroniza con Zen.</string>
-    <string name="dejavu_workspace_wallpaper_choose">Elegir una imagen</string>
-    <string name="dejavu_workspace_wallpaper_change">Cambiar</string>
     <string name="dejavu_workspace_wallpaper_failed">No se ha podido abrir esta imagen.</string>
     <string name="dejavu_workspace_wallpaper_colors">Colores que se sincronizan con Zen</string>
     <string name="dejavu_workspace_wallpaper_hint_local">La imagen se queda en este teléfono y se muestra en la página de inicio.</string>
@@ -484,7 +482,7 @@
     <string name="dejavu_settings_autoclose_tabs">Cierre automático de pestañas</string>
     <string name="dejavu_settings_tabs_workspaces">Pestañas, espacios de trabajo y contenedores</string>
     <string name="dejavu_settings_tabs_workspaces_summary">Cierre y suspensión de pestañas, contenedores, página de inicio y enlaces</string>
-    <string name="dejavu_settings_customize_summary">Tema, acciones de pestañas, menú, barras, contraseñas e idioma</string>
+    <string name="dejavu_settings_customize_summary">Tema, acciones de pestañas, menú y barras</string>
     <string name="dejavu_settings_bars_2">Barras</string>
     <string name="dejavu_settings_bars_summary">Página web, página de inicio, pantalla completa, barra de pestañas y gestos</string>
     <string name="dejavu_settings_web_page">Página web</string>
@@ -528,4 +526,6 @@
     <string name="dejavu_welcome_default_done">Dejavu es tu navegador predeterminado.</string>
     <string name="dejavu_welcome_sync_title">Tus espacios de trabajo en todos tus dispositivos</string>
     <string name="dejavu_welcome_sync_text">Inicia sesión con una cuenta de Mozilla para sincronizar espacios de trabajo, pestañas fijadas y esenciales con Zen, o pestañas con Firefox.</string>
+    <string name="dejavu_settings_matrix">Chatea en Matrix</string>
+    <string name="dejavu_settings_matrix_summary">Haz una pregunta, sugiere una función o informa de un error</string>
 </resources>

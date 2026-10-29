@@ -432,8 +432,6 @@
     <string name="dejavu_workspace_theme_color">kule</string>
     <string name="dejavu_workspace_wallpaper">selo kule</string>
     <string name="dejavu_workspace_wallpaper_hint">sitelen li awen lon ilo kalama ni taso, li lon lipu tomo. kule ona li kama kule pi kulupu poki, li sama lon Zen.</string>
-    <string name="dejavu_workspace_wallpaper_choose">o wile e sitelen</string>
-    <string name="dejavu_workspace_wallpaper_change">o ante</string>
     <string name="dejavu_workspace_wallpaper_failed">pakala la mi ken ala open e sitelen ni.</string>
     <string name="dejavu_workspace_wallpaper_colors">kule pi sama kepeken Zen</string>
     <string name="dejavu_workspace_wallpaper_hint_local">sitelen li awen lon ilo kalama ni taso, li lon lipu tomo.</string>
@@ -468,7 +466,7 @@
     <string name="dejavu_settings_autoclose_tabs">o pini e poki kepeken lawa sina ala</string>
     <string name="dejavu_settings_tabs_workspaces">poki, kulupu poki, en leko</string>
     <string name="dejavu_settings_tabs_workspaces_summary">pini poki, poki lape, leko, lipu open, en nasin lipu</string>
-    <string name="dejavu_settings_customize_summary">kule, pali pi poki, ilo mute, linja, nimi open, en toki ilo</string>
+    <string name="dejavu_settings_customize_summary">kule, pali pi poki, ilo mute, en linja</string>
     <string name="dejavu_settings_bars_2">linja</string>
     <string name="dejavu_settings_bars_summary">lipu linluwi, lipu open, lukin suli, linja poki, en pilin nena</string>
     <string name="dejavu_settings_web_page">lipu linluwi</string>
@@ -512,4 +510,6 @@
     <string name="dejavu_welcome_default_done">ilo Dejavu li open e lipu ale sina.</string>
     <string name="dejavu_welcome_sync_title">kulupu poki sina lon ilo ale sina</string>
     <string name="dejavu_welcome_sync_text">o kepeken e nimi Mozilla. ni la, sina ken sama e kulupu poki e poki awen e lipu suli kepeken ilo Zen, anu e poki kepeken ilo Firefox.</string>
+    <string name="dejavu_settings_matrix">o toki lon ilo Matrix</string>
+    <string name="dejavu_settings_matrix_summary">o toki e wile sona, e wile pi ijo sin anu e pakala</string>
 </resources>

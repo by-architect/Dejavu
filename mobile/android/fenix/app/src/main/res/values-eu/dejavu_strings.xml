@@ -440,8 +440,6 @@
     <string name="dejavu_workspace_theme_color">Kolorea</string>
     <string name="dejavu_workspace_wallpaper">Horma-papera</string>
     <string name="dejavu_workspace_wallpaper_hint">Irudia telefono honetan geratzen da eta hasierako orrian erakusten da. Bere koloreak Zenekin sinkronizatzen den gaia bihurtzen dira.</string>
-    <string name="dejavu_workspace_wallpaper_choose">Aukeratu irudi bat</string>
-    <string name="dejavu_workspace_wallpaper_change">Aldatu</string>
     <string name="dejavu_workspace_wallpaper_failed">Ezin izan da irudi hau ireki.</string>
     <string name="dejavu_workspace_wallpaper_colors">Zenekin sinkronizatzen diren koloreak</string>
     <string name="dejavu_workspace_wallpaper_hint_local">Irudia telefono honetan geratzen da eta hasierako orrian erakusten da.</string>
@@ -476,7 +474,7 @@
     <string name="dejavu_settings_autoclose_tabs">Itxi fitxak automatikoki</string>
     <string name="dejavu_settings_tabs_workspaces">Fitxak, laneremuak eta edukiontziak</string>
     <string name="dejavu_settings_tabs_workspaces_summary">Fitxak ixtea eta esekitzea, edukiontziak, hasiera-orria eta estekak</string>
-    <string name="dejavu_settings_customize_summary">Itxura, fitxen ekintzak, menua, barrak, pasahitzak eta hizkuntza</string>
+    <string name="dejavu_settings_customize_summary">Itxura, fitxen ekintzak, menua eta barrak</string>
     <string name="dejavu_settings_bars_2">Barrak</string>
     <string name="dejavu_settings_bars_summary">Web orria, hasiera-orria, pantaila osoa, fitxa-barra eta keinuak</string>
     <string name="dejavu_settings_web_page">Web orria</string>
@@ -520,4 +518,6 @@
     <string name="dejavu_welcome_default_done">Dejavu da zure nabigatzaile lehenetsia.</string>
     <string name="dejavu_welcome_sync_title">Zure laneremuak gailu guztietan</string>
     <string name="dejavu_welcome_sync_text">Hasi saioa Mozilla kontu batekin laneremuak, finkatutako fitxak eta funtsezkoak Zenekin sinkronizatzeko, edo fitxak Firefoxekin.</string>
+    <string name="dejavu_settings_matrix">Txateatu Matrixen</string>
+    <string name="dejavu_settings_matrix_summary">Egin galdera bat, proposatu eginbide bat edo jakinarazi akats bat</string>
 </resources>

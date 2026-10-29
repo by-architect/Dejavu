@@ -440,8 +440,6 @@
     <string name="dejavu_workspace_theme_color">ରଙ୍ଗ</string>
     <string name="dejavu_workspace_wallpaper">ୱାଲପେପର</string>
     <string name="dejavu_workspace_wallpaper_hint">ଛବିଟି ଏହି ଫୋନ୍‌ରେ ରହେ ଏବଂ ହୋମ୍ ପୃଷ୍ଠାରେ ଦେଖାଯାଏ। ଏହାର ରଙ୍ଗ Zen ସହିତ ସିଙ୍କ ହେଉଥିବା ଥିମ୍ ହୋଇଯାଏ।</string>
-    <string name="dejavu_workspace_wallpaper_choose">ଏକ ଛବି ବାଛନ୍ତୁ</string>
-    <string name="dejavu_workspace_wallpaper_change">ବଦଳାନ୍ତୁ</string>
     <string name="dejavu_workspace_wallpaper_failed">ଏହି ଛବି ଖୋଲିହେଲା ନାହିଁ।</string>
     <string name="dejavu_workspace_wallpaper_colors">Zen ସହିତ ସିଙ୍କ ହେଉଥିବା ରଙ୍ଗ</string>
     <string name="dejavu_workspace_wallpaper_hint_local">ଛବିଟି ଏହି ଫୋନ୍‌ରେ ରହେ ଏବଂ ହୋମ୍ ପୃଷ୍ଠାରେ ଦେଖାଯାଏ।</string>
@@ -476,7 +474,7 @@
     <string name="dejavu_settings_autoclose_tabs">ଟ୍ୟାବ୍ ସ୍ୱଚାଳିତ ଭାବେ ବନ୍ଦ କରନ୍ତୁ</string>
     <string name="dejavu_settings_tabs_workspaces">ଟ୍ୟାବ୍, କାର୍ଯ୍ୟକ୍ଷେତ୍ର ଏବଂ କଣ୍ଟେନର</string>
     <string name="dejavu_settings_tabs_workspaces_summary">ଟ୍ୟାବ୍ ବନ୍ଦ କରିବା ଓ ସ୍ଲିପ୍ କରିବା, କଣ୍ଟେନର, ହୋମ୍ ପୃଷ୍ଠା ଏବଂ ଲିଙ୍କ୍</string>
-    <string name="dejavu_settings_customize_summary">ଥିମ୍, ଟ୍ୟାବ୍ କାର୍ଯ୍ୟ, ମେନୁ, ବାର୍, ପାସୱାର୍ଡ ଏବଂ ଭାଷା</string>
+    <string name="dejavu_settings_customize_summary">ଥିମ୍, ଟ୍ୟାବ୍ କାର୍ଯ୍ୟ, ମେନୁ ଏବଂ ବାର୍</string>
     <string name="dejavu_settings_bars_2">ବାର୍‌ଗୁଡ଼ିକ</string>
     <string name="dejavu_settings_bars_summary">ୱେବ ପୃଷ୍ଠା, ହୋମ୍ ପୃଷ୍ଠା, ପୂର୍ଣ୍ଣ ସ୍କ୍ରିନ୍, ଟ୍ୟାବ୍ ବାର୍ ଏବଂ ଜେଶ୍ଚର୍</string>
     <string name="dejavu_settings_web_page">ୱେବ ପୃଷ୍ଠା</string>
@@ -520,4 +518,6 @@
     <string name="dejavu_welcome_default_done">Dejavu ଆପଣଙ୍କ ଡିଫଲ୍ଟ ବ୍ରାଉଜର ଅଟେ।</string>
     <string name="dejavu_welcome_sync_title">ପ୍ରତ୍ୟେକ ଡିଭାଇସରେ ଆପଣଙ୍କ କାର୍ଯ୍ୟକ୍ଷେତ୍ର</string>
     <string name="dejavu_welcome_sync_text">Zen ସହିତ କାର୍ଯ୍ୟକ୍ଷେତ୍ର, ପିନ୍ ଟ୍ୟାବ୍ ଏବଂ ଆବଶ୍ୟକୀୟ, କିମ୍ବା Firefox ସହିତ ଟ୍ୟାବ୍ ସିଙ୍କ କରିବାକୁ ଏକ Mozilla ଆକାଉଣ୍ଟରେ ସାଇନ୍ ଇନ୍ କରନ୍ତୁ।</string>
+    <string name="dejavu_settings_matrix">Matrix ରେ ଚାଟ୍ କରନ୍ତୁ</string>
+    <string name="dejavu_settings_matrix_summary">ପ୍ରଶ୍ନ ପଚାରନ୍ତୁ, ବୈଶିଷ୍ଟ୍ୟର ପରାମର୍ଶ ଦିଅନ୍ତୁ କିମ୍ବା ତ୍ରୁଟି ରିପୋର୍ଟ କରନ୍ତୁ</string>
 </resources>

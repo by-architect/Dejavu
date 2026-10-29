@@ -440,8 +440,6 @@
     <string name="dejavu_workspace_theme_color">Szín</string>
     <string name="dejavu_workspace_wallpaper">Háttérkép</string>
     <string name="dejavu_workspace_wallpaper_hint">A kép ezen a telefonon marad, és a kezdőlapon jelenik meg. A színeiből lesz a Zennel szinkronizálódó téma.</string>
-    <string name="dejavu_workspace_wallpaper_choose">Kép kiválasztása</string>
-    <string name="dejavu_workspace_wallpaper_change">Módosítás</string>
     <string name="dejavu_workspace_wallpaper_failed">Ezt a képet nem sikerült megnyitni.</string>
     <string name="dejavu_workspace_wallpaper_colors">A Zennel szinkronizálódó színek</string>
     <string name="dejavu_workspace_wallpaper_hint_local">A kép ezen a telefonon marad, és a kezdőlapon jelenik meg.</string>
@@ -476,7 +474,7 @@
     <string name="dejavu_settings_autoclose_tabs">Lapok automatikus bezárása</string>
     <string name="dejavu_settings_tabs_workspaces">Lapok, munkaterületek és konténerek</string>
     <string name="dejavu_settings_tabs_workspaces_summary">Lapok bezárása és elaltatása, konténerek, kezdőlap és hivatkozások</string>
-    <string name="dejavu_settings_customize_summary">Téma, lapműveletek, menü, sávok, jelszavak és nyelv</string>
+    <string name="dejavu_settings_customize_summary">Téma, lapműveletek, menü és sávok</string>
     <string name="dejavu_settings_bars_2">Sávok</string>
     <string name="dejavu_settings_bars_summary">Weboldal, kezdőlap, teljes képernyő, lapsáv és kézmozdulatok</string>
     <string name="dejavu_settings_web_page">Weboldal</string>
@@ -520,4 +518,6 @@
     <string name="dejavu_welcome_default_done">A Dejavu az alapértelmezett böngészője.</string>
     <string name="dejavu_welcome_sync_title">Munkaterületei minden eszközén</string>
     <string name="dejavu_welcome_sync_text">Jelentkezzen be Mozilla-fiókkal, hogy szinkronizálja a munkaterületeket, a kitűzött lapokat és a kedvenceket a Zennel, vagy a lapokat a Firefoxszal.</string>
+    <string name="dejavu_settings_matrix">Csevegés a Matrixon</string>
+    <string name="dejavu_settings_matrix_summary">Tegyen fel kérdést, javasoljon funkciót vagy jelentsen hibát</string>
 </resources>

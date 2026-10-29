@@ -440,8 +440,6 @@
     <string name="dejavu_workspace_theme_color">Farge</string>
     <string name="dejavu_workspace_wallpaper">Bakgrunnsbilde</string>
     <string name="dejavu_workspace_wallpaper_hint">Bildet vert verande på denne telefonen og vert vist på startsida. Fargane i bildet vert temaet som vert synkronisert med Zen.</string>
-    <string name="dejavu_workspace_wallpaper_choose">Vel eit bilde</string>
-    <string name="dejavu_workspace_wallpaper_change">Endre</string>
     <string name="dejavu_workspace_wallpaper_failed">Klarte ikkje å opne dette bildet.</string>
     <string name="dejavu_workspace_wallpaper_colors">Fargar som vert synkroniserte med Zen</string>
     <string name="dejavu_workspace_wallpaper_hint_local">Bildet vert verande på denne telefonen og vert vist på startsida.</string>
@@ -476,7 +474,7 @@
     <string name="dejavu_settings_autoclose_tabs">Lat att faner automatisk</string>
     <string name="dejavu_settings_tabs_workspaces">Faner, arbeidsområde og behaldarar</string>
     <string name="dejavu_settings_tabs_workspaces_summary">Attlating og dvale for faner, behaldarar, startside og lenker</string>
-    <string name="dejavu_settings_customize_summary">Tema, fanehandlingar, meny, linjer, passord og språk</string>
+    <string name="dejavu_settings_customize_summary">Tema, fanehandlingar, meny og linjer</string>
     <string name="dejavu_settings_bars_2">Linjer</string>
     <string name="dejavu_settings_bars_summary">Nettside, startside, fullskjerm, fanelinje og rørsler</string>
     <string name="dejavu_settings_web_page">Nettside</string>
@@ -520,4 +518,6 @@
     <string name="dejavu_welcome_default_done">Dejavu er standardnettlesaren din.</string>
     <string name="dejavu_welcome_sync_title">Arbeidsområda dine på alle einingar</string>
     <string name="dejavu_welcome_sync_text">Logg inn med ein Mozilla-konto for å synkronisere arbeidsområde, festa faner og favorittar med Zen, eller faner med Firefox.</string>
+    <string name="dejavu_settings_matrix">Prat på Matrix</string>
+    <string name="dejavu_settings_matrix_summary">Still eit spørsmål, føreslå ein funksjon eller rapporter ein feil</string>
 </resources>

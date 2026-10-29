@@ -440,8 +440,6 @@
     <string name="dejavu_workspace_theme_color">Cor</string>
     <string name="dejavu_workspace_wallpaper">Fondo de pantalla</string>
     <string name="dejavu_workspace_wallpaper_hint">A imaxe queda neste teléfono e amósase na páxina de inicio. As súas cores pasan a ser o tema que se sincroniza con Zen.</string>
-    <string name="dejavu_workspace_wallpaper_choose">Escoller unha imaxe</string>
-    <string name="dejavu_workspace_wallpaper_change">Cambiar</string>
     <string name="dejavu_workspace_wallpaper_failed">Non se puido abrir esta imaxe.</string>
     <string name="dejavu_workspace_wallpaper_colors">Cores que se sincronizan con Zen</string>
     <string name="dejavu_workspace_wallpaper_hint_local">A imaxe queda neste teléfono e amósase na páxina de inicio.</string>
@@ -476,7 +474,7 @@
     <string name="dejavu_settings_autoclose_tabs">Peche automático de lapelas</string>
     <string name="dejavu_settings_tabs_workspaces">Lapelas, espazos de traballo e contedores</string>
     <string name="dejavu_settings_tabs_workspaces_summary">Peche e sono das lapelas, contedores, páxina de inicio e ligazóns</string>
-    <string name="dejavu_settings_customize_summary">Tema, accións das lapelas, menú, barras, contrasinais e idioma</string>
+    <string name="dejavu_settings_customize_summary">Tema, accións das lapelas, menú e barras</string>
     <string name="dejavu_settings_bars_2">Barras</string>
     <string name="dejavu_settings_bars_summary">Páxina web, páxina de inicio, pantalla completa, barra de pestanas e xestos</string>
     <string name="dejavu_settings_web_page">Páxina web</string>
@@ -520,4 +518,6 @@
     <string name="dejavu_welcome_default_done">Dejavu é o teu navegador predeterminado.</string>
     <string name="dejavu_welcome_sync_title">Os teus espazos de traballo en todos os dispositivos</string>
     <string name="dejavu_welcome_sync_text">Inicia sesión cunha conta de Mozilla para sincronizar espazos de traballo, lapelas fixadas e esenciais con Zen, ou lapelas con Firefox.</string>
+    <string name="dejavu_settings_matrix">Conversa en Matrix</string>
+    <string name="dejavu_settings_matrix_summary">Fai unha pregunta, suxire unha función ou informa dun erro</string>
 </resources>

@@ -456,8 +456,6 @@
     <string name="dejavu_workspace_theme_color">Barva</string>
     <string name="dejavu_workspace_wallpaper">Tapeta</string>
     <string name="dejavu_workspace_wallpaper_hint">Obrázek zůstane v tomto telefonu a zobrazí se na domovské stránce. Jeho barvy se stanou motivem, který se synchronizuje se Zenem.</string>
-    <string name="dejavu_workspace_wallpaper_choose">Vybrat obrázek</string>
-    <string name="dejavu_workspace_wallpaper_change">Změnit</string>
     <string name="dejavu_workspace_wallpaper_failed">Tento obrázek se nepodařilo otevřít.</string>
     <string name="dejavu_workspace_wallpaper_colors">Barvy synchronizované se Zenem</string>
     <string name="dejavu_workspace_wallpaper_hint_local">Obrázek zůstane v tomto telefonu a zobrazí se na domovské stránce.</string>
@@ -492,7 +490,7 @@
     <string name="dejavu_settings_autoclose_tabs">Automatické zavírání panelů</string>
     <string name="dejavu_settings_tabs_workspaces">Panely, pracovní prostory a kontejnery</string>
     <string name="dejavu_settings_tabs_workspaces_summary">Zavírání a uspávání panelů, kontejnery, domovská stránka a odkazy</string>
-    <string name="dejavu_settings_customize_summary">Vzhled, akce panelů, nabídka, lišty, hesla a jazyk</string>
+    <string name="dejavu_settings_customize_summary">Vzhled, akce panelů, nabídka a lišty</string>
     <string name="dejavu_settings_bars_2">Lišty</string>
     <string name="dejavu_settings_bars_summary">Webová stránka, domovská stránka, celá obrazovka, lišta panelů a gesta</string>
     <string name="dejavu_settings_web_page">Webová stránka</string>
@@ -536,4 +534,6 @@
     <string name="dejavu_welcome_default_done">Dejavu je váš výchozí prohlížeč.</string>
     <string name="dejavu_welcome_sync_title">Vaše pracovní prostory na všech zařízeních</string>
     <string name="dejavu_welcome_sync_text">Přihlaste se k účtu Mozilla a synchronizujte pracovní prostory, připnuté panely a Oblíbené se Zenem, nebo panely s Firefoxem.</string>
+    <string name="dejavu_settings_matrix">Chat v síti Matrix</string>
+    <string name="dejavu_settings_matrix_summary">Položte otázku, navrhněte funkci nebo nahlaste chybu</string>
 </resources>

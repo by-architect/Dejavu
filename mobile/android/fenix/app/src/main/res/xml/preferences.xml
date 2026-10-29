@@ -6,7 +6,8 @@
 <androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <!-- Dejavu: what each version brought, who makes Dejavu, and a way to support it, on top of every setting. -->
+    <!-- Dejavu: what each version brought, who makes Dejavu, its chat room, and a way to support it, on top of every
+         setting. -->
     <androidx.preference.PreferenceCategory
         android:key="@string/pref_key_dejavu_top_category"
         android:title="@string/dejavu_settings_title"
@@ -23,6 +24,13 @@
             android:icon="@drawable/dejavu_author_avatar"
             android:key="@string/pref_key_dejavu_author"
             android:summary="@string/dejavu_about_source_code"
+            app:widgetLayout="@layout/preference_widget_external_link" />
+
+        <androidx.preference.Preference
+            android:icon="@drawable/dejavu_ic_matrix_24"
+            android:key="@string/pref_key_dejavu_matrix"
+            android:summary="@string/dejavu_settings_matrix_summary"
+            android:title="@string/dejavu_settings_matrix"
             app:widgetLayout="@layout/preference_widget_external_link" />
 
         <androidx.preference.Preference
@@ -63,8 +71,8 @@
         android:title="@string/preferences_sync_debug"
         app:isPreferenceVisible="false" />
 
-    <!-- Dejavu: General opens screens that group its settings: tabs, workspaces and containers in one, and Customize
-         holds the theme, the tab actions, the menu, the bars, and passwords and language. -->
+    <!-- Dejavu: General opens screens that group its settings: tabs, workspaces and containers in one, Customize
+         holds the theme, the tab actions, the menu and the bars, and passwords and language have one of their own. -->
     <androidx.preference.PreferenceCategory
         android:title="@string/preferences_category_general"
         android:layout="@layout/preference_category_no_icon_style">
@@ -86,6 +94,13 @@
             app:iconSpaceReserved="false"
             android:title="@string/preferences_customize"
             android:summary="@string/dejavu_settings_customize_summary" />
+
+        <androidx.preference.Preference
+            app:iconSpaceReserved="false"
+            app:widgetLayout="@layout/dejavu_preference_badge"
+            android:key="@string/pref_key_dejavu_passwords_language"
+            android:title="@string/dejavu_settings_passwords_language"
+            android:summary="@string/dejavu_settings_passwords_language_summary" />
 
         <androidx.preference.Preference
             android:key="@string/pref_key_import_bookmarks"

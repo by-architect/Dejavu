@@ -456,8 +456,6 @@
     <string name="dejavu_workspace_theme_color">Barba</string>
     <string name="dejavu_workspace_wallpaper">Pozadkowy wobraz</string>
     <string name="dejavu_workspace_wallpaper_hint">Wobraz na tutym telefonje wostanje a so na startowej stronje pokazuje. Z jeho barbow nastanje tema, kotraž so z Zen synchronizuje.</string>
-    <string name="dejavu_workspace_wallpaper_choose">Wobraz wubrać</string>
-    <string name="dejavu_workspace_wallpaper_change">Změnić</string>
     <string name="dejavu_workspace_wallpaper_failed">Tutón wobraz njeda so wočinić.</string>
     <string name="dejavu_workspace_wallpaper_colors">Barby, kotrež so z Zen synchronizuja</string>
     <string name="dejavu_workspace_wallpaper_hint_local">Wobraz na tutym telefonje wostanje a so na startowej stronje pokazuje.</string>
@@ -492,7 +490,7 @@
     <string name="dejavu_settings_autoclose_tabs">Rajtarki awtomatisce začinić</string>
     <string name="dejavu_settings_tabs_workspaces">Rajtarki, dźěłowe rumy a kontejnery</string>
     <string name="dejavu_settings_tabs_workspaces_summary">Začinjenje a spanje rajtarkow, kontejnery, startowa strona a wotkazy</string>
-    <string name="dejavu_settings_customize_summary">Drasta, akcije za rajtarki, meni, lajsty, hesła a rěč</string>
+    <string name="dejavu_settings_customize_summary">Drasta, akcije za rajtarki, meni a lajsty</string>
     <string name="dejavu_settings_bars_2">Lajsty</string>
     <string name="dejavu_settings_bars_summary">Webstrona, startowa strona, połna wobrazowka, lajsta rajtarkow a gesty</string>
     <string name="dejavu_settings_web_page">Webstrona</string>
@@ -536,4 +534,6 @@
     <string name="dejavu_welcome_default_done">Dejavu je twój standardny wobhladowak.</string>
     <string name="dejavu_welcome_sync_title">Twoje dźěłowe rumy na kóždym graće</string>
     <string name="dejavu_welcome_sync_text">Přizjew so z kontom Mozilla, zo by dźěłowe rumy, připjate rajtarki a najwažniše z Zen abo rajtarki z Firefox synchronizował.</string>
+    <string name="dejavu_settings_matrix">Chat přez Matrix</string>
+    <string name="dejavu_settings_matrix_summary">Praš so, namjetuj funkciju abo zdźěl zmylk</string>
 </resources>

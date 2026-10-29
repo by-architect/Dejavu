@@ -456,8 +456,6 @@
     <string name="dejavu_workspace_theme_color">Цвет</string>
     <string name="dejavu_workspace_wallpaper">Обои</string>
     <string name="dejavu_workspace_wallpaper_hint">Изображение остаётся на этом телефоне и показывается на главной странице. Его цвета становятся темой, которая синхронизируется с Zen.</string>
-    <string name="dejavu_workspace_wallpaper_choose">Выбрать изображение</string>
-    <string name="dejavu_workspace_wallpaper_change">Изменить</string>
     <string name="dejavu_workspace_wallpaper_failed">Не удалось открыть это изображение.</string>
     <string name="dejavu_workspace_wallpaper_colors">Цвета, которые синхронизируются с Zen</string>
     <string name="dejavu_workspace_wallpaper_hint_local">Изображение остаётся на этом телефоне и показывается на главной странице.</string>
@@ -492,7 +490,7 @@
     <string name="dejavu_settings_autoclose_tabs">Автозакрытие вкладок</string>
     <string name="dejavu_settings_tabs_workspaces">Вкладки, рабочие пространства и контейнеры</string>
     <string name="dejavu_settings_tabs_workspaces_summary">Закрытие и усыпление вкладок, контейнеры, домашняя страница и ссылки</string>
-    <string name="dejavu_settings_customize_summary">Тема, действия для вкладок, меню, панели, пароли и язык</string>
+    <string name="dejavu_settings_customize_summary">Тема, действия для вкладок, меню и панели</string>
     <string name="dejavu_settings_bars_2">Панели</string>
     <string name="dejavu_settings_bars_summary">Веб-страница, домашняя страница, полноэкранный режим, панель вкладок и жесты</string>
     <string name="dejavu_settings_web_page">Веб-страница</string>
@@ -536,4 +534,6 @@
     <string name="dejavu_welcome_default_done">Dejavu — ваш браузер по умолчанию.</string>
     <string name="dejavu_welcome_sync_title">Ваши рабочие пространства на всех устройствах</string>
     <string name="dejavu_welcome_sync_text">Войдите в аккаунт Mozilla, чтобы синхронизировать рабочие пространства, закреплённые вкладки и избранное с Zen или вкладки с Firefox.</string>
+    <string name="dejavu_settings_matrix">Чат в Matrix</string>
+    <string name="dejavu_settings_matrix_summary">Задайте вопрос, предложите функцию или сообщите об ошибке</string>
 </resources>

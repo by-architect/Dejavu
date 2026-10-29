@@ -4,60 +4,60 @@
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Material3 color variables -->
-    <color name="fx_mobile_primary">@color/dejavuGold45</color>
+    <color name="fx_mobile_primary">@color/dejavuGray19</color>
     <color name="fx_mobile_on_primary">@color/novaWhite</color>
-    <color name="fx_mobile_primary_container">@color/dejavuGold90</color>
-    <color name="fx_mobile_on_primary_container">@color/dejavuGold10</color>
-    <color name="fx_mobile_primary_inverse">@color/dejavuGold80</color>
-    <color name="fx_mobile_secondary">@color/dejavuWarm50</color>
+    <color name="fx_mobile_primary_container">@color/dejavuGray90</color>
+    <color name="fx_mobile_on_primary_container">@color/dejavuGray10</color>
+    <color name="fx_mobile_primary_inverse">@color/dejavuGray90</color>
+    <color name="fx_mobile_secondary">@color/dejavuGray42</color>
     <color name="fx_mobile_on_secondary">@color/novaWhite</color>
-    <color name="fx_mobile_secondary_container">@color/dejavuSand90</color>
-    <color name="fx_mobile_on_secondary_container">@color/dejavuSand10</color>
-    <color name="fx_mobile_tertiary">@color/dejavuAmber40</color>
+    <color name="fx_mobile_secondary_container">@color/dejavuGray91</color>
+    <color name="fx_mobile_on_secondary_container">@color/dejavuGray14</color>
+    <color name="fx_mobile_tertiary">@color/dejavuGray45</color>
     <color name="fx_mobile_on_tertiary">@color/novaWhite</color>
-    <color name="fx_mobile_tertiary_container">@color/dejavuAmber95</color>
-    <color name="fx_mobile_on_tertiary_container">@color/dejavuAmber90</color>
-    <color name="fx_mobile_background">@color/dejavuGilt5</color>
-    <color name="fx_mobile_on_background">@color/dejavuInk</color>
-    <color name="fx_mobile_surface">@color/dejavuGilt5</color>
-    <color name="fx_mobile_on_surface">@color/dejavuInk</color>
-    <color name="fx_mobile_surface_variant">@color/dejavuWarm15</color>
-    <color name="fx_mobile_on_surface_variant">@color/dejavuInkA70</color>
-    <color name="fx_mobile_surface_inverse">@color/dejavuWarm70</color>
+    <color name="fx_mobile_tertiary_container">@color/dejavuGray96</color>
+    <color name="fx_mobile_on_tertiary_container">@color/dejavuGray10</color>
+    <color name="fx_mobile_background">@color/dejavuGray97</color>
+    <color name="fx_mobile_on_background">@color/dejavuGray10</color>
+    <color name="fx_mobile_surface">@color/dejavuGray97</color>
+    <color name="fx_mobile_on_surface">@color/dejavuGray10</color>
+    <color name="fx_mobile_surface_variant">@color/dejavuGray90</color>
+    <color name="fx_mobile_on_surface_variant">@color/dejavuGray10A70</color>
+    <color name="fx_mobile_surface_inverse">@color/dejavuGray14</color>
     <color name="fx_mobile_on_surface_inverse">@color/novaWhite</color>
     <color name="fx_mobile_error">@color/novaRed50</color>
     <color name="fx_mobile_on_error">@color/novaWhite</color>
     <color name="fx_mobile_error_container">@color/novaRed10</color>
-    <color name="fx_mobile_on_error_container">@color/dejavuInk</color>
-    <color name="fx_mobile_information">@color/dejavuGold45</color>
+    <color name="fx_mobile_on_error_container">@color/dejavuGray10</color>
+    <color name="fx_mobile_information">@color/dejavuGray19</color>
     <color name="fx_mobile_on_information">@color/novaWhite</color>
-    <color name="fx_mobile_information_container">@color/dejavuGold90</color>
-    <color name="fx_mobile_on_information_container">@color/dejavuGold10</color>
+    <color name="fx_mobile_information_container">@color/dejavuGray90</color>
+    <color name="fx_mobile_on_information_container">@color/dejavuGray10</color>
     <color name="fx_mobile_success">@color/novaGreen50</color>
     <color name="fx_mobile_on_success">@color/novaWhite</color>
     <color name="fx_mobile_success_container">@color/novaGreen10</color>
-    <color name="fx_mobile_on_success_container">@color/dejavuInk</color>
+    <color name="fx_mobile_on_success_container">@color/dejavuGray10</color>
     <color name="fx_mobile_warning">@color/novaYellow50</color>
     <color name="fx_mobile_on_warning">@color/novaWhite</color>
     <color name="fx_mobile_warning_container">@color/novaYellow10</color>
-    <color name="fx_mobile_on_warning_container">@color/dejavuInk</color>
-    <color name="fx_mobile_outline">@color/dejavuWarm45</color>
-    <color name="fx_mobile_outline_variant">@color/dejavuWarm15</color>
-    <color name="fx_mobile_sheet_outline">@color/dejavuGilt5</color>
+    <color name="fx_mobile_on_warning_container">@color/dejavuGray10</color>
+    <color name="fx_mobile_outline">@color/dejavuGray52</color>
+    <color name="fx_mobile_outline_variant">@color/dejavuGray90</color>
+    <color name="fx_mobile_sheet_outline">@color/dejavuGray97</color>
     <color name="fx_mobile_surface_bright">@color/novaWhite</color>
-    <color name="fx_mobile_surface_dim">@color/dejavuWarm15</color>
-    <color name="fx_mobile_surface_container">@color/dejavuGilt5</color>
-    <color name="fx_mobile_surface_container_high">@color/dejavuWarm10</color>
-    <color name="fx_mobile_surface_container_highest">@color/dejavuWarm15</color>
-    <color name="fx_mobile_surface_container_low">@color/dejavuWarm0</color>
+    <color name="fx_mobile_surface_dim">@color/dejavuGray90</color>
+    <color name="fx_mobile_surface_container">@color/dejavuGray97</color>
+    <color name="fx_mobile_surface_container_high">@color/dejavuGray94</color>
+    <color name="fx_mobile_surface_container_highest">@color/dejavuGray90</color>
+    <color name="fx_mobile_surface_container_low">@color/dejavuGray99</color>
     <color name="fx_mobile_surface_container_lowest">@color/novaWhite</color>
-    <color name="fx_mobile_surface_container_selected">@color/dejavuWarm25</color>
-    <color name="fx_mobile_autofill_text">@color/dejavuWarm30</color>
-    <color name="fx_mobile_selected_text">@color/dejavuWarm25</color>
+    <color name="fx_mobile_surface_container_selected">@color/dejavuGray79</color>
+    <color name="fx_mobile_autofill_text">@color/dejavuGray73</color>
+    <color name="fx_mobile_selected_text">@color/dejavuGray79</color>
     <color name="fx_mobile_icon_private">@color/novaViolet50</color>
     <color name="fx_mobile_scrim">@color/novaBlackA50</color>
 
-    <color name="fx_mobile_splashscreen_background">@color/dejavuAmber95</color>
+    <color name="fx_mobile_splashscreen_background">@color/dejavuGray96</color>
 
     <!-- Design system color variables -->
 
@@ -218,13 +218,14 @@
     <color name="prompt_login_edit_text_cursor_color_private_theme">@color/photonViolet50</color>
 
     <!-- Normal theme colors for light mode -->
-    <color name="accent_normal_theme">@color/photonInk20</color>
-    <color name="accent_high_contrast_normal_theme">@color/photonInk20</color>
+    <!-- Dejavu: the accent is the neutral dark gray of its primary color. -->
+    <color name="accent_normal_theme">@color/dejavuGray19</color>
+    <color name="accent_high_contrast_normal_theme">@color/dejavuGray19</color>
     <color name="neutral_normal_theme">@color/photonGrey30</color>
     <color name="neutral_faded_normal_theme">@color/photonGrey20</color>
-    <color name="fill_link_from_clipboard_normal_theme">@color/photonInk20</color>
+    <color name="fill_link_from_clipboard_normal_theme">@color/dejavuGray19</color>
     <color name="add_on_private_browsing_exterior_circle_background_normal_theme">@color/photonViolet70</color>
-    <color name="prompt_login_edit_text_cursor_color_normal_theme">@color/photonInk20</color>
+    <color name="prompt_login_edit_text_cursor_color_normal_theme">@color/dejavuGray19</color>
     <color name="search_suggestion_indicator_icon_color_normal_theme">@color/photonGreen70</color>
     <color name="search_suggestion_indicator_icon_bookmark_color_normal_theme">@color/photonBlue50</color>
 

@@ -440,8 +440,6 @@
     <string name="dejavu_workspace_theme_color">Kolor</string>
     <string name="dejavu_workspace_wallpaper">Wallpaper</string>
     <string name="dejavu_workspace_wallpaper_hint">Ang hulagway magpabilin niini nga telepono ug makita sa home page. Ang mga kolor niini mahimong tema nga ma-sync sa Zen.</string>
-    <string name="dejavu_workspace_wallpaper_choose">Pagpili og hulagway</string>
-    <string name="dejavu_workspace_wallpaper_change">Ilisi</string>
     <string name="dejavu_workspace_wallpaper_failed">Dili maabli kini nga hulagway.</string>
     <string name="dejavu_workspace_wallpaper_colors">Mga kolor nga ma-sync sa Zen</string>
     <string name="dejavu_workspace_wallpaper_hint_local">Ang hulagway magpabilin niini nga telepono ug makita sa home page.</string>
@@ -476,7 +474,7 @@
     <string name="dejavu_settings_autoclose_tabs">Awtomatikong pagsira sa mga tab</string>
     <string name="dejavu_settings_tabs_workspaces">Mga tab, workspace ug container</string>
     <string name="dejavu_settings_tabs_workspaces_summary">Pagsira ug pagpatulog sa mga tab, mga container, home page ug mga link</string>
-    <string name="dejavu_settings_customize_summary">Tema, mga aksyon sa tab, menu, mga bar, mga password ug pinulongan</string>
+    <string name="dejavu_settings_customize_summary">Tema, mga aksyon sa tab, menu ug mga bar</string>
     <string name="dejavu_settings_bars_2">Mga Bar</string>
     <string name="dejavu_settings_bars_summary">Web page, home page, full screen, tab bar ug mga gesture</string>
     <string name="dejavu_settings_web_page">Web page</string>
@@ -520,4 +518,6 @@
     <string name="dejavu_welcome_default_done">Ang Dejavu na ang imong default browser.</string>
     <string name="dejavu_welcome_sync_title">Imong mga workspace sa matag device</string>
     <string name="dejavu_welcome_sync_text">Mag-sign in gamit ang Mozilla account aron i-sync ang mga workspace, naka-pin nga tab ug Mahinungdanon sa Zen, o mga tab sa Firefox.</string>
+    <string name="dejavu_settings_matrix">Makig-chat sa Matrix</string>
+    <string name="dejavu_settings_matrix_summary">Mangutana, mosugyot og feature o mo-report og bug</string>
 </resources>

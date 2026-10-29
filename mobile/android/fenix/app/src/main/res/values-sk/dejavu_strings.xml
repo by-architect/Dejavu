@@ -456,8 +456,6 @@
     <string name="dejavu_workspace_theme_color">Farba</string>
     <string name="dejavu_workspace_wallpaper">Tapeta</string>
     <string name="dejavu_workspace_wallpaper_hint">Obrázok zostane na tomto telefóne a zobrazí sa na domovskej stránke. Jeho farby sa stanú témou, ktorá sa synchronizuje so Zenom.</string>
-    <string name="dejavu_workspace_wallpaper_choose">Vybrať obrázok</string>
-    <string name="dejavu_workspace_wallpaper_change">Zmeniť</string>
     <string name="dejavu_workspace_wallpaper_failed">Tento obrázok sa nepodarilo otvoriť.</string>
     <string name="dejavu_workspace_wallpaper_colors">Farby synchronizované so Zenom</string>
     <string name="dejavu_workspace_wallpaper_hint_local">Obrázok zostane na tomto telefóne a zobrazí sa na domovskej stránke.</string>
@@ -492,7 +490,7 @@
     <string name="dejavu_settings_autoclose_tabs">Automatické zatváranie kariet</string>
     <string name="dejavu_settings_tabs_workspaces">Karty, pracovné priestory a kontajnery</string>
     <string name="dejavu_settings_tabs_workspaces_summary">Zatváranie a uspávanie kariet, kontajnery, domovská stránka a odkazy</string>
-    <string name="dejavu_settings_customize_summary">Téma vzhľadu, akcie kariet, ponuka, panely, heslá a jazyk</string>
+    <string name="dejavu_settings_customize_summary">Téma vzhľadu, akcie kariet, ponuka a panely</string>
     <string name="dejavu_settings_bars_2">Panely</string>
     <string name="dejavu_settings_bars_summary">Webová stránka, domovská stránka, celá obrazovka, panel kariet a gestá</string>
     <string name="dejavu_settings_web_page">Webová stránka</string>
@@ -536,4 +534,6 @@
     <string name="dejavu_welcome_default_done">Dejavu je váš predvolený prehliadač.</string>
     <string name="dejavu_welcome_sync_title">Vaše pracovné priestory na každom zariadení</string>
     <string name="dejavu_welcome_sync_text">Prihláste sa pomocou účtu Mozilla a synchronizujte pracovné priestory, pripnuté karty a obľúbené so Zenom alebo karty s Firefoxom.</string>
+    <string name="dejavu_settings_matrix">Chatujte cez Matrix</string>
+    <string name="dejavu_settings_matrix_summary">Položte otázku, navrhnite funkciu alebo nahláste chybu</string>
 </resources>

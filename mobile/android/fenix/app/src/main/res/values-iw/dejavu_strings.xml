@@ -448,8 +448,6 @@
     <string name="dejavu_workspace_theme_color">צבע</string>
     <string name="dejavu_workspace_wallpaper">תמונת רקע</string>
     <string name="dejavu_workspace_wallpaper_hint">התמונה נשארת בטלפון הזה ומוצגת בדף הבית. הצבעים שלה הופכים לערכת הנושא שמסתנכרנת עם Zen.</string>
-    <string name="dejavu_workspace_wallpaper_choose">בחירת תמונה</string>
-    <string name="dejavu_workspace_wallpaper_change">החלפה</string>
     <string name="dejavu_workspace_wallpaper_failed">לא ניתן היה לפתוח את התמונה הזו.</string>
     <string name="dejavu_workspace_wallpaper_colors">צבעים שמסתנכרנים עם Zen</string>
     <string name="dejavu_workspace_wallpaper_hint_local">התמונה נשארת בטלפון הזה ומוצגת בדף הבית.</string>
@@ -484,7 +482,7 @@
     <string name="dejavu_settings_autoclose_tabs">סגירה אוטומטית של לשוניות</string>
     <string name="dejavu_settings_tabs_workspaces">לשוניות, מרחבי עבודה ומארזים</string>
     <string name="dejavu_settings_tabs_workspaces_summary">סגירה והרדמה של לשוניות, מארזים, מסך הבית וקישורים</string>
-    <string name="dejavu_settings_customize_summary">ערכת נושא, פעולות לשוניות, תפריט, סרגלים, ססמאות ושפה</string>
+    <string name="dejavu_settings_customize_summary">ערכת נושא, פעולות לשוניות, תפריט וסרגלים</string>
     <string name="dejavu_settings_bars_2">סרגלים</string>
     <string name="dejavu_settings_bars_summary">דף אינטרנט, מסך הבית, מסך מלא, סרגל הלשוניות ומחוות</string>
     <string name="dejavu_settings_web_page">דף אינטרנט</string>
@@ -528,4 +526,6 @@
     <string name="dejavu_welcome_default_done">Dejavu הוא דפדפן ברירת המחדל שלכם.</string>
     <string name="dejavu_welcome_sync_title">מרחבי העבודה שלכם בכל מכשיר</string>
     <string name="dejavu_welcome_sync_text">היכנסו עם חשבון Mozilla כדי לסנכרן מרחבי עבודה, לשוניות מוצמדות ומועדפים עם Zen, או לשוניות עם Firefox.</string>
+    <string name="dejavu_settings_matrix">צ׳אט ב-Matrix</string>
+    <string name="dejavu_settings_matrix_summary">שאלו שאלה, הציעו תכונה או דווחו על באג</string>
 </resources>

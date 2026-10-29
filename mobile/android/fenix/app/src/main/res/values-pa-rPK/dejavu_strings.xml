@@ -440,8 +440,6 @@
     <string name="dejavu_workspace_theme_color">رنگ</string>
     <string name="dejavu_workspace_wallpaper">والپیپر</string>
     <string name="dejavu_workspace_wallpaper_hint">تصویر ایس فون تے ای رہندی اے تے گھر دے صفحے تے ڈکھدی اے۔ ایہدے رنگ اوہ تھیم بݨ جاندے نيں جیہڑا Zen نال سنک ہُندا اے۔</string>
-    <string name="dejavu_workspace_wallpaper_choose">تصویر چُنو</string>
-    <string name="dejavu_workspace_wallpaper_change">بدلو</string>
     <string name="dejavu_workspace_wallpaper_failed">ایہہ تصویر کھولی نہیں جا سکی۔</string>
     <string name="dejavu_workspace_wallpaper_colors">Zen نال سنک ہوݨ والے رنگ</string>
     <string name="dejavu_workspace_wallpaper_hint_local">تصویر ایس فون تے ای رہندی اے تے گھر دے صفحے تے ڈکھدی اے۔</string>
@@ -476,7 +474,7 @@
     <string name="dejavu_settings_autoclose_tabs">ٹیباں نوں آپے بند کرو</string>
     <string name="dejavu_settings_tabs_workspaces">ٹیباں، ورک سپیساں تے کنٹینر</string>
     <string name="dejavu_settings_tabs_workspaces_summary">ٹیباں بند کرنا تے سلاؤݨا، کنٹینر، مکھ صفحہ تے لنک</string>
-    <string name="dejavu_settings_customize_summary">روپ ریکھا، ٹیب ایکشن، مینو، باراں، پاس‌ورڈ تے بولی</string>
+    <string name="dejavu_settings_customize_summary">روپ ریکھا، ٹیب ایکشن، مینو تے باراں</string>
     <string name="dejavu_settings_bars_2">باراں</string>
     <string name="dejavu_settings_bars_summary">ویب صفحہ، مکھ صفحہ، پوری سکرین، ٹیب بار تے اشارے</string>
     <string name="dejavu_settings_web_page">ویب صفحہ</string>
@@ -520,4 +518,6 @@
     <string name="dejavu_welcome_default_done">Dejavu تہاڈا ڈیفالٹ براؤزر اے۔</string>
     <string name="dejavu_welcome_sync_title">تہاڈیاں ورک سپیساں ہر ڈیوائس تے</string>
     <string name="dejavu_welcome_sync_text">Zen نال ورک سپیساں، پن کیتیاں ٹیباں تے ضروری چیزاں، یا Firefox نال ٹیباں سنک کرن لئی Mozilla اکاؤنٹ نال سائن ان کرو۔</string>
+    <string name="dejavu_settings_matrix">Matrix تے گل بات کرو</string>
+    <string name="dejavu_settings_matrix_summary">سوال پچھو، کوئی فیچر سجھاؤ یا بگ دی رپورٹ کرو</string>
 </resources>

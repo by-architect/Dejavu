@@ -440,8 +440,6 @@
     <string name="dejavu_workspace_theme_color">Ini</string>
     <string name="dejavu_workspace_wallpaper">Tugna n ugilal</string>
     <string name="dejavu_workspace_wallpaper_hint">Tugna ad teqqim ɣef tiliɣri-agi, ad d-tban deg usebter agejdan. Initen-is ad uɣalen d asentel i yettwasdukklen akked Zen.</string>
-    <string name="dejavu_workspace_wallpaper_choose">Fren tugna</string>
-    <string name="dejavu_workspace_wallpaper_change">Beddel</string>
     <string name="dejavu_workspace_wallpaper_failed">Tugna-agi ur tezmir ara ad tettwaldi.</string>
     <string name="dejavu_workspace_wallpaper_colors">Initen i yettwasdukklen akked Zen</string>
     <string name="dejavu_workspace_wallpaper_hint_local">Tugna ad teqqim ɣef tiliɣri-agi, ad d-tban deg usebter agejdan.</string>
@@ -476,7 +474,7 @@
     <string name="dejavu_settings_autoclose_tabs">Amdal awurman n waccaren</string>
     <string name="dejavu_settings_tabs_workspaces">Iccaren, imukan n umahil d yisenduqen</string>
     <string name="dejavu_settings_tabs_workspaces_summary">Amdal n waccaren, iccaren yeṭṭsen, isenduqen, asebter agejdan d yiseɣwan</string>
-    <string name="dejavu_settings_customize_summary">Asentel, tigawin n yiccer, umuɣ, ifeggagen, awalen uffiren d tutlayt</string>
+    <string name="dejavu_settings_customize_summary">Asentel, tigawin n yiccer, umuɣ d yifeggagen</string>
     <string name="dejavu_settings_bars_2">Ifeggagen</string>
     <string name="dejavu_settings_bars_summary">Asebter web, asebter agejdan, agdil aččuran, afeggag n waccaren d yisillifen</string>
     <string name="dejavu_settings_web_page">Asebter web</string>
@@ -520,4 +518,6 @@
     <string name="dejavu_welcome_default_done">Dejavu d iminig-ik amezwer.</string>
     <string name="dejavu_welcome_sync_title">Imukan n umahil-ik ɣef yal ibenk</string>
     <string name="dejavu_welcome_sync_text">Kcem s umiḍan Mozilla akken ad tesdukleḍ imukan n umahil, iccaren yessersen d wayen ilaqen akked Zen, neɣ iccaren akked Firefox.</string>
+    <string name="dejavu_settings_matrix">Mmeslay deg Matrix</string>
+    <string name="dejavu_settings_matrix_summary">Seqsi asteqsi, sumer tamahilt neɣ mmel-d tuccḍa</string>
 </resources>

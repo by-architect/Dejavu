@@ -440,8 +440,6 @@
     <string name="dejavu_workspace_theme_color">ਰੰਗ</string>
     <string name="dejavu_workspace_wallpaper">ਵਾਲਪੇਪਰ</string>
     <string name="dejavu_workspace_wallpaper_hint">ਤਸਵੀਰ ਇਸ ਫ਼ੋਨ ‘ਤੇ ਹੀ ਰਹਿੰਦੀ ਹੈ ਅਤੇ ਹੋਮ ਸਫ਼ੇ ‘ਤੇ ਦਿਖਾਈ ਦਿੰਦੀ ਹੈ। ਇਸ ਦੇ ਰੰਗ ਥੀਮ ਬਣ ਕੇ Zen ਨਾਲ ਸਿੰਕ ਹੁੰਦੇ ਹਨ।</string>
-    <string name="dejavu_workspace_wallpaper_choose">ਤਸਵੀਰ ਚੁਣੋ</string>
-    <string name="dejavu_workspace_wallpaper_change">ਬਦਲੋ</string>
     <string name="dejavu_workspace_wallpaper_failed">ਇਹ ਤਸਵੀਰ ਖੋਲ੍ਹੀ ਨਹੀਂ ਜਾ ਸਕੀ।</string>
     <string name="dejavu_workspace_wallpaper_colors">Zen ਨਾਲ ਸਿੰਕ ਹੋਣ ਵਾਲੇ ਰੰਗ</string>
     <string name="dejavu_workspace_wallpaper_hint_local">ਤਸਵੀਰ ਇਸ ਫ਼ੋਨ ‘ਤੇ ਹੀ ਰਹਿੰਦੀ ਹੈ ਅਤੇ ਹੋਮ ਸਫ਼ੇ ‘ਤੇ ਦਿਖਾਈ ਦਿੰਦੀ ਹੈ।</string>
@@ -476,7 +474,7 @@
     <string name="dejavu_settings_autoclose_tabs">ਟੈਬਾਂ ਨੂੰ ਆਪੇ-ਬੰਦ ਕਰੋ</string>
     <string name="dejavu_settings_tabs_workspaces">ਟੈਬਾਂ, ਵਰਕਸਪੇਸਾਂ ਅਤੇ ਕੰਟੇਨਰ</string>
     <string name="dejavu_settings_tabs_workspaces_summary">ਟੈਬਾਂ ਨੂੰ ਬੰਦ ਕਰਨਾ ਅਤੇ ਸਲੀਪ ਮੋਡ, ਕੰਟੇਨਰ, ਮੁੱਖ ਸਫ਼ਾ ਅਤੇ ਲਿੰਕ</string>
-    <string name="dejavu_settings_customize_summary">ਥੀਮ, ਟੈਬ ਕਾਰਵਾਈਆਂ, ਮੀਨੂ, ਪੱਟੀਆਂ, ਪਾਸਵਰਡ ਅਤੇ ਭਾਸ਼ਾ</string>
+    <string name="dejavu_settings_customize_summary">ਥੀਮ, ਟੈਬ ਕਾਰਵਾਈਆਂ, ਮੀਨੂ ਅਤੇ ਪੱਟੀਆਂ</string>
     <string name="dejavu_settings_bars_2">ਪੱਟੀਆਂ</string>
     <string name="dejavu_settings_bars_summary">ਵੈੱਬ ਸਫ਼ਾ, ਮੁੱਖ ਸਫ਼ਾ, ਪੂਰੀ ਸਕਰੀਨ, ਟੈਬ ਪੱਟੀ ਅਤੇ ਇਸ਼ਾਰੇ</string>
     <string name="dejavu_settings_web_page">ਵੈੱਬ ਸਫ਼ਾ</string>
@@ -520,4 +518,6 @@
     <string name="dejavu_welcome_default_done">Dejavu ਤੁਹਾਡਾ ਮੂਲ ਬਰਾਊਜ਼ਰ ਹੈ।</string>
     <string name="dejavu_welcome_sync_title">ਹਰ ਡਿਵਾਈਸ ‘ਤੇ ਤੁਹਾਡੀਆਂ ਵਰਕਸਪੇਸਾਂ</string>
     <string name="dejavu_welcome_sync_text">Zen ਨਾਲ ਵਰਕਸਪੇਸਾਂ, ਪਿੰਨ ਕੀਤੀਆਂ ਟੈਬਾਂ ਅਤੇ ਜ਼ਰੂਰੀ, ਜਾਂ Firefox ਨਾਲ ਟੈਬਾਂ ਸਿੰਕ ਕਰਨ ਲਈ Mozilla ਖਾਤੇ ਨਾਲ ਸਾਈਨ ਇਨ ਕਰੋ।</string>
+    <string name="dejavu_settings_matrix">Matrix ਉੱਤੇ ਗੱਲਬਾਤ ਕਰੋ</string>
+    <string name="dejavu_settings_matrix_summary">ਸਵਾਲ ਪੁੱਛੋ, ਫ਼ੀਚਰ ਦਾ ਸੁਝਾਅ ਦਿਓ ਜਾਂ ਬੱਗ ਦੀ ਰਿਪੋਰਟ ਕਰੋ</string>
 </resources>

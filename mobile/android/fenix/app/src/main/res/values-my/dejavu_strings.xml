@@ -432,8 +432,6 @@
     <string name="dejavu_workspace_theme_color">အရောင်</string>
     <string name="dejavu_workspace_wallpaper">နောက်ခံပုံ</string>
     <string name="dejavu_workspace_wallpaper_hint">ပုံသည် ဤဖုန်းတွင်သာ ရှိနေပြီး ပင်မစာမျက်နှာတွင် ပြသမည်။ ၎င်း၏ အရောင်များသည် Zen နှင့် စင့်ခ်ချသော ပုံစံ ဖြစ်လာမည်။</string>
-    <string name="dejavu_workspace_wallpaper_choose">ပုံတစ်ပုံ ရွေးရန်</string>
-    <string name="dejavu_workspace_wallpaper_change">ပြောင်းရန်</string>
     <string name="dejavu_workspace_wallpaper_failed">ဤပုံကို ဖွင့်၍ မရပါ။</string>
     <string name="dejavu_workspace_wallpaper_colors">Zen နှင့် စင့်ခ်ချသော အရောင်များ</string>
     <string name="dejavu_workspace_wallpaper_hint_local">ပုံသည် ဤဖုန်းတွင်သာ ရှိနေပြီး ပင်မစာမျက်နှာတွင် ပြသမည်။</string>
@@ -468,7 +466,7 @@
     <string name="dejavu_settings_autoclose_tabs">တက်ဗ်များကို အလိုအလျောက် ပိတ်ရန်</string>
     <string name="dejavu_settings_tabs_workspaces">တက်ဗ်များ၊ လုပ်ငန်းခွင်များနှင့် ကွန်တိန်နာများ</string>
     <string name="dejavu_settings_tabs_workspaces_summary">တက်ဗ်များ ပိတ်ခြင်းနှင့် အိပ်စေခြင်း၊ ကွန်တိန်နာများ၊ ပင်မစာမျက်နှာနှင့် လင့်ခ်များ</string>
-    <string name="dejavu_settings_customize_summary">အခင်းအကျင်းများ၊ တက်ဗ် လုပ်ဆောင်ချက်များ၊ မီနူး၊ ဘားများ၊ ပက်စ်ဝေါ့များနှင့် ဘာသာစကား</string>
+    <string name="dejavu_settings_customize_summary">အခင်းအကျင်းများ၊ တက်ဗ် လုပ်ဆောင်ချက်များ၊ မီနူးနှင့် ဘားများ</string>
     <string name="dejavu_settings_bars_2">ဘားများ</string>
     <string name="dejavu_settings_bars_summary">ဝဘ်စာမျက်နှာ၊ ပင်မစာမျက်နှာ၊ မျက်နှာပြင်အပြည့်၊ တက်ဗ်ဘားနှင့် လက်ဟန်အမူအရာများ</string>
     <string name="dejavu_settings_web_page">ဝဘ်စာမျက်နှာ</string>
@@ -512,4 +510,6 @@
     <string name="dejavu_welcome_default_done">Dejavu သည် သင်၏ ပုံသေဘရောက်ဇာ ဖြစ်သည်။</string>
     <string name="dejavu_welcome_sync_title">ကိရိယာတိုင်းတွင် သင့်လုပ်ငန်းခွင်များ</string>
     <string name="dejavu_welcome_sync_text">Zen နှင့် လုပ်ငန်းခွင်များ၊ ပင်ထိုးထားသော တက်ဗ်များနှင့် မရှိမဖြစ်များကို၊ သို့မဟုတ် Firefox နှင့် တက်ဗ်များကို စင့်ခ်ချရန် Mozilla အကောင့်ဖြင့် ဝင်ရောက်ပါ။</string>
+    <string name="dejavu_settings_matrix">Matrix တွင် စကားပြောပါ</string>
+    <string name="dejavu_settings_matrix_summary">မေးခွန်းမေးပါ၊ လုပ်ဆောင်ချက်အသစ် အကြံပြုပါ သို့မဟုတ် ချို့ယွင်းချက်ကို သတင်းပို့ပါ</string>
 </resources>

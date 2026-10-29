@@ -440,8 +440,6 @@
     <string name="dejavu_workspace_theme_color">Färg</string>
     <string name="dejavu_workspace_wallpaper">Bakgrundsbild</string>
     <string name="dejavu_workspace_wallpaper_hint">Bilden stannar på den här telefonen och visas på hemsidan. Dess färger blir temat som synkroniseras med Zen.</string>
-    <string name="dejavu_workspace_wallpaper_choose">Välj en bild</string>
-    <string name="dejavu_workspace_wallpaper_change">Ändra</string>
     <string name="dejavu_workspace_wallpaper_failed">Den här bilden kunde inte öppnas.</string>
     <string name="dejavu_workspace_wallpaper_colors">Färger som synkroniseras med Zen</string>
     <string name="dejavu_workspace_wallpaper_hint_local">Bilden stannar på den här telefonen och visas på hemsidan.</string>
@@ -476,7 +474,7 @@
     <string name="dejavu_settings_autoclose_tabs">Stäng flikar automatiskt</string>
     <string name="dejavu_settings_tabs_workspaces">Flikar, arbetsytor och behållare</string>
     <string name="dejavu_settings_tabs_workspaces_summary">Stängning och vilande flikar, behållare, startsida och länkar</string>
-    <string name="dejavu_settings_customize_summary">Tema, flikåtgärder, meny, fält, lösenord och språk</string>
+    <string name="dejavu_settings_customize_summary">Tema, flikåtgärder, meny och fält</string>
     <string name="dejavu_settings_bars_2">Fält</string>
     <string name="dejavu_settings_bars_summary">Webbsida, startsida, helskärm, flikfält och gester</string>
     <string name="dejavu_settings_web_page">Webbsida</string>
@@ -520,4 +518,6 @@
     <string name="dejavu_welcome_default_done">Dejavu är din standardwebbläsare.</string>
     <string name="dejavu_welcome_sync_title">Dina arbetsytor på alla enheter</string>
     <string name="dejavu_welcome_sync_text">Logga in med ett Mozilla-konto för att synkronisera arbetsytor, fästa flikar och favoriter med Zen, eller flikar med Firefox.</string>
+    <string name="dejavu_settings_matrix">Chatta på Matrix</string>
+    <string name="dejavu_settings_matrix_summary">Ställ en fråga, föreslå en funktion eller rapportera en bugg</string>
 </resources>

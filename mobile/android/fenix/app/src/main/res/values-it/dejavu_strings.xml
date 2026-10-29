@@ -440,8 +440,6 @@
     <string name="dejavu_workspace_theme_color">Colore</string>
     <string name="dejavu_workspace_wallpaper">Sfondo</string>
     <string name="dejavu_workspace_wallpaper_hint">L’immagine resta su questo telefono e appare nella home page. I suoi colori diventano il tema che si sincronizza con Zen.</string>
-    <string name="dejavu_workspace_wallpaper_choose">Scegli un’immagine</string>
-    <string name="dejavu_workspace_wallpaper_change">Cambia</string>
     <string name="dejavu_workspace_wallpaper_failed">Impossibile aprire questa immagine.</string>
     <string name="dejavu_workspace_wallpaper_colors">Colori sincronizzati con Zen</string>
     <string name="dejavu_workspace_wallpaper_hint_local">L’immagine resta su questo telefono e appare nella home page.</string>
@@ -476,7 +474,7 @@
     <string name="dejavu_settings_autoclose_tabs">Chiusura automatica delle schede</string>
     <string name="dejavu_settings_tabs_workspaces">Schede, spazi e contenitori</string>
     <string name="dejavu_settings_tabs_workspaces_summary">Chiusura e sospensione delle schede, contenitori, pagina iniziale e link</string>
-    <string name="dejavu_settings_customize_summary">Tema, azioni sulle schede, menu, barre, password e lingua</string>
+    <string name="dejavu_settings_customize_summary">Tema, azioni sulle schede, menu e barre</string>
     <string name="dejavu_settings_bars_2">Barre</string>
     <string name="dejavu_settings_bars_summary">Pagina web, pagina iniziale, schermo intero, barra delle schede e gesti</string>
     <string name="dejavu_settings_web_page">Pagina web</string>
@@ -520,4 +518,6 @@
     <string name="dejavu_welcome_default_done">Dejavu è il tuo browser predefinito.</string>
     <string name="dejavu_welcome_sync_title">I tuoi spazi su ogni dispositivo</string>
     <string name="dejavu_welcome_sync_text">Accedi con un account Mozilla per sincronizzare spazi, schede bloccate e preferiti con Zen, o le schede con Firefox.</string>
+    <string name="dejavu_settings_matrix">Chatta su Matrix</string>
+    <string name="dejavu_settings_matrix_summary">Fai una domanda, suggerisci una funzione o segnala un bug</string>
 </resources>

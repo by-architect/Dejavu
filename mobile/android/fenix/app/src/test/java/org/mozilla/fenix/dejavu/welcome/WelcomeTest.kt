@@ -56,6 +56,53 @@ class WelcomeTest {
     }
 
     @Test
+    fun `a fresh workspace gets the gold wallpaper first, unless it has a wallpaper`() {
+        val repository = newRepository()
+        val wallpapers = newWallpapers()
+        val workspace = repository.state.value.workspaces.single()
+
+        wallpapers.giveFirstWallpaper(workspace.id, screenWidth = 36, screenHeight = 80)
+
+        assertEquals(WallpaperArt.GOLD, WallpaperArt.of(waitForWallpaper(wallpapers, workspace.id)))
+        assertEquals(WorkspaceTheme.Gold, repository.state.value.workspaces.single().theme)
+
+        val mine = WorkspaceWallpaper("mine.jpg")
+        wallpapers.set(workspace.id, mine)
+        wallpapers.giveFirstWallpaper(workspace.id, screenWidth = 36, screenHeight = 80)
+
+        assertEquals(mine, wallpapers.wallpapers.value[workspace.id])
+    }
+
+    @Test
+    fun `the pages show a wallpaper given meanwhile, unless another one was picked there`() {
+        val repository = newRepository()
+        val wallpapers = newWallpapers()
+        val workspace = repository.state.value.workspaces.first()
+        val gold = WorkspaceWallpaper("art-gold-1.jpg")
+        val look = WelcomeLook(repository, wallpapers, workspace.id, workspace.theme, wallpaper = null)
+
+        look.follow(gold)
+        look.save()
+
+        assertEquals(gold, look.wallpaper)
+        assertNull(wallpapers.wallpapers.value[workspace.id])
+
+        val picked = WorkspaceWallpaper("art-sky-2.jpg")
+        look.showWallpaper(picked)
+        look.follow(WorkspaceWallpaper("art-gold-3.jpg"))
+
+        assertEquals(picked, look.wallpaper)
+    }
+
+    private fun waitForWallpaper(wallpapers: WorkspaceWallpapers, workspaceId: String): WorkspaceWallpaper? {
+        repeat(WAIT_STEPS) {
+            wallpapers.wallpapers.value[workspaceId]?.let { return it }
+            Thread.sleep(WAIT_STEP_MS)
+        }
+        return wallpapers.wallpapers.value[workspaceId]
+    }
+
+    @Test
     fun `a wallpaper gives the workspace its colors, colors take its place, and both are kept only once saved`() {
         val repository = newRepository()
         val wallpapers = newWallpapers()
@@ -79,5 +126,10 @@ class WelcomeTest {
         assertNull(look.wallpaper)
         assertNull(wallpapers.wallpapers.value[workspace.id])
         assertEquals(WorkspaceTheme.Gold, repository.state.value.workspaces.first { it.id == workspace.id }.theme)
+    }
+
+    private companion object {
+        const val WAIT_STEPS = 100
+        const val WAIT_STEP_MS = 50L
     }
 }

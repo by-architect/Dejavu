@@ -4,21 +4,15 @@
 
 package org.mozilla.fenix.dejavu.home
 
-import android.content.ActivityNotFoundException
 import android.content.Context
 import android.graphics.BitmapFactory
 import android.net.Uri
 import android.util.LruCache
-import androidx.activity.compose.rememberLauncherForActivityResult
-import androidx.activity.result.PickVisualMediaRequest
-import androidx.activity.result.contract.ActivityResultContracts.PickVisualMedia
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
-import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
-import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.aspectRatio
@@ -29,8 +23,6 @@ import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.pager.PagerState
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
-import androidx.compose.material3.CircularProgressIndicator
-import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -41,8 +33,6 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.key
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
-import androidx.compose.runtime.rememberCoroutineScope
-import androidx.compose.runtime.rememberUpdatedState
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -62,7 +52,6 @@ import androidx.compose.ui.graphics.toArgb
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.platform.LocalConfiguration
 import androidx.compose.ui.platform.LocalContext
-import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.semantics.contentDescription
 import androidx.compose.ui.semantics.semantics
@@ -73,16 +62,15 @@ import kotlin.math.max
 import kotlin.math.min
 import kotlin.math.pow
 import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
-import mozilla.components.ui.icons.R as iconsR
 import org.mozilla.fenix.R
-import org.mozilla.fenix.dejavu.ui.DejavuDialogButton
 import org.mozilla.fenix.dejavu.ui.DejavuPopup
+import org.mozilla.fenix.dejavu.workspaces.WallpaperArt
 import org.mozilla.fenix.dejavu.workspaces.WorkspaceWallpaper
 import org.mozilla.fenix.dejavu.workspaces.WorkspaceWallpapers
 
 private val PREVIEW_WIDTH = 64.dp
+private val TILE_WIDTH = 56.dp
 private val COLOR_DOT = 14.dp
 private const val CACHE_SHARE = 8
 
@@ -208,42 +196,21 @@ internal fun WallpaperLayers(pagerState: PagerState, wallpaperAt: (Int) -> Works
 }
 
 /**
- * The workspace dialog's wallpaper choice: a small picture of the home screen with [wallpaper], a button to pick a
- * picture, the colors taken from it for the theme, and a slider for how strongly it shows through its veil. [onImport]
- * copies a picked picture into a wallpaper, which then goes to [onPicked]. The theme of a workspace that [syncsWithZen]
- * goes to Zen.
+ * The workspace dialog's wallpaper choice: the wallpapers Dejavu draws and a photo of the user's own to pick from, then
+ * a small picture of the home screen with [wallpaper], the colors taken from it for the theme, and a slider for how
+ * strongly it shows through its veil. [onDraw] draws a picked wallpaper and [onImport] copies a picked photo, which
+ * then go to [onPicked]. The theme of a workspace that [syncsWithZen] goes to Zen.
  */
+@Suppress("LongParameterList")
 @Composable
 internal fun WallpaperSection(
     wallpaper: WorkspaceWallpaper?,
     syncsWithZen: Boolean,
+    onDraw: suspend (WallpaperArt) -> WorkspaceWallpaper?,
     onImport: suspend (Uri) -> WorkspaceWallpaper?,
     onPicked: (WorkspaceWallpaper) -> Unit,
     onIntensityChange: (Float) -> Unit,
 ) {
-    val scope = rememberCoroutineScope()
-    var importing by remember { mutableStateOf(false) }
-    var failed by remember { mutableStateOf(false) }
-    val latestOnPicked by rememberUpdatedState(onPicked)
-    val picker = rememberLauncherForActivityResult(PickVisualMedia()) { uri ->
-        if (uri == null) return@rememberLauncherForActivityResult
-        importing = true
-        failed = false
-        scope.launch {
-            val picked = onImport(uri)
-            importing = false
-            failed = picked == null
-            picked?.let(latestOnPicked)
-        }
-    }
-    val pick = {
-        try {
-            picker.launch(PickVisualMediaRequest(PickVisualMedia.ImageOnly))
-        } catch (e: ActivityNotFoundException) {
-            failed = true
-        }
-    }
-
     Text(
         text = stringResource(
             if (syncsWithZen) {
@@ -256,34 +223,23 @@ internal fun WallpaperSection(
         color = MaterialTheme.colorScheme.onSurfaceVariant,
     )
     Spacer(Modifier.size(8.dp))
+    WallpaperTiles(
+        shown = wallpaper,
+        onPick = { picked -> picked?.let(onPicked) },
+        drawArt = onDraw,
+        importPicture = onImport,
+        tileWidth = TILE_WIDTH,
+    )
+    if (wallpaper == null) return
+    Spacer(Modifier.size(12.dp))
     Row(verticalAlignment = Alignment.CenterVertically) {
-        WallpaperPreview(wallpaper = wallpaper, importing = importing, onClick = pick)
-        Spacer(Modifier.width(16.dp))
-        Column(verticalArrangement = Arrangement.spacedBy(12.dp)) {
-            DejavuDialogButton(
-                text = stringResource(
-                    if (wallpaper == null) {
-                        R.string.dejavu_workspace_wallpaper_choose
-                    } else {
-                        R.string.dejavu_workspace_wallpaper_change
-                    },
-                ),
-                onClick = pick,
-                enabled = !importing,
-            )
-            if (wallpaper != null && wallpaper.colors.isNotEmpty()) PictureColors(wallpaper.colors, syncsWithZen)
-            if (failed) {
-                Text(
-                    text = stringResource(R.string.dejavu_workspace_wallpaper_failed),
-                    style = MaterialTheme.typography.bodySmall,
-                    color = MaterialTheme.colorScheme.error,
-                )
-            }
+        WallpaperPreview(wallpaper = wallpaper)
+        if (wallpaper.colors.isNotEmpty()) {
+            Spacer(Modifier.width(16.dp))
+            PictureColors(wallpaper.colors, syncsWithZen)
         }
     }
-    wallpaper?.let { current ->
-        SliderRow(R.string.dejavu_workspace_theme_intensity, current.intensity, 0f..1f, onIntensityChange)
-    }
+    SliderRow(R.string.dejavu_workspace_theme_intensity, wallpaper.intensity, 0f..1f, onIntensityChange)
 }
 
 /** The colors taken from a wallpaper, which the workspace's theme syncs to Zen when it [syncsWithZen]. */
@@ -314,37 +270,24 @@ private fun PictureColors(colors: List<Int>, syncsWithZen: Boolean) {
     }
 }
 
-/** A small picture of the home screen with [wallpaper]. Tapping it picks another picture. */
+/** A small picture of the home screen with [wallpaper], under its veil. */
 @Composable
-private fun WallpaperPreview(wallpaper: WorkspaceWallpaper?, importing: Boolean, onClick: () -> Unit) {
+private fun WallpaperPreview(wallpaper: WorkspaceWallpaper) {
     val configuration = LocalConfiguration.current
     val surface = MaterialTheme.colorScheme.surface
     val text = MaterialTheme.colorScheme.onSurface
     val shape = RoundedCornerShape(12.dp)
     Box(
-        contentAlignment = Alignment.Center,
         modifier = Modifier
             .width(PREVIEW_WIDTH)
             .aspectRatio(configuration.screenWidthDp.toFloat() / configuration.screenHeightDp.coerceAtLeast(1))
             .clip(shape)
             .background(surface)
-            .border(1.dp, DejavuPopup.edgeColor, shape)
-            .clickable(enabled = !importing, onClick = onClick),
+            .border(1.dp, DejavuPopup.edgeColor, shape),
     ) {
-        wallpaper?.let {
-            WallpaperImage(wallpaper = it, modifier = Modifier.fillMaxSize())
-            val veil = remember(it, surface, text) { veilOf(it, surface, text) }
-            Spacer(modifier = Modifier.fillMaxSize().drawBehind { drawVeil(veil.colors, veil.colors, 0f, veil.alpha) })
-        }
-        if (importing) {
-            CircularProgressIndicator(modifier = Modifier.size(24.dp), strokeWidth = 2.dp)
-        } else if (wallpaper == null) {
-            Icon(
-                painter = painterResource(iconsR.drawable.mozac_ic_wallpaper_24),
-                contentDescription = null,
-                tint = MaterialTheme.colorScheme.onSurfaceVariant,
-            )
-        }
+        WallpaperImage(wallpaper = wallpaper, modifier = Modifier.fillMaxSize())
+        val veil = remember(wallpaper, surface, text) { veilOf(wallpaper, surface, text) }
+        Spacer(modifier = Modifier.fillMaxSize().drawBehind { drawVeil(veil.colors, veil.colors, 0f, veil.alpha) })
     }
 }
 

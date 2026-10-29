@@ -472,8 +472,6 @@
     <string name="dejavu_workspace_theme_color">Liw</string>
     <string name="dejavu_workspace_wallpaper">Paper-fos</string>
     <string name="dejavu_workspace_wallpaper_hint">An skeusen a drig war an pellgowser ma hag a dhiskwedh war an folen dre. Hy liwyow a dheu ha bos an tem a vydh kesunys gans Zen.</string>
-    <string name="dejavu_workspace_wallpaper_choose">Dewis skeusen</string>
-    <string name="dejavu_workspace_wallpaper_change">Chanjya</string>
     <string name="dejavu_workspace_wallpaper_failed">Ny yllys igeri an skeusen ma.</string>
     <string name="dejavu_workspace_wallpaper_colors">Liwyow kesunys gans Zen</string>
     <string name="dejavu_workspace_wallpaper_hint_local">An skeusen a drig war an pellgowser ma hag a dhiskwedh war an folen dre.</string>
@@ -508,7 +506,7 @@
     <string name="dejavu_settings_autoclose_tabs">Degea tabow yn awtomatek</string>
     <string name="dejavu_settings_tabs_workspaces">Tabow, tyleryow-ober ha kontaynerow</string>
     <string name="dejavu_settings_tabs_workspaces_summary">Degea tabow, tabow ow koska, kontaynerow, folen dre ha kevrennow</string>
-    <string name="dejavu_settings_customize_summary">Tem, oberennow tabow, roll, barrow, geryow tremena ha yeth</string>
+    <string name="dejavu_settings_customize_summary">Tem, oberennow tabow, roll ha barrow</string>
     <string name="dejavu_settings_bars_2">Barrow</string>
     <string name="dejavu_settings_bars_summary">Folen wias, folen dre, skrin leun, barr tabow ha gwayansow</string>
     <string name="dejavu_settings_web_page">Folen wias</string>
@@ -552,4 +550,6 @@
     <string name="dejavu_welcome_default_done">Dejavu yw dha beurell standard.</string>
     <string name="dejavu_welcome_sync_title">Dha dyleryow-ober war bub jynn</string>
     <string name="dejavu_welcome_sync_text">Sina ajy gans akont Mozilla rag kesunya tyleryow-ober, tabow fastyes ha Pythow Poesek gans Zen, po tabow gans Firefox.</string>
+    <string name="dejavu_settings_matrix">Keskows war Matrix</string>
+    <string name="dejavu_settings_matrix_summary">Govyn neppyth, profya tra nowydh po derivas fowt</string>
 </resources>

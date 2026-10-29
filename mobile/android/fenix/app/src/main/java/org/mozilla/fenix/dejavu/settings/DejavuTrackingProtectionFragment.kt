@@ -46,7 +46,6 @@ import org.mozilla.fenix.BuildConfig
 import org.mozilla.fenix.R
 import org.mozilla.fenix.compose.list.SwitchListItem
 import org.mozilla.fenix.compose.list.TextListItem
-import org.mozilla.fenix.compose.settings.SettingsSectionHeader
 import org.mozilla.fenix.dejavu.browser.CallsAndLocation
 import org.mozilla.fenix.dejavu.browser.GoogleSafeBrowsing
 import org.mozilla.fenix.dejavu.browser.JitAndWebGl
@@ -120,12 +119,7 @@ class DejavuTrackingProtectionFragment : DejavuComposeFragment(R.string.dejavu_s
         }
 
         Column(modifier = Modifier.fillMaxSize().verticalScroll(rememberScrollState())) {
-            Text(
-                text = stringResource(R.string.dejavu_protection_hint),
-                style = MaterialTheme.typography.bodyMedium,
-                color = MaterialTheme.colorScheme.onSurfaceVariant,
-                modifier = Modifier.padding(16.dp),
-            )
+            SettingsHint(stringResource(R.string.dejavu_protection_hint))
 
             Section(
                 title = stringResource(R.string.dejavu_protection_section_connections),
@@ -198,7 +192,7 @@ class DejavuTrackingProtectionFragment : DejavuComposeFragment(R.string.dejavu_s
                                 stringResource(R.string.app_name),
                             ),
                         ) {
-                            findNavController().navigate(
+                            findNavController().slideTo(
                                 R.id.dohSettingsFragment,
                                 Bundle().apply { putBoolean(DohSettingsFragment.START_ON_EXCEPTIONS, true) },
                             )
@@ -323,7 +317,7 @@ class DejavuTrackingProtectionFragment : DejavuComposeFragment(R.string.dejavu_s
                         label = stringResource(R.string.preferences_tracking_protection_exceptions),
                         description = stringResource(R.string.dejavu_protection_exceptions_summary),
                     ) {
-                        findNavController().navigate(R.id.action_global_trackingProtectionExceptionsFragment)
+                        findNavController().slideTo(R.id.action_global_trackingProtectionExceptionsFragment)
                     },
                 ),
             )
@@ -435,7 +429,7 @@ class DejavuTrackingProtectionFragment : DejavuComposeFragment(R.string.dejavu_s
                         label = stringResource(R.string.preferences_site_settings),
                         description = stringResource(R.string.dejavu_protection_site_settings),
                     ) {
-                        findNavController().navigate(R.id.sitePermissionsFragment)
+                        findNavController().slideTo(R.id.sitePermissionsFragment)
                     },
                     ProtectionRow.Link(
                         label = stringResource(R.string.preferences_data_collection),
@@ -632,7 +626,7 @@ private class Warning(
 
 @Composable
 private fun Section(title: String, rows: List<ProtectionRow>) {
-    SettingsSectionHeader(text = title, modifier = Modifier.padding(start = 16.dp, end = 16.dp, top = 16.dp))
+    SettingsHeader(title)
     rows.forEachIndexed { index, row ->
         val modifier = Modifier.settingsCard(index, rows.size)
         when (row) {

@@ -177,12 +177,11 @@ sealed class PreferenceFileInformation(
             fragmentId = R.id.dejavu_bars_graph,
         )
 
-    /** Dejavu: the "Passwords and language" screen, opened from Customize. */
+    /** Dejavu: the "Passwords and language" screen, opened from General. */
     object DejavuPasswordsLanguagePreferences :
         PreferenceFileInformation(
             xmlResourceId = R.xml.dejavu_passwords_language_preferences,
-            topBreadcrumbResourceId = R.string.preferences_customize,
-            secondaryBreadcrumbResourceId = R.string.dejavu_settings_passwords_language,
+            topBreadcrumbResourceId = R.string.dejavu_settings_passwords_language,
             categoryHeaderResourceId = R.string.preferences_category_general,
             fragmentId = R.id.dejavu_passwords_language_graph,
         )

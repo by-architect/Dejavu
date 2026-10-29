@@ -440,8 +440,6 @@
     <string name="dejavu_workspace_theme_color">Colô</string>
     <string name="dejavu_workspace_wallpaper">Sfondo</string>
     <string name="dejavu_workspace_wallpaper_hint">L\'inmagine a resta in sce sto telefono e a se vedde inte a pagina prinçipâ. I sò coloî diventan o tema ch\'o se sincronizza con Zen.</string>
-    <string name="dejavu_workspace_wallpaper_choose">Sceggi \'n\'inmagine</string>
-    <string name="dejavu_workspace_wallpaper_change">Cangia</string>
     <string name="dejavu_workspace_wallpaper_failed">No l\'è stæto poscibile arvî st\'inmagine.</string>
     <string name="dejavu_workspace_wallpaper_colors">Coloî che se sincronizzan con Zen</string>
     <string name="dejavu_workspace_wallpaper_hint_local">L\'inmagine a resta in sce sto telefono e a se vedde inte a pagina prinçipâ.</string>
@@ -476,7 +474,7 @@
     <string name="dejavu_settings_autoclose_tabs">Særa i feuggi in aotomatico</string>
     <string name="dejavu_settings_tabs_workspaces">Feuggi, spaçi de travaggio e contenitoi</string>
     <string name="dejavu_settings_tabs_workspaces_summary">Særâ e addormî i feuggi, contenitoi, pagina prinçipâ e ligammi</string>
-    <string name="dejavu_settings_customize_summary">Tema, açioin di feuggi, menû, barre, poule segrete e lengoa</string>
+    <string name="dejavu_settings_customize_summary">Tema, açioin di feuggi, menû e barre</string>
     <string name="dejavu_settings_bars_2">Barre</string>
     <string name="dejavu_settings_bars_summary">Pagina web, pagina prinçipâ, a tutto schermo, barra di feuggi e gesti</string>
     <string name="dejavu_settings_web_page">Pagina web</string>
@@ -520,4 +518,6 @@
     <string name="dejavu_welcome_default_done">Dejavu o l\'é o tò navegatô predefinio.</string>
     <string name="dejavu_welcome_sync_title">I tò spaçi de travaggio in sce ògni dispoxitivo</string>
     <string name="dejavu_welcome_sync_text">Fa l\'accesso con un conto Mozilla pe sincronizzâ spaçi de travaggio, feuggi fissæ e essençiali con Zen, ò feuggi con Firefox.</string>
+    <string name="dejavu_settings_matrix">Parla in sce Matrix</string>
+    <string name="dejavu_settings_matrix_summary">Fa domande, dà idee ò segnala un erô</string>
 </resources>

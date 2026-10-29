@@ -440,8 +440,6 @@
     <string name="dejavu_workspace_theme_color">Rəng</string>
     <string name="dejavu_workspace_wallpaper">Divar kağızı</string>
     <string name="dejavu_workspace_wallpaper_hint">Şəkil bu telefonda qalır və ana səhifədə göstərilir. Onun rəngləri Zen ilə sinxronlaşdırılan temaya çevrilir.</string>
-    <string name="dejavu_workspace_wallpaper_choose">Şəkil seç</string>
-    <string name="dejavu_workspace_wallpaper_change">Dəyiş</string>
     <string name="dejavu_workspace_wallpaper_failed">Bu şəkli açmaq mümkün olmadı.</string>
     <string name="dejavu_workspace_wallpaper_colors">Zen ilə sinxronlaşdırılan rənglər</string>
     <string name="dejavu_workspace_wallpaper_hint_local">Şəkil bu telefonda qalır və ana səhifədə göstərilir.</string>
@@ -476,7 +474,7 @@
     <string name="dejavu_settings_autoclose_tabs">Vərəqləri avtomatik bağla</string>
     <string name="dejavu_settings_tabs_workspaces">Vərəqlər, iş sahələri və konteynerlər</string>
     <string name="dejavu_settings_tabs_workspaces_summary">Vərəqlərin bağlanması və yuxusu, konteynerlər, ana səhifə və keçidlər</string>
-    <string name="dejavu_settings_customize_summary">Mövzu, vərəq əməliyyatları, menyu, panellər, parollar və dil</string>
+    <string name="dejavu_settings_customize_summary">Mövzu, vərəq əməliyyatları, menyu və panellər</string>
     <string name="dejavu_settings_bars_2">Panellər</string>
     <string name="dejavu_settings_bars_summary">Veb səhifə, ana səhifə, tam ekran, vərəq paneli və jestlər</string>
     <string name="dejavu_settings_web_page">Veb səhifə</string>
@@ -520,4 +518,6 @@
     <string name="dejavu_welcome_default_done">Dejavu əsas brauzerinizdir.</string>
     <string name="dejavu_welcome_sync_title">İş sahələriniz hər cihazda</string>
     <string name="dejavu_welcome_sync_text">İş sahələrini, bərkidilmiş vərəqləri və əsasları Zen ilə, vərəqləri isə Firefox ilə sinxronlaşdırmaq üçün Mozilla hesabı ilə daxil olun.</string>
+    <string name="dejavu_settings_matrix">Matrix-də söhbət edin</string>
+    <string name="dejavu_settings_matrix_summary">Sual verin, funksiya təklif edin və ya xəta barədə bildirin</string>
 </resources>

@@ -440,8 +440,6 @@
     <string name="dejavu_workspace_theme_color">ფერი</string>
     <string name="dejavu_workspace_wallpaper">ფონი</string>
     <string name="dejavu_workspace_wallpaper_hint">სურათი ამ ტელეფონზე რჩება და მთავარ გვერდზე ჩანს. მისი ფერები ხდება თემა, რომელიც Zen-თან სინქრონდება.</string>
-    <string name="dejavu_workspace_wallpaper_choose">სურათის არჩევა</string>
-    <string name="dejavu_workspace_wallpaper_change">შეცვლა</string>
     <string name="dejavu_workspace_wallpaper_failed">ამ სურათის გახსნა ვერ მოხერხდა.</string>
     <string name="dejavu_workspace_wallpaper_colors">ფერები, რომლებიც Zen-თან სინქრონდება</string>
     <string name="dejavu_workspace_wallpaper_hint_local">სურათი ამ ტელეფონზე რჩება და მთავარ გვერდზე ჩანს.</string>
@@ -476,7 +474,7 @@
     <string name="dejavu_settings_autoclose_tabs">ჩანართების თვითდახურვა</string>
     <string name="dejavu_settings_tabs_workspaces">ჩანართები, სივრცეები და კონტეინერები</string>
     <string name="dejavu_settings_tabs_workspaces_summary">ჩანართების დახურვა და დაძინება, კონტეინერები, საწყისი გვერდი და ბმულები</string>
-    <string name="dejavu_settings_customize_summary">თემა, ჩანართის მოქმედებები, მენიუ, ზოლები, პაროლები და ენა</string>
+    <string name="dejavu_settings_customize_summary">თემა, ჩანართის მოქმედებები, მენიუ და ზოლები</string>
     <string name="dejavu_settings_bars_2">ზოლები</string>
     <string name="dejavu_settings_bars_summary">ვებგვერდი, საწყისი გვერდი, სრული ეკრანი, ჩანართის ზოლი და ჟესტები</string>
     <string name="dejavu_settings_web_page">ვებგვერდი</string>
@@ -520,4 +518,6 @@
     <string name="dejavu_welcome_default_done">Dejavu თქვენი ნაგულისხმევი ბრაუზერია.</string>
     <string name="dejavu_welcome_sync_title">თქვენი სივრცეები ყველა მოწყობილობაზე</string>
     <string name="dejavu_welcome_sync_text">შედით Mozilla-ანგარიშით, რომ სივრცეები, მიმაგრებული ჩანართები და საჭირო საიტები Zen-თან, ან ჩანართები Firefox-თან დაასინქრონოთ.</string>
+    <string name="dejavu_settings_matrix">ჩატი Matrix-ში</string>
+    <string name="dejavu_settings_matrix_summary">დასვით კითხვა, შემოგვთავაზეთ ფუნქცია ან შეგვატყობინეთ ხარვეზის შესახებ</string>
 </resources>

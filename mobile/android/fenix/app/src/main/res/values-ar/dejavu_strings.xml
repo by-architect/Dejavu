@@ -472,8 +472,6 @@
     <string name="dejavu_workspace_theme_color">اللون</string>
     <string name="dejavu_workspace_wallpaper">الخلفية</string>
     <string name="dejavu_workspace_wallpaper_hint">تبقى الصورة على هذا الهاتف وتظهر في الصفحة الرئيسية. وتصبح ألوانها السمة التي تُزامَن مع Zen.</string>
-    <string name="dejavu_workspace_wallpaper_choose">اختر صورة</string>
-    <string name="dejavu_workspace_wallpaper_change">تغيير</string>
     <string name="dejavu_workspace_wallpaper_failed">تعذّر فتح هذه الصورة.</string>
     <string name="dejavu_workspace_wallpaper_colors">الألوان التي تُزامَن مع Zen</string>
     <string name="dejavu_workspace_wallpaper_hint_local">تبقى الصورة على هذا الهاتف وتظهر في الصفحة الرئيسية.</string>
@@ -508,7 +506,7 @@
     <string name="dejavu_settings_autoclose_tabs">الإغلاق التلقائي للتبويبات</string>
     <string name="dejavu_settings_tabs_workspaces">التبويبات ومساحات العمل والحاويات</string>
     <string name="dejavu_settings_tabs_workspaces_summary">إغلاق التبويبات وتنويمها، والحاويات، وصفحة البداية، والروابط</string>
-    <string name="dejavu_settings_customize_summary">السمة، وإجراءات التبويبات، والقائمة، والأشرطة، وكلمات المرور، واللغة</string>
+    <string name="dejavu_settings_customize_summary">السمة، وإجراءات التبويبات، والقائمة، والأشرطة</string>
     <string name="dejavu_settings_bars_2">الأشرطة</string>
     <string name="dejavu_settings_bars_summary">صفحة الوِب، وصفحة البداية، وملء الشاشة، وشريط التبويب، والإيماءات</string>
     <string name="dejavu_settings_web_page">صفحة الوِب</string>
@@ -552,4 +550,6 @@
     <string name="dejavu_welcome_default_done">أصبح Dejavu متصفحك المبدئي.</string>
     <string name="dejavu_welcome_sync_title">مساحات عملك على كل أجهزتك</string>
     <string name="dejavu_welcome_sync_text">سجّل الدخول بحساب Mozilla لمزامنة مساحات العمل والتبويبات المثبتة والأساسيات مع Zen، أو التبويبات مع Firefox.</string>
+    <string name="dejavu_settings_matrix">دردش على Matrix</string>
+    <string name="dejavu_settings_matrix_summary">اطرح سؤالًا، أو اقترح ميزة، أو أبلغ عن خطأ</string>
 </resources>

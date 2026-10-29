@@ -40,7 +40,7 @@ import java.lang.ref.WeakReference
 import java.util.WeakHashMap
 import kotlin.math.roundToInt
 import org.mozilla.fenix.R
-import org.mozilla.fenix.dejavu.settings.SettingsBackdrop
+import org.mozilla.fenix.dejavu.settings.PageBackdrop
 
 private const val OPEN_MS = 520L
 private const val CLOSE_MS = 480L
@@ -125,8 +125,8 @@ internal object PageGenie {
                 return@pictureWindow
             }
             view.home = home
-            // The settings show the home screen blurred behind them.
-            if (button == Button.SETTINGS) SettingsBackdrop.opensOver(home)
+            // The page shows the home screen blurred behind it.
+            PageBackdrop.opensOver(home)
             view.pour(kept[button]) {
                 awaited = view
                 navigate()

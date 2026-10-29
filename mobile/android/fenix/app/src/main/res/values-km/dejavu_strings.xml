@@ -432,8 +432,6 @@
     <string name="dejavu_workspace_theme_color">ពណ៌</string>
     <string name="dejavu_workspace_wallpaper">ផ្ទាំងរូបភាព</string>
     <string name="dejavu_workspace_wallpaper_hint">រូបភាពនៅតែលើទូរស័ព្ទនេះ ហើយបង្ហាញនៅលើទំព័រដើម។ ពណ៌របស់វាក្លាយជាស្បែកដែលធ្វើសមកាលកម្មជាមួយ Zen។</string>
-    <string name="dejavu_workspace_wallpaper_choose">ជ្រើសរើសរូបភាព</string>
-    <string name="dejavu_workspace_wallpaper_change">ប្ដូរ</string>
     <string name="dejavu_workspace_wallpaper_failed">មិនអាចបើករូបភាពនេះបានទេ។</string>
     <string name="dejavu_workspace_wallpaper_colors">ពណ៌ដែលធ្វើសមកាលកម្មជាមួយ Zen</string>
     <string name="dejavu_workspace_wallpaper_hint_local">រូបភាពនៅតែលើទូរស័ព្ទនេះ ហើយបង្ហាញនៅលើទំព័រដើម។</string>
@@ -468,7 +466,7 @@
     <string name="dejavu_settings_autoclose_tabs">បិទផ្ទាំងដោយស្វ័យប្រវត្តិ</string>
     <string name="dejavu_settings_tabs_workspaces">ផ្ទាំង ចន្លោះការងារ និងកុងតឺន័រ</string>
     <string name="dejavu_settings_tabs_workspaces_summary">ការបិទផ្ទាំង ផ្ទាំងដេក កុងតឺន័រ ទំព័រដើម និងតំណភ្ជាប់</string>
-    <string name="dejavu_settings_customize_summary">ផ្ទៃស្បែក សកម្មភាពផ្ទាំង ម៉ឺនុយ របារ ពាក្យសម្ងាត់ និងភាសា</string>
+    <string name="dejavu_settings_customize_summary">ផ្ទៃស្បែក សកម្មភាពផ្ទាំង ម៉ឺនុយ និងរបារ</string>
     <string name="dejavu_settings_bars_2">របារ</string>
     <string name="dejavu_settings_bars_summary">ទំព័របណ្ដាញ ទំព័រដើម ពេញអេក្រង់ របារផ្ទាំង និងកាយវិការ</string>
     <string name="dejavu_settings_web_page">ទំព័របណ្ដាញ</string>
@@ -512,4 +510,6 @@
     <string name="dejavu_welcome_default_done">Dejavu គឺជាកម្មវិធីរុករកលំនាំដើមរបស់អ្នក។</string>
     <string name="dejavu_welcome_sync_title">ចន្លោះការងាររបស់អ្នកនៅលើគ្រប់ឧបករណ៍</string>
     <string name="dejavu_welcome_sync_text">ចូលគណនី Mozilla ដើម្បីធ្វើសមកាលកម្មចន្លោះការងារ ផ្ទាំងបានខ្ទាស់ និងសំខាន់ៗជាមួយ Zen ឬផ្ទាំងជាមួយ Firefox។</string>
+    <string name="dejavu_settings_matrix">ជជែកនៅលើ Matrix</string>
+    <string name="dejavu_settings_matrix_summary">សួរសំណួរ ស្នើមុខងារ ឬរាយការណ៍កំហុស</string>
 </resources>

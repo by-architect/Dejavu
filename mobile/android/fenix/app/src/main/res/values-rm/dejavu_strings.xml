@@ -440,8 +440,6 @@
     <string name="dejavu_workspace_theme_color">Colur</string>
     <string name="dejavu_workspace_wallpaper">Maletg dal fund davos</string>
     <string name="dejavu_workspace_wallpaper_hint">Il maletg resta sin quest telefon e cumpara sin la pagina da partenza. Sias colurs daventan il tema che vegn sincronisà cun Zen.</string>
-    <string name="dejavu_workspace_wallpaper_choose">Tscherner in maletg</string>
-    <string name="dejavu_workspace_wallpaper_change">Midar</string>
     <string name="dejavu_workspace_wallpaper_failed">Impussibel d’avrir quest maletg.</string>
     <string name="dejavu_workspace_wallpaper_colors">Colurs sincronisadas cun Zen</string>
     <string name="dejavu_workspace_wallpaper_hint_local">Il maletg resta sin quest telefon e cumpara sin la pagina da partenza.</string>
@@ -476,7 +474,7 @@
     <string name="dejavu_settings_autoclose_tabs">Serrar automaticamain tabs</string>
     <string name="dejavu_settings_tabs_workspaces">Tabs, spazis da lavur e containers</string>
     <string name="dejavu_settings_tabs_workspaces_summary">Serrar e metter en pausa tabs, containers, pagina da partenza e colliaziuns</string>
-    <string name="dejavu_settings_customize_summary">Design, acziuns dals tabs, menu, travs, pleds-clav e lingua</string>
+    <string name="dejavu_settings_customize_summary">Design, acziuns dals tabs, menu e travs</string>
     <string name="dejavu_settings_bars_2">Travs</string>
     <string name="dejavu_settings_bars_summary">Pagina web, pagina da partenza, maletg entir, trav da tabs e gests</string>
     <string name="dejavu_settings_web_page">Pagina web</string>
@@ -520,4 +518,6 @@
     <string name="dejavu_welcome_default_done">Dejavu è tes navigatur da standard.</string>
     <string name="dejavu_welcome_sync_title">Tes spazis da lavur sin mintga apparat</string>
     <string name="dejavu_welcome_sync_text">T’annunzia cun in conto Mozilla per sincronisar spazis da lavur, tabs fixads ed essenzials cun Zen, u tabs cun Firefox.</string>
+    <string name="dejavu_settings_matrix">Chatta sin Matrix</string>
+    <string name="dejavu_settings_matrix_summary">Fa ina dumonda, propona ina funcziun u annunzia in sbagl</string>
 </resources>

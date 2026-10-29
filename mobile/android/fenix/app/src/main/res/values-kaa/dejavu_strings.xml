@@ -440,8 +440,6 @@
     <string name="dejavu_workspace_theme_color">Reń</string>
     <string name="dejavu_workspace_wallpaper">Fon súwreti</string>
     <string name="dejavu_workspace_wallpaper_hint">Súwret usı telefonda qaladı hám bas bette kórsetiledi. Onıń reńleri Zen menen sinxronlastırılatuǵın temaǵa aylanadı.</string>
-    <string name="dejavu_workspace_wallpaper_choose">Súwret tańlaw</string>
-    <string name="dejavu_workspace_wallpaper_change">Ózgertiw</string>
     <string name="dejavu_workspace_wallpaper_failed">Bul súwretti ashıw múmkin bolmadı.</string>
     <string name="dejavu_workspace_wallpaper_colors">Zen menen sinxronlastırılatuǵın reńler</string>
     <string name="dejavu_workspace_wallpaper_hint_local">Súwret usı telefonda qaladı hám bas bette kórsetiledi.</string>
@@ -476,7 +474,7 @@
     <string name="dejavu_settings_autoclose_tabs">Betlerdi avtomat tárizde jabıw</string>
     <string name="dejavu_settings_tabs_workspaces">Betler, jumıs maydanları hám konteynerler</string>
     <string name="dejavu_settings_tabs_workspaces_summary">Betlerdi jabıw hám uyqıǵa jiberiw, konteynerler, bas bet hám siltemeler</string>
-    <string name="dejavu_settings_customize_summary">Tema, bet áreketleri, menyu, paneller, paroller hám til</string>
+    <string name="dejavu_settings_customize_summary">Tema, bet áreketleri, menyu hám paneller</string>
     <string name="dejavu_settings_bars_2">Paneller</string>
     <string name="dejavu_settings_bars_summary">Veb-bet, bas bet, tolıq ekran, betler paneli hám háreketler</string>
     <string name="dejavu_settings_web_page">Veb-bet</string>
@@ -520,4 +518,6 @@
     <string name="dejavu_welcome_default_done">Dejavu — tiykarǵı brauzerińiz.</string>
     <string name="dejavu_welcome_sync_title">Jumıs maydanlarıńız hár bir qurılmada</string>
     <string name="dejavu_welcome_sync_text">Jumıs maydanların, bekitilgen betlerdi hám tiykarǵılardı Zen penen yamasa betlerdi Firefox penen sinxronlastırıw ushın Mozilla akkauntı menen kiriń.</string>
+    <string name="dejavu_settings_matrix">Matrix-te sóylesiń</string>
+    <string name="dejavu_settings_matrix_summary">Soraw beriń, imkaniyat usınıń yamasa qáte haqqında xabarlań</string>
 </resources>

@@ -35,6 +35,7 @@ import org.mozilla.fenix.components.toolbar.ToolbarPosition
 import org.mozilla.fenix.dejavu.browser.BarsLayout
 import org.mozilla.fenix.dejavu.browser.DejavuToolbar
 import org.mozilla.fenix.dejavu.settings.dejavuSettings
+import org.mozilla.fenix.dejavu.settings.slideTo
 import org.mozilla.fenix.e2e.SystemInsetsPaddedFragment
 import org.mozilla.fenix.ext.components
 import org.mozilla.fenix.ext.isTallWindow
@@ -484,8 +485,6 @@ open class CustomizationFragment : PreferenceFragmentCompat(), SystemInsetsPadde
             resources.getString(R.string.pref_key_dejavu_more_menu) ->
                 return openDejavuScreen(R.id.dejavu_more_menu_graph)
             resources.getString(R.string.pref_key_dejavu_bars) -> return openDejavuScreen(R.id.dejavu_bars_graph)
-            resources.getString(R.string.pref_key_dejavu_passwords_language) ->
-                return openDejavuScreen(R.id.dejavu_passwords_language_graph)
             resources.getString(R.string.pref_key_website_pull_to_refresh) -> {
                 PullToRefreshInBrowser.enabled.set(requireComponents.settings.isPullToRefreshEnabledInBrowser)
             }
@@ -499,7 +498,7 @@ open class CustomizationFragment : PreferenceFragmentCompat(), SystemInsetsPadde
     /** Dejavu: opens one of the screens Customize leads to, only once when its entry is tapped twice. */
     private fun openDejavuScreen(@IdRes graph: Int): Boolean {
         val navController = findNavController()
-        if (navController.currentDestination?.id == R.id.customizationFragment) navController.navigate(graph)
+        if (navController.currentDestination?.id == R.id.customizationFragment) navController.slideTo(graph)
         return true
     }
 

@@ -440,8 +440,6 @@
     <string name="dejavu_workspace_theme_color">رنگ</string>
     <string name="dejavu_workspace_wallpaper">تصویر پس‌زمینه</string>
     <string name="dejavu_workspace_wallpaper_hint">تصویر روی همین گوشی می‌ماند و در صفحهٔ اصلی نمایش داده می‌شود. رنگ‌هایش به پوسته‌ای تبدیل می‌شوند که با Zen همگام‌سازی می‌شود.</string>
-    <string name="dejavu_workspace_wallpaper_choose">انتخاب یک تصویر</string>
-    <string name="dejavu_workspace_wallpaper_change">تغییر</string>
     <string name="dejavu_workspace_wallpaper_failed">باز کردن این تصویر ممکن نشد.</string>
     <string name="dejavu_workspace_wallpaper_colors">رنگ‌هایی که با Zen همگام‌سازی می‌شوند</string>
     <string name="dejavu_workspace_wallpaper_hint_local">تصویر روی همین گوشی می‌ماند و در صفحهٔ اصلی نمایش داده می‌شود.</string>
@@ -476,7 +474,7 @@
     <string name="dejavu_settings_autoclose_tabs">بستن خودکار زبانه‌ها</string>
     <string name="dejavu_settings_tabs_workspaces">زبانه‌ها، فضاهای کاری و محفظه‌ها</string>
     <string name="dejavu_settings_tabs_workspaces_summary">بستن و خواباندن زبانه‌ها، محفظه‌ها، صفحهٔ اصلی و پیوندها</string>
-    <string name="dejavu_settings_customize_summary">تم، کنش‌های زبانه، منو، نوارها، گذرواژه‌ها و زبان</string>
+    <string name="dejavu_settings_customize_summary">تم، کنش‌های زبانه، منو و نوارها</string>
     <string name="dejavu_settings_bars_2">نوارها</string>
     <string name="dejavu_settings_bars_summary">صفحهٔ وب، صفحهٔ اصلی، تمام‌صفحه، نوار زبانه‌ها و ژست‌های حرکتی</string>
     <string name="dejavu_settings_web_page">صفحهٔ وب</string>
@@ -520,4 +518,6 @@
     <string name="dejavu_welcome_default_done">Dejavu مرورگر پیش‌فرض شماست.</string>
     <string name="dejavu_welcome_sync_title">فضاهای کاری شما در همهٔ دستگاه‌ها</string>
     <string name="dejavu_welcome_sync_text">با یک حساب Mozilla وارد شوید تا فضاهای کاری، زبانه‌های سنجاق‌شده و ضروریات را با Zen، یا زبانه‌ها را با Firefox همگام‌سازی کنید.</string>
+    <string name="dejavu_settings_matrix">در Matrix گفت‌وگو کنید</string>
+    <string name="dejavu_settings_matrix_summary">سؤالی بپرسید، قابلیتی پیشنهاد دهید یا اشکالی را گزارش کنید</string>
 </resources>

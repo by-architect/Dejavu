@@ -448,8 +448,6 @@
     <string name="dejavu_workspace_theme_color">Боја</string>
     <string name="dejavu_workspace_wallpaper">Позадина</string>
     <string name="dejavu_workspace_wallpaper_hint">Слика остаје на овом телефону и приказује се на почетној страници. Њене боје постају тема која се синхронизује са Zen-ом.</string>
-    <string name="dejavu_workspace_wallpaper_choose">Изабери слику</string>
-    <string name="dejavu_workspace_wallpaper_change">Промени</string>
     <string name="dejavu_workspace_wallpaper_failed">Није могуће отворити ову слику.</string>
     <string name="dejavu_workspace_wallpaper_colors">Боје које се синхронизују са Zen-ом</string>
     <string name="dejavu_workspace_wallpaper_hint_local">Слика остаје на овом телефону и приказује се на почетној страници.</string>
@@ -484,7 +482,7 @@
     <string name="dejavu_settings_autoclose_tabs">Аутоматско затварање језичака</string>
     <string name="dejavu_settings_tabs_workspaces">Језичци, радни простори и контејнери</string>
     <string name="dejavu_settings_tabs_workspaces_summary">Затварање и успављивање језичака, контејнери, почетна страна и везе</string>
-    <string name="dejavu_settings_customize_summary">Тема, радње језичака, мени, траке, лозинке и језик</string>
+    <string name="dejavu_settings_customize_summary">Тема, радње језичака, мени и траке</string>
     <string name="dejavu_settings_bars_2">Траке</string>
     <string name="dejavu_settings_bars_summary">Веб страница, почетна страна, цео екран, трака са језичцима и гестикулације</string>
     <string name="dejavu_settings_web_page">Веб страница</string>
@@ -528,4 +526,6 @@
     <string name="dejavu_welcome_default_done">Dejavu је ваш подразумевани прегледач.</string>
     <string name="dejavu_welcome_sync_title">Ваши радни простори на сваком уређају</string>
     <string name="dejavu_welcome_sync_text">Пријавите се Mozilla налогом да бисте синхронизовали радне просторе, закачене језичке и Фаворите са Zen-ом, или језичке са Firefox-ом.</string>
+    <string name="dejavu_settings_matrix">Ћаскајте на Matrix-у</string>
+    <string name="dejavu_settings_matrix_summary">Поставите питање, предложите функцију или пријавите грешку</string>
 </resources>

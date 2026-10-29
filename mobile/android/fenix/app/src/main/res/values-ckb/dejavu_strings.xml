@@ -440,8 +440,6 @@
     <string name="dejavu_workspace_theme_color">ڕەنگ</string>
     <string name="dejavu_workspace_wallpaper">وێنەی پاشبنەما</string>
     <string name="dejavu_workspace_wallpaper_hint">وێنەکە لەسەر ئەم مۆبایلە دەمێنێتەوە و لە پەڕەی سەرەکیدا پیشان دەدرێت. ڕەنگەکانی دەبنە ئەو ڕووکارەی لەگەڵ Zen هاوکات دەکرێت.</string>
-    <string name="dejavu_workspace_wallpaper_choose">وێنەیەک هەڵبژێرە</string>
-    <string name="dejavu_workspace_wallpaper_change">گۆڕین</string>
     <string name="dejavu_workspace_wallpaper_failed">نەتوانرا ئەم وێنەیە بکرێتەوە.</string>
     <string name="dejavu_workspace_wallpaper_colors">ئەو ڕەنگانەی لەگەڵ Zen هاوکات دەکرێن</string>
     <string name="dejavu_workspace_wallpaper_hint_local">وێنەکە لەسەر ئەم مۆبایلە دەمێنێتەوە و لە پەڕەی سەرەکیدا پیشان دەدرێت.</string>
@@ -476,7 +474,7 @@
     <string name="dejavu_settings_autoclose_tabs">داخستنی خۆکاری بازدەرەکان</string>
     <string name="dejavu_settings_tabs_workspaces">بازدەرەکان، فەزاکان و کۆنتەینەرەکان</string>
     <string name="dejavu_settings_tabs_workspaces_summary">داخستن و خەوتاندنی بازدەرەکان، کۆنتەینەرەکان، پەڕەی سەرەکی و بەستەرەکان</string>
-    <string name="dejavu_settings_customize_summary">ڕووکار، کردارەکانی بازدەر، پێڕست، شریتەکان، وشە نهێنییەکان و زمان</string>
+    <string name="dejavu_settings_customize_summary">ڕووکار، کردارەکانی بازدەر، پێڕست و شریتەکان</string>
     <string name="dejavu_settings_bars_2">شریتەکان</string>
     <string name="dejavu_settings_bars_summary">پەڕەی وێب، پەڕەی سەرەکی، پڕبەشاشە، شریتی بازدەرەکان و جوڵاندنەکان</string>
     <string name="dejavu_settings_web_page">پەڕەی وێب</string>
@@ -520,4 +518,6 @@
     <string name="dejavu_welcome_default_done">Dejavu وێبگەڕی سەرەکیتە.</string>
     <string name="dejavu_welcome_sync_title">فەزاکانت لە هەموو ئامێرێکدا</string>
     <string name="dejavu_welcome_sync_text">بە هەژمارێکی Mozilla بچۆ ژوورەوە بۆ هاوکاتکردنی فەزاکان، بازدەرە چەسپاوەکان و ماڵپەڕە گرنگەکان لەگەڵ Zen، یان بازدەرەکان لەگەڵ Firefox.</string>
+    <string name="dejavu_settings_matrix">لە Matrix گفتوگۆ بکە</string>
+    <string name="dejavu_settings_matrix_summary">پرسیارێک بکە، تایبەتمەندییەک پێشنیار بکە یان هەڵەیەک ڕاپۆرت بکە</string>
 </resources>

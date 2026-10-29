@@ -14,6 +14,7 @@ import androidx.core.graphics.scale
 import androidx.exifinterface.media.ExifInterface
 import java.io.File
 import java.util.UUID
+import java.util.concurrent.atomic.AtomicInteger
 import kotlin.math.max
 import kotlin.math.min
 import kotlin.math.pow
@@ -68,15 +69,17 @@ class WorkspaceWallpapers private constructor(context: Context) {
     /** The wallpapers, by the id of their workspace. */
     val wallpapers: StateFlow<Map<String, WorkspaceWallpaper>> = _wallpapers.asStateFlow()
 
-    init {
-        io.launch {
-            deleteUnusedPictures()
-            addMissingLooks()
-        }
+    // How many times a wallpaper was given or taken away, so one drawn meanwhile can tell it came too late.
+    private val changes = AtomicInteger()
+
+    private val tidied = io.launch {
+        deleteUnusedPictures()
+        addMissingLooks()
     }
 
     /** Gives workspace [workspaceId] [wallpaper], or no wallpaper. A picture no workspace shows anymore is deleted. */
     fun set(workspaceId: String, wallpaper: WorkspaceWallpaper?) {
+        changes.incrementAndGet()
         var replaced: String? = null
         var changed: Map<String, WorkspaceWallpaper>? = null
         _wallpapers.update { old ->
@@ -87,6 +90,25 @@ class WorkspaceWallpapers private constructor(context: Context) {
         }
         changed?.let { prefs.edit { putString(KEY_WALLPAPERS, writeWallpapers(it)) } }
         replaced?.takeIf { it != wallpaper?.file }?.let(::discard)
+    }
+
+    /**
+     * Gives workspace [workspaceId] the wallpaper a fresh Dejavu starts with, [WallpaperArt.GOLD] drawn for a screen of
+     * [screenWidth] by [screenHeight] pixels, unless it has a wallpaper, or a wallpaper is given or taken away before it
+     * is drawn.
+     */
+    fun giveFirstWallpaper(workspaceId: String, screenWidth: Int, screenHeight: Int) {
+        if (workspaceId in _wallpapers.value) return
+        val before = changes.get()
+        io.launch {
+            tidied.join()
+            val wallpaper = importArt(WallpaperArt.GOLD, screenWidth, screenHeight) ?: return@launch
+            if (changes.get() == before && workspaceId !in _wallpapers.value) {
+                set(workspaceId, wallpaper)
+            } else {
+                pictureFile(wallpaper.file).delete()
+            }
+        }
     }
 
     /** Deletes picture [file] unless a workspace shows it, like one picked for a wallpaper that was not saved. */

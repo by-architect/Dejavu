@@ -440,8 +440,6 @@
     <string name="dejavu_workspace_theme_color">Culuri</string>
     <string name="dejavu_workspace_wallpaper">Funnu</string>
     <string name="dejavu_workspace_wallpaper_hint">A mmàggini resta supra stu tilèfunu e cumpari nnâ pàggina principali. I sò culuri addivèntanu u tema ca si sincronizza cu Zen.</string>
-    <string name="dejavu_workspace_wallpaper_choose">Scegghi na mmàggini</string>
-    <string name="dejavu_workspace_wallpaper_change">Cancia</string>
     <string name="dejavu_workspace_wallpaper_failed">Nun potti grapiri sta mmàggini.</string>
     <string name="dejavu_workspace_wallpaper_colors">Culuri ca si sincronizzanu cu Zen</string>
     <string name="dejavu_workspace_wallpaper_hint_local">A mmàggini resta supra stu tilèfunu e cumpari nnâ pàggina principali.</string>
@@ -476,7 +474,7 @@
     <string name="dejavu_settings_autoclose_tabs">Chiujuta autumàtica dî schedi</string>
     <string name="dejavu_settings_tabs_workspaces">Schedi, spazzi di travagghiu e cuntinituri</string>
     <string name="dejavu_settings_tabs_workspaces_summary">Chiujuta e sonnu dî schedi, cuntinituri, pàggina mastra e lijami</string>
-    <string name="dejavu_settings_customize_summary">Tema, azzioni dî schedi, menù, barri, chiavi e lingua</string>
+    <string name="dejavu_settings_customize_summary">Tema, azzioni dî schedi, menù e barri</string>
     <string name="dejavu_settings_bars_2">Barri</string>
     <string name="dejavu_settings_bars_summary">Pàggina web, pàggina mastra, tuttu schirmu, barra dî schedi e muvimenti</string>
     <string name="dejavu_settings_web_page">Pàggina web</string>
@@ -520,4 +518,6 @@
     <string name="dejavu_welcome_default_done">Dejavu è u tò navigaturi pridifinutu.</string>
     <string name="dejavu_welcome_sync_title">I tò spazzii di travagghiu supra ogni dispositivu</string>
     <string name="dejavu_welcome_sync_text">Trasi cu un cuntu Mozilla pi sincronizzari spazzii di travagghiu, schedi ficcati e essenziali cu Zen, o schedi cu Firefox.</string>
+    <string name="dejavu_settings_matrix">Parra supra Matrix</string>
+    <string name="dejavu_settings_matrix_summary">Fai na dumanna, pruponi na funzioni o signala un errori</string>
 </resources>

@@ -440,8 +440,6 @@
     <string name="dejavu_workspace_theme_color">Farbe</string>
     <string name="dejavu_workspace_wallpaper">Hintergrundbild</string>
     <string name="dejavu_workspace_wallpaper_hint">Das Bild bleibt auf diesem Telefon und erscheint auf der Startseite. Seine Farben werden zum Design, das mit Zen synchronisiert wird.</string>
-    <string name="dejavu_workspace_wallpaper_choose">Bild auswählen</string>
-    <string name="dejavu_workspace_wallpaper_change">Ändern</string>
     <string name="dejavu_workspace_wallpaper_failed">Dieses Bild konnte nicht geöffnet werden.</string>
     <string name="dejavu_workspace_wallpaper_colors">Farben, die mit Zen synchronisiert werden</string>
     <string name="dejavu_workspace_wallpaper_hint_local">Das Bild bleibt auf diesem Telefon und erscheint auf der Startseite.</string>
@@ -476,7 +474,7 @@
     <string name="dejavu_settings_autoclose_tabs">Tabs automatisch schließen</string>
     <string name="dejavu_settings_tabs_workspaces">Tabs, Arbeitsbereiche und Container</string>
     <string name="dejavu_settings_tabs_workspaces_summary">Tabs schließen und schlafen legen, Container, Startseite und Links</string>
-    <string name="dejavu_settings_customize_summary">Theme, Tab-Aktionen, Menü, Leisten, Passwörter und Sprache</string>
+    <string name="dejavu_settings_customize_summary">Theme, Tab-Aktionen, Menü und Leisten</string>
     <string name="dejavu_settings_bars_2">Leisten</string>
     <string name="dejavu_settings_bars_summary">Webseite, Startseite, Vollbild, Tab-Leiste und Gesten</string>
     <string name="dejavu_settings_web_page">Webseite</string>
@@ -520,4 +518,6 @@
     <string name="dejavu_welcome_default_done">Dejavu ist dein Standardbrowser.</string>
     <string name="dejavu_welcome_sync_title">Deine Arbeitsbereiche auf jedem Gerät</string>
     <string name="dejavu_welcome_sync_text">Melde dich mit einem Mozilla-Konto an, um Arbeitsbereiche, angeheftete Tabs und Favoriten mit Zen oder Tabs mit Firefox zu synchronisieren.</string>
+    <string name="dejavu_settings_matrix">Auf Matrix chatten</string>
+    <string name="dejavu_settings_matrix_summary">Stell eine Frage, schlag eine Funktion vor oder melde einen Fehler</string>
 </resources>

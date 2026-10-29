@@ -50,6 +50,9 @@ class WorkspaceRepository private constructor(context: Context) {
 
     val state: StateFlow<WorkspaceState> = _state.asStateFlow()
 
+    /** Saves the workspaces as they are, so that the ones a fresh Dejavu starts with keep their ids. */
+    fun save() = prefs.edit { putString(KEY_STATE, WorkspaceSerializer.write(_state.value)) }
+
     fun selectWorkspace(id: String) = mutate { state ->
         if (state.workspaces.none { it.id == id }) state else state.copy(activeWorkspaceId = id)
     }

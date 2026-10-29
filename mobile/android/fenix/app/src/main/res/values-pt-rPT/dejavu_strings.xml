@@ -448,8 +448,6 @@
     <string name="dejavu_workspace_theme_color">Cor</string>
     <string name="dejavu_workspace_wallpaper">Fundo</string>
     <string name="dejavu_workspace_wallpaper_hint">A imagem fica neste telemóvel e aparece na página inicial. As cores dela tornam-se o tema que é sincronizado com o Zen.</string>
-    <string name="dejavu_workspace_wallpaper_choose">Escolher uma imagem</string>
-    <string name="dejavu_workspace_wallpaper_change">Mudar</string>
     <string name="dejavu_workspace_wallpaper_failed">Não foi possível abrir esta imagem.</string>
     <string name="dejavu_workspace_wallpaper_colors">Cores sincronizadas com o Zen</string>
     <string name="dejavu_workspace_wallpaper_hint_local">A imagem fica neste telemóvel e aparece na página inicial.</string>
@@ -484,7 +482,7 @@
     <string name="dejavu_settings_autoclose_tabs">Fechar separadores automaticamente</string>
     <string name="dejavu_settings_tabs_workspaces">Separadores, espaços de trabalho e contentores</string>
     <string name="dejavu_settings_tabs_workspaces_summary">Fechar e hibernar separadores, contentores, página inicial e ligações</string>
-    <string name="dejavu_settings_customize_summary">Tema, ações de separadores, menu, barras, palavras-passe e idioma</string>
+    <string name="dejavu_settings_customize_summary">Tema, ações de separadores, menu e barras</string>
     <string name="dejavu_settings_bars_2">Barras</string>
     <string name="dejavu_settings_bars_summary">Página web, página inicial, ecrã completo, barra de separadores e gestos</string>
     <string name="dejavu_settings_web_page">Página web</string>
@@ -528,4 +526,6 @@
     <string name="dejavu_welcome_default_done">O Dejavu é o teu navegador predefinido.</string>
     <string name="dejavu_welcome_sync_title">Os teus espaços de trabalho em todos os dispositivos</string>
     <string name="dejavu_welcome_sync_text">Inicia sessão com uma conta Mozilla para sincronizar espaços de trabalho, separadores fixados e essenciais com o Zen, ou separadores com o Firefox.</string>
+    <string name="dejavu_settings_matrix">Conversar no Matrix</string>
+    <string name="dejavu_settings_matrix_summary">Faz uma pergunta, sugere uma funcionalidade ou reporta um erro</string>
 </resources>

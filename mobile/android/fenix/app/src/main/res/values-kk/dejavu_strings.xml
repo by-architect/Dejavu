@@ -440,8 +440,6 @@
     <string name="dejavu_workspace_theme_color">Түс</string>
     <string name="dejavu_workspace_wallpaper">Тұсқағаз</string>
     <string name="dejavu_workspace_wallpaper_hint">Сурет осы телефонда қалады және басты бетте көрсетіледі. Оның түстері Zen-мен синхрондалатын темаға айналады.</string>
-    <string name="dejavu_workspace_wallpaper_choose">Сурет таңдау</string>
-    <string name="dejavu_workspace_wallpaper_change">Өзгерту</string>
     <string name="dejavu_workspace_wallpaper_failed">Бұл суретті ашу мүмкін болмады.</string>
     <string name="dejavu_workspace_wallpaper_colors">Zen-мен синхрондалатын түстер</string>
     <string name="dejavu_workspace_wallpaper_hint_local">Сурет осы телефонда қалады және басты бетте көрсетіледі.</string>
@@ -476,7 +474,7 @@
     <string name="dejavu_settings_autoclose_tabs">Беттерді автожабу</string>
     <string name="dejavu_settings_tabs_workspaces">Беттер, жұмыс кеңістіктері және контейнерлер</string>
     <string name="dejavu_settings_tabs_workspaces_summary">Беттерді жабу мен ұйықтату, контейнерлер, үй парағы және сілтемелер</string>
-    <string name="dejavu_settings_customize_summary">Тема, бет әрекеттері, мәзір, жолақтар, парольдер және тіл</string>
+    <string name="dejavu_settings_customize_summary">Тема, бет әрекеттері, мәзір және жолақтар</string>
     <string name="dejavu_settings_bars_2">Жолақтар</string>
     <string name="dejavu_settings_bars_summary">Веб-парақ, үй парағы, толық экран, беттер жолағы және ым қимылдар</string>
     <string name="dejavu_settings_web_page">Веб-парақ</string>
@@ -520,4 +518,6 @@
     <string name="dejavu_welcome_default_done">Dejavu — сіздің негізгі браузеріңіз.</string>
     <string name="dejavu_welcome_sync_title">Жұмыс кеңістіктеріңіз әр құрылғыда</string>
     <string name="dejavu_welcome_sync_text">Жұмыс кеңістіктерін, бекітілген беттерді және негізгілерді Zen-мен, ал беттерді Firefox-пен синхрондау үшін Mozilla есептік жазбасымен кіріңіз.</string>
+    <string name="dejavu_settings_matrix">Matrix-те сөйлесу</string>
+    <string name="dejavu_settings_matrix_summary">Сұрақ қойыңыз, мүмкіндік ұсыныңыз немесе қате туралы хабарлаңыз</string>
 </resources>

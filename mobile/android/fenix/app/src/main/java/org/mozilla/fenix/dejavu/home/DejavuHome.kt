@@ -110,6 +110,7 @@ import org.mozilla.fenix.dejavu.ui.TapIcon
 import org.mozilla.fenix.dejavu.ui.glass
 import org.mozilla.fenix.dejavu.ui.rememberIconTaps
 import org.mozilla.fenix.dejavu.workspaces.PinnedItem
+import org.mozilla.fenix.dejavu.workspaces.WallpaperArt
 import org.mozilla.fenix.dejavu.workspaces.Workspace
 import org.mozilla.fenix.dejavu.workspaces.WorkspaceState
 import org.mozilla.fenix.dejavu.workspaces.WorkspaceTheme
@@ -132,6 +133,9 @@ interface DejavuHomeInteractor : TabEditor {
         theme: WorkspaceTheme?,
         wallpaper: WorkspaceWallpaper?,
     )
+
+    /** Draws [art] into a wallpaper with the colors taken from it; `null` when it cannot be kept. */
+    suspend fun onDrawWallpaper(art: WallpaperArt): WorkspaceWallpaper?
 
     /** Copies the picture at [uri] into a wallpaper with the colors taken from it; `null` when it cannot be read. */
     suspend fun onImportWallpaper(uri: Uri): WorkspaceWallpaper?

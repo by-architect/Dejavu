@@ -432,8 +432,6 @@
     <string name="dejavu_workspace_theme_color">颜色</string>
     <string name="dejavu_workspace_wallpaper">壁纸</string>
     <string name="dejavu_workspace_wallpaper_hint">图片保留在此手机上，并显示在主页上。其颜色将成为与 Zen 同步的主题。</string>
-    <string name="dejavu_workspace_wallpaper_choose">选择图片</string>
-    <string name="dejavu_workspace_wallpaper_change">更换</string>
     <string name="dejavu_workspace_wallpaper_failed">无法打开此图片。</string>
     <string name="dejavu_workspace_wallpaper_colors">与 Zen 同步的颜色</string>
     <string name="dejavu_workspace_wallpaper_hint_local">图片保留在此手机上，并显示在主页上。</string>
@@ -468,7 +466,7 @@
     <string name="dejavu_settings_autoclose_tabs">自动关闭标签页</string>
     <string name="dejavu_settings_tabs_workspaces">标签页、工作区和容器</string>
     <string name="dejavu_settings_tabs_workspaces_summary">标签页关闭与休眠、容器、主页和链接</string>
-    <string name="dejavu_settings_customize_summary">主题、标签页操作、菜单、工具栏、密码和语言</string>
+    <string name="dejavu_settings_customize_summary">主题、标签页操作、菜单和工具栏</string>
     <string name="dejavu_settings_bars_2">工具栏</string>
     <string name="dejavu_settings_bars_summary">网页、主页、全屏、标签页栏和手势</string>
     <string name="dejavu_settings_web_page">网页</string>
@@ -512,4 +510,6 @@
     <string name="dejavu_welcome_default_done">Dejavu 是您的默认浏览器。</string>
     <string name="dejavu_welcome_sync_title">在所有设备上使用您的工作区</string>
     <string name="dejavu_welcome_sync_text">登录 Mozilla 账户，即可与 Zen 同步工作区、固定标签页和常用网站，或与 Firefox 同步标签页。</string>
+    <string name="dejavu_settings_matrix">在 Matrix 上聊天</string>
+    <string name="dejavu_settings_matrix_summary">提问、提出功能建议或报告错误</string>
 </resources>

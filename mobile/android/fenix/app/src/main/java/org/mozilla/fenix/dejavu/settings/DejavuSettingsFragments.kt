@@ -21,14 +21,11 @@ import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.lazy.LazyColumn
-import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.lazy.itemsIndexed
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.Checkbox
-import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.RadioButton
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.CompositionLocalProvider
@@ -56,7 +53,6 @@ import mozilla.components.ui.icons.R as iconsR
 import org.mozilla.fenix.R
 import org.mozilla.fenix.compose.list.IconListItem
 import org.mozilla.fenix.compose.list.SwitchListItem
-import org.mozilla.fenix.compose.settings.SettingsSectionHeader
 import org.mozilla.fenix.dejavu.actions.ActionPlace
 import org.mozilla.fenix.dejavu.actions.CustomAction
 import org.mozilla.fenix.dejavu.actions.RowAction
@@ -158,22 +154,14 @@ class DejavuTabActionsFragment : DejavuComposeFragment(R.string.dejavu_settings_
         var choosing by remember { mutableStateOf<RowAction?>(null) }
 
         Column(modifier = Modifier.fillMaxSize().verticalScroll(rememberScrollState())) {
-            Text(
-                text = stringResource(R.string.dejavu_settings_tab_actions_hint),
-                style = MaterialTheme.typography.bodyMedium,
-                color = MaterialTheme.colorScheme.onSurfaceVariant,
-                modifier = Modifier.padding(16.dp),
-            )
+            SettingsHint(stringResource(R.string.dejavu_settings_tab_actions_hint))
             FilledButton(
                 text = stringResource(R.string.dejavu_custom_action_add),
                 icon = painterResource(iconsR.drawable.mozac_ic_plus_24),
                 modifier = Modifier.fillMaxWidth().padding(horizontal = 16.dp),
                 onClick = { openEditor(null) },
             )
-            SettingsSectionHeader(
-                text = stringResource(R.string.dejavu_settings_where_actions_show),
-                modifier = Modifier.padding(start = 16.dp, top = 24.dp, end = 16.dp),
-            )
+            SettingsHeader(stringResource(R.string.dejavu_settings_where_actions_show))
             ActionList.entries.forEachIndexed { index, list ->
                 IconListItem(
                     label = stringResource(list.place.label),
@@ -183,10 +171,7 @@ class DejavuTabActionsFragment : DejavuComposeFragment(R.string.dejavu_settings_
                     onClick = { openList(list) },
                 )
             }
-            SettingsSectionHeader(
-                text = stringResource(R.string.dejavu_settings_all_actions),
-                modifier = Modifier.padding(start = 16.dp, top = 24.dp, end = 16.dp),
-            )
+            SettingsHeader(stringResource(R.string.dejavu_settings_all_actions))
             actions.forEachIndexed { index, action ->
                 val places = ActionPlace.entries.filter { placements.isIn(action, it) }
                 IconListItem(
@@ -221,14 +206,14 @@ class DejavuTabActionsFragment : DejavuComposeFragment(R.string.dejavu_settings_
     }
 
     private fun openList(list: ActionList) {
-        findNavController().navigate(
+        findNavController().slideTo(
             R.id.dejavuActionListFragment,
             Bundle().apply { putString(DejavuActionListFragment.ARG_LIST, list.name) },
         )
     }
 
     private fun openEditor(actionId: String?) {
-        findNavController().navigate(
+        findNavController().slideTo(
             R.id.dejavuCustomActionFragment,
             Bundle().apply { putString(DejavuCustomActionFragment.ARG_ACTION_ID, actionId) },
         )
@@ -315,16 +300,8 @@ private fun ActionSwitches(
     canCheckMore: Boolean,
     onChange: (String, Boolean) -> Unit,
 ) {
-    SettingsSectionHeader(
-        text = stringResource(title),
-        modifier = Modifier.padding(start = 16.dp, top = 16.dp, end = 16.dp),
-    )
-    Text(
-        text = hint,
-        style = MaterialTheme.typography.bodyMedium,
-        color = MaterialTheme.colorScheme.onSurfaceVariant,
-        modifier = Modifier.padding(horizontal = 16.dp, vertical = 8.dp),
-    )
+    SettingsHint(hint)
+    SettingsHeader(stringResource(title))
     actions.forEachIndexed { index, action ->
         val checked = isChecked(action)
         SwitchListItem(
@@ -472,18 +449,14 @@ class DejavuContainersFragment : DejavuComposeFragment(R.string.dejavu_settings_
 
         LazyColumn(modifier = Modifier.fillMaxSize()) {
             item {
-                Text(
-                    text = stringResource(R.string.dejavu_settings_containers_hint),
-                    style = MaterialTheme.typography.bodyMedium,
-                    color = MaterialTheme.colorScheme.onSurfaceVariant,
-                    modifier = Modifier.padding(16.dp),
-                )
+                SettingsHint(stringResource(R.string.dejavu_settings_containers_hint))
             }
             item {
                 SwitchListItem(
                     label = stringResource(R.string.dejavu_temporary_by_default),
                     description = stringResource(R.string.dejavu_temporary_by_default_summary),
-                    maxDescriptionLines = 4,
+                    maxLabelLines = Int.MAX_VALUE,
+                    maxDescriptionLines = Int.MAX_VALUE,
                     checked = temporaryByDefault,
                     showSwitchAfter = true,
                     modifier = Modifier.settingsCard(index = 0, count = 2),
@@ -494,7 +467,8 @@ class DejavuContainersFragment : DejavuComposeFragment(R.string.dejavu_settings_
                 SwitchListItem(
                     label = stringResource(R.string.dejavu_essentials_per_container),
                     description = stringResource(R.string.dejavu_essentials_per_container_summary),
-                    maxDescriptionLines = 3,
+                    maxLabelLines = Int.MAX_VALUE,
+                    maxDescriptionLines = Int.MAX_VALUE,
                     checked = essentialsPerContainer,
                     showSwitchAfter = true,
                     modifier = Modifier.settingsCard(index = 1, count = 2),
@@ -566,18 +540,10 @@ class DejavuTabSleepFragment : DejavuComposeFragment(R.string.dejavu_settings_ta
         val minutes by settings.tabSleepMinutes.collectAsState()
         val limit by settings.awakeTabLimit.collectAsState()
         Column(modifier = Modifier.fillMaxSize().verticalScroll(rememberScrollState())) {
-            Text(
-                text = stringResource(R.string.dejavu_tab_sleep_hint),
-                style = MaterialTheme.typography.bodyMedium,
-                color = MaterialTheme.colorScheme.onSurfaceVariant,
-                modifier = Modifier.padding(16.dp),
-            )
-            SettingsSectionHeader(
-                text = stringResource(R.string.dejavu_tab_sleep_when),
-                modifier = Modifier.padding(horizontal = 16.dp),
-            )
+            SettingsHint(stringResource(R.string.dejavu_tab_sleep_hint))
+            SettingsHeader(stringResource(R.string.dejavu_tab_sleep_when))
             SLEEP_CHOICES.forEachIndexed { index, choice ->
-                ChoiceRow(
+                SettingsChoiceRow(
                     label = when (choice) {
                         0 -> stringResource(R.string.dejavu_tab_sleep_never)
                         MINUTES_PER_HOUR -> stringResource(R.string.dejavu_tab_sleep_after_hour)
@@ -588,24 +554,16 @@ class DejavuTabSleepFragment : DejavuComposeFragment(R.string.dejavu_settings_ta
                     onClick = { settings.setTabSleepMinutes(choice) },
                 )
             }
-            SettingsSectionHeader(
-                text = stringResource(R.string.dejavu_tab_sleep_limit),
-                modifier = Modifier.padding(start = 16.dp, end = 16.dp, top = 16.dp),
-            )
+            SettingsHeader(stringResource(R.string.dejavu_tab_sleep_limit))
             AWAKE_LIMITS.forEachIndexed { index, (choice, label) ->
-                ChoiceRow(
+                SettingsChoiceRow(
                     label = stringResource(label),
                     selected = limit == choice,
                     modifier = Modifier.settingsCard(index, AWAKE_LIMITS.size),
                     onClick = { settings.setAwakeTabLimit(choice) },
                 )
             }
-            Text(
-                text = stringResource(R.string.dejavu_tab_sleep_limit_hint),
-                style = MaterialTheme.typography.bodyMedium,
-                color = MaterialTheme.colorScheme.onSurfaceVariant,
-                modifier = Modifier.padding(16.dp),
-            )
+            SettingsHint(stringResource(R.string.dejavu_tab_sleep_limit_hint))
             Spacer(Modifier.height(8.dp))
         }
     }
@@ -646,16 +604,12 @@ class DejavuExternalLinksFragment : DejavuComposeFragment(R.string.dejavu_settin
         var openInPrivate by remember { mutableStateOf(fenixSettings.openLinksInAPrivateTab) }
 
         Column(modifier = Modifier.fillMaxSize().verticalScroll(rememberScrollState())) {
-            Text(
-                text = stringResource(R.string.dejavu_external_links_hint),
-                style = MaterialTheme.typography.bodyMedium,
-                color = MaterialTheme.colorScheme.onSurfaceVariant,
-                modifier = Modifier.padding(16.dp),
-            )
+            SettingsHint(stringResource(R.string.dejavu_external_links_hint))
             SwitchListItem(
                 label = stringResource(R.string.dejavu_external_links_private),
                 description = stringResource(R.string.dejavu_external_links_private_summary),
-                maxDescriptionLines = 3,
+                maxLabelLines = Int.MAX_VALUE,
+                maxDescriptionLines = Int.MAX_VALUE,
                 checked = openInPrivate,
                 showSwitchAfter = true,
                 modifier = Modifier.settingsCard(index = 0, count = 1),
@@ -665,38 +619,32 @@ class DejavuExternalLinksFragment : DejavuComposeFragment(R.string.dejavu_settin
                 },
             )
             Column(modifier = Modifier.alpha(if (openInPrivate) DISABLED_ALPHA else 1f)) {
-                SettingsSectionHeader(
-                    text = stringResource(R.string.dejavu_external_links_workspace),
-                    modifier = Modifier.padding(horizontal = 16.dp),
-                )
+                SettingsHeader(stringResource(R.string.dejavu_external_links_workspace))
                 val workspaceRows = workspaces.workspaces.size + 1
-                ChoiceRow(
+                SettingsChoiceRow(
                     label = stringResource(R.string.dejavu_external_links_last_workspace),
                     selected = chosenWorkspace == null,
                     modifier = Modifier.settingsCard(0, workspaceRows),
                     onClick = { settings.setExternalLinkWorkspace(null) },
                 )
                 workspaces.workspaces.forEachIndexed { index, workspace ->
-                    ChoiceRow(
+                    SettingsChoiceRow(
                         label = listOfNotNull(workspaceIconText(workspace.icon), workspace.name).joinToString("  "),
                         selected = workspace.id == chosenWorkspace?.id,
                         modifier = Modifier.settingsCard(index + 1, workspaceRows),
                         onClick = { settings.setExternalLinkWorkspace(workspace.id) },
                     )
                 }
-                SettingsSectionHeader(
-                    text = stringResource(R.string.dejavu_external_links_container),
-                    modifier = Modifier.padding(start = 16.dp, end = 16.dp, top = 16.dp),
-                )
+                SettingsHeader(stringResource(R.string.dejavu_external_links_container))
                 val permanent = records.orEmpty().filterNot { it.showsAsTemporary }
                 val containerRows = permanent.size + 3
-                ChoiceRow(
+                SettingsChoiceRow(
                     label = stringResource(R.string.dejavu_external_links_workspace_container),
                     selected = container == null,
                     modifier = Modifier.settingsCard(0, containerRows),
                     onClick = { settings.setExternalLinkContainer(null) },
                 )
-                ChoiceRow(
+                SettingsChoiceRow(
                     label = stringResource(R.string.dejavu_workspace_no_container),
                     selected = container == ContainerPick.NoContainer,
                     leading = { NoContainerIcon() },
@@ -705,7 +653,7 @@ class DejavuExternalLinksFragment : DejavuComposeFragment(R.string.dejavu_settin
                 )
                 permanent.forEachIndexed { index, record ->
                     val pick = ContainerPick.Container(record.contextId)
-                    ChoiceRow(
+                    SettingsChoiceRow(
                         label = record.name,
                         selected = container == pick,
                         leading = { ContainerIcon(record) },
@@ -713,7 +661,7 @@ class DejavuExternalLinksFragment : DejavuComposeFragment(R.string.dejavu_settin
                         onClick = { settings.setExternalLinkContainer(pick) },
                     )
                 }
-                ChoiceRow(
+                SettingsChoiceRow(
                     label = stringResource(R.string.dejavu_new_temporary_container),
                     selected = container == ContainerPick.Temporary,
                     leading = { TemporaryContainerIcon() },
@@ -727,28 +675,6 @@ class DejavuExternalLinksFragment : DejavuComposeFragment(R.string.dejavu_settin
 
     private companion object {
         const val DISABLED_ALPHA = 0.4f
-    }
-}
-
-/** A choice of a settings screen, a radio button with [label] and maybe a [leading] icon. */
-@Composable
-private fun ChoiceRow(
-    label: String,
-    selected: Boolean,
-    onClick: () -> Unit,
-    modifier: Modifier = Modifier,
-    leading: (@Composable () -> Unit)? = null,
-) {
-    Row(
-        verticalAlignment = Alignment.CenterVertically,
-        modifier = modifier.fillMaxWidth().clickable(onClick = onClick).padding(horizontal = 8.dp, vertical = 4.dp),
-    ) {
-        RadioButton(selected = selected, onClick = onClick)
-        if (leading != null) {
-            leading()
-            Spacer(Modifier.width(12.dp))
-        }
-        Text(text = label, style = MaterialTheme.typography.bodyLarge, color = MaterialTheme.colorScheme.onSurface)
     }
 }
 

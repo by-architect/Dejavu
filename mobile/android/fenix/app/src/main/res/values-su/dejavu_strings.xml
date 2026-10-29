@@ -432,8 +432,6 @@
     <string name="dejavu_workspace_theme_color">Warna</string>
     <string name="dejavu_workspace_wallpaper">Latar</string>
     <string name="dejavu_workspace_wallpaper_hint">Gambarna tetep aya dina telepon ieu sarta témbong dina home page. Warnana jadi téma nu disingkronkeun jeung Zen.</string>
-    <string name="dejavu_workspace_wallpaper_choose">Pilih gambar</string>
-    <string name="dejavu_workspace_wallpaper_change">Ganti</string>
     <string name="dejavu_workspace_wallpaper_failed">Gambar ieu teu bisa dibuka.</string>
     <string name="dejavu_workspace_wallpaper_colors">Warna nu disingkronkeun jeung Zen</string>
     <string name="dejavu_workspace_wallpaper_hint_local">Gambarna tetep aya dina telepon ieu sarta témbong dina home page.</string>
@@ -468,7 +466,7 @@
     <string name="dejavu_settings_autoclose_tabs">Nutup tab otomatis</string>
     <string name="dejavu_settings_tabs_workspaces">Tab, rohangan jeung wadah</string>
     <string name="dejavu_settings_tabs_workspaces_summary">Nutup jeung nyarékeun tab, wadah, tepas jeung tutumbu</string>
-    <string name="dejavu_settings_customize_summary">Téma, aksi tab, menu, bar, kecap sandi jeung basa</string>
+    <string name="dejavu_settings_customize_summary">Téma, aksi tab, menu jeung bar</string>
     <string name="dejavu_settings_bars_2">Bar</string>
     <string name="dejavu_settings_bars_summary">Kaca raramat, tepas, layar pinuh, bar tab jeung réngkak</string>
     <string name="dejavu_settings_web_page">Kaca raramat</string>
@@ -512,4 +510,6 @@
     <string name="dejavu_welcome_default_done">Dejavu nyaéta panyungsi baku anjeun.</string>
     <string name="dejavu_welcome_sync_title">Rohangan anjeun dina unggal parabot</string>
     <string name="dejavu_welcome_sync_text">Asup ku akun Mozilla pikeun nyingkronkeun rohangan, tab nu disemat sarta Penting sareng Zen, atawa tab sareng Firefox.</string>
+    <string name="dejavu_settings_matrix">Ngobrol di Matrix</string>
+    <string name="dejavu_settings_matrix_summary">Tumaros, usulkeun fitur atanapi laporkeun kasalahan</string>
 </resources>

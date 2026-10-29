@@ -440,8 +440,6 @@
     <string name="dejavu_workspace_theme_color">Kulay</string>
     <string name="dejavu_workspace_wallpaper">Wallpaper</string>
     <string name="dejavu_workspace_wallpaper_hint">Mananatili ang larawan sa teleponong ito at lalabas ito sa home page. Ang mga kulay nito ang magiging tema na sini-sync sa Zen.</string>
-    <string name="dejavu_workspace_wallpaper_choose">Pumili ng larawan</string>
-    <string name="dejavu_workspace_wallpaper_change">Palitan</string>
     <string name="dejavu_workspace_wallpaper_failed">Hindi mabuksan ang larawang ito.</string>
     <string name="dejavu_workspace_wallpaper_colors">Mga kulay na sini-sync sa Zen</string>
     <string name="dejavu_workspace_wallpaper_hint_local">Mananatili ang larawan sa teleponong ito at lalabas ito sa home page.</string>
@@ -476,7 +474,7 @@
     <string name="dejavu_settings_autoclose_tabs">Kusang isara ang mga tab</string>
     <string name="dejavu_settings_tabs_workspaces">Mga tab, workspace, at container</string>
     <string name="dejavu_settings_tabs_workspaces_summary">Pagsasara at pagtulog ng mga tab, mga container, homepage, at mga link</string>
-    <string name="dejavu_settings_customize_summary">Tema, mga aksyon ng tab, menu, mga bar, mga password, at wika</string>
+    <string name="dejavu_settings_customize_summary">Tema, mga aksyon ng tab, menu, at mga bar</string>
     <string name="dejavu_settings_bars_2">Mga bar</string>
     <string name="dejavu_settings_bars_summary">Web page, homepage, full screen, tab bar, at mga gesture</string>
     <string name="dejavu_settings_web_page">Web page</string>
@@ -520,4 +518,6 @@
     <string name="dejavu_welcome_default_done">Default browser mo na ang Dejavu.</string>
     <string name="dejavu_welcome_sync_title">Ang iyong mga workspace sa bawat device</string>
     <string name="dejavu_welcome_sync_text">Mag-sign in gamit ang Mozilla account para i-sync ang mga workspace, naka-pin na tab at Mahahalaga sa Zen, o mga tab sa Firefox.</string>
+    <string name="dejavu_settings_matrix">Makipag-chat sa Matrix</string>
+    <string name="dejavu_settings_matrix_summary">Magtanong, magmungkahi ng feature, o mag-ulat ng bug</string>
 </resources>

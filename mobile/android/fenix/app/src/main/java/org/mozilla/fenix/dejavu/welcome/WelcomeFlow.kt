@@ -111,6 +111,10 @@ internal fun WelcomeFlow(page: Int, onPage: (Int) -> Unit, onDone: (signIn: Bool
         }
     }
     if (look != null) {
+        // The wallpaper a fresh Dejavu starts with may be drawn after the pages opened.
+        val stored by wallpaperStore.wallpapers.collectAsState()
+        val storedWallpaper = workspace?.id?.let { stored[it] }
+        LaunchedEffect(look, storedWallpaper) { look.follow(storedWallpaper) }
         // Kept a moment after the last change, so dragging a slider saves once, and when the pages close.
         LaunchedEffect(look, look.theme, look.wallpaper) {
             delay(SAVE_DELAY_MS)
@@ -236,6 +240,13 @@ internal class WelcomeLook(
 
     fun setIntensity(intensity: Float) {
         wallpaper = wallpaper?.copy(intensity = intensity)
+    }
+
+    /** Shows [stored], the wallpaper given to the workspace meanwhile, unless another one was picked here. */
+    fun follow(stored: WorkspaceWallpaper?) {
+        if (wallpaper != savedWallpaper || stored == savedWallpaper) return
+        wallpaper = stored
+        savedWallpaper = stored
     }
 
     /** Keeps the look shown for the workspace, if it changed since it was last kept. */

@@ -440,8 +440,6 @@
     <string name="dejavu_workspace_theme_color">رنګ</string>
     <string name="dejavu_workspace_wallpaper">د شالید انځور</string>
     <string name="dejavu_workspace_wallpaper_hint">انځور په دې تلیفون کې پاتې کېږي او په کور پاڼه کې ښکاري. د هغه رنګونه هغه طرح جوړوي چې له Zen سره همغږي کېږي.</string>
-    <string name="dejavu_workspace_wallpaper_choose">انځور ټاکل</string>
-    <string name="dejavu_workspace_wallpaper_change">بدلول</string>
     <string name="dejavu_workspace_wallpaper_failed">دا انځور خلاص نه شو.</string>
     <string name="dejavu_workspace_wallpaper_colors">هغه رنګونه چې له Zen سره همغږي کېږي</string>
     <string name="dejavu_workspace_wallpaper_hint_local">انځور په دې تلیفون کې پاتې کېږي او په کور پاڼه کې ښکاري.</string>
@@ -476,7 +474,7 @@
     <string name="dejavu_settings_autoclose_tabs">ټبونه په اوتومات ډول بندول</string>
     <string name="dejavu_settings_tabs_workspaces">ټبونه، ساحې او کانتینرونه</string>
     <string name="dejavu_settings_tabs_workspaces_summary">د ټبونو بندول او ویده کول، کانتینرونه، کور پاڼه او لینکونه</string>
-    <string name="dejavu_settings_customize_summary">طرح، د ټب کړنې، مینو، نوارونه، پاسورډونه او ژبه</string>
+    <string name="dejavu_settings_customize_summary">طرح، د ټب کړنې، مینو او نوارونه</string>
     <string name="dejavu_settings_bars_2">نوارونه</string>
     <string name="dejavu_settings_bars_summary">وېب پاڼه، کور پاڼه، بشپړ سکرين، د ټبونو نوار او اشارې</string>
     <string name="dejavu_settings_web_page">وېب پاڼه</string>
@@ -520,4 +518,6 @@
     <string name="dejavu_welcome_default_done">Dejavu ستاسو اصلي براوزر دی.</string>
     <string name="dejavu_welcome_sync_title">ستاسو ساحې په هره وسیله کې</string>
     <string name="dejavu_welcome_sync_text">د Mozilla حساب سره ننوځئ، ترڅو ساحې، پین شوي ټبونه او مهمې ویب پاڼې له Zen سره، یا ټبونه له Firefox سره همغږي کړئ.</string>
+    <string name="dejavu_settings_matrix">په Matrix کې خبرې وکړئ</string>
+    <string name="dejavu_settings_matrix_summary">پوښتنه وکړئ، د یوې ځانګړنې وړاندیز وکړئ یا د تېروتنې راپور ورکړئ</string>
 </resources>

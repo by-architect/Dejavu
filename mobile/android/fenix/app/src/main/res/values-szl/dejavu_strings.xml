@@ -456,8 +456,6 @@
     <string name="dejavu_workspace_theme_color">Farba</string>
     <string name="dejavu_workspace_wallpaper">Tapeta</string>
     <string name="dejavu_workspace_wallpaper_hint">Ôbrozek ôstowo na tym telefōnie i pokazuje sie na strōnie dōm. Jego farby stowajōm sie motywym, kery sie synchronizuje z Zen.</string>
-    <string name="dejavu_workspace_wallpaper_choose">Ôbier ôbrozek</string>
-    <string name="dejavu_workspace_wallpaper_change">Zmiyń</string>
     <string name="dejavu_workspace_wallpaper_failed">Niy szło ôdewrzić tego ôbrozka.</string>
     <string name="dejavu_workspace_wallpaper_colors">Farby synchronizowane z Zen</string>
     <string name="dejavu_workspace_wallpaper_hint_local">Ôbrozek ôstowo na tym telefōnie i pokazuje sie na strōnie dōm.</string>
@@ -492,7 +490,7 @@
     <string name="dejavu_settings_autoclose_tabs">Autōmatyczne zawiyranie kart</string>
     <string name="dejavu_settings_tabs_workspaces">Karty, place i kōntynery</string>
     <string name="dejavu_settings_tabs_workspaces_summary">Zawiyranie i usypianie kart, kōntynery, dōmowo strōna i linki</string>
-    <string name="dejavu_settings_customize_summary">Motyw, akcyje kart, menu, poski, hasła i godka</string>
+    <string name="dejavu_settings_customize_summary">Motyw, akcyje kart, menu i poski</string>
     <string name="dejavu_settings_bars_2">Poski</string>
     <string name="dejavu_settings_bars_summary">Strōna internetowo, dōmowo strōna, połny ekran, posek z kartami i gesty</string>
     <string name="dejavu_settings_web_page">Strōna internetowo</string>
@@ -536,4 +534,6 @@
     <string name="dejavu_welcome_default_done">Dejavu to je twoja bazowo przeglōndarka.</string>
     <string name="dejavu_welcome_sync_title">Twoje place na kożdym geracie</string>
     <string name="dejavu_welcome_sync_text">Zaloguj sie kōntym Mozilla, coby synchronizować place, przipiynte karty i nojważniejsze z Zen, abo karty z Firefox.</string>
+    <string name="dejavu_settings_matrix">Czat na Matrixie</string>
+    <string name="dejavu_settings_matrix_summary">Spytej sie, zaproponuj funkcyjo abo zgłoś feler</string>
 </resources>

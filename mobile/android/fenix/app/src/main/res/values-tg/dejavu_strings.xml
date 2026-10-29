@@ -440,8 +440,6 @@
     <string name="dejavu_workspace_theme_color">Ранг</string>
     <string name="dejavu_workspace_wallpaper">Тасвири замина</string>
     <string name="dejavu_workspace_wallpaper_hint">Тасвир дар ин телефон мемонад ва дар саҳифаи асосӣ нишон дода мешавад. Рангҳои он ба мавзӯе табдил меёбанд, ки бо Zen ҳамоҳанг мешавад.</string>
-    <string name="dejavu_workspace_wallpaper_choose">Интихоб кардани тасвир</string>
-    <string name="dejavu_workspace_wallpaper_change">Иваз кардан</string>
     <string name="dejavu_workspace_wallpaper_failed">Ин тасвир кушода нашуд.</string>
     <string name="dejavu_workspace_wallpaper_colors">Рангҳое, ки бо Zen ҳамоҳанг мешаванд</string>
     <string name="dejavu_workspace_wallpaper_hint_local">Тасвир дар ин телефон мемонад ва дар саҳифаи асосӣ нишон дода мешавад.</string>
@@ -476,7 +474,7 @@
     <string name="dejavu_settings_autoclose_tabs">Пӯшидани худкори варақаҳо</string>
     <string name="dejavu_settings_tabs_workspaces">Варақаҳо, фазоҳо ва контейнерҳо</string>
     <string name="dejavu_settings_tabs_workspaces_summary">Пӯшидан ва хоб кардани варақаҳо, контейнерҳо, саҳифаи асосӣ ва пайвандҳо</string>
-    <string name="dejavu_settings_customize_summary">Мавзуъ, амалҳои варақа, меню, наворҳо, ниҳонвожаҳо ва забон</string>
+    <string name="dejavu_settings_customize_summary">Мавзуъ, амалҳои варақа, меню ва наворҳо</string>
     <string name="dejavu_settings_bars_2">Наворҳо</string>
     <string name="dejavu_settings_bars_summary">Саҳифаи сомона, саҳифаи асосӣ, экрани пурра, навори варақаҳо ва ишораҳо</string>
     <string name="dejavu_settings_web_page">Саҳифаи сомона</string>
@@ -520,4 +518,6 @@
     <string name="dejavu_welcome_default_done">Dejavu браузери пешфарзи шумо мебошад.</string>
     <string name="dejavu_welcome_sync_title">Фазоҳои шумо дар ҳар як дастгоҳ</string>
     <string name="dejavu_welcome_sync_text">Бо ҳисоби Mozilla ворид шавед, то фазоҳо, варақаҳои часпонидашуда ва сомонаҳои муҳимро бо Zen ё варақаҳоро бо Firefox ҳамоҳанг кунед.</string>
+    <string name="dejavu_settings_matrix">Дар Matrix сӯҳбат кунед</string>
+    <string name="dejavu_settings_matrix_summary">Савол пурсед, хусусият пешниҳод кунед ё дар бораи хато хабар диҳед</string>
 </resources>

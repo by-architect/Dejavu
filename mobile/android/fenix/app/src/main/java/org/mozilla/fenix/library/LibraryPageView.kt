@@ -5,6 +5,7 @@
 package org.mozilla.fenix.library
 
 import android.content.Context
+import android.graphics.Color
 import android.view.ViewGroup
 import androidx.appcompat.R as appcompatR
 import androidx.appcompat.widget.Toolbar
@@ -12,6 +13,7 @@ import com.google.android.material.R as materialR
 import mozilla.components.support.ktx.android.content.getColorFromAttr
 import mozilla.components.ui.icons.R as iconsR
 import org.mozilla.fenix.R
+import org.mozilla.fenix.dejavu.settings.PageBackdrop
 import org.mozilla.fenix.ext.asActivity
 import org.mozilla.fenix.ext.setToolbarColors
 
@@ -25,7 +27,12 @@ open class LibraryPageView(val containerView: ViewGroup) {
         updateToolbar(
             title = title,
             foregroundColor = context.getColorFromAttr(materialR.attr.colorOnSurface),
-            backgroundColor = context.getColorFromAttr(materialR.attr.colorSurface),
+            // Dejavu: the toolbar lets the page's backdrop show through it.
+            backgroundColor = if (activity?.window?.let(PageBackdrop::isShown) == true) {
+                Color.TRANSPARENT
+            } else {
+                context.getColorFromAttr(materialR.attr.colorSurface)
+            },
         )
     }
 

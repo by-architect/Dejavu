@@ -440,8 +440,6 @@
     <string name="dejavu_workspace_theme_color">Colôr</string>
     <string name="dejavu_workspace_wallpaper">Fonts</string>
     <string name="dejavu_workspace_wallpaper_hint">La imagjin e reste su chest telefon e e ven mostrade te pagjine principâl. I siei colôrs a deventin il teme che al ven sincronizât cun Zen.</string>
-    <string name="dejavu_workspace_wallpaper_choose">Sielç une imagjin</string>
-    <string name="dejavu_workspace_wallpaper_change">Cambie</string>
     <string name="dejavu_workspace_wallpaper_failed">Impussibil vierzi cheste imagjin.</string>
     <string name="dejavu_workspace_wallpaper_colors">Colôrs sincronizâts cun Zen</string>
     <string name="dejavu_workspace_wallpaper_hint_local">La imagjin e reste su chest telefon e e ven mostrade te pagjine principâl.</string>
@@ -476,7 +474,7 @@
     <string name="dejavu_settings_autoclose_tabs">Siere in automatic lis schedis</string>
     <string name="dejavu_settings_tabs_workspaces">Schedis, spazis di lavôr e contenidôrs</string>
     <string name="dejavu_settings_tabs_workspaces_summary">Sierâ e indurmidî lis schedis, contenidôrs, pagjine iniziâl e leams</string>
-    <string name="dejavu_settings_customize_summary">Teme, azions des schedis, menù, sbaris, passwords e lenghe</string>
+    <string name="dejavu_settings_customize_summary">Teme, azions des schedis, menù e sbaris</string>
     <string name="dejavu_settings_bars_2">Sbaris</string>
     <string name="dejavu_settings_bars_summary">Pagjine web, pagjine iniziâl, plen schermi, sbare des schedis e mots</string>
     <string name="dejavu_settings_web_page">Pagjine web</string>
@@ -520,4 +518,6 @@
     <string name="dejavu_welcome_default_done">Dejavu al è il to navigadôr predefinît.</string>
     <string name="dejavu_welcome_sync_title">I tiei spazis di lavôr su ducj i dispositîfs</string>
     <string name="dejavu_welcome_sync_text">Jentre cuntun account Mozilla par sincronizâ spazis di lavôr, schedis fissadis e essenziâi cun Zen, o lis schedis cun Firefox.</string>
+    <string name="dejavu_settings_matrix">Cjacare su Matrix</string>
+    <string name="dejavu_settings_matrix_summary">Fâs une domande, sugjerìs une funzion o segnale un erôr</string>
 </resources>

@@ -15,8 +15,6 @@ import android.provider.Settings.ACTION_MANAGE_DEFAULT_APPS_SETTINGS
 import androidx.activity.compose.LocalActivity
 import androidx.activity.compose.rememberLauncherForActivityResult
 import androidx.activity.result.ActivityResultLauncher
-import androidx.activity.result.PickVisualMediaRequest
-import androidx.activity.result.contract.ActivityResultContracts.PickVisualMedia
 import androidx.activity.result.contract.ActivityResultContracts.StartActivityForResult
 import androidx.annotation.StringRes
 import androidx.appcompat.app.AppCompatDelegate
@@ -24,27 +22,21 @@ import androidx.compose.animation.core.Animatable
 import androidx.compose.animation.core.FastOutSlowInEasing
 import androidx.compose.animation.core.tween
 import androidx.compose.foundation.Image
-import androidx.compose.foundation.background
 import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
-import androidx.compose.foundation.layout.BoxScope
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.IntrinsicSize
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.RowScope
 import androidx.compose.foundation.layout.Spacer
-import androidx.compose.foundation.layout.aspectRatio
 import androidx.compose.foundation.layout.fillMaxHeight
-import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
-import androidx.compose.foundation.lazy.LazyRow
-import androidx.compose.foundation.lazy.itemsIndexed
 import androidx.compose.foundation.selection.selectable
 import androidx.compose.foundation.selection.toggleable
 import androidx.compose.foundation.shape.RoundedCornerShape
@@ -59,38 +51,26 @@ import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
-import androidx.compose.runtime.produceState
 import androidx.compose.runtime.remember
-import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.draw.clip
-import androidx.compose.ui.draw.drawBehind
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.ImageBitmap
 import androidx.compose.ui.graphics.asImageBitmap
 import androidx.compose.ui.graphics.graphicsLayer
 import androidx.compose.ui.graphics.painter.BitmapPainter
-import androidx.compose.ui.layout.ContentScale
-import androidx.compose.ui.platform.LocalConfiguration
 import androidx.compose.ui.platform.LocalContext
-import androidx.compose.ui.platform.LocalDensity
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.semantics.Role
-import androidx.compose.ui.semantics.contentDescription
-import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.core.content.edit
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.LifecycleEventObserver
 import androidx.lifecycle.compose.LocalLifecycleOwner
-import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
-import kotlinx.coroutines.withContext
 import mozilla.components.browser.state.search.SearchEngine
 import mozilla.components.browser.state.state.searchEngines
 import mozilla.components.browser.state.state.selectedOrDefaultSearchEngine
@@ -107,17 +87,12 @@ import org.mozilla.fenix.dejavu.home.LookChip
 import org.mozilla.fenix.dejavu.home.SliderRow
 import org.mozilla.fenix.dejavu.home.ThemeColorDialog
 import org.mozilla.fenix.dejavu.home.ThemeColors
-import org.mozilla.fenix.dejavu.home.WallpaperImage
-import org.mozilla.fenix.dejavu.home.drawWorkspaceTheme
-import org.mozilla.fenix.dejavu.home.rememberGrainBrush
+import org.mozilla.fenix.dejavu.home.WallpaperTiles
 import org.mozilla.fenix.dejavu.settings.DejavuSettings
 import org.mozilla.fenix.dejavu.ui.DejavuButtonStyle
 import org.mozilla.fenix.dejavu.ui.DejavuDialogButton
-import org.mozilla.fenix.dejavu.ui.DejavuPopup
 import org.mozilla.fenix.dejavu.ui.glass
-import org.mozilla.fenix.dejavu.workspaces.WallpaperArt
 import org.mozilla.fenix.dejavu.workspaces.WorkspaceTheme
-import org.mozilla.fenix.dejavu.workspaces.WorkspaceWallpaper
 import org.mozilla.fenix.dejavu.workspaces.WorkspaceWallpapers
 import org.mozilla.fenix.ext.getPreferenceKey
 import org.mozilla.fenix.utils.Settings
@@ -328,168 +303,22 @@ private fun WallpaperChoices(look: WelcomeLook) {
     val wallpapers = remember {
         fenix.strictMode.allowViolation(StrictMode::allowThreadDiskReads) { WorkspaceWallpapers.get(context) }
     }
-    val scope = rememberCoroutineScope()
     val screen = context.resources.displayMetrics
-    var importing by remember { mutableStateOf<String?>(null) }
-    var failed by remember { mutableStateOf(false) }
-    val shown = look.wallpaper
-    val art = WallpaperArt.of(shown)
-
-    // Pictures are read or drawn in the background; one at a time.
-    fun pick(key: String, load: suspend () -> WorkspaceWallpaper?) {
-        if (importing != null) return
-        importing = key
-        failed = false
-        scope.launch {
-            val picked = load()
-            importing = null
-            failed = picked == null
-            picked?.let { look.showWallpaper(it.copy(intensity = look.wallpaper?.intensity ?: it.intensity)) }
-        }
-    }
-    val picker = rememberLauncherForActivityResult(PickVisualMedia()) { uri ->
-        if (uri != null) pick(PHOTO) { wallpapers.importPicture(uri, screen.widthPixels, screen.heightPixels) }
-    }
-
-    LazyRow(
-        horizontalArrangement = Arrangement.spacedBy(10.dp),
+    WallpaperTiles(
+        shown = look.wallpaper,
+        onPick = { picked ->
+            look.showWallpaper(picked?.copy(intensity = look.wallpaper?.intensity ?: picked.intensity))
+        },
+        drawArt = { art -> wallpapers.importArt(art, screen.widthPixels, screen.heightPixels) },
+        importPicture = { uri -> wallpapers.importPicture(uri, screen.widthPixels, screen.heightPixels) },
         contentPadding = PaddingValues(horizontal = PAGE_MARGIN),
+        showsNone = true,
+        noneTheme = look.theme,
         modifier = Modifier.toPageEdges(),
-    ) {
-        item {
-            WallpaperTile(
-                selected = shown == null,
-                description = stringResource(R.string.dejavu_welcome_wallpaper_none),
-                onClick = { look.showWallpaper(null) },
-            ) {
-                NoWallpaper(look.theme)
-            }
-        }
-        itemsIndexed(WallpaperArt.entries) { index, entry ->
-            WallpaperTile(
-                selected = art == entry,
-                description = stringResource(R.string.dejavu_welcome_wallpaper_number, index + 1),
-                importing = importing == entry.key,
-                onClick = { pick(entry.key) { wallpapers.importArt(entry, screen.widthPixels, screen.heightPixels) } },
-            ) {
-                ArtPicture(entry)
-            }
-        }
-        item {
-            WallpaperTile(
-                selected = shown != null && art == null,
-                description = stringResource(R.string.dejavu_welcome_wallpaper_photo),
-                importing = importing == PHOTO,
-                onClick = {
-                    try {
-                        picker.launch(PickVisualMediaRequest(PickVisualMedia.ImageOnly))
-                    } catch (e: ActivityNotFoundException) {
-                        failed = true
-                    }
-                },
-            ) {
-                PhotoTile(photo = shown?.takeIf { art == null })
-            }
-        }
-    }
-    if (failed) {
-        Text(
-            text = stringResource(R.string.dejavu_workspace_wallpaper_failed),
-            style = MaterialTheme.typography.bodySmall,
-            color = MaterialTheme.colorScheme.error,
-            modifier = Modifier.padding(top = 8.dp),
-        )
-    }
-    shown?.let { wallpaper ->
+    )
+    look.wallpaper?.let { wallpaper ->
         Spacer(Modifier.height(12.dp))
         SliderRow(R.string.dejavu_workspace_theme_intensity, wallpaper.intensity, 0f..1f, look::setIntensity)
-    }
-}
-
-/** A wallpaper to pick, shaped like the screen, outlined while it is [selected]; a wheel turns while [importing]. */
-@Composable
-private fun WallpaperTile(
-    selected: Boolean,
-    description: String,
-    onClick: () -> Unit,
-    importing: Boolean = false,
-    content: @Composable BoxScope.() -> Unit,
-) {
-    val configuration = LocalConfiguration.current
-    val shape = RoundedCornerShape(14.dp)
-    Box(
-        contentAlignment = Alignment.Center,
-        modifier = Modifier
-            .width(TILE_WIDTH)
-            .aspectRatio(configuration.screenWidthDp.toFloat() / configuration.screenHeightDp.coerceAtLeast(1))
-            .clip(shape)
-            .background(MaterialTheme.colorScheme.surface)
-            .border(
-                width = if (selected) 2.dp else 1.dp,
-                color = if (selected) MaterialTheme.colorScheme.primary else DejavuPopup.edgeColor,
-                shape = shape,
-            )
-            .selectable(selected = selected, role = Role.RadioButton, onClick = onClick)
-            .semantics { contentDescription = description },
-    ) {
-        content()
-        if (importing) CircularProgressIndicator(modifier = Modifier.size(24.dp), strokeWidth = 2.dp)
-    }
-}
-
-/** The workspace's colors, which show without a wallpaper. */
-@Composable
-private fun NoWallpaper(theme: WorkspaceTheme?) {
-    val grain = rememberGrainBrush()
-    Spacer(modifier = Modifier.fillMaxSize().drawBehind { drawWorkspaceTheme(theme, null, 0f, grain) })
-    // The tile says what it is, so the sign is not read out as "No container".
-    Icon(
-        painter = painterResource(R.drawable.dejavu_ic_no_container_24),
-        contentDescription = null,
-        tint = MaterialTheme.colorScheme.onSurfaceVariant,
-        modifier = Modifier.size(20.dp),
-    )
-}
-
-/** A small picture of [art], drawn in the background at the tile's size. */
-@Composable
-private fun ArtPicture(art: WallpaperArt) {
-    val configuration = LocalConfiguration.current
-    val width = with(LocalDensity.current) { TILE_WIDTH.roundToPx() }
-    val height = width * configuration.screenHeightDp / configuration.screenWidthDp.coerceAtLeast(1)
-    val picture by produceState<ImageBitmap?>(null, art, width, height) {
-        value = withContext(Dispatchers.Default) { art.draw(width, height).asImageBitmap() }
-    }
-    picture?.let {
-        Image(
-            bitmap = it,
-            contentDescription = null,
-            contentScale = ContentScale.Crop,
-            modifier = Modifier.fillMaxSize(),
-        )
-    }
-}
-
-/** The user's own [photo] when it is the wallpaper, else what picks one. */
-@Composable
-private fun PhotoTile(photo: WorkspaceWallpaper?) {
-    if (photo != null) {
-        WallpaperImage(wallpaper = photo, modifier = Modifier.fillMaxSize())
-        return
-    }
-    Column(horizontalAlignment = Alignment.CenterHorizontally, modifier = Modifier.padding(6.dp)) {
-        Icon(
-            painter = painterResource(iconsR.drawable.mozac_ic_wallpaper_24),
-            contentDescription = null,
-            tint = MaterialTheme.colorScheme.onSurfaceVariant,
-        )
-        Spacer(Modifier.height(6.dp))
-        Text(
-            text = stringResource(R.string.dejavu_welcome_wallpaper_photo),
-            style = MaterialTheme.typography.labelSmall,
-            color = MaterialTheme.colorScheme.onSurfaceVariant,
-            textAlign = TextAlign.Center,
-        )
     }
 }
 
@@ -818,13 +647,11 @@ private val HOME_CHOICES = listOf(
 
 /** Where a page's choices start in the order its parts come in, after its icon, title and text. */
 private const val FIRST_CHOICE = 3
-private const val PHOTO = "photo"
 private const val ECHO_MS = 1100
 private const val ECHO_ORDER = 6
 private const val ECHO_ROOM = 1.6f
 private const val LOGO_START = 0.85f
 private val LOGO_SIZE = 104.dp
-private val TILE_WIDTH = 72.dp
 private val SKETCH_WIDTH = 44.dp
 
 /** How much larger each echo of the logo starts, and how strongly it shows then. */

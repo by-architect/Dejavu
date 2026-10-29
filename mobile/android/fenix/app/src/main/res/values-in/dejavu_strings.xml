@@ -432,8 +432,6 @@
     <string name="dejavu_workspace_theme_color">Warna</string>
     <string name="dejavu_workspace_wallpaper">Wallpaper</string>
     <string name="dejavu_workspace_wallpaper_hint">Gambar tetap ada di ponsel ini dan ditampilkan di beranda. Warnanya menjadi tema yang disinkronkan dengan Zen.</string>
-    <string name="dejavu_workspace_wallpaper_choose">Pilih gambar</string>
-    <string name="dejavu_workspace_wallpaper_change">Ubah</string>
     <string name="dejavu_workspace_wallpaper_failed">Gambar ini tidak dapat dibuka.</string>
     <string name="dejavu_workspace_wallpaper_colors">Warna yang disinkronkan dengan Zen</string>
     <string name="dejavu_workspace_wallpaper_hint_local">Gambar tetap ada di ponsel ini dan ditampilkan di beranda.</string>
@@ -468,7 +466,7 @@
     <string name="dejavu_settings_autoclose_tabs">Tutup otomatis tab</string>
     <string name="dejavu_settings_tabs_workspaces">Tab, ruang kerja, dan wadah</string>
     <string name="dejavu_settings_tabs_workspaces_summary">Menutup dan menidurkan tab, wadah, beranda, dan tautan</string>
-    <string name="dejavu_settings_customize_summary">Tema, tindakan tab, menu, bilah, sandi, dan bahasa</string>
+    <string name="dejavu_settings_customize_summary">Tema, tindakan tab, menu, dan bilah</string>
     <string name="dejavu_settings_bars_2">Bilah</string>
     <string name="dejavu_settings_bars_summary">Halaman web, beranda, layar penuh, bilah tab, dan gestur</string>
     <string name="dejavu_settings_web_page">Halaman web</string>
@@ -512,4 +510,6 @@
     <string name="dejavu_welcome_default_done">Dejavu adalah peramban baku Anda.</string>
     <string name="dejavu_welcome_sync_title">Ruang kerja Anda di setiap perangkat</string>
     <string name="dejavu_welcome_sync_text">Masuk dengan akun Mozilla untuk menyinkronkan ruang kerja, tab yang disemat, dan situs penting dengan Zen, atau tab dengan Firefox.</string>
+    <string name="dejavu_settings_matrix">Mengobrol di Matrix</string>
+    <string name="dejavu_settings_matrix_summary">Ajukan pertanyaan, usulkan fitur, atau laporkan bug</string>
 </resources>

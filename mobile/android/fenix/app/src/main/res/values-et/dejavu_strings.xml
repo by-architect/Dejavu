@@ -440,8 +440,6 @@
     <string name="dejavu_workspace_theme_color">Värv</string>
     <string name="dejavu_workspace_wallpaper">Taustapilt</string>
     <string name="dejavu_workspace_wallpaper_hint">Pilt jääb sellesse telefoni ja seda kuvatakse avalehel. Selle värvidest saab teema, mis sünkroonitakse Zeniga.</string>
-    <string name="dejavu_workspace_wallpaper_choose">Vali pilt</string>
-    <string name="dejavu_workspace_wallpaper_change">Muuda</string>
     <string name="dejavu_workspace_wallpaper_failed">Seda pilti ei õnnestunud avada.</string>
     <string name="dejavu_workspace_wallpaper_colors">Värvid, mis sünkroonitakse Zeniga</string>
     <string name="dejavu_workspace_wallpaper_hint_local">Pilt jääb sellesse telefoni ja seda kuvatakse avalehel.</string>
@@ -476,7 +474,7 @@
     <string name="dejavu_settings_autoclose_tabs">Kaartide automaatne sulgemine</string>
     <string name="dejavu_settings_tabs_workspaces">Kaardid, tööruumid ja konteinerid</string>
     <string name="dejavu_settings_tabs_workspaces_summary">Kaartide sulgemine ja uinutamine, konteinerid, avaleht ja lingid</string>
-    <string name="dejavu_settings_customize_summary">Teema, kaartide tegevused, menüü, ribad, paroolid ja keel</string>
+    <string name="dejavu_settings_customize_summary">Teema, kaartide tegevused, menüü ja ribad</string>
     <string name="dejavu_settings_bars_2">Ribad</string>
     <string name="dejavu_settings_bars_summary">Veebileht, avaleht, täisekraan, kaardiriba ja žestid</string>
     <string name="dejavu_settings_web_page">Veebileht</string>
@@ -520,4 +518,6 @@
     <string name="dejavu_welcome_default_done">Dejavu on sinu vaikebrauser.</string>
     <string name="dejavu_welcome_sync_title">Sinu tööruumid igas seadmes</string>
     <string name="dejavu_welcome_sync_text">Logi sisse Mozilla kontoga, et sünkroonida tööruumid, kinnitatud kaardid ja olulised Zeniga või kaardid Firefoxiga.</string>
+    <string name="dejavu_settings_matrix">Vestle Matrixis</string>
+    <string name="dejavu_settings_matrix_summary">Esita küsimus, paku välja funktsioon või teata veast</string>
 </resources>

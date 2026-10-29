@@ -440,8 +440,6 @@
     <string name="dejavu_workspace_theme_color">Couleur</string>
     <string name="dejavu_workspace_wallpaper">Ɗeerol ɓalal</string>
     <string name="dejavu_workspace_wallpaper_hint">L\'image reste sur ce téléphone et s\'affiche sur la page d\'accueil. Ses couleurs deviennent le thème qui se synchronise avec Zen.</string>
-    <string name="dejavu_workspace_wallpaper_choose">Suɓo natal</string>
-    <string name="dejavu_workspace_wallpaper_change">Waylu</string>
     <string name="dejavu_workspace_wallpaper_failed">Horiima udditde natal ngal.</string>
     <string name="dejavu_workspace_wallpaper_colors">Couleurs synchronisées avec Zen</string>
     <string name="dejavu_workspace_wallpaper_hint_local">L\'image reste sur ce téléphone et s\'affiche sur la page d\'accueil.</string>
@@ -476,7 +474,7 @@
     <string name="dejavu_settings_autoclose_tabs">Uddu tabbe e jaajol</string>
     <string name="dejavu_settings_tabs_workspaces">Tabbe, espaces de travail et conteneurs</string>
     <string name="dejavu_settings_tabs_workspaces_summary">Fermeture et mise en veille des tabbe, conteneurs, hello jaɓɓorgo et liens</string>
-    <string name="dejavu_settings_customize_summary">Siŋkoore, actions des tabbe, menu, barres, mots de passe et ɗemngal</string>
+    <string name="dejavu_settings_customize_summary">Siŋkoore, actions des tabbe, menu et barres</string>
     <string name="dejavu_settings_bars_2">Barres</string>
     <string name="dejavu_settings_bars_summary">Hello geese, hello jaɓɓorgo, plein écran, barre des tabbe et beese junngo</string>
     <string name="dejavu_settings_web_page">Hello geese</string>
@@ -520,4 +518,6 @@
     <string name="dejavu_welcome_default_done">Dejavu est ton navigateur par défaut.</string>
     <string name="dejavu_welcome_sync_title">Tes espaces de travail sur tous tes appareils</string>
     <string name="dejavu_welcome_sync_text">Connecte-toi avec un compte Mozilla pour synchroniser les espaces de travail, tabbe épinglées et essentiels avec Zen, ou les tabbe avec Firefox.</string>
+    <string name="dejavu_settings_matrix">Discuter sur Matrix</string>
+    <string name="dejavu_settings_matrix_summary">Pose une question, propose une fonctionnalité ou signale un bug</string>
 </resources>

@@ -432,8 +432,6 @@
     <string name="dejavu_workspace_theme_color">顏色</string>
     <string name="dejavu_workspace_wallpaper">背景圖</string>
     <string name="dejavu_workspace_wallpaper_hint">圖片只會留在這支手機上，並顯示在主頁。圖片的顏色會成為與 Zen 同步的佈景主題。</string>
-    <string name="dejavu_workspace_wallpaper_choose">選擇圖片</string>
-    <string name="dejavu_workspace_wallpaper_change">變更</string>
     <string name="dejavu_workspace_wallpaper_failed">無法開啟此圖片。</string>
     <string name="dejavu_workspace_wallpaper_colors">與 Zen 同步的顏色</string>
     <string name="dejavu_workspace_wallpaper_hint_local">圖片只會留在這支手機上，並顯示在主頁。</string>
@@ -468,7 +466,7 @@
     <string name="dejavu_settings_autoclose_tabs">自動關閉分頁</string>
     <string name="dejavu_settings_tabs_workspaces">分頁、工作區與容器</string>
     <string name="dejavu_settings_tabs_workspaces_summary">分頁關閉與休眠、容器、首頁與連結</string>
-    <string name="dejavu_settings_customize_summary">佈景主題、分頁操作、選單、工具列、密碼與語言</string>
+    <string name="dejavu_settings_customize_summary">佈景主題、分頁操作、選單與工具列</string>
     <string name="dejavu_settings_bars_2">工具列</string>
     <string name="dejavu_settings_bars_summary">網頁、首頁、全螢幕、分頁列與手勢</string>
     <string name="dejavu_settings_web_page">網頁</string>
@@ -512,4 +510,6 @@
     <string name="dejavu_welcome_default_done">Dejavu 已是您的預設瀏覽器。</string>
     <string name="dejavu_welcome_sync_title">在每部裝置上使用您的工作區</string>
     <string name="dejavu_welcome_sync_text">登入 Mozilla 帳號，即可與 Zen 同步工作區、已釘選分頁和常用網站，或與 Firefox 同步分頁。</string>
+    <string name="dejavu_settings_matrix">在 Matrix 上聊天</string>
+    <string name="dejavu_settings_matrix_summary">提出問題、建議新功能或回報錯誤</string>
 </resources>

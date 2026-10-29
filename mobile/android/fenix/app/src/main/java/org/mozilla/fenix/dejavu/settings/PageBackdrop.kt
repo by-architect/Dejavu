@@ -25,7 +25,7 @@ import androidx.core.graphics.ColorUtils
 import androidx.fragment.app.DialogFragment
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
-import androidx.navigation.NavController
+import androidx.fragment.app.findFragment
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.fragment.findNavController
 import com.google.android.material.R as materialR
@@ -35,17 +35,24 @@ import kotlin.math.max
 import kotlin.math.roundToInt
 import kotlin.math.sqrt
 import org.mozilla.fenix.R
-import org.mozilla.fenix.browser.BrowserFragment
+import org.mozilla.fenix.StartupFragment
+import org.mozilla.fenix.addons.AddonInternalSettingsFragment
+import org.mozilla.fenix.addons.WebExtensionActionPopupFragment
+import org.mozilla.fenix.browser.BaseBrowserFragment
 import org.mozilla.fenix.dejavu.browser.PagePictures
 import org.mozilla.fenix.dejavu.browser.SEARCH_BLUR_RADIUS
 import org.mozilla.fenix.dejavu.browser.SEARCH_SCRIM_ALPHA
 import org.mozilla.fenix.dejavu.home.pictureWindow
+import org.mozilla.fenix.dejavu.welcome.DejavuWelcomeFragment
 import org.mozilla.fenix.home.HomeFragment
+import org.mozilla.fenix.onboarding.OnboardingFragment
+import org.mozilla.fenix.pbmlock.UnlockPrivateTabsFragment
+import org.mozilla.fenix.tabstray.ui.TabManagementFragment
 
-// A screen pictured for the settings is what they open over for this long.
+// A screen pictured for a page is what it opens over for this long.
 private const val FRESH_MS = 3_000L
 
-// The settings' picture is the window halved this many times, which blurs it cheaply.
+// The backdrop's picture is the window halved this many times, which blurs it cheaply.
 private const val HALVINGS = 3
 
 // The spread of the Gaussian Android blurs with for a radius, see RenderEffect.createBlurEffect.
@@ -62,29 +69,43 @@ private const val RED_SHIFT = 16
 private const val GREEN_SHIFT = 8
 
 /**
- * What the settings show behind their screens: the screen they opened over, blurred and veiled the way a search screen
- * shows what lies behind it. That is the home screen, pictured as the settings pour out of their button, or the page
- * they were opened over. Their toolbar, the status bar and the navigation bar let it show through.
+ * What the full-screen pages, like the settings, the bookmarks, the history or the account, show behind them: the
+ * screen they opened over, blurred and veiled the way a search screen shows what lies behind it. That is the home
+ * screen, pictured as a page pours out of its button, or the web page it was opened over. The settings toolbar, the
+ * status bar, the navigation bar and the backgrounds of the pages' own screens let it show through, see [showsThrough].
  */
-internal object SettingsBackdrop {
-    // Draws the screen the settings opening next open over, on a canvas as big as the window, and when it was set.
+internal object PageBackdrop {
+    // Draws the screen the page opening next opens over, on a canvas as big as the window, and when it was set.
     private var next: ((Canvas) -> Unit)? = null
     private var nextAt = 0L
 
-    /** What the settings shown now or last opened over, blurred; `null` when it could not be pictured. */
+    /** What the page shown now or last opened over, blurred; `null` when it could not be pictured. */
     private var picture: Bitmap? = null
 
-    // The window showing the backdrop and the picture it shows, and whether the settings show.
+    // The window showing the backdrop and the picture it shows, and whether a page shows.
     private var shownIn: WeakReference<Window>? = null
     private var shownPicture: Bitmap? = null
     private var wanted = false
 
-    /** The settings opening next open over [screen], a picture of the whole window. */
+    // The full-screen screens that are no pages: the home screen, web pages and screens with backgrounds of their own.
+    private val notPages = setOf(
+        HomeFragment::class.java,
+        BaseBrowserFragment::class.java,
+        StartupFragment::class.java,
+        OnboardingFragment::class.java,
+        TabManagementFragment::class.java,
+        DejavuWelcomeFragment::class.java,
+        WebExtensionActionPopupFragment::class.java,
+        AddonInternalSettingsFragment::class.java,
+        UnlockPrivateTabsFragment::class.java,
+    )
+
+    /** The page opening next opens over [screen], a picture of the whole window. */
     fun opensOver(screen: Bitmap) = opensOver { it.drawBitmap(screen, 0f, 0f, null) }
 
     /**
-     * Pictures the page of the tab with [tabId] as it is shown now, then opens the settings over it with [open], at
-     * once when the page cannot be pictured.
+     * Pictures the page of the tab with [tabId] as it is shown now, then opens a full-screen page over it with [open],
+     * at once when the page cannot be pictured.
      */
     fun openOverPage(tabId: String, open: () -> Unit) {
         if (PagePictures.isCapturing) {
@@ -110,30 +131,28 @@ internal object SettingsBackdrop {
 
     /**
      * Shows the backdrop behind everything in the window of [activity] as soon as there is a picture for it, then
-     * calls [shown]. Settings opening over the home screen ([overHome]) without a picture of it picture it now, while
-     * it still shows.
+     * calls [shown]. A screen just pictured for it takes the place of the one pictured before. A page opening over the
+     * home screen ([overHome]) without a picture pictures it now, while it still shows.
      */
     fun show(activity: Activity, overHome: Boolean, shown: () -> Unit) {
         wanted = true
         val window = activity.window
-        if (picture == null) {
-            val draw = next?.takeIf { SystemClock.elapsedRealtime() - nextAt < FRESH_MS }
-            next = null
-            if (draw != null) {
-                picture = blurred(window, draw)
-            } else if (overHome) {
-                pictureWindow(activity, window.decorView) { screen ->
-                    if (screen == null || !wanted || picture != null) return@pictureWindow
-                    picture = blurred(window) { it.drawBitmap(screen, 0f, 0f, null) }
-                    if (apply(window)) shown()
-                }
-                return
+        val draw = next?.takeIf { SystemClock.elapsedRealtime() - nextAt < FRESH_MS }
+        next = null
+        if (draw != null) {
+            picture = blurred(window, draw)
+        } else if (picture == null && overHome) {
+            pictureWindow(activity, window.decorView) { screen ->
+                if (screen == null || !wanted || picture != null) return@pictureWindow
+                picture = blurred(window) { it.drawBitmap(screen, 0f, 0f, null) }
+                if (apply(window)) shown()
             }
+            return
         }
         if (apply(window)) shown()
     }
 
-    /** Takes the backdrop away from [window], and forgets its picture unless [keep], for settings shown again. */
+    /** Takes the backdrop away from [window], and forgets its picture unless [keep], for pages shown again. */
     fun hide(window: Window, keep: Boolean) {
         wanted = false
         if (!keep) picture = null
@@ -150,6 +169,17 @@ internal object SettingsBackdrop {
     /** Whether [window] shows the backdrop. */
     fun isShown(window: Window): Boolean = shownIn?.get() === window
 
+    /** Whether [fragment] is a full-screen page, which shows the backdrop. */
+    fun isPage(fragment: Fragment): Boolean =
+        fragment.parentFragment is NavHostFragment && fragment !is DialogFragment &&
+            notPages.none { it.isInstance(fragment) }
+
+    /**
+     * Whether the Compose screen in [view] is part of a full-screen page, so its background lets the backdrop show
+     * through.
+     */
+    fun showsThrough(view: View): Boolean = runCatching { isPage(view.findFragment()) }.getOrDefault(false)
+
     private fun apply(window: Window): Boolean {
         val picture = picture ?: return false
         if (shownIn?.get() === window && shownPicture === picture) return true
@@ -163,10 +193,10 @@ internal object SettingsBackdrop {
 }
 
 /**
- * Shows the [SettingsBackdrop] behind the settings screens of an activity and takes it away from its other screens,
+ * Shows the [PageBackdrop] behind the full-screen pages of an activity and takes it away from its other screens,
  * following the screens of its navigation host; registered with child fragments.
  */
-internal class SettingsBackdropCallbacks : FragmentManager.FragmentLifecycleCallbacks() {
+internal class PageBackdropCallbacks : FragmentManager.FragmentLifecycleCallbacks() {
     // The settings toolbar while the backdrop shows through it, with its own background and elevation.
     private var toolbar: WeakReference<View>? = null
     private var toolbarBackground: Drawable? = null
@@ -175,13 +205,12 @@ internal class SettingsBackdropCallbacks : FragmentManager.FragmentLifecycleCall
     override fun onFragmentViewCreated(fm: FragmentManager, f: Fragment, v: View, savedInstanceState: Bundle?) {
         if (!f.isScreen) return
         val activity = f.activity ?: return
-        val navController = f.findNavController()
-        val inSettings = navController.showsSettings()
-        if (inSettings && f !is HomeFragment && f !is BrowserFragment) {
-            val overHome = navController.previousBackStackEntry?.destination?.id == R.id.homeFragment
-            SettingsBackdrop.show(activity, overHome) { clearToolbar(activity) }
+        if (PageBackdrop.isPage(f)) {
+            val overHome = f.findNavController().previousBackStackEntry?.destination?.id == R.id.homeFragment
+            PageBackdrop.show(activity, overHome) { clearToolbar(activity) }
         } else {
-            SettingsBackdrop.hide(activity.window, keep = inSettings)
+            // Pages opened from the home screen picture it anew, but a page left for a web page may be shown again.
+            PageBackdrop.hide(activity.window, keep = f !is HomeFragment)
             restoreToolbar()
         }
     }
@@ -189,15 +218,17 @@ internal class SettingsBackdropCallbacks : FragmentManager.FragmentLifecycleCall
     // A screen shows the settings toolbar once it is resumed.
     override fun onFragmentResumed(fm: FragmentManager, f: Fragment) {
         val activity = f.activity ?: return
-        if (f.isScreen && SettingsBackdrop.isShown(activity.window)) clearToolbar(activity)
+        if (f.isScreen && PageBackdrop.isShown(activity.window)) clearToolbar(activity)
     }
 
+    // A screen may have painted the toolbar since it was cleared, as the history does when its content changes.
     private fun clearToolbar(activity: Activity) {
         val view = activity.findViewById<View>(R.id.navigationToolbar) ?: return
-        if (toolbar?.get() === view) return
-        toolbar = WeakReference(view)
-        toolbarBackground = view.background
-        toolbarElevation = view.elevation
+        if (toolbar?.get() !== view) {
+            toolbar = WeakReference(view)
+            toolbarBackground = view.background
+            toolbarElevation = view.elevation
+        }
         view.background = null
         view.elevation = 0f
     }
@@ -212,9 +243,6 @@ internal class SettingsBackdropCallbacks : FragmentManager.FragmentLifecycleCall
 
     private val Fragment.isScreen: Boolean
         get() = parentFragment is NavHostFragment && this !is DialogFragment
-
-    private fun NavController.showsSettings(): Boolean =
-        runCatching { getBackStackEntry(R.id.settingsFragment) }.isSuccess
 }
 
 /** Draws [picture] over all of its bounds, cut to keep its shape, under a [veil]. */

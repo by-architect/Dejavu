@@ -4,6 +4,7 @@
 
 package org.mozilla.fenix.dejavu.welcome
 
+import android.content.Context
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -22,6 +23,9 @@ import org.mozilla.fenix.NavGraphDirections
 import org.mozilla.fenix.R
 import org.mozilla.fenix.components.accounts.FenixFxAEntryPoint
 import org.mozilla.fenix.dejavu.settings.dejavuSettings
+import org.mozilla.fenix.dejavu.workspaces.WorkspaceRepository
+import org.mozilla.fenix.dejavu.workspaces.WorkspaceTheme
+import org.mozilla.fenix.dejavu.workspaces.WorkspaceWallpapers
 import org.mozilla.fenix.ext.hideToolbar
 import org.mozilla.fenix.theme.FirefoxTheme
 
@@ -34,6 +38,18 @@ object Welcome {
 
     /** Whether the welcome pages are due: on a fresh install, until they were [seen]. An update never shows them. */
     fun isDue(seen: Boolean, updated: Boolean): Boolean = !seen && !updated
+
+    /**
+     * Gives the workspace a fresh Dejavu starts with its first look, the gold wallpaper, while it still has the gold
+     * theme it starts with and no wallpaper. The workspaces are saved first, so it stays with that workspace.
+     */
+    fun giveFirstLook(context: Context, repository: WorkspaceRepository, wallpapers: WorkspaceWallpapers) {
+        val workspace = repository.state.value.workspaces.singleOrNull() ?: return
+        if (workspace.theme != WorkspaceTheme.Gold) return
+        repository.save()
+        val screen = context.resources.displayMetrics
+        wallpapers.giveFirstWallpaper(workspace.id, screen.widthPixels, screen.heightPixels)
+    }
 
     /**
      * Opens the welcome pages when the home screen first shows while the app runs, so that leaving them with Back keeps

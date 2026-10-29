@@ -432,8 +432,6 @@
     <string name="dejavu_workspace_theme_color">สี</string>
     <string name="dejavu_workspace_wallpaper">รูปพื้นหลัง</string>
     <string name="dejavu_workspace_wallpaper_hint">รูปภาพจะอยู่บนโทรศัพท์เครื่องนี้เท่านั้นและแสดงบนหน้าแรก สีของรูปภาพจะกลายเป็นธีมที่ซิงค์กับ Zen</string>
-    <string name="dejavu_workspace_wallpaper_choose">เลือกรูปภาพ</string>
-    <string name="dejavu_workspace_wallpaper_change">เปลี่ยน</string>
     <string name="dejavu_workspace_wallpaper_failed">ไม่สามารถเปิดรูปภาพนี้ได้</string>
     <string name="dejavu_workspace_wallpaper_colors">สีที่ซิงค์กับ Zen</string>
     <string name="dejavu_workspace_wallpaper_hint_local">รูปภาพจะอยู่บนโทรศัพท์เครื่องนี้เท่านั้นและแสดงบนหน้าแรก</string>
@@ -468,7 +466,7 @@
     <string name="dejavu_settings_autoclose_tabs">ปิดแท็บอัตโนมัติ</string>
     <string name="dejavu_settings_tabs_workspaces">แท็บ พื้นที่ทำงาน และคอนเทนเนอร์</string>
     <string name="dejavu_settings_tabs_workspaces_summary">การปิดและการพักแท็บ คอนเทนเนอร์ หน้าแรก และลิงก์</string>
-    <string name="dejavu_settings_customize_summary">ชุดตกแต่ง การดำเนินการของแท็บ เมนู แถบ รหัสผ่าน และภาษา</string>
+    <string name="dejavu_settings_customize_summary">ชุดตกแต่ง การดำเนินการของแท็บ เมนู และแถบ</string>
     <string name="dejavu_settings_bars_2">แถบ</string>
     <string name="dejavu_settings_bars_summary">หน้าเว็บ หน้าแรก เต็มหน้าจอ แถบแท็บ และท่าทาง</string>
     <string name="dejavu_settings_web_page">หน้าเว็บ</string>
@@ -512,4 +510,6 @@
     <string name="dejavu_welcome_default_done">Dejavu เป็นเบราว์เซอร์เริ่มต้นของคุณแล้ว</string>
     <string name="dejavu_welcome_sync_title">พื้นที่ทำงานของคุณบนทุกอุปกรณ์</string>
     <string name="dejavu_welcome_sync_text">ลงชื่อเข้าใช้ด้วยบัญชี Mozilla เพื่อซิงค์พื้นที่ทำงาน แท็บที่ปักหมุด และเว็บที่ใช้บ่อยกับ Zen หรือซิงค์แท็บกับ Firefox</string>
+    <string name="dejavu_settings_matrix">แชทบน Matrix</string>
+    <string name="dejavu_settings_matrix_summary">ถามคำถาม เสนอแนะคุณลักษณะ หรือรายงานข้อผิดพลาด</string>
 </resources>

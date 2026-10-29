@@ -440,8 +440,6 @@
     <string name="dejavu_workspace_theme_color">रंग</string>
     <string name="dejavu_workspace_wallpaper">वॉलपेपर</string>
     <string name="dejavu_workspace_wallpaper_hint">चित्र या फोनवरच राहते आणि मुख्यपृष्ठावर दिसते. त्याचे रंग Zen सोबत सिंक होणारी थीम बनतात.</string>
-    <string name="dejavu_workspace_wallpaper_choose">चित्र निवडा</string>
-    <string name="dejavu_workspace_wallpaper_change">बदला</string>
     <string name="dejavu_workspace_wallpaper_failed">हे चित्र उघडता आले नाही.</string>
     <string name="dejavu_workspace_wallpaper_colors">Zen सोबत सिंक होणारे रंग</string>
     <string name="dejavu_workspace_wallpaper_hint_local">चित्र या फोनवरच राहते आणि मुख्यपृष्ठावर दिसते.</string>
@@ -476,7 +474,7 @@
     <string name="dejavu_settings_autoclose_tabs">टॅब आपोआप बंद करा</string>
     <string name="dejavu_settings_tabs_workspaces">टॅब, कार्यक्षेत्रे आणि कंटेनर</string>
     <string name="dejavu_settings_tabs_workspaces_summary">टॅब बंद करणे, स्लीप मोडमधील टॅब, कंटेनर, मुख्यपृष्ठ आणि लिंक</string>
-    <string name="dejavu_settings_customize_summary">रंगयोजना, टॅब क्रिया, मेनू, पट्ट्या, पासवर्ड आणि भाषा</string>
+    <string name="dejavu_settings_customize_summary">रंगयोजना, टॅब क्रिया, मेनू आणि पट्ट्या</string>
     <string name="dejavu_settings_bars_2">पट्ट्या</string>
     <string name="dejavu_settings_bars_summary">वेब पृष्ठ, मुख्यपृष्ठ, पूर्ण स्क्रीन, टॅब पट्टी आणि जेश्चर</string>
     <string name="dejavu_settings_web_page">वेब पृष्ठ</string>
@@ -520,4 +518,6 @@
     <string name="dejavu_welcome_default_done">Dejavu तुमचा पूर्वनिर्धारित ब्राउझर आहे.</string>
     <string name="dejavu_welcome_sync_title">प्रत्येक डिव्हाइसवर तुमची कार्यक्षेत्रे</string>
     <string name="dejavu_welcome_sync_text">Zen सह कार्यक्षेत्रे, पिन केलेले टॅब आणि आवश्यक, किंवा Firefox सह टॅब सिंक करण्यासाठी Mozilla खात्याने साइन इन करा.</string>
+    <string name="dejavu_settings_matrix">Matrix वर चॅट करा</string>
+    <string name="dejavu_settings_matrix_summary">प्रश्न विचारा, वैशिष्ट्य सुचवा किंवा त्रुटी कळवा</string>
 </resources>

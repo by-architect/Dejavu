@@ -10,7 +10,6 @@ import androidx.annotation.StringRes
 import androidx.annotation.VisibleForTesting
 import androidx.annotation.XmlRes
 import androidx.navigation.fragment.findNavController
-import androidx.navigation.navOptions
 import androidx.preference.Preference
 import androidx.preference.PreferenceFragmentCompat
 import mozilla.components.service.fxrelay.eligibility.Eligible
@@ -41,11 +40,8 @@ abstract class DejavuSettingsGroupFragment(
     /** Where each entry leads, by its key. */
     internal abstract val entries: List<Entry>
 
-    /**
-     * Where the entry with the key [key] leads: the screen or graph [opens], which slides in from the side when it is
-     * one of Firefox's own screens, as it did from the main settings.
-     */
-    internal class Entry(@param:StringRes val key: Int, @param:IdRes val opens: Int, val slides: Boolean = true)
+    /** Where the entry with the key [key] leads: the screen or graph [opens], which slides in from the side. */
+    internal class Entry(@param:StringRes val key: Int, @param:IdRes val opens: Int)
 
     override fun onCreatePreferences(savedInstanceState: Bundle?, rootKey: String?) {
         setPreferencesFromResource(preferences, rootKey)
@@ -66,22 +62,13 @@ abstract class DejavuSettingsGroupFragment(
             ?: return super.onPreferenceTreeClick(preference)
         val navController = findNavController()
         if (navController.currentDestination?.id == destination) {
-            navController.navigate(entry.opens, null, if (entry.slides) SLIDE else null)
+            navController.slideTo(entry.opens)
         }
         return true
     }
 
     private companion object {
         const val ARG_PREFERENCE_TO_SCROLL_TO = "preference_to_scroll_to"
-
-        val SLIDE = navOptions {
-            anim {
-                enter = R.anim.slide_in_right
-                exit = R.anim.slide_out_left
-                popEnter = R.anim.slide_in_left
-                popExit = R.anim.slide_out_right
-            }
-        }
     }
 }
 
@@ -93,10 +80,10 @@ class DejavuTabsWorkspacesFragment : DejavuSettingsGroupFragment(
 ) {
     override val entries = listOf(
         Entry(R.string.pref_key_tabs, R.id.tabsSettingsFragment),
-        Entry(R.string.pref_key_dejavu_tab_sleep, R.id.dejavu_tab_sleep_graph, slides = false),
-        Entry(R.string.pref_key_dejavu_containers, R.id.dejavu_containers_graph, slides = false),
+        Entry(R.string.pref_key_dejavu_tab_sleep, R.id.dejavu_tab_sleep_graph),
+        Entry(R.string.pref_key_dejavu_containers, R.id.dejavu_containers_graph),
         Entry(R.string.pref_key_home, R.id.homeSettingsFragment),
-        Entry(R.string.pref_key_dejavu_external_links, R.id.dejavu_external_links_graph, slides = false),
+        Entry(R.string.pref_key_dejavu_external_links, R.id.dejavu_external_links_graph),
         Entry(R.string.pref_key_open_links_in_apps, R.id.openLinksInAppsFragment),
     )
 
@@ -127,7 +114,7 @@ class DejavuTabsWorkspacesFragment : DejavuSettingsGroupFragment(
     }
 }
 
-/** Passwords, autofill, accessibility, language, translations and AI controls, from Customize. */
+/** Passwords, autofill, accessibility, language, translations and AI controls, from General. */
 class DejavuPasswordsLanguageFragment : DejavuSettingsGroupFragment(
     R.xml.dejavu_passwords_language_preferences,
     R.string.dejavu_settings_passwords_language,

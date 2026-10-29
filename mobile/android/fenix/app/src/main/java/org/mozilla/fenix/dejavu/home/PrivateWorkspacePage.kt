@@ -142,7 +142,7 @@ internal fun PrivateWorkspacePage(
             }
             item(key = "divider") {
                 HorizontalDivider(
-                    color = MaterialTheme.colorScheme.outlineVariant,
+                    color = MaterialTheme.colorScheme.onSurfaceVariant,
                     modifier = Modifier
                         .animateItem(fadeInSpec = null, placementSpec = placement, fadeOutSpec = null)
                         .padding(start = 12.dp, end = 12.dp, top = 4.dp, bottom = 4.dp),

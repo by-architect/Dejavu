@@ -473,8 +473,6 @@
     <string name="dejavu_workspace_theme_color">રંગ</string>
     <string name="dejavu_workspace_wallpaper">વૉલપેપર</string>
     <string name="dejavu_workspace_wallpaper_hint">છબી આ ફોન પર જ રહે છે અને મુખ્ય પૃષ્ઠ પર દેખાય છે. તેના રંગો એ થીમ બને છે જે Zen સાથે સમન્વયિત થાય છે.</string>
-    <string name="dejavu_workspace_wallpaper_choose">છબી પસંદ કરો</string>
-    <string name="dejavu_workspace_wallpaper_change">બદલો</string>
     <string name="dejavu_workspace_wallpaper_failed">આ છબી ખોલી શકાઈ નહીં.</string>
     <string name="dejavu_workspace_wallpaper_colors">Zen સાથે સમન્વયિત થતા રંગો</string>
     <string name="dejavu_workspace_wallpaper_hint_local">છબી આ ફોન પર જ રહે છે અને મુખ્ય પૃષ્ઠ પર દેખાય છે.</string>
@@ -509,7 +507,7 @@
     <string name="dejavu_settings_autoclose_tabs">ટૅબ્સ આપમેળે બંધ કરો</string>
     <string name="dejavu_settings_tabs_workspaces">ટૅબ્સ, વર્કસ્પેસ અને કન્ટેનર</string>
     <string name="dejavu_settings_tabs_workspaces_summary">ટૅબ્સ બંધ કરવી અને સ્લીપ મોડ, કન્ટેનર, મુખ્ય પૃષ્ઠ અને લિંક્સ</string>
-    <string name="dejavu_settings_customize_summary">થીમ, ટૅબ ક્રિયાઓ, મેનૂ, બાર્સ, પાસવર્ડ અને ભાષા</string>
+    <string name="dejavu_settings_customize_summary">થીમ, ટૅબ ક્રિયાઓ, મેનૂ અને બાર્સ</string>
     <string name="dejavu_settings_bars_2">બાર્સ</string>
     <string name="dejavu_settings_bars_summary">વેબ પૃષ્ઠ, મુખ્ય પૃષ્ઠ, પૂર્ણ સ્ક્રીન, ટૅબ બાર અને હાવભાવ</string>
     <string name="dejavu_settings_web_page">વેબ પૃષ્ઠ</string>
@@ -553,4 +551,6 @@
     <string name="dejavu_welcome_default_done">Dejavu તમારું મૂળભૂત બ્રાઉઝર છે.</string>
     <string name="dejavu_welcome_sync_title">દરેક ઉપકરણ પર તમારા વર્કસ્પેસ</string>
     <string name="dejavu_welcome_sync_text">Zen સાથે વર્કસ્પેસ, પિન કરેલી ટૅબ્સ અને એસેન્શિયલ્સ, અથવા Firefox સાથે ટૅબ્સ સમન્વયિત કરવા માટે Mozilla એકાઉન્ટથી સાઇન ઇન કરો.</string>
+    <string name="dejavu_settings_matrix">Matrix પર ચૅટ કરો</string>
+    <string name="dejavu_settings_matrix_summary">પ્રશ્ન પૂછો, સુવિધા સૂચવો અથવા ભૂલની જાણ કરો</string>
 </resources>
