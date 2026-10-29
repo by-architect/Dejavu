@@ -4,6 +4,8 @@
 
 package org.mozilla.fenix.dejavu.home
 
+import android.graphics.Bitmap
+import android.graphics.Paint
 import android.os.SystemClock
 import androidx.compose.animation.core.Animatable
 import androidx.compose.animation.core.FastOutSlowInEasing
@@ -17,10 +19,12 @@ import androidx.compose.foundation.layout.Spacer
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.DisposableEffect
+import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.Stable
 import androidx.compose.runtime.mutableStateListOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.rememberCoroutineScope
+import androidx.compose.runtime.withFrameNanos
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clipToBounds
 import androidx.compose.ui.draw.drawBehind
@@ -30,12 +34,15 @@ import androidx.compose.ui.geometry.Rect
 import androidx.compose.ui.geometry.lerp
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.GraphicsContext
+import androidx.compose.ui.graphics.asAndroidBitmap
 import androidx.compose.ui.graphics.drawscope.ContentDrawScope
 import androidx.compose.ui.graphics.drawscope.DrawScope
+import androidx.compose.ui.graphics.drawscope.drawIntoCanvas
 import androidx.compose.ui.graphics.drawscope.translate
 import androidx.compose.ui.graphics.drawscope.withTransform
 import androidx.compose.ui.graphics.layer.GraphicsLayer
 import androidx.compose.ui.graphics.layer.drawLayer
+import androidx.compose.ui.graphics.nativeCanvas
 import androidx.compose.ui.layout.LayoutCoordinates
 import androidx.compose.ui.layout.onGloballyPositioned
 import androidx.compose.ui.layout.positionInWindow
@@ -43,16 +50,20 @@ import androidx.compose.ui.node.DrawModifierNode
 import androidx.compose.ui.node.GlobalPositionAwareModifierNode
 import androidx.compose.ui.node.ModifierNodeElement
 import androidx.compose.ui.platform.LocalGraphicsContext
+import androidx.compose.ui.unit.Density
 import androidx.compose.ui.unit.IntOffset
 import androidx.compose.ui.unit.IntSize
+import androidx.compose.ui.unit.LayoutDirection
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.toSize
+import androidx.compose.ui.util.lerp
 import kotlin.math.PI
 import kotlin.math.max
 import kotlin.math.min
 import kotlin.math.roundToInt
 import kotlin.math.sin
 import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 
 private const val CLOSE_MS = 340
@@ -78,6 +89,9 @@ private val CloseIconInset = 24.dp
 private val SliceHeight = 6.dp
 private const val ROW_SLICES = 24
 private const val SEAM = 0.5f
+
+private const val OPAQUE = 255
+private const val WARM_UP_DELAY_MS = 2_000L
 
 private val LiftElevation = 8.dp
 private const val LIFT_SCALE = 0.04f
@@ -158,8 +172,13 @@ internal class RowPlace {
     var handedOver = false
 }
 
-/** How a row that went away last looked, at [bounds] in the window. */
-private class Ghost(val layer: GraphicsLayer, val bounds: Rect)
+/**
+ * How a row that went away last looked, at [bounds] in the window. Its [picture], taken once its motion started, pours
+ * in one go through a mesh; until it is there, the [layer] pours slice by slice.
+ */
+private class Ghost(val layer: GraphicsLayer, val bounds: Rect) {
+    var picture: Bitmap? = null
+}
 
 private sealed class Motion(durationMillis: Int) {
     val progress = Animatable(0f)
@@ -208,6 +227,7 @@ internal class RowMotions(private val graphics: GraphicsContext, private val sco
     private var lastRows: Map<String, Set<String>>? = null
     private var clearTappedAt = Long.MIN_VALUE / 2
     private val running = mutableStateListOf<Motion>()
+    private val meshPaint = Paint(Paint.ANTI_ALIAS_FLAG or Paint.FILTER_BITMAP_FLAG)
 
     /** Where the overlay drawing the motions is in the window. */
     var origin = Offset.Zero
@@ -301,9 +321,47 @@ internal class RowMotions(private val graphics: GraphicsContext, private val sco
     private fun play(motion: Motion) {
         running.filter { old -> old is Moving && motion is Moving && old.key == motion.key }.forEach(::end)
         running.add(motion)
+        when (motion) {
+            is Closing -> takePicture(motion.ghost)
+            is Clearing -> motion.ghosts.forEach(::takePicture)
+            else -> Unit
+        }
         scope.launch {
             motion.progress.animateTo(1f, motion.spec)
             end(motion)
+        }
+    }
+
+    /**
+     * Takes the row of [ghost] as one picture: drawing the row again for every slice it pours in, at sizes that change
+     * every frame, keeps the render thread too busy for a smooth motion on slower phones.
+     */
+    private fun takePicture(ghost: Ghost) {
+        scope.launch {
+            // A frame later, so the picture is not taken in the frame that closes the tab, which is busy already.
+            withFrameNanos { }
+            ghost.picture = runCatching { ghost.layer.toImageBitmap().asAndroidBitmap() }.getOrNull()
+        }
+    }
+
+    companion object {
+        private var warm = false
+
+        /**
+         * Takes one empty picture, once while Dejavu runs and a while after the home screen showed: the first picture
+         * takes several frames' time, which would otherwise hold up the first row that pours.
+         */
+        suspend fun warmUp(graphics: GraphicsContext) {
+            if (warm) return
+            warm = true
+            delay(WARM_UP_DELAY_MS)
+            val layer = graphics.createGraphicsLayer()
+            try {
+                layer.record(Density(1f), LayoutDirection.Ltr, IntSize(1, 1)) { }
+                layer.toImageBitmap()
+            } finally {
+                graphics.releaseGraphicsLayer(layer)
+            }
         }
     }
 
@@ -328,11 +386,26 @@ internal class RowMotions(private val graphics: GraphicsContext, private val sco
         running.forEach { motion ->
             val tau = motion.progress.value
             when (motion) {
-                is Closing -> drawIntoEnd(motion.ghost.layer, motion.ghost.bounds, tau)
+                is Closing -> {
+                    val ghost = motion.ghost
+                    val picture = ghost.picture
+                    if (picture != null) {
+                        meshIntoEnd(picture, ghost.bounds, tau)
+                    } else {
+                        drawIntoEnd(ghost.layer, ghost.bounds, tau)
+                    }
+                }
                 is Clearing -> {
                     val block = motion.ghosts.map { it.bounds }.reduce(::spanning)
                     val button = buttons[MotionButton.CLEAR] ?: motion.button
-                    motion.ghosts.forEach { drawPouring(it.layer, it.bounds, block, button, tau) }
+                    motion.ghosts.forEach { ghost ->
+                        val picture = ghost.picture
+                        if (picture != null) {
+                            meshPouring(picture, ghost.bounds, block, button, tau)
+                        } else {
+                            drawPouring(ghost.layer, ghost.bounds, block, button, tau)
+                        }
+                    }
                 }
                 is Reopening -> drawReopening(motion, 1f - tau)
                 is Moving -> Unit
@@ -399,13 +472,63 @@ internal class RowMotions(private val graphics: GraphicsContext, private val sco
         }
     }
 
+    /**
+     * Draws [picture], the row at [row] among the rows of [block], [tau] of the way down a genie into [button], as one
+     * mesh: the lines across it stay straight, so the mesh needs only the lines down it.
+     */
+    private fun DrawScope.meshPouring(picture: Bitmap, row: Rect, block: Rect, button: Rect, tau: Float) {
+        val alpha = genieAlpha(tau)
+        if (alpha <= 0f || block.height <= 0f || block.width <= 0f || row.height <= 0f) return
+        val lines = (row.height / SliceHeight.toPx()).roundToInt().coerceAtLeast(1)
+        val start = (row.left - block.left) / block.width
+        val end = (row.right - block.left) / block.width
+        val verts = FloatArray((lines + 1) * 2 * 2)
+        var i = 0
+        for (line in 0..lines) {
+            val across = genieLine(block, button, tau, (row.top + row.height * line / lines - block.top) / block.height)
+            for (side in floatArrayOf(start, end)) {
+                verts[i++] = lerp(across.start, across.end, side) - origin.x
+                verts[i++] = across.along - origin.y
+            }
+        }
+        drawMesh(picture, columns = 1, rows = lines, verts = verts, alpha = alpha)
+    }
+
+    /** Draws [picture], the row at [row], [tau] of the way into the close button at its end, as one mesh. */
+    private fun DrawScope.meshIntoEnd(picture: Bitmap, row: Rect, tau: Float) {
+        val alpha = genieAlpha(tau)
+        if (alpha <= 0f || row.width <= 0f) return
+        val button = closeButtonOf(row)
+        val verts = FloatArray((ROW_SLICES + 1) * 2 * 2)
+        var i = 0
+        for (edge in 0..1) {
+            for (column in 0..ROW_SLICES) {
+                val line = genieLine(row, button, tau, column.toFloat() / ROW_SLICES, downThePage = false)
+                verts[i++] = line.along - origin.x
+                verts[i++] = (if (edge == 0) line.start else line.end) - origin.y
+            }
+        }
+        drawMesh(picture, columns = ROW_SLICES, rows = 1, verts = verts, alpha = alpha)
+    }
+
+    /** Draws [picture] bent along the mesh of [columns] by [rows] cells whose points are [verts]. */
+    private fun DrawScope.drawMesh(picture: Bitmap, columns: Int, rows: Int, verts: FloatArray, alpha: Float) {
+        meshPaint.alpha = (alpha * OPAQUE).roundToInt()
+        drawIntoCanvas { it.nativeCanvas.drawBitmapMesh(picture, columns, rows, verts, 0, null, 0, meshPaint) }
+    }
+
+    /** The close button a row pours into: the icon of the last button at its end. */
+    private fun DrawScope.closeButtonOf(row: Rect): Rect {
+        val size = CloseIcon.toPx()
+        val center = Offset(row.right - CloseIconInset.toPx(), row.center.y)
+        return Rect(center.x - size / 2, center.y - size / 2, center.x + size / 2, center.y + size / 2)
+    }
+
     /** Draws [layer], the row at [row], [tau] of the way into the close button at its end. */
     private fun DrawScope.drawIntoEnd(layer: GraphicsLayer, row: Rect, tau: Float) {
         layer.alpha = genieAlpha(tau)
         if (layer.alpha <= 0f || row.width <= 0f) return
-        val size = CloseIcon.toPx()
-        val center = Offset(row.right - CloseIconInset.toPx(), row.center.y)
-        val button = Rect(center.x - size / 2, center.y - size / 2, center.x + size / 2, center.y + size / 2)
+        val button = closeButtonOf(row)
         for (slice in 0 until ROW_SLICES) {
             val from = slice.toFloat() / ROW_SLICES
             val to = (slice + 1).toFloat() / ROW_SLICES
@@ -449,6 +572,7 @@ internal fun rememberRowMotions(): RowMotions {
     val scope = rememberCoroutineScope()
     val motions = remember(graphics) { RowMotions(graphics, scope) }
     DisposableEffect(motions) { onDispose(motions::dispose) }
+    LaunchedEffect(graphics) { runCatching { RowMotions.warmUp(graphics) } }
     return motions
 }
 

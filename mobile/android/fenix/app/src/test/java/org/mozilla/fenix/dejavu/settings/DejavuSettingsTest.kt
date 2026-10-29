@@ -60,10 +60,10 @@ class DejavuSettingsTest {
     fun `the bars keep the layout the user chose, and the address bar the buttons the user chose`() {
         val settings = newSettings()
         assertEquals(BarsLayout.ACTIONS_BAR, settings.barsLayout.value)
-        // Next to the actions bar, the address bar starts without buttons; without it, with Reload and Home.
+        // Next to the actions bar, the address bar starts without buttons; without it, with New tab and Home.
         assertEquals(AddressBarButtons(), settings.addressBarButtonsIn(BarsLayout.ACTIONS_BAR))
-        assertEquals(AddressBarButtons("refresh", "home"), settings.addressBarButtonsIn(BarsLayout.TOP))
-        assertEquals(AddressBarButtons("refresh", "home"), settings.addressBarButtonsIn(BarsLayout.BOTTOM))
+        assertEquals(AddressBarButtons("new_tab", "home"), settings.addressBarButtonsIn(BarsLayout.TOP))
+        assertEquals(AddressBarButtons("new_tab", "home"), settings.addressBarButtonsIn(BarsLayout.BOTTOM))
 
         settings.setBarsLayout(BarsLayout.BOTTOM)
         settings.setAddressBarButtons(AddressBarButtons(start = null, end = "share"))

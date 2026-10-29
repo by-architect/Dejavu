@@ -256,6 +256,11 @@ fun ComposeView.setDejavuHomeContent(
                     settings.setWelcomeSeen(true)
                 }
             }
+            // The examples show their sites' icons before their pages were opened, fetched once the start is over.
+            LaunchedEffect(Unit) {
+                delay(STARTER_ICONS_DELAY_MS)
+                Welcome.loadStarterIcons(context, repository)
+            }
 
             val dueChapters = remember(welcomeDue) { FeatureTour.dueChapters(settings, updated = updated) }
             var showTour by remember(dueChapters) { mutableStateOf(dueChapters.isNotEmpty()) }
@@ -318,6 +323,7 @@ private fun rememberHasDataToClear(cleared: Int): Boolean {
  * search to pick it up, short enough that an abandoned search does not leak it into a later one.
  */
 private const val SEARCH_ABANDON_GRACE_MS = 1500L
+private const val STARTER_ICONS_DELAY_MS = 2_000L
 
 private fun <T> Components.readOnMainThread(block: () -> T): T =
     strictMode.allowViolation(StrictMode::allowThreadDiskReads, block)
@@ -539,8 +545,8 @@ private class DefaultDejavuHomeInteractor(
     override fun onMoveEssential(pinId: String, index: Int) =
         repository.moveEssential(pinId, index, settings.essentialsPerContainer.value)
 
-    override fun onClearData(): Set<DeleteBrowsingDataOnQuitType> =
-        ClearData.run(context, showChoices = { ClearData.showChoices(navController) }, onCleared = onDataCleared)
+    override fun onClearData(quit: Boolean): Set<DeleteBrowsingDataOnQuitType> =
+        ClearData.run(context, showChoices = { ClearData.showChoices(navController) }, quit, onDataCleared)
 
     override fun onClearUnpinned(workspaceId: String) {
         val state = repository.state.value

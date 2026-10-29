@@ -58,11 +58,12 @@ object Welcome {
      * workspaces are saved first, so the wallpapers stay with them.
      */
     fun giveFirstLook(context: Context, repository: WorkspaceRepository, wallpapers: WorkspaceWallpapers) {
-        val given = repository.giveStarters(
+        repository.giveStarters(
             workName = context.getString(R.string.dejavu_container_work),
             folderName = context.getString(R.string.dejavu_starter_folder),
         )
-        if (given) loadStarterIcons(context)
+        // Fetched while the welcome pages show, so the home screen has them once they close.
+        loadStarterIcons(context, repository)
         val looks = StarterWorkspaces.firstWallpapers(repository.state.value)
         if (looks.isEmpty()) return
         repository.save()
@@ -70,10 +71,16 @@ object Welcome {
         wallpapers.giveFirstWallpapers(looks, screen.widthPixels, screen.heightPixels)
     }
 
-    /** Fetches the icons of the examples from their sites, so they show before the pages were opened. */
-    private fun loadStarterIcons(context: Context) {
+    /**
+     * Fetches the icons of the examples still there from their sites, so they show before the pages were opened. Icons
+     * fetched before come from the icon cache, so this runs at every start, until a fetch got through.
+     */
+    fun loadStarterIcons(context: Context, repository: WorkspaceRepository) {
+        val state = repository.state.value
+        val urls = state.pins.filter { it.id in state.starters }.mapNotNull { it.url }.toSet()
+        if (urls.isEmpty()) return
         val icons = context.components.core.icons
-        (StarterWorkspaces.Essentials + StarterWorkspaces.Tools).forEach { site ->
+        (StarterWorkspaces.Essentials + StarterWorkspaces.Tools).filter { it.url in urls }.forEach { site ->
             val icon = IconRequest.Resource(url = site.icon, type = IconRequest.Resource.Type.FAVICON)
             icons.loadIcon(IconRequest(url = site.url, resources = listOf(icon)))
         }

@@ -33,7 +33,16 @@ internal object WorkspaceSerializer {
                 device = SyncedDevice.fromKey(item.optStringOrNull("device")),
             )
         }.ifEmpty {
-            listOf(Workspace(newWorkspaceId(), defaultName, theme = WorkspaceTheme.Gold, createdAt = now, updatedAt = now))
+            listOf(
+                Workspace(
+                    id = newWorkspaceId(),
+                    name = defaultName,
+                    icon = Workspace.HomeIcon,
+                    theme = WorkspaceTheme.Gold,
+                    createdAt = now,
+                    updatedAt = now,
+                ),
+            )
         }
         val workspaceIds = workspaces.map { it.id }.toSet()
 

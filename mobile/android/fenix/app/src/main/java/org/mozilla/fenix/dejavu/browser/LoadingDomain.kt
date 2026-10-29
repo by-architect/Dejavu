@@ -26,9 +26,15 @@ import androidx.compose.ui.text.TextLayoutResult
 import androidx.compose.ui.unit.dp
 import kotlin.math.max
 import kotlin.math.min
+import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 
 private const val SWEEP_MS = 1_400
+
+// The band steps on about 30 times a second, which looks the same as every frame for a fraction of the work, and comes
+// to rest after a while, so a page that keeps loading does not keep the phone busy.
+private const val STEP_MS = 33L
+private const val RUN_MS = 8_000L
 private const val FADE_IN_MS = 220
 private const val FADE_OUT_MS = 450
 private const val SLANT = 0.6f
@@ -47,8 +53,9 @@ private val LightColors = listOf(
 
 /**
  * While a page is [loading], colors run through the letters this draws, in place of a loading bar: a band of Dejavu's
- * gold and the colors around it sweeps along, and the letters fade back to their own color once the page is in. With
- * [range], only the letters between the two ends it gives, in pixels from the start, take the colors.
+ * gold and the colors around it sweeps along, resting after a few seconds, and the letters fade back to their own color
+ * once the page is in. With [range], only the letters between the two ends it gives, in pixels from the start, take
+ * the colors.
  */
 @Composable
 internal fun Modifier.loadingColors(
@@ -70,7 +77,10 @@ internal fun Modifier.loadingColors(
             return@LaunchedEffect
         }
         launch { shown.animateTo(1f, tween(FADE_IN_MS)) }
-        while (true) sweep.animateTo(sweep.value + 1f, tween(SWEEP_MS, easing = LinearEasing))
+        repeat((RUN_MS / STEP_MS).toInt()) {
+            delay(STEP_MS)
+            sweep.snapTo(sweep.value + STEP_MS.toFloat() / SWEEP_MS)
+        }
     }
     val colors = if (MaterialTheme.colorScheme.surface.luminance() < HALF) DarkColors else LightColors
     return this

@@ -84,6 +84,7 @@ import org.mozilla.fenix.dejavu.actions.RowAction
 import org.mozilla.fenix.dejavu.actions.TabAction
 import org.mozilla.fenix.dejavu.actions.icon
 import org.mozilla.fenix.dejavu.actions.label
+import org.mozilla.fenix.dejavu.browser.ClearData
 import org.mozilla.fenix.dejavu.browser.tabZoomTarget
 import org.mozilla.fenix.dejavu.containers.ContainerIcon
 import org.mozilla.fenix.dejavu.containers.ContainerPick
@@ -151,8 +152,11 @@ data class WorkspacePageCallbacks(
     val onNewPrivateTab: () -> Unit,
     val onManageContainers: () -> Unit,
     val onClearUnpinned: () -> Unit,
-    /** Deletes the data chosen for Clear data, from holding Clear, or tapping it with no unpinned tabs. */
-    val onClearData: () -> Unit,
+    /**
+     * Deletes the data chosen for Clear data, from holding Clear, tapping it with no unpinned tabs, or a page asking for
+     * it, then quits Dejavu when `quit`.
+     */
+    val onClearData: (quit: Boolean) -> Unit,
     val onReopenClosedTab: () -> Unit,
     val onOpenClipboard: () -> Unit,
     /** The row of the tab to reveal is in view. */
@@ -261,6 +265,7 @@ internal fun WorkspacePage(
     openTabIds: Set<String> = emptySet(),
     hasDataToClear: Boolean = false,
     dataPour: DataPour? = null,
+    askedClear: ClearData.Request? = null,
 ) {
     val tabsById = tabs.associateBy { it.id }
     val awakeTabIds = tabs.filter { it.isAwake }.map { it.id }.toSet()
@@ -285,6 +290,15 @@ internal fun WorkspacePage(
     val flights = drag == null && !dragStack.landing
     SideEffect { motions.start(plan, flights) }
     val placement = motions.placementSpec(plan)
+
+    // Clear data asked for on a page, which closed to here, pours into Clear as holding it does.
+    LaunchedEffect(askedClear) {
+        val request = askedClear ?: return@LaunchedEffect
+        if (ClearData.claim(request)) {
+            motions.clearTapped()
+            callbacks.onClearData(request.quit)
+        }
+    }
 
     val listState = rememberLazyListState()
     val pageContent = PageContent(state, otherTabs, workspace, pinLines, lines, lineKeys, tabsById, containers)
@@ -479,11 +493,11 @@ internal fun WorkspacePage(
                     showClear = (otherTabs.isNotEmpty() || hasDataToClear || clearing) && selection == null,
                     onClear = {
                         motions.clearTapped()
-                        if (otherTabs.isNotEmpty()) callbacks.onClearUnpinned() else callbacks.onClearData()
+                        if (otherTabs.isNotEmpty()) callbacks.onClearUnpinned() else callbacks.onClearData(false)
                     },
                     onClearData = {
                         motions.clearTapped()
-                        callbacks.onClearData()
+                        callbacks.onClearData(false)
                     },
                     clearButton = Modifier.motionButton(motions, MotionButton.CLEAR).dataPourTarget(dataPour),
                     modifier = Modifier

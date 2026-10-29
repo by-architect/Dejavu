@@ -313,10 +313,12 @@ internal fun runActionsBarEntry(context: Context, navController: NavController, 
         MoreMenuItem.SETTINGS -> PageBackdrop.openOverPage(tab.id) {
             navController.nav(R.id.browserFragment, NavGraphDirections.actionGlobalSettingsFragment())
         }
-        MoreMenuItem.CLEAR_DATA, MoreMenuItem.CLEAR_DATA_AND_QUIT -> ClearData.run(
+        MoreMenuItem.CLEAR_DATA, MoreMenuItem.CLEAR_DATA_AND_QUIT -> ClearData.runFromPage(
             context = context,
-            showChoices = { PageBackdrop.openOverPage(tab.id) { ClearData.showChoices(navController) } },
+            tab = tab,
+            navController = navController,
             quit = item == MoreMenuItem.CLEAR_DATA_AND_QUIT,
+            showChoices = { PageBackdrop.openOverPage(tab.id) { ClearData.showChoices(navController) } },
         )
         MoreMenuItem.OPEN_IN_APP -> {
             val redirect = components.useCases.appLinksUseCases.appLinkRedirect(tab.content.url)

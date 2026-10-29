@@ -29,11 +29,17 @@ data class Workspace(
     val device: SyncedDevice? = null,
 ) {
     /**
-     * Whether it looks like the workspace a fresh Dejavu starts with, named [defaultName]: without an icon or a
-     * container, and with the gold theme or none.
+     * Whether it looks like the workspace a fresh Dejavu starts with, named [defaultName]: with its [HomeIcon] or no
+     * icon, without a container, and with the gold theme or none.
      */
     fun isLikeNew(defaultName: String): Boolean =
-        name == defaultName && icon == null && containerId == null && (theme == null || theme == WorkspaceTheme.Gold)
+        name == defaultName && (icon == null || icon == HomeIcon) && containerId == null &&
+            (theme == null || theme == WorkspaceTheme.Gold)
+
+    companion object {
+        /** The icon of the workspace a fresh Dejavu starts with: a house. */
+        val HomeIcon: String = String(Character.toChars(0x1F3E0))
+    }
 }
 
 /** A kind of device on the Mozilla account whose open tabs a workspace shows, see [Workspace.device]. */

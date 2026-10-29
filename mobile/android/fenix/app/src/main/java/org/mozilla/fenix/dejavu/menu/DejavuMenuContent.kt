@@ -450,7 +450,8 @@ private class MenuActions(
         }
         if (item == MoreMenuItem.CLEAR_DATA || item == MoreMenuItem.CLEAR_DATA_AND_QUIT) {
             val showChoices = { PageBackdrop.openOverPage(tab.id) { ClearData.showChoices(navController) } }
-            val clear = { ClearData.run(context, showChoices, quit = item == MoreMenuItem.CLEAR_DATA_AND_QUIT) }
+            val quit = item == MoreMenuItem.CLEAR_DATA_AND_QUIT
+            val clear = { ClearData.runFromPage(context, tab, navController, quit, showChoices) }
             if (closer != null) {
                 closer.close { clear() }
                 return

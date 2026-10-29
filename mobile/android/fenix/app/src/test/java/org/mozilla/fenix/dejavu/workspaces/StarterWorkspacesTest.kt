@@ -10,6 +10,7 @@ import org.junit.Assert.assertEquals
 import org.junit.Assert.assertTrue
 import org.junit.Test
 import org.junit.runner.RunWith
+import org.mozilla.fenix.R
 import org.mozilla.fenix.dejavu.sync.BuiltinContainer
 import org.robolectric.RobolectricTestRunner
 
@@ -40,6 +41,15 @@ class StarterWorkspacesTest {
         assertEquals(StarterWorkspaces.Essentials.map { it.url }, state.essentials.map { it.url })
         assertEquals((state.pins.map { it.id } + work.id).toSet(), state.starters)
         assertEquals(home.id, state.activeWorkspaceId)
+    }
+
+    @Test
+    fun `Home starts with a house and Work with a briefcase, and Home still counts as new`() {
+        val workspaces = newRepository().withStarters().state.value.workspaces
+
+        assertEquals(Workspace.HomeIcon, workspaces.first().icon)
+        assertEquals(StarterWorkspaces.WorkIcon, workspaces.last().icon)
+        assertTrue(workspaces.first().isLikeNew(testContext.getString(R.string.dejavu_workspace_default_name)))
     }
 
     @Test

@@ -8,11 +8,17 @@ import android.app.Activity
 import android.content.Context
 import android.content.ContextWrapper
 import android.os.Bundle
+import android.os.SystemClock
 import android.widget.Toast
 import androidx.navigation.NavController
 import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.flow.MutableStateFlow
+import kotlinx.coroutines.flow.StateFlow
+import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.supervisorScope
+import mozilla.components.browser.state.state.TabSessionState
+import org.mozilla.fenix.NavGraphDirections
 import org.mozilla.fenix.R
 import org.mozilla.fenix.components.appstate.AppAction
 import org.mozilla.fenix.dejavu.settings.DejavuSettings
@@ -128,6 +134,42 @@ internal object ClearData {
         return types
     }
 
+    /** Clear data asked for on a page, which the home screen carries out once the page closed to it. */
+    class Request(val quit: Boolean, val at: Long = SystemClock.elapsedRealtime())
+
+    private val _asked = MutableStateFlow<Request?>(null)
+
+    /** Clear data asked for on a page and waiting for the home screen, see [runFromPage]. */
+    val asked: StateFlow<Request?> = _asked.asStateFlow()
+
+    /**
+     * Clear data on the page of [tab]: the page closes to the home screen first, so it is not left showing while its
+     * data goes, and the home screen then deletes the data as holding Clear does, see [claim]. With nothing chosen, the
+     * page stays, and the choices open over it with [showChoices].
+     */
+    fun runFromPage(
+        context: Context,
+        tab: TabSessionState,
+        navController: NavController,
+        quit: Boolean,
+        showChoices: () -> Unit,
+    ) {
+        if (chosen(context).isEmpty()) {
+            Toast.makeText(context, R.string.dejavu_clear_data_choose, Toast.LENGTH_SHORT).show()
+            showChoices()
+            return
+        }
+        TabZoom.zoomOut(
+            tabId = tab.id,
+            leave = { navController.navigate(NavGraphDirections.actionGlobalHome()) },
+            afterLeaving = { _asked.value = Request(quit) },
+        )
+    }
+
+    /** Takes [request] for the home screen to carry out: `false` when it was taken already, or asked too long ago. */
+    fun claim(request: Request): Boolean =
+        _asked.compareAndSet(request, null) && SystemClock.elapsedRealtime() - request.at < REQUEST_TIMEOUT_MS
+
     /** Opens the "Delete browsing data on quit" settings at the choices of Clear data. */
     fun showChoices(navController: NavController) {
         navController.slideTo(R.id.deleteBrowsingDataOnQuitFragment, Bundle().apply { putBoolean(SHOW_CHOICES, true) })
@@ -151,6 +193,9 @@ internal object ClearData {
         )
         supervisorScope { types.forEach { type -> launch { controller.deleteType(type) } } }
     }
+
+    // A page closes to the home screen within a second or two; a request older than this lost its home screen.
+    private const val REQUEST_TIMEOUT_MS = 10_000L
 
     private val Context.activity: Activity?
         get() = generateSequence(this) { (it as? ContextWrapper)?.baseContext }

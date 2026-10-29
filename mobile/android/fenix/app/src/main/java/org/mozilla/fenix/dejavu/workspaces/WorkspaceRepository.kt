@@ -56,19 +56,16 @@ class WorkspaceRepository private constructor(context: Context) {
     /**
      * Gives a fresh install the examples it starts with, see [StarterWorkspaces]: the Work workspace named [workName],
      * and in Home the folder [folderName] with its pinned tabs, and the essentials. Only once, and only while Home is
-     * the one workspace, untouched and without pinned tabs. Saved at once. Returns whether it gave them.
+     * the one workspace, untouched and without pinned tabs. Saved at once.
      */
-    fun giveStarters(workName: String, folderName: String): Boolean {
-        if (prefs.getBoolean(KEY_STARTERS_GIVEN, false)) return false
+    fun giveStarters(workName: String, folderName: String) {
+        if (prefs.getBoolean(KEY_STARTERS_GIVEN, false)) return
         prefs.edit { putBoolean(KEY_STARTERS_GIVEN, true) }
         val now = now()
-        var given = false
         mutate(saveNow = true) { state ->
             val home = state.workspaces.singleOrNull()?.takeIf { it.isLikeNew(defaultName) && state.pins.isEmpty() }
-            given = home != null
             if (home == null) state else StarterWorkspaces.around(state, home, workName, folderName, now)
         }
-        return given
     }
 
     /** Removes the examples a fresh install started with that are still as they came, see [withoutStarters]. */

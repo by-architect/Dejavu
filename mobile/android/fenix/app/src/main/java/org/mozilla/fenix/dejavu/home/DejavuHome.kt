@@ -38,6 +38,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.CompositionLocalProvider
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.State
+import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.derivedStateOf
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableIntStateOf
@@ -177,10 +178,10 @@ interface DejavuHomeInteractor : TabEditor {
     fun onClearUnpinned(workspaceId: String)
 
     /**
-     * Deletes the data chosen for Clear data, see [ClearData], or opens its settings when nothing is chosen. Returns
-     * the kinds of data being deleted.
+     * Deletes the data chosen for Clear data, see [ClearData], then quits Dejavu when [quit], or opens its settings when
+     * nothing is chosen. Returns the kinds of data being deleted.
      */
-    fun onClearData(): Set<DeleteBrowsingDataOnQuitType>
+    fun onClearData(quit: Boolean): Set<DeleteBrowsingDataOnQuitType>
     fun onToggleFolder(folderId: String)
     fun onSearchClick()
 
@@ -250,6 +251,8 @@ fun DejavuHome(
     var pagesWidth by remember { mutableIntStateOf(0) }
     var revealTabId by remember { mutableStateOf<String?>(null) }
     val pour = remember { DataPour() }
+    // Clear data asked for on a page, which closed to here: the page shown carries it out.
+    val askedClear by ClearData.asked.collectAsState()
     val onPrivatePage = privateIndex != null && pagerState.currentPage == privateIndex
     // While any of the private workspace shows, even halfway through a swipe.
     val privatePageShown by remember(privateIndex) {
@@ -472,8 +475,8 @@ fun DejavuHome(
     }
 
     // The data Clear data deletes pours out of History, for the pages and what they leave behind, and Downloads.
-    fun clearData() {
-        val types = interactor.onClearData()
+    fun clearData(quit: Boolean) {
+        val types = interactor.onClearData(quit)
         val buttons = listOfNotNull(
             PageGenie.Button.HISTORY.takeIf {
                 types.any { it == DeleteBrowsingDataOnQuitType.HISTORY || it in ClearData.SiteData }
@@ -481,6 +484,12 @@ fun DejavuHome(
             PageGenie.Button.DOWNLOADS.takeIf { DeleteBrowsingDataOnQuitType.DOWNLOADS in types },
         )
         if (buttons.isNotEmpty()) scope.launch { pour.play(buttons) }
+    }
+
+    // The private page has no Clear button, so the data asked for there goes without pouring.
+    LaunchedEffect(askedClear, onPrivatePage) {
+        val request = askedClear ?: return@LaunchedEffect
+        if (onPrivatePage && ClearData.claim(request)) clearData(request.quit)
     }
 
     fun onPinClick(pin: PinnedItem) {
@@ -692,6 +701,7 @@ fun DejavuHome(
                             openTabIds = openTabIds,
                             hasDataToClear = hasDataToClear,
                             dataPour = pour.takeIf { page == pagerState.currentPage },
+                            askedClear = askedClear.takeIf { page == pagerState.currentPage },
                         )
                     }
 

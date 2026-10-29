@@ -268,8 +268,8 @@ data class AddressBarButtons(val start: String? = null, val end: String? = null)
     }
 
     companion object {
-        /** Reload at the start and Home at the end, which the address bar takes over where no actions bar has them. */
-        val DEFAULT = AddressBarButtons(start = MoreMenuItem.REFRESH.key, end = MoreMenuEntry.Home.key)
+        /** New tab at the start and Home at the end, for the layouts where the address bar is the only bar. */
+        val DEFAULT = AddressBarButtons(start = MoreMenuItem.NEW_TAB.key, end = MoreMenuEntry.Home.key)
 
         /** The buttons the address bar starts with in [layout]: none next to the actions bar, which has its own. */
         fun defaultFor(layout: BarsLayout): AddressBarButtons =

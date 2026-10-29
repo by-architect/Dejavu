@@ -22,8 +22,12 @@ internal object StarterWorkspaces {
     /** The essentials, in order. */
     val Essentials = listOf(
         Site("YouTube", "https://m.youtube.com/", "https://m.youtube.com/static/favicon.ico"),
-        Site("Wikipedia", "https://www.wikipedia.org/", "https://www.wikipedia.org/static/apple-touch/wikipedia.png"),
-        Site("Reddit", "https://www.reddit.com/", "https://www.redditstatic.com/shreddit/assets/favicon/64x64.png"),
+        Site("X", "https://x.com/", "https://x.com/apple-touch-icon.png"),
+        Site(
+            "Instagram",
+            "https://www.instagram.com/",
+            "https://static.cdninstagram.com/rsrc.php/yr/r/rzWiSjZRxk5.webp",
+        ),
     )
 
     /** The pinned tabs in Home's folder: a map, a translator and the weather. */
@@ -32,6 +36,9 @@ internal object StarterWorkspaces {
         Site("Google Translate", "https://translate.google.com/", "https://www.gstatic.com/translate/favicon.ico"),
         Site("Windy", "https://www.windy.com/", "https://www.windy.com/img/favicon.png"),
     )
+
+    /** The icon of the Work workspace: a briefcase. */
+    val WorkIcon: String = String(Character.toChars(0x1F4BC))
 
     /** The colors of the Work workspace, those of the wallpaper it starts with. */
     val WorkTheme = WorkspaceTheme(colors = listOf(0xFF11998E, 0xFF38EF7D).map { it.toInt() })
@@ -51,6 +58,7 @@ internal object StarterWorkspaces {
             id = WorkspaceSerializer.newWorkspaceId(),
             name = workName,
             containerId = BuiltinContainer.WORK.guid,
+            icon = WorkIcon,
             theme = WorkTheme,
             createdAt = now,
             updatedAt = now,
