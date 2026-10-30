@@ -11,7 +11,6 @@ import java.util.Date
 import java.util.Locale
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.launch
-import mozilla.components.browser.state.action.EngineAction
 import mozilla.components.browser.state.action.TabListAction
 import mozilla.components.browser.state.selector.findTab
 import mozilla.components.browser.state.state.SessionState
@@ -25,6 +24,7 @@ import org.mozilla.fenix.dejavu.actions.ActionContext
 import org.mozilla.fenix.dejavu.actions.CustomAction
 import org.mozilla.fenix.dejavu.actions.CustomActionRunner
 import org.mozilla.fenix.dejavu.actions.TabAction
+import org.mozilla.fenix.dejavu.browser.sleepTabs
 import org.mozilla.fenix.dejavu.containers.ContainerPick
 import org.mozilla.fenix.dejavu.containers.DejavuContainerStorage
 import org.mozilla.fenix.dejavu.containers.TemporaryContainers
@@ -76,7 +76,7 @@ internal class TabActionRunner(
                 reopenClosed(pins)
                 repository.unpin(pins.map { it.id }.toSet())
             }
-            TabAction.SLEEP -> targets.awakeTabs.forEach { store.dispatch(EngineAction.SuspendEngineSessionAction(it.id)) }
+            TabAction.SLEEP -> components.sleepTabs(repository.state.value, targets.awakeTabs.map { it.id }.toSet())
             TabAction.BOOKMARK -> bookmark(targets.links)
             TabAction.SHARE -> share(targets.links)
             TabAction.COPY_LINK -> copyLinks(targets.links)

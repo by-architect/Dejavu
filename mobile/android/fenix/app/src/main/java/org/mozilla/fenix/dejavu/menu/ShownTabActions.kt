@@ -22,6 +22,8 @@ import org.mozilla.fenix.R
 import org.mozilla.fenix.components.components
 import org.mozilla.fenix.dejavu.actions.TabAction
 import org.mozilla.fenix.dejavu.browser.closeShownTab
+import org.mozilla.fenix.dejavu.browser.sleepTabs
+import org.mozilla.fenix.dejavu.browser.tabToShowInstead
 import org.mozilla.fenix.dejavu.browser.themeOfTab
 import org.mozilla.fenix.dejavu.containers.DejavuContainerStorage
 import org.mozilla.fenix.dejavu.home.ActionTargets
@@ -77,8 +79,19 @@ internal fun runOnShownTab(action: TabAction, context: Context, navController: N
             closeShownTab(components, navController, tab)
         }
         TabAction.SLEEP -> {
-            navController.navigate(NavGraphDirections.actionGlobalHome())
-            components.core.store.dispatch(EngineAction.SuspendEngineSessionAction(tab.id))
+            // Another tab takes the place of the shown one, so the browser stays open. Without one, a pinned tab closes
+            // and keeps its pin, and any other leaves for the home screen, as the tab cannot sleep while shown.
+            val store = components.core.store
+            val workspaces = WorkspaceRepository.get(context).state.value
+            val instead = tabToShowInstead(store.state, setOf(tab.id), workspaces::workspaceOf)
+            when {
+                instead != null -> components.sleepTabs(workspaces, setOf(tab.id))
+                workspaces.pinOf(tab.id) != null -> closeShownTab(components, navController, tab)
+                else -> {
+                    navController.navigate(NavGraphDirections.actionGlobalHome())
+                    store.dispatch(EngineAction.SuspendEngineSessionAction(tab.id))
+                }
+            }
         }
         TabAction.COPY_LINK -> if (tab.content.private) {
             // Like Fenix's address bar: Android leaves it out of its clipboard preview, and keyboards do not keep it.
