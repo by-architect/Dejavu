@@ -28,7 +28,7 @@ import org.mozilla.fenix.dejavu.workspaces.WorkspaceState
 
 /** The entries of the "More" menu that only Dejavu has, carried out on [tab]. */
 internal class DejavuTabCommands(
-    context: Context,
+    private val context: Context,
     private val components: Components,
     private val repository: WorkspaceRepository,
     private val settings: DejavuSettings,
@@ -46,6 +46,7 @@ internal class DejavuTabCommands(
         val pin = workspaces.pinOf(tab.id)
         when (item) {
             MoreMenuItem.SAVE_AS_PDF -> sessionUseCases.saveToPdf(tab.id)
+            MoreMenuItem.SCREENSHOT -> captureFullPageScreenshot(context, components, tab.id, tab.content.private)
             MoreMenuItem.PRINT -> sessionUseCases.printContent(tab.id)
             MoreMenuItem.PIN_TAB ->
                 if (pin != null && !pin.essential) repository.unpin(setOf(pin.id)) else repository.pinTabs(listOf(tab.toPinSource()))

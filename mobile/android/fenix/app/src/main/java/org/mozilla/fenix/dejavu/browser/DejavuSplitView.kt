@@ -171,6 +171,9 @@ internal class SplitPaneFeature(
         if (selected != null && selected == shownTabId) releaseEngine()
     }
 
+    /** The view that shows the tab [tabId]: the pane when it shows that tab, else the browser's own. */
+    fun engineViewOf(tabId: String): EngineView = pane?.engineView?.takeIf { tabId == shownTabId } ?: mainEngineView
+
     /** Called before the tabs [tabIds] are closed or unloaded. */
     fun onTabsLeaving(tabIds: Collection<String>) {
         if (shownTabId in tabIds) releaseEngine()

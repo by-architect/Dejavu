@@ -42,6 +42,7 @@ enum class MoreMenuItem(
     PIN_TAB("pin_tab", R.string.dejavu_menu_pin_tab, iconsR.drawable.mozac_ic_pin_24),
     ESSENTIAL_TAB("essential_tab", R.string.dejavu_menu_essential_tab, iconsR.drawable.mozac_ic_grid_add_24),
     SAVE_AS_PDF("save_as_pdf", R.string.dejavu_menu_save_as_pdf, iconsR.drawable.mozac_ic_save_file_24),
+    SCREENSHOT("screenshot", R.string.dejavu_menu_screenshot, iconsR.drawable.mozac_ic_screenshot_24),
     PRINT("print", R.string.dejavu_menu_print, iconsR.drawable.mozac_ic_print_24),
     OPEN_IN_APP("open_in_app", R.string.dejavu_menu_open_in_app, iconsR.drawable.mozac_ic_external_link_24),
     RESET_PINNED_URL("reset_pinned_url", R.string.dejavu_menu_reset_pinned_url, R.drawable.dejavu_ic_reset_pin_24),

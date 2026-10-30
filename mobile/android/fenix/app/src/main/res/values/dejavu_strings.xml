@@ -276,6 +276,14 @@
     <string name="dejavu_menu_remove_essential">Remove essential</string>
     <string name="dejavu_menu_save_as_pdf">Save as PDF</string>
     <string name="dejavu_menu_print">Print</string>
+    <string name="dejavu_menu_screenshot">Full page screenshot</string>
+    <!-- %1$s is the folder the screenshot was saved to, for example Pictures/Dejavu -->
+    <string name="dejavu_screenshot_saved">Saved to %1$s</string>
+    <string name="dejavu_screenshot_failed">Could not capture the page</string>
+    <string name="dejavu_screenshot_save_failed">Could not save the screenshot</string>
+    <string name="dejavu_screenshot_private">Screenshots are off in private browsing. Turn them on in Settings, Private browsing.</string>
+    <string name="dejavu_screenshot_open">Open</string>
+    <string name="dejavu_screenshot_share">Share</string>
     <string name="dejavu_menu_open_in_app">Open in app</string>
     <string name="dejavu_menu_reset_pinned_url">Reset to pinned URL</string>
     <string name="dejavu_menu_replace_pinned_url">Pin this URL</string>
