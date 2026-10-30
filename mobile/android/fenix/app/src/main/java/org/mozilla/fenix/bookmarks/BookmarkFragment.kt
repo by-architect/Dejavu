@@ -123,6 +123,7 @@ class BookmarkFragment : Fragment(), SystemInsetsPaddedFragment {
                                 BrowserToolbarSyncToBookmarksMiddleware(toolbarStore, lifecycleScope),
                                 BookmarksMiddleware(
                                     lifecycleScope = lifecycleScope,
+                                    onBookmarksDeleted = requireComponents.useCases::refreshBookmarkKeywords,
                                     bookmarksStorage = requireContext().bookmarkStorage,
                                     addNewTabUseCase = requireComponents.useCases.tabsUseCases.addTab,
                                     fenixBrowserUseCases = requireComponents.useCases.fenixBrowserUseCases,

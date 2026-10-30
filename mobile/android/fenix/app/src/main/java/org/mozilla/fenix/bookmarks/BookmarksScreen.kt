@@ -45,6 +45,7 @@ import androidx.compose.material3.TopAppBarDefaults
 import androidx.compose.material3.rememberSearchBarState
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.CompositionLocalProvider
+import androidx.compose.runtime.DisposableEffect
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
@@ -52,6 +53,7 @@ import androidx.compose.runtime.mutableIntStateOf
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.rememberCoroutineScope
+import androidx.compose.runtime.rememberUpdatedState
 import androidx.compose.runtime.saveable.SaveableStateHolder
 import androidx.compose.runtime.saveable.rememberSaveableStateHolder
 import androidx.compose.runtime.setValue
@@ -85,9 +87,11 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
+import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.launch
 import mozilla.appservices.places.BookmarkRoot
+import mozilla.components.browser.state.state.searchEngines
 import mozilla.components.compose.base.annotation.FlexibleWindowLightDarkPreview
 import mozilla.components.compose.base.button.FloatingActionButton
 import mozilla.components.compose.base.button.IconButton
@@ -118,6 +122,10 @@ import org.mozilla.fenix.compose.Favicon
 import org.mozilla.fenix.compose.list.FaviconListItem
 import org.mozilla.fenix.compose.list.SelectableFaviconListItem
 import org.mozilla.fenix.compose.list.SelectableIconListItem
+import org.mozilla.fenix.dejavu.keywordFor
+import org.mozilla.fenix.dejavu.keywordOwner
+import org.mozilla.fenix.dejavu.withDefaultEngineKeywords
+import org.mozilla.fenix.dejavu.withKeyword
 import org.mozilla.fenix.tabstray.ui.tabpage.EmptyTabPage
 import org.mozilla.fenix.theme.FirefoxTheme
 
@@ -1387,6 +1395,39 @@ private fun BookmarkEditor(
     LaunchedEffect(Unit) {
         focusRequester.requestFocus()
     }
+    val settings = components.settings
+    val store = components.core.store
+    val savedKeywords = remember { settings.bookmarkKeywords }
+    val engineKeywords = remember {
+        settings.engineKeywords.withDefaultEngineKeywords(store.state.search.searchEngines.map { it.id })
+    }
+    val oldUrl = remember { bookmarkItem.url }
+    var keyword by remember {
+        mutableStateOf(savedKeywords.keywordFor(bookmarkItem.guid).ifEmpty { savedKeywords.keywordFor(oldUrl) })
+    }
+    val owner = keywordOwner(keyword, engineKeywords, savedKeywords)
+    val taken = owner != null && owner != bookmarkItem.guid && owner != oldUrl
+    val latestKeyword by rememberUpdatedState(keyword)
+    val latestTaken by rememberUpdatedState(taken)
+    val latestUrl by rememberUpdatedState(bookmarkItem.url)
+    // What was last saved, so closing the editor after deleting the bookmark does not bring its keyword back.
+    var saved by remember { mutableStateOf(keyword to bookmarkItem.url) }
+    fun saveKeyword() {
+        if (latestTaken || (latestKeyword to latestUrl) == saved) return
+        saved = latestKeyword to latestUrl
+        val guid = bookmarkItem.guid
+        settings.bookmarkKeywords = settings.bookmarkKeywords
+            .filterValues { it != oldUrl }
+            .withKeyword(latestKeyword, guid)
+        val urls = settings.bookmarkKeywordUrls - guid
+        settings.bookmarkKeywordUrls = if (latestKeyword.isBlank()) urls else urls + (guid to latestUrl)
+    }
+    // Saved a moment after typing stops, and when the editor closes, not on every key.
+    LaunchedEffect(keyword) {
+        delay(KEYWORD_SAVE_DELAY_MS)
+        saveKeyword()
+    }
+    DisposableEffect(Unit) { onDispose { saveKeyword() } }
     Row(
         horizontalArrangement = Arrangement.spacedBy(16.dp),
         verticalAlignment = Alignment.CenterVertically,
@@ -1419,6 +1460,15 @@ private fun BookmarkEditor(
                     Modifier.semantics {
                         testTag = EDIT_BOOKMARK_ITEM_URL_TEXT_FIELD
                     },
+            )
+
+            Spacer(modifier = Modifier.height(16.dp))
+
+            ClearableTextField(
+                value = keyword,
+                onValueChange = { keyword = it },
+                placeholder = stringResource(R.string.dejavu_search_keyword),
+                errorText = if (taken) stringResource(R.string.dejavu_search_keyword_taken, keyword.trim()) else null,
             )
         }
     }
@@ -1461,6 +1511,7 @@ private fun ClearableTextField(
     value: String,
     onValueChange: (String) -> Unit,
     modifier: Modifier = Modifier,
+    errorText: String? = null,
 ) {
     var isFocused by remember { mutableStateOf(false) }
 
@@ -1468,7 +1519,8 @@ private fun ClearableTextField(
         value = value,
         onValueChange = onValueChange,
         placeholder = placeholder,
-        errorText = "",
+        errorText = errorText.orEmpty(),
+        isError = errorText != null,
         modifier = modifier.onFocusChanged { isFocused = it.isFocused },
         trailingIcon = {
             if (isFocused && value.isNotEmpty()) {
@@ -1673,3 +1725,4 @@ private fun EmptyBookmarksScreenPreview() {
 }
 
 private const val PREVIEW_BOOKMARKS_SIZE = 20
+private const val KEYWORD_SAVE_DELAY_MS = 400L

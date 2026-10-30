@@ -6,6 +6,9 @@
     <string name="pref_key_dejavu_tab_actions" translatable="false">pref_key_dejavu_tab_actions</string>
     <string name="pref_key_dejavu_containers" translatable="false">pref_key_dejavu_containers</string>
     <string name="pref_key_dejavu_external_links" translatable="false">pref_key_dejavu_external_links</string>
+    <string name="pref_key_dejavu_engine_keywords" translatable="false">pref_key_dejavu_engine_keywords</string>
+    <string name="pref_key_dejavu_bookmark_keywords" translatable="false">pref_key_dejavu_bookmark_keywords</string>
+    <string name="pref_key_dejavu_bookmark_keyword_urls" translatable="false">pref_key_dejavu_bookmark_keyword_urls</string>
     <string name="pref_key_dejavu_tab_sleep" translatable="false">pref_key_dejavu_tab_sleep</string>
     <string name="pref_key_dejavu_safe_browsing" translatable="false">pref_key_dejavu_safe_browsing</string>
     <string name="pref_key_dejavu_jit" translatable="false">pref_key_dejavu_jit</string>
@@ -636,4 +639,8 @@
     <string name="dejavu_custom_action_http_warning">This address uses http, so the request, its headers and the page\'s address travel unencrypted. Use https if the server supports it.</string>
     <!-- Description of the ntfy example custom action, which sends a notification to a topic on ntfy.sh. -->
     <string name="dejavu_example_notification_ntfy">Send the page as a notification. Anyone who knows the topic\'s name can read it, so pick a long, random one.</string>
+    <!-- Label of the field and menu item where a short word is set that searches a search engine or opens a bookmark when typed before a search. -->
+    <string name="dejavu_search_keyword">Keyword</string>
+    <!-- Shown when a keyword is already used. %1$s is the keyword. -->
+    <string name="dejavu_search_keyword_taken">\"%1$s\" is already used by another keyword.</string>
 </resources>

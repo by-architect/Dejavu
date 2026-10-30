@@ -51,6 +51,7 @@ class EditBookmarkFragment : Fragment(), SystemInsetsPaddedFragment {
                         middleware =
                             listOf(
                                 BookmarksMiddleware(
+                                    onBookmarksDeleted = requireComponents.useCases::refreshBookmarkKeywords,
                                     bookmarksStorage = context.bookmarkStorage,
                                     addNewTabUseCase = requireComponents.useCases.tabsUseCases.addTab,
                                     fenixBrowserUseCases = requireComponents.useCases.fenixBrowserUseCases,
