@@ -115,6 +115,7 @@ import org.mozilla.fenix.compose.snackbar.SnackbarState
 import org.mozilla.fenix.dejavu.browser.DejavuToolbar
 import org.mozilla.fenix.dejavu.home.isDejavuHomeEnabled
 import org.mozilla.fenix.dejavu.home.setDejavuHomeContent
+import org.mozilla.fenix.dejavu.shortcuts.KeyboardShortcuts
 import org.mozilla.fenix.ext.application
 import org.mozilla.fenix.ext.components
 import org.mozilla.fenix.ext.hideToolbar
@@ -152,6 +153,7 @@ import org.mozilla.fenix.home.toolbar.FenixHomeToolbar
 import org.mozilla.fenix.home.toolbar.HomeNavigationBar
 import org.mozilla.fenix.home.toolbar.HomeToolbarComposable
 import org.mozilla.fenix.home.toolbar.HomeToolbarComposable.Companion.DirectToSearchConfig
+import org.mozilla.fenix.home.toolbar.PageOriginInteractions
 import org.mozilla.fenix.home.toolbar.homepageToolbarColors
 import org.mozilla.fenix.home.topsites.DefaultTopSitesView
 import org.mozilla.fenix.home.topsites.TopSitesBinding
@@ -260,6 +262,9 @@ class HomeFragment : Fragment(), UserInteractionHandler, OnLongPressedListener {
         get() = _sessionControlInteractor!!
 
     @VisibleForTesting(otherwise = VisibleForTesting.PRIVATE) internal var nullableToolbarView: FenixHomeToolbar? = null
+
+    /** Dejavu: this fragment's Ctrl+L hook, released in onDestroyView so the shortcut does not keep the fragment. */
+    private var focusAddressBarHook: (() -> Unit)? = null
 
     private val toolbarView: FenixHomeToolbar
         get() = nullableToolbarView!!
@@ -441,6 +446,8 @@ class HomeFragment : Fragment(), UserInteractionHandler, OnLongPressedListener {
 
     private fun buildToolbar(activity: HomeActivity, view: View): FenixHomeToolbar {
         val toolbarStore by buildToolbarStore(activity)
+        focusAddressBarHook = { toolbarStore.dispatch(PageOriginInteractions.OriginClicked) }
+        KeyboardShortcuts.focusAddressBar = focusAddressBarHook
 
         if (homepageEdgeToEdgeFeature.get() == null) {
             homepageEdgeToEdgeFeature.set(
@@ -1046,6 +1053,9 @@ class HomeFragment : Fragment(), UserInteractionHandler, OnLongPressedListener {
     override fun onDestroyView() {
         super.onDestroyView()
 
+        // Dejavu: the shortcut hook holds this fragment's toolbar store. A newer fragment may already own the shortcut.
+        if (KeyboardShortcuts.focusAddressBar === focusAddressBarHook) KeyboardShortcuts.focusAddressBar = null
+        focusAddressBarHook = null
         nullableToolbarView = null
         homeNavigationBar = null
 

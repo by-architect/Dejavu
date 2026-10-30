@@ -422,6 +422,10 @@ class CustomizationFragment : PreferenceFragmentCompat(), SystemInsetsPaddedFrag
                 findNavController().navigate(R.id.dejavu_more_menu_graph)
                 return true
             }
+            resources.getString(R.string.pref_key_dejavu_shortcuts) -> {
+                findNavController().navigate(R.id.dejavu_shortcuts_graph)
+                return true
+            }
             resources.getString(R.string.pref_key_website_pull_to_refresh) -> {
                 PullToRefreshInBrowser.enabled.set(requireComponents.settings.isPullToRefreshEnabledInBrowser)
             }

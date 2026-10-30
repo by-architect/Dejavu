@@ -6,6 +6,28 @@
     <string name="pref_key_dejavu_tab_actions" translatable="false">pref_key_dejavu_tab_actions</string>
     <string name="pref_key_dejavu_containers" translatable="false">pref_key_dejavu_containers</string>
     <string name="pref_key_dejavu_external_links" translatable="false">pref_key_dejavu_external_links</string>
+    <string name="pref_key_dejavu_shortcuts" translatable="false">pref_key_dejavu_shortcuts</string>
+    <string name="dejavu_settings_shortcuts">Keyboard shortcuts</string>
+    <string name="dejavu_settings_shortcuts_summary">Change the keys of the shortcuts for a hardware keyboard</string>
+    <string name="dejavu_shortcuts_hint">Tap a shortcut to give it another key. Shortcuts need Ctrl or Alt.</string>
+    <string name="dejavu_shortcuts_press">Press the new key combination.</string>
+    <string name="dejavu_shortcuts_taken">%1$s is already used by \"%2$s\". Swap gives \"%2$s\" this shortcut\'s current key, or cancel to change nothing.</string>
+    <string name="dejavu_shortcuts_current">Current: %1$s</string>
+    <string name="dejavu_shortcuts_text_keys">Text fields and web pages keep %1$s while they have focus.</string>
+    <string name="dejavu_shortcuts_none">None</string>
+    <string name="dejavu_shortcuts_save">Save</string>
+    <string name="dejavu_shortcuts_swap">Swap</string>
+    <string name="dejavu_shortcuts_clear">Clear</string>
+    <string name="dejavu_shortcuts_reset">Reset to default</string>
+    <string name="dejavu_shortcut_next_tab">Next tab</string>
+    <string name="dejavu_shortcut_previous_tab">Previous tab</string>
+    <string name="dejavu_shortcut_new_tab">New tab</string>
+    <string name="dejavu_shortcut_close_tab">Close tab</string>
+    <string name="dejavu_shortcut_restore_tab">Restore closed tab</string>
+    <string name="dejavu_shortcut_address_bar">Edit address</string>
+    <string name="dejavu_shortcut_reload">Reload page</string>
+    <string name="dejavu_shortcut_tab_n">Go to tab %1$d</string>
+    <string name="dejavu_shortcut_last_tab">Go to last tab</string>
     <string name="pref_key_dejavu_tab_sleep" translatable="false">pref_key_dejavu_tab_sleep</string>
     <string name="pref_key_dejavu_safe_browsing" translatable="false">pref_key_dejavu_safe_browsing</string>
     <string name="pref_key_dejavu_jit" translatable="false">pref_key_dejavu_jit</string>

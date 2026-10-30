@@ -20,7 +20,10 @@ import android.text.format.DateUtils
 import android.util.AttributeSet
 import android.view.ActionMode
 import android.view.KeyEvent
+import android.view.KeyboardShortcutGroup
+import android.view.KeyboardShortcutInfo
 import android.view.LayoutInflater
+import android.view.Menu
 import android.view.MotionEvent
 import android.view.View
 import android.view.ViewConfiguration
@@ -138,6 +141,8 @@ import org.mozilla.fenix.debugsettings.data.DefaultDebugSettingsRepository
 import org.mozilla.fenix.debugsettings.gleandebugtools.DefaultGleanDebugToolsStorage
 import org.mozilla.fenix.debugsettings.ui.FenixOverlay
 import org.mozilla.fenix.dejavu.settings.DejavuPreferenceCards
+import org.mozilla.fenix.dejavu.shortcuts.KeyboardShortcuts
+import org.mozilla.fenix.dejavu.shortcuts.ShortcutAction
 import org.mozilla.fenix.downloads.DownloadSnackbar
 import org.mozilla.fenix.e2e.EdgeToEdgeFragmentLifecycleCallbacks
 import org.mozilla.fenix.experiments.ResearchSurfaceDialogFragment
@@ -1359,7 +1364,24 @@ open class HomeActivity : LocaleAwareAppCompatActivity(), NavHostActivity, Crash
                 }
             }
         }
+        if (KeyboardShortcuts.dispatch(this, event)) return true
         return super.dispatchKeyEvent(event)
+    }
+
+    override fun onProvideKeyboardShortcuts(
+        data: MutableList<KeyboardShortcutGroup>,
+        menu: Menu?,
+        deviceId: Int,
+    ) {
+        if (this is ExternalAppBrowserActivity) return super.onProvideKeyboardShortcuts(data, menu, deviceId)
+        val saved = KeyboardShortcuts.saved(this)
+        val infos = ShortcutAction.entries.mapNotNull { action ->
+            KeyboardShortcuts.comboOf(action, saved)?.let {
+                KeyboardShortcutInfo(getString(action.label, action.labelArg), it.keyCode, it.meta)
+            }
+        }
+        data.add(KeyboardShortcutGroup(getString(R.string.dejavu_settings_shortcuts), infos))
+        super.onProvideKeyboardShortcuts(data, menu, deviceId)
     }
 
     final override fun onKeyDown(keyCode: Int, event: KeyEvent?): Boolean {
