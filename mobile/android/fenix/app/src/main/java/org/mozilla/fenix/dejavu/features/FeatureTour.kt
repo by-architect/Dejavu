@@ -4,6 +4,7 @@
 
 package org.mozilla.fenix.dejavu.features
 
+import android.animation.ValueAnimator
 import android.content.Context
 import android.graphics.BitmapFactory
 import android.graphics.Color
@@ -413,7 +414,8 @@ private fun PageDots(count: Int, current: Int) {
 }
 
 /**
- * Plays [animation] while [playing]. Android 9 and newer play animated WebP; older versions show its first frame.
+ * Plays [animation] while [playing]. Android 9 and newer play animated WebP; older versions, and any with animations
+ * turned off, show its first frame.
  * The title above already says what it shows, so screen readers skip it.
  */
 @Composable
@@ -443,7 +445,8 @@ private fun FeatureAnimation(@RawRes animation: Int, playing: Boolean, modifier:
 }
 
 private fun decodeAnimation(context: Context, @RawRes animation: Int): Drawable? = runCatching {
-    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.P) {
+    // With animations turned off in the system settings, the first frame stands still instead, as WebP ignores them.
+    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.P && ValueAnimator.areAnimatorsEnabled()) {
         ImageDecoder.decodeDrawable(ImageDecoder.createSource(context.resources, animation)).also {
             (it as? AnimatedImageDrawable)?.repeatCount = AnimatedImageDrawable.REPEAT_INFINITE
         }
