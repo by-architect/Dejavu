@@ -24,6 +24,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.produceState
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
@@ -34,6 +35,8 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import androidx.core.graphics.drawable.toDrawable
 import androidx.navigation.NavController
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.withContext
 import mozilla.components.browser.state.selector.normalTabs
 import mozilla.components.browser.state.selector.selectedTab
 import mozilla.components.browser.state.state.TabSessionState
@@ -257,8 +260,11 @@ internal fun moreMenuState(
 ): MoreMenuState {
     val url = tab.content.url
     val pin = workspaces.pinOf(tab.id)
-    val hasExternalApp = remember(url) {
-        runCatching { fenix.useCases.appLinksUseCases.appLinkRedirect(url).hasExternalApp() }.getOrDefault(false)
+    // Asking the package manager takes a while, so it stays off the main thread.
+    val hasExternalApp by produceState(false, url) {
+        value = withContext(Dispatchers.IO) {
+            runCatching { fenix.useCases.appLinksUseCases.appLinkRedirect(url).hasExternalApp() }.getOrDefault(false)
+        }
     }
     val translationEngineSupported = fenix.core.store.state.translationEngine.isEngineSupported == true
     return MoreMenuState(

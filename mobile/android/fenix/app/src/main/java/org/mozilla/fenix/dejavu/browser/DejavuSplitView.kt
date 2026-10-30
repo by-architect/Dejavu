@@ -143,6 +143,9 @@ internal class SplitPaneFeature(
     private var previousSelectedTabId: String? = null
     private var mainSessionAtSwitch: GeckoSession? = null
     private val retryBind = Runnable { target?.let(::bind) }
+
+    /** Quick retries made for the current target. The browser may never show the new tab, so they slow down. */
+    private var bindRetries = 0
     private val layoutListener = View.OnLayoutChangeListener { _, _, top, _, bottom, _, oldTop, _, oldBottom ->
         if (bottom - top != oldBottom - oldTop) browserLayout.post { applyLayout() }
     }
@@ -186,6 +189,7 @@ internal class SplitPaneFeature(
 
     private fun update(next: PaneTarget?) {
         target = next
+        bindRetries = 0
         if (next == null) {
             hide()
         } else {
@@ -207,13 +211,16 @@ internal class SplitPaneFeature(
         val mainSession = mainEngineView.asView().findGeckoView()?.session
         if (next.tabId == previousSelectedTabId && mainSession != null && mainSession === mainSessionAtSwitch) {
             // The browser still shows this tab on top; try again once it shows the newly selected one.
-            browserLayout.postDelayed(retryBind, BIND_RETRY_MS)
+            // After the quick tries, a slow one keeps the pane from staying empty when the browser takes long.
+            val wait = if (bindRetries++ < MAX_BIND_RETRIES) BIND_RETRY_MS else SLOW_BIND_RETRY_MS
+            browserLayout.postDelayed(retryBind, wait)
             return
         }
         releaseEngine()
         pane.engineView.render(session)
         shownTabId = next.tabId
         shownSession = session
+        bindRetries = 0
         contextMenu = ContextMenuFeature(
             fragmentManager = fragment.parentFragmentManager,
             store = store,
@@ -333,6 +340,8 @@ internal class SplitPaneFeature(
 
     companion object {
         private const val BIND_RETRY_MS = 50L
+        private const val MAX_BIND_RETRIES = 20
+        private const val SLOW_BIND_RETRY_MS = 1_000L
         private const val MIN_MAIN_FRACTION = 0.25f
         private const val MAX_MAIN_FRACTION = 0.8f
 

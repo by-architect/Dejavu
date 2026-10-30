@@ -192,6 +192,23 @@ val TabSessionState.displayTitle: String
     get() = pageLabel(content.title, content.url)
 
 /**
+ * Whether [old] and [new] look the same on the home and in its rows, dialogs and actions: the same tabs in the same
+ * order, with the same id, address, title, container and awake state. Those are all the tab fields the home reads.
+ * Load progress, icons, security and media change many times per page load and are left out.
+ */
+fun isSameOnHome(old: List<TabSessionState>, new: List<TabSessionState>): Boolean =
+    old === new || (old.size == new.size && old.indices.all { isSameOnHome(old[it], new[it]) })
+
+private fun isSameOnHome(old: TabSessionState, new: TabSessionState): Boolean =
+    old === new || (
+        old.id == new.id &&
+            old.content.url == new.content.url &&
+            old.content.title == new.content.title &&
+            old.contextId == new.contextId &&
+            old.isAwake == new.isAwake
+        )
+
+/**
  * The page's [title], like browsers show on tabs, or its address when the page has no title or its title is its own
  * address. Any other title is shown as the page wrote it, never made to look like an address.
  */

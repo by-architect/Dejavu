@@ -41,10 +41,14 @@ import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
 import androidx.navigation.findNavController
+import kotlinx.coroutines.flow.distinctUntilChanged
+import kotlinx.coroutines.flow.map
 import mozilla.appservices.places.BookmarkRoot
 import mozilla.components.browser.state.selector.selectedTab
+import mozilla.components.browser.state.state.TabSessionState
 import mozilla.components.compose.browser.toolbar.store.BrowserToolbarInteraction.BrowserToolbarEvent
 import mozilla.components.compose.browser.toolbar.store.BrowserToolbarInteraction.BrowserToolbarEvent.Source
+import mozilla.components.lib.state.ext.flow
 import mozilla.components.lib.state.ext.observeAsComposableState
 import org.mozilla.fenix.NavGraphDirections
 import org.mozilla.fenix.R
@@ -75,7 +79,11 @@ fun DejavuActionsBar(onEvent: (BrowserToolbarEvent) -> Unit) {
     val fenix = components
     val settings = remember { fenix.readOnMainThread { DejavuSettings.get(context) } }
     val repository = remember { fenix.readOnMainThread { WorkspaceRepository.get(context) } }
-    val tab by fenix.core.store.observeAsComposableState { it.selectedTab }
+    val tab by remember {
+        fenix.core.store.flow()
+            .map { it.selectedTab }
+            .distinctUntilChanged { old, new -> sameForBar(old, new) }
+    }.collectAsState(initial = fenix.core.store.state.selectedTab)
     val workspaces by repository.state.collectAsState()
     val barKeys by settings.actionsBarKeys.collectAsState()
     val customActions by settings.customActions.collectAsState()
@@ -143,6 +151,25 @@ fun DejavuActionsBar(onEvent: (BrowserToolbarEvent) -> Unit) {
             onDone = { asking = null },
         )
     }
+}
+
+/**
+ * Whether the bar looks the same for [old] and [new]: only the fields [moreMenuState], the bar and its dialogs read, so
+ * the load progress and the other changes of the tab do not recompose the bar.
+ */
+private fun sameForBar(old: TabSessionState?, new: TabSessionState?): Boolean {
+    if (old == null || new == null) return old == null && new == null
+    return old.id == new.id &&
+        old.contextId == new.contextId &&
+        old.content.url == new.content.url &&
+        old.content.title == new.content.title &&
+        old.content.private == new.content.private &&
+        old.content.loading == new.content.loading &&
+        old.content.canGoBack == new.content.canGoBack &&
+        old.content.canGoForward == new.content.canGoForward &&
+        old.content.desktopMode == new.content.desktopMode &&
+        old.content.isPdf == new.content.isPdf &&
+        old.translationsState.isTranslated == new.translationsState.isTranslated
 }
 
 private class BarItem(val look: EntryLook, val onClick: () -> Unit)

@@ -208,18 +208,20 @@ internal fun WorkspacePage(
     hasClipboardLink: Boolean = false,
     revealTabId: String? = null,
 ) {
-    val tabsById = tabs.associateBy { it.id }
-    val awakeTabIds = tabs.filter { it.isAwake }.map { it.id }.toSet()
+    val tabsById = remember(tabs) { tabs.associateBy { it.id } }
+    val awakeTabIds = remember(tabs) { tabs.filter { it.isAwake }.map { it.id }.toSet() }
     // The workspace of a device on the account follows the device: its tabs are only opened and closed here.
     val isDevice = workspace.device != null
-    val pinLines = pinLines(state.pinnedTree(workspace.id), state)
-    val pinnedTabIds = state.pins.mapNotNull { it.tabId }.toSet()
-    val otherTabs = tabs.filterNot { it.id in pinnedTabIds }
-    val splitTabIds = state.splits.flatMap { it.tabIds }.toSet()
-    val lines = tabLines(otherTabs, state)
+    val pinLines = remember(state, workspace.id) { pinLines(state.pinnedTree(workspace.id), state) }
+    val pinnedTabIds = remember(state.pins) { state.pins.mapNotNull { it.tabId }.toSet() }
+    val otherTabs = remember(tabs, pinnedTabIds) { tabs.filterNot { it.id in pinnedTabIds } }
+    val splitTabIds = remember(state.splits) { state.splits.flatMap { it.tabIds }.toSet() }
+    val lines = remember(otherTabs, state) { tabLines(otherTabs, state) }
     // The key of the row each pinned item and tab shows on, for the ones sharing a row with a split view partner.
-    val lineKeys = pinLines.flatMap { line -> line.entries.map { PIN_PREFIX + it.item.id to line.key } }.toMap() +
-        lines.flatMap { line -> line.tabs.map { TAB_PREFIX + it.id to line.key } }
+    val lineKeys = remember(pinLines, lines) {
+        pinLines.flatMap { line -> line.entries.map { PIN_PREFIX + it.item.id to line.key } }.toMap() +
+            lines.flatMap { line -> line.tabs.map { TAB_PREFIX + it.id to line.key } }
+    }
 
     val listState = rememberLazyListState()
     val content by rememberUpdatedState(PageContent(state, otherTabs, workspace))
