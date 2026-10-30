@@ -85,6 +85,7 @@ data class MoreMenuState(
     val isPinChanged: Boolean = false,
     val isSplit: Boolean = false,
     val isPrivate: Boolean = false,
+    val canRestoreClosedTab: Boolean = true,
     val hasExternalApp: Boolean = false,
     val canTranslate: Boolean = false,
     val isTranslated: Boolean = false,
@@ -149,6 +150,7 @@ private fun MoreMenuItem.look(state: MoreMenuState): EntryLook {
         }
         MoreMenuItem.RESET_PINNED_URL, MoreMenuItem.REPLACE_PINNED_URL -> default.copy(enabled = state.isPinChanged)
         MoreMenuItem.OPEN_IN_APP -> default.copy(enabled = state.hasExternalApp)
+        MoreMenuItem.RESTORE_CLOSED_TAB -> default.copy(enabled = state.canRestoreClosedTab)
         MoreMenuItem.TRANSLATE -> default.copy(enabled = state.canTranslate, active = state.isTranslated)
         MoreMenuItem.SHARE, MoreMenuItem.FIND_IN_PAGE, MoreMenuItem.SAVE_AS_PDF, MoreMenuItem.PRINT,
         -> default.copy(enabled = state.isWebPage)

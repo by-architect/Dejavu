@@ -280,6 +280,8 @@
     <string name="dejavu_menu_reset_pinned_url">Reset to pinned URL</string>
     <string name="dejavu_menu_replace_pinned_url">Pin this URL</string>
     <string name="dejavu_menu_split_view">Split view</string>
+    <string name="dejavu_menu_restore_closed_tab">Restore closed tab</string>
+    <string name="dejavu_no_closed_tabs">No recently closed tabs</string>
     <string name="dejavu_menu_unsplit">Unsplit</string>
     <string name="dejavu_menu_split_with">Split view with</string>
     <string name="dejavu_menu_split_no_tabs">There are no other tabs in this workspace.</string>

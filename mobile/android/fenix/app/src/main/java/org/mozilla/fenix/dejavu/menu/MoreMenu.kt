@@ -47,6 +47,11 @@ enum class MoreMenuItem(
     RESET_PINNED_URL("reset_pinned_url", R.string.dejavu_menu_reset_pinned_url, R.drawable.dejavu_ic_reset_pin_24),
     REPLACE_PINNED_URL("replace_pinned_url", R.string.dejavu_menu_replace_pinned_url, iconsR.drawable.mozac_ic_pin_fill_24),
     SPLIT_VIEW("split_view", R.string.dejavu_menu_split_view, R.drawable.dejavu_ic_split_24),
+    RESTORE_CLOSED_TAB(
+        "restore_closed_tab",
+        R.string.dejavu_menu_restore_closed_tab,
+        iconsR.drawable.mozac_ic_tab_24,
+    ),
     SETTINGS("settings", R.string.dejavu_menu_settings, iconsR.drawable.mozac_ic_settings_24),
     ;
 

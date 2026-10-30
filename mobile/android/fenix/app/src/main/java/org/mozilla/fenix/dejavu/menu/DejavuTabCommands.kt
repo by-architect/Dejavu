@@ -13,12 +13,14 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import mozilla.components.browser.state.action.TabListAction
 import mozilla.components.browser.state.state.TabSessionState
+import mozilla.components.browser.state.state.recover.TabState
 import org.mozilla.fenix.R
 import org.mozilla.fenix.components.Components
 import org.mozilla.fenix.dejavu.actions.ActionContext
 import org.mozilla.fenix.dejavu.actions.CustomAction
 import org.mozilla.fenix.dejavu.actions.CustomActionRunner
 import org.mozilla.fenix.dejavu.containers.DejavuContainerStorage
+import org.mozilla.fenix.dejavu.home.ClosedTabReopener
 import org.mozilla.fenix.dejavu.home.folderPathOf
 import org.mozilla.fenix.dejavu.settings.DejavuSettings
 import org.mozilla.fenix.dejavu.workspaces.MAX_ESSENTIALS
@@ -53,6 +55,8 @@ internal class DejavuTabCommands(
             MoreMenuItem.RESET_PINNED_URL -> pin?.url?.let { sessionUseCases.loadUrl(it, tab.id) }
             MoreMenuItem.REPLACE_PINNED_URL -> pin?.let { repository.replacePinUrl(it.id, tab.content.url, tab.content.title) }
             MoreMenuItem.SPLIT_VIEW -> repository.unsplit(setOf(tab.id))
+            MoreMenuItem.RESTORE_CLOSED_TAB ->
+                restoreClosedTab(appContext, components, repository, private = tab.content.private)
             else -> return false
         }
         return true
@@ -111,3 +115,62 @@ internal class DejavuTabCommands(
         const val ISO_DATE_PATTERN = "yyyy-MM-dd'T'HH:mm:ssXXX"
     }
 }
+
+/** Shared by every menu, so that it knows the closed tabs it is already bringing back. */
+private var reopener: ClosedTabReopener? = null
+
+/**
+ * Brings back the tab closed last in [private] or normal browsing. A normal one comes back in the workspace it was
+ * closed in, as the home's button does, see [ClosedTabReopener]. A private one only while undo still offers it, as
+ * private tabs are never kept among the recently closed ones. Used by the menu and the actions bar.
+ */
+internal fun restoreClosedTab(
+    context: Context,
+    components: Components,
+    repository: WorkspaceRepository,
+    private: Boolean,
+) {
+    val state = components.core.store.state
+    val choice = restoreChoiceOf(
+        private = private,
+        undoTabs = state.undoHistory.tabs.map { it.state },
+        closedTabs = state.closedTabs,
+    )
+    when (choice) {
+        RestoreChoice.Undo -> components.useCases.tabsUseCases.undo()
+        RestoreChoice.Reopen -> {
+            val shared = reopener
+                ?: ClosedTabReopener(context.applicationContext, components, repository, components.applicationScope)
+                    .also { reopener = it }
+            if (shared.reopen() == null) showNoClosedTabs(context)
+        }
+        RestoreChoice.None -> showNoClosedTabs(context)
+    }
+}
+
+private fun showNoClosedTabs(context: Context) =
+    Toast.makeText(context.applicationContext, R.string.dejavu_no_closed_tabs, Toast.LENGTH_SHORT).show()
+
+/** What restoring the last closed tab brings back. */
+internal sealed interface RestoreChoice {
+    /** The private tabs of the last close, which the undo snackbar still offers. */
+    data object Undo : RestoreChoice
+
+    /** A normal tab, through [ClosedTabReopener]: the ones undo still offers first, then the recently closed ones. */
+    data object Reopen : RestoreChoice
+
+    /** Nothing: no tab was closed in this browsing mode. */
+    data object None : RestoreChoice
+}
+
+/**
+ * What restoring the last closed tab brings back in [private] or normal browsing, from the tabs undo can still bring
+ * back ([undoTabs]) and the recently closed ones ([closedTabs]). Normal browsing never brings back private tabs, and
+ * private browsing never normal ones.
+ */
+internal fun restoreChoiceOf(private: Boolean, undoTabs: List<TabState>, closedTabs: List<TabState>): RestoreChoice =
+    when {
+        private -> if (undoTabs.isNotEmpty() && undoTabs.all { it.private }) RestoreChoice.Undo else RestoreChoice.None
+        undoTabs.any { !it.private } || closedTabs.any { !it.private } -> RestoreChoice.Reopen
+        else -> RestoreChoice.None
+    }
