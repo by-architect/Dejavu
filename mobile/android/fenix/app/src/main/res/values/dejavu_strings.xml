@@ -636,4 +636,8 @@
     <string name="dejavu_custom_action_http_warning">This address uses http, so the request, its headers and the page\'s address travel unencrypted. Use https if the server supports it.</string>
     <!-- Description of the ntfy example custom action, which sends a notification to a topic on ntfy.sh. -->
     <string name="dejavu_example_notification_ntfy">Send the page as a notification. Anyone who knows the topic\'s name can read it, so pick a long, random one.</string>
+    <!-- Setting title: middle-clicking a link opens it in a background tab and hovering a link shows its address. -->
+    <string name="dejavu_preference_mouse_support">Mouse support</string>
+    <!-- Setting summary of the mouse support switch. -->
+    <string name="dejavu_preference_mouse_support_summary">Middle-click opens a link in a background tab, and hovering a link shows its address. Applies to new tabs.</string>
 </resources>
