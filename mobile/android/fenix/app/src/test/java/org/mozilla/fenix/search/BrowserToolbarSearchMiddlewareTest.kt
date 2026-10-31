@@ -405,7 +405,7 @@ class BrowserToolbarSearchMiddlewareTest {
                     .map { it.javaClass::getSimpleName },
             )
             assertEquals(store.state.editState.suggestion?.text, "history")
-            verify { engine.speculativeConnect("history.com") }
+            verify(exactly = 0) { engine.speculativeConnect(any()) }
             assertEquals(2, store.state.editState.editActionsEnd.size)
             assertEquals(expectedVoiceSearchButton, store.state.editState.editActionsEnd.first())
             assertEquals(expectedClearButton, store.state.editState.editActionsEnd.last())
@@ -497,7 +497,7 @@ class BrowserToolbarSearchMiddlewareTest {
                     .map { it.javaClass::getSimpleName },
             )
             assertEquals(store.state.editState.suggestion?.text, "bookmarks")
-            verify { engine.speculativeConnect("bookmarks.com") }
+            verify(exactly = 0) { engine.speculativeConnect(any()) }
         }
 
     @Test
@@ -544,7 +544,7 @@ class BrowserToolbarSearchMiddlewareTest {
                     .map { it.javaClass::getSimpleName },
             )
             assertEquals(store.state.editState.suggestion?.text, "history")
-            verify { engine.speculativeConnect("history.com") }
+            verify(exactly = 0) { engine.speculativeConnect(any()) }
         }
 
     @Test
@@ -587,7 +587,7 @@ class BrowserToolbarSearchMiddlewareTest {
                 listOfNotNull(components.core.domainsAutocompleteProvider).map { it.javaClass::getSimpleName },
             )
             assertEquals(store.state.editState.suggestion?.text, "domains")
-            verify { engine.speculativeConnect("domains.com") }
+            verify(exactly = 0) { engine.speculativeConnect(any()) }
         }
 
     @Test
@@ -641,7 +641,7 @@ class BrowserToolbarSearchMiddlewareTest {
                     .map { it.javaClass::getSimpleName },
             )
             assertEquals(store.state.editState.suggestion?.text, "session")
-            verify { engine.speculativeConnect("session.com") }
+            verify(exactly = 0) { engine.speculativeConnect(any()) }
             assertEquals(2, store.state.editState.editActionsEnd.size)
             assertEquals(expectedVoiceSearchButton, store.state.editState.editActionsEnd.first())
             assertEquals(expectedClearButton, store.state.editState.editActionsEnd.last())
@@ -694,7 +694,7 @@ class BrowserToolbarSearchMiddlewareTest {
                 listOfNotNull(components.core.bookmarksStorage).map { it.javaClass::getSimpleName },
             )
             assertEquals(store.state.editState.suggestion?.text, "bookmarks")
-            verify { engine.speculativeConnect("bookmarks.com") }
+            verify(exactly = 0) { engine.speculativeConnect(any()) }
             assertEquals(2, store.state.editState.editActionsEnd.size)
             assertEquals(expectedVoiceSearchButton, store.state.editState.editActionsEnd.first())
             assertEquals(expectedClearButton, store.state.editState.editActionsEnd.last())
@@ -750,7 +750,7 @@ class BrowserToolbarSearchMiddlewareTest {
                 listOfNotNull(components.core.historyStorage).map { it.javaClass::getSimpleName },
             )
             assertEquals(store.state.editState.suggestion?.text, "history")
-            verify { engine.speculativeConnect("history.com") }
+            verify(exactly = 0) { engine.speculativeConnect(any()) }
             assertEquals(2, store.state.editState.editActionsEnd.size)
             assertEquals(expectedVoiceSearchButton, store.state.editState.editActionsEnd.first())
             assertEquals(expectedClearButton, store.state.editState.editActionsEnd.last())
@@ -840,7 +840,7 @@ class BrowserToolbarSearchMiddlewareTest {
                 .map { it.javaClass::getSimpleName },
         )
         assertEquals(store.state.editState.suggestion?.text, "history")
-        verify { engine.speculativeConnect("history.com") }
+        verify(exactly = 0) { engine.speculativeConnect(any()) }
     }
 
     @Test

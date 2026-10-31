@@ -241,7 +241,7 @@
     <string name="dejavu_history_other_pages">Pajennoù all</string>
     <string name="dejavu_settings_tab_sleep">Ivinelloù kousket</string>
     <string name="dejavu_settings_tab_sleep_summary">An ivinelloù na implijit ket a gousk evit dieubiñ memor</string>
-    <string name="dejavu_tab_sleep_hint">Un ivinell kousket a zieub he memor hag a adkarg he fajenn pa zigorit anezhi. An ivinell a sellit outi, an hini e-kichen dezhi er gwel rannet hag an ivinelloù a lenn son pe a implij ar c’hamera pe ar mikro a chom dihun. Pa vez ezhomm memor gant Android ha Dejavu en drekleur, an holl ivinelloù a gousk nemet an div hoc’h eus implijet da ziwezhañ.</string>
+    <string name="dejavu_tab_sleep_hint">Un ivinell kousket a zieub he memor hag a adkarg he fajenn pa zigorit anezhi. An ivinell a sellit outi, an hini e-kichen dezhi er gwel rannet hag an ivinelloù a lenn son pe a implij ar c’hamera pe ar mikro a chom dihun. Pa serrit Dejavu pe pa vank memor da Android, an holl ivinelloù a gousk nemet an div hoc’h eus implijet da ziwezhañ. Mont d’un arload all a lez anezho dihun.</string>
     <string name="dejavu_tab_sleep_when">Lakaat un ivinell da gousket</string>
     <plurals name="dejavu_tab_sleep_after_minutes">
         <item quantity="one">Goude %d munutenn hep implij</item>
@@ -534,9 +534,9 @@
     <string name="dejavu_welcome_ads_title">Stankañ ar bruderezh ivez?</string>
     <string name="dejavu_welcome_ads_text">Dejavu a stank an heulierien bepred. uBlock Origin, un askouezh digoust, a c’hall lemel ar bruderezh ivez.</string>
     <string name="dejavu_welcome_ads_block">Stankañ ar bruderezh hag an heulierien</string>
-    <string name="dejavu_welcome_ads_block_summary">Ouzhpennañ a ra uBlock Origin.</string>
+    <string name="dejavu_welcome_ads_block_summary">Ouzhpennañ a ra uBlock Origin. Diskouezet e vez ar pajennoù war-dro 0,2 s diwezhatoc’h.</string>
     <string name="dejavu_welcome_ads_allow">Stankañ an heulierien hepken</string>
-    <string name="dejavu_welcome_ads_allow_summary">Ar pajennoù a ziskouez o bruderezh.</string>
+    <string name="dejavu_welcome_ads_allow_summary">Ar pajennoù a ziskouez o bruderezh, hep dale.</string>
     <string name="dejavu_welcome_default_title">Lakaat Dejavu da vezañ ho merdeer dre ziouer</string>
     <string name="dejavu_welcome_default_text">Al liammoù a bouezit warno en arloadoù all a zigor e Dejavu.</string>
     <string name="dejavu_welcome_default_done">Dejavu eo ho merdeer dre ziouer.</string>

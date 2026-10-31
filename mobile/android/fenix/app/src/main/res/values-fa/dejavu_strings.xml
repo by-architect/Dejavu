@@ -238,7 +238,7 @@
     <string name="dejavu_history_other_pages">صفحه‌های دیگر</string>
     <string name="dejavu_settings_tab_sleep">زبانه‌های خوابیده</string>
     <string name="dejavu_settings_tab_sleep_summary">زبانه‌هایی که از آن‌ها استفاده نمی‌کنید، برای آزاد کردن حافظه به خواب می‌روند</string>
-    <string name="dejavu_tab_sleep_hint">زبانهٔ خوابیده حافظه‌اش را آزاد می‌کند و وقتی بازش کنید، صفحه‌اش را دوباره بارگذاری می‌کند. زبانه‌ای که به آن نگاه می‌کنید، زبانهٔ کنارش در نمای تقسیم‌شده و زبانه‌هایی که صدا پخش می‌کنند یا از دوربین یا میکروفون استفاده می‌کنند، بیدار می‌مانند. وقتی Android به حافظه نیاز داشته باشد و Dejavu در پس‌زمینه باشد، همهٔ زبانه‌ها به‌جز دو زبانه‌ای که آخر از همه استفاده کرده‌اید به خواب می‌روند.</string>
+    <string name="dejavu_tab_sleep_hint">زبانهٔ خوابیده حافظه‌اش را آزاد می‌کند و وقتی بازش کنید، صفحه‌اش را دوباره بارگذاری می‌کند. زبانه‌ای که به آن نگاه می‌کنید، زبانهٔ کنارش در نمای تقسیم‌شده و زبانه‌هایی که صدا پخش می‌کنند یا از دوربین یا میکروفون استفاده می‌کنند، بیدار می‌مانند. وقتی Dejavu را ببندید یا Android با کمبود حافظه روبه‌رو شود، همهٔ زبانه‌ها به‌جز دو زبانه‌ای که آخر از همه استفاده کرده‌اید به خواب می‌روند. اگر به برنامه‌ای دیگر بروید، زبانه‌ها بیدار می‌مانند.</string>
     <string name="dejavu_tab_sleep_when">خواباندن زبانه</string>
     <plurals name="dejavu_tab_sleep_after_minutes">
         <item quantity="one">پس از %d دقیقه بدون استفاده</item>
@@ -510,9 +510,9 @@
     <string name="dejavu_welcome_ads_title">تبلیغات هم مسدود شوند؟</string>
     <string name="dejavu_welcome_ads_text">Dejavu همیشه ردیاب‌ها را مسدود می‌کند. uBlock Origin، یک افزونهٔ رایگان، می‌تواند تبلیغات را هم حذف کند.</string>
     <string name="dejavu_welcome_ads_block">مسدود کردن تبلیغات و ردیاب‌ها</string>
-    <string name="dejavu_welcome_ads_block_summary">uBlock Origin را اضافه می‌کند.</string>
+    <string name="dejavu_welcome_ads_block_summary">uBlock Origin را اضافه می‌کند. صفحه‌ها حدود ۰٫۲ ثانیه دیرتر نمایش داده می‌شوند.</string>
     <string name="dejavu_welcome_ads_allow">فقط مسدود کردن ردیاب‌ها</string>
-    <string name="dejavu_welcome_ads_allow_summary">صفحه‌ها تبلیغات خودشان را نشان می‌دهند.</string>
+    <string name="dejavu_welcome_ads_allow_summary">صفحه‌ها تبلیغات خودشان را نشان می‌دهند، بدون هیچ تأخیری.</string>
     <string name="dejavu_welcome_default_title">Dejavu را مرورگر پیش‌فرض خود کنید</string>
     <string name="dejavu_welcome_default_text">پیوندهایی که در برنامه‌های دیگر رویشان ضربه می‌زنید، در Dejavu باز می‌شوند.</string>
     <string name="dejavu_welcome_default_done">Dejavu مرورگر پیش‌فرض شماست.</string>

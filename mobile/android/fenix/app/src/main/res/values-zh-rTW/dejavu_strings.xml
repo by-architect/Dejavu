@@ -237,7 +237,7 @@
     <string name="dejavu_history_other_pages">其他網頁</string>
     <string name="dejavu_settings_tab_sleep">分頁休眠</string>
     <string name="dejavu_settings_tab_sleep_summary">讓未使用的分頁休眠以釋放記憶體</string>
-    <string name="dejavu_tab_sleep_hint">休眠的分頁會釋放其記憶體，並在您開啟時重新載入網頁。您正在檢視的分頁、分割畫面中相鄰的分頁，以及正在播放聲音或使用攝影機或麥克風的分頁會保持喚醒。當 Dejavu 在背景執行而 Android 需要記憶體時，除了您最後使用的兩個分頁外，所有分頁都會休眠。</string>
+    <string name="dejavu_tab_sleep_hint">休眠的分頁會釋放其記憶體，並在您開啟時重新載入網頁。您正在檢視的分頁、分割畫面中相鄰的分頁，以及正在播放聲音或使用攝影機或麥克風的分頁會保持喚醒。當您關閉 Dejavu 或 Android 記憶體不足時，除了您最後使用的兩個分頁外，所有分頁都會休眠。切換到其他應用程式時，分頁會保持喚醒。</string>
     <string name="dejavu_tab_sleep_when">何時讓分頁休眠</string>
     <plurals name="dejavu_tab_sleep_after_minutes">
         <item quantity="other">%d 分鐘未使用後</item>
@@ -502,9 +502,9 @@
     <string name="dejavu_welcome_ads_title">也要封鎖廣告嗎？</string>
     <string name="dejavu_welcome_ads_text">Dejavu 一律會封鎖追蹤器。免費附加元件 uBlock Origin 還能移除廣告。</string>
     <string name="dejavu_welcome_ads_block">封鎖廣告與追蹤器</string>
-    <string name="dejavu_welcome_ads_block_summary">會新增 uBlock Origin。</string>
+    <string name="dejavu_welcome_ads_block_summary">會新增 uBlock Origin。網頁會延遲約 0.2 秒顯示。</string>
     <string name="dejavu_welcome_ads_allow">僅封鎖追蹤器</string>
-    <string name="dejavu_welcome_ads_allow_summary">網頁會顯示自己的廣告。</string>
+    <string name="dejavu_welcome_ads_allow_summary">網頁會顯示自己的廣告，沒有延遲。</string>
     <string name="dejavu_welcome_default_title">將 Dejavu 設為預設瀏覽器</string>
     <string name="dejavu_welcome_default_text">在其他應用程式中點擊的連結，會在 Dejavu 中開啟。</string>
     <string name="dejavu_welcome_default_done">Dejavu 已是您的預設瀏覽器。</string>

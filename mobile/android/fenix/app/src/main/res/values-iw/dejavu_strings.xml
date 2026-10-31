@@ -239,7 +239,7 @@
     <string name="dejavu_history_other_pages">דפים אחרים</string>
     <string name="dejavu_settings_tab_sleep">לשוניות רדומות</string>
     <string name="dejavu_settings_tab_sleep_summary">לשוניות שאינכם משתמשים בהן נרדמות כדי לפנות זיכרון</string>
-    <string name="dejavu_tab_sleep_hint">לשונית רדומה מפנה את הזיכרון שלה וטוענת את הדף שלה מחדש כשפותחים אותה. הלשונית שבה אתם צופים, זו שלידה בתצוגה מפוצלת ולשוניות שמשמיעות צליל או משתמשות במצלמה או במיקרופון נשארות ערות. כש-Android צריך זיכרון בזמן ש-Dejavu ברקע, כל הלשוניות נרדמות מלבד שתי הלשוניות שבהן השתמשתם לאחרונה.</string>
+    <string name="dejavu_tab_sleep_hint">לשונית רדומה מפנה את הזיכרון שלה וטוענת את הדף שלה מחדש כשפותחים אותה. הלשונית שבה אתם צופים, זו שלידה בתצוגה מפוצלת ולשוניות שמשמיעות צליל או משתמשות במצלמה או במיקרופון נשארות ערות. כשסוגרים את Dejavu או כשאין ל-Android מספיק זיכרון, כל הלשוניות נרדמות מלבד שתי הלשוניות שבהן השתמשתם לאחרונה. מעבר לאפליקציה אחרת משאיר את הלשוניות ערות.</string>
     <string name="dejavu_tab_sleep_when">הרדמת לשונית</string>
     <plurals name="dejavu_tab_sleep_after_minutes">
         <item quantity="one">אחרי %d דקה ללא שימוש</item>
@@ -518,9 +518,9 @@
     <string name="dejavu_welcome_ads_title">לחסום גם פרסומות?</string>
     <string name="dejavu_welcome_ads_text">Dejavu תמיד חוסם רכיבי מעקב. uBlock Origin, הרחבה חינמית, יכולה להסיר גם פרסומות.</string>
     <string name="dejavu_welcome_ads_block">חסימת פרסומות ורכיבי מעקב</string>
-    <string name="dejavu_welcome_ads_block_summary">הוספת uBlock Origin.</string>
+    <string name="dejavu_welcome_ads_block_summary">הוספת uBlock Origin. דפים מוצגים כ-0.2 שניות מאוחר יותר.</string>
     <string name="dejavu_welcome_ads_allow">חסימת רכיבי מעקב בלבד</string>
-    <string name="dejavu_welcome_ads_allow_summary">דפים מציגים את הפרסומות שלהם.</string>
+    <string name="dejavu_welcome_ads_allow_summary">דפים מציגים את הפרסומות שלהם, ללא עיכוב.</string>
     <string name="dejavu_welcome_default_title">הגדירו את Dejavu כדפדפן ברירת המחדל שלכם</string>
     <string name="dejavu_welcome_default_text">קישורים שתקישו עליהם באפליקציות אחרות ייפתחו בדפדפן Dejavu.</string>
     <string name="dejavu_welcome_default_done">Dejavu הוא דפדפן ברירת המחדל שלכם.</string>

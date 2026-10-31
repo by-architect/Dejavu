@@ -240,7 +240,7 @@
     <string name="dejavu_history_other_pages">Druge boki</string>
     <string name="dejavu_settings_tab_sleep">Rejtariki w spanju</string>
     <string name="dejavu_settings_tab_sleep_summary">Rejtariki, kótarež njewužywaš, du do spanja, aby skład pušćili</string>
-    <string name="dejavu_tab_sleep_hint">Rejtarik w spanju pušćijo swój skład a zacytajo swój bok znowego, gaž jen wócynjaš. Rejtarik, kótaryž se woglědujoš, rejtarik pódla njogo w źělonem naglědźe a rejtariki, kótarež zuk wótgrawaju abo kameru abo mikrofon wužywaju, njedu do spanja. Gaž Android skład trjeba, mjaztym až Dejavu jo w slězynje, du wšykne rejtariki do spanja, mimo teju dweju, kótarejž sy ako slědnej wužywał.</string>
+    <string name="dejavu_tab_sleep_hint">Rejtarik w spanju pušćijo swój skład a zacytajo swój bok znowego, gaž jen wócynjaš. Rejtarik, kótaryž se woglědujoš, rejtarik pódla njogo w źělonem naglědźe a rejtariki, kótarež zuk wótgrawaju abo kameru abo mikrofon wužywaju, njedu do spanja. Gaž Dejavu zacynjaš abo Android ma mało składa, du wšykne rejtariki do spanja, mimo teju dweju, kótarejž sy ako slědnej wužywał. Gaž drugie nałoženje wócynjaš, njedu do spanja.</string>
     <string name="dejavu_tab_sleep_when">Rejtarik uspaś</string>
     <plurals name="dejavu_tab_sleep_after_minutes">
         <item quantity="one">Pó %d minuśe bźez wužywanja</item>
@@ -526,9 +526,9 @@
     <string name="dejavu_welcome_ads_title">Teke wabjenje blokěrowaś?</string>
     <string name="dejavu_welcome_ads_text">Dejavu pśecej blokěrujo pśeslědowaki. Dermotny dodank uBlock Origin móžo teke wabjenje wótpóraś.</string>
     <string name="dejavu_welcome_ads_block">Wabjenje a pśeslědowaki blokěrowaś</string>
-    <string name="dejavu_welcome_ads_block_summary">Pśidawa uBlock Origin.</string>
+    <string name="dejavu_welcome_ads_block_summary">Pśidawa uBlock Origin. Boki se pokazuju něźi 0,2 s pózdźej.</string>
     <string name="dejavu_welcome_ads_allow">Jano pśeslědowaki blokěrowaś</string>
-    <string name="dejavu_welcome_ads_allow_summary">Boki pokazuju swójo wabjenje.</string>
+    <string name="dejavu_welcome_ads_allow_summary">Boki pokazuju swójo wabjenje, bźez cakanja.</string>
     <string name="dejavu_welcome_default_title">Nastaj Dejavu ako swój standardny wobglědowak</string>
     <string name="dejavu_welcome_default_text">Wótkaze, na kótarež w drugich nałoženjach tłocyš, se w Dejavu wócynjaju.</string>
     <string name="dejavu_welcome_default_done">Dejavu jo twój standardny wobglědowak.</string>

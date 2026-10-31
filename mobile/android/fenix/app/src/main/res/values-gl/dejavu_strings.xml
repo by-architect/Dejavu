@@ -238,7 +238,7 @@
     <string name="dejavu_history_other_pages">Outras páxinas</string>
     <string name="dejavu_settings_tab_sleep">Lapelas durmidas</string>
     <string name="dejavu_settings_tab_sleep_summary">As lapelas que non usas dormen para liberar memoria</string>
-    <string name="dejavu_tab_sleep_hint">Unha lapela durmida libera a súa memoria e volve cargar a súa páxina cando a abres. A lapela que estás a ver, a que está ao seu carón na vista dividida e as lapelas que reproducen son ou usan a cámara ou o micrófono seguen espertas. Cando Android precisa memoria mentres Dejavu está en segundo plano, todas as lapelas agás as dúas últimas que usaches pasan a durmir.</string>
+    <string name="dejavu_tab_sleep_hint">Unha lapela durmida libera a súa memoria e volve cargar a súa páxina cando a abres. A lapela que estás a ver, a que está ao seu carón na vista dividida e as lapelas que reproducen son ou usan a cámara ou o micrófono seguen espertas. Cando pechas Dejavu ou Android ten pouca memoria, todas as lapelas agás as dúas últimas que usaches pasan a durmir. Se cambias a outra aplicación, as lapelas seguen espertas.</string>
     <string name="dejavu_tab_sleep_when">Poñer unha lapela a durmir</string>
     <plurals name="dejavu_tab_sleep_after_minutes">
         <item quantity="one">Despois de %d minuto sen uso</item>
@@ -510,9 +510,9 @@
     <string name="dejavu_welcome_ads_title">Bloquear tamén os anuncios?</string>
     <string name="dejavu_welcome_ads_text">Dejavu sempre bloquea os rastrexadores. uBlock Origin, un complemento gratuíto, tamén pode eliminar os anuncios.</string>
     <string name="dejavu_welcome_ads_block">Bloquear anuncios e rastrexadores</string>
-    <string name="dejavu_welcome_ads_block_summary">Engade uBlock Origin.</string>
+    <string name="dejavu_welcome_ads_block_summary">Engade uBlock Origin. As páxinas aparecen uns 0,2 s máis tarde.</string>
     <string name="dejavu_welcome_ads_allow">Bloquear só os rastrexadores</string>
-    <string name="dejavu_welcome_ads_allow_summary">As páxinas amosan os seus anuncios.</string>
+    <string name="dejavu_welcome_ads_allow_summary">As páxinas amosan os seus anuncios, sen demora.</string>
     <string name="dejavu_welcome_default_title">Fai de Dejavu o teu navegador predeterminado</string>
     <string name="dejavu_welcome_default_text">As ligazóns que toques noutras aplicacións ábrense en Dejavu.</string>
     <string name="dejavu_welcome_default_done">Dejavu é o teu navegador predeterminado.</string>

@@ -238,7 +238,7 @@
     <string name="dejavu_history_other_pages">Altere paginas</string>
     <string name="dejavu_settings_tab_sleep">Schedas addormite</string>
     <string name="dejavu_settings_tab_sleep_summary">Le schedas que tu non usa se addormi pro liberar memoria</string>
-    <string name="dejavu_tab_sleep_hint">Un scheda addormite libera su memoria e recarga su pagina quando tu lo aperi. Le scheda que tu reguarda, illo a su latere in le vista divise e le schedas que reproduce sono o usa le camera o le microphono resta active. Quando Android besonia de memoria durante que Dejavu es in secunde plano, tote le schedas excepte le duo que tu ha usate le ultime se addormi.</string>
+    <string name="dejavu_tab_sleep_hint">Un scheda addormite libera su memoria e recarga su pagina quando tu lo aperi. Le scheda que tu reguarda, illo a su latere in le vista divise e le schedas que reproduce sono o usa le camera o le microphono resta active. Quando tu claude Dejavu o Android ha pauc memoria, tote le schedas excepte le duo que tu ha usate le ultime se addormi. Si tu passa a un altere app, le schedas resta active.</string>
     <string name="dejavu_tab_sleep_when">Addormir un scheda</string>
     <plurals name="dejavu_tab_sleep_after_minutes">
         <item quantity="one">Post %d minuta sin uso</item>
@@ -510,9 +510,9 @@
     <string name="dejavu_welcome_ads_title">Blocar etiam le annuncios?</string>
     <string name="dejavu_welcome_ads_text">Dejavu bloca semper le traciatores. uBlock Origin, un extension gratuite, pote etiam remover le annuncios.</string>
     <string name="dejavu_welcome_ads_block">Blocar annuncios e traciatores</string>
-    <string name="dejavu_welcome_ads_block_summary">Adde uBlock Origin.</string>
+    <string name="dejavu_welcome_ads_block_summary">Adde uBlock Origin. Le paginas appare circa 0,2 s plus tarde.</string>
     <string name="dejavu_welcome_ads_allow">Blocar solmente traciatores</string>
-    <string name="dejavu_welcome_ads_allow_summary">Le paginas monstra lor annuncios.</string>
+    <string name="dejavu_welcome_ads_allow_summary">Le paginas monstra lor annuncios, sin retardo.</string>
     <string name="dejavu_welcome_default_title">Face de Dejavu tu navigator predefinite</string>
     <string name="dejavu_welcome_default_text">Le ligamines que tu pulsa in altere apps se aperi in Dejavu.</string>
     <string name="dejavu_welcome_default_done">Dejavu es tu navigator predefinite.</string>

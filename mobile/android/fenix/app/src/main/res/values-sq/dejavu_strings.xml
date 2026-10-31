@@ -238,7 +238,7 @@
     <string name="dejavu_history_other_pages">Faqe të tjera</string>
     <string name="dejavu_settings_tab_sleep">Skeda të pezulluara</string>
     <string name="dejavu_settings_tab_sleep_summary">Skedat që s\'i përdorni pezullohen, për të liruar kujtesë</string>
-    <string name="dejavu_tab_sleep_hint">Një skedë e pezulluar liron kujtesën e saj dhe e ringarkon faqen kur e hapni. Skeda që po shihni, ajo pranë saj në pamje të ndarë dhe skedat që luajnë zë ose përdorin kamerën apo mikrofonin nuk pezullohen. Kur sistemi Android ka nevojë për kujtesë, teksa Dejavu është në prapaskenë, pezullohen krejt skedat, hiq dy të fundit që keni përdorur.</string>
+    <string name="dejavu_tab_sleep_hint">Një skedë e pezulluar liron kujtesën e saj dhe e ringarkon faqen kur e hapni. Skeda që po shihni, ajo pranë saj në pamje të ndarë dhe skedat që luajnë zë ose përdorin kamerën apo mikrofonin nuk pezullohen. Kur mbyllni Dejavu-n ose sistemi Android ka pak kujtesë, pezullohen krejt skedat, hiq dy të fundit që keni përdorur. Kalimi te një aplikacion tjetër nuk i pezullon.</string>
     <string name="dejavu_tab_sleep_when">Kur të pezullohet një skedë</string>
     <plurals name="dejavu_tab_sleep_after_minutes">
         <item quantity="one">Pas %d minute pa përdorim</item>
@@ -510,9 +510,9 @@
     <string name="dejavu_welcome_ads_title">Të bllokohen edhe reklamat?</string>
     <string name="dejavu_welcome_ads_text">Dejavu bllokon përherë gjurmuesit. uBlock Origin, një shtesë falas, mund të heqë edhe reklamat.</string>
     <string name="dejavu_welcome_ads_block">Blloko reklama dhe gjurmues</string>
-    <string name="dejavu_welcome_ads_block_summary">Shton uBlock Origin.</string>
+    <string name="dejavu_welcome_ads_block_summary">Shton uBlock Origin. Faqet shfaqen rreth 0,2 s më vonë.</string>
     <string name="dejavu_welcome_ads_allow">Blloko vetëm gjurmues</string>
-    <string name="dejavu_welcome_ads_allow_summary">Faqet shfaqin reklamat e tyre.</string>
+    <string name="dejavu_welcome_ads_allow_summary">Faqet shfaqin reklamat e tyre, pa vonesë.</string>
     <string name="dejavu_welcome_default_title">Bëjeni Dejavu-n shfletuesin tuaj parazgjedhje</string>
     <string name="dejavu_welcome_default_text">Lidhjet që prekni në aplikacione të tjera hapen në Dejavu.</string>
     <string name="dejavu_welcome_default_done">Dejavu është shfletuesi juaj parazgjedhje.</string>

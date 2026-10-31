@@ -240,7 +240,7 @@
     <string name="dejavu_history_other_pages">Druge strani</string>
     <string name="dejavu_settings_tab_sleep">Speči zavihki</string>
     <string name="dejavu_settings_tab_sleep_summary">Zavihki, ki jih ne uporabljate, zaspijo in sprostijo pomnilnik</string>
-    <string name="dejavu_tab_sleep_hint">Speči zavihek sprosti svoj pomnilnik in ob odprtju znova naloži svojo stran. Zavihek, ki ga gledate, zavihek ob njem v razdeljenem pogledu in zavihki, ki predvajajo zvok ali uporabljajo kamero ali mikrofon, ostanejo budni. Ko Android potrebuje pomnilnik, medtem ko je Dejavu v ozadju, zaspijo vsi zavihki razen dveh, ki ste ju nazadnje uporabljali.</string>
+    <string name="dejavu_tab_sleep_hint">Speči zavihek sprosti svoj pomnilnik in ob odprtju znova naloži svojo stran. Zavihek, ki ga gledate, zavihek ob njem v razdeljenem pogledu in zavihki, ki predvajajo zvok ali uporabljajo kamero ali mikrofon, ostanejo budni. Ko zaprete Dejavu ali ima Android premalo pomnilnika, zaspijo vsi zavihki razen dveh, ki ste ju nazadnje uporabljali. Ob preklopu na drugo aplikacijo ostanejo budni.</string>
     <string name="dejavu_tab_sleep_when">Uspavaj zavihke</string>
     <plurals name="dejavu_tab_sleep_after_minutes">
         <item quantity="one">Po %d minuti brez uporabe</item>
@@ -526,9 +526,9 @@
     <string name="dejavu_welcome_ads_title">Želite zavračati tudi oglase?</string>
     <string name="dejavu_welcome_ads_text">Dejavu vedno zavrača sledilce. uBlock Origin, brezplačna razširitev, lahko odstrani tudi oglase.</string>
     <string name="dejavu_welcome_ads_block">Zavrni oglase in sledilce</string>
-    <string name="dejavu_welcome_ads_block_summary">Doda uBlock Origin.</string>
+    <string name="dejavu_welcome_ads_block_summary">Doda uBlock Origin. Strani se prikažejo približno 0,2 s pozneje.</string>
     <string name="dejavu_welcome_ads_allow">Zavrni samo sledilce</string>
-    <string name="dejavu_welcome_ads_allow_summary">Strani prikazujejo svoje oglase.</string>
+    <string name="dejavu_welcome_ads_allow_summary">Strani prikazujejo svoje oglase, brez zakasnitve.</string>
     <string name="dejavu_welcome_default_title">Nastavite Dejavu kot privzeti brskalnik</string>
     <string name="dejavu_welcome_default_text">Povezave, ki se jih dotaknete v drugih aplikacijah, se odprejo v Dejavuju.</string>
     <string name="dejavu_welcome_default_done">Dejavu je vaš privzeti brskalnik.</string>

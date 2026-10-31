@@ -238,7 +238,7 @@
     <string name="dejavu_history_other_pages">Altre pagine</string>
     <string name="dejavu_settings_tab_sleep">Schede sospese</string>
     <string name="dejavu_settings_tab_sleep_summary">Le schede che non usi vengono sospese per liberare memoria</string>
-    <string name="dejavu_tab_sleep_hint">Una scheda sospesa libera la sua memoria e ricarica la pagina quando la apri. La scheda che stai guardando, quella accanto in vista divisa e le schede che riproducono audio o usano la fotocamera o il microfono restano attive. Quando Android ha bisogno di memoria mentre Dejavu è in background, tutte le schede tranne le ultime due che hai usato vengono sospese.</string>
+    <string name="dejavu_tab_sleep_hint">Una scheda sospesa libera la sua memoria e ricarica la pagina quando la apri. La scheda che stai guardando, quella accanto in vista divisa e le schede che riproducono audio o usano la fotocamera o il microfono restano attive. Quando chiudi Dejavu o Android è a corto di memoria, tutte le schede tranne le ultime due che hai usato vengono sospese. Se passi a un’altra app, le schede restano attive.</string>
     <string name="dejavu_tab_sleep_when">Sospendi una scheda</string>
     <plurals name="dejavu_tab_sleep_after_minutes">
         <item quantity="one">Dopo %d minuto senza utilizzo</item>
@@ -510,9 +510,9 @@
     <string name="dejavu_welcome_ads_title">Bloccare anche la pubblicità?</string>
     <string name="dejavu_welcome_ads_text">Dejavu blocca sempre i traccianti. uBlock Origin, un’estensione gratuita, può rimuovere anche la pubblicità.</string>
     <string name="dejavu_welcome_ads_block">Blocca pubblicità e traccianti</string>
-    <string name="dejavu_welcome_ads_block_summary">Aggiunge uBlock Origin.</string>
+    <string name="dejavu_welcome_ads_block_summary">Aggiunge uBlock Origin. Le pagine compaiono circa 0,2 s più tardi.</string>
     <string name="dejavu_welcome_ads_allow">Blocca solo i traccianti</string>
-    <string name="dejavu_welcome_ads_allow_summary">Le pagine mostrano la loro pubblicità.</string>
+    <string name="dejavu_welcome_ads_allow_summary">Le pagine mostrano la loro pubblicità, senza ritardi.</string>
     <string name="dejavu_welcome_default_title">Imposta Dejavu come browser predefinito</string>
     <string name="dejavu_welcome_default_text">I link che tocchi in altre app si aprono in Dejavu.</string>
     <string name="dejavu_welcome_default_done">Dejavu è il tuo browser predefinito.</string>

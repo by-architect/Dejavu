@@ -238,7 +238,7 @@
     <string name="dejavu_history_other_pages">Autras paginas</string>
     <string name="dejavu_settings_tab_sleep">Onglets en velha</string>
     <string name="dejavu_settings_tab_sleep_summary">Los onglets qu’utilizatz pas son meses en velha per liberar de memòria</string>
-    <string name="dejavu_tab_sleep_hint">Un onglet en velha libèra sa memòria e torna cargar sa pagina quand lo dobrissètz. L’onglet que gaitatz, lo que se tròba al costat en vista dividida e los onglets que difusan de son o qu’utilizan la camèra o lo microfòn demòran actius. Quand Android a besonh de memòria mentre que Dejavu es en rèireplan, totes los onglets levat los dos darrièrs qu’avètz utilizats son meses en velha.</string>
+    <string name="dejavu_tab_sleep_hint">Un onglet en velha libèra sa memòria e torna cargar sa pagina quand lo dobrissètz. L’onglet que gaitatz, lo que se tròba al costat en vista dividida e los onglets que difusan de son o qu’utilizan la camèra o lo microfòn demòran actius. Quand tampatz Dejavu o qu’Android a pas pro de memòria, totes los onglets levat los dos darrièrs qu’avètz utilizats son meses en velha. Se passatz a una autra aplicacion, los onglets demòran actius.</string>
     <string name="dejavu_tab_sleep_when">Metre un onglet en velha</string>
     <plurals name="dejavu_tab_sleep_after_minutes">
         <item quantity="one">Aprèp %d minuta sens utilizacion</item>
@@ -510,9 +510,9 @@
     <string name="dejavu_welcome_ads_title">Blocar tanben la publicitat ?</string>
     <string name="dejavu_welcome_ads_text">Dejavu bloca totjorn los traçadors. uBlock Origin, una extension gratuita, pòt tanben suprimir la publicitat.</string>
     <string name="dejavu_welcome_ads_block">Blocar la publicitat e los traçadors</string>
-    <string name="dejavu_welcome_ads_block_summary">Apond uBlock Origin.</string>
+    <string name="dejavu_welcome_ads_block_summary">Apond uBlock Origin. Las paginas apareisson environ 0,2 s mai tard.</string>
     <string name="dejavu_welcome_ads_allow">Blocar sonque los traçadors</string>
-    <string name="dejavu_welcome_ads_allow_summary">Las paginas afichan lor publicitat.</string>
+    <string name="dejavu_welcome_ads_allow_summary">Las paginas afichan lor publicitat, sens retard.</string>
     <string name="dejavu_welcome_default_title">Fasètz de Dejavu vòstre navegador per defaut</string>
     <string name="dejavu_welcome_default_text">Los ligams que tocatz dins d’autras aplicacions se dobrisson dins Dejavu.</string>
     <string name="dejavu_welcome_default_done">Dejavu es vòstre navegador per defaut.</string>

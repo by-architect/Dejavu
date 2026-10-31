@@ -237,7 +237,7 @@
     <string name="dejavu_history_other_pages">lipu ante</string>
     <string name="dejavu_settings_tab_sleep">poki lape</string>
     <string name="dejavu_settings_tab_sleep_summary">poki pi kepeken ala li lape tawa ni: ilo li jo e ma sona mute</string>
-    <string name="dejavu_tab_sleep_hint">poki lape li weka e ma sona ona. sina open e ona la ona li open sin e lipu ona. poki pi lukin sina, poki pi poka ona lon lukin tu, en poki pi kalama anu poki pi kepeken ilo lukin anu ilo kute li lape ala. ilo Android li wile e ma sona lon tenpo pi ilo Dejavu lon monsi la poki ale li lape. taso poki tu pi kepeken sina pini li lape ala.</string>
+    <string name="dejavu_tab_sleep_hint">poki lape li weka e ma sona ona. sina open e ona la ona li open sin e lipu ona. poki pi lukin sina, poki pi poka ona lon lukin tu, en poki pi kalama anu poki pi kepeken ilo lukin anu ilo kute li lape ala. poki ale li lape lon tenpo ni: sina pini e ilo Dejavu, anu ilo Android li jo ala e ma sona mute. taso poki tu pi kepeken sina pini li lape ala. sina tawa ilo ante la poki li lape ala.</string>
     <string name="dejavu_tab_sleep_when">o lape e poki</string>
     <plurals name="dejavu_tab_sleep_after_minutes">
         <item quantity="other">lon tenpo lili %d pi kepeken ala</item>
@@ -502,9 +502,9 @@
     <string name="dejavu_welcome_ads_title">toki esun kin li pini anu seme?</string>
     <string name="dejavu_welcome_ads_text">ilo Dejavu li pini e ilo pi alasa jan lon tenpo ale. ilo namako uBlock Origin li wile ala e mani, li ken weka e toki esun kin.</string>
     <string name="dejavu_welcome_ads_block">o pini e toki esun e ilo pi alasa jan</string>
-    <string name="dejavu_welcome_ads_block_summary">ni li pana e ilo uBlock Origin.</string>
+    <string name="dejavu_welcome_ads_block_summary">ni li pana e ilo uBlock Origin. lipu li wile e tenpo namako lili, sama 0.2 s.</string>
     <string name="dejavu_welcome_ads_allow">o pini e ilo pi alasa jan taso</string>
-    <string name="dejavu_welcome_ads_allow_summary">lipu li pana lukin e toki esun ona.</string>
+    <string name="dejavu_welcome_ads_allow_summary">lipu li pana lukin e toki esun ona. tenpo namako li lon ala.</string>
     <string name="dejavu_welcome_default_title">o open e lipu ale kepeken ilo Dejavu</string>
     <string name="dejavu_welcome_default_text">sina luka e nasin lipu lon ilo ante la, ona li open lon ilo Dejavu.</string>
     <string name="dejavu_welcome_default_done">ilo Dejavu li open e lipu ale sina.</string>

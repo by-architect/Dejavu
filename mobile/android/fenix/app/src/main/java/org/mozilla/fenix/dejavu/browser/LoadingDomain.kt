@@ -4,12 +4,11 @@
 
 package org.mozilla.fenix.dejavu.browser
 
-import androidx.compose.animation.core.Animatable
-import androidx.compose.animation.core.LinearEasing
-import androidx.compose.animation.core.tween
+import androidx.compose.animation.core.FastOutSlowInEasing
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
+import androidx.compose.runtime.mutableFloatStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.drawWithCache
@@ -26,13 +25,14 @@ import androidx.compose.ui.text.TextLayoutResult
 import androidx.compose.ui.unit.dp
 import kotlin.math.max
 import kotlin.math.min
+import kotlin.math.roundToInt
 import kotlinx.coroutines.delay
-import kotlinx.coroutines.launch
 
 private const val SWEEP_MS = 1_400
 
 // The band steps on about 30 times a second, which looks the same as every frame for a fraction of the work, and comes
-// to rest after a while, so a page that keeps loading does not keep the phone busy.
+// to rest after a while, so a page that keeps loading does not keep the phone busy. The colors fade in and out in the
+// same steps.
 private const val STEP_MS = 33L
 private const val RUN_MS = 8_000L
 private const val FADE_IN_MS = 220
@@ -62,39 +62,44 @@ internal fun Modifier.loadingColors(
     loading: Boolean,
     range: (() -> ClosedFloatingPointRange<Float>?)? = null,
 ): Modifier {
-    val shown = remember { Animatable(if (loading) 1f else 0f) }
-    val sweep = remember { Animatable(0f) }
+    val shown = remember { mutableFloatStateOf(if (loading) 1f else 0f) }
+    val sweep = remember { mutableFloatStateOf(0f) }
     LaunchedEffect(loading) {
+        val from = shown.floatValue
         if (!loading) {
-            // The colors keep running while they fade.
-            val runOn = launch {
-                val further = sweep.value + FADE_OUT_MS.toFloat() / SWEEP_MS
-                sweep.animateTo(further, tween(FADE_OUT_MS, easing = LinearEasing))
+            // The colors keep running while they fade, which takes less from a page that came in before they showed.
+            val steps = (from * FADE_OUT_MS / STEP_MS).roundToInt()
+            for (step in 1..steps) {
+                delay(STEP_MS)
+                sweep.floatValue += STEP_MS.toFloat() / SWEEP_MS
+                shown.floatValue = from * (1f - FastOutSlowInEasing.transform(step.toFloat() / steps))
             }
-            shown.animateTo(0f, tween(FADE_OUT_MS))
-            runOn.cancel()
-            sweep.snapTo(0f)
+            shown.floatValue = 0f
+            sweep.floatValue = 0f
             return@LaunchedEffect
         }
-        launch { shown.animateTo(1f, tween(FADE_IN_MS)) }
-        repeat((RUN_MS / STEP_MS).toInt()) {
+        val fadeSteps = (FADE_IN_MS / STEP_MS).toInt()
+        repeat((RUN_MS / STEP_MS).toInt()) { step ->
             delay(STEP_MS)
-            sweep.snapTo(sweep.value + STEP_MS.toFloat() / SWEEP_MS)
+            sweep.floatValue += STEP_MS.toFloat() / SWEEP_MS
+            if (step < fadeSteps) {
+                shown.floatValue = from + (1f - from) * FastOutSlowInEasing.transform((step + 1f) / fadeSteps)
+            }
         }
     }
     val colors = if (MaterialTheme.colorScheme.surface.luminance() < HALF) DarkColors else LightColors
     return this
         .graphicsLayer {
             // Offscreen, the colors only take the place of the letters, not of what lies behind them.
-            compositingStrategy = if (shown.value > 0f) CompositingStrategy.Offscreen else CompositingStrategy.Auto
+            compositingStrategy = if (shown.floatValue > 0f) CompositingStrategy.Offscreen else CompositingStrategy.Auto
         }
         .drawWithCache {
             val band = max(size.width, MinBand.toPx())
             onDrawWithContent {
                 drawContent()
-                val alpha = shown.value
+                val alpha = shown.floatValue
                 if (alpha <= 0f) return@onDrawWithContent
-                val start = sweep.value % 1f * band
+                val start = sweep.floatValue % 1f * band
                 val brush = Brush.linearGradient(
                     colors = colors,
                     start = Offset(start - band, 0f),

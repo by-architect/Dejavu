@@ -77,6 +77,7 @@ import kotlinx.coroutines.CompletableDeferred
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withTimeoutOrNull
+import mozilla.components.browser.state.action.EngineAction
 import mozilla.components.browser.state.selector.findTab
 import mozilla.components.concept.base.images.ImageLoadRequest
 import mozilla.components.lib.state.ext.observeAsComposableState
@@ -158,7 +159,8 @@ internal object TabZoom {
 
     /**
      * Opens the tab with [tabId] from its row on the home screen of [activity]: grows a picture of its page out of the
-     * row until it fills the screen, then shows the browser with [open]. Without a row on screen it just opens.
+     * row until it fills the screen, then shows the browser with [open]. Without a row on screen it just opens. A
+     * sleeping tab starts loading its page as the zoom starts, rather than once the browser shows it.
      */
     fun zoomIn(activity: Activity, tabId: String, open: () -> Unit) {
         val content = activity.findViewById<ViewGroup>(android.R.id.content)
@@ -166,6 +168,10 @@ internal object TabZoom {
         if (content == null || row == null || isZooming) {
             open()
             return
+        }
+        val store = activity.components.core.store
+        if (store.state.findTab(tabId)?.engineState?.engineSession == null) {
+            store.dispatch(EngineAction.CreateEngineSessionAction(tabId))
         }
         val known = lastPicture?.takeIf { it.tabId == tabId }
         val owner = activity as? LifecycleOwner

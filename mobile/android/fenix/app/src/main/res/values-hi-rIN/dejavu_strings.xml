@@ -294,7 +294,7 @@
     <string name="dejavu_history_other_pages">दूसरे पेज</string>
     <string name="dejavu_settings_tab_sleep">स्लीप मोड वाले टैब</string>
     <string name="dejavu_settings_tab_sleep_summary">जिन टैब का आप इस्तेमाल नहीं कर रहे, वे मेमोरी खाली करने के लिए स्लीप मोड में चले जाते हैं</string>
-    <string name="dejavu_tab_sleep_hint">स्लीप मोड वाला टैब अपनी मेमोरी खाली कर देता है और जब आप उसे खोलते हैं, तो उसका पेज फिर से लोड होता है। जिस टैब को आप देख रहे हैं, स्प्लिट व्यू में उसके बगल वाला टैब, और आवाज़ चलाने वाले या कैमरा या माइक्रोफ़ोन इस्तेमाल करने वाले टैब चालू रहते हैं। जब Dejavu बैकग्राउंड में हो और Android को मेमोरी की ज़रूरत हो, तो आपके आखिरी बार इस्तेमाल किए गए दो टैब को छोड़कर बाकी सभी टैब स्लीप मोड में चले जाते हैं।</string>
+    <string name="dejavu_tab_sleep_hint">स्लीप मोड वाला टैब अपनी मेमोरी खाली कर देता है और जब आप उसे खोलते हैं, तो उसका पेज फिर से लोड होता है। जिस टैब को आप देख रहे हैं, स्प्लिट व्यू में उसके बगल वाला टैब, और आवाज़ चलाने वाले या कैमरा या माइक्रोफ़ोन इस्तेमाल करने वाले टैब चालू रहते हैं। जब आप Dejavu बंद करते हैं या Android की मेमोरी कम पड़ने लगती है, तो आपके आखिरी बार इस्तेमाल किए गए दो टैब को छोड़कर बाकी सभी टैब स्लीप मोड में चले जाते हैं। किसी दूसरे ऐप पर जाने पर टैब चालू रहते हैं।</string>
     <string name="dejavu_tab_sleep_when">टैब को स्लीप मोड में डालें</string>
     <plurals name="dejavu_tab_sleep_after_minutes">
         <item quantity="one">%d मिनट तक इस्तेमाल न होने पर</item>
@@ -543,9 +543,9 @@
     <string name="dejavu_welcome_ads_title">विज्ञापन भी ब्लॉक करें?</string>
     <string name="dejavu_welcome_ads_text">Dejavu हमेशा ट्रैकर ब्लॉक करता है। uBlock Origin, एक मुफ़्त एक्सटेंशन, विज्ञापन भी हटा सकता है।</string>
     <string name="dejavu_welcome_ads_block">विज्ञापन और ट्रैकर ब्लॉक करें</string>
-    <string name="dejavu_welcome_ads_block_summary">uBlock Origin जोड़ता है।</string>
+    <string name="dejavu_welcome_ads_block_summary">uBlock Origin जोड़ता है। पेज लगभग 0.2 सेकंड देर से दिखते हैं।</string>
     <string name="dejavu_welcome_ads_allow">सिर्फ़ ट्रैकर ब्लॉक करें</string>
-    <string name="dejavu_welcome_ads_allow_summary">पेज अपने विज्ञापन दिखाते हैं।</string>
+    <string name="dejavu_welcome_ads_allow_summary">पेज अपने विज्ञापन दिखाते हैं, बिना किसी देरी के।</string>
     <string name="dejavu_welcome_default_title">Dejavu को अपना डिफ़ॉल्ट ब्राउज़र बनाएं</string>
     <string name="dejavu_welcome_default_text">दूसरे ऐप में टैप किए गए लिंक Dejavu में खुलते हैं।</string>
     <string name="dejavu_welcome_default_done">Dejavu आपका डिफ़ॉल्ट ब्राउज़र है।</string>

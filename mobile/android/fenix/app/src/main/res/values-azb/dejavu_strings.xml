@@ -238,7 +238,7 @@
     <string name="dejavu_history_other_pages">باشقا صفحه‌لر</string>
     <string name="dejavu_settings_tab_sleep">یوخوداکی تاغلار</string>
     <string name="dejavu_settings_tab_sleep_summary">ایشلتمه‌دیگینیز تاغلار یادداشی بوشالتماق اوچون یوخویا گئدیر</string>
-    <string name="dejavu_tab_sleep_hint">یوخوداکی تاغ اؤز یادداشینی بوشالدیر و سیز اونو آچاندا صفحه‌سینی یئنیدن یوکله‌ییر. باخدیغینیز تاغ، بؤلونموش گؤرونوشده اونون یانینداکی تاغ و سس چالان یا کامرا یا میکروفوندان ایستیفاده ادن تاغلار اویاق قالیر. Dejavu آرخا پلاندا اولارکن Android-ه یادداش لازیم اولاندا، سون ایشلتدیگینیز ایکی تاغدان باشقا بوتون تاغلار یوخویا گئدیر.</string>
+    <string name="dejavu_tab_sleep_hint">یوخوداکی تاغ اؤز یادداشینی بوشالدیر و سیز اونو آچاندا صفحه‌سینی یئنیدن یوکله‌ییر. باخدیغینیز تاغ، بؤلونموش گؤرونوشده اونون یانینداکی تاغ و سس چالان یا کامرا یا میکروفوندان ایستیفاده ادن تاغلار اویاق قالیر. Dejavu-نو باغلایاندا یا Android-ین یادداشی آزالاندا، سون ایشلتدیگینیز ایکی تاغدان باشقا بوتون تاغلار یوخویا گئدیر. باشقا بیر اپه کئچنده ایسه تاغلار اویاق قالیر.</string>
     <string name="dejavu_tab_sleep_when">تاغی یوخویا قوی</string>
     <plurals name="dejavu_tab_sleep_after_minutes">
         <item quantity="one">%d دقیقه ایشله‌دیلمه‌دیکدن سونرا</item>
@@ -510,9 +510,9 @@
     <string name="dejavu_welcome_ads_title">تبلیغ‌لر ده مسدود اولسون؟</string>
     <string name="dejavu_welcome_ads_text">Dejavu ایزله‌ییجی‌لری همیشه مسدود ائدیر. پولسوز بیر اوزانتی اولان uBlock Origin تبلیغ‌لری ده سیله بیلر.</string>
     <string name="dejavu_welcome_ads_block">تبلیغ‌لری و ایزله‌ییجی‌لری مسدود ائله</string>
-    <string name="dejavu_welcome_ads_block_summary">uBlock Origin اَلاوه اولونور.</string>
+    <string name="dejavu_welcome_ads_block_summary">uBlock Origin اَلاوه اولونور. صفحه‌لر تقریباً 0.2 ثانیه گئج گؤرونور.</string>
     <string name="dejavu_welcome_ads_allow">یالنیز ایزله‌ییجی‌لری مسدود ائله</string>
-    <string name="dejavu_welcome_ads_allow_summary">صفحه‌لر اؤز تبلیغ‌لرینی گؤستریر.</string>
+    <string name="dejavu_welcome_ads_allow_summary">صفحه‌لر اؤز تبلیغ‌لرینی گؤستریر، گئجیکمه اولمور.</string>
     <string name="dejavu_welcome_default_title">Dejavu وارساییلان مورورچونوز اولسون</string>
     <string name="dejavu_welcome_default_text">باشقا اپ‌لرده توخوندوغونوز لینک‌لر Dejavu ایله آچیلیر.</string>
     <string name="dejavu_welcome_default_done">Dejavu وارساییلان مورورچونوزدور.</string>

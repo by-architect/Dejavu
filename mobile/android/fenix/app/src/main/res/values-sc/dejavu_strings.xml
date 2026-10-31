@@ -238,7 +238,7 @@
     <string name="dejavu_history_other_pages">Àteras pàginas</string>
     <string name="dejavu_settings_tab_sleep">Ischedas dormidas</string>
     <string name="dejavu_settings_tab_sleep_summary">Is ischedas chi no impreas si ponent a dormire pro liberare memòria</string>
-    <string name="dejavu_tab_sleep_hint">Un\'ischeda dormida liberat sa memòria sua e torrat a carrigare sa pàgina sua cando l\'aberis. S\'ischeda chi ses castiende, cussa a costadu in sa vista partzida e is ischedas chi sonant o impreant sa fotocàmera o su micròfonu abarrant ischidadas. Cando Android tenet bisòngiu de memòria mentras Dejavu est in s\'isfundu, totu is ischedas francu is ùrtimas duas chi as impreadu si ponent a dormire.</string>
+    <string name="dejavu_tab_sleep_hint">Un\'ischeda dormida liberat sa memòria sua e torrat a carrigare sa pàgina sua cando l\'aberis. S\'ischeda chi ses castiende, cussa a costadu in sa vista partzida e is ischedas chi sonant o impreant sa fotocàmera o su micròfonu abarrant ischidadas. Cando serras Dejavu o Android tenet pagu memòria, totu is ischedas francu is ùrtimas duas chi as impreadu si ponent a dormire. Si passas a un\'àtera aplicatzione, abarrant ischidadas.</string>
     <string name="dejavu_tab_sleep_when">Ponner un\'ischeda a dormire</string>
     <plurals name="dejavu_tab_sleep_after_minutes">
         <item quantity="one">A pustis de %d minutu chene impreu</item>
@@ -510,9 +510,9 @@
     <string name="dejavu_welcome_ads_title">Blocare fintzas sa publitzidade?</string>
     <string name="dejavu_welcome_ads_text">Dejavu blocat semper is elementos de sighidura. uBlock Origin, unu cumplementu gratuitu, podet bogare fintzas sa publitzidade.</string>
     <string name="dejavu_welcome_ads_block">Bloca publitzidade e elementos de sighidura</string>
-    <string name="dejavu_welcome_ads_block_summary">Agiunghet uBlock Origin.</string>
+    <string name="dejavu_welcome_ads_block_summary">Agiunghet uBlock Origin. Is pàginas si bident unos 0,2 s prus a tardu.</string>
     <string name="dejavu_welcome_ads_allow">Bloca isceti is elementos de sighidura</string>
-    <string name="dejavu_welcome_ads_allow_summary">Is pàginas ammustrant sa publitzidade issoro.</string>
+    <string name="dejavu_welcome_ads_allow_summary">Is pàginas ammustrant sa publitzidade issoro, chene ritardu.</string>
     <string name="dejavu_welcome_default_title">Faghe de Dejavu su navigadore predefinidu tuo</string>
     <string name="dejavu_welcome_default_text">Is ligàmenes chi pretzionas in àteras aplicatziones si aberint in Dejavu.</string>
     <string name="dejavu_welcome_default_done">Dejavu est su navigadore predefinidu tuo.</string>

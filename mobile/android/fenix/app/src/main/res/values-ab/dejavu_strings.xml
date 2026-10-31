@@ -238,7 +238,7 @@
     <string name="dejavu_history_other_pages">Егьырҭ адаҟьақәа</string>
     <string name="dejavu_settings_tab_sleep">Ицәо абларҭақәа</string>
     <string name="dejavu_settings_tab_sleep_summary">Шәхы иазышәмырхәо абларҭақәа агәынкылара аҭацәразы ицәоит</string>
-    <string name="dejavu_tab_sleep_hint">Ицәо абларҭа агәынкылара аҭацәнатәуеит, насгьы иаашәыртлак адаҟьа даҽазнык иҭанагалоит. Ишәыԥшуа абларҭа, еихшаз аԥшра аҟны уи иавагылоу абларҭа, насгьы абжьы алызго ма акамера ма амикрофон зхы иазырхәо абларҭақәа ицәаӡом. Dejavu аҿаԥшьаҿы ианыҟоу Android агәынкылара анаҭаххалак, иаҵыхәтәантәиз ишәхы иазышәырхәаз абларҭақәа ҩба рыда, абларҭақәа зегьы ицәоит.</string>
+    <string name="dejavu_tab_sleep_hint">Ицәо абларҭа агәынкылара аҭацәнатәуеит, насгьы иаашәыртлак адаҟьа даҽазнык иҭанагалоит. Ишәыԥшуа абларҭа, еихшаз аԥшра аҟны уи иавагылоу абларҭа, насгьы абжьы алызго ма акамера ма амикрофон зхы иазырхәо абларҭақәа ицәаӡом. Dejavu ишәырклак ма Android агәынкылара анаҭаххалак, иаҵыхәтәантәиз ишәхы иазышәырхәаз абларҭақәа ҩба рыда, абларҭақәа зегьы ицәоит. Даҽа апрограммак иаашәыртлак, абларҭақәа ицәаӡом.</string>
     <string name="dejavu_tab_sleep_when">Абларҭақәа рырцәара</string>
     <plurals name="dejavu_tab_sleep_after_minutes">
         <item quantity="one">%d минуҭ аусурадара ашьҭахь</item>
@@ -510,9 +510,9 @@
     <string name="dejavu_welcome_ads_title">Аӡыргақәагьы раанкылара?</string>
     <string name="dejavu_welcome_ads_text">Dejavu есымша ашьҭаԥшыгақәа аанкылоит. Хәыдаԥсада ацҵа uBlock Origin аӡыргақәагьы ианнахыр алшоит.</string>
     <string name="dejavu_welcome_ads_block">Аӡыргақәеи ашьҭаԥшыгақәеи раанкылара</string>
-    <string name="dejavu_welcome_ads_block_summary">uBlock Origin ацҵахоит.</string>
+    <string name="dejavu_welcome_ads_block_summary">uBlock Origin ацҵахоит. Адаҟьақәа 0,2 с раҟара ашьҭахь ицәыртуеит.</string>
     <string name="dejavu_welcome_ads_allow">Ашьҭаԥшыгақәа мацара раанкылара</string>
-    <string name="dejavu_welcome_ads_allow_summary">Адаҟьақәа рыӡыргақәа аадырԥшуеит.</string>
+    <string name="dejavu_welcome_ads_allow_summary">Адаҟьақәа рыӡыргақәа аадырԥшуеит, ирласны ицәыртуеит.</string>
     <string name="dejavu_welcome_default_title">Dejavu шәбраузер хадас иҟашәҵа</string>
     <string name="dejavu_welcome_default_text">Егьырҭ апрограммақәа рҟынтә алинкқәа Dejavu аҟны иаартхоит.</string>
     <string name="dejavu_welcome_default_done">Dejavu шәбраузер хадоуп.</string>

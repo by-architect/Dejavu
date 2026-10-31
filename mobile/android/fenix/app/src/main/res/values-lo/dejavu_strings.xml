@@ -237,7 +237,7 @@
     <string name="dejavu_history_other_pages">ຫນ້າອື່ນໆ</string>
     <string name="dejavu_settings_tab_sleep">ແທັບທີ່ພັກ</string>
     <string name="dejavu_settings_tab_sleep_summary">ແທັບທີ່ທ່ານບໍ່ໄດ້ໃຊ້ຈະພັກເພື່ອປ່ອຍຫນ່ວຍຄວາມຈຳ</string>
-    <string name="dejavu_tab_sleep_hint">ແທັບທີ່ພັກຈະປ່ອຍຫນ່ວຍຄວາມຈຳຂອງມັນ ແລະ ໂຫລດຫນ້າເວັບຄືນໃຫມ່ເມື່ອທ່ານເປີດມັນ. ແທັບທີ່ທ່ານກຳລັງເບິ່ງ, ແທັບທີ່ຢູ່ຂ້າງມັນໃນມູມມອງແບບແຍກ ແລະ ແທັບທີ່ກຳລັງຫຼິ້ນສຽງ ຫຼື ໃຊ້ກ້ອງຖ່າຍຮູບ ຫຼື ໄມໂຄຣໂຟນ ຈະບໍ່ພັກ. ເມື່ອ Android ຕ້ອງການຫນ່ວຍຄວາມຈຳໃນຂະນະທີ່ Dejavu ຢູ່ໃນພື້ນຫຼັງ, ທຸກແທັບຈະພັກ ຍົກເວັ້ນສອງແທັບທີ່ທ່ານໃຊ້ລ່າສຸດ.</string>
+    <string name="dejavu_tab_sleep_hint">ແທັບທີ່ພັກຈະປ່ອຍຫນ່ວຍຄວາມຈຳຂອງມັນ ແລະ ໂຫລດຫນ້າເວັບຄືນໃຫມ່ເມື່ອທ່ານເປີດມັນ. ແທັບທີ່ທ່ານກຳລັງເບິ່ງ, ແທັບທີ່ຢູ່ຂ້າງມັນໃນມູມມອງແບບແຍກ ແລະ ແທັບທີ່ກຳລັງຫຼິ້ນສຽງ ຫຼື ໃຊ້ກ້ອງຖ່າຍຮູບ ຫຼື ໄມໂຄຣໂຟນ ຈະບໍ່ພັກ. ເມື່ອທ່ານປິດ Dejavu ຫຼື Android ມີຫນ່ວຍຄວາມຈຳບໍ່ພໍ, ທຸກແທັບຈະພັກ ຍົກເວັ້ນສອງແທັບທີ່ທ່ານໃຊ້ລ່າສຸດ. ເມື່ອທ່ານປ່ຽນໄປໃຊ້ແອັບອື່ນ, ແທັບຈະບໍ່ພັກ.</string>
     <string name="dejavu_tab_sleep_when">ໃຫ້ແທັບພັກ</string>
     <plurals name="dejavu_tab_sleep_after_minutes">
         <item quantity="other">ຫຼັງຈາກບໍ່ໄດ້ໃຊ້ %d ນາທີ</item>
@@ -502,9 +502,9 @@
     <string name="dejavu_welcome_ads_title">ບລັອກໂຄສະນານຳບໍ?</string>
     <string name="dejavu_welcome_ads_text">Dejavu ບລັອກຕົວຕິດຕາມສະເໝີ. uBlock Origin, ສ່ວນຂະຫຍາຍຟຣີ, ສາມາດລຶບໂຄສະນາອອກໄດ້ນຳ.</string>
     <string name="dejavu_welcome_ads_block">ບລັອກໂຄສະນາ ແລະ ຕົວຕິດຕາມ</string>
-    <string name="dejavu_welcome_ads_block_summary">ເພີ່ມ uBlock Origin.</string>
+    <string name="dejavu_welcome_ads_block_summary">ເພີ່ມ uBlock Origin. ຫນ້າເວັບຈະສະແດງຊ້າລົງປະມານ 0,2 ວິນາທີ.</string>
     <string name="dejavu_welcome_ads_allow">ບລັອກສະເພາະຕົວຕິດຕາມ</string>
-    <string name="dejavu_welcome_ads_allow_summary">ຫນ້າເວັບຈະສະແດງໂຄສະນາຂອງມັນ.</string>
+    <string name="dejavu_welcome_ads_allow_summary">ຫນ້າເວັບຈະສະແດງໂຄສະນາຂອງມັນ ໂດຍບໍ່ຊັກຊ້າ.</string>
     <string name="dejavu_welcome_default_title">ຕັ້ງ Dejavu ເປັນບຣາວເຊີພື້ນຖານຂອງທ່ານ</string>
     <string name="dejavu_welcome_default_text">ລິ້ງທີ່ທ່ານແຕະໃນແອັບອື່ນຈະເປີດໃນ Dejavu.</string>
     <string name="dejavu_welcome_default_done">Dejavu ເປັນບຣາວເຊີພື້ນຖານຂອງທ່ານແລ້ວ.</string>

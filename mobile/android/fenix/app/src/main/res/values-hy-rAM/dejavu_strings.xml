@@ -238,7 +238,7 @@
     <string name="dejavu_history_other_pages">Այլ էջեր</string>
     <string name="dejavu_settings_tab_sleep">Քնած ներդիրներ</string>
     <string name="dejavu_settings_tab_sleep_summary">Ներդիրները, որոնք չեք օգտագործում, քնում են՝ հիշողություն ազատելու համար</string>
-    <string name="dejavu_tab_sleep_hint">Քնած ներդիրն ազատում է իր հիշողությունը և նորից բեռնում էջը, երբ բացում եք այն։ Արթուն են մնում այն ներդիրը, որը դիտում եք, տրոհված տեսքում դրա կողքի ներդիրը, ինչպես նաև ձայն նվագարկող կամ տեսախցիկ կամ խոսափող օգտագործող ներդիրները։ Երբ Android֊ին հիշողություն է պետք, իսկ Dejavu֊ն հետին պլանում է, քնում են բոլոր ներդիրները, բացի վերջին օգտագործած երկուսից։</string>
+    <string name="dejavu_tab_sleep_hint">Քնած ներդիրն ազատում է իր հիշողությունը և նորից բեռնում էջը, երբ բացում եք այն։ Արթուն են մնում այն ներդիրը, որը դիտում եք, տրոհված տեսքում դրա կողքի ներդիրը, ինչպես նաև ձայն նվագարկող կամ տեսախցիկ կամ խոսափող օգտագործող ներդիրները։ Երբ փակում եք Dejavu֊ն կամ Android֊ի հիշողությունը սպառվում է, քնում են բոլոր ներդիրները, բացի վերջին օգտագործած երկուսից։ Այլ հավելվածի անցնելիս ներդիրներն արթուն են մնում։</string>
     <string name="dejavu_tab_sleep_when">Քնեցնել ներդիրները</string>
     <plurals name="dejavu_tab_sleep_after_minutes">
         <item quantity="one">%d րոպե չօգտագործվելուց հետո</item>
@@ -510,9 +510,9 @@
     <string name="dejavu_welcome_ads_title">Արգելափակե՞լ նաև գովազդները</string>
     <string name="dejavu_welcome_ads_text">Dejavu դիտարկիչը միշտ արգելափակում է հետագծիչները։ Անվճար uBlock Origin հավելումը կարող է հեռացնել նաև գովազդները։</string>
     <string name="dejavu_welcome_ads_block">Արգելափակել գովազդներն ու հետագծիչները</string>
-    <string name="dejavu_welcome_ads_block_summary">Ավելացնում է uBlock Origin հավելումը։</string>
+    <string name="dejavu_welcome_ads_block_summary">Ավելացնում է uBlock Origin հավելումը։ Էջերը ցուցադրվում են մոտ 0,2 վրկ ավելի ուշ։</string>
     <string name="dejavu_welcome_ads_allow">Արգելափակել միայն հետագծիչները</string>
-    <string name="dejavu_welcome_ads_allow_summary">Էջերը ցուցադրում են իրենց գովազդները։</string>
+    <string name="dejavu_welcome_ads_allow_summary">Էջերը ցուցադրում են իրենց գովազդները, առանց ուշացման։</string>
     <string name="dejavu_welcome_default_title">Սահմանեք Dejavu դիտարկիչը որպես սկզբնադիր</string>
     <string name="dejavu_welcome_default_text">Այլ հավելվածներում ձեր հպած հղումները բացվում են Dejavu դիտարկիչում։</string>
     <string name="dejavu_welcome_default_done">Ձեր սկզբնադիր դիտարկիչը Dejavu է։</string>

@@ -237,7 +237,7 @@
     <string name="dejavu_history_other_pages">ទំព័រផ្សេងទៀត</string>
     <string name="dejavu_settings_tab_sleep">ផ្ទាំងដេក</string>
     <string name="dejavu_settings_tab_sleep_summary">ផ្ទាំងដែលអ្នកមិនប្រើនឹងដេក ដើម្បីបញ្ចេញអង្គចងចាំ</string>
-    <string name="dejavu_tab_sleep_hint">ផ្ទាំងដែលកំពុងដេកបញ្ចេញអង្គចងចាំរបស់វា ហើយផ្ទុកទំព័ររបស់វាឡើងវិញនៅពេលអ្នកបើកវា។ ផ្ទាំងដែលអ្នកកំពុងមើល ផ្ទាំងនៅជាប់វានៅក្នុងទិដ្ឋភាពបំបែក និងផ្ទាំងដែលកំពុងចាក់សំឡេង ឬប្រើកាមេរ៉ា ឬម៉ាយក្រូផូន នៅតែភ្ញាក់។ នៅពេល Android ត្រូវការអង្គចងចាំ ខណៈពេល Dejavu នៅផ្ទៃខាងក្រោយ ផ្ទាំងទាំងអស់នឹងដេក លើកលែងតែផ្ទាំងពីរដែលអ្នកបានប្រើចុងក្រោយ។</string>
+    <string name="dejavu_tab_sleep_hint">ផ្ទាំងដែលកំពុងដេកបញ្ចេញអង្គចងចាំរបស់វា ហើយផ្ទុកទំព័ររបស់វាឡើងវិញនៅពេលអ្នកបើកវា។ ផ្ទាំងដែលអ្នកកំពុងមើល ផ្ទាំងនៅជាប់វានៅក្នុងទិដ្ឋភាពបំបែក និងផ្ទាំងដែលកំពុងចាក់សំឡេង ឬប្រើកាមេរ៉ា ឬម៉ាយក្រូផូន នៅតែភ្ញាក់។ នៅពេលអ្នកបិទ Dejavu ឬពេល Android ខ្វះអង្គចងចាំ ផ្ទាំងទាំងអស់នឹងដេក លើកលែងតែផ្ទាំងពីរដែលអ្នកបានប្រើចុងក្រោយ។ នៅពេលអ្នកប្ដូរទៅកម្មវិធីផ្សេងទៀត ផ្ទាំងនៅតែភ្ញាក់។</string>
     <string name="dejavu_tab_sleep_when">ធ្វើឲ្យផ្ទាំងដេក</string>
     <plurals name="dejavu_tab_sleep_after_minutes">
         <item quantity="other">បន្ទាប់ពី %d នាទីដោយមិនប្រើ</item>
@@ -502,9 +502,9 @@
     <string name="dejavu_welcome_ads_title">ទប់ស្កាត់ការផ្សាយពាណិជ្ជកម្មផងដែរឬ?</string>
     <string name="dejavu_welcome_ads_text">Dejavu តែងតែទប់ស្កាត់កម្មវិធីតាមដាន។ uBlock Origin ដែលជាផ្នែកបន្ថែមឥតគិតថ្លៃ ក៏អាចលុបការផ្សាយពាណិជ្ជកម្មបានដែរ។</string>
     <string name="dejavu_welcome_ads_block">ទប់ស្កាត់ការផ្សាយពាណិជ្ជកម្ម និងកម្មវិធីតាមដាន</string>
-    <string name="dejavu_welcome_ads_block_summary">បន្ថែម uBlock Origin។</string>
+    <string name="dejavu_welcome_ads_block_summary">បន្ថែម uBlock Origin។ ទំព័របង្ហាញយឺតជាងមុនប្រហែល 0,2 វិនាទី។</string>
     <string name="dejavu_welcome_ads_allow">ទប់ស្កាត់តែកម្មវិធីតាមដាន</string>
-    <string name="dejavu_welcome_ads_allow_summary">ទំព័របង្ហាញការផ្សាយពាណិជ្ជកម្មរបស់វា។</string>
+    <string name="dejavu_welcome_ads_allow_summary">ទំព័របង្ហាញការផ្សាយពាណិជ្ជកម្មរបស់វា ដោយគ្មានការពន្យារពេល។</string>
     <string name="dejavu_welcome_default_title">ធ្វើឲ្យ Dejavu ជាកម្មវិធីរុករកលំនាំដើមរបស់អ្នក</string>
     <string name="dejavu_welcome_default_text">តំណភ្ជាប់ដែលអ្នកចុចនៅក្នុងកម្មវិធីផ្សេងទៀតនឹងបើកនៅក្នុង Dejavu។</string>
     <string name="dejavu_welcome_default_done">Dejavu គឺជាកម្មវិធីរុករកលំនាំដើមរបស់អ្នក។</string>

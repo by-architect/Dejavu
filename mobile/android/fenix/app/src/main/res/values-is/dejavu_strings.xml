@@ -238,7 +238,7 @@
     <string name="dejavu_history_other_pages">Aðrar síður</string>
     <string name="dejavu_settings_tab_sleep">Svæfðir flipar</string>
     <string name="dejavu_settings_tab_sleep_summary">Flipar sem þú ert ekki að nota eru svæfðir til að losa minni</string>
-    <string name="dejavu_tab_sleep_hint">Svæfður flipi losar minnið sitt og hleður síðunni aftur þegar þú opnar hann. Flipinn sem þú ert að skoða, flipinn við hliðina á honum í klofinni sýn og flipar sem spila hljóð eða nota myndavélina eða hljóðnemann haldast vakandi. Þegar Android þarf minni á meðan Dejavu er í bakgrunni eru allir flipar svæfðir nema þeir tveir sem þú notaðir síðast.</string>
+    <string name="dejavu_tab_sleep_hint">Svæfður flipi losar minnið sitt og hleður síðunni aftur þegar þú opnar hann. Flipinn sem þú ert að skoða, flipinn við hliðina á honum í klofinni sýn og flipar sem spila hljóð eða nota myndavélina eða hljóðnemann haldast vakandi. Þegar þú lokar Dejavu eða Android vantar minni eru allir flipar svæfðir nema þeir tveir sem þú notaðir síðast. Ef þú skiptir yfir í annað forrit haldast fliparnir vakandi.</string>
     <string name="dejavu_tab_sleep_when">Svæfa flipa</string>
     <plurals name="dejavu_tab_sleep_after_minutes">
         <item quantity="one">Eftir %d mínútu án notkunar</item>
@@ -510,9 +510,9 @@
     <string name="dejavu_welcome_ads_title">Loka líka á auglýsingar?</string>
     <string name="dejavu_welcome_ads_text">Dejavu lokar alltaf á rekjara. uBlock Origin, ókeypis forritsauki, getur líka fjarlægt auglýsingar.</string>
     <string name="dejavu_welcome_ads_block">Loka á auglýsingar og rekjara</string>
-    <string name="dejavu_welcome_ads_block_summary">Bætir við uBlock Origin.</string>
+    <string name="dejavu_welcome_ads_block_summary">Bætir við uBlock Origin. Síður birtast um 0,2 sek. síðar.</string>
     <string name="dejavu_welcome_ads_allow">Loka aðeins á rekjara</string>
-    <string name="dejavu_welcome_ads_allow_summary">Síður sýna auglýsingarnar sínar.</string>
+    <string name="dejavu_welcome_ads_allow_summary">Síður sýna auglýsingarnar sínar, án tafar.</string>
     <string name="dejavu_welcome_default_title">Gerðu Dejavu að sjálfgefnum vafra</string>
     <string name="dejavu_welcome_default_text">Tenglar sem þú ýtir á í öðrum forritum opnast í Dejavu.</string>
     <string name="dejavu_welcome_default_done">Dejavu er sjálfgefni vafrinn þinn.</string>

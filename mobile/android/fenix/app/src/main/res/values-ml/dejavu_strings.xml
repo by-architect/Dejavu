@@ -238,7 +238,7 @@
     <string name="dejavu_history_other_pages">മറ്റ് താളുകൾ</string>
     <string name="dejavu_settings_tab_sleep">സ്ലീപ്പിലുള്ള ടാബുകൾ</string>
     <string name="dejavu_settings_tab_sleep_summary">നിങ്ങൾ ഉപയോഗിക്കാത്ത ടാബുകൾ മെമ്മറി സ്വതന്ത്രമാക്കാൻ സ്ലീപ്പിലാകും</string>
-    <string name="dejavu_tab_sleep_hint">സ്ലീപ്പിലുള്ള ഒരു ടാബ് അതിന്റെ മെമ്മറി സ്വതന്ത്രമാക്കുകയും നിങ്ങൾ അത് തുറക്കുമ്പോൾ അതിന്റെ താള് വീണ്ടും ലോഡ് ചെയ്യുകയും ചെയ്യും. നിങ്ങൾ നോക്കുന്ന ടാബ്, വിഭജിത കാഴ്ചയിൽ അതിനടുത്തുള്ള ടാബ്, ശബ്ദം പ്ലേ ചെയ്യുന്നതോ ക്യാമറയോ മൈക്രോഫോണോ ഉപയോഗിക്കുന്നതോ ആയ ടാബുകൾ എന്നിവ ഉണർന്നിരിക്കും. Dejavu പശ്ചാത്തലത്തിലായിരിക്കുമ്പോൾ Android-ന് മെമ്മറി ആവശ്യമായാൽ, നിങ്ങൾ അവസാനം ഉപയോഗിച്ച രണ്ട് ടാബുകൾ ഒഴികെ എല്ലാ ടാബുകളും സ്ലീപ്പിലാകും.</string>
+    <string name="dejavu_tab_sleep_hint">സ്ലീപ്പിലുള്ള ഒരു ടാബ് അതിന്റെ മെമ്മറി സ്വതന്ത്രമാക്കുകയും നിങ്ങൾ അത് തുറക്കുമ്പോൾ അതിന്റെ താള് വീണ്ടും ലോഡ് ചെയ്യുകയും ചെയ്യും. നിങ്ങൾ നോക്കുന്ന ടാബ്, വിഭജിത കാഴ്ചയിൽ അതിനടുത്തുള്ള ടാബ്, ശബ്ദം പ്ലേ ചെയ്യുന്നതോ ക്യാമറയോ മൈക്രോഫോണോ ഉപയോഗിക്കുന്നതോ ആയ ടാബുകൾ എന്നിവ ഉണർന്നിരിക്കും. Dejavu അടയ്ക്കുമ്പോഴോ Android-ന് മെമ്മറി കുറയുമ്പോഴോ, നിങ്ങൾ അവസാനം ഉപയോഗിച്ച രണ്ട് ടാബുകൾ ഒഴികെ എല്ലാ ടാബുകളും സ്ലീപ്പിലാകും. മറ്റൊരു ആപ്പിലേക്ക് മാറിയാൽ ടാബുകൾ ഉണർന്നുതന്നെ ഇരിക്കും.</string>
     <string name="dejavu_tab_sleep_when">ടാബ് സ്ലീപ്പിലാക്കുക</string>
     <plurals name="dejavu_tab_sleep_after_minutes">
         <item quantity="one">%d മിനിറ്റ് ഉപയോഗിക്കാതിരുന്നാൽ</item>
@@ -510,9 +510,9 @@
     <string name="dejavu_welcome_ads_title">പരസ്യങ്ങളും തടയണോ?</string>
     <string name="dejavu_welcome_ads_text">Dejavu എപ്പോഴും ട്രാക്കറുകളെ തടയും. സൗജന്യ വിപുലീകരണമായ uBlock Origin പരസ്യങ്ങളും നീക്കം ചെയ്യും.</string>
     <string name="dejavu_welcome_ads_block">പരസ്യങ്ങളും ട്രാക്കറുകളും തടയുക</string>
-    <string name="dejavu_welcome_ads_block_summary">uBlock Origin ചേർക്കുന്നു.</string>
+    <string name="dejavu_welcome_ads_block_summary">uBlock Origin ചേർക്കുന്നു. താളുകൾ ഏകദേശം 0.2 സെക്കൻഡ് വൈകി ദൃശ്യമാകും.</string>
     <string name="dejavu_welcome_ads_allow">ട്രാക്കറുകളെ മാത്രം തടയുക</string>
-    <string name="dejavu_welcome_ads_allow_summary">താളുകൾ അവയുടെ പരസ്യങ്ങൾ കാണിക്കും.</string>
+    <string name="dejavu_welcome_ads_allow_summary">താളുകൾ അവയുടെ പരസ്യങ്ങൾ കാണിക്കും, പക്ഷേ വൈകില്ല.</string>
     <string name="dejavu_welcome_default_title">Dejavu നിങ്ങളുടെ സ്ഥിര ബ്രൗസറായി സജ്ജമാക്കുക</string>
     <string name="dejavu_welcome_default_text">മറ്റ് ആപ്പുകളിൽ നിങ്ങൾ ടാപ്പ് ചെയ്യുന്ന ലിങ്കുകൾ Dejavu തുറക്കും.</string>
     <string name="dejavu_welcome_default_done">Dejavu ആണ് നിങ്ങളുടെ സ്ഥിര ബ്രൗസർ.</string>

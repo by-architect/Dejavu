@@ -238,7 +238,7 @@
     <string name="dejavu_history_other_pages">Саҳифаҳои дигар</string>
     <string name="dejavu_settings_tab_sleep">Варақаҳои хобида</string>
     <string name="dejavu_settings_tab_sleep_summary">Варақаҳое, ки истифода намебаред, барои озод кардани хотира ба хоб мераванд</string>
-    <string name="dejavu_tab_sleep_hint">Варақаи хобида хотираи худро озод мекунад ва ҳангоми кушодан саҳифаашро аз нав бор мекунад. Варақае, ки шумо мебинед, варақаи паҳлӯи он дар намоиши тақсимшуда ва варақаҳое, ки садо пахш мекунанд ё камера ё микрофонро истифода мебаранд, бедор мемонанд. Вақте ки ба Android хотира лозим аст ва Dejavu дар пасзамина кор мекунад, ҳамаи варақаҳо ба ҷуз ду варақае, ки охирон истифода бурдаед, ба хоб мераванд.</string>
+    <string name="dejavu_tab_sleep_hint">Варақаи хобида хотираи худро озод мекунад ва ҳангоми кушодан саҳифаашро аз нав бор мекунад. Варақае, ки шумо мебинед, варақаи паҳлӯи он дар намоиши тақсимшуда ва варақаҳое, ки садо пахш мекунанд ё камера ё микрофонро истифода мебаранд, бедор мемонанд. Вақте ки шумо Dejavu-ро мебандед ё хотираи Android кам мешавад, ҳамаи варақаҳо ба ҷуз ду варақае, ки охирон истифода бурдаед, ба хоб мераванд. Ҳангоми гузариш ба барномаи дигар онҳо бедор мемонанд.</string>
     <string name="dejavu_tab_sleep_when">Хоб кардани варақаҳо</string>
     <plurals name="dejavu_tab_sleep_after_minutes">
         <item quantity="one">Пас аз %d дақиқа бе истифода</item>
@@ -510,9 +510,9 @@
     <string name="dejavu_welcome_ads_title">Рекламаҳо низ баста шаванд?</string>
     <string name="dejavu_welcome_ads_text">Dejavu ҳамеша васоити пайгириро мебандад. uBlock Origin, васеъшавии ройгон, метавонад рекламаҳоро низ тоза кунад.</string>
     <string name="dejavu_welcome_ads_block">Бастани рекламаҳо ва васоити пайгирӣ</string>
-    <string name="dejavu_welcome_ads_block_summary">uBlock Origin илова карда мешавад.</string>
+    <string name="dejavu_welcome_ads_block_summary">uBlock Origin илова карда мешавад. Саҳифаҳо тақрибан 0,2 сония дертар пайдо мешаванд.</string>
     <string name="dejavu_welcome_ads_allow">Танҳо бастани васоити пайгирӣ</string>
-    <string name="dejavu_welcome_ads_allow_summary">Саҳифаҳо рекламаҳои худро нишон медиҳанд.</string>
+    <string name="dejavu_welcome_ads_allow_summary">Саҳифаҳо рекламаҳои худро нишон медиҳанд, бе таъхир.</string>
     <string name="dejavu_welcome_default_title">Гузоштани Dejavu ҳамчун браузери пешфарз</string>
     <string name="dejavu_welcome_default_text">Пайвандҳое, ки дар барномаҳои дигар зер мекунед, дар Dejavu кушода мешаванд.</string>
     <string name="dejavu_welcome_default_done">Dejavu браузери пешфарзи шумо мебошад.</string>

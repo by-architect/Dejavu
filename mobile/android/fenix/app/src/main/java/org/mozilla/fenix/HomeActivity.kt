@@ -137,6 +137,7 @@ import org.mozilla.fenix.databinding.ActivityHomeBinding
 import org.mozilla.fenix.debugsettings.data.DefaultDebugSettingsRepository
 import org.mozilla.fenix.debugsettings.gleandebugtools.DefaultGleanDebugToolsStorage
 import org.mozilla.fenix.debugsettings.ui.FenixOverlay
+import org.mozilla.fenix.dejavu.browser.TabSleepMiddleware
 import org.mozilla.fenix.dejavu.settings.DejavuPreferenceCards
 import org.mozilla.fenix.dejavu.settings.PageBackdropCallbacks
 import org.mozilla.fenix.downloads.DownloadSnackbar
@@ -1016,6 +1017,10 @@ open class HomeActivity : LocaleAwareAppCompatActivity(), NavHostActivity, Crash
         val activityStartedWithLink = startupPathProvider.startupPathForActivity == StartupPathProvider.StartupPath.VIEW
         if (this !is ExternalAppBrowserActivity && !activityStartedWithLink) {
             stopMediaSession()
+        }
+
+        if (isFinishing && !isChangingConfigurations && this !is ExternalAppBrowserActivity) {
+            TabSleepMiddleware.closed(components.core.store)
         }
 
         components.core.engine.profiler?.addMarker(

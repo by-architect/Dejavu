@@ -238,7 +238,7 @@
     <string name="dejavu_history_other_pages">වෙනත් පිටු</string>
     <string name="dejavu_settings_tab_sleep">නිදන පටිති</string>
     <string name="dejavu_settings_tab_sleep_summary">ඔබ භාවිත නොකරන පටිති මතකය නිදහස් කිරීමට නිදා ගනී</string>
-    <string name="dejavu_tab_sleep_hint">නිදන පටිත්තක් එහි මතකය නිදහස් කරන අතර ඔබ එය විවෘත කළ විට එහි පිටුව නැවත පූරණය කරයි. ඔබ බලමින් සිටින පටිත්ත, බෙදුම් දසුනේ එයට යාබද පටිත්ත, සහ ශබ්දය වාදනය කරන හෝ රූගතය හෝ ශබ්දවාහිනිය භාවිත කරන පටිති අවදියෙන් පවතී. Dejavu පසුබිමේ ඇති විට Android හට මතකය අවශ්‍ය වුවහොත්, ඔබ අවසන් වරට භාවිත කළ පටිති දෙක හැර අනෙක් සියලු පටිති නිදා ගනී.</string>
+    <string name="dejavu_tab_sleep_hint">නිදන පටිත්තක් එහි මතකය නිදහස් කරන අතර ඔබ එය විවෘත කළ විට එහි පිටුව නැවත පූරණය කරයි. ඔබ බලමින් සිටින පටිත්ත, බෙදුම් දසුනේ එයට යාබද පටිත්ත, සහ ශබ්දය වාදනය කරන හෝ රූගතය හෝ ශබ්දවාහිනිය භාවිත කරන පටිති අවදියෙන් පවතී. Dejavu වසා දැමූ විට හෝ Android හි මතකය අඩු වූ විට, ඔබ අවසන් වරට භාවිත කළ පටිති දෙක හැර අනෙක් සියලු පටිති නිදා ගනී. ඔබ වෙනත් යෙදුමකට මාරු වූ විට ඒවා අවදියෙන් පවතී.</string>
     <string name="dejavu_tab_sleep_when">පටිත්තක් නිදි කරන්න</string>
     <plurals name="dejavu_tab_sleep_after_minutes">
         <item quantity="one">භාවිත නොකර මිනිත්තු %d කට පසු</item>
@@ -510,9 +510,9 @@
     <string name="dejavu_welcome_ads_title">දැන්වීම් ද අවහිර කරන්නද?</string>
     <string name="dejavu_welcome_ads_text">Dejavu සැමවිටම ලුහුබැඳීම් අවහිර කරයි. නොමිලේ ලැබෙන එක්කහුවක් වන uBlock Origin හට දැන්වීම් ද ඉවත් කළ හැක.</string>
     <string name="dejavu_welcome_ads_block">දැන්වීම් සහ ලුහුබැඳීම් අවහිර කරන්න</string>
-    <string name="dejavu_welcome_ads_block_summary">uBlock Origin එක් කරයි.</string>
+    <string name="dejavu_welcome_ads_block_summary">uBlock Origin එක් කරයි. පිටු තත්පර 0.2 ක් පමණ ප්‍රමාද වී දිස් වේ.</string>
     <string name="dejavu_welcome_ads_allow">ලුහුබැඳීම් පමණක් අවහිර කරන්න</string>
-    <string name="dejavu_welcome_ads_allow_summary">පිටු ඒවායේ දැන්වීම් පෙන්වයි.</string>
+    <string name="dejavu_welcome_ads_allow_summary">පිටු ඒවායේ දැන්වීම් පෙන්වයි, ප්‍රමාදයක් නැත.</string>
     <string name="dejavu_welcome_default_title">Dejavu ඔබේ පෙරනිමි අතිරික්සුව කරන්න</string>
     <string name="dejavu_welcome_default_text">ඔබ වෙනත් යෙදුම්වල තට්ටු කරන සබැඳි Dejavu හි විවෘත වේ.</string>
     <string name="dejavu_welcome_default_done">Dejavu ඔබේ පෙරනිමි අතිරික්සුවයි.</string>

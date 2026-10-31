@@ -238,7 +238,7 @@
     <string name="dejavu_history_other_pages">ఇతర పేజీలు</string>
     <string name="dejavu_settings_tab_sleep">స్లీప్‌లో ఉన్న ట్యాబులు</string>
     <string name="dejavu_settings_tab_sleep_summary">మీరు వాడని ట్యాబులు మెమరీని ఖాళీ చేయడానికి స్లీప్‌లోకి వెళ్తాయి</string>
-    <string name="dejavu_tab_sleep_hint">స్లీప్‌లో ఉన్న ట్యాబు తన మెమరీని ఖాళీ చేస్తుంది, మీరు దాన్ని తెరిచినప్పుడు దాని పేజీని మళ్లీ లోడ్ చేస్తుంది. మీరు చూస్తున్న ట్యాబు, విభజన వీక్షణలో దాని పక్కన ఉన్న ట్యాబు, మరియు శబ్దాన్ని ప్లే చేస్తున్న లేదా కెమెరా లేదా మైక్రోఫోనును వాడుతున్న ట్యాబులు మేల్కొనే ఉంటాయి. Dejavu నేపథ్యంలో ఉన్నప్పుడు Androidకు మెమరీ అవసరమైతే, మీరు చివరిగా వాడిన రెండు ట్యాబులు తప్ప మిగతా అన్ని ట్యాబులు స్లీప్‌లోకి వెళ్తాయి.</string>
+    <string name="dejavu_tab_sleep_hint">స్లీప్‌లో ఉన్న ట్యాబు తన మెమరీని ఖాళీ చేస్తుంది, మీరు దాన్ని తెరిచినప్పుడు దాని పేజీని మళ్లీ లోడ్ చేస్తుంది. మీరు చూస్తున్న ట్యాబు, విభజన వీక్షణలో దాని పక్కన ఉన్న ట్యాబు, మరియు శబ్దాన్ని ప్లే చేస్తున్న లేదా కెమెరా లేదా మైక్రోఫోనును వాడుతున్న ట్యాబులు మేల్కొనే ఉంటాయి. Dejavuను మూసివేసినప్పుడు లేదా Androidకు మెమరీ తక్కువైనప్పుడు, మీరు చివరిగా వాడిన రెండు ట్యాబులు తప్ప మిగతా అన్ని ట్యాబులు స్లీప్‌లోకి వెళ్తాయి. వేరే అనువర్తనానికి మారినప్పుడు అవి మేల్కొనే ఉంటాయి.</string>
     <string name="dejavu_tab_sleep_when">ట్యాబును స్లీప్ చేయి</string>
     <plurals name="dejavu_tab_sleep_after_minutes">
         <item quantity="one">వాడకుండా %d నిమిషం తర్వాత</item>
@@ -510,9 +510,9 @@
     <string name="dejavu_welcome_ads_title">ప్రకటనలను కూడా నిరోధించాలా?</string>
     <string name="dejavu_welcome_ads_text">Dejavu ఎల్లప్పుడూ ట్రాకర్లను నిరోధిస్తుంది. ఉచిత పొడగింత అయిన uBlock Origin ప్రకటనలను కూడా తొలగించగలదు.</string>
     <string name="dejavu_welcome_ads_block">ప్రకటనలను, ట్రాకర్లను నిరోధించు</string>
-    <string name="dejavu_welcome_ads_block_summary">uBlock Origin పొడగింతను జోడిస్తుంది.</string>
+    <string name="dejavu_welcome_ads_block_summary">uBlock Origin పొడగింతను జోడిస్తుంది. పేజీలు సుమారు 0.2 సెకన్లు ఆలస్యంగా కనిపిస్తాయి.</string>
     <string name="dejavu_welcome_ads_allow">ట్రాకర్లను మాత్రమే నిరోధించు</string>
-    <string name="dejavu_welcome_ads_allow_summary">పేజీలు వాటి ప్రకటనలను చూపిస్తాయి.</string>
+    <string name="dejavu_welcome_ads_allow_summary">పేజీలు వాటి ప్రకటనలను చూపిస్తాయి, ఆలస్యం ఉండదు.</string>
     <string name="dejavu_welcome_default_title">Dejavu మీ డిఫాల్ట్ బ్రౌజర్‌గా ఉండనివ్వండి</string>
     <string name="dejavu_welcome_default_text">ఇతర అనువర్తనాల్లో మీరు నొక్కే లింకులు Dejavu బ్రౌజర్‌లో తెరుచుకుంటాయి.</string>
     <string name="dejavu_welcome_default_done">Dejavu మీ డిఫాల్ట్ బ్రౌజర్.</string>

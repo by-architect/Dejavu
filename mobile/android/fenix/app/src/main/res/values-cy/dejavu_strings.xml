@@ -242,7 +242,7 @@
     <string name="dejavu_history_other_pages">Tudalennau eraill</string>
     <string name="dejavu_settings_tab_sleep">Tabiau’n cysgu</string>
     <string name="dejavu_settings_tab_sleep_summary">Mae tabiau nad ydych chi’n eu defnyddio yn cysgu i ryddhau cof</string>
-    <string name="dejavu_tab_sleep_hint">Mae tab sy’n cysgu yn rhyddhau ei gof ac yn llwytho ei dudalen eto pan fyddwch chi’n ei agor. Mae’r tab rydych chi’n edrych arno, yr un nesaf ato yn yr olwg hollt a thabiau sy’n chwarae sain neu’n defnyddio’r camera neu’r meicroffon yn aros yn effro. Pan fydd Android angen cof tra bo Dejavu yn y cefndir, mae pob tab ond y ddau y gwnaethoch chi eu defnyddio ddiwethaf yn mynd i gysgu.</string>
+    <string name="dejavu_tab_sleep_hint">Mae tab sy’n cysgu yn rhyddhau ei gof ac yn llwytho ei dudalen eto pan fyddwch chi’n ei agor. Mae’r tab rydych chi’n edrych arno, yr un nesaf ato yn yr olwg hollt a thabiau sy’n chwarae sain neu’n defnyddio’r camera neu’r meicroffon yn aros yn effro. Pan fyddwch chi’n cau Dejavu neu pan fydd Android yn brin o gof, mae pob tab ond y ddau y gwnaethoch chi eu defnyddio ddiwethaf yn mynd i gysgu. Mae newid i ap arall yn eu gadael yn effro.</string>
     <string name="dejavu_tab_sleep_when">Rhoi tab i gysgu</string>
     <plurals name="dejavu_tab_sleep_after_minutes">
         <item quantity="zero">Ar ôl %d munud segur</item>
@@ -542,9 +542,9 @@
     <string name="dejavu_welcome_ads_title">Rhwystro hysbysebion hefyd?</string>
     <string name="dejavu_welcome_ads_text">Mae Dejavu bob amser yn rhwystro tracwyr. Gall uBlock Origin, estyniad am ddim, dynnu hysbysebion hefyd.</string>
     <string name="dejavu_welcome_ads_block">Rhwystro hysbysebion a thracwyr</string>
-    <string name="dejavu_welcome_ads_block_summary">Yn ychwanegu uBlock Origin.</string>
+    <string name="dejavu_welcome_ads_block_summary">Yn ychwanegu uBlock Origin. Mae tudalennau’n ymddangos tua 0.2 eiliad yn hwyrach.</string>
     <string name="dejavu_welcome_ads_allow">Rhwystro tracwyr yn unig</string>
-    <string name="dejavu_welcome_ads_allow_summary">Mae tudalennau’n dangos eu hysbysebion.</string>
+    <string name="dejavu_welcome_ads_allow_summary">Mae tudalennau’n dangos eu hysbysebion, heb oedi.</string>
     <string name="dejavu_welcome_default_title">Gwneud Dejavu yn eich porwr rhagosodedig</string>
     <string name="dejavu_welcome_default_text">Mae dolenni rydych chi’n eu tapio mewn apiau eraill yn agor yn Dejavu.</string>
     <string name="dejavu_welcome_default_done">Dejavu yw eich porwr rhagosodedig.</string>

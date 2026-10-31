@@ -238,7 +238,7 @@
     <string name="dejavu_history_other_pages">Digər səhifələr</string>
     <string name="dejavu_settings_tab_sleep">Yuxudakı vərəqlər</string>
     <string name="dejavu_settings_tab_sleep_summary">İstifadə etmədiyiniz vərəqlər yaddaşı boşaltmaq üçün yuxuya gedir</string>
-    <string name="dejavu_tab_sleep_hint">Yuxudakı vərəq yaddaşını boşaldır və siz onu açanda səhifəni yenidən yükləyir. Baxdığınız vərəq, bölünmüş görünüşdə onun yanındakı vərəq və səs çalan və ya kameradan, yaxud mikrofondan istifadə edən vərəqlər oyaq qalır. Dejavu arxa fonda olarkən Android-ə yaddaş lazım olduqda, son istifadə etdiyiniz iki vərəqdən başqa bütün vərəqlər yuxuya gedir.</string>
+    <string name="dejavu_tab_sleep_hint">Yuxudakı vərəq yaddaşını boşaldır və siz onu açanda səhifəni yenidən yükləyir. Baxdığınız vərəq, bölünmüş görünüşdə onun yanındakı vərəq və səs çalan və ya kameradan, yaxud mikrofondan istifadə edən vərəqlər oyaq qalır. Dejavu-nu bağladıqda və ya Android-in yaddaşı azaldıqda, son istifadə etdiyiniz iki vərəqdən başqa bütün vərəqlər yuxuya gedir. Başqa tətbiqə keçdikdə isə vərəqlər oyaq qalır.</string>
     <string name="dejavu_tab_sleep_when">Vərəqləri yuxuya qoy</string>
     <plurals name="dejavu_tab_sleep_after_minutes">
         <item quantity="one">%d dəqiqə istifadə edilmədikdən sonra</item>
@@ -510,9 +510,9 @@
     <string name="dejavu_welcome_ads_title">Reklamlar da əngəllənsin?</string>
     <string name="dejavu_welcome_ads_text">Dejavu izləyiciləri həmişə əngəlləyir. Pulsuz əlavə olan uBlock Origin reklamları da silə bilər.</string>
     <string name="dejavu_welcome_ads_block">Reklamları və izləyiciləri əngəllə</string>
-    <string name="dejavu_welcome_ads_block_summary">uBlock Origin əlavə edir.</string>
+    <string name="dejavu_welcome_ads_block_summary">uBlock Origin əlavə edir. Səhifələr təxminən 0,2 saniyə gec görünür.</string>
     <string name="dejavu_welcome_ads_allow">Yalnız izləyiciləri əngəllə</string>
-    <string name="dejavu_welcome_ads_allow_summary">Səhifələr öz reklamlarını göstərir.</string>
+    <string name="dejavu_welcome_ads_allow_summary">Səhifələr öz reklamlarını göstərir, gecikmə olmur.</string>
     <string name="dejavu_welcome_default_title">Dejavu-nu əsas brauzeriniz edin</string>
     <string name="dejavu_welcome_default_text">Digər tətbiqlərdə toxunduğunuz keçidlər Dejavu-da açılır.</string>
     <string name="dejavu_welcome_default_done">Dejavu əsas brauzerinizdir.</string>

@@ -237,7 +237,7 @@
     <string name="dejavu_history_other_pages">其他网页</string>
     <string name="dejavu_settings_tab_sleep">标签页休眠</string>
     <string name="dejavu_settings_tab_sleep_summary">让未使用的标签页休眠以释放内存</string>
-    <string name="dejavu_tab_sleep_hint">休眠的标签页会释放其内存，并在您打开时重新加载网页。您正在查看的标签页、分屏视图中与其相邻的标签页，以及正在播放声音或使用相机或麦克风的标签页会保持唤醒。当 Dejavu 在后台运行而 Android 需要内存时，除您最后使用的两个标签页外，所有标签页都会休眠。</string>
+    <string name="dejavu_tab_sleep_hint">休眠的标签页会释放其内存，并在您打开时重新加载网页。您正在查看的标签页、分屏视图中与其相邻的标签页，以及正在播放声音或使用相机或麦克风的标签页会保持唤醒。当您关闭 Dejavu 或 Android 内存不足时，除您最后使用的两个标签页外，所有标签页都会休眠。切换到其他应用时，标签页会保持唤醒。</string>
     <string name="dejavu_tab_sleep_when">何时让标签页休眠</string>
     <plurals name="dejavu_tab_sleep_after_minutes">
         <item quantity="other">%d 分钟未使用后</item>
@@ -502,9 +502,9 @@
     <string name="dejavu_welcome_ads_title">也要拦截广告吗？</string>
     <string name="dejavu_welcome_ads_text">Dejavu 始终拦截跟踪器。免费扩展 uBlock Origin 还能移除广告。</string>
     <string name="dejavu_welcome_ads_block">拦截广告和跟踪器</string>
-    <string name="dejavu_welcome_ads_block_summary">添加 uBlock Origin。</string>
+    <string name="dejavu_welcome_ads_block_summary">添加 uBlock Origin。网页会延迟约 0.2 秒显示。</string>
     <string name="dejavu_welcome_ads_allow">仅拦截跟踪器</string>
-    <string name="dejavu_welcome_ads_allow_summary">网页会显示其广告。</string>
+    <string name="dejavu_welcome_ads_allow_summary">网页会显示其广告，没有延迟。</string>
     <string name="dejavu_welcome_default_title">将 Dejavu 设为您的默认浏览器</string>
     <string name="dejavu_welcome_default_text">您在其他应用中点按的链接将在 Dejavu 中打开。</string>
     <string name="dejavu_welcome_default_done">Dejavu 是您的默认浏览器。</string>

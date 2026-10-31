@@ -237,7 +237,7 @@
     <string name="dejavu_history_other_pages">기타 페이지</string>
     <string name="dejavu_settings_tab_sleep">절전 탭</string>
     <string name="dejavu_settings_tab_sleep_summary">사용하지 않는 탭을 절전 상태로 전환해 메모리 확보</string>
-    <string name="dejavu_tab_sleep_hint">절전 탭은 메모리를 비우고, 탭을 열면 페이지를 다시 불러옵니다. 보고 있는 탭, 분할 보기에서 그 옆에 있는 탭, 소리를 재생하거나 카메라 또는 마이크를 사용 중인 탭은 절전되지 않습니다. Dejavu가 백그라운드에 있을 때 Android에 메모리가 필요하면 마지막으로 사용한 두 탭을 제외한 모든 탭이 절전됩니다.</string>
+    <string name="dejavu_tab_sleep_hint">절전 탭은 메모리를 비우고, 탭을 열면 페이지를 다시 불러옵니다. 보고 있는 탭, 분할 보기에서 그 옆에 있는 탭, 소리를 재생하거나 카메라 또는 마이크를 사용 중인 탭은 절전되지 않습니다. Dejavu를 종료하거나 Android의 메모리가 부족하면 마지막으로 사용한 두 탭을 제외한 모든 탭이 절전됩니다. 다른 앱으로 전환해도 탭은 절전되지 않습니다.</string>
     <string name="dejavu_tab_sleep_when">탭 절전 시점</string>
     <plurals name="dejavu_tab_sleep_after_minutes">
         <item quantity="other">%d분 동안 사용하지 않으면</item>
@@ -502,9 +502,9 @@
     <string name="dejavu_welcome_ads_title">광고도 차단할까요?</string>
     <string name="dejavu_welcome_ads_text">Dejavu는 항상 추적기를 차단합니다. 무료 부가 기능인 uBlock Origin으로 광고도 없앨 수 있습니다.</string>
     <string name="dejavu_welcome_ads_block">광고와 추적기 차단</string>
-    <string name="dejavu_welcome_ads_block_summary">uBlock Origin을 추가합니다.</string>
+    <string name="dejavu_welcome_ads_block_summary">uBlock Origin을 추가합니다. 페이지가 약 0.2초 늦게 표시됩니다.</string>
     <string name="dejavu_welcome_ads_allow">추적기만 차단</string>
-    <string name="dejavu_welcome_ads_allow_summary">페이지에 광고가 표시됩니다.</string>
+    <string name="dejavu_welcome_ads_allow_summary">페이지에 광고가 표시되지만 지연은 없습니다.</string>
     <string name="dejavu_welcome_default_title">Dejavu를 기본 브라우저로 설정하세요</string>
     <string name="dejavu_welcome_default_text">다른 앱에서 누른 링크가 Dejavu에서 열립니다.</string>
     <string name="dejavu_welcome_default_done">Dejavu가 기본 브라우저입니다.</string>

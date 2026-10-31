@@ -239,7 +239,7 @@
     <string name="dejavu_history_other_pages">Alte pagini</string>
     <string name="dejavu_settings_tab_sleep">File hibernate</string>
     <string name="dejavu_settings_tab_sleep_summary">Filele pe care nu le folosești hibernează pentru a elibera memorie</string>
-    <string name="dejavu_tab_sleep_hint">O filă hibernată își eliberează memoria și își reîncarcă pagina când o deschizi. Fila la care te uiți, cea de lângă ea în ecranul împărțit și filele care redau sunet sau folosesc camera ori microfonul rămân active. Când Android are nevoie de memorie în timp ce Dejavu este în fundal, toate filele, în afară de ultimele două pe care le-ai folosit, hibernează.</string>
+    <string name="dejavu_tab_sleep_hint">O filă hibernată își eliberează memoria și își reîncarcă pagina când o deschizi. Fila la care te uiți, cea de lângă ea în ecranul împărțit și filele care redau sunet sau folosesc camera ori microfonul rămân active. Când închizi Dejavu sau Android are puțină memorie liberă, toate filele, în afară de ultimele două pe care le-ai folosit, hibernează. Dacă treci la altă aplicație, filele rămân active.</string>
     <string name="dejavu_tab_sleep_when">Hibernarea unei file</string>
     <plurals name="dejavu_tab_sleep_after_minutes">
         <item quantity="one">După %d minut fără utilizare</item>
@@ -518,9 +518,9 @@
     <string name="dejavu_welcome_ads_title">Blochezi și reclamele?</string>
     <string name="dejavu_welcome_ads_text">Dejavu blochează mereu elementele de urmărire. uBlock Origin, o extensie gratuită, poate elimina și reclamele.</string>
     <string name="dejavu_welcome_ads_block">Blochează reclamele și elementele de urmărire</string>
-    <string name="dejavu_welcome_ads_block_summary">Adaugă uBlock Origin.</string>
+    <string name="dejavu_welcome_ads_block_summary">Adaugă uBlock Origin. Paginile apar cu aproximativ 0,2 s mai târziu.</string>
     <string name="dejavu_welcome_ads_allow">Blochează doar elementele de urmărire</string>
-    <string name="dejavu_welcome_ads_allow_summary">Paginile își afișează reclamele.</string>
+    <string name="dejavu_welcome_ads_allow_summary">Paginile își afișează reclamele, fără întârziere.</string>
     <string name="dejavu_welcome_default_title">Setează Dejavu ca browser implicit</string>
     <string name="dejavu_welcome_default_text">Linkurile pe care le atingi în alte aplicații se deschid în Dejavu.</string>
     <string name="dejavu_welcome_default_done">Dejavu este browserul tău implicit.</string>

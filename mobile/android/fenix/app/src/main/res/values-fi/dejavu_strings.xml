@@ -238,7 +238,7 @@
     <string name="dejavu_history_other_pages">Muut sivut</string>
     <string name="dejavu_settings_tab_sleep">Välilehtien lepotila</string>
     <string name="dejavu_settings_tab_sleep_summary">Käyttämättömät välilehdet siirtyvät lepotilaan muistin vapauttamiseksi</string>
-    <string name="dejavu_tab_sleep_hint">Lepotilassa oleva välilehti vapauttaa muistinsa ja lataa sivunsa uudelleen, kun avaat sen. Katselemasi välilehti, sen vieressä jaetussa näkymässä oleva välilehti sekä ääntä toistavat tai kameraa tai mikrofonia käyttävät välilehdet pysyvät hereillä. Kun Android tarvitsee muistia ja Dejavu on taustalla, kaikki välilehdet kahta viimeksi käyttämääsi lukuun ottamatta siirtyvät lepotilaan.</string>
+    <string name="dejavu_tab_sleep_hint">Lepotilassa oleva välilehti vapauttaa muistinsa ja lataa sivunsa uudelleen, kun avaat sen. Katselemasi välilehti, sen vieressä jaetussa näkymässä oleva välilehti sekä ääntä toistavat tai kameraa tai mikrofonia käyttävät välilehdet pysyvät hereillä. Kun suljet Dejavun tai Androidin muisti käy vähiin, kaikki välilehdet kahta viimeksi käyttämääsi lukuun ottamatta siirtyvät lepotilaan. Kun siirryt toiseen sovellukseen, välilehdet pysyvät hereillä.</string>
     <string name="dejavu_tab_sleep_when">Siirrä välilehti lepotilaan</string>
     <plurals name="dejavu_tab_sleep_after_minutes">
         <item quantity="one">%d minuutin käyttämättömyyden jälkeen</item>
@@ -510,9 +510,9 @@
     <string name="dejavu_welcome_ads_title">Estetäänkö myös mainokset?</string>
     <string name="dejavu_welcome_ads_text">Dejavu estää aina seuraimet. Ilmainen lisäosa uBlock Origin voi poistaa myös mainokset.</string>
     <string name="dejavu_welcome_ads_block">Estä mainokset ja seuraimet</string>
-    <string name="dejavu_welcome_ads_block_summary">Asentaa uBlock Origin -lisäosan.</string>
+    <string name="dejavu_welcome_ads_block_summary">Asentaa uBlock Origin -lisäosan. Sivut tulevat näkyviin noin 0,2 s myöhemmin.</string>
     <string name="dejavu_welcome_ads_allow">Estä vain seuraimet</string>
-    <string name="dejavu_welcome_ads_allow_summary">Sivut näyttävät mainoksensa.</string>
+    <string name="dejavu_welcome_ads_allow_summary">Sivut näyttävät mainoksensa, ilman viivettä.</string>
     <string name="dejavu_welcome_default_title">Aseta Dejavu oletusselaimeksi</string>
     <string name="dejavu_welcome_default_text">Muissa sovelluksissa napauttamasi linkit avautuvat Dejavussa.</string>
     <string name="dejavu_welcome_default_done">Dejavu on oletusselaimesi.</string>

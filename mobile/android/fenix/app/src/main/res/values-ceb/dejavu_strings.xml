@@ -238,7 +238,7 @@
     <string name="dejavu_history_other_pages">Ubang mga page</string>
     <string name="dejavu_settings_tab_sleep">Mga natulog nga tab</string>
     <string name="dejavu_settings_tab_sleep_summary">Matulog ang mga tab nga wala nimo gigamit aron mapagawas ang memory</string>
-    <string name="dejavu_tab_sleep_hint">Ang natulog nga tab mopagawas sa iyang memory ug mo-load pag-usab sa iyang page kung ablihan nimo kini. Ang tab nga imong gitan-aw, ang tab tapad niini sa split view, ug ang mga tab nga nagpatugtog og tingog o naggamit sa camera o mikropono magpabiling nagmata. Kung manginahanglan og memory ang Android samtang naa sa background ang Dejavu, matulog ang tanang tab gawas sa duha nga katapusan nimong gigamit.</string>
+    <string name="dejavu_tab_sleep_hint">Ang natulog nga tab mopagawas sa iyang memory ug mo-load pag-usab sa iyang page kung ablihan nimo kini. Ang tab nga imong gitan-aw, ang tab tapad niini sa split view, ug ang mga tab nga nagpatugtog og tingog o naggamit sa camera o mikropono magpabiling nagmata. Kung isira nimo ang Dejavu o kulang na ang memory sa Android, matulog ang tanang tab gawas sa duha nga katapusan nimong gigamit. Kung mobalhin ka sa laing app, magpabiling nagmata ang mga tab.</string>
     <string name="dejavu_tab_sleep_when">Ipatulog ang tab</string>
     <plurals name="dejavu_tab_sleep_after_minutes">
         <item quantity="one">Human sa %d ka minuto nga wala gigamit</item>
@@ -510,9 +510,9 @@
     <string name="dejavu_welcome_ads_title">I-block usab ang mga ad?</string>
     <string name="dejavu_welcome_ads_text">Kanunay nga gi-block sa Dejavu ang mga tracker. Ang uBlock Origin, usa ka libre nga add-on, makatangtang usab sa mga ad.</string>
     <string name="dejavu_welcome_ads_block">I-block ang mga ad ug tracker</string>
-    <string name="dejavu_welcome_ads_block_summary">Magdugang og uBlock Origin.</string>
+    <string name="dejavu_welcome_ads_block_summary">Magdugang og uBlock Origin. Mas ulahi og mga 0.2 segundo ang pagpakita sa mga page.</string>
     <string name="dejavu_welcome_ads_allow">I-block ang mga tracker lang</string>
-    <string name="dejavu_welcome_ads_allow_summary">Gipakita sa mga page ang ilang mga ad.</string>
+    <string name="dejavu_welcome_ads_allow_summary">Gipakita sa mga page ang ilang mga ad, walay paglangan.</string>
     <string name="dejavu_welcome_default_title">Himoa ang Dejavu nga imong default browser</string>
     <string name="dejavu_welcome_default_text">Ang mga link nga imong i-tap sa ubang app maabli sa Dejavu.</string>
     <string name="dejavu_welcome_default_done">Ang Dejavu na ang imong default browser.</string>

@@ -238,7 +238,7 @@
     <string name="dejavu_history_other_pages">Autras paginas</string>
     <string name="dejavu_settings_tab_sleep">Tabs en pausa</string>
     <string name="dejavu_settings_tab_sleep_summary">Tabs che ti n’utiliseschas betg vegnan mess en pausa per liberar memoria</string>
-    <string name="dejavu_tab_sleep_hint">In tab en pausa libera sia memoria e chargia danovamain sia pagina cur che ti l’avras. Il tab che ti guardas, quel sper el en la vista divisa e tabs che reproduceschan tun u utiliseschan la camera u il microfon restan activs. Cur che Android ha basegn da memoria durant che Dejavu è en il fund davos, vegnan tut ils tabs mess en pausa, danor ils dus che ti has utilisà sco ultims.</string>
+    <string name="dejavu_tab_sleep_hint">In tab en pausa libera sia memoria e chargia danovamain sia pagina cur che ti l’avras. Il tab che ti guardas, quel sper el en la vista divisa e tabs che reproduceschan tun u utiliseschan la camera u il microfon restan activs. Cur che ti serras Dejavu u che Android ha pauca memoria, vegnan tut ils tabs mess en pausa, danor ils dus che ti has utilisà sco ultims. Sche ti vas en in’autra app, restan ils tabs activs.</string>
     <string name="dejavu_tab_sleep_when">Metter in tab en pausa</string>
     <plurals name="dejavu_tab_sleep_after_minutes">
         <item quantity="one">Suenter %d minuta senza diever</item>
@@ -510,9 +510,9 @@
     <string name="dejavu_welcome_ads_title">Era bloccar reclamas?</string>
     <string name="dejavu_welcome_ads_text">Dejavu blochescha adina fastizaders. uBlock Origin, ina extensiun gratuita, po era allontanar reclamas.</string>
     <string name="dejavu_welcome_ads_block">Bloccar reclamas e fastizaders</string>
-    <string name="dejavu_welcome_ads_block_summary">Agiunta uBlock Origin.</string>
+    <string name="dejavu_welcome_ads_block_summary">Agiunta uBlock Origin. Paginas cumparan var 0.2 s pli tard.</string>
     <string name="dejavu_welcome_ads_allow">Bloccar mo fastizaders</string>
-    <string name="dejavu_welcome_ads_allow_summary">Paginas mussan lur reclamas.</string>
+    <string name="dejavu_welcome_ads_allow_summary">Paginas mussan lur reclamas, senza retard.</string>
     <string name="dejavu_welcome_default_title">Definir Dejavu sco tes navigatur da standard</string>
     <string name="dejavu_welcome_default_text">Colliaziuns che ti tutgas en autras apps s’avran en Dejavu.</string>
     <string name="dejavu_welcome_default_done">Dejavu è tes navigatur da standard.</string>

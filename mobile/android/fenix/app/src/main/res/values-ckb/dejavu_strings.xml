@@ -238,7 +238,7 @@
     <string name="dejavu_history_other_pages">پەڕەکانی تر</string>
     <string name="dejavu_settings_tab_sleep">بازدەرە خەوتووەکان</string>
     <string name="dejavu_settings_tab_sleep_summary">ئەو بازدەرانەی بەکاریان ناهێنیت دەخەون بۆ ئەوەی بیرگە ئازاد بکەن</string>
-    <string name="dejavu_tab_sleep_hint">بازدەرێکی خەوتوو بیرگەکەی ئازاد دەکات و کاتێک دەیکەیتەوە، پەڕەکەی دووبارە بار دەکاتەوە. ئەو بازدەرەی سەیری دەکەیت، ئەوەی لە تەنیشتیەتی لە دیمەنی دووبەشکراودا، و ئەو بازدەرانەی دەنگ لێدەدەن یان کامێرا یان مایکرۆفۆن بەکاردەهێنن، بە بێداری دەمێننەوە. کاتێک Android پێویستی بە بیرگە هەبێت و Dejavu لە پاشبنەمادا بێت، هەموو بازدەرەکان جگە لەو دووانەی دوایین جار بەکارت هێنان دەخەون.</string>
+    <string name="dejavu_tab_sleep_hint">بازدەرێکی خەوتوو بیرگەکەی ئازاد دەکات و کاتێک دەیکەیتەوە، پەڕەکەی دووبارە بار دەکاتەوە. ئەو بازدەرەی سەیری دەکەیت، ئەوەی لە تەنیشتیەتی لە دیمەنی دووبەشکراودا، و ئەو بازدەرانەی دەنگ لێدەدەن یان کامێرا یان مایکرۆفۆن بەکاردەهێنن، بە بێداری دەمێننەوە. کاتێک Dejavu دادەخەیت یان بیرگەی Android کەم دەبێتەوە، هەموو بازدەرەکان جگە لەو دووانەی دوایین جار بەکارت هێنان دەخەون. ئەگەر بچیتە سەر بەرنامەیەکی تر، بە بێداری دەمێننەوە.</string>
     <string name="dejavu_tab_sleep_when">خەوتاندنی بازدەر</string>
     <plurals name="dejavu_tab_sleep_after_minutes">
         <item quantity="one">دوای %d خولەک بەبێ بەکارهێنان</item>
@@ -510,9 +510,9 @@
     <string name="dejavu_welcome_ads_title">ڕیکلامەکانیش بلۆک بکرێن؟</string>
     <string name="dejavu_welcome_ads_text">Dejavu هەمیشە چاودێریکەرەکان بلۆک دەکات. uBlock Origin، پێوەکراوێکی بێبەرامبەر، دەتوانێت ڕیکلامەکانیش لاببات.</string>
     <string name="dejavu_welcome_ads_block">ڕیکلام و چاودێریکەرەکان بلۆک بکە</string>
-    <string name="dejavu_welcome_ads_block_summary">uBlock Origin زیاد دەکات.</string>
+    <string name="dejavu_welcome_ads_block_summary">uBlock Origin زیاد دەکات. پەڕەکان نزیکەی ٠٫٢ چرکە دواتر پیشان دەدرێن.</string>
     <string name="dejavu_welcome_ads_allow">تەنها چاودێریکەرەکان بلۆک بکە</string>
-    <string name="dejavu_welcome_ads_allow_summary">پەڕەکان ڕیکلامەکانیان پیشان دەدەن.</string>
+    <string name="dejavu_welcome_ads_allow_summary">پەڕەکان ڕیکلامەکانیان پیشان دەدەن، بێ دواکەوتن.</string>
     <string name="dejavu_welcome_default_title">Dejavu بکە بە وێبگەڕی سەرەکیت</string>
     <string name="dejavu_welcome_default_text">ئەو بەستەرانەی لە بەرنامەکانی تردا دەستیان لێدەدەیت، لە Dejavu دا دەکرێنەوە.</string>
     <string name="dejavu_welcome_default_done">Dejavu وێبگەڕی سەرەکیتە.</string>

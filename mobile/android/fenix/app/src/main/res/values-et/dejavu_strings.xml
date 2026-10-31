@@ -238,7 +238,7 @@
     <string name="dejavu_history_other_pages">Muud lehed</string>
     <string name="dejavu_settings_tab_sleep">Uinuvad kaardid</string>
     <string name="dejavu_settings_tab_sleep_summary">Kaardid, mida sa ei kasuta, uinutatakse, et mälu vabastada</string>
-    <string name="dejavu_tab_sleep_hint">Uinuv kaart vabastab oma mälu ja laadib lehe uuesti, kui selle avad. Kaart, mida vaatad, selle kõrval olev kaart jagatud vaates ning kaardid, mis esitavad heli või kasutavad kaamerat või mikrofoni, jäävad ärkvele. Kui Android vajab mälu ajal, mil Dejavu on taustal, uinutatakse kõik kaardid peale kahe viimati kasutatu.</string>
+    <string name="dejavu_tab_sleep_hint">Uinuv kaart vabastab oma mälu ja laadib lehe uuesti, kui selle avad. Kaart, mida vaatad, selle kõrval olev kaart jagatud vaates ning kaardid, mis esitavad heli või kasutavad kaamerat või mikrofoni, jäävad ärkvele. Kui sulged Dejavu või Androidil jääb mälu väheks, uinutatakse kõik kaardid peale kahe viimati kasutatu. Teise äppi lülitudes jäävad kaardid ärkvele.</string>
     <string name="dejavu_tab_sleep_when">Uinuta kaart</string>
     <plurals name="dejavu_tab_sleep_after_minutes">
         <item quantity="one">Kui kaarti pole %d minut kasutatud</item>
@@ -510,9 +510,9 @@
     <string name="dejavu_welcome_ads_title">Kas blokkida ka reklaamid?</string>
     <string name="dejavu_welcome_ads_text">Dejavu blokib alati jälitajaid. Tasuta lisa uBlock Origin saab eemaldada ka reklaamid.</string>
     <string name="dejavu_welcome_ads_block">Blokki reklaamid ja jälitajad</string>
-    <string name="dejavu_welcome_ads_block_summary">Lisatakse uBlock Origin.</string>
+    <string name="dejavu_welcome_ads_block_summary">Lisatakse uBlock Origin. Lehed ilmuvad umbes 0,2 s hiljem.</string>
     <string name="dejavu_welcome_ads_allow">Blokki ainult jälitajad</string>
-    <string name="dejavu_welcome_ads_allow_summary">Lehed näitavad oma reklaame.</string>
+    <string name="dejavu_welcome_ads_allow_summary">Lehed näitavad oma reklaame, ilma viivituseta.</string>
     <string name="dejavu_welcome_default_title">Määra Dejavu oma vaikebrauseriks</string>
     <string name="dejavu_welcome_default_text">Teistes äppides puudutatud lingid avanevad Dejavus.</string>
     <string name="dejavu_welcome_default_done">Dejavu on sinu vaikebrauser.</string>

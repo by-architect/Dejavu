@@ -238,7 +238,7 @@
     <string name="dejavu_history_other_pages">نورې پاڼې</string>
     <string name="dejavu_settings_tab_sleep">ویده ټبونه</string>
     <string name="dejavu_settings_tab_sleep_summary">هغه ټبونه چې تاسو یې نه کاروئ، د حافظې د خالي کولو لپاره ویده کېږي</string>
-    <string name="dejavu_tab_sleep_hint">ویده ټب خپله حافظه خالي کوي او کله چې یې خلاص کړئ، خپله پاڼه بیا تازه کوي. هغه ټب چې تاسو یې ګورئ، په وېشل شوي لید کې د هغه څنګ ته ټب، او هغه ټبونه چې غږ پلی کوي یا کمره یا مایکروفون کاروي ویښ پاتې کېږي. کله چې Android حافظې ته اړتیا ولري او Dejavu په شالید کې وي، پرته له هغو دوو ټبونو چې تاسو وروستي کارولي دي، ټول ټبونه ویده کېږي.</string>
+    <string name="dejavu_tab_sleep_hint">ویده ټب خپله حافظه خالي کوي او کله چې یې خلاص کړئ، خپله پاڼه بیا تازه کوي. هغه ټب چې تاسو یې ګورئ، په وېشل شوي لید کې د هغه څنګ ته ټب، او هغه ټبونه چې غږ پلی کوي یا کمره یا مایکروفون کاروي ویښ پاتې کېږي. کله چې تاسو Dejavu بند کړئ یا د Android حافظه کمه شي، پرته له هغو دوو ټبونو چې تاسو وروستي کارولي دي، ټول ټبونه ویده کېږي. کله چې بل ایپ ته واوړئ، ټبونه ویښ پاتې کېږي.</string>
     <string name="dejavu_tab_sleep_when">ټب ویده کول</string>
     <plurals name="dejavu_tab_sleep_after_minutes">
         <item quantity="one">که %d دقیقه ونه کارول شي</item>
@@ -510,9 +510,9 @@
     <string name="dejavu_welcome_ads_title">اعلانونه هم بند شي؟</string>
     <string name="dejavu_welcome_ads_text">Dejavu تل تعقیبوونکي بندوي. uBlock Origin، چې وړیا وروستاړی دی، اعلانونه هم لرې کولی شي.</string>
     <string name="dejavu_welcome_ads_block">اعلانونه او تعقیبوونکي بندول</string>
-    <string name="dejavu_welcome_ads_block_summary">uBlock Origin زیاتوي.</string>
+    <string name="dejavu_welcome_ads_block_summary">uBlock Origin زیاتوي. پاڼې شاوخوا 0.2 ثانیې وروسته ښکاري.</string>
     <string name="dejavu_welcome_ads_allow">یوازې تعقیبوونکي بندول</string>
-    <string name="dejavu_welcome_ads_allow_summary">پاڼې خپل اعلانونه ښیي.</string>
+    <string name="dejavu_welcome_ads_allow_summary">پاڼې خپل اعلانونه ښیي، پرته له ځنډه.</string>
     <string name="dejavu_welcome_default_title">Dejavu خپل اصلي براوزر کړئ</string>
     <string name="dejavu_welcome_default_text">هغه لینکونه چې په نورو ایپونو کې پرې کېکاږئ، په Dejavu کې خلاصېږي.</string>
     <string name="dejavu_welcome_default_done">Dejavu ستاسو اصلي براوزر دی.</string>

@@ -238,7 +238,7 @@
     <string name="dejavu_history_other_pages">Tisniwin nniḍen</string>
     <string name="dejavu_settings_tab_sleep">Iseksal yeṭṭsen</string>
     <string name="dejavu_settings_tab_sleep_summary">Iseksal ur tesseqdaceḍ ara ṭṭsen akken ad serrḥen takatut</string>
-    <string name="dejavu_tab_sleep_hint">Aseksel yeṭṭsen yesserraḥ takatut-is, syin yessali-d tasna-s tikkelt-nniḍen mi ara t-terẓmeḍ. Aseksel i tettwaliḍ, win i s-d-yezgan g tmuɣli tabḍant, akked iseksal i d-yessuffuɣen ameslaw neɣ i yesseqdacen takamiṛat neɣ asawaḍ ur ṭṭsen ara. Ma yesra Android takatut mi ara yili Dejavu g ugilal, iseksal akkʷ ad ṭṭsen, ala sin i tesseqdceḍ taneggarut.</string>
+    <string name="dejavu_tab_sleep_hint">Aseksel yeṭṭsen yesserraḥ takatut-is, syin yessali-d tasna-s tikkelt-nniḍen mi ara t-terẓmeḍ. Aseksel i tettwaliḍ, win i s-d-yezgan g tmuɣli tabḍant, akked iseksal i d-yessuffuɣen ameslaw neɣ i yesseqdacen takamiṛat neɣ asawaḍ ur ṭṭsen ara. Ma tmedleḍ Dejavu neɣ yesra Android takatut, iseksal akkʷ ad ṭṭsen, ala sin i tesseqdceḍ taneggarut. Ma tɛeddaḍ ɣer tsensi nniḍen, ur ṭṭsen ara.</string>
     <string name="dejavu_tab_sleep_when">Sṭṭes aseksel</string>
     <plurals name="dejavu_tab_sleep_after_minutes">
         <item quantity="one">Seld %d n tesdat war aseqdec</item>
@@ -510,9 +510,9 @@
     <string name="dejavu_welcome_ads_title">Sewḥel daɣen adellel?</string>
     <string name="dejavu_welcome_ads_text">Dejavu yesweḥḥil yal tikkelt ineḍfaren. uBlock Origin, d asiɣzef baṭel, yezmer daɣen ad yekkes adellel.</string>
     <string name="dejavu_welcome_ads_block">Sewḥel adellel d yineḍfaren</string>
-    <string name="dejavu_welcome_ads_block_summary">Ad yettwarnu uBlock Origin.</string>
+    <string name="dejavu_welcome_ads_block_summary">Ad yettwarnu uBlock Origin. Tisniwin ttɛeṭṭilent azal n 0,2 s.</string>
     <string name="dejavu_welcome_ads_allow">Sewḥel ineḍfaren kan</string>
-    <string name="dejavu_welcome_ads_allow_summary">Tisniwin sskanent-d adellel-nsent.</string>
+    <string name="dejavu_welcome_ads_allow_summary">Tisniwin sskanent-d adellel-nsent, war aɛeṭṭel.</string>
     <string name="dejavu_welcome_default_title">Err Dejavu d iminig-ik amezwer</string>
     <string name="dejavu_welcome_default_text">Iseɣwan i teldiḍ seg tsensiyin nniḍen ttildin deg Dejavu.</string>
     <string name="dejavu_welcome_default_done">Dejavu d iminig-ik amezwer.</string>

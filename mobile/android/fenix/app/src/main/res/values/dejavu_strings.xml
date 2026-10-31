@@ -576,7 +576,7 @@
     <!-- Summary of the settings entry for putting unused tabs to sleep. -->
     <string name="dejavu_settings_tab_sleep_summary">Tabs you are not using sleep to free memory</string>
     <!-- Explanation at the top of the sleeping tabs settings screen. -->
-    <string name="dejavu_tab_sleep_hint">A sleeping tab frees its memory and loads its page again when you open it. The tab you are looking at, the one next to it in split view and tabs playing sound or using the camera or microphone stay awake. When Android needs memory while Dejavu is in the background, every tab but the two you used last goes to sleep.</string>
+    <string name="dejavu_tab_sleep_hint">A sleeping tab frees its memory and loads its page again when you open it. The tab you are looking at, the one next to it in split view and tabs playing sound or using the camera or microphone stay awake. When you close Dejavu or Android runs low on memory, every tab but the two you used last goes to sleep. Switching to another app leaves them awake.</string>
     <!-- Heading over the choices of how long an unused tab stays awake. -->
     <string name="dejavu_tab_sleep_when">Put a tab to sleep</string>
     <!-- Choice: a tab sleeps after this many minutes without being looked at. -->
@@ -685,12 +685,12 @@
     <string name="dejavu_welcome_ads_text">Dejavu always blocks trackers. uBlock Origin, a free add-on, can remove ads as well.</string>
     <!-- Ads page choice: block ads with uBlock Origin, and trackers. -->
     <string name="dejavu_welcome_ads_block">Block ads and trackers</string>
-    <!-- Description of that choice. Keep the name "uBlock Origin" as it is. -->
-    <string name="dejavu_welcome_ads_block_summary">Adds uBlock Origin.</string>
+    <!-- Description of that choice: it adds uBlock Origin, and pages then show about 0.2 seconds later (measured). Keep the name "uBlock Origin" as it is, and write the time the way your language writes a short time, with its decimal separator. -->
+    <string name="dejavu_welcome_ads_block_summary">Adds uBlock Origin. Pages show about 0.2\u00A0s later.</string>
     <!-- Ads page choice: block trackers but let pages show their ads; uBlock Origin is not added. -->
     <string name="dejavu_welcome_ads_allow">Block trackers only</string>
-    <!-- Description of that choice. -->
-    <string name="dejavu_welcome_ads_allow_summary">Pages show their ads.</string>
+    <!-- Description of that choice: pages show their ads, and show without the delay uBlock Origin adds. -->
+    <string name="dejavu_welcome_ads_allow_summary">Pages show their ads, with no delay.</string>
     <!-- Title of the welcome page that makes Dejavu the phone's default browser. -->
     <string name="dejavu_welcome_default_title">Make Dejavu your default browser</string>
     <!-- Text of the default browser page. -->

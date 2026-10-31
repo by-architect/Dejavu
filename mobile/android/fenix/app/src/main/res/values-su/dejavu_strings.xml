@@ -237,7 +237,7 @@
     <string name="dejavu_history_other_pages">Kaca séjén</string>
     <string name="dejavu_settings_tab_sleep">Tab nu saré</string>
     <string name="dejavu_settings_tab_sleep_summary">Tab nu teu dipaké saré pikeun ngosongkeun mémori</string>
-    <string name="dejavu_tab_sleep_hint">Tab nu saré ngosongkeun mémorina sarta ngamuat deui kacana lamun dibuka. Tab nu keur ditempo, tab gigireunana dina split view, jeung tab nu keur muterkeun sora atawa maké kaméra atawa mikropon tetep hudang. Lamun Android butuh mémori bari Dejavu aya di latar tukang, sakabéh tab bakal saré iwal ti dua tab nu panungtung dipaké.</string>
+    <string name="dejavu_tab_sleep_hint">Tab nu saré ngosongkeun mémorina sarta ngamuat deui kacana lamun dibuka. Tab nu keur ditempo, tab gigireunana dina split view, jeung tab nu keur muterkeun sora atawa maké kaméra atawa mikropon tetep hudang. Lamun Dejavu ditutup atawa mémori Android tinggal saeutik, sakabéh tab bakal saré iwal ti dua tab nu panungtung dipaké. Lamun pindah ka aplikasi séjén, tab tetep hudang.</string>
     <string name="dejavu_tab_sleep_when">Iraha tab saré</string>
     <plurals name="dejavu_tab_sleep_after_minutes">
         <item quantity="other">Sanggeus %d menit teu dipaké</item>
@@ -502,9 +502,9 @@
     <string name="dejavu_welcome_ads_title">Blokir iklan ogé?</string>
     <string name="dejavu_welcome_ads_text">Dejavu salawasna meungpeuk palacak. uBlock Origin, add-on gratis, ogé bisa miceun iklan.</string>
     <string name="dejavu_welcome_ads_block">Blokir iklan jeung palacak</string>
-    <string name="dejavu_welcome_ads_block_summary">Nambahkeun uBlock Origin.</string>
+    <string name="dejavu_welcome_ads_block_summary">Nambahkeun uBlock Origin. Kaca témbong kira-kira 0,2 detik leuwih lambat.</string>
     <string name="dejavu_welcome_ads_allow">Ngan blokir palacak</string>
-    <string name="dejavu_welcome_ads_allow_summary">Kaca némbongkeun iklanna.</string>
+    <string name="dejavu_welcome_ads_allow_summary">Kaca némbongkeun iklanna, tanpa kudu nunggu.</string>
     <string name="dejavu_welcome_default_title">Jadikeun Dejavu panyungsi baku anjeun</string>
     <string name="dejavu_welcome_default_text">Tutumbu nu ditoél dina aplikasi séjén bakal muka dina Dejavu.</string>
     <string name="dejavu_welcome_default_done">Dejavu nyaéta panyungsi baku anjeun.</string>

@@ -238,7 +238,7 @@
     <string name="dejavu_history_other_pages">Ch\'aqa\' chik taq ruxaq</string>
     <string name="dejavu_settings_tab_sleep">Warinäq taq ruwi\'</string>
     <string name="dejavu_settings_tab_sleep_summary">Ri taq ruwi\' man ye\'awokisaj ta yewar richin nikitzoqopij memoria</string>
-    <string name="dejavu_tab_sleep_hint">Jun warinäq ruwi\' nutzoqopij rumemoria chuqa\' nuk\'ak\'a\'irisaj chik ri ruxaq toq najäq. Ri ruwi\' natz\'ët, ri k\'o chunaqaj pa Vista pa ka\'i\' chuqa\' ri taq ruwi\' nikitzij k\'oxom o nikokisaj elesäy wachib\'äl o q\'asäy ch\'ab\'äl man yewar ta. Toq Android nrajo\' memoria toq Dejavu k\'o chi rij, ronojel taq ruwi\' yewar, xa xe ri ka\'i\' ruk\'isib\'äl xe\'awokisaj man yewar ta.</string>
+    <string name="dejavu_tab_sleep_hint">Jun warinäq ruwi\' nutzoqopij rumemoria chuqa\' nuk\'ak\'a\'irisaj chik ri ruxaq toq najäq. Ri ruwi\' natz\'ët, ri k\'o chunaqaj pa Vista pa ka\'i\' chuqa\' ri taq ruwi\' nikitzij k\'oxom o nikokisaj elesäy wachib\'äl o q\'asäy ch\'ab\'äl man yewar ta. Toq natz\'apij Dejavu o toq Android nrajo\' memoria, ronojel taq ruwi\' yewar, xa xe ri ka\'i\' ruk\'isib\'äl xe\'awokisaj man yewar ta. Toq najäq ch\'aqa\' chik chokoy, man yewar ta ri taq ruwi\'.</string>
     <string name="dejavu_tab_sleep_when">Tiwarïx jun ruwi\'</string>
     <plurals name="dejavu_tab_sleep_after_minutes">
         <item quantity="one">Chi rij %d ch\'utiramaj man nokisäx ta</item>
@@ -510,9 +510,9 @@
     <string name="dejavu_welcome_ads_title">¿Keq\'at chuqa\' ri taq eltzijol?</string>
     <string name="dejavu_welcome_ads_text">Dejavu jantape\' yeruq\'ät ri taq ojqanela\'. uBlock Origin, jun tz\'aqat majun rajil, nitikïr yeruyüj chuqa\' ri taq eltzijol.</string>
     <string name="dejavu_welcome_ads_block">Keq\'at taq eltzijol chuqa\' taq ojqanela\'</string>
-    <string name="dejavu_welcome_ads_block_summary">Nutz\'aqatisaj uBlock Origin.</string>
+    <string name="dejavu_welcome_ads_block_summary">Nutz\'aqatisaj uBlock Origin. Ri taq ruxaq yewachin chi rij achi\'el 0.2 xilramaj.</string>
     <string name="dejavu_welcome_ads_allow">Xa xe keq\'at ri taq ojqanela\'</string>
-    <string name="dejavu_welcome_ads_allow_summary">Ri taq ruxaq yekik\'üt ri taq keltzijol.</string>
+    <string name="dejavu_welcome_ads_allow_summary">Ri taq ruxaq yekik\'üt ri taq keltzijol, chuqa\' chanin yewachin.</string>
     <string name="dejavu_welcome_default_title">Tab\'ana\' chi ri Dejavu nok ri nab\'ey awokik\'amaya\'l</string>
     <string name="dejavu_welcome_default_text">Ri taq ximonel pa ch\'aqa\' chik taq chokoy yejaq pa Dejavu.</string>
     <string name="dejavu_welcome_default_done">Wakami Dejavu ri nab\'ey awokik\'amaya\'l.</string>

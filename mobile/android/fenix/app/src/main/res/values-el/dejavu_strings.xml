@@ -238,7 +238,7 @@
     <string name="dejavu_history_other_pages">Άλλες σελίδες</string>
     <string name="dejavu_settings_tab_sleep">Αδρανείς καρτέλες</string>
     <string name="dejavu_settings_tab_sleep_summary">Οι καρτέλες που δεν χρησιμοποιείτε αδρανοποιούνται για να ελευθερωθεί μνήμη</string>
-    <string name="dejavu_tab_sleep_hint">Μια αδρανής καρτέλα ελευθερώνει τη μνήμη της και φορτώνει ξανά τη σελίδα της όταν την ανοίξετε. Η καρτέλα που βλέπετε, αυτή δίπλα της στη διαχωρισμένη προβολή και οι καρτέλες που αναπαράγουν ήχο ή χρησιμοποιούν την κάμερα ή το μικρόφωνο παραμένουν ενεργές. Όταν το Android χρειάζεται μνήμη ενώ το Dejavu βρίσκεται στο παρασκήνιο, όλες οι καρτέλες εκτός από τις δύο που χρησιμοποιήσατε τελευταίες αδρανοποιούνται.</string>
+    <string name="dejavu_tab_sleep_hint">Μια αδρανής καρτέλα ελευθερώνει τη μνήμη της και φορτώνει ξανά τη σελίδα της όταν την ανοίξετε. Η καρτέλα που βλέπετε, αυτή δίπλα της στη διαχωρισμένη προβολή και οι καρτέλες που αναπαράγουν ήχο ή χρησιμοποιούν την κάμερα ή το μικρόφωνο παραμένουν ενεργές. Όταν κλείνετε το Dejavu ή όταν το Android έχει λίγη μνήμη, όλες οι καρτέλες εκτός από τις δύο που χρησιμοποιήσατε τελευταίες αδρανοποιούνται. Αν μεταβείτε σε άλλη εφαρμογή, παραμένουν ενεργές.</string>
     <string name="dejavu_tab_sleep_when">Αδρανοποίηση καρτελών</string>
     <plurals name="dejavu_tab_sleep_after_minutes">
         <item quantity="one">Μετά από %d λεπτό χωρίς χρήση</item>
@@ -510,9 +510,9 @@
     <string name="dejavu_welcome_ads_title">Αποκλεισμός και των διαφημίσεων;</string>
     <string name="dejavu_welcome_ads_text">Το Dejavu αποκλείει πάντα τους ιχνηλάτες. Το uBlock Origin, ένα δωρεάν πρόσθετο, μπορεί να αφαιρεί και τις διαφημίσεις.</string>
     <string name="dejavu_welcome_ads_block">Αποκλεισμός διαφημίσεων και ιχνηλατών</string>
-    <string name="dejavu_welcome_ads_block_summary">Προσθέτει το uBlock Origin.</string>
+    <string name="dejavu_welcome_ads_block_summary">Προσθέτει το uBlock Origin. Οι σελίδες εμφανίζονται περίπου 0,2 δευτ. αργότερα.</string>
     <string name="dejavu_welcome_ads_allow">Αποκλεισμός μόνο ιχνηλατών</string>
-    <string name="dejavu_welcome_ads_allow_summary">Οι σελίδες εμφανίζουν τις διαφημίσεις τους.</string>
+    <string name="dejavu_welcome_ads_allow_summary">Οι σελίδες εμφανίζουν τις διαφημίσεις τους, χωρίς καθυστέρηση.</string>
     <string name="dejavu_welcome_default_title">Ορίστε το Dejavu ως προεπιλεγμένο πρόγραμμα περιήγησης</string>
     <string name="dejavu_welcome_default_text">Οι σύνδεσμοι που πατάτε σε άλλες εφαρμογές ανοίγουν στο Dejavu.</string>
     <string name="dejavu_welcome_default_done">Το Dejavu είναι το προεπιλεγμένο σας πρόγραμμα περιήγησης.</string>

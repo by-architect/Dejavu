@@ -237,7 +237,7 @@
     <string name="dejavu_history_other_pages">Àwọn ojú-ìwé mìíràn</string>
     <string name="dejavu_settings_tab_sleep">Àwọn táàbù tí ń sùn</string>
     <string name="dejavu_settings_tab_sleep_summary">Àwọn táàbù tí o kò lò máa ń sùn láti tú ìrántí sílẹ̀</string>
-    <string name="dejavu_tab_sleep_hint">Táàbù tí ń sùn máa ń tú ìrántí rẹ̀ sílẹ̀, yóò sì tún gbé ojú-ìwé rẹ̀ wá nígbà tí o bá ṣí i. Táàbù tí ò ń wò, èyí tí ó wà lẹ́gbẹ̀ẹ́ rẹ̀ nínú split view, àti àwọn táàbù tí ń gbé ohùn jáde tàbí tí ń lo kámẹ́rà tàbí ẹ̀rọ ìgbóhùnsáfẹ́fẹ́ kì í sùn. Nígbà tí Android bá nílò ìrántí nígbà tí Dejavu wà ní abẹ́lẹ̀, gbogbo táàbù yóò sùn àyàfi méjì tí o lò kẹ́yìn.</string>
+    <string name="dejavu_tab_sleep_hint">Táàbù tí ń sùn máa ń tú ìrántí rẹ̀ sílẹ̀, yóò sì tún gbé ojú-ìwé rẹ̀ wá nígbà tí o bá ṣí i. Táàbù tí ò ń wò, èyí tí ó wà lẹ́gbẹ̀ẹ́ rẹ̀ nínú split view, àti àwọn táàbù tí ń gbé ohùn jáde tàbí tí ń lo kámẹ́rà tàbí ẹ̀rọ ìgbóhùnsáfẹ́fẹ́ kì í sùn. Nígbà tí o bá pa Dejavu dé tàbí tí ìrántí Android bá ń tán, gbogbo táàbù yóò sùn àyàfi méjì tí o lò kẹ́yìn. Tí o bá lọ sí áàpù mìíràn, wọn kì í sùn.</string>
     <string name="dejavu_tab_sleep_when">Mú táàbù sùn</string>
     <plurals name="dejavu_tab_sleep_after_minutes">
         <item quantity="other">Lẹ́yìn ìṣẹ́jú %d láìlò</item>
@@ -502,9 +502,9 @@
     <string name="dejavu_welcome_ads_title">Dènà àwọn ìpolówó pẹ̀lú?</string>
     <string name="dejavu_welcome_ads_text">Dejavu máa ń dènà àwọn olùtọpasẹ̀ nígbà gbogbo. uBlock Origin, ìfikún ọ̀fẹ́ kan, lè yọ àwọn ìpolówó kúrò pẹ̀lú.</string>
     <string name="dejavu_welcome_ads_block">Dènà àwọn ìpolówó àti olùtọpasẹ̀</string>
-    <string name="dejavu_welcome_ads_block_summary">Yóò fi uBlock Origin kún un.</string>
+    <string name="dejavu_welcome_ads_block_summary">Yóò fi uBlock Origin kún un. Àwọn ojú-ìwé yóò fi nǹkan bí ìṣẹ́jú-àáyá 0.2 pẹ́ kí wọ́n tó hàn.</string>
     <string name="dejavu_welcome_ads_allow">Dènà àwọn olùtọpasẹ̀ nìkan</string>
-    <string name="dejavu_welcome_ads_allow_summary">Àwọn ojú-ìwé yóò fi àwọn ìpolówó wọn hàn.</string>
+    <string name="dejavu_welcome_ads_allow_summary">Àwọn ojú-ìwé yóò fi àwọn ìpolówó wọn hàn, láìsí ìdádúró.</string>
     <string name="dejavu_welcome_default_title">Fi Dejavu ṣe bíráwúsà ìbẹ̀rẹ̀pẹ̀pẹ̀ rẹ</string>
     <string name="dejavu_welcome_default_text">Àwọn líǹkì tí o bá tẹ̀ nínú àwọn áàpù mìíràn yóò ṣí nínú Dejavu.</string>
     <string name="dejavu_welcome_default_done">Dejavu ni bíráwúsà ìbẹ̀rẹ̀pẹ̀pẹ̀ rẹ.</string>

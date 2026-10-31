@@ -239,7 +239,7 @@
     <string name="dejavu_history_other_pages">Outras páginas</string>
     <string name="dejavu_settings_tab_sleep">Abas hibernadas</string>
     <string name="dejavu_settings_tab_sleep_summary">As abas que você não está usando hibernam para liberar memória</string>
-    <string name="dejavu_tab_sleep_hint">Uma aba hibernada libera a memória dela e carrega a página de novo quando você a abre. A aba que você está vendo, a que está ao lado dela na visualização dividida e as abas que estão tocando som ou usando a câmera ou o microfone continuam ativas. Quando o Android precisa de memória enquanto o Dejavu está em segundo plano, todas as abas hibernam, exceto as duas últimas que você usou.</string>
+    <string name="dejavu_tab_sleep_hint">Uma aba hibernada libera a memória dela e carrega a página de novo quando você a abre. A aba que você está vendo, a que está ao lado dela na visualização dividida e as abas que estão tocando som ou usando a câmera ou o microfone continuam ativas. Quando você fecha o Dejavu ou o Android fica com pouca memória, todas as abas hibernam, exceto as duas últimas que você usou. Se você mudar para outro aplicativo, as abas continuam ativas.</string>
     <string name="dejavu_tab_sleep_when">Hibernar uma aba</string>
     <plurals name="dejavu_tab_sleep_after_minutes">
         <item quantity="one">Após %d minuto sem uso</item>
@@ -518,9 +518,9 @@
     <string name="dejavu_welcome_ads_title">Bloquear anúncios também?</string>
     <string name="dejavu_welcome_ads_text">O Dejavu sempre bloqueia rastreadores. O uBlock Origin, uma extensão gratuita, também pode remover anúncios.</string>
     <string name="dejavu_welcome_ads_block">Bloquear anúncios e rastreadores</string>
-    <string name="dejavu_welcome_ads_block_summary">Adiciona o uBlock Origin.</string>
+    <string name="dejavu_welcome_ads_block_summary">Adiciona o uBlock Origin. As páginas aparecem cerca de 0,2 s depois.</string>
     <string name="dejavu_welcome_ads_allow">Bloquear só rastreadores</string>
-    <string name="dejavu_welcome_ads_allow_summary">As páginas mostram seus anúncios.</string>
+    <string name="dejavu_welcome_ads_allow_summary">As páginas mostram seus anúncios, sem atraso.</string>
     <string name="dejavu_welcome_default_title">Torne o Dejavu seu navegador padrão</string>
     <string name="dejavu_welcome_default_text">Links que você toca em outros aplicativos abrem no Dejavu.</string>
     <string name="dejavu_welcome_default_done">O Dejavu é seu navegador padrão.</string>

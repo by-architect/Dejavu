@@ -240,7 +240,7 @@
     <string name="dejavu_history_other_pages">Ostatné stránky</string>
     <string name="dejavu_settings_tab_sleep">Uspané karty</string>
     <string name="dejavu_settings_tab_sleep_summary">Karty, ktoré nepoužívate, sa uspia a uvoľnia pamäť</string>
-    <string name="dejavu_tab_sleep_hint">Uspaná karta uvoľní svoju pamäť a po otvorení znova načíta stránku. Karta, na ktorú sa pozeráte, karta vedľa nej v rozdelenom zobrazení a karty, ktoré prehrávajú zvuk alebo používajú kameru či mikrofón, zostávajú aktívne. Keď Android potrebuje pamäť a Dejavu beží na pozadí, uspia sa všetky karty okrem dvoch naposledy použitých.</string>
+    <string name="dejavu_tab_sleep_hint">Uspaná karta uvoľní svoju pamäť a po otvorení znova načíta stránku. Karta, na ktorú sa pozeráte, karta vedľa nej v rozdelenom zobrazení a karty, ktoré prehrávajú zvuk alebo používajú kameru či mikrofón, zostávajú aktívne. Keď zatvoríte Dejavu alebo má Android málo pamäte, uspia sa všetky karty okrem dvoch naposledy použitých. Pri prepnutí do inej aplikácie zostanú aktívne.</string>
     <string name="dejavu_tab_sleep_when">Uspávať karty</string>
     <plurals name="dejavu_tab_sleep_after_minutes">
         <item quantity="one">Po %d minúte bez používania</item>
@@ -526,9 +526,9 @@
     <string name="dejavu_welcome_ads_title">Blokovať aj reklamy?</string>
     <string name="dejavu_welcome_ads_text">Dejavu vždy blokuje sledovacie prvky. uBlock Origin, bezplatné rozšírenie, dokáže odstrániť aj reklamy.</string>
     <string name="dejavu_welcome_ads_block">Blokovať reklamy a sledovacie prvky</string>
-    <string name="dejavu_welcome_ads_block_summary">Pridá uBlock Origin.</string>
+    <string name="dejavu_welcome_ads_block_summary">Pridá uBlock Origin. Stránky sa zobrazia asi o 0,2 s neskôr.</string>
     <string name="dejavu_welcome_ads_allow">Blokovať iba sledovacie prvky</string>
-    <string name="dejavu_welcome_ads_allow_summary">Stránky zobrazujú svoje reklamy.</string>
+    <string name="dejavu_welcome_ads_allow_summary">Stránky zobrazujú svoje reklamy, bez oneskorenia.</string>
     <string name="dejavu_welcome_default_title">Nastavte si Dejavu ako predvolený prehliadač</string>
     <string name="dejavu_welcome_default_text">Odkazy, na ktoré ťuknete v iných aplikáciách, sa otvoria v Dejavu.</string>
     <string name="dejavu_welcome_default_done">Dejavu je váš predvolený prehliadač.</string>

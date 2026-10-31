@@ -115,8 +115,9 @@ fun DejavuAddressBar(store: BrowserToolbarStore) {
         return
     }
     val sides = rememberSideButtons()
-    val display by store.observeAsComposableState { it.displayState }
-    val origin = display.pageOrigin
+    // Not the whole display state, which changes with every step of the loading bar this bar does not show.
+    val origin by store.observeAsComposableState { it.displayState.pageOrigin }
+    val pageActions by store.observeAsComposableState { it.displayState.pageActionsStart }
     val hint = stringResource(origin.hint)
     val text = origin.url?.toString()?.takeIf { it.isNotBlank() } ?: origin.title?.takeIf { it.isNotBlank() } ?: hint
     val url by components.core.store.observeAsComposableState { it.selectedTab?.content?.url }
@@ -152,7 +153,7 @@ fun DejavuAddressBar(store: BrowserToolbarStore) {
                     url = url,
                     loading = loading,
                     container = containerAction(),
-                    pageActions = display.pageActionsStart,
+                    pageActions = pageActions,
                     onInteraction = { store.dispatch(it) },
                     modifier = Modifier.align(Alignment.Center),
                 )
@@ -183,8 +184,8 @@ fun DejavuAddressBar(store: BrowserToolbarStore) {
 @Composable
 private fun DejavuSplitAddressBar(store: BrowserToolbarStore, split: ShownSplit) {
     val sides = rememberSideButtons()
-    val display by store.observeAsComposableState { it.displayState }
-    val origin = display.pageOrigin
+    val origin by store.observeAsComposableState { it.displayState.pageOrigin }
+    val shownPageActions by store.observeAsComposableState { it.displayState.pageActionsStart }
     val hint = stringResource(origin.hint)
     val browserStore = components.core.store
     val tabs by browserStore.observeAsComposableState { state -> split.tabIds.mapNotNull { state.findTab(it) } }
@@ -228,7 +229,7 @@ private fun DejavuSplitAddressBar(store: BrowserToolbarStore, split: ShownSplit)
             )
         // The page out of focus only shows its container and its site's icon; touching them turns to it first.
         val container = containerAction(tab.id)
-        val pageActions = if (focused) display.pageActionsStart else listOfNotNull(siteInfoPreview(tab))
+        val pageActions = if (focused) shownPageActions else listOfNotNull(siteInfoPreview(tab))
         val onInteraction: (BrowserToolbarEvent) -> Unit = if (focused) dispatch else ({ focus() })
         if (stacked) {
             SplitPageRow(

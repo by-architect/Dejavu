@@ -238,7 +238,7 @@
     <string name="dejavu_history_other_pages">Andre sider</string>
     <string name="dejavu_settings_tab_sleep">Faneblade i dvale</string>
     <string name="dejavu_settings_tab_sleep_summary">Faneblade, du ikke bruger, sættes i dvale for at frigøre hukommelse</string>
-    <string name="dejavu_tab_sleep_hint">Et faneblad i dvale frigør sin hukommelse og indlæser sin side igen, når du åbner det. Fanebladet, du ser på, det ved siden af i delt visning og faneblade, der afspiller lyd eller bruger kameraet eller mikrofonen, forbliver vågne. Når Android har brug for hukommelse, mens Dejavu er i baggrunden, sættes alle faneblade undtagen de to, du brugte sidst, i dvale.</string>
+    <string name="dejavu_tab_sleep_hint">Et faneblad i dvale frigør sin hukommelse og indlæser sin side igen, når du åbner det. Fanebladet, du ser på, det ved siden af i delt visning og faneblade, der afspiller lyd eller bruger kameraet eller mikrofonen, forbliver vågne. Når du lukker Dejavu eller Android mangler hukommelse, sættes alle faneblade undtagen de to, du brugte sidst, i dvale. Skifter du til en anden app, forbliver de vågne.</string>
     <string name="dejavu_tab_sleep_when">Sæt et faneblad i dvale</string>
     <plurals name="dejavu_tab_sleep_after_minutes">
         <item quantity="one">Efter %d minut uden brug</item>
@@ -510,9 +510,9 @@
     <string name="dejavu_welcome_ads_title">Bloker også reklamer?</string>
     <string name="dejavu_welcome_ads_text">Dejavu blokerer altid sporings-tjenester. uBlock Origin, en gratis udvidelse, kan også fjerne reklamer.</string>
     <string name="dejavu_welcome_ads_block">Bloker reklamer og sporings-tjenester</string>
-    <string name="dejavu_welcome_ads_block_summary">Tilføjer uBlock Origin.</string>
+    <string name="dejavu_welcome_ads_block_summary">Tilføjer uBlock Origin. Sider vises ca. 0,2 sek. senere.</string>
     <string name="dejavu_welcome_ads_allow">Bloker kun sporings-tjenester</string>
-    <string name="dejavu_welcome_ads_allow_summary">Sider viser deres reklamer.</string>
+    <string name="dejavu_welcome_ads_allow_summary">Sider viser deres reklamer, uden forsinkelse.</string>
     <string name="dejavu_welcome_default_title">Gør Dejavu til din standardbrowser</string>
     <string name="dejavu_welcome_default_text">Links, du trykker på i andre apps, åbnes i Dejavu.</string>
     <string name="dejavu_welcome_default_done">Dejavu er din standardbrowser.</string>

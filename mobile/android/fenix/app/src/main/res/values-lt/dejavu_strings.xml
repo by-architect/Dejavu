@@ -240,7 +240,7 @@
     <string name="dejavu_history_other_pages">Kiti puslapiai</string>
     <string name="dejavu_settings_tab_sleep">Užmigdytos kortelės</string>
     <string name="dejavu_settings_tab_sleep_summary">Kortelės, kurių nenaudojate, užmigdomos, kad atsilaisvintų atmintis</string>
-    <string name="dejavu_tab_sleep_hint">Užmigdyta kortelė atlaisvina savo atmintį ir iš naujo įkelia puslapį, kai ją atveriate. Kortelė, kurią žiūrite, šalia jos padalytame rodinyje esanti kortelė ir kortelės, kurios leidžia garsą arba naudoja kamerą ar mikrofoną, neužmigdomos. Kai sistemai Android prireikia atminties, o Dejavu veikia fone, užmigdomos visos kortelės, išskyrus dvi paskiausiai naudotas.</string>
+    <string name="dejavu_tab_sleep_hint">Užmigdyta kortelė atlaisvina savo atmintį ir iš naujo įkelia puslapį, kai ją atveriate. Kortelė, kurią žiūrite, šalia jos padalytame rodinyje esanti kortelė ir kortelės, kurios leidžia garsą arba naudoja kamerą ar mikrofoną, neužmigdomos. Kai uždarote Dejavu arba sistemai Android trūksta atminties, užmigdomos visos kortelės, išskyrus dvi paskiausiai naudotas. Perėjus į kitą programą, kortelės neužmigdomos.</string>
     <string name="dejavu_tab_sleep_when">Užmigdyti kortelę</string>
     <plurals name="dejavu_tab_sleep_after_minutes">
         <item quantity="one">Po %d minutės nenaudojimo</item>
@@ -526,9 +526,9 @@
     <string name="dejavu_welcome_ads_title">Blokuoti ir reklamas?</string>
     <string name="dejavu_welcome_ads_text">Dejavu visada blokuoja stebėjimo elementus. Nemokamas priedas uBlock Origin gali pašalinti ir reklamas.</string>
     <string name="dejavu_welcome_ads_block">Blokuoti reklamas ir stebėjimo elementus</string>
-    <string name="dejavu_welcome_ads_block_summary">Prideda uBlock Origin.</string>
+    <string name="dejavu_welcome_ads_block_summary">Prideda uBlock Origin. Puslapiai rodomi maždaug 0,2 s vėliau.</string>
     <string name="dejavu_welcome_ads_allow">Blokuoti tik stebėjimo elementus</string>
-    <string name="dejavu_welcome_ads_allow_summary">Puslapiai rodo savo reklamas.</string>
+    <string name="dejavu_welcome_ads_allow_summary">Puslapiai rodo savo reklamas, be delsos.</string>
     <string name="dejavu_welcome_default_title">Skirkite Dejavu numatytąja naršykle</string>
     <string name="dejavu_welcome_default_text">Nuorodos, kurias paliečiate kitose programose, atveriamos Dejavu.</string>
     <string name="dejavu_welcome_default_done">Dejavu yra jūsų numatytoji naršyklė.</string>

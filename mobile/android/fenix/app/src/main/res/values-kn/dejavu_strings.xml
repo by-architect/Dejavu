@@ -238,7 +238,7 @@
     <string name="dejavu_history_other_pages">ಇತರ ಪುಟಗಳು</string>
     <string name="dejavu_settings_tab_sleep">ಸ್ಲೀಪ್ ಆಗಿರುವ ಟ್ಯಾಬ್‌ಗಳು</string>
     <string name="dejavu_settings_tab_sleep_summary">ನೀವು ಬಳಸದಿರುವ ಟ್ಯಾಬ್‌ಗಳು ಮೆಮೊರಿಯನ್ನು ಮುಕ್ತಗೊಳಿಸಲು ಸ್ಲೀಪ್ ಆಗುತ್ತವೆ</string>
-    <string name="dejavu_tab_sleep_hint">ಸ್ಲೀಪ್ ಆಗಿರುವ ಟ್ಯಾಬ್ ತನ್ನ ಮೆಮೊರಿಯನ್ನು ಮುಕ್ತಗೊಳಿಸುತ್ತದೆ ಮತ್ತು ನೀವು ಅದನ್ನು ತೆರೆದಾಗ ಅದರ ಪುಟವನ್ನು ಮತ್ತೆ ಲೋಡ್ ಮಾಡುತ್ತದೆ. ನೀವು ನೋಡುತ್ತಿರುವ ಟ್ಯಾಬ್, ವಿಭಜಿತ ನೋಟದಲ್ಲಿ ಅದರ ಪಕ್ಕದ ಟ್ಯಾಬ್, ಮತ್ತು ಧ್ವನಿ ಪ್ಲೇ ಮಾಡುತ್ತಿರುವ ಅಥವಾ ಕ್ಯಾಮೆರಾ ಅಥವಾ ಮೈಕ್ರೋಫೋನ್ ಬಳಸುತ್ತಿರುವ ಟ್ಯಾಬ್‌ಗಳು ಸಕ್ರಿಯವಾಗಿರುತ್ತವೆ. Dejavu ಹಿನ್ನೆಲೆಯಲ್ಲಿರುವಾಗ Android ಗೆ ಮೆಮೊರಿ ಬೇಕಾದರೆ, ನೀವು ಕೊನೆಯದಾಗಿ ಬಳಸಿದ ಎರಡು ಟ್ಯಾಬ್‌ಗಳನ್ನು ಹೊರತುಪಡಿಸಿ ಉಳಿದ ಎಲ್ಲಾ ಟ್ಯಾಬ್‌ಗಳು ಸ್ಲೀಪ್ ಆಗುತ್ತವೆ.</string>
+    <string name="dejavu_tab_sleep_hint">ಸ್ಲೀಪ್ ಆಗಿರುವ ಟ್ಯಾಬ್ ತನ್ನ ಮೆಮೊರಿಯನ್ನು ಮುಕ್ತಗೊಳಿಸುತ್ತದೆ ಮತ್ತು ನೀವು ಅದನ್ನು ತೆರೆದಾಗ ಅದರ ಪುಟವನ್ನು ಮತ್ತೆ ಲೋಡ್ ಮಾಡುತ್ತದೆ. ನೀವು ನೋಡುತ್ತಿರುವ ಟ್ಯಾಬ್, ವಿಭಜಿತ ನೋಟದಲ್ಲಿ ಅದರ ಪಕ್ಕದ ಟ್ಯಾಬ್, ಮತ್ತು ಧ್ವನಿ ಪ್ಲೇ ಮಾಡುತ್ತಿರುವ ಅಥವಾ ಕ್ಯಾಮೆರಾ ಅಥವಾ ಮೈಕ್ರೋಫೋನ್ ಬಳಸುತ್ತಿರುವ ಟ್ಯಾಬ್‌ಗಳು ಸಕ್ರಿಯವಾಗಿರುತ್ತವೆ. Dejavu ಅನ್ನು ಮುಚ್ಚಿದಾಗ ಅಥವಾ Android ನಲ್ಲಿ ಮೆಮೊರಿ ಕಡಿಮೆಯಾದಾಗ, ನೀವು ಕೊನೆಯದಾಗಿ ಬಳಸಿದ ಎರಡು ಟ್ಯಾಬ್‌ಗಳನ್ನು ಹೊರತುಪಡಿಸಿ ಉಳಿದ ಎಲ್ಲಾ ಟ್ಯಾಬ್‌ಗಳು ಸ್ಲೀಪ್ ಆಗುತ್ತವೆ. ಬೇರೆ ಅನ್ವಯಿಕಕ್ಕೆ ಬದಲಾಯಿಸಿದರೆ ಟ್ಯಾಬ್‌ಗಳು ಸಕ್ರಿಯವಾಗಿಯೇ ಇರುತ್ತವೆ.</string>
     <string name="dejavu_tab_sleep_when">ಟ್ಯಾಬ್ ಅನ್ನು ಸ್ಲೀಪ್ ಮಾಡು</string>
     <plurals name="dejavu_tab_sleep_after_minutes">
         <item quantity="one">ಬಳಸದೆ %d ನಿಮಿಷದ ನಂತರ</item>
@@ -510,9 +510,9 @@
     <string name="dejavu_welcome_ads_title">ಜಾಹೀರಾತುಗಳನ್ನೂ ನಿರ್ಬಂಧಿಸಬೇಕೆ?</string>
     <string name="dejavu_welcome_ads_text">Dejavu ಯಾವಾಗಲೂ ಟ್ರ್ಯಾಕರ್‌ಗಳನ್ನು ನಿರ್ಬಂಧಿಸುತ್ತದೆ. ಉಚಿತ ವಿಸ್ತರಣೆಯಾದ uBlock Origin ಜಾಹೀರಾತುಗಳನ್ನೂ ತೆಗೆದುಹಾಕಬಲ್ಲದು.</string>
     <string name="dejavu_welcome_ads_block">ಜಾಹೀರಾತುಗಳು ಮತ್ತು ಟ್ರ್ಯಾಕರ್‌ಗಳನ್ನು ನಿರ್ಬಂಧಿಸಿ</string>
-    <string name="dejavu_welcome_ads_block_summary">uBlock Origin ಅನ್ನು ಸೇರಿಸುತ್ತದೆ.</string>
+    <string name="dejavu_welcome_ads_block_summary">uBlock Origin ಅನ್ನು ಸೇರಿಸುತ್ತದೆ. ಪುಟಗಳು ಸುಮಾರು 0.2 ಸೆಕೆಂಡ್ ತಡವಾಗಿ ಕಾಣಿಸುತ್ತವೆ.</string>
     <string name="dejavu_welcome_ads_allow">ಟ್ರ್ಯಾಕರ್‌ಗಳನ್ನು ಮಾತ್ರ ನಿರ್ಬಂಧಿಸಿ</string>
-    <string name="dejavu_welcome_ads_allow_summary">ಪುಟಗಳು ತಮ್ಮ ಜಾಹೀರಾತುಗಳನ್ನು ತೋರಿಸುತ್ತವೆ.</string>
+    <string name="dejavu_welcome_ads_allow_summary">ಪುಟಗಳು ತಮ್ಮ ಜಾಹೀರಾತುಗಳನ್ನು ತೋರಿಸುತ್ತವೆ, ತಡವಾಗುವುದಿಲ್ಲ.</string>
     <string name="dejavu_welcome_default_title">Dejavu ಅನ್ನು ನಿಮ್ಮ ಪೂರ್ವನಿಯೋಜಿತ ಬ್ರೌಸರ್ ಮಾಡಿ</string>
     <string name="dejavu_welcome_default_text">ಇತರ ಅನ್ವಯಿಕಗಳಲ್ಲಿ ನೀವು ಟ್ಯಾಪ್ ಮಾಡುವ ಲಿಂಕ್‌ಗಳು Dejavu ನಲ್ಲಿ ತೆರೆಯುತ್ತವೆ.</string>
     <string name="dejavu_welcome_default_done">Dejavu ನಿಮ್ಮ ಪೂರ್ವನಿಯೋಜಿತ ಬ್ರೌಸರ್ ಆಗಿದೆ.</string>

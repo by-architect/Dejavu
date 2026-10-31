@@ -238,7 +238,7 @@
     <string name="dejavu_history_other_pages">Andre sider</string>
     <string name="dejavu_settings_tab_sleep">Faner i dvale</string>
     <string name="dejavu_settings_tab_sleep_summary">Faner du ikkje bruker, vert sette i dvale for å frigjere minne</string>
-    <string name="dejavu_tab_sleep_hint">Ei fane i dvale frigjer minnet sitt og lastar inn sida på nytt når du opnar ho. Fana du ser på, den ved sida av i delt vising og faner som spelar av lyd eller bruker kameraet eller mikrofonen, held seg vakne. Når Android treng minne medan Dejavu er i bakgrunnen, vert alle faner unntatt dei to du brukte sist, sette i dvale.</string>
+    <string name="dejavu_tab_sleep_hint">Ei fane i dvale frigjer minnet sitt og lastar inn sida på nytt når du opnar ho. Fana du ser på, den ved sida av i delt vising og faner som spelar av lyd eller bruker kameraet eller mikrofonen, held seg vakne. Når du lukkar Dejavu eller Android har lite ledig minne, vert alle faner unntatt dei to du brukte sist, sette i dvale. Byter du til ein annan app, held fanene seg vakne.</string>
     <string name="dejavu_tab_sleep_when">Set ei fane i dvale</string>
     <plurals name="dejavu_tab_sleep_after_minutes">
         <item quantity="one">Etter %d minutt utan bruk</item>
@@ -510,9 +510,9 @@
     <string name="dejavu_welcome_ads_title">Blokkere reklame òg?</string>
     <string name="dejavu_welcome_ads_text">Dejavu blokkerer alltid sporarar. uBlock Origin, ei gratis utviding, kan fjerne reklame òg.</string>
     <string name="dejavu_welcome_ads_block">Blokker reklame og sporarar</string>
-    <string name="dejavu_welcome_ads_block_summary">Legg til uBlock Origin.</string>
+    <string name="dejavu_welcome_ads_block_summary">Legg til uBlock Origin. Sidene kjem fram om lag 0,2 s seinare.</string>
     <string name="dejavu_welcome_ads_allow">Blokker berre sporarar</string>
-    <string name="dejavu_welcome_ads_allow_summary">Sidene viser reklamen sin.</string>
+    <string name="dejavu_welcome_ads_allow_summary">Sidene viser reklamen sin, utan forseinking.</string>
     <string name="dejavu_welcome_default_title">Gjer Dejavu til standardnettlesaren din</string>
     <string name="dejavu_welcome_default_text">Lenker du trykkjer på i andre appar, vert opna i Dejavu.</string>
     <string name="dejavu_welcome_default_done">Dejavu er standardnettlesaren din.</string>

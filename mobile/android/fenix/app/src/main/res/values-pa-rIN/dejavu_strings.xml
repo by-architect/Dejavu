@@ -238,7 +238,7 @@
     <string name="dejavu_history_other_pages">ਹੋਰ ਸਫ਼ੇ</string>
     <string name="dejavu_settings_tab_sleep">ਸਲੀਪ ਮੋਡ ਵਾਲੀਆਂ ਟੈਬਾਂ</string>
     <string name="dejavu_settings_tab_sleep_summary">ਜਿਹੜੀਆਂ ਟੈਬਾਂ ਤੁਸੀਂ ਨਹੀਂ ਵਰਤ ਰਹੇ, ਉਹ ਮੈਮਰੀ ਖਾਲੀ ਕਰਨ ਲਈ ਸਲੀਪ ਮੋਡ ਵਿੱਚ ਚਲੀਆਂ ਜਾਂਦੀਆਂ ਹਨ</string>
-    <string name="dejavu_tab_sleep_hint">ਸਲੀਪ ਮੋਡ ਵਾਲੀ ਟੈਬ ਆਪਣੀ ਮੈਮਰੀ ਖਾਲੀ ਕਰ ਦਿੰਦੀ ਹੈ ਅਤੇ ਜਦੋਂ ਤੁਸੀਂ ਉਸ ਨੂੰ ਖੋਲ੍ਹਦੇ ਹੋ ਤਾਂ ਉਸ ਦਾ ਸਫ਼ਾ ਮੁੜ ਲੋਡ ਕਰਦੀ ਹੈ। ਜਿਹੜੀ ਟੈਬ ਤੁਸੀਂ ਵੇਖ ਰਹੇ ਹੋ, ਵੰਡੇ ਦ੍ਰਿਸ਼ ਵਿੱਚ ਉਸ ਦੇ ਨਾਲ ਵਾਲੀ ਟੈਬ, ਅਤੇ ਆਵਾਜ਼ ਚਲਾ ਰਹੀਆਂ ਜਾਂ ਕੈਮਰਾ ਜਾਂ ਮਾਈਕਰੋਫ਼ੋਨ ਵਰਤ ਰਹੀਆਂ ਟੈਬਾਂ ਚਾਲੂ ਰਹਿੰਦੀਆਂ ਹਨ। ਜਦੋਂ Dejavu ਪਿਛੋਕੜ ਵਿੱਚ ਹੋਵੇ ਅਤੇ Android ਨੂੰ ਮੈਮਰੀ ਦੀ ਲੋੜ ਹੋਵੇ, ਤਾਂ ਤੁਹਾਡੇ ਵਲੋਂ ਆਖਰੀ ਵਾਰ ਵਰਤੀਆਂ ਦੋ ਟੈਬਾਂ ਤੋਂ ਬਿਨਾਂ ਬਾਕੀ ਹਰ ਟੈਬ ਸਲੀਪ ਮੋਡ ਵਿੱਚ ਚਲੀ ਜਾਂਦੀ ਹੈ।</string>
+    <string name="dejavu_tab_sleep_hint">ਸਲੀਪ ਮੋਡ ਵਾਲੀ ਟੈਬ ਆਪਣੀ ਮੈਮਰੀ ਖਾਲੀ ਕਰ ਦਿੰਦੀ ਹੈ ਅਤੇ ਜਦੋਂ ਤੁਸੀਂ ਉਸ ਨੂੰ ਖੋਲ੍ਹਦੇ ਹੋ ਤਾਂ ਉਸ ਦਾ ਸਫ਼ਾ ਮੁੜ ਲੋਡ ਕਰਦੀ ਹੈ। ਜਿਹੜੀ ਟੈਬ ਤੁਸੀਂ ਵੇਖ ਰਹੇ ਹੋ, ਵੰਡੇ ਦ੍ਰਿਸ਼ ਵਿੱਚ ਉਸ ਦੇ ਨਾਲ ਵਾਲੀ ਟੈਬ, ਅਤੇ ਆਵਾਜ਼ ਚਲਾ ਰਹੀਆਂ ਜਾਂ ਕੈਮਰਾ ਜਾਂ ਮਾਈਕਰੋਫ਼ੋਨ ਵਰਤ ਰਹੀਆਂ ਟੈਬਾਂ ਚਾਲੂ ਰਹਿੰਦੀਆਂ ਹਨ। ਜਦੋਂ ਤੁਸੀਂ Dejavu ਬੰਦ ਕਰਦੇ ਹੋ ਜਾਂ Android ਕੋਲ ਮੈਮਰੀ ਘੱਟ ਹੁੰਦੀ ਹੈ, ਤਾਂ ਤੁਹਾਡੇ ਵਲੋਂ ਆਖਰੀ ਵਾਰ ਵਰਤੀਆਂ ਦੋ ਟੈਬਾਂ ਤੋਂ ਬਿਨਾਂ ਬਾਕੀ ਹਰ ਟੈਬ ਸਲੀਪ ਮੋਡ ਵਿੱਚ ਚਲੀ ਜਾਂਦੀ ਹੈ। ਕਿਸੇ ਹੋਰ ਐਪ \'ਤੇ ਜਾਣ ਨਾਲ ਟੈਬਾਂ ਚਾਲੂ ਹੀ ਰਹਿੰਦੀਆਂ ਹਨ।</string>
     <string name="dejavu_tab_sleep_when">ਟੈਬ ਨੂੰ ਸਲੀਪ ਮੋਡ ਵਿੱਚ ਭੇਜੋ</string>
     <plurals name="dejavu_tab_sleep_after_minutes">
         <item quantity="one">%d ਮਿੰਟ ਨਾ ਵਰਤਣ ਤੋਂ ਬਾਅਦ</item>
@@ -510,9 +510,9 @@
     <string name="dejavu_welcome_ads_title">ਇਸ਼ਤਿਹਾਰ ਵੀ ਰੋਕਣੇ ਹਨ?</string>
     <string name="dejavu_welcome_ads_text">Dejavu ਹਮੇਸ਼ਾਂ ਟਰੈਕਰਾਂ ਨੂੰ ਰੋਕਦਾ ਹੈ। ਮੁਫ਼ਤ ਐਡ-ਆਨ uBlock Origin ਇਸ਼ਤਿਹਾਰ ਵੀ ਹਟਾ ਸਕਦੀ ਹੈ।</string>
     <string name="dejavu_welcome_ads_block">ਇਸ਼ਤਿਹਾਰ ਅਤੇ ਟਰੈਕਰ ਰੋਕੋ</string>
-    <string name="dejavu_welcome_ads_block_summary">uBlock Origin ਜੋੜਦਾ ਹੈ।</string>
+    <string name="dejavu_welcome_ads_block_summary">uBlock Origin ਜੋੜਦਾ ਹੈ। ਸਫ਼ੇ ਲਗਭਗ 0.2 ਸਕਿੰਟ ਦੇਰ ਨਾਲ ਦਿਖਦੇ ਹਨ।</string>
     <string name="dejavu_welcome_ads_allow">ਸਿਰਫ਼ ਟਰੈਕਰ ਰੋਕੋ</string>
-    <string name="dejavu_welcome_ads_allow_summary">ਸਫ਼ੇ ਆਪਣੇ ਇਸ਼ਤਿਹਾਰ ਦਿਖਾਉਂਦੇ ਹਨ।</string>
+    <string name="dejavu_welcome_ads_allow_summary">ਸਫ਼ੇ ਆਪਣੇ ਇਸ਼ਤਿਹਾਰ ਦਿਖਾਉਂਦੇ ਹਨ, ਬਿਨਾਂ ਦੇਰੀ ਦੇ।</string>
     <string name="dejavu_welcome_default_title">Dejavu ਨੂੰ ਆਪਣਾ ਮੂਲ ਬਰਾਊਜ਼ਰ ਬਣਾਓ</string>
     <string name="dejavu_welcome_default_text">ਹੋਰ ਐਪਾਂ ਵਿੱਚ ਟੈਪ ਕੀਤੇ ਲਿੰਕ Dejavu ਵਿੱਚ ਖੁੱਲ੍ਹਦੇ ਹਨ।</string>
     <string name="dejavu_welcome_default_done">Dejavu ਤੁਹਾਡਾ ਮੂਲ ਬਰਾਊਜ਼ਰ ਹੈ।</string>

@@ -91,12 +91,17 @@ internal class PageTint(
                     rememberedColors[tab.id]?.let(::tint)
                     if (!tab.content.firstContentfulPaint || window.isFullScreen) return@collectLatest
                     // Waits for the page to settle, as scrolling and loading keep changing what is at its top, then
-                    // looks a few more times, as styles and add-ons like Dark Reader may still change its colors.
+                    // looks again every second while the page loads or its colors still change, as styles and add-ons
+                    // like Dark Reader may change them. Each look makes the engine draw a frame of the page for it.
                     delay(SETTLE_MS)
-                    tintLike(tab.id)
+                    var seen = tintLike(tab.id)
                     repeat(LATER_LOOKS) {
                         delay(LATER_LOOK_MS)
-                        tintLike(tab.id)
+                        val now = tintLike(tab.id)
+                        if (now == seen && browserStore.state.selectedTab?.content?.loading != true) {
+                            return@collectLatest
+                        }
+                        seen = now
                     }
                 }
             }
@@ -138,13 +143,13 @@ internal class PageTint(
     }
 
     /**
-     * Tints like the page of the tab with [tabId] shows at its top and behind the navigation bar now, and remembers
-     * those colors for the tab.
+     * Tints like the page of the tab with [tabId] shows at its top and behind the navigation bar now, remembers those
+     * colors for the tab and returns them; `null` when the page could not be pictured.
      */
-    private suspend fun tintLike(tabId: String) {
+    private suspend fun tintLike(tabId: String): PageColors? {
         val view = (engineView.asView() as? ViewGroup)?.children?.firstOrNull { it is GeckoView } as? GeckoView
-        if (view == null || !view.isAttachedToWindow) return
-        val edge = captureTopEdge(view, EDGE_SAMPLES)?.valueOrNull() ?: return
+        if (view == null || !view.isAttachedToWindow) return null
+        val edge = captureTopEdge(view, EDGE_SAMPLES)?.valueOrNull() ?: return null
         val top = edge.topEdgeColor()
         edge.recycle()
         val row = captureRow(view, view.rowBehindNavigationBar(), EDGE_SAMPLES)?.valueOrNull()
@@ -152,6 +157,7 @@ internal class PageTint(
         row?.recycle()
         rememberedColors.put(tabId, colors)
         tint(colors)
+        return colors
     }
 
     private fun tint(colors: PageColors) {
@@ -195,7 +201,7 @@ internal class PageTint(
 }
 
 /** The color along the top edge of a page, and the one of the page behind the navigation bar. */
-private class PageColors(val top: Int, val bottom: Int)
+private data class PageColors(val top: Int, val bottom: Int)
 
 /** The row of [this] page view behind the middle of the navigation bar, or its last row without one. */
 private fun View.rowBehindNavigationBar(): Int {

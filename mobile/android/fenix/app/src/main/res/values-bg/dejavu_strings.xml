@@ -238,7 +238,7 @@
     <string name="dejavu_history_other_pages">Други страници</string>
     <string name="dejavu_settings_tab_sleep">Спящи раздели</string>
     <string name="dejavu_settings_tab_sleep_summary">Разделите, които не използвате, заспиват, за да освободят памет</string>
-    <string name="dejavu_tab_sleep_hint">Спящият раздел освобождава паметта си и зарежда страницата отново, когато го отворите. Разделът, който разглеждате, съседният му в разделения изглед и разделите, които възпроизвеждат звук или използват камерата или микрофона, остават будни. Когато Android се нуждае от памет, докато Dejavu е във фонов режим, заспиват всички раздели освен двата, които сте използвали последни.</string>
+    <string name="dejavu_tab_sleep_hint">Спящият раздел освобождава паметта си и зарежда страницата отново, когато го отворите. Разделът, който разглеждате, съседният му в разделения изглед и разделите, които възпроизвеждат звук или използват камерата или микрофона, остават будни. Когато затворите Dejavu или на Android не му достига памет, заспиват всички раздели освен двата, които сте използвали последни. При превключване към друго приложение разделите остават будни.</string>
     <string name="dejavu_tab_sleep_when">Приспиване на раздели</string>
     <plurals name="dejavu_tab_sleep_after_minutes">
         <item quantity="one">След %d минута без използване</item>
@@ -510,9 +510,9 @@
     <string name="dejavu_welcome_ads_title">Блокиране и на рекламите?</string>
     <string name="dejavu_welcome_ads_text">Dejavu винаги блокира проследяващите елементи. uBlock Origin, безплатна добавка, може да премахва и рекламите.</string>
     <string name="dejavu_welcome_ads_block">Блокиране на реклами и проследяващи елементи</string>
-    <string name="dejavu_welcome_ads_block_summary">Добавя uBlock Origin.</string>
+    <string name="dejavu_welcome_ads_block_summary">Добавя uBlock Origin. Страниците се показват около 0,2 с по-късно.</string>
     <string name="dejavu_welcome_ads_allow">Блокиране само на проследяващи елементи</string>
-    <string name="dejavu_welcome_ads_allow_summary">Страниците показват рекламите си.</string>
+    <string name="dejavu_welcome_ads_allow_summary">Страниците показват рекламите си, без забавяне.</string>
     <string name="dejavu_welcome_default_title">Направете Dejavu свой браузър по подразбиране</string>
     <string name="dejavu_welcome_default_text">Връзките, които докосвате в други приложения, се отварят в Dejavu.</string>
     <string name="dejavu_welcome_default_done">Dejavu е вашият браузър по подразбиране.</string>

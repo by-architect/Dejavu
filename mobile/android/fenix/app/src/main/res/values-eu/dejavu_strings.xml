@@ -238,7 +238,7 @@
     <string name="dejavu_history_other_pages">Beste orri batzuk</string>
     <string name="dejavu_settings_tab_sleep">Esekitako fitxak</string>
     <string name="dejavu_settings_tab_sleep_summary">Erabiltzen ari ez zaren fitxak eseki egiten dira memoria askatzeko</string>
-    <string name="dejavu_tab_sleep_hint">Esekitako fitxa batek bere memoria askatzen du, eta orria berriro kargatzen du irekitzen duzunean. Ikusten ari zaren fitxa, ikuspegi zatituan haren ondoan dagoena eta soinua erreproduzitzen edo kamera edo mikrofonoa erabiltzen ari diren fitxak aktibo jarraitzen dute. Androidek memoria behar duenean Dejavu atzeko planoan dagoela, azken aldiz erabili dituzun bi fitxak izan ezik, beste guztiak eseki egiten dira.</string>
+    <string name="dejavu_tab_sleep_hint">Esekitako fitxa batek bere memoria askatzen du, eta orria berriro kargatzen du irekitzen duzunean. Ikusten ari zaren fitxa, ikuspegi zatituan haren ondoan dagoena eta soinua erreproduzitzen edo kamera edo mikrofonoa erabiltzen ari diren fitxak aktibo jarraitzen dute. Dejavu ixten duzunean edo Androidek memoria gutxi duenean, azken aldiz erabili dituzun bi fitxak izan ezik, beste guztiak eseki egiten dira. Beste aplikazio batera aldatzean, fitxak aktibo jarraitzen dute.</string>
     <string name="dejavu_tab_sleep_when">Esekitu fitxa bat</string>
     <plurals name="dejavu_tab_sleep_after_minutes">
         <item quantity="one">Erabili gabeko %d minutu igarotakoan</item>
@@ -510,9 +510,9 @@
     <string name="dejavu_welcome_ads_title">Iragarkiak ere blokeatu?</string>
     <string name="dejavu_welcome_ads_text">Dejavuk beti blokeatzen ditu jarraipen-elementuak. uBlock Origin gehigarri doakoarekin iragarkiak ere ken daitezke.</string>
     <string name="dejavu_welcome_ads_block">Blokeatu iragarkiak eta jarraipen-elementuak</string>
-    <string name="dejavu_welcome_ads_block_summary">uBlock Origin gehitzen du.</string>
+    <string name="dejavu_welcome_ads_block_summary">uBlock Origin gehitzen du. Orriak 0,2 s inguru beranduago agertzen dira.</string>
     <string name="dejavu_welcome_ads_allow">Blokeatu jarraipen-elementuak soilik</string>
-    <string name="dejavu_welcome_ads_allow_summary">Orriek beren iragarkiak erakusten dituzte.</string>
+    <string name="dejavu_welcome_ads_allow_summary">Orriek beren iragarkiak erakusten dituzte, atzerapenik gabe.</string>
     <string name="dejavu_welcome_default_title">Egin Dejavu zure nabigatzaile lehenetsia</string>
     <string name="dejavu_welcome_default_text">Beste aplikazioetan sakatzen dituzun estekak Dejavun irekitzen dira.</string>
     <string name="dejavu_welcome_default_done">Dejavu da zure nabigatzaile lehenetsia.</string>

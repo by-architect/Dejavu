@@ -237,7 +237,7 @@
     <string name="dejavu_history_other_pages">หน้าอื่น ๆ</string>
     <string name="dejavu_settings_tab_sleep">แท็บที่พักอยู่</string>
     <string name="dejavu_settings_tab_sleep_summary">แท็บที่คุณไม่ได้ใช้จะพักเพื่อคืนหน่วยความจำ</string>
-    <string name="dejavu_tab_sleep_hint">แท็บที่พักอยู่จะคืนหน่วยความจำและโหลดหน้าใหม่เมื่อคุณเปิด แท็บที่คุณกำลังดู แท็บที่อยู่ข้างกันในการแบ่งหน้าจอ และแท็บที่กำลังเล่นเสียงหรือใช้กล้องหรือไมโครโฟนจะไม่พัก เมื่อ Android ต้องการหน่วยความจำขณะที่ Dejavu ทำงานอยู่เบื้องหลัง แท็บทั้งหมดจะพัก ยกเว้นสองแท็บที่คุณใช้ล่าสุด</string>
+    <string name="dejavu_tab_sleep_hint">แท็บที่พักอยู่จะคืนหน่วยความจำและโหลดหน้าใหม่เมื่อคุณเปิด แท็บที่คุณกำลังดู แท็บที่อยู่ข้างกันในการแบ่งหน้าจอ และแท็บที่กำลังเล่นเสียงหรือใช้กล้องหรือไมโครโฟนจะไม่พัก เมื่อคุณปิด Dejavu หรือ Android มีหน่วยความจำเหลือน้อย แท็บทั้งหมดจะพัก ยกเว้นสองแท็บที่คุณใช้ล่าสุด การสลับไปใช้แอปอื่นจะไม่ทำให้แท็บพัก</string>
     <string name="dejavu_tab_sleep_when">พักแท็บเมื่อ</string>
     <plurals name="dejavu_tab_sleep_after_minutes">
         <item quantity="other">หลังจากไม่ได้ใช้ %d นาที</item>
@@ -502,9 +502,9 @@
     <string name="dejavu_welcome_ads_title">ปิดกั้นโฆษณาด้วยไหม?</string>
     <string name="dejavu_welcome_ads_text">Dejavu ปิดกั้นตัวติดตามเสมอ ส่วนเสริมฟรีอย่าง uBlock Origin สามารถลบโฆษณาได้ด้วย</string>
     <string name="dejavu_welcome_ads_block">ปิดกั้นโฆษณาและตัวติดตาม</string>
-    <string name="dejavu_welcome_ads_block_summary">เพิ่ม uBlock Origin</string>
+    <string name="dejavu_welcome_ads_block_summary">เพิ่ม uBlock Origin หน้าเว็บจะแสดงช้าลงประมาณ 0.2 วินาที</string>
     <string name="dejavu_welcome_ads_allow">ปิดกั้นเฉพาะตัวติดตาม</string>
-    <string name="dejavu_welcome_ads_allow_summary">หน้าเว็บจะแสดงโฆษณาของตัวเอง</string>
+    <string name="dejavu_welcome_ads_allow_summary">หน้าเว็บจะแสดงโฆษณาของตัวเอง โดยไม่ล่าช้า</string>
     <string name="dejavu_welcome_default_title">ตั้ง Dejavu เป็นเบราว์เซอร์เริ่มต้นของคุณ</string>
     <string name="dejavu_welcome_default_text">ลิงก์ที่คุณแตะในแอปอื่นจะเปิดใน Dejavu</string>
     <string name="dejavu_welcome_default_done">Dejavu เป็นเบราว์เซอร์เริ่มต้นของคุณแล้ว</string>

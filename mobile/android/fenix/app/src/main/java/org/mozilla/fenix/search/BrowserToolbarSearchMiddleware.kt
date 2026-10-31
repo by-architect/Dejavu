@@ -472,13 +472,11 @@ class BrowserToolbarSearchMiddleware(
                 store.dispatch(
                     BrowserEditToolbarAction.AutocompleteSuggestionUpdated(
                         withContext(autocompleteDispatcher) {
+                            // Dejavu opens no connection ahead to the address the autocomplete only guessed.
                             fetchAutocomplete(
-                                    buildAutocompleteProvidersList(reconcileSelectedEngine()),
-                                    store.state.editState.query.current,
-                                )
-                                ?.also {
-                                    components.core.engine.speculativeConnect(it.url)
-                                }
+                                buildAutocompleteProvidersList(reconcileSelectedEngine()),
+                                store.state.editState.query.current,
+                            )
                         }
                     )
                 )

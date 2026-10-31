@@ -238,7 +238,7 @@
     <string name="dejavu_history_other_pages">Âtre pagine</string>
     <string name="dejavu_settings_tab_sleep">Feuggi addormii</string>
     <string name="dejavu_settings_tab_sleep_summary">I feuggi che no ti doeuvi s\'addorman pe liberâ memöia</string>
-    <string name="dejavu_tab_sleep_hint">Un feuggio addormio o libera a sò memöia e o carrega torna a sò pagina quande ti l\'arvi. O feuggio che ti veddi, quello vixin inte a vista spartia e i feuggi che sonan ò che doeuvan a fòtocamera ò o micròfono restan adesci. Quande Android o l\'à de bezeugno de memöia mentre Dejavu o l\'é in sciô sfondo, tutti i feuggi fêua che i urtimi doî che t\'æ doeuviou s\'addorman.</string>
+    <string name="dejavu_tab_sleep_hint">Un feuggio addormio o libera a sò memöia e o carrega torna a sò pagina quande ti l\'arvi. O feuggio che ti veddi, quello vixin inte a vista spartia e i feuggi che sonan ò che doeuvan a fòtocamera ò o micròfono restan adesci. Quande ti særi Dejavu ò Android o l\'à pöca memöia, tutti i feuggi fêua che i urtimi doî che t\'æ doeuviou s\'addorman. Se ti passi a un\'âtra app, i feuggi restan adesci.</string>
     <string name="dejavu_tab_sleep_when">Fa dormî un feuggio</string>
     <plurals name="dejavu_tab_sleep_after_minutes">
         <item quantity="one">Dòppo %d menuto sensa uso</item>
@@ -510,9 +510,9 @@
     <string name="dejavu_welcome_ads_title">Blòccâ ascì i anonçi?</string>
     <string name="dejavu_welcome_ads_text">Dejavu o blòcca sempre i traciatoî. uBlock Origin, un conponente azonto gratis, o peu levâ ascì i anonçi.</string>
     <string name="dejavu_welcome_ads_block">Blòcca anonçi e traciatoî</string>
-    <string name="dejavu_welcome_ads_block_summary">Azzonze uBlock Origin.</string>
+    <string name="dejavu_welcome_ads_block_summary">Azzonze uBlock Origin. E pagine s\'amostran circa 0,2 s dòppo.</string>
     <string name="dejavu_welcome_ads_allow">Blòcca solo i traciatoî</string>
-    <string name="dejavu_welcome_ads_allow_summary">E pagine amostran i sò anonçi.</string>
+    <string name="dejavu_welcome_ads_allow_summary">E pagine amostran i sò anonçi, sensa ritardo.</string>
     <string name="dejavu_welcome_default_title">Fa de Dejavu o tò navegatô predefinio</string>
     <string name="dejavu_welcome_default_text">I ligammi che ti tocchi inte âtre app s\'arvan in Dejavu.</string>
     <string name="dejavu_welcome_default_done">Dejavu o l\'é o tò navegatô predefinio.</string>

@@ -238,7 +238,7 @@
     <string name="dejavu_history_other_pages">Andere Seiten</string>
     <string name="dejavu_settings_tab_sleep">Schlafende Tabs</string>
     <string name="dejavu_settings_tab_sleep_summary">Tabs, die du nicht nutzt, schlafen, um Speicher freizugeben</string>
-    <string name="dejavu_tab_sleep_hint">Ein schlafender Tab gibt seinen Speicher frei und lädt seine Seite neu, wenn du ihn öffnest. Der Tab, den du gerade ansiehst, der Tab daneben in der geteilten Ansicht und Tabs, die Ton abspielen oder Kamera oder Mikrofon nutzen, bleiben wach. Wenn Android Speicher braucht, während Dejavu im Hintergrund ist, schlafen alle Tabs außer den zwei zuletzt genutzten ein.</string>
+    <string name="dejavu_tab_sleep_hint">Ein schlafender Tab gibt seinen Speicher frei und lädt seine Seite neu, wenn du ihn öffnest. Der Tab, den du gerade ansiehst, der Tab daneben in der geteilten Ansicht und Tabs, die Ton abspielen oder Kamera oder Mikrofon nutzen, bleiben wach. Wenn du Dejavu schließt oder Android wenig Speicher hat, schlafen alle Tabs außer den zwei zuletzt genutzten ein. Wechselst du zu einer anderen App, bleiben sie wach.</string>
     <string name="dejavu_tab_sleep_when">Tab schlafen legen</string>
     <plurals name="dejavu_tab_sleep_after_minutes">
         <item quantity="one">Nach %d Minute ohne Nutzung</item>
@@ -510,9 +510,9 @@
     <string name="dejavu_welcome_ads_title">Auch Werbung blockieren?</string>
     <string name="dejavu_welcome_ads_text">Dejavu blockiert immer Tracker. uBlock Origin, eine kostenlose Erweiterung, kann auch Werbung entfernen.</string>
     <string name="dejavu_welcome_ads_block">Werbung und Tracker blockieren</string>
-    <string name="dejavu_welcome_ads_block_summary">Fügt uBlock Origin hinzu.</string>
+    <string name="dejavu_welcome_ads_block_summary">Fügt uBlock Origin hinzu. Seiten erscheinen etwa 0,2 s später.</string>
     <string name="dejavu_welcome_ads_allow">Nur Tracker blockieren</string>
-    <string name="dejavu_welcome_ads_allow_summary">Seiten zeigen ihre Werbung.</string>
+    <string name="dejavu_welcome_ads_allow_summary">Seiten zeigen ihre Werbung, ohne Verzögerung.</string>
     <string name="dejavu_welcome_default_title">Mach Dejavu zu deinem Standardbrowser</string>
     <string name="dejavu_welcome_default_text">Links, die du in anderen Apps antippst, öffnen sich in Dejavu.</string>
     <string name="dejavu_welcome_default_done">Dejavu ist dein Standardbrowser.</string>

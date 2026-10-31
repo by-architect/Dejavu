@@ -238,7 +238,7 @@
     <string name="dejavu_history_other_pages">Башка битләр</string>
     <string name="dejavu_settings_tab_sleep">Йокыдагы таблар</string>
     <string name="dejavu_settings_tab_sleep_summary">Сез кулланмаган таблар хәтерне бушату өчен йоклый</string>
-    <string name="dejavu_tab_sleep_hint">Йокыдагы таб үз хәтерен бушата һәм сез аны ачканда битне яңадан йөкли. Сез караган таб, бүленгән күренештә аның янындагы таб һәм тавыш уйнаткан яки камера я микрофон кулланган таблар уяу кала. Dejavu фонда эшләгәндә Android-ка хәтер кирәк булса, сез соңгы кулланган ике табтан башка барлык таблар йоклый.</string>
+    <string name="dejavu_tab_sleep_hint">Йокыдагы таб үз хәтерен бушата һәм сез аны ачканда битне яңадан йөкли. Сез караган таб, бүленгән күренештә аның янындагы таб һәм тавыш уйнаткан яки камера я микрофон кулланган таблар уяу кала. Dejavu-ны япканда яки Android-та хәтер аз калганда, сез соңгы кулланган ике табтан башка барлык таблар йоклый. Башка кушымтага күчкәндә таблар уяу кала.</string>
     <string name="dejavu_tab_sleep_when">Табларны йокыга җибәрү</string>
     <plurals name="dejavu_tab_sleep_after_minutes">
         <item quantity="one">%d минут кулланылмаганнан соң</item>
@@ -510,9 +510,9 @@
     <string name="dejavu_welcome_ads_title">Рекламаны да блокларгамы?</string>
     <string name="dejavu_welcome_ads_text">Dejavu күзәтүчеләрне һәрвакыт блоклый. Түләүсез киңәйтү булган uBlock Origin рекламаны да бетерә ала.</string>
     <string name="dejavu_welcome_ads_block">Рекламаны һәм күзәтүчеләрне блоклау</string>
-    <string name="dejavu_welcome_ads_block_summary">uBlock Origin өсти.</string>
+    <string name="dejavu_welcome_ads_block_summary">uBlock Origin өсти. Битләр якынча 0,2 сек соңрак күренә.</string>
     <string name="dejavu_welcome_ads_allow">Күзәтүчеләрне генә блоклау</string>
-    <string name="dejavu_welcome_ads_allow_summary">Битләр үз рекламаларын күрсәтә.</string>
+    <string name="dejavu_welcome_ads_allow_summary">Битләр үз рекламаларын күрсәтә, тоткарлык булмый.</string>
     <string name="dejavu_welcome_default_title">Dejavu-ны төп браузерыгыз итегез</string>
     <string name="dejavu_welcome_default_text">Башка кушымталарда баскан сылтамаларыгыз Dejavu-да ачыла.</string>
     <string name="dejavu_welcome_default_done">Dejavu — сезнең төп браузерыгыз.</string>

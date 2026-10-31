@@ -238,7 +238,7 @@
     <string name="dejavu_history_other_pages">Boshqa sahifalar</string>
     <string name="dejavu_settings_tab_sleep">Uxlayotgan varaqlar</string>
     <string name="dejavu_settings_tab_sleep_summary">Foydalanmayotgan varaqlaringiz xotirani bo\'shatish uchun uxlaydi</string>
-    <string name="dejavu_tab_sleep_hint">Uxlayotgan varaq o\'z xotirasini bo\'shatadi va uni ochganingizda sahifani qayta yuklaydi. Siz ko\'rayotgan varaq, bo\'lingan ko\'rinishda uning yonidagi varaq hamda ovoz ijro etayotgan yoki kamera yoxud mikrofondan foydalanayotgan varaqlar uyg\'oq qoladi. Dejavu fonda ishlayotganda Android-ga xotira kerak bo\'lsa, oxirgi foydalangan ikki varaqingizdan boshqa barcha varaqlar uxlaydi.</string>
+    <string name="dejavu_tab_sleep_hint">Uxlayotgan varaq o\'z xotirasini bo\'shatadi va uni ochganingizda sahifani qayta yuklaydi. Siz ko\'rayotgan varaq, bo\'lingan ko\'rinishda uning yonidagi varaq hamda ovoz ijro etayotgan yoki kamera yoxud mikrofondan foydalanayotgan varaqlar uyg\'oq qoladi. Dejavu-ni yopganingizda yoki Android-da xotira kamayib qolganda, oxirgi foydalangan ikki varaqingizdan boshqa barcha varaqlar uxlaydi. Boshqa ilovaga o\'tganingizda varaqlar uyg\'oq qoladi.</string>
     <string name="dejavu_tab_sleep_when">Varaqlarni uxlatish</string>
     <plurals name="dejavu_tab_sleep_after_minutes">
         <item quantity="one">%d daqiqa foydalanilmagandan keyin</item>
@@ -510,9 +510,9 @@
     <string name="dejavu_welcome_ads_title">Reklama ham bloklansinmi?</string>
     <string name="dejavu_welcome_ads_text">Dejavu doim kuzatuvchilarni bloklaydi. Bepul qoʻshimcha uBlock Origin reklamani ham olib tashlay oladi.</string>
     <string name="dejavu_welcome_ads_block">Reklama va kuzatuvchilarni bloklash</string>
-    <string name="dejavu_welcome_ads_block_summary">uBlock Origin qoʻshiladi.</string>
+    <string name="dejavu_welcome_ads_block_summary">uBlock Origin qoʻshiladi. Sahifalar taxminan 0,2 soniya kechroq koʻrinadi.</string>
     <string name="dejavu_welcome_ads_allow">Faqat kuzatuvchilarni bloklash</string>
-    <string name="dejavu_welcome_ads_allow_summary">Sahifalar oʻz reklamasini koʻrsatadi.</string>
+    <string name="dejavu_welcome_ads_allow_summary">Sahifalar oʻz reklamasini koʻrsatadi, kechikish boʻlmaydi.</string>
     <string name="dejavu_welcome_default_title">Dejavu-ni asosiy brauzeringiz qiling</string>
     <string name="dejavu_welcome_default_text">Boshqa ilovalarda bosgan havolalaringiz Dejavu-da ochiladi.</string>
     <string name="dejavu_welcome_default_done">Dejavu — asosiy brauzeringiz.</string>

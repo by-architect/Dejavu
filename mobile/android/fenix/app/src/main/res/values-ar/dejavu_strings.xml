@@ -242,7 +242,7 @@
     <string name="dejavu_history_other_pages">صفحات أخرى</string>
     <string name="dejavu_settings_tab_sleep">التبويبات النائمة</string>
     <string name="dejavu_settings_tab_sleep_summary">تنام التبويبات التي لا تستخدمها لتحرير الذاكرة</string>
-    <string name="dejavu_tab_sleep_hint">يحرر التبويب النائم ذاكرته ويعيد تحميل صفحته عندما تفتحه. أما التبويب الذي تنظر إليه، والتبويب المجاور له في العرض المقسم، والتبويبات التي تشغّل صوتًا أو تستخدم الكمرة أو الميكروفون، فتبقى مستيقظة. عندما يحتاج Android إلى الذاكرة بينما يعمل Dejavu في الخلفية، تنام كل التبويبات ما عدا آخر تبويبين استخدمتهما.</string>
+    <string name="dejavu_tab_sleep_hint">يحرر التبويب النائم ذاكرته ويعيد تحميل صفحته عندما تفتحه. أما التبويب الذي تنظر إليه، والتبويب المجاور له في العرض المقسم، والتبويبات التي تشغّل صوتًا أو تستخدم الكمرة أو الميكروفون، فتبقى مستيقظة. عندما تغلق Dejavu أو تنخفض ذاكرة Android، تنام كل التبويبات ما عدا آخر تبويبين استخدمتهما. أما التبديل إلى تطبيق آخر فيُبقيها مستيقظة.</string>
     <string name="dejavu_tab_sleep_when">تنويم التبويب</string>
     <plurals name="dejavu_tab_sleep_after_minutes">
         <item quantity="zero">بعد %d دقيقة دون استخدام</item>
@@ -542,9 +542,9 @@
     <string name="dejavu_welcome_ads_title">حجب الإعلانات أيضًا؟</string>
     <string name="dejavu_welcome_ads_text">يحجب Dejavu المتعقّبات دائمًا. ويمكن أن يزيل uBlock Origin، وهو امتداد مجاني، الإعلانات أيضًا.</string>
     <string name="dejavu_welcome_ads_block">احجب الإعلانات والمتعقّبات</string>
-    <string name="dejavu_welcome_ads_block_summary">يضيف uBlock Origin.</string>
+    <string name="dejavu_welcome_ads_block_summary">يضيف uBlock Origin. تظهر الصفحات متأخرة بنحو 0.2 ثانية.</string>
     <string name="dejavu_welcome_ads_allow">احجب المتعقّبات فقط</string>
-    <string name="dejavu_welcome_ads_allow_summary">تعرض الصفحات إعلاناتها.</string>
+    <string name="dejavu_welcome_ads_allow_summary">تعرض الصفحات إعلاناتها، دون تأخير.</string>
     <string name="dejavu_welcome_default_title">اجعل Dejavu متصفحك المبدئي</string>
     <string name="dejavu_welcome_default_text">الروابط التي تضغط عليها في التطبيقات الأخرى تُفتح في Dejavu.</string>
     <string name="dejavu_welcome_default_done">أصبح Dejavu متصفحك المبدئي.</string>

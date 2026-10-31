@@ -238,7 +238,7 @@
     <string name="dejavu_history_other_pages">Altre pagine</string>
     <string name="dejavu_settings_tab_sleep">Unghjette addurmintate</string>
     <string name="dejavu_settings_tab_sleep_summary">L\'unghjette ch\'è vo ùn aduprate micca s\'addurmentanu per liberà a memoria</string>
-    <string name="dejavu_tab_sleep_hint">Un\'unghjetta addurmintata libera a so memoria è ricarica a so pagina quandu vo l\'aprite. L\'unghjetta ch\'è vo fighjate, quella accantu in vista spartuta è l\'unghjette chì sonanu o chì adopranu l\'apparechju-fotò o u microfonu fermanu attive. Quandu Android hà bisognu di memoria mentre chì Dejavu hè in sfondu, tutte l\'unghjette fora di l\'ultime duie ch\'è vo avete adupratu s\'addurmentanu.</string>
+    <string name="dejavu_tab_sleep_hint">Un\'unghjetta addurmintata libera a so memoria è ricarica a so pagina quandu vo l\'aprite. L\'unghjetta ch\'è vo fighjate, quella accantu in vista spartuta è l\'unghjette chì sonanu o chì adopranu l\'apparechju-fotò o u microfonu fermanu attive. Quandu vo chjudite Dejavu o quandu Android manca di memoria, tutte l\'unghjette fora di l\'ultime duie ch\'è vo avete adupratu s\'addurmentanu. S\'è vo passate à un\'altra appiecazione, fermanu attive.</string>
     <string name="dejavu_tab_sleep_when">Addurmintà un\'unghjetta</string>
     <plurals name="dejavu_tab_sleep_after_minutes">
         <item quantity="one">Dopu à %d minutu senza usu</item>
@@ -510,9 +510,9 @@
     <string name="dejavu_welcome_ads_title">Bluccà dinù e publicità?</string>
     <string name="dejavu_welcome_ads_text">Dejavu blocca sempre l\'elementi di spiunagiu. uBlock Origin, un\'estensione gratuita, pò caccià dinù e publicità.</string>
     <string name="dejavu_welcome_ads_block">Bluccà e publicità è l\'elementi di spiunagiu</string>
-    <string name="dejavu_welcome_ads_block_summary">Aghjunghje uBlock Origin.</string>
+    <string name="dejavu_welcome_ads_block_summary">Aghjunghje uBlock Origin. E pagine s\'affissanu circa 0,2 s più tardi.</string>
     <string name="dejavu_welcome_ads_allow">Bluccà solu l\'elementi di spiunagiu</string>
-    <string name="dejavu_welcome_ads_allow_summary">E pagine affissanu e so publicità.</string>
+    <string name="dejavu_welcome_ads_allow_summary">E pagine affissanu e so publicità, senza ritardu.</string>
     <string name="dejavu_welcome_default_title">Fate di Dejavu u vostru navigatore predefinitu</string>
     <string name="dejavu_welcome_default_text">I liami ch\'è vo tuccate in altre appiecazioni s\'aprenu in Dejavu.</string>
     <string name="dejavu_welcome_default_done">Dejavu hè u vostru navigatore predefinitu.</string>

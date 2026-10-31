@@ -237,7 +237,7 @@
     <string name="dejavu_history_other_pages">Trang khác</string>
     <string name="dejavu_settings_tab_sleep">Thẻ tạm ngủ</string>
     <string name="dejavu_settings_tab_sleep_summary">Thẻ bạn không dùng sẽ tạm ngủ để giải phóng bộ nhớ</string>
-    <string name="dejavu_tab_sleep_hint">Thẻ tạm ngủ sẽ giải phóng bộ nhớ và tải lại trang khi bạn mở nó. Thẻ bạn đang xem, thẻ bên cạnh nó trong chế độ chia đôi màn hình, và các thẻ đang phát âm thanh hoặc dùng máy ảnh hay micrô sẽ không tạm ngủ. Khi Android cần bộ nhớ trong lúc Dejavu chạy nền, mọi thẻ sẽ tạm ngủ, trừ hai thẻ bạn dùng gần nhất.</string>
+    <string name="dejavu_tab_sleep_hint">Thẻ tạm ngủ sẽ giải phóng bộ nhớ và tải lại trang khi bạn mở nó. Thẻ bạn đang xem, thẻ bên cạnh nó trong chế độ chia đôi màn hình, và các thẻ đang phát âm thanh hoặc dùng máy ảnh hay micrô sẽ không tạm ngủ. Khi bạn đóng Dejavu hoặc Android sắp hết bộ nhớ, mọi thẻ sẽ tạm ngủ, trừ hai thẻ bạn dùng gần nhất. Khi chuyển sang ứng dụng khác, các thẻ sẽ không tạm ngủ.</string>
     <string name="dejavu_tab_sleep_when">Cho thẻ tạm ngủ</string>
     <plurals name="dejavu_tab_sleep_after_minutes">
         <item quantity="other">Sau %d phút không dùng</item>
@@ -502,9 +502,9 @@
     <string name="dejavu_welcome_ads_title">Chặn cả quảng cáo?</string>
     <string name="dejavu_welcome_ads_text">Dejavu luôn chặn trình theo dõi. uBlock Origin, một tiện ích miễn phí, cũng có thể xóa quảng cáo.</string>
     <string name="dejavu_welcome_ads_block">Chặn quảng cáo và trình theo dõi</string>
-    <string name="dejavu_welcome_ads_block_summary">Thêm uBlock Origin.</string>
+    <string name="dejavu_welcome_ads_block_summary">Thêm uBlock Origin. Các trang sẽ hiện chậm hơn khoảng 0,2 giây.</string>
     <string name="dejavu_welcome_ads_allow">Chỉ chặn trình theo dõi</string>
-    <string name="dejavu_welcome_ads_allow_summary">Các trang hiển thị quảng cáo của chúng.</string>
+    <string name="dejavu_welcome_ads_allow_summary">Các trang hiển thị quảng cáo của chúng, không bị chậm trễ.</string>
     <string name="dejavu_welcome_default_title">Đặt Dejavu làm trình duyệt mặc định</string>
     <string name="dejavu_welcome_default_text">Liên kết bạn nhấn trong ứng dụng khác sẽ mở trong Dejavu.</string>
     <string name="dejavu_welcome_default_done">Dejavu là trình duyệt mặc định của bạn.</string>

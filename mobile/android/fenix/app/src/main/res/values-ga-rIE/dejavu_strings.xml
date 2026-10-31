@@ -241,7 +241,7 @@
     <string name="dejavu_history_other_pages">Leathanaigh eile</string>
     <string name="dejavu_settings_tab_sleep">Cluaisíní ina gcodladh</string>
     <string name="dejavu_settings_tab_sleep_summary">Téann cluaisíní nach bhfuil á n-úsáid agat a chodladh chun cuimhne a shaoradh</string>
-    <string name="dejavu_tab_sleep_hint">Saorann cluaisín ina chodladh a chuimhne agus lódálann sé a leathanach arís nuair a osclaíonn tú é. Fanann an cluaisín atá tú ag féachaint air, an ceann in aice leis san amharc scoilte agus cluaisíní a sheinneann fuaim nó a úsáideann an ceamara nó an micreafón ina ndúiseacht. Nuair a bhíonn cuimhne de dhíth ar Android agus Dejavu sa chúlra, téann gach cluaisín a chodladh ach an dá cheann is déanaí a d’úsáid tú.</string>
+    <string name="dejavu_tab_sleep_hint">Saorann cluaisín ina chodladh a chuimhne agus lódálann sé a leathanach arís nuair a osclaíonn tú é. Fanann an cluaisín atá tú ag féachaint air, an ceann in aice leis san amharc scoilte agus cluaisíní a sheinneann fuaim nó a úsáideann an ceamara nó an micreafón ina ndúiseacht. Nuair a dhúnann tú Dejavu nó nuair a bhíonn Android gann ar chuimhne, téann gach cluaisín a chodladh ach an dá cheann is déanaí a d’úsáid tú. Má aistríonn tú go haip eile, fanann na cluaisíní ina ndúiseacht.</string>
     <string name="dejavu_tab_sleep_when">Cuir cluaisín a chodladh</string>
     <plurals name="dejavu_tab_sleep_after_minutes">
         <item quantity="one">Tar éis %d nóiméad gan úsáid</item>
@@ -534,9 +534,9 @@
     <string name="dejavu_welcome_ads_title">Cosc a chur ar fhógraí freisin?</string>
     <string name="dejavu_welcome_ads_text">Cuireann Dejavu cosc ar lorgairí i gcónaí. Is féidir leis an mbreiseán saor in aisce uBlock Origin fógraí a bhaint freisin.</string>
     <string name="dejavu_welcome_ads_block">Cuir cosc ar fhógraí agus ar lorgairí</string>
-    <string name="dejavu_welcome_ads_block_summary">Cuirtear uBlock Origin leis.</string>
+    <string name="dejavu_welcome_ads_block_summary">Cuirtear uBlock Origin leis. Taispeántar leathanaigh thart ar 0.2 soicind níos déanaí.</string>
     <string name="dejavu_welcome_ads_allow">Cuir cosc ar lorgairí amháin</string>
-    <string name="dejavu_welcome_ads_allow_summary">Taispeánann leathanaigh a gcuid fógraí.</string>
+    <string name="dejavu_welcome_ads_allow_summary">Taispeánann leathanaigh a gcuid fógraí, gan mhoill.</string>
     <string name="dejavu_welcome_default_title">Déan do bhrabhsálaí réamhshocraithe de Dejavu</string>
     <string name="dejavu_welcome_default_text">Osclaítear i Dejavu naisc a thapálann tú in aipeanna eile.</string>
     <string name="dejavu_welcome_default_done">Is é Dejavu do bhrabhsálaí réamhshocraithe.</string>

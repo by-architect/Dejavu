@@ -42,6 +42,7 @@ import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
 import androidx.navigation.findNavController
 import mozilla.appservices.places.BookmarkRoot
+import mozilla.components.browser.state.selector.findTab
 import mozilla.components.browser.state.selector.selectedTab
 import mozilla.components.browser.state.state.TabSessionState
 import mozilla.components.compose.browser.toolbar.store.BrowserToolbarInteraction.BrowserToolbarEvent
@@ -126,13 +127,46 @@ fun DejavuActionsBar(onEvent: (BrowserToolbarEvent) -> Unit, tabId: String? = nu
 /** The tab the buttons of a bar act on, and what they show about it. */
 internal class BarTab(val tab: TabSessionState?, val state: MoreMenuState)
 
+/**
+ * The parts of a tab that the buttons of a bar show. A tab changes with every step of a page load and every tracker
+ * blocked; the bars follow only these.
+ */
+private data class BarTabParts(
+    val id: String,
+    val url: String,
+    val canGoBack: Boolean,
+    val canGoForward: Boolean,
+    val loading: Boolean,
+    val desktopMode: Boolean,
+    val private: Boolean,
+    val isPdf: Boolean,
+    val isTranslated: Boolean,
+    val readerable: Boolean,
+    val inReaderView: Boolean,
+) {
+    constructor(tab: TabSessionState) : this(
+        id = tab.id,
+        url = tab.content.url,
+        canGoBack = tab.content.canGoBack,
+        canGoForward = tab.content.canGoForward,
+        loading = tab.content.loading,
+        desktopMode = tab.content.desktopMode,
+        private = tab.content.private,
+        isPdf = tab.content.isPdf,
+        isTranslated = tab.translationsState.isTranslated,
+        readerable = tab.readerState.readerable,
+        inReaderView = tab.readerState.active,
+    )
+}
+
 /** The tab with [tabId], the shown tab when `null`, as the buttons of a bar act on it. */
 @Composable
 internal fun rememberBarTab(tabId: String?): BarTab {
     val context = LocalContext.current
     val fenix = components
     val repository = remember { fenix.readOnMainThread { WorkspaceRepository.get(context) } }
-    val tab by fenix.core.store.observeAsComposableState { it.tabOrShown(tabId) }
+    val parts by fenix.core.store.observeAsComposableState { state -> state.tabOrShown(tabId)?.let(::BarTabParts) }
+    val tab = remember(parts) { fenix.core.store.state.tabOrShown(tabId) }
     val workspaces by repository.state.collectAsState()
     val snackbar by fenix.appStore.observeAsComposableState { it.snackbarState }
     val url = tab?.content?.url.orEmpty()
@@ -170,7 +204,9 @@ internal fun MoreMenuEntry.tap(
 @Composable
 internal fun AskingDialog(barTab: BarTab, action: TabAction?, onDone: () -> Unit) {
     val view = LocalView.current
-    val tab = barTab.tab
+    val store = components.core.store
+    // The tab as it is when asked: the bar keeps it only as it was when what the bar shows last changed.
+    val tab = remember(barTab.tab?.id, action) { barTab.tab?.let { store.state.findTab(it.id) ?: it } }
     if (tab != null && action != null) {
         ShownTabActionDialog(
             action = action,

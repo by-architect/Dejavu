@@ -238,7 +238,7 @@
     <string name="dejavu_history_other_pages">სხვა გვერდები</string>
     <string name="dejavu_settings_tab_sleep">მძინარე ჩანართები</string>
     <string name="dejavu_settings_tab_sleep_summary">ჩანართები, რომლებსაც არ იყენებთ, იძინებს მეხსიერების გასათავისუფლებლად</string>
-    <string name="dejavu_tab_sleep_hint">მძინარე ჩანართი ათავისუფლებს თავის მეხსიერებას და გვერდს ხელახლა ჩატვირთავს, როცა მას გახსნით. ფხიზლად რჩება ჩანართი, რომელსაც უყურებთ, მის გვერდით მყოფი ჩანართი გაყოფილ ხედში და ჩანართები, რომლებიც ხმას უკრავს ან კამერას ან მიკროფონს იყენებს. როცა Android-ს მეხსიერება სჭირდება, სანამ Dejavu ფონურ რეჟიმშია, იძინებს ყველა ჩანართი, გარდა ბოლოს გამოყენებული ორისა.</string>
+    <string name="dejavu_tab_sleep_hint">მძინარე ჩანართი ათავისუფლებს თავის მეხსიერებას და გვერდს ხელახლა ჩატვირთავს, როცა მას გახსნით. ფხიზლად რჩება ჩანართი, რომელსაც უყურებთ, მის გვერდით მყოფი ჩანართი გაყოფილ ხედში და ჩანართები, რომლებიც ხმას უკრავს ან კამერას ან მიკროფონს იყენებს. როცა Dejavu-ს დახურავთ ან Android-ს მეხსიერება აკლდება, იძინებს ყველა ჩანართი, გარდა ბოლოს გამოყენებული ორისა. სხვა აპზე გადასვლისას ჩანართები ფხიზლად რჩება.</string>
     <string name="dejavu_tab_sleep_when">ჩანართების დაძინება</string>
     <plurals name="dejavu_tab_sleep_after_minutes">
         <item quantity="one">%d წუთის უმოქმედობის შემდეგ</item>
@@ -510,9 +510,9 @@
     <string name="dejavu_welcome_ads_title">რეკლამებიც შეიზღუდოს?</string>
     <string name="dejavu_welcome_ads_text">Dejavu ყოველთვის ზღუდავს მეთვალყურეებს. uBlock Origin, უფასო დამატება, რეკლამებსაც მოაშორებს.</string>
     <string name="dejavu_welcome_ads_block">რეკლამებისა და მეთვალყურეების შეზღუდვა</string>
-    <string name="dejavu_welcome_ads_block_summary">დაემატება uBlock Origin.</string>
+    <string name="dejavu_welcome_ads_block_summary">დაემატება uBlock Origin. გვერდები დაახლოებით 0,2 წამით გვიან გამოჩნდება.</string>
     <string name="dejavu_welcome_ads_allow">მხოლოდ მეთვალყურეების შეზღუდვა</string>
-    <string name="dejavu_welcome_ads_allow_summary">გვერდები თავიანთ რეკლამებს აჩვენებს.</string>
+    <string name="dejavu_welcome_ads_allow_summary">გვერდები თავიანთ რეკლამებს აჩვენებს, დაყოვნების გარეშე.</string>
     <string name="dejavu_welcome_default_title">გახადეთ Dejavu ნაგულისხმევი ბრაუზერი</string>
     <string name="dejavu_welcome_default_text">სხვა აპებში შეხებული ბმულები Dejavu-ში გაიხსნება.</string>
     <string name="dejavu_welcome_default_done">Dejavu თქვენი ნაგულისხმევი ბრაუზერია.</string>

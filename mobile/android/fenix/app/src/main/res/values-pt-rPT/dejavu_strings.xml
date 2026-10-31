@@ -239,7 +239,7 @@
     <string name="dejavu_history_other_pages">Outras páginas</string>
     <string name="dejavu_settings_tab_sleep">Separadores hibernados</string>
     <string name="dejavu_settings_tab_sleep_summary">Os separadores que não estás a usar hibernam para libertar memória</string>
-    <string name="dejavu_tab_sleep_hint">Um separador hibernado liberta a sua memória e volta a carregar a página quando o abres. O separador que estás a ver, o que está ao lado dele na vista dividida e os separadores que estão a reproduzir som ou a usar a câmara ou o microfone ficam ativos. Quando o Android precisa de memória enquanto o Dejavu está em segundo plano, todos os separadores hibernam, exceto os dois últimos que usaste.</string>
+    <string name="dejavu_tab_sleep_hint">Um separador hibernado liberta a sua memória e volta a carregar a página quando o abres. O separador que estás a ver, o que está ao lado dele na vista dividida e os separadores que estão a reproduzir som ou a usar a câmara ou o microfone ficam ativos. Quando fechas o Dejavu ou o Android fica com pouca memória, todos os separadores hibernam, exceto os dois últimos que usaste. Se mudares para outra aplicação, os separadores ficam ativos.</string>
     <string name="dejavu_tab_sleep_when">Hibernar um separador</string>
     <plurals name="dejavu_tab_sleep_after_minutes">
         <item quantity="one">Após %d minuto sem utilização</item>
@@ -518,9 +518,9 @@
     <string name="dejavu_welcome_ads_title">Bloquear também anúncios?</string>
     <string name="dejavu_welcome_ads_text">O Dejavu bloqueia sempre os rastreadores. O uBlock Origin, uma extensão gratuita, também pode remover anúncios.</string>
     <string name="dejavu_welcome_ads_block">Bloquear anúncios e rastreadores</string>
-    <string name="dejavu_welcome_ads_block_summary">Adiciona o uBlock Origin.</string>
+    <string name="dejavu_welcome_ads_block_summary">Adiciona o uBlock Origin. As páginas aparecem cerca de 0,2 s mais tarde.</string>
     <string name="dejavu_welcome_ads_allow">Bloquear apenas rastreadores</string>
-    <string name="dejavu_welcome_ads_allow_summary">As páginas mostram os seus anúncios.</string>
+    <string name="dejavu_welcome_ads_allow_summary">As páginas mostram os seus anúncios, sem atraso.</string>
     <string name="dejavu_welcome_default_title">Torna o Dejavu o teu navegador predefinido</string>
     <string name="dejavu_welcome_default_text">As ligações em que tocas noutras aplicações abrem no Dejavu.</string>
     <string name="dejavu_welcome_default_done">O Dejavu é o teu navegador predefinido.</string>

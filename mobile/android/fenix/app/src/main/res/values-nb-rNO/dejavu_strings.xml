@@ -238,7 +238,7 @@
     <string name="dejavu_history_other_pages">Andre sider</string>
     <string name="dejavu_settings_tab_sleep">Faner i dvale</string>
     <string name="dejavu_settings_tab_sleep_summary">Faner du ikke bruker, settes i dvale for å frigjøre minne</string>
-    <string name="dejavu_tab_sleep_hint">En fane i dvale frigjør minnet sitt og laster inn siden på nytt når du åpner den. Fanen du ser på, den ved siden av i delt visning og faner som spiller av lyd eller bruker kameraet eller mikrofonen, holdes våkne. Når Android trenger minne mens Dejavu er i bakgrunnen, settes alle faner unntatt de to du brukte sist, i dvale.</string>
+    <string name="dejavu_tab_sleep_hint">En fane i dvale frigjør minnet sitt og laster inn siden på nytt når du åpner den. Fanen du ser på, den ved siden av i delt visning og faner som spiller av lyd eller bruker kameraet eller mikrofonen, holdes våkne. Når du lukker Dejavu eller Android har lite ledig minne, settes alle faner unntatt de to du brukte sist, i dvale. Bytter du til en annen app, holdes fanene våkne.</string>
     <string name="dejavu_tab_sleep_when">Sett en fane i dvale</string>
     <plurals name="dejavu_tab_sleep_after_minutes">
         <item quantity="one">Etter %d minutt uten bruk</item>
@@ -510,9 +510,9 @@
     <string name="dejavu_welcome_ads_title">Blokkere annonser også?</string>
     <string name="dejavu_welcome_ads_text">Dejavu blokkerer alltid sporere. uBlock Origin, en gratis utvidelse, kan også fjerne annonser.</string>
     <string name="dejavu_welcome_ads_block">Blokker annonser og sporere</string>
-    <string name="dejavu_welcome_ads_block_summary">Legger til uBlock Origin.</string>
+    <string name="dejavu_welcome_ads_block_summary">Legger til uBlock Origin. Sider vises omtrent 0,2 s senere.</string>
     <string name="dejavu_welcome_ads_allow">Blokker bare sporere</string>
-    <string name="dejavu_welcome_ads_allow_summary">Sider viser annonsene sine.</string>
+    <string name="dejavu_welcome_ads_allow_summary">Sider viser annonsene sine, uten forsinkelse.</string>
     <string name="dejavu_welcome_default_title">Gjør Dejavu til standard nettleser</string>
     <string name="dejavu_welcome_default_text">Lenker du trykker på i andre apper, åpnes i Dejavu.</string>
     <string name="dejavu_welcome_default_done">Dejavu er standard nettleser.</string>

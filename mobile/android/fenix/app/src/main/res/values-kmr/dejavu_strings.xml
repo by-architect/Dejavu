@@ -238,7 +238,7 @@
     <string name="dejavu_history_other_pages">Rûpelên din</string>
     <string name="dejavu_settings_tab_sleep">Hilpekînên razayî</string>
     <string name="dejavu_settings_tab_sleep_summary">Hilpekînên ku tu bi kar naynî radizên da ku bîrê azad bikin</string>
-    <string name="dejavu_tab_sleep_hint">Hilpekîneke razayî bîra xwe azad dike û dema tu wê vekî, rûpela xwe ji nû ve bar dike. Hilpekîna ku tu lê dinêrî, ya li kêleka wê di dîmena dabeşkirî de û hilpekînên ku deng ji wan tê an kamerayê an mîkrofonê bi kar tînin şiyar dimînin. Dema Android hewceyî bîrê be û Dejavu li paşxanê be, ji bilî her du hilpekînên ku te herî dawî bi kar anîne, hemû hilpekîn radizên.</string>
+    <string name="dejavu_tab_sleep_hint">Hilpekîneke razayî bîra xwe azad dike û dema tu wê vekî, rûpela xwe ji nû ve bar dike. Hilpekîna ku tu lê dinêrî, ya li kêleka wê di dîmena dabeşkirî de û hilpekînên ku deng ji wan tê an kamerayê an mîkrofonê bi kar tînin şiyar dimînin. Dema tu Dejavu bigirî an bîra Android kêm bibe, ji bilî her du hilpekînên ku te herî dawî bi kar anîne, hemû hilpekîn radizên. Dema tu derbasî sepaneke din bibî, hilpekîn şiyar dimînin.</string>
     <string name="dejavu_tab_sleep_when">Xewandina hilpekînê</string>
     <plurals name="dejavu_tab_sleep_after_minutes">
         <item quantity="one">Piştî %d deqîqeyê bêyî bikaranînê</item>
@@ -510,9 +510,9 @@
     <string name="dejavu_welcome_ads_title">Reklaman jî asteng bike?</string>
     <string name="dejavu_welcome_ads_text">Dejavu her tim şopîneran asteng dike. uBlock Origin, pêvekeke belaş, dikare reklaman jî rake.</string>
     <string name="dejavu_welcome_ads_block">Reklaman û şopîneran asteng bike</string>
-    <string name="dejavu_welcome_ads_block_summary">uBlock Origin zêde dike.</string>
+    <string name="dejavu_welcome_ads_block_summary">uBlock Origin zêde dike. Rûpel texmînen 0,2 çirke derengtir xuya dibin.</string>
     <string name="dejavu_welcome_ads_allow">Tenê şopîneran asteng bike</string>
-    <string name="dejavu_welcome_ads_allow_summary">Rûpel reklamên xwe nîşan didin.</string>
+    <string name="dejavu_welcome_ads_allow_summary">Rûpel reklamên xwe nîşan didin, bêyî derengiyê.</string>
     <string name="dejavu_welcome_default_title">Dejavu bike geroka xwe ya sereke</string>
     <string name="dejavu_welcome_default_text">Girêdanên ku tu di sepanên din de li wan ditikînî di Dejavu de vedibin.</string>
     <string name="dejavu_welcome_default_done">Dejavu geroka te ya sereke ye.</string>

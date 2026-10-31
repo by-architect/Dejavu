@@ -238,7 +238,7 @@
     <string name="dejavu_history_other_pages">Basqa betler</string>
     <string name="dejavu_settings_tab_sleep">Uyqıdaǵı betler</string>
     <string name="dejavu_settings_tab_sleep_summary">Siz paydalanbaytuǵın betler yadtı bosatıw ushın uyqıǵa ketedi</string>
-    <string name="dejavu_tab_sleep_hint">Uyqıdaǵı bet óz yadın bosatadı hám siz onı ashqanda betti qayta júkleydi. Siz kórip turǵan bet, bólingen kóriniste onıń janındaǵı bet hám dawıs oynatıp turǵan yamasa kamera ya mikrofondı paydalanıp turǵan betler oyaw qaladı. Dejavu fonda islep turǵanda Android-qa yad kerek bolsa, siz eń sońǵı paydalanǵan eki betten basqa barlıq betler uyqıǵa ketedi.</string>
+    <string name="dejavu_tab_sleep_hint">Uyqıdaǵı bet óz yadın bosatadı hám siz onı ashqanda betti qayta júkleydi. Siz kórip turǵan bet, bólingen kóriniste onıń janındaǵı bet hám dawıs oynatıp turǵan yamasa kamera ya mikrofondı paydalanıp turǵan betler oyaw qaladı. Dejavu-nı japqanıńızda yamasa Android-qa yad jetispegende, siz eń sońǵı paydalanǵan eki betten basqa barlıq betler uyqıǵa ketedi. Basqa baǵdarlamaǵa ótkende betler oyaw qaladı.</string>
     <string name="dejavu_tab_sleep_when">Betlerdi uyqıǵa jiberiw</string>
     <plurals name="dejavu_tab_sleep_after_minutes">
         <item quantity="one">%d minut paydalanılmaǵannan keyin</item>
@@ -510,9 +510,9 @@
     <string name="dejavu_welcome_ads_title">Reklamalar da bloklansın ba?</string>
     <string name="dejavu_welcome_ads_text">Dejavu baqlawshılardı hámme waqıt bloklaydı. Biypul qosımsha uBlock Origin reklamalardı da alıp taslay aladı.</string>
     <string name="dejavu_welcome_ads_block">Reklamalar menen baqlawshılardı bloklaw</string>
-    <string name="dejavu_welcome_ads_block_summary">uBlock Origin qosıladı.</string>
+    <string name="dejavu_welcome_ads_block_summary">uBlock Origin qosıladı. Veb-betler shama menen 0,2 sekund keyinirek kórinedi.</string>
     <string name="dejavu_welcome_ads_allow">Tek baqlawshılardı bloklaw</string>
-    <string name="dejavu_welcome_ads_allow_summary">Veb-betler óz reklamaların kórsetedi.</string>
+    <string name="dejavu_welcome_ads_allow_summary">Veb-betler óz reklamaların kórsetedi, keshigiwsiz.</string>
     <string name="dejavu_welcome_default_title">Dejavu-nı tiykarǵı brauzerińiz etiń</string>
     <string name="dejavu_welcome_default_text">Basqa baǵdarlamalarda tiygen siltemelerińiz Dejavu-da ashıladı.</string>
     <string name="dejavu_welcome_default_done">Dejavu — tiykarǵı brauzerińiz.</string>

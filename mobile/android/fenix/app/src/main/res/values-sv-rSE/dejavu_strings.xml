@@ -238,7 +238,7 @@
     <string name="dejavu_history_other_pages">Andra sidor</string>
     <string name="dejavu_settings_tab_sleep">Vilande flikar</string>
     <string name="dejavu_settings_tab_sleep_summary">Flikar du inte använder försätts i vila för att frigöra minne</string>
-    <string name="dejavu_tab_sleep_hint">En vilande flik frigör sitt minne och laddar om sin sida när du öppnar den. Fliken du tittar på, den bredvid i delad vy och flikar som spelar upp ljud eller använder kameran eller mikrofonen förblir vakna. När Android behöver minne medan Dejavu är i bakgrunden försätts alla flikar utom de två du använde senast i vila.</string>
+    <string name="dejavu_tab_sleep_hint">En vilande flik frigör sitt minne och laddar om sin sida när du öppnar den. Fliken du tittar på, den bredvid i delad vy och flikar som spelar upp ljud eller använder kameran eller mikrofonen förblir vakna. När du stänger Dejavu eller Android får ont om minne försätts alla flikar utom de två du använde senast i vila. Om du byter till en annan app förblir de vakna.</string>
     <string name="dejavu_tab_sleep_when">Försätt en flik i vila</string>
     <plurals name="dejavu_tab_sleep_after_minutes">
         <item quantity="one">Efter %d minut utan användning</item>
@@ -510,9 +510,9 @@
     <string name="dejavu_welcome_ads_title">Blockera annonser också?</string>
     <string name="dejavu_welcome_ads_text">Dejavu blockerar alltid spårare. uBlock Origin, ett gratis tillägg, kan även ta bort annonser.</string>
     <string name="dejavu_welcome_ads_block">Blockera annonser och spårare</string>
-    <string name="dejavu_welcome_ads_block_summary">Lägger till uBlock Origin.</string>
+    <string name="dejavu_welcome_ads_block_summary">Lägger till uBlock Origin. Sidor visas cirka 0,2 s senare.</string>
     <string name="dejavu_welcome_ads_allow">Blockera bara spårare</string>
-    <string name="dejavu_welcome_ads_allow_summary">Sidor visar sina annonser.</string>
+    <string name="dejavu_welcome_ads_allow_summary">Sidor visar sina annonser, utan fördröjning.</string>
     <string name="dejavu_welcome_default_title">Gör Dejavu till din standardwebbläsare</string>
     <string name="dejavu_welcome_default_text">Länkar du trycker på i andra appar öppnas i Dejavu.</string>
     <string name="dejavu_welcome_default_done">Dejavu är din standardwebbläsare.</string>

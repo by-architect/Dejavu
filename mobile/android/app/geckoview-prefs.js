@@ -415,12 +415,14 @@ pref("network.connectivity-service.DNSv4.domain", "");
 pref("network.connectivity-service.DNSv6.domain", "");
 pref("network.connectivity-service.DNS_HTTPS.domain", "");
 
-// Dejavu: nothing is looked up or loaded ahead for addresses the user has not opened: no DNS prefetching, no
-// prefetched links and no connections opened ahead for links or hovered addresses.
+// Dejavu: nothing is looked up or loaded ahead for addresses the user has not opened: no DNS prefetching and no
+// prefetched links. Connections are opened ahead only to servers already chosen, as Firefox does: those a page names
+// in its preconnect hints, and a link opened from another app while its tab is set up. The address bar's and the
+// suggestions' guesses open none, as Dejavu's own code no longer asks for them. A limit of 0 here would stop all three.
 pref("network.dns.disablePrefetch", true);
 pref("network.dns.disablePrefetchFromHTTPS", true);
 pref("network.prefetch-next", false);
-pref("network.http.speculative-parallel-limit", 0);
+pref("network.http.speculative-parallel-limit", 20);
 
 // Dejavu: WebRTC, which video calls use, connects only through the site's relay (TURN) servers and never offers the
 // phone's own addresses, so sites and call partners learn neither its real IP address nor its local network, and it

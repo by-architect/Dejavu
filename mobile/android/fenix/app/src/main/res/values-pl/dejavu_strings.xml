@@ -240,7 +240,7 @@
     <string name="dejavu_history_other_pages">Inne strony</string>
     <string name="dejavu_settings_tab_sleep">Uśpione karty</string>
     <string name="dejavu_settings_tab_sleep_summary">Nieużywane karty są usypiane, aby zwolnić pamięć</string>
-    <string name="dejavu_tab_sleep_hint">Uśpiona karta zwalnia swoją pamięć i ponownie wczytuje stronę, gdy ją otworzysz. Karta, którą oglądasz, karta obok niej w widoku podzielonym oraz karty odtwarzające dźwięk lub używające aparatu albo mikrofonu nie są usypiane. Gdy Android potrzebuje pamięci, a Dejavu działa w tle, usypiane są wszystkie karty oprócz dwóch ostatnio używanych.</string>
+    <string name="dejavu_tab_sleep_hint">Uśpiona karta zwalnia swoją pamięć i ponownie wczytuje stronę, gdy ją otworzysz. Karta, którą oglądasz, karta obok niej w widoku podzielonym oraz karty odtwarzające dźwięk lub używające aparatu albo mikrofonu nie są usypiane. Gdy zamykasz Dejavu lub Android ma mało wolnej pamięci, usypiane są wszystkie karty oprócz dwóch ostatnio używanych. Po przełączeniu na inną aplikację karty nie są usypiane.</string>
     <string name="dejavu_tab_sleep_when">Usypiaj karty</string>
     <plurals name="dejavu_tab_sleep_after_minutes">
         <item quantity="one">Po %d minucie bez używania</item>
@@ -526,9 +526,9 @@
     <string name="dejavu_welcome_ads_title">Blokować też reklamy?</string>
     <string name="dejavu_welcome_ads_text">Dejavu zawsze blokuje elementy śledzące. uBlock Origin, darmowy dodatek, może też usuwać reklamy.</string>
     <string name="dejavu_welcome_ads_block">Blokuj reklamy i elementy śledzące</string>
-    <string name="dejavu_welcome_ads_block_summary">Dodaje uBlock Origin.</string>
+    <string name="dejavu_welcome_ads_block_summary">Dodaje uBlock Origin. Strony wyświetlają się około 0,2 s później.</string>
     <string name="dejavu_welcome_ads_allow">Blokuj tylko elementy śledzące</string>
-    <string name="dejavu_welcome_ads_allow_summary">Strony wyświetlają swoje reklamy.</string>
+    <string name="dejavu_welcome_ads_allow_summary">Strony wyświetlają swoje reklamy, bez opóźnienia.</string>
     <string name="dejavu_welcome_default_title">Ustaw Dejavu jako domyślną przeglądarkę</string>
     <string name="dejavu_welcome_default_text">Odnośniki dotknięte w innych aplikacjach otwierają się w Dejavu.</string>
     <string name="dejavu_welcome_default_done">Dejavu jest domyślną przeglądarką.</string>

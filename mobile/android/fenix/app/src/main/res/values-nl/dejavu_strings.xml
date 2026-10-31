@@ -238,7 +238,7 @@
     <string name="dejavu_history_other_pages">Overige pagina’s</string>
     <string name="dejavu_settings_tab_sleep">Slapende tabbladen</string>
     <string name="dejavu_settings_tab_sleep_summary">Tabbladen die je niet gebruikt, gaan slapen om geheugen vrij te maken</string>
-    <string name="dejavu_tab_sleep_hint">Een slapend tabblad maakt zijn geheugen vrij en laadt de pagina opnieuw wanneer je het opent. Het tabblad dat je bekijkt, het tabblad ernaast in gesplitste weergave en tabbladen die geluid afspelen of de camera of microfoon gebruiken, blijven wakker. Wanneer Android geheugen nodig heeft terwijl Dejavu op de achtergrond is, gaan alle tabbladen slapen, behalve de twee die je het laatst hebt gebruikt.</string>
+    <string name="dejavu_tab_sleep_hint">Een slapend tabblad maakt zijn geheugen vrij en laadt de pagina opnieuw wanneer je het opent. Het tabblad dat je bekijkt, het tabblad ernaast in gesplitste weergave en tabbladen die geluid afspelen of de camera of microfoon gebruiken, blijven wakker. Wanneer je Dejavu sluit of Android weinig vrij geheugen heeft, gaan alle tabbladen slapen, behalve de twee die je het laatst hebt gebruikt. Als je naar een andere app wisselt, blijven de tabbladen wakker.</string>
     <string name="dejavu_tab_sleep_when">Tabblad in slaapstand zetten</string>
     <plurals name="dejavu_tab_sleep_after_minutes">
         <item quantity="one">Na %d minuut zonder gebruik</item>
@@ -510,9 +510,9 @@
     <string name="dejavu_welcome_ads_title">Ook advertenties blokkeren?</string>
     <string name="dejavu_welcome_ads_text">Dejavu blokkeert altijd trackers. uBlock Origin, een gratis add-on, kan ook advertenties verwijderen.</string>
     <string name="dejavu_welcome_ads_block">Advertenties en trackers blokkeren</string>
-    <string name="dejavu_welcome_ads_block_summary">Voegt uBlock Origin toe.</string>
+    <string name="dejavu_welcome_ads_block_summary">Voegt uBlock Origin toe. Pagina’s verschijnen ongeveer 0,2 s later.</string>
     <string name="dejavu_welcome_ads_allow">Alleen trackers blokkeren</string>
-    <string name="dejavu_welcome_ads_allow_summary">Pagina’s tonen hun advertenties.</string>
+    <string name="dejavu_welcome_ads_allow_summary">Pagina’s tonen hun advertenties, zonder vertraging.</string>
     <string name="dejavu_welcome_default_title">Maak Dejavu je standaardbrowser</string>
     <string name="dejavu_welcome_default_text">Links waarop je in andere apps tikt, openen in Dejavu.</string>
     <string name="dejavu_welcome_default_done">Dejavu is je standaardbrowser.</string>

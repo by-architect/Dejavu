@@ -35,7 +35,6 @@ import mozilla.components.feature.tabs.TabsUseCases
 import mozilla.components.support.ktx.android.net.sameHostWithoutMobileSubdomainAs
 import mozilla.components.support.ktx.kotlin.tryGetHostFromUrl
 import mozilla.components.support.ktx.kotlin.urlContainsQueryParameters
-import org.mozilla.fenix.browser.browsingmode.BrowsingMode
 import org.mozilla.fenix.browser.browsingmode.BrowsingModeManager
 import org.mozilla.fenix.components.Components
 import org.mozilla.fenix.components.Core.Companion.METADATA_HISTORY_SUGGESTION_LIMIT
@@ -69,11 +68,8 @@ class SearchSuggestionsProvidersBuilder(
     val combinedOnlineDataSource: CombinedOnlineSuggestionDataSource = CombinedOnlineSuggestionDataSource(scope = scope)
 
     init {
-        engineForSpeculativeConnects =
-            when (browsingModeManager.mode) {
-                BrowsingMode.Normal -> components.core.engine
-                BrowsingMode.Private -> null
-            }
+        // Dejavu opens no connection ahead to the addresses suggestions only guess, in normal tabs either.
+        engineForSpeculativeConnects = null
 
         defaultHistoryStorageProvider =
             HistoryStorageSuggestionProvider(
@@ -391,11 +387,7 @@ class SearchSuggestionsProvidersBuilder(
         return searchSuggestionProviderMap.getOrPut(engine) {
             val searchBitmap = suggestionIconProvider.getSearchIconBitmap()
 
-            val engineForSpeculativeConnects =
-                when (browsingModeManager.mode.isPrivate) {
-                    true -> null
-                    else -> components.core.engine
-                }
+            val engineForSpeculativeConnects = this.engineForSpeculativeConnects
 
             listOf(
                 SearchActionProvider(

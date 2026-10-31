@@ -239,7 +239,7 @@
     <string name="dejavu_history_other_pages">Altre pagine</string>
     <string name="dejavu_settings_tab_sleep">Schede in pausa</string>
     <string name="dejavu_settings_tab_sleep_summary">Łe schede che no te dopari łe vien mese in pausa par liberar memoria</string>
-    <string name="dejavu_tab_sleep_hint">Na scheda in pausa ła libera ła so memoria e ła ricarga ła so pagina quando che te ła verxi. Ła scheda che te vardi, queła rente in vista divisa e łe schede che łe sona o che łe dopara ła fotocamera o el microfono łe resta ative. Quando che Android el ga bisogno de memoria mentre che Dejavu el xe in secondo piano, tute łe schede fora che łe ultime do che te ghe doparà łe vien mese in pausa.</string>
+    <string name="dejavu_tab_sleep_hint">Na scheda in pausa ła libera ła so memoria e ła ricarga ła so pagina quando che te ła verxi. Ła scheda che te vardi, queła rente in vista divisa e łe schede che łe sona o che łe dopara ła fotocamera o el microfono łe resta ative. Quando che te sari Dejavu o che Android el ga poca memoria, tute łe schede fora che łe ultime do che te ghe doparà łe vien mese in pausa. Se te pasi a n’altra app, łe resta ative.</string>
     <string name="dejavu_tab_sleep_when">Meti na scheda in pausa</string>
     <plurals name="dejavu_tab_sleep_after_minutes">
         <item quantity="one">Dopo %d minuto sensa uso</item>
@@ -518,9 +518,9 @@
     <string name="dejavu_welcome_ads_title">Blocar anca i anunci?</string>
     <string name="dejavu_welcome_ads_text">Dejavu el bloca senpre i tracianti. uBlock Origin, na estension gratis, ła pol cavar anca i anunci.</string>
     <string name="dejavu_welcome_ads_block">Bloca anunci e tracianti</string>
-    <string name="dejavu_welcome_ads_block_summary">El gionta uBlock Origin.</string>
+    <string name="dejavu_welcome_ads_block_summary">El gionta uBlock Origin. Łe pagine łe conpare circa 0,2 s pì tardi.</string>
     <string name="dejavu_welcome_ads_allow">Bloca soło i tracianti</string>
-    <string name="dejavu_welcome_ads_allow_summary">Łe pagine łe mostra i so anunci.</string>
+    <string name="dejavu_welcome_ads_allow_summary">Łe pagine łe mostra i so anunci, sensa ritardo.</string>
     <string name="dejavu_welcome_default_title">Fa de Dejavu el to navegador predefinìo</string>
     <string name="dejavu_welcome_default_text">I łinchi che te tochi inte łe altre app i se verxe in Dejavu.</string>
     <string name="dejavu_welcome_default_done">Dejavu el xe el to navegador predefinìo.</string>

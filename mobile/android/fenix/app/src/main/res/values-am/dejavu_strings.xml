@@ -261,7 +261,7 @@
     <string name="dejavu_history_other_pages">ሌሎች ገጾች</string>
     <string name="dejavu_settings_tab_sleep">የተኙ ትሮች</string>
     <string name="dejavu_settings_tab_sleep_summary">የማይጠቀሙባቸው ትሮች ማህደረ ትውስታን ለማስለቀቅ ይተኛሉ</string>
-    <string name="dejavu_tab_sleep_hint">የተኛ ትር ማህደረ ትውስታውን ያስለቅቃል፣ ሲከፍቱትም ገጹን እንደገና ይጭናል። እየተመለከቱት ያለው ትር፣ በተከፈለ እይታ ውስጥ ከጎኑ ያለው ትር፣ እና ድምፅ የሚያጫውቱ ወይም ካሜራውን ወይም ማይክሮፎኑን የሚጠቀሙ ትሮች ነቅተው ይቆያሉ። Dejavu ከበስተጀርባ እያለ Android ማህደረ ትውስታ ሲያስፈልገው፣ መጨረሻ ከተጠቀሙባቸው ሁለት ትሮች በስተቀር ሁሉም ትሮች ይተኛሉ።</string>
+    <string name="dejavu_tab_sleep_hint">የተኛ ትር ማህደረ ትውስታውን ያስለቅቃል፣ ሲከፍቱትም ገጹን እንደገና ይጭናል። እየተመለከቱት ያለው ትር፣ በተከፈለ እይታ ውስጥ ከጎኑ ያለው ትር፣ እና ድምፅ የሚያጫውቱ ወይም ካሜራውን ወይም ማይክሮፎኑን የሚጠቀሙ ትሮች ነቅተው ይቆያሉ። Dejavuን ሲዘጉ ወይም Android የማህደረ ትውስታ እጥረት ሲያጋጥመው፣ መጨረሻ ከተጠቀሙባቸው ሁለት ትሮች በስተቀር ሁሉም ትሮች ይተኛሉ። ወደ ሌላ መተግበሪያ ሲቀይሩ ግን ነቅተው ይቆያሉ።</string>
     <string name="dejavu_tab_sleep_when">ትርን አስተኛ</string>
     <plurals name="dejavu_tab_sleep_after_minutes">
         <item quantity="one">ጥቅም ላይ ሳይውል ከ%d ደቂቃ በኋላ</item>
@@ -510,9 +510,9 @@
     <string name="dejavu_welcome_ads_title">ማስታወቂያዎችም ይታገዱ?</string>
     <string name="dejavu_welcome_ads_text">Dejavu ሁልጊዜ መከታተያዎችን ያግዳል። uBlock Origin የተባለው ነፃ ቅጥያ ማስታወቂያዎችንም ማስወገድ ይችላል።</string>
     <string name="dejavu_welcome_ads_block">ማስታወቂያዎችን እና መከታተያዎችን አግድ</string>
-    <string name="dejavu_welcome_ads_block_summary">uBlock Origin ያክላል።</string>
+    <string name="dejavu_welcome_ads_block_summary">uBlock Origin ያክላል። ገጾች 0.2 ሰከንድ ገደማ ዘግይተው ይታያሉ።</string>
     <string name="dejavu_welcome_ads_allow">መከታተያዎችን ብቻ አግድ</string>
-    <string name="dejavu_welcome_ads_allow_summary">ገጾች ማስታወቂያዎቻቸውን ያሳያሉ።</string>
+    <string name="dejavu_welcome_ads_allow_summary">ገጾች ማስታወቂያዎቻቸውን ያሳያሉ፣ ያለ መዘግየትም ይታያሉ።</string>
     <string name="dejavu_welcome_default_title">Dejavu ነባሪ አሳሽዎ ያድርጉ</string>
     <string name="dejavu_welcome_default_text">በሌሎች መተግበሪያዎች የሚነኳቸው አገናኞች Dejavu ውስጥ ይከፈታሉ።</string>
     <string name="dejavu_welcome_default_done">Dejavu ነባሪ አሳሽዎ ነው።</string>

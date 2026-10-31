@@ -238,7 +238,7 @@
     <string name="dejavu_history_other_pages">ہور صفحے</string>
     <string name="dejavu_settings_tab_sleep">سُتیاں ٹیباں</string>
     <string name="dejavu_settings_tab_sleep_summary">جیہڑیاں ٹیباں تسی نئيں ورت رہے، اوہ میموری خالی کرن لئی سوں جاندیاں نيں</string>
-    <string name="dejavu_tab_sleep_hint">سُتی ہوئی ٹیب اپݨی میموری خالی کر دیندی اے، تے جدوں تسی اوہنوں کھولدے او تے اپݨا صفحہ دوبارہ لوڈ کردی اے۔ جیہڑی ٹیب تسی ویکھ رہے او، اسپلٹ ویو وچ اوہدے نال والی ٹیب، تے آواز چلاؤن والیاں یا کیمرہ یا مائیکروفون ورتن والیاں ٹیباں جاگدیاں رہندیاں نيں۔ جدوں Dejavu پچھوکڑ وچ ہووے تے Android نوں میموری دی لوڑ ہووے، تے آخری واری ورتیاں دو ٹیباں توں علاوہ ہر ٹیب سوں جاندی اے۔</string>
+    <string name="dejavu_tab_sleep_hint">سُتی ہوئی ٹیب اپݨی میموری خالی کر دیندی اے، تے جدوں تسی اوہنوں کھولدے او تے اپݨا صفحہ دوبارہ لوڈ کردی اے۔ جیہڑی ٹیب تسی ویکھ رہے او، اسپلٹ ویو وچ اوہدے نال والی ٹیب، تے آواز چلاؤن والیاں یا کیمرہ یا مائیکروفون ورتن والیاں ٹیباں جاگدیاں رہندیاں نيں۔ جدوں تسی Dejavu بند کردے او یا Android کول میموری گھٹ ہوندی اے، تے آخری واری ورتیاں دو ٹیباں توں علاوہ ہر ٹیب سوں جاندی اے۔ کسے ہور ایپ اُتے جاݨ نال ٹیباں جاگدیاں رہندیاں نیں۔</string>
     <string name="dejavu_tab_sleep_when">ٹیب نوں سلاؤ</string>
     <plurals name="dejavu_tab_sleep_after_minutes">
         <item quantity="one">%d منٹ نہ ورتن توں بعد</item>
@@ -510,9 +510,9 @@
     <string name="dejavu_welcome_ads_title">اشتہار وی روکو؟</string>
     <string name="dejavu_welcome_ads_text">Dejavu ہمیشہ ٹریکر روکدا اے۔ مفت پھیلاؤ uBlock Origin اشتہار وی ہٹا سکدا اے۔</string>
     <string name="dejavu_welcome_ads_block">اشتہار تے ٹریکر روکو</string>
-    <string name="dejavu_welcome_ads_block_summary">uBlock Origin شامل کردا اے۔</string>
+    <string name="dejavu_welcome_ads_block_summary">uBlock Origin شامل کردا اے۔ صفحے لگ بھگ 0.2 سیکنڈ دیر نال دسدے نیں۔</string>
     <string name="dejavu_welcome_ads_allow">صرف ٹریکر روکو</string>
-    <string name="dejavu_welcome_ads_allow_summary">صفحے اپݨے اشتہار ڈکھاندے نیں۔</string>
+    <string name="dejavu_welcome_ads_allow_summary">صفحے اپݨے اشتہار ڈکھاندے نیں، بنا دیر دے۔</string>
     <string name="dejavu_welcome_default_title">Dejavu نوں اپݨا ڈیفالٹ براؤزر بݨاؤ</string>
     <string name="dejavu_welcome_default_text">ہور ایپاں وچ جیہڑے لنک تسی دباندے او، اوہ Dejavu وچ کھلدے نیں۔</string>
     <string name="dejavu_welcome_default_done">Dejavu تہاڈا ڈیفالٹ براؤزر اے۔</string>

@@ -238,7 +238,7 @@
     <string name="dejavu_history_other_pages">Altris pagjinis</string>
     <string name="dejavu_settings_tab_sleep">Schedis indurmididis</string>
     <string name="dejavu_settings_tab_sleep_summary">Lis schedis che no tu dopris a van a durmî par liberâ memorie</string>
-    <string name="dejavu_tab_sleep_hint">Une schede indurmidide e libere la sô memorie e e torne a cjariâ la sô pagjine cuant che tu le vierzis. La schede che tu stâs cjalant, chê dongje di jê te viodude dividude e lis schedis che a riprodusin audio o che a doprin la fotocjamare o il microfon a restin dismotis. Cuant che Android al à bisugne di memorie intant che Dejavu al è in sotfont, dutis lis schedis fûr che lis ultimis dôs che tu âs doprât a van a durmî.</string>
+    <string name="dejavu_tab_sleep_hint">Une schede indurmidide e libere la sô memorie e e torne a cjariâ la sô pagjine cuant che tu le vierzis. La schede che tu stâs cjalant, chê dongje di jê te viodude dividude e lis schedis che a riprodusin audio o che a doprin la fotocjamare o il microfon a restin dismotis. Cuant che tu sieris Dejavu o che Android al à pocje memorie, dutis lis schedis fûr che lis ultimis dôs che tu âs doprât a van a durmî. Se tu passis a une altre aplicazion, lis schedis a restin dismotis.</string>
     <string name="dejavu_tab_sleep_when">Met une schede a durmî</string>
     <plurals name="dejavu_tab_sleep_after_minutes">
         <item quantity="one">Dopo %d minût cence ûs</item>
@@ -510,9 +510,9 @@
     <string name="dejavu_welcome_ads_title">Blocâ ancje la publicitât?</string>
     <string name="dejavu_welcome_ads_text">Dejavu al bloche simpri lis spiis. uBlock Origin, une estension gratuite, e pues gjavâ ancje la publicitât.</string>
     <string name="dejavu_welcome_ads_block">Bloche publicitât e spiis</string>
-    <string name="dejavu_welcome_ads_block_summary">Al zonte uBlock Origin.</string>
+    <string name="dejavu_welcome_ads_block_summary">Al zonte uBlock Origin. Lis pagjinis a comparissin cirche 0,2 s plui tart.</string>
     <string name="dejavu_welcome_ads_allow">Bloche dome lis spiis</string>
-    <string name="dejavu_welcome_ads_allow_summary">Lis pagjinis a mostrin la lôr publicitât.</string>
+    <string name="dejavu_welcome_ads_allow_summary">Lis pagjinis a mostrin la lôr publicitât, cence ritart.</string>
     <string name="dejavu_welcome_default_title">Met Dejavu come navigadôr predefinît</string>
     <string name="dejavu_welcome_default_text">I leams che tu tocjis in altris aplicazions si vierzin in Dejavu.</string>
     <string name="dejavu_welcome_default_done">Dejavu al è il to navigadôr predefinît.</string>

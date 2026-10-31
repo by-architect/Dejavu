@@ -237,7 +237,7 @@
     <string name="dejavu_history_other_pages">Laman lainnya</string>
     <string name="dejavu_settings_tab_sleep">Tab tidur</string>
     <string name="dejavu_settings_tab_sleep_summary">Tab yang tidak Anda gunakan akan tidur untuk mengosongkan memori</string>
-    <string name="dejavu_tab_sleep_hint">Tab yang tidur mengosongkan memorinya dan memuat ulang lamannya saat Anda membukanya. Tab yang sedang Anda lihat, tab di sebelahnya dalam tampilan terbagi, serta tab yang memutar suara atau menggunakan kamera atau mikrofon tetap terjaga. Saat Android membutuhkan memori ketika Dejavu berada di latar belakang, semua tab akan tidur kecuali dua tab yang terakhir Anda gunakan.</string>
+    <string name="dejavu_tab_sleep_hint">Tab yang tidur mengosongkan memorinya dan memuat ulang lamannya saat Anda membukanya. Tab yang sedang Anda lihat, tab di sebelahnya dalam tampilan terbagi, serta tab yang memutar suara atau menggunakan kamera atau mikrofon tetap terjaga. Saat Anda menutup Dejavu atau Android kekurangan memori, semua tab akan tidur kecuali dua tab yang terakhir Anda gunakan. Jika Anda beralih ke aplikasi lain, tab tetap terjaga.</string>
     <string name="dejavu_tab_sleep_when">Tidurkan tab</string>
     <plurals name="dejavu_tab_sleep_after_minutes">
         <item quantity="other">Setelah %d menit tidak digunakan</item>
@@ -502,9 +502,9 @@
     <string name="dejavu_welcome_ads_title">Blokir iklan juga?</string>
     <string name="dejavu_welcome_ads_text">Dejavu selalu memblokir pelacak. uBlock Origin, add-on gratis, juga dapat menghapus iklan.</string>
     <string name="dejavu_welcome_ads_block">Blokir iklan dan pelacak</string>
-    <string name="dejavu_welcome_ads_block_summary">Menambahkan uBlock Origin.</string>
+    <string name="dejavu_welcome_ads_block_summary">Menambahkan uBlock Origin. Halaman tampil sekitar 0,2 detik lebih lambat.</string>
     <string name="dejavu_welcome_ads_allow">Hanya blokir pelacak</string>
-    <string name="dejavu_welcome_ads_allow_summary">Halaman menampilkan iklannya.</string>
+    <string name="dejavu_welcome_ads_allow_summary">Halaman menampilkan iklannya, tanpa jeda.</string>
     <string name="dejavu_welcome_default_title">Jadikan Dejavu sebagai peramban baku Anda</string>
     <string name="dejavu_welcome_default_text">Tautan yang Anda ketuk di aplikasi lain akan terbuka di Dejavu.</string>
     <string name="dejavu_welcome_default_done">Dejavu adalah peramban baku Anda.</string>

@@ -238,7 +238,7 @@
     <string name="dejavu_history_other_pages">ہور صفحاک</string>
     <string name="dejavu_settings_tab_sleep">سلیپ ٹیباک</string>
     <string name="dejavu_settings_tab_sleep_summary">جہ ٹیباک نی استعمال نی کن، اے میموری خالی کننا نا واسطے سلیپ ہن</string>
-    <string name="dejavu_tab_sleep_hint">سلیپ ٹیب اپنا میموری خالی کن، او جہ وخت نی اے مل کن، اپنا صفحہ دوبارہ لوڈ کن۔ جہ ٹیب نی دیکھ کن، اسپلٹ ویو اٹ اے نا پاسی ٹیب، او جہ ٹیباک آواز چلائی کن یا کیمرہ یا مائک استعمال کن، اے جاگ اٹ ہن۔ جہ وخت Dejavu بیک گراؤنڈ اٹ ہس او Android اے میموری نا ضرورت ہس، نی نا آخری استعمال کرتین دو ٹیباک نا علاوہ ہر ٹیب سلیپ ہس۔</string>
+    <string name="dejavu_tab_sleep_hint">سلیپ ٹیب اپنا میموری خالی کن، او جہ وخت نی اے مل کن، اپنا صفحہ دوبارہ لوڈ کن۔ جہ ٹیب نی دیکھ کن، اسپلٹ ویو اٹ اے نا پاسی ٹیب، او جہ ٹیباک آواز چلائی کن یا کیمرہ یا مائک استعمال کن، اے جاگ اٹ ہن۔ جہ وخت نی Dejavu بند کن یا Android اے میموری نا ضرورت ہس، نی نا آخری استعمال کرتین دو ٹیباک نا علاوہ ہر ٹیب سلیپ ہس۔ جہ وخت نی ہور ایپ اس مل کن، ٹیباک جاگ اٹ ہن۔</string>
     <string name="dejavu_tab_sleep_when">ٹیب سلیپ کبو</string>
     <plurals name="dejavu_tab_sleep_after_minutes">
         <item quantity="one">استعمال بغیر %d منٹ انپد</item>
@@ -510,9 +510,9 @@
     <string name="dejavu_welcome_ads_title">اشتہاراک ام بلاک کبو؟</string>
     <string name="dejavu_welcome_ads_text">Dejavu ہمیشہ ٹریکراک بلاک کیک۔ uBlock Origin، مفت ایکسٹینشن اس، اشتہاراک ام ہٹا سکیک۔</string>
     <string name="dejavu_welcome_ads_block">اشتہاراک او ٹریکراک بلاک کبو</string>
-    <string name="dejavu_welcome_ads_block_summary">uBlock Origin شامل کیک۔</string>
+    <string name="dejavu_welcome_ads_block_summary">uBlock Origin شامل کیک۔ صفحاک تقریباً 0.2 سیکنڈ انپد دکھ ہن۔</string>
     <string name="dejavu_welcome_ads_allow">بس ٹریکراک بلاک کبو</string>
-    <string name="dejavu_welcome_ads_allow_summary">صفحاک تینا اشتہاراک دکھ ہن۔</string>
+    <string name="dejavu_welcome_ads_allow_summary">صفحاک تینا اشتہاراک دکھ ہن، دیر بغیر۔</string>
     <string name="dejavu_welcome_default_title">Dejavu اے تینا اصل براؤزر جوڑ کبو</string>
     <string name="dejavu_welcome_default_text">ہور ایپاک اٹ نی ٹیپ کنا لنکاک Dejavu اٹ مل ہن۔</string>
     <string name="dejavu_welcome_default_done">Dejavu نی نا اصل براؤزر ہس۔</string>

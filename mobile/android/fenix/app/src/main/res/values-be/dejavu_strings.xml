@@ -240,7 +240,7 @@
     <string name="dejavu_history_other_pages">Іншыя старонкі</string>
     <string name="dejavu_settings_tab_sleep">Спячыя карткі</string>
     <string name="dejavu_settings_tab_sleep_summary">Карткі, якімі вы не карыстаецеся, засынаюць, каб вызваліць памяць</string>
-    <string name="dejavu_tab_sleep_hint">Спячая картка вызваляе сваю памяць і зноў загружае старонку, калі вы яе адкрываеце. Картка, якую вы праглядаеце, суседняя з ёй у падзеленым выглядзе і карткі, якія прайграюць гук або выкарыстоўваюць камеру ці мікрафон, не засынаюць. Калі Android патрабуе памяці, пакуль Dejavu працуе ў фоне, засынаюць усе карткі, акрамя дзвюх апошніх, якімі вы карысталіся.</string>
+    <string name="dejavu_tab_sleep_hint">Спячая картка вызваляе сваю памяць і зноў загружае старонку, калі вы яе адкрываеце. Картка, якую вы праглядаеце, суседняя з ёй у падзеленым выглядзе і карткі, якія прайграюць гук або выкарыстоўваюць камеру ці мікрафон, не засынаюць. Калі вы закрываеце Dejavu або ў Android не хапае памяці, засынаюць усе карткі, акрамя дзвюх апошніх, якімі вы карысталіся. Калі вы пераключаецеся на іншую праграму, карткі не засынаюць.</string>
     <string name="dejavu_tab_sleep_when">Прысыпляць карткі</string>
     <plurals name="dejavu_tab_sleep_after_minutes">
         <item quantity="one">Праз %d хвіліну без выкарыстання</item>
@@ -526,9 +526,9 @@
     <string name="dejavu_welcome_ads_title">Блакаваць і рэкламу?</string>
     <string name="dejavu_welcome_ads_text">Dejavu заўсёды блакуе трэкеры. Бясплатны дадатак uBlock Origin можа прыбіраць і рэкламу.</string>
     <string name="dejavu_welcome_ads_block">Блакаваць рэкламу і трэкеры</string>
-    <string name="dejavu_welcome_ads_block_summary">Дадае uBlock Origin.</string>
+    <string name="dejavu_welcome_ads_block_summary">Дадае uBlock Origin. Старонкі паказваюцца прыкладна на 0,2 с пазней.</string>
     <string name="dejavu_welcome_ads_allow">Блакаваць толькі трэкеры</string>
-    <string name="dejavu_welcome_ads_allow_summary">Старонкі паказваюць сваю рэкламу.</string>
+    <string name="dejavu_welcome_ads_allow_summary">Старонкі паказваюць сваю рэкламу, без затрымкі.</string>
     <string name="dejavu_welcome_default_title">Зрабіце Dejavu прадвызначаным браўзерам</string>
     <string name="dejavu_welcome_default_text">Спасылкі, націснутыя ў іншых праграмах, адкрываюцца ў Dejavu.</string>
     <string name="dejavu_welcome_default_done">Dejavu — ваш прадвызначаны браўзер.</string>

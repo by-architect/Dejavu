@@ -294,7 +294,7 @@
     <string name="dejavu_history_other_pages">અન્ય પૃષ્ઠો</string>
     <string name="dejavu_settings_tab_sleep">સ્લીપ મોડમાંની ટૅબ્સ</string>
     <string name="dejavu_settings_tab_sleep_summary">તમે ઉપયોગ ન કરતા હો તે ટૅબ્સ મેમરી ખાલી કરવા સ્લીપ મોડમાં જાય છે</string>
-    <string name="dejavu_tab_sleep_hint">સ્લીપ મોડમાંની ટૅબ પોતાની મેમરી ખાલી કરે છે અને તમે તેને ખોલો ત્યારે તેનું પૃષ્ઠ ફરીથી લોડ કરે છે. તમે જે ટૅબ જોઈ રહ્યા છો, સ્પ્લિટ વ્યૂમાં તેની બાજુની ટૅબ અને અવાજ વગાડતી અથવા કેમેરા કે માઇક્રોફોનનો ઉપયોગ કરતી ટૅબ્સ સક્રિય રહે છે. Dejavu બેકગ્રાઉન્ડમાં હોય ત્યારે Android ને મેમરીની જરૂર પડે, તો તમે છેલ્લે વાપરેલી બે ટૅબ્સ સિવાયની દરેક ટૅબ સ્લીપ મોડમાં જાય છે.</string>
+    <string name="dejavu_tab_sleep_hint">સ્લીપ મોડમાંની ટૅબ પોતાની મેમરી ખાલી કરે છે અને તમે તેને ખોલો ત્યારે તેનું પૃષ્ઠ ફરીથી લોડ કરે છે. તમે જે ટૅબ જોઈ રહ્યા છો, સ્પ્લિટ વ્યૂમાં તેની બાજુની ટૅબ અને અવાજ વગાડતી અથવા કેમેરા કે માઇક્રોફોનનો ઉપયોગ કરતી ટૅબ્સ સક્રિય રહે છે. જ્યારે તમે Dejavu બંધ કરો અથવા Android ને મેમરી ઓછી પડે, ત્યારે તમે છેલ્લે વાપરેલી બે ટૅબ્સ સિવાયની દરેક ટૅબ સ્લીપ મોડમાં જાય છે. તમે અન્ય એપ્લિકેશન પર જાઓ ત્યારે ટૅબ્સ સક્રિય રહે છે.</string>
     <string name="dejavu_tab_sleep_when">ટૅબને સ્લીપ મોડમાં મૂકો</string>
     <plurals name="dejavu_tab_sleep_after_minutes">
         <item quantity="one">ઉપયોગ વિના %d મિનિટ પછી</item>
@@ -543,9 +543,9 @@
     <string name="dejavu_welcome_ads_title">જાહેરાતો પણ અવરોધિત કરવી છે?</string>
     <string name="dejavu_welcome_ads_text">Dejavu હંમેશાં ટ્રેકર્સ અવરોધિત કરે છે. uBlock Origin, એક મફત ઍડ-ઓન, જાહેરાતો પણ દૂર કરી શકે છે.</string>
     <string name="dejavu_welcome_ads_block">જાહેરાતો અને ટ્રેકર્સ અવરોધિત કરો</string>
-    <string name="dejavu_welcome_ads_block_summary">uBlock Origin ઉમેરે છે.</string>
+    <string name="dejavu_welcome_ads_block_summary">uBlock Origin ઉમેરે છે. પૃષ્ઠો લગભગ 0.2 સેકન્ડ મોડાં દેખાય છે.</string>
     <string name="dejavu_welcome_ads_allow">ફક્ત ટ્રેકર્સ અવરોધિત કરો</string>
-    <string name="dejavu_welcome_ads_allow_summary">પૃષ્ઠો તેમની જાહેરાતો બતાવે છે.</string>
+    <string name="dejavu_welcome_ads_allow_summary">પૃષ્ઠો તેમની જાહેરાતો બતાવે છે, કોઈ વિલંબ વિના.</string>
     <string name="dejavu_welcome_default_title">Dejavu ને તમારું મૂળભૂત બ્રાઉઝર બનાવો</string>
     <string name="dejavu_welcome_default_text">અન્ય એપ્લિકેશનોમાં તમે ટૅપ કરો છો તે લિંક્સ Dejavu માં ખૂલે છે.</string>
     <string name="dejavu_welcome_default_done">Dejavu તમારું મૂળભૂત બ્રાઉઝર છે.</string>

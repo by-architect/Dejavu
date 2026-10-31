@@ -238,7 +238,7 @@
     <string name="dejavu_history_other_pages">Ambue kuatiarogue</string>
     <string name="dejavu_settings_tab_sleep">Tendayke okéva</string>
     <string name="dejavu_settings_tab_sleep_summary">Umi tendayke ndereiporúiva oke omosãso hag̃ua mandu\'arenda</string>
-    <string name="dejavu_tab_sleep_hint">Peteĩ tendayke okéva omosãso imandu\'arenda ha ombopyahu ikuatiarogue rembojurujávo. Pe tendayke rehecháva, pe oĩva ijykére mokõi ojuehe pype ha umi tendayke ombopúva mba\'epu térã oiporúva ta\'ãnganohẽha térã ñe\'ẽatãha opyta opáy. Android oikotevẽ jave mandu\'arenda ha Dejavu oĩ jave tapykuépe, opaite tendayke oke, ndaha\'éi umi mokõi reiporu pahaitéva.</string>
+    <string name="dejavu_tab_sleep_hint">Peteĩ tendayke okéva omosãso imandu\'arenda ha ombopyahu ikuatiarogue rembojurujávo. Pe tendayke rehecháva, pe oĩva ijykére mokõi ojuehe pype ha umi tendayke ombopúva mba\'epu térã oiporúva ta\'ãnganohẽha térã ñe\'ẽatãha opyta opáy. Remboty jave Dejavu térã Android oikotevẽ jave mandu\'arenda, opaite tendayke oke, ndaha\'éi umi mokõi reiporu pahaitéva. Reho jave ambue tembiporu\'ípe, umi tendayke opyta opáy.</string>
     <string name="dejavu_tab_sleep_when">Mboke tendayke</string>
     <plurals name="dejavu_tab_sleep_after_minutes">
         <item quantity="one">%d aravo\'i ojeporu\'ỹ rire</item>
@@ -510,9 +510,9 @@
     <string name="dejavu_welcome_ads_title">¿Ejoko avei ñemurã?</string>
     <string name="dejavu_welcome_ads_text">Dejavu ojoko tapiaite tapykuehoha. uBlock Origin, peteĩ jepysokue reiete, ikatu omboguete avei ñemurã.</string>
     <string name="dejavu_welcome_ads_block">Ejoko ñemurã ha tapykuehoha</string>
-    <string name="dejavu_welcome_ads_block_summary">Ombojuaju uBlock Origin.</string>
+    <string name="dejavu_welcome_ads_block_summary">Ombojuaju uBlock Origin. Umi kuatiarogue ojehechauka 0,2 aravo\'ive nunga rire.</string>
     <string name="dejavu_welcome_ads_allow">Ejoko tapykuehoha añoite</string>
-    <string name="dejavu_welcome_ads_allow_summary">Umi kuatiarogue ohechauka iñemurã.</string>
+    <string name="dejavu_welcome_ads_allow_summary">Umi kuatiarogue ohechauka iñemurã, ñeha\'arõ\'ỹre.</string>
     <string name="dejavu_welcome_default_title">Ejapo Dejavu ne kundahára ypykuévaramo</string>
     <string name="dejavu_welcome_default_text">Umi enlace rejopýva ambue tembiporu\'ípe ijuruja Dejavu-pe.</string>
     <string name="dejavu_welcome_default_done">Dejavu ha\'e ne kundahára ypykuéva.</string>

@@ -237,7 +237,7 @@
     <string name="dejavu_history_other_pages">အခြား စာမျက်နှာများ</string>
     <string name="dejavu_settings_tab_sleep">အိပ်နေသော တက်ဗ်များ</string>
     <string name="dejavu_settings_tab_sleep_summary">မှတ်ဉာဏ် လွတ်စေရန် သင်မသုံးသော တက်ဗ်များ အိပ်သွားသည်</string>
-    <string name="dejavu_tab_sleep_hint">အိပ်နေသော တက်ဗ်သည် ၎င်း၏ မှတ်ဉာဏ်ကို လွှတ်ပေးပြီး သင်ဖွင့်သောအခါ ၎င်း၏ စာမျက်နှာကို ပြန်တင်သည်။ သင်ကြည့်နေသော တက်ဗ်၊ မျက်နှာပြင်ခွဲတွင် ၎င်းဘေးရှိ တက်ဗ်နှင့် အသံဖွင့်နေသော သို့မဟုတ် ကင်မရာ သို့မဟုတ် မိုက်ကရိုဖုန်း သုံးနေသော တက်ဗ်များသည် နိုးနေမည်။ Dejavu နောက်ခံတွင် ရှိနေစဉ် Android က မှတ်ဉာဏ် လိုအပ်ပါက သင်နောက်ဆုံး သုံးခဲ့သော တက်ဗ်နှစ်ခုမှလွဲ၍ တက်ဗ်အားလုံး အိပ်သွားမည်။</string>
+    <string name="dejavu_tab_sleep_hint">အိပ်နေသော တက်ဗ်သည် ၎င်း၏ မှတ်ဉာဏ်ကို လွှတ်ပေးပြီး သင်ဖွင့်သောအခါ ၎င်း၏ စာမျက်နှာကို ပြန်တင်သည်။ သင်ကြည့်နေသော တက်ဗ်၊ မျက်နှာပြင်ခွဲတွင် ၎င်းဘေးရှိ တက်ဗ်နှင့် အသံဖွင့်နေသော သို့မဟုတ် ကင်မရာ သို့မဟုတ် မိုက်ကရိုဖုန်း သုံးနေသော တက်ဗ်များသည် နိုးနေမည်။ Dejavu ကို သင်ပိတ်လိုက်သောအခါ သို့မဟုတ် Android တွင် မှတ်ဉာဏ် နည်းလာသောအခါ သင်နောက်ဆုံး သုံးခဲ့သော တက်ဗ်နှစ်ခုမှလွဲ၍ တက်ဗ်အားလုံး အိပ်သွားမည်။ အခြားအက်ပ်သို့ ပြောင်းလျှင် တက်ဗ်များ ဆက်နိုးနေမည်။</string>
     <string name="dejavu_tab_sleep_when">တက်ဗ်ကို အိပ်စေရန်</string>
     <plurals name="dejavu_tab_sleep_after_minutes">
         <item quantity="other">မသုံးဘဲ %d မိနစ် ကြာပြီးနောက်</item>
@@ -502,9 +502,9 @@
     <string name="dejavu_welcome_ads_title">ကြော်ငြာများကိုလည်း ပိတ်ဆို့မလား။</string>
     <string name="dejavu_welcome_ads_text">Dejavu သည် ခြေရာခံသူများကို အမြဲ ပိတ်ဆို့သည်။ အခမဲ့ ထပ်ဆောင်းဖြစ်သော uBlock Origin က ကြော်ငြာများကိုလည်း ဖယ်ရှားနိုင်သည်။</string>
     <string name="dejavu_welcome_ads_block">ကြော်ငြာများနှင့် ခြေရာခံသူများကို ပိတ်ဆို့ရန်</string>
-    <string name="dejavu_welcome_ads_block_summary">uBlock Origin ကို ထည့်သည်။</string>
+    <string name="dejavu_welcome_ads_block_summary">uBlock Origin ကို ထည့်သည်။ စာမျက်နှာများ 0.2 စက္ကန့်ခန့် နောက်ကျ၍ ပေါ်သည်။</string>
     <string name="dejavu_welcome_ads_allow">ခြေရာခံသူများကိုသာ ပိတ်ဆို့ရန်</string>
-    <string name="dejavu_welcome_ads_allow_summary">စာမျက်နှာများက ၎င်းတို့၏ ကြော်ငြာများကို ပြသသည်။</string>
+    <string name="dejavu_welcome_ads_allow_summary">စာမျက်နှာများက ၎င်းတို့၏ ကြော်ငြာများကို နောက်မကျဘဲ ပြသသည်။</string>
     <string name="dejavu_welcome_default_title">Dejavu ကို ပုံသေဘရောက်ဇာ အဖြစ် သတ်မှတ်ပါ</string>
     <string name="dejavu_welcome_default_text">အခြားအက်ပ်များတွင် သင်တို့သော လင့်ခ်များသည် Dejavu တွင် ပွင့်မည်။</string>
     <string name="dejavu_welcome_default_done">Dejavu သည် သင်၏ ပုံသေဘရောက်ဇာ ဖြစ်သည်။</string>
