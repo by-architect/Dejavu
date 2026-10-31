@@ -526,4 +526,6 @@
     <string name="dejavu_clear_data_button_summary">هر چی که «پاک کردن داده یل» و «پاک کردن داده یل و در زیڌن» پاک کۊنن. سی پاک کردن ای چیا من بلگه خونه هم، «خالی کردن» ن نگه دارین.</string>
     <string name="dejavu_clear_data_choose">اول انتخاب کۊنین چی ن پاک کۊنین</string>
     <string name="dejavu_starter_folder">ابزار</string>
+    <string name="dejavu_no_icon">بدون آیکون</string>
+    <string name="dejavu_no_color">بی رنگ</string>
 </resources>

@@ -526,4 +526,6 @@
     <string name="dejavu_clear_data_button_summary">Ang mga binubura ng “Linisin ang data” at “Linisin ang data at isara”. Binubura rin ang mga ito kapag pinindot nang matagal ang “Linisin” sa home screen.</string>
     <string name="dejavu_clear_data_choose">Piliin muna kung ano ang lilinisin</string>
     <string name="dejavu_starter_folder">Mga Tool</string>
+    <string name="dejavu_no_icon">Walang icon</string>
+    <string name="dejavu_no_color">Walang kulay</string>
 </resources>

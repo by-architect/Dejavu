@@ -526,4 +526,6 @@
     <string name="dejavu_clear_data_button_summary">جو کجھ ”ڈیٹا صاف کرو“ تے ”ڈیٹا صاف کر کے بند کرو“ مٹاندے نیں۔ ہوم اسکرین تے ”صاف کرو“ نوں دبا کے رکھن نال وی ایہو کجھ مٹ جاندا اے۔</string>
     <string name="dejavu_clear_data_choose">پہلاں چنو کہ کی صاف کرنا اے</string>
     <string name="dejavu_starter_folder">اوزار</string>
+    <string name="dejavu_no_icon">کوئی آئیکن نہیں</string>
+    <string name="dejavu_no_color">کوئی رنگ نہیں</string>
 </resources>

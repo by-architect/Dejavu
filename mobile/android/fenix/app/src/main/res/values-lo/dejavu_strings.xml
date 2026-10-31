@@ -518,4 +518,6 @@
     <string name="dejavu_clear_data_button_summary">ສິ່ງທີ່ “ລ້າງຂໍ້ມູນ” ແລະ “ລ້າງຂໍ້ມູນ ແລະ ອອກ” ຈະລຶບ ການກົດ “ລ້າງ” ຄ້າງໄວ້ໃນໜ້າຈໍຫຼັກກໍຈະລຶບສິ່ງເຫຼົ່ານີ້ເຊັ່ນກັນ</string>
     <string name="dejavu_clear_data_choose">ເລືອກສິ່ງທີ່ຈະລ້າງກ່ອນ</string>
     <string name="dejavu_starter_folder">ເຄື່ອງມື</string>
+    <string name="dejavu_no_icon">ບໍ່ມີໄອຄອນ</string>
+    <string name="dejavu_no_color">ບໍ່ມີສີ</string>
 </resources>

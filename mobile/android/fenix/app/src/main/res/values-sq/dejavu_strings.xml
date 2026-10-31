@@ -526,4 +526,6 @@
     <string name="dejavu_clear_data_button_summary">Çfarë fshijnë “Pastroji të dhënat” dhe “Pastroji të dhënat dhe mbylle”. Nëse mbani të shtypur “Pastroji” te skena e Kreut, fshihen edhe këto.</string>
     <string name="dejavu_clear_data_choose">Zgjidhni së pari çfarë të pastrohet</string>
     <string name="dejavu_starter_folder">Mjete</string>
+    <string name="dejavu_no_icon">Pa ikonë</string>
+    <string name="dejavu_no_color">Pa ngjyrë</string>
 </resources>

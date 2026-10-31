@@ -526,4 +526,6 @@
     <string name="dejavu_clear_data_button_summary">Τι διαγράφουν η «Εκκαθάριση δεδομένων» και η «Εκκαθάριση δεδομένων και έξοδος». Αν κρατήσετε πατημένο το κουμπί «Εκκαθάριση» στην αρχική οθόνη, διαγράφονται τα ίδια.</string>
     <string name="dejavu_clear_data_choose">Επιλέξτε πρώτα τι θα διαγραφεί</string>
     <string name="dejavu_starter_folder">Εργαλεία</string>
+    <string name="dejavu_no_icon">Χωρίς εικονίδιο</string>
+    <string name="dejavu_no_color">Χωρίς χρώμα</string>
 </resources>

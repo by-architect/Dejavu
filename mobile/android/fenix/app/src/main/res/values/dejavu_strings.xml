@@ -865,4 +865,8 @@
     <string name="dejavu_custom_action_http_warning">This address uses http, so the request, its headers and the page\'s address travel unencrypted. Use https if the server supports it.</string>
     <!-- Description of the ntfy example custom action, which sends a notification to a topic on ntfy.sh. -->
     <string name="dejavu_example_notification_ntfy">Send the page as a notification. Anyone who knows the topic\'s name can read it, so pick a long, random one.</string>
+    <!-- Read out by screen readers for the crossed circle that picks no icon for a workspace. -->
+    <string name="dejavu_no_icon">No icon</string>
+    <!-- Read out by screen readers for the crossed circle that picks no colors for a workspace. -->
+    <string name="dejavu_no_color">No color</string>
 </resources>

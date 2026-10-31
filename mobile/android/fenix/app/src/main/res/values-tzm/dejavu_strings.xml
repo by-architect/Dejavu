@@ -526,4 +526,6 @@
     <string name="dejavu_clear_data_button_summary">Isefka ad kksen «Sfeḍ isefka» d «Sfeḍ isefka, ffeɣ». Ma teṭṭfeḍ Sfeḍ g ugdil n uxxam, ad ten-yekkes daɣ.</string>
     <string name="dejavu_clear_data_choose">Sti tazwara ma ad tesfeḍeḍ</string>
     <string name="dejavu_starter_folder">Imassen</string>
+    <string name="dejavu_no_icon">War tugna</string>
+    <string name="dejavu_no_color">War ini</string>
 </resources>

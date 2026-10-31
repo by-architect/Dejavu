@@ -526,4 +526,6 @@
     <string name="dejavu_clear_data_button_summary">Wat ‘Gegevens wissen’ en ‘Gegevens wissen en afsluiten’ verwijderen. Als u ‘Wissen’ op de startpagina ingedrukt houdt, wordt dit ook verwijderd.</string>
     <string name="dejavu_clear_data_choose">Kies eerst wat u wilt wissen</string>
     <string name="dejavu_starter_folder">Hulpmiddelen</string>
+    <string name="dejavu_no_icon">Geen pictogram</string>
+    <string name="dejavu_no_color">Geen kleur</string>
 </resources>

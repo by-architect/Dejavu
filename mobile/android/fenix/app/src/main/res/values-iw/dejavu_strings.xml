@@ -534,4 +534,6 @@
     <string name="dejavu_clear_data_button_summary">מה נמחק בלחיצה על ״ניקוי נתונים״ או על ״ניקוי נתונים ויציאה״. לחיצה ארוכה על ״ניקוי״ במסך הבית מוחקת את אותם הנתונים.</string>
     <string name="dejavu_clear_data_choose">יש לבחור קודם מה לנקות</string>
     <string name="dejavu_starter_folder">כלים</string>
+    <string name="dejavu_no_icon">ללא סמל</string>
+    <string name="dejavu_no_color">ללא צבע</string>
 </resources>

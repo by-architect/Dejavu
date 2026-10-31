@@ -518,4 +518,6 @@
     <string name="dejavu_clear_data_button_summary">ទិន្នន័យដែល «សម្អាតទិន្នន័យ» និង «សម្អាតទិន្នន័យ និងចេញ» លុប។ ការចុចឱ្យជាប់លើប៊ូតុង សម្អាត នៅលើអេក្រង់ដើម ក៏លុបទិន្នន័យនេះដែរ។</string>
     <string name="dejavu_clear_data_choose">ជ្រើសរើសអ្វីដែលត្រូវសម្អាតជាមុនសិន</string>
     <string name="dejavu_starter_folder">ឧបករណ៍</string>
+    <string name="dejavu_no_icon">គ្មានរូបតំណាង</string>
+    <string name="dejavu_no_color">គ្មានពណ៌</string>
 </resources>

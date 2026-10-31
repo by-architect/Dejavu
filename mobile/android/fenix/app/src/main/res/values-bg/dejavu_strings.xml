@@ -526,4 +526,6 @@
     <string name="dejavu_clear_data_button_summary">Какво изтриват „Изчистване на данни“ и „Изчистване на данни и изход“. Задържането на бутона „Изчистване“ на началния екран също изтрива избраното.</string>
     <string name="dejavu_clear_data_choose">Първо изберете какво да се изчисти</string>
     <string name="dejavu_starter_folder">Инструменти</string>
+    <string name="dejavu_no_icon">Без икона</string>
+    <string name="dejavu_no_color">Без цвят</string>
 </resources>

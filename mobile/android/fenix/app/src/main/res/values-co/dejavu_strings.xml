@@ -526,4 +526,6 @@
     <string name="dejavu_clear_data_button_summary">Ciò chì squassanu « Squassà i dati » è « Squassà i dati è esce ». Tenendu appughjatu Viotà nant\'à u screnu d\'accolta, si squassa dinù.</string>
     <string name="dejavu_clear_data_choose">Sceglite prima ciò chì vulete squassà</string>
     <string name="dejavu_starter_folder">Attrezzi</string>
+    <string name="dejavu_no_icon">Nisuna icona</string>
+    <string name="dejavu_no_color">Nisunu culore</string>
 </resources>

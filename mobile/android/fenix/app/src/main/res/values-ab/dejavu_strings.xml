@@ -526,4 +526,6 @@
     <string name="dejavu_clear_data_button_summary">Иалышәх «Адыррақәа раныхра» насгьы «Адыррақәа раныхреи аҭыҵреи» ирныхуа. Ихадоу аекран аҿы «Аҵыхра» кыраамҭа ақәыӷәӷәарагьы убри ианыхуеит.</string>
     <string name="dejavu_clear_data_choose">Раԥхьаӡа иалышәх ианыхтәу</string>
     <string name="dejavu_starter_folder">Амаругақәа</string>
+    <string name="dejavu_no_icon">Аиконка ада</string>
+    <string name="dejavu_no_color">Аԥштәы ада</string>
 </resources>

@@ -518,4 +518,6 @@
     <string name="dejavu_clear_data_button_summary">「データを消去」と「データを消去して終了」で以下の項目が削除されます。ホーム画面で「消去」を長押ししても削除されます。</string>
     <string name="dejavu_clear_data_choose">まず消去する項目を選んでください</string>
     <string name="dejavu_starter_folder">ツール</string>
+    <string name="dejavu_no_icon">アイコンなし</string>
+    <string name="dejavu_no_color">色なし</string>
 </resources>

@@ -91,6 +91,7 @@ import org.mozilla.fenix.dejavu.home.WallpaperTiles
 import org.mozilla.fenix.dejavu.settings.DejavuSettings
 import org.mozilla.fenix.dejavu.ui.DejavuButtonStyle
 import org.mozilla.fenix.dejavu.ui.DejavuDialogButton
+import org.mozilla.fenix.dejavu.ui.WordFittedText
 import org.mozilla.fenix.dejavu.ui.glass
 import org.mozilla.fenix.dejavu.workspaces.WorkspaceTheme
 import org.mozilla.fenix.dejavu.workspaces.WorkspaceWallpapers
@@ -442,11 +443,12 @@ private fun ThemeOption(choice: ThemeChoice, selected: Boolean, modifier: Modifi
             )
         }
         Spacer(Modifier.height(10.dp))
-        Text(
+        WordFittedText(
             text = stringResource(choice.label),
             style = MaterialTheme.typography.labelLarge,
             color = MaterialTheme.colorScheme.onSurface,
             textAlign = TextAlign.Center,
+            maxLines = 3,
         )
     }
 }

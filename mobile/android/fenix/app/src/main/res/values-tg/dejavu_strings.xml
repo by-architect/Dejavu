@@ -526,4 +526,6 @@
     <string name="dejavu_clear_data_button_summary">Маълумоте, ки «Пок кардани маълумот» ва «Пок кардани маълумот ва баромадан» нест мекунанд. Пахш карда нигоҳ доштани «Пок кардан» дар экрани асосӣ низ онро нест мекунад.</string>
     <string name="dejavu_clear_data_choose">Аввал интихоб кунед, ки чиро пок кардан лозим аст</string>
     <string name="dejavu_starter_folder">Абзорҳо</string>
+    <string name="dejavu_no_icon">Бе нишона</string>
+    <string name="dejavu_no_color">Бе ранг</string>
 </resources>

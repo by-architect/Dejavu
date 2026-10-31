@@ -534,4 +534,6 @@
     <string name="dejavu_clear_data_button_summary">Lo que eliminan «Borrar datos» y «Borrar datos y salir». Mantener pulsado Borrar en la pantalla de inicio también lo elimina.</string>
     <string name="dejavu_clear_data_choose">Elige primero qué borrar</string>
     <string name="dejavu_starter_folder">Herramientas</string>
+    <string name="dejavu_no_icon">Sin icono</string>
+    <string name="dejavu_no_color">Sin color</string>
 </resources>

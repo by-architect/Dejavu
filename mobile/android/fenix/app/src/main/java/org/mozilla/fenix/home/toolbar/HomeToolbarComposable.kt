@@ -298,7 +298,9 @@ internal class HomeToolbarComposable(
     private fun handleTypedSearchRequest() {
         handleStartingSearch(directToSearchConfig)
 
-        if (directToSearchConfig.sessionId != null && !settings.showAddressBarInFocusMode) {
+        if (directToSearchConfig.sessionId != null && !settings.showAddressBarInFocusMode &&
+            !NewTabSearch.isFor(directToSearchConfig.sessionId)
+        ) {
             browserStore.state.findTab(directToSearchConfig.sessionId)?.let {
                 toolbarStore.dispatch(
                     SearchQueryUpdated(

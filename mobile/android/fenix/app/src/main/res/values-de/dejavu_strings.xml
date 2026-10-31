@@ -526,4 +526,6 @@
     <string name="dejavu_clear_data_button_summary">Was „Daten löschen“ und „Daten löschen und beenden“ löschen. Langes Tippen auf „Leeren“ auf der Startseite löscht diese Daten ebenfalls.</string>
     <string name="dejavu_clear_data_choose">Wählen Sie zuerst aus, was gelöscht werden soll</string>
     <string name="dejavu_starter_folder">Werkzeuge</string>
+    <string name="dejavu_no_icon">Kein Symbol</string>
+    <string name="dejavu_no_color">Keine Farbe</string>
 </resources>

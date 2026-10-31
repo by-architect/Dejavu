@@ -542,4 +542,6 @@
     <string name="dejavu_clear_data_button_summary">Údaje, ktoré sa odstránia pomocou „Odstrániť údaje“ a „Odstrániť údaje a ukončiť“. Odstránia sa aj podržaním tlačidla Vyprázdniť na domovskej obrazovke.</string>
     <string name="dejavu_clear_data_choose">Najprv vyberte, čo sa má odstrániť</string>
     <string name="dejavu_starter_folder">Nástroje</string>
+    <string name="dejavu_no_icon">Žiadna ikona</string>
+    <string name="dejavu_no_color">Žiadna farba</string>
 </resources>

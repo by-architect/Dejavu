@@ -542,4 +542,6 @@
     <string name="dejavu_clear_data_button_summary">Dane usuwane przez „Wyczyść dane” i „Wyczyść dane i zakończ”. Przytrzymanie przycisku „Wyczyść” na ekranie startowym również je usuwa.</string>
     <string name="dejavu_clear_data_choose">Najpierw wybierz, co wyczyścić</string>
     <string name="dejavu_starter_folder">Narzędzia</string>
+    <string name="dejavu_no_icon">Brak ikony</string>
+    <string name="dejavu_no_color">Brak koloru</string>
 </resources>

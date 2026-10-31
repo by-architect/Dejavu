@@ -518,4 +518,6 @@
     <string name="dejavu_clear_data_button_summary">“ล้างข้อมูล” และ “ล้างข้อมูลและออก” จะลบรายการด้านล่าง การแตะ “ล้าง” ค้างไว้ที่หน้าแรกก็จะลบรายการเหล่านี้ด้วย</string>
     <string name="dejavu_clear_data_choose">เลือกสิ่งที่จะล้างก่อน</string>
     <string name="dejavu_starter_folder">เครื่องมือ</string>
+    <string name="dejavu_no_icon">ไม่มีไอคอน</string>
+    <string name="dejavu_no_color">ไม่มีสี</string>
 </resources>

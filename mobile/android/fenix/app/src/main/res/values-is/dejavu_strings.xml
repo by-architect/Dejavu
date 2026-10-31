@@ -526,4 +526,6 @@
     <string name="dejavu_clear_data_button_summary">Það sem „Hreinsa gögn“ og „Hreinsa gögn og hætta“ eyða. Að ýta lengi á hnappinn Hreinsa á heimaskjánum eyðir því líka.</string>
     <string name="dejavu_clear_data_choose">Veldu fyrst hvað á að hreinsa</string>
     <string name="dejavu_starter_folder">Verkfæri</string>
+    <string name="dejavu_no_icon">Engin táknmynd</string>
+    <string name="dejavu_no_color">Enginn litur</string>
 </resources>

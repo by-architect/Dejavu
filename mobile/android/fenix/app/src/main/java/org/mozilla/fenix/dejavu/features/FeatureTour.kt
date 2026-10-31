@@ -86,9 +86,9 @@ import org.mozilla.fenix.dejavu.settings.DejavuSettings
 import org.mozilla.fenix.dejavu.settings.workspaceRepository
 import org.mozilla.fenix.dejavu.ui.DejavuButtonStyle
 import org.mozilla.fenix.dejavu.ui.DejavuDialogButton
-import org.mozilla.fenix.dejavu.ui.DejavuFittedText
 import org.mozilla.fenix.dejavu.ui.DejavuPopup
 import org.mozilla.fenix.dejavu.ui.LocalPopupTheme
+import org.mozilla.fenix.dejavu.ui.WordFittedText
 import org.mozilla.fenix.dejavu.ui.popupGlow
 import org.mozilla.fenix.dejavu.ui.workspacePopupTheme
 import org.mozilla.fenix.theme.FirefoxTheme
@@ -99,7 +99,8 @@ import org.mozilla.fenix.theme.FirefoxTheme
  *
  * @property title What the feature does, in a few words.
  * @property animation The phone showing the feature, an animated WebP.
- * @property where The steps to the feature's settings, or nothing when it has none.
+ * @property where The steps to the feature's settings, or nothing when it has none. The settings gear in front stands
+ *   for the first step, Settings, which is left out so long paths fit.
  * @property whereIcon The icon in front of [where].
  */
 enum class DejavuFeature(
@@ -111,7 +112,7 @@ enum class DejavuFeature(
     SLEEP(
         R.string.dejavu_feature_sleep,
         R.raw.dejavu_feature_sleep,
-        listOf(R.string.dejavu_settings, R.string.dejavu_settings_tab_sleep),
+        listOf(R.string.dejavu_settings_tabs_workspaces, R.string.dejavu_settings_tab_sleep),
     ),
     THEMES(
         R.string.dejavu_feature_themes,
@@ -122,12 +123,12 @@ enum class DejavuFeature(
     SWIPE_MENU(
         R.string.dejavu_feature_swipe_menu,
         R.raw.dejavu_feature_swipe_menu,
-        listOf(R.string.dejavu_settings, R.string.preferences_customize, R.string.dejavu_settings_more_menu),
+        listOf(R.string.preferences_customize, R.string.dejavu_settings_more_menu),
     ),
     ACTIONS(
         R.string.dejavu_feature_actions,
         R.raw.dejavu_feature_actions,
-        listOf(R.string.dejavu_settings, R.string.dejavu_settings_tab_actions),
+        listOf(R.string.preferences_customize, R.string.dejavu_settings_tab_actions),
     ),
     ZEN_SYNC(
         R.string.dejavu_feature_zen_sync,
@@ -149,7 +150,7 @@ enum class DejavuFeature(
     BAR_LAYOUTS(
         R.string.dejavu_feature_bar_layouts,
         R.raw.dejavu_feature_bar_layouts,
-        listOf(R.string.dejavu_settings, R.string.preferences_customize),
+        listOf(R.string.preferences_customize, R.string.dejavu_settings_bars_2),
     ),
     WALLPAPER(
         R.string.dejavu_feature_wallpaper,
@@ -160,7 +161,7 @@ enum class DejavuFeature(
     SAVE_PAGE(
         R.string.dejavu_feature_save_page,
         R.raw.dejavu_feature_save_page,
-        listOf(R.string.dejavu_settings, R.string.preferences_customize, R.string.dejavu_settings_more_menu),
+        listOf(R.string.preferences_customize, R.string.dejavu_settings_more_menu),
     ),
 }
 
@@ -434,10 +435,11 @@ private fun WherePill(feature: DejavuFeature) {
             modifier = Modifier.size(16.dp),
         )
         Spacer(Modifier.width(6.dp))
-        DejavuFittedText(
+        WordFittedText(
             text = steps.joinToString(separator),
             style = MaterialTheme.typography.labelMedium,
             color = MaterialTheme.colorScheme.onSurfaceVariant,
+            textAlign = TextAlign.Center,
         )
     }
 }
@@ -555,7 +557,7 @@ private const val ANIMATION_SHARE = 0.48f
 private const val DOT_ALPHA = 0.3f
 private val MAX_ANIMATION = 440.dp
 private val MAX_WIDTH = 480.dp
-private val WHERE_HEIGHT = 40.dp
+private val WHERE_HEIGHT = 56.dp
 
 // How small a title gets before it is cut off, as a share of its size.
 private const val MIN_TEXT_SCALE = 0.75f

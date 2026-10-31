@@ -550,4 +550,6 @@
     <string name="dejavu_clear_data_button_summary">An méid a scriostar le “Glan sonraí” agus le “Glan sonraí agus scoir”. Scriostar é seo freisin má choinníonn tú “Glan” brúite ar an scáileán baile.</string>
     <string name="dejavu_clear_data_choose">Roghnaigh ar dtús cad atá le glanadh</string>
     <string name="dejavu_starter_folder">Uirlisí</string>
+    <string name="dejavu_no_icon">Gan deilbhín</string>
+    <string name="dejavu_no_color">Gan dath</string>
 </resources>

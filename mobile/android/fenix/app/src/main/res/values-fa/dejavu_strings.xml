@@ -526,4 +526,6 @@
     <string name="dejavu_clear_data_button_summary">آنچه «پاک کردن داده‌ها» و «پاک کردن داده‌ها و خروج» حذف می‌کنند. اگر «پاک کردن» را در صفحهٔ خانه لمس کنید و نگه دارید، همان‌ها هم حذف می‌شوند.</string>
     <string name="dejavu_clear_data_choose">اول انتخاب کنید چه چیزهایی پاک شوند</string>
     <string name="dejavu_starter_folder">ابزارها</string>
+    <string name="dejavu_no_icon">بدون نماد</string>
+    <string name="dejavu_no_color">بدون رنگ</string>
 </resources>

@@ -559,4 +559,6 @@
     <string name="dejavu_clear_data_button_summary">“ડેટા સાફ કરો” અને “ડેટા સાફ કરો અને છોડો” દ્વારા કાઢી નાખવામાં આવતો ડેટા. હોમ સ્ક્રીન પર “સાફ કરો” દબાવી રાખવાથી પણ તે કાઢી નાખવામાં આવે છે.</string>
     <string name="dejavu_clear_data_choose">પહેલાં પસંદ કરો કે શું સાફ કરવું</string>
     <string name="dejavu_starter_folder">સાધનો</string>
+    <string name="dejavu_no_icon">કોઈ આઇકન નહીં</string>
+    <string name="dejavu_no_color">કોઈ રંગ નહીં</string>
 </resources>

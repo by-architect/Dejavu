@@ -518,4 +518,6 @@
     <string name="dejavu_clear_data_button_summary">Naon nu dipupus ku “Beresihan data” jeung “Beresihan data jeung eureun”. Mencét lila “Beresihan” di layar utama ogé mupus data éta.</string>
     <string name="dejavu_clear_data_choose">Pilih heula naon nu rék diberesihan</string>
     <string name="dejavu_starter_folder">Parabot</string>
+    <string name="dejavu_no_icon">Teu aya ikon</string>
+    <string name="dejavu_no_color">Teu aya warna</string>
 </resources>

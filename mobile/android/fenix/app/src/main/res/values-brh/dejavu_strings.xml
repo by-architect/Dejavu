@@ -526,4 +526,6 @@
     <string name="dejavu_clear_data_button_summary">«ڈیٹا صاف کبو» او «ڈیٹا صاف کبو او بند کبو» دافتے صاف کیرہ۔ ہوم اسکرین ٹی صاف کبو بٹن اے دبائے تخنگ ہم دافتے صاف کیک۔</string>
     <string name="dejavu_clear_data_choose">اول صاف کننگ کے چیزاک انتخاب کبو</string>
     <string name="dejavu_starter_folder">اوزاراک</string>
+    <string name="dejavu_no_icon">آئیکن کائی نی</string>
+    <string name="dejavu_no_color">رنگ کائی نی</string>
 </resources>

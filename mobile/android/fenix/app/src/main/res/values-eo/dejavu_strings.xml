@@ -526,4 +526,6 @@
     <string name="dejavu_clear_data_button_summary">Kion forigas “Forviŝi datumojn” kaj “Forviŝi datumojn kaj fini”. Longe premi “Forviŝi” en la hejma ekrano ankaŭ forigas tion.</string>
     <string name="dejavu_clear_data_choose">Unue elektu kion forviŝi</string>
     <string name="dejavu_starter_folder">Iloj</string>
+    <string name="dejavu_no_icon">Neniu piktogramo</string>
+    <string name="dejavu_no_color">Neniu koloro</string>
 </resources>

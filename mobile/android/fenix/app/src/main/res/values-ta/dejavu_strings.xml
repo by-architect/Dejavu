@@ -526,4 +526,6 @@
     <string name="dejavu_clear_data_button_summary">“தரவை அழி”, “தரவை அழித்து வெளியேறு” ஆகியவற்றால் அழிக்கப்படுபவை. முகப்புத் திரையில் அழி பொத்தானை அழுத்திப் பிடித்தாலும் இவை அழிக்கப்படும்.</string>
     <string name="dejavu_clear_data_choose">அழிக்க வேண்டியதை முதலில் தேர்ந்தெடுங்கள்</string>
     <string name="dejavu_starter_folder">கருவிகள்</string>
+    <string name="dejavu_no_icon">சின்னம் இல்லை</string>
+    <string name="dejavu_no_color">நிறம் இல்லை</string>
 </resources>

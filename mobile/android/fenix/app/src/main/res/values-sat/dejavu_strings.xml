@@ -534,4 +534,6 @@
     <string name="dejavu_clear_data_button_summary">“ᱰᱟᱴᱟ ᱠᱞᱤᱭᱟᱨ ᱢᱮ” ᱟᱨ “ᱰᱟᱴᱟ ᱠᱞᱤᱭᱟᱨ ᱟᱨ ᱵᱟᱹᱜᱤ ᱢᱮ” ᱦᱚᱛᱮᱛᱮ ᱡᱟᱦᱟᱸ ᱢᱮᱴᱟᱣᱚᱜᱼᱟ ᱾ ᱚᱲᱟᱜ ᱥᱠᱨᱤᱱ ᱨᱮ “ᱠᱞᱤᱭᱟᱨ ᱢᱮ” ᱡᱤᱞᱤᱧ ᱚᱛᱟ ᱠᱷᱟᱱ ᱦᱚᱸ ᱱᱚᱶᱟ ᱢᱮᱴᱟᱣᱚᱜᱼᱟ ᱾</string>
     <string name="dejavu_clear_data_choose">ᱯᱩᱭᱞᱩ ᱪᱮᱫ ᱠᱞᱤᱭᱟᱨ ᱦᱩᱭᱩᱜᱼᱟ ᱵᱟᱪᱷᱟᱣ ᱢᱮ</string>
     <string name="dejavu_starter_folder">ᱦᱟᱹᱛᱤᱭᱟᱹᱨ ᱠᱚ</string>
+    <string name="dejavu_no_icon">ᱟᱭᱠᱚᱱ ᱵᱟᱹᱱᱩᱜ</string>
+    <string name="dejavu_no_color">ᱨᱚᱝ ᱵᱟᱹᱱᱩᱜ</string>
 </resources>

@@ -526,4 +526,6 @@
     <string name="dejavu_clear_data_button_summary">«ውሂብ አጽዳ» እና «ውሂብ አጽዳ እና አቋርጥ» የሚሰርዙት ውሂብ። በመነሻ ማያ ገጹ ላይ «አጽዳ» የሚለውን ነካ አድርገው ሲይዙም ይህ ውሂብ ይሰረዛል።</string>
     <string name="dejavu_clear_data_choose">መጀመሪያ የሚጸዳውን ይምረጡ</string>
     <string name="dejavu_starter_folder">መሳሪያዎች</string>
+    <string name="dejavu_no_icon">አዶ የለም</string>
+    <string name="dejavu_no_color">ቀለም የለም</string>
 </resources>

@@ -526,4 +526,6 @@
     <string name="dejavu_clear_data_button_summary">“డేటాను తుడిచివేయి” మరియు “డేటాను తుడిచివేసి నిష్క్రమించు” తొలగించేవి ఇవే. హోమ్ తెరపై తుడిచివేయి బొత్తాన్ని నొక్కి పట్టుకోవడం కూడా వీటిని తొలగిస్తుంది.</string>
     <string name="dejavu_clear_data_choose">ముందుగా ఏమి తుడిచివేయాలో ఎంచుకోండి</string>
     <string name="dejavu_starter_folder">సాధనాలు</string>
+    <string name="dejavu_no_icon">చిహ్నం లేదు</string>
+    <string name="dejavu_no_color">రంగు లేదు</string>
 </resources>

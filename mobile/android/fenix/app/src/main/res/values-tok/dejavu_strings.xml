@@ -518,4 +518,6 @@
     <string name="dejavu_clear_data_button_summary">“o weka e sona” en “o weka e sona, o weka tan ilo” li weka e ijo ni. sina luka awen e nena “o weka” lon lipu tomo la ijo ni li weka kin.</string>
     <string name="dejavu_clear_data_choose">nanpa wan la, o wile e ijo tawa weka</string>
     <string name="dejavu_starter_folder">ilo</string>
+    <string name="dejavu_no_icon">sitelen lili ala</string>
+    <string name="dejavu_no_color">kule ala</string>
 </resources>

@@ -397,14 +397,21 @@ internal fun MoreMenuLinesEditor(settings: DejavuSettings, modifier: Modifier = 
         }
     }
 
-    // Lines out of sight scroll into it while a button is held near the top or the bottom of the lines.
+    // Lines out of sight scroll into it while a button is held near the top or the bottom of the lines. An edge only
+    // scrolls once the button was away from it, so one brought up from the buttons below, which comes in over the
+    // bottom edge, does not scroll the lines away from where it goes.
     LaunchedEffect(dragging) {
+        var awayFromTop = false
+        var awayFromBottom = false
         while (dragging) {
             val pointer = drag?.pointer ?: break
+            val inLines = pointer.x in linesArea.left..linesArea.right && pointer.y in linesArea.top..linesArea.bottom
+            if (inLines && pointer.y >= linesArea.top + edge) awayFromTop = true
+            if (inLines && pointer.y <= linesArea.bottom - edge) awayFromBottom = true
             val step = when {
-                pointer.x !in linesArea.left..linesArea.right || pointer.y !in linesArea.top..linesArea.bottom -> 0f
-                pointer.y < linesArea.top + edge -> -AUTO_SCROLL_STEP
-                pointer.y > linesArea.bottom - edge -> AUTO_SCROLL_STEP
+                !inLines -> 0f
+                pointer.y < linesArea.top + edge && awayFromTop -> -AUTO_SCROLL_STEP
+                pointer.y > linesArea.bottom - edge && awayFromBottom -> AUTO_SCROLL_STEP
                 else -> 0f
             }
             if (step != 0f) linesScroll.scrollBy(step)

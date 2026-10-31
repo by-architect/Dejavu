@@ -526,4 +526,6 @@
     <string name="dejavu_clear_data_button_summary">Chiddu ca scancèllanu “Scancella i dati” e “Scancella i dati e nesci”. Tinennu u jitu supra Pulizza ntâ pàggina di casa, si scancella macari.</string>
     <string name="dejavu_clear_data_choose">Scegghi prima chi scancillari</string>
     <string name="dejavu_starter_folder">Strumenti</string>
+    <string name="dejavu_no_icon">Nudda icona</string>
+    <string name="dejavu_no_color">Nuddu culuri</string>
 </resources>

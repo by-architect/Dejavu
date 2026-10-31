@@ -534,4 +534,6 @@
     <string name="dejavu_clear_data_button_summary">Шта бришу „Очисти податке“ и „Очисти податке и затвори“. Дуги притисак на „Очисти“ на почетном екрану брише исто.</string>
     <string name="dejavu_clear_data_choose">Прво изаберите шта да се очисти</string>
     <string name="dejavu_starter_folder">Алатке</string>
+    <string name="dejavu_no_icon">Без иконе</string>
+    <string name="dejavu_no_color">Без боје</string>
 </resources>

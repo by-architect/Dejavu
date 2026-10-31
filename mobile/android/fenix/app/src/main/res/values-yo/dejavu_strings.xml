@@ -518,4 +518,6 @@
     <string name="dejavu_clear_data_button_summary">Ohun tí “Nu dátà kúrò” àti “Nu dátà kúrò kí o sì kúrò” ń pa rẹ́. Dídi bọ́tìnnì Nu kúrò mú lórí ìbòjú ilé náà ń pa á rẹ́ pẹ̀lú.</string>
     <string name="dejavu_clear_data_choose">Kọ́kọ́ yan ohun tí o fẹ́ nu kúrò</string>
     <string name="dejavu_starter_folder">Àwọn irinṣẹ́</string>
+    <string name="dejavu_no_icon">Kò sí àmì</string>
+    <string name="dejavu_no_color">Kò sí àwọ̀</string>
 </resources>

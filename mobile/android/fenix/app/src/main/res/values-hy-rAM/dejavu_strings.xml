@@ -526,4 +526,6 @@
     <string name="dejavu_clear_data_button_summary">Այն, ինչ ջնջում են «Մաքրել տվյալները» և «Մաքրել տվյալները և փակել» կոճակները։ Գլխավոր էկրանին «Մաքրել» կոճակը սեղմած պահելը նույնպես ջնջում է դրանք։</string>
     <string name="dejavu_clear_data_choose">Նախ ընտրեք, թե ինչ մաքրել</string>
     <string name="dejavu_starter_folder">Գործիքներ</string>
+    <string name="dejavu_no_icon">Առանց պատկերակի</string>
+    <string name="dejavu_no_color">Առանց գույնի</string>
 </resources>

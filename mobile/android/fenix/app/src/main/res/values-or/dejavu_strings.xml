@@ -526,4 +526,6 @@
     <string name="dejavu_clear_data_button_summary">“ଡାଟା ସଫା କରନ୍ତୁ” ଓ “ଡାଟା ସଫା କରି ବାହାରନ୍ତୁ” ଦ୍ୱାରା ଡିଲିଟ୍ ହେଉଥିବା ଡାଟା। ହୋମ୍ ସ୍କ୍ରିନ୍‌ରେ “ସଫା କରନ୍ତୁ” ଦବାଇ ଧରିଲେ ମଧ୍ୟ ଏହା ଡିଲିଟ୍ ହୁଏ।</string>
     <string name="dejavu_clear_data_choose">ପ୍ରଥମେ କଣ ସଫା କରିବେ ତାହା ବାଛନ୍ତୁ</string>
     <string name="dejavu_starter_folder">ଉପକରଣ</string>
+    <string name="dejavu_no_icon">ଆଇକନ୍ ନାହିଁ</string>
+    <string name="dejavu_no_color">ରଙ୍ଗ ନାହିଁ</string>
 </resources>

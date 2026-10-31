@@ -542,4 +542,6 @@
     <string name="dejavu_clear_data_button_summary">Wubjerće, štož „Daty zhašeć“ a „Daty zhašeć a skónčić“ zhašatej. To so tež zhaša, hdyž na startowej wobrazowce „Wuprózdnić“ dołho tłóčiće.</string>
     <string name="dejavu_clear_data_choose">Wubjerće najprjedy, štož ma so zhašeć</string>
     <string name="dejavu_starter_folder">Nastroje</string>
+    <string name="dejavu_no_icon">Žadyn symbol</string>
+    <string name="dejavu_no_color">Žana barba</string>
 </resources>

@@ -526,4 +526,6 @@
     <string name="dejavu_clear_data_button_summary">Quello che scancellan “Pulisci dæti” e “Pulisci dæti e sciòrti”. Se ti tegni sciaccou “Pulisci” inta pagina iniçiâ, ti scancelli ascì sti dæti.</string>
     <string name="dejavu_clear_data_choose">Primma çerni quello che ti veu pulî</string>
     <string name="dejavu_starter_folder">Strumenti</string>
+    <string name="dejavu_no_icon">Nisciunn-a icona</string>
+    <string name="dejavu_no_color">Nisciun cô</string>
 </resources>

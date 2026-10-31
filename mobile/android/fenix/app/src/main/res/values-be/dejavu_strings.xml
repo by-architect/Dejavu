@@ -542,4 +542,6 @@
     <string name="dejavu_clear_data_button_summary">Што выдаляюць «Ачысціць дадзеныя» і «Ачысціць дадзеныя і выйсці». Доўгае націсканне кнопкі «Ачысціць» на галоўным экране таксама выдаляе гэтыя дадзеныя.</string>
     <string name="dejavu_clear_data_choose">Спачатку выберыце, што ачысціць</string>
     <string name="dejavu_starter_folder">Інструменты</string>
+    <string name="dejavu_no_icon">Без значка</string>
+    <string name="dejavu_no_color">Без колеру</string>
 </resources>

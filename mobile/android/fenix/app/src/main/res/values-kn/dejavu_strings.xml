@@ -526,4 +526,6 @@
     <string name="dejavu_clear_data_button_summary">“ಡೇಟಾ ತೆರವುಗೊಳಿಸು” ಮತ್ತು “ಡೇಟಾ ತೆರವುಗೊಳಿಸಿ ನಿರ್ಗಮಿಸು” ಅಳಿಸುವ ಡೇಟಾ. ಮುಖಪುಟದಲ್ಲಿ “ತೆರವುಗೊಳಿಸು” ಅನ್ನು ಒತ್ತಿ ಹಿಡಿದಾಗಲೂ ಇದೇ ಡೇಟಾವನ್ನು ಅಳಿಸಲಾಗುತ್ತದೆ.</string>
     <string name="dejavu_clear_data_choose">ಮೊದಲು ಏನನ್ನು ತೆರವುಗೊಳಿಸಬೇಕೆಂದು ಆಯ್ಕೆಮಾಡಿ</string>
     <string name="dejavu_starter_folder">ಉಪಕರಣಗಳು</string>
+    <string name="dejavu_no_icon">ಚಿಹ್ನೆ ಇಲ್ಲ</string>
+    <string name="dejavu_no_color">ಬಣ್ಣ ಇಲ್ಲ</string>
 </resources>

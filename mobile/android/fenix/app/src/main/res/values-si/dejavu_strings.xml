@@ -526,4 +526,6 @@
     <string name="dejavu_clear_data_button_summary">“දත්ත හිස් කරන්න” සහ “දත්ත හිස් කර ඉවත් වන්න” මගින් මැකෙන දත්ත. මුල් තිරයේ “හිස් කරන්න” ඔබාගෙන සිටීමෙන් ද එම දත්ත මැකේ.</string>
     <string name="dejavu_clear_data_choose">පළමුව හිස් කළ යුතු දේ තෝරන්න</string>
     <string name="dejavu_starter_folder">මෙවලම්</string>
+    <string name="dejavu_no_icon">අයිකනයක් නැත</string>
+    <string name="dejavu_no_color">වර්ණයක් නැත</string>
 </resources>

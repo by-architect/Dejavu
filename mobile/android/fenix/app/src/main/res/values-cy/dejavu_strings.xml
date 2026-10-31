@@ -558,4 +558,6 @@
     <string name="dejavu_clear_data_button_summary">Yr hyn y mae “Clirio data” a “Clirio data a gadael” yn ei ddileu. Mae pwyso a dal y botwm Clirio ar y sgrin cartref yn ei ddileu hefyd.</string>
     <string name="dejavu_clear_data_choose">Dewiswch beth i\'w glirio yn gyntaf</string>
     <string name="dejavu_starter_folder">Offer</string>
+    <string name="dejavu_no_icon">Dim eicon</string>
+    <string name="dejavu_no_color">Dim lliw</string>
 </resources>

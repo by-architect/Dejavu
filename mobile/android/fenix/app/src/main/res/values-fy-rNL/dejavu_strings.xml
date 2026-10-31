@@ -526,4 +526,6 @@
     <string name="dejavu_clear_data_button_summary">Wat ‘Gegevens fuortsmite’ en ‘Gegevens fuortsmite en ôfslute’ fuortsmite. As jo op de startside lang op ‘Opromje’ drukke, wurdt dit ek fuortsmiten.</string>
     <string name="dejavu_clear_data_choose">Kies earst wat jo fuortsmite wolle</string>
     <string name="dejavu_starter_folder">Ark</string>
+    <string name="dejavu_no_icon">Gjin byldkaike</string>
+    <string name="dejavu_no_color">Gjin kleur</string>
 </resources>

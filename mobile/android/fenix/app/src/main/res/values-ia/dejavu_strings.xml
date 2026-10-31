@@ -526,4 +526,6 @@
     <string name="dejavu_clear_data_button_summary">Lo que “Deler datos” e “Deler datos e quitar” dele. Un pression longe sur Vacuar in le schermo initial lo dele etiam.</string>
     <string name="dejavu_clear_data_choose">Selige primo lo que deler</string>
     <string name="dejavu_starter_folder">Instrumentos</string>
+    <string name="dejavu_no_icon">Nulle icone</string>
+    <string name="dejavu_no_color">Nulle color</string>
 </resources>

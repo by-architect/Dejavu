@@ -542,4 +542,6 @@
     <string name="dejavu_clear_data_button_summary">Co kasujōm „Wyczyś dane” i „Wyczyś dane i zawrzij”. Przitrzimanie „Wyczyś” na ekranie startowym tyż to kasuje.</string>
     <string name="dejavu_clear_data_choose">Nojpiyrw wybier, co wyczyścić</string>
     <string name="dejavu_starter_folder">Nŏrzyndzia</string>
+    <string name="dejavu_no_icon">Bez ikōny</string>
+    <string name="dejavu_no_color">Bez farby</string>
 </resources>

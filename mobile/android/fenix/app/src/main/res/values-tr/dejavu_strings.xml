@@ -526,4 +526,6 @@
     <string name="dejavu_clear_data_button_summary">“Verileri temizle” ve “Verileri temizle ve çık” ile silinecek veriler. Ana ekranda Temizle\'ye basılı tutmak da bunları siler.</string>
     <string name="dejavu_clear_data_choose">Önce neyin temizleneceğini seçin</string>
     <string name="dejavu_starter_folder">Araçlar</string>
+    <string name="dejavu_no_icon">Simge yok</string>
+    <string name="dejavu_no_color">Renk yok</string>
 </resources>

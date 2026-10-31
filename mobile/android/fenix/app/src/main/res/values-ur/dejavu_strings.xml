@@ -526,4 +526,6 @@
     <string name="dejavu_clear_data_button_summary">جو کچھ ”ڈیٹا صاف کریں“ اور ”ڈیٹا صاف کر کے بند کریں“ مٹاتے ہیں۔ ہوم اسکرین پر ”صاف کریں“ کو دبائے رکھنے سے بھی یہی مٹ جاتا ہے۔</string>
     <string name="dejavu_clear_data_choose">پہلے منتخب کریں کہ کیا صاف کرنا ہے</string>
     <string name="dejavu_starter_folder">اوزار</string>
+    <string name="dejavu_no_icon">کوئی آئیکن نہیں</string>
+    <string name="dejavu_no_color">کوئی رنگ نہیں</string>
 </resources>

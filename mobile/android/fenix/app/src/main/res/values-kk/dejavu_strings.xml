@@ -526,4 +526,6 @@
     <string name="dejavu_clear_data_button_summary">«Деректерді тазалау» және «Деректерді тазалап, жұмысты аяқтау» өшіретін деректер. Басты экрандағы «Тазалау» батырмасын басып тұру да осы деректерді өшіреді.</string>
     <string name="dejavu_clear_data_choose">Алдымен нені тазалау керектігін таңдаңыз</string>
     <string name="dejavu_starter_folder">Құралдар</string>
+    <string name="dejavu_no_icon">Белгіше жоқ</string>
+    <string name="dejavu_no_color">Түс жоқ</string>
 </resources>

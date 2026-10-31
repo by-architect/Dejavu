@@ -534,4 +534,6 @@
     <string name="dejavu_clear_data_button_summary">O que “Limpar dados” e “Limpar dados e sair” excluem. Manter “Limpar” pressionado na tela inicial também exclui esses dados.</string>
     <string name="dejavu_clear_data_choose">Primeiro escolha o que limpar</string>
     <string name="dejavu_starter_folder">Ferramentas</string>
+    <string name="dejavu_no_icon">Sem ícone</string>
+    <string name="dejavu_no_color">Sem cor</string>
 </resources>

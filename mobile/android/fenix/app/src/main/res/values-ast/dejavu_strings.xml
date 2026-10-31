@@ -526,4 +526,6 @@
     <string name="dejavu_clear_data_button_summary">Lo que desanicien «Llimpiar los datos» y «Llimpiar los datos y colar». Mantener primíu «Llimpiar» na pantalla d\'aniciu tamién lo desanicia.</string>
     <string name="dejavu_clear_data_choose">Escueyi primero qué llimpiar</string>
     <string name="dejavu_starter_folder">Ferramientes</string>
+    <string name="dejavu_no_icon">Ensin iconu</string>
+    <string name="dejavu_no_color">Ensin color</string>
 </resources>

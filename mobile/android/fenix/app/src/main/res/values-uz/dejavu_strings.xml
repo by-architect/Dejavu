@@ -526,4 +526,6 @@
     <string name="dejavu_clear_data_button_summary">“Ma\'lumotlarni tozalash” va “Ma\'lumotlarni tozalash va chiqish” o\'chiradigan narsalar. Bosh ekrandagi “Tozalash” tugmasini bosib turish ham ularni o\'chiradi.</string>
     <string name="dejavu_clear_data_choose">Avval nimani tozalashni tanlang</string>
     <string name="dejavu_starter_folder">Vositalar</string>
+    <string name="dejavu_no_icon">Nishonchasiz</string>
+    <string name="dejavu_no_color">Rangsiz</string>
 </resources>

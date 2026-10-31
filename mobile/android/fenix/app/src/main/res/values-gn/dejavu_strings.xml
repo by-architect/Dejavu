@@ -526,4 +526,6 @@
     <string name="dejavu_clear_data_button_summary">Umi mba\'e “Emboguete mba\'ekuaarã” ha “Emboguete mba\'ekuaarã ha esẽ” omboguetéva. Ejopy are Mboty mba\'erechaha ñepyrũme ha oñemboguete avei.</string>
     <string name="dejavu_clear_data_choose">Eiporavo raẽ mba\'épa emboguetéta</string>
     <string name="dejavu_starter_folder">Tembiporu</string>
+    <string name="dejavu_no_icon">Ta\'ãnga\'ỹre</string>
+    <string name="dejavu_no_color">Sa\'y\'ỹre</string>
 </resources>

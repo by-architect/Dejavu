@@ -558,4 +558,6 @@
     <string name="dejavu_clear_data_button_summary">ما يمسحه «مسح البيانات» و«مسح البيانات والخروج». الضغط مطولًا على «مسح» في الشاشة الرئيسية يمسحه أيضًا.</string>
     <string name="dejavu_clear_data_choose">اختر ما تريد مسحه أولًا</string>
     <string name="dejavu_starter_folder">أدوات</string>
+    <string name="dejavu_no_icon">بلا أيقونة</string>
+    <string name="dejavu_no_color">بلا لون</string>
 </resources>

@@ -526,4 +526,6 @@
     <string name="dejavu_clear_data_button_summary">Hvad »Ryd data« og »Ryd data og afslut« sletter. Et langt tryk på Ryd på startsiden sletter det også.</string>
     <string name="dejavu_clear_data_choose">Vælg først, hvad der skal ryddes</string>
     <string name="dejavu_starter_folder">Værktøjer</string>
+    <string name="dejavu_no_icon">Intet ikon</string>
+    <string name="dejavu_no_color">Ingen farve</string>
 </resources>

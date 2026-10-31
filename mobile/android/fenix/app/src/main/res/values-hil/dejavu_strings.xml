@@ -526,4 +526,6 @@
     <string name="dejavu_clear_data_button_summary">Ang mga ginadelete sang “i-Clear ang data” kag “i-Clear ang data kag mag-quit”. Kon kaptan mo sing madugay ang i-Clear sa home screen, madelete man ini.</string>
     <string name="dejavu_clear_data_choose">Pilia anay kon ano ang i-clear</string>
     <string name="dejavu_starter_folder">Mga Gamit</string>
+    <string name="dejavu_no_icon">Wala sing icon</string>
+    <string name="dejavu_no_color">Wala sing kolor</string>
 </resources>

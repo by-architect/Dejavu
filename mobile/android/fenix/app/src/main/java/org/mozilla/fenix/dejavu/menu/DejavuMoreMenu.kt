@@ -71,6 +71,7 @@ import org.mozilla.fenix.dejavu.browser.statusBarRoomPadding
 import org.mozilla.fenix.dejavu.browser.workspaceTheme
 import org.mozilla.fenix.dejavu.home.displayTitle
 import org.mozilla.fenix.dejavu.ui.TapIcon
+import org.mozilla.fenix.dejavu.ui.WordFittedText
 import org.mozilla.fenix.dejavu.ui.rememberIconTaps
 import org.mozilla.fenix.dejavu.workspaces.SplitOrientation
 
@@ -403,13 +404,11 @@ private fun MenuTile(look: EntryLook, onClick: () -> Unit, modifier: Modifier = 
             )
         }
         Spacer(Modifier.height(6.dp))
-        Text(
+        WordFittedText(
             text = look.label,
             style = MaterialTheme.typography.labelMedium,
             color = MaterialTheme.colorScheme.onSurface,
             textAlign = TextAlign.Center,
-            maxLines = 2,
-            overflow = TextOverflow.Ellipsis,
         )
     }
 }

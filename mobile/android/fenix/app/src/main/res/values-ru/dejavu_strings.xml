@@ -542,4 +542,6 @@
     <string name="dejavu_clear_data_button_summary">Что удаляют «Очистить данные» и «Очистить данные и выйти». Долгое нажатие кнопки «Очистить» на главном экране тоже удаляет эти данные.</string>
     <string name="dejavu_clear_data_choose">Сначала выберите, что очистить</string>
     <string name="dejavu_starter_folder">Инструменты</string>
+    <string name="dejavu_no_icon">Без значка</string>
+    <string name="dejavu_no_color">Без цвета</string>
 </resources>

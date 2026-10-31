@@ -526,4 +526,6 @@
     <string name="dejavu_clear_data_button_summary">هغه څه چې «معلومات پاکول» او «معلومات پاکول او وتل» یې پاکوي. که په کور پاڼه کې «پاکول» کېکاږئ او ونیسئ، دا هم پاکېږي.</string>
     <string name="dejavu_clear_data_choose">لومړی وټاکئ چې څه پاک شي</string>
     <string name="dejavu_starter_folder">اوزار</string>
+    <string name="dejavu_no_icon">پرته له آیکون</string>
+    <string name="dejavu_no_color">پرته له رنګ</string>
 </resources>

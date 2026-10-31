@@ -518,4 +518,6 @@
     <string name="dejavu_clear_data_button_summary">「清除資料」與「清除資料並離開」會刪除下列項目。在首頁長按「清除」也會刪除這些項目。</string>
     <string name="dejavu_clear_data_choose">請先選擇要清除的項目</string>
     <string name="dejavu_starter_folder">工具</string>
+    <string name="dejavu_no_icon">無圖示</string>
+    <string name="dejavu_no_color">無顏色</string>
 </resources>

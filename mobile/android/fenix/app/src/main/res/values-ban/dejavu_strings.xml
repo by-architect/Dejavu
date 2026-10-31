@@ -518,4 +518,6 @@
     <string name="dejavu_clear_data_button_summary">Data sane kaapus olih “Bersihang data” lan “Bersihang data tur medal”. Nekan suwé “Bersihang” ring layar utama taler ngapus data punika.</string>
     <string name="dejavu_clear_data_choose">Pilih dumun data sane jagi kabersihang</string>
     <string name="dejavu_starter_folder">Piranti</string>
+    <string name="dejavu_no_icon">Tusing ada ikon</string>
+    <string name="dejavu_no_color">Tusing ada warna</string>
 </resources>

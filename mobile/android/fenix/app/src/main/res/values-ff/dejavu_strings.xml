@@ -526,4 +526,6 @@
     <string name="dejavu_clear_data_button_summary">Ce qu\'effacent « Effacer les données » et « Effacer les données et quitter ». Sur l\'écran d\'accueil, un appui long sur Effacer efface aussi ces données.</string>
     <string name="dejavu_clear_data_choose">Choisissez d\'abord ce qu\'il faut effacer</string>
     <string name="dejavu_starter_folder">Outils</string>
+    <string name="dejavu_no_icon">Alaa icône</string>
+    <string name="dejavu_no_color">Alaa goobu</string>
 </resources>

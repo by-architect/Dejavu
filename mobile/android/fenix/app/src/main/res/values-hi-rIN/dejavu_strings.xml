@@ -559,4 +559,6 @@
     <string name="dejavu_clear_data_button_summary">“डेटा मिटाएं” और “डेटा मिटाएं और बाहर निकलें” से डिलीट होने वाला डेटा। होम स्क्रीन पर मिटाएं बटन को दबाकर रखने से भी यह डिलीट हो जाता है।</string>
     <string name="dejavu_clear_data_choose">पहले चुनें कि क्या मिटाना है</string>
     <string name="dejavu_starter_folder">टूल</string>
+    <string name="dejavu_no_icon">कोई आइकन नहीं</string>
+    <string name="dejavu_no_color">कोई रंग नहीं</string>
 </resources>

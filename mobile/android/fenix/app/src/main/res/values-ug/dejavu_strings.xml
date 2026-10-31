@@ -526,4 +526,6 @@
     <string name="dejavu_clear_data_button_summary">«سانلىق مەلۇماتنى تازىلا» ۋە «سانلىق مەلۇماتنى تازىلاپ چېكىن» ئۆچۈرىدىغان سانلىق مەلۇماتلار. باش بەتتىكى «تازىلا»نى ئۇزۇن باسقاندىمۇ بۇلار ئۆچۈرۈلىدۇ.</string>
     <string name="dejavu_clear_data_choose">ئالدى بىلەن نېمىنى تازىلاشنى تاللاڭ</string>
     <string name="dejavu_starter_folder">قوراللار</string>
+    <string name="dejavu_no_icon">سىنبەلگە يوق</string>
+    <string name="dejavu_no_color">رەڭ يوق</string>
 </resources>

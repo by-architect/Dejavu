@@ -526,4 +526,6 @@
     <string name="dejavu_clear_data_button_summary">«Maǵlıwmatlardı tazalaw» hám «Maǵlıwmatlardı tazalaw hám shıǵıw» óshiretuǵın nárseler. Bas ekrandaǵı «Tazalaw» túymesin basıp turıw da olardı óshiredi.</string>
     <string name="dejavu_clear_data_choose">Dáslep neni tazalawdı tańlań</string>
     <string name="dejavu_starter_folder">Qurallar</string>
+    <string name="dejavu_no_icon">Belgishe joq</string>
+    <string name="dejavu_no_color">Reń joq</string>
 </resources>

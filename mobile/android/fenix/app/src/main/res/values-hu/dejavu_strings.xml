@@ -526,4 +526,6 @@
     <string name="dejavu_clear_data_button_summary">Amit az „Adatok törlése” és az „Adatok törlése és kilépés” töröl. A kezdőképernyőn a „Kiürítés” gomb hosszú megnyomása is ugyanezt törli.</string>
     <string name="dejavu_clear_data_choose">Először válassza ki, mit szeretne törölni</string>
     <string name="dejavu_starter_folder">Eszközök</string>
+    <string name="dejavu_no_icon">Nincs ikon</string>
+    <string name="dejavu_no_color">Nincs szín</string>
 </resources>

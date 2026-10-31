@@ -558,4 +558,6 @@
     <string name="dejavu_clear_data_button_summary">An pyth a vydh dileys gans “Glanhe an data” ha “Glanhe an data ha degea”. Synsi “Glanhe” war an skrin tre a wra y dhilea ynwedh.</string>
     <string name="dejavu_clear_data_choose">Dewis kyns oll pyth dhe lanhe</string>
     <string name="dejavu_starter_folder">Toulys</string>
+    <string name="dejavu_no_icon">Ikon vyth</string>
+    <string name="dejavu_no_color">Liw vyth</string>
 </resources>

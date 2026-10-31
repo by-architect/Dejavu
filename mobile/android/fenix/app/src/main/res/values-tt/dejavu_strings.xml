@@ -526,4 +526,6 @@
     <string name="dejavu_clear_data_button_summary">«Мәгълүматларны чистарту» һәм «Мәгълүматларны чистарту һәм чыгу» бетерә торган мәгълүматлар. Баш экранда Чистарту төймәсенә озак басу да аларны бетерә.</string>
     <string name="dejavu_clear_data_choose">Башта чистартыласы мәгълүматларны сайлагыз</string>
     <string name="dejavu_starter_folder">Кораллар</string>
+    <string name="dejavu_no_icon">Билгечек юк</string>
+    <string name="dejavu_no_color">Төс юк</string>
 </resources>

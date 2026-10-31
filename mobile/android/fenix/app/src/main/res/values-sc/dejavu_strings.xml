@@ -526,4 +526,6 @@
     <string name="dejavu_clear_data_button_summary">Su chi cantzellant “Illìmpia is datos” e “Illìmpia is datos e essi”. Si mantenes incarcadu “Illìmpia” in s\'ischermu printzipale, lu cantzellas puru.</string>
     <string name="dejavu_clear_data_choose">Sèbera in antis ite illimpiare</string>
     <string name="dejavu_starter_folder">Ainas</string>
+    <string name="dejavu_no_icon">Peruna icona</string>
+    <string name="dejavu_no_color">Perunu colore</string>
 </resources>

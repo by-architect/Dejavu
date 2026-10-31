@@ -526,4 +526,6 @@
     <string name="dejavu_clear_data_button_summary">Cosa eliminano «Elimina dati» e «Elimina dati e chiudi». Anche tenere premuto Svuota nella pagina iniziale elimina questi dati.</string>
     <string name="dejavu_clear_data_choose">Scegli prima cosa eliminare</string>
     <string name="dejavu_starter_folder">Strumenti</string>
+    <string name="dejavu_no_icon">Nessuna icona</string>
+    <string name="dejavu_no_color">Nessun colore</string>
 </resources>

@@ -518,4 +518,6 @@
     <string name="dejavu_clear_data_button_summary">“清除数据”和“清除数据并退出”要删除的内容。在主页上长按“清除”也会删除这些内容。</string>
     <string name="dejavu_clear_data_choose">请先选择要清除的内容</string>
     <string name="dejavu_starter_folder">工具</string>
+    <string name="dejavu_no_icon">无图标</string>
+    <string name="dejavu_no_color">无颜色</string>
 </resources>

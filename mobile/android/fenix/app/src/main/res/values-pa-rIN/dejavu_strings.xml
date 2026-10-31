@@ -526,4 +526,6 @@
     <string name="dejavu_clear_data_button_summary">“ਡਾਟਾ ਸਾਫ਼ ਕਰੋ” ਅਤੇ “ਡਾਟਾ ਸਾਫ਼ ਕਰਕੇ ਬੰਦ ਕਰੋ” ਹੇਠਾਂ ਦਿੱਤੀਆਂ ਚੀਜ਼ਾਂ ਨੂੰ ਹਟਾਉਂਦੇ ਹਨ। ਹੋਮ ਸਕਰੀਨ ਉੱਤੇ “ਸਾਫ਼ ਕਰੋ” ਨੂੰ ਦਬਾ ਕੇ ਰੱਖਣ ਨਾਲ ਵੀ ਇਹ ਹਟ ਜਾਂਦੀਆਂ ਹਨ।</string>
     <string name="dejavu_clear_data_choose">ਪਹਿਲਾਂ ਚੁਣੋ ਕਿ ਕੀ ਸਾਫ਼ ਕਰਨਾ ਹੈ</string>
     <string name="dejavu_starter_folder">ਟੂਲ</string>
+    <string name="dejavu_no_icon">ਕੋਈ ਆਈਕਨ ਨਹੀਂ</string>
+    <string name="dejavu_no_color">ਕੋਈ ਰੰਗ ਨਹੀਂ</string>
 </resources>

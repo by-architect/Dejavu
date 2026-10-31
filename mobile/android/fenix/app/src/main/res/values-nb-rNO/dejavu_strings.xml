@@ -526,4 +526,6 @@
     <string name="dejavu_clear_data_button_summary">Hva «Tøm data» og «Tøm data og avslutt» sletter. Å holde inne «Tøm» på startsiden sletter det også.</string>
     <string name="dejavu_clear_data_choose">Velg først hva som skal tømmes</string>
     <string name="dejavu_starter_folder">Verktøy</string>
+    <string name="dejavu_no_icon">Intet ikon</string>
+    <string name="dejavu_no_color">Ingen farge</string>
 </resources>

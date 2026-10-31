@@ -526,4 +526,6 @@
     <string name="dejavu_clear_data_button_summary">“डेटा साफ करा” आणि “डेटा साफ करून बंद करा” खालील गोष्टी हटवतात. मुख्यपृष्ठावर “साफ करा” दाबून धरल्यानेही त्या हटवल्या जातात.</string>
     <string name="dejavu_clear_data_choose">आधी काय साफ करायचे ते निवडा</string>
     <string name="dejavu_starter_folder">साधने</string>
+    <string name="dejavu_no_icon">चिन्ह नाही</string>
+    <string name="dejavu_no_color">रंग नाही</string>
 </resources>

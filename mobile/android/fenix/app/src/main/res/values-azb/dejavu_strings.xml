@@ -526,4 +526,6 @@
     <string name="dejavu_clear_data_button_summary">«دیتالاری تمیزله» و «دیتالاری تمیزله و چیخ» بونلاری سیلیر. ائو ائکرانیندا تمیزله دویمه‌سینی باسیب ساخلاماق دا بونلاری سیلیر.</string>
     <string name="dejavu_clear_data_choose">اوّلجه تمیزله‌نه‌جک شئیلری سئچین</string>
     <string name="dejavu_starter_folder">آلت‌لر</string>
+    <string name="dejavu_no_icon">آیکون‌سیز</string>
+    <string name="dejavu_no_color">رنگ‌سیز</string>
 </resources>

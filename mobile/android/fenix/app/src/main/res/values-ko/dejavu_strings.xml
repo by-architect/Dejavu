@@ -518,4 +518,6 @@
     <string name="dejavu_clear_data_button_summary">“데이터 지우기”와 “데이터 지우고 종료”는 아래 항목을 삭제합니다. 홈 화면에서 “지우기”를 길게 눌러도 삭제됩니다.</string>
     <string name="dejavu_clear_data_choose">먼저 지울 항목을 선택하세요</string>
     <string name="dejavu_starter_folder">도구</string>
+    <string name="dejavu_no_icon">아이콘 없음</string>
+    <string name="dejavu_no_color">색상 없음</string>
 </resources>

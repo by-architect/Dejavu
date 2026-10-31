@@ -526,4 +526,6 @@
     <string name="dejavu_clear_data_button_summary">Vali, mida „Kustuta andmed“ ja „Kustuta andmed ja välju“ kustutavad. Kui avalehel nuppu „Tühjenda“ all hoida, kustutatakse ka need.</string>
     <string name="dejavu_clear_data_choose">Vali esmalt, mida kustutada</string>
     <string name="dejavu_starter_folder">Tööriistad</string>
+    <string name="dejavu_no_icon">Ikoon puudub</string>
+    <string name="dejavu_no_color">Värv puudub</string>
 </resources>

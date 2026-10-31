@@ -518,4 +518,6 @@
     <string name="dejavu_clear_data_button_summary">“အချက်အလက် ရှင်းလင်းရန်” နှင့် “အချက်အလက် ရှင်းလင်းပြီး ထွက်ရန်” က ဖျက်မည့်အရာများ။ ပင်မမျက်နှာပြင်ရှိ “ရှင်းလင်းရန်” ကို ကြာကြာနှိပ်ထားလျှင်လည်း ၎င်းတို့ကို ဖျက်ပါသည်။</string>
     <string name="dejavu_clear_data_choose">ရှင်းလင်းမည့်အရာကို ဦးစွာ ရွေးပါ</string>
     <string name="dejavu_starter_folder">ကိရိယာများ</string>
+    <string name="dejavu_no_icon">အိုင်ကွန် မရှိ</string>
+    <string name="dejavu_no_color">အရောင် မရှိ</string>
 </resources>

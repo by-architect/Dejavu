@@ -4,10 +4,14 @@
 
 package org.mozilla.fenix.dejavu.browser
 
+import android.os.StrictMode
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.CompositionLocalProvider
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
+import androidx.compose.runtime.remember
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
@@ -24,6 +28,9 @@ import org.mozilla.fenix.dejavu.ui.DejavuButtonGap
 import org.mozilla.fenix.dejavu.ui.DejavuButtonStyle
 import org.mozilla.fenix.dejavu.ui.DejavuDialog
 import org.mozilla.fenix.dejavu.ui.DejavuDialogButton
+import org.mozilla.fenix.dejavu.ui.LocalPopupTheme
+import org.mozilla.fenix.dejavu.ui.workspacePopupTheme
+import org.mozilla.fenix.dejavu.workspaces.WorkspaceRepository
 
 /**
  * What long-pressing a recent search in the search screen offers: deleting that search, or every recent search.
@@ -71,11 +78,27 @@ object RecentSearchMenu {
     }
 }
 
-/** The menu of [RecentSearchMenu], while it is open. */
+/** The menu of [RecentSearchMenu], while it is open, in the colors of the shown workspace's wallpaper. */
 @Composable
 fun RecentSearchMenuDialog() {
     val searchTerm by RecentSearchMenu.shown.collectAsState()
     val term = searchTerm ?: return
+    val context = LocalContext.current
+    val fenix = components
+    val repository = remember(context) {
+        fenix.strictMode.allowViolation(StrictMode::allowThreadDiskReads) { WorkspaceRepository.get(context) }
+    }
+    val workspaces by repository.state.collectAsState()
+    val isPrivate = fenix.appStore.state.mode.isPrivate
+    CompositionLocalProvider(
+        LocalPopupTheme provides workspacePopupTheme(workspaces.activeWorkspaceId.takeUnless { isPrivate }),
+    ) {
+        RecentSearchDialog(term)
+    }
+}
+
+@Composable
+private fun RecentSearchDialog(term: String) {
     val storage = components.core.historyStorage
     DejavuDialog(
         title = term,

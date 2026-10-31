@@ -526,4 +526,6 @@
     <string name="dejavu_clear_data_button_summary">“डाटा खाली गर्नुहोस्” र “डाटा खाली गरेर बाहिर निस्कनुहोस्” ले मेटाउने कुराहरू। होम स्क्रिनमा “खाली गर्नुहोस्” थिचिराख्दा पनि यी मेटिन्छन्।</string>
     <string name="dejavu_clear_data_choose">पहिले के खाली गर्ने छान्नुहोस्</string>
     <string name="dejavu_starter_folder">उपकरणहरू</string>
+    <string name="dejavu_no_icon">कुनै चिन्ह छैन</string>
+    <string name="dejavu_no_color">कुनै रङ छैन</string>
 </resources>

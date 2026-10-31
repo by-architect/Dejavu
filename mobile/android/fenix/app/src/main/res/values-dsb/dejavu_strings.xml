@@ -542,4 +542,6 @@
     <string name="dejavu_clear_data_button_summary">Wubjeŕśo, což „Daty wulašowaś“ a „Daty wulašowaś a skóńcyś“ wulašujotej. To se teke wulašujo, gaž na startowej wobrazowce „Wuprozniś“ dłujko tłocyśo.</string>
     <string name="dejavu_clear_data_choose">Wubjeŕśo nejpjerwjej, což ma se wulašowaś</string>
     <string name="dejavu_starter_folder">Rědy</string>
+    <string name="dejavu_no_icon">Žeden symbol</string>
+    <string name="dejavu_no_color">Žedna barwa</string>
 </resources>

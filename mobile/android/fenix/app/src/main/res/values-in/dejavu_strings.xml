@@ -518,4 +518,6 @@
     <string name="dejavu_clear_data_button_summary">Data yang dihapus oleh “Bersihkan data” dan “Bersihkan data dan keluar”. Menekan lama “Bersihkan” di layar beranda juga akan menghapusnya.</string>
     <string name="dejavu_clear_data_choose">Pilih dulu apa yang ingin dibersihkan</string>
     <string name="dejavu_starter_folder">Alat</string>
+    <string name="dejavu_no_icon">Tanpa ikon</string>
+    <string name="dejavu_no_color">Tanpa warna</string>
 </resources>

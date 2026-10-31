@@ -542,4 +542,6 @@
     <string name="dejavu_clear_data_button_summary">Co se smaže pomocí „Vymazat data“ a „Vymazat data a ukončit“. Totéž se smaže i podržením tlačítka „Vymazat“ na domovské stránce.</string>
     <string name="dejavu_clear_data_choose">Nejprve vyberte, co chcete vymazat</string>
     <string name="dejavu_starter_folder">Nástroje</string>
+    <string name="dejavu_no_icon">Žádná ikona</string>
+    <string name="dejavu_no_color">Žádná barva</string>
 </resources>

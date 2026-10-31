@@ -550,4 +550,6 @@
     <string name="dejavu_clear_data_button_summary">Ar pezh a vez dilamet gant “Skarzhañ ar roadennoù” ha “Skarzhañ ar roadennoù ha kuitaat”. Dilamet e vez ivez en ur bouezañ pell war “Skarzhañ” er skramm degemer.</string>
     <string name="dejavu_clear_data_choose">Dibabit da gentañ ar pezh da skarzhañ</string>
     <string name="dejavu_starter_folder">Ostilhoù</string>
+    <string name="dejavu_no_icon">Arlun ebet</string>
+    <string name="dejavu_no_color">Liv ebet</string>
 </resources>

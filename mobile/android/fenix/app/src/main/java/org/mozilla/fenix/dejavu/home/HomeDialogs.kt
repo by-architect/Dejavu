@@ -661,7 +661,7 @@ private fun WorkspaceIconAvatar(icon: String?, onIconTyped: (String?) -> Unit) {
             .semantics { contentDescription = description },
         decorationBox = { field ->
             Box(contentAlignment = Alignment.Center, modifier = Modifier.size(56.dp)) {
-                if (shownIcon.isEmpty()) NoContainerIcon(size = 24.dp)
+                if (shownIcon.isEmpty()) NoContainerIcon(size = 24.dp, description = R.string.dejavu_no_icon)
                 field()
             }
         },
@@ -680,7 +680,7 @@ private fun IconChoice(text: String?, selected: Boolean, onClick: () -> Unit) {
             .clickable(onClick = onClick),
     ) {
         if (text == null) {
-            NoContainerIcon(size = 20.dp)
+            NoContainerIcon(size = 20.dp, description = R.string.dejavu_no_icon)
         } else {
             Text(text = text, fontSize = 20.sp)
         }
@@ -706,7 +706,7 @@ private fun ThemeChoice(colors: List<Int>?, selected: Boolean, onClick: () -> Un
             )
             .clickable(onClick = onClick),
     ) {
-        if (colors == null) NoContainerIcon(size = 18.dp)
+        if (colors == null) NoContainerIcon(size = 18.dp, description = R.string.dejavu_no_color)
     }
 }
 

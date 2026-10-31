@@ -526,4 +526,6 @@
     <string name="dejavu_clear_data_button_summary">Lo que borran «Limpiar datos» y «Limpiar datos y salir». Mantener pretau «Limpiar» en a pantalla d\'inicio tamién lo borra.</string>
     <string name="dejavu_clear_data_choose">Selecciona primero qué limpiar</string>
     <string name="dejavu_starter_folder">Ferramientas</string>
+    <string name="dejavu_no_icon">Sin icono</string>
+    <string name="dejavu_no_color">Sin color</string>
 </resources>

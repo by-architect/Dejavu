@@ -526,4 +526,6 @@
     <string name="dejavu_clear_data_button_summary">ئەوەی «خاوێنکردنەوەی زانیاری» و «خاوێنکردنەوەی زانیاری و دەرچوون» دەیسڕنەوە. پەنجە ڕاگرتن لەسەر «خاوێنکردنەوە» لە شاشەی سەرەکی هەمان شت دەسڕێتەوە.</string>
     <string name="dejavu_clear_data_choose">سەرەتا هەڵبژێرە چی خاوێن بکرێتەوە</string>
     <string name="dejavu_starter_folder">ئامرازەکان</string>
+    <string name="dejavu_no_icon">بێ ئایکۆن</string>
+    <string name="dejavu_no_color">بێ ڕەنگ</string>
 </resources>

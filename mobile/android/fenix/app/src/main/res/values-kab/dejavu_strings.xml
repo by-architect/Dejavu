@@ -526,4 +526,6 @@
     <string name="dejavu_clear_data_button_summary">Ayen ara kksen «Sfeḍ isefka» d «Sfeḍ isefka syen ffeɣ». Ṭṭef Sfeḍ s uḍad deg ugdil agejdan akken ad t-tekkseḍ daɣen.</string>
     <string name="dejavu_clear_data_choose">Fren di tazwara ayen ara tekkseḍ</string>
     <string name="dejavu_starter_folder">Ifecka</string>
+    <string name="dejavu_no_icon">Ulac tignit</string>
+    <string name="dejavu_no_color">Ulac ini</string>
 </resources>

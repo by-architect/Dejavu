@@ -5,6 +5,7 @@
 package org.mozilla.fenix.dejavu.containers
 
 import androidx.annotation.DrawableRes
+import androidx.annotation.StringRes
 import androidx.compose.foundation.layout.size
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
@@ -58,15 +59,19 @@ fun ContainerIcon(
     )
 }
 
-/** Stands for "no container" wherever containers can be picked, so it never looks like one of them. */
+/**
+ * Stands for "no container" wherever containers can be picked, so it never looks like one of them. The same crossed
+ * circle stands for no icon or no colors, which say so with [description].
+ */
 @Composable
 fun NoContainerIcon(
     modifier: Modifier = Modifier,
     size: Dp = 20.dp,
+    @StringRes description: Int = R.string.dejavu_workspace_no_container,
 ) {
     Icon(
         painter = painterResource(R.drawable.dejavu_ic_no_container_24),
-        contentDescription = stringResource(R.string.dejavu_workspace_no_container),
+        contentDescription = stringResource(description),
         tint = MaterialTheme.colorScheme.onSurfaceVariant,
         modifier = modifier.size(size),
     )

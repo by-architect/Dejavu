@@ -526,4 +526,6 @@
     <string name="dejavu_clear_data_button_summary">რასაც შლის „მონაცემების გასუფთავება“ და „მონაცემების გასუფთავება და დახურვა“. იგივე წაიშლება, თუ მთავარ ეკრანზე „გასუფთავება“ ღილაკს ხანგრძლივად დააჭერთ.</string>
     <string name="dejavu_clear_data_choose">ჯერ აირჩიეთ, რისი გასუფთავება გსურთ</string>
     <string name="dejavu_starter_folder">ხელსაწყოები</string>
+    <string name="dejavu_no_icon">ხატულის გარეშე</string>
+    <string name="dejavu_no_color">ფერის გარეშე</string>
 </resources>

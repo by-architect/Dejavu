@@ -542,4 +542,6 @@
     <string name="dejavu_clear_data_button_summary">Kaj izbrišeta »Počisti podatke« in »Počisti podatke in zapri«. Dolg pritisk na »Počisti« na domači strani jih prav tako izbriše.</string>
     <string name="dejavu_clear_data_choose">Najprej izberite, kaj želite počistiti</string>
     <string name="dejavu_starter_folder">Orodja</string>
+    <string name="dejavu_no_icon">Brez ikone</string>
+    <string name="dejavu_no_color">Brez barve</string>
 </resources>

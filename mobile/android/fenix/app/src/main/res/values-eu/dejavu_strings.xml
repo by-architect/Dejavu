@@ -526,4 +526,6 @@
     <string name="dejavu_clear_data_button_summary">«Garbitu datuak» eta «Garbitu datuak eta irten» aukerek ezabatzen dutena. Hasierako pantailan «Garbitu» luze sakatuz gero, hori ere ezabatzen da.</string>
     <string name="dejavu_clear_data_choose">Aukeratu lehenik zer garbitu</string>
     <string name="dejavu_starter_folder">Tresnak</string>
+    <string name="dejavu_no_icon">Ikonorik ez</string>
+    <string name="dejavu_no_color">Kolorerik ez</string>
 </resources>

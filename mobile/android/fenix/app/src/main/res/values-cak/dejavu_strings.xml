@@ -526,4 +526,6 @@
     <string name="dejavu_clear_data_button_summary">Ri nikiyuj “Keyuj taq tzij” chuqa\' “Keyuj taq tzij chuqa\' tel”. Toq nachäp jun ramaj “Titz\'apïx” pa ruxaq tikirib\'äl, chuqa\' nuyuj.</string>
     <string name="dejavu_clear_data_choose">Nab\'ey tacha\' ri xtayuj</string>
     <string name="dejavu_starter_folder">Samajib\'äl</string>
+    <string name="dejavu_no_icon">Majun retal</string>
+    <string name="dejavu_no_color">Majun b\'onil</string>
 </resources>

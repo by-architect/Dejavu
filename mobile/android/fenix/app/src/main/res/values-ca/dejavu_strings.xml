@@ -534,4 +534,6 @@
     <string name="dejavu_clear_data_button_summary">El que suprimeixen «Neteja les dades» i «Neteja les dades i surt». Si manteniu premut «Neteja» a la pantalla d\'inici, també se suprimeix.</string>
     <string name="dejavu_clear_data_choose">Trieu primer què voleu netejar</string>
     <string name="dejavu_starter_folder">Eines</string>
+    <string name="dejavu_no_icon">Sense icona</string>
+    <string name="dejavu_no_color">Sense color</string>
 </resources>

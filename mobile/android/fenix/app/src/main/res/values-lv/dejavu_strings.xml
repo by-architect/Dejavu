@@ -534,4 +534,6 @@
     <string name="dejavu_clear_data_button_summary">Dati, ko izdzēš „Notīrīt datus“ un „Notīrīt datus un iziet“. Ilgi nospiežot pogu Notīrīt sākuma ekrānā, tie arī tiek izdzēsti.</string>
     <string name="dejavu_clear_data_choose">Vispirms izvēlieties, ko notīrīt</string>
     <string name="dejavu_starter_folder">Rīki</string>
+    <string name="dejavu_no_icon">Bez ikonas</string>
+    <string name="dejavu_no_color">Bez krāsas</string>
 </resources>

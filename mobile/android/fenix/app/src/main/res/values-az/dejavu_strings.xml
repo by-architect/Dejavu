@@ -526,4 +526,6 @@
     <string name="dejavu_clear_data_button_summary">«Məlumatları təmizlə» və «Məlumatları təmizlə və çıx» ilə silinən məlumatlar. Ana ekranda Təmizlə düyməsini basıb saxladıqda da onlar silinir.</string>
     <string name="dejavu_clear_data_choose">Əvvəlcə nəyi təmizləyəcəyinizi seçin</string>
     <string name="dejavu_starter_folder">Alətlər</string>
+    <string name="dejavu_no_icon">İkon yoxdur</string>
+    <string name="dejavu_no_color">Rəng yoxdur</string>
 </resources>

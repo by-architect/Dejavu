@@ -518,4 +518,6 @@
     <string name="dejavu_clear_data_button_summary">Những dữ liệu bị xóa khi dùng “Xóa dữ liệu” và “Xóa dữ liệu và thoát”. Nhấn giữ “Xóa hết” trên trang chủ cũng sẽ xóa những dữ liệu này.</string>
     <string name="dejavu_clear_data_choose">Trước tiên, hãy chọn những gì cần xóa</string>
     <string name="dejavu_starter_folder">Công cụ</string>
+    <string name="dejavu_no_icon">Không có biểu tượng</string>
+    <string name="dejavu_no_color">Không có màu</string>
 </resources>

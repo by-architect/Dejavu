@@ -526,4 +526,6 @@
     <string name="dejavu_clear_data_button_summary">Ang mga butang nga papason sa “i-Clear ang data” ug “i-Clear ang data ug i-Close”. Kung pindoton nimo og dugay ang “i-Clear” sa home screen, papason usab kini.</string>
     <string name="dejavu_clear_data_choose">Pilia una kung unsa ang i-clear</string>
     <string name="dejavu_starter_folder">Mga Tool</string>
+    <string name="dejavu_no_icon">Walay icon</string>
+    <string name="dejavu_no_color">Walay kolor</string>
 </resources>

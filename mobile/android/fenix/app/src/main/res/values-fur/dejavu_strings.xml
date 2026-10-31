@@ -526,4 +526,6 @@
     <string name="dejavu_clear_data_button_summary">I dâts che «Nete dâts» e «Nete dâts e siere» a eliminin. Ancje tignî fracât Nete te pagjine iniziâl al elimine chescj dâts.</string>
     <string name="dejavu_clear_data_choose">Sielç prime ce netâ</string>
     <string name="dejavu_starter_folder">Struments</string>
+    <string name="dejavu_no_icon">Nissune icone</string>
+    <string name="dejavu_no_color">Nissun colôr</string>
 </resources>

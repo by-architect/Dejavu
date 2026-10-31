@@ -526,4 +526,6 @@
     <string name="dejavu_clear_data_button_summary">Quai che «Stizzar las datas» e «Stizzar las datas e terminar» stizzan. Tegnair smatgà Svidar sin la pagina da partenza stizza era quai.</string>
     <string name="dejavu_clear_data_choose">Tscherna l\'emprim tge che ti vuls stizzar</string>
     <string name="dejavu_starter_folder">Utensils</string>
+    <string name="dejavu_no_icon">Nagina icona</string>
+    <string name="dejavu_no_color">Nagina colur</string>
 </resources>

@@ -526,4 +526,6 @@
     <string name="dejavu_clear_data_button_summary">Ce que suppriment « Effacer les données » et « Effacer les données et quitter ». Un appui long sur le bouton Effacer de l\'écran d\'accueil supprime aussi ces données.</string>
     <string name="dejavu_clear_data_choose">Choisissez d\'abord ce qu\'il faut effacer</string>
     <string name="dejavu_starter_folder">Outils</string>
+    <string name="dejavu_no_icon">Aucune icône</string>
+    <string name="dejavu_no_color">Aucune couleur</string>
 </resources>

@@ -526,4 +526,6 @@
     <string name="dejavu_clear_data_button_summary">“ڈیٹا صاف کرو” تے “ڈیٹا صاف کرو تے چھوڑو” ایہ چیزاں مٹیندے ہن۔ گھر سکرین تے صاف کرو بٹن کوں دبا کے رکھݨ وی ایہ چیزاں مٹیندا ہے۔</string>
     <string name="dejavu_clear_data_choose">پہلے چݨو جو کیا صاف کرݨا ہے</string>
     <string name="dejavu_starter_folder">اوزار</string>
+    <string name="dejavu_no_icon">بغیر آئیکان</string>
+    <string name="dejavu_no_color">بغیر رنگ</string>
 </resources>

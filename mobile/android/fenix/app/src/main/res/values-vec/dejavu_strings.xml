@@ -534,4 +534,6 @@
     <string name="dejavu_clear_data_button_summary">I dati che “Scanseƚa i dati” e “Scanseƚa i dati e va fora” i scanseƚa. Anca tegnendo strucà Neta su ƚa pàgina de casa i vien scanseƚà.</string>
     <string name="dejavu_clear_data_choose">Sernisi prima i dati da scanseƚar</string>
     <string name="dejavu_starter_folder">Strumenti</string>
+    <string name="dejavu_no_icon">Nisuna icona</string>
+    <string name="dejavu_no_color">Nisun cołor</string>
 </resources>

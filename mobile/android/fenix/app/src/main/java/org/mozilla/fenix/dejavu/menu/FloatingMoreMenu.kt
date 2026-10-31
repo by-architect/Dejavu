@@ -596,7 +596,7 @@ private fun smoothstep(x: Float): Float {
 }
 
 /** How far a panel stays from the edge of the screen it grows toward, past the system bars. */
-private val PANEL_FAR_MARGIN = 48.dp
+private val PANEL_FAR_MARGIN = 16.dp
 
 /** The space between the content and the edge of the panel across from its handle. */
 private val CONTENT_END_PADDING = 8.dp

@@ -526,4 +526,6 @@
     <string name="dejavu_clear_data_button_summary">Tiştên ku «Daneyan paqij bike» û «Daneyan paqij bike û derkeve» jê dibin. Heke tu li ekrana destpêkê bi dirêjî li ser bişkoka Paqij bike bitikînî, ew jî tên jêbirin.</string>
     <string name="dejavu_clear_data_choose">Pêşî hilbijêre ka tu dixwazî çi paqij bikî</string>
     <string name="dejavu_starter_folder">Amûr</string>
+    <string name="dejavu_no_icon">Bêyî îkon</string>
+    <string name="dejavu_no_color">Bêyî reng</string>
 </resources>

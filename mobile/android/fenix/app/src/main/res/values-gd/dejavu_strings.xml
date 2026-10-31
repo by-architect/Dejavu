@@ -542,4 +542,6 @@
     <string name="dejavu_clear_data_button_summary">Na thèid a sguabadh às le “Falamhaich an dàta” agus “Falamhaich an dàta agus fàg”. Ma chumas tu do mheur air “Falamhaich” air an sgrìn-dhachaigh, thèid seo a sguabadh às cuideachd.</string>
     <string name="dejavu_clear_data_choose">Tagh an toiseach na thèid fhalamhachadh</string>
     <string name="dejavu_starter_folder">Innealan</string>
+    <string name="dejavu_no_icon">Gun ìomhaigheag</string>
+    <string name="dejavu_no_color">Gun dath</string>
 </resources>

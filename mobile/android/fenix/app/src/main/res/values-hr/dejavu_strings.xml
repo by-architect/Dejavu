@@ -534,4 +534,6 @@
     <string name="dejavu_clear_data_button_summary">Što brišu „Izbriši podatke” i „Izbriši podatke i izađi”. Dugi pritisak na „Očisti” na početnoj stranici također ih briše.</string>
     <string name="dejavu_clear_data_choose">Najprije odaberite što želite izbrisati</string>
     <string name="dejavu_starter_folder">Alati</string>
+    <string name="dejavu_no_icon">Bez ikone</string>
+    <string name="dejavu_no_color">Bez boje</string>
 </resources>

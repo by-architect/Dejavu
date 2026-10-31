@@ -526,4 +526,6 @@
     <string name="dejavu_clear_data_button_summary">Mitä ”Tyhjennä tiedot” ja ”Tyhjennä tiedot ja lopeta” poistavat. Myös ”Tyhjennä”-painikkeen pitkä painallus aloitusnäkymässä poistaa samat tiedot.</string>
     <string name="dejavu_clear_data_choose">Valitse ensin tyhjennettävät tiedot</string>
     <string name="dejavu_starter_folder">Työkalut</string>
+    <string name="dejavu_no_icon">Ei kuvaketta</string>
+    <string name="dejavu_no_color">Ei väriä</string>
 </resources>

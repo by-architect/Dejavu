@@ -559,4 +559,6 @@
     <string name="dejavu_clear_data_button_summary">“ডেটা সাফ করুন” এবং “ডেটা সাফ করে প্রস্থান করুন” এখানে বেছে নেওয়া ডেটা মুছে ফেলে। হোম স্ক্রিনে “সাফ করুন” চেপে ধরে রাখলেও এই ডেটা মুছে যায়।</string>
     <string name="dejavu_clear_data_choose">আগে বেছে নিন কী সাফ করবেন</string>
     <string name="dejavu_starter_folder">টুলস</string>
+    <string name="dejavu_no_icon">কোনো আইকন নেই</string>
+    <string name="dejavu_no_color">কোনো রং নেই</string>
 </resources>

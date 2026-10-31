@@ -534,4 +534,6 @@
     <string name="dejavu_clear_data_button_summary">Ce șterg „Șterge datele” și „Șterge datele și ieși”. Dacă ții apăsat pe „Golește” pe pagina de start, se șterg și acestea.</string>
     <string name="dejavu_clear_data_choose">Alege mai întâi ce vrei să ștergi</string>
     <string name="dejavu_starter_folder">Instrumente</string>
+    <string name="dejavu_no_icon">Fără pictogramă</string>
+    <string name="dejavu_no_color">Fără culoare</string>
 </resources>

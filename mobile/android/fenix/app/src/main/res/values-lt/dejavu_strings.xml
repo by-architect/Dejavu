@@ -542,4 +542,6 @@
     <string name="dejavu_clear_data_button_summary">Ką pašalina „Išvalyti duomenis“ ir „Išvalyti duomenis ir išjungti“. Tą patį pašalina ir ilgas mygtuko „Išvalyti“ paspaudimas pradžios ekrane.</string>
     <string name="dejavu_clear_data_choose">Pirmiausia pasirinkite, ką išvalyti</string>
     <string name="dejavu_starter_folder">Priemonės</string>
+    <string name="dejavu_no_icon">Be piktogramos</string>
+    <string name="dejavu_no_color">Be spalvos</string>
 </resources>

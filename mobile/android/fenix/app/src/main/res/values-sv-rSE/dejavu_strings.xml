@@ -526,4 +526,6 @@
     <string name="dejavu_clear_data_button_summary">Det som ”Rensa data” och ”Rensa data och avsluta” tar bort. Om du håller in Rensa på startsidan tas det också bort.</string>
     <string name="dejavu_clear_data_choose">Välj först vad som ska rensas</string>
     <string name="dejavu_starter_folder">Verktyg</string>
+    <string name="dejavu_no_icon">Ingen ikon</string>
+    <string name="dejavu_no_color">Ingen färg</string>
 </resources>

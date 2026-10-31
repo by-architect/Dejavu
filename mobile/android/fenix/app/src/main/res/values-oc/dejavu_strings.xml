@@ -526,4 +526,6 @@
     <string name="dejavu_clear_data_button_summary">Çò que suprimisson «Escafar las donadas» e «Escafar las donadas e quitar». Tenir lo det sus Escafar a l\'ecran d\'acuèlh o suprimís tanben.</string>
     <string name="dejavu_clear_data_choose">Causissètz d\'en primièr çò que cal escafar</string>
     <string name="dejavu_starter_folder">Aisinas</string>
+    <string name="dejavu_no_icon">Cap d\'icòna</string>
+    <string name="dejavu_no_color">Cap de color</string>
 </resources>
