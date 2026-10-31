@@ -48,6 +48,9 @@ import mozilla.components.ui.icons.R as iconsR
 import org.mozilla.fenix.dejavu.browser.tabZoomTarget
 import org.mozilla.fenix.dejavu.containers.ContainerRecord
 import org.mozilla.fenix.dejavu.containers.color
+import org.mozilla.fenix.dejavu.discover.Tip
+import org.mozilla.fenix.dejavu.discover.TipGesture
+import org.mozilla.fenix.dejavu.discover.tipTarget
 import org.mozilla.fenix.dejavu.workspaces.PinnedItem
 
 private val TileHeight = 52.dp
@@ -206,7 +209,14 @@ internal fun EssentialsGrid(
                             selection = selection?.let { item.id in it.pinIds },
                             isDragged = current?.moved == true && current.pinId == item.id,
                             onClick = { if (drag == null) onClick(item) },
-                            modifier = Modifier.weight(1f).tabZoomTarget(tab?.id),
+                            modifier = Modifier
+                                .weight(1f)
+                                .tabZoomTarget(tab?.id)
+                                .tipTarget(
+                                    Tip.ESSENTIAL_HOLD,
+                                    TipGesture.Hold,
+                                    enabled = selection == null && item.id == essentials.firstOrNull()?.id,
+                                ),
                         )
                     }
                 }

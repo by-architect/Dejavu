@@ -528,4 +528,20 @@
     <string name="dejavu_starter_folder">Outils</string>
     <string name="dejavu_no_icon">Aucune icône</string>
     <string name="dejavu_no_color">Aucune couleur</string>
+    <string name="dejavu_tip_workspace_name">Touche le nom de l’espace pour changer son nom, son icône, ses couleurs et son fond d’écran.</string>
+    <string name="dejavu_tip_new_tab">Maintiens « Nouvel onglet » appuyé pour ouvrir un onglet privé ou un onglet dans un conteneur.</string>
+    <string name="dejavu_tip_pin">Maintiens un onglet appuyé et fais-le glisser au-dessus de la ligne pour l’épingler, ou en dessous pour ne plus l’épingler.</string>
+    <string name="dejavu_tip_folder">Touche ici pour créer un dossier d’onglets épinglés. Dépose des onglets sur un dossier pour les y ranger.</string>
+    <string name="dejavu_tip_clear">Touche Effacer pour fermer les onglets sous la ligne, ou maintiens-le appuyé pour supprimer les données de navigation que tu as choisies.</string>
+    <string name="dejavu_tip_essential_add">Maintiens un onglet appuyé et fais-le glisser tout en haut pour en faire un favori, affiché dans chaque espace.</string>
+    <string name="dejavu_tip_essential_hold">Maintiens un favori appuyé pour le déplacer ailleurs ou pour le retirer des favoris.</string>
+    <string name="dejavu_tip_workspaces">Fais glisser latéralement pour changer d’espace. Maintiens-en un appuyé ici et fais-le glisser pour changer leur ordre.</string>
+    <string name="dejavu_tip_split">Maintiens un onglet appuyé et dépose-le sur un autre pour voir les deux pages à la fois.</string>
+    <string name="dejavu_tip_menu_up">Fais glisser cette barre vers le haut pour ouvrir le menu.</string>
+    <string name="dejavu_tip_menu_down">Tire la barre d’adresse vers le bas pour ouvrir le menu.</string>
+    <string name="dejavu_tip_got_it">J’ai compris</string>
+    <string name="dejavu_tip_hide">Masquer les astuces</string>
+    <string name="dejavu_settings_tips">Astuces</string>
+    <string name="dejavu_settings_tips_summary">Afficher des astuces sur les mouvements cachés, comme maintenir « Nouvel onglet » appuyé</string>
+    <string name="dejavu_new">Nouveau</string>
 </resources>

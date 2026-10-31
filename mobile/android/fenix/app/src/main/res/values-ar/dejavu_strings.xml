@@ -560,4 +560,20 @@
     <string name="dejavu_starter_folder">أدوات</string>
     <string name="dejavu_no_icon">بلا أيقونة</string>
     <string name="dejavu_no_color">بلا لون</string>
+    <string name="dejavu_tip_workspace_name">اضغط على اسم مساحة العمل لتغيير اسمها وأيقونتها وألوانها وخلفيتها.</string>
+    <string name="dejavu_tip_new_tab">اضغط مطولًا على «تبويب جديد» لفتح تبويب خاص أو تبويب في حاوية.</string>
+    <string name="dejavu_tip_pin">اضغط مطولًا على تبويب واسحبه فوق الخط لتثبيته، أو تحت الخط لإلغاء تثبيته.</string>
+    <string name="dejavu_tip_folder">اضغط هنا لإنشاء مجلد للتبويبات المثبتة. أفلِت التبويبات على مجلد لوضعها داخله.</string>
+    <string name="dejavu_tip_clear">اضغط على «مسح» لإغلاق التبويبات تحت الخط، أو اضغط عليه مطولًا لحذف البيانات التي اخترتها.</string>
+    <string name="dejavu_tip_essential_add">اضغط مطولًا على تبويب واسحبه إلى الأعلى لإضافته إلى الأساسيات، التي تظهر في كل مساحة عمل.</string>
+    <string name="dejavu_tip_essential_hold">اضغط مطولًا على عنصر من الأساسيات لنقله إلى مكان آخر، أو لإزالته من الأساسيات.</string>
+    <string name="dejavu_tip_workspaces">اسحب جانبيًا للتبديل بين مساحات العمل. اضغط مطولًا على إحداها هنا واسحبها لتغيير ترتيبها.</string>
+    <string name="dejavu_tip_split">اضغط مطولًا على تبويب وأفلِته على تبويب آخر لرؤية الصفحتين معًا.</string>
+    <string name="dejavu_tip_menu_up">اسحب هذا الشريط لأعلى لفتح القائمة.</string>
+    <string name="dejavu_tip_menu_down">اسحب شريط العنوان لأسفل لفتح القائمة.</string>
+    <string name="dejavu_tip_got_it">فهمت</string>
+    <string name="dejavu_tip_hide">إخفاء النصائح</string>
+    <string name="dejavu_settings_tips">نصائح</string>
+    <string name="dejavu_settings_tips_summary">عرض نصائح عن الإيماءات المخفية، مثل الضغط مطولًا على «تبويب جديد»</string>
+    <string name="dejavu_new">جديد</string>
 </resources>

@@ -544,4 +544,20 @@
     <string name="dejavu_starter_folder">Nastroje</string>
     <string name="dejavu_no_icon">Žadyn symbol</string>
     <string name="dejavu_no_color">Žana barba</string>
+    <string name="dejavu_tip_workspace_name">Podótkńće so mjena dźěłoweho ruma, zo byšće jeho mjeno, symbol, barby a pozadkowy wobraz změnili.</string>
+    <string name="dejavu_tip_new_tab">Tłóčće dołho na „Nowy rajtark“ za priwatny rajtark abo rajtark w kontejnerje.</string>
+    <string name="dejavu_tip_pin">Dźeržće rajtark tłóčeny a ćehńće jón nad liniju, zo byšće jón připjeli, abo pod liniju, zo byšće jón wotpjeli.</string>
+    <string name="dejavu_tip_folder">Podótkńće so tu, zo byšće zarjadnik za připjate rajtarki wutworili. Pušćće rajtarki na zarjadnik, zo byšće je do njeho tyknyli.</string>
+    <string name="dejavu_tip_clear">Podótkńće so „Wuprózdnić“, zo byšće rajtarki pod liniju začinili, abo dźeržće jo tłóčene, zo byšće wubrane přehladowanske daty zhašeli.</string>
+    <string name="dejavu_tip_essential_add">Dźeržće rajtark tłóčeny a ćehńće jón horje, zo byšće jón k najwažnišym přidali, kotrež so w kóždym dźěłowym rumje pokazuja.</string>
+    <string name="dejavu_tip_essential_hold">Dźeržće jedne z najwažnišich tłóčene, zo byšće jo na druhe městno přesunyli abo z najwažnišich wotstronili.</string>
+    <string name="dejavu_tip_workspaces">Trějće na bok, zo byšće dźěłowy rum změnili. Dźeržće tu jedyn tłóčeny a ćehńće jón, zo byšće jich porjad změnili.</string>
+    <string name="dejavu_tip_split">Dźeržće rajtark tłóčeny a pušćće jón na druhi, zo byšće wobě stronje naraz widźeli.</string>
+    <string name="dejavu_tip_menu_up">Trějće tutu lajstu horje, zo by so meni wočinił.</string>
+    <string name="dejavu_tip_menu_down">Ćehńće adresowe polo dele, zo by so meni wočinił.</string>
+    <string name="dejavu_tip_got_it">Sym zrozumił</string>
+    <string name="dejavu_tip_hide">Pokiwy schować</string>
+    <string name="dejavu_settings_tips">Pokiwy</string>
+    <string name="dejavu_settings_tips_summary">Pokiwy wo schowanych gestach pokazać, kaž dołhe tłóčenje na „Nowy rajtark“</string>
+    <string name="dejavu_new">Nowy</string>
 </resources>

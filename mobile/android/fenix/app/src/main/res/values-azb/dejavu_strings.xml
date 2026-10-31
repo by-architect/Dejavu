@@ -528,4 +528,20 @@
     <string name="dejavu_starter_folder">آلت‌لر</string>
     <string name="dejavu_no_icon">آیکون‌سیز</string>
     <string name="dejavu_no_color">رنگ‌سیز</string>
+    <string name="dejavu_tip_workspace_name">آدینی، آیکونونو، رنگلرینی و دال پرده‌سینی دَییشمک اوچون ایش ساحه‌سینین آدینا توخونون.</string>
+    <string name="dejavu_tip_new_tab">گیزلی تاغ یا کانتینرده تاغ آچماق اوچون یئنی تاغ دوگمه‌سینی باسیب ساخلایین.</string>
+    <string name="dejavu_tip_pin">تاغی باسیب ساخلایین و برکیتمک اوچون خطین اوستونه، برکیتمه‌دن چیخارماق اوچون ایسه خطین آلتینا سوروکله‌یین.</string>
+    <string name="dejavu_tip_folder">بورایا توخوناراق برکیدیلمیش تاغلار اوچون پوشه یارادین. تاغلاری پوشه‌یه قویماق اوچون اونلاری پوشه‌نین اوستونه بوراخین.</string>
+    <string name="dejavu_tip_clear">خطین آلتینداکی تاغلاری باغلاماق اوچون تمیزله دوگمه‌سینه توخونون، سئچدیگینیز دیتالاری سیلمک اوچون ایسه اونو باسیب ساخلایین.</string>
+    <string name="dejavu_tip_essential_add">تاغی بوتون ایش ساحه‌لرینده گؤرونن اساس‌لارا اَلاوه ائتمک اوچون اونو باسیب ساخلایین و یوخاریا سوروکله‌یین.</string>
+    <string name="dejavu_tip_essential_hold">اساسی باشقا یئره کؤچورمک یا اساس‌لاردان چیخارماق اوچون اونو باسیب ساخلایین.</string>
+    <string name="dejavu_tip_workspaces">ایش ساحه‌لری آراسیندا کئچمک اوچون یانا سوروشدورون. سیرالارینی دَییشمک اوچون بیرینی بورادا باسیب ساخلایین و سوروکله‌یین.</string>
+    <string name="dejavu_tip_split">هر ایکی صفحه‌نی عئینی واختدا گؤرمک اوچون تاغی باسیب ساخلایین و باشقا بیر تاغین اوستونه بوراخین.</string>
+    <string name="dejavu_tip_menu_up">منونو آچماق اوچون بو پانئلی یوخاری سوروشدورون.</string>
+    <string name="dejavu_tip_menu_down">منونو آچماق اوچون آدرس چوبوغونو آشاغی سوروشدورون.</string>
+    <string name="dejavu_tip_got_it">آنلادیم</string>
+    <string name="dejavu_tip_hide">مصلحت‌لری گیزلت</string>
+    <string name="dejavu_settings_tips">مصلحت‌لر</string>
+    <string name="dejavu_settings_tips_summary">گیزلی ایشاره‌لر حاقیندا مصلحت‌لر گؤستر، مثلاً یئنی تاغ دوگمه‌سینی باسیب ساخلاماق</string>
+    <string name="dejavu_new">یئنی</string>
 </resources>

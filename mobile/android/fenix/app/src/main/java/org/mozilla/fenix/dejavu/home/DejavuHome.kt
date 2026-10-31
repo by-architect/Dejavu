@@ -106,6 +106,14 @@ import org.mozilla.fenix.dejavu.containers.ContainerColor
 import org.mozilla.fenix.dejavu.containers.ContainerPick
 import org.mozilla.fenix.dejavu.containers.ContainerRecord
 import org.mozilla.fenix.dejavu.containers.color
+import org.mozilla.fenix.dejavu.discover.Tip
+import org.mozilla.fenix.dejavu.discover.TipGesture
+import org.mozilla.fenix.dejavu.discover.TipHost
+import org.mozilla.fenix.dejavu.discover.TipScreen
+import org.mozilla.fenix.dejavu.discover.Tips
+import org.mozilla.fenix.dejavu.discover.newDot
+import org.mozilla.fenix.dejavu.discover.rememberUnseenNewThings
+import org.mozilla.fenix.dejavu.discover.tipTarget
 import org.mozilla.fenix.dejavu.sync.workspaceIconText
 import org.mozilla.fenix.dejavu.ui.LocalPopupTheme
 import org.mozilla.fenix.dejavu.ui.TapIcon
@@ -212,6 +220,7 @@ interface DejavuHomeInteractor : TabEditor {
  * the account and settings buttons, shows on top and the workspace bar at the bottom, or the other way round when
  * [searchAtBottom]; selecting keeps its bars where they are, the selection on top and its actions at the bottom.
  * [hasDataToClear] tells whether the data chosen for Clear data has anything to delete, which shows the Clear button.
+ * Tips about gestures nothing shows point them out while [tipsAllowed], when nothing else needs the user's attention.
  */
 @Suppress("LongMethod", "LongParameterList", "CognitiveComplexMethod", "CyclomaticComplexMethod")
 @Composable
@@ -234,6 +243,7 @@ fun DejavuHome(
     modifier: Modifier = Modifier,
     searchAtBottom: Boolean = false,
     hasDataToClear: Boolean = false,
+    tipsAllowed: Boolean = false,
 ) {
     // The private workspace is an extra last page, there while private tabs are open.
     val privateIndex = state.workspaces.size.takeIf { privateTabs.isNotEmpty() }
@@ -307,8 +317,11 @@ fun DejavuHome(
         }
     }
 
+    // Turning to another workspace is what the tip about the workspaces tells.
+    val firstSettledPage = remember { pagerState.settledPage }
     LaunchedEffect(pagerState.settledPage) {
         state.workspaces.getOrNull(pagerState.settledPage)?.let { interactor.onWorkspaceSelected(it.id) }
+        if (pagerState.settledPage != firstSettledPage) Tips.done(Tip.WORKSPACES)
     }
 
     // Follows workspace changes made elsewhere, without leaving the private workspace the home opened on.
@@ -386,6 +399,7 @@ fun DejavuHome(
             } else {
                 latestInteractor.onDrop(over, current.selection, target)
             }
+            tipsDoneBy(target, current.selection).forEach(Tips::done)
             selection = null
             dragStack.release(drop = true, fallback = fallback) { cards ->
                 withTimeoutOrNull(LANDING_WAIT_MS) { snapshotFlow { latestState }.first { it !== before } }
@@ -448,6 +462,7 @@ fun DejavuHome(
     BackHandler(enabled = selection != null) { selection = null }
 
     fun runAction(action: RowAction, targets: ActionTargets, workspaceId: String) {
+        (action as? RowAction.BuiltIn)?.action?.let(::tipOf)?.let(Tips::done)
         when (action) {
             is RowAction.Custom -> interactor.onCustomAction(action.action, targets)
             is RowAction.BuiltIn -> when (action.action) {
@@ -544,7 +559,10 @@ fun DejavuHome(
                             scope.launch { pagerState.animateScrollToPage(index) }
                         },
                         onPrivateClick = { privateIndex?.let { scope.launch { pagerState.animateScrollToPage(it) } } },
-                        onMove = interactor::onMoveWorkspace,
+                        onMove = { workspaceId, index ->
+                            Tips.done(Tip.WORKSPACES)
+                            interactor.onMoveWorkspace(workspaceId, index)
+                        },
                         downloads = downloads,
                         onDownloadsClick = interactor::onDownloadsClick,
                         onExtensionsClick = interactor::onExtensionsClick,
@@ -584,6 +602,7 @@ fun DejavuHome(
                         isDropTarget = essentialsDrop == EssentialsDrop.ACTIVE,
                         onClick = ::onPinClick,
                         onStartDrag = { pin ->
+                            Tips.done(Tip.ESSENTIAL_HOLD)
                             selection = (selection ?: Selection()) + Selection(pinIds = setOf(pin.id))
                         },
                         onMove = { pinId, index ->
@@ -677,9 +696,15 @@ fun DejavuHome(
                                         interactor.onToggleFolder(folder.id)
                                     }
                                 },
-                                onNewFolder = { dialog = HomeDialog.NewFolder(workspace.id, parentId = null) },
+                                onNewFolder = {
+                                    Tips.done(Tip.FOLDER)
+                                    dialog = HomeDialog.NewFolder(workspace.id, parentId = null)
+                                },
                                 onNewWorkspace = { dialog = HomeDialog.EditWorkspace(null) },
-                                onEditWorkspace = { dialog = HomeDialog.EditWorkspace(workspace.id) },
+                                onEditWorkspace = {
+                                    Tips.done(Tip.WORKSPACE_NAME)
+                                    dialog = HomeDialog.EditWorkspace(workspace.id)
+                                },
                                 onDeleteWorkspace = { dialog = HomeDialog.DeleteWorkspace(workspace.id) },
                                 onMoveWorkspace = { delta -> interactor.onMoveWorkspace(workspace.id, page + delta) },
                                 onNewTabClick = interactor::onSearchClick,
@@ -740,6 +765,14 @@ fun DejavuHome(
                 }
             }
             DataPourOverlay(pour, Modifier.fillMaxSize())
+            // Tips point at their places from above everything, once the screen is still and nothing else is going on.
+            TipHost(
+                screen = TipScreen.HOME,
+                allowed = tipsAllowed && selection == null && dialog == null && drag == null &&
+                    !pagerState.isScrollInProgress && !onPrivatePage && currentWorkspace.device == null,
+                modifier = Modifier.fillMaxSize(),
+                drawsTargets = true,
+            )
         }
 
         dialog?.let { current ->
@@ -797,7 +830,9 @@ private fun TopBar(interactor: DejavuHomeInteractor, onSearchClick: () -> Unit) 
             icon = R.drawable.dejavu_ic_settings_24,
             contentDescription = stringResource(R.string.dejavu_settings),
             onClick = interactor::onSettingsClick,
-            modifier = Modifier.genieButton(PageGenie.Button.SETTINGS),
+            modifier = Modifier
+                .genieButton(PageGenie.Button.SETTINGS)
+                .newDot(rememberUnseenNewThings().isNotEmpty(), inset = SETTINGS_DOT_INSET),
         )
     }
 }
@@ -1041,6 +1076,11 @@ private fun WorkspaceBar(
             modifier = Modifier
                 .weight(1f)
                 .padding(horizontal = 8.dp)
+                .tipTarget(
+                    Tip.WORKSPACES,
+                    TipGesture.Swipe(dx = WORKSPACE_SWIPE, overPage = true),
+                    enabled = workspaces.size > 1,
+                )
                 .fadingEdges(scrollState)
                 .horizontalScroll(scrollState)
                 .pointerInput(cellWidth) {
@@ -1138,6 +1178,10 @@ private val FadingEdgeWidth = 20.dp
 private const val INACTIVE_WORKSPACE_ALPHA = 0.45f
 private const val INACTIVE_ICON_ALPHA = 0.55f
 
+// How far the finger of the tip about the workspaces swipes over the page, and where the settings button has its dot.
+private val WORKSPACE_SWIPE = (-120).dp
+private val SETTINGS_DOT_INSET = 12.dp
+
 /** A workspace in the workspace bar: its icon, or a dot in its container's color. */
 @Suppress("LongParameterList")
 @Composable
@@ -1187,6 +1231,25 @@ private fun WorkspaceDot(
             }
         }
     }
+}
+
+/** The tips that tell of what a drop of [selection] on [target] did. */
+private fun tipsDoneBy(target: DropTarget, selection: Selection): List<Tip> = when (target) {
+    DropTarget.Essentials -> listOf(Tip.ESSENTIAL_ADD)
+    is DropTarget.SplitWith -> listOf(Tip.SPLIT)
+    is DropTarget.IntoFolder -> listOf(Tip.FOLDER, Tip.PIN)
+    is DropTarget.NextToPin, is DropTarget.PinnedEdge -> listOf(Tip.PIN)
+    is DropTarget.NextToTab, DropTarget.UnpinnedStart -> listOfNotNull(Tip.PIN.takeIf { selection.pinIds.isNotEmpty() })
+}
+
+/** The tip that tells of a gesture doing what [action] does, if any. */
+private fun tipOf(action: TabAction): Tip? = when (action) {
+    TabAction.PIN, TabAction.UNPIN -> Tip.PIN
+    TabAction.NEW_FOLDER, TabAction.MOVE_TO_FOLDER -> Tip.FOLDER
+    TabAction.ADD_TO_ESSENTIALS -> Tip.ESSENTIAL_ADD
+    TabAction.REMOVE_FROM_ESSENTIALS -> Tip.ESSENTIAL_HOLD
+    TabAction.SPLIT_VIEW, TabAction.SPLIT_TOP_AND_BOTTOM, TabAction.SPLIT_SIDE_BY_SIDE -> Tip.SPLIT
+    else -> null
 }
 
 /** Fades a horizontally scrolling row out on the sides it can still scroll to. */

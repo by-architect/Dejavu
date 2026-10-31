@@ -528,4 +528,20 @@
     <string name="dejavu_starter_folder">Instrumentos</string>
     <string name="dejavu_no_icon">Nulle icone</string>
     <string name="dejavu_no_color">Nulle color</string>
+    <string name="dejavu_tip_workspace_name">Pulsa le nomine del spatio de labor pro cambiar su nomine, icone, colores e fundo.</string>
+    <string name="dejavu_tip_new_tab">Tene pressate ‘Nove scheda’ pro un scheda private o un scheda in un recipiente.</string>
+    <string name="dejavu_tip_pin">Tene pressate un scheda e trahe lo supra le linea pro fixar lo, o sub le linea pro defixar lo.</string>
+    <string name="dejavu_tip_folder">Pulsa hic pro crear un dossier pro schedas fixate. Lassa cader schedas sur un dossier pro mitter los intra.</string>
+    <string name="dejavu_tip_clear">Pulsa Vacuar pro clauder le schedas sub le linea, o tene lo pressate pro deler le datos de navigation que tu ha seligite.</string>
+    <string name="dejavu_tip_essential_add">Tene pressate un scheda e trahe lo al summitate pro facer lo un essential, monstrate in cata spatio de labor.</string>
+    <string name="dejavu_tip_essential_hold">Tene pressate un essential pro mover lo a un altere loco, o pro remover lo del essentiales.</string>
+    <string name="dejavu_tip_workspaces">Glissa lateralmente pro cambiar de spatio de labor. Tene pressate un de illos hic e trahe lo pro cambiar lor ordine.</string>
+    <string name="dejavu_tip_split">Tene pressate un scheda e lassa lo cader sur un altere pro vider ambe paginas al mesme tempore.</string>
+    <string name="dejavu_tip_menu_up">Glissa iste barra verso alto pro aperir le menu.</string>
+    <string name="dejavu_tip_menu_down">Tira le barra de adresse verso basso pro aperir le menu.</string>
+    <string name="dejavu_tip_got_it">Comprendite</string>
+    <string name="dejavu_tip_hide">Celar le consilios</string>
+    <string name="dejavu_settings_tips">Consilios</string>
+    <string name="dejavu_settings_tips_summary">Monstrar consilios sur gestos celate, como tener pressate ‘Nove scheda’</string>
+    <string name="dejavu_new">Nove</string>
 </resources>

@@ -528,4 +528,20 @@
     <string name="dejavu_starter_folder">Verkfæri</string>
     <string name="dejavu_no_icon">Engin táknmynd</string>
     <string name="dejavu_no_color">Enginn litur</string>
+    <string name="dejavu_tip_workspace_name">Ýttu á heiti vinnusvæðisins til að breyta heiti þess, táknmynd, litum og bakgrunnsmynd.</string>
+    <string name="dejavu_tip_new_tab">Haltu „Nýr flipi“ niðri fyrir huliðsflipa eða flipa í hólfi.</string>
+    <string name="dejavu_tip_pin">Haltu flipa niðri og dragðu hann upp fyrir línuna til að festa hann, eða niður fyrir línuna til að losa hann.</string>
+    <string name="dejavu_tip_folder">Ýttu hér til að búa til möppu fyrir festa flipa. Slepptu flipum á möppu til að setja þá í hana.</string>
+    <string name="dejavu_tip_clear">Ýttu á Hreinsa til að loka flipunum fyrir neðan línuna, eða haltu honum niðri til að eyða vafragögnunum sem þú valdir.</string>
+    <string name="dejavu_tip_essential_add">Haltu flipa niðri og dragðu hann efst til að gera hann að eftirlæti, sem birtist á öllum vinnusvæðum.</string>
+    <string name="dejavu_tip_essential_hold">Haltu eftirlæti niðri til að færa það á annan stað eða fjarlægja það úr eftirlætum.</string>
+    <string name="dejavu_tip_workspaces">Strjúktu til hliðar til að skipta um vinnusvæði. Haltu einu niðri hér og dragðu það til að breyta röð þeirra.</string>
+    <string name="dejavu_tip_split">Haltu flipa niðri og slepptu honum á annan flipa til að sjá báðar síðurnar í einu.</string>
+    <string name="dejavu_tip_menu_up">Strjúktu þessa stiku upp til að opna valmyndina.</string>
+    <string name="dejavu_tip_menu_down">Dragðu veffangastikuna niður til að opna valmyndina.</string>
+    <string name="dejavu_tip_got_it">Ég skil!</string>
+    <string name="dejavu_tip_hide">Fela ábendingar</string>
+    <string name="dejavu_settings_tips">Ábendingar</string>
+    <string name="dejavu_settings_tips_summary">Sýna ábendingar um faldar bendingar, eins og að halda „Nýr flipi“ niðri</string>
+    <string name="dejavu_new">Nýtt</string>
 </resources>

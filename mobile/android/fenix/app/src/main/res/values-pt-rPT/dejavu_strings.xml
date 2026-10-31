@@ -536,4 +536,20 @@
     <string name="dejavu_starter_folder">Ferramentas</string>
     <string name="dejavu_no_icon">Sem ícone</string>
     <string name="dejavu_no_color">Sem cor</string>
+    <string name="dejavu_tip_workspace_name">Toca no nome do espaço de trabalho para alterar o nome, o ícone, as cores e o fundo.</string>
+    <string name="dejavu_tip_new_tab">Mantém premido o botão Novo separador para um separador privado ou um separador num contentor.</string>
+    <string name="dejavu_tip_pin">Mantém premido um separador e arrasta-o acima da linha para o fixar, ou abaixo da linha para o desafixar.</string>
+    <string name="dejavu_tip_folder">Toca aqui para criar uma pasta para separadores fixados. Solta separadores numa pasta para os colocar lá dentro.</string>
+    <string name="dejavu_tip_clear">Toca no botão Limpar para fechar os separadores abaixo da linha, ou mantém-no premido para eliminar os dados que escolheste.</string>
+    <string name="dejavu_tip_essential_add">Mantém premido um separador e arrasta-o para o topo para o tornar um essencial, mostrado em todos os espaços de trabalho.</string>
+    <string name="dejavu_tip_essential_hold">Mantém premido um essencial para o mover para outro sítio ou para o remover dos essenciais.</string>
+    <string name="dejavu_tip_workspaces">Desliza para o lado para mudar de espaço de trabalho. Mantém premido um deles aqui e arrasta-o para mudar a ordem.</string>
+    <string name="dejavu_tip_split">Mantém premido um separador e solta-o sobre outro para veres as duas páginas ao mesmo tempo.</string>
+    <string name="dejavu_tip_menu_up">Desliza esta barra para cima para abrir o menu.</string>
+    <string name="dejavu_tip_menu_down">Puxa a barra de endereço para baixo para abrir o menu.</string>
+    <string name="dejavu_tip_got_it">Compreendi</string>
+    <string name="dejavu_tip_hide">Ocultar dicas</string>
+    <string name="dejavu_settings_tips">Dicas</string>
+    <string name="dejavu_settings_tips_summary">Mostrar dicas sobre gestos ocultos, como manter premido o botão Novo separador</string>
+    <string name="dejavu_new">Novo</string>
 </resources>

@@ -528,4 +528,20 @@
     <string name="dejavu_starter_folder">उपकरणहरू</string>
     <string name="dejavu_no_icon">कुनै चिन्ह छैन</string>
     <string name="dejavu_no_color">कुनै रङ छैन</string>
+    <string name="dejavu_tip_workspace_name">कार्यक्षेत्रको नाम, चिन्ह, रङ र वालपेपर बदल्न यसको नाममा ट्याप गर्नुहोस्।</string>
+    <string name="dejavu_tip_new_tab">निजी ट्याब वा कन्टेनरमा ट्याबका लागि “नयाँ ट्याब” थिचिराख्नुहोस्।</string>
+    <string name="dejavu_tip_pin">ट्याब थिचिराख्नुहोस् र पिन गर्न यसलाई रेखामाथि, वा पिन हटाउन रेखामुनि तान्नुहोस्।</string>
+    <string name="dejavu_tip_folder">पिन गरिएका ट्याबहरुका लागि फोल्डर बनाउन यहाँ ट्याप गर्नुहोस्। ट्याबहरुलाई फोल्डरभित्र राख्न तिनलाई फोल्डरमा छोड्नुहोस्।</string>
+    <string name="dejavu_tip_clear">रेखामुनिका ट्याबहरु बन्द गर्न “खाली गर्नुहोस्” मा ट्याप गर्नुहोस्, वा तपाईंले रोजेको डाटा मेटाउन यसलाई थिचिराख्नुहोस्।</string>
+    <string name="dejavu_tip_essential_add">ट्याबलाई हरेक कार्यक्षेत्रमा देखिने आवश्यक बनाउन यसलाई थिचिराख्नुहोस् र माथितिर तान्नुहोस्।</string>
+    <string name="dejavu_tip_essential_hold">आवश्यकलाई अर्को ठाउँमा सार्न वा आवश्यकबाट हटाउन यसलाई थिचिराख्नुहोस्।</string>
+    <string name="dejavu_tip_workspaces">कार्यक्षेत्र बदल्न दायाँ वा बायाँ स्वाइप गर्नुहोस्। क्रम बदल्न यहाँ कुनै कार्यक्षेत्र थिचिराख्नुहोस् र तान्नुहोस्।</string>
+    <string name="dejavu_tip_split">दुवै पृष्ठ एकैपटक हेर्न ट्याब थिचिराख्नुहोस् र यसलाई अर्को ट्याबमा छोड्नुहोस्।</string>
+    <string name="dejavu_tip_menu_up">मेनु खोल्न यो पट्टीलाई माथि स्वाइप गर्नुहोस्।</string>
+    <string name="dejavu_tip_menu_down">मेनु खोल्न ठेगाना पट्टीलाई तल तान्नुहोस्।</string>
+    <string name="dejavu_tip_got_it">बुझेँ</string>
+    <string name="dejavu_tip_hide">सुझावहरु लुकाउनुहोस्</string>
+    <string name="dejavu_settings_tips">सुझावहरु</string>
+    <string name="dejavu_settings_tips_summary">“नयाँ ट्याब” थिचिराख्ने जस्ता लुकेका इशाराहरुबारे सुझावहरु देखाउनुहोस्</string>
+    <string name="dejavu_new">नयाँ</string>
 </resources>

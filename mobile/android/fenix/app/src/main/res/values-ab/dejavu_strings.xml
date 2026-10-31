@@ -528,4 +528,20 @@
     <string name="dejavu_starter_folder">Амаругақәа</string>
     <string name="dejavu_no_icon">Аиконка ада</string>
     <string name="dejavu_no_color">Аԥштәы ада</string>
+    <string name="dejavu_tip_workspace_name">Аҭыԥ ахьӡ, аиконка, аԥштәқәа насгьы аҭӡамц рыԥсахразы, аҭыԥ ахьӡ иақәыӷәӷәа.</string>
+    <string name="dejavu_tip_new_tab">Ахатә абларҭа ма аконтейнераҿы абларҭа аартразы, «Абларҭа ҿыц» ааныкыл.</string>
+    <string name="dejavu_tip_pin">Абларҭа ааныкыл, аҵәаӷәа хыхь инаган — афиксациа азы, ма аҵәаӷәа ҵаҟа — афиксациа ада аҟаҵаразы.</string>
+    <string name="dejavu_tip_folder">Ификсациатә абларҭақәа рзы апапка аԥҵаразы, абраҟа иақәыӷәӷәа. Абларҭақәа апапка ахь рыҭаразы, апапка аҿы иааныжь.</string>
+    <string name="dejavu_tip_clear">Аҵәаӷәа ҵаҟа иҟоу абларҭақәа ркразы, «Аҵыхра» иақәыӷәӷәа, ма иалхыз адыррақәа раныхразы, уи ааныкыл.</string>
+    <string name="dejavu_tip_essential_add">Абларҭа иҵакыу сайтқәа рахь адалаӡаразы, уи ааныкыл, хыхь ахь инаган. Иҵакыу сайтқәа аҭыԥ цыԥхьаӡа аҟны иаадырԥшуеит.</string>
+    <string name="dejavu_tip_essential_hold">Иҵакыу сайт аиҭаҵразы ма иҵакыу сайтқәа рҟынтә аныхразы, уи ааныкыл.</string>
+    <string name="dejavu_tip_workspaces">Аҭыԥқәа рыԥсахразы, аганахь ишьҭыҵ. Рырхынҳәразы, абраҟа акы ааныкыл, инаган.</string>
+    <string name="dejavu_tip_split">Адаҟьақәа ҩба иаразнак рбаразы, абларҭа ааныкыл, даҽа абларҭак аҿы иааныжь.</string>
+    <string name="dejavu_tip_menu_up">Аменю аартразы, ари апанель хыхь ахь иҵыхтәуп.</string>
+    <string name="dejavu_tip_menu_down">Аменю аартразы, адресқәа рпанель алада иҵыхтәуп.</string>
+    <string name="dejavu_tip_got_it">Еилкаауп</string>
+    <string name="dejavu_tip_hide">Ацхыраарақәа рыҵаҵыхра</string>
+    <string name="dejavu_settings_tips">Ацхыраарақәа</string>
+    <string name="dejavu_settings_tips_summary">Иҵәахыу анапқәа ирызку ацхыраарақәа аарԥшра, иаҳҳәап, «Абларҭа ҿыц» аанкылара</string>
+    <string name="dejavu_new">Иҿыцу</string>
 </resources>

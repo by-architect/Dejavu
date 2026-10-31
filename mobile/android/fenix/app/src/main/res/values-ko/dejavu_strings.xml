@@ -520,4 +520,20 @@
     <string name="dejavu_starter_folder">도구</string>
     <string name="dejavu_no_icon">아이콘 없음</string>
     <string name="dejavu_no_color">색상 없음</string>
+    <string name="dejavu_tip_workspace_name">작업 공간 이름을 눌러 이름, 아이콘, 색상, 배경 화면을 바꾸세요.</string>
+    <string name="dejavu_tip_new_tab">\'새 탭\'을 길게 눌러 사생활 보호 탭이나 컨테이너의 탭을 여세요.</string>
+    <string name="dejavu_tip_pin">탭을 길게 누른 채 선 위로 끌어 고정하거나, 선 아래로 끌어 고정 해제하세요.</string>
+    <string name="dejavu_tip_folder">여기를 눌러 고정된 탭을 담을 폴더를 만드세요. 탭을 폴더 위에 놓으면 폴더 안에 들어갑니다.</string>
+    <string name="dejavu_tip_clear">\'지우기\'를 누르면 선 아래의 탭이 닫히고, 길게 누르면 선택한 데이터가 삭제됩니다.</string>
+    <string name="dejavu_tip_essential_add">탭을 길게 누른 채 맨 위로 끌어 모든 작업 공간에 표시되는 필수 사이트로 만드세요.</string>
+    <string name="dejavu_tip_essential_hold">필수 사이트를 길게 눌러 다른 위치로 옮기거나 필수 사이트에서 제거하세요.</string>
+    <string name="dejavu_tip_workspaces">옆으로 스와이프해 작업 공간을 전환하세요. 여기서 작업 공간을 길게 누른 채 끌어 순서를 바꾸세요.</string>
+    <string name="dejavu_tip_split">탭을 길게 누른 채 다른 탭 위에 놓으면 두 페이지를 한 번에 볼 수 있습니다.</string>
+    <string name="dejavu_tip_menu_up">이 모음을 위로 스와이프해 메뉴를 여세요.</string>
+    <string name="dejavu_tip_menu_down">주소 표시줄을 아래로 당겨 메뉴를 여세요.</string>
+    <string name="dejavu_tip_got_it">확인</string>
+    <string name="dejavu_tip_hide">팁 숨기기</string>
+    <string name="dejavu_settings_tips">팁</string>
+    <string name="dejavu_settings_tips_summary">\'새 탭\' 길게 누르기 등 숨겨진 제스처에 대한 팁 표시</string>
+    <string name="dejavu_new">신규</string>
 </resources>

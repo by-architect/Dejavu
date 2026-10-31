@@ -528,4 +528,20 @@
     <string name="dejavu_starter_folder">ابزارها</string>
     <string name="dejavu_no_icon">بدون نماد</string>
     <string name="dejavu_no_color">بدون رنگ</string>
+    <string name="dejavu_tip_workspace_name">روی نام فضای کاری ضربه بزنید تا نام، نماد، رنگ‌ها و تصویر پس‌زمینهٔ آن را تغییر دهید.</string>
+    <string name="dejavu_tip_new_tab">«زبانهٔ جدید» را نگه دارید تا یک زبانهٔ خصوصی یا یک زبانه در یک محفظه باز کنید.</string>
+    <string name="dejavu_tip_pin">یک زبانه را نگه دارید و آن را به بالای خط بکشید تا سنجاق شود، یا به زیر خط تا سنجاقش برداشته شود.</string>
+    <string name="dejavu_tip_folder">اینجا ضربه بزنید تا یک پوشه برای زبانه‌های سنجاق‌شده بسازید. زبانه‌ها را روی یک پوشه رها کنید تا داخل آن بروند.</string>
+    <string name="dejavu_tip_clear">روی «پاک کردن» ضربه بزنید تا زبانه‌های زیر خط بسته شوند، یا آن را نگه دارید تا داده‌های وب‌گردی‌ای که انتخاب کرده‌اید حذف شوند.</string>
+    <string name="dejavu_tip_essential_add">یک زبانه را نگه دارید و آن را به بالا بکشید تا به ضروریات افزوده شود و در همهٔ فضاهای کاری نمایش داده شود.</string>
+    <string name="dejavu_tip_essential_hold">یک مورد ضروری را نگه دارید تا آن را به جای دیگری ببرید، یا از ضروریات حذفش کنید.</string>
+    <string name="dejavu_tip_workspaces">برای رفتن به فضای کاری دیگر، به چپ یا راست بکشید. یکی را اینجا نگه دارید و بکشید تا ترتیبشان را تغییر دهید.</string>
+    <string name="dejavu_tip_split">یک زبانه را نگه دارید و آن را روی زبانهٔ دیگری رها کنید تا هر دو صفحه را هم‌زمان ببینید.</string>
+    <string name="dejavu_tip_menu_up">برای باز کردن منو، این نوار را به بالا بکشید.</string>
+    <string name="dejavu_tip_menu_down">برای باز کردن منو، نوار نشانی را به پایین بکشید.</string>
+    <string name="dejavu_tip_got_it">متوجه شدم</string>
+    <string name="dejavu_tip_hide">پنهان کردن نکته‌ها</string>
+    <string name="dejavu_settings_tips">نکته‌ها</string>
+    <string name="dejavu_settings_tips_summary">نمایش نکته‌هایی دربارهٔ ژست‌های حرکتی پنهان، مثل نگه داشتن «زبانهٔ جدید»</string>
+    <string name="dejavu_new">جدید</string>
 </resources>

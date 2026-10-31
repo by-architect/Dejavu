@@ -520,4 +520,20 @@
     <string name="dejavu_starter_folder">Àwọn irinṣẹ́</string>
     <string name="dejavu_no_icon">Kò sí àmì</string>
     <string name="dejavu_no_color">Kò sí àwọ̀</string>
+    <string name="dejavu_tip_workspace_name">Tẹ orúkọ ibi-iṣẹ́ láti yí orúkọ rẹ̀, icon, àwọ̀ àti ìṣẹ̀ṣọ́ ògiri rẹ̀ padà.</string>
+    <string name="dejavu_tip_new_tab">Di bọ́tìnnì Táàbù Tuntun mú fún táàbù ìkọ̀kọ̀, tàbí táàbù nínú container.</string>
+    <string name="dejavu_tip_pin">Di táàbù kan mú, kí o sì fà á lọ sí òkè ìlà láti fi Pin sí i, tàbí sí ìsàlẹ̀ ìlà láti yọ Pin rẹ̀ kúrò.</string>
+    <string name="dejavu_tip_folder">Tẹ ibí láti ṣẹ̀dá fódà fún àwọn táàbù tí a fi Pin sí. Sọ àwọn táàbù sílẹ̀ sórí fódà láti fi wọ́n sínú rẹ̀.</string>
+    <string name="dejavu_tip_clear">Tẹ bọ́tìnnì Nu kúrò láti pa àwọn táàbù tó wà nísàlẹ̀ ìlà dé, tàbí di í mú láti pa dátà tí o yàn rẹ́.</string>
+    <string name="dejavu_tip_essential_add">Di táàbù kan mú, kí o sì fà á lọ sí òkè pátápátá láti fi kún àwọn Pàtàkì, tí ó ń hàn ní gbogbo ibi-iṣẹ́.</string>
+    <string name="dejavu_tip_essential_hold">Di Pàtàkì kan mú láti gbé e lọ sí ibòmíràn, tàbí láti yọ ọ́ kúrò nínú àwọn Pàtàkì.</string>
+    <string name="dejavu_tip_workspaces">Ra sí ẹ̀gbẹ́ láti yí ibi-iṣẹ́ padà. Di ọ̀kan mú níbí, kí o sì fà á láti tún ètò wọn ṣe.</string>
+    <string name="dejavu_tip_split">Di táàbù kan mú, kí o sì sọ ọ́ sílẹ̀ sórí òmíràn láti rí ojú-ìwé méjèèjì lẹ́ẹ̀kan náà.</string>
+    <string name="dejavu_tip_menu_up">Fa ọ̀pá yìí sókè láti ṣí menu.</string>
+    <string name="dejavu_tip_menu_down">Fa Ọ̀pá Àdírẹ́sì sísàlẹ̀ láti ṣí menu.</string>
+    <string name="dejavu_tip_got_it">Gbà á</string>
+    <string name="dejavu_tip_hide">Fi àwọn ìmọ̀ràn pamọ́</string>
+    <string name="dejavu_settings_tips">Àwọn ìmọ̀ràn</string>
+    <string name="dejavu_settings_tips_summary">Fi àwọn ìmọ̀ràn hàn nípa àwọn ìfarajúwèé tó farasin, bí dídi bọ́tìnnì Táàbù Tuntun mú</string>
+    <string name="dejavu_new">Tuntun</string>
 </resources>

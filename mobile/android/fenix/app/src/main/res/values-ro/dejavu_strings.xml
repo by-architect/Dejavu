@@ -536,4 +536,20 @@
     <string name="dejavu_starter_folder">Instrumente</string>
     <string name="dejavu_no_icon">Fără pictogramă</string>
     <string name="dejavu_no_color">Fără culoare</string>
+    <string name="dejavu_tip_workspace_name">Atinge numele spațiului de lucru pentru a-i schimba numele, pictograma, culorile și imaginea de fundal.</string>
+    <string name="dejavu_tip_new_tab">Ține apăsat pe „Filă nouă” pentru o filă privată sau o filă într-un container.</string>
+    <string name="dejavu_tip_pin">Ține apăsat pe o filă și trage-o deasupra liniei pentru a o fixa sau sub linie pentru a anula fixarea.</string>
+    <string name="dejavu_tip_folder">Atinge aici pentru a crea un folder pentru filele fixate. Lasă file pe un folder pentru a le pune în el.</string>
+    <string name="dejavu_tip_clear">Atinge „Golește” pentru a închide filele de sub linie sau ține apăsat pentru a șterge datele pe care le-ai ales.</string>
+    <string name="dejavu_tip_essential_add">Ține apăsat pe o filă și trage-o sus pentru a o adăuga la favorite, afișate în fiecare spațiu de lucru.</string>
+    <string name="dejavu_tip_essential_hold">Ține apăsat pe un favorit pentru a-l muta în alt loc sau pentru a-l elimina din favorite.</string>
+    <string name="dejavu_tip_workspaces">Glisează lateral pentru a comuta între spațiile de lucru. Ține apăsat aici pe unul și trage-l pentru a le schimba ordinea.</string>
+    <string name="dejavu_tip_split">Ține apăsat pe o filă și las-o peste alta pentru a vedea ambele pagini deodată.</string>
+    <string name="dejavu_tip_menu_up">Glisează această bară în sus pentru a deschide meniul.</string>
+    <string name="dejavu_tip_menu_down">Trage bara de adrese în jos pentru a deschide meniul.</string>
+    <string name="dejavu_tip_got_it">Am înțeles</string>
+    <string name="dejavu_tip_hide">Ascunde sfaturile</string>
+    <string name="dejavu_settings_tips">Sfaturi</string>
+    <string name="dejavu_settings_tips_summary">Afișează sfaturi despre gesturile ascunse, cum ar fi ținerea apăsată pe „Filă nouă”</string>
+    <string name="dejavu_new">Nou</string>
 </resources>

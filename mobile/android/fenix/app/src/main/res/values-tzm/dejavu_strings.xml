@@ -528,4 +528,20 @@
     <string name="dejavu_starter_folder">Imassen</string>
     <string name="dejavu_no_icon">War tugna</string>
     <string name="dejavu_no_color">War ini</string>
+    <string name="dejavu_tip_workspace_name">Sit ɣef yisem n umkan n umahil akken ad tbeddleḍ isem-is, tugna-s, initen-is d tugna n ugilal.</string>
+    <string name="dejavu_tip_new_tab">Ṭṭef deg “Aseksel amaynu” akken ad terẓmeḍ aseksel uslig, neɣ aseksel g usenduq.</string>
+    <string name="dejavu_tip_pin">Ṭṭef deg useksel syin zuɣer-t nnig yizirig akken a t-tserseḍ, neɣ ddaw yizirig akken a s-tekkseḍ asers.</string>
+    <string name="dejavu_tip_folder">Sit dagi akken ad tesnulfuḍ akaram i yiseksal yessersen. Sers iseksal ɣef ukaram akken a ten-tsenkzeḍ ɣer daxel.</string>
+    <string name="dejavu_tip_clear">Sit ɣef “Sfeḍ” akken ad tmedleḍ iseksal ddaw yizirig, neɣ ṭṭef deg-s akken ad tekkseḍ isefka i tferneḍ.</string>
+    <string name="dejavu_tip_essential_add">Ṭṭef deg useksel syin zuɣer-t ɣer ufella akken ad t-ternuḍ ɣer wayen ilaqen, i d-ittbanen g yal amkan n umahil.</string>
+    <string name="dejavu_tip_essential_hold">Ṭṭef deg yan seg wayen ilaqen akken a t-tsenkzeḍ ɣer wadeg nniḍen, neɣ a t-tekkseḍ seg wayen ilaqen.</string>
+    <string name="dejavu_tip_workspaces">Zuɣer ɣer tama akken ad tbeddleḍ amkan n umahil. Ṭṭef deg yan dagi syin zuɣer-t akken ad tbeddleḍ amizzwer-nsen.</string>
+    <string name="dejavu_tip_split">Ṭṭef deg useksel syin sers-it ɣef wayeḍ akken ad twaliḍ snat n tsniwin ɣef tikkelt.</string>
+    <string name="dejavu_tip_menu_up">Zuɣer afeggag-a ɣer sennig akken ad terẓmeḍ umuɣ.</string>
+    <string name="dejavu_tip_menu_down">Zuɣer afeggag n tansa ɣer wadda akken ad terẓmeḍ umuɣ.</string>
+    <string name="dejavu_tip_got_it">Waxxa</string>
+    <string name="dejavu_tip_hide">Ffer iwellihen</string>
+    <string name="dejavu_settings_tips">Iwellihen</string>
+    <string name="dejavu_settings_tips_summary">Sken-d iwellihen ɣef yisillifen yeffren, am tuṭṭfa deg “Aseksel amaynu”</string>
+    <string name="dejavu_new">Amaynu</string>
 </resources>

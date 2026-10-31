@@ -528,4 +528,20 @@
     <string name="dejavu_starter_folder">Mga Gamit</string>
     <string name="dejavu_no_icon">Wala sing icon</string>
     <string name="dejavu_no_color">Wala sing kolor</string>
+    <string name="dejavu_tip_workspace_name">i-Tap ang ngalan sang workspace para baylohan ang iya ngalan, icon, mga kolor kag wallpaper.</string>
+    <string name="dejavu_tip_new_tab">Pindota sing madugay ang Bag-o nga Tab para sa pribado nga tab, ukon tab sa isa ka container.</string>
+    <string name="dejavu_tip_pin">Pindota sing madugay ang isa ka tab kag i-drag ini sa ibabaw sang linya para i-pin, ukon sa idalom sang linya para i-unpin.</string>
+    <string name="dejavu_tip_folder">i-Tap diri para maghimo sang folder para sa naka-pin nga mga tab. Ihulog ang mga tab sa isa ka folder para ibutang sa sulod.</string>
+    <string name="dejavu_tip_clear">i-Tap ang i-Clear para isira ang mga tab sa idalom sang linya, ukon pindota ini sing madugay para idelete ang data sang pag-browse nga imo ginpili.</string>
+    <string name="dejavu_tip_essential_add">Pindota sing madugay ang isa ka tab kag i-drag ini pa-ibabaw para himuon ini nga Importante, nga makita sa tanan nga workspace.</string>
+    <string name="dejavu_tip_essential_hold">Pindota sing madugay ang isa ka Importante para ibalhin ini sa iban nga lugar, ukon para kuhaon ini sa Importante.</string>
+    <string name="dejavu_tip_workspaces">I-swipe pakilid para magbalhin sang workspace. Pindota sing madugay ang isa diri kag i-drag ini para baylohan ang ila han-ay.</string>
+    <string name="dejavu_tip_split">Pindota sing madugay ang isa ka tab kag ihulog ini sa iban nga tab para makita ang duha ka page sa isa ka tion.</string>
+    <string name="dejavu_tip_menu_up">I-swipe pataas ini nga bar para maabrihan ang menu.</string>
+    <string name="dejavu_tip_menu_down">I-swipe padulhog ang bar sang address para maabrihan ang menu.</string>
+    <string name="dejavu_tip_got_it">Nahangpan ko</string>
+    <string name="dejavu_tip_hide">Tagua ang mga tip</string>
+    <string name="dejavu_settings_tips">Mga tip</string>
+    <string name="dejavu_settings_tips_summary">Ipakita ang mga tip parte sa natago nga mga gesture, pareho sang pagpindot sing madugay sa Bag-o nga Tab</string>
+    <string name="dejavu_new">Bag-o</string>
 </resources>

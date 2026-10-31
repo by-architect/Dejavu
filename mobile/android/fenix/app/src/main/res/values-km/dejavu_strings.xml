@@ -520,4 +520,20 @@
     <string name="dejavu_starter_folder">ឧបករណ៍</string>
     <string name="dejavu_no_icon">គ្មានរូបតំណាង</string>
     <string name="dejavu_no_color">គ្មានពណ៌</string>
+    <string name="dejavu_tip_workspace_name">ចុចលើឈ្មោះចន្លោះការងារ ដើម្បីប្ដូរឈ្មោះ រូបតំណាង ពណ៌ និងផ្ទាំងរូបភាពរបស់វា។</string>
+    <string name="dejavu_tip_new_tab">ចុចប៊ូតុង ផ្ទាំងថ្មី ឱ្យជាប់ ដើម្បីបើកផ្ទាំងឯកជន ឬផ្ទាំងនៅក្នុងកុងតឺន័រ។</string>
+    <string name="dejavu_tip_pin">ចុចផ្ទាំងមួយឱ្យជាប់ ហើយអូសវាទៅលើបន្ទាត់ ដើម្បីខ្ទាស់វា ឬទៅក្រោមបន្ទាត់ ដើម្បីដកខ្ទាស់វា។</string>
+    <string name="dejavu_tip_folder">ចុចទីនេះ ដើម្បីបង្កើតថតសម្រាប់ផ្ទាំងបានខ្ទាស់។ ទម្លាក់ផ្ទាំងលើថត ដើម្បីដាក់វានៅខាងក្នុង។</string>
+    <string name="dejavu_tip_clear">ចុចប៊ូតុង សម្អាត ដើម្បីបិទផ្ទាំងនៅក្រោមបន្ទាត់ ឬចុចវាឱ្យជាប់ ដើម្បីលុបទិន្នន័យដែលអ្នកបានជ្រើសរើស។</string>
+    <string name="dejavu_tip_essential_add">ចុចផ្ទាំងមួយឱ្យជាប់ ហើយអូសវាទៅខាងលើ ដើម្បីធ្វើឱ្យវាជាសំខាន់ ដែលបង្ហាញនៅគ្រប់ចន្លោះការងារ។</string>
+    <string name="dejavu_tip_essential_hold">ចុចសំខាន់មួយឱ្យជាប់ ដើម្បីផ្លាស់ទីវាទៅកន្លែងផ្សេង ឬដកវាចេញពីសំខាន់ៗ។</string>
+    <string name="dejavu_tip_workspaces">អូសទៅឆ្វេង ឬស្ដាំ ដើម្បីប្ដូរចន្លោះការងារ។ ចុចចន្លោះការងារមួយនៅទីនេះឱ្យជាប់ ហើយអូសវា ដើម្បីប្ដូរលំដាប់។</string>
+    <string name="dejavu_tip_split">ចុចផ្ទាំងមួយឱ្យជាប់ ហើយទម្លាក់វាលើផ្ទាំងមួយទៀត ដើម្បីមើលទំព័រទាំងពីរក្នុងពេលតែមួយ។</string>
+    <string name="dejavu_tip_menu_up">អូសរបារនេះឡើងលើ ដើម្បីបើកម៉ឺនុយ។</string>
+    <string name="dejavu_tip_menu_down">ទាញរបារអាសយដ្ឋានចុះក្រោម ដើម្បីបើកម៉ឺនុយ។</string>
+    <string name="dejavu_tip_got_it">យល់ហើយ</string>
+    <string name="dejavu_tip_hide">លាក់គន្លឹះ</string>
+    <string name="dejavu_settings_tips">គន្លឹះ</string>
+    <string name="dejavu_settings_tips_summary">បង្ហាញគន្លឹះអំពីកាយវិការដែលលាក់ ដូចជាការចុចប៊ូតុង ផ្ទាំងថ្មី ឱ្យជាប់</string>
+    <string name="dejavu_new">ថ្មី</string>
 </resources>

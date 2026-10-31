@@ -528,4 +528,20 @@
     <string name="dejavu_starter_folder">Verktøy</string>
     <string name="dejavu_no_icon">Intet ikon</string>
     <string name="dejavu_no_color">Ingen farge</string>
+    <string name="dejavu_tip_workspace_name">Trykk på navnet til arbeidsområdet for å endre navn, ikon, farger og bakgrunnsbilde.</string>
+    <string name="dejavu_tip_new_tab">Hold inne «Ny fane» for en privat fane eller en fane i en beholder.</string>
+    <string name="dejavu_tip_pin">Hold inne en fane og dra den over linjen for å feste den, eller under linjen for å løsne den.</string>
+    <string name="dejavu_tip_folder">Trykk her for å lage en mappe for festede faner. Slipp faner på en mappe for å legge dem i den.</string>
+    <string name="dejavu_tip_clear">Trykk på «Tøm» for å lukke fanene under linjen, eller hold den inne for å slette dataene du har valgt.</string>
+    <string name="dejavu_tip_essential_add">Hold inne en fane og dra den til toppen for å gjøre den til en favoritt, som vises i alle arbeidsområder.</string>
+    <string name="dejavu_tip_essential_hold">Hold inne en favoritt for å flytte den til et annet sted, eller for å fjerne den fra favoritter.</string>
+    <string name="dejavu_tip_workspaces">Sveip til siden for å bytte arbeidsområde. Hold inne et arbeidsområde her og dra det for å endre rekkefølgen.</string>
+    <string name="dejavu_tip_split">Hold inne en fane og slipp den på en annen for å se begge sidene samtidig.</string>
+    <string name="dejavu_tip_menu_up">Sveip denne linjen opp for å åpne menyen.</string>
+    <string name="dejavu_tip_menu_down">Dra adresselinjen ned for å åpne menyen.</string>
+    <string name="dejavu_tip_got_it">Skjønner</string>
+    <string name="dejavu_tip_hide">Skjul tips</string>
+    <string name="dejavu_settings_tips">Tips</string>
+    <string name="dejavu_settings_tips_summary">Vis tips om skjulte bevegelser, som å holde inne «Ny fane»</string>
+    <string name="dejavu_new">Ny</string>
 </resources>

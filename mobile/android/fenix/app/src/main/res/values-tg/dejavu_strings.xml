@@ -528,4 +528,20 @@
     <string name="dejavu_starter_folder">Абзорҳо</string>
     <string name="dejavu_no_icon">Бе нишона</string>
     <string name="dejavu_no_color">Бе ранг</string>
+    <string name="dejavu_tip_workspace_name">Барои иваз кардани ном, нишона, рангҳо ва тасвири заминаи фазо ба номи он зер кунед.</string>
+    <string name="dejavu_tip_new_tab">Барои варақаи хусусӣ ё варақа дар контейнер «Варақаи нав»-ро пахш карда нигоҳ доред.</string>
+    <string name="dejavu_tip_pin">Варақаро пахш карда нигоҳ доред ва барои часпондан онро ба болои хат, ё барои канда гирифтан ба поёни хат кашед.</string>
+    <string name="dejavu_tip_folder">Барои сохтани ҷузвдон барои варақаҳои часпонидашуда ин ҷо зер кунед. Барои гузоштан ба ҷузвдон варақаҳоро ба болои ҷузвдон гузоред.</string>
+    <string name="dejavu_tip_clear">Барои пӯшидани варақаҳои зери хат ба «Пок кардан» зер кунед, ё барои нест кардани маълумоте, ки интихоб кардаед, онро пахш карда нигоҳ доред.</string>
+    <string name="dejavu_tip_essential_add">Варақаро пахш карда нигоҳ доред ва барои илова кардан ба сомонаҳои муҳим, ки дар ҳар фазо нишон дода мешаванд, онро ба қисми болоӣ кашед.</string>
+    <string name="dejavu_tip_essential_hold">Барои гузарондан ба ҷои дигар ё хориҷ кардан аз сомонаҳои муҳим сомонаи муҳимро пахш карда нигоҳ доред.</string>
+    <string name="dejavu_tip_workspaces">Барои гузаштан байни фазоҳо ангуштро ба тарафҳо гузаронед. Барои иваз кардани тартиби онҳо якеро дар ин ҷо пахш карда нигоҳ доред ва кашед.</string>
+    <string name="dejavu_tip_split">Варақаро пахш карда нигоҳ доред ва барои дидани ҳарду саҳифа дар як вақт онро ба болои варақаи дигар гузоред.</string>
+    <string name="dejavu_tip_menu_up">Барои кушодани меню ин наворро ба боло кашед.</string>
+    <string name="dejavu_tip_menu_down">Барои кушодани меню навори нишониро ба поён кашед.</string>
+    <string name="dejavu_tip_got_it">Фаҳмо</string>
+    <string name="dejavu_tip_hide">Пинҳон кардани маслиҳатҳо</string>
+    <string name="dejavu_settings_tips">Маслиҳатҳо</string>
+    <string name="dejavu_settings_tips_summary">Нишон додани маслиҳатҳо дар бораи ишораҳои пинҳон, масалан, пахш карда нигоҳ доштани «Варақаи нав»</string>
+    <string name="dejavu_new">Нав</string>
 </resources>

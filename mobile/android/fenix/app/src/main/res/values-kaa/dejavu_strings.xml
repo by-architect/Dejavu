@@ -528,4 +528,20 @@
     <string name="dejavu_starter_folder">Qurallar</string>
     <string name="dejavu_no_icon">Belgishe joq</string>
     <string name="dejavu_no_color">Reń joq</string>
+    <string name="dejavu_tip_workspace_name">Jumıs maydanınıń atın, belgishesin, reńlerin hám fon súwretin ózgertiw ushın onıń atına tiyiń.</string>
+    <string name="dejavu_tip_new_tab">Jeke bet yamasa konteynerdegi bet ushın «Jańa bet» túymesin basıp turıń.</string>
+    <string name="dejavu_tip_pin">Betti basıp turıń hám onı bekitiw ushın sızıqtan joqarıǵa, bekitiwden shıǵarıw ushın sızıqtan tómenge súyreń.</string>
+    <string name="dejavu_tip_folder">Bekitilgen betlerge papka jasaw ushın bul jerge tiyiń. Betlerdi papkanıń ishine salıw ushın olardı papkaǵa taslań.</string>
+    <string name="dejavu_tip_clear">Sızıqtan tómengi betlerdi jabıw ushın «Tazalaw» túymesine tiyiń, yamasa siz tańlaǵan brauzer maǵlıwmatların óshiriw ushın onı basıp turıń.</string>
+    <string name="dejavu_tip_essential_add">Betti basıp turıń hám onı tiykarǵı etiw ushın joqarıǵa súyreń, ol hár bir jumıs maydanında kórsetiledi.</string>
+    <string name="dejavu_tip_essential_hold">Tiykarǵını basqa orınǵa jılıstırıw yamasa tiykarǵılardan shıǵarıw ushın onı basıp turıń.</string>
+    <string name="dejavu_tip_workspaces">Jumıs maydanların almastırıw ushın qaptalǵa sırǵıtıń. Olardıń tártibin ózgertiw ushın bul jerde birewin basıp turıń hám súyreń.</string>
+    <string name="dejavu_tip_split">Eki veb-betti birden kóriw ushın betti basıp turıń hám onı basqa betke taslań.</string>
+    <string name="dejavu_tip_menu_up">Menyunı ashıw ushın bul paneldi joqarıǵa sırǵıtıń.</string>
+    <string name="dejavu_tip_menu_down">Menyunı ashıw ushın mánzil qatarın tómenge tartıń.</string>
+    <string name="dejavu_tip_got_it">Túsindim</string>
+    <string name="dejavu_tip_hide">Keńeslerdi jasırıw</string>
+    <string name="dejavu_settings_tips">Keńesler</string>
+    <string name="dejavu_settings_tips_summary">Jasırın háreketler haqqında keńeslerdi kórsetiw, mısalı «Jańa bet» túymesin basıp turıw</string>
+    <string name="dejavu_new">Jańa</string>
 </resources>

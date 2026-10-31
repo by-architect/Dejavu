@@ -536,4 +536,20 @@
     <string name="dejavu_starter_folder">Alati</string>
     <string name="dejavu_no_icon">Bez ikone</string>
     <string name="dejavu_no_color">Bez boje</string>
+    <string name="dejavu_tip_workspace_name">Dodirnite naziv radnog prostora da promijenite njegov naziv, ikonu, boje i pozadinu.</string>
+    <string name="dejavu_tip_new_tab">Zadržite Novi tab da otvorite privatni tab ili tab u kontejneru.</string>
+    <string name="dejavu_tip_pin">Zadržite tab i prevucite ga iznad linije da ga prikvačite ili ispod linije da ga otkvačite.</string>
+    <string name="dejavu_tip_folder">Dodirnite ovdje da napravite folder za prikvačene tabove. Ispustite tabove na folder da ih stavite unutra.</string>
+    <string name="dejavu_tip_clear">Dodirnite Očisti da zatvorite tabove ispod linije ili ga zadržite da obrišete podatke koje ste odabrali.</string>
+    <string name="dejavu_tip_essential_add">Zadržite tab i prevucite ga na vrh da ga dodate u Favorite, koji se prikazuju u svakom radnom prostoru.</string>
+    <string name="dejavu_tip_essential_hold">Zadržite Favorit da ga premjestite na drugo mjesto ili uklonite iz Favorita.</string>
+    <string name="dejavu_tip_workspaces">Prevucite ustranu da promijenite radni prostor. Zadržite jedan ovdje i prevucite ga da promijenite redoslijed.</string>
+    <string name="dejavu_tip_split">Zadržite tab i ispustite ga na drugi da vidite obje stranice odjednom.</string>
+    <string name="dejavu_tip_menu_up">Prevucite ovu traku prema gore da otvorite meni.</string>
+    <string name="dejavu_tip_menu_down">Prevucite adresnu traku prema dolje da otvorite meni.</string>
+    <string name="dejavu_tip_got_it">Razumijem</string>
+    <string name="dejavu_tip_hide">Sakrij savjete</string>
+    <string name="dejavu_settings_tips">Savjeti</string>
+    <string name="dejavu_settings_tips_summary">Prikaži savjete o skrivenim gestovima, poput zadržavanja dugmeta Novi tab</string>
+    <string name="dejavu_new">Novo</string>
 </resources>

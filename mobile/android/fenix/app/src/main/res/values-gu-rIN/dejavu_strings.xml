@@ -561,4 +561,20 @@
     <string name="dejavu_starter_folder">સાધનો</string>
     <string name="dejavu_no_icon">કોઈ આઇકન નહીં</string>
     <string name="dejavu_no_color">કોઈ રંગ નહીં</string>
+    <string name="dejavu_tip_workspace_name">વર્કસ્પેસનું નામ, આઇકન, રંગો અને વૉલપેપર બદલવા માટે તેના નામ પર ટૅપ કરો.</string>
+    <string name="dejavu_tip_new_tab">ખાનગી ટૅબ અથવા કન્ટેનરમાં ટૅબ માટે “નવી ટૅબ” દબાવી રાખો.</string>
+    <string name="dejavu_tip_pin">ટૅબને પિન કરવા માટે તેને દબાવી રાખો અને રેખાની ઉપર ખેંચો, અથવા અનપિન કરવા માટે રેખાની નીચે ખેંચો.</string>
+    <string name="dejavu_tip_folder">પિન કરેલી ટૅબ્સ માટે ફોલ્ડર બનાવવા અહીં ટૅપ કરો. ટૅબ્સને ફોલ્ડરમાં મૂકવા માટે તેમને ફોલ્ડર પર છોડો.</string>
+    <string name="dejavu_tip_clear">રેખાની નીચેની ટૅબ્સ બંધ કરવા માટે “સાફ કરો” પર ટૅપ કરો, અથવા તમે પસંદ કરેલો બ્રાઉઝિંગ ડેટા કાઢી નાખવા માટે તેને દબાવી રાખો.</string>
+    <string name="dejavu_tip_essential_add">ટૅબને દબાવી રાખો અને તેને ટોચ પર ખેંચો, જેથી તે એસેન્શિયલ બને અને દરેક વર્કસ્પેસમાં દેખાય.</string>
+    <string name="dejavu_tip_essential_hold">એસેન્શિયલને બીજી જગ્યાએ ખસેડવા અથવા એસેન્શિયલ્સમાંથી દૂર કરવા માટે તેને દબાવી રાખો.</string>
+    <string name="dejavu_tip_workspaces">વર્કસ્પેસ બદલવા માટે બાજુમાં સ્વાઇપ કરો. તેમનો ક્રમ બદલવા માટે અહીં કોઈ એકને દબાવી રાખો અને ખેંચો.</string>
+    <string name="dejavu_tip_split">બંને પૃષ્ઠો એકસાથે જોવા માટે ટૅબને દબાવી રાખો અને તેને બીજી ટૅબ પર છોડો.</string>
+    <string name="dejavu_tip_menu_up">મેનૂ ખોલવા માટે આ બારને ઉપર સ્વાઇપ કરો.</string>
+    <string name="dejavu_tip_menu_down">મેનૂ ખોલવા માટે સરનામાં બારને નીચે ખેંચો.</string>
+    <string name="dejavu_tip_got_it">સમજાઈ ગયું</string>
+    <string name="dejavu_tip_hide">ટિપ્સ છુપાવો</string>
+    <string name="dejavu_settings_tips">ટિપ્સ</string>
+    <string name="dejavu_settings_tips_summary">છુપાયેલા હાવભાવ વિશે ટિપ્સ બતાવો, જેમ કે “નવી ટૅબ” દબાવી રાખવી</string>
+    <string name="dejavu_new">નવું</string>
 </resources>

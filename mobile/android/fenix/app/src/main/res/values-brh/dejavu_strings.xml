@@ -528,4 +528,20 @@
     <string name="dejavu_starter_folder">اوزاراک</string>
     <string name="dejavu_no_icon">آئیکن کائی نی</string>
     <string name="dejavu_no_color">رنگ کائی نی</string>
+    <string name="dejavu_tip_workspace_name">ورک سپیس نا ناں، آئیکن، رنگاک او وال پیپر بدل کننگ کن اونا ناں پار ٹیپ کبو۔</string>
+    <string name="dejavu_tip_new_tab">زاتی ٹیب یا کنٹینر اٹ ٹیب اس ملنگ کن «پوسکنو ٹیب اس» بٹن اے دبا ہلبو۔</string>
+    <string name="dejavu_tip_pin">ٹیب اس اے دبا ہلبو، پن کننگ کن لکیر نا بُرزا کشبو، یا پن ہٹاننگ کن لکیر نا تلی کشبو۔</string>
+    <string name="dejavu_tip_folder">پن ٹیباک کن فولڈر اس جوڑ کننگ کن ادا ٹیپ کبو۔ ٹیباتے فولڈر اٹی ہتنگ کن اوفتے فولڈر اس پار چھوڑ۔</string>
+    <string name="dejavu_tip_clear">لکیر نا تلی ٹیباتے بند کننگ کن «صاف کبو» پار ٹیپ کبو، یا نی چنا ڈیٹا اے صاف کننگ کن اودے دبا ہلبو۔</string>
+    <string name="dejavu_tip_essential_add">ٹیب اس اے ضروری چیزاک اٹ شامل کننگ کن دبا ہلبو او بُرزا کشبو۔ ضروری چیزاک ہر ورک سپیس اٹ دکھ ہن۔</string>
+    <string name="dejavu_tip_essential_hold">ضروری چیز اس اے پین جاگہ اسے غا چلنگ کن یا ضروری چیزاک ٹی ہٹاننگ کن دبا ہلبو۔</string>
+    <string name="dejavu_tip_workspaces">ورک سپیس بدل کننگ کن پاسہ غا سوائپ کبو۔ ترتیب بدل کننگ کن ادا اسٹ اے دبا ہلبو او کشبو۔</string>
+    <string name="dejavu_tip_split">دوہی صفحہ تے اسہ وخت اٹ خننگ کن ٹیب اس اے دبا ہلبو او پین ٹیب اس پار چھوڑ۔</string>
+    <string name="dejavu_tip_menu_up">مینو ملنگ کن دا بار اے بُرزا سوائپ کبو۔</string>
+    <string name="dejavu_tip_menu_down">مینو ملنگ کن ڈس بار اے تلی سوائپ کبو۔</string>
+    <string name="dejavu_tip_got_it">سرپد مسٹ</string>
+    <string name="dejavu_tip_hide">مشوراک لکاؤ</string>
+    <string name="dejavu_settings_tips">مشوراک</string>
+    <string name="dejavu_settings_tips_summary">لکوکا اشاراک نا بارو اٹ مشوراک تس، جیسا کہ «پوسکنو ٹیب اس» اے دبا ہلنگ</string>
+    <string name="dejavu_new">پوسکن</string>
 </resources>

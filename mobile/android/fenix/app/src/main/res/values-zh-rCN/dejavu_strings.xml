@@ -520,4 +520,20 @@
     <string name="dejavu_starter_folder">工具</string>
     <string name="dejavu_no_icon">无图标</string>
     <string name="dejavu_no_color">无颜色</string>
+    <string name="dejavu_tip_workspace_name">点按工作区名称，即可更改其名称、图标、颜色和壁纸。</string>
+    <string name="dejavu_tip_new_tab">长按“新建标签页”，可打开隐私标签页或容器中的标签页。</string>
+    <string name="dejavu_tip_pin">长按标签页并将其拖到分隔线上方即可固定，拖到分隔线下方即可取消固定。</string>
+    <string name="dejavu_tip_folder">点按此处可为固定标签页新建文件夹。将标签页拖放到文件夹上即可放入其中。</string>
+    <string name="dejavu_tip_clear">点按“清除”可关闭分隔线下方的标签页，长按则会删除您选择的数据。</string>
+    <string name="dejavu_tip_essential_add">长按标签页并将其拖到顶部，即可添加到常用网站，常用网站会显示在每个工作区中。</string>
+    <string name="dejavu_tip_essential_hold">长按常用网站，可将其移到其他位置，或从常用网站中移除。</string>
+    <string name="dejavu_tip_workspaces">左右滑动可切换工作区。在此处长按某个工作区并拖动，即可调整顺序。</string>
+    <string name="dejavu_tip_split">长按标签页并将其拖放到另一个标签页上，即可同时查看两个页面。</string>
+    <string name="dejavu_tip_menu_up">向上滑动此栏即可打开菜单。</string>
+    <string name="dejavu_tip_menu_down">向下拉动地址栏即可打开菜单。</string>
+    <string name="dejavu_tip_got_it">明白了</string>
+    <string name="dejavu_tip_hide">隐藏提示</string>
+    <string name="dejavu_settings_tips">提示</string>
+    <string name="dejavu_settings_tips_summary">显示有关隐藏手势的提示，例如长按“新建标签页”</string>
+    <string name="dejavu_new">新</string>
 </resources>

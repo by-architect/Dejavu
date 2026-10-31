@@ -528,4 +528,20 @@
     <string name="dejavu_starter_folder">Strumenti</string>
     <string name="dejavu_no_icon">Nisciunn-a icona</string>
     <string name="dejavu_no_color">Nisciun cô</string>
+    <string name="dejavu_tip_workspace_name">Tocca o nomme do spaçio de travaggio pe cangiâ o nomme, l\'icona, i coloî e o sfondo.</string>
+    <string name="dejavu_tip_new_tab">Tegni sciaccou “Neuvo feuggio” pe \'n feuggio privou, ò pe \'n feuggio inte \'n contenitô.</string>
+    <string name="dejavu_tip_pin">Tegni sciaccou \'n feuggio e strascinilo de d\'ato da linia pe fissâlo, ò de sotta da linia pe sfissâlo.</string>
+    <string name="dejavu_tip_folder">Tocca chì pe fâ \'na cartella pe-i feuggi fissæ. Lascia i feuggi in sce \'na cartella pe mettili drento.</string>
+    <string name="dejavu_tip_clear">Tocca “Pulisci” pe særâ i feuggi de sotta da linia, ò tegnilo sciaccou pe scancellâ i dæti che t\'æ scelto.</string>
+    <string name="dejavu_tip_essential_add">Tegni sciaccou \'n feuggio e strascinilo in çimma pe fâne un essençiale, mostrou in ògni spaçio de travaggio.</string>
+    <string name="dejavu_tip_essential_hold">Tegni sciaccou un essençiale pe spostâlo inte \'n atro posto, ò pe cacciâlo da-i essençiali.</string>
+    <string name="dejavu_tip_workspaces">Fa scorrî de lato pe cangiâ spaçio de travaggio. Tegni sciaccou un spaçio de travaggio chì e strascinilo pe cangiâ l\'ordine.</string>
+    <string name="dejavu_tip_split">Tegni sciaccou \'n feuggio e lascilo in sce \'n atro pe vedde e doe pagine insemme.</string>
+    <string name="dejavu_tip_menu_up">Fa scorrî in sciù sta barra pe arvî o menû.</string>
+    <string name="dejavu_tip_menu_down">Tia in zu a barra di indirissi pe arvî o menû.</string>
+    <string name="dejavu_tip_got_it">Ò capio</string>
+    <string name="dejavu_tip_hide">Ascondi i conseggi</string>
+    <string name="dejavu_settings_tips">Conseggi</string>
+    <string name="dejavu_settings_tips_summary">Mostra conseggi in scî gesti ascoxi, comme tegnî sciaccou “Neuvo feuggio”</string>
+    <string name="dejavu_new">Neuvo</string>
 </resources>

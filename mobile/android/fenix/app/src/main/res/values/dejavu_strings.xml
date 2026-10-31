@@ -547,6 +547,7 @@
     <string name="pref_key_dejavu_top_category" translatable="false">pref_key_dejavu_top_category</string>
     <string name="pref_key_dejavu_matrix" translatable="false">pref_key_dejavu_matrix</string>
     <string name="pref_key_dejavu_whats_new" translatable="false">pref_key_dejavu_whats_new</string>
+    <string name="pref_key_dejavu_tips" translatable="false">pref_key_dejavu_tips</string>
     <string name="pref_key_dejavu_author" translatable="false">pref_key_dejavu_author</string>
     <string name="pref_key_dejavu_coffee" translatable="false">pref_key_dejavu_coffee</string>
     <!-- Edit workspace dialog: title of the note that says what Firefox Sync leaves out of workspaces, shown while workspaces sync with Firefox (not Zen). -->
@@ -869,4 +870,36 @@
     <string name="dejavu_no_icon">No icon</string>
     <!-- Read out by screen readers for the crossed circle that picks no colors for a workspace. -->
     <string name="dejavu_no_color">No color</string>
+    <!-- Tip next to the workspace's name on the home screen; tapping the name opens the workspace's editor. Tips point at hidden gestures, each shown once in a bubble next to what it is about. -->
+    <string name="dejavu_tip_workspace_name">Tap the workspace’s name to change its name, icon, colors and wallpaper.</string>
+    <!-- Tip next to "New Tab" on the home screen; holding it opens a menu with a private tab and the containers. -->
+    <string name="dejavu_tip_new_tab">Hold New Tab for a private tab, or a tab in a container.</string>
+    <!-- Tip next to a tab on the home screen. "The line" is the line between the pinned tabs above it and the other tabs below it. -->
+    <string name="dejavu_tip_pin">Hold a tab and drag it above the line to pin it, or below the line to unpin it.</string>
+    <!-- Tip next to the button that makes a new folder on the home screen. -->
+    <string name="dejavu_tip_folder">Tap here to make a folder for pinned tabs. Drop tabs onto a folder to put them inside.</string>
+    <!-- Tip next to the "Clear" button on the home screen, which closes the tabs below the line; holding it deletes the browsing data chosen in the settings. -->
+    <string name="dejavu_tip_clear">Tap Clear to close the tabs below the line, or hold it to delete the browsing data you chose.</string>
+    <!-- Tip next to a tab on the home screen. Essentials are the site icons at the top of the home screen. -->
+    <string name="dejavu_tip_essential_add">Hold a tab and drag it to the top to make it an essential, shown in every workspace.</string>
+    <!-- Tip next to an essential, one of the site icons at the top of the home screen. -->
+    <string name="dejavu_tip_essential_hold">Hold an essential to move it to another place, or to remove it from the essentials.</string>
+    <!-- Tip next to the bar with the workspaces at the bottom (or top) of the home screen. -->
+    <string name="dejavu_tip_workspaces">Swipe sideways to switch workspaces. Hold one here and drag it to change their order.</string>
+    <!-- Tip next to a tab on the home screen: a tab dropped onto another one shows both pages on the screen at once. -->
+    <string name="dejavu_tip_split">Hold a tab and drop it onto another one to see both pages at once.</string>
+    <!-- Tip next to the bar below a web page; swiping it up opens the menu. -->
+    <string name="dejavu_tip_menu_up">Swipe this bar up to open the menu.</string>
+    <!-- Tip next to the address bar above a web page; pulling it down opens the menu. -->
+    <string name="dejavu_tip_menu_down">Pull the address bar down to open the menu.</string>
+    <!-- Button of a tip that closes it. -->
+    <string name="dejavu_tip_got_it">Got it</string>
+    <!-- Button of a tip that turns every tip off. They can be turned on again in the settings, under "Tips". -->
+    <string name="dejavu_tip_hide">Hide tips</string>
+    <!-- Switch in the settings that turns the tips about hidden gestures on or off. Turning it on shows every tip again. -->
+    <string name="dejavu_settings_tips">Tips</string>
+    <!-- Text under "Tips" in the settings. -->
+    <string name="dejavu_settings_tips_summary">Show tips about hidden gestures, like holding New Tab</string>
+    <!-- Read out by screen readers for the orange dot that marks what the new version of Dejavu brought, in the settings and the menu. -->
+    <string name="dejavu_new">New</string>
 </resources>

@@ -560,4 +560,20 @@
     <string name="dejavu_starter_folder">Toulys</string>
     <string name="dejavu_no_icon">Ikon vyth</string>
     <string name="dejavu_no_color">Liw vyth</string>
+    <string name="dejavu_tip_workspace_name">Gwaska hanow an tyller-ober rag chanjya y hanow, y ikon, y liwyow ha\'y baper-fos.</string>
+    <string name="dejavu_tip_new_tab">Synsy “Tab Nowyth” rag tab privedh, po tab yn kontayner.</string>
+    <string name="dejavu_tip_pin">Synsy tab ha\'y denna a-ugh an linen rag y fastya, po a-woles an linen rag y dhifastya.</string>
+    <string name="dejavu_tip_folder">Gwaska omma rag gul plegell rag tabow fastyes. Gasa tabow war blegell rag aga gorra a-ji.</string>
+    <string name="dejavu_tip_clear">Gwaska “Glanhe” rag degea an tabow a-woles an linen, po y synsy rag dilea an data a dhewissys.</string>
+    <string name="dejavu_tip_essential_add">Synsy tab ha\'y denna dhe\'n top rag y wul Pyth Poesek, diskwedhys yn pub tyller-ober.</string>
+    <string name="dejavu_tip_essential_hold">Synsy Pyth Poesek rag y vovya dhe le aral, po rag y removya a-dhiworth an Pythow Poesek.</string>
+    <string name="dejavu_tip_workspaces">Skubel a-denewen rag chanjya tyller-ober. Synsy onan omma ha\'y denna rag chanjya aga aray.</string>
+    <string name="dejavu_tip_split">Synsy tab ha\'y asa war onan aral rag gweles an dhiw folen warbarth.</string>
+    <string name="dejavu_tip_menu_up">Skubel an barr ma yn ban rag igeri an roll.</string>
+    <string name="dejavu_tip_menu_down">Tenna an barr trigva war-nans rag igeri an roll.</string>
+    <string name="dejavu_tip_got_it">Konvedhys</string>
+    <string name="dejavu_tip_hide">Kudha kussulyow</string>
+    <string name="dejavu_settings_tips">Kussulyow</string>
+    <string name="dejavu_settings_tips_summary">Diskwedhes kussulyow a-dro dhe wayansow kudh, kepar ha synsy “Tab Nowyth”</string>
+    <string name="dejavu_new">Nowydh</string>
 </resources>

@@ -536,4 +536,20 @@
     <string name="dejavu_starter_folder">Ferramentas</string>
     <string name="dejavu_no_icon">Sem ícone</string>
     <string name="dejavu_no_color">Sem cor</string>
+    <string name="dejavu_tip_workspace_name">Toque no nome do espaço de trabalho para mudar o nome, o ícone, as cores e o fundo de tela.</string>
+    <string name="dejavu_tip_new_tab">Mantenha “Nova aba” pressionado para abrir uma aba privativa ou uma aba em um contêiner.</string>
+    <string name="dejavu_tip_pin">Mantenha uma aba pressionada e arraste-a acima da linha para fixá-la, ou abaixo da linha para desafixá-la.</string>
+    <string name="dejavu_tip_folder">Toque aqui para criar uma pasta para abas fixadas. Solte abas em uma pasta para colocá-las dentro dela.</string>
+    <string name="dejavu_tip_clear">Toque em “Limpar” para fechar as abas abaixo da linha, ou mantenha pressionado para excluir os dados que você escolheu.</string>
+    <string name="dejavu_tip_essential_add">Mantenha uma aba pressionada e arraste-a para o topo para torná-la um essencial, mostrado em todos os espaços de trabalho.</string>
+    <string name="dejavu_tip_essential_hold">Mantenha um essencial pressionado para movê-lo para outro lugar ou removê-lo dos essenciais.</string>
+    <string name="dejavu_tip_workspaces">Deslize para os lados para trocar de espaço de trabalho. Mantenha um deles pressionado aqui e arraste para mudar a ordem.</string>
+    <string name="dejavu_tip_split">Mantenha uma aba pressionada e solte-a sobre outra para ver as duas páginas ao mesmo tempo.</string>
+    <string name="dejavu_tip_menu_up">Deslize esta barra para cima para abrir o menu.</string>
+    <string name="dejavu_tip_menu_down">Puxe a barra de endereços para baixo para abrir o menu.</string>
+    <string name="dejavu_tip_got_it">Entendi</string>
+    <string name="dejavu_tip_hide">Ocultar dicas</string>
+    <string name="dejavu_settings_tips">Dicas</string>
+    <string name="dejavu_settings_tips_summary">Mostrar dicas sobre gestos ocultos, como manter “Nova aba” pressionado</string>
+    <string name="dejavu_new">Novidade</string>
 </resources>

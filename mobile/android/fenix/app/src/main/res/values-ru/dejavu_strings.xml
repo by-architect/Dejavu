@@ -544,4 +544,20 @@
     <string name="dejavu_starter_folder">Инструменты</string>
     <string name="dejavu_no_icon">Без значка</string>
     <string name="dejavu_no_color">Без цвета</string>
+    <string name="dejavu_tip_workspace_name">Нажмите на название рабочего пространства, чтобы изменить его название, значок, цвета и обои.</string>
+    <string name="dejavu_tip_new_tab">Удерживайте кнопку «Новая вкладка», чтобы открыть приватную вкладку или вкладку в контейнере.</string>
+    <string name="dejavu_tip_pin">Удерживайте вкладку и перетащите её выше линии, чтобы закрепить, или ниже линии, чтобы открепить.</string>
+    <string name="dejavu_tip_folder">Нажмите здесь, чтобы создать папку для закреплённых вкладок. Перетащите вкладки на папку, чтобы положить их в неё.</string>
+    <string name="dejavu_tip_clear">Нажмите кнопку «Очистить», чтобы закрыть вкладки ниже линии, или удерживайте её, чтобы удалить выбранные вами данные.</string>
+    <string name="dejavu_tip_essential_add">Удерживайте вкладку и перетащите её наверх, чтобы добавить в избранное, которое видно во всех рабочих пространствах.</string>
+    <string name="dejavu_tip_essential_hold">Удерживайте вкладку из избранного, чтобы переместить её в другое место или удалить из избранного.</string>
+    <string name="dejavu_tip_workspaces">Проведите влево или вправо, чтобы переключить рабочее пространство. Удерживайте рабочее пространство здесь и перетащите его, чтобы изменить порядок.</string>
+    <string name="dejavu_tip_split">Удерживайте вкладку и перетащите её на другую, чтобы видеть обе страницы сразу.</string>
+    <string name="dejavu_tip_menu_up">Проведите по этой панели вверх, чтобы открыть меню.</string>
+    <string name="dejavu_tip_menu_down">Потяните адресную строку вниз, чтобы открыть меню.</string>
+    <string name="dejavu_tip_got_it">Понятно</string>
+    <string name="dejavu_tip_hide">Скрыть советы</string>
+    <string name="dejavu_settings_tips">Советы</string>
+    <string name="dejavu_settings_tips_summary">Показывать советы о скрытых жестах, например об удержании кнопки «Новая вкладка»</string>
+    <string name="dejavu_new">Новое</string>
 </resources>

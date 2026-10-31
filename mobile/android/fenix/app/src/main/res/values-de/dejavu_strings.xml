@@ -528,4 +528,20 @@
     <string name="dejavu_starter_folder">Werkzeuge</string>
     <string name="dejavu_no_icon">Kein Symbol</string>
     <string name="dejavu_no_color">Keine Farbe</string>
+    <string name="dejavu_tip_workspace_name">Tippe auf den Namen des Arbeitsbereichs, um Name, Symbol, Farben und Hintergrundbild zu ändern.</string>
+    <string name="dejavu_tip_new_tab">Halte „Neuer Tab“ gedrückt, um einen privaten Tab oder einen Tab in einem Container zu öffnen.</string>
+    <string name="dejavu_tip_pin">Halte einen Tab gedrückt und ziehe ihn über die Linie, um ihn anzuheften, oder unter die Linie, um ihn zu lösen.</string>
+    <string name="dejavu_tip_folder">Tippe hier, um einen Ordner für angeheftete Tabs zu erstellen. Lege Tabs auf einem Ordner ab, um sie hineinzulegen.</string>
+    <string name="dejavu_tip_clear">Tippe auf „Leeren“, um die Tabs unter der Linie zu schließen, oder halte die Schaltfläche gedrückt, um die von dir gewählten Daten zu löschen.</string>
+    <string name="dejavu_tip_essential_add">Halte einen Tab gedrückt und ziehe ihn nach oben, um ihn zu den Favoriten hinzuzufügen, die in jedem Arbeitsbereich zu sehen sind.</string>
+    <string name="dejavu_tip_essential_hold">Halte einen Favoriten gedrückt, um ihn an eine andere Stelle zu verschieben oder aus den Favoriten zu entfernen.</string>
+    <string name="dejavu_tip_workspaces">Wische zur Seite, um zwischen Arbeitsbereichen zu wechseln. Halte hier einen gedrückt und ziehe ihn, um die Reihenfolge zu ändern.</string>
+    <string name="dejavu_tip_split">Halte einen Tab gedrückt und lege ihn auf einem anderen ab, um beide Seiten gleichzeitig zu sehen.</string>
+    <string name="dejavu_tip_menu_up">Wische diese Leiste nach oben, um das Menü zu öffnen.</string>
+    <string name="dejavu_tip_menu_down">Wische die Adressleiste nach unten, um das Menü zu öffnen.</string>
+    <string name="dejavu_tip_got_it">Verstanden</string>
+    <string name="dejavu_tip_hide">Tipps ausblenden</string>
+    <string name="dejavu_settings_tips">Tipps</string>
+    <string name="dejavu_settings_tips_summary">Tipps zu versteckten Gesten anzeigen, etwa „Neuer Tab“ gedrückt halten</string>
+    <string name="dejavu_new">Neu</string>
 </resources>

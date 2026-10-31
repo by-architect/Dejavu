@@ -8,6 +8,8 @@
     <!-- The accent that marks what Dejavu adds: dark in the light theme, light in the dark ones (values-night). -->
     <color name="dejavu_accent">@color/dejavuGray19</color>
     <color name="dejavu_on_accent">@android:color/white</color>
+    <!-- The dot that marks what a new version brought, see NewThings. -->
+    <color name="dejavu_new_dot">#FFF06A00</color>
 
     <color name="dejavuGray6">#FF121212</color>
     <color name="dejavuGray7">#FF161616</color>

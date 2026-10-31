@@ -72,6 +72,9 @@ import org.mozilla.fenix.components.Components
 import org.mozilla.fenix.components.accounts.FenixFxAEntryPoint
 import org.mozilla.fenix.databinding.AmoCollectionOverrideDialogBinding
 import org.mozilla.fenix.dejavu.DejavuLinks
+import org.mozilla.fenix.dejavu.discover.NewThing
+import org.mozilla.fenix.dejavu.discover.NewThings
+import org.mozilla.fenix.dejavu.discover.Tips
 import org.mozilla.fenix.dejavu.features.DejavuFeatureTourFragment
 import org.mozilla.fenix.dejavu.settings.slideTo
 import org.mozilla.fenix.e2e.SystemInsetsPaddedFragment
@@ -224,6 +227,8 @@ class SettingsFragment : PreferenceFragmentCompat(), SystemInsetsPaddedFragment 
         // Dejavu: the maker's name is not translated.
         findPreference<Preference>(getString(R.string.pref_key_dejavu_author))?.title =
             getString(R.string.dejavu_settings_author, getString(R.string.dejavu_author_name))
+        // Dejavu: the switch of the tips about gestures nothing on the screen shows.
+        findPreference<SwitchPreferenceCompat>(getString(R.string.pref_key_dejavu_tips))?.let(Tips::bindSwitch)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -337,6 +342,9 @@ class SettingsFragment : PreferenceFragmentCompat(), SystemInsetsPaddedFragment 
             } else {
                 getString(R.string.delete_browsing_data_quit_off)
             }
+        // Dejavu: orange dots lead to what the new version brought, see NewThings.
+        NewThings.mark(deleteBrowsingDataPreference, NewThing.CLEAR_DATA_CHOICES)
+        NewThings.mark(requirePreference<Preference>(R.string.pref_key_customize), NewThing.CLEAR_DATA_ENTRIES)
 
         setupPreferences(settings)
 

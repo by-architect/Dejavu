@@ -528,4 +528,20 @@
     <string name="dejavu_starter_folder">Araçlar</string>
     <string name="dejavu_no_icon">Simge yok</string>
     <string name="dejavu_no_color">Renk yok</string>
+    <string name="dejavu_tip_workspace_name">Adını, simgesini, renklerini ve duvar kağıdını değiştirmek için çalışma alanının adına dokunun.</string>
+    <string name="dejavu_tip_new_tab">Gizli sekme veya kapsayıcıda bir sekme açmak için Yeni sekme\'ye basılı tutun.</string>
+    <string name="dejavu_tip_pin">Bir sekmeyi basılı tutun ve sabitlemek için çizginin üstüne, sabitlemeyi kaldırmak için çizginin altına sürükleyin.</string>
+    <string name="dejavu_tip_folder">Sabitlenmiş sekmeler için klasör oluşturmak üzere buraya dokunun. Sekmeleri bir klasöre koymak için klasörün üzerine bırakın.</string>
+    <string name="dejavu_tip_clear">Çizginin altındaki sekmeleri kapatmak için Temizle\'ye dokunun veya seçtiğiniz verileri silmek için basılı tutun.</string>
+    <string name="dejavu_tip_essential_add">Bir sekmeyi basılı tutun ve en üste sürükleyerek her çalışma alanında görünen temel sekmelere ekleyin.</string>
+    <string name="dejavu_tip_essential_hold">Bir temel sekmeyi başka bir yere taşımak veya temel sekmelerden kaldırmak için basılı tutun.</string>
+    <string name="dejavu_tip_workspaces">Çalışma alanları arasında geçiş yapmak için yana kaydırın. Sıralarını değiştirmek için buradan birini basılı tutup sürükleyin.</string>
+    <string name="dejavu_tip_split">Her iki sayfayı aynı anda görmek için bir sekmeyi basılı tutun ve başka bir sekmenin üzerine bırakın.</string>
+    <string name="dejavu_tip_menu_up">Menüyü açmak için bu çubuğu yukarı kaydırın.</string>
+    <string name="dejavu_tip_menu_down">Menüyü açmak için adres çubuğunu aşağı çekin.</string>
+    <string name="dejavu_tip_got_it">Anladım</string>
+    <string name="dejavu_tip_hide">İpuçlarını gizle</string>
+    <string name="dejavu_settings_tips">İpuçları</string>
+    <string name="dejavu_settings_tips_summary">Yeni sekme\'ye basılı tutmak gibi gizli parmak hareketleriyle ilgili ipuçlarını göster</string>
+    <string name="dejavu_new">Yeni</string>
 </resources>

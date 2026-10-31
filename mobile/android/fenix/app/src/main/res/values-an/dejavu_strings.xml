@@ -528,4 +528,20 @@
     <string name="dejavu_starter_folder">Ferramientas</string>
     <string name="dejavu_no_icon">Sin icono</string>
     <string name="dejavu_no_color">Sin color</string>
+    <string name="dejavu_tip_workspace_name">Toca o nombre de l\'espacio de treballo ta cambiar o suyo nombre, icono, colors y fondo de pantalla.</string>
+    <string name="dejavu_tip_new_tab">Mantiene pretau «Nueva pestanya» ta ubrir una pestanya privada u una pestanya en un contenedor.</string>
+    <string name="dejavu_tip_pin">Mantiene preta una pestanya y arrociega-la per dencima d\'a linia ta fixar-la, u per debaixo d\'a linia ta desfixar-la.</string>
+    <string name="dejavu_tip_folder">Toca aquí ta fer una carpeta de pestanyas fixadas. Suelta pestanyas sobre una carpeta ta meter-las adentro.</string>
+    <string name="dejavu_tip_clear">Toca «Limpiar» ta zarrar as pestanyas de debaixo d\'a linia, u mantiene-lo pretau ta borrar os datos que has triau.</string>
+    <string name="dejavu_tip_essential_add">Mantiene preta una pestanya y arrociega-la enta alto ta adibir-la a los esenciales, que s\'amuestran en totz os espacios de treballo.</string>
+    <string name="dejavu_tip_essential_hold">Mantiene pretau un esencial ta mover-lo a unatro puesto u ta quitar-lo d\'os esenciales.</string>
+    <string name="dejavu_tip_workspaces">Esliza enta os costaus ta cambiar d\'espacio de treballo. Mantiene pretau un aquí y arrociega-lo ta cambiar l\'orden.</string>
+    <string name="dejavu_tip_split">Mantiene preta una pestanya y suelta-la sobre unatra ta veyer as dos pachinas a l\'empar.</string>
+    <string name="dejavu_tip_menu_up">Esliza enta alto ista barra ta ubrir o menú.</string>
+    <string name="dejavu_tip_menu_down">Esliza enta baixo a barra d\'adrezas ta ubrir o menú.</string>
+    <string name="dejavu_tip_got_it">Entendiu</string>
+    <string name="dejavu_tip_hide">Amagar os consellos</string>
+    <string name="dejavu_settings_tips">Consellos</string>
+    <string name="dejavu_settings_tips_summary">Amostrar consellos sobre cenyos amagaus, como mantener pretau «Nueva pestanya»</string>
+    <string name="dejavu_new">Nuevo</string>
 </resources>

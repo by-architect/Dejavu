@@ -528,4 +528,20 @@
     <string name="dejavu_starter_folder">Ferramentas</string>
     <string name="dejavu_no_icon">Sen icona</string>
     <string name="dejavu_no_color">Sen cor</string>
+    <string name="dejavu_tip_workspace_name">Toca o nome do espazo de traballo para cambiar o seu nome, icona, cores e fondo de pantalla.</string>
+    <string name="dejavu_tip_new_tab">Mantén premido «Nova lapela» para abrir unha lapela privada ou unha lapela nun contedor.</string>
+    <string name="dejavu_tip_pin">Mantén premida unha lapela e arrástraa por riba da liña para fixala, ou por debaixo para desfixala.</string>
+    <string name="dejavu_tip_folder">Toca aquí para crear un cartafol para lapelas fixadas. Solta lapelas sobre un cartafol para metelas dentro.</string>
+    <string name="dejavu_tip_clear">Toca «Limpar» para pechar as lapelas que hai debaixo da liña, ou mantén premido o botón para eliminar os datos de navegación que escolliches.</string>
+    <string name="dejavu_tip_essential_add">Mantén premida unha lapela e arrástraa ata arriba para convertela nun esencial, visible en todos os espazos de traballo.</string>
+    <string name="dejavu_tip_essential_hold">Mantén premido un esencial para movelo a outro lugar ou para quitalo dos esenciais.</string>
+    <string name="dejavu_tip_workspaces">Despraza cara aos lados para cambiar de espazo de traballo. Mantén premido un aquí e arrástrao para cambiar a orde.</string>
+    <string name="dejavu_tip_split">Mantén premida unha lapela e sóltaa sobre outra para ver as dúas páxinas á vez.</string>
+    <string name="dejavu_tip_menu_up">Despraza esta barra cara arriba para abrir o menú.</string>
+    <string name="dejavu_tip_menu_down">Tira da barra de enderezos cara abaixo para abrir o menú.</string>
+    <string name="dejavu_tip_got_it">Entendido</string>
+    <string name="dejavu_tip_hide">Agochar os consellos</string>
+    <string name="dejavu_settings_tips">Consellos</string>
+    <string name="dejavu_settings_tips_summary">Amosar consellos sobre xestos agochados, como manter premido «Nova lapela»</string>
+    <string name="dejavu_new">Novo</string>
 </resources>

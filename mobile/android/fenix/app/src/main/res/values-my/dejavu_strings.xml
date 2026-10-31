@@ -520,4 +520,20 @@
     <string name="dejavu_starter_folder">ကိရိယာများ</string>
     <string name="dejavu_no_icon">အိုင်ကွန် မရှိ</string>
     <string name="dejavu_no_color">အရောင် မရှိ</string>
+    <string name="dejavu_tip_workspace_name">လုပ်ငန်းခွင်၏ အမည်၊ အိုင်ကွန်၊ အရောင်များနှင့် နောက်ခံပုံကို ပြောင်းရန် ၎င်း၏ အမည်ကို နှိပ်ပါ။</string>
+    <string name="dejavu_tip_new_tab">သီးသန့် တက်ဗ် သို့မဟုတ် ကွန်တိန်နာတွင် တက်ဗ်တစ်ခုအတွက် “တက်ဗ် အသစ်” ကို ဖိထားပါ။</string>
+    <string name="dejavu_tip_pin">တက်ဗ်တစ်ခုကို ဖိထားပြီး ပင်ထိုးရန် မျဉ်း၏ အပေါ်သို့၊ ပင်ထုတ်ရန် မျဉ်း၏ အောက်သို့ ဆွဲပါ။</string>
+    <string name="dejavu_tip_folder">ပင်ထိုးထားသော တက်ဗ်များအတွက် ဖိုင်တွဲတစ်ခု ပြုလုပ်ရန် ဤနေရာကို နှိပ်ပါ။ တက်ဗ်များကို ဖိုင်တွဲထဲ ထည့်ရန် ဖိုင်တွဲပေါ်သို့ ချထားပါ။</string>
+    <string name="dejavu_tip_clear">မျဉ်းအောက်ရှိ တက်ဗ်များကို ပိတ်ရန် “ရှင်းလင်းရန်” ကို နှိပ်ပါ၊ သို့မဟုတ် သင်ရွေးထားသော အချက်အလက်များကို ဖျက်ရန် ၎င်းကို ဖိထားပါ။</string>
+    <string name="dejavu_tip_essential_add">တက်ဗ်တစ်ခုကို ဖိထားပြီး အပေါ်ဆုံးသို့ ဆွဲပါ၊ ၎င်းသည် လုပ်ငန်းခွင်တိုင်းတွင် ပြသသော မရှိမဖြစ် ဖြစ်လာမည်။</string>
+    <string name="dejavu_tip_essential_hold">မရှိမဖြစ်တစ်ခုကို အခြားနေရာသို့ ရွှေ့ရန် သို့မဟုတ် မရှိမဖြစ်များမှ ဖယ်ရှားရန် ၎င်းကို ဖိထားပါ။</string>
+    <string name="dejavu_tip_workspaces">လုပ်ငန်းခွင်များ ပြောင်းရန် ဘေးတိုက် ပွတ်ဆွဲပါ။ အစီအစဉ်ပြောင်းရန် ဤနေရာရှိ လုပ်ငန်းခွင်တစ်ခုကို ဖိထားပြီး ဆွဲရွှေ့ပါ။</string>
+    <string name="dejavu_tip_split">စာမျက်နှာ နှစ်ခုလုံးကို တစ်ပြိုင်နက် ကြည့်ရန် တက်ဗ်တစ်ခုကို ဖိထားပြီး အခြားတက်ဗ်ပေါ်သို့ ချထားပါ။</string>
+    <string name="dejavu_tip_menu_up">မီနူးဖွင့်ရန် ဤဘားကို အပေါ်သို့ ပွတ်ဆွဲပါ။</string>
+    <string name="dejavu_tip_menu_down">မီနူးဖွင့်ရန် လိပ်စာဘားကို အောက်သို့ ဆွဲချပါ။</string>
+    <string name="dejavu_tip_got_it">ရပြီ</string>
+    <string name="dejavu_tip_hide">အကြံပြုချက်များကို ဖျောက်ရန်</string>
+    <string name="dejavu_settings_tips">အကြံပြုချက်များ</string>
+    <string name="dejavu_settings_tips_summary">“တက်ဗ် အသစ်” ကို ဖိထားခြင်းကဲ့သို့ ဝှက်ထားသော လက်ဟန်အမူအရာများအကြောင်း အကြံပြုချက်များ ပြသရန်</string>
+    <string name="dejavu_new">အသစ်</string>
 </resources>

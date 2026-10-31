@@ -528,4 +528,20 @@
     <string name="dejavu_starter_folder">Strumenti</string>
     <string name="dejavu_no_icon">Nudda icona</string>
     <string name="dejavu_no_color">Nuddu culuri</string>
+    <string name="dejavu_tip_workspace_name">Tocca u nomu dû spazziu di travagghiu pi canciari nomu, icona, culuri e funnu.</string>
+    <string name="dejavu_tip_new_tab">Teni prisatu Scheda nova pi na scheda privata, o na scheda nta un cuntinituri.</string>
+    <string name="dejavu_tip_pin">Teni prisata na scheda e strascinila supra a linia pi ficcàrila, o sutta a linia pi sficcàrila.</string>
+    <string name="dejavu_tip_folder">Tocca ccà pi fari na cartedda pî schedi ficcati. Lassa i schedi supra na cartedda pi mittìrili dintra.</string>
+    <string name="dejavu_tip_clear">Tocca Pulizza pi chiùdiri i schedi sutta a linia, o tenilu prisatu pi scancillari i dati ca scigghisti.</string>
+    <string name="dejavu_tip_essential_add">Teni prisata na scheda e strascinila ncapu pi juncìrila ê essenziali, ca si vìdinu nta ogni spazziu di travagghiu.</string>
+    <string name="dejavu_tip_essential_hold">Teni prisatu n\'essenziali pi muvìrilu nta n\'àutru postu, o pi livàrilu dî essenziali.</string>
+    <string name="dejavu_tip_workspaces">Tira di ciancu pi canciari spazziu di travagghiu. Teni prisatu unu ccà e strascinilu pi canciari l\'òrdini.</string>
+    <string name="dejavu_tip_split">Teni prisata na scheda e lassala supra n\'àutra pi vìdiri tutti dui i pàggini nzèmmula.</string>
+    <string name="dejavu_tip_menu_up">Tira ncapu sta barra pi grapiri u menù.</string>
+    <string name="dejavu_tip_menu_down">Tira jusu a barra di l\'indirizzu pi grapiri u menù.</string>
+    <string name="dejavu_tip_got_it">Bonu</string>
+    <string name="dejavu_tip_hide">Ammuccia i cunsigghi</string>
+    <string name="dejavu_settings_tips">Cunsigghi</string>
+    <string name="dejavu_settings_tips_summary">Ammustra cunsigghi supra i muvimenti ammucciati, comu tèniri prisatu Scheda nova</string>
+    <string name="dejavu_new">Novu</string>
 </resources>

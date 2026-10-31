@@ -528,4 +528,20 @@
     <string name="dejavu_starter_folder">Tööriistad</string>
     <string name="dejavu_no_icon">Ikoon puudub</string>
     <string name="dejavu_no_color">Värv puudub</string>
+    <string name="dejavu_tip_workspace_name">Puuduta tööruumi nime, et muuta selle nime, ikooni, värve ja taustapilti.</string>
+    <string name="dejavu_tip_new_tab">Hoia nuppu „Uus kaart“ all, et avada privaatne kaart või kaart konteineris.</string>
+    <string name="dejavu_tip_pin">Hoia kaarti all ja lohista see joone kohale, et see kinnitada, või joone alla, et kinnitus eemaldada.</string>
+    <string name="dejavu_tip_folder">Puuduta siin, et luua kaust kinnitatud kaartidele. Lohista kaardid kausta peale, et need sinna panna.</string>
+    <string name="dejavu_tip_clear">Puuduta nuppu „Tühjenda“, et sulgeda joone all olevad kaardid, või hoia seda all, et kustutada valitud lehitsemisandmed.</string>
+    <string name="dejavu_tip_essential_add">Hoia kaarti all ja lohista see üles, et lisada see olulistesse, mis on näha igas tööruumis.</string>
+    <string name="dejavu_tip_essential_hold">Hoia olulist all, et see teise kohta tõsta või olulistest eemaldada.</string>
+    <string name="dejavu_tip_workspaces">Libista külgsuunas, et tööruume vahetada. Hoia siin ühte all ja lohista seda, et nende järjekorda muuta.</string>
+    <string name="dejavu_tip_split">Hoia kaarti all ja lohista see teise kaardi peale, et näha mõlemat lehte korraga.</string>
+    <string name="dejavu_tip_menu_up">Libista seda riba üles, et menüü avada.</string>
+    <string name="dejavu_tip_menu_down">Tõmba aadressiriba alla, et menüü avada.</string>
+    <string name="dejavu_tip_got_it">Sain aru</string>
+    <string name="dejavu_tip_hide">Peida vihjed</string>
+    <string name="dejavu_settings_tips">Vihjed</string>
+    <string name="dejavu_settings_tips_summary">Näita vihjeid peidetud žestide kohta, nagu nupu „Uus kaart“ all hoidmine</string>
+    <string name="dejavu_new">Uus</string>
 </resources>

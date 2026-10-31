@@ -520,4 +520,20 @@
     <string name="dejavu_starter_folder">ເຄື່ອງມື</string>
     <string name="dejavu_no_icon">ບໍ່ມີໄອຄອນ</string>
     <string name="dejavu_no_color">ບໍ່ມີສີ</string>
+    <string name="dejavu_tip_workspace_name">ແຕະຊື່ພື້ນທີ່ເຮັດວຽກເພື່ອປ່ຽນຊື່, ໄອຄອນ, ສີ ແລະ ພາບພື້ນຫຼັງຂອງມັນ.</string>
+    <string name="dejavu_tip_new_tab">ກົດ “ແທັບໃຫມ່” ຄ້າງໄວ້ ເພື່ອເປີດແທັບສ່ວນຕົວ ຫຼື ແທັບໃນຄອນເທນເນີ.</string>
+    <string name="dejavu_tip_pin">ກົດແທັບຄ້າງໄວ້ ແລ້ວລາກຂຶ້ນເທິງເສັ້ນເພື່ອປັກ ຫຼື ລາກລົງລຸ່ມເສັ້ນເພື່ອເອົາປັກອອກ.</string>
+    <string name="dejavu_tip_folder">ແຕະບ່ອນນີ້ເພື່ອສ້າງໂຟນເດີສຳລັບແທັບທີ່ປັກໄວ້. ວາງແທັບໃສ່ໂຟນເດີເພື່ອເອົາພວກມັນເຂົ້າໄປໃນນັ້ນ.</string>
+    <string name="dejavu_tip_clear">ແຕະ “ລ້າງ” ເພື່ອປິດແທັບທີ່ຢູ່ລຸ່ມເສັ້ນ ຫຼື ກົດຄ້າງໄວ້ເພື່ອລຶບຂໍ້ມູນທີ່ທ່ານເລືອກໄວ້.</string>
+    <string name="dejavu_tip_essential_add">ກົດແທັບຄ້າງໄວ້ ແລ້ວລາກໄປທາງເທິງ ເພື່ອເຮັດໃຫ້ມັນເປັນສິ່ງສຳຄັນ ທີ່ສະແດງໃນທຸກພື້ນທີ່ເຮັດວຽກ.</string>
+    <string name="dejavu_tip_essential_hold">ກົດສິ່ງສຳຄັນຄ້າງໄວ້ ເພື່ອຍ້າຍມັນໄປບ່ອນອື່ນ ຫຼື ເອົາມັນອອກຈາກສິ່ງສຳຄັນ.</string>
+    <string name="dejavu_tip_workspaces">ປັດໄປທາງຂ້າງເພື່ອສະຫຼັບພື້ນທີ່ເຮັດວຽກ. ກົດພື້ນທີ່ເຮັດວຽກຢູ່ບ່ອນນີ້ຄ້າງໄວ້ ແລ້ວລາກເພື່ອປ່ຽນລຳດັບ.</string>
+    <string name="dejavu_tip_split">ກົດແທັບຄ້າງໄວ້ ແລ້ວວາງໃສ່ແທັບອື່ນ ເພື່ອເບິ່ງທັງສອງໜ້າພ້ອມກັນ.</string>
+    <string name="dejavu_tip_menu_up">ປັດແຖບນີ້ຂຶ້ນເພື່ອເປີດເມນູ.</string>
+    <string name="dejavu_tip_menu_down">ດຶງແຖບທີ່ຢູ່ລົງເພື່ອເປີດເມນູ.</string>
+    <string name="dejavu_tip_got_it">ເຂົ້າໃຈແລ້ວ</string>
+    <string name="dejavu_tip_hide">ເຊື່ອງຄຳແນະນຳ</string>
+    <string name="dejavu_settings_tips">ຄຳແນະນຳ</string>
+    <string name="dejavu_settings_tips_summary">ສະແດງຄຳແນະນຳກ່ຽວກັບທ່າທາງທີ່ເຊື່ອງໄວ້ ເຊັ່ນ: ການກົດ “ແທັບໃຫມ່” ຄ້າງໄວ້</string>
+    <string name="dejavu_new">ໃຫມ່</string>
 </resources>

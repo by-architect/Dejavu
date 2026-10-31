@@ -59,6 +59,9 @@ class DejavuSettings private constructor(context: Context) {
     private val _hiddenSelectionKeys = MutableStateFlow(
         prefs.getString(KEY_HIDDEN_SELECTION_ACTIONS, null)?.split(",")?.filter { it.isNotBlank() }?.toSet().orEmpty(),
     )
+    private val _tipsEnabled = MutableStateFlow(prefs.getBoolean(KEY_TIPS_ENABLED, true))
+    private val _seenTips = MutableStateFlow(readSet(KEY_SEEN_TIPS))
+    private val _seenNewThings = MutableStateFlow(readSet(KEY_SEEN_NEW_THINGS))
 
     /** Actions the user defined, in creation order. */
     val customActions: StateFlow<List<CustomAction>> = _customActions.asStateFlow()
@@ -139,6 +142,29 @@ class DejavuSettings private constructor(context: Context) {
         _welcomeSeen.value = seen
         prefs.edit { putBoolean(KEY_WELCOME_SEEN, seen) }
     }
+
+    /** Whether tips point out gestures nothing on the screen shows, see [org.mozilla.fenix.dejavu.discover.Tips]. */
+    val tipsEnabled: StateFlow<Boolean> = _tipsEnabled.asStateFlow()
+
+    /** Keys of the tips that were shown and closed, or whose gesture the user made. */
+    val seenTips: StateFlow<Set<String>> = _seenTips.asStateFlow()
+
+    /** Keys of the new things the user looked at, see [org.mozilla.fenix.dejavu.discover.NewThing]. */
+    val seenNewThings: StateFlow<Set<String>> = _seenNewThings.asStateFlow()
+
+    /** Turns the tips on or off; turned on, every tip shows again. */
+    fun setTipsEnabled(enabled: Boolean) {
+        _tipsEnabled.value = enabled
+        if (enabled) _seenTips.value = emptySet()
+        prefs.edit {
+            putBoolean(KEY_TIPS_ENABLED, enabled)
+            if (enabled) remove(KEY_SEEN_TIPS)
+        }
+    }
+
+    fun markTipSeen(key: String) = addKey(_seenTips, KEY_SEEN_TIPS, key)
+
+    fun markNewThingSeen(key: String) = addKey(_seenNewThings, KEY_SEEN_NEW_THINGS, key)
 
     /** The version of the feature tour the user has seen, 0 for none. */
     var featureTourSeen: Int
@@ -331,6 +357,15 @@ class DejavuSettings private constructor(context: Context) {
     private fun readKeys(key: String, default: List<TabAction>): List<String> =
         prefs.getString(key, null)?.split(",")?.filter { it.isNotBlank() } ?: default.map { it.key }
 
+    private fun readSet(key: String): Set<String> =
+        prefs.getString(key, null)?.split(",")?.filter { it.isNotBlank() }?.toSet().orEmpty()
+
+    private fun addKey(flow: MutableStateFlow<Set<String>>, prefKey: String, key: String) {
+        if (key in flow.value) return
+        flow.value += key
+        prefs.edit { putString(prefKey, flow.value.joinToString(",")) }
+    }
+
     private fun readAddressBarButtons(): AddressBarButtons? {
         if (!prefs.contains(KEY_ADDRESS_BAR_START) && !prefs.contains(KEY_ADDRESS_BAR_END)) return null
         return AddressBarButtons(
@@ -412,6 +447,9 @@ class DejavuSettings private constructor(context: Context) {
         private const val KEY_CLEARED_DATA_AT = "cleared_data_at"
         private const val KEY_FEATURE_TOUR_SEEN = "feature_tour_seen"
         private const val KEY_WHATS_NEW_SEEN = "whats_new_seen"
+        private const val KEY_TIPS_ENABLED = "tips_enabled"
+        private const val KEY_SEEN_TIPS = "seen_tips"
+        private const val KEY_SEEN_NEW_THINGS = "seen_new_things"
         private val DEFAULT_PINNED_ROW_ACTIONS = listOf(TabAction.CLOSE)
         private val DEFAULT_UNPINNED_ROW_ACTIONS = listOf(TabAction.PIN, TabAction.CLOSE)
         private val DEFAULT_FOLDER_ROW_ACTIONS = listOf(TabAction.SLEEP)

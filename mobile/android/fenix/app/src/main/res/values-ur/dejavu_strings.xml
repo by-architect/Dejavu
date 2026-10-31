@@ -528,4 +528,20 @@
     <string name="dejavu_starter_folder">اوزار</string>
     <string name="dejavu_no_icon">کوئی آئیکن نہیں</string>
     <string name="dejavu_no_color">کوئی رنگ نہیں</string>
+    <string name="dejavu_tip_workspace_name">ورک اسپیس کا نام، آئیکن، رنگ اور وال پیپر بدلنے کے لیے اس کے نام پر ٹیپ کریں۔</string>
+    <string name="dejavu_tip_new_tab">نجی ٹیب یا کنٹینر میں ٹیب کے لیے ”نیا ٹیب“ کو دبا کر رکھیں۔</string>
+    <string name="dejavu_tip_pin">کسی ٹیب کو دبا کر رکھیں اور پن کرنے کے لیے اسے لکیر کے اوپر، یا ان پن کرنے کے لیے لکیر کے نیچے گھسیٹیں۔</string>
+    <string name="dejavu_tip_folder">پن کردہ ٹیبز کے لیے فولڈر بنانے کے لیے یہاں ٹیپ کریں۔ ٹیبز کو فولڈر میں رکھنے کے لیے انہیں فولڈر پر ڈراپ کریں۔</string>
+    <string name="dejavu_tip_clear">لکیر کے نیچے والے ٹیبز بند کرنے کے لیے ”صاف کریں“ پر ٹیپ کریں، یا اپنا منتخب کردہ ڈیٹا مٹانے کے لیے اسے دبا کر رکھیں۔</string>
+    <string name="dejavu_tip_essential_add">کسی ٹیب کو دبا کر رکھیں اور اسے اہم میں شامل کرنے کے لیے بالکل اوپر گھسیٹیں، جو ہر ورک اسپیس میں دکھائی دیتے ہیں۔</string>
+    <string name="dejavu_tip_essential_hold">کسی اہم کو دوسری جگہ منتقل کرنے یا اہم سے ہٹانے کے لیے اسے دبا کر رکھیں۔</string>
+    <string name="dejavu_tip_workspaces">ورک اسپیسز بدلنے کے لیے دائیں بائیں سوائپ کریں۔ ان کی ترتیب بدلنے کے لیے یہاں کسی ایک کو دبا کر رکھیں اور گھسیٹیں۔</string>
+    <string name="dejavu_tip_split">کسی ٹیب کو دبا کر رکھیں اور دونوں صفحات ایک ساتھ دیکھنے کے لیے اسے کسی دوسرے ٹیب پر ڈراپ کریں۔</string>
+    <string name="dejavu_tip_menu_up">مینو کھولنے کے لیے اس بار کو اوپر سوائپ کریں۔</string>
+    <string name="dejavu_tip_menu_down">مینو کھولنے کے لیے پتہ بار کو نیچے کھینچیں۔</string>
+    <string name="dejavu_tip_got_it">ٹھیک ہے</string>
+    <string name="dejavu_tip_hide">تجاویز چھپائیں</string>
+    <string name="dejavu_settings_tips">تجاویز</string>
+    <string name="dejavu_settings_tips_summary">پوشیدہ اشاروں کے بارے میں تجاویز دکھائیں، جیسے ”نیا ٹیب“ کو دبا کر رکھنا</string>
+    <string name="dejavu_new">نیا</string>
 </resources>

@@ -520,4 +520,20 @@
     <string name="dejavu_starter_folder">Parabot</string>
     <string name="dejavu_no_icon">Teu aya ikon</string>
     <string name="dejavu_no_color">Teu aya warna</string>
+    <string name="dejavu_tip_workspace_name">Toél ngaran rohangan pikeun ngarobah ngaran, ikon, warna jeung latarna.</string>
+    <string name="dejavu_tip_new_tab">Tahan “Tab Anyar” pikeun tab nyamuni, atawa tab dina wadah.</string>
+    <string name="dejavu_tip_pin">Tahan tab terus sered ka luhureun garis pikeun nyematkeunana, atawa ka handapeun garis pikeun ngalésotkeunana.</string>
+    <string name="dejavu_tip_folder">Toél di dieu pikeun nyieun map pikeun tab nu disemat. Sérétkeun tab kana map pikeun nempatkeunana di jerona.</string>
+    <string name="dejavu_tip_clear">Toél “Beresihan” pikeun nutup tab di handapeun garis, atawa tahan pikeun mupus data nu geus dipilih.</string>
+    <string name="dejavu_tip_essential_add">Tahan tab terus sered ka pangluhurna pikeun nambahkeunana kana Penting, nu témbong dina unggal rohangan.</string>
+    <string name="dejavu_tip_essential_hold">Tahan tab Penting pikeun mindahkeunana ka tempat séjén, atawa pikeun miceunana tina Penting.</string>
+    <string name="dejavu_tip_workspaces">Usap ka sisi pikeun pindah rohangan. Tahan salah sahijina di dieu terus sered pikeun ngarobah urutanana.</string>
+    <string name="dejavu_tip_split">Tahan tab terus sérétkeun kana tab séjén pikeun ningali duanana kaca sakaligus.</string>
+    <string name="dejavu_tip_menu_up">Usapkeun bar ieu ka luhur pikeun muka menu.</string>
+    <string name="dejavu_tip_menu_down">Betot bar alamat ka handap pikeun muka menu.</string>
+    <string name="dejavu_tip_got_it">Ngarti</string>
+    <string name="dejavu_tip_hide">Sumputkeun tips</string>
+    <string name="dejavu_settings_tips">Tips</string>
+    <string name="dejavu_settings_tips_summary">Pintonkeun tips ngeunaan réngkak nu nyumput, saperti nahan “Tab Anyar”</string>
+    <string name="dejavu_new">Anyar</string>
 </resources>

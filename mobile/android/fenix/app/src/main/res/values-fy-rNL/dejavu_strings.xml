@@ -528,4 +528,20 @@
     <string name="dejavu_starter_folder">Ark</string>
     <string name="dejavu_no_icon">Gjin byldkaike</string>
     <string name="dejavu_no_color">Gjin kleur</string>
+    <string name="dejavu_tip_workspace_name">Tik op de namme fan de wurkromte om de namme, it byldkaike, de kleuren en de eftergrûn te wizigjen.</string>
+    <string name="dejavu_tip_new_tab">Hâld ‘Nij ljepblêd’ yndrukt foar in priveeljepblêd, of in ljepblêd yn in kontener.</string>
+    <string name="dejavu_tip_pin">Hâld in ljepblêd yndrukt en sleep it boppe de line om it fêst te setten, of ûnder de line om it los te meitsjen.</string>
+    <string name="dejavu_tip_folder">Tik hjir om in map foar fêstsette ljepblêden te meitsjen. Set ljepblêden del op in map om se deryn te pleatsen.</string>
+    <string name="dejavu_tip_clear">Tik op ‘Opromje’ om de ljepblêden ûnder de line te sluten, of hâld it yndrukt om de navigaasjegegevens dy\'t jo keazen hawwe fuort te smiten.</string>
+    <string name="dejavu_tip_essential_add">Hâld in ljepblêd yndrukt en sleep it nei boppe om der in essinsje fan te meitsjen, sichtber yn elke wurkromte.</string>
+    <string name="dejavu_tip_essential_hold">Hâld in essinsje yndrukt om it nei in oar plak te ferpleatsen, of om it út de essinsjes fuort te smiten.</string>
+    <string name="dejavu_tip_workspaces">Fei nei de side om fan wurkromte te wikseljen. Hâld der hjir ien yndrukt en sleep him om de folchoarder te wizigjen.</string>
+    <string name="dejavu_tip_split">Hâld in ljepblêd yndrukt en set it del op in oar om beide siden tagelyk te sjen.</string>
+    <string name="dejavu_tip_menu_up">Fei dizze balke omheech om it menu te iepenjen.</string>
+    <string name="dejavu_tip_menu_down">Lûk de adresbalke omleech om it menu te iepenjen.</string>
+    <string name="dejavu_tip_got_it">Begrepen</string>
+    <string name="dejavu_tip_hide">Tips ferstopje</string>
+    <string name="dejavu_settings_tips">Tips</string>
+    <string name="dejavu_settings_tips_summary">Tips oer ferstoppe bewegingen toane, lykas ‘Nij ljepblêd’ yndrukt hâlde</string>
+    <string name="dejavu_new">Nij</string>
 </resources>

@@ -528,4 +528,20 @@
     <string name="dejavu_starter_folder">Кораллар</string>
     <string name="dejavu_no_icon">Билгечек юк</string>
     <string name="dejavu_no_color">Төс юк</string>
+    <string name="dejavu_tip_workspace_name">Эш өлкәсенең исемен, билгечеген, төсләрен һәм фон рәсемен үзгәртү өчен аның исеменә басыгыз.</string>
+    <string name="dejavu_tip_new_tab">Хосусый таб яки контейнердә таб ачу өчен Яңа таб төймәсенә басып торыгыз.</string>
+    <string name="dejavu_tip_pin">Табка басып торыгыз да, беркетү өчен аны сызыктан өскә, беркетүдән чыгару өчен сызыктан аска сөйрәгез.</string>
+    <string name="dejavu_tip_folder">Беркетелгән таблар өчен папка ясарга монда басыгыз. Табларны папкага салу өчен аларны папка өстенә ташлагыз.</string>
+    <string name="dejavu_tip_clear">Сызык астындагы табларны ябу өчен Чистарту төймәсенә басыгыз, яисә сез сайлаган мәгълүматларны бетерү өчен аңа басып торыгыз.</string>
+    <string name="dejavu_tip_essential_add">Табка басып торыгыз да, аны һәр эш өлкәсендә күренә торган төп сайтларга өстәү өчен иң өскә сөйрәгез.</string>
+    <string name="dejavu_tip_essential_hold">Төп сайтны башка урынга күчерү яки төп сайтлардан чыгару өчен аңа басып торыгыз.</string>
+    <string name="dejavu_tip_workspaces">Эш өлкәләре арасында күчү өчен ян-якка шудырыгыз. Аларның тәртибен үзгәртү өчен монда берсенә басып торыгыз да сөйрәгез.</string>
+    <string name="dejavu_tip_split">Табка басып торыгыз да, ике битне дә бер үк вакытта күрү өчен аны башка табка ташлагыз.</string>
+    <string name="dejavu_tip_menu_up">Менюны ачу өчен бу панельне өскә шудырыгыз.</string>
+    <string name="dejavu_tip_menu_down">Менюны ачу өчен адрес юлын аска тартыгыз.</string>
+    <string name="dejavu_tip_got_it">Аңладым</string>
+    <string name="dejavu_tip_hide">Киңәшләрне яшерү</string>
+    <string name="dejavu_settings_tips">Киңәшләр</string>
+    <string name="dejavu_settings_tips_summary">Яшерен ишарәләр турында киңәшләр күрсәтү, мәсәлән, Яңа таб төймәсенә басып тору</string>
+    <string name="dejavu_new">Яңа</string>
 </resources>

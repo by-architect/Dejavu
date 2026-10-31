@@ -544,4 +544,20 @@
     <string name="dejavu_starter_folder">Orodja</string>
     <string name="dejavu_no_icon">Brez ikone</string>
     <string name="dejavu_no_color">Brez barve</string>
+    <string name="dejavu_tip_workspace_name">Dotaknite se imena delovnega prostora, da spremenite njegovo ime, ikono, barve in ozadje.</string>
+    <string name="dejavu_tip_new_tab">Pridržite „Nov zavihek“ za zasebni zavihek ali zavihek v vsebniku.</string>
+    <string name="dejavu_tip_pin">Pridržite zavihek in ga povlecite nad črto, da ga pripnete, ali pod črto, da ga odpnete.</string>
+    <string name="dejavu_tip_folder">Dotaknite se tukaj, da ustvarite mapo za pripete zavihke. Spustite zavihke na mapo, da jih premaknete vanjo.</string>
+    <string name="dejavu_tip_clear">Dotaknite se „Počisti“, da zaprete zavihke pod črto, ali ga pridržite, da izbrišete podatke, ki ste jih izbrali.</string>
+    <string name="dejavu_tip_essential_add">Pridržite zavihek in ga povlecite na vrh, da ga dodate v Izbrano, ki je prikazano v vsakem delovnem prostoru.</string>
+    <string name="dejavu_tip_essential_hold">Pridržite zavihek v Izbranem, da ga premaknete drugam ali odstranite iz Izbranega.</string>
+    <string name="dejavu_tip_workspaces">Povlecite vstran, da preklopite med delovnimi prostori. Tukaj pridržite enega in ga povlecite, da spremenite njihov vrstni red.</string>
+    <string name="dejavu_tip_split">Pridržite zavihek in ga spustite na drugega, da vidite obe strani hkrati.</string>
+    <string name="dejavu_tip_menu_up">Povlecite to vrstico navzgor, da odprete meni.</string>
+    <string name="dejavu_tip_menu_down">Povlecite naslovno vrstico navzdol, da odprete meni.</string>
+    <string name="dejavu_tip_got_it">Razumem</string>
+    <string name="dejavu_tip_hide">Skrij nasvete</string>
+    <string name="dejavu_settings_tips">Nasveti</string>
+    <string name="dejavu_settings_tips_summary">Prikaži nasvete o skritih potezah, kot je pridržanje gumba „Nov zavihek“</string>
+    <string name="dejavu_new">Novo</string>
 </resources>

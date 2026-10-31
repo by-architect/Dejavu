@@ -528,4 +528,20 @@
     <string name="dejavu_starter_folder">Attrezzi</string>
     <string name="dejavu_no_icon">Nisuna icona</string>
     <string name="dejavu_no_color">Nisunu culore</string>
+    <string name="dejavu_tip_workspace_name">Picchiate nant\'à u nome di u spaziu di travagliu per cambià u so nome, a so icona, i so culori è u so sfondulu di screnu.</string>
+    <string name="dejavu_tip_new_tab">Tenite appughjatu Nova unghjetta per apre un\'unghjetta privata o un\'unghjetta in un cuntenitore.</string>
+    <string name="dejavu_tip_pin">Tenite appughjata un\'unghjetta è trascinatela sopra à a linea per fissà la, o sottu à a linea per disfissà la.</string>
+    <string name="dejavu_tip_folder">Picchiate quì per creà un cartulare per l\'unghjette fissate. Lasciate l\'unghjette nant\'à un cartulare per mette le dentru.</string>
+    <string name="dejavu_tip_clear">Picchiate nant\'à Viotà per chjode l\'unghjette sottu à a linea, o tenitelu appughjatu per squassà i dati ch\'è vo avete sceltu.</string>
+    <string name="dejavu_tip_essential_add">Tenite appughjata un\'unghjetta è trascinatela in cima per aghjunghje la à l\'essenziali, affissati in ogni spaziu di travagliu.</string>
+    <string name="dejavu_tip_essential_hold">Tenite appughjatu un essenziale per dispiazzà lu altrò, o per caccià lu da l\'essenziali.</string>
+    <string name="dejavu_tip_workspaces">Fate sguillà di latu per cambià di spaziu di travagliu. Tenite appughjatu unu quì è trascinatelu per cambià l\'ordine.</string>
+    <string name="dejavu_tip_split">Tenite appughjata un\'unghjetta è lasciatela nant\'à un\'altra per vede e duie pagine inseme.</string>
+    <string name="dejavu_tip_menu_up">Fate sguillà in sù sta barra per apre u menu.</string>
+    <string name="dejavu_tip_menu_down">Fate sguillà in giò a barra d\'indirizzu per apre u menu.</string>
+    <string name="dejavu_tip_got_it">Aghju capitu</string>
+    <string name="dejavu_tip_hide">Piattà i cunsiglii</string>
+    <string name="dejavu_settings_tips">Cunsiglii</string>
+    <string name="dejavu_settings_tips_summary">Affissà cunsiglii nant\'à e mosse piatte, cum\'è tene appughjatu Nova unghjetta</string>
+    <string name="dejavu_new">Novu</string>
 </resources>

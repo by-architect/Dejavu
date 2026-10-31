@@ -20,6 +20,13 @@
             android:title="@string/dejavu_settings_whats_new"
             app:widgetLayout="@layout/dejavu_preference_badge" />
 
+        <androidx.preference.SwitchPreferenceCompat
+            android:icon="@drawable/mozac_ic_lightbulb_24"
+            android:key="@string/pref_key_dejavu_tips"
+            android:persistent="false"
+            android:summary="@string/dejavu_settings_tips_summary"
+            android:title="@string/dejavu_settings_tips" />
+
         <androidx.preference.Preference
             android:icon="@drawable/dejavu_author_avatar"
             android:key="@string/pref_key_dejavu_author"

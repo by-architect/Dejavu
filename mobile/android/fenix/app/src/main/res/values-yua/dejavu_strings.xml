@@ -528,4 +528,20 @@
     <string name="dejavu_starter_folder">Herramientas</string>
     <string name="dejavu_no_icon">Mina\'an ícono</string>
     <string name="dejavu_no_color">Mina\'an color</string>
+    <string name="dejavu_tip_workspace_name">Toca el nombre del espacio de trabajo para cambiar su nombre, ícono, colores yéetel fondo de pantalla.</string>
+    <string name="dejavu_tip_new_tab">Mantén presionado Pestaña túumben para una pestaña privada o una pestaña ich junp\'éel contenedor.</string>
+    <string name="dejavu_tip_pin">Mantén presionada una pestaña y arrástrala sobre la línea para fijarla, o debajo de la línea para quitar el fijado.</string>
+    <string name="dejavu_tip_folder">Toca aquí para crear una carpeta para pestañas fijadas. Suelta pestañas sobre una carpeta para ponerlas dentro.</string>
+    <string name="dejavu_tip_clear">Toca Limpiar para cerrar las pestañas debajo de la línea, o mantenlo presionado para eliminar los datos que elegiste.</string>
+    <string name="dejavu_tip_essential_add">Mantén presionada una pestaña y arrástrala hasta arriba para agregarla a esenciales, que se muestran en todos los espacios de trabajo.</string>
+    <string name="dejavu_tip_essential_hold">Mantén presionado un esencial para moverlo a otro lugar o para quitarlo de esenciales.</string>
+    <string name="dejavu_tip_workspaces">Desliza hacia los lados para cambiar de espacio de trabajo. Mantén presionado uno aquí y arrástralo para cambiar su orden.</string>
+    <string name="dejavu_tip_split">Mantén presionada una pestaña y suéltala sobre otra para ver ambas páginas a la vez.</string>
+    <string name="dejavu_tip_menu_up">Desliza esta barra hacia arriba para abrir el menú.</string>
+    <string name="dejavu_tip_menu_down">Desliza la barra de direcciones hacia abajo para abrir el menú.</string>
+    <string name="dejavu_tip_got_it">Entendido</string>
+    <string name="dejavu_tip_hide">Ocultar consejos</string>
+    <string name="dejavu_settings_tips">Consejos</string>
+    <string name="dejavu_settings_tips_summary">Mostrar consejos sobre gestos ocultos, como mantener presionado Pestaña túumben</string>
+    <string name="dejavu_new">Túumben</string>
 </resources>

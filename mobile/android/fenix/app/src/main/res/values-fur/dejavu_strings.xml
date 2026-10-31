@@ -528,4 +528,20 @@
     <string name="dejavu_starter_folder">Struments</string>
     <string name="dejavu_no_icon">Nissune icone</string>
     <string name="dejavu_no_color">Nissun colôr</string>
+    <string name="dejavu_tip_workspace_name">Tocje il non dal spazi di lavôr par cambiâ il so non, la icone, i colôrs e il fonts.</string>
+    <string name="dejavu_tip_new_tab">Ten fracât Gnove schede par vierzi une schede privade o une schede intun contenidôr.</string>
+    <string name="dejavu_tip_pin">Ten fracade une schede e strissinile parsore de linie par fissâle, o sot de linie par sfissâle.</string>
+    <string name="dejavu_tip_folder">Tocje achì par fâ une cartele pes schedis fissadis. Lasse lis schedis suntune cartele par metilis dentri.</string>
+    <string name="dejavu_tip_clear">Tocje Nete par sierâ lis schedis sot de linie, o tenlu fracât par eliminâ i dâts di navigazion che tu âs sielt.</string>
+    <string name="dejavu_tip_essential_add">Ten fracade une schede e strissinile in alt par fâle deventâ un essenziâl, mostrât in ducj i spazis di lavôr.</string>
+    <string name="dejavu_tip_essential_hold">Ten fracât un essenziâl par spostâlu intun altri puest, o par gjavâlu dai essenziâi.</string>
+    <string name="dejavu_tip_workspaces">Scor di bande par cambiâ spazi di lavôr. Ten fracât un achì e strissinilu par cambiâ il lôr ordin.</string>
+    <string name="dejavu_tip_split">Ten fracade une schede e lassile suntune altre par viodi dutis dôs lis pagjinis insieme.</string>
+    <string name="dejavu_tip_menu_up">Scor in sù cheste sbare par vierzi il menù.</string>
+    <string name="dejavu_tip_menu_down">Tire in jù la sbare de direzion par vierzi il menù.</string>
+    <string name="dejavu_tip_got_it">Capît</string>
+    <string name="dejavu_tip_hide">Plate i sugjeriments</string>
+    <string name="dejavu_settings_tips">Sugjeriments</string>
+    <string name="dejavu_settings_tips_summary">Mostre sugjeriments sui mots platâts, come tignî fracât Gnove schede</string>
+    <string name="dejavu_new">Gnûf</string>
 </resources>

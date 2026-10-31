@@ -536,4 +536,20 @@
     <string name="dejavu_starter_folder">ᱦᱟᱹᱛᱤᱭᱟᱹᱨ ᱠᱚ</string>
     <string name="dejavu_no_icon">ᱟᱭᱠᱚᱱ ᱵᱟᱹᱱᱩᱜ</string>
     <string name="dejavu_no_color">ᱨᱚᱝ ᱵᱟᱹᱱᱩᱜ</string>
+    <string name="dejavu_tip_workspace_name">ᱣᱟᱨᱠᱥᱯᱮᱥ ᱨᱮᱭᱟᱜ ᱧᱩᱛᱩᱢ, ᱟᱭᱠᱚᱱ, ᱨᱚᱝ ᱠᱚ ᱟᱨ ᱠᱟᱸᱛᱷᱪᱤᱛᱟᱹᱨ ᱵᱚᱫᱚᱞ ᱞᱟᱹᱜᱤᱫ ᱚᱱᱟ ᱨᱮᱭᱟᱜ ᱧᱩᱛᱩᱢ ᱚᱛᱟᱭ ᱢᱮ ᱾</string>
+    <string name="dejavu_tip_new_tab">ᱱᱤᱡᱮᱨᱟᱠ ᱴᱮᱵᱽ ᱥᱮ ᱠᱚᱱᱴᱮᱱᱟᱨ ᱨᱮ ᱴᱮᱵᱽ ᱞᱟᱹᱜᱤᱫ “ᱱᱟᱶᱟ ᱴᱮᱵᱽ” ᱚᱛᱟ ᱫᱚᱦᱚᱭ ᱢᱮ ᱾</string>
+    <string name="dejavu_tip_pin">ᱢᱤᱫ ᱴᱮᱵᱽ ᱚᱛᱟ ᱫᱚᱦᱚᱭ ᱢᱮ ᱟᱨ ᱯᱤᱱ ᱞᱟᱹᱜᱤᱫ ᱚᱱᱟ ᱞᱟᱭᱤᱱ ᱪᱮᱛᱟᱱ ᱛᱮ, ᱥᱮ ᱯᱤᱱ ᱚᱰᱚᱠ ᱞᱟᱹᱜᱤᱫ ᱞᱟᱭᱤᱱ ᱞᱟᱛᱟᱨ ᱛᱮ ᱚᱨ ᱢᱮ ᱾</string>
+    <string name="dejavu_tip_folder">ᱯᱤᱱ ᱴᱮᱵᱽ ᱠᱚ ᱞᱟᱹᱜᱤᱫ ᱯᱷᱚᱞᱰᱚᱨ ᱵᱮᱱᱟᱣ ᱞᱟᱹᱜᱤᱫ ᱱᱚᱰᱮ ᱚᱛᱟᱭ ᱢᱮ ᱾ ᱴᱮᱵᱽ ᱠᱚ ᱵᱷᱤᱛᱨᱤ ᱫᱚᱦᱚ ᱞᱟᱹᱜᱤᱫ ᱚᱱᱟ ᱠᱚ ᱯᱷᱚᱞᱰᱚᱨ ᱪᱮᱛᱟᱱ ᱨᱮ ᱥᱮᱞᱮᱫᱽ ᱢᱮ ᱾</string>
+    <string name="dejavu_tip_clear">ᱞᱟᱭᱤᱱ ᱞᱟᱛᱟᱨ ᱨᱮᱭᱟᱜ ᱴᱮᱵᱽ ᱠᱚ ᱵᱚᱸᱫᱚᱭ ᱞᱟᱹᱜᱤᱫ “ᱠᱞᱤᱭᱟᱨ ᱢᱮ” ᱚᱛᱟᱭ ᱢᱮ, ᱥᱮ ᱟᱢ ᱵᱟᱪᱷᱟᱣ ᱟᱠᱟᱫ ᱰᱟᱴᱟ ᱢᱮᱴᱟᱣ ᱞᱟᱹᱜᱤᱫ ᱚᱱᱟ ᱚᱛᱟ ᱫᱚᱦᱚᱭ ᱢᱮ ᱾</string>
+    <string name="dejavu_tip_essential_add">ᱢᱤᱫ ᱴᱮᱵᱽ ᱡᱚᱛᱚ ᱣᱟᱨᱠᱥᱯᱮᱥ ᱨᱮ ᱩᱫᱩᱜ ᱟᱠᱟᱱ ᱮᱥᱮᱱᱥᱤᱭᱟᱞ ᱵᱮᱱᱟᱣ ᱞᱟᱹᱜᱤᱫ ᱚᱱᱟ ᱚᱛᱟ ᱫᱚᱦᱚᱭ ᱢᱮ ᱟᱨ ᱪᱮᱛᱟᱱ ᱛᱮ ᱚᱨ ᱢᱮ ᱾</string>
+    <string name="dejavu_tip_essential_hold">ᱮᱴᱟᱜ ᱡᱟᱭᱜᱟ ᱛᱮ ᱩᱪᱟᱹᱲ ᱞᱟᱹᱜᱤᱫ ᱥᱮ ᱮᱥᱮᱱᱥᱤᱭᱟᱞ ᱠᱚ ᱠᱷᱚᱱ ᱚᱰᱚᱠ ᱞᱟᱹᱜᱤᱫ ᱢᱤᱫ ᱮᱥᱮᱱᱥᱤᱭᱟᱞ ᱚᱛᱟ ᱫᱚᱦᱚᱭ ᱢᱮ ᱾</string>
+    <string name="dejavu_tip_workspaces">ᱣᱟᱨᱠᱥᱯᱮᱥ ᱵᱚᱫᱚᱞ ᱞᱟᱹᱜᱤᱫ ᱞᱮᱯᱷᱴ ᱥᱮ ᱨᱟᱭᱤᱴ ᱛᱮ ᱥᱣᱟᱭᱤᱯ ᱢᱮ ᱾ ᱛᱷᱟᱨ ᱵᱚᱫᱚᱞ ᱞᱟᱹᱜᱤᱫ ᱱᱚᱰᱮ ᱢᱤᱫ ᱣᱟᱨᱠᱥᱯᱮᱥ ᱚᱛᱟ ᱫᱚᱦᱚᱭ ᱢᱮ ᱟᱨ ᱚᱨ ᱢᱮ ᱾</string>
+    <string name="dejavu_tip_split">ᱵᱟᱨᱭᱟ ᱜᱮ ᱥᱟᱦᱴᱟ ᱢᱤᱫ ᱥᱟᱶᱛᱮ ᱧᱮᱞ ᱞᱟᱹᱜᱤᱫ ᱢᱤᱫ ᱴᱮᱵᱽ ᱚᱛᱟ ᱫᱚᱦᱚᱭ ᱢᱮ ᱟᱨ ᱚᱱᱟ ᱮᱴᱟᱜ ᱴᱮᱵᱽ ᱪᱮᱛᱟᱱ ᱨᱮ ᱥᱮᱞᱮᱫᱽ ᱢᱮ ᱾</string>
+    <string name="dejavu_tip_menu_up">ᱢᱮᱱᱩ ᱡᱷᱤᱡᱽ ᱞᱟᱹᱜᱤᱫ ᱱᱚᱶᱟ ᱵᱟᱨ ᱪᱮᱛᱟᱱ ᱛᱮ ᱥᱣᱟᱭᱤᱯ ᱢᱮ ᱾</string>
+    <string name="dejavu_tip_menu_down">ᱢᱮᱱᱩ ᱡᱷᱤᱡᱽ ᱞᱟᱹᱜᱤᱫ ᱴᱷᱤᱠᱟᱱᱟ ᱵᱟᱨ ᱞᱟᱛᱟᱨ ᱛᱮ ᱚᱨ ᱢᱮ ᱾</string>
+    <string name="dejavu_tip_got_it">ᱵᱩᱡᱷᱟᱹᱣ ᱠᱮᱫᱟ</string>
+    <string name="dejavu_tip_hide">ᱥᱩᱡᱷᱟᱹᱣ ᱠᱚ ᱩᱠᱩ ᱢᱮ</string>
+    <string name="dejavu_settings_tips">ᱥᱩᱡᱷᱟᱹᱣ ᱠᱚ</string>
+    <string name="dejavu_settings_tips_summary">“ᱱᱟᱶᱟ ᱴᱮᱵᱽ” ᱚᱛᱟ ᱫᱚᱦᱚ ᱞᱮᱠᱟᱱ ᱩᱠᱩ ᱪᱤᱱᱦᱟᱹ ᱠᱚ ᱵᱟᱵᱚᱛ ᱥᱩᱡᱷᱟᱹᱣ ᱠᱚ ᱩᱫᱩᱜ ᱢᱮ</string>
+    <string name="dejavu_new">ᱱᱟᱶᱟ</string>
 </resources>

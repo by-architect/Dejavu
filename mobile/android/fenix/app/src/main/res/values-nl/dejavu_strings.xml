@@ -528,4 +528,20 @@
     <string name="dejavu_starter_folder">Hulpmiddelen</string>
     <string name="dejavu_no_icon">Geen pictogram</string>
     <string name="dejavu_no_color">Geen kleur</string>
+    <string name="dejavu_tip_workspace_name">Tik op de naam van de werkruimte om de naam, het pictogram, de kleuren en de achtergrond te wijzigen.</string>
+    <string name="dejavu_tip_new_tab">Houd “Nieuw tabblad” ingedrukt voor een privétabblad of een tabblad in een container.</string>
+    <string name="dejavu_tip_pin">Houd een tabblad ingedrukt en sleep het boven de lijn om het vast te maken, of onder de lijn om het los te maken.</string>
+    <string name="dejavu_tip_folder">Tik hier om een map voor vastgemaakte tabbladen te maken. Zet tabbladen neer op een map om ze erin te plaatsen.</string>
+    <string name="dejavu_tip_clear">Tik op “Wissen” om de tabbladen onder de lijn te sluiten, of houd het ingedrukt om de gegevens die je hebt gekozen te verwijderen.</string>
+    <string name="dejavu_tip_essential_add">Houd een tabblad ingedrukt en sleep het naar boven om er een favoriet van te maken, zichtbaar in elke werkruimte.</string>
+    <string name="dejavu_tip_essential_hold">Houd een favoriet ingedrukt om deze naar een andere plek te verplaatsen of uit de favorieten te verwijderen.</string>
+    <string name="dejavu_tip_workspaces">Veeg opzij om van werkruimte te wisselen. Houd hier een werkruimte ingedrukt en sleep deze om de volgorde te wijzigen.</string>
+    <string name="dejavu_tip_split">Houd een tabblad ingedrukt en zet het neer op een ander tabblad om beide pagina’s tegelijk te zien.</string>
+    <string name="dejavu_tip_menu_up">Veeg deze balk omhoog om het menu te openen.</string>
+    <string name="dejavu_tip_menu_down">Trek de adresbalk omlaag om het menu te openen.</string>
+    <string name="dejavu_tip_got_it">Begrepen</string>
+    <string name="dejavu_tip_hide">Tips verbergen</string>
+    <string name="dejavu_settings_tips">Tips</string>
+    <string name="dejavu_settings_tips_summary">Tips tonen over verborgen bewegingen, zoals “Nieuw tabblad” ingedrukt houden</string>
+    <string name="dejavu_new">Nieuw</string>
 </resources>

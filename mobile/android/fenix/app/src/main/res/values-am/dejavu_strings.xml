@@ -528,4 +528,20 @@
     <string name="dejavu_starter_folder">መሳሪያዎች</string>
     <string name="dejavu_no_icon">አዶ የለም</string>
     <string name="dejavu_no_color">ቀለም የለም</string>
+    <string name="dejavu_tip_workspace_name">ስሙን፣ አዶውን፣ ቀለሞቹን እና ልጣፉን ለመቀየር የስራ ቦታውን ስም ይንኩ።</string>
+    <string name="dejavu_tip_new_tab">የግል ትር ወይም በመያዣ ውስጥ ያለ ትር ለመክፈት «አዲስ ትር»ን ተጭነው ይያዙ።</string>
+    <string name="dejavu_tip_pin">ትርን ለመሰካት ተጭነው ይያዙና ከመስመሩ በላይ ይጎትቱት፣ ለመንቀል ደግሞ ከመስመሩ በታች ይጎትቱት።</string>
+    <string name="dejavu_tip_folder">ለተሰኩ ትሮች አቃፊ ለመፍጠር እዚህ ይንኩ። ትሮችን ወደ አቃፊ ለማስገባት በአቃፊው ላይ ይጣሏቸው።</string>
+    <string name="dejavu_tip_clear">ከመስመሩ በታች ያሉትን ትሮች ለመዝጋት «አጽዳ»ን ይንኩ፣ ወይም የመረጡትን ውሂብ ለመሰረዝ ተጭነው ይያዙት።</string>
+    <string name="dejavu_tip_essential_add">ትርን በእያንዳንዱ የስራ ቦታ ወደሚታዩት አስፈላጊዎች ለማከል ተጭነው ይያዙና ወደ ላይ ይጎትቱት።</string>
+    <string name="dejavu_tip_essential_hold">አስፈላጊን ወደ ሌላ ቦታ ለማንቀሳቀስ ወይም ከአስፈላጊዎች ለማስወገድ ተጭነው ይያዙት።</string>
+    <string name="dejavu_tip_workspaces">የስራ ቦታዎችን ለመቀየር ወደ ጎን ያንሸራትቱ። ቅደም ተከተላቸውን ለመቀየር አንዱን እዚህ ተጭነው ይያዙና ይጎትቱት።</string>
+    <string name="dejavu_tip_split">ሁለቱንም ገጾች በአንድ ጊዜ ለማየት ትርን ተጭነው ይያዙና በሌላ ትር ላይ ይጣሉት።</string>
+    <string name="dejavu_tip_menu_up">ምናሌውን ለመክፈት ይህን አሞሌ ወደ ላይ ያንሸራትቱ።</string>
+    <string name="dejavu_tip_menu_down">ምናሌውን ለመክፈት የአድራሻ አሞሌን ወደ ታች ያንሸራትቱ።</string>
+    <string name="dejavu_tip_got_it">ገባኝ</string>
+    <string name="dejavu_tip_hide">ጠቃሚ ምክሮችን ደብቅ</string>
+    <string name="dejavu_settings_tips">ጠቃሚ ምክሮች</string>
+    <string name="dejavu_settings_tips_summary">ስለተደበቁ የእጅ ምልክቶች ጠቃሚ ምክሮችን አሳይ፣ ለምሳሌ «አዲስ ትር»ን ተጭኖ መያዝ</string>
+    <string name="dejavu_new">አዲስ</string>
 </resources>

@@ -520,4 +520,20 @@
     <string name="dejavu_starter_folder">Piranti</string>
     <string name="dejavu_no_icon">Tusing ada ikon</string>
     <string name="dejavu_no_color">Tusing ada warna</string>
+    <string name="dejavu_tip_workspace_name">Tap adan genahe anggon nguah adan, ikon, warna, lan gambar latarne.</string>
+    <string name="dejavu_tip_new_tab">Tekek “Tab Anyar” anggon mukak tab pribadi, utawi tab di wadah.</string>
+    <string name="dejavu_tip_pin">Tekek tab tur tarik ka duur garise anggon nyematang, utawi ka beten garise anggon ngelepasang.</string>
+    <string name="dejavu_tip_folder">Tap dini anggon ngae map tab kasemat. Ejang tab di map anggon ngranjingang ka tengahne.</string>
+    <string name="dejavu_tip_clear">Tap “Bersihang” anggon nutup tab ane di beten garise, utawi tekek anggon ngapus data ane kapilih ragane.</string>
+    <string name="dejavu_tip_essential_add">Tekek tab tur tarik ka duur pisan anggon nambahang ka Penting, ane kaedengang di sabilang genah.</string>
+    <string name="dejavu_tip_essential_hold">Tekek Penting anggon mindahang ka tongos lianan, utawi anggon mesuang uli Penting.</string>
+    <string name="dejavu_tip_workspaces">Usap ka samping anggon ngentosin genah. Tekek asiki dini tur tarik anggon ngewah urutane.</string>
+    <string name="dejavu_tip_split">Tekek tab tur ejang di tab lianan anggon nepukin kaca makakalih bareng.</string>
+    <string name="dejavu_tip_menu_up">Usap bar puniki ka duur anggen ngungkab menu.</string>
+    <string name="dejavu_tip_menu_down">Usap bar alamat ka beten anggen ngungkab menu.</string>
+    <string name="dejavu_tip_got_it">Sampun ngerti</string>
+    <string name="dejavu_tip_hide">Engkebang tips</string>
+    <string name="dejavu_settings_tips">Tips</string>
+    <string name="dejavu_settings_tips_summary">Edengang tips indik gestur ane kaengkebang, minakadi nekek “Tab Anyar”</string>
+    <string name="dejavu_new">Anyar</string>
 </resources>

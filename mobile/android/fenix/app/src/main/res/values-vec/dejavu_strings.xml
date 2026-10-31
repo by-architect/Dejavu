@@ -536,4 +536,20 @@
     <string name="dejavu_starter_folder">Strumenti</string>
     <string name="dejavu_no_icon">Nisuna icona</string>
     <string name="dejavu_no_color">Nisun cołor</string>
+    <string name="dejavu_tip_workspace_name">Toca el nome del spasio de laoro par canbiarghe el nome, l’icona, i coƚori e el sfondo.</string>
+    <string name="dejavu_tip_new_tab">Tien strucà Nova scheda par na scheda anonima, o na scheda en un contenidor.</string>
+    <string name="dejavu_tip_pin">Tien strucà na scheda e strascinała sora ła łinea par fisarla, o soto ła łinea par defisarla.</string>
+    <string name="dejavu_tip_folder">Toca qua par crear na cartela par łe schede fisà. Łasa łe schede so na cartela par meterle drento.</string>
+    <string name="dejavu_tip_clear">Toca Neta par sarar łe schede soto ła łinea, o tienlo strucà par scanseƚar i dati che te ghè sielto.</string>
+    <string name="dejavu_tip_essential_add">Tien strucà na scheda e strascinała fin in sima par giontarla ai essensiałi, che i se vede in onji spasio de laoro.</string>
+    <string name="dejavu_tip_essential_hold">Tien strucà un essensiałe par spostarlo in n’altro posto, o par cavarlo via dai essensiałi.</string>
+    <string name="dejavu_tip_workspaces">Scori de łado par canbiar spasio de laoro. Tien strucà uno qua e strascinało par canbiarghe l’orden.</string>
+    <string name="dejavu_tip_split">Tien strucà na scheda e łasała so n’altra par vedar tute do łe pagine insieme.</string>
+    <string name="dejavu_tip_menu_up">Scori in su sta bara par vèrxer el menù.</string>
+    <string name="dejavu_tip_menu_down">Tira in zo ła bara dei indirisi par vèrxer el menù.</string>
+    <string name="dejavu_tip_got_it">Tuto ciaro</string>
+    <string name="dejavu_tip_hide">Sconde i consegi</string>
+    <string name="dejavu_settings_tips">Consegi</string>
+    <string name="dejavu_settings_tips_summary">Mostra consegi so i gesti sconti, come tegner strucà Nova scheda</string>
+    <string name="dejavu_new">Novo</string>
 </resources>

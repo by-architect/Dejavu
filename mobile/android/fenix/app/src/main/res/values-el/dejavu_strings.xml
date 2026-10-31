@@ -528,4 +528,20 @@
     <string name="dejavu_starter_folder">Εργαλεία</string>
     <string name="dejavu_no_icon">Χωρίς εικονίδιο</string>
     <string name="dejavu_no_color">Χωρίς χρώμα</string>
+    <string name="dejavu_tip_workspace_name">Πατήστε το όνομα του χώρου εργασίας για να αλλάξετε το όνομα, το εικονίδιο, τα χρώματα και την ταπετσαρία του.</string>
+    <string name="dejavu_tip_new_tab">Πατήστε παρατεταμένα το «Νέα καρτέλα» για να ανοίξετε μια ιδιωτική καρτέλα ή μια καρτέλα σε περιέκτη.</string>
+    <string name="dejavu_tip_pin">Πατήστε παρατεταμένα μια καρτέλα και σύρετέ τη πάνω από τη διαχωριστική γραμμή για να την καρφιτσώσετε ή κάτω από αυτήν για να την ξεκαρφιτσώσετε.</string>
+    <string name="dejavu_tip_folder">Πατήστε εδώ για να δημιουργήσετε έναν φάκελο για καρφιτσωμένες καρτέλες. Αφήστε καρτέλες σε έναν φάκελο για να μπουν μέσα.</string>
+    <string name="dejavu_tip_clear">Πατήστε «Εκκαθάριση» για να κλείσετε τις καρτέλες κάτω από τη διαχωριστική γραμμή ή πατήστε το παρατεταμένα για να διαγράψετε τα δεδομένα που επιλέξατε.</string>
+    <string name="dejavu_tip_essential_add">Πατήστε παρατεταμένα μια καρτέλα και σύρετέ τη στην κορυφή για να την προσθέσετε στα αγαπημένα, που εμφανίζονται σε κάθε χώρο εργασίας.</string>
+    <string name="dejavu_tip_essential_hold">Πατήστε παρατεταμένα ένα αγαπημένο για να το μετακινήσετε σε άλλη θέση ή για να το αφαιρέσετε από τα αγαπημένα.</string>
+    <string name="dejavu_tip_workspaces">Σύρετε πλάγια για εναλλαγή χώρου εργασίας. Πατήστε παρατεταμένα έναν εδώ και σύρετέ τον για να αλλάξετε τη σειρά τους.</string>
+    <string name="dejavu_tip_split">Πατήστε παρατεταμένα μια καρτέλα και αφήστε τη σε μια άλλη για να δείτε και τις δύο σελίδες ταυτόχρονα.</string>
+    <string name="dejavu_tip_menu_up">Σύρετε αυτήν τη γραμμή προς τα πάνω για να ανοίξει το μενού.</string>
+    <string name="dejavu_tip_menu_down">Σύρετε τη γραμμή διευθύνσεων προς τα κάτω για να ανοίξει το μενού.</string>
+    <string name="dejavu_tip_got_it">Το κατάλαβα</string>
+    <string name="dejavu_tip_hide">Απόκρυψη συμβουλών</string>
+    <string name="dejavu_settings_tips">Συμβουλές</string>
+    <string name="dejavu_settings_tips_summary">Εμφάνιση συμβουλών για κρυφές χειρονομίες, όπως το παρατεταμένο πάτημα του «Νέα καρτέλα»</string>
+    <string name="dejavu_new">Νέο</string>
 </resources>

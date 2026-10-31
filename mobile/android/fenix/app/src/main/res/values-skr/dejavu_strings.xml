@@ -528,4 +528,20 @@
     <string name="dejavu_starter_folder">اوزار</string>
     <string name="dejavu_no_icon">بغیر آئیکان</string>
     <string name="dejavu_no_color">بغیر رنگ</string>
+    <string name="dejavu_tip_workspace_name">ورک سپیس دا ناں، آئیکان، رنگ تے وال پیپر بدلݨ کیتے اوندے ناں تے دباؤ۔</string>
+    <string name="dejavu_tip_new_tab">نجی ٹیب یا کنٹینر وچ ٹیب کیتے نویں ٹیب بٹݨ کوں دبا تے رکھو۔</string>
+    <string name="dejavu_tip_pin">ٹیب کوں دبا تے رکھو تے پن کرݨ کیتے اونکوں لکیر دے اُتے، یا اݨ پن کرݨ کیتے لکیر دے تلے چھکو۔</string>
+    <string name="dejavu_tip_folder">پن تھیاں ٹیباں کیتے فولڈر بݨاوݨ واسطے اِتھاں دباؤ۔ ٹیباں کوں فولڈر وچ پاوݨ کیتے اونہاں کوں فولڈر تے چھوڑو۔</string>
+    <string name="dejavu_tip_clear">لکیر دے تلے آلیاں ٹیباں بند کرݨ کیتے صاف کرو بٹݨ تے دباؤ، یا تہاݙے چݨے ہوئے ڈیٹا کوں مٹاوݨ کیتے اونکوں دبا تے رکھو۔</string>
+    <string name="dejavu_tip_essential_add">ٹیب کوں دبا تے رکھو تے ضروری ٹیباں وچ شامل کرݨ کیتے اونکوں بالکل اُتے چھکو۔ ضروری ٹیباں ہر ورک سپیس وچ ݙسدیاں ہن۔</string>
+    <string name="dejavu_tip_essential_hold">ضروری ٹیب کوں ٻئی جاہ تے کھسکاوݨ یا ضروری ٹیباں کنوں ہٹاوݨ کیتے اونکوں دبا تے رکھو۔</string>
+    <string name="dejavu_tip_workspaces">ورک سپیساں بدلݨ کیتے پاسے ول سوائپ کرو۔ انہاں دی ترتیب بدلݨ کیتے اِتھاں ہک کوں دبا تے رکھو تے چھکو۔</string>
+    <string name="dejavu_tip_split">ہک ٹیب کوں دبا تے رکھو تے ݙوہائیں ورقے ہکے ویلے ݙیکھݨ کیتے اونکوں ٻئی ٹیب تے چھوڑو۔</string>
+    <string name="dejavu_tip_menu_up">مینیو کھولݨ کیتے ایں پٹی کوں اُتے سوائپ کرو۔</string>
+    <string name="dejavu_tip_menu_down">مینیو کھولݨ کیتے پتہ پٹی کوں تلے چھکو۔</string>
+    <string name="dejavu_tip_got_it">سمنجھ گھدے</string>
+    <string name="dejavu_tip_hide">مشورے لُکاؤ</string>
+    <string name="dejavu_settings_tips">مشورے</string>
+    <string name="dejavu_settings_tips_summary">لُکے ہوئے اشاریاں بارے مشورے ݙکھاؤ، جیویں نویں ٹیب بٹݨ کوں دبا تے رکھݨ</string>
+    <string name="dejavu_new">نواں</string>
 </resources>

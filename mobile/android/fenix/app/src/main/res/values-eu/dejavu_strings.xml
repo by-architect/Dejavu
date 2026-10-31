@@ -528,4 +528,20 @@
     <string name="dejavu_starter_folder">Tresnak</string>
     <string name="dejavu_no_icon">Ikonorik ez</string>
     <string name="dejavu_no_color">Kolorerik ez</string>
+    <string name="dejavu_tip_workspace_name">Sakatu laneremuaren izena haren izena, ikonoa, koloreak eta horma-papera aldatzeko.</string>
+    <string name="dejavu_tip_new_tab">Eutsi sakatuta «Fitxa berria» fitxa pribatu bat edo edukiontzi bateko fitxa bat irekitzeko.</string>
+    <string name="dejavu_tip_pin">Eutsi sakatuta fitxa bat eta arrastatu lerroaren gainera finkatzeko, edo lerroaren azpira desfinkatzeko.</string>
+    <string name="dejavu_tip_folder">Sakatu hemen finkatutako fitxentzako karpeta bat sortzeko. Askatu fitxak karpeta baten gainean barruan sartzeko.</string>
+    <string name="dejavu_tip_clear">Sakatu «Garbitu» lerroaren azpiko fitxak ixteko, edo eutsi sakatuta aukeratu dituzun nabigatze-datuak ezabatzeko.</string>
+    <string name="dejavu_tip_essential_add">Eutsi sakatuta fitxa bat eta arrastatu goialdera funtsezko bihurtzeko. Laneremu guztietan agertuko da.</string>
+    <string name="dejavu_tip_essential_hold">Eutsi sakatuta funtsezko bat beste leku batera eramateko, edo funtsezkoetatik kentzeko.</string>
+    <string name="dejavu_tip_workspaces">Pasatu alboetara laneremuz aldatzeko. Eutsi sakatuta bat hemen eta arrastatu haien ordena aldatzeko.</string>
+    <string name="dejavu_tip_split">Eutsi sakatuta fitxa bat eta askatu beste baten gainean bi orriak aldi berean ikusteko.</string>
+    <string name="dejavu_tip_menu_up">Pasatu barra hau gora menua irekitzeko.</string>
+    <string name="dejavu_tip_menu_down">Tiratu helbide-barra behera menua irekitzeko.</string>
+    <string name="dejavu_tip_got_it">Ulertuta</string>
+    <string name="dejavu_tip_hide">Ezkutatu aholkuak</string>
+    <string name="dejavu_settings_tips">Aholkuak</string>
+    <string name="dejavu_settings_tips_summary">Erakutsi ezkutuko keinuei buruzko aholkuak, hala nola «Fitxa berria» sakatuta eustea</string>
+    <string name="dejavu_new">Berria</string>
 </resources>

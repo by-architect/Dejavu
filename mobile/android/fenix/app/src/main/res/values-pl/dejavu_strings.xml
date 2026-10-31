@@ -544,4 +544,20 @@
     <string name="dejavu_starter_folder">Narzędzia</string>
     <string name="dejavu_no_icon">Brak ikony</string>
     <string name="dejavu_no_color">Brak koloru</string>
+    <string name="dejavu_tip_workspace_name">Dotknij nazwy obszaru roboczego, aby zmienić jego nazwę, ikonę, kolory i tapetę.</string>
+    <string name="dejavu_tip_new_tab">Przytrzymaj przycisk „Nowa karta”, aby otworzyć kartę prywatną lub kartę w kontenerze.</string>
+    <string name="dejavu_tip_pin">Przytrzymaj kartę i przeciągnij ją nad linię, aby ją przypiąć, lub pod linię, aby ją odpiąć.</string>
+    <string name="dejavu_tip_folder">Dotknij tutaj, aby utworzyć folder na przypięte karty. Upuść karty na folder, aby je do niego włożyć.</string>
+    <string name="dejavu_tip_clear">Dotknij przycisku „Wyczyść”, aby zamknąć karty pod linią, lub przytrzymaj go, aby usunąć wybrane dane.</string>
+    <string name="dejavu_tip_essential_add">Przytrzymaj kartę i przeciągnij ją na górę, aby dodać ją do ulubionych widocznych w każdym obszarze roboczym.</string>
+    <string name="dejavu_tip_essential_hold">Przytrzymaj ulubioną kartę, aby przenieść ją w inne miejsce lub usunąć z ulubionych.</string>
+    <string name="dejavu_tip_workspaces">Przesuń palcem w bok, aby przełączyć obszar roboczy. Przytrzymaj tutaj obszar roboczy i przeciągnij go, aby zmienić ich kolejność.</string>
+    <string name="dejavu_tip_split">Przytrzymaj kartę i upuść ją na inną, aby zobaczyć obie strony naraz.</string>
+    <string name="dejavu_tip_menu_up">Przeciągnij ten pasek w górę, aby otworzyć menu.</string>
+    <string name="dejavu_tip_menu_down">Pociągnij pasek adresu w dół, aby otworzyć menu.</string>
+    <string name="dejavu_tip_got_it">Rozumiem</string>
+    <string name="dejavu_tip_hide">Ukryj wskazówki</string>
+    <string name="dejavu_settings_tips">Wskazówki</string>
+    <string name="dejavu_settings_tips_summary">Wyświetlaj wskazówki o ukrytych gestach, takich jak przytrzymanie przycisku „Nowa karta”</string>
+    <string name="dejavu_new">Nowe</string>
 </resources>

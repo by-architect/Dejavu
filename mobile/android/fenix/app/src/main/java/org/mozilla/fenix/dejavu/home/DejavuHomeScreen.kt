@@ -198,6 +198,15 @@ fun ComposeView.setDejavuHomeContent(
                 searchedPage?.tabId?.let { it == fenix.appStore.state.searchState.sourceTabId } == true
             }
 
+            // A fresh install, and an update from a Dejavu without them, shows the welcome pages first, then the tour.
+            val updated = remember { context.wasUpdated() }
+            val welcomeSeen by settings.welcomeSeen.collectAsState()
+            val welcomeDue = Welcome.isDue(welcomeSeen, updated, settings.whatsNewSeen)
+            val dueChapters = remember(welcomeDue) { FeatureTour.dueChapters(settings, updated = updated) }
+            var showTour by remember(dueChapters) { mutableStateOf(dueChapters.isNotEmpty()) }
+            // Once Dejavu found what the account syncs from Firefox and Zen, it asks which one workspaces follow.
+            val syncStatus by DejavuSync.status.collectAsState()
+
             Box(modifier = Modifier.fillMaxSize().background(MaterialTheme.colorScheme.surface)) {
                 DejavuHome(
                     modifier = Modifier.blurBehindSearch(active = isSearchActive && !showsPage),
@@ -218,6 +227,7 @@ fun ComposeView.setDejavuHomeContent(
                     interactor = interactor,
                     searchAtBottom = searchAtBottom,
                     hasDataToClear = hasDataToClear,
+                    tipsAllowed = !welcomeDue && !showTour && !syncStatus.askSource && !isSearchActive,
                 )
 
                 if (showsPage) {
@@ -244,10 +254,6 @@ fun ComposeView.setDejavuHomeContent(
                 }
             }
 
-            // A fresh install, and an update from a Dejavu without them, shows the welcome pages first, then the tour.
-            val updated = remember { context.wasUpdated() }
-            val welcomeSeen by settings.welcomeSeen.collectAsState()
-            val welcomeDue = Welcome.isDue(welcomeSeen, updated, settings.whatsNewSeen)
             LaunchedEffect(Unit) {
                 if (Welcome.isDue(settings.welcomeSeen.value, updated, settings.whatsNewSeen)) {
                     if (!updated) Welcome.giveFirstLook(context, repository, wallpaperStore)
@@ -262,8 +268,6 @@ fun ComposeView.setDejavuHomeContent(
                 Welcome.loadStarterIcons(context, repository)
             }
 
-            val dueChapters = remember(welcomeDue) { FeatureTour.dueChapters(settings, updated = updated) }
-            var showTour by remember(dueChapters) { mutableStateOf(dueChapters.isNotEmpty()) }
             val popupTheme = workspacePopupTheme(workspaceState.activeWorkspaceId)
             if (showTour && !welcomeDue) {
                 CompositionLocalProvider(LocalPopupTheme provides popupTheme) {
@@ -277,8 +281,6 @@ fun ComposeView.setDejavuHomeContent(
                 }
             }
 
-            // Once Dejavu found what the account syncs from Firefox and Zen, it asks which one workspaces follow.
-            val syncStatus by DejavuSync.status.collectAsState()
             if (!showTour && syncStatus.askSource) {
                 CompositionLocalProvider(LocalPopupTheme provides popupTheme) {
                     SyncSourceDialog(

@@ -528,4 +528,20 @@
     <string name="dejavu_starter_folder">Alətlər</string>
     <string name="dejavu_no_icon">İkon yoxdur</string>
     <string name="dejavu_no_color">Rəng yoxdur</string>
+    <string name="dejavu_tip_workspace_name">Adını, ikonunu, rənglərini və divar kağızını dəyişmək üçün iş sahəsinin adına toxunun.</string>
+    <string name="dejavu_tip_new_tab">Məxfi vərəq və ya konteynerdə vərəq açmaq üçün Yeni vərəq düyməsini basıb saxlayın.</string>
+    <string name="dejavu_tip_pin">Vərəqi basıb saxlayın və bərkitmək üçün xəttin üstünə, bərkitmədən çıxarmaq üçün isə xəttin altına sürükləyin.</string>
+    <string name="dejavu_tip_folder">Bura toxunaraq bərkidilmiş vərəqlər üçün qovluq yaradın. Vərəqləri qovluğa qoymaq üçün onları qovluğun üzərinə buraxın.</string>
+    <string name="dejavu_tip_clear">Xəttin altındakı vərəqləri bağlamaq üçün Təmizlə düyməsinə toxunun, seçdiyiniz məlumatları silmək üçün isə onu basıb saxlayın.</string>
+    <string name="dejavu_tip_essential_add">Vərəqi bütün iş sahələrində görünən əsaslara əlavə etmək üçün onu basıb saxlayın və yuxarıya sürükləyin.</string>
+    <string name="dejavu_tip_essential_hold">Əsası başqa yerə köçürmək və ya əsaslardan çıxarmaq üçün onu basıb saxlayın.</string>
+    <string name="dejavu_tip_workspaces">İş sahələri arasında keçmək üçün yana sürüşdürün. Sıralarını dəyişmək üçün birini burada basıb saxlayın və sürükləyin.</string>
+    <string name="dejavu_tip_split">Hər iki səhifəni eyni anda görmək üçün vərəqi basıb saxlayın və başqa vərəqin üzərinə buraxın.</string>
+    <string name="dejavu_tip_menu_up">Menyunu açmaq üçün bu paneli yuxarı sürüşdürün.</string>
+    <string name="dejavu_tip_menu_down">Menyunu açmaq üçün ünvan sətrini aşağı sürüşdürün.</string>
+    <string name="dejavu_tip_got_it">Bildim</string>
+    <string name="dejavu_tip_hide">Məsləhətləri gizlət</string>
+    <string name="dejavu_settings_tips">Məsləhətlər</string>
+    <string name="dejavu_settings_tips_summary">Gizli jestlər haqqında məsləhətlər göstər, məsələn, Yeni vərəq düyməsini basıb saxlamaq</string>
+    <string name="dejavu_new">Yeni</string>
 </resources>

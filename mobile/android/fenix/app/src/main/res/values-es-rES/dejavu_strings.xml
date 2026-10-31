@@ -536,4 +536,20 @@
     <string name="dejavu_starter_folder">Herramientas</string>
     <string name="dejavu_no_icon">Sin icono</string>
     <string name="dejavu_no_color">Sin color</string>
+    <string name="dejavu_tip_workspace_name">Toca el nombre del espacio de trabajo para cambiar su nombre, icono, colores y fondo de pantalla.</string>
+    <string name="dejavu_tip_new_tab">Mantén pulsado Nueva pestaña para abrir una pestaña privada o una pestaña en un contenedor.</string>
+    <string name="dejavu_tip_pin">Mantén pulsada una pestaña y arrástrala por encima de la línea para fijarla, o por debajo para dejar de fijarla.</string>
+    <string name="dejavu_tip_folder">Toca aquí para crear una carpeta para pestañas fijadas. Suelta pestañas sobre una carpeta para meterlas dentro.</string>
+    <string name="dejavu_tip_clear">Toca Borrar para cerrar las pestañas que hay debajo de la línea, o mantenlo pulsado para eliminar los datos de navegación que has elegido.</string>
+    <string name="dejavu_tip_essential_add">Mantén pulsada una pestaña y arrástrala hasta arriba para convertirla en un esencial, visible en todos los espacios de trabajo.</string>
+    <string name="dejavu_tip_essential_hold">Mantén pulsado un esencial para moverlo a otro sitio o para quitarlo de esenciales.</string>
+    <string name="dejavu_tip_workspaces">Desliza hacia los lados para cambiar de espacio de trabajo. Mantén pulsado uno aquí y arrástralo para cambiar el orden.</string>
+    <string name="dejavu_tip_split">Mantén pulsada una pestaña y suéltala sobre otra para ver las dos páginas a la vez.</string>
+    <string name="dejavu_tip_menu_up">Desliza esta barra hacia arriba para abrir el menú.</string>
+    <string name="dejavu_tip_menu_down">Tira hacia abajo de la barra de direcciones para abrir el menú.</string>
+    <string name="dejavu_tip_got_it">Entendido</string>
+    <string name="dejavu_tip_hide">Ocultar consejos</string>
+    <string name="dejavu_settings_tips">Consejos</string>
+    <string name="dejavu_settings_tips_summary">Mostrar consejos sobre gestos ocultos, como mantener pulsado Nueva pestaña</string>
+    <string name="dejavu_new">Nuevo</string>
 </resources>

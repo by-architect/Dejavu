@@ -561,4 +561,20 @@
     <string name="dejavu_starter_folder">टूल</string>
     <string name="dejavu_no_icon">कोई आइकन नहीं</string>
     <string name="dejavu_no_color">कोई रंग नहीं</string>
+    <string name="dejavu_tip_workspace_name">वर्कस्पेस का नाम, आइकन, कलर और वॉलपेपर बदलने के लिए उसके नाम पर टैप करें।</string>
+    <string name="dejavu_tip_new_tab">प्राइवेट टैब या कंटेनर में टैब के लिए “नया टैब” को दबाकर रखें।</string>
+    <string name="dejavu_tip_pin">टैब को दबाकर रखें और पिन करने के लिए उसे लाइन के ऊपर खींचें, या अनपिन करने के लिए लाइन के नीचे खींचें।</string>
+    <string name="dejavu_tip_folder">पिन किए गए टैब के लिए फ़ोल्डर बनाने के लिए यहां टैप करें। टैब को फ़ोल्डर में रखने के लिए उन्हें फ़ोल्डर पर छोड़ें।</string>
+    <string name="dejavu_tip_clear">लाइन के नीचे के टैब बंद करने के लिए मिटाएं पर टैप करें, या आपके चुने हुए ब्राउज़िंग डेटा को डिलीट करने के लिए उसे दबाकर रखें।</string>
+    <string name="dejavu_tip_essential_add">टैब को दबाकर रखें और उसे सबसे ऊपर खींचें, ताकि वह एसेंशियल बन जाए और हर वर्कस्पेस में दिखे।</string>
+    <string name="dejavu_tip_essential_hold">किसी एसेंशियल को दूसरी जगह ले जाने या एसेंशियल्स से हटाने के लिए उसे दबाकर रखें।</string>
+    <string name="dejavu_tip_workspaces">वर्कस्पेस बदलने के लिए दाएं-बाएं स्वाइप करें। उनका क्रम बदलने के लिए यहां किसी एक को दबाकर रखें और खींचें।</string>
+    <string name="dejavu_tip_split">दोनों पेज एक साथ देखने के लिए टैब को दबाकर रखें और उसे किसी दूसरे टैब पर छोड़ें।</string>
+    <string name="dejavu_tip_menu_up">मेन्यू खोलने के लिए इस बार को ऊपर स्वाइप करें।</string>
+    <string name="dejavu_tip_menu_down">मेन्यू खोलने के लिए एड्रेस बार को नीचे खींचें।</string>
+    <string name="dejavu_tip_got_it">ठीक है</string>
+    <string name="dejavu_tip_hide">टिप्स छिपाएं</string>
+    <string name="dejavu_settings_tips">टिप्स</string>
+    <string name="dejavu_settings_tips_summary">छिपे हुए जेस्चर के बारे में टिप्स दिखाएं, जैसे “नया टैब” को दबाकर रखना</string>
+    <string name="dejavu_new">नया</string>
 </resources>

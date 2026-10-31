@@ -536,4 +536,20 @@
     <string name="dejavu_starter_folder">כלים</string>
     <string name="dejavu_no_icon">ללא סמל</string>
     <string name="dejavu_no_color">ללא צבע</string>
+    <string name="dejavu_tip_workspace_name">הקישו על שם מרחב העבודה כדי לשנות את השם, הסמל, הצבעים ותמונת הרקע שלו.</string>
+    <string name="dejavu_tip_new_tab">לחצו לחיצה ארוכה על ״לשונית חדשה״ כדי לפתוח לשונית פרטית או לשונית במארז.</string>
+    <string name="dejavu_tip_pin">לחצו לחיצה ארוכה על לשונית וגררו אותה מעל הקו כדי להצמיד אותה, או מתחת לקו כדי לבטל את ההצמדה.</string>
+    <string name="dejavu_tip_folder">הקישו כאן כדי ליצור תיקייה ללשוניות מוצמדות. שחררו לשוניות על תיקייה כדי להכניס אותן אליה.</string>
+    <string name="dejavu_tip_clear">הקישו על ״ניקוי״ כדי לסגור את הלשוניות שמתחת לקו, או לחצו עליו לחיצה ארוכה כדי למחוק את נתוני הגלישה שבחרתם.</string>
+    <string name="dejavu_tip_essential_add">לחצו לחיצה ארוכה על לשונית וגררו אותה למעלה כדי להפוך אותה למועדף שמוצג בכל מרחבי העבודה.</string>
+    <string name="dejavu_tip_essential_hold">לחצו לחיצה ארוכה על מועדף כדי להעביר אותו למקום אחר או להסיר אותו מהמועדפים.</string>
+    <string name="dejavu_tip_workspaces">החליקו הצידה כדי לעבור בין מרחבי עבודה. לחצו כאן לחיצה ארוכה על אחד מהם וגררו אותו כדי לשנות את הסדר שלהם.</string>
+    <string name="dejavu_tip_split">לחצו לחיצה ארוכה על לשונית ושחררו אותה על לשונית אחרת כדי לראות את שני הדפים יחד.</string>
+    <string name="dejavu_tip_menu_up">החליקו את הסרגל הזה למעלה כדי לפתוח את התפריט.</string>
+    <string name="dejavu_tip_menu_down">משכו את שורת הכתובת למטה כדי לפתוח את התפריט.</string>
+    <string name="dejavu_tip_got_it">הבנתי</string>
+    <string name="dejavu_tip_hide">הסתרת טיפים</string>
+    <string name="dejavu_settings_tips">טיפים</string>
+    <string name="dejavu_settings_tips_summary">הצגת טיפים על מחוות נסתרות, כמו לחיצה ארוכה על ״לשונית חדשה״</string>
+    <string name="dejavu_new">חדש</string>
 </resources>

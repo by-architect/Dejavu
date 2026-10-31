@@ -528,4 +528,20 @@
     <string name="dejavu_starter_folder">Utensils</string>
     <string name="dejavu_no_icon">Nagina icona</string>
     <string name="dejavu_no_color">Nagina colur</string>
+    <string name="dejavu_tip_workspace_name">Smatga il num dal spazi da lavur per midar ses num, sia icona, sias colurs e ses maletg dal fund davos.</string>
+    <string name="dejavu_tip_new_tab">Tegna smatgà Nov tab per in tab privat u per in tab en in container.</string>
+    <string name="dejavu_tip_pin">Tegna smatgà in tab e tira el sur la lingia per al fixar, u sut la lingia per al defixar.</string>
+    <string name="dejavu_tip_folder">Smatga qua per crear in dossier per tabs fixads. Bitta tabs sin in dossier per als metter lien.</string>
+    <string name="dejavu_tip_clear">Smatga Svidar per serrar ils tabs sut la lingia, u tegna smatgà per stizzar las datas che ti has tschernì.</string>
+    <string name="dejavu_tip_essential_add">Tegna smatgà in tab e tira el ensi per al far in essenzial, mussà en mintga spazi da lavur.</string>
+    <string name="dejavu_tip_essential_hold">Tegna smatgà in essenzial per al spustar en in auter lieu u per l’allontanar dals essenzials.</string>
+    <string name="dejavu_tip_workspaces">Stritga da la vart per midar il spazi da lavur. Tegna smatgà in spazi da lavur qua e tira el per midar l’urden.</string>
+    <string name="dejavu_tip_split">Tegna smatgà in tab e bitta el sin in auter per vesair omaduas paginas a medem temp.</string>
+    <string name="dejavu_tip_menu_up">Stritga si questa trav per avrir il menu.</string>
+    <string name="dejavu_tip_menu_down">Tira giu la trav d’adressas per avrir il menu.</string>
+    <string name="dejavu_tip_got_it">Chapì</string>
+    <string name="dejavu_tip_hide">Zuppentar ils cussegls</string>
+    <string name="dejavu_settings_tips">Cussegls</string>
+    <string name="dejavu_settings_tips_summary">Mussar cussegls davart gests zuppads, sco tegnair smatgà Nov tab</string>
+    <string name="dejavu_new">Nov</string>
 </resources>

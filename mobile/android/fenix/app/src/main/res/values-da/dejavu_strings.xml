@@ -528,4 +528,20 @@
     <string name="dejavu_starter_folder">Værktøjer</string>
     <string name="dejavu_no_icon">Intet ikon</string>
     <string name="dejavu_no_color">Ingen farve</string>
+    <string name="dejavu_tip_workspace_name">Tryk på arbejdsområdets navn for at ændre dets navn, ikon, farver og baggrund.</string>
+    <string name="dejavu_tip_new_tab">Hold Nyt faneblad nede for at åbne et privat faneblad eller et faneblad i en beholder.</string>
+    <string name="dejavu_tip_pin">Hold et faneblad nede, og træk det over stregen for at fastgøre det eller under stregen for at frigøre det.</string>
+    <string name="dejavu_tip_folder">Tryk her for at oprette en mappe til fastgjorte faneblade. Slip faneblade på en mappe for at lægge dem i den.</string>
+    <string name="dejavu_tip_clear">Tryk på Ryd for at lukke fanebladene under stregen, eller hold den nede for at slette de data, du har valgt.</string>
+    <string name="dejavu_tip_essential_add">Hold et faneblad nede, og træk det op til toppen for at føje det til Favoritter, som vises i alle arbejdsområder.</string>
+    <string name="dejavu_tip_essential_hold">Hold en favorit nede for at flytte den et andet sted hen eller fjerne den fra Favoritter.</string>
+    <string name="dejavu_tip_workspaces">Stryg til siden for at skifte arbejdsområde. Hold et her nede, og træk det for at ændre rækkefølgen.</string>
+    <string name="dejavu_tip_split">Hold et faneblad nede, og slip det på et andet for at se begge sider på én gang.</string>
+    <string name="dejavu_tip_menu_up">Stryg denne bjælke op for at åbne menuen.</string>
+    <string name="dejavu_tip_menu_down">Stryg adresselinjen ned for at åbne menuen.</string>
+    <string name="dejavu_tip_got_it">Forstået</string>
+    <string name="dejavu_tip_hide">Skjul tips</string>
+    <string name="dejavu_settings_tips">Tips</string>
+    <string name="dejavu_settings_tips_summary">Vis tips om skjulte bevægelser, som at holde Nyt faneblad nede</string>
+    <string name="dejavu_new">Ny</string>
 </resources>

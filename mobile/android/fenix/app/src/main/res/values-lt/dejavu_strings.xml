@@ -544,4 +544,20 @@
     <string name="dejavu_starter_folder">Priemonės</string>
     <string name="dejavu_no_icon">Be piktogramos</string>
     <string name="dejavu_no_color">Be spalvos</string>
+    <string name="dejavu_tip_workspace_name">Palieskite darbo erdvės pavadinimą, kad pakeistumėte jos pavadinimą, piktogramą, spalvas ir foną.</string>
+    <string name="dejavu_tip_new_tab">Palaikykite mygtuką „Nauja kortelė“, kad atvertumėte privačiąją kortelę arba kortelę konteineryje.</string>
+    <string name="dejavu_tip_pin">Palaikykite kortelę ir nuvilkite ją virš linijos, kad prisegtumėte, arba po linija, kad atsegtumėte.</string>
+    <string name="dejavu_tip_folder">Palieskite čia, kad sukurtumėte aplanką prisegtoms kortelėms. Nuvilkite korteles ant aplanko, kad sudėtumėte jas į jį.</string>
+    <string name="dejavu_tip_clear">Palieskite mygtuką „Išvalyti“, kad užvertumėte korteles po linija, arba palaikykite jį, kad pašalintumėte jūsų pasirinktus duomenis.</string>
+    <string name="dejavu_tip_essential_add">Palaikykite kortelę ir nuvilkite ją į viršų, kad pridėtumėte ją prie Mėgstamiausių, rodomų kiekvienoje darbo erdvėje.</string>
+    <string name="dejavu_tip_essential_hold">Palaikykite Mėgstamiausių kortelę, kad perkeltumėte ją į kitą vietą arba pašalintumėte iš Mėgstamiausių.</string>
+    <string name="dejavu_tip_workspaces">Perbraukite į šoną, kad perjungtumėte darbo erdvę. Palaikykite darbo erdvę čia ir nuvilkite, kad pakeistumėte jų tvarką.</string>
+    <string name="dejavu_tip_split">Palaikykite kortelę ir nuvilkite ją ant kitos, kad matytumėte abu puslapius iš karto.</string>
+    <string name="dejavu_tip_menu_up">Perbraukite šią juostą aukštyn, kad atvertumėte meniu.</string>
+    <string name="dejavu_tip_menu_down">Patraukite adreso lauką žemyn, kad atvertumėte meniu.</string>
+    <string name="dejavu_tip_got_it">Supratau</string>
+    <string name="dejavu_tip_hide">Slėpti patarimus</string>
+    <string name="dejavu_settings_tips">Patarimai</string>
+    <string name="dejavu_settings_tips_summary">Rodyti patarimus apie paslėptus gestus, pavyzdžiui, mygtuko „Nauja kortelė“ palaikymą</string>
+    <string name="dejavu_new">Nauja</string>
 </resources>

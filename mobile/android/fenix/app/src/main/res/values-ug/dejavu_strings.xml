@@ -528,4 +528,20 @@
     <string name="dejavu_starter_folder">قوراللار</string>
     <string name="dejavu_no_icon">سىنبەلگە يوق</string>
     <string name="dejavu_no_color">رەڭ يوق</string>
+    <string name="dejavu_tip_workspace_name">خىزمەت دائىرىسىنىڭ ئىسمى، سىنبەلگىسى، رەڭلىرى ۋە تام قەغىزىنى ئۆزگەرتىش ئۈچۈن ئۇنىڭ ئىسمىنى چېكىڭ.</string>
+    <string name="dejavu_tip_new_tab">شەخسىي بەتكۈچ ياكى قاچىدىكى بەتكۈچ ئۈچۈن «يېڭى بەتكۈچ»نى بېسىپ تۇرۇڭ.</string>
+    <string name="dejavu_tip_pin">بەتكۈچنى بېسىپ تۇرۇپ، مىخلاش ئۈچۈن سىزىقنىڭ ئۈستىگە، مىخلاشتىن چىقىرىش ئۈچۈن سىزىقنىڭ ئاستىغا سۆرەڭ.</string>
+    <string name="dejavu_tip_folder">مىخلانغان بەتكۈچلەرگە قىسقۇچ قۇرۇش ئۈچۈن بۇ يەرنى چېكىڭ. بەتكۈچلەرنى قىسقۇچقا سېلىش ئۈچۈن ئۇلارنى قىسقۇچنىڭ ئۈستىگە تاشلاڭ.</string>
+    <string name="dejavu_tip_clear">سىزىقنىڭ ئاستىدىكى بەتكۈچلەرنى يېپىش ئۈچۈن «تازىلا»نى چېكىڭ، ياكى سىز تاللىغان سانلىق مەلۇماتنى ئۆچۈرۈش ئۈچۈن ئۇنى بېسىپ تۇرۇڭ.</string>
+    <string name="dejavu_tip_essential_add">بەتكۈچنى بېسىپ تۇرۇپ، ھەر بىر خىزمەت دائىرىسىدە كۆرۈنىدىغان مۇھىملارغا قوشۇش ئۈچۈن ئەڭ ئۈستىگە سۆرەڭ.</string>
+    <string name="dejavu_tip_essential_hold">مۇھىمنى باشقا ئورۇنغا يۆتكەش ياكى مۇھىملاردىن چىقىرىش ئۈچۈن ئۇنى بېسىپ تۇرۇڭ.</string>
+    <string name="dejavu_tip_workspaces">خىزمەت دائىرىلىرىنى ئالماشتۇرۇش ئۈچۈن يانغا سۈرۈڭ. تەرتىپىنى ئۆزگەرتىش ئۈچۈن بۇ يەردە بىرىنى بېسىپ تۇرۇپ سۆرەڭ.</string>
+    <string name="dejavu_tip_split">بەتكۈچنى بېسىپ تۇرۇپ، ئىككى بەتنى تەڭلا كۆرۈش ئۈچۈن ئۇنى باشقا بەتكۈچنىڭ ئۈستىگە تاشلاڭ.</string>
+    <string name="dejavu_tip_menu_up">تىزىملىكنى ئېچىش ئۈچۈن بۇ بالداقنى ئۈستىگە سۈرۈڭ.</string>
+    <string name="dejavu_tip_menu_down">تىزىملىكنى ئېچىش ئۈچۈن ئادرېس بالدىقىنى ئاستىغا تارتىڭ.</string>
+    <string name="dejavu_tip_got_it">بىلدىم</string>
+    <string name="dejavu_tip_hide">كۆرسەتمىلەرنى يوشۇر</string>
+    <string name="dejavu_settings_tips">كۆرسەتمىلەر</string>
+    <string name="dejavu_settings_tips_summary">«يېڭى بەتكۈچ»نى بېسىپ تۇرۇشقا ئوخشاش يوشۇرۇن قول ئىشارىلىرى ھەققىدىكى كۆرسەتمىلەرنى كۆرسەت</string>
+    <string name="dejavu_new">يېڭى</string>
 </resources>

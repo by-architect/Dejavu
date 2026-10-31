@@ -528,4 +528,20 @@
     <string name="dejavu_starter_folder">Ferramientes</string>
     <string name="dejavu_no_icon">Ensin iconu</string>
     <string name="dejavu_no_color">Ensin color</string>
+    <string name="dejavu_tip_workspace_name">Toca\'l nome del espaciu de trabayu pa camudar el so nome, iconu, colores y fondu de pantalla.</string>
+    <string name="dejavu_tip_new_tab">Caltién primíu «Llingüeta nueva» p\'abrir una llingüeta privada o una llingüeta nun contenedor.</string>
+    <string name="dejavu_tip_pin">Caltién primida una llingüeta y arrástrala per enriba de la llinia pa fixala, o per debaxo pa desfixala.</string>
+    <string name="dejavu_tip_folder">Toca equí pa crear una carpeta de llingüetes fixaes. Suelta llingüetes nuna carpeta pa meteles dientro.</string>
+    <string name="dejavu_tip_clear">Toca «Llimpiar» pa zarrar les llingüetes de debaxo de la llinia, o caltenlu primíu pa desaniciar los datos qu\'escoyisti.</string>
+    <string name="dejavu_tip_essential_add">Caltién primida una llingüeta y arrástrala hasta arriba pa amestala a los esenciales, que s\'amuesen en tolos espacios de trabayu.</string>
+    <string name="dejavu_tip_essential_hold">Caltién primíu un esencial pa movelu a otru sitiu o pa quitalu de los esenciales.</string>
+    <string name="dejavu_tip_workspaces">Esliza de llau pa cambiar d\'espaciu de trabayu. Caltién primíu ún equí y arrástralu pa camudar l\'orde.</string>
+    <string name="dejavu_tip_split">Caltién primida una llingüeta y suéltala n\'otra pa ver dambes páxines a la vegada.</string>
+    <string name="dejavu_tip_menu_up">Esliza esta barra p\'arriba p\'abrir el menú.</string>
+    <string name="dejavu_tip_menu_down">Esliza p\'abaxo la barra de direiciones p\'abrir el menú.</string>
+    <string name="dejavu_tip_got_it">Entendílo</string>
+    <string name="dejavu_tip_hide">Anubrir los conseyos</string>
+    <string name="dejavu_settings_tips">Conseyos</string>
+    <string name="dejavu_settings_tips_summary">Amosar conseyos sobre xestos anubríos, como caltener primíu «Llingüeta nueva»</string>
+    <string name="dejavu_new">Nuevu</string>
 </resources>

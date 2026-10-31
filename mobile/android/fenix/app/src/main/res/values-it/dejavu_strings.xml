@@ -528,4 +528,20 @@
     <string name="dejavu_starter_folder">Strumenti</string>
     <string name="dejavu_no_icon">Nessuna icona</string>
     <string name="dejavu_no_color">Nessun colore</string>
+    <string name="dejavu_tip_workspace_name">Tocca il nome dello spazio per cambiarne nome, icona, colori e sfondo.</string>
+    <string name="dejavu_tip_new_tab">Tieni premuto «Nuova scheda» per una scheda anonima o una scheda in un contenitore.</string>
+    <string name="dejavu_tip_pin">Tieni premuta una scheda e trascinala sopra la linea per bloccarla, o sotto la linea per sbloccarla.</string>
+    <string name="dejavu_tip_folder">Tocca qui per creare una cartella per le schede bloccate. Rilascia le schede su una cartella per metterle dentro.</string>
+    <string name="dejavu_tip_clear">Tocca Svuota per chiudere le schede sotto la linea, o tienilo premuto per eliminare i dati di navigazione che hai scelto.</string>
+    <string name="dejavu_tip_essential_add">Tieni premuta una scheda e trascinala in cima per aggiungerla ai preferiti, mostrati in ogni spazio.</string>
+    <string name="dejavu_tip_essential_hold">Tieni premuto un preferito per spostarlo altrove o per rimuoverlo dai preferiti.</string>
+    <string name="dejavu_tip_workspaces">Scorri lateralmente per cambiare spazio. Tienine premuto uno qui e trascinalo per cambiarne l’ordine.</string>
+    <string name="dejavu_tip_split">Tieni premuta una scheda e rilasciala su un’altra per vedere entrambe le pagine insieme.</string>
+    <string name="dejavu_tip_menu_up">Scorri verso l’alto questa barra per aprire il menu.</string>
+    <string name="dejavu_tip_menu_down">Tira verso il basso la barra degli indirizzi per aprire il menu.</string>
+    <string name="dejavu_tip_got_it">Ho capito</string>
+    <string name="dejavu_tip_hide">Nascondi suggerimenti</string>
+    <string name="dejavu_settings_tips">Suggerimenti</string>
+    <string name="dejavu_settings_tips_summary">Mostra suggerimenti sui gesti nascosti, come tenere premuto «Nuova scheda»</string>
+    <string name="dejavu_new">Novità</string>
 </resources>

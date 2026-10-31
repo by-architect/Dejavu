@@ -544,4 +544,20 @@
     <string name="dejavu_starter_folder">Nástroje</string>
     <string name="dejavu_no_icon">Žádná ikona</string>
     <string name="dejavu_no_color">Žádná barva</string>
+    <string name="dejavu_tip_workspace_name">Klepnutím na název pracovního prostoru změníte jeho název, ikonu, barvy a tapetu.</string>
+    <string name="dejavu_tip_new_tab">Podržením tlačítka „Nový panel“ otevřete anonymní panel nebo panel v kontejneru.</string>
+    <string name="dejavu_tip_pin">Podržte panel a přetáhněte ho nad čáru, abyste ho připnuli, nebo pod čáru, abyste ho odepnuli.</string>
+    <string name="dejavu_tip_folder">Klepnutím sem vytvoříte složku pro připnuté panely. Puštěním panelů na složku je do ní vložíte.</string>
+    <string name="dejavu_tip_clear">Klepnutím na „Vymazat“ zavřete panely pod čarou, podržením smažete data, která jste vybrali.</string>
+    <string name="dejavu_tip_essential_add">Podržte panel a přetáhněte ho nahoru, abyste ho přidali do Oblíbených, které se zobrazují v každém pracovním prostoru.</string>
+    <string name="dejavu_tip_essential_hold">Podržením oblíbené položky ji přesunete jinam nebo odeberete z Oblíbených.</string>
+    <string name="dejavu_tip_workspaces">Přejetím do strany přepnete pracovní prostor. Podržte zde jeden z nich a přetáhněte ho, abyste změnili jejich pořadí.</string>
+    <string name="dejavu_tip_split">Podržte panel a pusťte ho na jiný, abyste viděli obě stránky najednou.</string>
+    <string name="dejavu_tip_menu_up">Přejetím této lišty nahoru otevřete nabídku.</string>
+    <string name="dejavu_tip_menu_down">Přejetím adresního řádku dolů otevřete nabídku.</string>
+    <string name="dejavu_tip_got_it">Rozumím</string>
+    <string name="dejavu_tip_hide">Skrýt tipy</string>
+    <string name="dejavu_settings_tips">Tipy</string>
+    <string name="dejavu_settings_tips_summary">Zobrazovat tipy ke skrytým gestům, například podržení tlačítka „Nový panel“</string>
+    <string name="dejavu_new">Novinka</string>
 </resources>

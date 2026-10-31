@@ -528,4 +528,20 @@
     <string name="dejavu_starter_folder">Ainas</string>
     <string name="dejavu_no_icon">Peruna icona</string>
     <string name="dejavu_no_color">Perunu colore</string>
+    <string name="dejavu_tip_workspace_name">Pretziona su nòmine de s\'ispàtziu de traballu pro nde cambiare su nòmine, s\'icona, is colores e s\'isfundu de ischermu.</string>
+    <string name="dejavu_tip_new_tab">Mantene pretzionadu “Ischeda noa” pro un\'ischeda privada, o un\'ischeda in un cuntenidore.</string>
+    <string name="dejavu_tip_pin">Mantene pretzionada un\'ischeda e trìsina·la in subra de sa lìnia pro la fissare, o in suta de sa lìnia pro la isfissare.</string>
+    <string name="dejavu_tip_folder">Pretziona inoghe pro creare una cartella pro is ischedas fissadas. Lassa is ischedas in subra de una cartella pro las pònnere a intro.</string>
+    <string name="dejavu_tip_clear">Pretziona “Illìmpia” pro serrare is ischedas in suta de sa lìnia, o mantene·lu pretzionadu pro cantzellare is datos chi as seberadu.</string>
+    <string name="dejavu_tip_essential_add">Mantene pretzionada un\'ischeda e trìsina·la a sa parte de susu pro nde fàghere un\'essentziale, chi si bidet in dònnia ispàtziu de traballu.</string>
+    <string name="dejavu_tip_essential_hold">Mantene pretzionadu un\'essentziale pro lu mòere a un\'àteru logu, o pro lu tirare dae is essentziales.</string>
+    <string name="dejavu_tip_workspaces">Iscurre a manca o a dereta pro cambiare ispàtziu de traballu. Mantene pretzionadu unu inoghe e trìsina·lu pro cambiare s\'òrdine issoro.</string>
+    <string name="dejavu_tip_split">Mantene pretzionada un\'ischeda e lassa·la in subra de un\'àtera pro bìdere is duas pàginas a su matessi tempu.</string>
+    <string name="dejavu_tip_menu_up">Iscurre custa barra a susu pro abèrrere su menu.</string>
+    <string name="dejavu_tip_menu_down">Tira a bàsciu sa barra de indiritzos pro abèrrere su menu.</string>
+    <string name="dejavu_tip_got_it">Apo cumprèndidu</string>
+    <string name="dejavu_tip_hide">Cua is cussìgios</string>
+    <string name="dejavu_settings_tips">Cussìgios</string>
+    <string name="dejavu_settings_tips_summary">Ammustra cussìgios subra de is gestos cuados, comente mantènnere pretzionadu “Ischeda noa”</string>
+    <string name="dejavu_new">Nou</string>
 </resources>

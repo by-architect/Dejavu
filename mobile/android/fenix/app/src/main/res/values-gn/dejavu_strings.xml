@@ -528,4 +528,20 @@
     <string name="dejavu_starter_folder">Tembiporu</string>
     <string name="dejavu_no_icon">Ta\'ãnga\'ỹre</string>
     <string name="dejavu_no_color">Sa\'y\'ỹre</string>
+    <string name="dejavu_tip_workspace_name">Epoko tembiapo renda réra emoambue hag̃ua héra, ita\'ãnga, isa\'y ha imba\'erechaha rugua.</string>
+    <string name="dejavu_tip_new_tab">Ejopy are “Tendayke pyahu” embojuruja hag̃ua tendayke ñemigua, térã tendayke peteĩ ryru pype.</string>
+    <string name="dejavu_tip_pin">Ejopy peteĩ tendayke ha emosyryry tysỹi ári emboguapy hag̃ua, térã tysỹi guýpe ejora hag̃ua.</string>
+    <string name="dejavu_tip_folder">Epoko ko\'ápe ejapo hag̃ua karpeta tendayke mboguapypyrépe g̃uarã. Emombo tendayke peteĩ karpeta ári emoĩ hag̃ua ipype.</string>
+    <string name="dejavu_tip_clear">Epoko Mboty emboty hag̃ua tendayke tysỹi guýpegua, térã ejopy are emboguete hag̃ua kundahára mba\'ekuaarã reiporavova\'ekue.</string>
+    <string name="dejavu_tip_essential_add">Ejopy peteĩ tendayke ha emosyryry yvate gotyo ejapo hag̃ua chugui iporãvéva, ojehechaukáva opa tembiapo rendápe.</string>
+    <string name="dejavu_tip_essential_hold">Ejopy peteĩ iporãvéva emongu\'e hag̃ua ambue hendápe, térã emboguete hag̃ua umi iporãvévagui.</string>
+    <string name="dejavu_tip_workspaces">Erova yke gotyo emoambue hag̃ua tembiapo renda. Ejopy peteĩ ko\'ápe ha emosyryry emohenda jey hag̃ua.</string>
+    <string name="dejavu_tip_split">Ejopy peteĩ tendayke ha emombo ambue ári ehecha hag̃ua mokõive kuatiarogue peteĩ jave.</string>
+    <string name="dejavu_tip_menu_up">Erova ko barra yvate gotyo embojuruja hag̃ua menu.</string>
+    <string name="dejavu_tip_menu_down">Emosyryry kundaharape barra yvy gotyo embojuruja hag̃ua menu.</string>
+    <string name="dejavu_tip_got_it">Kũmbypyre</string>
+    <string name="dejavu_tip_hide">Emokañy ñemoñe\'ẽ</string>
+    <string name="dejavu_settings_tips">Ñemoñe\'ẽ</string>
+    <string name="dejavu_settings_tips_summary">Ehechauka ñemoñe\'ẽ ñeha\'ãnga kañymby rehegua, ha\'eháicha ejopy are “Tendayke pyahu”</string>
+    <string name="dejavu_new">Pyahu</string>
 </resources>

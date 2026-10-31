@@ -528,4 +528,20 @@
     <string name="dejavu_starter_folder">ხელსაწყოები</string>
     <string name="dejavu_no_icon">ხატულის გარეშე</string>
     <string name="dejavu_no_color">ფერის გარეშე</string>
+    <string name="dejavu_tip_workspace_name">შეეხეთ სივრცის სახელს, რომ შეცვალოთ მისი სახელი, ხატულა, ფერები და ფონი.</string>
+    <string name="dejavu_tip_new_tab">ხანგრძლივად შეეხეთ „ახალი ჩანართი“ ღილაკს პირადი ჩანართის ან კონტეინერში ჩანართის გასახსნელად.</string>
+    <string name="dejavu_tip_pin">ხანგრძლივად შეეხეთ ჩანართს და გადაიტანეთ ხაზის ზემოთ მისამაგრებლად, ან ხაზის ქვემოთ მიმაგრების მოსახსნელად.</string>
+    <string name="dejavu_tip_folder">შეეხეთ აქ, რომ შექმნათ საქაღალდე მიმაგრებული ჩანართებისთვის. ჩამოაგდეთ ჩანართები საქაღალდეზე, რომ შიგნით მოათავსოთ.</string>
+    <string name="dejavu_tip_clear">შეეხეთ „გასუფთავება“ ღილაკს ხაზის ქვემოთ მდებარე ჩანართების დასახურად, ან ხანგრძლივად შეეხეთ მას თქვენ მიერ არჩეული დათვალიერების მონაცემების წასაშლელად.</string>
+    <string name="dejavu_tip_essential_add">ხანგრძლივად შეეხეთ ჩანართს და გადაიტანეთ ზემოთ, რომ საჭირო საიტად აქციოთ, რომელიც ყველა სივრცეში გამოჩნდება.</string>
+    <string name="dejavu_tip_essential_hold">ხანგრძლივად შეეხეთ საჭირო საიტს, რომ სხვა ადგილას გადაიტანოთ ან საჭირო საიტებიდან ამოშალოთ.</string>
+    <string name="dejavu_tip_workspaces">სივრცეებს შორის გადასართავად გადაფურცლეთ გვერდულად. რიგის შესაცვლელად ხანგრძლივად შეეხეთ ერთ-ერთს აქ და გადაიტანეთ.</string>
+    <string name="dejavu_tip_split">ხანგრძლივად შეეხეთ ჩანართს და ჩამოაგდეთ სხვა ჩანართზე, რომ ორივე გვერდი ერთდროულად ნახოთ.</string>
+    <string name="dejavu_tip_menu_up">მენიუს გასახსნელად გადაფურცლეთ ეს ზოლი ზემოთ.</string>
+    <string name="dejavu_tip_menu_down">მენიუს გასახსნელად ჩამოწიეთ მისამართების ველი ქვემოთ.</string>
+    <string name="dejavu_tip_got_it">გასაგებია</string>
+    <string name="dejavu_tip_hide">რჩევების დამალვა</string>
+    <string name="dejavu_settings_tips">რჩევები</string>
+    <string name="dejavu_settings_tips_summary">რჩევების ჩვენება ფარული ჟესტების შესახებ, მაგალითად „ახალი ჩანართი“ ღილაკზე ხანგრძლივად შეხება</string>
+    <string name="dejavu_new">სიახლე</string>
 </resources>

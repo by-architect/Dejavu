@@ -528,4 +528,20 @@
     <string name="dejavu_starter_folder">Mga Tool</string>
     <string name="dejavu_no_icon">Walang icon</string>
     <string name="dejavu_no_color">Walang kulay</string>
+    <string name="dejavu_tip_workspace_name">I-tap ang pangalan ng workspace para palitan ang pangalan, icon, mga kulay, at wallpaper nito.</string>
+    <string name="dejavu_tip_new_tab">Pindutin nang matagal ang “Bagong Tab” para sa pribadong tab, o tab sa isang container.</string>
+    <string name="dejavu_tip_pin">Pindutin nang matagal ang isang tab at i-drag ito sa itaas ng linya para i-pin ito, o sa ibaba ng linya para i-unpin ito.</string>
+    <string name="dejavu_tip_folder">I-tap dito para gumawa ng folder para sa mga naka-pin na tab. Ihulog ang mga tab sa isang folder para ilagay ang mga ito sa loob.</string>
+    <string name="dejavu_tip_clear">I-tap ang “Linisin” para isara ang mga tab sa ibaba ng linya, o pindutin ito nang matagal para burahin ang data na pinili mo.</string>
+    <string name="dejavu_tip_essential_add">Pindutin nang matagal ang isang tab at i-drag ito sa pinakaitaas para idagdag ito sa Mahahalaga, na makikita sa bawat workspace.</string>
+    <string name="dejavu_tip_essential_hold">Pindutin nang matagal ang isang Mahalaga para ilipat ito sa ibang lugar, o para alisin ito sa Mahahalaga.</string>
+    <string name="dejavu_tip_workspaces">Mag-swipe pahalang para lumipat ng workspace. Pindutin nang matagal ang isa rito at i-drag ito para ayusin ang pagkakasunod-sunod.</string>
+    <string name="dejavu_tip_split">Pindutin nang matagal ang isang tab at ihulog ito sa isa pang tab para makita ang dalawang page nang sabay.</string>
+    <string name="dejavu_tip_menu_up">I-swipe pataas ang bar na ito para buksan ang menu.</string>
+    <string name="dejavu_tip_menu_down">Hilahin pababa ang address bar para buksan ang menu.</string>
+    <string name="dejavu_tip_got_it">Nakuha ko</string>
+    <string name="dejavu_tip_hide">Itago ang mga tip</string>
+    <string name="dejavu_settings_tips">Mga tip</string>
+    <string name="dejavu_settings_tips_summary">Ipakita ang mga tip tungkol sa mga nakatagong gesture, tulad ng pagpindot nang matagal sa “Bagong Tab”</string>
+    <string name="dejavu_new">Bago</string>
 </resources>

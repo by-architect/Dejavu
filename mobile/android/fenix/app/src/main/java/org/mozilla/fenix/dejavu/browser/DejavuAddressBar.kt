@@ -77,6 +77,15 @@ import org.mozilla.fenix.R
 import org.mozilla.fenix.components.components
 import org.mozilla.fenix.dejavu.actions.TabAction
 import org.mozilla.fenix.dejavu.containers.DejavuContainerStorage
+import org.mozilla.fenix.dejavu.discover.MENU_SWIPE
+import org.mozilla.fenix.dejavu.discover.Tip
+import org.mozilla.fenix.dejavu.discover.TipGesture
+import org.mozilla.fenix.dejavu.discover.TipHost
+import org.mozilla.fenix.dejavu.discover.TipScreen
+import org.mozilla.fenix.dejavu.discover.isNewAmong
+import org.mozilla.fenix.dejavu.discover.newDot
+import org.mozilla.fenix.dejavu.discover.rememberUnseenNewThings
+import org.mozilla.fenix.dejavu.discover.tipTarget
 import org.mozilla.fenix.dejavu.menu.ActionsBarLayout
 import org.mozilla.fenix.dejavu.menu.AskingDialog
 import org.mozilla.fenix.dejavu.menu.BORDER_ALPHA
@@ -127,8 +136,22 @@ fun DejavuAddressBar(store: BrowserToolbarStore) {
     val theme = shownPopupTheme()
     val actions = barActions(store, sides.layout)
     val search = { origin.startSearch(store, sides.layout) }
+    // Without an actions bar, swiping this bar opens the menu, which a tip shows.
+    val opensMenu = !sides.layout.hasActionsBar
+    val fromTop = sides.layout.menuFromTop
 
-    Box(modifier = Modifier.fillMaxWidth().height(ADDRESS_BAR_HEIGHT)) {
+    Box(
+        modifier = Modifier
+            .fillMaxWidth()
+            .height(ADDRESS_BAR_HEIGHT)
+            .tipTarget(
+                Tip.PAGE_MENU,
+                TipGesture.Swipe(dy = if (fromTop) MENU_SWIPE else -MENU_SWIPE),
+                enabled = opensMenu,
+                text = if (fromTop) R.string.dejavu_tip_menu_down else R.string.dejavu_tip_menu_up,
+                drawsItself = true,
+            ),
+    ) {
         AddressBarRow(sides = sides, tabId = null, onEvent = { store.dispatch(it) }, onSearch = search) { padding ->
             Box(
                 modifier = Modifier
@@ -170,6 +193,7 @@ fun DejavuAddressBar(store: BrowserToolbarStore) {
                 onDismiss = { menuOpen = false },
             )
         }
+        if (opensMenu) TipHost(TipScreen.PAGE, allowed = true)
     }
 }
 
@@ -460,10 +484,12 @@ private fun SideButton(
     val look = entry.look(state)
     val colors = MaterialTheme.colorScheme
     val taps = rememberIconTaps()
+    val isNew = entry.isNewAmong(rememberUnseenNewThings())
     Box(
         contentAlignment = Alignment.Center,
         modifier = Modifier
             .size(ADDRESS_FIELD_HEIGHT)
+            .newDot(isNew, inset = SIDE_DOT_INSET)
             .barSurface(CircleShape, if (look.active) colors.secondaryContainer else colors.surfaceContainerHigh)
             .clickable(enabled = look.enabled, role = Role.Button) {
                 taps.tap()
@@ -698,6 +724,7 @@ internal val ADDRESS_FIELD_SIDE_MARGIN = 16.dp
 internal val ADDRESS_FIELD_MARGIN = (ADDRESS_BAR_HEIGHT - ADDRESS_FIELD_HEIGHT) / 2
 private val SIDE_BUTTON_GAP = 8.dp
 private val SIDE_ICON_SIZE = 22.dp
+private val SIDE_DOT_INSET = 6.dp
 private val FIELD_PADDING = 4.dp
 private val SLOT_SIZE = 48.dp
 private val TITLE_END_PADDING = 8.dp

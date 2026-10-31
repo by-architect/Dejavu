@@ -544,4 +544,20 @@
     <string name="dejavu_starter_folder">Інструменти</string>
     <string name="dejavu_no_icon">Без значка</string>
     <string name="dejavu_no_color">Без кольору</string>
+    <string name="dejavu_tip_workspace_name">Торкніться назви робочого простору, щоб змінити його назву, значок, кольори та шпалери.</string>
+    <string name="dejavu_tip_new_tab">Утримуйте кнопку «Нова вкладка», щоб відкрити приватну вкладку або вкладку в контейнері.</string>
+    <string name="dejavu_tip_pin">Утримуйте вкладку й перетягніть її вище лінії, щоб закріпити, або нижче лінії, щоб відкріпити.</string>
+    <string name="dejavu_tip_folder">Торкніться тут, щоб створити теку для закріплених вкладок. Перетягніть вкладки на теку, щоб додати їх до неї.</string>
+    <string name="dejavu_tip_clear">Торкніться кнопки «Очистити», щоб закрити вкладки під лінією, або утримуйте її, щоб видалити вибрані вами дані.</string>
+    <string name="dejavu_tip_essential_add">Утримуйте вкладку й перетягніть її на самий верх, щоб додати до обраного, що показується в кожному робочому просторі.</string>
+    <string name="dejavu_tip_essential_hold">Утримуйте вкладку в обраному, щоб перемістити її в інше місце або прибрати з обраного.</string>
+    <string name="dejavu_tip_workspaces">Проведіть убік, щоб перемкнути робочий простір. Утримуйте один із них тут і перетягніть, щоб змінити їхній порядок.</string>
+    <string name="dejavu_tip_split">Утримуйте вкладку й перетягніть її на іншу, щоб бачити обидві сторінки одночасно.</string>
+    <string name="dejavu_tip_menu_up">Проведіть по цій панелі вгору, щоб відкрити меню.</string>
+    <string name="dejavu_tip_menu_down">Потягніть панель адреси вниз, щоб відкрити меню.</string>
+    <string name="dejavu_tip_got_it">Зрозуміло</string>
+    <string name="dejavu_tip_hide">Приховати поради</string>
+    <string name="dejavu_settings_tips">Поради</string>
+    <string name="dejavu_settings_tips_summary">Показувати поради про приховані жести, як-от утримання кнопки «Нова вкладка»</string>
+    <string name="dejavu_new">Нове</string>
 </resources>

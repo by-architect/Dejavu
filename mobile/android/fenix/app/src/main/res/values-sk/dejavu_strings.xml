@@ -544,4 +544,20 @@
     <string name="dejavu_starter_folder">Nástroje</string>
     <string name="dejavu_no_icon">Žiadna ikona</string>
     <string name="dejavu_no_color">Žiadna farba</string>
+    <string name="dejavu_tip_workspace_name">Ťuknutím na názov pracovného priestoru zmeníte jeho názov, ikonu, farby a tapetu.</string>
+    <string name="dejavu_tip_new_tab">Podržaním tlačidla Nová karta otvoríte súkromnú kartu alebo kartu v kontajneri.</string>
+    <string name="dejavu_tip_pin">Podržte kartu a potiahnite ju nad čiaru, ak ju chcete pripnúť, alebo pod čiaru, ak ju chcete odopnúť.</string>
+    <string name="dejavu_tip_folder">Ťuknutím sem vytvoríte priečinok pre pripnuté karty. Presunutím kariet na priečinok ich doň vložíte.</string>
+    <string name="dejavu_tip_clear">Ťuknutím na tlačidlo Vyprázdniť zavriete karty pod čiarou a podržaním odstránite údaje, ktoré ste vybrali.</string>
+    <string name="dejavu_tip_essential_add">Podržte kartu a potiahnutím úplne hore ju pridáte medzi obľúbené, ktoré sa zobrazujú v každom pracovnom priestore.</string>
+    <string name="dejavu_tip_essential_hold">Podržaním obľúbenej položky ju môžete presunúť na iné miesto alebo odstrániť z obľúbených.</string>
+    <string name="dejavu_tip_workspaces">Potiahnutím do strán prepínate medzi pracovnými priestormi. Podržte jeden z nich tu a potiahnutím zmeníte ich poradie.</string>
+    <string name="dejavu_tip_split">Podržte kartu a presuňte ju na inú, aby ste videli obe stránky naraz.</string>
+    <string name="dejavu_tip_menu_up">Potiahnutím tohto panela nahor otvoríte ponuku.</string>
+    <string name="dejavu_tip_menu_down">Potiahnutím panela s adresou nadol otvoríte ponuku.</string>
+    <string name="dejavu_tip_got_it">Rozumiem</string>
+    <string name="dejavu_tip_hide">Skryť tipy</string>
+    <string name="dejavu_settings_tips">Tipy</string>
+    <string name="dejavu_settings_tips_summary">Zobraziť tipy o skrytých gestách, ako je podržanie tlačidla Nová karta</string>
+    <string name="dejavu_new">Novinka</string>
 </resources>

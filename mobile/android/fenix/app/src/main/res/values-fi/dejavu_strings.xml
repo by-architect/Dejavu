@@ -528,4 +528,20 @@
     <string name="dejavu_starter_folder">Työkalut</string>
     <string name="dejavu_no_icon">Ei kuvaketta</string>
     <string name="dejavu_no_color">Ei väriä</string>
+    <string name="dejavu_tip_workspace_name">Napauta työtilan nimeä muuttaaksesi sen nimeä, kuvaketta, värejä ja taustakuvaa.</string>
+    <string name="dejavu_tip_new_tab">Pidä Uusi välilehti -painiketta painettuna avataksesi yksityisen välilehden tai välilehden säiliössä.</string>
+    <string name="dejavu_tip_pin">Pidä välilehteä painettuna ja vedä se viivan yläpuolelle kiinnittääksesi sen tai viivan alapuolelle irrottaaksesi kiinnityksen.</string>
+    <string name="dejavu_tip_folder">Napauta tästä luodaksesi kansion kiinnitetyille välilehdille. Pudota välilehtiä kansion päälle siirtääksesi ne sen sisään.</string>
+    <string name="dejavu_tip_clear">Napauta ”Tyhjennä”-painiketta sulkeaksesi viivan alapuolella olevat välilehdet, tai pidä sitä painettuna poistaaksesi valitsemasi selaustiedot.</string>
+    <string name="dejavu_tip_essential_add">Pidä välilehteä painettuna ja vedä se ylös tehdäksesi siitä suosikin, joka näkyy jokaisessa työtilassa.</string>
+    <string name="dejavu_tip_essential_hold">Pidä suosikkia painettuna siirtääksesi sen toiseen paikkaan tai poistaaksesi sen suosikeista.</string>
+    <string name="dejavu_tip_workspaces">Vaihda työtilaa pyyhkäisemällä sivuttain. Pidä yhtä painettuna tässä ja vedä sitä muuttaaksesi niiden järjestystä.</string>
+    <string name="dejavu_tip_split">Pidä välilehteä painettuna ja pudota se toisen päälle nähdäksesi molemmat sivut kerralla.</string>
+    <string name="dejavu_tip_menu_up">Avaa valikko pyyhkäisemällä tätä palkkia ylös.</string>
+    <string name="dejavu_tip_menu_down">Avaa valikko vetämällä osoitepalkkia alas.</string>
+    <string name="dejavu_tip_got_it">Selvä</string>
+    <string name="dejavu_tip_hide">Piilota vinkit</string>
+    <string name="dejavu_settings_tips">Vinkit</string>
+    <string name="dejavu_settings_tips_summary">Näytä vinkkejä piilotetuista eleistä, kuten Uusi välilehti -painikkeen pitkästä painalluksesta</string>
+    <string name="dejavu_new">Uutta</string>
 </resources>

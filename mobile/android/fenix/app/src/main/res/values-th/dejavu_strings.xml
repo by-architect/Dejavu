@@ -520,4 +520,20 @@
     <string name="dejavu_starter_folder">เครื่องมือ</string>
     <string name="dejavu_no_icon">ไม่มีไอคอน</string>
     <string name="dejavu_no_color">ไม่มีสี</string>
+    <string name="dejavu_tip_workspace_name">แตะชื่อพื้นที่ทำงานเพื่อเปลี่ยนชื่อ ไอคอน สี และรูปพื้นหลัง</string>
+    <string name="dejavu_tip_new_tab">กด “แท็บใหม่” ค้างไว้เพื่อเปิดแท็บส่วนตัว หรือแท็บในคอนเทนเนอร์</string>
+    <string name="dejavu_tip_pin">กดแท็บค้างไว้แล้วลากไปเหนือเส้นเพื่อปักหมุด หรือลากไปใต้เส้นเพื่อเลิกปักหมุด</string>
+    <string name="dejavu_tip_folder">แตะที่นี่เพื่อสร้างโฟลเดอร์สำหรับแท็บที่ปักหมุด วางแท็บลงบนโฟลเดอร์เพื่อใส่ไว้ข้างใน</string>
+    <string name="dejavu_tip_clear">แตะ “ล้าง” เพื่อปิดแท็บที่อยู่ใต้เส้น หรือกดค้างไว้เพื่อลบข้อมูลที่คุณเลือกไว้</string>
+    <string name="dejavu_tip_essential_add">กดแท็บค้างไว้แล้วลากไปด้านบนสุดเพื่อเพิ่มลงในเว็บที่ใช้บ่อย ซึ่งแสดงในทุกพื้นที่ทำงาน</string>
+    <string name="dejavu_tip_essential_hold">กดเว็บที่ใช้บ่อยค้างไว้เพื่อย้ายไปที่อื่น หรือเพื่อนำออกจากเว็บที่ใช้บ่อย</string>
+    <string name="dejavu_tip_workspaces">ปัดไปด้านข้างเพื่อสลับพื้นที่ทำงาน กดพื้นที่ทำงานค้างไว้ที่นี่แล้วลากเพื่อจัดลำดับใหม่</string>
+    <string name="dejavu_tip_split">กดแท็บค้างไว้แล้ววางลงบนอีกแท็บหนึ่งเพื่อดูทั้งสองหน้าพร้อมกัน</string>
+    <string name="dejavu_tip_menu_up">ปัดแถบนี้ขึ้นเพื่อเปิดเมนู</string>
+    <string name="dejavu_tip_menu_down">ดึงแถบที่อยู่ลงเพื่อเปิดเมนู</string>
+    <string name="dejavu_tip_got_it">เข้าใจแล้ว</string>
+    <string name="dejavu_tip_hide">ซ่อนเคล็ดลับ</string>
+    <string name="dejavu_settings_tips">เคล็ดลับ</string>
+    <string name="dejavu_settings_tips_summary">แสดงเคล็ดลับเกี่ยวกับท่าทางที่ซ่อนอยู่ เช่น การกด “แท็บใหม่” ค้างไว้</string>
+    <string name="dejavu_new">ใหม่</string>
 </resources>

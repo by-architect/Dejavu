@@ -560,4 +560,20 @@
     <string name="dejavu_starter_folder">Offer</string>
     <string name="dejavu_no_icon">Dim eicon</string>
     <string name="dejavu_no_color">Dim lliw</string>
+    <string name="dejavu_tip_workspace_name">Pwyswch enw’r gweithle i newid ei enw, ei eicon, ei liwiau a’i bapur wal.</string>
+    <string name="dejavu_tip_new_tab">Daliwch Tab newydd i agor tab preifat, neu dab mewn cynhwysydd.</string>
+    <string name="dejavu_tip_pin">Daliwch dab a’i lusgo uwchben y llinell i’w binio, neu o dan y llinell i’w ddatbinio.</string>
+    <string name="dejavu_tip_folder">Pwyswch yma i greu ffolder ar gyfer tabiau wedi’u pinio. Gollyngwch dabiau ar ffolder i’w rhoi ynddo.</string>
+    <string name="dejavu_tip_clear">Pwyswch Clirio i gau’r tabiau o dan y llinell, neu ei ddal i ddileu’r data a ddewisoch.</string>
+    <string name="dejavu_tip_essential_add">Daliwch dab a’i lusgo i’r brig i’w ychwanegu at yr hanfodion, sy’n ymddangos ym mhob gweithle.</string>
+    <string name="dejavu_tip_essential_hold">Daliwch hanfod i’w symud i le arall, neu i’w dynnu o’r hanfodion.</string>
+    <string name="dejavu_tip_workspaces">Llithrwch i’r ochr i newid gweithle. Daliwch un yma a’i lusgo i newid eu trefn.</string>
+    <string name="dejavu_tip_split">Daliwch dab a’i ollwng ar un arall i weld y ddwy dudalen ar yr un pryd.</string>
+    <string name="dejavu_tip_menu_up">Llithrwch y bar hwn i fyny i agor y ddewislen.</string>
+    <string name="dejavu_tip_menu_down">Llithrwch y bar cyfeiriad i lawr i agor y ddewislen.</string>
+    <string name="dejavu_tip_got_it">Iawn</string>
+    <string name="dejavu_tip_hide">Cuddio awgrymiadau</string>
+    <string name="dejavu_settings_tips">Awgrymiadau</string>
+    <string name="dejavu_settings_tips_summary">Dangos awgrymiadau am ystumiau cudd, fel dal Tab newydd</string>
+    <string name="dejavu_new">Newydd</string>
 </resources>

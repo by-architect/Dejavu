@@ -528,4 +528,20 @@
     <string name="dejavu_starter_folder">Amûr</string>
     <string name="dejavu_no_icon">Bêyî îkon</string>
     <string name="dejavu_no_color">Bêyî reng</string>
+    <string name="dejavu_tip_workspace_name">Li navê qadê bitikîne da ku nav, îkon, reng û wêneyê dîwêr ê wê biguherînî.</string>
+    <string name="dejavu_tip_new_tab">Ji bo hilpekîneke taybet an hilpekîneke di konteynerekê de, bi dirêjahî li «Hilpekîna nû» bitikîne.</string>
+    <string name="dejavu_tip_pin">Hilpekînekê bigire û wê bikişîne ser xetê da ku bizeliqînî, an bikişîne bin xetê da ku jê bikişînî.</string>
+    <string name="dejavu_tip_folder">Li vir bitikîne da ku ji bo hilpekînên sabît peldankekê çêkî. Hilpekînan li ser peldankekê berde da ku wan bixî hundir.</string>
+    <string name="dejavu_tip_clear">Li «Paqij bike» bitikîne da ku hilpekînên bin xetê bigirî, an bi dirêjahî lê bitikîne da ku daneyên ku te hilbijartine jê bibî.</string>
+    <string name="dejavu_tip_essential_add">Hilpekînekê bigire û wê bikişîne jor da ku bibe malpereke girîng, ku di her qadê de tê nîşandan.</string>
+    <string name="dejavu_tip_essential_hold">Bi dirêjahî li malpereke girîng bitikîne da ku wê bibî cihekî din, an jî ji malperên girîng rakî.</string>
+    <string name="dejavu_tip_workspaces">Ji bo guhertina qadê ber bi çep an rastê ve bikişîne. Li vir qadekê bigire û bikişîne da ku rêza wan biguherînî.</string>
+    <string name="dejavu_tip_split">Hilpekînekê bigire û li ser yeke din berde da ku her du rûpelan bi hev re bibînî.</string>
+    <string name="dejavu_tip_menu_up">Vê darikê ber bi jor ve bikişîne da ku menuyê vekî.</string>
+    <string name="dejavu_tip_menu_down">Darika navnîşanan ber bi jêr ve bikişîne da ku menuyê vekî.</string>
+    <string name="dejavu_tip_got_it">Min fêm kir</string>
+    <string name="dejavu_tip_hide">Şîretan veşêre</string>
+    <string name="dejavu_settings_tips">Şîret</string>
+    <string name="dejavu_settings_tips_summary">Şîretên li ser hereketên tiliyan ên veşartî nîşan bide, wekî bi dirêjahî tikandina li «Hilpekîna nû»</string>
+    <string name="dejavu_new">Nû</string>
 </resources>

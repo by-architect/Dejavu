@@ -536,4 +536,20 @@
     <string name="dejavu_starter_folder">Rīki</string>
     <string name="dejavu_no_icon">Bez ikonas</string>
     <string name="dejavu_no_color">Bez krāsas</string>
+    <string name="dejavu_tip_workspace_name">Pieskarieties darbvietas nosaukumam, lai mainītu tās nosaukumu, ikonu, krāsas un fona attēlu.</string>
+    <string name="dejavu_tip_new_tab">Turiet pogu Jauna cilne, lai atvērtu privāto cilni vai cilni konteinerā.</string>
+    <string name="dejavu_tip_pin">Turiet cilni un velciet to virs līnijas, lai piespraustu, vai zem līnijas, lai atspraustu.</string>
+    <string name="dejavu_tip_folder">Pieskarieties šeit, lai izveidotu mapi piespraustajām cilnēm. Nometiet cilnes uz mapes, lai ieliktu tās iekšā.</string>
+    <string name="dejavu_tip_clear">Pieskarieties pogai Notīrīt, lai aizvērtu cilnes zem līnijas, vai turiet to, lai izdzēstu jūsu izvēlētos datus.</string>
+    <string name="dejavu_tip_essential_add">Turiet cilni un velciet to uz augšu, lai pievienotu to Izlasei, kas redzama katrā darbvietā.</string>
+    <string name="dejavu_tip_essential_hold">Turiet Izlases cilni, lai pārvietotu to uz citu vietu vai noņemtu no Izlases.</string>
+    <string name="dejavu_tip_workspaces">Velciet uz sāniem, lai pārslēgtu darbvietu. Turiet darbvietu šeit un velciet to, lai mainītu secību.</string>
+    <string name="dejavu_tip_split">Turiet cilni un nometiet to uz citas, lai redzētu abas lapas vienlaikus.</string>
+    <string name="dejavu_tip_menu_up">Velciet šo joslu uz augšu, lai atvērtu izvēlni.</string>
+    <string name="dejavu_tip_menu_down">Pavelciet adreses joslu uz leju, lai atvērtu izvēlni.</string>
+    <string name="dejavu_tip_got_it">Sapratu</string>
+    <string name="dejavu_tip_hide">Slēpt padomus</string>
+    <string name="dejavu_settings_tips">Padomi</string>
+    <string name="dejavu_settings_tips_summary">Rādīt padomus par slēptiem žestiem, piemēram, pogas Jauna cilne turēšanu</string>
+    <string name="dejavu_new">Jaunums</string>
 </resources>

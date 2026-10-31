@@ -528,4 +528,20 @@
     <string name="dejavu_starter_folder">Verktyg</string>
     <string name="dejavu_no_icon">Ingen ikon</string>
     <string name="dejavu_no_color">Ingen färg</string>
+    <string name="dejavu_tip_workspace_name">Tryck på arbetsytans namn för att ändra dess namn, ikon, färger och bakgrundsbild.</string>
+    <string name="dejavu_tip_new_tab">Håll ned Ny flik för en privat flik eller en flik i en behållare.</string>
+    <string name="dejavu_tip_pin">Håll ned en flik och dra den ovanför linjen för att fästa den, eller nedanför linjen för att lossa den.</string>
+    <string name="dejavu_tip_folder">Tryck här för att skapa en mapp för fästa flikar. Släpp flikar på en mapp för att lägga dem i den.</string>
+    <string name="dejavu_tip_clear">Tryck på Rensa för att stänga flikarna nedanför linjen, eller håll ned den för att ta bort den data du valt.</string>
+    <string name="dejavu_tip_essential_add">Håll ned en flik och dra den högst upp för att lägga till den i Favoriter, som visas i varje arbetsyta.</string>
+    <string name="dejavu_tip_essential_hold">Håll ned en favorit för att flytta den till en annan plats, eller för att ta bort den från Favoriter.</string>
+    <string name="dejavu_tip_workspaces">Svep i sidled för att växla mellan arbetsytor. Håll ned en här och dra den för att ändra ordningen.</string>
+    <string name="dejavu_tip_split">Håll ned en flik och släpp den på en annan för att se båda sidorna samtidigt.</string>
+    <string name="dejavu_tip_menu_up">Svep det här fältet uppåt för att öppna menyn.</string>
+    <string name="dejavu_tip_menu_down">Dra adressfältet nedåt för att öppna menyn.</string>
+    <string name="dejavu_tip_got_it">Jag förstår</string>
+    <string name="dejavu_tip_hide">Dölj tips</string>
+    <string name="dejavu_settings_tips">Tips</string>
+    <string name="dejavu_settings_tips_summary">Visa tips om dolda gester, som att hålla ned Ny flik</string>
+    <string name="dejavu_new">Ny</string>
 </resources>

@@ -528,4 +528,20 @@
     <string name="dejavu_starter_folder">ਟੂਲ</string>
     <string name="dejavu_no_icon">ਕੋਈ ਆਈਕਨ ਨਹੀਂ</string>
     <string name="dejavu_no_color">ਕੋਈ ਰੰਗ ਨਹੀਂ</string>
+    <string name="dejavu_tip_workspace_name">ਵਰਕਸਪੇਸ ਦਾ ਨਾਂ, ਆਈਕਨ, ਰੰਗ ਅਤੇ ਵਾਲਪੇਪਰ ਬਦਲਣ ਲਈ ਉਸ ਦੇ ਨਾਂ ‘ਤੇ ਟੈਪ ਕਰੋ।</string>
+    <string name="dejavu_tip_new_tab">ਪ੍ਰਾਈਵੇਟ ਟੈਬ ਜਾਂ ਕੰਟੇਨਰ ਵਿੱਚ ਟੈਬ ਲਈ “ਨਵੀਂ ਟੈਬ” ਨੂੰ ਦਬਾ ਕੇ ਰੱਖੋ।</string>
+    <string name="dejavu_tip_pin">ਟੈਬ ਨੂੰ ਦਬਾ ਕੇ ਰੱਖੋ ਅਤੇ ਪਿੰਨ ਕਰਨ ਲਈ ਉਸ ਨੂੰ ਲਕੀਰ ਤੋਂ ਉੱਪਰ, ਜਾਂ ਪਿੰਨ ਹਟਾਉਣ ਲਈ ਲਕੀਰ ਤੋਂ ਹੇਠਾਂ ਖਿੱਚੋ।</string>
+    <string name="dejavu_tip_folder">ਪਿੰਨ ਕੀਤੀਆਂ ਟੈਬਾਂ ਲਈ ਫੋਲਡਰ ਬਣਾਉਣ ਵਾਸਤੇ ਇੱਥੇ ਟੈਪ ਕਰੋ। ਟੈਬਾਂ ਨੂੰ ਫੋਲਡਰ ਵਿੱਚ ਪਾਉਣ ਲਈ ਉਹਨਾਂ ਨੂੰ ਫੋਲਡਰ ਉੱਤੇ ਛੱਡੋ।</string>
+    <string name="dejavu_tip_clear">ਲਕੀਰ ਤੋਂ ਹੇਠਾਂ ਵਾਲੀਆਂ ਟੈਬਾਂ ਬੰਦ ਕਰਨ ਲਈ “ਸਾਫ਼ ਕਰੋ” ‘ਤੇ ਟੈਪ ਕਰੋ, ਜਾਂ ਤੁਹਾਡੇ ਵੱਲੋਂ ਚੁਣਿਆ ਡਾਟਾ ਹਟਾਉਣ ਲਈ ਉਸ ਨੂੰ ਦਬਾ ਕੇ ਰੱਖੋ।</string>
+    <string name="dejavu_tip_essential_add">ਟੈਬ ਨੂੰ ਦਬਾ ਕੇ ਰੱਖੋ ਅਤੇ ਉਸ ਨੂੰ ਸਿਖਰ ‘ਤੇ ਖਿੱਚੋ, ਤਾਂ ਜੋ ਉਹ ਹਰ ਵਰਕਸਪੇਸ ਵਿੱਚ ਦਿਖਾਈ ਦੇਣ ਵਾਲੀ ਜ਼ਰੂਰੀ ਬਣ ਜਾਵੇ।</string>
+    <string name="dejavu_tip_essential_hold">ਕਿਸੇ ਜ਼ਰੂਰੀ ਨੂੰ ਹੋਰ ਥਾਂ ਭੇਜਣ ਜਾਂ ਜ਼ਰੂਰੀ ਵਿੱਚੋਂ ਹਟਾਉਣ ਲਈ ਉਸ ਨੂੰ ਦਬਾ ਕੇ ਰੱਖੋ।</string>
+    <string name="dejavu_tip_workspaces">ਵਰਕਸਪੇਸ ਬਦਲਣ ਲਈ ਖੱਬੇ ਜਾਂ ਸੱਜੇ ਸਵਾਈਪ ਕਰੋ। ਕ੍ਰਮ ਬਦਲਣ ਲਈ ਇੱਥੇ ਕਿਸੇ ਵਰਕਸਪੇਸ ਨੂੰ ਦਬਾ ਕੇ ਰੱਖੋ ਅਤੇ ਖਿੱਚੋ।</string>
+    <string name="dejavu_tip_split">ਦੋਵੇਂ ਸਫ਼ੇ ਇੱਕੋ ਵੇਲੇ ਵੇਖਣ ਲਈ ਟੈਬ ਨੂੰ ਦਬਾ ਕੇ ਰੱਖੋ ਅਤੇ ਉਸ ਨੂੰ ਕਿਸੇ ਹੋਰ ਟੈਬ ਉੱਤੇ ਛੱਡੋ।</string>
+    <string name="dejavu_tip_menu_up">ਮੀਨੂ ਖੋਲ੍ਹਣ ਲਈ ਇਸ ਪੱਟੀ ਨੂੰ ਉੱਪਰ ਸਵਾਈਪ ਕਰੋ।</string>
+    <string name="dejavu_tip_menu_down">ਮੀਨੂ ਖੋਲ੍ਹਣ ਲਈ ਪਤਾ ਪੱਟੀ ਨੂੰ ਹੇਠਾਂ ਖਿੱਚੋ।</string>
+    <string name="dejavu_tip_got_it">ਸਮਝ ਗਏ</string>
+    <string name="dejavu_tip_hide">ਸੁਝਾਅ ਲੁਕਾਓ</string>
+    <string name="dejavu_settings_tips">ਸੁਝਾਅ</string>
+    <string name="dejavu_settings_tips_summary">“ਨਵੀਂ ਟੈਬ” ਨੂੰ ਦਬਾ ਕੇ ਰੱਖਣ ਵਰਗੇ ਲੁਕਵੇਂ ਇਸ਼ਾਰਿਆਂ ਬਾਰੇ ਸੁਝਾਅ ਦਿਖਾਓ</string>
+    <string name="dejavu_new">ਨਵਾਂ</string>
 </resources>

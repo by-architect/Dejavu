@@ -528,4 +528,20 @@
     <string name="dejavu_starter_folder">Գործիքներ</string>
     <string name="dejavu_no_icon">Առանց պատկերակի</string>
     <string name="dejavu_no_color">Առանց գույնի</string>
+    <string name="dejavu_tip_workspace_name">Հպեք տարածքի անվանը՝ դրա անունը, պատկերակը, գույները և պաստառը փոխելու համար։</string>
+    <string name="dejavu_tip_new_tab">Պահեք «Նոր ներդիր»֊ը՝ գաղտնի ներդիր կամ կոնտեյներում ներդիր բացելու համար։</string>
+    <string name="dejavu_tip_pin">Պահեք ներդիրը և քաշեք այն գծից վեր՝ ամրացնելու համար, կամ գծից ներքև՝ ապամրացնելու համար։</string>
+    <string name="dejavu_tip_folder">Հպեք այստեղ՝ ամրացված ներդիրների համար թղթապանակ ստեղծելու համար։ Գցեք ներդիրները թղթապանակի վրա՝ դրանք ներսում տեղադրելու համար։</string>
+    <string name="dejavu_tip_clear">Հպեք «Մաքրել»֊ին՝ գծից ներքև գտնվող ներդիրները փակելու համար, կամ պահեք այն՝ ձեր ընտրած դիտարկման տվյալները ջնջելու համար։</string>
+    <string name="dejavu_tip_essential_add">Պահեք ներդիրը և քաշեք այն վերև՝ այն կարևոր կայք դարձնելու համար, որը ցուցադրվում է բոլոր տարածքներում։</string>
+    <string name="dejavu_tip_essential_hold">Պահեք կարևոր կայքը՝ այն այլ տեղ տեղափոխելու կամ կարևոր կայքերից հեռացնելու համար։</string>
+    <string name="dejavu_tip_workspaces">Սահեցրեք կողք՝ տարածքների միջև անցնելու համար։ Պահեք դրանցից մեկն այստեղ և քաշեք՝ դրանց հերթականությունը փոխելու համար։</string>
+    <string name="dejavu_tip_split">Պահեք ներդիրը և գցեք այն մեկ այլ ներդիրի վրա՝ երկու էջերը միաժամանակ տեսնելու համար։</string>
+    <string name="dejavu_tip_menu_up">Սահեցրեք այս գոտին վերև՝ ցանկը բացելու համար։</string>
+    <string name="dejavu_tip_menu_down">Քաշեք հասցեագոտին ներքև՝ ցանկը բացելու համար։</string>
+    <string name="dejavu_tip_got_it">Հասկացա</string>
+    <string name="dejavu_tip_hide">Թաքցնել հուշումները</string>
+    <string name="dejavu_settings_tips">Հուշումներ</string>
+    <string name="dejavu_settings_tips_summary">Ցուցադրել հուշումներ թաքնված ժեստերի մասին, օրինակ՝ «Նոր ներդիր»֊ը պահելը</string>
+    <string name="dejavu_new">Նոր</string>
 </resources>

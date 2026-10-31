@@ -536,4 +536,20 @@
     <string name="dejavu_starter_folder">Alati</string>
     <string name="dejavu_no_icon">Bez ikone</string>
     <string name="dejavu_no_color">Bez boje</string>
+    <string name="dejavu_tip_workspace_name">Dodirnite naziv radnog prostora kako biste promijenili njegov naziv, ikonu, boje i pozadinu.</string>
+    <string name="dejavu_tip_new_tab">Zadržite „Nova kartica“ za privatnu karticu ili karticu u spremniku.</string>
+    <string name="dejavu_tip_pin">Zadržite karticu i povucite je iznad crte da biste je prikvačili ili ispod crte da biste je otkvačili.</string>
+    <string name="dejavu_tip_folder">Dodirnite ovdje za izradu mape za prikvačene kartice. Ispustite kartice na mapu da biste ih stavili u nju.</string>
+    <string name="dejavu_tip_clear">Dodirnite „Očisti“ za zatvaranje kartica ispod crte ili ga zadržite za brisanje podataka pregledavanja koje ste odabrali.</string>
+    <string name="dejavu_tip_essential_add">Zadržite karticu i povucite je na vrh da biste je dodali u Favorite, koji se prikazuju u svakom radnom prostoru.</string>
+    <string name="dejavu_tip_essential_hold">Zadržite Favorit da biste ga premjestili na drugo mjesto ili uklonili iz Favorita.</string>
+    <string name="dejavu_tip_workspaces">Povucite ulijevo ili udesno za prebacivanje između radnih prostora. Zadržite jedan ovdje i povucite ga da biste promijenili njihov redoslijed.</string>
+    <string name="dejavu_tip_split">Zadržite karticu i ispustite je na drugu da biste vidjeli obje stranice odjednom.</string>
+    <string name="dejavu_tip_menu_up">Povucite ovu traku prema gore za otvaranje izbornika.</string>
+    <string name="dejavu_tip_menu_down">Povucite adresnu traku prema dolje za otvaranje izbornika.</string>
+    <string name="dejavu_tip_got_it">Razumijem</string>
+    <string name="dejavu_tip_hide">Sakrij savjete</string>
+    <string name="dejavu_settings_tips">Savjeti</string>
+    <string name="dejavu_settings_tips_summary">Prikaži savjete o skrivenim gestama, poput zadržavanja „Nova kartica“</string>
+    <string name="dejavu_new">Novo</string>
 </resources>

@@ -63,6 +63,15 @@ import org.mozilla.fenix.dejavu.browser.openDejavuMenu
 import org.mozilla.fenix.dejavu.browser.shownPopupTheme
 import org.mozilla.fenix.dejavu.browser.tabOrShown
 import org.mozilla.fenix.dejavu.browser.workspaceTheme
+import org.mozilla.fenix.dejavu.discover.MENU_SWIPE
+import org.mozilla.fenix.dejavu.discover.Tip
+import org.mozilla.fenix.dejavu.discover.TipGesture
+import org.mozilla.fenix.dejavu.discover.TipHost
+import org.mozilla.fenix.dejavu.discover.TipScreen
+import org.mozilla.fenix.dejavu.discover.isNewAmong
+import org.mozilla.fenix.dejavu.discover.newDot
+import org.mozilla.fenix.dejavu.discover.rememberUnseenNewThings
+import org.mozilla.fenix.dejavu.discover.tipTarget
 import org.mozilla.fenix.dejavu.settings.DejavuSettings
 import org.mozilla.fenix.dejavu.settings.PageBackdrop
 import org.mozilla.fenix.dejavu.ui.TapIcon
@@ -90,6 +99,7 @@ fun DejavuActionsBar(onEvent: (BrowserToolbarEvent) -> Unit, tabId: String? = nu
     val barTab = rememberBarTab(tabId)
     val state = barTab.state
     var asking by remember { mutableStateOf<TabAction?>(null) }
+    val unseen = rememberUnseenNewThings()
 
     Box(
         modifier = Modifier
@@ -98,13 +108,16 @@ fun DejavuActionsBar(onEvent: (BrowserToolbarEvent) -> Unit, tabId: String? = nu
             .padding(start = BAR_SIDE_MARGIN, end = BAR_SIDE_MARGIN, bottom = ACTIONS_BAR_BOTTOM_MARGIN)
             .fillMaxWidth()
             .height(BAR_HEIGHT)
+            .tipTarget(Tip.PAGE_MENU, TipGesture.Swipe(dy = -MENU_SWIPE), enabled = tabId == null, drawsItself = true)
             .clip(BAR_SHAPE)
             .background(MaterialTheme.colorScheme.surface)
             .workspaceTheme(shownPopupTheme(tabId))
             .border(1.dp, MaterialTheme.colorScheme.onSurface.copy(alpha = BORDER_ALPHA), BAR_SHAPE),
     ) {
         val buttons = entries.forSplitWays(state.splitWays, state.isSplit).map { entry ->
-            BarItem(entry.look(state)) { entry.tap(state, Source.NavigationBar, onEvent) { asking = it } }
+            BarItem(entry.look(state), entry.isNewAmong(unseen)) {
+                entry.tap(state, Source.NavigationBar, onEvent) { asking = it }
+            }
         }
         // Screen readers cannot swipe the bar up, so every button also offers the menu as an action.
         val menuAction = listOf(
@@ -119,6 +132,8 @@ fun DejavuActionsBar(onEvent: (BrowserToolbarEvent) -> Unit, tabId: String? = nu
         ) {
             buttons.forEach { BarButton(it, menuAction, Modifier.weight(1f)) }
         }
+        // Swiping the bar up opens the menu, which a tip shows, though not below the pages of a split view.
+        if (tabId == null) TipHost(TipScreen.PAGE, allowed = SplitScreen.shown == null)
     }
 
     AskingDialog(barTab, asking) { asking = null }
@@ -245,7 +260,7 @@ fun DejavuActionsBars(onEvent: (BrowserToolbarEvent) -> Unit) {
     }
 }
 
-private class BarItem(val look: EntryLook, val onClick: () -> Unit)
+private class BarItem(val look: EntryLook, val isNew: Boolean, val onClick: () -> Unit)
 
 @Composable
 private fun BarButton(item: BarItem, a11yActions: List<CustomAccessibilityAction>, modifier: Modifier = Modifier) {
@@ -256,6 +271,7 @@ private fun BarButton(item: BarItem, a11yActions: List<CustomAccessibilityAction
             contentAlignment = Alignment.Center,
             modifier = Modifier
                 .size(48.dp)
+                .newDot(item.isNew, inset = BAR_DOT_INSET)
                 .clip(CircleShape)
                 .background(if (look.active) MaterialTheme.colorScheme.secondaryContainer else Color.Transparent)
                 .clickable(enabled = look.enabled, role = Role.Button) {
@@ -376,3 +392,4 @@ private val BAR_SHAPE = RoundedCornerShape(percent = 50)
 internal const val BORDER_ALPHA = 0.14f
 private const val DISABLED_ALPHA = 0.38f
 private const val UNFOCUSED_ALPHA = 0.75f
+private val BAR_DOT_INSET = 10.dp

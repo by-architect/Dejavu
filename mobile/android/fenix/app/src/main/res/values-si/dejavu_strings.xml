@@ -528,4 +528,20 @@
     <string name="dejavu_starter_folder">මෙවලම්</string>
     <string name="dejavu_no_icon">අයිකනයක් නැත</string>
     <string name="dejavu_no_color">වර්ණයක් නැත</string>
+    <string name="dejavu_tip_workspace_name">නම, අයිකනය, වර්ණ සහ බිතුපත වෙනස් කිරීමට අවකාශයේ නම මත තට්ටු කරන්න.</string>
+    <string name="dejavu_tip_new_tab">පෞද්ගලික පටිත්තක් හෝ බහාලුමක පටිත්තක් සඳහා “නව පටිත්ත” තද කර අල්ලාගෙන සිටින්න.</string>
+    <string name="dejavu_tip_pin">පටිත්තක් තද කර අල්ලාගෙන, එය ඇමිණීමට රේඛාවට ඉහළට හෝ එය ගැලවීමට රේඛාවට පහළට අදින්න.</string>
+    <string name="dejavu_tip_folder">අමුණන ලද පටිති සඳහා ෆෝල්ඩරයක් සෑදීමට මෙහි තට්ටු කරන්න. පටිති ෆෝල්ඩරයක් තුළට දැමීමට ඒවා ෆෝල්ඩරය මත දමන්න.</string>
+    <string name="dejavu_tip_clear">රේඛාවට පහළින් ඇති පටිති වැසීමට “හිස් කරන්න” තට්ටු කරන්න, නැතහොත් ඔබ තෝරාගත් දත්ත මැකීමට එය තද කර අල්ලාගෙන සිටින්න.</string>
+    <string name="dejavu_tip_essential_add">පටිත්තක් තද කර අල්ලාගෙන, සෑම අවකාශයකම පෙන්වන අත්‍යවශ්‍යයට එක් කිරීමට එය ඉහළටම අදින්න.</string>
+    <string name="dejavu_tip_essential_hold">අත්‍යවශ්‍යයක් වෙනත් තැනකට ගෙනයාමට හෝ අත්‍යවශ්‍යයෙන් ඉවත් කිරීමට එය තද කර අල්ලාගෙන සිටින්න.</string>
+    <string name="dejavu_tip_workspaces">අවකාශ මාරු කිරීමට පැත්තට ස්වයිප් කරන්න. ඒවායේ පිළිවෙළ වෙනස් කිරීමට මෙහි එකක් තද කර අල්ලාගෙන අදින්න.</string>
+    <string name="dejavu_tip_split">පටිත්තක් තද කර අල්ලාගෙන, පිටු දෙකම එකවර බැලීමට එය වෙනත් පටිත්තක් මතට දමන්න.</string>
+    <string name="dejavu_tip_menu_up">මෙනුව විවෘත කිරීමට මෙම තීරුව ඉහළට අදින්න.</string>
+    <string name="dejavu_tip_menu_down">මෙනුව විවෘත කිරීමට ලිපින තීරුව පහළට අදින්න.</string>
+    <string name="dejavu_tip_got_it">තේරුණා</string>
+    <string name="dejavu_tip_hide">ඉඟි සඟවන්න</string>
+    <string name="dejavu_settings_tips">ඉඟි</string>
+    <string name="dejavu_settings_tips_summary">“නව පටිත්ත” තද කර අල්ලාගෙන සිටීම වැනි සැඟවුණු අභින පිළිබඳ ඉඟි පෙන්වන්න</string>
+    <string name="dejavu_new">නව</string>
 </resources>

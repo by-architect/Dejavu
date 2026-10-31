@@ -520,4 +520,20 @@
     <string name="dejavu_starter_folder">Công cụ</string>
     <string name="dejavu_no_icon">Không có biểu tượng</string>
     <string name="dejavu_no_color">Không có màu</string>
+    <string name="dejavu_tip_workspace_name">Nhấn vào tên không gian làm việc để đổi tên, biểu tượng, màu và hình nền của nó.</string>
+    <string name="dejavu_tip_new_tab">Nhấn giữ “Thẻ mới” để mở thẻ riêng tư hoặc thẻ trong vùng chứa.</string>
+    <string name="dejavu_tip_pin">Nhấn giữ một thẻ và kéo lên trên đường kẻ để ghim, hoặc xuống dưới đường kẻ để bỏ ghim.</string>
+    <string name="dejavu_tip_folder">Nhấn vào đây để tạo thư mục cho thẻ đã ghim. Thả thẻ vào một thư mục để cho vào trong đó.</string>
+    <string name="dejavu_tip_clear">Nhấn vào “Xóa hết” để đóng các thẻ bên dưới đường kẻ, hoặc nhấn giữ để xóa dữ liệu bạn đã chọn.</string>
+    <string name="dejavu_tip_essential_add">Nhấn giữ một thẻ và kéo lên trên cùng để thêm vào trang thiết yếu, hiển thị trong mọi không gian làm việc.</string>
+    <string name="dejavu_tip_essential_hold">Nhấn giữ một trang thiết yếu để di chuyển sang vị trí khác, hoặc để xóa khỏi trang thiết yếu.</string>
+    <string name="dejavu_tip_workspaces">Vuốt sang một bên để chuyển không gian làm việc. Nhấn giữ một không gian ở đây và kéo để sắp xếp lại.</string>
+    <string name="dejavu_tip_split">Nhấn giữ một thẻ và thả vào thẻ khác để xem cả hai trang cùng lúc.</string>
+    <string name="dejavu_tip_menu_up">Vuốt thanh này lên để mở trình đơn.</string>
+    <string name="dejavu_tip_menu_down">Kéo thanh địa chỉ xuống để mở trình đơn.</string>
+    <string name="dejavu_tip_got_it">Đã hiểu</string>
+    <string name="dejavu_tip_hide">Ẩn mẹo</string>
+    <string name="dejavu_settings_tips">Mẹo</string>
+    <string name="dejavu_settings_tips_summary">Hiển thị mẹo về các cử chỉ ẩn, như nhấn giữ “Thẻ mới”</string>
+    <string name="dejavu_new">Mới</string>
 </resources>

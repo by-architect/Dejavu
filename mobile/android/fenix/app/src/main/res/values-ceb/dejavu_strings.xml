@@ -528,4 +528,20 @@
     <string name="dejavu_starter_folder">Mga Tool</string>
     <string name="dejavu_no_icon">Walay icon</string>
     <string name="dejavu_no_color">Walay kolor</string>
+    <string name="dejavu_tip_workspace_name">I-tap ang ngalan sa workspace aron usbon ang ngalan, icon, mga kolor ug wallpaper niini.</string>
+    <string name="dejavu_tip_new_tab">Pugngi ang “Bag-o nga Tab” aron maka-abli og pribadong tab, o tab sa usa ka container.</string>
+    <string name="dejavu_tip_pin">Pugngi ang usa ka tab ug i-drag kini ibabaw sa linya aron i-pin, o ubos sa linya aron i-unpin.</string>
+    <string name="dejavu_tip_folder">I-tap dinhi aron maghimo og folder para sa naka-pin nga mga tab. Ihulog ang mga tab sa usa ka folder aron isulod kini.</string>
+    <string name="dejavu_tip_clear">I-tap ang “i-Clear” aron isira ang mga tab ubos sa linya, o pugngi kini aron papason ang data nga imong gipili.</string>
+    <string name="dejavu_tip_essential_add">Pugngi ang usa ka tab ug i-drag kini sa pinakataas aron idugang sa Mahinungdanon, nga makita sa matag workspace.</string>
+    <string name="dejavu_tip_essential_hold">Pugngi ang usa ka Mahinungdanon aron ibalhin kini sa laing dapit, o aron kuhaon kini sa Mahinungdanon.</string>
+    <string name="dejavu_tip_workspaces">I-swipe patagilid aron mobalhin og workspace. Pugngi ang usa dinhi ug i-drag kini aron usbon ang ilang han-ay.</string>
+    <string name="dejavu_tip_split">Pugngi ang usa ka tab ug ihulog kini sa laing tab aron makita ang duha ka page dungan.</string>
+    <string name="dejavu_tip_menu_up">I-swipe pataas kining bar aron maablihan ang menu.</string>
+    <string name="dejavu_tip_menu_down">I-swipe paubos ang address bar aron maablihan ang menu.</string>
+    <string name="dejavu_tip_got_it">Nasabtan</string>
+    <string name="dejavu_tip_hide">Tagoa ang mga tip</string>
+    <string name="dejavu_settings_tips">Mga tip</string>
+    <string name="dejavu_settings_tips_summary">Ipakita ang mga tip bahin sa tinagong mga gesture, sama sa pagpugong sa “Bag-o nga Tab”</string>
+    <string name="dejavu_new">Bag-o</string>
 </resources>

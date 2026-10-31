@@ -528,4 +528,20 @@
     <string name="dejavu_starter_folder">اوزار</string>
     <string name="dejavu_no_icon">کوئی آئیکن نہیں</string>
     <string name="dejavu_no_color">کوئی رنگ نہیں</string>
+    <string name="dejavu_tip_workspace_name">ورک سپیس دا ناں، آئیکن، رنگ تے والپیپر بدلن لئی اوہدے ناں تے ٹیپ کرو۔</string>
+    <string name="dejavu_tip_new_tab">نجی ٹیب یا کنٹینر وچ ٹیب لئی “نویں ٹیب کھولھو” نوں دبا کے رکھو۔</string>
+    <string name="dejavu_tip_pin">ٹیب نوں دبا کے رکھو تے پن کرن لئی اوہنوں لکیر توں اُتے، یا پن ہٹاؤن لئی لکیر توں تلے کھچو۔</string>
+    <string name="dejavu_tip_folder">پن کیتیاں ٹیباں لئی فولڈر بناؤن واسطے ایتھے ٹیپ کرو۔ ٹیباں نوں فولڈر وچ پاؤن لئی اوہناں نوں فولڈر اُتے چھڈو۔</string>
+    <string name="dejavu_tip_clear">لکیر توں تلے والیاں ٹیباں بند کرن لئی “صاف کرو” تے ٹیپ کرو، یا اپݨا چُݨیا ہویا ڈیٹا مٹاؤن لئی اوہنوں دبا کے رکھو۔</string>
+    <string name="dejavu_tip_essential_add">ٹیب نوں دبا کے رکھو تے اوہنوں سب توں اُتے کھچو، تاں جو اوہ ہر ورک سپیس وچ وکھائی دین والی ضروری چیز بن جاوے۔</string>
+    <string name="dejavu_tip_essential_hold">کسے ضروری چیز نوں ہور تھاں لے جاݨ لئی یا ضروری چیزاں توں ہٹاؤن لئی اوہنوں دبا کے رکھو۔</string>
+    <string name="dejavu_tip_workspaces">ورک سپیس بدلن لئی کھبے یا سجے سوائپ کرو۔ ترتیب بدلن لئی ایتھے کسے ورک سپیس نوں دبا کے رکھو تے کھچو۔</string>
+    <string name="dejavu_tip_split">دوویں صفحے اکو ویلے ویکھن لئی ٹیب نوں دبا کے رکھو تے اوہنوں کسے ہور ٹیب اُتے چھڈو۔</string>
+    <string name="dejavu_tip_menu_up">مینو کھولن لئی ایس بار نوں اُتے سوائپ کرو۔</string>
+    <string name="dejavu_tip_menu_down">مینو کھولن لئی پتہ بار نوں تلے کھچو۔</string>
+    <string name="dejavu_tip_got_it">ٹھیک اے</string>
+    <string name="dejavu_tip_hide">مشورے لکاؤ</string>
+    <string name="dejavu_settings_tips">مشورے</string>
+    <string name="dejavu_settings_tips_summary">لُکے ہوئے اشاریاں بارے مشورے وکھاؤ، جویں “نویں ٹیب کھولھو” نوں دبا کے رکھݨا</string>
+    <string name="dejavu_new">نواں</string>
 </resources>

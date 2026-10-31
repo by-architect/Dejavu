@@ -528,4 +528,20 @@
     <string name="dejavu_starter_folder">Mjete</string>
     <string name="dejavu_no_icon">Pa ikonë</string>
     <string name="dejavu_no_color">Pa ngjyrë</string>
+    <string name="dejavu_tip_workspace_name">Prekni emrin e hapësirës së punës, që t\'i ndryshoni emrin, ikonën, ngjyrat dhe sfondin.</string>
+    <string name="dejavu_tip_new_tab">Mbani shtypur “Skedë e re” për një skedë private, ose për një skedë në një kontejner.</string>
+    <string name="dejavu_tip_pin">Mbani shtypur një skedë dhe tërhiqeni mbi vijë, që ta fiksoni, ose nën vijë, që ta shfiksoni.</string>
+    <string name="dejavu_tip_folder">Prekni këtu, që të krijoni një dosje për skeda të fiksuara. Lëshoni skeda mbi një dosje, që t\'i vini brenda saj.</string>
+    <string name="dejavu_tip_clear">Prekni “Pastroji”, që të mbyllni skedat nën vijë, ose mbajeni shtypur, që të fshini të dhënat që zgjodhët.</string>
+    <string name="dejavu_tip_essential_add">Mbani shtypur një skedë dhe tërhiqeni në krye, që ta shtoni te thelbësoret, të cilat shfaqen në çdo hapësirë pune.</string>
+    <string name="dejavu_tip_essential_hold">Mbani shtypur një thelbësore, që ta lëvizni diku tjetër, ose që ta hiqni nga thelbësoret.</string>
+    <string name="dejavu_tip_workspaces">Fërkoni për anash, që të ndërroni hapësira pune. Mbani shtypur një të tillë këtu dhe tërhiqeni, që t\'u ndryshoni radhën.</string>
+    <string name="dejavu_tip_split">Mbani shtypur një skedë dhe lëshojeni mbi një tjetër, që të shihni të dyja faqet njëherësh.</string>
+    <string name="dejavu_tip_menu_up">Fërkojeni për sipër këtë shirit, që të hapet menuja.</string>
+    <string name="dejavu_tip_menu_down">Tërhiqeni për poshtë shtyllën e adresave, që të hapet menuja.</string>
+    <string name="dejavu_tip_got_it">E mora vesh</string>
+    <string name="dejavu_tip_hide">Fshihi ndihmëzat</string>
+    <string name="dejavu_settings_tips">Ndihmëza</string>
+    <string name="dejavu_settings_tips_summary">Shfaq ndihmëza mbi gjeste të fshehura, si mbajtja shtypur e “Skedë e re”</string>
+    <string name="dejavu_new">E re</string>
 </resources>

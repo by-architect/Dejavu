@@ -528,4 +528,20 @@
     <string name="dejavu_starter_folder">Құралдар</string>
     <string name="dejavu_no_icon">Белгіше жоқ</string>
     <string name="dejavu_no_color">Түс жоқ</string>
+    <string name="dejavu_tip_workspace_name">Жұмыс кеңістігінің атын, белгішесін, түстерін және тұсқағазын өзгерту үшін оның атын түртіңіз.</string>
+    <string name="dejavu_tip_new_tab">Жекелік бетін немесе контейнердегі бетті ашу үшін «Жаңа бет» түймесін басып тұрыңыз.</string>
+    <string name="dejavu_tip_pin">Бетті басып тұрып, бекіту үшін оны сызықтан жоғары, ал бекітуден шығару үшін сызықтан төмен сүйреңіз.</string>
+    <string name="dejavu_tip_folder">Бекітілген беттерге арналған қалта жасау үшін осы жерді түртіңіз. Беттерді қалтаға салу үшін оларды қалтаның үстіне тастаңыз.</string>
+    <string name="dejavu_tip_clear">Сызықтан төмендегі беттерді жабу үшін «Тазалау» түймесін түртіңіз, ал сіз таңдаған деректерді өшіру үшін оны басып тұрыңыз.</string>
+    <string name="dejavu_tip_essential_add">Бетті әр жұмыс кеңістігінде көрінетін негізгіге айналдыру үшін оны басып тұрып, жоғарыға сүйреңіз.</string>
+    <string name="dejavu_tip_essential_hold">Негізгіні басқа орынға жылжыту немесе негізгілерден шығару үшін оны басып тұрыңыз.</string>
+    <string name="dejavu_tip_workspaces">Жұмыс кеңістігін ауыстыру үшін солға не оңға сырғытыңыз. Ретін өзгерту үшін мұндағы жұмыс кеңістігін басып тұрып, сүйреңіз.</string>
+    <string name="dejavu_tip_split">Екі бетті бірге көру үшін бетті басып тұрып, басқа беттің үстіне тастаңыз.</string>
+    <string name="dejavu_tip_menu_up">Мәзірді ашу үшін осы тақтаны жоғары сырғытыңыз.</string>
+    <string name="dejavu_tip_menu_down">Мәзірді ашу үшін адрестік жолақты төмен тартыңыз.</string>
+    <string name="dejavu_tip_got_it">Түсіндім</string>
+    <string name="dejavu_tip_hide">Кеңестерді жасыру</string>
+    <string name="dejavu_settings_tips">Кеңестер</string>
+    <string name="dejavu_settings_tips_summary">«Жаңа бет» түймесін басып тұру сияқты жасырын ым қимылдары туралы кеңестерді көрсету</string>
+    <string name="dejavu_new">Жаңа</string>
 </resources>

@@ -544,4 +544,20 @@
     <string name="dejavu_starter_folder">Rědy</string>
     <string name="dejavu_no_icon">Žeden symbol</string>
     <string name="dejavu_no_color">Žedna barwa</string>
+    <string name="dejavu_tip_workspace_name">Tłoc na mě źěłowego ruma, aby jogo mě, symbol, barwy a slězynowy wobraz změnił.</string>
+    <string name="dejavu_tip_new_tab">Źarź „Nowy rejtarik“ tłocony, aby priwatny rejtarik abo rejtarik w kontejnerje wócynił.</string>
+    <string name="dejavu_tip_pin">Źarź rejtarik tłocony a śěgni jen nad liniju, aby jen pśipěł, abo pód liniju, aby jen wotpěł.</string>
+    <string name="dejavu_tip_folder">Tłoc how, aby zarědnik za pśipěte rejtariki napórał. Pušć rejtariki na zarědnik, aby je do njogo złožył.</string>
+    <string name="dejavu_tip_clear">Tłoc na „Wuprozniś“, aby rejtariki pód liniju zacynił, abo źarź jen tłocony, aby wubrane daty wulašował.</string>
+    <string name="dejavu_tip_essential_add">Źarź rejtarik tłocony a śěgni jen górjej, aby jen k nejwažnjejšym pśidał, kótarež se w kuždem źěłowem rumje pokazuju.</string>
+    <string name="dejavu_tip_essential_hold">Źarź zapisk z nejwažnjejšych tłocony, aby jen na druge městno pśesunuł abo wót nejwažnjejšych wótwónoźeł.</string>
+    <string name="dejavu_tip_workspaces">Pótegni na bok, aby źěłowy rum změnił. Źarź how jaden tłocony a śěgni jen, aby jich pórěd změnił.</string>
+    <string name="dejavu_tip_split">Źarź rejtarik tłocony a pušć jen na drugi, aby wobej boka naraz wiźeł.</string>
+    <string name="dejavu_tip_menu_up">Pótegni toś tu lajstu górjej, aby meni wócynił.</string>
+    <string name="dejavu_tip_menu_down">Pótegni adresowe pólo dołoj, aby meni wócynił.</string>
+    <string name="dejavu_tip_got_it">Som zrozměł</string>
+    <string name="dejavu_tip_hide">Pokazki schowaś</string>
+    <string name="dejavu_settings_tips">Pokazki</string>
+    <string name="dejavu_settings_tips_summary">Pokazki wó schowanych gestach pokazaś, na pś. dłujke tłocenje na „Nowy rejtarik“</string>
+    <string name="dejavu_new">Nowy</string>
 </resources>

@@ -544,4 +544,20 @@
     <string name="dejavu_starter_folder">Інструменты</string>
     <string name="dejavu_no_icon">Без значка</string>
     <string name="dejavu_no_color">Без колеру</string>
+    <string name="dejavu_tip_workspace_name">Націсніце на назву прасторы, каб змяніць яе назву, значок, колеры і шпалеры.</string>
+    <string name="dejavu_tip_new_tab">Утрымлівайце «Новая картка», каб адкрыць прыватную картку або картку ў кантэйнеры.</string>
+    <string name="dejavu_tip_pin">Утрымлівайце картку і перацягніце яе вышэй за лінію, каб замацаваць, або ніжэй за лінію, каб адмацаваць.</string>
+    <string name="dejavu_tip_folder">Націсніце тут, каб стварыць папку для замацаваных картак. Пакіньце карткі на папцы, каб пакласці іх унутр.</string>
+    <string name="dejavu_tip_clear">Націсніце «Ачысціць», каб закрыць карткі пад лініяй, або ўтрымлівайце кнопку, каб выдаліць выбраныя вамі дадзеныя.</string>
+    <string name="dejavu_tip_essential_add">Утрымлівайце картку і перацягніце яе ўверх, каб дадаць у важнае, якое бачна ў кожнай прасторы.</string>
+    <string name="dejavu_tip_essential_hold">Утрымлівайце элемент важнага, каб перамясціць яго ў іншае месца або прыбраць з важнага.</string>
+    <string name="dejavu_tip_workspaces">Правядзіце ўбок, каб пераключыць прастору. Утрымлівайце адну з іх тут і перацягніце, каб змяніць іх парадак.</string>
+    <string name="dejavu_tip_split">Утрымлівайце картку і пакіньце яе на іншай, каб бачыць абедзве старонкі адначасова.</string>
+    <string name="dejavu_tip_menu_up">Правядзіце гэту панэль уверх, каб адкрыць меню.</string>
+    <string name="dejavu_tip_menu_down">Правядзіце адрасны радок уніз, каб адкрыць меню.</string>
+    <string name="dejavu_tip_got_it">Зразумела</string>
+    <string name="dejavu_tip_hide">Схаваць парады</string>
+    <string name="dejavu_settings_tips">Парады</string>
+    <string name="dejavu_settings_tips_summary">Паказваць парады пра схаваныя жэсты, напрыклад утрыманне кнопкі «Новая картка»</string>
+    <string name="dejavu_new">Новае</string>
 </resources>

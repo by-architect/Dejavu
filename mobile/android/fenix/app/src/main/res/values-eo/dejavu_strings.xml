@@ -528,4 +528,20 @@
     <string name="dejavu_starter_folder">Iloj</string>
     <string name="dejavu_no_icon">Neniu piktogramo</string>
     <string name="dejavu_no_color">Neniu koloro</string>
+    <string name="dejavu_tip_workspace_name">Tuŝu la nomon de la laborspaco por ŝanĝi ĝian nomon, piktogramon, kolorojn kaj ekranfonon.</string>
+    <string name="dejavu_tip_new_tab">Tenu “Nova langeto” por malfermi privatan langeton aŭ langeton en ujo.</string>
+    <string name="dejavu_tip_pin">Tenu langeton kaj trenu ĝin super la linion por pingli ĝin, aŭ sub la linion por depingli ĝin.</string>
+    <string name="dejavu_tip_folder">Tuŝu ĉi tie por krei dosierujon por pinglitaj langetoj. Demetu langetojn sur dosierujon por meti ilin en ĝin.</string>
+    <string name="dejavu_tip_clear">Tuŝu “Forviŝi” por fermi la langetojn sub la linio, aŭ tenu ĝin por forigi la datumojn, kiujn vi elektis.</string>
+    <string name="dejavu_tip_essential_add">Tenu langeton kaj trenu ĝin al la supro por aldoni ĝin al esencaĵoj, montrataj en ĉiu laborspaco.</string>
+    <string name="dejavu_tip_essential_hold">Tenu esencaĵon por movi ĝin al alia loko, aŭ por forigi ĝin el esencaĵoj.</string>
+    <string name="dejavu_tip_workspaces">Ŝovu flanken por ŝanĝi laborspacon. Tenu unu ĉi tie kaj trenu ĝin por ŝanĝi ilian ordon.</string>
+    <string name="dejavu_tip_split">Tenu langeton kaj demetu ĝin sur alian por vidi ambaŭ paĝojn samtempe.</string>
+    <string name="dejavu_tip_menu_up">Ŝovu ĉi tiun strion supren por malfermi la menuon.</string>
+    <string name="dejavu_tip_menu_down">Ŝovu la adresan strion malsupren por malfermi la menuon.</string>
+    <string name="dejavu_tip_got_it">Mi komprenis</string>
+    <string name="dejavu_tip_hide">Kaŝi konsilojn</string>
+    <string name="dejavu_settings_tips">Konsiloj</string>
+    <string name="dejavu_settings_tips_summary">Montri konsilojn pri kaŝitaj gestoj, ekzemple teni “Nova langeto”</string>
+    <string name="dejavu_new">Nova</string>
 </resources>

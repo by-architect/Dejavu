@@ -536,4 +536,20 @@
     <string name="dejavu_starter_folder">Алатке</string>
     <string name="dejavu_no_icon">Без иконе</string>
     <string name="dejavu_no_color">Без боје</string>
+    <string name="dejavu_tip_workspace_name">Додирните назив радног простора да промените његов назив, икону, боје и позадину.</string>
+    <string name="dejavu_tip_new_tab">Задржите „Нови језичак“ за приватни језичак или језичак у контејнеру.</string>
+    <string name="dejavu_tip_pin">Задржите језичак и превуците га изнад линије да га закачите или испод линије да га откачите.</string>
+    <string name="dejavu_tip_folder">Додирните овде да направите фасциклу за закачене језичке. Испустите језичке на фасциклу да их ставите у њу.</string>
+    <string name="dejavu_tip_clear">Додирните „Очисти“ да затворите језичке испод линије или га задржите да обришете податке које сте изабрали.</string>
+    <string name="dejavu_tip_essential_add">Задржите језичак и превуците га на врх да га додате у Фаворите, који се приказују у сваком радном простору.</string>
+    <string name="dejavu_tip_essential_hold">Задржите Фаворит да га померите на друго место или да га уклоните из Фаворита.</string>
+    <string name="dejavu_tip_workspaces">Превуците у страну да промените радни простор. Задржите један овде и превуците га да промените њихов редослед.</string>
+    <string name="dejavu_tip_split">Задржите језичак и испустите га на други да видите обе странице одједном.</string>
+    <string name="dejavu_tip_menu_up">Превуците ову траку нагоре да отворите мени.</string>
+    <string name="dejavu_tip_menu_down">Повуците адресну траку надоле да отворите мени.</string>
+    <string name="dejavu_tip_got_it">Важи</string>
+    <string name="dejavu_tip_hide">Сакриј савете</string>
+    <string name="dejavu_settings_tips">Савети</string>
+    <string name="dejavu_settings_tips_summary">Прикажи савете о скривеним гестовима, као што је задржавање дугмета „Нови језичак“</string>
+    <string name="dejavu_new">Ново</string>
 </resources>

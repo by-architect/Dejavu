@@ -54,6 +54,7 @@ import androidx.compose.ui.layout.LayoutCoordinates
 import androidx.compose.ui.layout.boundsInRoot
 import androidx.compose.ui.layout.onGloballyPositioned
 import androidx.compose.ui.layout.positionInRoot
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.platform.LocalDensity
 import androidx.compose.ui.platform.LocalHapticFeedback
 import androidx.compose.ui.res.painterResource
@@ -67,6 +68,11 @@ import kotlinx.coroutines.delay
 import mozilla.components.ui.icons.R as iconsR
 import org.mozilla.fenix.R
 import org.mozilla.fenix.dejavu.browser.BarsLayout
+import org.mozilla.fenix.dejavu.discover.NewThing
+import org.mozilla.fenix.dejavu.discover.NewThings
+import org.mozilla.fenix.dejavu.discover.isNewAmong
+import org.mozilla.fenix.dejavu.discover.newDot
+import org.mozilla.fenix.dejavu.discover.rememberUnseenNewThings
 import org.mozilla.fenix.dejavu.menu.ActionsBarLayout
 import org.mozilla.fenix.dejavu.menu.AddressBarButtons
 import org.mozilla.fenix.dejavu.menu.BarSide
@@ -271,6 +277,7 @@ private const val AUTO_SCROLL_FRAME_MS = 16L
 private const val DRAGGED_ALPHA = 0.35f
 private const val REMOVE_ALPHA = 0.85f
 private const val FIELD_BLOCK_ALPHA = 0.06f
+private val BLOCK_DOT_INSET = 8.dp
 
 /** The blocks the address bar's field takes between its two sides, as wide as three buttons of the actions bar. */
 private const val ADDRESS_FIELD_BLOCKS = 3
@@ -335,6 +342,12 @@ internal fun MoreMenuLinesEditor(settings: DejavuSettings, modifier: Modifier = 
     val dragged = current?.source as? MenuDragSource.Placed
     val draggedSide = current?.source as? MenuDragSource.Side
     val dragging = current != null
+    // The new buttons keep their orange dot while the editor shows, and lose it once it closes.
+    val unseen = rememberUnseenNewThings()
+    val context = LocalContext.current
+    DisposableEffect(Unit) {
+        onDispose { NewThings.seen(context, NewThing.CLEAR_DATA_ENTRIES) }
+    }
 
     fun update(updated: List<List<String>>) {
         if (updated == lines) return
@@ -456,6 +469,7 @@ internal fun MoreMenuLinesEditor(settings: DejavuSettings, modifier: Modifier = 
                                     highlighted = highlighted,
                                     dimmed = dragged?.line == line && dragged.index == slot,
                                     wide = wide != null,
+                                    isNew = entry.isNewAmong(unseen, leadsToSettings = false),
                                 )
                             }
                             DejavuDropdownMenu(
@@ -510,7 +524,12 @@ internal fun MoreMenuLinesEditor(settings: DejavuSettings, modifier: Modifier = 
                     onDragCancel = { drag = null },
                     onClick = { if (drag == null) sideMenuFor = side },
                 ) {
-                    BlockContent(entry = entry, highlighted = highlighted, dimmed = draggedSide?.side == side)
+                    BlockContent(
+                        entry = entry,
+                        highlighted = highlighted,
+                        dimmed = draggedSide?.side == side,
+                        isNew = entry.isNewAmong(unseen, leadsToSettings = false),
+                    )
                 }
                 DejavuDropdownMenu(expanded = sideMenuFor == side, onDismissRequest = { sideMenuFor = null }) {
                     DejavuMenuItem(
@@ -608,7 +627,10 @@ internal fun MoreMenuLinesEditor(settings: DejavuSettings, modifier: Modifier = 
                                     },
                                     modifier = Modifier.weight(1f),
                                 ) {
-                                    BlockContent(entry = entry)
+                                    BlockContent(
+                                        entry = entry,
+                                        isNew = entry.isNewAmong(unseen, leadsToSettings = false),
+                                    )
                                 }
                             }
                             repeat(MoreMenuLayout.MAX_PER_ROW - chunk.size) { Spacer(Modifier.weight(1f)) }
@@ -700,7 +722,7 @@ private fun DraggableBlock(
 
 /**
  * A block of a line, or of the list of every button: [entry]'s icon and name, or an empty outlined block without one.
- * A [wide] block holds a full row button, with its name next to its icon.
+ * A [wide] block holds a full row button, with its name next to its icon. A button that [isNew] has the orange dot.
  */
 @Composable
 private fun BlockContent(
@@ -708,6 +730,7 @@ private fun BlockContent(
     highlighted: Boolean = false,
     dimmed: Boolean = false,
     wide: Boolean = false,
+    isNew: Boolean = false,
 ) {
     val border = when {
         highlighted -> MaterialTheme.colorScheme.primary
@@ -720,6 +743,7 @@ private fun BlockContent(
             .fillMaxWidth()
             .height(BlockHeight)
             .alpha(if (dimmed) DRAGGED_ALPHA else 1f)
+            .newDot(isNew, inset = BLOCK_DOT_INSET)
             .clip(BlockShape)
             .background(if (entry == null) Color.Transparent else MaterialTheme.colorScheme.surfaceContainerHigh)
             .border(if (highlighted) 2.dp else 1.dp, border, BlockShape)

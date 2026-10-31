@@ -528,4 +528,20 @@
     <string name="dejavu_starter_folder">Samajib\'äl</string>
     <string name="dejavu_no_icon">Majun retal</string>
     <string name="dejavu_no_color">Majun b\'onil</string>
+    <string name="dejavu_tip_workspace_name">Tapitz\'a\' rub\'i\' ri samajib\'äl richin najäl rub\'i\', ruretal, taq rub\'onil chuqa\' rupam ruwäch.</string>
+    <string name="dejavu_tip_new_tab">Tachapa\' jun ramaj “K\'ak\'a\' ruwi\'” richin najäq jun ichinan ruwi\' o jun ruwi\' pa jun k\'olib\'äl.</string>
+    <string name="dejavu_tip_pin">Tachapa\' jun ramaj jun ruwi\' chuqa\' tajurula\' chikaj chi re ri juch\' richin naxim, o chuxe\' ri juch\' richin narelesaj ruximik.</string>
+    <string name="dejavu_tip_folder">Tapitz\'a\' wawe\' richin nab\'än jun karpeta richin ximon taq ruwi\'. Tatzaqa\' jun ruwi\' pa jun karpeta richin nok chupam.</string>
+    <string name="dejavu_tip_clear">Tapitz\'a\' “Titz\'apïx” richin ye\'atz\'apij ri taq ruwi\' chuxe\' ri juch\', o tachapa\' jun ramaj richin ye\'ayüj ri taq tzij xacha\'.</string>
+    <string name="dejavu_tip_essential_add">Tachapa\' jun ramaj jun ruwi\' chuqa\' tajurula\' ajsik richin natz\'aqatisaj pa taq rajawaxel, ri yewachin pa ronojel samajib\'äl.</string>
+    <string name="dejavu_tip_essential_hold">Tachapa\' jun ramaj jun rajawaxel richin nasilöj, o richin nawelesaj pa taq rajawaxel.</string>
+    <string name="dejavu_tip_workspaces">Tajurula\' pa ruxkut richin najäl samajib\'äl. Tachapa\' jun ramaj jun wawe\' chuqa\' tajurula\' richin nijalwachij rucholajem.</string>
+    <string name="dejavu_tip_split">Tachapa\' jun ramaj jun ruwi\' chuqa\' tatzaqa\' pa jun chik richin ye\'atz\'ët ri ka\'i\' ruxaq pa jun mul.</string>
+    <string name="dejavu_tip_menu_up">Tajurula\' re cholaj re\' ajsik richin najäq ri menú.</string>
+    <string name="dejavu_tip_menu_down">Tajurula\' ri kikajtz\'ik ochochib\'äl chuxe\' richin najäq ri menú.</string>
+    <string name="dejavu_tip_got_it">Xno\' pa nuwi\'</string>
+    <string name="dejavu_tip_hide">Ke\'ewäx taq na\'oj</string>
+    <string name="dejavu_settings_tips">Taq na\'oj</string>
+    <string name="dejavu_settings_tips_summary">Kek\'ut taq na\'oj chi kij ewan taq b\'anoj paläj, achi\'el nachäp jun ramaj “K\'ak\'a\' ruwi\'”</string>
+    <string name="dejavu_new">K\'ak\'a\'</string>
 </resources>

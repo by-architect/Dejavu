@@ -528,4 +528,20 @@
     <string name="dejavu_starter_folder">Vositalar</string>
     <string name="dejavu_no_icon">Nishonchasiz</string>
     <string name="dejavu_no_color">Rangsiz</string>
+    <string name="dejavu_tip_workspace_name">Nomi, nishonchasi, ranglari va fon rasmini o\'zgartirish uchun ish maydoni nomiga bosing.</string>
+    <string name="dejavu_tip_new_tab">Maxfiy varaq yoki konteynerdagi varaq uchun “Yangi varaq” tugmasini bosib turing.</string>
+    <string name="dejavu_tip_pin">Varaqni bosib turing va mahkamlash uchun uni chiziqdan yuqoriga, mahkamlashni bekor qilish uchun chiziqdan pastga torting.</string>
+    <string name="dejavu_tip_folder">Mahkamlangan varaqlarga jild yaratish uchun shu yerga bosing. Varaqlarni jildga solish uchun ularni jild ustiga tashlang.</string>
+    <string name="dejavu_tip_clear">Chiziq ostidagi varaqlarni yopish uchun “Tozalash” tugmasini bosing yoki siz tanlagan ma\'lumotlarni o\'chirish uchun uni bosib turing.</string>
+    <string name="dejavu_tip_essential_add">Varaqni bosib turing va har bir ish maydonida ko\'rinadigan muhimlarga qo\'shish uchun uni eng yuqoriga torting.</string>
+    <string name="dejavu_tip_essential_hold">Muhimni boshqa joyga surish yoki muhimlardan chiqarish uchun uni bosib turing.</string>
+    <string name="dejavu_tip_workspaces">Ish maydonlarini almashtirish uchun yon tomonga suring. Tartibini o\'zgartirish uchun bu yerda birini bosib turing va torting.</string>
+    <string name="dejavu_tip_split">Varaqni bosib turing va ikkala sahifani bir vaqtda ko\'rish uchun uni boshqa varaq ustiga tashlang.</string>
+    <string name="dejavu_tip_menu_up">Menyuni ochish uchun bu panelni yuqoriga suring.</string>
+    <string name="dejavu_tip_menu_down">Menyuni ochish uchun manzil panelini pastga torting.</string>
+    <string name="dejavu_tip_got_it">Tushundim</string>
+    <string name="dejavu_tip_hide">Maslahatlarni yashirish</string>
+    <string name="dejavu_settings_tips">Maslahatlar</string>
+    <string name="dejavu_settings_tips_summary">Yashirin ishoralar haqida maslahatlarni ko\'rsatish, masalan, “Yangi varaq” tugmasini bosib turish</string>
+    <string name="dejavu_new">Yangi</string>
 </resources>

@@ -34,6 +34,8 @@ import org.mozilla.fenix.R
 import org.mozilla.fenix.components.toolbar.ToolbarPosition
 import org.mozilla.fenix.dejavu.browser.BarsLayout
 import org.mozilla.fenix.dejavu.browser.DejavuToolbar
+import org.mozilla.fenix.dejavu.discover.NewThing
+import org.mozilla.fenix.dejavu.discover.NewThings
 import org.mozilla.fenix.dejavu.settings.dejavuSettings
 import org.mozilla.fenix.dejavu.settings.slideTo
 import org.mozilla.fenix.e2e.SystemInsetsPaddedFragment
@@ -117,6 +119,10 @@ open class CustomizationFragment : PreferenceFragmentCompat(), SystemInsetsPadde
     override fun onResume() {
         super.onResume()
         showToolbar(getString(if (showsBars) R.string.dejavu_settings_bars_2 else R.string.preferences_customize))
+        // Dejavu: the menu's settings hold the new Clear data buttons, which an orange dot leads to.
+        findPreference<Preference>(getString(R.string.pref_key_dejavu_more_menu))?.let {
+            NewThings.mark(it, NewThing.CLEAR_DATA_ENTRIES)
+        }
         args.preferenceToScrollTo?.let {
             scrollToPreferenceWithHighlight(it)
         }

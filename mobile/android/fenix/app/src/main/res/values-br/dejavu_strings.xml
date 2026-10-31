@@ -552,4 +552,20 @@
     <string name="dejavu_starter_folder">Ostilhoù</string>
     <string name="dejavu_no_icon">Arlun ebet</string>
     <string name="dejavu_no_color">Liv ebet</string>
+    <string name="dejavu_tip_workspace_name">Pouezit war anv an egor labour evit cheñch e anv, e arlun, e livioù hag e zrekleur.</string>
+    <string name="dejavu_tip_new_tab">Derc’hit war “Ivinell nevez” evit un ivinell prevez, pe un ivinell en ur c’hontener.</string>
+    <string name="dejavu_tip_pin">Derc’hit war un ivinell ha riklit anezhi a-us d’al linenn evit he spilhennañ, pe dindan al linenn evit he dispilhennañ.</string>
+    <string name="dejavu_tip_folder">Pouezit amañ evit krouiñ un teuliad evit an ivinelloù spilhennet. Lezit ivinelloù war un teuliad evit o lakaat ennañ.</string>
+    <string name="dejavu_tip_clear">Pouezit war “Skarzhañ” evit serriñ an ivinelloù dindan al linenn, pe derc’hit warnañ evit dilemel ar roadennoù ho peus dibabet.</string>
+    <string name="dejavu_tip_essential_add">Derc’hit war un ivinell ha riklit anezhi d’al laez evit he ouzhpennañ d’an traoù pouezus, diskouezet e pep egor labour.</string>
+    <string name="dejavu_tip_essential_hold">Derc’hit war un dra bouezus evit he dilec’hiañ, pe evit he lemel eus an traoù pouezus.</string>
+    <string name="dejavu_tip_workspaces">Riklit a-gostez evit cheñch egor labour. Derc’hit war unan amañ ha riklit anezhañ evit cheñch o urzh.</string>
+    <string name="dejavu_tip_split">Derc’hit war un ivinell ha lezit anezhi war unan all evit gwelout an div bajenn war un dro.</string>
+    <string name="dejavu_tip_menu_up">Riklit ar varrenn-mañ etrezek al laez evit digeriñ ar meuziad.</string>
+    <string name="dejavu_tip_menu_down">Riklit ar varrenn chomlec’h etrezek an traoñ evit digeriñ ar meuziad.</string>
+    <string name="dejavu_tip_got_it">Komprenet am eus!</string>
+    <string name="dejavu_tip_hide">Kuzhat an alioù</string>
+    <string name="dejavu_settings_tips">Alioù</string>
+    <string name="dejavu_settings_tips_summary">Diskouez alioù diwar-benn ar jestroù kuzh, evel derc’hel war “Ivinell nevez”</string>
+    <string name="dejavu_new">Nevez</string>
 </resources>

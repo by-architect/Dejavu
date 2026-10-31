@@ -528,4 +528,20 @@
     <string name="dejavu_starter_folder">ابزار</string>
     <string name="dejavu_no_icon">بدون آیکون</string>
     <string name="dejavu_no_color">بی رنگ</string>
+    <string name="dejavu_tip_workspace_name">رو نام فضا بزن تا نام، آیکون، رنگ یل و کاقز دیواریش ن آلشت کنی.</string>
+    <string name="dejavu_tip_new_tab">«بلگه نۊ» ن نگه دار سی یه بلگه سیخومی، یا یه بلگه من کانتینر.</string>
+    <string name="dejavu_tip_pin">یه بلگه ن نگه دار و بکشش بالای خط سی سنجاق کردن، یا ژیر خط سی سنجاق دراوردن.</string>
+    <string name="dejavu_tip_folder">اینه بزن تا یه پوشه سی بلگه یل سنجاق‌وابیده بسازی. بلگه یل ن رو یه پوشه بنداز تا برن توش.</string>
+    <string name="dejavu_tip_clear">رو «خالی کردن» بزن تا بلگه یل ژیر خط بسته بۊن، یا نگهش دار تا داده یلی که پسند کردی پاک بۊن.</string>
+    <string name="dejavu_tip_essential_add">یه بلگه ن نگه دار و بکشش بالا تا بره من سایت یل مهم، که من هر فضا نشون داده ابۊن.</string>
+    <string name="dejavu_tip_essential_hold">یه سایت مهم ن نگه دار تا جاش ن آلشت کنی، یا ز سایت یل مهم دراوریش.</string>
+    <string name="dejavu_tip_workspaces">سی آلشت فضا، و بغل بکش. یکی ن اینه نگه دار و بکشش تا ترتیبشون عوض بۊ.</string>
+    <string name="dejavu_tip_split">یه بلگه ن نگه دار و رو یه بلگه دیه بندازش تا هر دو صفحه ن همزمان بینی.</string>
+    <string name="dejavu_tip_menu_up">سی واز کردن منو، ای نوار ن و بالا بکش.</string>
+    <string name="dejavu_tip_menu_down">سی واز کردن منو، نوار نشۊوی ن و پایین بکش.</string>
+    <string name="dejavu_tip_got_it">فئمیم</string>
+    <string name="dejavu_tip_hide">قایم کردن نکته یل</string>
+    <string name="dejavu_settings_tips">نکته یل</string>
+    <string name="dejavu_settings_tips_summary">نشون دادن نکته یل سی اشاره یل قایم، مثل نگه داشتن «بلگه نۊ»</string>
+    <string name="dejavu_new">نۊ</string>
 </resources>

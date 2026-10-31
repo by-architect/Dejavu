@@ -528,4 +528,20 @@
     <string name="dejavu_starter_folder">साधने</string>
     <string name="dejavu_no_icon">चिन्ह नाही</string>
     <string name="dejavu_no_color">रंग नाही</string>
+    <string name="dejavu_tip_workspace_name">कार्यक्षेत्राचे नाव, चिन्ह, रंग आणि वॉलपेपर बदलण्यासाठी त्याच्या नावावर टॅप करा.</string>
+    <string name="dejavu_tip_new_tab">खाजगी टॅबसाठी किंवा कंटेनरमधील टॅबसाठी “नवीन टॅब” दाबून धरा.</string>
+    <string name="dejavu_tip_pin">टॅब दाबून धरा आणि पिन करण्यासाठी तो रेषेच्या वर, किंवा अनपिन करण्यासाठी रेषेच्या खाली ओढा.</string>
+    <string name="dejavu_tip_folder">पिन केलेल्या टॅबसाठी फोल्डर बनवण्यासाठी इथे टॅप करा. टॅब फोल्डरमध्ये ठेवण्यासाठी ते फोल्डरवर सोडा.</string>
+    <string name="dejavu_tip_clear">रेषेखालील टॅब बंद करण्यासाठी “साफ करा” वर टॅप करा, किंवा तुम्ही निवडलेला डेटा हटवण्यासाठी ते दाबून धरा.</string>
+    <string name="dejavu_tip_essential_add">टॅब दाबून धरा आणि तो वर ओढा, म्हणजे तो प्रत्येक कार्यक्षेत्रात दिसणारा आवश्यक बनेल.</string>
+    <string name="dejavu_tip_essential_hold">एखादा आवश्यक दुसऱ्या जागी हलवण्यासाठी किंवा आवश्यकमधून काढण्यासाठी तो दाबून धरा.</string>
+    <string name="dejavu_tip_workspaces">कार्यक्षेत्रे बदलण्यासाठी डावीकडे किंवा उजवीकडे स्वाइप करा. क्रम बदलण्यासाठी इथे एखादे कार्यक्षेत्र दाबून धरा आणि ओढा.</string>
+    <string name="dejavu_tip_split">दोन्ही पृष्ठे एकाच वेळी पाहण्यासाठी टॅब दाबून धरा आणि तो दुसऱ्या टॅबवर सोडा.</string>
+    <string name="dejavu_tip_menu_up">मेनू उघडण्यासाठी ही पट्टी वर स्वाइप करा.</string>
+    <string name="dejavu_tip_menu_down">मेनू उघडण्यासाठी पत्ता पट्टी खाली ओढा.</string>
+    <string name="dejavu_tip_got_it">समजले</string>
+    <string name="dejavu_tip_hide">टिपा लपवा</string>
+    <string name="dejavu_settings_tips">टिपा</string>
+    <string name="dejavu_settings_tips_summary">“नवीन टॅब” दाबून धरण्यासारख्या लपलेल्या जेश्चरविषयी टिपा दाखवा</string>
+    <string name="dejavu_new">नवीन</string>
 </resources>

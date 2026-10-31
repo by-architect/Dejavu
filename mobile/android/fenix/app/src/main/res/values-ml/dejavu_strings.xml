@@ -528,4 +528,20 @@
     <string name="dejavu_starter_folder">ഉപകരണങ്ങൾ</string>
     <string name="dejavu_no_icon">ചിഹ്നം ഇല്ല</string>
     <string name="dejavu_no_color">നിറം ഇല്ല</string>
+    <string name="dejavu_tip_workspace_name">പണിയിടത്തിന്റെ പേര്, ചിഹ്നം, നിറങ്ങൾ, വാൾപേപ്പർ എന്നിവ മാറ്റാൻ അതിന്റെ പേരിൽ ടാപ്പ് ചെയ്യുക.</string>
+    <string name="dejavu_tip_new_tab">സ്വകാര്യ ടാബിനോ കണ്ടെയ്നറിലെ ടാബിനോ “പുതിയ ടാബ്” അമർത്തിപ്പിടിക്കുക.</string>
+    <string name="dejavu_tip_pin">ഒരു ടാബ് അമർത്തിപ്പിടിച്ച്, പിൻ ചെയ്യാൻ വരയ്ക്ക് മുകളിലേക്കോ പിൻ നീക്കാൻ വരയ്ക്ക് താഴേക്കോ വലിച്ചിടുക.</string>
+    <string name="dejavu_tip_folder">പിൻ ചെയ്ത ടാബുകൾക്കായി ഒരു ഫോൾഡർ ഉണ്ടാക്കാൻ ഇവിടെ ടാപ്പ് ചെയ്യുക. ടാബുകൾ ഫോൾഡറിനുള്ളിലാക്കാൻ അവ ഫോൾഡറിലേക്ക് വിടുക.</string>
+    <string name="dejavu_tip_clear">വരയ്ക്ക് താഴെയുള്ള ടാബുകൾ അടയ്ക്കാൻ “മായ്ക്കുക” ടാപ്പ് ചെയ്യുക, അല്ലെങ്കിൽ നിങ്ങൾ തിരഞ്ഞെടുത്ത ദത്ത മായ്ക്കാൻ അത് അമർത്തിപ്പിടിക്കുക.</string>
+    <string name="dejavu_tip_essential_add">ഒരു ടാബ് എല്ലാ പണിയിടങ്ങളിലും കാണിക്കുന്ന പ്രധാനപ്പെട്ടതാക്കാൻ, അത് അമർത്തിപ്പിടിച്ച് മുകളിലേക്ക് വലിച്ചിടുക.</string>
+    <string name="dejavu_tip_essential_hold">ഒരു പ്രധാനപ്പെട്ടത് മറ്റൊരിടത്തേക്ക് നീക്കാനോ പ്രധാനപ്പെട്ടവയിൽ നിന്ന് നീക്കം ചെയ്യാനോ അത് അമർത്തിപ്പിടിക്കുക.</string>
+    <string name="dejavu_tip_workspaces">പണിയിടങ്ങൾ മാറാൻ വശങ്ങളിലേക്ക് സ്വൈപ്പ് ചെയ്യുക. ക്രമം മാറ്റാൻ ഇവിടെ ഒരു പണിയിടം അമർത്തിപ്പിടിച്ച് വലിച്ചിടുക.</string>
+    <string name="dejavu_tip_split">രണ്ട് താളുകളും ഒരേസമയം കാണാൻ ഒരു ടാബ് അമർത്തിപ്പിടിച്ച് മറ്റൊരു ടാബിലേക്ക് വിടുക.</string>
+    <string name="dejavu_tip_menu_up">മെനു തുറക്കാൻ ഈ ബാർ മുകളിലേക്ക് സ്വൈപ്പ് ചെയ്യുക.</string>
+    <string name="dejavu_tip_menu_down">മെനു തുറക്കാൻ വിലാസ ബാർ താഴേക്ക് വലിക്കുക.</string>
+    <string name="dejavu_tip_got_it">മനസ്സിലായി</string>
+    <string name="dejavu_tip_hide">നുറുങ്ങുകൾ മറയ്ക്കുക</string>
+    <string name="dejavu_settings_tips">നുറുങ്ങുകൾ</string>
+    <string name="dejavu_settings_tips_summary">“പുതിയ ടാബ്” അമർത്തിപ്പിടിക്കുന്നത് പോലുള്ള മറഞ്ഞിരിക്കുന്ന ആംഗ്യങ്ങളെക്കുറിച്ചുള്ള നുറുങ്ങുകൾ കാണിക്കുക</string>
+    <string name="dejavu_new">പുതിയത്</string>
 </resources>

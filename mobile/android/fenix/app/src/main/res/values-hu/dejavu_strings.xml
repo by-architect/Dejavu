@@ -528,4 +528,20 @@
     <string name="dejavu_starter_folder">Eszközök</string>
     <string name="dejavu_no_icon">Nincs ikon</string>
     <string name="dejavu_no_color">Nincs szín</string>
+    <string name="dejavu_tip_workspace_name">Koppintson a munkaterület nevére a neve, ikonja, színei és háttérképe módosításához.</string>
+    <string name="dejavu_tip_new_tab">Tartsa lenyomva az Új lap gombot egy privát laphoz vagy egy konténerben lévő laphoz.</string>
+    <string name="dejavu_tip_pin">Tartson lenyomva egy lapot, és húzza a vonal fölé a kitűzéséhez, vagy a vonal alá a kitűzés megszüntetéséhez.</string>
+    <string name="dejavu_tip_folder">Koppintson ide egy mappa létrehozásához a kitűzött lapoknak. Ejtse a lapokat egy mappára, hogy beletegye őket.</string>
+    <string name="dejavu_tip_clear">Koppintson a „Kiürítés” gombra a vonal alatti lapok bezárásához, vagy tartsa lenyomva a kiválasztott böngészési adatok törléséhez.</string>
+    <string name="dejavu_tip_essential_add">Tartson lenyomva egy lapot, és húzza a tetejére, hogy kedvenc legyen, amely minden munkaterületen megjelenik.</string>
+    <string name="dejavu_tip_essential_hold">Tartson lenyomva egy kedvencet, hogy máshová helyezze, vagy eltávolítsa a kedvencek közül.</string>
+    <string name="dejavu_tip_workspaces">Húzza oldalra az ujját a munkaterületek közötti váltáshoz. Tartson itt lenyomva egyet, és húzza el a sorrendjük módosításához.</string>
+    <string name="dejavu_tip_split">Tartson lenyomva egy lapot, és ejtse egy másikra, hogy mindkét oldalt egyszerre lássa.</string>
+    <string name="dejavu_tip_menu_up">Húzza felfelé ezt a sávot a menü megnyitásához.</string>
+    <string name="dejavu_tip_menu_down">Húzza lefelé a címsávot a menü megnyitásához.</string>
+    <string name="dejavu_tip_got_it">Megértettem</string>
+    <string name="dejavu_tip_hide">Tippek elrejtése</string>
+    <string name="dejavu_settings_tips">Tippek</string>
+    <string name="dejavu_settings_tips_summary">Tippek megjelenítése a rejtett kézmozdulatokról, például az Új lap gomb hosszú megnyomásáról</string>
+    <string name="dejavu_new">Új</string>
 </resources>

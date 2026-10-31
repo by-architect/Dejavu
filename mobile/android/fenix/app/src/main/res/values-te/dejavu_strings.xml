@@ -528,4 +528,20 @@
     <string name="dejavu_starter_folder">సాధనాలు</string>
     <string name="dejavu_no_icon">చిహ్నం లేదు</string>
     <string name="dejavu_no_color">రంగు లేదు</string>
+    <string name="dejavu_tip_workspace_name">కార్యస్థలం పేరు, చిహ్నం, రంగులు మరియు వాల్‌పేపర్‌ను మార్చడానికి దాని పేరును నొక్కండి.</string>
+    <string name="dejavu_tip_new_tab">అంతరంగిక ట్యాబు లేదా కంటైనర్‌లో ట్యాబు కోసం కొత్త ట్యాబు బటన్‌ను నొక్కిపట్టుకోండి.</string>
+    <string name="dejavu_tip_pin">ట్యాబును నొక్కి పట్టుకుని, పిన్ చేయడానికి గీత పైకి, లేదా పిన్ తీసివేయడానికి గీత కిందికి లాగండి.</string>
+    <string name="dejavu_tip_folder">పిన్ చేసిన ట్యాబుల కోసం ఫోల్డర్‌ను సృష్టించడానికి ఇక్కడ నొక్కండి. ట్యాబులను ఫోల్డర్‌లో పెట్టడానికి వాటిని ఫోల్డర్‌పై వదలండి.</string>
+    <string name="dejavu_tip_clear">గీత కింద ఉన్న ట్యాబులను మూసివేయడానికి తుడిచివేయి బటన్‌ను నొక్కండి, లేదా మీరు ఎంచుకున్న డేటాను తొలగించడానికి దాన్ని నొక్కిపట్టుకోండి.</string>
+    <string name="dejavu_tip_essential_add">ట్యాబును నొక్కి పట్టుకుని, ప్రతి కార్యస్థలంలో కనిపించే ముఖ్యమైనవాటిలో చేర్చడానికి దాన్ని పైభాగానికి లాగండి.</string>
+    <string name="dejavu_tip_essential_hold">ముఖ్యమైనదాన్ని వేరే చోటికి జరపడానికి లేదా ముఖ్యమైనవాటి నుండి తీసివేయడానికి దాన్ని నొక్కిపట్టుకోండి.</string>
+    <string name="dejavu_tip_workspaces">కార్యస్థలాలను మార్చడానికి పక్కకు స్వైప్ చేయండి. వాటి క్రమాన్ని మార్చడానికి ఇక్కడ ఒకదాన్ని నొక్కి పట్టుకుని లాగండి.</string>
+    <string name="dejavu_tip_split">ట్యాబును నొక్కి పట్టుకుని, రెండు పేజీలను ఒకేసారి చూడటానికి దాన్ని మరొక ట్యాబుపై వదలండి.</string>
+    <string name="dejavu_tip_menu_up">మెనూను తెరవడానికి ఈ పట్టీని పైకి స్వైప్ చేయండి.</string>
+    <string name="dejavu_tip_menu_down">మెనూను తెరవడానికి చిరునామా పట్టీని కిందికి లాగండి.</string>
+    <string name="dejavu_tip_got_it">అర్థమైంది</string>
+    <string name="dejavu_tip_hide">చిట్కాలను దాచు</string>
+    <string name="dejavu_settings_tips">చిట్కాలు</string>
+    <string name="dejavu_settings_tips_summary">కొత్త ట్యాబు బటన్‌ను నొక్కిపట్టుకోవడం వంటి దాగి ఉన్న సైగల గురించి చిట్కాలను చూపించు</string>
+    <string name="dejavu_new">కొత్తది</string>
 </resources>

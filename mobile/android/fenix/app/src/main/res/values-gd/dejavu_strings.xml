@@ -544,4 +544,20 @@
     <string name="dejavu_starter_folder">Innealan</string>
     <string name="dejavu_no_icon">Gun ìomhaigheag</string>
     <string name="dejavu_no_color">Gun dath</string>
+    <string name="dejavu_tip_workspace_name">Brùth air ainm an àite-obrach gus an t-ainm, an ìomhaigheag, na dathan is am pàipear-balla aige atharrachadh.</string>
+    <string name="dejavu_tip_new_tab">Cùm “Taba ùr” sìos airson taba prìobhaideach no taba ann an soitheach.</string>
+    <string name="dejavu_tip_pin">Cùm taba sìos is slaod e os cionn na loidhne gus a phrìneachadh, no fon loidhne gus a dhì-phrìneachadh.</string>
+    <string name="dejavu_tip_folder">Brùth an-seo gus pasgan a dhèanamh airson tabaichean prìnichte. Leig às tabaichean air pasgan gus an cur na bhroinn.</string>
+    <string name="dejavu_tip_clear">Brùth air “Falamhaich” gus na tabaichean fon loidhne a dhùnadh, no cùm sìos e gus an dàta brabhsaidh a thagh thu a sguabadh às.</string>
+    <string name="dejavu_tip_essential_add">Cùm taba sìos is slaod e gu h-àrd gus feumalachd a dhèanamh dheth, a nochdas anns gach àite-obrach.</string>
+    <string name="dejavu_tip_essential_hold">Cùm feumalachd sìos gus a gluasad gu àite eile, no gus a toirt air falbh o na feumalachdan.</string>
+    <string name="dejavu_tip_workspaces">Grad-shlaighd gu taobh gus àite-obrach eile a thaghadh. Cùm fear dhiubh sìos an-seo is slaod e gus an t-òrdugh aca atharrachadh.</string>
+    <string name="dejavu_tip_split">Cùm taba sìos is leig às e air taba eile gus an dà dhuilleag fhaicinn aig an aon àm.</string>
+    <string name="dejavu_tip_menu_up">Grad-shlaighd am bàr seo suas gus an clàr-taice fhosgladh.</string>
+    <string name="dejavu_tip_menu_down">Tarraing bàr an t-seòlaidh sìos gus an clàr-taice fhosgladh.</string>
+    <string name="dejavu_tip_got_it">Tha mi agaibh</string>
+    <string name="dejavu_tip_hide">Falaich na gliocasan</string>
+    <string name="dejavu_settings_tips">Gliocasan</string>
+    <string name="dejavu_settings_tips_summary">Seall gliocasan mu ghluasadan falaichte, mar a bhith a\' cumail “Taba ùr” sìos</string>
+    <string name="dejavu_new">Ùr</string>
 </resources>

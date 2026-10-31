@@ -528,4 +528,20 @@
     <string name="dejavu_starter_folder">கருவிகள்</string>
     <string name="dejavu_no_icon">சின்னம் இல்லை</string>
     <string name="dejavu_no_color">நிறம் இல்லை</string>
+    <string name="dejavu_tip_workspace_name">பெயர், சின்னம், நிறங்கள் மற்றும் சுவர்ப்படத்தை மாற்ற, பணியிடத்தின் பெயரைத் தட்டவும்.</string>
+    <string name="dejavu_tip_new_tab">கமுக்கக் கீற்று அல்லது கொள்கலனில் ஒரு கீற்றைத் திறக்க, புதிய கீற்று பொத்தானை அழுத்திப் பிடிக்கவும்.</string>
+    <string name="dejavu_tip_pin">ஒரு கீற்றை அழுத்திப் பிடித்து, பின் செய்ய அதைக் கோட்டுக்கு மேலே இழுக்கவும், அல்லது பின் நீக்க கோட்டுக்குக் கீழே இழுக்கவும்.</string>
+    <string name="dejavu_tip_folder">பொருத்தப்பட்ட கீற்றுகளுக்கு ஒரு கோப்புறையை உருவாக்க இங்கே தட்டவும். கீற்றுகளைக் கோப்புறையில் சேர்க்க அவற்றை அதன் மேல் விடவும்.</string>
+    <string name="dejavu_tip_clear">கோட்டுக்குக் கீழே உள்ள கீற்றுகளை மூட அழி பொத்தானைத் தட்டவும், அல்லது நீங்கள் தேர்ந்தெடுத்த தரவை அழிக்க அதை அழுத்திப் பிடிக்கவும்.</string>
+    <string name="dejavu_tip_essential_add">ஒரு கீற்றை அழுத்திப் பிடித்து, முக்கியவையில் சேர்க்க மேல்பகுதிக்கு இழுக்கவும். முக்கியவை ஒவ்வொரு பணியிடத்திலும் காட்டப்படும்.</string>
+    <string name="dejavu_tip_essential_hold">முக்கியவையில் உள்ள ஒரு கீற்றை வேறு இடத்திற்கு நகர்த்த அல்லது முக்கியவையிலிருந்து அகற்ற, அதை அழுத்திப் பிடிக்கவும்.</string>
+    <string name="dejavu_tip_workspaces">பணியிடங்களுக்கு இடையே மாற பக்கவாட்டில் ஸ்வைப் செய்யவும். வரிசையை மாற்ற, இங்கே ஒன்றை அழுத்திப் பிடித்து இழுக்கவும்.</string>
+    <string name="dejavu_tip_split">இரண்டு பக்கங்களையும் ஒரே நேரத்தில் பார்க்க, ஒரு கீற்றை அழுத்திப் பிடித்து மற்றொரு கீற்றின் மேல் விடவும்.</string>
+    <string name="dejavu_tip_menu_up">பட்டியைத் திறக்க இந்தப் பட்டையை மேலே ஸ்வைப் செய்யவும்.</string>
+    <string name="dejavu_tip_menu_down">பட்டியைத் திறக்க முகவரிப் பட்டையைக் கீழே இழுக்கவும்.</string>
+    <string name="dejavu_tip_got_it">புரிந்தது</string>
+    <string name="dejavu_tip_hide">உதவிக்குறிப்புகளை மறை</string>
+    <string name="dejavu_settings_tips">உதவிக்குறிப்புகள்</string>
+    <string name="dejavu_settings_tips_summary">புதிய கீற்று பொத்தானை அழுத்திப் பிடிப்பது போன்ற மறைந்திருக்கும் சைகைகள் பற்றிய உதவிக்குறிப்புகளைக் காட்டு</string>
+    <string name="dejavu_new">புதியது</string>
 </resources>

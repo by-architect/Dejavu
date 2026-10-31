@@ -561,4 +561,20 @@
     <string name="dejavu_starter_folder">টুলস</string>
     <string name="dejavu_no_icon">কোনো আইকন নেই</string>
     <string name="dejavu_no_color">কোনো রং নেই</string>
+    <string name="dejavu_tip_workspace_name">ওয়ার্কস্পেসের নাম, আইকন, রং ও ওয়ালপেপার বদলাতে এর নামে ট্যাপ করুন।</string>
+    <string name="dejavu_tip_new_tab">ব্যক্তিগত ট্যাব বা কন্টেইনারে ট্যাব খুলতে “নতুন ট্যাব” চেপে ধরুন।</string>
+    <string name="dejavu_tip_pin">পিন করতে কোনো ট্যাব চেপে ধরে লাইনের উপরে টেনে আনুন, আনপিন করতে লাইনের নিচে টেনে আনুন।</string>
+    <string name="dejavu_tip_folder">পিন করা ট্যাবের জন্য ফোল্ডার বানাতে এখানে ট্যাপ করুন। ট্যাবগুলো ফোল্ডারের ভেতরে রাখতে সেগুলো ফোল্ডারের উপর ছাড়ুন।</string>
+    <string name="dejavu_tip_clear">লাইনের নিচের ট্যাবগুলো বন্ধ করতে “সাফ করুন”-এ ট্যাপ করুন, অথবা আপনার বেছে নেওয়া ডেটা মুছতে এটি চেপে ধরুন।</string>
+    <string name="dejavu_tip_essential_add">প্রতিটি ওয়ার্কস্পেসে দেখানো এসেনশিয়ালে যোগ করতে কোনো ট্যাব চেপে ধরে একেবারে উপরে টেনে আনুন।</string>
+    <string name="dejavu_tip_essential_hold">কোনো এসেনশিয়াল অন্য জায়গায় সরাতে বা এসেনশিয়াল থেকে সরিয়ে দিতে সেটি চেপে ধরুন।</string>
+    <string name="dejavu_tip_workspaces">ওয়ার্কস্পেস বদলাতে পাশে সোয়াইপ করুন। ক্রম বদলাতে এখানে একটি চেপে ধরে টেনে আনুন।</string>
+    <string name="dejavu_tip_split">দুটি পাতা একসাথে দেখতে একটি ট্যাব চেপে ধরে অন্য একটি ট্যাবের উপর ছাড়ুন।</string>
+    <string name="dejavu_tip_menu_up">মেনু খুলতে এই বারটি উপরে সোয়াইপ করুন।</string>
+    <string name="dejavu_tip_menu_down">মেনু খুলতে ঠিকানা বারটি নিচে সোয়াইপ করুন।</string>
+    <string name="dejavu_tip_got_it">বুঝেছি</string>
+    <string name="dejavu_tip_hide">টিপস লুকান</string>
+    <string name="dejavu_settings_tips">টিপস</string>
+    <string name="dejavu_settings_tips_summary">লুকানো জেসচার নিয়ে টিপস দেখান, যেমন “নতুন ট্যাব” চেপে ধরা</string>
+    <string name="dejavu_new">নতুন</string>
 </resources>

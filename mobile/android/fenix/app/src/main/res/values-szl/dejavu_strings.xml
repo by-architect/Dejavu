@@ -544,4 +544,20 @@
     <string name="dejavu_starter_folder">Nŏrzyndzia</string>
     <string name="dejavu_no_icon">Bez ikōny</string>
     <string name="dejavu_no_color">Bez farby</string>
+    <string name="dejavu_tip_workspace_name">Stuknij miano placu, coby zmiynić jego miano, ikōna, farby i tapeta.</string>
+    <string name="dejavu_tip_new_tab">Przitrzim „Nowo karta”, coby ôdewrzić prywatno karta abo karta w kōntynerze.</string>
+    <string name="dejavu_tip_pin">Przitrzim karta i przeciōng jōm powyżyj linije, coby jōm przipiōńć, abo poniżyj linije, coby jōm ôdpiōńć.</string>
+    <string name="dejavu_tip_folder">Stuknij sam, coby zrobić folder na przipiynte karty. Pōń karty na folder, coby je do niego wrazić.</string>
+    <string name="dejavu_tip_clear">Stuknij „Wyczyś”, coby zawrzić karty poniżyj linije, abo przitrzim go, coby skasować ôbrane dane.</string>
+    <string name="dejavu_tip_essential_add">Przitrzim karta i przeciōng jōm na sam wiyrch, coby jōm dodać do nojważniejszych, kere pokazujōm sie na kożdym placu.</string>
+    <string name="dejavu_tip_essential_hold">Przitrzim nojważniejszo karta, coby jōm przenieść abo wyciepnyć z nojważniejszych.</string>
+    <string name="dejavu_tip_workspaces">Przesuń palcym na boki, coby zmiynić plac. Przitrzim sam jedyn z nich i przeciōng go, coby zmiynić jejich porzōndek.</string>
+    <string name="dejavu_tip_split">Przitrzim karta i pōń jōm na inkszo, coby ôbejrzeć ôbie strōny naroz.</string>
+    <string name="dejavu_tip_menu_up">Przeciōng tyn posek w gōra, coby ôdewrzić meni.</string>
+    <string name="dejavu_tip_menu_down">Przeciōng posek z adresōm na dōł, coby ôdewrzić meni.</string>
+    <string name="dejavu_tip_got_it">Rozumia</string>
+    <string name="dejavu_tip_hide">Skryj porady</string>
+    <string name="dejavu_settings_tips">Porady</string>
+    <string name="dejavu_settings_tips_summary">Pokazuj porady ô skrytych gestach, jak przitrzimanie „Nowo karta”</string>
+    <string name="dejavu_new">Nowe</string>
 </resources>

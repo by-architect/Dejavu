@@ -45,6 +45,8 @@ import org.mozilla.fenix.dejavu.containers.TemporaryContainers
 import org.mozilla.fenix.dejavu.containers.drawable
 import org.mozilla.fenix.dejavu.containers.reopenInContainer
 import org.mozilla.fenix.dejavu.containers.splitTemporary
+import org.mozilla.fenix.dejavu.discover.Tip
+import org.mozilla.fenix.dejavu.discover.Tips
 import org.mozilla.fenix.dejavu.home.displayTitle
 import org.mozilla.fenix.dejavu.home.titleOf
 import org.mozilla.fenix.dejavu.menu.DejavuMenu
@@ -276,6 +278,7 @@ fun NavController.openDejavuMenu(
 ) {
     val directions = NavGraphDirections.actionGlobalMenuDialogFragment(accesspoint = MenuAccessPoint.Browser)
     if (currentDestination?.id != R.id.browserFragment) return
+    if (opening == DejavuMenu.Opening.MENU) Tips.done(Tip.PAGE_MENU)
     val arguments = DejavuMenu.arguments(fromBar, opening, splitWay)
     navigate(directions.actionId, directions.arguments.apply { putAll(arguments) })
 }

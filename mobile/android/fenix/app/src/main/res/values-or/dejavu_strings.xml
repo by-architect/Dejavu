@@ -528,4 +528,20 @@
     <string name="dejavu_starter_folder">ଉପକରଣ</string>
     <string name="dejavu_no_icon">ଆଇକନ୍ ନାହିଁ</string>
     <string name="dejavu_no_color">ରଙ୍ଗ ନାହିଁ</string>
+    <string name="dejavu_tip_workspace_name">କାର୍ଯ୍ୟକ୍ଷେତ୍ରର ନାମ, ଆଇକନ୍, ରଙ୍ଗ ଏବଂ ୱାଲପେପର ବଦଳାଇବାକୁ ଏହାର ନାମ ଟାପ୍ କରନ୍ତୁ।</string>
+    <string name="dejavu_tip_new_tab">ବ୍ୟକ୍ତିଗତ ଟ୍ୟାବ୍ କିମ୍ବା କଣ୍ଟେନରରେ ଟ୍ୟାବ୍ ପାଇଁ “ନୂଆ ଟ୍ୟାବ୍” ଦବାଇ ଧରନ୍ତୁ।</string>
+    <string name="dejavu_tip_pin">ଏକ ଟ୍ୟାବ୍ ଦବାଇ ଧରନ୍ତୁ ଏବଂ ପିନ୍ କରିବାକୁ ଏହାକୁ ରେଖା ଉପରକୁ, କିମ୍ବା ଅନପିନ୍ କରିବାକୁ ରେଖା ତଳକୁ ଟାଣନ୍ତୁ।</string>
+    <string name="dejavu_tip_folder">ପିନ୍ କରାଯାଇଥିବା ଟ୍ୟାବ୍ ପାଇଁ ଏକ ଫୋଲଡର ତିଆରି କରିବାକୁ ଏଠାରେ ଟାପ୍ କରନ୍ତୁ। ଟ୍ୟାବ୍‌କୁ ଫୋଲଡର ଭିତରେ ରଖିବାକୁ ସେଗୁଡ଼ିକୁ ଫୋଲଡର ଉପରେ ଛାଡନ୍ତୁ।</string>
+    <string name="dejavu_tip_clear">ରେଖା ତଳର ଟ୍ୟାବ୍ ବନ୍ଦ କରିବାକୁ “ସଫା କରନ୍ତୁ” ଟାପ୍ କରନ୍ତୁ, କିମ୍ବା ଆପଣ ବାଛିଥିବା ଡାଟା ଡିଲିଟ୍ କରିବାକୁ ଏହାକୁ ଦବାଇ ଧରନ୍ତୁ।</string>
+    <string name="dejavu_tip_essential_add">ଏକ ଟ୍ୟାବ୍‌କୁ ପ୍ରତ୍ୟେକ କାର୍ଯ୍ୟକ୍ଷେତ୍ରରେ ଦେଖାଯାଉଥିବା ଆବଶ୍ୟକୀୟ କରିବାକୁ, ଏହାକୁ ଦବାଇ ଧରନ୍ତୁ ଏବଂ ଉପରକୁ ଟାଣନ୍ତୁ।</string>
+    <string name="dejavu_tip_essential_hold">ଏକ ଆବଶ୍ୟକୀୟକୁ ଅନ୍ୟ ସ୍ଥାନକୁ ଘୁଞ୍ଚାଇବାକୁ କିମ୍ବା ଆବଶ୍ୟକୀୟରୁ ହଟାଇବାକୁ ଏହାକୁ ଦବାଇ ଧରନ୍ତୁ।</string>
+    <string name="dejavu_tip_workspaces">କାର୍ଯ୍ୟକ୍ଷେତ୍ର ବଦଳାଇବାକୁ ବାମ କିମ୍ବା ଡାହାଣକୁ ସ୍ୱାଇପ୍ କରନ୍ତୁ। କ୍ରମ ବଦଳାଇବାକୁ ଏଠାରେ ଏକ କାର୍ଯ୍ୟକ୍ଷେତ୍ର ଦବାଇ ଧରନ୍ତୁ ଏବଂ ଟାଣନ୍ତୁ।</string>
+    <string name="dejavu_tip_split">ଉଭୟ ପୃଷ୍ଠା ଏକାସାଙ୍ଗରେ ଦେଖିବାକୁ ଏକ ଟ୍ୟାବ୍ ଦବାଇ ଧରନ୍ତୁ ଏବଂ ଏହାକୁ ଅନ୍ୟ ଏକ ଟ୍ୟାବ୍ ଉପରେ ଛାଡନ୍ତୁ।</string>
+    <string name="dejavu_tip_menu_up">ମେନୁ ଖୋଲିବାକୁ ଏହି ବାର୍‌କୁ ଉପରକୁ ସ୍ୱାଇପ୍ କରନ୍ତୁ।</string>
+    <string name="dejavu_tip_menu_down">ମେନୁ ଖୋଲିବାକୁ ଠିକଣା ବାର୍‌କୁ ତଳକୁ ଟାଣନ୍ତୁ।</string>
+    <string name="dejavu_tip_got_it">ବୁଝିଗଲି</string>
+    <string name="dejavu_tip_hide">ପରାମର୍ଶ ଲୁଚାନ୍ତୁ</string>
+    <string name="dejavu_settings_tips">ପରାମର୍ଶ</string>
+    <string name="dejavu_settings_tips_summary">“ନୂଆ ଟ୍ୟାବ୍” ଦବାଇ ଧରିବା ଭଳି ଲୁଚିଥିବା ଜେଶ୍ଚର୍ ବିଷୟରେ ପରାମର୍ଶ ଦେଖାନ୍ତୁ</string>
+    <string name="dejavu_new">ନୂଆ</string>
 </resources>

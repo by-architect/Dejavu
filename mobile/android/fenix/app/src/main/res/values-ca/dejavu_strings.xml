@@ -536,4 +536,20 @@
     <string name="dejavu_starter_folder">Eines</string>
     <string name="dejavu_no_icon">Sense icona</string>
     <string name="dejavu_no_color">Sense color</string>
+    <string name="dejavu_tip_workspace_name">Toqueu el nom de l\'espai de treball per canviar-ne el nom, la icona, els colors i el fons de pantalla.</string>
+    <string name="dejavu_tip_new_tab">Manteniu premut «Pestanya nova» per obrir una pestanya privada o una pestanya en un contenidor.</string>
+    <string name="dejavu_tip_pin">Manteniu premuda una pestanya i arrossegueu-la per sobre de la línia per fixar-la, o per sota per desfixar-la.</string>
+    <string name="dejavu_tip_folder">Toqueu aquí per crear una carpeta de pestanyes fixades. Deixeu anar pestanyes sobre una carpeta per posar-les a dins.</string>
+    <string name="dejavu_tip_clear">Toqueu «Neteja» per tancar les pestanyes de sota la línia, o manteniu-lo premut per suprimir les dades que heu triat.</string>
+    <string name="dejavu_tip_essential_add">Manteniu premuda una pestanya i arrossegueu-la a dalt de tot per afegir-la als essencials, que es mostren a tots els espais de treball.</string>
+    <string name="dejavu_tip_essential_hold">Manteniu premut un essencial per moure\'l a un altre lloc o per treure\'l dels essencials.</string>
+    <string name="dejavu_tip_workspaces">Llisqueu cap als costats per canviar d\'espai de treball. Manteniu-ne premut un aquí i arrossegueu-lo per canviar-ne l\'ordre.</string>
+    <string name="dejavu_tip_split">Manteniu premuda una pestanya i deixeu-la anar sobre una altra per veure les dues pàgines alhora.</string>
+    <string name="dejavu_tip_menu_up">Llisqueu aquesta barra cap amunt per obrir el menú.</string>
+    <string name="dejavu_tip_menu_down">Llisqueu la barra d\'adreces cap avall per obrir el menú.</string>
+    <string name="dejavu_tip_got_it">Entesos</string>
+    <string name="dejavu_tip_hide">Amaga els consells</string>
+    <string name="dejavu_settings_tips">Consells</string>
+    <string name="dejavu_settings_tips_summary">Mostra consells sobre gestos ocults, com ara mantenir premut «Pestanya nova»</string>
+    <string name="dejavu_new">Nou</string>
 </resources>

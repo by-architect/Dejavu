@@ -528,4 +528,20 @@
     <string name="dejavu_starter_folder">ಉಪಕರಣಗಳು</string>
     <string name="dejavu_no_icon">ಚಿಹ್ನೆ ಇಲ್ಲ</string>
     <string name="dejavu_no_color">ಬಣ್ಣ ಇಲ್ಲ</string>
+    <string name="dejavu_tip_workspace_name">ಕಾರ್ಯಕ್ಷೇತ್ರದ ಹೆಸರು, ಚಿಹ್ನೆ, ಬಣ್ಣಗಳು ಮತ್ತು ವಾಲ್‌ಪೇಪರ್ ಬದಲಿಸಲು ಅದರ ಹೆಸರನ್ನು ಟ್ಯಾಪ್ ಮಾಡಿ.</string>
+    <string name="dejavu_tip_new_tab">ಖಾಸಗಿ ಟ್ಯಾಬ್ ಅಥವಾ ಕಂಟೇನರ್‌ನಲ್ಲಿ ಟ್ಯಾಬ್‌ಗಾಗಿ “ಹೊಸ ಟ್ಯಾಬ್” ಅನ್ನು ಒತ್ತಿ ಹಿಡಿಯಿರಿ.</string>
+    <string name="dejavu_tip_pin">ಟ್ಯಾಬ್ ಅನ್ನು ಒತ್ತಿ ಹಿಡಿದು, ಪಿನ್ ಮಾಡಲು ಗೆರೆಯ ಮೇಲಕ್ಕೆ ಅಥವಾ ಪಿನ್ ತೆಗೆಯಲು ಗೆರೆಯ ಕೆಳಕ್ಕೆ ಎಳೆಯಿರಿ.</string>
+    <string name="dejavu_tip_folder">ಪಿನ್ ಮಾಡಿದ ಟ್ಯಾಬ್‌ಗಳಿಗಾಗಿ ಫೋಲ್ಡರ್ ಮಾಡಲು ಇಲ್ಲಿ ಟ್ಯಾಪ್ ಮಾಡಿ. ಟ್ಯಾಬ್‌ಗಳನ್ನು ಫೋಲ್ಡರ್‌ನೊಳಗೆ ಹಾಕಲು ಅವುಗಳನ್ನು ಫೋಲ್ಡರ್ ಮೇಲೆ ಬಿಡಿ.</string>
+    <string name="dejavu_tip_clear">ಗೆರೆಯ ಕೆಳಗಿನ ಟ್ಯಾಬ್‌ಗಳನ್ನು ಮುಚ್ಚಲು “ತೆರವುಗೊಳಿಸು” ಟ್ಯಾಪ್ ಮಾಡಿ, ಅಥವಾ ನೀವು ಆರಿಸಿದ ಡೇಟಾವನ್ನು ಅಳಿಸಲು ಅದನ್ನು ಒತ್ತಿ ಹಿಡಿಯಿರಿ.</string>
+    <string name="dejavu_tip_essential_add">ಟ್ಯಾಬ್ ಅನ್ನು ಪ್ರತಿ ಕಾರ್ಯಕ್ಷೇತ್ರದಲ್ಲೂ ತೋರಿಸುವ ಅಗತ್ಯವಾದುದನ್ನಾಗಿ ಮಾಡಲು, ಅದನ್ನು ಒತ್ತಿ ಹಿಡಿದು ಮೇಲಕ್ಕೆ ಎಳೆಯಿರಿ.</string>
+    <string name="dejavu_tip_essential_hold">ಅಗತ್ಯವಾದುದನ್ನು ಬೇರೆ ಸ್ಥಳಕ್ಕೆ ಸರಿಸಲು ಅಥವಾ ಅಗತ್ಯವಾದವುಗಳಿಂದ ತೆಗೆದುಹಾಕಲು ಅದನ್ನು ಒತ್ತಿ ಹಿಡಿಯಿರಿ.</string>
+    <string name="dejavu_tip_workspaces">ಕಾರ್ಯಕ್ಷೇತ್ರಗಳನ್ನು ಬದಲಾಯಿಸಲು ಎಡಕ್ಕೆ ಅಥವಾ ಬಲಕ್ಕೆ ಸ್ವೈಪ್ ಮಾಡಿ. ಅವುಗಳ ಕ್ರಮವನ್ನು ಬದಲಿಸಲು ಇಲ್ಲಿ ಒಂದು ಕಾರ್ಯಕ್ಷೇತ್ರವನ್ನು ಒತ್ತಿ ಹಿಡಿದು ಎಳೆಯಿರಿ.</string>
+    <string name="dejavu_tip_split">ಎರಡೂ ಪುಟಗಳನ್ನು ಒಂದೇ ಬಾರಿಗೆ ನೋಡಲು ಟ್ಯಾಬ್ ಅನ್ನು ಒತ್ತಿ ಹಿಡಿದು ಇನ್ನೊಂದು ಟ್ಯಾಬ್ ಮೇಲೆ ಬಿಡಿ.</string>
+    <string name="dejavu_tip_menu_up">ಮೆನು ತೆರೆಯಲು ಈ ಪಟ್ಟಿಯನ್ನು ಮೇಲಕ್ಕೆ ಸ್ವೈಪ್ ಮಾಡಿ.</string>
+    <string name="dejavu_tip_menu_down">ಮೆನು ತೆರೆಯಲು ವಿಳಾಸ ಪಟ್ಟಿಯನ್ನು ಕೆಳಕ್ಕೆ ಎಳೆಯಿರಿ.</string>
+    <string name="dejavu_tip_got_it">ಅರ್ಥವಾಯಿತು</string>
+    <string name="dejavu_tip_hide">ಸಲಹೆಗಳನ್ನು ಮರೆಮಾಡು</string>
+    <string name="dejavu_settings_tips">ಸಲಹೆಗಳು</string>
+    <string name="dejavu_settings_tips_summary">“ಹೊಸ ಟ್ಯಾಬ್” ಅನ್ನು ಒತ್ತಿ ಹಿಡಿಯುವಂತಹ ಮರೆಯಾದ ಸನ್ನೆಗಳ ಬಗ್ಗೆ ಸಲಹೆಗಳನ್ನು ತೋರಿಸು</string>
+    <string name="dejavu_new">ಹೊಸದು</string>
 </resources>

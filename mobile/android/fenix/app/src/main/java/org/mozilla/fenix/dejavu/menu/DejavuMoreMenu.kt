@@ -69,6 +69,9 @@ import org.mozilla.fenix.dejavu.browser.navigationBarRoomPadding
 import org.mozilla.fenix.dejavu.browser.shownPopupTheme
 import org.mozilla.fenix.dejavu.browser.statusBarRoomPadding
 import org.mozilla.fenix.dejavu.browser.workspaceTheme
+import org.mozilla.fenix.dejavu.discover.isNewAmong
+import org.mozilla.fenix.dejavu.discover.newDot
+import org.mozilla.fenix.dejavu.discover.rememberUnseenNewThings
 import org.mozilla.fenix.dejavu.home.displayTitle
 import org.mozilla.fenix.dejavu.ui.TapIcon
 import org.mozilla.fenix.dejavu.ui.WordFittedText
@@ -327,6 +330,7 @@ fun MoreMenu(
     onManageExtensions: () -> Unit,
     onEdit: (() -> Unit)? = null,
 ) {
+    val unseen = rememberUnseenNewThings()
     Column(verticalArrangement = Arrangement.spacedBy(6.dp), modifier = Modifier.padding(vertical = 6.dp)) {
         rows.forEach { row ->
             val single = row.singleOrNull()
@@ -344,6 +348,7 @@ fun MoreMenu(
                             look = entry.look(state),
                             onClick = { onEntryClick(entry) },
                             modifier = Modifier.weight(1f),
+                            isNew = entry.isNewAmong(unseen),
                         )
                     }
                     repeat(MoreMenuLayout.MAX_PER_ROW - row.size) { Spacer(Modifier.weight(1f)) }
@@ -370,7 +375,7 @@ fun MoreMenu(
 }
 
 @Composable
-private fun MenuTile(look: EntryLook, onClick: () -> Unit, modifier: Modifier = Modifier) {
+private fun MenuTile(look: EntryLook, onClick: () -> Unit, modifier: Modifier = Modifier, isNew: Boolean = false) {
     Column(
         horizontalAlignment = Alignment.CenterHorizontally,
         modifier = modifier
@@ -383,6 +388,7 @@ private fun MenuTile(look: EntryLook, onClick: () -> Unit, modifier: Modifier = 
             contentAlignment = Alignment.Center,
             modifier = Modifier
                 .size(48.dp)
+                .newDot(isNew)
                 .clip(RoundedCornerShape(16.dp))
                 .background(
                     if (look.active) {

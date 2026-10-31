@@ -528,4 +528,20 @@
     <string name="dejavu_starter_folder">ئامرازەکان</string>
     <string name="dejavu_no_icon">بێ ئایکۆن</string>
     <string name="dejavu_no_color">بێ ڕەنگ</string>
+    <string name="dejavu_tip_workspace_name">دەست لەسەر ناوی فەزاکە بدە بۆ گۆڕینی ناو، ئایکۆن، ڕەنگەکان و وێنەی پاشبنەماکەی.</string>
+    <string name="dejavu_tip_new_tab">«بازدەری نوێ» ڕابگرە بۆ کردنەوەی بازدەرێکی تایبەت، یان بازدەرێک لە کۆنتەینەرێکدا.</string>
+    <string name="dejavu_tip_pin">بازدەرێک ڕابگرە و بۆ چەسپاندنی ڕایبکێشە بۆ سەرووی هێڵەکە، یان بۆ لابردنی چەسپانەکەی بۆ خوارووی هێڵەکە.</string>
+    <string name="dejavu_tip_folder">دەست لێرە بدە بۆ دروستکردنی پۆشەیەک بۆ بازدەرە چەسپاوەکان. بازدەرەکان لەسەر پۆشەیەک دابنێ بۆ خستنیانە ناوی.</string>
+    <string name="dejavu_tip_clear">دەست لەسەر «خاوێنکردنەوە» بدە بۆ داخستنی بازدەرەکانی خوارووی هێڵەکە، یان ڕایبگرە بۆ سڕینەوەی ئەو زانیارییانەی هەڵتبژاردوون.</string>
+    <string name="dejavu_tip_essential_add">بازدەرێک ڕابگرە و ڕایبکێشە بۆ سەرەوە بۆ زیادکردنی بۆ ماڵپەڕە گرنگەکان، کە لە هەموو فەزایەکدا پیشان دەدرێن.</string>
+    <string name="dejavu_tip_essential_hold">ماڵپەڕێکی گرنگ ڕابگرە بۆ گواستنەوەی بۆ شوێنێکی تر، یان بۆ لابردنی لە ماڵپەڕە گرنگەکان.</string>
+    <string name="dejavu_tip_workspaces">بۆ گۆڕینی فەزا بۆ لای تەنیشت ڕابکێشە. یەکێکیان لێرە ڕابگرە و ڕایبکێشە بۆ گۆڕینی ڕیزبەندییان.</string>
+    <string name="dejavu_tip_split">بازدەرێک ڕابگرە و لەسەر یەکێکی تر دایبنێ بۆ بینینی هەردوو پەڕەکە پێکەوە.</string>
+    <string name="dejavu_tip_menu_up">ئەم شریتە بۆ سەرەوە ڕابکێشە بۆ کردنەوەی پێڕست.</string>
+    <string name="dejavu_tip_menu_down">شریتی ناونیشان بۆ خوارەوە ڕابکێشە بۆ کردنەوەی پێڕست.</string>
+    <string name="dejavu_tip_got_it">تێگەیشتم</string>
+    <string name="dejavu_tip_hide">شاردنەوەی ئامۆژگارییەکان</string>
+    <string name="dejavu_settings_tips">ئامۆژگارییەکان</string>
+    <string name="dejavu_settings_tips_summary">پیشاندانی ئامۆژگاری دەربارەی جوڵاندنە شاراوەکان، وەک ڕاگرتنی «بازدەری نوێ»</string>
+    <string name="dejavu_new">نوێ</string>
 </resources>

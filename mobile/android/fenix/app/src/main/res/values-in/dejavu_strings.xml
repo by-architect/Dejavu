@@ -520,4 +520,20 @@
     <string name="dejavu_starter_folder">Alat</string>
     <string name="dejavu_no_icon">Tanpa ikon</string>
     <string name="dejavu_no_color">Tanpa warna</string>
+    <string name="dejavu_tip_workspace_name">Ketuk nama ruang kerja untuk mengubah nama, ikon, warna, dan wallpaper-nya.</string>
+    <string name="dejavu_tip_new_tab">Tahan “Tab baru” untuk membuka tab pribadi, atau tab dalam wadah.</string>
+    <string name="dejavu_tip_pin">Tahan tab lalu seret ke atas garis untuk menyematkannya, atau ke bawah garis untuk melepas sematannya.</string>
+    <string name="dejavu_tip_folder">Ketuk di sini untuk membuat folder bagi tab yang disemat. Jatuhkan tab ke folder untuk memasukkannya.</string>
+    <string name="dejavu_tip_clear">Ketuk “Bersihkan” untuk menutup tab di bawah garis, atau tahan untuk menghapus data penjelajahan yang Anda pilih.</string>
+    <string name="dejavu_tip_essential_add">Tahan tab lalu seret ke bagian atas untuk menjadikannya situs penting, yang tampil di setiap ruang kerja.</string>
+    <string name="dejavu_tip_essential_hold">Tahan situs penting untuk memindahkannya ke tempat lain, atau untuk menghapusnya dari situs penting.</string>
+    <string name="dejavu_tip_workspaces">Geser ke samping untuk berpindah ruang kerja. Tahan salah satunya di sini lalu seret untuk mengubah urutannya.</string>
+    <string name="dejavu_tip_split">Tahan tab lalu jatuhkan ke tab lain untuk melihat kedua halaman sekaligus.</string>
+    <string name="dejavu_tip_menu_up">Geser bilah ini ke atas untuk membuka menu.</string>
+    <string name="dejavu_tip_menu_down">Tarik bilah alamat ke bawah untuk membuka menu.</string>
+    <string name="dejavu_tip_got_it">Paham</string>
+    <string name="dejavu_tip_hide">Sembunyikan tips</string>
+    <string name="dejavu_settings_tips">Tips</string>
+    <string name="dejavu_settings_tips_summary">Tampilkan tips tentang gestur tersembunyi, seperti menahan “Tab baru”</string>
+    <string name="dejavu_new">Baru</string>
 </resources>

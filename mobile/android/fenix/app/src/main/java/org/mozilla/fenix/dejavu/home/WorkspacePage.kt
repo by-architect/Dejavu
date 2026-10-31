@@ -35,6 +35,7 @@ import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.LazyListItemInfo
 import androidx.compose.foundation.lazy.LazyListState
 import androidx.compose.foundation.lazy.items
+import androidx.compose.foundation.lazy.itemsIndexed
 import androidx.compose.foundation.lazy.rememberLazyListState
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
@@ -64,6 +65,7 @@ import androidx.compose.ui.geometry.Rect
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.graphicsLayer
 import androidx.compose.ui.graphics.luminance
+import androidx.compose.ui.platform.LocalConfiguration
 import androidx.compose.ui.platform.LocalDensity
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.pluralStringResource
@@ -85,6 +87,7 @@ import org.mozilla.fenix.dejavu.actions.TabAction
 import org.mozilla.fenix.dejavu.actions.icon
 import org.mozilla.fenix.dejavu.actions.label
 import org.mozilla.fenix.dejavu.browser.ClearData
+import org.mozilla.fenix.dejavu.browser.SplitSpace
 import org.mozilla.fenix.dejavu.browser.tabZoomTarget
 import org.mozilla.fenix.dejavu.containers.ContainerIcon
 import org.mozilla.fenix.dejavu.containers.ContainerPick
@@ -93,6 +96,10 @@ import org.mozilla.fenix.dejavu.containers.NoContainerIcon
 import org.mozilla.fenix.dejavu.containers.TemporaryContainerIcon
 import org.mozilla.fenix.dejavu.containers.color
 import org.mozilla.fenix.dejavu.containers.splitTemporary
+import org.mozilla.fenix.dejavu.discover.Tip
+import org.mozilla.fenix.dejavu.discover.TipGesture
+import org.mozilla.fenix.dejavu.discover.Tips
+import org.mozilla.fenix.dejavu.discover.tipTarget
 import org.mozilla.fenix.dejavu.sync.workspaceIconText
 import org.mozilla.fenix.dejavu.ui.DejavuDropdownMenu
 import org.mozilla.fenix.dejavu.ui.DejavuMenuDivider
@@ -115,6 +122,11 @@ private val MinTouchSize = 48.dp
 private const val DRAGGED_ALPHA = 0.35f
 private val INSIDE_FOLDER_RANGE = 0.25f..0.75f
 private val SPLIT_RANGE = 0.3f..0.7f
+
+// Where the finger of a tip touches a row, how far it drags a tab to pin it, and onto the row above.
+private const val ROW_TOUCH = 0.35f
+private val PIN_DRAG = (-110).dp
+private val ROW_DRAG = (-52).dp
 
 // Where the icon starts in a row, as the drag stack lifts it off.
 private val TabIconStart = 8.dp
@@ -276,6 +288,9 @@ internal fun WorkspacePage(
     val otherTabs = tabs.filterNot { it.id in pinnedTabIds }
     val splitTabIds = state.splits.flatMap { it.tabIds }.toSet()
     val lines = tabLines(otherTabs, state)
+    // The tip about split views points at the second tab, to drop onto the first one, while no tabs are split.
+    val showsSplitTip = SplitSpace.supported(LocalConfiguration.current).isNotEmpty() && splitTabIds.isEmpty() &&
+        lines.firstOrNull()?.tabs?.size == 1
     // The key of the row each pinned item and tab shows on, for the ones sharing a row with a split view partner.
     val lineKeys = pinLines.flatMap { line -> line.entries.map { PIN_PREFIX + it.item.id to line.key } }.toMap() +
         lines.flatMap { line -> line.tabs.map { TAB_PREFIX + it.id to line.key } }
@@ -496,6 +511,7 @@ internal fun WorkspacePage(
                         if (otherTabs.isNotEmpty()) callbacks.onClearUnpinned() else callbacks.onClearData(false)
                     },
                     onClearData = {
+                        Tips.done(Tip.CLEAR)
                         motions.clearTapped()
                         callbacks.onClearData(false)
                     },
@@ -517,11 +533,12 @@ internal fun WorkspacePage(
                     onManageContainers = callbacks.onManageContainers,
                     modifier = Modifier
                         .animateItem(fadeInSpec = null, placementSpec = placement, fadeOutSpec = null)
-                        .dropLine(dropLines?.of(KEY_NEW_TAB), lineColor, insideColor),
+                        .dropLine(dropLines?.of(KEY_NEW_TAB), lineColor, insideColor)
+                        .tipTarget(Tip.NEW_TAB, TipGesture.Hold, enabled = selection == null, at = ROW_TOUCH),
                 )
             }
 
-            items(lines, key = { it.key }) { line ->
+            itemsIndexed(lines, key = { _, line -> line.key }) { index, line ->
                 val key = line.key
                 val tab = line.tabs.first()
                 val rowModifier = Modifier
@@ -564,7 +581,16 @@ internal fun WorkspacePage(
                     actions = rowActions(unpinnedRowActions, targets, isPinned = false),
                     onAction = { callbacks.onRowAction(it, targets) },
                     onClick = { if (drag == null) callbacks.onTabClick(tab) },
-                    modifier = rowModifier.tabZoomTarget(tab.id),
+                    modifier = rowModifier
+                        .tabZoomTarget(tab.id)
+                        .tipTarget(Tip.PIN, TipGesture.Drag(dy = PIN_DRAG), enabled = index == 0, at = ROW_TOUCH)
+                        .tipTarget(Tip.ESSENTIAL_ADD, TipGesture.Drag(toTop = true), index == 0, ROW_TOUCH)
+                        .tipTarget(
+                            Tip.SPLIT,
+                            TipGesture.Drag(dy = ROW_DRAG),
+                            enabled = index == 1 && showsSplitTip,
+                            at = ROW_TOUCH,
+                        ),
                 )
             }
         }
@@ -886,6 +912,7 @@ private fun SectionDivider(
                 verticalAlignment = Alignment.CenterVertically,
                 horizontalArrangement = Arrangement.Center,
                 modifier = clearButton
+                    .tipTarget(Tip.CLEAR, TipGesture.Hold)
                     .defaultMinSize(minWidth = ButtonDefaults.MinWidth, minHeight = ButtonDefaults.MinHeight)
                     .clip(CircleShape)
                     .combinedClickable(
@@ -946,7 +973,10 @@ private fun NewTabRow(
                         taps.tap()
                         onClick()
                     },
-                    onLongClick = { menuOpen = true },
+                    onLongClick = {
+                        Tips.done(Tip.NEW_TAB)
+                        menuOpen = true
+                    },
                 )
                 .padding(horizontal = 12.dp, vertical = 14.dp),
         ) {
@@ -1074,22 +1104,28 @@ private fun WorkspaceHeader(
                 .clickable(onClick = onEdit)
                 .padding(horizontal = 12.dp, vertical = 8.dp),
         ) {
-            if (container != null) {
-                ContainerIcon(container, size = 18.dp)
-                Spacer(Modifier.width(8.dp))
+            // The tip about editing the workspace rings what shows of it, not the whole tappable room.
+            Row(
+                verticalAlignment = Alignment.CenterVertically,
+                modifier = Modifier.tipTarget(Tip.WORKSPACE_NAME, TipGesture.Tap, enabled = !isDevice),
+            ) {
+                if (container != null) {
+                    ContainerIcon(container, size = 18.dp)
+                    Spacer(Modifier.width(8.dp))
+                }
+                workspaceIconText(workspace.icon)?.let { icon ->
+                    Text(text = icon, style = MaterialTheme.typography.titleSmall)
+                    Spacer(Modifier.width(6.dp))
+                }
+                Text(
+                    text = workspace.name,
+                    style = MaterialTheme.typography.titleSmall,
+                    fontWeight = FontWeight.Bold,
+                    color = container?.color?.color ?: MaterialTheme.colorScheme.onSurfaceVariant,
+                    maxLines = 1,
+                    overflow = TextOverflow.Ellipsis,
+                )
             }
-            workspaceIconText(workspace.icon)?.let { icon ->
-                Text(text = icon, style = MaterialTheme.typography.titleSmall)
-                Spacer(Modifier.width(6.dp))
-            }
-            Text(
-                text = workspace.name,
-                style = MaterialTheme.typography.titleSmall,
-                fontWeight = FontWeight.Bold,
-                color = container?.color?.color ?: MaterialTheme.colorScheme.onSurfaceVariant,
-                maxLines = 1,
-                overflow = TextOverflow.Ellipsis,
-            )
         }
         SmallIconButton(
             icon = R.drawable.dejavu_ic_clipboard_24,
@@ -1109,6 +1145,7 @@ private fun WorkspaceHeader(
             SmallIconButton(
                 icon = R.drawable.dejavu_ic_create_folder_24,
                 description = R.string.dejavu_action_new_folder,
+                modifier = Modifier.tipTarget(Tip.FOLDER, TipGesture.Tap),
                 onClick = onNewFolder,
             )
         }

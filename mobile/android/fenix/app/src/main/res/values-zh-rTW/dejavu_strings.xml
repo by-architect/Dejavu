@@ -520,4 +520,20 @@
     <string name="dejavu_starter_folder">工具</string>
     <string name="dejavu_no_icon">無圖示</string>
     <string name="dejavu_no_color">無顏色</string>
+    <string name="dejavu_tip_workspace_name">輕觸工作區名稱，即可變更其名稱、圖示、顏色與背景圖。</string>
+    <string name="dejavu_tip_new_tab">長按「開新分頁」即可開啟隱私分頁，或在容器中開啟分頁。</string>
+    <string name="dejavu_tip_pin">長按分頁並將其拖曳到分隔線上方即可釘選，拖曳到分隔線下方即可取消釘選。</string>
+    <string name="dejavu_tip_folder">輕觸此處即可為已釘選分頁新增資料夾。將分頁拖放到資料夾上即可放入其中。</string>
+    <string name="dejavu_tip_clear">輕觸「清除」即可關閉分隔線下方的分頁，長按則會刪除您選擇的資料。</string>
+    <string name="dejavu_tip_essential_add">長按分頁並將其拖曳到最上方，即可新增到常用網站，常用網站會顯示在每個工作區中。</string>
+    <string name="dejavu_tip_essential_hold">長按常用網站即可將其移動到其他位置，或從常用網站中移除。</string>
+    <string name="dejavu_tip_workspaces">左右滑動即可切換工作區。在此處長按任一工作區並拖曳，即可調整順序。</string>
+    <string name="dejavu_tip_split">長按分頁並將其拖放到另一個分頁上，即可同時檢視兩個網頁。</string>
+    <string name="dejavu_tip_menu_up">向上滑動此列即可開啟選單。</string>
+    <string name="dejavu_tip_menu_down">向下拉動網址列即可開啟選單。</string>
+    <string name="dejavu_tip_got_it">知道了</string>
+    <string name="dejavu_tip_hide">隱藏提示</string>
+    <string name="dejavu_settings_tips">提示</string>
+    <string name="dejavu_settings_tips_summary">顯示隱藏手勢的相關提示，例如長按「開新分頁」</string>
+    <string name="dejavu_new">新功能</string>
 </resources>

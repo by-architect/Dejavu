@@ -520,4 +520,20 @@
     <string name="dejavu_starter_folder">ilo</string>
     <string name="dejavu_no_icon">sitelen lili ala</string>
     <string name="dejavu_no_color">kule ala</string>
+    <string name="dejavu_tip_workspace_name">o luka e nimi pi kulupu poki tawa ante e nimi ona, e sitelen lili ona, e kule ona, e selo kule ona.</string>
+    <string name="dejavu_tip_new_tab">o luka awen e nena “poki sin” tawa poki pi nasin len, anu poki lon leko.</string>
+    <string name="dejavu_tip_pin">o luka awen e poki, o tawa e ona tawa sewi pi linja tawa awen e ona, anu tawa anpa pi linja tawa weka e awen ona.</string>
+    <string name="dejavu_tip_folder">o luka e ni tawa pali e tomo poki pi poki awen. o pana e poki lon tomo poki la ona li kama lon insa.</string>
+    <string name="dejavu_tip_clear">o luka e nena “o weka” tawa pini e poki lon anpa pi linja, anu o luka awen e ona tawa weka e sona pi wile sina.</string>
+    <string name="dejavu_tip_essential_add">o luka awen e poki, o tawa e ona tawa sewi tawa pana e ona tawa lipu suli. lipu suli li lon kulupu poki ale.</string>
+    <string name="dejavu_tip_essential_hold">o luka awen e lipu suli la sina ken tawa e ona tawa ma ante, anu weka e ona tan lipu suli.</string>
+    <string name="dejavu_tip_workspaces">o tawa e luka tawa poka tawa kulupu poki ante. o luka awen e wan lon ni, o tawa e ona tawa ante e nasin ona.</string>
+    <string name="dejavu_tip_split">o luka awen e poki, o pana e ona lon poki ante tawa lukin e lipu tu lon tenpo sama.</string>
+    <string name="dejavu_tip_menu_up">o tawa sewi e linja ni tawa open e ilo mute.</string>
+    <string name="dejavu_tip_menu_down">o tawa anpa e linja pi nasin lipu tawa open e ilo mute.</string>
+    <string name="dejavu_tip_got_it">mi sona</string>
+    <string name="dejavu_tip_hide">o len e toki sona</string>
+    <string name="dejavu_settings_tips">toki sona</string>
+    <string name="dejavu_settings_tips_summary">o pana e toki sona pi pilin nena len, sama luka awen lon nena “poki sin”</string>
+    <string name="dejavu_new">sin</string>
 </resources>

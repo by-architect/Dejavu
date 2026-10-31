@@ -528,4 +528,20 @@
     <string name="dejavu_starter_folder">Aisinas</string>
     <string name="dejavu_no_icon">Cap d\'icòna</string>
     <string name="dejavu_no_color">Cap de color</string>
+    <string name="dejavu_tip_workspace_name">Tocatz lo nom de l’espaci de trabalh per cambiar lo nom, l’icòna, las colors e lo fons d’ecran.</string>
+    <string name="dejavu_tip_new_tab">Tenètz quichat Onglet novèl per un onglet de navegacion privada o un onglet dins un contenidor.</string>
+    <string name="dejavu_tip_pin">Tenètz quichat un onglet e lisatz-lo al dessús de la linha per lo fixar, o al dejós de la linha per lo desfixar.</string>
+    <string name="dejavu_tip_folder">Tocatz aicí per crear un dossièr pels onglets fixats. Depausatz d’onglets sus un dossièr per los i metre.</string>
+    <string name="dejavu_tip_clear">Tocatz Escafar per tampar los onglets jos la linha, o tenètz-lo quichat per suprimir las donadas qu’avètz causidas.</string>
+    <string name="dejavu_tip_essential_add">Tenètz quichat un onglet e lisatz-lo en naut per ne far un essencial, afichat dins cada espaci de trabalh.</string>
+    <string name="dejavu_tip_essential_hold">Tenètz quichat un essencial per lo desplaçar endacòm mai, o per lo levar dels essencials.</string>
+    <string name="dejavu_tip_workspaces">Fasètz lisar de costat per cambiar d’espaci de trabalh. Tenètz-ne quichat un aicí e lisatz-lo per cambiar lor òrdre.</string>
+    <string name="dejavu_tip_split">Tenètz quichat un onglet e depausatz-lo sus un autre per veire las doas paginas a l’encòp.</string>
+    <string name="dejavu_tip_menu_up">Fasètz lisar aquesta barra cap amont per dobrir lo menú.</string>
+    <string name="dejavu_tip_menu_down">Tiratz la barra d’adreça cap aval per dobrir lo menú.</string>
+    <string name="dejavu_tip_got_it">Comprés</string>
+    <string name="dejavu_tip_hide">Amagar los conselhs</string>
+    <string name="dejavu_settings_tips">Conselhs</string>
+    <string name="dejavu_settings_tips_summary">Afichar de conselhs suls gèstes amagats, coma téner quichat Onglet novèl</string>
+    <string name="dejavu_new">Novèl</string>
 </resources>

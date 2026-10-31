@@ -552,4 +552,20 @@
     <string name="dejavu_starter_folder">Uirlisí</string>
     <string name="dejavu_no_icon">Gan deilbhín</string>
     <string name="dejavu_no_color">Gan dath</string>
+    <string name="dejavu_tip_workspace_name">Brúigh ainm an spáis oibre chun a ainm, a dheilbhín, a dhathanna agus a chúlbhrat a athrú.</string>
+    <string name="dejavu_tip_new_tab">Coinnigh “Cluaisín nua” brúite chun cluaisín príobháideach a oscailt, nó cluaisín i gcoimeádán.</string>
+    <string name="dejavu_tip_pin">Coinnigh cluaisín brúite agus tarraing os cionn na líne é chun é a ghreamú, nó faoin líne chun é a dhíghreamú.</string>
+    <string name="dejavu_tip_folder">Brúigh anseo chun fillteán a dhéanamh do chluaisíní greamaithe. Scaoil cluaisíní ar fhillteán chun iad a chur isteach ann.</string>
+    <string name="dejavu_tip_clear">Brúigh “Glan” chun na cluaisíní faoin líne a dhúnadh, nó coinnigh brúite é chun na sonraí brabhsála a roghnaigh tú a scriosadh.</string>
+    <string name="dejavu_tip_essential_add">Coinnigh cluaisín brúite agus tarraing go dtí an barr é chun riachtanas a dhéanamh de, a thaispeántar i ngach spás oibre.</string>
+    <string name="dejavu_tip_essential_hold">Coinnigh riachtanas brúite chun é a bhogadh go háit eile, nó chun é a bhaint de na riachtanais.</string>
+    <string name="dejavu_tip_workspaces">Svaidhpeáil ó thaobh go taobh chun aistriú idir spásanna oibre. Coinnigh ceann brúite anseo agus tarraing é chun an t-ord a athrú.</string>
+    <string name="dejavu_tip_split">Coinnigh cluaisín brúite agus scaoil ar cheann eile é chun an dá leathanach a fheiceáil le chéile.</string>
+    <string name="dejavu_tip_menu_up">Svaidhpeáil an barra seo suas chun an roghchlár a oscailt.</string>
+    <string name="dejavu_tip_menu_down">Tarraing an barra seoltaí síos chun an roghchlár a oscailt.</string>
+    <string name="dejavu_tip_got_it">Tuigim</string>
+    <string name="dejavu_tip_hide">Folaigh leideanna</string>
+    <string name="dejavu_settings_tips">Leideanna</string>
+    <string name="dejavu_settings_tips_summary">Taispeáin leideanna faoi ghothaí folaithe, mar shampla “Cluaisín nua” a choinneáil brúite</string>
+    <string name="dejavu_new">Nua</string>
 </resources>

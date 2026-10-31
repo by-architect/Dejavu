@@ -528,4 +528,20 @@
     <string name="dejavu_starter_folder">اوزار</string>
     <string name="dejavu_no_icon">پرته له آیکون</string>
     <string name="dejavu_no_color">پرته له رنګ</string>
+    <string name="dejavu_tip_workspace_name">د ساحې د نوم، آیکون، رنګونو او شالید انځور د بدلولو لپاره د هغې پر نوم کېکاږئ.</string>
+    <string name="dejavu_tip_new_tab">د شخصي ټب یا په کانتینر کې د ټب لپاره «نوی ټب» ونیسئ.</string>
+    <string name="dejavu_tip_pin">یو ټب ونیسئ او د پین کولو لپاره یې له کرښې پورته، یا د پین ایستلو لپاره یې له کرښې لاندې کش کړئ.</string>
+    <string name="dejavu_tip_folder">د پین شویو ټبونو لپاره د پوښې جوړولو لپاره دلته کېکاږئ. ټبونه پر یوې پوښې پرېږدئ ترڅو یې دننه واچوئ.</string>
+    <string name="dejavu_tip_clear">له کرښې لاندې ټبونو د بندولو لپاره پر «پاکول» کېکاږئ، یا یې ونیسئ ترڅو هغه معلومات پاک کړئ چې تاسو ټاکلي دي.</string>
+    <string name="dejavu_tip_essential_add">یو ټب ونیسئ او سر ته یې کش کړئ ترڅو مهمه ویب پاڼه شي، چې په هره ساحه کې ښودل کېږي.</string>
+    <string name="dejavu_tip_essential_hold">یوه مهمه ویب پاڼه ونیسئ ترڅو یې بل ځای ته یوسئ، یا یې له مهمو ویب پاڼو څخه لرې کړئ.</string>
+    <string name="dejavu_tip_workspaces">د ساحې د بدلولو لپاره ښي یا کيڼ لور ته کش کړئ. د ترتیب بدلولو لپاره دلته یوه ساحه ونیسئ او کش یې کړئ.</string>
+    <string name="dejavu_tip_split">یو ټب ونیسئ او پر بل ټب یې پرېږدئ ترڅو دواړه پاڼې یوځای وګورئ.</string>
+    <string name="dejavu_tip_menu_up">د مینو د خلاصولو لپاره دا نوار پورته کش کړئ.</string>
+    <string name="dejavu_tip_menu_down">د مینو د خلاصولو لپاره د پتې نوار ښکته راکاږئ.</string>
+    <string name="dejavu_tip_got_it">پوه شوم</string>
+    <string name="dejavu_tip_hide">لارښوونې پټول</string>
+    <string name="dejavu_settings_tips">لارښوونې</string>
+    <string name="dejavu_settings_tips_summary">د پټو اشارو په اړه لارښوونې ښودل، لکه د «نوی ټب» نیول</string>
+    <string name="dejavu_new">نوی</string>
 </resources>

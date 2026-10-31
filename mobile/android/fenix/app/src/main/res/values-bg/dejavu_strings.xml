@@ -528,4 +528,20 @@
     <string name="dejavu_starter_folder">Инструменти</string>
     <string name="dejavu_no_icon">Без икона</string>
     <string name="dejavu_no_color">Без цвят</string>
+    <string name="dejavu_tip_workspace_name">Докоснете името на работното пространство, за да промените името, иконата, цветовете и тапета му.</string>
+    <string name="dejavu_tip_new_tab">Задръжте „Нов раздел“ за поверителен раздел или раздел в контейнер.</string>
+    <string name="dejavu_tip_pin">Задръжте раздел и го плъзнете над линията, за да го закачите, или под линията, за да го откачите.</string>
+    <string name="dejavu_tip_folder">Докоснете тук, за да създадете папка за закачени раздели. Пуснете раздели върху папка, за да ги сложите в нея.</string>
+    <string name="dejavu_tip_clear">Докоснете „Изчистване“, за да затворите разделите под линията, или го задръжте, за да изтриете избраните от вас данни.</string>
+    <string name="dejavu_tip_essential_add">Задръжте раздел и го плъзнете най-горе, за да го добавите към Любими, които се показват във всяко работно пространство.</string>
+    <string name="dejavu_tip_essential_hold">Задръжте елемент от Любими, за да го преместите на друго място или да го премахнете от Любими.</string>
+    <string name="dejavu_tip_workspaces">Плъзнете настрани, за да смените работното пространство. Задръжте едно тук и го плъзнете, за да промените реда им.</string>
+    <string name="dejavu_tip_split">Задръжте раздел и го пуснете върху друг, за да видите двете страници едновременно.</string>
+    <string name="dejavu_tip_menu_up">Плъзнете тази лента нагоре, за да отворите менюто.</string>
+    <string name="dejavu_tip_menu_down">Плъзнете адресната лента надолу, за да отворите менюто.</string>
+    <string name="dejavu_tip_got_it">Разбрах</string>
+    <string name="dejavu_tip_hide">Скриване на съветите</string>
+    <string name="dejavu_settings_tips">Съвети</string>
+    <string name="dejavu_settings_tips_summary">Показване на съвети за скрити жестове, като задържане на „Нов раздел“</string>
+    <string name="dejavu_new">Нов</string>
 </resources>
