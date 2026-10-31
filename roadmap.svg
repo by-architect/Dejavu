@@ -1,0 +1,762 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1098" viewBox="0 0 1000 1098" role="img" aria-label="Dejavu roadmap board">
+<style>
+text { font-family: -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif; fill: #1f2328; }
+.page { fill: #ffffff; } .column { fill: #f6f8fa; stroke: #d1d9e0; } .card { fill: #ffffff; stroke: #d1d9e0; }
+.muted { fill: #59636e; } .title { font-size: 20px; font-weight: 600; }
+.name { font-size: 14px; font-weight: 600; } .count { font-size: 12px; } .text { font-size: 13px; }
+.number { font-size: 11px; } .tag { font-size: 11px; font-weight: 600; }
+.waiting { fill: #eaeef2; } .waiting-text { fill: #59636e; }
+.working { fill: #fff1c2; } .working-text { fill: #7d4e00; }
+.done { fill: #dafbe1; } .done-text { fill: #1a7f37; }
+@media (prefers-color-scheme: dark) {
+  text { fill: #f0f6fc; } .page { fill: #0d1117; } .column { fill: #151b23; stroke: #3d444d; }
+  .card { fill: #0d1117; stroke: #3d444d; } .muted { fill: #9198a1; }
+  .waiting { fill: #262c36; } .waiting-text { fill: #9198a1; }
+  .working { fill: #3b2e10; } .working-text { fill: #e3b341; }
+  .done { fill: #12301c; } .done-text { fill: #3fb950; }
+}
+</style>
+<rect class="page" width="1000" height="1098" rx="12"/>
+<text class="title" x="16" y="34">Dejavu Roadmap</text>
+<text class="muted count" x="16" y="54">What is done, what is being worked on and what comes next. Updated 2026-10-31.</text>
+<rect class="column" x="16.0" y="64" width="51.1" height="967" rx="10"/>
+<text class="name" x="28.0" y="89">v3.0.0</text>
+<text class="muted count" x="55.1" y="89" text-anchor="end">63</text>
+<rect class="card" x="24.0" y="104" width="35.1" height="80" rx="8"/>
+<text class="text" x="34.0" y="126">[FEATURE REQUEST]</text>
+<text class="text" x="34.0" y="143">Bookmark export</text>
+<text class="muted number" x="34.0" y="168">#82</text>
+<rect class="done" x="14.3" y="154" width="34.8" height="20" rx="10"/>
+<text class="tag done-text" x="31.7" y="168" text-anchor="middle">Done</text>
+<rect class="card" x="24.0" y="192" width="35.1" height="97" rx="8"/>
+<text class="text" x="34.0" y="214">Warn in some</text>
+<text class="text" x="34.0" y="231">workspaces that</text>
+<text class="text" x="34.0" y="248">workspace is limited…</text>
+<text class="muted number" x="34.0" y="273">#187</text>
+<rect class="done" x="14.3" y="259" width="34.8" height="20" rx="10"/>
+<text class="tag done-text" x="31.7" y="273" text-anchor="middle">Done</text>
+<rect class="card" x="24.0" y="297" width="35.1" height="97" rx="8"/>
+<text class="text" x="34.0" y="319">[FEATURE REQUEST]</text>
+<text class="text" x="34.0" y="336">Handle Screen using</text>
+<text class="text" x="34.0" y="353">screen size, use…</text>
+<text class="muted number" x="34.0" y="378">#118</text>
+<rect class="done" x="14.3" y="364" width="34.8" height="20" rx="10"/>
+<text class="tag done-text" x="31.7" y="378" text-anchor="middle">Done</text>
+<rect class="card" x="24.0" y="402" width="35.1" height="97" rx="8"/>
+<text class="text" x="34.0" y="424">[FEATURE REQUEST]</text>
+<text class="text" x="34.0" y="441">Vertical split view</text>
+<text class="text" x="34.0" y="458">for big screens</text>
+<text class="muted number" x="34.0" y="483">#99</text>
+<rect class="done" x="14.3" y="469" width="34.8" height="20" rx="10"/>
+<text class="tag done-text" x="31.7" y="483" text-anchor="middle">Done</text>
+<rect class="card" x="24.0" y="507" width="35.1" height="97" rx="8"/>
+<text class="text" x="34.0" y="529">[SECURITY] Three</text>
+<text class="text" x="34.0" y="546">security problems from</text>
+<text class="text" x="34.0" y="563">the review wait in…</text>
+<text class="muted number" x="34.0" y="588">#184</text>
+<rect class="done" x="14.3" y="574" width="34.8" height="20" rx="10"/>
+<text class="tag done-text" x="31.7" y="588" text-anchor="middle">Done</text>
+<rect class="card" x="24.0" y="612" width="35.1" height="80" rx="8"/>
+<text class="text" x="34.0" y="634">custom color for</text>
+<text class="text" x="34.0" y="651">workspaces</text>
+<text class="muted number" x="34.0" y="676">#62</text>
+<rect class="done" x="14.3" y="662" width="34.8" height="20" rx="10"/>
+<text class="tag done-text" x="31.7" y="676" text-anchor="middle">Done</text>
+<rect class="card" x="24.0" y="700" width="35.1" height="97" rx="8"/>
+<text class="text" x="34.0" y="722">[FEATURE REQUEST] New</text>
+<text class="text" x="34.0" y="739">Tab Page</text>
+<text class="text" x="34.0" y="756">Wallpaper/Background</text>
+<text class="muted number" x="34.0" y="781">#79</text>
+<rect class="done" x="14.3" y="767" width="34.8" height="20" rx="10"/>
+<text class="tag done-text" x="31.7" y="781" text-anchor="middle">Done</text>
+<rect class="card" x="24.0" y="805" width="35.1" height="97" rx="8"/>
+<text class="text" x="34.0" y="827">[FEATURE REQUEST]</text>
+<text class="text" x="34.0" y="844">Installing process</text>
+<text class="text" x="34.0" y="861">show on home screen</text>
+<text class="muted number" x="34.0" y="886">#112</text>
+<rect class="done" x="14.3" y="872" width="34.8" height="20" rx="10"/>
+<text class="tag done-text" x="31.7" y="886" text-anchor="middle">Done</text>
+<rect class="card" x="24.0" y="910" width="35.1" height="80" rx="8"/>
+<text class="text" x="34.0" y="932">[FEATURE REQUEST]</text>
+<text class="text" x="34.0" y="949">Animations And fluency</text>
+<text class="muted number" x="34.0" y="974">#114</text>
+<rect class="done" x="14.3" y="960" width="34.8" height="20" rx="10"/>
+<text class="tag done-text" x="31.7" y="974" text-anchor="middle">Done</text>
+<text class="muted count" x="34.0" y="1011">and 54 more</text>
+<rect class="column" x="77.1" y="64" width="51.1" height="241" rx="10"/>
+<text class="name" x="89.1" y="89">v3.1.0</text>
+<text class="muted count" x="116.2" y="89" text-anchor="end">2</text>
+<rect class="card" x="85.1" y="104" width="35.1" height="97" rx="8"/>
+<text class="text" x="95.1" y="126">[BUG] Passkey sign-in</text>
+<text class="text" x="95.1" y="143">fails immediately</text>
+<text class="text" x="95.1" y="160">without opening the…</text>
+<text class="muted number" x="95.1" y="185">#124</text>
+<rect class="waiting" x="56.9" y="171" width="53.4" height="20" rx="10"/>
+<text class="tag waiting-text" x="83.5" y="185" text-anchor="middle">Waiting</text>
+<rect class="card" x="85.1" y="209" width="35.1" height="80" rx="8"/>
+<text class="text" x="95.1" y="231">Show how many link</text>
+<text class="text" x="95.1" y="248">visited in one tab</text>
+<text class="muted number" x="95.1" y="273">#35</text>
+<rect class="column" x="138.2" y="64" width="51.1" height="468" rx="10"/>
+<text class="name" x="150.2" y="89">Firefox rebase</text>
+<text class="muted count" x="177.4" y="89" text-anchor="end">4</text>
+<rect class="card" x="146.2" y="104" width="35.1" height="97" rx="8"/>
+<text class="text" x="156.2" y="126">[SECURITY] The browser</text>
+<text class="text" x="156.2" y="143">engine is a Mozilla</text>
+<text class="text" x="156.2" y="160">test build from…</text>
+<text class="muted number" x="156.2" y="185">#129</text>
+<rect class="waiting" x="118.0" y="171" width="53.4" height="20" rx="10"/>
+<text class="tag waiting-text" x="144.7" y="185" text-anchor="middle">Waiting</text>
+<rect class="card" x="146.2" y="209" width="35.1" height="97" rx="8"/>
+<text class="text" x="156.2" y="231">[SECURITY] Add-on</text>
+<text class="text" x="156.2" y="248">signature checks can</text>
+<text class="text" x="156.2" y="265">be turned off in…</text>
+<text class="muted number" x="156.2" y="290">#131</text>
+<rect class="waiting" x="118.0" y="276" width="53.4" height="20" rx="10"/>
+<text class="tag waiting-text" x="144.7" y="290" text-anchor="middle">Waiting</text>
+<rect class="card" x="146.2" y="314" width="35.1" height="97" rx="8"/>
+<text class="text" x="156.2" y="336">[SECURITY] Sync,</text>
+<text class="text" x="156.2" y="353">passwords and the</text>
+<text class="text" x="156.2" y="370">Mozilla account code…</text>
+<text class="muted number" x="156.2" y="395">#132</text>
+<rect class="waiting" x="118.0" y="381" width="53.4" height="20" rx="10"/>
+<text class="tag waiting-text" x="144.7" y="395" text-anchor="middle">Waiting</text>
+<rect class="card" x="146.2" y="419" width="35.1" height="97" rx="8"/>
+<text class="text" x="156.2" y="441">[SECURITY]</text>
+<text class="text" x="156.2" y="458">Nightly-only web</text>
+<text class="text" x="156.2" y="475">features are switched…</text>
+<text class="muted number" x="156.2" y="500">#133</text>
+<rect class="waiting" x="118.0" y="486" width="53.4" height="20" rx="10"/>
+<text class="tag waiting-text" x="144.7" y="500" text-anchor="middle">Waiting</text>
+<rect class="column" x="199.4" y="64" width="51.1" height="1001" rx="10"/>
+<text class="name" x="211.4" y="89">4.0.0</text>
+<text class="muted count" x="238.5" y="89" text-anchor="end">10</text>
+<rect class="card" x="207.4" y="104" width="35.1" height="97" rx="8"/>
+<text class="text" x="217.4" y="126">[FEATURE REQUEST]</text>
+<text class="text" x="217.4" y="143">Custom Icon Pack</text>
+<text class="text" x="217.4" y="160">Selection</text>
+<text class="muted number" x="217.4" y="185">#233</text>
+<rect class="waiting" x="179.1" y="171" width="53.4" height="20" rx="10"/>
+<text class="tag waiting-text" x="205.8" y="185" text-anchor="middle">Waiting</text>
+<rect class="card" x="207.4" y="209" width="35.1" height="97" rx="8"/>
+<text class="text" x="217.4" y="231">[SECURITY] Remote</text>
+<text class="text" x="217.4" y="248">debugging over USB</text>
+<text class="text" x="217.4" y="265">stays on across…</text>
+<text class="muted number" x="217.4" y="290">#171</text>
+<rect class="done" x="197.7" y="276" width="34.8" height="20" rx="10"/>
+<text class="tag done-text" x="215.1" y="290" text-anchor="middle">Done</text>
+<rect class="card" x="207.4" y="314" width="35.1" height="80" rx="8"/>
+<text class="text" x="217.4" y="336">[FEATURE REQUEST] Lock</text>
+<text class="text" x="217.4" y="353">workspace</text>
+<text class="muted number" x="217.4" y="378">#98</text>
+<rect class="card" x="207.4" y="402" width="35.1" height="97" rx="8"/>
+<text class="text" x="217.4" y="424">[FEATURE REQUEST] Able</text>
+<text class="text" x="217.4" y="441">to add action as quick</text>
+<text class="text" x="217.4" y="458">share, like share tab…</text>
+<text class="muted number" x="217.4" y="483">#97</text>
+<rect class="card" x="207.4" y="507" width="35.1" height="97" rx="8"/>
+<text class="text" x="217.4" y="529">Backup/Restore locally</text>
+<text class="text" x="217.4" y="546">for dejavu spesific</text>
+<text class="text" x="217.4" y="563">settings and zen…</text>
+<text class="muted number" x="217.4" y="588">#36</text>
+<rect class="card" x="207.4" y="612" width="35.1" height="97" rx="8"/>
+<text class="text" x="217.4" y="634">Add option when a link</text>
+<text class="text" x="217.4" y="651">direct to dejavu, show</text>
+<text class="text" x="217.4" y="668">selection of workspac…</text>
+<text class="muted number" x="217.4" y="693">#38</text>
+<rect class="card" x="207.4" y="717" width="35.1" height="97" rx="8"/>
+<text class="text" x="217.4" y="739">Dont save history on</text>
+<text class="text" x="217.4" y="756">spesific workspaces</text>
+<text class="text" x="217.4" y="773">option by workspace</text>
+<text class="muted number" x="217.4" y="798">#60</text>
+<rect class="card" x="207.4" y="822" width="35.1" height="97" rx="8"/>
+<text class="text" x="217.4" y="844">[FEATURE REQUEST] Mini</text>
+<text class="text" x="217.4" y="861">player and media</text>
+<text class="text" x="217.4" y="878">controller on home…</text>
+<text class="muted number" x="217.4" y="903">#119</text>
+<rect class="card" x="207.4" y="927" width="35.1" height="97" rx="8"/>
+<text class="text" x="217.4" y="949">[PRIVACY] The private</text>
+<text class="text" x="217.4" y="966">browsing settings are</text>
+<text class="text" x="217.4" y="983">hidden</text>
+<text class="muted number" x="217.4" y="1008">#178</text>
+<rect class="waiting" x="179.1" y="994" width="53.4" height="20" rx="10"/>
+<text class="tag waiting-text" x="205.8" y="1008" text-anchor="middle">Waiting</text>
+<text class="muted count" x="217.4" y="1045">and 1 more</text>
+<rect class="column" x="260.5" y="64" width="51.1" height="119" rx="10"/>
+<text class="name" x="272.5" y="89">Bugs</text>
+<text class="muted count" x="299.6" y="89" text-anchor="end">1</text>
+<rect class="card" x="268.5" y="104" width="35.1" height="63" rx="8"/>
+<text class="text" x="278.5" y="126">Bug report</text>
+<text class="muted number" x="278.5" y="151">#234</text>
+<rect class="waiting" x="240.2" y="137" width="53.4" height="20" rx="10"/>
+<text class="tag waiting-text" x="266.9" y="151" text-anchor="middle">Waiting</text>
+<rect class="column" x="321.6" y="64" width="51.1" height="735" rx="10"/>
+<text class="name" x="333.6" y="89">Features</text>
+<text class="muted count" x="360.8" y="89" text-anchor="end">8</text>
+<rect class="card" x="329.6" y="104" width="35.1" height="63" rx="8"/>
+<text class="text" x="339.6" y="126">amoled</text>
+<text class="muted number" x="339.6" y="151">#206</text>
+<rect class="card" x="329.6" y="175" width="35.1" height="63" rx="8"/>
+<text class="text" x="339.6" y="197">Feature request</text>
+<text class="muted number" x="339.6" y="222">#83</text>
+<rect class="waiting" x="301.4" y="208" width="53.4" height="20" rx="10"/>
+<text class="tag waiting-text" x="328.1" y="222" text-anchor="middle">Waiting</text>
+<rect class="card" x="329.6" y="246" width="35.1" height="80" rx="8"/>
+<text class="text" x="339.6" y="268">[FEATURE REQUEST]</text>
+<text class="text" x="339.6" y="285">Brave sync support</text>
+<text class="muted number" x="339.6" y="310">#84</text>
+<rect class="card" x="329.6" y="334" width="35.1" height="63" rx="8"/>
+<text class="text" x="339.6" y="356">Feature request</text>
+<text class="muted number" x="339.6" y="381">#210</text>
+<rect class="waiting" x="301.4" y="367" width="53.4" height="20" rx="10"/>
+<text class="tag waiting-text" x="328.1" y="381" text-anchor="middle">Waiting</text>
+<rect class="card" x="329.6" y="405" width="35.1" height="63" rx="8"/>
+<text class="text" x="339.6" y="427">Feature request</text>
+<text class="muted number" x="339.6" y="452">#219</text>
+<rect class="waiting" x="301.4" y="438" width="53.4" height="20" rx="10"/>
+<text class="tag waiting-text" x="328.1" y="452" text-anchor="middle">Waiting</text>
+<rect class="card" x="329.6" y="476" width="35.1" height="97" rx="8"/>
+<text class="text" x="339.6" y="498">[FEATURE REQUEST]</text>
+<text class="text" x="339.6" y="515">Default essentials and</text>
+<text class="text" x="339.6" y="532">folders on start</text>
+<text class="muted number" x="339.6" y="557">#242</text>
+<rect class="waiting" x="301.4" y="543" width="53.4" height="20" rx="10"/>
+<text class="tag waiting-text" x="328.1" y="557" text-anchor="middle">Waiting</text>
+<rect class="card" x="329.6" y="581" width="35.1" height="97" rx="8"/>
+<text class="text" x="339.6" y="603">clear button hold</text>
+<text class="text" x="339.6" y="620">action selectable:</text>
+<text class="text" x="339.6" y="637">clear cookies,…</text>
+<text class="muted number" x="339.6" y="662">#251</text>
+<rect class="card" x="329.6" y="686" width="35.1" height="97" rx="8"/>
+<text class="text" x="339.6" y="708">[FEATURE REQUEST]</text>
+<text class="text" x="339.6" y="725">Cookies per container</text>
+<text class="text" x="339.6" y="742">management</text>
+<text class="muted number" x="339.6" y="767">#252</text>
+<rect class="column" x="382.8" y="64" width="51.1" height="1018" rx="10"/>
+<text class="name" x="394.8" y="89">v2.3.3 (Firefox)</text>
+<text class="muted count" x="421.9" y="89" text-anchor="end">28</text>
+<rect class="card" x="390.8" y="104" width="35.1" height="97" rx="8"/>
+<text class="text" x="400.8" y="126">[PRIVACY] Normal tabs</text>
+<text class="text" x="400.8" y="143">get only Standard</text>
+<text class="text" x="400.8" y="160">tracking protection</text>
+<text class="muted number" x="400.8" y="185">#144</text>
+<rect class="done" x="381.1" y="171" width="34.8" height="20" rx="10"/>
+<text class="tag done-text" x="398.5" y="185" text-anchor="middle">Done</text>
+<rect class="card" x="390.8" y="209" width="35.1" height="97" rx="8"/>
+<text class="text" x="400.8" y="231">[PRIVACY] Dejavu still</text>
+<text class="text" x="400.8" y="248">takes part in</text>
+<text class="text" x="400.8" y="265">Mozilla&#x27;s bundled…</text>
+<text class="muted number" x="400.8" y="290">#145</text>
+<rect class="done" x="381.1" y="276" width="34.8" height="20" rx="10"/>
+<text class="tag done-text" x="398.5" y="290" text-anchor="middle">Done</text>
+<rect class="card" x="390.8" y="314" width="35.1" height="97" rx="8"/>
+<text class="text" x="400.8" y="336">[PRIVACY] Mozilla can</text>
+<text class="text" x="400.8" y="353">still change Dejavu&#x27;s</text>
+<text class="text" x="400.8" y="370">search engines…</text>
+<text class="muted number" x="400.8" y="395">#146</text>
+<rect class="done" x="381.1" y="381" width="34.8" height="20" rx="10"/>
+<text class="tag done-text" x="398.5" y="395" text-anchor="middle">Done</text>
+<rect class="card" x="390.8" y="419" width="35.1" height="97" rx="8"/>
+<text class="text" x="400.8" y="441">[PRIVACY] Icons of</text>
+<text class="text" x="400.8" y="458">about 2,000 popular</text>
+<text class="text" x="400.8" y="475">sites are downloaded…</text>
+<text class="muted number" x="400.8" y="500">#161</text>
+<rect class="done" x="381.1" y="486" width="34.8" height="20" rx="10"/>
+<text class="tag done-text" x="398.5" y="500" text-anchor="middle">Done</text>
+<rect class="card" x="390.8" y="524" width="35.1" height="97" rx="8"/>
+<text class="text" x="400.8" y="546">[PRIVACY] Connection</text>
+<text class="text" x="400.8" y="563">checks go out in plain</text>
+<text class="text" x="400.8" y="580">text, outside secure…</text>
+<text class="muted number" x="400.8" y="605">#164</text>
+<rect class="done" x="381.1" y="591" width="34.8" height="20" rx="10"/>
+<text class="tag done-text" x="398.5" y="605" text-anchor="middle">Done</text>
+<rect class="card" x="390.8" y="629" width="35.1" height="97" rx="8"/>
+<text class="text" x="400.8" y="651">[PRIVACY] WebRTC can</text>
+<text class="text" x="400.8" y="668">reveal the real and</text>
+<text class="text" x="400.8" y="685">local IP addresses</text>
+<text class="muted number" x="400.8" y="710">#166</text>
+<rect class="done" x="381.1" y="696" width="34.8" height="20" rx="10"/>
+<text class="tag done-text" x="398.5" y="710" text-anchor="middle">Done</text>
+<rect class="card" x="390.8" y="734" width="35.1" height="97" rx="8"/>
+<text class="text" x="400.8" y="756">[PRIVACY] Global</text>
+<text class="text" x="400.8" y="773">Privacy Control is off</text>
+<text class="text" x="400.8" y="790">in normal tabs</text>
+<text class="muted number" x="400.8" y="815">#167</text>
+<rect class="done" x="381.1" y="801" width="34.8" height="20" rx="10"/>
+<text class="tag done-text" x="398.5" y="815" text-anchor="middle">Done</text>
+<rect class="card" x="390.8" y="839" width="35.1" height="97" rx="8"/>
+<text class="text" x="400.8" y="861">[PRIVACY] Speculative</text>
+<text class="text" x="400.8" y="878">connections and</text>
+<text class="text" x="400.8" y="895">prefetching reach…</text>
+<text class="muted number" x="400.8" y="920">#168</text>
+<rect class="done" x="381.1" y="906" width="34.8" height="20" rx="10"/>
+<text class="tag done-text" x="398.5" y="920" text-anchor="middle">Done</text>
+<rect class="card" x="390.8" y="944" width="35.1" height="97" rx="8"/>
+<text class="text" x="400.8" y="966">[PRIVACY] Location can</text>
+<text class="text" x="400.8" y="983">come from Google&#x27;s</text>
+<text class="text" x="400.8" y="1000">network location…</text>
+<text class="muted number" x="400.8" y="1025">#173</text>
+<rect class="done" x="381.1" y="1011" width="34.8" height="20" rx="10"/>
+<text class="tag done-text" x="398.5" y="1025" text-anchor="middle">Done</text>
+<text class="muted count" x="400.8" y="1062">and 19 more</text>
+<rect class="column" x="443.9" y="64" width="51.1" height="1001" rx="10"/>
+<text class="name" x="455.9" y="89">v2.3.2</text>
+<text class="muted count" x="483.0" y="89" text-anchor="end">37</text>
+<rect class="card" x="451.9" y="104" width="35.1" height="80" rx="8"/>
+<text class="text" x="461.9" y="126">[FEATURE REQUEST] DNS</text>
+<text class="text" x="461.9" y="143">over https</text>
+<text class="muted number" x="461.9" y="168">#115</text>
+<rect class="done" x="442.2" y="154" width="34.8" height="20" rx="10"/>
+<text class="tag done-text" x="459.6" y="168" text-anchor="middle">Done</text>
+<rect class="card" x="451.9" y="192" width="35.1" height="97" rx="8"/>
+<text class="text" x="461.9" y="214">[SECURITY] There is no</text>
+<text class="text" x="461.9" y="231">way to take in Firefox</text>
+<text class="text" x="461.9" y="248">updates, while the…</text>
+<text class="muted number" x="461.9" y="273">#130</text>
+<rect class="done" x="442.2" y="259" width="34.8" height="20" rx="10"/>
+<text class="tag done-text" x="459.6" y="273" text-anchor="middle">Done</text>
+<rect class="card" x="451.9" y="297" width="35.1" height="97" rx="8"/>
+<text class="text" x="461.9" y="319">[SECURITY] The</text>
+<text class="text" x="461.9" y="336">recommended F-Droid</text>
+<text class="text" x="461.9" y="353">repository serves the…</text>
+<text class="muted number" x="461.9" y="378">#134</text>
+<rect class="done" x="442.2" y="364" width="34.8" height="20" rx="10"/>
+<text class="tag done-text" x="459.6" y="378" text-anchor="middle">Done</text>
+<rect class="card" x="451.9" y="402" width="35.1" height="97" rx="8"/>
+<text class="text" x="461.9" y="424">[PRIVACY] Private tab</text>
+<text class="text" x="461.9" y="441">titles show in</text>
+<text class="text" x="461.9" y="458">screenshots and the…</text>
+<text class="muted number" x="461.9" y="483">#135</text>
+<rect class="done" x="442.2" y="469" width="34.8" height="20" rx="10"/>
+<text class="tag done-text" x="459.6" y="483" text-anchor="middle">Done</text>
+<rect class="card" x="451.9" y="507" width="35.1" height="97" rx="8"/>
+<text class="text" x="461.9" y="529">[PRIVACY] A search</text>
+<text class="text" x="461.9" y="546">started with the</text>
+<text class="text" x="461.9" y="563">Private chip is saved…</text>
+<text class="muted number" x="461.9" y="588">#136</text>
+<rect class="done" x="442.2" y="574" width="34.8" height="20" rx="10"/>
+<text class="tag done-text" x="459.6" y="588" text-anchor="middle">Done</text>
+<rect class="card" x="451.9" y="612" width="35.1" height="97" rx="8"/>
+<text class="text" x="461.9" y="634">[PRIVACY] Icons of</text>
+<text class="text" x="461.9" y="651">private tabs are</text>
+<text class="text" x="461.9" y="668">loaded as normal…</text>
+<text class="muted number" x="461.9" y="693">#137</text>
+<rect class="done" x="442.2" y="679" width="34.8" height="20" rx="10"/>
+<text class="tag done-text" x="459.6" y="693" text-anchor="middle">Done</text>
+<rect class="card" x="451.9" y="717" width="35.1" height="97" rx="8"/>
+<text class="text" x="461.9" y="739">[PRIVACY] Unpinned</text>
+<text class="text" x="461.9" y="756">tabs sync by default,</text>
+<text class="text" x="461.9" y="773">unlike Zen and unlike…</text>
+<text class="muted number" x="461.9" y="798">#138</text>
+<rect class="done" x="442.2" y="784" width="34.8" height="20" rx="10"/>
+<text class="tag done-text" x="459.6" y="798" text-anchor="middle">Done</text>
+<rect class="card" x="451.9" y="822" width="35.1" height="97" rx="8"/>
+<text class="text" x="461.9" y="844">[SECURITY] Deleting</text>
+<text class="text" x="461.9" y="861">browsing data on the</text>
+<text class="text" x="461.9" y="878">phone closes the same…</text>
+<text class="muted number" x="461.9" y="903">#139</text>
+<rect class="done" x="442.2" y="889" width="34.8" height="20" rx="10"/>
+<text class="tag done-text" x="459.6" y="903" text-anchor="middle">Done</text>
+<rect class="card" x="451.9" y="927" width="35.1" height="97" rx="8"/>
+<text class="text" x="461.9" y="949">[SECURITY] The Mozilla</text>
+<text class="text" x="461.9" y="966">account login and sync</text>
+<text class="text" x="461.9" y="983">keys are saved withou…</text>
+<text class="muted number" x="461.9" y="1008">#140</text>
+<rect class="done" x="442.2" y="994" width="34.8" height="20" rx="10"/>
+<text class="tag done-text" x="459.6" y="1008" text-anchor="middle">Done</text>
+<text class="muted count" x="461.9" y="1045">and 28 more</text>
+<rect class="column" x="505.0" y="64" width="51.1" height="749" rx="10"/>
+<text class="name" x="517.0" y="89">v2.3.1</text>
+<text class="muted count" x="544.1" y="89" text-anchor="end">7</text>
+<rect class="card" x="513.0" y="104" width="35.1" height="97" rx="8"/>
+<text class="text" x="523.0" y="126">[FEATURE REQUEST]</text>
+<text class="text" x="523.0" y="143">Enable the</text>
+<text class="text" x="523.0" y="160">about:config menu</text>
+<text class="muted number" x="523.0" y="185">#80</text>
+<rect class="done" x="503.3" y="171" width="34.8" height="20" rx="10"/>
+<text class="tag done-text" x="520.7" y="185" text-anchor="middle">Done</text>
+<rect class="card" x="513.0" y="209" width="35.1" height="80" rx="8"/>
+<text class="text" x="523.0" y="231">close safe browsing</text>
+<text class="text" x="523.0" y="248">option for privacy</text>
+<text class="muted number" x="523.0" y="273">#59</text>
+<rect class="done" x="503.3" y="259" width="34.8" height="20" rx="10"/>
+<text class="tag done-text" x="520.7" y="273" text-anchor="middle">Done</text>
+<rect class="card" x="513.0" y="297" width="35.1" height="97" rx="8"/>
+<text class="text" x="523.0" y="319">[FEATURE REQUEST]</text>
+<text class="text" x="523.0" y="336">Enable Ublock origin</text>
+<text class="text" x="523.0" y="353">by default</text>
+<text class="muted number" x="523.0" y="378">#116</text>
+<rect class="done" x="503.3" y="364" width="34.8" height="20" rx="10"/>
+<text class="tag done-text" x="520.7" y="378" text-anchor="middle">Done</text>
+<rect class="card" x="513.0" y="402" width="35.1" height="97" rx="8"/>
+<text class="text" x="523.0" y="424">Move &quot;sync</text>
+<text class="text" x="523.0" y="441">workspaces&quot;, &quot;include</text>
+<text class="text" x="523.0" y="458">unpinned tabs&quot; under…</text>
+<text class="muted number" x="523.0" y="483">#121</text>
+<rect class="done" x="503.3" y="469" width="34.8" height="20" rx="10"/>
+<text class="tag done-text" x="520.7" y="483" text-anchor="middle">Done</text>
+<rect class="card" x="513.0" y="507" width="35.1" height="97" rx="8"/>
+<text class="text" x="523.0" y="529">if there are</text>
+<text class="text" x="523.0" y="546">workspaces and tabs</text>
+<text class="text" x="523.0" y="563">added before start to…</text>
+<text class="muted number" x="523.0" y="588">#122</text>
+<rect class="done" x="503.3" y="574" width="34.8" height="20" rx="10"/>
+<text class="tag done-text" x="520.7" y="588" text-anchor="middle">Done</text>
+<rect class="card" x="513.0" y="612" width="35.1" height="97" rx="8"/>
+<text class="text" x="523.0" y="634">Tab Bar display will</text>
+<text class="text" x="523.0" y="651">show current folder or</text>
+<text class="text" x="523.0" y="668">current unpinned tabs…</text>
+<text class="muted number" x="523.0" y="693">#125</text>
+<rect class="done" x="503.3" y="679" width="34.8" height="20" rx="10"/>
+<text class="tag done-text" x="520.7" y="693" text-anchor="middle">Done</text>
+<rect class="card" x="513.0" y="717" width="35.1" height="80" rx="8"/>
+<text class="text" x="523.0" y="739">[BUG] Horizontal mode</text>
+<text class="text" x="523.0" y="756">problem</text>
+<text class="muted number" x="523.0" y="781">#185</text>
+<rect class="done" x="503.3" y="767" width="34.8" height="20" rx="10"/>
+<text class="tag done-text" x="520.7" y="781" text-anchor="middle">Done</text>
+<rect class="column" x="566.1" y="64" width="51.1" height="950" rx="10"/>
+<text class="name" x="578.1" y="89">v2.3</text>
+<text class="muted count" x="605.2" y="89" text-anchor="end">11</text>
+<rect class="card" x="574.1" y="104" width="35.1" height="97" rx="8"/>
+<text class="text" x="584.1" y="126">[BUG] if a folder</text>
+<text class="text" x="584.1" y="143">selected, select</text>
+<text class="text" x="584.1" y="160">everything under that…</text>
+<text class="muted number" x="584.1" y="185">#120</text>
+<rect class="done" x="564.5" y="171" width="34.8" height="20" rx="10"/>
+<text class="tag done-text" x="581.9" y="185" text-anchor="middle">Done</text>
+<rect class="card" x="574.1" y="209" width="35.1" height="80" rx="8"/>
+<text class="text" x="584.1" y="231">reopen last closed tab</text>
+<text class="text" x="584.1" y="248">button on home page</text>
+<text class="muted number" x="584.1" y="273">#58</text>
+<rect class="done" x="564.5" y="259" width="34.8" height="20" rx="10"/>
+<text class="tag done-text" x="581.9" y="273" text-anchor="middle">Done</text>
+<rect class="card" x="574.1" y="297" width="35.1" height="80" rx="8"/>
+<text class="text" x="584.1" y="319">[FEATURE REQUEST] Open</text>
+<text class="text" x="584.1" y="336">link in clipboard</text>
+<text class="muted number" x="584.1" y="361">#81</text>
+<rect class="done" x="564.5" y="347" width="34.8" height="20" rx="10"/>
+<text class="tag done-text" x="581.9" y="361" text-anchor="middle">Done</text>
+<rect class="card" x="574.1" y="385" width="35.1" height="97" rx="8"/>
+<text class="text" x="584.1" y="407">[FEATURE REQUEST] Move</text>
+<text class="text" x="584.1" y="424">left/right between</text>
+<text class="text" x="584.1" y="441">workspaces option for…</text>
+<text class="muted number" x="584.1" y="466">#85</text>
+<rect class="done" x="564.5" y="452" width="34.8" height="20" rx="10"/>
+<text class="tag done-text" x="581.9" y="466" text-anchor="middle">Done</text>
+<rect class="card" x="574.1" y="490" width="35.1" height="97" rx="8"/>
+<text class="text" x="584.1" y="512">The clipboard button</text>
+<text class="text" x="584.1" y="529">is off while the</text>
+<text class="text" x="584.1" y="546">clipboard holds no…</text>
+<text class="muted number" x="584.1" y="571">#100</text>
+<rect class="done" x="564.5" y="557" width="34.8" height="20" rx="10"/>
+<text class="tag done-text" x="581.9" y="571" text-anchor="middle">Done</text>
+<rect class="card" x="574.1" y="595" width="35.1" height="97" rx="8"/>
+<text class="text" x="584.1" y="617">Chips above the</text>
+<text class="text" x="584.1" y="634">address bar pick the</text>
+<text class="text" x="584.1" y="651">container and the…</text>
+<text class="muted number" x="584.1" y="676">#101</text>
+<rect class="done" x="564.5" y="662" width="34.8" height="20" rx="10"/>
+<text class="tag done-text" x="581.9" y="676" text-anchor="middle">Done</text>
+<rect class="card" x="574.1" y="700" width="35.1" height="97" rx="8"/>
+<text class="text" x="584.1" y="722">Search bar text keeps</text>
+<text class="text" x="584.1" y="739">off the left edge and</text>
+<text class="text" x="584.1" y="756">stays above the…</text>
+<text class="muted number" x="584.1" y="781">#108</text>
+<rect class="done" x="564.5" y="767" width="34.8" height="20" rx="10"/>
+<text class="tag done-text" x="581.9" y="781" text-anchor="middle">Done</text>
+<rect class="card" x="574.1" y="805" width="35.1" height="97" rx="8"/>
+<text class="text" x="584.1" y="827">Drag tabs to other</text>
+<text class="text" x="584.1" y="844">workspaces through</text>
+<text class="text" x="584.1" y="861">strips at the sides,…</text>
+<text class="muted number" x="584.1" y="886">#109</text>
+<rect class="done" x="564.5" y="872" width="34.8" height="20" rx="10"/>
+<text class="tag done-text" x="581.9" y="886" text-anchor="middle">Done</text>
+<rect class="card" x="574.1" y="910" width="35.1" height="63" rx="8"/>
+<text class="text" x="584.1" y="932">publish test</text>
+<text class="muted number" x="584.1" y="957">#110</text>
+<rect class="done" x="564.5" y="943" width="34.8" height="20" rx="10"/>
+<text class="tag done-text" x="581.9" y="957" text-anchor="middle">Done</text>
+<text class="muted count" x="584.1" y="994">and 2 more</text>
+<rect class="column" x="627.2" y="64" width="51.1" height="1018" rx="10"/>
+<text class="name" x="639.2" y="89">v2.1.0</text>
+<text class="muted count" x="666.4" y="89" text-anchor="end">17</text>
+<rect class="card" x="635.2" y="104" width="35.1" height="97" rx="8"/>
+<text class="text" x="645.2" y="126">Essentials of a row</text>
+<text class="text" x="645.2" y="143">that is not full</text>
+<text class="text" x="645.2" y="160">spread evenly over th…</text>
+<text class="muted number" x="645.2" y="185">#86</text>
+<rect class="done" x="625.6" y="171" width="34.8" height="20" rx="10"/>
+<text class="tag done-text" x="643.0" y="185" text-anchor="middle">Done</text>
+<rect class="card" x="635.2" y="209" width="35.1" height="97" rx="8"/>
+<text class="text" x="645.2" y="231">Split view is offered</text>
+<text class="text" x="645.2" y="248">only when exactly two</text>
+<text class="text" x="645.2" y="265">tabs are selected</text>
+<text class="muted number" x="645.2" y="290">#87</text>
+<rect class="done" x="625.6" y="276" width="34.8" height="20" rx="10"/>
+<text class="tag done-text" x="643.0" y="290" text-anchor="middle">Done</text>
+<rect class="card" x="635.2" y="314" width="35.1" height="97" rx="8"/>
+<text class="text" x="645.2" y="336">Drop a tab on another</text>
+<text class="text" x="645.2" y="353">tab to split them, and</text>
+<text class="text" x="645.2" y="370">split tabs share one…</text>
+<text class="muted number" x="645.2" y="395">#88</text>
+<rect class="done" x="625.6" y="381" width="34.8" height="20" rx="10"/>
+<text class="tag done-text" x="643.0" y="395" text-anchor="middle">Done</text>
+<rect class="card" x="635.2" y="419" width="35.1" height="97" rx="8"/>
+<text class="text" x="645.2" y="441">No empty strip under</text>
+<text class="text" x="645.2" y="458">Default download</text>
+<text class="text" x="645.2" y="475">location in Download…</text>
+<text class="muted number" x="645.2" y="500">#89</text>
+<rect class="done" x="625.6" y="486" width="34.8" height="20" rx="10"/>
+<text class="tag done-text" x="643.0" y="500" text-anchor="middle">Done</text>
+<rect class="card" x="635.2" y="524" width="35.1" height="97" rx="8"/>
+<text class="text" x="645.2" y="546">What&#x27;s new counts</text>
+<text class="text" x="645.2" y="563">every page of the</text>
+<text class="text" x="645.2" y="580">tour, not only the…</text>
+<text class="muted number" x="645.2" y="605">#90</text>
+<rect class="done" x="625.6" y="591" width="34.8" height="20" rx="10"/>
+<text class="tag done-text" x="643.0" y="605" text-anchor="middle">Done</text>
+<rect class="card" x="635.2" y="629" width="35.1" height="97" rx="8"/>
+<text class="text" x="645.2" y="651">Room between the</text>
+<text class="text" x="645.2" y="668">workspace icons and</text>
+<text class="text" x="645.2" y="685">the buttons next to…</text>
+<text class="muted number" x="645.2" y="710">#91</text>
+<rect class="done" x="625.6" y="696" width="34.8" height="20" rx="10"/>
+<text class="tag done-text" x="643.0" y="710" text-anchor="middle">Done</text>
+<rect class="card" x="635.2" y="734" width="35.1" height="97" rx="8"/>
+<text class="text" x="645.2" y="756">Reset to pinned URL</text>
+<text class="text" x="645.2" y="773">gets its own icon, so</text>
+<text class="text" x="645.2" y="790">it no longer looks…</text>
+<text class="muted number" x="645.2" y="815">#92</text>
+<rect class="done" x="625.6" y="801" width="34.8" height="20" rx="10"/>
+<text class="tag done-text" x="643.0" y="815" text-anchor="middle">Done</text>
+<rect class="card" x="635.2" y="839" width="35.1" height="97" rx="8"/>
+<text class="text" x="645.2" y="861">New action: Replace</text>
+<text class="text" x="645.2" y="878">pinned URL with</text>
+<text class="text" x="645.2" y="895">current</text>
+<text class="muted number" x="645.2" y="920">#93</text>
+<rect class="done" x="625.6" y="906" width="34.8" height="20" rx="10"/>
+<text class="tag done-text" x="643.0" y="920" text-anchor="middle">Done</text>
+<rect class="card" x="635.2" y="944" width="35.1" height="97" rx="8"/>
+<text class="text" x="645.2" y="966">Black snackbars and</text>
+<text class="text" x="645.2" y="983">tooltips in the dark</text>
+<text class="text" x="645.2" y="1000">themes</text>
+<text class="muted number" x="645.2" y="1025">#94</text>
+<rect class="done" x="625.6" y="1011" width="34.8" height="20" rx="10"/>
+<text class="tag done-text" x="643.0" y="1025" text-anchor="middle">Done</text>
+<text class="muted count" x="645.2" y="1062">and 8 more</text>
+<rect class="column" x="688.4" y="64" width="51.1" height="329" rx="10"/>
+<text class="name" x="700.4" y="89">v2.0.0</text>
+<text class="muted count" x="727.5" y="89" text-anchor="end">3</text>
+<rect class="card" x="696.4" y="104" width="35.1" height="80" rx="8"/>
+<text class="text" x="706.4" y="126">[BUG] Large Release</text>
+<text class="text" x="706.4" y="143">Size Problem</text>
+<text class="muted number" x="706.4" y="168">#76</text>
+<rect class="done" x="686.7" y="154" width="34.8" height="20" rx="10"/>
+<text class="tag done-text" x="704.1" y="168" text-anchor="middle">Done</text>
+<rect class="card" x="696.4" y="192" width="35.1" height="80" rx="8"/>
+<text class="text" x="706.4" y="214">[BUG] Too Much Ram</text>
+<text class="text" x="706.4" y="231">Usage Reported</text>
+<text class="muted number" x="706.4" y="256">#78</text>
+<rect class="done" x="686.7" y="242" width="34.8" height="20" rx="10"/>
+<text class="tag done-text" x="704.1" y="256" text-anchor="middle">Done</text>
+<rect class="card" x="696.4" y="280" width="35.1" height="97" rx="8"/>
+<text class="text" x="706.4" y="302">[FEATURE REQUEST]</text>
+<text class="text" x="706.4" y="319">Firefox Full Sync</text>
+<text class="text" x="706.4" y="336">Support</text>
+<text class="muted number" x="706.4" y="361">#77</text>
+<rect class="column" x="749.5" y="64" width="51.1" height="153" rx="10"/>
+<text class="name" x="761.5" y="89">1.6.1</text>
+<text class="muted count" x="788.6" y="89" text-anchor="end">1</text>
+<rect class="card" x="757.5" y="104" width="35.1" height="97" rx="8"/>
+<text class="text" x="767.5" y="126">Essentials per</text>
+<text class="text" x="767.5" y="143">container turns itself</text>
+<text class="text" x="767.5" y="160">on when synced…</text>
+<text class="muted number" x="767.5" y="185">#75</text>
+<rect class="done" x="747.8" y="171" width="34.8" height="20" rx="10"/>
+<text class="tag done-text" x="765.2" y="185" text-anchor="middle">Done</text>
+<rect class="column" x="810.6" y="64" width="51.1" height="820" rx="10"/>
+<text class="name" x="822.6" y="89">1.6.0</text>
+<text class="muted count" x="849.8" y="89" text-anchor="end">8</text>
+<rect class="card" x="818.6" y="104" width="35.1" height="97" rx="8"/>
+<text class="text" x="828.6" y="126">[BUG] Essential</text>
+<text class="text" x="828.6" y="143">sorting when added new</text>
+<text class="text" x="828.6" y="160">via sync, shows…</text>
+<text class="muted number" x="828.6" y="185">#68</text>
+<rect class="done" x="809.0" y="171" width="34.8" height="20" rx="10"/>
+<text class="tag done-text" x="826.4" y="185" text-anchor="middle">Done</text>
+<rect class="card" x="818.6" y="209" width="35.1" height="97" rx="8"/>
+<text class="text" x="828.6" y="231">default first</text>
+<text class="text" x="828.6" y="248">workspace background</text>
+<text class="text" x="828.6" y="265">color change</text>
+<text class="muted number" x="828.6" y="290">#63</text>
+<rect class="done" x="809.0" y="276" width="34.8" height="20" rx="10"/>
+<text class="tag done-text" x="826.4" y="290" text-anchor="middle">Done</text>
+<rect class="card" x="818.6" y="314" width="35.1" height="97" rx="8"/>
+<text class="text" x="828.6" y="336">change colors of</text>
+<text class="text" x="828.6" y="353">popups background that</text>
+<text class="text" x="828.6" y="370">follows wrokspace…</text>
+<text class="muted number" x="828.6" y="395">#64</text>
+<rect class="done" x="809.0" y="381" width="34.8" height="20" rx="10"/>
+<text class="tag done-text" x="826.4" y="395" text-anchor="middle">Done</text>
+<rect class="card" x="818.6" y="419" width="35.1" height="80" rx="8"/>
+<text class="text" x="828.6" y="441">folder sleep button as</text>
+<text class="text" x="828.6" y="458">default</text>
+<text class="muted number" x="828.6" y="483">#65</text>
+<rect class="done" x="809.0" y="469" width="34.8" height="20" rx="10"/>
+<text class="tag done-text" x="826.4" y="483" text-anchor="middle">Done</text>
+<rect class="card" x="818.6" y="507" width="35.1" height="63" rx="8"/>
+<text class="text" x="828.6" y="529">New Features Screen</text>
+<text class="muted number" x="828.6" y="554">#69</text>
+<rect class="done" x="809.0" y="540" width="34.8" height="20" rx="10"/>
+<text class="tag done-text" x="826.4" y="554" text-anchor="middle">Done</text>
+<rect class="card" x="818.6" y="578" width="35.1" height="97" rx="8"/>
+<text class="text" x="828.6" y="600">Sleeping a folder</text>
+<text class="text" x="828.6" y="617">keeps the close</text>
+<text class="text" x="828.6" y="634">buttons on its tabs</text>
+<text class="muted number" x="828.6" y="659">#71</text>
+<rect class="done" x="809.0" y="645" width="34.8" height="20" rx="10"/>
+<text class="tag done-text" x="826.4" y="659" text-anchor="middle">Done</text>
+<rect class="card" x="818.6" y="683" width="35.1" height="80" rx="8"/>
+<text class="text" x="828.6" y="705">No internet page shows</text>
+<text class="text" x="828.6" y="722">Firefox&#x27;s picture</text>
+<text class="muted number" x="828.6" y="747">#72</text>
+<rect class="done" x="809.0" y="733" width="34.8" height="20" rx="10"/>
+<text class="tag done-text" x="826.4" y="747" text-anchor="middle">Done</text>
+<rect class="card" x="818.6" y="771" width="35.1" height="97" rx="8"/>
+<text class="text" x="828.6" y="793">Firefox Suggest</text>
+<text class="text" x="828.6" y="810">settings say Dejavu</text>
+<text class="text" x="828.6" y="827">instead of Firefox</text>
+<text class="muted number" x="828.6" y="852">#73</text>
+<rect class="done" x="809.0" y="838" width="34.8" height="20" rx="10"/>
+<text class="tag done-text" x="826.4" y="852" text-anchor="middle">Done</text>
+<rect class="column" x="871.8" y="64" width="51.1" height="950" rx="10"/>
+<text class="name" x="883.8" y="89">v1.5.0</text>
+<text class="muted count" x="910.9" y="89" text-anchor="end">23</text>
+<rect class="card" x="879.8" y="104" width="35.1" height="97" rx="8"/>
+<text class="text" x="889.8" y="126">Dejavu&#x27;s own style for</text>
+<text class="text" x="889.8" y="143">dialogs, menus and</text>
+<text class="text" x="889.8" y="160">text fields</text>
+<text class="muted number" x="889.8" y="185">#45</text>
+<rect class="done" x="870.1" y="171" width="34.8" height="20" rx="10"/>
+<text class="tag done-text" x="887.5" y="185" text-anchor="middle">Done</text>
+<rect class="card" x="879.8" y="209" width="35.1" height="97" rx="8"/>
+<text class="text" x="889.8" y="231">Show a globe for tabs</text>
+<text class="text" x="889.8" y="248">whose site icon is not</text>
+<text class="text" x="889.8" y="265">known yet</text>
+<text class="muted number" x="889.8" y="290">#37</text>
+<rect class="done" x="870.1" y="276" width="34.8" height="20" rx="10"/>
+<text class="tag done-text" x="887.5" y="290" text-anchor="middle">Done</text>
+<rect class="card" x="879.8" y="314" width="35.1" height="97" rx="8"/>
+<text class="text" x="889.8" y="336">Show how many tabs are</text>
+<text class="text" x="889.8" y="353">open inside a closed</text>
+<text class="text" x="889.8" y="370">folder</text>
+<text class="muted number" x="889.8" y="395">#34</text>
+<rect class="done" x="870.1" y="381" width="34.8" height="20" rx="10"/>
+<text class="tag done-text" x="887.5" y="395" text-anchor="middle">Done</text>
+<rect class="card" x="879.8" y="419" width="35.1" height="97" rx="8"/>
+<text class="text" x="889.8" y="441">Remember the page a</text>
+<text class="text" x="889.8" y="458">pinned tab was on when</text>
+<text class="text" x="889.8" y="475">its tab closes</text>
+<text class="muted number" x="889.8" y="500">#33</text>
+<rect class="done" x="870.1" y="486" width="34.8" height="20" rx="10"/>
+<text class="tag done-text" x="887.5" y="500" text-anchor="middle">Done</text>
+<rect class="card" x="879.8" y="524" width="35.1" height="80" rx="8"/>
+<text class="text" x="889.8" y="546">Close a tab when Back</text>
+<text class="text" x="889.8" y="563">has no page left</text>
+<text class="muted number" x="889.8" y="588">#31</text>
+<rect class="done" x="870.1" y="574" width="34.8" height="20" rx="10"/>
+<text class="tag done-text" x="887.5" y="588" text-anchor="middle">Done</text>
+<rect class="card" x="879.8" y="612" width="35.1" height="97" rx="8"/>
+<text class="text" x="889.8" y="634">One list for every</text>
+<text class="text" x="889.8" y="651">action with its own</text>
+<text class="text" x="889.8" y="668">places</text>
+<text class="muted number" x="889.8" y="693">#32</text>
+<rect class="done" x="870.1" y="679" width="34.8" height="20" rx="10"/>
+<text class="tag done-text" x="887.5" y="693" text-anchor="middle">Done</text>
+<rect class="card" x="879.8" y="717" width="35.1" height="80" rx="8"/>
+<text class="text" x="889.8" y="739">Keep folders the way</text>
+<text class="text" x="889.8" y="756">you left them</text>
+<text class="muted number" x="889.8" y="781">#30</text>
+<rect class="done" x="870.1" y="767" width="34.8" height="20" rx="10"/>
+<text class="tag done-text" x="887.5" y="781" text-anchor="middle">Done</text>
+<rect class="card" x="879.8" y="805" width="35.1" height="97" rx="8"/>
+<text class="text" x="889.8" y="827">Show essentials three</text>
+<text class="text" x="889.8" y="844">per row, each half as</text>
+<text class="text" x="889.8" y="861">tall as it is wide</text>
+<text class="muted number" x="889.8" y="886">#39</text>
+<rect class="done" x="870.1" y="872" width="34.8" height="20" rx="10"/>
+<text class="tag done-text" x="887.5" y="886" text-anchor="middle">Done</text>
+<rect class="card" x="879.8" y="910" width="35.1" height="63" rx="8"/>
+<text class="text" x="889.8" y="932">Themed system bars</text>
+<text class="muted number" x="889.8" y="957">#41</text>
+<rect class="done" x="870.1" y="943" width="34.8" height="20" rx="10"/>
+<text class="tag done-text" x="887.5" y="957" text-anchor="middle">Done</text>
+<text class="muted count" x="889.8" y="994">and 14 more</text>
+<rect class="column" x="932.9" y="64" width="51.1" height="1001" rx="10"/>
+<text class="name" x="944.9" y="89">v1.0.0</text>
+<text class="muted count" x="972.0" y="89" text-anchor="end">27</text>
+<rect class="card" x="940.9" y="104" width="35.1" height="80" rx="8"/>
+<text class="text" x="950.9" y="126">Add Kaizen workspace</text>
+<text class="text" x="950.9" y="143">home screen</text>
+<text class="muted number" x="950.9" y="168">#1</text>
+<rect class="done" x="931.2" y="154" width="34.8" height="20" rx="10"/>
+<text class="tag done-text" x="948.6" y="168" text-anchor="middle">Done</text>
+<rect class="card" x="940.9" y="192" width="35.1" height="97" rx="8"/>
+<text class="text" x="950.9" y="214">Add top bar, pinned</text>
+<text class="text" x="950.9" y="231">tabs and tab actions</text>
+<text class="text" x="950.9" y="248">to Kaizen home</text>
+<text class="muted number" x="950.9" y="273">#2</text>
+<rect class="done" x="931.2" y="259" width="34.8" height="20" rx="10"/>
+<text class="tag done-text" x="948.6" y="273" text-anchor="middle">Done</text>
+<rect class="card" x="940.9" y="297" width="35.1" height="97" rx="8"/>
+<text class="text" x="950.9" y="319">Add folders, tab</text>
+<text class="text" x="950.9" y="336">actions, selection</text>
+<text class="text" x="950.9" y="353">mode and containers t…</text>
+<text class="muted number" x="950.9" y="378">#3</text>
+<rect class="done" x="931.2" y="364" width="34.8" height="20" rx="10"/>
+<text class="tag done-text" x="948.6" y="378" text-anchor="middle">Done</text>
+<rect class="card" x="940.9" y="402" width="35.1" height="97" rx="8"/>
+<text class="text" x="950.9" y="424">Add drag and drop,</text>
+<text class="text" x="950.9" y="441">custom tab actions,</text>
+<text class="text" x="950.9" y="458">container removal…</text>
+<text class="muted number" x="950.9" y="483">#4</text>
+<rect class="done" x="931.2" y="469" width="34.8" height="20" rx="10"/>
+<text class="tag done-text" x="948.6" y="483" text-anchor="middle">Done</text>
+<rect class="card" x="940.9" y="507" width="35.1" height="97" rx="8"/>
+<text class="text" x="950.9" y="529">Add essentials, folder</text>
+<text class="text" x="950.9" y="546">selection, pinned tab</text>
+<text class="text" x="950.9" y="563">reset and custom…</text>
+<text class="muted number" x="950.9" y="588">#5</text>
+<rect class="done" x="931.2" y="574" width="34.8" height="20" rx="10"/>
+<text class="tag done-text" x="948.6" y="588" text-anchor="middle">Done</text>
+<rect class="card" x="940.9" y="612" width="35.1" height="97" rx="8"/>
+<text class="text" x="950.9" y="634">Split tab action</text>
+<text class="text" x="950.9" y="651">settings into three</text>
+<text class="text" x="950.9" y="668">lists and add changin…</text>
+<text class="muted number" x="950.9" y="693">#6</text>
+<rect class="done" x="931.2" y="679" width="34.8" height="20" rx="10"/>
+<text class="tag done-text" x="948.6" y="693" text-anchor="middle">Done</text>
+<rect class="card" x="940.9" y="717" width="35.1" height="97" rx="8"/>
+<text class="text" x="950.9" y="739">Add split view,</text>
+<text class="text" x="950.9" y="756">workspace icons and</text>
+<text class="text" x="950.9" y="773">themes, workspace…</text>
+<text class="muted number" x="950.9" y="798">#7</text>
+<rect class="done" x="931.2" y="784" width="34.8" height="20" rx="10"/>
+<text class="tag done-text" x="948.6" y="798" text-anchor="middle">Done</text>
+<rect class="card" x="940.9" y="822" width="35.1" height="97" rx="8"/>
+<text class="text" x="950.9" y="844">Add temporary</text>
+<text class="text" x="950.9" y="861">containers, a private</text>
+<text class="text" x="950.9" y="878">workspace, a…</text>
+<text class="muted number" x="950.9" y="903">#8</text>
+<rect class="done" x="931.2" y="889" width="34.8" height="20" rx="10"/>
+<text class="tag done-text" x="948.6" y="903" text-anchor="middle">Done</text>
+<rect class="card" x="940.9" y="927" width="35.1" height="97" rx="8"/>
+<text class="text" x="950.9" y="949">Add an actions bar</text>
+<text class="text" x="950.9" y="966">below pages, a golden</text>
+<text class="text" x="950.9" y="983">yellow theme, page…</text>
+<text class="muted number" x="950.9" y="1008">#9</text>
+<rect class="done" x="931.2" y="994" width="34.8" height="20" rx="10"/>
+<text class="tag done-text" x="948.6" y="1008" text-anchor="middle">Done</text>
+<text class="muted count" x="950.9" y="1045">and 18 more</text>
+</svg>
