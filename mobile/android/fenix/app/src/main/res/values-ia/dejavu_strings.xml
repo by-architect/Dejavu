@@ -549,4 +549,5 @@
     <string name="dejavu_screenshot_failed">Impossibile facer un instantaneo de iste pagina. Retenta.</string>
     <string name="dejavu_screenshot_save_failed">Impossibile salvar le instantaneo.</string>
     <string name="dejavu_screenshot_permission">Salvar instantaneos require le permission de immagazinar files. Tu pote permitter lo in le parametros del app de Android.</string>
+    <string name="dejavu_no_closed_tabs">Nulle schedas claudite recentemente</string>
 </resources>

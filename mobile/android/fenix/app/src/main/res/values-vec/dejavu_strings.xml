@@ -557,4 +557,5 @@
     <string name="dejavu_screenshot_failed">No xe stà posibiłe far el screenshot de sta pàgina. Prova torna.</string>
     <string name="dejavu_screenshot_save_failed">No xe stà posibiłe salvar el screenshot.</string>
     <string name="dejavu_screenshot_permission">Par salvar i screenshot ghe vol el parmeso de salvar file. Te pol parmétarlo inte łe inpostasion de łe app de Android.</string>
+    <string name="dejavu_no_closed_tabs">Nisuna scheda sarà de recente</string>
 </resources>

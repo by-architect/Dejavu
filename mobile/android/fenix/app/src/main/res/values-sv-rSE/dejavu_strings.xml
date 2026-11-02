@@ -549,4 +549,5 @@
     <string name="dejavu_screenshot_failed">Det gick inte att ta en skärmdump av den här sidan. Försök igen.</string>
     <string name="dejavu_screenshot_save_failed">Det gick inte att spara skärmdumpen.</string>
     <string name="dejavu_screenshot_permission">För att spara skärmdumpar behövs behörighet att lagra filer. Du kan tillåta det i Androids appinställningar.</string>
+    <string name="dejavu_no_closed_tabs">Inga nyligen stängda flikar</string>
 </resources>

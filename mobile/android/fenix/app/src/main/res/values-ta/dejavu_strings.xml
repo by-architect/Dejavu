@@ -549,4 +549,5 @@
     <string name="dejavu_screenshot_failed">இந்தப் பக்கத்தின் திரைப்பிடிப்பை எடுக்க முடியவில்லை. மீண்டும் முயற்சிக்கவும்.</string>
     <string name="dejavu_screenshot_save_failed">திரைப்பிடிப்பைச் சேமிக்க முடியவில்லை.</string>
     <string name="dejavu_screenshot_permission">திரைப்பிடிப்புகளைச் சேமிக்க, கோப்புகளைச் சேமிக்கும் அனுமதி தேவை. Android-இன் செயலி அமைவுகளில் அதை அனுமதிக்கலாம்.</string>
+    <string name="dejavu_no_closed_tabs">சமீபத்தில் மூடிய கீற்றுகள் ஏதுமில்லை</string>
 </resources>

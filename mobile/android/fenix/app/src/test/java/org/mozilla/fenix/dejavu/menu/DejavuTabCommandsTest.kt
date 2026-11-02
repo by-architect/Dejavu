@@ -6,6 +6,8 @@ package org.mozilla.fenix.dejavu.menu
 
 import mozilla.components.browser.state.state.recover.TabState
 import org.junit.Assert.assertEquals
+import org.junit.Assert.assertFalse
+import org.junit.Assert.assertTrue
 import org.junit.Test
 
 class DejavuTabCommandsTest {
@@ -14,12 +16,18 @@ class DejavuTabCommandsTest {
 
     @Test
     fun `undoes private tabs in private browsing`() {
-        assertEquals(RestoreChoice.Undo, restoreChoiceOf(private = true, undoTabs = listOf(privateTab), closedTabs = listOf(normal)))
+        assertEquals(
+            RestoreChoice.Undo,
+            restoreChoiceOf(private = true, undoTabs = listOf(privateTab), closedTabs = listOf(normal)),
+        )
     }
 
     @Test
     fun `reopens normal tabs in normal browsing`() {
-        assertEquals(RestoreChoice.Reopen, restoreChoiceOf(private = false, undoTabs = listOf(normal), closedTabs = emptyList()))
+        assertEquals(
+            RestoreChoice.Reopen,
+            restoreChoiceOf(private = false, undoTabs = listOf(normal), closedTabs = emptyList()),
+        )
         assertEquals(
             RestoreChoice.Reopen,
             restoreChoiceOf(private = false, undoTabs = listOf(privateTab), closedTabs = listOf(normal)),
@@ -28,8 +36,27 @@ class DejavuTabCommandsTest {
 
     @Test
     fun `never restores tabs of the other browsing mode`() {
-        assertEquals(RestoreChoice.None, restoreChoiceOf(private = true, undoTabs = listOf(normal), closedTabs = listOf(normal)))
-        assertEquals(RestoreChoice.None, restoreChoiceOf(private = false, undoTabs = listOf(privateTab), closedTabs = emptyList()))
-        assertEquals(RestoreChoice.None, restoreChoiceOf(private = false, undoTabs = emptyList(), closedTabs = emptyList()))
+        assertEquals(
+            RestoreChoice.None,
+            restoreChoiceOf(private = true, undoTabs = listOf(normal), closedTabs = listOf(normal)),
+        )
+        assertEquals(
+            RestoreChoice.None,
+            restoreChoiceOf(private = false, undoTabs = listOf(privateTab), closedTabs = emptyList()),
+        )
+        assertEquals(
+            RestoreChoice.None,
+            restoreChoiceOf(private = false, undoTabs = emptyList(), closedTabs = emptyList()),
+        )
+    }
+
+    @Test
+    fun `reopen closed tab can be put in the menu and on the bars, but is not in the default menu`() {
+        val entry = MoreMenuEntry.BuiltIn(MoreMenuItem.RESTORE_CLOSED_TAB)
+
+        assertEquals(entry, MoreMenuLayout.entryOf("restore_closed_tab", emptyList()))
+        assertTrue(entry in MoreMenuLayout.available(emptyList()))
+        assertTrue(entry in ActionsBarLayout.available(emptyList()))
+        assertFalse("restore_closed_tab" in MoreMenuLayout.DEFAULT.flatten())
     }
 }

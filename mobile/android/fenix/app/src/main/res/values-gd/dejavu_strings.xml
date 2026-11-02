@@ -565,4 +565,5 @@
     <string name="dejavu_screenshot_failed">Cha b\' urrainn dhuinn glacadh-sgrìn a dhèanamh dhen duilleag seo. Feuch ris a-rithist.</string>
     <string name="dejavu_screenshot_save_failed">Cha b\' urrainn dhuinn an glacadh-sgrìn a shàbhaladh.</string>
     <string name="dejavu_screenshot_permission">Tha feum air cead faidhlichean a stòradh gus glacaidhean-sgrìn a shàbhaladh. Is urrainn dhut a cheadachadh ann an roghainnean na h-aplacaid air Android.</string>
+    <string name="dejavu_no_closed_tabs">Chan eil taba sam bith ann a dhùin thu o chionn goirid</string>
 </resources>

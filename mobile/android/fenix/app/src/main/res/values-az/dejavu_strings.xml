@@ -549,4 +549,5 @@
     <string name="dejavu_screenshot_failed">Bu səhifənin ekran görüntüsünü çəkmək mümkün olmadı. Yenidən cəhd edin.</string>
     <string name="dejavu_screenshot_save_failed">Ekran görüntüsünü saxlamaq mümkün olmadı.</string>
     <string name="dejavu_screenshot_permission">Ekran görüntülərini saxlamaq üçün faylları saxlama icazəsi lazımdır. Buna Android-in tətbiq tənzimləmələrində icazə verə bilərsiniz.</string>
+    <string name="dejavu_no_closed_tabs">Son bağlanmış vərəq yoxdur</string>
 </resources>

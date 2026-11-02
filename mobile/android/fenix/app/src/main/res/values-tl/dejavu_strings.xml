@@ -549,4 +549,5 @@
     <string name="dejavu_screenshot_failed">Hindi makakuha ng screenshot ng pahinang ito. Subukan ulit.</string>
     <string name="dejavu_screenshot_save_failed">Hindi ma-save ang screenshot.</string>
     <string name="dejavu_screenshot_permission">Kailangan ng pahintulot na mag-imbak ng mga file para makapag-save ng mga screenshot. Maaari mo itong payagan sa mga setting ng app ng Android.</string>
+    <string name="dejavu_no_closed_tabs">Walang mga isinarang tab kamakailan</string>
 </resources>

@@ -565,4 +565,5 @@
     <string name="dejavu_screenshot_failed">Snímku obrazovky tejto stránky sa nepodarilo vytvoriť. Skúste to znova.</string>
     <string name="dejavu_screenshot_save_failed">Snímku obrazovky sa nepodarilo uložiť.</string>
     <string name="dejavu_screenshot_permission">Na ukladanie snímok obrazovky je potrebné povolenie na ukladanie súborov. Môžete ho udeliť v nastaveniach aplikácie v systéme Android.</string>
+    <string name="dejavu_no_closed_tabs">Nemáte žiadne nedávno zatvorené karty</string>
 </resources>

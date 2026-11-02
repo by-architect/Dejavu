@@ -549,4 +549,5 @@
     <string name="dejavu_screenshot_failed">Kunne ikke ta skjermbilde av denne siden. Prøv igjen.</string>
     <string name="dejavu_screenshot_save_failed">Kunne ikke lagre skjermbildet.</string>
     <string name="dejavu_screenshot_permission">For å lagre skjermbilder trenger appen tillatelse til å lagre filer. Du kan tillate det i Android-innstillingene for appen.</string>
+    <string name="dejavu_no_closed_tabs">Ingen nylig lukkede faner</string>
 </resources>

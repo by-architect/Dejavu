@@ -549,4 +549,5 @@
     <string name="dejavu_screenshot_failed">بو صفحه‌نین اسکرین شاتی آلینا بیلمه‌دی. یئنیدن جهد ادین.</string>
     <string name="dejavu_screenshot_save_failed">اسکرین شات ساخلانا بیلمه‌دی.</string>
     <string name="dejavu_screenshot_permission">اسکرین شات‌لاری ساخلاماق اوچون فایل‌لاری ساخلاما ایجازه‌سی لازیمدیر. بونا Android-ین اپلیکیشن تنظیم‌لرینده ایجازه وئره بیلرسینیز.</string>
+    <string name="dejavu_no_closed_tabs">بو یاخین زاماندا باغلانان تاغ یوخ</string>
 </resources>

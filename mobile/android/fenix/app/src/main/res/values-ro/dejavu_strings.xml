@@ -557,4 +557,5 @@
     <string name="dejavu_screenshot_failed">Nu s-a putut face o captură de ecran a acestei pagini. Încearcă din nou.</string>
     <string name="dejavu_screenshot_save_failed">Nu s-a putut salva captura de ecran.</string>
     <string name="dejavu_screenshot_permission">Salvarea capturilor de ecran necesită permisiunea de a stoca fișiere. O poți acorda în setările aplicației din Android.</string>
+    <string name="dejavu_no_closed_tabs">Nu există file închise recent</string>
 </resources>

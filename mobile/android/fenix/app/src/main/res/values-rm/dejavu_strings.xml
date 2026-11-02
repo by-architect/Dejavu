@@ -549,4 +549,5 @@
     <string name="dejavu_screenshot_failed">Impussibel da far in maletg dal visur da questa pagina. Emprova anc ina giada.</string>
     <string name="dejavu_screenshot_save_failed">Impussibel da memorisar il maletg dal visur.</string>
     <string name="dejavu_screenshot_permission">Per memorisar maletgs dal visur è la permissiun da memorisar datotecas necessaria. Ti pos permetter quai en ils parameters da l’app dad Android.</string>
+    <string name="dejavu_no_closed_tabs">Nagins tabs serrads dacurt</string>
 </resources>

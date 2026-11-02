@@ -565,4 +565,5 @@
     <string name="dejavu_screenshot_failed">Posnetka zaslona te strani ni bilo mogoče zajeti. Poskusite znova.</string>
     <string name="dejavu_screenshot_save_failed">Posnetka zaslona ni bilo mogoče shraniti.</string>
     <string name="dejavu_screenshot_permission">Za shranjevanje posnetkov zaslona je potrebno dovoljenje za shranjevanje datotek. Omogočite ga lahko v nastavitvah aplikacije v sistemu Android.</string>
+    <string name="dejavu_no_closed_tabs">Ni nedavno zaprtih zavihkov</string>
 </resources>

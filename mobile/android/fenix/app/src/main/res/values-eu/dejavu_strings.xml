@@ -549,4 +549,5 @@
     <string name="dejavu_screenshot_failed">Ezin da orri honen pantaila-argazkia atera. Saiatu berriro.</string>
     <string name="dejavu_screenshot_save_failed">Ezin izan da pantaila-argazkia gorde.</string>
     <string name="dejavu_screenshot_permission">Pantaila-argazkiak gordetzeko, fitxategiak biltegiratzeko baimena behar da. Androideko aplikazio-ezarpenetan baimendu dezakezu.</string>
+    <string name="dejavu_no_closed_tabs">Itxitako azken fitxarik ez</string>
 </resources>

@@ -549,4 +549,5 @@
     <string name="dejavu_screenshot_failed">Tugna n ugdil n tsna-agi ur teddi ara. Ɛreḍ tikkelt-nniḍen.</string>
     <string name="dejavu_screenshot_save_failed">Asekles n tugna n ugdil ur yeddi ara.</string>
     <string name="dejavu_screenshot_permission">Asekles n tugniwin n ugdil yesra asurag n usekles n yifuyla. Tzemreḍ ad t-tsirgeḍ deg tisɣal n tsensi n Android.</string>
+    <string name="dejavu_no_closed_tabs">Ulac iseksal yemdlen melmi kan</string>
 </resources>

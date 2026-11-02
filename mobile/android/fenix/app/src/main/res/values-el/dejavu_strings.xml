@@ -549,4 +549,5 @@
     <string name="dejavu_screenshot_failed">Δεν ήταν δυνατή η λήψη στιγμιότυπου οθόνης αυτής της σελίδας. Δοκιμάστε ξανά.</string>
     <string name="dejavu_screenshot_save_failed">Δεν ήταν δυνατή η αποθήκευση του στιγμιότυπου οθόνης.</string>
     <string name="dejavu_screenshot_permission">Η αποθήκευση στιγμιότυπων οθόνης απαιτεί άδεια αποθήκευσης αρχείων. Μπορείτε να την παραχωρήσετε στις ρυθμίσεις της εφαρμογής στο Android.</string>
+    <string name="dejavu_no_closed_tabs">Καμία πρόσφατα κλεισμένη καρτέλα</string>
 </resources>

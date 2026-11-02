@@ -549,4 +549,5 @@
     <string name="dejavu_screenshot_failed">Ùn si pò micca fà una cattura di screnu di sta pagina. Pruvà torna.</string>
     <string name="dejavu_screenshot_save_failed">Ùn si pò micca arregistrà a cattura di screnu.</string>
     <string name="dejavu_screenshot_permission">Per arregistrà catture di screnu, ci vole u permessu d\'allucà schedarii. U pudete accurdà in i parametri di l\'appiecazione in Android.</string>
+    <string name="dejavu_no_closed_tabs">Alcuna unghjetta chjosa pocu fà</string>
 </resources>

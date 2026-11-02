@@ -573,4 +573,5 @@
     <string name="dejavu_screenshot_failed">Níorbh fhéidir gabháil scáileáin a dhéanamh den leathanach seo. Bain triail eile as.</string>
     <string name="dejavu_screenshot_save_failed">Níorbh fhéidir an ghabháil scáileáin a shábháil.</string>
     <string name="dejavu_screenshot_permission">Chun gabhálacha scáileáin a shábháil, teastaíonn cead chun comhaid a stóráil. Is féidir leat é sin a cheadú i socruithe na haipe in Android.</string>
+    <string name="dejavu_no_closed_tabs">Níl aon chluaisín a dúnadh le déanaí</string>
 </resources>

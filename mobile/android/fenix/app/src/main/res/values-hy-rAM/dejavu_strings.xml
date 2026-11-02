@@ -549,4 +549,5 @@
     <string name="dejavu_screenshot_failed">Չհաջողվեց ստեղծել այս էջի էկրանակադրը։ Փորձեք կրկին։</string>
     <string name="dejavu_screenshot_save_failed">Չհաջողվեց պահել էկրանակադրը։</string>
     <string name="dejavu_screenshot_permission">Էկրանակադրերը պահելու համար անհրաժեշտ է ֆայլեր պահպանելու թույլտվություն։ Կարող եք դա թույլատրել Android-ի հավելվածի կարգավորումներում։</string>
+    <string name="dejavu_no_closed_tabs">Վերջերս փակված ներդիրներ չկան</string>
 </resources>

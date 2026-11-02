@@ -549,4 +549,5 @@
     <string name="dejavu_screenshot_failed">اس صفحے کا اسکرین شاٹ نہیں لیا جا سکا۔ دوبارہ کوشش کریں۔</string>
     <string name="dejavu_screenshot_save_failed">اسکرین شاٹ محفوظ نہیں ہو سکا۔</string>
     <string name="dejavu_screenshot_permission">اسکرین شاٹس محفوظ کرنے کے لیے فائلیں اسٹور کرنے کی اجازت درکار ہے۔ آپ Android کی ایپ سیٹنگز میں اس کی اجازت دے سکتے ہیں۔</string>
+    <string name="dejavu_no_closed_tabs">حالیہ بند کیے گئے ٹیبز نہیں ہیں</string>
 </resources>

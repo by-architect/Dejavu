@@ -557,4 +557,5 @@
     <string name="dejavu_screenshot_failed">Nije moguće napraviti snimku ekrana ove stranice. Pokušajte ponovo.</string>
     <string name="dejavu_screenshot_save_failed">Nije moguće spremiti snimku ekrana.</string>
     <string name="dejavu_screenshot_permission">Za spremanje snimaka ekrana potrebna je dozvola za pohranu datoteka. To možete dopustiti u postavkama aplikacije u Androidu.</string>
+    <string name="dejavu_no_closed_tabs">Nema nedavno zatvorenih kartica</string>
 </resources>

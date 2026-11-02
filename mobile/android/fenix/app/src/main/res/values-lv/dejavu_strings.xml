@@ -557,4 +557,5 @@
     <string name="dejavu_screenshot_failed">Neizdevās uzņemt šīs lapas ekrānuzņēmumu. Mēģiniet vēlreiz.</string>
     <string name="dejavu_screenshot_save_failed">Neizdevās saglabāt ekrānuzņēmumu.</string>
     <string name="dejavu_screenshot_permission">Lai saglabātu ekrānuzņēmumus, ir nepieciešama atļauja glabāt datnes. To varat atļaut Android lietotnes iestatījumos.</string>
+    <string name="dejavu_no_closed_tabs">Nav nesen aizvērtu ciļņu</string>
 </resources>

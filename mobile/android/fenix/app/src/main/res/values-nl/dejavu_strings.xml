@@ -549,4 +549,5 @@
     <string name="dejavu_screenshot_failed">Kan geen schermafbeelding van deze pagina maken. Probeer het opnieuw.</string>
     <string name="dejavu_screenshot_save_failed">Kan de schermafbeelding niet opslaan.</string>
     <string name="dejavu_screenshot_permission">Voor het opslaan van schermafbeeldingen is toestemming voor bestandsopslag nodig. Je kunt dit toestaan in de app-instellingen van Android.</string>
+    <string name="dejavu_no_closed_tabs">Geen onlangs gesloten tabbladen</string>
 </resources>

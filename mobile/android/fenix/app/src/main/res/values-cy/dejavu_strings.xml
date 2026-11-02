@@ -581,4 +581,5 @@
     <string name="dejavu_screenshot_failed">Methu tynnu llun sgrin o’r dudalen hon. Ceisiwch eto.</string>
     <string name="dejavu_screenshot_save_failed">Methu cadw’r llun sgrin.</string>
     <string name="dejavu_screenshot_permission">I gadw lluniau sgrin, mae angen caniatâd i storio ffeiliau. Gallwch ei ganiatáu yng ngosodiadau’r ap yn Android.</string>
+    <string name="dejavu_no_closed_tabs">Dim tabiau wedi’u cau yn ddiweddar</string>
 </resources>

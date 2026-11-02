@@ -549,4 +549,5 @@
     <string name="dejavu_screenshot_failed">Wala ma-screenshot ini nga page. Tilawi liwat.</string>
     <string name="dejavu_screenshot_save_failed">Wala ma-save ang screenshot.</string>
     <string name="dejavu_screenshot_permission">Ang pag-save sang mga screenshot nagakinahanglan sang permiso sa pagtipig sang mga file. Mahimo mo ini tugutan sa mga setting sang app sa Android.</string>
+    <string name="dejavu_no_closed_tabs">Wala sing tab nga bag-o lang nasira</string>
 </resources>

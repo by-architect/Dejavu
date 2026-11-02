@@ -549,4 +549,5 @@
     <string name="dejavu_screenshot_failed">Ekki tókst að taka skjámynd af þessari síðu. Reyndu aftur.</string>
     <string name="dejavu_screenshot_save_failed">Ekki tókst að vista skjámyndina.</string>
     <string name="dejavu_screenshot_permission">Til að vista skjámyndir þarf heimild til að geyma skrár. Þú getur veitt hana í stillingum forritsins í Android.</string>
+    <string name="dejavu_no_closed_tabs">Engir nýlega lokaðir flipar</string>
 </resources>

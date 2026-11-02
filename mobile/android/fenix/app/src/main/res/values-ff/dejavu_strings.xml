@@ -549,4 +549,5 @@
     <string name="dejavu_screenshot_failed">Horiima ƴettude nokittol yaynirde e hello ngoo. Eto kadi.</string>
     <string name="dejavu_screenshot_save_failed">Horiima danndude nokittol yaynirde ngol.</string>
     <string name="dejavu_screenshot_permission">Yamiroore danndugol piille ena coklaa ngam danndude nokitte yaynirde. Aɗa waawi yamirde ɗum e teelte jaaɓnirgal ngal nder Android.</string>
+    <string name="dejavu_no_closed_tabs">Alaa tabbe uddaaɗe sakket njiytaa</string>
 </resources>

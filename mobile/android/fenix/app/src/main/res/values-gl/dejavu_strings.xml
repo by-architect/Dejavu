@@ -549,4 +549,5 @@
     <string name="dejavu_screenshot_failed">Non se puido facer unha captura de pantalla desta páxina. Téntao de novo.</string>
     <string name="dejavu_screenshot_save_failed">Non se puido gardar a captura de pantalla.</string>
     <string name="dejavu_screenshot_permission">Para gardar capturas de pantalla precísase permiso para almacenar ficheiros. Podes permitilo na configuración da aplicación en Android.</string>
+    <string name="dejavu_no_closed_tabs">Non hai lapelas pechadas recentemente</string>
 </resources>

@@ -549,4 +549,5 @@
     <string name="dejavu_screenshot_failed">Nun se pudo facer una captura de pantalla d\'esta páxina. Volvi tentalo.</string>
     <string name="dejavu_screenshot_save_failed">Nun se pudo guardar la captura de pantalla.</string>
     <string name="dejavu_screenshot_permission">Pa guardar captures de pantalla precísase\'l permisu p\'almacenar ficheros. Pues permitilo na configuración de l\'aplicación en Android.</string>
+    <string name="dejavu_no_closed_tabs">Nun hai llingüetes que se zarraren apocayá</string>
 </resources>

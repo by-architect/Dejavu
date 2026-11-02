@@ -541,4 +541,5 @@
     <string name="dejavu_screenshot_failed">Teu bisa nyokot téwakan layar kaca ieu. Pecakan deui.</string>
     <string name="dejavu_screenshot_save_failed">Teu bisa nyimpen téwakan layar.</string>
     <string name="dejavu_screenshot_permission">Nyimpen téwakan layar butuh idin pikeun nyimpen berkas. Anjeun bisa méré idin éta dina setélan aplikasi di Android.</string>
+    <string name="dejavu_no_closed_tabs">Taya tab nu anyar ditutup</string>
 </resources>

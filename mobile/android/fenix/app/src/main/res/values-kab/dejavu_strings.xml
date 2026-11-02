@@ -549,4 +549,5 @@
     <string name="dejavu_screenshot_failed">Yegguma ad yettwaṭṭef usebter-a. Ɛreḍ tikkelt-nniḍen.</string>
     <string name="dejavu_screenshot_save_failed">Tegguma ad tettwasekles tuṭṭfa n ugdil.</string>
     <string name="dejavu_screenshot_permission">Asekles n tuṭṭfiwin n ugdil yesra tasiregt n usekles n yifuyla. Tzemreḍ ad t-tesirgeḍ deg iɣewwaṛen n usnas deg Android.</string>
+    <string name="dejavu_no_closed_tabs">Ulac iccaren imedlen melmi kan</string>
 </resources>

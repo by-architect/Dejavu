@@ -565,4 +565,5 @@
     <string name="dejavu_screenshot_failed">Niy szło zrobić chytu ekranu tyj strōny. Sprōbuj jeszcze roz.</string>
     <string name="dejavu_screenshot_save_failed">Niy szło zapisać chytu ekranu.</string>
     <string name="dejavu_screenshot_permission">Do zapisowanio chytōw ekranu trza przizwolynio na spamiyntowanie zbiorōw. Możesz na to przizwolić we sztalōnkach aplikacyje w Androidzie.</string>
+    <string name="dejavu_no_closed_tabs">Niy ma żodnych niydowno zawartych kart</string>
 </resources>

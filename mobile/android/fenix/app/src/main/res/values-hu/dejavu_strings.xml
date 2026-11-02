@@ -549,4 +549,5 @@
     <string name="dejavu_screenshot_failed">Nem sikerült képernyőképet készíteni erről az oldalról. Próbálja újra.</string>
     <string name="dejavu_screenshot_save_failed">Nem sikerült a képernyőkép mentése.</string>
     <string name="dejavu_screenshot_permission">A képernyőképek mentéséhez fájltárolási engedély szükséges. Az Android alkalmazásbeállításaiban engedélyezheti.</string>
+    <string name="dejavu_no_closed_tabs">Nincs nemrég bezárt lap</string>
 </resources>

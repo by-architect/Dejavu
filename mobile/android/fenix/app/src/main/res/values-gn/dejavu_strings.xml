@@ -549,4 +549,5 @@
     <string name="dejavu_screenshot_failed">Ndaikatúi ojejapyhy ko kuatiarogue. Eha’ã jey.</string>
     <string name="dejavu_screenshot_save_failed">Ndaikatúi oñeñongatu mba’erechaha japyhy.</string>
     <string name="dejavu_screenshot_permission">Mba’erechaha japyhy ñeñongatu oikotevẽ ñemoneĩ marandurenda ñongatu hag̃ua. Ikatu remoneĩ tembiporu’i ñembohekópe Android-pe.</string>
+    <string name="dejavu_no_closed_tabs">Ndaipóri tendayke oñemboty ramóva</string>
 </resources>

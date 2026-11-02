@@ -549,4 +549,5 @@
     <string name="dejavu_screenshot_failed">بۇ بەتنىڭ ئېكران كەسمىسىنى ئالالمايدۇ. قايتا سىناڭ.</string>
     <string name="dejavu_screenshot_save_failed">ئېكران كەسمىسىنى ساقلىيالمايدۇ.</string>
     <string name="dejavu_screenshot_permission">ئېكران كەسمىسىنى ساقلاش ئۈچۈن ھۆججەت ساقلاش ئىجازىتى كېرەك. Android نىڭ ئەپ تەڭشىكىدە بۇنىڭغا يول قويالايسىز.</string>
+    <string name="dejavu_no_closed_tabs">يېقىندا تاقالغان بەتكۈچ يوق</string>
 </resources>

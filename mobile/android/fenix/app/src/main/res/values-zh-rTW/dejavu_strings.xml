@@ -541,4 +541,5 @@
     <string name="dejavu_screenshot_failed">無法拍攝此頁面的畫面擷圖，請重試。</string>
     <string name="dejavu_screenshot_save_failed">無法儲存畫面擷圖。</string>
     <string name="dejavu_screenshot_permission">儲存畫面擷圖需要儲存檔案的權限。您可以在 Android 的應用程式設定中開啟此權限。</string>
+    <string name="dejavu_no_closed_tabs">沒有最近關閉的分頁</string>
 </resources>

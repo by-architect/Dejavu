@@ -355,7 +355,7 @@
     <string name="dejavu_menu_reset_pinned_url">Reset to pinned URL</string>
     <string name="dejavu_menu_replace_pinned_url">Pin this URL</string>
     <string name="dejavu_menu_split_view">Split view</string>
-    <string name="dejavu_menu_restore_closed_tab">Restore closed tab</string>
+    <!-- Message when "Reopen closed tab" is asked for but no closed tab is left to bring back. -->
     <string name="dejavu_no_closed_tabs">No recently closed tabs</string>
     <string name="dejavu_menu_unsplit">Unsplit</string>
     <string name="dejavu_menu_split_with">Split view with</string>

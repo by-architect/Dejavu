@@ -549,4 +549,5 @@
     <string name="dejavu_screenshot_failed">گرفتن اسکرین‌شات از این صفحه انجام نشد. دوباره امتحان کنید.</string>
     <string name="dejavu_screenshot_save_failed">ذخیرهٔ اسکرین‌شات انجام نشد.</string>
     <string name="dejavu_screenshot_permission">برای ذخیرهٔ اسکرین‌شات‌ها، اجازهٔ ذخیره‌سازی پرونده‌ها لازم است. می‌توانید آن را در تنظیمات برنامه در اندروید مجاز کنید.</string>
+    <string name="dejavu_no_closed_tabs">هیچ زبانهٔ به‌تازگی بسته‌شده‌ای نیست</string>
 </resources>

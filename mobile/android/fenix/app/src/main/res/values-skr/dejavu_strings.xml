@@ -549,4 +549,5 @@
     <string name="dejavu_screenshot_failed">ایں ورقے دا سکرین شاٹ کائنی بݨ سڳا۔ ولدا کوشش کرو۔</string>
     <string name="dejavu_screenshot_save_failed">سکرین شاٹ محفوظ کائنی تھی سڳا۔</string>
     <string name="dejavu_screenshot_permission">سکرین شاٹاں محفوظ کرݨ کیتے فائلاں محفوظ کرݨ دی اجازت دی لوڑ ہے۔ تساں Android دیاں ایپ ترتیباں وچ ایندی اجازت ݙے سڳدے ہو۔</string>
+    <string name="dejavu_no_closed_tabs">حالیہ بند تھیاں ٹیباں کوئی کائنی</string>
 </resources>

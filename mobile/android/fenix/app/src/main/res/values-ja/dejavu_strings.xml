@@ -541,4 +541,5 @@
     <string name="dejavu_screenshot_failed">このページのスクリーンショットを撮影できませんでした。もう一度お試しください。</string>
     <string name="dejavu_screenshot_save_failed">スクリーンショットを保存できませんでした。</string>
     <string name="dejavu_screenshot_permission">スクリーンショットを保存するには、ファイルを保存する権限が必要です。Android のアプリの設定で許可できます。</string>
+    <string name="dejavu_no_closed_tabs">最近閉じたタブはありません</string>
 </resources>

@@ -565,4 +565,5 @@
     <string name="dejavu_screenshot_failed">Не ўдалося зрабіць здымак экрана гэтай старонкі. Паспрабуйце зноў.</string>
     <string name="dejavu_screenshot_save_failed">Не ўдалося захаваць здымак экрана.</string>
     <string name="dejavu_screenshot_permission">Каб захоўваць здымкі экрана, патрэбен дазвол на захоўванне файлаў. Гэта можна дазволіць у наладах праграмы ў Android.</string>
+    <string name="dejavu_no_closed_tabs">Няма нядаўна закрытых картак</string>
 </resources>

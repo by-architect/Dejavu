@@ -541,4 +541,5 @@
     <string name="dejavu_screenshot_failed">A kò lè ya sikirinṣọ́ọ̀tì ojú-ìwé yìí. Tún gbìyànjú.</string>
     <string name="dejavu_screenshot_save_failed">A kò lè fi sikirinṣọ́ọ̀tì náà pamọ́.</string>
     <string name="dejavu_screenshot_permission">Fífi sikirinṣọ́ọ̀tì pamọ́ nílò àṣẹ láti tọ́jú àwọn fáìlì. O lè gbà á láàyè nínú àwọn aatò áàpù ti Android.</string>
+    <string name="dejavu_no_closed_tabs">Kò sí àwọn táàbù tí o tì láìpẹ́</string>
 </resources>

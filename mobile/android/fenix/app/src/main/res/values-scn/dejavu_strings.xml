@@ -549,4 +549,5 @@
     <string name="dejavu_screenshot_failed">Nun potti fari na schirmata di sta pàggina. Prova arrè.</string>
     <string name="dejavu_screenshot_save_failed">Nun potti sarvari a schirmata.</string>
     <string name="dejavu_screenshot_permission">Pi sarvari i schirmati ci voli u pirmissu di sarvari prichi. Lu poi pirmèttiri nnê mpustazzioni di Android pi l\'applicazzioni.</string>
+    <string name="dejavu_no_closed_tabs">Nun cc’è nuḍḍa scheda chiujuta di picca</string>
 </resources>

@@ -549,4 +549,5 @@
     <string name="dejavu_screenshot_failed">Impussibil fâ une cature di schermade di cheste pagjine. Torne prove.</string>
     <string name="dejavu_screenshot_save_failed">Impussibil salvâ la cature di schermade.</string>
     <string name="dejavu_screenshot_permission">Par salvâ lis caturis di schermade al covente il permès di memorizâ i files. Tu puedis permetilu tes impostazions de aplicazion su Android.</string>
+    <string name="dejavu_no_closed_tabs">Nissune schede sierade di resint</string>
 </resources>

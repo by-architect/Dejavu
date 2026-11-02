@@ -549,4 +549,5 @@
     <string name="dejavu_screenshot_failed">የዚህን ገጽ ቅጽበታዊ ገጽ እይታ ማንሳት አልተቻለም። እንደገና ይሞክሩ።</string>
     <string name="dejavu_screenshot_save_failed">ቅጽበታዊ ገጽ እይታውን ማስቀመጥ አልተቻለም።</string>
     <string name="dejavu_screenshot_permission">ቅጽበታዊ ገጽ እይታዎችን ለማስቀመጥ ፋይሎችን የማከማቸት ፈቃድ ያስፈልጋል። በAndroid የመተግበሪያ ቅንብሮች ውስጥ ሊፈቅዱት ይችላሉ።</string>
+    <string name="dejavu_no_closed_tabs">በቅርብ ጊዜ የተዘጉ ትሮች የሉም</string>
 </resources>

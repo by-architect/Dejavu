@@ -557,4 +557,5 @@
     <string name="dejavu_screenshot_failed">No s\'ha pogut fer una captura de pantalla d\'aquesta pàgina. Torneu-ho a provar.</string>
     <string name="dejavu_screenshot_save_failed">No s\'ha pogut desar la captura de pantalla.</string>
     <string name="dejavu_screenshot_permission">Per desar captures de pantalla cal permís per emmagatzemar fitxers. Podeu permetre-ho als paràmetres de l\'aplicació a l\'Android.</string>
+    <string name="dejavu_no_closed_tabs">No hi ha cap pestanya tancada recentment</string>
 </resources>

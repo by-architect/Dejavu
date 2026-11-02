@@ -549,4 +549,5 @@
     <string name="dejavu_screenshot_failed">No l\'è stæto poscibile fâ unna fòto do schermo de sta pagina. Preuva torna.</string>
     <string name="dejavu_screenshot_save_failed">No l\'è stæto poscibile sarvâ a fòto do schermo.</string>
     <string name="dejavu_screenshot_permission">Pe sarvâ e föto do schermo ghe veu o permisso de sarvâ i schedai. Ti o peu permette inte inpostaçioin de l\'app de Android.</string>
+    <string name="dejavu_no_closed_tabs">Nisciun feuggio særou urtimamente</string>
 </resources>

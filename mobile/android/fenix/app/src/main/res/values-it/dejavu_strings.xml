@@ -549,4 +549,5 @@
     <string name="dejavu_screenshot_failed">Impossibile acquisire uno screenshot di questa pagina. Riprova.</string>
     <string name="dejavu_screenshot_save_failed">Impossibile salvare lo screenshot.</string>
     <string name="dejavu_screenshot_permission">Per salvare gli screenshot è necessaria l’autorizzazione ad archiviare file. Puoi concederla nelle impostazioni dell’app di Android.</string>
+    <string name="dejavu_no_closed_tabs">Nessuna scheda chiusa di recente</string>
 </resources>

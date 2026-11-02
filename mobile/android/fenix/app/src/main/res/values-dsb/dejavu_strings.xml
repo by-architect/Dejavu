@@ -565,4 +565,5 @@
     <string name="dejavu_screenshot_failed">Foto wobrazowki toś togo boka njedajo se napóraś. Wopytaj hyšći raz.</string>
     <string name="dejavu_screenshot_save_failed">Foto wobrazowki njedajo se składowaś.</string>
     <string name="dejavu_screenshot_permission">Za składowanje fotow wobrazowki jo pšawo trjebne, dataje składowaś. Móžoš jo w nastajenjach nałoženja w Android dowóliś.</string>
+    <string name="dejavu_no_closed_tabs">Njejsu rowno zacynjone rejtariki</string>
 </resources>

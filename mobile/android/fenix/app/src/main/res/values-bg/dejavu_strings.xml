@@ -549,4 +549,5 @@
     <string name="dejavu_screenshot_failed">Снимка на екрана на тази страница не можа да бъде направена. Опитайте отново.</string>
     <string name="dejavu_screenshot_save_failed">Снимката на екрана не можа да бъде запазена.</string>
     <string name="dejavu_screenshot_permission">За запазване на снимки на екрана е необходимо разрешение за съхраняване на файлове. Можете да го дадете в настройките на приложението в Android.</string>
+    <string name="dejavu_no_closed_tabs">Няма наскоро затворени раздели</string>
 </resources>

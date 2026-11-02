@@ -549,4 +549,5 @@
     <string name="dejavu_screenshot_failed">ଏହି ପୃଷ୍ଠାର ସ୍କ୍ରିନସଟ୍ ନେଇହେଲା ନାହିଁ। ପୁଣି ଚେଷ୍ଟା କରନ୍ତୁ।</string>
     <string name="dejavu_screenshot_save_failed">ସ୍କ୍ରିନସଟ୍ ସେଭ୍ କରିହେଲା ନାହିଁ।</string>
     <string name="dejavu_screenshot_permission">ସ୍କ୍ରିନସଟ୍ ସେଭ୍ କରିବା ପାଇଁ ଫାଇଲ ସଂରକ୍ଷଣ କରିବାର ଅନୁମତି ଆବଶ୍ୟକ। ଆପଣ Android ର ଆପ୍ ସେଟିଂସରେ ଏହି ଅନୁମତି ଦେଇପାରିବେ।</string>
+    <string name="dejavu_no_closed_tabs">ନିକଟରେ ବନ୍ଦ ହୋଇଥିବା କୌଣସି ଟ୍ୟାବ୍ ନାହିଁ</string>
 </resources>

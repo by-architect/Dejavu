@@ -557,4 +557,5 @@
     <string name="dejavu_screenshot_failed">Нисмо могли да направимо снимак екрана ове странице. Покушајте поново.</string>
     <string name="dejavu_screenshot_save_failed">Нисмо могли да сачувамо снимак екрана.</string>
     <string name="dejavu_screenshot_permission">За чување снимака екрана потребна је дозвола за чување датотека. Можете да је одобрите у подешавањима апликације у Android-у.</string>
+    <string name="dejavu_no_closed_tabs">Нема недавно затворених језичака</string>
 </resources>

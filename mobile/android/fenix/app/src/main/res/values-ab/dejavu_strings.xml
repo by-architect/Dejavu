@@ -549,4 +549,5 @@
     <string name="dejavu_screenshot_failed">Ари адаҟьа аекрантә ҭыхымҭа аҟаҵара алымшеит. Даҽазнык шәҽазышәшәа.</string>
     <string name="dejavu_screenshot_save_failed">Аекрантә ҭыхымҭа асохранение алымшеит.</string>
     <string name="dejavu_screenshot_permission">Аекрантә ҭыхымҭа асохранение азы афаилқәа рыҵәахра азин аҭахуп. Азин аҭара ауеит Android апрограмма архиарақәа рҟны.</string>
+    <string name="dejavu_no_closed_tabs">Ааигәа иаркыз абларҭақәа ыҟам</string>
 </resources>

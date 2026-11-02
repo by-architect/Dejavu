@@ -549,4 +549,5 @@
     <string name="dejavu_screenshot_failed">ಈ ಪುಟದ ಸ್ಕ್ರೀನ್‌ಶಾಟ್ ತೆಗೆಯಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ. ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ.</string>
     <string name="dejavu_screenshot_save_failed">ಸ್ಕ್ರೀನ್‌ಶಾಟ್ ಅನ್ನು ಉಳಿಸಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ.</string>
     <string name="dejavu_screenshot_permission">ಸ್ಕ್ರೀನ್‌ಶಾಟ್‌ಗಳನ್ನು ಉಳಿಸಲು ಫೈಲ್‌ಗಳನ್ನು ಸಂಗ್ರಹಿಸುವ ಅನುಮತಿ ಬೇಕು. ನೀವು ಅದನ್ನು Android ನ ಅನ್ವಯಿಕ ಸಿದ್ಧತೆಗಳಲ್ಲಿ ಅನುಮತಿಸಬಹುದು.</string>
+    <string name="dejavu_no_closed_tabs">ಇತ್ತೀಚೆಗೆ ಮುಚ್ಚಿದ ಯಾವುದೇ ಟ್ಯಾಬ್‌ಗಳಿಲ್ಲ</string>
 </resources>

@@ -549,4 +549,5 @@
     <string name="dejavu_screenshot_failed">ఈ పేజీ తెరపట్టును తీయలేకపోయింది. మళ్లీ ప్రయత్నించండి.</string>
     <string name="dejavu_screenshot_save_failed">తెరపట్టును భద్రపరచలేకపోయింది.</string>
     <string name="dejavu_screenshot_permission">తెరపట్లను భద్రపరచడానికి ఫైళ్ళను నిల్వ చేసే అనుమతి కావాలి. మీరు దానిని Android అనువర్తన అమరికల్లో అనుమతించవచ్చు.</string>
+    <string name="dejavu_no_closed_tabs">ఇటీవల మూసివేసిన ట్యాబులు ఏమీ లేవు</string>
 </resources>

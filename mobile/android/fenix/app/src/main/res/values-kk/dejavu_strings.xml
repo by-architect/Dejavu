@@ -549,4 +549,5 @@
     <string name="dejavu_screenshot_failed">Бұл парақтың скриншотын түсіру мүмкін болмады. Қайталап көріңіз.</string>
     <string name="dejavu_screenshot_save_failed">Скриншотты сақтау мүмкін болмады.</string>
     <string name="dejavu_screenshot_permission">Скриншоттарды сақтау үшін файлдарды сақтауға рұқсат қажет. Бұл рұқсатты Android қолданба баптауларында бере аласыз.</string>
+    <string name="dejavu_no_closed_tabs">Жуырда жабылған беттер жоқ</string>
 </resources>

@@ -565,4 +565,5 @@
     <string name="dejavu_screenshot_failed">Snímek obrazovky této stránky se nepodařilo pořídit. Zkuste to znovu.</string>
     <string name="dejavu_screenshot_save_failed">Snímek obrazovky se nepodařilo uložit.</string>
     <string name="dejavu_screenshot_permission">Pro uložení snímků obrazovky je potřeba oprávnění k ukládání souborů. Můžete ho povolit v nastavení aplikace v systému Android.</string>
+    <string name="dejavu_no_closed_tabs">Nemáte žádné nedávno zavřené panely</string>
 </resources>

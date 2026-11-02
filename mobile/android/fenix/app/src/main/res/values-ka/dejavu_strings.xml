@@ -549,4 +549,5 @@
     <string name="dejavu_screenshot_failed">ამ გვერდის გადაღება ვერ მოხერხდა. სცადეთ ხელახლა.</string>
     <string name="dejavu_screenshot_save_failed">ეკრანის სურათის შენახვა ვერ მოხერხდა.</string>
     <string name="dejavu_screenshot_permission">ეკრანის სურათების შესანახად საჭიროა ფაილების შენახვის ნებართვა. მისი დაშვება შეგიძლიათ Android-ის აპის პარამეტრებში.</string>
+    <string name="dejavu_no_closed_tabs">ბოლოს დახურული ჩანართები არაა</string>
 </resources>

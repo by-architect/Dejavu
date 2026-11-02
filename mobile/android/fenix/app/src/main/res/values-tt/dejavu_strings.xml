@@ -549,4 +549,5 @@
     <string name="dejavu_screenshot_failed">Бу битнең скриншотын алып булмады. Яңадан тырышып карагыз.</string>
     <string name="dejavu_screenshot_save_failed">Скриншотны саклап булмады.</string>
     <string name="dejavu_screenshot_permission">Скриншотларны саклау өчен файлларны саклауга рөхсәт кирәк. Моны Android-тагы кушымта көйләүләрендә рөхсәт итә аласыз.</string>
+    <string name="dejavu_no_closed_tabs">Күптән түгел ябылган таблар юк</string>
 </resources>

@@ -541,4 +541,5 @@
     <string name="dejavu_screenshot_failed">无法对此页面截屏，请重试。</string>
     <string name="dejavu_screenshot_save_failed">无法保存截屏。</string>
     <string name="dejavu_screenshot_permission">保存截屏需要存储文件的权限。您可以在 Android 的应用设置中开启此权限。</string>
+    <string name="dejavu_no_closed_tabs">暂无最近关闭的标签页</string>
 </resources>

@@ -573,4 +573,5 @@
     <string name="dejavu_screenshot_failed">N’haller ket ober un dapadenn-skramm eus ar bajenn-mañ. Klaskit en-dro.</string>
     <string name="dejavu_screenshot_save_failed">N’haller ket enrollañ an dapadenn-skramm.</string>
     <string name="dejavu_screenshot_permission">Ret eo kaout an aotre da enrollañ restroù evit enrollañ tapadennoù-skramm. Gallout a rit aotren an dra-se en arventennoù an arload en Android.</string>
+    <string name="dejavu_no_closed_tabs">N’eus ivinell nevez serret ebet</string>
 </resources>

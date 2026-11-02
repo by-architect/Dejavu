@@ -541,4 +541,5 @@
     <string name="dejavu_screenshot_failed">មិនអាចថតអេក្រង់ទំព័រនេះបានទេ។ សូមព្យាយាមម្ដងទៀត។</string>
     <string name="dejavu_screenshot_save_failed">មិនអាចរក្សាទុករូបថតអេក្រង់បានទេ។</string>
     <string name="dejavu_screenshot_permission">ការរក្សាទុករូបថតអេក្រង់ត្រូវការសិទ្ធិរក្សាទុកឯកសារ។ អ្នកអាចអនុញ្ញាតវានៅក្នុងការកំណត់កម្មវិធីរបស់ Android។</string>
+    <string name="dejavu_no_closed_tabs">គ្មានផ្ទាំងដែលបានបិទថ្មីៗឡើយ</string>
 </resources>

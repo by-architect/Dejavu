@@ -549,4 +549,5 @@
     <string name="dejavu_screenshot_failed">Гирифтани акси экрани ин саҳифа иҷро нашуд. Аз нав кӯшиш кунед.</string>
     <string name="dejavu_screenshot_save_failed">Нигоҳ доштани акси экран иҷро нашуд.</string>
     <string name="dejavu_screenshot_permission">Барои нигоҳ доштани аксҳои экран иҷозати захира кардани файлҳо лозим аст. Шумо метавонед ин иҷозатро дар танзимоти барнома дар Android диҳед.</string>
+    <string name="dejavu_no_closed_tabs">Ягон варақаи ба наздикӣ пӯшидашуда нест</string>
 </resources>

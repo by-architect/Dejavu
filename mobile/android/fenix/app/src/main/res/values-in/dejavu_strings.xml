@@ -541,4 +541,5 @@
     <string name="dejavu_screenshot_failed">Tidak dapat mengambil tangkapan layar laman ini. Coba lagi.</string>
     <string name="dejavu_screenshot_save_failed">Tidak dapat menyimpan tangkapan layar.</string>
     <string name="dejavu_screenshot_permission">Menyimpan tangkapan layar memerlukan izin untuk menyimpan berkas. Anda dapat mengizinkannya di pengaturan aplikasi Android.</string>
+    <string name="dejavu_no_closed_tabs">Tidak ada tab yang baru saja ditutup</string>
 </resources>

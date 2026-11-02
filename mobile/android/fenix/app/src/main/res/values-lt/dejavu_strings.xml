@@ -565,4 +565,5 @@
     <string name="dejavu_screenshot_failed">Nepavyko padaryti šio tinklalapio ekrano nuotraukos. Bandykite dar kartą.</string>
     <string name="dejavu_screenshot_save_failed">Nepavyko įrašyti ekrano nuotraukos.</string>
     <string name="dejavu_screenshot_permission">Norint įrašyti ekrano nuotraukas, reikia leidimo saugoti failus. Leidimą galite suteikti sistemos Android programos nustatymuose.</string>
+    <string name="dejavu_no_closed_tabs">Nėra paskiausiai užvertų kortelių</string>
 </resources>

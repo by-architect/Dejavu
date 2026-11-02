@@ -541,4 +541,5 @@
     <string name="dejavu_screenshot_failed">Không thể chụp ảnh màn hình trang này. Hãy thử lại.</string>
     <string name="dejavu_screenshot_save_failed">Không thể lưu ảnh chụp màn hình.</string>
     <string name="dejavu_screenshot_permission">Cần có quyền lưu trữ tập tin để lưu ảnh chụp màn hình. Bạn có thể cho phép trong cài đặt ứng dụng của Android.</string>
+    <string name="dejavu_no_closed_tabs">Không có thẻ nào đã đóng gần đây</string>
 </resources>

@@ -549,4 +549,5 @@
     <string name="dejavu_screenshot_failed">No s\'ha puesto fer una captura de pantalla d\'esta pachina. Torna a intentar-lo.</string>
     <string name="dejavu_screenshot_save_failed">No s\'ha puesto alzar a captura de pantalla.</string>
     <string name="dejavu_screenshot_permission">Ta alzar capturas de pantalla se precisa permiso ta alzar fichers. Puetz permitir-lo en os achustes d\'a aplicación en Android.</string>
+    <string name="dejavu_no_closed_tabs">No bi ha pestanyas zarradas fa poco</string>
 </resources>

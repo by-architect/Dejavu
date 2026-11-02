@@ -582,4 +582,5 @@
     <string name="dejavu_screenshot_failed">এই পাতার স্ক্রিনশট নেওয়া যায়নি। আবার চেষ্টা করুন।</string>
     <string name="dejavu_screenshot_save_failed">স্ক্রিনশট সংরক্ষণ করা যায়নি।</string>
     <string name="dejavu_screenshot_permission">স্ক্রিনশট সংরক্ষণ করতে ফাইল সংরক্ষণের অনুমতি প্রয়োজন। আপনি Android-এর অ্যাপ সেটিংসে এটির অনুমতি দিতে পারেন।</string>
+    <string name="dejavu_no_closed_tabs">সম্প্রতি বন্ধ করা কোনো ট্যাব নেই</string>
 </resources>

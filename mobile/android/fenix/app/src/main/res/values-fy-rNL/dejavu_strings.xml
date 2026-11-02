@@ -549,4 +549,5 @@
     <string name="dejavu_screenshot_failed">Kin gjin skermôfbylding fan dizze side meitsje. Probearje it opnij.</string>
     <string name="dejavu_screenshot_save_failed">Kin de skermôfbylding net bewarje.</string>
     <string name="dejavu_screenshot_permission">Foar it bewarjen fan skermôfbyldingen is tastimming nedich om bestannen op te slaan. Jo kinne it tastean yn de app-ynstellingen fan Android.</string>
+    <string name="dejavu_no_closed_tabs">Gjin koartlyn sluten ljepblêden</string>
 </resources>

@@ -557,4 +557,5 @@
     <string name="dejavu_screenshot_failed">Nije moguće napraviti screenshot ove stranice. Pokušajte ponovo.</string>
     <string name="dejavu_screenshot_save_failed">Nije moguće sačuvati screenshot.</string>
     <string name="dejavu_screenshot_permission">Za čuvanje screenshota potrebna je dozvola za pohranu datoteka. Možete to dozvoliti u postavkama aplikacije na Androidu.</string>
+    <string name="dejavu_no_closed_tabs">Nema nedavno zatvorenih tabova</string>
 </resources>

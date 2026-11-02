@@ -541,4 +541,5 @@
     <string name="dejavu_screenshot_failed">ບໍ່ສາມາດຖ່າຍຫນ້າຈໍຂອງຫນ້ານີ້ໄດ້. ລອງໃຫມ່ອີກຄັ້ງ.</string>
     <string name="dejavu_screenshot_save_failed">ບໍ່ສາມາດບັນທຶກພາບຫນ້າຈໍໄດ້.</string>
     <string name="dejavu_screenshot_permission">ການບັນທຶກພາບຫນ້າຈໍຕ້ອງມີສິດອະນຸຍາດໃນການເກັບໄຟລ໌. ທ່ານສາມາດອະນຸຍາດໄດ້ໃນການຕັ້ງຄ່າແອັບຂອງ Android.</string>
+    <string name="dejavu_no_closed_tabs">ບໍ່ມີແທັບທີ່ຫາກໍ່ປິດໄປມື້ກີ້ນີ້</string>
 </resources>

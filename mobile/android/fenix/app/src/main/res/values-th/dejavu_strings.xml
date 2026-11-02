@@ -541,4 +541,5 @@
     <string name="dejavu_screenshot_failed">ไม่สามารถจับภาพหน้าจอของหน้านี้ได้ โปรดลองอีกครั้ง</string>
     <string name="dejavu_screenshot_save_failed">ไม่สามารถบันทึกภาพหน้าจอได้</string>
     <string name="dejavu_screenshot_permission">การบันทึกภาพหน้าจอต้องใช้สิทธิอนุญาตในการจัดเก็บไฟล์ คุณสามารถอนุญาตได้ในการตั้งค่าแอปของ Android</string>
+    <string name="dejavu_no_closed_tabs">ไม่มีแท็บที่ปิดล่าสุด</string>
 </resources>

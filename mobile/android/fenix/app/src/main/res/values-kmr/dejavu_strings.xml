@@ -549,4 +549,5 @@
     <string name="dejavu_screenshot_failed">Wêneyê ekranê yê vê rûpelê nehat kişandin. Dîsa biceribîne.</string>
     <string name="dejavu_screenshot_save_failed">Wêneyê ekranê nehat tomarkirin.</string>
     <string name="dejavu_screenshot_permission">Ji bo tomarkirina wêneyên ekranê destûra tomarkirina dosyeyan pêwîst e. Tu dikarî vê destûrê di sazkariyên sepanê yên Androidê de bidî.</string>
+    <string name="dejavu_no_closed_tabs">Hilpekîna berî niha hatiye girtin tune</string>
 </resources>

@@ -565,4 +565,5 @@
     <string name="dejavu_screenshot_failed">Nie można zrobić zrzutu ekranu tej strony. Spróbuj ponownie.</string>
     <string name="dejavu_screenshot_save_failed">Nie można zapisać zrzutu ekranu.</string>
     <string name="dejavu_screenshot_permission">Zapisywanie zrzutów ekranu wymaga uprawnienia do przechowywania plików. Możesz na to zezwolić w ustawieniach aplikacji w Androidzie.</string>
+    <string name="dejavu_no_closed_tabs">Nie ma ostatnio zamkniętych kart</string>
 </resources>

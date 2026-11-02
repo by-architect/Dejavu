@@ -549,4 +549,5 @@
     <string name="dejavu_screenshot_failed">Von dieser Seite konnte kein Bildschirmfoto aufgenommen werden. Versuche es erneut.</string>
     <string name="dejavu_screenshot_save_failed">Das Bildschirmfoto konnte nicht gespeichert werden.</string>
     <string name="dejavu_screenshot_permission">Bildschirmfotos können nur gespeichert werden, wenn die App Dateien speichern darf. Du kannst das in den App-Einstellungen von Android erlauben.</string>
+    <string name="dejavu_no_closed_tabs">Keine kürzlich geschlossenen Tabs vorhanden</string>
 </resources>

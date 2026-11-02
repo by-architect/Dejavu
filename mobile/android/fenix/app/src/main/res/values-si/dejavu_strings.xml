@@ -549,4 +549,5 @@
     <string name="dejavu_screenshot_failed">මෙම පිටුවේ තිරසේයාවක් ගැනීමට නොහැකි විය. නැවත උත්සාහ කරන්න.</string>
     <string name="dejavu_screenshot_save_failed">තිරසේයාව සුරැකීමට නොහැකි විය.</string>
     <string name="dejavu_screenshot_permission">තිරසේයා සුරැකීමට ගොනු ගබඩා කිරීමේ අවසරය අවශ්‍යයි. ඔබට Android හි යෙදුම් සැකසුම් තුළ එයට ඉඩ දිය හැකිය.</string>
+    <string name="dejavu_no_closed_tabs">මෑත දී වසා දැමූ පටිති නැත</string>
 </resources>

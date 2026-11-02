@@ -91,7 +91,7 @@ data class MoreMenuState(
     val isPinChanged: Boolean = false,
     val isSplit: Boolean = false,
     val isPrivate: Boolean = false,
-    val canRestoreClosedTab: Boolean = true,
+    val canRestoreClosedTab: Boolean = false,
     val hasExternalApp: Boolean = false,
     val canTranslate: Boolean = false,
     val isTranslated: Boolean = false,

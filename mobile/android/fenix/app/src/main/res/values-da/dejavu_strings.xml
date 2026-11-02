@@ -549,4 +549,5 @@
     <string name="dejavu_screenshot_failed">Kunne ikke tage et skærmbillede af denne side. Prøv igen.</string>
     <string name="dejavu_screenshot_save_failed">Kunne ikke gemme skærmbilledet.</string>
     <string name="dejavu_screenshot_permission">For at gemme skærmbilleder kræves tilladelse til at gemme filer. Du kan tillade det i appens indstillinger i Android.</string>
+    <string name="dejavu_no_closed_tabs">Ingen nyligt lukkede faneblade</string>
 </resources>

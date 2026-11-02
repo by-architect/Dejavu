@@ -541,4 +541,5 @@
     <string name="dejavu_screenshot_failed">pakala la mi ken ala pali e sitelen pi lipu ni. o sin.</string>
     <string name="dejavu_screenshot_save_failed">pakala la mi ken ala awen e sitelen lipu.</string>
     <string name="dejavu_screenshot_permission">mi wile e ken pi awen lipu tawa awen e sitelen lipu. sina ken pana e ken ni lon nasin ilo Android pi ilo ni.</string>
+    <string name="dejavu_no_closed_tabs">poki pi pini poka li lon ala</string>
 </resources>

@@ -549,4 +549,5 @@
     <string name="dejavu_screenshot_failed">No est istadu possìbile fàghere una catura de ischermu de custa pàgina. Torra a proare.</string>
     <string name="dejavu_screenshot_save_failed">No est istadu possìbile sarvare sa catura de ischermu.</string>
     <string name="dejavu_screenshot_permission">Pro sarvare is caturas de ischermu b\'at bisòngiu de su permissu de allogare archìvios. Ddu podes permìtere in sa cunfiguratzione de s\'aplicatzione in Android.</string>
+    <string name="dejavu_no_closed_tabs">Nissuna ischeda serrada de reghente</string>
 </resources>

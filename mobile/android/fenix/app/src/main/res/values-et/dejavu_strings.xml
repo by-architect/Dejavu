@@ -549,4 +549,5 @@
     <string name="dejavu_screenshot_failed">Selle lehe ekraanipildi tegemine ebaõnnestus. Proovi uuesti.</string>
     <string name="dejavu_screenshot_save_failed">Ekraanipildi salvestamine ebaõnnestus.</string>
     <string name="dejavu_screenshot_permission">Ekraanipiltide salvestamiseks on vaja õigust faile talletada. Saad selle lubada äpi sätetes Androidis.</string>
+    <string name="dejavu_no_closed_tabs">Hiljuti suletud kaarte pole</string>
 </resources>

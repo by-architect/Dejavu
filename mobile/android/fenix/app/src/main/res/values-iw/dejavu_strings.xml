@@ -557,4 +557,5 @@
     <string name="dejavu_screenshot_failed">לא ניתן היה ליצור צילום מסך של הדף הזה. נא לנסות שוב.</string>
     <string name="dejavu_screenshot_save_failed">לא ניתן היה לשמור את צילום המסך.</string>
     <string name="dejavu_screenshot_permission">שמירת צילומי מסך דורשת הרשאה לאחסון קבצים. ניתן לאפשר זאת בהגדרות האפליקציה ב-Android.</string>
+    <string name="dejavu_no_closed_tabs">אין לשוניות שנסגרו לאחרונה</string>
 </resources>

@@ -549,4 +549,5 @@
     <string name="dejavu_screenshot_failed">Ne eblis fari ekrankopion de ĉi tiu paĝo. Provu denove.</string>
     <string name="dejavu_screenshot_save_failed">Ne eblis konservi la ekrankopion.</string>
     <string name="dejavu_screenshot_permission">Por konservi ekrankopiojn necesas permeso por konservi dosierojn. Vi povas permesi tion en la agordoj de la programo en Android.</string>
+    <string name="dejavu_no_closed_tabs">Estas neniu ĵuse fermita langeto</string>
 </resources>

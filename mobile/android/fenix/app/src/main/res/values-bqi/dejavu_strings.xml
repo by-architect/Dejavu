@@ -549,4 +549,5 @@
     <string name="dejavu_screenshot_failed">نترست ز ای بلگه شؽوات بیگیره. ز نۊ قپ ریت کۊنین.</string>
     <string name="dejavu_screenshot_save_failed">نترست شؽوات ز بلگه ن زفت کونه.</string>
     <string name="dejavu_screenshot_permission">سی زفت کردن شؽوات ز بلگه، موجوز زفت کردن فایلا ن اخو. اترین ای موجوز ن من سامووا برنومه Android بیدین.</string>
+    <string name="dejavu_no_closed_tabs">هیچ بلگه ای ک هیم دمۊوی بسته وابیڌه نؽ</string>
 </resources>

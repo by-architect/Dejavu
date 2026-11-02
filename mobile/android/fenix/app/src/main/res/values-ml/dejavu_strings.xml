@@ -549,4 +549,5 @@
     <string name="dejavu_screenshot_failed">ഈ താളിന്റെ പ്രതലപ്പിളർപ്പ് എടുക്കുവാൻ പറ്റിയില്ല. വീണ്ടും ശ്രമിക്കുക.</string>
     <string name="dejavu_screenshot_save_failed">പ്രതലപ്പിളർപ്പ് കരുതിവയ്ക്കുവാൻ പറ്റിയില്ല.</string>
     <string name="dejavu_screenshot_permission">പ്രതലപ്പിളർപ്പുകൾ കരുതിവയ്ക്കുവാൻ ഫയലുകൾ സംഭരിക്കാനുള്ള അനുമതി വേണം. Android-ന്റെ ആപ്പ് ക്രമീകരണങ്ങളിൽ നിങ്ങൾക്ക് അത് അനുവദിക്കാം.</string>
+    <string name="dejavu_no_closed_tabs">അടുത്തിടെ അടച്ച ടാബുകളൊന്നുമില്ല</string>
 </resources>

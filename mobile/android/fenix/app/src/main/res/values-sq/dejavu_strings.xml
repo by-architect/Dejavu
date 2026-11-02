@@ -549,4 +549,5 @@
     <string name="dejavu_screenshot_failed">S\'u bë dot foto ekrani e kësaj faqeje. Riprovoni.</string>
     <string name="dejavu_screenshot_save_failed">S\'u ruajt dot foto ekrani.</string>
     <string name="dejavu_screenshot_permission">Ruajtja e fotove të ekranit lyp leje për depozitim kartelash. Mund ta lejoni te rregullimet e aplikacionit në Android.</string>
+    <string name="dejavu_no_closed_tabs">S’ka skeda të mbyllura së fundi</string>
 </resources>

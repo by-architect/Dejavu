@@ -557,4 +557,5 @@
     <string name="dejavu_screenshot_failed">Não foi possível fazer uma captura de ecrã desta página. Tente novamente.</string>
     <string name="dejavu_screenshot_save_failed">Não foi possível guardar a captura de ecrã.</string>
     <string name="dejavu_screenshot_permission">Guardar capturas de ecrã requer permissão para armazenar ficheiros. Pode permitir isto nas definições da aplicação no Android.</string>
+    <string name="dejavu_no_closed_tabs">Sem separadores fechados recentemente</string>
 </resources>

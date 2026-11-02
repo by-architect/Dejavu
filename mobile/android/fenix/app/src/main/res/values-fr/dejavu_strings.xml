@@ -549,4 +549,5 @@
     <string name="dejavu_screenshot_failed">Impossible de prendre une capture d’écran de cette page. Veuillez réessayer.</string>
     <string name="dejavu_screenshot_save_failed">Impossible d’enregistrer la capture d’écran.</string>
     <string name="dejavu_screenshot_permission">L’enregistrement des captures d’écran nécessite l’autorisation de stocker des fichiers. Vous pouvez l’accorder dans les paramètres de l’application sur Android.</string>
+    <string name="dejavu_no_closed_tabs">Aucun onglet récemment fermé</string>
 </resources>

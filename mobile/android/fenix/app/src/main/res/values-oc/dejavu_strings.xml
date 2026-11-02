@@ -549,4 +549,5 @@
     <string name="dejavu_screenshot_failed">Impossible de far una captura d’ecran d’aquesta pagina. Tornatz ensajar.</string>
     <string name="dejavu_screenshot_save_failed">Impossible d’enregistrar la captura d’ecran.</string>
     <string name="dejavu_screenshot_permission">Per enregistrar de capturas d’ecran cal l’autorizacion d’emmagazinar de fichièrs. Podètz donar aquesta autorizacion dins los paramètres d’aplicacion d’Android.</string>
+    <string name="dejavu_no_closed_tabs">Cap d’onglet tampat recentament</string>
 </resources>

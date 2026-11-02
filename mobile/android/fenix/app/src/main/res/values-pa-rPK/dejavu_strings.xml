@@ -549,4 +549,5 @@
     <string name="dejavu_screenshot_failed">ایس صفحے دا سکرین‌شاٹ نہیں لیا جا سکیا۔ دوبارہ کوشش کرو۔</string>
     <string name="dejavu_screenshot_save_failed">سکرین‌شاٹ سیو نہیں کیتا جا سکیا۔</string>
     <string name="dejavu_screenshot_permission">سکرین‌شاٹ سیو کرن لئی فائلاں سٹور کرن دی اجازت لوڑدی اے۔ تسیں ایہہ اجازت Android دیاں ایپ سیٹنگاں وچ دے سکدے او۔</string>
+    <string name="dejavu_no_closed_tabs">کوئی وی تازہ بند کیتیاں ٹیباں نہیں ہن</string>
 </resources>

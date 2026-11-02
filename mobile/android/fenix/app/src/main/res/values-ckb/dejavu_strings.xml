@@ -549,4 +549,5 @@
     <string name="dejavu_screenshot_failed">نەتوانرا وێنەی شاشەی ئەم پەڕەیە بگیرێت. دووبارە هەوڵ بدەرەوە.</string>
     <string name="dejavu_screenshot_save_failed">نەتوانرا وێنەی شاشەکە پاشەکەوت بکرێت.</string>
     <string name="dejavu_screenshot_permission">بۆ پاشەکەوتکردنی وێنەی شاشە، ڕێگەپێدان بۆ هەڵگرتنی پەڕگەکان پێویستە. دەتوانیت لە ڕێکخستنەکانی بەرنامەکە لە ئەندرۆید ڕێگەی پێ بدەیت.</string>
+    <string name="dejavu_no_closed_tabs">هیچ بازدەرێکی داخراوی نوێ نیە</string>
 </resources>

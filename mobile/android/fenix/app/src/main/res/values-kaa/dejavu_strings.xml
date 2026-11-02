@@ -549,4 +549,5 @@
     <string name="dejavu_screenshot_failed">Bul bettiń skrinshotın alıw múmkin bolmadı. Qayta urınıp kóriń.</string>
     <string name="dejavu_screenshot_save_failed">Skrinshottı saqlaw múmkin bolmadı.</string>
     <string name="dejavu_screenshot_permission">Skrinshotlardı saqlaw ushın fayllardı saqlawǵa ruqsat kerek. Bunı Android-taǵı baǵdarlama sazlawlarında ruqsat ete alasız.</string>
+    <string name="dejavu_no_closed_tabs">Jaqında jabılǵan betler joq</string>
 </resources>

@@ -565,4 +565,5 @@
     <string name="dejavu_screenshot_failed">Не удалось сделать снимок экрана этой страницы. Попробуйте снова.</string>
     <string name="dejavu_screenshot_save_failed">Не удалось сохранить снимок экрана.</string>
     <string name="dejavu_screenshot_permission">Для сохранения снимков экрана требуется разрешение на хранение файлов. Его можно предоставить в настройках приложения в Android.</string>
+    <string name="dejavu_no_closed_tabs">Нет недавно закрытых вкладок</string>
 </resources>

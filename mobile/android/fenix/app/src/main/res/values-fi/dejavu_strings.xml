@@ -549,4 +549,5 @@
     <string name="dejavu_screenshot_failed">Kuvakaappauksen ottaminen tästä sivusta epäonnistui. Yritä uudelleen.</string>
     <string name="dejavu_screenshot_save_failed">Kuvakaappauksen tallennus epäonnistui.</string>
     <string name="dejavu_screenshot_permission">Kuvakaappausten tallentaminen vaatii oikeuden tallentaa tiedostoja. Voit sallia sen Androidin sovellusasetuksista.</string>
+    <string name="dejavu_no_closed_tabs">Ei viimeksi suljettuja välilehtiä</string>
 </resources>

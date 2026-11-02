@@ -549,4 +549,5 @@
     <string name="dejavu_screenshot_failed">यो पृष्ठको स्क्रिनसट लिन सकिएन। फेरि प्रयास गर्नुहोस्।</string>
     <string name="dejavu_screenshot_save_failed">स्क्रिनसट सुरक्षित गर्न सकिएन।</string>
     <string name="dejavu_screenshot_permission">स्क्रिनसटहरू सुरक्षित गर्न फाइलहरू भण्डारण गर्ने अनुमति चाहिन्छ। तपाईं यो अनुमति Android को एप सेटिङहरूमा दिन सक्नुहुन्छ।</string>
+    <string name="dejavu_no_closed_tabs">हालै बन्द गरिएका ट्याबहरु कुनै पनि छैनन्</string>
 </resources>
