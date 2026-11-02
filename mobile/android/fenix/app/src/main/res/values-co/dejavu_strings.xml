@@ -543,4 +543,10 @@
     <string name="dejavu_settings_tips">Cunsiglii</string>
     <string name="dejavu_settings_tips_summary">Affissà cunsiglii nant\'à e mosse piatte, cum\'è tene appughjatu Nova unghjetta</string>
     <string name="dejavu_new">Novu</string>
+    <string name="dejavu_menu_screenshot">Cattura di a pagina sana</string>
+    <string name="dejavu_screenshot_saving">Arregistramentu di a cattura di screnu…</string>
+    <string name="dejavu_screenshot_saved">Cattura di screnu arregistrata in %1$s</string>
+    <string name="dejavu_screenshot_failed">Ùn si pò micca fà una cattura di screnu di sta pagina. Pruvà torna.</string>
+    <string name="dejavu_screenshot_save_failed">Ùn si pò micca arregistrà a cattura di screnu.</string>
+    <string name="dejavu_screenshot_permission">Per arregistrà catture di screnu, ci vole u permessu d\'allucà schedarii. U pudete accurdà in i parametri di l\'appiecazione in Android.</string>
 </resources>

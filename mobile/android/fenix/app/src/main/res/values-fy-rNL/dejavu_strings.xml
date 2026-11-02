@@ -543,4 +543,10 @@
     <string name="dejavu_settings_tips">Tips</string>
     <string name="dejavu_settings_tips_summary">Tips oer ferstoppe bewegingen toane, lykas ‘Nij ljepblêd’ yndrukt hâlde</string>
     <string name="dejavu_new">Nij</string>
+    <string name="dejavu_menu_screenshot">Skermôfbylding fan hiele side</string>
+    <string name="dejavu_screenshot_saving">Skermôfbylding wurdt bewarre…</string>
+    <string name="dejavu_screenshot_saved">Skermôfbylding bewarre yn %1$s</string>
+    <string name="dejavu_screenshot_failed">Kin gjin skermôfbylding fan dizze side meitsje. Probearje it opnij.</string>
+    <string name="dejavu_screenshot_save_failed">Kin de skermôfbylding net bewarje.</string>
+    <string name="dejavu_screenshot_permission">Foar it bewarjen fan skermôfbyldingen is tastimming nedich om bestannen op te slaan. Jo kinne it tastean yn de app-ynstellingen fan Android.</string>
 </resources>

@@ -543,4 +543,10 @@
     <string name="dejavu_settings_tips">Cussegls</string>
     <string name="dejavu_settings_tips_summary">Mussar cussegls davart gests zuppads, sco tegnair smatgà Nov tab</string>
     <string name="dejavu_new">Nov</string>
+    <string name="dejavu_menu_screenshot">Maletg da la pagina entira</string>
+    <string name="dejavu_screenshot_saving">Memorisar il maletg dal visur…</string>
+    <string name="dejavu_screenshot_saved">Maletg dal visur memorisà en %1$s</string>
+    <string name="dejavu_screenshot_failed">Impussibel da far in maletg dal visur da questa pagina. Emprova anc ina giada.</string>
+    <string name="dejavu_screenshot_save_failed">Impussibel da memorisar il maletg dal visur.</string>
+    <string name="dejavu_screenshot_permission">Per memorisar maletgs dal visur è la permissiun da memorisar datotecas necessaria. Ti pos permetter quai en ils parameters da l’app dad Android.</string>
 </resources>

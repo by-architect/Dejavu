@@ -543,4 +543,10 @@
     <string name="dejavu_settings_tips">Astuces</string>
     <string name="dejavu_settings_tips_summary">Afficher des astuces sur les mouvements cachés, comme maintenir « Nouvel onglet » appuyé</string>
     <string name="dejavu_new">Nouveau</string>
+    <string name="dejavu_menu_screenshot">Capture de la page entière</string>
+    <string name="dejavu_screenshot_saving">Enregistrement de la capture d’écran…</string>
+    <string name="dejavu_screenshot_saved">Capture d’écran enregistrée dans %1$s</string>
+    <string name="dejavu_screenshot_failed">Impossible de prendre une capture d’écran de cette page. Veuillez réessayer.</string>
+    <string name="dejavu_screenshot_save_failed">Impossible d’enregistrer la capture d’écran.</string>
+    <string name="dejavu_screenshot_permission">L’enregistrement des captures d’écran nécessite l’autorisation de stocker des fichiers. Vous pouvez l’accorder dans les paramètres de l’application sur Android.</string>
 </resources>

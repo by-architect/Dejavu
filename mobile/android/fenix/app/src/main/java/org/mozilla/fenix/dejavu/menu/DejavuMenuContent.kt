@@ -391,6 +391,10 @@ internal fun moreMenuState(
         isPdf = tab.content.isPdf,
         isDeviceTab = !tab.content.private &&
             workspaces.isDeviceWorkspace(pin?.workspaceId ?: workspaces.workspaceOf(tab.id)),
+        allowsScreenshots = FullPageScreenshot.isAllowed(
+            tab.content.private,
+            fenix.settings.shouldSecureModeBeOverridden,
+        ),
         splitWays = SplitSpace.supported(LocalConfiguration.current),
     )
 }

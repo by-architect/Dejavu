@@ -543,4 +543,10 @@
     <string name="dejavu_settings_tips">Maslahatlar</string>
     <string name="dejavu_settings_tips_summary">Yashirin ishoralar haqida maslahatlarni ko\'rsatish, masalan, “Yangi varaq” tugmasini bosib turish</string>
     <string name="dejavu_new">Yangi</string>
+    <string name="dejavu_menu_screenshot">Butun sahifa skrinshoti</string>
+    <string name="dejavu_screenshot_saving">Skrinshot saqlanmoqda…</string>
+    <string name="dejavu_screenshot_saved">Skrinshot %1$s jildiga saqlandi</string>
+    <string name="dejavu_screenshot_failed">Bu sahifaning skrinshotini olib bo\'lmadi. Qayta urining.</string>
+    <string name="dejavu_screenshot_save_failed">Skrinshotni saqlab bo\'lmadi.</string>
+    <string name="dejavu_screenshot_permission">Skrinshotlarni saqlash uchun fayllarni saqlashga ruxsat kerak. Bunga Android ilova sozlamalarida ruxsat berishingiz mumkin.</string>
 </resources>

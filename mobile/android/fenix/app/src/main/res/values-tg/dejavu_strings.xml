@@ -543,4 +543,10 @@
     <string name="dejavu_settings_tips">Маслиҳатҳо</string>
     <string name="dejavu_settings_tips_summary">Нишон додани маслиҳатҳо дар бораи ишораҳои пинҳон, масалан, пахш карда нигоҳ доштани «Варақаи нав»</string>
     <string name="dejavu_new">Нав</string>
+    <string name="dejavu_menu_screenshot">Акси экрани тамоми саҳифа</string>
+    <string name="dejavu_screenshot_saving">Дар ҳоли нигоҳ доштани акси экран…</string>
+    <string name="dejavu_screenshot_saved">Акси экран дар %1$s нигоҳ дошта шуд</string>
+    <string name="dejavu_screenshot_failed">Гирифтани акси экрани ин саҳифа иҷро нашуд. Аз нав кӯшиш кунед.</string>
+    <string name="dejavu_screenshot_save_failed">Нигоҳ доштани акси экран иҷро нашуд.</string>
+    <string name="dejavu_screenshot_permission">Барои нигоҳ доштани аксҳои экран иҷозати захира кардани файлҳо лозим аст. Шумо метавонед ин иҷозатро дар танзимоти барнома дар Android диҳед.</string>
 </resources>

@@ -543,4 +543,10 @@
     <string name="dejavu_settings_tips">Հուշումներ</string>
     <string name="dejavu_settings_tips_summary">Ցուցադրել հուշումներ թաքնված ժեստերի մասին, օրինակ՝ «Նոր ներդիր»֊ը պահելը</string>
     <string name="dejavu_new">Նոր</string>
+    <string name="dejavu_menu_screenshot">Ամբողջ էջի էկրանակադր</string>
+    <string name="dejavu_screenshot_saving">Էկրանակադրը պահվում է…</string>
+    <string name="dejavu_screenshot_saved">Էկրանակադրը պահվեց %1$s թղթապանակում</string>
+    <string name="dejavu_screenshot_failed">Չհաջողվեց ստեղծել այս էջի էկրանակադրը։ Փորձեք կրկին։</string>
+    <string name="dejavu_screenshot_save_failed">Չհաջողվեց պահել էկրանակադրը։</string>
+    <string name="dejavu_screenshot_permission">Էկրանակադրերը պահելու համար անհրաժեշտ է ֆայլեր պահպանելու թույլտվություն։ Կարող եք դա թույլատրել Android-ի հավելվածի կարգավորումներում։</string>
 </resources>

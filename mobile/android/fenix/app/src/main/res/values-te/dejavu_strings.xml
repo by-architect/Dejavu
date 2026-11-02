@@ -543,4 +543,10 @@
     <string name="dejavu_settings_tips">చిట్కాలు</string>
     <string name="dejavu_settings_tips_summary">కొత్త ట్యాబు బటన్‌ను నొక్కిపట్టుకోవడం వంటి దాగి ఉన్న సైగల గురించి చిట్కాలను చూపించు</string>
     <string name="dejavu_new">కొత్తది</string>
+    <string name="dejavu_menu_screenshot">పూర్తి పేజీ తెరపట్టు</string>
+    <string name="dejavu_screenshot_saving">తెరపట్టును భద్రపరుస్తోంది…</string>
+    <string name="dejavu_screenshot_saved">తెరపట్టు %1$sలో భద్రపరచబడింది</string>
+    <string name="dejavu_screenshot_failed">ఈ పేజీ తెరపట్టును తీయలేకపోయింది. మళ్లీ ప్రయత్నించండి.</string>
+    <string name="dejavu_screenshot_save_failed">తెరపట్టును భద్రపరచలేకపోయింది.</string>
+    <string name="dejavu_screenshot_permission">తెరపట్లను భద్రపరచడానికి ఫైళ్ళను నిల్వ చేసే అనుమతి కావాలి. మీరు దానిని Android అనువర్తన అమరికల్లో అనుమతించవచ్చు.</string>
 </resources>

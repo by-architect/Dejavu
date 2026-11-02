@@ -543,4 +543,10 @@
     <string name="dejavu_settings_tips">Taq na\'oj</string>
     <string name="dejavu_settings_tips_summary">Kek\'ut taq na\'oj chi kij ewan taq b\'anoj paläj, achi\'el nachäp jun ramaj “K\'ak\'a\' ruwi\'”</string>
     <string name="dejavu_new">K\'ak\'a\'</string>
+    <string name="dejavu_menu_screenshot">Tichap ronojel ri ruxaq</string>
+    <string name="dejavu_screenshot_saving">Niyak ri chapoj ruwäch…</string>
+    <string name="dejavu_screenshot_saved">Xyak ri chapoj ruwäch pa %1$s</string>
+    <string name="dejavu_screenshot_failed">Man xchap ta ruwäch re ruxaq re\'. Tatojtob\'ej chik.</string>
+    <string name="dejavu_screenshot_save_failed">Man xyak ta ri chapoj ruwäch.</string>
+    <string name="dejavu_screenshot_permission">Richin yeyak taq chapoj ruwäch, k\'o chi niya\' q\'ij richin yeyak taq yakb\'äl. Yatikïr naya\' q\'ij pa runuk\'ulem ri chokoy pa Android.</string>
 </resources>

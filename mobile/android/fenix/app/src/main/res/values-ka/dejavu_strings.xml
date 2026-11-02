@@ -543,4 +543,10 @@
     <string name="dejavu_settings_tips">რჩევები</string>
     <string name="dejavu_settings_tips_summary">რჩევების ჩვენება ფარული ჟესტების შესახებ, მაგალითად „ახალი ჩანართი“ ღილაკზე ხანგრძლივად შეხება</string>
     <string name="dejavu_new">სიახლე</string>
+    <string name="dejavu_menu_screenshot">მთლიანი გვერდის სურათი</string>
+    <string name="dejavu_screenshot_saving">ეკრანის სურათი ინახება…</string>
+    <string name="dejavu_screenshot_saved">ეკრანის სურათი შენახულია საქაღალდეში %1$s</string>
+    <string name="dejavu_screenshot_failed">ამ გვერდის გადაღება ვერ მოხერხდა. სცადეთ ხელახლა.</string>
+    <string name="dejavu_screenshot_save_failed">ეკრანის სურათის შენახვა ვერ მოხერხდა.</string>
+    <string name="dejavu_screenshot_permission">ეკრანის სურათების შესანახად საჭიროა ფაილების შენახვის ნებართვა. მისი დაშვება შეგიძლიათ Android-ის აპის პარამეტრებში.</string>
 </resources>

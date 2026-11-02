@@ -543,4 +543,10 @@
     <string name="dejavu_settings_tips">ಸಲಹೆಗಳು</string>
     <string name="dejavu_settings_tips_summary">“ಹೊಸ ಟ್ಯಾಬ್” ಅನ್ನು ಒತ್ತಿ ಹಿಡಿಯುವಂತಹ ಮರೆಯಾದ ಸನ್ನೆಗಳ ಬಗ್ಗೆ ಸಲಹೆಗಳನ್ನು ತೋರಿಸು</string>
     <string name="dejavu_new">ಹೊಸದು</string>
+    <string name="dejavu_menu_screenshot">ಪೂರ್ಣ ಪುಟದ ಸ್ಕ್ರೀನ್‌ಶಾಟ್</string>
+    <string name="dejavu_screenshot_saving">ಸ್ಕ್ರೀನ್‌ಶಾಟ್ ಅನ್ನು ಉಳಿಸಲಾಗುತ್ತಿದೆ…</string>
+    <string name="dejavu_screenshot_saved">ಸ್ಕ್ರೀನ್‌ಶಾಟ್ ಅನ್ನು %1$s ಫೋಲ್ಡರ್‌ನಲ್ಲಿ ಉಳಿಸಲಾಗಿದೆ</string>
+    <string name="dejavu_screenshot_failed">ಈ ಪುಟದ ಸ್ಕ್ರೀನ್‌ಶಾಟ್ ತೆಗೆಯಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ. ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ.</string>
+    <string name="dejavu_screenshot_save_failed">ಸ್ಕ್ರೀನ್‌ಶಾಟ್ ಅನ್ನು ಉಳಿಸಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ.</string>
+    <string name="dejavu_screenshot_permission">ಸ್ಕ್ರೀನ್‌ಶಾಟ್‌ಗಳನ್ನು ಉಳಿಸಲು ಫೈಲ್‌ಗಳನ್ನು ಸಂಗ್ರಹಿಸುವ ಅನುಮತಿ ಬೇಕು. ನೀವು ಅದನ್ನು Android ನ ಅನ್ವಯಿಕ ಸಿದ್ಧತೆಗಳಲ್ಲಿ ಅನುಮತಿಸಬಹುದು.</string>
 </resources>

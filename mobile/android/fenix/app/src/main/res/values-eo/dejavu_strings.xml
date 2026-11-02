@@ -543,4 +543,10 @@
     <string name="dejavu_settings_tips">Konsiloj</string>
     <string name="dejavu_settings_tips_summary">Montri konsilojn pri kaŝitaj gestoj, ekzemple teni “Nova langeto”</string>
     <string name="dejavu_new">Nova</string>
+    <string name="dejavu_menu_screenshot">Ekrankopio de la tuta paĝo</string>
+    <string name="dejavu_screenshot_saving">Konservante ekrankopion…</string>
+    <string name="dejavu_screenshot_saved">Ekrankopio konservita en %1$s</string>
+    <string name="dejavu_screenshot_failed">Ne eblis fari ekrankopion de ĉi tiu paĝo. Provu denove.</string>
+    <string name="dejavu_screenshot_save_failed">Ne eblis konservi la ekrankopion.</string>
+    <string name="dejavu_screenshot_permission">Por konservi ekrankopiojn necesas permeso por konservi dosierojn. Vi povas permesi tion en la agordoj de la programo en Android.</string>
 </resources>

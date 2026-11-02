@@ -535,4 +535,10 @@
     <string name="dejavu_settings_tips">Tips</string>
     <string name="dejavu_settings_tips_summary">Pintonkeun tips ngeunaan réngkak nu nyumput, saperti nahan “Tab Anyar”</string>
     <string name="dejavu_new">Anyar</string>
+    <string name="dejavu_menu_screenshot">Téwakan layar sakabéh kaca</string>
+    <string name="dejavu_screenshot_saving">Nyimpen téwakan layar…</string>
+    <string name="dejavu_screenshot_saved">Téwakan layar kasimpen di %1$s</string>
+    <string name="dejavu_screenshot_failed">Teu bisa nyokot téwakan layar kaca ieu. Pecakan deui.</string>
+    <string name="dejavu_screenshot_save_failed">Teu bisa nyimpen téwakan layar.</string>
+    <string name="dejavu_screenshot_permission">Nyimpen téwakan layar butuh idin pikeun nyimpen berkas. Anjeun bisa méré idin éta dina setélan aplikasi di Android.</string>
 </resources>

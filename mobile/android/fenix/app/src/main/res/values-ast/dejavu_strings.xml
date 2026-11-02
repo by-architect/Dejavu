@@ -543,4 +543,10 @@
     <string name="dejavu_settings_tips">Conseyos</string>
     <string name="dejavu_settings_tips_summary">Amosar conseyos sobre xestos anubríos, como caltener primíu «Llingüeta nueva»</string>
     <string name="dejavu_new">Nuevu</string>
+    <string name="dejavu_menu_screenshot">Captura de la páxina completa</string>
+    <string name="dejavu_screenshot_saving">Guardando la captura de pantalla…</string>
+    <string name="dejavu_screenshot_saved">La captura de pantalla guardóse en %1$s</string>
+    <string name="dejavu_screenshot_failed">Nun se pudo facer una captura de pantalla d\'esta páxina. Volvi tentalo.</string>
+    <string name="dejavu_screenshot_save_failed">Nun se pudo guardar la captura de pantalla.</string>
+    <string name="dejavu_screenshot_permission">Pa guardar captures de pantalla precísase\'l permisu p\'almacenar ficheros. Pues permitilo na configuración de l\'aplicación en Android.</string>
 </resources>

@@ -551,4 +551,10 @@
     <string name="dejavu_settings_tips">Dicas</string>
     <string name="dejavu_settings_tips_summary">Mostrar dicas sobre gestos ocultos, como manter “Nova aba” pressionado</string>
     <string name="dejavu_new">Novidade</string>
+    <string name="dejavu_menu_screenshot">Captura da página inteira</string>
+    <string name="dejavu_screenshot_saving">Salvando captura de tela…</string>
+    <string name="dejavu_screenshot_saved">Captura de tela salva em %1$s</string>
+    <string name="dejavu_screenshot_failed">Não foi possível fazer uma captura de tela desta página. Tente novamente.</string>
+    <string name="dejavu_screenshot_save_failed">Não foi possível salvar a captura de tela.</string>
+    <string name="dejavu_screenshot_permission">Salvar capturas de tela requer permissão para armazenar arquivos. Você pode permitir isso nas configurações do aplicativo no Android.</string>
 </resources>

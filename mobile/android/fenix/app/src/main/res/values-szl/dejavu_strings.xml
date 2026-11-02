@@ -559,4 +559,10 @@
     <string name="dejavu_settings_tips">Porady</string>
     <string name="dejavu_settings_tips_summary">Pokazuj porady ô skrytych gestach, jak przitrzimanie „Nowo karta”</string>
     <string name="dejavu_new">Nowe</string>
+    <string name="dejavu_menu_screenshot">Chyt ekranu cołkij strōny</string>
+    <string name="dejavu_screenshot_saving">Zapisowanie chytu ekranu…</string>
+    <string name="dejavu_screenshot_saved">Zapisano chyt ekranu do %1$s</string>
+    <string name="dejavu_screenshot_failed">Niy szło zrobić chytu ekranu tyj strōny. Sprōbuj jeszcze roz.</string>
+    <string name="dejavu_screenshot_save_failed">Niy szło zapisać chytu ekranu.</string>
+    <string name="dejavu_screenshot_permission">Do zapisowanio chytōw ekranu trza przizwolynio na spamiyntowanie zbiorōw. Możesz na to przizwolić we sztalōnkach aplikacyje w Androidzie.</string>
 </resources>

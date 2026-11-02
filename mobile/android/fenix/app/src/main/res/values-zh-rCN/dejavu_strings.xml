@@ -535,4 +535,10 @@
     <string name="dejavu_settings_tips">提示</string>
     <string name="dejavu_settings_tips_summary">显示有关隐藏手势的提示，例如长按“新建标签页”</string>
     <string name="dejavu_new">新</string>
+    <string name="dejavu_menu_screenshot">整页截屏</string>
+    <string name="dejavu_screenshot_saving">正在保存截屏…</string>
+    <string name="dejavu_screenshot_saved">截屏已保存到 %1$s</string>
+    <string name="dejavu_screenshot_failed">无法对此页面截屏，请重试。</string>
+    <string name="dejavu_screenshot_save_failed">无法保存截屏。</string>
+    <string name="dejavu_screenshot_permission">保存截屏需要存储文件的权限。您可以在 Android 的应用设置中开启此权限。</string>
 </resources>

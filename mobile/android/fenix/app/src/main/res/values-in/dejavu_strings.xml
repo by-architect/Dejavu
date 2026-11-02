@@ -535,4 +535,10 @@
     <string name="dejavu_settings_tips">Tips</string>
     <string name="dejavu_settings_tips_summary">Tampilkan tips tentang gestur tersembunyi, seperti menahan “Tab baru”</string>
     <string name="dejavu_new">Baru</string>
+    <string name="dejavu_menu_screenshot">Tangkapan layar laman penuh</string>
+    <string name="dejavu_screenshot_saving">Menyimpan tangkapan layar…</string>
+    <string name="dejavu_screenshot_saved">Tangkapan layar disimpan di %1$s</string>
+    <string name="dejavu_screenshot_failed">Tidak dapat mengambil tangkapan layar laman ini. Coba lagi.</string>
+    <string name="dejavu_screenshot_save_failed">Tidak dapat menyimpan tangkapan layar.</string>
+    <string name="dejavu_screenshot_permission">Menyimpan tangkapan layar memerlukan izin untuk menyimpan berkas. Anda dapat mengizinkannya di pengaturan aplikasi Android.</string>
 </resources>

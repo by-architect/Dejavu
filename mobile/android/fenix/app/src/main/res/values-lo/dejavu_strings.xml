@@ -535,4 +535,10 @@
     <string name="dejavu_settings_tips">ຄຳແນະນຳ</string>
     <string name="dejavu_settings_tips_summary">ສະແດງຄຳແນະນຳກ່ຽວກັບທ່າທາງທີ່ເຊື່ອງໄວ້ ເຊັ່ນ: ການກົດ “ແທັບໃຫມ່” ຄ້າງໄວ້</string>
     <string name="dejavu_new">ໃຫມ່</string>
+    <string name="dejavu_menu_screenshot">ຖ່າຍຫນ້າຈໍແບບເຕັມຫນ້າ</string>
+    <string name="dejavu_screenshot_saving">ກຳລັງບັນທຶກພາບຫນ້າຈໍ…</string>
+    <string name="dejavu_screenshot_saved">ບັນທຶກພາບຫນ້າຈໍໄວ້ໃນໂຟນເດີ %1$s ແລ້ວ</string>
+    <string name="dejavu_screenshot_failed">ບໍ່ສາມາດຖ່າຍຫນ້າຈໍຂອງຫນ້ານີ້ໄດ້. ລອງໃຫມ່ອີກຄັ້ງ.</string>
+    <string name="dejavu_screenshot_save_failed">ບໍ່ສາມາດບັນທຶກພາບຫນ້າຈໍໄດ້.</string>
+    <string name="dejavu_screenshot_permission">ການບັນທຶກພາບຫນ້າຈໍຕ້ອງມີສິດອະນຸຍາດໃນການເກັບໄຟລ໌. ທ່ານສາມາດອະນຸຍາດໄດ້ໃນການຕັ້ງຄ່າແອັບຂອງ Android.</string>
 </resources>

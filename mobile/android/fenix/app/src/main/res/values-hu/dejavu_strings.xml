@@ -543,4 +543,10 @@
     <string name="dejavu_settings_tips">Tippek</string>
     <string name="dejavu_settings_tips_summary">Tippek megjelenítése a rejtett kézmozdulatokról, például az Új lap gomb hosszú megnyomásáról</string>
     <string name="dejavu_new">Új</string>
+    <string name="dejavu_menu_screenshot">Teljes oldalas képernyőkép</string>
+    <string name="dejavu_screenshot_saving">Képernyőkép mentése…</string>
+    <string name="dejavu_screenshot_saved">Képernyőkép mentve ide: %1$s</string>
+    <string name="dejavu_screenshot_failed">Nem sikerült képernyőképet készíteni erről az oldalról. Próbálja újra.</string>
+    <string name="dejavu_screenshot_save_failed">Nem sikerült a képernyőkép mentése.</string>
+    <string name="dejavu_screenshot_permission">A képernyőképek mentéséhez fájltárolási engedély szükséges. Az Android alkalmazásbeállításaiban engedélyezheti.</string>
 </resources>

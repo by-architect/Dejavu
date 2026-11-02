@@ -543,4 +543,10 @@
     <string name="dejavu_settings_tips">Məsləhətlər</string>
     <string name="dejavu_settings_tips_summary">Gizli jestlər haqqında məsləhətlər göstər, məsələn, Yeni vərəq düyməsini basıb saxlamaq</string>
     <string name="dejavu_new">Yeni</string>
+    <string name="dejavu_menu_screenshot">Tam səhifə ekran görüntüsü</string>
+    <string name="dejavu_screenshot_saving">Ekran görüntüsü saxlanılır…</string>
+    <string name="dejavu_screenshot_saved">Ekran görüntüsü %1$s qovluğuna saxlanıldı</string>
+    <string name="dejavu_screenshot_failed">Bu səhifənin ekran görüntüsünü çəkmək mümkün olmadı. Yenidən cəhd edin.</string>
+    <string name="dejavu_screenshot_save_failed">Ekran görüntüsünü saxlamaq mümkün olmadı.</string>
+    <string name="dejavu_screenshot_permission">Ekran görüntülərini saxlamaq üçün faylları saxlama icazəsi lazımdır. Buna Android-in tətbiq tənzimləmələrində icazə verə bilərsiniz.</string>
 </resources>

@@ -543,4 +543,10 @@
     <string name="dejavu_settings_tips">Cussìgios</string>
     <string name="dejavu_settings_tips_summary">Ammustra cussìgios subra de is gestos cuados, comente mantènnere pretzionadu “Ischeda noa”</string>
     <string name="dejavu_new">Nou</string>
+    <string name="dejavu_menu_screenshot">Catura de sa pàgina intrea</string>
+    <string name="dejavu_screenshot_saving">Sarvende sa catura de ischermu…</string>
+    <string name="dejavu_screenshot_saved">Catura de ischermu sarvada in %1$s</string>
+    <string name="dejavu_screenshot_failed">No est istadu possìbile fàghere una catura de ischermu de custa pàgina. Torra a proare.</string>
+    <string name="dejavu_screenshot_save_failed">No est istadu possìbile sarvare sa catura de ischermu.</string>
+    <string name="dejavu_screenshot_permission">Pro sarvare is caturas de ischermu b\'at bisòngiu de su permissu de allogare archìvios. Ddu podes permìtere in sa cunfiguratzione de s\'aplicatzione in Android.</string>
 </resources>

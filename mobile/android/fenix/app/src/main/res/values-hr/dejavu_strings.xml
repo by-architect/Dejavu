@@ -551,4 +551,10 @@
     <string name="dejavu_settings_tips">Savjeti</string>
     <string name="dejavu_settings_tips_summary">Prikaži savjete o skrivenim gestama, poput zadržavanja „Nova kartica“</string>
     <string name="dejavu_new">Novo</string>
+    <string name="dejavu_menu_screenshot">Snimka ekrana cijele stranice</string>
+    <string name="dejavu_screenshot_saving">Spremanje snimke ekrana…</string>
+    <string name="dejavu_screenshot_saved">Snimka ekrana spremljena u mapu %1$s</string>
+    <string name="dejavu_screenshot_failed">Nije moguće napraviti snimku ekrana ove stranice. Pokušajte ponovo.</string>
+    <string name="dejavu_screenshot_save_failed">Nije moguće spremiti snimku ekrana.</string>
+    <string name="dejavu_screenshot_permission">Za spremanje snimaka ekrana potrebna je dozvola za pohranu datoteka. To možete dopustiti u postavkama aplikacije u Androidu.</string>
 </resources>

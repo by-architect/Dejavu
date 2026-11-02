@@ -543,4 +543,10 @@
     <string name="dejavu_settings_tips">Киңәшләр</string>
     <string name="dejavu_settings_tips_summary">Яшерен ишарәләр турында киңәшләр күрсәтү, мәсәлән, Яңа таб төймәсенә басып тору</string>
     <string name="dejavu_new">Яңа</string>
+    <string name="dejavu_menu_screenshot">Тулы бит скриншоты</string>
+    <string name="dejavu_screenshot_saving">Скриншот саклана…</string>
+    <string name="dejavu_screenshot_saved">Скриншот %1$s папкасына сакланды</string>
+    <string name="dejavu_screenshot_failed">Бу битнең скриншотын алып булмады. Яңадан тырышып карагыз.</string>
+    <string name="dejavu_screenshot_save_failed">Скриншотны саклап булмады.</string>
+    <string name="dejavu_screenshot_permission">Скриншотларны саклау өчен файлларны саклауга рөхсәт кирәк. Моны Android-тагы кушымта көйләүләрендә рөхсәт итә аласыз.</string>
 </resources>

@@ -543,4 +543,10 @@
     <string name="dejavu_settings_tips">सुझावहरु</string>
     <string name="dejavu_settings_tips_summary">“नयाँ ट्याब” थिचिराख्ने जस्ता लुकेका इशाराहरुबारे सुझावहरु देखाउनुहोस्</string>
     <string name="dejavu_new">नयाँ</string>
+    <string name="dejavu_menu_screenshot">पूरा पृष्ठको स्क्रिनसट</string>
+    <string name="dejavu_screenshot_saving">स्क्रिनसट सुरक्षित गर्दै…</string>
+    <string name="dejavu_screenshot_saved">स्क्रिनसट %1$s मा सुरक्षित गरियो</string>
+    <string name="dejavu_screenshot_failed">यो पृष्ठको स्क्रिनसट लिन सकिएन। फेरि प्रयास गर्नुहोस्।</string>
+    <string name="dejavu_screenshot_save_failed">स्क्रिनसट सुरक्षित गर्न सकिएन।</string>
+    <string name="dejavu_screenshot_permission">स्क्रिनसटहरू सुरक्षित गर्न फाइलहरू भण्डारण गर्ने अनुमति चाहिन्छ। तपाईं यो अनुमति Android को एप सेटिङहरूमा दिन सक्नुहुन्छ।</string>
 </resources>

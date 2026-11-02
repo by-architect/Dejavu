@@ -338,6 +338,18 @@
     <!-- Message when the page could not be saved as an HTML file, for example because it is still loading. -->
     <string name="dejavu_save_page_failed">Couldn’t save this page. Try again.</string>
     <string name="dejavu_menu_save_as_pdf">Save as PDF</string>
+    <!-- Saves the whole page, from top to bottom, as one picture in Pictures/Dejavu. -->
+    <string name="dejavu_menu_screenshot">Full page screenshot</string>
+    <!-- Short message while the whole page is being saved as a picture. -->
+    <string name="dejavu_screenshot_saving">Saving screenshot…</string>
+    <!-- Message once the picture of the whole page is saved, with a button that opens it. %1$s is the folder it went to, Pictures/Dejavu. -->
+    <string name="dejavu_screenshot_saved">Screenshot saved to %1$s</string>
+    <!-- Message when the page could not be pictured, for example because it is still loading. -->
+    <string name="dejavu_screenshot_failed">Couldn’t take a screenshot of this page. Try again.</string>
+    <!-- Message when the picture of the page was made but could not be written to the phone's storage. -->
+    <string name="dejavu_screenshot_save_failed">Couldn’t save the screenshot.</string>
+    <!-- Message on Android 9 and older when the user did not let Dejavu store files, which saving a picture into Pictures needs there. -->
+    <string name="dejavu_screenshot_permission">Saving screenshots needs permission to store files. You can allow it in Android’s app settings.</string>
     <string name="dejavu_menu_print">Print</string>
     <string name="dejavu_menu_open_in_app">Open in app</string>
     <string name="dejavu_menu_reset_pinned_url">Reset to pinned URL</string>

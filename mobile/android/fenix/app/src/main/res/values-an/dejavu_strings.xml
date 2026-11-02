@@ -543,4 +543,10 @@
     <string name="dejavu_settings_tips">Consellos</string>
     <string name="dejavu_settings_tips_summary">Amostrar consellos sobre cenyos amagaus, como mantener pretau «Nueva pestanya»</string>
     <string name="dejavu_new">Nuevo</string>
+    <string name="dejavu_menu_screenshot">Captura d\'a pachina completa</string>
+    <string name="dejavu_screenshot_saving">Alzando a captura de pantalla…</string>
+    <string name="dejavu_screenshot_saved">Captura de pantalla alzada en %1$s</string>
+    <string name="dejavu_screenshot_failed">No s\'ha puesto fer una captura de pantalla d\'esta pachina. Torna a intentar-lo.</string>
+    <string name="dejavu_screenshot_save_failed">No s\'ha puesto alzar a captura de pantalla.</string>
+    <string name="dejavu_screenshot_permission">Ta alzar capturas de pantalla se precisa permiso ta alzar fichers. Puetz permitir-lo en os achustes d\'a aplicación en Android.</string>
 </resources>

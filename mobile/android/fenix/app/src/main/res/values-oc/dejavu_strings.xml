@@ -543,4 +543,10 @@
     <string name="dejavu_settings_tips">Conselhs</string>
     <string name="dejavu_settings_tips_summary">Afichar de conselhs suls gèstes amagats, coma téner quichat Onglet novèl</string>
     <string name="dejavu_new">Novèl</string>
+    <string name="dejavu_menu_screenshot">Captura de la pagina entièra</string>
+    <string name="dejavu_screenshot_saving">Enregistrament de la captura d’ecran…</string>
+    <string name="dejavu_screenshot_saved">Captura d’ecran enregistrada dins %1$s</string>
+    <string name="dejavu_screenshot_failed">Impossible de far una captura d’ecran d’aquesta pagina. Tornatz ensajar.</string>
+    <string name="dejavu_screenshot_save_failed">Impossible d’enregistrar la captura d’ecran.</string>
+    <string name="dejavu_screenshot_permission">Per enregistrar de capturas d’ecran cal l’autorizacion d’emmagazinar de fichièrs. Podètz donar aquesta autorizacion dins los paramètres d’aplicacion d’Android.</string>
 </resources>

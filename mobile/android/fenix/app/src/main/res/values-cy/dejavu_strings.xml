@@ -575,4 +575,10 @@
     <string name="dejavu_settings_tips">Awgrymiadau</string>
     <string name="dejavu_settings_tips_summary">Dangos awgrymiadau am ystumiau cudd, fel dal Tab newydd</string>
     <string name="dejavu_new">Newydd</string>
+    <string name="dejavu_menu_screenshot">Llun sgrin tudalen lawn</string>
+    <string name="dejavu_screenshot_saving">Yn cadw’r llun sgrin…</string>
+    <string name="dejavu_screenshot_saved">Cadwyd y llun sgrin i %1$s</string>
+    <string name="dejavu_screenshot_failed">Methu tynnu llun sgrin o’r dudalen hon. Ceisiwch eto.</string>
+    <string name="dejavu_screenshot_save_failed">Methu cadw’r llun sgrin.</string>
+    <string name="dejavu_screenshot_permission">I gadw lluniau sgrin, mae angen caniatâd i storio ffeiliau. Gallwch ei ganiatáu yng ngosodiadau’r ap yn Android.</string>
 </resources>

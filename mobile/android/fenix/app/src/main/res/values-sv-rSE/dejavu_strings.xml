@@ -543,4 +543,10 @@
     <string name="dejavu_settings_tips">Tips</string>
     <string name="dejavu_settings_tips_summary">Visa tips om dolda gester, som att hålla ned Ny flik</string>
     <string name="dejavu_new">Ny</string>
+    <string name="dejavu_menu_screenshot">Skärmdump av hela sidan</string>
+    <string name="dejavu_screenshot_saving">Sparar skärmdumpen …</string>
+    <string name="dejavu_screenshot_saved">Skärmdump sparad i %1$s</string>
+    <string name="dejavu_screenshot_failed">Det gick inte att ta en skärmdump av den här sidan. Försök igen.</string>
+    <string name="dejavu_screenshot_save_failed">Det gick inte att spara skärmdumpen.</string>
+    <string name="dejavu_screenshot_permission">För att spara skärmdumpar behövs behörighet att lagra filer. Du kan tillåta det i Androids appinställningar.</string>
 </resources>

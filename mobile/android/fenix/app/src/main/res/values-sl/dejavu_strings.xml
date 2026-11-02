@@ -559,4 +559,10 @@
     <string name="dejavu_settings_tips">Nasveti</string>
     <string name="dejavu_settings_tips_summary">Prikaži nasvete o skritih potezah, kot je pridržanje gumba „Nov zavihek“</string>
     <string name="dejavu_new">Novo</string>
+    <string name="dejavu_menu_screenshot">Posnetek cele strani</string>
+    <string name="dejavu_screenshot_saving">Shranjevanje posnetka zaslona …</string>
+    <string name="dejavu_screenshot_saved">Posnetek zaslona shranjen v mapo %1$s</string>
+    <string name="dejavu_screenshot_failed">Posnetka zaslona te strani ni bilo mogoče zajeti. Poskusite znova.</string>
+    <string name="dejavu_screenshot_save_failed">Posnetka zaslona ni bilo mogoče shraniti.</string>
+    <string name="dejavu_screenshot_permission">Za shranjevanje posnetkov zaslona je potrebno dovoljenje za shranjevanje datotek. Omogočite ga lahko v nastavitvah aplikacije v sistemu Android.</string>
 </resources>

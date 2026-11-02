@@ -543,4 +543,10 @@
     <string name="dejavu_settings_tips">Ndihmëza</string>
     <string name="dejavu_settings_tips_summary">Shfaq ndihmëza mbi gjeste të fshehura, si mbajtja shtypur e “Skedë e re”</string>
     <string name="dejavu_new">E re</string>
+    <string name="dejavu_menu_screenshot">Foto ekrani e krejt faqes</string>
+    <string name="dejavu_screenshot_saving">Po ruhet foto ekrani…</string>
+    <string name="dejavu_screenshot_saved">Foto ekrani u ruajt te %1$s</string>
+    <string name="dejavu_screenshot_failed">S\'u bë dot foto ekrani e kësaj faqeje. Riprovoni.</string>
+    <string name="dejavu_screenshot_save_failed">S\'u ruajt dot foto ekrani.</string>
+    <string name="dejavu_screenshot_permission">Ruajtja e fotove të ekranit lyp leje për depozitim kartelash. Mund ta lejoni te rregullimet e aplikacionit në Android.</string>
 </resources>

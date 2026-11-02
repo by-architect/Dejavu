@@ -535,4 +535,10 @@
     <string name="dejavu_settings_tips">Tips</string>
     <string name="dejavu_settings_tips_summary">Edengang tips indik gestur ane kaengkebang, minakadi nekek “Tab Anyar”</string>
     <string name="dejavu_new">Anyar</string>
+    <string name="dejavu_menu_screenshot">Tangkapan layar halaman jangkep</string>
+    <string name="dejavu_screenshot_saving">Nyimpen tangkapan layar…</string>
+    <string name="dejavu_screenshot_saved">Tangkapan layar kasimpen ka %1$s</string>
+    <string name="dejavu_screenshot_failed">Tangkapan layar halaman ené tusing nyidang kaambil. Coba buin.</string>
+    <string name="dejavu_screenshot_save_failed">Tangkapan layar tusing nyidang kasimpen.</string>
+    <string name="dejavu_screenshot_permission">Nyimpen tangkapan layar merluang idin anggon nyimpen file. Ragane nyidang ngalugrahin di setelan aplikasi Android.</string>
 </resources>

@@ -543,4 +543,10 @@
     <string name="dejavu_settings_tips">مصلحت‌لر</string>
     <string name="dejavu_settings_tips_summary">گیزلی ایشاره‌لر حاقیندا مصلحت‌لر گؤستر، مثلاً یئنی تاغ دوگمه‌سینی باسیب ساخلاماق</string>
     <string name="dejavu_new">یئنی</string>
+    <string name="dejavu_menu_screenshot">تام صفحه اسکرین شاتی</string>
+    <string name="dejavu_screenshot_saving">اسکرین شات ساخلانیر…</string>
+    <string name="dejavu_screenshot_saved">اسکرین شات %1$s پوشه‌سینه ساخلانیلدی</string>
+    <string name="dejavu_screenshot_failed">بو صفحه‌نین اسکرین شاتی آلینا بیلمه‌دی. یئنیدن جهد ادین.</string>
+    <string name="dejavu_screenshot_save_failed">اسکرین شات ساخلانا بیلمه‌دی.</string>
+    <string name="dejavu_screenshot_permission">اسکرین شات‌لاری ساخلاماق اوچون فایل‌لاری ساخلاما ایجازه‌سی لازیمدیر. بونا Android-ین اپلیکیشن تنظیم‌لرینده ایجازه وئره بیلرسینیز.</string>
 </resources>

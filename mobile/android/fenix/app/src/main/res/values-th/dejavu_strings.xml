@@ -535,4 +535,10 @@
     <string name="dejavu_settings_tips">เคล็ดลับ</string>
     <string name="dejavu_settings_tips_summary">แสดงเคล็ดลับเกี่ยวกับท่าทางที่ซ่อนอยู่ เช่น การกด “แท็บใหม่” ค้างไว้</string>
     <string name="dejavu_new">ใหม่</string>
+    <string name="dejavu_menu_screenshot">ภาพหน้าจอทั้งหน้า</string>
+    <string name="dejavu_screenshot_saving">กำลังบันทึกภาพหน้าจอ…</string>
+    <string name="dejavu_screenshot_saved">บันทึกภาพหน้าจอลงใน %1$s แล้ว</string>
+    <string name="dejavu_screenshot_failed">ไม่สามารถจับภาพหน้าจอของหน้านี้ได้ โปรดลองอีกครั้ง</string>
+    <string name="dejavu_screenshot_save_failed">ไม่สามารถบันทึกภาพหน้าจอได้</string>
+    <string name="dejavu_screenshot_permission">การบันทึกภาพหน้าจอต้องใช้สิทธิอนุญาตในการจัดเก็บไฟล์ คุณสามารถอนุญาตได้ในการตั้งค่าแอปของ Android</string>
 </resources>

@@ -535,4 +535,10 @@
     <string name="dejavu_settings_tips">ヒント</string>
     <string name="dejavu_settings_tips_summary">「新しいタブ」の長押しなど、隠れたジェスチャーのヒントを表示します</string>
     <string name="dejavu_new">新機能</string>
+    <string name="dejavu_menu_screenshot">ページ全体のスクリーンショット</string>
+    <string name="dejavu_screenshot_saving">スクリーンショットを保存中…</string>
+    <string name="dejavu_screenshot_saved">スクリーンショットを %1$s に保存しました</string>
+    <string name="dejavu_screenshot_failed">このページのスクリーンショットを撮影できませんでした。もう一度お試しください。</string>
+    <string name="dejavu_screenshot_save_failed">スクリーンショットを保存できませんでした。</string>
+    <string name="dejavu_screenshot_permission">スクリーンショットを保存するには、ファイルを保存する権限が必要です。Android のアプリの設定で許可できます。</string>
 </resources>

@@ -543,4 +543,10 @@
     <string name="dejavu_settings_tips">टिपा</string>
     <string name="dejavu_settings_tips_summary">“नवीन टॅब” दाबून धरण्यासारख्या लपलेल्या जेश्चरविषयी टिपा दाखवा</string>
     <string name="dejavu_new">नवीन</string>
+    <string name="dejavu_menu_screenshot">पूर्ण पृष्ठाचा स्क्रीनशॉट</string>
+    <string name="dejavu_screenshot_saving">स्क्रीनशॉट सेव्ह करत आहे…</string>
+    <string name="dejavu_screenshot_saved">स्क्रीनशॉट %1$s फोल्डरमध्ये सेव्ह केला</string>
+    <string name="dejavu_screenshot_failed">या पृष्ठाचा स्क्रीनशॉट घेता आला नाही. पुन्हा प्रयत्न करा.</string>
+    <string name="dejavu_screenshot_save_failed">स्क्रीनशॉट सेव्ह करता आला नाही.</string>
+    <string name="dejavu_screenshot_permission">स्क्रीनशॉट सेव्ह करण्यासाठी फाइल साठवण्याची परवानगी लागते. तुम्ही ती Android च्या अ‍ॅप सेटिंगमध्ये देऊ शकता.</string>
 </resources>

@@ -567,4 +567,10 @@
     <string name="dejavu_settings_tips">Alioù</string>
     <string name="dejavu_settings_tips_summary">Diskouez alioù diwar-benn ar jestroù kuzh, evel derc’hel war “Ivinell nevez”</string>
     <string name="dejavu_new">Nevez</string>
+    <string name="dejavu_menu_screenshot">Tapadenn-skramm ar bajenn a-bezh</string>
+    <string name="dejavu_screenshot_saving">Oc’h enrollañ an dapadenn-skramm…</string>
+    <string name="dejavu_screenshot_saved">Tapadenn-skramm enrollet e %1$s</string>
+    <string name="dejavu_screenshot_failed">N’haller ket ober un dapadenn-skramm eus ar bajenn-mañ. Klaskit en-dro.</string>
+    <string name="dejavu_screenshot_save_failed">N’haller ket enrollañ an dapadenn-skramm.</string>
+    <string name="dejavu_screenshot_permission">Ret eo kaout an aotre da enrollañ restroù evit enrollañ tapadennoù-skramm. Gallout a rit aotren an dra-se en arventennoù an arload en Android.</string>
 </resources>

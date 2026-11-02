@@ -576,4 +576,10 @@
     <string name="dejavu_settings_tips">ટિપ્સ</string>
     <string name="dejavu_settings_tips_summary">છુપાયેલા હાવભાવ વિશે ટિપ્સ બતાવો, જેમ કે “નવી ટૅબ” દબાવી રાખવી</string>
     <string name="dejavu_new">નવું</string>
+    <string name="dejavu_menu_screenshot">પૂર્ણ પૃષ્ઠનો સ્ક્રીનશૉટ</string>
+    <string name="dejavu_screenshot_saving">સ્ક્રીનશૉટ સચવાઈ રહ્યો છે…</string>
+    <string name="dejavu_screenshot_saved">સ્ક્રીનશૉટ %1$s માં સાચવ્યો</string>
+    <string name="dejavu_screenshot_failed">આ પૃષ્ઠનો સ્ક્રીનશૉટ લઈ શકાયો નહીં. ફરી પ્રયાસ કરો.</string>
+    <string name="dejavu_screenshot_save_failed">સ્ક્રીનશૉટ સાચવી શકાયો નહીં.</string>
+    <string name="dejavu_screenshot_permission">સ્ક્રીનશૉટ સાચવવા માટે ફાઇલો સંગ્રહિત કરવાની પરવાનગી જરૂરી છે. તમે Android ની એપ્લિકેશન સેટિંગ્સમાં તેની મંજૂરી આપી શકો છો.</string>
 </resources>

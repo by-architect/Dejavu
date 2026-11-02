@@ -551,4 +551,10 @@
     <string name="dejavu_settings_tips">Padomi</string>
     <string name="dejavu_settings_tips_summary">Rādīt padomus par slēptiem žestiem, piemēram, pogas Jauna cilne turēšanu</string>
     <string name="dejavu_new">Jaunums</string>
+    <string name="dejavu_menu_screenshot">Visas lapas ekrānuzņēmums</string>
+    <string name="dejavu_screenshot_saving">Notiek ekrānuzņēmuma saglabāšana…</string>
+    <string name="dejavu_screenshot_saved">Ekrānuzņēmums saglabāts mapē %1$s</string>
+    <string name="dejavu_screenshot_failed">Neizdevās uzņemt šīs lapas ekrānuzņēmumu. Mēģiniet vēlreiz.</string>
+    <string name="dejavu_screenshot_save_failed">Neizdevās saglabāt ekrānuzņēmumu.</string>
+    <string name="dejavu_screenshot_permission">Lai saglabātu ekrānuzņēmumus, ir nepieciešama atļauja glabāt datnes. To varat atļaut Android lietotnes iestatījumos.</string>
 </resources>

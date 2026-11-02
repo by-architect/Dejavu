@@ -543,4 +543,10 @@
     <string name="dejavu_settings_tips">ඉඟි</string>
     <string name="dejavu_settings_tips_summary">“නව පටිත්ත” තද කර අල්ලාගෙන සිටීම වැනි සැඟවුණු අභින පිළිබඳ ඉඟි පෙන්වන්න</string>
     <string name="dejavu_new">නව</string>
+    <string name="dejavu_menu_screenshot">සම්පූර්ණ පිටුවේ තිරසේයාව</string>
+    <string name="dejavu_screenshot_saving">තිරසේයාව සුරකිමින්…</string>
+    <string name="dejavu_screenshot_saved">තිරසේයාව %1$s හි සුරැකිණි</string>
+    <string name="dejavu_screenshot_failed">මෙම පිටුවේ තිරසේයාවක් ගැනීමට නොහැකි විය. නැවත උත්සාහ කරන්න.</string>
+    <string name="dejavu_screenshot_save_failed">තිරසේයාව සුරැකීමට නොහැකි විය.</string>
+    <string name="dejavu_screenshot_permission">තිරසේයා සුරැකීමට ගොනු ගබඩා කිරීමේ අවසරය අවශ්‍යයි. ඔබට Android හි යෙදුම් සැකසුම් තුළ එයට ඉඩ දිය හැකිය.</string>
 </resources>

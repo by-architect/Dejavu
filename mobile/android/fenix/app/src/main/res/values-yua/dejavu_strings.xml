@@ -543,4 +543,10 @@
     <string name="dejavu_settings_tips">Consejos</string>
     <string name="dejavu_settings_tips_summary">Mostrar consejos sobre gestos ocultos, como mantener presionado Pestaña túumben</string>
     <string name="dejavu_new">Túumben</string>
+    <string name="dejavu_menu_screenshot">Captura de toda la página</string>
+    <string name="dejavu_screenshot_saving">Guardando captura de pantalla…</string>
+    <string name="dejavu_screenshot_saved">Captura de pantalla guardada en %1$s</string>
+    <string name="dejavu_screenshot_failed">No se pudo tomar una captura de pantalla de esta página. Inténtalo de nuevo.</string>
+    <string name="dejavu_screenshot_save_failed">No se pudo guardar la captura de pantalla.</string>
+    <string name="dejavu_screenshot_permission">Para guardar capturas de pantalla se necesita permiso para almacenar archivos. Puedes permitirlo en la configuración de aplicaciones de Android.</string>
 </resources>

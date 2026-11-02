@@ -551,4 +551,10 @@
     <string name="dejavu_settings_tips">Consells</string>
     <string name="dejavu_settings_tips_summary">Mostra consells sobre gestos ocults, com ara mantenir premut «Pestanya nova»</string>
     <string name="dejavu_new">Nou</string>
+    <string name="dejavu_menu_screenshot">Captura de pàgina completa</string>
+    <string name="dejavu_screenshot_saving">S\'està desant la captura de pantalla…</string>
+    <string name="dejavu_screenshot_saved">S\'ha desat la captura de pantalla a %1$s</string>
+    <string name="dejavu_screenshot_failed">No s\'ha pogut fer una captura de pantalla d\'aquesta pàgina. Torneu-ho a provar.</string>
+    <string name="dejavu_screenshot_save_failed">No s\'ha pogut desar la captura de pantalla.</string>
+    <string name="dejavu_screenshot_permission">Per desar captures de pantalla cal permís per emmagatzemar fitxers. Podeu permetre-ho als paràmetres de l\'aplicació a l\'Android.</string>
 </resources>

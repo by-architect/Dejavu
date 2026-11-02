@@ -543,4 +543,10 @@
     <string name="dejavu_settings_tips">Mga tip</string>
     <string name="dejavu_settings_tips_summary">Ipakita ang mga tip parte sa natago nga mga gesture, pareho sang pagpindot sing madugay sa Bag-o nga Tab</string>
     <string name="dejavu_new">Bag-o</string>
+    <string name="dejavu_menu_screenshot">Screenshot sang bug-os nga page</string>
+    <string name="dejavu_screenshot_saving">Ginasave ang screenshot…</string>
+    <string name="dejavu_screenshot_saved">Na-save ang screenshot sa %1$s</string>
+    <string name="dejavu_screenshot_failed">Wala ma-screenshot ini nga page. Tilawi liwat.</string>
+    <string name="dejavu_screenshot_save_failed">Wala ma-save ang screenshot.</string>
+    <string name="dejavu_screenshot_permission">Ang pag-save sang mga screenshot nagakinahanglan sang permiso sa pagtipig sang mga file. Mahimo mo ini tugutan sa mga setting sang app sa Android.</string>
 </resources>

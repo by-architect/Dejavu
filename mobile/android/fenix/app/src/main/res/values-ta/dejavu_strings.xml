@@ -543,4 +543,10 @@
     <string name="dejavu_settings_tips">உதவிக்குறிப்புகள்</string>
     <string name="dejavu_settings_tips_summary">புதிய கீற்று பொத்தானை அழுத்திப் பிடிப்பது போன்ற மறைந்திருக்கும் சைகைகள் பற்றிய உதவிக்குறிப்புகளைக் காட்டு</string>
     <string name="dejavu_new">புதியது</string>
+    <string name="dejavu_menu_screenshot">முழுப் பக்கத் திரைப்பிடிப்பு</string>
+    <string name="dejavu_screenshot_saving">திரைப்பிடிப்பைச் சேமிக்கிறது…</string>
+    <string name="dejavu_screenshot_saved">திரைப்பிடிப்பு %1$s இல் சேமிக்கப்பட்டது</string>
+    <string name="dejavu_screenshot_failed">இந்தப் பக்கத்தின் திரைப்பிடிப்பை எடுக்க முடியவில்லை. மீண்டும் முயற்சிக்கவும்.</string>
+    <string name="dejavu_screenshot_save_failed">திரைப்பிடிப்பைச் சேமிக்க முடியவில்லை.</string>
+    <string name="dejavu_screenshot_permission">திரைப்பிடிப்புகளைச் சேமிக்க, கோப்புகளைச் சேமிக்கும் அனுமதி தேவை. Android-இன் செயலி அமைவுகளில் அதை அனுமதிக்கலாம்.</string>
 </resources>

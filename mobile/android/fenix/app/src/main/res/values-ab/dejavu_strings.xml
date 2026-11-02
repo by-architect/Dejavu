@@ -543,4 +543,10 @@
     <string name="dejavu_settings_tips">Ацхыраарақәа</string>
     <string name="dejavu_settings_tips_summary">Иҵәахыу анапқәа ирызку ацхыраарақәа аарԥшра, иаҳҳәап, «Абларҭа ҿыц» аанкылара</string>
     <string name="dejavu_new">Иҿыцу</string>
+    <string name="dejavu_menu_screenshot">Адаҟьа зегьы аекрантә ҭыхымҭа</string>
+    <string name="dejavu_screenshot_saving">Аекрантә ҭыхымҭа асохранение мҩаԥысуеит…</string>
+    <string name="dejavu_screenshot_saved">Аекрантә ҭыхымҭа иҵәахуп %1$s аҟны</string>
+    <string name="dejavu_screenshot_failed">Ари адаҟьа аекрантә ҭыхымҭа аҟаҵара алымшеит. Даҽазнык шәҽазышәшәа.</string>
+    <string name="dejavu_screenshot_save_failed">Аекрантә ҭыхымҭа асохранение алымшеит.</string>
+    <string name="dejavu_screenshot_permission">Аекрантә ҭыхымҭа асохранение азы афаилқәа рыҵәахра азин аҭахуп. Азин аҭара ауеит Android апрограмма архиарақәа рҟны.</string>
 </resources>

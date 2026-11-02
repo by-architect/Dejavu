@@ -543,4 +543,10 @@
     <string name="dejavu_settings_tips">تجاویز</string>
     <string name="dejavu_settings_tips_summary">پوشیدہ اشاروں کے بارے میں تجاویز دکھائیں، جیسے ”نیا ٹیب“ کو دبا کر رکھنا</string>
     <string name="dejavu_new">نیا</string>
+    <string name="dejavu_menu_screenshot">پورے صفحے کا اسکرین شاٹ</string>
+    <string name="dejavu_screenshot_saving">اسکرین شاٹ محفوظ کیا جا رہا ہے…</string>
+    <string name="dejavu_screenshot_saved">اسکرین شاٹ %1$s میں محفوظ ہو گیا</string>
+    <string name="dejavu_screenshot_failed">اس صفحے کا اسکرین شاٹ نہیں لیا جا سکا۔ دوبارہ کوشش کریں۔</string>
+    <string name="dejavu_screenshot_save_failed">اسکرین شاٹ محفوظ نہیں ہو سکا۔</string>
+    <string name="dejavu_screenshot_permission">اسکرین شاٹس محفوظ کرنے کے لیے فائلیں اسٹور کرنے کی اجازت درکار ہے۔ آپ Android کی ایپ سیٹنگز میں اس کی اجازت دے سکتے ہیں۔</string>
 </resources>

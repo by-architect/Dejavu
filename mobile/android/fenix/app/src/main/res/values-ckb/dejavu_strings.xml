@@ -543,4 +543,10 @@
     <string name="dejavu_settings_tips">ئامۆژگارییەکان</string>
     <string name="dejavu_settings_tips_summary">پیشاندانی ئامۆژگاری دەربارەی جوڵاندنە شاراوەکان، وەک ڕاگرتنی «بازدەری نوێ»</string>
     <string name="dejavu_new">نوێ</string>
+    <string name="dejavu_menu_screenshot">وێنەی شاشەی تەواوی پەڕە</string>
+    <string name="dejavu_screenshot_saving">پاشەکەوتکردنی وێنەی شاشە…</string>
+    <string name="dejavu_screenshot_saved">وێنەی شاشەکە لە %1$s پاشەکەوت کرا</string>
+    <string name="dejavu_screenshot_failed">نەتوانرا وێنەی شاشەی ئەم پەڕەیە بگیرێت. دووبارە هەوڵ بدەرەوە.</string>
+    <string name="dejavu_screenshot_save_failed">نەتوانرا وێنەی شاشەکە پاشەکەوت بکرێت.</string>
+    <string name="dejavu_screenshot_permission">بۆ پاشەکەوتکردنی وێنەی شاشە، ڕێگەپێدان بۆ هەڵگرتنی پەڕگەکان پێویستە. دەتوانیت لە ڕێکخستنەکانی بەرنامەکە لە ئەندرۆید ڕێگەی پێ بدەیت.</string>
 </resources>

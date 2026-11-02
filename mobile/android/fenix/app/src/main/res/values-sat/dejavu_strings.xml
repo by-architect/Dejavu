@@ -551,4 +551,10 @@
     <string name="dejavu_settings_tips">ᱥᱩᱡᱷᱟᱹᱣ ᱠᱚ</string>
     <string name="dejavu_settings_tips_summary">“ᱱᱟᱶᱟ ᱴᱮᱵᱽ” ᱚᱛᱟ ᱫᱚᱦᱚ ᱞᱮᱠᱟᱱ ᱩᱠᱩ ᱪᱤᱱᱦᱟᱹ ᱠᱚ ᱵᱟᱵᱚᱛ ᱥᱩᱡᱷᱟᱹᱣ ᱠᱚ ᱩᱫᱩᱜ ᱢᱮ</string>
     <string name="dejavu_new">ᱱᱟᱶᱟ</string>
+    <string name="dejavu_menu_screenshot">ᱯᱩᱨᱟᱹ ᱥᱟᱦᱴᱟ ᱥᱠᱨᱤᱱᱥᱚᱴ</string>
+    <string name="dejavu_screenshot_saving">ᱥᱠᱨᱤᱱᱥᱚᱴ ᱥᱟᱧᱪᱟᱣ ᱦᱩᱭ ᱠᱟᱱᱟ…</string>
+    <string name="dejavu_screenshot_saved">ᱥᱠᱨᱤᱱᱥᱚᱴ %1$s ᱨᱮ ᱥᱟᱧᱪᱟᱣ ᱦᱩᱭ ᱮᱱᱟ</string>
+    <string name="dejavu_screenshot_failed">ᱱᱚᱶᱟ ᱥᱟᱦᱴᱟ ᱨᱮᱭᱟᱜ ᱥᱠᱨᱤᱱᱥᱚᱴ ᱵᱟᱝ ᱦᱟᱛᱟᱣ ᱫᱟᱲᱮᱭᱟᱜᱼᱟ ᱾ ᱫᱚᱦᱲᱟ ᱠᱩᱨᱩᱢᱩᱴᱩᱭ ᱢᱮ ᱾</string>
+    <string name="dejavu_screenshot_save_failed">ᱥᱠᱨᱤᱱᱥᱚᱴ ᱵᱟᱝ ᱥᱟᱧᱪᱟᱣ ᱫᱟᱲᱮᱭᱟᱜᱼᱟ ᱾</string>
+    <string name="dejavu_screenshot_permission">ᱥᱠᱨᱤᱱᱥᱚᱴ ᱠᱚ ᱥᱟᱧᱪᱟᱣ ᱞᱟᱹᱜᱤᱫ ᱨᱮᱫᱽ ᱥᱟᱧᱪᱟᱣ ᱨᱮᱭᱟᱜ ᱪᱷᱟᱹᱰ ᱫᱚᱨᱠᱟᱨ ᱾ ᱟᱢ ᱱᱚᱶᱟ ᱪᱷᱟᱹᱰ Android ᱨᱮᱭᱟᱜ ᱮᱯ ᱥᱟᱡᱟᱣ ᱨᱮ ᱮᱢ ᱫᱟᱲᱮᱭᱟᱜ ᱟᱢ ᱾</string>
 </resources>

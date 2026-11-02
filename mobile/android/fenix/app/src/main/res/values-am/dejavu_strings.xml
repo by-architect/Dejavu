@@ -543,4 +543,10 @@
     <string name="dejavu_settings_tips">ጠቃሚ ምክሮች</string>
     <string name="dejavu_settings_tips_summary">ስለተደበቁ የእጅ ምልክቶች ጠቃሚ ምክሮችን አሳይ፣ ለምሳሌ «አዲስ ትር»ን ተጭኖ መያዝ</string>
     <string name="dejavu_new">አዲስ</string>
+    <string name="dejavu_menu_screenshot">የሙሉ ገጽ ቅጽበታዊ ገጽ እይታ</string>
+    <string name="dejavu_screenshot_saving">ቅጽበታዊ ገጽ እይታውን በማስቀመጥ ላይ…</string>
+    <string name="dejavu_screenshot_saved">ቅጽበታዊ ገጽ እይታው በ%1$s ውስጥ ተቀምጧል</string>
+    <string name="dejavu_screenshot_failed">የዚህን ገጽ ቅጽበታዊ ገጽ እይታ ማንሳት አልተቻለም። እንደገና ይሞክሩ።</string>
+    <string name="dejavu_screenshot_save_failed">ቅጽበታዊ ገጽ እይታውን ማስቀመጥ አልተቻለም።</string>
+    <string name="dejavu_screenshot_permission">ቅጽበታዊ ገጽ እይታዎችን ለማስቀመጥ ፋይሎችን የማከማቸት ፈቃድ ያስፈልጋል። በAndroid የመተግበሪያ ቅንብሮች ውስጥ ሊፈቅዱት ይችላሉ።</string>
 </resources>

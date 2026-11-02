@@ -551,4 +551,10 @@
     <string name="dejavu_settings_tips">טיפים</string>
     <string name="dejavu_settings_tips_summary">הצגת טיפים על מחוות נסתרות, כמו לחיצה ארוכה על ״לשונית חדשה״</string>
     <string name="dejavu_new">חדש</string>
+    <string name="dejavu_menu_screenshot">צילום מסך של כל הדף</string>
+    <string name="dejavu_screenshot_saving">שומר את צילום המסך…</string>
+    <string name="dejavu_screenshot_saved">צילום המסך נשמר בתיקייה %1$s</string>
+    <string name="dejavu_screenshot_failed">לא ניתן היה ליצור צילום מסך של הדף הזה. נא לנסות שוב.</string>
+    <string name="dejavu_screenshot_save_failed">לא ניתן היה לשמור את צילום המסך.</string>
+    <string name="dejavu_screenshot_permission">שמירת צילומי מסך דורשת הרשאה לאחסון קבצים. ניתן לאפשר זאת בהגדרות האפליקציה ב-Android.</string>
 </resources>

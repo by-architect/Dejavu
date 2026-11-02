@@ -543,4 +543,10 @@
     <string name="dejavu_settings_tips">Ábendingar</string>
     <string name="dejavu_settings_tips_summary">Sýna ábendingar um faldar bendingar, eins og að halda „Nýr flipi“ niðri</string>
     <string name="dejavu_new">Nýtt</string>
+    <string name="dejavu_menu_screenshot">Skjámynd af allri síðunni</string>
+    <string name="dejavu_screenshot_saving">Vistar skjámynd…</string>
+    <string name="dejavu_screenshot_saved">Skjámynd vistuð í %1$s</string>
+    <string name="dejavu_screenshot_failed">Ekki tókst að taka skjámynd af þessari síðu. Reyndu aftur.</string>
+    <string name="dejavu_screenshot_save_failed">Ekki tókst að vista skjámyndina.</string>
+    <string name="dejavu_screenshot_permission">Til að vista skjámyndir þarf heimild til að geyma skrár. Þú getur veitt hana í stillingum forritsins í Android.</string>
 </resources>

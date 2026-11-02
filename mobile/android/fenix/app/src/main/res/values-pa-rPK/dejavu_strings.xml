@@ -543,4 +543,10 @@
     <string name="dejavu_settings_tips">مشورے</string>
     <string name="dejavu_settings_tips_summary">لُکے ہوئے اشاریاں بارے مشورے وکھاؤ، جویں “نویں ٹیب کھولھو” نوں دبا کے رکھݨا</string>
     <string name="dejavu_new">نواں</string>
+    <string name="dejavu_menu_screenshot">پورے صفحے دا سکرین‌شاٹ</string>
+    <string name="dejavu_screenshot_saving">سکرین‌شاٹ سیو ہو رہیا اے…</string>
+    <string name="dejavu_screenshot_saved">سکرین‌شاٹ %1$s وچ سیو ہو گیا</string>
+    <string name="dejavu_screenshot_failed">ایس صفحے دا سکرین‌شاٹ نہیں لیا جا سکیا۔ دوبارہ کوشش کرو۔</string>
+    <string name="dejavu_screenshot_save_failed">سکرین‌شاٹ سیو نہیں کیتا جا سکیا۔</string>
+    <string name="dejavu_screenshot_permission">سکرین‌شاٹ سیو کرن لئی فائلاں سٹور کرن دی اجازت لوڑدی اے۔ تسیں ایہہ اجازت Android دیاں ایپ سیٹنگاں وچ دے سکدے او۔</string>
 </resources>

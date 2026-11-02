@@ -576,4 +576,10 @@
     <string name="dejavu_settings_tips">टिप्स</string>
     <string name="dejavu_settings_tips_summary">छिपे हुए जेस्चर के बारे में टिप्स दिखाएं, जैसे “नया टैब” को दबाकर रखना</string>
     <string name="dejavu_new">नया</string>
+    <string name="dejavu_menu_screenshot">पूरे पेज का स्क्रीनशॉट</string>
+    <string name="dejavu_screenshot_saving">स्क्रीनशॉट सेव किया जा रहा है…</string>
+    <string name="dejavu_screenshot_saved">स्क्रीनशॉट %1$s में सेव किया गया</string>
+    <string name="dejavu_screenshot_failed">इस पेज का स्क्रीनशॉट नहीं लिया जा सका। फिर से कोशिश करें।</string>
+    <string name="dejavu_screenshot_save_failed">स्क्रीनशॉट सेव नहीं किया जा सका।</string>
+    <string name="dejavu_screenshot_permission">स्क्रीनशॉट सेव करने के लिए फ़ाइलें स्टोर करने की अनुमति चाहिए। आप Android की ऐप सेटिंग में इसकी अनुमति दे सकते हैं।</string>
 </resources>

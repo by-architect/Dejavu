@@ -543,4 +543,10 @@
     <string name="dejavu_settings_tips">Consejos</string>
     <string name="dejavu_settings_tips_summary">Mostrar consejos sobre gestos ocultos, como mantener presionado “Rakïj ñanj nakàa”</string>
     <string name="dejavu_new">Nakàa</string>
+    <string name="dejavu_menu_screenshot">Ñadu\'ua de toda la página</string>
+    <string name="dejavu_screenshot_saving">Guardando ñadu\'ua pantaya…</string>
+    <string name="dejavu_screenshot_saved">Ñadu\'ua pantaya guardada en %1$s</string>
+    <string name="dejavu_screenshot_failed">No se pudo tomar una ñadu\'ua pantaya de esta página. Inténtalo de nuevo.</string>
+    <string name="dejavu_screenshot_save_failed">No se pudo guardar la ñadu\'ua pantaya.</string>
+    <string name="dejavu_screenshot_permission">Para guardar ñadu\'ua pantaya se necesita permiso para almacenar archivos. Puedes permitirlo en la configuración de aplicaciones de Android.</string>
 </resources>

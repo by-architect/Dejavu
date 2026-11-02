@@ -543,4 +543,10 @@
     <string name="dejavu_settings_tips">مشوراک</string>
     <string name="dejavu_settings_tips_summary">لکوکا اشاراک نا بارو اٹ مشوراک تس، جیسا کہ «پوسکنو ٹیب اس» اے دبا ہلنگ</string>
     <string name="dejavu_new">پوسکن</string>
+    <string name="dejavu_menu_screenshot">کل صفحہ نا اسکرین شاٹ</string>
+    <string name="dejavu_screenshot_saving">اسکرین شاٹ سیو ہننا…</string>
+    <string name="dejavu_screenshot_saved">اسکرین شاٹ %1$s ٹی سیو ہتین</string>
+    <string name="dejavu_screenshot_failed">دا صفحہ نا اسکرین شاٹ ہلنگ کپک۔ دوبارہ کوشش کبو۔</string>
+    <string name="dejavu_screenshot_save_failed">اسکرین شاٹ سیو نی ہتین۔</string>
+    <string name="dejavu_screenshot_permission">اسکرین شاٹ سیو کننگ کن فائلاک سیو کننگ نا اجازت ضروری اے۔ Android نا ایپ سیٹنگاک ٹی اجازت ایتنگ ممکن اے۔</string>
 </resources>

@@ -543,4 +543,10 @@
     <string name="dejavu_settings_tips">Mga tip</string>
     <string name="dejavu_settings_tips_summary">Ipakita ang mga tip tungkol sa mga nakatagong gesture, tulad ng pagpindot nang matagal sa “Bagong Tab”</string>
     <string name="dejavu_new">Bago</string>
+    <string name="dejavu_menu_screenshot">Screenshot ng buong pahina</string>
+    <string name="dejavu_screenshot_saving">Sine-save ang screenshot…</string>
+    <string name="dejavu_screenshot_saved">Na-save ang screenshot sa %1$s</string>
+    <string name="dejavu_screenshot_failed">Hindi makakuha ng screenshot ng pahinang ito. Subukan ulit.</string>
+    <string name="dejavu_screenshot_save_failed">Hindi ma-save ang screenshot.</string>
+    <string name="dejavu_screenshot_permission">Kailangan ng pahintulot na mag-imbak ng mga file para makapag-save ng mga screenshot. Maaari mo itong payagan sa mga setting ng app ng Android.</string>
 </resources>

@@ -543,4 +543,10 @@
     <string name="dejavu_settings_tips">Съвети</string>
     <string name="dejavu_settings_tips_summary">Показване на съвети за скрити жестове, като задържане на „Нов раздел“</string>
     <string name="dejavu_new">Нов</string>
+    <string name="dejavu_menu_screenshot">Снимка на цялата страница</string>
+    <string name="dejavu_screenshot_saving">Запазване на снимката на екрана…</string>
+    <string name="dejavu_screenshot_saved">Снимката на екрана е запазена в %1$s</string>
+    <string name="dejavu_screenshot_failed">Снимка на екрана на тази страница не можа да бъде направена. Опитайте отново.</string>
+    <string name="dejavu_screenshot_save_failed">Снимката на екрана не можа да бъде запазена.</string>
+    <string name="dejavu_screenshot_permission">За запазване на снимки на екрана е необходимо разрешение за съхраняване на файлове. Можете да го дадете в настройките на приложението в Android.</string>
 </resources>

@@ -551,4 +551,10 @@
     <string name="dejavu_settings_tips">Савети</string>
     <string name="dejavu_settings_tips_summary">Прикажи савете о скривеним гестовима, као што је задржавање дугмета „Нови језичак“</string>
     <string name="dejavu_new">Ново</string>
+    <string name="dejavu_menu_screenshot">Снимак целе странице</string>
+    <string name="dejavu_screenshot_saving">Чување снимка екрана…</string>
+    <string name="dejavu_screenshot_saved">Снимак екрана сачуван у фасциклу %1$s</string>
+    <string name="dejavu_screenshot_failed">Нисмо могли да направимо снимак екрана ове странице. Покушајте поново.</string>
+    <string name="dejavu_screenshot_save_failed">Нисмо могли да сачувамо снимак екрана.</string>
+    <string name="dejavu_screenshot_permission">За чување снимака екрана потребна је дозвола за чување датотека. Можете да је одобрите у подешавањима апликације у Android-у.</string>
 </resources>

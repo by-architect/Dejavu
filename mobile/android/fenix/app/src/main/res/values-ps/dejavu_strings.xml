@@ -543,4 +543,10 @@
     <string name="dejavu_settings_tips">لارښوونې</string>
     <string name="dejavu_settings_tips_summary">د پټو اشارو په اړه لارښوونې ښودل، لکه د «نوی ټب» نیول</string>
     <string name="dejavu_new">نوی</string>
+    <string name="dejavu_menu_screenshot">د بشپړې پاڼې سکرین شاټ</string>
+    <string name="dejavu_screenshot_saving">سکرین شاټ خوندي کېږي…</string>
+    <string name="dejavu_screenshot_saved">سکرین شاټ په %1$s کې خوندي شو</string>
+    <string name="dejavu_screenshot_failed">د دې پاڼې سکرین شاټ وانه خیستل شو. بیا هڅه وکړئ.</string>
+    <string name="dejavu_screenshot_save_failed">سکرین شاټ خوندي نه شو.</string>
+    <string name="dejavu_screenshot_permission">د سکرین شاټونو د خوندي کولو لپاره د فایلونو د ساتلو اجازه اړینه ده. تاسو کولی شئ دا اجازه د Android د ایپ په امستنو کې ورکړئ.</string>
 </resources>

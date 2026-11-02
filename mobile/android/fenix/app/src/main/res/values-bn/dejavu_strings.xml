@@ -576,4 +576,10 @@
     <string name="dejavu_settings_tips">টিপস</string>
     <string name="dejavu_settings_tips_summary">লুকানো জেসচার নিয়ে টিপস দেখান, যেমন “নতুন ট্যাব” চেপে ধরা</string>
     <string name="dejavu_new">নতুন</string>
+    <string name="dejavu_menu_screenshot">পুরো পাতার স্ক্রিনশট</string>
+    <string name="dejavu_screenshot_saving">স্ক্রিনশট সংরক্ষণ করা হচ্ছে…</string>
+    <string name="dejavu_screenshot_saved">স্ক্রিনশট %1$s ফোল্ডারে সংরক্ষণ করা হয়েছে</string>
+    <string name="dejavu_screenshot_failed">এই পাতার স্ক্রিনশট নেওয়া যায়নি। আবার চেষ্টা করুন।</string>
+    <string name="dejavu_screenshot_save_failed">স্ক্রিনশট সংরক্ষণ করা যায়নি।</string>
+    <string name="dejavu_screenshot_permission">স্ক্রিনশট সংরক্ষণ করতে ফাইল সংরক্ষণের অনুমতি প্রয়োজন। আপনি Android-এর অ্যাপ সেটিংসে এটির অনুমতি দিতে পারেন।</string>
 </resources>

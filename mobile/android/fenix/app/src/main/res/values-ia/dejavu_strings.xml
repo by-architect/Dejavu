@@ -543,4 +543,10 @@
     <string name="dejavu_settings_tips">Consilios</string>
     <string name="dejavu_settings_tips_summary">Monstrar consilios sur gestos celate, como tener pressate ‘Nove scheda’</string>
     <string name="dejavu_new">Nove</string>
+    <string name="dejavu_menu_screenshot">Instantaneo de pagina integre</string>
+    <string name="dejavu_screenshot_saving">Salvante le instantaneo…</string>
+    <string name="dejavu_screenshot_saved">Instantaneo salvate in %1$s</string>
+    <string name="dejavu_screenshot_failed">Impossibile facer un instantaneo de iste pagina. Retenta.</string>
+    <string name="dejavu_screenshot_save_failed">Impossibile salvar le instantaneo.</string>
+    <string name="dejavu_screenshot_permission">Salvar instantaneos require le permission de immagazinar files. Tu pote permitter lo in le parametros del app de Android.</string>
 </resources>

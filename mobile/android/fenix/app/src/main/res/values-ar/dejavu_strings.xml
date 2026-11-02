@@ -575,4 +575,10 @@
     <string name="dejavu_settings_tips">نصائح</string>
     <string name="dejavu_settings_tips_summary">عرض نصائح عن الإيماءات المخفية، مثل الضغط مطولًا على «تبويب جديد»</string>
     <string name="dejavu_new">جديد</string>
+    <string name="dejavu_menu_screenshot">لقطة شاشة للصفحة كاملة</string>
+    <string name="dejavu_screenshot_saving">جارٍ حفظ لقطة الشاشة…</string>
+    <string name="dejavu_screenshot_saved">حُفظت لقطة الشاشة في %1$s</string>
+    <string name="dejavu_screenshot_failed">تعذّر التقاط لقطة شاشة لهذه الصفحة. حاول مجددًا.</string>
+    <string name="dejavu_screenshot_save_failed">تعذّر حفظ لقطة الشاشة.</string>
+    <string name="dejavu_screenshot_permission">يتطلب حفظ لقطات الشاشة إذنًا بتخزين الملفات. يمكنك السماح بذلك من إعدادات التطبيق في أندرويد.</string>
 </resources>

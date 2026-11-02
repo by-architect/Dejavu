@@ -543,4 +543,10 @@
     <string name="dejavu_settings_tips">ਸੁਝਾਅ</string>
     <string name="dejavu_settings_tips_summary">“ਨਵੀਂ ਟੈਬ” ਨੂੰ ਦਬਾ ਕੇ ਰੱਖਣ ਵਰਗੇ ਲੁਕਵੇਂ ਇਸ਼ਾਰਿਆਂ ਬਾਰੇ ਸੁਝਾਅ ਦਿਖਾਓ</string>
     <string name="dejavu_new">ਨਵਾਂ</string>
+    <string name="dejavu_menu_screenshot">ਪੂਰੇ ਸਫ਼ੇ ਦਾ ਸਕਰੀਨਸ਼ਾਟ</string>
+    <string name="dejavu_screenshot_saving">ਸਕਰੀਨਸ਼ਾਟ ਸੰਭਾਲਿਆ ਜਾ ਰਿਹਾ ਹੈ…</string>
+    <string name="dejavu_screenshot_saved">ਸਕਰੀਨਸ਼ਾਟ %1$s ਵਿੱਚ ਸੰਭਾਲਿਆ ਗਿਆ</string>
+    <string name="dejavu_screenshot_failed">ਇਸ ਸਫ਼ੇ ਦਾ ਸਕਰੀਨਸ਼ਾਟ ਨਹੀਂ ਲਿਆ ਜਾ ਸਕਿਆ। ਫੇਰ ਕੋਸ਼ਿਸ਼ ਕਰਿਓ।</string>
+    <string name="dejavu_screenshot_save_failed">ਸਕਰੀਨਸ਼ਾਟ ਸੰਭਾਲਿਆ ਨਹੀਂ ਜਾ ਸਕਿਆ।</string>
+    <string name="dejavu_screenshot_permission">ਸਕਰੀਨਸ਼ਾਟ ਸੰਭਾਲਣ ਲਈ ਫ਼ਾਈਲਾਂ ਸਟੋਰ ਕਰਨ ਦੀ ਇਜਾਜ਼ਤ ਚਾਹੀਦੀ ਹੈ। ਤੁਸੀਂ ਇਹ ਇਜਾਜ਼ਤ Android ਦੀਆਂ ਐਪ ਸੈਟਿੰਗਾਂ ਵਿੱਚ ਦੇ ਸਕਦੇ ਹੋ।</string>
 </resources>

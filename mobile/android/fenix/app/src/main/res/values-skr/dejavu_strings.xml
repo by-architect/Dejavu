@@ -543,4 +543,10 @@
     <string name="dejavu_settings_tips">مشورے</string>
     <string name="dejavu_settings_tips_summary">لُکے ہوئے اشاریاں بارے مشورے ݙکھاؤ، جیویں نویں ٹیب بٹݨ کوں دبا تے رکھݨ</string>
     <string name="dejavu_new">نواں</string>
+    <string name="dejavu_menu_screenshot">پورے ورقے دا سکرین شاٹ</string>
+    <string name="dejavu_screenshot_saving">سکرین شاٹ محفوظ تھیندا پئے…</string>
+    <string name="dejavu_screenshot_saved">سکرین شاٹ %1$s وچ محفوظ تھی ڳیا</string>
+    <string name="dejavu_screenshot_failed">ایں ورقے دا سکرین شاٹ کائنی بݨ سڳا۔ ولدا کوشش کرو۔</string>
+    <string name="dejavu_screenshot_save_failed">سکرین شاٹ محفوظ کائنی تھی سڳا۔</string>
+    <string name="dejavu_screenshot_permission">سکرین شاٹاں محفوظ کرݨ کیتے فائلاں محفوظ کرݨ دی اجازت دی لوڑ ہے۔ تساں Android دیاں ایپ ترتیباں وچ ایندی اجازت ݙے سڳدے ہو۔</string>
 </resources>

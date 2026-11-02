@@ -543,4 +543,10 @@
     <string name="dejavu_settings_tips">Keńesler</string>
     <string name="dejavu_settings_tips_summary">Jasırın háreketler haqqında keńeslerdi kórsetiw, mısalı «Jańa bet» túymesin basıp turıw</string>
     <string name="dejavu_new">Jańa</string>
+    <string name="dejavu_menu_screenshot">Bettiń tolıq skrinshotı</string>
+    <string name="dejavu_screenshot_saving">Skrinshot saqlanıp atır…</string>
+    <string name="dejavu_screenshot_saved">Skrinshot %1$s papkasına saqlandı</string>
+    <string name="dejavu_screenshot_failed">Bul bettiń skrinshotın alıw múmkin bolmadı. Qayta urınıp kóriń.</string>
+    <string name="dejavu_screenshot_save_failed">Skrinshottı saqlaw múmkin bolmadı.</string>
+    <string name="dejavu_screenshot_permission">Skrinshotlardı saqlaw ushın fayllardı saqlawǵa ruqsat kerek. Bunı Android-taǵı baǵdarlama sazlawlarında ruqsat ete alasız.</string>
 </resources>

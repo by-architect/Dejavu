@@ -543,4 +543,10 @@
     <string name="dejavu_settings_tips">Συμβουλές</string>
     <string name="dejavu_settings_tips_summary">Εμφάνιση συμβουλών για κρυφές χειρονομίες, όπως το παρατεταμένο πάτημα του «Νέα καρτέλα»</string>
     <string name="dejavu_new">Νέο</string>
+    <string name="dejavu_menu_screenshot">Στιγμιότυπο ολόκληρης σελίδας</string>
+    <string name="dejavu_screenshot_saving">Αποθήκευση στιγμιότυπου οθόνης…</string>
+    <string name="dejavu_screenshot_saved">Το στιγμιότυπο οθόνης αποθηκεύτηκε στον φάκελο %1$s</string>
+    <string name="dejavu_screenshot_failed">Δεν ήταν δυνατή η λήψη στιγμιότυπου οθόνης αυτής της σελίδας. Δοκιμάστε ξανά.</string>
+    <string name="dejavu_screenshot_save_failed">Δεν ήταν δυνατή η αποθήκευση του στιγμιότυπου οθόνης.</string>
+    <string name="dejavu_screenshot_permission">Η αποθήκευση στιγμιότυπων οθόνης απαιτεί άδεια αποθήκευσης αρχείων. Μπορείτε να την παραχωρήσετε στις ρυθμίσεις της εφαρμογής στο Android.</string>
 </resources>

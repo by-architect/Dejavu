@@ -543,4 +543,10 @@
     <string name="dejavu_settings_tips">Suggerimenti</string>
     <string name="dejavu_settings_tips_summary">Mostra suggerimenti sui gesti nascosti, come tenere premuto «Nuova scheda»</string>
     <string name="dejavu_new">Novità</string>
+    <string name="dejavu_menu_screenshot">Screenshot pagina intera</string>
+    <string name="dejavu_screenshot_saving">Salvataggio dello screenshot…</string>
+    <string name="dejavu_screenshot_saved">Screenshot salvato in %1$s</string>
+    <string name="dejavu_screenshot_failed">Impossibile acquisire uno screenshot di questa pagina. Riprova.</string>
+    <string name="dejavu_screenshot_save_failed">Impossibile salvare lo screenshot.</string>
+    <string name="dejavu_screenshot_permission">Per salvare gli screenshot è necessaria l’autorizzazione ad archiviare file. Puoi concederla nelle impostazioni dell’app di Android.</string>
 </resources>

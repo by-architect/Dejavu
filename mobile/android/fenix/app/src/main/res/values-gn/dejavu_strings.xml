@@ -543,4 +543,10 @@
     <string name="dejavu_settings_tips">Ñemoñe\'ẽ</string>
     <string name="dejavu_settings_tips_summary">Ehechauka ñemoñe\'ẽ ñeha\'ãnga kañymby rehegua, ha\'eháicha ejopy are “Tendayke pyahu”</string>
     <string name="dejavu_new">Pyahu</string>
+    <string name="dejavu_menu_screenshot">Kuatiarogue pukukue japyhy</string>
+    <string name="dejavu_screenshot_saving">Oñongatuhína mba’erechaha japyhy…</string>
+    <string name="dejavu_screenshot_saved">Mba’erechaha japyhy oñeñongatu %1$s-pe</string>
+    <string name="dejavu_screenshot_failed">Ndaikatúi ojejapyhy ko kuatiarogue. Eha’ã jey.</string>
+    <string name="dejavu_screenshot_save_failed">Ndaikatúi oñeñongatu mba’erechaha japyhy.</string>
+    <string name="dejavu_screenshot_permission">Mba’erechaha japyhy ñeñongatu oikotevẽ ñemoneĩ marandurenda ñongatu hag̃ua. Ikatu remoneĩ tembiporu’i ñembohekópe Android-pe.</string>
 </resources>

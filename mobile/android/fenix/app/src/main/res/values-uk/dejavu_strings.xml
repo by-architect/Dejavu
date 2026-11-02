@@ -559,4 +559,10 @@
     <string name="dejavu_settings_tips">Поради</string>
     <string name="dejavu_settings_tips_summary">Показувати поради про приховані жести, як-от утримання кнопки «Нова вкладка»</string>
     <string name="dejavu_new">Нове</string>
+    <string name="dejavu_menu_screenshot">Знімок усієї сторінки</string>
+    <string name="dejavu_screenshot_saving">Збереження знімка екрана…</string>
+    <string name="dejavu_screenshot_saved">Знімок екрана збережено в %1$s</string>
+    <string name="dejavu_screenshot_failed">Не вдалося зробити знімок екрана цієї сторінки. Повторіть спробу.</string>
+    <string name="dejavu_screenshot_save_failed">Не вдалося зберегти знімок екрана.</string>
+    <string name="dejavu_screenshot_permission">Щоб зберігати знімки екрана, потрібен дозвіл на зберігання файлів. Його можна надати в налаштуваннях застосунку в Android.</string>
 </resources>

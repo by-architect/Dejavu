@@ -543,4 +543,10 @@
     <string name="dejavu_settings_tips">നുറുങ്ങുകൾ</string>
     <string name="dejavu_settings_tips_summary">“പുതിയ ടാബ്” അമർത്തിപ്പിടിക്കുന്നത് പോലുള്ള മറഞ്ഞിരിക്കുന്ന ആംഗ്യങ്ങളെക്കുറിച്ചുള്ള നുറുങ്ങുകൾ കാണിക്കുക</string>
     <string name="dejavu_new">പുതിയത്</string>
+    <string name="dejavu_menu_screenshot">മുഴുവൻ താളിന്റെ പ്രതലപ്പിളർപ്പ്</string>
+    <string name="dejavu_screenshot_saving">പ്രതലപ്പിളർപ്പ് കരുതിവയ്ക്കുന്നു…</string>
+    <string name="dejavu_screenshot_saved">പ്രതലപ്പിളർപ്പ് %1$s ഫോൾഡറിൽ കരുതിവച്ചു</string>
+    <string name="dejavu_screenshot_failed">ഈ താളിന്റെ പ്രതലപ്പിളർപ്പ് എടുക്കുവാൻ പറ്റിയില്ല. വീണ്ടും ശ്രമിക്കുക.</string>
+    <string name="dejavu_screenshot_save_failed">പ്രതലപ്പിളർപ്പ് കരുതിവയ്ക്കുവാൻ പറ്റിയില്ല.</string>
+    <string name="dejavu_screenshot_permission">പ്രതലപ്പിളർപ്പുകൾ കരുതിവയ്ക്കുവാൻ ഫയലുകൾ സംഭരിക്കാനുള്ള അനുമതി വേണം. Android-ന്റെ ആപ്പ് ക്രമീകരണങ്ങളിൽ നിങ്ങൾക്ക് അത് അനുവദിക്കാം.</string>
 </resources>

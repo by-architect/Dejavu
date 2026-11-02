@@ -535,4 +535,10 @@
     <string name="dejavu_settings_tips">Àwọn ìmọ̀ràn</string>
     <string name="dejavu_settings_tips_summary">Fi àwọn ìmọ̀ràn hàn nípa àwọn ìfarajúwèé tó farasin, bí dídi bọ́tìnnì Táàbù Tuntun mú</string>
     <string name="dejavu_new">Tuntun</string>
+    <string name="dejavu_menu_screenshot">Sikirinṣọ́ọ̀tì gbogbo ojú-ìwé</string>
+    <string name="dejavu_screenshot_saving">Ń fi sikirinṣọ́ọ̀tì pamọ́…</string>
+    <string name="dejavu_screenshot_saved">A ti fi sikirinṣọ́ọ̀tì pamọ́ sí %1$s</string>
+    <string name="dejavu_screenshot_failed">A kò lè ya sikirinṣọ́ọ̀tì ojú-ìwé yìí. Tún gbìyànjú.</string>
+    <string name="dejavu_screenshot_save_failed">A kò lè fi sikirinṣọ́ọ̀tì náà pamọ́.</string>
+    <string name="dejavu_screenshot_permission">Fífi sikirinṣọ́ọ̀tì pamọ́ nílò àṣẹ láti tọ́jú àwọn fáìlì. O lè gbà á láàyè nínú àwọn aatò áàpù ti Android.</string>
 </resources>

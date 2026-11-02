@@ -535,4 +535,10 @@
     <string name="dejavu_settings_tips">提示</string>
     <string name="dejavu_settings_tips_summary">顯示隱藏手勢的相關提示，例如長按「開新分頁」</string>
     <string name="dejavu_new">新功能</string>
+    <string name="dejavu_menu_screenshot">整頁畫面擷圖</string>
+    <string name="dejavu_screenshot_saving">正在儲存畫面擷圖…</string>
+    <string name="dejavu_screenshot_saved">畫面擷圖已儲存至 %1$s</string>
+    <string name="dejavu_screenshot_failed">無法拍攝此頁面的畫面擷圖，請重試。</string>
+    <string name="dejavu_screenshot_save_failed">無法儲存畫面擷圖。</string>
+    <string name="dejavu_screenshot_permission">儲存畫面擷圖需要儲存檔案的權限。您可以在 Android 的應用程式設定中開啟此權限。</string>
 </resources>

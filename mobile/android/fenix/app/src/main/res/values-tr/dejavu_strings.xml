@@ -543,4 +543,10 @@
     <string name="dejavu_settings_tips">İpuçları</string>
     <string name="dejavu_settings_tips_summary">Yeni sekme\'ye basılı tutmak gibi gizli parmak hareketleriyle ilgili ipuçlarını göster</string>
     <string name="dejavu_new">Yeni</string>
+    <string name="dejavu_menu_screenshot">Tam sayfa ekran görüntüsü</string>
+    <string name="dejavu_screenshot_saving">Ekran görüntüsü kaydediliyor…</string>
+    <string name="dejavu_screenshot_saved">Ekran görüntüsü %1$s klasörüne kaydedildi</string>
+    <string name="dejavu_screenshot_failed">Bu sayfanın ekran görüntüsü alınamadı. Yeniden deneyin.</string>
+    <string name="dejavu_screenshot_save_failed">Ekran görüntüsü kaydedilemedi.</string>
+    <string name="dejavu_screenshot_permission">Ekran görüntülerini kaydetmek için dosya depolama izni gerekir. Bu izni Android\'in uygulama ayarlarından verebilirsiniz.</string>
 </resources>

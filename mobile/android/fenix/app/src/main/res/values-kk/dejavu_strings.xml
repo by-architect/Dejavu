@@ -543,4 +543,10 @@
     <string name="dejavu_settings_tips">Кеңестер</string>
     <string name="dejavu_settings_tips_summary">«Жаңа бет» түймесін басып тұру сияқты жасырын ым қимылдары туралы кеңестерді көрсету</string>
     <string name="dejavu_new">Жаңа</string>
+    <string name="dejavu_menu_screenshot">Толық парақ скриншоты</string>
+    <string name="dejavu_screenshot_saving">Скриншот сақталуда…</string>
+    <string name="dejavu_screenshot_saved">Скриншот %1$s қалтасына сақталды</string>
+    <string name="dejavu_screenshot_failed">Бұл парақтың скриншотын түсіру мүмкін болмады. Қайталап көріңіз.</string>
+    <string name="dejavu_screenshot_save_failed">Скриншотты сақтау мүмкін болмады.</string>
+    <string name="dejavu_screenshot_permission">Скриншоттарды сақтау үшін файлдарды сақтауға рұқсат қажет. Бұл рұқсатты Android қолданба баптауларында бере аласыз.</string>
 </resources>

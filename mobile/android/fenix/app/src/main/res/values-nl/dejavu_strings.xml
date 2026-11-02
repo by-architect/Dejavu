@@ -543,4 +543,10 @@
     <string name="dejavu_settings_tips">Tips</string>
     <string name="dejavu_settings_tips_summary">Tips tonen over verborgen bewegingen, zoals “Nieuw tabblad” ingedrukt houden</string>
     <string name="dejavu_new">Nieuw</string>
+    <string name="dejavu_menu_screenshot">Schermafbeelding van hele pagina</string>
+    <string name="dejavu_screenshot_saving">Schermafbeelding opslaan…</string>
+    <string name="dejavu_screenshot_saved">Schermafbeelding opgeslagen in %1$s</string>
+    <string name="dejavu_screenshot_failed">Kan geen schermafbeelding van deze pagina maken. Probeer het opnieuw.</string>
+    <string name="dejavu_screenshot_save_failed">Kan de schermafbeelding niet opslaan.</string>
+    <string name="dejavu_screenshot_permission">Voor het opslaan van schermafbeeldingen is toestemming voor bestandsopslag nodig. Je kunt dit toestaan in de app-instellingen van Android.</string>
 </resources>

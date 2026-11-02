@@ -543,4 +543,10 @@
     <string name="dejavu_settings_tips">Conseggi</string>
     <string name="dejavu_settings_tips_summary">Mostra conseggi in scî gesti ascoxi, comme tegnî sciaccou “Neuvo feuggio”</string>
     <string name="dejavu_new">Neuvo</string>
+    <string name="dejavu_menu_screenshot">Fòto da pagina intrega</string>
+    <string name="dejavu_screenshot_saving">Sarvando a fòto do schermo…</string>
+    <string name="dejavu_screenshot_saved">Fòto do schermo sarvâ inta cartella %1$s</string>
+    <string name="dejavu_screenshot_failed">No l\'è stæto poscibile fâ unna fòto do schermo de sta pagina. Preuva torna.</string>
+    <string name="dejavu_screenshot_save_failed">No l\'è stæto poscibile sarvâ a fòto do schermo.</string>
+    <string name="dejavu_screenshot_permission">Pe sarvâ e föto do schermo ghe veu o permisso de sarvâ i schedai. Ti o peu permette inte inpostaçioin de l\'app de Android.</string>
 </resources>

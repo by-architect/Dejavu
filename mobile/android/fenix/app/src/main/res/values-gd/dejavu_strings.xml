@@ -559,4 +559,10 @@
     <string name="dejavu_settings_tips">Gliocasan</string>
     <string name="dejavu_settings_tips_summary">Seall gliocasan mu ghluasadan falaichte, mar a bhith a\' cumail “Taba ùr” sìos</string>
     <string name="dejavu_new">Ùr</string>
+    <string name="dejavu_menu_screenshot">Glacadh-sgrìn na duilleige gu lèir</string>
+    <string name="dejavu_screenshot_saving">A\' sàbhaladh a\' ghlacaidh-sgrìn…</string>
+    <string name="dejavu_screenshot_saved">Chaidh an glacadh-sgrìn a shàbhaladh sa phasgan %1$s</string>
+    <string name="dejavu_screenshot_failed">Cha b\' urrainn dhuinn glacadh-sgrìn a dhèanamh dhen duilleag seo. Feuch ris a-rithist.</string>
+    <string name="dejavu_screenshot_save_failed">Cha b\' urrainn dhuinn an glacadh-sgrìn a shàbhaladh.</string>
+    <string name="dejavu_screenshot_permission">Tha feum air cead faidhlichean a stòradh gus glacaidhean-sgrìn a shàbhaladh. Is urrainn dhut a cheadachadh ann an roghainnean na h-aplacaid air Android.</string>
 </resources>

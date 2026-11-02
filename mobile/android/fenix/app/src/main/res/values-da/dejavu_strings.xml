@@ -543,4 +543,10 @@
     <string name="dejavu_settings_tips">Tips</string>
     <string name="dejavu_settings_tips_summary">Vis tips om skjulte bevægelser, som at holde Nyt faneblad nede</string>
     <string name="dejavu_new">Ny</string>
+    <string name="dejavu_menu_screenshot">Skærmbillede af hele siden</string>
+    <string name="dejavu_screenshot_saving">Gemmer skærmbillede …</string>
+    <string name="dejavu_screenshot_saved">Skærmbillede gemt i %1$s</string>
+    <string name="dejavu_screenshot_failed">Kunne ikke tage et skærmbillede af denne side. Prøv igen.</string>
+    <string name="dejavu_screenshot_save_failed">Kunne ikke gemme skærmbilledet.</string>
+    <string name="dejavu_screenshot_permission">For at gemme skærmbilleder kræves tilladelse til at gemme filer. Du kan tillade det i appens indstillinger i Android.</string>
 </resources>

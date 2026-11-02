@@ -559,4 +559,10 @@
     <string name="dejavu_settings_tips">Парады</string>
     <string name="dejavu_settings_tips_summary">Паказваць парады пра схаваныя жэсты, напрыклад утрыманне кнопкі «Новая картка»</string>
     <string name="dejavu_new">Новае</string>
+    <string name="dejavu_menu_screenshot">Здымак усёй старонкі</string>
+    <string name="dejavu_screenshot_saving">Захаванне здымка экрана…</string>
+    <string name="dejavu_screenshot_saved">Здымак экрана захаваны ў %1$s</string>
+    <string name="dejavu_screenshot_failed">Не ўдалося зрабіць здымак экрана гэтай старонкі. Паспрабуйце зноў.</string>
+    <string name="dejavu_screenshot_save_failed">Не ўдалося захаваць здымак экрана.</string>
+    <string name="dejavu_screenshot_permission">Каб захоўваць здымкі экрана, патрэбен дазвол на захоўванне файлаў. Гэта можна дазволіць у наладах праграмы ў Android.</string>
 </resources>

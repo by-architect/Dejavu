@@ -559,4 +559,10 @@
     <string name="dejavu_settings_tips">Tipy</string>
     <string name="dejavu_settings_tips_summary">Zobrazovat tipy ke skrytým gestům, například podržení tlačítka „Nový panel“</string>
     <string name="dejavu_new">Novinka</string>
+    <string name="dejavu_menu_screenshot">Snímek celé stránky</string>
+    <string name="dejavu_screenshot_saving">Ukládání snímku obrazovky…</string>
+    <string name="dejavu_screenshot_saved">Snímek obrazovky byl uložen do složky %1$s</string>
+    <string name="dejavu_screenshot_failed">Snímek obrazovky této stránky se nepodařilo pořídit. Zkuste to znovu.</string>
+    <string name="dejavu_screenshot_save_failed">Snímek obrazovky se nepodařilo uložit.</string>
+    <string name="dejavu_screenshot_permission">Pro uložení snímků obrazovky je potřeba oprávnění k ukládání souborů. Můžete ho povolit v nastavení aplikace v systému Android.</string>
 </resources>

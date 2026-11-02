@@ -567,4 +567,10 @@
     <string name="dejavu_settings_tips">Leideanna</string>
     <string name="dejavu_settings_tips_summary">Taispeáin leideanna faoi ghothaí folaithe, mar shampla “Cluaisín nua” a choinneáil brúite</string>
     <string name="dejavu_new">Nua</string>
+    <string name="dejavu_menu_screenshot">Gabháil an leathanaigh iomláin</string>
+    <string name="dejavu_screenshot_saving">Ag sábháil na gabhála scáileáin…</string>
+    <string name="dejavu_screenshot_saved">Sábháladh an ghabháil scáileáin i %1$s</string>
+    <string name="dejavu_screenshot_failed">Níorbh fhéidir gabháil scáileáin a dhéanamh den leathanach seo. Bain triail eile as.</string>
+    <string name="dejavu_screenshot_save_failed">Níorbh fhéidir an ghabháil scáileáin a shábháil.</string>
+    <string name="dejavu_screenshot_permission">Chun gabhálacha scáileáin a shábháil, teastaíonn cead chun comhaid a stóráil. Is féidir leat é sin a cheadú i socruithe na haipe in Android.</string>
 </resources>

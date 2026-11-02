@@ -543,4 +543,10 @@
     <string name="dejavu_settings_tips">Consellos</string>
     <string name="dejavu_settings_tips_summary">Amosar consellos sobre xestos agochados, como manter premido «Nova lapela»</string>
     <string name="dejavu_new">Novo</string>
+    <string name="dejavu_menu_screenshot">Captura da páxina completa</string>
+    <string name="dejavu_screenshot_saving">Gardando a captura de pantalla…</string>
+    <string name="dejavu_screenshot_saved">Captura de pantalla gardada en %1$s</string>
+    <string name="dejavu_screenshot_failed">Non se puido facer unha captura de pantalla desta páxina. Téntao de novo.</string>
+    <string name="dejavu_screenshot_save_failed">Non se puido gardar a captura de pantalla.</string>
+    <string name="dejavu_screenshot_permission">Para gardar capturas de pantalla precísase permiso para almacenar ficheiros. Podes permitilo na configuración da aplicación en Android.</string>
 </resources>

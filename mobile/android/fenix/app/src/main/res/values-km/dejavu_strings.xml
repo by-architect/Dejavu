@@ -535,4 +535,10 @@
     <string name="dejavu_settings_tips">គន្លឹះ</string>
     <string name="dejavu_settings_tips_summary">បង្ហាញគន្លឹះអំពីកាយវិការដែលលាក់ ដូចជាការចុចប៊ូតុង ផ្ទាំងថ្មី ឱ្យជាប់</string>
     <string name="dejavu_new">ថ្មី</string>
+    <string name="dejavu_menu_screenshot">ថតអេក្រង់ពេញទំព័រ</string>
+    <string name="dejavu_screenshot_saving">កំពុងរក្សាទុករូបថតអេក្រង់…</string>
+    <string name="dejavu_screenshot_saved">បានរក្សាទុករូបថតអេក្រង់ក្នុង %1$s</string>
+    <string name="dejavu_screenshot_failed">មិនអាចថតអេក្រង់ទំព័រនេះបានទេ។ សូមព្យាយាមម្ដងទៀត។</string>
+    <string name="dejavu_screenshot_save_failed">មិនអាចរក្សាទុករូបថតអេក្រង់បានទេ។</string>
+    <string name="dejavu_screenshot_permission">ការរក្សាទុករូបថតអេក្រង់ត្រូវការសិទ្ធិរក្សាទុកឯកសារ។ អ្នកអាចអនុញ្ញាតវានៅក្នុងការកំណត់កម្មវិធីរបស់ Android។</string>
 </resources>

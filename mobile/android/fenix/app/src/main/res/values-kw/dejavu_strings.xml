@@ -575,4 +575,10 @@
     <string name="dejavu_settings_tips">Kussulyow</string>
     <string name="dejavu_settings_tips_summary">Diskwedhes kussulyow a-dro dhe wayansow kudh, kepar ha synsy “Tab Nowyth”</string>
     <string name="dejavu_new">Nowydh</string>
+    <string name="dejavu_menu_screenshot">Skeusen skrin an folen dhien</string>
+    <string name="dejavu_screenshot_saving">Ow kwitha an skeusen skrin…</string>
+    <string name="dejavu_screenshot_saved">An skeusen skrin yw gwithys yn %1$s</string>
+    <string name="dejavu_screenshot_failed">Ny yllys kemeres skeusen skrin a\'n folen ma. Assay arta.</string>
+    <string name="dejavu_screenshot_save_failed">Ny yllys gwitha an skeusen skrin.</string>
+    <string name="dejavu_screenshot_permission">Rag gwitha skeusennow skrin, yma edhom a gummyas dhe witha restrennow. Y hyllydh y alowa yn settyansow an app yn Android.</string>
 </resources>

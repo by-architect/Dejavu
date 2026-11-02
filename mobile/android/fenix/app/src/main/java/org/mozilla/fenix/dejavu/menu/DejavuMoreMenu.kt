@@ -99,6 +99,7 @@ data class MoreMenuState(
     val isWebPage: Boolean = false,
     val isPdf: Boolean = false,
     val isDeviceTab: Boolean = false,
+    val allowsScreenshots: Boolean = false,
     val splitWays: List<SplitOrientation> = emptyList(),
 )
 
@@ -181,6 +182,7 @@ private fun MoreMenuItem.look(state: MoreMenuState): EntryLook {
         -> default.copy(enabled = state.isWebPage)
         // Reader view and the PDF viewer are the browser's own pages, which the page saver cannot read.
         MoreMenuItem.SAVE_PAGE -> default.copy(enabled = state.isWebPage && !state.isInReaderView && !state.isPdf)
+        MoreMenuItem.SCREENSHOT -> default.copy(enabled = state.isWebPage && state.allowsScreenshots)
         MoreMenuItem.NEW_TAB, MoreMenuItem.EXTENSIONS, MoreMenuItem.PASSWORDS, MoreMenuItem.BOOKMARKS,
         MoreMenuItem.DOWNLOADS, MoreMenuItem.HISTORY, MoreMenuItem.SETTINGS, MoreMenuItem.CLEAR_DATA,
         MoreMenuItem.CLEAR_DATA_AND_QUIT,

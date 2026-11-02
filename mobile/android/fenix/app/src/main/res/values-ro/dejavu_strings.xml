@@ -551,4 +551,10 @@
     <string name="dejavu_settings_tips">Sfaturi</string>
     <string name="dejavu_settings_tips_summary">Afișează sfaturi despre gesturile ascunse, cum ar fi ținerea apăsată pe „Filă nouă”</string>
     <string name="dejavu_new">Nou</string>
+    <string name="dejavu_menu_screenshot">Captura întregii pagini</string>
+    <string name="dejavu_screenshot_saving">Se salvează captura de ecran…</string>
+    <string name="dejavu_screenshot_saved">Captură de ecran salvată în %1$s</string>
+    <string name="dejavu_screenshot_failed">Nu s-a putut face o captură de ecran a acestei pagini. Încearcă din nou.</string>
+    <string name="dejavu_screenshot_save_failed">Nu s-a putut salva captura de ecran.</string>
+    <string name="dejavu_screenshot_permission">Salvarea capturilor de ecran necesită permisiunea de a stoca fișiere. O poți acorda în setările aplicației din Android.</string>
 </resources>

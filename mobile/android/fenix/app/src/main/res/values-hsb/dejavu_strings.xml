@@ -559,4 +559,10 @@
     <string name="dejavu_settings_tips">Pokiwy</string>
     <string name="dejavu_settings_tips_summary">Pokiwy wo schowanych gestach pokazać, kaž dołhe tłóčenje na „Nowy rajtark“</string>
     <string name="dejavu_new">Nowy</string>
+    <string name="dejavu_menu_screenshot">Foto wobrazowki cyłeje strony</string>
+    <string name="dejavu_screenshot_saving">Foto wobrazowki so składuje…</string>
+    <string name="dejavu_screenshot_saved">Foto wobrazowki je składowane w zarjadniku %1$s</string>
+    <string name="dejavu_screenshot_failed">Foto wobrazowki tuteje strony njeda so wutworić. Spytaj hišće raz.</string>
+    <string name="dejavu_screenshot_save_failed">Foto wobrazowki njeda so składować.</string>
+    <string name="dejavu_screenshot_permission">Za składowanje fotow wobrazowki je prawo za składowanje datajow trěbne. Móžeš to w nastajenjach nałoženja w systemje Android dowolić.</string>
 </resources>

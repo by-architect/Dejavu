@@ -535,4 +535,10 @@
     <string name="dejavu_settings_tips">အကြံပြုချက်များ</string>
     <string name="dejavu_settings_tips_summary">“တက်ဗ် အသစ်” ကို ဖိထားခြင်းကဲ့သို့ ဝှက်ထားသော လက်ဟန်အမူအရာများအကြောင်း အကြံပြုချက်များ ပြသရန်</string>
     <string name="dejavu_new">အသစ်</string>
+    <string name="dejavu_menu_screenshot">စာမျက်နှာအပြည့် စခရင်ရှော့ခ်</string>
+    <string name="dejavu_screenshot_saving">စခရင်ရှော့ခ်ကို သိမ်းနေသည်…</string>
+    <string name="dejavu_screenshot_saved">စခရင်ရှော့ခ်ကို %1$s ဖိုင်တွဲတွင် သိမ်းထားသည်</string>
+    <string name="dejavu_screenshot_failed">ဤစာမျက်နှာ၏ စခရင်ရှော့ခ်ကို ရိုက်၍ မရပါ။ ထပ်စမ်းကြည့်ပါ။</string>
+    <string name="dejavu_screenshot_save_failed">စခရင်ရှော့ခ်ကို သိမ်း၍ မရပါ။</string>
+    <string name="dejavu_screenshot_permission">စခရင်ရှော့ခ်များ သိမ်းရန် ဖိုင်များ သိမ်းဆည်းခွင့် လိုအပ်သည်။ Android ၏ အက်ပ်ဆက်တင်များတွင် ၎င်းကို ခွင့်ပြုနိုင်သည်။</string>
 </resources>

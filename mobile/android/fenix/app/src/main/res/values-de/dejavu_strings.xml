@@ -543,4 +543,10 @@
     <string name="dejavu_settings_tips">Tipps</string>
     <string name="dejavu_settings_tips_summary">Tipps zu versteckten Gesten anzeigen, etwa „Neuer Tab“ gedrückt halten</string>
     <string name="dejavu_new">Neu</string>
+    <string name="dejavu_menu_screenshot">Ganzseitiges Bildschirmfoto</string>
+    <string name="dejavu_screenshot_saving">Bildschirmfoto wird gespeichert …</string>
+    <string name="dejavu_screenshot_saved">Bildschirmfoto in %1$s gespeichert</string>
+    <string name="dejavu_screenshot_failed">Von dieser Seite konnte kein Bildschirmfoto aufgenommen werden. Versuche es erneut.</string>
+    <string name="dejavu_screenshot_save_failed">Das Bildschirmfoto konnte nicht gespeichert werden.</string>
+    <string name="dejavu_screenshot_permission">Bildschirmfotos können nur gespeichert werden, wenn die App Dateien speichern darf. Du kannst das in den App-Einstellungen von Android erlauben.</string>
 </resources>
