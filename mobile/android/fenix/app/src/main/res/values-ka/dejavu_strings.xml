@@ -543,4 +543,10 @@
     <string name="dejavu_settings_tips_summary">რჩევების ჩვენება ფარული ჟესტების შესახებ, მაგალითად „ახალი ჩანართი“ ღილაკზე ხანგრძლივად შეხება</string>
     <string name="dejavu_new">სიახლე</string>
     <string name="dejavu_menu_customize_reader_view">კითხვის რეჟიმის მორგება</string>
+    <string name="dejavu_loading_colors">ფერები გვერდის ჩატვირთვისას</string>
+    <string name="dejavu_loading_colors_rainbow">ცისარტყელა</string>
+    <string name="dejavu_loading_colors_workspace">სივრცის ფერები</string>
+    <string name="dejavu_loading_colors_workspace_summary">ჩანართის სივრცის ფერები. პირადი ჩანართები და უფერო სივრცეები ცისარტყელას აჩვენებს.</string>
+    <string name="dejavu_loading_colors_custom">მორგებული ფერები</string>
+    <string name="dejavu_loading_colors_custom_summary">აირჩიეთ სამამდე ფერი. შესაცვლელად კვლავ შეეხეთ.</string>
 </resources>

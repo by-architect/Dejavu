@@ -543,4 +543,10 @@
     <string name="dejavu_settings_tips_summary">Visa tips om dolda gester, som att hålla ned Ny flik</string>
     <string name="dejavu_new">Ny</string>
     <string name="dejavu_menu_customize_reader_view">Anpassa läsvyn</string>
+    <string name="dejavu_loading_colors">Färger medan en sida läses in</string>
+    <string name="dejavu_loading_colors_rainbow">Regnbåge</string>
+    <string name="dejavu_loading_colors_workspace">Arbetsytans färger</string>
+    <string name="dejavu_loading_colors_workspace_summary">Färgerna från flikens arbetsyta. Privata flikar och arbetsytor utan färger visar regnbågen.</string>
+    <string name="dejavu_loading_colors_custom">Anpassade färger</string>
+    <string name="dejavu_loading_colors_custom_summary">Välj upp till tre färger. Tryck igen för att ändra dem.</string>
 </resources>

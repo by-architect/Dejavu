@@ -543,4 +543,10 @@
     <string name="dejavu_settings_tips_summary">Jasırın háreketler haqqında keńeslerdi kórsetiw, mısalı «Jańa bet» túymesin basıp turıw</string>
     <string name="dejavu_new">Jańa</string>
     <string name="dejavu_menu_customize_reader_view">Oqıw kórinisin jeke sazlaw</string>
+    <string name="dejavu_loading_colors">Bet júklenip atırǵanda reńler</string>
+    <string name="dejavu_loading_colors_rainbow">Kempirqosaq</string>
+    <string name="dejavu_loading_colors_workspace">Jumıs maydanı reńleri</string>
+    <string name="dejavu_loading_colors_workspace_summary">Bettiń jumıs maydanınıń reńleri. Jeke betler hám reńsiz jumıs maydanları kempirqosaqtı kórsetedi.</string>
+    <string name="dejavu_loading_colors_custom">Arnawlı reńler</string>
+    <string name="dejavu_loading_colors_custom_summary">Úshke shekem reń tańlań. Ózgertiw ushın qayta basıń.</string>
 </resources>

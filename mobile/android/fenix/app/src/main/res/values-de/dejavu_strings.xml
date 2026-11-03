@@ -543,4 +543,10 @@
     <string name="dejavu_settings_tips_summary">Tipps zu versteckten Gesten anzeigen, etwa „Neuer Tab“ gedrückt halten</string>
     <string name="dejavu_new">Neu</string>
     <string name="dejavu_menu_customize_reader_view">Leseansicht anpassen</string>
+    <string name="dejavu_loading_colors">Farben beim Laden einer Seite</string>
+    <string name="dejavu_loading_colors_rainbow">Regenbogen</string>
+    <string name="dejavu_loading_colors_workspace">Farben des Arbeitsbereichs</string>
+    <string name="dejavu_loading_colors_workspace_summary">Die Farben des Arbeitsbereichs des Tabs. Private Tabs und Arbeitsbereiche ohne Farben zeigen den Regenbogen.</string>
+    <string name="dejavu_loading_colors_custom">Eigene Farben</string>
+    <string name="dejavu_loading_colors_custom_summary">Bis zu drei Farben auswählen. Erneut tippen, um sie zu ändern.</string>
 </resources>

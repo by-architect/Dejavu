@@ -559,4 +559,10 @@
     <string name="dejavu_settings_tips_summary">Zobrazovat tipy ke skrytým gestům, například podržení tlačítka „Nový panel“</string>
     <string name="dejavu_new">Novinka</string>
     <string name="dejavu_menu_customize_reader_view">Přizpůsobit zobrazení čtečky</string>
+    <string name="dejavu_loading_colors">Barvy při načítání stránky</string>
+    <string name="dejavu_loading_colors_rainbow">Duha</string>
+    <string name="dejavu_loading_colors_workspace">Barvy pracovního prostoru</string>
+    <string name="dejavu_loading_colors_workspace_summary">Barvy pracovního prostoru panelu. Anonymní panely a pracovní prostory bez barev zobrazují duhu.</string>
+    <string name="dejavu_loading_colors_custom">Vlastní barvy</string>
+    <string name="dejavu_loading_colors_custom_summary">Vyberte až tři barvy. Dalším klepnutím je změníte.</string>
 </resources>

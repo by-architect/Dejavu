@@ -559,4 +559,10 @@
     <string name="dejavu_settings_tips_summary">Pokazuj porady ô skrytych gestach, jak przitrzimanie „Nowo karta”</string>
     <string name="dejavu_new">Nowe</string>
     <string name="dejavu_menu_customize_reader_view">Przipasuj wyglōnd do czytanio</string>
+    <string name="dejavu_loading_colors">Farby w czasie ladowanio strōny</string>
+    <string name="dejavu_loading_colors_rainbow">Dōnga</string>
+    <string name="dejavu_loading_colors_workspace">Farby placu</string>
+    <string name="dejavu_loading_colors_workspace_summary">Farby placu karty. Prywatne karty i place bez farbōw pokazujōm dōnga.</string>
+    <string name="dejavu_loading_colors_custom">Włosne farby</string>
+    <string name="dejavu_loading_colors_custom_summary">Ôbier do trzech farbōw. Tyknij jeszcze roz, żeby je zmiynić.</string>
 </resources>

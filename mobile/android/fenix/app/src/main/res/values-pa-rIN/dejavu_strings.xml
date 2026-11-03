@@ -543,4 +543,10 @@
     <string name="dejavu_settings_tips_summary">“ਨਵੀਂ ਟੈਬ” ਨੂੰ ਦਬਾ ਕੇ ਰੱਖਣ ਵਰਗੇ ਲੁਕਵੇਂ ਇਸ਼ਾਰਿਆਂ ਬਾਰੇ ਸੁਝਾਅ ਦਿਖਾਓ</string>
     <string name="dejavu_new">ਨਵਾਂ</string>
     <string name="dejavu_menu_customize_reader_view">ਪੜ੍ਹਨ ਝਲਕ ਨੂੰ ਕਸਟਮਾਈਜ਼ ਕਰੋ</string>
+    <string name="dejavu_loading_colors">ਸਫ਼ਾ ਲੋਡ ਹੁੰਦੇ ਸਮੇਂ ਰੰਗ</string>
+    <string name="dejavu_loading_colors_rainbow">ਸਤਰੰਗੀ ਪੀਂਘ</string>
+    <string name="dejavu_loading_colors_workspace">ਵਰਕਸਪੇਸ ਦੇ ਰੰਗ</string>
+    <string name="dejavu_loading_colors_workspace_summary">ਟੈਬ ਦੇ ਵਰਕਸਪੇਸ ਦੇ ਰੰਗ। ਪ੍ਰਾਈਵੇਟ ਟੈਬਾਂ ਅਤੇ ਬਿਨਾਂ ਰੰਗਾਂ ਵਾਲੇ ਵਰਕਸਪੇਸ ਸਤਰੰਗੀ ਪੀਂਘ ਦਿਖਾਉਂਦੇ ਹਨ।</string>
+    <string name="dejavu_loading_colors_custom">ਕਸਟਮ ਰੰਗ</string>
+    <string name="dejavu_loading_colors_custom_summary">ਤਿੰਨ ਤੱਕ ਰੰਗ ਚੁਣੋ। ਬਦਲਣ ਲਈ ਮੁੜ ਟੈਪ ਕਰੋ।</string>
 </resources>

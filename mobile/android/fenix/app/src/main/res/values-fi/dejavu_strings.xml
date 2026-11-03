@@ -543,4 +543,10 @@
     <string name="dejavu_settings_tips_summary">Näytä vinkkejä piilotetuista eleistä, kuten Uusi välilehti -painikkeen pitkästä painalluksesta</string>
     <string name="dejavu_new">Uutta</string>
     <string name="dejavu_menu_customize_reader_view">Mukauta lukunäkymää</string>
+    <string name="dejavu_loading_colors">Värit sivun latautuessa</string>
+    <string name="dejavu_loading_colors_rainbow">Sateenkaari</string>
+    <string name="dejavu_loading_colors_workspace">Työtilan värit</string>
+    <string name="dejavu_loading_colors_workspace_summary">Välilehden työtilan värit. Yksityiset välilehdet ja työtilat ilman värejä näyttävät sateenkaaren.</string>
+    <string name="dejavu_loading_colors_custom">Mukautetut värit</string>
+    <string name="dejavu_loading_colors_custom_summary">Valitse enintään kolme väriä. Muuta niitä napauttamalla uudelleen.</string>
 </resources>

@@ -543,4 +543,10 @@
     <string name="dejavu_settings_tips_summary">Yeni sekme\'ye basılı tutmak gibi gizli parmak hareketleriyle ilgili ipuçlarını göster</string>
     <string name="dejavu_new">Yeni</string>
     <string name="dejavu_menu_customize_reader_view">Okuyucu görünümünü özelleştir</string>
+    <string name="dejavu_loading_colors">Sayfa yüklenirken renkler</string>
+    <string name="dejavu_loading_colors_rainbow">Gökkuşağı</string>
+    <string name="dejavu_loading_colors_workspace">Çalışma alanı renkleri</string>
+    <string name="dejavu_loading_colors_workspace_summary">Sekmenin çalışma alanının renkleri. Gizli sekmeler ve rengi olmayan çalışma alanları gökkuşağını gösterir.</string>
+    <string name="dejavu_loading_colors_custom">Özel renkler</string>
+    <string name="dejavu_loading_colors_custom_summary">En fazla üç renk seçin. Değiştirmek için yeniden dokunun.</string>
 </resources>

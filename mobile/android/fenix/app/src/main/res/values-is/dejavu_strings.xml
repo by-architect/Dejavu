@@ -543,4 +543,10 @@
     <string name="dejavu_settings_tips_summary">Sýna ábendingar um faldar bendingar, eins og að halda „Nýr flipi“ niðri</string>
     <string name="dejavu_new">Nýtt</string>
     <string name="dejavu_menu_customize_reader_view">Sérsníða lesham</string>
+    <string name="dejavu_loading_colors">Litir á meðan síða hleðst</string>
+    <string name="dejavu_loading_colors_rainbow">Regnbogi</string>
+    <string name="dejavu_loading_colors_workspace">Litir vinnusvæðis</string>
+    <string name="dejavu_loading_colors_workspace_summary">Litir vinnusvæðis flipans. Huliðsflipar og vinnusvæði án lita sýna regnbogann.</string>
+    <string name="dejavu_loading_colors_custom">Sérsniðnir litir</string>
+    <string name="dejavu_loading_colors_custom_summary">Veldu allt að þrjá liti. Ýttu aftur til að breyta þeim.</string>
 </resources>

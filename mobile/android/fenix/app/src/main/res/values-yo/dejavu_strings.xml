@@ -535,4 +535,10 @@
     <string name="dejavu_settings_tips_summary">Fi àwọn ìmọ̀ràn hàn nípa àwọn ìfarajúwèé tó farasin, bí dídi bọ́tìnnì Táàbù Tuntun mú</string>
     <string name="dejavu_new">Tuntun</string>
     <string name="dejavu_menu_customize_reader_view">Sọ èrò olùkà di ti ara ẹni</string>
+    <string name="dejavu_loading_colors">Àwọ̀ nígbà tí ojú-ìwé ń ṣí</string>
+    <string name="dejavu_loading_colors_rainbow">Òṣùmàrè</string>
+    <string name="dejavu_loading_colors_workspace">Àwọ̀ ibi-iṣẹ́</string>
+    <string name="dejavu_loading_colors_workspace_summary">Àwọ̀ ibi-iṣẹ́ táàbù náà. Àwọn táàbù ìkọ̀kọ̀ àti àwọn ibi-iṣẹ́ tí kò ní àwọ̀ máa ń fi òṣùmàrè hàn.</string>
+    <string name="dejavu_loading_colors_custom">Àwọ̀ àdáni</string>
+    <string name="dejavu_loading_colors_custom_summary">Yan tó àwọ̀ mẹ́ta. Tẹ̀ ẹ́ lẹ́ẹ̀kan sí i láti yí wọn padà.</string>
 </resources>

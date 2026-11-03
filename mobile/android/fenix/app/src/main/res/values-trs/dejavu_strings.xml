@@ -543,4 +543,10 @@
     <string name="dejavu_settings_tips_summary">Mostrar consejos sobre gestos ocultos, como mantener presionado “Rakïj ñanj nakàa”</string>
     <string name="dejavu_new">Nakàa</string>
     <string name="dejavu_menu_customize_reader_view">Nāgi’hiaj da’ Nānùn man guendâ Gāhiāt</string>
+    <string name="dejavu_loading_colors">Colores mientras carga una página</string>
+    <string name="dejavu_loading_colors_rainbow">Arcoíris</string>
+    <string name="dejavu_loading_colors_workspace">Colores del espacio de trabajo</string>
+    <string name="dejavu_loading_colors_workspace_summary">Los colores del espacio de trabajo de la pestaña. Las pestañas huìt y los espacios de trabajo sin colores muestran el arcoíris.</string>
+    <string name="dejavu_loading_colors_custom">Colores personalizados</string>
+    <string name="dejavu_loading_colors_custom_summary">Elige hasta tres colores. Tócalo de nuevo para cambiarlos.</string>
 </resources>

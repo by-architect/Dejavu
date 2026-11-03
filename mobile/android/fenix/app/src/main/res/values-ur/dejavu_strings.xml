@@ -543,4 +543,10 @@
     <string name="dejavu_settings_tips_summary">پوشیدہ اشاروں کے بارے میں تجاویز دکھائیں، جیسے ”نیا ٹیب“ کو دبا کر رکھنا</string>
     <string name="dejavu_new">نیا</string>
     <string name="dejavu_menu_customize_reader_view">ریڈر ویو کی تخصیص کریں</string>
+    <string name="dejavu_loading_colors">صفحہ لوڈ ہوتے وقت رنگ</string>
+    <string name="dejavu_loading_colors_rainbow">قوس قزح</string>
+    <string name="dejavu_loading_colors_workspace">ورک اسپیس کے رنگ</string>
+    <string name="dejavu_loading_colors_workspace_summary">ٹیب کی ورک اسپیس کے رنگ۔ نجی ٹیب اور بغیر رنگوں والی ورک اسپیسز قوس قزح دکھاتی ہیں۔</string>
+    <string name="dejavu_loading_colors_custom">حسبِ ضرورت رنگ</string>
+    <string name="dejavu_loading_colors_custom_summary">تین تک رنگ منتخب کریں۔ تبدیل کرنے کے لیے دوبارہ تھپتھپائیں۔</string>
 </resources>

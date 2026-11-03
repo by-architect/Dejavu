@@ -551,4 +551,10 @@
     <string name="dejavu_settings_tips_summary">הצגת טיפים על מחוות נסתרות, כמו לחיצה ארוכה על ״לשונית חדשה״</string>
     <string name="dejavu_new">חדש</string>
     <string name="dejavu_menu_customize_reader_view">התאמה אישית של תצוגת קריאה</string>
+    <string name="dejavu_loading_colors">צבעים בזמן טעינת דף</string>
+    <string name="dejavu_loading_colors_rainbow">קשת</string>
+    <string name="dejavu_loading_colors_workspace">צבעי מרחב העבודה</string>
+    <string name="dejavu_loading_colors_workspace_summary">הצבעים של מרחב העבודה של הלשונית. לשוניות פרטיות ומרחבי עבודה ללא צבעים מציגים את הקשת.</string>
+    <string name="dejavu_loading_colors_custom">צבעים מותאמים אישית</string>
+    <string name="dejavu_loading_colors_custom_summary">בחרו עד שלושה צבעים. הקישו שוב כדי לשנות אותם.</string>
 </resources>

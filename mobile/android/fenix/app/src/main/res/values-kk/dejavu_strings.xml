@@ -543,4 +543,10 @@
     <string name="dejavu_settings_tips_summary">«Жаңа бет» түймесін басып тұру сияқты жасырын ым қимылдары туралы кеңестерді көрсету</string>
     <string name="dejavu_new">Жаңа</string>
     <string name="dejavu_menu_customize_reader_view">Оқу режимін баптау</string>
+    <string name="dejavu_loading_colors">Бет жүктелгенде түстер</string>
+    <string name="dejavu_loading_colors_rainbow">Кемпірқосақ</string>
+    <string name="dejavu_loading_colors_workspace">Жұмыс кеңістігінің түстері</string>
+    <string name="dejavu_loading_colors_workspace_summary">Беттің жұмыс кеңістігінің түстері. Жекелік беттер мен түссіз жұмыс кеңістіктері кемпірқосақты көрсетеді.</string>
+    <string name="dejavu_loading_colors_custom">Таңдауыңызша түстер</string>
+    <string name="dejavu_loading_colors_custom_summary">Үш түске дейін таңдаңыз. Өзгерту үшін қайта түртіңіз.</string>
 </resources>

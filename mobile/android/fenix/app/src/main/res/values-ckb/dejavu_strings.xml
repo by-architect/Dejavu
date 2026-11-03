@@ -543,4 +543,10 @@
     <string name="dejavu_settings_tips_summary">پیشاندانی ئامۆژگاری دەربارەی جوڵاندنە شاراوەکان، وەک ڕاگرتنی «بازدەری نوێ»</string>
     <string name="dejavu_new">نوێ</string>
     <string name="dejavu_menu_customize_reader_view">شێوازی دۆخی خوێندنەوە دەستکاریبکە</string>
+    <string name="dejavu_loading_colors">ڕەنگەکان کاتێک پەڕەیەک باردەکرێت</string>
+    <string name="dejavu_loading_colors_rainbow">پەلکەزێڕینە</string>
+    <string name="dejavu_loading_colors_workspace">ڕەنگەکانی فەزا</string>
+    <string name="dejavu_loading_colors_workspace_summary">ڕەنگەکانی فەزای بازدەرەکە. بازدەرە تایبەتەکان و فەزا بێ ڕەنگەکان پەلکەزێڕینە پیشان دەدەن.</string>
+    <string name="dejavu_loading_colors_custom">ڕەنگی تایبەت</string>
+    <string name="dejavu_loading_colors_custom_summary">تا سێ ڕەنگ هەڵبژێرە. دووبارە دەست بنێ بۆ گۆڕینیان.</string>
 </resources>

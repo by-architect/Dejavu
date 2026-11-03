@@ -543,4 +543,10 @@
     <string name="dejavu_settings_tips_summary">“नवीन टॅब” दाबून धरण्यासारख्या लपलेल्या जेश्चरविषयी टिपा दाखवा</string>
     <string name="dejavu_new">नवीन</string>
     <string name="dejavu_menu_customize_reader_view">वाचक मोड स्वेच्छेनुरूप करा</string>
+    <string name="dejavu_loading_colors">पृष्ठ लोड होताना रंग</string>
+    <string name="dejavu_loading_colors_rainbow">इंद्रधनुष्य</string>
+    <string name="dejavu_loading_colors_workspace">कार्यक्षेत्राचे रंग</string>
+    <string name="dejavu_loading_colors_workspace_summary">टॅबच्या कार्यक्षेत्राचे रंग. खाजगी टॅब आणि रंग नसलेली कार्यक्षेत्रे इंद्रधनुष्य दाखवतात.</string>
+    <string name="dejavu_loading_colors_custom">सानुकूल रंग</string>
+    <string name="dejavu_loading_colors_custom_summary">तीनपर्यंत रंग निवडा. बदलण्यासाठी पुन्हा टॅप करा.</string>
 </resources>

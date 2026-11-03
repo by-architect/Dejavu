@@ -16,6 +16,7 @@ import org.mozilla.fenix.dejavu.actions.CustomAction
 import org.mozilla.fenix.dejavu.actions.RowAction
 import org.mozilla.fenix.dejavu.actions.TabAction
 import org.mozilla.fenix.dejavu.browser.BarsLayout
+import org.mozilla.fenix.dejavu.browser.LoadingColorsChoice
 import org.mozilla.fenix.dejavu.containers.ContainerPick
 import org.mozilla.fenix.dejavu.history.HistoryGrouping
 import org.mozilla.fenix.dejavu.menu.ActionsBarLayout
@@ -50,6 +51,9 @@ class DejavuSettings private constructor(context: Context) {
     private val _moreMenuEditHidden = MutableStateFlow(prefs.getBoolean(KEY_MORE_MENU_EDIT_HIDDEN, false))
     private val _systemBarsHidden = MutableStateFlow(prefs.getBoolean(KEY_SYSTEM_BARS_HIDDEN, false))
     private val _barsLayout = MutableStateFlow(BarsLayout.fromKey(prefs.getString(KEY_BARS_LAYOUT, null)))
+    private val _loadingColors =
+        MutableStateFlow(LoadingColorsChoice.fromKey(prefs.getString(KEY_LOADING_COLORS, null)))
+    private val _loadingCustomColors = MutableStateFlow(readColors(KEY_LOADING_CUSTOM_COLORS))
     private val _homeSearchAtBottom = MutableStateFlow(prefs.getBoolean(KEY_HOME_SEARCH_AT_BOTTOM, false))
     private val _addressBarButtons = MutableStateFlow(readAddressBarButtons())
     private val _actionsBarKeys = MutableStateFlow(readActionsBar())
@@ -98,6 +102,12 @@ class DejavuSettings private constructor(context: Context) {
 
     /** Where the bars show around pages, and so where the "More" menu opens from. */
     val barsLayout: StateFlow<BarsLayout> = _barsLayout.asStateFlow()
+
+    /** The colors that run through the address bar's letters while a page loads. */
+    val loadingColors: StateFlow<LoadingColorsChoice> = _loadingColors.asStateFlow()
+
+    /** The user's own colors for [LoadingColorsChoice.CUSTOM], as ARGB; none before they picked any. */
+    val loadingCustomColors: StateFlow<List<Int>> = _loadingCustomColors.asStateFlow()
 
     /**
      * Whether the home screen shows its search bar, with the account and settings buttons, at the bottom, and the bar of
@@ -255,6 +265,16 @@ class DejavuSettings private constructor(context: Context) {
         prefs.edit { putString(KEY_BARS_LAYOUT, layout.key) }
     }
 
+    fun setLoadingColors(choice: LoadingColorsChoice) {
+        _loadingColors.value = choice
+        prefs.edit { putString(KEY_LOADING_COLORS, choice.key) }
+    }
+
+    fun setLoadingCustomColors(colors: List<Int>) {
+        _loadingCustomColors.value = colors
+        prefs.edit { putString(KEY_LOADING_CUSTOM_COLORS, colors.joinToString(",")) }
+    }
+
     fun setHomeSearchAtBottom(atBottom: Boolean) {
         _homeSearchAtBottom.value = atBottom
         prefs.edit { putBoolean(KEY_HOME_SEARCH_AT_BOTTOM, atBottom) }
@@ -355,6 +375,9 @@ class DejavuSettings private constructor(context: Context) {
     private fun readKeys(key: String, default: List<TabAction>): List<String> =
         prefs.getString(key, null)?.split(",")?.filter { it.isNotBlank() } ?: default.map { it.key }
 
+    private fun readColors(key: String): List<Int> =
+        prefs.getString(key, null)?.split(",")?.mapNotNull { it.toIntOrNull() }.orEmpty()
+
     private fun readSet(key: String): Set<String> =
         prefs.getString(key, null)?.split(",")?.filter { it.isNotBlank() }?.toSet().orEmpty()
 
@@ -440,6 +463,8 @@ class DejavuSettings private constructor(context: Context) {
         private const val KEY_MORE_MENU_EDIT_HIDDEN = "more_menu_edit_hidden"
         private const val KEY_SYSTEM_BARS_HIDDEN = "system_bars_hidden"
         private const val KEY_BARS_LAYOUT = "bars_layout"
+        private const val KEY_LOADING_COLORS = "loading_colors"
+        private const val KEY_LOADING_CUSTOM_COLORS = "loading_custom_colors"
         private const val KEY_HOME_SEARCH_AT_BOTTOM = "home_search_at_bottom"
         private const val KEY_ADDRESS_BAR_START = "address_bar_start"
         private const val KEY_ADDRESS_BAR_END = "address_bar_end"

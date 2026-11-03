@@ -559,4 +559,10 @@
     <string name="dejavu_settings_tips_summary">Pokiwy wo schowanych gestach pokazać, kaž dołhe tłóčenje na „Nowy rajtark“</string>
     <string name="dejavu_new">Nowy</string>
     <string name="dejavu_menu_customize_reader_view">Čitanski napohlad přiměrić</string>
+    <string name="dejavu_loading_colors">Barby, mjeztym zo so strona začituje</string>
+    <string name="dejavu_loading_colors_rainbow">Dźědźel</string>
+    <string name="dejavu_loading_colors_workspace">Barby dźěłoweho ruma</string>
+    <string name="dejavu_loading_colors_workspace_summary">Barby dźěłoweho ruma rajtarka. Priwatne rajtarki a dźěłowe rumy bjez barbow dźědźel pokazuja.</string>
+    <string name="dejavu_loading_colors_custom">Swójske barby</string>
+    <string name="dejavu_loading_colors_custom_summary">Wubjerće hač do třoch barbow. Podótkńće so znowa, zo byšće je změnił.</string>
 </resources>

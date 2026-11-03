@@ -543,4 +543,10 @@
     <string name="dejavu_settings_tips_summary">Gizli jestlər haqqında məsləhətlər göstər, məsələn, Yeni vərəq düyməsini basıb saxlamaq</string>
     <string name="dejavu_new">Yeni</string>
     <string name="dejavu_menu_customize_reader_view">Oxuyucu görünüşünü fərdiləşdir</string>
+    <string name="dejavu_loading_colors">Səhifə yüklənərkən rənglər</string>
+    <string name="dejavu_loading_colors_rainbow">Göy qurşağı</string>
+    <string name="dejavu_loading_colors_workspace">İş sahəsinin rəngləri</string>
+    <string name="dejavu_loading_colors_workspace_summary">Vərəqin iş sahəsinin rəngləri. Məxfi vərəqlər və rəngsiz iş sahələri göy qurşağını göstərir.</string>
+    <string name="dejavu_loading_colors_custom">Xüsusi rənglər</string>
+    <string name="dejavu_loading_colors_custom_summary">Üç rəngə qədər seçin. Dəyişmək üçün yenidən toxunun.</string>
 </resources>

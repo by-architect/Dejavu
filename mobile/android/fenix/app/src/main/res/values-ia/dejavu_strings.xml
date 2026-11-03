@@ -543,4 +543,10 @@
     <string name="dejavu_settings_tips_summary">Monstrar consilios sur gestos celate, como tener pressate ‘Nove scheda’</string>
     <string name="dejavu_new">Nove</string>
     <string name="dejavu_menu_customize_reader_view">Personalisar le vista de lectura</string>
+    <string name="dejavu_loading_colors">Colores durante que un pagina carga</string>
+    <string name="dejavu_loading_colors_rainbow">Arco iris</string>
+    <string name="dejavu_loading_colors_workspace">Colores del spatio de labor</string>
+    <string name="dejavu_loading_colors_workspace_summary">Le colores del spatio de labor del scheda. Schedas private e spatios de labor sin colores monstra le arco iris.</string>
+    <string name="dejavu_loading_colors_custom">Colores personalisate</string>
+    <string name="dejavu_loading_colors_custom_summary">Selige usque a tres colores. Tocca de novo pro cambiar los.</string>
 </resources>

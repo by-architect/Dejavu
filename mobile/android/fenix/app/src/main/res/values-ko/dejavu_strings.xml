@@ -535,4 +535,10 @@
     <string name="dejavu_settings_tips_summary">\'새 탭\' 길게 누르기 등 숨겨진 제스처에 대한 팁 표시</string>
     <string name="dejavu_new">신규</string>
     <string name="dejavu_menu_customize_reader_view">읽기 모드 사용자 지정</string>
+    <string name="dejavu_loading_colors">페이지를 불러오는 동안의 색상</string>
+    <string name="dejavu_loading_colors_rainbow">무지개</string>
+    <string name="dejavu_loading_colors_workspace">작업 공간 색상</string>
+    <string name="dejavu_loading_colors_workspace_summary">탭이 속한 작업 공간의 색상입니다. 사생활 보호 탭과 색상이 없는 작업 공간에서는 무지개가 표시됩니다.</string>
+    <string name="dejavu_loading_colors_custom">사용자 지정 색상</string>
+    <string name="dejavu_loading_colors_custom_summary">최대 3가지 색상을 선택하세요. 다시 탭하면 바꿀 수 있습니다.</string>
 </resources>

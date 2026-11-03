@@ -559,4 +559,10 @@
     <string name="dejavu_settings_tips_summary">Seall gliocasan mu ghluasadan falaichte, mar a bhith a\' cumail “Taba ùr” sìos</string>
     <string name="dejavu_new">Ùr</string>
     <string name="dejavu_menu_customize_reader_view">Gnàthaich sealladh an leughadair</string>
+    <string name="dejavu_loading_colors">Dathan fhad \'s a tha duilleag ga luchdadh</string>
+    <string name="dejavu_loading_colors_rainbow">Bogha-froise</string>
+    <string name="dejavu_loading_colors_workspace">Dathan an àite-obrach</string>
+    <string name="dejavu_loading_colors_workspace_summary">Dathan àite-obrach an taba. Seallaidh tabaichean prìobhaideach agus àiteachan-obrach gun dathan am bogha-froise.</string>
+    <string name="dejavu_loading_colors_custom">Dathan gnàthaichte</string>
+    <string name="dejavu_loading_colors_custom_summary">Tagh suas ri trì dathan. Thoir gnogag a-rithist gus an atharrachadh.</string>
 </resources>

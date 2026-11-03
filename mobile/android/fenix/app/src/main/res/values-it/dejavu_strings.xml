@@ -543,4 +543,10 @@
     <string name="dejavu_settings_tips_summary">Mostra suggerimenti sui gesti nascosti, come tenere premuto «Nuova scheda»</string>
     <string name="dejavu_new">Novità</string>
     <string name="dejavu_menu_customize_reader_view">Personalizza modalità lettura</string>
+    <string name="dejavu_loading_colors">Colori durante il caricamento di una pagina</string>
+    <string name="dejavu_loading_colors_rainbow">Arcobaleno</string>
+    <string name="dejavu_loading_colors_workspace">Colori dello spazio</string>
+    <string name="dejavu_loading_colors_workspace_summary">I colori dello spazio della scheda. Le schede anonime e gli spazi senza colori mostrano l\'arcobaleno.</string>
+    <string name="dejavu_loading_colors_custom">Colori personalizzati</string>
+    <string name="dejavu_loading_colors_custom_summary">Scegli fino a tre colori. Tocca di nuovo per cambiarli.</string>
 </resources>

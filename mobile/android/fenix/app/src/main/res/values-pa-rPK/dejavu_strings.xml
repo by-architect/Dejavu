@@ -543,4 +543,10 @@
     <string name="dejavu_settings_tips_summary">لُکے ہوئے اشاریاں بارے مشورے وکھاؤ، جویں “نویں ٹیب کھولھو” نوں دبا کے رکھݨا</string>
     <string name="dejavu_new">نواں</string>
     <string name="dejavu_menu_customize_reader_view">پڑھن جھلک نوں من پسند بݨاؤ</string>
+    <string name="dejavu_loading_colors">صفحہ لوڈ ہوندیاں رنگ</string>
+    <string name="dejavu_loading_colors_rainbow">پینگھ</string>
+    <string name="dejavu_loading_colors_workspace">ورک سپیس دے رنگ</string>
+    <string name="dejavu_loading_colors_workspace_summary">ٹیب دی ورک سپیس دے رنگ۔ نجی ٹیباں تے بنا رنگاں والیاں ورک سپیساں پینگھ وکھاندیاں نیں۔</string>
+    <string name="dejavu_loading_colors_custom">مرضی دے رنگ</string>
+    <string name="dejavu_loading_colors_custom_summary">تن تیکر رنگ چݨو۔ بدلن لئی مڑ ٹیپ کرو۔</string>
 </resources>

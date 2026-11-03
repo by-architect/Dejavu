@@ -535,4 +535,10 @@
     <string name="dejavu_settings_tips_summary">Edengang tips indik gestur ane kaengkebang, minakadi nekek “Tab Anyar”</string>
     <string name="dejavu_new">Anyar</string>
     <string name="dejavu_menu_customize_reader_view">Setel tampilan pamaca</string>
+    <string name="dejavu_loading_colors">Warna ritatkala kaca kamuat</string>
+    <string name="dejavu_loading_colors_rainbow">Bianglala</string>
+    <string name="dejavu_loading_colors_workspace">Warna genah</string>
+    <string name="dejavu_loading_colors_workspace_summary">Warna genah tab puniki. Tab pribadi miwah genah sane nenten madue warna ngedengang bianglala.</string>
+    <string name="dejavu_loading_colors_custom">Warna kustom</string>
+    <string name="dejavu_loading_colors_custom_summary">Pilih kantos tetiga warna. Tegul malih anggen ngentosin.</string>
 </resources>

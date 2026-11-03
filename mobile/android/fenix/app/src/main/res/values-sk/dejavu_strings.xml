@@ -559,4 +559,10 @@
     <string name="dejavu_settings_tips_summary">Zobraziť tipy o skrytých gestách, ako je podržanie tlačidla Nová karta</string>
     <string name="dejavu_new">Novinka</string>
     <string name="dejavu_menu_customize_reader_view">Prispôsobiť zobrazenie Čítačka</string>
+    <string name="dejavu_loading_colors">Farby počas načítania stránky</string>
+    <string name="dejavu_loading_colors_rainbow">Dúha</string>
+    <string name="dejavu_loading_colors_workspace">Farby pracovného priestoru</string>
+    <string name="dejavu_loading_colors_workspace_summary">Farby pracovného priestoru karty. Súkromné karty a pracovné priestory bez farieb zobrazujú dúhu.</string>
+    <string name="dejavu_loading_colors_custom">Vlastné farby</string>
+    <string name="dejavu_loading_colors_custom_summary">Vyberte až tri farby. Ďalším ťuknutím ich zmeníte.</string>
 </resources>

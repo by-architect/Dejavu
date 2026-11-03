@@ -543,4 +543,10 @@
     <string name="dejavu_settings_tips_summary">Afficher des conseils sur les beese junngo cachés, comme l\'appui long sur Tabbere hesere</string>
     <string name="dejavu_new">Hesere</string>
     <string name="dejavu_menu_customize_reader_view">Heertin jiytol tarorde</string>
+    <string name="dejavu_loading_colors">Couleurs pendant le chargement d\'une page</string>
+    <string name="dejavu_loading_colors_rainbow">Arc-en-ciel</string>
+    <string name="dejavu_loading_colors_workspace">Couleurs de l\'espace de travail</string>
+    <string name="dejavu_loading_colors_workspace_summary">Les couleurs de l\'espace de travail de la tabbere. Les tabbeeje suuriiɗe et les espaces sans couleurs affichent l\'arc-en-ciel.</string>
+    <string name="dejavu_loading_colors_custom">Couleurs personnalisées</string>
+    <string name="dejavu_loading_colors_custom_summary">Choisis jusqu\'à trois couleurs. Touche à nouveau pour les changer.</string>
 </resources>

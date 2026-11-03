@@ -535,4 +535,10 @@
     <string name="dejavu_settings_tips_summary">แสดงเคล็ดลับเกี่ยวกับท่าทางที่ซ่อนอยู่ เช่น การกด “แท็บใหม่” ค้างไว้</string>
     <string name="dejavu_new">ใหม่</string>
     <string name="dejavu_menu_customize_reader_view">ปรับแต่งมุมมองผู้อ่าน</string>
+    <string name="dejavu_loading_colors">สีขณะโหลดหน้า</string>
+    <string name="dejavu_loading_colors_rainbow">สีรุ้ง</string>
+    <string name="dejavu_loading_colors_workspace">สีของพื้นที่ทำงาน</string>
+    <string name="dejavu_loading_colors_workspace_summary">สีของพื้นที่ทำงานของแท็บ แท็บส่วนตัวและพื้นที่ทำงานที่ไม่มีสีจะแสดงสีรุ้ง</string>
+    <string name="dejavu_loading_colors_custom">สีที่กำหนดเอง</string>
+    <string name="dejavu_loading_colors_custom_summary">เลือกได้สูงสุดสามสี แตะอีกครั้งเพื่อเปลี่ยน</string>
 </resources>

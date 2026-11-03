@@ -576,4 +576,10 @@
     <string name="dejavu_settings_tips_summary">છુપાયેલા હાવભાવ વિશે ટિપ્સ બતાવો, જેમ કે “નવી ટૅબ” દબાવી રાખવી</string>
     <string name="dejavu_new">નવું</string>
     <string name="dejavu_menu_customize_reader_view">વાંચકો જુઓ કસ્ટમાઇઝ કરો</string>
+    <string name="dejavu_loading_colors">પેજ લોડ થતી વખતે રંગો</string>
+    <string name="dejavu_loading_colors_rainbow">મેઘધનુષ્ય</string>
+    <string name="dejavu_loading_colors_workspace">વર્કસ્પેસના રંગો</string>
+    <string name="dejavu_loading_colors_workspace_summary">ટૅબના વર્કસ્પેસના રંગો. ખાનગી ટૅબ અને રંગ વગરના વર્કસ્પેસ મેઘધનુષ્ય બતાવે છે.</string>
+    <string name="dejavu_loading_colors_custom">કસ્ટમ રંગો</string>
+    <string name="dejavu_loading_colors_custom_summary">ત્રણ સુધી રંગો પસંદ કરો. બદલવા માટે ફરી ટૅપ કરો.</string>
 </resources>

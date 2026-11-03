@@ -543,4 +543,10 @@
     <string name="dejavu_settings_tips_summary">“പുതിയ ടാബ്” അമർത്തിപ്പിടിക്കുന്നത് പോലുള്ള മറഞ്ഞിരിക്കുന്ന ആംഗ്യങ്ങളെക്കുറിച്ചുള്ള നുറുങ്ങുകൾ കാണിക്കുക</string>
     <string name="dejavu_new">പുതിയത്</string>
     <string name="dejavu_menu_customize_reader_view">വായനയ്ക്കുള്ള കാഴ്ച ഇഷ്ടാനുസൃതമാക്കുക</string>
+    <string name="dejavu_loading_colors">പേജ് ലോഡ് ചെയ്യുമ്പോഴുള്ള നിറങ്ങൾ</string>
+    <string name="dejavu_loading_colors_rainbow">മഴവില്ല്</string>
+    <string name="dejavu_loading_colors_workspace">പണിയിടത്തിന്റെ നിറങ്ങൾ</string>
+    <string name="dejavu_loading_colors_workspace_summary">ടാബിന്റെ പണിയിടത്തിന്റെ നിറങ്ങൾ. സ്വകാര്യ ടാബുകളും നിറങ്ങളില്ലാത്ത പണിയിടങ്ങളും മഴവില്ല് കാണിക്കുന്നു.</string>
+    <string name="dejavu_loading_colors_custom">ഇഷ്‌ടാനുസൃത നിറങ്ങൾ</string>
+    <string name="dejavu_loading_colors_custom_summary">മൂന്ന് നിറങ്ങൾ വരെ തിരഞ്ഞെടുക്കുക. മാറ്റാൻ വീണ്ടും ടാപ്പ് ചെയ്യുക.</string>
 </resources>

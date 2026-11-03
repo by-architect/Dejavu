@@ -543,4 +543,10 @@
     <string name="dejavu_settings_tips_summary">Mussar cussegls davart gests zuppads, sco tegnair smatgà Nov tab</string>
     <string name="dejavu_new">Nov</string>
     <string name="dejavu_menu_customize_reader_view">Persunalisar la vista da lectura</string>
+    <string name="dejavu_loading_colors">Colurs durant che ina pagina chargia</string>
+    <string name="dejavu_loading_colors_rainbow">Artg da tschiel</string>
+    <string name="dejavu_loading_colors_workspace">Colurs dal spazi da lavur</string>
+    <string name="dejavu_loading_colors_workspace_summary">Las colurs dal spazi da lavur dal tab. Tabs privats e spazis da lavur senza colurs mussan l\'artg da tschiel.</string>
+    <string name="dejavu_loading_colors_custom">Colurs persunalisadas</string>
+    <string name="dejavu_loading_colors_custom_summary">Tscherna fin a trais colurs. Tutga anc ina giada per las midar.</string>
 </resources>

@@ -535,4 +535,10 @@
     <string name="dejavu_settings_tips_summary">o pana e toki sona pi pilin nena len, sama luka awen lon nena “poki sin”</string>
     <string name="dejavu_new">sin</string>
     <string name="dejavu_menu_customize_reader_view">o nasin e lukin pona</string>
+    <string name="dejavu_loading_colors">kule lon tenpo pi kama lipu</string>
+    <string name="dejavu_loading_colors_rainbow">kule ale</string>
+    <string name="dejavu_loading_colors_workspace">kule pi kulupu poki</string>
+    <string name="dejavu_loading_colors_workspace_summary">kule pi kulupu poki pi poki ni. poki pi nasin len en kulupu poki pi kule ala li pana e kule ale.</string>
+    <string name="dejavu_loading_colors_custom">kule sina</string>
+    <string name="dejavu_loading_colors_custom_summary">o pana e kule wan anu tu anu tu wan. o luka sin la sina ken ante e ona.</string>
 </resources>

@@ -543,4 +543,10 @@
     <string name="dejavu_settings_tips_summary">Tippek megjelenítése a rejtett kézmozdulatokról, például az Új lap gomb hosszú megnyomásáról</string>
     <string name="dejavu_new">Új</string>
     <string name="dejavu_menu_customize_reader_view">Olvasó nézet testreszabása</string>
+    <string name="dejavu_loading_colors">Színek oldalbetöltés közben</string>
+    <string name="dejavu_loading_colors_rainbow">Szivárvány</string>
+    <string name="dejavu_loading_colors_workspace">Munkaterület színei</string>
+    <string name="dejavu_loading_colors_workspace_summary">A lap munkaterületének színei. A privát lapok és a szín nélküli munkaterületek a szivárványt mutatják.</string>
+    <string name="dejavu_loading_colors_custom">Egyéni színek</string>
+    <string name="dejavu_loading_colors_custom_summary">Válasszon legfeljebb három színt. Koppintson újra a módosításukhoz.</string>
 </resources>

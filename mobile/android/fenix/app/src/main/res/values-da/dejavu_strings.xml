@@ -543,4 +543,10 @@
     <string name="dejavu_settings_tips_summary">Vis tips om skjulte bevægelser, som at holde Nyt faneblad nede</string>
     <string name="dejavu_new">Ny</string>
     <string name="dejavu_menu_customize_reader_view">Tilpas læsevisning</string>
+    <string name="dejavu_loading_colors">Farver mens en side indlæses</string>
+    <string name="dejavu_loading_colors_rainbow">Regnbue</string>
+    <string name="dejavu_loading_colors_workspace">Arbejdsområdets farver</string>
+    <string name="dejavu_loading_colors_workspace_summary">Farverne fra fanebladets arbejdsområde. Private faneblade og arbejdsområder uden farver viser regnbuen.</string>
+    <string name="dejavu_loading_colors_custom">Tilpassede farver</string>
+    <string name="dejavu_loading_colors_custom_summary">Vælg op til tre farver. Tryk igen for at ændre dem.</string>
 </resources>

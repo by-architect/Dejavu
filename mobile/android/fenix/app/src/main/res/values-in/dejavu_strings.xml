@@ -535,4 +535,10 @@
     <string name="dejavu_settings_tips_summary">Tampilkan tips tentang gestur tersembunyi, seperti menahan “Tab baru”</string>
     <string name="dejavu_new">Baru</string>
     <string name="dejavu_menu_customize_reader_view">Sesuaikan tampilan pembaca</string>
+    <string name="dejavu_loading_colors">Warna saat halaman dimuat</string>
+    <string name="dejavu_loading_colors_rainbow">Pelangi</string>
+    <string name="dejavu_loading_colors_workspace">Warna ruang kerja</string>
+    <string name="dejavu_loading_colors_workspace_summary">Warna ruang kerja tab. Tab pribadi dan ruang kerja tanpa warna menampilkan pelangi.</string>
+    <string name="dejavu_loading_colors_custom">Warna khusus</string>
+    <string name="dejavu_loading_colors_custom_summary">Pilih hingga tiga warna. Ketuk lagi untuk mengubahnya.</string>
 </resources>

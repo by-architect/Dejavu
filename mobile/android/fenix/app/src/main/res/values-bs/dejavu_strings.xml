@@ -551,4 +551,10 @@
     <string name="dejavu_settings_tips_summary">Prikaži savjete o skrivenim gestovima, poput zadržavanja dugmeta Novi tab</string>
     <string name="dejavu_new">Novo</string>
     <string name="dejavu_menu_customize_reader_view">Prilagodi prikaz za čitanje</string>
+    <string name="dejavu_loading_colors">Boje dok se stranica učitava</string>
+    <string name="dejavu_loading_colors_rainbow">Duga</string>
+    <string name="dejavu_loading_colors_workspace">Boje radnog prostora</string>
+    <string name="dejavu_loading_colors_workspace_summary">Boje radnog prostora taba. Privatni tabovi i radni prostori bez boja prikazuju dugu.</string>
+    <string name="dejavu_loading_colors_custom">Prilagođene boje</string>
+    <string name="dejavu_loading_colors_custom_summary">Odaberite do tri boje. Dodirnite ponovo da ih promijenite.</string>
 </resources>

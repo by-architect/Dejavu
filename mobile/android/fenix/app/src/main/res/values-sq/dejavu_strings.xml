@@ -543,4 +543,10 @@
     <string name="dejavu_settings_tips_summary">Shfaq ndihmëza mbi gjeste të fshehura, si mbajtja shtypur e “Skedë e re”</string>
     <string name="dejavu_new">E re</string>
     <string name="dejavu_menu_customize_reader_view">Përshtate pamjen lexues</string>
+    <string name="dejavu_loading_colors">Ngjyra gjatë ngarkimit të faqes</string>
+    <string name="dejavu_loading_colors_rainbow">Ylber</string>
+    <string name="dejavu_loading_colors_workspace">Ngjyrat e hapësirës së punës</string>
+    <string name="dejavu_loading_colors_workspace_summary">Ngjyrat e hapësirës së punës së skedës. Skedat private dhe hapësirat e punës pa ngjyra shfaqin ylberin.</string>
+    <string name="dejavu_loading_colors_custom">Ngjyra vetjake</string>
+    <string name="dejavu_loading_colors_custom_summary">Zgjidhni deri në tri ngjyra. Prekeni sërish për t\'i ndryshuar.</string>
 </resources>

@@ -575,4 +575,10 @@
     <string name="dejavu_settings_tips_summary">Dangos awgrymiadau am ystumiau cudd, fel dal Tab newydd</string>
     <string name="dejavu_new">Newydd</string>
     <string name="dejavu_menu_customize_reader_view">Cyfaddasu’r golwg darllenydd</string>
+    <string name="dejavu_loading_colors">Lliwiau tra bo tudalen yn llwytho</string>
+    <string name="dejavu_loading_colors_rainbow">Enfys</string>
+    <string name="dejavu_loading_colors_workspace">Lliwiau\'r gweithle</string>
+    <string name="dejavu_loading_colors_workspace_summary">Lliwiau gweithle\'r tab. Mae tabiau preifat a gweithleoedd heb liwiau yn dangos yr enfys.</string>
+    <string name="dejavu_loading_colors_custom">Lliwiau pwrpasol</string>
+    <string name="dejavu_loading_colors_custom_summary">Dewiswch hyd at dri lliw. Tapiwch eto i\'w newid.</string>
 </resources>

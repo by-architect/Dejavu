@@ -543,4 +543,10 @@
     <string name="dejavu_settings_tips_summary">Ipakita ang mga tip parte sa natago nga mga gesture, pareho sang pagpindot sing madugay sa Bag-o nga Tab</string>
     <string name="dejavu_new">Bag-o</string>
     <string name="dejavu_menu_customize_reader_view">i-Customize ang reader view</string>
+    <string name="dejavu_loading_colors">Mga kolor samtang nagakarga ang pahina</string>
+    <string name="dejavu_loading_colors_rainbow">Balangaw</string>
+    <string name="dejavu_loading_colors_workspace">Mga kolor sang workspace</string>
+    <string name="dejavu_loading_colors_workspace_summary">Ang mga kolor sang workspace sang tab. Ang pribado nga mga tab kag mga workspace nga wala sing kolor nagapakita sang balangaw.</string>
+    <string name="dejavu_loading_colors_custom">Custom nga mga kolor</string>
+    <string name="dejavu_loading_colors_custom_summary">Magpili tubtob tatlo ka kolor. I-tap liwat para baylohan ini.</string>
 </resources>

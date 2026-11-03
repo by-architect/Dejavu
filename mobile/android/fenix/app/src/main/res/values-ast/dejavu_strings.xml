@@ -543,4 +543,10 @@
     <string name="dejavu_settings_tips_summary">Amosar conseyos sobre xestos anubríos, como caltener primíu «Llingüeta nueva»</string>
     <string name="dejavu_new">Nuevu</string>
     <string name="dejavu_menu_customize_reader_view">Personalizar la vista de llector</string>
+    <string name="dejavu_loading_colors">Colores mentanto se carga una páxina</string>
+    <string name="dejavu_loading_colors_rainbow">Arcu iris</string>
+    <string name="dejavu_loading_colors_workspace">Colores del espaciu de trabayu</string>
+    <string name="dejavu_loading_colors_workspace_summary">Los colores del espaciu de trabayu de la llingüeta. Les llingüetes privaes y los espacios de trabayu ensin colores amuesen l\'arcu iris.</string>
+    <string name="dejavu_loading_colors_custom">Colores personalizaos</string>
+    <string name="dejavu_loading_colors_custom_summary">Escueyi hasta trés colores. Toca otra vegada pa camudalos.</string>
 </resources>

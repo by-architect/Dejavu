@@ -567,4 +567,10 @@
     <string name="dejavu_settings_tips_summary">Taispeáin leideanna faoi ghothaí folaithe, mar shampla “Cluaisín nua” a choinneáil brúite</string>
     <string name="dejavu_new">Nua</string>
     <string name="dejavu_menu_customize_reader_view">Saincheap an t-amharc léitheoireachta</string>
+    <string name="dejavu_loading_colors">Dathanna agus leathanach á lódáil</string>
+    <string name="dejavu_loading_colors_rainbow">Bogha báistí</string>
+    <string name="dejavu_loading_colors_workspace">Dathanna an spáis oibre</string>
+    <string name="dejavu_loading_colors_workspace_summary">Dathanna spás oibre an chluaisín. Taispeánann cluaisíní príobháideacha agus spásanna oibre gan dathanna an bogha báistí.</string>
+    <string name="dejavu_loading_colors_custom">Dathanna saincheaptha</string>
+    <string name="dejavu_loading_colors_custom_summary">Roghnaigh suas le trí dhath. Tapáil arís chun iad a athrú.</string>
 </resources>

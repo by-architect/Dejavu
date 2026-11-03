@@ -551,4 +551,10 @@
     <string name="dejavu_settings_tips_summary">Прикажи савете о скривеним гестовима, као што је задржавање дугмета „Нови језичак“</string>
     <string name="dejavu_new">Ново</string>
     <string name="dejavu_menu_customize_reader_view">Прилагоди приказ читача</string>
+    <string name="dejavu_loading_colors">Боје током учитавања странице</string>
+    <string name="dejavu_loading_colors_rainbow">Дуга</string>
+    <string name="dejavu_loading_colors_workspace">Боје радног простора</string>
+    <string name="dejavu_loading_colors_workspace_summary">Боје радног простора језичка. Приватни језичци и радни простори без боја приказују дугу.</string>
+    <string name="dejavu_loading_colors_custom">Прилагођене боје</string>
+    <string name="dejavu_loading_colors_custom_summary">Изаберите до три боје. Додирните поново да их промените.</string>
 </resources>

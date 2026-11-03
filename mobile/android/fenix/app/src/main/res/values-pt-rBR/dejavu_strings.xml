@@ -551,4 +551,10 @@
     <string name="dejavu_settings_tips_summary">Mostrar dicas sobre gestos ocultos, como manter “Nova aba” pressionado</string>
     <string name="dejavu_new">Novidade</string>
     <string name="dejavu_menu_customize_reader_view">Personalizar modo de leitura</string>
+    <string name="dejavu_loading_colors">Cores enquanto uma página carrega</string>
+    <string name="dejavu_loading_colors_rainbow">Arco-íris</string>
+    <string name="dejavu_loading_colors_workspace">Cores do espaço de trabalho</string>
+    <string name="dejavu_loading_colors_workspace_summary">As cores do espaço de trabalho da aba. Abas privativas e espaços de trabalho sem cores mostram o arco-íris.</string>
+    <string name="dejavu_loading_colors_custom">Cores personalizadas</string>
+    <string name="dejavu_loading_colors_custom_summary">Escolha até três cores. Toque de novo para mudá-las.</string>
 </resources>

@@ -543,4 +543,10 @@
     <string name="dejavu_settings_tips_summary">Ammustra cussìgios subra de is gestos cuados, comente mantènnere pretzionadu “Ischeda noa”</string>
     <string name="dejavu_new">Nou</string>
     <string name="dejavu_menu_customize_reader_view">Personaliza sa visualizatzione de letura</string>
+    <string name="dejavu_loading_colors">Colores in s\'interis chi una pàgina si càrriat</string>
+    <string name="dejavu_loading_colors_rainbow">Arcu de chelu</string>
+    <string name="dejavu_loading_colors_workspace">Colores de s\'ispàtziu de traballu</string>
+    <string name="dejavu_loading_colors_workspace_summary">Is colores de s\'ispàtziu de traballu de s\'ischeda. Is ischedas privadas e is ispàtzios de traballu chene colores ammustrant s\'arcu de chelu.</string>
+    <string name="dejavu_loading_colors_custom">Colores personalizados</string>
+    <string name="dejavu_loading_colors_custom_summary">Sèbera finas a tres colores. Toca torra pro ddos cambiare.</string>
 </resources>

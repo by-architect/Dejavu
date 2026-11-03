@@ -543,4 +543,10 @@
     <string name="dejavu_settings_tips_summary">Показване на съвети за скрити жестове, като задържане на „Нов раздел“</string>
     <string name="dejavu_new">Нов</string>
     <string name="dejavu_menu_customize_reader_view">Приспособяване на изгледа за четене</string>
+    <string name="dejavu_loading_colors">Цветове при зареждане на страница</string>
+    <string name="dejavu_loading_colors_rainbow">Дъга</string>
+    <string name="dejavu_loading_colors_workspace">Цветове на работното пространство</string>
+    <string name="dejavu_loading_colors_workspace_summary">Цветовете на работното пространство на раздела. Поверителните раздели и пространствата без цветове показват дъгата.</string>
+    <string name="dejavu_loading_colors_custom">Цветове по избор</string>
+    <string name="dejavu_loading_colors_custom_summary">Изберете до три цвята. Докоснете отново, за да ги промените.</string>
 </resources>

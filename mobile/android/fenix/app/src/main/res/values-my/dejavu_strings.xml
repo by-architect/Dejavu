@@ -535,4 +535,10 @@
     <string name="dejavu_settings_tips_summary">“တက်ဗ် အသစ်” ကို ဖိထားခြင်းကဲ့သို့ ဝှက်ထားသော လက်ဟန်အမူအရာများအကြောင်း အကြံပြုချက်များ ပြသရန်</string>
     <string name="dejavu_new">အသစ်</string>
     <string name="dejavu_menu_customize_reader_view">စာဖတ်သူ မြင်ကွင်းကို စိတ်ကြိုက်လုပ်ပါ</string>
+    <string name="dejavu_loading_colors">စာမျက်နှာ ဖွင့်နေစဉ် အရောင်များ</string>
+    <string name="dejavu_loading_colors_rainbow">သက်တံ</string>
+    <string name="dejavu_loading_colors_workspace">လုပ်ငန်းခွင် အရောင်များ</string>
+    <string name="dejavu_loading_colors_workspace_summary">တက်ဗ်၏ လုပ်ငန်းခွင် အရောင်များ။ သီးသန့် တက်ဗ်များနှင့် အရောင်မရှိသော လုပ်ငန်းခွင်များတွင် သက်တံကို ပြသည်။</string>
+    <string name="dejavu_loading_colors_custom">စိတ်ကြိုက် အရောင်များ</string>
+    <string name="dejavu_loading_colors_custom_summary">အရောင် သုံးမျိုးအထိ ရွေးပါ။ ပြောင်းရန် ထပ်မံ တို့ပါ။</string>
 </resources>

@@ -543,4 +543,10 @@
     <string name="dejavu_settings_tips_summary">புதிய கீற்று பொத்தானை அழுத்திப் பிடிப்பது போன்ற மறைந்திருக்கும் சைகைகள் பற்றிய உதவிக்குறிப்புகளைக் காட்டு</string>
     <string name="dejavu_new">புதியது</string>
     <string name="dejavu_menu_customize_reader_view">வாசிப்பு தோற்றத்தைத் தனிப்பயனாக்கு</string>
+    <string name="dejavu_loading_colors">பக்கம் ஏற்றப்படும்போது நிறங்கள்</string>
+    <string name="dejavu_loading_colors_rainbow">வானவில்</string>
+    <string name="dejavu_loading_colors_workspace">பணியிட நிறங்கள்</string>
+    <string name="dejavu_loading_colors_workspace_summary">கீற்றின் பணியிட நிறங்கள். கமுக்கக் கீற்றுகளும் நிறமில்லாத பணியிடங்களும் வானவில்லைக் காட்டும்.</string>
+    <string name="dejavu_loading_colors_custom">தனிப்பயன் நிறங்கள்</string>
+    <string name="dejavu_loading_colors_custom_summary">மூன்று நிறங்கள் வரை தேர்ந்தெடுக்கவும். மாற்ற மீண்டும் தட்டவும்.</string>
 </resources>

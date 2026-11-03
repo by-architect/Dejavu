@@ -55,11 +55,13 @@ private val LightColors = listOf(
  * While a page is [loading], colors run through the letters this draws, in place of a loading bar: a band of Dejavu's
  * gold and the colors around it sweeps along, resting after a few seconds, and the letters fade back to their own color
  * once the page is in. With [range], only the letters between the two ends it gives, in pixels from the start, take
- * the colors.
+ * the colors. In Bars, the band can take the colors of the workspace of the tab with [tabId], or of the shown tab when
+ * `null`, or colors of the user's own instead, see [loadingGradient].
  */
 @Composable
 internal fun Modifier.loadingColors(
     loading: Boolean,
+    tabId: String? = null,
     range: (() -> ClosedFloatingPointRange<Float>?)? = null,
 ): Modifier {
     val shown = remember { mutableFloatStateOf(if (loading) 1f else 0f) }
@@ -87,7 +89,8 @@ internal fun Modifier.loadingColors(
             }
         }
     }
-    val colors = if (MaterialTheme.colorScheme.surface.luminance() < HALF) DarkColors else LightColors
+    val colors = loadingGradient(tabId)
+        ?: if (MaterialTheme.colorScheme.surface.luminance() < HALF) DarkColors else LightColors
     return this
         .graphicsLayer {
             // Offscreen, the colors only take the place of the letters, not of what lies behind them.

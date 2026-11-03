@@ -559,4 +559,10 @@
     <string name="dejavu_settings_tips_summary">Показывать советы о скрытых жестах, например об удержании кнопки «Новая вкладка»</string>
     <string name="dejavu_new">Новое</string>
     <string name="dejavu_menu_customize_reader_view">Настроить вид для чтения</string>
+    <string name="dejavu_loading_colors">Цвета при загрузке страницы</string>
+    <string name="dejavu_loading_colors_rainbow">Радуга</string>
+    <string name="dejavu_loading_colors_workspace">Цвета рабочего пространства</string>
+    <string name="dejavu_loading_colors_workspace_summary">Цвета рабочего пространства вкладки. В приватных вкладках и пространствах без цветов показывается радуга.</string>
+    <string name="dejavu_loading_colors_custom">Свои цвета</string>
+    <string name="dejavu_loading_colors_custom_summary">Выберите до трёх цветов. Нажмите ещё раз, чтобы изменить их.</string>
 </resources>

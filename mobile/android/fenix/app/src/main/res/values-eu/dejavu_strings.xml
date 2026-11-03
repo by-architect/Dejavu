@@ -543,4 +543,10 @@
     <string name="dejavu_settings_tips_summary">Erakutsi ezkutuko keinuei buruzko aholkuak, hala nola «Fitxa berria» sakatuta eustea</string>
     <string name="dejavu_new">Berria</string>
     <string name="dejavu_menu_customize_reader_view">Pertsonalizatu irakurtzeko ikuspegia</string>
+    <string name="dejavu_loading_colors">Koloreak orria kargatzen den bitartean</string>
+    <string name="dejavu_loading_colors_rainbow">Ostadarra</string>
+    <string name="dejavu_loading_colors_workspace">Laneremuaren koloreak</string>
+    <string name="dejavu_loading_colors_workspace_summary">Fitxaren laneremuaren koloreak. Fitxa pribatuek eta kolorerik gabeko laneremuek ostadarra erakusten dute.</string>
+    <string name="dejavu_loading_colors_custom">Kolore pertsonalizatuak</string>
+    <string name="dejavu_loading_colors_custom_summary">Aukeratu gehienez hiru kolore. Sakatu berriro aldatzeko.</string>
 </resources>

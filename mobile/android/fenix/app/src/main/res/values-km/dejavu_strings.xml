@@ -535,4 +535,10 @@
     <string name="dejavu_settings_tips_summary">បង្ហាញគន្លឹះអំពីកាយវិការដែលលាក់ ដូចជាការចុចប៊ូតុង ផ្ទាំងថ្មី ឱ្យជាប់</string>
     <string name="dejavu_new">ថ្មី</string>
     <string name="dejavu_menu_customize_reader_view">ប្ដូរតាមបំណងទិដ្ឋភាពអ្នកអាន</string>
+    <string name="dejavu_loading_colors">ពណ៌ពេលកំពុងផ្ទុកទំព័រ</string>
+    <string name="dejavu_loading_colors_rainbow">ឥន្ទធនូ</string>
+    <string name="dejavu_loading_colors_workspace">ពណ៌ចន្លោះការងារ</string>
+    <string name="dejavu_loading_colors_workspace_summary">ពណ៌នៃចន្លោះការងាររបស់ផ្ទាំង។ ផ្ទាំងឯកជន និងចន្លោះការងារគ្មានពណ៌ បង្ហាញឥន្ទធនូ។</string>
+    <string name="dejavu_loading_colors_custom">ពណ៌ផ្ទាល់ខ្លួន</string>
+    <string name="dejavu_loading_colors_custom_summary">ជ្រើសរើសពណ៌រហូតដល់បី។ ចុចម្ដងទៀតដើម្បីប្ដូរ។</string>
 </resources>

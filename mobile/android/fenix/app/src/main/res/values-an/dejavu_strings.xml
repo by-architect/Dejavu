@@ -543,4 +543,10 @@
     <string name="dejavu_settings_tips_summary">Amostrar consellos sobre cenyos amagaus, como mantener pretau «Nueva pestanya»</string>
     <string name="dejavu_new">Nuevo</string>
     <string name="dejavu_menu_customize_reader_view">Personalizar la vista de lectura</string>
+    <string name="dejavu_loading_colors">Colors mientres se carga una pachina</string>
+    <string name="dejavu_loading_colors_rainbow">Arco de San Chuan</string>
+    <string name="dejavu_loading_colors_workspace">Colors de l\'espacio de treballo</string>
+    <string name="dejavu_loading_colors_workspace_summary">As colors de l\'espacio de treballo d\'a pestanya. As pestanyas privadas y os espacios de treballo sin colors amuestran l\'arco de San Chuan.</string>
+    <string name="dejavu_loading_colors_custom">Colors personalizadas</string>
+    <string name="dejavu_loading_colors_custom_summary">Tría dica tres colors. Toca de nuevo pa cambiar-las.</string>
 </resources>

@@ -543,4 +543,10 @@
     <string name="dejavu_settings_tips_summary">Affissà cunsiglii nant\'à e mosse piatte, cum\'è tene appughjatu Nova unghjetta</string>
     <string name="dejavu_new">Novu</string>
     <string name="dejavu_menu_customize_reader_view">Persunalizà u modu di lettura</string>
+    <string name="dejavu_loading_colors">Culori mentre una pagina si carica</string>
+    <string name="dejavu_loading_colors_rainbow">Arcu baleu</string>
+    <string name="dejavu_loading_colors_workspace">Culori di u spaziu di travagliu</string>
+    <string name="dejavu_loading_colors_workspace_summary">I culori di u spaziu di travagliu di l\'unghjetta. L\'unghjette private è i spazii di travagliu senza culori mostranu l\'arcu baleu.</string>
+    <string name="dejavu_loading_colors_custom">Culori persunalizati</string>
+    <string name="dejavu_loading_colors_custom_summary">Sceglite sin\'à trè culori. Toccate torna per cambialli.</string>
 </resources>

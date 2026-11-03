@@ -535,4 +535,10 @@
     <string name="dejavu_settings_tips_summary">顯示隱藏手勢的相關提示，例如長按「開新分頁」</string>
     <string name="dejavu_new">新功能</string>
     <string name="dejavu_menu_customize_reader_view">自訂閱讀畫面</string>
+    <string name="dejavu_loading_colors">頁面載入時的顏色</string>
+    <string name="dejavu_loading_colors_rainbow">彩虹</string>
+    <string name="dejavu_loading_colors_workspace">工作區顏色</string>
+    <string name="dejavu_loading_colors_workspace_summary">分頁所在工作區的顏色。隱私分頁與沒有顏色的工作區會顯示彩虹。</string>
+    <string name="dejavu_loading_colors_custom">自訂顏色</string>
+    <string name="dejavu_loading_colors_custom_summary">最多可選擇三種顏色。再次點按即可更改。</string>
 </resources>

@@ -543,4 +543,10 @@
     <string name="dejavu_settings_tips_summary">Ammustra cunsigghi supra i muvimenti ammucciati, comu tèniri prisatu Scheda nova</string>
     <string name="dejavu_new">Novu</string>
     <string name="dejavu_menu_customize_reader_view">Pirsunalizza mudalità littura</string>
+    <string name="dejavu_loading_colors">Culuri mentri ca na pàggina si carrica</string>
+    <string name="dejavu_loading_colors_rainbow">Arcubalenu</string>
+    <string name="dejavu_loading_colors_workspace">Culuri dû spazziu di travagghiu</string>
+    <string name="dejavu_loading_colors_workspace_summary">Li culuri dû spazziu di travagghiu dâ scheda. Li schedi privati e li spazzii di travagghiu senza culuri ammustranu l\'arcubalenu.</string>
+    <string name="dejavu_loading_colors_custom">Culuri pirsunalizzati</string>
+    <string name="dejavu_loading_colors_custom_summary">Scegghi finu a tri culuri. Tocca arreri pi canciàrili.</string>
 </resources>

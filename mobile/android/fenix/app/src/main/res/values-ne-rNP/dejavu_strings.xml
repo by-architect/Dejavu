@@ -543,4 +543,10 @@
     <string name="dejavu_settings_tips_summary">“नयाँ ट्याब” थिचिराख्ने जस्ता लुकेका इशाराहरुबारे सुझावहरु देखाउनुहोस्</string>
     <string name="dejavu_new">नयाँ</string>
     <string name="dejavu_menu_customize_reader_view">पाठक दृश्य अनुकुलन गर्नुहोस्</string>
+    <string name="dejavu_loading_colors">पृष्ठ लोड हुँदा रङहरू</string>
+    <string name="dejavu_loading_colors_rainbow">इन्द्रेणी</string>
+    <string name="dejavu_loading_colors_workspace">कार्यक्षेत्रका रङहरू</string>
+    <string name="dejavu_loading_colors_workspace_summary">ट्याबको कार्यक्षेत्रका रङहरू। निजी ट्याबहरू र रङ नभएका कार्यक्षेत्रहरूले इन्द्रेणी देखाउँछन्।</string>
+    <string name="dejavu_loading_colors_custom">अनुकूलित रङहरू</string>
+    <string name="dejavu_loading_colors_custom_summary">तीनवटासम्म रङ छान्नुहोस्। परिवर्तन गर्न फेरि ट्याप गर्नुहोस्।</string>
 </resources>

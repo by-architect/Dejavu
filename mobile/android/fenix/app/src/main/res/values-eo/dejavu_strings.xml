@@ -543,4 +543,10 @@
     <string name="dejavu_settings_tips_summary">Montri konsilojn pri kaŝitaj gestoj, ekzemple teni “Nova langeto”</string>
     <string name="dejavu_new">Nova</string>
     <string name="dejavu_menu_customize_reader_view">Personecigi la legilan vidon</string>
+    <string name="dejavu_loading_colors">Koloroj dum ŝargiĝo de paĝo</string>
+    <string name="dejavu_loading_colors_rainbow">Ĉielarko</string>
+    <string name="dejavu_loading_colors_workspace">Koloroj de laborspaco</string>
+    <string name="dejavu_loading_colors_workspace_summary">La koloroj de la laborspaco de la langeto. Privataj langetoj kaj laborspacoj sen koloroj montras la ĉielarkon.</string>
+    <string name="dejavu_loading_colors_custom">Propraj koloroj</string>
+    <string name="dejavu_loading_colors_custom_summary">Elektu ĝis tri kolorojn. Tuŝetu denove por ŝanĝi ilin.</string>
 </resources>

@@ -567,4 +567,10 @@
     <string name="dejavu_settings_tips_summary">Diskouez alioù diwar-benn ar jestroù kuzh, evel derc’hel war “Ivinell nevez”</string>
     <string name="dejavu_new">Nevez</string>
     <string name="dejavu_menu_customize_reader_view">Personelaat ar mod lenn</string>
+    <string name="dejavu_loading_colors">Livioù e-pad ma vez karget ur bajenn</string>
+    <string name="dejavu_loading_colors_rainbow">Kanevedenn</string>
+    <string name="dejavu_loading_colors_workspace">Livioù an egor labour</string>
+    <string name="dejavu_loading_colors_workspace_summary">Livioù egor labour an ivinell. An ivinelloù prevez hag an egorioù labour hep livioù a ziskouez ar ganevedenn.</string>
+    <string name="dejavu_loading_colors_custom">Livioù personelaet</string>
+    <string name="dejavu_loading_colors_custom_summary">Dibabit betek tri liv. Stokit en-dro evit o cheñch.</string>
 </resources>

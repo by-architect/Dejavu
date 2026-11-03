@@ -543,4 +543,10 @@
     <string name="dejavu_settings_tips_summary">Afichar de conselhs suls gèstes amagats, coma téner quichat Onglet novèl</string>
     <string name="dejavu_new">Novèl</string>
     <string name="dejavu_menu_customize_reader_view">Personalizar la vista de lectura</string>
+    <string name="dejavu_loading_colors">Colors pendent lo cargament d\'una pagina</string>
+    <string name="dejavu_loading_colors_rainbow">Arc de Sant Martin</string>
+    <string name="dejavu_loading_colors_workspace">Colors de l\'espaci de trabalh</string>
+    <string name="dejavu_loading_colors_workspace_summary">Las colors de l\'espaci de trabalh de l\'onglet. Los onglets privats e los espacis de trabalh sens colors mostran l\'arc de Sant Martin.</string>
+    <string name="dejavu_loading_colors_custom">Colors personalizadas</string>
+    <string name="dejavu_loading_colors_custom_summary">Causissètz fins a tres colors. Tocatz tornamai per las cambiar.</string>
 </resources>

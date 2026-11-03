@@ -899,4 +899,20 @@
     <string name="dejavu_settings_tips_summary">Show tips about hidden gestures, like holding New Tab</string>
     <!-- Read out by screen readers for the orange dot that marks what the new version of Dejavu brought, in the settings and the menu. -->
     <string name="dejavu_new">New</string>
+    <!-- Settings: Bars, the colors that run through the domain's letters in the address bar while a page loads, in place of a loading bar -->
+    <string name="pref_key_dejavu_loading_colors_rainbow" translatable="false">pref_key_dejavu_loading_colors_rainbow</string>
+    <string name="pref_key_dejavu_loading_colors_workspace" translatable="false">pref_key_dejavu_loading_colors_workspace</string>
+    <string name="pref_key_dejavu_loading_colors_custom" translatable="false">pref_key_dejavu_loading_colors_custom</string>
+    <!-- Title above the three choices of colors that run through the address bar's letters while a page loads. -->
+    <string name="dejavu_loading_colors">Colors while a page loads</string>
+    <!-- The choice of Dejavu's gold and the colors around it, like a rainbow, which Dejavu starts with. -->
+    <string name="dejavu_loading_colors_rainbow">Rainbow</string>
+    <!-- The choice of the colors of the workspace the tab is in: those of its wallpaper, or of its own color theme. -->
+    <string name="dejavu_loading_colors_workspace">Workspace colors</string>
+    <!-- Text under "Workspace colors". Private tabs are in no workspace; a workspace without colors has neither a wallpaper nor a color theme. -->
+    <string name="dejavu_loading_colors_workspace_summary">The colors of the tab\'s workspace. Private tabs and workspaces without colors show the rainbow.</string>
+    <!-- The choice of colors the user picks, as they pick a workspace's own colors. Tapping it opens the color picker. -->
+    <string name="dejavu_loading_colors_custom">Custom colors</string>
+    <!-- Text under "Custom colors". Tapping the choice again opens the color picker again. -->
+    <string name="dejavu_loading_colors_custom_summary">Pick up to three colors. Tap again to change them.</string>
 </resources>

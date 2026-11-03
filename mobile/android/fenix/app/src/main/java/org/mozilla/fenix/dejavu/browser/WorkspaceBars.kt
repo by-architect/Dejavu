@@ -34,14 +34,34 @@ import org.mozilla.fenix.ext.components
  * those of its workspace's wallpaper, see [popupThemeOf]; `null` for a private tab or a workspace without a wallpaper.
  */
 @Composable
-internal fun shownPopupTheme(tabId: String? = null): WorkspaceTheme? {
+internal fun shownPopupTheme(tabId: String? = null): WorkspaceTheme? = workspacePopupTheme(themedWorkspaceId(tabId))
+
+/**
+ * The colors of the workspace of the tab with [tabId], or of the shown tab when `null`: those of its wallpaper, as
+ * [shownPopupTheme] has them, or else the gradient of its own background; `null` for a private tab or a workspace with
+ * neither.
+ */
+@Composable
+internal fun shownWorkspaceColors(tabId: String? = null): List<Int>? {
+    val context = LocalContext.current
+    val workspaceId = themedWorkspaceId(tabId)
+    val wallpaper = workspacePopupTheme(workspaceId)
+    val repository = remember(context) { WorkspaceRepository.get(context) }
+    val workspaces by repository.state.collectAsState()
+    val own = workspaces.workspaces.firstOrNull { it.id == workspaceId }?.theme
+    return (wallpaper ?: own)?.colors?.takeIf { it.isNotEmpty() }
+}
+
+/** The workspace of the tab with [tabId], or of the shown tab when `null`; `null` for a private tab. */
+@Composable
+private fun themedWorkspaceId(tabId: String?): String? {
     val context = LocalContext.current
     val themedTabId by context.components.core.store.observeAsComposableState { state ->
         state.tabOrShown(tabId)?.takeUnless { it.content.private }?.id
     }
     val repository = remember(context) { WorkspaceRepository.get(context) }
     val workspaces by repository.state.collectAsState()
-    return workspacePopupTheme(themedTabId?.let(workspaces::workspaceOf))
+    return themedTabId?.let(workspaces::workspaceOf)
 }
 
 /**

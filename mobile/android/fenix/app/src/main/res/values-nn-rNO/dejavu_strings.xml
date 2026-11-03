@@ -543,4 +543,10 @@
     <string name="dejavu_settings_tips_summary">Vis tips om skjulte rørsler, som å halde inne knappen Ny fane</string>
     <string name="dejavu_new">Ny</string>
     <string name="dejavu_menu_customize_reader_view">Tilpass lesevising</string>
+    <string name="dejavu_loading_colors">Fargar medan ei side vert lasta</string>
+    <string name="dejavu_loading_colors_rainbow">Regnboge</string>
+    <string name="dejavu_loading_colors_workspace">Fargane til arbeidsområdet</string>
+    <string name="dejavu_loading_colors_workspace_summary">Fargane til arbeidsområdet for fana. Private faner og arbeidsområde utan fargar viser regnbogen.</string>
+    <string name="dejavu_loading_colors_custom">Eigendefinerte fargar</string>
+    <string name="dejavu_loading_colors_custom_summary">Vel opptil tre fargar. Trykk igjen for å endre dei.</string>
 </resources>

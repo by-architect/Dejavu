@@ -543,4 +543,10 @@
     <string name="dejavu_settings_tips_summary">Kek\'ut taq na\'oj chi kij ewan taq b\'anoj paläj, achi\'el nachäp jun ramaj “K\'ak\'a\' ruwi\'”</string>
     <string name="dejavu_new">K\'ak\'a\'</string>
     <string name="dejavu_menu_customize_reader_view">Ke\'ichinäx rutz\'etoj sik\'inem</string>
+    <string name="dejavu_loading_colors">Taq b\'onil toq nusamajij jun ruxaq</string>
+    <string name="dejavu_loading_colors_rainbow">Ronojel b\'onil</string>
+    <string name="dejavu_loading_colors_workspace">Rub\'onil samajib\'äl</string>
+    <string name="dejavu_loading_colors_workspace_summary">Rub\'onil rusamajib\'al ri ruwi\'. Ri ichinan taq ruwi\' chuqa\' ri samajib\'äl majun kib\'onil nikik\'ut ronojel b\'onil.</string>
+    <string name="dejavu_loading_colors_custom">Taq ruyon b\'onil</string>
+    <string name="dejavu_loading_colors_custom_summary">Tacha\' k\'a oxi\' b\'onil. Tachapa\' chik richin ye\'ajalwachij.</string>
 </resources>

@@ -175,6 +175,7 @@ fun DejavuAddressBar(store: BrowserToolbarStore) {
                     isHint = text == hint,
                     url = url,
                     loading = loading,
+                    tabId = null,
                     container = containerAction(),
                     pageActions = pageActions,
                     onInteraction = { store.dispatch(it) },
@@ -257,6 +258,7 @@ private fun DejavuSplitAddressBar(store: BrowserToolbarStore, split: ShownSplit)
         val onInteraction: (BrowserToolbarEvent) -> Unit = if (focused) dispatch else ({ focus() })
         if (stacked) {
             SplitPageRow(
+                tabId = tab.id,
                 title = title,
                 isHint = title == hint,
                 url = tab.content.url,
@@ -283,6 +285,7 @@ private fun DejavuSplitAddressBar(store: BrowserToolbarStore, split: ShownSplit)
                         isHint = title == hint,
                         url = tab.content.url,
                         loading = tab.content.loading,
+                        tabId = tab.id,
                         container = container,
                         pageActions = pageActions,
                         onInteraction = onInteraction,
@@ -352,6 +355,7 @@ private fun DejavuSplitAddressBar(store: BrowserToolbarStore, split: ShownSplit)
 @Suppress("LongParameterList")
 @Composable
 private fun SplitPageRow(
+    tabId: String,
     title: String,
     isHint: Boolean,
     url: String,
@@ -371,6 +375,7 @@ private fun SplitPageRow(
                 color = if (isHint) MaterialTheme.colorScheme.onSurfaceVariant else MaterialTheme.colorScheme.onSurface,
                 domain = domainOf(url),
                 loading = loading,
+                tabId = tabId,
             )
         }
         Box(contentAlignment = Alignment.Center, modifier = Modifier.size(SLOT_SIZE)) {
@@ -395,6 +400,7 @@ internal fun DejavuAddressBarPreview(tab: TabSessionState) {
                     isHint = text == hint,
                     url = tab.content.url,
                     loading = tab.content.loading,
+                    tabId = tab.id,
                     container = containerAction(tab.id),
                     pageActions = listOfNotNull(siteInfoPreview(tab)),
                     onInteraction = {},
@@ -545,7 +551,8 @@ private fun PageOrigin.startSearch(store: BrowserToolbarStore, layout: BarsLayou
 /**
  * The rounded field of the address bar: [container] at its start, [text] in the middle, with the domain of [url] in
  * small letters below the text unless the text already says it, and [pageActions], the site's security icon, at its
- * end. While the page is [loading], colors run through the domain's letters.
+ * end. While the page is [loading], colors run through the domain's letters, those chosen for the tab with [tabId],
+ * or the shown tab when `null`.
  */
 @Suppress("LongParameterList")
 @Composable
@@ -554,6 +561,7 @@ private fun AddressField(
     isHint: Boolean,
     url: String?,
     loading: Boolean,
+    tabId: String?,
     container: Action?,
     pageActions: List<Action>,
     onInteraction: (BrowserToolbarEvent) -> Unit,
@@ -585,6 +593,7 @@ private fun AddressField(
                     },
                     domain = url?.let(::domainOf),
                     loading = loading,
+                    tabId = tabId,
                 )
             }
         }
@@ -597,10 +606,11 @@ private fun AddressField(
 
 /**
  * [text], a page's title, in [color], with its [domain] in small letters below it unless the text already says it.
- * While the page is [loading], colors run through the domain's letters: those below the title, or those in it.
+ * While the page is [loading], colors run through the domain's letters: those below the title, or those in it. They
+ * are the colors chosen for the tab with [tabId], or the shown tab when `null`.
  */
 @Composable
-private fun TitleAndDomain(text: String, color: Color, domain: String?, loading: Boolean) {
+private fun TitleAndDomain(text: String, color: Color, domain: String?, loading: Boolean, tabId: String?) {
     val inTitle = domain?.takeIf { text.contains(it, ignoreCase = true) }
     val titleLayout = remember { arrayOfNulls<TextLayoutResult>(1) }
     Text(
@@ -612,7 +622,7 @@ private fun TitleAndDomain(text: String, color: Color, domain: String?, loading:
         overflow = TextOverflow.Ellipsis,
         onTextLayout = { titleLayout[0] = it },
         modifier = if (inTitle != null) {
-            Modifier.loadingColors(loading) { titleLayout[0]?.rangeOf(text, inTitle) }
+            Modifier.loadingColors(loading, tabId) { titleLayout[0]?.rangeOf(text, inTitle) }
         } else {
             Modifier
         },
@@ -624,7 +634,7 @@ private fun TitleAndDomain(text: String, color: Color, domain: String?, loading:
             color = MaterialTheme.colorScheme.onSurfaceVariant,
             maxLines = 1,
             overflow = TextOverflow.Ellipsis,
-            modifier = Modifier.loadingColors(loading),
+            modifier = Modifier.loadingColors(loading, tabId),
         )
     }
 }

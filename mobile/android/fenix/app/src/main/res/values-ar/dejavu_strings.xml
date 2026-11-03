@@ -575,4 +575,10 @@
     <string name="dejavu_settings_tips_summary">عرض نصائح عن الإيماءات المخفية، مثل الضغط مطولًا على «تبويب جديد»</string>
     <string name="dejavu_new">جديد</string>
     <string name="dejavu_menu_customize_reader_view">خصّص منظور القارئ</string>
+    <string name="dejavu_loading_colors">الألوان أثناء تحميل الصفحة</string>
+    <string name="dejavu_loading_colors_rainbow">قوس قزح</string>
+    <string name="dejavu_loading_colors_workspace">ألوان مساحة العمل</string>
+    <string name="dejavu_loading_colors_workspace_summary">ألوان مساحة عمل التبويب. التبويبات الخاصة ومساحات العمل التي بلا ألوان تعرض قوس قزح.</string>
+    <string name="dejavu_loading_colors_custom">ألوان مخصّصة</string>
+    <string name="dejavu_loading_colors_custom_summary">اختر حتى ثلاثة ألوان. انقر مجددًا لتغييرها.</string>
 </resources>

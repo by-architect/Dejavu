@@ -576,4 +576,10 @@
     <string name="dejavu_settings_tips_summary">লুকানো জেসচার নিয়ে টিপস দেখান, যেমন “নতুন ট্যাব” চেপে ধরা</string>
     <string name="dejavu_new">নতুন</string>
     <string name="dejavu_menu_customize_reader_view">পাঠক দর্শন কাস্টমাইজ করুন</string>
+    <string name="dejavu_loading_colors">পেজ লোড হওয়ার সময় রং</string>
+    <string name="dejavu_loading_colors_rainbow">রংধনু</string>
+    <string name="dejavu_loading_colors_workspace">ওয়ার্কস্পেসের রং</string>
+    <string name="dejavu_loading_colors_workspace_summary">ট্যাবের ওয়ার্কস্পেসের রং। ব্যক্তিগত ট্যাব এবং রংবিহীন ওয়ার্কস্পেস রংধনু দেখায়।</string>
+    <string name="dejavu_loading_colors_custom">কাস্টম রং</string>
+    <string name="dejavu_loading_colors_custom_summary">তিনটি পর্যন্ত রং বেছে নিন। বদলাতে আবার ট্যাপ করুন।</string>
 </resources>

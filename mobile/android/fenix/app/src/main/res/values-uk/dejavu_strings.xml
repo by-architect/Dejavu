@@ -559,4 +559,10 @@
     <string name="dejavu_settings_tips_summary">Показувати поради про приховані жести, як-от утримання кнопки «Нова вкладка»</string>
     <string name="dejavu_new">Нове</string>
     <string name="dejavu_menu_customize_reader_view">Налаштувати режим читання</string>
+    <string name="dejavu_loading_colors">Кольори під час завантаження сторінки</string>
+    <string name="dejavu_loading_colors_rainbow">Веселка</string>
+    <string name="dejavu_loading_colors_workspace">Кольори робочого простору</string>
+    <string name="dejavu_loading_colors_workspace_summary">Кольори робочого простору вкладки. Приватні вкладки й простори без кольорів показують веселку.</string>
+    <string name="dejavu_loading_colors_custom">Власні кольори</string>
+    <string name="dejavu_loading_colors_custom_summary">Виберіть до трьох кольорів. Торкніться ще раз, щоб змінити їх.</string>
 </resources>

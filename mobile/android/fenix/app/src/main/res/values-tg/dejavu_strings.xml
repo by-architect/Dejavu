@@ -543,4 +543,10 @@
     <string name="dejavu_settings_tips_summary">Нишон додани маслиҳатҳо дар бораи ишораҳои пинҳон, масалан, пахш карда нигоҳ доштани «Варақаи нав»</string>
     <string name="dejavu_new">Нав</string>
     <string name="dejavu_menu_customize_reader_view">Фармоишдиҳии намоиши хониш</string>
+    <string name="dejavu_loading_colors">Рангҳо ҳангоми боркунии саҳифа</string>
+    <string name="dejavu_loading_colors_rainbow">Тирукамон</string>
+    <string name="dejavu_loading_colors_workspace">Рангҳои фазо</string>
+    <string name="dejavu_loading_colors_workspace_summary">Рангҳои фазои варақа. Варақаҳои хусусӣ ва фазоҳои бе ранг тирукамонро нишон медиҳанд.</string>
+    <string name="dejavu_loading_colors_custom">Рангҳои фармоишӣ</string>
+    <string name="dejavu_loading_colors_custom_summary">То се рангро интихоб кунед. Барои иваз кардан боз зарба занед.</string>
 </resources>

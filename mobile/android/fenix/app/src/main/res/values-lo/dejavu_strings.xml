@@ -535,4 +535,10 @@
     <string name="dejavu_settings_tips_summary">ສະແດງຄຳແນະນຳກ່ຽວກັບທ່າທາງທີ່ເຊື່ອງໄວ້ ເຊັ່ນ: ການກົດ “ແທັບໃຫມ່” ຄ້າງໄວ້</string>
     <string name="dejavu_new">ໃຫມ່</string>
     <string name="dejavu_menu_customize_reader_view">ປັບແຕ່ງມຸມມອງຜູ້ອ່ານ</string>
+    <string name="dejavu_loading_colors">ສີໃນຂະນະທີ່ໜ້າເວັບກຳລັງໂຫຼດ</string>
+    <string name="dejavu_loading_colors_rainbow">ຮຸ້ງ</string>
+    <string name="dejavu_loading_colors_workspace">ສີຂອງພື້ນທີ່ເຮັດວຽກ</string>
+    <string name="dejavu_loading_colors_workspace_summary">ສີຂອງພື້ນທີ່ເຮັດວຽກຂອງແທັບ. ແທັບສ່ວນຕົວ ແລະ ພື້ນທີ່ເຮັດວຽກທີ່ບໍ່ມີສີ ຈະສະແດງຮຸ້ງ.</string>
+    <string name="dejavu_loading_colors_custom">ສີກຳນົດເອງ</string>
+    <string name="dejavu_loading_colors_custom_summary">ເລືອກໄດ້ເຖິງສາມສີ. ແຕະອີກຄັ້ງເພື່ອປ່ຽນ.</string>
 </resources>

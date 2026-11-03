@@ -535,4 +535,10 @@
     <string name="dejavu_settings_tips_summary">Hiển thị mẹo về các cử chỉ ẩn, như nhấn giữ “Thẻ mới”</string>
     <string name="dejavu_new">Mới</string>
     <string name="dejavu_menu_customize_reader_view">Tùy chỉnh chế độ đọc sách</string>
+    <string name="dejavu_loading_colors">Màu khi đang tải trang</string>
+    <string name="dejavu_loading_colors_rainbow">Cầu vồng</string>
+    <string name="dejavu_loading_colors_workspace">Màu của không gian làm việc</string>
+    <string name="dejavu_loading_colors_workspace_summary">Màu của không gian làm việc chứa thẻ. Thẻ riêng tư và không gian làm việc không có màu sẽ hiển thị cầu vồng.</string>
+    <string name="dejavu_loading_colors_custom">Màu tùy chỉnh</string>
+    <string name="dejavu_loading_colors_custom_summary">Chọn tối đa ba màu. Nhấn lại để thay đổi.</string>
 </resources>

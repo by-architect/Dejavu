@@ -543,4 +543,10 @@
     <string name="dejavu_settings_tips_summary">د پټو اشارو په اړه لارښوونې ښودل، لکه د «نوی ټب» نیول</string>
     <string name="dejavu_new">نوی</string>
     <string name="dejavu_menu_customize_reader_view">د لوستونکي لید دودیزول</string>
+    <string name="dejavu_loading_colors">د پاڼې د پورته کېدو پر مهال رنګونه</string>
+    <string name="dejavu_loading_colors_rainbow">شنه زرغونه</string>
+    <string name="dejavu_loading_colors_workspace">د ساحې رنګونه</string>
+    <string name="dejavu_loading_colors_workspace_summary">د ټب د ساحې رنګونه. شخصي ټبونه او بې رنګه ساحې شنه زرغونه ښيي.</string>
+    <string name="dejavu_loading_colors_custom">دودیز رنګونه</string>
+    <string name="dejavu_loading_colors_custom_summary">تر درېیو رنګونو پورې وټاکئ. د بدلولو لپاره بیا ټک وهئ.</string>
 </resources>

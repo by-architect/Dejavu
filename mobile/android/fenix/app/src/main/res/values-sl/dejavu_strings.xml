@@ -559,4 +559,10 @@
     <string name="dejavu_settings_tips_summary">Prikaži nasvete o skritih potezah, kot je pridržanje gumba „Nov zavihek“</string>
     <string name="dejavu_new">Novo</string>
     <string name="dejavu_menu_customize_reader_view">Prilagodi bralni pogled</string>
+    <string name="dejavu_loading_colors">Barve med nalaganjem strani</string>
+    <string name="dejavu_loading_colors_rainbow">Mavrica</string>
+    <string name="dejavu_loading_colors_workspace">Barve delovnega prostora</string>
+    <string name="dejavu_loading_colors_workspace_summary">Barve delovnega prostora zavihka. Zasebni zavihki in delovni prostori brez barv prikazujejo mavrico.</string>
+    <string name="dejavu_loading_colors_custom">Barve po meri</string>
+    <string name="dejavu_loading_colors_custom_summary">Izberite do tri barve. Znova tapnite, da jih spremenite.</string>
 </resources>

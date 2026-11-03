@@ -543,4 +543,10 @@
     <string name="dejavu_settings_tips_summary">Näita vihjeid peidetud žestide kohta, nagu nupu „Uus kaart“ all hoidmine</string>
     <string name="dejavu_new">Uus</string>
     <string name="dejavu_menu_customize_reader_view">Kohanda lugemisvaadet</string>
+    <string name="dejavu_loading_colors">Värvid lehe laadimise ajal</string>
+    <string name="dejavu_loading_colors_rainbow">Vikerkaar</string>
+    <string name="dejavu_loading_colors_workspace">Tööruumi värvid</string>
+    <string name="dejavu_loading_colors_workspace_summary">Kaardi tööruumi värvid. Privaatsed kaardid ja värvideta tööruumid näitavad vikerkaart.</string>
+    <string name="dejavu_loading_colors_custom">Kohandatud värvid</string>
+    <string name="dejavu_loading_colors_custom_summary">Vali kuni kolm värvi. Muutmiseks puuduta uuesti.</string>
 </resources>

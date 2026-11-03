@@ -543,4 +543,10 @@
     <string name="dejavu_settings_tips_summary">نمایش نکته‌هایی دربارهٔ ژست‌های حرکتی پنهان، مثل نگه داشتن «زبانهٔ جدید»</string>
     <string name="dejavu_new">جدید</string>
     <string name="dejavu_menu_customize_reader_view">شخصی‌سازی نمای مطالعه</string>
+    <string name="dejavu_loading_colors">رنگ‌ها هنگام بارگیری صفحه</string>
+    <string name="dejavu_loading_colors_rainbow">رنگین‌کمان</string>
+    <string name="dejavu_loading_colors_workspace">رنگ‌های فضای کاری</string>
+    <string name="dejavu_loading_colors_workspace_summary">رنگ‌های فضای کاری زبانه. زبانه‌های خصوصی و فضاهای کاری بدون رنگ، رنگین‌کمان را نشان می‌دهند.</string>
+    <string name="dejavu_loading_colors_custom">رنگ‌های سفارشی</string>
+    <string name="dejavu_loading_colors_custom_summary">تا سه رنگ انتخاب کنید. برای تغییرشان دوباره ضربه بزنید.</string>
 </resources>

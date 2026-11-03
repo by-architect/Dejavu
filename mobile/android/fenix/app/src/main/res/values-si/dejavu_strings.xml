@@ -543,4 +543,10 @@
     <string name="dejavu_settings_tips_summary">“නව පටිත්ත” තද කර අල්ලාගෙන සිටීම වැනි සැඟවුණු අභින පිළිබඳ ඉඟි පෙන්වන්න</string>
     <string name="dejavu_new">නව</string>
     <string name="dejavu_menu_customize_reader_view">කියවීමේ දැක්ම රිසිකරණය කරන්න</string>
+    <string name="dejavu_loading_colors">පිටුව පූරණය වන අතරතුර වර්ණ</string>
+    <string name="dejavu_loading_colors_rainbow">දේදුන්න</string>
+    <string name="dejavu_loading_colors_workspace">අවකාශයේ වර්ණ</string>
+    <string name="dejavu_loading_colors_workspace_summary">පටිත්තේ අවකාශයේ වර්ණ. පෞද්ගලික පටිති සහ වර්ණ නැති අවකාශ දේදුන්න පෙන්වයි.</string>
+    <string name="dejavu_loading_colors_custom">අභිරුචි වර්ණ</string>
+    <string name="dejavu_loading_colors_custom_summary">වර්ණ තුනක් දක්වා තෝරන්න. වෙනස් කිරීමට නැවත තට්ටු කරන්න.</string>
 </resources>

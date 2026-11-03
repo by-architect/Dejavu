@@ -543,4 +543,10 @@
     <string name="dejavu_settings_tips_summary">Яшерен ишарәләр турында киңәшләр күрсәтү, мәсәлән, Яңа таб төймәсенә басып тору</string>
     <string name="dejavu_new">Яңа</string>
     <string name="dejavu_menu_customize_reader_view">Уку режимын көйләү</string>
+    <string name="dejavu_loading_colors">Бит йөкләнгәндә төсләр</string>
+    <string name="dejavu_loading_colors_rainbow">Салават күпере</string>
+    <string name="dejavu_loading_colors_workspace">Эш өлкәсе төсләре</string>
+    <string name="dejavu_loading_colors_workspace_summary">Таб эш өлкәсенең төсләре. Хосусый таблар һәм төссез эш өлкәләре салават күперен күрсәтә.</string>
+    <string name="dejavu_loading_colors_custom">Махсус төсләр</string>
+    <string name="dejavu_loading_colors_custom_summary">Өч төскә кадәр сайлагыз. Үзгәртү өчен кабат басыгыз.</string>
 </resources>

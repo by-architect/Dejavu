@@ -37,6 +37,7 @@ import org.mozilla.fenix.dejavu.browser.DejavuToolbar
 import org.mozilla.fenix.dejavu.discover.NewThing
 import org.mozilla.fenix.dejavu.discover.NewThings
 import org.mozilla.fenix.dejavu.settings.dejavuSettings
+import org.mozilla.fenix.dejavu.settings.setupLoadingColorsCategory
 import org.mozilla.fenix.dejavu.settings.slideTo
 import org.mozilla.fenix.e2e.SystemInsetsPaddedFragment
 import org.mozilla.fenix.ext.components
@@ -148,6 +149,8 @@ open class CustomizationFragment : PreferenceFragmentCompat(), SystemInsetsPadde
         setupToolbarLayout()
         updateToolbarShortcut()
         setupBarsCategory()
+        // Dejavu: the colors that run through the address bar while a page loads.
+        setupLoadingColorsCategory()
         setupHomeSearchCategory()
         setupSystemBarsSwitch()
 

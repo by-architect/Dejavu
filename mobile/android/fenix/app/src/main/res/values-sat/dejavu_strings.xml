@@ -551,4 +551,10 @@
     <string name="dejavu_settings_tips_summary">“ᱱᱟᱶᱟ ᱴᱮᱵᱽ” ᱚᱛᱟ ᱫᱚᱦᱚ ᱞᱮᱠᱟᱱ ᱩᱠᱩ ᱪᱤᱱᱦᱟᱹ ᱠᱚ ᱵᱟᱵᱚᱛ ᱥᱩᱡᱷᱟᱹᱣ ᱠᱚ ᱩᱫᱩᱜ ᱢᱮ</string>
     <string name="dejavu_new">ᱱᱟᱶᱟ</string>
     <string name="dejavu_menu_customize_reader_view">ᱨᱤᱰᱚᱨ ᱵᱷᱭᱩ ᱠᱚᱥᱴᱚᱢᱟᱭᱤᱡᱽ ᱢᱮ</string>
+    <string name="dejavu_loading_colors">ᱥᱟᱦᱴᱟ ᱞᱚᱰ ᱚᱠᱛᱮ ᱨᱚᱝ</string>
+    <string name="dejavu_loading_colors_rainbow">ᱨᱟᱢᱫᱷᱮᱬᱩ</string>
+    <string name="dejavu_loading_colors_workspace">ᱣᱟᱨᱠᱥᱯᱮᱥ ᱨᱚᱝ</string>
+    <string name="dejavu_loading_colors_workspace_summary">ᱴᱮᱵᱽ ᱨᱮᱭᱟᱜ ᱣᱟᱨᱠᱥᱯᱮᱥ ᱨᱚᱝ ᱠᱚ᱾ ᱱᱤᱡᱮᱨᱟᱜ ᱴᱮᱵᱽ ᱟᱨ ᱨᱚᱝ ᱵᱟᱹᱱᱩᱜ ᱣᱟᱨᱠᱥᱯᱮᱥ ᱨᱟᱢᱫᱷᱮᱬᱩ ᱩᱫᱩᱜᱟ᱾</string>
+    <string name="dejavu_loading_colors_custom">ᱠᱩᱥᱤᱭᱟᱜ ᱨᱚᱝ ᱠᱚ</string>
+    <string name="dejavu_loading_colors_custom_summary">ᱯᱮ ᱨᱚᱝ ᱦᱟᱹᱵᱤᱡ ᱵᱟᱪᱷᱟᱣ ᱢᱮ᱾ ᱵᱚᱫᱚᱞ ᱞᱟᱹᱜᱤᱫ ᱫᱩᱦᱲᱟᱹ ᱴᱤᱯᱟᱹᱣ ᱢᱮ᱾</string>
 </resources>

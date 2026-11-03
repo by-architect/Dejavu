@@ -40,6 +40,23 @@
 
     <androidx.preference.PreferenceCategory
         android:layout="@layout/preference_cat_style"
+        android:title="@string/dejavu_loading_colors"
+        app:iconSpaceReserved="false">
+        <org.mozilla.fenix.settings.RadioButtonPreference
+            android:key="@string/pref_key_dejavu_loading_colors_rainbow"
+            android:title="@string/dejavu_loading_colors_rainbow" />
+        <org.mozilla.fenix.settings.RadioButtonPreference
+            android:key="@string/pref_key_dejavu_loading_colors_workspace"
+            android:title="@string/dejavu_loading_colors_workspace"
+            android:summary="@string/dejavu_loading_colors_workspace_summary" />
+        <org.mozilla.fenix.settings.RadioButtonPreference
+            android:key="@string/pref_key_dejavu_loading_colors_custom"
+            android:title="@string/dejavu_loading_colors_custom"
+            android:summary="@string/dejavu_loading_colors_custom_summary" />
+    </androidx.preference.PreferenceCategory>
+
+    <androidx.preference.PreferenceCategory
+        android:layout="@layout/preference_cat_style"
         android:title="@string/preferences_home_2"
         app:iconSpaceReserved="false">
         <org.mozilla.fenix.settings.RadioButtonPreference

@@ -535,4 +535,10 @@
     <string name="dejavu_settings_tips_summary">显示有关隐藏手势的提示，例如长按“新建标签页”</string>
     <string name="dejavu_new">新</string>
     <string name="dejavu_menu_customize_reader_view">定制阅读模式</string>
+    <string name="dejavu_loading_colors">页面加载时的颜色</string>
+    <string name="dejavu_loading_colors_rainbow">彩虹</string>
+    <string name="dejavu_loading_colors_workspace">工作区颜色</string>
+    <string name="dejavu_loading_colors_workspace_summary">标签页所在工作区的颜色。隐私标签页和没有颜色的工作区显示彩虹。</string>
+    <string name="dejavu_loading_colors_custom">自定义颜色</string>
+    <string name="dejavu_loading_colors_custom_summary">最多选择三种颜色。再次点按可更改。</string>
 </resources>

@@ -543,4 +543,10 @@
     <string name="dejavu_settings_tips_summary">لکوکا اشاراک نا بارو اٹ مشوراک تس، جیسا کہ «پوسکنو ٹیب اس» اے دبا ہلنگ</string>
     <string name="dejavu_new">پوسکن</string>
     <string name="dejavu_menu_customize_reader_view">خواننگ دروشم اے کسٹمائز کبو</string>
+    <string name="dejavu_loading_colors">صفحہ لوڈ مریکہ رنگاک</string>
+    <string name="dejavu_loading_colors_rainbow">قوس قزح</string>
+    <string name="dejavu_loading_colors_workspace">ورک سپیس نا رنگاک</string>
+    <string name="dejavu_loading_colors_workspace_summary">ٹیب نا ورک سپیس نا رنگاک. زاتی ٹیباک او بے رنگ ورک سپیساک قوس قزح اے پیشان کیرہ.</string>
+    <string name="dejavu_loading_colors_custom">کسٹم رنگاک</string>
+    <string name="dejavu_loading_colors_custom_summary">مسٹ رنگ اسکان چوائس کبو. بدل کننگ کن پدا ٹیپ کبو.</string>
 </resources>

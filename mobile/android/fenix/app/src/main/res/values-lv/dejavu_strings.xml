@@ -551,4 +551,10 @@
     <string name="dejavu_settings_tips_summary">Rādīt padomus par slēptiem žestiem, piemēram, pogas Jauna cilne turēšanu</string>
     <string name="dejavu_new">Jaunums</string>
     <string name="dejavu_menu_customize_reader_view">Pielāgot lasītāja režīmu</string>
+    <string name="dejavu_loading_colors">Krāsas lapas ielādes laikā</string>
+    <string name="dejavu_loading_colors_rainbow">Varavīksne</string>
+    <string name="dejavu_loading_colors_workspace">Darbvietas krāsas</string>
+    <string name="dejavu_loading_colors_workspace_summary">Cilnes darbvietas krāsas. Privātās cilnes un darbvietas bez krāsām rāda varavīksni.</string>
+    <string name="dejavu_loading_colors_custom">Pielāgotas krāsas</string>
+    <string name="dejavu_loading_colors_custom_summary">Izvēlieties līdz trim krāsām. Pieskarieties vēlreiz, lai tās mainītu.</string>
 </resources>

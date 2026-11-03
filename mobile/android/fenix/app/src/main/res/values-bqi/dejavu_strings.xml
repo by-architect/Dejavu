@@ -543,4 +543,10 @@
     <string name="dejavu_settings_tips_summary">نشون دادن نکته یل سی اشاره یل قایم، مثل نگه داشتن «بلگه نۊ»</string>
     <string name="dejavu_new">نۊ</string>
     <string name="dejavu_menu_customize_reader_view">سفارشی کردن نما خۊندنی</string>
+    <string name="dejavu_loading_colors">رنگ یل گاتی که صفحه بار ابۊ</string>
+    <string name="dejavu_loading_colors_rainbow">رنگین کمون</string>
+    <string name="dejavu_loading_colors_workspace">رنگ یل فضا</string>
+    <string name="dejavu_loading_colors_workspace_summary">رنگ یل فضای بلگه. بلگه یل سیخومی و فضایل بی رنگ رنگین کمون ن نشون ادن.</string>
+    <string name="dejavu_loading_colors_custom">رنگ یل سفارشی</string>
+    <string name="dejavu_loading_colors_custom_summary">تا سی رنگ وورچین. سی آلشت کردنشون دوباره بزنین.</string>
 </resources>

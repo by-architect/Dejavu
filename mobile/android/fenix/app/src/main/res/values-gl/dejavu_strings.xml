@@ -543,4 +543,10 @@
     <string name="dejavu_settings_tips_summary">Amosar consellos sobre xestos agochados, como manter premido «Nova lapela»</string>
     <string name="dejavu_new">Novo</string>
     <string name="dejavu_menu_customize_reader_view">Personalizar a vista de lectura</string>
+    <string name="dejavu_loading_colors">Cores mentres se carga unha páxina</string>
+    <string name="dejavu_loading_colors_rainbow">Arco da vella</string>
+    <string name="dejavu_loading_colors_workspace">Cores do espazo de traballo</string>
+    <string name="dejavu_loading_colors_workspace_summary">As cores do espazo de traballo da lapela. As lapelas privadas e os espazos de traballo sen cores amosan o arco da vella.</string>
+    <string name="dejavu_loading_colors_custom">Cores personalizadas</string>
+    <string name="dejavu_loading_colors_custom_summary">Escolle ata tres cores. Toca de novo para cambialas.</string>
 </resources>

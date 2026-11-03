@@ -543,4 +543,10 @@
     <string name="dejavu_settings_tips_summary">Yashirin ishoralar haqida maslahatlarni ko\'rsatish, masalan, “Yangi varaq” tugmasini bosib turish</string>
     <string name="dejavu_new">Yangi</string>
     <string name="dejavu_menu_customize_reader_view">Oʻqish rejimini moslash</string>
+    <string name="dejavu_loading_colors">Sahifa yuklanayotganda ranglar</string>
+    <string name="dejavu_loading_colors_rainbow">Kamalak</string>
+    <string name="dejavu_loading_colors_workspace">Ish maydoni ranglari</string>
+    <string name="dejavu_loading_colors_workspace_summary">Varaq ish maydonining ranglari. Maxfiy varaqlar va rangsiz ish maydonlari kamalakni ko\'rsatadi.</string>
+    <string name="dejavu_loading_colors_custom">Maxsus ranglar</string>
+    <string name="dejavu_loading_colors_custom_summary">Uchtagacha rang tanlang. O\'zgartirish uchun yana bosing.</string>
 </resources>

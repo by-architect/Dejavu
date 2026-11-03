@@ -575,4 +575,10 @@
     <string name="dejavu_settings_tips_summary">Diskwedhes kussulyow a-dro dhe wayansow kudh, kepar ha synsy “Tab Nowyth”</string>
     <string name="dejavu_new">Nowydh</string>
     <string name="dejavu_menu_customize_reader_view">Chanjya an gwel redya</string>
+    <string name="dejavu_loading_colors">Liwyow ha folen ow karga</string>
+    <string name="dejavu_loading_colors_rainbow">Kammneves</string>
+    <string name="dejavu_loading_colors_workspace">Liwyow an tyller-ober</string>
+    <string name="dejavu_loading_colors_workspace_summary">Liwyow tyller-ober an tab. Tabow privedh ha tylleryow-ober heb liwyow a dhiskwedh an gammneves.</string>
+    <string name="dejavu_loading_colors_custom">Liwyow personel</string>
+    <string name="dejavu_loading_colors_custom_summary">Dewisewgh bys yn tri liw. Tappyewgh arta dh\'aga chanjya.</string>
 </resources>

@@ -559,4 +559,10 @@
     <string name="dejavu_settings_tips_summary">Pokazki wó schowanych gestach pokazaś, na pś. dłujke tłocenje na „Nowy rejtarik“</string>
     <string name="dejavu_new">Nowy</string>
     <string name="dejavu_menu_customize_reader_view">Cytański naglěd pśiměriś</string>
+    <string name="dejavu_loading_colors">Barwy, mjaztym až se bok zacytujo</string>
+    <string name="dejavu_loading_colors_rainbow">Dužka</string>
+    <string name="dejavu_loading_colors_workspace">Barwy źěłowego ruma</string>
+    <string name="dejavu_loading_colors_workspace_summary">Barwy źěłowego ruma rejtarika. Priwatne rejtariki a źěłowe rumy bźez barwow pokazuju dužku.</string>
+    <string name="dejavu_loading_colors_custom">Swójske barwy</string>
+    <string name="dejavu_loading_colors_custom_summary">Wubjeŕśo až do tśich barwow. Pótusniśo hyšći raz, aby je změnił.</string>
 </resources>

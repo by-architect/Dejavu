@@ -543,4 +543,10 @@
     <string name="dejavu_settings_tips_summary">Εμφάνιση συμβουλών για κρυφές χειρονομίες, όπως το παρατεταμένο πάτημα του «Νέα καρτέλα»</string>
     <string name="dejavu_new">Νέο</string>
     <string name="dejavu_menu_customize_reader_view">Προσαρμογή προβολής ανάγνωσης</string>
+    <string name="dejavu_loading_colors">Χρώματα κατά τη φόρτωση σελίδας</string>
+    <string name="dejavu_loading_colors_rainbow">Ουράνιο τόξο</string>
+    <string name="dejavu_loading_colors_workspace">Χρώματα χώρου εργασίας</string>
+    <string name="dejavu_loading_colors_workspace_summary">Τα χρώματα του χώρου εργασίας της καρτέλας. Οι ιδιωτικές καρτέλες και οι χώροι εργασίας χωρίς χρώματα δείχνουν το ουράνιο τόξο.</string>
+    <string name="dejavu_loading_colors_custom">Προσαρμοσμένα χρώματα</string>
+    <string name="dejavu_loading_colors_custom_summary">Επιλέξτε έως τρία χρώματα. Πατήστε ξανά για να τα αλλάξετε.</string>
 </resources>

@@ -543,4 +543,10 @@
     <string name="dejavu_settings_tips_summary">Vis tips om skjulte bevegelser, som å holde inne «Ny fane»</string>
     <string name="dejavu_new">Ny</string>
     <string name="dejavu_menu_customize_reader_view">Tilpass lesevisning</string>
+    <string name="dejavu_loading_colors">Farger mens en side lastes inn</string>
+    <string name="dejavu_loading_colors_rainbow">Regnbue</string>
+    <string name="dejavu_loading_colors_workspace">Arbeidsområdets farger</string>
+    <string name="dejavu_loading_colors_workspace_summary">Fargene til fanens arbeidsområde. Private faner og arbeidsområder uten farger viser regnbuen.</string>
+    <string name="dejavu_loading_colors_custom">Egendefinerte farger</string>
+    <string name="dejavu_loading_colors_custom_summary">Velg opptil tre farger. Trykk igjen for å endre dem.</string>
 </resources>

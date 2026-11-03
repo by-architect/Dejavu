@@ -551,4 +551,10 @@
     <string name="dejavu_settings_tips_summary">Mostra consells sobre gestos ocults, com ara mantenir premut «Pestanya nova»</string>
     <string name="dejavu_new">Nou</string>
     <string name="dejavu_menu_customize_reader_view">Personalitza la vista de lectura</string>
+    <string name="dejavu_loading_colors">Colors mentre es carrega una pàgina</string>
+    <string name="dejavu_loading_colors_rainbow">Arc de Sant Martí</string>
+    <string name="dejavu_loading_colors_workspace">Colors de l\'espai de treball</string>
+    <string name="dejavu_loading_colors_workspace_summary">Els colors de l\'espai de treball de la pestanya. Les pestanyes privades i els espais de treball sense colors mostren l\'arc de Sant Martí.</string>
+    <string name="dejavu_loading_colors_custom">Colors personalitzats</string>
+    <string name="dejavu_loading_colors_custom_summary">Trieu fins a tres colors. Toqueu de nou per canviar-los.</string>
 </resources>

@@ -543,4 +543,10 @@
     <string name="dejavu_settings_tips_summary">Şîretên li ser hereketên tiliyan ên veşartî nîşan bide, wekî bi dirêjahî tikandina li «Hilpekîna nû»</string>
     <string name="dejavu_new">Nû</string>
     <string name="dejavu_menu_customize_reader_view">Moda xwînerê taybet bike</string>
+    <string name="dejavu_loading_colors">Reng dema rûpel bar dibe</string>
+    <string name="dejavu_loading_colors_rainbow">Keskesor</string>
+    <string name="dejavu_loading_colors_workspace">Rengên qadê</string>
+    <string name="dejavu_loading_colors_workspace_summary">Rengên qada hilpekînê. Hilpekînên taybet û qadên bê reng keskesorê nîşan didin.</string>
+    <string name="dejavu_loading_colors_custom">Rengên taybet</string>
+    <string name="dejavu_loading_colors_custom_summary">Heta sê rengan hilbijêre. Ji bo guhertinê dîsa bitikîne.</string>
 </resources>

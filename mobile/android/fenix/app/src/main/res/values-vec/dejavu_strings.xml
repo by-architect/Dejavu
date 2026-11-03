@@ -551,4 +551,10 @@
     <string name="dejavu_settings_tips_summary">Mostra consegi so i gesti sconti, come tegner strucà Nova scheda</string>
     <string name="dejavu_new">Novo</string>
     <string name="dejavu_menu_customize_reader_view">Personalixa ła modalità ƚetura</string>
+    <string name="dejavu_loading_colors">Coƚori fin che na pàxena ła se carga</string>
+    <string name="dejavu_loading_colors_rainbow">Arcobałen</string>
+    <string name="dejavu_loading_colors_workspace">Coƚori de ƚo spasio de laoro</string>
+    <string name="dejavu_loading_colors_workspace_summary">I coƚori de ƚo spasio de laoro de ła scheda. Łe schede anonime e i spasi de laoro sensa coƚori i mostra l\'arcobałen.</string>
+    <string name="dejavu_loading_colors_custom">Coƚori personałizài</string>
+    <string name="dejavu_loading_colors_custom_summary">Sièrni fin a tre coƚori. Toca da novo par canbiarli.</string>
 </resources>

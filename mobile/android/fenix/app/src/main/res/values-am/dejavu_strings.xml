@@ -543,4 +543,10 @@
     <string name="dejavu_settings_tips_summary">ስለተደበቁ የእጅ ምልክቶች ጠቃሚ ምክሮችን አሳይ፣ ለምሳሌ «አዲስ ትር»ን ተጭኖ መያዝ</string>
     <string name="dejavu_new">አዲስ</string>
     <string name="dejavu_menu_customize_reader_view">የአንባቢ እይታን አብጅ</string>
+    <string name="dejavu_loading_colors">ገጽ በሚጫንበት ጊዜ ቀለሞች</string>
+    <string name="dejavu_loading_colors_rainbow">ቀስተ ደመና</string>
+    <string name="dejavu_loading_colors_workspace">የስራ ቦታ ቀለሞች</string>
+    <string name="dejavu_loading_colors_workspace_summary">የትሩ የስራ ቦታ ቀለሞች። የግል ትሮች እና ቀለም የሌላቸው የስራ ቦታዎች ቀስተ ደመናውን ያሳያሉ።</string>
+    <string name="dejavu_loading_colors_custom">ብጁ ቀለሞች</string>
+    <string name="dejavu_loading_colors_custom_summary">እስከ ሦስት ቀለሞች ይምረጡ። ለመቀየር እንደገና መታ ያድርጉ።</string>
 </resources>

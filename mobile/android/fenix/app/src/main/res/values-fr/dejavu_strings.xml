@@ -543,4 +543,10 @@
     <string name="dejavu_settings_tips_summary">Afficher des astuces sur les mouvements cachés, comme maintenir « Nouvel onglet » appuyé</string>
     <string name="dejavu_new">Nouveau</string>
     <string name="dejavu_menu_customize_reader_view">Personnaliser le mode lecture</string>
+    <string name="dejavu_loading_colors">Couleurs pendant le chargement d\'une page</string>
+    <string name="dejavu_loading_colors_rainbow">Arc-en-ciel</string>
+    <string name="dejavu_loading_colors_workspace">Couleurs de l\'espace</string>
+    <string name="dejavu_loading_colors_workspace_summary">Les couleurs de l\'espace de l\'onglet. Les onglets privés et les espaces sans couleurs affichent l\'arc-en-ciel.</string>
+    <string name="dejavu_loading_colors_custom">Couleurs personnalisées</string>
+    <string name="dejavu_loading_colors_custom_summary">Choisis jusqu\'à trois couleurs. Touche à nouveau pour les modifier.</string>
 </resources>

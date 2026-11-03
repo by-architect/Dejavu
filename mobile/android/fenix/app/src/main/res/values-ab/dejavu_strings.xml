@@ -543,4 +543,10 @@
     <string name="dejavu_settings_tips_summary">Иҵәахыу анапқәа ирызку ацхыраарақәа аарԥшра, иаҳҳәап, «Абларҭа ҿыц» аанкылара</string>
     <string name="dejavu_new">Иҿыцу</string>
     <string name="dejavu_menu_customize_reader_view">Аԥхьара аԥшра рхиатәуп</string>
+    <string name="dejavu_loading_colors">Адаҟьа аныҭагалоу аԥштәқәа</string>
+    <string name="dejavu_loading_colors_rainbow">Аԥштәқәа зегьы</string>
+    <string name="dejavu_loading_colors_workspace">Аҭыԥ аԥштәқәа</string>
+    <string name="dejavu_loading_colors_workspace_summary">Абларҭа аҭыԥ аԥштәқәа. Ахатә абларҭақәеи аԥштәқәа змам аҭыԥқәеи аԥштәқәа зегьы аарԥшуеит.</string>
+    <string name="dejavu_loading_colors_custom">Ахатә аԥштәқәа</string>
+    <string name="dejavu_loading_colors_custom_summary">Хԥа рҟынӡа аԥштәқәа алышәх. Ирыԥсахразы еиҭа шәақәыӷәӷәа.</string>
 </resources>

@@ -535,4 +535,10 @@
     <string name="dejavu_settings_tips_summary">Pintonkeun tips ngeunaan réngkak nu nyumput, saperti nahan “Tab Anyar”</string>
     <string name="dejavu_new">Anyar</string>
     <string name="dejavu_menu_customize_reader_view">Robah panémbong pamaca</string>
+    <string name="dejavu_loading_colors">Warna nalika kaca keur dimuat</string>
+    <string name="dejavu_loading_colors_rainbow">Katumbiri</string>
+    <string name="dejavu_loading_colors_workspace">Warna rohangan</string>
+    <string name="dejavu_loading_colors_workspace_summary">Warna rohangan tab. Tab nyamuni jeung rohangan tanpa warna mintonkeun katumbiri.</string>
+    <string name="dejavu_loading_colors_custom">Warna husus</string>
+    <string name="dejavu_loading_colors_custom_summary">Pilih nepi ka tilu warna. Toél deui pikeun ngarobahna.</string>
 </resources>

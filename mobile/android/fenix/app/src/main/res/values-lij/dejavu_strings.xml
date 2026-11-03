@@ -543,4 +543,10 @@
     <string name="dejavu_settings_tips_summary">Mostra conseggi in scî gesti ascoxi, comme tegnî sciaccou “Neuvo feuggio”</string>
     <string name="dejavu_new">Neuvo</string>
     <string name="dejavu_menu_customize_reader_view">Personalizza modalitæ letua</string>
+    <string name="dejavu_loading_colors">Coloî mentre che \'na pagina a se carega</string>
+    <string name="dejavu_loading_colors_rainbow">Arcobaleno</string>
+    <string name="dejavu_loading_colors_workspace">Coloî do spaçio de travaggio</string>
+    <string name="dejavu_loading_colors_workspace_summary">I coloî do spaçio de travaggio do feuggio. I feuggi privæ e i spaçi de travaggio sensa coloî mostran l\'arcobaleno.</string>
+    <string name="dejavu_loading_colors_custom">Coloî personalizæ</string>
+    <string name="dejavu_loading_colors_custom_summary">Çerni scin a trei coloî. Sciacca torna pe cangiâli.</string>
 </resources>

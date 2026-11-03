@@ -559,4 +559,10 @@
     <string name="dejavu_settings_tips_summary">Rodyti patarimus apie paslėptus gestus, pavyzdžiui, mygtuko „Nauja kortelė“ palaikymą</string>
     <string name="dejavu_new">Nauja</string>
     <string name="dejavu_menu_customize_reader_view">Tinkinti skaitymo rodinį</string>
+    <string name="dejavu_loading_colors">Spalvos įkeliant tinklalapį</string>
+    <string name="dejavu_loading_colors_rainbow">Vaivorykštė</string>
+    <string name="dejavu_loading_colors_workspace">Darbo erdvės spalvos</string>
+    <string name="dejavu_loading_colors_workspace_summary">Kortelės darbo erdvės spalvos. Privačios kortelės ir darbo erdvės be spalvų rodo vaivorykštę.</string>
+    <string name="dejavu_loading_colors_custom">Pasirinktinės spalvos</string>
+    <string name="dejavu_loading_colors_custom_summary">Pasirinkite iki trijų spalvų. Bakstelėkite dar kartą, kad jas pakeistumėte.</string>
 </resources>

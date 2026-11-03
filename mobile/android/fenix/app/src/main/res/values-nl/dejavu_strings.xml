@@ -543,4 +543,10 @@
     <string name="dejavu_settings_tips_summary">Tips tonen over verborgen bewegingen, zoals “Nieuw tabblad” ingedrukt houden</string>
     <string name="dejavu_new">Nieuw</string>
     <string name="dejavu_menu_customize_reader_view">Lezerweergave aanpassen</string>
+    <string name="dejavu_loading_colors">Kleuren tijdens het laden van een pagina</string>
+    <string name="dejavu_loading_colors_rainbow">Regenboog</string>
+    <string name="dejavu_loading_colors_workspace">Werkruimtekleuren</string>
+    <string name="dejavu_loading_colors_workspace_summary">De kleuren van de werkruimte van het tabblad. Privétabbladen en werkruimten zonder kleuren tonen de regenboog.</string>
+    <string name="dejavu_loading_colors_custom">Aangepaste kleuren</string>
+    <string name="dejavu_loading_colors_custom_summary">Kies maximaal drie kleuren. Tik opnieuw om ze te wijzigen.</string>
 </resources>

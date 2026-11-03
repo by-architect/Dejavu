@@ -543,4 +543,10 @@
     <string name="dejavu_settings_tips_summary">Mostre sugjeriments sui mots platâts, come tignî fracât Gnove schede</string>
     <string name="dejavu_new">Gnûf</string>
     <string name="dejavu_menu_customize_reader_view">Personalize viodude di leture</string>
+    <string name="dejavu_loading_colors">Colôrs intant che une pagjine si cjarie</string>
+    <string name="dejavu_loading_colors_rainbow">Arcobalen</string>
+    <string name="dejavu_loading_colors_workspace">Colôrs dal spazi di lavôr</string>
+    <string name="dejavu_loading_colors_workspace_summary">I colôrs dal spazi di lavôr de schede. Lis schedis privadis e i spazis di lavôr cence colôrs a mostrin l\'arcobalen.</string>
+    <string name="dejavu_loading_colors_custom">Colôrs personalizâts</string>
+    <string name="dejavu_loading_colors_custom_summary">Sielç fin a trê colôrs. Tocje di gnûf par cambiâju.</string>
 </resources>

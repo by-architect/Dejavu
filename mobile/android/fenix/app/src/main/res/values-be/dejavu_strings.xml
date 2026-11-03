@@ -559,4 +559,10 @@
     <string name="dejavu_settings_tips_summary">Паказваць парады пра схаваныя жэсты, напрыклад утрыманне кнопкі «Новая картка»</string>
     <string name="dejavu_new">Новае</string>
     <string name="dejavu_menu_customize_reader_view">Уладкаваць рэжым чытання</string>
+    <string name="dejavu_loading_colors">Колеры падчас загрузкі старонкі</string>
+    <string name="dejavu_loading_colors_rainbow">Вясёлка</string>
+    <string name="dejavu_loading_colors_workspace">Колеры прасторы</string>
+    <string name="dejavu_loading_colors_workspace_summary">Колеры прасторы, у якой картка. Прыватныя карткі і прасторы без колераў паказваюць вясёлку.</string>
+    <string name="dejavu_loading_colors_custom">Уласныя колеры</string>
+    <string name="dejavu_loading_colors_custom_summary">Выберыце да трох колераў. Націсніце яшчэ раз, каб змяніць іх.</string>
 </resources>

@@ -535,4 +535,10 @@
     <string name="dejavu_settings_tips_summary">「新しいタブ」の長押しなど、隠れたジェスチャーのヒントを表示します</string>
     <string name="dejavu_new">新機能</string>
     <string name="dejavu_menu_customize_reader_view">リーダービューをカスタマイズ</string>
+    <string name="dejavu_loading_colors">ページ読み込み中の色</string>
+    <string name="dejavu_loading_colors_rainbow">虹色</string>
+    <string name="dejavu_loading_colors_workspace">ワークスペースの色</string>
+    <string name="dejavu_loading_colors_workspace_summary">タブのワークスペースの色です。プライベートタブや色のないワークスペースでは虹色になります。</string>
+    <string name="dejavu_loading_colors_custom">カスタムカラー</string>
+    <string name="dejavu_loading_colors_custom_summary">最大 3 色を選択します。もう一度タップすると変更できます。</string>
 </resources>

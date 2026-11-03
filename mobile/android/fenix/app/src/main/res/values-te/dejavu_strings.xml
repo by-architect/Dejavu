@@ -543,4 +543,10 @@
     <string name="dejavu_settings_tips_summary">కొత్త ట్యాబు బటన్‌ను నొక్కిపట్టుకోవడం వంటి దాగి ఉన్న సైగల గురించి చిట్కాలను చూపించు</string>
     <string name="dejavu_new">కొత్తది</string>
     <string name="dejavu_menu_customize_reader_view">చదివే వీక్షణను అభిమతీకరించు</string>
+    <string name="dejavu_loading_colors">పేజీ లోడ్ అవుతున్నప్పుడు రంగులు</string>
+    <string name="dejavu_loading_colors_rainbow">ఇంద్రధనుస్సు</string>
+    <string name="dejavu_loading_colors_workspace">కార్యస్థల రంగులు</string>
+    <string name="dejavu_loading_colors_workspace_summary">ట్యాబు కార్యస్థలం యొక్క రంగులు. అంతరంగిక ట్యాబులు, రంగులు లేని కార్యస్థలాలు ఇంద్రధనుస్సును చూపిస్తాయి.</string>
+    <string name="dejavu_loading_colors_custom">అనుకూల రంగులు</string>
+    <string name="dejavu_loading_colors_custom_summary">మూడు రంగుల వరకు ఎంచుకోండి. మార్చడానికి మళ్ళీ తట్టండి.</string>
 </resources>

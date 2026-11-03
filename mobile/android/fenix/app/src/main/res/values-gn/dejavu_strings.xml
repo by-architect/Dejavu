@@ -543,4 +543,10 @@
     <string name="dejavu_settings_tips_summary">Ehechauka ñemoñe\'ẽ ñeha\'ãnga kañymby rehegua, ha\'eháicha ejopy are “Tendayke pyahu”</string>
     <string name="dejavu_new">Pyahu</string>
     <string name="dejavu_menu_customize_reader_view">Emboava moñe’ẽrã jehechaha</string>
+    <string name="dejavu_loading_colors">Sa\'y kuatiarogue ojehupi aja</string>
+    <string name="dejavu_loading_colors_rainbow">Sa\'y opaichagua</string>
+    <string name="dejavu_loading_colors_workspace">Tembiapo renda sa\'y</string>
+    <string name="dejavu_loading_colors_workspace_summary">Tendayke tembiapo renda sa\'y. Tendayke ñemi ha tembiapo renda sa\'y\'ỹva ohechauka sa\'y opaichagua.</string>
+    <string name="dejavu_loading_colors_custom">Sa\'y ojeporavopyre</string>
+    <string name="dejavu_loading_colors_custom_summary">Eiporavo mbohapy sa\'y peve. Eikutu jey emoambue hag̃ua.</string>
 </resources>

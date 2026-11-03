@@ -543,4 +543,10 @@
     <string name="dejavu_settings_tips_summary">Sken-d iwellihen ɣef yisillifen yeffren, am tuṭṭfa deg “Aseksel amaynu”</string>
     <string name="dejavu_new">Amaynu</string>
     <string name="dejavu_menu_customize_reader_view">Sagen tamuɣli n tɣuri</string>
+    <string name="dejavu_loading_colors">Initen mi d-ittwasali usebter</string>
+    <string name="dejavu_loading_colors_rainbow">Tislit n unẓar</string>
+    <string name="dejavu_loading_colors_workspace">Initen n umkan n umahil</string>
+    <string name="dejavu_loading_colors_workspace_summary">Initen n umkan n umahil n useksel. Iseksal uslig d imukan n umahil war initen ssknen tislit n unẓar.</string>
+    <string name="dejavu_loading_colors_custom">Initen udmawanen</string>
+    <string name="dejavu_loading_colors_custom_summary">Sti ar kraḍ n yini. Ssed tikkelt yaḍnin bac ad tn-tbeddled.</string>
 </resources>

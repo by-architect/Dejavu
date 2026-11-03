@@ -543,4 +543,10 @@
     <string name="dejavu_settings_tips_summary">“ନୂଆ ଟ୍ୟାବ୍” ଦବାଇ ଧରିବା ଭଳି ଲୁଚିଥିବା ଜେଶ୍ଚର୍ ବିଷୟରେ ପରାମର୍ଶ ଦେଖାନ୍ତୁ</string>
     <string name="dejavu_new">ନୂଆ</string>
     <string name="dejavu_menu_customize_reader_view">ପାଠକ ଦୃଶ୍ୟ କଷ୍ଟମାଇଜ୍ କରନ୍ତୁ</string>
+    <string name="dejavu_loading_colors">ପୃଷ୍ଠା ଲୋଡ୍ ହେଉଥିବା ବେଳେ ରଙ୍ଗ</string>
+    <string name="dejavu_loading_colors_rainbow">ଇନ୍ଦ୍ରଧନୁ</string>
+    <string name="dejavu_loading_colors_workspace">କାର୍ଯ୍ୟକ୍ଷେତ୍ରର ରଙ୍ଗ</string>
+    <string name="dejavu_loading_colors_workspace_summary">ଟ୍ୟାବ୍‌ର କାର୍ଯ୍ୟକ୍ଷେତ୍ରର ରଙ୍ଗ। ବ୍ୟକ୍ତିଗତ ଟ୍ୟାବ୍ ଏବଂ ରଙ୍ଗ ନଥିବା କାର୍ଯ୍ୟକ୍ଷେତ୍ର ଇନ୍ଦ୍ରଧନୁ ଦେଖାଏ।</string>
+    <string name="dejavu_loading_colors_custom">କଷ୍ଟମ୍ ରଙ୍ଗ</string>
+    <string name="dejavu_loading_colors_custom_summary">ତିନୋଟି ପର୍ଯ୍ୟନ୍ତ ରଙ୍ଗ ବାଛନ୍ତୁ। ବଦଳାଇବାକୁ ପୁଣି ଟାପ୍ କରନ୍ତୁ।</string>
 </resources>

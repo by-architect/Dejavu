@@ -543,4 +543,10 @@
     <string name="dejavu_settings_tips_summary">Sken iwellihen ɣef yisillifen yeffren, am tuṭṭfa n «Iccer amaynut» s uḍad</string>
     <string name="dejavu_new">Amaynut</string>
     <string name="dejavu_menu_customize_reader_view">Sagen timeẓri n tɣuri</string>
+    <string name="dejavu_loading_colors">Initen mi ara d-tettwasali tasna</string>
+    <string name="dejavu_loading_colors_rainbow">Tislit n wenzar</string>
+    <string name="dejavu_loading_colors_workspace">Initen n wamkan n umahil</string>
+    <string name="dejavu_loading_colors_workspace_summary">Initen n wamkan n umahil n yiccer. Iccaren uslig d yimukan n umahil war initen sseknen-d tislit n wenzar.</string>
+    <string name="dejavu_loading_colors_custom">Initen udmawanen</string>
+    <string name="dejavu_loading_colors_custom_summary">Fren alamma d kraḍ n yini. Sit tikkelt-nniḍen akken ad ten-tbeddleḍ.</string>
 </resources>
