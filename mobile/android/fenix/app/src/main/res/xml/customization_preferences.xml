@@ -82,4 +82,11 @@
         android:key="@string/pref_key_dejavu_bars"
         android:title="@string/dejavu_settings_bars_2"
         android:summary="@string/dejavu_settings_bars_summary" />
+
+    <androidx.preference.Preference
+        app:iconSpaceReserved="false"
+        app:widgetLayout="@layout/dejavu_preference_badge"
+        android:key="@string/pref_key_dejavu_shortcuts"
+        android:title="@string/dejavu_settings_shortcuts"
+        android:summary="@string/dejavu_settings_shortcuts_summary" />
 </androidx.preference.PreferenceScreen>

@@ -543,4 +543,25 @@
     <string name="dejavu_settings_tips_summary">«يېڭى بەتكۈچ»نى بېسىپ تۇرۇشقا ئوخشاش يوشۇرۇن قول ئىشارىلىرى ھەققىدىكى كۆرسەتمىلەرنى كۆرسەت</string>
     <string name="dejavu_new">يېڭى</string>
     <string name="dejavu_menu_customize_reader_view">ئوقۇرمەن كۆرۈنۈشىنى خاسلاشتۇر</string>
+    <string name="dejavu_settings_shortcuts">كۇنۇپكا تاختىسى تېزلەتمىلىرى</string>
+    <string name="dejavu_settings_shortcuts_summary">قاتتىق دېتال كۇنۇپكا تاختىسى ئۈچۈن تېزلەتمىلەرنىڭ كۇنۇپكىلىرىنى ئۆزگەرتىش</string>
+    <string name="dejavu_shortcuts_hint">باشقا كۇنۇپكا بېرىش ئۈچۈن تېزلەتمىنى چېكىڭ. تېزلەتمىلەرگە Ctrl ياكى Alt كېرەك.</string>
+    <string name="dejavu_shortcuts_press">يېڭى كۇنۇپكا بىرىكمىسىنى بېسىڭ.</string>
+    <string name="dejavu_shortcuts_taken">%1$s نى «%2$s» ئىشلىتىۋاتىدۇ. ئالماشتۇرۇش «%2$s» غا بۇ تېزلەتمىنىڭ نۆۋەتتىكى كۇنۇپكىسىنى بېرىدۇ، ياكى ھېچنېمىنى ئۆزگەرتمەسلىك ئۈچۈن بىكار قىلىڭ.</string>
+    <string name="dejavu_shortcuts_current">نۆۋەتتىكى: %1$s</string>
+    <string name="dejavu_shortcuts_text_keys">تېكىست رامكىلىرى ۋە تور بەتلەر فوكۇستا تۇرغاندا %1$s نى ئۆزىدە ساقلايدۇ.</string>
+    <string name="dejavu_shortcuts_none">يوق</string>
+    <string name="dejavu_shortcuts_save">ساقلاش</string>
+    <string name="dejavu_shortcuts_swap">ئالماشتۇرۇش</string>
+    <string name="dejavu_shortcuts_clear">تازىلاش</string>
+    <string name="dejavu_shortcuts_reset">كۆڭۈلدىكىگە قايتۇرۇش</string>
+    <string name="dejavu_shortcut_next_tab">كېيىنكى بەتكۈچ</string>
+    <string name="dejavu_shortcut_previous_tab">ئالدىنقى بەتكۈچ</string>
+    <string name="dejavu_shortcut_new_tab">يېڭى بەتكۈچ</string>
+    <string name="dejavu_shortcut_close_tab">بەتكۈچنى تاقاش</string>
+    <string name="dejavu_shortcut_restore_tab">تاقالغان بەتكۈچنى ئەسلىگە كەلتۈرۈش</string>
+    <string name="dejavu_shortcut_address_bar">ئادرېسنى تەھرىرلەش</string>
+    <string name="dejavu_shortcut_reload">بەتنى قايتا يۈكلەش</string>
+    <string name="dejavu_shortcut_tab_n">%1$d-بەتكۈچكە ئۆتۈش</string>
+    <string name="dejavu_shortcut_last_tab">ئاخىرقى بەتكۈچكە ئۆتۈش</string>
 </resources>

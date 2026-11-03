@@ -535,4 +535,25 @@
     <string name="dejavu_settings_tips_summary">\'새 탭\' 길게 누르기 등 숨겨진 제스처에 대한 팁 표시</string>
     <string name="dejavu_new">신규</string>
     <string name="dejavu_menu_customize_reader_view">읽기 모드 사용자 지정</string>
+    <string name="dejavu_settings_shortcuts">키보드 단축키</string>
+    <string name="dejavu_settings_shortcuts_summary">하드웨어 키보드용 단축키의 키를 변경합니다</string>
+    <string name="dejavu_shortcuts_hint">단축키를 탭하면 다른 키를 지정할 수 있습니다. 단축키에는 Ctrl 또는 Alt가 필요합니다.</string>
+    <string name="dejavu_shortcuts_press">새 키 조합을 누르세요.</string>
+    <string name="dejavu_shortcuts_taken">%1$s 키는 이미 \"%2$s\"에서 사용 중입니다. 바꾸기를 누르면 \"%2$s\"에 이 단축키의 현재 키가 지정되며, 취소하면 아무것도 바뀌지 않습니다.</string>
+    <string name="dejavu_shortcuts_current">현재: %1$s</string>
+    <string name="dejavu_shortcuts_text_keys">텍스트 필드와 웹 페이지는 포커스가 있는 동안 %1$s 키를 그대로 사용합니다.</string>
+    <string name="dejavu_shortcuts_none">없음</string>
+    <string name="dejavu_shortcuts_save">저장</string>
+    <string name="dejavu_shortcuts_swap">바꾸기</string>
+    <string name="dejavu_shortcuts_clear">지우기</string>
+    <string name="dejavu_shortcuts_reset">기본값으로 재설정</string>
+    <string name="dejavu_shortcut_next_tab">다음 탭</string>
+    <string name="dejavu_shortcut_previous_tab">이전 탭</string>
+    <string name="dejavu_shortcut_new_tab">새 탭</string>
+    <string name="dejavu_shortcut_close_tab">탭 닫기</string>
+    <string name="dejavu_shortcut_restore_tab">닫은 탭 복원</string>
+    <string name="dejavu_shortcut_address_bar">주소 편집</string>
+    <string name="dejavu_shortcut_reload">페이지 새로 고침</string>
+    <string name="dejavu_shortcut_tab_n">탭 %1$d(으)로 이동</string>
+    <string name="dejavu_shortcut_last_tab">마지막 탭으로 이동</string>
 </resources>

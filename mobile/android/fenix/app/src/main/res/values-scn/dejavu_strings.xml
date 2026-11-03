@@ -543,4 +543,25 @@
     <string name="dejavu_settings_tips_summary">Ammustra cunsigghi supra i muvimenti ammucciati, comu tèniri prisatu Scheda nova</string>
     <string name="dejavu_new">Novu</string>
     <string name="dejavu_menu_customize_reader_view">Pirsunalizza mudalità littura</string>
+    <string name="dejavu_settings_shortcuts">Scurciatini dâ tastera</string>
+    <string name="dejavu_settings_shortcuts_summary">Cancia i tasti dî scurciatini pi na tastera fìsica</string>
+    <string name="dejavu_shortcuts_hint">Tocca na scurciatina pi dàricci n\'àutru tastu. I scurciatini hannu bisognu di Ctrl o Alt.</string>
+    <string name="dejavu_shortcuts_press">Ammutta a nova cumminazzioni di tasti.</string>
+    <string name="dejavu_shortcuts_taken">%1$s è già usatu di «%2$s». Scancia duna a «%2$s» u tastu attuali di sta scurciatina, o annulla pi nun canciari nenti.</string>
+    <string name="dejavu_shortcuts_current">Attuali: %1$s</string>
+    <string name="dejavu_shortcuts_text_keys">I campi di testu e i pàggini web tènunu %1$s mentri hannu u focu.</string>
+    <string name="dejavu_shortcuts_none">Nudda</string>
+    <string name="dejavu_shortcuts_save">Sarva</string>
+    <string name="dejavu_shortcuts_swap">Scancia</string>
+    <string name="dejavu_shortcuts_clear">Cancella</string>
+    <string name="dejavu_shortcuts_reset">Riprìstina u pridifinutu</string>
+    <string name="dejavu_shortcut_next_tab">Scheda appressu</string>
+    <string name="dejavu_shortcut_previous_tab">Scheda prima</string>
+    <string name="dejavu_shortcut_new_tab">Scheda nova</string>
+    <string name="dejavu_shortcut_close_tab">Chiui a scheda</string>
+    <string name="dejavu_shortcut_restore_tab">Riprìstina a scheda chiusa</string>
+    <string name="dejavu_shortcut_address_bar">Cancia l\'indirizzu</string>
+    <string name="dejavu_shortcut_reload">Ricarrica a pàggina</string>
+    <string name="dejavu_shortcut_tab_n">Va â scheda %1$d</string>
+    <string name="dejavu_shortcut_last_tab">Va â scheda ùrtima</string>
 </resources>

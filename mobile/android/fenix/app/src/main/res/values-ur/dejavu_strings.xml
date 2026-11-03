@@ -543,4 +543,25 @@
     <string name="dejavu_settings_tips_summary">پوشیدہ اشاروں کے بارے میں تجاویز دکھائیں، جیسے ”نیا ٹیب“ کو دبا کر رکھنا</string>
     <string name="dejavu_new">نیا</string>
     <string name="dejavu_menu_customize_reader_view">ریڈر ویو کی تخصیص کریں</string>
+    <string name="dejavu_settings_shortcuts">کی بورڈ شارٹ کٹس</string>
+    <string name="dejavu_settings_shortcuts_summary">ہارڈویئر کی بورڈ کے لیے شارٹ کٹس کی کلیدیں تبدیل کریں</string>
+    <string name="dejavu_shortcuts_hint">کسی شارٹ کٹ کو دوسری کلید دینے کے لیے اس پر تھپتھپائیں۔ شارٹ کٹس کو Ctrl یا Alt درکار ہے۔</string>
+    <string name="dejavu_shortcuts_press">نیا کلیدی امتزاج دبائیں۔</string>
+    <string name="dejavu_shortcuts_taken">%1$s پہلے ہی «%2$s» کے لیے استعمال ہو رہا ہے۔ تبادلہ «%2$s» کو اس شارٹ کٹ کی موجودہ کلید دیتا ہے، یا کچھ تبدیل نہ کرنے کے لیے منسوخ کریں۔</string>
+    <string name="dejavu_shortcuts_current">موجودہ: %1$s</string>
+    <string name="dejavu_shortcuts_text_keys">متن کے خانے اور ویب صفحات فوکس میں ہوتے ہوئے %1$s اپنے پاس رکھتے ہیں۔</string>
+    <string name="dejavu_shortcuts_none">کوئی نہیں</string>
+    <string name="dejavu_shortcuts_save">محفوظ کریں</string>
+    <string name="dejavu_shortcuts_swap">تبادلہ</string>
+    <string name="dejavu_shortcuts_clear">صاف کریں</string>
+    <string name="dejavu_shortcuts_reset">طے شدہ پر ری سیٹ کریں</string>
+    <string name="dejavu_shortcut_next_tab">اگلا ٹیب</string>
+    <string name="dejavu_shortcut_previous_tab">پچھلا ٹیب</string>
+    <string name="dejavu_shortcut_new_tab">نیا ٹیب</string>
+    <string name="dejavu_shortcut_close_tab">ٹیب بند کریں</string>
+    <string name="dejavu_shortcut_restore_tab">بند ٹیب بحال کریں</string>
+    <string name="dejavu_shortcut_address_bar">پتہ ترمیم کریں</string>
+    <string name="dejavu_shortcut_reload">صفحہ دوبارہ لوڈ کریں</string>
+    <string name="dejavu_shortcut_tab_n">ٹیب %1$d پر جائیں</string>
+    <string name="dejavu_shortcut_last_tab">آخری ٹیب پر جائیں</string>
 </resources>

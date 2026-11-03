@@ -559,4 +559,25 @@
     <string name="dejavu_settings_tips_summary">Pokiwy wo schowanych gestach pokazać, kaž dołhe tłóčenje na „Nowy rajtark“</string>
     <string name="dejavu_new">Nowy</string>
     <string name="dejavu_menu_customize_reader_view">Čitanski napohlad přiměrić</string>
+    <string name="dejavu_settings_shortcuts">Tastowe skrótšenki</string>
+    <string name="dejavu_settings_shortcuts_summary">Tasty skrótšenkow za hardwarowu tastaturu změnić</string>
+    <string name="dejavu_shortcuts_hint">Podótkńće so skrótšenki, zo byšće jej druhu tastu dał. Skrótšenki trjebaja Ctrl abo Alt.</string>
+    <string name="dejavu_shortcuts_press">Tłóčće nowu kombinaciju tastow.</string>
+    <string name="dejavu_shortcuts_taken">%1$s so hižo wot „%2$s“ wužiwa. Wuměnić da „%2$s“ aktualnu tastu tuteje skrótšenki, abo přetorhńće, zo byšće ničo njezměnił.</string>
+    <string name="dejavu_shortcuts_current">Aktualna: %1$s</string>
+    <string name="dejavu_shortcuts_text_keys">Tekstowe pola a webstrony %1$s wobchowaja, mjeztym zo maja fokus.</string>
+    <string name="dejavu_shortcuts_none">Žana</string>
+    <string name="dejavu_shortcuts_save">Składować</string>
+    <string name="dejavu_shortcuts_swap">Wuměnić</string>
+    <string name="dejavu_shortcuts_clear">Wotstronić</string>
+    <string name="dejavu_shortcuts_reset">Na standard wróćo stajić</string>
+    <string name="dejavu_shortcut_next_tab">Přichodny rajtark</string>
+    <string name="dejavu_shortcut_previous_tab">Předchadny rajtark</string>
+    <string name="dejavu_shortcut_new_tab">Nowy rajtark</string>
+    <string name="dejavu_shortcut_close_tab">Rajtark začinić</string>
+    <string name="dejavu_shortcut_restore_tab">Začinjeny rajtark wobnowić</string>
+    <string name="dejavu_shortcut_address_bar">Adresu wobdźěłać</string>
+    <string name="dejavu_shortcut_reload">Stronu znowa začitać</string>
+    <string name="dejavu_shortcut_tab_n">K rajtarkej %1$d</string>
+    <string name="dejavu_shortcut_last_tab">K poslednjemu rajtarkej</string>
 </resources>

@@ -543,4 +543,25 @@
     <string name="dejavu_settings_tips_summary">Şîretên li ser hereketên tiliyan ên veşartî nîşan bide, wekî bi dirêjahî tikandina li «Hilpekîna nû»</string>
     <string name="dejavu_new">Nû</string>
     <string name="dejavu_menu_customize_reader_view">Moda xwînerê taybet bike</string>
+    <string name="dejavu_settings_shortcuts">Kurteriyên klavyeyê</string>
+    <string name="dejavu_settings_shortcuts_summary">Bişkokên kurteriyan ji bo klavyeya fizîkî biguherîne</string>
+    <string name="dejavu_shortcuts_hint">Li ser kurteriyekê bitikîne da ku bişkokeke din bidiyê. Kurterî Ctrl an Alt dixwazin.</string>
+    <string name="dejavu_shortcuts_press">Kombînasyona nû ya bişkokan bitikîne.</string>
+    <string name="dejavu_shortcuts_taken">%1$s jixwe ji aliyê \"%2$s\" ve tê bikaranîn. Biguhere bişkoka niha ya vê kurteriyê dide \"%2$s\", an jî betal bike da ku tiştek neguhere.</string>
+    <string name="dejavu_shortcuts_current">Niha: %1$s</string>
+    <string name="dejavu_shortcuts_text_keys">Qadên nivîsê û rûpelên webê %1$s diparêzin heta ku fokûs li wan be.</string>
+    <string name="dejavu_shortcuts_none">Tune</string>
+    <string name="dejavu_shortcuts_save">Tomar bike</string>
+    <string name="dejavu_shortcuts_swap">Biguhere</string>
+    <string name="dejavu_shortcuts_clear">Paqij bike</string>
+    <string name="dejavu_shortcuts_reset">Vegerîne ser standard</string>
+    <string name="dejavu_shortcut_next_tab">Hilpekîna pêş</string>
+    <string name="dejavu_shortcut_previous_tab">Hilpekîna paş</string>
+    <string name="dejavu_shortcut_new_tab">Hilpekîna nû</string>
+    <string name="dejavu_shortcut_close_tab">Hilpekînê bigire</string>
+    <string name="dejavu_shortcut_restore_tab">Hilpekîna girtî vegerîne</string>
+    <string name="dejavu_shortcut_address_bar">Navnîşanê sererast bike</string>
+    <string name="dejavu_shortcut_reload">Rûpelê nû bike</string>
+    <string name="dejavu_shortcut_tab_n">Here hilpekîna %1$d</string>
+    <string name="dejavu_shortcut_last_tab">Here hilpekîna dawî</string>
 </resources>

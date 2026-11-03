@@ -543,4 +543,25 @@
     <string name="dejavu_settings_tips_summary">కొత్త ట్యాబు బటన్‌ను నొక్కిపట్టుకోవడం వంటి దాగి ఉన్న సైగల గురించి చిట్కాలను చూపించు</string>
     <string name="dejavu_new">కొత్తది</string>
     <string name="dejavu_menu_customize_reader_view">చదివే వీక్షణను అభిమతీకరించు</string>
+    <string name="dejavu_settings_shortcuts">కీబోర్డ్ షార్ట్‌కట్‌లు</string>
+    <string name="dejavu_settings_shortcuts_summary">హార్డ్‌వేర్ కీబోర్డ్ కోసం షార్ట్‌కట్‌ల కీలను మార్చండి</string>
+    <string name="dejavu_shortcuts_hint">వేరే కీ ఇవ్వడానికి షార్ట్‌కట్‌ను నొక్కండి. షార్ట్‌కట్‌లకు Ctrl లేదా Alt అవసరం.</string>
+    <string name="dejavu_shortcuts_press">కొత్త కీ కలయికను నొక్కండి.</string>
+    <string name="dejavu_shortcuts_taken">%1$s ను ఇప్పటికే «%2$s» వాడుతోంది. మార్పిడి «%2$s» కు ఈ షార్ట్‌కట్ ప్రస్తుత కీని ఇస్తుంది, లేదా ఏమీ మార్చకుండా ఉండటానికి రద్దు చేయండి.</string>
+    <string name="dejavu_shortcuts_current">ప్రస్తుతం: %1$s</string>
+    <string name="dejavu_shortcuts_text_keys">పాఠ్య క్షేత్రాలు మరియు వెబ్ పేజీలు ఫోకస్‌లో ఉన్నప్పుడు %1$s ను ఉంచుకుంటాయి.</string>
+    <string name="dejavu_shortcuts_none">ఏదీ లేదు</string>
+    <string name="dejavu_shortcuts_save">భద్రపరచు</string>
+    <string name="dejavu_shortcuts_swap">మార్పిడి</string>
+    <string name="dejavu_shortcuts_clear">తుడిచివేయి</string>
+    <string name="dejavu_shortcuts_reset">అప్రమేయానికి రీసెట్ చేయి</string>
+    <string name="dejavu_shortcut_next_tab">తదుపరి ట్యాబ్</string>
+    <string name="dejavu_shortcut_previous_tab">మునుపటి ట్యాబ్</string>
+    <string name="dejavu_shortcut_new_tab">కొత్త ట్యాబ్</string>
+    <string name="dejavu_shortcut_close_tab">ట్యాబ్ మూసివేయి</string>
+    <string name="dejavu_shortcut_restore_tab">మూసిన ట్యాబ్ పునరుద్ధరించు</string>
+    <string name="dejavu_shortcut_address_bar">చిరునామా సవరించు</string>
+    <string name="dejavu_shortcut_reload">పేజీ మళ్ళీ లోడ్ చేయి</string>
+    <string name="dejavu_shortcut_tab_n">ట్యాబ్ %1$d కు వెళ్ళు</string>
+    <string name="dejavu_shortcut_last_tab">చివరి ట్యాబ్‌కు వెళ్ళు</string>
 </resources>

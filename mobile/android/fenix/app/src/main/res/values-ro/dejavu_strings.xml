@@ -551,4 +551,25 @@
     <string name="dejavu_settings_tips_summary">Afișează sfaturi despre gesturile ascunse, cum ar fi ținerea apăsată pe „Filă nouă”</string>
     <string name="dejavu_new">Nou</string>
     <string name="dejavu_menu_customize_reader_view">Personalizează modul de lectură</string>
+    <string name="dejavu_settings_shortcuts">Comenzi rapide de la tastatură</string>
+    <string name="dejavu_settings_shortcuts_summary">Schimbă tastele comenzilor rapide pentru o tastatură fizică</string>
+    <string name="dejavu_shortcuts_hint">Atinge o comandă rapidă ca să-i dai altă tastă. Comenzile rapide au nevoie de Ctrl sau Alt.</string>
+    <string name="dejavu_shortcuts_press">Apasă noua combinație de taste.</string>
+    <string name="dejavu_shortcuts_taken">%1$s este deja folosit de „%2$s”. Schimbă îi dă lui „%2$s” tasta actuală a acestei comenzi rapide, sau anulează ca să nu se schimbe nimic.</string>
+    <string name="dejavu_shortcuts_current">Actuală: %1$s</string>
+    <string name="dejavu_shortcuts_text_keys">Câmpurile de text și paginile web păstrează %1$s cât timp au focalizarea.</string>
+    <string name="dejavu_shortcuts_none">Niciuna</string>
+    <string name="dejavu_shortcuts_save">Salvează</string>
+    <string name="dejavu_shortcuts_swap">Schimbă</string>
+    <string name="dejavu_shortcuts_clear">Șterge</string>
+    <string name="dejavu_shortcuts_reset">Resetează la implicit</string>
+    <string name="dejavu_shortcut_next_tab">Fila următoare</string>
+    <string name="dejavu_shortcut_previous_tab">Fila anterioară</string>
+    <string name="dejavu_shortcut_new_tab">Filă nouă</string>
+    <string name="dejavu_shortcut_close_tab">Închide fila</string>
+    <string name="dejavu_shortcut_restore_tab">Restaurează fila închisă</string>
+    <string name="dejavu_shortcut_address_bar">Editează adresa</string>
+    <string name="dejavu_shortcut_reload">Reîncarcă pagina</string>
+    <string name="dejavu_shortcut_tab_n">Mergi la fila %1$d</string>
+    <string name="dejavu_shortcut_last_tab">Mergi la ultima filă</string>
 </resources>

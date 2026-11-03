@@ -543,4 +543,25 @@
     <string name="dejavu_settings_tips_summary">Yeni sekme\'ye basılı tutmak gibi gizli parmak hareketleriyle ilgili ipuçlarını göster</string>
     <string name="dejavu_new">Yeni</string>
     <string name="dejavu_menu_customize_reader_view">Okuyucu görünümünü özelleştir</string>
+    <string name="dejavu_settings_shortcuts">Klavye kısayolları</string>
+    <string name="dejavu_settings_shortcuts_summary">Fiziksel klavye için kısayolların tuşlarını değiştirin</string>
+    <string name="dejavu_shortcuts_hint">Başka bir tuş vermek için bir kısayola dokunun. Kısayollar Ctrl veya Alt gerektirir.</string>
+    <string name="dejavu_shortcuts_press">Yeni tuş kombinasyonuna basın.</string>
+    <string name="dejavu_shortcuts_taken">%1$s zaten “%2$s” tarafından kullanılıyor. Değiştir, “%2$s” kısayoluna bu kısayolun şu anki tuşunu verir; hiçbir şeyi değiştirmemek için iptal edin.</string>
+    <string name="dejavu_shortcuts_current">Şu anki: %1$s</string>
+    <string name="dejavu_shortcuts_text_keys">Metin alanları ve web sayfaları odaktayken %1$s tuşunu kendilerinde tutar.</string>
+    <string name="dejavu_shortcuts_none">Yok</string>
+    <string name="dejavu_shortcuts_save">Kaydet</string>
+    <string name="dejavu_shortcuts_swap">Değiştir</string>
+    <string name="dejavu_shortcuts_clear">Temizle</string>
+    <string name="dejavu_shortcuts_reset">Varsayılana sıfırla</string>
+    <string name="dejavu_shortcut_next_tab">Sonraki sekme</string>
+    <string name="dejavu_shortcut_previous_tab">Önceki sekme</string>
+    <string name="dejavu_shortcut_new_tab">Yeni sekme</string>
+    <string name="dejavu_shortcut_close_tab">Sekmeyi kapat</string>
+    <string name="dejavu_shortcut_restore_tab">Kapatılan sekmeyi geri yükle</string>
+    <string name="dejavu_shortcut_address_bar">Adresi düzenle</string>
+    <string name="dejavu_shortcut_reload">Sayfayı yenile</string>
+    <string name="dejavu_shortcut_tab_n">%1$d. sekmeye git</string>
+    <string name="dejavu_shortcut_last_tab">Son sekmeye git</string>
 </resources>

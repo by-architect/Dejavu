@@ -535,4 +535,25 @@
     <string name="dejavu_settings_tips_summary">แสดงเคล็ดลับเกี่ยวกับท่าทางที่ซ่อนอยู่ เช่น การกด “แท็บใหม่” ค้างไว้</string>
     <string name="dejavu_new">ใหม่</string>
     <string name="dejavu_menu_customize_reader_view">ปรับแต่งมุมมองผู้อ่าน</string>
+    <string name="dejavu_settings_shortcuts">แป้นพิมพ์ลัด</string>
+    <string name="dejavu_settings_shortcuts_summary">เปลี่ยนปุ่มของแป้นพิมพ์ลัดสำหรับแป้นพิมพ์ฮาร์ดแวร์</string>
+    <string name="dejavu_shortcuts_hint">แตะแป้นพิมพ์ลัดเพื่อกำหนดปุ่มอื่นให้ แป้นพิมพ์ลัดต้องใช้ Ctrl หรือ Alt</string>
+    <string name="dejavu_shortcuts_press">กดชุดปุ่มใหม่</string>
+    <string name="dejavu_shortcuts_taken">%1$s ถูกใช้โดย “%2$s” แล้ว สลับจะให้ “%2$s” ใช้ปุ่มปัจจุบันของแป้นพิมพ์ลัดนี้ หรือยกเลิกเพื่อไม่เปลี่ยนอะไร</string>
+    <string name="dejavu_shortcuts_current">ปัจจุบัน: %1$s</string>
+    <string name="dejavu_shortcuts_text_keys">ช่องข้อความและหน้าเว็บจะเก็บ %1$s ไว้ขณะที่มีโฟกัส</string>
+    <string name="dejavu_shortcuts_none">ไม่มี</string>
+    <string name="dejavu_shortcuts_save">บันทึก</string>
+    <string name="dejavu_shortcuts_swap">สลับ</string>
+    <string name="dejavu_shortcuts_clear">ล้าง</string>
+    <string name="dejavu_shortcuts_reset">คืนค่าเริ่มต้น</string>
+    <string name="dejavu_shortcut_next_tab">แท็บถัดไป</string>
+    <string name="dejavu_shortcut_previous_tab">แท็บก่อนหน้า</string>
+    <string name="dejavu_shortcut_new_tab">แท็บใหม่</string>
+    <string name="dejavu_shortcut_close_tab">ปิดแท็บ</string>
+    <string name="dejavu_shortcut_restore_tab">เรียกคืนแท็บที่ปิด</string>
+    <string name="dejavu_shortcut_address_bar">แก้ไขที่อยู่</string>
+    <string name="dejavu_shortcut_reload">โหลดหน้าใหม่</string>
+    <string name="dejavu_shortcut_tab_n">ไปที่แท็บ %1$d</string>
+    <string name="dejavu_shortcut_last_tab">ไปที่แท็บสุดท้าย</string>
 </resources>

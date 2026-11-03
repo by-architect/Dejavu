@@ -543,4 +543,25 @@
     <string name="dejavu_settings_tips_summary">Ehechauka ñemoñe\'ẽ ñeha\'ãnga kañymby rehegua, ha\'eháicha ejopy are “Tendayke pyahu”</string>
     <string name="dejavu_new">Pyahu</string>
     <string name="dejavu_menu_customize_reader_view">Emboava moñe’ẽrã jehechaha</string>
+    <string name="dejavu_settings_shortcuts">Teclado ñemboguejyrã</string>
+    <string name="dejavu_settings_shortcuts_summary">Emoambue ñemboguejyrã tecla teclado ojepokóvape g̃uarã</string>
+    <string name="dejavu_shortcuts_hint">Eikutu peteĩ ñemboguejyrã reme\'ẽ hag̃ua ichupe ambue tecla. Ñemboguejyrã oikotevẽ Ctrl térã Alt.</string>
+    <string name="dejavu_shortcuts_press">Ejopy tecla ñembojoaju pyahu.</string>
+    <string name="dejavu_shortcuts_taken">%1$s ojeporúma «%2$s» ndive. Ñemomby ome\'ẽ «%2$s»-pe ko ñemboguejyrã tecla ag̃agua, térã ejoko ani hag̃ua emoambue mba\'eve.</string>
+    <string name="dejavu_shortcuts_current">Ag̃agua: %1$s</string>
+    <string name="dejavu_shortcuts_text_keys">Moñe\'ẽrã korapy ha ñanduti kuatiarogue oñongatu %1$s oguerekóvo pe enfoque.</string>
+    <string name="dejavu_shortcuts_none">Mba\'eve</string>
+    <string name="dejavu_shortcuts_save">Ñongatu</string>
+    <string name="dejavu_shortcuts_swap">Ñemomby</string>
+    <string name="dejavu_shortcuts_clear">Mopotĩ</string>
+    <string name="dejavu_shortcuts_reset">Emoñepyrũjey ijypykuépe</string>
+    <string name="dejavu_shortcut_next_tab">Tendayke upeigua</string>
+    <string name="dejavu_shortcut_previous_tab">Tendayke mboyvegua</string>
+    <string name="dejavu_shortcut_new_tab">Tendayke pyahu</string>
+    <string name="dejavu_shortcut_close_tab">Emboty tendayke</string>
+    <string name="dejavu_shortcut_restore_tab">Embojevy tendayke mbotypyre</string>
+    <string name="dejavu_shortcut_address_bar">Embosako\'i kundaharape</string>
+    <string name="dejavu_shortcut_reload">Ehupyjey kuatiarogue</string>
+    <string name="dejavu_shortcut_tab_n">Eho tendayke %1$d-pe</string>
+    <string name="dejavu_shortcut_last_tab">Eho tendayke pahápe</string>
 </resources>

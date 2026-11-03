@@ -543,4 +543,25 @@
     <string name="dejavu_settings_tips_summary">Afficher des astuces sur les mouvements cachés, comme maintenir « Nouvel onglet » appuyé</string>
     <string name="dejavu_new">Nouveau</string>
     <string name="dejavu_menu_customize_reader_view">Personnaliser le mode lecture</string>
+    <string name="dejavu_settings_shortcuts">Raccourcis clavier</string>
+    <string name="dejavu_settings_shortcuts_summary">Changer les touches des raccourcis pour un clavier physique</string>
+    <string name="dejavu_shortcuts_hint">Appuyez sur un raccourci pour lui donner une autre touche. Les raccourcis nécessitent Ctrl ou Alt.</string>
+    <string name="dejavu_shortcuts_press">Appuyez sur la nouvelle combinaison de touches.</string>
+    <string name="dejavu_shortcuts_taken">%1$s est déjà utilisé par « %2$s ». Échanger donne à « %2$s » la touche actuelle de ce raccourci, ou annulez pour ne rien changer.</string>
+    <string name="dejavu_shortcuts_current">Actuel : %1$s</string>
+    <string name="dejavu_shortcuts_text_keys">Les champs de texte et les pages web conservent %1$s tant qu’ils ont le focus.</string>
+    <string name="dejavu_shortcuts_none">Aucun</string>
+    <string name="dejavu_shortcuts_save">Enregistrer</string>
+    <string name="dejavu_shortcuts_swap">Échanger</string>
+    <string name="dejavu_shortcuts_clear">Effacer</string>
+    <string name="dejavu_shortcuts_reset">Rétablir la valeur par défaut</string>
+    <string name="dejavu_shortcut_next_tab">Onglet suivant</string>
+    <string name="dejavu_shortcut_previous_tab">Onglet précédent</string>
+    <string name="dejavu_shortcut_new_tab">Nouvel onglet</string>
+    <string name="dejavu_shortcut_close_tab">Fermer l’onglet</string>
+    <string name="dejavu_shortcut_restore_tab">Restaurer l’onglet fermé</string>
+    <string name="dejavu_shortcut_address_bar">Modifier l’adresse</string>
+    <string name="dejavu_shortcut_reload">Recharger la page</string>
+    <string name="dejavu_shortcut_tab_n">Aller à l’onglet %1$d</string>
+    <string name="dejavu_shortcut_last_tab">Aller au dernier onglet</string>
 </resources>

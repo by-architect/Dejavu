@@ -559,4 +559,25 @@
     <string name="dejavu_settings_tips_summary">Показывать советы о скрытых жестах, например об удержании кнопки «Новая вкладка»</string>
     <string name="dejavu_new">Новое</string>
     <string name="dejavu_menu_customize_reader_view">Настроить вид для чтения</string>
+    <string name="dejavu_settings_shortcuts">Сочетания клавиш</string>
+    <string name="dejavu_settings_shortcuts_summary">Изменить клавиши сочетаний для аппаратной клавиатуры</string>
+    <string name="dejavu_shortcuts_hint">Нажмите на сочетание, чтобы назначить ему другую клавишу. Сочетаниям нужен Ctrl или Alt.</string>
+    <string name="dejavu_shortcuts_press">Нажмите новое сочетание клавиш.</string>
+    <string name="dejavu_shortcuts_taken">%1$s уже используется для «%2$s». Обмен даст «%2$s» текущую клавишу этого сочетания, или отмените, чтобы ничего не менять.</string>
+    <string name="dejavu_shortcuts_current">Текущее: %1$s</string>
+    <string name="dejavu_shortcuts_text_keys">Текстовые поля и веб-страницы оставляют %1$s себе, пока они в фокусе.</string>
+    <string name="dejavu_shortcuts_none">Нет</string>
+    <string name="dejavu_shortcuts_save">Сохранить</string>
+    <string name="dejavu_shortcuts_swap">Обменять</string>
+    <string name="dejavu_shortcuts_clear">Очистить</string>
+    <string name="dejavu_shortcuts_reset">Сбросить по умолчанию</string>
+    <string name="dejavu_shortcut_next_tab">Следующая вкладка</string>
+    <string name="dejavu_shortcut_previous_tab">Предыдущая вкладка</string>
+    <string name="dejavu_shortcut_new_tab">Новая вкладка</string>
+    <string name="dejavu_shortcut_close_tab">Закрыть вкладку</string>
+    <string name="dejavu_shortcut_restore_tab">Восстановить закрытую вкладку</string>
+    <string name="dejavu_shortcut_address_bar">Изменить адрес</string>
+    <string name="dejavu_shortcut_reload">Обновить страницу</string>
+    <string name="dejavu_shortcut_tab_n">Перейти на вкладку %1$d</string>
+    <string name="dejavu_shortcut_last_tab">Перейти на последнюю вкладку</string>
 </resources>

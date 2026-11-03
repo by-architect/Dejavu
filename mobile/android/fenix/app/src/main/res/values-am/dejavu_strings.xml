@@ -543,4 +543,25 @@
     <string name="dejavu_settings_tips_summary">ስለተደበቁ የእጅ ምልክቶች ጠቃሚ ምክሮችን አሳይ፣ ለምሳሌ «አዲስ ትር»ን ተጭኖ መያዝ</string>
     <string name="dejavu_new">አዲስ</string>
     <string name="dejavu_menu_customize_reader_view">የአንባቢ እይታን አብጅ</string>
+    <string name="dejavu_settings_shortcuts">የቁልፍ ሰሌዳ አቋራጮች</string>
+    <string name="dejavu_settings_shortcuts_summary">ለሃርድዌር ቁልፍ ሰሌዳ የአቋራጮቹን ቁልፎች ይቀይሩ</string>
+    <string name="dejavu_shortcuts_hint">ሌላ ቁልፍ ለመስጠት አቋራጭን መታ ያድርጉ። አቋራጮች Ctrl ወይም Alt ያስፈልጋቸዋል።</string>
+    <string name="dejavu_shortcuts_press">አዲሱን የቁልፍ ጥምረት ይጫኑ።</string>
+    <string name="dejavu_shortcuts_taken">%1$s አስቀድሞ በ«%2$s» ጥቅም ላይ ውሏል። መለዋወጥ ለ«%2$s» የዚህን አቋራጭ የአሁኑን ቁልፍ ይሰጣል፣ ወይም ምንም ላለመቀየር ይሰርዙ።</string>
+    <string name="dejavu_shortcuts_current">የአሁኑ፦ %1$s</string>
+    <string name="dejavu_shortcuts_text_keys">የጽሑፍ መስኮች እና ድረ-ገጾች ትኩረት ሲኖራቸው %1$sን ያቆያሉ።</string>
+    <string name="dejavu_shortcuts_none">ምንም</string>
+    <string name="dejavu_shortcuts_save">አስቀምጥ</string>
+    <string name="dejavu_shortcuts_swap">ለዋውጥ</string>
+    <string name="dejavu_shortcuts_clear">አጽዳ</string>
+    <string name="dejavu_shortcuts_reset">ወደ ነባሪ ዳግም አስጀምር</string>
+    <string name="dejavu_shortcut_next_tab">ቀጣይ ትር</string>
+    <string name="dejavu_shortcut_previous_tab">ቀዳሚ ትር</string>
+    <string name="dejavu_shortcut_new_tab">አዲስ ትር</string>
+    <string name="dejavu_shortcut_close_tab">ትር ዝጋ</string>
+    <string name="dejavu_shortcut_restore_tab">የተዘጋ ትር መልስ</string>
+    <string name="dejavu_shortcut_address_bar">አድራሻ አርትዕ</string>
+    <string name="dejavu_shortcut_reload">ገጹን ዳግም ጫን</string>
+    <string name="dejavu_shortcut_tab_n">ወደ ትር %1$d ሂድ</string>
+    <string name="dejavu_shortcut_last_tab">ወደ መጨረሻው ትር ሂድ</string>
 </resources>

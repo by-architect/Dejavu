@@ -535,4 +535,25 @@
     <string name="dejavu_settings_tips_summary">o pana e toki sona pi pilin nena len, sama luka awen lon nena “poki sin”</string>
     <string name="dejavu_new">sin</string>
     <string name="dejavu_menu_customize_reader_view">o nasin e lukin pona</string>
+    <string name="dejavu_settings_shortcuts">nasin lili pi ilo sitelen</string>
+    <string name="dejavu_settings_shortcuts_summary">o ante e nena pi nasin lili tawa ilo sitelen pi luka</string>
+    <string name="dejavu_shortcuts_hint">o luka e nasin lili la sina ken pana e nena ante tawa ona. nasin lili li wile e Ctrl anu Alt.</string>
+    <string name="dejavu_shortcuts_press">o luka e kulupu nena sin.</string>
+    <string name="dejavu_shortcuts_taken">nasin “%2$s” li kepeken %1$s. “o ante” li pana e nena pi nasin lili ni tawa “%2$s”. o pini la ala li ante.</string>
+    <string name="dejavu_shortcuts_current">ni: %1$s</string>
+    <string name="dejavu_shortcuts_text_keys">lon sitelen en lipu linluwi li jo e %1$s lon tenpo ni: ona li jo e lukin.</string>
+    <string name="dejavu_shortcuts_none">ala</string>
+    <string name="dejavu_shortcuts_save">o awen</string>
+    <string name="dejavu_shortcuts_swap">o ante</string>
+    <string name="dejavu_shortcuts_clear">o weka</string>
+    <string name="dejavu_shortcuts_reset">o kama sama open</string>
+    <string name="dejavu_shortcut_next_tab">poki kama</string>
+    <string name="dejavu_shortcut_previous_tab">poki pini</string>
+    <string name="dejavu_shortcut_new_tab">poki sin</string>
+    <string name="dejavu_shortcut_close_tab">o pini e poki</string>
+    <string name="dejavu_shortcut_restore_tab">o open sin e poki pini</string>
+    <string name="dejavu_shortcut_address_bar">o ante e nimi tomo</string>
+    <string name="dejavu_shortcut_reload">o open sin e lipu</string>
+    <string name="dejavu_shortcut_tab_n">o tawa poki nanpa %1$d</string>
+    <string name="dejavu_shortcut_last_tab">o tawa poki pini</string>
 </resources>

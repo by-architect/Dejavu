@@ -551,4 +551,25 @@
     <string name="dejavu_settings_tips_summary">הצגת טיפים על מחוות נסתרות, כמו לחיצה ארוכה על ״לשונית חדשה״</string>
     <string name="dejavu_new">חדש</string>
     <string name="dejavu_menu_customize_reader_view">התאמה אישית של תצוגת קריאה</string>
+    <string name="dejavu_settings_shortcuts">קיצורי מקלדת</string>
+    <string name="dejavu_settings_shortcuts_summary">שינוי מקשי הקיצורים עבור מקלדת פיזית</string>
+    <string name="dejavu_shortcuts_hint">יש להקיש על קיצור כדי לתת לו מקש אחר. קיצורים דורשים Ctrl או Alt.</string>
+    <string name="dejavu_shortcuts_press">יש ללחוץ על צירוף המקשים החדש.</string>
+    <string name="dejavu_shortcuts_taken">‏%1$s כבר בשימוש על ידי „%2$s”. החלפה נותנת ל„%2$s” את המקש הנוכחי של הקיצור הזה, או ביטול כדי לא לשנות דבר.</string>
+    <string name="dejavu_shortcuts_current">נוכחי: %1$s</string>
+    <string name="dejavu_shortcuts_text_keys">שדות טקסט ודפי אינטרנט שומרים את %1$s לעצמם בזמן שהם בפוקוס.</string>
+    <string name="dejavu_shortcuts_none">ללא</string>
+    <string name="dejavu_shortcuts_save">שמירה</string>
+    <string name="dejavu_shortcuts_swap">החלפה</string>
+    <string name="dejavu_shortcuts_clear">ניקוי</string>
+    <string name="dejavu_shortcuts_reset">איפוס לברירת המחדל</string>
+    <string name="dejavu_shortcut_next_tab">הלשונית הבאה</string>
+    <string name="dejavu_shortcut_previous_tab">הלשונית הקודמת</string>
+    <string name="dejavu_shortcut_new_tab">לשונית חדשה</string>
+    <string name="dejavu_shortcut_close_tab">סגירת לשונית</string>
+    <string name="dejavu_shortcut_restore_tab">שחזור לשונית סגורה</string>
+    <string name="dejavu_shortcut_address_bar">עריכת כתובת</string>
+    <string name="dejavu_shortcut_reload">טעינת הדף מחדש</string>
+    <string name="dejavu_shortcut_tab_n">מעבר ללשונית %1$d</string>
+    <string name="dejavu_shortcut_last_tab">מעבר ללשונית האחרונה</string>
 </resources>

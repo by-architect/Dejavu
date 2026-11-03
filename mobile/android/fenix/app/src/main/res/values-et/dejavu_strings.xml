@@ -543,4 +543,25 @@
     <string name="dejavu_settings_tips_summary">Näita vihjeid peidetud žestide kohta, nagu nupu „Uus kaart“ all hoidmine</string>
     <string name="dejavu_new">Uus</string>
     <string name="dejavu_menu_customize_reader_view">Kohanda lugemisvaadet</string>
+    <string name="dejavu_settings_shortcuts">Klaviatuuri kiirklahvid</string>
+    <string name="dejavu_settings_shortcuts_summary">Muuda riistvaralise klaviatuuri kiirklahvide klahve</string>
+    <string name="dejavu_shortcuts_hint">Puuduta kiirklahvi, et anda sellele teine klahv. Kiirklahvid vajavad Ctrl- või Alt-klahvi.</string>
+    <string name="dejavu_shortcuts_press">Vajuta uut klahvikombinatsiooni.</string>
+    <string name="dejavu_shortcuts_taken">%1$s on juba kasutusel toimingul „%2$s“. Vaheta annab toimingule „%2$s“ selle kiirklahvi praeguse klahvi, või loobu, et midagi ei muutuks.</string>
+    <string name="dejavu_shortcuts_current">Praegune: %1$s</string>
+    <string name="dejavu_shortcuts_text_keys">Tekstiväljad ja veebilehed jätavad %1$s endale, kuni neil on fookus.</string>
+    <string name="dejavu_shortcuts_none">Puudub</string>
+    <string name="dejavu_shortcuts_save">Salvesta</string>
+    <string name="dejavu_shortcuts_swap">Vaheta</string>
+    <string name="dejavu_shortcuts_clear">Tühjenda</string>
+    <string name="dejavu_shortcuts_reset">Lähtesta vaikeväärtusele</string>
+    <string name="dejavu_shortcut_next_tab">Järgmine kaart</string>
+    <string name="dejavu_shortcut_previous_tab">Eelmine kaart</string>
+    <string name="dejavu_shortcut_new_tab">Uus kaart</string>
+    <string name="dejavu_shortcut_close_tab">Sulge kaart</string>
+    <string name="dejavu_shortcut_restore_tab">Taasta suletud kaart</string>
+    <string name="dejavu_shortcut_address_bar">Muuda aadressi</string>
+    <string name="dejavu_shortcut_reload">Laadi leht uuesti</string>
+    <string name="dejavu_shortcut_tab_n">Mine kaardile %1$d</string>
+    <string name="dejavu_shortcut_last_tab">Mine viimasele kaardile</string>
 </resources>

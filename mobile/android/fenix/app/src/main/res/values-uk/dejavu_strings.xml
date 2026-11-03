@@ -559,4 +559,25 @@
     <string name="dejavu_settings_tips_summary">Показувати поради про приховані жести, як-от утримання кнопки «Нова вкладка»</string>
     <string name="dejavu_new">Нове</string>
     <string name="dejavu_menu_customize_reader_view">Налаштувати режим читання</string>
+    <string name="dejavu_settings_shortcuts">Комбінації клавіш</string>
+    <string name="dejavu_settings_shortcuts_summary">Змінити клавіші комбінацій для апаратної клавіатури</string>
+    <string name="dejavu_shortcuts_hint">Торкніться комбінації, щоб призначити їй іншу клавішу. Комбінаціям потрібен Ctrl або Alt.</string>
+    <string name="dejavu_shortcuts_press">Натисніть нову комбінацію клавіш.</string>
+    <string name="dejavu_shortcuts_taken">%1$s уже використовується для «%2$s». Обміняти дасть «%2$s» поточну клавішу цієї комбінації, або скасуйте, щоб нічого не змінювати.</string>
+    <string name="dejavu_shortcuts_current">Поточна: %1$s</string>
+    <string name="dejavu_shortcuts_text_keys">Текстові поля й вебсторінки залишають %1$s собі, поки вони у фокусі.</string>
+    <string name="dejavu_shortcuts_none">Немає</string>
+    <string name="dejavu_shortcuts_save">Зберегти</string>
+    <string name="dejavu_shortcuts_swap">Обміняти</string>
+    <string name="dejavu_shortcuts_clear">Очистити</string>
+    <string name="dejavu_shortcuts_reset">Скинути до типового</string>
+    <string name="dejavu_shortcut_next_tab">Наступна вкладка</string>
+    <string name="dejavu_shortcut_previous_tab">Попередня вкладка</string>
+    <string name="dejavu_shortcut_new_tab">Нова вкладка</string>
+    <string name="dejavu_shortcut_close_tab">Закрити вкладку</string>
+    <string name="dejavu_shortcut_restore_tab">Відновити закриту вкладку</string>
+    <string name="dejavu_shortcut_address_bar">Змінити адресу</string>
+    <string name="dejavu_shortcut_reload">Перезавантажити сторінку</string>
+    <string name="dejavu_shortcut_tab_n">Перейти до вкладки %1$d</string>
+    <string name="dejavu_shortcut_last_tab">Перейти до останньої вкладки</string>
 </resources>

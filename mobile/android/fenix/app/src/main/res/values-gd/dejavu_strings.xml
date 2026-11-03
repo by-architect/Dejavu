@@ -559,4 +559,25 @@
     <string name="dejavu_settings_tips_summary">Seall gliocasan mu ghluasadan falaichte, mar a bhith a\' cumail “Taba ùr” sìos</string>
     <string name="dejavu_new">Ùr</string>
     <string name="dejavu_menu_customize_reader_view">Gnàthaich sealladh an leughadair</string>
+    <string name="dejavu_settings_shortcuts">Ath-ghoiridean a’ mheur-chlàir</string>
+    <string name="dejavu_settings_shortcuts_summary">Atharraich iuchraichean nan ath-ghoiridean airson meur-chlàr bathair-chruaidh</string>
+    <string name="dejavu_shortcuts_hint">Thoir gnogag air ath-ghoirid airson iuchair eile a thoirt dha. Feumaidh ath-ghoiridean Ctrl no Alt.</string>
+    <string name="dejavu_shortcuts_press">Brùth an co-mheasgachadh iuchraichean ùr.</string>
+    <string name="dejavu_shortcuts_taken">Tha %1$s ’ga chleachdadh le “%2$s” mu thràth. Bheir Suaip iuchair làithreach an ath-ghoirid seo do “%2$s”, no sguir dheth gus nach atharraich dad.</string>
+    <string name="dejavu_shortcuts_current">Làithreach: %1$s</string>
+    <string name="dejavu_shortcuts_text_keys">Cumaidh raointean teacsa is duilleagan-lìn %1$s fhad ’s a bhios am fòcas aca.</string>
+    <string name="dejavu_shortcuts_none">Chan eil gin</string>
+    <string name="dejavu_shortcuts_save">Sàbhail</string>
+    <string name="dejavu_shortcuts_swap">Suaip</string>
+    <string name="dejavu_shortcuts_clear">Falamhaich</string>
+    <string name="dejavu_shortcuts_reset">Ath-shuidhich gun bhun-roghainn</string>
+    <string name="dejavu_shortcut_next_tab">An ath-thaba</string>
+    <string name="dejavu_shortcut_previous_tab">An taba roimhe</string>
+    <string name="dejavu_shortcut_new_tab">Taba ùr</string>
+    <string name="dejavu_shortcut_close_tab">Dùin an taba</string>
+    <string name="dejavu_shortcut_restore_tab">Aisig taba dùinte</string>
+    <string name="dejavu_shortcut_address_bar">Deasaich an seòladh</string>
+    <string name="dejavu_shortcut_reload">Ath-luchdaich an duilleag</string>
+    <string name="dejavu_shortcut_tab_n">Rach gu taba %1$d</string>
+    <string name="dejavu_shortcut_last_tab">Rach gun taba mu dheireadh</string>
 </resources>

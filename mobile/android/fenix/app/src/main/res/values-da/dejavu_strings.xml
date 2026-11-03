@@ -543,4 +543,25 @@
     <string name="dejavu_settings_tips_summary">Vis tips om skjulte bevægelser, som at holde Nyt faneblad nede</string>
     <string name="dejavu_new">Ny</string>
     <string name="dejavu_menu_customize_reader_view">Tilpas læsevisning</string>
+    <string name="dejavu_settings_shortcuts">Tastaturgenveje</string>
+    <string name="dejavu_settings_shortcuts_summary">Skift tasterne for genvejene til et fysisk tastatur</string>
+    <string name="dejavu_shortcuts_hint">Tryk på en genvej for at give den en anden tast. Genveje kræver Ctrl eller Alt.</string>
+    <string name="dejavu_shortcuts_press">Tryk på den nye tastekombination.</string>
+    <string name="dejavu_shortcuts_taken">%1$s bruges allerede af \"%2$s\". Byt giver \"%2$s\" denne genvejs nuværende tast, eller annuller for ikke at ændre noget.</string>
+    <string name="dejavu_shortcuts_current">Nuværende: %1$s</string>
+    <string name="dejavu_shortcuts_text_keys">Tekstfelter og websider beholder %1$s, mens de har fokus.</string>
+    <string name="dejavu_shortcuts_none">Ingen</string>
+    <string name="dejavu_shortcuts_save">Gem</string>
+    <string name="dejavu_shortcuts_swap">Byt</string>
+    <string name="dejavu_shortcuts_clear">Ryd</string>
+    <string name="dejavu_shortcuts_reset">Nulstil til standard</string>
+    <string name="dejavu_shortcut_next_tab">Næste faneblad</string>
+    <string name="dejavu_shortcut_previous_tab">Forrige faneblad</string>
+    <string name="dejavu_shortcut_new_tab">Nyt faneblad</string>
+    <string name="dejavu_shortcut_close_tab">Luk faneblad</string>
+    <string name="dejavu_shortcut_restore_tab">Gendan lukket faneblad</string>
+    <string name="dejavu_shortcut_address_bar">Rediger adresse</string>
+    <string name="dejavu_shortcut_reload">Genindlæs side</string>
+    <string name="dejavu_shortcut_tab_n">Gå til faneblad %1$d</string>
+    <string name="dejavu_shortcut_last_tab">Gå til sidste faneblad</string>
 </resources>

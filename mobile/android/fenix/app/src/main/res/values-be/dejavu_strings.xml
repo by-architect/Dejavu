@@ -559,4 +559,25 @@
     <string name="dejavu_settings_tips_summary">Паказваць парады пра схаваныя жэсты, напрыклад утрыманне кнопкі «Новая картка»</string>
     <string name="dejavu_new">Новае</string>
     <string name="dejavu_menu_customize_reader_view">Уладкаваць рэжым чытання</string>
+    <string name="dejavu_settings_shortcuts">Спалучэнні клавіш</string>
+    <string name="dejavu_settings_shortcuts_summary">Змяніць клавішы спалучэнняў для апаратнай клавіятуры</string>
+    <string name="dejavu_shortcuts_hint">Націсніце на спалучэнне, каб даць яму іншую клавішу. Спалучэнням патрэбны Ctrl або Alt.</string>
+    <string name="dejavu_shortcuts_press">Націсніце новае спалучэнне клавіш.</string>
+    <string name="dejavu_shortcuts_taken">%1$s ужо выкарыстоўваецца для «%2$s». Абмен дасць «%2$s» бягучую клавішу гэтага спалучэння, або скасуйце, каб нічога не змяняць.</string>
+    <string name="dejavu_shortcuts_current">Бягучае: %1$s</string>
+    <string name="dejavu_shortcuts_text_keys">Тэкставыя палі і вэб-старонкі пакідаюць %1$s сабе, пакуль яны ў фокусе.</string>
+    <string name="dejavu_shortcuts_none">Няма</string>
+    <string name="dejavu_shortcuts_save">Захаваць</string>
+    <string name="dejavu_shortcuts_swap">Абмяняць</string>
+    <string name="dejavu_shortcuts_clear">Ачысціць</string>
+    <string name="dejavu_shortcuts_reset">Скінуць да прадвызначанага</string>
+    <string name="dejavu_shortcut_next_tab">Наступная картка</string>
+    <string name="dejavu_shortcut_previous_tab">Папярэдняя картка</string>
+    <string name="dejavu_shortcut_new_tab">Новая картка</string>
+    <string name="dejavu_shortcut_close_tab">Закрыць картку</string>
+    <string name="dejavu_shortcut_restore_tab">Аднавіць закрытую картку</string>
+    <string name="dejavu_shortcut_address_bar">Змяніць адрас</string>
+    <string name="dejavu_shortcut_reload">Перазагрузіць старонку</string>
+    <string name="dejavu_shortcut_tab_n">Перайсці да карткі %1$d</string>
+    <string name="dejavu_shortcut_last_tab">Перайсці да апошняй карткі</string>
 </resources>

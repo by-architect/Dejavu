@@ -11,6 +11,7 @@ import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import mozilla.components.lib.dataprotect.SecureAbove22Preferences
 import org.json.JSONArray
+import org.json.JSONObject
 import org.mozilla.fenix.dejavu.actions.ActionPlace
 import org.mozilla.fenix.dejavu.actions.CustomAction
 import org.mozilla.fenix.dejavu.actions.RowAction
@@ -53,6 +54,7 @@ class DejavuSettings private constructor(context: Context) {
     private val _homeSearchAtBottom = MutableStateFlow(prefs.getBoolean(KEY_HOME_SEARCH_AT_BOTTOM, false))
     private val _addressBarButtons = MutableStateFlow(readAddressBarButtons())
     private val _actionsBarKeys = MutableStateFlow(readActionsBar())
+    private val _shortcuts = MutableStateFlow(readShortcuts())
     private val _tabSleepMinutes = MutableStateFlow(prefs.getInt(KEY_TAB_SLEEP_MINUTES, DEFAULT_TAB_SLEEP_MINUTES))
     private val _awakeTabLimit = MutableStateFlow(prefs.getInt(KEY_AWAKE_TAB_LIMIT, DEFAULT_AWAKE_TAB_LIMIT))
     private val _welcomeSeen = MutableStateFlow(prefs.getBoolean(KEY_WELCOME_SEEN, false))
@@ -116,6 +118,21 @@ class DejavuSettings private constructor(context: Context) {
 
     /** Keys of the [RowAction]s left out of the selection bar. Every other action, new ones included, is shown. */
     val hiddenSelectionKeys: StateFlow<Set<String>> = _hiddenSelectionKeys.asStateFlow()
+
+    /** Keyboard shortcuts the user changed, by action key. An encoded key combo, or "" when cleared. */
+    val shortcuts: StateFlow<Map<String, String>> = _shortcuts.asStateFlow()
+
+    /** Saves [combo] for the action with [actionKey], "" to clear it or `null` to go back to the default. */
+    fun setShortcut(actionKey: String, combo: String?) {
+        _shortcuts.value = if (combo == null) _shortcuts.value - actionKey else _shortcuts.value + (actionKey to combo)
+        prefs.edit { putString(KEY_SHORTCUTS, JSONObject(_shortcuts.value).toString()) }
+    }
+
+    private fun readShortcuts(): Map<String, String> {
+        val json = runCatching { JSONObject(prefs.getString(KEY_SHORTCUTS, null) ?: "{}") }.getOrNull()
+            ?: return emptyMap()
+        return json.keys().asSequence().associateWith { json.optString(it) }
+    }
 
     /** Minutes a tab stays awake after it was last looked at, or 0 to never put tabs to sleep. */
     val tabSleepMinutes: StateFlow<Int> = _tabSleepMinutes.asStateFlow()
@@ -445,6 +462,7 @@ class DejavuSettings private constructor(context: Context) {
         private const val KEY_ADDRESS_BAR_END = "address_bar_end"
         private const val KEY_ACTIONS_BAR = "actions_bar"
         private const val KEY_HISTORY_GROUPING = "history_grouping"
+        private const val KEY_SHORTCUTS = "keyboard_shortcuts"
         private const val KEY_TAB_SLEEP_MINUTES = "tab_sleep_minutes"
         private const val KEY_AWAKE_TAB_LIMIT = "awake_tab_limit"
         private const val KEY_WELCOME_SEEN = "welcome_seen"

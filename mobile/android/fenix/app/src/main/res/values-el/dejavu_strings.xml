@@ -543,4 +543,25 @@
     <string name="dejavu_settings_tips_summary">Εμφάνιση συμβουλών για κρυφές χειρονομίες, όπως το παρατεταμένο πάτημα του «Νέα καρτέλα»</string>
     <string name="dejavu_new">Νέο</string>
     <string name="dejavu_menu_customize_reader_view">Προσαρμογή προβολής ανάγνωσης</string>
+    <string name="dejavu_settings_shortcuts">Συντομεύσεις πληκτρολογίου</string>
+    <string name="dejavu_settings_shortcuts_summary">Αλλαγή των πλήκτρων των συντομεύσεων για φυσικό πληκτρολόγιο</string>
+    <string name="dejavu_shortcuts_hint">Πατήστε μια συντόμευση για να της δώσετε άλλο πλήκτρο. Οι συντομεύσεις χρειάζονται Ctrl ή Alt.</string>
+    <string name="dejavu_shortcuts_press">Πατήστε τον νέο συνδυασμό πλήκτρων.</string>
+    <string name="dejavu_shortcuts_taken">Το %1$s χρησιμοποιείται ήδη από το «%2$s». Η εναλλαγή δίνει στο «%2$s» το τρέχον πλήκτρο αυτής της συντόμευσης, ή ακυρώστε για να μην αλλάξει τίποτα.</string>
+    <string name="dejavu_shortcuts_current">Τρέχουσα: %1$s</string>
+    <string name="dejavu_shortcuts_text_keys">Τα πεδία κειμένου και οι ιστοσελίδες κρατούν το %1$s όσο έχουν την εστίαση.</string>
+    <string name="dejavu_shortcuts_none">Καμία</string>
+    <string name="dejavu_shortcuts_save">Αποθήκευση</string>
+    <string name="dejavu_shortcuts_swap">Εναλλαγή</string>
+    <string name="dejavu_shortcuts_clear">Διαγραφή</string>
+    <string name="dejavu_shortcuts_reset">Επαναφορά προεπιλογής</string>
+    <string name="dejavu_shortcut_next_tab">Επόμενη καρτέλα</string>
+    <string name="dejavu_shortcut_previous_tab">Προηγούμενη καρτέλα</string>
+    <string name="dejavu_shortcut_new_tab">Νέα καρτέλα</string>
+    <string name="dejavu_shortcut_close_tab">Κλείσιμο καρτέλας</string>
+    <string name="dejavu_shortcut_restore_tab">Επαναφορά κλειστής καρτέλας</string>
+    <string name="dejavu_shortcut_address_bar">Επεξεργασία διεύθυνσης</string>
+    <string name="dejavu_shortcut_reload">Ανανέωση σελίδας</string>
+    <string name="dejavu_shortcut_tab_n">Μετάβαση στην καρτέλα %1$d</string>
+    <string name="dejavu_shortcut_last_tab">Μετάβαση στην τελευταία καρτέλα</string>
 </resources>

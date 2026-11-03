@@ -576,4 +576,25 @@
     <string name="dejavu_settings_tips_summary">छिपे हुए जेस्चर के बारे में टिप्स दिखाएं, जैसे “नया टैब” को दबाकर रखना</string>
     <string name="dejavu_new">नया</string>
     <string name="dejavu_menu_customize_reader_view">रीडर व्यू को कस्टमाइज़ करें</string>
+    <string name="dejavu_settings_shortcuts">कीबोर्ड शॉर्टकट</string>
+    <string name="dejavu_settings_shortcuts_summary">हार्डवेयर कीबोर्ड के लिए शॉर्टकट की कुंजियाँ बदलें</string>
+    <string name="dejavu_shortcuts_hint">किसी शॉर्टकट को दूसरी कुंजी देने के लिए उस पर टैप करें। शॉर्टकट को Ctrl या Alt चाहिए।</string>
+    <string name="dejavu_shortcuts_press">नया कुंजी संयोजन दबाएँ।</string>
+    <string name="dejavu_shortcuts_taken">%1$s पहले से «%2$s» के लिए उपयोग में है। अदला-बदली करने पर «%2$s» को इस शॉर्टकट की मौजूदा कुंजी मिलेगी, या कुछ न बदलने के लिए रद्द करें।</string>
+    <string name="dejavu_shortcuts_current">मौजूदा: %1$s</string>
+    <string name="dejavu_shortcuts_text_keys">टेक्स्ट फ़ील्ड और वेब पेज फ़ोकस में रहते समय %1$s अपने पास रखते हैं।</string>
+    <string name="dejavu_shortcuts_none">कोई नहीं</string>
+    <string name="dejavu_shortcuts_save">सहेजें</string>
+    <string name="dejavu_shortcuts_swap">अदला-बदली</string>
+    <string name="dejavu_shortcuts_clear">साफ़ करें</string>
+    <string name="dejavu_shortcuts_reset">डिफ़ॉल्ट पर रीसेट करें</string>
+    <string name="dejavu_shortcut_next_tab">अगला टैब</string>
+    <string name="dejavu_shortcut_previous_tab">पिछला टैब</string>
+    <string name="dejavu_shortcut_new_tab">नया टैब</string>
+    <string name="dejavu_shortcut_close_tab">टैब बंद करें</string>
+    <string name="dejavu_shortcut_restore_tab">बंद टैब फिर खोलें</string>
+    <string name="dejavu_shortcut_address_bar">पता संपादित करें</string>
+    <string name="dejavu_shortcut_reload">पेज फिर से लोड करें</string>
+    <string name="dejavu_shortcut_tab_n">टैब %1$d पर जाएँ</string>
+    <string name="dejavu_shortcut_last_tab">आख़िरी टैब पर जाएँ</string>
 </resources>

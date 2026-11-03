@@ -543,4 +543,25 @@
     <string name="dejavu_settings_tips_summary">Kek\'ut taq na\'oj chi kij ewan taq b\'anoj paläj, achi\'el nachäp jun ramaj “K\'ak\'a\' ruwi\'”</string>
     <string name="dejavu_new">K\'ak\'a\'</string>
     <string name="dejavu_menu_customize_reader_view">Ke\'ichinäx rutz\'etoj sik\'inem</string>
+    <string name="dejavu_settings_shortcuts">Taq ruchojmirisanik rokem tz\'ib\'anïk</string>
+    <string name="dejavu_settings_shortcuts_summary">Tajala\' ri taq rupitz\'b\'äl ruchojmirisanik richin jun rokem tz\'ib\'anïk</string>
+    <string name="dejavu_shortcuts_hint">Tachapa\' jun ruchojmirisanik richin nay\'a\' jun chik rupitz\'b\'äl. Ri taq ruchojmirisanik nikajo\' Ctrl o Alt.</string>
+    <string name="dejavu_shortcuts_press">Tapitz\'a\' ri k\'ak\'a\' kitunuj taq pitz\'b\'äl.</string>
+    <string name="dejavu_shortcuts_taken">%1$s nokisäx yan ruma «%2$s». Ri jalwäch nuya\' chi re «%2$s» ri rupitz\'b\'äl re ruchojmirisanik re\', o taq\'ata\' richin man ta jun najäl.</string>
+    <string name="dejavu_shortcuts_current">Wakami: %1$s</string>
+    <string name="dejavu_shortcuts_text_keys">Ri taq rub\'ey tz\'ib\'anïk chuqa\' ri taq ruxaq ajk\'amaya\'l nikajch\'ij %1$s toq k\'o pa kiwi\'.</string>
+    <string name="dejavu_shortcuts_none">Majun</string>
+    <string name="dejavu_shortcuts_save">Tiyak</string>
+    <string name="dejavu_shortcuts_swap">Tijalwachïx</string>
+    <string name="dejavu_shortcuts_clear">Tijosq\'ïx</string>
+    <string name="dejavu_shortcuts_reset">Titzolin pa ri k\'o wi</string>
+    <string name="dejavu_shortcut_next_tab">Jun chik ruwi\'</string>
+    <string name="dejavu_shortcut_previous_tab">Ruwi\' xk\'o kan</string>
+    <string name="dejavu_shortcut_new_tab">K\'ak\'a\' ruwi\'</string>
+    <string name="dejavu_shortcut_close_tab">Titz\'apïx ruwi\'</string>
+    <string name="dejavu_shortcut_restore_tab">Titzolin tz\'apin ruwi\'</string>
+    <string name="dejavu_shortcut_address_bar">Tinuk\' ochochib\'äl</string>
+    <string name="dejavu_shortcut_reload">Tisamajïx chik ri ruxaq</string>
+    <string name="dejavu_shortcut_tab_n">Jät pa ruwi\' %1$d</string>
+    <string name="dejavu_shortcut_last_tab">Jät pa ri ruk\'isib\'äl ruwi\'</string>
 </resources>

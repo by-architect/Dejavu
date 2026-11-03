@@ -543,4 +543,25 @@
     <string name="dejavu_settings_tips_summary">Mostra conseggi in scî gesti ascoxi, comme tegnî sciaccou “Neuvo feuggio”</string>
     <string name="dejavu_new">Neuvo</string>
     <string name="dejavu_menu_customize_reader_view">Personalizza modalitæ letua</string>
+    <string name="dejavu_settings_shortcuts">Scorsaieu da tastea</string>
+    <string name="dejavu_settings_shortcuts_summary">Cangia i tasti di scorsaieu pe \'na tastea fixica</string>
+    <string name="dejavu_shortcuts_hint">Tocca un scorsaieu pe dâghe un atro tasto. I scorsaieu an de besêugno de Ctrl ò Alt.</string>
+    <string name="dejavu_shortcuts_press">Sciacca a neuva combinaçion de tasti.</string>
+    <string name="dejavu_shortcuts_taken">%1$s o l\'é za deuviou da \"%2$s\". Scangia o dà a \"%2$s\" o tasto de sto scorsaieu, ò anulla pe no cangiâ ninte.</string>
+    <string name="dejavu_shortcuts_current">Atoale: %1$s</string>
+    <string name="dejavu_shortcuts_text_keys">I campi de testo e e pagine web tëgnan %1$s quande an o focus.</string>
+    <string name="dejavu_shortcuts_none">Nisciun</string>
+    <string name="dejavu_shortcuts_save">Sarva</string>
+    <string name="dejavu_shortcuts_swap">Scangia</string>
+    <string name="dejavu_shortcuts_clear">Scancella</string>
+    <string name="dejavu_shortcuts_reset">Repiggia o predefinio</string>
+    <string name="dejavu_shortcut_next_tab">Feuggio dòppo</string>
+    <string name="dejavu_shortcut_previous_tab">Feuggio primma</string>
+    <string name="dejavu_shortcut_new_tab">Neuvo feuggio</string>
+    <string name="dejavu_shortcut_close_tab">Særa feuggio</string>
+    <string name="dejavu_shortcut_restore_tab">Repiggia feuggio serou</string>
+    <string name="dejavu_shortcut_address_bar">Cangia indirisso</string>
+    <string name="dejavu_shortcut_reload">Recarega pagina</string>
+    <string name="dejavu_shortcut_tab_n">Vanni a-o feuggio %1$d</string>
+    <string name="dejavu_shortcut_last_tab">Vanni a l\'urtimo feuggio</string>
 </resources>

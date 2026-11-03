@@ -535,4 +535,25 @@
     <string name="dejavu_settings_tips_summary">ສະແດງຄຳແນະນຳກ່ຽວກັບທ່າທາງທີ່ເຊື່ອງໄວ້ ເຊັ່ນ: ການກົດ “ແທັບໃຫມ່” ຄ້າງໄວ້</string>
     <string name="dejavu_new">ໃຫມ່</string>
     <string name="dejavu_menu_customize_reader_view">ປັບແຕ່ງມຸມມອງຜູ້ອ່ານ</string>
+    <string name="dejavu_settings_shortcuts">ທາງລັດແປ້ນພິມ</string>
+    <string name="dejavu_settings_shortcuts_summary">ປ່ຽນປຸ່ມຂອງທາງລັດສຳລັບແປ້ນພິມຮາດແວ</string>
+    <string name="dejavu_shortcuts_hint">ແຕະທາງລັດເພື່ອໃຫ້ປຸ່ມອື່ນແກ່ມັນ. ທາງລັດຕ້ອງການ Ctrl ຫຼື Alt.</string>
+    <string name="dejavu_shortcuts_press">ກົດການປະສົມປຸ່ມໃໝ່.</string>
+    <string name="dejavu_shortcuts_taken">%1$s ຖືກໃຊ້ແລ້ວໂດຍ «%2$s». ສະຫຼັບ ຈະໃຫ້ປຸ່ມປັດຈຸບັນຂອງທາງລັດນີ້ແກ່ «%2$s», ຫຼື ຍົກເລີກເພື່ອບໍ່ປ່ຽນຫຍັງ.</string>
+    <string name="dejavu_shortcuts_current">ປັດຈຸບັນ: %1$s</string>
+    <string name="dejavu_shortcuts_text_keys">ຊ່ອງຂໍ້ຄວາມ ແລະ ໜ້າເວັບຮັກສາ %1$s ໄວ້ໃນຂະນະທີ່ພວກມັນມີໂຟກັສ.</string>
+    <string name="dejavu_shortcuts_none">ບໍ່ມີ</string>
+    <string name="dejavu_shortcuts_save">ບັນທຶກ</string>
+    <string name="dejavu_shortcuts_swap">ສະຫຼັບ</string>
+    <string name="dejavu_shortcuts_clear">ລຶບ</string>
+    <string name="dejavu_shortcuts_reset">ຕັ້ງຄືນເປັນຄ່າເລີ່ມຕົ້ນ</string>
+    <string name="dejavu_shortcut_next_tab">ແຖບຖັດໄປ</string>
+    <string name="dejavu_shortcut_previous_tab">ແຖບກ່ອນໜ້າ</string>
+    <string name="dejavu_shortcut_new_tab">ແຖບໃໝ່</string>
+    <string name="dejavu_shortcut_close_tab">ປິດແຖບ</string>
+    <string name="dejavu_shortcut_restore_tab">ກູ້ຄືນແຖບທີ່ປິດ</string>
+    <string name="dejavu_shortcut_address_bar">ແກ້ໄຂທີ່ຢູ່</string>
+    <string name="dejavu_shortcut_reload">ໂຫຼດໜ້າຄືນໃໝ່</string>
+    <string name="dejavu_shortcut_tab_n">ໄປແຖບ %1$d</string>
+    <string name="dejavu_shortcut_last_tab">ໄປແຖບສຸດທ້າຍ</string>
 </resources>

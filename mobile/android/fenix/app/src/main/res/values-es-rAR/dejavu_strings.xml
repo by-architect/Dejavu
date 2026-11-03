@@ -551,4 +551,25 @@
     <string name="dejavu_settings_tips_summary">Mostrar consejos sobre gestos ocultos, como mantener presionado “Nueva pestaña”</string>
     <string name="dejavu_new">Nuevo</string>
     <string name="dejavu_menu_customize_reader_view">Personalizar vista de lectura</string>
+    <string name="dejavu_settings_shortcuts">Atajos de teclado</string>
+    <string name="dejavu_settings_shortcuts_summary">Cambiá las teclas de los atajos para un teclado físico</string>
+    <string name="dejavu_shortcuts_hint">Tocá un atajo para darle otra tecla. Los atajos necesitan Ctrl o Alt.</string>
+    <string name="dejavu_shortcuts_press">Presioná la nueva combinación de teclas.</string>
+    <string name="dejavu_shortcuts_taken">«%2$s» ya usa %1$s. Intercambiar le da a «%2$s» la tecla actual de este atajo, o cancelá para no cambiar nada.</string>
+    <string name="dejavu_shortcuts_current">Actual: %1$s</string>
+    <string name="dejavu_shortcuts_text_keys">Los campos de texto y las páginas web conservan %1$s mientras tienen el foco.</string>
+    <string name="dejavu_shortcuts_none">Ninguno</string>
+    <string name="dejavu_shortcuts_save">Guardar</string>
+    <string name="dejavu_shortcuts_swap">Intercambiar</string>
+    <string name="dejavu_shortcuts_clear">Borrar</string>
+    <string name="dejavu_shortcuts_reset">Restablecer valor predeterminado</string>
+    <string name="dejavu_shortcut_next_tab">Pestaña siguiente</string>
+    <string name="dejavu_shortcut_previous_tab">Pestaña anterior</string>
+    <string name="dejavu_shortcut_new_tab">Nueva pestaña</string>
+    <string name="dejavu_shortcut_close_tab">Cerrar pestaña</string>
+    <string name="dejavu_shortcut_restore_tab">Restaurar pestaña cerrada</string>
+    <string name="dejavu_shortcut_address_bar">Editar dirección</string>
+    <string name="dejavu_shortcut_reload">Recargar página</string>
+    <string name="dejavu_shortcut_tab_n">Ir a la pestaña %1$d</string>
+    <string name="dejavu_shortcut_last_tab">Ir a la última pestaña</string>
 </resources>

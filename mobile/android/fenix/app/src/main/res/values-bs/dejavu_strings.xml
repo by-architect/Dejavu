@@ -551,4 +551,25 @@
     <string name="dejavu_settings_tips_summary">Prikaži savjete o skrivenim gestovima, poput zadržavanja dugmeta Novi tab</string>
     <string name="dejavu_new">Novo</string>
     <string name="dejavu_menu_customize_reader_view">Prilagodi prikaz za čitanje</string>
+    <string name="dejavu_settings_shortcuts">Prečice na tastaturi</string>
+    <string name="dejavu_settings_shortcuts_summary">Promijenite tipke prečica za fizičku tastaturu</string>
+    <string name="dejavu_shortcuts_hint">Dodirnite prečicu da joj dodijelite drugu tipku. Prečice trebaju Ctrl ili Alt.</string>
+    <string name="dejavu_shortcuts_press">Pritisnite novu kombinaciju tipki.</string>
+    <string name="dejavu_shortcuts_taken">%1$s već koristi „%2$s“. Zamjena daje „%2$s“ trenutnu tipku ove prečice, ili otkažite da ništa ne promijenite.</string>
+    <string name="dejavu_shortcuts_current">Trenutno: %1$s</string>
+    <string name="dejavu_shortcuts_text_keys">Tekstualna polja i web stranice zadržavaju %1$s dok su u fokusu.</string>
+    <string name="dejavu_shortcuts_none">Nema</string>
+    <string name="dejavu_shortcuts_save">Sačuvaj</string>
+    <string name="dejavu_shortcuts_swap">Zamijeni</string>
+    <string name="dejavu_shortcuts_clear">Očisti</string>
+    <string name="dejavu_shortcuts_reset">Vrati na zadano</string>
+    <string name="dejavu_shortcut_next_tab">Sljedeći tab</string>
+    <string name="dejavu_shortcut_previous_tab">Prethodni tab</string>
+    <string name="dejavu_shortcut_new_tab">Novi tab</string>
+    <string name="dejavu_shortcut_close_tab">Zatvori tab</string>
+    <string name="dejavu_shortcut_restore_tab">Vrati zatvoreni tab</string>
+    <string name="dejavu_shortcut_address_bar">Uredi adresu</string>
+    <string name="dejavu_shortcut_reload">Ponovo učitaj stranicu</string>
+    <string name="dejavu_shortcut_tab_n">Idi na tab %1$d</string>
+    <string name="dejavu_shortcut_last_tab">Idi na zadnji tab</string>
 </resources>

@@ -535,4 +535,25 @@
     <string name="dejavu_settings_tips_summary">បង្ហាញគន្លឹះអំពីកាយវិការដែលលាក់ ដូចជាការចុចប៊ូតុង ផ្ទាំងថ្មី ឱ្យជាប់</string>
     <string name="dejavu_new">ថ្មី</string>
     <string name="dejavu_menu_customize_reader_view">ប្ដូរតាមបំណងទិដ្ឋភាពអ្នកអាន</string>
+    <string name="dejavu_settings_shortcuts">ផ្លូវកាត់ក្ដារចុច</string>
+    <string name="dejavu_settings_shortcuts_summary">ប្ដូរគ្រាប់ចុចនៃផ្លូវកាត់សម្រាប់ក្ដារចុចរឹង</string>
+    <string name="dejavu_shortcuts_hint">ប៉ះផ្លូវកាត់មួយ ដើម្បីផ្ដល់គ្រាប់ចុចផ្សេងទៀតឱ្យវា។ ផ្លូវកាត់ត្រូវការ Ctrl ឬ Alt។</string>
+    <string name="dejavu_shortcuts_press">ចុចបន្សំគ្រាប់ចុចថ្មី។</string>
+    <string name="dejavu_shortcuts_taken">%1$s ត្រូវបានប្រើដោយ «%2$s» រួចហើយ។ ប្ដូរ ផ្ដល់គ្រាប់ចុចបច្ចុប្បន្ននៃផ្លូវកាត់នេះឱ្យ «%2$s» ឬបោះបង់ដើម្បីមិនប្ដូរអ្វីទាំងអស់។</string>
+    <string name="dejavu_shortcuts_current">បច្ចុប្បន្ន៖ %1$s</string>
+    <string name="dejavu_shortcuts_text_keys">វាលអត្ថបទ និងទំព័របណ្ដាញរក្សា %1$s ពេលពួកវាមានការផ្ដោត។</string>
+    <string name="dejavu_shortcuts_none">គ្មាន</string>
+    <string name="dejavu_shortcuts_save">រក្សាទុក</string>
+    <string name="dejavu_shortcuts_swap">ប្ដូរ</string>
+    <string name="dejavu_shortcuts_clear">សម្អាត</string>
+    <string name="dejavu_shortcuts_reset">កំណត់ទៅលំនាំដើមវិញ</string>
+    <string name="dejavu_shortcut_next_tab">ផ្ទាំងបន្ទាប់</string>
+    <string name="dejavu_shortcut_previous_tab">ផ្ទាំងមុន</string>
+    <string name="dejavu_shortcut_new_tab">ផ្ទាំងថ្មី</string>
+    <string name="dejavu_shortcut_close_tab">បិទផ្ទាំង</string>
+    <string name="dejavu_shortcut_restore_tab">ស្ដារផ្ទាំងដែលបានបិទ</string>
+    <string name="dejavu_shortcut_address_bar">កែអាសយដ្ឋាន</string>
+    <string name="dejavu_shortcut_reload">ផ្ទុកទំព័រឡើងវិញ</string>
+    <string name="dejavu_shortcut_tab_n">ទៅផ្ទាំង %1$d</string>
+    <string name="dejavu_shortcut_last_tab">ទៅផ្ទាំងចុងក្រោយ</string>
 </resources>

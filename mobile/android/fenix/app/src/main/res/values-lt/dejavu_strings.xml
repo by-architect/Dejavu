@@ -559,4 +559,25 @@
     <string name="dejavu_settings_tips_summary">Rodyti patarimus apie paslėptus gestus, pavyzdžiui, mygtuko „Nauja kortelė“ palaikymą</string>
     <string name="dejavu_new">Nauja</string>
     <string name="dejavu_menu_customize_reader_view">Tinkinti skaitymo rodinį</string>
+    <string name="dejavu_settings_shortcuts">Klaviatūros šaukiniai</string>
+    <string name="dejavu_settings_shortcuts_summary">Keisti šaukinių klavišus fizinei klaviatūrai</string>
+    <string name="dejavu_shortcuts_hint">Bakstelėkite šaukinį, kad priskirtumėte jam kitą klavišą. Šaukiniams reikia Ctrl arba Alt.</string>
+    <string name="dejavu_shortcuts_press">Paspauskite naują klavišų derinį.</string>
+    <string name="dejavu_shortcuts_taken">%1$s jau naudoja „%2$s“. Sukeisti priskirs „%2$s“ dabartinį šio šaukinio klavišą, arba atšaukite, kad nieko nepakeistumėte.</string>
+    <string name="dejavu_shortcuts_current">Dabartinis: %1$s</string>
+    <string name="dejavu_shortcuts_text_keys">Teksto laukai ir tinklalapiai pasilieka %1$s, kol yra fokusuoti.</string>
+    <string name="dejavu_shortcuts_none">Nėra</string>
+    <string name="dejavu_shortcuts_save">Įrašyti</string>
+    <string name="dejavu_shortcuts_swap">Sukeisti</string>
+    <string name="dejavu_shortcuts_clear">Išvalyti</string>
+    <string name="dejavu_shortcuts_reset">Atkurti numatytąjį</string>
+    <string name="dejavu_shortcut_next_tab">Kita kortelė</string>
+    <string name="dejavu_shortcut_previous_tab">Ankstesnė kortelė</string>
+    <string name="dejavu_shortcut_new_tab">Nauja kortelė</string>
+    <string name="dejavu_shortcut_close_tab">Užverti kortelę</string>
+    <string name="dejavu_shortcut_restore_tab">Atkurti užvertą kortelę</string>
+    <string name="dejavu_shortcut_address_bar">Redaguoti adresą</string>
+    <string name="dejavu_shortcut_reload">Įkelti tinklalapį iš naujo</string>
+    <string name="dejavu_shortcut_tab_n">Eiti į %1$d kortelę</string>
+    <string name="dejavu_shortcut_last_tab">Eiti į paskutinę kortelę</string>
 </resources>

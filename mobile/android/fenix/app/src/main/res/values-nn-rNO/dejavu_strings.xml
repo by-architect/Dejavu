@@ -543,4 +543,25 @@
     <string name="dejavu_settings_tips_summary">Vis tips om skjulte rørsler, som å halde inne knappen Ny fane</string>
     <string name="dejavu_new">Ny</string>
     <string name="dejavu_menu_customize_reader_view">Tilpass lesevising</string>
+    <string name="dejavu_settings_shortcuts">Snarvegstastar</string>
+    <string name="dejavu_settings_shortcuts_summary">Endre tastane for snarvegane for eit fysisk tastatur</string>
+    <string name="dejavu_shortcuts_hint">Trykk på ein snarveg for å gi han ein annan tast. Snarvegar treng Ctrl eller Alt.</string>
+    <string name="dejavu_shortcuts_press">Trykk på den nye tastekombinasjonen.</string>
+    <string name="dejavu_shortcuts_taken">%1$s er allereie brukt av «%2$s». Byt gir «%2$s» den noverande tasten til denne snarvegen, eller avbryt for ikkje å endre noko.</string>
+    <string name="dejavu_shortcuts_current">Noverande: %1$s</string>
+    <string name="dejavu_shortcuts_text_keys">Tekstfelt og nettsider beheld %1$s medan dei har fokus.</string>
+    <string name="dejavu_shortcuts_none">Ingen</string>
+    <string name="dejavu_shortcuts_save">Lagre</string>
+    <string name="dejavu_shortcuts_swap">Byt</string>
+    <string name="dejavu_shortcuts_clear">Tøm</string>
+    <string name="dejavu_shortcuts_reset">Tilbakestill til standard</string>
+    <string name="dejavu_shortcut_next_tab">Neste fane</string>
+    <string name="dejavu_shortcut_previous_tab">Førre fane</string>
+    <string name="dejavu_shortcut_new_tab">Ny fane</string>
+    <string name="dejavu_shortcut_close_tab">Lat att fane</string>
+    <string name="dejavu_shortcut_restore_tab">Gjenopprett attlaten fane</string>
+    <string name="dejavu_shortcut_address_bar">Rediger adresse</string>
+    <string name="dejavu_shortcut_reload">Last inn sida på nytt</string>
+    <string name="dejavu_shortcut_tab_n">Gå til fane %1$d</string>
+    <string name="dejavu_shortcut_last_tab">Gå til siste fane</string>
 </resources>

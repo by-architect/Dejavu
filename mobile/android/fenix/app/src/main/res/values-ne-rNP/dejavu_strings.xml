@@ -543,4 +543,25 @@
     <string name="dejavu_settings_tips_summary">“नयाँ ट्याब” थिचिराख्ने जस्ता लुकेका इशाराहरुबारे सुझावहरु देखाउनुहोस्</string>
     <string name="dejavu_new">नयाँ</string>
     <string name="dejavu_menu_customize_reader_view">पाठक दृश्य अनुकुलन गर्नुहोस्</string>
+    <string name="dejavu_settings_shortcuts">किबोर्ड सर्टकटहरू</string>
+    <string name="dejavu_settings_shortcuts_summary">हार्डवेयर किबोर्डका लागि सर्टकटहरूका कुञ्जीहरू परिवर्तन गर्नुहोस्</string>
+    <string name="dejavu_shortcuts_hint">सर्टकटलाई अर्को कुञ्जी दिन त्यसमा ट्याप गर्नुहोस्। सर्टकटहरूलाई Ctrl वा Alt चाहिन्छ।</string>
+    <string name="dejavu_shortcuts_press">नयाँ कुञ्जी संयोजन थिच्नुहोस्।</string>
+    <string name="dejavu_shortcuts_taken">%1$s पहिले नै «%2$s» ले प्रयोग गरिरहेको छ। साटासाट गर्दा «%2$s» ले यो सर्टकटको हालको कुञ्जी पाउँछ, वा केही नबदल्न रद्द गर्नुहोस्।</string>
+    <string name="dejavu_shortcuts_current">हालको: %1$s</string>
+    <string name="dejavu_shortcuts_text_keys">पाठ क्षेत्र र वेब पृष्ठहरूले फोकसमा हुँदा %1$s आफूसँग राख्छन्।</string>
+    <string name="dejavu_shortcuts_none">कुनै पनि होइन</string>
+    <string name="dejavu_shortcuts_save">सुरक्षित गर्नुहोस्</string>
+    <string name="dejavu_shortcuts_swap">साटासाट</string>
+    <string name="dejavu_shortcuts_clear">खाली गर्नुहोस्</string>
+    <string name="dejavu_shortcuts_reset">पूर्वनिर्धारितमा रिसेट गर्नुहोस्</string>
+    <string name="dejavu_shortcut_next_tab">अर्को ट्याब</string>
+    <string name="dejavu_shortcut_previous_tab">अघिल्लो ट्याब</string>
+    <string name="dejavu_shortcut_new_tab">नयाँ ट्याब</string>
+    <string name="dejavu_shortcut_close_tab">ट्याब बन्द गर्नुहोस्</string>
+    <string name="dejavu_shortcut_restore_tab">बन्द ट्याब पुनर्स्थापना गर्नुहोस्</string>
+    <string name="dejavu_shortcut_address_bar">ठेगाना सम्पादन गर्नुहोस्</string>
+    <string name="dejavu_shortcut_reload">पृष्ठ पुनः लोड गर्नुहोस्</string>
+    <string name="dejavu_shortcut_tab_n">ट्याब %1$d मा जानुहोस्</string>
+    <string name="dejavu_shortcut_last_tab">अन्तिम ट्याबमा जानुहोस्</string>
 </resources>

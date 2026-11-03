@@ -543,4 +543,25 @@
     <string name="dejavu_settings_tips_summary">Affissà cunsiglii nant\'à e mosse piatte, cum\'è tene appughjatu Nova unghjetta</string>
     <string name="dejavu_new">Novu</string>
     <string name="dejavu_menu_customize_reader_view">Persunalizà u modu di lettura</string>
+    <string name="dejavu_settings_shortcuts">Accurtatoghji di tastera</string>
+    <string name="dejavu_settings_shortcuts_summary">Cambià i tasti di l\'accurtatoghji per una tastera fisica</string>
+    <string name="dejavu_shortcuts_hint">Toccu un accurtatoghju per dalli un altru tastu. L\'accurtatoghji anu bisognu di Ctrl o Alt.</string>
+    <string name="dejavu_shortcuts_press">Appughjate nantu à a nova cumbinazione di tasti.</string>
+    <string name="dejavu_shortcuts_taken">%1$s hè dighjà impiegatu da « %2$s ». Scambià dà à « %2$s » u tastu attuale di st\'accurtatoghju, o abbandunate per ùn cambià nunda.</string>
+    <string name="dejavu_shortcuts_current">Attuale : %1$s</string>
+    <string name="dejavu_shortcuts_text_keys">I campi di testu è e pagine web tenenu %1$s mentre ch\'elle anu u focu.</string>
+    <string name="dejavu_shortcuts_none">Nisunu</string>
+    <string name="dejavu_shortcuts_save">Arregistrà</string>
+    <string name="dejavu_shortcuts_swap">Scambià</string>
+    <string name="dejavu_shortcuts_clear">Squassà</string>
+    <string name="dejavu_shortcuts_reset">Rimette à u valore predefinitu</string>
+    <string name="dejavu_shortcut_next_tab">Unghjetta seguente</string>
+    <string name="dejavu_shortcut_previous_tab">Unghjetta precedente</string>
+    <string name="dejavu_shortcut_new_tab">Nova unghjetta</string>
+    <string name="dejavu_shortcut_close_tab">Chjode l\'unghjetta</string>
+    <string name="dejavu_shortcut_restore_tab">Risturà l\'unghjetta chjosa</string>
+    <string name="dejavu_shortcut_address_bar">Mudificà l\'indirizzu</string>
+    <string name="dejavu_shortcut_reload">Ricaricà a pagina</string>
+    <string name="dejavu_shortcut_tab_n">Andà à l\'unghjetta %1$d</string>
+    <string name="dejavu_shortcut_last_tab">Andà à l\'ultima unghjetta</string>
 </resources>

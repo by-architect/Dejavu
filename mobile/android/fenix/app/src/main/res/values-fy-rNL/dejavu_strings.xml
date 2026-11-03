@@ -543,4 +543,25 @@
     <string name="dejavu_settings_tips_summary">Tips oer ferstoppe bewegingen toane, lykas ‘Nij ljepblêd’ yndrukt hâlde</string>
     <string name="dejavu_new">Nij</string>
     <string name="dejavu_menu_customize_reader_view">Lêzerwerjefte oanpasse</string>
+    <string name="dejavu_settings_shortcuts">Fluchtoetsen</string>
+    <string name="dejavu_settings_shortcuts_summary">Wizigje de toetsen fan de fluchtoetsen foar in fysyk toetseboerd</string>
+    <string name="dejavu_shortcuts_hint">Tik op in fluchtoets om dy in oare toets te jaan. Fluchtoetsen hawwe Ctrl of Alt nedich.</string>
+    <string name="dejavu_shortcuts_press">Druk op de nije toetskombinaasje.</string>
+    <string name="dejavu_shortcuts_taken">%1$s wurdt al brûkt troch ‘%2$s’. Wikselje jout ‘%2$s’ de aktuele toets fan dizze fluchtoets, of annulearje om neat te wizigjen.</string>
+    <string name="dejavu_shortcuts_current">Aktueel: %1$s</string>
+    <string name="dejavu_shortcuts_text_keys">Tekstfjilden en websiden hâlde %1$s, salang’t se de fokus hawwe.</string>
+    <string name="dejavu_shortcuts_none">Gjin</string>
+    <string name="dejavu_shortcuts_save">Bewarje</string>
+    <string name="dejavu_shortcuts_swap">Wikselje</string>
+    <string name="dejavu_shortcuts_clear">Wiskje</string>
+    <string name="dejavu_shortcuts_reset">Op standert weromsette</string>
+    <string name="dejavu_shortcut_next_tab">Folgjende ljepper</string>
+    <string name="dejavu_shortcut_previous_tab">Foarige ljepper</string>
+    <string name="dejavu_shortcut_new_tab">Nije ljepper</string>
+    <string name="dejavu_shortcut_close_tab">Ljepper slute</string>
+    <string name="dejavu_shortcut_restore_tab">Sletten ljepper weromsette</string>
+    <string name="dejavu_shortcut_address_bar">Adres bewurkje</string>
+    <string name="dejavu_shortcut_reload">Side opnij lade</string>
+    <string name="dejavu_shortcut_tab_n">Nei ljepper %1$d</string>
+    <string name="dejavu_shortcut_last_tab">Nei lêste ljepper</string>
 </resources>

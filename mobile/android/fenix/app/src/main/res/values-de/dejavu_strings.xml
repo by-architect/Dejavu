@@ -543,4 +543,25 @@
     <string name="dejavu_settings_tips_summary">Tipps zu versteckten Gesten anzeigen, etwa „Neuer Tab“ gedrückt halten</string>
     <string name="dejavu_new">Neu</string>
     <string name="dejavu_menu_customize_reader_view">Leseansicht anpassen</string>
+    <string name="dejavu_settings_shortcuts">Tastenkombinationen</string>
+    <string name="dejavu_settings_shortcuts_summary">Tasten der Kombinationen für eine Hardware-Tastatur ändern</string>
+    <string name="dejavu_shortcuts_hint">Tippe auf eine Kombination, um ihr eine andere Taste zu geben. Kombinationen brauchen Ctrl oder Alt.</string>
+    <string name="dejavu_shortcuts_press">Drücke die neue Tastenkombination.</string>
+    <string name="dejavu_shortcuts_taken">%1$s wird schon von „%2$s“ verwendet. Tauschen gibt „%2$s“ die aktuelle Taste dieser Kombination, oder brich ab, um nichts zu ändern.</string>
+    <string name="dejavu_shortcuts_current">Aktuell: %1$s</string>
+    <string name="dejavu_shortcuts_text_keys">Textfelder und Webseiten behalten %1$s, solange sie den Fokus haben.</string>
+    <string name="dejavu_shortcuts_none">Keine</string>
+    <string name="dejavu_shortcuts_save">Speichern</string>
+    <string name="dejavu_shortcuts_swap">Tauschen</string>
+    <string name="dejavu_shortcuts_clear">Löschen</string>
+    <string name="dejavu_shortcuts_reset">Auf Standard zurücksetzen</string>
+    <string name="dejavu_shortcut_next_tab">Nächster Tab</string>
+    <string name="dejavu_shortcut_previous_tab">Vorheriger Tab</string>
+    <string name="dejavu_shortcut_new_tab">Neuer Tab</string>
+    <string name="dejavu_shortcut_close_tab">Tab schließen</string>
+    <string name="dejavu_shortcut_restore_tab">Geschlossenen Tab wiederherstellen</string>
+    <string name="dejavu_shortcut_address_bar">Adresse bearbeiten</string>
+    <string name="dejavu_shortcut_reload">Seite neu laden</string>
+    <string name="dejavu_shortcut_tab_n">Zu Tab %1$d wechseln</string>
+    <string name="dejavu_shortcut_last_tab">Zum letzten Tab wechseln</string>
 </resources>

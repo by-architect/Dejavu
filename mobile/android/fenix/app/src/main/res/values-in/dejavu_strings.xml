@@ -535,4 +535,25 @@
     <string name="dejavu_settings_tips_summary">Tampilkan tips tentang gestur tersembunyi, seperti menahan “Tab baru”</string>
     <string name="dejavu_new">Baru</string>
     <string name="dejavu_menu_customize_reader_view">Sesuaikan tampilan pembaca</string>
+    <string name="dejavu_settings_shortcuts">Pintasan keyboard</string>
+    <string name="dejavu_settings_shortcuts_summary">Ubah tombol pintasan untuk keyboard fisik</string>
+    <string name="dejavu_shortcuts_hint">Ketuk pintasan untuk memberinya tombol lain. Pintasan memerlukan Ctrl atau Alt.</string>
+    <string name="dejavu_shortcuts_press">Tekan kombinasi tombol yang baru.</string>
+    <string name="dejavu_shortcuts_taken">%1$s sudah digunakan oleh “%2$s”. Tukar memberi “%2$s” tombol pintasan ini saat ini, atau batalkan agar tidak ada yang berubah.</string>
+    <string name="dejavu_shortcuts_current">Saat ini: %1$s</string>
+    <string name="dejavu_shortcuts_text_keys">Kolom teks dan halaman web mempertahankan %1$s selama memiliki fokus.</string>
+    <string name="dejavu_shortcuts_none">Tidak ada</string>
+    <string name="dejavu_shortcuts_save">Simpan</string>
+    <string name="dejavu_shortcuts_swap">Tukar</string>
+    <string name="dejavu_shortcuts_clear">Hapus</string>
+    <string name="dejavu_shortcuts_reset">Setel ulang ke bawaan</string>
+    <string name="dejavu_shortcut_next_tab">Tab berikutnya</string>
+    <string name="dejavu_shortcut_previous_tab">Tab sebelumnya</string>
+    <string name="dejavu_shortcut_new_tab">Tab baru</string>
+    <string name="dejavu_shortcut_close_tab">Tutup tab</string>
+    <string name="dejavu_shortcut_restore_tab">Pulihkan tab yang ditutup</string>
+    <string name="dejavu_shortcut_address_bar">Edit alamat</string>
+    <string name="dejavu_shortcut_reload">Muat ulang halaman</string>
+    <string name="dejavu_shortcut_tab_n">Buka tab %1$d</string>
+    <string name="dejavu_shortcut_last_tab">Buka tab terakhir</string>
 </resources>

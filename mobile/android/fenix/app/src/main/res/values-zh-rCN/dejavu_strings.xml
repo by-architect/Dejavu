@@ -535,4 +535,25 @@
     <string name="dejavu_settings_tips_summary">显示有关隐藏手势的提示，例如长按“新建标签页”</string>
     <string name="dejavu_new">新</string>
     <string name="dejavu_menu_customize_reader_view">定制阅读模式</string>
+    <string name="dejavu_settings_shortcuts">键盘快捷键</string>
+    <string name="dejavu_settings_shortcuts_summary">更改硬件键盘快捷键的按键</string>
+    <string name="dejavu_shortcuts_hint">轻触快捷键可为其指定其他按键。快捷键需要 Ctrl 或 Alt。</string>
+    <string name="dejavu_shortcuts_press">请按下新的组合键。</string>
+    <string name="dejavu_shortcuts_taken">%1$s 已被“%2$s”使用。交换会将此快捷键的当前按键给“%2$s”，取消则不做任何更改。</string>
+    <string name="dejavu_shortcuts_current">当前：%1$s</string>
+    <string name="dejavu_shortcuts_text_keys">文本框和网页在获得焦点时保留 %1$s。</string>
+    <string name="dejavu_shortcuts_none">无</string>
+    <string name="dejavu_shortcuts_save">保存</string>
+    <string name="dejavu_shortcuts_swap">交换</string>
+    <string name="dejavu_shortcuts_clear">清除</string>
+    <string name="dejavu_shortcuts_reset">恢复默认</string>
+    <string name="dejavu_shortcut_next_tab">下一个标签页</string>
+    <string name="dejavu_shortcut_previous_tab">上一个标签页</string>
+    <string name="dejavu_shortcut_new_tab">新建标签页</string>
+    <string name="dejavu_shortcut_close_tab">关闭标签页</string>
+    <string name="dejavu_shortcut_restore_tab">恢复已关闭的标签页</string>
+    <string name="dejavu_shortcut_address_bar">编辑地址</string>
+    <string name="dejavu_shortcut_reload">重新载入页面</string>
+    <string name="dejavu_shortcut_tab_n">转到标签页 %1$d</string>
+    <string name="dejavu_shortcut_last_tab">转到最后一个标签页</string>
 </resources>

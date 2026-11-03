@@ -559,4 +559,25 @@
     <string name="dejavu_settings_tips_summary">Wyświetlaj wskazówki o ukrytych gestach, takich jak przytrzymanie przycisku „Nowa karta”</string>
     <string name="dejavu_new">Nowe</string>
     <string name="dejavu_menu_customize_reader_view">Dostosuj widok poprawionej czytelności</string>
+    <string name="dejavu_settings_shortcuts">Skróty klawiszowe</string>
+    <string name="dejavu_settings_shortcuts_summary">Zmień klawisze skrótów dla klawiatury fizycznej</string>
+    <string name="dejavu_shortcuts_hint">Stuknij skrót, aby przypisać mu inny klawisz. Skróty wymagają Ctrl lub Alt.</string>
+    <string name="dejavu_shortcuts_press">Naciśnij nową kombinację klawiszy.</string>
+    <string name="dejavu_shortcuts_taken">%1$s jest już używany przez „%2$s”. Zamień przypisze „%2$s” obecny klawisz tego skrótu, albo anuluj, aby niczego nie zmieniać.</string>
+    <string name="dejavu_shortcuts_current">Obecny: %1$s</string>
+    <string name="dejavu_shortcuts_text_keys">Pola tekstowe i strony internetowe zachowują %1$s, gdy mają fokus.</string>
+    <string name="dejavu_shortcuts_none">Brak</string>
+    <string name="dejavu_shortcuts_save">Zapisz</string>
+    <string name="dejavu_shortcuts_swap">Zamień</string>
+    <string name="dejavu_shortcuts_clear">Wyczyść</string>
+    <string name="dejavu_shortcuts_reset">Przywróć domyślny</string>
+    <string name="dejavu_shortcut_next_tab">Następna karta</string>
+    <string name="dejavu_shortcut_previous_tab">Poprzednia karta</string>
+    <string name="dejavu_shortcut_new_tab">Nowa karta</string>
+    <string name="dejavu_shortcut_close_tab">Zamknij kartę</string>
+    <string name="dejavu_shortcut_restore_tab">Przywróć zamkniętą kartę</string>
+    <string name="dejavu_shortcut_address_bar">Edytuj adres</string>
+    <string name="dejavu_shortcut_reload">Odśwież stronę</string>
+    <string name="dejavu_shortcut_tab_n">Przejdź do karty %1$d</string>
+    <string name="dejavu_shortcut_last_tab">Przejdź do ostatniej karty</string>
 </resources>

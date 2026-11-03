@@ -559,4 +559,25 @@
     <string name="dejavu_settings_tips_summary">Zobrazovat tipy ke skrytým gestům, například podržení tlačítka „Nový panel“</string>
     <string name="dejavu_new">Novinka</string>
     <string name="dejavu_menu_customize_reader_view">Přizpůsobit zobrazení čtečky</string>
+    <string name="dejavu_settings_shortcuts">Klávesové zkratky</string>
+    <string name="dejavu_settings_shortcuts_summary">Změna kláves zkratek pro hardwarovou klávesnici</string>
+    <string name="dejavu_shortcuts_hint">Klepnutím na zkratku jí přiřadíte jinou klávesu. Zkratky potřebují Ctrl nebo Alt.</string>
+    <string name="dejavu_shortcuts_press">Stiskněte novou kombinaci kláves.</string>
+    <string name="dejavu_shortcuts_taken">%1$s už používá „%2$s“. Prohodit dá „%2$s“ současnou klávesu této zkratky, nebo zrušte a nic se nezmění.</string>
+    <string name="dejavu_shortcuts_current">Současná: %1$s</string>
+    <string name="dejavu_shortcuts_text_keys">Textová pole a webové stránky si ponechávají %1$s, dokud mají fokus.</string>
+    <string name="dejavu_shortcuts_none">Žádná</string>
+    <string name="dejavu_shortcuts_save">Uložit</string>
+    <string name="dejavu_shortcuts_swap">Prohodit</string>
+    <string name="dejavu_shortcuts_clear">Vymazat</string>
+    <string name="dejavu_shortcuts_reset">Obnovit výchozí</string>
+    <string name="dejavu_shortcut_next_tab">Další panel</string>
+    <string name="dejavu_shortcut_previous_tab">Předchozí panel</string>
+    <string name="dejavu_shortcut_new_tab">Nový panel</string>
+    <string name="dejavu_shortcut_close_tab">Zavřít panel</string>
+    <string name="dejavu_shortcut_restore_tab">Obnovit zavřený panel</string>
+    <string name="dejavu_shortcut_address_bar">Upravit adresu</string>
+    <string name="dejavu_shortcut_reload">Znovu načíst stránku</string>
+    <string name="dejavu_shortcut_tab_n">Přejít na panel %1$d</string>
+    <string name="dejavu_shortcut_last_tab">Přejít na poslední panel</string>
 </resources>

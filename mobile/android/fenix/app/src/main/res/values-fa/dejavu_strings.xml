@@ -543,4 +543,25 @@
     <string name="dejavu_settings_tips_summary">نمایش نکته‌هایی دربارهٔ ژست‌های حرکتی پنهان، مثل نگه داشتن «زبانهٔ جدید»</string>
     <string name="dejavu_new">جدید</string>
     <string name="dejavu_menu_customize_reader_view">شخصی‌سازی نمای مطالعه</string>
+    <string name="dejavu_settings_shortcuts">میان‌برهای صفحه‌کلید</string>
+    <string name="dejavu_settings_shortcuts_summary">کلیدهای میان‌برها را برای صفحه‌کلید فیزیکی تغییر دهید</string>
+    <string name="dejavu_shortcuts_hint">برای دادن کلید دیگری به یک میان‌بر، روی آن ضربه بزنید. میان‌برها به Ctrl یا Alt نیاز دارند.</string>
+    <string name="dejavu_shortcuts_press">ترکیب کلید جدید را فشار دهید.</string>
+    <string name="dejavu_shortcuts_taken">%1$s از قبل توسط «%2$s» استفاده می‌شود. جابه‌جایی کلید فعلی این میان‌بر را به «%2$s» می‌دهد، یا برای تغییر ندادن چیزی لغو کنید.</string>
+    <string name="dejavu_shortcuts_current">فعلی: %1$s</string>
+    <string name="dejavu_shortcuts_text_keys">فیلدهای متن و صفحه‌های وب تا وقتی فوکوس دارند %1$s را برای خود نگه می‌دارند.</string>
+    <string name="dejavu_shortcuts_none">هیچ</string>
+    <string name="dejavu_shortcuts_save">ذخیره</string>
+    <string name="dejavu_shortcuts_swap">جابه‌جایی</string>
+    <string name="dejavu_shortcuts_clear">پاک کردن</string>
+    <string name="dejavu_shortcuts_reset">بازنشانی به پیش‌فرض</string>
+    <string name="dejavu_shortcut_next_tab">زبانهٔ بعدی</string>
+    <string name="dejavu_shortcut_previous_tab">زبانهٔ قبلی</string>
+    <string name="dejavu_shortcut_new_tab">زبانهٔ جدید</string>
+    <string name="dejavu_shortcut_close_tab">بستن زبانه</string>
+    <string name="dejavu_shortcut_restore_tab">بازگرداندن زبانهٔ بسته</string>
+    <string name="dejavu_shortcut_address_bar">ویرایش نشانی</string>
+    <string name="dejavu_shortcut_reload">بارگیری دوبارهٔ صفحه</string>
+    <string name="dejavu_shortcut_tab_n">رفتن به زبانهٔ %1$d</string>
+    <string name="dejavu_shortcut_last_tab">رفتن به آخرین زبانه</string>
 </resources>

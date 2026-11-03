@@ -551,4 +551,25 @@
     <string name="dejavu_settings_tips_summary">Mostrar dicas sobre gestos ocultos, como manter premido o botão Novo separador</string>
     <string name="dejavu_new">Novo</string>
     <string name="dejavu_menu_customize_reader_view">Personalizar vista de leitura</string>
+    <string name="dejavu_settings_shortcuts">Atalhos de teclado</string>
+    <string name="dejavu_settings_shortcuts_summary">Alterar as teclas dos atalhos para um teclado físico</string>
+    <string name="dejavu_shortcuts_hint">Toque num atalho para lhe dar outra tecla. Os atalhos precisam de Ctrl ou Alt.</string>
+    <string name="dejavu_shortcuts_press">Prima a nova combinação de teclas.</string>
+    <string name="dejavu_shortcuts_taken">%1$s já é utilizado por “%2$s”. Trocar dá a “%2$s” a tecla atual deste atalho, ou cancele para não alterar nada.</string>
+    <string name="dejavu_shortcuts_current">Atual: %1$s</string>
+    <string name="dejavu_shortcuts_text_keys">Os campos de texto e as páginas web mantêm %1$s enquanto têm o foco.</string>
+    <string name="dejavu_shortcuts_none">Nenhum</string>
+    <string name="dejavu_shortcuts_save">Guardar</string>
+    <string name="dejavu_shortcuts_swap">Trocar</string>
+    <string name="dejavu_shortcuts_clear">Limpar</string>
+    <string name="dejavu_shortcuts_reset">Repor predefinição</string>
+    <string name="dejavu_shortcut_next_tab">Separador seguinte</string>
+    <string name="dejavu_shortcut_previous_tab">Separador anterior</string>
+    <string name="dejavu_shortcut_new_tab">Novo separador</string>
+    <string name="dejavu_shortcut_close_tab">Fechar separador</string>
+    <string name="dejavu_shortcut_restore_tab">Restaurar separador fechado</string>
+    <string name="dejavu_shortcut_address_bar">Editar endereço</string>
+    <string name="dejavu_shortcut_reload">Recarregar página</string>
+    <string name="dejavu_shortcut_tab_n">Ir para o separador %1$d</string>
+    <string name="dejavu_shortcut_last_tab">Ir para o último separador</string>
 </resources>

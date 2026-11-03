@@ -543,4 +543,25 @@
     <string name="dejavu_settings_tips_summary">Mostrar consejos sobre gestos ocultos, como mantener presionado Sukua jíía</string>
     <string name="dejavu_new">Jíía</string>
     <string name="dejavu_menu_customize_reader_view">Sá\'á vii jíí vista ka\'vi</string>
+    <string name="dejavu_settings_shortcuts">Tu\'un kuachi teclado</string>
+    <string name="dejavu_settings_shortcuts_summary">Nasama tecla ña kuachi nu ñii teclado ña ndaa</string>
+    <string name="dejavu_shortcuts_hint">Kanda in kuachi ña ná taxi ña inka tecla. Kuachi jiniñuu Ctrl a Alt.</string>
+    <string name="dejavu_shortcuts_press">Kanda tecla xaa.</string>
+    <string name="dejavu_shortcuts_taken">%1$s xa ñu\'u nu \"%2$s\". Nasama taxi nu \"%2$s\" tecla vitin ña kuachi yo\'o, a sandaa ña ná ma nasama ni ñaa.</string>
+    <string name="dejavu_shortcuts_current">Vitin: %1$s</string>
+    <string name="dejavu_shortcuts_text_keys">Nu tia tutu ji página web ndiaka %1$s tá ñu\'u foco nu ña.</string>
+    <string name="dejavu_shortcuts_none">Ni ñaa</string>
+    <string name="dejavu_shortcuts_save">Chuva\'a</string>
+    <string name="dejavu_shortcuts_swap">Nasama</string>
+    <string name="dejavu_shortcuts_clear">Kunu</string>
+    <string name="dejavu_shortcuts_reset">Nandió kuun nu ña ñu\'u</string>
+    <string name="dejavu_shortcut_next_tab">Pestaña tsa\'a</string>
+    <string name="dejavu_shortcut_previous_tab">Pestaña xina\'a</string>
+    <string name="dejavu_shortcut_new_tab">Pestaña xaa</string>
+    <string name="dejavu_shortcut_close_tab">Kasi pestaña</string>
+    <string name="dejavu_shortcut_restore_tab">Nasama pestaña ña ni kasi</string>
+    <string name="dejavu_shortcut_address_bar">Nasama dirección</string>
+    <string name="dejavu_shortcut_reload">Nachituu página</string>
+    <string name="dejavu_shortcut_tab_n">Kua\'an pestaña %1$d</string>
+    <string name="dejavu_shortcut_last_tab">Kua\'an pestaña sondi\'i</string>
 </resources>

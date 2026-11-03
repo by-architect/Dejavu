@@ -543,4 +543,25 @@
     <string name="dejavu_settings_tips_summary">Sýna ábendingar um faldar bendingar, eins og að halda „Nýr flipi“ niðri</string>
     <string name="dejavu_new">Nýtt</string>
     <string name="dejavu_menu_customize_reader_view">Sérsníða lesham</string>
+    <string name="dejavu_settings_shortcuts">Flýtilyklar</string>
+    <string name="dejavu_settings_shortcuts_summary">Breyta lyklum flýtileiða fyrir vélbúnaðarlyklaborð</string>
+    <string name="dejavu_shortcuts_hint">Ýttu á flýtileið til að gefa henni annan lykil. Flýtileiðir þurfa Ctrl eða Alt.</string>
+    <string name="dejavu_shortcuts_press">Ýttu á nýju lyklasamsetninguna.</string>
+    <string name="dejavu_shortcuts_taken">%1$s er þegar notað af „%2$s“. Skipta gefur „%2$s“ núverandi lykil þessarar flýtileiðar, eða hættu við til að breyta engu.</string>
+    <string name="dejavu_shortcuts_current">Núverandi: %1$s</string>
+    <string name="dejavu_shortcuts_text_keys">Textareitir og vefsíður halda %1$s á meðan þau hafa fókus.</string>
+    <string name="dejavu_shortcuts_none">Ekkert</string>
+    <string name="dejavu_shortcuts_save">Vista</string>
+    <string name="dejavu_shortcuts_swap">Skipta</string>
+    <string name="dejavu_shortcuts_clear">Hreinsa</string>
+    <string name="dejavu_shortcuts_reset">Endurstilla á sjálfgefið</string>
+    <string name="dejavu_shortcut_next_tab">Næsti flipi</string>
+    <string name="dejavu_shortcut_previous_tab">Fyrri flipi</string>
+    <string name="dejavu_shortcut_new_tab">Nýr flipi</string>
+    <string name="dejavu_shortcut_close_tab">Loka flipa</string>
+    <string name="dejavu_shortcut_restore_tab">Endurheimta lokaðan flipa</string>
+    <string name="dejavu_shortcut_address_bar">Breyta vistfangi</string>
+    <string name="dejavu_shortcut_reload">Endurlesa síðu</string>
+    <string name="dejavu_shortcut_tab_n">Fara á flipa %1$d</string>
+    <string name="dejavu_shortcut_last_tab">Fara á síðasta flipa</string>
 </resources>

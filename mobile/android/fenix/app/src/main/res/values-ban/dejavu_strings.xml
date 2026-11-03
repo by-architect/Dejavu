@@ -535,4 +535,25 @@
     <string name="dejavu_settings_tips_summary">Edengang tips indik gestur ane kaengkebang, minakadi nekek “Tab Anyar”</string>
     <string name="dejavu_new">Anyar</string>
     <string name="dejavu_menu_customize_reader_view">Setel tampilan pamaca</string>
+    <string name="dejavu_settings_shortcuts">Pintasan keyboard</string>
+    <string name="dejavu_settings_shortcuts_summary">Uah tombol pintasan anggen keyboard fisik</string>
+    <string name="dejavu_shortcuts_hint">Tekan pintasan anggen ngicen tombol sane lianan. Pintasan merluang Ctrl utawi Alt.</string>
+    <string name="dejavu_shortcuts_press">Tekan kombinasi tombol sane anyar.</string>
+    <string name="dejavu_shortcuts_taken">%1$s sampun kaanggen olih «%2$s». Tukar ngicen «%2$s» tombol pintasan puniki, utawi batalang mangda nenten wenten sane kauah.</string>
+    <string name="dejavu_shortcuts_current">Mangkin: %1$s</string>
+    <string name="dejavu_shortcuts_text_keys">Kolom teks miwah kaca web ngamel %1$s rikala polih fokus.</string>
+    <string name="dejavu_shortcuts_none">Nenten wenten</string>
+    <string name="dejavu_shortcuts_save">Simpen</string>
+    <string name="dejavu_shortcuts_swap">Tukar</string>
+    <string name="dejavu_shortcuts_clear">Puyungang</string>
+    <string name="dejavu_shortcuts_reset">Wangsulang ke bawaan</string>
+    <string name="dejavu_shortcut_next_tab">Tab salanturnyane</string>
+    <string name="dejavu_shortcut_previous_tab">Tab sadurungnyane</string>
+    <string name="dejavu_shortcut_new_tab">Tab anyar</string>
+    <string name="dejavu_shortcut_close_tab">Tutup tab</string>
+    <string name="dejavu_shortcut_restore_tab">Wangsulang tab sane katutup</string>
+    <string name="dejavu_shortcut_address_bar">Uah alamat</string>
+    <string name="dejavu_shortcut_reload">Muat malih kaca</string>
+    <string name="dejavu_shortcut_tab_n">Lunga ke tab %1$d</string>
+    <string name="dejavu_shortcut_last_tab">Lunga ke tab pamuput</string>
 </resources>

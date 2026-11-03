@@ -543,4 +543,25 @@
     <string name="dejavu_settings_tips_summary">Иҵәахыу анапқәа ирызку ацхыраарақәа аарԥшра, иаҳҳәап, «Абларҭа ҿыц» аанкылара</string>
     <string name="dejavu_new">Иҿыцу</string>
     <string name="dejavu_menu_customize_reader_view">Аԥхьара аԥшра рхиатәуп</string>
+    <string name="dejavu_settings_shortcuts">Аклавиатура аццакхырхарҭақәа</string>
+    <string name="dejavu_settings_shortcuts_summary">Аппаратә клавиатура аццакхырхарҭақәа ркнопкақәа рыԥсахра</string>
+    <string name="dejavu_shortcuts_hint">Аццакхырхарҭа иақәыӷәӷәа, акнопка ҿыц аҭаразы. Аццакхырхарҭақәа Ctrl ма Alt рҭахуп.</string>
+    <string name="dejavu_shortcuts_press">Акнопкақәа рыцҵара ҿыц иақәыӷәӷәа.</string>
+    <string name="dejavu_shortcuts_taken">%1$s «%2$s» ахь ихархәоуп. Аԥсахра «%2$s» ари аццакхырхарҭа уажәтәи акнопка иаҭоит, ма иаԥыҟәырш, акгьы аԥсахуам.</string>
+    <string name="dejavu_shortcuts_current">Уажәтәи: %1$s</string>
+    <string name="dejavu_shortcuts_text_keys">Атекст ашҭақәеи веб-адаҟьақәеи %1$s рзынхоит фокус шрымоу.</string>
+    <string name="dejavu_shortcuts_none">Акгьы</string>
+    <string name="dejavu_shortcuts_save">Еиқәырхатәуп</string>
+    <string name="dejavu_shortcuts_swap">Аԥсахра</string>
+    <string name="dejavu_shortcuts_clear">Ацқьара</string>
+    <string name="dejavu_shortcuts_reset">Ихадоу архынҳәра</string>
+    <string name="dejavu_shortcut_next_tab">Анаҩстәи анҭыра</string>
+    <string name="dejavu_shortcut_previous_tab">Аԥхьатәи анҭыра</string>
+    <string name="dejavu_shortcut_new_tab">Анҭыра ҿыц</string>
+    <string name="dejavu_shortcut_close_tab">Анҭыра аркра</string>
+    <string name="dejavu_shortcut_restore_tab">Иаркыз анҭыра архынҳәра</string>
+    <string name="dejavu_shortcut_address_bar">Аадрес аредакциа</string>
+    <string name="dejavu_shortcut_reload">Адаҟьа ҿыцзаны аҭагалара</string>
+    <string name="dejavu_shortcut_tab_n">Анҭыра %1$d ахь аиасра</string>
+    <string name="dejavu_shortcut_last_tab">Аҵыхәатәи анҭыра ахь аиасра</string>
 </resources>

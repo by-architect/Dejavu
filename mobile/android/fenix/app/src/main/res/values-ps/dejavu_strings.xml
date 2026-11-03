@@ -543,4 +543,25 @@
     <string name="dejavu_settings_tips_summary">د پټو اشارو په اړه لارښوونې ښودل، لکه د «نوی ټب» نیول</string>
     <string name="dejavu_new">نوی</string>
     <string name="dejavu_menu_customize_reader_view">د لوستونکي لید دودیزول</string>
+    <string name="dejavu_settings_shortcuts">د کیبورډ لنډلارې</string>
+    <string name="dejavu_settings_shortcuts_summary">د فزیکي کیبورډ لپاره د لنډلارو کیلي بدلې کړئ</string>
+    <string name="dejavu_shortcuts_hint">یوې لنډلارې ته د بلې کیلي ورکولو لپاره پرې ټک وهئ. لنډلارو ته Ctrl یا Alt اړین دی.</string>
+    <string name="dejavu_shortcuts_press">نوې کیلي ترکیب کېکاږئ.</string>
+    <string name="dejavu_shortcuts_taken">%1$s دمخه د «%2$s» لخوا کارول کېږي. بدلون «%2$s» ته د دې لنډلارې اوسنۍ کیلي ورکوي، یا لغوه کړئ چې هېڅ بدل نه شي.</string>
+    <string name="dejavu_shortcuts_current">اوسنی: %1$s</string>
+    <string name="dejavu_shortcuts_text_keys">د متن ځایونه او وېب پاڼې تر هغه چې فوکس ولري %1$s ځان سره ساتي.</string>
+    <string name="dejavu_shortcuts_none">هېڅ</string>
+    <string name="dejavu_shortcuts_save">خوندي کول</string>
+    <string name="dejavu_shortcuts_swap">بدلون</string>
+    <string name="dejavu_shortcuts_clear">پاکول</string>
+    <string name="dejavu_shortcuts_reset">تلواله ته بیا ټاکل</string>
+    <string name="dejavu_shortcut_next_tab">بله ټب</string>
+    <string name="dejavu_shortcut_previous_tab">مخکینۍ ټب</string>
+    <string name="dejavu_shortcut_new_tab">نوې ټب</string>
+    <string name="dejavu_shortcut_close_tab">ټب بندول</string>
+    <string name="dejavu_shortcut_restore_tab">تړلې ټب بیرته راوړل</string>
+    <string name="dejavu_shortcut_address_bar">پته سمول</string>
+    <string name="dejavu_shortcut_reload">پاڼه بیا راوړل</string>
+    <string name="dejavu_shortcut_tab_n">ټب %1$d ته تلل</string>
+    <string name="dejavu_shortcut_last_tab">وروستۍ ټب ته تلل</string>
 </resources>

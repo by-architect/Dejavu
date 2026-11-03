@@ -543,4 +543,25 @@
     <string name="dejavu_settings_tips_summary">Mostra suggerimenti sui gesti nascosti, come tenere premuto «Nuova scheda»</string>
     <string name="dejavu_new">Novità</string>
     <string name="dejavu_menu_customize_reader_view">Personalizza modalità lettura</string>
+    <string name="dejavu_settings_shortcuts">Scorciatoie da tastiera</string>
+    <string name="dejavu_settings_shortcuts_summary">Cambia i tasti delle scorciatoie per una tastiera fisica</string>
+    <string name="dejavu_shortcuts_hint">Tocca una scorciatoia per assegnarle un altro tasto. Le scorciatoie richiedono Ctrl o Alt.</string>
+    <string name="dejavu_shortcuts_press">Premi la nuova combinazione di tasti.</string>
+    <string name="dejavu_shortcuts_taken">%1$s è già usato da “%2$s”. Scambia assegna a “%2$s” il tasto attuale di questa scorciatoia, oppure annulla per non cambiare nulla.</string>
+    <string name="dejavu_shortcuts_current">Attuale: %1$s</string>
+    <string name="dejavu_shortcuts_text_keys">I campi di testo e le pagine web mantengono %1$s finché hanno il focus.</string>
+    <string name="dejavu_shortcuts_none">Nessuna</string>
+    <string name="dejavu_shortcuts_save">Salva</string>
+    <string name="dejavu_shortcuts_swap">Scambia</string>
+    <string name="dejavu_shortcuts_clear">Cancella</string>
+    <string name="dejavu_shortcuts_reset">Ripristina predefinito</string>
+    <string name="dejavu_shortcut_next_tab">Scheda successiva</string>
+    <string name="dejavu_shortcut_previous_tab">Scheda precedente</string>
+    <string name="dejavu_shortcut_new_tab">Nuova scheda</string>
+    <string name="dejavu_shortcut_close_tab">Chiudi scheda</string>
+    <string name="dejavu_shortcut_restore_tab">Ripristina scheda chiusa</string>
+    <string name="dejavu_shortcut_address_bar">Modifica indirizzo</string>
+    <string name="dejavu_shortcut_reload">Ricarica pagina</string>
+    <string name="dejavu_shortcut_tab_n">Vai alla scheda %1$d</string>
+    <string name="dejavu_shortcut_last_tab">Vai all’ultima scheda</string>
 </resources>

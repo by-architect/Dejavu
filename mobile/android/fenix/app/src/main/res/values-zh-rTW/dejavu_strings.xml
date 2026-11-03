@@ -535,4 +535,25 @@
     <string name="dejavu_settings_tips_summary">顯示隱藏手勢的相關提示，例如長按「開新分頁」</string>
     <string name="dejavu_new">新功能</string>
     <string name="dejavu_menu_customize_reader_view">自訂閱讀畫面</string>
+    <string name="dejavu_settings_shortcuts">鍵盤快速鍵</string>
+    <string name="dejavu_settings_shortcuts_summary">變更實體鍵盤快速鍵的按鍵</string>
+    <string name="dejavu_shortcuts_hint">點擊快速鍵即可指定其他按鍵。快速鍵需要 Ctrl 或 Alt。</string>
+    <string name="dejavu_shortcuts_press">請按下新的按鍵組合。</string>
+    <string name="dejavu_shortcuts_taken">%1$s 已被「%2$s」使用。交換會將此快速鍵目前的按鍵給「%2$s」，取消則不做任何變更。</string>
+    <string name="dejavu_shortcuts_current">目前：%1$s</string>
+    <string name="dejavu_shortcuts_text_keys">文字欄位與網頁在取得焦點時會保留 %1$s。</string>
+    <string name="dejavu_shortcuts_none">無</string>
+    <string name="dejavu_shortcuts_save">儲存</string>
+    <string name="dejavu_shortcuts_swap">交換</string>
+    <string name="dejavu_shortcuts_clear">清除</string>
+    <string name="dejavu_shortcuts_reset">重設為預設值</string>
+    <string name="dejavu_shortcut_next_tab">下一個分頁</string>
+    <string name="dejavu_shortcut_previous_tab">上一個分頁</string>
+    <string name="dejavu_shortcut_new_tab">開新分頁</string>
+    <string name="dejavu_shortcut_close_tab">關閉分頁</string>
+    <string name="dejavu_shortcut_restore_tab">還原已關閉的分頁</string>
+    <string name="dejavu_shortcut_address_bar">編輯網址</string>
+    <string name="dejavu_shortcut_reload">重新載入頁面</string>
+    <string name="dejavu_shortcut_tab_n">前往分頁 %1$d</string>
+    <string name="dejavu_shortcut_last_tab">前往最後一個分頁</string>
 </resources>

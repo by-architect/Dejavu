@@ -543,4 +543,25 @@
     <string name="dejavu_settings_tips_summary">پیشاندانی ئامۆژگاری دەربارەی جوڵاندنە شاراوەکان، وەک ڕاگرتنی «بازدەری نوێ»</string>
     <string name="dejavu_new">نوێ</string>
     <string name="dejavu_menu_customize_reader_view">شێوازی دۆخی خوێندنەوە دەستکاریبکە</string>
+    <string name="dejavu_settings_shortcuts">کورتبڕەکانی تەختەکلیل</string>
+    <string name="dejavu_settings_shortcuts_summary">کلیلەکانی کورتبڕەکان بگۆڕە بۆ تەختەکلیلی ڕەقەکاڵا</string>
+    <string name="dejavu_shortcuts_hint">دەست لە کورتبڕێک بدە بۆ ئەوەی کلیلێکی تری پێ بدەیت. کورتبڕەکان Ctrl یان Alt-یان پێویستە.</string>
+    <string name="dejavu_shortcuts_press">تێکەڵەی کلیلی نوێ دابگرە.</string>
+    <string name="dejavu_shortcuts_taken">%1$s پێشتر لەلایەن «%2$s» بەکارهاتووە. ئاڵوگۆڕ کلیلی ئێستای ئەم کورتبڕە دەداتە «%2$s»، یان هەڵیبوەشێنەوە بۆ ئەوەی هیچ نەگۆڕێت.</string>
+    <string name="dejavu_shortcuts_current">ئێستا: %1$s</string>
+    <string name="dejavu_shortcuts_text_keys">خانەکانی دەق و پەڕە وێبەکان %1$s بۆ خۆیان دەهێڵنەوە کاتێک فۆکەسیان لەسەرە.</string>
+    <string name="dejavu_shortcuts_none">هیچ</string>
+    <string name="dejavu_shortcuts_save">پاشەکەوت</string>
+    <string name="dejavu_shortcuts_swap">ئاڵوگۆڕ</string>
+    <string name="dejavu_shortcuts_clear">پاککردنەوە</string>
+    <string name="dejavu_shortcuts_reset">گەڕاندنەوە بۆ بنەڕەت</string>
+    <string name="dejavu_shortcut_next_tab">بازدەری دواتر</string>
+    <string name="dejavu_shortcut_previous_tab">بازدەری پێشوو</string>
+    <string name="dejavu_shortcut_new_tab">بازدەری نوێ</string>
+    <string name="dejavu_shortcut_close_tab">داخستنی بازدەر</string>
+    <string name="dejavu_shortcut_restore_tab">گەڕاندنەوەی بازدەری داخراو</string>
+    <string name="dejavu_shortcut_address_bar">دەستکاریکردنی ناونیشان</string>
+    <string name="dejavu_shortcut_reload">بارکردنەوەی پەڕە</string>
+    <string name="dejavu_shortcut_tab_n">بڕۆ بۆ بازدەری %1$d</string>
+    <string name="dejavu_shortcut_last_tab">بڕۆ بۆ دوایین بازدەر</string>
 </resources>

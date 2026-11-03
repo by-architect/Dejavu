@@ -543,4 +543,25 @@
     <string name="dejavu_settings_tips_summary">Ipakita ang mga tip bahin sa tinagong mga gesture, sama sa pagpugong sa “Bag-o nga Tab”</string>
     <string name="dejavu_new">Bag-o</string>
     <string name="dejavu_menu_customize_reader_view">i-Customize ang reader view</string>
+    <string name="dejavu_settings_shortcuts">Mga shortcut sa keyboard</string>
+    <string name="dejavu_settings_shortcuts_summary">Usba ang mga yawe sa mga shortcut para sa pisikal nga keyboard</string>
+    <string name="dejavu_shortcuts_hint">I-tap ang usa ka shortcut aron hatagan kini og laing yawe. Ang mga shortcut nagkinahanglan og Ctrl o Alt.</string>
+    <string name="dejavu_shortcuts_press">Pindota ang bag-ong kombinasyon sa mga yawe.</string>
+    <string name="dejavu_shortcuts_taken">Ang %1$s gigamit na sa \"%2$s\". Ang Ilisan mohatag sa \"%2$s\" sa karon nga yawe niini nga shortcut, o kanselaha aron walay mausab.</string>
+    <string name="dejavu_shortcuts_current">Karon: %1$s</string>
+    <string name="dejavu_shortcuts_text_keys">Ang mga text field ug web page magpabilin sa %1$s samtang naa kanila ang focus.</string>
+    <string name="dejavu_shortcuts_none">Wala</string>
+    <string name="dejavu_shortcuts_save">I-save</string>
+    <string name="dejavu_shortcuts_swap">Ilisan</string>
+    <string name="dejavu_shortcuts_clear">Hawani</string>
+    <string name="dejavu_shortcuts_reset">Ibalik sa default</string>
+    <string name="dejavu_shortcut_next_tab">Sunod nga tab</string>
+    <string name="dejavu_shortcut_previous_tab">Miaging tab</string>
+    <string name="dejavu_shortcut_new_tab">Bag-ong tab</string>
+    <string name="dejavu_shortcut_close_tab">Isira ang tab</string>
+    <string name="dejavu_shortcut_restore_tab">Ibalik ang gisirhan nga tab</string>
+    <string name="dejavu_shortcut_address_bar">Usba ang address</string>
+    <string name="dejavu_shortcut_reload">I-reload ang panid</string>
+    <string name="dejavu_shortcut_tab_n">Adto sa tab %1$d</string>
+    <string name="dejavu_shortcut_last_tab">Adto sa katapusang tab</string>
 </resources>

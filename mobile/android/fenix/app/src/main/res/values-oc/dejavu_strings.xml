@@ -543,4 +543,25 @@
     <string name="dejavu_settings_tips_summary">Afichar de conselhs suls gèstes amagats, coma téner quichat Onglet novèl</string>
     <string name="dejavu_new">Novèl</string>
     <string name="dejavu_menu_customize_reader_view">Personalizar la vista de lectura</string>
+    <string name="dejavu_settings_shortcuts">Acorchis de clavièr</string>
+    <string name="dejavu_settings_shortcuts_summary">Cambiar las tòcas dels acorchis per un clavièr fisic</string>
+    <string name="dejavu_shortcuts_hint">Tocatz un acorchi per li donar una autra tòca. Los acorchis an besonh de Ctrl o Alt.</string>
+    <string name="dejavu_shortcuts_press">Quichatz la combinason novèla de tòcas.</string>
+    <string name="dejavu_shortcuts_taken">%1$s es ja utilizat per « %2$s ». Escambiar dona a « %2$s » la tòca actuala d’aqueste acorchi, o anullatz per cambiar pas res.</string>
+    <string name="dejavu_shortcuts_current">Actual : %1$s</string>
+    <string name="dejavu_shortcuts_text_keys">Los camps de tèxt e las paginas web gardan %1$s tant qu’an lo focus.</string>
+    <string name="dejavu_shortcuts_none">Cap</string>
+    <string name="dejavu_shortcuts_save">Enregistrar</string>
+    <string name="dejavu_shortcuts_swap">Escambiar</string>
+    <string name="dejavu_shortcuts_clear">Escafar</string>
+    <string name="dejavu_shortcuts_reset">Restablir per defaut</string>
+    <string name="dejavu_shortcut_next_tab">Onglet seguent</string>
+    <string name="dejavu_shortcut_previous_tab">Onglet precedent</string>
+    <string name="dejavu_shortcut_new_tab">Onglet novèl</string>
+    <string name="dejavu_shortcut_close_tab">Tampar l’onglet</string>
+    <string name="dejavu_shortcut_restore_tab">Restablir l’onglet tampat</string>
+    <string name="dejavu_shortcut_address_bar">Modificar l’adreça</string>
+    <string name="dejavu_shortcut_reload">Recargar la pagina</string>
+    <string name="dejavu_shortcut_tab_n">Anar a l’onglet %1$d</string>
+    <string name="dejavu_shortcut_last_tab">Anar al darrièr onglet</string>
 </resources>

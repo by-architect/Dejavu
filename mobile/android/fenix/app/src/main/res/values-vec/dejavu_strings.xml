@@ -551,4 +551,25 @@
     <string name="dejavu_settings_tips_summary">Mostra consegi so i gesti sconti, come tegner strucà Nova scheda</string>
     <string name="dejavu_new">Novo</string>
     <string name="dejavu_menu_customize_reader_view">Personalixa ła modalità ƚetura</string>
+    <string name="dejavu_settings_shortcuts">Scurtadòri de tastiera</string>
+    <string name="dejavu_settings_shortcuts_summary">Canbia i tasti dei scurtadòri par na tastiera fìxica</string>
+    <string name="dejavu_shortcuts_hint">Toca un scurtadòr par darghe n\'altro tasto. I scurtadòri ga bizogno de Ctrl o Alt.</string>
+    <string name="dejavu_shortcuts_press">Struca ła nova conbinasion de tasti.</string>
+    <string name="dejavu_shortcuts_taken">%1$s el xe xà doparà da “%2$s”. Scanbia el ghe dà a “%2$s” el tasto de \'sto scurtadòr, o anuła par no canbiar gnente.</string>
+    <string name="dejavu_shortcuts_current">Atuałe: %1$s</string>
+    <string name="dejavu_shortcuts_text_keys">I canpi de testo e łe pàxene web i tien %1$s fin che i ga el focus.</string>
+    <string name="dejavu_shortcuts_none">Nisun</string>
+    <string name="dejavu_shortcuts_save">Salva</string>
+    <string name="dejavu_shortcuts_swap">Scanbia</string>
+    <string name="dejavu_shortcuts_clear">Scancèła</string>
+    <string name="dejavu_shortcuts_reset">Ripristina el predefinìo</string>
+    <string name="dejavu_shortcut_next_tab">Scheda drìo</string>
+    <string name="dejavu_shortcut_previous_tab">Scheda prima</string>
+    <string name="dejavu_shortcut_new_tab">Scheda nova</string>
+    <string name="dejavu_shortcut_close_tab">Sara scheda</string>
+    <string name="dejavu_shortcut_restore_tab">Ripristina scheda sarà</string>
+    <string name="dejavu_shortcut_address_bar">Canbia indirizo</string>
+    <string name="dejavu_shortcut_reload">Recarga pàxena</string>
+    <string name="dejavu_shortcut_tab_n">Va a ła scheda %1$d</string>
+    <string name="dejavu_shortcut_last_tab">Va a l\'ùltima scheda</string>
 </resources>

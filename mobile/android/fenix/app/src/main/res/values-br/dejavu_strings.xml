@@ -567,4 +567,25 @@
     <string name="dejavu_settings_tips_summary">Diskouez alioù diwar-benn ar jestroù kuzh, evel derc’hel war “Ivinell nevez”</string>
     <string name="dejavu_new">Nevez</string>
     <string name="dejavu_menu_customize_reader_view">Personelaat ar mod lenn</string>
+    <string name="dejavu_settings_shortcuts">Berradennoù klavier</string>
+    <string name="dejavu_settings_shortcuts_summary">Kemmañ alc\'hwezioù ar berradennoù evit ur c\'hlavier fizikel</string>
+    <string name="dejavu_shortcuts_hint">Stokit ur verradenn evit reiñ un alc\'hwez all dezhi. Ret eo Ctrl pe Alt d\'ar berradennoù.</string>
+    <string name="dejavu_shortcuts_press">Pouezit war ar c\'hensturiadur alc\'hwezioù nevez.</string>
+    <string name="dejavu_shortcuts_taken">Implijet eo %1$s gant «%2$s» dija. Eskemm a ro da «%2$s» alc\'hwez a-vremañ ar verradenn-mañ, pe nullit evit kemm netra.</string>
+    <string name="dejavu_shortcuts_current">A-vremañ: %1$s</string>
+    <string name="dejavu_shortcuts_text_keys">Ar maeziennoù testenn hag ar pajennoù web a vir %1$s e-pad m\'emaint gant ar fokus.</string>
+    <string name="dejavu_shortcuts_none">Hini ebet</string>
+    <string name="dejavu_shortcuts_save">Enrollañ</string>
+    <string name="dejavu_shortcuts_swap">Eskemm</string>
+    <string name="dejavu_shortcuts_clear">Skarzhañ</string>
+    <string name="dejavu_shortcuts_reset">Adderaouekaat d\'an dre-ziouer</string>
+    <string name="dejavu_shortcut_next_tab">Ivinell da-heul</string>
+    <string name="dejavu_shortcut_previous_tab">Ivinell kent</string>
+    <string name="dejavu_shortcut_new_tab">Ivinell nevez</string>
+    <string name="dejavu_shortcut_close_tab">Serriñ an ivinell</string>
+    <string name="dejavu_shortcut_restore_tab">Assav an ivinell serret</string>
+    <string name="dejavu_shortcut_address_bar">Embann ar chomlec\'h</string>
+    <string name="dejavu_shortcut_reload">Adkargañ ar bajenn</string>
+    <string name="dejavu_shortcut_tab_n">Mont d\'an ivinell %1$d</string>
+    <string name="dejavu_shortcut_last_tab">Mont d\'an ivinell diwezhañ</string>
 </resources>

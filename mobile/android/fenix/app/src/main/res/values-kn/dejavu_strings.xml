@@ -543,4 +543,25 @@
     <string name="dejavu_settings_tips_summary">“ಹೊಸ ಟ್ಯಾಬ್” ಅನ್ನು ಒತ್ತಿ ಹಿಡಿಯುವಂತಹ ಮರೆಯಾದ ಸನ್ನೆಗಳ ಬಗ್ಗೆ ಸಲಹೆಗಳನ್ನು ತೋರಿಸು</string>
     <string name="dejavu_new">ಹೊಸದು</string>
     <string name="dejavu_menu_customize_reader_view">ಓದುಗರ ನೋಟವನ್ನು ಅಗತ್ಯಾನುಗುಣಗೊಳಿಸಿ</string>
+    <string name="dejavu_settings_shortcuts">ಕೀಬೋರ್ಡ್ ಶಾರ್ಟ್‌ಕಟ್‌ಗಳು</string>
+    <string name="dejavu_settings_shortcuts_summary">ಹಾರ್ಡ್‌ವೇರ್ ಕೀಬೋರ್ಡ್‌ಗಾಗಿ ಶಾರ್ಟ್‌ಕಟ್‌ಗಳ ಕೀಗಳನ್ನು ಬದಲಾಯಿಸಿ</string>
+    <string name="dejavu_shortcuts_hint">ಬೇರೆ ಕೀ ನೀಡಲು ಶಾರ್ಟ್‌ಕಟ್ ಅನ್ನು ಟ್ಯಾಪ್ ಮಾಡಿ. ಶಾರ್ಟ್‌ಕಟ್‌ಗಳಿಗೆ Ctrl ಅಥವಾ Alt ಬೇಕು.</string>
+    <string name="dejavu_shortcuts_press">ಹೊಸ ಕೀ ಸಂಯೋಜನೆಯನ್ನು ಒತ್ತಿರಿ.</string>
+    <string name="dejavu_shortcuts_taken">%1$s ಅನ್ನು ಈಗಾಗಲೇ «%2$s» ಬಳಸುತ್ತಿದೆ. ಅದಲುಬದಲು «%2$s» ಗೆ ಈ ಶಾರ್ಟ್‌ಕಟ್‌ನ ಪ್ರಸ್ತುತ ಕೀ ನೀಡುತ್ತದೆ, ಅಥವಾ ಏನನ್ನೂ ಬದಲಾಯಿಸದಿರಲು ರದ್ದುಮಾಡಿ.</string>
+    <string name="dejavu_shortcuts_current">ಪ್ರಸ್ತುತ: %1$s</string>
+    <string name="dejavu_shortcuts_text_keys">ಪಠ್ಯ ಕ್ಷೇತ್ರಗಳು ಮತ್ತು ಜಾಲಪುಟಗಳು ಫೋಕಸ್‌ನಲ್ಲಿರುವಾಗ %1$s ಅನ್ನು ಇಟ್ಟುಕೊಳ್ಳುತ್ತವೆ.</string>
+    <string name="dejavu_shortcuts_none">ಯಾವುದೂ ಇಲ್ಲ</string>
+    <string name="dejavu_shortcuts_save">ಉಳಿಸಿ</string>
+    <string name="dejavu_shortcuts_swap">ಅದಲುಬದಲು</string>
+    <string name="dejavu_shortcuts_clear">ತೆರವುಗೊಳಿಸಿ</string>
+    <string name="dejavu_shortcuts_reset">ಡೀಫಾಲ್ಟ್‌ಗೆ ಮರುಹೊಂದಿಸಿ</string>
+    <string name="dejavu_shortcut_next_tab">ಮುಂದಿನ ಟ್ಯಾಬ್</string>
+    <string name="dejavu_shortcut_previous_tab">ಹಿಂದಿನ ಟ್ಯಾಬ್</string>
+    <string name="dejavu_shortcut_new_tab">ಹೊಸ ಟ್ಯಾಬ್</string>
+    <string name="dejavu_shortcut_close_tab">ಟ್ಯಾಬ್ ಮುಚ್ಚಿ</string>
+    <string name="dejavu_shortcut_restore_tab">ಮುಚ್ಚಿದ ಟ್ಯಾಬ್ ಮರುಸ್ಥಾಪಿಸಿ</string>
+    <string name="dejavu_shortcut_address_bar">ವಿಳಾಸ ಸಂಪಾದಿಸಿ</string>
+    <string name="dejavu_shortcut_reload">ಪುಟವನ್ನು ಮರುಲೋಡ್ ಮಾಡಿ</string>
+    <string name="dejavu_shortcut_tab_n">ಟ್ಯಾಬ್ %1$d ಗೆ ಹೋಗಿ</string>
+    <string name="dejavu_shortcut_last_tab">ಕೊನೆಯ ಟ್ಯಾಬ್‌ಗೆ ಹೋಗಿ</string>
 </resources>

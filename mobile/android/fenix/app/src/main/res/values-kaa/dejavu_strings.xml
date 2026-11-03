@@ -543,4 +543,25 @@
     <string name="dejavu_settings_tips_summary">Jasırın háreketler haqqında keńeslerdi kórsetiw, mısalı «Jańa bet» túymesin basıp turıw</string>
     <string name="dejavu_new">Jańa</string>
     <string name="dejavu_menu_customize_reader_view">Oqıw kórinisin jeke sazlaw</string>
+    <string name="dejavu_settings_shortcuts">Klaviatura qısqa jolları</string>
+    <string name="dejavu_settings_shortcuts_summary">Fizikalıq klaviatura ushın qısqa jollardıń tuymelerin ózgertiń</string>
+    <string name="dejavu_shortcuts_hint">Basqa tuyme beriw ushın qısqa joldı basıń. Qısqa jollarǵa Ctrl yamasa Alt kerek.</string>
+    <string name="dejavu_shortcuts_press">Jańa tuymeler birikpesin basıń.</string>
+    <string name="dejavu_shortcuts_taken">%1$s «%2$s» tárepinen paydalanılıp atır. Almastırıw «%2$s»-qa usı qısqa joldıń házirgi tuymesin beredi, yamasa hesh nárseni ózgertpew ushın biykar etiń.</string>
+    <string name="dejavu_shortcuts_current">Házirgi: %1$s</string>
+    <string name="dejavu_shortcuts_text_keys">Tekst maydanları hám veb betler fokusta turǵanda %1$s olarda qaladı.</string>
+    <string name="dejavu_shortcuts_none">Hesh biri</string>
+    <string name="dejavu_shortcuts_save">Saqlaw</string>
+    <string name="dejavu_shortcuts_swap">Almastırıw</string>
+    <string name="dejavu_shortcuts_clear">Tazalaw</string>
+    <string name="dejavu_shortcuts_reset">Ádepkige qaytarıw</string>
+    <string name="dejavu_shortcut_next_tab">Keyingi bet</string>
+    <string name="dejavu_shortcut_previous_tab">Aldınǵı bet</string>
+    <string name="dejavu_shortcut_new_tab">Jańa bet</string>
+    <string name="dejavu_shortcut_close_tab">Betti jabıw</string>
+    <string name="dejavu_shortcut_restore_tab">Jabılǵan betti qayta tiklew</string>
+    <string name="dejavu_shortcut_address_bar">Mánzildi ózgertiw</string>
+    <string name="dejavu_shortcut_reload">Betti qayta júklew</string>
+    <string name="dejavu_shortcut_tab_n">%1$d-betke ótiw</string>
+    <string name="dejavu_shortcut_last_tab">Aqırǵı betke ótiw</string>
 </resources>

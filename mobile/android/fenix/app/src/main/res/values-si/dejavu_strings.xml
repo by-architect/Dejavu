@@ -543,4 +543,25 @@
     <string name="dejavu_settings_tips_summary">“නව පටිත්ත” තද කර අල්ලාගෙන සිටීම වැනි සැඟවුණු අභින පිළිබඳ ඉඟි පෙන්වන්න</string>
     <string name="dejavu_new">නව</string>
     <string name="dejavu_menu_customize_reader_view">කියවීමේ දැක්ම රිසිකරණය කරන්න</string>
+    <string name="dejavu_settings_shortcuts">යතුරුපුවරු කෙටිමං</string>
+    <string name="dejavu_settings_shortcuts_summary">දෘඩාංග යතුරුපුවරුවක් සඳහා කෙටිමංවල යතුරු වෙනස් කරන්න</string>
+    <string name="dejavu_shortcuts_hint">වෙනත් යතුරක් දීමට කෙටිමඟක් තට්ටු කරන්න. කෙටිමංවලට Ctrl හෝ Alt අවශ්‍යයි.</string>
+    <string name="dejavu_shortcuts_press">නව යතුරු සංයෝජනය ඔබන්න.</string>
+    <string name="dejavu_shortcuts_taken">%1$s දැනටමත් «%2$s» විසින් භාවිත කරයි. හුවමාරුව «%2$s» වෙත මෙම කෙටිමඟේ වත්මන් යතුර දෙයි, නැතහොත් කිසිවක් වෙනස් නොකිරීමට අවලංගු කරන්න.</string>
+    <string name="dejavu_shortcuts_current">වත්මන්: %1$s</string>
+    <string name="dejavu_shortcuts_text_keys">පෙළ ක්ෂේත්‍ර සහ වෙබ් පිටු නාභිගත වී ඇති විට %1$s තබා ගනී.</string>
+    <string name="dejavu_shortcuts_none">කිසිවක් නැත</string>
+    <string name="dejavu_shortcuts_save">සුරකින්න</string>
+    <string name="dejavu_shortcuts_swap">හුවමාරුව</string>
+    <string name="dejavu_shortcuts_clear">හිස් කරන්න</string>
+    <string name="dejavu_shortcuts_reset">පෙරනිමියට යළි සකසන්න</string>
+    <string name="dejavu_shortcut_next_tab">ඊළඟ පටිත්ත</string>
+    <string name="dejavu_shortcut_previous_tab">පෙර පටිත්ත</string>
+    <string name="dejavu_shortcut_new_tab">නව පටිත්ත</string>
+    <string name="dejavu_shortcut_close_tab">පටිත්ත වසන්න</string>
+    <string name="dejavu_shortcut_restore_tab">වැසූ පටිත්ත ප්‍රතිසාධනය</string>
+    <string name="dejavu_shortcut_address_bar">ලිපිනය සංස්කරණය</string>
+    <string name="dejavu_shortcut_reload">පිටුව යළි පූරණය</string>
+    <string name="dejavu_shortcut_tab_n">පටිත්ත %1$d වෙත යන්න</string>
+    <string name="dejavu_shortcut_last_tab">අවසන් පටිත්තට යන්න</string>
 </resources>

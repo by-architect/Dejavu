@@ -543,4 +543,25 @@
     <string name="dejavu_settings_tips_summary">Amosar conseyos sobre xestos anubríos, como caltener primíu «Llingüeta nueva»</string>
     <string name="dejavu_new">Nuevu</string>
     <string name="dejavu_menu_customize_reader_view">Personalizar la vista de llector</string>
+    <string name="dejavu_settings_shortcuts">Atayos del tecláu</string>
+    <string name="dejavu_settings_shortcuts_summary">Camuda les tecles de los atayos pa un tecláu físicu</string>
+    <string name="dejavu_shortcuts_hint">Toca un atayu pa da-y otra tecla. Los atayos precisen Ctrl o Alt.</string>
+    <string name="dejavu_shortcuts_press">Primi la combinación nueva de tecles.</string>
+    <string name="dejavu_shortcuts_taken">«%2$s» yá usa %1$s. Intercambiar da a «%2$s» la tecla actual d\'esti atayu, o encaboxa pa nun camudar nada.</string>
+    <string name="dejavu_shortcuts_current">Actual: %1$s</string>
+    <string name="dejavu_shortcuts_text_keys">Los campos de testu y les páxines web caltienen %1$s mentanto tienen el focu.</string>
+    <string name="dejavu_shortcuts_none">Nada</string>
+    <string name="dejavu_shortcuts_save">Guardar</string>
+    <string name="dejavu_shortcuts_swap">Intercambiar</string>
+    <string name="dejavu_shortcuts_clear">Llimpiar</string>
+    <string name="dejavu_shortcuts_reset">Reafitar al valor predetermináu</string>
+    <string name="dejavu_shortcut_next_tab">Llingüeta siguiente</string>
+    <string name="dejavu_shortcut_previous_tab">Llingüeta anterior</string>
+    <string name="dejavu_shortcut_new_tab">Llingüeta nueva</string>
+    <string name="dejavu_shortcut_close_tab">Zarrar la llingüeta</string>
+    <string name="dejavu_shortcut_restore_tab">Restaurar la llingüeta zarrada</string>
+    <string name="dejavu_shortcut_address_bar">Editar la direición</string>
+    <string name="dejavu_shortcut_reload">Recargar la páxina</string>
+    <string name="dejavu_shortcut_tab_n">Dir a la llingüeta %1$d</string>
+    <string name="dejavu_shortcut_last_tab">Dir a la última llingüeta</string>
 </resources>

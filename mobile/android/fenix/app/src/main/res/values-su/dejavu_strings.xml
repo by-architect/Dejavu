@@ -535,4 +535,25 @@
     <string name="dejavu_settings_tips_summary">Pintonkeun tips ngeunaan réngkak nu nyumput, saperti nahan “Tab Anyar”</string>
     <string name="dejavu_new">Anyar</string>
     <string name="dejavu_menu_customize_reader_view">Robah panémbong pamaca</string>
+    <string name="dejavu_settings_shortcuts">Potong kompas kibor</string>
+    <string name="dejavu_settings_shortcuts_summary">Robah kenop potong kompas pikeun kibor fisik</string>
+    <string name="dejavu_shortcuts_hint">Toél potong kompas pikeun méré kenop séjén. Potong kompas butuh Ctrl atawa Alt.</string>
+    <string name="dejavu_shortcuts_press">Pencét kombinasi kenop anyar.</string>
+    <string name="dejavu_shortcuts_taken">%1$s geus dipaké ku \"%2$s\". Tukeuran méré \"%2$s\" kenop ayeuna potong kompas ieu, atawa bolaykeun sangkan teu aya nu robah.</string>
+    <string name="dejavu_shortcuts_current">Ayeuna: %1$s</string>
+    <string name="dejavu_shortcuts_text_keys">Widang téks jeung kaca ramat ngajaga %1$s salila boga fokus.</string>
+    <string name="dejavu_shortcuts_none">Euweuh</string>
+    <string name="dejavu_shortcuts_save">Simpen</string>
+    <string name="dejavu_shortcuts_swap">Tukeuran</string>
+    <string name="dejavu_shortcuts_clear">Beresihan</string>
+    <string name="dejavu_shortcuts_reset">Setél deui ka baku</string>
+    <string name="dejavu_shortcut_next_tab">Tab salajengna</string>
+    <string name="dejavu_shortcut_previous_tab">Tab saméméhna</string>
+    <string name="dejavu_shortcut_new_tab">Tab anyar</string>
+    <string name="dejavu_shortcut_close_tab">Tutup tab</string>
+    <string name="dejavu_shortcut_restore_tab">Pulihkeun tab nu ditutup</string>
+    <string name="dejavu_shortcut_address_bar">Édit alamat</string>
+    <string name="dejavu_shortcut_reload">Muat deui kaca</string>
+    <string name="dejavu_shortcut_tab_n">Buka tab %1$d</string>
+    <string name="dejavu_shortcut_last_tab">Buka tab panungtung</string>
 </resources>

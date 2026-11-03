@@ -559,4 +559,25 @@
     <string name="dejavu_settings_tips_summary">Pokazki wó schowanych gestach pokazaś, na pś. dłujke tłocenje na „Nowy rejtarik“</string>
     <string name="dejavu_new">Nowy</string>
     <string name="dejavu_menu_customize_reader_view">Cytański naglěd pśiměriś</string>
+    <string name="dejavu_settings_shortcuts">Tastowe skrotconki</string>
+    <string name="dejavu_settings_shortcuts_summary">Tasty skrotconkow za hardwarowu tastaturu změniś</string>
+    <string name="dejavu_shortcuts_hint">Pótusniśo skrotconku, aby jej drugu tastu dał. Skrotconki trjebaju Ctrl abo Alt.</string>
+    <string name="dejavu_shortcuts_press">Tłocćo nowu kombinaciju tastow.</string>
+    <string name="dejavu_shortcuts_taken">%1$s se južo wót „%2$s“ wužywa. Wuměniś dajo „%2$s“ aktualnu tastu toś teje skrotconki, abo pśetergniśo, aby nic njezměnił.</string>
+    <string name="dejavu_shortcuts_current">Aktualna: %1$s</string>
+    <string name="dejavu_shortcuts_text_keys">Tekstowe póla a webboki %1$s wobchowaju, mjaztym až maju fokus.</string>
+    <string name="dejavu_shortcuts_none">Žedna</string>
+    <string name="dejavu_shortcuts_save">Składowaś</string>
+    <string name="dejavu_shortcuts_swap">Wuměniś</string>
+    <string name="dejavu_shortcuts_clear">Wótpóraś</string>
+    <string name="dejavu_shortcuts_reset">Na standard slědk stajiś</string>
+    <string name="dejavu_shortcut_next_tab">Pśiducy rejtarik</string>
+    <string name="dejavu_shortcut_previous_tab">Pjerwjejšny rejtarik</string>
+    <string name="dejavu_shortcut_new_tab">Nowy rejtarik</string>
+    <string name="dejavu_shortcut_close_tab">Rejtarik zacyniś</string>
+    <string name="dejavu_shortcut_restore_tab">Zacynjony rejtarik wótnowiś</string>
+    <string name="dejavu_shortcut_address_bar">Adresu wobźěłaś</string>
+    <string name="dejavu_shortcut_reload">Bok znowego zacytaś</string>
+    <string name="dejavu_shortcut_tab_n">K rejtarikoju %1$d</string>
+    <string name="dejavu_shortcut_last_tab">K slědnemu rejtarikoju</string>
 </resources>

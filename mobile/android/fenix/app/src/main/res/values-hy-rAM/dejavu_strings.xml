@@ -543,4 +543,25 @@
     <string name="dejavu_settings_tips_summary">Ցուցադրել հուշումներ թաքնված ժեստերի մասին, օրինակ՝ «Նոր ներդիր»֊ը պահելը</string>
     <string name="dejavu_new">Նոր</string>
     <string name="dejavu_menu_customize_reader_view">Հարմարեցնել ընթերցելու տեսքը</string>
+    <string name="dejavu_settings_shortcuts">Ստեղնաշարի դյուրանցումներ</string>
+    <string name="dejavu_settings_shortcuts_summary">Փոխել դյուրանցումների ստեղները ապարատային ստեղնաշարի համար</string>
+    <string name="dejavu_shortcuts_hint">Հպեք դյուրանցմանը՝ այլ ստեղն տալու համար։ Դյուրանցումներին պետք է Ctrl կամ Alt։</string>
+    <string name="dejavu_shortcuts_press">Սեղմեք ստեղների նոր համակցությունը։</string>
+    <string name="dejavu_shortcuts_taken">%1$s-ն արդեն օգտագործվում է «%2$s»-ի կողմից։ Փոխանակելը «%2$s»-ին կտա այս դյուրանցման ընթացիկ ստեղնը, կամ չեղարկեք՝ ոչինչ չփոխելու համար։</string>
+    <string name="dejavu_shortcuts_current">Ընթացիկ՝ %1$s</string>
+    <string name="dejavu_shortcuts_text_keys">Տեքստի դաշտերն ու վեբ էջերը պահում են %1$s-ը, քանի դեռ ֆոկուսում են։</string>
+    <string name="dejavu_shortcuts_none">Ոչ մեկը</string>
+    <string name="dejavu_shortcuts_save">Պահել</string>
+    <string name="dejavu_shortcuts_swap">Փոխանակել</string>
+    <string name="dejavu_shortcuts_clear">Մաքրել</string>
+    <string name="dejavu_shortcuts_reset">Վերակայել լռելյայնի</string>
+    <string name="dejavu_shortcut_next_tab">Հաջորդ ներդիր</string>
+    <string name="dejavu_shortcut_previous_tab">Նախորդ ներդիր</string>
+    <string name="dejavu_shortcut_new_tab">Նոր ներդիր</string>
+    <string name="dejavu_shortcut_close_tab">Փակել ներդիրը</string>
+    <string name="dejavu_shortcut_restore_tab">Վերականգնել փակված ներդիրը</string>
+    <string name="dejavu_shortcut_address_bar">Խմբագրել հասցեն</string>
+    <string name="dejavu_shortcut_reload">Վերաբեռնել էջը</string>
+    <string name="dejavu_shortcut_tab_n">Անցնել ներդիր %1$d</string>
+    <string name="dejavu_shortcut_last_tab">Անցնել վերջին ներդիր</string>
 </resources>

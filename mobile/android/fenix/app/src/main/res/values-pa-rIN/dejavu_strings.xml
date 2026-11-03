@@ -543,4 +543,25 @@
     <string name="dejavu_settings_tips_summary">“ਨਵੀਂ ਟੈਬ” ਨੂੰ ਦਬਾ ਕੇ ਰੱਖਣ ਵਰਗੇ ਲੁਕਵੇਂ ਇਸ਼ਾਰਿਆਂ ਬਾਰੇ ਸੁਝਾਅ ਦਿਖਾਓ</string>
     <string name="dejavu_new">ਨਵਾਂ</string>
     <string name="dejavu_menu_customize_reader_view">ਪੜ੍ਹਨ ਝਲਕ ਨੂੰ ਕਸਟਮਾਈਜ਼ ਕਰੋ</string>
+    <string name="dejavu_settings_shortcuts">ਕੀਬੋਰਡ ਸ਼ਾਰਟਕੱਟ</string>
+    <string name="dejavu_settings_shortcuts_summary">ਹਾਰਡਵੇਅਰ ਕੀਬੋਰਡ ਲਈ ਸ਼ਾਰਟਕੱਟਾਂ ਦੀਆਂ ਕੁੰਜੀਆਂ ਬਦਲੋ</string>
+    <string name="dejavu_shortcuts_hint">ਕਿਸੇ ਸ਼ਾਰਟਕੱਟ ਨੂੰ ਹੋਰ ਕੁੰਜੀ ਦੇਣ ਲਈ ਉਸ ਉੱਤੇ ਟੈਪ ਕਰੋ। ਸ਼ਾਰਟਕੱਟਾਂ ਨੂੰ Ctrl ਜਾਂ Alt ਚਾਹੀਦਾ ਹੈ।</string>
+    <string name="dejavu_shortcuts_press">ਨਵਾਂ ਕੁੰਜੀ ਮੇਲ ਦਬਾਓ।</string>
+    <string name="dejavu_shortcuts_taken">%1$s ਪਹਿਲਾਂ ਹੀ «%2$s» ਵੱਲੋਂ ਵਰਤਿਆ ਜਾ ਰਿਹਾ ਹੈ। ਅਦਲਾ-ਬਦਲੀ «%2$s» ਨੂੰ ਇਸ ਸ਼ਾਰਟਕੱਟ ਦੀ ਮੌਜੂਦਾ ਕੁੰਜੀ ਦਿੰਦੀ ਹੈ, ਜਾਂ ਕੁਝ ਨਾ ਬਦਲਣ ਲਈ ਰੱਦ ਕਰੋ।</string>
+    <string name="dejavu_shortcuts_current">ਮੌਜੂਦਾ: %1$s</string>
+    <string name="dejavu_shortcuts_text_keys">ਲਿਖਤ ਖੇਤਰ ਅਤੇ ਵੈੱਬ ਸਫ਼ੇ ਫੋਕਸ ਵਿੱਚ ਹੋਣ ਵੇਲੇ %1$s ਆਪਣੇ ਕੋਲ ਰੱਖਦੇ ਹਨ।</string>
+    <string name="dejavu_shortcuts_none">ਕੋਈ ਨਹੀਂ</string>
+    <string name="dejavu_shortcuts_save">ਸੰਭਾਲੋ</string>
+    <string name="dejavu_shortcuts_swap">ਅਦਲਾ-ਬਦਲੀ</string>
+    <string name="dejavu_shortcuts_clear">ਸਾਫ਼ ਕਰੋ</string>
+    <string name="dejavu_shortcuts_reset">ਮੂਲ ਉੱਤੇ ਰੀਸੈੱਟ ਕਰੋ</string>
+    <string name="dejavu_shortcut_next_tab">ਅਗਲੀ ਟੈਬ</string>
+    <string name="dejavu_shortcut_previous_tab">ਪਿਛਲੀ ਟੈਬ</string>
+    <string name="dejavu_shortcut_new_tab">ਨਵੀਂ ਟੈਬ</string>
+    <string name="dejavu_shortcut_close_tab">ਟੈਬ ਬੰਦ ਕਰੋ</string>
+    <string name="dejavu_shortcut_restore_tab">ਬੰਦ ਟੈਬ ਬਹਾਲ ਕਰੋ</string>
+    <string name="dejavu_shortcut_address_bar">ਪਤਾ ਸੋਧੋ</string>
+    <string name="dejavu_shortcut_reload">ਸਫ਼ਾ ਮੁੜ ਲੋਡ ਕਰੋ</string>
+    <string name="dejavu_shortcut_tab_n">ਟੈਬ %1$d ਉੱਤੇ ਜਾਓ</string>
+    <string name="dejavu_shortcut_last_tab">ਆਖਰੀ ਟੈਬ ਉੱਤੇ ਜਾਓ</string>
 </resources>

@@ -535,4 +535,25 @@
     <string name="dejavu_settings_tips_summary">Hiển thị mẹo về các cử chỉ ẩn, như nhấn giữ “Thẻ mới”</string>
     <string name="dejavu_new">Mới</string>
     <string name="dejavu_menu_customize_reader_view">Tùy chỉnh chế độ đọc sách</string>
+    <string name="dejavu_settings_shortcuts">Phím tắt bàn phím</string>
+    <string name="dejavu_settings_shortcuts_summary">Thay đổi phím của các phím tắt cho bàn phím vật lý</string>
+    <string name="dejavu_shortcuts_hint">Chạm vào một phím tắt để gán phím khác cho nó. Phím tắt cần Ctrl hoặc Alt.</string>
+    <string name="dejavu_shortcuts_press">Nhấn tổ hợp phím mới.</string>
+    <string name="dejavu_shortcuts_taken">%1$s đã được “%2$s” sử dụng. Hoán đổi sẽ gán cho “%2$s” phím hiện tại của phím tắt này, hoặc hủy để không thay đổi gì.</string>
+    <string name="dejavu_shortcuts_current">Hiện tại: %1$s</string>
+    <string name="dejavu_shortcuts_text_keys">Ô văn bản và trang web giữ %1$s khi chúng đang được chọn.</string>
+    <string name="dejavu_shortcuts_none">Không có</string>
+    <string name="dejavu_shortcuts_save">Lưu</string>
+    <string name="dejavu_shortcuts_swap">Hoán đổi</string>
+    <string name="dejavu_shortcuts_clear">Xóa</string>
+    <string name="dejavu_shortcuts_reset">Đặt lại mặc định</string>
+    <string name="dejavu_shortcut_next_tab">Thẻ tiếp theo</string>
+    <string name="dejavu_shortcut_previous_tab">Thẻ trước</string>
+    <string name="dejavu_shortcut_new_tab">Thẻ mới</string>
+    <string name="dejavu_shortcut_close_tab">Đóng thẻ</string>
+    <string name="dejavu_shortcut_restore_tab">Khôi phục thẻ đã đóng</string>
+    <string name="dejavu_shortcut_address_bar">Chỉnh sửa địa chỉ</string>
+    <string name="dejavu_shortcut_reload">Tải lại trang</string>
+    <string name="dejavu_shortcut_tab_n">Đi đến thẻ %1$d</string>
+    <string name="dejavu_shortcut_last_tab">Đi đến thẻ cuối cùng</string>
 </resources>

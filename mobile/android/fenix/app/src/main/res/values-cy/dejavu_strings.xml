@@ -575,4 +575,25 @@
     <string name="dejavu_settings_tips_summary">Dangos awgrymiadau am ystumiau cudd, fel dal Tab newydd</string>
     <string name="dejavu_new">Newydd</string>
     <string name="dejavu_menu_customize_reader_view">Cyfaddasu’r golwg darllenydd</string>
+    <string name="dejavu_settings_shortcuts">Llwybrau byr bysellfwrdd</string>
+    <string name="dejavu_settings_shortcuts_summary">Newid bysellau\'r llwybrau byr ar gyfer bysellfwrdd caledwedd</string>
+    <string name="dejavu_shortcuts_hint">Tapiwch lwybr byr i roi bysell arall iddo. Mae llwybrau byr angen Ctrl neu Alt.</string>
+    <string name="dejavu_shortcuts_press">Pwyswch y cyfuniad bysellau newydd.</string>
+    <string name="dejavu_shortcuts_taken">Mae %1$s eisoes yn cael ei ddefnyddio gan \"%2$s\". Mae Cyfnewid yn rhoi bysell gyfredol y llwybr byr hwn i \"%2$s\", neu diddymwch i newid dim.</string>
+    <string name="dejavu_shortcuts_current">Cyfredol: %1$s</string>
+    <string name="dejavu_shortcuts_text_keys">Mae meysydd testun a thudalennau gwe yn cadw %1$s tra bod ganddyn nhw\'r ffocws.</string>
+    <string name="dejavu_shortcuts_none">Dim</string>
+    <string name="dejavu_shortcuts_save">Cadw</string>
+    <string name="dejavu_shortcuts_swap">Cyfnewid</string>
+    <string name="dejavu_shortcuts_clear">Clirio</string>
+    <string name="dejavu_shortcuts_reset">Ailosod i\'r rhagosodiad</string>
+    <string name="dejavu_shortcut_next_tab">Tab nesaf</string>
+    <string name="dejavu_shortcut_previous_tab">Tab blaenorol</string>
+    <string name="dejavu_shortcut_new_tab">Tab newydd</string>
+    <string name="dejavu_shortcut_close_tab">Cau tab</string>
+    <string name="dejavu_shortcut_restore_tab">Adfer tab caeedig</string>
+    <string name="dejavu_shortcut_address_bar">Golygu\'r cyfeiriad</string>
+    <string name="dejavu_shortcut_reload">Ail-lwytho\'r dudalen</string>
+    <string name="dejavu_shortcut_tab_n">Mynd i dab %1$d</string>
+    <string name="dejavu_shortcut_last_tab">Mynd i\'r tab olaf</string>
 </resources>

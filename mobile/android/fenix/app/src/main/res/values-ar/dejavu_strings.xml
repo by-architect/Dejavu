@@ -575,4 +575,25 @@
     <string name="dejavu_settings_tips_summary">عرض نصائح عن الإيماءات المخفية، مثل الضغط مطولًا على «تبويب جديد»</string>
     <string name="dejavu_new">جديد</string>
     <string name="dejavu_menu_customize_reader_view">خصّص منظور القارئ</string>
+    <string name="dejavu_settings_shortcuts">اختصارات لوحة المفاتيح</string>
+    <string name="dejavu_settings_shortcuts_summary">غيّر مفاتيح الاختصارات للوحة مفاتيح فعلية</string>
+    <string name="dejavu_shortcuts_hint">انقر على اختصار لتعيين مفتاح آخر له. تحتاج الاختصارات إلى Ctrl أو Alt.</string>
+    <string name="dejavu_shortcuts_press">اضغط على تركيبة المفاتيح الجديدة.</string>
+    <string name="dejavu_shortcuts_taken">يستخدم «%2$s» بالفعل %1$s. يمنح التبديل «%2$s» المفتاح الحالي لهذا الاختصار، أو ألغِ لعدم تغيير أي شيء.</string>
+    <string name="dejavu_shortcuts_current">الحالي: %1$s</string>
+    <string name="dejavu_shortcuts_text_keys">تحتفظ حقول النص وصفحات الويب بـ %1$s أثناء التركيز عليها.</string>
+    <string name="dejavu_shortcuts_none">لا شيء</string>
+    <string name="dejavu_shortcuts_save">احفظ</string>
+    <string name="dejavu_shortcuts_swap">بدّل</string>
+    <string name="dejavu_shortcuts_clear">امسح</string>
+    <string name="dejavu_shortcuts_reset">استعد المبدئي</string>
+    <string name="dejavu_shortcut_next_tab">اللسان التالي</string>
+    <string name="dejavu_shortcut_previous_tab">اللسان السابق</string>
+    <string name="dejavu_shortcut_new_tab">لسان جديد</string>
+    <string name="dejavu_shortcut_close_tab">أغلق اللسان</string>
+    <string name="dejavu_shortcut_restore_tab">استعد اللسان المغلق</string>
+    <string name="dejavu_shortcut_address_bar">حرّر العنوان</string>
+    <string name="dejavu_shortcut_reload">أعد تحميل الصفحة</string>
+    <string name="dejavu_shortcut_tab_n">انتقل إلى اللسان %1$d</string>
+    <string name="dejavu_shortcut_last_tab">انتقل إلى آخر لسان</string>
 </resources>

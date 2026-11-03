@@ -543,4 +543,25 @@
     <string name="dejavu_settings_tips_summary">புதிய கீற்று பொத்தானை அழுத்திப் பிடிப்பது போன்ற மறைந்திருக்கும் சைகைகள் பற்றிய உதவிக்குறிப்புகளைக் காட்டு</string>
     <string name="dejavu_new">புதியது</string>
     <string name="dejavu_menu_customize_reader_view">வாசிப்பு தோற்றத்தைத் தனிப்பயனாக்கு</string>
+    <string name="dejavu_settings_shortcuts">விசைப்பலகை குறுக்குவழிகள்</string>
+    <string name="dejavu_settings_shortcuts_summary">வன்பொருள் விசைப்பலகைக்கான குறுக்குவழிகளின் விசைகளை மாற்றவும்</string>
+    <string name="dejavu_shortcuts_hint">வேறு விசையைத் தர குறுக்குவழியைத் தட்டவும். குறுக்குவழிகளுக்கு Ctrl அல்லது Alt தேவை.</string>
+    <string name="dejavu_shortcuts_press">புதிய விசைச் சேர்க்கையை அழுத்தவும்.</string>
+    <string name="dejavu_shortcuts_taken">%1$s ஏற்கனவே «%2$s» ஆல் பயன்படுத்தப்படுகிறது. இடமாற்று «%2$s»-க்கு இந்தக் குறுக்குவழியின் தற்போதைய விசையைத் தரும், அல்லது எதையும் மாற்றாமல் இருக்க ரத்துசெய்யவும்.</string>
+    <string name="dejavu_shortcuts_current">தற்போது: %1$s</string>
+    <string name="dejavu_shortcuts_text_keys">உரைப் புலங்களும் வலைப்பக்கங்களும் கவனத்தில் இருக்கும்போது %1$s-ஐ வைத்துக்கொள்கின்றன.</string>
+    <string name="dejavu_shortcuts_none">எதுவுமில்லை</string>
+    <string name="dejavu_shortcuts_save">சேமி</string>
+    <string name="dejavu_shortcuts_swap">இடமாற்று</string>
+    <string name="dejavu_shortcuts_clear">அழி</string>
+    <string name="dejavu_shortcuts_reset">இயல்புநிலைக்கு மீட்டமை</string>
+    <string name="dejavu_shortcut_next_tab">அடுத்த கீற்று</string>
+    <string name="dejavu_shortcut_previous_tab">முந்தைய கீற்று</string>
+    <string name="dejavu_shortcut_new_tab">புதிய கீற்று</string>
+    <string name="dejavu_shortcut_close_tab">கீற்றை மூடு</string>
+    <string name="dejavu_shortcut_restore_tab">மூடிய கீற்றை மீட்டெடு</string>
+    <string name="dejavu_shortcut_address_bar">முகவரியைத் திருத்து</string>
+    <string name="dejavu_shortcut_reload">பக்கத்தை மீளேற்று</string>
+    <string name="dejavu_shortcut_tab_n">கீற்று %1$d-க்குச் செல்</string>
+    <string name="dejavu_shortcut_last_tab">கடைசிக் கீற்றுக்குச் செல்</string>
 </resources>

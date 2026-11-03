@@ -543,4 +543,25 @@
     <string name="dejavu_settings_tips_summary">Monstrar consilios sur gestos celate, como tener pressate ‘Nove scheda’</string>
     <string name="dejavu_new">Nove</string>
     <string name="dejavu_menu_customize_reader_view">Personalisar le vista de lectura</string>
+    <string name="dejavu_settings_shortcuts">Accessos directe de claviero</string>
+    <string name="dejavu_settings_shortcuts_summary">Cambiar le claves del accessos directe pro un claviero physic</string>
+    <string name="dejavu_shortcuts_hint">Tocca un accesso directe pro dar le un altere clave. Accessos directe require Ctrl o Alt.</string>
+    <string name="dejavu_shortcuts_press">Preme le nove combination de claves.</string>
+    <string name="dejavu_shortcuts_taken">%1$s es jam usate per “%2$s”. Excambiar da a “%2$s” le clave actual de iste accesso directe, o cancella pro cambiar nihil.</string>
+    <string name="dejavu_shortcuts_current">Actual: %1$s</string>
+    <string name="dejavu_shortcuts_text_keys">Campos de texto e paginas web retene %1$s durante que illos ha le foco.</string>
+    <string name="dejavu_shortcuts_none">Nulle</string>
+    <string name="dejavu_shortcuts_save">Salvar</string>
+    <string name="dejavu_shortcuts_swap">Excambiar</string>
+    <string name="dejavu_shortcuts_clear">Rader</string>
+    <string name="dejavu_shortcuts_reset">Reinitialisar al predefinite</string>
+    <string name="dejavu_shortcut_next_tab">Scheda sequente</string>
+    <string name="dejavu_shortcut_previous_tab">Scheda precedente</string>
+    <string name="dejavu_shortcut_new_tab">Nove scheda</string>
+    <string name="dejavu_shortcut_close_tab">Clauder scheda</string>
+    <string name="dejavu_shortcut_restore_tab">Restaurar scheda claudite</string>
+    <string name="dejavu_shortcut_address_bar">Modificar adresse</string>
+    <string name="dejavu_shortcut_reload">Recargar pagina</string>
+    <string name="dejavu_shortcut_tab_n">Ir al scheda %1$d</string>
+    <string name="dejavu_shortcut_last_tab">Ir al ultime scheda</string>
 </resources>

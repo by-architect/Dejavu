@@ -543,4 +543,25 @@
     <string name="dejavu_settings_tips_summary">Mussar cussegls davart gests zuppads, sco tegnair smatgà Nov tab</string>
     <string name="dejavu_new">Nov</string>
     <string name="dejavu_menu_customize_reader_view">Persunalisar la vista da lectura</string>
+    <string name="dejavu_settings_shortcuts">Cumbinaziuns da tastas</string>
+    <string name="dejavu_settings_shortcuts_summary">Midar las tastas da las cumbinaziuns per ina tastatura fisica</string>
+    <string name="dejavu_shortcuts_hint">Tutga ina cumbinaziun per la dar in\'autra tasta. Cumbinaziuns dovran Ctrl u Alt.</string>
+    <string name="dejavu_shortcuts_press">Smatga la nova cumbinaziun da tastas.</string>
+    <string name="dejavu_shortcuts_taken">%1$s vegn gia duvrà da «%2$s». Barattar dat a «%2$s» la tasta actuala da questa cumbinaziun, u interrumpa per midar nagut.</string>
+    <string name="dejavu_shortcuts_current">Actual: %1$s</string>
+    <string name="dejavu_shortcuts_text_keys">Champs da text e paginas d\'internet tegnan %1$s uschè ditg ch\'els han il focus.</string>
+    <string name="dejavu_shortcuts_none">Nagina</string>
+    <string name="dejavu_shortcuts_save">Memorisar</string>
+    <string name="dejavu_shortcuts_swap">Barattar</string>
+    <string name="dejavu_shortcuts_clear">Stizzar</string>
+    <string name="dejavu_shortcuts_reset">Restaurar la predefiniziun</string>
+    <string name="dejavu_shortcut_next_tab">Proxim tab</string>
+    <string name="dejavu_shortcut_previous_tab">Tab precedent</string>
+    <string name="dejavu_shortcut_new_tab">Nov tab</string>
+    <string name="dejavu_shortcut_close_tab">Serrar il tab</string>
+    <string name="dejavu_shortcut_restore_tab">Restaurar il tab serrà</string>
+    <string name="dejavu_shortcut_address_bar">Modifitgar l\'adressa</string>
+    <string name="dejavu_shortcut_reload">Rechargiar la pagina</string>
+    <string name="dejavu_shortcut_tab_n">Ir al tab %1$d</string>
+    <string name="dejavu_shortcut_last_tab">Ir al davos tab</string>
 </resources>

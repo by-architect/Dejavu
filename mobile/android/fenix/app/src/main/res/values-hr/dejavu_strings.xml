@@ -551,4 +551,25 @@
     <string name="dejavu_settings_tips_summary">Prikaži savjete o skrivenim gestama, poput zadržavanja „Nova kartica“</string>
     <string name="dejavu_new">Novo</string>
     <string name="dejavu_menu_customize_reader_view">Prilagodi prikaz čitača</string>
+    <string name="dejavu_settings_shortcuts">Tipkovnički prečaci</string>
+    <string name="dejavu_settings_shortcuts_summary">Promijeni tipke prečaca za fizičku tipkovnicu</string>
+    <string name="dejavu_shortcuts_hint">Dodirni prečac kako bi mu dodijelio/la drugu tipku. Prečaci trebaju Ctrl ili Alt.</string>
+    <string name="dejavu_shortcuts_press">Pritisni novu kombinaciju tipki.</string>
+    <string name="dejavu_shortcuts_taken">%1$s već koristi „%2$s”. Zamijeni daje „%2$s” trenutačnu tipku ovog prečaca, ili odustani da se ništa ne promijeni.</string>
+    <string name="dejavu_shortcuts_current">Trenutačno: %1$s</string>
+    <string name="dejavu_shortcuts_text_keys">Tekstualna polja i web stranice zadržavaju %1$s dok su u fokusu.</string>
+    <string name="dejavu_shortcuts_none">Nijedan</string>
+    <string name="dejavu_shortcuts_save">Spremi</string>
+    <string name="dejavu_shortcuts_swap">Zamijeni</string>
+    <string name="dejavu_shortcuts_clear">Izbriši</string>
+    <string name="dejavu_shortcuts_reset">Vrati na zadano</string>
+    <string name="dejavu_shortcut_next_tab">Sljedeća kartica</string>
+    <string name="dejavu_shortcut_previous_tab">Prethodna kartica</string>
+    <string name="dejavu_shortcut_new_tab">Nova kartica</string>
+    <string name="dejavu_shortcut_close_tab">Zatvori karticu</string>
+    <string name="dejavu_shortcut_restore_tab">Vrati zatvorenu karticu</string>
+    <string name="dejavu_shortcut_address_bar">Uredi adresu</string>
+    <string name="dejavu_shortcut_reload">Ponovo učitaj stranicu</string>
+    <string name="dejavu_shortcut_tab_n">Idi na karticu %1$d</string>
+    <string name="dejavu_shortcut_last_tab">Idi na zadnju karticu</string>
 </resources>

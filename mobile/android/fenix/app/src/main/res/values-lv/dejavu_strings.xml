@@ -551,4 +551,25 @@
     <string name="dejavu_settings_tips_summary">Rādīt padomus par slēptiem žestiem, piemēram, pogas Jauna cilne turēšanu</string>
     <string name="dejavu_new">Jaunums</string>
     <string name="dejavu_menu_customize_reader_view">Pielāgot lasītāja režīmu</string>
+    <string name="dejavu_settings_shortcuts">Tastatūras īsinājumtaustiņi</string>
+    <string name="dejavu_settings_shortcuts_summary">Mainīt īsinājumtaustiņus fiziskai tastatūrai</string>
+    <string name="dejavu_shortcuts_hint">Pieskarieties īsinājumam, lai piešķirtu tam citu taustiņu. Īsinājumiem vajag Ctrl vai Alt.</string>
+    <string name="dejavu_shortcuts_press">Nospiediet jauno taustiņu kombināciju.</string>
+    <string name="dejavu_shortcuts_taken">%1$s jau izmanto “%2$s”. Apmainīt piešķirs “%2$s” šī īsinājuma pašreizējo taustiņu, vai atceliet, lai neko nemainītu.</string>
+    <string name="dejavu_shortcuts_current">Pašreizējais: %1$s</string>
+    <string name="dejavu_shortcuts_text_keys">Teksta lauki un tīmekļa lapas patur %1$s, kamēr tiem ir fokuss.</string>
+    <string name="dejavu_shortcuts_none">Nav</string>
+    <string name="dejavu_shortcuts_save">Saglabāt</string>
+    <string name="dejavu_shortcuts_swap">Apmainīt</string>
+    <string name="dejavu_shortcuts_clear">Notīrīt</string>
+    <string name="dejavu_shortcuts_reset">Atjaunot noklusējumu</string>
+    <string name="dejavu_shortcut_next_tab">Nākamā cilne</string>
+    <string name="dejavu_shortcut_previous_tab">Iepriekšējā cilne</string>
+    <string name="dejavu_shortcut_new_tab">Jauna cilne</string>
+    <string name="dejavu_shortcut_close_tab">Aizvērt cilni</string>
+    <string name="dejavu_shortcut_restore_tab">Atjaunot aizvērto cilni</string>
+    <string name="dejavu_shortcut_address_bar">Rediģēt adresi</string>
+    <string name="dejavu_shortcut_reload">Pārlādēt lapu</string>
+    <string name="dejavu_shortcut_tab_n">Pāriet uz cilni %1$d</string>
+    <string name="dejavu_shortcut_last_tab">Pāriet uz pēdējo cilni</string>
 </resources>

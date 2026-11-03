@@ -575,4 +575,25 @@
     <string name="dejavu_settings_tips_summary">Diskwedhes kussulyow a-dro dhe wayansow kudh, kepar ha synsy “Tab Nowyth”</string>
     <string name="dejavu_new">Nowydh</string>
     <string name="dejavu_menu_customize_reader_view">Chanjya an gwel redya</string>
+    <string name="dejavu_settings_shortcuts">Berrfordhow bysworrdh</string>
+    <string name="dejavu_settings_shortcuts_summary">Chanjya alhwedhow an berrfordhow rag bysworrdh fisek</string>
+    <string name="dejavu_shortcuts_hint">Tava berrfordh rag ri dhodho alhwedh aral. Berrfordhow a\'s teves edhom a Ctrl po Alt.</string>
+    <string name="dejavu_shortcuts_press">Gwask an kesunyans alhwedhow nowydh.</string>
+    <string name="dejavu_shortcuts_taken">Yma %1$s ow pos usys gans \"%2$s\" seulabrys. Keskeschanj a re dhe \"%2$s\" alhwedh a-lemmyn an berrfordh ma, po hedh rag chanjya travydh.</string>
+    <string name="dejavu_shortcuts_current">A-lemmyn: %1$s</string>
+    <string name="dejavu_shortcuts_text_keys">Parkow tekst ha folennow gwias a with %1$s hedre vo an fokus gansa.</string>
+    <string name="dejavu_shortcuts_none">Travydh</string>
+    <string name="dejavu_shortcuts_save">Gwitha</string>
+    <string name="dejavu_shortcuts_swap">Keskeschanj</string>
+    <string name="dejavu_shortcuts_clear">Klerhe</string>
+    <string name="dejavu_shortcuts_reset">Dasselya dhe\'n defowt</string>
+    <string name="dejavu_shortcut_next_tab">Tab nessa</string>
+    <string name="dejavu_shortcut_previous_tab">Tab kyns</string>
+    <string name="dejavu_shortcut_new_tab">Tab nowydh</string>
+    <string name="dejavu_shortcut_close_tab">Degea tab</string>
+    <string name="dejavu_shortcut_restore_tab">Daskorr tab degeys</string>
+    <string name="dejavu_shortcut_address_bar">Golegi trigva</string>
+    <string name="dejavu_shortcut_reload">Dasskarga folen</string>
+    <string name="dejavu_shortcut_tab_n">Mos dhe dab %1$d</string>
+    <string name="dejavu_shortcut_last_tab">Mos dhe\'n tab diwettha</string>
 </resources>

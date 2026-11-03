@@ -543,4 +543,25 @@
     <string name="dejavu_settings_tips_summary">Montri konsilojn pri kaŝitaj gestoj, ekzemple teni “Nova langeto”</string>
     <string name="dejavu_new">Nova</string>
     <string name="dejavu_menu_customize_reader_view">Personecigi la legilan vidon</string>
+    <string name="dejavu_settings_shortcuts">Klavaraj ŝparvojoj</string>
+    <string name="dejavu_settings_shortcuts_summary">Ŝanĝi la klavojn de la ŝparvojoj por aparatara klavaro</string>
+    <string name="dejavu_shortcuts_hint">Tuŝetu ŝparvojon por doni al ĝi alian klavon. Ŝparvojoj bezonas Ctrl aŭ Alt.</string>
+    <string name="dejavu_shortcuts_press">Premu la novan klavkombinon.</string>
+    <string name="dejavu_shortcuts_taken">%1$s jam estas uzata de “%2$s”. Interŝanĝi donas al “%2$s” la nunan klavon de tiu ĉi ŝparvojo, aŭ nuligu por ŝanĝi nenion.</string>
+    <string name="dejavu_shortcuts_current">Nuna: %1$s</string>
+    <string name="dejavu_shortcuts_text_keys">Tekstaj kampoj kaj retpaĝoj konservas %1$s dum ili havas la fokuson.</string>
+    <string name="dejavu_shortcuts_none">Neniu</string>
+    <string name="dejavu_shortcuts_save">Konservi</string>
+    <string name="dejavu_shortcuts_swap">Interŝanĝi</string>
+    <string name="dejavu_shortcuts_clear">Viŝi</string>
+    <string name="dejavu_shortcuts_reset">Reiri al normo</string>
+    <string name="dejavu_shortcut_next_tab">Sekva langeto</string>
+    <string name="dejavu_shortcut_previous_tab">Antaŭa langeto</string>
+    <string name="dejavu_shortcut_new_tab">Nova langeto</string>
+    <string name="dejavu_shortcut_close_tab">Fermi langeton</string>
+    <string name="dejavu_shortcut_restore_tab">Restarigi fermitan langeton</string>
+    <string name="dejavu_shortcut_address_bar">Redakti adreson</string>
+    <string name="dejavu_shortcut_reload">Reŝargi paĝon</string>
+    <string name="dejavu_shortcut_tab_n">Iri al langeto %1$d</string>
+    <string name="dejavu_shortcut_last_tab">Iri al lasta langeto</string>
 </resources>

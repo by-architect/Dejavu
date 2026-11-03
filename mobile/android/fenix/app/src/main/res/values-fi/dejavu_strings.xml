@@ -543,4 +543,25 @@
     <string name="dejavu_settings_tips_summary">Näytä vinkkejä piilotetuista eleistä, kuten Uusi välilehti -painikkeen pitkästä painalluksesta</string>
     <string name="dejavu_new">Uutta</string>
     <string name="dejavu_menu_customize_reader_view">Mukauta lukunäkymää</string>
+    <string name="dejavu_settings_shortcuts">Pikanäppäimet</string>
+    <string name="dejavu_settings_shortcuts_summary">Vaihda pikanäppäinten näppäimiä fyysiselle näppäimistölle</string>
+    <string name="dejavu_shortcuts_hint">Napauta pikanäppäintä antaaksesi sille toisen näppäimen. Pikanäppäimet tarvitsevat Ctrl- tai Alt-näppäimen.</string>
+    <string name="dejavu_shortcuts_press">Paina uutta näppäinyhdistelmää.</string>
+    <string name="dejavu_shortcuts_taken">%1$s on jo toiminnon ”%2$s” käytössä. Vaihda antaa toiminnolle ”%2$s” tämän pikanäppäimen nykyisen näppäimen, tai peruuta, niin mitään ei muuteta.</string>
+    <string name="dejavu_shortcuts_current">Nykyinen: %1$s</string>
+    <string name="dejavu_shortcuts_text_keys">Tekstikentät ja verkkosivut pitävät %1$s itsellään, kun niissä on kohdistus.</string>
+    <string name="dejavu_shortcuts_none">Ei mitään</string>
+    <string name="dejavu_shortcuts_save">Tallenna</string>
+    <string name="dejavu_shortcuts_swap">Vaihda</string>
+    <string name="dejavu_shortcuts_clear">Tyhjennä</string>
+    <string name="dejavu_shortcuts_reset">Palauta oletus</string>
+    <string name="dejavu_shortcut_next_tab">Seuraava välilehti</string>
+    <string name="dejavu_shortcut_previous_tab">Edellinen välilehti</string>
+    <string name="dejavu_shortcut_new_tab">Uusi välilehti</string>
+    <string name="dejavu_shortcut_close_tab">Sulje välilehti</string>
+    <string name="dejavu_shortcut_restore_tab">Palauta suljettu välilehti</string>
+    <string name="dejavu_shortcut_address_bar">Muokkaa osoitetta</string>
+    <string name="dejavu_shortcut_reload">Lataa sivu uudelleen</string>
+    <string name="dejavu_shortcut_tab_n">Siirry välilehteen %1$d</string>
+    <string name="dejavu_shortcut_last_tab">Siirry viimeiseen välilehteen</string>
 </resources>

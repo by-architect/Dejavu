@@ -543,4 +543,25 @@
     <string name="dejavu_settings_tips_summary">Яшерен ишарәләр турында киңәшләр күрсәтү, мәсәлән, Яңа таб төймәсенә басып тору</string>
     <string name="dejavu_new">Яңа</string>
     <string name="dejavu_menu_customize_reader_view">Уку режимын көйләү</string>
+    <string name="dejavu_settings_shortcuts">Клавиатура кыскачлары</string>
+    <string name="dejavu_settings_shortcuts_summary">Аппарат клавиатурасы өчен кыскачларның төймәләрен үзгәртү</string>
+    <string name="dejavu_shortcuts_hint">Кыскачка башка төймә бирү өчен аңа басыгыз. Кыскачларга Ctrl яки Alt кирәк.</string>
+    <string name="dejavu_shortcuts_press">Яңа төймәләр комбинациясенә басыгыз.</string>
+    <string name="dejavu_shortcuts_taken">%1$s инде «%2$s» өчен кулланыла. Алмаштыру «%2$s»-ка бу кыскачның хәзерге төймәсен бирә, яки бернәрсә дә үзгәртмәс өчен баш тартыгыз.</string>
+    <string name="dejavu_shortcuts_current">Хәзерге: %1$s</string>
+    <string name="dejavu_shortcuts_text_keys">Текст кырлары һәм веб-битләр фокуста булганда %1$s аларда кала.</string>
+    <string name="dejavu_shortcuts_none">Юк</string>
+    <string name="dejavu_shortcuts_save">Саклау</string>
+    <string name="dejavu_shortcuts_swap">Алмаштыру</string>
+    <string name="dejavu_shortcuts_clear">Чистарту</string>
+    <string name="dejavu_shortcuts_reset">Стандартка кайтару</string>
+    <string name="dejavu_shortcut_next_tab">Киләсе таб</string>
+    <string name="dejavu_shortcut_previous_tab">Алдагы таб</string>
+    <string name="dejavu_shortcut_new_tab">Яңа таб</string>
+    <string name="dejavu_shortcut_close_tab">Табны ябу</string>
+    <string name="dejavu_shortcut_restore_tab">Ябылган табны кайтару</string>
+    <string name="dejavu_shortcut_address_bar">Адресны үзгәртү</string>
+    <string name="dejavu_shortcut_reload">Битне яңадан йөкләү</string>
+    <string name="dejavu_shortcut_tab_n">%1$d табка күчү</string>
+    <string name="dejavu_shortcut_last_tab">Соңгы табка күчү</string>
 </resources>

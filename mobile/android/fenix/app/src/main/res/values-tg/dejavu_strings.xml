@@ -543,4 +543,25 @@
     <string name="dejavu_settings_tips_summary">Нишон додани маслиҳатҳо дар бораи ишораҳои пинҳон, масалан, пахш карда нигоҳ доштани «Варақаи нав»</string>
     <string name="dejavu_new">Нав</string>
     <string name="dejavu_menu_customize_reader_view">Фармоишдиҳии намоиши хониш</string>
+    <string name="dejavu_settings_shortcuts">Миёнбурҳои клавиатура</string>
+    <string name="dejavu_settings_shortcuts_summary">Тугмаҳои миёнбурҳоро барои клавиатураи физикӣ иваз кунед</string>
+    <string name="dejavu_shortcuts_hint">Барои додани тугмаи дигар ба миёнбур зарба занед. Миёнбурҳо Ctrl ё Alt лозим доранд.</string>
+    <string name="dejavu_shortcuts_press">Омезиши нави тугмаҳоро пахш кунед.</string>
+    <string name="dejavu_shortcuts_taken">%1$s аллакай аз ҷониби «%2$s» истифода мешавад. Иваз ба «%2$s» тугмаи ҷории ин миёнбурро медиҳад, ё бекор кунед, то ҳеҷ чиз тағйир наёбад.</string>
+    <string name="dejavu_shortcuts_current">Ҷорӣ: %1$s</string>
+    <string name="dejavu_shortcuts_text_keys">Майдонҳои матн ва саҳифаҳои веб то вақте ки дар фокус ҳастанд, %1$s-ро нигоҳ медоранд.</string>
+    <string name="dejavu_shortcuts_none">Ҳеҷ</string>
+    <string name="dejavu_shortcuts_save">Нигоҳ доштан</string>
+    <string name="dejavu_shortcuts_swap">Иваз кардан</string>
+    <string name="dejavu_shortcuts_clear">Пок кардан</string>
+    <string name="dejavu_shortcuts_reset">Ба пешфарз барқарор кардан</string>
+    <string name="dejavu_shortcut_next_tab">Варақаи навбатӣ</string>
+    <string name="dejavu_shortcut_previous_tab">Варақаи қаблӣ</string>
+    <string name="dejavu_shortcut_new_tab">Варақаи нав</string>
+    <string name="dejavu_shortcut_close_tab">Пӯшидани варақа</string>
+    <string name="dejavu_shortcut_restore_tab">Барқарор кардани варақаи пӯшида</string>
+    <string name="dejavu_shortcut_address_bar">Таҳрири нишонӣ</string>
+    <string name="dejavu_shortcut_reload">Аз нав бор кардани саҳифа</string>
+    <string name="dejavu_shortcut_tab_n">Гузариш ба варақаи %1$d</string>
+    <string name="dejavu_shortcut_last_tab">Гузариш ба варақаи охирин</string>
 </resources>

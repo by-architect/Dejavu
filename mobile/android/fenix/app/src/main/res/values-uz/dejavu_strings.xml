@@ -543,4 +543,25 @@
     <string name="dejavu_settings_tips_summary">Yashirin ishoralar haqida maslahatlarni ko\'rsatish, masalan, “Yangi varaq” tugmasini bosib turish</string>
     <string name="dejavu_new">Yangi</string>
     <string name="dejavu_menu_customize_reader_view">Oʻqish rejimini moslash</string>
+    <string name="dejavu_settings_shortcuts">Klaviatura yorliqlari</string>
+    <string name="dejavu_settings_shortcuts_summary">Fizik klaviatura uchun yorliqlar tugmalarini oʻzgartirish</string>
+    <string name="dejavu_shortcuts_hint">Boshqa tugma berish uchun yorliqqa bosing. Yorliqlarga Ctrl yoki Alt kerak.</string>
+    <string name="dejavu_shortcuts_press">Yangi tugmalar birikmasini bosing.</string>
+    <string name="dejavu_shortcuts_taken">%1$s allaqachon “%2$s” uchun ishlatilmoqda. Almashtirish “%2$s”ga bu yorliqning joriy tugmasini beradi yoki hech narsani oʻzgartirmaslik uchun bekor qiling.</string>
+    <string name="dejavu_shortcuts_current">Joriy: %1$s</string>
+    <string name="dejavu_shortcuts_text_keys">Matn maydonlari va veb sahifalar fokusda boʻlganda %1$s ularda qoladi.</string>
+    <string name="dejavu_shortcuts_none">Yoʻq</string>
+    <string name="dejavu_shortcuts_save">Saqlash</string>
+    <string name="dejavu_shortcuts_swap">Almashtirish</string>
+    <string name="dejavu_shortcuts_clear">Tozalash</string>
+    <string name="dejavu_shortcuts_reset">Standartga qaytarish</string>
+    <string name="dejavu_shortcut_next_tab">Keyingi varaq</string>
+    <string name="dejavu_shortcut_previous_tab">Oldingi varaq</string>
+    <string name="dejavu_shortcut_new_tab">Yangi varaq</string>
+    <string name="dejavu_shortcut_close_tab">Varaqni yopish</string>
+    <string name="dejavu_shortcut_restore_tab">Yopilgan varaqni tiklash</string>
+    <string name="dejavu_shortcut_address_bar">Manzilni tahrirlash</string>
+    <string name="dejavu_shortcut_reload">Sahifani qayta yuklash</string>
+    <string name="dejavu_shortcut_tab_n">%1$d-varaqqa oʻtish</string>
+    <string name="dejavu_shortcut_last_tab">Oxirgi varaqqa oʻtish</string>
 </resources>

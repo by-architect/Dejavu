@@ -535,4 +535,25 @@
     <string name="dejavu_settings_tips_summary">Fi àwọn ìmọ̀ràn hàn nípa àwọn ìfarajúwèé tó farasin, bí dídi bọ́tìnnì Táàbù Tuntun mú</string>
     <string name="dejavu_new">Tuntun</string>
     <string name="dejavu_menu_customize_reader_view">Sọ èrò olùkà di ti ara ẹni</string>
+    <string name="dejavu_settings_shortcuts">Àwọn ọ̀nà àbùjá kọ́kọ́rọ́</string>
+    <string name="dejavu_settings_shortcuts_summary">Yí àwọn kọ́kọ́rọ́ ọ̀nà àbùjá padà fún kọ́kọ́rọ́ ojúlówó</string>
+    <string name="dejavu_shortcuts_hint">Tẹ ọ̀nà àbùjá kan láti fún un ní kọ́kọ́rọ́ mìíràn. Àwọn ọ̀nà àbùjá nílò Ctrl tàbí Alt.</string>
+    <string name="dejavu_shortcuts_press">Tẹ àkópọ̀ kọ́kọ́rọ́ tuntun.</string>
+    <string name="dejavu_shortcuts_taken">“%2$s” ti ń lo %1$s tẹ́lẹ̀. Pààrọ̀ yóò fún “%2$s” ní kọ́kọ́rọ́ ọ̀nà àbùjá yìí, tàbí fagilé kí ohunkóhun má yí padà.</string>
+    <string name="dejavu_shortcuts_current">Lọ́wọ́lọ́wọ́: %1$s</string>
+    <string name="dejavu_shortcuts_text_keys">Àwọn àyè ọ̀rọ̀ àti ojú-ewé wẹ́ẹ̀bù máa ń pa %1$s mọ́ nígbà tí wọ́n bá ní àfojúsùn.</string>
+    <string name="dejavu_shortcuts_none">Kò sí</string>
+    <string name="dejavu_shortcuts_save">Fipamọ́</string>
+    <string name="dejavu_shortcuts_swap">Pààrọ̀</string>
+    <string name="dejavu_shortcuts_clear">Pa rẹ́</string>
+    <string name="dejavu_shortcuts_reset">Dá padà sí àtilẹ̀wá</string>
+    <string name="dejavu_shortcut_next_tab">Táàbù tó kàn</string>
+    <string name="dejavu_shortcut_previous_tab">Táàbù tó ṣáájú</string>
+    <string name="dejavu_shortcut_new_tab">Táàbù tuntun</string>
+    <string name="dejavu_shortcut_close_tab">Pa táàbù dé</string>
+    <string name="dejavu_shortcut_restore_tab">Mú táàbù tí a pa dé padà</string>
+    <string name="dejavu_shortcut_address_bar">Ṣàtúnṣe àdírẹ́sì</string>
+    <string name="dejavu_shortcut_reload">Tún ojú-ewé gbé</string>
+    <string name="dejavu_shortcut_tab_n">Lọ sí táàbù %1$d</string>
+    <string name="dejavu_shortcut_last_tab">Lọ sí táàbù tó kẹ́yìn</string>
 </resources>

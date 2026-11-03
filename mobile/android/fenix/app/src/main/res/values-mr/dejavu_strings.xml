@@ -543,4 +543,25 @@
     <string name="dejavu_settings_tips_summary">“नवीन टॅब” दाबून धरण्यासारख्या लपलेल्या जेश्चरविषयी टिपा दाखवा</string>
     <string name="dejavu_new">नवीन</string>
     <string name="dejavu_menu_customize_reader_view">वाचक मोड स्वेच्छेनुरूप करा</string>
+    <string name="dejavu_settings_shortcuts">कीबोर्ड शॉर्टकट</string>
+    <string name="dejavu_settings_shortcuts_summary">हार्डवेअर कीबोर्डसाठी शॉर्टकटच्या कळा बदला</string>
+    <string name="dejavu_shortcuts_hint">शॉर्टकटला दुसरी कळ देण्यासाठी त्यावर टॅप करा. शॉर्टकटना Ctrl किंवा Alt लागते.</string>
+    <string name="dejavu_shortcuts_press">नवीन कळ संयोजन दाबा.</string>
+    <string name="dejavu_shortcuts_taken">%1$s आधीच «%2$s» साठी वापरले जात आहे. अदलाबदल «%2$s» ला या शॉर्टकटची सध्याची कळ देते, किंवा काहीही न बदलण्यासाठी रद्द करा.</string>
+    <string name="dejavu_shortcuts_current">सध्याची: %1$s</string>
+    <string name="dejavu_shortcuts_text_keys">मजकूर क्षेत्रे आणि वेब पृष्ठे फोकसमध्ये असताना %1$s स्वतःकडे ठेवतात.</string>
+    <string name="dejavu_shortcuts_none">काहीही नाही</string>
+    <string name="dejavu_shortcuts_save">जतन करा</string>
+    <string name="dejavu_shortcuts_swap">अदलाबदल</string>
+    <string name="dejavu_shortcuts_clear">साफ करा</string>
+    <string name="dejavu_shortcuts_reset">पूर्वनिर्धारितवर रीसेट करा</string>
+    <string name="dejavu_shortcut_next_tab">पुढील टॅब</string>
+    <string name="dejavu_shortcut_previous_tab">मागील टॅब</string>
+    <string name="dejavu_shortcut_new_tab">नवीन टॅब</string>
+    <string name="dejavu_shortcut_close_tab">टॅब बंद करा</string>
+    <string name="dejavu_shortcut_restore_tab">बंद टॅब पुनर्संचयित करा</string>
+    <string name="dejavu_shortcut_address_bar">पत्ता संपादित करा</string>
+    <string name="dejavu_shortcut_reload">पृष्ठ रीलोड करा</string>
+    <string name="dejavu_shortcut_tab_n">टॅब %1$d वर जा</string>
+    <string name="dejavu_shortcut_last_tab">शेवटच्या टॅबवर जा</string>
 </resources>

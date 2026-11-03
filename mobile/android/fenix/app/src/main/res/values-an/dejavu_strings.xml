@@ -543,4 +543,25 @@
     <string name="dejavu_settings_tips_summary">Amostrar consellos sobre cenyos amagaus, como mantener pretau «Nueva pestanya»</string>
     <string name="dejavu_new">Nuevo</string>
     <string name="dejavu_menu_customize_reader_view">Personalizar la vista de lectura</string>
+    <string name="dejavu_settings_shortcuts">Alcorces de teclau</string>
+    <string name="dejavu_settings_shortcuts_summary">Cambiar las teclas d\'os alcorces pa un teclau fisico</string>
+    <string name="dejavu_shortcuts_hint">Toca un alcorce pa dar-le unatra tecla. Os alcorces amenistan Ctrl u Alt.</string>
+    <string name="dejavu_shortcuts_press">Preta la nueva combinación de teclas.</string>
+    <string name="dejavu_shortcuts_taken">%1$s ya ye usau per «%2$s». Cambiar da a «%2$s» la tecla actual d\'este alcorce, u cancela pa no cambiar cosa.</string>
+    <string name="dejavu_shortcuts_current">Actual: %1$s</string>
+    <string name="dejavu_shortcuts_text_keys">Os campos de texto y las pachinas web mantienen %1$s mientres tienen o foco.</string>
+    <string name="dejavu_shortcuts_none">Garra</string>
+    <string name="dejavu_shortcuts_save">Alzar</string>
+    <string name="dejavu_shortcuts_swap">Cambiar</string>
+    <string name="dejavu_shortcuts_clear">Borrar</string>
+    <string name="dejavu_shortcuts_reset">Restablir per defecto</string>
+    <string name="dejavu_shortcut_next_tab">Pestanya siguient</string>
+    <string name="dejavu_shortcut_previous_tab">Pestanya anterior</string>
+    <string name="dejavu_shortcut_new_tab">Nueva pestanya</string>
+    <string name="dejavu_shortcut_close_tab">Zarrar pestanya</string>
+    <string name="dejavu_shortcut_restore_tab">Restaurar pestanya zarrada</string>
+    <string name="dejavu_shortcut_address_bar">Editar adreza</string>
+    <string name="dejavu_shortcut_reload">Recargar pachina</string>
+    <string name="dejavu_shortcut_tab_n">Ir t\'a pestanya %1$d</string>
+    <string name="dejavu_shortcut_last_tab">Ir t\'a zaguera pestanya</string>
 </resources>

@@ -543,4 +543,25 @@
     <string name="dejavu_settings_tips_summary">Erakutsi ezkutuko keinuei buruzko aholkuak, hala nola «Fitxa berria» sakatuta eustea</string>
     <string name="dejavu_new">Berria</string>
     <string name="dejavu_menu_customize_reader_view">Pertsonalizatu irakurtzeko ikuspegia</string>
+    <string name="dejavu_settings_shortcuts">Teklatuaren lasterbideak</string>
+    <string name="dejavu_settings_shortcuts_summary">Aldatu lasterbideen teklak teklatu fisiko baterako</string>
+    <string name="dejavu_shortcuts_hint">Sakatu lasterbide bat beste tekla bat emateko. Lasterbideek Ctrl edo Alt behar dute.</string>
+    <string name="dejavu_shortcuts_press">Sakatu tekla-konbinazio berria.</string>
+    <string name="dejavu_shortcuts_taken">«%2$s»(e)k dagoeneko erabiltzen du %1$s. Trukatu aukerak lasterbide honen uneko tekla ematen dio «%2$s»(r)i, edo utzi ezer ez aldatzeko.</string>
+    <string name="dejavu_shortcuts_current">Unekoa: %1$s</string>
+    <string name="dejavu_shortcuts_text_keys">Testu-eremuek eta web orriek %1$s gordetzen dute fokua duten bitartean.</string>
+    <string name="dejavu_shortcuts_none">Bat ere ez</string>
+    <string name="dejavu_shortcuts_save">Gorde</string>
+    <string name="dejavu_shortcuts_swap">Trukatu</string>
+    <string name="dejavu_shortcuts_clear">Garbitu</string>
+    <string name="dejavu_shortcuts_reset">Berrezarri lehenetsira</string>
+    <string name="dejavu_shortcut_next_tab">Hurrengo fitxa</string>
+    <string name="dejavu_shortcut_previous_tab">Aurreko fitxa</string>
+    <string name="dejavu_shortcut_new_tab">Fitxa berria</string>
+    <string name="dejavu_shortcut_close_tab">Itxi fitxa</string>
+    <string name="dejavu_shortcut_restore_tab">Berreskuratu itxitako fitxa</string>
+    <string name="dejavu_shortcut_address_bar">Editatu helbidea</string>
+    <string name="dejavu_shortcut_reload">Berritu orria</string>
+    <string name="dejavu_shortcut_tab_n">Joan %1$d. fitxara</string>
+    <string name="dejavu_shortcut_last_tab">Joan azken fitxara</string>
 </resources>

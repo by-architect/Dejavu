@@ -551,4 +551,25 @@
     <string name="dejavu_settings_tips_summary">Прикажи савете о скривеним гестовима, као што је задржавање дугмета „Нови језичак“</string>
     <string name="dejavu_new">Ново</string>
     <string name="dejavu_menu_customize_reader_view">Прилагоди приказ читача</string>
+    <string name="dejavu_settings_shortcuts">Пречице на тастатури</string>
+    <string name="dejavu_settings_shortcuts_summary">Промените тастере пречица за физичку тастатуру</string>
+    <string name="dejavu_shortcuts_hint">Додирните пречицу да јој доделите други тастер. Пречицама треба Ctrl или Alt.</string>
+    <string name="dejavu_shortcuts_press">Притисните нову комбинацију тастера.</string>
+    <string name="dejavu_shortcuts_taken">%1$s већ користи „%2$s“. Замени даје „%2$s“ тренутни тастер ове пречице, или откажите да се ништа не промени.</string>
+    <string name="dejavu_shortcuts_current">Тренутна: %1$s</string>
+    <string name="dejavu_shortcuts_text_keys">Текстуална поља и веб странице задржавају %1$s док су у фокусу.</string>
+    <string name="dejavu_shortcuts_none">Ниједна</string>
+    <string name="dejavu_shortcuts_save">Сачувај</string>
+    <string name="dejavu_shortcuts_swap">Замени</string>
+    <string name="dejavu_shortcuts_clear">Обриши</string>
+    <string name="dejavu_shortcuts_reset">Врати на подразумевано</string>
+    <string name="dejavu_shortcut_next_tab">Следећи језичак</string>
+    <string name="dejavu_shortcut_previous_tab">Претходни језичак</string>
+    <string name="dejavu_shortcut_new_tab">Нови језичак</string>
+    <string name="dejavu_shortcut_close_tab">Затвори језичак</string>
+    <string name="dejavu_shortcut_restore_tab">Врати затворени језичак</string>
+    <string name="dejavu_shortcut_address_bar">Уреди адресу</string>
+    <string name="dejavu_shortcut_reload">Поново учитај страницу</string>
+    <string name="dejavu_shortcut_tab_n">Иди на језичак %1$d</string>
+    <string name="dejavu_shortcut_last_tab">Иди на последњи језичак</string>
 </resources>

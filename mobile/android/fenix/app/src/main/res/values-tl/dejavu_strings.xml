@@ -543,4 +543,25 @@
     <string name="dejavu_settings_tips_summary">Ipakita ang mga tip tungkol sa mga nakatagong gesture, tulad ng pagpindot nang matagal sa “Bagong Tab”</string>
     <string name="dejavu_new">Bago</string>
     <string name="dejavu_menu_customize_reader_view">Ipasadya ang reader view</string>
+    <string name="dejavu_settings_shortcuts">Mga shortcut ng keyboard</string>
+    <string name="dejavu_settings_shortcuts_summary">Palitan ang mga key ng mga shortcut para sa pisikal na keyboard</string>
+    <string name="dejavu_shortcuts_hint">I-tap ang isang shortcut para bigyan ito ng ibang key. Kailangan ng mga shortcut ang Ctrl o Alt.</string>
+    <string name="dejavu_shortcuts_press">Pindutin ang bagong kombinasyon ng mga key.</string>
+    <string name="dejavu_shortcuts_taken">Ginagamit na ang %1$s ng \"%2$s\". Ibibigay ng Ipagpalit sa \"%2$s\" ang kasalukuyang key ng shortcut na ito, o kanselahin para walang mabago.</string>
+    <string name="dejavu_shortcuts_current">Kasalukuyan: %1$s</string>
+    <string name="dejavu_shortcuts_text_keys">Pinapanatili ng mga text field at web page ang %1$s habang nasa kanila ang focus.</string>
+    <string name="dejavu_shortcuts_none">Wala</string>
+    <string name="dejavu_shortcuts_save">I-save</string>
+    <string name="dejavu_shortcuts_swap">Ipagpalit</string>
+    <string name="dejavu_shortcuts_clear">I-clear</string>
+    <string name="dejavu_shortcuts_reset">I-reset sa default</string>
+    <string name="dejavu_shortcut_next_tab">Susunod na tab</string>
+    <string name="dejavu_shortcut_previous_tab">Nakaraang tab</string>
+    <string name="dejavu_shortcut_new_tab">Bagong tab</string>
+    <string name="dejavu_shortcut_close_tab">Isara ang tab</string>
+    <string name="dejavu_shortcut_restore_tab">Ibalik ang isinarang tab</string>
+    <string name="dejavu_shortcut_address_bar">I-edit ang address</string>
+    <string name="dejavu_shortcut_reload">I-reload ang pahina</string>
+    <string name="dejavu_shortcut_tab_n">Pumunta sa tab %1$d</string>
+    <string name="dejavu_shortcut_last_tab">Pumunta sa huling tab</string>
 </resources>

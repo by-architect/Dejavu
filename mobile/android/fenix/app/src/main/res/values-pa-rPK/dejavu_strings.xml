@@ -543,4 +543,25 @@
     <string name="dejavu_settings_tips_summary">لُکے ہوئے اشاریاں بارے مشورے وکھاؤ، جویں “نویں ٹیب کھولھو” نوں دبا کے رکھݨا</string>
     <string name="dejavu_new">نواں</string>
     <string name="dejavu_menu_customize_reader_view">پڑھن جھلک نوں من پسند بݨاؤ</string>
+    <string name="dejavu_settings_shortcuts">کیبورڈ شارٹ کٹ</string>
+    <string name="dejavu_settings_shortcuts_summary">ہارڈویئر کیبورڈ لئی شارٹ کٹاں دیاں کنجیاں بدلو</string>
+    <string name="dejavu_shortcuts_hint">کسے شارٹ کٹ نوں ہور کنجی دین لئی اوہدے اُتے ٹیپ کرو۔ شارٹ کٹاں نوں Ctrl یا Alt چاہیدا اے۔</string>
+    <string name="dejavu_shortcuts_press">نواں کنجی میل دباؤ۔</string>
+    <string name="dejavu_shortcuts_taken">%1$s پہلاں ای «%2$s» ولوں ورتیا جا رہیا اے۔ وٹاندرا «%2$s» نوں ایس شارٹ کٹ دی موجودہ کنجی دیندا اے، یا کجھ نہ بدلن لئی رد کرو۔</string>
+    <string name="dejavu_shortcuts_current">موجودہ: %1$s</string>
+    <string name="dejavu_shortcuts_text_keys">لکھت خانے تے ویب صفحے فوکس وچ ہوون ویلے %1$s اپنے کول رکھدے نیں۔</string>
+    <string name="dejavu_shortcuts_none">کوئی نہیں</string>
+    <string name="dejavu_shortcuts_save">سانبھو</string>
+    <string name="dejavu_shortcuts_swap">وٹاندرا</string>
+    <string name="dejavu_shortcuts_clear">صاف کرو</string>
+    <string name="dejavu_shortcuts_reset">ڈیفالٹ اُتے ری سیٹ کرو</string>
+    <string name="dejavu_shortcut_next_tab">اگلی ٹیب</string>
+    <string name="dejavu_shortcut_previous_tab">پچھلی ٹیب</string>
+    <string name="dejavu_shortcut_new_tab">نویں ٹیب</string>
+    <string name="dejavu_shortcut_close_tab">ٹیب بند کرو</string>
+    <string name="dejavu_shortcut_restore_tab">بند ٹیب بحال کرو</string>
+    <string name="dejavu_shortcut_address_bar">پتہ سودھو</string>
+    <string name="dejavu_shortcut_reload">صفحہ مڑ لوڈ کرو</string>
+    <string name="dejavu_shortcut_tab_n">ٹیب %1$d اُتے جاؤ</string>
+    <string name="dejavu_shortcut_last_tab">آخری ٹیب اُتے جاؤ</string>
 </resources>

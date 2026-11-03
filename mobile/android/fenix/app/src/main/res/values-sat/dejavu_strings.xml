@@ -551,4 +551,25 @@
     <string name="dejavu_settings_tips_summary">“ᱱᱟᱶᱟ ᱴᱮᱵᱽ” ᱚᱛᱟ ᱫᱚᱦᱚ ᱞᱮᱠᱟᱱ ᱩᱠᱩ ᱪᱤᱱᱦᱟᱹ ᱠᱚ ᱵᱟᱵᱚᱛ ᱥᱩᱡᱷᱟᱹᱣ ᱠᱚ ᱩᱫᱩᱜ ᱢᱮ</string>
     <string name="dejavu_new">ᱱᱟᱶᱟ</string>
     <string name="dejavu_menu_customize_reader_view">ᱨᱤᱰᱚᱨ ᱵᱷᱭᱩ ᱠᱚᱥᱴᱚᱢᱟᱭᱤᱡᱽ ᱢᱮ</string>
+    <string name="dejavu_settings_shortcuts">ᱠᱤᱵᱚᱰ ᱥᱚᱨᱴᱠᱟᱴ</string>
+    <string name="dejavu_settings_shortcuts_summary">ᱦᱟᱨᱰᱣᱮᱭᱟᱨ ᱠᱤᱵᱚᱰ ᱞᱟᱹᱜᱤᱫ ᱥᱚᱨᱴᱠᱟᱴ ᱨᱮᱭᱟᱜ ᱠᱤ ᱵᱚᱫᱚᱞ ᱢᱮ</string>
+    <string name="dejavu_shortcuts_hint">ᱮᱴᱟᱜ ᱠᱤ ᱮᱢ ᱞᱟᱹᱜᱤᱫ ᱢᱤᱫ ᱥᱚᱨᱴᱠᱟᱴ ᱨᱮ ᱴᱤᱯᱟᱹᱜ ᱢᱮ ᱾ ᱥᱚᱨᱴᱠᱟᱴ ᱞᱟᱹᱜᱤᱫ Ctrl ᱟᱨᱵᱟᱝ Alt ᱞᱟᱹᱠᱛᱤᱭᱟ ᱾</string>
+    <string name="dejavu_shortcuts_press">ᱱᱟᱶᱟ ᱠᱤ ᱡᱚᱲᱟᱣ ᱮᱛᱟᱞ ᱢᱮ ᱾</string>
+    <string name="dejavu_shortcuts_taken">%1$s ᱫᱚ «%2$s» ᱦᱚᱛᱮᱛᱮ ᱵᱮᱵᱷᱟᱨᱚᱜ ᱠᱟᱱᱟ ᱾ ᱵᱚᱫᱚᱞ «%2$s» ᱠᱮ ᱱᱚᱶᱟ ᱥᱚᱨᱴᱠᱟᱴ ᱨᱮᱭᱟᱜ ᱱᱤᱛᱚᱜᱟᱜ ᱠᱤ ᱮᱢᱚᱜᱼᱟ, ᱟᱨᱵᱟᱝ ᱪᱮᱫ ᱦᱚᱸ ᱵᱟᱝ ᱵᱚᱫᱚᱞ ᱞᱟᱹᱜᱤᱫ ᱵᱟᱹᱰ ᱢᱮ ᱾</string>
+    <string name="dejavu_shortcuts_current">ᱱᱤᱛᱚᱜᱟᱜ: %1$s</string>
+    <string name="dejavu_shortcuts_text_keys">ᱚᱞ ᱡᱟᱭᱜᱟ ᱟᱨ ᱣᱮᱵ ᱥᱟᱦᱴᱟ ᱠᱚ ᱯᱷᱚᱠᱟᱥ ᱨᱮ ᱛᱟᱦᱮᱸ ᱚᱠᱛᱚ %1$s ᱫᱚᱦᱚᱭᱟᱭ ᱠᱚᱣᱟ ᱾</string>
+    <string name="dejavu_shortcuts_none">ᱪᱮᱫ ᱦᱚᱸ ᱵᱟᱹᱱᱩᱜᱼᱟ</string>
+    <string name="dejavu_shortcuts_save">ᱥᱟᱺᱪᱟᱣ ᱢᱮ</string>
+    <string name="dejavu_shortcuts_swap">ᱵᱚᱫᱚᱞ</string>
+    <string name="dejavu_shortcuts_clear">ᱯᱷᱟᱨᱪᱟᱭ ᱢᱮ</string>
+    <string name="dejavu_shortcuts_reset">ᱢᱩᱞ ᱛᱮ ᱨᱤᱥᱮᱴ ᱢᱮ</string>
+    <string name="dejavu_shortcut_next_tab">ᱤᱱᱟᱹ ᱛᱟᱭᱚᱢ ᱴᱮᱵᱽ</string>
+    <string name="dejavu_shortcut_previous_tab">ᱞᱟᱦᱟ ᱴᱮᱵᱽ</string>
+    <string name="dejavu_shortcut_new_tab">ᱱᱟᱶᱟ ᱴᱮᱵᱽ</string>
+    <string name="dejavu_shortcut_close_tab">ᱴᱮᱵᱽ ᱵᱚᱸᱫᱚᱭ ᱢᱮ</string>
+    <string name="dejavu_shortcut_restore_tab">ᱵᱚᱸᱫ ᱴᱮᱵᱽ ᱨᱩᱣᱟᱹᱲ ᱢᱮ</string>
+    <string name="dejavu_shortcut_address_bar">ᱴᱷᱤᱠᱬᱟ ᱥᱟᱯᱲᱟᱣ ᱢᱮ</string>
+    <string name="dejavu_shortcut_reload">ᱥᱟᱦᱴᱟ ᱫᱩᱦᱲᱟᱹ ᱞᱟᱫᱮ ᱢᱮ</string>
+    <string name="dejavu_shortcut_tab_n">ᱴᱮᱵᱽ %1$d ᱛᱮ ᱪᱟᱞᱟᱜ ᱢᱮ</string>
+    <string name="dejavu_shortcut_last_tab">ᱢᱩᱪᱟᱹᱫ ᱴᱮᱵᱽ ᱛᱮ ᱪᱟᱞᱟᱜ ᱢᱮ</string>
 </resources>

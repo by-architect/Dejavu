@@ -559,4 +559,25 @@
     <string name="dejavu_settings_tips_summary">Pokazuj porady ô skrytych gestach, jak przitrzimanie „Nowo karta”</string>
     <string name="dejavu_new">Nowe</string>
     <string name="dejavu_menu_customize_reader_view">Przipasuj wyglōnd do czytanio</string>
+    <string name="dejavu_settings_shortcuts">Skrōty klawiatury</string>
+    <string name="dejavu_settings_shortcuts_summary">Zmiyń klawisze skrōtōw do fizycznyj klawiatury</string>
+    <string name="dejavu_shortcuts_hint">Tyknij skrōt, coby mu dać inkszy klawisz. Skrōty potrzebujōm Ctrl abo Alt.</string>
+    <string name="dejavu_shortcuts_press">Naciś nowo kōmbinacyjo klawiszy.</string>
+    <string name="dejavu_shortcuts_taken">%1$s je już używany ôd „%2$s”. Zamiyń dowo „%2$s” terŏźny klawisz tego skrōtu, abo pociep, coby nic niy zmiyniać.</string>
+    <string name="dejavu_shortcuts_current">Terŏźny: %1$s</string>
+    <string name="dejavu_shortcuts_text_keys">Pola tekstu i strōny internetowe trzimiōm %1$s, jak majōm fokus.</string>
+    <string name="dejavu_shortcuts_none">Żŏdyn</string>
+    <string name="dejavu_shortcuts_save">Spamiyntej</string>
+    <string name="dejavu_shortcuts_swap">Zamiyń</string>
+    <string name="dejavu_shortcuts_clear">Wypucuj</string>
+    <string name="dejavu_shortcuts_reset">Prziwrōć wychodny</string>
+    <string name="dejavu_shortcut_next_tab">Nastympno karta</string>
+    <string name="dejavu_shortcut_previous_tab">Piyrwyjszo karta</string>
+    <string name="dejavu_shortcut_new_tab">Nowo karta</string>
+    <string name="dejavu_shortcut_close_tab">Zawrzij karta</string>
+    <string name="dejavu_shortcut_restore_tab">Prziwrōć zawarto karta</string>
+    <string name="dejavu_shortcut_address_bar">Edytuj adresa</string>
+    <string name="dejavu_shortcut_reload">Ôdświyż strōna</string>
+    <string name="dejavu_shortcut_tab_n">Idź do karty %1$d</string>
+    <string name="dejavu_shortcut_last_tab">Idź do ôstatnij karty</string>
 </resources>

@@ -543,4 +543,25 @@
     <string name="dejavu_settings_tips_summary">لکوکا اشاراک نا بارو اٹ مشوراک تس، جیسا کہ «پوسکنو ٹیب اس» اے دبا ہلنگ</string>
     <string name="dejavu_new">پوسکن</string>
     <string name="dejavu_menu_customize_reader_view">خواننگ دروشم اے کسٹمائز کبو</string>
+    <string name="dejavu_settings_shortcuts">کی بورڈ نا شارٹ کٹ آک</string>
+    <string name="dejavu_settings_shortcuts_summary">ہارڈویئر کی بورڈ کن شارٹ کٹاتا کی آتے بدل کبو</string>
+    <string name="dejavu_shortcuts_hint">پین کی اس تننگ کن اسٹ شارٹ کٹ اے دبا۔ شارٹ کٹاک Ctrl یا Alt اے خواہرہ۔</string>
+    <string name="dejavu_shortcuts_press">پوسکنو کی نا جوڑ اے دبا۔</string>
+    <string name="dejavu_shortcuts_taken">%1$s مستی «%2$s» آن کاریم مریک۔ بدل «%2$s» اے دا شارٹ کٹ نا ہنو کی اے ایتک، یا ہچ بدل کپنگ کن منسوخ کر۔</string>
+    <string name="dejavu_shortcuts_current">ہنو: %1$s</string>
+    <string name="dejavu_shortcuts_text_keys">ٹیکسٹ نا جاگہ آک او ویب پنہ آک ہرا وخت فوکس ٹی مریرہ %1$s اے تینے کن ایسرہ۔</string>
+    <string name="dejavu_shortcuts_none">ہچ</string>
+    <string name="dejavu_shortcuts_save">سانبا</string>
+    <string name="dejavu_shortcuts_swap">بدل کر</string>
+    <string name="dejavu_shortcuts_clear">صاف کر</string>
+    <string name="dejavu_shortcuts_reset">ڈیفالٹ آ ہترا</string>
+    <string name="dejavu_shortcut_next_tab">ارٹمیکو ٹیب</string>
+    <string name="dejavu_shortcut_previous_tab">مونیکو ٹیب</string>
+    <string name="dejavu_shortcut_new_tab">پوسکنو ٹیب</string>
+    <string name="dejavu_shortcut_close_tab">ٹیب اے بند کر</string>
+    <string name="dejavu_shortcut_restore_tab">بند ٹیب اے ہترا</string>
+    <string name="dejavu_shortcut_address_bar">پتہ اے ایڈٹ کر</string>
+    <string name="dejavu_shortcut_reload">پنہ اے پدا لوڈ کر</string>
+    <string name="dejavu_shortcut_tab_n">ٹیب %1$d آ ہن</string>
+    <string name="dejavu_shortcut_last_tab">آخرو ٹیب آ ہن</string>
 </resources>

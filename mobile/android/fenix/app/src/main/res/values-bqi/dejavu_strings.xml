@@ -543,4 +543,25 @@
     <string name="dejavu_settings_tips_summary">نشون دادن نکته یل سی اشاره یل قایم، مثل نگه داشتن «بلگه نۊ»</string>
     <string name="dejavu_new">نۊ</string>
     <string name="dejavu_menu_customize_reader_view">سفارشی کردن نما خۊندنی</string>
+    <string name="dejavu_settings_shortcuts">میوبُرا کیبورد</string>
+    <string name="dejavu_settings_shortcuts_summary">کلیدیا میوبُرا سی کیبورد فیزیکی آلشت بکو</string>
+    <string name="dejavu_shortcuts_hint">سی دائن یه کلید دیه، رو یه میوبُر بِزن. میوبُریا Ctrl یا Alt میخوان.</string>
+    <string name="dejavu_shortcuts_press">ترکیب کلید تازه نه بِزن.</string>
+    <string name="dejavu_shortcuts_taken">%1$s ایسه سی «%2$s» کار گرته بیه. جابه‌جایی کلید ایسه ای میوبُر نه وا «%2$s» میه، یا لغو بکو تا چیزی آلشت نبوئه.</string>
+    <string name="dejavu_shortcuts_current">ایسه: %1$s</string>
+    <string name="dejavu_shortcuts_text_keys">جاگه‌یا نیسسن و بلگه‌یا وب تا وختی فوکوس دارن %1$s نه سی خوشون نیگه میدارن.</string>
+    <string name="dejavu_shortcuts_none">هیچ</string>
+    <string name="dejavu_shortcuts_save">ذخیره</string>
+    <string name="dejavu_shortcuts_swap">جابه‌جایی</string>
+    <string name="dejavu_shortcuts_clear">پاک کردن</string>
+    <string name="dejavu_shortcuts_reset">وَرگشت وا پیش‌فرض</string>
+    <string name="dejavu_shortcut_next_tab">زبونه دیندایی</string>
+    <string name="dejavu_shortcut_previous_tab">زبونه پیشایی</string>
+    <string name="dejavu_shortcut_new_tab">زبونه تازه</string>
+    <string name="dejavu_shortcut_close_tab">بستن زبونه</string>
+    <string name="dejavu_shortcut_restore_tab">وَرگردوندن زبونه بسته</string>
+    <string name="dejavu_shortcut_address_bar">ویرایش نشونی</string>
+    <string name="dejavu_shortcut_reload">دوواره بار کردن بلگه</string>
+    <string name="dejavu_shortcut_tab_n">رو وا زبونه %1$d</string>
+    <string name="dejavu_shortcut_last_tab">رو وا زبونه آخری</string>
 </resources>

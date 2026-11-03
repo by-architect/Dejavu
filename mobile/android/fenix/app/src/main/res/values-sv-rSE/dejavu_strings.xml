@@ -543,4 +543,25 @@
     <string name="dejavu_settings_tips_summary">Visa tips om dolda gester, som att hålla ned Ny flik</string>
     <string name="dejavu_new">Ny</string>
     <string name="dejavu_menu_customize_reader_view">Anpassa läsvyn</string>
+    <string name="dejavu_settings_shortcuts">Kortkommandon</string>
+    <string name="dejavu_settings_shortcuts_summary">Ändra tangenterna för kortkommandona för ett fysiskt tangentbord</string>
+    <string name="dejavu_shortcuts_hint">Tryck på ett kortkommando för att ge det en annan tangent. Kortkommandon behöver Ctrl eller Alt.</string>
+    <string name="dejavu_shortcuts_press">Tryck på den nya tangentkombinationen.</string>
+    <string name="dejavu_shortcuts_taken">%1$s används redan av ”%2$s”. Byt ger ”%2$s” den här genvägens nuvarande tangent, eller avbryt för att inte ändra något.</string>
+    <string name="dejavu_shortcuts_current">Nuvarande: %1$s</string>
+    <string name="dejavu_shortcuts_text_keys">Textfält och webbsidor behåller %1$s medan de har fokus.</string>
+    <string name="dejavu_shortcuts_none">Inget</string>
+    <string name="dejavu_shortcuts_save">Spara</string>
+    <string name="dejavu_shortcuts_swap">Byt</string>
+    <string name="dejavu_shortcuts_clear">Rensa</string>
+    <string name="dejavu_shortcuts_reset">Återställ standard</string>
+    <string name="dejavu_shortcut_next_tab">Nästa flik</string>
+    <string name="dejavu_shortcut_previous_tab">Föregående flik</string>
+    <string name="dejavu_shortcut_new_tab">Ny flik</string>
+    <string name="dejavu_shortcut_close_tab">Stäng flik</string>
+    <string name="dejavu_shortcut_restore_tab">Återställ stängd flik</string>
+    <string name="dejavu_shortcut_address_bar">Redigera adress</string>
+    <string name="dejavu_shortcut_reload">Ladda om sidan</string>
+    <string name="dejavu_shortcut_tab_n">Gå till flik %1$d</string>
+    <string name="dejavu_shortcut_last_tab">Gå till sista fliken</string>
 </resources>

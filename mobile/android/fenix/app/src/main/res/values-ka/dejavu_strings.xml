@@ -543,4 +543,25 @@
     <string name="dejavu_settings_tips_summary">რჩევების ჩვენება ფარული ჟესტების შესახებ, მაგალითად „ახალი ჩანართი“ ღილაკზე ხანგრძლივად შეხება</string>
     <string name="dejavu_new">სიახლე</string>
     <string name="dejavu_menu_customize_reader_view">კითხვის რეჟიმის მორგება</string>
+    <string name="dejavu_settings_shortcuts">კლავიატურის მალსახმობები</string>
+    <string name="dejavu_settings_shortcuts_summary">მალსახმობების კლავიშების შეცვლა ფიზიკური კლავიატურისთვის</string>
+    <string name="dejavu_shortcuts_hint">შეეხეთ მალსახმობს, რომ სხვა კლავიში მიანიჭოთ. მალსახმობებს სჭირდება Ctrl ან Alt.</string>
+    <string name="dejavu_shortcuts_press">დააჭირეთ კლავიშების ახალ კომბინაციას.</string>
+    <string name="dejavu_shortcuts_taken">%1$s უკვე გამოიყენება „%2$s“-ისთვის. გაცვლა „%2$s“-ს მისცემს ამ მალსახმობის მიმდინარე კლავიშს, ან გააუქმეთ, რომ არაფერი შეიცვალოს.</string>
+    <string name="dejavu_shortcuts_current">მიმდინარე: %1$s</string>
+    <string name="dejavu_shortcuts_text_keys">ტექსტის ველები და ვებგვერდები %1$s-ს იტოვებენ, სანამ ფოკუსში არიან.</string>
+    <string name="dejavu_shortcuts_none">არცერთი</string>
+    <string name="dejavu_shortcuts_save">შენახვა</string>
+    <string name="dejavu_shortcuts_swap">გაცვლა</string>
+    <string name="dejavu_shortcuts_clear">გასუფთავება</string>
+    <string name="dejavu_shortcuts_reset">ნაგულისხმევზე დაბრუნება</string>
+    <string name="dejavu_shortcut_next_tab">შემდეგი ჩანართი</string>
+    <string name="dejavu_shortcut_previous_tab">წინა ჩანართი</string>
+    <string name="dejavu_shortcut_new_tab">ახალი ჩანართი</string>
+    <string name="dejavu_shortcut_close_tab">ჩანართის დახურვა</string>
+    <string name="dejavu_shortcut_restore_tab">დახურული ჩანართის აღდგენა</string>
+    <string name="dejavu_shortcut_address_bar">მისამართის ჩასწორება</string>
+    <string name="dejavu_shortcut_reload">გვერდის ხელახლა ჩატვირთვა</string>
+    <string name="dejavu_shortcut_tab_n">ჩანართ %1$d-ზე გადასვლა</string>
+    <string name="dejavu_shortcut_last_tab">ბოლო ჩანართზე გადასვლა</string>
 </resources>

@@ -492,6 +492,8 @@ open class CustomizationFragment : PreferenceFragmentCompat(), SystemInsetsPadde
             resources.getString(R.string.pref_key_dejavu_more_menu) ->
                 return openDejavuScreen(R.id.dejavu_more_menu_graph)
             resources.getString(R.string.pref_key_dejavu_bars) -> return openDejavuScreen(R.id.dejavu_bars_graph)
+            resources.getString(R.string.pref_key_dejavu_shortcuts) ->
+                return openDejavuScreen(R.id.dejavu_shortcuts_graph)
             resources.getString(R.string.pref_key_website_pull_to_refresh) -> {
                 PullToRefreshInBrowser.enabled.set(requireComponents.settings.isPullToRefreshEnabledInBrowser)
             }

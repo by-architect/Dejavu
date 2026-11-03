@@ -535,4 +535,25 @@
     <string name="dejavu_settings_tips_summary">“တက်ဗ် အသစ်” ကို ဖိထားခြင်းကဲ့သို့ ဝှက်ထားသော လက်ဟန်အမူအရာများအကြောင်း အကြံပြုချက်များ ပြသရန်</string>
     <string name="dejavu_new">အသစ်</string>
     <string name="dejavu_menu_customize_reader_view">စာဖတ်သူ မြင်ကွင်းကို စိတ်ကြိုက်လုပ်ပါ</string>
+    <string name="dejavu_settings_shortcuts">ကီးဘုတ် ဖြတ်လမ်းများ</string>
+    <string name="dejavu_settings_shortcuts_summary">ဟာ့ဒ်ဝဲ ကီးဘုတ်အတွက် ဖြတ်လမ်းများ၏ ခလုတ်များကို ပြောင်းရန်</string>
+    <string name="dejavu_shortcuts_hint">ဖြတ်လမ်းတစ်ခုကို အခြားခလုတ်ပေးရန် တို့ပါ။ ဖြတ်လမ်းများတွင် Ctrl သို့မဟုတ် Alt လိုသည်။</string>
+    <string name="dejavu_shortcuts_press">ခလုတ်ပေါင်းစပ်မှု အသစ်ကို နှိပ်ပါ။</string>
+    <string name="dejavu_shortcuts_taken">%1$s ကို «%2$s» က အသုံးပြုနေပြီ။ လဲလှယ်ပါက «%2$s» ကို ဤဖြတ်လမ်း၏ လက်ရှိခလုတ်ကို ပေးမည်၊ သို့မဟုတ် ဘာမျှမပြောင်းရန် ပယ်ဖျက်ပါ။</string>
+    <string name="dejavu_shortcuts_current">လက်ရှိ: %1$s</string>
+    <string name="dejavu_shortcuts_text_keys">စာသားအကွက်များနှင့် ဝဘ်စာမျက်နှာများသည် အာရုံစိုက်ခံရချိန်တွင် %1$s ကို ထိန်းထားသည်။</string>
+    <string name="dejavu_shortcuts_none">မရှိ</string>
+    <string name="dejavu_shortcuts_save">သိမ်းရန်</string>
+    <string name="dejavu_shortcuts_swap">လဲလှယ်ရန်</string>
+    <string name="dejavu_shortcuts_clear">ရှင်းရန်</string>
+    <string name="dejavu_shortcuts_reset">မူလသို့ ပြန်ထားရန်</string>
+    <string name="dejavu_shortcut_next_tab">နောက်တဘ်</string>
+    <string name="dejavu_shortcut_previous_tab">ယခင်တဘ်</string>
+    <string name="dejavu_shortcut_new_tab">တဘ်အသစ်</string>
+    <string name="dejavu_shortcut_close_tab">တဘ်ပိတ်ရန်</string>
+    <string name="dejavu_shortcut_restore_tab">ပိတ်ထားသောတဘ် ပြန်ယူရန်</string>
+    <string name="dejavu_shortcut_address_bar">လိပ်စာ တည်းဖြတ်ရန်</string>
+    <string name="dejavu_shortcut_reload">စာမျက်နှာ ပြန်ဖွင့်ရန်</string>
+    <string name="dejavu_shortcut_tab_n">တဘ် %1$d သို့ သွားရန်</string>
+    <string name="dejavu_shortcut_last_tab">နောက်ဆုံးတဘ်သို့ သွားရန်</string>
 </resources>

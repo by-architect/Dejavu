@@ -551,4 +551,25 @@
     <string name="dejavu_settings_tips_summary">Mostrar dicas sobre gestos ocultos, como manter “Nova aba” pressionado</string>
     <string name="dejavu_new">Novidade</string>
     <string name="dejavu_menu_customize_reader_view">Personalizar modo de leitura</string>
+    <string name="dejavu_settings_shortcuts">Atalhos de teclado</string>
+    <string name="dejavu_settings_shortcuts_summary">Mude as teclas dos atalhos para um teclado físico</string>
+    <string name="dejavu_shortcuts_hint">Toque em um atalho para dar outra tecla a ele. Atalhos precisam de Ctrl ou Alt.</string>
+    <string name="dejavu_shortcuts_press">Pressione a nova combinação de teclas.</string>
+    <string name="dejavu_shortcuts_taken">%1$s já é usado por “%2$s”. Trocar dá a “%2$s” a tecla atual deste atalho, ou cancele para não mudar nada.</string>
+    <string name="dejavu_shortcuts_current">Atual: %1$s</string>
+    <string name="dejavu_shortcuts_text_keys">Campos de texto e páginas web mantêm %1$s enquanto estão em foco.</string>
+    <string name="dejavu_shortcuts_none">Nenhum</string>
+    <string name="dejavu_shortcuts_save">Salvar</string>
+    <string name="dejavu_shortcuts_swap">Trocar</string>
+    <string name="dejavu_shortcuts_clear">Limpar</string>
+    <string name="dejavu_shortcuts_reset">Restaurar padrão</string>
+    <string name="dejavu_shortcut_next_tab">Próxima aba</string>
+    <string name="dejavu_shortcut_previous_tab">Aba anterior</string>
+    <string name="dejavu_shortcut_new_tab">Nova aba</string>
+    <string name="dejavu_shortcut_close_tab">Fechar aba</string>
+    <string name="dejavu_shortcut_restore_tab">Restaurar aba fechada</string>
+    <string name="dejavu_shortcut_address_bar">Editar endereço</string>
+    <string name="dejavu_shortcut_reload">Recarregar página</string>
+    <string name="dejavu_shortcut_tab_n">Ir para a aba %1$d</string>
+    <string name="dejavu_shortcut_last_tab">Ir para a última aba</string>
 </resources>

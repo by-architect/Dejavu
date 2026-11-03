@@ -567,4 +567,25 @@
     <string name="dejavu_settings_tips_summary">Taispeáin leideanna faoi ghothaí folaithe, mar shampla “Cluaisín nua” a choinneáil brúite</string>
     <string name="dejavu_new">Nua</string>
     <string name="dejavu_menu_customize_reader_view">Saincheap an t-amharc léitheoireachta</string>
+    <string name="dejavu_settings_shortcuts">Aicearraí méarchláir</string>
+    <string name="dejavu_settings_shortcuts_summary">Athraigh eochracha na n-aicearraí do mhéarchlár crua-earraí</string>
+    <string name="dejavu_shortcuts_hint">Tapáil aicearra chun eochair eile a thabhairt dó. Teastaíonn Ctrl nó Alt ó aicearraí.</string>
+    <string name="dejavu_shortcuts_press">Brúigh an teaglaim nua eochracha.</string>
+    <string name="dejavu_shortcuts_taken">Tá %1$s in úsáid cheana ag \"%2$s\". Tugann Babhtáil eochair reatha an aicearra seo do \"%2$s\", nó cealaigh chun gan aon rud a athrú.</string>
+    <string name="dejavu_shortcuts_current">Reatha: %1$s</string>
+    <string name="dejavu_shortcuts_text_keys">Coinníonn réimsí téacs agus leathanaigh ghréasáin %1$s fad atá an fócas acu.</string>
+    <string name="dejavu_shortcuts_none">Dada</string>
+    <string name="dejavu_shortcuts_save">Sábháil</string>
+    <string name="dejavu_shortcuts_swap">Babhtáil</string>
+    <string name="dejavu_shortcuts_clear">Glan</string>
+    <string name="dejavu_shortcuts_reset">Athshocraigh go réamhshocrú</string>
+    <string name="dejavu_shortcut_next_tab">An chéad chluaisín eile</string>
+    <string name="dejavu_shortcut_previous_tab">An cluaisín roimhe seo</string>
+    <string name="dejavu_shortcut_new_tab">Cluaisín nua</string>
+    <string name="dejavu_shortcut_close_tab">Dún an cluaisín</string>
+    <string name="dejavu_shortcut_restore_tab">Athchóirigh cluaisín dúnta</string>
+    <string name="dejavu_shortcut_address_bar">Cuir an seoladh in eagar</string>
+    <string name="dejavu_shortcut_reload">Athlódáil an leathanach</string>
+    <string name="dejavu_shortcut_tab_n">Téigh go cluaisín %1$d</string>
+    <string name="dejavu_shortcut_last_tab">Téigh go dtí an cluaisín deireanach</string>
 </resources>

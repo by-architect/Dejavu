@@ -543,4 +543,25 @@
     <string name="dejavu_settings_tips_summary">Gizli jestlər haqqında məsləhətlər göstər, məsələn, Yeni vərəq düyməsini basıb saxlamaq</string>
     <string name="dejavu_new">Yeni</string>
     <string name="dejavu_menu_customize_reader_view">Oxuyucu görünüşünü fərdiləşdir</string>
+    <string name="dejavu_settings_shortcuts">Klaviatura qısayolları</string>
+    <string name="dejavu_settings_shortcuts_summary">Fiziki klaviatura üçün qısayolların düymələrini dəyişin</string>
+    <string name="dejavu_shortcuts_hint">Başqa düymə vermək üçün qısayola toxunun. Qısayollar Ctrl və ya Alt tələb edir.</string>
+    <string name="dejavu_shortcuts_press">Yeni düymə birləşməsini basın.</string>
+    <string name="dejavu_shortcuts_taken">%1$s artıq «%2$s» tərəfindən istifadə olunur. Dəyiş «%2$s» əmrinə bu qısayolun hazırkı düyməsini verir, heç nəyi dəyişməmək üçün ləğv edin.</string>
+    <string name="dejavu_shortcuts_current">Hazırkı: %1$s</string>
+    <string name="dejavu_shortcuts_text_keys">Mətn sahələri və veb səhifələr fokusda olduqda %1$s onlarda qalır.</string>
+    <string name="dejavu_shortcuts_none">Heç biri</string>
+    <string name="dejavu_shortcuts_save">Saxla</string>
+    <string name="dejavu_shortcuts_swap">Dəyiş</string>
+    <string name="dejavu_shortcuts_clear">Təmizlə</string>
+    <string name="dejavu_shortcuts_reset">Standarta sıfırla</string>
+    <string name="dejavu_shortcut_next_tab">Növbəti vərəq</string>
+    <string name="dejavu_shortcut_previous_tab">Əvvəlki vərəq</string>
+    <string name="dejavu_shortcut_new_tab">Yeni vərəq</string>
+    <string name="dejavu_shortcut_close_tab">Vərəqi bağla</string>
+    <string name="dejavu_shortcut_restore_tab">Bağlanmış vərəqi bərpa et</string>
+    <string name="dejavu_shortcut_address_bar">Ünvanı düzəlt</string>
+    <string name="dejavu_shortcut_reload">Səhifəni yenilə</string>
+    <string name="dejavu_shortcut_tab_n">%1$d. vərəqə keç</string>
+    <string name="dejavu_shortcut_last_tab">Son vərəqə keç</string>
 </resources>

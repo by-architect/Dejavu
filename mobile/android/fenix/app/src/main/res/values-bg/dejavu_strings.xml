@@ -543,4 +543,25 @@
     <string name="dejavu_settings_tips_summary">Показване на съвети за скрити жестове, като задържане на „Нов раздел“</string>
     <string name="dejavu_new">Нов</string>
     <string name="dejavu_menu_customize_reader_view">Приспособяване на изгледа за четене</string>
+    <string name="dejavu_settings_shortcuts">Клавишни комбинации</string>
+    <string name="dejavu_settings_shortcuts_summary">Промяна на клавишите на комбинациите за физическа клавиатура</string>
+    <string name="dejavu_shortcuts_hint">Докоснете комбинация, за да ѝ зададете друг клавиш. Комбинациите изискват Ctrl или Alt.</string>
+    <string name="dejavu_shortcuts_press">Натиснете новата клавишна комбинация.</string>
+    <string name="dejavu_shortcuts_taken">%1$s вече се използва от „%2$s“. Размяната дава на „%2$s“ текущия клавиш на тази комбинация, или откажете, за да не променяте нищо.</string>
+    <string name="dejavu_shortcuts_current">Текуща: %1$s</string>
+    <string name="dejavu_shortcuts_text_keys">Текстовите полета и уеб страниците запазват %1$s, докато са на фокус.</string>
+    <string name="dejavu_shortcuts_none">Няма</string>
+    <string name="dejavu_shortcuts_save">Запазване</string>
+    <string name="dejavu_shortcuts_swap">Размяна</string>
+    <string name="dejavu_shortcuts_clear">Изчистване</string>
+    <string name="dejavu_shortcuts_reset">Възстановяване на стандартните</string>
+    <string name="dejavu_shortcut_next_tab">Следващ раздел</string>
+    <string name="dejavu_shortcut_previous_tab">Предишен раздел</string>
+    <string name="dejavu_shortcut_new_tab">Нов раздел</string>
+    <string name="dejavu_shortcut_close_tab">Затваряне на раздел</string>
+    <string name="dejavu_shortcut_restore_tab">Възстановяване на затворен раздел</string>
+    <string name="dejavu_shortcut_address_bar">Редактиране на адреса</string>
+    <string name="dejavu_shortcut_reload">Презареждане на страницата</string>
+    <string name="dejavu_shortcut_tab_n">Към раздел %1$d</string>
+    <string name="dejavu_shortcut_last_tab">Към последния раздел</string>
 </resources>

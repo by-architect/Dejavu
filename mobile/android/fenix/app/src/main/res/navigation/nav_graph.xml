@@ -19,6 +19,7 @@
     <include app:graph="@navigation/dejavu_bars_graph" />
     <include app:graph="@navigation/dejavu_passwords_language_graph" />
     <include app:graph="@navigation/dejavu_welcome_graph" />
+    <include app:graph="@navigation/dejavu_shortcuts_graph" />
 
     <action
         android:id="@+id/action_startup_home"

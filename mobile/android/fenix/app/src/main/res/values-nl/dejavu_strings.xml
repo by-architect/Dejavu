@@ -543,4 +543,25 @@
     <string name="dejavu_settings_tips_summary">Tips tonen over verborgen bewegingen, zoals “Nieuw tabblad” ingedrukt houden</string>
     <string name="dejavu_new">Nieuw</string>
     <string name="dejavu_menu_customize_reader_view">Lezerweergave aanpassen</string>
+    <string name="dejavu_settings_shortcuts">Sneltoetsen</string>
+    <string name="dejavu_settings_shortcuts_summary">De toetsen van de sneltoetsen voor een fysiek toetsenbord wijzigen</string>
+    <string name="dejavu_shortcuts_hint">Tik op een sneltoets om er een andere toets aan te geven. Sneltoetsen hebben Ctrl of Alt nodig.</string>
+    <string name="dejavu_shortcuts_press">Druk op de nieuwe toetscombinatie.</string>
+    <string name="dejavu_shortcuts_taken">%1$s wordt al gebruikt door ‘%2$s’. Wisselen geeft ‘%2$s’ de huidige toets van deze sneltoets, of annuleer om niets te wijzigen.</string>
+    <string name="dejavu_shortcuts_current">Huidig: %1$s</string>
+    <string name="dejavu_shortcuts_text_keys">Tekstvelden en webpagina’s houden %1$s zolang ze de focus hebben.</string>
+    <string name="dejavu_shortcuts_none">Geen</string>
+    <string name="dejavu_shortcuts_save">Opslaan</string>
+    <string name="dejavu_shortcuts_swap">Wisselen</string>
+    <string name="dejavu_shortcuts_clear">Wissen</string>
+    <string name="dejavu_shortcuts_reset">Standaard herstellen</string>
+    <string name="dejavu_shortcut_next_tab">Volgend tabblad</string>
+    <string name="dejavu_shortcut_previous_tab">Vorig tabblad</string>
+    <string name="dejavu_shortcut_new_tab">Nieuw tabblad</string>
+    <string name="dejavu_shortcut_close_tab">Tabblad sluiten</string>
+    <string name="dejavu_shortcut_restore_tab">Gesloten tabblad herstellen</string>
+    <string name="dejavu_shortcut_address_bar">Adres bewerken</string>
+    <string name="dejavu_shortcut_reload">Pagina vernieuwen</string>
+    <string name="dejavu_shortcut_tab_n">Naar tabblad %1$d</string>
+    <string name="dejavu_shortcut_last_tab">Naar laatste tabblad</string>
 </resources>

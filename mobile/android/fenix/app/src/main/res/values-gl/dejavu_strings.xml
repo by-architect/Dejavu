@@ -543,4 +543,25 @@
     <string name="dejavu_settings_tips_summary">Amosar consellos sobre xestos agochados, como manter premido «Nova lapela»</string>
     <string name="dejavu_new">Novo</string>
     <string name="dejavu_menu_customize_reader_view">Personalizar a vista de lectura</string>
+    <string name="dejavu_settings_shortcuts">Atallos de teclado</string>
+    <string name="dejavu_settings_shortcuts_summary">Cambia as teclas dos atallos para un teclado físico</string>
+    <string name="dejavu_shortcuts_hint">Toca un atallo para darlle outra tecla. Os atallos precisan Ctrl ou Alt.</string>
+    <string name="dejavu_shortcuts_press">Preme a nova combinación de teclas.</string>
+    <string name="dejavu_shortcuts_taken">«%2$s» xa usa %1$s. Intercambiar dálle a «%2$s» a tecla actual deste atallo, ou cancela para non cambiar nada.</string>
+    <string name="dejavu_shortcuts_current">Actual: %1$s</string>
+    <string name="dejavu_shortcuts_text_keys">Os campos de texto e as páxinas web conservan %1$s mentres teñen o foco.</string>
+    <string name="dejavu_shortcuts_none">Ningún</string>
+    <string name="dejavu_shortcuts_save">Gardar</string>
+    <string name="dejavu_shortcuts_swap">Intercambiar</string>
+    <string name="dejavu_shortcuts_clear">Borrar</string>
+    <string name="dejavu_shortcuts_reset">Restabelecer o predeterminado</string>
+    <string name="dejavu_shortcut_next_tab">Lapela seguinte</string>
+    <string name="dejavu_shortcut_previous_tab">Lapela anterior</string>
+    <string name="dejavu_shortcut_new_tab">Nova lapela</string>
+    <string name="dejavu_shortcut_close_tab">Pechar a lapela</string>
+    <string name="dejavu_shortcut_restore_tab">Restaurar a lapela pechada</string>
+    <string name="dejavu_shortcut_address_bar">Editar o enderezo</string>
+    <string name="dejavu_shortcut_reload">Recargar a páxina</string>
+    <string name="dejavu_shortcut_tab_n">Ir á lapela %1$d</string>
+    <string name="dejavu_shortcut_last_tab">Ir á última lapela</string>
 </resources>

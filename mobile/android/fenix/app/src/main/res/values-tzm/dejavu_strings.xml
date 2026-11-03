@@ -543,4 +543,25 @@
     <string name="dejavu_settings_tips_summary">Sken-d iwellihen ɣef yisillifen yeffren, am tuṭṭfa deg “Aseksel amaynu”</string>
     <string name="dejavu_new">Amaynu</string>
     <string name="dejavu_menu_customize_reader_view">Sagen tamuɣli n tɣuri</string>
+    <string name="dejavu_settings_shortcuts">Inegzumen n unasiw</string>
+    <string name="dejavu_settings_shortcuts_summary">Senfel tisura n inegzumen i unasiw ilman</string>
+    <string name="dejavu_shortcuts_hint">Sit ɣef unegzum bac ad as tefkt tasarut yaḍnin. Inegzumen ran Ctrl niɣ Alt.</string>
+    <string name="dejavu_shortcuts_press">Bbi ɣef umsmun amaynu n tsura.</string>
+    <string name="dejavu_shortcuts_taken">%1$s ittusxdem yad sɣur «%2$s». Senfel ad yefk i «%2$s» tasarut n unegzum-a, niɣ sbedd bac ur ttbeddal walu.</string>
+    <string name="dejavu_shortcuts_current">Amiran: %1$s</string>
+    <string name="dejavu_shortcuts_text_keys">Igran n uḍris d tisniwin n web ttḥaḍan %1$s mlmi ɣur sen asaḍes.</string>
+    <string name="dejavu_shortcuts_none">Walu</string>
+    <string name="dejavu_shortcuts_save">Ḥḍu</string>
+    <string name="dejavu_shortcuts_swap">Senfel</string>
+    <string name="dejavu_shortcuts_clear">Sfeḍ</string>
+    <string name="dejavu_shortcuts_reset">Rard s umezwaru</string>
+    <string name="dejavu_shortcut_next_tab">Accar ilkemn</string>
+    <string name="dejavu_shortcut_previous_tab">Accar izrin</string>
+    <string name="dejavu_shortcut_new_tab">Accar amaynu</string>
+    <string name="dejavu_shortcut_close_tab">Rgel accar</string>
+    <string name="dejavu_shortcut_restore_tab">Rard accar ittwargln</string>
+    <string name="dejavu_shortcut_address_bar">Ẓreg tansa</string>
+    <string name="dejavu_shortcut_reload">Ales asali n tasna</string>
+    <string name="dejavu_shortcut_tab_n">Ddu s accar %1$d</string>
+    <string name="dejavu_shortcut_last_tab">Ddu s accar aneggaru</string>
 </resources>

@@ -543,4 +543,25 @@
     <string name="dejavu_settings_tips_summary">Afficher des conseils sur les beese junngo cachés, comme l\'appui long sur Tabbere hesere</string>
     <string name="dejavu_new">Hesere</string>
     <string name="dejavu_menu_customize_reader_view">Heertin jiytol tarorde</string>
+    <string name="dejavu_settings_shortcuts">Dowe jaawɗe tappirde</string>
+    <string name="dejavu_settings_shortcuts_summary">Waylu tappe dowe jaawɗe ngam tappirde kaɓirgol</string>
+    <string name="dejavu_shortcuts_hint">Tappu dowol jaawngol ngam rokkude ngol tappol goɗngol. Dowe jaawɗe ina njiɗi Ctrl walla Alt.</string>
+    <string name="dejavu_shortcuts_press">Ñoƴƴu kawtal tappe kesal ngal.</string>
+    <string name="dejavu_shortcuts_taken">%1$s ina huutoraa gila e «%2$s». Lomtindir ina rokka «%2$s» tappol dowol jaawngol ngol jooni, walla haaytin ngam waasde waylude hay huunde.</string>
+    <string name="dejavu_shortcuts_current">Jooni: %1$s</string>
+    <string name="dejavu_shortcuts_text_keys">Gokkiiɗe binndi e kelle geese ina ndesa %1$s tuma nde ɗe ngondi e fokus.</string>
+    <string name="dejavu_shortcuts_none">Hay gooto</string>
+    <string name="dejavu_shortcuts_save">Danndu</string>
+    <string name="dejavu_shortcuts_swap">Lomtindir</string>
+    <string name="dejavu_shortcuts_clear">Momtu</string>
+    <string name="dejavu_shortcuts_reset">Artir e goowaangal</string>
+    <string name="dejavu_shortcut_next_tab">Tabbere aroore</string>
+    <string name="dejavu_shortcut_previous_tab">Tabbere ɓennunde</string>
+    <string name="dejavu_shortcut_new_tab">Tabbere kesere</string>
+    <string name="dejavu_shortcut_close_tab">Uddu tabbere</string>
+    <string name="dejavu_shortcut_restore_tab">Artir tabbere uddaande</string>
+    <string name="dejavu_shortcut_address_bar">Taƴto ñiiɓirde</string>
+    <string name="dejavu_shortcut_reload">Loowtu hello</string>
+    <string name="dejavu_shortcut_tab_n">Yah to tabbere %1$d</string>
+    <string name="dejavu_shortcut_last_tab">Yah to tabbere sakkitiinde</string>
 </resources>

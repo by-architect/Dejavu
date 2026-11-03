@@ -543,4 +543,25 @@
     <string name="dejavu_settings_tips_summary">Mostrar consejos sobre gestos ocultos, como mantener presionado “Rakïj ñanj nakàa”</string>
     <string name="dejavu_new">Nakàa</string>
     <string name="dejavu_menu_customize_reader_view">Nāgi’hiaj da’ Nānùn man guendâ Gāhiāt</string>
+    <string name="dejavu_settings_shortcuts">Si nuguan\' teclado</string>
+    <string name="dejavu_settings_shortcuts_summary">Nagi\'iaj ñu\'unj tecla nga si nuguan\' teclado</string>
+    <string name="dejavu_shortcuts_hint">Ga\'ue gūru\'man ni gā\'ue rūguñu\'unj nej si tecla. Nuguan\' na̱nj ni nī\'ñan Ctrl asi Alt.</string>
+    <string name="dejavu_shortcuts_press">Ga\'ue sa nakaa tecla nakàa.</string>
+    <string name="dejavu_shortcuts_taken">%1$s nī\'ñan ma «%2$s». Nagui\'ij ri\' ra\'a «%2$s» tecla nikaj nuguan\' nan, asi dūnikïn\' da\' si ga\'ue nāgi\'iaj sa ma.</string>
+    <string name="dejavu_shortcuts_current">Ahuin: %1$s</string>
+    <string name="dejavu_shortcuts_text_keys">Nej sa ga\'ue gā\'ue gā ruguñu\'unj ni nej pájina web nikaj %1$s ane\'en.</string>
+    <string name="dejavu_shortcuts_none">Nitaj si ma</string>
+    <string name="dejavu_shortcuts_save">Na\'nïnj sà\'</string>
+    <string name="dejavu_shortcuts_swap">Nagui\'ij</string>
+    <string name="dejavu_shortcuts_clear">Dure\'</string>
+    <string name="dejavu_shortcuts_reset">Nagi\'iaj ñu\'unj gā\'ue doj</string>
+    <string name="dejavu_shortcut_next_tab">Pestaña ne\' ñaan</string>
+    <string name="dejavu_shortcut_previous_tab">Pestaña ne\' rūkù</string>
+    <string name="dejavu_shortcut_new_tab">Pestaña nakàa</string>
+    <string name="dejavu_shortcut_close_tab">Narán pestaña</string>
+    <string name="dejavu_shortcut_restore_tab">Nagi\'iaj ñu\'unj pestaña narán</string>
+    <string name="dejavu_shortcut_address_bar">Nagi\'iaj ñu\'unj dirección</string>
+    <string name="dejavu_shortcut_reload">Na\'nïnj ñû pájina</string>
+    <string name="dejavu_shortcut_tab_n">Gu\'nàj pestaña %1$d</string>
+    <string name="dejavu_shortcut_last_tab">Gu\'nàj pestaña ne\' rūkù nïn</string>
 </resources>

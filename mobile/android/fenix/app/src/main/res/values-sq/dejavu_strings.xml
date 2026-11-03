@@ -543,4 +543,25 @@
     <string name="dejavu_settings_tips_summary">Shfaq ndihmëza mbi gjeste të fshehura, si mbajtja shtypur e “Skedë e re”</string>
     <string name="dejavu_new">E re</string>
     <string name="dejavu_menu_customize_reader_view">Përshtate pamjen lexues</string>
+    <string name="dejavu_settings_shortcuts">Shkurtore tastiere</string>
+    <string name="dejavu_settings_shortcuts_summary">Ndryshoni tastet e shkurtoreve për një tastierë fizike</string>
+    <string name="dejavu_shortcuts_hint">Prekni një shkurtore që t’i jepni një tast tjetër. Shkurtoret duan Ctrl ose Alt.</string>
+    <string name="dejavu_shortcuts_press">Shtypni kombinimin e ri të tasteve.</string>
+    <string name="dejavu_shortcuts_taken">%1$s përdoret tashmë nga “%2$s”. Këmbe i jep “%2$s” tastin e tanishëm të kësaj shkurtoreje, ose anulojeni që të mos ndryshojë gjë.</string>
+    <string name="dejavu_shortcuts_current">E tanishme: %1$s</string>
+    <string name="dejavu_shortcuts_text_keys">Fushat e tekstit dhe faqet web e mbajnë %1$s ndërsa janë në fokus.</string>
+    <string name="dejavu_shortcuts_none">Asnjë</string>
+    <string name="dejavu_shortcuts_save">Ruaje</string>
+    <string name="dejavu_shortcuts_swap">Këmbe</string>
+    <string name="dejavu_shortcuts_clear">Spastroje</string>
+    <string name="dejavu_shortcuts_reset">Riktheje te parazgjedhja</string>
+    <string name="dejavu_shortcut_next_tab">Skeda pasuese</string>
+    <string name="dejavu_shortcut_previous_tab">Skeda e mëparshme</string>
+    <string name="dejavu_shortcut_new_tab">Skedë e re</string>
+    <string name="dejavu_shortcut_close_tab">Mbylle skedën</string>
+    <string name="dejavu_shortcut_restore_tab">Riktheje skedën e mbyllur</string>
+    <string name="dejavu_shortcut_address_bar">Përpunoni adresën</string>
+    <string name="dejavu_shortcut_reload">Ringarkoje faqen</string>
+    <string name="dejavu_shortcut_tab_n">Shko te skeda %1$d</string>
+    <string name="dejavu_shortcut_last_tab">Shko te skeda e fundit</string>
 </resources>

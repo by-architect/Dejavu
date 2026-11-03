@@ -543,4 +543,25 @@
     <string name="dejavu_settings_tips_summary">«Жаңа бет» түймесін басып тұру сияқты жасырын ым қимылдары туралы кеңестерді көрсету</string>
     <string name="dejavu_new">Жаңа</string>
     <string name="dejavu_menu_customize_reader_view">Оқу режимін баптау</string>
+    <string name="dejavu_settings_shortcuts">Пернетақта жарлықтары</string>
+    <string name="dejavu_settings_shortcuts_summary">Аппараттық пернетақта үшін жарлықтардың пернелерін өзгерту</string>
+    <string name="dejavu_shortcuts_hint">Басқа перне беру үшін жарлықты түртіңіз. Жарлықтарға Ctrl немесе Alt керек.</string>
+    <string name="dejavu_shortcuts_press">Жаңа перне комбинациясын басыңыз.</string>
+    <string name="dejavu_shortcuts_taken">%1$s «%2$s» үшін қолданылып тұр. Алмастыру «%2$s» әрекетіне осы жарлықтың ағымдағы пернесін береді, немесе ештеңе өзгертпеу үшін бас тартыңыз.</string>
+    <string name="dejavu_shortcuts_current">Ағымдағы: %1$s</string>
+    <string name="dejavu_shortcuts_text_keys">Мәтін өрістері мен веб-беттер фокуста тұрғанда %1$s оларда қалады.</string>
+    <string name="dejavu_shortcuts_none">Жоқ</string>
+    <string name="dejavu_shortcuts_save">Сақтау</string>
+    <string name="dejavu_shortcuts_swap">Алмастыру</string>
+    <string name="dejavu_shortcuts_clear">Тазарту</string>
+    <string name="dejavu_shortcuts_reset">Бастапқыға қайтару</string>
+    <string name="dejavu_shortcut_next_tab">Келесі бет</string>
+    <string name="dejavu_shortcut_previous_tab">Алдыңғы бет</string>
+    <string name="dejavu_shortcut_new_tab">Жаңа бет</string>
+    <string name="dejavu_shortcut_close_tab">Бетті жабу</string>
+    <string name="dejavu_shortcut_restore_tab">Жабылған бетті қалпына келтіру</string>
+    <string name="dejavu_shortcut_address_bar">Адресті түзету</string>
+    <string name="dejavu_shortcut_reload">Парақты қайта жүктеу</string>
+    <string name="dejavu_shortcut_tab_n">%1$d-бетке өту</string>
+    <string name="dejavu_shortcut_last_tab">Соңғы бетке өту</string>
 </resources>

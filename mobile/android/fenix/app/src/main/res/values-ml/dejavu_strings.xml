@@ -543,4 +543,25 @@
     <string name="dejavu_settings_tips_summary">“പുതിയ ടാബ്” അമർത്തിപ്പിടിക്കുന്നത് പോലുള്ള മറഞ്ഞിരിക്കുന്ന ആംഗ്യങ്ങളെക്കുറിച്ചുള്ള നുറുങ്ങുകൾ കാണിക്കുക</string>
     <string name="dejavu_new">പുതിയത്</string>
     <string name="dejavu_menu_customize_reader_view">വായനയ്ക്കുള്ള കാഴ്ച ഇഷ്ടാനുസൃതമാക്കുക</string>
+    <string name="dejavu_settings_shortcuts">കീബോർഡ് കുറുക്കുവഴികൾ</string>
+    <string name="dejavu_settings_shortcuts_summary">ഹാർഡ്‌വെയർ കീബോർഡിനായി കുറുക്കുവഴികളുടെ കീകൾ മാറ്റുക</string>
+    <string name="dejavu_shortcuts_hint">മറ്റൊരു കീ നൽകാൻ ഒരു കുറുക്കുവഴിയിൽ ടാപ്പ് ചെയ്യുക. കുറുക്കുവഴികൾക്ക് Ctrl അല്ലെങ്കിൽ Alt വേണം.</string>
+    <string name="dejavu_shortcuts_press">പുതിയ കീ കോമ്പിനേഷൻ അമർത്തുക.</string>
+    <string name="dejavu_shortcuts_taken">%1$s ഇതിനകം «%2$s» ഉപയോഗിക്കുന്നു. പരസ്പരം മാറ്റുക «%2$s»-ന് ഈ കുറുക്കുവഴിയുടെ നിലവിലെ കീ നൽകും, അല്ലെങ്കിൽ ഒന്നും മാറ്റാതിരിക്കാൻ റദ്ദാക്കുക.</string>
+    <string name="dejavu_shortcuts_current">നിലവിൽ: %1$s</string>
+    <string name="dejavu_shortcuts_text_keys">ടെക്സ്റ്റ് ഫീൽഡുകളും വെബ് പേജുകളും ഫോക്കസിലുള്ളപ്പോൾ %1$s നിലനിർത്തുന്നു.</string>
+    <string name="dejavu_shortcuts_none">ഒന്നുമില്ല</string>
+    <string name="dejavu_shortcuts_save">സംരക്ഷിക്കുക</string>
+    <string name="dejavu_shortcuts_swap">പരസ്പരം മാറ്റുക</string>
+    <string name="dejavu_shortcuts_clear">മായ്ക്കുക</string>
+    <string name="dejavu_shortcuts_reset">സ്ഥിരസ്ഥിതിയിലേക്ക് പുനഃസജ്ജമാക്കുക</string>
+    <string name="dejavu_shortcut_next_tab">അടുത്ത ടാബ്</string>
+    <string name="dejavu_shortcut_previous_tab">മുമ്പത്തെ ടാബ്</string>
+    <string name="dejavu_shortcut_new_tab">പുതിയ ടാബ്</string>
+    <string name="dejavu_shortcut_close_tab">ടാബ് അടയ്ക്കുക</string>
+    <string name="dejavu_shortcut_restore_tab">അടച്ച ടാബ് പുനഃസ്ഥാപിക്കുക</string>
+    <string name="dejavu_shortcut_address_bar">വിലാസം തിരുത്തുക</string>
+    <string name="dejavu_shortcut_reload">പേജ് വീണ്ടും ലോഡ് ചെയ്യുക</string>
+    <string name="dejavu_shortcut_tab_n">ടാബ് %1$d-ലേക്ക് പോകുക</string>
+    <string name="dejavu_shortcut_last_tab">അവസാന ടാബിലേക്ക് പോകുക</string>
 </resources>

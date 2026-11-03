@@ -535,4 +535,25 @@
     <string name="dejavu_settings_tips_summary">「新しいタブ」の長押しなど、隠れたジェスチャーのヒントを表示します</string>
     <string name="dejavu_new">新機能</string>
     <string name="dejavu_menu_customize_reader_view">リーダービューをカスタマイズ</string>
+    <string name="dejavu_settings_shortcuts">キーボードショートカット</string>
+    <string name="dejavu_settings_shortcuts_summary">ハードウェアキーボード用のショートカットのキーを変更します</string>
+    <string name="dejavu_shortcuts_hint">ショートカットをタップすると別のキーを割り当てられます。ショートカットには Ctrl か Alt が必要です。</string>
+    <string name="dejavu_shortcuts_press">新しいキーの組み合わせを押してください。</string>
+    <string name="dejavu_shortcuts_taken">%1$s はすでに「%2$s」で使われています。入れ替えると「%2$s」にこのショートカットの現在のキーが割り当てられます。キャンセルすると何も変更されません。</string>
+    <string name="dejavu_shortcuts_current">現在: %1$s</string>
+    <string name="dejavu_shortcuts_text_keys">テキスト欄とウェブページはフォーカスがある間 %1$s を使います。</string>
+    <string name="dejavu_shortcuts_none">なし</string>
+    <string name="dejavu_shortcuts_save">保存</string>
+    <string name="dejavu_shortcuts_swap">入れ替え</string>
+    <string name="dejavu_shortcuts_clear">クリア</string>
+    <string name="dejavu_shortcuts_reset">既定に戻す</string>
+    <string name="dejavu_shortcut_next_tab">次のタブ</string>
+    <string name="dejavu_shortcut_previous_tab">前のタブ</string>
+    <string name="dejavu_shortcut_new_tab">新しいタブ</string>
+    <string name="dejavu_shortcut_close_tab">タブを閉じる</string>
+    <string name="dejavu_shortcut_restore_tab">閉じたタブを元に戻す</string>
+    <string name="dejavu_shortcut_address_bar">アドレスを編集</string>
+    <string name="dejavu_shortcut_reload">ページを再読み込み</string>
+    <string name="dejavu_shortcut_tab_n">タブ %1$d へ移動</string>
+    <string name="dejavu_shortcut_last_tab">最後のタブへ移動</string>
 </resources>

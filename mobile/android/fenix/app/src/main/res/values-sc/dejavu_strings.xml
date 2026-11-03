@@ -543,4 +543,25 @@
     <string name="dejavu_settings_tips_summary">Ammustra cussìgios subra de is gestos cuados, comente mantènnere pretzionadu “Ischeda noa”</string>
     <string name="dejavu_new">Nou</string>
     <string name="dejavu_menu_customize_reader_view">Personaliza sa visualizatzione de letura</string>
+    <string name="dejavu_settings_shortcuts">Curtzadòrgios de tecladu</string>
+    <string name="dejavu_settings_shortcuts_summary">Muda sas tecras de sos curtzadòrgios pro unu tecladu fìsicu</string>
+    <string name="dejavu_shortcuts_hint">Toca unu curtzadòrgiu pro li dare un\'àtera tecra. Sos curtzadòrgios tenent bisòngiu de Ctrl o Alt.</string>
+    <string name="dejavu_shortcuts_press">Incarca sa cumbinatzione noa de tecras.</string>
+    <string name="dejavu_shortcuts_taken">%1$s est giai impreadu dae «%2$s». Cuncàmbia dat a «%2$s» sa tecra atuale de custu curtzadòrgiu, o annulla pro non mudare nudda.</string>
+    <string name="dejavu_shortcuts_current">Atuale: %1$s</string>
+    <string name="dejavu_shortcuts_text_keys">Sos campos de testu e sas pàginas web mantenent %1$s cando tenent su focus.</string>
+    <string name="dejavu_shortcuts_none">Perunu</string>
+    <string name="dejavu_shortcuts_save">Sarva</string>
+    <string name="dejavu_shortcuts_swap">Cuncàmbia</string>
+    <string name="dejavu_shortcuts_clear">Isbòida</string>
+    <string name="dejavu_shortcuts_reset">Riprìstina su predefinidu</string>
+    <string name="dejavu_shortcut_next_tab">Ischeda imbeniente</string>
+    <string name="dejavu_shortcut_previous_tab">Ischeda pretzedente</string>
+    <string name="dejavu_shortcut_new_tab">Ischeda noa</string>
+    <string name="dejavu_shortcut_close_tab">Serra s\'ischeda</string>
+    <string name="dejavu_shortcut_restore_tab">Riprìstina s\'ischeda serrada</string>
+    <string name="dejavu_shortcut_address_bar">Modìfica s\'indiritzu</string>
+    <string name="dejavu_shortcut_reload">Torra a carrigare sa pàgina</string>
+    <string name="dejavu_shortcut_tab_n">Bae a s\'ischeda %1$d</string>
+    <string name="dejavu_shortcut_last_tab">Bae a s\'ùrtima ischeda</string>
 </resources>

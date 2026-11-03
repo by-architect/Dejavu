@@ -559,4 +559,25 @@
     <string name="dejavu_settings_tips_summary">Zobraziť tipy o skrytých gestách, ako je podržanie tlačidla Nová karta</string>
     <string name="dejavu_new">Novinka</string>
     <string name="dejavu_menu_customize_reader_view">Prispôsobiť zobrazenie Čítačka</string>
+    <string name="dejavu_settings_shortcuts">Klávesové skratky</string>
+    <string name="dejavu_settings_shortcuts_summary">Zmena klávesov skratiek pre hardvérovú klávesnicu</string>
+    <string name="dejavu_shortcuts_hint">Ťuknutím na skratku jej priradíte iný kláves. Skratky potrebujú Ctrl alebo Alt.</string>
+    <string name="dejavu_shortcuts_press">Stlačte novú kombináciu klávesov.</string>
+    <string name="dejavu_shortcuts_taken">%1$s už používa „%2$s“. Vymeniť dá „%2$s“ súčasný kláves tejto skratky, alebo zrušte a nič sa nezmení.</string>
+    <string name="dejavu_shortcuts_current">Súčasná: %1$s</string>
+    <string name="dejavu_shortcuts_text_keys">Textové polia a webové stránky si ponechávajú %1$s, kým majú fokus.</string>
+    <string name="dejavu_shortcuts_none">Žiadna</string>
+    <string name="dejavu_shortcuts_save">Uložiť</string>
+    <string name="dejavu_shortcuts_swap">Vymeniť</string>
+    <string name="dejavu_shortcuts_clear">Vymazať</string>
+    <string name="dejavu_shortcuts_reset">Obnoviť predvolené</string>
+    <string name="dejavu_shortcut_next_tab">Ďalšia karta</string>
+    <string name="dejavu_shortcut_previous_tab">Predchádzajúca karta</string>
+    <string name="dejavu_shortcut_new_tab">Nová karta</string>
+    <string name="dejavu_shortcut_close_tab">Zavrieť kartu</string>
+    <string name="dejavu_shortcut_restore_tab">Obnoviť zatvorenú kartu</string>
+    <string name="dejavu_shortcut_address_bar">Upraviť adresu</string>
+    <string name="dejavu_shortcut_reload">Znova načítať stránku</string>
+    <string name="dejavu_shortcut_tab_n">Prejsť na kartu %1$d</string>
+    <string name="dejavu_shortcut_last_tab">Prejsť na poslednú kartu</string>
 </resources>

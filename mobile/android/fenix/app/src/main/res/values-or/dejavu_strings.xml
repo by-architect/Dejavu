@@ -543,4 +543,25 @@
     <string name="dejavu_settings_tips_summary">“ନୂଆ ଟ୍ୟାବ୍” ଦବାଇ ଧରିବା ଭଳି ଲୁଚିଥିବା ଜେଶ୍ଚର୍ ବିଷୟରେ ପରାମର୍ଶ ଦେଖାନ୍ତୁ</string>
     <string name="dejavu_new">ନୂଆ</string>
     <string name="dejavu_menu_customize_reader_view">ପାଠକ ଦୃଶ୍ୟ କଷ୍ଟମାଇଜ୍ କରନ୍ତୁ</string>
+    <string name="dejavu_settings_shortcuts">କୀବୋର୍ଡ ସର୍ଟକଟ୍</string>
+    <string name="dejavu_settings_shortcuts_summary">ହାର୍ଡୱେର କୀବୋର୍ଡ ପାଇଁ ସର୍ଟକଟ୍‌ର କୀ ବଦଳାନ୍ତୁ</string>
+    <string name="dejavu_shortcuts_hint">ଅନ୍ୟ ଏକ କୀ ଦେବା ପାଇଁ ସର୍ଟକଟ୍ ଉପରେ ଟାପ୍ କରନ୍ତୁ। ସର୍ଟକଟ୍‌କୁ Ctrl କିମ୍ବା Alt ଦରକାର।</string>
+    <string name="dejavu_shortcuts_press">ନୂଆ କୀ ସଂଯୋଜନ ଦବାନ୍ତୁ।</string>
+    <string name="dejavu_shortcuts_taken">%1$s ପୂର୍ବରୁ «%2$s» ଦ୍ୱାରା ବ୍ୟବହୃତ। ଅଦଳବଦଳ «%2$s»କୁ ଏହି ସର୍ଟକଟ୍‌ର ବର୍ତ୍ତମାନ କୀ ଦିଏ, କିମ୍ବା କିଛି ନ ବଦଳାଇବା ପାଇଁ ବାତିଲ କରନ୍ତୁ।</string>
+    <string name="dejavu_shortcuts_current">ବର୍ତ୍ତମାନ: %1$s</string>
+    <string name="dejavu_shortcuts_text_keys">ଟେକ୍ସଟ ଫିଲ୍ଡ ଏବଂ ୱେବ ପୃଷ୍ଠା ଫୋକସରେ ଥିବା ବେଳେ %1$s ରଖନ୍ତି।</string>
+    <string name="dejavu_shortcuts_none">କିଛି ନାହିଁ</string>
+    <string name="dejavu_shortcuts_save">ସଞ୍ଚୟ କରନ୍ତୁ</string>
+    <string name="dejavu_shortcuts_swap">ଅଦଳବଦଳ</string>
+    <string name="dejavu_shortcuts_clear">ସଫା କରନ୍ତୁ</string>
+    <string name="dejavu_shortcuts_reset">ଡିଫଲ୍ଟକୁ ରିସେଟ୍ କରନ୍ତୁ</string>
+    <string name="dejavu_shortcut_next_tab">ପରବର୍ତ୍ତୀ ଟ୍ୟାବ୍</string>
+    <string name="dejavu_shortcut_previous_tab">ପୂର୍ବ ଟ୍ୟାବ୍</string>
+    <string name="dejavu_shortcut_new_tab">ନୂଆ ଟ୍ୟାବ୍</string>
+    <string name="dejavu_shortcut_close_tab">ଟ୍ୟାବ୍ ବନ୍ଦ କରନ୍ତୁ</string>
+    <string name="dejavu_shortcut_restore_tab">ବନ୍ଦ ଟ୍ୟାବ୍ ଫେରାନ୍ତୁ</string>
+    <string name="dejavu_shortcut_address_bar">ଠିକଣା ସମ୍ପାଦନ କରନ୍ତୁ</string>
+    <string name="dejavu_shortcut_reload">ପୃଷ୍ଠା ପୁନଃ ଲୋଡ୍ କରନ୍ତୁ</string>
+    <string name="dejavu_shortcut_tab_n">ଟ୍ୟାବ୍ %1$dକୁ ଯାଆନ୍ତୁ</string>
+    <string name="dejavu_shortcut_last_tab">ଶେଷ ଟ୍ୟାବ୍‌କୁ ଯାଆନ୍ତୁ</string>
 </resources>

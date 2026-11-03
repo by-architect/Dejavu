@@ -551,4 +551,25 @@
     <string name="dejavu_settings_tips_summary">Mostra consells sobre gestos ocults, com ara mantenir premut «Pestanya nova»</string>
     <string name="dejavu_new">Nou</string>
     <string name="dejavu_menu_customize_reader_view">Personalitza la vista de lectura</string>
+    <string name="dejavu_settings_shortcuts">Dreceres de teclat</string>
+    <string name="dejavu_settings_shortcuts_summary">Canvia les tecles de les dreceres per a un teclat físic</string>
+    <string name="dejavu_shortcuts_hint">Toqueu una drecera per assignar-li una altra tecla. Les dreceres necessiten Ctrl o Alt.</string>
+    <string name="dejavu_shortcuts_press">Premeu la combinació de tecles nova.</string>
+    <string name="dejavu_shortcuts_taken">«%2$s» ja utilitza %1$s. Intercanvia dona a «%2$s» la tecla actual d\'aquesta drecera, o cancel·leu per no canviar res.</string>
+    <string name="dejavu_shortcuts_current">Actual: %1$s</string>
+    <string name="dejavu_shortcuts_text_keys">Els camps de text i les pàgines web conserven %1$s mentre tenen el focus.</string>
+    <string name="dejavu_shortcuts_none">Cap</string>
+    <string name="dejavu_shortcuts_save">Desa</string>
+    <string name="dejavu_shortcuts_swap">Intercanvia</string>
+    <string name="dejavu_shortcuts_clear">Esborra</string>
+    <string name="dejavu_shortcuts_reset">Restableix el valor per defecte</string>
+    <string name="dejavu_shortcut_next_tab">Pestanya següent</string>
+    <string name="dejavu_shortcut_previous_tab">Pestanya anterior</string>
+    <string name="dejavu_shortcut_new_tab">Pestanya nova</string>
+    <string name="dejavu_shortcut_close_tab">Tanca la pestanya</string>
+    <string name="dejavu_shortcut_restore_tab">Restaura la pestanya tancada</string>
+    <string name="dejavu_shortcut_address_bar">Edita l\'adreça</string>
+    <string name="dejavu_shortcut_reload">Torna a carregar la pàgina</string>
+    <string name="dejavu_shortcut_tab_n">Vés a la pestanya %1$d</string>
+    <string name="dejavu_shortcut_last_tab">Vés a l\'última pestanya</string>
 </resources>

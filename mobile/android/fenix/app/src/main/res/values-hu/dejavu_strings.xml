@@ -543,4 +543,25 @@
     <string name="dejavu_settings_tips_summary">Tippek megjelenítése a rejtett kézmozdulatokról, például az Új lap gomb hosszú megnyomásáról</string>
     <string name="dejavu_new">Új</string>
     <string name="dejavu_menu_customize_reader_view">Olvasó nézet testreszabása</string>
+    <string name="dejavu_settings_shortcuts">Billentyűparancsok</string>
+    <string name="dejavu_settings_shortcuts_summary">A billentyűparancsok billentyűinek módosítása fizikai billentyűzethez</string>
+    <string name="dejavu_shortcuts_hint">Koppintson egy billentyűparancsra, hogy másik billentyűt adjon neki. A billentyűparancsokhoz Ctrl vagy Alt kell.</string>
+    <string name="dejavu_shortcuts_press">Nyomja le az új billentyűkombinációt.</string>
+    <string name="dejavu_shortcuts_taken">A(z) %1$s már a(z) „%2$s” parancsé. A Csere a(z) „%2$s” parancsnak adja ennek a parancsnak a jelenlegi billentyűjét, vagy mégse, és semmi sem változik.</string>
+    <string name="dejavu_shortcuts_current">Jelenlegi: %1$s</string>
+    <string name="dejavu_shortcuts_text_keys">A szövegmezők és weboldalak megtartják a(z) %1$s billentyűt, amíg fókuszban vannak.</string>
+    <string name="dejavu_shortcuts_none">Nincs</string>
+    <string name="dejavu_shortcuts_save">Mentés</string>
+    <string name="dejavu_shortcuts_swap">Csere</string>
+    <string name="dejavu_shortcuts_clear">Törlés</string>
+    <string name="dejavu_shortcuts_reset">Visszaállítás alapértelmezettre</string>
+    <string name="dejavu_shortcut_next_tab">Következő lap</string>
+    <string name="dejavu_shortcut_previous_tab">Előző lap</string>
+    <string name="dejavu_shortcut_new_tab">Új lap</string>
+    <string name="dejavu_shortcut_close_tab">Lap bezárása</string>
+    <string name="dejavu_shortcut_restore_tab">Bezárt lap visszaállítása</string>
+    <string name="dejavu_shortcut_address_bar">Cím szerkesztése</string>
+    <string name="dejavu_shortcut_reload">Oldal újratöltése</string>
+    <string name="dejavu_shortcut_tab_n">Ugrás a(z) %1$d. lapra</string>
+    <string name="dejavu_shortcut_last_tab">Ugrás az utolsó lapra</string>
 </resources>

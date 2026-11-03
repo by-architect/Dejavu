@@ -543,4 +543,25 @@
     <string name="dejavu_settings_tips_summary">Mostrar consejos sobre gestos ocultos, como mantener presionado Pestaña túumben</string>
     <string name="dejavu_new">Túumben</string>
     <string name="dejavu_menu_customize_reader_view">Personalizar vista de lectura</string>
+    <string name="dejavu_settings_shortcuts">U kóom bejilo\'ob teclado</string>
+    <string name="dejavu_settings_shortcuts_summary">K\'ex u tecla u kóom bejilo\'ob ti\' jump\'éel teclado física</string>
+    <string name="dejavu_shortcuts_hint">P\'at jump\'éel kóom bej utia\'al a ts\'áik u láak\' tecla ti\'. U kóom bejilo\'ob k\'a\'abéet u yantal Ctrl wa Alt.</string>
+    <string name="dejavu_shortcuts_press">Pech\' u túumben múul tecla.</string>
+    <string name="dejavu_shortcuts_taken">%1$s ts\'o\'ok u meyaj tumen \"%2$s\". K\'ex ku ts\'áik ti\' \"%2$s\" u tecla le kóom bej je\'ela\', wa xot\'e\' utia\'al ma\' u k\'eexel mix ba\'al.</string>
+    <string name="dejavu_shortcuts_current">Bejla\'e\': %1$s</string>
+    <string name="dejavu_shortcuts_text_keys">U kúuchil ts\'íib yéetel u ju\'unil web ku kanáantiko\'ob %1$s ken yanak foco ti\'ob.</string>
+    <string name="dejavu_shortcuts_none">Mix jump\'éel</string>
+    <string name="dejavu_shortcuts_save">Líik\'sik</string>
+    <string name="dejavu_shortcuts_swap">K\'ex</string>
+    <string name="dejavu_shortcuts_clear">Tuup\'</string>
+    <string name="dejavu_shortcuts_reset">Suut ti\' u yáax</string>
+    <string name="dejavu_shortcut_next_tab">U jeel pestaña</string>
+    <string name="dejavu_shortcut_previous_tab">Pestaña máanij</string>
+    <string name="dejavu_shortcut_new_tab">Túumben pestaña</string>
+    <string name="dejavu_shortcut_close_tab">K\'al pestaña</string>
+    <string name="dejavu_shortcut_restore_tab">Suut pestaña k\'a\'alab</string>
+    <string name="dejavu_shortcut_address_bar">K\'ex dirección</string>
+    <string name="dejavu_shortcut_reload">Ka\' chaj u ju\'unil</string>
+    <string name="dejavu_shortcut_tab_n">Xi\'ik ti\' pestaña %1$d</string>
+    <string name="dejavu_shortcut_last_tab">Xi\'ik ti\' u ts\'ook pestaña</string>
 </resources>

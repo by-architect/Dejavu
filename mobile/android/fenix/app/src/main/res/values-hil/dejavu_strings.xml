@@ -543,4 +543,25 @@
     <string name="dejavu_settings_tips_summary">Ipakita ang mga tip parte sa natago nga mga gesture, pareho sang pagpindot sing madugay sa Bag-o nga Tab</string>
     <string name="dejavu_new">Bag-o</string>
     <string name="dejavu_menu_customize_reader_view">i-Customize ang reader view</string>
+    <string name="dejavu_settings_shortcuts">Mga shortcut sang keyboard</string>
+    <string name="dejavu_settings_shortcuts_summary">Ilisan ang mga yabi sang mga shortcut para sa pisikal nga keyboard</string>
+    <string name="dejavu_shortcuts_hint">I-tap ang isa ka shortcut para hatagan ini sang iban nga yabi. Ang mga shortcut nagakinahanglan sang Ctrl ukon Alt.</string>
+    <string name="dejavu_shortcuts_press">Pinduton ang bag-o nga kombinasyon sang mga yabi.</string>
+    <string name="dejavu_shortcuts_taken">Ang %1$s gin-gamit na sang \"%2$s\". Ang Bayluhan magahatag sa \"%2$s\" sang subong nga yabi sang sini nga shortcut, ukon kanselaha para wala sang mabag-o.</string>
+    <string name="dejavu_shortcuts_current">Subong: %1$s</string>
+    <string name="dejavu_shortcuts_text_keys">Ang mga text field kag web page nagabilin sa %1$s samtang yara sa ila ang focus.</string>
+    <string name="dejavu_shortcuts_none">Wala</string>
+    <string name="dejavu_shortcuts_save">I-save</string>
+    <string name="dejavu_shortcuts_swap">Bayluhan</string>
+    <string name="dejavu_shortcuts_clear">Panas-a</string>
+    <string name="dejavu_shortcuts_reset">Ibalik sa default</string>
+    <string name="dejavu_shortcut_next_tab">Masunod nga tab</string>
+    <string name="dejavu_shortcut_previous_tab">Nagligad nga tab</string>
+    <string name="dejavu_shortcut_new_tab">Bag-o nga tab</string>
+    <string name="dejavu_shortcut_close_tab">Isira ang tab</string>
+    <string name="dejavu_shortcut_restore_tab">Ibalik ang ginsirhan nga tab</string>
+    <string name="dejavu_shortcut_address_bar">Ilisan ang address</string>
+    <string name="dejavu_shortcut_reload">I-reload ang pahina</string>
+    <string name="dejavu_shortcut_tab_n">Kadto sa tab %1$d</string>
+    <string name="dejavu_shortcut_last_tab">Kadto sa katapusan nga tab</string>
 </resources>

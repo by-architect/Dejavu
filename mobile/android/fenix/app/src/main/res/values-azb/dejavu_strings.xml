@@ -543,4 +543,25 @@
     <string name="dejavu_settings_tips_summary">گیزلی ایشاره‌لر حاقیندا مصلحت‌لر گؤستر، مثلاً یئنی تاغ دوگمه‌سینی باسیب ساخلاماق</string>
     <string name="dejavu_new">یئنی</string>
     <string name="dejavu_menu_customize_reader_view">اوخوجو گؤرونوشو اؤزللشدیر</string>
+    <string name="dejavu_settings_shortcuts">کلاویاتور قیسایوللاری</string>
+    <string name="dejavu_settings_shortcuts_summary">فیزیکی کلاویاتور اوچون قیسایوللارین دویمه‌لرینی دَییشین</string>
+    <string name="dejavu_shortcuts_hint">باشقا دویمه وئرمک اوچون بیر قیسایولا توخونون. قیسایوللار Ctrl یا Alt ایسته‌ییر.</string>
+    <string name="dejavu_shortcuts_press">یئنی دویمه بیرلشمه‌سینی باسین.</string>
+    <string name="dejavu_shortcuts_taken">%1$s آرتیق «%2$s» طرفیندن ایشلنیر. دَییشمک «%2$s»-ه بو قیسایولون ایندیکی دویمه‌سینی وئریر، یا هئچ نه دَییشمه‌مک اوچون لغو ائدین.</string>
+    <string name="dejavu_shortcuts_current">ایندیکی: %1$s</string>
+    <string name="dejavu_shortcuts_text_keys">متن ساحه‌لری و وب صفحه‌لری فوکوسدا اولاندا %1$s اونلاردا قالیر.</string>
+    <string name="dejavu_shortcuts_none">هئچ بیری</string>
+    <string name="dejavu_shortcuts_save">ساخلا</string>
+    <string name="dejavu_shortcuts_swap">دَییش</string>
+    <string name="dejavu_shortcuts_clear">تمیزله</string>
+    <string name="dejavu_shortcuts_reset">اؤن‌قورولوشا قایتار</string>
+    <string name="dejavu_shortcut_next_tab">سونراکی تاب</string>
+    <string name="dejavu_shortcut_previous_tab">اؤنجه‌کی تاب</string>
+    <string name="dejavu_shortcut_new_tab">یئنی تاب</string>
+    <string name="dejavu_shortcut_close_tab">تابی باغلا</string>
+    <string name="dejavu_shortcut_restore_tab">باغلانمیش تابی قایتار</string>
+    <string name="dejavu_shortcut_address_bar">آدرسی دوزلت</string>
+    <string name="dejavu_shortcut_reload">صفحه‌نی تزه‌له</string>
+    <string name="dejavu_shortcut_tab_n">%1$d-جی تابا گئت</string>
+    <string name="dejavu_shortcut_last_tab">سون تابا گئت</string>
 </resources>

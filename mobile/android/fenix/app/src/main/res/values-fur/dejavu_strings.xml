@@ -543,4 +543,25 @@
     <string name="dejavu_settings_tips_summary">Mostre sugjeriments sui mots platâts, come tignî fracât Gnove schede</string>
     <string name="dejavu_new">Gnûf</string>
     <string name="dejavu_menu_customize_reader_view">Personalize viodude di leture</string>
+    <string name="dejavu_settings_shortcuts">Scurtis di tastiere</string>
+    <string name="dejavu_settings_shortcuts_summary">Cambie i tascj des scurtis par une tastiere fisiche</string>
+    <string name="dejavu_shortcuts_hint">Tocje une scurte par dâi un altri tast. Lis scurtis a àn bisugne di Ctrl o Alt.</string>
+    <string name="dejavu_shortcuts_press">Frache la gnove combinazion di tascj.</string>
+    <string name="dejavu_shortcuts_taken">%1$s al è za doprât di «%2$s». Scambie i da a «%2$s» il tast atuâl di cheste scurte, o anule par no cambiâ nuie.</string>
+    <string name="dejavu_shortcuts_current">Atuâl: %1$s</string>
+    <string name="dejavu_shortcuts_text_keys">I cjamps di test e lis pagjinis web a tegnin %1$s fin che a àn il focus.</string>
+    <string name="dejavu_shortcuts_none">Nissun</string>
+    <string name="dejavu_shortcuts_save">Salve</string>
+    <string name="dejavu_shortcuts_swap">Scambie</string>
+    <string name="dejavu_shortcuts_clear">Nete</string>
+    <string name="dejavu_shortcuts_reset">Ripristine il predefinît</string>
+    <string name="dejavu_shortcut_next_tab">Schede sucessive</string>
+    <string name="dejavu_shortcut_previous_tab">Schede precedente</string>
+    <string name="dejavu_shortcut_new_tab">Gnove schede</string>
+    <string name="dejavu_shortcut_close_tab">Siere schede</string>
+    <string name="dejavu_shortcut_restore_tab">Ripristine schede sierade</string>
+    <string name="dejavu_shortcut_address_bar">Modifiche direzion</string>
+    <string name="dejavu_shortcut_reload">Torne cjarie la pagjine</string>
+    <string name="dejavu_shortcut_tab_n">Va ae schede %1$d</string>
+    <string name="dejavu_shortcut_last_tab">Va ae ultime schede</string>
 </resources>
