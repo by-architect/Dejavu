@@ -551,4 +551,6 @@
     <string name="dejavu_settings_tips_summary">Mostra consegi so i gesti sconti, come tegner strucà Nova scheda</string>
     <string name="dejavu_new">Novo</string>
     <string name="dejavu_menu_customize_reader_view">Personalixa ła modalità ƚetura</string>
+    <string name="dejavu_search_keyword">Parola ciave</string>
+    <string name="dejavu_search_keyword_taken">\"%1$s\" la xe xà doparà da n\'altra parola ciave.</string>
 </resources>

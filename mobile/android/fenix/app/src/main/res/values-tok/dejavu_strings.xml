@@ -535,4 +535,6 @@
     <string name="dejavu_settings_tips_summary">o pana e toki sona pi pilin nena len, sama luka awen lon nena “poki sin”</string>
     <string name="dejavu_new">sin</string>
     <string name="dejavu_menu_customize_reader_view">o nasin e lukin pona</string>
+    <string name="dejavu_search_keyword">nimi alasa</string>
+    <string name="dejavu_search_keyword_taken">nimi \"%1$s\" li kepeken nimi alasa ante.</string>
 </resources>

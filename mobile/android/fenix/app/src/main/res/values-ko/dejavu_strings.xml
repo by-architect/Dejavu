@@ -535,4 +535,6 @@
     <string name="dejavu_settings_tips_summary">\'새 탭\' 길게 누르기 등 숨겨진 제스처에 대한 팁 표시</string>
     <string name="dejavu_new">신규</string>
     <string name="dejavu_menu_customize_reader_view">읽기 모드 사용자 지정</string>
+    <string name="dejavu_search_keyword">키워드</string>
+    <string name="dejavu_search_keyword_taken">\"%1$s\"은(는) 이미 다른 키워드에서 사용 중입니다.</string>
 </resources>

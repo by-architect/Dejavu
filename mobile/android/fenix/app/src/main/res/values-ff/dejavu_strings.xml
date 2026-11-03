@@ -543,4 +543,6 @@
     <string name="dejavu_settings_tips_summary">Afficher des conseils sur les beese junngo cachés, comme l\'appui long sur Tabbere hesere</string>
     <string name="dejavu_new">Hesere</string>
     <string name="dejavu_menu_customize_reader_view">Heertin jiytol tarorde</string>
+    <string name="dejavu_search_keyword">Kuutniral</string>
+    <string name="dejavu_search_keyword_taken">\"%1$s\" huutorama e kuutniral goɗɗo.</string>
 </resources>

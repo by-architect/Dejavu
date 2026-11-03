@@ -543,4 +543,6 @@
     <string name="dejavu_settings_tips_summary">కొత్త ట్యాబు బటన్‌ను నొక్కిపట్టుకోవడం వంటి దాగి ఉన్న సైగల గురించి చిట్కాలను చూపించు</string>
     <string name="dejavu_new">కొత్తది</string>
     <string name="dejavu_menu_customize_reader_view">చదివే వీక్షణను అభిమతీకరించు</string>
+    <string name="dejavu_search_keyword">కీవర్డ్</string>
+    <string name="dejavu_search_keyword_taken">\"%1$s\" ఇప్పటికే మరో కీవర్డ్ ఉపయోగిస్తోంది.</string>
 </resources>

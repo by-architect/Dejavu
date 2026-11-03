@@ -559,4 +559,6 @@
     <string name="dejavu_settings_tips_summary">Prikaži nasvete o skritih potezah, kot je pridržanje gumba „Nov zavihek“</string>
     <string name="dejavu_new">Novo</string>
     <string name="dejavu_menu_customize_reader_view">Prilagodi bralni pogled</string>
+    <string name="dejavu_search_keyword">Ključna beseda</string>
+    <string name="dejavu_search_keyword_taken">\"%1$s\" že uporablja druga ključna beseda.</string>
 </resources>

@@ -551,4 +551,6 @@
     <string name="dejavu_settings_tips_summary">Прикажи савете о скривеним гестовима, као што је задржавање дугмета „Нови језичак“</string>
     <string name="dejavu_new">Ново</string>
     <string name="dejavu_menu_customize_reader_view">Прилагоди приказ читача</string>
+    <string name="dejavu_search_keyword">Кључна реч</string>
+    <string name="dejavu_search_keyword_taken">„%1$s“ већ користи друга кључна реч.</string>
 </resources>

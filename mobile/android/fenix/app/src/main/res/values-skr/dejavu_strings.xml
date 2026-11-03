@@ -543,4 +543,6 @@
     <string name="dejavu_settings_tips_summary">لُکے ہوئے اشاریاں بارے مشورے ݙکھاؤ، جیویں نویں ٹیب بٹݨ کوں دبا تے رکھݨ</string>
     <string name="dejavu_new">نواں</string>
     <string name="dejavu_menu_customize_reader_view">من پسند قاری نظارہ بݨاو</string>
+    <string name="dejavu_search_keyword">کی ورڈ</string>
+    <string name="dejavu_search_keyword_taken">\"%1$s\" پہلے ای کہیں ہور کی ورڈ ولوں ورتیا ویندا پئے۔</string>
 </resources>

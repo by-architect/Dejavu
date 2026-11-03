@@ -535,4 +535,6 @@
     <string name="dejavu_settings_tips_summary">「新しいタブ」の長押しなど、隠れたジェスチャーのヒントを表示します</string>
     <string name="dejavu_new">新機能</string>
     <string name="dejavu_menu_customize_reader_view">リーダービューをカスタマイズ</string>
+    <string name="dejavu_search_keyword">キーワード</string>
+    <string name="dejavu_search_keyword_taken">「%1$s」は別のキーワードですでに使われています。</string>
 </resources>

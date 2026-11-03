@@ -576,4 +576,6 @@
     <string name="dejavu_settings_tips_summary">छिपे हुए जेस्चर के बारे में टिप्स दिखाएं, जैसे “नया टैब” को दबाकर रखना</string>
     <string name="dejavu_new">नया</string>
     <string name="dejavu_menu_customize_reader_view">रीडर व्यू को कस्टमाइज़ करें</string>
+    <string name="dejavu_search_keyword">कीवर्ड</string>
+    <string name="dejavu_search_keyword_taken">\"%1$s\" का उपयोग पहले से किसी दूसरे कीवर्ड द्वारा किया जा रहा है।</string>
 </resources>

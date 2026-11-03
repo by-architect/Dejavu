@@ -26,6 +26,7 @@ import org.mozilla.fenix.components.AppStore
  * @param searchUseCases [SearchUseCases] used for performing a search.
  * @param homepageTitle The title of the new homepage tab.
  * @param profiler [Profiler] used to add profiler markers.
+ * @param keywordResolver Dejavu: maps typed "keyword text" to the engine to search (or null to open the URL) and the text.
  */
 class FenixBrowserUseCases(
     private val appStore: AppStore,
@@ -34,7 +35,11 @@ class FenixBrowserUseCases(
     private val searchUseCases: SearchUseCases,
     private val homepageTitle: String,
     private val profiler: Profiler?,
+    private val keywordResolver: (String) -> Pair<SearchEngine?, String>? = { null },
 ) {
+    /** Dejavu: the engine (null to open a URL) and the text for typed "keyword text", or null without a keyword. */
+    fun resolveKeyword(input: String): Pair<SearchEngine?, String>? = keywordResolver(input)
+
     /**
      * Loads a URL or performs a search depending on the value of [searchTermOrURL].
      *
@@ -58,6 +63,22 @@ class FenixBrowserUseCases(
         historyMetadata: HistoryMetadataKey? = null,
         additionalHeaders: Map<String, String>? = null,
     ) {
+        if (!forceSearch) {
+            keywordResolver(searchTermOrURL)?.let { (engine, text) ->
+                loadUrlOrSearch(
+                    searchTermOrURL = text,
+                    newTab = newTab,
+                    private = private,
+                    forceSearch = engine != null,
+                    searchEngine = engine,
+                    flags = flags,
+                    historyMetadata = historyMetadata,
+                    additionalHeaders = additionalHeaders,
+                )
+                return
+            }
+        }
+
         val startTime = profiler?.getProfilerTime()
 
         // In situations where we want to perform a search but have no search engine (e.g. the user

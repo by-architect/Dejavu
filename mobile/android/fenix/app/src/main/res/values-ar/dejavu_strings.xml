@@ -575,4 +575,6 @@
     <string name="dejavu_settings_tips_summary">عرض نصائح عن الإيماءات المخفية، مثل الضغط مطولًا على «تبويب جديد»</string>
     <string name="dejavu_new">جديد</string>
     <string name="dejavu_menu_customize_reader_view">خصّص منظور القارئ</string>
+    <string name="dejavu_search_keyword">كلمة مفتاحية</string>
+    <string name="dejavu_search_keyword_taken">\"%1$s\" مستخدمة بالفعل في كلمة مفتاحية أخرى.</string>
 </resources>

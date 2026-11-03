@@ -543,4 +543,6 @@
     <string name="dejavu_settings_tips_summary">“नवीन टॅब” दाबून धरण्यासारख्या लपलेल्या जेश्चरविषयी टिपा दाखवा</string>
     <string name="dejavu_new">नवीन</string>
     <string name="dejavu_menu_customize_reader_view">वाचक मोड स्वेच्छेनुरूप करा</string>
+    <string name="dejavu_search_keyword">कीवर्ड</string>
+    <string name="dejavu_search_keyword_taken">\"%1$s\" आधीच दुसऱ्या कीवर्डने वापरला आहे.</string>
 </resources>

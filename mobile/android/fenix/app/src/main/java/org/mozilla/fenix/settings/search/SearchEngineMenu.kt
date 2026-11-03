@@ -21,12 +21,20 @@ class SearchEngineMenu(
         object Delete : Item()
 
         object Edit : Item()
+
+        object Keyword : Item()
     }
 
     val menuBuilder by lazy { BrowserMenuBuilder(menuItems) }
 
     private val menuItems by lazy {
         val items = mutableListOf<SimpleBrowserMenuItem>()
+
+        items.add(
+            SimpleBrowserMenuItem(label = context.getString(R.string.dejavu_search_keyword)) {
+                onItemTapped.invoke(Item.Keyword)
+            }
+        )
 
         if (isCustomSearchEngine) {
             items.add(

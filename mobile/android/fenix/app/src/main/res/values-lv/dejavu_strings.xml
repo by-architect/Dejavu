@@ -551,4 +551,6 @@
     <string name="dejavu_settings_tips_summary">Rādīt padomus par slēptiem žestiem, piemēram, pogas Jauna cilne turēšanu</string>
     <string name="dejavu_new">Jaunums</string>
     <string name="dejavu_menu_customize_reader_view">Pielāgot lasītāja režīmu</string>
+    <string name="dejavu_search_keyword">Atslēgvārds</string>
+    <string name="dejavu_search_keyword_taken">\"%1$s\" jau izmanto cits atslēgvārds.</string>
 </resources>

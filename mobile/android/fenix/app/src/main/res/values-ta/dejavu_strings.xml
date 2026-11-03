@@ -543,4 +543,6 @@
     <string name="dejavu_settings_tips_summary">புதிய கீற்று பொத்தானை அழுத்திப் பிடிப்பது போன்ற மறைந்திருக்கும் சைகைகள் பற்றிய உதவிக்குறிப்புகளைக் காட்டு</string>
     <string name="dejavu_new">புதியது</string>
     <string name="dejavu_menu_customize_reader_view">வாசிப்பு தோற்றத்தைத் தனிப்பயனாக்கு</string>
+    <string name="dejavu_search_keyword">முக்கிய சொல்</string>
+    <string name="dejavu_search_keyword_taken">\"%1$s\" ஏற்கனவே மற்றொரு முக்கிய சொல்லால் பயன்படுத்தப்படுகிறது.</string>
 </resources>

@@ -543,4 +543,6 @@
     <string name="dejavu_settings_tips_summary">Яшерен ишарәләр турында киңәшләр күрсәтү, мәсәлән, Яңа таб төймәсенә басып тору</string>
     <string name="dejavu_new">Яңа</string>
     <string name="dejavu_menu_customize_reader_view">Уку режимын көйләү</string>
+    <string name="dejavu_search_keyword">Ачкыч сүз</string>
+    <string name="dejavu_search_keyword_taken">\"%1$s\" инде башка ачкыч сүз белән кулланыла.</string>
 </resources>

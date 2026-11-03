@@ -543,4 +543,6 @@
     <string name="dejavu_settings_tips_summary">Erakutsi ezkutuko keinuei buruzko aholkuak, hala nola «Fitxa berria» sakatuta eustea</string>
     <string name="dejavu_new">Berria</string>
     <string name="dejavu_menu_customize_reader_view">Pertsonalizatu irakurtzeko ikuspegia</string>
+    <string name="dejavu_search_keyword">Gako-hitza</string>
+    <string name="dejavu_search_keyword_taken">\"%1$s\" beste gako-hitz batek erabiltzen du dagoeneko.</string>
 </resources>

@@ -543,4 +543,6 @@
     <string name="dejavu_settings_tips_summary">Mostra suggerimenti sui gesti nascosti, come tenere premuto «Nuova scheda»</string>
     <string name="dejavu_new">Novità</string>
     <string name="dejavu_menu_customize_reader_view">Personalizza modalità lettura</string>
+    <string name="dejavu_search_keyword">Parola chiave</string>
+    <string name="dejavu_search_keyword_taken">\"%1$s\" è già utilizzata da un\'altra parola chiave.</string>
 </resources>

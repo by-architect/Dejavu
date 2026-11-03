@@ -543,4 +543,6 @@
     <string name="dejavu_settings_tips_summary">Visa tips om dolda gester, som att hålla ned Ny flik</string>
     <string name="dejavu_new">Ny</string>
     <string name="dejavu_menu_customize_reader_view">Anpassa läsvyn</string>
+    <string name="dejavu_search_keyword">Nyckelord</string>
+    <string name="dejavu_search_keyword_taken">\"%1$s\" används redan av ett annat nyckelord.</string>
 </resources>

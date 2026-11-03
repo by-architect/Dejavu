@@ -543,4 +543,6 @@
     <string name="dejavu_settings_tips_summary">Amostrar consellos sobre cenyos amagaus, como mantener pretau «Nueva pestanya»</string>
     <string name="dejavu_new">Nuevo</string>
     <string name="dejavu_menu_customize_reader_view">Personalizar la vista de lectura</string>
+    <string name="dejavu_search_keyword">Palabra clau</string>
+    <string name="dejavu_search_keyword_taken">\"%1$s\" ya la usa unatra palabra clau.</string>
 </resources>

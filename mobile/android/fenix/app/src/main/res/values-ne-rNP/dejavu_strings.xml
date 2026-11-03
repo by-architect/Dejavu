@@ -543,4 +543,6 @@
     <string name="dejavu_settings_tips_summary">“नयाँ ट्याब” थिचिराख्ने जस्ता लुकेका इशाराहरुबारे सुझावहरु देखाउनुहोस्</string>
     <string name="dejavu_new">नयाँ</string>
     <string name="dejavu_menu_customize_reader_view">पाठक दृश्य अनुकुलन गर्नुहोस्</string>
+    <string name="dejavu_search_keyword">किवर्ड</string>
+    <string name="dejavu_search_keyword_taken">\"%1$s\" पहिले नै अर्को किवर्डले प्रयोग गरेको छ।</string>
 </resources>

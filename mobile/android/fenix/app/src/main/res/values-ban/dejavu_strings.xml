@@ -535,4 +535,6 @@
     <string name="dejavu_settings_tips_summary">Edengang tips indik gestur ane kaengkebang, minakadi nekek “Tab Anyar”</string>
     <string name="dejavu_new">Anyar</string>
     <string name="dejavu_menu_customize_reader_view">Setel tampilan pamaca</string>
+    <string name="dejavu_search_keyword">Kruna kunci</string>
+    <string name="dejavu_search_keyword_taken">\"%1$s\" suba kaanggén antuk kruna kunci tiosan.</string>
 </resources>

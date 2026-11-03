@@ -8,6 +8,10 @@ import android.content.Context
 import android.os.StrictMode
 import android.util.Size
 import androidx.annotation.VisibleForTesting
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
+import mozilla.components.browser.state.search.SearchEngine
+import mozilla.components.browser.state.state.searchEngines
 import mozilla.components.browser.state.store.BrowserStore
 import mozilla.components.concept.engine.Engine
 import mozilla.components.concept.fetch.Client
@@ -42,6 +46,8 @@ import org.mozilla.fenix.components.share.DefaultShareSheetLauncher
 import org.mozilla.fenix.components.share.ShareSheetLauncher
 import org.mozilla.fenix.components.usecases.FenixBrowserUseCases
 import org.mozilla.fenix.components.usecases.ShareUseCases
+import org.mozilla.fenix.dejavu.resolveSearchKeyword
+import org.mozilla.fenix.dejavu.withDefaultEngineKeywords
 import org.mozilla.fenix.ext.components
 import org.mozilla.fenix.home.mars.MARSUseCases
 import org.mozilla.fenix.pbmlock.PrivateBrowsingLockUseCases
@@ -160,6 +166,7 @@ class UseCases(
     }
 
     val fenixBrowserUseCases by lazyMonitored {
+        refreshBookmarkKeywords()
         FenixBrowserUseCases(
             appStore = appStore.value,
             tabsUseCases = tabsUseCases,
@@ -167,7 +174,55 @@ class UseCases(
             searchUseCases = searchUseCases,
             homepageTitle = context.getString(R.string.tab_tray_homepage_tab),
             profiler = engine.value.profiler,
+            keywordResolver = { input -> resolveKeyword(input) },
         )
+    }
+
+    /** Dejavu: the engine (null to open a URL) and the text for typed "keyword text", or null without a keyword. */
+    private fun resolveKeyword(input: String): Pair<SearchEngine?, String>? {
+        val settings = context.components.settings
+        val search = store.value.state.search
+        val engines = search.searchEngines
+        val engineKeywords = settings.engineKeywords.withDefaultEngineKeywords(engines.map { it.id })
+        val bookmarkUrls = settings.bookmarkKeywordUrls
+        // "@name": installed engines in the user's order, without app engines and disabled shortcuts.
+        val atEngines = engines
+            .filter { it.type != SearchEngine.Type.APPLICATION && it.id !in search.disabledSearchEngineIds }
+            .map { it.id to it.name }
+        val match = resolveSearchKeyword(
+            input,
+            engineKeywords,
+            settings.bookmarkKeywords,
+            bookmarkUrls::get,
+            atEngines,
+        ) ?: return null
+        if (match.engineId == null) {
+            // The URL comes from the cache, check in the background that the bookmark still exists.
+            refreshBookmarkKeywords()
+            return null to match.text
+        }
+        val engine = engines.find { it.id == match.engineId }
+        if (engine == null && search.complete) {
+            // The engine was deleted somewhere that left its keyword behind.
+            settings.engineKeywords = settings.engineKeywords.filterValues { it != match.engineId }
+        }
+        return engine?.let { it to match.text }
+    }
+
+    /**
+     * Dejavu: reads the URLs of the bookmarks that have a keyword into `Settings.bookmarkKeywordUrls` and drops the
+     * keywords of deleted bookmarks. A failed read keeps the keyword.
+     */
+    fun refreshBookmarkKeywords() {
+        context.components.applicationScope.launch(Dispatchers.IO) {
+            val settings = context.components.settings
+            val guids = settings.bookmarkKeywords.values.filterNot { it.contains(':') }.toSet()
+            val nodes = guids.associateWith { bookmarksStorage.value.getBookmark(it) }
+            val gone = nodes.filterValues { it.isSuccess && it.getOrNull() == null }.keys
+            val urls = nodes.mapNotNull { (guid, node) -> node.getOrNull()?.url?.let { guid to it } }.toMap()
+            if (gone.isNotEmpty()) settings.bookmarkKeywords = settings.bookmarkKeywords.filterValues { it !in gone }
+            settings.bookmarkKeywordUrls = settings.bookmarkKeywordUrls - gone + urls
+        }
     }
 
     val shareSheetLauncher: ShareSheetLauncher by lazyMonitored {

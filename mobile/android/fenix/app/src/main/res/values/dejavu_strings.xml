@@ -6,6 +6,9 @@
     <string name="pref_key_dejavu_tab_actions" translatable="false">pref_key_dejavu_tab_actions</string>
     <string name="pref_key_dejavu_containers" translatable="false">pref_key_dejavu_containers</string>
     <string name="pref_key_dejavu_external_links" translatable="false">pref_key_dejavu_external_links</string>
+    <string name="pref_key_dejavu_engine_keywords" translatable="false">pref_key_dejavu_engine_keywords</string>
+    <string name="pref_key_dejavu_bookmark_keywords" translatable="false">pref_key_dejavu_bookmark_keywords</string>
+    <string name="pref_key_dejavu_bookmark_keyword_urls" translatable="false">pref_key_dejavu_bookmark_keyword_urls</string>
     <string name="pref_key_dejavu_tab_sleep" translatable="false">pref_key_dejavu_tab_sleep</string>
     <string name="pref_key_dejavu_safe_browsing" translatable="false">pref_key_dejavu_safe_browsing</string>
     <string name="pref_key_dejavu_jit" translatable="false">pref_key_dejavu_jit</string>
@@ -899,4 +902,8 @@
     <string name="dejavu_settings_tips_summary">Show tips about hidden gestures, like holding New Tab</string>
     <!-- Read out by screen readers for the orange dot that marks what the new version of Dejavu brought, in the settings and the menu. -->
     <string name="dejavu_new">New</string>
+    <!-- Label of the field and menu item where a short word is set that searches a search engine or opens a bookmark when typed before a search. -->
+    <string name="dejavu_search_keyword">Keyword</string>
+    <!-- Shown when a keyword is already used. %1$s is the keyword. -->
+    <string name="dejavu_search_keyword_taken">\"%1$s\" is already used by another keyword.</string>
 </resources>

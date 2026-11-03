@@ -551,4 +551,6 @@
     <string name="dejavu_settings_tips_summary">Prikaži savjete o skrivenim gestama, poput zadržavanja „Nova kartica“</string>
     <string name="dejavu_new">Novo</string>
     <string name="dejavu_menu_customize_reader_view">Prilagodi prikaz čitača</string>
+    <string name="dejavu_search_keyword">Ključna riječ</string>
+    <string name="dejavu_search_keyword_taken">\"%1$s\" već koristi druga ključna riječ.</string>
 </resources>

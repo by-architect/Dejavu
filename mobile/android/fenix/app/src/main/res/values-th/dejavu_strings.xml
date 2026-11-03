@@ -535,4 +535,6 @@
     <string name="dejavu_settings_tips_summary">แสดงเคล็ดลับเกี่ยวกับท่าทางที่ซ่อนอยู่ เช่น การกด “แท็บใหม่” ค้างไว้</string>
     <string name="dejavu_new">ใหม่</string>
     <string name="dejavu_menu_customize_reader_view">ปรับแต่งมุมมองผู้อ่าน</string>
+    <string name="dejavu_search_keyword">คำหลัก</string>
+    <string name="dejavu_search_keyword_taken">\"%1$s\" ถูกใช้โดยคำหลักอื่นอยู่แล้ว</string>
 </resources>

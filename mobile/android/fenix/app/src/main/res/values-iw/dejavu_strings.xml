@@ -551,4 +551,6 @@
     <string name="dejavu_settings_tips_summary">הצגת טיפים על מחוות נסתרות, כמו לחיצה ארוכה על ״לשונית חדשה״</string>
     <string name="dejavu_new">חדש</string>
     <string name="dejavu_menu_customize_reader_view">התאמה אישית של תצוגת קריאה</string>
+    <string name="dejavu_search_keyword">מילת מפתח</string>
+    <string name="dejavu_search_keyword_taken">\"%1$s\" כבר בשימוש על ידי מילת מפתח אחרת.</string>
 </resources>

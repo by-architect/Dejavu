@@ -535,4 +535,6 @@
     <string name="dejavu_settings_tips_summary">Fi àwọn ìmọ̀ràn hàn nípa àwọn ìfarajúwèé tó farasin, bí dídi bọ́tìnnì Táàbù Tuntun mú</string>
     <string name="dejavu_new">Tuntun</string>
     <string name="dejavu_menu_customize_reader_view">Sọ èrò olùkà di ti ara ẹni</string>
+    <string name="dejavu_search_keyword">Ọ̀rọ̀ kọ́kọ́rọ́</string>
+    <string name="dejavu_search_keyword_taken">\"%1$s\" ti wà ní lílò látọwọ́ ọ̀rọ̀ kọ́kọ́rọ́ mìíràn.</string>
 </resources>

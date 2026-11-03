@@ -543,4 +543,6 @@
     <string name="dejavu_settings_tips_summary">“නව පටිත්ත” තද කර අල්ලාගෙන සිටීම වැනි සැඟවුණු අභින පිළිබඳ ඉඟි පෙන්වන්න</string>
     <string name="dejavu_new">නව</string>
     <string name="dejavu_menu_customize_reader_view">කියවීමේ දැක්ම රිසිකරණය කරන්න</string>
+    <string name="dejavu_search_keyword">මූලපදය</string>
+    <string name="dejavu_search_keyword_taken">\"%1$s\" දැනටමත් වෙනත් මූලපදයක් විසින් භාවිතා කර ඇත.</string>
 </resources>

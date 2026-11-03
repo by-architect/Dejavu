@@ -551,4 +551,6 @@
     <string name="dejavu_settings_tips_summary">Afișează sfaturi despre gesturile ascunse, cum ar fi ținerea apăsată pe „Filă nouă”</string>
     <string name="dejavu_new">Nou</string>
     <string name="dejavu_menu_customize_reader_view">Personalizează modul de lectură</string>
+    <string name="dejavu_search_keyword">Cuvânt-cheie</string>
+    <string name="dejavu_search_keyword_taken">„%1$s” este deja folosit de alt cuvânt-cheie.</string>
 </resources>

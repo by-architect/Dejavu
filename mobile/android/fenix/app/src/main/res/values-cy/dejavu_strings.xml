@@ -575,4 +575,6 @@
     <string name="dejavu_settings_tips_summary">Dangos awgrymiadau am ystumiau cudd, fel dal Tab newydd</string>
     <string name="dejavu_new">Newydd</string>
     <string name="dejavu_menu_customize_reader_view">Cyfaddasu’r golwg darllenydd</string>
+    <string name="dejavu_search_keyword">Allweddair</string>
+    <string name="dejavu_search_keyword_taken">Mae \"%1$s\" eisoes yn cael ei ddefnyddio gan allweddair arall.</string>
 </resources>

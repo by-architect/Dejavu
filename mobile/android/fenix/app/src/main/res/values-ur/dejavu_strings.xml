@@ -543,4 +543,6 @@
     <string name="dejavu_settings_tips_summary">پوشیدہ اشاروں کے بارے میں تجاویز دکھائیں، جیسے ”نیا ٹیب“ کو دبا کر رکھنا</string>
     <string name="dejavu_new">نیا</string>
     <string name="dejavu_menu_customize_reader_view">ریڈر ویو کی تخصیص کریں</string>
+    <string name="dejavu_search_keyword">کلیدی لفظ</string>
+    <string name="dejavu_search_keyword_taken">\"%1$s\" پہلے ہی کسی دوسرے کلیدی لفظ کے ذریعہ استعمال ہو رہا ہے۔</string>
 </resources>

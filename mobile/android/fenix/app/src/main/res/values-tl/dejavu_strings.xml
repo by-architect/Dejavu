@@ -543,4 +543,6 @@
     <string name="dejavu_settings_tips_summary">Ipakita ang mga tip tungkol sa mga nakatagong gesture, tulad ng pagpindot nang matagal sa “Bagong Tab”</string>
     <string name="dejavu_new">Bago</string>
     <string name="dejavu_menu_customize_reader_view">Ipasadya ang reader view</string>
+    <string name="dejavu_search_keyword">Keyword</string>
+    <string name="dejavu_search_keyword_taken">Ginagamit na ng ibang keyword ang \"%1$s\".</string>
 </resources>

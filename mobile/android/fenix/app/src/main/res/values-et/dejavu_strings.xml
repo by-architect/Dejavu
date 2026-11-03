@@ -543,4 +543,6 @@
     <string name="dejavu_settings_tips_summary">Näita vihjeid peidetud žestide kohta, nagu nupu „Uus kaart“ all hoidmine</string>
     <string name="dejavu_new">Uus</string>
     <string name="dejavu_menu_customize_reader_view">Kohanda lugemisvaadet</string>
+    <string name="dejavu_search_keyword">Märksõna</string>
+    <string name="dejavu_search_keyword_taken">\"%1$s\" on juba mõne teise märksõna kasutuses.</string>
 </resources>

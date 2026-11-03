@@ -543,4 +543,6 @@
     <string name="dejavu_settings_tips_summary">د پټو اشارو په اړه لارښوونې ښودل، لکه د «نوی ټب» نیول</string>
     <string name="dejavu_new">نوی</string>
     <string name="dejavu_menu_customize_reader_view">د لوستونکي لید دودیزول</string>
+    <string name="dejavu_search_keyword">کلیدي کلمه</string>
+    <string name="dejavu_search_keyword_taken">\"%1$s\" مخکې له مخکې د بل کلیدي کلمې لخوا کارول کیږي.</string>
 </resources>

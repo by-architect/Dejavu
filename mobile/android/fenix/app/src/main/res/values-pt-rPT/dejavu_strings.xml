@@ -551,4 +551,6 @@
     <string name="dejavu_settings_tips_summary">Mostrar dicas sobre gestos ocultos, como manter premido o botão Novo separador</string>
     <string name="dejavu_new">Novo</string>
     <string name="dejavu_menu_customize_reader_view">Personalizar vista de leitura</string>
+    <string name="dejavu_search_keyword">Palavra-chave</string>
+    <string name="dejavu_search_keyword_taken">\"%1$s\" já está a ser utilizada por outra palavra-chave.</string>
 </resources>

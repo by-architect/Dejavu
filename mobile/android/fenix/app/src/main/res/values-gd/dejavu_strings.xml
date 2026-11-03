@@ -559,4 +559,6 @@
     <string name="dejavu_settings_tips_summary">Seall gliocasan mu ghluasadan falaichte, mar a bhith a\' cumail “Taba ùr” sìos</string>
     <string name="dejavu_new">Ùr</string>
     <string name="dejavu_menu_customize_reader_view">Gnàthaich sealladh an leughadair</string>
+    <string name="dejavu_search_keyword">Prìomh-fhacal</string>
+    <string name="dejavu_search_keyword_taken">Tha \"%1$s\" ga chleachdadh mu thràth le prìomh-fhacal eile.</string>
 </resources>

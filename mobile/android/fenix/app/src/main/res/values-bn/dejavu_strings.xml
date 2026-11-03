@@ -576,4 +576,6 @@
     <string name="dejavu_settings_tips_summary">লুকানো জেসচার নিয়ে টিপস দেখান, যেমন “নতুন ট্যাব” চেপে ধরা</string>
     <string name="dejavu_new">নতুন</string>
     <string name="dejavu_menu_customize_reader_view">পাঠক দর্শন কাস্টমাইজ করুন</string>
+    <string name="dejavu_search_keyword">কীওয়ার্ড</string>
+    <string name="dejavu_search_keyword_taken">\"%1$s\" ইতিমধ্যে অন্য একটি কীওয়ার্ডে ব্যবহৃত হচ্ছে।</string>
 </resources>

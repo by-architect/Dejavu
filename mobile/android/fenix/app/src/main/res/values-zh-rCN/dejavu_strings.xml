@@ -535,4 +535,6 @@
     <string name="dejavu_settings_tips_summary">显示有关隐藏手势的提示，例如长按“新建标签页”</string>
     <string name="dejavu_new">新</string>
     <string name="dejavu_menu_customize_reader_view">定制阅读模式</string>
+    <string name="dejavu_search_keyword">关键词</string>
+    <string name="dejavu_search_keyword_taken">“%1$s”已被另一个关键词使用。</string>
 </resources>

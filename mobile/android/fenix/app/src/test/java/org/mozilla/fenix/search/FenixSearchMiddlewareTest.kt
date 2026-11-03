@@ -106,7 +106,9 @@ class FenixSearchMiddlewareTest {
     private val engine: Engine = mockk {
         every { speculativeCreateSession(any(), any()) } just Runs
     }
-    private val fenixBrowserUseCasesMock: FenixBrowserUseCases = mockk(relaxed = true)
+    private val fenixBrowserUseCasesMock: FenixBrowserUseCases = mockk(relaxed = true) {
+        every { resolveKeyword(any()) } returns null
+    }
     private val browsingModeManager: BrowsingModeManager = mockk(relaxed = true)
     private val useCases: UseCases = mockk {
         every { fenixBrowserUseCases } returns fenixBrowserUseCasesMock
@@ -584,6 +586,29 @@ class FenixSearchMiddlewareTest {
             assertEquals("performed_search", telemetry?.get(0)?.name)
             assertEquals("default.suggestion", telemetry?.get(0)?.extra?.get("source"))
         }
+
+    @Test
+    fun `WHEN a typed search keyword is tapped as a suggestion THEN search with the engine of the keyword`() = runTest {
+        val keywordEngine: SearchEngine = mockk()
+        every { settings.enableHomepageAsNewTab } returns true
+        every { nimbusComponents.events } returns mockk { every { recordEvent(any()) } just Runs }
+        every { fenixBrowserUseCasesMock.resolveKeyword("@ddg cats") } returns (keywordEngine to "cats")
+        val middleware = buildMiddleware()
+        val store = buildStore(middleware)
+
+        middleware.searchUseCase(store).invoke("@ddg cats", null, null)
+
+        verify {
+            fenixBrowserUseCasesMock.loadUrlOrSearch(
+                searchTermOrURL = "cats",
+                newTab = false,
+                private = false,
+                forceSearch = true,
+                searchEngine = keywordEngine,
+                flags = LoadUrlFlags.none(),
+            )
+        }
+    }
 
     @Test
     fun `WHEN needing to select a specific tab THEN open it in browser and record search ended`() {

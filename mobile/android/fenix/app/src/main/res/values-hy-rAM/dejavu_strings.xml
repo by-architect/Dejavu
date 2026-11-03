@@ -543,4 +543,6 @@
     <string name="dejavu_settings_tips_summary">Ցուցադրել հուշումներ թաքնված ժեստերի մասին, օրինակ՝ «Նոր ներդիր»֊ը պահելը</string>
     <string name="dejavu_new">Նոր</string>
     <string name="dejavu_menu_customize_reader_view">Հարմարեցնել ընթերցելու տեսքը</string>
+    <string name="dejavu_search_keyword">Բանալի բառ</string>
+    <string name="dejavu_search_keyword_taken">«%1$s»-ը արդեն օգտագործվում է մեկ այլ բանալի բառի կողմից։</string>
 </resources>

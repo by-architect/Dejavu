@@ -543,4 +543,6 @@
     <string name="dejavu_settings_tips_summary">“ਨਵੀਂ ਟੈਬ” ਨੂੰ ਦਬਾ ਕੇ ਰੱਖਣ ਵਰਗੇ ਲੁਕਵੇਂ ਇਸ਼ਾਰਿਆਂ ਬਾਰੇ ਸੁਝਾਅ ਦਿਖਾਓ</string>
     <string name="dejavu_new">ਨਵਾਂ</string>
     <string name="dejavu_menu_customize_reader_view">ਪੜ੍ਹਨ ਝਲਕ ਨੂੰ ਕਸਟਮਾਈਜ਼ ਕਰੋ</string>
+    <string name="dejavu_search_keyword">ਕੀਵਰਡ</string>
+    <string name="dejavu_search_keyword_taken">\"%1$s\" ਪਹਿਲਾਂ ਹੀ ਕਿਸੇ ਹੋਰ ਕੀਵਰਡ ਵਲੋਂ ਵਰਤਿਆ ਜਾ ਰਿਹਾ ਹੈ।</string>
 </resources>

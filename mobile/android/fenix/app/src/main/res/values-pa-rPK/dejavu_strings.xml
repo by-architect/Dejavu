@@ -543,4 +543,6 @@
     <string name="dejavu_settings_tips_summary">لُکے ہوئے اشاریاں بارے مشورے وکھاؤ، جویں “نویں ٹیب کھولھو” نوں دبا کے رکھݨا</string>
     <string name="dejavu_new">نواں</string>
     <string name="dejavu_menu_customize_reader_view">پڑھن جھلک نوں من پسند بݨاؤ</string>
+    <string name="dejavu_search_keyword">کیورڈ</string>
+    <string name="dejavu_search_keyword_taken">\"%1$s\" پہلاں توں ای کسے ہور کیورڈ ولوں ورتیا جا رہیا اے۔</string>
 </resources>

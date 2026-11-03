@@ -551,4 +551,6 @@
     <string name="dejavu_settings_tips_summary">Mostrar consejos sobre gestos ocultos, como mantener presionado “Nueva pestaña”</string>
     <string name="dejavu_new">Nuevo</string>
     <string name="dejavu_menu_customize_reader_view">Personalizar vista de lectura</string>
+    <string name="dejavu_search_keyword">Palabra clave</string>
+    <string name="dejavu_search_keyword_taken">\"%1$s\" ya está en uso por otra palabra clave.</string>
 </resources>

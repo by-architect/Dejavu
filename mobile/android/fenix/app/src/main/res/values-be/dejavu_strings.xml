@@ -559,4 +559,6 @@
     <string name="dejavu_settings_tips_summary">Паказваць парады пра схаваныя жэсты, напрыклад утрыманне кнопкі «Новая картка»</string>
     <string name="dejavu_new">Новае</string>
     <string name="dejavu_menu_customize_reader_view">Уладкаваць рэжым чытання</string>
+    <string name="dejavu_search_keyword">Ключавое слова</string>
+    <string name="dejavu_search_keyword_taken">\"%1$s\" ужо выкарыстоўваецца іншым ключавым словам.</string>
 </resources>

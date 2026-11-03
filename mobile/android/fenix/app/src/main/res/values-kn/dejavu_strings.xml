@@ -543,4 +543,6 @@
     <string name="dejavu_settings_tips_summary">“ಹೊಸ ಟ್ಯಾಬ್” ಅನ್ನು ಒತ್ತಿ ಹಿಡಿಯುವಂತಹ ಮರೆಯಾದ ಸನ್ನೆಗಳ ಬಗ್ಗೆ ಸಲಹೆಗಳನ್ನು ತೋರಿಸು</string>
     <string name="dejavu_new">ಹೊಸದು</string>
     <string name="dejavu_menu_customize_reader_view">ಓದುಗರ ನೋಟವನ್ನು ಅಗತ್ಯಾನುಗುಣಗೊಳಿಸಿ</string>
+    <string name="dejavu_search_keyword">ಕೀವರ್ಡ್</string>
+    <string name="dejavu_search_keyword_taken">\"%1$s\" ಅನ್ನು ಈಗಾಗಲೇ ಇನ್ನೊಂದು ಕೀವರ್ಡ್ ಬಳಸುತ್ತಿದೆ.</string>
 </resources>

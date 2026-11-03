@@ -535,4 +535,6 @@
     <string name="dejavu_settings_tips_summary">顯示隱藏手勢的相關提示，例如長按「開新分頁」</string>
     <string name="dejavu_new">新功能</string>
     <string name="dejavu_menu_customize_reader_view">自訂閱讀畫面</string>
+    <string name="dejavu_search_keyword">關鍵字</string>
+    <string name="dejavu_search_keyword_taken">「%1$s」已被另一個關鍵字使用。</string>
 </resources>

@@ -559,4 +559,6 @@
     <string name="dejavu_settings_tips_summary">Wyświetlaj wskazówki o ukrytych gestach, takich jak przytrzymanie przycisku „Nowa karta”</string>
     <string name="dejavu_new">Nowe</string>
     <string name="dejavu_menu_customize_reader_view">Dostosuj widok poprawionej czytelności</string>
+    <string name="dejavu_search_keyword">Słowo kluczowe</string>
+    <string name="dejavu_search_keyword_taken">„%1$s” jest już używane przez inne słowo kluczowe.</string>
 </resources>

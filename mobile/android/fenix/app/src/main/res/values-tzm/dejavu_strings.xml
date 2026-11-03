@@ -543,4 +543,6 @@
     <string name="dejavu_settings_tips_summary">Sken-d iwellihen ɣef yisillifen yeffren, am tuṭṭfa deg “Aseksel amaynu”</string>
     <string name="dejavu_new">Amaynu</string>
     <string name="dejavu_menu_customize_reader_view">Sagen tamuɣli n tɣuri</string>
+    <string name="dejavu_search_keyword">Awal unekcum</string>
+    <string name="dejavu_search_keyword_taken">\"%1$s\" yettwaseqdac yakan s wawal unekcum nniḍen.</string>
 </resources>

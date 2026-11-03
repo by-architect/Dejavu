@@ -535,4 +535,6 @@
     <string name="dejavu_settings_tips_summary">Hiển thị mẹo về các cử chỉ ẩn, như nhấn giữ “Thẻ mới”</string>
     <string name="dejavu_new">Mới</string>
     <string name="dejavu_menu_customize_reader_view">Tùy chỉnh chế độ đọc sách</string>
+    <string name="dejavu_search_keyword">Từ khóa</string>
+    <string name="dejavu_search_keyword_taken">\"%1$s\" đã được dùng bởi một từ khóa khác.</string>
 </resources>

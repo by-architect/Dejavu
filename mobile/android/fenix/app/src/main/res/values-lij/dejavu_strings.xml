@@ -543,4 +543,6 @@
     <string name="dejavu_settings_tips_summary">Mostra conseggi in scî gesti ascoxi, comme tegnî sciaccou “Neuvo feuggio”</string>
     <string name="dejavu_new">Neuvo</string>
     <string name="dejavu_menu_customize_reader_view">Personalizza modalitæ letua</string>
+    <string name="dejavu_search_keyword">Paròlla ciave</string>
+    <string name="dejavu_search_keyword_taken">\"%1$s\" a l\'é za dövia da \'n\'atra paròlla ciave.</string>
 </resources>

@@ -543,4 +543,6 @@
     <string name="dejavu_settings_tips_summary">Amosar consellos sobre xestos agochados, como manter premido «Nova lapela»</string>
     <string name="dejavu_new">Novo</string>
     <string name="dejavu_menu_customize_reader_view">Personalizar a vista de lectura</string>
+    <string name="dejavu_search_keyword">Palabra chave</string>
+    <string name="dejavu_search_keyword_taken">\"%1$s\" xa o usa outra palabra chave.</string>
 </resources>

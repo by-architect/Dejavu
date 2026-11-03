@@ -543,4 +543,6 @@
     <string name="dejavu_settings_tips_summary">Mussar cussegls davart gests zuppads, sco tegnair smatgà Nov tab</string>
     <string name="dejavu_new">Nov</string>
     <string name="dejavu_menu_customize_reader_view">Persunalisar la vista da lectura</string>
+    <string name="dejavu_search_keyword">Pled-clav</string>
+    <string name="dejavu_search_keyword_taken">\"%1$s\" vegn gia duvrà d\'in auter pled-clav.</string>
 </resources>

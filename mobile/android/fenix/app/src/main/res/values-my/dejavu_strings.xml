@@ -535,4 +535,6 @@
     <string name="dejavu_settings_tips_summary">“တက်ဗ် အသစ်” ကို ဖိထားခြင်းကဲ့သို့ ဝှက်ထားသော လက်ဟန်အမူအရာများအကြောင်း အကြံပြုချက်များ ပြသရန်</string>
     <string name="dejavu_new">အသစ်</string>
     <string name="dejavu_menu_customize_reader_view">စာဖတ်သူ မြင်ကွင်းကို စိတ်ကြိုက်လုပ်ပါ</string>
+    <string name="dejavu_search_keyword">ကီးဝါ့</string>
+    <string name="dejavu_search_keyword_taken">\"%1$s\" ကို အခြားကီးဝါ့တစ်ခုက အသုံးပြုပြီးဖြစ်သည်။</string>
 </resources>

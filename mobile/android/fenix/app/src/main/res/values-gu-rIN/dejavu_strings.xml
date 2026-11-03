@@ -576,4 +576,6 @@
     <string name="dejavu_settings_tips_summary">છુપાયેલા હાવભાવ વિશે ટિપ્સ બતાવો, જેમ કે “નવી ટૅબ” દબાવી રાખવી</string>
     <string name="dejavu_new">નવું</string>
     <string name="dejavu_menu_customize_reader_view">વાંચકો જુઓ કસ્ટમાઇઝ કરો</string>
+    <string name="dejavu_search_keyword">કીવર્ડ</string>
+    <string name="dejavu_search_keyword_taken">\"%1$s\" પહેલેથી જ બીજા કીવર્ડ દ્વારા વપરાય છે.</string>
 </resources>

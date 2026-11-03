@@ -559,4 +559,6 @@
     <string name="dejavu_settings_tips_summary">Pokazki wó schowanych gestach pokazaś, na pś. dłujke tłocenje na „Nowy rejtarik“</string>
     <string name="dejavu_new">Nowy</string>
     <string name="dejavu_menu_customize_reader_view">Cytański naglěd pśiměriś</string>
+    <string name="dejavu_search_keyword">Klucowe słowo</string>
+    <string name="dejavu_search_keyword_taken">\"%1$s\" se južo wót drugego klucowego słowa wužywa.</string>
 </resources>

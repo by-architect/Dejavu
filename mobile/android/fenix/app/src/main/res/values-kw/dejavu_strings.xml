@@ -575,4 +575,6 @@
     <string name="dejavu_settings_tips_summary">Diskwedhes kussulyow a-dro dhe wayansow kudh, kepar ha synsy “Tab Nowyth”</string>
     <string name="dejavu_new">Nowydh</string>
     <string name="dejavu_menu_customize_reader_view">Chanjya an gwel redya</string>
+    <string name="dejavu_search_keyword">Ger alhwedh</string>
+    <string name="dejavu_search_keyword_taken">\"%1$s\" yw usys seulabrys gans ger alhwedh aral.</string>
 </resources>

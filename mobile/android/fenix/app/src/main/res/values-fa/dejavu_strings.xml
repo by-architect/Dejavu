@@ -543,4 +543,6 @@
     <string name="dejavu_settings_tips_summary">نمایش نکته‌هایی دربارهٔ ژست‌های حرکتی پنهان، مثل نگه داشتن «زبانهٔ جدید»</string>
     <string name="dejavu_new">جدید</string>
     <string name="dejavu_menu_customize_reader_view">شخصی‌سازی نمای مطالعه</string>
+    <string name="dejavu_search_keyword">کلیدواژه</string>
+    <string name="dejavu_search_keyword_taken">«%1$s» از قبل توسط کلیدواژه دیگری استفاده شده است.</string>
 </resources>

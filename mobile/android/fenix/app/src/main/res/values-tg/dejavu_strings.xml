@@ -543,4 +543,6 @@
     <string name="dejavu_settings_tips_summary">Нишон додани маслиҳатҳо дар бораи ишораҳои пинҳон, масалан, пахш карда нигоҳ доштани «Варақаи нав»</string>
     <string name="dejavu_new">Нав</string>
     <string name="dejavu_menu_customize_reader_view">Фармоишдиҳии намоиши хониш</string>
+    <string name="dejavu_search_keyword">Калидвожа</string>
+    <string name="dejavu_search_keyword_taken">\"%1$s\" аллакай аз ҷониби калидвожаи дигар истифода мешавад.</string>
 </resources>

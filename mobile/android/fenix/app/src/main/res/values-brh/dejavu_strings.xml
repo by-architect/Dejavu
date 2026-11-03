@@ -543,4 +543,6 @@
     <string name="dejavu_settings_tips_summary">لکوکا اشاراک نا بارو اٹ مشوراک تس، جیسا کہ «پوسکنو ٹیب اس» اے دبا ہلنگ</string>
     <string name="dejavu_new">پوسکن</string>
     <string name="dejavu_menu_customize_reader_view">خواننگ دروشم اے کسٹمائز کبو</string>
+    <string name="dejavu_search_keyword">کلیدی لپز</string>
+    <string name="dejavu_search_keyword_taken">\"%1$s\" ہنو دگہ کلیدی لپزء کارمرز بیثک.</string>
 </resources>

@@ -559,4 +559,6 @@
     <string name="dejavu_settings_tips_summary">Rodyti patarimus apie paslėptus gestus, pavyzdžiui, mygtuko „Nauja kortelė“ palaikymą</string>
     <string name="dejavu_new">Nauja</string>
     <string name="dejavu_menu_customize_reader_view">Tinkinti skaitymo rodinį</string>
+    <string name="dejavu_search_keyword">Raktažodis</string>
+    <string name="dejavu_search_keyword_taken">\"%1$s\" jau naudoja kitas raktažodis.</string>
 </resources>

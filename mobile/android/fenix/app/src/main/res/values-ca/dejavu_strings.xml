@@ -551,4 +551,6 @@
     <string name="dejavu_settings_tips_summary">Mostra consells sobre gestos ocults, com ara mantenir premut «Pestanya nova»</string>
     <string name="dejavu_new">Nou</string>
     <string name="dejavu_menu_customize_reader_view">Personalitza la vista de lectura</string>
+    <string name="dejavu_search_keyword">Paraula clau</string>
+    <string name="dejavu_search_keyword_taken">\"%1$s\" ja l\'utilitza una altra paraula clau.</string>
 </resources>

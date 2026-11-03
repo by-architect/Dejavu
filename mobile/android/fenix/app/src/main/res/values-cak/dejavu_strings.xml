@@ -543,4 +543,6 @@
     <string name="dejavu_settings_tips_summary">Kek\'ut taq na\'oj chi kij ewan taq b\'anoj paläj, achi\'el nachäp jun ramaj “K\'ak\'a\' ruwi\'”</string>
     <string name="dejavu_new">K\'ak\'a\'</string>
     <string name="dejavu_menu_customize_reader_view">Ke\'ichinäx rutz\'etoj sik\'inem</string>
+    <string name="dejavu_search_keyword">Etal b\'i\'aj</string>
+    <string name="dejavu_search_keyword_taken">\"%1$s\" xtokisäx chi rij jun chik etal b\'i\'aj.</string>
 </resources>

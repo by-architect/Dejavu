@@ -543,4 +543,6 @@
     <string name="dejavu_settings_tips_summary">Amosar conseyos sobre xestos anubríos, como caltener primíu «Llingüeta nueva»</string>
     <string name="dejavu_new">Nuevu</string>
     <string name="dejavu_menu_customize_reader_view">Personalizar la vista de llector</string>
+    <string name="dejavu_search_keyword">Pallabra clave</string>
+    <string name="dejavu_search_keyword_taken">\"%1$s\" yá la usa otra pallabra clave.</string>
 </resources>

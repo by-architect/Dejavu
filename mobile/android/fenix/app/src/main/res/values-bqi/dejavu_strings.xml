@@ -543,4 +543,6 @@
     <string name="dejavu_settings_tips_summary">نشون دادن نکته یل سی اشاره یل قایم، مثل نگه داشتن «بلگه نۊ»</string>
     <string name="dejavu_new">نۊ</string>
     <string name="dejavu_menu_customize_reader_view">سفارشی کردن نما خۊندنی</string>
+    <string name="dejavu_search_keyword">کلیدواژه</string>
+    <string name="dejavu_search_keyword_taken">\"%1$s\" ایسّه وا یه کلیدواژه دییر کار گرفته بویه.</string>
 </resources>

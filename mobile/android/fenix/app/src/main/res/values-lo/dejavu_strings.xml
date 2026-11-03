@@ -535,4 +535,6 @@
     <string name="dejavu_settings_tips_summary">ສະແດງຄຳແນະນຳກ່ຽວກັບທ່າທາງທີ່ເຊື່ອງໄວ້ ເຊັ່ນ: ການກົດ “ແທັບໃຫມ່” ຄ້າງໄວ້</string>
     <string name="dejavu_new">ໃຫມ່</string>
     <string name="dejavu_menu_customize_reader_view">ປັບແຕ່ງມຸມມອງຜູ້ອ່ານ</string>
+    <string name="dejavu_search_keyword">ຄຳຫຼັກ</string>
+    <string name="dejavu_search_keyword_taken">\"%1$s\" ຖືກໃຊ້ແລ້ວໂດຍຄຳຫຼັກອື່ນ.</string>
 </resources>

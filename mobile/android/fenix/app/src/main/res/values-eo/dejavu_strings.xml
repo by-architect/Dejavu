@@ -543,4 +543,6 @@
     <string name="dejavu_settings_tips_summary">Montri konsilojn pri kaŝitaj gestoj, ekzemple teni “Nova langeto”</string>
     <string name="dejavu_new">Nova</string>
     <string name="dejavu_menu_customize_reader_view">Personecigi la legilan vidon</string>
+    <string name="dejavu_search_keyword">Ŝlosilvorto</string>
+    <string name="dejavu_search_keyword_taken">\"%1$s\" jam estas uzata de alia ŝlosilvorto.</string>
 </resources>

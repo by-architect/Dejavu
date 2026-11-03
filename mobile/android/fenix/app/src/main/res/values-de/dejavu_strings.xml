@@ -543,4 +543,6 @@
     <string name="dejavu_settings_tips_summary">Tipps zu versteckten Gesten anzeigen, etwa „Neuer Tab“ gedrückt halten</string>
     <string name="dejavu_new">Neu</string>
     <string name="dejavu_menu_customize_reader_view">Leseansicht anpassen</string>
+    <string name="dejavu_search_keyword">Schlüsselwort</string>
+    <string name="dejavu_search_keyword_taken">\"%1$s\" wird bereits von einem anderen Schlüsselwort verwendet.</string>
 </resources>

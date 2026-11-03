@@ -543,4 +543,6 @@
     <string name="dejavu_settings_tips_summary">“ନୂଆ ଟ୍ୟାବ୍” ଦବାଇ ଧରିବା ଭଳି ଲୁଚିଥିବା ଜେଶ୍ଚର୍ ବିଷୟରେ ପରାମର୍ଶ ଦେଖାନ୍ତୁ</string>
     <string name="dejavu_new">ନୂଆ</string>
     <string name="dejavu_menu_customize_reader_view">ପାଠକ ଦୃଶ୍ୟ କଷ୍ଟମାଇଜ୍ କରନ୍ତୁ</string>
+    <string name="dejavu_search_keyword">କୀୱାର୍ଡ</string>
+    <string name="dejavu_search_keyword_taken">\"%1$s\" ପୂର୍ବରୁ ଅନ୍ୟ ଏକ କୀୱାର୍ଡ ଦ୍ୱାରା ବ୍ୟବହୃତ ହେଉଛି।</string>
 </resources>

@@ -559,4 +559,6 @@
     <string name="dejavu_settings_tips_summary">Zobrazovat tipy ke skrytým gestům, například podržení tlačítka „Nový panel“</string>
     <string name="dejavu_new">Novinka</string>
     <string name="dejavu_menu_customize_reader_view">Přizpůsobit zobrazení čtečky</string>
+    <string name="dejavu_search_keyword">Klíčové slovo</string>
+    <string name="dejavu_search_keyword_taken">\"%1$s\" už používá jiné klíčové slovo.</string>
 </resources>

@@ -559,4 +559,6 @@
     <string name="dejavu_settings_tips_summary">Pokiwy wo schowanych gestach pokazać, kaž dołhe tłóčenje na „Nowy rajtark“</string>
     <string name="dejavu_new">Nowy</string>
     <string name="dejavu_menu_customize_reader_view">Čitanski napohlad přiměrić</string>
+    <string name="dejavu_search_keyword">Klučowe słowo</string>
+    <string name="dejavu_search_keyword_taken">\"%1$s\" so hižo wot druheho klučoweho słowa wužiwa.</string>
 </resources>

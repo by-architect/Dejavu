@@ -543,4 +543,6 @@
     <string name="dejavu_settings_tips_summary">Affissà cunsiglii nant\'à e mosse piatte, cum\'è tene appughjatu Nova unghjetta</string>
     <string name="dejavu_new">Novu</string>
     <string name="dejavu_menu_customize_reader_view">Persunalizà u modu di lettura</string>
+    <string name="dejavu_search_keyword">Parolla chjave</string>
+    <string name="dejavu_search_keyword_taken">\"%1$s\" hè digià impiegata da un\'altra parolla chjave.</string>
 </resources>

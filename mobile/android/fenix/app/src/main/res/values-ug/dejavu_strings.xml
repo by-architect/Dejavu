@@ -543,4 +543,6 @@
     <string name="dejavu_settings_tips_summary">«يېڭى بەتكۈچ»نى بېسىپ تۇرۇشقا ئوخشاش يوشۇرۇن قول ئىشارىلىرى ھەققىدىكى كۆرسەتمىلەرنى كۆرسەت</string>
     <string name="dejavu_new">يېڭى</string>
     <string name="dejavu_menu_customize_reader_view">ئوقۇرمەن كۆرۈنۈشىنى خاسلاشتۇر</string>
+    <string name="dejavu_search_keyword">ئاچقۇچلۇق سۆز</string>
+    <string name="dejavu_search_keyword_taken">\"%1$s\" باشقا ئاچقۇچلۇق سۆز تەرىپىدىن ئىشلىتىلگەن.</string>
 </resources>
