@@ -40,21 +40,33 @@ class DejavuPreferenceCards : FragmentManager.FragmentLifecycleCallbacks() {
 private class CardDecoration(context: Context) : RecyclerView.ItemDecoration() {
     private val density = context.resources.displayMetrics.density
     private val margin = (MARGIN_DP * density).toInt()
+    private val maxWidth = (SettingsLayout.MAX_CONTENT_WIDTH_DP * density).toInt()
     private val gap = (GAP_DP * density).toInt()
     private val groupSpacing = (GROUP_SPACING_DP * density).toInt()
     private val outerRadius = OUTER_RADIUS_DP * density
     private val innerRadius = INNER_RADIUS_DP * density
     private val paint = Paint(Paint.ANTI_ALIAS_FLAG).apply {
-        color = MaterialColors.getColor(context, materialR.attr.colorSurfaceContainerHigh, 0)
+        // See-through like the cards of the Compose screens, see SETTINGS_CARD_ALPHA.
+        color = MaterialColors.getColor(context, materialR.attr.colorSurfaceContainerHighest, 0)
+        alpha = (SETTINGS_CARD_ALPHA * OPAQUE).toInt()
     }
     private val rect = RectF()
     private val path = Path()
 
     override fun getItemOffsets(outRect: Rect, view: View, parent: RecyclerView, state: RecyclerView.State) {
         val position = parent.getChildAdapterPosition(view)
-        val row = rowAt(parent, position) ?: return
-        outRect.left = margin
-        outRect.right = margin
+        // On a wide window the cards stay at their widest and in the middle. The titles and spacers between them
+        // keep to the same edges.
+        val centering = SettingsLayout.sideInset(parent.width, maxWidth, 0)
+        val row = rowAt(parent, position)
+        if (row == null) {
+            outRect.left = centering
+            outRect.right = centering
+            return
+        }
+        val side = SettingsLayout.sideInset(parent.width, maxWidth, margin)
+        outRect.left = side
+        outRect.right = side
         outRect.top = if (row.first) 0 else gap
         outRect.bottom = if (row.last) groupSpacing else 0
     }
@@ -77,7 +89,7 @@ private class CardDecoration(context: Context) : RecyclerView.ItemDecoration() {
                 floatArrayOf(top, top, top, top, bottom, bottom, bottom, bottom),
                 Path.Direction.CW,
             )
-            paint.alpha = (child.alpha * OPAQUE).toInt()
+            paint.alpha = (child.alpha * SETTINGS_CARD_ALPHA * OPAQUE).toInt()
             canvas.drawPath(path, paint)
         }
     }

@@ -139,6 +139,7 @@ import org.mozilla.fenix.debugsettings.gleandebugtools.DefaultGleanDebugToolsSto
 import org.mozilla.fenix.debugsettings.ui.FenixOverlay
 import org.mozilla.fenix.dejavu.browser.TabSleepMiddleware
 import org.mozilla.fenix.dejavu.settings.DejavuPreferenceCards
+import org.mozilla.fenix.dejavu.settings.SettingsPane
 import org.mozilla.fenix.dejavu.settings.PageBackdropCallbacks
 import org.mozilla.fenix.downloads.DownloadSnackbar
 import org.mozilla.fenix.e2e.EdgeToEdgeFragmentLifecycleCallbacks
@@ -701,6 +702,8 @@ open class HomeActivity : LocaleAwareAppCompatActivity(), NavHostActivity, Crash
         )
         supportFragmentManager.registerFragmentLifecycleCallbacks(DejavuPreferenceCards(), true)
         supportFragmentManager.registerFragmentLifecycleCallbacks(PageBackdropCallbacks(), true)
+        // Dejavu: on wide windows Settings lists its categories beside the settings.
+        SettingsPane(this, navHost.navController, binding.root, components.settingsIndexer).install()
 
         if (components.settings.showContileFeature) {
             components.core.macTopSitesUpdater.startPeriodicWork()
