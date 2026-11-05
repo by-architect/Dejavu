@@ -553,4 +553,18 @@
     <string name="dejavu_remote_debugging_summary">Si torne a disativâ cuant che Dejavu al tache di gnûf</string>
     <string name="dejavu_preference_mouse_support">Supuart pe surie</string>
     <string name="dejavu_preference_mouse_support_summary">Un clic di mieç al vierç un colegament intune schede in sotfont, e passâ parsore di un colegament al mostre la sô direzion. Un clic di mieç parsore di une schede le siere.</string>
+    <string name="dejavu_workspace_lock">Bloche chest spazi di lavôr</string>
+    <string name="dejavu_workspace_lock_summary">Lu mostre sfuarmât fintremai che no tu lu sblochis cul stamp dal dêt, la muse o il bloc dal schermi</string>
+    <string name="dejavu_workspace_no_history">No salvâ la cronologjie</string>
+    <string name="dejavu_workspace_no_history_summary">Lis pagjinis viertis achì no jentrin te cronologjie, tes ricercjis resintis e tes schedis sieradis di resint</string>
+    <string name="dejavu_workspace_locked">%1$s al è blocât</string>
+    <string name="dejavu_workspace_unlock_title">Sbloche %1$s</string>
+    <string name="dejavu_workspace_locked_leave">Va ai spazis di lavôr</string>
+    <string name="dejavu_settings_workspace_lock">Bloc dai spazis di lavôr</string>
+    <string name="dejavu_workspace_lock_hint">Par blocâ un spazi di lavôr, tocje il so non te schermade iniziâl e ative «Bloche chest spazi di lavôr». Al ven mostrât sfuarmât fintremai che no tu lu sblochis cul stamp dal dêt, la muse o il bloc dal schermi.</string>
+    <string name="dejavu_workspace_lock_when">Bloche di gnûf</string>
+    <string name="dejavu_workspace_lock_on_switch">Cuant che tu passis a un altri spazi di lavôr</string>
+    <string name="dejavu_workspace_lock_on_leave">Cuant che tu jessis di Dejavu</string>
+    <string name="dejavu_workspace_lock_after">%1$s dopo che tu jessis di Dejavu</string>
+    <string name="dejavu_workspace_lock_on_close">Cuant che Dejavu si siere</string>
 </resources>

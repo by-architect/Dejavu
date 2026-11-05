@@ -553,4 +553,18 @@
     <string name="dejavu_remote_debugging_summary">Ad yensu tikkelt-nniḍen mi ara yales Dejavu asenker</string>
     <string name="dejavu_preference_mouse_support">Tallalt n tɣerdayt</string>
     <string name="dejavu_preference_mouse_support_summary">Asiti s tqeffalt n tlemmast yeldi aseɣwen deg yiccer deg ugilal, ma d aɛeddi n tɣerdayt ɣef useɣwen yesskan-d tansa-ines. Asiti s tqeffalt n tlemmast ɣef yiccer ad t-isekkeṛ.</string>
+    <string name="dejavu_workspace_lock">Sekkeṛ amkan-a n umahil</string>
+    <string name="dejavu_workspace_lock_summary">Ad t-id-yesken d ameɣmal alamma t-tekkseḍ s udsil n uḍad, udem neɣ asekkeṛ n ugdil</string>
+    <string name="dejavu_workspace_no_history">Ur sekles ara azray</string>
+    <string name="dejavu_workspace_no_history_summary">Isebtar yettwaldin dagi ur kecmen ara ɣer uzray, inadiyen ineggura akked accaren yettwamedlen melmi kan</string>
+    <string name="dejavu_workspace_locked">%1$s yettwasekkeṛ</string>
+    <string name="dejavu_workspace_unlock_title">Kkes asekkeṛ i %1$s</string>
+    <string name="dejavu_workspace_locked_leave">Ddu ɣer imukan n umahil</string>
+    <string name="dejavu_settings_workspace_lock">Asekkeṛ n imukan n umahil</string>
+    <string name="dejavu_workspace_lock_hint">I usekkeṛ n umkan n umahil, sit ɣef yisem-is deg ugdil agejdan syen rmed “Sekkeṛ amkan-a n umahil”. Ad d-iban d ameɣmal alamma t-tekkseḍ s udsil n uḍad, udem neɣ asekkeṛ n ugdil.</string>
+    <string name="dejavu_workspace_lock_when">Sekkeṛ tikkelt nniḍen</string>
+    <string name="dejavu_workspace_lock_on_switch">Mi ara tɛeddiḍ ɣer umkan n umahil nniḍen</string>
+    <string name="dejavu_workspace_lock_on_leave">Mi ara teffɣeḍ seg Dejavu</string>
+    <string name="dejavu_workspace_lock_after">%1$s seld tuffɣa seg Dejavu</string>
+    <string name="dejavu_workspace_lock_on_close">Mi ara yemdel Dejavu</string>
 </resources>

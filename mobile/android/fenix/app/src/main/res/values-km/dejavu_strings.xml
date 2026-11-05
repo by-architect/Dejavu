@@ -545,4 +545,18 @@
     <string name="dejavu_remote_debugging_summary">បិទវិញ នៅពេល Dejavu ចាប់ផ្ដើមឡើងវិញ</string>
     <string name="dejavu_preference_mouse_support">ការគាំទ្រកណ្ដុរ</string>
     <string name="dejavu_preference_mouse_support_summary">ការចុចប៊ូតុងកណ្ដាលបើកតំណក្នុងផ្ទាំងផ្ទៃខាងក្រោយ ហើយការដាក់ទស្សន៍ទ្រនិចលើតំណបង្ហាញអាសយដ្ឋានរបស់វា។ ការចុចប៊ូតុងកណ្ដាលលើផ្ទាំងនឹងបិទផ្ទាំងនោះ។</string>
+    <string name="dejavu_workspace_lock">ចាក់សោចន្លោះការងារនេះ</string>
+    <string name="dejavu_workspace_lock_summary">បង្ហាញវាព្រិលៗ រហូតដល់អ្នកដោះសោវាដោយស្នាមម្រាមដៃ មុខ ឬការចាក់សោអេក្រង់</string>
+    <string name="dejavu_workspace_no_history">កុំរក្សាទុកប្រវត្តិ</string>
+    <string name="dejavu_workspace_no_history_summary">ទំព័រដែលបានបើកនៅទីនេះ មិនចូលក្នុងប្រវត្តិ ការស្វែងរកថ្មីៗ និងផ្ទាំងដែលបានបិទថ្មីៗទេ</string>
+    <string name="dejavu_workspace_locked">%1$s ត្រូវបានចាក់សោ</string>
+    <string name="dejavu_workspace_unlock_title">ដោះសោ %1$s</string>
+    <string name="dejavu_workspace_locked_leave">ទៅកាន់ចន្លោះការងារ</string>
+    <string name="dejavu_settings_workspace_lock">ការចាក់សោចន្លោះការងារ</string>
+    <string name="dejavu_workspace_lock_hint">ដើម្បីចាក់សោចន្លោះការងារ សូមប៉ះឈ្មោះរបស់វានៅលើអេក្រង់ដើម ហើយបើក “ចាក់សោចន្លោះការងារនេះ”។ វាបង្ហាញព្រិលៗ រហូតដល់អ្នកដោះសោវាដោយស្នាមម្រាមដៃ មុខ ឬការចាក់សោអេក្រង់។</string>
+    <string name="dejavu_workspace_lock_when">ចាក់សោម្ដងទៀត</string>
+    <string name="dejavu_workspace_lock_on_switch">នៅពេលអ្នកប្ដូរទៅចន្លោះការងារផ្សេង</string>
+    <string name="dejavu_workspace_lock_on_leave">នៅពេលអ្នកចាកចេញពី Dejavu</string>
+    <string name="dejavu_workspace_lock_after">%1$s បន្ទាប់ពីចាកចេញពី Dejavu</string>
+    <string name="dejavu_workspace_lock_on_close">នៅពេល Dejavu បិទ</string>
 </resources>

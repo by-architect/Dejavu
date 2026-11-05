@@ -553,4 +553,18 @@
     <string name="dejavu_remote_debugging_summary">Изключва се отново, когато Dejavu се рестартира</string>
     <string name="dejavu_preference_mouse_support">Поддръжка на мишка</string>
     <string name="dejavu_preference_mouse_support_summary">Щракването със средния бутон отваря връзката във фонов раздел, а посочването на връзка показва адреса ѝ. Щракването със средния бутон върху раздел го затваря.</string>
+    <string name="dejavu_workspace_lock">Заключване на това работно пространство</string>
+    <string name="dejavu_workspace_lock_summary">Показва го размазано, докато не го отключите с пръстов отпечатък, лице или заключване на екрана</string>
+    <string name="dejavu_workspace_no_history">Без запазване на историята</string>
+    <string name="dejavu_workspace_no_history_summary">Страниците, отворени тук, не влизат в историята, скорошните търсения и наскоро затворените раздели</string>
+    <string name="dejavu_workspace_locked">Работното пространство „%1$s“ е заключено</string>
+    <string name="dejavu_workspace_unlock_title">Отключване на „%1$s“</string>
+    <string name="dejavu_workspace_locked_leave">Към работните пространства</string>
+    <string name="dejavu_settings_workspace_lock">Заключване на работните пространства</string>
+    <string name="dejavu_workspace_lock_hint">За да заключите работно пространство, докоснете името му на началния екран и включете „Заключване на това работно пространство“. То се показва размазано, докато не го отключите с пръстов отпечатък, лице или заключване на екрана.</string>
+    <string name="dejavu_workspace_lock_when">Повторно заключване</string>
+    <string name="dejavu_workspace_lock_on_switch">При преминаване към друго работно пространство</string>
+    <string name="dejavu_workspace_lock_on_leave">При излизане от Dejavu</string>
+    <string name="dejavu_workspace_lock_after">%1$s след излизане от Dejavu</string>
+    <string name="dejavu_workspace_lock_on_close">При затваряне на Dejavu</string>
 </resources>

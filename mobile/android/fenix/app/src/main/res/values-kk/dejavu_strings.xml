@@ -553,4 +553,18 @@
     <string name="dejavu_remote_debugging_summary">Dejavu қайта іске қосылғанда қайтадан сөнеді</string>
     <string name="dejavu_preference_mouse_support">Тінтуірді қолдау</string>
     <string name="dejavu_preference_mouse_support_summary">Ортаңғы батырмамен шерту сілтемені фондық бетте ашады, ал сілтеменің үстіне апару оның адресін көрсетеді. Бетте ортаңғы батырмамен шерту оны жабады.</string>
+    <string name="dejavu_workspace_lock">Бұл жұмыс кеңістігін құлыптау</string>
+    <string name="dejavu_workspace_lock_summary">Саусақ ізімен, бетпен немесе экран құлпымен ашқанша оны бұлдыр көрсетеді</string>
+    <string name="dejavu_workspace_no_history">Тарихты сақтамау</string>
+    <string name="dejavu_workspace_no_history_summary">Мұнда ашылған беттер тарихқа, соңғы іздеулерге және жақында жабылған беттерге түспейді</string>
+    <string name="dejavu_workspace_locked">«%1$s» құлыпталған</string>
+    <string name="dejavu_workspace_unlock_title">«%1$s» құлпын ашу</string>
+    <string name="dejavu_workspace_locked_leave">Жұмыс кеңістіктеріне өту</string>
+    <string name="dejavu_settings_workspace_lock">Жұмыс кеңістігінің құлпы</string>
+    <string name="dejavu_workspace_lock_hint">Жұмыс кеңістігін құлыптау үшін басты экранда оның атауын түртіп, «Бұл жұмыс кеңістігін құлыптау» параметрін қосыңыз. Саусақ ізімен, бетпен немесе экран құлпымен ашқанша ол бұлдыр көрінеді.</string>
+    <string name="dejavu_workspace_lock_when">Қайта құлыптау</string>
+    <string name="dejavu_workspace_lock_on_switch">Басқа жұмыс кеңістігіне ауысқанда</string>
+    <string name="dejavu_workspace_lock_on_leave">Dejavu-дан шыққанда</string>
+    <string name="dejavu_workspace_lock_after">Dejavu-дан шыққаннан кейін %1$s өткенде</string>
+    <string name="dejavu_workspace_lock_on_close">Dejavu жабылғанда</string>
 </resources>

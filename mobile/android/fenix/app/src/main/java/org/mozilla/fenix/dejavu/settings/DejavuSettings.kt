@@ -21,6 +21,7 @@ import org.mozilla.fenix.dejavu.history.HistoryGrouping
 import org.mozilla.fenix.dejavu.menu.ActionsBarLayout
 import org.mozilla.fenix.dejavu.menu.AddressBarButtons
 import org.mozilla.fenix.dejavu.menu.MoreMenuLayout
+import org.mozilla.fenix.dejavu.workspaces.WorkspaceLockTime
 
 /**
  * Device local Dejavu preferences: where actions are shown, the custom actions and the menus. They are not synced.
@@ -62,6 +63,8 @@ class DejavuSettings private constructor(context: Context) {
     private val _tipsEnabled = MutableStateFlow(prefs.getBoolean(KEY_TIPS_ENABLED, true))
     private val _seenTips = MutableStateFlow(readSet(KEY_SEEN_TIPS))
     private val _seenNewThings = MutableStateFlow(readSet(KEY_SEEN_NEW_THINGS))
+    private val _workspaceLockTime =
+        MutableStateFlow(WorkspaceLockTime.fromKey(prefs.getString(KEY_WORKSPACE_LOCK_TIME, null)))
 
     /** Actions the user defined, in creation order. */
     val customActions: StateFlow<List<CustomAction>> = _customActions.asStateFlow()
@@ -133,6 +136,14 @@ class DejavuSettings private constructor(context: Context) {
     fun setAwakeTabLimit(limit: Int) {
         _awakeTabLimit.value = limit
         prefs.edit { putInt(KEY_AWAKE_TAB_LIMIT, limit) }
+    }
+
+    /** When the locked workspaces the user unlocked lock again. */
+    val workspaceLockTime: StateFlow<WorkspaceLockTime> = _workspaceLockTime.asStateFlow()
+
+    fun setWorkspaceLockTime(time: WorkspaceLockTime) {
+        _workspaceLockTime.value = time
+        prefs.edit { putString(KEY_WORKSPACE_LOCK_TIME, time.key) }
     }
 
     /** Whether the welcome pages were shown, or are not due, as Dejavu was updated from a version that had them. */
@@ -453,6 +464,7 @@ class DejavuSettings private constructor(context: Context) {
         private const val KEY_TIPS_ENABLED = "tips_enabled"
         private const val KEY_SEEN_TIPS = "seen_tips"
         private const val KEY_SEEN_NEW_THINGS = "seen_new_things"
+        private const val KEY_WORKSPACE_LOCK_TIME = "workspace_lock_time"
         private val DEFAULT_PINNED_ROW_ACTIONS = listOf(TabAction.CLOSE)
         private val DEFAULT_UNPINNED_ROW_ACTIONS = listOf(TabAction.PIN, TabAction.CLOSE)
         private val DEFAULT_FOLDER_ROW_ACTIONS = listOf(TabAction.SLEEP)

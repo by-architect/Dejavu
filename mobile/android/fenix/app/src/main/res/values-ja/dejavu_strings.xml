@@ -545,4 +545,18 @@
     <string name="dejavu_remote_debugging_summary">Dejavu を再起動すると再びオフになります</string>
     <string name="dejavu_preference_mouse_support">マウスのサポート</string>
     <string name="dejavu_preference_mouse_support_summary">中クリックでリンクをバックグラウンドのタブで開き、リンクにマウスを重ねるとそのアドレスを表示します。 タブを中クリックすると、そのタブを閉じます。</string>
+    <string name="dejavu_workspace_lock">このワークスペースをロック</string>
+    <string name="dejavu_workspace_lock_summary">指紋、顔、または画面ロックで解除するまでぼかして表示します</string>
+    <string name="dejavu_workspace_no_history">履歴を保存しない</string>
+    <string name="dejavu_workspace_no_history_summary">ここで開いたページは履歴、最近の検索、最近閉じたタブに残りません</string>
+    <string name="dejavu_workspace_locked">%1$s はロックされています</string>
+    <string name="dejavu_workspace_unlock_title">%1$s のロックを解除</string>
+    <string name="dejavu_workspace_locked_leave">ワークスペースへ移動</string>
+    <string name="dejavu_settings_workspace_lock">ワークスペースのロック</string>
+    <string name="dejavu_workspace_lock_hint">ワークスペースをロックするには、ホーム画面でその名前をタップし、「このワークスペースをロック」をオンにします。指紋、顔、または画面ロックで解除するまでぼかして表示されます。</string>
+    <string name="dejavu_workspace_lock_when">再ロックのタイミング</string>
+    <string name="dejavu_workspace_lock_on_switch">別のワークスペースに切り替えたとき</string>
+    <string name="dejavu_workspace_lock_on_leave">Dejavu から離れたとき</string>
+    <string name="dejavu_workspace_lock_after">Dejavu から離れて %1$s後</string>
+    <string name="dejavu_workspace_lock_on_close">Dejavu を閉じたとき</string>
 </resources>

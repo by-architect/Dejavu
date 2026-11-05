@@ -561,4 +561,18 @@
     <string name="dejavu_remote_debugging_summary">Dejavu ᱫᱚᱦᱲᱟ ᱮᱦᱚᱵ ᱚᱠᱛᱮ ᱫᱚᱦᱲᱟ ᱵᱚᱸᱫᱚ ᱦᱩᱭᱩᱜᱼᱟ</string>
     <string name="dejavu_preference_mouse_support">ᱢᱟᱣᱩᱥ ᱜᱚᱲᱚ</string>
     <string name="dejavu_preference_mouse_support_summary">ᱛᱟᱞᱟ ᱵᱩᱴᱟᱹᱢ ᱚᱛᱟ ᱠᱟᱛᱮ ᱞᱤᱝᱠ ᱯᱟᱪᱷᱚᱞ ᱴᱮᱵᱽ ᱨᱮ ᱡᱷᱤᱡᱽᱚᱜᱼᱟ, ᱟᱨ ᱞᱤᱝᱠ ᱪᱮᱛᱟᱱ ᱨᱮ ᱢᱟᱣᱩᱥ ᱫᱚᱦᱚ ᱠᱟᱛᱮ ᱚᱱᱟᱨ ᱴᱷᱤᱠᱬᱟᱹ ᱩᱫᱩᱜᱚᱜᱼᱟ ᱾ ᱴᱮᱵᱽ ᱨᱮ ᱛᱟᱞᱟ ᱵᱩᱴᱟᱹᱢ ᱚᱛᱟ ᱞᱮᱱ ᱥᱟᱶ ᱚᱱᱟ ᱵᱚᱱᱚᱫ ᱠᱟᱱᱟ ᱾</string>
+    <string name="dejavu_workspace_lock">ᱱᱚᱶᱟ ᱣᱟᱨᱠᱥᱯᱮᱥ ᱞᱚᱠ ᱢᱮ</string>
+    <string name="dejavu_workspace_lock_summary">ᱟᱹᱝᱜᱩᱞ ᱪᱤᱱᱦᱟᱹ, ᱢᱩᱬᱩᱛ ᱟᱨ ᱵᱟᱝ ᱥᱠᱨᱤᱱ ᱞᱚᱠ ᱛᱮ ᱟᱱᱞᱚᱠ ᱦᱟᱹᱵᱤᱡ ᱫᱷᱩᱸᱫᱽᱞᱟᱹ ᱩᱫᱩᱜᱼᱟ</string>
+    <string name="dejavu_workspace_no_history">ᱱᱟᱜᱟᱢ ᱟᱞᱚᱢ ᱥᱟᱺᱪᱟᱣᱟ</string>
+    <string name="dejavu_workspace_no_history_summary">ᱱᱚᱸᱰᱮ ᱡᱷᱤᱡᱽ ᱥᱟᱦᱴᱟ ᱠᱚ ᱱᱟᱜᱟᱢ, ᱱᱟᱣᱟ ᱥᱮᱸᱫᱽᱨᱟ ᱟᱨ ᱱᱤᱛᱚᱜ ᱵᱚᱱᱫᱚ ᱴᱮᱵᱽ ᱨᱮ ᱵᱟᱝ ᱥᱮᱞᱮᱫᱚᱜᱼᱟ</string>
+    <string name="dejavu_workspace_locked">%1$s ᱞᱚᱠ ᱢᱮᱱᱟᱜᱼᱟ</string>
+    <string name="dejavu_workspace_unlock_title">%1$s ᱟᱱᱞᱚᱠ ᱢᱮ</string>
+    <string name="dejavu_workspace_locked_leave">ᱣᱟᱨᱠᱥᱯᱮᱥ ᱛᱮ ᱪᱟᱞᱟᱜ ᱢᱮ</string>
+    <string name="dejavu_settings_workspace_lock">ᱣᱟᱨᱠᱥᱯᱮᱥ ᱞᱚᱠ</string>
+    <string name="dejavu_workspace_lock_hint">ᱢᱤᱫ ᱣᱟᱨᱠᱥᱯᱮᱥ ᱞᱚᱠ ᱞᱟᱹᱜᱤᱫ ᱚᱲᱟᱜ ᱥᱠᱨᱤᱱ ᱨᱮ ᱚᱱᱟ ᱨᱮᱭᱟᱜ ᱧᱩᱛᱩᱢ ᱨᱮ ᱴᱤᱯᱟᱹᱣ ᱢᱮ ᱟᱨ “ᱱᱚᱶᱟ ᱣᱟᱨᱠᱥᱯᱮᱥ ᱞᱚᱠ ᱢᱮ” ᱪᱟᱹᱞᱩ ᱢᱮ ᱾ ᱟᱹᱝᱜᱩᱞ ᱪᱤᱱᱦᱟᱹ, ᱢᱩᱬᱩᱛ ᱟᱨ ᱵᱟᱝ ᱥᱠᱨᱤᱱ ᱞᱚᱠ ᱛᱮ ᱟᱱᱞᱚᱠ ᱦᱟᱹᱵᱤᱡ ᱫᱷᱩᱸᱫᱽᱞᱟᱹ ᱧᱮᱞᱚᱜᱼᱟ ᱾</string>
+    <string name="dejavu_workspace_lock_when">ᱫᱩᱦᱲᱟᱹ ᱞᱚᱠ ᱢᱮ</string>
+    <string name="dejavu_workspace_lock_on_switch">ᱮᱴᱟᱜ ᱣᱟᱨᱠᱥᱯᱮᱥ ᱛᱮ ᱵᱚᱫᱚᱞ ᱚᱠᱛᱮ</string>
+    <string name="dejavu_workspace_lock_on_leave">Dejavu ᱟᱲᱟᱜ ᱚᱠᱛᱮ</string>
+    <string name="dejavu_workspace_lock_after">Dejavu ᱟᱲᱟᱜ ᱛᱟᱭᱚᱢ %1$s</string>
+    <string name="dejavu_workspace_lock_on_close">Dejavu ᱵᱚᱱᱫᱚ ᱚᱠᱛᱮ</string>
 </resources>

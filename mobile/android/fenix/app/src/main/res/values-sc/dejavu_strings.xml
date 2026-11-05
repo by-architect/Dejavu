@@ -553,4 +553,18 @@
     <string name="dejavu_remote_debugging_summary">Si disativat torra cando Dejavu si torrat a aviare</string>
     <string name="dejavu_preference_mouse_support">Supportu de su sòrighe</string>
     <string name="dejavu_preference_mouse_support_summary">Unu clic cun su butone de mesu aberit unu ligòngiu in un\'ischeda in segundu pranu, e passende subra de unu ligòngiu nde mustrat s\'indiritzu. Unu clic cun su butone de mesu subra de un\'ischeda la serrat.</string>
+    <string name="dejavu_workspace_lock">Bloca custu ispàtziu de traballu</string>
+    <string name="dejavu_workspace_lock_summary">Lu mustrat isfocadu finas a cando no lu isblocas cun s’imprenta, sa cara o su blocu de s’ischermu</string>
+    <string name="dejavu_workspace_no_history">No sarves sa cronologia</string>
+    <string name="dejavu_workspace_no_history_summary">Sas pàginas abertas inoghe non intrant in sa cronologia, in sas chircas reghentes e in sas ischedas serradas dae pagu</string>
+    <string name="dejavu_workspace_locked">%1$s est blocadu</string>
+    <string name="dejavu_workspace_unlock_title">Isbloca %1$s</string>
+    <string name="dejavu_workspace_locked_leave">Bae a sos ispàtzios de traballu</string>
+    <string name="dejavu_settings_workspace_lock">Blocu de sos ispàtzios de traballu</string>
+    <string name="dejavu_workspace_lock_hint">Pro blocare un’ispàtziu de traballu, toca su nùmene suo in s’ischermu printzipale e ativa «Bloca custu ispàtziu de traballu». Benit mustradu isfocadu finas a cando no lu isblocas cun s’imprenta, sa cara o su blocu de s’ischermu.</string>
+    <string name="dejavu_workspace_lock_when">Bloca torra</string>
+    <string name="dejavu_workspace_lock_on_switch">Cando passas a un’àteru ispàtziu de traballu</string>
+    <string name="dejavu_workspace_lock_on_leave">Cando bessis dae Dejavu</string>
+    <string name="dejavu_workspace_lock_after">%1$s a pustis de èssere bessidu dae Dejavu</string>
+    <string name="dejavu_workspace_lock_on_close">Cando Dejavu si serrat</string>
 </resources>

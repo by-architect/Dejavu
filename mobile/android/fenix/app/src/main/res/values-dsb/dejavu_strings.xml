@@ -569,4 +569,18 @@
     <string name="dejavu_remote_debugging_summary">Wótšaltujo se zasej, gaž se Dejavu znowego startujo</string>
     <string name="dejavu_preference_mouse_support">Pódpěra myški</string>
     <string name="dejavu_preference_mouse_support_summary">Srjejźne kliknjenje wócynja wótkaz w slězynowem rejtariku, a gaž myšku nad wótkazom źaržyśo, se jogo adresa pokazujo. Srjejźne kliknjenje na rejtarik jen zacynja.</string>
+    <string name="dejavu_workspace_lock">Toś ten źěłowy rum zamknuś</string>
+    <string name="dejavu_workspace_lock_summary">Pokazujo jen mrokawy, daniž jen z palcowym wótśišćom, woblicom abo blokěrowanim wobrazowki njewótamknjoš</string>
+    <string name="dejavu_workspace_no_history">Historiju njeskładowaś</string>
+    <string name="dejavu_workspace_no_history_summary">Boki, kótarež se how wócynjaju, do historije, nejnowšych pytanjow a rowno zacynjonych rejtarikow njepśiidu</string>
+    <string name="dejavu_workspace_locked">Źěłowy rum „%1$s“ jo zamknjony</string>
+    <string name="dejavu_workspace_unlock_title">„%1$s“ wótamknuś</string>
+    <string name="dejavu_workspace_locked_leave">K źěłowym rumam</string>
+    <string name="dejavu_settings_workspace_lock">Zamknjenje źěłowych rumow</string>
+    <string name="dejavu_workspace_lock_hint">Aby źěłowy rum zamknuł, pótusni na startowej wobrazowce jogo mě a zmóžni „Toś ten źěłowy rum zamknuś“. Pokazujo se mrokawy, daniž jen z palcowym wótśišćom, woblicom abo blokěrowanim wobrazowki njewótamknjoš.</string>
+    <string name="dejavu_workspace_lock_when">Znowego zamknuś</string>
+    <string name="dejavu_workspace_lock_on_switch">Gaž do drugego źěłowego ruma pśejźoš</string>
+    <string name="dejavu_workspace_lock_on_leave">Gaž Dejavu spušćiš</string>
+    <string name="dejavu_workspace_lock_after">%1$s pó spušćenju Dejavu</string>
+    <string name="dejavu_workspace_lock_on_close">Gaž se Dejavu zacynijo</string>
 </resources>

@@ -561,4 +561,18 @@
     <string name="dejavu_remote_debugging_summary">נכבה שוב כש-Dejavu מופעל מחדש</string>
     <string name="dejavu_preference_mouse_support">תמיכה בעכבר</string>
     <string name="dejavu_preference_mouse_support_summary">לחיצה אמצעית פותחת קישור בלשונית ברקע, וריחוף מעל קישור מציג את הכתובת שלו. לחיצה אמצעית על לשונית סוגרת אותה.</string>
+    <string name="dejavu_workspace_lock">נעילת מרחב העבודה הזה</string>
+    <string name="dejavu_workspace_lock_summary">מציג אותו מטושטש עד שתבטלו את הנעילה בטביעת אצבע, בפנים או בנעילת המסך</string>
+    <string name="dejavu_workspace_no_history">לא לשמור היסטוריה</string>
+    <string name="dejavu_workspace_no_history_summary">דפים שנפתחים כאן לא נכנסים להיסטוריה, לחיפושים האחרונים ולכרטיסיות שנסגרו לאחרונה</string>
+    <string name="dejavu_workspace_locked">מרחב העבודה „%1$s” נעול</string>
+    <string name="dejavu_workspace_unlock_title">ביטול הנעילה של „%1$s”</string>
+    <string name="dejavu_workspace_locked_leave">מעבר למרחבי העבודה</string>
+    <string name="dejavu_settings_workspace_lock">נעילת מרחבי עבודה</string>
+    <string name="dejavu_workspace_lock_hint">כדי לנעול מרחב עבודה, יש להקיש על השם שלו במסך הבית ולהפעיל את „נעילת מרחב העבודה הזה”. הוא מוצג מטושטש עד שתבטלו את הנעילה בטביעת אצבע, בפנים או בנעילת המסך.</string>
+    <string name="dejavu_workspace_lock_when">נעילה מחדש</string>
+    <string name="dejavu_workspace_lock_on_switch">במעבר למרחב עבודה אחר</string>
+    <string name="dejavu_workspace_lock_on_leave">ביציאה מ־Dejavu</string>
+    <string name="dejavu_workspace_lock_after">%1$s אחרי היציאה מ־Dejavu</string>
+    <string name="dejavu_workspace_lock_on_close">כש־Dejavu נסגר</string>
 </resources>

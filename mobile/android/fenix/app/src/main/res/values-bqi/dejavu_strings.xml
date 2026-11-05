@@ -553,4 +553,18 @@
     <string name="dejavu_remote_debugging_summary">وختی Dejavu دوواره راه بکفه، خاموش مئبوئه</string>
     <string name="dejavu_preference_mouse_support">پشتیبانی موس</string>
     <string name="dejavu_preference_mouse_support_summary">کلیک وسط یه لینک ناْ د یه بلگه پشت صحنه واز اکونه، وو بردن موس رو لینک نشونی اوننه نشون ایده. کلیک وسط رو یه بلگه اونه وسته کنه.</string>
+    <string name="dejavu_workspace_lock">ای فضا ره قفل کو</string>
+    <string name="dejavu_workspace_lock_summary">تا وختی که وا جای انگشت، صورت یا قفل صفحه وازش نکنی، تار نشونش می‌ده</string>
+    <string name="dejavu_workspace_no_history">ویرگار ذخیره نکو</string>
+    <string name="dejavu_workspace_no_history_summary">بلگه‌ئلی که ایچو واز می‌بن، من ویرگار، جستجوئل تازه و بلگه‌ئل تازه بسته بیه نمیئن</string>
+    <string name="dejavu_workspace_locked">«%1$s» قفل بیه</string>
+    <string name="dejavu_workspace_unlock_title">واز کردن قفل «%1$s»</string>
+    <string name="dejavu_workspace_locked_leave">رو وا فضائل</string>
+    <string name="dejavu_settings_workspace_lock">قفل فضائل</string>
+    <string name="dejavu_workspace_lock_hint">سی قفل کردن یه فضا، من صفحه خونه سی نومش بزن و «ای فضا ره قفل کو» ره روشن کو. تا وختی که وا جای انگشت، صورت یا قفل صفحه وازش نکنی، تار دیاری می‌ده.</string>
+    <string name="dejavu_workspace_lock_when">دوواره قفل کو</string>
+    <string name="dejavu_workspace_lock_on_switch">وختی که وا فضای دیه میری</string>
+    <string name="dejavu_workspace_lock_on_leave">وختی که ز Dejavu درمیای</string>
+    <string name="dejavu_workspace_lock_after">%1$s بعد ز درامائن ز Dejavu</string>
+    <string name="dejavu_workspace_lock_on_close">وختی که Dejavu بسته می‌بو</string>
 </resources>

@@ -553,4 +553,18 @@
     <string name="dejavu_remote_debugging_summary">Wordt weer uitgeschakeld wanneer Dejavu opnieuw start</string>
     <string name="dejavu_preference_mouse_support">Muisondersteuning</string>
     <string name="dejavu_preference_mouse_support_summary">Een middelklik opent een koppeling in een tabblad op de achtergrond, en met de muis boven een koppeling hangen toont het adres. Een middelklik op een tabblad sluit het.</string>
+    <string name="dejavu_workspace_lock">Deze werkruimte vergrendelen</string>
+    <string name="dejavu_workspace_lock_summary">Toont hem wazig totdat je hem ontgrendelt met je vingerafdruk, gezicht of schermvergrendeling</string>
+    <string name="dejavu_workspace_no_history">Geen geschiedenis opslaan</string>
+    <string name="dejavu_workspace_no_history_summary">Hier geopende pagina’s blijven buiten de geschiedenis, recente zoekopdrachten en recent gesloten tabbladen</string>
+    <string name="dejavu_workspace_locked">%1$s is vergrendeld</string>
+    <string name="dejavu_workspace_unlock_title">%1$s ontgrendelen</string>
+    <string name="dejavu_workspace_locked_leave">Naar werkruimten</string>
+    <string name="dejavu_settings_workspace_lock">Werkruimtevergrendeling</string>
+    <string name="dejavu_workspace_lock_hint">Tik om een werkruimte te vergrendelen op het startscherm op de naam ervan en zet ‘Deze werkruimte vergrendelen’ aan. Hij wordt wazig getoond totdat je hem ontgrendelt met je vingerafdruk, gezicht of schermvergrendeling.</string>
+    <string name="dejavu_workspace_lock_when">Opnieuw vergrendelen</string>
+    <string name="dejavu_workspace_lock_on_switch">Als je naar een andere werkruimte gaat</string>
+    <string name="dejavu_workspace_lock_on_leave">Als je Dejavu verlaat</string>
+    <string name="dejavu_workspace_lock_after">%1$s nadat je Dejavu hebt verlaten</string>
+    <string name="dejavu_workspace_lock_on_close">Als Dejavu wordt gesloten</string>
 </resources>

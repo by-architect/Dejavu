@@ -561,4 +561,18 @@
     <string name="dejavu_remote_debugging_summary">Atkal izslēdzas, kad Dejavu tiek restartēts</string>
     <string name="dejavu_preference_mouse_support">Peles atbalsts</string>
     <string name="dejavu_preference_mouse_support_summary">Klikšķis ar vidējo pogu atver saiti fona cilnē, un, novietojot peli virs saites, tiek parādīta tās adrese. Klikšķis ar vidējo pogu uz cilnes to aizver.</string>
+    <string name="dejavu_workspace_lock">Bloķēt šo darbvietu</string>
+    <string name="dejavu_workspace_lock_summary">Rāda to izplūdušu, līdz to atbloķējat ar pirksta nospiedumu, seju vai ekrāna bloķēšanu</string>
+    <string name="dejavu_workspace_no_history">Nesaglabāt vēsturi</string>
+    <string name="dejavu_workspace_no_history_summary">Šeit atvērtās lapas netiek iekļautas vēsturē, nesenajos meklējumos un nesen aizvērtajās cilnēs</string>
+    <string name="dejavu_workspace_locked">Darbvieta “%1$s” ir bloķēta</string>
+    <string name="dejavu_workspace_unlock_title">Atbloķēt “%1$s”</string>
+    <string name="dejavu_workspace_locked_leave">Uz darbvietām</string>
+    <string name="dejavu_settings_workspace_lock">Darbvietu bloķēšana</string>
+    <string name="dejavu_workspace_lock_hint">Lai bloķētu darbvietu, sākuma ekrānā pieskarieties tās nosaukumam un ieslēdziet “Bloķēt šo darbvietu”. Tā tiek rādīta izplūdusi, līdz to atbloķējat ar pirksta nospiedumu, seju vai ekrāna bloķēšanu.</string>
+    <string name="dejavu_workspace_lock_when">Bloķēt atkal</string>
+    <string name="dejavu_workspace_lock_on_switch">Kad pārejat uz citu darbvietu</string>
+    <string name="dejavu_workspace_lock_on_leave">Kad izejat no Dejavu</string>
+    <string name="dejavu_workspace_lock_after">%1$s pēc iziešanas no Dejavu</string>
+    <string name="dejavu_workspace_lock_on_close">Kad Dejavu tiek aizvērts</string>
 </resources>

@@ -569,4 +569,18 @@
     <string name="dejavu_remote_debugging_summary">Thèid a chur dheth a-rithist nuair a thòisicheas Dejavu às ùr</string>
     <string name="dejavu_preference_mouse_support">Taic luchaige</string>
     <string name="dejavu_preference_mouse_support_summary">Fosglaidh briogadh meadhanach ceangal ann an taba sa chùlaibh, agus seallaidh fantainn os cionn ceangail an seòladh aige. Dùinidh briogadh meadhanach air taba e.</string>
+    <string name="dejavu_workspace_lock">Glais an t-àite-obrach seo</string>
+    <string name="dejavu_workspace_lock_summary">Seallaidh e gu doilleir e gus an thoir thu a’ ghlas dheth le lorg-meòir, d’ aodann no glas na sgrìn</string>
+    <string name="dejavu_workspace_no_history">Na sàbhail an eachdraidh</string>
+    <string name="dejavu_workspace_no_history_summary">Cha tèid duilleagan a dh’fhosglas tu an-seo dhan eachdraidh, dha na lorgan o chionn goirid no dha na tabaichean a dhùin thu o chionn goirid</string>
+    <string name="dejavu_workspace_locked">Tha glas air %1$s</string>
+    <string name="dejavu_workspace_unlock_title">Thoir a’ ghlas far %1$s</string>
+    <string name="dejavu_workspace_locked_leave">Rach dha na h-àitichean-obrach</string>
+    <string name="dejavu_settings_workspace_lock">Glas nan àitichean-obrach</string>
+    <string name="dejavu_workspace_lock_hint">Airson glas a chur air àite-obrach, thoir gnogag air an ainm aige air an sgrìn-dhachaigh is cuir “Glais an t-àite-obrach seo” air. Thèid a shealltainn gu doilleir gus an toir thu a’ ghlas dheth le lorg-meòir, d’ aodann no glas na sgrìn.</string>
+    <string name="dejavu_workspace_lock_when">Glais a-rithist</string>
+    <string name="dejavu_workspace_lock_on_switch">Nuair a thaghas tu àite-obrach eile</string>
+    <string name="dejavu_workspace_lock_on_leave">Nuair a dh’fhàgas tu Dejavu</string>
+    <string name="dejavu_workspace_lock_after">%1$s às dèidh dhut Dejavu fhàgail</string>
+    <string name="dejavu_workspace_lock_on_close">Nuair a dhùinear Dejavu</string>
 </resources>

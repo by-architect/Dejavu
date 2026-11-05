@@ -561,4 +561,18 @@
     <string name="dejavu_remote_debugging_summary">Se desactiva de nuevo cuando Dejavu se reinicia</string>
     <string name="dejavu_preference_mouse_support">Compatibilidad con ratón</string>
     <string name="dejavu_preference_mouse_support_summary">Un clic con el botón central abre un enlace en una pestaña en segundo plano, y pasar el ratón sobre un enlace muestra su dirección. Un clic con el botón central sobre una pestaña la cierra.</string>
+    <string name="dejavu_workspace_lock">Bloquear este espacio de trabajo</string>
+    <string name="dejavu_workspace_lock_summary">Lo muestra difuminado hasta que lo desbloquees con tu huella, tu rostro o el bloqueo de pantalla</string>
+    <string name="dejavu_workspace_no_history">No guardar el historial</string>
+    <string name="dejavu_workspace_no_history_summary">Las páginas abiertas aquí no aparecen en el historial, las búsquedas recientes ni las pestañas cerradas recientemente</string>
+    <string name="dejavu_workspace_locked">%1$s está bloqueado</string>
+    <string name="dejavu_workspace_unlock_title">Desbloquear %1$s</string>
+    <string name="dejavu_workspace_locked_leave">Ir a los espacios de trabajo</string>
+    <string name="dejavu_settings_workspace_lock">Bloqueo de espacios de trabajo</string>
+    <string name="dejavu_workspace_lock_hint">Para bloquear un espacio de trabajo, toca su nombre en la pantalla de inicio y activa «Bloquear este espacio de trabajo». Se muestra difuminado hasta que lo desbloquees con tu huella, tu rostro o el bloqueo de pantalla.</string>
+    <string name="dejavu_workspace_lock_when">Volver a bloquear</string>
+    <string name="dejavu_workspace_lock_on_switch">Al cambiar a otro espacio de trabajo</string>
+    <string name="dejavu_workspace_lock_on_leave">Al salir de Dejavu</string>
+    <string name="dejavu_workspace_lock_after">%1$s después de salir de Dejavu</string>
+    <string name="dejavu_workspace_lock_on_close">Al cerrar Dejavu</string>
 </resources>

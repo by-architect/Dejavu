@@ -14,6 +14,7 @@
     <include app:graph="@navigation/dejavu_external_links_graph" />
     <include app:graph="@navigation/dejavu_tab_sleep_graph" />
     <include app:graph="@navigation/dejavu_tracking_protection_graph" />
+    <include app:graph="@navigation/dejavu_workspace_lock_graph" />
     <include app:graph="@navigation/dejavu_more_menu_graph" />
     <include app:graph="@navigation/dejavu_tabs_workspaces_graph" />
     <include app:graph="@navigation/dejavu_bars_graph" />

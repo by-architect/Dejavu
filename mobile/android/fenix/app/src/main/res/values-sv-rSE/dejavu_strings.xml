@@ -553,4 +553,18 @@
     <string name="dejavu_remote_debugging_summary">Stängs av igen när Dejavu startas om</string>
     <string name="dejavu_preference_mouse_support">Musstöd</string>
     <string name="dejavu_preference_mouse_support_summary">Ett klick med mittenknappen öppnar en länk i en bakgrundsflik, och när du håller muspekaren över en länk visas dess adress. Ett klick med mittenknappen på en flik stänger den.</string>
+    <string name="dejavu_workspace_lock">Lås den här arbetsytan</string>
+    <string name="dejavu_workspace_lock_summary">Visar den suddig tills du låser upp den med fingeravtryck, ansikte eller skärmlås</string>
+    <string name="dejavu_workspace_no_history">Spara inte historik</string>
+    <string name="dejavu_workspace_no_history_summary">Sidor som öppnas här hamnar inte i historiken, de senaste sökningarna eller nyligen stängda flikar</string>
+    <string name="dejavu_workspace_locked">%1$s är låst</string>
+    <string name="dejavu_workspace_unlock_title">Lås upp %1$s</string>
+    <string name="dejavu_workspace_locked_leave">Gå till arbetsytorna</string>
+    <string name="dejavu_settings_workspace_lock">Lås för arbetsytor</string>
+    <string name="dejavu_workspace_lock_hint">För att låsa en arbetsyta trycker du på dess namn på startskärmen och slår på ”Lås den här arbetsytan”. Den visas suddig tills du låser upp den med fingeravtryck, ansikte eller skärmlås.</string>
+    <string name="dejavu_workspace_lock_when">Lås igen</string>
+    <string name="dejavu_workspace_lock_on_switch">När du byter till en annan arbetsyta</string>
+    <string name="dejavu_workspace_lock_on_leave">När du lämnar Dejavu</string>
+    <string name="dejavu_workspace_lock_after">%1$s efter att du lämnat Dejavu</string>
+    <string name="dejavu_workspace_lock_on_close">När Dejavu stängs</string>
 </resources>

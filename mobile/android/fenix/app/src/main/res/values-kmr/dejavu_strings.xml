@@ -553,4 +553,18 @@
     <string name="dejavu_remote_debugging_summary">Dema Dejavu ji nû ve dest pê dike dîsa tê girtin</string>
     <string name="dejavu_preference_mouse_support">Piştgiriya mişkê</string>
     <string name="dejavu_preference_mouse_support_summary">Bi bişkoka navîn tikandin girêdanekê di hilpekîneke paşxanê de vedike, û ragirtina mişkê li ser girêdanê navnîşana wê nîşan dide. Bi bişkoka navîn tikandin li ser hilpekînekê wê digire.</string>
+    <string name="dejavu_workspace_lock">Vê qadê kilît bike</string>
+    <string name="dejavu_workspace_lock_summary">Wê şêlû nîşan dide heta ku tu bi şopa tiliyê, rû yan jî kilîta ekranê vekî</string>
+    <string name="dejavu_workspace_no_history">Raboriyê tomar neke</string>
+    <string name="dejavu_workspace_no_history_summary">Rûpelên ku li vir têne vekirin naçin nav raborî, lêgerînên dawî û hilpekînên ku nû hatine girtin</string>
+    <string name="dejavu_workspace_locked">%1$s kilîtkirî ye</string>
+    <string name="dejavu_workspace_unlock_title">Kilîta %1$s veke</string>
+    <string name="dejavu_workspace_locked_leave">Here qadan</string>
+    <string name="dejavu_settings_workspace_lock">Kilîta qadan</string>
+    <string name="dejavu_workspace_lock_hint">Ji bo kilîtkirina qadekê, li ser ekrana sereke navê wê bitikîne û “Vê qadê kilît bike” veke. Ew şêlû xuya dike heta ku tu bi şopa tiliyê, rû yan jî kilîta ekranê vekî.</string>
+    <string name="dejavu_workspace_lock_when">Dîsa kilît bike</string>
+    <string name="dejavu_workspace_lock_on_switch">Dema ku tu derbasî qadeke din dibî</string>
+    <string name="dejavu_workspace_lock_on_leave">Dema ku tu ji Dejavu derdikevî</string>
+    <string name="dejavu_workspace_lock_after">%1$s piştî ku tu ji Dejavu derketî</string>
+    <string name="dejavu_workspace_lock_on_close">Dema ku Dejavu tê girtin</string>
 </resources>

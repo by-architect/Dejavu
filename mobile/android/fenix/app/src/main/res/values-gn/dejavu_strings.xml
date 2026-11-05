@@ -553,4 +553,18 @@
     <string name="dejavu_remote_debugging_summary">Oñembogue jey Dejavu oñepyrũjeývo</string>
     <string name="dejavu_preference_mouse_support">Mbopi pytyvõ</string>
     <string name="dejavu_preference_mouse_support_summary">Pe jopy mbytegua oipe\'a juajuha peteĩ tendayke tapykuépe, ha embohasávo mbopi juajuha ári ohechauka hendaite. Pe jopy mbytegua tendayke ári omboty chupe.</string>
+    <string name="dejavu_workspace_lock">Mboty ko tembiapo renda</string>
+    <string name="dejavu_workspace_lock_summary">Ohechauka hesa’ỹi’ỹ reipe’a peve nde kuã rapykuere, nde rova térã mba’erechaha ñembotýpe</string>
+    <string name="dejavu_workspace_no_history">Ani eñongatu tembiasakue</string>
+    <string name="dejavu_workspace_no_history_summary">Kuatiarogue ojepe’áva ko’ápe ndoikéi tembiasakuépe, jeheka ramovegua ha tendayke oñembotyramóvape</string>
+    <string name="dejavu_workspace_locked">%1$s oñembotýma</string>
+    <string name="dejavu_workspace_unlock_title">Embojuruja %1$s</string>
+    <string name="dejavu_workspace_locked_leave">Eho tembiapo rendakuérape</string>
+    <string name="dejavu_settings_workspace_lock">Tembiapo renda ñemboty</string>
+    <string name="dejavu_workspace_lock_hint">Embotývo peteĩ tembiapo renda, eikutu héra mba’erechaha ñepyrũháme ha embojuruja “Mboty ko tembiapo renda”. Ojehechauka hesa’ỹi’ỹ reipe’a peve nde kuã rapykuere, nde rova térã mba’erechaha ñembotýpe.</string>
+    <string name="dejavu_workspace_lock_when">Embotyjey</string>
+    <string name="dejavu_workspace_lock_on_switch">Rehasávo ambue tembiapo rendápe</string>
+    <string name="dejavu_workspace_lock_on_leave">Resẽvo Dejavu-gui</string>
+    <string name="dejavu_workspace_lock_after">%1$s resẽ rire Dejavu-gui</string>
+    <string name="dejavu_workspace_lock_on_close">Oñembotývo Dejavu</string>
 </resources>

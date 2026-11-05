@@ -553,4 +553,18 @@
     <string name="dejavu_remote_debugging_summary">Dejavu دے ولا شروع تھیوݨ تے ایہ ولا بند تھی ویندی اے</string>
     <string name="dejavu_preference_mouse_support">ماؤس دی سہولت</string>
     <string name="dejavu_preference_mouse_support_summary">وچلے بٹݨ نال کلک کرݨ نال لنک پچھلی ٹیب وچ کھلدا ہے، تے لنک اُتے ماؤس رکھݨ نال اوندا پتہ ݙکھدا ہے۔ ٹیب اُتے وچلے بٹݨ نال کلک کرݨ نال او بند تھی ویندی ہے۔</string>
+    <string name="dejavu_workspace_lock">ایہ ورک سپیس لاک کرو</string>
+    <string name="dejavu_workspace_lock_summary">فنگر پرنٹ، چہرے یا سکرین لاک نال انلاک کرݨ تئیں ایں کوں دھندلا ݙکھیندا ہے</string>
+    <string name="dejavu_workspace_no_history">تاریخ نہ سانبھو</string>
+    <string name="dejavu_workspace_no_history_summary">اتھاں کھولے ورقے تاریخ، نویاں ڳولاں تے ہݨے بند تھیاں ٹیباں وچ کائنی ویندے</string>
+    <string name="dejavu_workspace_locked">%1$s لاک ہے</string>
+    <string name="dejavu_workspace_unlock_title">%1$s انلاک کرو</string>
+    <string name="dejavu_workspace_locked_leave">ورک سپیساں تے ونڄو</string>
+    <string name="dejavu_settings_workspace_lock">ورک سپیس لاک</string>
+    <string name="dejavu_workspace_lock_hint">ورک سپیس لاک کرݨ کیتے ہوم سکرین تے ایندے ناں تے ٹیپ کرو تے “ایہ ورک سپیس لاک کرو” چالو کرو۔ فنگر پرنٹ، چہرے یا سکرین لاک نال انلاک کرݨ تئیں ایہ دھندلا ݙسدا ہے۔</string>
+    <string name="dejavu_workspace_lock_when">ولدا لاک کرو</string>
+    <string name="dejavu_workspace_lock_on_switch">جݙاں تساں ٻئی ورک سپیس تے ونڄو</string>
+    <string name="dejavu_workspace_lock_on_leave">جݙاں تساں Dejavu چھوڑو</string>
+    <string name="dejavu_workspace_lock_after">Dejavu چھوڑݨ توں %1$s بعد</string>
+    <string name="dejavu_workspace_lock_on_close">جݙاں Dejavu بند تھیوے</string>
 </resources>

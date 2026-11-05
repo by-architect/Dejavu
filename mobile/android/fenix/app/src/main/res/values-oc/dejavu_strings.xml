@@ -553,4 +553,18 @@
     <string name="dejavu_remote_debugging_summary">Se desactiva tornamai quand Dejavu se reaviá</string>
     <string name="dejavu_preference_mouse_support">Presa en carga de la mirga</string>
     <string name="dejavu_preference_mouse_support_summary">Un clic del mitan dobrís un ligam dins un onglet en rèireplan, e passar sus un ligam aficha son adreça. Un clic del mitan sus un onglet lo barra.</string>
+    <string name="dejavu_workspace_lock">Verrolhar aqueste espaci de trabalh</string>
+    <string name="dejavu_workspace_lock_summary">L’aficha borrolat fins que lo desverrolhes amb ton emprenta, ton visatge o lo verrolhatge d’ecran</string>
+    <string name="dejavu_workspace_no_history">Enregistrar pas l’istoric</string>
+    <string name="dejavu_workspace_no_history_summary">Las paginas dobèrtas aquí dintran pas dins l’istoric, las recèrcas recentas e los onglets tampats recentament</string>
+    <string name="dejavu_workspace_locked">%1$s es verrolhat</string>
+    <string name="dejavu_workspace_unlock_title">Desverrolhar %1$s</string>
+    <string name="dejavu_workspace_locked_leave">Anar als espacis de trabalh</string>
+    <string name="dejavu_settings_workspace_lock">Verrolhatge dels espacis de trabalh</string>
+    <string name="dejavu_workspace_lock_hint">Per verrolhar un espaci de trabalh, tocatz son nom sus l’ecran d’acuèlh e activatz « Verrolhar aqueste espaci de trabalh ». S’aficha borrolat fins que lo desverrolhetz amb vòstra emprenta, vòstre visatge o lo verrolhatge d’ecran.</string>
+    <string name="dejavu_workspace_lock_when">Tornar verrolhar</string>
+    <string name="dejavu_workspace_lock_on_switch">Quand passatz a un autre espaci de trabalh</string>
+    <string name="dejavu_workspace_lock_on_leave">Quand quitatz Dejavu</string>
+    <string name="dejavu_workspace_lock_after">%1$s aprèp aver quitat Dejavu</string>
+    <string name="dejavu_workspace_lock_on_close">Quand Dejavu se tampa</string>
 </resources>

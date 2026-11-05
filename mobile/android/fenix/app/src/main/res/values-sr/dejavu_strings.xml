@@ -561,4 +561,18 @@
     <string name="dejavu_remote_debugging_summary">Опет се искључује када се Dejavu поново покрене</string>
     <string name="dejavu_preference_mouse_support">Подршка за миша</string>
     <string name="dejavu_preference_mouse_support_summary">Клик средњим тастером отвара везу у језичку у позадини, а прелазак мишем преко везе приказује њену адресу. Клик средњим тастером на језичак га затвара.</string>
+    <string name="dejavu_workspace_lock">Закључај овај радни простор</string>
+    <string name="dejavu_workspace_lock_summary">Приказује га замућеног док га не откључате отиском прста, лицем или закључавањем екрана</string>
+    <string name="dejavu_workspace_no_history">Не чувај историју</string>
+    <string name="dejavu_workspace_no_history_summary">Странице отворене овде не улазе у историју, недавне претраге ни недавно затворене картице</string>
+    <string name="dejavu_workspace_locked">Радни простор „%1$s“ је закључан</string>
+    <string name="dejavu_workspace_unlock_title">Откључај „%1$s“</string>
+    <string name="dejavu_workspace_locked_leave">Иди на радне просторе</string>
+    <string name="dejavu_settings_workspace_lock">Закључавање радних простора</string>
+    <string name="dejavu_workspace_lock_hint">Да бисте закључали радни простор, додирните његов назив на почетном екрану и укључите „Закључај овај радни простор“. Приказује се замућен док га не откључате отиском прста, лицем или закључавањем екрана.</string>
+    <string name="dejavu_workspace_lock_when">Поново закључај</string>
+    <string name="dejavu_workspace_lock_on_switch">Када пређете на други радни простор</string>
+    <string name="dejavu_workspace_lock_on_leave">Када напустите Dejavu</string>
+    <string name="dejavu_workspace_lock_after">%1$s након изласка из Dejavu-а</string>
+    <string name="dejavu_workspace_lock_on_close">Када се Dejavu затвори</string>
 </resources>

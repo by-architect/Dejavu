@@ -553,4 +553,18 @@
     <string name="dejavu_remote_debugging_summary">Dejavu qayta ishga tushganda yana oʻchadi</string>
     <string name="dejavu_preference_mouse_support">Sichqoncha yordami</string>
     <string name="dejavu_preference_mouse_support_summary">O‘rta tugma bilan bosish havolani orqa fondagi varaqda ochadi, havola ustiga sichqonchani olib borish esa uning manzilini ko‘rsatadi. Varaqni o‘rta tugma bilan bosish uni yopadi.</string>
+    <string name="dejavu_workspace_lock">Bu ish maydonini qulflash</string>
+    <string name="dejavu_workspace_lock_summary">Barmoq izi, yuz yoki ekran qulfi bilan ochmaguningizcha uni xira ko‘rsatadi</string>
+    <string name="dejavu_workspace_no_history">Tarixni saqlamaslik</string>
+    <string name="dejavu_workspace_no_history_summary">Bu yerda ochilgan sahifalar tarixga, so‘nggi qidiruvlarga va yaqinda yopilgan varaqlarga tushmaydi</string>
+    <string name="dejavu_workspace_locked">“%1$s” qulflangan</string>
+    <string name="dejavu_workspace_unlock_title">“%1$s” qulfini ochish</string>
+    <string name="dejavu_workspace_locked_leave">Ish maydonlariga o‘tish</string>
+    <string name="dejavu_settings_workspace_lock">Ish maydoni qulfi</string>
+    <string name="dejavu_workspace_lock_hint">Ish maydonini qulflash uchun bosh ekranda uning nomiga bosing va “Bu ish maydonini qulflash”ni yoqing. Barmoq izi, yuz yoki ekran qulfi bilan ochmaguningizcha u xira ko‘rinadi.</string>
+    <string name="dejavu_workspace_lock_when">Qayta qulflash</string>
+    <string name="dejavu_workspace_lock_on_switch">Boshqa ish maydoniga o‘tganingizda</string>
+    <string name="dejavu_workspace_lock_on_leave">Dejavu’dan chiqqaningizda</string>
+    <string name="dejavu_workspace_lock_after">Dejavu’dan chiqqaningizdan %1$s keyin</string>
+    <string name="dejavu_workspace_lock_on_close">Dejavu yopilganda</string>
 </resources>

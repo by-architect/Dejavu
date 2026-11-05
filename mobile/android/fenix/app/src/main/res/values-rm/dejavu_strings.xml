@@ -553,4 +553,18 @@
     <string name="dejavu_remote_debugging_summary">Vegn deactivà puspè cura che Dejavu vegn reavià</string>
     <string name="dejavu_preference_mouse_support">Sustegn da la mieur</string>
     <string name="dejavu_preference_mouse_support_summary">In clic cun il buttun dal mez avra ina colliaziun en in tab en il fund, e passar sur ina colliaziun mussa sia adressa. In clic cun il buttun dal mez sin in tab al serra.</string>
+    <string name="dejavu_workspace_lock">Bloccar quest spazi da lavur</string>
+    <string name="dejavu_workspace_lock_summary">Al mussa sfucà enfin che ti al debloccas cun l’impronta dal det, la fatscha u il bloc dal visur</string>
+    <string name="dejavu_workspace_no_history">Betg memorisar la cronologia</string>
+    <string name="dejavu_workspace_no_history_summary">Las paginas avertas qua na vegnan betg en la cronologia, en las tschertgas recentas ed en ils tabs serrads dacurt</string>
+    <string name="dejavu_workspace_locked">%1$s è bloccà</string>
+    <string name="dejavu_workspace_unlock_title">Debloccar %1$s</string>
+    <string name="dejavu_workspace_locked_leave">Ir als spazis da lavur</string>
+    <string name="dejavu_settings_workspace_lock">Bloc dals spazis da lavur</string>
+    <string name="dejavu_workspace_lock_hint">Per bloccar in spazi da lavur, tutga ses num sin il visur da partenza ed activescha «Bloccar quest spazi da lavur». El vegn mussà sfucà enfin che ti al debloccas cun l’impronta dal det, la fatscha u il bloc dal visur.</string>
+    <string name="dejavu_workspace_lock_when">Bloccar puspè</string>
+    <string name="dejavu_workspace_lock_on_switch">Cura che ti midas ad in auter spazi da lavur</string>
+    <string name="dejavu_workspace_lock_on_leave">Cura che ti bandunas Dejavu</string>
+    <string name="dejavu_workspace_lock_after">%1$s suenter che ti has bandunà Dejavu</string>
+    <string name="dejavu_workspace_lock_on_close">Cura che Dejavu vegn serrà</string>
 </resources>

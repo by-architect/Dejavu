@@ -553,4 +553,18 @@
     <string name="dejavu_remote_debugging_summary">Dejavu යළි ආරම්භ වූ විට එය නැවත අක්‍රිය වේ</string>
     <string name="dejavu_preference_mouse_support">මූසික සහාය</string>
     <string name="dejavu_preference_mouse_support_summary">මැද බොත්තමෙන් ක්ලික් කිරීමෙන් සබැඳියක් පසුබිම් පටිත්තක විවෘත වන අතර, සබැඳියක් මත මූසිකය තැබීමෙන් එහි ලිපිනය පෙන්වයි. පටිත්තක් මත මැද බොත්තමෙන් ක්ලික් කිරීමෙන් එය වසයි.</string>
+    <string name="dejavu_workspace_lock">මෙම අවකාශය අගුළු දමන්න</string>
+    <string name="dejavu_workspace_lock_summary">ඇඟිලි සලකුණ, මුහුණ හෝ තිර අගුල මඟින් අගුළු හරින තුරු එය බොඳ කර පෙන්වයි</string>
+    <string name="dejavu_workspace_no_history">ඉතිහාසය සුරකින්න එපා</string>
+    <string name="dejavu_workspace_no_history_summary">මෙහි විවෘත කරන පිටු ඉතිහාසයට, මෑත සෙවීම්වලට සහ මෑතදී වසා දැමූ පටිතිවලට ඇතුළත් නොවේ</string>
+    <string name="dejavu_workspace_locked">%1$s අගුළු දමා ඇත</string>
+    <string name="dejavu_workspace_unlock_title">%1$s අගුළු හරින්න</string>
+    <string name="dejavu_workspace_locked_leave">අවකාශ වෙත යන්න</string>
+    <string name="dejavu_settings_workspace_lock">අවකාශ අගුල</string>
+    <string name="dejavu_workspace_lock_hint">අවකාශයක් අගුළු දැමීමට, මුල් තිරයේ එහි නම තට්ටු කර “මෙම අවකාශය අගුළු දමන්න” සක්‍රිය කරන්න. ඇඟිලි සලකුණ, මුහුණ හෝ තිර අගුල මඟින් අගුළු හරින තුරු එය බොඳ වී පෙනේ.</string>
+    <string name="dejavu_workspace_lock_when">නැවත අගුළු දමන්න</string>
+    <string name="dejavu_workspace_lock_on_switch">වෙනත් අවකාශයකට මාරු වන විට</string>
+    <string name="dejavu_workspace_lock_on_leave">Dejavu හැර යන විට</string>
+    <string name="dejavu_workspace_lock_after">Dejavu හැර ගොස් %1$s කට පසු</string>
+    <string name="dejavu_workspace_lock_on_close">Dejavu වැසෙන විට</string>
 </resources>

@@ -553,4 +553,18 @@
     <string name="dejavu_remote_debugging_summary">Dejavu እንደገና ሲጀምር ተመልሶ ይጠፋል</string>
     <string name="dejavu_preference_mouse_support">የመዳፊት ድጋፍ</string>
     <string name="dejavu_preference_mouse_support_summary">በመሃል ቁልፍ ጠቅ ማድረግ አገናኝን በጀርባ ትር ውስጥ ይከፍታል፣ በአገናኝ ላይ ማንዣበብ ደግሞ አድራሻውን ያሳያል። በትር ላይ በመሃል ቁልፍ ጠቅ ማድረግ ትሩን ይዘጋል።</string>
+    <string name="dejavu_workspace_lock">ይህን የስራ ቦታ ቆልፍ</string>
+    <string name="dejavu_workspace_lock_summary">በጣት አሻራ፣ በፊት ወይም በማያ ገጽ መቆለፊያ እስኪከፍቱት ድረስ ደብዝዞ ያሳያል</string>
+    <string name="dejavu_workspace_no_history">ታሪክ አታስቀምጥ</string>
+    <string name="dejavu_workspace_no_history_summary">እዚህ የተከፈቱ ገጾች ወደ ታሪክ፣ የቅርብ ጊዜ ፍለጋዎች እና በቅርቡ ወደተዘጉ ትሮች አይገቡም</string>
+    <string name="dejavu_workspace_locked">%1$s ተቆልፏል</string>
+    <string name="dejavu_workspace_unlock_title">%1$s ክፈት</string>
+    <string name="dejavu_workspace_locked_leave">ወደ የስራ ቦታዎች ሂድ</string>
+    <string name="dejavu_settings_workspace_lock">የስራ ቦታ መቆለፊያ</string>
+    <string name="dejavu_workspace_lock_hint">የስራ ቦታን ለመቆለፍ በመነሻ ማያ ገጹ ላይ ስሙን መታ ያድርጉ እና “ይህን የስራ ቦታ ቆልፍ”ን ያብሩ። በጣት አሻራ፣ በፊት ወይም በማያ ገጽ መቆለፊያ እስኪከፍቱት ድረስ ደብዝዞ ይታያል።</string>
+    <string name="dejavu_workspace_lock_when">እንደገና ቆልፍ</string>
+    <string name="dejavu_workspace_lock_on_switch">ወደ ሌላ የስራ ቦታ ሲቀይሩ</string>
+    <string name="dejavu_workspace_lock_on_leave">Dejavuን ሲለቁ</string>
+    <string name="dejavu_workspace_lock_after">Dejavuን ከለቀቁ ከ%1$s በኋላ</string>
+    <string name="dejavu_workspace_lock_on_close">Dejavu ሲዘጋ</string>
 </resources>

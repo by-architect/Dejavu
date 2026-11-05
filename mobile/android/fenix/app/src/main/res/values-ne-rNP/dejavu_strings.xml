@@ -553,4 +553,18 @@
     <string name="dejavu_remote_debugging_summary">Dejavu पुनः सुरु हुँदा यो फेरि बन्द हुन्छ</string>
     <string name="dejavu_preference_mouse_support">माउस समर्थन</string>
     <string name="dejavu_preference_mouse_support_summary">बीचको बटनले क्लिक गर्दा लिङ्क पृष्ठभूमि ट्याबमा खुल्छ, र लिङ्कमाथि पोइन्टर राख्दा त्यसको ठेगाना देखिन्छ। ट्याबमा बीचको बटनले क्लिक गर्दा त्यो बन्द हुन्छ।</string>
+    <string name="dejavu_workspace_lock">यो कार्यक्षेत्र लक गर्नुहोस्</string>
+    <string name="dejavu_workspace_lock_summary">औँठाछाप, अनुहार वा स्क्रिन लकले अनलक नगरेसम्म यसलाई धमिलो देखाउँछ</string>
+    <string name="dejavu_workspace_no_history">इतिहास सुरक्षित नगर्नुहोस्</string>
+    <string name="dejavu_workspace_no_history_summary">यहाँ खोलिएका पृष्ठहरू इतिहास, हालका खोजहरू र भर्खरै बन्द गरिएका ट्याबहरूमा जाँदैनन्</string>
+    <string name="dejavu_workspace_locked">%1$s लक छ</string>
+    <string name="dejavu_workspace_unlock_title">%1$s अनलक गर्नुहोस्</string>
+    <string name="dejavu_workspace_locked_leave">कार्यक्षेत्रहरूमा जानुहोस्</string>
+    <string name="dejavu_settings_workspace_lock">कार्यक्षेत्र लक</string>
+    <string name="dejavu_workspace_lock_hint">कार्यक्षेत्र लक गर्न गृह स्क्रिनमा त्यसको नाममा ट्याप गर्नुहोस् र “यो कार्यक्षेत्र लक गर्नुहोस्” सक्रिय गर्नुहोस्। औँठाछाप, अनुहार वा स्क्रिन लकले अनलक नगरेसम्म यो धमिलो देखिन्छ।</string>
+    <string name="dejavu_workspace_lock_when">फेरि लक गर्नुहोस्</string>
+    <string name="dejavu_workspace_lock_on_switch">अर्को कार्यक्षेत्रमा जाँदा</string>
+    <string name="dejavu_workspace_lock_on_leave">Dejavu छोड्दा</string>
+    <string name="dejavu_workspace_lock_after">Dejavu छोडेको %1$s पछि</string>
+    <string name="dejavu_workspace_lock_on_close">Dejavu बन्द हुँदा</string>
 </resources>

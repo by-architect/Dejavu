@@ -569,4 +569,18 @@
     <string name="dejavu_remote_debugging_summary">Снова выключается после перезапуска Dejavu</string>
     <string name="dejavu_preference_mouse_support">Поддержка мыши</string>
     <string name="dejavu_preference_mouse_support_summary">Щелчок средней кнопкой открывает ссылку в фоновой вкладке, а наведение на ссылку показывает её адрес. Щелчок средней кнопкой по вкладке закрывает её.</string>
+    <string name="dejavu_workspace_lock">Заблокировать это рабочее пространство</string>
+    <string name="dejavu_workspace_lock_summary">Показывает его размытым, пока вы не разблокируете его отпечатком пальца, лицом или блокировкой экрана</string>
+    <string name="dejavu_workspace_no_history">Не сохранять историю</string>
+    <string name="dejavu_workspace_no_history_summary">Страницы, открытые здесь, не попадают в историю, недавние запросы и недавно закрытые вкладки</string>
+    <string name="dejavu_workspace_locked">Рабочее пространство «%1$s» заблокировано</string>
+    <string name="dejavu_workspace_unlock_title">Разблокировать «%1$s»</string>
+    <string name="dejavu_workspace_locked_leave">К рабочим пространствам</string>
+    <string name="dejavu_settings_workspace_lock">Блокировка рабочих пространств</string>
+    <string name="dejavu_workspace_lock_hint">Чтобы заблокировать рабочее пространство, нажмите на его название на главном экране и включите «Заблокировать это рабочее пространство». Оно показывается размытым, пока вы не разблокируете его отпечатком пальца, лицом или блокировкой экрана.</string>
+    <string name="dejavu_workspace_lock_when">Блокировать снова</string>
+    <string name="dejavu_workspace_lock_on_switch">При переходе в другое рабочее пространство</string>
+    <string name="dejavu_workspace_lock_on_leave">При выходе из Dejavu</string>
+    <string name="dejavu_workspace_lock_after">%1$s после выхода из Dejavu</string>
+    <string name="dejavu_workspace_lock_on_close">При закрытии Dejavu</string>
 </resources>

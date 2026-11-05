@@ -553,4 +553,18 @@
     <string name="dejavu_remote_debugging_summary">Dejavu yeniden başladığında tekrar kapanır</string>
     <string name="dejavu_preference_mouse_support">Fare desteği</string>
     <string name="dejavu_preference_mouse_support_summary">Orta tıklama bir bağlantıyı arka plandaki bir sekmede açar, bir bağlantının üzerine gelmek ise adresini gösterir. Bir sekmeye orta tıklama onu kapatır.</string>
+    <string name="dejavu_workspace_lock">Bu çalışma alanını kilitle</string>
+    <string name="dejavu_workspace_lock_summary">Parmak iziniz, yüzünüz veya ekran kilidinizle açana kadar bulanık gösterir</string>
+    <string name="dejavu_workspace_no_history">Geçmişi kaydetme</string>
+    <string name="dejavu_workspace_no_history_summary">Burada açılan sayfalar geçmişe, son aramalara ve son kapatılan sekmelere girmez</string>
+    <string name="dejavu_workspace_locked">%1$s kilitli</string>
+    <string name="dejavu_workspace_unlock_title">%1$s kilidini aç</string>
+    <string name="dejavu_workspace_locked_leave">Çalışma alanlarına git</string>
+    <string name="dejavu_settings_workspace_lock">Çalışma alanı kilidi</string>
+    <string name="dejavu_workspace_lock_hint">Bir çalışma alanını kilitlemek için ana ekranda adına dokunun ve “Bu çalışma alanını kilitle” seçeneğini açın. Parmak iziniz, yüzünüz veya ekran kilidinizle açana kadar bulanık görünür.</string>
+    <string name="dejavu_workspace_lock_when">Yeniden kilitle</string>
+    <string name="dejavu_workspace_lock_on_switch">Başka bir çalışma alanına geçtiğinizde</string>
+    <string name="dejavu_workspace_lock_on_leave">Dejavu’dan çıktığınızda</string>
+    <string name="dejavu_workspace_lock_after">Dejavu’dan çıktıktan %1$s sonra</string>
+    <string name="dejavu_workspace_lock_on_close">Dejavu kapandığında</string>
 </resources>

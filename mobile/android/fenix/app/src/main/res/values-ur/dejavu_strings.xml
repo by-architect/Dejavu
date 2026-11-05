@@ -553,4 +553,18 @@
     <string name="dejavu_remote_debugging_summary">Dejavu کے دوبارہ شروع ہونے پر یہ پھر سے بند ہو جاتی ہے</string>
     <string name="dejavu_preference_mouse_support">ماؤس کی معاونت</string>
     <string name="dejavu_preference_mouse_support_summary">درمیانی بٹن سے کلک کرنے پر ربط پس منظر کے ٹیب میں کھلتا ہے، اور ربط پر ماؤس رکھنے سے اس کا پتہ دکھائی دیتا ہے۔ ٹیب پر درمیانی بٹن سے کلک کرنے پر وہ بند ہو جاتا ہے۔</string>
+    <string name="dejavu_workspace_lock">یہ ورک اسپیس مقفل کریں</string>
+    <string name="dejavu_workspace_lock_summary">اسے دھندلا دکھاتا ہے جب تک آپ فنگر پرنٹ، چہرے یا اسکرین لاک سے اسے کھول نہ دیں</string>
+    <string name="dejavu_workspace_no_history">سابقات محفوظ نہ کریں</string>
+    <string name="dejavu_workspace_no_history_summary">یہاں کھولے گئے صفحات سابقات، حالیہ تلاشوں اور حال ہی میں بند کیے گئے ٹیبز میں نہیں جاتے</string>
+    <string name="dejavu_workspace_locked">%1$s مقفل ہے</string>
+    <string name="dejavu_workspace_unlock_title">%1$s کھولیں</string>
+    <string name="dejavu_workspace_locked_leave">ورک اسپیسز پر جائیں</string>
+    <string name="dejavu_settings_workspace_lock">ورک اسپیس لاک</string>
+    <string name="dejavu_workspace_lock_hint">کسی ورک اسپیس کو مقفل کرنے کے لیے ہوم اسکرین پر اس کے نام پر تھپتھپائیں اور “یہ ورک اسپیس مقفل کریں” آن کریں۔ یہ دھندلا دکھائی دیتا ہے جب تک آپ فنگر پرنٹ، چہرے یا اسکرین لاک سے اسے کھول نہ دیں۔</string>
+    <string name="dejavu_workspace_lock_when">دوبارہ مقفل کریں</string>
+    <string name="dejavu_workspace_lock_on_switch">جب آپ دوسری ورک اسپیس پر جائیں</string>
+    <string name="dejavu_workspace_lock_on_leave">جب آپ Dejavu چھوڑیں</string>
+    <string name="dejavu_workspace_lock_after">Dejavu چھوڑنے کے %1$s بعد</string>
+    <string name="dejavu_workspace_lock_on_close">جب Dejavu بند ہو</string>
 </resources>

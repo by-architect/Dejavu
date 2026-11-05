@@ -577,4 +577,18 @@
     <string name="dejavu_remote_debugging_summary">Casann sé as arís nuair a atosaíonn Dejavu</string>
     <string name="dejavu_preference_mouse_support">Tacaíocht luiche</string>
     <string name="dejavu_preference_mouse_support_summary">Osclaíonn cliceáil lárnach nasc i gcluaisín sa chúlra, agus taispeánann foluain os cionn naisc a sheoladh. Dúnann cliceáil lárnach ar chluaisín é.</string>
+    <string name="dejavu_workspace_lock">Cuir an spás oibre seo faoi ghlas</string>
+    <string name="dejavu_workspace_lock_summary">Taispeántar doiléir é go dtí go ndíghlasálann tú é le do mhéarlorg, d’aghaidh nó glas an scáileáin</string>
+    <string name="dejavu_workspace_no_history">Ná sábháil an stair</string>
+    <string name="dejavu_workspace_no_history_summary">Ní théann leathanaigh a osclaítear anseo isteach sa stair, sna cuardaigh le déanaí ná sna cluaisíní a dúnadh le déanaí</string>
+    <string name="dejavu_workspace_locked">Tá %1$s faoi ghlas</string>
+    <string name="dejavu_workspace_unlock_title">Díghlasáil %1$s</string>
+    <string name="dejavu_workspace_locked_leave">Téigh go dtí na spásanna oibre</string>
+    <string name="dejavu_settings_workspace_lock">Glas na spásanna oibre</string>
+    <string name="dejavu_workspace_lock_hint">Chun spás oibre a chur faoi ghlas, tapáil a ainm ar an scáileán baile agus cas air “Cuir an spás oibre seo faoi ghlas”. Taispeántar doiléir é go dtí go ndíghlasálann tú é le do mhéarlorg, d’aghaidh nó glas an scáileáin.</string>
+    <string name="dejavu_workspace_lock_when">Cuir faoi ghlas arís</string>
+    <string name="dejavu_workspace_lock_on_switch">Nuair a athraíonn tú go spás oibre eile</string>
+    <string name="dejavu_workspace_lock_on_leave">Nuair a fhágann tú Dejavu</string>
+    <string name="dejavu_workspace_lock_after">%1$s tar éis duit Dejavu a fhágáil</string>
+    <string name="dejavu_workspace_lock_on_close">Nuair a dhúntar Dejavu</string>
 </resources>

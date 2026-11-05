@@ -553,4 +553,18 @@
     <string name="dejavu_remote_debugging_summary">Dejavu یئنیدن باشلاندیقدا گئنه سؤنور</string>
     <string name="dejavu_preference_mouse_support">سیچان دستگی</string>
     <string name="dejavu_preference_mouse_support_summary">اورتا دوگمه ایله کلیک، باغلانتینی آرخا پلاندا بیر تاغدا آچیر، باغلانتینین اوستونه گلمک ده اونون آدرسینی گؤستریر. تاغین اوستونده اورتا دوگمه ایله کلیک اونو باغلاییر.</string>
+    <string name="dejavu_workspace_lock">بو ایش ساحه‌سینی کیلیدله</string>
+    <string name="dejavu_workspace_lock_summary">بارماق ایزی، اوز یا اکران کیلیدی ایله آچانا قدر اونو بولانیق گؤستریر</string>
+    <string name="dejavu_workspace_no_history">گئچمیشی ساخلاما</string>
+    <string name="dejavu_workspace_no_history_summary">بورادا آچیلان صفحه‌لر گئچمیشه، سون آختاریشلارا و سون باغلانان سکمه‌لره دوشمور</string>
+    <string name="dejavu_workspace_locked">%1$s کیلیدلیدیر</string>
+    <string name="dejavu_workspace_unlock_title">%1$s کیلیدینی آچ</string>
+    <string name="dejavu_workspace_locked_leave">ایش ساحه‌لرینه گئت</string>
+    <string name="dejavu_settings_workspace_lock">ایش ساحه‌سی کیلیدی</string>
+    <string name="dejavu_workspace_lock_hint">ایش ساحه‌سینی کیلیدلمک اوچون اصلی اکراندا آدینا توخونون و “بو ایش ساحه‌سینی کیلیدله” سئچیمینی آچین. بارماق ایزی، اوز یا اکران کیلیدی ایله آچانا قدر بولانیق گؤرونور.</string>
+    <string name="dejavu_workspace_lock_when">یئنیدن کیلیدله</string>
+    <string name="dejavu_workspace_lock_on_switch">باشقا ایش ساحه‌سینه گئچنده</string>
+    <string name="dejavu_workspace_lock_on_leave">Dejavu-دان چیخاندا</string>
+    <string name="dejavu_workspace_lock_after">Dejavu-دان چیخاندان %1$s سونرا</string>
+    <string name="dejavu_workspace_lock_on_close">Dejavu باغلاناندا</string>
 </resources>

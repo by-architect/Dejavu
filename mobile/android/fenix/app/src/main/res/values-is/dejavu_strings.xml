@@ -553,4 +553,18 @@
     <string name="dejavu_remote_debugging_summary">Slokknar aftur þegar Dejavu er endurræst</string>
     <string name="dejavu_preference_mouse_support">Músarstuðningur</string>
     <string name="dejavu_preference_mouse_support_summary">Miðsmellur opnar tengil í bakgrunnsflipa og þegar bendli er haldið yfir tengli sést vistfang hans. Miðsmellur á flipa lokar honum.</string>
+    <string name="dejavu_workspace_lock">Læsa þessu vinnusvæði</string>
+    <string name="dejavu_workspace_lock_summary">Sýnir það óskýrt þar til þú opnar það með fingrafari, andliti eða skjálás</string>
+    <string name="dejavu_workspace_no_history">Ekki vista feril</string>
+    <string name="dejavu_workspace_no_history_summary">Síður sem opnaðar eru hér fara ekki í feril, nýlegar leitir eða nýlega lokaða flipa</string>
+    <string name="dejavu_workspace_locked">%1$s er læst</string>
+    <string name="dejavu_workspace_unlock_title">Opna %1$s</string>
+    <string name="dejavu_workspace_locked_leave">Fara í vinnusvæði</string>
+    <string name="dejavu_settings_workspace_lock">Læsing vinnusvæða</string>
+    <string name="dejavu_workspace_lock_hint">Til að læsa vinnusvæði skaltu ýta á nafn þess á upphafsskjánum og kveikja á „Læsa þessu vinnusvæði“. Það birtist óskýrt þar til þú opnar það með fingrafari, andliti eða skjálás.</string>
+    <string name="dejavu_workspace_lock_when">Læsa aftur</string>
+    <string name="dejavu_workspace_lock_on_switch">Þegar þú skiptir yfir í annað vinnusvæði</string>
+    <string name="dejavu_workspace_lock_on_leave">Þegar þú ferð úr Dejavu</string>
+    <string name="dejavu_workspace_lock_after">%1$s eftir að þú ferð úr Dejavu</string>
+    <string name="dejavu_workspace_lock_on_close">Þegar Dejavu lokast</string>
 </resources>

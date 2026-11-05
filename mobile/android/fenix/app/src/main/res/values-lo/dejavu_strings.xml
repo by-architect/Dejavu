@@ -545,4 +545,18 @@
     <string name="dejavu_remote_debugging_summary">ປິດອີກຄັ້ງເມື່ອ Dejavu ເລີ່ມໃໝ່</string>
     <string name="dejavu_preference_mouse_support">ຮອງຮັບເມົ້າ</string>
     <string name="dejavu_preference_mouse_support_summary">ການຄລິກປຸ່ມກາງຈະເປີດລິ້ງໃນແທັບເບື້ອງຫຼັງ, ແລະ ການວາງເມົ້າເທິງລິ້ງຈະສະແດງທີ່ຢູ່ຂອງມັນ. ການຄລິກປຸ່ມກາງໃສ່ແທັບຈະປິດແທັບນັ້ນ.</string>
+    <string name="dejavu_workspace_lock">ລັອກພື້ນທີ່ເຮັດວຽກນີ້</string>
+    <string name="dejavu_workspace_lock_summary">ສະແດງມັນແບບມົວຈົນກວ່າທ່ານຈະປົດລັອກດ້ວຍລາຍນິ້ວມື, ໃບໜ້າ ຫຼື ການລັອກໜ້າຈໍ</string>
+    <string name="dejavu_workspace_no_history">ບໍ່ບັນທຶກປະຫວັດ</string>
+    <string name="dejavu_workspace_no_history_summary">ໜ້າທີ່ເປີດຢູ່ນີ້ຈະບໍ່ເຂົ້າໄປໃນປະຫວັດ, ການຊອກຫາຫຼ້າສຸດ ແລະ ແຖບທີ່ຫາກໍປິດ</string>
+    <string name="dejavu_workspace_locked">%1$s ຖືກລັອກຢູ່</string>
+    <string name="dejavu_workspace_unlock_title">ປົດລັອກ %1$s</string>
+    <string name="dejavu_workspace_locked_leave">ໄປທີ່ພື້ນທີ່ເຮັດວຽກ</string>
+    <string name="dejavu_settings_workspace_lock">ການລັອກພື້ນທີ່ເຮັດວຽກ</string>
+    <string name="dejavu_workspace_lock_hint">ເພື່ອລັອກພື້ນທີ່ເຮັດວຽກ, ໃຫ້ແຕະຊື່ຂອງມັນຢູ່ໜ້າຈໍຫຼັກ ແລ້ວເປີດ “ລັອກພື້ນທີ່ເຮັດວຽກນີ້”. ມັນຈະສະແດງແບບມົວຈົນກວ່າທ່ານຈະປົດລັອກດ້ວຍລາຍນິ້ວມື, ໃບໜ້າ ຫຼື ການລັອກໜ້າຈໍ.</string>
+    <string name="dejavu_workspace_lock_when">ລັອກອີກຄັ້ງ</string>
+    <string name="dejavu_workspace_lock_on_switch">ເມື່ອທ່ານສະຫຼັບໄປພື້ນທີ່ເຮັດວຽກອື່ນ</string>
+    <string name="dejavu_workspace_lock_on_leave">ເມື່ອທ່ານອອກຈາກ Dejavu</string>
+    <string name="dejavu_workspace_lock_after">%1$s ຫຼັງຈາກອອກຈາກ Dejavu</string>
+    <string name="dejavu_workspace_lock_on_close">ເມື່ອ Dejavu ປິດ</string>
 </resources>

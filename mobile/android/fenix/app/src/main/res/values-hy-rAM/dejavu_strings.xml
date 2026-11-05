@@ -553,4 +553,18 @@
     <string name="dejavu_remote_debugging_summary">Կրկին անջատվում է Dejavu-ի վերագործարկման ժամանակ</string>
     <string name="dejavu_preference_mouse_support">Մկնիկի աջակցում</string>
     <string name="dejavu_preference_mouse_support_summary">Միջին կոճակով սեղմելը հղումը բացում է ֆոնային ներդիրում, իսկ հղման վրա մկնիկը պահելը ցույց է տալիս դրա հասցեն։ Միջին կոճակով սեղմելը ներդիրի վրա փակում է այն։</string>
+    <string name="dejavu_workspace_lock">Կողպել այս տարածքը</string>
+    <string name="dejavu_workspace_lock_summary">Ցույց է տալիս այն մշուշոտ, մինչև բացեք այն մատնահետքով, դեմքով կամ էկրանի կողպեքով</string>
+    <string name="dejavu_workspace_no_history">Չպահել պատմությունը</string>
+    <string name="dejavu_workspace_no_history_summary">Այստեղ բացված էջերը չեն մտնում պատմության, վերջին որոնումների և վերջերս փակված ներդիրների մեջ</string>
+    <string name="dejavu_workspace_locked">«%1$s»-ը կողպված է</string>
+    <string name="dejavu_workspace_unlock_title">Ապակողպել «%1$s»-ը</string>
+    <string name="dejavu_workspace_locked_leave">Գնալ տարածքներ</string>
+    <string name="dejavu_settings_workspace_lock">Տարածքների կողպեք</string>
+    <string name="dejavu_workspace_lock_hint">Տարածքը կողպելու համար հպեք դրա անվանը գլխավոր էկրանին և միացրեք «Կողպել այս տարածքը»։ Այն մշուշոտ է երևում, մինչև բացեք այն մատնահետքով, դեմքով կամ էկրանի կողպեքով։</string>
+    <string name="dejavu_workspace_lock_when">Կրկին կողպել</string>
+    <string name="dejavu_workspace_lock_on_switch">Երբ անցնում եք այլ տարածք</string>
+    <string name="dejavu_workspace_lock_on_leave">Երբ դուրս եք գալիս Dejavu-ից</string>
+    <string name="dejavu_workspace_lock_after">Dejavu-ից դուրս գալուց %1$s անց</string>
+    <string name="dejavu_workspace_lock_on_close">Երբ Dejavu-ն փակվում է</string>
 </resources>

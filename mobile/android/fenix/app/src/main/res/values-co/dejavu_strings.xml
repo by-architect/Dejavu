@@ -553,4 +553,18 @@
     <string name="dejavu_remote_debugging_summary">Si disattiva torna quandu Dejavu riparte</string>
     <string name="dejavu_preference_mouse_support">Supportu di u topu</string>
     <string name="dejavu_preference_mouse_support_summary">Un cliccu cù u buttone di u mezu apre un liame in un\'unghjetta in fondu, è passà nantu à un liame ne mostra l\'indirizzu. Un cliccu cù u buttone di u mezu nant\'à un\'unghjetta a chjode.</string>
+    <string name="dejavu_workspace_lock">Bluccà stu spaziu di travagliu</string>
+    <string name="dejavu_workspace_lock_summary">U mostra sfucatu finchè ùn u sbluccate cù l’impronta, a faccia o u bluccame di u screnu</string>
+    <string name="dejavu_workspace_no_history">Ùn arregistrà a cronolugia</string>
+    <string name="dejavu_workspace_no_history_summary">E pagine aperte quì ùn entrenu micca in a cronolugia, in e ricerche recente è in l’unghjette chjose pocu fà</string>
+    <string name="dejavu_workspace_locked">%1$s hè bluccatu</string>
+    <string name="dejavu_workspace_unlock_title">Sbluccà %1$s</string>
+    <string name="dejavu_workspace_locked_leave">Andà à i spazii di travagliu</string>
+    <string name="dejavu_settings_workspace_lock">Bluccame di i spazii di travagliu</string>
+    <string name="dejavu_workspace_lock_hint">Per bluccà un spaziu di travagliu, tuccate u so nome nant’à u screnu d’accolta è attivate « Bluccà stu spaziu di travagliu ». Hè affissatu sfucatu finchè ùn u sbluccate cù l’impronta, a faccia o u bluccame di u screnu.</string>
+    <string name="dejavu_workspace_lock_when">Bluccà torna</string>
+    <string name="dejavu_workspace_lock_on_switch">Quandu passate à un altru spaziu di travagliu</string>
+    <string name="dejavu_workspace_lock_on_leave">Quandu lasciate Dejavu</string>
+    <string name="dejavu_workspace_lock_after">%1$s dopu à avè lasciatu Dejavu</string>
+    <string name="dejavu_workspace_lock_on_close">Quandu Dejavu si chjode</string>
 </resources>

@@ -545,4 +545,18 @@
     <string name="dejavu_remote_debugging_summary">ปิดอีกครั้งเมื่อ Dejavu เริ่มใหม่</string>
     <string name="dejavu_preference_mouse_support">การรองรับเมาส์</string>
     <string name="dejavu_preference_mouse_support_summary">การคลิกปุ่มกลางจะเปิดลิงก์ในแท็บเบื้องหลัง และการวางเมาส์เหนือลิงก์จะแสดงที่อยู่ของลิงก์ การคลิกปุ่มกลางที่แท็บจะปิดแท็บนั้น</string>
+    <string name="dejavu_workspace_lock">ล็อกพื้นที่ทำงานนี้</string>
+    <string name="dejavu_workspace_lock_summary">แสดงแบบเบลอจนกว่าคุณจะปลดล็อกด้วยลายนิ้วมือ ใบหน้า หรือการล็อกหน้าจอ</string>
+    <string name="dejavu_workspace_no_history">ไม่บันทึกประวัติ</string>
+    <string name="dejavu_workspace_no_history_summary">หน้าที่เปิดที่นี่จะไม่อยู่ในประวัติ การค้นหาล่าสุด และแท็บที่ปิดล่าสุด</string>
+    <string name="dejavu_workspace_locked">%1$s ถูกล็อกอยู่</string>
+    <string name="dejavu_workspace_unlock_title">ปลดล็อก %1$s</string>
+    <string name="dejavu_workspace_locked_leave">ไปที่พื้นที่ทำงาน</string>
+    <string name="dejavu_settings_workspace_lock">การล็อกพื้นที่ทำงาน</string>
+    <string name="dejavu_workspace_lock_hint">หากต้องการล็อกพื้นที่ทำงาน ให้แตะชื่อของพื้นที่ทำงานบนหน้าจอหลัก แล้วเปิด “ล็อกพื้นที่ทำงานนี้” พื้นที่ทำงานจะแสดงแบบเบลอจนกว่าคุณจะปลดล็อกด้วยลายนิ้วมือ ใบหน้า หรือการล็อกหน้าจอ</string>
+    <string name="dejavu_workspace_lock_when">ล็อกอีกครั้ง</string>
+    <string name="dejavu_workspace_lock_on_switch">เมื่อคุณสลับไปพื้นที่ทำงานอื่น</string>
+    <string name="dejavu_workspace_lock_on_leave">เมื่อคุณออกจาก Dejavu</string>
+    <string name="dejavu_workspace_lock_after">%1$s หลังจากออกจาก Dejavu</string>
+    <string name="dejavu_workspace_lock_on_close">เมื่อปิด Dejavu</string>
 </resources>

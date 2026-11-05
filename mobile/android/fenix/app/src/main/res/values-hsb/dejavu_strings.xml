@@ -569,4 +569,18 @@
     <string name="dejavu_remote_debugging_summary">Znjemóžni so zaso, hdyž so Dejavu znowa startuje</string>
     <string name="dejavu_preference_mouse_support">Podpěra myški</string>
     <string name="dejavu_preference_mouse_support_summary">Srjedźne kliknjenje wotkaz w pozadkowym rajtarku wočinja, a hdyž myšku nad wotkazom dźeržiće, so jeho adresa pokazuje. Srjedźne kliknjenje na rajtark jón začinja.</string>
+    <string name="dejavu_workspace_lock">Tutón dźěłowy rum zawrěć</string>
+    <string name="dejavu_workspace_lock_summary">Pokazuje jón młowojty, doniž jón z porstowym wotćišćom, mjezwočom abo wobrazowkowej blokadu njewotewrěš</string>
+    <string name="dejavu_workspace_no_history">Historiju njeskładować</string>
+    <string name="dejavu_workspace_no_history_summary">Strony, kotrež so tu wočinjeja, do historije, najnowšich pytanjow a runje začinjenych rajtarkow njepřińdu</string>
+    <string name="dejavu_workspace_locked">Dźěłowy rum „%1$s“ je zawrjeny</string>
+    <string name="dejavu_workspace_unlock_title">„%1$s“ wotewrěć</string>
+    <string name="dejavu_workspace_locked_leave">K dźěłowym rumam</string>
+    <string name="dejavu_settings_workspace_lock">Zawrjenje dźěłowych rumow</string>
+    <string name="dejavu_workspace_lock_hint">Zo by dźěłowy rum zawrěł, podótkń so na startowej wobrazowce jeho mjena a zmóžń „Tutón dźěłowy rum zawrěć“. Pokazuje so młowojty, doniž jón z porstowym wotćišćom, mjezwočom abo wobrazowkowej blokadu njewotewrěš.</string>
+    <string name="dejavu_workspace_lock_when">Znowa zawrěć</string>
+    <string name="dejavu_workspace_lock_on_switch">Hdyž do druheho dźěłoweho ruma přeńdźeš</string>
+    <string name="dejavu_workspace_lock_on_leave">Hdyž Dejavu wopušćiš</string>
+    <string name="dejavu_workspace_lock_after">%1$s po wopušćenju Dejavu</string>
+    <string name="dejavu_workspace_lock_on_close">Hdyž so Dejavu začini</string>
 </resources>

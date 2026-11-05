@@ -70,6 +70,7 @@ import androidx.compose.ui.layout.onPlaced
 import androidx.compose.ui.layout.onSizeChanged
 import androidx.compose.ui.layout.positionInParent
 import androidx.compose.ui.platform.LocalConfiguration
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.platform.LocalDensity
 import androidx.compose.ui.platform.LocalHapticFeedback
 import androidx.compose.ui.platform.LocalLayoutDirection
@@ -85,6 +86,8 @@ import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.LayoutDirection
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.lifecycle.compose.LocalLifecycleOwner
+import androidx.lifecycle.withResumed
 import kotlin.math.floor
 import kotlin.math.roundToInt
 import kotlinx.coroutines.delay
@@ -117,13 +120,18 @@ import org.mozilla.fenix.dejavu.discover.rememberUnseenNewThings
 import org.mozilla.fenix.dejavu.discover.tipTarget
 import org.mozilla.fenix.dejavu.sync.workspaceIconText
 import org.mozilla.fenix.dejavu.ui.LocalPopupTheme
+import org.mozilla.fenix.dejavu.ui.LockCover
 import org.mozilla.fenix.dejavu.ui.TapIcon
 import org.mozilla.fenix.dejavu.ui.glass
+import org.mozilla.fenix.dejavu.ui.lockedContent
+import org.mozilla.fenix.dejavu.ui.mayAskToUnlock
 import org.mozilla.fenix.dejavu.ui.popupThemeOf
 import org.mozilla.fenix.dejavu.ui.rememberIconTaps
+import org.mozilla.fenix.dejavu.ui.rememberUnlockPrompt
 import org.mozilla.fenix.dejavu.workspaces.PinnedItem
 import org.mozilla.fenix.dejavu.workspaces.WallpaperArt
 import org.mozilla.fenix.dejavu.workspaces.Workspace
+import org.mozilla.fenix.dejavu.workspaces.WorkspaceLock
 import org.mozilla.fenix.dejavu.workspaces.WorkspaceState
 import org.mozilla.fenix.dejavu.workspaces.WorkspaceTheme
 import org.mozilla.fenix.dejavu.workspaces.WorkspaceWallpaper
@@ -136,7 +144,10 @@ import org.mozilla.fenix.settings.deletebrowsingdata.DeleteBrowsingDataOnQuitTyp
 interface DejavuHomeInteractor : TabEditor {
     fun onWorkspaceSelected(workspaceId: String)
 
-    /** Saves workspace [workspaceId], or a new workspace when it is `null`, with its [wallpaper] on this device. */
+    /**
+     * Saves workspace [workspaceId], or a new workspace when it is `null`, with its [wallpaper], whether it is [locked]
+     * and whether it [savesHistory] on this device.
+     */
     @Suppress("LongParameterList")
     fun onSaveWorkspace(
         workspaceId: String?,
@@ -145,6 +156,8 @@ interface DejavuHomeInteractor : TabEditor {
         icon: String?,
         theme: WorkspaceTheme?,
         wallpaper: WorkspaceWallpaper?,
+        locked: Boolean,
+        savesHistory: Boolean,
     )
 
     /** Draws [art] into a wallpaper with the colors taken from it; `null` when it cannot be kept. */
@@ -199,6 +212,9 @@ interface DejavuHomeInteractor : TabEditor {
 
     /** Closes every private tab, which removes the private workspace. */
     fun onClosePrivateTabs()
+
+    /** Shows the private tabs again once the user unlocked them, see Firefox's "Lock private tabs". */
+    fun onUnlockPrivateTabs()
     fun onCloseTab(tabId: String)
 
     /** Starts a new tab in the container [pick]. */
@@ -222,6 +238,8 @@ interface DejavuHomeInteractor : TabEditor {
  * [searchAtBottom]; selecting keeps its bars where they are, the selection on top and its actions at the bottom.
  * [hasDataToClear] tells whether the data chosen for Clear data has anything to delete, which shows the Clear button.
  * Tips about gestures nothing shows point them out while [tipsAllowed], when nothing else needs the user's attention.
+ * A locked workspace, see [WorkspaceLock], and the private tabs while [privateLocked], show blurred under a cover that
+ * unlocks them, which asks by itself once they are turned to.
  */
 @Suppress("LongMethod", "LongParameterList", "CognitiveComplexMethod", "CyclomaticComplexMethod")
 @Composable
@@ -245,6 +263,7 @@ fun DejavuHome(
     searchAtBottom: Boolean = false,
     hasDataToClear: Boolean = false,
     tipsAllowed: Boolean = false,
+    privateLocked: Boolean = false,
 ) {
     // The private workspace is an extra last page, there while private tabs are open.
     val privateIndex = state.workspaces.size.takeIf { privateTabs.isNotEmpty() }
@@ -278,8 +297,16 @@ fun DejavuHome(
     val currentWorkspace = state.workspaces.getOrNull(pagerState.currentPage) ?: state.workspaces.last()
     val tabsById = remember(tabs) { tabs.associateBy { it.id } }
     val openTabIds = tabsById.keys
-    // The workspace of a device on the account shows what the device has, which has no essentials.
-    val essentials = if (onPrivatePage || currentWorkspace.device != null) {
+    val unlocked by WorkspaceLock.unlocked.collectAsState()
+
+    // Whether the page shows blurred under the cover that unlocks it.
+    fun hiddenAt(page: Int): Boolean =
+        if (page == privateIndex) privateLocked else WorkspaceLock.hides(state.workspaces.getOrNull(page), unlocked)
+
+    val currentHidden = hiddenAt(pagerState.currentPage)
+    // The workspace of a device on the account shows what the device has, which has no essentials, and a locked one
+    // shows nothing until it is unlocked.
+    val essentials = if (onPrivatePage || currentWorkspace.device != null || currentHidden) {
         emptyList()
     } else {
         state.essentialsFor(currentWorkspace.containerId, essentialsPerContainer)
@@ -330,6 +357,52 @@ fun DejavuHome(
         swiped = false
     }
 
+    // Unlocking asks for the fingerprint, face or screen lock, then shows the page and does what was asked for on it.
+    val context = LocalContext.current
+    val unlockPrompt = rememberUnlockPrompt()
+    val unlockPrivateTitle = stringResource(R.string.pbm_authentication_unlock_private_tabs)
+    fun askToUnlock(page: Int, then: () -> Unit = {}) {
+        if (page == privateIndex) {
+            unlockPrompt.ask(unlockPrivateTitle) {
+                interactor.onUnlockPrivateTabs()
+                then()
+            }
+            return
+        }
+        val workspace = state.workspaces.getOrNull(page) ?: return
+        unlockPrompt.ask(context.getString(R.string.dejavu_workspace_unlock_title, workspace.name)) {
+            WorkspaceLock.unlock(workspace.id)
+            then()
+        }
+    }
+    val latestHiddenAt by rememberUpdatedState<(Int) -> Boolean> { page -> hiddenAt(page) }
+
+    // A locked page the pages stop on asks to unlock by itself, once until it locks again or the user turns away.
+    val settledPage = pagerState.settledPage
+    val settledKey = if (settledPage == privateIndex) PRIVATE_PAGE_KEY else state.workspaces.getOrNull(settledPage)?.id
+    val settledHidden = hiddenAt(settledPage)
+    var shownKey by remember { mutableStateOf<String?>(null) }
+    LaunchedEffect(settledKey) {
+        shownKey?.takeIf { it != settledKey }?.let(WorkspaceLock::left)
+        shownKey = settledKey
+    }
+    // The private tabs locking again, as when coming home from one of them, asks again.
+    var wasPrivateLocked by remember { mutableStateOf(privateLocked) }
+    LaunchedEffect(privateLocked) {
+        if (privateLocked && !wasPrivateLocked) WorkspaceLock.left(PRIVATE_PAGE_KEY)
+        wasPrivateLocked = privateLocked
+    }
+    val lifecycleOwner = LocalLifecycleOwner.current
+    val mayAsk = tipsAllowed && dialog == null && !pagerState.isScrollInProgress
+    LaunchedEffect(settledKey, settledHidden, mayAsk) {
+        val key = settledKey?.takeIf { settledHidden && mayAsk } ?: return@LaunchedEffect
+        // A page that locks as the pages turn away from it, as switching workspaces can do, is left without asking.
+        delay(UNLOCK_ASK_DELAY_MS)
+        lifecycleOwner.withResumed {
+            if (context.mayAskToUnlock() && WorkspaceLock.askOnce(key)) askToUnlock(settledPage)
+        }
+    }
+
     // Follows workspace changes made elsewhere, without leaving the private workspace the home opened on.
     var followedActiveIndex by remember { mutableIntStateOf(state.activeIndex) }
     LaunchedEffect(state.activeIndex, state.workspaces.size) {
@@ -377,7 +450,8 @@ fun DejavuHome(
         val page = pagerState.currentPage
         val side = sideAt(pointer.x, pagesWidth.toFloat(), stripWidth, isRtl)
             .takeIf { moved && current.canLeave && page + it in workspaces.indices } ?: 0
-        val over = workspaces.getOrNull(page)?.id?.takeIf { side == 0 && !pagerState.isScrollInProgress }
+        val over = workspaces.getOrNull(page)?.id
+            ?.takeIf { side == 0 && !pagerState.isScrollInProgress && !latestHiddenAt(page) }
         val drop = over?.takeIf { moved }?.let { dragAreas[it] }?.drop(pointer.y, current) ?: PageDrop(null)
         return current.copy(
             pointer = pointer,
@@ -551,8 +625,16 @@ fun DejavuHome(
             )
             Column(modifier = Modifier.fillMaxSize().systemBarsPadding().imePadding()) {
                 val activeSelection = selection
+                val search = if (onPrivatePage) newPrivateTab else interactor::onSearchClick
                 val searchBar: @Composable () -> Unit = {
-                    TopBar(interactor, onSearchClick = if (onPrivatePage) newPrivateTab else interactor::onSearchClick)
+                    TopBar(
+                        interactor = interactor,
+                        onSearchClick = if (currentHidden) {
+                            { askToUnlock(pagerState.currentPage, then = search) }
+                        } else {
+                            search
+                        },
+                    )
                 }
                 val workspaceBar: @Composable () -> Unit = {
                     WorkspaceBar(
@@ -630,6 +712,7 @@ fun DejavuHome(
                         .pointerInput(isRtl, stripWidth, touchSlop) {
                             detectDragGesturesAfterLongPress(
                                 onDragStart = { offset ->
+                                    if (latestHiddenAt(pagerState.currentPage)) return@detectDragGesturesAfterLongPress
                                     val workspace = latestState.workspaces.getOrNull(pagerState.currentPage)
                                     val atEnd = if (isRtl) offset.x < size.width / 2f else offset.x >= size.width / 2f
                                     val area = workspace?.let { dragAreas[it.id] }
@@ -658,14 +741,20 @@ fun DejavuHome(
                         key = { state.workspaces.getOrNull(it)?.id ?: PRIVATE_PAGE_KEY },
                     ) { page ->
                         if (page == privateIndex) {
-                            PrivateWorkspacePage(
-                                tabs = privateTabs,
-                                selectedTabId = selectedTabId,
-                                onTabClick = { interactor.onTabClick(it.id) },
-                                onCloseTab = { interactor.onCloseTab(it.id) },
-                                onNewTab = interactor::onNewPrivateTab,
-                                onCloseAll = interactor::onClosePrivateTabs,
-                            )
+                            LockablePage(
+                                hidden = privateLocked,
+                                title = unlockPrivateTitle,
+                                onUnlock = { askToUnlock(page) },
+                            ) {
+                                PrivateWorkspacePage(
+                                    tabs = privateTabs,
+                                    selectedTabId = selectedTabId,
+                                    onTabClick = { interactor.onTabClick(it.id) },
+                                    onCloseTab = { interactor.onCloseTab(it.id) },
+                                    onNewTab = interactor::onNewPrivateTab,
+                                    onCloseAll = interactor::onClosePrivateTabs,
+                                )
+                            }
                             return@HorizontalPager
                         }
                         val workspace = state.workspaces[page]
@@ -720,31 +809,37 @@ fun DejavuHome(
                                 onRevealed = { revealTabId = null },
                             )
                         }
-                        WorkspacePage(
-                            state = state,
-                            workspace = workspace,
-                            tabs = pageTabs,
-                            selectedTabId = selectedTabId,
-                            containers = containers,
-                            pinnedRowActions = pinnedRowActions,
-                            unpinnedRowActions = unpinnedRowActions,
-                            folderRowActions = folderRowActions,
-                            selection = activeSelection,
-                            drag = drag,
-                            dragAreas = dragAreas,
-                            dragStack = dragStack,
-                            callbacks = callbacks,
-                            canDeleteWorkspace = state.workspaces.size > 1,
-                            canMoveLeft = page > 0,
-                            canMoveRight = page < state.workspaces.size - 1,
-                            hasClosedTab = hasClosedTab,
-                            hasClipboardLink = hasClipboardLink,
-                            revealTabId = revealTabId,
-                            openTabIds = openTabIds,
-                            hasDataToClear = hasDataToClear,
-                            dataPour = pour.takeIf { page == pagerState.currentPage },
-                            askedClear = askedClear.takeIf { page == pagerState.currentPage },
-                        )
+                        LockablePage(
+                            hidden = hiddenAt(page),
+                            title = stringResource(R.string.dejavu_workspace_locked, workspace.name),
+                            onUnlock = { askToUnlock(page) },
+                        ) {
+                            WorkspacePage(
+                                state = state,
+                                workspace = workspace,
+                                tabs = pageTabs,
+                                selectedTabId = selectedTabId,
+                                containers = containers,
+                                pinnedRowActions = pinnedRowActions,
+                                unpinnedRowActions = unpinnedRowActions,
+                                folderRowActions = folderRowActions,
+                                selection = activeSelection,
+                                drag = drag,
+                                dragAreas = dragAreas,
+                                dragStack = dragStack,
+                                callbacks = callbacks,
+                                canDeleteWorkspace = state.workspaces.size > 1,
+                                canMoveLeft = page > 0,
+                                canMoveRight = page < state.workspaces.size - 1,
+                                hasClosedTab = hasClosedTab,
+                                hasClipboardLink = hasClipboardLink,
+                                revealTabId = revealTabId,
+                                openTabIds = openTabIds,
+                                hasDataToClear = hasDataToClear,
+                                dataPour = pour.takeIf { page == pagerState.currentPage },
+                                askedClear = askedClear.takeIf { page == pagerState.currentPage },
+                            )
+                        }
                     }
 
                     val dragging = drag?.takeIf { it.moved }
@@ -786,7 +881,8 @@ fun DejavuHome(
             TipHost(
                 screen = TipScreen.HOME,
                 allowed = tipsAllowed && selection == null && dialog == null && drag == null &&
-                    !pagerState.isScrollInProgress && !onPrivatePage && currentWorkspace.device == null,
+                    !pagerState.isScrollInProgress && !onPrivatePage && currentWorkspace.device == null &&
+                    !currentHidden,
                 modifier = Modifier.fillMaxSize(),
                 drawsTargets = true,
             )
@@ -851,6 +947,15 @@ private fun TopBar(interactor: DejavuHomeInteractor, onSearchClick: () -> Unit) 
                 .genieButton(PageGenie.Button.SETTINGS)
                 .newDot(rememberUnseenNewThings().isNotEmpty(), inset = SETTINGS_DOT_INSET),
         )
+    }
+}
+
+/** A page of the workspaces, blurred under the [LockCover] that unlocks it while [hidden]. */
+@Composable
+private fun LockablePage(hidden: Boolean, title: String, onUnlock: () -> Unit, content: @Composable () -> Unit) {
+    Box(modifier = Modifier.fillMaxSize()) {
+        Box(modifier = Modifier.fillMaxSize().lockedContent(hidden)) { content() }
+        if (hidden) LockCover(title = title, onUnlock = onUnlock, modifier = Modifier.matchParentSize())
     }
 }
 
@@ -988,6 +1093,7 @@ private const val LAYOUT_FRAMES = 2
 
 // How long a reopened tab may take to come back before the home stops waiting to scroll to it.
 private const val REVEAL_TIMEOUT_MS = 3000L
+private const val UNLOCK_ASK_DELAY_MS = 300L
 
 @Composable
 internal fun BarIconButton(

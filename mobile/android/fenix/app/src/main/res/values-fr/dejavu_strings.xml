@@ -553,4 +553,18 @@
     <string name="dejavu_remote_debugging_summary">Se désactive à nouveau au redémarrage de Dejavu</string>
     <string name="dejavu_preference_mouse_support">Prise en charge de la souris</string>
     <string name="dejavu_preference_mouse_support_summary">Un clic du milieu ouvre un lien dans un onglet en arrière-plan, et survoler un lien affiche son adresse. Un clic du milieu sur un onglet le ferme.</string>
+    <string name="dejavu_workspace_lock">Verrouiller cet espace</string>
+    <string name="dejavu_workspace_lock_summary">L’affiche flouté jusqu’à ce que vous le déverrouilliez avec votre empreinte, votre visage ou le verrouillage de l’écran</string>
+    <string name="dejavu_workspace_no_history">Ne pas enregistrer l’historique</string>
+    <string name="dejavu_workspace_no_history_summary">Les pages ouvertes ici restent hors de l’historique, des recherches récentes et des onglets récemment fermés</string>
+    <string name="dejavu_workspace_locked">%1$s est verrouillé</string>
+    <string name="dejavu_workspace_unlock_title">Déverrouiller %1$s</string>
+    <string name="dejavu_workspace_locked_leave">Aller aux espaces</string>
+    <string name="dejavu_settings_workspace_lock">Verrouillage des espaces</string>
+    <string name="dejavu_workspace_lock_hint">Pour verrouiller un espace, touchez son nom sur l’écran d’accueil et activez « Verrouiller cet espace ». Il s’affiche flouté jusqu’à ce que vous le déverrouilliez avec votre empreinte, votre visage ou le verrouillage de l’écran.</string>
+    <string name="dejavu_workspace_lock_when">Verrouiller à nouveau</string>
+    <string name="dejavu_workspace_lock_on_switch">Quand vous passez à un autre espace</string>
+    <string name="dejavu_workspace_lock_on_leave">Quand vous quittez Dejavu</string>
+    <string name="dejavu_workspace_lock_after">%1$s après avoir quitté Dejavu</string>
+    <string name="dejavu_workspace_lock_on_close">Quand Dejavu se ferme</string>
 </resources>

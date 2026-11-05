@@ -553,4 +553,18 @@
     <string name="dejavu_remote_debugging_summary">Ҳангоми аз нав оғоз шудани Dejavu боз хомӯш мешавад</string>
     <string name="dejavu_preference_mouse_support">Дастгирии муш</string>
     <string name="dejavu_preference_mouse_support_summary">Зеркунӣ бо тугмаи миёна пайвандро дар варақаи пасзамина мекушояд, ва нигоҳ доштани муш болои пайванд нишонии онро нишон медиҳад. Зеркунӣ бо тугмаи миёна болои варақа онро мебандад.</string>
+    <string name="dejavu_workspace_lock">Қулф кардани ин фазо</string>
+    <string name="dejavu_workspace_lock_summary">Онро то он даме, ки бо изи ангушт, чеҳра ё қулфи экран кушоед, хира нишон медиҳад</string>
+    <string name="dejavu_workspace_no_history">Таърих нигоҳ дошта нашавад</string>
+    <string name="dejavu_workspace_no_history_summary">Саҳифаҳое, ки дар ин ҷо кушода мешаванд, ба таърих, ҷустуҷӯҳои охирин ва варақаҳои ба наздикӣ пӯшидашуда намеафтанд</string>
+    <string name="dejavu_workspace_locked">Фазои «%1$s» қулф аст</string>
+    <string name="dejavu_workspace_unlock_title">Кушодани қулфи «%1$s»</string>
+    <string name="dejavu_workspace_locked_leave">Гузариш ба фазоҳо</string>
+    <string name="dejavu_settings_workspace_lock">Қулфи фазоҳо</string>
+    <string name="dejavu_workspace_lock_hint">Барои қулф кардани фазо, номи онро дар экрани асосӣ зер кунед ва «Қулф кардани ин фазо»-ро фаъол созед. То он даме, ки бо изи ангушт, чеҳра ё қулфи экран кушоед, хира намоиш дода мешавад.</string>
+    <string name="dejavu_workspace_lock_when">Боз қулф кардан</string>
+    <string name="dejavu_workspace_lock_on_switch">Ҳангоми гузаштан ба фазои дигар</string>
+    <string name="dejavu_workspace_lock_on_leave">Ҳангоми баромадан аз Dejavu</string>
+    <string name="dejavu_workspace_lock_after">%1$s пас аз баромадан аз Dejavu</string>
+    <string name="dejavu_workspace_lock_on_close">Ҳангоми пӯшидани Dejavu</string>
 </resources>

@@ -553,4 +553,18 @@
     <string name="dejavu_remote_debugging_summary">Berriro desaktibatzen da Dejavu berrabiaraztean</string>
     <string name="dejavu_preference_mouse_support">Saguaren euskarria</string>
     <string name="dejavu_preference_mouse_support_summary">Erdiko botoiarekin klik eginez gero, esteka atzeko planoko fitxa batean irekitzen da, eta esteka baten gainetik pasatzean haren helbidea erakusten da. Erdiko botoiarekin fitxa baten gainean klik eginez gero, fitxa ixten da.</string>
+    <string name="dejavu_workspace_lock">Blokeatu laneremu hau</string>
+    <string name="dejavu_workspace_lock_summary">Lausotuta erakusten du, hatz-markarekin, aurpegiarekin edo pantaila-blokeoarekin desblokeatu arte</string>
+    <string name="dejavu_workspace_no_history">Ez gorde historia</string>
+    <string name="dejavu_workspace_no_history_summary">Hemen irekitako orriak ez dira historian, azken bilaketetan eta itxitako azken fitxetan sartzen</string>
+    <string name="dejavu_workspace_locked">%1$s blokeatuta dago</string>
+    <string name="dejavu_workspace_unlock_title">Desblokeatu %1$s</string>
+    <string name="dejavu_workspace_locked_leave">Joan laneremuetara</string>
+    <string name="dejavu_settings_workspace_lock">Laneremuen blokeoa</string>
+    <string name="dejavu_workspace_lock_hint">Laneremu bat blokeatzeko, sakatu haren izena hasierako pantailan eta aktibatu «Blokeatu laneremu hau». Lausotuta erakusten da, hatz-markarekin, aurpegiarekin edo pantaila-blokeoarekin desblokeatu arte.</string>
+    <string name="dejavu_workspace_lock_when">Blokeatu berriro</string>
+    <string name="dejavu_workspace_lock_on_switch">Beste laneremu batera aldatzean</string>
+    <string name="dejavu_workspace_lock_on_leave">Dejavu uztean</string>
+    <string name="dejavu_workspace_lock_after">Dejavu utzi eta %1$s geroago</string>
+    <string name="dejavu_workspace_lock_on_close">Dejavu ixtean</string>
 </resources>

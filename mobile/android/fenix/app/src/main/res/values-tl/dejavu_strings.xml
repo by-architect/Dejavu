@@ -553,4 +553,18 @@
     <string name="dejavu_remote_debugging_summary">Mag-o-off ulit kapag nag-restart ang Dejavu</string>
     <string name="dejavu_preference_mouse_support">Suporta sa mouse</string>
     <string name="dejavu_preference_mouse_support_summary">Binubuksan ng middle-click ang link sa isang background tab, at ipinapakita ng pag-hover sa link ang address nito. Isinasara ng middle-click sa isang tab ang tab.</string>
+    <string name="dejavu_workspace_lock">I-lock ang workspace na ito</string>
+    <string name="dejavu_workspace_lock_summary">Ipinapakita itong malabo hanggang i-unlock mo gamit ang fingerprint, mukha, o screen lock</string>
+    <string name="dejavu_workspace_no_history">Huwag i-save ang kasaysayan</string>
+    <string name="dejavu_workspace_no_history_summary">Ang mga page na binuksan dito ay hindi napupunta sa kasaysayan, mga kamakailang paghahanap, at mga kamakailang isinarang tab</string>
+    <string name="dejavu_workspace_locked">Naka-lock ang %1$s</string>
+    <string name="dejavu_workspace_unlock_title">I-unlock ang %1$s</string>
+    <string name="dejavu_workspace_locked_leave">Pumunta sa mga workspace</string>
+    <string name="dejavu_settings_workspace_lock">Lock ng workspace</string>
+    <string name="dejavu_workspace_lock_hint">Para i-lock ang isang workspace, i-tap ang pangalan nito sa home screen at i-on ang “I-lock ang workspace na ito”. Ipinapakita itong malabo hanggang i-unlock mo gamit ang fingerprint, mukha, o screen lock.</string>
+    <string name="dejavu_workspace_lock_when">I-lock ulit</string>
+    <string name="dejavu_workspace_lock_on_switch">Kapag lumipat ka sa ibang workspace</string>
+    <string name="dejavu_workspace_lock_on_leave">Kapag umalis ka sa Dejavu</string>
+    <string name="dejavu_workspace_lock_after">%1$s pagkaalis mo sa Dejavu</string>
+    <string name="dejavu_workspace_lock_on_close">Kapag isinara ang Dejavu</string>
 </resources>

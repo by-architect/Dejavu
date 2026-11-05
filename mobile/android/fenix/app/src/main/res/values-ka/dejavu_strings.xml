@@ -553,4 +553,18 @@
     <string name="dejavu_remote_debugging_summary">Dejavu-ს ხელახლა გაშვებისას ისევ გამოირთვება</string>
     <string name="dejavu_preference_mouse_support">თაგვის მხარდაჭერა</string>
     <string name="dejavu_preference_mouse_support_summary">შუა ღილაკით დაწკაპება ბმულს ფონურ ჩანართში ხსნის, ხოლო ბმულზე მაჩვენებლის მიტანა მის მისამართს აჩვენებს. ჩანართზე შუა ღილაკით დაწკაპება მას ხურავს.</string>
+    <string name="dejavu_workspace_lock">ამ სივრცის ჩაკეტვა</string>
+    <string name="dejavu_workspace_lock_summary">აჩვენებს მას ბუნდოვნად, სანამ თითის ანაბეჭდით, სახით ან ეკრანის დაბლოკვით არ გახსნით</string>
+    <string name="dejavu_workspace_no_history">ისტორია არ შეინახოს</string>
+    <string name="dejavu_workspace_no_history_summary">აქ გახსნილი გვერდები არ ხვდება ისტორიაში, ბოლო ძიებებსა და ახლახან დახურულ ჩანართებში</string>
+    <string name="dejavu_workspace_locked">„%1$s“ ჩაკეტილია</string>
+    <string name="dejavu_workspace_unlock_title">„%1$s“-ის გახსნა</string>
+    <string name="dejavu_workspace_locked_leave">სივრცეებზე გადასვლა</string>
+    <string name="dejavu_settings_workspace_lock">სივრცეების ჩაკეტვა</string>
+    <string name="dejavu_workspace_lock_hint">სივრცის ჩასაკეტად შეეხეთ მის სახელს მთავარ ეკრანზე და ჩართეთ „ამ სივრცის ჩაკეტვა“. ის ბუნდოვნად ჩანს, სანამ თითის ანაბეჭდით, სახით ან ეკრანის დაბლოკვით არ გახსნით.</string>
+    <string name="dejavu_workspace_lock_when">ხელახლა ჩაკეტვა</string>
+    <string name="dejavu_workspace_lock_on_switch">სხვა სივრცეზე გადასვლისას</string>
+    <string name="dejavu_workspace_lock_on_leave">Dejavu-დან გასვლისას</string>
+    <string name="dejavu_workspace_lock_after">Dejavu-დან გასვლიდან %1$s შემდეგ</string>
+    <string name="dejavu_workspace_lock_on_close">Dejavu-ს დახურვისას</string>
 </resources>

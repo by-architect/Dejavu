@@ -545,4 +545,18 @@
     <string name="dejavu_remote_debugging_summary">Dejavu를 다시 시작하면 다시 꺼집니다</string>
     <string name="dejavu_preference_mouse_support">마우스 지원</string>
     <string name="dejavu_preference_mouse_support_summary">가운데 버튼으로 클릭하면 링크가 백그라운드 탭에서 열리고, 링크 위에 마우스를 올리면 주소가 표시됩니다. 탭을 가운데 버튼으로 클릭하면 그 탭이 닫힙니다.</string>
+    <string name="dejavu_workspace_lock">이 작업 공간 잠그기</string>
+    <string name="dejavu_workspace_lock_summary">지문, 얼굴 또는 화면 잠금으로 잠금 해제할 때까지 흐리게 표시합니다</string>
+    <string name="dejavu_workspace_no_history">기록 저장 안 함</string>
+    <string name="dejavu_workspace_no_history_summary">여기서 연 페이지는 기록, 최근 검색, 최근에 닫은 탭에 남지 않습니다</string>
+    <string name="dejavu_workspace_locked">%1$s 잠김</string>
+    <string name="dejavu_workspace_unlock_title">%1$s 잠금 해제</string>
+    <string name="dejavu_workspace_locked_leave">작업 공간으로 이동</string>
+    <string name="dejavu_settings_workspace_lock">작업 공간 잠금</string>
+    <string name="dejavu_workspace_lock_hint">작업 공간을 잠그려면 홈 화면에서 이름을 누르고 ‘이 작업 공간 잠그기’를 켜세요. 지문, 얼굴 또는 화면 잠금으로 잠금 해제할 때까지 흐리게 표시됩니다.</string>
+    <string name="dejavu_workspace_lock_when">다시 잠그기</string>
+    <string name="dejavu_workspace_lock_on_switch">다른 작업 공간으로 전환할 때</string>
+    <string name="dejavu_workspace_lock_on_leave">Dejavu를 나갈 때</string>
+    <string name="dejavu_workspace_lock_after">Dejavu를 나가고 %1$s 후</string>
+    <string name="dejavu_workspace_lock_on_close">Dejavu를 닫을 때</string>
 </resources>

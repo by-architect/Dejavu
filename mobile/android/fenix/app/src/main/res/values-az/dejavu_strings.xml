@@ -553,4 +553,18 @@
     <string name="dejavu_remote_debugging_summary">Dejavu yenidən başladıqda yenə sönür</string>
     <string name="dejavu_preference_mouse_support">Siçan dəstəyi</string>
     <string name="dejavu_preference_mouse_support_summary">Orta düymə ilə klik keçidi arxa planda yeni vərəqdə açır, keçidin üzərinə gəlmək isə onun ünvanını göstərir. Vərəqin üzərində orta düymə ilə klik onu bağlayır.</string>
+    <string name="dejavu_workspace_lock">Bu iş sahəsini kilidlə</string>
+    <string name="dejavu_workspace_lock_summary">Barmaq izi, üz və ya ekran kilidi ilə açana qədər onu bulanıq göstərir</string>
+    <string name="dejavu_workspace_no_history">Tarixçəni saxlama</string>
+    <string name="dejavu_workspace_no_history_summary">Burada açılan səhifələr tarixçəyə, son axtarışlara və son bağlanan vərəqlərə düşmür</string>
+    <string name="dejavu_workspace_locked">%1$s kilidlidir</string>
+    <string name="dejavu_workspace_unlock_title">%1$s kilidini aç</string>
+    <string name="dejavu_workspace_locked_leave">İş sahələrinə keç</string>
+    <string name="dejavu_settings_workspace_lock">İş sahəsi kilidi</string>
+    <string name="dejavu_workspace_lock_hint">İş sahəsini kilidləmək üçün əsas ekranda onun adına toxunun və “Bu iş sahəsini kilidlə” seçimini aktiv edin. Barmaq izi, üz və ya ekran kilidi ilə açana qədər bulanıq görünür.</string>
+    <string name="dejavu_workspace_lock_when">Yenidən kilidlə</string>
+    <string name="dejavu_workspace_lock_on_switch">Başqa iş sahəsinə keçəndə</string>
+    <string name="dejavu_workspace_lock_on_leave">Dejavu-dan çıxanda</string>
+    <string name="dejavu_workspace_lock_after">Dejavu-dan çıxdıqdan %1$s sonra</string>
+    <string name="dejavu_workspace_lock_on_close">Dejavu bağlananda</string>
 </resources>

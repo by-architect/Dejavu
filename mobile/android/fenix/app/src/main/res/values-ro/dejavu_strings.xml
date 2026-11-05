@@ -561,4 +561,18 @@
     <string name="dejavu_remote_debugging_summary">Se dezactivează din nou când Dejavu repornește</string>
     <string name="dejavu_preference_mouse_support">Suport pentru mouse</string>
     <string name="dejavu_preference_mouse_support_summary">Un clic cu butonul din mijloc deschide un link într-o filă în fundal, iar trecerea cu mouse-ul peste un link îi afișează adresa. Un clic cu butonul din mijloc pe o filă o închide.</string>
+    <string name="dejavu_workspace_lock">Blochează acest spațiu de lucru</string>
+    <string name="dejavu_workspace_lock_summary">Îl afișează neclar până când îl deblochezi cu amprenta, fața sau blocarea ecranului</string>
+    <string name="dejavu_workspace_no_history">Nu salva istoricul</string>
+    <string name="dejavu_workspace_no_history_summary">Paginile deschise aici nu ajung în istoric, în căutările recente și în filele închise recent</string>
+    <string name="dejavu_workspace_locked">%1$s este blocat</string>
+    <string name="dejavu_workspace_unlock_title">Deblochează %1$s</string>
+    <string name="dejavu_workspace_locked_leave">Mergi la spațiile de lucru</string>
+    <string name="dejavu_settings_workspace_lock">Blocarea spațiilor de lucru</string>
+    <string name="dejavu_workspace_lock_hint">Pentru a bloca un spațiu de lucru, atinge numele lui pe ecranul principal și activează „Blochează acest spațiu de lucru”. Este afișat neclar până când îl deblochezi cu amprenta, fața sau blocarea ecranului.</string>
+    <string name="dejavu_workspace_lock_when">Blochează din nou</string>
+    <string name="dejavu_workspace_lock_on_switch">Când treci la alt spațiu de lucru</string>
+    <string name="dejavu_workspace_lock_on_leave">Când ieși din Dejavu</string>
+    <string name="dejavu_workspace_lock_after">%1$s după ce ieși din Dejavu</string>
+    <string name="dejavu_workspace_lock_on_close">Când Dejavu se închide</string>
 </resources>

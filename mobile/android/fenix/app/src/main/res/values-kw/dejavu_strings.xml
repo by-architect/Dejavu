@@ -585,4 +585,18 @@
     <string name="dejavu_remote_debugging_summary">Diweythresys yw arta pan dhastalleth Dejavu</string>
     <string name="dejavu_preference_mouse_support">Skoodhyans logosen</string>
     <string name="dejavu_preference_mouse_support_summary">Klyk kres a eger kevren yn tab kilva, ha gortos a-ugh kevren a dhiskwedh hy thrigva. Klyk kres war dab a\'n serr.</string>
+    <string name="dejavu_workspace_lock">Alhwedha an tyller-ober ma</string>
+    <string name="dejavu_workspace_lock_summary">Y dhiskwedh yn tewl bys may hwrylli y dhialhwedha gans ol dha vys, dha fas po alhwedh an skrin</string>
+    <string name="dejavu_workspace_no_history">Na wit istori</string>
+    <string name="dejavu_workspace_no_history_summary">Folennow ygerys omma ny dhon a-ji dhe’n istori, hwilansow a-dhiwedhes ha tabow degeys a-dhiwedhes</string>
+    <string name="dejavu_workspace_locked">%1$s yw alhwedhys</string>
+    <string name="dejavu_workspace_unlock_title">Dialhwedha %1$s</string>
+    <string name="dejavu_workspace_locked_leave">Mos dhe’n tylleryow-ober</string>
+    <string name="dejavu_settings_workspace_lock">Alhwedh an tylleryow-ober</string>
+    <string name="dejavu_workspace_lock_hint">Rag alhwedha tyller-ober, tav y hanow war an skrin chi ha gorra “Alhwedha an tyller-ober ma” war. Diskwedhys yw yn tewl bys may hwrylli y dhialhwedha gans ol dha vys, dha fas po alhwedh an skrin.</string>
+    <string name="dejavu_workspace_lock_when">Alhwedha arta</string>
+    <string name="dejavu_workspace_lock_on_switch">Pan wre’ta chanjya dhe dyller-ober aral</string>
+    <string name="dejavu_workspace_lock_on_leave">Pan wre’ta gasa Dejavu</string>
+    <string name="dejavu_workspace_lock_after">%1$s wosa gasa Dejavu</string>
+    <string name="dejavu_workspace_lock_on_close">Pan vo Dejavu degeys</string>
 </resources>

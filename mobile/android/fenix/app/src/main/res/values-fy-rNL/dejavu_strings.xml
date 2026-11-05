@@ -553,4 +553,18 @@
     <string name="dejavu_remote_debugging_summary">Skeakelet wer út as Dejavu opnij start</string>
     <string name="dejavu_preference_mouse_support">Mûsstipe</string>
     <string name="dejavu_preference_mouse_support_summary">In middelklik iepenet in keppeling yn in ljepblêd op de eftergrûn, en mei de mûs boppe in keppeling hingje lit it adres sjen. In middelklik op in ljepblêd slút it.</string>
+    <string name="dejavu_workspace_lock">Dizze wurkromte beskoattelje</string>
+    <string name="dejavu_workspace_lock_summary">Toant him wazich oant jo him ûntskoattelje mei jo fingerôfdruk, gesicht of skermbeskoatteling</string>
+    <string name="dejavu_workspace_no_history">Gjin skiednis bewarje</string>
+    <string name="dejavu_workspace_no_history_summary">Hjir iepene siden bliuwe bûten de skiednis, resinte sykopdrachten en koartlyn sluten ljepblêden</string>
+    <string name="dejavu_workspace_locked">%1$s is beskoattele</string>
+    <string name="dejavu_workspace_unlock_title">%1$s ûntskoattelje</string>
+    <string name="dejavu_workspace_locked_leave">Nei wurkromten</string>
+    <string name="dejavu_settings_workspace_lock">Wurkromtebeskoatteling</string>
+    <string name="dejavu_workspace_lock_hint">Tik om in wurkromte te beskoatteljen op it startskerm op de namme en set ‘Dizze wurkromte beskoattelje’ oan. Hy wurdt wazich toand oant jo him ûntskoattelje mei jo fingerôfdruk, gesicht of skermbeskoatteling.</string>
+    <string name="dejavu_workspace_lock_when">Opnij beskoattelje</string>
+    <string name="dejavu_workspace_lock_on_switch">As jo nei in oare wurkromte geane</string>
+    <string name="dejavu_workspace_lock_on_leave">As jo Dejavu ferlitte</string>
+    <string name="dejavu_workspace_lock_after">%1$s neidat jo Dejavu ferlitten hawwe</string>
+    <string name="dejavu_workspace_lock_on_close">As Dejavu sluten wurdt</string>
 </resources>

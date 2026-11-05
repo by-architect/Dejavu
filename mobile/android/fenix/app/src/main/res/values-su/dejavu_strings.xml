@@ -545,4 +545,18 @@
     <string name="dejavu_remote_debugging_summary">Pareum deui nalika Dejavu dimimitian deui</string>
     <string name="dejavu_preference_mouse_support">Pangrojong beurit</string>
     <string name="dejavu_preference_mouse_support_summary">Klik tengah muka tutumbu dina tab tukang, sarta nempatkeun beurit dina tutumbu némbongkeun alamatna. Klik tengah dina tab nutup tab éta.</string>
+    <string name="dejavu_workspace_lock">Konci rohangan ieu</string>
+    <string name="dejavu_workspace_lock_summary">Némbongkeun burem nepi ka anjeun muka koncina ku sidik ramo, beungeut, atawa konci layar</string>
+    <string name="dejavu_workspace_no_history">Ulah nyimpen jujutan</string>
+    <string name="dejavu_workspace_no_history_summary">Kaca anu dibuka di dieu henteu asup kana jujutan, pamaluruhan anyar, jeung tab anu anyar ditutup</string>
+    <string name="dejavu_workspace_locked">%1$s dikonci</string>
+    <string name="dejavu_workspace_unlock_title">Buka konci %1$s</string>
+    <string name="dejavu_workspace_locked_leave">Buka rohangan</string>
+    <string name="dejavu_settings_workspace_lock">Konci rohangan</string>
+    <string name="dejavu_workspace_lock_hint">Pikeun ngonci rohangan, toél ngaranna dina layar tepas tuluy hurungkeun “Konci rohangan ieu”. Rohangan ditémbongkeun burem nepi ka anjeun muka koncina ku sidik ramo, beungeut, atawa konci layar.</string>
+    <string name="dejavu_workspace_lock_when">Konci deui</string>
+    <string name="dejavu_workspace_lock_on_switch">Mun anjeun pindah ka rohangan séjén</string>
+    <string name="dejavu_workspace_lock_on_leave">Mun anjeun ninggalkeun Dejavu</string>
+    <string name="dejavu_workspace_lock_after">%1$s sanggeus ninggalkeun Dejavu</string>
+    <string name="dejavu_workspace_lock_on_close">Mun Dejavu ditutup</string>
 </resources>

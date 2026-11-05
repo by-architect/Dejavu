@@ -553,4 +553,18 @@
     <string name="dejavu_remote_debugging_summary">Si disattiva arrè quannu Dejavu s\'arriavvìa</string>
     <string name="dejavu_preference_mouse_support">Supportu pô surciu</string>
     <string name="dejavu_preference_mouse_support_summary">Un clic cû buttuni dô menzu apri un liami nta na scheda n sfunnu, e passari supra un liami ni ammustra lu nnirizzu. Un clic cû buttuni dô menzu supra na scheda la chiudi.</string>
+    <string name="dejavu_workspace_lock">Blocca stu spazziu di travagghiu</string>
+    <string name="dejavu_workspace_lock_summary">Lu mustra sfucatu nzinu a quannu nun lu sblocchi cu la mpronta, la facci o lu bloccu dû schermu</string>
+    <string name="dejavu_workspace_no_history">Nun sarvari la crunuluggìa</string>
+    <string name="dejavu_workspace_no_history_summary">Li pàggini aperti ccà nun trasinu ntâ crunuluggìa, ntê ricerchi ricenti e ntê schedi chiuduti di ricenti</string>
+    <string name="dejavu_workspace_locked">%1$s è bluccatu</string>
+    <string name="dejavu_workspace_unlock_title">Sblocca %1$s</string>
+    <string name="dejavu_workspace_locked_leave">Va ê spazzii di travagghiu</string>
+    <string name="dejavu_settings_workspace_lock">Bloccu dî spazzii di travagghiu</string>
+    <string name="dejavu_workspace_lock_hint">Pi bluccari nu spazziu di travagghiu, tocca lu so nomu ntô schermu principali e attiva «Blocca stu spazziu di travagghiu». È mustratu sfucatu nzinu a quannu nun lu sblocchi cu la mpronta, la facci o lu bloccu dû schermu.</string>
+    <string name="dejavu_workspace_lock_when">Blocca arrè</string>
+    <string name="dejavu_workspace_lock_on_switch">Quannu passi a nautru spazziu di travagghiu</string>
+    <string name="dejavu_workspace_lock_on_leave">Quannu nesci di Dejavu</string>
+    <string name="dejavu_workspace_lock_after">%1$s doppu ca nesci di Dejavu</string>
+    <string name="dejavu_workspace_lock_on_close">Quannu Dejavu si chiui</string>
 </resources>

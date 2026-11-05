@@ -585,4 +585,18 @@
     <string name="dejavu_remote_debugging_summary">Mae\'n troi i ffwrdd eto pan fydd Dejavu yn ailgychwyn</string>
     <string name="dejavu_preference_mouse_support">Cefnogaeth llygoden</string>
     <string name="dejavu_preference_mouse_support_summary">Mae clicio\'r botwm canol yn agor dolen mewn tab cefndir, ac mae hofran dros ddolen yn dangos ei chyfeiriad. Mae clicio\'r botwm canol ar dab yn ei gau.</string>
+    <string name="dejavu_workspace_lock">Cloi’r gweithle hwn</string>
+    <string name="dejavu_workspace_lock_summary">Mae’n ei ddangos yn aneglur nes i chi ei ddatgloi gyda’ch ôl bys, eich wyneb neu glo’r sgrin</string>
+    <string name="dejavu_workspace_no_history">Peidio â chadw hanes</string>
+    <string name="dejavu_workspace_no_history_summary">Nid yw tudalennau a agorir yma’n mynd i’r hanes, chwiliadau diweddar na thabiau a gaewyd yn ddiweddar</string>
+    <string name="dejavu_workspace_locked">Mae %1$s wedi’i gloi</string>
+    <string name="dejavu_workspace_unlock_title">Datgloi %1$s</string>
+    <string name="dejavu_workspace_locked_leave">Mynd i’r gweithleoedd</string>
+    <string name="dejavu_settings_workspace_lock">Cloi gweithleoedd</string>
+    <string name="dejavu_workspace_lock_hint">I gloi gweithle, tapiwch ei enw ar y sgrin gartref a throi “Cloi’r gweithle hwn” ymlaen. Mae’n cael ei ddangos yn aneglur nes i chi ei ddatgloi gyda’ch ôl bys, eich wyneb neu glo’r sgrin.</string>
+    <string name="dejavu_workspace_lock_when">Cloi eto</string>
+    <string name="dejavu_workspace_lock_on_switch">Pan fyddwch yn newid i weithle arall</string>
+    <string name="dejavu_workspace_lock_on_leave">Pan fyddwch yn gadael Dejavu</string>
+    <string name="dejavu_workspace_lock_after">%1$s ar ôl i chi adael Dejavu</string>
+    <string name="dejavu_workspace_lock_on_close">Pan fydd Dejavu’n cau</string>
 </resources>

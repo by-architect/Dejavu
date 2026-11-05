@@ -553,4 +553,18 @@
     <string name="dejavu_remote_debugging_summary">Dejavu qaytadan iske túskende qayta óshedi</string>
     <string name="dejavu_preference_mouse_support">Tıshqansha qollaw</string>
     <string name="dejavu_preference_mouse_support_summary">Ortańǵı túyme menen basıw siltemeni artqı fondaǵı bette ashadı, al siltemeniń ústine tıshqansha alıp barıw onıń mánzilin kórsetedi. Bet ústine ortańǵı túyme menen basıw onı jabadı.</string>
+    <string name="dejavu_workspace_lock">Bul jumıs maydanın qulıplaw</string>
+    <string name="dejavu_workspace_lock_summary">Barmaq izi, júz yamasa ekran qulıpı menen ashqanıńızsha onı bulıńǵır kórsetedi</string>
+    <string name="dejavu_workspace_no_history">Tariyxtı saqlamaw</string>
+    <string name="dejavu_workspace_no_history_summary">Bul jerde ashılǵan betler tariyxqa, sońǵı izlewlerge hám jaqında jabılǵan betlerge túspeydi</string>
+    <string name="dejavu_workspace_locked">«%1$s» qulıplanǵan</string>
+    <string name="dejavu_workspace_unlock_title">«%1$s» qulıpın ashıw</string>
+    <string name="dejavu_workspace_locked_leave">Jumıs maydanlarına ótiw</string>
+    <string name="dejavu_settings_workspace_lock">Jumıs maydanı qulıpı</string>
+    <string name="dejavu_workspace_lock_hint">Jumıs maydanın qulıplaw ushın bas ekranda onıń atın basıń hám «Bul jumıs maydanın qulıplaw» funkciyasın qosıń. Barmaq izi, júz yamasa ekran qulıpı menen ashqanıńızsha ol bulıńǵır kórinedi.</string>
+    <string name="dejavu_workspace_lock_when">Qayta qulıplaw</string>
+    <string name="dejavu_workspace_lock_on_switch">Basqa jumıs maydanına ótkenińizde</string>
+    <string name="dejavu_workspace_lock_on_leave">Dejavu’dan shıqqanıńızda</string>
+    <string name="dejavu_workspace_lock_after">Dejavu’dan shıqqannan %1$s keyin</string>
+    <string name="dejavu_workspace_lock_on_close">Dejavu jabılǵanda</string>
 </resources>

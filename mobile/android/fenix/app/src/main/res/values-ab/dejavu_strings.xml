@@ -553,4 +553,18 @@
     <string name="dejavu_remote_debugging_summary">Dejavu аиҭаартра ашьҭахь еиҭах иаҿыхуеит</string>
     <string name="dejavu_preference_mouse_support">Аҳәынаԥ арыцхыраара</string>
     <string name="dejavu_preference_mouse_support_summary">Аҳәынаԥ абжьаратәи ақәыӷәӷәара азхьарԥш абларҭа ҿыц аҿы иаанартуеит, азхьарԥш ахь аҳәынаԥ анаагалак уи аҭыԥ аарԥшуеит. Азхьарԥш аҿы аҳәынаԥ абжьаратәи ақәыӷәӷәара уи иаарыцәуеит.</string>
+    <string name="dejavu_workspace_lock">Ари аҭыԥ аркра</string>
+    <string name="dejavu_workspace_lock_summary">Ацәаԥшьа, ахаҿы, мамзар аекран аркыга ала иаашәыртлаанӡа илашьцаны ианаҭоит</string>
+    <string name="dejavu_workspace_no_history">Ахҭыс еиқәмырхалар</string>
+    <string name="dejavu_workspace_no_history_summary">Арааны иаарту адаҟьақәа ахҭыс, аԥшаарақәа ҿыцқәа, иахьатәи иаркыз абларҭақәа рахь инеиуам</string>
+    <string name="dejavu_workspace_locked">«%1$s» аркуп</string>
+    <string name="dejavu_workspace_unlock_title">«%1$s» аартра</string>
+    <string name="dejavu_workspace_locked_leave">Аҭыԥқәа рахь ииасра</string>
+    <string name="dejavu_settings_workspace_lock">Аҭыԥқәа раркра</string>
+    <string name="dejavu_workspace_lock_hint">Аҭыԥ аркразы аихагыла хада аҟны ахьӡ шәақәыӷәӷәа, нас «Ари аҭыԥ аркра» шәаҿаҵа. Ацәаԥшьа, ахаҿы, мамзар аекран аркыга ала иаашәыртлаанӡа илашьцаны ианубаалоит.</string>
+    <string name="dejavu_workspace_lock_when">Еиҭах аркра</string>
+    <string name="dejavu_workspace_lock_on_switch">Даҽа аҭыԥк ахь шәаниасуа</string>
+    <string name="dejavu_workspace_lock_on_leave">Dejavu шәанадәылҵуа</string>
+    <string name="dejavu_workspace_lock_after">Dejavu шәадәылҵны %1$s ашьҭахь</string>
+    <string name="dejavu_workspace_lock_on_close">Dejavu анаркуа</string>
 </resources>

@@ -545,4 +545,18 @@
     <string name="dejavu_remote_debugging_summary">Mademang malih rikala Dejavu kawitin malih</string>
     <string name="dejavu_preference_mouse_support">Dukungan mouse</string>
     <string name="dejavu_preference_mouse_support_summary">Klik tengah ngungkabang link ring tab latar, tur ngenahang mouse ring link ngedengang alamatnyane. Klik tengah ring tab nutup tab punika.</string>
+    <string name="dejavu_workspace_lock">Kunci genah puniki</string>
+    <string name="dejavu_workspace_lock_summary">Nyinahang buram kantos ida dané ngampakang antuk cap jriji, prarai, utawi kunci layar</string>
+    <string name="dejavu_workspace_no_history">Sampunang nyimpen riwayat</string>
+    <string name="dejavu_workspace_no_history_summary">Kaca sané kaungkabang iriki nénten macelep ka riwayat, rereh anyar, miwah tab sané wau kaserep</string>
+    <string name="dejavu_workspace_locked">%1$s kakunci</string>
+    <string name="dejavu_workspace_unlock_title">Ampakang kunci %1$s</string>
+    <string name="dejavu_workspace_locked_leave">Lunga ka genah</string>
+    <string name="dejavu_settings_workspace_lock">Kunci genah</string>
+    <string name="dejavu_workspace_lock_hint">Anggén ngunci genah, tekan wastannyané ring layar jero raris urip “Kunci genah puniki”. Genahé kacingak buram kantos ida dané ngampakang antuk cap jriji, prarai, utawi kunci layar.</string>
+    <string name="dejavu_workspace_lock_when">Kunci malih</string>
+    <string name="dejavu_workspace_lock_on_switch">Rikala ngentosin ka genah lianan</string>
+    <string name="dejavu_workspace_lock_on_leave">Rikala ngalinggahin Dejavu</string>
+    <string name="dejavu_workspace_lock_after">%1$s sasampun ngalinggahin Dejavu</string>
+    <string name="dejavu_workspace_lock_on_close">Rikala Dejavu kaserep</string>
 </resources>

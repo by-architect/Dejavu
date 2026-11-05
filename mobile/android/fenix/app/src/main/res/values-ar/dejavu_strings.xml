@@ -585,4 +585,18 @@
     <string name="dejavu_remote_debugging_summary">يتعطّل مجددًا عند إعادة تشغيل Dejavu</string>
     <string name="dejavu_preference_mouse_support">دعم الفأرة</string>
     <string name="dejavu_preference_mouse_support_summary">النقر بالزر الأوسط يفتح الرابط في تبويب في الخلفية، والمرور فوق الرابط يعرض عنوانه. النقر بالزر الأوسط على تبويب يغلقه.</string>
+    <string name="dejavu_workspace_lock">قفل مساحة العمل هذه</string>
+    <string name="dejavu_workspace_lock_summary">تظهر مموّهة حتى تفتحها ببصمة إصبعك أو وجهك أو قفل الشاشة</string>
+    <string name="dejavu_workspace_no_history">عدم حفظ التأريخ</string>
+    <string name="dejavu_workspace_no_history_summary">لا تدخل الصفحات المفتوحة هنا في التأريخ ولا في عمليات البحث الأخيرة ولا في الألسنة المغلقة مؤخرًا</string>
+    <string name="dejavu_workspace_locked">مساحة العمل «%1$s» مقفلة</string>
+    <string name="dejavu_workspace_unlock_title">فتح قفل «%1$s»</string>
+    <string name="dejavu_workspace_locked_leave">الذهاب إلى مساحات العمل</string>
+    <string name="dejavu_settings_workspace_lock">قفل مساحات العمل</string>
+    <string name="dejavu_workspace_lock_hint">لقفل مساحة عمل، المس اسمها في الشاشة الرئيسية وفعّل «قفل مساحة العمل هذه». تظهر مموّهة حتى تفتحها ببصمة إصبعك أو وجهك أو قفل الشاشة.</string>
+    <string name="dejavu_workspace_lock_when">القفل مجددًا</string>
+    <string name="dejavu_workspace_lock_on_switch">عند الانتقال إلى مساحة عمل أخرى</string>
+    <string name="dejavu_workspace_lock_on_leave">عند مغادرة Dejavu</string>
+    <string name="dejavu_workspace_lock_after">بعد %1$s من مغادرة Dejavu</string>
+    <string name="dejavu_workspace_lock_on_close">عند إغلاق Dejavu</string>
 </resources>

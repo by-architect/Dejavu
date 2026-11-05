@@ -553,4 +553,18 @@
     <string name="dejavu_remote_debugging_summary">Malŝaltiĝas denove kiam Dejavu rekomenciĝas</string>
     <string name="dejavu_preference_mouse_support">Subteno de muso</string>
     <string name="dejavu_preference_mouse_support_summary">Meza alklako malfermas ligilon en fona langeto, kaj ŝvebigi la muson super ligilo montras ĝian adreson. Meza alklako sur langeto fermas ĝin.</string>
+    <string name="dejavu_workspace_lock">Ŝlosi ĉi tiun laborspacon</string>
+    <string name="dejavu_workspace_lock_summary">Montras ĝin malklara ĝis vi malŝlosos ĝin per fingrospuro, vizaĝo aŭ ekranŝloso</string>
+    <string name="dejavu_workspace_no_history">Ne konservi historion</string>
+    <string name="dejavu_workspace_no_history_summary">Paĝoj malfermitaj ĉi tie ne aperas en la historio, lastaj serĉoj nek ĵus fermitaj langetoj</string>
+    <string name="dejavu_workspace_locked">%1$s estas ŝlosita</string>
+    <string name="dejavu_workspace_unlock_title">Malŝlosi %1$s</string>
+    <string name="dejavu_workspace_locked_leave">Iri al laborspacoj</string>
+    <string name="dejavu_settings_workspace_lock">Ŝlosado de laborspacoj</string>
+    <string name="dejavu_workspace_lock_hint">Por ŝlosi laborspacon, tuŝetu ĝian nomon en la ĉefa ekrano kaj aktivigu “Ŝlosi ĉi tiun laborspacon”. Ĝi aperas malklara ĝis vi malŝlosos ĝin per fingrospuro, vizaĝo aŭ ekranŝloso.</string>
+    <string name="dejavu_workspace_lock_when">Ŝlosi denove</string>
+    <string name="dejavu_workspace_lock_on_switch">Kiam vi iras al alia laborspaco</string>
+    <string name="dejavu_workspace_lock_on_leave">Kiam vi forlasas Dejavu</string>
+    <string name="dejavu_workspace_lock_after">%1$s post kiam vi forlasis Dejavu</string>
+    <string name="dejavu_workspace_lock_on_close">Kiam Dejavu fermiĝas</string>
 </resources>

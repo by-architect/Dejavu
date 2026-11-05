@@ -561,4 +561,18 @@
     <string name="dejavu_remote_debugging_summary">Se dexativa danovo co Dejavu el se reavia</string>
     <string name="dejavu_preference_mouse_support">Suporto par el sorze</string>
     <string name="dejavu_preference_mouse_support_summary">Un clic col boton de mezo el verze un colegamento inte na scheda in sfondo, e passar sora un colegamento el ghe mostra l\'indirizo. Un clic col boton de mezo sora na scheda la sara.</string>
+    <string name="dejavu_workspace_lock">Bloca sto spasio de laoro</string>
+    <string name="dejavu_workspace_lock_summary">Lo mostra sfocà fin che no te lo sbloche co l’inpronta, la facia o el bloco del schermo</string>
+    <string name="dejavu_workspace_no_history">No salvar ƚa cronoƚogìa</string>
+    <string name="dejavu_workspace_no_history_summary">Le pàxine verte qua no le va inte ƚa cronoƚogìa, inte le serche reçenti e inte le schede sarade da poco</string>
+    <string name="dejavu_workspace_locked">%1$s el xe blocà</string>
+    <string name="dejavu_workspace_unlock_title">Sbloca %1$s</string>
+    <string name="dejavu_workspace_locked_leave">Va ai spasi de laoro</string>
+    <string name="dejavu_settings_workspace_lock">Bloco dei spasi de laoro</string>
+    <string name="dejavu_workspace_lock_hint">Par blocar un spasio de laoro, toca el so nome inte ƚa schermada prinsipal e ativa «Bloca sto spasio de laoro». El vien mostrà sfocà fin che no te lo sbloche co l’inpronta, la facia o el bloco del schermo.</string>
+    <string name="dejavu_workspace_lock_when">Bloca da novo</string>
+    <string name="dejavu_workspace_lock_on_switch">Co te passi a n’altro spasio de laoro</string>
+    <string name="dejavu_workspace_lock_on_leave">Co te ve fora da Dejavu</string>
+    <string name="dejavu_workspace_lock_after">%1$s dopo che te si ndà fora da Dejavu</string>
+    <string name="dejavu_workspace_lock_on_close">Co Dejavu el se sara</string>
 </resources>

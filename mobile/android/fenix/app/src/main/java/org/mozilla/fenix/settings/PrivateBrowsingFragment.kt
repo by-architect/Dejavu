@@ -74,6 +74,8 @@ class PrivateBrowsingFragment : PreferenceFragmentCompat(), SystemInsetsPaddedFr
         requirePreference<SwitchPreferenceCompat>(R.string.pref_key_open_links_in_a_private_tab).apply {
             onPreferenceChangeListener = SharedPreferenceUpdater()
             isChecked = context.components.settings.openLinksInAPrivateTab
+            // Dejavu: chosen under Links from other apps, with the workspace and container links open in.
+            isVisible = false
         }
 
         requirePreference<SwitchPreferenceCompat>(R.string.pref_key_allow_screenshots_in_private_mode).apply {

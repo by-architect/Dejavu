@@ -553,4 +553,18 @@
     <string name="dejavu_remote_debugging_summary">Ñifoto kadi so Dejavu fuɗɗitii</string>
     <string name="dejavu_preference_mouse_support">Wallitorde doombru</string>
     <string name="dejavu_preference_mouse_support_summary">Dobo hakkunde ina uddita jokkol e tabbere caggal, kadi ɗaɓɓude doombru e dow jokkol ina hollira ñiiɓirde mayre. Dobo hakkunde e dow tabbere ina maaɗa ɗum.</string>
+    <string name="dejavu_workspace_lock">Verrouiller cet espace de travail</string>
+    <string name="dejavu_workspace_lock_summary">L’affiche flouté jusqu’à ce que vous le déverrouilliez avec votre empreinte, votre visage ou le verrouillage de l’écran</string>
+    <string name="dejavu_workspace_no_history">Ne pas enregistrer l’historique</string>
+    <string name="dejavu_workspace_no_history_summary">Les pages ouvertes ici restent hors de l’historique, des recherches récentes et des onglets récemment fermés</string>
+    <string name="dejavu_workspace_locked">%1$s est verrouillé</string>
+    <string name="dejavu_workspace_unlock_title">Déverrouiller %1$s</string>
+    <string name="dejavu_workspace_locked_leave">Aller aux espaces de travail</string>
+    <string name="dejavu_settings_workspace_lock">Verrouillage des espaces de travail</string>
+    <string name="dejavu_workspace_lock_hint">Pour verrouiller un espace de travail, touchez son nom sur l’écran d’accueil et activez « Verrouiller cet espace de travail ». Il s’affiche flouté jusqu’à ce que vous le déverrouilliez avec votre empreinte, votre visage ou le verrouillage de l’écran.</string>
+    <string name="dejavu_workspace_lock_when">Verrouiller à nouveau</string>
+    <string name="dejavu_workspace_lock_on_switch">Quand vous passez à un autre espace de travail</string>
+    <string name="dejavu_workspace_lock_on_leave">Quand vous quittez Dejavu</string>
+    <string name="dejavu_workspace_lock_after">%1$s après avoir quitté Dejavu</string>
+    <string name="dejavu_workspace_lock_on_close">Quand Dejavu se ferme</string>
 </resources>

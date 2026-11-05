@@ -553,4 +553,18 @@
     <string name="dejavu_remote_debugging_summary">کله چې Dejavu بیا پیل شي، بېرته بندېږي</string>
     <string name="dejavu_preference_mouse_support">د موږک ملاتړ</string>
     <string name="dejavu_preference_mouse_support_summary">د منځني تڼۍ کلیک یوه تړنه په شالید ټب کې پرانیزي، او په تړنه باندې د موږک ساتل یې پته ښيي. په ټب باندې د منځنې تڼۍ کلیک هغه تړي.</string>
+    <string name="dejavu_workspace_lock">دا ساحه قلف کړئ</string>
+    <string name="dejavu_workspace_lock_summary">تر هغه یې تت ښيي چې د ګوتې نښې، مخ یا د پردې قلف سره یې خلاص کړئ</string>
+    <string name="dejavu_workspace_no_history">تاریخچه مه ساتئ</string>
+    <string name="dejavu_workspace_no_history_summary">دلته پرانیستل شوې پاڼې تاریخچې، وروستیو لټونونو او وروستیو تړل شویو ټبونو ته نه ځي</string>
+    <string name="dejavu_workspace_locked">«%1$s» قلف دی</string>
+    <string name="dejavu_workspace_unlock_title">«%1$s» خلاص کړئ</string>
+    <string name="dejavu_workspace_locked_leave">ساحو ته ورشئ</string>
+    <string name="dejavu_settings_workspace_lock">د ساحې قلف</string>
+    <string name="dejavu_workspace_lock_hint">د یوې ساحې د قلفولو لپاره، په کور پرده یې په نوم ټک وکړئ او «دا ساحه قلف کړئ» چالان کړئ. تر هغه تته ښکاري چې د ګوتې نښې، مخ یا د پردې قلف سره یې خلاص کړئ.</string>
+    <string name="dejavu_workspace_lock_when">بیا قلف کړئ</string>
+    <string name="dejavu_workspace_lock_on_switch">کله چې بلې ساحې ته ځئ</string>
+    <string name="dejavu_workspace_lock_on_leave">کله چې له Dejavu څخه وځئ</string>
+    <string name="dejavu_workspace_lock_after">له Dejavu څخه د وتلو %1$s وروسته</string>
+    <string name="dejavu_workspace_lock_on_close">کله چې Dejavu بندېږي</string>
 </resources>

@@ -569,4 +569,18 @@
     <string name="dejavu_remote_debugging_summary">Зноў выключаецца пасля перазапуску Dejavu</string>
     <string name="dejavu_preference_mouse_support">Падтрымка мышы</string>
     <string name="dejavu_preference_mouse_support_summary">Націсканне сярэдняй кнопкай адкрывае спасылку ў фонавай картцы, а навядзенне на спасылку паказвае яе адрас. Націсканне сярэдняй кнопкай на картцы закрывае яе.</string>
+    <string name="dejavu_workspace_lock">Заблакаваць гэту прастору</string>
+    <string name="dejavu_workspace_lock_summary">Паказвае яе размытай, пакуль вы не разблакуеце яе адбіткам пальца, тварам або блакіроўкай экрана</string>
+    <string name="dejavu_workspace_no_history">Не захоўваць гісторыю</string>
+    <string name="dejavu_workspace_no_history_summary">Старонкі, адкрытыя тут, не трапляюць у гісторыю, нядаўнія пошукі і нядаўна закрытыя карткі</string>
+    <string name="dejavu_workspace_locked">Прастора «%1$s» заблакавана</string>
+    <string name="dejavu_workspace_unlock_title">Разблакаваць «%1$s»</string>
+    <string name="dejavu_workspace_locked_leave">Да прастор</string>
+    <string name="dejavu_settings_workspace_lock">Блакіроўка прастор</string>
+    <string name="dejavu_workspace_lock_hint">Каб заблакаваць прастору, націсніце на яе назву на галоўным экране і ўключыце «Заблакаваць гэту прастору». Яна паказваецца размытай, пакуль вы не разблакуеце яе адбіткам пальца, тварам або блакіроўкай экрана.</string>
+    <string name="dejavu_workspace_lock_when">Блакаваць зноў</string>
+    <string name="dejavu_workspace_lock_on_switch">Пры пераходзе ў іншую прастору</string>
+    <string name="dejavu_workspace_lock_on_leave">Пры выхадзе з Dejavu</string>
+    <string name="dejavu_workspace_lock_after">%1$s пасля выхаду з Dejavu</string>
+    <string name="dejavu_workspace_lock_on_close">Пры закрыцці Dejavu</string>
 </resources>

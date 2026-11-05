@@ -553,4 +553,18 @@
     <string name="dejavu_remote_debugging_summary">Dejavu دوبارہ شروع مننگ آ پدا بند مریک</string>
     <string name="dejavu_preference_mouse_support">ماؤس نا مدد</string>
     <string name="dejavu_preference_mouse_support_summary">درمیانی بٹن آن کلک کننگ لنک اے پد نا ٹیب اٹ ملیک، و لنک نا مونا ماؤس اے بننگ اونا پتہ اے پیش کیک۔ ٹیب آ درمیانی بٹن اٹ کلک کننگ اونا بند کیک۔</string>
+    <string name="dejavu_workspace_lock">دا ورک سپیس ئے لاک کبو</string>
+    <string name="dejavu_workspace_lock_summary">فنگر پرنٹ، مونہہ یا سکرین لاک اٹ انلاک کننگ اسکان دا دھندلا تور تننگ ئے</string>
+    <string name="dejavu_workspace_no_history">تاریخچہ ئے سانبھ کپبو</string>
+    <string name="dejavu_workspace_no_history_summary">ادے ملوکا صفحہ غاک تاریخچہ، تازہ پٹ و پول و تازہ بند مسوکا ٹیب آتے ٹی پاپسرہ</string>
+    <string name="dejavu_workspace_locked">%1$s لاک ئے</string>
+    <string name="dejavu_workspace_unlock_title">%1$s ئے انلاک کبو</string>
+    <string name="dejavu_workspace_locked_leave">ورک سپیس آتے آ کابو</string>
+    <string name="dejavu_settings_workspace_lock">ورک سپیس نا لاک</string>
+    <string name="dejavu_workspace_lock_hint">ورک سپیس ئس لاک کننگ کن ہوم سکرین آ ہمونا پن آ ٹیپ کبو و “دا ورک سپیس ئے لاک کبو” ئے چالو کبو۔ فنگر پرنٹ، مونہہ یا سکرین لاک اٹ انلاک کننگ اسکان دا دھندلا تور خنینگک۔</string>
+    <string name="dejavu_workspace_lock_when">پدا لاک کبو</string>
+    <string name="dejavu_workspace_lock_on_switch">ہراتم نی ایلو ورک سپیس ئسے آ کاسہ</string>
+    <string name="dejavu_workspace_lock_on_leave">ہراتم نی Dejavu ئے ایلہ کیسہ</string>
+    <string name="dejavu_workspace_lock_after">Dejavu ئے ایلہ کننگ آن %1$s پد</string>
+    <string name="dejavu_workspace_lock_on_close">ہراتم Dejavu بند مریک</string>
 </resources>

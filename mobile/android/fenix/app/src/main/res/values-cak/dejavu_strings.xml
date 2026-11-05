@@ -553,4 +553,18 @@
     <string name="dejavu_remote_debugging_summary">Nichup chik toq nitikïr chik ri Dejavu</string>
     <string name="dejavu_preference_mouse_support">Ruto\'ik ri ch\'oy</string>
     <string name="dejavu_preference_mouse_support_summary">Toq napitz\'ij ri nik\'aj rupitz\'b\'al, nujäq jun ximonel pa jun ruwi\' chi rij, chuqa\' toq nanuk\' ri ch\'oy pa ruwi\' jun ximonel, nuk\'üt ri rochochib\'al. Toq napitz\'ij ri nik\'aj rupitz\'b\'al pa jun ruwi\', nutz\'apij.</string>
+    <string name="dejavu_workspace_lock">Tatz’apij re samajib’äl re’</string>
+    <string name="dejavu_workspace_lock_summary">Nuk’üt chi man niq’alajin ta k’a tajaqa’ rik’in ri ruchumil awi’q’ab’, ri apalaj o ri rutz’apib’al ruwa kematz’ib’</string>
+    <string name="dejavu_workspace_no_history">Man tayak ri natab’äl</string>
+    <string name="dejavu_workspace_no_history_summary">Ri taq ruxaq e’aj wawe’ man ye’ok ta pa natab’äl, pa ri taq kanoxïk k’a ja’ xb’an chuqa’ pa ri taq ruwi’ k’a ja’ xetz’apïx</string>
+    <string name="dejavu_workspace_locked">Xtz’apïx %1$s</string>
+    <string name="dejavu_workspace_unlock_title">Tajaqa’ %1$s</string>
+    <string name="dejavu_workspace_locked_leave">Jät pa taq samajib’äl</string>
+    <string name="dejavu_settings_workspace_lock">Rutz’apib’al taq samajib’äl</string>
+    <string name="dejavu_workspace_lock_hint">Richin natz’apij jun samajib’äl, tachapa’ rub’i’ pa rutikirib’al ruwa kematz’ib’ chuqa’ tatzija’ “Tatz’apij re samajib’äl re’”. Nuk’üt chi man niq’alajin ta k’a tajaqa’ rik’in ri ruchumil awi’q’ab’, ri apalaj o ri rutz’apib’al ruwa kematz’ib’.</string>
+    <string name="dejavu_workspace_lock_when">Tatz’apij chik</string>
+    <string name="dejavu_workspace_lock_on_switch">Toq nak’ëx pa jun chik samajib’äl</string>
+    <string name="dejavu_workspace_lock_on_leave">Toq ye’el pa Dejavu</string>
+    <string name="dejavu_workspace_lock_after">%1$s toq xatel pa Dejavu</string>
+    <string name="dejavu_workspace_lock_on_close">Toq nitz’apïx Dejavu</string>
 </resources>

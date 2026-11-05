@@ -553,4 +553,18 @@
     <string name="dejavu_remote_debugging_summary">Lülitub Dejavu taaskäivitamisel uuesti välja</string>
     <string name="dejavu_preference_mouse_support">Hiire tugi</string>
     <string name="dejavu_preference_mouse_support_summary">Keskmise nupuga klõps avab lingi taustal uuel kaardil ja lingi kohal hõljumine näitab selle aadressi. Keskmise nupuga klõps kaardil sulgeb selle.</string>
+    <string name="dejavu_workspace_lock">Lukusta see tööruum</string>
+    <string name="dejavu_workspace_lock_summary">Näitab seda hägusana, kuni avad selle sõrmejälje, näo või ekraanilukuga</string>
+    <string name="dejavu_workspace_no_history">Ära salvesta ajalugu</string>
+    <string name="dejavu_workspace_no_history_summary">Siin avatud lehed ei jõua ajalukku, hiljutistesse otsingutesse ega hiljuti suletud kaartidele</string>
+    <string name="dejavu_workspace_locked">%1$s on lukus</string>
+    <string name="dejavu_workspace_unlock_title">Ava %1$s</string>
+    <string name="dejavu_workspace_locked_leave">Mine tööruumidesse</string>
+    <string name="dejavu_settings_workspace_lock">Tööruumide lukk</string>
+    <string name="dejavu_workspace_lock_hint">Tööruumi lukustamiseks puuduta avakuval selle nime ja lülita sisse „Lukusta see tööruum“. Seda näidatakse hägusana, kuni avad selle sõrmejälje, näo või ekraanilukuga.</string>
+    <string name="dejavu_workspace_lock_when">Lukusta uuesti</string>
+    <string name="dejavu_workspace_lock_on_switch">Kui lähed teise tööruumi</string>
+    <string name="dejavu_workspace_lock_on_leave">Kui lahkud Dejavust</string>
+    <string name="dejavu_workspace_lock_after">%1$s pärast Dejavust lahkumist</string>
+    <string name="dejavu_workspace_lock_on_close">Kui Dejavu suletakse</string>
 </resources>

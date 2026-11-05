@@ -569,4 +569,18 @@
     <string name="dejavu_remote_debugging_summary">Po reštarte Dejavu sa opäť vypne</string>
     <string name="dejavu_preference_mouse_support">Podpora myši</string>
     <string name="dejavu_preference_mouse_support_summary">Kliknutie stredným tlačidlom otvorí odkaz na karte na pozadí a umiestnenie kurzora na odkaz zobrazí jeho adresu. Kliknutie stredným tlačidlom na kartu ju zatvorí.</string>
+    <string name="dejavu_workspace_lock">Zamknúť tento pracovný priestor</string>
+    <string name="dejavu_workspace_lock_summary">Zobrazí ho rozmazaný, kým ho neodomknete odtlačkom prsta, tvárou alebo zámkou obrazovky</string>
+    <string name="dejavu_workspace_no_history">Neukladať históriu</string>
+    <string name="dejavu_workspace_no_history_summary">Stránky otvorené tu sa neukladajú do histórie, nedávnych vyhľadávaní ani nedávno zatvorených kariet</string>
+    <string name="dejavu_workspace_locked">Pracovný priestor „%1$s“ je zamknutý</string>
+    <string name="dejavu_workspace_unlock_title">Odomknúť „%1$s“</string>
+    <string name="dejavu_workspace_locked_leave">Prejsť na pracovné priestory</string>
+    <string name="dejavu_settings_workspace_lock">Zámka pracovných priestorov</string>
+    <string name="dejavu_workspace_lock_hint">Pracovný priestor zamknete tak, že na domovskej obrazovke ťuknete na jeho názov a zapnete „Zamknúť tento pracovný priestor“. Zobrazuje sa rozmazaný, kým ho neodomknete odtlačkom prsta, tvárou alebo zámkou obrazovky.</string>
+    <string name="dejavu_workspace_lock_when">Znova zamknúť</string>
+    <string name="dejavu_workspace_lock_on_switch">Pri prepnutí na iný pracovný priestor</string>
+    <string name="dejavu_workspace_lock_on_leave">Pri odchode z Dejavu</string>
+    <string name="dejavu_workspace_lock_after">%1$s po odchode z Dejavu</string>
+    <string name="dejavu_workspace_lock_on_close">Pri zatvorení Dejavu</string>
 </resources>

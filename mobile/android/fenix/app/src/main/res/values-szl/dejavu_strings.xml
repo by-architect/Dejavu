@@ -569,4 +569,18 @@
     <string name="dejavu_remote_debugging_summary">Wyłōnczo sie zaś po ponownym sztarcie Dejavu</string>
     <string name="dejavu_preference_mouse_support">Spiyranie mysze</string>
     <string name="dejavu_preference_mouse_support_summary">Klikniyncie postrzodkowym knefliym ôtwiyro link we karcie w tle, a najechanie na link pokazuje jego adresa. Klikniyncie postrzodkowym knefliym na karcie zamyko ja.</string>
+    <string name="dejavu_workspace_lock">Zablokuj tyn plac</string>
+    <string name="dejavu_workspace_lock_summary">Pokazuje go rozmazanego, aże go ôdblokujesz ôdciskym palca, gębom abo blokadom ekranu</string>
+    <string name="dejavu_workspace_no_history">Niy spamiyntuj historyje</string>
+    <string name="dejavu_workspace_no_history_summary">Strōny ôtwarte sam niy trefiajōm do historyje, ôstatnich szukań ani ôstatnio zawartych kart</string>
+    <string name="dejavu_workspace_locked">Plac „%1$s” je zablokowany</string>
+    <string name="dejavu_workspace_unlock_title">Ôdblokuj „%1$s”</string>
+    <string name="dejavu_workspace_locked_leave">Idź do placōw</string>
+    <string name="dejavu_settings_workspace_lock">Blokada placōw</string>
+    <string name="dejavu_workspace_lock_hint">Coby zablokować plac, tyknij jego miano na przodnim ekranie i załōnacz „Zablokuj tyn plac”. Je pokazowany rozmazany, aże go ôdblokujesz ôdciskym palca, gębom abo blokadom ekranu.</string>
+    <string name="dejavu_workspace_lock_when">Zablokuj zaś</string>
+    <string name="dejavu_workspace_lock_on_switch">Kej przejdziesz na inkszy plac</string>
+    <string name="dejavu_workspace_lock_on_leave">Kej wyjdziesz z Dejavu</string>
+    <string name="dejavu_workspace_lock_after">%1$s po wyjściu z Dejavu</string>
+    <string name="dejavu_workspace_lock_on_close">Kej Dejavu sie zawrze</string>
 </resources>

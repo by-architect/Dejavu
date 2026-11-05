@@ -569,4 +569,18 @@
     <string name="dejavu_remote_debugging_summary">Ob ponovnem zagonu Dejavuja se znova izklopi</string>
     <string name="dejavu_preference_mouse_support">Podpora za miško</string>
     <string name="dejavu_preference_mouse_support_summary">Klik s srednjim gumbom odpre povezavo v zavihku v ozadju, premik miške nad povezavo pa prikaže njen naslov. Klik s srednjim gumbom na zavihek ga zapre.</string>
+    <string name="dejavu_workspace_lock">Zakleni ta delovni prostor</string>
+    <string name="dejavu_workspace_lock_summary">Prikaže ga zamegljenega, dokler ga ne odklenete s prstnim odtisom, obrazom ali zaklepom zaslona</string>
+    <string name="dejavu_workspace_no_history">Ne shranjuj zgodovine</string>
+    <string name="dejavu_workspace_no_history_summary">Strani, odprte tukaj, ostanejo zunaj zgodovine, nedavnih iskanj in nedavno zaprtih zavihkov</string>
+    <string name="dejavu_workspace_locked">Delovni prostor »%1$s« je zaklenjen</string>
+    <string name="dejavu_workspace_unlock_title">Odkleni »%1$s«</string>
+    <string name="dejavu_workspace_locked_leave">Pojdi na delovne prostore</string>
+    <string name="dejavu_settings_workspace_lock">Zaklep delovnih prostorov</string>
+    <string name="dejavu_workspace_lock_hint">Če želite zakleniti delovni prostor, tapnite njegovo ime na začetnem zaslonu in vklopite »Zakleni ta delovni prostor«. Prikazan je zamegljen, dokler ga ne odklenete s prstnim odtisom, obrazom ali zaklepom zaslona.</string>
+    <string name="dejavu_workspace_lock_when">Ponovno zakleni</string>
+    <string name="dejavu_workspace_lock_on_switch">Ko preklopite na drug delovni prostor</string>
+    <string name="dejavu_workspace_lock_on_leave">Ko zapustite Dejavu</string>
+    <string name="dejavu_workspace_lock_after">%1$s po izhodu iz Dejavuja</string>
+    <string name="dejavu_workspace_lock_on_close">Ko se Dejavu zapre</string>
 </resources>

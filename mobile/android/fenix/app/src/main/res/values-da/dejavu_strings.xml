@@ -553,4 +553,18 @@
     <string name="dejavu_remote_debugging_summary">Slås fra igen, når Dejavu genstarter</string>
     <string name="dejavu_preference_mouse_support">Understøttelse af mus</string>
     <string name="dejavu_preference_mouse_support_summary">Et klik med midterknappen åbner et link i et faneblad i baggrunden, og når du holder markøren over et link, vises dets adresse. Et klik med midterknappen på et faneblad lukker det.</string>
+    <string name="dejavu_workspace_lock">Lås dette arbejdsområde</string>
+    <string name="dejavu_workspace_lock_summary">Viser det sløret, indtil du låser det op med fingeraftryk, ansigt eller skærmlås</string>
+    <string name="dejavu_workspace_no_history">Gem ikke historik</string>
+    <string name="dejavu_workspace_no_history_summary">Sider åbnet her kommer ikke med i historikken, de seneste søgninger eller nyligt lukkede faneblade</string>
+    <string name="dejavu_workspace_locked">%1$s er låst</string>
+    <string name="dejavu_workspace_unlock_title">Lås %1$s op</string>
+    <string name="dejavu_workspace_locked_leave">Gå til arbejdsområderne</string>
+    <string name="dejavu_settings_workspace_lock">Lås for arbejdsområder</string>
+    <string name="dejavu_workspace_lock_hint">Tryk på et arbejdsområdes navn på startskærmen, og slå “Lås dette arbejdsområde” til for at låse det. Det vises sløret, indtil du låser det op med fingeraftryk, ansigt eller skærmlås.</string>
+    <string name="dejavu_workspace_lock_when">Lås igen</string>
+    <string name="dejavu_workspace_lock_on_switch">Når du skifter til et andet arbejdsområde</string>
+    <string name="dejavu_workspace_lock_on_leave">Når du forlader Dejavu</string>
+    <string name="dejavu_workspace_lock_after">%1$s efter du har forladt Dejavu</string>
+    <string name="dejavu_workspace_lock_on_close">Når Dejavu lukkes</string>
 </resources>

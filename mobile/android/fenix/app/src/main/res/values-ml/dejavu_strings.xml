@@ -553,4 +553,18 @@
     <string name="dejavu_remote_debugging_summary">Dejavu പുനരാരംഭിക്കുമ്പോൾ വീണ്ടും ഓഫാകും</string>
     <string name="dejavu_preference_mouse_support">മൗസ് പിന്തുണ</string>
     <string name="dejavu_preference_mouse_support_summary">നടുവിലെ ബട്ടൺ ക്ലിക്ക് ചെയ്താൽ ലിങ്ക് പശ്ചാത്തല ടാബിൽ തുറക്കും, ലിങ്കിനു മുകളിൽ പോയിന്റർ വെച്ചാൽ അതിന്റെ വിലാസം കാണിക്കും. ടാബിൽ നടുവിലെ ബട്ടൺ ക്ലിക്ക് ചെയ്താൽ അത് അടയ്ക്കും.</string>
+    <string name="dejavu_workspace_lock">ഈ പണിയിടം പൂട്ടുക</string>
+    <string name="dejavu_workspace_lock_summary">വിരലടയാളം, മുഖം അല്ലെങ്കിൽ സ്ക്രീൻ ലോക്ക് ഉപയോഗിച്ച് തുറക്കുന്നതുവരെ മങ്ങിച്ച് കാണിക്കുന്നു</string>
+    <string name="dejavu_workspace_no_history">നാള്‍വഴി സൂക്ഷിക്കരുത്</string>
+    <string name="dejavu_workspace_no_history_summary">ഇവിടെ തുറക്കുന്ന താളുകൾ നാള്‍വഴിയിലും സമീപകാല തിരച്ചിലുകളിലും അടുത്തിടെ അടച്ച ടാബുകളിലും വരില്ല</string>
+    <string name="dejavu_workspace_locked">%1$s പൂട്ടിയിരിക്കുന്നു</string>
+    <string name="dejavu_workspace_unlock_title">%1$s തുറക്കുക</string>
+    <string name="dejavu_workspace_locked_leave">പണിയിടങ്ങളിലേക്ക് പോകുക</string>
+    <string name="dejavu_settings_workspace_lock">പണിയിട പൂട്ട്</string>
+    <string name="dejavu_workspace_lock_hint">ഒരു പണിയിടം പൂട്ടാൻ, ഹോം സ്ക്രീനിൽ അതിന്റെ പേരിൽ തൊട്ട് “ഈ പണിയിടം പൂട്ടുക” ഓണാക്കുക. വിരലടയാളം, മുഖം അല്ലെങ്കിൽ സ്ക്രീൻ ലോക്ക് ഉപയോഗിച്ച് തുറക്കുന്നതുവരെ അത് മങ്ങിച്ച് കാണിക്കും.</string>
+    <string name="dejavu_workspace_lock_when">വീണ്ടും പൂട്ടുക</string>
+    <string name="dejavu_workspace_lock_on_switch">മറ്റൊരു പണിയിടത്തിലേക്ക് മാറുമ്പോൾ</string>
+    <string name="dejavu_workspace_lock_on_leave">Dejavu വിടുമ്പോൾ</string>
+    <string name="dejavu_workspace_lock_after">Dejavu വിട്ട് %1$s കഴിഞ്ഞ്</string>
+    <string name="dejavu_workspace_lock_on_close">Dejavu അടയ്ക്കുമ്പോൾ</string>
 </resources>

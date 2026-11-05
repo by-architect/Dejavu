@@ -17,6 +17,7 @@
     <string name="pref_key_dejavu_tabs_workspaces" translatable="false">pref_key_dejavu_tabs_workspaces</string>
     <string name="pref_key_dejavu_bars" translatable="false">pref_key_dejavu_bars</string>
     <string name="pref_key_dejavu_passwords_language" translatable="false">pref_key_dejavu_passwords_language</string>
+    <string name="pref_key_dejavu_workspace_lock" translatable="false">pref_key_dejavu_workspace_lock</string>
     <!-- Name of Mozilla's browser, for texts about Mozilla's own services like Firefox Suggest. -->
     <string name="dejavu_firefox_name" translatable="false" tools:ignore="BrandUsage">Firefox</string>
 
@@ -919,4 +920,32 @@
     <string name="dejavu_preference_mouse_support">Mouse support</string>
     <!-- Setting summary of the mouse support switch. -->
     <string name="dejavu_preference_mouse_support_summary">Middle-click opens a link in a background tab, and hovering a link shows its address. Middle-click on a tab closes it.</string>
+    <!-- Switch in the dialog that edits a workspace, under "Privacy and security": the workspace shows blurred, and its tabs covered, until it is unlocked. -->
+    <string name="dejavu_workspace_lock">Lock this workspace</string>
+    <!-- Text under "Lock this workspace" in the dialog that edits a workspace. -->
+    <string name="dejavu_workspace_lock_summary">Shows it blurred until you unlock it with your fingerprint, face or screen lock</string>
+    <!-- Switch in the dialog that edits a workspace, under "Privacy and security": the pages its tabs open are not saved. -->
+    <string name="dejavu_workspace_no_history">Don\'t save history</string>
+    <!-- Text under "Don't save history" in the dialog that edits a workspace. -->
+    <string name="dejavu_workspace_no_history_summary">Pages opened here stay out of history, recent searches and recently closed tabs</string>
+    <!-- Over a locked workspace, and over a tab of it. %1$s is the name of the workspace. -->
+    <string name="dejavu_workspace_locked">%1$s is locked</string>
+    <!-- Title of the fingerprint, face or screen lock prompt that unlocks a workspace. %1$s is the name of the workspace. -->
+    <string name="dejavu_workspace_unlock_title">Unlock %1$s</string>
+    <!-- Button over a tab of a locked workspace that goes back to the workspaces on the home screen. -->
+    <string name="dejavu_workspace_locked_leave">Go to workspaces</string>
+    <!-- Setting under "Privacy and security", and the title of its screen: when unlocked workspaces lock again. -->
+    <string name="dejavu_settings_workspace_lock">Workspace lock</string>
+    <!-- Text at the top of the "Workspace lock" settings screen. -->
+    <string name="dejavu_workspace_lock_hint">To lock a workspace, tap its name on the home screen and turn on Lock this workspace. It shows blurred until you unlock it with your fingerprint, face or screen lock.</string>
+    <!-- Header of the choices of when unlocked workspaces lock again. -->
+    <string name="dejavu_workspace_lock_when">Lock again</string>
+    <!-- Choice of when unlocked workspaces lock again. -->
+    <string name="dejavu_workspace_lock_on_switch">When you switch to another workspace</string>
+    <!-- Choice of when unlocked workspaces lock again: as soon as the user leaves the app. -->
+    <string name="dejavu_workspace_lock_on_leave">When you leave Dejavu</string>
+    <!-- Choice of when unlocked workspaces lock again. %1$s is a time like "5 minutes", already in the user's language. -->
+    <string name="dejavu_workspace_lock_after">%1$s after you leave Dejavu</string>
+    <!-- Choice of when unlocked workspaces lock again: only when the app is closed. -->
+    <string name="dejavu_workspace_lock_on_close">When Dejavu closes</string>
 </resources>

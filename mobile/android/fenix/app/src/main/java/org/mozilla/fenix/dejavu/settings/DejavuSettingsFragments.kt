@@ -4,6 +4,10 @@
 
 package org.mozilla.fenix.dejavu.settings
 
+import android.content.Context
+import android.icu.text.MeasureFormat
+import android.icu.util.Measure
+import android.icu.util.MeasureUnit
 import android.os.Bundle
 import android.os.StrictMode
 import android.view.LayoutInflater
@@ -43,6 +47,7 @@ import androidx.compose.ui.platform.ComposeView
 import androidx.compose.ui.platform.ViewCompositionStrategy
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.pluralStringResource
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import androidx.fragment.app.Fragment
@@ -77,6 +82,8 @@ import org.mozilla.fenix.dejavu.ui.DejavuDialog
 import org.mozilla.fenix.dejavu.ui.DejavuDialogButton
 import org.mozilla.fenix.dejavu.ui.LocalPopupTheme
 import org.mozilla.fenix.dejavu.ui.workspacePopupTheme
+import org.mozilla.fenix.dejavu.workspaces.WorkspaceLock
+import org.mozilla.fenix.dejavu.workspaces.WorkspaceLockTime
 import org.mozilla.fenix.dejavu.workspaces.WorkspaceRepository
 import org.mozilla.fenix.e2e.SystemInsetsPaddedFragment
 import org.mozilla.fenix.ext.requireComponents
@@ -584,6 +591,45 @@ class DejavuTabSleepFragment : DejavuComposeFragment(R.string.dejavu_settings_ta
         )
     }
 }
+
+/** Chooses when the locked workspaces the user unlocked lock again, see [WorkspaceLock]. */
+class DejavuWorkspaceLockFragment : DejavuComposeFragment(R.string.dejavu_settings_workspace_lock) {
+    @Composable
+    override fun DejavuScreen() {
+        val settings = remember { dejavuSettings() }
+        val context = LocalContext.current
+        val chosen by settings.workspaceLockTime.collectAsState()
+        val choices = WorkspaceLockTime.entries
+        Column(modifier = Modifier.fillMaxSize().verticalScroll(rememberScrollState())) {
+            SettingsHint(stringResource(R.string.dejavu_workspace_lock_hint))
+            SettingsHeader(stringResource(R.string.dejavu_workspace_lock_when))
+            choices.forEachIndexed { index, choice ->
+                SettingsChoiceRow(
+                    label = workspaceLockLabel(context, choice),
+                    selected = chosen == choice,
+                    modifier = Modifier.settingsCard(index, choices.size),
+                    onClick = { settings.setWorkspaceLockTime(choice) },
+                )
+            }
+            Spacer(Modifier.height(24.dp))
+        }
+    }
+}
+
+/** How [time] reads in the settings, like "5 minutes after you leave Dejavu", the time in the words of the language. */
+internal fun workspaceLockLabel(context: Context, time: WorkspaceLockTime): String = when (time) {
+    WorkspaceLockTime.SWITCH -> context.getString(R.string.dejavu_workspace_lock_on_switch)
+    WorkspaceLockTime.LEAVE -> context.getString(R.string.dejavu_workspace_lock_on_leave)
+    WorkspaceLockTime.CLOSE -> context.getString(R.string.dejavu_workspace_lock_on_close)
+    else -> {
+        val minutes = (time.awayMillis ?: 0L) / MILLIS_PER_MINUTE
+        val away = MeasureFormat.getInstance(context.resources.configuration.locales[0], MeasureFormat.FormatWidth.WIDE)
+            .format(Measure(minutes, MeasureUnit.MINUTE))
+        context.getString(R.string.dejavu_workspace_lock_after, away)
+    }
+}
+
+private const val MILLIS_PER_MINUTE = 60_000L
 
 /** Chooses the workspace and container that links from other apps open in. */
 class DejavuExternalLinksFragment : DejavuComposeFragment(R.string.dejavu_settings_external_links) {

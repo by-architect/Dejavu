@@ -553,4 +553,18 @@
     <string name="dejavu_remote_debugging_summary">Poistuu taas käytöstä, kun Dejavu käynnistyy uudelleen</string>
     <string name="dejavu_preference_mouse_support">Hiiren tuki</string>
     <string name="dejavu_preference_mouse_support_summary">Keskipainikkeen napsautus avaa linkin taustavälilehteen, ja hiiren pitäminen linkin päällä näyttää sen osoitteen. Välilehden napsautus keskipainikkeella sulkee sen.</string>
+    <string name="dejavu_workspace_lock">Lukitse tämä työtila</string>
+    <string name="dejavu_workspace_lock_summary">Näyttää sen sumeana, kunnes avaat sen sormenjäljellä, kasvoilla tai näytön lukituksella</string>
+    <string name="dejavu_workspace_no_history">Älä tallenna historiaa</string>
+    <string name="dejavu_workspace_no_history_summary">Täällä avatut sivut eivät päädy historiaan, viimeaikaisiin hakuihin eivätkä äskettäin suljettuihin välilehtiin</string>
+    <string name="dejavu_workspace_locked">%1$s on lukittu</string>
+    <string name="dejavu_workspace_unlock_title">Avaa %1$s</string>
+    <string name="dejavu_workspace_locked_leave">Siirry työtiloihin</string>
+    <string name="dejavu_settings_workspace_lock">Työtilojen lukitus</string>
+    <string name="dejavu_workspace_lock_hint">Lukitse työtila napauttamalla sen nimeä aloitusnäytössä ja ottamalla käyttöön ”Lukitse tämä työtila”. Se näkyy sumeana, kunnes avaat sen sormenjäljellä, kasvoilla tai näytön lukituksella.</string>
+    <string name="dejavu_workspace_lock_when">Lukitse uudelleen</string>
+    <string name="dejavu_workspace_lock_on_switch">Kun siirryt toiseen työtilaan</string>
+    <string name="dejavu_workspace_lock_on_leave">Kun poistut Dejavusta</string>
+    <string name="dejavu_workspace_lock_after">%1$s Dejavusta poistumisen jälkeen</string>
+    <string name="dejavu_workspace_lock_on_close">Kun Dejavu suljetaan</string>
 </resources>

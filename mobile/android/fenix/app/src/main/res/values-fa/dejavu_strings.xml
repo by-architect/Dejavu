@@ -553,4 +553,18 @@
     <string name="dejavu_remote_debugging_summary">با راه‌اندازی دوبارهٔ Dejavu دوباره خاموش می‌شود</string>
     <string name="dejavu_preference_mouse_support">پشتیبانی از موشواره</string>
     <string name="dejavu_preference_mouse_support_summary">کلیک وسط پیوند را در یک زبانهٔ پس‌زمینه باز می‌کند و نگه داشتن نشانگر روی پیوند نشانی آن را نشان می‌دهد. کلیک وسط روی یک زبانه آن را می‌بندد.</string>
+    <string name="dejavu_workspace_lock">قفل کردن این فضای کاری</string>
+    <string name="dejavu_workspace_lock_summary">آن را تار نشان می‌دهد تا وقتی با اثر انگشت، چهره یا قفل صفحه بازش کنید</string>
+    <string name="dejavu_workspace_no_history">تاریخچه ذخیره نشود</string>
+    <string name="dejavu_workspace_no_history_summary">صفحه‌هایی که اینجا باز می‌شوند در تاریخچه، جست‌وجوهای اخیر و زبانه‌های تازه بسته‌شده نمی‌آیند</string>
+    <string name="dejavu_workspace_locked">فضای کاری «%1$s» قفل است</string>
+    <string name="dejavu_workspace_unlock_title">باز کردن قفل «%1$s»</string>
+    <string name="dejavu_workspace_locked_leave">رفتن به فضاهای کاری</string>
+    <string name="dejavu_settings_workspace_lock">قفل فضاهای کاری</string>
+    <string name="dejavu_workspace_lock_hint">برای قفل کردن یک فضای کاری، روی نامش در صفحهٔ خانه بزنید و «قفل کردن این فضای کاری» را روشن کنید. تا وقتی با اثر انگشت، چهره یا قفل صفحه بازش کنید، تار نشان داده می‌شود.</string>
+    <string name="dejavu_workspace_lock_when">قفل دوباره</string>
+    <string name="dejavu_workspace_lock_on_switch">وقتی به فضای کاری دیگری می‌روید</string>
+    <string name="dejavu_workspace_lock_on_leave">وقتی از Dejavu خارج می‌شوید</string>
+    <string name="dejavu_workspace_lock_after">%1$s پس از خروج از Dejavu</string>
+    <string name="dejavu_workspace_lock_on_close">وقتی Dejavu بسته می‌شود</string>
 </resources>

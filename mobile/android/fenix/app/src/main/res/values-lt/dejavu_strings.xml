@@ -569,4 +569,18 @@
     <string name="dejavu_remote_debugging_summary">Iš naujo paleidus Dejavu vėl išsijungia</string>
     <string name="dejavu_preference_mouse_support">Pelės palaikymas</string>
     <string name="dejavu_preference_mouse_support_summary">Spustelėjus viduriniu mygtuku, saitas atveriamas fono kortelėje, o užvedus pelę ant saito rodomas jo adresas. Spustelėjus viduriniu mygtuku kortelę, ji uždaroma.</string>
+    <string name="dejavu_workspace_lock">Užrakinti šią darbo erdvę</string>
+    <string name="dejavu_workspace_lock_summary">Rodo ją suliejusią, kol atrakinsite ją piršto atspaudu, veidu ar ekrano užraktu</string>
+    <string name="dejavu_workspace_no_history">Neįrašyti žurnalo</string>
+    <string name="dejavu_workspace_no_history_summary">Čia atverti puslapiai nepatenka į žurnalą, paskutines paieškas ir neseniai užvertas korteles</string>
+    <string name="dejavu_workspace_locked">Darbo erdvė „%1$s“ užrakinta</string>
+    <string name="dejavu_workspace_unlock_title">Atrakinti „%1$s“</string>
+    <string name="dejavu_workspace_locked_leave">Eiti į darbo erdves</string>
+    <string name="dejavu_settings_workspace_lock">Darbo erdvių užraktas</string>
+    <string name="dejavu_workspace_lock_hint">Norėdami užrakinti darbo erdvę, pradžios ekrane bakstelėkite jos pavadinimą ir įjunkite „Užrakinti šią darbo erdvę“. Ji rodoma suliejusi, kol atrakinsite ją piršto atspaudu, veidu ar ekrano užraktu.</string>
+    <string name="dejavu_workspace_lock_when">Užrakinti vėl</string>
+    <string name="dejavu_workspace_lock_on_switch">Kai pereinate į kitą darbo erdvę</string>
+    <string name="dejavu_workspace_lock_on_leave">Kai išeinate iš Dejavu</string>
+    <string name="dejavu_workspace_lock_after">%1$s po išėjimo iš Dejavu</string>
+    <string name="dejavu_workspace_lock_on_close">Kai Dejavu užveriama</string>
 </resources>

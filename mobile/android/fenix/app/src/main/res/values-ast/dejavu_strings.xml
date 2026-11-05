@@ -553,4 +553,18 @@
     <string name="dejavu_remote_debugging_summary">Desactívase de nuevu cuando Dejavu se reanicia</string>
     <string name="dejavu_preference_mouse_support">Sofitu pal mur</string>
     <string name="dejavu_preference_mouse_support_summary">Un clic col botón central abre un enllaz nuna llingüeta en segundu planu, y pasar penriba d\'un enllaz amuesa la so direición. Un clic col botón central nuna llingüeta péchala.</string>
+    <string name="dejavu_workspace_lock">Bloquiar esti espaciu de trabayu</string>
+    <string name="dejavu_workspace_lock_summary">Amuésalu borrosu hasta que lu desbloquies cola buelga, la cara o’l bloquéu de pantalla</string>
+    <string name="dejavu_workspace_no_history">Nun guardar l’historial</string>
+    <string name="dejavu_workspace_no_history_summary">Les páxines que s’abren equí nun entren nel historial, nes busques de recién nin nes llingüetes que se zarraron de recién</string>
+    <string name="dejavu_workspace_locked">%1$s ta bloquiáu</string>
+    <string name="dejavu_workspace_unlock_title">Desbloquiar %1$s</string>
+    <string name="dejavu_workspace_locked_leave">Dir a los espacios de trabayu</string>
+    <string name="dejavu_settings_workspace_lock">Bloquéu de los espacios de trabayu</string>
+    <string name="dejavu_workspace_lock_hint">Pa bloquiar un espaciu de trabayu, toca’l so nome na pantalla d’aniciu y activa «Bloquiar esti espaciu de trabayu». Amuésase borrosu hasta que lu desbloquies cola buelga, la cara o’l bloquéu de pantalla.</string>
+    <string name="dejavu_workspace_lock_when">Volver bloquiar</string>
+    <string name="dejavu_workspace_lock_on_switch">Al cambiar a otru espaciu de trabayu</string>
+    <string name="dejavu_workspace_lock_on_leave">Al colar de Dejavu</string>
+    <string name="dejavu_workspace_lock_after">%1$s dempués de colar de Dejavu</string>
+    <string name="dejavu_workspace_lock_on_close">Al zarrar Dejavu</string>
 </resources>

@@ -553,4 +553,18 @@
     <string name="dejavu_remote_debugging_summary">Se torna a desactivar quan Dejavu se reinicia</string>
     <string name="dejavu_preference_mouse_support">Suporte de churi</string>
     <string name="dejavu_preference_mouse_support_summary">Un clic central ubre un vinclo en una pestanya de fondo, y pasar por denzima d\'un vinclo amuestra la suya adreza. Un clic central en una pestanya la zarra.</string>
+    <string name="dejavu_workspace_lock">Blocar este espacio de treballo</string>
+    <string name="dejavu_workspace_lock_summary">Lo amuestra difuminau dica que lo desblocas con a tuya pempa, a tuya cara u o bloqueyo de pantalla</string>
+    <string name="dejavu_workspace_no_history">No alzar l’historial</string>
+    <string name="dejavu_workspace_no_history_summary">As pachinas ubiertas aquí no dentran en l’historial, en as busquedas recients ni en as pestanyas zarradas recientment</string>
+    <string name="dejavu_workspace_locked">%1$s ye blocau</string>
+    <string name="dejavu_workspace_unlock_title">Desblocar %1$s</string>
+    <string name="dejavu_workspace_locked_leave">Ir a los espacios de treballo</string>
+    <string name="dejavu_settings_workspace_lock">Bloqueyo d’os espacios de treballo</string>
+    <string name="dejavu_workspace_lock_hint">Pa blocar un espacio de treballo, toca o suyo nombre en a pantalla d’inicio y activa «Blocar este espacio de treballo». S’amuestra difuminau dica que lo desblocas con a tuya pempa, a tuya cara u o bloqueyo de pantalla.</string>
+    <string name="dejavu_workspace_lock_when">Tornar a blocar</string>
+    <string name="dejavu_workspace_lock_on_switch">En cambiar t’atro espacio de treballo</string>
+    <string name="dejavu_workspace_lock_on_leave">En salir de Dejavu</string>
+    <string name="dejavu_workspace_lock_after">%1$s dimpués de salir de Dejavu</string>
+    <string name="dejavu_workspace_lock_on_close">En zarrar Dejavu</string>
 </resources>

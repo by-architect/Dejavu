@@ -553,4 +553,18 @@
     <string name="dejavu_remote_debugging_summary">Se disactiva de novo quando Dejavu se reinitia</string>
     <string name="dejavu_preference_mouse_support">Supporto del mus</string>
     <string name="dejavu_preference_mouse_support_summary">Un clic central aperi un ligamine in un scheda in secunde plano, e passar super un ligamine monstra su adresse. Un clic central super un scheda lo claude.</string>
+    <string name="dejavu_workspace_lock">Blocar iste spatio de labor</string>
+    <string name="dejavu_workspace_lock_summary">Lo monstra confuse usque tu lo disbloca con tu impression digital, facie o blocada de schermo</string>
+    <string name="dejavu_workspace_no_history">Non salvar le chronologia</string>
+    <string name="dejavu_workspace_no_history_summary">Le paginas aperite hic non entra in le chronologia, in le recercas recente e in le schedas claudite recentemente</string>
+    <string name="dejavu_workspace_locked">%1$s es blocate</string>
+    <string name="dejavu_workspace_unlock_title">Disblocar %1$s</string>
+    <string name="dejavu_workspace_locked_leave">Ir al spatios de labor</string>
+    <string name="dejavu_settings_workspace_lock">Blocada del spatios de labor</string>
+    <string name="dejavu_workspace_lock_hint">Pro blocar un spatio de labor, tocca su nomine sur le schermo initial e activa “Blocar iste spatio de labor”. Illo es monstrate confuse usque tu lo disbloca con tu impression digital, facie o blocada de schermo.</string>
+    <string name="dejavu_workspace_lock_when">Blocar de novo</string>
+    <string name="dejavu_workspace_lock_on_switch">Quando tu passa a un altere spatio de labor</string>
+    <string name="dejavu_workspace_lock_on_leave">Quando tu exi de Dejavu</string>
+    <string name="dejavu_workspace_lock_after">%1$s post que tu exi de Dejavu</string>
+    <string name="dejavu_workspace_lock_on_close">Quando Dejavu se claude</string>
 </resources>

@@ -545,4 +545,18 @@
     <string name="dejavu_remote_debugging_summary">ona li pini sin lon tenpo ni: ilo Dejavu li open sin</string>
     <string name="dejavu_preference_mouse_support">ilo soweli</string>
     <string name="dejavu_preference_mouse_support_summary">nena meso li open e linja lon poki monsi. sina awen e soweli lon linja la ona li pana e nimi ma ona. nena meso lon poki li weka e poki ni.</string>
+    <string name="dejavu_workspace_lock">o len e kulupu poki ni</string>
+    <string name="dejavu_workspace_lock_summary">ona li lukin ala pona tawa tenpo ni: sina open e ona kepeken sitelen luka, kepeken lukin sinpin anu kepeken len pi lipu lukin</string>
+    <string name="dejavu_workspace_no_history">o awen ala e lukin pini lipu</string>
+    <string name="dejavu_workspace_no_history_summary">lipu pi open lon ni li tawa ala lukin pini lipu, li tawa ala alasa sin, li tawa ala poki pi pini sin</string>
+    <string name="dejavu_workspace_locked">kulupu poki %1$s li len</string>
+    <string name="dejavu_workspace_unlock_title">o open e %1$s</string>
+    <string name="dejavu_workspace_locked_leave">o tawa kulupu poki</string>
+    <string name="dejavu_settings_workspace_lock">len pi kulupu poki</string>
+    <string name="dejavu_workspace_lock_hint">sina wile len e kulupu poki la, o luka e nimi ona lon lipu open, o open e “o len e kulupu poki ni”. ona li lukin ala pona tawa tenpo ni: sina open e ona kepeken sitelen luka, kepeken lukin sinpin anu kepeken len pi lipu lukin.</string>
+    <string name="dejavu_workspace_lock_when">o len sin</string>
+    <string name="dejavu_workspace_lock_on_switch">tenpo sina tawa kulupu poki ante</string>
+    <string name="dejavu_workspace_lock_on_leave">tenpo sina weka tan Dejavu</string>
+    <string name="dejavu_workspace_lock_after">%1$s kepeken tenpo weka sina tan Dejavu</string>
+    <string name="dejavu_workspace_lock_on_close">tenpo Dejavu li pini</string>
 </resources>

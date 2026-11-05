@@ -553,4 +553,18 @@
     <string name="dejavu_remote_debugging_summary">کاتێک Dejavu دووبارە دەست پێدەکاتەوە دەکوژێتەوە</string>
     <string name="dejavu_preference_mouse_support">پشتگیری مشک</string>
     <string name="dejavu_preference_mouse_support_summary">کرتەی ناوەڕاست بەستەرێک لە بازدەرێکی پاشبنەمادا دەکاتەوە، و ڕاگرتنی مشک لەسەر بەستەر ناونیشانەکەی پیشان دەدات. کرتەی ناوەڕاست لەسەر بازدەرێک دایدەخات.</string>
+    <string name="dejavu_workspace_lock">ئەم فەزایە قوفڵ بکە</string>
+    <string name="dejavu_workspace_lock_summary">بە ڕوونی نیشانی نادات هەتا بە پەنجەمۆر، ڕوخسار یان قوفڵی شاشە دەیکەیتەوە</string>
+    <string name="dejavu_workspace_no_history">مێژوو پاشەکەوت مەکە</string>
+    <string name="dejavu_workspace_no_history_summary">ئەو پەڕانەی لێرە دەکرێنەوە ناچنە ناو مێژوو، گەڕانە نوێیەکان و تابە تازە داخراوەکان</string>
+    <string name="dejavu_workspace_locked">«%1$s» قوفڵ کراوە</string>
+    <string name="dejavu_workspace_unlock_title">کردنەوەی قوفڵی «%1$s»</string>
+    <string name="dejavu_workspace_locked_leave">بڕۆ بۆ فەزاکان</string>
+    <string name="dejavu_settings_workspace_lock">قوفڵی فەزاکان</string>
+    <string name="dejavu_workspace_lock_hint">بۆ قوفڵکردنی فەزایەک، لە شاشەی سەرەکی دەست لە ناوەکەی بدە و «ئەم فەزایە قوفڵ بکە» چالاک بکە. بە تەماوی دەردەکەوێت هەتا بە پەنجەمۆر، ڕوخسار یان قوفڵی شاشە دەیکەیتەوە.</string>
+    <string name="dejavu_workspace_lock_when">دووبارە قوفڵ بکە</string>
+    <string name="dejavu_workspace_lock_on_switch">کاتێک دەچیتە فەزایەکی تر</string>
+    <string name="dejavu_workspace_lock_on_leave">کاتێک Dejavu جێدەهێڵیت</string>
+    <string name="dejavu_workspace_lock_after">%1$s دوای جێهێشتنی Dejavu</string>
+    <string name="dejavu_workspace_lock_on_close">کاتێک Dejavu دادەخرێت</string>
 </resources>

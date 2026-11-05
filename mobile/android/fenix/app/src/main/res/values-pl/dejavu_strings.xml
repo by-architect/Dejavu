@@ -569,4 +569,18 @@
     <string name="dejavu_remote_debugging_summary">Wyłącza się znowu po ponownym uruchomieniu Dejavu</string>
     <string name="dejavu_preference_mouse_support">Obsługa myszy</string>
     <string name="dejavu_preference_mouse_support_summary">Kliknięcie środkowym przyciskiem otwiera odnośnik w karcie w tle, a najechanie na odnośnik wyświetla jego adres. Kliknięcie środkowym przyciskiem karty zamyka ją.</string>
+    <string name="dejavu_workspace_lock">Zablokuj ten obszar roboczy</string>
+    <string name="dejavu_workspace_lock_summary">Pokazuje go rozmytego, dopóki nie odblokujesz go odciskiem palca, twarzą lub blokadą ekranu</string>
+    <string name="dejavu_workspace_no_history">Nie zapisuj historii</string>
+    <string name="dejavu_workspace_no_history_summary">Strony otwarte tutaj nie trafiają do historii, ostatnich wyszukiwań ani ostatnio zamkniętych kart</string>
+    <string name="dejavu_workspace_locked">Obszar roboczy „%1$s” jest zablokowany</string>
+    <string name="dejavu_workspace_unlock_title">Odblokuj „%1$s”</string>
+    <string name="dejavu_workspace_locked_leave">Przejdź do obszarów roboczych</string>
+    <string name="dejavu_settings_workspace_lock">Blokada obszarów roboczych</string>
+    <string name="dejavu_workspace_lock_hint">Aby zablokować obszar roboczy, stuknij jego nazwę na ekranie głównym i włącz „Zablokuj ten obszar roboczy”. Jest on pokazywany jako rozmyty, dopóki nie odblokujesz go odciskiem palca, twarzą lub blokadą ekranu.</string>
+    <string name="dejavu_workspace_lock_when">Zablokuj ponownie</string>
+    <string name="dejavu_workspace_lock_on_switch">Po przejściu do innego obszaru roboczego</string>
+    <string name="dejavu_workspace_lock_on_leave">Po wyjściu z Dejavu</string>
+    <string name="dejavu_workspace_lock_after">%1$s po wyjściu z Dejavu</string>
+    <string name="dejavu_workspace_lock_on_close">Po zamknięciu Dejavu</string>
 </resources>

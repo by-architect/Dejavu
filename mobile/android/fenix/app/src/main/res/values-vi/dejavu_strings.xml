@@ -545,4 +545,18 @@
     <string name="dejavu_remote_debugging_summary">Tự tắt lại khi Dejavu khởi động lại</string>
     <string name="dejavu_preference_mouse_support">Hỗ trợ chuột</string>
     <string name="dejavu_preference_mouse_support_summary">Nhấp chuột giữa sẽ mở liên kết trong một thẻ nền, và di chuột lên liên kết sẽ hiển thị địa chỉ của nó. Nhấp chuột giữa vào một thẻ sẽ đóng thẻ đó.</string>
+    <string name="dejavu_workspace_lock">Khóa không gian làm việc này</string>
+    <string name="dejavu_workspace_lock_summary">Hiển thị mờ cho đến khi bạn mở khóa bằng vân tay, khuôn mặt hoặc khóa màn hình</string>
+    <string name="dejavu_workspace_no_history">Không lưu lịch sử</string>
+    <string name="dejavu_workspace_no_history_summary">Các trang mở ở đây không vào lịch sử, tìm kiếm gần đây và các thẻ đã đóng gần đây</string>
+    <string name="dejavu_workspace_locked">%1$s đã bị khóa</string>
+    <string name="dejavu_workspace_unlock_title">Mở khóa %1$s</string>
+    <string name="dejavu_workspace_locked_leave">Đi tới không gian làm việc</string>
+    <string name="dejavu_settings_workspace_lock">Khóa không gian làm việc</string>
+    <string name="dejavu_workspace_lock_hint">Để khóa một không gian làm việc, hãy chạm vào tên của nó trên màn hình chính và bật “Khóa không gian làm việc này”. Nó hiển thị mờ cho đến khi bạn mở khóa bằng vân tay, khuôn mặt hoặc khóa màn hình.</string>
+    <string name="dejavu_workspace_lock_when">Khóa lại</string>
+    <string name="dejavu_workspace_lock_on_switch">Khi bạn chuyển sang không gian làm việc khác</string>
+    <string name="dejavu_workspace_lock_on_leave">Khi bạn rời Dejavu</string>
+    <string name="dejavu_workspace_lock_after">%1$s sau khi rời Dejavu</string>
+    <string name="dejavu_workspace_lock_on_close">Khi Dejavu đóng</string>
 </resources>

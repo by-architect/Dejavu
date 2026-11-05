@@ -586,4 +586,18 @@
     <string name="dejavu_remote_debugging_summary">Dejavu के फिर से शुरू होने पर यह फिर से बंद हो जाता है</string>
     <string name="dejavu_preference_mouse_support">माउस समर्थन</string>
     <string name="dejavu_preference_mouse_support_summary">बीच वाले बटन से क्लिक करने पर लिंक पृष्ठभूमि टैब में खुलता है, और लिंक पर पॉइंटर रखने से उसका पता दिखता है। टैब पर बीच वाले बटन से क्लिक करने पर वह बंद हो जाता है।</string>
+    <string name="dejavu_workspace_lock">यह वर्कस्पेस लॉक करें</string>
+    <string name="dejavu_workspace_lock_summary">इसे धुंधला दिखाता है, जब तक आप इसे फ़िंगरप्रिंट, चेहरे या स्क्रीन लॉक से अनलॉक न करें</string>
+    <string name="dejavu_workspace_no_history">हिस्ट्री सेव न करें</string>
+    <string name="dejavu_workspace_no_history_summary">यहाँ खुले पेज हिस्ट्री, हाल की खोजों और हाल ही में बंद टैब में नहीं जाते</string>
+    <string name="dejavu_workspace_locked">%1$s लॉक है</string>
+    <string name="dejavu_workspace_unlock_title">%1$s अनलॉक करें</string>
+    <string name="dejavu_workspace_locked_leave">वर्कस्पेस पर जाएँ</string>
+    <string name="dejavu_settings_workspace_lock">वर्कस्पेस लॉक</string>
+    <string name="dejavu_workspace_lock_hint">किसी वर्कस्पेस को लॉक करने के लिए होम स्क्रीन पर उसके नाम पर टैप करें और “यह वर्कस्पेस लॉक करें” चालू करें। यह तब तक धुंधला दिखता है जब तक आप इसे फ़िंगरप्रिंट, चेहरे या स्क्रीन लॉक से अनलॉक न करें।</string>
+    <string name="dejavu_workspace_lock_when">फिर से लॉक करें</string>
+    <string name="dejavu_workspace_lock_on_switch">जब आप दूसरे वर्कस्पेस पर जाएँ</string>
+    <string name="dejavu_workspace_lock_on_leave">जब आप Dejavu छोड़ें</string>
+    <string name="dejavu_workspace_lock_after">Dejavu छोड़ने के %1$s बाद</string>
+    <string name="dejavu_workspace_lock_on_close">जब Dejavu बंद हो</string>
 </resources>

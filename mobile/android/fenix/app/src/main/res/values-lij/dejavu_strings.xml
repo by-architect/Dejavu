@@ -553,4 +553,18 @@
     <string name="dejavu_remote_debugging_summary">O se dizativa torna quande Dejavu o se reavvia</string>
     <string name="dejavu_preference_mouse_support">Sopòrto do ratto</string>
     <string name="dejavu_preference_mouse_support_summary">Un clic co-o pomello de mezo o l\'arve un colegamento inte \'n feuggio in sfondo, e passâ in sciô colegamento o ne mostra l\'adresso. Un clic co-o pomello de mezo in sciô feuggio o o sära.</string>
+    <string name="dejavu_workspace_lock">Blòcca sto spaçio de travaggio</string>
+    <string name="dejavu_workspace_lock_summary">O mostra sfocou finché no ti o sblòcchi co-a stanpa do dio, a faccia ò o blòcco do schermo</string>
+    <string name="dejavu_workspace_no_history">No sarvâ a stöia</string>
+    <string name="dejavu_workspace_no_history_summary">E pagine averte chi no intran inta stöia, inte riçerche reçenti e inti feuggi serræ da pöco</string>
+    <string name="dejavu_workspace_locked">%1$s o l’é blocou</string>
+    <string name="dejavu_workspace_unlock_title">Sblòcca %1$s</string>
+    <string name="dejavu_workspace_locked_leave">Vanni a-i spaçi de travaggio</string>
+    <string name="dejavu_settings_workspace_lock">Blòcco di spaçi de travaggio</string>
+    <string name="dejavu_workspace_lock_hint">Pe blocâ un spaçio de travaggio, tocca o seu nomme into schermo prinçipâ e attiva «Blòcca sto spaçio de travaggio». O l’é mostrou sfocou finché no ti o sblòcchi co-a stanpa do dio, a faccia ò o blòcco do schermo.</string>
+    <string name="dejavu_workspace_lock_when">Blòcca torna</string>
+    <string name="dejavu_workspace_lock_on_switch">Quande ti passi a un atro spaçio de travaggio</string>
+    <string name="dejavu_workspace_lock_on_leave">Quande ti sciòrti da Dejavu</string>
+    <string name="dejavu_workspace_lock_after">%1$s dòppo che ti sciòrti da Dejavu</string>
+    <string name="dejavu_workspace_lock_on_close">Quande Dejavu o se serra</string>
 </resources>

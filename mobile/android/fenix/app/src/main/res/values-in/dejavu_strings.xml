@@ -545,4 +545,18 @@
     <string name="dejavu_remote_debugging_summary">Mati lagi saat Dejavu dimulai ulang</string>
     <string name="dejavu_preference_mouse_support">Dukungan mouse</string>
     <string name="dejavu_preference_mouse_support_summary">Klik tengah membuka tautan di tab latar belakang, dan mengarahkan mouse ke tautan menampilkan alamatnya. Klik tengah pada tab menutupnya.</string>
+    <string name="dejavu_workspace_lock">Kunci ruang kerja ini</string>
+    <string name="dejavu_workspace_lock_summary">Menampilkannya buram sampai Anda membukanya dengan sidik jari, wajah, atau kunci layar</string>
+    <string name="dejavu_workspace_no_history">Jangan simpan riwayat</string>
+    <string name="dejavu_workspace_no_history_summary">Laman yang dibuka di sini tidak masuk ke riwayat, pencarian terbaru, dan tab yang baru ditutup</string>
+    <string name="dejavu_workspace_locked">%1$s terkunci</string>
+    <string name="dejavu_workspace_unlock_title">Buka kunci %1$s</string>
+    <string name="dejavu_workspace_locked_leave">Buka ruang kerja</string>
+    <string name="dejavu_settings_workspace_lock">Kunci ruang kerja</string>
+    <string name="dejavu_workspace_lock_hint">Untuk mengunci ruang kerja, ketuk namanya di layar beranda lalu aktifkan “Kunci ruang kerja ini”. Ruang kerja ditampilkan buram sampai Anda membukanya dengan sidik jari, wajah, atau kunci layar.</string>
+    <string name="dejavu_workspace_lock_when">Kunci lagi</string>
+    <string name="dejavu_workspace_lock_on_switch">Saat Anda beralih ke ruang kerja lain</string>
+    <string name="dejavu_workspace_lock_on_leave">Saat Anda meninggalkan Dejavu</string>
+    <string name="dejavu_workspace_lock_after">%1$s setelah Anda meninggalkan Dejavu</string>
+    <string name="dejavu_workspace_lock_on_close">Saat Dejavu ditutup</string>
 </resources>

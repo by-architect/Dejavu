@@ -561,4 +561,18 @@
     <string name="dejavu_remote_debugging_summary">Es torna a desactivar quan el Dejavu es reinicia</string>
     <string name="dejavu_preference_mouse_support">Compatibilitat amb el ratolí</string>
     <string name="dejavu_preference_mouse_support_summary">Un clic amb el botó del mig obre un enllaç en una pestanya en segon pla, i passar per sobre d\'un enllaç en mostra l\'adreça. Un clic amb el botó del mig en una pestanya la tanca.</string>
+    <string name="dejavu_workspace_lock">Bloca aquest espai de treball</string>
+    <string name="dejavu_workspace_lock_summary">El mostra difuminat fins que el desbloquis amb l’empremta, la cara o el bloqueig de pantalla</string>
+    <string name="dejavu_workspace_no_history">No desis l’historial</string>
+    <string name="dejavu_workspace_no_history_summary">Les pàgines obertes aquí no entren a l’historial, a les cerques recents ni a les pestanyes tancades recentment</string>
+    <string name="dejavu_workspace_locked">%1$s està blocat</string>
+    <string name="dejavu_workspace_unlock_title">Desbloca %1$s</string>
+    <string name="dejavu_workspace_locked_leave">Vés als espais de treball</string>
+    <string name="dejavu_settings_workspace_lock">Bloqueig dels espais de treball</string>
+    <string name="dejavu_workspace_lock_hint">Per blocar un espai de treball, toqueu-ne el nom a la pantalla d’inici i activeu «Bloca aquest espai de treball». Es mostra difuminat fins que el desbloqueu amb l’empremta, la cara o el bloqueig de pantalla.</string>
+    <string name="dejavu_workspace_lock_when">Torna a blocar</string>
+    <string name="dejavu_workspace_lock_on_switch">Quan canvieu a un altre espai de treball</string>
+    <string name="dejavu_workspace_lock_on_leave">Quan sortiu del Dejavu</string>
+    <string name="dejavu_workspace_lock_after">%1$s després de sortir del Dejavu</string>
+    <string name="dejavu_workspace_lock_on_close">Quan es tanca el Dejavu</string>
 </resources>

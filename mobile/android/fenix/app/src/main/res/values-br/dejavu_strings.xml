@@ -577,4 +577,18 @@
     <string name="dejavu_remote_debugging_summary">Diweredekaet e vez en-dro pa adloc’h Dejavu</string>
     <string name="dejavu_preference_mouse_support">Skor al logodenn</string>
     <string name="dejavu_preference_mouse_support_summary">Ur c\'hlik kreiz a zigor ul liamm en un ivinell e drekleur, ha tremen a-us d\'ul liamm a ziskouez e chomlec\'h. Ur c\'hlik kreiz war un ivinell a serr anezhi.</string>
+    <string name="dejavu_workspace_lock">Prennañ an egor labour-mañ</string>
+    <string name="dejavu_workspace_lock_summary">Diskouez a ra anezhañ dispis betek ma vo dibrennet ganeoc’h gant ho roudoù biz, ho tremm pe prennañ ar skramm</string>
+    <string name="dejavu_workspace_no_history">Chom hep enrollañ ar roll istor</string>
+    <string name="dejavu_workspace_no_history_summary">Ar pajennoù digoret amañ ne vezont ket er roll istor, en enklaskoù nevez ha war an ivinelloù serret nevez zo</string>
+    <string name="dejavu_workspace_locked">%1$s a zo prennet</string>
+    <string name="dejavu_workspace_unlock_title">Dibrennañ %1$s</string>
+    <string name="dejavu_workspace_locked_leave">Mont d’an egorioù labour</string>
+    <string name="dejavu_settings_workspace_lock">Prennañ an egorioù labour</string>
+    <string name="dejavu_workspace_lock_hint">Evit prennañ un egor labour, stokit war e anv war ar skramm degemer hag enaouit « Prennañ an egor labour-mañ ». Diskouezet e vez dispis betek ma vo dibrennet ganeoc’h gant ho roudoù biz, ho tremm pe prennañ ar skramm.</string>
+    <string name="dejavu_workspace_lock_when">Prennañ en-dro</string>
+    <string name="dejavu_workspace_lock_on_switch">Pa dremenit d’un egor labour all</string>
+    <string name="dejavu_workspace_lock_on_leave">Pa guitait Dejavu</string>
+    <string name="dejavu_workspace_lock_after">%1$s goude kuitaat Dejavu</string>
+    <string name="dejavu_workspace_lock_on_close">Pa vez serret Dejavu</string>
 </resources>

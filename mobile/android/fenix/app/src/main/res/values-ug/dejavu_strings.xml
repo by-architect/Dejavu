@@ -553,4 +553,18 @@
     <string name="dejavu_remote_debugging_summary">Dejavu قايتا قوزغالغاندا يەنە تاقىلىدۇ</string>
     <string name="dejavu_preference_mouse_support">مائۇس قوللىشى</string>
     <string name="dejavu_preference_mouse_support_summary">ئوتتۇرا كۇنۇپكا بىلەن چېكىش ئۇلانمىنى ئارقا سۇپىدىكى بەتكۈچتە ئاچىدۇ، ئۇلانما ئۈستىگە مائۇسنى توختىتىش ئۇنىڭ ئادرېسىنى كۆرسىتىدۇ. بەتكۈچنى ئوتتۇرا كۇنۇپكا بىلەن چېكىش ئۇنى تاقايدۇ.</string>
+    <string name="dejavu_workspace_lock">بۇ خىزمەت دائىرىسىنى قۇلۇپلاش</string>
+    <string name="dejavu_workspace_lock_summary">بارماق ئىزى، چىراي ياكى ئېكران قۇلۇپى بىلەن ئاچقۇچە ئۇنى غۇۋا كۆرسىتىدۇ</string>
+    <string name="dejavu_workspace_no_history">تارىخنى ساقلىماسلىق</string>
+    <string name="dejavu_workspace_no_history_summary">بۇ يەردە ئېچىلغان بەتلەر تارىخ، يېقىنقى ئىزدەشلەر ۋە يېقىندا تاقالغان بەتكۈچلەرگە كىرمەيدۇ</string>
+    <string name="dejavu_workspace_locked">«%1$s» قۇلۇپلانغان</string>
+    <string name="dejavu_workspace_unlock_title">«%1$s» نىڭ قۇلۇپىنى ئېچىش</string>
+    <string name="dejavu_workspace_locked_leave">خىزمەت دائىرىلىرىگە بېرىش</string>
+    <string name="dejavu_settings_workspace_lock">خىزمەت دائىرىسى قۇلۇپى</string>
+    <string name="dejavu_workspace_lock_hint">خىزمەت دائىرىسىنى قۇلۇپلاش ئۈچۈن باش ئېكراندا ئۇنىڭ نامىنى چېكىپ «بۇ خىزمەت دائىرىسىنى قۇلۇپلاش» نى ئېچىڭ. بارماق ئىزى، چىراي ياكى ئېكران قۇلۇپى بىلەن ئاچقۇچە ئۇ غۇۋا كۆرۈنىدۇ.</string>
+    <string name="dejavu_workspace_lock_when">قايتا قۇلۇپلاش</string>
+    <string name="dejavu_workspace_lock_on_switch">باشقا خىزمەت دائىرىسىگە ئالماشقاندا</string>
+    <string name="dejavu_workspace_lock_on_leave">Dejavu دىن چىققاندا</string>
+    <string name="dejavu_workspace_lock_after">Dejavu دىن چىقىپ %1$s ئۆتكەندە</string>
+    <string name="dejavu_workspace_lock_on_close">Dejavu تاقالغاندا</string>
 </resources>

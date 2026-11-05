@@ -217,8 +217,10 @@ import org.mozilla.fenix.dejavu.browser.exitFullScreenKeepingBarsHidden
 import org.mozilla.fenix.dejavu.browser.handleDejavuBackPressed
 import org.mozilla.fenix.dejavu.browser.installAboutConfigWarning
 import org.mozilla.fenix.dejavu.browser.installDejavuSplitView
+import org.mozilla.fenix.dejavu.browser.installLockedTabCover
 import org.mozilla.fenix.dejavu.browser.padForNavigationBar
 import org.mozilla.fenix.dejavu.browser.restoreDejavuRotationAfterFullscreen
+import org.mozilla.fenix.dejavu.browser.showsLockedTab
 import org.mozilla.fenix.dejavu.browser.shownNavigationBarHeight
 import org.mozilla.fenix.dejavu.browser.statusBarHeight
 import org.mozilla.fenix.downloads.DownloadService
@@ -624,7 +626,7 @@ abstract class BaseBrowserFragment :
                     tabId = customTabSessionId,
                     shouldHide = {
                         val state = requireComponents.appStore.state
-                        state.isPrivateScreenLocked && state.mode.isPrivate
+                        (state.isPrivateScreenLocked && state.mode.isPrivate) || showsLockedTab()
                     },
                 ),
             owner = this,
@@ -1243,6 +1245,8 @@ abstract class BaseBrowserFragment :
             getContextMenuCandidates(context, binding.dynamicSnackbarContainer)
         }
         installAboutConfigWarning(customTabSessionId)
+        // Dejavu: a tab of a locked workspace stays covered until the workspace is unlocked.
+        installLockedTabCover(customTabSessionId, binding.root)
 
         // Dejavu: middle-click opens links in a background tab and hovering shows their address. Not in custom tabs.
         if (customTabSessionId == null) {
@@ -1387,7 +1391,7 @@ abstract class BaseBrowserFragment :
                             true
                         } else {
                             val state = requireComponents.appStore.state
-                            state.isPrivateScreenLocked && state.mode.isPrivate
+                            (state.isPrivateScreenLocked && state.mode.isPrivate) || showsLockedTab()
                         }
                     },
                 ),
