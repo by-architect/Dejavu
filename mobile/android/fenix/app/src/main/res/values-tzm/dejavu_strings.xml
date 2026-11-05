@@ -323,7 +323,6 @@
     <string name="dejavu_feature_firefox_sync">Ḍfer Firefox ɣef iselkimen-ik d tiliɣriwin-ik</string>
     <string name="dejavu_settings_whats_new">D acu i d maynut</string>
     <string name="dejavu_settings_whats_new_summary">Ayen d-yewwi yal lqem, akked tirza deg Dejavu</string>
-    <string name="dejavu_settings_author">Yettwaxdem sɣur %1$s</string>
     <string name="dejavu_settings_coffee">Aɣ-iyi-d lqahwa</string>
     <string name="dejavu_settings_coffee_summary">Ulac adellel deg Dejavu. Ma yeɛǧeb-ik, lqahwa ad as-tɛiwen ad yimɣur.</string>
     <string name="dejavu_settings_safe_browsing">Google Safe Browsing</string>
@@ -550,4 +549,8 @@
     <string name="dejavu_screenshot_save_failed">Asekles n tugna n ugdil ur yeddi ara.</string>
     <string name="dejavu_screenshot_permission">Asekles n tugniwin n ugdil yesra asurag n usekles n yifuyla. Tzemreḍ ad t-tsirgeḍ deg tisɣal n tsensi n Android.</string>
     <string name="dejavu_no_closed_tabs">Ulac iseksal yemdlen melmi kan</string>
+    <string name="dejavu_menu_customize_reader_view">Sagen tamuɣli n tɣuri</string>
+    <string name="dejavu_remote_debugging_summary">Ad yensu tikkelt-nniḍen mi ara yales Dejavu asenker</string>
+    <string name="dejavu_preference_mouse_support">Tallalt n uɣerda</string>
+    <string name="dejavu_preference_mouse_support_summary">Asiti s tqeffalt n wammas iṛẓem aseɣwen deg useksel deg ugilal, ar tasdawt n uɣerda f useɣwen tessken-d tansa nnes. Asiti s tqeffalt n wammas f useksel ad t-isekkeṛ.</string>
 </resources>

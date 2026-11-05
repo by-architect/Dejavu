@@ -323,7 +323,6 @@
     <string name="dejavu_feature_firefox_sync">Sigue Firefox en tus computadoras y teléfonos</string>
     <string name="dejavu_settings_whats_new">Sa nākà doj huā</string>
     <string name="dejavu_settings_whats_new_summary">Lo que trajo cada versión, y un recorrido por Dejavu</string>
-    <string name="dejavu_settings_author">Creado por %1$s</string>
     <string name="dejavu_settings_coffee">Invítame un café</string>
     <string name="dejavu_settings_coffee_summary">Dejavu no tiene anuncios. Si te gusta, un café lo ayuda a crecer.</string>
     <string name="dejavu_settings_safe_browsing">Navegación segura de Google</string>
@@ -550,4 +549,8 @@
     <string name="dejavu_screenshot_save_failed">No se pudo guardar la ñadu\'ua pantaya.</string>
     <string name="dejavu_screenshot_permission">Para guardar ñadu\'ua pantaya se necesita permiso para almacenar archivos. Puedes permitirlo en la configuración de aplicaciones de Android.</string>
     <string name="dejavu_no_closed_tabs">Nitāj rakïj ñanj narán nākà</string>
+    <string name="dejavu_menu_customize_reader_view">Nāgi’hiaj da’ Nānùn man guendâ Gāhiāt</string>
+    <string name="dejavu_remote_debugging_summary">Se desactiva de nuevo cuando Dejavu se reinicia</string>
+    <string name="dejavu_preference_mouse_support">Compatibilidad con mouse</string>
+    <string name="dejavu_preference_mouse_support_summary">Un clic con el botón central abre un enlace en una pestaña en segundo plano, y pasar el mouse sobre un enlace muestra su dirección. Un clic con el botón central sobre una pestaña la cierra.</string>
 </resources>

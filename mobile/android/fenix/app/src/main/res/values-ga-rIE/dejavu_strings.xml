@@ -344,7 +344,6 @@
     <string name="dejavu_feature_firefox_sync">Lean Firefox ar do ríomhairí agus d’fhóin</string>
     <string name="dejavu_settings_whats_new">Gach rud nua</string>
     <string name="dejavu_settings_whats_new_summary">Cad a thug gach leagan, agus turas timpeall ar Dejavu</string>
-    <string name="dejavu_settings_author">Cruthaithe ag %1$s</string>
     <string name="dejavu_settings_coffee">Ceannaigh caife dom</string>
     <string name="dejavu_settings_coffee_summary">Níl aon fhógraíocht i Dejavu. Más maith leat é, cabhraíonn caife leis fás.</string>
     <string name="dejavu_settings_safe_browsing">Brabhsáil Shábháilte Google</string>
@@ -574,4 +573,8 @@
     <string name="dejavu_screenshot_save_failed">Níorbh fhéidir an ghabháil scáileáin a shábháil.</string>
     <string name="dejavu_screenshot_permission">Chun gabhálacha scáileáin a shábháil, teastaíonn cead chun comhaid a stóráil. Is féidir leat é sin a cheadú i socruithe na haipe in Android.</string>
     <string name="dejavu_no_closed_tabs">Níl aon chluaisín a dúnadh le déanaí</string>
+    <string name="dejavu_menu_customize_reader_view">Saincheap an t-amharc léitheoireachta</string>
+    <string name="dejavu_remote_debugging_summary">Casann sé as arís nuair a atosaíonn Dejavu</string>
+    <string name="dejavu_preference_mouse_support">Tacaíocht luiche</string>
+    <string name="dejavu_preference_mouse_support_summary">Osclaíonn cliceáil lárnach nasc i gcluaisín sa chúlra, agus taispeánann foluain os cionn naisc a sheoladh. Dúnann cliceáil lárnach ar chluaisín é.</string>
 </resources>

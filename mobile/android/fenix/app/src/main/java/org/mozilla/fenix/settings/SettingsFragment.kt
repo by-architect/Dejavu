@@ -224,9 +224,6 @@ class SettingsFragment : PreferenceFragmentCompat(), SystemInsetsPaddedFragment 
 
     override fun onCreatePreferences(savedInstanceState: Bundle?, rootKey: String?) {
         setPreferencesFromResource(R.xml.preferences, rootKey)
-        // Dejavu: the maker's name is not translated.
-        findPreference<Preference>(getString(R.string.pref_key_dejavu_author))?.title =
-            getString(R.string.dejavu_settings_author, getString(R.string.dejavu_author_name))
         // Dejavu: the switch of the tips about gestures nothing on the screen shows.
         findPreference<SwitchPreferenceCompat>(getString(R.string.pref_key_dejavu_tips))?.let(Tips::bindSwitch)
     }
@@ -370,13 +367,13 @@ class SettingsFragment : PreferenceFragmentCompat(), SystemInsetsPaddedFragment 
 
         val directions: NavDirections? =
             when (preference.key) {
-                // Dejavu: what each version brought, who makes Dejavu, its chat room, and a way to support it.
+                // Dejavu: what each version brought, its source code, its chat room, and a way to support it.
                 resources.getString(R.string.pref_key_dejavu_whats_new) -> {
                     DejavuFeatureTourFragment().show(parentFragmentManager, DejavuFeatureTourFragment.TAG)
                     null
                 }
 
-                resources.getString(R.string.pref_key_dejavu_author) -> {
+                resources.getString(R.string.pref_key_dejavu_source_code) -> {
                     openDejavuPage(DejavuLinks.SOURCE_CODE)
                     null
                 }

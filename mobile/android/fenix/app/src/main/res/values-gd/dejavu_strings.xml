@@ -337,7 +337,6 @@
     <string name="dejavu_feature_firefox_sync">Lean Firefox air na coimpiutairean is fònaichean agad</string>
     <string name="dejavu_settings_whats_new">Na tha ùr</string>
     <string name="dejavu_settings_whats_new_summary">Na thug gach tionndadh leis, agus turas air feadh Dejavu</string>
-    <string name="dejavu_settings_author">Air a chruthachadh le %1$s</string>
     <string name="dejavu_settings_coffee">Ceannaich cofaidh dhomh</string>
     <string name="dejavu_settings_coffee_summary">Chan eil sanasachd ann an Dejavu. Ma chòrdas e riut, cuidichidh cofaidh leis fàs.</string>
     <string name="dejavu_settings_safe_browsing">Brabhsadh Sàbhailte Google</string>
@@ -566,4 +565,8 @@
     <string name="dejavu_screenshot_save_failed">Cha b\' urrainn dhuinn an glacadh-sgrìn a shàbhaladh.</string>
     <string name="dejavu_screenshot_permission">Tha feum air cead faidhlichean a stòradh gus glacaidhean-sgrìn a shàbhaladh. Is urrainn dhut a cheadachadh ann an roghainnean na h-aplacaid air Android.</string>
     <string name="dejavu_no_closed_tabs">Chan eil taba sam bith ann a dhùin thu o chionn goirid</string>
+    <string name="dejavu_menu_customize_reader_view">Gnàthaich sealladh an leughadair</string>
+    <string name="dejavu_remote_debugging_summary">Thèid a chur dheth a-rithist nuair a thòisicheas Dejavu às ùr</string>
+    <string name="dejavu_preference_mouse_support">Taic luchaige</string>
+    <string name="dejavu_preference_mouse_support_summary">Fosglaidh briogadh meadhanach ceangal ann an taba sa chùlaibh, agus seallaidh fantainn os cionn ceangail an seòladh aige. Dùinidh briogadh meadhanach air taba e.</string>
 </resources>

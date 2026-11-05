@@ -330,7 +330,6 @@
     <string name="dejavu_feature_firefox_sync">ᱟᱢᱟᱜ ᱠᱚᱢᱯᱤᱭᱩᱴᱚᱨ ᱟᱨ ᱯᱷᱚᱱ ᱠᱚ ᱨᱮ Firefox ᱯᱟᱧᱡᱟ ᱢᱮ</string>
     <string name="dejavu_settings_whats_new">ᱪᱮᱫ ᱱᱟᱶᱟ ᱢᱮᱱᱟᱜᱼᱟ</string>
     <string name="dejavu_settings_whats_new_summary">ᱢᱤᱫ ᱢᱤᱫ ᱵᱷᱚᱨᱥᱚᱱ ᱨᱮ ᱪᱮᱫ ᱱᱟᱶᱟ ᱦᱤᱡᱩᱜ ᱮᱱᱟ, ᱟᱨ Dejavu ᱨᱮᱭᱟᱜ ᱢᱤᱫ ᱴᱩᱨ</string>
-    <string name="dejavu_settings_author">%1$s ᱦᱚᱛᱮᱛᱮ ᱵᱮᱱᱟᱣ ᱟᱠᱟᱱᱟ</string>
     <string name="dejavu_settings_coffee">ᱤᱧ ᱞᱟᱹᱜᱤᱫ ᱢᱤᱫ ᱠᱚᱯᱷᱤ ᱠᱤᱨᱤᱧ ᱢᱮ</string>
     <string name="dejavu_settings_coffee_summary">Dejavu ᱨᱮ ᱡᱟᱦᱟᱱ ᱮᱰ ᱵᱟᱹᱱᱩᱜᱼᱟ ᱾ ᱡᱩᱫᱤ ᱟᱢ ᱱᱚᱶᱟ ᱨᱮ ᱠᱩᱥᱤ ᱢᱮᱱᱟᱢᱟ, ᱢᱤᱫ ᱠᱚᱯᱷᱤ ᱱᱚᱶᱟ ᱵᱟᱲᱦᱟᱣ ᱨᱮ ᱜᱚᱲᱚ ᱮᱢᱟᱭᱟ ᱾</string>
     <string name="dejavu_settings_safe_browsing">Google Safe Browsing</string>
@@ -558,4 +557,8 @@
     <string name="dejavu_screenshot_save_failed">ᱥᱠᱨᱤᱱᱥᱚᱴ ᱵᱟᱝ ᱥᱟᱧᱪᱟᱣ ᱫᱟᱲᱮᱭᱟᱜᱼᱟ ᱾</string>
     <string name="dejavu_screenshot_permission">ᱥᱠᱨᱤᱱᱥᱚᱴ ᱠᱚ ᱥᱟᱧᱪᱟᱣ ᱞᱟᱹᱜᱤᱫ ᱨᱮᱫᱽ ᱥᱟᱧᱪᱟᱣ ᱨᱮᱭᱟᱜ ᱪᱷᱟᱹᱰ ᱫᱚᱨᱠᱟᱨ ᱾ ᱟᱢ ᱱᱚᱶᱟ ᱪᱷᱟᱹᱰ Android ᱨᱮᱭᱟᱜ ᱮᱯ ᱥᱟᱡᱟᱣ ᱨᱮ ᱮᱢ ᱫᱟᱲᱮᱭᱟᱜ ᱟᱢ ᱾</string>
     <string name="dejavu_no_closed_tabs">ᱱᱤᱛᱚᱜᱽᱼᱟᱜ ᱵᱚᱸᱫᱚᱼᱟᱜ ᱴᱮᱵᱽ ᱠᱚ ᱵᱟᱹᱱᱩᱜᱼᱟ</string>
+    <string name="dejavu_menu_customize_reader_view">ᱨᱤᱰᱚᱨ ᱵᱷᱭᱩ ᱠᱚᱥᱴᱚᱢᱟᱭᱤᱡᱽ ᱢᱮ</string>
+    <string name="dejavu_remote_debugging_summary">Dejavu ᱫᱚᱦᱲᱟ ᱮᱦᱚᱵ ᱚᱠᱛᱮ ᱫᱚᱦᱲᱟ ᱵᱚᱸᱫᱚ ᱦᱩᱭᱩᱜᱼᱟ</string>
+    <string name="dejavu_preference_mouse_support">ᱢᱟᱣᱩᱥ ᱜᱚᱲᱚ</string>
+    <string name="dejavu_preference_mouse_support_summary">ᱛᱟᱞᱟ ᱵᱩᱴᱟᱹᱢ ᱚᱛᱟ ᱠᱟᱛᱮ ᱞᱤᱝᱠ ᱯᱟᱪᱷᱚᱞ ᱴᱮᱵᱽ ᱨᱮ ᱡᱷᱤᱡᱽᱚᱜᱼᱟ, ᱟᱨ ᱞᱤᱝᱠ ᱪᱮᱛᱟᱱ ᱨᱮ ᱢᱟᱣᱩᱥ ᱫᱚᱦᱚ ᱠᱟᱛᱮ ᱚᱱᱟᱨ ᱴᱷᱤᱠᱬᱟᱹ ᱩᱫᱩᱜᱚᱜᱼᱟ ᱾ ᱴᱮᱵᱽ ᱨᱮ ᱛᱟᱞᱟ ᱵᱩᱴᱟᱹᱢ ᱚᱛᱟ ᱞᱮᱱ ᱥᱟᱶ ᱚᱱᱟ ᱵᱚᱱᱚᱫ ᱠᱟᱱᱟ ᱾</string>
 </resources>

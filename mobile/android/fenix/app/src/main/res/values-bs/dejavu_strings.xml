@@ -330,7 +330,6 @@
     <string name="dejavu_feature_firefox_sync">Pratite Firefox na svojim računarima i telefonima</string>
     <string name="dejavu_settings_whats_new">Šta je novo</string>
     <string name="dejavu_settings_whats_new_summary">Šta je donijela svaka verzija i obilazak Dejavua</string>
-    <string name="dejavu_settings_author">Napravio %1$s</string>
     <string name="dejavu_settings_coffee">Kupite mi kafu</string>
     <string name="dejavu_settings_coffee_summary">Dejavu nema reklama. Ako vam se sviđa, kafa mu pomaže da raste.</string>
     <string name="dejavu_settings_safe_browsing">Google sigurno pregledanje</string>
@@ -558,4 +557,8 @@
     <string name="dejavu_screenshot_save_failed">Nije moguće sačuvati screenshot.</string>
     <string name="dejavu_screenshot_permission">Za čuvanje screenshota potrebna je dozvola za pohranu datoteka. Možete to dozvoliti u postavkama aplikacije na Androidu.</string>
     <string name="dejavu_no_closed_tabs">Nema nedavno zatvorenih tabova</string>
+    <string name="dejavu_menu_customize_reader_view">Prilagodi prikaz za čitanje</string>
+    <string name="dejavu_remote_debugging_summary">Opet se isključuje kada se Dejavu ponovo pokrene</string>
+    <string name="dejavu_preference_mouse_support">Podrška za miša</string>
+    <string name="dejavu_preference_mouse_support_summary">Klik srednjom tipkom otvara link u pozadinskom tabu, a prelazak mišem preko linka prikazuje njegovu adresu. Klik srednjom tipkom na tab ga zatvara.</string>
 </resources>

@@ -323,7 +323,6 @@
     <string name="dejavu_feature_firefox_sync">Firefox را در رایانه‌ها و گوشی‌هایتان دنبال کنید</string>
     <string name="dejavu_settings_whats_new">تازه‌ها</string>
     <string name="dejavu_settings_whats_new_summary">آنچه هر نسخه آورد، و گشتی در Dejavu</string>
-    <string name="dejavu_settings_author">ساختهٔ %1$s</string>
     <string name="dejavu_settings_coffee">برایم یک قهوه بخرید</string>
     <string name="dejavu_settings_coffee_summary">Dejavu تبلیغ ندارد. اگر از آن لذت می‌برید، یک قهوه به رشدش کمک می‌کند.</string>
     <string name="dejavu_settings_safe_browsing">مرور ایمن Google</string>
@@ -550,4 +549,8 @@
     <string name="dejavu_screenshot_save_failed">ذخیرهٔ اسکرین‌شات انجام نشد.</string>
     <string name="dejavu_screenshot_permission">برای ذخیرهٔ اسکرین‌شات‌ها، اجازهٔ ذخیره‌سازی پرونده‌ها لازم است. می‌توانید آن را در تنظیمات برنامه در اندروید مجاز کنید.</string>
     <string name="dejavu_no_closed_tabs">هیچ زبانهٔ به‌تازگی بسته‌شده‌ای نیست</string>
+    <string name="dejavu_menu_customize_reader_view">شخصی‌سازی نمای مطالعه</string>
+    <string name="dejavu_remote_debugging_summary">با راه‌اندازی دوبارهٔ Dejavu دوباره خاموش می‌شود</string>
+    <string name="dejavu_preference_mouse_support">پشتیبانی از موشواره</string>
+    <string name="dejavu_preference_mouse_support_summary">کلیک وسط پیوند را در یک زبانهٔ پس‌زمینه باز می‌کند و نگه داشتن نشانگر روی پیوند نشانی آن را نشان می‌دهد. کلیک وسط روی یک زبانه آن را می‌بندد.</string>
 </resources>

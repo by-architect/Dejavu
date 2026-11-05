@@ -330,7 +330,6 @@
     <string name="dejavu_feature_firefox_sync">Acompanhe o Firefox nos seus computadores e celulares</string>
     <string name="dejavu_settings_whats_new">Novidades</string>
     <string name="dejavu_settings_whats_new_summary">O que cada versão trouxe e um tour pelo Dejavu</string>
-    <string name="dejavu_settings_author">Criado por %1$s</string>
     <string name="dejavu_settings_coffee">Me pague um café</string>
     <string name="dejavu_settings_coffee_summary">O Dejavu não tem anúncios. Se você gosta dele, um café o ajuda a crescer.</string>
     <string name="dejavu_settings_safe_browsing">Navegação segura do Google</string>
@@ -558,4 +557,8 @@
     <string name="dejavu_screenshot_save_failed">Não foi possível salvar a captura de tela.</string>
     <string name="dejavu_screenshot_permission">Salvar capturas de tela requer permissão para armazenar arquivos. Você pode permitir isso nas configurações do aplicativo no Android.</string>
     <string name="dejavu_no_closed_tabs">Nenhuma aba fechada recentemente</string>
+    <string name="dejavu_menu_customize_reader_view">Personalizar modo de leitura</string>
+    <string name="dejavu_remote_debugging_summary">É desativada de novo quando o Dejavu é reiniciado</string>
+    <string name="dejavu_preference_mouse_support">Suporte a mouse</string>
+    <string name="dejavu_preference_mouse_support_summary">Um clique com o botão do meio abre um link em uma aba em segundo plano, e passar o mouse sobre um link mostra o endereço dele. Um clique com o botão do meio em uma aba a fecha.</string>
 </resources>

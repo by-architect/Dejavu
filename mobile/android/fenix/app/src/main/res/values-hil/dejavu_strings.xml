@@ -323,7 +323,6 @@
     <string name="dejavu_feature_firefox_sync">Sunda ang Firefox sa imo mga kompyuter kag telepono</string>
     <string name="dejavu_settings_whats_new">Ano ang bag-o</string>
     <string name="dejavu_settings_whats_new_summary">Ano ang gindala sang kada bersyon, kag isa ka paglibot sa Dejavu</string>
-    <string name="dejavu_settings_author">Ginhimo ni %1$s</string>
     <string name="dejavu_settings_coffee">Ibakal mo ako sang kape</string>
     <string name="dejavu_settings_coffee_summary">Wala sing ads ang Dejavu. Kon nanamian ka sini, nagabulig ang isa ka kape sa iya pagdaku.</string>
     <string name="dejavu_settings_safe_browsing">Google Safe Browsing</string>
@@ -550,4 +549,8 @@
     <string name="dejavu_screenshot_save_failed">Wala ma-save ang screenshot.</string>
     <string name="dejavu_screenshot_permission">Ang pag-save sang mga screenshot nagakinahanglan sang permiso sa pagtipig sang mga file. Mahimo mo ini tugutan sa mga setting sang app sa Android.</string>
     <string name="dejavu_no_closed_tabs">Wala sing tab nga bag-o lang nasira</string>
+    <string name="dejavu_menu_customize_reader_view">i-Customize ang reader view</string>
+    <string name="dejavu_remote_debugging_summary">Mag-off liwat kon mag-restart ang Dejavu</string>
+    <string name="dejavu_preference_mouse_support">Suporta sa mouse</string>
+    <string name="dejavu_preference_mouse_support_summary">Ang middle-click nagabukas sang link sa background tab, kag ang pag-hover sa link nagapakita sang iya address. Ang middle-click sa tab nagasara sini.</string>
 </resources>

@@ -323,7 +323,6 @@
     <string name="dejavu_feature_firefox_sync">Seque Firefox super tu computatores e telephonos</string>
     <string name="dejavu_settings_whats_new">Lo que es nove</string>
     <string name="dejavu_settings_whats_new_summary">Lo que cata version ha apportate, e un visita guidate de Dejavu</string>
-    <string name="dejavu_settings_author">Create per %1$s</string>
     <string name="dejavu_settings_coffee">Offere me un caffe</string>
     <string name="dejavu_settings_coffee_summary">Dejavu non ha publicitate. Si illo te place, un caffe lo adjuta a crescer.</string>
     <string name="dejavu_settings_safe_browsing">Navigation secur de Google</string>
@@ -550,4 +549,8 @@
     <string name="dejavu_screenshot_save_failed">Impossibile salvar le instantaneo.</string>
     <string name="dejavu_screenshot_permission">Salvar instantaneos require le permission de immagazinar files. Tu pote permitter lo in le parametros del app de Android.</string>
     <string name="dejavu_no_closed_tabs">Nulle schedas claudite recentemente</string>
+    <string name="dejavu_menu_customize_reader_view">Personalisar le vista de lectura</string>
+    <string name="dejavu_remote_debugging_summary">Se disactiva de novo quando Dejavu se reinitia</string>
+    <string name="dejavu_preference_mouse_support">Supporto del mus</string>
+    <string name="dejavu_preference_mouse_support_summary">Un clic central aperi un ligamine in un scheda in secunde plano, e passar super un ligamine monstra su adresse. Un clic central super un scheda lo claude.</string>
 </resources>

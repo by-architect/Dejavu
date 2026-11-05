@@ -330,7 +330,6 @@
     <string name="dejavu_feature_firefox_sync">עקבו אחרי Firefox במחשבים ובטלפונים שלכם</string>
     <string name="dejavu_settings_whats_new">מה חדש</string>
     <string name="dejavu_settings_whats_new_summary">מה הביאה כל גרסה, וסיור ב-Dejavu</string>
-    <string name="dejavu_settings_author">נוצר על ידי %1$s</string>
     <string name="dejavu_settings_coffee">קנו לי קפה</string>
     <string name="dejavu_settings_coffee_summary">אין ב-Dejavu פרסומות. אם הוא מוצא חן בעיניכם, קפה עוזר לו לגדול.</string>
     <string name="dejavu_settings_safe_browsing">הגלישה הבטוחה של Google</string>
@@ -558,4 +557,8 @@
     <string name="dejavu_screenshot_save_failed">לא ניתן היה לשמור את צילום המסך.</string>
     <string name="dejavu_screenshot_permission">שמירת צילומי מסך דורשת הרשאה לאחסון קבצים. ניתן לאפשר זאת בהגדרות האפליקציה ב-Android.</string>
     <string name="dejavu_no_closed_tabs">אין לשוניות שנסגרו לאחרונה</string>
+    <string name="dejavu_menu_customize_reader_view">התאמה אישית של תצוגת קריאה</string>
+    <string name="dejavu_remote_debugging_summary">נכבה שוב כש-Dejavu מופעל מחדש</string>
+    <string name="dejavu_preference_mouse_support">תמיכה בעכבר</string>
+    <string name="dejavu_preference_mouse_support_summary">לחיצה אמצעית פותחת קישור בלשונית ברקע, וריחוף מעל קישור מציג את הכתובת שלו. לחיצה אמצעית על לשונית סוגרת אותה.</string>
 </resources>

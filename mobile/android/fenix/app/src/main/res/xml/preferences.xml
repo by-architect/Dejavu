@@ -6,7 +6,7 @@
 <androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <!-- Dejavu: what each version brought, who makes Dejavu, its chat room, and a way to support it, on top of every
+    <!-- Dejavu: what each version brought, its source code, its chat room, and a way to support it, on top of every
          setting. -->
     <androidx.preference.PreferenceCategory
         android:key="@string/pref_key_dejavu_top_category"
@@ -28,9 +28,10 @@
             android:title="@string/dejavu_settings_tips" />
 
         <androidx.preference.Preference
-            android:icon="@drawable/dejavu_author_avatar"
-            android:key="@string/pref_key_dejavu_author"
-            android:summary="@string/dejavu_about_source_code"
+            android:icon="@drawable/dejavu_ic_code_24"
+            android:key="@string/pref_key_dejavu_source_code"
+            android:layout="@layout/dejavu_preference_source_code"
+            android:title="@string/dejavu_about_source_code"
             app:widgetLayout="@layout/preference_widget_external_link" />
 
         <androidx.preference.Preference
@@ -242,6 +243,7 @@
         <androidx.preference.SwitchPreferenceCompat
             android:key="@string/pref_key_remote_debugging"
             android:title="@string/preferences_remote_debugging"
+            android:summary="@string/dejavu_remote_debugging_summary"
             app:iconSpaceReserved="false"
             android:defaultValue="false" />
 

@@ -118,6 +118,7 @@ import org.mozilla.fenix.components.search.SearchMigration
 import org.mozilla.fenix.components.search.SearchWidgetMiddleware
 import org.mozilla.fenix.dejavu.PrivateNewTabMiddleware
 import org.mozilla.fenix.dejavu.browser.CallsAndLocation
+import org.mozilla.fenix.dejavu.browser.DejavuMouse
 import org.mozilla.fenix.dejavu.browser.GoogleSafeBrowsing
 import org.mozilla.fenix.dejavu.browser.JitAndWebGl
 import org.mozilla.fenix.dejavu.browser.PdfScripts
@@ -433,6 +434,9 @@ class Core(
 
                 // Dejavu: the extension that copies pages for "Save page" listens in every tab.
                 SavePage.install(engine, this)
+
+                // Dejavu: the extension of mouse support is in every page while it is on, and out of them while off.
+                DejavuMouse.apply(engine, this, context.components.settings.isMouseSupportEnabled)
 
                 // Dejavu: Firefox's search telemetry ("ads" and "cookies" extensions) is not installed, as Dejavu
                 // sends no telemetry: search result pages are not read for it and its list is not downloaded.

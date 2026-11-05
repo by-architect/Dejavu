@@ -337,7 +337,6 @@
     <string name="dejavu_feature_firefox_sync">Śledź Firefoksa na swoich komputerach i telefonach</string>
     <string name="dejavu_settings_whats_new">Co nowego</string>
     <string name="dejavu_settings_whats_new_summary">Co przyniosła każda wersja i przewodnik po Dejavu</string>
-    <string name="dejavu_settings_author">Autorstwa %1$s</string>
     <string name="dejavu_settings_coffee">Postaw mi kawę</string>
     <string name="dejavu_settings_coffee_summary">Dejavu nie ma reklam. Jeśli ci się podoba, kawa pomaga jej się rozwijać.</string>
     <string name="dejavu_settings_safe_browsing">Bezpieczne przeglądanie Google</string>
@@ -566,4 +565,8 @@
     <string name="dejavu_screenshot_save_failed">Nie można zapisać zrzutu ekranu.</string>
     <string name="dejavu_screenshot_permission">Zapisywanie zrzutów ekranu wymaga uprawnienia do przechowywania plików. Możesz na to zezwolić w ustawieniach aplikacji w Androidzie.</string>
     <string name="dejavu_no_closed_tabs">Nie ma ostatnio zamkniętych kart</string>
+    <string name="dejavu_menu_customize_reader_view">Dostosuj widok poprawionej czytelności</string>
+    <string name="dejavu_remote_debugging_summary">Wyłącza się znowu po ponownym uruchomieniu Dejavu</string>
+    <string name="dejavu_preference_mouse_support">Obsługa myszy</string>
+    <string name="dejavu_preference_mouse_support_summary">Kliknięcie środkowym przyciskiem otwiera odnośnik w karcie w tle, a najechanie na odnośnik wyświetla jego adres. Kliknięcie środkowym przyciskiem karty zamyka ją.</string>
 </resources>

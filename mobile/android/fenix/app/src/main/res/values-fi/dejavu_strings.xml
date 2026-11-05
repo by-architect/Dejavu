@@ -323,7 +323,6 @@
     <string name="dejavu_feature_firefox_sync">Seuraa Firefoxia tietokoneillasi ja puhelimillasi</string>
     <string name="dejavu_settings_whats_new">Mitä uutta</string>
     <string name="dejavu_settings_whats_new_summary">Mitä kukin versio toi sekä Dejavun esittely</string>
-    <string name="dejavu_settings_author">Tekijä: %1$s</string>
     <string name="dejavu_settings_coffee">Tarjoa minulle kahvit</string>
     <string name="dejavu_settings_coffee_summary">Dejavussa ei ole mainoksia. Jos pidät siitä, kahvit auttavat sitä kasvamaan.</string>
     <string name="dejavu_settings_safe_browsing">Google Selaussuoja</string>
@@ -550,4 +549,8 @@
     <string name="dejavu_screenshot_save_failed">Kuvakaappauksen tallennus epäonnistui.</string>
     <string name="dejavu_screenshot_permission">Kuvakaappausten tallentaminen vaatii oikeuden tallentaa tiedostoja. Voit sallia sen Androidin sovellusasetuksista.</string>
     <string name="dejavu_no_closed_tabs">Ei viimeksi suljettuja välilehtiä</string>
+    <string name="dejavu_menu_customize_reader_view">Mukauta lukunäkymää</string>
+    <string name="dejavu_remote_debugging_summary">Poistuu taas käytöstä, kun Dejavu käynnistyy uudelleen</string>
+    <string name="dejavu_preference_mouse_support">Hiiren tuki</string>
+    <string name="dejavu_preference_mouse_support_summary">Keskipainikkeen napsautus avaa linkin taustavälilehteen, ja hiiren pitäminen linkin päällä näyttää sen osoitteen. Välilehden napsautus keskipainikkeella sulkee sen.</string>
 </resources>

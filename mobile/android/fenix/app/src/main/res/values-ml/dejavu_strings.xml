@@ -323,7 +323,6 @@
     <string name="dejavu_feature_firefox_sync">നിങ്ങളുടെ കമ്പ്യൂട്ടറുകളിലെയും ഫോണുകളിലെയും Firefox പിന്തുടരുക</string>
     <string name="dejavu_settings_whats_new">പുതിയതെന്താണ്</string>
     <string name="dejavu_settings_whats_new_summary">ഓരോ പതിപ്പും കൊണ്ടുവന്നവ, ഒപ്പം Dejavu-യിലൂടെ ഒരു പര്യടനം</string>
-    <string name="dejavu_settings_author">%1$s സൃഷ്ടിച്ചത്</string>
     <string name="dejavu_settings_coffee">എനിക്കൊരു കാപ്പി വാങ്ങിത്തരൂ</string>
     <string name="dejavu_settings_coffee_summary">Dejavu-യിൽ പരസ്യങ്ങളില്ല. നിങ്ങൾക്കിത് ഇഷ്ടമായെങ്കിൽ, ഒരു കാപ്പി ഇതിന്റെ വളർച്ചയ്ക്ക് സഹായിക്കും.</string>
     <string name="dejavu_settings_safe_browsing">Google സുരക്ഷിത ബ്രൗസിംഗ്</string>
@@ -550,4 +549,8 @@
     <string name="dejavu_screenshot_save_failed">പ്രതലപ്പിളർപ്പ് കരുതിവയ്ക്കുവാൻ പറ്റിയില്ല.</string>
     <string name="dejavu_screenshot_permission">പ്രതലപ്പിളർപ്പുകൾ കരുതിവയ്ക്കുവാൻ ഫയലുകൾ സംഭരിക്കാനുള്ള അനുമതി വേണം. Android-ന്റെ ആപ്പ് ക്രമീകരണങ്ങളിൽ നിങ്ങൾക്ക് അത് അനുവദിക്കാം.</string>
     <string name="dejavu_no_closed_tabs">അടുത്തിടെ അടച്ച ടാബുകളൊന്നുമില്ല</string>
+    <string name="dejavu_menu_customize_reader_view">വായനയ്ക്കുള്ള കാഴ്ച ഇഷ്ടാനുസൃതമാക്കുക</string>
+    <string name="dejavu_remote_debugging_summary">Dejavu പുനരാരംഭിക്കുമ്പോൾ വീണ്ടും ഓഫാകും</string>
+    <string name="dejavu_preference_mouse_support">മൗസ് പിന്തുണ</string>
+    <string name="dejavu_preference_mouse_support_summary">നടുവിലെ ബട്ടൺ ക്ലിക്ക് ചെയ്താൽ ലിങ്ക് പശ്ചാത്തല ടാബിൽ തുറക്കും, ലിങ്കിനു മുകളിൽ പോയിന്റർ വെച്ചാൽ അതിന്റെ വിലാസം കാണിക്കും. ടാബിൽ നടുവിലെ ബട്ടൺ ക്ലിക്ക് ചെയ്താൽ അത് അടയ്ക്കും.</string>
 </resources>

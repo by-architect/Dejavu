@@ -323,7 +323,6 @@
     <string name="dejavu_feature_firefox_sync">Firefox auf deinen Computern und Smartphones folgen</string>
     <string name="dejavu_settings_whats_new">Was ist neu</string>
     <string name="dejavu_settings_whats_new_summary">Was jede Version gebracht hat, und eine Tour durch Dejavu</string>
-    <string name="dejavu_settings_author">Erstellt von %1$s</string>
     <string name="dejavu_settings_coffee">Spendier mir einen Kaffee</string>
     <string name="dejavu_settings_coffee_summary">Dejavu hat keine Werbung. Wenn es dir gefällt, hilft ein Kaffee beim Wachsen.</string>
     <string name="dejavu_settings_safe_browsing">Google Safe Browsing</string>
@@ -550,4 +549,8 @@
     <string name="dejavu_screenshot_save_failed">Das Bildschirmfoto konnte nicht gespeichert werden.</string>
     <string name="dejavu_screenshot_permission">Bildschirmfotos können nur gespeichert werden, wenn die App Dateien speichern darf. Du kannst das in den App-Einstellungen von Android erlauben.</string>
     <string name="dejavu_no_closed_tabs">Keine kürzlich geschlossenen Tabs vorhanden</string>
+    <string name="dejavu_menu_customize_reader_view">Leseansicht anpassen</string>
+    <string name="dejavu_remote_debugging_summary">Wird beim Neustart von Dejavu wieder deaktiviert</string>
+    <string name="dejavu_preference_mouse_support">Mausunterstützung</string>
+    <string name="dejavu_preference_mouse_support_summary">Ein Mittelklick öffnet einen Link in einem Hintergrund-Tab, und wenn der Mauszeiger auf einem Link ruht, wird seine Adresse angezeigt. Ein Mittelklick auf einen Tab schließt ihn.</string>
 </resources>

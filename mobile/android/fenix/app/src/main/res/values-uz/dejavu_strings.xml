@@ -323,7 +323,6 @@
     <string name="dejavu_feature_firefox_sync">Kompyuter va telefonlaringizdagi Firefox-ni kuzatib boring</string>
     <string name="dejavu_settings_whats_new">Yangiliklar</string>
     <string name="dejavu_settings_whats_new_summary">Har bir versiya nimalar olib kelgani va Dejavu bilan tanishuv</string>
-    <string name="dejavu_settings_author">%1$s tomonidan yaratilgan</string>
     <string name="dejavu_settings_coffee">Menga qahva olib bering</string>
     <string name="dejavu_settings_coffee_summary">Dejavu-da reklama yo\'q. Agar sizga yoqsa, bir chashka qahva uning rivojlanishiga yordam beradi.</string>
     <string name="dejavu_settings_safe_browsing">Google Xavfsiz koʻrish</string>
@@ -550,4 +549,8 @@
     <string name="dejavu_screenshot_save_failed">Skrinshotni saqlab bo\'lmadi.</string>
     <string name="dejavu_screenshot_permission">Skrinshotlarni saqlash uchun fayllarni saqlashga ruxsat kerak. Bunga Android ilova sozlamalarida ruxsat berishingiz mumkin.</string>
     <string name="dejavu_no_closed_tabs">Yaqinda yopilgan varaqlar yoʻq</string>
+    <string name="dejavu_menu_customize_reader_view">Oʻqish rejimini moslash</string>
+    <string name="dejavu_remote_debugging_summary">Dejavu qayta ishga tushganda yana oʻchadi</string>
+    <string name="dejavu_preference_mouse_support">Sichqoncha yordami</string>
+    <string name="dejavu_preference_mouse_support_summary">O‘rta tugma bilan bosish havolani orqa fondagi varaqda ochadi, havola ustiga sichqonchani olib borish esa uning manzilini ko‘rsatadi. Varaqni o‘rta tugma bilan bosish uni yopadi.</string>
 </resources>
