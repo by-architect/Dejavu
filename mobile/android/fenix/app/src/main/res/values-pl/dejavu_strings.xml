@@ -439,6 +439,8 @@
     <string name="dejavu_bars_bottom_summary">Brak paska akcji. Przeciągnij pasek adresu w górę, aby otworzyć menu „Więcej”.</string>
     <string name="dejavu_settings_hide_system_bars">Ukryj paski stanu i nawigacji</string>
     <string name="dejavu_settings_hide_system_bars_summary">Gdy wyświetlana jest strona. Przesuń palcem od górnej lub dolnej krawędzi, aby na chwilę je zobaczyć.</string>
+    <string name="dejavu_settings_match_page_color">Dopasuj paski do koloru strony</string>
+    <string name="dejavu_settings_match_page_color_summary">Paski przyjmują kolor tła witryny. Po wyłączeniu zachowują kolory obszaru roboczego.</string>
     <string name="dejavu_bookmarks_export">Eksportuj do pliku</string>
     <plurals name="dejavu_bookmarks_exported">
         <item quantity="one">Wyeksportowano %1$d zakładkę</item>

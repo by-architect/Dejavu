@@ -418,6 +418,8 @@
     <string name="dejavu_bars_bottom_summary">Không có thanh thao tác. Vuốt thanh địa chỉ lên để mở Trình đơn khác.</string>
     <string name="dejavu_settings_hide_system_bars">Ẩn thanh trạng thái và thanh điều hướng</string>
     <string name="dejavu_settings_hide_system_bars_summary">Khi đang hiển thị một trang. Vuốt từ cạnh trên hoặc cạnh dưới để xem chúng trong giây lát.</string>
+    <string name="dejavu_settings_match_page_color">Khớp thanh với màu trang</string>
+    <string name="dejavu_settings_match_page_color_summary">Các thanh lấy màu nền của trang web. Khi tắt, chúng giữ màu của không gian làm việc.</string>
     <string name="dejavu_bookmarks_export">Xuất ra tập tin</string>
     <plurals name="dejavu_bookmarks_exported">
         <item quantity="other">Đã xuất %1$d dấu trang</item>

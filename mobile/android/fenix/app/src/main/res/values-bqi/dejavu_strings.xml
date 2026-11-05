@@ -425,6 +425,8 @@
     <string name="dejavu_bars_bottom_summary">بدون نوار کار یل. سی واز کردن منوی دیه، نوار نشۊوی ن و بالا بکش.</string>
     <string name="dejavu_settings_hide_system_bars">قایم کردن نوار وضعیت و ناوبری</string>
     <string name="dejavu_settings_hide_system_bars_summary">وختی یه صفحه نشون داده ابو. سی دیدنشون سی یه لحظه، از لبه بالا یا پایین بکشین.</string>
+    <string name="dejavu_settings_match_page_color">هماهنگ کردن نوارها با رنگ بلگه</string>
+    <string name="dejavu_settings_match_page_color_summary">نوارها رنگ پس‌زمینهٔ وب‌گاه را می‌گیرن. وختی خاموش بوئه، رنگ‌ای فضای کار می‌مونن.</string>
     <string name="dejavu_bookmarks_export">و در بردن بره فایل</string>
     <plurals name="dejavu_bookmarks_exported">
         <item quantity="one">%1$d نشووکا و در برده وابی</item>

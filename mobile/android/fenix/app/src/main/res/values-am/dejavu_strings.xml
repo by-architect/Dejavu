@@ -425,6 +425,8 @@
     <string name="dejavu_bars_bottom_summary">የእርምጃዎች አሞሌ የለም። ተጨማሪ ምናሌውን ለመክፈት የአድራሻ አሞሌን ወደ ላይ ያንሸራትቱ።</string>
     <string name="dejavu_settings_hide_system_bars">የሁኔታ እና የአሰሳ አሞሌዎችን ደብቅ</string>
     <string name="dejavu_settings_hide_system_bars_summary">ገጽ በሚታይበት ጊዜ። ለአፍታ ለማየት ከላይ ወይም ከታች ጠርዝ ያንሸራትቱ።</string>
+    <string name="dejavu_settings_match_page_color">አሞሌዎችን ከገጹ ቀለም ጋር አዛምድ</string>
+    <string name="dejavu_settings_match_page_color_summary">አሞሌዎቹ የድር ጣቢያውን የጀርባ ቀለም ይይዛሉ። ሲጠፋ የስራ ቦታ ቀለሞችን ይዘው ይቆያሉ።</string>
     <string name="dejavu_bookmarks_export">ወደ ፋይል ላክ</string>
     <plurals name="dejavu_bookmarks_exported">
         <item quantity="one">%1$d እልባት ወደ ፋይል ተልኳል</item>

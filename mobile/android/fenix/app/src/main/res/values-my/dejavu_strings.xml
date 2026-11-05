@@ -418,6 +418,8 @@
     <string name="dejavu_bars_bottom_summary">လုပ်ဆောင်ချက်ဘား မရှိပါ။ နောက်ထပ် မီနူးကို ဖွင့်ရန် လိပ်စာဘားကို အပေါ်သို့ ပွတ်ဆွဲပါ။</string>
     <string name="dejavu_settings_hide_system_bars">အခြေအနေနှင့် လမ်းညွှန်ဘားများကို ဖျောက်ရန်</string>
     <string name="dejavu_settings_hide_system_bars_summary">စာမျက်နှာ ပြသနေစဉ်။ ခဏကြည့်ရန် အပေါ် သို့မဟုတ် အောက်အစွန်းမှ ပွတ်ဆွဲပါ။</string>
+    <string name="dejavu_settings_match_page_color">ဘားများကို စာမျက်နှာအရောင်နှင့် ကိုက်ညီစေရန်</string>
+    <string name="dejavu_settings_match_page_color_summary">ဘားများသည် ဝဘ်ဆိုက်၏ နောက်ခံအရောင်ကို ယူသည်။ ပိတ်ထားပါက လုပ်ငန်းခွင်အရောင်များကို ထိန်းထားသည်။</string>
     <string name="dejavu_bookmarks_export">ဖိုင်သို့ ထုတ်ယူရန်</string>
     <plurals name="dejavu_bookmarks_exported">
         <item quantity="other">စာမှတ် %1$d ခုကို ထုတ်ယူပြီးပြီ</item>

@@ -439,6 +439,8 @@
     <string name="dejavu_bars_bottom_summary">Bez posku akcyji. Przeciōng posek z adresōm w gōra, coby ôdewrzić menu „Wiyncyj”.</string>
     <string name="dejavu_settings_hide_system_bars">Skryj paski statusu i nawigacyje</string>
     <string name="dejavu_settings_hide_system_bars_summary">Kej sie pokazuje strona. Przesuń palcym ôd wiyrchnij abo spodnij krawyńdzi, coby je na chwila ôbejrzeć.</string>
+    <string name="dejavu_settings_match_page_color">Dopasuj paski do farby strōny</string>
+    <string name="dejavu_settings_match_page_color_summary">Paski bierōm farba tła witryny. Po wyłōnczyniu zachowujōm farby ôbszaru roboczego.</string>
     <string name="dejavu_bookmarks_export">Eksportuj do zbioru</string>
     <plurals name="dejavu_bookmarks_exported">
         <item quantity="one">Wyeksportowano %1$d zokłodka</item>

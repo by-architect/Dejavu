@@ -432,6 +432,8 @@
     <string name="dejavu_bars_bottom_summary">Nesuna bara de łe asion. Scori in su ła bara dei indirisi par vèrxer el menù Altro.</string>
     <string name="dejavu_settings_hide_system_bars">Scondi le bare de stato e de navegasion</string>
     <string name="dejavu_settings_hide_system_bars_summary">Co se mostra na pagina. Scori dal bordo de sora o de soto par vedarle par un momento.</string>
+    <string name="dejavu_settings_match_page_color">Adata le bare al cołor de ła pagina</string>
+    <string name="dejavu_settings_match_page_color_summary">Le bare le tol el cołor de fondo del sito web. Se disativà, le mantien i cołori del spasio de laoro.</string>
     <string name="dejavu_bookmarks_export">Esporta in un file</string>
     <plurals name="dejavu_bookmarks_exported">
         <item quantity="one">%1$d segnaƚibro esportà</item>

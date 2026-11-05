@@ -425,6 +425,8 @@
     <string name="dejavu_bars_bottom_summary">क्रिया पट्टी नाही. अधिक मेनू उघडण्यासाठी पत्ता पट्टी वर स्वाइप करा.</string>
     <string name="dejavu_settings_hide_system_bars">स्टेटस आणि नेव्हिगेशन बार लपवा</string>
     <string name="dejavu_settings_hide_system_bars_summary">पेज दाखवले जात असताना. त्यांना क्षणभर पाहण्यासाठी वरच्या किंवा खालच्या कडेवरून स्वाइप करा.</string>
+    <string name="dejavu_settings_match_page_color">बार पेजच्या रंगाशी जुळवा</string>
+    <string name="dejavu_settings_match_page_color_summary">बार वेबसाइटचा पार्श्वभूमी रंग घेतात. बंद असताना ते वर्कस्पेसचे रंग ठेवतात.</string>
     <string name="dejavu_bookmarks_export">फाइलमध्ये निर्यात करा</string>
     <plurals name="dejavu_bookmarks_exported">
         <item quantity="one">%1$d बुकमार्क निर्यात केला</item>

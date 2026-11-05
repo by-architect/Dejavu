@@ -425,6 +425,8 @@
     <string name="dejavu_bars_bottom_summary">Inget åtgärdsfält. Svep adressfältet uppåt för att öppna Mer-menyn.</string>
     <string name="dejavu_settings_hide_system_bars">Dölj status- och navigeringsfältet</string>
     <string name="dejavu_settings_hide_system_bars_summary">Medan en sida visas. Svep in från över- eller underkanten för att se dem en stund.</string>
+    <string name="dejavu_settings_match_page_color">Anpassa fälten efter sidans färg</string>
+    <string name="dejavu_settings_match_page_color_summary">Fälten tar webbplatsens bakgrundsfärg. Avstängt behåller de arbetsytans färger.</string>
     <string name="dejavu_bookmarks_export">Exportera till fil</string>
     <plurals name="dejavu_bookmarks_exported">
         <item quantity="one">%1$d bokmärke exporterat</item>

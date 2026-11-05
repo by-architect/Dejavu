@@ -425,6 +425,8 @@
     <string name="dejavu_bars_bottom_summary">Ekintza-barrarik ez. Pasatu helbide-barra gora «Gehiago» menua irekitzeko.</string>
     <string name="dejavu_settings_hide_system_bars">Ezkutatu egoera- eta nabigazio-barrak</string>
     <string name="dejavu_settings_hide_system_bars_summary">Orri bat erakusten den bitartean. Pasatu hatza goiko edo beheko ertzetik une batez ikusteko.</string>
+    <string name="dejavu_settings_match_page_color">Egokitu barrak orriaren kolorera</string>
+    <string name="dejavu_settings_match_page_color_summary">Barrek webgunearen atzeko planoko kolorea hartzen dute. Desaktibatuta, laneko eremuaren koloreak mantentzen dituzte.</string>
     <string name="dejavu_bookmarks_export">Esportatu fitxategira</string>
     <plurals name="dejavu_bookmarks_exported">
         <item quantity="one">%1$d laster-marka esportatu da</item>

@@ -442,6 +442,8 @@
     <string name="dejavu_bars_bottom_summary">Eylem çubuğu yok. Diğer menüsünü açmak için adres çubuğunu yukarı kaydırın.</string>
     <string name="dejavu_settings_hide_system_bars">Durum ve gezinme çubuklarını gizle</string>
     <string name="dejavu_settings_hide_system_bars_summary">Bir sayfa gösterilirken. Kısa bir süre görmek için üst veya alt kenardan kaydırın.</string>
+    <string name="dejavu_settings_match_page_color">Çubukları sayfa rengine uydur</string>
+    <string name="dejavu_settings_match_page_color_summary">Çubuklar sitenin arka plan rengini alır. Kapalıyken çalışma alanı renklerini korur.</string>
     <string name="dejavu_bookmarks_export">Dosyaya dışa aktar</string>
     <plurals name="dejavu_bookmarks_exported">
         <item quantity="one">%1$d yer imi dışa aktarıldı</item>

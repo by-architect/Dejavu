@@ -425,6 +425,8 @@
     <string name="dejavu_bars_bottom_summary">Tembiapo barra\'ỹre. Erova kundaharape barra yvate gotyo embojuruja hag̃ua Menu Ambueve.</string>
     <string name="dejavu_settings_hide_system_bars">Mokañy umi barra rekoreko ha jeguata rehegua</string>
     <string name="dejavu_settings_hide_system_bars_summary">Peteĩ kuatiarogue ojehechauka aja. Emosyryry yvate térã yvy gotyo rembe\'ýgui ehecha hag̃ua sapy\'apy\'ánte.</string>
+    <string name="dejavu_settings_match_page_color">Emoĩ barra ñandutirovetã sa\'y ndive</string>
+    <string name="dejavu_settings_match_page_color_summary">Umi barra ojagarra ñandutiregua rapykuere sa\'y. Ojepe\'a vove, opyta tembiapoha sa\'y.</string>
     <string name="dejavu_bookmarks_export">Marandurendápe jegueraha</string>
     <plurals name="dejavu_bookmarks_exported">
         <item quantity="one">%1$d techaukaha ojegueraha</item>

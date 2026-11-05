@@ -49,6 +49,7 @@ class DejavuSettings private constructor(context: Context) {
     )
     private val _moreMenuEditHidden = MutableStateFlow(prefs.getBoolean(KEY_MORE_MENU_EDIT_HIDDEN, false))
     private val _systemBarsHidden = MutableStateFlow(prefs.getBoolean(KEY_SYSTEM_BARS_HIDDEN, false))
+    private val _matchPageColor = MutableStateFlow(prefs.getBoolean(KEY_MATCH_PAGE_COLOR, true))
     private val _barsLayout = MutableStateFlow(BarsLayout.fromKey(prefs.getString(KEY_BARS_LAYOUT, null)))
     private val _homeSearchAtBottom = MutableStateFlow(prefs.getBoolean(KEY_HOME_SEARCH_AT_BOTTOM, false))
     private val _addressBarButtons = MutableStateFlow(readAddressBarButtons())
@@ -95,6 +96,9 @@ class DejavuSettings private constructor(context: Context) {
 
     /** Whether the status bar and the navigation bar are hidden while a page shows. */
     val systemBarsHidden: StateFlow<Boolean> = _systemBarsHidden.asStateFlow()
+
+    /** Whether the bars around a page take the background color of the website, or keep the workspace colors. */
+    val matchPageColor: StateFlow<Boolean> = _matchPageColor.asStateFlow()
 
     /** Where the bars show around pages, and so where the "More" menu opens from. */
     val barsLayout: StateFlow<BarsLayout> = _barsLayout.asStateFlow()
@@ -248,6 +252,11 @@ class DejavuSettings private constructor(context: Context) {
     fun setSystemBarsHidden(hidden: Boolean) {
         _systemBarsHidden.value = hidden
         prefs.edit { putBoolean(KEY_SYSTEM_BARS_HIDDEN, hidden) }
+    }
+
+    fun setMatchPageColor(match: Boolean) {
+        _matchPageColor.value = match
+        prefs.edit { putBoolean(KEY_MATCH_PAGE_COLOR, match) }
     }
 
     fun setBarsLayout(layout: BarsLayout) {
@@ -439,6 +448,7 @@ class DejavuSettings private constructor(context: Context) {
         private const val KEY_MORE_MENU_ROWS = "more_menu_rows"
         private const val KEY_MORE_MENU_EDIT_HIDDEN = "more_menu_edit_hidden"
         private const val KEY_SYSTEM_BARS_HIDDEN = "system_bars_hidden"
+        private const val KEY_MATCH_PAGE_COLOR = "match_page_color"
         private const val KEY_BARS_LAYOUT = "bars_layout"
         private const val KEY_HOME_SEARCH_AT_BOTTOM = "home_search_at_bottom"
         private const val KEY_ADDRESS_BAR_START = "address_bar_start"

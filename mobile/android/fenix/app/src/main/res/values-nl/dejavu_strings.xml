@@ -425,6 +425,8 @@
     <string name="dejavu_bars_bottom_summary">Geen actiebalk. Veeg de adresbalk omhoog om het menu “Meer” te openen.</string>
     <string name="dejavu_settings_hide_system_bars">Status- en navigatiebalk verbergen</string>
     <string name="dejavu_settings_hide_system_bars_summary">Terwijl een pagina wordt getoond. Veeg vanaf de boven- of onderrand om ze even te zien.</string>
+    <string name="dejavu_settings_match_page_color">Balken aanpassen aan de paginakleur</string>
+    <string name="dejavu_settings_match_page_color_summary">De balken nemen de achtergrondkleur van de website over. Uitgeschakeld behouden ze de kleuren van de werkruimte.</string>
     <string name="dejavu_bookmarks_export">Naar bestand exporteren</string>
     <plurals name="dejavu_bookmarks_exported">
         <item quantity="one">%1$d bladwijzer geëxporteerd</item>

@@ -425,6 +425,8 @@
     <string name="dejavu_bars_bottom_summary">చర్యల పట్టీ లేదు. మరిన్ని మెనూను తెరవడానికి చిరునామా పట్టీని పైకి స్వైప్ చేయండి.</string>
     <string name="dejavu_settings_hide_system_bars">స్టేటస్, నావిగేషన్ బార్‌లను దాచు</string>
     <string name="dejavu_settings_hide_system_bars_summary">పేజీ చూపబడుతున్నప్పుడు. వాటిని ఒక్క క్షణం చూడటానికి పై లేదా కింది అంచు నుండి స్వైప్ చేయండి.</string>
+    <string name="dejavu_settings_match_page_color">బార్‌లను పేజీ రంగుకు సరిపోల్చు</string>
+    <string name="dejavu_settings_match_page_color_summary">బార్‌లు వెబ్‌సైట్ నేపథ్య రంగును తీసుకుంటాయి. ఆఫ్ చేస్తే వర్క్‌స్పేస్ రంగులను ఉంచుతాయి.</string>
     <string name="dejavu_bookmarks_export">ఫైలుకు ఎగుమతి చేయి</string>
     <plurals name="dejavu_bookmarks_exported">
         <item quantity="one">%1$d ఇష్టాంశం ఎగుమతి చేయబడింది</item>

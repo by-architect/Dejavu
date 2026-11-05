@@ -425,6 +425,8 @@
     <string name="dejavu_bars_bottom_summary">ਕੋਈ ਕਾਰਵਾਈ ਪੱਟੀ ਨਹੀਂ। ਹੋਰ ਮੀਨੂ ਖੋਲ੍ਹਣ ਲਈ ਪਤਾ ਪੱਟੀ ਨੂੰ ਉੱਪਰ ਸਵਾਈਪ ਕਰੋ।</string>
     <string name="dejavu_settings_hide_system_bars">ਸਥਿਤੀ ਅਤੇ ਨੈਵੀਗੇਸ਼ਨ ਪੱਟੀਆਂ ਲੁਕਾਓ</string>
     <string name="dejavu_settings_hide_system_bars_summary">ਜਦੋਂ ਪੰਨਾ ਦਿਖਾਇਆ ਜਾਂਦਾ ਹੈ। ਉਹਨਾਂ ਨੂੰ ਇੱਕ ਪਲ ਲਈ ਵੇਖਣ ਲਈ ਉੱਪਰਲੇ ਜਾਂ ਹੇਠਲੇ ਕਿਨਾਰੇ ਤੋਂ ਸਵਾਈਪ ਕਰੋ।</string>
+    <string name="dejavu_settings_match_page_color">ਪੱਟੀਆਂ ਨੂੰ ਸਫ਼ੇ ਦੇ ਰੰਗ ਨਾਲ ਮਿਲਾਓ</string>
+    <string name="dejavu_settings_match_page_color_summary">ਪੱਟੀਆਂ ਵੈੱਬਸਾਈਟ ਦੇ ਪਿਛੋਕੜ ਦਾ ਰੰਗ ਲੈਂਦੀਆਂ ਹਨ। ਬੰਦ ਹੋਣ ਉੱਤੇ ਉਹ ਵਰਕਸਪੇਸ ਦੇ ਰੰਗ ਰੱਖਦੀਆਂ ਹਨ।</string>
     <string name="dejavu_bookmarks_export">ਫ਼ਾਇਲ ਵਿੱਚ ਐਕਸਪੋਰਟ ਕਰੋ</string>
     <plurals name="dejavu_bookmarks_exported">
         <item quantity="one">%1$d ਬੁੱਕਮਾਰਕ ਐਕਸਪੋਰਟ ਕੀਤਾ ਗਿਆ</item>

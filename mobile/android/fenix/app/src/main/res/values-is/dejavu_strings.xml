@@ -425,6 +425,8 @@
     <string name="dejavu_bars_bottom_summary">Engin aðgerðastika. Strjúktu veffangastikuna upp til að opna valmyndina „Meira“.</string>
     <string name="dejavu_settings_hide_system_bars">Fela stöðustiku og leiðsagnarstiku</string>
     <string name="dejavu_settings_hide_system_bars_summary">Á meðan síða er sýnd. Strjúktu inn frá efri eða neðri brún til að sjá þær í smástund.</string>
+    <string name="dejavu_settings_match_page_color">Laga stikur að lit síðunnar</string>
+    <string name="dejavu_settings_match_page_color_summary">Stikurnar fá bakgrunnslit vefsins. Þegar slökkt er halda þær litum vinnusvæðisins.</string>
     <string name="dejavu_bookmarks_export">Flytja út í skrá</string>
     <plurals name="dejavu_bookmarks_exported">
         <item quantity="one">%1$d bókamerki flutt út</item>

@@ -439,6 +439,8 @@
     <string name="dejavu_bars_bottom_summary">Žana akcijowa lajsta. Trějće adresowe polo horje, zo by so dalši meni wočinił.</string>
     <string name="dejavu_settings_hide_system_bars">Lajsty statusa a nawigacije schować</string>
     <string name="dejavu_settings_hide_system_bars_summary">Mjeztym zo so strona pokazuje. Ćehńće wot hornjeje abo delnjeje kromy, zo byšće je na wokomik widźeli.</string>
+    <string name="dejavu_settings_match_page_color">Lajsty na barbu strony přiměrić</string>
+    <string name="dejavu_settings_match_page_color_summary">Lajsty přewozmu pozadkowu barbu websydła. Hdyž je wupinjene, zachowaja barby dźěłoweho rumu.</string>
     <string name="dejavu_bookmarks_export">Do dataje eksportować</string>
     <plurals name="dejavu_bookmarks_exported">
         <item quantity="one">%1$d zapołožka je eksportowana</item>

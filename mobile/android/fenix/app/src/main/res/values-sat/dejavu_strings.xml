@@ -432,6 +432,8 @@
     <string name="dejavu_bars_bottom_summary">ᱮᱠᱥᱚᱱ ᱵᱟᱨ ᱵᱟᱹᱱᱩᱜᱼᱟ ᱾ ᱢᱚᱨ ᱢᱮᱱᱩ ᱡᱷᱤᱡᱽ ᱞᱟᱹᱜᱤᱫ ᱴᱷᱤᱠᱟᱱᱟ ᱵᱟᱨ ᱪᱮᱛᱟᱱ ᱛᱮ ᱥᱣᱟᱭᱤᱯ ᱢᱮ ᱾</string>
     <string name="dejavu_settings_hide_system_bars">ᱥᱴᱮᱴᱟᱥ ᱟᱨ ᱱᱮᱵᱷᱤᱜᱮᱥᱚᱱ ᱵᱟᱨ ᱩᱠᱩ ᱢᱮ</string>
     <string name="dejavu_settings_hide_system_bars_summary">ᱡᱚᱠᱷᱚᱱ ᱥᱟᱦᱴᱟ ᱩᱫᱩᱜ ᱠᱟᱱᱟ᱾ ᱛᱤᱱᱟᱹᱜ ᱜᱷᱟᱹᱲᱤᱡ ᱧᱮᱞ ᱞᱟᱹᱜᱤᱫ ᱪᱮᱛᱟᱱ ᱥᱮ ᱞᱟᱛᱟᱨ ᱥᱤᱢᱟᱹ ᱠᱷᱚᱱ ᱥᱣᱟᱭᱤᱯ ᱢᱮ᱾</string>
+    <string name="dejavu_settings_match_page_color">ᱵᱟᱨ ᱠᱚ ᱥᱟᱦᱴᱟ ᱨᱮᱱᱟᱜ ᱨᱚᱝ ᱥᱟᱶ ᱢᱤᱞᱟᱣ ᱢᱮ</string>
+    <string name="dejavu_settings_match_page_color_summary">ᱵᱟᱨ ᱠᱚ ᱣᱮᱵᱥᱟᱭᱤᱴ ᱨᱮᱱᱟᱜ ᱛᱟᱞᱟ ᱨᱚᱝ ᱵᱟᱵᱚᱛ ᱠᱚ ᱫᱚᱦᱚ ᱟ᱾ ᱵᱚᱸᱫ ᱠᱟᱱᱟ ᱥᱟᱶᱛᱮ ᱠᱟᱹᱢᱤ ᱞᱟᱹᱛᱩᱨ ᱨᱚᱝ ᱠᱚ ᱛᱟᱠᱚᱜ ᱟ᱾</string>
     <string name="dejavu_bookmarks_export">ᱨᱮᱫᱽ ᱛᱮ ᱤᱫᱤᱭ ᱢᱮ</string>
     <plurals name="dejavu_bookmarks_exported">
         <item quantity="one">%1$d ᱵᱩᱠᱢᱟᱨᱠ ᱨᱮᱫᱽ ᱛᱮ ᱤᱫᱤ ᱦᱩᱭ ᱮᱱᱟ</item>

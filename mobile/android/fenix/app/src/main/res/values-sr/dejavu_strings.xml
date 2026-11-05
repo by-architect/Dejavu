@@ -432,6 +432,8 @@
     <string name="dejavu_bars_bottom_summary">Без траке радњи. Превуците адресну траку нагоре да отворите мени „Више“.</string>
     <string name="dejavu_settings_hide_system_bars">Сакриј траке статуса и навигације</string>
     <string name="dejavu_settings_hide_system_bars_summary">Док је приказана страница. Превуците од горње или доње ивице да их видите на тренутак.</string>
+    <string name="dejavu_settings_match_page_color">Усклади траке са бојом странице</string>
+    <string name="dejavu_settings_match_page_color_summary">Траке преузимају боју позадине веб-сајта. Када је искључено, задржавају боје радног простора.</string>
     <string name="dejavu_bookmarks_export">Извези у датотеку</string>
     <plurals name="dejavu_bookmarks_exported">
         <item quantity="one">%1$d обележивач извезен</item>

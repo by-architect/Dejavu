@@ -418,6 +418,8 @@
     <string name="dejavu_bars_bottom_summary">Tanpa bilah tindakan. Geser bilah alamat ke atas untuk membuka Menu lainnya.</string>
     <string name="dejavu_settings_hide_system_bars">Sembunyikan bilah status dan navigasi</string>
     <string name="dejavu_settings_hide_system_bars_summary">Saat halaman ditampilkan. Usap dari tepi atas atau bawah untuk melihatnya sejenak.</string>
+    <string name="dejavu_settings_match_page_color">Samakan bilah dengan warna halaman</string>
+    <string name="dejavu_settings_match_page_color_summary">Bilah memakai warna latar situs web. Jika dimatikan, bilah tetap memakai warna ruang kerja.</string>
     <string name="dejavu_bookmarks_export">Ekspor ke berkas</string>
     <plurals name="dejavu_bookmarks_exported">
         <item quantity="other">%1$d markah diekspor</item>

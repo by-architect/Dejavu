@@ -425,6 +425,8 @@
     <string name="dejavu_bars_bottom_summary">Tegevusriba puudub. Libista aadressiriba üles, et menüü „Rohkem” avada.</string>
     <string name="dejavu_settings_hide_system_bars">Peida olekuriba ja navigeerimisriba</string>
     <string name="dejavu_settings_hide_system_bars_summary">Kui leht on kuvatud. Nende hetkeks nägemiseks pühkige ülemisest või alumisest servast.</string>
+    <string name="dejavu_settings_match_page_color">Ribad vastavalt lehe värvile</string>
+    <string name="dejavu_settings_match_page_color_summary">Ribad võtavad veebisaidi taustavärvi. Väljalülitatuna jäävad tööruumi värvid.</string>
     <string name="dejavu_bookmarks_export">Ekspordi faili</string>
     <plurals name="dejavu_bookmarks_exported">
         <item quantity="one">%1$d järjehoidja eksporditud</item>

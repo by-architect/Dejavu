@@ -425,6 +425,8 @@
     <string name="dejavu_bars_bottom_summary">کوئی ایکشن بار نہیں۔ مزید کا مینو کھولنے کے لیے پتہ بار کو اوپر سوائپ کریں۔</string>
     <string name="dejavu_settings_hide_system_bars">اسٹیٹس اور نیویگیشن بار چھپائیں</string>
     <string name="dejavu_settings_hide_system_bars_summary">جب کوئی صفحہ دکھایا جا رہا ہو۔ انہیں ایک لمحے کے لیے دیکھنے کے لیے اوپر یا نیچے کے کنارے سے سوائپ کریں۔</string>
+    <string name="dejavu_settings_match_page_color">بارز کو صفحے کے رنگ سے ملائیں</string>
+    <string name="dejavu_settings_match_page_color_summary">بارز ویب سائٹ کے پس منظر کا رنگ اختیار کرتی ہیں۔ بند ہونے پر وہ ورک اسپیس کے رنگ برقرار رکھتی ہیں۔</string>
     <string name="dejavu_bookmarks_export">فائل میں برآمد کریں</string>
     <plurals name="dejavu_bookmarks_exported">
         <item quantity="one">%1$d بک مارک برآمد ہوا</item>

@@ -425,6 +425,8 @@
     <string name="dejavu_bars_bottom_summary">بدون نوار کنش‌ها. برای باز کردن منوی «بیشتر»، نوار نشانی را به بالا بکشید.</string>
     <string name="dejavu_settings_hide_system_bars">پنهان کردن نوار وضعیت و نوار پیمایش</string>
     <string name="dejavu_settings_hide_system_bars_summary">هنگام نمایش یک صفحه. برای دیدن لحظه‌ای آن‌ها، از لبهٔ بالا یا پایین بکشید.</string>
+    <string name="dejavu_settings_match_page_color">هماهنگ‌سازی نوارها با رنگ صفحه</string>
+    <string name="dejavu_settings_match_page_color_summary">نوارها رنگ پس‌زمینهٔ وب‌سایت را می‌گیرند. در حالت خاموش، رنگ‌های فضای کار حفظ می‌شود.</string>
     <string name="dejavu_bookmarks_export">صادر کردن به فایل</string>
     <plurals name="dejavu_bookmarks_exported">
         <item quantity="one">%1$d نشانک صادر شد</item>

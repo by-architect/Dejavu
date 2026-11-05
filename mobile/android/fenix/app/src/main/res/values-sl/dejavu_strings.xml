@@ -439,6 +439,8 @@
     <string name="dejavu_bars_bottom_summary">Brez vrstice dejanj. Povlecite naslovno vrstico navzgor, da odprete meni „Več“.</string>
     <string name="dejavu_settings_hide_system_bars">Skrij vrstici stanja in krmarjenja</string>
     <string name="dejavu_settings_hide_system_bars_summary">Med prikazom strani. Povlecite z zgornjega ali spodnjega roba, da ju za trenutek vidite.</string>
+    <string name="dejavu_settings_match_page_color">Prilagodi vrstice barvi strani</string>
+    <string name="dejavu_settings_match_page_color_summary">Vrstice prevzamejo barvo ozadja spletnega mesta. Ko je izklopljeno, ohranijo barve delovnega prostora.</string>
     <string name="dejavu_bookmarks_export">Izvozi v datoteko</string>
     <plurals name="dejavu_bookmarks_exported">
         <item quantity="one">%1$d zaznamek izvožen</item>

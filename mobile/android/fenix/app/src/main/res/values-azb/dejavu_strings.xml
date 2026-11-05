@@ -425,6 +425,8 @@
     <string name="dejavu_bars_bottom_summary">عملیات‌لار پانئلی یوخدور. «داها چوخ» منوسونو آچماق اوچون آدرس چوبوغونو یوخاری سوروشدورون.</string>
     <string name="dejavu_settings_hide_system_bars">وضعیت و ناویقاسیا پانل‌لرینی گیزلت</string>
     <string name="dejavu_settings_hide_system_bars_summary">بیر صفحه گؤستریلنده. اونلاری بیر آن گؤرمک اوچون یوخاری یا آشاغی قیراغیندان سوروشدورون.</string>
+    <string name="dejavu_settings_match_page_color">پانل‌لری صفحه‌نین رنگینه اویدور</string>
+    <string name="dejavu_settings_match_page_color_summary">پانل‌لر وب سایتین آرخا پلان رنگینی گؤتورور. سؤندورولنده ایش ساحه‌سینین رنگلری قالیر.</string>
     <string name="dejavu_bookmarks_export">فایلا ایخراج ات</string>
     <plurals name="dejavu_bookmarks_exported">
         <item quantity="one">%1$d بوکمارک ایخراج اولوندو</item>

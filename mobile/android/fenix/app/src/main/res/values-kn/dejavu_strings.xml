@@ -425,6 +425,8 @@
     <string name="dejavu_bars_bottom_summary">ಕ್ರಿಯಾ ಪಟ್ಟಿ ಇಲ್ಲ. ಇನ್ನಷ್ಟು ಮೆನು ತೆರೆಯಲು ವಿಳಾಸ ಪಟ್ಟಿಯನ್ನು ಮೇಲಕ್ಕೆ ಸ್ವೈಪ್ ಮಾಡಿ.</string>
     <string name="dejavu_settings_hide_system_bars">ಸ್ಥಿತಿ ಮತ್ತು ನ್ಯಾವಿಗೇಶನ್ ಬಾರ್‌ಗಳನ್ನು ಮರೆಮಾಡಿ</string>
     <string name="dejavu_settings_hide_system_bars_summary">ಪುಟ ತೋರಿಸುತ್ತಿರುವಾಗ. ಅವುಗಳನ್ನು ಸ್ವಲ್ಪ ಹೊತ್ತು ನೋಡಲು ಮೇಲಿನ ಅಥವಾ ಕೆಳಗಿನ ಅಂಚಿನಿಂದ ಸ್ವೈಪ್ ಮಾಡಿ.</string>
+    <string name="dejavu_settings_match_page_color">ಬಾರ್‌ಗಳನ್ನು ಪುಟದ ಬಣ್ಣಕ್ಕೆ ಹೊಂದಿಸಿ</string>
+    <string name="dejavu_settings_match_page_color_summary">ಬಾರ್‌ಗಳು ವೆಬ್‌ಸೈಟ್‌ನ ಹಿನ್ನೆಲೆ ಬಣ್ಣವನ್ನು ಪಡೆಯುತ್ತವೆ. ಆಫ್ ಮಾಡಿದಾಗ ಕಾರ್ಯಸ್ಥಳದ ಬಣ್ಣಗಳನ್ನು ಇಟ್ಟುಕೊಳ್ಳುತ್ತವೆ.</string>
     <string name="dejavu_bookmarks_export">ಫೈಲ್‌ಗೆ ರಫ್ತು ಮಾಡು</string>
     <plurals name="dejavu_bookmarks_exported">
         <item quantity="one">%1$d ಬುಕ್‌ಮಾರ್ಕ್ ರಫ್ತು ಮಾಡಲಾಗಿದೆ</item>

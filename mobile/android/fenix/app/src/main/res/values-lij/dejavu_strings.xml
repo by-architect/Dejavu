@@ -425,6 +425,8 @@
     <string name="dejavu_bars_bottom_summary">Nisciunn-a barra de-e açioin. Fa scorrî in sciù a barra di indirissi pe arvî o menû Ciù.</string>
     <string name="dejavu_settings_hide_system_bars">Ascondi e bare de stato e de navegaçion</string>
     <string name="dejavu_settings_hide_system_bars_summary">Quande se mostra \'na pagina. Scorri da-o bòrdo de d\'ato ò de d\'abasso pe vedile pe \'n momento.</string>
+    <string name="dejavu_settings_match_page_color">Adatta e bare a-o cô da pagina</string>
+    <string name="dejavu_settings_match_page_color_summary">E bare piggian o cô de fondo do scito web. Se desativòu, mantëgnan i cori da spaçio de travaggio.</string>
     <string name="dejavu_bookmarks_export">Esporta inte \'n schedaio</string>
     <plurals name="dejavu_bookmarks_exported">
         <item quantity="one">%1$d segnalibbro esportou</item>

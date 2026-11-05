@@ -414,6 +414,11 @@
     <string name="pref_key_dejavu_hide_system_bars" translatable="false">pref_key_dejavu_hide_system_bars</string>
     <string name="dejavu_settings_hide_system_bars">Hide status and navigation bars</string>
     <string name="dejavu_settings_hide_system_bars_summary">While a page is shown. Swipe in from the top or bottom edge to see them for a moment.</string>
+    <string name="pref_key_dejavu_match_page_color" translatable="false">pref_key_dejavu_match_page_color</string>
+    <!-- Switch title in Customize, Bars: the status bar, address bar and navigation bar take the background color of the website. -->
+    <string name="dejavu_settings_match_page_color">Match bars to the page color</string>
+    <!-- Summary of that switch: when it is off, the bars keep the colors of the workspace. -->
+    <string name="dejavu_settings_match_page_color_summary">The bars take the background color of the website. Off keeps the workspace colors.</string>
 
     <!-- Settings: the screens that group the settings under General -->
     <!-- Settings entry and screen title, under General, for the settings of tabs, workspaces and containers. -->

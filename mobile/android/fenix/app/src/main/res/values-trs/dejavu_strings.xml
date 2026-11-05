@@ -425,6 +425,8 @@
     <string name="dejavu_bars_bottom_summary">Sin barra de acciones. Desliza hacia arriba la barra de direcciones para abrir el menú Más.</string>
     <string name="dejavu_settings_hide_system_bars">Ocultar las barras de estado y de navegación</string>
     <string name="dejavu_settings_hide_system_bars_summary">Mientras se muestra una página. Desliza desde el borde superior o inferior para verlas un momento.</string>
+    <string name="dejavu_settings_match_page_color">Adaptar las barras al color de la página</string>
+    <string name="dejavu_settings_match_page_color_summary">Las barras toman el color de fondo del sitio web. Si se desactiva, conservan los colores del espacio de trabajo.</string>
     <string name="dejavu_bookmarks_export">Exportar a archivo</string>
     <plurals name="dejavu_bookmarks_exported">
         <item quantity="one">%1$d marcador exportado</item>

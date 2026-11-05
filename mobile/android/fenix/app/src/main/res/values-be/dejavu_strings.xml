@@ -439,6 +439,8 @@
     <string name="dejavu_bars_bottom_summary">Без панэлі дзеянняў. Правядзіце адрасны радок уверх, каб адкрыць меню «Яшчэ».</string>
     <string name="dejavu_settings_hide_system_bars">Хаваць панэлі стану і навігацыі</string>
     <string name="dejavu_settings_hide_system_bars_summary">Пакуль паказваецца старонка. Правядзіце ад верхняга або ніжняга краю, каб на момант убачыць іх.</string>
+    <string name="dejavu_settings_match_page_color">Падбіраць колер панэляў да старонкі</string>
+    <string name="dejavu_settings_match_page_color_summary">Панэлі бяруць колер фону сайта. Калі выключана, яны захоўваюць колеры працоўнай прасторы.</string>
     <string name="dejavu_bookmarks_export">Экспартаваць у файл</string>
     <plurals name="dejavu_bookmarks_exported">
         <item quantity="one">%1$d закладка экспартавана</item>

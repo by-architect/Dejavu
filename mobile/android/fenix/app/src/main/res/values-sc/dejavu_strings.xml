@@ -425,6 +425,8 @@
     <string name="dejavu_bars_bottom_summary">Nissuna barra de is atziones. Iscurre a susu sa barra de indiritzos pro abèrrere su menu Prus.</string>
     <string name="dejavu_settings_hide_system_bars">Cua sas barras de istadu e de navigatzione</string>
     <string name="dejavu_settings_hide_system_bars_summary">Cando si mustrat una pàgina. Iscurre dae s\'oru de susu o de giosso pro las bìdere unu momentu.</string>
+    <string name="dejavu_settings_match_page_color">Atza sas barras a su colore de sa pàgina</string>
+    <string name="dejavu_settings_match_page_color_summary">Sas barras leant su colore de fundu de su situ web. Disativadu, mantenent sos colores de s\'ispàtziu de traballu.</string>
     <string name="dejavu_bookmarks_export">Esporta in un\'archìviu</string>
     <plurals name="dejavu_bookmarks_exported">
         <item quantity="one">%1$d sinnalibru esportadu</item>

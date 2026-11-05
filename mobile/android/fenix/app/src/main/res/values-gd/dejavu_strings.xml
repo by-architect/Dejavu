@@ -439,6 +439,8 @@
     <string name="dejavu_bars_bottom_summary">Gun bhàr ghnìomhan. Grad-shlaighd bàr an t-seòlaidh suas gus an clàr-taice Barrachd fhosgladh.</string>
     <string name="dejavu_settings_hide_system_bars">Falaich bàraichean na staid is na seòladaireachd</string>
     <string name="dejavu_settings_hide_system_bars_summary">Fhad \'s a tha duilleag ga shealltainn. Grad-shlaighd a-steach on oir gu h-àrd no gu h-ìosal airson am faicinn greiseag.</string>
+    <string name="dejavu_settings_match_page_color">Cuir bàraichean ri dath na duilleige</string>
+    <string name="dejavu_settings_match_page_color_summary">Gabhaidh na bàraichean dath cùlaibh an làraich-lìn. Nuair a tha e dheth, cumaidh iad dathan na h-àite-obrach.</string>
     <string name="dejavu_bookmarks_export">Às-phortaich gu faidhle</string>
     <plurals name="dejavu_bookmarks_exported">
         <item quantity="one">Chaidh %1$d comharra-lìn às-phortadh</item>

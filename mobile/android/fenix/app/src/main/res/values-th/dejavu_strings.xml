@@ -418,6 +418,8 @@
     <string name="dejavu_bars_bottom_summary">ไม่มีแถบการดำเนินการ ปัดแถบที่อยู่ขึ้นเพื่อเปิดเมนูเพิ่มเติม</string>
     <string name="dejavu_settings_hide_system_bars">ซ่อนแถบสถานะและแถบนำทาง</string>
     <string name="dejavu_settings_hide_system_bars_summary">ขณะแสดงหน้าเว็บ ปัดเข้ามาจากขอบบนหรือขอบล่างเพื่อดูแถบเหล่านี้ชั่วครู่</string>
+    <string name="dejavu_settings_match_page_color">ปรับแถบให้เข้ากับสีของหน้า</string>
+    <string name="dejavu_settings_match_page_color_summary">แถบจะใช้สีพื้นหลังของเว็บไซต์ เมื่อปิดจะคงสีของเวิร์กสเปซไว้</string>
     <string name="dejavu_bookmarks_export">ส่งออกไปยังไฟล์</string>
     <plurals name="dejavu_bookmarks_exported">
         <item quantity="other">ส่งออกที่คั่นหน้า %1$d รายการแล้ว</item>

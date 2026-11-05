@@ -458,6 +458,8 @@
     <string name="dejavu_bars_bottom_summary">কোনো অ্যাকশন বার নেই। আরও অপশন মেনু খুলতে ঠিকানা বারটি উপরে সোয়াইপ করুন।</string>
     <string name="dejavu_settings_hide_system_bars">স্ট্যাটাস ও নেভিগেশন বার লুকান</string>
     <string name="dejavu_settings_hide_system_bars_summary">যখন কোনো পেজ দেখানো হয়। এক মুহূর্তের জন্য দেখতে উপরের বা নিচের প্রান্ত থেকে সোয়াইপ করুন।</string>
+    <string name="dejavu_settings_match_page_color">বারগুলোকে পাতার রঙের সাথে মেলান</string>
+    <string name="dejavu_settings_match_page_color_summary">বারগুলো ওয়েবসাইটের ব্যাকগ্রাউন্ড রঙ নেয়। বন্ধ থাকলে ওয়ার্কস্পেসের রঙ থাকে।</string>
     <string name="dejavu_bookmarks_export">ফাইলে এক্সপোর্ট করুন</string>
     <plurals name="dejavu_bookmarks_exported">
         <item quantity="one">%1$d বুকমার্ক এক্সপোর্ট করা হয়েছে</item>

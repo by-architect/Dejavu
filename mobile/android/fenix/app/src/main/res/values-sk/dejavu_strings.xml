@@ -439,6 +439,8 @@
     <string name="dejavu_bars_bottom_summary">Bez panela akcií. Potiahnutím panela s adresou nahor otvoríte ponuku „Viac“.</string>
     <string name="dejavu_settings_hide_system_bars">Skryť stavový a navigačný panel</string>
     <string name="dejavu_settings_hide_system_bars_summary">Počas zobrazenia stránky. Potiahnutím od horného alebo dolného okraja ich na chvíľu zobrazíte.</string>
+    <string name="dejavu_settings_match_page_color">Prispôsobiť panely farbe stránky</string>
+    <string name="dejavu_settings_match_page_color_summary">Panely prevezmú farbu pozadia webu. Keď je vypnuté, zachovajú farby pracovného priestoru.</string>
     <string name="dejavu_bookmarks_export">Exportovať do súboru</string>
     <plurals name="dejavu_bookmarks_exported">
         <item quantity="one">%1$d záložka exportovaná</item>

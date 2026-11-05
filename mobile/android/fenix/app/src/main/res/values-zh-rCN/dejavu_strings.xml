@@ -418,6 +418,8 @@
     <string name="dejavu_bars_bottom_summary">无操作栏。向上滑动地址栏即可打开更多菜单。</string>
     <string name="dejavu_settings_hide_system_bars">隐藏状态栏和导航栏</string>
     <string name="dejavu_settings_hide_system_bars_summary">显示网页时。从上边缘或下边缘向内滑动可短暂显示它们。</string>
+    <string name="dejavu_settings_match_page_color">栏跟随网页颜色</string>
+    <string name="dejavu_settings_match_page_color_summary">栏使用网站的背景色。关闭后保持工作区颜色。</string>
     <string name="dejavu_bookmarks_export">导出到文件</string>
     <plurals name="dejavu_bookmarks_exported">
         <item quantity="other">已导出 %1$d 个书签</item>

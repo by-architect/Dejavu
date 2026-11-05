@@ -36,6 +36,11 @@
             android:key="@string/pref_key_dejavu_bars_bottom"
             android:title="@string/dejavu_bars_bottom"
             android:summary="@string/dejavu_bars_bottom_summary" />
+        <androidx.preference.SwitchPreferenceCompat
+            android:key="@string/pref_key_dejavu_match_page_color"
+            android:persistent="false"
+            android:title="@string/dejavu_settings_match_page_color"
+            android:summary="@string/dejavu_settings_match_page_color_summary" />
     </androidx.preference.PreferenceCategory>
 
     <androidx.preference.PreferenceCategory
