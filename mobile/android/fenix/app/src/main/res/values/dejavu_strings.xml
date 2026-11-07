@@ -948,4 +948,8 @@
     <string name="dejavu_workspace_lock_after">%1$s after you leave Dejavu</string>
     <!-- Choice of when unlocked workspaces lock again: only when the app is closed. -->
     <string name="dejavu_workspace_lock_on_close">When Dejavu closes</string>
+    <!-- Read out by screen readers for the number at the end of the address bar: how many pages Back goes through before it closes the tab. %1$d is that number, 1 on the page the tab opened on. -->
+    <string name="dejavu_tab_page_number">Page %1$d in this tab</string>
+    <!-- Heading of the menu that tapping that number opens: the pages of the tab, newest first, to go back or forward to one. -->
+    <string name="dejavu_tab_pages">Pages in this tab</string>
 </resources>

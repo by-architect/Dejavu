@@ -559,4 +559,6 @@
     <string name="dejavu_workspace_lock_on_leave">เมื่อคุณออกจาก Dejavu</string>
     <string name="dejavu_workspace_lock_after">%1$s หลังจากออกจาก Dejavu</string>
     <string name="dejavu_workspace_lock_on_close">เมื่อปิด Dejavu</string>
+    <string name="dejavu_tab_page_number">หน้าที่ %1$d ในแท็บนี้</string>
+    <string name="dejavu_tab_pages">หน้าในแท็บนี้</string>
 </resources>

@@ -583,4 +583,6 @@
     <string name="dejavu_workspace_lock_on_leave">Пры выхадзе з Dejavu</string>
     <string name="dejavu_workspace_lock_after">%1$s пасля выхаду з Dejavu</string>
     <string name="dejavu_workspace_lock_on_close">Пры закрыцці Dejavu</string>
+    <string name="dejavu_tab_page_number">Старонка %1$d у гэтай картцы</string>
+    <string name="dejavu_tab_pages">Старонкі ў гэтай картцы</string>
 </resources>

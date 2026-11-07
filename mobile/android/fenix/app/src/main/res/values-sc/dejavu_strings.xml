@@ -567,4 +567,6 @@
     <string name="dejavu_workspace_lock_on_leave">Cando bessis dae Dejavu</string>
     <string name="dejavu_workspace_lock_after">%1$s a pustis de èssere bessidu dae Dejavu</string>
     <string name="dejavu_workspace_lock_on_close">Cando Dejavu si serrat</string>
+    <string name="dejavu_tab_page_number">Pàgina %1$d in custa ischeda</string>
+    <string name="dejavu_tab_pages">Pàginas in custa ischeda</string>
 </resources>

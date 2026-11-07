@@ -567,4 +567,6 @@
     <string name="dejavu_workspace_lock_on_leave">Dejavu uztean</string>
     <string name="dejavu_workspace_lock_after">Dejavu utzi eta %1$s geroago</string>
     <string name="dejavu_workspace_lock_on_close">Dejavu ixtean</string>
+    <string name="dejavu_tab_page_number">Fitxa honetako %1$d. orria</string>
+    <string name="dejavu_tab_pages">Fitxa honetako orriak</string>
 </resources>

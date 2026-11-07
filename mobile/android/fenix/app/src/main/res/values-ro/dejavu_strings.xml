@@ -575,4 +575,6 @@
     <string name="dejavu_workspace_lock_on_leave">Când ieși din Dejavu</string>
     <string name="dejavu_workspace_lock_after">%1$s după ce ieși din Dejavu</string>
     <string name="dejavu_workspace_lock_on_close">Când Dejavu se închide</string>
+    <string name="dejavu_tab_page_number">Pagina %1$d din această filă</string>
+    <string name="dejavu_tab_pages">Paginile din această filă</string>
 </resources>

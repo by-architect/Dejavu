@@ -567,4 +567,6 @@
     <string name="dejavu_workspace_lock_on_leave">Dejavu’dan chiqqaningizda</string>
     <string name="dejavu_workspace_lock_after">Dejavu’dan chiqqaningizdan %1$s keyin</string>
     <string name="dejavu_workspace_lock_on_close">Dejavu yopilganda</string>
+    <string name="dejavu_tab_page_number">Bu varaqdagi %1$d-sahifa</string>
+    <string name="dejavu_tab_pages">Bu varaqdagi sahifalar</string>
 </resources>

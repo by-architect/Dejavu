@@ -559,4 +559,6 @@
     <string name="dejavu_workspace_lock_on_leave">Saat Anda meninggalkan Dejavu</string>
     <string name="dejavu_workspace_lock_after">%1$s setelah Anda meninggalkan Dejavu</string>
     <string name="dejavu_workspace_lock_on_close">Saat Dejavu ditutup</string>
+    <string name="dejavu_tab_page_number">Laman %1$d di tab ini</string>
+    <string name="dejavu_tab_pages">Laman di tab ini</string>
 </resources>

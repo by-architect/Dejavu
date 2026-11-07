@@ -567,4 +567,6 @@
     <string name="dejavu_workspace_lock_on_leave">Quand vous quittez Dejavu</string>
     <string name="dejavu_workspace_lock_after">%1$s après avoir quitté Dejavu</string>
     <string name="dejavu_workspace_lock_on_close">Quand Dejavu se ferme</string>
+    <string name="dejavu_tab_page_number">Page %1$d de cet onglet</string>
+    <string name="dejavu_tab_pages">Pages de cet onglet</string>
 </resources>

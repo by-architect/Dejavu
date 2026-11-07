@@ -575,4 +575,6 @@
     <string name="dejavu_workspace_lock_on_leave">Dejavu ᱟᱲᱟᱜ ᱚᱠᱛᱮ</string>
     <string name="dejavu_workspace_lock_after">Dejavu ᱟᱲᱟᱜ ᱛᱟᱭᱚᱢ %1$s</string>
     <string name="dejavu_workspace_lock_on_close">Dejavu ᱵᱚᱱᱫᱚ ᱚᱠᱛᱮ</string>
+    <string name="dejavu_tab_page_number">ᱱᱚᱶᱟ ᱴᱮᱵᱽ ᱨᱮᱭᱟᱜ ᱥᱟᱦᱴᱟ %1$d</string>
+    <string name="dejavu_tab_pages">ᱱᱚᱶᱟ ᱴᱮᱵᱽ ᱨᱮᱭᱟᱜ ᱥᱟᱦᱴᱟ ᱠᱚ</string>
 </resources>

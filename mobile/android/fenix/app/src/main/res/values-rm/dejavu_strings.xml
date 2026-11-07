@@ -567,4 +567,6 @@
     <string name="dejavu_workspace_lock_on_leave">Cura che ti bandunas Dejavu</string>
     <string name="dejavu_workspace_lock_after">%1$s suenter che ti has bandunà Dejavu</string>
     <string name="dejavu_workspace_lock_on_close">Cura che Dejavu vegn serrà</string>
+    <string name="dejavu_tab_page_number">Pagina %1$d en quest tab</string>
+    <string name="dejavu_tab_pages">Paginas en quest tab</string>
 </resources>

@@ -591,4 +591,6 @@
     <string name="dejavu_workspace_lock_on_leave">Pa guitait Dejavu</string>
     <string name="dejavu_workspace_lock_after">%1$s goude kuitaat Dejavu</string>
     <string name="dejavu_workspace_lock_on_close">Pa vez serret Dejavu</string>
+    <string name="dejavu_tab_page_number">Pajenn %1$d en ivinell-mañ</string>
+    <string name="dejavu_tab_pages">Pajennoù en ivinell-mañ</string>
 </resources>

@@ -567,4 +567,6 @@
     <string name="dejavu_workspace_lock_on_leave">Dejavu छोड्दा</string>
     <string name="dejavu_workspace_lock_after">Dejavu छोडेको %1$s पछि</string>
     <string name="dejavu_workspace_lock_on_close">Dejavu बन्द हुँदा</string>
+    <string name="dejavu_tab_page_number">यो ट्याबको पृष्ठ %1$d</string>
+    <string name="dejavu_tab_pages">यो ट्याबका पृष्ठहरू</string>
 </resources>

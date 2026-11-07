@@ -559,4 +559,6 @@
     <string name="dejavu_workspace_lock_on_leave">Rikala ngalinggahin Dejavu</string>
     <string name="dejavu_workspace_lock_after">%1$s sasampun ngalinggahin Dejavu</string>
     <string name="dejavu_workspace_lock_on_close">Rikala Dejavu kaserep</string>
+    <string name="dejavu_tab_page_number">Kaca %1$d ring tab puniki</string>
+    <string name="dejavu_tab_pages">Kaca ring tab puniki</string>
 </resources>

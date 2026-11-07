@@ -559,4 +559,6 @@
     <string name="dejavu_workspace_lock_on_leave">tenpo sina weka tan Dejavu</string>
     <string name="dejavu_workspace_lock_after">%1$s kepeken tenpo weka sina tan Dejavu</string>
     <string name="dejavu_workspace_lock_on_close">tenpo Dejavu li pini</string>
+    <string name="dejavu_tab_page_number">lipu nanpa %1$d lon poki ni</string>
+    <string name="dejavu_tab_pages">lipu lon poki ni</string>
 </resources>

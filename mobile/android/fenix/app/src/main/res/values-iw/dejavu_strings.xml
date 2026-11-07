@@ -575,4 +575,6 @@
     <string name="dejavu_workspace_lock_on_leave">ביציאה מ־Dejavu</string>
     <string name="dejavu_workspace_lock_after">%1$s אחרי היציאה מ־Dejavu</string>
     <string name="dejavu_workspace_lock_on_close">כש־Dejavu נסגר</string>
+    <string name="dejavu_tab_page_number">דף %1$d בלשונית זו</string>
+    <string name="dejavu_tab_pages">דפים בלשונית זו</string>
 </resources>

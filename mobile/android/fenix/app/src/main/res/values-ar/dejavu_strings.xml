@@ -599,4 +599,6 @@
     <string name="dejavu_workspace_lock_on_leave">عند مغادرة Dejavu</string>
     <string name="dejavu_workspace_lock_after">بعد %1$s من مغادرة Dejavu</string>
     <string name="dejavu_workspace_lock_on_close">عند إغلاق Dejavu</string>
+    <string name="dejavu_tab_page_number">الصفحة %1$d في هذا التبويب</string>
+    <string name="dejavu_tab_pages">الصفحات في هذا التبويب</string>
 </resources>

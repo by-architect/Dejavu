@@ -567,4 +567,6 @@
     <string name="dejavu_workspace_lock_on_leave">Mi ara teffɣeḍ seg Dejavu</string>
     <string name="dejavu_workspace_lock_after">%1$s seld tuffɣa seg Dejavu</string>
     <string name="dejavu_workspace_lock_on_close">Mi ara yemdel Dejavu</string>
+    <string name="dejavu_tab_page_number">Tasna %1$d g useksel-a</string>
+    <string name="dejavu_tab_pages">Tisniwin g useksel-a</string>
 </resources>

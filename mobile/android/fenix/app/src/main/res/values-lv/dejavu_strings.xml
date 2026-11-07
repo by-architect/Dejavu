@@ -575,4 +575,6 @@
     <string name="dejavu_workspace_lock_on_leave">Kad izejat no Dejavu</string>
     <string name="dejavu_workspace_lock_after">%1$s pēc iziešanas no Dejavu</string>
     <string name="dejavu_workspace_lock_on_close">Kad Dejavu tiek aizvērts</string>
+    <string name="dejavu_tab_page_number">Lapa %1$d šajā cilnē</string>
+    <string name="dejavu_tab_pages">Lapas šajā cilnē</string>
 </resources>

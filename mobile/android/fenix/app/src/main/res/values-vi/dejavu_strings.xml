@@ -559,4 +559,6 @@
     <string name="dejavu_workspace_lock_on_leave">Khi bạn rời Dejavu</string>
     <string name="dejavu_workspace_lock_after">%1$s sau khi rời Dejavu</string>
     <string name="dejavu_workspace_lock_on_close">Khi Dejavu đóng</string>
+    <string name="dejavu_tab_page_number">Trang %1$d trong thẻ này</string>
+    <string name="dejavu_tab_pages">Các trang trong thẻ này</string>
 </resources>

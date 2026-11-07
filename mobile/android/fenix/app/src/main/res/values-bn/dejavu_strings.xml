@@ -600,4 +600,6 @@
     <string name="dejavu_workspace_lock_on_leave">যখন Dejavu ছেড়ে যান</string>
     <string name="dejavu_workspace_lock_after">Dejavu ছাড়ার %1$s পরে</string>
     <string name="dejavu_workspace_lock_on_close">যখন Dejavu বন্ধ হয়</string>
+    <string name="dejavu_tab_page_number">এই ট্যাবের পাতা %1$d</string>
+    <string name="dejavu_tab_pages">এই ট্যাবের পাতাগুলো</string>
 </resources>

@@ -567,4 +567,6 @@
     <string name="dejavu_workspace_lock_on_leave">När du lämnar Dejavu</string>
     <string name="dejavu_workspace_lock_after">%1$s efter att du lämnat Dejavu</string>
     <string name="dejavu_workspace_lock_on_close">När Dejavu stängs</string>
+    <string name="dejavu_tab_page_number">Sida %1$d i den här fliken</string>
+    <string name="dejavu_tab_pages">Sidor i den här fliken</string>
 </resources>

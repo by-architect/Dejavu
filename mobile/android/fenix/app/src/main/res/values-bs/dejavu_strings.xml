@@ -575,4 +575,6 @@
     <string name="dejavu_workspace_lock_on_leave">Kada napustite Dejavu</string>
     <string name="dejavu_workspace_lock_after">%1$s nakon izlaska iz Dejavua</string>
     <string name="dejavu_workspace_lock_on_close">Kada se Dejavu zatvori</string>
+    <string name="dejavu_tab_page_number">Stranica %1$d u ovom tabu</string>
+    <string name="dejavu_tab_pages">Stranice u ovom tabu</string>
 </resources>

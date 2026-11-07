@@ -559,4 +559,6 @@
     <string name="dejavu_workspace_lock_on_leave">离开 Dejavu 时</string>
     <string name="dejavu_workspace_lock_after">离开 Dejavu %1$s后</string>
     <string name="dejavu_workspace_lock_on_close">关闭 Dejavu 时</string>
+    <string name="dejavu_tab_page_number">此标签页中的第 %1$d 页</string>
+    <string name="dejavu_tab_pages">此标签页中的页面</string>
 </resources>

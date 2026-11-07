@@ -599,4 +599,6 @@
     <string name="dejavu_workspace_lock_on_leave">Pan fyddwch yn gadael Dejavu</string>
     <string name="dejavu_workspace_lock_after">%1$s ar ôl i chi adael Dejavu</string>
     <string name="dejavu_workspace_lock_on_close">Pan fydd Dejavu’n cau</string>
+    <string name="dejavu_tab_page_number">Tudalen %1$d yn y tab hwn</string>
+    <string name="dejavu_tab_pages">Tudalennau yn y tab hwn</string>
 </resources>

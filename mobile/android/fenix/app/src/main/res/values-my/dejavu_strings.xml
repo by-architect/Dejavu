@@ -559,4 +559,6 @@
     <string name="dejavu_workspace_lock_on_leave">Dejavu မှ ထွက်သည့်အခါ</string>
     <string name="dejavu_workspace_lock_after">Dejavu မှ ထွက်ပြီး %1$s အကြာ</string>
     <string name="dejavu_workspace_lock_on_close">Dejavu ပိတ်သည့်အခါ</string>
+    <string name="dejavu_tab_page_number">ဤတပ်ဗ်ရှိ စာမျက်နှာ %1$d</string>
+    <string name="dejavu_tab_pages">ဤတပ်ဗ်ရှိ စာမျက်နှာများ</string>
 </resources>

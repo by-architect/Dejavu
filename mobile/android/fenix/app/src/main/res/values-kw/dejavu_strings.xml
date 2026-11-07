@@ -599,4 +599,6 @@
     <string name="dejavu_workspace_lock_on_leave">Pan wre’ta gasa Dejavu</string>
     <string name="dejavu_workspace_lock_after">%1$s wosa gasa Dejavu</string>
     <string name="dejavu_workspace_lock_on_close">Pan vo Dejavu degeys</string>
+    <string name="dejavu_tab_page_number">Folen %1$d y’n tab ma</string>
+    <string name="dejavu_tab_pages">Folennow y’n tab ma</string>
 </resources>

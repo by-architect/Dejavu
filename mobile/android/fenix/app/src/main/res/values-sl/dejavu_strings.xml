@@ -583,4 +583,6 @@
     <string name="dejavu_workspace_lock_on_leave">Ko zapustite Dejavu</string>
     <string name="dejavu_workspace_lock_after">%1$s po izhodu iz Dejavuja</string>
     <string name="dejavu_workspace_lock_on_close">Ko se Dejavu zapre</string>
+    <string name="dejavu_tab_page_number">Stran %1$d v tem zavihku</string>
+    <string name="dejavu_tab_pages">Strani v tem zavihku</string>
 </resources>

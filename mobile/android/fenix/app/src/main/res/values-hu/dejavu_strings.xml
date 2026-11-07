@@ -567,4 +567,6 @@
     <string name="dejavu_workspace_lock_on_leave">Amikor kilépsz a Dejavuból</string>
     <string name="dejavu_workspace_lock_after">A Dejavu elhagyása után %1$s elteltével</string>
     <string name="dejavu_workspace_lock_on_close">Amikor a Dejavu bezárul</string>
+    <string name="dejavu_tab_page_number">%1$d. oldal ezen a lapon</string>
+    <string name="dejavu_tab_pages">Oldalak ezen a lapon</string>
 </resources>

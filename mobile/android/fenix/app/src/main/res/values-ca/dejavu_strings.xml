@@ -575,4 +575,6 @@
     <string name="dejavu_workspace_lock_on_leave">Quan sortiu del Dejavu</string>
     <string name="dejavu_workspace_lock_after">%1$s després de sortir del Dejavu</string>
     <string name="dejavu_workspace_lock_on_close">Quan es tanca el Dejavu</string>
+    <string name="dejavu_tab_page_number">Pàgina %1$d d’aquesta pestanya</string>
+    <string name="dejavu_tab_pages">Pàgines d’aquesta pestanya</string>
 </resources>

@@ -567,4 +567,6 @@
     <string name="dejavu_workspace_lock_on_leave">کله چې له Dejavu څخه وځئ</string>
     <string name="dejavu_workspace_lock_after">له Dejavu څخه د وتلو %1$s وروسته</string>
     <string name="dejavu_workspace_lock_on_close">کله چې Dejavu بندېږي</string>
+    <string name="dejavu_tab_page_number">په دې ټب کې پاڼه %1$d</string>
+    <string name="dejavu_tab_pages">په دې ټب کې پاڼې</string>
 </resources>

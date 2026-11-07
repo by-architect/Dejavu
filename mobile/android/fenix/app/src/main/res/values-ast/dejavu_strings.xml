@@ -567,4 +567,6 @@
     <string name="dejavu_workspace_lock_on_leave">Al colar de Dejavu</string>
     <string name="dejavu_workspace_lock_after">%1$s dempués de colar de Dejavu</string>
     <string name="dejavu_workspace_lock_on_close">Al zarrar Dejavu</string>
+    <string name="dejavu_tab_page_number">Páxina %1$d d’esta llingüeta</string>
+    <string name="dejavu_tab_pages">Páxines d’esta llingüeta</string>
 </resources>

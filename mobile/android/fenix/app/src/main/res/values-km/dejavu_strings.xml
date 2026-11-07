@@ -559,4 +559,6 @@
     <string name="dejavu_workspace_lock_on_leave">នៅពេលអ្នកចាកចេញពី Dejavu</string>
     <string name="dejavu_workspace_lock_after">%1$s បន្ទាប់ពីចាកចេញពី Dejavu</string>
     <string name="dejavu_workspace_lock_on_close">នៅពេល Dejavu បិទ</string>
+    <string name="dejavu_tab_page_number">ទំព័រ %1$d ក្នុង​ផ្ទាំង​នេះ</string>
+    <string name="dejavu_tab_pages">ទំព័រ​ក្នុង​ផ្ទាំង​នេះ</string>
 </resources>

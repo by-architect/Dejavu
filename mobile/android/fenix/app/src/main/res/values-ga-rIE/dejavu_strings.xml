@@ -591,4 +591,6 @@
     <string name="dejavu_workspace_lock_on_leave">Nuair a fhágann tú Dejavu</string>
     <string name="dejavu_workspace_lock_after">%1$s tar éis duit Dejavu a fhágáil</string>
     <string name="dejavu_workspace_lock_on_close">Nuair a dhúntar Dejavu</string>
+    <string name="dejavu_tab_page_number">Leathanach %1$d sa chluaisín seo</string>
+    <string name="dejavu_tab_pages">Leathanaigh sa chluaisín seo</string>
 </resources>

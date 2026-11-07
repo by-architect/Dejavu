@@ -559,4 +559,6 @@
     <string name="dejavu_workspace_lock_on_leave">Dejavu から離れたとき</string>
     <string name="dejavu_workspace_lock_after">Dejavu から離れて %1$s後</string>
     <string name="dejavu_workspace_lock_on_close">Dejavu を閉じたとき</string>
+    <string name="dejavu_tab_page_number">このタブの %1$d ページ目</string>
+    <string name="dejavu_tab_pages">このタブのページ</string>
 </resources>

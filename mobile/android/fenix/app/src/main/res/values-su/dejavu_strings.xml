@@ -559,4 +559,6 @@
     <string name="dejavu_workspace_lock_on_leave">Mun anjeun ninggalkeun Dejavu</string>
     <string name="dejavu_workspace_lock_after">%1$s sanggeus ninggalkeun Dejavu</string>
     <string name="dejavu_workspace_lock_on_close">Mun Dejavu ditutup</string>
+    <string name="dejavu_tab_page_number">Kaca %1$d dina tab ieu</string>
+    <string name="dejavu_tab_pages">Kaca dina tab ieu</string>
 </resources>

@@ -559,4 +559,6 @@
     <string name="dejavu_workspace_lock_on_leave">Nígbà tí o bá kúrò ní Dejavu</string>
     <string name="dejavu_workspace_lock_after">%1$s lẹ́yìn tí o kúrò ní Dejavu</string>
     <string name="dejavu_workspace_lock_on_close">Nígbà tí Dejavu bá tì</string>
+    <string name="dejavu_tab_page_number">Ojú-ìwé %1$d nínú táàbù yìí</string>
+    <string name="dejavu_tab_pages">Àwọn ojú-ìwé nínú táàbù yìí</string>
 </resources>
