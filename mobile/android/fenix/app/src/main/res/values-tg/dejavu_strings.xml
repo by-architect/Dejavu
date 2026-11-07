@@ -569,4 +569,21 @@
     <string name="dejavu_workspace_lock_on_close">Ҳангоми пӯшидани Dejavu</string>
     <string name="dejavu_tab_page_number">Саҳифаи %1$d дар ин варақа</string>
     <string name="dejavu_tab_pages">Саҳифаҳо дар ин варақа</string>
+    <string name="dejavu_settings_tabs_import_export">Ворид ва содир кардани варақаҳо</string>
+    <string name="dejavu_settings_tabs_import_export_summary">Фазоҳо, ҷузвдонҳо ва варақаҳоро ба Sidebery ва аз Sidebery интиқол диҳед</string>
+    <string name="dejavu_sidebery_hint">Sidebery мудири варақаҳо барои Firefox дар компютерҳо мебошад. Панелҳои он дар ин ҷо фазоҳо, гурӯҳҳои варақаҳо ҷузвдонҳо ва варақаҳои часпонидашуда сомонаҳои муҳим мебошанд.</string>
+    <string name="dejavu_sidebery_export">Содир кардан ба Sidebery</string>
+    <string name="dejavu_sidebery_import">Ворид кардан аз Sidebery</string>
+    <string name="dejavu_sidebery_steps">Дар «Snapshots viewer»-и Sidebery «Import snapshot» файли Dejavu-ро мехонад ва «Open all windows» варақаҳои онро мекушояд. Барои овардани варақаҳо ба ин ҷо, дар он ҷо як акси фаврӣ интихоб кунед, баъд «Export snapshot» ва «Save as JSON». Фазоҳои қулфшуда то қулф буданашон содир намешаванд.</string>
+    <string name="dejavu_sidebery_new_workspaces">Фазоҳои нав</string>
+    <string name="dejavu_sidebery_essentials">Сомонаҳои муҳим</string>
+    <string name="dejavu_sidebery_new_containers">Контейнерҳои нав</string>
+    <string name="dejavu_sidebery_left_out">Партофташуда</string>
+    <string name="dejavu_sidebery_left_out_note">Саҳифаҳое, ки телефон кушода наметавонад, монанди файлҳои маҳаллӣ, ва варақаҳои равзанаҳои хусусӣ</string>
+    <string name="dejavu_sidebery_nothing_new">Дар ин файл ягон чизи нав нест.</string>
+    <string name="dejavu_sidebery_import_button">Ворид кардан</string>
+    <string name="dejavu_sidebery_imported">Аз Sidebery ворид карда шуд</string>
+    <string name="dejavu_sidebery_exported">Барои Sidebery нигоҳ дошта шуд</string>
+    <string name="dejavu_sidebery_export_failed">Файл нигоҳ дошта нашуд. Аз нав кӯшиш кунед.</string>
+    <string name="dejavu_sidebery_bad_file">Ин файл акси фаврӣ ё нусхаи эҳтиётии Sidebery нест.</string>
 </resources>

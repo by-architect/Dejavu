@@ -593,4 +593,21 @@
     <string name="dejavu_workspace_lock_on_close">Pa vez serret Dejavu</string>
     <string name="dejavu_tab_page_number">Pajenn %1$d en ivinell-mañ</string>
     <string name="dejavu_tab_pages">Pajennoù en ivinell-mañ</string>
+    <string name="dejavu_settings_tabs_import_export">Enporzhiañ hag ezporzhiañ ivinelloù</string>
+    <string name="dejavu_settings_tabs_import_export_summary">Dilec’hiañ egorioù labour, teuliadoù hag ivinelloù etrezek Sidebery hag eus Sidebery</string>
+    <string name="dejavu_sidebery_hint">Sidebery a zo un ardoer ivinelloù evit Firefox war an urzhiataerioù. E bannelloù a zo egorioù labour amañ, e strolladoù ivinelloù a zo teuliadoù hag e ivinelloù spilhennet a zo traoù pouezus.</string>
+    <string name="dejavu_sidebery_export">Ezporzhiañ etrezek Sidebery</string>
+    <string name="dejavu_sidebery_import">Enporzhiañ eus Sidebery</string>
+    <string name="dejavu_sidebery_steps">E «Snapshots viewer» Sidebery, «Import snapshot» a lenn ar restr eus Dejavu hag «Open all windows» a zigor he ivinelloù. Evit degas ivinelloù amañ, dibabit un dapadenn eno, goude «Export snapshot» ha «Save as JSON». An egorioù labour prennet n’int ket ezporzhiet keit ha ma vezont prennet.</string>
+    <string name="dejavu_sidebery_new_workspaces">Egorioù labour nevez</string>
+    <string name="dejavu_sidebery_essentials">Traoù pouezus</string>
+    <string name="dejavu_sidebery_new_containers">Kontenerioù nevez</string>
+    <string name="dejavu_sidebery_left_out">Lezet a-gostez</string>
+    <string name="dejavu_sidebery_left_out_note">Pajennoù na c’hall ket ur pellgomz digeriñ, evel restroù lec’hel, hag ivinelloù prenestroù prevez</string>
+    <string name="dejavu_sidebery_nothing_new">N’eus netra nevez er restr-mañ.</string>
+    <string name="dejavu_sidebery_import_button">Enporzhiañ</string>
+    <string name="dejavu_sidebery_imported">Enporzhiet eus Sidebery</string>
+    <string name="dejavu_sidebery_exported">Enrollet evit Sidebery</string>
+    <string name="dejavu_sidebery_export_failed">N’eus ket bet gallet enrollañ ar restr. Klaskit en-dro.</string>
+    <string name="dejavu_sidebery_bad_file">N’eo ket ar restr-mañ un dapadenn pe un eilenn gwarez eus Sidebery.</string>
 </resources>

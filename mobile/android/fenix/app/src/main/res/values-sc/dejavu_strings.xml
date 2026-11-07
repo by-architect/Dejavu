@@ -569,4 +569,21 @@
     <string name="dejavu_workspace_lock_on_close">Cando Dejavu si serrat</string>
     <string name="dejavu_tab_page_number">Pàgina %1$d in custa ischeda</string>
     <string name="dejavu_tab_pages">Pàginas in custa ischeda</string>
+    <string name="dejavu_settings_tabs_import_export">Importa e esporta ischedas</string>
+    <string name="dejavu_settings_tabs_import_export_summary">Moe ispàtzios de traballu, cartellas e ischedas a Sidebery e dae Sidebery</string>
+    <string name="dejavu_sidebery_hint">Sidebery est unu gestore de ischedas pro Firefox in sos elaboradores. Inoghe sos pannellos suos sunt ispàtzios de traballu, sos grupos de ischedas suos sunt cartellas e sas ischedas fissadas suas sunt essentziales.</string>
+    <string name="dejavu_sidebery_export">Esporta a Sidebery</string>
+    <string name="dejavu_sidebery_import">Importa dae Sidebery</string>
+    <string name="dejavu_sidebery_steps">In su «Snapshots viewer» de Sidebery, «Import snapshot» leghet s’archìviu de Dejavu e «Open all windows» nde abberit sas ischedas. Pro portare ischedas inoghe, sèbera inie un’istantànea, a pustis «Export snapshot» e «Save as JSON». Sos ispàtzios de traballu blocados non benint esportados fintzas a cando sunt blocados.</string>
+    <string name="dejavu_sidebery_new_workspaces">Ispàtzios de traballu noos</string>
+    <string name="dejavu_sidebery_essentials">Essentziales</string>
+    <string name="dejavu_sidebery_new_containers">Cuntenidores noos</string>
+    <string name="dejavu_sidebery_left_out">Lassadas a foras</string>
+    <string name="dejavu_sidebery_left_out_note">Pàginas chi unu telèfonu non podet abèrrere, comente archìvios locales, e ischedas de ventanas privadas</string>
+    <string name="dejavu_sidebery_nothing_new">Non b’at nudda de nou in custu archìviu.</string>
+    <string name="dejavu_sidebery_import_button">Importa</string>
+    <string name="dejavu_sidebery_imported">Importadu dae Sidebery</string>
+    <string name="dejavu_sidebery_exported">Sarvadu pro Sidebery</string>
+    <string name="dejavu_sidebery_export_failed">No est istadu possìbile sarvare s’archìviu. Torra a proare.</string>
+    <string name="dejavu_sidebery_bad_file">Custu archìviu no est un’istantànea nen una còpia de seguresa de Sidebery.</string>
 </resources>

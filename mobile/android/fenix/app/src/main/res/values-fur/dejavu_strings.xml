@@ -569,4 +569,21 @@
     <string name="dejavu_workspace_lock_on_close">Cuant che Dejavu si siere</string>
     <string name="dejavu_tab_page_number">Pagjine %1$d di cheste schede</string>
     <string name="dejavu_tab_pages">Pagjinis di cheste schede</string>
+    <string name="dejavu_settings_tabs_import_export">Impuarte e espuarte schedis</string>
+    <string name="dejavu_settings_tabs_import_export_summary">Sposte spazis di lavôr, cartelis e schedis viers Sidebery e di Sidebery</string>
+    <string name="dejavu_sidebery_hint">Sidebery al è un gjestôr di schedis par Firefox sui computers. Achì i siei panei a son spazis di lavôr, i siei grups di schedis a son cartelis e lis sôs schedis fissadis a son essenziâi.</string>
+    <string name="dejavu_sidebery_export">Espuarte su Sidebery</string>
+    <string name="dejavu_sidebery_import">Impuarte di Sidebery</string>
+    <string name="dejavu_sidebery_steps">Tal «Snapshots viewer» di Sidebery, «Import snapshot» al lei il file di Dejavu e «Open all windows» al vierç lis sôs schedis. Par puartâ schedis achì, sielç li une istantanie, po dopo «Export snapshot» e «Save as JSON». I spazis di lavôr blocâts no vegnin espuartâts fintremai che a son blocâts.</string>
+    <string name="dejavu_sidebery_new_workspaces">Gnûfs spazis di lavôr</string>
+    <string name="dejavu_sidebery_essentials">Essenziâi</string>
+    <string name="dejavu_sidebery_new_containers">Gnûfs contenidôrs</string>
+    <string name="dejavu_sidebery_left_out">Lassadis fûr</string>
+    <string name="dejavu_sidebery_left_out_note">Pagjinis che un telefon nol pues vierzi, come i files locâi, e schedis di barcons privâts</string>
+    <string name="dejavu_sidebery_nothing_new">Nol è nuie di gnûf in chest file.</string>
+    <string name="dejavu_sidebery_import_button">Impuarte</string>
+    <string name="dejavu_sidebery_imported">Impuartât di Sidebery</string>
+    <string name="dejavu_sidebery_exported">Salvât par Sidebery</string>
+    <string name="dejavu_sidebery_export_failed">Impussibil salvâ il file. Torne prove.</string>
+    <string name="dejavu_sidebery_bad_file">Chest file nol è une istantanie ni une copie di sigurece di Sidebery.</string>
 </resources>

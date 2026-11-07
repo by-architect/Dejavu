@@ -602,4 +602,21 @@
     <string name="dejavu_workspace_lock_on_close">যখন Dejavu বন্ধ হয়</string>
     <string name="dejavu_tab_page_number">এই ট্যাবের পাতা %1$d</string>
     <string name="dejavu_tab_pages">এই ট্যাবের পাতাগুলো</string>
+    <string name="dejavu_settings_tabs_import_export">ট্যাব ইমপোর্ট ও এক্সপোর্ট</string>
+    <string name="dejavu_settings_tabs_import_export_summary">Sidebery-তে ও Sidebery থেকে ওয়ার্কস্পেস, ফোল্ডার ও ট্যাব সরান</string>
+    <string name="dejavu_sidebery_hint">Sidebery হলো কম্পিউটারে Firefox-এর জন্য একটি ট্যাব ম্যানেজার। এর প্যানেলগুলো এখানে ওয়ার্কস্পেস, ট্যাব গ্রুপগুলো ফোল্ডার, আর পিন করা ট্যাবগুলো এসেনশিয়াল।</string>
+    <string name="dejavu_sidebery_export">Sidebery-তে এক্সপোর্ট করুন</string>
+    <string name="dejavu_sidebery_import">Sidebery থেকে ইমপোর্ট করুন</string>
+    <string name="dejavu_sidebery_steps">Sidebery-র «Snapshots viewer»-এ «Import snapshot» Dejavu-র ফাইলটি পড়ে এবং «Open all windows» তার ট্যাবগুলো খোলে। ট্যাব এখানে আনতে সেখানে একটি স্ন্যাপশট বেছে নিন, তারপর «Export snapshot» ও «Save as JSON»। লক করা ওয়ার্কস্পেস লক থাকা অবস্থায় বাদ থাকে।</string>
+    <string name="dejavu_sidebery_new_workspaces">নতুন ওয়ার্কস্পেস</string>
+    <string name="dejavu_sidebery_essentials">এসেনশিয়াল</string>
+    <string name="dejavu_sidebery_new_containers">নতুন কন্টেইনার</string>
+    <string name="dejavu_sidebery_left_out">বাদ পড়েছে</string>
+    <string name="dejavu_sidebery_left_out_note">যে পাতাগুলো ফোন খুলতে পারে না, যেমন লোকাল ফাইল, এবং প্রাইভেট উইন্ডোর ট্যাব</string>
+    <string name="dejavu_sidebery_nothing_new">এই ফাইলে নতুন কিছু নেই।</string>
+    <string name="dejavu_sidebery_import_button">ইমপোর্ট করুন</string>
+    <string name="dejavu_sidebery_imported">Sidebery থেকে ইমপোর্ট করা হয়েছে</string>
+    <string name="dejavu_sidebery_exported">Sidebery-র জন্য সংরক্ষিত</string>
+    <string name="dejavu_sidebery_export_failed">ফাইলটি সংরক্ষণ করা যায়নি। আবার চেষ্টা করুন।</string>
+    <string name="dejavu_sidebery_bad_file">এই ফাইলটি Sidebery-র স্ন্যাপশট বা ব্যাকআপ নয়।</string>
 </resources>

@@ -561,4 +561,21 @@
     <string name="dejavu_workspace_lock_on_close">Saat Dejavu ditutup</string>
     <string name="dejavu_tab_page_number">Laman %1$d di tab ini</string>
     <string name="dejavu_tab_pages">Laman di tab ini</string>
+    <string name="dejavu_settings_tabs_import_export">Impor dan ekspor tab</string>
+    <string name="dejavu_settings_tabs_import_export_summary">Pindahkan ruang kerja, folder, dan tab ke dan dari Sidebery</string>
+    <string name="dejavu_sidebery_hint">Sidebery adalah pengelola tab untuk Firefox di komputer. Panelnya di sini adalah ruang kerja, grup tabnya adalah folder, dan tab yang disematnya adalah situs penting.</string>
+    <string name="dejavu_sidebery_export">Ekspor ke Sidebery</string>
+    <string name="dejavu_sidebery_import">Impor dari Sidebery</string>
+    <string name="dejavu_sidebery_steps">Di «Snapshots viewer» Sidebery, «Import snapshot» membaca berkas dari Dejavu dan «Open all windows» membuka tab-tabnya. Untuk membawa tab ke sini, pilih snapshot di sana, lalu «Export snapshot» dan «Save as JSON». Ruang kerja yang terkunci tidak diekspor selama masih terkunci.</string>
+    <string name="dejavu_sidebery_new_workspaces">Ruang kerja baru</string>
+    <string name="dejavu_sidebery_essentials">Situs penting</string>
+    <string name="dejavu_sidebery_new_containers">Wadah baru</string>
+    <string name="dejavu_sidebery_left_out">Tidak disertakan</string>
+    <string name="dejavu_sidebery_left_out_note">Halaman yang tidak bisa dibuka ponsel, seperti berkas lokal, dan tab dari jendela pribadi</string>
+    <string name="dejavu_sidebery_nothing_new">Tidak ada yang baru di berkas ini.</string>
+    <string name="dejavu_sidebery_import_button">Impor</string>
+    <string name="dejavu_sidebery_imported">Diimpor dari Sidebery</string>
+    <string name="dejavu_sidebery_exported">Disimpan untuk Sidebery</string>
+    <string name="dejavu_sidebery_export_failed">Tidak dapat menyimpan berkas. Coba lagi.</string>
+    <string name="dejavu_sidebery_bad_file">Berkas ini bukan snapshot atau cadangan Sidebery.</string>
 </resources>

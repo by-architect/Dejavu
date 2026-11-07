@@ -569,4 +569,21 @@
     <string name="dejavu_workspace_lock_on_close">Al zarrar Dejavu</string>
     <string name="dejavu_tab_page_number">Páxina %1$d d’esta llingüeta</string>
     <string name="dejavu_tab_pages">Páxines d’esta llingüeta</string>
+    <string name="dejavu_settings_tabs_import_export">Importar y esportar llingüetes</string>
+    <string name="dejavu_settings_tabs_import_export_summary">Movi espacios de trabayu, carpetes y llingüetes a Sidebery y dende Sidebery</string>
+    <string name="dejavu_sidebery_hint">Sidebery ye un xestor de llingüetes pa Firefox n’ordenadores. Los sos paneles son equí espacios de trabayu, los sos grupos de llingüetes son carpetes y les sos llingüetes fixaes son esenciales.</string>
+    <string name="dejavu_sidebery_export">Esportar a Sidebery</string>
+    <string name="dejavu_sidebery_import">Importar de Sidebery</string>
+    <string name="dejavu_sidebery_steps">Nel «Snapshots viewer» de Sidebery, «Import snapshot» llee’l ficheru de Dejavu y «Open all windows» abre les sos llingüetes. Pa trayer llingüetes equí, escueyi ellí una instantánea y depués «Export snapshot» y «Save as JSON». Los espacios de trabayu bloquiaos nun s’esporten mentanto tean bloquiaos.</string>
+    <string name="dejavu_sidebery_new_workspaces">Espacios de trabayu nuevos</string>
+    <string name="dejavu_sidebery_essentials">Esenciales</string>
+    <string name="dejavu_sidebery_new_containers">Contenedores nuevos</string>
+    <string name="dejavu_sidebery_left_out">Fuera</string>
+    <string name="dejavu_sidebery_left_out_note">Páxines que nun pue abrir un teléfonu, como ficheros locales, y llingüetes de ventanes privaes</string>
+    <string name="dejavu_sidebery_nothing_new">Nun hai nada nuevo nesti ficheru.</string>
+    <string name="dejavu_sidebery_import_button">Importar</string>
+    <string name="dejavu_sidebery_imported">Importáronse de Sidebery</string>
+    <string name="dejavu_sidebery_exported">Guardóse pa Sidebery</string>
+    <string name="dejavu_sidebery_export_failed">Nun se pudo guardar el ficheru. Volvi tentalo.</string>
+    <string name="dejavu_sidebery_bad_file">Esti ficheru nun ye una instantánea nin una copia de seguranza de Sidebery.</string>
 </resources>

@@ -569,4 +569,21 @@
     <string name="dejavu_workspace_lock_on_close">Dejavu ବନ୍ଦ ହେଲେ</string>
     <string name="dejavu_tab_page_number">ଏହି ଟ୍ୟାବ୍‌ର ପୃଷ୍ଠା %1$d</string>
     <string name="dejavu_tab_pages">ଏହି ଟ୍ୟାବ୍‌ର ପୃଷ୍ଠାଗୁଡ଼ିକ</string>
+    <string name="dejavu_settings_tabs_import_export">ଟ୍ୟାବ୍ ଆମଦାନି ଓ ରପ୍ତାନି କରନ୍ତୁ</string>
+    <string name="dejavu_settings_tabs_import_export_summary">କାର୍ଯ୍ୟକ୍ଷେତ୍ର, ଫୋଲଡର ଓ ଟ୍ୟାବ୍ Sidebery କୁ ଏବଂ Sidebery ରୁ ଘୁଞ୍ଚାନ୍ତୁ</string>
+    <string name="dejavu_sidebery_hint">Sidebery ହେଉଛି କମ୍ପ୍ୟୁଟରରେ Firefox ପାଇଁ ଏକ ଟ୍ୟାବ୍ ପରିଚାଳକ। ଏହାର ପ୍ୟାନେଲ୍ ଏଠାରେ କାର୍ଯ୍ୟକ୍ଷେତ୍ର, ଟ୍ୟାବ୍ ଗୋଷ୍ଠୀ ଫୋଲଡର ଏବଂ ପିନ୍ କରାଯାଇଥିବା ଟ୍ୟାବ୍ ଆବଶ୍ୟକୀୟ।</string>
+    <string name="dejavu_sidebery_export">Sidebery କୁ ରପ୍ତାନି କରନ୍ତୁ</string>
+    <string name="dejavu_sidebery_import">Sidebery ରୁ ଆମଦାନି କରନ୍ତୁ</string>
+    <string name="dejavu_sidebery_steps">Sidebery ର «Snapshots viewer» ରେ «Import snapshot» Dejavu ର ଫାଇଲ ପଢ଼େ ଏବଂ «Open all windows» ଏହାର ଟ୍ୟାବ୍ ଖୋଲେ। ଟ୍ୟାବ୍ ଏଠାକୁ ଆଣିବା ପାଇଁ ସେଠାରେ ଏକ ସ୍ନାପସଟ୍ ବାଛନ୍ତୁ, ତାପରେ «Export snapshot» ଓ «Save as JSON»। ଲକ୍ ହୋଇଥିବା କାର୍ଯ୍ୟକ୍ଷେତ୍ର ଲକ୍ ଥିବା ପର୍ଯ୍ୟନ୍ତ ରପ୍ତାନି ହୁଏ ନାହିଁ।</string>
+    <string name="dejavu_sidebery_new_workspaces">ନୂଆ କାର୍ଯ୍ୟକ୍ଷେତ୍ର</string>
+    <string name="dejavu_sidebery_essentials">ଆବଶ୍ୟକୀୟ</string>
+    <string name="dejavu_sidebery_new_containers">ନୂଆ କଣ୍ଟେନର</string>
+    <string name="dejavu_sidebery_left_out">ବାଦ ପଡ଼ିଥିବା</string>
+    <string name="dejavu_sidebery_left_out_note">ଫୋନ ଖୋଲିପାରୁନଥିବା ପୃଷ୍ଠା, ଯେପରି ସ୍ଥାନୀୟ ଫାଇଲ, ଏବଂ ବ୍ୟକ୍ତିଗତ ୱିଣ୍ଡୋର ଟ୍ୟାବ୍</string>
+    <string name="dejavu_sidebery_nothing_new">ଏହି ଫାଇଲରେ କିଛି ନୂଆ ନାହିଁ।</string>
+    <string name="dejavu_sidebery_import_button">ଆମଦାନି କରନ୍ତୁ</string>
+    <string name="dejavu_sidebery_imported">Sidebery ରୁ ଆମଦାନି ହେଲା</string>
+    <string name="dejavu_sidebery_exported">Sidebery ପାଇଁ ସଞ୍ଚୟ ହେଲା</string>
+    <string name="dejavu_sidebery_export_failed">ଫାଇଲ ସଞ୍ଚୟ ହୋଇପାରିଲା ନାହିଁ। ପୁଣି ଚେଷ୍ଟା କରନ୍ତୁ।</string>
+    <string name="dejavu_sidebery_bad_file">ଏହି ଫାଇଲ Sidebery ର ସ୍ନାପସଟ୍ କିମ୍ବା ବ୍ୟାକଅପ୍ ନୁହେଁ।</string>
 </resources>

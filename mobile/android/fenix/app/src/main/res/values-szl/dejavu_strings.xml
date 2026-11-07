@@ -585,4 +585,21 @@
     <string name="dejavu_workspace_lock_on_close">Kej Dejavu sie zawrze</string>
     <string name="dejavu_tab_page_number">Strōna %1$d we tyj karcie</string>
     <string name="dejavu_tab_pages">Strōny we tyj karcie</string>
+    <string name="dejavu_settings_tabs_import_export">Import i eksport kart</string>
+    <string name="dejavu_settings_tabs_import_export_summary">Przenoś place, foldry i karty do i ze Sidebery</string>
+    <string name="dejavu_sidebery_hint">Sidebery to mynedżer kart dlo Firefoxa na kōmputry. Jego panele sōm tukej placami, grupy kart foldrami, a przipiynte karty nojważniejszymi.</string>
+    <string name="dejavu_sidebery_export">Eksportuj do Sidebery</string>
+    <string name="dejavu_sidebery_import">Importuj ze Sidebery</string>
+    <string name="dejavu_sidebery_steps">We «Snapshots viewer» we Sidebery knefel «Import snapshot» czyto zbiōr ze Dejavu, a «Open all windows» ôtwiyro jego karty. Coby przeniyś sam karty, wybier tam migawka, potym «Export snapshot» i «Save as JSON». Zablokowane place niy sōm eksportowane, podwiela sōm zablokowane.</string>
+    <string name="dejavu_sidebery_new_workspaces">Nowe place</string>
+    <string name="dejavu_sidebery_essentials">Nojważniejsze</string>
+    <string name="dejavu_sidebery_new_containers">Nowe kōntynery</string>
+    <string name="dejavu_sidebery_left_out">Pōminiynte</string>
+    <string name="dejavu_sidebery_left_out_note">Strōny, kerych telefōn niy poradzi ôtworzić, bez przikład zbiory lokalne, i karty ze ôkyn prywatnych</string>
+    <string name="dejavu_sidebery_nothing_new">We tym zbiorze niy ma nic nowego.</string>
+    <string name="dejavu_sidebery_import_button">Importuj</string>
+    <string name="dejavu_sidebery_imported">Zaimportowano ze Sidebery</string>
+    <string name="dejavu_sidebery_exported">Spamiyntano dlo Sidebery</string>
+    <string name="dejavu_sidebery_export_failed">Niy szło spamiyntać zbioru. Sprōbuj zaś.</string>
+    <string name="dejavu_sidebery_bad_file">Tyn zbiōr niy ma migawkōm ani kopijōm zapasowōm Sidebery.</string>
 </resources>

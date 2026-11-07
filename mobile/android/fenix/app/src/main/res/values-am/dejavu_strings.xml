@@ -569,4 +569,21 @@
     <string name="dejavu_workspace_lock_on_close">Dejavu ሲዘጋ</string>
     <string name="dejavu_tab_page_number">በዚህ ትር ውስጥ ገጽ %1$d</string>
     <string name="dejavu_tab_pages">በዚህ ትር ውስጥ ያሉ ገጾች</string>
+    <string name="dejavu_settings_tabs_import_export">ትሮችን አስመጣ እና ላክ</string>
+    <string name="dejavu_settings_tabs_import_export_summary">የስራ ቦታዎችን፣ አቃፊዎችን እና ትሮችን ወደ Sidebery እና ከ Sidebery ያንቀሳቅሱ</string>
+    <string name="dejavu_sidebery_hint">Sidebery በኮምፒውተሮች ላይ ለ Firefox የትር አስተዳዳሪ ነው። ፓነሎቹ እዚህ የስራ ቦታዎች ናቸው፣ የትር ቡድኖቹ አቃፊዎች ናቸው፣ የተሰኩ ትሮቹም አስፈላጊዎች ናቸው።</string>
+    <string name="dejavu_sidebery_export">ወደ Sidebery ላክ</string>
+    <string name="dejavu_sidebery_import">ከ Sidebery አስመጣ</string>
+    <string name="dejavu_sidebery_steps">በ Sidebery «Snapshots viewer» ውስጥ «Import snapshot» ከ Dejavu የመጣውን ፋይል ያነባል፣ «Open all windows» ደግሞ ትሮቹን ይከፍታል። ትሮችን ወደዚህ ለማምጣት እዚያ ቅጽበታዊ ገጽ ይምረጡ፣ ከዚያ «Export snapshot» እና «Save as JSON» ይምረጡ። የተቆለፉ የስራ ቦታዎች ተቆልፈው እስካሉ ድረስ አይካተቱም።</string>
+    <string name="dejavu_sidebery_new_workspaces">አዲስ የስራ ቦታዎች</string>
+    <string name="dejavu_sidebery_essentials">አስፈላጊዎች</string>
+    <string name="dejavu_sidebery_new_containers">አዲስ መያዣዎች</string>
+    <string name="dejavu_sidebery_left_out">ያልተካተቱ</string>
+    <string name="dejavu_sidebery_left_out_note">ስልክ ሊከፍታቸው የማይችላቸው ገጾች፣ እንደ አካባቢያዊ ፋይሎች፣ እና የግል መስኮቶች ትሮች</string>
+    <string name="dejavu_sidebery_nothing_new">በዚህ ፋይል ውስጥ አዲስ ነገር የለም።</string>
+    <string name="dejavu_sidebery_import_button">አስመጣ</string>
+    <string name="dejavu_sidebery_imported">ከ Sidebery ገብቷል</string>
+    <string name="dejavu_sidebery_exported">ለ Sidebery ተቀምጧል</string>
+    <string name="dejavu_sidebery_export_failed">ፋይሉን ማስቀመጥ አልተቻለም። እንደገና ይሞክሩ።</string>
+    <string name="dejavu_sidebery_bad_file">ይህ ፋይል የ Sidebery ቅጽበታዊ ገጽ ወይም ምትኬ አይደለም።</string>
 </resources>
