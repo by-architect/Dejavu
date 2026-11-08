@@ -34,10 +34,16 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
+import androidx.compose.ui.draw.drawWithContent
+import androidx.compose.ui.graphics.BlendMode
+import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.CompositingStrategy
 import androidx.compose.ui.graphics.asImageBitmap
+import androidx.compose.ui.graphics.graphicsLayer
 import androidx.compose.ui.graphics.painter.BitmapPainter
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.platform.LocalDensity
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.semantics.Role
@@ -49,6 +55,7 @@ import mozilla.components.browser.state.state.TabSessionState
 import mozilla.components.browser.state.state.selectedOrDefaultSearchEngine
 import mozilla.components.lib.state.ext.observeAsComposableState
 import org.mozilla.fenix.R
+import org.mozilla.fenix.components.AppStore
 import org.mozilla.fenix.components.appstate.AppAction.SearchAction.SearchEngineSelected
 import org.mozilla.fenix.components.appstate.AppAction.SearchAction.SearchStarted
 import org.mozilla.fenix.components.components
@@ -194,16 +201,7 @@ private fun EngineChips() {
             SearchChip(
                 label = engine.name,
                 selected = engine.id == current?.id,
-                onClick = {
-                    // The same as picking it from the search engine menu.
-                    fenix.appStore.dispatch(SearchEngineSelected(engine, true))
-                    fenix.appStore.dispatch(
-                        SearchStarted(
-                            tabId = fenix.appStore.state.searchState.sourceTabId,
-                            source = fenix.appStore.state.searchState.searchAccessPoint,
-                        ),
-                    )
-                },
+                onClick = { selectSearchEngine(fenix.appStore, engine) },
             ) {
                 val painter = remember(engine.id) { BitmapPainter(engine.icon.asImageBitmap()) }
                 if (engine.type == SearchEngine.Type.APPLICATION) {
@@ -272,18 +270,54 @@ fun DejavuClipboardChip(link: String?, onClick: () -> Unit, modifier: Modifier =
     }
 }
 
+/** Searches with [engine] from now on, the same as picking it from the search engine menu. */
+internal fun selectSearchEngine(appStore: AppStore, engine: SearchEngine) {
+    appStore.dispatch(SearchEngineSelected(engine, true))
+    appStore.dispatch(
+        SearchStarted(
+            tabId = appStore.state.searchState.sourceTabId,
+            source = appStore.state.searchState.searchAccessPoint,
+        ),
+    )
+}
+
+/** A line of chips that scrolls sideways, fading out at an edge with more chips beyond it. */
 @Composable
 private fun ChipRow(content: @Composable RowScope.() -> Unit) {
+    val scroll = rememberScrollState()
+    val fade = with(LocalDensity.current) { CHIP_FADE.toPx() }
     Row(
         horizontalArrangement = Arrangement.spacedBy(8.dp),
         verticalAlignment = Alignment.CenterVertically,
         modifier = Modifier
             .fillMaxWidth()
-            .horizontalScroll(rememberScrollState())
+            .graphicsLayer { compositingStrategy = CompositingStrategy.Offscreen }
+            .drawWithContent {
+                drawContent()
+                if (scroll.value > 0) {
+                    drawRect(
+                        Brush.horizontalGradient(listOf(Color.Transparent, Color.Black), startX = 0f, endX = fade),
+                        blendMode = BlendMode.DstIn,
+                    )
+                }
+                if (scroll.value < scroll.maxValue) {
+                    drawRect(
+                        Brush.horizontalGradient(
+                            listOf(Color.Black, Color.Transparent),
+                            startX = size.width - fade,
+                            endX = size.width,
+                        ),
+                        blendMode = BlendMode.DstIn,
+                    )
+                }
+            }
+            .horizontalScroll(scroll)
             .padding(horizontal = 12.dp, vertical = 4.dp),
         content = content,
     )
 }
+
+private val CHIP_FADE = 32.dp
 
 @Composable
 private fun SearchChip(

@@ -53,9 +53,11 @@ import org.mozilla.fenix.components.appstate.AppAction.SearchAction.SearchEnded
 import org.mozilla.fenix.components.appstate.AppAction.SearchAction.SearchStarted
 import org.mozilla.fenix.components.appstate.VoiceSearchAction.VoiceInputRequested
 import org.mozilla.fenix.components.metrics.MetricsUtils
+import org.mozilla.fenix.dejavu.browser.DejavuFloatingSearch
 import org.mozilla.fenix.dejavu.browser.DejavuSearchChips
 import org.mozilla.fenix.dejavu.browser.DejavuToolbar
 import org.mozilla.fenix.dejavu.browser.NewTabSearch
+import org.mozilla.fenix.dejavu.browser.isFloatingSearch
 import org.mozilla.fenix.dejavu.browser.isSearchScreenSeeThrough
 import org.mozilla.fenix.theme.FirefoxTheme
 import org.mozilla.fenix.utils.Settings
@@ -167,6 +169,35 @@ internal class HomeToolbarComposable(
             } else {
                 settings.shouldShowTabStripAtTop
             }
+        }
+
+        // Dejavu: on tablets the search floats in the middle of the screen instead.
+        if (isFloatingSearch()) {
+            Box(
+                modifier =
+                    Modifier.semantics {
+                        testTagsAsResourceId = true
+                        testTag = context.resources.getResourceName(R.id.composable_toolbar)
+                    }
+            ) {
+                val sourceTabId = appStore.state.searchState.sourceTabId
+                val query = toolbarStore.observeAsComposableState { it.editState.query.current }.value
+                DejavuFloatingSearch(
+                    query = query,
+                    onQueryChange = { toolbarStore.dispatch(SearchQueryUpdated(BrowserToolbarQuery(it))) },
+                    onDismiss = ::abandonSearch,
+                    chips = { DejavuSearchChips(newTab = sourceTabId == null || NewTabSearch.isFor(sourceTabId)) },
+                    toolbar = {
+                        BrowserToolbar(
+                            store = toolbarStore,
+                            browserActionsColor = wallpaperTextColor,
+                            seeThroughWhileEditing = true,
+                        )
+                    },
+                    suggestions = searchSuggestionsContent,
+                )
+            }
+            return
         }
 
         Column(

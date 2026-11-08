@@ -33,11 +33,13 @@ import mozilla.components.browser.state.state.ExternalAppType
 import mozilla.components.browser.state.store.BrowserStore
 import mozilla.components.compose.base.utils.BackInvokedHandler
 import mozilla.components.compose.browser.toolbar.BrowserToolbar
+import mozilla.components.compose.browser.toolbar.store.BrowserEditToolbarAction.SearchQueryUpdated
 import mozilla.components.compose.browser.toolbar.store.BrowserToolbarAction.ToolbarGravityUpdated
 import mozilla.components.compose.browser.toolbar.store.BrowserToolbarStore
 import mozilla.components.compose.browser.toolbar.store.ToolbarGravity
 import mozilla.components.compose.browser.toolbar.store.ToolbarGravity.Bottom
 import mozilla.components.compose.browser.toolbar.store.ToolbarGravity.Top
+import mozilla.components.compose.browser.toolbar.ui.BrowserToolbarQuery
 import mozilla.components.concept.engine.EngineView
 import mozilla.components.concept.toolbar.ScrollableToolbar
 import mozilla.components.feature.toolbar.ToolbarBehaviorController
@@ -55,11 +57,14 @@ import org.mozilla.fenix.components.appstate.AppAction.SearchAction.SearchEnded
 import org.mozilla.fenix.components.toolbar.ToolbarPosition.BOTTOM
 import org.mozilla.fenix.components.toolbar.ToolbarPosition.TOP
 import org.mozilla.fenix.dejavu.browser.DejavuAddressBar
+import org.mozilla.fenix.dejavu.browser.DejavuFloatingSearch
 import org.mozilla.fenix.dejavu.browser.DejavuSearchAboveKeyboard
 import org.mozilla.fenix.dejavu.browser.DejavuSearchChips
 import org.mozilla.fenix.dejavu.browser.DejavuToolbar
+import org.mozilla.fenix.dejavu.browser.FloatingSearchScrim
 import org.mozilla.fenix.dejavu.browser.SearchPageBackdrop
 import org.mozilla.fenix.dejavu.browser.currentBarsLayout
+import org.mozilla.fenix.dejavu.browser.isFloatingSearch
 import org.mozilla.fenix.dejavu.browser.isSearchScreenSeeThrough
 import org.mozilla.fenix.dejavu.browser.statusBarRoomPadding
 import org.mozilla.fenix.theme.FirefoxTheme
@@ -175,11 +180,40 @@ class BrowserToolbarComposable(
                                 // below the status bar, also while it is hidden; while searching the page shows
                                 // blurred behind everything.
                                 Box {
-                                    if (isDejavuBar) {
+                                    if (isDejavuBar && isSearching && isFloatingSearch()) {
+                                        FloatingSearchScrim(modifier = Modifier.matchParentSize())
+                                    } else if (isDejavuBar) {
                                         SearchPageBackdrop(active = isSearching, modifier = Modifier.matchParentSize())
                                     }
                                     Box(modifier = if (isDejavuBar) Modifier.statusBarRoomPadding() else Modifier) {
-                                        DejavuSearchAboveKeyboard(
+                                        // Dejavu: on tablets the search floats in the middle of the screen instead.
+                                        if (isDejavuBar && isSearching && isFloatingSearch()) {
+                                            val query = toolbarStore
+                                                .observeAsComposableState { it.editState.query.current }.value
+                                            DejavuFloatingSearch(
+                                                query = query,
+                                                onQueryChange = {
+                                                    toolbarStore.dispatch(SearchQueryUpdated(BrowserToolbarQuery(it)))
+                                                },
+                                                onDismiss = {
+                                                    appStore.dispatch(SearchEnded)
+                                                    browserStore.dispatch(
+                                                        AwesomeBarAction.EngagementFinished(abandoned = true),
+                                                    )
+                                                },
+                                                chips = { DejavuSearchChips(newTab = false) },
+                                                toolbar = {
+                                                    BrowserToolbar(
+                                                        store = toolbarStore,
+                                                        cfr = toolbarCFR,
+                                                        useMinimalBottomToolbarWhenEnteringText =
+                                                            settings.shouldUseMinimalBottomToolbarWhenEnteringText,
+                                                        seeThroughWhileEditing = true,
+                                                    )
+                                                },
+                                                suggestions = searchSuggestionsContent,
+                                            )
+                                        } else DejavuSearchAboveKeyboard(
                                             enabled = isDejavuBar,
                                             isSearching = isSearching,
                                             fromTop = isDejavuBarOnTop,

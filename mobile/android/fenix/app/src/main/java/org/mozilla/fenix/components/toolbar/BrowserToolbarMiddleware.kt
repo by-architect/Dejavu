@@ -150,6 +150,7 @@ import org.mozilla.fenix.dejavu.browser.DejavuToolbarEvent
 import org.mozilla.fenix.dejavu.browser.NewTabSearch
 import org.mozilla.fenix.dejavu.browser.SearchBackdrop
 import org.mozilla.fenix.dejavu.browser.TabZoom
+import org.mozilla.fenix.dejavu.browser.isFloatingSearch
 import org.mozilla.fenix.ext.canGoBackInHistoryOrToStories
 import org.mozilla.fenix.ext.nav
 import org.mozilla.fenix.ext.navigateSafe
@@ -436,6 +437,13 @@ class BrowserToolbarMiddleware(
 
                 val selectedTab = browserStore.state.selectedTab ?: return
                 val searchTerms = selectedTab.content.searchTerms
+                // Dejavu: on tablets the search floats in the middle of the page, which stays in sight.
+                if (isFloatingSearch(navController.context)) {
+                    val shown = searchTerms.ifBlank { selectedTab.readerState.activeUrl ?: selectedTab.content.url }
+                    store.dispatch(SearchQueryUpdated(BrowserToolbarQuery(shown), true))
+                    appStore.dispatch(SearchStarted(selectedTab.id))
+                    return
+                }
                 // Dejavu: the search screen shows the page blurred behind it, so the page is pictured first.
                 SearchBackdrop.capturePage(selectedTab.id) {
                     if (searchTerms.isBlank()) {
