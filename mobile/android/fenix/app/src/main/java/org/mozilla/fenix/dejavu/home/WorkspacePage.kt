@@ -99,6 +99,7 @@ import org.mozilla.fenix.dejavu.discover.Tip
 import org.mozilla.fenix.dejavu.discover.TipGesture
 import org.mozilla.fenix.dejavu.discover.Tips
 import org.mozilla.fenix.dejavu.discover.tipTarget
+import org.mozilla.fenix.dejavu.settings.SidebarLook
 import org.mozilla.fenix.dejavu.sync.workspaceIconText
 import org.mozilla.fenix.dejavu.ui.DejavuDropdownMenu
 import org.mozilla.fenix.dejavu.ui.DejavuMenuDivider
@@ -116,8 +117,14 @@ private val ListPadding = 8.dp
 private val RowPadding = 2.dp
 private const val DIMMED_ALPHA = 0.55f
 private const val RESET_SQUARE_ALPHA = 0.14f
+
+/** How much of its color the box behind the shown tab covers, so the workspace shows through it. */
+private const val CURRENT_ALPHA = 0.45f
 private val IconSquareSize = 36.dp
 private val MinTouchSize = 48.dp
+
+/** The room around the site icon in its square, see [SidebarLook.siteIconSize]. */
+private const val ICON_SQUARE_MARGIN_DP = 16
 private const val DRAGGED_ALPHA = 0.35f
 private val INSIDE_FOLDER_RANGE = 0.25f..0.75f
 private val SPLIT_RANGE = 0.3f..0.7f
@@ -254,6 +261,7 @@ internal fun pinLines(entries: List<PinnedEntry>, state: WorkspaceState): List<P
 @Suppress("LongParameterList", "LongMethod", "CognitiveComplexMethod")
 @Composable
 internal fun WorkspacePage(
+    look: SidebarLook,
     state: WorkspaceState,
     workspace: Workspace,
     tabs: List<TabSessionState>,
@@ -423,6 +431,7 @@ internal fun WorkspacePage(
         ) {
             item(key = KEY_HEADER) {
                 WorkspaceHeader(
+                    nameHidden = !look.showWorkspaceHeader,
                     workspace = workspace,
                     container = workspace.containerId?.let { containers[it] },
                     isDevice = isDevice,
@@ -512,6 +521,7 @@ internal fun WorkspacePage(
                         onAction = { callbacks.onRowAction(it, targets) },
                         onClick = { if (drag == null) callbacks.onPinClick(item) },
                         onIconClick = resetPin?.let { action -> { if (drag == null) callbacks.onRowAction(action, targets) } },
+                        look = look,
                         modifier = rowModifier
                             .tabZoomTarget(tab?.id)
                             .closeOnMiddleClick(middleClick(targets, isPinned = true)),
@@ -603,6 +613,7 @@ internal fun WorkspacePage(
                     actions = rowActions(unpinnedRowActions, targets, isPinned = false),
                     onAction = { callbacks.onRowAction(it, targets) },
                     onClick = { if (drag == null) callbacks.onTabClick(tab) },
+                    look = look,
                     modifier = rowModifier
                         .tabZoomTarget(tab.id)
                         .closeOnMiddleClick(middleClick(targets, isPinned = false))
@@ -1076,6 +1087,7 @@ private fun NewTabRow(
 @Suppress("LongParameterList", "LongMethod")
 @Composable
 private fun WorkspaceHeader(
+    nameHidden: Boolean,
     workspace: Workspace,
     container: ContainerRecord?,
     isDevice: Boolean,
@@ -1100,7 +1112,8 @@ private fun WorkspaceHeader(
         verticalAlignment = Alignment.CenterVertically,
         modifier = modifier.fillMaxWidth().padding(top = 4.dp, bottom = 4.dp),
     ) {
-        Row(
+        // Without the name row, only the menu stays, at the end of a thin spot that still takes drops that pin.
+        if (nameHidden) Spacer(Modifier.weight(1f)) else Row(
             verticalAlignment = Alignment.CenterVertically,
             modifier = Modifier
                 .weight(1f)
@@ -1131,21 +1144,23 @@ private fun WorkspaceHeader(
                 )
             }
         }
-        SmallIconButton(
-            icon = R.drawable.dejavu_ic_clipboard_24,
-            description = R.string.dejavu_open_clipboard_link,
-            enabled = tabButtonsEnabled && canOpenClipboard,
-            onClick = onOpenClipboard,
-        )
-        SmallIconButton(
-            icon = R.drawable.dejavu_ic_reopen_tab_24,
-            description = R.string.dejavu_reopen_closed_tab,
-            enabled = tabButtonsEnabled && canReopenClosedTab,
-            onClick = onReopenClosedTab,
-            modifier = reopenButton,
-        )
+        if (!nameHidden) {
+            SmallIconButton(
+                icon = R.drawable.dejavu_ic_clipboard_24,
+                description = R.string.dejavu_open_clipboard_link,
+                enabled = tabButtonsEnabled && canOpenClipboard,
+                onClick = onOpenClipboard,
+            )
+            SmallIconButton(
+                icon = R.drawable.dejavu_ic_reopen_tab_24,
+                description = R.string.dejavu_reopen_closed_tab,
+                enabled = tabButtonsEnabled && canReopenClosedTab,
+                onClick = onReopenClosedTab,
+                modifier = reopenButton,
+            )
+        }
         // The workspace of a device on the account cannot have folders of its own, nor be deleted: sync handles it.
-        if (!isDevice) {
+        if (!isDevice && !nameHidden) {
             SmallIconButton(
                 icon = R.drawable.dejavu_ic_create_folder_24,
                 description = R.string.dejavu_action_new_folder,
@@ -1352,17 +1367,19 @@ internal fun TabRow(
     onIconClick: (() -> Unit)? = null,
     isPrivate: Boolean = false,
     icon: Bitmap? = null,
+    look: SidebarLook = SidebarLook(),
 ) {
+    val iconSquare = (look.siteIconSize + ICON_SQUARE_MARGIN_DP).coerceAtMost(look.rowHeight - 4).dp
     val background = when {
         selection == true -> MaterialTheme.colorScheme.secondaryContainer
-        isCurrent && selection == null -> MaterialTheme.colorScheme.surfaceContainerHighest
+        isCurrent && selection == null -> MaterialTheme.colorScheme.surfaceContainerHighest.copy(alpha = CURRENT_ALPHA)
         else -> Color.Transparent
     }
     Row(
         verticalAlignment = Alignment.CenterVertically,
         modifier = modifier
             .fillMaxWidth()
-            .height(52.dp)
+            .height(look.rowHeight.dp)
             .padding(vertical = 2.dp)
             .clip(RowShape)
             .background(background)
@@ -1372,13 +1389,13 @@ internal fun TabRow(
             modifier = Modifier
                 .padding(start = 2.dp)
                 .width(4.dp)
-                .height(26.dp)
+                .height((look.rowHeight / 2).dp)
                 .clip(RoundedCornerShape(2.dp))
                 .background(container?.color?.color ?: Color.Transparent),
         )
         Spacer(Modifier.width(2.dp + IndentPerLevel * depth))
         // Like Zen, a pinned tab that left its pinned page shows its icon on a brighter square; tapping it goes back.
-        Box(contentAlignment = Alignment.Center, modifier = Modifier.size(IconSquareSize)) {
+        if (look.showSiteIcons) Box(contentAlignment = Alignment.Center, modifier = Modifier.size(iconSquare)) {
             val interactions = remember { MutableInteractionSource() }
             val resetLabel = stringResource(R.string.dejavu_action_reset_pin)
             if (onIconClick != null && selection == null) {
@@ -1393,7 +1410,7 @@ internal fun TabRow(
             Box(
                 contentAlignment = Alignment.Center,
                 modifier = Modifier
-                    .size(IconSquareSize)
+                    .size(iconSquare)
                     .clip(RoundedCornerShape(10.dp))
                     .then(
                         if (onIconClick != null) {
@@ -1406,7 +1423,7 @@ internal fun TabRow(
             ) {
                 // Tabs loaded in the browser are shown bright, the others dimmed.
                 Box(modifier = Modifier.alpha(if (isAwake) 1f else DIMMED_ALPHA)) {
-                    SiteIcon(url = url, size = 20.dp, isPrivate = isPrivate, icon = icon)
+                    SiteIcon(url = url, size = look.siteIconSize.dp, isPrivate = isPrivate, icon = icon)
                 }
             }
         }
@@ -1476,7 +1493,11 @@ private fun TabPairRow(
             .padding(vertical = 2.dp)
             .clip(RowShape)
             .background(
-                if (isCurrent && !selecting) MaterialTheme.colorScheme.surfaceContainerHighest else Color.Transparent,
+                if (isCurrent && !selecting) {
+                    MaterialTheme.colorScheme.surfaceContainerHighest.copy(alpha = CURRENT_ALPHA)
+                } else {
+                    Color.Transparent
+                },
             ),
     ) {
         halves.forEachIndexed { index, half ->

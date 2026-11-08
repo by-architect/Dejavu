@@ -125,6 +125,10 @@ internal val View.statusBarHeight: Int
     get() = ViewCompat.getRootWindowInsets(this)
         ?.getInsets(WindowInsetsCompat.Type.statusBars() or WindowInsetsCompat.Type.displayCutout())?.top ?: 0
 
+/** The height of the status bar shown over [this] view, or 0 while it is hidden or not known. */
+internal val View.shownStatusBarHeight: Int
+    get() = ViewCompat.getRootWindowInsets(this)?.getInsets(WindowInsetsCompat.Type.statusBars())?.top ?: 0
+
 /**
  * The height of the navigation bar at the bottom of [this] view, which Dejavu's bars keep above. 0 while it is hidden
  * over pages, or before it is known.

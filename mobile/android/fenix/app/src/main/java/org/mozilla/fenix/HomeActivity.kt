@@ -62,6 +62,7 @@ import mozilla.components.browser.state.selector.getNormalOrPrivateTabs
 import mozilla.components.browser.state.selector.selectedTab
 import mozilla.components.browser.state.state.ActiveOptionsPage
 import mozilla.components.browser.state.state.WebExtensionState
+import mozilla.components.compose.base.theme.layout.AcornWindowSize
 import mozilla.components.concept.engine.EngineSession
 import mozilla.components.concept.engine.EngineView
 import mozilla.components.concept.storage.HistoryMetadataKey
@@ -478,6 +479,8 @@ open class HomeActivity : LocaleAwareAppCompatActivity(), NavHostActivity, Crash
             // Browsing mode & theme setup should always be called before super.onCreate.
             browsingModeManager = createBrowsingModeManager(intent)
             setupTheme()
+            // Dejavu: the tab strip and the sidebar follow the size of this window, see Settings.isInLargeWindow.
+            components.settings.isInLargeWindow = AcornWindowSize.isLargeWindow(this)
 
             super.onCreate(savedInstanceState)
         }
@@ -1032,6 +1035,8 @@ open class HomeActivity : LocaleAwareAppCompatActivity(), NavHostActivity, Crash
 
     final override fun onConfigurationChanged(newConfig: Configuration) {
         super.onConfigurationChanged(newConfig)
+        // Dejavu: the tab strip and the sidebar follow the size of this window, see Settings.isInLargeWindow.
+        components.settings.isInLargeWindow = AcornWindowSize.isLargeWindow(this)
 
         // Diagnostic breadcrumb for "Display already aquired" crash:
         // https://github.com/mozilla-mobile/android-components/issues/7960

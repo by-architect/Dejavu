@@ -41,6 +41,7 @@ import org.mozilla.fenix.dejavu.actions.RowAction
 import org.mozilla.fenix.dejavu.actions.TabAction
 import org.mozilla.fenix.dejavu.browser.closeOnMiddleClick
 import org.mozilla.fenix.dejavu.browser.tabZoomTarget
+import org.mozilla.fenix.dejavu.settings.SidebarLook
 import org.mozilla.fenix.dejavu.ui.TapIcon
 import org.mozilla.fenix.dejavu.ui.rememberIconTaps
 import org.mozilla.fenix.dejavu.workspaces.WorkspaceTheme
@@ -90,6 +91,7 @@ private var windowSecuredHere = false
  */
 @Composable
 internal fun PrivateWorkspacePage(
+    look: SidebarLook,
     tabs: List<TabSessionState>,
     selectedTabId: String?,
     onTabClick: (TabSessionState) -> Unit,
@@ -202,6 +204,7 @@ internal fun PrivateWorkspacePage(
                     onClick = { onTabClick(tab) },
                     isPrivate = true,
                     icon = tab.content.icon,
+                    look = look,
                     modifier = Modifier
                         .animateItem(fadeInSpec = null, placementSpec = placement, fadeOutSpec = null)
                         .motionRow(motions, tab.id)

@@ -28,6 +28,7 @@ import org.mozilla.fenix.dejavu.containers.DejavuContainerStorage
 import org.mozilla.fenix.dejavu.containers.drawable
 import org.mozilla.fenix.dejavu.containers.splitTemporary
 import org.mozilla.fenix.dejavu.settings.DejavuSettings
+import org.mozilla.fenix.dejavu.ui.DejavuViewPopups
 import org.mozilla.fenix.dejavu.workspaces.SplitOrientation
 import org.mozilla.fenix.dejavu.workspaces.Workspace
 import org.mozilla.fenix.dejavu.workspaces.WorkspaceRepository
@@ -208,11 +209,12 @@ private class LinkOpener(
                 return view
             }
         }
-        MaterialAlertDialogBuilder(context)
+        val dialog = MaterialAlertDialogBuilder(context)
             .setTitle(title)
             .setAdapter(adapter) { _, which -> onPick(choices[which]) }
             .setNegativeButton(android.R.string.cancel, null)
             .show()
+        DejavuViewPopups.apply(dialog, DejavuViewPopups.currentTheme(context))
     }
 
     private fun icon(resId: Int): Drawable? = AppCompatResources.getDrawable(context, resId)?.mutate()

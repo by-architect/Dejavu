@@ -36,6 +36,48 @@ class DejavuSettings private constructor(context: Context) {
     private val _pinnedRowKeys = MutableStateFlow(readKeys(KEY_PINNED_ROW_ACTIONS, DEFAULT_PINNED_ROW_ACTIONS))
     private val _unpinnedRowKeys = MutableStateFlow(readKeys(KEY_UNPINNED_ROW_ACTIONS, DEFAULT_UNPINNED_ROW_ACTIONS))
     private val _folderRowKeys = MutableStateFlow(readKeys(KEY_FOLDER_ROW_ACTIONS, DEFAULT_FOLDER_ROW_ACTIONS))
+    private val _sidebarLook = MutableStateFlow(readSidebarLook())
+
+    /** How the tab list and the bars of the home screen look in the tab sidebar. See [SidebarLook]. */
+    val sidebarLook: StateFlow<SidebarLook> = _sidebarLook.asStateFlow()
+
+    fun setSidebarLook(look: SidebarLook) {
+        _sidebarLook.value = look
+        prefs.edit {
+            putInt(KEY_LOOK_ROW_HEIGHT, look.rowHeight)
+            putInt(KEY_LOOK_SITE_ICON_SIZE, look.siteIconSize)
+            putInt(KEY_LOOK_BAR_ICON_SIZE, look.barIconSize)
+            putBoolean(KEY_LOOK_SITE_ICONS, look.showSiteIcons)
+            putBoolean(KEY_LOOK_WORKSPACE_HEADER, look.showWorkspaceHeader)
+            putBoolean(KEY_LOOK_PAGE_CONTROLS, look.showPageControls)
+            putBoolean(KEY_LOOK_BOTTOM_BAR, look.showBottomBar)
+            putBoolean(KEY_LOOK_PIN_BUTTONS, look.showPinButtons)
+            putString(KEY_LOOK_HIDDEN_BAR_BUTTONS, look.hiddenBarButtons.joinToString(",") { it.key })
+        }
+    }
+
+    /** Goes back to the look the sidebar starts with. */
+    fun resetSidebarLook() {
+        _sidebarLook.value = SidebarLook()
+        prefs.edit { LOOK_KEYS.forEach { remove(it) } }
+    }
+
+    private fun readSidebarLook(): SidebarLook {
+        val default = SidebarLook()
+        val hidden = prefs.getString(KEY_LOOK_HIDDEN_BAR_BUTTONS, null)?.split(",").orEmpty()
+        return SidebarLook(
+            rowHeight = prefs.getInt(KEY_LOOK_ROW_HEIGHT, default.rowHeight).coerceIn(SidebarLook.ROW_HEIGHTS),
+            siteIconSize = prefs.getInt(KEY_LOOK_SITE_ICON_SIZE, default.siteIconSize)
+                .coerceIn(SidebarLook.SITE_ICON_SIZES),
+            barIconSize = prefs.getInt(KEY_LOOK_BAR_ICON_SIZE, default.barIconSize).coerceIn(SidebarLook.BAR_ICON_SIZES),
+            showSiteIcons = prefs.getBoolean(KEY_LOOK_SITE_ICONS, default.showSiteIcons),
+            showWorkspaceHeader = prefs.getBoolean(KEY_LOOK_WORKSPACE_HEADER, default.showWorkspaceHeader),
+            showPageControls = prefs.getBoolean(KEY_LOOK_PAGE_CONTROLS, default.showPageControls),
+            showBottomBar = prefs.getBoolean(KEY_LOOK_BOTTOM_BAR, default.showBottomBar),
+            showPinButtons = prefs.getBoolean(KEY_LOOK_PIN_BUTTONS, default.showPinButtons),
+            hiddenBarButtons = BarButton.entries.filter { it.key in hidden }.toSet(),
+        )
+    }
     private val _essentialsPerContainer = MutableStateFlow(
         prefs.getBoolean(KEY_ESSENTIALS_PER_CONTAINER, prefs.getBoolean(KEY_ESSENTIALS_PER_CONTAINER_SYNCED, false)),
     )
@@ -411,6 +453,27 @@ class DejavuSettings private constructor(context: Context) {
     }
 
     companion object {
+        private const val KEY_LOOK_ROW_HEIGHT = "look_row_height"
+        private const val KEY_LOOK_SITE_ICON_SIZE = "look_site_icon_size"
+        private const val KEY_LOOK_BAR_ICON_SIZE = "look_bar_icon_size"
+        private const val KEY_LOOK_SITE_ICONS = "look_site_icons"
+        private const val KEY_LOOK_WORKSPACE_HEADER = "look_workspace_header"
+        private const val KEY_LOOK_PAGE_CONTROLS = "look_page_controls"
+        private const val KEY_LOOK_BOTTOM_BAR = "look_bottom_bar"
+        private const val KEY_LOOK_HIDDEN_BAR_BUTTONS = "look_hidden_bar_buttons"
+        private const val KEY_LOOK_PIN_BUTTONS = "look_pin_buttons"
+        private val LOOK_KEYS = listOf(
+            KEY_LOOK_ROW_HEIGHT,
+            KEY_LOOK_SITE_ICON_SIZE,
+            KEY_LOOK_BAR_ICON_SIZE,
+            KEY_LOOK_SITE_ICONS,
+            KEY_LOOK_WORKSPACE_HEADER,
+            KEY_LOOK_PAGE_CONTROLS,
+            KEY_LOOK_BOTTOM_BAR,
+            KEY_LOOK_HIDDEN_BAR_BUTTONS,
+            KEY_LOOK_PIN_BUTTONS,
+        )
+
         /** The most buttons a tab row can show next to its title. */
         const val MAX_ROW_ACTIONS = 3
 
@@ -478,3 +541,37 @@ fun resolveRowActions(keys: List<String>, place: ActionPlace, customActions: Lis
 /** The actions of the selection bar in display order, without the ones hidden with [hiddenKeys]. */
 fun resolveSelectionActions(hiddenKeys: Set<String>, customActions: List<CustomAction>): List<RowAction> =
     RowAction.available(ActionPlace.SELECTION, customActions).filter { it.key !in hiddenKeys }
+
+/** A button of the home screen's bottom bar that the sidebar can leave out, see [SidebarLook.hiddenBarButtons]. */
+enum class BarButton(val key: String) {
+    DOWNLOADS("downloads"),
+    EXTENSIONS("extensions"),
+    BOOKMARKS("bookmarks"),
+    HISTORY("history"),
+}
+
+/**
+ * How the home screen looks in the tab sidebar. The sizes are in dp. The defaults are the home screen's own look, so a
+ * sidebar nobody changed looks like it.
+ */
+data class SidebarLook(
+    val rowHeight: Int = 52,
+    val siteIconSize: Int = 20,
+    val barIconSize: Int = 24,
+    val showSiteIcons: Boolean = true,
+    val showWorkspaceHeader: Boolean = true,
+    val showPageControls: Boolean = true,
+    val showBottomBar: Boolean = true,
+    val hiddenBarButtons: Set<BarButton> = emptySet(),
+    // The pin and unpin buttons of the tab rows; tabs can still be dragged between the pinned and the other tabs.
+    val showPinButtons: Boolean = true,
+) {
+    /** This look with every part shown, for the docked full screen home, which only takes the sizes. */
+    fun sizesOnly(): SidebarLook = SidebarLook(rowHeight = rowHeight, siteIconSize = siteIconSize, barIconSize = barIconSize)
+
+    companion object {
+        val ROW_HEIGHTS = 36..64
+        val SITE_ICON_SIZES = 16..28
+        val BAR_ICON_SIZES = 18..32
+    }
+}

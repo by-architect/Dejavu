@@ -590,7 +590,7 @@ private fun lookOf(bar: PanelBar) = when (bar) {
         PanelLook(ADDRESS_FIELD_HEIGHT, ADDRESS_FIELD_SIDE_MARGIN, ADDRESS_FIELD_MARGIN + BOTTOM_ADDRESS_BAR_MARGIN)
 }
 
-private fun smoothstep(x: Float): Float {
+internal fun smoothstep(x: Float): Float {
     val t = x.coerceIn(0f, 1f)
     return t * t * (3f - 2f * t)
 }
@@ -602,15 +602,15 @@ private val PANEL_FAR_MARGIN = 16.dp
 private val CONTENT_END_PADDING = 8.dp
 
 /** How long the shrunk panel waits at most for an action to close it, in case the action never does. */
-private const val REMOVAL_TIMEOUT_MS = 3000L
+internal const val REMOVAL_TIMEOUT_MS = 3000L
 
 /** How fast a finger has to leave the screen for the panel to go its way whatever its size, per second. */
 private val FLING_VELOCITY = 1000.dp
 
 /** How close the panel has to come to where it settles to stop there, small enough not to show the last step. */
-private const val VISIBILITY_THRESHOLD = 0.001f
-private val OPEN_SPRING = spring(dampingRatio = 0.9f, stiffness = 600f, visibilityThreshold = VISIBILITY_THRESHOLD)
-private val CLOSE_SPRING = spring(dampingRatio = 1f, stiffness = 500f, visibilityThreshold = VISIBILITY_THRESHOLD)
+internal const val VISIBILITY_THRESHOLD = 0.001f
+internal val OPEN_SPRING = spring(dampingRatio = 0.9f, stiffness = 600f, visibilityThreshold = VISIBILITY_THRESHOLD)
+internal val CLOSE_SPRING = spring(dampingRatio = 1f, stiffness = 500f, visibilityThreshold = VISIBILITY_THRESHOLD)
 
 /**
  * How much of the way between the bar and the whole content a finger has to take the panel for it to go on that way

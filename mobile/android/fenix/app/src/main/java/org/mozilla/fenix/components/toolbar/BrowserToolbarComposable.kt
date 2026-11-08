@@ -12,7 +12,10 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.WindowInsets
 import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.statusBars
+import androidx.compose.foundation.layout.windowInsetsPadding
 import androidx.compose.foundation.layout.wrapContentHeight
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.runtime.Composable
@@ -178,7 +181,13 @@ class BrowserToolbarComposable(
                                     if (isDejavuBar) {
                                         SearchPageBackdrop(active = isSearching, modifier = Modifier.matchParentSize())
                                     }
-                                    Box(modifier = if (isDejavuBar) Modifier.statusBarRoomPadding() else Modifier) {
+                                    // Dejavu: above a tab strip, the room is the status bar as it shows, none while hidden.
+                                    val barRoom = when {
+                                        !isDejavuBar -> Modifier
+                                        shouldShowTabStripAtTop -> Modifier.windowInsetsPadding(WindowInsets.statusBars)
+                                        else -> Modifier.statusBarRoomPadding()
+                                    }
+                                    Box(modifier = barRoom) {
                                         DejavuSearchAboveKeyboard(
                                             enabled = isDejavuBar,
                                             isSearching = isSearching,

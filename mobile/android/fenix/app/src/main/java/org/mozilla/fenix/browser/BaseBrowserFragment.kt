@@ -28,16 +28,21 @@ import androidx.biometric.BiometricManager
 import androidx.compose.foundation.layout.Column
 import androidx.compose.material3.HorizontalDivider
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.MutableState
 import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.ComposeView
 import androidx.compose.ui.viewinterop.AndroidView
+import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.coordinatorlayout.widget.CoordinatorLayout
 import androidx.core.content.getSystemService
 import androidx.core.text.HtmlCompat
 import androidx.core.view.OnApplyWindowInsetsListener
 import androidx.core.view.ViewCompat
 import androidx.core.view.isVisible
+import androidx.core.view.updateLayoutParams
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.lifecycleScope
 import androidx.navigation.NavController
@@ -86,6 +91,7 @@ import mozilla.components.feature.app.links.AppLinksFeature
 import mozilla.components.feature.app.links.RedirectDialogData
 import mozilla.components.feature.contextmenu.ContextMenuCandidate
 import mozilla.components.feature.contextmenu.ContextMenuFeature
+import mozilla.components.feature.contextmenu.ContextMenuFragment
 import mozilla.components.feature.downloads.CurrentDownloadState
 import mozilla.components.feature.downloads.DownloadsFeature
 import mozilla.components.feature.downloads.NegativeActionCallback
@@ -186,6 +192,7 @@ import org.mozilla.fenix.browser.reloadcover.TabReloadCoverGating
 import org.mozilla.fenix.browser.store.BrowserScreenMiddleware
 import org.mozilla.fenix.browser.store.BrowserScreenState
 import org.mozilla.fenix.browser.store.BrowserScreenStore
+import org.mozilla.fenix.browser.tabstrip.TabSidebar
 import org.mozilla.fenix.browser.tabstrip.TabStrip
 import org.mozilla.fenix.components.AppStore
 import org.mozilla.fenix.components.FenixAutocompletePrompt
@@ -211,16 +218,20 @@ import org.mozilla.fenix.customtabs.ExternalAppBrowserActivity
 import org.mozilla.fenix.databinding.FragmentBrowserBinding
 import org.mozilla.fenix.dejavu.browser.DejavuMouse
 import org.mozilla.fenix.dejavu.browser.DejavuToolbar
+import org.mozilla.fenix.dejavu.browser.PageCorners
 import org.mozilla.fenix.dejavu.browser.SplitPanes
 import org.mozilla.fenix.dejavu.browser.barsLayout
 import org.mozilla.fenix.dejavu.browser.exitFullScreenKeepingBarsHidden
 import org.mozilla.fenix.dejavu.browser.handleDejavuBackPressed
 import org.mozilla.fenix.dejavu.browser.installAboutConfigWarning
 import org.mozilla.fenix.dejavu.browser.installDejavuSplitView
+import org.mozilla.fenix.dejavu.browser.onStatusBarChange
 import org.mozilla.fenix.dejavu.browser.padForNavigationBar
 import org.mozilla.fenix.dejavu.browser.restoreDejavuRotationAfterFullscreen
 import org.mozilla.fenix.dejavu.browser.shownNavigationBarHeight
+import org.mozilla.fenix.dejavu.browser.shownStatusBarHeight
 import org.mozilla.fenix.dejavu.browser.statusBarHeight
+import org.mozilla.fenix.dejavu.ui.DejavuViewPopups
 import org.mozilla.fenix.downloads.DownloadService
 import org.mozilla.fenix.downloads.RenameAndChangeLocationDialogFragment
 import org.mozilla.fenix.downloads.dialog.createDownloadAppDialog
@@ -231,9 +242,11 @@ import org.mozilla.fenix.ext.getBottomToolbarHeight
 import org.mozilla.fenix.ext.getPreferenceKey
 import org.mozilla.fenix.ext.getTopToolbarHeight
 import org.mozilla.fenix.ext.hideToolbar
+import org.mozilla.fenix.ext.isLargeWindow
 import org.mozilla.fenix.ext.isOnline
 import org.mozilla.fenix.ext.isToolbarAtBottom
 import org.mozilla.fenix.ext.nav
+import org.mozilla.fenix.ext.navigateSafe
 import org.mozilla.fenix.ext.registerForActivityResult
 import org.mozilla.fenix.ext.requireComponents
 import org.mozilla.fenix.ext.runIfFragmentIsAttached
@@ -558,6 +571,11 @@ abstract class BaseBrowserFragment :
 
         _browserToolbar = initializeBrowserToolbar(activity, store, readerMenuController)
         browserTabStrip = initializeBrowserTabStripView(activity, appStore, settings)
+        // Dejavu: the tab sidebar, and the docked sidebar standing in for the bars.
+        initializeTabSidebar(settings)
+        initializeSidebarChrome(view)
+        // Dejavu: pages keep below the tab strip, which keeps below the status bar only while it shows.
+        onStatusBarChange(binding.engineView) { if (isAdded) reinitializeEngineView() }
 
         if (settings.microsurveyFeatureEnabled) {
             listenForMicrosurveyMessage(context)
@@ -630,6 +648,8 @@ abstract class BaseBrowserFragment :
             owner = this,
             view = view,
         )
+        // Dejavu: the page context menu, a dialog of views, takes on the colors of the workspace like the menus do.
+        DejavuViewPopups.themeDialogs(parentFragmentManager, viewLifecycleOwner) { it is ContextMenuFragment }
 
         snackbarBinding.set(
             feature =
@@ -1969,7 +1989,8 @@ abstract class BaseBrowserFragment :
                     // in the
                     // fullscreen mode. It still has to be initialized to be shown after the user exits the fullscreen.
                     val isFullscreen = fullScreenFeature.get()?.isFullScreen == true
-                    toolbarContainerView.isVisible = !isFullscreen
+                    // Dejavu: the docked sidebar stands in for the bars, see initializeSidebarChrome.
+                    toolbarContainerView.isVisible = !isFullscreen && !isSidebarChrome
                 }
 
         bottomToolbarContainerIntegration.set(
@@ -2284,7 +2305,9 @@ abstract class BaseBrowserFragment :
         val toolbarHeight = getTopToolbarHeight(includeTabStripIfAvailable = customTabSessionId == null)
         val isDejavuBar = DejavuToolbar.enabled && customTabSessionId == null && toolbarHeight > 0
         if (!isDejavuBar) return toolbarHeight
-        val statusBar = view?.statusBarHeight ?: 0
+        // Dejavu: the tab strip above the address bar keeps below the status bar only while it shows.
+        val stripAtTop = customTabSessionId == null && requireComponents.settings.shouldShowTabStripAtTop
+        val statusBar = view?.let { if (stripAtTop) it.shownStatusBarHeight else it.statusBarHeight } ?: 0
         return if (requireContext().barsLayout.addressBarAtBottom) statusBar else toolbarHeight + statusBar
     }
 
@@ -2369,6 +2392,10 @@ abstract class BaseBrowserFragment :
                 }
             )
             (view as? SwipeGestureLayout)?.isSwipeEnabled = false
+            // Dejavu: a video full screen covers the sidebar too.
+            binding.tabSidebar.isVisible = false
+            binding.pageCorners.isVisible = false
+            tabSidebarOverlay?.value = false
             expandBrowserView()
 
             MediaState.fullscreen.record(NoExtras())
@@ -2381,17 +2408,103 @@ abstract class BaseBrowserFragment :
             }
 
             (view as? SwipeGestureLayout)?.isSwipeEnabled = true
+            // Dejavu: the sidebar comes back, docked or not as the window now has it.
+            binding.tabSidebar.isVisible = true
+            updateSidebarChrome()
+            binding.pageCorners.isVisible =
+                isSidebarChrome && !requireContext().components.settings.isVerticalTabsAutoHide
             (activity as? HomeActivity)?.let { homeActivity ->
                 // ExternalAppBrowserActivity exclusively handles it's own theming unless in private mode.
                 if (homeActivity !is ExternalAppBrowserActivity || homeActivity.browsingModeManager.mode.isPrivate) {
                     homeActivity.themeManager.applyStatusBarTheme(homeActivity)
                 }
             }
-            collapseBrowserView()
+            if (!isSidebarChrome) collapseBrowserView()
             restoreDejavuRotationAfterFullscreen()
         }
 
         binding.swipeRefresh.isEnabled = shouldPullToRefreshBeEnabled(inFullScreen)
+    }
+
+    /** Dejavu: whether the hidden tab sidebar is shown over the page, or null when it is docked or off. */
+    private var tabSidebarOverlay: MutableState<Boolean>? = null
+
+    /** Dejavu: shows the home screen in a sidebar next to the page on large windows, when the setting is on. */
+    private fun initializeTabSidebar(settings: org.mozilla.fenix.utils.Settings) {
+        if (customTabSessionId != null || !settings.isVerticalTabsEnabled) return
+        val overlayShown = mutableStateOf(false).takeIf { settings.isVerticalTabsAutoHide }
+        tabSidebarOverlay = overlayShown
+        if (overlayShown != null) {
+            // The page keeps the full width and the sidebar slides over it from the edge.
+            binding.tabSidebar.translationZ = resources.getDimension(R.dimen.browser_fragment_toolbar_elevation)
+            binding.browserLayout.updateLayoutParams<ConstraintLayout.LayoutParams> {
+                startToEnd = ConstraintLayout.LayoutParams.UNSET
+                startToStart = ConstraintLayout.LayoutParams.PARENT_ID
+            }
+        }
+        binding.tabSidebar.setContent {
+            FirefoxTheme {
+                TabSidebar(
+                    activity = requireActivity() as HomeActivity,
+                    navController = findNavController(),
+                    // Dejavu: only from the browser, as closing the last tab also sends this fragment home.
+                    onNoTabs = {
+                        findNavController()
+                            .navigateSafe(R.id.browserFragment, BrowserFragmentDirections.actionGlobalHome())
+                    },
+                    overlayShown = overlayShown,
+                    showHandle = settings.isSidebarHandleShown,
+                    pageControls = isSidebarChrome,
+                )
+            }
+        }
+    }
+
+    /**
+     * Dejavu: whether the docked sidebar stands in for the address bar and the actions bar, so the page has no bars.
+     * The sidebar then carries the address field, back, forward, reload and the menu, see TabSidebar.
+     */
+    private var isSidebarChrome by mutableStateOf(false)
+
+    private fun initializeSidebarChrome(view: View) {
+        updateSidebarChrome()
+        // The bottom bars are made later, so they are hidden again once they are.
+        view.post { if (_binding != null && isSidebarChrome) expandBrowserView() }
+        // A search started elsewhere, like from a link's menu, still edits in the address bar, shown while it lasts.
+        requireComponents.appStore.flowScoped(viewLifecycleOwner, Dispatchers.Main) { flow ->
+            flow
+                .map { it.searchState.isSearchActive }
+                .distinctUntilChanged()
+                .collect { searching ->
+                    if (!isSidebarChrome || _browserToolbar == null) return@collect
+                    if (searching) {
+                        browserToolbar.visible()
+                        browserToolbar.expand()
+                    } else {
+                        browserToolbar.collapse()
+                        browserToolbar.gone()
+                    }
+                }
+        }
+    }
+
+    /**
+     * Dejavu: hides or shows the bars when whether the sidebar is docked changes, like when the window is resized. A
+     * sidebar hidden until a swipe from the edge counts as docked, so the page keeps the full height.
+     */
+    private fun updateSidebarChrome() {
+        val context = context ?: return
+        val settings = context.components.settings
+        val docked = customTabSessionId == null &&
+            settings.isTabSidebarShown(context.isLargeWindow())
+        if (docked == isSidebarChrome) return
+        isSidebarChrome = docked
+        webAppToolbarShouldBeVisible = !docked
+        // Composed only once docked, so custom tabs and phones do not pay for it.
+        if (docked) binding.pageCorners.setContent { FirefoxTheme { PageCorners() } }
+        // An auto-hidden sidebar still stands in for the bars, but it floats over the page, so no corners.
+        binding.pageCorners.isVisible = docked && !settings.isVerticalTabsAutoHide && binding.tabSidebar.isVisible
+        if (docked) expandBrowserView() else collapseBrowserView()
     }
 
     @VisibleForTesting(otherwise = VisibleForTesting.PROTECTED)
@@ -2536,6 +2649,10 @@ abstract class BaseBrowserFragment :
 
     override fun onConfigurationChanged(newConfig: Configuration) {
         super.onConfigurationChanged(newConfig)
+        // Dejavu: a resized or rotated window can dock or undock the sidebar.
+        if (_binding != null && _browserToolbar != null && fullScreenFeature.get()?.isFullScreen != true) {
+            updateSidebarChrome()
+        }
 
         if (findInPageIntegration.get()?.isFeatureActive != true && fullScreenFeature.get()?.isFullScreen != true) {
             _browserToolbar?.let {

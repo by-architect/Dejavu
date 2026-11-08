@@ -22,3 +22,13 @@ fun captureRow(view: GeckoView, y: Int, samples: Int): GeckoResult<Bitmap>? {
     if (view.width == 0 || view.height == 0) return null
     return display.screenshot().source(0, y.coerceIn(0, view.height - 1), view.width, 1).size(samples, 1).capture()
 }
+
+/**
+ * Dejavu: pictures the column of pixels [x] pixels from the left of what [view] shows, scaled down to [samples] pixels,
+ * for the color along the page's side; `null` while [view] shows no page.
+ */
+fun captureColumn(view: GeckoView, x: Int, samples: Int): GeckoResult<Bitmap>? {
+    val display = view.session?.display ?: return null
+    if (view.width == 0 || view.height == 0) return null
+    return display.screenshot().source(x.coerceIn(0, view.width - 1), 0, 1, view.height).size(1, samples).capture()
+}

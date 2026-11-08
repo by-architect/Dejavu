@@ -905,4 +905,59 @@
     <string name="dejavu_preference_mouse_support">Mouse support</string>
     <!-- Setting summary of the mouse support switch. -->
     <string name="dejavu_preference_mouse_support_summary">Middle-click opens a link in a background tab, and hovering a link shows its address. Middle-click on a tab closes it.</string>
+    <string name="pref_key_dejavu_sidebar" translatable="false">pref_key_vertical_tabs</string>
+    <string name="pref_key_dejavu_sidebar_auto_hide" translatable="false">pref_key_vertical_tabs_auto_hide</string>
+    <string name="pref_key_dejavu_sidebar_handle" translatable="false">pref_key_dejavu_sidebar_handle</string>
+    <string name="pref_key_dejavu_sidebar_width" translatable="false">pref_key_dejavu_sidebar_width</string>
+    <string name="pref_key_dejavu_sidebar_look" translatable="false">pref_key_dejavu_sidebar_look</string>
+    <!-- Switch in Customize, Bars: shows the home screen as a sidebar of tabs next to pages on large screens. -->
+    <string name="dejavu_settings_sidebar">Tab sidebar on large screens</string>
+    <!-- Switch in Customize, Bars: the sidebar stays hidden until the user swipes from the left edge of the screen. -->
+    <string name="dejavu_settings_sidebar_auto_hide">Hide the sidebar until you swipe from the left edge</string>
+    <!-- Switch in Customize, Bars: draws a small handle at the edge that pulls the hidden sidebar out. -->
+    <string name="dejavu_settings_sidebar_handle">Show sidebar handle</string>
+    <!-- Title of the settings screen and of the entry that opens it: how the tab sidebar looks. -->
+    <string name="dejavu_settings_sidebar_look">Sidebar look</string>
+    <!-- Text under the "Sidebar look" entry. -->
+    <string name="dejavu_settings_sidebar_look_entry_summary">Row height, icon sizes and which parts show</string>
+    <!-- Heading of the sliders for sizes on the "Sidebar look" screen. -->
+    <string name="dejavu_sidebar_look_sizes">Sizes</string>
+    <!-- Slider: how tall a tab row of the sidebar is. -->
+    <string name="dejavu_sidebar_look_row_height">Tab row height</string>
+    <!-- Slider: how big the website icon on a tab row is. -->
+    <string name="dejavu_sidebar_look_site_icon_size">Site icon size</string>
+    <!-- Slider: how big the icons of the bar at the bottom of the sidebar are. -->
+    <string name="dejavu_sidebar_look_bar_icon_size">Bottom bar icon size</string>
+    <!-- A size in density independent pixels. %1$d is the number. -->
+    <string name="dejavu_sidebar_look_dp">%1$d dp</string>
+    <!-- Heading of the switches that show or hide parts of the sidebar. -->
+    <string name="dejavu_sidebar_look_parts">What shows in the sidebar</string>
+    <!-- Switch: shows the website icon on tab rows. -->
+    <string name="dejavu_sidebar_look_site_icons">Site icons on tabs</string>
+    <!-- Switch: shows the row with the name of the workspace, with the new folder button. -->
+    <string name="dejavu_sidebar_look_workspace_header">Workspace name row</string>
+    <!-- Switch: shows the page buttons above the address field of the sidebar. -->
+    <string name="dejavu_sidebar_look_page_controls">Page buttons</string>
+    <!-- Text under the "Page buttons" switch. -->
+    <string name="dejavu_sidebar_look_page_controls_summary">Back, forward and reload above the field. When hidden, the menu button sits next to the field.</string>
+    <!-- Switch: shows the bar at the bottom of the sidebar, with the workspace dots. -->
+    <string name="dejavu_sidebar_look_bottom_bar">Bottom bar</string>
+    <string name="dejavu_sidebar_look_pin_buttons">Pin buttons on tabs</string>
+    <string name="dejavu_sidebar_look_pin_buttons_summary">Tabs can still be pinned by dragging them into the pinned tabs</string>
+    <!-- Heading of the switches that show or hide the buttons of the bottom bar. -->
+    <string name="dejavu_sidebar_look_bar_buttons">Bottom bar buttons</string>
+    <!-- Button: puts every setting of the sidebar look back to its default. -->
+    <string name="dejavu_sidebar_look_reset">Reset to default</string>
+    <!-- Hint of the search field at the top of the sidebar. The user can search tabs or type an address. -->
+    <string name="dejavu_sidebar_search_hint">Search tabs or enter address</string>
+    <!-- Hint of the sidebar search field when the sidebar is too narrow for the whole hint. -->
+    <string name="dejavu_search_tabs_short">Search tabs</string>
+    <!-- Heading of the list of open tabs that match what is typed in the sidebar search field. -->
+    <string name="dejavu_sidebar_open_tabs">Open tabs</string>
+    <!-- Content description of the button that clears the sidebar search field. -->
+    <string name="dejavu_sidebar_clear">Clear search</string>
+    <!-- Content description of the edge of the sidebar that can be dragged to resize it. -->
+    <string name="dejavu_sidebar_resize">Resize sidebar. Double tap to reset its width</string>
+    <!-- Content description of the x on the engine picked with @name in a search field. %1$s is the engine name. -->
+    <string name="dejavu_engine_chip_remove">Stop searching with %1$s</string>
 </resources>

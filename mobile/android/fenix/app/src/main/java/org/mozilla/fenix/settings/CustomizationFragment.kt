@@ -38,6 +38,7 @@ import org.mozilla.fenix.dejavu.browser.DejavuToolbar
 import org.mozilla.fenix.dejavu.discover.NewThing
 import org.mozilla.fenix.dejavu.discover.NewThings
 import org.mozilla.fenix.dejavu.settings.dejavuSettings
+import org.mozilla.fenix.dejavu.settings.setupTabSidebarCategory
 import org.mozilla.fenix.dejavu.settings.slideTo
 import org.mozilla.fenix.e2e.SystemInsetsPaddedFragment
 import org.mozilla.fenix.ext.components
@@ -146,6 +147,8 @@ open class CustomizationFragment : PreferenceFragmentCompat(), SystemInsetsPadde
         setupToolbarCategory()
         setupTabStripDisplayCategory()
         setupTabStripLocationCategory()
+        // Dejavu: the tab sidebar replaces the tab bar, so the toolbar and its shortcut follow it.
+        setupTabSidebarCategory(onSidebarChanged = ::onTabSidebarChanged)
         setupToolbarLayout()
         updateToolbarShortcut()
         setupBarsCategory()
@@ -160,6 +163,11 @@ open class CustomizationFragment : PreferenceFragmentCompat(), SystemInsetsPadde
             isSummarizationEnabled = status.isSummarizationFeatureEnabled,
             isSummarizationGestureEnabled = status.isSummarizationGestureEnabled,
         )
+    }
+
+    private fun onTabSidebarChanged() {
+        setupToolbarLayout()
+        updateToolbarShortcut()
     }
 
     private fun updateToolbarShortcut() {
@@ -503,6 +511,8 @@ open class CustomizationFragment : PreferenceFragmentCompat(), SystemInsetsPadde
             resources.getString(R.string.pref_key_dejavu_more_menu) ->
                 return openDejavuScreen(R.id.dejavu_more_menu_graph)
             resources.getString(R.string.pref_key_dejavu_bars) -> return openDejavuScreen(R.id.dejavu_bars_graph)
+            resources.getString(R.string.pref_key_dejavu_sidebar_look) ->
+                return openDejavuScreen(R.id.dejavu_sidebar_look_graph)
             resources.getString(R.string.pref_key_website_pull_to_refresh) -> {
                 PullToRefreshInBrowser.enabled.set(requireComponents.settings.isPullToRefreshEnabledInBrowser)
             }
@@ -516,7 +526,11 @@ open class CustomizationFragment : PreferenceFragmentCompat(), SystemInsetsPadde
     /** Dejavu: opens one of the screens Customize leads to, only once when its entry is tapped twice. */
     private fun openDejavuScreen(@IdRes graph: Int): Boolean {
         val navController = findNavController()
-        if (navController.currentDestination?.id == R.id.customizationFragment) navController.slideTo(graph)
+        // Dejavu: the bars screen leads to the sidebar look screen.
+        val from = navController.currentDestination?.id
+        if (from == R.id.customizationFragment || (showsBars && from == R.id.dejavuBarsFragment)) {
+            navController.slideTo(graph)
+        }
         return true
     }
 

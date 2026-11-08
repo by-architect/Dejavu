@@ -39,6 +39,7 @@ import mozilla.components.compose.base.theme.AcornTheme
 import mozilla.components.compose.browser.awesomebar.AwesomeBarColors
 import mozilla.components.compose.browser.awesomebar.AwesomeBarOrientation
 import mozilla.components.compose.browser.awesomebar.AwesomeBarTestTags
+import mozilla.components.compose.browser.awesomebar.LocalSuggestionTitleMaxLines
 import mozilla.components.compose.browser.awesomebar.R
 import mozilla.components.concept.awesomebar.AwesomeBar
 import mozilla.components.ui.icons.R as iconsR
@@ -118,7 +119,8 @@ private fun SuggestionTitleAndDescription(
                 },
             color = colors.title,
             fontSize = 15.sp,
-            maxLines = 2,
+            // Dejavu: one line where the AwesomeBar is narrow, see LocalSuggestionTitleMaxLines.
+            maxLines = LocalSuggestionTitleMaxLines.current,
             overflow = TextOverflow.Ellipsis,
             modifier = Modifier.width(IntrinsicSize.Max).padding(start = 2.dp, end = 8.dp),
         )

@@ -29,6 +29,7 @@ import kotlinx.coroutines.launch
 import mozilla.components.concept.engine.EngineView
 
 private const val HIDE_AGAIN_LISTENER = "dejavu_system_bars"
+private const val STATUS_BAR_LISTENER = "dejavu_status_bar"
 
 /** Whether [hideSystemBarsOverPages] keeps the status bar and the navigation bar hidden right now. */
 private var hiddenOverPages = false
@@ -71,6 +72,17 @@ fun Fragment.hideSystemBarsOverPages(engineView: EngineView, hidden: StateFlow<B
     }
 }
 
+/** Calls [onChange] when the status bar shows or hides over [engineView], so what keeps below it can follow. */
+fun Fragment.onStatusBarChange(engineView: EngineView, onChange: () -> Unit) {
+    var height = -1
+    engineView.addWindowInsetsListener(STATUS_BAR_LISTENER) { _, insets ->
+        val now = insets.getInsets(WindowInsetsCompat.Type.statusBars()).top
+        if (height >= 0 && now != height) view?.post(onChange)
+        height = now
+        insets
+    }
+}
+
 /**
  * Leaves a video's full screen with [exitImmersiveMode], which shows the system bars. While they are hidden over
  * pages, they are hidden again at once, and left alone when no video was full screen, as on every tab switch.
@@ -89,6 +101,14 @@ fun Modifier.statusBarRoomPadding(): Modifier = composed {
 /** Keeps [this] above the navigation bar while it shows, leaving no room for it while it is hidden over pages. */
 fun Modifier.navigationBarRoomPadding(): Modifier = composed {
     windowInsetsPadding(WindowInsets.navigationBars)
+}
+
+/**
+ * Keeps the bars hidden in [dialogWindow], the window of a dialog over the browser screen, while they are hidden over
+ * pages. A window of its own brings the bars back otherwise, as soon as it takes the focus from the screen.
+ */
+fun keepSystemBarsHiddenOverPages(dialogWindow: Window) {
+    if (hiddenOverPages) dialogWindow.hideSystemBars()
 }
 
 private fun Window.hideSystemBars() = WindowCompat.getInsetsController(this, decorView).run {

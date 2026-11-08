@@ -57,6 +57,7 @@ import org.mozilla.fenix.components.menu.store.WebExtensionMenuItem
 import org.mozilla.fenix.dejavu.actions.TabAction
 import org.mozilla.fenix.dejavu.browser.ClearData
 import org.mozilla.fenix.dejavu.browser.SplitSpace
+import org.mozilla.fenix.dejavu.browser.keepSystemBarsHiddenOverPages
 import org.mozilla.fenix.dejavu.settings.DejavuSettings
 import org.mozilla.fenix.dejavu.settings.PageBackdrop
 import org.mozilla.fenix.dejavu.workspaces.SplitOrientation
@@ -70,6 +71,7 @@ object DejavuMenu {
     private const val ARG_FROM_BAR = "dejavu_menu_from_bar"
     private const val ARG_OPENING = "dejavu_menu_opening"
     private const val ARG_SPLIT_WAY = "dejavu_menu_split_way"
+    private const val ARG_ANCHORED = "dejavu_menu_anchored"
 
     /**
      * What the menu shows when it opens. The page's details are no part of the "More" menu, but a panel of their own
@@ -94,7 +96,14 @@ object DejavuMenu {
     fun opensFromTop(context: Context, accessPoint: MenuAccessPoint, arguments: Bundle?): Boolean =
         accessPoint == MenuAccessPoint.Browser &&
             !context.contextComponents.settings.shouldUseBottomToolbar &&
-            arguments?.getBoolean(ARG_FROM_BAR) != true
+            arguments?.getBoolean(ARG_FROM_BAR) != true &&
+            !anchored(arguments)
+
+    /**
+     * Whether the menu opened with [arguments] is the compact panel under the docked sidebar's button, see
+     * [AnchoredMoreMenu], rather than a sheet or the panel of a bar.
+     */
+    fun anchored(arguments: Bundle?): Boolean = arguments?.getBoolean(ARG_ANCHORED) == true
 
     /** What the menu opened with [arguments] shows first. */
     fun opening(arguments: Bundle?): Opening =
@@ -102,10 +111,17 @@ object DejavuMenu {
 
     /**
      * The arguments that open the menu dialog out of the bar that opens it or not, showing [opening] first; the tab
-     * picked for a split view shows next to the menu's tab the way [splitWay] has it.
+     * picked for a split view shows next to the menu's tab the way [splitWay] has it. With [anchored] the menu is the
+     * compact panel under the docked sidebar's button.
      */
-    fun arguments(fromBar: Boolean, opening: Opening, splitWay: SplitOrientation? = null): Bundle = Bundle().apply {
+    fun arguments(
+        fromBar: Boolean,
+        opening: Opening,
+        splitWay: SplitOrientation? = null,
+        anchored: Boolean = false,
+    ): Bundle = Bundle().apply {
         putBoolean(ARG_FROM_BAR, fromBar)
+        putBoolean(ARG_ANCHORED, anchored)
         putString(ARG_OPENING, opening.name)
         splitWay?.let { putString(ARG_SPLIT_WAY, it.key) }
     }
@@ -171,6 +187,7 @@ object DejavuMenu {
             @Suppress("DEPRECATION")
             own.navigationBarColor = android.graphics.Color.TRANSPARENT
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) own.isNavigationBarContrastEnforced = false
+            keepSystemBarsHiddenOverPages(own)
             val behind = WindowCompat.getInsetsController(activityWindow, activityWindow.decorView)
             WindowCompat.getInsetsController(own, own.decorView).apply {
                 isAppearanceLightStatusBars = behind.isAppearanceLightStatusBars
@@ -201,6 +218,7 @@ object DejavuMenu {
  * @param navController Opens the screens tab actions lead to.
  * @param onEdit Opens the settings of the menu.
  * @param onDismiss Closes the menu.
+ * @param anchored Whether the menu is the compact panel under the docked sidebar's button, see [AnchoredMoreMenu].
  */
 @Suppress("LongParameterList")
 @Composable
@@ -213,11 +231,12 @@ fun DejavuMenuContent(
     onEdit: () -> Unit,
     onDismiss: () -> Unit,
     splitWay: SplitOrientation? = null,
+    anchored: Boolean = false,
 ) {
     if (opening == DejavuMenu.Opening.PAGE_INFO && accessPoint == MenuAccessPoint.Browser) {
         PageInfoMenu(menuStore = menuStore, navController = navController, onDismiss = onDismiss)
     } else {
-        MoreMenuContent(menuStore, accessPoint, fromTop, opening, navController, onEdit, onDismiss, splitWay)
+        MoreMenuContent(menuStore, accessPoint, fromTop, opening, navController, onEdit, onDismiss, splitWay, anchored)
     }
 }
 
@@ -233,13 +252,19 @@ private fun MoreMenuContent(
     onEdit: () -> Unit,
     onDismiss: () -> Unit,
     splitWay: SplitOrientation?,
+    anchored: Boolean,
 ) {
     val fenix = components
     val menuState by menuStore.stateFlow.collectAsState()
     val extensions = menuState.extensionMenuState.browserWebExtensionMenuItem
     val manageExtensions = { menuStore.dispatch(MenuAction.Navigate.ManageExtensions) }
 
-    MoreMenuSheet(fromTop = fromTop, onDismiss = onDismiss, floating = DejavuMenu.floats(accessPoint, fromTop)) {
+    MoreMenuSheet(
+        fromTop = fromTop,
+        onDismiss = onDismiss,
+        floating = DejavuMenu.floats(accessPoint, fromTop) && !anchored,
+        anchored = anchored,
+    ) {
         val closer = LocalMenuCloser.current
         val close: () -> Unit = if (closer == null) onDismiss else ({ closer.close() })
         if (accessPoint == MenuAccessPoint.Home) {
@@ -280,6 +305,7 @@ private fun MoreMenuContent(
         val rowKeys by settings.moreMenuRows.collectAsState()
         val customActions by settings.customActions.collectAsState()
         val editHidden by settings.moreMenuEditHidden.collectAsState()
+        val sidebarLook by settings.sidebarLook.collectAsState()
         var extensionsExpanded by remember { mutableStateOf(opening == DejavuMenu.Opening.EXTENSIONS) }
         // The way the tab picked for a split view shows, while picking it.
         var pickingSplit by remember {
@@ -320,7 +346,10 @@ private fun MoreMenuContent(
 
         MoreMenu(
             rows = remember(rowKeys, customActions) { MoreMenuLayout.resolve(rowKeys, customActions) }
-                .map { it.forSplitWays(state.splitWays, state.isSplit) },
+                .map { it.forSplitWays(state.splitWays, state.isSplit) }
+                // The compact menu leaves out what the sidebar beside it shows as buttons already.
+                .let { if (anchored) compactRows(it, sidebarShownItems(sidebarLook), COMPACT_MENU_COLUMNS) else it },
+            columns = if (anchored) COMPACT_MENU_COLUMNS else MoreMenuLayout.MAX_PER_ROW,
             state = state,
             extensions = extensions,
             extensionsExpanded = extensionsExpanded,

@@ -70,6 +70,21 @@
         <androidx.preference.SwitchPreferenceCompat
             android:key="@string/pref_key_tab_strip_show"
             android:title="@string/preference_tab_strip_show" />
+        <!-- Dejavu: the tab sidebar and its settings, see setupTabSidebarCategory. -->
+        <androidx.preference.SwitchPreferenceCompat
+            android:key="@string/pref_key_dejavu_sidebar"
+            android:title="@string/dejavu_settings_sidebar" />
+        <androidx.preference.SwitchPreferenceCompat
+            android:key="@string/pref_key_dejavu_sidebar_auto_hide"
+            android:title="@string/dejavu_settings_sidebar_auto_hide" />
+        <androidx.preference.SwitchPreferenceCompat
+            android:defaultValue="true"
+            android:key="@string/pref_key_dejavu_sidebar_handle"
+            android:title="@string/dejavu_settings_sidebar_handle" />
+        <androidx.preference.Preference
+            android:key="@string/pref_key_dejavu_sidebar_look"
+            android:title="@string/dejavu_settings_sidebar_look"
+            android:summary="@string/dejavu_settings_sidebar_look_entry_summary" />
     </androidx.preference.PreferenceCategory>
 
     <androidx.preference.PreferenceCategory

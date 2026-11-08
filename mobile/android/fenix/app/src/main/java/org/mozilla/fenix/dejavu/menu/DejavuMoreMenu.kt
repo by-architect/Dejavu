@@ -36,6 +36,8 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.CompositionLocalProvider
+import androidx.compose.runtime.compositionLocalOf
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableFloatStateOf
 import androidx.compose.runtime.remember
@@ -64,9 +66,10 @@ import androidx.compose.ui.unit.dp
 import mozilla.components.browser.state.state.TabSessionState
 import mozilla.components.ui.icons.R as iconsR
 import org.mozilla.fenix.R
+import org.mozilla.fenix.browser.tabstrip.TabSidebarLayout
 import org.mozilla.fenix.components.menu.store.WebExtensionMenuItem
 import org.mozilla.fenix.dejavu.browser.navigationBarRoomPadding
-import org.mozilla.fenix.dejavu.browser.shownPopupTheme
+import org.mozilla.fenix.dejavu.browser.shownMenuTheme
 import org.mozilla.fenix.dejavu.browser.statusBarRoomPadding
 import org.mozilla.fenix.dejavu.browser.workspaceTheme
 import org.mozilla.fenix.dejavu.discover.NewThing
@@ -201,14 +204,22 @@ private val DeviceLockedItems = setOf(
  * bottom sheet dialog.
  *
  * @param floating Shows the menu as a panel growing out of the actions bar instead, see [FloatingMoreMenu].
+ * @param anchored Shows the menu as a compact panel under the docked sidebar's button instead, see
+ *   [AnchoredMoreMenu].
  */
 @Composable
 fun MoreMenuSheet(
     fromTop: Boolean,
     onDismiss: () -> Unit,
     floating: Boolean = false,
+    anchored: Boolean = false,
     content: @Composable ColumnScope.() -> Unit,
 ) {
+    // Dejavu: beside the docked sidebar, the menu is a small panel under its button, see [AnchoredMoreMenu].
+    if (anchored) {
+        AnchoredMoreMenu(onDismiss = onDismiss, content = content)
+        return
+    }
     if (floating) {
         FloatingMoreMenu(onDismiss = onDismiss, content = content)
         return
@@ -219,6 +230,9 @@ fun MoreMenuSheet(
     } else {
         RoundedCornerShape(topStart = corner, topEnd = corner)
     }
+    val menuTheme = shownMenuTheme()
+    // Dejavu: beside the docked sidebar, the tiles let the sheet gradient show through.
+    val tileAlpha = if (menuTheme != null && TabSidebarLayout.occupiedWidth > 0.dp) SIDEBAR_TILE_ALPHA else 1f
     val dismissDistance = with(LocalDensity.current) { 64.dp.toPx() }
     val swipeUp = remember(dismissDistance) { SwipeUpToDismiss(dismissDistance, onDismiss) }
     val shownOffset by animateFloatAsState(targetValue = swipeUp.offset, label = "MoreMenuSheetOffset")
@@ -227,22 +241,26 @@ fun MoreMenuSheet(
 
     Column(
         modifier = Modifier
+            // The docked tab sidebar stays in view beside the sheet.
+            .padding(start = TabSidebarLayout.occupiedWidth)
             .fillMaxWidth()
             .graphicsLayer { translationY = shownOffset }
             .clip(shape)
             .background(MaterialTheme.colorScheme.surface)
-            .workspaceTheme(shownPopupTheme())
+            .workspaceTheme(menuTheme)
             .then(if (fromTop) Modifier.statusBarRoomPadding() else Modifier.navigationBarRoomPadding())
             .nestedScroll(if (fromTop) swipeUp else bottomSheetScroll),
     ) {
         if (!fromTop) SheetHandle()
-        Column(
-            modifier = Modifier
-                .weight(1f, fill = false)
-                .verticalScroll(rememberScrollState())
-                .padding(horizontal = 12.dp, vertical = 4.dp),
-            content = content,
-        )
+        CompositionLocalProvider(LocalTileAlpha provides tileAlpha) {
+            Column(
+                modifier = Modifier
+                    .weight(1f, fill = false)
+                    .verticalScroll(rememberScrollState())
+                    .padding(horizontal = 12.dp, vertical = 4.dp),
+                content = content,
+            )
+        }
         if (fromTop) {
             SheetHandle(
                 modifier = Modifier.draggable(
@@ -320,6 +338,7 @@ private fun SheetHandle(modifier: Modifier = Modifier) {
  * @param onEdit Opens the settings of the menu, from a button below the rows; without it there is no such button.
  * @param onCustomizeReaderView Opens Firefox's settings of reader view, from a row under the row with the reader view
  * entry, or above all rows when the menu has no such entry; without it there is no such row.
+ * @param columns How many tiles a row has room for, fewer in the compact menu of the docked sidebar.
  */
 @Suppress("LongParameterList")
 @Composable
@@ -333,6 +352,7 @@ fun MoreMenu(
     onManageExtensions: () -> Unit,
     onEdit: (() -> Unit)? = null,
     onCustomizeReaderView: (() -> Unit)? = null,
+    columns: Int = MoreMenuLayout.MAX_PER_ROW,
 ) {
     val unseen = rememberUnseenNewThings()
     val readerViewRow = rows.indexOfFirst { row -> MoreMenuEntry.BuiltIn(MoreMenuItem.READER_VIEW) in row }
@@ -357,7 +377,7 @@ fun MoreMenu(
                             isNew = entry.isNewAmong(unseen),
                         )
                     }
-                    repeat(MoreMenuLayout.MAX_PER_ROW - row.size) { Spacer(Modifier.weight(1f)) }
+                    repeat((columns - row.size).coerceAtLeast(0)) { Spacer(Modifier.weight(1f)) }
                 }
             }
             if (onCustomizeReaderView != null && index == readerViewRow) CustomizeReaderViewRow(onCustomizeReaderView)
@@ -404,7 +424,7 @@ private fun MenuTile(look: EntryLook, onClick: () -> Unit, modifier: Modifier = 
                     if (look.active) {
                         MaterialTheme.colorScheme.primaryContainer
                     } else {
-                        MaterialTheme.colorScheme.surfaceContainerHigh
+                        MaterialTheme.colorScheme.surfaceContainerHigh.copy(alpha = LocalTileAlpha.current)
                     },
                 ),
         ) {
@@ -471,7 +491,7 @@ fun ExtensionsDrawer(
             .fillMaxWidth()
             .padding(horizontal = 4.dp)
             .clip(RoundedCornerShape(20.dp))
-            .background(MaterialTheme.colorScheme.surfaceContainerHigh),
+            .background(MaterialTheme.colorScheme.surfaceContainerHigh.copy(alpha = LocalTileAlpha.current)),
     ) {
         Row(
             verticalAlignment = Alignment.CenterVertically,
@@ -669,3 +689,7 @@ private const val HANDLE_ALPHA = 0.4f
 private const val DISABLED_ALPHA = 0.38f
 private const val DIVIDER_ALPHA = 0.5f
 private const val HALF_TURN = 180f
+
+/** How opaque the tiles and the extensions row are: less than 1 beside the docked sidebar. */
+internal val LocalTileAlpha = compositionLocalOf { 1f }
+internal const val SIDEBAR_TILE_ALPHA = 0.55f

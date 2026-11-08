@@ -129,6 +129,12 @@ fun workspacePopupTheme(workspaceId: String?): WorkspaceTheme? {
     return remember(wallpaper) { popupThemeOf(wallpaper) }
 }
 
+/** This workspace theme as popups show it: a little lighter than the workspace, so the text stays easy to read. */
+fun WorkspaceTheme.popupTint(): WorkspaceTheme = copy(
+    opacity = (opacity * TINT_STRENGTH).coerceAtMost(MAX_TINT),
+    texture = texture * TINT_STRENGTH,
+)
+
 /**
  * Paints [DejavuPopup]'s light, which fades out from the top start corner, behind the content, over the colors of
  * [LocalPopupTheme]'s workspace, a little lighter than the workspace so the text stays easy to read.
@@ -137,12 +143,7 @@ fun workspacePopupTheme(workspaceId: String?): WorkspaceTheme? {
 fun Modifier.popupGlow(): Modifier {
     val glow = DejavuPopup.glowColor
     val grain = rememberGrainBrush()
-    val tint = LocalPopupTheme.current?.let { theme ->
-        theme.copy(
-            opacity = (theme.opacity * TINT_STRENGTH).coerceAtMost(MAX_TINT),
-            texture = theme.texture * TINT_STRENGTH,
-        )
-    }
+    val tint = LocalPopupTheme.current?.popupTint()
     return drawBehind {
         tint?.let { drawWorkspaceTheme(it, next = null, fraction = 0f, grain = grain) }
         drawRect(

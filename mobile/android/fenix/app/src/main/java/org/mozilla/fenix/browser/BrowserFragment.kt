@@ -6,6 +6,7 @@ package org.mozilla.fenix.browser
 
 import android.content.Context
 import android.content.Intent
+import android.graphics.Rect
 import android.hardware.SensorManager
 import android.os.StrictMode
 import android.view.View
@@ -249,8 +250,13 @@ class BrowserFragment : BaseBrowserFragment(), UserInteractionHandler {
                     activity = requireActivity(),
                     contentLayout = binding.browserLayout,
                     tabPreview = binding.tabPreview,
-                    toolbarLayoutRect = { browserToolbar.layout.getRectWithScreenLocation() },
-                    navBarLayoutRect = { browserNavigationBar?.layout?.getRectWithScreenLocation() },
+                    // Dejavu: a hidden bar keeps its last bounds, like when the docked sidebar replaces the bars.
+                    toolbarLayoutRect = {
+                        browserToolbar.layout.takeIf { it.isShown }?.getRectWithScreenLocation() ?: Rect()
+                    },
+                    navBarLayoutRect = {
+                        browserNavigationBar?.layout?.takeIf { it.isShown }?.getRectWithScreenLocation()
+                    },
                     store = components.core.store,
                     selectTabUseCase = components.useCases.tabsUseCases.selectTab,
                     onSwipeStarted = {

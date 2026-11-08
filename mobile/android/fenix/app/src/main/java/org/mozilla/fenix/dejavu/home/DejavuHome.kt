@@ -26,6 +26,7 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.systemBarsPadding
 import androidx.compose.foundation.layout.width
+import androidx.compose.foundation.layout.wrapContentWidth
 import androidx.compose.foundation.pager.HorizontalPager
 import androidx.compose.foundation.pager.rememberPagerState
 import androidx.compose.foundation.rememberScrollState
@@ -58,6 +59,7 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.draw.drawBehind
 import androidx.compose.ui.draw.drawWithContent
 import androidx.compose.ui.geometry.Offset
+import androidx.compose.ui.geometry.Rect
 import androidx.compose.ui.geometry.Size
 import androidx.compose.ui.graphics.BlendMode
 import androidx.compose.ui.graphics.Brush
@@ -69,10 +71,12 @@ import androidx.compose.ui.input.pointer.pointerInput
 import androidx.compose.ui.layout.onPlaced
 import androidx.compose.ui.layout.onSizeChanged
 import androidx.compose.ui.layout.positionInParent
+import androidx.compose.ui.layout.positionInWindow
 import androidx.compose.ui.platform.LocalConfiguration
 import androidx.compose.ui.platform.LocalDensity
 import androidx.compose.ui.platform.LocalHapticFeedback
 import androidx.compose.ui.platform.LocalLayoutDirection
+import androidx.compose.ui.platform.LocalView
 import androidx.compose.ui.platform.LocalViewConfiguration
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.pluralStringResource
@@ -82,6 +86,7 @@ import androidx.compose.ui.semantics.selected
 import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextOverflow
+import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.LayoutDirection
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
@@ -115,6 +120,8 @@ import org.mozilla.fenix.dejavu.discover.Tips
 import org.mozilla.fenix.dejavu.discover.newDot
 import org.mozilla.fenix.dejavu.discover.rememberUnseenNewThings
 import org.mozilla.fenix.dejavu.discover.tipTarget
+import org.mozilla.fenix.dejavu.settings.BarButton
+import org.mozilla.fenix.dejavu.settings.SidebarLook
 import org.mozilla.fenix.dejavu.sync.workspaceIconText
 import org.mozilla.fenix.dejavu.ui.LocalPopupTheme
 import org.mozilla.fenix.dejavu.ui.TapIcon
@@ -245,6 +252,9 @@ fun DejavuHome(
     searchAtBottom: Boolean = false,
     hasDataToClear: Boolean = false,
     tipsAllowed: Boolean = false,
+    isSidebar: Boolean = false,
+    dockedWidth: Dp? = null,
+    look: SidebarLook = SidebarLook(),
 ) {
     // The private workspace is an extra last page, there while private tabs are open.
     val privateIndex = state.workspaces.size.takeIf { privateTabs.isNotEmpty() }
@@ -292,9 +302,13 @@ fun DejavuHome(
     fun wallpaperAt(page: Int): WorkspaceWallpaper? =
         if (page == privateIndex) null else state.workspaces.getOrNull(page)?.let { wallpapers[it.id] }
 
-    // Private browsing keeps its own colors.
+    // Private browsing keeps its own colors. Dejavu: in the sidebar, the gradient stands in for a missing wallpaper.
     fun popupThemeAt(page: Int): WorkspaceTheme? =
-        if (page == privateIndex) privateWorkspaceTheme else popupThemeOf(wallpaperAt(page))
+        if (page == privateIndex) {
+            privateWorkspaceTheme
+        } else {
+            popupThemeOf(wallpaperAt(page)) ?: themeAt(page).takeIf { isSidebar }
+        }
 
     // A wallpaper takes the place of its workspace's gradient, whose colors were taken from it.
     fun gradientAt(page: Int): WorkspaceTheme? = themeAt(page).takeIf { wallpaperAt(page) == null }
@@ -522,10 +536,19 @@ fun DejavuHome(
         }
     }
 
+    // The sidebar is laid out inside the system bars, so it draws its part of a theme as wide as the window.
+    val root = LocalView.current.rootView
+    var windowOrigin by remember { mutableStateOf(Offset.Zero) }
+
     // Dialogs and menus take on the colors of the wallpaper of the workspace they open over.
     CompositionLocalProvider(LocalPopupTheme provides popupThemeAt(pagerState.currentPage)) {
         // The wallpapers and the theme are drawn behind the system bars too, with the content kept clear of them.
-        Box(modifier = modifier.fillMaxSize().background(surface)) {
+        Box(
+            modifier = modifier
+                .fillMaxSize()
+                .then(if (isSidebar) Modifier.onPlaced { windowOrigin = it.positionInWindow() } else Modifier)
+                .background(surface),
+        ) {
             if (wallpapers.isNotEmpty()) WallpaperLayers(pagerState, ::wallpaperAt)
             // The theme over the plain background, or the veil over a wallpaper.
             Box(
@@ -546,15 +569,38 @@ fun DejavuHome(
                             next = gradientAt(page + 1),
                             fraction = position - page,
                             grain = grain,
+                            area = if (isSidebar) {
+                                Rect(-windowOrigin, Size(root.width.toFloat(), root.height.toFloat()))
+                            } else {
+                                Rect(Offset.Zero, size)
+                            },
                         )
                     },
             )
-            Column(modifier = Modifier.fillMaxSize().systemBarsPadding().imePadding()) {
+            // In the sidebar, the browser around it already keeps clear of the system bars and the keyboard. Docked
+            // beside the blank page, the home is as wide as the sidebar.
+            Column(
+                modifier = Modifier
+                    .fillMaxSize()
+                    .then(
+                        when {
+                            isSidebar -> Modifier
+                            dockedWidth != null ->
+                                Modifier.systemBarsPadding().imePadding().wrapContentWidth(Alignment.Start)
+                                    .width(dockedWidth)
+                            else -> Modifier.systemBarsPadding().imePadding()
+                        },
+                    ),
+            ) {
                 val activeSelection = selection
                 val searchBar: @Composable () -> Unit = {
-                    TopBar(interactor, onSearchClick = if (onPrivatePage) newPrivateTab else interactor::onSearchClick)
+                    // The sidebar has its own search field on top.
+                    if (!isSidebar) {
+                        TopBar(interactor, onSearchClick = if (onPrivatePage) newPrivateTab else interactor::onSearchClick)
+                    }
                 }
-                val workspaceBar: @Composable () -> Unit = {
+                val workspaceBar: @Composable () -> Unit = workspaceBar@{
+                    if (!look.showBottomBar) return@workspaceBar
                     WorkspaceBar(
                         workspaces = state.workspaces,
                         containers = containers,
@@ -574,6 +620,7 @@ fun DejavuHome(
                         onExtensionsClick = interactor::onExtensionsClick,
                         onBookmarksClick = interactor::onBookmarksClick,
                         onHistoryClick = interactor::onHistoryClick,
+                        look = look,
                     )
                 }
                 if (activeSelection == null) {
@@ -659,6 +706,7 @@ fun DejavuHome(
                     ) { page ->
                         if (page == privateIndex) {
                             PrivateWorkspacePage(
+                                look = look,
                                 tabs = privateTabs,
                                 selectedTabId = selectedTabId,
                                 onTabClick = { interactor.onTabClick(it.id) },
@@ -721,6 +769,7 @@ fun DejavuHome(
                             )
                         }
                         WorkspacePage(
+                            look = look,
                             state = state,
                             workspace = workspace,
                             tabs = pageTabs,
@@ -995,12 +1044,14 @@ internal fun BarIconButton(
     contentDescription: String,
     onClick: () -> Unit,
     modifier: Modifier = Modifier,
+    iconSize: Dp = 24.dp,
 ) {
     IconButton(onClick = onClick, modifier = modifier) {
         Icon(
             painter = painterResource(icon),
             contentDescription = contentDescription,
             tint = MaterialTheme.colorScheme.onSurface,
+            modifier = Modifier.size(iconSize),
         )
     }
 }
@@ -1033,6 +1084,7 @@ private fun WorkspaceBar(
     onExtensionsClick: () -> Unit,
     onBookmarksClick: () -> Unit,
     onHistoryClick: () -> Unit,
+    look: SidebarLook = SidebarLook(),
 ) {
     var drag by remember { mutableStateOf<WorkspaceDrag?>(null) }
     val lefts = remember { mutableStateMapOf<String, Float>() }
@@ -1076,16 +1128,22 @@ private fun WorkspaceBar(
         verticalAlignment = Alignment.CenterVertically,
         modifier = Modifier.fillMaxWidth().height(56.dp).padding(horizontal = 4.dp),
     ) {
-        DownloadsButton(
-            status = downloads,
-            onClick = onDownloadsClick,
-            modifier = Modifier.genieButton(PageGenie.Button.DOWNLOADS),
-        )
-        BarIconButton(
-            icon = R.drawable.dejavu_ic_extensions_24,
-            contentDescription = stringResource(R.string.dejavu_extensions),
-            onClick = onExtensionsClick,
-        )
+        val iconSize = look.barIconSize.dp
+        if (BarButton.DOWNLOADS !in look.hiddenBarButtons) {
+            DownloadsButton(
+                status = downloads,
+                onClick = onDownloadsClick,
+                modifier = Modifier.genieButton(PageGenie.Button.DOWNLOADS),
+            )
+        }
+        if (BarButton.EXTENSIONS !in look.hiddenBarButtons) {
+            BarIconButton(
+                icon = R.drawable.dejavu_ic_extensions_24,
+                contentDescription = stringResource(R.string.dejavu_extensions),
+                onClick = onExtensionsClick,
+                iconSize = iconSize,
+            )
+        }
 
         Row(
             horizontalArrangement = Arrangement.Center,
@@ -1174,18 +1232,24 @@ private fun WorkspaceBar(
             }
         }
 
-        BarIconButton(
-            icon = R.drawable.dejavu_ic_bookmarks_24,
-            contentDescription = stringResource(R.string.dejavu_bookmarks),
-            onClick = onBookmarksClick,
-            modifier = Modifier.genieButton(PageGenie.Button.BOOKMARKS),
-        )
-        BarIconButton(
-            icon = R.drawable.dejavu_ic_history_24,
-            contentDescription = stringResource(R.string.dejavu_history),
-            onClick = onHistoryClick,
-            modifier = Modifier.genieButton(PageGenie.Button.HISTORY),
-        )
+        if (BarButton.BOOKMARKS !in look.hiddenBarButtons) {
+            BarIconButton(
+                icon = R.drawable.dejavu_ic_bookmarks_24,
+                contentDescription = stringResource(R.string.dejavu_bookmarks),
+                onClick = onBookmarksClick,
+                modifier = Modifier.genieButton(PageGenie.Button.BOOKMARKS),
+                iconSize = iconSize,
+            )
+        }
+        if (BarButton.HISTORY !in look.hiddenBarButtons) {
+            BarIconButton(
+                icon = R.drawable.dejavu_ic_history_24,
+                contentDescription = stringResource(R.string.dejavu_history),
+                onClick = onHistoryClick,
+                modifier = Modifier.genieButton(PageGenie.Button.HISTORY),
+                iconSize = iconSize,
+            )
+        }
     }
 }
 

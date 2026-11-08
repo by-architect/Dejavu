@@ -5,7 +5,9 @@
 package org.mozilla.fenix.dejavu.browser
 
 import android.graphics.Bitmap
+import android.content.res.Configuration
 import android.graphics.Color
+import android.graphics.drawable.Drawable
 import android.util.LruCache
 import android.view.View
 import android.view.ViewGroup
@@ -37,6 +39,7 @@ import mozilla.components.lib.state.ext.flow
 import org.mozilla.fenix.R
 import org.mozilla.fenix.components.AppStore
 import org.mozilla.geckoview.GeckoView
+import org.mozilla.geckoview.captureColumn
 import org.mozilla.geckoview.captureRow
 import org.mozilla.geckoview.captureTopEdge
 
@@ -50,12 +53,17 @@ private const val REMEMBERED_TABS = 32
 private const val COLOR_BUCKET = 0xF0F0F0
 private const val OPAQUE = 0xFF shl 24
 
+// What the engine fills the part of a page it has not painted yet with, as long as no page color is known.
+private const val DARK_CLEAR = 0xFF2A2A2E.toInt()
+
 /**
  * Paints what shows above the page, behind Dejavu's address bar and the status bar, in the color along the page's top
  * edge, so the address bar floats over the page as in Candy instead of over a band in the app's color. The status bar's
  * icons turn dark over light pages and light over dark ones, and so does the fade behind them; the navigation bar's
  * icons do the same over the page behind them. While a search screen covers the page, they follow the app's theme
- * again, and so does all of it while a split view shows two pages between bars that stay in place.
+ * again, and so does all of it while a split view shows two pages between bars that stay in place. What the engine fills
+ * the part of the page it has not painted yet with, as the sidebar is resized and the page with it, takes the color
+ * along the page's side, so that part shows as more of the page instead of a strip in the color of the theme.
  *
  * @param behindPage The view whose background shows above the page.
  * @param layout The browser layout holding the fade behind the status bar.
@@ -69,6 +77,8 @@ internal class PageTint(
     private val restoreTheme: () -> Unit,
 ) {
     private var tinted: Int? = null
+    private var clearedTo: Int? = null
+    private var untintedEngine: Drawable? = null
     private val untinted = behindPage.background
 
     /** Follows the page of the selected tab of [browserStore] while [owner] is resumed. */
@@ -147,14 +157,16 @@ internal class PageTint(
      * colors for the tab and returns them; `null` when the page could not be pictured.
      */
     private suspend fun tintLike(tabId: String): PageColors? {
-        val view = (engineView.asView() as? ViewGroup)?.children?.firstOrNull { it is GeckoView } as? GeckoView
+        val view = geckoView()
         if (view == null || !view.isAttachedToWindow) return null
         val edge = captureTopEdge(view, EDGE_SAMPLES)?.valueOrNull() ?: return null
         val top = edge.topEdgeColor()
         edge.recycle()
         val row = captureRow(view, view.rowBehindNavigationBar(), EDGE_SAMPLES)?.valueOrNull()
-        val colors = PageColors(top, bottom = row?.topEdgeColor() ?: top)
+        val side = captureColumn(view, view.width - 1, EDGE_SAMPLES)?.valueOrNull()
+        val colors = PageColors(top, bottom = row?.topEdgeColor() ?: top, side = side?.sideColor() ?: top)
         row?.recycle()
+        side?.recycle()
         rememberedColors.put(tabId, colors)
         tint(colors)
         return colors
@@ -166,6 +178,17 @@ internal class PageTint(
             tinted = colors.top
             behindPage.setBackgroundColor(colors.top)
             layout.tintStatusBarScrim(if (isLightPage) Color.WHITE else Color.BLACK)
+        }
+        if (colors.side != clearedTo) {
+            clearedTo = colors.side
+            geckoView()?.let { view ->
+                // The view's own white shows where its surface is not as big as the view yet, the engine's fill where
+                // it has not painted its bigger surface yet. Only the fill changes: covering the view, as
+                // coverUntilFirstPaint does, would hide a page that already painted until the next one loads.
+                if (untintedEngine == null) untintedEngine = view.background
+                view.setBackgroundColor(colors.side)
+                view.session?.compositorController?.clearColor = colors.side
+            }
         }
         WindowCompat.getInsetsController(window, window.decorView).apply {
             isAppearanceLightStatusBars = isLightPage
@@ -179,8 +202,21 @@ internal class PageTint(
             behindPage.background = untinted
             layout.tintStatusBarScrim(ContextCompat.getColor(layout.context, R.color.fx_mobile_surface))
         }
+        if (clearedTo != null) {
+            clearedTo = null
+            geckoView()?.let { view ->
+                view.background = untintedEngine
+                untintedEngine = null
+                val night = view.resources.configuration.uiMode and Configuration.UI_MODE_NIGHT_MASK
+                view.session?.compositorController?.clearColor =
+                    if (night == Configuration.UI_MODE_NIGHT_YES) DARK_CLEAR else Color.WHITE
+            }
+        }
         restoreTheme()
     }
+
+    private fun geckoView() =
+        (engineView.asView() as? ViewGroup)?.children?.firstOrNull { it is GeckoView } as? GeckoView
 
     private data class ShownPage(
         val tabId: String,
@@ -195,13 +231,17 @@ internal class PageTint(
 
         /** Shows the tab with [tabId] with [color] above its page, until its page is pictured again. */
         fun rememberColor(tabId: String, color: Int) {
-            rememberedColors.put(tabId, PageColors(color, bottom = rememberedColors[tabId]?.bottom ?: color))
+            rememberedColors.put(tabId, PageColors(
+                color,
+                bottom = rememberedColors[tabId]?.bottom ?: color,
+                side = rememberedColors[tabId]?.side ?: color,
+            ))
         }
     }
 }
 
-/** The color along the top edge of a page, and the one of the page behind the navigation bar. */
-private data class PageColors(val top: Int, val bottom: Int)
+/** The color along the top edge of a page, the one of the page behind the navigation bar and the one along its side. */
+private data class PageColors(val top: Int, val bottom: Int, val side: Int)
 
 /** The row of [this] page view behind the middle of the navigation bar, or its last row without one. */
 private fun View.rowBehindNavigationBar(): Int {
@@ -217,4 +257,10 @@ private fun isLight(color: Int): Boolean =
 internal fun Bitmap.topEdgeColor(): Int {
     val row = IntArray(width).also { getPixels(it, 0, width, 0, 0, width, 1) }
     return row.groupBy { it and COLOR_BUCKET }.maxBy { it.value.size }.value.first() or OPAQUE
+}
+
+/** The color most of the column of [this] picture has: the page's background at its side, not what crosses it. */
+internal fun Bitmap.sideColor(): Int {
+    val column = IntArray(height).also { getPixels(it, 0, 1, 0, 0, 1, height) }
+    return column.groupBy { it and COLOR_BUCKET }.maxBy { it.value.size }.value.first() or OPAQUE
 }

@@ -7,13 +7,13 @@ package org.mozilla.fenix.dejavu.home
 import android.content.Context
 import android.net.Uri
 import android.os.StrictMode
-import java.util.UUID
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.imePadding
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.systemBarsPadding
+import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.SnackbarDuration
 import androidx.compose.material3.SnackbarHost
@@ -34,13 +34,16 @@ import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.clip
 import androidx.compose.ui.platform.ComposeView
+import androidx.compose.ui.platform.LocalConfiguration
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.compose.LocalLifecycleOwner
 import androidx.navigation.NavController
 import androidx.navigation.NavDirections
 import androidx.navigation.NavOptions
+import java.util.UUID
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
@@ -62,6 +65,8 @@ import org.mozilla.fenix.HomeActivity
 import org.mozilla.fenix.NavGraphDirections
 import org.mozilla.fenix.R
 import org.mozilla.fenix.browser.browsingmode.BrowsingMode
+import org.mozilla.fenix.browser.tabstrip.isHomeSidebarShown
+import org.mozilla.fenix.browser.tabstrip.sidebarWidthDp
 import org.mozilla.fenix.components.Components
 import org.mozilla.fenix.components.accounts.FenixFxAEntryPoint
 import org.mozilla.fenix.components.appstate.AppAction.SearchAction.SearchStarted
@@ -70,6 +75,7 @@ import org.mozilla.fenix.components.menu.MenuAccessPoint
 import org.mozilla.fenix.dejavu.NewTabContainerChoice
 import org.mozilla.fenix.dejavu.actions.ActionPlace
 import org.mozilla.fenix.dejavu.actions.CustomAction
+import org.mozilla.fenix.dejavu.actions.RowAction
 import org.mozilla.fenix.dejavu.actions.TabAction
 import org.mozilla.fenix.dejavu.browser.ClearData
 import org.mozilla.fenix.dejavu.browser.DejavuSearchOverlay
@@ -127,180 +133,252 @@ fun ComposeView.setDejavuHomeContent(
 ) {
     setContent {
         FirefoxTheme {
-            val fenix = components
-            val repository = remember { fenix.readOnMainThread { WorkspaceRepository.get(context) } }
-            val settings = remember { fenix.readOnMainThread { DejavuSettings.get(context) } }
-            val containerStorage = remember { DejavuContainerStorage.get(context) }
-            val wallpaperStore = remember { fenix.readOnMainThread { WorkspaceWallpapers.get(context) } }
-            val scope = rememberCoroutineScope()
-            val snackbarHostState = remember { SnackbarHostState() }
-            // Counts the times Clear data deleted data, to look again at what is left to delete.
-            var dataCleared by remember { mutableIntStateOf(0) }
-            val interactor = remember {
-                DefaultDejavuHomeInteractor(
-                    context = context,
-                    components = fenix,
-                    repository = repository,
-                    settings = settings,
-                    containerStorage = containerStorage,
-                    wallpapers = wallpaperStore,
-                    navController = navController,
-                    scope = scope,
-                    snackbar = snackbarHostState,
-                    openTab = onOpenTab,
-                    onDataCleared = { dataCleared++ },
-                )
-            }
-            val hasDataToClear = rememberHasDataToClear(dataCleared)
-
-            val workspaceState by repository.state.collectAsState()
-            val wallpapers by wallpaperStore.wallpapers.collectAsState()
-            val customActions by settings.customActions.collectAsState()
-            val pinnedKeys by settings.pinnedRowKeys.collectAsState()
-            val unpinnedKeys by settings.unpinnedRowKeys.collectAsState()
-            val folderKeys by settings.folderRowKeys.collectAsState()
-            val hiddenSelectionKeys by settings.hiddenSelectionKeys.collectAsState()
-            val essentialsPerContainer by settings.essentialsPerContainer.collectAsState()
-            val searchAtBottom by settings.homeSearchAtBottom.collectAsState()
-            val containerRecords by containerStorage.records.collectAsState()
-            val containers = remember(containerRecords) { containerRecords.orEmpty().associateBy { it.contextId } }
-            val tabs by fenix.core.store.observeTabsForHome { it.normalTabs }
-            val allPrivateTabs by fenix.core.store.observeTabsForHome { it.privateTabs }
-            val isPrivateLocked by fenix.appStore.observeAsComposableState { it.isPrivateScreenLocked }
-            val selectedTabId by fenix.core.store.observeAsComposableState { it.selectedTabId }
-            // Read only by the downloads button, so download progress redraws nothing else.
-            val downloads = fenix.core.store.observeAsComposableState { it.downloadsStatus() }
-            val hasClosedTab by fenix.core.store.observeAsComposableState { it.hasClosedTab }
-            val hasClipboardLink = rememberClipboardHasLink()
-            val restoreComplete by fenix.core.store.observeAsComposableState { it.restoreComplete }
-            val isSearchActive by fenix.appStore.observeAsComposableState { it.searchState.isSearchActive }
-
-            LaunchedEffect(Unit) {
-                containerStorage.load()
-            }
-
-            // Coming home from a private tab leaves the app in private browsing; the home itself is never private.
-            LaunchedEffect(Unit) {
-                val activity = context as? HomeActivity ?: return@LaunchedEffect
-                if (activity.browsingModeManager.mode.isPrivate) activity.browsingModeManager.mode = BrowsingMode.Normal
-            }
-
-            LaunchedEffect(isSearchActive) {
-                if (!isSearchActive) {
-                    delay(SEARCH_ABANDON_GRACE_MS)
-                    NewTabContainerChoice.clear()
-                }
-            }
-
-            LaunchedEffect(tabs, restoreComplete) {
-                repository.syncWithTabs(tabs.map { it.id }.toSet(), restoreComplete)
-                repository.refreshPinTitles(tabs.associate { it.id to (it.content.url to it.content.title) })
-            }
-
-            // A search opened over a page shows the page blurred behind it, else the workspaces blur behind it.
-            val searchedPage by SearchBackdrop.page.collectAsState()
-            val showsPage = remember(searchedPage) {
-                searchedPage?.tabId?.let { it == fenix.appStore.state.searchState.sourceTabId } == true
-            }
-
-            // A fresh install, and an update from a Dejavu without them, shows the welcome pages first.
-            val updated = remember { context.wasUpdated() }
-            val welcomeSeen by settings.welcomeSeen.collectAsState()
-            val welcomeDue = Welcome.isDue(welcomeSeen, updated, settings.whatsNewSeen)
-            // Once Dejavu found what the account syncs from Firefox and Zen, it asks which one workspaces follow.
-            val syncStatus by DejavuSync.status.collectAsState()
-
-            Box(modifier = Modifier.fillMaxSize().background(MaterialTheme.colorScheme.surface)) {
-                DejavuHome(
-                    modifier = Modifier.blurBehindSearch(active = isSearchActive && !showsPage),
-                    state = workspaceState,
-                    tabs = tabs,
-                    privateTabs = if (isPrivateLocked) emptyList() else allPrivateTabs,
-                    selectedTabId = selectedTabId,
-                    hasClosedTab = hasClosedTab,
-                    hasClipboardLink = hasClipboardLink,
-                    containers = containers,
-                    // Remembered, so that the workspace pages can skip recomposing when nothing they show changed.
-                    pinnedRowActions = remember(pinnedKeys, customActions) {
-                        resolveRowActions(pinnedKeys, ActionPlace.PINNED_ROWS, customActions)
-                    },
-                    unpinnedRowActions = remember(unpinnedKeys, customActions) {
-                        resolveRowActions(unpinnedKeys, ActionPlace.UNPINNED_ROWS, customActions)
-                    },
-                    folderRowActions = remember(folderKeys, customActions) {
-                        resolveRowActions(folderKeys, ActionPlace.FOLDER_ROWS, customActions)
-                    },
-                    selectionActions = remember(hiddenSelectionKeys, customActions) {
-                        resolveSelectionActions(hiddenSelectionKeys, customActions)
-                    },
-                    essentialsPerContainer = essentialsPerContainer,
-                    wallpapers = wallpapers,
-                    downloads = downloads,
-                    interactor = interactor,
-                    searchAtBottom = searchAtBottom,
-                    hasDataToClear = hasDataToClear,
-                    tipsAllowed = !welcomeDue && !syncStatus.askSource && !isSearchActive,
-                )
-
-                if (showsPage) {
-                    SearchPageBackdrop(active = isSearchActive, modifier = Modifier.fillMaxSize())
-                }
-
-                SnackbarHost(
-                    hostState = snackbarHostState,
-                    modifier = Modifier
-                        .align(Alignment.BottomCenter)
-                        .systemBarsPadding()
-                        .imePadding()
-                        .padding(bottom = 64.dp),
-                )
-
-                if (isSearchActive) {
-                    Box(modifier = Modifier.systemBarsPadding().imePadding()) {
-                        DejavuSearchOverlay(
-                            fromTop = !fenix.settings.shouldUseBottomToolbar ||
-                                fenix.appStore.state.searchState.sourceTabId == null,
-                            content = searchToolbar,
-                        )
-                    }
-                }
-            }
-
-            LaunchedEffect(Unit) {
-                if (Welcome.isDue(settings.welcomeSeen.value, updated, settings.whatsNewSeen)) {
-                    if (!updated) Welcome.giveFirstLook(context, repository, wallpaperStore)
-                    Welcome.openAtStart(navController)
-                } else if (!settings.welcomeSeen.value) {
-                    settings.setWelcomeSeen(true)
-                }
-            }
-            // The examples show their sites' icons before their pages were opened, fetched once the start is over.
-            LaunchedEffect(Unit) {
-                delay(STARTER_ICONS_DELAY_MS)
-                Welcome.loadStarterIcons(context, repository)
-            }
-
-            val popupTheme = workspacePopupTheme(workspaceState.activeWorkspaceId)
-            if (syncStatus.askSource) {
-                CompositionLocalProvider(LocalPopupTheme provides popupTheme) {
-                    SyncSourceDialog(
-                        status = syncStatus,
-                        workspaces = workspaceState,
-                        tabs = tabs,
-                        onChoose = { source, start -> DejavuSync.chooseSource(context, source, start) },
-                        onDismiss = { DejavuSync.putOffSourceChoice(context) },
-                    )
-                }
-            }
-
-            LaunchedEffect(Unit) {
-                onFirstFrameDrawn()
-                TabZoom.homeShown()
-                PageGenie.homeShown()
-            }
+            DejavuHomeScreen(
+                navController = navController,
+                onOpenTab = onOpenTab,
+                searchToolbar = searchToolbar,
+                onFirstFrameDrawn = onFirstFrameDrawn,
+            )
         }
     }
 }
+
+/**
+ * The Dejavu workspace home. [isSidebar] shows it next to a page: it then leaves the browsing mode, search and
+ * dialogs of the first launch to the page.
+ */
+@Composable
+fun DejavuHomeScreen(
+    navController: NavController,
+    onOpenTab: (String) -> Unit,
+    isSidebar: Boolean = false,
+    searchToolbar: @Composable () -> Unit = {},
+    onFirstFrameDrawn: () -> Unit = {},
+) {
+    val context = LocalContext.current
+    val fenix = components
+    val repository = remember { fenix.readOnMainThread { WorkspaceRepository.get(context) } }
+    val settings = remember { fenix.readOnMainThread { DejavuSettings.get(context) } }
+    val containerStorage = remember { DejavuContainerStorage.get(context) }
+    val wallpaperStore = remember { fenix.readOnMainThread { WorkspaceWallpapers.get(context) } }
+    val scope = rememberCoroutineScope()
+    val snackbarHostState = remember { SnackbarHostState() }
+    // Counts the times Clear data deleted data, to look again at what is left to delete.
+    var dataCleared by remember { mutableIntStateOf(0) }
+    val interactor = remember {
+        DefaultDejavuHomeInteractor(
+            context = context,
+            components = fenix,
+            repository = repository,
+            settings = settings,
+            containerStorage = containerStorage,
+            wallpapers = wallpaperStore,
+            navController = navController,
+            scope = scope,
+            snackbar = snackbarHostState,
+            openTab = onOpenTab,
+            onDataCleared = { dataCleared++ },
+        )
+    }
+    val hasDataToClear = rememberHasDataToClear(dataCleared)
+
+    val workspaceState by repository.state.collectAsState()
+    val wallpapers by wallpaperStore.wallpapers.collectAsState()
+    val customActions by settings.customActions.collectAsState()
+    val pinnedKeys by settings.pinnedRowKeys.collectAsState()
+    val unpinnedKeys by settings.unpinnedRowKeys.collectAsState()
+    val folderKeys by settings.folderRowKeys.collectAsState()
+    val hiddenSelectionKeys by settings.hiddenSelectionKeys.collectAsState()
+    val essentialsPerContainer by settings.essentialsPerContainer.collectAsState()
+    val searchAtBottom by settings.homeSearchAtBottom.collectAsState()
+    val containerRecords by containerStorage.records.collectAsState()
+    val containers = remember(containerRecords) { containerRecords.orEmpty().associateBy { it.contextId } }
+    val tabs by fenix.core.store.observeTabsForHome { it.normalTabs }
+    val allPrivateTabs by fenix.core.store.observeTabsForHome { it.privateTabs }
+    val isPrivateLocked by fenix.appStore.observeAsComposableState { it.isPrivateScreenLocked }
+    val selectedTabId by fenix.core.store.observeAsComposableState { it.selectedTabId }
+    // Read only by the downloads button, so download progress redraws nothing else.
+    val downloads = fenix.core.store.observeAsComposableState { it.downloadsStatus() }
+    val hasClosedTab by fenix.core.store.observeAsComposableState { it.hasClosedTab }
+    val hasClipboardLink = rememberClipboardHasLink()
+    val restoreComplete by fenix.core.store.observeAsComposableState { it.restoreComplete }
+    val isSearchActive by fenix.appStore.observeAsComposableState { it.searchState.isSearchActive }
+    val sidebarLook by settings.sidebarLook.collectAsState()
+
+    LaunchedEffect(Unit) {
+        containerStorage.load()
+    }
+
+    // Coming home from a private tab leaves the app in private browsing; the home itself is never private.
+    LaunchedEffect(Unit) {
+        val activity = context as? HomeActivity ?: return@LaunchedEffect
+        if (isSidebar) return@LaunchedEffect
+        if (activity.browsingModeManager.mode.isPrivate) activity.browsingModeManager.mode = BrowsingMode.Normal
+    }
+
+    LaunchedEffect(isSearchActive) {
+        if (!isSearchActive) {
+            delay(SEARCH_ABANDON_GRACE_MS)
+            NewTabContainerChoice.clear()
+        }
+    }
+
+    LaunchedEffect(tabs, restoreComplete) {
+        repository.syncWithTabs(tabs.map { it.id }.toSet(), restoreComplete)
+        repository.refreshPinTitles(tabs.associate { it.id to (it.content.url to it.content.title) })
+    }
+
+    // A search opened over a page shows the page blurred behind it, else the workspaces blur behind it.
+    val searchedPage by SearchBackdrop.page.collectAsState()
+    val showsPage = remember(searchedPage) {
+        searchedPage?.tabId?.let { it == fenix.appStore.state.searchState.sourceTabId } == true
+    }
+    // Next to a page, the search is the page's, so the sidebar does not blur.
+    val blurred = isSearchActive && !showsPage && !isSidebar
+
+    // Where pages show beside the docked sidebar, the home docks the same way, beside an empty page, rather than
+    // filling the screen. It still has the browsing mode, search and dialogs of the full screen home.
+    val sidebarWidth = if (!isSidebar && isHomeSidebarShown()) {
+        sidebarWidthDp(fenix.settings.sidebarWidthDp.toFloat(), LocalConfiguration.current.screenWidthDp.toFloat()).dp
+    } else {
+        null
+    }
+    val docked = isSidebar || sidebarWidth != null
+
+    // With no tab the page area beside the docked home is blank, so a tab that gets selected there, by restoring a
+    // closed tab, opens instead of staying behind the home.
+    var hadNoTab by remember { mutableStateOf(false) }
+    LaunchedEffect(selectedTabId, restoreComplete, sidebarWidth) {
+        val id = selectedTabId
+        if (sidebarWidth != null && hadNoTab && id != null) onOpenTab(id)
+        hadNoTab = restoreComplete && id == null
+    }
+
+    // The parts that can be hidden are only hidden in the sidebar, the sizes apply to the docked home too.
+    val look = if (docked) sidebarLook else sidebarLook.sizesOnly()
+
+    // A fresh install, and an update from a Dejavu without them, shows the welcome pages first.
+    val updated = remember { context.wasUpdated() }
+    val welcomeSeen by settings.welcomeSeen.collectAsState()
+    val welcomeDue = Welcome.isDue(welcomeSeen, updated, settings.whatsNewSeen)
+    // Once Dejavu found what the account syncs from Firefox and Zen, it asks which one workspaces follow.
+    val syncStatus by DejavuSync.status.collectAsState()
+
+    Box(modifier = Modifier.fillMaxSize().background(MaterialTheme.colorScheme.surface)) {
+        DejavuHome(
+            modifier = Modifier.blurBehindSearch(active = blurred),
+            state = workspaceState,
+            tabs = tabs,
+            privateTabs = if (isPrivateLocked) emptyList() else allPrivateTabs,
+            selectedTabId = selectedTabId,
+            hasClosedTab = hasClosedTab,
+            hasClipboardLink = hasClipboardLink,
+            containers = containers,
+            // Remembered, so that the workspace pages can skip recomposing when nothing they show changed.
+            pinnedRowActions = remember(pinnedKeys, customActions, look.showPinButtons) {
+                resolveRowActions(pinnedKeys, ActionPlace.PINNED_ROWS, customActions).withPinButtons(look.showPinButtons)
+            },
+            unpinnedRowActions = remember(unpinnedKeys, customActions, look.showPinButtons) {
+                resolveRowActions(unpinnedKeys, ActionPlace.UNPINNED_ROWS, customActions)
+                    .withPinButtons(look.showPinButtons)
+            },
+            folderRowActions = remember(folderKeys, customActions) {
+                resolveRowActions(folderKeys, ActionPlace.FOLDER_ROWS, customActions)
+            },
+            selectionActions = remember(hiddenSelectionKeys, customActions) {
+                resolveSelectionActions(hiddenSelectionKeys, customActions)
+            },
+            essentialsPerContainer = essentialsPerContainer,
+            wallpapers = wallpapers,
+            downloads = downloads,
+            interactor = interactor,
+            searchAtBottom = searchAtBottom,
+            hasDataToClear = hasDataToClear,
+            tipsAllowed = !isSidebar && !welcomeDue && !syncStatus.askSource && !isSearchActive,
+            isSidebar = isSidebar,
+            dockedWidth = sidebarWidth?.minus(DockedGutter),
+            look = look,
+        )
+
+        if (sidebarWidth != null) {
+            // The page area beside the docked home, blank with no page, its corners rounded like a page's.
+            Box(
+                modifier = Modifier
+                    .systemBarsPadding()
+                    .padding(start = sidebarWidth)
+                    .fillMaxSize()
+                    .clip(RoundedCornerShape(topStart = PageCornerRadius, bottomStart = PageCornerRadius))
+                    .background(MaterialTheme.colorScheme.surfaceContainerLowest),
+            )
+        }
+
+        if (showsPage && !isSidebar) {
+            SearchPageBackdrop(active = isSearchActive, modifier = Modifier.fillMaxSize())
+        }
+
+        SnackbarHost(
+            hostState = snackbarHostState,
+            modifier = Modifier
+                .align(Alignment.BottomCenter)
+                .systemBarsPadding()
+                .imePadding()
+                .padding(bottom = 64.dp),
+        )
+
+        if (isSearchActive && !isSidebar) {
+            Box(modifier = Modifier.systemBarsPadding().imePadding()) {
+                DejavuSearchOverlay(
+                    fromTop = !fenix.settings.shouldUseBottomToolbar ||
+                        fenix.appStore.state.searchState.sourceTabId == null,
+                    content = searchToolbar,
+                )
+            }
+        }
+    }
+
+    LaunchedEffect(Unit) {
+        if (isSidebar) return@LaunchedEffect
+        if (Welcome.isDue(settings.welcomeSeen.value, updated, settings.whatsNewSeen)) {
+            if (!updated) Welcome.giveFirstLook(context, repository, wallpaperStore)
+            Welcome.openAtStart(navController)
+        } else if (!settings.welcomeSeen.value) {
+            settings.setWelcomeSeen(true)
+        }
+    }
+    // The examples show their sites' icons before their pages were opened, fetched once the start is over.
+    LaunchedEffect(Unit) {
+        delay(STARTER_ICONS_DELAY_MS)
+        Welcome.loadStarterIcons(context, repository)
+    }
+
+    val popupTheme = workspacePopupTheme(workspaceState.activeWorkspaceId)
+    if (!isSidebar && syncStatus.askSource) {
+        CompositionLocalProvider(LocalPopupTheme provides popupTheme) {
+            SyncSourceDialog(
+                status = syncStatus,
+                workspaces = workspaceState,
+                tabs = tabs,
+                onChoose = { source, start -> DejavuSync.chooseSource(context, source, start) },
+                onDismiss = { DejavuSync.putOffSourceChoice(context) },
+            )
+        }
+    }
+
+    LaunchedEffect(Unit) {
+        onFirstFrameDrawn()
+        // The page zooms and genies run between the page and the full screen home, not the sidebar.
+        if (!isSidebar) {
+            TabZoom.homeShown()
+            PageGenie.homeShown()
+        }
+    }
+}
+
+/** The room between the docked home and the blank page beside it. */
+private val DockedGutter = 8.dp
+
+/** The rounding of the page's corners beside the docked sidebar, see PageCorners. */
+private val PageCornerRadius = 16.dp
 
 /**
  * Whether the data chosen for Clear data has anything to delete, see [ClearData.hasData]: looked at again as tabs,
@@ -326,6 +404,10 @@ private fun rememberHasDataToClear(cleared: Int): Boolean {
  */
 private const val SEARCH_ABANDON_GRACE_MS = 1500L
 private const val STARTER_ICONS_DELAY_MS = 2_000L
+
+/** These row actions, without pinning and unpinning unless [shown]. */
+private fun List<RowAction>.withPinButtons(shown: Boolean): List<RowAction> =
+    if (shown) this else filterNot { it.key == TabAction.PIN.key || it.key == TabAction.UNPIN.key }
 
 private fun <T> Components.readOnMainThread(block: () -> T): T =
     strictMode.allowViolation(StrictMode::allowThreadDiskReads, block)
