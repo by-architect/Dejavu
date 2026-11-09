@@ -6,6 +6,7 @@ package mozilla.components.compose.base.snackbar
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.Icon
 import androidx.compose.material3.Snackbar as M3Snackbar
@@ -40,6 +41,9 @@ import mozilla.components.compose.base.theme.privateColorPalette
 import mozilla.components.ui.icons.R as iconsR
 
 private val SnackbarPadding = 12.dp
+
+// Dejavu: rounded like the app popups (DejavuPopups.kt) instead of the default 4dp square box.
+private val SnackbarShape = RoundedCornerShape(16.dp)
 const val SNACKBAR_TEST_TAG = "snackbar"
 const val SNACKBAR_BUTTON_TEST_TAG = "snackbar_button"
 
@@ -91,6 +95,7 @@ fun Snackbar(
                 modifier.padding(SnackbarPadding).semantics { testTagsAsResourceId = true }.testTag(SNACKBAR_TEST_TAG),
             action = actionComposable,
             dismissAction = dismissActionComposable,
+            shape = SnackbarShape,
             actionOnNewLine = actionOnNewLine,
         ) {
             Column {
