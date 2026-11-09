@@ -453,6 +453,8 @@
     <string name="dejavu_bars_bottom_summary">Barr oberennow vyth. Skubel an barr trigva yn ban rag igeri an Roll Moy.</string>
     <string name="dejavu_settings_hide_system_bars">Kudha an barrow studh ha lewyans</string>
     <string name="dejavu_settings_hide_system_bars_summary">Hag yw folen diskwedhys. Slynk a-ji dhyworth an amal a-wartha po a-woles rag aga gweles pols.</string>
+    <string name="dejavu_settings_match_page_color">Keswith an barrow gans liw an folen</string>
+    <string name="dejavu_settings_match_page_color_summary">An barrow a gemmer liw gwadn an wiasva. Pan yw lowrys, y a dhalleth liwyow an spas ober.</string>
     <string name="dejavu_bookmarks_export">Esperthi dhe restren</string>
     <plurals name="dejavu_bookmarks_exported">
         <item quantity="zero">%1$d merkow yns esperthys</item>

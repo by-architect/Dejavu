@@ -425,6 +425,8 @@
     <string name="dejavu_bars_bottom_summary">Nagina trav d’acziuns. Stritgar si la trav d’adressas per avrir il menu Dapli.</string>
     <string name="dejavu_settings_hide_system_bars">Zuppentar las travs da status e da navigaziun</string>
     <string name="dejavu_settings_hide_system_bars_summary">Durant ch\'ina pagina vegn mussada. Stritgar naven dal ur sura u sut per las vesair per in mument.</string>
+    <string name="dejavu_settings_match_page_color">Adattar las travs al colur da la pagina</string>
+    <string name="dejavu_settings_match_page_color_summary">Las travs surpiglian il colur da fund da la website. Deactivà mantegnan ellas ils colurs da l\'spazi da lavur.</string>
     <string name="dejavu_bookmarks_export">Exportar en ina datoteca</string>
     <plurals name="dejavu_bookmarks_exported">
         <item quantity="one">%1$d segnapagina exportà</item>

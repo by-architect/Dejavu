@@ -425,6 +425,8 @@
     <string name="dejavu_bars_bottom_summary">Walay bar sa mga aksyon. I-swipe pataas ang address bar aron maablihan ang Dugang nga menu.</string>
     <string name="dejavu_settings_hide_system_bars">Itago ang status ug navigation bar</string>
     <string name="dejavu_settings_hide_system_bars_summary">Samtang gipakita ang usa ka panid. I-swipe gikan sa ibabaw o ubos nga ngilit aron makita kini kadiyot.</string>
+    <string name="dejavu_settings_match_page_color">Itugma ang mga bar sa kolor sa panid</string>
+    <string name="dejavu_settings_match_page_color_summary">Ang mga bar mokuha sa kolor sa background sa website. Kung naka-off, magpabilin ang kolor sa workspace.</string>
     <string name="dejavu_bookmarks_export">i-Export sa file</string>
     <plurals name="dejavu_bookmarks_exported">
         <item quantity="one">%1$d ka bookmark ang na-export</item>

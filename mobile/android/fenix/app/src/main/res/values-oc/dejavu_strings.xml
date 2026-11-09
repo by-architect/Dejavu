@@ -425,6 +425,8 @@
     <string name="dejavu_bars_bottom_summary">Cap de barra d’accions. Fasètz lisar la barra d’adreça cap amont per dobrir lo menú Mai.</string>
     <string name="dejavu_settings_hide_system_bars">Amagar las barras d\'estat e de navegacion</string>
     <string name="dejavu_settings_hide_system_bars_summary">Pendent l\'afichatge d\'una pagina. Fasètz lisar dempuèi lo bòrd superior o inferior per las veire un moment.</string>
+    <string name="dejavu_settings_match_page_color">Adaptar las barras a la color de la pagina</string>
+    <string name="dejavu_settings_match_page_color_summary">Las barras prenon la color de fons del site web. Se es desactivat, gardan las colors de l\'espaci de trabalh.</string>
     <string name="dejavu_bookmarks_export">Exportar dins un fichièr</string>
     <plurals name="dejavu_bookmarks_exported">
         <item quantity="one">%1$d marcapagina exportat</item>

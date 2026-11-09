@@ -425,6 +425,8 @@
     <string name="dejavu_bars_bottom_summary">Առանց գործողությունների գոտու։ Սահեցրեք հասցեագոտին վերև՝ լրացուցիչ ցանկը բացելու համար։</string>
     <string name="dejavu_settings_hide_system_bars">Թաքցնել կարգավիճակի և նավարկման գոտիները</string>
     <string name="dejavu_settings_hide_system_bars_summary">Երբ էջ է ցուցադրվում: Սահեցրեք վերևի կամ ներքևի եզրից՝ դրանք մի պահ տեսնելու համար:</string>
+    <string name="dejavu_settings_match_page_color">Համապատասխանեցնել գոտիները էջի գույնին</string>
+    <string name="dejavu_settings_match_page_color_summary">Գոտիները վերցնում են կայքի ֆոնի գույնը։ Անջատված վիճակում պահպանում են աշխատատարածքի գույները։</string>
     <string name="dejavu_bookmarks_export">Արտահանել ֆայլի մեջ</string>
     <plurals name="dejavu_bookmarks_exported">
         <item quantity="one">%1$d էջանիշ արտահանվեց</item>

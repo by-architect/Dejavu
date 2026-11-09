@@ -453,6 +453,8 @@
     <string name="dejavu_bars_bottom_summary">Dim bar gweithredoedd. Llithrwch y bar cyfeiriad i fyny i agor y ddewislen Mwy.</string>
     <string name="dejavu_settings_hide_system_bars">Cuddio\'r bariau statws a llywio</string>
     <string name="dejavu_settings_hide_system_bars_summary">Tra bo tudalen yn cael ei dangos. Llithrwch i mewn o\'r ymyl uchaf neu isaf i\'w gweld am eiliad.</string>
+    <string name="dejavu_settings_match_page_color">Cyfateb y bariau i liw\'r dudalen</string>
+    <string name="dejavu_settings_match_page_color_summary">Mae\'r bariau\'n cymryd lliw cefndir y wefan. Wedi\'i ddiffodd, maen nhw\'n cadw lliwiau\'r gweithle.</string>
     <string name="dejavu_bookmarks_export">Allforio i ffeil</string>
     <plurals name="dejavu_bookmarks_exported">
         <item quantity="zero">Allforiwyd %1$d nod tudalen</item>

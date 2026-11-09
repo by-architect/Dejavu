@@ -425,6 +425,8 @@
     <string name="dejavu_bars_bottom_summary">Alaa barre d\'actions. Fais glisser la barre d\'adresse vers le haut pour ouvrir le menu Plus.</string>
     <string name="dejavu_settings_hide_system_bars">Masquer les barres d\'état et de navigation</string>
     <string name="dejavu_settings_hide_system_bars_summary">Pendant l\'affichage d\'une page. Balayez depuis le bord supérieur ou inférieur pour les voir un instant.</string>
+    <string name="dejavu_settings_match_page_color">Accorder les barres à la couleur de la page</string>
+    <string name="dejavu_settings_match_page_color_summary">Les barres prennent la couleur d\'arrière-plan du site. Désactivé, elles gardent les couleurs de l\'espace de travail.</string>
     <string name="dejavu_bookmarks_export">Yaltin to fiilde</string>
     <plurals name="dejavu_bookmarks_exported">
         <item quantity="one">%1$d maantorol yaltinaama</item>

@@ -425,6 +425,8 @@
     <string name="dejavu_bars_bottom_summary">Гамәлләр панеле юк. «Тагын» менюсын ачу өчен адрес юлын өскә шудырыгыз.</string>
     <string name="dejavu_settings_hide_system_bars">Хәл һәм навигация тасмаларын яшерү</string>
     <string name="dejavu_settings_hide_system_bars_summary">Бит күрсәтелгәндә. Аларны бер мизгелгә күрү өчен өске яки аскы читтән тартыгыз.</string>
+    <string name="dejavu_settings_match_page_color">Тасмаларны бит төсенә туры китерү</string>
+    <string name="dejavu_settings_match_page_color_summary">Тасмалар сайтның фон төсен ала. Сүндерелгәндә эш мәйданы төсләрен саклый.</string>
     <string name="dejavu_bookmarks_export">Файлга экспортлау</string>
     <plurals name="dejavu_bookmarks_exported">
         <item quantity="one">%1$d кыстыргыч экспортланды</item>

@@ -425,6 +425,8 @@
     <string name="dejavu_bars_bottom_summary">Nisuna barra d\'azzioni. Fate sguillà in sù a barra d\'indirizzu per apre u menu Più.</string>
     <string name="dejavu_settings_hide_system_bars">Piattà e barre di statu è di navigazione</string>
     <string name="dejavu_settings_hide_system_bars_summary">Mentre ch\'ella hè affissata una pagina. Sguillà da l\'orlu supranu o suttanu per vedele un mumentu.</string>
+    <string name="dejavu_settings_match_page_color">Accurdà e barre à u culore di a pagina</string>
+    <string name="dejavu_settings_match_page_color_summary">E barre piglianu u culore di fondu di u situ web. Disattivatu, tenenu i culori di u spaziu di travagliu.</string>
     <string name="dejavu_bookmarks_export">Espurtà ver di un schedariu</string>
     <plurals name="dejavu_bookmarks_exported">
         <item quantity="one">%1$d indetta espurtata</item>

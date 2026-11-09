@@ -425,6 +425,8 @@
     <string name="dejavu_bars_bottom_summary">Majun cholaj b\'anob\'äl. Tajurula\' ri kikajtz\'ik ochochib\'äl ajsik richin najäq ri menú Ch\'aqa\' chik.</string>
     <string name="dejavu_settings_hide_system_bars">Kewewäx ri kikajtz\'ik rub\'anikil chuqa\' rub\'eyal okem</string>
     <string name="dejavu_settings_hide_system_bars_summary">Toq niwachin jun ruxaq. Tajurulaj pa ruchi\' ajsik o ikim richin ye\'atz\'ët jun ka\'i\' ramaj.</string>
+    <string name="dejavu_settings_match_page_color">Kab\'än chi ri kib\'anikil rik\'in ri rub\'ey ruxaq</string>
+    <string name="dejavu_settings_match_page_color_summary">Ri kib\'anikil nik\'ïm rub\'ey ri ruchi\'il ruxaq. We tik\'asax, nikik\'oje\' ri kib\'ey ri rajilab\'al samaj.</string>
     <string name="dejavu_bookmarks_export">Tik\'wäx el pa jun yakb\'äl</string>
     <plurals name="dejavu_bookmarks_exported">
         <item quantity="one">%1$d yaketal xk\'wäx el</item>

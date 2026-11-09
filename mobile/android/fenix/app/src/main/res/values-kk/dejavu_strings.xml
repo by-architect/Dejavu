@@ -425,6 +425,8 @@
     <string name="dejavu_bars_bottom_summary">Әрекеттер тақтасы жоқ. «Көбірек» мәзірін ашу үшін адрестік жолақты жоғары сырғытыңыз.</string>
     <string name="dejavu_settings_hide_system_bars">Күй және навигация жолақтарын жасыру</string>
     <string name="dejavu_settings_hide_system_bars_summary">Бет көрсетіліп тұрғанда. Оларды бір сәтке көру үшін жоғарғы не төменгі жиектен сырғытыңыз.</string>
+    <string name="dejavu_settings_match_page_color">Жолақтарды бет түсіне сәйкестеу</string>
+    <string name="dejavu_settings_match_page_color_summary">Жолақтар веб-сайттың фон түсін алады. Өшірулі болса, жұмыс кеңістігінің түстері сақталады.</string>
     <string name="dejavu_bookmarks_export">Файлға экспорттау</string>
     <plurals name="dejavu_bookmarks_exported">
         <item quantity="one">%1$d бетбелгі экспортталды</item>

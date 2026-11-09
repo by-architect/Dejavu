@@ -432,6 +432,8 @@
     <string name="dejavu_bars_bottom_summary">Bez darbību joslas. Velciet adreses joslu uz augšu, lai atvērtu izvēlni „Vairāk”.</string>
     <string name="dejavu_settings_hide_system_bars">Paslēpt statusa un navigācijas joslas</string>
     <string name="dejavu_settings_hide_system_bars_summary">Kamēr tiek rādīta lapa. Pavelciet no augšējās vai apakšējās malas, lai uz brīdi tās redzētu.</string>
+    <string name="dejavu_settings_match_page_color">Saskaņot joslas ar lapas krāsu</string>
+    <string name="dejavu_settings_match_page_color_summary">Joslas izmanto tīmekļa vietnes fona krāsu. Izslēgtā stāvoklī tās paturēt darbvietas krāsas.</string>
     <string name="dejavu_bookmarks_export">Eksportēt uz datni</string>
     <plurals name="dejavu_bookmarks_exported">
         <item quantity="zero">%1$d grāmatzīmju eksportētas</item>

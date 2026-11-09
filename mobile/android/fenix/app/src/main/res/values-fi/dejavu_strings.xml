@@ -425,6 +425,8 @@
     <string name="dejavu_bars_bottom_summary">Ei toimintopalkkia. Avaa lisävalikko pyyhkäisemällä osoitepalkkia ylös.</string>
     <string name="dejavu_settings_hide_system_bars">Piilota tila- ja navigointipalkki</string>
     <string name="dejavu_settings_hide_system_bars_summary">Kun sivu on näkyvissä. Pyyhkäise ylä- tai alareunasta nähdäksesi ne hetkeksi.</string>
+    <string name="dejavu_settings_match_page_color">Sovita palkit sivun väriin</string>
+    <string name="dejavu_settings_match_page_color_summary">Palkit saavat verkkosivuston taustavärin. Pois päältä ne pitävät työtilan värit.</string>
     <string name="dejavu_bookmarks_export">Vie tiedostoon</string>
     <plurals name="dejavu_bookmarks_exported">
         <item quantity="one">%1$d kirjanmerkki viety</item>

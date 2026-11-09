@@ -418,6 +418,8 @@
     <string name="dejavu_bars_bottom_summary">無操作列。向上滑動網址列即可開啟更多選單。</string>
     <string name="dejavu_settings_hide_system_bars">隱藏狀態列與導覽列</string>
     <string name="dejavu_settings_hide_system_bars_summary">顯示網頁時。從上緣或下緣向內滑動即可短暫顯示。</string>
+    <string name="dejavu_settings_match_page_color">列跟隨網頁顏色</string>
+    <string name="dejavu_settings_match_page_color_summary">列使用網站的背景色。關閉後維持工作區顏色。</string>
     <string name="dejavu_bookmarks_export">匯出至檔案</string>
     <plurals name="dejavu_bookmarks_exported">
         <item quantity="other">已匯出 %1$d 個書籤</item>

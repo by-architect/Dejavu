@@ -432,6 +432,8 @@
     <string name="dejavu_bars_bottom_summary">ללא סרגל פעולות. החליקו את שורת הכתובת למעלה כדי לפתוח את תפריט “עוד”.</string>
     <string name="dejavu_settings_hide_system_bars">הסתרת סרגלי המצב והניווט</string>
     <string name="dejavu_settings_hide_system_bars_summary">בזמן הצגת דף. יש להחליק מהקצה העליון או התחתון כדי לראות אותם לרגע.</string>
+    <string name="dejavu_settings_match_page_color">התאמת הסרגלים לצבע הדף</string>
+    <string name="dejavu_settings_match_page_color_summary">הסרגלים מקבלים את צבע הרקע של האתר. כשהאפשרות כבויה הם שומרים על צבעי סביבת העבודה.</string>
     <string name="dejavu_bookmarks_export">ייצוא לקובץ</string>
     <plurals name="dejavu_bookmarks_exported">
         <item quantity="one">%1$d סימנייה יוצאה</item>

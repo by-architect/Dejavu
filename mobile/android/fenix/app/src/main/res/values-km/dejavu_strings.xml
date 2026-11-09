@@ -418,6 +418,8 @@
     <string name="dejavu_bars_bottom_summary">គ្មានរបារសកម្មភាព។ អូសរបារអាសយដ្ឋានឡើងលើ ដើម្បីបើកម៉ឺនុយបន្ថែម។</string>
     <string name="dejavu_settings_hide_system_bars">លាក់របារស្ថានភាព និងរបាររុករក</string>
     <string name="dejavu_settings_hide_system_bars_summary">ពេលទំព័រកំពុងបង្ហាញ។ អូសចូលពីគែមខាងលើ ឬខាងក្រោម ដើម្បីមើលពួកវាមួយភ្លែត។</string>
+    <string name="dejavu_settings_match_page_color">ផ្គូផ្គងរបារទៅនឹងពណ៌ទំព័រ</string>
+    <string name="dejavu_settings_match_page_color_summary">របារប្រើពណ៌ផ្ទៃខាងក្រោយនៃគេហទំព័រ។ នៅពេលបិទ វានៅតែប្រើពណ៌ទីតាំងការងារ។</string>
     <string name="dejavu_bookmarks_export">នាំចេញទៅឯកសារ</string>
     <plurals name="dejavu_bookmarks_exported">
         <item quantity="other">%1$d ចំណាំបាននាំចេញ</item>

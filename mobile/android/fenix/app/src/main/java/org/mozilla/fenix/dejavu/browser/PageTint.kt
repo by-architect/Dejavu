@@ -24,6 +24,7 @@ import androidx.lifecycle.repeatOnLifecycle
 import kotlinx.coroutines.channels.awaitClose
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.Flow
+import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.callbackFlow
 import kotlinx.coroutines.flow.collectLatest
 import kotlinx.coroutines.flow.distinctUntilChanged
@@ -55,10 +56,12 @@ private const val OPAQUE = 0xFF shl 24
  * edge, so the address bar floats over the page as in Candy instead of over a band in the app's color. The status bar's
  * icons turn dark over light pages and light over dark ones, and so does the fade behind them; the navigation bar's
  * icons do the same over the page behind them. While a search screen covers the page, they follow the app's theme
- * again, and so does all of it while a split view shows two pages between bars that stay in place.
+ * again, and so does all of it while a split view shows two pages between bars that stay in place, or while the user
+ * turned [matchPageColor] off in Customize.
  *
  * @param behindPage The view whose background shows above the page.
  * @param layout The browser layout holding the fade behind the status bar.
+ * @param matchPageColor Whether the bars take the color of the page at all, or keep the colors of the workspace.
  * @param restoreTheme Gives the status bar the icons of the app's theme back.
  */
 internal class PageTint(
@@ -66,6 +69,7 @@ internal class PageTint(
     private val engineView: EngineView,
     private val behindPage: View,
     private val layout: CoordinatorLayout,
+    private val matchPageColor: StateFlow<Boolean>,
     private val restoreTheme: () -> Unit,
 ) {
     private var tinted: Int? = null
@@ -77,7 +81,11 @@ internal class PageTint(
             owner.repeatOnLifecycle(Lifecycle.State.RESUMED) {
                 val searches = appStore.flow().map { it.searchState.isSearchActive }.distinctUntilChanged()
                 val splits = snapshotFlow { SplitScreen.shown?.tabIds }.distinctUntilChanged()
-                merge(pageChanges(browserStore), pageMoves(), searches, splits).collectLatest {
+                merge(pageChanges(browserStore), pageMoves(), searches, splits, matchPageColor).collectLatest {
+                    if (!matchPageColor.value) {
+                        untint()
+                        return@collectLatest
+                    }
                     if (appStore.state.searchState.isSearchActive) {
                         restoreTheme()
                         return@collectLatest

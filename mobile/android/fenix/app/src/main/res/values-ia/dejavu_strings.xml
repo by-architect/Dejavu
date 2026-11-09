@@ -425,6 +425,8 @@
     <string name="dejavu_bars_bottom_summary">Nulle barra de actiones. Glissa le barra de adresse verso alto pro aperir le menu ‘Plus’.</string>
     <string name="dejavu_settings_hide_system_bars">Celar le barras de stato e de navigation</string>
     <string name="dejavu_settings_hide_system_bars_summary">Durante que un pagina es monstrate. Glissa ab le bordo superior o inferior pro vider los un momento.</string>
+    <string name="dejavu_settings_match_page_color">Adaptar le barras al color del pagina</string>
+    <string name="dejavu_settings_match_page_color_summary">Le barras prende le color de fundo del sito web. Si disactivate, illos mantene le colores del spatio de travalio.</string>
     <string name="dejavu_bookmarks_export">Exportar a file</string>
     <plurals name="dejavu_bookmarks_exported">
         <item quantity="one">%1$d marcapagina exportate</item>

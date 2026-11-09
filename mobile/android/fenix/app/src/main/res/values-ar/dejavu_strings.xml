@@ -453,6 +453,8 @@
     <string name="dejavu_bars_bottom_summary">بلا شريط إجراءات. اسحب شريط العنوان لأعلى لفتح قائمة «المزيد».</string>
     <string name="dejavu_settings_hide_system_bars">إخفاء شريطي الحالة والتنقل</string>
     <string name="dejavu_settings_hide_system_bars_summary">أثناء عرض صفحة. اسحب من الحافة العلوية أو السفلية لرؤيتهما لحظة.</string>
+    <string name="dejavu_settings_match_page_color">مطابقة الأشرطة للون الصفحة</string>
+    <string name="dejavu_settings_match_page_color_summary">تأخذ الأشرطة لون خلفية الموقع. عند الإيقاف تحتفظ بألوان مساحة العمل.</string>
     <string name="dejavu_bookmarks_export">صدِّر إلى ملف</string>
     <plurals name="dejavu_bookmarks_exported">
         <item quantity="zero">%1$d علامة مُصدَّرة</item>

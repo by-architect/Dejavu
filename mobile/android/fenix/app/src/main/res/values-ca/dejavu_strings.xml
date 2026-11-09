@@ -432,6 +432,8 @@
     <string name="dejavu_bars_bottom_summary">Sense barra d\'accions. Llisqueu la barra d\'adreces cap amunt per obrir el menú «Més».</string>
     <string name="dejavu_settings_hide_system_bars">Amaga les barres d\'estat i de navegació</string>
     <string name="dejavu_settings_hide_system_bars_summary">Mentre es mostra una pàgina. Llisqueu des de la vora superior o inferior per veure-les un moment.</string>
+    <string name="dejavu_settings_match_page_color">Adapta les barres al color de la pàgina</string>
+    <string name="dejavu_settings_match_page_color_summary">Les barres prenen el color de fons del lloc web. Si es desactiva, mantenen els colors de l\'espai de treball.</string>
     <string name="dejavu_bookmarks_export">Exporta a un fitxer</string>
     <plurals name="dejavu_bookmarks_exported">
         <item quantity="one">%1$d adreça d\'interès exportada</item>

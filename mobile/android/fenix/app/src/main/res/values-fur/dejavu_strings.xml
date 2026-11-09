@@ -425,6 +425,8 @@
     <string name="dejavu_bars_bottom_summary">Nissune sbare des azions. Scor in sù la sbare de direzion par vierzi il menù Plui.</string>
     <string name="dejavu_settings_hide_system_bars">Plate lis sbaris di stât e di navigazion</string>
     <string name="dejavu_settings_hide_system_bars_summary">Intant che e ven mostrade une pagjine. Scor dal ôr parsore o parsot par viodilis par un moment.</string>
+    <string name="dejavu_settings_match_page_color">Intone lis sbaris cul colôr de pagjine</string>
+    <string name="dejavu_settings_match_page_color_summary">Lis sbaris a cjapin il colôr di fonts dal sît web. Disativât, a tegnin i colôrs dal spazi di lavôr.</string>
     <string name="dejavu_bookmarks_export">Espuarte su file</string>
     <plurals name="dejavu_bookmarks_exported">
         <item quantity="one">%1$d segnelibri espuartât</item>

@@ -425,6 +425,8 @@
     <string name="dejavu_bars_bottom_summary">Nincs műveletsáv. Húzza felfelé a címsávot a Továbbiak menü megnyitásához.</string>
     <string name="dejavu_settings_hide_system_bars">Állapotsor és navigációs sáv elrejtése</string>
     <string name="dejavu_settings_hide_system_bars_summary">Amíg egy oldal látható. Húzza be az ujját a felső vagy alsó szélről, hogy egy pillanatra lássa őket.</string>
+    <string name="dejavu_settings_match_page_color">Sávok igazítása az oldal színéhez</string>
+    <string name="dejavu_settings_match_page_color_summary">A sávok átveszik a weboldal háttérszínét. Kikapcsolva a munkaterület színeit tartják meg.</string>
     <string name="dejavu_bookmarks_export">Exportálás fájlba</string>
     <plurals name="dejavu_bookmarks_exported">
         <item quantity="one">%1$d könyvjelző exportálva</item>

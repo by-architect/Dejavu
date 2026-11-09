@@ -418,6 +418,8 @@
     <string name="dejavu_bars_bottom_summary">Kò sí Ọ̀pá Iṣe. Fa Ọ̀pá Àdírẹ́sì sókè láti ṣí Menu Àfikún.</string>
     <string name="dejavu_settings_hide_system_bars">Fi ọ̀pá ipò àti ọ̀pá ìtọ́sọ́nà pamọ́</string>
     <string name="dejavu_settings_hide_system_bars_summary">Nígbà tí ojú-ìwé kan bá ń hàn. Ra wọlé láti etí òkè tàbí ìsàlẹ̀ láti rí wọn fún ìṣẹ́jú kan.</string>
+    <string name="dejavu_settings_match_page_color">Mú àwọn ọ̀pá bá àwọ̀ ojú-ìwé mu</string>
+    <string name="dejavu_settings_match_page_color_summary">Àwọn ọ̀pá á gba àwọ̀ ẹ̀yìn ojú-òpó wẹ́ẹ̀bù. Tí a bá pa á, wọ́n á máa lo àwọ̀ àyè iṣẹ́.</string>
     <string name="dejavu_bookmarks_export">Kó jáde sí fáìlì</string>
     <plurals name="dejavu_bookmarks_exported">
         <item quantity="other">A kó àmì-ìwé %1$d jáde</item>

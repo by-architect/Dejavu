@@ -425,6 +425,8 @@
     <string name="dejavu_bars_bottom_summary">მოქმედებების ზოლის გარეშე. დამატებითი მენიუს გასახსნელად გადაფურცლეთ მისამართების ველი ზემოთ.</string>
     <string name="dejavu_settings_hide_system_bars">მდგომარეობისა და ნავიგაციის ზოლების დამალვა</string>
     <string name="dejavu_settings_hide_system_bars_summary">როცა გვერდი ჩანს. ზედა ან ქვედა კიდიდან გადაფურცლეთ, რომ წამით დაინახოთ.</string>
+    <string name="dejavu_settings_match_page_color">ზოლების გვერდის ფერთან შესაბამისობა</string>
+    <string name="dejavu_settings_match_page_color_summary">ზოლები იღებენ ვებსაიტის ფონის ფერს. გამორთვისას ინარჩუნებენ სამუშაო სივრცის ფერებს.</string>
     <string name="dejavu_bookmarks_export">ფაილში გატანა</string>
     <plurals name="dejavu_bookmarks_exported">
         <item quantity="one">%1$d სანიშნი გატანილია</item>

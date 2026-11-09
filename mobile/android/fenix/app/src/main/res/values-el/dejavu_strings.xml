@@ -425,6 +425,8 @@
     <string name="dejavu_bars_bottom_summary">Χωρίς γραμμή ενεργειών. Σύρετε τη γραμμή διευθύνσεων προς τα πάνω για να ανοίξει το μενού «Περισσότερα».</string>
     <string name="dejavu_settings_hide_system_bars">Απόκρυψη γραμμών κατάστασης και πλοήγησης</string>
     <string name="dejavu_settings_hide_system_bars_summary">Όσο εμφανίζεται μια σελίδα. Σύρετε από το πάνω ή το κάτω άκρο για να τις δείτε για λίγο.</string>
+    <string name="dejavu_settings_match_page_color">Προσαρμογή γραμμών στο χρώμα της σελίδας</string>
+    <string name="dejavu_settings_match_page_color_summary">Οι γραμμές παίρνουν το χρώμα φόντου του ιστότοπου. Όταν είναι ανενεργό, κρατούν τα χρώματα του χώρου εργασίας.</string>
     <string name="dejavu_bookmarks_export">Εξαγωγή σε αρχείο</string>
     <plurals name="dejavu_bookmarks_exported">
         <item quantity="one">%1$d σελιδοδείκτης εξήχθη</item>

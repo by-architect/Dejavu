@@ -418,6 +418,8 @@
     <string name="dejavu_bars_bottom_summary">linja ilo li lon ala. o tawa sewi e linja pi nasin lipu tawa open e ilo mute.</string>
     <string name="dejavu_settings_hide_system_bars">o len e linja sona e linja tawa</string>
     <string name="dejavu_settings_hide_system_bars_summary">tenpo pi lipu lukin. sina wile lukin lili e ona la, o tawa tan poka sewi anu poka anpa.</string>
+    <string name="dejavu_settings_match_page_color">o sama e linja kepeken kule lipu</string>
+    <string name="dejavu_settings_match_page_color_summary">linja li kepeken kule monsi pi lipu linluwi. ona li weka la, linja li kepeken kule pi ma pali.</string>
     <string name="dejavu_bookmarks_export">o pana e lipu awen tawa lipu sin</string>
     <plurals name="dejavu_bookmarks_exported">
         <item quantity="other">lipu awen %1$d li lon lipu sin</item>

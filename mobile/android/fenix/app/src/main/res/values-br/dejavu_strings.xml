@@ -446,6 +446,8 @@
     <string name="dejavu_bars_bottom_summary">Barrenn oberioù ebet. Riklit ar varrenn chomlec’h etrezek al laez evit digeriñ ar meuziad Muioc’h.</string>
     <string name="dejavu_settings_hide_system_bars">Kuzhat ar barrennoù stad ha merdeiñ</string>
     <string name="dejavu_settings_hide_system_bars_summary">E-keit ma vez diskouezet ur bajenn. Riklit adalek ar riblenn uhel pe izel evit o gwelout ur pennadig.</string>
+    <string name="dejavu_settings_match_page_color">Klotañ ar barrennoù gant liv ar bajenn</string>
+    <string name="dejavu_settings_match_page_color_summary">Ar barrennoù a gemer liv drekleur al lec\'hienn. Pa vez diweredekaet e talc\'hont liv an egor labour.</string>
     <string name="dejavu_bookmarks_export">Ezporzhiañ en ur restr</string>
     <plurals name="dejavu_bookmarks_exported">
         <item quantity="one">%1$d sined ezporzhiet</item>

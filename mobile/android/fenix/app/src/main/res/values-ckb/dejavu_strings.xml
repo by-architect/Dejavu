@@ -425,6 +425,8 @@
     <string name="dejavu_bars_bottom_summary">بێ شریتی کردارەکان. شریتی ناونیشان بۆ سەرەوە ڕابکێشە بۆ کردنەوەی پێڕستی زیاتر.</string>
     <string name="dejavu_settings_hide_system_bars">شاردنەوەی شریتی دۆخ و ڕێنیشاندەر</string>
     <string name="dejavu_settings_hide_system_bars_summary">کاتێک پەڕەیەک پیشان دەدرێت. لە لێواری سەرەوە یان خوارەوە ڕابکێشە بۆ ئەوەی بۆ ساتێک بیانبینیت.</string>
+    <string name="dejavu_settings_match_page_color">شریتەکان لەگەڵ ڕەنگی پەڕە بگونجێنە</string>
+    <string name="dejavu_settings_match_page_color_summary">شریتەکان ڕەنگی پاشبنەمای وێبسایتەکە وەردەگرن. کاتێک کوژاوەیە، ڕەنگەکانی شوێنی کار دەمێننەوە.</string>
     <string name="dejavu_bookmarks_export">هەناردەکردن بۆ پەڕگە</string>
     <plurals name="dejavu_bookmarks_exported">
         <item quantity="one">%1$d نیشانە هەناردە کرا</item>

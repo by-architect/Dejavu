@@ -425,6 +425,8 @@
     <string name="dejavu_bars_bottom_summary">Gjin aksjebalke. Fei de adresbalke omheech om it Mear-menu te iepenjen.</string>
     <string name="dejavu_settings_hide_system_bars">Status- en navigaasjebalke ferstopje</string>
     <string name="dejavu_settings_hide_system_bars_summary">Wylst in side toand wurdt. Fei fan de boppe- of ûnderrâne om se efkes te sjen.</string>
+    <string name="dejavu_settings_match_page_color">Balken oan de siidkleur oanpasse</string>
+    <string name="dejavu_settings_match_page_color_summary">De balken nimme de eftergrûnkleur fan de webside oan. Utskeakele hâlde se de kleuren fan de wurkromte.</string>
     <string name="dejavu_bookmarks_export">Nei bestân eksportearje</string>
     <plurals name="dejavu_bookmarks_exported">
         <item quantity="one">%1$d blêdwizer eksportearre</item>

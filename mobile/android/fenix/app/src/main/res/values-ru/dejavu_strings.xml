@@ -439,6 +439,8 @@
     <string name="dejavu_bars_bottom_summary">Без панели действий. Проведите по адресной строке вверх, чтобы открыть меню «Ещё».</string>
     <string name="dejavu_settings_hide_system_bars">Скрывать строку состояния и панель навигации</string>
     <string name="dejavu_settings_hide_system_bars_summary">Пока показана страница. Проведите от верхнего или нижнего края, чтобы ненадолго их увидеть.</string>
+    <string name="dejavu_settings_match_page_color">Подстраивать панели под цвет страницы</string>
+    <string name="dejavu_settings_match_page_color_summary">Панели принимают цвет фона сайта. Если выключено, они сохраняют цвета рабочего пространства.</string>
     <string name="dejavu_bookmarks_export">Экспортировать в файл</string>
     <plurals name="dejavu_bookmarks_exported">
         <item quantity="one">%1$d закладка экспортирована</item>

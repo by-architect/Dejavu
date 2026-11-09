@@ -425,6 +425,8 @@
     <string name="dejavu_bars_bottom_summary">செயல் பட்டை இல்லை. மேலும் பட்டியைத் திறக்க முகவரிப் பட்டையை மேலே ஸ்வைப் செய்யவும்.</string>
     <string name="dejavu_settings_hide_system_bars">நிலை, வழிசெலுத்தல் பட்டிகளை மறை</string>
     <string name="dejavu_settings_hide_system_bars_summary">ஒரு பக்கம் காட்டப்படும்போது. அவற்றைச் சிறிது நேரம் பார்க்க மேல் அல்லது கீழ் விளிம்பிலிருந்து ஸ்வைப் செய்யவும்.</string>
+    <string name="dejavu_settings_match_page_color">பட்டிகளைப் பக்கத்தின் நிறத்துடன் பொருத்து</string>
+    <string name="dejavu_settings_match_page_color_summary">பட்டிகள் வலைத்தளத்தின் பின்னணி நிறத்தை எடுக்கும். அணைத்தால் பணியிட நிறங்களை வைத்திருக்கும்.</string>
     <string name="dejavu_bookmarks_export">கோப்புக்கு ஏற்றுமதி செய்</string>
     <plurals name="dejavu_bookmarks_exported">
         <item quantity="one">%1$d புத்தகக்குறி ஏற்றுமதி செய்யப்பட்டது</item>

@@ -425,6 +425,8 @@
     <string name="dejavu_bars_bottom_summary">Keine Aktionsleiste. Adressleiste nach oben wischen, um das Menü „Mehr“ zu öffnen.</string>
     <string name="dejavu_settings_hide_system_bars">Status- und Navigationsleiste ausblenden</string>
     <string name="dejavu_settings_hide_system_bars_summary">Während eine Seite angezeigt wird. Vom oberen oder unteren Rand wischen, um sie kurz zu sehen.</string>
+    <string name="dejavu_settings_match_page_color">Leisten an die Seitenfarbe anpassen</string>
+    <string name="dejavu_settings_match_page_color_summary">Die Leisten übernehmen die Hintergrundfarbe der Website. Ausgeschaltet behalten sie die Farben des Arbeitsbereichs.</string>
     <string name="dejavu_bookmarks_export">In Datei exportieren</string>
     <plurals name="dejavu_bookmarks_exported">
         <item quantity="one">%1$d Lesezeichen exportiert</item>

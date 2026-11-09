@@ -425,6 +425,8 @@
     <string name="dejavu_bars_bottom_summary">कुनै कार्य पट्टी छैन। थप मेनु खोल्न ठेगाना पट्टीलाई माथि स्वाइप गर्नुहोस्।</string>
     <string name="dejavu_settings_hide_system_bars">स्ट्याटस र नेभिगेसन बार लुकाउनुहोस्</string>
     <string name="dejavu_settings_hide_system_bars_summary">पृष्ठ देखाइँदा। तिनलाई एकछिन हेर्न माथि वा तलको किनाराबाट स्वाइप गर्नुहोस्।</string>
+    <string name="dejavu_settings_match_page_color">बारलाई पृष्ठको रङसँग मिलाउनुहोस्</string>
+    <string name="dejavu_settings_match_page_color_summary">बारहरूले वेबसाइटको पृष्ठभूमि रङ लिन्छन्। बन्द हुँदा तिनले कार्यस्थानका रङ राख्छन्।</string>
     <string name="dejavu_bookmarks_export">फाइलमा निर्यात गर्नुहोस्</string>
     <plurals name="dejavu_bookmarks_exported">
         <item quantity="one">%1$d बुकमार्क निर्यात गरियो</item>

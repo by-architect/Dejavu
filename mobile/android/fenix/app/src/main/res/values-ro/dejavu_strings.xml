@@ -432,6 +432,8 @@
     <string name="dejavu_bars_bottom_summary">Fără bară de acțiuni. Glisează bara de adrese în sus pentru a deschide meniul „Mai multe”.</string>
     <string name="dejavu_settings_hide_system_bars">Ascunde barele de stare și de navigare</string>
     <string name="dejavu_settings_hide_system_bars_summary">Cât timp este afișată o pagină. Glisează de la marginea de sus sau de jos pentru a le vedea pentru o clipă.</string>
+    <string name="dejavu_settings_match_page_color">Potrivește barele cu culoarea paginii</string>
+    <string name="dejavu_settings_match_page_color_summary">Barele preiau culoarea de fundal a site-ului. Dezactivat, păstrează culorile spațiului de lucru.</string>
     <string name="dejavu_bookmarks_export">Exportă în fișier</string>
     <plurals name="dejavu_bookmarks_exported">
         <item quantity="one">%1$d marcaj exportat</item>

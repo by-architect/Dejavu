@@ -182,11 +182,9 @@ class BrowserFragment : BaseBrowserFragment(), UserInteractionHandler {
         binding.browserWindow.padForSystemBarsAtSides(window, onBarsChanged = ::reinitializeEngineView)
         binding.browserLayout.addStatusBarScrim(above = binding.tabReloadCover, window = window)
         // The status bar and the navigation bar hide over pages when the user chose so in Customize.
-        val systemBarsHidden =
-            components.strictMode.allowViolation(StrictMode::allowThreadDiskReads) {
-                DejavuSettings.get(context).systemBarsHidden
-            }
-        hideSystemBarsOverPages(binding.engineView, systemBarsHidden)
+        val dejavuSettings =
+            components.strictMode.allowViolation(StrictMode::allowThreadDiskReads) { DejavuSettings.get(context) }
+        hideSystemBarsOverPages(binding.engineView, dejavuSettings.systemBarsHidden)
         binding.readerViewControlsBar.padForNavigationBar()
         PagePictures.attach(binding.engineView)
         PageTint(
@@ -194,6 +192,7 @@ class BrowserFragment : BaseBrowserFragment(), UserInteractionHandler {
             engineView = binding.engineView,
             behindPage = binding.browserWindow,
             layout = binding.browserLayout,
+            matchPageColor = dejavuSettings.matchPageColor,
             restoreTheme = { (activity as? HomeActivity)?.let { it.themeManager.applyStatusBarTheme(it) } },
         ).start(viewLifecycleOwner, components.core.store, components.appStore)
 

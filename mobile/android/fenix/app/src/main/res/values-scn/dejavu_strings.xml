@@ -425,6 +425,8 @@
     <string name="dejavu_bars_bottom_summary">Nudda barra dî azzioni. Tira ncapu a barra di l\'indirizzu pi grapiri u menù Cchiù.</string>
     <string name="dejavu_settings_hide_system_bars">Ammuccia i barri di statu e di navigazzioni</string>
     <string name="dejavu_settings_hide_system_bars_summary">Mentri chi s\'ammustra na pàggina. Sciddica dû bordu supiriuri o nfiriuri pi vìdirli pi nu mumentu.</string>
+    <string name="dejavu_settings_match_page_color">Adatta i barri a-u culuri da pàggina</string>
+    <string name="dejavu_settings_match_page_color_summary">I barri pigghianu u culuri di fonnu du situ web. Disattivatu, mantennu i culuri di l\'ammenti di travagghiu.</string>
     <string name="dejavu_bookmarks_export">Esporta nta un pricu</string>
     <plurals name="dejavu_bookmarks_exported">
         <item quantity="one">%1$d nzingalibbru esportatu</item>

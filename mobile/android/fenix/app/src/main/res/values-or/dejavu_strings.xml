@@ -425,6 +425,8 @@
     <string name="dejavu_bars_bottom_summary">କାର୍ଯ୍ୟ ବାର୍ ନାହିଁ। ଅଧିକ ମେନୁ ଖୋଲିବାକୁ ଠିକଣା ବାର୍‌କୁ ଉପରକୁ ସ୍ୱାଇପ୍ କରନ୍ତୁ।</string>
     <string name="dejavu_settings_hide_system_bars">ଷ୍ଟାଟସ ଏବଂ ନାଭିଗେସନ ବାର ଲୁଚାନ୍ତୁ</string>
     <string name="dejavu_settings_hide_system_bars_summary">ଯେତେବେଳେ ଏକ ପୃଷ୍ଠା ଦେଖାଯାଏ। ସେଗୁଡ଼ିକୁ କିଛି ସମୟ ଦେଖିବା ପାଇଁ ଉପର କିମ୍ବା ତଳ ଧାରରୁ ସ୍ୱାଇପ କରନ୍ତୁ।</string>
+    <string name="dejavu_settings_match_page_color">ବାର୍‌ଗୁଡ଼ିକୁ ପୃଷ୍ଠାର ରଙ୍ଗ ସହ ମିଶାନ୍ତୁ</string>
+    <string name="dejavu_settings_match_page_color_summary">ବାର୍‌ଗୁଡ଼ିକ ୱେବସାଇଟର ପୃଷ୍ଠଭୂମି ରଙ୍ଗ ନିଅନ୍ତି। ବନ୍ଦ ଥିଲେ ସେମାନେ ୱର୍କସ୍ପେସର ରଙ୍ଗ ରଖନ୍ତି।</string>
     <string name="dejavu_bookmarks_export">ଫାଇଲକୁ ରପ୍ତାନି କରନ୍ତୁ</string>
     <plurals name="dejavu_bookmarks_exported">
         <item quantity="one">%1$d ବୁକମାର୍କ ରପ୍ତାନି ହେଲା</item>

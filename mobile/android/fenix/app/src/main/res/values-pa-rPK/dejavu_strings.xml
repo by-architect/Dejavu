@@ -425,6 +425,8 @@
     <string name="dejavu_bars_bottom_summary">کوئی ایکشن بار نئيں۔ ہور مینو کھولن لئی پتہ بار نوں اُتے سوائپ کرو۔</string>
     <string name="dejavu_settings_hide_system_bars">سٹیٹس تے نیویگیشن بار لکاؤ</string>
     <string name="dejavu_settings_hide_system_bars_summary">جدوں کوئی صفحہ وکھایا جا رہیا ہووے۔ اوہناں نوں اک پل لئی ویکھن لئی اُتلے یا تھلے کنارے توں سوائپ کرو۔</string>
+    <string name="dejavu_settings_match_page_color">بارز نوں صفحے دے رنگ نال ملاؤ</string>
+    <string name="dejavu_settings_match_page_color_summary">بارز ویب سائٹ دے پس منظر دا رنگ لیندے نیں۔ بند ہون تے ورک اسپیس دے رنگ رکھدے نیں۔</string>
     <string name="dejavu_bookmarks_export">فائل وچ ایکسپورٹ کرو</string>
     <plurals name="dejavu_bookmarks_exported">
         <item quantity="one">%1$d بُک مارک ایکسپورٹ ہویا</item>

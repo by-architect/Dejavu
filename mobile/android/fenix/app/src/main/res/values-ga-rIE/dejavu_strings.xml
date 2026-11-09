@@ -446,6 +446,8 @@
     <string name="dejavu_bars_bottom_summary">Níl aon bharra gníomhartha ann. Svaidhpeáil an barra seoltaí suas chun an roghchlár ‘Tuilleadh’ a oscailt.</string>
     <string name="dejavu_settings_hide_system_bars">Folaigh na barraí stádais agus nascleanúna</string>
     <string name="dejavu_settings_hide_system_bars_summary">Fad is atá leathanach ar taispeáint. Svaidhpeáil isteach ón imeall uachtarach nó íochtarach chun iad a fheiceáil ar feadh nóiméid.</string>
+    <string name="dejavu_settings_match_page_color">Meaitseáil na barraí le datha an leathanaigh</string>
+    <string name="dejavu_settings_match_page_color_summary">Glacann na barraí datha cúlra an tsuímh ghréasáin. Nuair atá sé as, coinníonn siad dathanna na spáis oibre.</string>
     <string name="dejavu_bookmarks_export">Easpórtáil go comhad</string>
     <plurals name="dejavu_bookmarks_exported">
         <item quantity="one">Easpórtáladh %1$d leabharmharc</item>
