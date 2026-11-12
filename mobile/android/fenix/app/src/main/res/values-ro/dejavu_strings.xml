@@ -594,4 +594,11 @@
     <string name="dejavu_sidebery_exported">Salvat pentru Sidebery</string>
     <string name="dejavu_sidebery_export_failed">Fișierul nu a putut fi salvat. Încearcă din nou.</string>
     <string name="dejavu_sidebery_bad_file">Acest fișier nu este un instantaneu sau o copie de rezervă Sidebery.</string>
+    <string name="dejavu_menu_full_screen">Ecran complet</string>
+    <string name="dejavu_menu_exit_full_screen">Ieși din ecranul complet</string>
+    <string name="dejavu_settings_animations">Animații</string>
+    <string name="dejavu_settings_all_animations">Toate animațiile</string>
+    <string name="dejavu_settings_all_animations_summary">Meniurile, paginile și butoanele se mișcă atunci când se deschid și se închid. Dezactivate, apar imediat.</string>
+    <string name="dejavu_settings_genie_effect">Efect de duh</string>
+    <string name="dejavu_settings_genie_effect_summary">Marcajele, istoricul, descărcările, setările și contul tău curg din butoanele lor de pe pagina de start și se întorc în ele.</string>
 </resources>

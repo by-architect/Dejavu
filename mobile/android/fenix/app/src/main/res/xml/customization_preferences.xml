@@ -49,6 +49,25 @@
             app:isPreferenceVisible="@bool/API28" />
     </androidx.preference.PreferenceCategory>
 
+    <!-- Dejavu: how much Dejavu's screens move, see DejavuMotion. -->
+    <androidx.preference.PreferenceCategory
+        android:layout="@layout/preference_cat_style"
+        android:title="@string/dejavu_settings_animations"
+        app:iconSpaceReserved="false">
+        <androidx.preference.SwitchPreferenceCompat
+            app:iconSpaceReserved="false"
+            android:key="@string/pref_key_dejavu_animations"
+            android:persistent="false"
+            android:title="@string/dejavu_settings_all_animations"
+            android:summary="@string/dejavu_settings_all_animations_summary" />
+        <androidx.preference.SwitchPreferenceCompat
+            app:iconSpaceReserved="false"
+            android:key="@string/pref_key_dejavu_genie_effect"
+            android:persistent="false"
+            android:title="@string/dejavu_settings_genie_effect"
+            android:summary="@string/dejavu_settings_genie_effect_summary" />
+    </androidx.preference.PreferenceCategory>
+
     <!-- Dejavu: the tab actions and the menu are set up here, and the bars, the tab bar and the gestures, and the
          passwords, the language and the like open on screens of their own. -->
     <Preference

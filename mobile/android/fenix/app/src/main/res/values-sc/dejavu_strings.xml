@@ -586,4 +586,11 @@
     <string name="dejavu_sidebery_exported">Sarvadu pro Sidebery</string>
     <string name="dejavu_sidebery_export_failed">No est istadu possìbile sarvare s’archìviu. Torra a proare.</string>
     <string name="dejavu_sidebery_bad_file">Custu archìviu no est un’istantànea nen una còpia de seguresa de Sidebery.</string>
+    <string name="dejavu_menu_full_screen">Ischermu intreu</string>
+    <string name="dejavu_menu_exit_full_screen">Essi de s\'ischermu intreu</string>
+    <string name="dejavu_settings_animations">Animatziones</string>
+    <string name="dejavu_settings_all_animations">Totu is animatziones</string>
+    <string name="dejavu_settings_all_animations_summary">Is menùs, is pàginas e is butones si movent cando s\'aberint e si serrant. Disativadas, aparessent luego.</string>
+    <string name="dejavu_settings_genie_effect">Efetu de su gèniu</string>
+    <string name="dejavu_settings_genie_effect_summary">Sinnalibros, cronologia, iscarrigamentos, cunfiguratzione e su contu tuo essint dae is butones issoro in sa pàgina printzipale e torrant a intrare.</string>
 </resources>

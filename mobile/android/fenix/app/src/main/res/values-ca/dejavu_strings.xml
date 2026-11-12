@@ -594,4 +594,11 @@
     <string name="dejavu_sidebery_exported">S’ha desat per a Sidebery</string>
     <string name="dejavu_sidebery_export_failed">No s’ha pogut desar el fitxer. Torneu-ho a provar.</string>
     <string name="dejavu_sidebery_bad_file">Aquest fitxer no és una instantània ni una còpia de seguretat de Sidebery.</string>
+    <string name="dejavu_menu_full_screen">Pantalla completa</string>
+    <string name="dejavu_menu_exit_full_screen">Surt de la pantalla completa</string>
+    <string name="dejavu_settings_animations">Animacions</string>
+    <string name="dejavu_settings_all_animations">Totes les animacions</string>
+    <string name="dejavu_settings_all_animations_summary">Els menús, les pàgines i els botons es mouen quan s\'obren i es tanquen. Desactivades, apareixen de cop.</string>
+    <string name="dejavu_settings_genie_effect">Efecte geni</string>
+    <string name="dejavu_settings_genie_effect_summary">Les adreces d\'interès, l\'historial, les baixades, els paràmetres i el vostre compte surten dels seus botons a la pàgina d\'inici i hi tornen.</string>
 </resources>

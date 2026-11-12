@@ -578,4 +578,11 @@
     <string name="dejavu_sidebery_exported">Đã lưu cho Sidebery</string>
     <string name="dejavu_sidebery_export_failed">Không thể lưu tập tin. Hãy thử lại.</string>
     <string name="dejavu_sidebery_bad_file">Tập tin này không phải ảnh chụp hay bản sao lưu của Sidebery.</string>
+    <string name="dejavu_menu_full_screen">Toàn màn hình</string>
+    <string name="dejavu_menu_exit_full_screen">Thoát toàn màn hình</string>
+    <string name="dejavu_settings_animations">Hiệu ứng chuyển động</string>
+    <string name="dejavu_settings_all_animations">Tất cả hiệu ứng chuyển động</string>
+    <string name="dejavu_settings_all_animations_summary">Menu, trang và nút chuyển động khi mở và đóng. Khi tắt, chúng hiện ra ngay lập tức.</string>
+    <string name="dejavu_settings_genie_effect">Hiệu ứng thần đèn</string>
+    <string name="dejavu_settings_genie_effect_summary">Dấu trang, lịch sử, tải xuống, cài đặt và tài khoản của bạn tuôn ra từ các nút của chúng trên trang chủ rồi quay trở lại.</string>
 </resources>

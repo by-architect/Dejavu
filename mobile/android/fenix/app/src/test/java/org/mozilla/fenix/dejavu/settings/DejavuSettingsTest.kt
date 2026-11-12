@@ -17,6 +17,7 @@ import org.mozilla.fenix.dejavu.actions.CustomAction
 import org.mozilla.fenix.dejavu.actions.HttpMethod
 import org.mozilla.fenix.dejavu.actions.RowAction
 import org.mozilla.fenix.dejavu.browser.BarsLayout
+import org.mozilla.fenix.dejavu.browser.FloatingButtonPlace
 import org.mozilla.fenix.dejavu.menu.AddressBarButtons
 import org.robolectric.RobolectricTestRunner
 
@@ -54,6 +55,38 @@ class DejavuSettingsTest {
 
         settings.setSystemBarsHidden(false)
         assertFalse(newSettings().systemBarsHidden.value)
+    }
+
+    @Test
+    fun `full screen view stays as the user left it, and its button where the user dragged it`() {
+        val settings = newSettings()
+        assertFalse(settings.fullScreenView.value)
+        assertEquals(FloatingButtonPlace(), settings.fullScreenButton.value)
+
+        settings.setFullScreenView(true)
+        settings.setFullScreenButton(FloatingButtonPlace(atEnd = false, height = 0.2f))
+        val read = newSettings()
+        assertTrue(read.fullScreenView.value)
+        assertEquals(FloatingButtonPlace(atEnd = false, height = 0.2f), read.fullScreenButton.value)
+
+        read.setFullScreenView(false)
+        assertFalse(newSettings().fullScreenView.value)
+    }
+
+    @Test
+    fun `animations and the genie are on until the user turns them off`() {
+        val settings = newSettings()
+        assertTrue(settings.animations.value)
+        assertTrue(settings.genieEffect.value)
+
+        settings.setGenieEffect(false)
+        assertTrue(newSettings().animations.value)
+        assertFalse(newSettings().genieEffect.value)
+
+        settings.setAnimations(false)
+        settings.setGenieEffect(true)
+        assertFalse(newSettings().animations.value)
+        assertTrue(newSettings().genieEffect.value)
     }
 
     @Test

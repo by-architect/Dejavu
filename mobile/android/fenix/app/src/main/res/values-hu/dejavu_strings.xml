@@ -586,4 +586,11 @@
     <string name="dejavu_sidebery_exported">Mentve a Sidebery számára</string>
     <string name="dejavu_sidebery_export_failed">Nem sikerült menteni a fájlt. Próbálja újra.</string>
     <string name="dejavu_sidebery_bad_file">Ez a fájl nem a Sidebery pillanatképe vagy biztonsági mentése.</string>
+    <string name="dejavu_menu_full_screen">Teljes képernyő</string>
+    <string name="dejavu_menu_exit_full_screen">Kilépés a teljes képernyőből</string>
+    <string name="dejavu_settings_animations">Animációk</string>
+    <string name="dejavu_settings_all_animations">Minden animáció</string>
+    <string name="dejavu_settings_all_animations_summary">A menük, oldalak és gombok mozognak nyitáskor és záráskor. Kikapcsolva azonnal megjelennek.</string>
+    <string name="dejavu_settings_genie_effect">Dzsinn-effektus</string>
+    <string name="dejavu_settings_genie_effect_summary">A könyvjelzők, az előzmények, a letöltések, a beállítások és a fiókja kiáramlanak a gombjaikból a kezdőlapon, majd vissza.</string>
 </resources>

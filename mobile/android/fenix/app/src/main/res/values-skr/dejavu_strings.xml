@@ -586,4 +586,11 @@
     <string name="dejavu_sidebery_exported">Sidebery کیتے محفوظ تھیا</string>
     <string name="dejavu_sidebery_export_failed">فائل محفوظ نہیں تھی سڳی۔ ولدا کوشش کرو۔</string>
     <string name="dejavu_sidebery_bad_file">اے فائل Sidebery دا سنیپ شاٹ یا بیک اپ کائنی۔</string>
+    <string name="dejavu_menu_full_screen">فل سکرین</string>
+    <string name="dejavu_menu_exit_full_screen">فل سکرین توں باہر نکلو</string>
+    <string name="dejavu_settings_animations">اینیمیشناں</string>
+    <string name="dejavu_settings_all_animations">ساریاں اینیمیشناں</string>
+    <string name="dejavu_settings_all_animations_summary">مینو، صفحے تے بٹن کھلݨ تے بند تھیوݨ ویلے ہلدے ہن۔ بند ہووݨ تے او فوراً ݙسدے ہن۔</string>
+    <string name="dejavu_settings_genie_effect">جن دا اثر</string>
+    <string name="dejavu_settings_genie_effect_summary">نشانیاں، تاریخ، ڈاؤن لوڈاں، ترتیباں تے تہاݙا کھاتہ مکھ پنے تے اپݨے بٹناں وچوں وہہ کے نکلدے ہن تے ولدے ہن۔</string>
 </resources>

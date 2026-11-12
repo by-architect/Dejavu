@@ -578,4 +578,11 @@
     <string name="dejavu_sidebery_exported">ບັນທຶກໄວ້ສຳລັບ Sidebery ແລ້ວ</string>
     <string name="dejavu_sidebery_export_failed">ບໍ່ສາມາດບັນທຶກໄຟລ໌ໄດ້. ລອງໃໝ່ອີກຄັ້ງ.</string>
     <string name="dejavu_sidebery_bad_file">ໄຟລ໌ນີ້ບໍ່ແມ່ນສະແນັບຊັອດ ຫຼື ການສຳຮອງຂອງ Sidebery.</string>
+    <string name="dejavu_menu_full_screen">ເຕັມຫນ້າຈໍ</string>
+    <string name="dejavu_menu_exit_full_screen">ອອກຈາກເຕັມຫນ້າຈໍ</string>
+    <string name="dejavu_settings_animations">ພາບເຄື່ອນໄຫວ</string>
+    <string name="dejavu_settings_all_animations">ພາບເຄື່ອນໄຫວທັງໝົດ</string>
+    <string name="dejavu_settings_all_animations_summary">ເມນູ, ໜ້າ ແລະ ປຸ່ມຈະເຄື່ອນໄຫວເມື່ອເປີດ ແລະ ປິດ. ເມື່ອປິດໄວ້, ພວກມັນຈະສະແດງທັນທີ.</string>
+    <string name="dejavu_settings_genie_effect">ເອັບເຟັກຈີນີ</string>
+    <string name="dejavu_settings_genie_effect_summary">ບຸກມາກ, ປະຫວັດ, ດາວໂຫລດ, ການຕັ້ງຄ່າ ແລະ ບັນຊີຂອງທ່ານໄຫຼອອກຈາກປຸ່ມຂອງມັນໃນໜ້າຫຼັກ ແລະ ກັບຄືນເຂົ້າໄປ.</string>
 </resources>

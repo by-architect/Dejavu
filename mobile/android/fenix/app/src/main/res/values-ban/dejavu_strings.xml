@@ -578,4 +578,11 @@
     <string name="dejavu_sidebery_exported">Kasimpen anggen Sidebery</string>
     <string name="dejavu_sidebery_export_failed">Nenten prasida nyimpen file. Cobia malih.</string>
     <string name="dejavu_sidebery_bad_file">File puniki boya snapshot utawi cadangan Sidebery.</string>
+    <string name="dejavu_menu_full_screen">Layar penuh</string>
+    <string name="dejavu_menu_exit_full_screen">Medal saking layar penuh</string>
+    <string name="dejavu_settings_animations">Animasi</string>
+    <string name="dejavu_settings_all_animations">Sami animasi</string>
+    <string name="dejavu_settings_all_animations_summary">Menu, kaca, miwah tombol makisid ritatkala kabuka lan kaserep. Yening kamatiang, ipun digelis medal.</string>
+    <string name="dejavu_settings_genie_effect">Efek jin</string>
+    <string name="dejavu_settings_genie_effect_summary">Markah, riwayat, unduhan, setelan, miwah akun ragané ngamaluang medal saking tombolnyané ring home page lan mawali malih.</string>
 </resources>

@@ -140,6 +140,7 @@ open class CustomizationFragment : PreferenceFragmentCompat(), SystemInsetsPadde
             bindLightTheme()
             bindAutoBatteryTheme()
             setupRadioGroups()
+            setupAnimationSwitches()
             setupMoreMenuEditButton()
             return
         }
@@ -338,6 +339,30 @@ open class CustomizationFragment : PreferenceFragmentCompat(), SystemInsetsPadde
             }
         }
         addToRadioGroup(*choices.toTypedArray())
+    }
+
+    /**
+     * Turns Dejavu's animations, and the genie of the home screen's buttons among them, on or off, which Dejavu's own
+     * settings keep.
+     */
+    private fun setupAnimationSwitches() {
+        val dejavuSettings = dejavuSettings()
+        val genie = requirePreference<SwitchPreferenceCompat>(R.string.pref_key_dejavu_genie_effect).apply {
+            isChecked = dejavuSettings.genieEffect.value
+            isEnabled = dejavuSettings.animations.value
+            onPreferenceChangeListener = Preference.OnPreferenceChangeListener { _, newValue ->
+                dejavuSettings.setGenieEffect(newValue == true)
+                true
+            }
+        }
+        requirePreference<SwitchPreferenceCompat>(R.string.pref_key_dejavu_animations).apply {
+            isChecked = dejavuSettings.animations.value
+            onPreferenceChangeListener = Preference.OnPreferenceChangeListener { _, newValue ->
+                dejavuSettings.setAnimations(newValue == true)
+                genie.isEnabled = newValue == true
+                true
+            }
+        }
     }
 
     /** Hides the Edit button at the bottom of Dejavu's "More" menu, which Dejavu's own settings keep. */

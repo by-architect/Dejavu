@@ -37,6 +37,7 @@ enum class MoreMenuItem(
     FIND_IN_PAGE("find_in_page", R.string.dejavu_menu_find_in_page, R.drawable.dejavu_ic_find_in_page_24),
     BOOKMARK_PAGE("bookmark_page", R.string.dejavu_menu_bookmark_page, R.drawable.dejavu_ic_bookmark_add_24),
     DESKTOP_SITE("desktop_site", R.string.dejavu_menu_desktop_site, iconsR.drawable.mozac_ic_device_desktop_24),
+    FULL_SCREEN("full_screen", R.string.dejavu_menu_full_screen, R.drawable.dejavu_ic_full_screen_24),
     EXTENSIONS("extensions", R.string.dejavu_menu_extensions, R.drawable.dejavu_ic_extensions_24),
     PASSWORDS("passwords", R.string.dejavu_menu_passwords, R.drawable.dejavu_ic_passwords_24),
     BOOKMARKS("bookmarks", R.string.dejavu_menu_bookmarks, R.drawable.dejavu_ic_bookmarks_24),

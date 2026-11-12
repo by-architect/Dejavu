@@ -578,4 +578,11 @@
     <string name="dejavu_sidebery_exported">บันทึกสำหรับ Sidebery แล้ว</string>
     <string name="dejavu_sidebery_export_failed">ไม่สามารถบันทึกไฟล์ได้ ลองอีกครั้ง</string>
     <string name="dejavu_sidebery_bad_file">ไฟล์นี้ไม่ใช่สแนปช็อตหรือข้อมูลสำรองของ Sidebery</string>
+    <string name="dejavu_menu_full_screen">เต็มหน้าจอ</string>
+    <string name="dejavu_menu_exit_full_screen">ออกจากเต็มหน้าจอ</string>
+    <string name="dejavu_settings_animations">ภาพเคลื่อนไหว</string>
+    <string name="dejavu_settings_all_animations">ภาพเคลื่อนไหวทั้งหมด</string>
+    <string name="dejavu_settings_all_animations_summary">เมนู หน้า และปุ่มจะเคลื่อนไหวขณะเปิดและปิด เมื่อปิดไว้ จะแสดงทันที</string>
+    <string name="dejavu_settings_genie_effect">เอฟเฟกต์จีนี่</string>
+    <string name="dejavu_settings_genie_effect_summary">ที่คั่นหน้า ประวัติ การดาวน์โหลด การตั้งค่า และบัญชีของคุณจะไหลออกมาจากปุ่มบนหน้าแรกและกลับเข้าไป</string>
 </resources>

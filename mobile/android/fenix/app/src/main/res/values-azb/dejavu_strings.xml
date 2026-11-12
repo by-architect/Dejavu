@@ -586,4 +586,11 @@
     <string name="dejavu_sidebery_exported">Sidebery اوچون ساخلاندی</string>
     <string name="dejavu_sidebery_export_failed">فایل ساخلانا بیلمه‌دی. یئنیدن چالیشین.</string>
     <string name="dejavu_sidebery_bad_file">بو فایل Sidebery snapshot-و یا یدک نوسخه‌سی دئییل.</string>
+    <string name="dejavu_menu_full_screen">بوتون صفحه</string>
+    <string name="dejavu_menu_exit_full_screen">بوتون صفحه‌دن چیخ</string>
+    <string name="dejavu_settings_animations">انیمیشن‌لار</string>
+    <string name="dejavu_settings_all_animations">بوتون انیمیشن‌لار</string>
+    <string name="dejavu_settings_all_animations_summary">منولار، صفحه‌لر و دویمه‌لر آچیلیب باغلاناندا حرکت ائدیرلر. سؤندورولنده دَرحال گؤرونورلر.</string>
+    <string name="dejavu_settings_genie_effect">جین افکتی</string>
+    <string name="dejavu_settings_genie_effect_summary">بوکمارک‌لار، گئچمیش، یئندیرنلر، تنظیم‌لر و حسابینیز آنا صفحه‌ده‌کی دویمه‌لریندن آخیب چیخیر و گئری قاییدیر.</string>
 </resources>

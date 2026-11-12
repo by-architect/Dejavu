@@ -602,4 +602,11 @@
     <string name="dejavu_sidebery_exported">Shranjeno za Sidebery</string>
     <string name="dejavu_sidebery_export_failed">Datoteke ni bilo mogoče shraniti. Poskusite znova.</string>
     <string name="dejavu_sidebery_bad_file">Ta datoteka ni Sideberyjev posnetek ali varnostna kopija.</string>
+    <string name="dejavu_menu_full_screen">Celozaslonski način</string>
+    <string name="dejavu_menu_exit_full_screen">Izhod iz celozaslonskega načina</string>
+    <string name="dejavu_settings_animations">Animacije</string>
+    <string name="dejavu_settings_all_animations">Vse animacije</string>
+    <string name="dejavu_settings_all_animations_summary">Meniji, strani in gumbi se premikajo, ko se odpirajo in zapirajo. Ko je izklopljeno, se prikažejo takoj.</string>
+    <string name="dejavu_settings_genie_effect">Učinek džina</string>
+    <string name="dejavu_settings_genie_effect_summary">Zaznamki, zgodovina, prenosi, nastavitve in vaš račun se izlijejo iz svojih gumbov na domači strani in se vrnejo vanje.</string>
 </resources>

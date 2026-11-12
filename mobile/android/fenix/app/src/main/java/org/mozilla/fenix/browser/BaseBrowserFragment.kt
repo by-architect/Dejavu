@@ -2384,7 +2384,8 @@ abstract class BaseBrowserFragment :
                 )
             }
 
-            (view as? SwipeGestureLayout)?.isSwipeEnabled = true
+            // Dejavu: not while full screen view hides the bars the swipes start on, see BrowserFragment.
+            (view as? SwipeGestureLayout)?.isSwipeEnabled = webAppToolbarShouldBeVisible
             (activity as? HomeActivity)?.let { homeActivity ->
                 // ExternalAppBrowserActivity exclusively handles it's own theming unless in private mode.
                 if (homeActivity !is ExternalAppBrowserActivity || homeActivity.browsingModeManager.mode.isPrivate) {

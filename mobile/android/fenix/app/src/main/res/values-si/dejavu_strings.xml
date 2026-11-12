@@ -586,4 +586,11 @@
     <string name="dejavu_sidebery_exported">Sidebery සඳහා සුරැකුණා</string>
     <string name="dejavu_sidebery_export_failed">ගොනුව සුරැකිය නොහැකි විය. නැවත උත්සාහ කරන්න.</string>
     <string name="dejavu_sidebery_bad_file">මෙම ගොනුව Sidebery ස්නැප්ෂොට් එකක් හෝ උපස්ථයක් නොවේ.</string>
+    <string name="dejavu_menu_full_screen">පූර්ණ තිරය</string>
+    <string name="dejavu_menu_exit_full_screen">පූර්ණ තිරයෙන් ඉවත් වන්න</string>
+    <string name="dejavu_settings_animations">සජීවිකරණ</string>
+    <string name="dejavu_settings_all_animations">සියලු සජීවිකරණ</string>
+    <string name="dejavu_settings_all_animations_summary">මෙනු, පිටු සහ බොත්තම් විවෘත වන විට සහ වැසෙන විට චලනය වේ. අක්‍රිය විට ඒවා වහාම පෙන්වයි.</string>
+    <string name="dejavu_settings_genie_effect">ජීනි ප්‍රයෝගය</string>
+    <string name="dejavu_settings_genie_effect_summary">පොත්යොමු, ඉතිහාසය, බාගැනීම්, සැකසුම් සහ ඔබගේ ගිණුම මුල් පිටුවේ ඒවායේ බොත්තම් වලින් පිටතට ගලා ගොස් නැවත ඇතුළු වේ.</string>
 </resources>

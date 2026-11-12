@@ -586,4 +586,11 @@
     <string name="dejavu_sidebery_exported">Vistað fyrir Sidebery</string>
     <string name="dejavu_sidebery_export_failed">Ekki tókst að vista skrána. Reyndu aftur.</string>
     <string name="dejavu_sidebery_bad_file">Þessi skrá er ekki skyndimynd eða öryggisafrit úr Sidebery.</string>
+    <string name="dejavu_menu_full_screen">Fullur skjár</string>
+    <string name="dejavu_menu_exit_full_screen">Hætta í fullum skjá</string>
+    <string name="dejavu_settings_animations">Hreyfimyndir</string>
+    <string name="dejavu_settings_all_animations">Allar hreyfimyndir</string>
+    <string name="dejavu_settings_all_animations_summary">Valmyndir, síður og hnappar hreyfast þegar þau opnast og lokast. Þegar slökkt er á þessu birtast þau strax.</string>
+    <string name="dejavu_settings_genie_effect">Andaáhrif</string>
+    <string name="dejavu_settings_genie_effect_summary">Bókamerki, ferill, sóttar skrár, stillingar og aðgangurinn þinn streyma út úr hnöppunum sínum á upphafssíðunni og aftur inn.</string>
 </resources>

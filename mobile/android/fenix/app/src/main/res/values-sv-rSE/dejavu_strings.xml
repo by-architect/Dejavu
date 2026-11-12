@@ -586,4 +586,11 @@
     <string name="dejavu_sidebery_exported">Sparat för Sidebery</string>
     <string name="dejavu_sidebery_export_failed">Det gick inte att spara filen. Försök igen.</string>
     <string name="dejavu_sidebery_bad_file">Den här filen är inte en ögonblicksbild eller säkerhetskopia från Sidebery.</string>
+    <string name="dejavu_menu_full_screen">Helskärm</string>
+    <string name="dejavu_menu_exit_full_screen">Avsluta helskärm</string>
+    <string name="dejavu_settings_animations">Animationer</string>
+    <string name="dejavu_settings_all_animations">Alla animationer</string>
+    <string name="dejavu_settings_all_animations_summary">Menyer, sidor och knappar rör sig när de öppnas och stängs. När det är avstängt visas de direkt.</string>
+    <string name="dejavu_settings_genie_effect">Andeeffekt</string>
+    <string name="dejavu_settings_genie_effect_summary">Bokmärken, historik, hämtningar, inställningar och ditt konto strömmar ut ur sina knappar på hemsidan och tillbaka in.</string>
 </resources>

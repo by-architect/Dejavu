@@ -586,4 +586,11 @@
     <string name="dejavu_sidebery_exported">Барои Sidebery нигоҳ дошта шуд</string>
     <string name="dejavu_sidebery_export_failed">Файл нигоҳ дошта нашуд. Аз нав кӯшиш кунед.</string>
     <string name="dejavu_sidebery_bad_file">Ин файл акси фаврӣ ё нусхаи эҳтиётии Sidebery нест.</string>
+    <string name="dejavu_menu_full_screen">Экрани пурра</string>
+    <string name="dejavu_menu_exit_full_screen">Баромадан аз экрани пурра</string>
+    <string name="dejavu_settings_animations">Аниматсияҳо</string>
+    <string name="dejavu_settings_all_animations">Ҳамаи аниматсияҳо</string>
+    <string name="dejavu_settings_all_animations_summary">Менюҳо, саҳифаҳо ва тугмаҳо ҳангоми кушода ва пӯшида шудан ҳаракат мекунанд. Вақте ки хомӯш аст, онҳо фавран пайдо мешаванд.</string>
+    <string name="dejavu_settings_genie_effect">Таъсири ҷин</string>
+    <string name="dejavu_settings_genie_effect_summary">Хатбаракҳо, таърих, боргириҳо, танзимот ва ҳисоби шумо аз тугмаҳои худ дар саҳифаи асосӣ берун мерезанд ва бармегарданд.</string>
 </resources>

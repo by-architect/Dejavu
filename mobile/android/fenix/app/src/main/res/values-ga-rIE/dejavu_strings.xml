@@ -610,4 +610,11 @@
     <string name="dejavu_sidebery_exported">Sábháilte do Sidebery</string>
     <string name="dejavu_sidebery_export_failed">Níorbh fhéidir an comhad a shábháil. Bain triail eile as.</string>
     <string name="dejavu_sidebery_bad_file">Ní grianghraf ná cúltaca de Sidebery é an comhad seo.</string>
+    <string name="dejavu_menu_full_screen">Lánscáileán</string>
+    <string name="dejavu_menu_exit_full_screen">Scoir den lánscáileán</string>
+    <string name="dejavu_settings_animations">Beochana</string>
+    <string name="dejavu_settings_all_animations">Gach beochan</string>
+    <string name="dejavu_settings_all_animations_summary">Bogann roghchláir, leathanaigh agus cnaipí agus iad ag oscailt agus ag dúnadh. Nuair atá sé múchta, taispeántar iad láithreach.</string>
+    <string name="dejavu_settings_genie_effect">Éifeacht genie</string>
+    <string name="dejavu_settings_genie_effect_summary">Doirtear leabharmharcanna, stair, íoslódálacha, socruithe agus do chuntas amach as a gcnaipí ar an leathanach baile agus ar ais isteach.</string>
 </resources>

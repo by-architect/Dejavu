@@ -586,4 +586,11 @@
     <string name="dejavu_sidebery_exported">Lagra for Sidebery</string>
     <string name="dejavu_sidebery_export_failed">Klarte ikkje å lagre fila. Prøv igjen.</string>
     <string name="dejavu_sidebery_bad_file">Denne fila er ikkje eit augeblinksbilete eller ein tryggingskopi frå Sidebery.</string>
+    <string name="dejavu_menu_full_screen">Fullskjerm</string>
+    <string name="dejavu_menu_exit_full_screen">Avslutt fullskjerm</string>
+    <string name="dejavu_settings_animations">Animasjonar</string>
+    <string name="dejavu_settings_all_animations">Alle animasjonar</string>
+    <string name="dejavu_settings_all_animations_summary">Menyar, sider og knappar rører seg når dei opnar og lukkar seg. Når det er slått av, viser dei seg med ein gong.</string>
+    <string name="dejavu_settings_genie_effect">Genie-effekt</string>
+    <string name="dejavu_settings_genie_effect_summary">Bokmerke, historikk, nedlastingar, innstillingar og kontoen din strøymer ut av knappane sine på startsida og tilbake att.</string>
 </resources>

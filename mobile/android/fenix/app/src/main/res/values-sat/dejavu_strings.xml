@@ -594,4 +594,11 @@
     <string name="dejavu_sidebery_exported">Sidebery ᱞᱟᱹᱜᱤᱫ ᱥᱟᱺᱪᱟᱣ ᱮᱱᱟ</string>
     <string name="dejavu_sidebery_export_failed">ᱨᱮᱫᱽ ᱵᱟᱝ ᱥᱟᱺᱪᱟᱣ ᱫᱟᱲᱮᱭᱟᱫᱟ᱾ ᱫᱩᱦᱲᱟᱹ ᱪᱮᱥᱴᱟᱭ ᱢᱮ᱾</string>
     <string name="dejavu_sidebery_bad_file">ᱱᱚᱶᱟ ᱨᱮᱫᱽ ᱫᱚ Sidebery ᱨᱮᱭᱟᱜ ᱥᱱᱮᱯᱥᱚᱴ ᱥᱮ ᱵᱮᱠᱚᱯ ᱵᱟᱝ ᱠᱟᱱᱟ᱾</string>
+    <string name="dejavu_menu_full_screen">ᱯᱩᱨᱟᱹ ᱤᱥᱠᱨᱤᱱ</string>
+    <string name="dejavu_menu_exit_full_screen">ᱯᱩᱨᱟᱹ ᱤᱥᱠᱨᱤᱱ ᱠᱷᱚᱱ ᱚᱰᱚᱠ ᱢᱮ</string>
+    <string name="dejavu_settings_animations">ᱮᱱᱤᱢᱮᱥᱚᱱ ᱠᱚ</string>
+    <string name="dejavu_settings_all_animations">ᱡᱷᱚᱛᱚ ᱮᱱᱤᱢᱮᱥᱚᱱ ᱠᱚ</string>
+    <string name="dejavu_settings_all_animations_summary">ᱢᱮᱱᱩ, ᱥᱟᱦᱴᱟ ᱟᱨ ᱵᱩᱛᱟᱹᱢ ᱠᱚ ᱡᱷᱤᱡᱽ ᱟᱨ ᱵᱚᱱᱫᱚ ᱚᱠᱛᱮ ᱥᱮᱞᱮᱫ ᱠᱟᱱᱟ ᱾ ᱵᱚᱱᱫᱚ ᱠᱟᱛᱮ ᱩᱱᱠᱩ ᱛᱩᱨᱩᱫ ᱧᱮᱞᱚᱜ ᱠᱟᱱᱟ ᱾</string>
+    <string name="dejavu_settings_genie_effect">ᱡᱤᱱ ᱮᱯᱷᱮᱠᱴ</string>
+    <string name="dejavu_settings_genie_effect_summary">ᱵᱩᱠᱢᱟᱨᱠ ᱠᱚ, ᱱᱟᱜᱟᱢ, ᱰᱟᱣᱱᱞᱚᱰ ᱠᱚ, ᱥᱟᱡᱟᱣ ᱠᱚ ᱟᱨ ᱟᱢᱟᱜ ᱟᱠᱟᱩᱱᱴ ᱚᱲᱟᱜ ᱥᱟᱦᱴᱟ ᱨᱮᱱᱟᱜ ᱵᱩᱛᱟᱹᱢ ᱠᱷᱚᱱ ᱚᱰᱚᱠ ᱟᱨ ᱨᱩᱣᱟᱹᱲ ᱠᱟᱱᱟ ᱾</string>
 </resources>

@@ -586,4 +586,11 @@
     <string name="dejavu_sidebery_exported">Sidebery ئۈچۈن ساقلاندى</string>
     <string name="dejavu_sidebery_export_failed">ھۆججەتنى ساقلىغىلى بولمىدى. قايتا سىناڭ.</string>
     <string name="dejavu_sidebery_bad_file">بۇ ھۆججەت Sidebery نىڭ تېز سۈرىتى ياكى زاپىسى ئەمەس.</string>
+    <string name="dejavu_menu_full_screen">پۈتۈن ئېكران</string>
+    <string name="dejavu_menu_exit_full_screen">پۈتۈن ئېكراندىن چېكىنىش</string>
+    <string name="dejavu_settings_animations">جانلاندۇرۇشلار</string>
+    <string name="dejavu_settings_all_animations">بارلىق جانلاندۇرۇشلار</string>
+    <string name="dejavu_settings_all_animations_summary">تىزىملىكلەر، بەتلەر ۋە كۇنۇپكىلار ئېچىلغاندا ۋە يېپىلغاندا ھەرىكەتلىنىدۇ. تاقالغاندا ئۇلار دەرھال كۆرۈنىدۇ.</string>
+    <string name="dejavu_settings_genie_effect">جىن ئۈنۈمى</string>
+    <string name="dejavu_settings_genie_effect_summary">خەتكۈچ، تارىخ، چۈشۈرۈلمىلەر، تەڭشەك ۋە ھېساباتىڭىز باش بەتتىكى كۇنۇپكىلىرىدىن ئېقىپ چىقىپ، قايتىپ كىرىدۇ.</string>
 </resources>

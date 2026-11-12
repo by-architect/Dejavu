@@ -602,4 +602,11 @@
     <string name="dejavu_sidebery_exported">Захавана для Sidebery</string>
     <string name="dejavu_sidebery_export_failed">Не ўдалося захаваць файл. Паспрабуйце яшчэ раз.</string>
     <string name="dejavu_sidebery_bad_file">Гэты файл не з’яўляецца здымкам або рэзервовай копіяй Sidebery.</string>
+    <string name="dejavu_menu_full_screen">Поўнаэкранны рэжым</string>
+    <string name="dejavu_menu_exit_full_screen">Выйсці з поўнаэкраннага рэжыму</string>
+    <string name="dejavu_settings_animations">Анімацыі</string>
+    <string name="dejavu_settings_all_animations">Усе анімацыі</string>
+    <string name="dejavu_settings_all_animations_summary">Меню, старонкі і кнопкі рухаюцца, калі адкрываюцца і зачыняюцца. Калі выключана, яны з\'яўляюцца адразу.</string>
+    <string name="dejavu_settings_genie_effect">Эфект джына</string>
+    <string name="dejavu_settings_genie_effect_summary">Закладкі, гісторыя, спампоўкі, налады і ваш уліковы запіс выліваюцца са сваіх кнопак на галоўнай старонцы і вяртаюцца назад.</string>
 </resources>

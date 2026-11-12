@@ -586,4 +586,11 @@
     <string name="dejavu_sidebery_exported">Sarvatu pi Sidebery</string>
     <string name="dejavu_sidebery_export_failed">Nun fu pussìbbili sarvari lu pricu. Prova arreri.</string>
     <string name="dejavu_sidebery_bad_file">Stu pricu nun è n’istantania nè na copia di sicurizza di Sidebery.</string>
+    <string name="dejavu_menu_full_screen">Tuttu schirmu</string>
+    <string name="dejavu_menu_exit_full_screen">Nesci dû tuttu schirmu</string>
+    <string name="dejavu_settings_animations">Animazzioni</string>
+    <string name="dejavu_settings_all_animations">Tutti l\'animazzioni</string>
+    <string name="dejavu_settings_all_animations_summary">Li menù, li pàggini e li buttuna si mòvinu quannu s\'aprinu e si chiùdinu. Siddu sunnu disattivati, cumpàrinu sùbbitu.</string>
+    <string name="dejavu_settings_genie_effect">Effettu geniu</string>
+    <string name="dejavu_settings_genie_effect_summary">Nzingalibbra, crunuluggìa, scarricamenti, mpustazzioni e lu tò cuntu nèscinu dî so buttuna nnâ pàggina principali e cci tòrnanu.</string>
 </resources>

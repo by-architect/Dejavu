@@ -586,4 +586,11 @@
     <string name="dejavu_sidebery_exported">Für Sidebery gespeichert</string>
     <string name="dejavu_sidebery_export_failed">Die Datei konnte nicht gespeichert werden. Versuchen Sie es erneut.</string>
     <string name="dejavu_sidebery_bad_file">Diese Datei ist kein Schnappschuss und keine Sicherung von Sidebery.</string>
+    <string name="dejavu_menu_full_screen">Vollbild</string>
+    <string name="dejavu_menu_exit_full_screen">Vollbild beenden</string>
+    <string name="dejavu_settings_animations">Animationen</string>
+    <string name="dejavu_settings_all_animations">Alle Animationen</string>
+    <string name="dejavu_settings_all_animations_summary">Menüs, Seiten und Schaltflächen bewegen sich beim Öffnen und Schließen. Ausgeschaltet erscheinen sie sofort.</string>
+    <string name="dejavu_settings_genie_effect">Trichtereffekt</string>
+    <string name="dejavu_settings_genie_effect_summary">Lesezeichen, Chronik, Downloads, Einstellungen und Ihr Konto fließen auf der Startseite aus ihren Schaltflächen heraus und wieder hinein.</string>
 </resources>

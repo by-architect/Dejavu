@@ -586,4 +586,11 @@
     <string name="dejavu_sidebery_exported">Salvestatud Sidebery jaoks</string>
     <string name="dejavu_sidebery_export_failed">Faili ei saanud salvestada. Proovi uuesti.</string>
     <string name="dejavu_sidebery_bad_file">See fail pole Sidebery hetktõmmis ega varukoopia.</string>
+    <string name="dejavu_menu_full_screen">Täisekraan</string>
+    <string name="dejavu_menu_exit_full_screen">Välju täisekraanist</string>
+    <string name="dejavu_settings_animations">Animatsioonid</string>
+    <string name="dejavu_settings_all_animations">Kõik animatsioonid</string>
+    <string name="dejavu_settings_all_animations_summary">Menüüd, lehed ja nupud liiguvad avanedes ja sulgudes. Väljalülitatuna ilmuvad need kohe.</string>
+    <string name="dejavu_settings_genie_effect">Džinniefekt</string>
+    <string name="dejavu_settings_genie_effect_summary">Järjehoidjad, ajalugu, allalaadimised, sätted ja sinu konto voolavad avalehel oma nuppudest välja ja tagasi.</string>
 </resources>

@@ -578,4 +578,11 @@
     <string name="dejavu_sidebery_exported">已為 Sidebery 儲存</string>
     <string name="dejavu_sidebery_export_failed">無法儲存檔案，請再試一次。</string>
     <string name="dejavu_sidebery_bad_file">這個檔案不是 Sidebery 快照或備份。</string>
+    <string name="dejavu_menu_full_screen">全螢幕</string>
+    <string name="dejavu_menu_exit_full_screen">離開全螢幕</string>
+    <string name="dejavu_settings_animations">動畫</string>
+    <string name="dejavu_settings_all_animations">所有動畫</string>
+    <string name="dejavu_settings_all_animations_summary">選單、頁面與按鈕在開啟與關閉時會移動。關閉後，它們會立即出現。</string>
+    <string name="dejavu_settings_genie_effect">神奇效果</string>
+    <string name="dejavu_settings_genie_effect_summary">書籤、瀏覽紀錄、下載項目、設定與您的帳號會從主頁上的按鈕流出，再流回去。</string>
 </resources>

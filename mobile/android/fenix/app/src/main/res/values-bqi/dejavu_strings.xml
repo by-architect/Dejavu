@@ -586,4 +586,11 @@
     <string name="dejavu_sidebery_exported">سی Sidebery ذخیره وابی</string>
     <string name="dejavu_sidebery_export_failed">فایل ذخیره نوابی. دوباره امتحان کو.</string>
     <string name="dejavu_sidebery_bad_file">ای فایل snapshot یا پشتیوان Sidebery نئ.</string>
+    <string name="dejavu_menu_full_screen">نما پوی بلگه</string>
+    <string name="dejavu_menu_exit_full_screen">دراومائن ز نما پوی بلگه</string>
+    <string name="dejavu_settings_animations">انیمیشنا</string>
+    <string name="dejavu_settings_all_animations">همه انیمیشنا</string>
+    <string name="dejavu_settings_all_animations_summary">منوا، بلگه‌یا و دکمه‌یا وختی واز و بسته می‌بۊن جم می‌خورن. وختی خاموش بۊ، زی نشون داده می‌بۊن.</string>
+    <string name="dejavu_settings_genie_effect">جلوه جن</string>
+    <string name="dejavu_settings_genie_effect_summary">نشووکا، ویرگار، دانلودا، سامووا و حساوت ز دکمه‌یاشون من صفحه خونه درمیان و ورمی‌گردن.</string>
 </resources>

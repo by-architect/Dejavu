@@ -586,4 +586,11 @@
     <string name="dejavu_sidebery_exported">Sidebery ਲਈ ਸੰਭਾਲਿਆ</string>
     <string name="dejavu_sidebery_export_failed">ਫ਼ਾਇਲ ਸੰਭਾਲੀ ਨਹੀਂ ਜਾ ਸਕੀ। ਮੁੜ ਕੋਸ਼ਿਸ਼ ਕਰੋ।</string>
     <string name="dejavu_sidebery_bad_file">ਇਹ ਫ਼ਾਇਲ Sidebery ਦਾ ਸਨੈਪਸ਼ਾਟ ਜਾਂ ਬੈਕਅੱਪ ਨਹੀਂ ਹੈ।</string>
+    <string name="dejavu_menu_full_screen">ਪੂਰੀ ਸਕਰੀਨ</string>
+    <string name="dejavu_menu_exit_full_screen">ਪੂਰੀ ਸਕਰੀਨ ਤੋਂ ਬਾਹਰ ਆਓ</string>
+    <string name="dejavu_settings_animations">ਐਨੀਮੇਸ਼ਨ</string>
+    <string name="dejavu_settings_all_animations">ਸਾਰੀਆਂ ਐਨੀਮੇਸ਼ਨਾਂ</string>
+    <string name="dejavu_settings_all_animations_summary">ਮੀਨੂ, ਸਫ਼ੇ ਅਤੇ ਬਟਨ ਖੁੱਲ੍ਹਣ ਅਤੇ ਬੰਦ ਹੋਣ ਵੇਲੇ ਹਿੱਲਦੇ ਹਨ। ਬੰਦ ਹੋਣ ‘ਤੇ ਉਹ ਤੁਰੰਤ ਦਿਖਦੇ ਹਨ।</string>
+    <string name="dejavu_settings_genie_effect">ਜਿੰਨ ਪ੍ਰਭਾਵ</string>
+    <string name="dejavu_settings_genie_effect_summary">ਬੁੱਕਮਾਰਕ, ਅਤੀਤ, ਡਾਊਨਲੋਡ, ਸੈਟਿੰਗਾਂ ਅਤੇ ਤੁਹਾਡਾ ਖਾਤਾ ਹੋਮ ਸਫ਼ੇ ‘ਤੇ ਆਪਣੇ ਬਟਨਾਂ ਵਿੱਚੋਂ ਵਹਿ ਕੇ ਬਾਹਰ ਆਉਂਦੇ ਹਨ ਅਤੇ ਵਾਪਸ ਚਲੇ ਜਾਂਦੇ ਹਨ।</string>
 </resources>

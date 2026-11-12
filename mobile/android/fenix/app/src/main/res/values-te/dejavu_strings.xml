@@ -586,4 +586,11 @@
     <string name="dejavu_sidebery_exported">Sidebery కోసం భద్రపరచబడింది</string>
     <string name="dejavu_sidebery_export_failed">ఫైలును భద్రపరచలేకపోయాం. మళ్లీ ప్రయత్నించండి.</string>
     <string name="dejavu_sidebery_bad_file">ఈ ఫైలు Sidebery స్నాప్‌షాట్ లేదా బ్యాకప్ కాదు.</string>
+    <string name="dejavu_menu_full_screen">నిండు తెర</string>
+    <string name="dejavu_menu_exit_full_screen">నిండు తెర నుండి నిష్క్రమించు</string>
+    <string name="dejavu_settings_animations">యానిమేషన్లు</string>
+    <string name="dejavu_settings_all_animations">అన్ని యానిమేషన్లు</string>
+    <string name="dejavu_settings_all_animations_summary">మెనూలు, పేజీలు, బటన్లు తెరుచుకునేటప్పుడు, మూసుకునేటప్పుడు కదులుతాయి. ఆఫ్ చేస్తే, అవి వెంటనే కనిపిస్తాయి.</string>
+    <string name="dejavu_settings_genie_effect">జీనీ ప్రభావం</string>
+    <string name="dejavu_settings_genie_effect_summary">ఇష్టాంశాలు, చరిత్ర, దింపుకోళ్ళు, అమరికలు, మీ ఖాతా హోమ్ పేజీలోని వాటి బటన్ల నుండి బయటకు ప్రవహించి తిరిగి లోపలికి వెళ్తాయి.</string>
 </resources>

@@ -610,4 +610,11 @@
     <string name="dejavu_sidebery_exported">Enrollet evit Sidebery</string>
     <string name="dejavu_sidebery_export_failed">N’eus ket bet gallet enrollañ ar restr. Klaskit en-dro.</string>
     <string name="dejavu_sidebery_bad_file">N’eo ket ar restr-mañ un dapadenn pe un eilenn gwarez eus Sidebery.</string>
+    <string name="dejavu_menu_full_screen">Skramm a-bezh</string>
+    <string name="dejavu_menu_exit_full_screen">Kuitaat ar skramm a-bezh</string>
+    <string name="dejavu_settings_animations">Bevaatoù</string>
+    <string name="dejavu_settings_all_animations">An holl vevaatoù</string>
+    <string name="dejavu_settings_all_animations_summary">Al lañserioù, ar pajennoù hag an afelloù a fiñv pa vezont digoret ha serret. Pa vez diweredekaet e teuont war wel diouzhtu.</string>
+    <string name="dejavu_settings_genie_effect">Efed jin</string>
+    <string name="dejavu_settings_genie_effect_summary">Ar sinedoù, ar roll istor, ar pellgargadurioù, an arventennoù hag ho kont a ver eus o afelloù war ar skramm degemer hag a zistro enno.</string>
 </resources>

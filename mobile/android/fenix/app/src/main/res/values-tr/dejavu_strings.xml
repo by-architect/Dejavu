@@ -586,4 +586,11 @@
     <string name="dejavu_sidebery_exported">Sidebery için kaydedildi</string>
     <string name="dejavu_sidebery_export_failed">Dosya kaydedilemedi. Yeniden deneyin.</string>
     <string name="dejavu_sidebery_bad_file">Bu dosya bir Sidebery anlık görüntüsü ya da yedeği değil.</string>
+    <string name="dejavu_menu_full_screen">Tam ekran</string>
+    <string name="dejavu_menu_exit_full_screen">Tam ekrandan çık</string>
+    <string name="dejavu_settings_animations">Animasyonlar</string>
+    <string name="dejavu_settings_all_animations">Tüm animasyonlar</string>
+    <string name="dejavu_settings_all_animations_summary">Menüler, sayfalar ve düğmeler açılıp kapanırken hareket eder. Kapalıyken hemen görünürler.</string>
+    <string name="dejavu_settings_genie_effect">Cin efekti</string>
+    <string name="dejavu_settings_genie_effect_summary">Yer imleri, geçmiş, indirilenler, ayarlar ve hesabınız ana ekrandaki düğmelerinden akıp çıkar ve geri döner.</string>
 </resources>

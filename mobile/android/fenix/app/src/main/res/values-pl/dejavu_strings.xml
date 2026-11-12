@@ -602,4 +602,11 @@
     <string name="dejavu_sidebery_exported">Zapisano dla Sidebery</string>
     <string name="dejavu_sidebery_export_failed">Nie udało się zapisać pliku. Spróbuj ponownie.</string>
     <string name="dejavu_sidebery_bad_file">Ten plik nie jest migawką ani kopią zapasową Sidebery.</string>
+    <string name="dejavu_menu_full_screen">Pełny ekran</string>
+    <string name="dejavu_menu_exit_full_screen">Zamknij pełny ekran</string>
+    <string name="dejavu_settings_animations">Animacje</string>
+    <string name="dejavu_settings_all_animations">Wszystkie animacje</string>
+    <string name="dejavu_settings_all_animations_summary">Menu, strony i przyciski poruszają się podczas otwierania i zamykania. Po wyłączeniu pojawiają się od razu.</string>
+    <string name="dejavu_settings_genie_effect">Efekt dżina</string>
+    <string name="dejavu_settings_genie_effect_summary">Zakładki, historia, pobrane pliki, ustawienia i Twoje konto wylewają się ze swoich przycisków na stronie startowej i wracają do nich.</string>
 </resources>

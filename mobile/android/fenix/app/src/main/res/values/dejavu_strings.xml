@@ -316,6 +316,10 @@
     <string name="dejavu_menu_bookmark_page">Bookmark</string>
     <string name="dejavu_menu_edit_bookmark">Edit bookmark</string>
     <string name="dejavu_menu_desktop_site">Desktop site</string>
+    <!-- Hides the address bar, the actions bar and the phone's status and navigation bars, so the page fills the whole screen until a small button floating over it brings them back. -->
+    <string name="dejavu_menu_full_screen">Full screen</string>
+    <!-- The small button floating over a page in full screen, as screen readers read it, and the More menu's entry while the page is in full screen: brings the bars back. -->
+    <string name="dejavu_menu_exit_full_screen">Exit full screen</string>
     <!-- Shows the page as Firefox's Reader view, plain text without ads and clutter. Same words as dejavu_page_info_reader_view. -->
     <string name="dejavu_menu_reader_view">Reader view</string>
     <string name="dejavu_menu_close_reader_view">Close reader view</string>
@@ -430,6 +434,18 @@
     <string name="pref_key_dejavu_hide_system_bars" translatable="false">pref_key_dejavu_hide_system_bars</string>
     <string name="dejavu_settings_hide_system_bars">Hide status and navigation bars</string>
     <string name="dejavu_settings_hide_system_bars_summary">While a page is shown. Swipe in from the top or bottom edge to see them for a moment.</string>
+
+    <!-- Settings: Customize, how Dejavu's screens, menus and buttons move -->
+    <string name="pref_key_dejavu_animations" translatable="false">pref_key_dejavu_animations</string>
+    <string name="pref_key_dejavu_genie_effect" translatable="false">pref_key_dejavu_genie_effect</string>
+    <!-- Heading over the animation switches in Customize. -->
+    <string name="dejavu_settings_animations">Animations</string>
+    <!-- Switch that turns every animation of Dejavu's screens, menus and buttons on or off. Web pages keep their own. -->
+    <string name="dejavu_settings_all_animations">All animations</string>
+    <string name="dejavu_settings_all_animations_summary">Menus, pages and buttons move as they open and close. When off, they show at once.</string>
+    <!-- Switch of the "genie" animation: the pages the buttons of the home screen open pour out of their button, like a genie out of a lamp, and go back into it. -->
+    <string name="dejavu_settings_genie_effect">Genie effect</string>
+    <string name="dejavu_settings_genie_effect_summary">Bookmarks, history, downloads, settings and your account pour out of their buttons on the home screen and back in.</string>
 
     <!-- Settings: the screens that group the settings under General -->
     <!-- Settings entry and screen title, under General, for the settings of tabs, workspaces and containers. -->

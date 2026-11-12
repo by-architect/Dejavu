@@ -619,4 +619,11 @@
     <string name="dejavu_sidebery_exported">Sidebery માટે સાચવ્યું</string>
     <string name="dejavu_sidebery_export_failed">ફાઇલ સાચવી શકાઈ નહીં. ફરી પ્રયાસ કરો.</string>
     <string name="dejavu_sidebery_bad_file">આ ફાઇલ Sidebery નો સ્નેપશોટ કે બેકઅપ નથી.</string>
+    <string name="dejavu_menu_full_screen">પૂર્ણ સ્ક્રીન</string>
+    <string name="dejavu_menu_exit_full_screen">પૂર્ણ સ્ક્રીનમાંથી બહાર નીકળો</string>
+    <string name="dejavu_settings_animations">એનિમેશન</string>
+    <string name="dejavu_settings_all_animations">બધા એનિમેશન</string>
+    <string name="dejavu_settings_all_animations_summary">મેનૂ, પેજ અને બટન ખૂલતી અને બંધ થતી વખતે હલનચલન કરે છે. બંધ હોય ત્યારે તે તરત દેખાય છે.</string>
+    <string name="dejavu_settings_genie_effect">જીની અસર</string>
+    <string name="dejavu_settings_genie_effect_summary">બુકમાર્ક્સ, ઇતિહાસ, ડાઉનલોડ્સ, સેટિંગ્સ અને તમારું એકાઉન્ટ મુખ્ય પૃષ્ઠ પરના તેમના બટનમાંથી બહાર વહે છે અને પાછા આવે છે.</string>
 </resources>

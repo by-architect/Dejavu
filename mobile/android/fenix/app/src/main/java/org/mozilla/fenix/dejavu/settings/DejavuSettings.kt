@@ -16,6 +16,7 @@ import org.mozilla.fenix.dejavu.actions.CustomAction
 import org.mozilla.fenix.dejavu.actions.RowAction
 import org.mozilla.fenix.dejavu.actions.TabAction
 import org.mozilla.fenix.dejavu.browser.BarsLayout
+import org.mozilla.fenix.dejavu.browser.FloatingButtonPlace
 import org.mozilla.fenix.dejavu.containers.ContainerPick
 import org.mozilla.fenix.dejavu.history.HistoryGrouping
 import org.mozilla.fenix.dejavu.menu.ActionsBarLayout
@@ -50,6 +51,15 @@ class DejavuSettings private constructor(context: Context) {
     )
     private val _moreMenuEditHidden = MutableStateFlow(prefs.getBoolean(KEY_MORE_MENU_EDIT_HIDDEN, false))
     private val _systemBarsHidden = MutableStateFlow(prefs.getBoolean(KEY_SYSTEM_BARS_HIDDEN, false))
+    private val _fullScreenView = MutableStateFlow(prefs.getBoolean(KEY_FULL_SCREEN_VIEW, false))
+    private val _fullScreenButton = MutableStateFlow(
+        FloatingButtonPlace(
+            atEnd = prefs.getBoolean(KEY_FULL_SCREEN_BUTTON_AT_END, true),
+            height = prefs.getFloat(KEY_FULL_SCREEN_BUTTON_HEIGHT, FloatingButtonPlace.DEFAULT_HEIGHT),
+        ),
+    )
+    private val _animations = MutableStateFlow(prefs.getBoolean(KEY_ANIMATIONS, true))
+    private val _genieEffect = MutableStateFlow(prefs.getBoolean(KEY_GENIE_EFFECT, true))
     private val _barsLayout = MutableStateFlow(BarsLayout.fromKey(prefs.getString(KEY_BARS_LAYOUT, null)))
     private val _homeSearchAtBottom = MutableStateFlow(prefs.getBoolean(KEY_HOME_SEARCH_AT_BOTTOM, false))
     private val _addressBarButtons = MutableStateFlow(readAddressBarButtons())
@@ -98,6 +108,27 @@ class DejavuSettings private constructor(context: Context) {
 
     /** Whether the status bar and the navigation bar are hidden while a page shows. */
     val systemBarsHidden: StateFlow<Boolean> = _systemBarsHidden.asStateFlow()
+
+    /**
+     * Whether pages fill the whole screen, without Dejavu's bars and the system bars, until the floating button over
+     * them shows the bars again, see [org.mozilla.fenix.dejavu.browser.installFullScreenView].
+     */
+    val fullScreenView: StateFlow<Boolean> = _fullScreenView.asStateFlow()
+
+    /** Where the floating button of [fullScreenView] floats, as the user last dragged it. */
+    val fullScreenButton: StateFlow<FloatingButtonPlace> = _fullScreenButton.asStateFlow()
+
+    /**
+     * Whether Dejavu's screens, menus and buttons move as they open, close and change, see
+     * [org.mozilla.fenix.dejavu.ui.DejavuMotion].
+     */
+    val animations: StateFlow<Boolean> = _animations.asStateFlow()
+
+    /**
+     * Whether the pages the buttons of the home screen open pour out of them, see
+     * [org.mozilla.fenix.dejavu.home.PageGenie]. Only while [animations] are on.
+     */
+    val genieEffect: StateFlow<Boolean> = _genieEffect.asStateFlow()
 
     /** Where the bars show around pages, and so where the "More" menu opens from. */
     val barsLayout: StateFlow<BarsLayout> = _barsLayout.asStateFlow()
@@ -259,6 +290,29 @@ class DejavuSettings private constructor(context: Context) {
     fun setSystemBarsHidden(hidden: Boolean) {
         _systemBarsHidden.value = hidden
         prefs.edit { putBoolean(KEY_SYSTEM_BARS_HIDDEN, hidden) }
+    }
+
+    fun setFullScreenView(on: Boolean) {
+        _fullScreenView.value = on
+        prefs.edit { putBoolean(KEY_FULL_SCREEN_VIEW, on) }
+    }
+
+    fun setFullScreenButton(place: FloatingButtonPlace) {
+        _fullScreenButton.value = place
+        prefs.edit {
+            putBoolean(KEY_FULL_SCREEN_BUTTON_AT_END, place.atEnd)
+            putFloat(KEY_FULL_SCREEN_BUTTON_HEIGHT, place.height)
+        }
+    }
+
+    fun setAnimations(on: Boolean) {
+        _animations.value = on
+        prefs.edit { putBoolean(KEY_ANIMATIONS, on) }
+    }
+
+    fun setGenieEffect(on: Boolean) {
+        _genieEffect.value = on
+        prefs.edit { putBoolean(KEY_GENIE_EFFECT, on) }
     }
 
     fun setBarsLayout(layout: BarsLayout) {
@@ -450,6 +504,11 @@ class DejavuSettings private constructor(context: Context) {
         private const val KEY_MORE_MENU_ROWS = "more_menu_rows"
         private const val KEY_MORE_MENU_EDIT_HIDDEN = "more_menu_edit_hidden"
         private const val KEY_SYSTEM_BARS_HIDDEN = "system_bars_hidden"
+        private const val KEY_FULL_SCREEN_VIEW = "full_screen_view"
+        private const val KEY_FULL_SCREEN_BUTTON_AT_END = "full_screen_button_at_end"
+        private const val KEY_FULL_SCREEN_BUTTON_HEIGHT = "full_screen_button_height"
+        private const val KEY_ANIMATIONS = "animations"
+        private const val KEY_GENIE_EFFECT = "genie_effect"
         private const val KEY_BARS_LAYOUT = "bars_layout"
         private const val KEY_HOME_SEARCH_AT_BOTTOM = "home_search_at_bottom"
         private const val KEY_ADDRESS_BAR_START = "address_bar_start"

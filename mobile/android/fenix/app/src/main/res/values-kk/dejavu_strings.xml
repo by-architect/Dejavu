@@ -586,4 +586,11 @@
     <string name="dejavu_sidebery_exported">Sidebery үшін сақталды</string>
     <string name="dejavu_sidebery_export_failed">Файлды сақтау мүмкін болмады. Қайталап көріңіз.</string>
     <string name="dejavu_sidebery_bad_file">Бұл файл Sidebery снапшоты немесе сақтық көшірмесі емес.</string>
+    <string name="dejavu_menu_full_screen">Толық экран</string>
+    <string name="dejavu_menu_exit_full_screen">Толық экраннан шығу</string>
+    <string name="dejavu_settings_animations">Анимациялар</string>
+    <string name="dejavu_settings_all_animations">Барлық анимациялар</string>
+    <string name="dejavu_settings_all_animations_summary">Мәзірлер, беттер мен батырмалар ашылып-жабылғанда қозғалады. Сөндірілгенде олар бірден көрсетіледі.</string>
+    <string name="dejavu_settings_genie_effect">Жын әсері</string>
+    <string name="dejavu_settings_genie_effect_summary">Бетбелгілер, шолу тарихы, жүктемелер, баптаулар және есептік жазбаңыз басты беттегі батырмаларынан ағып шығып, қайта кіреді.</string>
 </resources>

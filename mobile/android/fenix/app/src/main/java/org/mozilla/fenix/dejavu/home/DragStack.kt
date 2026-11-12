@@ -69,6 +69,7 @@ import kotlinx.coroutines.joinAll
 import kotlinx.coroutines.launch
 import mozilla.components.ui.icons.R as iconsR
 import org.mozilla.fenix.R
+import org.mozilla.fenix.dejavu.ui.DejavuMotion
 
 /** How many rows above and below the long-pressed one go into the stack. */
 internal const val MAX_STACK_DEPTH = 2
@@ -225,7 +226,7 @@ internal class DragStackState(private val scope: CoroutineScope) {
             repeat(LIFT_START_FRAMES) { withFrameNanos { } }
             lifted.forEach { card ->
                 launch {
-                    delay(STAGGER_MS * card.depth)
+                    if (DejavuMotion.animates) delay(STAGGER_MS * card.depth)
                     card.lift.animateTo(1f, LiftSpring)
                 }
             }

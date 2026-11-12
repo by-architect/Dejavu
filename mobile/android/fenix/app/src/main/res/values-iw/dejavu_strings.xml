@@ -594,4 +594,11 @@
     <string name="dejavu_sidebery_exported">נשמר עבור Sidebery</string>
     <string name="dejavu_sidebery_export_failed">לא ניתן לשמור את הקובץ. נא לנסות שוב.</string>
     <string name="dejavu_sidebery_bad_file">הקובץ הזה אינו תמונת מצב או גיבוי של Sidebery.</string>
+    <string name="dejavu_menu_full_screen">מסך מלא</string>
+    <string name="dejavu_menu_exit_full_screen">יציאה ממסך מלא</string>
+    <string name="dejavu_settings_animations">הנפשות</string>
+    <string name="dejavu_settings_all_animations">כל ההנפשות</string>
+    <string name="dejavu_settings_all_animations_summary">תפריטים, דפים וכפתורים זזים כשהם נפתחים ונסגרים. כשהאפשרות כבויה, הם מופיעים מיד.</string>
+    <string name="dejavu_settings_genie_effect">אפקט ג׳יני</string>
+    <string name="dejavu_settings_genie_effect_summary">סימניות, היסטוריה, הורדות, הגדרות והחשבון שלך זורמים החוצה מהכפתורים שלהם בדף הבית וחוזרים אליהם.</string>
 </resources>

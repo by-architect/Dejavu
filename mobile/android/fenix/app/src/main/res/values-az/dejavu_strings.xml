@@ -586,4 +586,11 @@
     <string name="dejavu_sidebery_exported">Sidebery üçün saxlanıldı</string>
     <string name="dejavu_sidebery_export_failed">Fayl saxlanıla bilmədi. Yenidən cəhd edin.</string>
     <string name="dejavu_sidebery_bad_file">Bu fayl Sidebery snapshot-u və ya ehtiyat nüsxəsi deyil.</string>
+    <string name="dejavu_menu_full_screen">Tam ekran</string>
+    <string name="dejavu_menu_exit_full_screen">Tam ekrandan çıx</string>
+    <string name="dejavu_settings_animations">Animasiyalar</string>
+    <string name="dejavu_settings_all_animations">Bütün animasiyalar</string>
+    <string name="dejavu_settings_all_animations_summary">Menyular, səhifələr və düymələr açılıb bağlanarkən hərəkət edir. Söndürüldükdə dərhal görünürlər.</string>
+    <string name="dejavu_settings_genie_effect">Cin effekti</string>
+    <string name="dejavu_settings_genie_effect_summary">Əlfəcinlər, tarixçə, endirmələr, tənzimləmələr və hesabınız ana səhifədəki düymələrindən axıb çıxır və geri qayıdır.</string>
 </resources>

@@ -602,4 +602,11 @@
     <string name="dejavu_sidebery_exported">Air a shàbhaladh airson Sidebery</string>
     <string name="dejavu_sidebery_export_failed">Cha b’ urrainn dhuinn am faidhle a shàbhaladh. Feuch ris a-rithist.</string>
     <string name="dejavu_sidebery_bad_file">Chan e dealbh-làithreach no lethbhreac-glèidhidh de Sidebery a th’ san fhaidhle seo.</string>
+    <string name="dejavu_menu_full_screen">Làn-sgrìn</string>
+    <string name="dejavu_menu_exit_full_screen">Fàg an làn-sgrìn</string>
+    <string name="dejavu_settings_animations">Beòthachaidhean</string>
+    <string name="dejavu_settings_all_animations">Gach beòthachadh</string>
+    <string name="dejavu_settings_all_animations_summary">Gluaisidh clàran-taghaidh, duilleagan is putanan nuair a dh’fhosglas is a dhùineas iad. Nuair a bhios seo dheth, nochdaidh iad sa bhad.</string>
+    <string name="dejavu_settings_genie_effect">Èifeachd genie</string>
+    <string name="dejavu_settings_genie_effect_summary">Dòirtidh comharran-lìn, an eachdraidh, luchdaidhean a-nuas, roghainnean is an cunntas agad a-mach às na putanan aca air an duilleag dachaigh agus air ais.</string>
 </resources>

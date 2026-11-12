@@ -586,4 +586,11 @@
     <string name="dejavu_sidebery_exported">Sidebery ପାଇଁ ସଞ୍ଚୟ ହେଲା</string>
     <string name="dejavu_sidebery_export_failed">ଫାଇଲ ସଞ୍ଚୟ ହୋଇପାରିଲା ନାହିଁ। ପୁଣି ଚେଷ୍ଟା କରନ୍ତୁ।</string>
     <string name="dejavu_sidebery_bad_file">ଏହି ଫାଇଲ Sidebery ର ସ୍ନାପସଟ୍ କିମ୍ବା ବ୍ୟାକଅପ୍ ନୁହେଁ।</string>
+    <string name="dejavu_menu_full_screen">ପୂର୍ଣ୍ଣ ସ୍କ୍ରିନ୍</string>
+    <string name="dejavu_menu_exit_full_screen">ପୂର୍ଣ୍ଣ ସ୍କ୍ରିନ୍‌ରୁ ବାହାରନ୍ତୁ</string>
+    <string name="dejavu_settings_animations">ଆନିମେସନ୍</string>
+    <string name="dejavu_settings_all_animations">ସମସ୍ତ ଆନିମେସନ୍</string>
+    <string name="dejavu_settings_all_animations_summary">ମେନୁ, ପୃଷ୍ଠା ଏବଂ ବଟନ୍ ଖୋଲିବା ଓ ବନ୍ଦ ହେବା ସମୟରେ ଗତି କରନ୍ତି। ବନ୍ଦ ଥିଲେ ସେଗୁଡ଼ିକ ତୁରନ୍ତ ଦେଖାଯାଏ।</string>
+    <string name="dejavu_settings_genie_effect">ଜିନି ପ୍ରଭାବ</string>
+    <string name="dejavu_settings_genie_effect_summary">ବୁକମାର୍କ, ଇତିହାସ, ଡାଉନଲୋଡ୍, ସେଟିଂସମୂହ ଏବଂ ଆପଣଙ୍କ ଆକାଉଣ୍ଟ ହୋମ୍ ପୃଷ୍ଠାରେ ସେମାନଙ୍କ ବଟନ୍‌ରୁ ବାହାରି ପୁଣି ଫେରିଯାଆନ୍ତି।</string>
 </resources>

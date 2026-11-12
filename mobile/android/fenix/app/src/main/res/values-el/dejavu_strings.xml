@@ -586,4 +586,11 @@
     <string name="dejavu_sidebery_exported">Αποθηκεύτηκε για το Sidebery</string>
     <string name="dejavu_sidebery_export_failed">Δεν ήταν δυνατή η αποθήκευση του αρχείου. Δοκιμάστε ξανά.</string>
     <string name="dejavu_sidebery_bad_file">Αυτό το αρχείο δεν είναι στιγμιότυπο ούτε αντίγραφο ασφαλείας του Sidebery.</string>
+    <string name="dejavu_menu_full_screen">Πλήρης οθόνη</string>
+    <string name="dejavu_menu_exit_full_screen">Έξοδος από πλήρη οθόνη</string>
+    <string name="dejavu_settings_animations">Εφέ κίνησης</string>
+    <string name="dejavu_settings_all_animations">Όλα τα εφέ κίνησης</string>
+    <string name="dejavu_settings_all_animations_summary">Τα μενού, οι σελίδες και τα κουμπιά κινούνται καθώς ανοίγουν και κλείνουν. Όταν είναι απενεργοποιημένα, εμφανίζονται αμέσως.</string>
+    <string name="dejavu_settings_genie_effect">Εφέ τζίνι</string>
+    <string name="dejavu_settings_genie_effect_summary">Οι σελιδοδείκτες, το ιστορικό, οι λήψεις, οι ρυθμίσεις και ο λογαριασμός σας ξεχύνονται από τα κουμπιά τους στην αρχική σελίδα και επιστρέφουν σε αυτά.</string>
 </resources>

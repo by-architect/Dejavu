@@ -578,4 +578,11 @@
     <string name="dejavu_sidebery_exported">lipu li awen tawa Sidebery</string>
     <string name="dejavu_sidebery_export_failed">lipu li ken ala awen. o pali sin.</string>
     <string name="dejavu_sidebery_bad_file">lipu ni li sitelen tenpo ala li awen ala pi ilo Sidebery.</string>
+    <string name="dejavu_menu_full_screen">lukin suli</string>
+    <string name="dejavu_menu_exit_full_screen">o pini e lukin suli</string>
+    <string name="dejavu_settings_animations">tawa sitelen</string>
+    <string name="dejavu_settings_all_animations">tawa sitelen ale</string>
+    <string name="dejavu_settings_all_animations_summary">lipu en nena li tawa lon tenpo open en tenpo pini. ni li weka la ona li lon kepeken tenpo ala.</string>
+    <string name="dejavu_settings_genie_effect">tawa pi jan wawa</string>
+    <string name="dejavu_settings_genie_effect_summary">lipu awen en lukin pini lipu en jo lipu en nasin ilo en nimi sina li tawa tan nena ona lon lipu tomo li kama sin.</string>
 </resources>

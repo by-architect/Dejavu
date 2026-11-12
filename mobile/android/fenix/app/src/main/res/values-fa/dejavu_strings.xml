@@ -586,4 +586,11 @@
     <string name="dejavu_sidebery_exported">برای Sidebery ذخیره شد</string>
     <string name="dejavu_sidebery_export_failed">پرونده ذخیره نشد. دوباره تلاش کنید.</string>
     <string name="dejavu_sidebery_bad_file">این پرونده نمای لحظه‌ای یا پشتیبان Sidebery نیست.</string>
+    <string name="dejavu_menu_full_screen">تمام‌صفحه</string>
+    <string name="dejavu_menu_exit_full_screen">خروج از تمام‌صفحه</string>
+    <string name="dejavu_settings_animations">پویانمایی‌ها</string>
+    <string name="dejavu_settings_all_animations">همهٔ پویانمایی‌ها</string>
+    <string name="dejavu_settings_all_animations_summary">منوها، صفحه‌ها و دکمه‌ها هنگام باز و بسته شدن حرکت می‌کنند. وقتی خاموش باشد، فوراً نمایش داده می‌شوند.</string>
+    <string name="dejavu_settings_genie_effect">جلوهٔ جن</string>
+    <string name="dejavu_settings_genie_effect_summary">نشانک‌ها، تاریخچه، دانلودها، تنظیمات و حساب شما از دکمه‌هایشان در صفحهٔ اصلی بیرون می‌ریزند و برمی‌گردند.</string>
 </resources>

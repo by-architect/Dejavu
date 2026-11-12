@@ -578,4 +578,11 @@
     <string name="dejavu_sidebery_exported">Disimpen pikeun Sidebery</string>
     <string name="dejavu_sidebery_export_failed">Berkas teu bisa disimpen. Cobaan deui.</string>
     <string name="dejavu_sidebery_bad_file">Berkas ieu lain snapshot atawa cadangan Sidebery.</string>
+    <string name="dejavu_menu_full_screen">Layar pinuh</string>
+    <string name="dejavu_menu_exit_full_screen">Kaluar tina layar pinuh</string>
+    <string name="dejavu_settings_animations">Animasi</string>
+    <string name="dejavu_settings_all_animations">Sakabéh animasi</string>
+    <string name="dejavu_settings_all_animations_summary">Menu, kaca, jeung tombol ngagerak waktu dibuka jeung ditutup. Lamun dipareuman, éta langsung némbongan.</string>
+    <string name="dejavu_settings_genie_effect">Éfék jin</string>
+    <string name="dejavu_settings_genie_effect_summary">Markah, jujutan, undeuran, setélan, jeung akun anjeun ngocor kaluar tina tombolna di home page tuluy balik deui.</string>
 </resources>

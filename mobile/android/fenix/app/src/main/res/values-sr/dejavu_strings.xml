@@ -594,4 +594,11 @@
     <string name="dejavu_sidebery_exported">Сачувано за Sidebery</string>
     <string name="dejavu_sidebery_export_failed">Чување датотеке није успело. Покушајте поново.</string>
     <string name="dejavu_sidebery_bad_file">Ова датотека није Sidebery снимак ни резервна копија.</string>
+    <string name="dejavu_menu_full_screen">Цео екран</string>
+    <string name="dejavu_menu_exit_full_screen">Изађи из целог екрана</string>
+    <string name="dejavu_settings_animations">Анимације</string>
+    <string name="dejavu_settings_all_animations">Све анимације</string>
+    <string name="dejavu_settings_all_animations_summary">Менији, странице и дугмад се померају док се отварају и затварају. Када је искључено, одмах се појављују.</string>
+    <string name="dejavu_settings_genie_effect">Ефекат џина</string>
+    <string name="dejavu_settings_genie_effect_summary">Обележивачи, историја, преузимања, подешавања и ваш налог изливају се из својих дугмади на почетној страници и враћају се назад.</string>
 </resources>

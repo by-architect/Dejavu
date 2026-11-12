@@ -586,4 +586,11 @@
     <string name="dejavu_sidebery_exported">Natipigan para sa Sidebery</string>
     <string name="dejavu_sidebery_export_failed">Indi matipigan ang file. Tilawi liwat.</string>
     <string name="dejavu_sidebery_bad_file">Ini nga file indi snapshot ukon backup sang Sidebery.</string>
+    <string name="dejavu_menu_full_screen">Bug-os nga screen</string>
+    <string name="dejavu_menu_exit_full_screen">Maggwa sa bug-os nga screen</string>
+    <string name="dejavu_settings_animations">Mga animasyon</string>
+    <string name="dejavu_settings_all_animations">Tanan nga animasyon</string>
+    <string name="dejavu_settings_all_animations_summary">Ang mga menu, pahina kag button nagahulag samtang nagabukas kag nagasira. Kon ginpatay, nagapakita dayon sila.</string>
+    <string name="dejavu_settings_genie_effect">Epekto sang genie</string>
+    <string name="dejavu_settings_genie_effect_summary">Ang mga bookmark, kasaysayan, download, setting kag imo account nagailig pagwa sa ila mga button sa home page kag nagabalik.</string>
 </resources>

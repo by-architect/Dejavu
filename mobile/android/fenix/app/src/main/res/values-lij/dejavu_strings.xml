@@ -586,4 +586,11 @@
     <string name="dejavu_sidebery_exported">Sarvou pe Sidebery</string>
     <string name="dejavu_sidebery_export_failed">No s’é posciuo sarvâ o schedaio. Preuva torna.</string>
     <string name="dejavu_sidebery_bad_file">Sto schedaio o no l’é un’istantania ni unna copia de seguessa de Sidebery.</string>
+    <string name="dejavu_menu_full_screen">A tutto schermo</string>
+    <string name="dejavu_menu_exit_full_screen">Sciorti da tutto schermo</string>
+    <string name="dejavu_settings_animations">Animaçioin</string>
+    <string name="dejavu_settings_all_animations">Tutte e animaçioin</string>
+    <string name="dejavu_settings_all_animations_summary">I menû, e pagine e i pomelli se mescian quande s\'arvan e se særan. Se dizativæ, compaiscian subito.</string>
+    <string name="dejavu_settings_genie_effect">Efetto genio</string>
+    <string name="dejavu_settings_genie_effect_summary">Segnalibbri, stöia, descaregamenti, inpostaçioin e o teu conto sciortan da-i seu pomelli inta pagina prinçipâ e ghe tornan.</string>
 </resources>

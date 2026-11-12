@@ -578,4 +578,11 @@
     <string name="dejavu_sidebery_exported">Sidebery용으로 저장했습니다</string>
     <string name="dejavu_sidebery_export_failed">파일을 저장할 수 없습니다. 다시 시도하세요.</string>
     <string name="dejavu_sidebery_bad_file">이 파일은 Sidebery 스냅샷이나 백업이 아닙니다.</string>
+    <string name="dejavu_menu_full_screen">전체 화면</string>
+    <string name="dejavu_menu_exit_full_screen">전체 화면 종료</string>
+    <string name="dejavu_settings_animations">애니메이션</string>
+    <string name="dejavu_settings_all_animations">모든 애니메이션</string>
+    <string name="dejavu_settings_all_animations_summary">메뉴, 페이지, 버튼이 열리고 닫힐 때 움직입니다. 끄면 바로 표시됩니다.</string>
+    <string name="dejavu_settings_genie_effect">지니 효과</string>
+    <string name="dejavu_settings_genie_effect_summary">북마크, 기록, 다운로드, 설정, 계정이 홈 화면의 버튼에서 흘러나왔다가 다시 들어갑니다.</string>
 </resources>

@@ -578,4 +578,11 @@
     <string name="dejavu_sidebery_exported">បានរក្សាទុកសម្រាប់ Sidebery</string>
     <string name="dejavu_sidebery_export_failed">មិនអាចរក្សាទុកឯកសារបានទេ។ សូមព្យាយាមម្ដងទៀត។</string>
     <string name="dejavu_sidebery_bad_file">ឯកសារនេះមិនមែនជារូបថត ឬការបម្រុងទុករបស់ Sidebery ទេ។</string>
+    <string name="dejavu_menu_full_screen">ពេញអេក្រង់</string>
+    <string name="dejavu_menu_exit_full_screen">ចាកចេញពីពេញអេក្រង់</string>
+    <string name="dejavu_settings_animations">ចលនា</string>
+    <string name="dejavu_settings_all_animations">ចលនាទាំងអស់</string>
+    <string name="dejavu_settings_all_animations_summary">ម៉ឺនុយ ទំព័រ និងប៊ូតុងផ្លាស់ទីពេលបើក និងបិទ។ ពេលបិទមុខងារនេះ វានឹងបង្ហាញភ្លាមៗ។</string>
+    <string name="dejavu_settings_genie_effect">បែបផែនជីនី</string>
+    <string name="dejavu_settings_genie_effect_summary">ចំណាំ ប្រវត្តិ ទាញយក ការកំណត់ និងគណនីរបស់អ្នក ហូរចេញពីប៊ូតុងរបស់វានៅលើទំព័រដើម ហើយត្រឡប់ចូលវិញ។</string>
 </resources>

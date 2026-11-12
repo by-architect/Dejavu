@@ -4,7 +4,6 @@
 
 package org.mozilla.fenix.dejavu.features
 
-import android.animation.ValueAnimator
 import android.content.Context
 import android.graphics.BitmapFactory
 import android.graphics.Color
@@ -86,6 +85,7 @@ import org.mozilla.fenix.R
 import org.mozilla.fenix.dejavu.settings.workspaceRepository
 import org.mozilla.fenix.dejavu.ui.DejavuButtonStyle
 import org.mozilla.fenix.dejavu.ui.DejavuDialogButton
+import org.mozilla.fenix.dejavu.ui.DejavuMotion
 import org.mozilla.fenix.dejavu.ui.DejavuPopup
 import org.mozilla.fenix.dejavu.ui.LocalPopupTheme
 import org.mozilla.fenix.dejavu.ui.WordFittedText
@@ -488,8 +488,9 @@ private fun FeatureAnimation(@RawRes animation: Int, playing: Boolean, modifier:
 }
 
 private fun decodeAnimation(context: Context, @RawRes animation: Int): Drawable? = runCatching {
-    // With animations turned off in the system settings, the first frame stands still instead, as WebP ignores them.
-    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.P && ValueAnimator.areAnimatorsEnabled()) {
+    // With animations turned off, in the system settings or in Customize, the first frame stands still instead, as WebP
+    // ignores them.
+    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.P && DejavuMotion.animates) {
         ImageDecoder.decodeDrawable(ImageDecoder.createSource(context.resources, animation)).also {
             (it as? AnimatedImageDrawable)?.repeatCount = AnimatedImageDrawable.REPEAT_INFINITE
         }

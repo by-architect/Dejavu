@@ -602,4 +602,11 @@
     <string name="dejavu_sidebery_exported">Uloženo pro Sidebery</string>
     <string name="dejavu_sidebery_export_failed">Soubor se nepodařilo uložit. Zkuste to znovu.</string>
     <string name="dejavu_sidebery_bad_file">Tento soubor není snímek ani záloha Sidebery.</string>
+    <string name="dejavu_menu_full_screen">Celá obrazovka</string>
+    <string name="dejavu_menu_exit_full_screen">Ukončit režim celé obrazovky</string>
+    <string name="dejavu_settings_animations">Animace</string>
+    <string name="dejavu_settings_all_animations">Všechny animace</string>
+    <string name="dejavu_settings_all_animations_summary">Nabídky, stránky a tlačítka se při otevírání a zavírání pohybují. Když je vypnuto, zobrazí se hned.</string>
+    <string name="dejavu_settings_genie_effect">Efekt džina</string>
+    <string name="dejavu_settings_genie_effect_summary">Záložky, historie, stahování, nastavení a váš účet se vylévají ze svých tlačítek na domovské stránce a zase se do nich vracejí.</string>
 </resources>

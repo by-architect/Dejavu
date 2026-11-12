@@ -586,4 +586,11 @@
     <string name="dejavu_sidebery_exported">Sideberyrentzat gordeta</string>
     <string name="dejavu_sidebery_export_failed">Ezin izan da fitxategia gorde. Saiatu berriro.</string>
     <string name="dejavu_sidebery_bad_file">Fitxategi hau ez da Sideberyren argazkia edo babeskopia.</string>
+    <string name="dejavu_menu_full_screen">Pantaila osoa</string>
+    <string name="dejavu_menu_exit_full_screen">Irten pantaila osotik</string>
+    <string name="dejavu_settings_animations">Animazioak</string>
+    <string name="dejavu_settings_all_animations">Animazio guztiak</string>
+    <string name="dejavu_settings_all_animations_summary">Menuak, orriak eta botoiak mugitu egiten dira irekitzean eta ixtean. Desaktibatuta, berehala agertzen dira.</string>
+    <string name="dejavu_settings_genie_effect">Jeinu efektua</string>
+    <string name="dejavu_settings_genie_effect_summary">Laster-markak, historia, deskargak, ezarpenak eta zure kontua hasierako orriko beren botoietatik isurtzen dira eta itzuli egiten dira.</string>
 </resources>

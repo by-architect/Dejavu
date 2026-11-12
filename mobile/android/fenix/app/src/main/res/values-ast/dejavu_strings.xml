@@ -586,4 +586,11 @@
     <string name="dejavu_sidebery_exported">Guardóse pa Sidebery</string>
     <string name="dejavu_sidebery_export_failed">Nun se pudo guardar el ficheru. Volvi tentalo.</string>
     <string name="dejavu_sidebery_bad_file">Esti ficheru nun ye una instantánea nin una copia de seguranza de Sidebery.</string>
+    <string name="dejavu_menu_full_screen">Pantalla completa</string>
+    <string name="dejavu_menu_exit_full_screen">Colar de la pantalla completa</string>
+    <string name="dejavu_settings_animations">Animaciones</string>
+    <string name="dejavu_settings_all_animations">Toles animaciones</string>
+    <string name="dejavu_settings_all_animations_summary">Los menús, les páxines y los botones muévense al abrise y zarrase. Desactivaes, apaecen darréu.</string>
+    <string name="dejavu_settings_genie_effect">Efeutu xeniu</string>
+    <string name="dejavu_settings_genie_effect_summary">Los marcadores, l\'historial, les descargues, la configuración y la to cuenta salen de los sos botones na pantalla d\'aniciu y vuelven a ellos.</string>
 </resources>

@@ -602,4 +602,11 @@
     <string name="dejavu_sidebery_exported">Spamiyntano dlo Sidebery</string>
     <string name="dejavu_sidebery_export_failed">Niy szło spamiyntać zbioru. Sprōbuj zaś.</string>
     <string name="dejavu_sidebery_bad_file">Tyn zbiōr niy ma migawkōm ani kopijōm zapasowōm Sidebery.</string>
+    <string name="dejavu_menu_full_screen">Połny ekran</string>
+    <string name="dejavu_menu_exit_full_screen">Wyjdź z połnego ekranu</string>
+    <string name="dejavu_settings_animations">Animacyje</string>
+    <string name="dejavu_settings_all_animations">Wszyjske animacyje</string>
+    <string name="dejavu_settings_all_animations_summary">Menu, zajty i knefle ruszajōm sie, jak sie ôtwiyrajōm i zawiyrajōm. Po wyłōnczyniu pokazujōm sie ôd razu.</string>
+    <string name="dejavu_settings_genie_effect">Efekt dżina</string>
+    <string name="dejavu_settings_genie_effect_summary">Zokłodki, historyjo, pobrania, sztalōnki i twoje kōnto wylywajōm sie ze swojich knefli na strōnie dōm i wracajōm.</string>
 </resources>

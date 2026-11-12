@@ -578,4 +578,11 @@
     <string name="dejavu_sidebery_exported">Sidebery အတွက် သိမ်းပြီး</string>
     <string name="dejavu_sidebery_export_failed">ဖိုင်ကို မသိမ်းနိုင်ပါ။ ထပ်စမ်းကြည့်ပါ။</string>
     <string name="dejavu_sidebery_bad_file">ဤဖိုင်သည် Sidebery ၏ snapshot သို့မဟုတ် backup မဟုတ်ပါ။</string>
+    <string name="dejavu_menu_full_screen">မျက်နှာပြင်အပြည့်</string>
+    <string name="dejavu_menu_exit_full_screen">မျက်နှာပြင်အပြည့်မှ ထွက်ရန်</string>
+    <string name="dejavu_settings_animations">လှုပ်ရှားသက်ဝင်ပုံများ</string>
+    <string name="dejavu_settings_all_animations">လှုပ်ရှားသက်ဝင်ပုံ အားလုံး</string>
+    <string name="dejavu_settings_all_animations_summary">မီနူးများ၊ စာမျက်နှာများနှင့် ခလုတ်များသည် ဖွင့်ပိတ်သည့်အခါ လှုပ်ရှားသည်။ ပိတ်ထားလျှင် ချက်ချင်း ပေါ်လာသည်။</string>
+    <string name="dejavu_settings_genie_effect">ဂျီနီ အကျိုးသက်ရောက်မှု</string>
+    <string name="dejavu_settings_genie_effect_summary">စာမှတ်များ၊ မှတ်တမ်း၊ ဆွဲချချက်များ၊ အပြင်အဆင်များနှင့် သင့်အကောင့်သည် ပင်မစာမျက်နှာရှိ ၎င်းတို့၏ခလုတ်များမှ စီးထွက်လာပြီး ပြန်ဝင်သွားသည်။</string>
 </resources>

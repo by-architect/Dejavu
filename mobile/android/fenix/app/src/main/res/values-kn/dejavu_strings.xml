@@ -586,4 +586,11 @@
     <string name="dejavu_sidebery_exported">Sidebery ಗಾಗಿ ಉಳಿಸಲಾಗಿದೆ</string>
     <string name="dejavu_sidebery_export_failed">ಫೈಲ್ ಉಳಿಸಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ. ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ.</string>
     <string name="dejavu_sidebery_bad_file">ಈ ಫೈಲ್ Sidebery ಯ ಸ್ನ್ಯಾಪ್‌ಶಾಟ್ ಅಥವಾ ಬ್ಯಾಕಪ್ ಅಲ್ಲ.</string>
+    <string name="dejavu_menu_full_screen">ಪೂರ್ಣ ಪರದೆ</string>
+    <string name="dejavu_menu_exit_full_screen">ಪೂರ್ಣ ಪರದೆಯಿಂದ ನಿರ್ಗಮಿಸಿ</string>
+    <string name="dejavu_settings_animations">ಅನಿಮೇಷನ್‌ಗಳು</string>
+    <string name="dejavu_settings_all_animations">ಎಲ್ಲಾ ಅನಿಮೇಷನ್‌ಗಳು</string>
+    <string name="dejavu_settings_all_animations_summary">ಮೆನುಗಳು, ಪುಟಗಳು ಮತ್ತು ಬಟನ್‌ಗಳು ತೆರೆಯುವಾಗ ಮತ್ತು ಮುಚ್ಚುವಾಗ ಚಲಿಸುತ್ತವೆ. ಆಫ್ ಮಾಡಿದಾಗ, ಅವು ತಕ್ಷಣ ಕಾಣಿಸುತ್ತವೆ.</string>
+    <string name="dejavu_settings_genie_effect">ಜಿನೀ ಪರಿಣಾಮ</string>
+    <string name="dejavu_settings_genie_effect_summary">ಬುಕ್‌ಮಾರ್ಕ್‌ಗಳು, ಇತಿಹಾಸ, ಡೌನ್‌ಲೋಡ್‌ಗಳು, ಸಿದ್ಧತೆಗಳು ಮತ್ತು ನಿಮ್ಮ ಖಾತೆ ಮುಖಪುಟದಲ್ಲಿನ ಅವುಗಳ ಬಟನ್‌ಗಳಿಂದ ಹರಿದು ಹೊರಬಂದು ಮತ್ತೆ ಒಳಗೆ ಹೋಗುತ್ತವೆ.</string>
 </resources>

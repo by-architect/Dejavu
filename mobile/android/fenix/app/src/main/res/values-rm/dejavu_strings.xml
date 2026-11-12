@@ -586,4 +586,11 @@
     <string name="dejavu_sidebery_exported">Memorisà per Sidebery</string>
     <string name="dejavu_sidebery_export_failed">Impussibel da memorisar la datoteca. Emprova anc ina giada.</string>
     <string name="dejavu_sidebery_bad_file">Questa datoteca n’è nagin maletg instantan e nagina copia da segirezza da Sidebery.</string>
+    <string name="dejavu_menu_full_screen">Maletg entir</string>
+    <string name="dejavu_menu_exit_full_screen">Bandunar il maletg entir</string>
+    <string name="dejavu_settings_animations">Animaziuns</string>
+    <string name="dejavu_settings_all_animations">Tut las animaziuns</string>
+    <string name="dejavu_settings_all_animations_summary">Menus, paginas e buttuns sa movan cura ch\'els vegnan averts e serrads. Deactivà, cumparan els immediat.</string>
+    <string name="dejavu_settings_genie_effect">Effect dal spiert</string>
+    <string name="dejavu_settings_genie_effect_summary">Segnapaginas, cronologia, telechargiadas, parameters e tes conto curran or da lur buttuns sin la pagina da partenza e turnan enavos.</string>
 </resources>

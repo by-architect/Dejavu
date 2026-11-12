@@ -602,4 +602,11 @@
     <string name="dejavu_sidebery_exported">Įrašyta Sidebery</string>
     <string name="dejavu_sidebery_export_failed">Nepavyko įrašyti failo. Bandykite dar kartą.</string>
     <string name="dejavu_sidebery_bad_file">Šis failas nėra Sidebery momentinė kopija ar atsarginė kopija.</string>
+    <string name="dejavu_menu_full_screen">Visas ekranas</string>
+    <string name="dejavu_menu_exit_full_screen">Išeiti iš viso ekrano</string>
+    <string name="dejavu_settings_animations">Animacijos</string>
+    <string name="dejavu_settings_all_animations">Visos animacijos</string>
+    <string name="dejavu_settings_all_animations_summary">Meniu, puslapiai ir mygtukai juda atsidarydami ir užsidarydami. Išjungus jie parodomi iškart.</string>
+    <string name="dejavu_settings_genie_effect">Džino efektas</string>
+    <string name="dejavu_settings_genie_effect_summary">Adresynas, žurnalas, atsiuntimai, nuostatos ir jūsų paskyra išsilieja iš savo mygtukų pradžios puslapyje ir sugrįžta atgal.</string>
 </resources>

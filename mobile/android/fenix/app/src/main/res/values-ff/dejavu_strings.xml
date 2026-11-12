@@ -586,4 +586,11 @@
     <string name="dejavu_sidebery_exported">Enregistré pour Sidebery</string>
     <string name="dejavu_sidebery_export_failed">Impossible d’enregistrer le fichier. Veuillez réessayer.</string>
     <string name="dejavu_sidebery_bad_file">Ce fichier n’est ni un instantané ni une sauvegarde de Sidebery.</string>
+    <string name="dejavu_menu_full_screen">Plein écran</string>
+    <string name="dejavu_menu_exit_full_screen">Quitter le plein écran</string>
+    <string name="dejavu_settings_animations">Animations</string>
+    <string name="dejavu_settings_all_animations">Toutes les animations</string>
+    <string name="dejavu_settings_all_animations_summary">Les menus, les pages et les boutons bougent en s\'ouvrant et en se fermant. Sans animations, ils apparaissent tout de suite.</string>
+    <string name="dejavu_settings_genie_effect">Effet génie</string>
+    <string name="dejavu_settings_genie_effect_summary">Les signets, l\'historique, les téléchargements, les paramètres et votre compte jaillissent de leurs boutons sur la page d\'accueil et y retournent.</string>
 </resources>

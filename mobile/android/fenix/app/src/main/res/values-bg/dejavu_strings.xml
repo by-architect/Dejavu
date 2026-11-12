@@ -586,4 +586,11 @@
     <string name="dejavu_sidebery_exported">Запазено за Sidebery</string>
     <string name="dejavu_sidebery_export_failed">Файлът не можа да бъде запазен. Опитайте отново.</string>
     <string name="dejavu_sidebery_bad_file">Този файл не е снимка или резервно копие на Sidebery.</string>
+    <string name="dejavu_menu_full_screen">Цял екран</string>
+    <string name="dejavu_menu_exit_full_screen">Изход от цял екран</string>
+    <string name="dejavu_settings_animations">Анимации</string>
+    <string name="dejavu_settings_all_animations">Всички анимации</string>
+    <string name="dejavu_settings_all_animations_summary">Менютата, страниците и бутоните се движат, когато се отварят и затварят. Когато е изключено, се показват веднага.</string>
+    <string name="dejavu_settings_genie_effect">Ефект „джин“</string>
+    <string name="dejavu_settings_genie_effect_summary">Отметките, историята, изтеглянията, настройките и профилът ви изтичат от бутоните си на началната страница и се връщат в тях.</string>
 </resources>

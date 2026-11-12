@@ -586,4 +586,11 @@
     <string name="dejavu_sidebery_exported">Yettwasekles i Sidebery</string>
     <string name="dejavu_sidebery_export_failed">Ur yezmir ara ad yettwasekles ufaylu. Ɛreḍ tikkelt-nniḍen.</string>
     <string name="dejavu_sidebery_bad_file">Afaylu-a mačči d tawlaft neɣ d aḥraz n Sidebery.</string>
+    <string name="dejavu_menu_full_screen">Agdil aččuran</string>
+    <string name="dejavu_menu_exit_full_screen">Ffeɣ seg ugdil aččuran</string>
+    <string name="dejavu_settings_animations">Animasyunin</string>
+    <string name="dejavu_settings_all_animations">Akk animasyunin</string>
+    <string name="dejavu_settings_all_animations_summary">Umuɣen, isebtar d tqeffalin ttembiwilen mi ldin d mi rgen. Ma yensa, ad d-banen imir-n.</string>
+    <string name="dejavu_settings_genie_effect">Asemdu n ujenni</string>
+    <string name="dejavu_settings_genie_effect_summary">Ticraḍ n yisebtar, azray, isidar, iɣewwaṛen d umiḍan-ik ttefɣen-d seg tqeffalin-nsen deg usebter agejdan, syin ad uɣalen.</string>
 </resources>

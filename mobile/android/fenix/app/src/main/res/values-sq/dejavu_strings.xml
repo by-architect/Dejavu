@@ -586,4 +586,11 @@
     <string name="dejavu_sidebery_exported">U ruajt për Sidebery</string>
     <string name="dejavu_sidebery_export_failed">Kartela s’u ruajt dot. Riprovoni.</string>
     <string name="dejavu_sidebery_bad_file">Kjo kartelë s’është fotografim apo kopjeruajtje e Sidebery-t.</string>
+    <string name="dejavu_menu_full_screen">Sa krejt ekrani</string>
+    <string name="dejavu_menu_exit_full_screen">Dil nga sa krejt ekrani</string>
+    <string name="dejavu_settings_animations">Animacione</string>
+    <string name="dejavu_settings_all_animations">Krejt animacionet</string>
+    <string name="dejavu_settings_all_animations_summary">Menutë, faqet dhe butonat lëvizin kur hapen dhe mbyllen. Kur është çaktivizuar, shfaqen menjëherë.</string>
+    <string name="dejavu_settings_genie_effect">Efekt xhindi</string>
+    <string name="dejavu_settings_genie_effect_summary">Faqerojtësit, historiku, shkarkimet, rregullimet dhe llogaria juaj derdhen nga butonat e tyre në faqen kreu dhe kthehen prapë.</string>
 </resources>

@@ -83,6 +83,7 @@ import mozilla.components.concept.base.images.ImageLoadRequest
 import mozilla.components.lib.state.ext.observeAsComposableState
 import org.mozilla.fenix.R
 import org.mozilla.fenix.dejavu.menu.DejavuActionsBar
+import org.mozilla.fenix.dejavu.ui.DejavuMotion
 import org.mozilla.fenix.ext.components
 import org.mozilla.fenix.theme.FirefoxTheme
 import org.mozilla.fenix.utils.Settings
@@ -312,12 +313,16 @@ internal object TabZoom {
     /**
      * The bars the browser will show for the tab with [tabId], as their layout has them, coming in from the top and
      * the bottom of the screen: [arrived] says how far, from 0 out of sight to 1 where the browser shows them. They
-     * only show what is coming, so screen readers skip them. Browsers with other bars show none.
+     * only show what is coming, so screen readers skip them. Browsers with other bars show none, and so does full
+     * screen view.
      */
     @Composable
     private fun BrowserBars(tabId: String, arrived: () -> Float) {
-        val components = LocalContext.current.components
-        if (!remember { components.settings.showsOnlyDejavuBars }) return
+        val context = LocalContext.current
+        val components = context.components
+        val dejavuBars = remember { components.settings.showsOnlyDejavuBars }
+        val fullScreen = remember { context.isFullScreenView }
+        if (!dejavuBars || fullScreen) return
         val tab by components.core.store.observeAsComposableState { it.findTab(tabId) }
         val barsTab = tab ?: return
         val layout = currentBarsLayout()
@@ -395,9 +400,14 @@ private val Rect.isShown: Boolean
  * Grows the card from the tab's row to the whole screen, as this goes from 0 to 1, and calls [open] once it is
  * [OPEN_AT] of the way: the browser starts setting itself up then, as the last frames of the growth hardly move the
  * card. Until then a frame coming after a stall moves the card on by one frame only, so the frames that first draw the
- * zoom and the browser's bars skip none of its start.
+ * zoom and the browser's bars skip none of its start. With animations off, the card fills the screen at once.
  */
 internal suspend fun Animatable<Float, AnimationVector1D>.grow(open: () -> Unit) {
+    if (!DejavuMotion.animates) {
+        snapTo(1f)
+        open()
+        return
+    }
     val duration = ZOOM_IN_MS * NANOS_PER_MS
     var played = 0L
     var opened = false
@@ -489,11 +499,15 @@ private fun joined(content: ViewGroup, shot: PageShot, other: Bitmap, place: Pix
 
 /**
  * The picture saved for the tab with [tabId] when its page loaded, placed where the browser shows the page: below the
- * status bar, and below the address bar when it is above pages.
+ * status bar, and below the address bar when it is above pages, or at the top of the screen in full screen view.
  */
 private fun savedPicture(content: ViewGroup, tabId: String, bitmap: Bitmap): PageShot {
     val bar = if (content.context.barsLayout.addressBarAtBottom) 0f else ADDRESS_BAR_HEIGHT.value
-    val pageTop = content.statusBarHeight + bar * content.resources.displayMetrics.density
+    val pageTop = if (content.context.isFullScreenView) {
+        0f
+    } else {
+        content.statusBarHeight + bar * content.resources.displayMetrics.density
+    }
     return PageShot(bitmap.asImageBitmap(), Offset(0f, pageTop), tabId, Color(bitmap.topEdgeColor()))
 }
 

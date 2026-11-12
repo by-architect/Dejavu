@@ -78,6 +78,7 @@ import org.mozilla.fenix.dejavu.home.rememberGrainBrush
 import org.mozilla.fenix.dejavu.home.veilOf
 import org.mozilla.fenix.dejavu.ui.DejavuButtonStyle
 import org.mozilla.fenix.dejavu.ui.DejavuDialogButton
+import org.mozilla.fenix.dejavu.ui.DejavuMotion
 import org.mozilla.fenix.dejavu.ui.LocalPopupTheme
 import org.mozilla.fenix.dejavu.ui.glass
 import org.mozilla.fenix.dejavu.ui.popupThemeOf
@@ -342,7 +343,7 @@ private fun PageProgress(count: Int, current: Int, modifier: Modifier = Modifier
 internal fun Modifier.rise(order: Int): Modifier {
     val shown = remember { Animatable(0f) }
     LaunchedEffect(Unit) {
-        delay(order * RISE_STEP_MS)
+        if (DejavuMotion.animates) delay(order * RISE_STEP_MS)
         shown.animateTo(1f, tween(RISE_MS, easing = FastOutSlowInEasing))
     }
     return graphicsLayer {

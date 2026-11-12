@@ -594,4 +594,11 @@
     <string name="dejavu_sidebery_exported">Guardado para o Sidebery</string>
     <string name="dejavu_sidebery_export_failed">Não foi possível guardar o ficheiro. Tente novamente.</string>
     <string name="dejavu_sidebery_bad_file">Este ficheiro não é uma captura nem uma cópia de segurança do Sidebery.</string>
+    <string name="dejavu_menu_full_screen">Ecrã completo</string>
+    <string name="dejavu_menu_exit_full_screen">Sair do ecrã completo</string>
+    <string name="dejavu_settings_animations">Animações</string>
+    <string name="dejavu_settings_all_animations">Todas as animações</string>
+    <string name="dejavu_settings_all_animations_summary">Os menus, as páginas e os botões movem-se ao abrir e fechar. Desativadas, aparecem de imediato.</string>
+    <string name="dejavu_settings_genie_effect">Efeito génio</string>
+    <string name="dejavu_settings_genie_effect_summary">Os marcadores, o histórico, as transferências, as definições e a sua conta saem dos seus botões na página inicial e voltam a entrar.</string>
 </resources>

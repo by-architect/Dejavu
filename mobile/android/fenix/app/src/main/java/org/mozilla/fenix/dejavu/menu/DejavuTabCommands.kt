@@ -71,6 +71,7 @@ internal class DejavuTabCommands(
                 components.appStore.dispatch(if (tab.readerState.active) ReaderViewDismissed else ReaderViewStarted)
             MoreMenuItem.RESTORE_CLOSED_TAB ->
                 restoreClosedTab(appContext, components, repository, private = tab.content.private)
+            MoreMenuItem.FULL_SCREEN -> settings.setFullScreenView(!settings.fullScreenView.value)
             else -> return false
         }
         return true

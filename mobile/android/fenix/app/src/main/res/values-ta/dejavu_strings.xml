@@ -586,4 +586,11 @@
     <string name="dejavu_sidebery_exported">Sidebery-க்காகச் சேமிக்கப்பட்டது</string>
     <string name="dejavu_sidebery_export_failed">கோப்பைச் சேமிக்க முடியவில்லை. மீண்டும் முயலவும்.</string>
     <string name="dejavu_sidebery_bad_file">இந்தக் கோப்பு Sidebery ஸ்னாப்ஷாட் அல்லது காப்புப்பிரதி அல்ல.</string>
+    <string name="dejavu_menu_full_screen">முழு திரை</string>
+    <string name="dejavu_menu_exit_full_screen">முழுத் திரையிலிருந்து வெளியேறு</string>
+    <string name="dejavu_settings_animations">அசைவூட்டங்கள்</string>
+    <string name="dejavu_settings_all_animations">அனைத்து அசைவூட்டங்களும்</string>
+    <string name="dejavu_settings_all_animations_summary">பட்டிகள், பக்கங்கள், பொத்தான்கள் திறக்கும்போதும் மூடும்போதும் நகரும். அணைத்தால், அவை உடனே தோன்றும்.</string>
+    <string name="dejavu_settings_genie_effect">ஜீனி விளைவு</string>
+    <string name="dejavu_settings_genie_effect_summary">புத்தகக்குறிகள், வரலாறு, பதிவிறக்கங்கள், அமைவுகள், உங்கள் கணக்கு ஆகியவை முகப்புப் பக்கத்தில் உள்ள அவற்றின் பொத்தான்களிலிருந்து வெளியே பாய்ந்து மீண்டும் உள்ளே செல்லும்.</string>
 </resources>

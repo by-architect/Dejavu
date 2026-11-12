@@ -594,4 +594,11 @@
     <string name="dejavu_sidebery_exported">Saglabāts priekš Sidebery</string>
     <string name="dejavu_sidebery_export_failed">Neizdevās saglabāt datni. Mēģiniet vēlreiz.</string>
     <string name="dejavu_sidebery_bad_file">Šī datne nav Sidebery momentuzņēmums vai rezerves kopija.</string>
+    <string name="dejavu_menu_full_screen">Pilnekrāns</string>
+    <string name="dejavu_menu_exit_full_screen">Iziet no pilnekrāna</string>
+    <string name="dejavu_settings_animations">Animācijas</string>
+    <string name="dejavu_settings_all_animations">Visas animācijas</string>
+    <string name="dejavu_settings_all_animations_summary">Izvēlnes, lapas un pogas kustas, atveroties un aizveroties. Ja izslēgts, tās parādās uzreiz.</string>
+    <string name="dejavu_settings_genie_effect">Džina efekts</string>
+    <string name="dejavu_settings_genie_effect_summary">Grāmatzīmes, vēsture, lejupielādes, iestatījumi un jūsu konts izplūst no savām pogām sākuma lapā un atgriežas atpakaļ.</string>
 </resources>

@@ -578,4 +578,11 @@
     <string name="dejavu_sidebery_exported">A ti fi pamọ́ fún Sidebery</string>
     <string name="dejavu_sidebery_export_failed">A kò lè fi fáìlì náà pamọ́. Tún gbìyànjú.</string>
     <string name="dejavu_sidebery_bad_file">Fáìlì yìí kì í ṣe snapshot tàbí ẹ̀dà ìpamọ́ Sidebery.</string>
+    <string name="dejavu_menu_full_screen">Ìwòran gbogbogbò</string>
+    <string name="dejavu_menu_exit_full_screen">Jáde kúrò nínú ìwòran gbogbogbò</string>
+    <string name="dejavu_settings_animations">Àwọn ìṣípò àwòrán</string>
+    <string name="dejavu_settings_all_animations">Gbogbo ìṣípò àwòrán</string>
+    <string name="dejavu_settings_all_animations_summary">Àwọn àtòjọ, ojú-ewé àti bọ́tìnnì máa ń gbéra nígbà tí wọ́n bá ṣí tí wọ́n sì tì. Tí ó bá wà ní pípa, wọ́n á fara hàn lẹ́sẹ̀kẹsẹ̀.</string>
+    <string name="dejavu_settings_genie_effect">Ipa àlùjànnú</string>
+    <string name="dejavu_settings_genie_effect_summary">Àwọn àmì-ìwé, ìtàn, àwọn ìgbàsílẹ̀, àwọn aatò àti àkáǹtì rẹ máa ń ṣàn jáde láti inú bọ́tìnnì wọn lórí home page, wọ́n á sì padà wọlé.</string>
 </resources>

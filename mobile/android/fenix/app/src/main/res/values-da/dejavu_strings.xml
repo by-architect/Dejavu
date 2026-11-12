@@ -586,4 +586,11 @@
     <string name="dejavu_sidebery_exported">Gemt til Sidebery</string>
     <string name="dejavu_sidebery_export_failed">Filen kunne ikke gemmes. Prøv igen.</string>
     <string name="dejavu_sidebery_bad_file">Denne fil er ikke et snapshot eller en sikkerhedskopi fra Sidebery.</string>
+    <string name="dejavu_menu_full_screen">Fuld skærm</string>
+    <string name="dejavu_menu_exit_full_screen">Afslut fuld skærm</string>
+    <string name="dejavu_settings_animations">Animationer</string>
+    <string name="dejavu_settings_all_animations">Alle animationer</string>
+    <string name="dejavu_settings_all_animations_summary">Menuer, sider og knapper bevæger sig, når de åbner og lukker. Når det er slået fra, vises de med det samme.</string>
+    <string name="dejavu_settings_genie_effect">Genie-effekt</string>
+    <string name="dejavu_settings_genie_effect_summary">Bogmærker, historik, filhentninger, indstillinger og din konto strømmer ud af deres knapper på hjemmesiden og tilbage igen.</string>
 </resources>

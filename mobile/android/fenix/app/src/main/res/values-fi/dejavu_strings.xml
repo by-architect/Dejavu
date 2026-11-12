@@ -586,4 +586,11 @@
     <string name="dejavu_sidebery_exported">Tallennettu Sideberyä varten</string>
     <string name="dejavu_sidebery_export_failed">Tiedostoa ei voitu tallentaa. Yritä uudelleen.</string>
     <string name="dejavu_sidebery_bad_file">Tämä tiedosto ei ole Sideberyn tilannevedos tai varmuuskopio.</string>
+    <string name="dejavu_menu_full_screen">Koko näyttö</string>
+    <string name="dejavu_menu_exit_full_screen">Poistu koko näytöstä</string>
+    <string name="dejavu_settings_animations">Animaatiot</string>
+    <string name="dejavu_settings_all_animations">Kaikki animaatiot</string>
+    <string name="dejavu_settings_all_animations_summary">Valikot, sivut ja painikkeet liikkuvat avautuessaan ja sulkeutuessaan. Kun asetus on pois päältä, ne näkyvät heti.</string>
+    <string name="dejavu_settings_genie_effect">Henkiefekti</string>
+    <string name="dejavu_settings_genie_effect_summary">Kirjanmerkit, historia, lataukset, asetukset ja tilisi virtaavat ulos painikkeistaan aloitussivulla ja takaisin.</string>
 </resources>

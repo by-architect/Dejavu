@@ -586,4 +586,11 @@
     <string name="dejavu_sidebery_exported">Na-save para sa Sidebery</string>
     <string name="dejavu_sidebery_export_failed">Hindi ma-save ang file. Subukan ulit.</string>
     <string name="dejavu_sidebery_bad_file">Ang file na ito ay hindi snapshot o backup ng Sidebery.</string>
+    <string name="dejavu_menu_full_screen">Full screen</string>
+    <string name="dejavu_menu_exit_full_screen">Lumabas sa full screen</string>
+    <string name="dejavu_settings_animations">Mga animation</string>
+    <string name="dejavu_settings_all_animations">Lahat ng animation</string>
+    <string name="dejavu_settings_all_animations_summary">Gumagalaw ang mga menu, pahina at button habang bumubukas at sumasara. Kapag naka-off, agad silang lumilitaw.</string>
+    <string name="dejavu_settings_genie_effect">Genie effect</string>
+    <string name="dejavu_settings_genie_effect_summary">Ang mga bookmark, kasaysayan, download, setting at ang iyong account ay umaagos palabas sa kanilang mga button sa home page at bumabalik.</string>
 </resources>

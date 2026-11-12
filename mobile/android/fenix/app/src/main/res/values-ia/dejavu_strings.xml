@@ -586,4 +586,11 @@
     <string name="dejavu_sidebery_exported">Salvate pro Sidebery</string>
     <string name="dejavu_sidebery_export_failed">Impossibile salvar le file. Retenta.</string>
     <string name="dejavu_sidebery_bad_file">Iste file non es un instantaneo o un copia de reserva de Sidebery.</string>
+    <string name="dejavu_menu_full_screen">Plen schermo</string>
+    <string name="dejavu_menu_exit_full_screen">Exir del plen schermo</string>
+    <string name="dejavu_settings_animations">Animationes</string>
+    <string name="dejavu_settings_all_animations">Tote le animationes</string>
+    <string name="dejavu_settings_all_animations_summary">Menus, paginas e buttones se move quando illos se aperi e se claude. Disactivate, illos appare immediatemente.</string>
+    <string name="dejavu_settings_genie_effect">Effecto genio</string>
+    <string name="dejavu_settings_genie_effect_summary">Marcapaginas, chronologia, discargamentos, parametros e tu conto flue for de lor buttones in le pagina initial e retorna.</string>
 </resources>

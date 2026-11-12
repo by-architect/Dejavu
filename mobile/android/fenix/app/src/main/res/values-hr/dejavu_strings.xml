@@ -594,4 +594,11 @@
     <string name="dejavu_sidebery_exported">Spremljeno za Sidebery</string>
     <string name="dejavu_sidebery_export_failed">Datoteku nije moguće spremiti. Pokušaj ponovo.</string>
     <string name="dejavu_sidebery_bad_file">Ova datoteka nije Sideberyjeva snimka ni sigurnosna kopija.</string>
+    <string name="dejavu_menu_full_screen">Cijeli ekran</string>
+    <string name="dejavu_menu_exit_full_screen">Izađi iz cijelog ekrana</string>
+    <string name="dejavu_settings_animations">Animacije</string>
+    <string name="dejavu_settings_all_animations">Sve animacije</string>
+    <string name="dejavu_settings_all_animations_summary">Izbornici, stranice i gumbi pomiču se dok se otvaraju i zatvaraju. Kad je isključeno, odmah se prikazuju.</string>
+    <string name="dejavu_settings_genie_effect">Efekt džina</string>
+    <string name="dejavu_settings_genie_effect_summary">Zabilješke, povijest, preuzimanja, postavke i tvoj račun izlijevaju se iz svojih gumba na početnoj stranici i vraćaju se u njih.</string>
 </resources>

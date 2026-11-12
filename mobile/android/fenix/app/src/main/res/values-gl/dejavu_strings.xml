@@ -586,4 +586,11 @@
     <string name="dejavu_sidebery_exported">Gardado para Sidebery</string>
     <string name="dejavu_sidebery_export_failed">Non foi posible gardar o ficheiro. Téntao de novo.</string>
     <string name="dejavu_sidebery_bad_file">Este ficheiro non é unha instantánea nin unha copia de seguranza de Sidebery.</string>
+    <string name="dejavu_menu_full_screen">Pantalla completa</string>
+    <string name="dejavu_menu_exit_full_screen">Saír da pantalla completa</string>
+    <string name="dejavu_settings_animations">Animacións</string>
+    <string name="dejavu_settings_all_animations">Todas as animacións</string>
+    <string name="dejavu_settings_all_animations_summary">Os menús, as páxinas e os botóns móvense ao abrirse e pecharse. Desactivadas, aparecen ao instante.</string>
+    <string name="dejavu_settings_genie_effect">Efecto xenio</string>
+    <string name="dejavu_settings_genie_effect_summary">Os marcadores, o historial, as descargas, a configuración e a túa conta saen dos seus botóns na páxina de inicio e volven a eles.</string>
 </resources>

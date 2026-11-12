@@ -124,6 +124,8 @@ import org.mozilla.fenix.components.startMetricsIfEnabled
 import org.mozilla.fenix.dejavu.DejavuDefaults
 import org.mozilla.fenix.dejavu.browser.UBlockOrigin
 import org.mozilla.fenix.dejavu.dejavuKeepsTab
+import org.mozilla.fenix.dejavu.settings.DejavuSettings
+import org.mozilla.fenix.dejavu.ui.DejavuMotion
 import org.mozilla.fenix.experiments.maybeFetchExperiments
 import org.mozilla.fenix.ext.application
 import org.mozilla.fenix.ext.components
@@ -281,6 +283,8 @@ open class FenixApplication : Application(), Provider, ThemeProvider {
                 try {
                     DejavuDefaults.applyEveryStart(applicationContext)
                     DejavuDefaults.applyOnce(applicationContext)
+                    // Dejavu: the animations of every window follow the animations switch of Customize.
+                    DejavuMotion.install(applicationContext, DejavuSettings.get(applicationContext), applicationScope)
                 } finally {
                     StrictMode.setThreadPolicy(policy)
                 }

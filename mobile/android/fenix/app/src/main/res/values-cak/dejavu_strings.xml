@@ -586,4 +586,11 @@
     <string name="dejavu_sidebery_exported">Xyak richin Sidebery</string>
     <string name="dejavu_sidebery_export_failed">Man xtikïr ta xyak ri yakb\'äl. Tatojtob\'ej chik.</string>
     <string name="dejavu_sidebery_bad_file">Re yakb\'äl re\' man jun snapshot ta o jun rachib\'il richin Sidebery.</string>
+    <string name="dejavu_menu_full_screen">Tz\'aqät ruwa</string>
+    <string name="dejavu_menu_exit_full_screen">Tel pa tz\'aqät ruwa</string>
+    <string name="dejavu_settings_animations">Taq animasyon</string>
+    <string name="dejavu_settings_all_animations">Ronojel taq animasyon</string>
+    <string name="dejavu_settings_all_animations_summary">Ri taq k\'utsamaj, taq ruxaq chuqa\' taq pitz\'b\'äl yesilon toq yejaq chuqa\' yetz\'apïx. Toq chupül, xa jari\' yeq\'alajin.</string>
+    <string name="dejavu_settings_genie_effect">Rub\'eyal genio</string>
+    <string name="dejavu_settings_genie_effect_summary">Taq yaketal, natab\'äl, taq qasanïk, nuk\'ulem chuqa\' ri akwenta yeläs pa ri taq kipitz\'b\'al pa ri jay ruxaq chuqa\' yetzolin chik.</string>
 </resources>

@@ -586,4 +586,11 @@
     <string name="dejavu_sidebery_exported">Sidebery साठी जतन केले</string>
     <string name="dejavu_sidebery_export_failed">फाइल जतन करता आली नाही. पुन्हा प्रयत्न करा.</string>
     <string name="dejavu_sidebery_bad_file">ही फाइल Sidebery चा स्नॅपशॉट किंवा बॅकअप नाही.</string>
+    <string name="dejavu_menu_full_screen">पूर्ण स्क्रीन</string>
+    <string name="dejavu_menu_exit_full_screen">पूर्ण स्क्रीनमधून बाहेर पडा</string>
+    <string name="dejavu_settings_animations">अ‍ॅनिमेशन</string>
+    <string name="dejavu_settings_all_animations">सर्व अ‍ॅनिमेशन</string>
+    <string name="dejavu_settings_all_animations_summary">मेनू, पृष्ठे आणि बटणे उघडताना आणि बंद होताना हलतात. बंद केल्यावर ती लगेच दिसतात.</string>
+    <string name="dejavu_settings_genie_effect">जिनी परिणाम</string>
+    <string name="dejavu_settings_genie_effect_summary">बुकमार्क, इतिहास, डाउनलोड, सेटिंग आणि तुमचे खाते मुख्यपृष्ठावरील त्यांच्या बटणांमधून बाहेर वाहतात आणि परत जातात.</string>
 </resources>

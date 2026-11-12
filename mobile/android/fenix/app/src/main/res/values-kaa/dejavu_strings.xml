@@ -586,4 +586,11 @@
     <string name="dejavu_sidebery_exported">Sidebery ushın saqlandı</string>
     <string name="dejavu_sidebery_export_failed">Fayldı saqlap bolmadı. Qaytadan urınıp kóriń.</string>
     <string name="dejavu_sidebery_bad_file">Bul fayl Sidebery snapshot-ı yamasa zapas nusqası emes.</string>
+    <string name="dejavu_menu_full_screen">Tolıq ekran</string>
+    <string name="dejavu_menu_exit_full_screen">Tolıq ekrannan shıǵıw</string>
+    <string name="dejavu_settings_animations">Animaciyalar</string>
+    <string name="dejavu_settings_all_animations">Barlıq animaciyalar</string>
+    <string name="dejavu_settings_all_animations_summary">Menyular, betler hám túymeler ashılǵanda hám jabılǵanda qozǵaladı. Óshirilgende olar birden kórinedi.</string>
+    <string name="dejavu_settings_genie_effect">Jin effekti</string>
+    <string name="dejavu_settings_genie_effect_summary">Betbelgiler, tariyx, júklengenler, sazlawlar hám akkauntıńız bas bettegi túymelerinen aǵıp shıǵadı hám qaytıp kiredi.</string>
 </resources>

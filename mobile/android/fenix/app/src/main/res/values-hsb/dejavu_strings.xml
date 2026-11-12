@@ -602,4 +602,11 @@
     <string name="dejavu_sidebery_exported">Za Sidebery składowane</string>
     <string name="dejavu_sidebery_export_failed">Dataja njeda so składować. Spytajće hišće raz.</string>
     <string name="dejavu_sidebery_bad_file">Tuta dataja fotka abo zawěsćenska kopija Sidebery njeje.</string>
+    <string name="dejavu_menu_full_screen">Połna wobrazowka</string>
+    <string name="dejavu_menu_exit_full_screen">Połnu wobrazowku wopušćić</string>
+    <string name="dejavu_settings_animations">Animacije</string>
+    <string name="dejavu_settings_all_animations">Wšě animacije</string>
+    <string name="dejavu_settings_all_animations_summary">Menije, strony a tłóčatka so pohibuja, hdyž so wočinjeja a začinjeja. Hdyž je to znjemóžnjene, so hnydom pokazuja.</string>
+    <string name="dejavu_settings_genie_effect">Efekt džina</string>
+    <string name="dejavu_settings_genie_effect_summary">Zapołožki, historija, sćehnjenja, nastajenja a waše konto wulijeja so ze swojich tłóčatkow na startowej stronje a wróćeja so.</string>
 </resources>

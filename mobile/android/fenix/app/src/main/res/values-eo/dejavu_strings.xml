@@ -586,4 +586,11 @@
     <string name="dejavu_sidebery_exported">Konservite por Sidebery</string>
     <string name="dejavu_sidebery_export_failed">Ne eblis konservi la dosieron. Provu denove.</string>
     <string name="dejavu_sidebery_bad_file">Ĉi tiu dosiero ne estas momentkopio aŭ savkopio de Sidebery.</string>
+    <string name="dejavu_menu_full_screen">Plena ekrano</string>
+    <string name="dejavu_menu_exit_full_screen">Eliri el plena ekrano</string>
+    <string name="dejavu_settings_animations">Animacioj</string>
+    <string name="dejavu_settings_all_animations">Ĉiuj animacioj</string>
+    <string name="dejavu_settings_all_animations_summary">Menuoj, paĝoj kaj butonoj moviĝas dum ili malfermiĝas kaj fermiĝas. Malŝaltite, ili aperas tuj.</string>
+    <string name="dejavu_settings_genie_effect">Ĝinia efiko</string>
+    <string name="dejavu_settings_genie_effect_summary">Legosignoj, historio, elŝutoj, agordoj kaj via konto elfluas el siaj butonoj sur la hejmpaĝo kaj reen.</string>
 </resources>

@@ -586,4 +586,11 @@
     <string name="dejavu_sidebery_exported">Sidebery-ക്കായി സേവ് ചെയ്തു</string>
     <string name="dejavu_sidebery_export_failed">ഫയൽ സേവ് ചെയ്യാനായില്ല. വീണ്ടും ശ്രമിക്കുക.</string>
     <string name="dejavu_sidebery_bad_file">ഈ ഫയൽ Sidebery-യുടെ സ്നാപ്ഷോട്ടോ ബാക്കപ്പോ അല്ല.</string>
+    <string name="dejavu_menu_full_screen">പൂർണ്ണ പ്രതലം</string>
+    <string name="dejavu_menu_exit_full_screen">പൂർണ്ണ പ്രതലത്തിൽ നിന്ന് പുറത്തുകടക്കുക</string>
+    <string name="dejavu_settings_animations">ആനിമേഷനുകൾ</string>
+    <string name="dejavu_settings_all_animations">എല്ലാ ആനിമേഷനുകളും</string>
+    <string name="dejavu_settings_all_animations_summary">മെനുകളും പേജുകളും ബട്ടണുകളും തുറക്കുമ്പോഴും അടയ്ക്കുമ്പോഴും നീങ്ങുന്നു. ഓഫാക്കിയാൽ, അവ ഉടൻ കാണിക്കും.</string>
+    <string name="dejavu_settings_genie_effect">ജീനി ഇഫക്റ്റ്</string>
+    <string name="dejavu_settings_genie_effect_summary">അടയാളക്കുറിപ്പുകൾ, നാള്‍വഴി, ഇറക്കിവയ്ക്കലുകൾ, ക്രമീകരണങ്ങള്‍, നിങ്ങളുടെ അക്കൗണ്ട് എന്നിവ ഹോം താളിലെ അവയുടെ ബട്ടണുകളിൽ നിന്ന് ഒഴുകി പുറത്തുവന്ന് തിരികെ പോകുന്നു.</string>
 </resources>

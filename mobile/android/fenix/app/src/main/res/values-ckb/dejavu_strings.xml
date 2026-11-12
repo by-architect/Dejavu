@@ -586,4 +586,11 @@
     <string name="dejavu_sidebery_exported">بۆ Sidebery پاشەکەوت کرا</string>
     <string name="dejavu_sidebery_export_failed">پەڕگەکە پاشەکەوت نەکرا. دووبارە هەوڵ بدەرەوە.</string>
     <string name="dejavu_sidebery_bad_file">ئەم پەڕگەیە وێنەی خێرا یان پاشەکەوتی Sidebery نییە.</string>
+    <string name="dejavu_menu_full_screen">پڕبەشاشە</string>
+    <string name="dejavu_menu_exit_full_screen">دەرچوون لە پڕبەشاشە</string>
+    <string name="dejavu_settings_animations">ئەنیمەیشنەکان</string>
+    <string name="dejavu_settings_all_animations">هەموو ئەنیمەیشنەکان</string>
+    <string name="dejavu_settings_all_animations_summary">لیستەکان، پەڕەکان و دوگمەکان لە کاتی کردنەوە و داخستندا دەجووڵێن. کاتێک کوژاوەتەوە، یەکسەر دەردەکەون.</string>
+    <string name="dejavu_settings_genie_effect">کاریگەریی جنۆکە</string>
+    <string name="dejavu_settings_genie_effect_summary">نیشانەکان، مێژوو، داگرتنەکان، ڕێکخستنەکان و هەژمارەکەت لە دوگمەکانیانەوە لە پەڕەی سەرەکی دەڕژێنە دەرەوە و دەگەڕێنەوە.</string>
 </resources>
