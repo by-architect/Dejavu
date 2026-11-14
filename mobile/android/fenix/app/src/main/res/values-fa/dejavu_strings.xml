@@ -516,8 +516,8 @@
     <string name="dejavu_welcome_default_done">Dejavu مرورگر پیش‌فرض شماست.</string>
     <string name="dejavu_welcome_sync_title">فضاهای کاری شما در همهٔ دستگاه‌ها</string>
     <string name="dejavu_welcome_sync_text">با یک حساب Mozilla وارد شوید تا فضاهای کاری، زبانه‌های سنجاق‌شده و ضروریات را با Zen، یا زبانه‌ها را با Firefox همگام‌سازی کنید.</string>
-    <string name="dejavu_settings_matrix">در Matrix گفت‌وگو کنید</string>
-    <string name="dejavu_settings_matrix_summary">سؤالی بپرسید، قابلیتی پیشنهاد دهید یا اشکالی را گزارش کنید</string>
+    <string name="dejavu_settings_email">ایمیل</string>
+    <string name="dejavu_settings_email_summary">سؤالی بپرسید، قابلیتی پیشنهاد دهید یا اشکالی را گزارش کنید</string>
     <string name="dejavu_menu_clear_data">پاک کردن داده‌ها</string>
     <string name="dejavu_menu_clear_data_and_quit">پاک کردن داده‌ها و خروج</string>
     <string name="dejavu_clear_data_button">دکمهٔ «پاک کردن داده‌ها»</string>
@@ -593,4 +593,17 @@
     <string name="dejavu_settings_all_animations_summary">منوها، صفحه‌ها و دکمه‌ها هنگام باز و بسته شدن حرکت می‌کنند. وقتی خاموش باشد، فوراً نمایش داده می‌شوند.</string>
     <string name="dejavu_settings_genie_effect">جلوهٔ جن</string>
     <string name="dejavu_settings_genie_effect_summary">نشانک‌ها، تاریخچه، دانلودها، تنظیمات و حساب شما از دکمه‌هایشان در صفحهٔ اصلی بیرون می‌ریزند و برمی‌گردند.</string>
+    <string name="dejavu_passkeys_unsupported">کلیدهای عبور هنوز در این نسخهٔ Android پشتیبانی نمی‌شوند</string>
+    <string name="dejavu_settings_accent_color">رنگ تأکیدی</string>
+    <string name="dejavu_accent_neutral">خنثی</string>
+    <string name="dejavu_accent_system">رنگ‌های تصویر پس‌زمینه</string>
+    <string name="dejavu_settings_icons">نمادها</string>
+    <string name="dejavu_icons_dejavu">دورنگ</string>
+    <string name="dejavu_icons_firefox">کلاسیک</string>
+    <string name="dejavu_icons_rounded">گرد</string>
+    <string name="dejavu_settings_essentials">ضروریات</string>
+    <string name="dejavu_settings_essentials_summary">پنهان کردن همه یا برخی از آن‌ها در این گوشی</string>
+    <string name="dejavu_essentials_hint">ضروریاتی که اینجا پنهان می‌کنید در Zen و دیگر دستگاه‌هایتان می‌مانند و وقتی دوباره نمایششان دهید، برمی‌گردند.</string>
+    <string name="dejavu_essentials_show">نمایش ضروریات</string>
+    <string name="dejavu_essentials_none">هنوز ضروریاتی ندارید. یک زبانه را به بالای صفحهٔ اصلی بکشید تا به ضروریات افزوده شود.</string>
 </resources>

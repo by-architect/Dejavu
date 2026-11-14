@@ -516,8 +516,8 @@
     <string name="dejavu_welcome_default_done">Dejavu نی نا اصل براؤزر ہس۔</string>
     <string name="dejavu_welcome_sync_title">نی نا ورک سپیساک ہر ڈیوائس پار</string>
     <string name="dejavu_welcome_sync_text">Zen گدا ورک سپیساک، پن ٹیباک او ضروری چیزاک، یا Firefox گدا ٹیباک سنک کننگ کن Mozilla اکاؤنٹ اٹ سائن ان کبو۔</string>
-    <string name="dejavu_settings_matrix">Matrix اٹ گپ شپ</string>
-    <string name="dejavu_settings_matrix_summary">سوال، فیچر نا تجویز یا بگ نا رپورٹ</string>
+    <string name="dejavu_settings_email">ای میل</string>
+    <string name="dejavu_settings_email_summary">سوال، فیچر نا تجویز یا بگ نا رپورٹ</string>
     <string name="dejavu_menu_clear_data">ڈیٹا صاف کبو</string>
     <string name="dejavu_menu_clear_data_and_quit">ڈیٹا صاف کبو او بند کبو</string>
     <string name="dejavu_clear_data_button">«ڈیٹا صاف کبو» بٹن</string>
@@ -593,4 +593,17 @@
     <string name="dejavu_settings_all_animations_summary">مینو، صفحہ او بٹن ملنگ او تفنگ آ حرکت کیرہ۔ بند مریک تو فوراً دکہ مرورہ۔</string>
     <string name="dejavu_settings_genie_effect">جن نا اثر</string>
     <string name="dejavu_settings_genie_effect_summary">بک مارکاک، تاریخچہ، ڈاونلوڈآک، سیٹنگاک او نا اکاؤنٹ گھر صفحہ نا بٹناک آن پیشرہ او پدی ہنرہ۔</string>
+    <string name="dejavu_passkeys_unsupported">پاس کی (passkey) ای Android ورژن ٹی ہلے تک سپورٹ مفسہ</string>
+    <string name="dejavu_settings_accent_color">ایکسنٹ رنگ</string>
+    <string name="dejavu_accent_neutral">نیوٹرل</string>
+    <string name="dejavu_accent_system">وال پیپر نا رنگاک</string>
+    <string name="dejavu_settings_icons">آئیکناک</string>
+    <string name="dejavu_icons_dejavu">دو رنگی</string>
+    <string name="dejavu_icons_firefox">کلاسیک</string>
+    <string name="dejavu_icons_rounded">گول</string>
+    <string name="dejavu_settings_essentials">ضروری چیزاک</string>
+    <string name="dejavu_settings_essentials_summary">اے فون پار کل یا چند ضروری چیزاک لکاؤ</string>
+    <string name="dejavu_essentials_hint">نی ادا لکاؤ کنا ضروری چیزاک Zen اٹ او نی نا ہور ڈیوائساک پار رہ ہن، او نی دوبارہ دکھاؤ تو پدا دکہ مرورہ۔</string>
+    <string name="dejavu_essentials_show">ضروری چیزاک دکھاؤ</string>
+    <string name="dejavu_essentials_none">ہلے تک ضروری چیز کائی نی۔ ٹیب اس اے ضروری چیزاک اٹ شامل کننگ کن ہوم سکرین نا بُرزا کشبو۔</string>
 </resources>

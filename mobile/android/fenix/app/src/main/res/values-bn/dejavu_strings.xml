@@ -549,8 +549,8 @@
     <string name="dejavu_welcome_default_done">Dejavu এখন আপনার ডিফল্ট ব্রাউজার।</string>
     <string name="dejavu_welcome_sync_title">প্রতিটি ডিভাইসে আপনার ওয়ার্কস্পেস</string>
     <string name="dejavu_welcome_sync_text">Mozilla অ্যাকাউন্ট দিয়ে সাইন ইন করে Zen ব্রাউজারের সাথে ওয়ার্কস্পেস, পিন করা ট্যাব ও এসেনশিয়াল, অথবা Firefox ব্রাউজারের সাথে ট্যাব সিঙ্ক করুন।</string>
-    <string name="dejavu_settings_matrix">Matrix-এ চ্যাট করুন</string>
-    <string name="dejavu_settings_matrix_summary">প্রশ্ন করুন, ফিচারের পরামর্শ দিন বা বাগ রিপোর্ট করুন</string>
+    <string name="dejavu_settings_email">ইমেইল</string>
+    <string name="dejavu_settings_email_summary">প্রশ্ন করুন, ফিচারের পরামর্শ দিন বা বাগ রিপোর্ট করুন</string>
     <string name="dejavu_menu_clear_data">ডেটা সাফ করুন</string>
     <string name="dejavu_menu_clear_data_and_quit">ডেটা সাফ করে প্রস্থান করুন</string>
     <string name="dejavu_clear_data_button">“ডেটা সাফ করুন” বোতাম</string>
@@ -626,4 +626,17 @@
     <string name="dejavu_settings_all_animations_summary">মেনু, পাতা ও বোতাম খোলা ও বন্ধ হওয়ার সময় নড়াচড়া করে। বন্ধ থাকলে সঙ্গে সঙ্গে দেখায়।</string>
     <string name="dejavu_settings_genie_effect">জিনি ইফেক্ট</string>
     <string name="dejavu_settings_genie_effect_summary">বুকমার্ক, ইতিহাস, ডাউনলোড, সেটিংস ও আপনার অ্যাকাউন্ট হোম পাতার বোতাম থেকে বেরিয়ে আসে এবং আবার ফিরে যায়।</string>
+    <string name="dejavu_passkeys_unsupported">পাসকি এখনও এই Android সংস্করণে সমর্থিত নয়</string>
+    <string name="dejavu_settings_accent_color">অ্যাকসেন্ট রং</string>
+    <string name="dejavu_accent_neutral">নিরপেক্ষ</string>
+    <string name="dejavu_accent_system">ওয়ালপেপারের রং</string>
+    <string name="dejavu_settings_icons">আইকন</string>
+    <string name="dejavu_icons_dejavu">দুই রঙের</string>
+    <string name="dejavu_icons_firefox">ক্লাসিক</string>
+    <string name="dejavu_icons_rounded">গোলাকার</string>
+    <string name="dejavu_settings_essentials">এসেনশিয়াল</string>
+    <string name="dejavu_settings_essentials_summary">এই ফোনে সবগুলো বা কয়েকটি লুকান</string>
+    <string name="dejavu_essentials_hint">এখানে আপনি যে এসেনশিয়ালগুলো লুকান, সেগুলো Zen-এ এবং আপনার অন্যান্য ডিভাইসে থেকে যায়, আর আবার দেখালে ফিরে আসে।</string>
+    <string name="dejavu_essentials_show">এসেনশিয়াল দেখান</string>
+    <string name="dejavu_essentials_none">এখনও কোনো এসেনশিয়াল নেই। কোনো ট্যাবকে এসেনশিয়ালে যোগ করতে সেটি হোম স্ক্রিনের একেবারে উপরে টেনে আনুন।</string>
 </resources>

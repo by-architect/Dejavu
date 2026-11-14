@@ -524,8 +524,8 @@
     <string name="dejavu_welcome_default_done">Dejavu הוא דפדפן ברירת המחדל שלכם.</string>
     <string name="dejavu_welcome_sync_title">מרחבי העבודה שלכם בכל מכשיר</string>
     <string name="dejavu_welcome_sync_text">היכנסו עם חשבון Mozilla כדי לסנכרן מרחבי עבודה, לשוניות מוצמדות ומועדפים עם Zen, או לשוניות עם Firefox.</string>
-    <string name="dejavu_settings_matrix">צ׳אט ב-Matrix</string>
-    <string name="dejavu_settings_matrix_summary">שאלו שאלה, הציעו תכונה או דווחו על באג</string>
+    <string name="dejavu_settings_email">דוא״ל</string>
+    <string name="dejavu_settings_email_summary">שאלו שאלה, הציעו תכונה או דווחו על באג</string>
     <string name="dejavu_menu_clear_data">ניקוי נתונים</string>
     <string name="dejavu_menu_clear_data_and_quit">ניקוי נתונים ויציאה</string>
     <string name="dejavu_clear_data_button">כפתור ״ניקוי נתונים״</string>
@@ -601,4 +601,17 @@
     <string name="dejavu_settings_all_animations_summary">תפריטים, דפים וכפתורים זזים כשהם נפתחים ונסגרים. כשהאפשרות כבויה, הם מופיעים מיד.</string>
     <string name="dejavu_settings_genie_effect">אפקט ג׳יני</string>
     <string name="dejavu_settings_genie_effect_summary">סימניות, היסטוריה, הורדות, הגדרות והחשבון שלך זורמים החוצה מהכפתורים שלהם בדף הבית וחוזרים אליהם.</string>
+    <string name="dejavu_passkeys_unsupported">מפתחות גישה עדיין אינם נתמכים בגרסת Android זו</string>
+    <string name="dejavu_settings_accent_color">צבע הדגשה</string>
+    <string name="dejavu_accent_neutral">נטרלי</string>
+    <string name="dejavu_accent_system">צבעי תמונת הרקע</string>
+    <string name="dejavu_settings_icons">סמלים</string>
+    <string name="dejavu_icons_dejavu">דו־גוני</string>
+    <string name="dejavu_icons_firefox">קלאסי</string>
+    <string name="dejavu_icons_rounded">מעוגל</string>
+    <string name="dejavu_settings_essentials">מועדפים</string>
+    <string name="dejavu_settings_essentials_summary">הסתרת כולם או חלק מהם בטלפון הזה</string>
+    <string name="dejavu_essentials_hint">מועדפים שתסתירו כאן נשארים ב-Zen ובמכשירים האחרים שלכם, וחוזרים כשתציגו אותם שוב.</string>
+    <string name="dejavu_essentials_show">הצגת מועדפים</string>
+    <string name="dejavu_essentials_none">אין עדיין מועדפים. גררו לשונית לראש מסך הבית כדי להפוך אותה למועדף.</string>
 </resources>

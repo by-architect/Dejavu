@@ -508,8 +508,8 @@
     <string name="dejavu_welcome_default_done">ilo Dejavu li open e lipu ale sina.</string>
     <string name="dejavu_welcome_sync_title">kulupu poki sina lon ilo ale sina</string>
     <string name="dejavu_welcome_sync_text">o kepeken e nimi Mozilla. ni la, sina ken sama e kulupu poki e poki awen e lipu suli kepeken ilo Zen, anu e poki kepeken ilo Firefox.</string>
-    <string name="dejavu_settings_matrix">o toki lon ilo Matrix</string>
-    <string name="dejavu_settings_matrix_summary">o toki e wile sona, e wile pi ijo sin anu e pakala</string>
+    <string name="dejavu_settings_email">poki lipu</string>
+    <string name="dejavu_settings_email_summary">o toki e wile sona, e wile pi ijo sin anu e pakala</string>
     <string name="dejavu_menu_clear_data">o weka e sona</string>
     <string name="dejavu_menu_clear_data_and_quit">o weka e sona, o weka tan ilo</string>
     <string name="dejavu_clear_data_button">nena “o weka e sona”</string>
@@ -585,4 +585,17 @@
     <string name="dejavu_settings_all_animations_summary">lipu en nena li tawa lon tenpo open en tenpo pini. ni li weka la ona li lon kepeken tenpo ala.</string>
     <string name="dejavu_settings_genie_effect">tawa pi jan wawa</string>
     <string name="dejavu_settings_genie_effect_summary">lipu awen en lukin pini lipu en jo lipu en nasin ilo en nimi sina li tawa tan nena ona lon lipu tomo li kama sin.</string>
+    <string name="dejavu_passkeys_unsupported">lon tenpo ni la, sina ken ala kepeken ilo open (passkey) lon ilo Android ni</string>
+    <string name="dejavu_settings_accent_color">kule suli</string>
+    <string name="dejavu_accent_neutral">walo anu pimeja</string>
+    <string name="dejavu_accent_system">kule tan selo kule</string>
+    <string name="dejavu_settings_icons">sitelen lili</string>
+    <string name="dejavu_icons_dejavu">kule tu</string>
+    <string name="dejavu_icons_firefox">sin ala</string>
+    <string name="dejavu_icons_rounded">sike</string>
+    <string name="dejavu_settings_essentials">lipu suli</string>
+    <string name="dejavu_settings_essentials_summary">o len e ona ale anu wan ona lon ilo kalama ni</string>
+    <string name="dejavu_essentials_hint">sina len e lipu suli lon ni la ona li awen lon Zen en lon ilo ante sina. sina pana lukin sin e ona la ona li kama sin.</string>
+    <string name="dejavu_essentials_show">o pana lukin e lipu suli</string>
+    <string name="dejavu_essentials_none">lipu suli li lon ala lon tenpo ni. o tawa e poki tawa sewi pi lipu tomo la ona li kama lipu suli.</string>
 </resources>

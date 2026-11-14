@@ -508,8 +508,8 @@
     <string name="dejavu_welcome_default_done">Dejavu ni bíráwúsà ìbẹ̀rẹ̀pẹ̀pẹ̀ rẹ.</string>
     <string name="dejavu_welcome_sync_title">Àwọn ibi-iṣẹ́ rẹ lórí gbogbo ẹ̀rọ</string>
     <string name="dejavu_welcome_sync_text">Wọlé pẹ̀lú àkáǹtì Mozilla láti ṣe sync àwọn ibi-iṣẹ́, àwọn táàbù tí a fi Pin sí àti àwọn Pàtàkì pẹ̀lú Zen, tàbí àwọn táàbù pẹ̀lú Firefox.</string>
-    <string name="dejavu_settings_matrix">Ìtàkurọ̀sọ lórí Matrix</string>
-    <string name="dejavu_settings_matrix_summary">Béèrè ìbéèrè, dábàá ẹ̀yà tuntun tàbí jábọ̀ àṣìṣe</string>
+    <string name="dejavu_settings_email">Ímeélì</string>
+    <string name="dejavu_settings_email_summary">Béèrè ìbéèrè, dábàá ẹ̀yà tuntun tàbí jábọ̀ àṣìṣe</string>
     <string name="dejavu_menu_clear_data">Nu dátà kúrò</string>
     <string name="dejavu_menu_clear_data_and_quit">Nu dátà kúrò kí o sì kúrò</string>
     <string name="dejavu_clear_data_button">Bọ́tìnnì “Nu dátà kúrò”</string>
@@ -585,4 +585,17 @@
     <string name="dejavu_settings_all_animations_summary">Àwọn àtòjọ, ojú-ewé àti bọ́tìnnì máa ń gbéra nígbà tí wọ́n bá ṣí tí wọ́n sì tì. Tí ó bá wà ní pípa, wọ́n á fara hàn lẹ́sẹ̀kẹsẹ̀.</string>
     <string name="dejavu_settings_genie_effect">Ipa àlùjànnú</string>
     <string name="dejavu_settings_genie_effect_summary">Àwọn àmì-ìwé, ìtàn, àwọn ìgbàsílẹ̀, àwọn aatò àti àkáǹtì rẹ máa ń ṣàn jáde láti inú bọ́tìnnì wọn lórí home page, wọ́n á sì padà wọlé.</string>
+    <string name="dejavu_passkeys_unsupported">Àwọn passkey kò tíì ní àtìlẹ́yìn lórí ẹ̀yà Android yìí</string>
+    <string name="dejavu_settings_accent_color">Àwọ̀ ìtẹnumọ́</string>
+    <string name="dejavu_accent_neutral">Funfun tàbí dúdú</string>
+    <string name="dejavu_accent_system">Àwọn àwọ̀ ìṣẹ̀ṣọ́ ògiri</string>
+    <string name="dejavu_settings_icons">Àwọn àmì</string>
+    <string name="dejavu_icons_dejavu">Àwọ̀ méjì</string>
+    <string name="dejavu_icons_firefox">Àtijọ́</string>
+    <string name="dejavu_icons_rounded">Rìbìtì</string>
+    <string name="dejavu_settings_essentials">Pàtàkì</string>
+    <string name="dejavu_settings_essentials_summary">Fi gbogbo wọn tàbí díẹ̀ nínú wọn pamọ́ lórí fóònù yìí</string>
+    <string name="dejavu_essentials_hint">Àwọn Pàtàkì tí o bá fi pamọ́ níbí máa wà nínú Zen àti lórí àwọn ẹ̀rọ rẹ mìíràn, wọ́n á sì padà wá nígbà tí o bá tún fi wọ́n hàn.</string>
+    <string name="dejavu_essentials_show">Fi àwọn Pàtàkì hàn</string>
+    <string name="dejavu_essentials_none">Kò tí ì sí Pàtàkì kankan. Fa táàbù kan lọ sí òkè pátápátá ojú ìwé ìbẹ̀rẹ̀ láti fi kún àwọn Pàtàkì.</string>
 </resources>

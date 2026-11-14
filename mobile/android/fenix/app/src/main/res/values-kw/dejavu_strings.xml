@@ -548,8 +548,8 @@
     <string name="dejavu_welcome_default_done">Dejavu yw dha beurell standard.</string>
     <string name="dejavu_welcome_sync_title">Dha dyleryow-ober war bub jynn</string>
     <string name="dejavu_welcome_sync_text">Sina ajy gans akont Mozilla rag kesunya tyleryow-ober, tabow fastyes ha Pythow Poesek gans Zen, po tabow gans Firefox.</string>
-    <string name="dejavu_settings_matrix">Keskows war Matrix</string>
-    <string name="dejavu_settings_matrix_summary">Govyn neppyth, profya tra nowydh po derivas fowt</string>
+    <string name="dejavu_settings_email">Ebost</string>
+    <string name="dejavu_settings_email_summary">Govyn neppyth, profya tra nowydh po derivas fowt</string>
     <string name="dejavu_menu_clear_data">Glanhe an data</string>
     <string name="dejavu_menu_clear_data_and_quit">Glanhe an data ha degea</string>
     <string name="dejavu_clear_data_button">Boton “Glanhe an data”</string>
@@ -625,4 +625,17 @@
     <string name="dejavu_settings_all_animations_summary">Rolyow, folennow ha botons a waya pan vons i ygerys ha deges. Pan yw dhe-ves, i a omdhiskwa a-dhistowgh.</string>
     <string name="dejavu_settings_genie_effect">Effeyth jin</string>
     <string name="dejavu_settings_genie_effect_summary">Merkow, istori, iskargow, settyansow hag agas akont a dhinev mes a\'ga botons war an folen dre ha dhe-dhelergh.</string>
+    <string name="dejavu_passkeys_unsupported">Ny vydh alhwedhow tremena skoodhys war an versyon ma a Android hwath</string>
+    <string name="dejavu_settings_accent_color">Liw poeslev</string>
+    <string name="dejavu_accent_neutral">Neptu</string>
+    <string name="dejavu_accent_system">Liwyow an paper-fos</string>
+    <string name="dejavu_settings_icons">Ikonow</string>
+    <string name="dejavu_icons_dejavu">Dew liw</string>
+    <string name="dejavu_icons_firefox">Klassek</string>
+    <string name="dejavu_icons_rounded">Krenn</string>
+    <string name="dejavu_settings_essentials">Pythow Poesek</string>
+    <string name="dejavu_settings_essentials_summary">Kudha oll anedha po ran anedha war an pellgowser ma</string>
+    <string name="dejavu_essentials_hint">An Pythow Poesek a gudhydh omma a drig yn Zen ha war dha jynnow erel, hag a dhehwel pan wrylli aga diskwedhes arta.</string>
+    <string name="dejavu_essentials_show">Diskwedhes Pythow Poesek</string>
+    <string name="dejavu_essentials_none">Nyns eus Pythow Poesek hwath. Tenna tab dhe dop an skrin tre rag y wul Pyth Poesek.</string>
 </resources>

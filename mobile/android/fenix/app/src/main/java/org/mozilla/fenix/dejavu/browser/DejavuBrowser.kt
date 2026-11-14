@@ -52,6 +52,7 @@ import org.mozilla.fenix.dejavu.home.titleOf
 import org.mozilla.fenix.dejavu.menu.DejavuMenu
 import org.mozilla.fenix.dejavu.menu.MoreMenuSwipe
 import org.mozilla.fenix.dejavu.menu.runActionsBarEntry
+import org.mozilla.fenix.dejavu.ui.DejavuIcons
 import org.mozilla.fenix.dejavu.workspaces.SplitOrientation
 import org.mozilla.fenix.dejavu.workspaces.WorkspaceRepository
 import org.mozilla.fenix.ext.components
@@ -108,7 +109,8 @@ object DejavuToolbar {
     }
 
     private fun noContainerAction(context: Context): Action? {
-        val drawable = AppCompatResources.getDrawable(context, R.drawable.dejavu_ic_no_container_24) ?: return null
+        val icon = DejavuIcons.of(R.drawable.dejavu_ic_no_container_24)
+        val drawable = AppCompatResources.getDrawable(context, icon) ?: return null
         return Action.ActionButton(
             drawable = drawable,
             shouldTint = true,
@@ -183,7 +185,7 @@ object DejavuToolbar {
             if (current != null) {
                 add(
                     button(
-                        Icon.DrawableResIcon(R.drawable.dejavu_ic_no_container_24),
+                        Icon.DrawableResIcon(DejavuIcons.of(R.drawable.dejavu_ic_no_container_24)),
                         context.getString(R.string.dejavu_workspace_no_container),
                         ContainerPick.NoContainer,
                     ),
@@ -194,7 +196,7 @@ object DejavuToolbar {
             if (isNotEmpty()) add(BrowserToolbarMenuDivider)
             add(
                 button(
-                    Icon.DrawableResIcon(R.drawable.dejavu_ic_temporary_container_24),
+                    Icon.DrawableResIcon(DejavuIcons.of(R.drawable.dejavu_ic_temporary_container_24)),
                     context.getString(R.string.dejavu_new_temporary_container),
                     ContainerPick.Temporary,
                 ),

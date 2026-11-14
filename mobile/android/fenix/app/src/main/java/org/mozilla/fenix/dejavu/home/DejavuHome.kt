@@ -36,7 +36,6 @@ import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
-import androidx.compose.runtime.CompositionLocalProvider
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.State
 import androidx.compose.runtime.collectAsState
@@ -75,7 +74,6 @@ import androidx.compose.ui.platform.LocalDensity
 import androidx.compose.ui.platform.LocalHapticFeedback
 import androidx.compose.ui.platform.LocalLayoutDirection
 import androidx.compose.ui.platform.LocalViewConfiguration
-import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.pluralStringResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.semantics.contentDescription
@@ -123,6 +121,7 @@ import org.mozilla.fenix.dejavu.ui.LocalPopupTheme
 import org.mozilla.fenix.dejavu.ui.LockCover
 import org.mozilla.fenix.dejavu.ui.TapIcon
 import org.mozilla.fenix.dejavu.ui.glass
+import org.mozilla.fenix.dejavu.ui.iconPainter
 import org.mozilla.fenix.dejavu.ui.lockedContent
 import org.mozilla.fenix.dejavu.ui.mayAskToUnlock
 import org.mozilla.fenix.dejavu.ui.popupThemeOf
@@ -136,6 +135,7 @@ import org.mozilla.fenix.dejavu.workspaces.WorkspaceState
 import org.mozilla.fenix.dejavu.workspaces.WorkspaceTheme
 import org.mozilla.fenix.dejavu.workspaces.WorkspaceWallpaper
 import org.mozilla.fenix.settings.deletebrowsingdata.DeleteBrowsingDataOnQuitType
+import org.mozilla.fenix.theme.getThemeProvider
 
 /**
  * User actions on the Dejavu home screen that leave the screen's own UI state.
@@ -240,6 +240,9 @@ interface DejavuHomeInteractor : TabEditor {
  * Tips about gestures nothing shows point them out while [tipsAllowed], when nothing else needs the user's attention.
  * A locked workspace, see [WorkspaceLock], and the private tabs while [privateLocked], show blurred under a cover that
  * unlocks them, which asks by itself once they are turned to.
+ * While a search screen is open over it ([searching]), the system bars' icons follow the theme, see
+ * [SystemBarIconsOver]. The essentials show unless [essentialsShown] is off, without the [hiddenEssentials], see
+ * [shownEssentials].
  */
 @Suppress("LongMethod", "LongParameterList", "CognitiveComplexMethod", "CyclomaticComplexMethod")
 @Composable
@@ -264,6 +267,9 @@ fun DejavuHome(
     hasDataToClear: Boolean = false,
     tipsAllowed: Boolean = false,
     privateLocked: Boolean = false,
+    searching: Boolean = false,
+    essentialsShown: Boolean = true,
+    hiddenEssentials: Set<String> = emptySet(),
 ) {
     // The private workspace is an extra last page, there while private tabs are open.
     val privateIndex = state.workspaces.size.takeIf { privateTabs.isNotEmpty() }
@@ -309,7 +315,11 @@ fun DejavuHome(
     val essentials = if (onPrivatePage || currentWorkspace.device != null || currentHidden) {
         emptyList()
     } else {
-        state.essentialsFor(currentWorkspace.containerId, essentialsPerContainer)
+        shownEssentials(
+            state.essentialsFor(currentWorkspace.containerId, essentialsPerContainer),
+            essentialsShown,
+            hiddenEssentials,
+        )
     }
     val grain = rememberGrainBrush()
 
@@ -326,11 +336,12 @@ fun DejavuHome(
     // A wallpaper takes the place of its workspace's gradient, whose colors were taken from it.
     fun gradientAt(page: Int): WorkspaceTheme? = themeAt(page).takeIf { wallpaperAt(page) == null }
 
-    // Wallpapers show sharp under a veil of their own colors, which keeps the text over them easy to read.
+    // Wallpapers show sharp under a veil of their own colors, which keeps the text over them easy to read, in the look
+    // picked for them whatever the app's theme.
     val surface = MaterialTheme.colorScheme.surface
-    val onSurface = MaterialTheme.colorScheme.onSurface
-    val veils = remember(wallpapers, surface, onSurface) {
-        wallpapers.mapValues { (_, wallpaper) -> veilOf(wallpaper, surface, onSurface) }
+    val appTheme = getThemeProvider().provideTheme()
+    val veils = remember(wallpapers, appTheme) {
+        wallpapers.mapValues { (_, wallpaper) -> veilOf(wallpaper, appTheme) }
     }
 
     fun veilAt(page: Int): Veil? =
@@ -533,7 +544,7 @@ fun DejavuHome(
     val essentialsDrop = drag.let { current ->
         when {
             current == null || !current.moved || current.selection.folderIds.isNotEmpty() || !current.canLeave ||
-                onPrivatePage || currentWorkspace.device != null -> EssentialsDrop.NONE
+                onPrivatePage || currentWorkspace.device != null || !essentialsShown -> EssentialsDrop.NONE
             current.target == DropTarget.Essentials -> EssentialsDrop.ACTIVE
             else -> EssentialsDrop.AVAILABLE
         }
@@ -596,8 +607,8 @@ fun DejavuHome(
         }
     }
 
-    // Dialogs and menus take on the colors of the wallpaper of the workspace they open over.
-    CompositionLocalProvider(LocalPopupTheme provides popupThemeAt(pagerState.currentPage)) {
+    SystemBarIconsOver(wallpaperAt(pagerState.currentPage), searching)
+    OverWallpaper(wallpaperAt(pagerState.currentPage), popupThemeAt(pagerState.currentPage)) {
         // The wallpapers and the theme are drawn behind the system bars too, with the content kept clear of them.
         Box(modifier = modifier.fillMaxSize().background(surface)) {
             if (wallpapers.isNotEmpty()) WallpaperLayers(pagerState, ::wallpaperAt)
@@ -809,36 +820,39 @@ fun DejavuHome(
                                 onRevealed = { revealTabId = null },
                             )
                         }
-                        LockablePage(
-                            hidden = hiddenAt(page),
-                            title = stringResource(R.string.dejavu_workspace_locked, workspace.name),
-                            onUnlock = { askToUnlock(page) },
-                        ) {
-                            WorkspacePage(
-                                state = state,
-                                workspace = workspace,
-                                tabs = pageTabs,
-                                selectedTabId = selectedTabId,
-                                containers = containers,
-                                pinnedRowActions = pinnedRowActions,
-                                unpinnedRowActions = unpinnedRowActions,
-                                folderRowActions = folderRowActions,
-                                selection = activeSelection,
-                                drag = drag,
-                                dragAreas = dragAreas,
-                                dragStack = dragStack,
-                                callbacks = callbacks,
-                                canDeleteWorkspace = state.workspaces.size > 1,
-                                canMoveLeft = page > 0,
-                                canMoveRight = page < state.workspaces.size - 1,
-                                hasClosedTab = hasClosedTab,
-                                hasClipboardLink = hasClipboardLink,
-                                revealTabId = revealTabId,
-                                openTabIds = openTabIds,
-                                hasDataToClear = hasDataToClear,
-                                dataPour = pour.takeIf { page == pagerState.currentPage },
-                                askedClear = askedClear.takeIf { page == pagerState.currentPage },
-                            )
+                        // Each page in the look of its own wallpaper, so both show right while swiping between them.
+                        WallpaperTheme(wallpaperAt(page)) {
+                            LockablePage(
+                                hidden = hiddenAt(page),
+                                title = stringResource(R.string.dejavu_workspace_locked, workspace.name),
+                                onUnlock = { askToUnlock(page) },
+                            ) {
+                                WorkspacePage(
+                                    state = state,
+                                    workspace = workspace,
+                                    tabs = pageTabs,
+                                    selectedTabId = selectedTabId,
+                                    containers = containers,
+                                    pinnedRowActions = pinnedRowActions,
+                                    unpinnedRowActions = unpinnedRowActions,
+                                    folderRowActions = folderRowActions,
+                                    selection = activeSelection,
+                                    drag = drag,
+                                    dragAreas = dragAreas,
+                                    dragStack = dragStack,
+                                    callbacks = callbacks,
+                                    canDeleteWorkspace = state.workspaces.size > 1,
+                                    canMoveLeft = page > 0,
+                                    canMoveRight = page < state.workspaces.size - 1,
+                                    hasClosedTab = hasClosedTab,
+                                    hasClipboardLink = hasClipboardLink,
+                                    revealTabId = revealTabId,
+                                    openTabIds = openTabIds,
+                                    hasDataToClear = hasDataToClear,
+                                    dataPour = pour.takeIf { page == pagerState.currentPage },
+                                    askedClear = askedClear.takeIf { page == pagerState.currentPage },
+                                )
+                            }
                         }
                     }
 
@@ -924,7 +938,7 @@ private fun TopBar(interactor: DejavuHomeInteractor, onSearchClick: () -> Unit) 
                 .padding(horizontal = 16.dp),
         ) {
             Icon(
-                painter = painterResource(R.drawable.dejavu_ic_search_24),
+                painter = iconPainter(R.drawable.dejavu_ic_search_24),
                 contentDescription = null,
                 tint = MaterialTheme.colorScheme.onSurfaceVariant,
                 modifier = Modifier.size(20.dp),
@@ -977,7 +991,7 @@ private fun EssentialsDropBar(active: Boolean) {
                 ),
         ) {
             Icon(
-                painter = painterResource(iconsR.drawable.mozac_ic_grid_add_24),
+                painter = iconPainter(iconsR.drawable.mozac_ic_grid_add_24),
                 contentDescription = null,
                 tint = MaterialTheme.colorScheme.onSurface,
                 modifier = Modifier.size(20.dp),
@@ -1062,7 +1076,7 @@ private fun SelectionAction(
             .padding(vertical = 8.dp, horizontal = 2.dp),
     ) {
         Icon(
-            painter = painterResource(action.icon),
+            painter = iconPainter(action.icon),
             contentDescription = null,
             tint = color,
             modifier = Modifier.size(22.dp),
@@ -1104,7 +1118,7 @@ internal fun BarIconButton(
 ) {
     IconButton(onClick = onClick, modifier = modifier) {
         Icon(
-            painter = painterResource(icon),
+            painter = iconPainter(icon),
             contentDescription = contentDescription,
             tint = MaterialTheme.colorScheme.onSurface,
         )

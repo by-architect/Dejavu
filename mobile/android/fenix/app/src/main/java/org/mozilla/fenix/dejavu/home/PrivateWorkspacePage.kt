@@ -29,7 +29,6 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.platform.LocalContext
-import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
@@ -42,6 +41,7 @@ import org.mozilla.fenix.dejavu.actions.TabAction
 import org.mozilla.fenix.dejavu.browser.closeOnMiddleClick
 import org.mozilla.fenix.dejavu.browser.tabZoomTarget
 import org.mozilla.fenix.dejavu.ui.TapIcon
+import org.mozilla.fenix.dejavu.ui.iconPainter
 import org.mozilla.fenix.dejavu.ui.rememberIconTaps
 import org.mozilla.fenix.dejavu.workspaces.WorkspaceTheme
 import org.mozilla.fenix.ext.components
@@ -122,7 +122,7 @@ internal fun PrivateWorkspacePage(
                         .padding(start = 12.dp, top = 4.dp, bottom = 4.dp),
                 ) {
                     Icon(
-                        painter = painterResource(R.drawable.dejavu_ic_private_tab_24),
+                        painter = iconPainter(R.drawable.dejavu_ic_private_tab_24),
                         contentDescription = null,
                         tint = MaterialTheme.colorScheme.onSurfaceVariant,
                         modifier = Modifier.size(18.dp),
@@ -137,7 +137,7 @@ internal fun PrivateWorkspacePage(
                     )
                     TextButton(onClick = onCloseAll) {
                         Icon(
-                            painter = painterResource(iconsR.drawable.mozac_ic_delete_24),
+                            painter = iconPainter(iconsR.drawable.mozac_ic_delete_24),
                             contentDescription = null,
                             tint = MaterialTheme.colorScheme.error,
                             modifier = Modifier.size(18.dp),

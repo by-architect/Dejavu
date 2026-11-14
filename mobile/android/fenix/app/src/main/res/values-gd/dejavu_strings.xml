@@ -532,8 +532,8 @@
     <string name="dejavu_welcome_default_done">\'S e Dejavu am brabhsair bunaiteach agad.</string>
     <string name="dejavu_welcome_sync_title">Na h-àiteachan-obrach agad air gach uidheam</string>
     <string name="dejavu_welcome_sync_text">Clàraich a-steach le cunntas Mozilla gus àiteachan-obrach, tabaichean prìnichte is feumalachdan a shioncronachadh le Zen, no tabaichean le Firefox.</string>
-    <string name="dejavu_settings_matrix">Cabadaich air Matrix</string>
-    <string name="dejavu_settings_matrix_summary">Faighnich ceist, mol gleus no dèan aithris air buga</string>
+    <string name="dejavu_settings_email">Post-d</string>
+    <string name="dejavu_settings_email_summary">Faighnich ceist, mol gleus no dèan aithris air buga</string>
     <string name="dejavu_menu_clear_data">Falamhaich an dàta</string>
     <string name="dejavu_menu_clear_data_and_quit">Falamhaich an dàta agus fàg</string>
     <string name="dejavu_clear_data_button">Am putan “Falamhaich an dàta”</string>
@@ -609,4 +609,17 @@
     <string name="dejavu_settings_all_animations_summary">Gluaisidh clàran-taghaidh, duilleagan is putanan nuair a dh’fhosglas is a dhùineas iad. Nuair a bhios seo dheth, nochdaidh iad sa bhad.</string>
     <string name="dejavu_settings_genie_effect">Èifeachd genie</string>
     <string name="dejavu_settings_genie_effect_summary">Dòirtidh comharran-lìn, an eachdraidh, luchdaidhean a-nuas, roghainnean is an cunntas agad a-mach às na putanan aca air an duilleag dachaigh agus air ais.</string>
+    <string name="dejavu_passkeys_unsupported">Chan eil taic ri iuchraichean-inntrigidh air an tionndadh seo de Android fhathast</string>
+    <string name="dejavu_settings_accent_color">Dath soillseachaidh</string>
+    <string name="dejavu_accent_neutral">Neodrach</string>
+    <string name="dejavu_accent_system">Dathan a\' phàipeir-bhalla</string>
+    <string name="dejavu_settings_icons">Ìomhaigheagan</string>
+    <string name="dejavu_icons_dejavu">Dà thòna</string>
+    <string name="dejavu_icons_firefox">Clasaigeach</string>
+    <string name="dejavu_icons_rounded">Cruinn</string>
+    <string name="dejavu_settings_essentials">Feumalachdan</string>
+    <string name="dejavu_settings_essentials_summary">Falaich iad uile no cuid dhiubh air an fhòn seo</string>
+    <string name="dejavu_essentials_hint">Fanaidh na feumalachdan a dh\'fhalaicheas tu an-seo ann an Zen agus air na h-uidheaman eile agad, agus tillidh iad nuair a sheallas tu iad a-rithist.</string>
+    <string name="dejavu_essentials_show">Seall na feumalachdan</string>
+    <string name="dejavu_essentials_none">Chan eil feumalachd ann fhathast. Slaod taba gu bàrr na sgrìn-dachaigh gus feumalachd a dhèanamh dheth.</string>
 </resources>

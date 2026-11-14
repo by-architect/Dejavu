@@ -516,8 +516,8 @@
     <string name="dejavu_welcome_default_done">Dejavu თქვენი ნაგულისხმევი ბრაუზერია.</string>
     <string name="dejavu_welcome_sync_title">თქვენი სივრცეები ყველა მოწყობილობაზე</string>
     <string name="dejavu_welcome_sync_text">შედით Mozilla-ანგარიშით, რომ სივრცეები, მიმაგრებული ჩანართები და საჭირო საიტები Zen-თან, ან ჩანართები Firefox-თან დაასინქრონოთ.</string>
-    <string name="dejavu_settings_matrix">ჩატი Matrix-ში</string>
-    <string name="dejavu_settings_matrix_summary">დასვით კითხვა, შემოგვთავაზეთ ფუნქცია ან შეგვატყობინეთ ხარვეზის შესახებ</string>
+    <string name="dejavu_settings_email">ელფოსტა</string>
+    <string name="dejavu_settings_email_summary">დასვით კითხვა, შემოგვთავაზეთ ფუნქცია ან შეგვატყობინეთ ხარვეზის შესახებ</string>
     <string name="dejavu_menu_clear_data">მონაცემების გასუფთავება</string>
     <string name="dejavu_menu_clear_data_and_quit">მონაცემების გასუფთავება და დახურვა</string>
     <string name="dejavu_clear_data_button">ღილაკი „მონაცემების გასუფთავება“</string>
@@ -593,4 +593,17 @@
     <string name="dejavu_settings_all_animations_summary">მენიუები, გვერდები და ღილაკები მოძრაობს გახსნისა და დახურვისას. გამორთვისას ისინი მაშინვე ჩნდება.</string>
     <string name="dejavu_settings_genie_effect">ჯინის ეფექტი</string>
     <string name="dejavu_settings_genie_effect_summary">სანიშნები, ისტორია, ჩამოტვირთვები, პარამეტრები და თქვენი ანგარიში მთავარ გვერდზე თავიანთი ღილაკებიდან გადმოიღვრება და უკან ბრუნდება.</string>
+    <string name="dejavu_passkeys_unsupported">საშვები Android-ის ამ ვერსიაზე ჯერ არ არის მხარდაჭერილი</string>
+    <string name="dejavu_settings_accent_color">აქცენტის ფერი</string>
+    <string name="dejavu_accent_neutral">ნეიტრალური</string>
+    <string name="dejavu_accent_system">ფონის ფერები</string>
+    <string name="dejavu_settings_icons">ხატულები</string>
+    <string name="dejavu_icons_dejavu">ორფეროვანი</string>
+    <string name="dejavu_icons_firefox">კლასიკური</string>
+    <string name="dejavu_icons_rounded">მომრგვალებული</string>
+    <string name="dejavu_settings_essentials">საჭირო საიტები</string>
+    <string name="dejavu_settings_essentials_summary">ყველას ან ზოგიერთის დამალვა ამ ტელეფონზე</string>
+    <string name="dejavu_essentials_hint">აქ დამალული საჭირო საიტები Zen-ში და თქვენს სხვა მოწყობილობებზე რჩება და ბრუნდება, როცა მათ ხელახლა აჩვენებთ.</string>
+    <string name="dejavu_essentials_show">საჭირო საიტების ჩვენება</string>
+    <string name="dejavu_essentials_none">საჭირო საიტები ჯერ არ არის. გადაიტანეთ ჩანართი საწყისი ეკრანის ზედა ნაწილში, რომ საჭირო საიტად აქციოთ.</string>
 </resources>

@@ -516,8 +516,8 @@
     <string name="dejavu_welcome_default_done">Dejavu është shfletuesi juaj parazgjedhje.</string>
     <string name="dejavu_welcome_sync_title">Hapësirat tuaja të punës në çdo pajisje</string>
     <string name="dejavu_welcome_sync_text">Bëni hyrjen me një llogari Mozilla, që të njëkohësoni hapësira pune, skeda të fiksuara dhe thelbësore me Zen-in, ose skeda me Firefox-in.</string>
-    <string name="dejavu_settings_matrix">Bisedoni në Matrix</string>
-    <string name="dejavu_settings_matrix_summary">Bëni një pyetje, sugjeroni një veçori ose njoftoni një të metë</string>
+    <string name="dejavu_settings_email">Email</string>
+    <string name="dejavu_settings_email_summary">Bëni një pyetje, sugjeroni një veçori ose njoftoni një të metë</string>
     <string name="dejavu_menu_clear_data">Pastroji të dhënat</string>
     <string name="dejavu_menu_clear_data_and_quit">Pastroji të dhënat dhe mbylle</string>
     <string name="dejavu_clear_data_button">Butoni “Pastroji të dhënat”</string>
@@ -593,4 +593,17 @@
     <string name="dejavu_settings_all_animations_summary">Menutë, faqet dhe butonat lëvizin kur hapen dhe mbyllen. Kur është çaktivizuar, shfaqen menjëherë.</string>
     <string name="dejavu_settings_genie_effect">Efekt xhindi</string>
     <string name="dejavu_settings_genie_effect_summary">Faqerojtësit, historiku, shkarkimet, rregullimet dhe llogaria juaj derdhen nga butonat e tyre në faqen kreu dhe kthehen prapë.</string>
+    <string name="dejavu_passkeys_unsupported">Kyçkalimet ende nuk mbulohen në këtë version të Android-it</string>
+    <string name="dejavu_settings_accent_color">Ngjyrë theksimi</string>
+    <string name="dejavu_accent_neutral">Asnjanëse</string>
+    <string name="dejavu_accent_system">Ngjyra sfondi</string>
+    <string name="dejavu_settings_icons">Ikona</string>
+    <string name="dejavu_icons_dejavu">Dyngjyrëshe</string>
+    <string name="dejavu_icons_firefox">Klasike</string>
+    <string name="dejavu_icons_rounded">Të rrumbullakëta</string>
+    <string name="dejavu_settings_essentials">Thelbësore</string>
+    <string name="dejavu_settings_essentials_summary">Fshihi krejt, ose vetëm disa prej tyre, në këtë telefon</string>
+    <string name="dejavu_essentials_hint">Thelbësoret që fshihni këtu mbeten në Zen dhe në pajisjet tuaja të tjera, dhe rikthehen kur i shfaqni sërish.</string>
+    <string name="dejavu_essentials_show">Shfaqi thelbësoret</string>
+    <string name="dejavu_essentials_none">Ende s\'ka thelbësore. Tërhiqni një skedë në majë të faqes kreu, që ta shtoni te thelbësoret.</string>
 </resources>

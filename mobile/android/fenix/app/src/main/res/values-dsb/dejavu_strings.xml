@@ -532,8 +532,8 @@
     <string name="dejavu_welcome_default_done">Dejavu jo twój standardny wobglědowak.</string>
     <string name="dejavu_welcome_sync_title">Twóje źěłowe rumy na kuždem rěźe</string>
     <string name="dejavu_welcome_sync_text">Pśizjaw se z Mozilla-kontom, aby źěłowe rumy, pśipěte rejtariki a nejwažnjejše ze Zen abo rejtariki z Firefox synchronizěrował.</string>
-    <string name="dejavu_settings_matrix">Chat pśez Matrix</string>
-    <string name="dejavu_settings_matrix_summary">Pšašaj se, naraź funkciju abo daj zmólku k wěsći</string>
+    <string name="dejavu_settings_email">E-mail</string>
+    <string name="dejavu_settings_email_summary">Pšašaj se, naraź funkciju abo daj zmólku k wěsći</string>
     <string name="dejavu_menu_clear_data">Daty wulašowaś</string>
     <string name="dejavu_menu_clear_data_and_quit">Daty wulašowaś a skóńcyś</string>
     <string name="dejavu_clear_data_button">Tłocašk „Daty wulašowaś“</string>
@@ -609,4 +609,17 @@
     <string name="dejavu_settings_all_animations_summary">Menije, boki a tłocaški se gibaju, gaž se wócynjaju a zacynjaju. Gaž to jo znjemóžnjone, se ned pokazuju.</string>
     <string name="dejavu_settings_genie_effect">Efekt džina</string>
     <string name="dejavu_settings_genie_effect_summary">Cytańske znamjenja, historija, ześěgnjenja, nastajenja a wašo konto wulěwaju se ze swójich tłocaškow na startowem boku a wrośaju se slědk.</string>
+    <string name="dejavu_passkeys_unsupported">Gronidłowe kluce se w toś tej wersiji Android hyšći njepódpěraju</string>
+    <string name="dejavu_settings_accent_color">Akcentowa barwa</string>
+    <string name="dejavu_accent_neutral">Neutralna</string>
+    <string name="dejavu_accent_system">Barwy slězynowego wobraza</string>
+    <string name="dejavu_settings_icons">Symbole</string>
+    <string name="dejavu_icons_dejavu">Dwójobarwne</string>
+    <string name="dejavu_icons_firefox">Klasiske</string>
+    <string name="dejavu_icons_rounded">Kulowate</string>
+    <string name="dejavu_settings_essentials">Nejwažnjejše</string>
+    <string name="dejavu_settings_essentials_summary">Wšykne abo někotare z nich na toś tom telefonje schowaś</string>
+    <string name="dejavu_essentials_hint">Nejwažnjejše, kótarež how schowajoš, wóstanu w Zen a na twójich drugich rědach a pśidu slědk, gaž je zasej pokažoš.</string>
+    <string name="dejavu_essentials_show">Nejwažnjejše pokazaś</string>
+    <string name="dejavu_essentials_none">Hyšći njejsu žedne nejwažnjejše. Śěgni rejtarik na startowej wobrazowce górjej, aby jen k nejwažnjejšym pśidał.</string>
 </resources>

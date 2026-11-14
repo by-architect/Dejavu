@@ -532,8 +532,8 @@
     <string name="dejavu_welcome_default_done">Dejavu — ваш типовий браузер.</string>
     <string name="dejavu_welcome_sync_title">Ваші робочі простори на кожному пристрої</string>
     <string name="dejavu_welcome_sync_text">Увійдіть з обліковим записом Mozilla, щоб синхронізувати робочі простори, закріплені вкладки й обране з Zen або вкладки з Firefox.</string>
-    <string name="dejavu_settings_matrix">Чат у Matrix</string>
-    <string name="dejavu_settings_matrix_summary">Поставте запитання, запропонуйте функцію або повідомте про помилку</string>
+    <string name="dejavu_settings_email">Електронна пошта</string>
+    <string name="dejavu_settings_email_summary">Поставте запитання, запропонуйте функцію або повідомте про помилку</string>
     <string name="dejavu_menu_clear_data">Очистити дані</string>
     <string name="dejavu_menu_clear_data_and_quit">Очистити дані й вийти</string>
     <string name="dejavu_clear_data_button">Кнопка «Очистити дані»</string>
@@ -609,4 +609,17 @@
     <string name="dejavu_settings_all_animations_summary">Меню, сторінки та кнопки рухаються під час відкриття й закриття. Якщо вимкнено, вони з’являються одразу.</string>
     <string name="dejavu_settings_genie_effect">Ефект джина</string>
     <string name="dejavu_settings_genie_effect_summary">Закладки, історія, завантаження, налаштування та ваш обліковий запис витікають зі своїх кнопок на головній сторінці й повертаються назад.</string>
+    <string name="dejavu_passkeys_unsupported">Ключі доступу поки не підтримуються в цій версії Android</string>
+    <string name="dejavu_settings_accent_color">Колір акценту</string>
+    <string name="dejavu_accent_neutral">Нейтральний</string>
+    <string name="dejavu_accent_system">Кольори шпалер</string>
+    <string name="dejavu_settings_icons">Значки</string>
+    <string name="dejavu_icons_dejavu">Двотонові</string>
+    <string name="dejavu_icons_firefox">Класичні</string>
+    <string name="dejavu_icons_rounded">Заокруглені</string>
+    <string name="dejavu_settings_essentials">Обране</string>
+    <string name="dejavu_settings_essentials_summary">Приховати всі або деякі з них на цьому телефоні</string>
+    <string name="dejavu_essentials_hint">Вкладки з обраного, які ви тут приховуєте, залишаються в Zen і на інших ваших пристроях та повертаються, коли ви знову їх показуєте.</string>
+    <string name="dejavu_essentials_show">Показувати обране</string>
+    <string name="dejavu_essentials_none">В обраному ще нічого немає. Перетягніть вкладку на самий верх головної сторінки, щоб додати її до обраного.</string>
 </resources>

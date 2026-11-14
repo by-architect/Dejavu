@@ -549,8 +549,8 @@
     <string name="dejavu_welcome_default_done">Dejavu आपका डिफ़ॉल्ट ब्राउज़र है।</string>
     <string name="dejavu_welcome_sync_title">आपके वर्कस्पेस हर डिवाइस पर</string>
     <string name="dejavu_welcome_sync_text">Zen के साथ वर्कस्पेस, पिन किए गए टैब और एसेंशियल्स, या Firefox के साथ टैब सिंक करने के लिए Mozilla अकाउंट से साइन इन करें।</string>
-    <string name="dejavu_settings_matrix">Matrix पर चैट करें</string>
-    <string name="dejavu_settings_matrix_summary">सवाल पूछें, कोई फ़ीचर सुझाएं या बग रिपोर्ट करें</string>
+    <string name="dejavu_settings_email">ईमेल</string>
+    <string name="dejavu_settings_email_summary">सवाल पूछें, कोई फ़ीचर सुझाएं या बग रिपोर्ट करें</string>
     <string name="dejavu_menu_clear_data">डेटा मिटाएं</string>
     <string name="dejavu_menu_clear_data_and_quit">डेटा मिटाएं और बाहर निकलें</string>
     <string name="dejavu_clear_data_button">“डेटा मिटाएं” बटन</string>
@@ -626,4 +626,17 @@
     <string name="dejavu_settings_all_animations_summary">मेन्यू, पेज और बटन खुलते और बंद होते समय हिलते हैं। बंद होने पर वे तुरंत दिखते हैं।</string>
     <string name="dejavu_settings_genie_effect">जिनी इफ़ेक्ट</string>
     <string name="dejavu_settings_genie_effect_summary">बुकमार्क, हिस्ट्री, डाउनलोड, सेटिंग और आपका अकाउंट होमपेज पर अपने बटनों से बहकर बाहर आते हैं और वापस चले जाते हैं।</string>
+    <string name="dejavu_passkeys_unsupported">इस Android संस्करण पर पास-की अभी समर्थित नहीं हैं</string>
+    <string name="dejavu_settings_accent_color">ऐक्सेंट कलर</string>
+    <string name="dejavu_accent_neutral">न्यूट्रल</string>
+    <string name="dejavu_accent_system">वॉलपेपर के कलर</string>
+    <string name="dejavu_settings_icons">आइकन</string>
+    <string name="dejavu_icons_dejavu">टू-टोन</string>
+    <string name="dejavu_icons_firefox">क्लासिक</string>
+    <string name="dejavu_icons_rounded">गोल</string>
+    <string name="dejavu_settings_essentials">एसेंशियल्स</string>
+    <string name="dejavu_settings_essentials_summary">इस फ़ोन पर सभी या कुछ एसेंशियल्स छिपाएं</string>
+    <string name="dejavu_essentials_hint">यहां छिपाए गए एसेंशियल्स Zen में और आपके दूसरे डिवाइस पर बने रहते हैं, और फिर से दिखाने पर वापस आ जाते हैं।</string>
+    <string name="dejavu_essentials_show">एसेंशियल्स दिखाएं</string>
+    <string name="dejavu_essentials_none">अभी तक कोई एसेंशियल नहीं है। किसी टैब को एसेंशियल बनाने के लिए उसे होमपेज पर सबसे ऊपर खींचें।</string>
 </resources>

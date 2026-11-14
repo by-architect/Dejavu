@@ -516,8 +516,8 @@
     <string name="dejavu_welcome_default_done">Dejavu — сіздің негізгі браузеріңіз.</string>
     <string name="dejavu_welcome_sync_title">Жұмыс кеңістіктеріңіз әр құрылғыда</string>
     <string name="dejavu_welcome_sync_text">Жұмыс кеңістіктерін, бекітілген беттерді және негізгілерді Zen-мен, ал беттерді Firefox-пен синхрондау үшін Mozilla есептік жазбасымен кіріңіз.</string>
-    <string name="dejavu_settings_matrix">Matrix-те сөйлесу</string>
-    <string name="dejavu_settings_matrix_summary">Сұрақ қойыңыз, мүмкіндік ұсыныңыз немесе қате туралы хабарлаңыз</string>
+    <string name="dejavu_settings_email">Эл. пошта</string>
+    <string name="dejavu_settings_email_summary">Сұрақ қойыңыз, мүмкіндік ұсыныңыз немесе қате туралы хабарлаңыз</string>
     <string name="dejavu_menu_clear_data">Деректерді тазалау</string>
     <string name="dejavu_menu_clear_data_and_quit">Деректерді тазалап, жұмысты аяқтау</string>
     <string name="dejavu_clear_data_button">«Деректерді тазалау» батырмасы</string>
@@ -593,4 +593,17 @@
     <string name="dejavu_settings_all_animations_summary">Мәзірлер, беттер мен батырмалар ашылып-жабылғанда қозғалады. Сөндірілгенде олар бірден көрсетіледі.</string>
     <string name="dejavu_settings_genie_effect">Жын әсері</string>
     <string name="dejavu_settings_genie_effect_summary">Бетбелгілер, шолу тарихы, жүктемелер, баптаулар және есептік жазбаңыз басты беттегі батырмаларынан ағып шығып, қайта кіреді.</string>
+    <string name="dejavu_passkeys_unsupported">Қол жеткізу кілттеріне Android-тың бұл нұсқасында әлі қолдау көрсетілмейді</string>
+    <string name="dejavu_settings_accent_color">Акцент түсі</string>
+    <string name="dejavu_accent_neutral">Бейтарап</string>
+    <string name="dejavu_accent_system">Тұсқағаз түстері</string>
+    <string name="dejavu_settings_icons">Белгішелер</string>
+    <string name="dejavu_icons_dejavu">Екі реңкті</string>
+    <string name="dejavu_icons_firefox">Классикалық</string>
+    <string name="dejavu_icons_rounded">Дөңгеленген</string>
+    <string name="dejavu_settings_essentials">Негізгілер</string>
+    <string name="dejavu_settings_essentials_summary">Осы телефонда олардың барлығын немесе кейбірін жасыру</string>
+    <string name="dejavu_essentials_hint">Осында жасырған негізгілеріңіз Zen-де және басқа құрылғыларыңызда қалады, ал оларды қайта көрсеткенде, қайтып оралады.</string>
+    <string name="dejavu_essentials_show">Негізгілерді көрсету</string>
+    <string name="dejavu_essentials_none">Әзірге негізгілер жоқ. Бетті негізгіге айналдыру үшін оны басты беттің жоғарғы жағына сүйреңіз.</string>
 </resources>

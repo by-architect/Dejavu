@@ -516,8 +516,8 @@
     <string name="dejavu_welcome_default_done">Dejavu é o teu navegador predeterminado.</string>
     <string name="dejavu_welcome_sync_title">Os teus espazos de traballo en todos os dispositivos</string>
     <string name="dejavu_welcome_sync_text">Inicia sesión cunha conta de Mozilla para sincronizar espazos de traballo, lapelas fixadas e esenciais con Zen, ou lapelas con Firefox.</string>
-    <string name="dejavu_settings_matrix">Conversa en Matrix</string>
-    <string name="dejavu_settings_matrix_summary">Fai unha pregunta, suxire unha función ou informa dun erro</string>
+    <string name="dejavu_settings_email">Correo electrónico</string>
+    <string name="dejavu_settings_email_summary">Fai unha pregunta, suxire unha función ou informa dun erro</string>
     <string name="dejavu_menu_clear_data">Limpar datos</string>
     <string name="dejavu_menu_clear_data_and_quit">Limpar datos e saír</string>
     <string name="dejavu_clear_data_button">Botón «Limpar datos»</string>
@@ -593,4 +593,17 @@
     <string name="dejavu_settings_all_animations_summary">Os menús, as páxinas e os botóns móvense ao abrirse e pecharse. Desactivadas, aparecen ao instante.</string>
     <string name="dejavu_settings_genie_effect">Efecto xenio</string>
     <string name="dejavu_settings_genie_effect_summary">Os marcadores, o historial, as descargas, a configuración e a túa conta saen dos seus botóns na páxina de inicio e volven a eles.</string>
+    <string name="dejavu_passkeys_unsupported">As claves de acceso aínda non son compatibles con esta versión de Android</string>
+    <string name="dejavu_settings_accent_color">Cor de acento</string>
+    <string name="dejavu_accent_neutral">Neutra</string>
+    <string name="dejavu_accent_system">Cores do fondo de pantalla</string>
+    <string name="dejavu_settings_icons">Iconas</string>
+    <string name="dejavu_icons_dejavu">Dous tons</string>
+    <string name="dejavu_icons_firefox">Clásico</string>
+    <string name="dejavu_icons_rounded">Redondeado</string>
+    <string name="dejavu_settings_essentials">Esenciais</string>
+    <string name="dejavu_settings_essentials_summary">Agochar todos ou algúns neste teléfono</string>
+    <string name="dejavu_essentials_hint">Os esenciais que agoches aquí quedan en Zen e nos teus outros dispositivos, e volven cando os amoses de novo.</string>
+    <string name="dejavu_essentials_show">Amosar os esenciais</string>
+    <string name="dejavu_essentials_none">Aínda non hai esenciais. Arrastra unha lapela á parte superior da páxina de inicio para convertela nun esencial.</string>
 </resources>

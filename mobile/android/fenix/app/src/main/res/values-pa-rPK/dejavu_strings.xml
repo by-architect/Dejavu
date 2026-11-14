@@ -516,8 +516,8 @@
     <string name="dejavu_welcome_default_done">Dejavu تہاڈا ڈیفالٹ براؤزر اے۔</string>
     <string name="dejavu_welcome_sync_title">تہاڈیاں ورک سپیساں ہر ڈیوائس تے</string>
     <string name="dejavu_welcome_sync_text">Zen نال ورک سپیساں، پن کیتیاں ٹیباں تے ضروری چیزاں، یا Firefox نال ٹیباں سنک کرن لئی Mozilla اکاؤنٹ نال سائن ان کرو۔</string>
-    <string name="dejavu_settings_matrix">Matrix تے گل بات کرو</string>
-    <string name="dejavu_settings_matrix_summary">سوال پچھو، کوئی فیچر سجھاؤ یا بگ دی رپورٹ کرو</string>
+    <string name="dejavu_settings_email">ای‌میل</string>
+    <string name="dejavu_settings_email_summary">سوال پچھو، کوئی فیچر سجھاؤ یا بگ دی رپورٹ کرو</string>
     <string name="dejavu_menu_clear_data">ڈیٹا صاف کرو</string>
     <string name="dejavu_menu_clear_data_and_quit">ڈیٹا صاف کر کے بند کرو</string>
     <string name="dejavu_clear_data_button">”ڈیٹا صاف کرو“ بٹن</string>
@@ -593,4 +593,17 @@
     <string name="dejavu_settings_all_animations_summary">مینو، صفحے تے بٹن کھلن تے بند ہون ویلے ہلدے نیں۔ بند ہون تے اوہ فوراً دسدے نیں۔</string>
     <string name="dejavu_settings_genie_effect">جن اثر</string>
     <string name="dejavu_settings_genie_effect_summary">بُک مارک، تریخ، ڈاؤن‌لوڈ، سیٹنگاں تے تہاڈا اکاؤنٹ گھر دے صفحے تے اپنے بٹناں وچوں وہہ کے باہر آندے نیں تے واپس چلے جاندے نیں۔</string>
+    <string name="dejavu_passkeys_unsupported">ایس Android ورژن تے پاس کی ہالے سپورٹ نئیں</string>
+    <string name="dejavu_settings_accent_color">نمایاں رنگ</string>
+    <string name="dejavu_accent_neutral">نیوٹرل</string>
+    <string name="dejavu_accent_system">والپیپر دے رنگ</string>
+    <string name="dejavu_settings_icons">آئیکن</string>
+    <string name="dejavu_icons_dejavu">دو رنگا</string>
+    <string name="dejavu_icons_firefox">کلاسیکی</string>
+    <string name="dejavu_icons_rounded">گول</string>
+    <string name="dejavu_settings_essentials">ضروری چیزاں</string>
+    <string name="dejavu_settings_essentials_summary">ایس فون تے ساریاں یا کجھ لکاؤ</string>
+    <string name="dejavu_essentials_hint">جیہڑیاں ضروری چیزاں تسیں ایتھے لکاندے او، اوہ Zen وچ تے تہاڈے دوجے ڈیوائساں تے رہندیاں نيں، تے جدوں تسیں اوہناں نوں فیر وکھاندے او تاں واپس آ جاندیاں نيں۔</string>
+    <string name="dejavu_essentials_show">ضروری چیزاں وکھاؤ</string>
+    <string name="dejavu_essentials_none">اجے کوئی ضروری چیز نہیں۔ کسے ٹیب نوں ضروری چیز بناݨ لئی اوہنوں ہوم سکرین دے سب توں اُتے کھچو۔</string>
 </resources>

@@ -516,8 +516,8 @@
     <string name="dejavu_welcome_default_done">Ang Dejavu amo ang imo default nga browser.</string>
     <string name="dejavu_welcome_sync_title">Imo mga workspace sa tagsa ka device</string>
     <string name="dejavu_welcome_sync_text">Mag-sign in gamit ang Mozilla account para i-sync ang mga workspace, naka-pin nga mga tab kag Importante upod ang Zen, ukon mga tab upod ang Firefox.</string>
-    <string name="dejavu_settings_matrix">Mag-chat sa Matrix</string>
-    <string name="dejavu_settings_matrix_summary">Mamangkot, mag-suggest sang feature, ukon mag-report sang bug</string>
+    <string name="dejavu_settings_email">Email</string>
+    <string name="dejavu_settings_email_summary">Mamangkot, mag-suggest sang feature, ukon mag-report sang bug</string>
     <string name="dejavu_menu_clear_data">i-Clear ang data</string>
     <string name="dejavu_menu_clear_data_and_quit">i-Clear ang data kag mag-quit</string>
     <string name="dejavu_clear_data_button">Button nga “i-Clear ang data”</string>
@@ -593,4 +593,17 @@
     <string name="dejavu_settings_all_animations_summary">Ang mga menu, pahina kag button nagahulag samtang nagabukas kag nagasira. Kon ginpatay, nagapakita dayon sila.</string>
     <string name="dejavu_settings_genie_effect">Epekto sang genie</string>
     <string name="dejavu_settings_genie_effect_summary">Ang mga bookmark, kasaysayan, download, setting kag imo account nagailig pagwa sa ila mga button sa home page kag nagabalik.</string>
+    <string name="dejavu_passkeys_unsupported">Wala pa ginasuportahan ang mga passkey sa sini nga bersyon sang Android</string>
+    <string name="dejavu_settings_accent_color">Kolor sang accent</string>
+    <string name="dejavu_accent_neutral">Neutral</string>
+    <string name="dejavu_accent_system">Mga kolor sang wallpaper</string>
+    <string name="dejavu_settings_icons">Mga icon</string>
+    <string name="dejavu_icons_dejavu">Duha ka tono</string>
+    <string name="dejavu_icons_firefox">Klasiko</string>
+    <string name="dejavu_icons_rounded">Malidong</string>
+    <string name="dejavu_settings_essentials">Importante</string>
+    <string name="dejavu_settings_essentials_summary">Tagua ang tanan ukon pila sa sini nga telepono</string>
+    <string name="dejavu_essentials_hint">Ang Importante nga ginatago mo diri nagapabilin sa Zen kag sa imo iban nga mga device, kag nagabalik kon ipakita mo sila liwat.</string>
+    <string name="dejavu_essentials_show">Ipakita ang Importante</string>
+    <string name="dejavu_essentials_none">Wala pa sang Importante. I-drag ang isa ka tab sa ibabaw sang home screen para himuon ini nga Importante.</string>
 </resources>

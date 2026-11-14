@@ -516,8 +516,8 @@
     <string name="dejavu_welcome_default_done">Dejavu ist dein Standardbrowser.</string>
     <string name="dejavu_welcome_sync_title">Deine Arbeitsbereiche auf jedem Gerät</string>
     <string name="dejavu_welcome_sync_text">Melde dich mit einem Mozilla-Konto an, um Arbeitsbereiche, angeheftete Tabs und Favoriten mit Zen oder Tabs mit Firefox zu synchronisieren.</string>
-    <string name="dejavu_settings_matrix">Auf Matrix chatten</string>
-    <string name="dejavu_settings_matrix_summary">Stell eine Frage, schlag eine Funktion vor oder melde einen Fehler</string>
+    <string name="dejavu_settings_email">E-Mail</string>
+    <string name="dejavu_settings_email_summary">Stell eine Frage, schlag eine Funktion vor oder melde einen Fehler</string>
     <string name="dejavu_menu_clear_data">Daten löschen</string>
     <string name="dejavu_menu_clear_data_and_quit">Daten löschen und beenden</string>
     <string name="dejavu_clear_data_button">Schaltfläche „Daten löschen“</string>
@@ -593,4 +593,17 @@
     <string name="dejavu_settings_all_animations_summary">Menüs, Seiten und Schaltflächen bewegen sich beim Öffnen und Schließen. Ausgeschaltet erscheinen sie sofort.</string>
     <string name="dejavu_settings_genie_effect">Trichtereffekt</string>
     <string name="dejavu_settings_genie_effect_summary">Lesezeichen, Chronik, Downloads, Einstellungen und Ihr Konto fließen auf der Startseite aus ihren Schaltflächen heraus und wieder hinein.</string>
+    <string name="dejavu_passkeys_unsupported">Zugangsschlüssel werden in dieser Android-Version noch nicht unterstützt</string>
+    <string name="dejavu_settings_accent_color">Akzentfarbe</string>
+    <string name="dejavu_accent_neutral">Neutral</string>
+    <string name="dejavu_accent_system">Farben des Hintergrundbilds</string>
+    <string name="dejavu_settings_icons">Symbole</string>
+    <string name="dejavu_icons_dejavu">Zweifarbig</string>
+    <string name="dejavu_icons_firefox">Klassisch</string>
+    <string name="dejavu_icons_rounded">Abgerundet</string>
+    <string name="dejavu_settings_essentials">Favoriten</string>
+    <string name="dejavu_settings_essentials_summary">Alle oder einige davon auf diesem Telefon ausblenden</string>
+    <string name="dejavu_essentials_hint">Favoriten, die du hier ausblendest, bleiben in Zen und auf deinen anderen Geräten erhalten und kommen zurück, wenn du sie wieder einblendest.</string>
+    <string name="dejavu_essentials_show">Favoriten anzeigen</string>
+    <string name="dejavu_essentials_none">Noch keine Favoriten. Ziehe einen Tab auf dem Startbildschirm ganz nach oben, um ihn zu einem Favoriten zu machen.</string>
 </resources>

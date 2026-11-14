@@ -34,7 +34,6 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalConfiguration
 import androidx.compose.ui.platform.LocalContext
-import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import androidx.core.graphics.drawable.toDrawable
@@ -60,6 +59,7 @@ import org.mozilla.fenix.dejavu.browser.SplitSpace
 import org.mozilla.fenix.dejavu.settings.DejavuSettings
 import org.mozilla.fenix.dejavu.settings.PageBackdrop
 import org.mozilla.fenix.dejavu.ui.DejavuMotion
+import org.mozilla.fenix.dejavu.ui.iconPainter
 import org.mozilla.fenix.dejavu.workspaces.SplitOrientation
 import org.mozilla.fenix.dejavu.workspaces.WorkspaceRepository
 import org.mozilla.fenix.dejavu.workspaces.WorkspaceState
@@ -252,7 +252,7 @@ private fun MoreMenuContent(
                 modifier = Modifier.fillMaxWidth().padding(horizontal = 12.dp, vertical = 8.dp),
             ) {
                 Icon(
-                    painter = painterResource(R.drawable.dejavu_ic_extensions_24),
+                    painter = iconPainter(R.drawable.dejavu_ic_extensions_24),
                     contentDescription = null,
                     tint = MaterialTheme.colorScheme.onSurface,
                 )

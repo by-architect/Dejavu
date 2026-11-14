@@ -19,6 +19,8 @@ import org.mozilla.fenix.dejavu.actions.RowAction
 import org.mozilla.fenix.dejavu.browser.BarsLayout
 import org.mozilla.fenix.dejavu.browser.FloatingButtonPlace
 import org.mozilla.fenix.dejavu.menu.AddressBarButtons
+import org.mozilla.fenix.dejavu.ui.AccentColor
+import org.mozilla.fenix.dejavu.ui.IconStyle
 import org.robolectric.RobolectricTestRunner
 
 @RunWith(RobolectricTestRunner::class)
@@ -87,6 +89,33 @@ class DejavuSettingsTest {
         settings.setGenieEffect(true)
         assertFalse(newSettings().animations.value)
         assertTrue(newSettings().genieEffect.value)
+    }
+
+    @Test
+    fun `the accent color and the style of icons stay as the user picked them`() {
+        val settings = newSettings()
+        assertEquals(AccentColor.NEUTRAL, settings.accentColor.value)
+        assertEquals(IconStyle.DEJAVU, settings.iconStyle.value)
+
+        settings.setAccentColor(AccentColor.BLUE)
+        settings.setIconStyle(IconStyle.FIREFOX)
+        assertEquals(AccentColor.BLUE, newSettings().accentColor.value)
+        assertEquals(IconStyle.FIREFOX, newSettings().iconStyle.value)
+    }
+
+    @Test
+    fun `the essentials show until the user hides them, all of them or one by one`() {
+        val settings = newSettings()
+        assertTrue(settings.essentialsShown.value)
+        assertEquals(emptySet<String>(), settings.hiddenEssentials.value)
+
+        settings.setEssentialHidden("a", hidden = true)
+        settings.setEssentialHidden("b", hidden = true)
+        settings.setEssentialHidden("a", hidden = false)
+        settings.setEssentialsShown(false)
+        val read = newSettings()
+        assertFalse(read.essentialsShown.value)
+        assertEquals(setOf("b"), read.hiddenEssentials.value)
     }
 
     @Test

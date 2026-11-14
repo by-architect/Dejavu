@@ -135,6 +135,17 @@
     <string name="dejavu_external_links_private_summary">Links from other apps open in the private workspace, without a container.</string>
     <string name="dejavu_essentials_per_container">Essentials per container</string>
     <string name="dejavu_essentials_per_container_summary">Each container keeps its own essentials. A workspace shows the essentials of its default container.</string>
+    <!-- Settings: the essentials shown on this phone, under Tabs, workspaces and containers -->
+    <string name="pref_key_dejavu_essentials" translatable="false">pref_key_dejavu_essentials</string>
+    <!-- Setting under Tabs, workspaces and containers, and the title of its screen. Essentials are the pinned tabs every workspace shows, at the top of the home screen. -->
+    <string name="dejavu_settings_essentials">Essentials</string>
+    <string name="dejavu_settings_essentials_summary">Hide all or some of them on this phone</string>
+    <!-- Text at the top of the Essentials settings screen. Zen is the Zen Browser on computers. -->
+    <string name="dejavu_essentials_hint">Essentials you hide here stay in Zen and on your other devices, and come back when you show them again.</string>
+    <!-- Switch of the Essentials settings screen: whether the home screen shows the essentials at all. Below it, each essential has its own switch. -->
+    <string name="dejavu_essentials_show">Show essentials</string>
+    <!-- Shown on the Essentials settings screen when there are none. -->
+    <string name="dejavu_essentials_none">No essentials yet. Drag a tab to the top of the home screen to make it one.</string>
 
     <!-- Deleting pinned tabs, essentials and folders -->
     <string name="dejavu_delete_item_title">Delete “%1$s”?</string>
@@ -447,6 +458,24 @@
     <string name="dejavu_settings_genie_effect">Genie effect</string>
     <string name="dejavu_settings_genie_effect_summary">Bookmarks, history, downloads, settings and your account pour out of their buttons on the home screen and back in.</string>
 
+    <!-- Settings: Customize, the accent color and the style of the icons -->
+    <string name="pref_key_dejavu_accent_color" translatable="false">pref_key_dejavu_accent_color</string>
+    <string name="pref_key_dejavu_icon_style" translatable="false">pref_key_dejavu_icon_style</string>
+    <!-- Setting under Theme in Customize, shown as a row of colored circles: the color of switches, check marks, buttons and the tab shown. -->
+    <string name="dejavu_settings_accent_color">Accent color</string>
+    <!-- Read out by screen readers for the first circle of "Accent color": Dejavu's own accent, near white in the dark theme and near black in the light theme. -->
+    <string name="dejavu_accent_neutral">Neutral</string>
+    <!-- Read out by screen readers for the circle of "Accent color" that takes the colors Android picks from the wallpaper. -->
+    <string name="dejavu_accent_system">Wallpaper colors</string>
+    <!-- Heading over the styles of icons in Customize. -->
+    <string name="dejavu_settings_icons">Icons</string>
+    <!-- Style of icons: Dejavu's own icons, drawn with two shades of one color. -->
+    <string name="dejavu_icons_dejavu">Two-tone</string>
+    <!-- Style of icons: the icons of Firefox, which Dejavu had before its own. -->
+    <string name="dejavu_icons_firefox">Classic</string>
+    <!-- Style of icons: rounded icons like the ones of Android. -->
+    <string name="dejavu_icons_rounded">Rounded</string>
+
     <!-- Settings: the screens that group the settings under General -->
     <!-- Settings entry and screen title, under General, for the settings of tabs, workspaces and containers. -->
     <string name="dejavu_settings_tabs_workspaces">Tabs, workspaces and containers</string>
@@ -572,11 +601,11 @@
     <!-- Settings, at the top: opens the maker's page on Buy Me a Coffee, a site for small donations. -->
     <string name="dejavu_settings_coffee">Buy me a coffee</string>
     <string name="dejavu_settings_coffee_summary">Dejavu has no ads. If you enjoy it, a coffee helps it grow.</string>
-    <!-- Settings, at the top: opens Dejavu's chat room on Matrix, an open chat network. "Matrix" is a name, not translated. -->
-    <string name="dejavu_settings_matrix">Chat on Matrix</string>
-    <string name="dejavu_settings_matrix_summary">Ask a question, suggest a feature or report a bug</string>
+    <!-- Settings, at the top: starts an email to Dejavu's developer, or copies the address on a phone without an email app. -->
+    <string name="dejavu_settings_email">Email</string>
+    <string name="dejavu_settings_email_summary">Ask a question, suggest a feature or report a bug</string>
     <string name="pref_key_dejavu_top_category" translatable="false">pref_key_dejavu_top_category</string>
-    <string name="pref_key_dejavu_matrix" translatable="false">pref_key_dejavu_matrix</string>
+    <string name="pref_key_dejavu_email" translatable="false">pref_key_dejavu_email</string>
     <string name="pref_key_dejavu_whats_new" translatable="false">pref_key_dejavu_whats_new</string>
     <string name="pref_key_dejavu_tips" translatable="false">pref_key_dejavu_tips</string>
     <string name="pref_key_dejavu_source_code" translatable="false">pref_key_dejavu_source_code</string>
@@ -1003,4 +1032,6 @@
     <string name="dejavu_sidebery_export_failed">Couldn’t save the file. Try again.</string>
     <!-- Short message when the chosen file is not one that Sidebery exported. -->
     <string name="dejavu_sidebery_bad_file">This file isn’t a Sidebery snapshot or backup.</string>
+    <!-- Shown at the bottom of a web page that asked for a passkey, on Android 13 and older, where Dejavu cannot use passkeys yet. The page shows its own error at the same time. -->
+    <string name="dejavu_passkeys_unsupported">Passkeys aren\'t supported on this Android version yet</string>
 </resources>

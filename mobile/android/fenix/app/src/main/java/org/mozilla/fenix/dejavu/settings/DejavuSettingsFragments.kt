@@ -45,7 +45,6 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.alpha
 import androidx.compose.ui.platform.ComposeView
 import androidx.compose.ui.platform.ViewCompositionStrategy
-import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.pluralStringResource
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
@@ -81,6 +80,7 @@ import org.mozilla.fenix.dejavu.ui.DejavuButtonStyle
 import org.mozilla.fenix.dejavu.ui.DejavuDialog
 import org.mozilla.fenix.dejavu.ui.DejavuDialogButton
 import org.mozilla.fenix.dejavu.ui.LocalPopupTheme
+import org.mozilla.fenix.dejavu.ui.iconPainter
 import org.mozilla.fenix.dejavu.ui.workspacePopupTheme
 import org.mozilla.fenix.dejavu.workspaces.WorkspaceLock
 import org.mozilla.fenix.dejavu.workspaces.WorkspaceLockTime
@@ -166,7 +166,7 @@ class DejavuTabActionsFragment : DejavuComposeFragment(R.string.dejavu_settings_
             SettingsHint(stringResource(R.string.dejavu_settings_tab_actions_hint))
             FilledButton(
                 text = stringResource(R.string.dejavu_custom_action_add),
-                icon = painterResource(iconsR.drawable.mozac_ic_plus_24),
+                icon = iconPainter(iconsR.drawable.mozac_ic_plus_24),
                 modifier = Modifier.fillMaxWidth().padding(horizontal = 16.dp),
                 onClick = { openEditor(null) },
             )
@@ -175,7 +175,7 @@ class DejavuTabActionsFragment : DejavuComposeFragment(R.string.dejavu_settings_
                 IconListItem(
                     label = stringResource(list.place.label),
                     description = placeSummary(list.place, placements, customActions),
-                    beforeIconPainter = painterResource(list.icon),
+                    beforeIconPainter = iconPainter(list.icon),
                     modifier = Modifier.settingsCard(index, ActionList.entries.size),
                     onClick = { openList(list) },
                 )
@@ -190,7 +190,7 @@ class DejavuTabActionsFragment : DejavuComposeFragment(R.string.dejavu_settings_
                     } else {
                         places.map { stringResource(it.label) }.joinToString(", ")
                     },
-                    beforeIconPainter = painterResource(action.icon),
+                    beforeIconPainter = iconPainter(action.icon),
                     modifier = Modifier.settingsCard(index, actions.size),
                     onClick = { choosing = action },
                 )
@@ -488,7 +488,7 @@ class DejavuContainersFragment : DejavuComposeFragment(R.string.dejavu_settings_
             itemsIndexed(containers.orEmpty(), key = { _, record -> record.contextId }) { index, record ->
                 IconListItem(
                     label = record.name,
-                    beforeIconPainter = painterResource(record.icon.drawable),
+                    beforeIconPainter = iconPainter(record.icon.drawable),
                     beforeIconTint = record.color.color,
                     modifier = Modifier.settingsCard(index, containerRows),
                     onClick = { editing = record },
@@ -497,7 +497,7 @@ class DejavuContainersFragment : DejavuComposeFragment(R.string.dejavu_settings_
             item {
                 IconListItem(
                     label = stringResource(R.string.dejavu_container_add),
-                    beforeIconPainter = painterResource(iconsR.drawable.mozac_ic_plus_24),
+                    beforeIconPainter = iconPainter(iconsR.drawable.mozac_ic_plus_24),
                     modifier = Modifier.settingsCard(containerRows - 1, containerRows),
                     onClick = { adding = true },
                 )

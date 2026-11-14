@@ -35,7 +35,6 @@ import androidx.compose.ui.draw.BlurredEdgeTreatment
 import androidx.compose.ui.draw.alpha
 import androidx.compose.ui.draw.blur
 import androidx.compose.ui.platform.LocalContext
-import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.semantics.clearAndSetSemantics
 import androidx.compose.ui.text.style.TextAlign
@@ -67,7 +66,7 @@ internal fun LockCover(
             .padding(24.dp),
     ) {
         Icon(
-            painter = painterResource(iconsR.drawable.mozac_ic_lock_24),
+            painter = iconPainter(iconsR.drawable.mozac_ic_lock_24),
             contentDescription = null,
             tint = MaterialTheme.colorScheme.onSurface,
             modifier = Modifier.size(40.dp),

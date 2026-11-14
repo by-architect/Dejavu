@@ -125,7 +125,6 @@ import mozilla.components.feature.readerview.ReaderViewFeature
 import mozilla.components.feature.search.SearchFeature
 import mozilla.components.feature.session.FullScreenFeature
 import mozilla.components.feature.session.PictureInPictureFeature
-import mozilla.components.feature.session.ScreenOrientationFeature
 import mozilla.components.feature.session.SessionFeature
 import mozilla.components.feature.session.SwipeRefreshFeature
 import mozilla.components.feature.sitepermissions.SitePermissionsFeature
@@ -211,6 +210,7 @@ import org.mozilla.fenix.customtabs.ExternalAppBrowserActivity
 import org.mozilla.fenix.databinding.FragmentBrowserBinding
 import org.mozilla.fenix.dejavu.browser.DejavuMouse
 import org.mozilla.fenix.dejavu.browser.DejavuToolbar
+import org.mozilla.fenix.dejavu.browser.FullscreenOrientationFeature
 import org.mozilla.fenix.dejavu.browser.SplitPanes
 import org.mozilla.fenix.dejavu.browser.barsLayout
 import org.mozilla.fenix.dejavu.browser.exitFullScreenKeepingBarsHidden
@@ -218,6 +218,7 @@ import org.mozilla.fenix.dejavu.browser.handleDejavuBackPressed
 import org.mozilla.fenix.dejavu.browser.installAboutConfigWarning
 import org.mozilla.fenix.dejavu.browser.installDejavuSplitView
 import org.mozilla.fenix.dejavu.browser.installLockedTabCover
+import org.mozilla.fenix.dejavu.browser.installPasskeyWarning
 import org.mozilla.fenix.dejavu.browser.padForNavigationBar
 import org.mozilla.fenix.dejavu.browser.restoreDejavuRotationAfterFullscreen
 import org.mozilla.fenix.dejavu.browser.showsLockedTab
@@ -343,7 +344,7 @@ abstract class BaseBrowserFragment :
     private var fullScreenMediaSessionFeature = ViewBoundFeatureWrapper<MediaSessionFullscreenFeature>()
     private val searchFeature = ViewBoundFeatureWrapper<SearchFeature>()
     private val webAuthnFeature = ViewBoundFeatureWrapper<WebAuthnFeature>()
-    private val screenOrientationFeature = ViewBoundFeatureWrapper<ScreenOrientationFeature>()
+    private val screenOrientationFeature = ViewBoundFeatureWrapper<FullscreenOrientationFeature>()
     private val biometricPromptFeature = ViewBoundFeatureWrapper<BiometricPromptFeature>()
     private val crashContentIntegration = ViewBoundFeatureWrapper<CrashContentIntegration>()
     private val readerViewBinding = ViewBoundFeatureWrapper<ReaderViewBinding>()
@@ -1247,6 +1248,7 @@ abstract class BaseBrowserFragment :
         installAboutConfigWarning(customTabSessionId)
         // Dejavu: a tab of a locked workspace stays covered until the workspace is unlocked.
         installLockedTabCover(customTabSessionId, binding.root)
+        installPasskeyWarning(binding.dynamicSnackbarContainer)
 
         // Dejavu: middle-click opens links in a background tab and hovering shows their address. Not in custom tabs.
         if (customTabSessionId == null) {
@@ -1424,11 +1426,13 @@ abstract class BaseBrowserFragment :
             )
         }
 
+        // Dejavu: page orientation locks only turn the screen while a tab is fullscreen (issue #290).
         screenOrientationFeature.set(
             feature =
-                ScreenOrientationFeature(
+                FullscreenOrientationFeature(
                     engine = requireComponents.core.engine,
                     activity = requireActivity(),
+                    store = requireComponents.core.store,
                 ),
             owner = this,
             view = view,

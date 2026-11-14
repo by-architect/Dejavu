@@ -508,8 +508,8 @@
     <string name="dejavu_welcome_default_done">Dejavu គឺជាកម្មវិធីរុករកលំនាំដើមរបស់អ្នក។</string>
     <string name="dejavu_welcome_sync_title">ចន្លោះការងាររបស់អ្នកនៅលើគ្រប់ឧបករណ៍</string>
     <string name="dejavu_welcome_sync_text">ចូលគណនី Mozilla ដើម្បីធ្វើសមកាលកម្មចន្លោះការងារ ផ្ទាំងបានខ្ទាស់ និងសំខាន់ៗជាមួយ Zen ឬផ្ទាំងជាមួយ Firefox។</string>
-    <string name="dejavu_settings_matrix">ជជែកនៅលើ Matrix</string>
-    <string name="dejavu_settings_matrix_summary">សួរសំណួរ ស្នើមុខងារ ឬរាយការណ៍កំហុស</string>
+    <string name="dejavu_settings_email">អ៊ីមែល</string>
+    <string name="dejavu_settings_email_summary">សួរសំណួរ ស្នើមុខងារ ឬរាយការណ៍កំហុស</string>
     <string name="dejavu_menu_clear_data">សម្អាតទិន្នន័យ</string>
     <string name="dejavu_menu_clear_data_and_quit">សម្អាតទិន្នន័យ និងចេញ</string>
     <string name="dejavu_clear_data_button">ប៊ូតុងសម្អាតទិន្នន័យ</string>
@@ -585,4 +585,17 @@
     <string name="dejavu_settings_all_animations_summary">ម៉ឺនុយ ទំព័រ និងប៊ូតុងផ្លាស់ទីពេលបើក និងបិទ។ ពេលបិទមុខងារនេះ វានឹងបង្ហាញភ្លាមៗ។</string>
     <string name="dejavu_settings_genie_effect">បែបផែនជីនី</string>
     <string name="dejavu_settings_genie_effect_summary">ចំណាំ ប្រវត្តិ ទាញយក ការកំណត់ និងគណនីរបស់អ្នក ហូរចេញពីប៊ូតុងរបស់វានៅលើទំព័រដើម ហើយត្រឡប់ចូលវិញ។</string>
+    <string name="dejavu_passkeys_unsupported">សោសម្ងាត់មិនទាន់ត្រូវបានគាំទ្រនៅលើកំណែ Android នេះនៅឡើយទេ</string>
+    <string name="dejavu_settings_accent_color">ពណ៌លេចធ្លោ</string>
+    <string name="dejavu_accent_neutral">អព្យាក្រឹត</string>
+    <string name="dejavu_accent_system">ពណ៌ផ្ទាំងរូបភាព</string>
+    <string name="dejavu_settings_icons">រូបតំណាង</string>
+    <string name="dejavu_icons_dejavu">ពីរពណ៌</string>
+    <string name="dejavu_icons_firefox">បុរាណ</string>
+    <string name="dejavu_icons_rounded">មូល</string>
+    <string name="dejavu_settings_essentials">សំខាន់ៗ</string>
+    <string name="dejavu_settings_essentials_summary">លាក់ទាំងអស់ ឬមួយចំនួននៅលើទូរស័ព្ទនេះ</string>
+    <string name="dejavu_essentials_hint">សំខាន់ៗដែលអ្នកលាក់នៅទីនេះ នៅតែមាននៅក្នុង Zen និងនៅលើឧបករណ៍ផ្សេងទៀតរបស់អ្នក ហើយនឹងត្រឡប់មកវិញ នៅពេលអ្នកបង្ហាញវាម្ដងទៀត។</string>
+    <string name="dejavu_essentials_show">បង្ហាញសំខាន់ៗ</string>
+    <string name="dejavu_essentials_none">មិនទាន់មានសំខាន់ៗនៅឡើយទេ។ អូសផ្ទាំងមួយទៅខាងលើនៃទំព័រដើម ដើម្បីធ្វើឱ្យវាជាសំខាន់។</string>
 </resources>

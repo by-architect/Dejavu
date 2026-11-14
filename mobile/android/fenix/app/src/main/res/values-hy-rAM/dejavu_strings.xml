@@ -516,8 +516,8 @@
     <string name="dejavu_welcome_default_done">Ձեր սկզբնադիր դիտարկիչը Dejavu է։</string>
     <string name="dejavu_welcome_sync_title">Ձեր տարածքները բոլոր սարքերում</string>
     <string name="dejavu_welcome_sync_text">Մուտք գործեք Mozilla հաշվով՝ տարածքները, ամրացված ներդիրներն ու կարևոր կայքերը Zen դիտարկիչի հետ, կամ ներդիրները Firefox դիտարկիչի հետ համաժամացնելու համար։</string>
-    <string name="dejavu_settings_matrix">Զրուցեք Matrix֊ում</string>
-    <string name="dejavu_settings_matrix_summary">Հարց տվեք, առաջարկեք գործառույթ կամ հայտնեք սխալի մասին</string>
+    <string name="dejavu_settings_email">Էլ. փոստ</string>
+    <string name="dejavu_settings_email_summary">Հարց տվեք, առաջարկեք գործառույթ կամ հայտնեք սխալի մասին</string>
     <string name="dejavu_menu_clear_data">Մաքրել տվյալները</string>
     <string name="dejavu_menu_clear_data_and_quit">Մաքրել տվյալները և փակել</string>
     <string name="dejavu_clear_data_button">«Մաքրել տվյալները» կոճակ</string>
@@ -593,4 +593,17 @@
     <string name="dejavu_settings_all_animations_summary">Ընտրացանկերը, էջերը և կոճակները շարժվում են բացվելիս և փակվելիս։ Անջատված լինելիս դրանք անմիջապես են հայտնվում։</string>
     <string name="dejavu_settings_genie_effect">Ջինի էֆեկտ</string>
     <string name="dejavu_settings_genie_effect_summary">Էջանիշերը, պատմությունը, ներբեռնումները, կարգավորումները և ձեր հաշիվը դուրս են հոսում իրենց կոճակներից գլխավոր էջում և վերադառնում։</string>
+    <string name="dejavu_passkeys_unsupported">Անցանիշները դեռ չեն աջակցվում Android-ի այս տարբերակում</string>
+    <string name="dejavu_settings_accent_color">Շեշտման գույն</string>
+    <string name="dejavu_accent_neutral">Չեզոք</string>
+    <string name="dejavu_accent_system">Պաստառի գույներ</string>
+    <string name="dejavu_settings_icons">Պատկերակներ</string>
+    <string name="dejavu_icons_dejavu">Երկերանգ</string>
+    <string name="dejavu_icons_firefox">Դասական</string>
+    <string name="dejavu_icons_rounded">Կլորացված</string>
+    <string name="dejavu_settings_essentials">Կարևոր կայքեր</string>
+    <string name="dejavu_settings_essentials_summary">Թաքցնել բոլորը կամ մի մասն այս հեռախոսում</string>
+    <string name="dejavu_essentials_hint">Այստեղ թաքցված կարևոր կայքերը մնում են Zen֊ում և ձեր մյուս սարքերում, և վերադառնում են, երբ դրանք նորից ցուցադրեք։</string>
+    <string name="dejavu_essentials_show">Ցուցադրել կարևոր կայքերը</string>
+    <string name="dejavu_essentials_none">Կարևոր կայքեր դեռ չկան։ Քաշեք ներդիրը գլխավոր էջի վերին մասը՝ այն կարևոր կայք դարձնելու համար։</string>
 </resources>

@@ -516,8 +516,8 @@
     <string name="dejavu_welcome_default_done">Dejavu al è il to navigadôr predefinît.</string>
     <string name="dejavu_welcome_sync_title">I tiei spazis di lavôr su ducj i dispositîfs</string>
     <string name="dejavu_welcome_sync_text">Jentre cuntun account Mozilla par sincronizâ spazis di lavôr, schedis fissadis e essenziâi cun Zen, o lis schedis cun Firefox.</string>
-    <string name="dejavu_settings_matrix">Cjacare su Matrix</string>
-    <string name="dejavu_settings_matrix_summary">Fâs une domande, sugjerìs une funzion o segnale un erôr</string>
+    <string name="dejavu_settings_email">E-mail</string>
+    <string name="dejavu_settings_email_summary">Fâs une domande, sugjerìs une funzion o segnale un erôr</string>
     <string name="dejavu_menu_clear_data">Nete dâts</string>
     <string name="dejavu_menu_clear_data_and_quit">Nete dâts e siere</string>
     <string name="dejavu_clear_data_button">Boton «Nete dâts»</string>
@@ -593,4 +593,17 @@
     <string name="dejavu_settings_all_animations_summary">I menù, lis pagjinis e i botons si movin cuant che si vierzin e si sierin. Cuant che a son disativadis, a comparissin subit.</string>
     <string name="dejavu_settings_genie_effect">Efiet gjeni</string>
     <string name="dejavu_settings_genie_effect_summary">Segnelibris, cronologjie, discjamâts, impostazions e il to account a saltin fûr dai lôr botons te pagjine principâl e a tornin dentri.</string>
+    <string name="dejavu_passkeys_unsupported">Lis passkey no son ancjemò supuartadis su cheste version di Android</string>
+    <string name="dejavu_settings_accent_color">Colôr di risalt</string>
+    <string name="dejavu_accent_neutral">Neutri</string>
+    <string name="dejavu_accent_system">Colôrs dal fonts</string>
+    <string name="dejavu_settings_icons">Iconis</string>
+    <string name="dejavu_icons_dejavu">Doi tons</string>
+    <string name="dejavu_icons_firefox">Classic</string>
+    <string name="dejavu_icons_rounded">Taront</string>
+    <string name="dejavu_settings_essentials">Essenziâi</string>
+    <string name="dejavu_settings_essentials_summary">Plate ducj o dome cualchidun su chest telefon</string>
+    <string name="dejavu_essentials_hint">I essenziâi che tu platis achì a restin in Zen e sui tiei altris dispositîfs, e a tornin cuant che tu ju mostris di gnûf.</string>
+    <string name="dejavu_essentials_show">Mostre i essenziâi</string>
+    <string name="dejavu_essentials_none">Ancjemò nissun essenziâl. Strissine une schede te part alte de videade iniziâl par fâle deventâ un essenziâl.</string>
 </resources>

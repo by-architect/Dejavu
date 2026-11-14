@@ -516,8 +516,8 @@
     <string name="dejavu_welcome_default_done">Dejavu ඔබේ පෙරනිමි අතිරික්සුවයි.</string>
     <string name="dejavu_welcome_sync_title">සෑම උපාංගයකම ඔබේ අවකාශ</string>
     <string name="dejavu_welcome_sync_text">අවකාශ, අමුණන ලද පටිති සහ අත්‍යවශ්‍යයන් Zen සමඟ, නැතහොත් පටිති Firefox සමඟ සමමුහුර්ත කිරීමට Mozilla ගිණුමකින් පිවිසෙන්න.</string>
-    <string name="dejavu_settings_matrix">Matrix හි කතාබස් කරන්න</string>
-    <string name="dejavu_settings_matrix_summary">ප්‍රශ්නයක් අසන්න, විශේෂාංගයක් යෝජනා කරන්න හෝ දෝෂයක් වාර්තා කරන්න</string>
+    <string name="dejavu_settings_email">වි-තැපෑල</string>
+    <string name="dejavu_settings_email_summary">ප්‍රශ්නයක් අසන්න, විශේෂාංගයක් යෝජනා කරන්න හෝ දෝෂයක් වාර්තා කරන්න</string>
     <string name="dejavu_menu_clear_data">දත්ත හිස් කරන්න</string>
     <string name="dejavu_menu_clear_data_and_quit">දත්ත හිස් කර ඉවත් වන්න</string>
     <string name="dejavu_clear_data_button">“දත්ත හිස් කරන්න” බොත්තම</string>
@@ -593,4 +593,17 @@
     <string name="dejavu_settings_all_animations_summary">මෙනු, පිටු සහ බොත්තම් විවෘත වන විට සහ වැසෙන විට චලනය වේ. අක්‍රිය විට ඒවා වහාම පෙන්වයි.</string>
     <string name="dejavu_settings_genie_effect">ජීනි ප්‍රයෝගය</string>
     <string name="dejavu_settings_genie_effect_summary">පොත්යොමු, ඉතිහාසය, බාගැනීම්, සැකසුම් සහ ඔබගේ ගිණුම මුල් පිටුවේ ඒවායේ බොත්තම් වලින් පිටතට ගලා ගොස් නැවත ඇතුළු වේ.</string>
+    <string name="dejavu_passkeys_unsupported">මෙම Android සංස්කරණයේ පාස්කී තවම සහාය නොදක්වයි</string>
+    <string name="dejavu_settings_accent_color">උච්චාරණ වර්ණය</string>
+    <string name="dejavu_accent_neutral">මධ්‍යස්ථ</string>
+    <string name="dejavu_accent_system">බිතුපතේ වර්ණ</string>
+    <string name="dejavu_settings_icons">අයිකන</string>
+    <string name="dejavu_icons_dejavu">ද්විවර්ණ</string>
+    <string name="dejavu_icons_firefox">සම්භාව්‍ය</string>
+    <string name="dejavu_icons_rounded">වටකුරු</string>
+    <string name="dejavu_settings_essentials">අත්‍යවශ්‍ය</string>
+    <string name="dejavu_settings_essentials_summary">මෙම දුරකථනයේ ඒවා සියල්ල හෝ සමහරක් සඟවන්න</string>
+    <string name="dejavu_essentials_hint">ඔබ මෙහි සඟවන අත්‍යවශ්‍යයන් Zen හි සහ ඔබේ අනෙක් උපාංගවල පවතින අතර, ඔබ ඒවා නැවත පෙන්වන විට ආපසු පැමිණේ.</string>
+    <string name="dejavu_essentials_show">අත්‍යවශ්‍යයන් පෙන්වන්න</string>
+    <string name="dejavu_essentials_none">තවම අත්‍යවශ්‍යයන් නැත. පටිත්තක් අත්‍යවශ්‍යයක් කිරීමට, එය මුල් පිටුවේ ඉහළටම අදින්න.</string>
 </resources>

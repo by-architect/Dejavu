@@ -516,8 +516,8 @@
     <string name="dejavu_welcome_default_done">Dejavu ನಿಮ್ಮ ಪೂರ್ವನಿಯೋಜಿತ ಬ್ರೌಸರ್ ಆಗಿದೆ.</string>
     <string name="dejavu_welcome_sync_title">ಪ್ರತಿ ಸಾಧನದಲ್ಲೂ ನಿಮ್ಮ ಕಾರ್ಯಕ್ಷೇತ್ರಗಳು</string>
     <string name="dejavu_welcome_sync_text">Zen ಜೊತೆ ಕಾರ್ಯಕ್ಷೇತ್ರಗಳು, ಪಿನ್ ಮಾಡಿದ ಟ್ಯಾಬ್‌ಗಳು ಮತ್ತು ಅಗತ್ಯವಾದವನ್ನು, ಅಥವಾ Firefox ಜೊತೆ ಟ್ಯಾಬ್‌ಗಳನ್ನು ಸಿಂಕ್ ಮಾಡಲು Mozilla ಖಾತೆಯೊಂದಿಗೆ ಸೈನ್ ಇನ್ ಮಾಡಿ.</string>
-    <string name="dejavu_settings_matrix">Matrix ನಲ್ಲಿ ಚಾಟ್ ಮಾಡಿ</string>
-    <string name="dejavu_settings_matrix_summary">ಪ್ರಶ್ನೆ ಕೇಳಿ, ವೈಶಿಷ್ಟ್ಯವನ್ನು ಸೂಚಿಸಿ ಅಥವಾ ದೋಷವನ್ನು ವರದಿ ಮಾಡಿ</string>
+    <string name="dejavu_settings_email">ಇಮೇಲ್</string>
+    <string name="dejavu_settings_email_summary">ಪ್ರಶ್ನೆ ಕೇಳಿ, ವೈಶಿಷ್ಟ್ಯವನ್ನು ಸೂಚಿಸಿ ಅಥವಾ ದೋಷವನ್ನು ವರದಿ ಮಾಡಿ</string>
     <string name="dejavu_menu_clear_data">ಡೇಟಾ ತೆರವುಗೊಳಿಸು</string>
     <string name="dejavu_menu_clear_data_and_quit">ಡೇಟಾ ತೆರವುಗೊಳಿಸಿ ನಿರ್ಗಮಿಸು</string>
     <string name="dejavu_clear_data_button">“ಡೇಟಾ ತೆರವುಗೊಳಿಸು” ಬಟನ್</string>
@@ -593,4 +593,17 @@
     <string name="dejavu_settings_all_animations_summary">ಮೆನುಗಳು, ಪುಟಗಳು ಮತ್ತು ಬಟನ್‌ಗಳು ತೆರೆಯುವಾಗ ಮತ್ತು ಮುಚ್ಚುವಾಗ ಚಲಿಸುತ್ತವೆ. ಆಫ್ ಮಾಡಿದಾಗ, ಅವು ತಕ್ಷಣ ಕಾಣಿಸುತ್ತವೆ.</string>
     <string name="dejavu_settings_genie_effect">ಜಿನೀ ಪರಿಣಾಮ</string>
     <string name="dejavu_settings_genie_effect_summary">ಬುಕ್‌ಮಾರ್ಕ್‌ಗಳು, ಇತಿಹಾಸ, ಡೌನ್‌ಲೋಡ್‌ಗಳು, ಸಿದ್ಧತೆಗಳು ಮತ್ತು ನಿಮ್ಮ ಖಾತೆ ಮುಖಪುಟದಲ್ಲಿನ ಅವುಗಳ ಬಟನ್‌ಗಳಿಂದ ಹರಿದು ಹೊರಬಂದು ಮತ್ತೆ ಒಳಗೆ ಹೋಗುತ್ತವೆ.</string>
+    <string name="dejavu_passkeys_unsupported">ಈ Android ಆವೃತ್ತಿಯಲ್ಲಿ ಪಾಸ್‌ಕೀಗಳು ಇನ್ನೂ ಬೆಂಬಲಿತವಾಗಿಲ್ಲ</string>
+    <string name="dejavu_settings_accent_color">ಎದ್ದುಕಾಣುವ ಬಣ್ಣ</string>
+    <string name="dejavu_accent_neutral">ತಟಸ್ಥ</string>
+    <string name="dejavu_accent_system">ವಾಲ್‌ಪೇಪರ್ ಬಣ್ಣಗಳು</string>
+    <string name="dejavu_settings_icons">ಚಿಹ್ನೆಗಳು</string>
+    <string name="dejavu_icons_dejavu">ಎರಡು ಛಾಯೆ</string>
+    <string name="dejavu_icons_firefox">ಕ್ಲಾಸಿಕ್</string>
+    <string name="dejavu_icons_rounded">ದುಂಡಾದ</string>
+    <string name="dejavu_settings_essentials">ಅಗತ್ಯವಾದವು</string>
+    <string name="dejavu_settings_essentials_summary">ಈ ಫೋನ್‌ನಲ್ಲಿ ಎಲ್ಲವನ್ನೂ ಅಥವಾ ಕೆಲವನ್ನು ಮರೆಮಾಡಿ</string>
+    <string name="dejavu_essentials_hint">ನೀವು ಇಲ್ಲಿ ಮರೆಮಾಡುವ ಅಗತ್ಯವಾದವು Zen ನಲ್ಲಿ ಮತ್ತು ನಿಮ್ಮ ಇತರ ಸಾಧನಗಳಲ್ಲಿ ಉಳಿಯುತ್ತವೆ, ಮತ್ತು ನೀವು ಅವುಗಳನ್ನು ಮತ್ತೆ ತೋರಿಸಿದಾಗ ಹಿಂತಿರುಗುತ್ತವೆ.</string>
+    <string name="dejavu_essentials_show">ಅಗತ್ಯವಾದವುಗಳನ್ನು ತೋರಿಸು</string>
+    <string name="dejavu_essentials_none">ಇನ್ನೂ ಯಾವುದೇ ಅಗತ್ಯವಾದವು ಇಲ್ಲ. ಟ್ಯಾಬ್ ಅನ್ನು ಅಗತ್ಯವಾದುದನ್ನಾಗಿ ಮಾಡಲು, ಅದನ್ನು ಮುಖಪುಟ ಪರದೆಯ ಮೇಲ್ಭಾಗಕ್ಕೆ ಎಳೆಯಿರಿ.</string>
 </resources>

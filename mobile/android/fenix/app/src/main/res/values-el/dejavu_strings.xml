@@ -516,8 +516,8 @@
     <string name="dejavu_welcome_default_done">Το Dejavu είναι το προεπιλεγμένο σας πρόγραμμα περιήγησης.</string>
     <string name="dejavu_welcome_sync_title">Οι χώροι εργασίας σας σε κάθε συσκευή</string>
     <string name="dejavu_welcome_sync_text">Συνδεθείτε με λογαριασμό Mozilla για να συγχρονίζετε χώρους εργασίας, καρφιτσωμένες καρτέλες και αγαπημένα με το Zen, ή καρτέλες με το Firefox.</string>
-    <string name="dejavu_settings_matrix">Συνομιλία στο Matrix</string>
-    <string name="dejavu_settings_matrix_summary">Κάντε μια ερώτηση, προτείνετε μια λειτουργία ή αναφέρετε ένα σφάλμα</string>
+    <string name="dejavu_settings_email">Email</string>
+    <string name="dejavu_settings_email_summary">Κάντε μια ερώτηση, προτείνετε μια λειτουργία ή αναφέρετε ένα σφάλμα</string>
     <string name="dejavu_menu_clear_data">Εκκαθάριση δεδομένων</string>
     <string name="dejavu_menu_clear_data_and_quit">Εκκαθάριση δεδομένων και έξοδος</string>
     <string name="dejavu_clear_data_button">Κουμπί «Εκκαθάριση δεδομένων»</string>
@@ -593,4 +593,17 @@
     <string name="dejavu_settings_all_animations_summary">Τα μενού, οι σελίδες και τα κουμπιά κινούνται καθώς ανοίγουν και κλείνουν. Όταν είναι απενεργοποιημένα, εμφανίζονται αμέσως.</string>
     <string name="dejavu_settings_genie_effect">Εφέ τζίνι</string>
     <string name="dejavu_settings_genie_effect_summary">Οι σελιδοδείκτες, το ιστορικό, οι λήψεις, οι ρυθμίσεις και ο λογαριασμός σας ξεχύνονται από τα κουμπιά τους στην αρχική σελίδα και επιστρέφουν σε αυτά.</string>
+    <string name="dejavu_passkeys_unsupported">Τα κλειδιά πρόσβασης δεν υποστηρίζονται ακόμα σε αυτή την έκδοση του Android</string>
+    <string name="dejavu_settings_accent_color">Χρώμα έμφασης</string>
+    <string name="dejavu_accent_neutral">Ουδέτερο</string>
+    <string name="dejavu_accent_system">Χρώματα ταπετσαρίας</string>
+    <string name="dejavu_settings_icons">Εικονίδια</string>
+    <string name="dejavu_icons_dejavu">Δίχρωμα</string>
+    <string name="dejavu_icons_firefox">Κλασικά</string>
+    <string name="dejavu_icons_rounded">Στρογγυλεμένα</string>
+    <string name="dejavu_settings_essentials">Αγαπημένα</string>
+    <string name="dejavu_settings_essentials_summary">Απόκρυψη όλων ή μερικών σε αυτό το τηλέφωνο</string>
+    <string name="dejavu_essentials_hint">Τα αγαπημένα που αποκρύπτετε εδώ παραμένουν στο Zen και στις άλλες συσκευές σας και επιστρέφουν όταν τα εμφανίσετε ξανά.</string>
+    <string name="dejavu_essentials_show">Εμφάνιση αγαπημένων</string>
+    <string name="dejavu_essentials_none">Δεν υπάρχουν ακόμα αγαπημένα. Σύρετε μια καρτέλα στην κορυφή της αρχικής οθόνης για να την προσθέσετε στα αγαπημένα.</string>
 </resources>

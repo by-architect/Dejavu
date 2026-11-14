@@ -516,8 +516,8 @@
     <string name="dejavu_welcome_default_done">Dejavu er sjálfgefni vafrinn þinn.</string>
     <string name="dejavu_welcome_sync_title">Vinnusvæðin þín á öllum tækjum</string>
     <string name="dejavu_welcome_sync_text">Skráðu þig inn með Mozilla reikningi til að samstilla vinnusvæði, festa flipa og eftirlæti við Zen, eða flipa við Firefox.</string>
-    <string name="dejavu_settings_matrix">Spjalla á Matrix</string>
-    <string name="dejavu_settings_matrix_summary">Spurðu spurningar, stingdu upp á eiginleika eða tilkynntu villu</string>
+    <string name="dejavu_settings_email">Tölvupóstur</string>
+    <string name="dejavu_settings_email_summary">Spurðu spurningar, stingdu upp á eiginleika eða tilkynntu villu</string>
     <string name="dejavu_menu_clear_data">Hreinsa gögn</string>
     <string name="dejavu_menu_clear_data_and_quit">Hreinsa gögn og hætta</string>
     <string name="dejavu_clear_data_button">Hnappur til að hreinsa gögn</string>
@@ -593,4 +593,17 @@
     <string name="dejavu_settings_all_animations_summary">Valmyndir, síður og hnappar hreyfast þegar þau opnast og lokast. Þegar slökkt er á þessu birtast þau strax.</string>
     <string name="dejavu_settings_genie_effect">Andaáhrif</string>
     <string name="dejavu_settings_genie_effect_summary">Bókamerki, ferill, sóttar skrár, stillingar og aðgangurinn þinn streyma út úr hnöppunum sínum á upphafssíðunni og aftur inn.</string>
+    <string name="dejavu_passkeys_unsupported">Aðgangslyklar eru ekki enn studdir í þessari útgáfu af Android</string>
+    <string name="dejavu_settings_accent_color">Áherslulitur</string>
+    <string name="dejavu_accent_neutral">Hlutlaus</string>
+    <string name="dejavu_accent_system">Litir bakgrunnsmyndar</string>
+    <string name="dejavu_settings_icons">Táknmyndir</string>
+    <string name="dejavu_icons_dejavu">Tvítóna</string>
+    <string name="dejavu_icons_firefox">Klassískt</string>
+    <string name="dejavu_icons_rounded">Rúnnað</string>
+    <string name="dejavu_settings_essentials">Eftirlæti</string>
+    <string name="dejavu_settings_essentials_summary">Fela öll eða sum á þessum síma</string>
+    <string name="dejavu_essentials_hint">Eftirlæti sem þú felur hér haldast í Zen og á hinum tækjunum þínum og koma aftur þegar þú sýnir þau á ný.</string>
+    <string name="dejavu_essentials_show">Sýna eftirlæti</string>
+    <string name="dejavu_essentials_none">Engin eftirlæti enn. Dragðu flipa efst á upphafssíðuna til að gera hann að eftirlæti.</string>
 </resources>

@@ -548,8 +548,8 @@
     <string name="dejavu_welcome_default_done">Dejavu yw eich porwr rhagosodedig.</string>
     <string name="dejavu_welcome_sync_title">Eich gweithleoedd ar bob dyfais</string>
     <string name="dejavu_welcome_sync_text">Mewngofnodwch gyda chyfrif Mozilla i gydweddu gweithleoedd, tabiau wedi’u pinio a hanfodion â Zen, neu dabiau â Firefox.</string>
-    <string name="dejavu_settings_matrix">Sgwrsio ar Matrix</string>
-    <string name="dejavu_settings_matrix_summary">Gofynnwch gwestiwn, awgrymwch nodwedd neu adroddwch am nam</string>
+    <string name="dejavu_settings_email">Ebost</string>
+    <string name="dejavu_settings_email_summary">Gofynnwch gwestiwn, awgrymwch nodwedd neu adroddwch am nam</string>
     <string name="dejavu_menu_clear_data">Clirio data</string>
     <string name="dejavu_menu_clear_data_and_quit">Clirio data a gadael</string>
     <string name="dejavu_clear_data_button">Botwm clirio data</string>
@@ -625,4 +625,17 @@
     <string name="dejavu_settings_all_animations_summary">Mae dewislenni, tudalennau a botymau’n symud wrth agor a chau. Pan fydd i ffwrdd, maen nhw’n ymddangos ar unwaith.</string>
     <string name="dejavu_settings_genie_effect">Effaith genie</string>
     <string name="dejavu_settings_genie_effect_summary">Mae nodau tudalen, hanes, llwythi, gosodiadau a’ch cyfrif yn llifo allan o’u botymau ar y dudalen gartref ac yn ôl i mewn.</string>
+    <string name="dejavu_passkeys_unsupported">Nid yw cyfrinallweddi\'n cael eu cefnogi ar y fersiwn hwn o Android eto</string>
+    <string name="dejavu_settings_accent_color">Lliw acen</string>
+    <string name="dejavu_accent_neutral">Niwtral</string>
+    <string name="dejavu_accent_system">Lliwiau’r papur wal</string>
+    <string name="dejavu_settings_icons">Eiconau</string>
+    <string name="dejavu_icons_dejavu">Deuliw</string>
+    <string name="dejavu_icons_firefox">Clasurol</string>
+    <string name="dejavu_icons_rounded">Crwn</string>
+    <string name="dejavu_settings_essentials">Hanfodion</string>
+    <string name="dejavu_settings_essentials_summary">Cuddio pob un neu rai ohonyn nhw ar y ffôn hwn</string>
+    <string name="dejavu_essentials_hint">Mae hanfodion rydych chi’n eu cuddio yma yn aros yn Zen ac ar eich dyfeisiau eraill, ac maen nhw’n dod yn ôl pan fyddwch chi’n eu dangos eto.</string>
+    <string name="dejavu_essentials_show">Dangos hanfodion</string>
+    <string name="dejavu_essentials_none">Dim hanfodion eto. Llusgwch dab i frig y sgrin gartref i’w ychwanegu at yr hanfodion.</string>
 </resources>

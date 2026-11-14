@@ -516,8 +516,8 @@
     <string name="dejavu_welcome_default_done">Dejavu da zure nabigatzaile lehenetsia.</string>
     <string name="dejavu_welcome_sync_title">Zure laneremuak gailu guztietan</string>
     <string name="dejavu_welcome_sync_text">Hasi saioa Mozilla kontu batekin laneremuak, finkatutako fitxak eta funtsezkoak Zenekin sinkronizatzeko, edo fitxak Firefoxekin.</string>
-    <string name="dejavu_settings_matrix">Txateatu Matrixen</string>
-    <string name="dejavu_settings_matrix_summary">Egin galdera bat, proposatu eginbide bat edo jakinarazi akats bat</string>
+    <string name="dejavu_settings_email">Posta elektronikoa</string>
+    <string name="dejavu_settings_email_summary">Egin galdera bat, proposatu eginbide bat edo jakinarazi akats bat</string>
     <string name="dejavu_menu_clear_data">Garbitu datuak</string>
     <string name="dejavu_menu_clear_data_and_quit">Garbitu datuak eta irten</string>
     <string name="dejavu_clear_data_button">«Garbitu datuak» botoia</string>
@@ -593,4 +593,17 @@
     <string name="dejavu_settings_all_animations_summary">Menuak, orriak eta botoiak mugitu egiten dira irekitzean eta ixtean. Desaktibatuta, berehala agertzen dira.</string>
     <string name="dejavu_settings_genie_effect">Jeinu efektua</string>
     <string name="dejavu_settings_genie_effect_summary">Laster-markak, historia, deskargak, ezarpenak eta zure kontua hasierako orriko beren botoietatik isurtzen dira eta itzuli egiten dira.</string>
+    <string name="dejavu_passkeys_unsupported">Sarbide-gakoak ez dira oraindik onartzen Android bertsio honetan</string>
+    <string name="dejavu_settings_accent_color">Nabarmentze-kolorea</string>
+    <string name="dejavu_accent_neutral">Neutroa</string>
+    <string name="dejavu_accent_system">Horma-paperaren koloreak</string>
+    <string name="dejavu_settings_icons">Ikonoak</string>
+    <string name="dejavu_icons_dejavu">Bi tonukoa</string>
+    <string name="dejavu_icons_firefox">Klasikoa</string>
+    <string name="dejavu_icons_rounded">Biribildua</string>
+    <string name="dejavu_settings_essentials">Funtsezkoak</string>
+    <string name="dejavu_settings_essentials_summary">Ezkutatu guztiak edo batzuk telefono honetan</string>
+    <string name="dejavu_essentials_hint">Hemen ezkutatzen dituzun funtsezkoak Zenen eta zure beste gailuetan geratzen dira, eta berriro erakusten dituzunean itzultzen dira.</string>
+    <string name="dejavu_essentials_show">Erakutsi funtsezkoak</string>
+    <string name="dejavu_essentials_none">Oraindik ez dago funtsezkorik. Arrastatu fitxa bat hasierako pantailaren goialdera funtsezko bihurtzeko.</string>
 </resources>

@@ -516,8 +516,8 @@
     <string name="dejavu_welcome_default_done">Dejavu è tes navigatur da standard.</string>
     <string name="dejavu_welcome_sync_title">Tes spazis da lavur sin mintga apparat</string>
     <string name="dejavu_welcome_sync_text">T’annunzia cun in conto Mozilla per sincronisar spazis da lavur, tabs fixads ed essenzials cun Zen, u tabs cun Firefox.</string>
-    <string name="dejavu_settings_matrix">Chatta sin Matrix</string>
-    <string name="dejavu_settings_matrix_summary">Fa ina dumonda, propona ina funcziun u annunzia in sbagl</string>
+    <string name="dejavu_settings_email">E-mail</string>
+    <string name="dejavu_settings_email_summary">Fa ina dumonda, propona ina funcziun u annunzia in sbagl</string>
     <string name="dejavu_menu_clear_data">Stizzar las datas</string>
     <string name="dejavu_menu_clear_data_and_quit">Stizzar las datas e terminar</string>
     <string name="dejavu_clear_data_button">Buttun «Stizzar las datas»</string>
@@ -593,4 +593,17 @@
     <string name="dejavu_settings_all_animations_summary">Menus, paginas e buttuns sa movan cura ch\'els vegnan averts e serrads. Deactivà, cumparan els immediat.</string>
     <string name="dejavu_settings_genie_effect">Effect dal spiert</string>
     <string name="dejavu_settings_genie_effect_summary">Segnapaginas, cronologia, telechargiadas, parameters e tes conto curran or da lur buttuns sin la pagina da partenza e turnan enavos.</string>
+    <string name="dejavu_passkeys_unsupported">Clavs d’access (passkeys) na vegnan anc betg sustegnidas en questa versiun dad Android</string>
+    <string name="dejavu_settings_accent_color">Colur d’accent</string>
+    <string name="dejavu_accent_neutral">Neutral</string>
+    <string name="dejavu_accent_system">Colurs dal maletg dal fund davos</string>
+    <string name="dejavu_settings_icons">Iconas</string>
+    <string name="dejavu_icons_dejavu">Dus tuns</string>
+    <string name="dejavu_icons_firefox">Classicas</string>
+    <string name="dejavu_icons_rounded">Radundas</string>
+    <string name="dejavu_settings_essentials">Essenzials</string>
+    <string name="dejavu_settings_essentials_summary">Zuppentar tuts u intgins sin quest telefon</string>
+    <string name="dejavu_essentials_hint">Ils essenzials che ti zuppentas qua restan en Zen e sin tes auters apparats, e returnan cura che ti als mussas puspè.</string>
+    <string name="dejavu_essentials_show">Mussar ils essenzials</string>
+    <string name="dejavu_essentials_none">Anc nagins essenzials. Tira in tab sisum l’ecran da partenza per al far in essenzial.</string>
 </resources>

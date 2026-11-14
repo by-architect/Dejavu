@@ -516,8 +516,8 @@
     <string name="dejavu_welcome_default_done">Dejavu est su navigadore predefinidu tuo.</string>
     <string name="dejavu_welcome_sync_title">Is ispàtzios de traballu tuos in dònnia dispositivu</string>
     <string name="dejavu_welcome_sync_text">Intra cun unu contu Mozilla pro sincronizare ispàtzios de traballu, ischedas fissadas e essentziales cun Zen, o ischedas cun Firefox.</string>
-    <string name="dejavu_settings_matrix">Chistiona in Matrix</string>
-    <string name="dejavu_settings_matrix_summary">Faghe una pregunta, cussìgia una funtzione o sinnala unu errore</string>
+    <string name="dejavu_settings_email">Posta eletrònica</string>
+    <string name="dejavu_settings_email_summary">Faghe una pregunta, cussìgia una funtzione o sinnala unu errore</string>
     <string name="dejavu_menu_clear_data">Illìmpia is datos</string>
     <string name="dejavu_menu_clear_data_and_quit">Illìmpia is datos e essi</string>
     <string name="dejavu_clear_data_button">Butone “Illìmpia is datos”</string>
@@ -593,4 +593,17 @@
     <string name="dejavu_settings_all_animations_summary">Is menùs, is pàginas e is butones si movent cando s\'aberint e si serrant. Disativadas, aparessent luego.</string>
     <string name="dejavu_settings_genie_effect">Efetu de su gèniu</string>
     <string name="dejavu_settings_genie_effect_summary">Sinnalibros, cronologia, iscarrigamentos, cunfiguratzione e su contu tuo essint dae is butones issoro in sa pàgina printzipale e torrant a intrare.</string>
+    <string name="dejavu_passkeys_unsupported">Sas craes de atzessu non sunt galu suportadas in custa versione de Android</string>
+    <string name="dejavu_settings_accent_color">Colore de atzentu</string>
+    <string name="dejavu_accent_neutral">Neutru</string>
+    <string name="dejavu_accent_system">Colores de s\'isfundu de ischermu</string>
+    <string name="dejavu_settings_icons">Iconas</string>
+    <string name="dejavu_icons_dejavu">Duos tonos</string>
+    <string name="dejavu_icons_firefox">Clàssicas</string>
+    <string name="dejavu_icons_rounded">Arrodundadas</string>
+    <string name="dejavu_settings_essentials">Essentziales</string>
+    <string name="dejavu_settings_essentials_summary">Cua·los totu o calicunu in custu telèfonu</string>
+    <string name="dejavu_essentials_hint">Is essentziales chi cuas inoghe abarrant in Zen e in is àteros dispositivos tuos, e torrant cando los ammustras de nou.</string>
+    <string name="dejavu_essentials_show">Ammustra is essentziales</string>
+    <string name="dejavu_essentials_none">Ancora nissunu essentziale. Trìsina un\'ischeda a sa parte de susu de s\'ischermu printzipale pro nde fàghere un\'essentziale.</string>
 </resources>

@@ -47,7 +47,6 @@ import androidx.compose.ui.platform.ComposeView
 import androidx.compose.ui.platform.LocalDensity
 import androidx.compose.ui.platform.LocalLayoutDirection
 import androidx.compose.ui.platform.ViewCompositionStrategy
-import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.semantics.Role
 import androidx.compose.ui.unit.IntOffset
@@ -65,6 +64,7 @@ import org.mozilla.fenix.R
 import org.mozilla.fenix.components.components
 import org.mozilla.fenix.dejavu.menu.BORDER_ALPHA
 import org.mozilla.fenix.dejavu.settings.DejavuSettings
+import org.mozilla.fenix.dejavu.ui.iconPainter
 import org.mozilla.fenix.ext.components as contextComponents
 import org.mozilla.fenix.theme.FirefoxTheme
 
@@ -179,7 +179,7 @@ private fun FullScreenButton(place: FloatingButtonPlace, onMoved: (FloatingButto
                 .clickable(role = Role.Button, onClick = onClick),
         ) {
             Icon(
-                painter = painterResource(R.drawable.dejavu_ic_full_screen_exit_24),
+                painter = iconPainter(R.drawable.dejavu_ic_full_screen_exit_24),
                 contentDescription = stringResource(R.string.dejavu_menu_exit_full_screen),
                 tint = MaterialTheme.colorScheme.onSurface,
                 modifier = Modifier.size(ICON_SIZE),

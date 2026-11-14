@@ -162,6 +162,8 @@ fun ComposeView.setDejavuHomeContent(
             val folderKeys by settings.folderRowKeys.collectAsState()
             val hiddenSelectionKeys by settings.hiddenSelectionKeys.collectAsState()
             val essentialsPerContainer by settings.essentialsPerContainer.collectAsState()
+            val essentialsShown by settings.essentialsShown.collectAsState()
+            val hiddenEssentials by settings.hiddenEssentials.collectAsState()
             val searchAtBottom by settings.homeSearchAtBottom.collectAsState()
             val containerRecords by containerStorage.records.collectAsState()
             val containers = remember(containerRecords) { containerRecords.orEmpty().associateBy { it.contextId } }
@@ -242,6 +244,9 @@ fun ComposeView.setDejavuHomeContent(
                     hasDataToClear = hasDataToClear,
                     tipsAllowed = !welcomeDue && !syncStatus.askSource && !isSearchActive,
                     privateLocked = isPrivateLocked && allPrivateTabs.isNotEmpty(),
+                    searching = isSearchActive,
+                    essentialsShown = essentialsShown,
+                    hiddenEssentials = hiddenEssentials,
                 )
 
                 if (showsPage) {
@@ -574,8 +579,16 @@ private class DefaultDejavuHomeInteractor(
         if (leaving.isNotEmpty()) repository.unsplit(leaving.toSet())
     }
 
-    override fun onMoveEssential(pinId: String, index: Int) =
-        repository.moveEssential(pinId, index, settings.essentialsPerContainer.value)
+    // The grid counts only the essentials it shows, the repository all of them.
+    override fun onMoveEssential(pinId: String, index: Int) {
+        val state = repository.state.value
+        val perContainer = settings.essentialsPerContainer.value
+        val item = state.essentials.firstOrNull { it.id == pinId } ?: return
+        val group = state.essentialsFor(state.essentialsGroupOf(item.containerId), perContainer)
+        val shown = shownEssentials(group, settings.essentialsShown.value, settings.hiddenEssentials.value)
+        val place = groupIndexOfShown(group.map { it.id }, shown.map { it.id }, pinId, index)
+        repository.moveEssential(pinId, place, perContainer)
+    }
 
     override fun onClearData(quit: Boolean): Set<DeleteBrowsingDataOnQuitType> =
         ClearData.run(context, showChoices = { ClearData.showChoices(navController) }, quit, onDataCleared)

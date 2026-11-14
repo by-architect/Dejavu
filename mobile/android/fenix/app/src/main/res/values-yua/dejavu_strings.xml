@@ -516,8 +516,8 @@
     <string name="dejavu_welcome_default_done">Dejavu es tu navegador predeterminado.</string>
     <string name="dejavu_welcome_sync_title">Tus espacios de trabajo en todos tus dispositivos</string>
     <string name="dejavu_welcome_sync_text">Inicia sesión con una cuenta de Mozilla para sincronizar espacios de trabajo, pestañas fijadas yéetel esenciales con Zen, o pestañas con Firefox.</string>
-    <string name="dejavu_settings_matrix">Chatea en Matrix</string>
-    <string name="dejavu_settings_matrix_summary">Haz una pregunta, sugiere una función o reporta un error</string>
+    <string name="dejavu_settings_email">Correo electrónico</string>
+    <string name="dejavu_settings_email_summary">Haz una pregunta, sugiere una función o reporta un error</string>
     <string name="dejavu_menu_clear_data">Limpiar datos</string>
     <string name="dejavu_menu_clear_data_and_quit">Limpiar datos y salir</string>
     <string name="dejavu_clear_data_button">Botón “Limpiar datos”</string>
@@ -593,4 +593,17 @@
     <string name="dejavu_settings_all_animations_summary">Los menús, las páginas y los botones se mueven al abrirse y cerrarse. Desactivadas, aparecen al instante.</string>
     <string name="dejavu_settings_genie_effect">Efecto genio</string>
     <string name="dejavu_settings_genie_effect_summary">Los marcadores, el historial, las descargas, la configuración y tu cuenta salen de sus botones en la página de inicio y vuelven a ellos.</string>
+    <string name="dejavu_passkeys_unsupported">Las claves de acceso aún no son compatibles con esta versión de Android</string>
+    <string name="dejavu_settings_accent_color">Color de acento</string>
+    <string name="dejavu_accent_neutral">Neutro</string>
+    <string name="dejavu_accent_system">Colores del fondo de pantalla</string>
+    <string name="dejavu_settings_icons">Íconos</string>
+    <string name="dejavu_icons_dejavu">Dos tonos</string>
+    <string name="dejavu_icons_firefox">Clásicos</string>
+    <string name="dejavu_icons_rounded">Redondeados</string>
+    <string name="dejavu_settings_essentials">Esenciales</string>
+    <string name="dejavu_settings_essentials_summary">Oculta todos o algunos en este teléfono</string>
+    <string name="dejavu_essentials_hint">Los esenciales que ocultas aquí se quedan en Zen y en tus otros dispositivos, y vuelven cuando los muestras de nuevo.</string>
+    <string name="dejavu_essentials_show">Mostrar esenciales</string>
+    <string name="dejavu_essentials_none">Mina\'an esenciales. Arrastra una pestaña hasta arriba de la pantalla de inicio para agregarla a esenciales.</string>
 </resources>

@@ -516,8 +516,8 @@
     <string name="dejavu_welcome_default_done">Dejavu ستاسو اصلي براوزر دی.</string>
     <string name="dejavu_welcome_sync_title">ستاسو ساحې په هره وسیله کې</string>
     <string name="dejavu_welcome_sync_text">د Mozilla حساب سره ننوځئ، ترڅو ساحې، پین شوي ټبونه او مهمې ویب پاڼې له Zen سره، یا ټبونه له Firefox سره همغږي کړئ.</string>
-    <string name="dejavu_settings_matrix">په Matrix کې خبرې وکړئ</string>
-    <string name="dejavu_settings_matrix_summary">پوښتنه وکړئ، د یوې ځانګړنې وړاندیز وکړئ یا د تېروتنې راپور ورکړئ</string>
+    <string name="dejavu_settings_email">برېښنالیک</string>
+    <string name="dejavu_settings_email_summary">پوښتنه وکړئ، د یوې ځانګړنې وړاندیز وکړئ یا د تېروتنې راپور ورکړئ</string>
     <string name="dejavu_menu_clear_data">معلومات پاکول</string>
     <string name="dejavu_menu_clear_data_and_quit">معلومات پاکول او وتل</string>
     <string name="dejavu_clear_data_button">د «معلومات پاکول» تڼۍ</string>
@@ -593,4 +593,17 @@
     <string name="dejavu_settings_all_animations_summary">مینوګانې، پاڼې او تڼۍ د پرانیستلو او بندېدو پر مهال خوځېږي. کله چې بند وي، سمدلاسه ښکاري.</string>
     <string name="dejavu_settings_genie_effect">د پېري اغېز</string>
     <string name="dejavu_settings_genie_effect_summary">یادنښې، تاریخچه، ډاونلوډونه، امستنې او ستاسې حساب په کور پاڼه کې له خپلو تڼیو څخه بهر بهېږي او بېرته ستنېږي.</string>
+    <string name="dejavu_passkeys_unsupported">پاسکي لا تراوسه د Android په دې نسخه کې نه ملاتړ کېږي</string>
+    <string name="dejavu_settings_accent_color">برجسته رنګ</string>
+    <string name="dejavu_accent_neutral">خنثی</string>
+    <string name="dejavu_accent_system">د شالید انځور رنګونه</string>
+    <string name="dejavu_settings_icons">آیکونونه</string>
+    <string name="dejavu_icons_dejavu">دوه رنګه</string>
+    <string name="dejavu_icons_firefox">کلاسیک</string>
+    <string name="dejavu_icons_rounded">ګرد</string>
+    <string name="dejavu_settings_essentials">مهمې ویب پاڼې</string>
+    <string name="dejavu_settings_essentials_summary">په دې تلیفون کې ټولې یا ځینې یې پټې کړئ</string>
+    <string name="dejavu_essentials_hint">هغه مهمې ویب پاڼې چې تاسو یې دلته پټوئ، په Zen او ستاسو په نورو وسیلو کې پاتې کېږي، او کله چې یې بیا وښیئ بېرته راځي.</string>
+    <string name="dejavu_essentials_show">مهمې ویب پاڼې ښودل</string>
+    <string name="dejavu_essentials_none">تر اوسه کومه مهمه ویب پاڼه نشته. یو ټب د کور پردې سر ته کش کړئ ترڅو مهمه ویب پاڼه شي.</string>
 </resources>

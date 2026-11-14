@@ -516,8 +516,8 @@
     <string name="dejavu_welcome_default_done">Dejavu — asosiy brauzeringiz.</string>
     <string name="dejavu_welcome_sync_title">Ish maydonlaringiz har bir qurilmada</string>
     <string name="dejavu_welcome_sync_text">Ish maydonlari, mahkamlangan varaqlar va muhimlarni Zen bilan yoki varaqlarni Firefox bilan sinxronlashtirish uchun Mozilla hisobi bilan kiring.</string>
-    <string name="dejavu_settings_matrix">Matrix-da suhbatlashing</string>
-    <string name="dejavu_settings_matrix_summary">Savol bering, imkoniyat taklif qiling yoki xato haqida xabar bering</string>
+    <string name="dejavu_settings_email">Email</string>
+    <string name="dejavu_settings_email_summary">Savol bering, imkoniyat taklif qiling yoki xato haqida xabar bering</string>
     <string name="dejavu_menu_clear_data">Ma\'lumotlarni tozalash</string>
     <string name="dejavu_menu_clear_data_and_quit">Ma\'lumotlarni tozalash va chiqish</string>
     <string name="dejavu_clear_data_button">“Ma\'lumotlarni tozalash” tugmasi</string>
@@ -593,4 +593,17 @@
     <string name="dejavu_settings_all_animations_summary">Menyular, sahifalar va tugmalar ochilib-yopilayotganda harakatlanadi. Oʻchirilganda ular darhol koʻrinadi.</string>
     <string name="dejavu_settings_genie_effect">Jin effekti</string>
     <string name="dejavu_settings_genie_effect_summary">Xatchoʻplar, tarix, yuklanmalar, sozlamalar va hisobingiz bosh sahifadagi tugmalaridan oqib chiqadi va qaytib kiradi.</string>
+    <string name="dejavu_passkeys_unsupported">Kirish kalitlari (passkey) bu Android versiyasida hali qo‘llab-quvvatlanmaydi</string>
+    <string name="dejavu_settings_accent_color">Urg\'u rangi</string>
+    <string name="dejavu_accent_neutral">Neytral</string>
+    <string name="dejavu_accent_system">Fon rasmi ranglari</string>
+    <string name="dejavu_settings_icons">Nishonchalar</string>
+    <string name="dejavu_icons_dejavu">Ikki tusli</string>
+    <string name="dejavu_icons_firefox">Klassik</string>
+    <string name="dejavu_icons_rounded">Yumaloq</string>
+    <string name="dejavu_settings_essentials">Muhimlar</string>
+    <string name="dejavu_settings_essentials_summary">Ularning hammasini yoki ba\'zilarini shu telefonda yashirish</string>
+    <string name="dejavu_essentials_hint">Bu yerda yashirgan muhimlaringiz Zen-da va boshqa qurilmalaringizda qoladi hamda ularni qayta ko\'rsatganingizda qaytib keladi.</string>
+    <string name="dejavu_essentials_show">Muhimlarni ko\'rsatish</string>
+    <string name="dejavu_essentials_none">Hozircha muhimlar yo\'q. Varaqni muhimlarga qo\'shish uchun uni bosh sahifaning eng yuqorisiga torting.</string>
 </resources>

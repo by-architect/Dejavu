@@ -516,8 +516,8 @@
     <string name="dejavu_welcome_default_done">Dejavu तपाईंको पूर्वनिर्धारित ब्राउजर हो।</string>
     <string name="dejavu_welcome_sync_title">हरेक उपकरणमा तपाईंका कार्यक्षेत्रहरु</string>
     <string name="dejavu_welcome_sync_text">कार्यक्षेत्र, पिन गरिएका ट्याब र आवश्यकलाई Zen सँग, वा ट्याबहरुलाई Firefox सँग सिंक गर्न Mozilla खातामार्फत साइन इन गर्नुहोस्।</string>
-    <string name="dejavu_settings_matrix">Matrix मा च्याट गर्नुहोस्</string>
-    <string name="dejavu_settings_matrix_summary">प्रश्न सोध्नुहोस्, सुविधा सुझाउनुहोस् वा त्रुटि रिपोर्ट गर्नुहोस्</string>
+    <string name="dejavu_settings_email">इमेल</string>
+    <string name="dejavu_settings_email_summary">प्रश्न सोध्नुहोस्, सुविधा सुझाउनुहोस् वा त्रुटि रिपोर्ट गर्नुहोस्</string>
     <string name="dejavu_menu_clear_data">डाटा खाली गर्नुहोस्</string>
     <string name="dejavu_menu_clear_data_and_quit">डाटा खाली गरेर बाहिर निस्कनुहोस्</string>
     <string name="dejavu_clear_data_button">डाटा खाली गर्ने बटन</string>
@@ -593,4 +593,17 @@
     <string name="dejavu_settings_all_animations_summary">मेनु, पृष्ठ र बटनहरू खुल्दा र बन्द हुँदा चल्छन्। बन्द गर्दा तिनीहरू तुरुन्तै देखिन्छन्।</string>
     <string name="dejavu_settings_genie_effect">जिनी प्रभाव</string>
     <string name="dejavu_settings_genie_effect_summary">बुकमार्कहरु, इतिहास, डाउनलोडहरु, सेटिङ्गहरु र तपाईंको खाता होम पृष्ठमा तिनीहरूका बटनहरूबाट बगेर निस्कन्छन् र फर्किन्छन्।</string>
+    <string name="dejavu_passkeys_unsupported">यो Android संस्करणमा पासकीहरू अझै समर्थित छैनन्</string>
+    <string name="dejavu_settings_accent_color">प्रमुख रङ</string>
+    <string name="dejavu_accent_neutral">तटस्थ</string>
+    <string name="dejavu_accent_system">वालपेपरका रङहरु</string>
+    <string name="dejavu_settings_icons">चिन्हहरु</string>
+    <string name="dejavu_icons_dejavu">दुई रङ</string>
+    <string name="dejavu_icons_firefox">क्लासिक</string>
+    <string name="dejavu_icons_rounded">गोलाकार</string>
+    <string name="dejavu_settings_essentials">आवश्यक</string>
+    <string name="dejavu_settings_essentials_summary">यो फोनमा सबै वा केही लुकाउनुहोस्</string>
+    <string name="dejavu_essentials_hint">तपाईंले यहाँ लुकाएका आवश्यक Zen मा र तपाईंका अन्य उपकरणहरुमा रहिरहन्छन्, र फेरि देखाउँदा फर्केर आउँछन्।</string>
+    <string name="dejavu_essentials_show">आवश्यक देखाउनुहोस्</string>
+    <string name="dejavu_essentials_none">अहिलेसम्म कुनै आवश्यक छैन। ट्याबलाई आवश्यक बनाउन यसलाई गृह स्क्रिनको माथिल्लो भागमा तान्नुहोस्।</string>
 </resources>

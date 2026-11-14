@@ -508,8 +508,8 @@
     <string name="dejavu_welcome_default_done">Dejavu nyaéta panyungsi baku anjeun.</string>
     <string name="dejavu_welcome_sync_title">Rohangan anjeun dina unggal parabot</string>
     <string name="dejavu_welcome_sync_text">Asup ku akun Mozilla pikeun nyingkronkeun rohangan, tab nu disemat sarta Penting sareng Zen, atawa tab sareng Firefox.</string>
-    <string name="dejavu_settings_matrix">Ngobrol di Matrix</string>
-    <string name="dejavu_settings_matrix_summary">Tumaros, usulkeun fitur atanapi laporkeun kasalahan</string>
+    <string name="dejavu_settings_email">Surélék</string>
+    <string name="dejavu_settings_email_summary">Tumaros, usulkeun fitur atanapi laporkeun kasalahan</string>
     <string name="dejavu_menu_clear_data">Beresihan data</string>
     <string name="dejavu_menu_clear_data_and_quit">Beresihan data jeung eureun</string>
     <string name="dejavu_clear_data_button">Tombol “Beresihan data”</string>
@@ -585,4 +585,17 @@
     <string name="dejavu_settings_all_animations_summary">Menu, kaca, jeung tombol ngagerak waktu dibuka jeung ditutup. Lamun dipareuman, éta langsung némbongan.</string>
     <string name="dejavu_settings_genie_effect">Éfék jin</string>
     <string name="dejavu_settings_genie_effect_summary">Markah, jujutan, undeuran, setélan, jeung akun anjeun ngocor kaluar tina tombolna di home page tuluy balik deui.</string>
+    <string name="dejavu_passkeys_unsupported">Konci aksés (passkey) can dirojong dina vérsi Android ieu</string>
+    <string name="dejavu_settings_accent_color">Warna aksen</string>
+    <string name="dejavu_accent_neutral">Nétral</string>
+    <string name="dejavu_accent_system">Warna latar</string>
+    <string name="dejavu_settings_icons">Ikon</string>
+    <string name="dejavu_icons_dejavu">Dua warna</string>
+    <string name="dejavu_icons_firefox">Klasik</string>
+    <string name="dejavu_icons_rounded">Buleud</string>
+    <string name="dejavu_settings_essentials">Penting</string>
+    <string name="dejavu_settings_essentials_summary">Sumputkeun sadayana atawa sawaréh dina telepon ieu</string>
+    <string name="dejavu_essentials_hint">Penting nu disumputkeun di dieu tetep aya di Zen jeung di parangkat séjén anjeun, sarta bakal balik deui lamun dipintonkeun deui.</string>
+    <string name="dejavu_essentials_show">Pintonkeun Penting</string>
+    <string name="dejavu_essentials_none">Can aya Penting. Sered tab ka pangluhurna layar utama pikeun nambahkeunana kana Penting.</string>
 </resources>

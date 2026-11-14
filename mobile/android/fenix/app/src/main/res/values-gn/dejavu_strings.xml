@@ -516,8 +516,8 @@
     <string name="dejavu_welcome_default_done">Dejavu ha\'e ne kundahára ypykuéva.</string>
     <string name="dejavu_welcome_sync_title">Ne tembiapo renda opaite mba\'e\'okápe</string>
     <string name="dejavu_welcome_sync_text">Eike peteĩ kuenta Mozilla-gua reheve esincroniza hag̃ua tembiapo renda, tendayke mboguapypyre ha iporãvéva Zen ndive, térã tendayke Firefox ndive.</string>
-    <string name="dejavu_settings_matrix">Eñomongeta Matrix-pe</string>
-    <string name="dejavu_settings_matrix_summary">Eporandu, eikuave’ẽ peteĩ mba’e pyahu térã emomarandu peteĩ jejavy</string>
+    <string name="dejavu_settings_email">Ñanduti veve</string>
+    <string name="dejavu_settings_email_summary">Eporandu, eikuave’ẽ peteĩ mba’e pyahu térã emomarandu peteĩ jejavy</string>
     <string name="dejavu_menu_clear_data">Emboguete mba\'ekuaarã</string>
     <string name="dejavu_menu_clear_data_and_quit">Emboguete mba\'ekuaarã ha esẽ</string>
     <string name="dejavu_clear_data_button">Votõ Emboguete mba\'ekuaarã</string>
@@ -593,4 +593,17 @@
     <string name="dejavu_settings_all_animations_summary">Umi poravorã, kuatiarogue ha votõ omýi ojeike ha oñembotývo. Oñembogue jave, ojehechapya\'e.</string>
     <string name="dejavu_settings_genie_effect">Genio rembiapo</string>
     <string name="dejavu_settings_genie_effect_summary">Techaukaha, tembiasakue, ñemboguejy, ñemboheko ha ne mba\'ete osẽ ivotõgui óga kuatiaroguépe ha oho jey.</string>
+    <string name="dejavu_passkeys_unsupported">Ko Android peteĩchaguápe ndaikatúi gueteri eipuru ñe’ẽ ñemi jeikerã</string>
+    <string name="dejavu_settings_accent_color">Sa\'y ojehechakuaavéva</string>
+    <string name="dejavu_accent_neutral">Mbytegua</string>
+    <string name="dejavu_accent_system">Mba\'erechaha rugua sa\'y</string>
+    <string name="dejavu_settings_icons">Ta\'ãnga\'ikuéra</string>
+    <string name="dejavu_icons_dejavu">Mokõi sa\'y</string>
+    <string name="dejavu_icons_firefox">Jepokuaa</string>
+    <string name="dejavu_icons_rounded">Apu\'a</string>
+    <string name="dejavu_settings_essentials">Iporãvéva</string>
+    <string name="dejavu_settings_essentials_summary">Emokañy opavave térã ipehẽngue ko pumbyrýpe</string>
+    <string name="dejavu_essentials_hint">Umi iporãvéva remokañýva ko\'ápe opyta Zen-pe ha ambue ne mba\'e\'okakuérape, ha ou jey rehechaukajeývo chupekuéra.</string>
+    <string name="dejavu_essentials_show">Ehechauka umi iporãvéva</string>
+    <string name="dejavu_essentials_none">Ndaipóri gueteri iporãvéva. Emosyryry peteĩ tendayke pantalla ñepyrũgua yvate gotyo ejapo hag̃ua chugui iporãvéva.</string>
 </resources>

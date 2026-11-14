@@ -532,8 +532,8 @@
     <string name="dejavu_welcome_default_done">Dejavu je váš predvolený prehliadač.</string>
     <string name="dejavu_welcome_sync_title">Vaše pracovné priestory na každom zariadení</string>
     <string name="dejavu_welcome_sync_text">Prihláste sa pomocou účtu Mozilla a synchronizujte pracovné priestory, pripnuté karty a obľúbené so Zenom alebo karty s Firefoxom.</string>
-    <string name="dejavu_settings_matrix">Chatujte cez Matrix</string>
-    <string name="dejavu_settings_matrix_summary">Položte otázku, navrhnite funkciu alebo nahláste chybu</string>
+    <string name="dejavu_settings_email">E‑mail</string>
+    <string name="dejavu_settings_email_summary">Položte otázku, navrhnite funkciu alebo nahláste chybu</string>
     <string name="dejavu_menu_clear_data">Odstrániť údaje</string>
     <string name="dejavu_menu_clear_data_and_quit">Odstrániť údaje a ukončiť</string>
     <string name="dejavu_clear_data_button">Tlačidlo „Odstrániť údaje“</string>
@@ -609,4 +609,17 @@
     <string name="dejavu_settings_all_animations_summary">Ponuky, stránky a tlačidlá sa pri otváraní a zatváraní pohybujú. Keď je to vypnuté, zobrazia sa hneď.</string>
     <string name="dejavu_settings_genie_effect">Efekt džina</string>
     <string name="dejavu_settings_genie_effect_summary">Záložky, história, stiahnuté súbory, nastavenia a váš účet sa vylievajú zo svojich tlačidiel na domovskej stránke a vracajú sa späť.</string>
+    <string name="dejavu_passkeys_unsupported">Prístupové kľúče zatiaľ nie sú v tejto verzii Androidu podporované</string>
+    <string name="dejavu_settings_accent_color">Farba zvýraznenia</string>
+    <string name="dejavu_accent_neutral">Neutrálna</string>
+    <string name="dejavu_accent_system">Farby tapety</string>
+    <string name="dejavu_settings_icons">Ikony</string>
+    <string name="dejavu_icons_dejavu">Dvojtónové</string>
+    <string name="dejavu_icons_firefox">Klasické</string>
+    <string name="dejavu_icons_rounded">Zaoblené</string>
+    <string name="dejavu_settings_essentials">Obľúbené</string>
+    <string name="dejavu_settings_essentials_summary">Skryť všetky alebo len niektoré z nich na tomto telefóne</string>
+    <string name="dejavu_essentials_hint">Obľúbené, ktoré tu skryjete, zostanú v Zene a na vašich ďalších zariadeniach a vrátia sa, keď ich znova zobrazíte.</string>
+    <string name="dejavu_essentials_show">Zobraziť obľúbené</string>
+    <string name="dejavu_essentials_none">Zatiaľ nemáte žiadne obľúbené. Potiahnutím karty úplne hore na domovskej stránke ju pridáte medzi obľúbené.</string>
 </resources>

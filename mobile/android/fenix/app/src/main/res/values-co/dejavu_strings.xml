@@ -516,8 +516,8 @@
     <string name="dejavu_welcome_default_done">Dejavu hè u vostru navigatore predefinitu.</string>
     <string name="dejavu_welcome_sync_title">I vostri spazii di travagliu nant\'à tutti i vostri apparechji</string>
     <string name="dejavu_welcome_sync_text">Cunnettitevi cù un contu Mozilla per sincrunizà i spazii di travagliu, l\'unghjette fissate è l\'essenziali cù Zen, o l\'unghjette cù Firefox.</string>
-    <string name="dejavu_settings_matrix">Chjachjarate nant\'à Matrix</string>
-    <string name="dejavu_settings_matrix_summary">Fate una dumanda, prupunite una funzione o signalate un sbagliu</string>
+    <string name="dejavu_settings_email">Indirizu elettronicu</string>
+    <string name="dejavu_settings_email_summary">Fate una dumanda, prupunite una funzione o signalate un sbagliu</string>
     <string name="dejavu_menu_clear_data">Squassà i dati</string>
     <string name="dejavu_menu_clear_data_and_quit">Squassà i dati è esce</string>
     <string name="dejavu_clear_data_button">Buttone Squassà i dati</string>
@@ -593,4 +593,17 @@
     <string name="dejavu_settings_all_animations_summary">I menù, e pagine è i buttoni si movenu quandu s\'apranu è si chjodenu. Disattivate, cumparenu subitu.</string>
     <string name="dejavu_settings_genie_effect">Effettu geniu</string>
     <string name="dejavu_settings_genie_effect_summary">L\'indette, a cronolugia, i scaricamenti, i parametri è u vostru contu escenu da i so buttoni in a pagina d\'accolta è ci tornanu.</string>
+    <string name="dejavu_passkeys_unsupported">E chjave d’accessu ùn sò ancu supportate nant’à sta versione d’Android</string>
+    <string name="dejavu_settings_accent_color">Culore d\'accentu</string>
+    <string name="dejavu_accent_neutral">Neutru</string>
+    <string name="dejavu_accent_system">Culori di u sfondulu di screnu</string>
+    <string name="dejavu_settings_icons">Icone</string>
+    <string name="dejavu_icons_dejavu">Bicolori</string>
+    <string name="dejavu_icons_firefox">Classiche</string>
+    <string name="dejavu_icons_rounded">Tonde</string>
+    <string name="dejavu_settings_essentials">Essenziali</string>
+    <string name="dejavu_settings_essentials_summary">Piattà li tutti o solu alcuni nant\'à stu telefonu</string>
+    <string name="dejavu_essentials_hint">L\'essenziali ch\'è vo piattate quì fermanu in Zen è nant\'à i vostri altri apparechji, è tornanu quandu l\'affissate di novu.</string>
+    <string name="dejavu_essentials_show">Affissà l\'essenziali</string>
+    <string name="dejavu_essentials_none">Ùn ci hè ancu nisunu essenziale. Trascinate un\'unghjetta in cima di u screnu d\'accolta per aghjunghje la à l\'essenziali.</string>
 </resources>

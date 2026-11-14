@@ -524,8 +524,8 @@
     <string name="dejavu_welcome_default_done">El Dejavu és el vostre navegador per defecte.</string>
     <string name="dejavu_welcome_sync_title">Els vostres espais de treball a tots els dispositius</string>
     <string name="dejavu_welcome_sync_text">Inicieu la sessió amb un compte de Mozilla per sincronitzar els espais de treball, les pestanyes fixades i els essencials amb el Zen, o les pestanyes amb el Firefox.</string>
-    <string name="dejavu_settings_matrix">Xategeu a Matrix</string>
-    <string name="dejavu_settings_matrix_summary">Feu una pregunta, suggeriu una funcionalitat o informeu d\'un error</string>
+    <string name="dejavu_settings_email">Correu electrònic</string>
+    <string name="dejavu_settings_email_summary">Feu una pregunta, suggeriu una funcionalitat o informeu d\'un error</string>
     <string name="dejavu_menu_clear_data">Neteja les dades</string>
     <string name="dejavu_menu_clear_data_and_quit">Neteja les dades i surt</string>
     <string name="dejavu_clear_data_button">Botó «Neteja les dades»</string>
@@ -601,4 +601,17 @@
     <string name="dejavu_settings_all_animations_summary">Els menús, les pàgines i els botons es mouen quan s\'obren i es tanquen. Desactivades, apareixen de cop.</string>
     <string name="dejavu_settings_genie_effect">Efecte geni</string>
     <string name="dejavu_settings_genie_effect_summary">Les adreces d\'interès, l\'historial, les baixades, els paràmetres i el vostre compte surten dels seus botons a la pàgina d\'inici i hi tornen.</string>
+    <string name="dejavu_passkeys_unsupported">Les claus d’accés encara no són compatibles amb aquesta versió d’Android</string>
+    <string name="dejavu_settings_accent_color">Color d\'èmfasi</string>
+    <string name="dejavu_accent_neutral">Neutre</string>
+    <string name="dejavu_accent_system">Colors del fons de pantalla</string>
+    <string name="dejavu_settings_icons">Icones</string>
+    <string name="dejavu_icons_dejavu">Dos tons</string>
+    <string name="dejavu_icons_firefox">Clàssiques</string>
+    <string name="dejavu_icons_rounded">Arrodonides</string>
+    <string name="dejavu_settings_essentials">Essencials</string>
+    <string name="dejavu_settings_essentials_summary">Amaga\'ls tots o només alguns en aquest telèfon</string>
+    <string name="dejavu_essentials_hint">Els essencials que amagueu aquí es queden al Zen i als vostres altres dispositius, i tornen quan els torneu a mostrar.</string>
+    <string name="dejavu_essentials_show">Mostra els essencials</string>
+    <string name="dejavu_essentials_none">Encara no hi ha cap essencial. Arrossegueu una pestanya a dalt de tot de la pantalla d\'inici per afegir-la als essencials.</string>
 </resources>

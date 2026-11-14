@@ -516,8 +516,8 @@
     <string name="dejavu_welcome_default_done">Dejavu on oletusselaimesi.</string>
     <string name="dejavu_welcome_sync_title">Työtilasi kaikilla laitteilla</string>
     <string name="dejavu_welcome_sync_text">Kirjaudu Mozilla-tilillä ja synkronoi työtilat, kiinnitetyt välilehdet ja suosikit Zenin kanssa tai välilehdet Firefoxin kanssa.</string>
-    <string name="dejavu_settings_matrix">Keskustele Matrixissa</string>
-    <string name="dejavu_settings_matrix_summary">Esitä kysymys, ehdota ominaisuutta tai ilmoita virheestä</string>
+    <string name="dejavu_settings_email">Sähköposti</string>
+    <string name="dejavu_settings_email_summary">Esitä kysymys, ehdota ominaisuutta tai ilmoita virheestä</string>
     <string name="dejavu_menu_clear_data">Tyhjennä tiedot</string>
     <string name="dejavu_menu_clear_data_and_quit">Tyhjennä tiedot ja lopeta</string>
     <string name="dejavu_clear_data_button">Tyhjennä tiedot -painike</string>
@@ -593,4 +593,17 @@
     <string name="dejavu_settings_all_animations_summary">Valikot, sivut ja painikkeet liikkuvat avautuessaan ja sulkeutuessaan. Kun asetus on pois päältä, ne näkyvät heti.</string>
     <string name="dejavu_settings_genie_effect">Henkiefekti</string>
     <string name="dejavu_settings_genie_effect_summary">Kirjanmerkit, historia, lataukset, asetukset ja tilisi virtaavat ulos painikkeistaan aloitussivulla ja takaisin.</string>
+    <string name="dejavu_passkeys_unsupported">Pääsyavaimia ei vielä tueta tässä Android-versiossa</string>
+    <string name="dejavu_settings_accent_color">Korostusväri</string>
+    <string name="dejavu_accent_neutral">Neutraali</string>
+    <string name="dejavu_accent_system">Taustakuvan värit</string>
+    <string name="dejavu_settings_icons">Kuvakkeet</string>
+    <string name="dejavu_icons_dejavu">Kaksisävyinen</string>
+    <string name="dejavu_icons_firefox">Klassinen</string>
+    <string name="dejavu_icons_rounded">Pyöristetty</string>
+    <string name="dejavu_settings_essentials">Suosikit</string>
+    <string name="dejavu_settings_essentials_summary">Piilota kaikki tai osa niistä tässä puhelimessa</string>
+    <string name="dejavu_essentials_hint">Tässä piilottamasi suosikit säilyvät Zenissä ja muilla laitteillasi, ja ne palaavat, kun näytät ne taas.</string>
+    <string name="dejavu_essentials_show">Näytä suosikit</string>
+    <string name="dejavu_essentials_none">Ei vielä suosikkeja. Vedä välilehti aloitussivun yläreunaan tehdäksesi siitä suosikin.</string>
 </resources>

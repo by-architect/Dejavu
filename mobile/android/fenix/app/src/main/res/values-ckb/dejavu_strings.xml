@@ -516,8 +516,8 @@
     <string name="dejavu_welcome_default_done">Dejavu وێبگەڕی سەرەکیتە.</string>
     <string name="dejavu_welcome_sync_title">فەزاکانت لە هەموو ئامێرێکدا</string>
     <string name="dejavu_welcome_sync_text">بە هەژمارێکی Mozilla بچۆ ژوورەوە بۆ هاوکاتکردنی فەزاکان، بازدەرە چەسپاوەکان و ماڵپەڕە گرنگەکان لەگەڵ Zen، یان بازدەرەکان لەگەڵ Firefox.</string>
-    <string name="dejavu_settings_matrix">لە Matrix گفتوگۆ بکە</string>
-    <string name="dejavu_settings_matrix_summary">پرسیارێک بکە، تایبەتمەندییەک پێشنیار بکە یان هەڵەیەک ڕاپۆرت بکە</string>
+    <string name="dejavu_settings_email">ئیمەیڵ</string>
+    <string name="dejavu_settings_email_summary">پرسیارێک بکە، تایبەتمەندییەک پێشنیار بکە یان هەڵەیەک ڕاپۆرت بکە</string>
     <string name="dejavu_menu_clear_data">خاوێنکردنەوەی زانیاری</string>
     <string name="dejavu_menu_clear_data_and_quit">خاوێنکردنەوەی زانیاری و دەرچوون</string>
     <string name="dejavu_clear_data_button">دوگمەی «خاوێنکردنەوەی زانیاری»</string>
@@ -593,4 +593,17 @@
     <string name="dejavu_settings_all_animations_summary">لیستەکان، پەڕەکان و دوگمەکان لە کاتی کردنەوە و داخستندا دەجووڵێن. کاتێک کوژاوەتەوە، یەکسەر دەردەکەون.</string>
     <string name="dejavu_settings_genie_effect">کاریگەریی جنۆکە</string>
     <string name="dejavu_settings_genie_effect_summary">نیشانەکان، مێژوو، داگرتنەکان، ڕێکخستنەکان و هەژمارەکەت لە دوگمەکانیانەوە لە پەڕەی سەرەکی دەڕژێنە دەرەوە و دەگەڕێنەوە.</string>
+    <string name="dejavu_passkeys_unsupported">کلیلی چوونەژوورەوە (passkey) هێشتا لەم وەشانەی Android پشتگیری ناکرێت</string>
+    <string name="dejavu_settings_accent_color">ڕەنگی سەرەکی</string>
+    <string name="dejavu_accent_neutral">بێلایەن</string>
+    <string name="dejavu_accent_system">ڕەنگەکانی وێنەی پاشبنەما</string>
+    <string name="dejavu_settings_icons">ئایکۆنەکان</string>
+    <string name="dejavu_icons_dejavu">دوو ڕەنگ</string>
+    <string name="dejavu_icons_firefox">کلاسیک</string>
+    <string name="dejavu_icons_rounded">خڕ</string>
+    <string name="dejavu_settings_essentials">ماڵپەڕە گرنگەکان</string>
+    <string name="dejavu_settings_essentials_summary">شاردنەوەی هەموویان یان هەندێکیان لەسەر ئەم مۆبایلە</string>
+    <string name="dejavu_essentials_hint">ئەو ماڵپەڕە گرنگانەی لێرە دەیانشاریتەوە لە Zen و ئامێرەکانی ترتدا دەمێننەوە، و کاتێک دووبارە پیشانیان دەدەیتەوە دەگەڕێنەوە.</string>
+    <string name="dejavu_essentials_show">پیشاندانی ماڵپەڕە گرنگەکان</string>
+    <string name="dejavu_essentials_none">هێشتا هیچ ماڵپەڕێکی گرنگ نییە. بازدەرێک ڕابکێشە بۆ سەرەوەی شاشەی سەرەکی بۆ زیادکردنی بۆ ماڵپەڕە گرنگەکان.</string>
 </resources>

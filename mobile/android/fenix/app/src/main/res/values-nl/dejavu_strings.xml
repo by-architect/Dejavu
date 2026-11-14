@@ -516,8 +516,8 @@
     <string name="dejavu_welcome_default_done">Dejavu is je standaardbrowser.</string>
     <string name="dejavu_welcome_sync_title">Je werkruimtes op elk apparaat</string>
     <string name="dejavu_welcome_sync_text">Meld je aan met een Mozilla-account om werkruimtes, vastgemaakte tabbladen en favorieten met Zen te synchroniseren, of tabbladen met Firefox.</string>
-    <string name="dejavu_settings_matrix">Chat op Matrix</string>
-    <string name="dejavu_settings_matrix_summary">Vraag iets, stel een functie voor of meld een bug</string>
+    <string name="dejavu_settings_email">E-mail</string>
+    <string name="dejavu_settings_email_summary">Vraag iets, stel een functie voor of meld een bug</string>
     <string name="dejavu_menu_clear_data">Gegevens wissen</string>
     <string name="dejavu_menu_clear_data_and_quit">Gegevens wissen en afsluiten</string>
     <string name="dejavu_clear_data_button">Knop ‘Gegevens wissen’</string>
@@ -593,4 +593,17 @@
     <string name="dejavu_settings_all_animations_summary">Menu’s, pagina’s en knoppen bewegen bij het openen en sluiten. Uitgeschakeld verschijnen ze meteen.</string>
     <string name="dejavu_settings_genie_effect">Geest-effect</string>
     <string name="dejavu_settings_genie_effect_summary">Bladwijzers, geschiedenis, downloads, instellingen en uw account stromen uit hun knoppen op de startpagina en weer terug.</string>
+    <string name="dejavu_passkeys_unsupported">Wachtwoordsleutels worden nog niet ondersteund op deze Android-versie</string>
+    <string name="dejavu_settings_accent_color">Accentkleur</string>
+    <string name="dejavu_accent_neutral">Neutraal</string>
+    <string name="dejavu_accent_system">Achtergrondkleuren</string>
+    <string name="dejavu_settings_icons">Pictogrammen</string>
+    <string name="dejavu_icons_dejavu">Twee tinten</string>
+    <string name="dejavu_icons_firefox">Klassiek</string>
+    <string name="dejavu_icons_rounded">Afgerond</string>
+    <string name="dejavu_settings_essentials">Favorieten</string>
+    <string name="dejavu_settings_essentials_summary">Alle of enkele ervan verbergen op deze telefoon</string>
+    <string name="dejavu_essentials_hint">Favorieten die je hier verbergt, blijven in Zen en op je andere apparaten, en komen terug als je ze weer toont.</string>
+    <string name="dejavu_essentials_show">Favorieten tonen</string>
+    <string name="dejavu_essentials_none">Nog geen favorieten. Sleep een tabblad naar de bovenkant van het startscherm om er een favoriet van te maken.</string>
 </resources>

@@ -524,8 +524,8 @@
     <string name="dejavu_welcome_default_done">Dejavu ᱫᱚ ᱟᱢᱟᱜ ᱢᱩᱞ ᱵᱽᱨᱟᱣᱩᱡᱟᱨ ᱠᱟᱱᱟ ᱾</string>
     <string name="dejavu_welcome_sync_title">ᱡᱚᱛᱚ ᱥᱟᱫᱷᱚᱱ ᱨᱮ ᱟᱢᱟᱜ ᱣᱟᱨᱠᱥᱯᱮᱥ ᱠᱚ</string>
     <string name="dejavu_welcome_sync_text">Zen ᱥᱟᱶ ᱣᱟᱨᱠᱥᱯᱮᱥ ᱠᱚ, ᱯᱤᱱ ᱴᱮᱵᱽ ᱠᱚ ᱟᱨ ᱮᱥᱮᱱᱥᱤᱭᱟᱞ ᱠᱚ, ᱥᱮ Firefox ᱥᱟᱶ ᱴᱮᱵᱽ ᱠᱚ ᱥᱤᱝᱠ ᱞᱟᱹᱜᱤᱫ Mozilla ᱟᱠᱟᱩᱱᱴ ᱛᱮ ᱥᱟᱭᱤᱱ ᱤᱱ ᱢᱮ ᱾</string>
-    <string name="dejavu_settings_matrix">Matrix ᱨᱮ ᱜᱟᱞᱢᱟᱨᱟᱣ</string>
-    <string name="dejavu_settings_matrix_summary">ᱠᱩᱠᱞᱤ ᱠᱩᱞᱤ ᱢᱮ, ᱯᱷᱤᱪᱚᱨ ᱥᱩᱡᱷᱟᱹᱣ ᱢᱮ ᱟᱨᱵᱟᱝ ᱵᱟᱜᱽ ᱨᱤᱯᱚᱨᱴ ᱢᱮ</string>
+    <string name="dejavu_settings_email">ᱤᱢᱮᱞ</string>
+    <string name="dejavu_settings_email_summary">ᱠᱩᱠᱞᱤ ᱠᱩᱞᱤ ᱢᱮ, ᱯᱷᱤᱪᱚᱨ ᱥᱩᱡᱷᱟᱹᱣ ᱢᱮ ᱟᱨᱵᱟᱝ ᱵᱟᱜᱽ ᱨᱤᱯᱚᱨᱴ ᱢᱮ</string>
     <string name="dejavu_menu_clear_data">ᱰᱟᱴᱟ ᱠᱞᱤᱭᱟᱨ ᱢᱮ</string>
     <string name="dejavu_menu_clear_data_and_quit">ᱰᱟᱴᱟ ᱠᱞᱤᱭᱟᱨ ᱟᱨ ᱵᱟᱹᱜᱤ ᱢᱮ</string>
     <string name="dejavu_clear_data_button">“ᱰᱟᱴᱟ ᱠᱞᱤᱭᱟᱨ ᱢᱮ” ᱵᱩᱛᱟᱹᱢ</string>
@@ -601,4 +601,17 @@
     <string name="dejavu_settings_all_animations_summary">ᱢᱮᱱᱩ, ᱥᱟᱦᱴᱟ ᱟᱨ ᱵᱩᱛᱟᱹᱢ ᱠᱚ ᱡᱷᱤᱡᱽ ᱟᱨ ᱵᱚᱱᱫᱚ ᱚᱠᱛᱮ ᱥᱮᱞᱮᱫ ᱠᱟᱱᱟ ᱾ ᱵᱚᱱᱫᱚ ᱠᱟᱛᱮ ᱩᱱᱠᱩ ᱛᱩᱨᱩᱫ ᱧᱮᱞᱚᱜ ᱠᱟᱱᱟ ᱾</string>
     <string name="dejavu_settings_genie_effect">ᱡᱤᱱ ᱮᱯᱷᱮᱠᱴ</string>
     <string name="dejavu_settings_genie_effect_summary">ᱵᱩᱠᱢᱟᱨᱠ ᱠᱚ, ᱱᱟᱜᱟᱢ, ᱰᱟᱣᱱᱞᱚᱰ ᱠᱚ, ᱥᱟᱡᱟᱣ ᱠᱚ ᱟᱨ ᱟᱢᱟᱜ ᱟᱠᱟᱩᱱᱴ ᱚᱲᱟᱜ ᱥᱟᱦᱴᱟ ᱨᱮᱱᱟᱜ ᱵᱩᱛᱟᱹᱢ ᱠᱷᱚᱱ ᱚᱰᱚᱠ ᱟᱨ ᱨᱩᱣᱟᱹᱲ ᱠᱟᱱᱟ ᱾</string>
+    <string name="dejavu_passkeys_unsupported">ᱱᱚᱶᱟ Android ᱵᱷᱟᱨᱥᱚᱱ ᱨᱮ ᱯᱟᱥᱠᱤ ᱫᱚ ᱱᱤᱛ ᱦᱟᱹᱵᱤᱡ ᱵᱟᱝ ᱜᱚᱲᱚᱭ ᱠᱟᱱᱟ</string>
+    <string name="dejavu_settings_accent_color">ᱮᱠᱥᱮᱱᱴ ᱨᱚᱝ</string>
+    <string name="dejavu_accent_neutral">ᱱᱤᱣᱴᱨᱟᱞ</string>
+    <string name="dejavu_accent_system">ᱠᱟᱸᱛᱷᱪᱤᱛᱟᱹᱨ ᱨᱚᱝ ᱠᱚ</string>
+    <string name="dejavu_settings_icons">ᱟᱭᱠᱚᱱ ᱠᱚ</string>
+    <string name="dejavu_icons_dejavu">ᱵᱟᱨ ᱨᱚᱝ</string>
+    <string name="dejavu_icons_firefox">ᱠᱞᱟᱥᱤᱠ</string>
+    <string name="dejavu_icons_rounded">ᱜᱚᱞ</string>
+    <string name="dejavu_settings_essentials">ᱮᱥᱮᱱᱥᱤᱭᱟᱞ ᱠᱚ</string>
+    <string name="dejavu_settings_essentials_summary">ᱱᱚᱶᱟ ᱯᱷᱚᱱ ᱨᱮ ᱡᱚᱛᱚ ᱥᱮ ᱛᱤᱱᱟᱹᱜ ᱜᱟᱱ ᱩᱠᱩ ᱢᱮ</string>
+    <string name="dejavu_essentials_hint">ᱱᱚᱰᱮ ᱟᱢ ᱩᱠᱩ ᱠᱟᱱ ᱮᱥᱮᱱᱥᱤᱭᱟᱞ ᱠᱚ Zen ᱟᱨ ᱟᱢᱟᱜ ᱮᱴᱟᱜ ᱥᱟᱫᱷᱚᱱ ᱠᱚ ᱨᱮ ᱛᱟᱦᱮᱸ ᱟ, ᱟᱨ ᱟᱢ ᱫᱩᱦᱲᱟᱹ ᱩᱫᱩᱜ ᱠᱷᱟᱱ ᱨᱩᱣᱟᱹᱲ ᱦᱤᱡᱩᱜ ᱟ ᱾</string>
+    <string name="dejavu_essentials_show">ᱮᱥᱮᱱᱥᱤᱭᱟᱞ ᱠᱚ ᱩᱫᱩᱜ ᱢᱮ</string>
+    <string name="dejavu_essentials_none">ᱱᱤᱛ ᱦᱟᱹᱵᱤᱡ ᱡᱟᱦᱟᱸ ᱮᱥᱮᱱᱥᱤᱭᱟᱞ ᱵᱟᱹᱱᱩᱜ ᱾ ᱢᱤᱫ ᱴᱮᱵᱽ ᱮᱥᱮᱱᱥᱤᱭᱟᱞ ᱵᱮᱱᱟᱣ ᱞᱟᱹᱜᱤᱫ ᱚᱱᱟ ᱦᱚᱢ ᱥᱠᱨᱤᱱ ᱨᱮᱭᱟᱜ ᱪᱮᱛᱟᱱ ᱛᱮ ᱚᱨ ᱢᱮ ᱾</string>
 </resources>

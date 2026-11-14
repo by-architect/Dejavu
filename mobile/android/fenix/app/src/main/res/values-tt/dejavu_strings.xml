@@ -516,8 +516,8 @@
     <string name="dejavu_welcome_default_done">Dejavu — сезнең төп браузерыгыз.</string>
     <string name="dejavu_welcome_sync_title">Эш өлкәләрегез һәр җиһазда</string>
     <string name="dejavu_welcome_sync_text">Эш өлкәләрен, беркетелгән табларны һәм төп сайтларны Zen белән, яки табларны Firefox белән синхронлаштыру өчен Mozilla хисап язмасы белән керегез.</string>
-    <string name="dejavu_settings_matrix">Matrix аша сөйләшегез</string>
-    <string name="dejavu_settings_matrix_summary">Сорау бирегез, функция тәкъдим итегез яки хата турында хәбәр итегез</string>
+    <string name="dejavu_settings_email">Эл. почта</string>
+    <string name="dejavu_settings_email_summary">Сорау бирегез, функция тәкъдим итегез яки хата турында хәбәр итегез</string>
     <string name="dejavu_menu_clear_data">Мәгълүматларны чистарту</string>
     <string name="dejavu_menu_clear_data_and_quit">Мәгълүматларны чистарту һәм чыгу</string>
     <string name="dejavu_clear_data_button">«Мәгълүматларны чистарту» төймәсе</string>
@@ -593,4 +593,17 @@
     <string name="dejavu_settings_all_animations_summary">Менюлар, битләр һәм төймәләр ачылганда һәм ябылганда хәрәкәтләнә. Сүндерелгәч, алар шунда ук күренә.</string>
     <string name="dejavu_settings_genie_effect">Җен эффекты</string>
     <string name="dejavu_settings_genie_effect_summary">Кыстыргычлар, тарих, йөкләп алулар, көйләүләр һәм сезнең хисап язмасы баш биттәге төймәләреннән агып чыга һәм кире кайта.</string>
+    <string name="dejavu_passkeys_unsupported">Android-ның бу нөсхәсендә керү ачкычлары (passkey) әлегә хупланмый</string>
+    <string name="dejavu_settings_accent_color">Акцент төсе</string>
+    <string name="dejavu_accent_neutral">Нейтраль</string>
+    <string name="dejavu_accent_system">Фон рәсеме төсләре</string>
+    <string name="dejavu_settings_icons">Билгечекләр</string>
+    <string name="dejavu_icons_dejavu">Ике төсле</string>
+    <string name="dejavu_icons_firefox">Классик</string>
+    <string name="dejavu_icons_rounded">Түгәрәк</string>
+    <string name="dejavu_settings_essentials">Төп сайтлар</string>
+    <string name="dejavu_settings_essentials_summary">Аларның барысын яки кайберләрен бу телефонда яшерү</string>
+    <string name="dejavu_essentials_hint">Монда сез яшергән төп сайтлар Zen-дә һәм башка җиһазларыгызда кала, аларны яңадан күрсәткәч, кире кайта.</string>
+    <string name="dejavu_essentials_show">Төп сайтларны күрсәтү</string>
+    <string name="dejavu_essentials_none">Әлегә төп сайтлар юк. Табны төп сайтларга өстәү өчен, аны баш битнең иң өстенә сөйрәгез.</string>
 </resources>

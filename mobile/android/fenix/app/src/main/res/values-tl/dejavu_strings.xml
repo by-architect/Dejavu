@@ -516,8 +516,8 @@
     <string name="dejavu_welcome_default_done">Default browser mo na ang Dejavu.</string>
     <string name="dejavu_welcome_sync_title">Ang iyong mga workspace sa bawat device</string>
     <string name="dejavu_welcome_sync_text">Mag-sign in gamit ang Mozilla account para i-sync ang mga workspace, naka-pin na tab at Mahahalaga sa Zen, o mga tab sa Firefox.</string>
-    <string name="dejavu_settings_matrix">Makipag-chat sa Matrix</string>
-    <string name="dejavu_settings_matrix_summary">Magtanong, magmungkahi ng feature, o mag-ulat ng bug</string>
+    <string name="dejavu_settings_email">Email</string>
+    <string name="dejavu_settings_email_summary">Magtanong, magmungkahi ng feature, o mag-ulat ng bug</string>
     <string name="dejavu_menu_clear_data">Linisin ang data</string>
     <string name="dejavu_menu_clear_data_and_quit">Linisin ang data at isara</string>
     <string name="dejavu_clear_data_button">Button na “Linisin ang data”</string>
@@ -593,4 +593,17 @@
     <string name="dejavu_settings_all_animations_summary">Gumagalaw ang mga menu, pahina at button habang bumubukas at sumasara. Kapag naka-off, agad silang lumilitaw.</string>
     <string name="dejavu_settings_genie_effect">Genie effect</string>
     <string name="dejavu_settings_genie_effect_summary">Ang mga bookmark, kasaysayan, download, setting at ang iyong account ay umaagos palabas sa kanilang mga button sa home page at bumabalik.</string>
+    <string name="dejavu_passkeys_unsupported">Hindi pa suportado ang mga passkey sa bersyong ito ng Android</string>
+    <string name="dejavu_settings_accent_color">Kulay ng accent</string>
+    <string name="dejavu_accent_neutral">Neutral</string>
+    <string name="dejavu_accent_system">Mga kulay ng wallpaper</string>
+    <string name="dejavu_settings_icons">Mga icon</string>
+    <string name="dejavu_icons_dejavu">Dalawang kulay</string>
+    <string name="dejavu_icons_firefox">Klasiko</string>
+    <string name="dejavu_icons_rounded">Bilugan</string>
+    <string name="dejavu_settings_essentials">Mahahalaga</string>
+    <string name="dejavu_settings_essentials_summary">Itago ang lahat o ilan sa mga ito sa teleponong ito</string>
+    <string name="dejavu_essentials_hint">Mananatili sa Zen at sa iba mo pang mga device ang Mahahalagang itatago mo rito, at babalik ang mga ito kapag ipinakita mo ulit.</string>
+    <string name="dejavu_essentials_show">Ipakita ang Mahahalaga</string>
+    <string name="dejavu_essentials_none">Wala pang Mahahalaga. I-drag ang isang tab sa pinakaitaas ng home screen para idagdag ito sa Mahahalaga.</string>
 </resources>

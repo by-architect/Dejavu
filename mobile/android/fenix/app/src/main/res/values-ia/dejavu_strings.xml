@@ -516,8 +516,8 @@
     <string name="dejavu_welcome_default_done">Dejavu es tu navigator predefinite.</string>
     <string name="dejavu_welcome_sync_title">Tu spatios de labor super cata apparato</string>
     <string name="dejavu_welcome_sync_text">Aperi session con un conto Mozilla pro synchronisar spatios de labor, schedas fixate e essentiales con Zen, o schedas con Firefox.</string>
-    <string name="dejavu_settings_matrix">Conversa in Matrix</string>
-    <string name="dejavu_settings_matrix_summary">Pone un question, suggere un functionalitate o reporta un error</string>
+    <string name="dejavu_settings_email">Email</string>
+    <string name="dejavu_settings_email_summary">Pone un question, suggere un functionalitate o reporta un error</string>
     <string name="dejavu_menu_clear_data">Deler datos</string>
     <string name="dejavu_menu_clear_data_and_quit">Deler datos e quitar</string>
     <string name="dejavu_clear_data_button">Button Deler datos</string>
@@ -593,4 +593,17 @@
     <string name="dejavu_settings_all_animations_summary">Menus, paginas e buttones se move quando illos se aperi e se claude. Disactivate, illos appare immediatemente.</string>
     <string name="dejavu_settings_genie_effect">Effecto genio</string>
     <string name="dejavu_settings_genie_effect_summary">Marcapaginas, chronologia, discargamentos, parametros e tu conto flue for de lor buttones in le pagina initial e retorna.</string>
+    <string name="dejavu_passkeys_unsupported">Le claves-contrasigno non es ancora supportate in iste version de Android</string>
+    <string name="dejavu_settings_accent_color">Color de accento</string>
+    <string name="dejavu_accent_neutral">Neutral</string>
+    <string name="dejavu_accent_system">Colores del fundo</string>
+    <string name="dejavu_settings_icons">Icones</string>
+    <string name="dejavu_icons_dejavu">Bicolor</string>
+    <string name="dejavu_icons_firefox">Classic</string>
+    <string name="dejavu_icons_rounded">Rotunde</string>
+    <string name="dejavu_settings_essentials">Essentiales</string>
+    <string name="dejavu_settings_essentials_summary">Celar totes o alcunes super iste telephono</string>
+    <string name="dejavu_essentials_hint">Le essentiales que tu cela hic resta in Zen e super tu altere apparatos, e retorna quando tu los monstra de novo.</string>
+    <string name="dejavu_essentials_show">Monstrar le essentiales</string>
+    <string name="dejavu_essentials_none">Nulle essentiales ancora. Trahe un scheda al summitate del schermo initial pro facer lo un essential.</string>
 </resources>

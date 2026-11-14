@@ -516,8 +516,8 @@
     <string name="dejavu_welcome_default_done">Dejavu шәбраузер хадоуп.</string>
     <string name="dejavu_welcome_sync_title">Шәыҭыԥқәа аиқәыршәага цыԥхьаӡа аҟны</string>
     <string name="dejavu_welcome_sync_text">Аҭыԥқәа, ификсациатә абларҭақәа, иҵакыу сайтқәа Zen ала, ма абларҭақәа Firefox ала рсинхронизациа азы, Mozilla аккаунт ала шәыҭал.</string>
-    <string name="dejavu_settings_matrix">Matrix аҟны аицәажәара</string>
-    <string name="dejavu_settings_matrix_summary">Азҵаарақәа, ажәалагалақәа, насгьы агхақәа</string>
+    <string name="dejavu_settings_email">Ае-маил</string>
+    <string name="dejavu_settings_email_summary">Азҵаарақәа, ажәалагалақәа, насгьы агхақәа</string>
     <string name="dejavu_menu_clear_data">Адыррақәа раныхра</string>
     <string name="dejavu_menu_clear_data_and_quit">Адыррақәа раныхреи аҭыҵреи</string>
     <string name="dejavu_clear_data_button">«Адыррақәа раныхра» акнопка</string>
@@ -593,4 +593,17 @@
     <string name="dejavu_settings_all_animations_summary">Амениуқәа, адаҟьақәа, ақнопкақәа аартреи аркреи аан еиҭаҵуеит. Иаарыхоу, иаразнак иаадыруеит.</string>
     <string name="dejavu_settings_genie_effect">Аџьын аеффект</string>
     <string name="dejavu_settings_genie_effect_summary">Адыргақәа, ахҭыс, аҭагаларақәа, архиарақәа, уаккаунт ахатә даҟьаҿы ақнопкақәа рҟынтә иалҵуеит, нас ирхынҳәуеит.</string>
+    <string name="dejavu_passkeys_unsupported">Android ари аверсиаҿы passkey-қәа иахьазанӡа ирыдкылам</string>
+    <string name="dejavu_settings_accent_color">Аакцент аԥштәы</string>
+    <string name="dejavu_accent_neutral">Инеитралтәу</string>
+    <string name="dejavu_accent_system">Аҭӡамц аԥштәқәа</string>
+    <string name="dejavu_settings_icons">Аиконкақәа</string>
+    <string name="dejavu_icons_dejavu">Ҩԥштәык</string>
+    <string name="dejavu_icons_firefox">Аклассика</string>
+    <string name="dejavu_icons_rounded">Ихаргьежьу</string>
+    <string name="dejavu_settings_essentials">Иҵакыу сайтқәа</string>
+    <string name="dejavu_settings_essentials_summary">Ари ателефон аҟны зегьы ма рхәҭак рыҵаҵыхра</string>
+    <string name="dejavu_essentials_hint">Ара ишәыҵаҵыхуа иҵакыу сайтқәа Zen аҟынгьы егьырҭ шәаиқәыршәагақәа рҟынгьы иаанхоит, насгьы еиҭах ишәаарԥшыр иаахынҳәуеит.</string>
+    <string name="dejavu_essentials_show">Иҵакыу сайтқәа аарԥшра</string>
+    <string name="dejavu_essentials_none">Иахьазанӡа иҵакыу сайтқәа ыҟам. Абларҭа иҵакыу сайтқәа рахь адалаӡаразы, ахатә даҟьа хыхь ахь инаган.</string>
 </resources>

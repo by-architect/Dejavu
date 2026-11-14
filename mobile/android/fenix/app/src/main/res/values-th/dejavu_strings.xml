@@ -508,8 +508,8 @@
     <string name="dejavu_welcome_default_done">Dejavu เป็นเบราว์เซอร์เริ่มต้นของคุณแล้ว</string>
     <string name="dejavu_welcome_sync_title">พื้นที่ทำงานของคุณบนทุกอุปกรณ์</string>
     <string name="dejavu_welcome_sync_text">ลงชื่อเข้าใช้ด้วยบัญชี Mozilla เพื่อซิงค์พื้นที่ทำงาน แท็บที่ปักหมุด และเว็บที่ใช้บ่อยกับ Zen หรือซิงค์แท็บกับ Firefox</string>
-    <string name="dejavu_settings_matrix">แชทบน Matrix</string>
-    <string name="dejavu_settings_matrix_summary">ถามคำถาม เสนอแนะคุณลักษณะ หรือรายงานข้อผิดพลาด</string>
+    <string name="dejavu_settings_email">อีเมล</string>
+    <string name="dejavu_settings_email_summary">ถามคำถาม เสนอแนะคุณลักษณะ หรือรายงานข้อผิดพลาด</string>
     <string name="dejavu_menu_clear_data">ล้างข้อมูล</string>
     <string name="dejavu_menu_clear_data_and_quit">ล้างข้อมูลและออก</string>
     <string name="dejavu_clear_data_button">ปุ่ม “ล้างข้อมูล”</string>
@@ -585,4 +585,17 @@
     <string name="dejavu_settings_all_animations_summary">เมนู หน้า และปุ่มจะเคลื่อนไหวขณะเปิดและปิด เมื่อปิดไว้ จะแสดงทันที</string>
     <string name="dejavu_settings_genie_effect">เอฟเฟกต์จีนี่</string>
     <string name="dejavu_settings_genie_effect_summary">ที่คั่นหน้า ประวัติ การดาวน์โหลด การตั้งค่า และบัญชีของคุณจะไหลออกมาจากปุ่มบนหน้าแรกและกลับเข้าไป</string>
+    <string name="dejavu_passkeys_unsupported">ยังไม่รองรับพาสคีย์ใน Android รุ่นนี้</string>
+    <string name="dejavu_settings_accent_color">สีเน้น</string>
+    <string name="dejavu_accent_neutral">สีกลาง</string>
+    <string name="dejavu_accent_system">สีจากรูปพื้นหลัง</string>
+    <string name="dejavu_settings_icons">ไอคอน</string>
+    <string name="dejavu_icons_dejavu">สองโทน</string>
+    <string name="dejavu_icons_firefox">คลาสสิค</string>
+    <string name="dejavu_icons_rounded">ขอบมน</string>
+    <string name="dejavu_settings_essentials">เว็บที่ใช้บ่อย</string>
+    <string name="dejavu_settings_essentials_summary">ซ่อนทั้งหมดหรือบางส่วนบนโทรศัพท์เครื่องนี้</string>
+    <string name="dejavu_essentials_hint">เว็บที่ใช้บ่อยที่คุณซ่อนไว้ที่นี่จะยังอยู่ใน Zen และบนอุปกรณ์อื่นของคุณ และจะกลับมาเมื่อคุณแสดงอีกครั้ง</string>
+    <string name="dejavu_essentials_show">แสดงเว็บที่ใช้บ่อย</string>
+    <string name="dejavu_essentials_none">ยังไม่มีเว็บที่ใช้บ่อย ลากแท็บไปด้านบนสุดของหน้าแรกเพื่อเพิ่มลงในเว็บที่ใช้บ่อย</string>
 </resources>

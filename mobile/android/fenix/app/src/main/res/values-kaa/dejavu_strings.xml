@@ -516,8 +516,8 @@
     <string name="dejavu_welcome_default_done">Dejavu — tiykarǵı brauzerińiz.</string>
     <string name="dejavu_welcome_sync_title">Jumıs maydanlarıńız hár bir qurılmada</string>
     <string name="dejavu_welcome_sync_text">Jumıs maydanların, bekitilgen betlerdi hám tiykarǵılardı Zen penen yamasa betlerdi Firefox penen sinxronlastırıw ushın Mozilla akkauntı menen kiriń.</string>
-    <string name="dejavu_settings_matrix">Matrix-te sóylesiń</string>
-    <string name="dejavu_settings_matrix_summary">Soraw beriń, imkaniyat usınıń yamasa qáte haqqında xabarlań</string>
+    <string name="dejavu_settings_email">Elektron pochta</string>
+    <string name="dejavu_settings_email_summary">Soraw beriń, imkaniyat usınıń yamasa qáte haqqında xabarlań</string>
     <string name="dejavu_menu_clear_data">Maǵlıwmatlardı tazalaw</string>
     <string name="dejavu_menu_clear_data_and_quit">Maǵlıwmatlardı tazalaw hám shıǵıw</string>
     <string name="dejavu_clear_data_button">«Maǵlıwmatlardı tazalaw» túymesi</string>
@@ -593,4 +593,17 @@
     <string name="dejavu_settings_all_animations_summary">Menyular, betler hám túymeler ashılǵanda hám jabılǵanda qozǵaladı. Óshirilgende olar birden kórinedi.</string>
     <string name="dejavu_settings_genie_effect">Jin effekti</string>
     <string name="dejavu_settings_genie_effect_summary">Betbelgiler, tariyx, júklengenler, sazlawlar hám akkauntıńız bas bettegi túymelerinen aǵıp shıǵadı hám qaytıp kiredi.</string>
+    <string name="dejavu_passkeys_unsupported">Kiriw giltleri (passkey) bul Android nusqasında áli qollap-quwatlanbaydı</string>
+    <string name="dejavu_settings_accent_color">Akcent reńi</string>
+    <string name="dejavu_accent_neutral">Neytral</string>
+    <string name="dejavu_accent_system">Fon súwretiniń reńleri</string>
+    <string name="dejavu_settings_icons">Belgisheler</string>
+    <string name="dejavu_icons_dejavu">Eki reńli</string>
+    <string name="dejavu_icons_firefox">Klassik</string>
+    <string name="dejavu_icons_rounded">Dóńgelek</string>
+    <string name="dejavu_settings_essentials">Tiykarǵılar</string>
+    <string name="dejavu_settings_essentials_summary">Usı telefonda olardıń barlıǵın yamasa ayırımların jasırıw</string>
+    <string name="dejavu_essentials_hint">Bul jerde jasırǵan tiykarǵılarıńız Zen-de hám basqa qurılmalarıńızda qaladı, al olardı qayta kórsetkenińizde qaytıp keledi.</string>
+    <string name="dejavu_essentials_show">Tiykarǵılardı kórsetiw</string>
+    <string name="dejavu_essentials_none">Áli tiykarǵılar joq. Betti tiykarǵı etiw ushın onı bas bettiń joqarǵı bólimine súyreń.</string>
 </resources>

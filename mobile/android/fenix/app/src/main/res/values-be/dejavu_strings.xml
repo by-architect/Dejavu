@@ -532,8 +532,8 @@
     <string name="dejavu_welcome_default_done">Dejavu — ваш прадвызначаны браўзер.</string>
     <string name="dejavu_welcome_sync_title">Вашы прасторы на кожнай прыладзе</string>
     <string name="dejavu_welcome_sync_text">Увайдзіце з уліковым запісам Mozilla, каб сінхранізаваць прасторы, замацаваныя карткі і важнае з Zen або карткі з Firefox.</string>
-    <string name="dejavu_settings_matrix">Чат у Matrix</string>
-    <string name="dejavu_settings_matrix_summary">Задайце пытанне, прапануйце функцыю або паведаміце пра памылку</string>
+    <string name="dejavu_settings_email">Электронная пошта</string>
+    <string name="dejavu_settings_email_summary">Задайце пытанне, прапануйце функцыю або паведаміце пра памылку</string>
     <string name="dejavu_menu_clear_data">Ачысціць дадзеныя</string>
     <string name="dejavu_menu_clear_data_and_quit">Ачысціць дадзеныя і выйсці</string>
     <string name="dejavu_clear_data_button">Кнопка «Ачысціць дадзеныя»</string>
@@ -609,4 +609,17 @@
     <string name="dejavu_settings_all_animations_summary">Меню, старонкі і кнопкі рухаюцца, калі адкрываюцца і зачыняюцца. Калі выключана, яны з\'яўляюцца адразу.</string>
     <string name="dejavu_settings_genie_effect">Эфект джына</string>
     <string name="dejavu_settings_genie_effect_summary">Закладкі, гісторыя, спампоўкі, налады і ваш уліковы запіс выліваюцца са сваіх кнопак на галоўнай старонцы і вяртаюцца назад.</string>
+    <string name="dejavu_passkeys_unsupported">Ключы доступу пакуль не падтрымліваюцца ў гэтай версіі Android</string>
+    <string name="dejavu_settings_accent_color">Колер акцэнту</string>
+    <string name="dejavu_accent_neutral">Нейтральны</string>
+    <string name="dejavu_accent_system">Колеры шпалер</string>
+    <string name="dejavu_settings_icons">Значкі</string>
+    <string name="dejavu_icons_dejavu">Двухколерныя</string>
+    <string name="dejavu_icons_firefox">Класічныя</string>
+    <string name="dejavu_icons_rounded">Акругленыя</string>
+    <string name="dejavu_settings_essentials">Важнае</string>
+    <string name="dejavu_settings_essentials_summary">Схаваць усё ці частку на гэтым тэлефоне</string>
+    <string name="dejavu_essentials_hint">Важнае, якое вы схаваеце тут, застаецца ў Zen і на іншых вашых прыладах і вернецца, калі вы зноў яго пакажаце.</string>
+    <string name="dejavu_essentials_show">Паказваць важнае</string>
+    <string name="dejavu_essentials_none">Пакуль няма важнага. Перацягніце картку ўверх галоўнага экрана, каб дадаць яе ў важнае.</string>
 </resources>

@@ -516,8 +516,8 @@
     <string name="dejavu_welcome_default_done">A Dejavu az alapértelmezett böngészője.</string>
     <string name="dejavu_welcome_sync_title">Munkaterületei minden eszközén</string>
     <string name="dejavu_welcome_sync_text">Jelentkezzen be Mozilla-fiókkal, hogy szinkronizálja a munkaterületeket, a kitűzött lapokat és a kedvenceket a Zennel, vagy a lapokat a Firefoxszal.</string>
-    <string name="dejavu_settings_matrix">Csevegés a Matrixon</string>
-    <string name="dejavu_settings_matrix_summary">Tegyen fel kérdést, javasoljon funkciót vagy jelentsen hibát</string>
+    <string name="dejavu_settings_email">E-mail</string>
+    <string name="dejavu_settings_email_summary">Tegyen fel kérdést, javasoljon funkciót vagy jelentsen hibát</string>
     <string name="dejavu_menu_clear_data">Adatok törlése</string>
     <string name="dejavu_menu_clear_data_and_quit">Adatok törlése és kilépés</string>
     <string name="dejavu_clear_data_button">„Adatok törlése” gomb</string>
@@ -593,4 +593,17 @@
     <string name="dejavu_settings_all_animations_summary">A menük, oldalak és gombok mozognak nyitáskor és záráskor. Kikapcsolva azonnal megjelennek.</string>
     <string name="dejavu_settings_genie_effect">Dzsinn-effektus</string>
     <string name="dejavu_settings_genie_effect_summary">A könyvjelzők, az előzmények, a letöltések, a beállítások és a fiókja kiáramlanak a gombjaikból a kezdőlapon, majd vissza.</string>
+    <string name="dejavu_passkeys_unsupported">A jelkódok még nem támogatottak ezen az Android-verzión</string>
+    <string name="dejavu_settings_accent_color">Kiemelőszín</string>
+    <string name="dejavu_accent_neutral">Semleges</string>
+    <string name="dejavu_accent_system">Háttérkép színei</string>
+    <string name="dejavu_settings_icons">Ikonok</string>
+    <string name="dejavu_icons_dejavu">Kéttónusú</string>
+    <string name="dejavu_icons_firefox">Klasszikus</string>
+    <string name="dejavu_icons_rounded">Lekerekített</string>
+    <string name="dejavu_settings_essentials">Kedvencek</string>
+    <string name="dejavu_settings_essentials_summary">Az összes vagy csak néhány elrejtése ezen a telefonon</string>
+    <string name="dejavu_essentials_hint">Az itt elrejtett kedvencek megmaradnak a Zenben és a többi eszközén, és visszatérnek, amikor újra megjeleníti őket.</string>
+    <string name="dejavu_essentials_show">Kedvencek megjelenítése</string>
+    <string name="dejavu_essentials_none">Még nincsenek kedvencek. Húzzon egy lapot a kezdőképernyő tetejére, hogy kedvenc legyen.</string>
 </resources>

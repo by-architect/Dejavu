@@ -22,6 +22,8 @@ import org.mozilla.fenix.dejavu.history.HistoryGrouping
 import org.mozilla.fenix.dejavu.menu.ActionsBarLayout
 import org.mozilla.fenix.dejavu.menu.AddressBarButtons
 import org.mozilla.fenix.dejavu.menu.MoreMenuLayout
+import org.mozilla.fenix.dejavu.ui.AccentColor
+import org.mozilla.fenix.dejavu.ui.IconStyle
 import org.mozilla.fenix.dejavu.workspaces.WorkspaceLockTime
 
 /**
@@ -60,6 +62,8 @@ class DejavuSettings private constructor(context: Context) {
     )
     private val _animations = MutableStateFlow(prefs.getBoolean(KEY_ANIMATIONS, true))
     private val _genieEffect = MutableStateFlow(prefs.getBoolean(KEY_GENIE_EFFECT, true))
+    private val _accentColor = MutableStateFlow(AccentColor.of(prefs.getString(KEY_ACCENT_COLOR, null)))
+    private val _iconStyle = MutableStateFlow(IconStyle.of(prefs.getString(KEY_ICON_STYLE, null)))
     private val _barsLayout = MutableStateFlow(BarsLayout.fromKey(prefs.getString(KEY_BARS_LAYOUT, null)))
     private val _homeSearchAtBottom = MutableStateFlow(prefs.getBoolean(KEY_HOME_SEARCH_AT_BOTTOM, false))
     private val _addressBarButtons = MutableStateFlow(readAddressBarButtons())
@@ -73,6 +77,8 @@ class DejavuSettings private constructor(context: Context) {
     private val _tipsEnabled = MutableStateFlow(prefs.getBoolean(KEY_TIPS_ENABLED, true))
     private val _seenTips = MutableStateFlow(readSet(KEY_SEEN_TIPS))
     private val _seenNewThings = MutableStateFlow(readSet(KEY_SEEN_NEW_THINGS))
+    private val _essentialsShown = MutableStateFlow(prefs.getBoolean(KEY_ESSENTIALS_SHOWN, true))
+    private val _hiddenEssentials = MutableStateFlow(readSet(KEY_HIDDEN_ESSENTIALS))
     private val _workspaceLockTime =
         MutableStateFlow(WorkspaceLockTime.fromKey(prefs.getString(KEY_WORKSPACE_LOCK_TIME, null)))
 
@@ -90,6 +96,12 @@ class DejavuSettings private constructor(context: Context) {
 
     /** Whether every container has its own essentials, shown in the workspaces using that container. */
     val essentialsPerContainer: StateFlow<Boolean> = _essentialsPerContainer.asStateFlow()
+
+    /** Whether the home screen shows the essentials on this phone (issue #278). Sync and other devices keep them. */
+    val essentialsShown: StateFlow<Boolean> = _essentialsShown.asStateFlow()
+
+    /** The ids of the essentials hidden on this phone, see [org.mozilla.fenix.dejavu.home.shownEssentials]. */
+    val hiddenEssentials: StateFlow<Set<String>> = _hiddenEssentials.asStateFlow()
 
     /** Whether new tabs of workspaces without a default container open in new temporary containers. */
     val temporaryContainersByDefault: StateFlow<Boolean> = _temporaryContainersByDefault.asStateFlow()
@@ -129,6 +141,12 @@ class DejavuSettings private constructor(context: Context) {
      * [org.mozilla.fenix.dejavu.home.PageGenie]. Only while [animations] are on.
      */
     val genieEffect: StateFlow<Boolean> = _genieEffect.asStateFlow()
+
+    /** The accent color picked in Customize, see [AccentColor]. */
+    val accentColor: StateFlow<AccentColor> = _accentColor.asStateFlow()
+
+    /** The style of icons picked in Customize, see [IconStyle]. */
+    val iconStyle: StateFlow<IconStyle> = _iconStyle.asStateFlow()
 
     /** Where the bars show around pages, and so where the "More" menu opens from. */
     val barsLayout: StateFlow<BarsLayout> = _barsLayout.asStateFlow()
@@ -313,6 +331,29 @@ class DejavuSettings private constructor(context: Context) {
     fun setGenieEffect(on: Boolean) {
         _genieEffect.value = on
         prefs.edit { putBoolean(KEY_GENIE_EFFECT, on) }
+    }
+
+    fun setAccentColor(accent: AccentColor) {
+        _accentColor.value = accent
+        prefs.edit { putString(KEY_ACCENT_COLOR, accent.key) }
+    }
+
+    fun setIconStyle(style: IconStyle) {
+        _iconStyle.value = style
+        prefs.edit { putString(KEY_ICON_STYLE, style.key) }
+    }
+
+    fun setEssentialsShown(shown: Boolean) {
+        _essentialsShown.value = shown
+        prefs.edit { putBoolean(KEY_ESSENTIALS_SHOWN, shown) }
+    }
+
+    /** Hides the essential [pinId] on this phone, or shows it again. */
+    fun setEssentialHidden(pinId: String, hidden: Boolean) {
+        val ids = if (hidden) _hiddenEssentials.value + pinId else _hiddenEssentials.value - pinId
+        if (ids == _hiddenEssentials.value) return
+        _hiddenEssentials.value = ids
+        prefs.edit { putString(KEY_HIDDEN_ESSENTIALS, ids.joinToString(",")) }
     }
 
     fun setBarsLayout(layout: BarsLayout) {
@@ -509,6 +550,10 @@ class DejavuSettings private constructor(context: Context) {
         private const val KEY_FULL_SCREEN_BUTTON_HEIGHT = "full_screen_button_height"
         private const val KEY_ANIMATIONS = "animations"
         private const val KEY_GENIE_EFFECT = "genie_effect"
+        private const val KEY_ACCENT_COLOR = "accent_color"
+        private const val KEY_ICON_STYLE = "icon_style"
+        private const val KEY_ESSENTIALS_SHOWN = "essentials_shown"
+        private const val KEY_HIDDEN_ESSENTIALS = "hidden_essentials"
         private const val KEY_BARS_LAYOUT = "bars_layout"
         private const val KEY_HOME_SEARCH_AT_BOTTOM = "home_search_at_bottom"
         private const val KEY_ADDRESS_BAR_START = "address_bar_start"

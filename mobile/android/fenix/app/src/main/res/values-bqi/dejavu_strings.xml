@@ -516,8 +516,8 @@
     <string name="dejavu_welcome_default_done">Dejavu گشت گر پؽش فرزته.</string>
     <string name="dejavu_welcome_sync_title">فضا یلت رو هر دستگاه</string>
     <string name="dejavu_welcome_sync_text">وا یه حساب Mozilla بیا تو تا فضا یل، بلگه یل سنجاق‌وابیده و سایت یل مهم ن وا Zen، یا بلگه یل ن وا Firefox همگام کنی.</string>
-    <string name="dejavu_settings_matrix">گفتگو در Matrix</string>
-    <string name="dejavu_settings_matrix_summary">یه سوال بپرس، یه ویژگی پیشنهاد بده یا یه خطا گزارش کن</string>
+    <string name="dejavu_settings_email">ایمیل</string>
+    <string name="dejavu_settings_email_summary">یه سوال بپرس، یه ویژگی پیشنهاد بده یا یه خطا گزارش کن</string>
     <string name="dejavu_menu_clear_data">پاک کردن داده یل</string>
     <string name="dejavu_menu_clear_data_and_quit">پاک کردن داده یل و در زیڌن</string>
     <string name="dejavu_clear_data_button">دکمه پاک کردن داده یل</string>
@@ -593,4 +593,17 @@
     <string name="dejavu_settings_all_animations_summary">منوا، بلگه‌یا و دکمه‌یا وختی واز و بسته می‌بۊن جم می‌خورن. وختی خاموش بۊ، زی نشون داده می‌بۊن.</string>
     <string name="dejavu_settings_genie_effect">جلوه جن</string>
     <string name="dejavu_settings_genie_effect_summary">نشووکا، ویرگار، دانلودا، سامووا و حساوت ز دکمه‌یاشون من صفحه خونه درمیان و ورمی‌گردن.</string>
+    <string name="dejavu_passkeys_unsupported">کیلیت گوڌشتن هنی و ای نسخه Android پشتیبانی نمیبوه</string>
+    <string name="dejavu_settings_accent_color">رنگ تأکیدی</string>
+    <string name="dejavu_accent_neutral">خنثی</string>
+    <string name="dejavu_accent_system">رنگ یل کاقز دیواری</string>
+    <string name="dejavu_settings_icons">آیکون یل</string>
+    <string name="dejavu_icons_dejavu">دو رنگ</string>
+    <string name="dejavu_icons_firefox">کلاسیک</string>
+    <string name="dejavu_icons_rounded">گرد</string>
+    <string name="dejavu_settings_essentials">سایت یل مهم</string>
+    <string name="dejavu_settings_essentials_summary">قایم کردن همه یا چن تاشون رو ای گوشی</string>
+    <string name="dejavu_essentials_hint">سایت یل مهمی که اینه قایم می‌کنی، من Zen و رو دستگاه یل دیه‌ت می‌مونن، و وختی دوواره نشونشون بدی، ورمی‌گردن.</string>
+    <string name="dejavu_essentials_show">نشون دادن سایت یل مهم</string>
+    <string name="dejavu_essentials_none">هنو هیچ سایت مهمی نئ. یه بلگه ن بکش بالای صفحه اصلی تا بره من سایت یل مهم.</string>
 </resources>

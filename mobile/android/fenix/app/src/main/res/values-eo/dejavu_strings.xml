@@ -516,8 +516,8 @@
     <string name="dejavu_welcome_default_done">Dejavu estas via norma retumilo.</string>
     <string name="dejavu_welcome_sync_title">Viaj laborspacoj sur ĉiu aparato</string>
     <string name="dejavu_welcome_sync_text">Ensalutu per Mozilla-konto por sinkronigi laborspacojn, pinglitajn langetojn kaj esencaĵojn kun Zen, aŭ langetojn kun Firefox.</string>
-    <string name="dejavu_settings_matrix">Babilu en Matrix</string>
-    <string name="dejavu_settings_matrix_summary">Faru demandon, proponu funkcion aŭ raportu eraron</string>
+    <string name="dejavu_settings_email">Retpoŝto</string>
+    <string name="dejavu_settings_email_summary">Faru demandon, proponu funkcion aŭ raportu eraron</string>
     <string name="dejavu_menu_clear_data">Forviŝi datumojn</string>
     <string name="dejavu_menu_clear_data_and_quit">Forviŝi datumojn kaj fini</string>
     <string name="dejavu_clear_data_button">Butono “Forviŝi datumojn”</string>
@@ -593,4 +593,17 @@
     <string name="dejavu_settings_all_animations_summary">Menuoj, paĝoj kaj butonoj moviĝas dum ili malfermiĝas kaj fermiĝas. Malŝaltite, ili aperas tuj.</string>
     <string name="dejavu_settings_genie_effect">Ĝinia efiko</string>
     <string name="dejavu_settings_genie_effect_summary">Legosignoj, historio, elŝutoj, agordoj kaj via konto elfluas el siaj butonoj sur la hejmpaĝo kaj reen.</string>
+    <string name="dejavu_passkeys_unsupported">Pasŝlosiloj ankoraŭ ne estas subtenataj en tiu ĉi versio de Android</string>
+    <string name="dejavu_settings_accent_color">Akcenta koloro</string>
+    <string name="dejavu_accent_neutral">Neŭtra</string>
+    <string name="dejavu_accent_system">Koloroj de la ekranfono</string>
+    <string name="dejavu_settings_icons">Piktogramoj</string>
+    <string name="dejavu_icons_dejavu">Dukoloraj</string>
+    <string name="dejavu_icons_firefox">Klasikaj</string>
+    <string name="dejavu_icons_rounded">Rondigitaj</string>
+    <string name="dejavu_settings_essentials">Esencaĵoj</string>
+    <string name="dejavu_settings_essentials_summary">Kaŝi ĉiujn aŭ kelkajn el ili sur ĉi tiu telefono</string>
+    <string name="dejavu_essentials_hint">Esencaĵoj, kiujn vi kaŝas ĉi tie, restas en Zen kaj sur viaj aliaj aparatoj, kaj revenas, kiam vi denove montros ilin.</string>
+    <string name="dejavu_essentials_show">Montri esencaĵojn</string>
+    <string name="dejavu_essentials_none">Ankoraŭ neniuj esencaĵoj. Trenu langeton al la supro de la hejmekrano por aldoni ĝin al esencaĵoj.</string>
 </resources>

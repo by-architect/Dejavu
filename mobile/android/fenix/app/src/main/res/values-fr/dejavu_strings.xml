@@ -516,8 +516,8 @@
     <string name="dejavu_welcome_default_done">Dejavu est ton navigateur par défaut.</string>
     <string name="dejavu_welcome_sync_title">Tes espaces sur tous tes appareils</string>
     <string name="dejavu_welcome_sync_text">Connecte-toi avec un compte Mozilla pour synchroniser tes espaces, onglets épinglés et favoris avec Zen, ou tes onglets avec Firefox.</string>
-    <string name="dejavu_settings_matrix">Discuter sur Matrix</string>
-    <string name="dejavu_settings_matrix_summary">Pose une question, suggère une fonctionnalité ou signale un bug</string>
+    <string name="dejavu_settings_email">E-mail</string>
+    <string name="dejavu_settings_email_summary">Pose une question, suggère une fonctionnalité ou signale un bug</string>
     <string name="dejavu_menu_clear_data">Effacer les données</string>
     <string name="dejavu_menu_clear_data_and_quit">Effacer les données et quitter</string>
     <string name="dejavu_clear_data_button">Bouton « Effacer les données »</string>
@@ -593,4 +593,17 @@
     <string name="dejavu_settings_all_animations_summary">Les menus, les pages et les boutons bougent en s’ouvrant et en se fermant. Sans animations, ils apparaissent tout de suite.</string>
     <string name="dejavu_settings_genie_effect">Effet génie</string>
     <string name="dejavu_settings_genie_effect_summary">Les marque-pages, l’historique, les téléchargements, les paramètres et votre compte jaillissent de leurs boutons sur la page d’accueil et y retournent.</string>
+    <string name="dejavu_passkeys_unsupported">Les clés d’accès ne sont pas encore prises en charge sur cette version d’Android</string>
+    <string name="dejavu_settings_accent_color">Couleur d’accentuation</string>
+    <string name="dejavu_accent_neutral">Neutre</string>
+    <string name="dejavu_accent_system">Couleurs du fond d’écran</string>
+    <string name="dejavu_settings_icons">Icônes</string>
+    <string name="dejavu_icons_dejavu">Deux tons</string>
+    <string name="dejavu_icons_firefox">Classique</string>
+    <string name="dejavu_icons_rounded">Arrondi</string>
+    <string name="dejavu_settings_essentials">Favoris</string>
+    <string name="dejavu_settings_essentials_summary">Masquer tout ou partie des favoris sur ce téléphone</string>
+    <string name="dejavu_essentials_hint">Les favoris que tu masques ici restent dans Zen et sur tes autres appareils, et reviennent quand tu les affiches à nouveau.</string>
+    <string name="dejavu_essentials_show">Afficher les favoris</string>
+    <string name="dejavu_essentials_none">Aucun favori pour l’instant. Fais glisser un onglet tout en haut de la page d’accueil pour en faire un favori.</string>
 </resources>

@@ -33,7 +33,6 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
-import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
@@ -58,6 +57,7 @@ import org.mozilla.fenix.dejavu.sync.workspaceIconText
 import org.mozilla.fenix.dejavu.ui.DejavuButtonStyle
 import org.mozilla.fenix.dejavu.ui.DejavuDialog
 import org.mozilla.fenix.dejavu.ui.DejavuDialogButton
+import org.mozilla.fenix.dejavu.ui.iconPainter
 import org.mozilla.fenix.dejavu.workspaces.WorkspaceLock
 import org.mozilla.fenix.dejavu.workspaces.WorkspaceRepository
 import org.mozilla.fenix.dejavu.workspaces.WorkspaceState
@@ -100,13 +100,13 @@ class DejavuTabsImportExportFragment : DejavuComposeFragment(R.string.dejavu_set
             SettingsHint(stringResource(R.string.dejavu_sidebery_hint))
             IconListItem(
                 label = stringResource(R.string.dejavu_sidebery_export),
-                beforeIconPainter = painterResource(iconsR.drawable.mozac_ic_save_file_24),
+                beforeIconPainter = iconPainter(iconsR.drawable.mozac_ic_save_file_24),
                 modifier = Modifier.settingsCard(index = 0, count = 2),
                 onClick = { launchSafely { exporter.launch(SideberyFile.name(System.currentTimeMillis())) } },
             )
             IconListItem(
                 label = stringResource(R.string.dejavu_sidebery_import),
-                beforeIconPainter = painterResource(iconsR.drawable.mozac_ic_import_data_24),
+                beforeIconPainter = iconPainter(iconsR.drawable.mozac_ic_import_data_24),
                 modifier = Modifier.settingsCard(index = 1, count = 2),
                 onClick = { launchSafely { importer.launch(SideberyFile.OPEN_TYPES) } },
             )

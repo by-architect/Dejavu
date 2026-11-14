@@ -516,8 +516,8 @@
     <string name="dejavu_welcome_default_done">Dejavu d iminig-ik amezwer.</string>
     <string name="dejavu_welcome_sync_title">Imukan n umahil-ik ɣef yal ibenk</string>
     <string name="dejavu_welcome_sync_text">Kcem s umiḍan Mozilla akken ad tesdukleḍ imukan n umahil, iccaren yessersen d wayen ilaqen akked Zen, neɣ iccaren akked Firefox.</string>
-    <string name="dejavu_settings_matrix">Mmeslay deg Matrix</string>
-    <string name="dejavu_settings_matrix_summary">Seqsi asteqsi, sumer tamahilt neɣ mmel-d tuccḍa</string>
+    <string name="dejavu_settings_email">Imayl</string>
+    <string name="dejavu_settings_email_summary">Seqsi asteqsi, sumer tamahilt neɣ mmel-d tuccḍa</string>
     <string name="dejavu_menu_clear_data">Sfeḍ isefka</string>
     <string name="dejavu_menu_clear_data_and_quit">Sfeḍ isefka syen ffeɣ</string>
     <string name="dejavu_clear_data_button">Taqeffalt Sfeḍ isefka</string>
@@ -593,4 +593,17 @@
     <string name="dejavu_settings_all_animations_summary">Umuɣen, isebtar d tqeffalin ttembiwilen mi ldin d mi rgen. Ma yensa, ad d-banen imir-n.</string>
     <string name="dejavu_settings_genie_effect">Asemdu n ujenni</string>
     <string name="dejavu_settings_genie_effect_summary">Ticraḍ n yisebtar, azray, isidar, iɣewwaṛen d umiḍan-ik ttefɣen-d seg tqeffalin-nsen deg usebter agejdan, syin ad uɣalen.</string>
+    <string name="dejavu_passkeys_unsupported">Tisura n unekcum (passkeys) mazal ur ttwasefraken ara deg lqem-agi n Android</string>
+    <string name="dejavu_settings_accent_color">Ini agejdan</string>
+    <string name="dejavu_accent_neutral">Alemmas</string>
+    <string name="dejavu_accent_system">Initen n tugna n ugilal</string>
+    <string name="dejavu_settings_icons">Tignitin</string>
+    <string name="dejavu_icons_dejavu">Sin yiniten</string>
+    <string name="dejavu_icons_firefox">Aklasik</string>
+    <string name="dejavu_icons_rounded">Imdewwer</string>
+    <string name="dejavu_settings_essentials">Ayen ilaqen</string>
+    <string name="dejavu_settings_essentials_summary">Ffer-ten akk neɣ kra seg-sen ɣef tiliɣri-agi</string>
+    <string name="dejavu_essentials_hint">Ayen ilaqen i teffreḍ dagi ad qqimen deg Zen d yibenkan-ik nniḍen, ad d-uɣalen mi ara ten-id-tesskneḍ tikkelt nniḍen.</string>
+    <string name="dejavu_essentials_show">Sken ayen ilaqen</string>
+    <string name="dejavu_essentials_none">Ulac ayen ilaqen akka tura. Zuɣer iccer ɣer ufella n ugdil agejdan akken ad yuɣal seg wayen ilaqen.</string>
 </resources>

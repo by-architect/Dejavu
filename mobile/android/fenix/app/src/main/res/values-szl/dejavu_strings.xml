@@ -532,8 +532,8 @@
     <string name="dejavu_welcome_default_done">Dejavu to je twoja bazowo przeglōndarka.</string>
     <string name="dejavu_welcome_sync_title">Twoje place na kożdym geracie</string>
     <string name="dejavu_welcome_sync_text">Zaloguj sie kōntym Mozilla, coby synchronizować place, przipiynte karty i nojważniejsze z Zen, abo karty z Firefox.</string>
-    <string name="dejavu_settings_matrix">Czat na Matrixie</string>
-    <string name="dejavu_settings_matrix_summary">Spytej sie, zaproponuj funkcyjo abo zgłoś feler</string>
+    <string name="dejavu_settings_email">E-mail</string>
+    <string name="dejavu_settings_email_summary">Spytej sie, zaproponuj funkcyjo abo zgłoś feler</string>
     <string name="dejavu_menu_clear_data">Wyczyś dane</string>
     <string name="dejavu_menu_clear_data_and_quit">Wyczyś dane i zawrzij</string>
     <string name="dejavu_clear_data_button">Knefel „Wyczyś dane”</string>
@@ -609,4 +609,17 @@
     <string name="dejavu_settings_all_animations_summary">Menu, zajty i knefle ruszajōm sie, jak sie ôtwiyrajōm i zawiyrajōm. Po wyłōnczyniu pokazujōm sie ôd razu.</string>
     <string name="dejavu_settings_genie_effect">Efekt dżina</string>
     <string name="dejavu_settings_genie_effect_summary">Zokłodki, historyjo, pobrania, sztalōnki i twoje kōnto wylywajōm sie ze swojich knefli na strōnie dōm i wracajōm.</string>
+    <string name="dejavu_passkeys_unsupported">Klucze dostympu niy sōm jeszcze spiyrane we tyj wersyji Androida</string>
+    <string name="dejavu_settings_accent_color">Farba akcyntu</string>
+    <string name="dejavu_accent_neutral">Neutralno</string>
+    <string name="dejavu_accent_system">Farby tapety</string>
+    <string name="dejavu_settings_icons">Ikōny</string>
+    <string name="dejavu_icons_dejavu">Dwufarbne</string>
+    <string name="dejavu_icons_firefox">Klasyczne</string>
+    <string name="dejavu_icons_rounded">Ôkrōngłe</string>
+    <string name="dejavu_settings_essentials">Nojważniejsze</string>
+    <string name="dejavu_settings_essentials_summary">Skryj wszyjske abo ino niykere na tym telefōnie</string>
+    <string name="dejavu_essentials_hint">Nojważniejsze, kere sam skryjesz, ôstanōm w Zen i na twojich inkszych maszinach, a wrōcōm, jak je zaś pokożesz.</string>
+    <string name="dejavu_essentials_show">Pokazuj nojważniejsze</string>
+    <string name="dejavu_essentials_none">Niy ma jeszcze nojważniejszych. Przeciōng karta na sam wiyrch strōny dōm, coby jōm dodać do nojważniejszych.</string>
 </resources>

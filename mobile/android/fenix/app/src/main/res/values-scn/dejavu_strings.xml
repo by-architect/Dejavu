@@ -516,8 +516,8 @@
     <string name="dejavu_welcome_default_done">Dejavu è u tò navigaturi pridifinutu.</string>
     <string name="dejavu_welcome_sync_title">I tò spazzii di travagghiu supra ogni dispositivu</string>
     <string name="dejavu_welcome_sync_text">Trasi cu un cuntu Mozilla pi sincronizzari spazzii di travagghiu, schedi ficcati e essenziali cu Zen, o schedi cu Firefox.</string>
-    <string name="dejavu_settings_matrix">Parra supra Matrix</string>
-    <string name="dejavu_settings_matrix_summary">Fai na dumanna, pruponi na funzioni o signala un errori</string>
+    <string name="dejavu_settings_email">Posta elittrònica</string>
+    <string name="dejavu_settings_email_summary">Fai na dumanna, pruponi na funzioni o signala un errori</string>
     <string name="dejavu_menu_clear_data">Scancella i dati</string>
     <string name="dejavu_menu_clear_data_and_quit">Scancella i dati e nesci</string>
     <string name="dejavu_clear_data_button">Buttuni Scancella i dati</string>
@@ -593,4 +593,17 @@
     <string name="dejavu_settings_all_animations_summary">Li menù, li pàggini e li buttuna si mòvinu quannu s\'aprinu e si chiùdinu. Siddu sunnu disattivati, cumpàrinu sùbbitu.</string>
     <string name="dejavu_settings_genie_effect">Effettu geniu</string>
     <string name="dejavu_settings_genie_effect_summary">Nzingalibbra, crunuluggìa, scarricamenti, mpustazzioni e lu tò cuntu nèscinu dî so buttuna nnâ pàggina principali e cci tòrnanu.</string>
+    <string name="dejavu_passkeys_unsupported">Li chiavi d\'accessu ancora nun sunnu supurtati nta sta virsioni di Android</string>
+    <string name="dejavu_settings_accent_color">Culuri principali</string>
+    <string name="dejavu_accent_neutral">Niutrali</string>
+    <string name="dejavu_accent_system">Culuri dû funnu</string>
+    <string name="dejavu_settings_icons">Iconi</string>
+    <string name="dejavu_icons_dejavu">A dui toni</string>
+    <string name="dejavu_icons_firefox">Clàssicu</string>
+    <string name="dejavu_icons_rounded">Arrutunnatu</string>
+    <string name="dejavu_settings_essentials">Essenziali</string>
+    <string name="dejavu_settings_essentials_summary">Ammucciali tutti o sulu arcuni supra stu tilèfunu</string>
+    <string name="dejavu_essentials_hint">I essenziali ca ammucci ccà restanu nta Zen e nta l\'àutri dispusitivi tò, e tòrnanu quannu l\'ammustri arrè.</string>
+    <string name="dejavu_essentials_show">Ammustra i essenziali</string>
+    <string name="dejavu_essentials_none">Nun ci sunnu ancora essenziali. Strascina na scheda nnâ parti di supra dâ schermata principali pi fàrila essenziali.</string>
 </resources>

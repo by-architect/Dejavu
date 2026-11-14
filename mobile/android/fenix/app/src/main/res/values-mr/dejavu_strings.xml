@@ -516,8 +516,8 @@
     <string name="dejavu_welcome_default_done">Dejavu तुमचा पूर्वनिर्धारित ब्राउझर आहे.</string>
     <string name="dejavu_welcome_sync_title">प्रत्येक डिव्हाइसवर तुमची कार्यक्षेत्रे</string>
     <string name="dejavu_welcome_sync_text">Zen सह कार्यक्षेत्रे, पिन केलेले टॅब आणि आवश्यक, किंवा Firefox सह टॅब सिंक करण्यासाठी Mozilla खात्याने साइन इन करा.</string>
-    <string name="dejavu_settings_matrix">Matrix वर चॅट करा</string>
-    <string name="dejavu_settings_matrix_summary">प्रश्न विचारा, वैशिष्ट्य सुचवा किंवा त्रुटी कळवा</string>
+    <string name="dejavu_settings_email">ईमेल</string>
+    <string name="dejavu_settings_email_summary">प्रश्न विचारा, वैशिष्ट्य सुचवा किंवा त्रुटी कळवा</string>
     <string name="dejavu_menu_clear_data">डेटा साफ करा</string>
     <string name="dejavu_menu_clear_data_and_quit">डेटा साफ करून बंद करा</string>
     <string name="dejavu_clear_data_button">“डेटा साफ करा” बटण</string>
@@ -593,4 +593,17 @@
     <string name="dejavu_settings_all_animations_summary">मेनू, पृष्ठे आणि बटणे उघडताना आणि बंद होताना हलतात. बंद केल्यावर ती लगेच दिसतात.</string>
     <string name="dejavu_settings_genie_effect">जिनी परिणाम</string>
     <string name="dejavu_settings_genie_effect_summary">बुकमार्क, इतिहास, डाउनलोड, सेटिंग आणि तुमचे खाते मुख्यपृष्ठावरील त्यांच्या बटणांमधून बाहेर वाहतात आणि परत जातात.</string>
+    <string name="dejavu_passkeys_unsupported">या Android आवृत्तीवर पासकी अद्याप समर्थित नाहीत</string>
+    <string name="dejavu_settings_accent_color">ठळक रंग</string>
+    <string name="dejavu_accent_neutral">तटस्थ</string>
+    <string name="dejavu_accent_system">वॉलपेपरचे रंग</string>
+    <string name="dejavu_settings_icons">चिन्हे</string>
+    <string name="dejavu_icons_dejavu">दोन छटा</string>
+    <string name="dejavu_icons_firefox">क्लासिक</string>
+    <string name="dejavu_icons_rounded">गोलाकार</string>
+    <string name="dejavu_settings_essentials">आवश्यक</string>
+    <string name="dejavu_settings_essentials_summary">या फोनवर सर्व किंवा काही लपवा</string>
+    <string name="dejavu_essentials_hint">तुम्ही इथे लपवलेले आवश्यक Zen मध्ये आणि तुमच्या इतर डिव्हाइसवर राहतात, आणि ते पुन्हा दाखवल्यावर परत येतात.</string>
+    <string name="dejavu_essentials_show">आवश्यक दाखवा</string>
+    <string name="dejavu_essentials_none">अजून कोणतेही आवश्यक नाहीत. टॅब आवश्यक बनवण्यासाठी तो मुख्यपृष्ठाच्या वरच्या भागात ओढा.</string>
 </resources>

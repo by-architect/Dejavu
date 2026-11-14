@@ -67,7 +67,6 @@ import androidx.compose.ui.platform.LocalConfiguration
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.platform.LocalLayoutDirection
 import androidx.compose.ui.platform.ViewCompositionStrategy
-import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextOverflow
@@ -89,6 +88,7 @@ import org.mozilla.fenix.dejavu.ui.DejavuMotion
 import org.mozilla.fenix.dejavu.ui.DejavuPopup
 import org.mozilla.fenix.dejavu.ui.LocalPopupTheme
 import org.mozilla.fenix.dejavu.ui.WordFittedText
+import org.mozilla.fenix.dejavu.ui.iconPainter
 import org.mozilla.fenix.dejavu.ui.popupGlow
 import org.mozilla.fenix.dejavu.ui.workspacePopupTheme
 import org.mozilla.fenix.dejavu.workspaces.WorkspaceRepository
@@ -417,7 +417,7 @@ private fun WherePill(feature: DejavuFeature) {
             .padding(horizontal = 12.dp, vertical = 6.dp),
     ) {
         Icon(
-            painter = painterResource(feature.whereIcon),
+            painter = iconPainter(feature.whereIcon),
             contentDescription = null,
             tint = MaterialTheme.colorScheme.onSurfaceVariant,
             modifier = Modifier.size(16.dp),

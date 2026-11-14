@@ -54,7 +54,6 @@ import androidx.compose.ui.input.nestedscroll.NestedScrollSource
 import androidx.compose.ui.input.nestedscroll.nestedScroll
 import androidx.compose.ui.platform.LocalDensity
 import androidx.compose.ui.platform.rememberNestedScrollInteropConnection
-import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.semantics.Role
 import androidx.compose.ui.text.style.TextAlign
@@ -76,6 +75,7 @@ import org.mozilla.fenix.dejavu.discover.rememberUnseenNewThings
 import org.mozilla.fenix.dejavu.home.displayTitle
 import org.mozilla.fenix.dejavu.ui.TapIcon
 import org.mozilla.fenix.dejavu.ui.WordFittedText
+import org.mozilla.fenix.dejavu.ui.iconPainter
 import org.mozilla.fenix.dejavu.ui.rememberIconTaps
 import org.mozilla.fenix.dejavu.workspaces.SplitOrientation
 
@@ -381,7 +381,7 @@ fun MoreMenu(
                 ) {
                     // The new buttons for the menu wait in its settings.
                     Icon(
-                        painter = painterResource(iconsR.drawable.mozac_ic_edit_24),
+                        painter = iconPainter(iconsR.drawable.mozac_ic_edit_24),
                         contentDescription = null,
                         modifier = Modifier
                             .size(18.dp)
@@ -420,7 +420,7 @@ private fun MenuTile(look: EntryLook, onClick: () -> Unit, modifier: Modifier = 
                 ),
         ) {
             Icon(
-                painter = painterResource(look.icon),
+                painter = iconPainter(look.icon),
                 contentDescription = null,
                 tint = if (look.active) {
                     MaterialTheme.colorScheme.onPrimaryContainer
@@ -454,7 +454,7 @@ private fun CustomizeReaderViewRow(onClick: () -> Unit) {
             .padding(horizontal = 16.dp, vertical = 14.dp),
     ) {
         Icon(
-            painter = painterResource(iconsR.drawable.mozac_ic_reader_view_customize_24),
+            painter = iconPainter(iconsR.drawable.mozac_ic_reader_view_customize_24),
             contentDescription = null,
             tint = MaterialTheme.colorScheme.onSurface,
         )
@@ -516,7 +516,7 @@ fun ExtensionsDrawer(
             }
             if (extensions.isNotEmpty()) {
                 Icon(
-                    painter = painterResource(iconsR.drawable.mozac_ic_chevron_down_24),
+                    painter = iconPainter(iconsR.drawable.mozac_ic_chevron_down_24),
                     contentDescription = null,
                     tint = MaterialTheme.colorScheme.onSurfaceVariant,
                     modifier = Modifier.rotate(chevronRotation),
@@ -544,7 +544,7 @@ fun ExtensionList(extensions: List<WebExtensionMenuItem>, onManage: () -> Unit) 
                 .padding(horizontal = 16.dp, vertical = 14.dp),
         ) {
             Icon(
-                painter = painterResource(R.drawable.dejavu_ic_settings_24),
+                painter = iconPainter(R.drawable.dejavu_ic_settings_24),
                 contentDescription = null,
                 tint = MaterialTheme.colorScheme.onSurfaceVariant,
                 modifier = Modifier.size(20.dp),
@@ -576,7 +576,7 @@ private fun ExtensionRow(extension: WebExtensionMenuItem) {
             Image(bitmap = icon.asImageBitmap(), contentDescription = null, modifier = Modifier.size(24.dp))
         } else {
             Icon(
-                painter = painterResource(R.drawable.dejavu_ic_extensions_24),
+                painter = iconPainter(R.drawable.dejavu_ic_extensions_24),
                 contentDescription = null,
                 tint = MaterialTheme.colorScheme.onSurfaceVariant,
                 modifier = Modifier.size(24.dp),
@@ -623,7 +623,7 @@ fun SplitTabPicker(
                 .padding(horizontal = 12.dp, vertical = 12.dp),
         ) {
             Icon(
-                painter = painterResource(iconsR.drawable.mozac_ic_back_24),
+                painter = iconPainter(iconsR.drawable.mozac_ic_back_24),
                 contentDescription = stringResource(R.string.dejavu_menu_back),
                 tint = MaterialTheme.colorScheme.onSurface,
             )
@@ -656,7 +656,7 @@ fun SplitTabPicker(
                     Image(bitmap = icon.asImageBitmap(), contentDescription = null, modifier = Modifier.size(24.dp))
                 } else {
                     Icon(
-                        painter = painterResource(iconsR.drawable.mozac_ic_globe_24),
+                        painter = iconPainter(iconsR.drawable.mozac_ic_globe_24),
                         contentDescription = null,
                         tint = MaterialTheme.colorScheme.onSurfaceVariant,
                         modifier = Modifier.size(24.dp),

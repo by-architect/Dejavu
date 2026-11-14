@@ -524,8 +524,8 @@
     <string name="dejavu_welcome_default_done">Dejavu je vaš podrazumijevani preglednik.</string>
     <string name="dejavu_welcome_sync_title">Vaši radni prostori na svakom uređaju</string>
     <string name="dejavu_welcome_sync_text">Prijavite se Mozilla računom da sinhronizujete radne prostore, prikvačene tabove i Favorite sa Zenom ili tabove sa Firefoxom.</string>
-    <string name="dejavu_settings_matrix">Razgovarajte na Matrixu</string>
-    <string name="dejavu_settings_matrix_summary">Postavite pitanje, predložite funkciju ili prijavite grešku</string>
+    <string name="dejavu_settings_email">Email</string>
+    <string name="dejavu_settings_email_summary">Postavite pitanje, predložite funkciju ili prijavite grešku</string>
     <string name="dejavu_menu_clear_data">Obriši podatke</string>
     <string name="dejavu_menu_clear_data_and_quit">Obriši podatke i zatvori</string>
     <string name="dejavu_clear_data_button">Dugme „Obriši podatke“</string>
@@ -601,4 +601,17 @@
     <string name="dejavu_settings_all_animations_summary">Meniji, stranice i dugmad se pomjeraju dok se otvaraju i zatvaraju. Kada je isključeno, odmah se pojavljuju.</string>
     <string name="dejavu_settings_genie_effect">Efekat džina</string>
     <string name="dejavu_settings_genie_effect_summary">Oznake, historija, preuzimanja, postavke i vaš račun izlijevaju se iz svojih dugmadi na početnoj stranici i vraćaju se u njih.</string>
+    <string name="dejavu_passkeys_unsupported">Pristupni ključevi još nisu podržani na ovoj verziji Androida</string>
+    <string name="dejavu_settings_accent_color">Boja naglaska</string>
+    <string name="dejavu_accent_neutral">Neutralna</string>
+    <string name="dejavu_accent_system">Boje pozadine</string>
+    <string name="dejavu_settings_icons">Ikone</string>
+    <string name="dejavu_icons_dejavu">Dvobojne</string>
+    <string name="dejavu_icons_firefox">Klasične</string>
+    <string name="dejavu_icons_rounded">Zaobljene</string>
+    <string name="dejavu_settings_essentials">Favoriti</string>
+    <string name="dejavu_settings_essentials_summary">Sakrij sve ili samo neke na ovom telefonu</string>
+    <string name="dejavu_essentials_hint">Favoriti koje ovdje sakrijete ostaju u Zenu i na vašim ostalim uređajima, a vraćaju se kada ih ponovo prikažete.</string>
+    <string name="dejavu_essentials_show">Prikaži Favorite</string>
+    <string name="dejavu_essentials_none">Još nema Favorita. Prevucite tab na vrh početnog ekrana da ga dodate u Favorite.</string>
 </resources>

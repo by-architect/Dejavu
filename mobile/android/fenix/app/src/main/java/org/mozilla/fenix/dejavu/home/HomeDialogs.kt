@@ -55,7 +55,6 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.SolidColor
 import androidx.compose.ui.platform.LocalContext
-import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.pluralStringResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.semantics.Role
@@ -86,6 +85,7 @@ import org.mozilla.fenix.dejavu.ui.DejavuDialog
 import org.mozilla.fenix.dejavu.ui.DejavuDialogButton
 import org.mozilla.fenix.dejavu.ui.DejavuPopup
 import org.mozilla.fenix.dejavu.ui.DejavuTextField
+import org.mozilla.fenix.dejavu.ui.iconPainter
 import org.mozilla.fenix.dejavu.workspaces.MAX_FOLDER_DEPTH
 import org.mozilla.fenix.dejavu.workspaces.WallpaperArt
 import org.mozilla.fenix.dejavu.workspaces.Workspace
@@ -639,7 +639,7 @@ private fun FirefoxSyncNote(@StringRes text: Int) {
             .semantics(mergeDescendants = true) {},
     ) {
         Icon(
-            painter = painterResource(iconsR.drawable.mozac_ic_sync_24),
+            painter = iconPainter(iconsR.drawable.mozac_ic_sync_24),
             contentDescription = null,
             tint = MaterialTheme.colorScheme.onSurfaceVariant,
             modifier = Modifier.size(20.dp),
@@ -962,7 +962,7 @@ private fun PickerRow(
         )
         if (selected) {
             Icon(
-                painter = painterResource(iconsR.drawable.mozac_ic_checkmark_24),
+                painter = iconPainter(iconsR.drawable.mozac_ic_checkmark_24),
                 contentDescription = null,
                 tint = MaterialTheme.colorScheme.primary,
                 modifier = Modifier.size(20.dp),
@@ -999,7 +999,7 @@ private fun DialogDivider() {
 @Composable
 private fun PickerIcon(icon: Int) {
     Icon(
-        painter = painterResource(icon),
+        painter = iconPainter(icon),
         contentDescription = null,
         tint = MaterialTheme.colorScheme.onSurfaceVariant,
         modifier = Modifier.size(20.dp),

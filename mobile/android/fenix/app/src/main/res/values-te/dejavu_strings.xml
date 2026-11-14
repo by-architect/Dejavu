@@ -516,8 +516,8 @@
     <string name="dejavu_welcome_default_done">Dejavu మీ డిఫాల్ట్ బ్రౌజర్.</string>
     <string name="dejavu_welcome_sync_title">ప్రతి పరికరంలో మీ కార్యస్థలాలు</string>
     <string name="dejavu_welcome_sync_text">Mozilla ఖాతాతో సైన్ ఇన్ చేసి, కార్యస్థలాలు, పిన్ చేసిన ట్యాబులు, ముఖ్యమైనవాటిని Zen బ్రౌజర్‌తో, లేదా ట్యాబులను Firefox బ్రౌజర్‌తో సింక్ చేయండి.</string>
-    <string name="dejavu_settings_matrix">Matrixలో చాట్ చేయండి</string>
-    <string name="dejavu_settings_matrix_summary">ప్రశ్న అడగండి, సౌలభ్యాన్ని సూచించండి లేదా లోపాన్ని నివేదించండి</string>
+    <string name="dejavu_settings_email">ఈమెయిలు</string>
+    <string name="dejavu_settings_email_summary">ప్రశ్న అడగండి, సౌలభ్యాన్ని సూచించండి లేదా లోపాన్ని నివేదించండి</string>
     <string name="dejavu_menu_clear_data">డేటాను తుడిచివేయి</string>
     <string name="dejavu_menu_clear_data_and_quit">డేటాను తుడిచివేసి నిష్క్రమించు</string>
     <string name="dejavu_clear_data_button">“డేటాను తుడిచివేయి” బొత్తం</string>
@@ -593,4 +593,17 @@
     <string name="dejavu_settings_all_animations_summary">మెనూలు, పేజీలు, బటన్లు తెరుచుకునేటప్పుడు, మూసుకునేటప్పుడు కదులుతాయి. ఆఫ్ చేస్తే, అవి వెంటనే కనిపిస్తాయి.</string>
     <string name="dejavu_settings_genie_effect">జీనీ ప్రభావం</string>
     <string name="dejavu_settings_genie_effect_summary">ఇష్టాంశాలు, చరిత్ర, దింపుకోళ్ళు, అమరికలు, మీ ఖాతా హోమ్ పేజీలోని వాటి బటన్ల నుండి బయటకు ప్రవహించి తిరిగి లోపలికి వెళ్తాయి.</string>
+    <string name="dejavu_passkeys_unsupported">ఈ Android వెర్షన్‌లో పాస్‌కీలకు ఇంకా మద్దతు లేదు</string>
+    <string name="dejavu_settings_accent_color">ప్రధాన రంగు</string>
+    <string name="dejavu_accent_neutral">తటస్థం</string>
+    <string name="dejavu_accent_system">వాల్‌పేపర్ రంగులు</string>
+    <string name="dejavu_settings_icons">చిహ్నాలు</string>
+    <string name="dejavu_icons_dejavu">రెండు ఛాయలు</string>
+    <string name="dejavu_icons_firefox">క్లాసిక్</string>
+    <string name="dejavu_icons_rounded">గుండ్రనివి</string>
+    <string name="dejavu_settings_essentials">ముఖ్యమైనవి</string>
+    <string name="dejavu_settings_essentials_summary">ఈ ఫోనులో అన్నిటినీ లేదా కొన్నిటిని మాత్రమే దాచు</string>
+    <string name="dejavu_essentials_hint">ఇక్కడ మీరు దాచే ముఖ్యమైనవి Zenలో మరియు మీ ఇతర పరికరాల్లో అలాగే ఉంటాయి, మీరు వాటిని మళ్లీ చూపించినప్పుడు తిరిగి వస్తాయి.</string>
+    <string name="dejavu_essentials_show">ముఖ్యమైనవాటిని చూపించు</string>
+    <string name="dejavu_essentials_none">ఇంకా ముఖ్యమైనవి ఏమీ లేవు. ట్యాబును ముఖ్యమైనవాటిలో చేర్చడానికి దాన్ని హోమ్ స్క్రీన్ పైభాగానికి లాగండి.</string>
 </resources>

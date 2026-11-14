@@ -516,8 +516,8 @@
     <string name="dejavu_welcome_default_done">Dejavu آپ کا ڈیفالٹ براؤزر ہے۔</string>
     <string name="dejavu_welcome_sync_title">آپ کی ورک اسپیسز ہر آلے پر</string>
     <string name="dejavu_welcome_sync_text">ورک اسپیسز، پن کردہ ٹیبز اور اہم کو Zen کے ساتھ، یا ٹیبز کو Firefox کے ساتھ ہم وقت کرنے کے لیے Mozilla اکاؤنٹ سے سائن اِن کریں۔</string>
-    <string name="dejavu_settings_matrix">Matrix پر چیٹ کریں</string>
-    <string name="dejavu_settings_matrix_summary">سوال پوچھیں، کوئی فیچر تجویز کریں یا بگ کی اطلاع دیں</string>
+    <string name="dejavu_settings_email">ای میل</string>
+    <string name="dejavu_settings_email_summary">سوال پوچھیں، کوئی فیچر تجویز کریں یا بگ کی اطلاع دیں</string>
     <string name="dejavu_menu_clear_data">ڈیٹا صاف کریں</string>
     <string name="dejavu_menu_clear_data_and_quit">ڈیٹا صاف کر کے بند کریں</string>
     <string name="dejavu_clear_data_button">”ڈیٹا صاف کریں“ بٹن</string>
@@ -593,4 +593,17 @@
     <string name="dejavu_settings_all_animations_summary">مینیو، صفحات اور بٹن کھلتے اور بند ہوتے وقت حرکت کرتے ہیں۔ بند ہونے پر وہ فوراً دکھائی دیتے ہیں۔</string>
     <string name="dejavu_settings_genie_effect">جن کا اثر</string>
     <string name="dejavu_settings_genie_effect_summary">بک مارکس، سابقات، ڈاؤن لوڈز، سیٹنگز اور آپ کا اکاؤنٹ ہوم پیج پر اپنے بٹنوں سے بہہ کر باہر نکلتے ہیں اور واپس چلے جاتے ہیں۔</string>
+    <string name="dejavu_passkeys_unsupported">اس Android ورژن پر پاس کیز ابھی تک تعاون یافتہ نہیں ہیں</string>
+    <string name="dejavu_settings_accent_color">نمایاں رنگ</string>
+    <string name="dejavu_accent_neutral">سادہ</string>
+    <string name="dejavu_accent_system">وال پیپر کے رنگ</string>
+    <string name="dejavu_settings_icons">آئیکنز</string>
+    <string name="dejavu_icons_dejavu">دو رنگی</string>
+    <string name="dejavu_icons_firefox">کلاسیکی</string>
+    <string name="dejavu_icons_rounded">گول</string>
+    <string name="dejavu_settings_essentials">اہم</string>
+    <string name="dejavu_settings_essentials_summary">اس فون پر ان میں سے سب یا کچھ کو چھپائیں</string>
+    <string name="dejavu_essentials_hint">یہاں چھپائے گئے اہم Zen میں اور آپ کے دوسرے آلات پر موجود رہتے ہیں، اور جب آپ انہیں دوبارہ دکھاتے ہیں تو واپس آ جاتے ہیں۔</string>
+    <string name="dejavu_essentials_show">اہم دکھائیں</string>
+    <string name="dejavu_essentials_none">ابھی تک کوئی اہم نہیں۔ کسی ٹیب کو اہم بنانے کے لیے اسے ہوم اسکرین کے بالکل اوپر گھسیٹیں۔</string>
 </resources>

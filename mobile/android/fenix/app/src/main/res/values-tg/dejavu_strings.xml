@@ -516,8 +516,8 @@
     <string name="dejavu_welcome_default_done">Dejavu браузери пешфарзи шумо мебошад.</string>
     <string name="dejavu_welcome_sync_title">Фазоҳои шумо дар ҳар як дастгоҳ</string>
     <string name="dejavu_welcome_sync_text">Бо ҳисоби Mozilla ворид шавед, то фазоҳо, варақаҳои часпонидашуда ва сомонаҳои муҳимро бо Zen ё варақаҳоро бо Firefox ҳамоҳанг кунед.</string>
-    <string name="dejavu_settings_matrix">Дар Matrix сӯҳбат кунед</string>
-    <string name="dejavu_settings_matrix_summary">Савол пурсед, хусусият пешниҳод кунед ё дар бораи хато хабар диҳед</string>
+    <string name="dejavu_settings_email">Почтаи электронӣ</string>
+    <string name="dejavu_settings_email_summary">Савол пурсед, хусусият пешниҳод кунед ё дар бораи хато хабар диҳед</string>
     <string name="dejavu_menu_clear_data">Пок кардани маълумот</string>
     <string name="dejavu_menu_clear_data_and_quit">Пок кардани маълумот ва баромадан</string>
     <string name="dejavu_clear_data_button">Тугмаи «Пок кардани маълумот»</string>
@@ -593,4 +593,17 @@
     <string name="dejavu_settings_all_animations_summary">Менюҳо, саҳифаҳо ва тугмаҳо ҳангоми кушода ва пӯшида шудан ҳаракат мекунанд. Вақте ки хомӯш аст, онҳо фавран пайдо мешаванд.</string>
     <string name="dejavu_settings_genie_effect">Таъсири ҷин</string>
     <string name="dejavu_settings_genie_effect_summary">Хатбаракҳо, таърих, боргириҳо, танзимот ва ҳисоби шумо аз тугмаҳои худ дар саҳифаи асосӣ берун мерезанд ва бармегарданд.</string>
+    <string name="dejavu_passkeys_unsupported">Шоҳкалидҳо дар ин версияи Android ҳоло дастгирӣ намешаванд</string>
+    <string name="dejavu_settings_accent_color">Ранги таъкидӣ</string>
+    <string name="dejavu_accent_neutral">Бетараф</string>
+    <string name="dejavu_accent_system">Рангҳои тасвири замина</string>
+    <string name="dejavu_settings_icons">Нишонаҳо</string>
+    <string name="dejavu_icons_dejavu">Дуранга</string>
+    <string name="dejavu_icons_firefox">Классикӣ</string>
+    <string name="dejavu_icons_rounded">Мудаввар</string>
+    <string name="dejavu_settings_essentials">Сомонаҳои муҳим</string>
+    <string name="dejavu_settings_essentials_summary">Пинҳон кардани ҳама ё баъзеи онҳо дар ин телефон</string>
+    <string name="dejavu_essentials_hint">Сомонаҳои муҳиме, ки дар ин ҷо пинҳон мекунед, дар Zen ва дар дастгоҳҳои дигари шумо боқӣ мемонанд ва вақте ки онҳоро аз нав нишон медиҳед, бармегарданд.</string>
+    <string name="dejavu_essentials_show">Нишон додани сомонаҳои муҳим</string>
+    <string name="dejavu_essentials_none">Ҳоло сомонаҳои муҳим нестанд. Барои илова кардан ба сомонаҳои муҳим, варақаро ба қисми болоии саҳифаи асосӣ кашед.</string>
 </resources>

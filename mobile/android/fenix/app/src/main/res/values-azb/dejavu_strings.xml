@@ -516,8 +516,8 @@
     <string name="dejavu_welcome_default_done">Dejavu وارساییلان مورورچونوزدور.</string>
     <string name="dejavu_welcome_sync_title">ایش ساحه‌لرینیز هر جیهازدا</string>
     <string name="dejavu_welcome_sync_text">ایش ساحه‌لرینی، برکیدیلمیش تاغلاری و اساس‌لاری Zen ایله، یا تاغلاری Firefox ایله همگام‌سازی ائتمک اوچون Mozilla حسابی ایله داخل اولون.</string>
-    <string name="dejavu_settings_matrix">Matrix-ده صحبت ائدین</string>
-    <string name="dejavu_settings_matrix_summary">سوال وئرین، بیر خصوصیت تکلیف ائدین یا بیر خطا بیلدیرین</string>
+    <string name="dejavu_settings_email">ایمیل</string>
+    <string name="dejavu_settings_email_summary">سوال وئرین، بیر خصوصیت تکلیف ائدین یا بیر خطا بیلدیرین</string>
     <string name="dejavu_menu_clear_data">دیتالاری تمیزله</string>
     <string name="dejavu_menu_clear_data_and_quit">دیتالاری تمیزله و چیخ</string>
     <string name="dejavu_clear_data_button">«دیتالاری تمیزله» دویمه‌سی</string>
@@ -593,4 +593,17 @@
     <string name="dejavu_settings_all_animations_summary">منولار، صفحه‌لر و دویمه‌لر آچیلیب باغلاناندا حرکت ائدیرلر. سؤندورولنده دَرحال گؤرونورلر.</string>
     <string name="dejavu_settings_genie_effect">جین افکتی</string>
     <string name="dejavu_settings_genie_effect_summary">بوکمارک‌لار، گئچمیش، یئندیرنلر، تنظیم‌لر و حسابینیز آنا صفحه‌ده‌کی دویمه‌لریندن آخیب چیخیر و گئری قاییدیر.</string>
+    <string name="dejavu_passkeys_unsupported">گیریش آچارلاری (passkey) بو Android ورسییاسیندا هله دستکلنمیر</string>
+    <string name="dejavu_settings_accent_color">وورغو رنگی</string>
+    <string name="dejavu_accent_neutral">نئیترال</string>
+    <string name="dejavu_accent_system">دال پرده رنگلری</string>
+    <string name="dejavu_settings_icons">آیکونلار</string>
+    <string name="dejavu_icons_dejavu">ایکی‌رنگلی</string>
+    <string name="dejavu_icons_firefox">کلاسیک</string>
+    <string name="dejavu_icons_rounded">یووارلاق</string>
+    <string name="dejavu_settings_essentials">اساس‌لار</string>
+    <string name="dejavu_settings_essentials_summary">بو تلفنده هامیسینی یا بعضیلرینی گیزلت</string>
+    <string name="dejavu_essentials_hint">بورادا گیزلتدیگینیز اساس‌لار Zen-ده و باشقا جیهازلارینیزدا قالیر، یئنیدن گؤستردیکده ایسه گئری قاییدیر.</string>
+    <string name="dejavu_essentials_show">اساس‌لاری گؤستر</string>
+    <string name="dejavu_essentials_none">هله اساس یوخدور. بیر تاغی اساس‌لارا اَلاوه ائتمک اوچون اونو آنا اکرانین یوخاریسینا سوروکله‌یین.</string>
 </resources>

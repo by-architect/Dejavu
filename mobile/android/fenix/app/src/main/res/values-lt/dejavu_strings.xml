@@ -532,8 +532,8 @@
     <string name="dejavu_welcome_default_done">Dejavu yra jūsų numatytoji naršyklė.</string>
     <string name="dejavu_welcome_sync_title">Jūsų darbo erdvės visuose įrenginiuose</string>
     <string name="dejavu_welcome_sync_text">Prisijunkite prie Mozilla paskyros, kad sinchronizuotumėte darbo erdves, prisegtas korteles ir Mėgstamiausius su Zen arba korteles su Firefox.</string>
-    <string name="dejavu_settings_matrix">Pokalbiai Matrix tinkle</string>
-    <string name="dejavu_settings_matrix_summary">Užduokite klausimą, pasiūlykite funkciją arba praneškite apie klaidą</string>
+    <string name="dejavu_settings_email">El. paštas</string>
+    <string name="dejavu_settings_email_summary">Užduokite klausimą, pasiūlykite funkciją arba praneškite apie klaidą</string>
     <string name="dejavu_menu_clear_data">Išvalyti duomenis</string>
     <string name="dejavu_menu_clear_data_and_quit">Išvalyti duomenis ir išjungti</string>
     <string name="dejavu_clear_data_button">Mygtukas „Išvalyti duomenis“</string>
@@ -609,4 +609,17 @@
     <string name="dejavu_settings_all_animations_summary">Meniu, puslapiai ir mygtukai juda atsidarydami ir užsidarydami. Išjungus jie parodomi iškart.</string>
     <string name="dejavu_settings_genie_effect">Džino efektas</string>
     <string name="dejavu_settings_genie_effect_summary">Adresynas, žurnalas, atsiuntimai, nuostatos ir jūsų paskyra išsilieja iš savo mygtukų pradžios puslapyje ir sugrįžta atgal.</string>
+    <string name="dejavu_passkeys_unsupported">Prieigos raktai šioje Android versijoje dar nepalaikomi</string>
+    <string name="dejavu_settings_accent_color">Akcento spalva</string>
+    <string name="dejavu_accent_neutral">Neutrali</string>
+    <string name="dejavu_accent_system">Ekrano fono spalvos</string>
+    <string name="dejavu_settings_icons">Piktogramos</string>
+    <string name="dejavu_icons_dejavu">Dviejų atspalvių</string>
+    <string name="dejavu_icons_firefox">Klasikinės</string>
+    <string name="dejavu_icons_rounded">Suapvalintos</string>
+    <string name="dejavu_settings_essentials">Mėgstamiausi</string>
+    <string name="dejavu_settings_essentials_summary">Paslėpkite visus arba kai kuriuos šiame telefone</string>
+    <string name="dejavu_essentials_hint">Čia paslėpti Mėgstamiausi lieka Zen naršyklėje ir kituose jūsų įrenginiuose, o kai vėl juos parodysite, sugrįš.</string>
+    <string name="dejavu_essentials_show">Rodyti Mėgstamiausius</string>
+    <string name="dejavu_essentials_none">Mėgstamiausių dar nėra. Nuvilkite kortelę į pradžios ekrano viršų, kad pridėtumėte ją prie Mėgstamiausių.</string>
 </resources>

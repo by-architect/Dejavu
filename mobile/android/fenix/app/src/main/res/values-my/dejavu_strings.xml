@@ -508,8 +508,8 @@
     <string name="dejavu_welcome_default_done">Dejavu သည် သင်၏ ပုံသေဘရောက်ဇာ ဖြစ်သည်။</string>
     <string name="dejavu_welcome_sync_title">ကိရိယာတိုင်းတွင် သင့်လုပ်ငန်းခွင်များ</string>
     <string name="dejavu_welcome_sync_text">Zen နှင့် လုပ်ငန်းခွင်များ၊ ပင်ထိုးထားသော တက်ဗ်များနှင့် မရှိမဖြစ်များကို၊ သို့မဟုတ် Firefox နှင့် တက်ဗ်များကို စင့်ခ်ချရန် Mozilla အကောင့်ဖြင့် ဝင်ရောက်ပါ။</string>
-    <string name="dejavu_settings_matrix">Matrix တွင် စကားပြောပါ</string>
-    <string name="dejavu_settings_matrix_summary">မေးခွန်းမေးပါ၊ လုပ်ဆောင်ချက်အသစ် အကြံပြုပါ သို့မဟုတ် ချို့ယွင်းချက်ကို သတင်းပို့ပါ</string>
+    <string name="dejavu_settings_email">အီးမေးလ်</string>
+    <string name="dejavu_settings_email_summary">မေးခွန်းမေးပါ၊ လုပ်ဆောင်ချက်အသစ် အကြံပြုပါ သို့မဟုတ် ချို့ယွင်းချက်ကို သတင်းပို့ပါ</string>
     <string name="dejavu_menu_clear_data">အချက်အလက် ရှင်းလင်းရန်</string>
     <string name="dejavu_menu_clear_data_and_quit">အချက်အလက် ရှင်းလင်းပြီး ထွက်ရန်</string>
     <string name="dejavu_clear_data_button">“အချက်အလက် ရှင်းလင်းရန်” ခလုတ်</string>
@@ -585,4 +585,17 @@
     <string name="dejavu_settings_all_animations_summary">မီနူးများ၊ စာမျက်နှာများနှင့် ခလုတ်များသည် ဖွင့်ပိတ်သည့်အခါ လှုပ်ရှားသည်။ ပိတ်ထားလျှင် ချက်ချင်း ပေါ်လာသည်။</string>
     <string name="dejavu_settings_genie_effect">ဂျီနီ အကျိုးသက်ရောက်မှု</string>
     <string name="dejavu_settings_genie_effect_summary">စာမှတ်များ၊ မှတ်တမ်း၊ ဆွဲချချက်များ၊ အပြင်အဆင်များနှင့် သင့်အကောင့်သည် ပင်မစာမျက်နှာရှိ ၎င်းတို့၏ခလုတ်များမှ စီးထွက်လာပြီး ပြန်ဝင်သွားသည်။</string>
+    <string name="dejavu_passkeys_unsupported">ဤ Android ဗားရှင်းတွင် passkey များကို မပံ့ပိုးရသေးပါ</string>
+    <string name="dejavu_settings_accent_color">အသားပေးအရောင်</string>
+    <string name="dejavu_accent_neutral">ကြားနေ</string>
+    <string name="dejavu_accent_system">နောက်ခံပုံ အရောင်များ</string>
+    <string name="dejavu_settings_icons">အိုင်ကွန်များ</string>
+    <string name="dejavu_icons_dejavu">နှစ်ရောင်</string>
+    <string name="dejavu_icons_firefox">ဂန္ထဝင်</string>
+    <string name="dejavu_icons_rounded">အဝိုင်း</string>
+    <string name="dejavu_settings_essentials">မရှိမဖြစ်များ</string>
+    <string name="dejavu_settings_essentials_summary">ဤဖုန်းတွင် အားလုံး သို့မဟုတ် အချို့ကို ဖျောက်ပါ</string>
+    <string name="dejavu_essentials_hint">ဤနေရာတွင် သင်ဖျောက်ထားသော မရှိမဖြစ်များသည် Zen နှင့် သင့်အခြားစက်များတွင် ဆက်ရှိနေပြီး ၎င်းတို့ကို ထပ်ပြသသောအခါ ပြန်ပေါ်လာမည်။</string>
+    <string name="dejavu_essentials_show">မရှိမဖြစ်များ ပြသရန်</string>
+    <string name="dejavu_essentials_none">မရှိမဖြစ်များ မရှိသေးပါ။ တက်ဗ်တစ်ခုကို မရှိမဖြစ် ဖြစ်စေရန် ပင်မစခရင်၏ အပေါ်ဆုံးသို့ ဆွဲပါ။</string>
 </resources>

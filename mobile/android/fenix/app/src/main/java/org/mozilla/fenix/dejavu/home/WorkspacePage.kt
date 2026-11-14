@@ -65,7 +65,6 @@ import androidx.compose.ui.graphics.graphicsLayer
 import androidx.compose.ui.graphics.luminance
 import androidx.compose.ui.platform.LocalConfiguration
 import androidx.compose.ui.platform.LocalDensity
-import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.pluralStringResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.semantics.Role
@@ -105,6 +104,7 @@ import org.mozilla.fenix.dejavu.ui.DejavuMenuDivider
 import org.mozilla.fenix.dejavu.ui.DejavuMenuItem
 import org.mozilla.fenix.dejavu.ui.DejavuMenuLabel
 import org.mozilla.fenix.dejavu.ui.TapIcon
+import org.mozilla.fenix.dejavu.ui.iconPainter
 import org.mozilla.fenix.dejavu.ui.rememberIconTaps
 import org.mozilla.fenix.dejavu.workspaces.PinnedItem
 import org.mozilla.fenix.dejavu.workspaces.Workspace
@@ -929,7 +929,7 @@ private fun SectionDivider(
             ) {
                 val color = MaterialTheme.colorScheme.onSurfaceVariant
                 Icon(
-                    painter = painterResource(iconsR.drawable.mozac_ic_chevron_down_16),
+                    painter = iconPainter(iconsR.drawable.mozac_ic_chevron_down_16),
                     contentDescription = null,
                     tint = color,
                     modifier = Modifier.size(14.dp),
@@ -1016,7 +1016,7 @@ private fun NewTabRow(
                 text = stringResource(R.string.dejavu_new_private_tab),
                 leadingIcon = {
                     Icon(
-                        painter = painterResource(R.drawable.dejavu_ic_private_tab_24),
+                        painter = iconPainter(R.drawable.dejavu_ic_private_tab_24),
                         contentDescription = null,
                         modifier = Modifier.size(20.dp),
                     )
@@ -1039,7 +1039,7 @@ private fun NewTabRow(
                 text = stringResource(R.string.dejavu_container_add),
                 leadingIcon = {
                     Icon(
-                        painter = painterResource(iconsR.drawable.mozac_ic_plus_24),
+                        painter = iconPainter(iconsR.drawable.mozac_ic_plus_24),
                         contentDescription = null,
                         modifier = Modifier.size(20.dp),
                     )
@@ -1270,7 +1270,7 @@ private fun FolderRow(
             .padding(start = 12.dp + IndentPerLevel * depth),
     ) {
         Icon(
-            painter = painterResource(
+            painter = iconPainter(
                 if (folder.collapsed) iconsR.drawable.mozac_ic_chevron_right_16 else iconsR.drawable.mozac_ic_chevron_down_16,
             ),
             contentDescription = null,
@@ -1279,7 +1279,7 @@ private fun FolderRow(
         )
         Spacer(Modifier.width(6.dp))
         Icon(
-            painter = painterResource(folderIcon(isEmpty = childCount == 0)),
+            painter = iconPainter(folderIcon(isEmpty = childCount == 0)),
             contentDescription = null,
             tint = groupColor(folder.color) ?: MaterialTheme.colorScheme.onSurfaceVariant,
             modifier = Modifier.size(20.dp),
@@ -1421,7 +1421,7 @@ internal fun TabRow(
         )
         if (isSplit) {
             Icon(
-                painter = painterResource(R.drawable.dejavu_ic_split_24),
+                painter = iconPainter(R.drawable.dejavu_ic_split_24),
                 contentDescription = stringResource(R.string.dejavu_split_view),
                 tint = MaterialTheme.colorScheme.primary,
                 modifier = Modifier.padding(horizontal = 6.dp).size(16.dp),
@@ -1556,7 +1556,7 @@ private fun TabPairRow(
                     ) {
                         if (picked) {
                             Icon(
-                                painter = painterResource(iconsR.drawable.mozac_ic_checkmark_16),
+                                painter = iconPainter(iconsR.drawable.mozac_ic_checkmark_16),
                                 contentDescription = null,
                                 tint = MaterialTheme.colorScheme.onPrimary,
                                 modifier = Modifier.size(12.dp),
@@ -1582,7 +1582,7 @@ private fun SelectionMark(selected: Boolean) {
     ) {
         if (selected) {
             Icon(
-                painter = painterResource(iconsR.drawable.mozac_ic_checkmark_16),
+                painter = iconPainter(iconsR.drawable.mozac_ic_checkmark_16),
                 contentDescription = null,
                 tint = MaterialTheme.colorScheme.onPrimary,
                 modifier = Modifier.size(14.dp),

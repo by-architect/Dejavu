@@ -532,8 +532,8 @@
     <string name="dejavu_welcome_default_done">Dejavu — ваш браузер по умолчанию.</string>
     <string name="dejavu_welcome_sync_title">Ваши рабочие пространства на всех устройствах</string>
     <string name="dejavu_welcome_sync_text">Войдите в аккаунт Mozilla, чтобы синхронизировать рабочие пространства, закреплённые вкладки и избранное с Zen или вкладки с Firefox.</string>
-    <string name="dejavu_settings_matrix">Чат в Matrix</string>
-    <string name="dejavu_settings_matrix_summary">Задайте вопрос, предложите функцию или сообщите об ошибке</string>
+    <string name="dejavu_settings_email">Эл. почта</string>
+    <string name="dejavu_settings_email_summary">Задайте вопрос, предложите функцию или сообщите об ошибке</string>
     <string name="dejavu_menu_clear_data">Очистить данные</string>
     <string name="dejavu_menu_clear_data_and_quit">Очистить данные и выйти</string>
     <string name="dejavu_clear_data_button">Кнопка «Очистить данные»</string>
@@ -609,4 +609,17 @@
     <string name="dejavu_settings_all_animations_summary">Меню, страницы и кнопки движутся при открытии и закрытии. Если выключено, они появляются сразу.</string>
     <string name="dejavu_settings_genie_effect">Эффект джинна</string>
     <string name="dejavu_settings_genie_effect_summary">Закладки, история, загрузки, настройки и ваш аккаунт вытекают из своих кнопок на главной странице и возвращаются обратно.</string>
+    <string name="dejavu_passkeys_unsupported">Ключи доступа пока не поддерживаются в этой версии Android</string>
+    <string name="dejavu_settings_accent_color">Акцентный цвет</string>
+    <string name="dejavu_accent_neutral">Нейтральный</string>
+    <string name="dejavu_accent_system">Цвета обоев</string>
+    <string name="dejavu_settings_icons">Значки</string>
+    <string name="dejavu_icons_dejavu">Двухцветные</string>
+    <string name="dejavu_icons_firefox">Классические</string>
+    <string name="dejavu_icons_rounded">Скруглённые</string>
+    <string name="dejavu_settings_essentials">Избранное</string>
+    <string name="dejavu_settings_essentials_summary">Скрыть всё избранное или его часть на этом телефоне</string>
+    <string name="dejavu_essentials_hint">Избранное, скрытое здесь, остаётся в Zen и на других ваших устройствах и вернётся, когда вы снова его покажете.</string>
+    <string name="dejavu_essentials_show">Показывать избранное</string>
+    <string name="dejavu_essentials_none">В избранном пока ничего нет. Перетащите вкладку в верхнюю часть главного экрана, чтобы добавить её в избранное.</string>
 </resources>
