@@ -73,6 +73,8 @@ import org.mozilla.fenix.dejavu.containers.NoContainerIcon
 import org.mozilla.fenix.dejavu.containers.TemporaryContainerIcon
 import org.mozilla.fenix.dejavu.containers.color
 import org.mozilla.fenix.dejavu.containers.drawable
+import org.mozilla.fenix.dejavu.discover.NewThing
+import org.mozilla.fenix.dejavu.discover.NewThings
 import org.mozilla.fenix.dejavu.menu.ActionsBarLayout
 import org.mozilla.fenix.dejavu.menu.menuKey
 import org.mozilla.fenix.dejavu.sync.workspaceIconText
@@ -600,6 +602,7 @@ class DejavuWorkspaceLockFragment : DejavuComposeFragment(R.string.dejavu_settin
         val context = LocalContext.current
         val chosen by settings.workspaceLockTime.collectAsState()
         val choices = WorkspaceLockTime.entries
+        LaunchedEffect(Unit) { NewThings.seen(context, NewThing.WORKSPACE_LOCK) }
         Column(modifier = Modifier.fillMaxSize().verticalScroll(rememberScrollState())) {
             SettingsHint(stringResource(R.string.dejavu_workspace_lock_hint))
             SettingsHeader(stringResource(R.string.dejavu_workspace_lock_when))

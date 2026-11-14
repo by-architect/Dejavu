@@ -47,6 +47,9 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import mozilla.components.ui.icons.R as iconsR
 import org.mozilla.fenix.R
+import org.mozilla.fenix.dejavu.discover.NewThing
+import org.mozilla.fenix.dejavu.discover.newDot
+import org.mozilla.fenix.dejavu.discover.rememberUnseenNewThings
 import org.mozilla.fenix.dejavu.ui.AccentColor
 import org.mozilla.fenix.dejavu.ui.IconStyle
 import org.mozilla.fenix.dejavu.ui.iconIn
@@ -68,6 +71,9 @@ class AccentColorPreference @JvmOverloads constructor(context: Context, attrs: A
                 text = stringResource(R.string.dejavu_settings_accent_color),
                 style = MaterialTheme.typography.bodyLarge,
                 color = MaterialTheme.colorScheme.onSurface,
+                modifier = Modifier
+                    .padding(end = NEW_DOT_ROOM)
+                    .newDot(NewThing.ACCENT_COLOR in rememberUnseenNewThings(), inset = 0.dp),
             )
             Spacer(Modifier.height(12.dp))
             FlowRow(
@@ -210,5 +216,6 @@ private val PREVIEW_ICONS = listOf(
     R.drawable.dejavu_ic_settings_24,
 )
 private val SWATCH_SIZE = 44.dp
+private val NEW_DOT_ROOM = 12.dp
 private val SWATCH_GAP = 8.dp
 private const val ON_SWATCH_LUMINANCE = 0.5f

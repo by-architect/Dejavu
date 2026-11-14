@@ -349,8 +349,9 @@ class SettingsFragment : PreferenceFragmentCompat(), SystemInsetsPaddedFragment 
         requirePreference<Preference>(R.string.pref_key_dejavu_workspace_lock).summary =
             workspaceLockLabel(requireContext(), dejavuSettings().workspaceLockTime.value)
         // Dejavu: orange dots lead to what the new version brought, see NewThings.
-        NewThings.mark(deleteBrowsingDataPreference, NewThing.CLEAR_DATA_CHOICES)
-        NewThings.mark(requirePreference<Preference>(R.string.pref_key_customize), NewThing.CLEAR_DATA_ENTRIES)
+        NewThings.markAny(requirePreference<Preference>(R.string.pref_key_customize), NewThing.CUSTOMIZE)
+        NewThings.mark(requirePreference<Preference>(R.string.pref_key_dejavu_tabs_workspaces), NewThing.ESSENTIALS)
+        NewThings.mark(requirePreference<Preference>(R.string.pref_key_dejavu_workspace_lock), NewThing.WORKSPACE_LOCK)
 
         setupPreferences(settings)
 

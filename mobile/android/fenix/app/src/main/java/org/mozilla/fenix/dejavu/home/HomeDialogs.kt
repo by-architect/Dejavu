@@ -591,7 +591,7 @@ private fun WorkspacePrivacy(
 
 /** A row of a dialog with [label], [description] below it, and a switch at its end. */
 @Composable
-private fun SwitchRow(
+internal fun SwitchRow(
     label: String,
     description: String,
     checked: Boolean,

@@ -48,11 +48,29 @@ import org.mozilla.fenix.ext.components
  * @property key Stable identifier used to remember that the user looked at it.
  */
 internal enum class NewThing(val key: String) {
-    /** The Clear data and Clear data and quit buttons for the menu and the bars, found in the menu's settings. */
-    CLEAR_DATA_ENTRIES("clear_data_entries"),
+    /** The accent color, in Customize. */
+    ACCENT_COLOR("accent_color"),
 
-    /** What Clear data deletes, chosen in the settings of deleting browsing data on quit. */
-    CLEAR_DATA_CHOICES("clear_data_choices"),
+    /** The styles of icons, in Customize. */
+    ICON_STYLE("icon_style"),
+
+    /** The switches that turn the animations off, in Customize. */
+    ANIMATIONS("animations"),
+
+    /** The Full screen button for the menu and the bars, found in the menu's settings. */
+    FULL_SCREEN("full_screen"),
+
+    /** The essentials hidden on this phone, under Tabs, workspaces and containers. */
+    ESSENTIALS("essentials"),
+
+    /** When unlocked workspaces lock again, under Privacy and security. */
+    WORKSPACE_LOCK("workspace_lock"),
+    ;
+
+    companion object {
+        /** The new things found in Customize. */
+        val CUSTOMIZE = setOf(ACCENT_COLOR, ICON_STYLE, ANIMATIONS, FULL_SCREEN)
+    }
 }
 
 /** Which [NewThing]s the user has not looked at yet, see [NewThing]. */
@@ -65,6 +83,10 @@ internal object NewThings {
 
     /** Shows the orange dot after the title of [preference] while [thing] is new, the way to it or the thing itself. */
     fun mark(preference: Preference, thing: NewThing) = preference.showNewDot(isNew(preference.context, thing))
+
+    /** Shows the orange dot after the title of [preference] while any of [things] is new, the way to them. */
+    fun markAny(preference: Preference, things: Set<NewThing>) =
+        preference.showNewDot(things.any { isNew(preference.context, it) })
 
     /**
      * Shows the orange dot after the title of [preference] while [thing] is new, and takes it away as soon as the user
@@ -94,13 +116,13 @@ internal fun rememberUnseenNewThings(): Set<NewThing> {
 }
 
 /**
- * Whether this button of the menu or the bars has the orange dot, with the [unseen] new things not looked at: Clear
- * data while it is new, and Settings, which [leadsToSettings] where tapping it opens the settings, while anything there
- * is.
+ * Whether this button of the menu or the bars has the orange dot, with the [unseen] new things not looked at: Full
+ * screen while it is new, and Settings, which [leadsToSettings] where tapping it opens the settings, while anything
+ * there is.
  */
 internal fun MoreMenuEntry.isNewAmong(unseen: Set<NewThing>, leadsToSettings: Boolean = true): Boolean =
     when ((this as? MoreMenuEntry.BuiltIn)?.item) {
-        MoreMenuItem.CLEAR_DATA, MoreMenuItem.CLEAR_DATA_AND_QUIT -> NewThing.CLEAR_DATA_ENTRIES in unseen
+        MoreMenuItem.FULL_SCREEN -> NewThing.FULL_SCREEN in unseen
         MoreMenuItem.SETTINGS -> leadsToSettings && unseen.isNotEmpty()
         else -> false
     }

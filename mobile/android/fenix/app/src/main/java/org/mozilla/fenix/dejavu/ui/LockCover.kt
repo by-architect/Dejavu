@@ -42,6 +42,7 @@ import androidx.compose.ui.unit.dp
 import androidx.core.content.ContextCompat
 import androidx.core.content.getSystemService
 import androidx.fragment.app.FragmentActivity
+import java.lang.ref.WeakReference
 import mozilla.components.ui.icons.R as iconsR
 import org.mozilla.fenix.R
 import org.mozilla.fenix.dejavu.workspaces.WorkspaceLock
@@ -115,7 +116,9 @@ internal class UnlockPrompt(private val activity: FragmentActivity?) {
     /** Asks, with [title] on the prompt, and runs [onUnlocked] once the user unlocked. */
     fun ask(title: String, onUnlocked: () -> Unit) {
         val activity = activity ?: return
-        if (WorkspaceLock.prompting) return
+        // A prompt of a screen that closed since, as the activity starting again, never ends: it no longer counts.
+        if (WorkspaceLock.prompting && promptedBy?.get()?.isDestroyed == false) return
+        promptedBy = WeakReference(activity)
         this.onUnlocked = onUnlocked
         when {
             DefaultBiometricUtils.canUseBiometricAuthentication(activity) -> {
@@ -169,6 +172,9 @@ internal fun rememberUnlockPrompt(): UnlockPrompt {
  * can briefly leave Dejavu running under, as Firefox found for its private tabs.
  */
 internal fun Context.mayAskToUnlock(): Boolean = getSystemService<KeyguardManager>()?.isDeviceLocked != true
+
+// The screen whose prompt shows, see UnlockPrompt.ask.
+private var promptedBy: WeakReference<FragmentActivity>? = null
 
 private fun Context.findFragmentActivity(): FragmentActivity? {
     var context: Context = this

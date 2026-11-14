@@ -15,6 +15,8 @@ import androidx.preference.PreferenceFragmentCompat
 import mozilla.components.service.fxrelay.eligibility.Eligible
 import org.mozilla.fenix.R
 import org.mozilla.fenix.components.Components
+import org.mozilla.fenix.dejavu.discover.NewThing
+import org.mozilla.fenix.dejavu.discover.NewThings
 import org.mozilla.fenix.e2e.SystemInsetsPaddedFragment
 import org.mozilla.fenix.ext.getPreferenceKey
 import org.mozilla.fenix.ext.requireComponents
@@ -97,6 +99,7 @@ class DejavuTabsWorkspacesFragment : DejavuSettingsGroupFragment(
         requirePreference<Preference>(R.string.pref_key_open_links_in_apps).summary =
             settings.getOpenLinksInAppsString()
         setupHomepagePreference(settings)
+        NewThings.mark(requirePreference(R.string.pref_key_dejavu_essentials), NewThing.ESSENTIALS)
     }
 
     @VisibleForTesting

@@ -17,12 +17,14 @@ import androidx.compose.foundation.lazy.itemsIndexed
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.alpha
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.semantics.Role
 import androidx.compose.ui.semantics.clearAndSetSemantics
@@ -36,6 +38,8 @@ import mozilla.components.compose.base.Switch
 import mozilla.components.lib.state.ext.observeAsComposableState
 import org.mozilla.fenix.R
 import org.mozilla.fenix.compose.list.SwitchListItem
+import org.mozilla.fenix.dejavu.discover.NewThing
+import org.mozilla.fenix.dejavu.discover.NewThings
 import org.mozilla.fenix.dejavu.home.SiteIcon
 import org.mozilla.fenix.dejavu.home.label
 import org.mozilla.fenix.dejavu.home.pageUrl
@@ -56,6 +60,8 @@ class DejavuEssentialsFragment : DejavuComposeFragment(R.string.dejavu_settings_
         val tabs by requireComponents.core.store.observeAsComposableState { it.normalTabs }
         val tabsById = remember(tabs) { tabs.associateBy { it.id } }
         val essentials = state.essentials
+        val context = LocalContext.current
+        LaunchedEffect(Unit) { NewThings.seen(context, NewThing.ESSENTIALS) }
 
         LazyColumn(modifier = Modifier.fillMaxSize()) {
             item {

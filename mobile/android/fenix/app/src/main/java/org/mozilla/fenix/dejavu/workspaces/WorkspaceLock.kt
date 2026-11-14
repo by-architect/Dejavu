@@ -16,12 +16,16 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
+import kotlinx.coroutines.flow.combine
 import kotlinx.coroutines.flow.distinctUntilChanged
 import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.flow.update
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
+import mozilla.components.browser.state.selector.privateTabs
+import mozilla.components.lib.state.ext.flow
 import org.mozilla.fenix.dejavu.settings.DejavuSettings
+import org.mozilla.fenix.ext.components
 
 /**
  * When the locked workspaces the user unlocked lock again, chosen in the privacy settings.
@@ -114,7 +118,9 @@ object WorkspaceLock {
 
     /**
      * Locks the unlocked workspaces when [WorkspaceLockTime] says, and keeps [activity] out of the recent apps view
-     * while any is unlocked, from Android 13 on, which leaves screenshots alone. Called as [activity] is created.
+     * while any is unlocked or private tabs are open, unless screenshots are allowed in private browsing, from Android
+     * 13 on, which leaves screenshots alone. The secure window of private browsing comes and goes with what shows, so
+     * the recent apps view could catch a private tab as Dejavu was left. Called as [activity] is created.
      */
     fun watch(activity: ComponentActivity) {
         val context = activity.applicationContext
@@ -130,8 +136,12 @@ object WorkspaceLock {
             process.lifecycleScope.launch { lockOnSwitch(context) }
         }
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
+            val components = activity.components
+            val privateTabsOpen = components.core.store.flow().map { it.privateTabs.isNotEmpty() }.distinctUntilChanged()
             activity.lifecycleScope.launch {
-                unlocked.collect { activity.setRecentsScreenshotEnabled(it.isEmpty()) }
+                combine(unlocked, privateTabsOpen) { unlockedIds, hasPrivateTabs ->
+                    unlockedIds.isEmpty() && (!hasPrivateTabs || components.settings.shouldSecureModeBeOverridden)
+                }.distinctUntilChanged().collect { activity.setRecentsScreenshotEnabled(it) }
             }
         }
     }

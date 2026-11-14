@@ -25,9 +25,10 @@ import androidx.core.net.toUri
 import androidx.core.view.children
 import androidx.core.view.isVisible
 import androidx.fragment.app.Fragment
+import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.compose.LocalLifecycleOwner
 import androidx.lifecycle.lifecycleScope
-import androidx.lifecycle.withResumed
+import androidx.lifecycle.repeatOnLifecycle
 import androidx.navigation.fragment.findNavController
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.combine
@@ -136,8 +137,9 @@ private fun LockedTab(workspace: Workspace, onLeave: () -> Unit) {
         }
     }
     val lifecycleOwner = LocalLifecycleOwner.current
+    // Asked again each time Dejavu shows, as coming back from other apps or the phone's lock screen.
     LaunchedEffect(workspace.id) {
-        lifecycleOwner.withResumed {
+        lifecycleOwner.repeatOnLifecycle(Lifecycle.State.RESUMED) {
             if (context.mayAskToUnlock() && WorkspaceLock.askOnce(workspace.id)) unlock()
         }
     }

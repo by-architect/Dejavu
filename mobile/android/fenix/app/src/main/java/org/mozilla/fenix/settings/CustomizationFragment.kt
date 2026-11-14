@@ -91,9 +91,16 @@ open class CustomizationFragment : PreferenceFragmentCompat(), SystemInsetsPadde
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        // Dejavu: the menu's settings hold the new Clear data buttons, which an orange dot leads to.
+        // Dejavu: orange dots on what is new here, until the user leaves, and on the menu's settings, which hold the
+        // new Full screen button.
         findPreference<Preference>(getString(R.string.pref_key_dejavu_more_menu))?.let {
-            NewThings.follow(it, NewThing.CLEAR_DATA_ENTRIES, viewLifecycleOwner)
+            NewThings.follow(it, NewThing.FULL_SCREEN, viewLifecycleOwner)
+        }
+        findPreference<Preference>(getString(R.string.pref_key_dejavu_animations))?.parent?.let {
+            NewThings.mark(it, NewThing.ANIMATIONS)
+        }
+        findPreference<Preference>(getString(R.string.pref_key_dejavu_icon_style))?.parent?.let {
+            NewThings.mark(it, NewThing.ICON_STYLE)
         }
 
         viewLifecycleOwner.lifecycleScope.launch {
@@ -127,6 +134,16 @@ open class CustomizationFragment : PreferenceFragmentCompat(), SystemInsetsPadde
         showToolbar(getString(if (showsBars) R.string.dejavu_settings_bars_2 else R.string.preferences_customize))
         args.preferenceToScrollTo?.let {
             scrollToPreferenceWithHighlight(it)
+        }
+    }
+
+    override fun onPause() {
+        super.onPause()
+        // Dejavu: what is new on this screen was shown once it is left.
+        if (!showsBars) {
+            listOf(NewThing.ACCENT_COLOR, NewThing.ICON_STYLE, NewThing.ANIMATIONS).forEach {
+                NewThings.seen(requireContext(), it)
+            }
         }
     }
 

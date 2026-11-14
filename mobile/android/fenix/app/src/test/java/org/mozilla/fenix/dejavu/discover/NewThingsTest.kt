@@ -19,13 +19,11 @@ import org.robolectric.RobolectricTestRunner
 @RunWith(RobolectricTestRunner::class)
 class NewThingsTest {
     @Test
-    fun `the Clear data buttons have the dot until the user looked at them`() {
-        val clearData = MoreMenuEntry.BuiltIn(MoreMenuItem.CLEAR_DATA)
-        val clearAndQuit = MoreMenuEntry.BuiltIn(MoreMenuItem.CLEAR_DATA_AND_QUIT)
+    fun `the Full screen button has the dot until the user looked at it`() {
+        val fullScreen = MoreMenuEntry.BuiltIn(MoreMenuItem.FULL_SCREEN)
 
-        assertTrue(clearData.isNewAmong(setOf(NewThing.CLEAR_DATA_ENTRIES)))
-        assertTrue(clearAndQuit.isNewAmong(setOf(NewThing.CLEAR_DATA_ENTRIES)))
-        assertFalse(clearData.isNewAmong(setOf(NewThing.CLEAR_DATA_CHOICES)))
+        assertTrue(fullScreen.isNewAmong(setOf(NewThing.FULL_SCREEN)))
+        assertFalse(fullScreen.isNewAmong(setOf(NewThing.ACCENT_COLOR)))
         assertFalse(MoreMenuEntry.BuiltIn(MoreMenuItem.BACK).isNewAmong(NewThing.entries.toSet()))
     }
 
@@ -33,8 +31,8 @@ class NewThingsTest {
     fun `Settings has the dot while anything in the settings is new, except in the menu's editor`() {
         val settings = MoreMenuEntry.BuiltIn(MoreMenuItem.SETTINGS)
 
-        assertTrue(settings.isNewAmong(setOf(NewThing.CLEAR_DATA_CHOICES)))
-        assertFalse(settings.isNewAmong(setOf(NewThing.CLEAR_DATA_CHOICES), leadsToSettings = false))
+        assertTrue(settings.isNewAmong(setOf(NewThing.ESSENTIALS)))
+        assertFalse(settings.isNewAmong(setOf(NewThing.ESSENTIALS), leadsToSettings = false))
         assertFalse(settings.isNewAmong(emptySet()))
     }
 

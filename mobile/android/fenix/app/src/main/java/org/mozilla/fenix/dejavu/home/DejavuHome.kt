@@ -84,8 +84,9 @@ import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.LayoutDirection
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.compose.LocalLifecycleOwner
-import androidx.lifecycle.withResumed
+import androidx.lifecycle.repeatOnLifecycle
 import kotlin.math.floor
 import kotlin.math.roundToInt
 import kotlinx.coroutines.delay
@@ -409,7 +410,8 @@ fun DejavuHome(
         val key = settledKey?.takeIf { settledHidden && mayAsk } ?: return@LaunchedEffect
         // A page that locks as the pages turn away from it, as switching workspaces can do, is left without asking.
         delay(UNLOCK_ASK_DELAY_MS)
-        lifecycleOwner.withResumed {
+        // Asked again each time Dejavu shows, as coming back from other apps or the phone's lock screen.
+        lifecycleOwner.repeatOnLifecycle(Lifecycle.State.RESUMED) {
             if (context.mayAskToUnlock() && WorkspaceLock.askOnce(key)) askToUnlock(settledPage)
         }
     }

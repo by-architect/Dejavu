@@ -1612,7 +1612,7 @@ private fun RowActionButton(action: RowAction, onAction: (RowAction) -> Unit) {
 }
 
 @Composable
-private fun SmallIconButton(
+internal fun SmallIconButton(
     icon: Int,
     @StringRes description: Int,
     enabled: Boolean = true,
