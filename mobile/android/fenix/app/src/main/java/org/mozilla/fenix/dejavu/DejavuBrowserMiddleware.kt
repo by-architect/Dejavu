@@ -20,6 +20,8 @@ import mozilla.components.browser.state.state.TabSessionState
 import mozilla.components.feature.containers.ContainerMiddleware
 import mozilla.components.lib.state.Middleware
 import mozilla.components.lib.state.Store
+import org.mozilla.fenix.dejavu.browser.InheritedDesktopModeMiddleware
+import org.mozilla.fenix.dejavu.browser.LastDesktopModeMiddleware
 import org.mozilla.fenix.dejavu.browser.SplitViewMiddleware
 import org.mozilla.fenix.dejavu.browser.TabSleepMiddleware
 import org.mozilla.fenix.dejavu.browser.UBlockOriginPromptMiddleware
@@ -70,6 +72,8 @@ fun dejavuBrowserMiddleware(context: Context): List<Middleware<BrowserState, Bro
         ClosingPinnedTabsMiddleware(),
         RemovedAllTabsMiddleware { syncIds -> DejavuSync.forgetTabs(context, syncIds) },
         PageOpenedTabsMiddleware(),
+        InheritedDesktopModeMiddleware(),
+        LastDesktopModeMiddleware(),
         SplitViewMiddleware(),
         VisitOriginsMiddleware(VisitOrigins.get(context), isVisited),
         TabSleepMiddleware(),
@@ -250,8 +254,9 @@ object NewTabContainerChoice {
 /**
  * Opens new tabs in the container of their workspace, like Zen does for workspaces with a default container, in the
  * container picked with [NewTabContainerChoice], or in a new temporary container. Links from other apps open in the
- * workspace and container chosen in settings. Only tabs the user starts (typed, new tab, links from other apps) are
- * changed; tabs that already have a container, private tabs, and tabs opened by a page keep their context.
+ * workspace and container chosen in settings, or chosen for that link with [ExternalLinkChoice]. Only tabs the user
+ * starts (typed, new tab, links from other apps) are changed; tabs that already have a container, private tabs, and
+ * tabs opened by a page keep their context.
  */
 internal class WorkspaceContainerMiddleware(private val context: Context) : Middleware<BrowserState, BrowserAction> {
     override fun invoke(
@@ -292,13 +297,16 @@ internal class WorkspaceContainerMiddleware(private val context: Context) : Midd
         val workspaces = repository?.state?.value
         var workspace = workspaces?.activeWorkspace
         val pick = if (tab.source is SessionState.Source.External) {
-            val target = settings?.externalLinkWorkspaceId?.value?.let { id -> workspaces?.workspaces?.firstOrNull { it.id == id } }
+            // The place the user chose for this very link, when links ask, goes before the one of the settings.
+            val asked = ExternalLinkChoice.consume()
+            val targetId = asked?.workspaceId ?: settings?.externalLinkWorkspaceId?.value
+            val target = targetId?.let { id -> workspaces?.workspaces?.firstOrNull { it.id == id } }
             if (target != null) {
                 workspace = target
                 repository?.assignTab(tab.id, target.id)
                 repository?.selectWorkspace(target.id)
             }
-            settings?.externalLinkContainer?.value
+            if (asked != null) asked.pick else settings?.externalLinkContainer?.value
         } else {
             chosen
         }

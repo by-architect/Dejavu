@@ -24,6 +24,7 @@ import org.mozilla.fenix.dejavu.SilentlyClosedTabs
 import org.mozilla.fenix.dejavu.actions.ActionContext
 import org.mozilla.fenix.dejavu.actions.CustomAction
 import org.mozilla.fenix.dejavu.actions.CustomActionRunner
+import org.mozilla.fenix.dejavu.actions.ShareActionRunner
 import org.mozilla.fenix.dejavu.actions.TabAction
 import org.mozilla.fenix.dejavu.browser.SplitSpace
 import org.mozilla.fenix.dejavu.containers.ContainerPick
@@ -106,10 +107,14 @@ internal class TabActionRunner(
         }
     }
 
-    /** Sends the requests of a custom action for [targets]. */
+    /** Sends the requests of a custom action for [targets], or shares their links to the app of a share action. */
     fun runCustom(action: CustomAction, targets: ActionTargets) {
         val contexts = actionContexts(targets)
         if (contexts.isEmpty()) return
+        if (action.share != null) {
+            ShareActionRunner.run(context, action, contexts.map { it.url to it.title })?.let(notify)
+            return
+        }
         scope.launch {
             val result = actionRunner.run(action, contexts)
             notify(result.message(context, action, contexts.size))

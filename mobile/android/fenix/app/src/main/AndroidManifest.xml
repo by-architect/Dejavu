@@ -766,6 +766,11 @@
             android:foregroundServiceType="dataSync"
             android:exported="false" />
 
+        <!-- Dejavu: told by Android's share sheet which app was shared to, see ShareChoices. -->
+        <receiver
+            android:name=".dejavu.actions.ShareChoiceReceiver"
+            android:exported="false" />
+
         <receiver
             android:name="org.mozilla.gecko.search.SearchWidgetProvider"
             android:exported="true">

@@ -26,6 +26,7 @@ import android.content.Intent.FLAG_ACTIVITY_NEW_DOCUMENT
 import android.content.Intent.FLAG_ACTIVITY_NEW_TASK
 import android.content.Intent.FLAG_GRANT_READ_URI_PERMISSION
 import android.content.Intent.createChooser
+import android.content.IntentSender
 import android.content.pm.PackageManager
 import android.content.pm.PackageManager.PERMISSION_GRANTED
 import android.hardware.camera2.CameraManager
@@ -141,6 +142,7 @@ fun Context.share(text: String, subject: String = getString(R.string.mozac_suppo
  * @param subject of the intent [EXTRA_SUBJECT]
  * @param actions Custom list of [ChooserAction] to be added to the share intent.
  * @param thumbnailUri Optional [Uri] of an image to display in the share sheet preview.
+ * @param chosenCallback Told which app was chosen, as [Intent.EXTRA_CHOSEN_COMPONENT], or `null` for no one.
  * @return true it is able to share false otherwise.
  */
 @RequiresApi(VERSION_CODES.UPSIDE_DOWN_CAKE)
@@ -149,6 +151,7 @@ fun Context.shareWithChooserActions(
     subject: String = getString(R.string.mozac_support_ktx_share_dialog_title),
     actions: Array<ChooserAction>,
     thumbnailUri: Uri? = null,
+    chosenCallback: IntentSender? = null,
 ): Boolean {
     return try {
         val intent =
@@ -166,6 +169,7 @@ fun Context.shareWithChooserActions(
             intent.createChooserExcludingCurrentApp(
                 this,
                 getString(R.string.mozac_support_ktx_menu_share_with),
+                chosenCallback,
             )
         shareIntent.putExtra(EXTRA_CHOOSER_CUSTOM_ACTIONS, actions)
         if (this !is Activity) {

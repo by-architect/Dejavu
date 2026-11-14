@@ -30,7 +30,8 @@ fun isSecretHeader(name: String): Boolean = SECRET_HEADER_PARTS.any { it in name
 private val SECRET_HEADER_PARTS = listOf("auth", "token", "key", "secret", "password", "cookie", "session")
 
 /**
- * A user defined tab action that sends an HTTP request for every tab it runs on, like a `curl` command.
+ * A user defined tab action. It sends an HTTP request for every tab it runs on, like a `curl` command, or with [share]
+ * set, it shares the links of its tabs to an app instead.
  *
  * @property id Stable identifier.
  * @property name Label of the action's button.
@@ -38,6 +39,8 @@ private val SECRET_HEADER_PARTS = listOf("auth", "token", "key", "secret", "pass
  * @property url Request URL. May contain [ActionVariable] placeholders, which are URL encoded.
  * @property headers Request headers.
  * @property body Request body for methods that have one. Placeholders are escaped or encoded for its Content-Type.
+ * @property share The app a share action shares to, `null` for an action that sends a request. A share action keeps an
+ * empty GET request, which older versions of Dejavu read as an empty request action rather than dropping it.
  */
 data class CustomAction(
     val id: String,
@@ -46,6 +49,7 @@ data class CustomAction(
     val url: String,
     val headers: List<CustomHeader>,
     val body: String,
+    val share: ShareTarget? = null,
 ) {
     fun toJson(): JSONObject = JSONObject()
         .put("id", id)
@@ -54,8 +58,20 @@ data class CustomAction(
         .put("url", url)
         .put("headers", JSONArray().apply { headers.forEach { put(JSONObject().put("name", it.name).put("value", it.value)) } })
         .put("body", body)
+        .apply { share?.let { put("share", it.toJson()) } }
 
     companion object {
+        /** A share action named [name] that shares to [target]. */
+        fun shareAction(id: String, name: String, target: ShareTarget) = CustomAction(
+            id = id,
+            name = name,
+            method = HttpMethod.GET,
+            url = "",
+            headers = emptyList(),
+            body = "",
+            share = target,
+        )
+
         fun fromJson(json: JSONObject): CustomAction? = runCatching {
             val headers = json.optJSONArray("headers")
             CustomAction(
@@ -68,6 +84,7 @@ data class CustomAction(
                     CustomHeader(header.getString("name"), header.getString("value"))
                 },
                 body = json.optString("body"),
+                share = json.optJSONObject("share")?.let { ShareTarget.fromJson(it) },
             )
         }.getOrNull()
     }

@@ -224,6 +224,7 @@ internal class RowMotions(private val graphics: GraphicsContext, private val sco
     private val places = HashMap<String, RowPlace>()
     private val buttons = HashMap<MotionButton, Rect>()
     private val closedAt = HashMap<String, Long>()
+    private val swiped = HashSet<String>()
     private var lastRows: Map<String, Set<String>>? = null
     private var clearTappedAt = Long.MIN_VALUE / 2
     private val running = mutableStateListOf<Motion>()
@@ -248,7 +249,7 @@ internal class RowMotions(private val graphics: GraphicsContext, private val sco
      * list only knows where rows were to move them from while they always have a way to move, so they always do.
      */
     fun placementSpec(plan: RowPlan): FiniteAnimationSpec<IntOffset> = when {
-        plan.closed.isNotEmpty() && !plan.clear -> GapSpec
+        plan.closed.any { it !in swiped } && !plan.clear -> GapSpec
         !plan.isEmpty || running.isNotEmpty() -> MoveSpec
         else -> JumpSpec
     }
@@ -264,17 +265,24 @@ internal class RowMotions(private val graphics: GraphicsContext, private val sco
         val now = SystemClock.uptimeMillis()
         closedAt.entries.removeAll { now - it.value >= REOPEN_WINDOW_MS }
         plan.closed.forEach { key -> last[key]?.forEach { closedAt[it] = now } }
+        // Rows swiped away already went off the page.
+        val poured = plan.closed.filterNot { swiped.remove(it) }
         val clearButton = buttons[MotionButton.CLEAR]
         if (plan.clear && clearButton != null) {
             clearTappedAt = Long.MIN_VALUE / 2
-            plan.closed.mapNotNull(::ghostOf).takeIf { it.isNotEmpty() }?.let { play(Clearing(it, clearButton)) }
+            poured.mapNotNull(::ghostOf).takeIf { it.isNotEmpty() }?.let { play(Clearing(it, clearButton)) }
         } else {
-            plan.closed.mapNotNull(::ghostOf).forEach { play(Closing(it)) }
+            poured.mapNotNull(::ghostOf).forEach { play(Closing(it)) }
         }
         if (plan.reopened.isNotEmpty()) play(Reopening(plan.reopened, buttons[MotionButton.REOPEN]))
         if (flights) {
             plan.moved.forEach { (key, from) -> places[from]?.bounds?.let { play(Moving(key, it)) } }
         }
+    }
+
+    /** The row with [key] was swiped away, and goes without pouring into its close button. */
+    fun swiped(key: String) {
+        swiped.add(key)
     }
 
     /** The Clear button was tapped: the rows going away next pour into it. */

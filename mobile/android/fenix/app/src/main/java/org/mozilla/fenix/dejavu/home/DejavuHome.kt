@@ -36,6 +36,7 @@ import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.DisposableEffect
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.State
 import androidx.compose.runtime.collectAsState
@@ -65,6 +66,8 @@ import androidx.compose.ui.graphics.CompositingStrategy
 import androidx.compose.ui.graphics.graphicsLayer
 import androidx.compose.ui.hapticfeedback.HapticFeedbackType
 import androidx.compose.ui.input.pointer.pointerInput
+import androidx.compose.ui.layout.boundsInWindow
+import androidx.compose.ui.layout.onGloballyPositioned
 import androidx.compose.ui.layout.onPlaced
 import androidx.compose.ui.layout.onSizeChanged
 import androidx.compose.ui.layout.positionInParent
@@ -115,6 +118,8 @@ import org.mozilla.fenix.dejavu.discover.newDot
 import org.mozilla.fenix.dejavu.discover.rememberUnseenNewThings
 import org.mozilla.fenix.dejavu.discover.tipTarget
 import org.mozilla.fenix.dejavu.sync.workspaceIconText
+import org.mozilla.fenix.dejavu.ui.DejavuDropdownMenu
+import org.mozilla.fenix.dejavu.ui.DejavuMenuItem
 import org.mozilla.fenix.dejavu.ui.TapIcon
 import org.mozilla.fenix.dejavu.ui.glass
 import org.mozilla.fenix.dejavu.ui.popupThemeOf
@@ -222,7 +227,9 @@ interface DejavuHomeInteractor : TabEditor {
  * [hasDataToClear] tells whether the data chosen for Clear data has anything to delete, which shows the Clear button.
  * Tips about gestures nothing shows point them out while [tipsAllowed], when nothing else needs the user's attention.
  * While a search screen is open over it ([searching]), the system bars' icons follow the theme, see
- * [SystemBarIconsOver].
+ * [SystemBarIconsOver]. The buttons of the bars show where [homeButtons] puts them. Above the bottom bar, [media]
+ * shows the media a tab plays, see [MediaPlayerBar], unless it is `null`. With [swipeToClose], swiping a tab sideways
+ * closes it.
  */
 @Suppress("LongMethod", "LongParameterList", "CognitiveComplexMethod", "CyclomaticComplexMethod")
 @Composable
@@ -247,6 +254,9 @@ fun DejavuHome(
     hasDataToClear: Boolean = false,
     tipsAllowed: Boolean = false,
     searching: Boolean = false,
+    homeButtons: HomeButtons = HomeButtons.DEFAULT,
+    media: State<HomeMedia?>? = null,
+    swipeToClose: Boolean = false,
 ) {
     // The private workspace is an extra last page, there while private tabs are open.
     val privateIndex = state.workspaces.size.takeIf { privateTabs.isNotEmpty() }
@@ -555,7 +565,12 @@ fun DejavuHome(
             Column(modifier = Modifier.fillMaxSize().systemBarsPadding().imePadding()) {
                 val activeSelection = selection
                 val searchBar: @Composable () -> Unit = {
-                    TopBar(interactor, onSearchClick = if (onPrivatePage) newPrivateTab else interactor::onSearchClick)
+                    TopBar(
+                        buttons = homeButtons,
+                        downloads = downloads,
+                        interactor = interactor,
+                        onSearchClick = if (onPrivatePage) newPrivateTab else interactor::onSearchClick,
+                    )
                 }
                 val workspaceBar: @Composable () -> Unit = {
                     WorkspaceBar(
@@ -572,11 +587,9 @@ fun DejavuHome(
                             Tips.done(Tip.WORKSPACES)
                             interactor.onMoveWorkspace(workspaceId, index)
                         },
+                        buttons = homeButtons,
                         downloads = downloads,
-                        onDownloadsClick = interactor::onDownloadsClick,
-                        onExtensionsClick = interactor::onExtensionsClick,
-                        onBookmarksClick = interactor::onBookmarksClick,
-                        onHistoryClick = interactor::onHistoryClick,
+                        interactor = interactor,
                     )
                 }
                 if (activeSelection == null) {
@@ -668,6 +681,7 @@ fun DejavuHome(
                                 onCloseTab = { interactor.onCloseTab(it.id) },
                                 onNewTab = interactor::onNewPrivateTab,
                                 onCloseAll = interactor::onClosePrivateTabs,
+                                swipeToClose = swipeToClose,
                             )
                             return@HorizontalPager
                         }
@@ -749,6 +763,7 @@ fun DejavuHome(
                                 hasDataToClear = hasDataToClear,
                                 dataPour = pour.takeIf { page == pagerState.currentPage },
                                 askedClear = askedClear.takeIf { page == pagerState.currentPage },
+                                swipeToClose = swipeToClose,
                             )
                         }
                     }
@@ -778,6 +793,9 @@ fun DejavuHome(
                     if (dragStack.cards.isNotEmpty()) DragStack(dragStack, blocked = dragging?.blocked == true)
                 }
 
+                if (media != null && activeSelection == null) {
+                    MediaPlayerBar(media = media, onOpen = interactor::onTabClick)
+                }
                 if (activeSelection == null) {
                     if (searchAtBottom) searchBar() else workspaceBar()
                 } else if (selectionTargets != null) {
@@ -811,18 +829,26 @@ fun DejavuHome(
     }
 }
 
+/**
+ * The bar of the search, with the buttons [buttons] puts before and after it, and the "More" button of the ones it puts
+ * in a menu.
+ */
 @Composable
-private fun TopBar(interactor: DejavuHomeInteractor, onSearchClick: () -> Unit) {
+private fun TopBar(
+    buttons: HomeButtons,
+    downloads: State<DownloadsStatus>,
+    interactor: DejavuHomeInteractor,
+    onSearchClick: () -> Unit,
+) {
+    val start = buttons.buttonsIn(HomeSlot.SEARCH_START)
+    val end = buttons.buttonsIn(HomeSlot.SEARCH_END)
+    val inMenu = buttons.buttonsIn(HomeSlot.MENU)
     Row(
         verticalAlignment = Alignment.CenterVertically,
         modifier = Modifier.fillMaxWidth().height(64.dp).padding(horizontal = 4.dp),
     ) {
-        BarIconButton(
-            icon = R.drawable.dejavu_ic_profile_24,
-            contentDescription = stringResource(R.string.dejavu_account),
-            onClick = interactor::onAccountClick,
-            modifier = Modifier.genieButton(PageGenie.Button.ACCOUNT),
-        )
+        if (start.isEmpty()) Spacer(Modifier.width(BarEdgeGap))
+        start.forEach { HomeBarButton(it, downloads, interactor) }
 
         Row(
             verticalAlignment = Alignment.CenterVertically,
@@ -849,16 +875,82 @@ private fun TopBar(interactor: DejavuHomeInteractor, onSearchClick: () -> Unit) 
             )
         }
 
-        BarIconButton(
-            icon = R.drawable.dejavu_ic_settings_24,
-            contentDescription = stringResource(R.string.dejavu_settings),
+        end.forEach { HomeBarButton(it, downloads, interactor) }
+        if (inMenu.isNotEmpty()) HomeMenuButton(inMenu, interactor)
+        if (end.isEmpty() && inMenu.isEmpty()) Spacer(Modifier.width(BarEdgeGap))
+    }
+}
+
+/** [button] in a bar of the home screen. Buttons that open a page let it pour out of them, see [PageGenie]. */
+@Composable
+private fun HomeBarButton(button: HomeButton, downloads: State<DownloadsStatus>, interactor: DejavuHomeInteractor) {
+    val genie = button.genie
+    // A button moved away or hidden no longer stands where its page pours out.
+    DisposableEffect(genie) { onDispose { genie?.let(PageGenie::buttonGone) } }
+    val placed = genie?.let { Modifier.genieButton(it) } ?: Modifier
+    when (button) {
+        HomeButton.DOWNLOADS -> DownloadsButton(status = downloads, onClick = interactor::onDownloadsClick, modifier = placed)
+        HomeButton.SETTINGS -> BarIconButton(
+            icon = button.icon,
+            contentDescription = stringResource(button.label),
             onClick = interactor::onSettingsClick,
-            modifier = Modifier
-                .genieButton(PageGenie.Button.SETTINGS)
-                .newDot(rememberUnseenNewThings().isNotEmpty(), inset = SETTINGS_DOT_INSET),
+            modifier = placed.newDot(rememberUnseenNewThings().isNotEmpty(), inset = SETTINGS_DOT_INSET),
+        )
+        else -> BarIconButton(
+            icon = button.icon,
+            contentDescription = stringResource(button.label),
+            onClick = { button.click(interactor) },
+            modifier = placed,
         )
     }
 }
+
+/** The "More" button of the home screen, with a menu of [buttons]. Their pages pour out of it. */
+@Composable
+private fun HomeMenuButton(buttons: List<HomeButton>, interactor: DejavuHomeInteractor) {
+    var open by remember { mutableStateOf(false) }
+    val unseen = HomeButton.SETTINGS in buttons && rememberUnseenNewThings().isNotEmpty()
+    Box {
+        BarIconButton(
+            icon = iconsR.drawable.mozac_ic_ellipsis_vertical_24,
+            contentDescription = stringResource(R.string.dejavu_home_more),
+            onClick = { open = true },
+            modifier = Modifier
+                .onGloballyPositioned { place ->
+                    val bounds = place.boundsInWindow()
+                    buttons.forEach { button -> button.genie?.let { PageGenie.buttonPlaced(it, bounds) } }
+                }
+                .newDot(unseen, inset = SETTINGS_DOT_INSET),
+        )
+        DejavuDropdownMenu(expanded = open, onDismissRequest = { open = false }) {
+            buttons.forEach { button ->
+                DejavuMenuItem(
+                    text = stringResource(button.label),
+                    onClick = {
+                        open = false
+                        button.click(interactor)
+                    },
+                    leadingIcon = {
+                        Icon(painter = painterResource(button.icon), contentDescription = null, modifier = Modifier.size(20.dp))
+                    },
+                )
+            }
+        }
+    }
+}
+
+/** Opens what [this] button opens. */
+private fun HomeButton.click(interactor: DejavuHomeInteractor) = when (this) {
+    HomeButton.ACCOUNT -> interactor.onAccountClick()
+    HomeButton.DOWNLOADS -> interactor.onDownloadsClick()
+    HomeButton.EXTENSIONS -> interactor.onExtensionsClick()
+    HomeButton.BOOKMARKS -> interactor.onBookmarksClick()
+    HomeButton.HISTORY -> interactor.onHistoryClick()
+    HomeButton.SETTINGS -> interactor.onSettingsClick()
+}
+
+// The room a bar leaves at an end that has no button.
+private val BarEdgeGap = 8.dp
 
 /** Replaces the selection bar on top while dragged tabs can be dropped into the essentials. */
 @Composable
@@ -1021,8 +1113,8 @@ internal fun BarIconButton(
 private data class WorkspaceDrag(val workspaceId: String, val x: Float, val index: Int)
 
 /**
- * Downloads, one dot or icon per workspace, and history. Tapping a workspace shows it; long-pressing and dragging one
- * sideways moves it.
+ * One dot or icon per workspace, between the buttons [buttons] puts before and after them. Tapping a workspace shows
+ * it; long-pressing and dragging one sideways moves it.
  */
 @Suppress("LongParameterList", "LongMethod")
 @Composable
@@ -1034,11 +1126,9 @@ private fun WorkspaceBar(
     onDotClick: (Int) -> Unit,
     onPrivateClick: () -> Unit,
     onMove: (workspaceId: String, index: Int) -> Unit,
+    buttons: HomeButtons,
     downloads: State<DownloadsStatus>,
-    onDownloadsClick: () -> Unit,
-    onExtensionsClick: () -> Unit,
-    onBookmarksClick: () -> Unit,
-    onHistoryClick: () -> Unit,
+    interactor: DejavuHomeInteractor,
 ) {
     var drag by remember { mutableStateOf<WorkspaceDrag?>(null) }
     val lefts = remember { mutableStateMapOf<String, Float>() }
@@ -1082,16 +1172,7 @@ private fun WorkspaceBar(
         verticalAlignment = Alignment.CenterVertically,
         modifier = Modifier.fillMaxWidth().height(56.dp).padding(horizontal = 4.dp),
     ) {
-        DownloadsButton(
-            status = downloads,
-            onClick = onDownloadsClick,
-            modifier = Modifier.genieButton(PageGenie.Button.DOWNLOADS),
-        )
-        BarIconButton(
-            icon = R.drawable.dejavu_ic_extensions_24,
-            contentDescription = stringResource(R.string.dejavu_extensions),
-            onClick = onExtensionsClick,
-        )
+        buttons.buttonsIn(HomeSlot.WORKSPACES_START).forEach { HomeBarButton(it, downloads, interactor) }
 
         Row(
             horizontalArrangement = Arrangement.Center,
@@ -1180,18 +1261,7 @@ private fun WorkspaceBar(
             }
         }
 
-        BarIconButton(
-            icon = R.drawable.dejavu_ic_bookmarks_24,
-            contentDescription = stringResource(R.string.dejavu_bookmarks),
-            onClick = onBookmarksClick,
-            modifier = Modifier.genieButton(PageGenie.Button.BOOKMARKS),
-        )
-        BarIconButton(
-            icon = R.drawable.dejavu_ic_history_24,
-            contentDescription = stringResource(R.string.dejavu_history),
-            onClick = onHistoryClick,
-            modifier = Modifier.genieButton(PageGenie.Button.HISTORY),
-        )
+        buttons.buttonsIn(HomeSlot.WORKSPACES_END).forEach { HomeBarButton(it, downloads, interactor) }
     }
 }
 

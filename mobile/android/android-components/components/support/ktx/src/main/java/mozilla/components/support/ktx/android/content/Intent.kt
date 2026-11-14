@@ -7,6 +7,7 @@ package mozilla.components.support.ktx.android.content
 import android.content.ComponentName
 import android.content.Context
 import android.content.Intent
+import android.content.IntentSender
 import mozilla.components.support.utils.ext.packageManagerCompatHelper
 
 /**
@@ -14,11 +15,13 @@ import mozilla.components.support.utils.ext.packageManagerCompatHelper
  *
  * @param context Android context used for various system interactions.
  * @param title Title that will be displayed in the chooser.
+ * @param chosenCallback Told which app was chosen, as [Intent.EXTRA_CHOSEN_COMPONENT], or `null` for no one.
  * @return a new Intent object that you can hand to Context.startActivity() and related methods.
  */
 fun Intent.createChooserExcludingCurrentApp(
     context: Context,
     title: CharSequence,
+    chosenCallback: IntentSender? = null,
 ): Intent {
     val chooserIntent: Intent
     val resolveInfos = context.packageManagerCompatHelper.queryIntentActivitiesCompat(this, 0).toHashSet()
@@ -31,7 +34,7 @@ fun Intent.createChooserExcludingCurrentApp(
 
     // we can use Intent.EXTRA_EXCLUDE_COMPONENTS to exclude components
     chooserIntent =
-        Intent.createChooser(this, title)
+        Intent.createChooser(this, title, chosenCallback)
             .putExtra(
                 Intent.EXTRA_EXCLUDE_COMPONENTS,
                 excludedComponentNames.toTypedArray(),

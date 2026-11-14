@@ -14,6 +14,9 @@ import org.mozilla.fenix.share.listadapters.AppShareOption
 /** Callbacks for possible user interactions on the [ShareCloseView] */
 interface ShareToAppsInteractor {
     fun onShareToApp(appToShareTo: AppShareOption)
+
+    // Dejavu: holding an app offers to add a share action, which shares to it in one tap.
+    fun onAddToActions(app: AppShareOption)
 }
 
 class ShareToAppsView(

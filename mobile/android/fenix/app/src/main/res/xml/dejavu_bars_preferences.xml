@@ -50,6 +50,15 @@
             android:key="@string/pref_key_dejavu_home_search_bottom"
             android:title="@string/dejavu_home_search_bottom"
             android:summary="@string/dejavu_home_search_bottom_summary" />
+        <androidx.preference.Preference
+            android:key="@string/pref_key_dejavu_home_buttons"
+            android:title="@string/dejavu_settings_home_buttons"
+            android:summary="@string/dejavu_settings_home_buttons_summary" />
+        <androidx.preference.SwitchPreferenceCompat
+            android:key="@string/pref_key_dejavu_home_media_player"
+            android:persistent="false"
+            android:title="@string/dejavu_settings_home_media_player"
+            android:summary="@string/dejavu_settings_home_media_player_summary" />
     </androidx.preference.PreferenceCategory>
 
     <androidx.preference.PreferenceCategory
@@ -123,6 +132,12 @@
         <androidx.preference.SwitchPreferenceCompat
             android:key="@string/pref_key_swipe_toolbar_show_tabs"
             android:title="@string/preference_gestures_swipe_toolbar_show_tabs_2" />
+        <!-- Dejavu: swiping tabs closed on the home screen, see swipeToClose. -->
+        <androidx.preference.SwitchPreferenceCompat
+            android:key="@string/pref_key_dejavu_swipe_to_close"
+            android:persistent="false"
+            android:title="@string/dejavu_settings_swipe_to_close"
+            android:summary="@string/dejavu_settings_swipe_to_close_summary" />
         <!-- Dejavu: mouse support, see DejavuMouse. -->
         <androidx.preference.SwitchPreferenceCompat
             android:key="@string/pref_key_mouse_support"

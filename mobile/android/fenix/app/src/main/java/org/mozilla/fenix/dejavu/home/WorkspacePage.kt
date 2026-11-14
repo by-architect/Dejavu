@@ -277,6 +277,7 @@ internal fun WorkspacePage(
     hasDataToClear: Boolean = false,
     dataPour: DataPour? = null,
     askedClear: ClearData.Request? = null,
+    swipeToClose: Boolean = false,
 ) {
     val tabsById = remember(tabs) { tabs.associateBy { it.id } }
     val awakeTabIds = remember(tabs) { tabs.filter { it.isAwake }.map { it.id }.toSet() }
@@ -512,6 +513,8 @@ internal fun WorkspacePage(
                         onAction = { callbacks.onRowAction(it, targets) },
                         onClick = { if (drag == null) callbacks.onPinClick(item) },
                         onIconClick = resetPin?.let { action -> { if (drag == null) callbacks.onRowAction(action, targets) } },
+                        onSwipeClose = middleClick(targets, isPinned = true).takeIf { swipeToClose },
+                        staysAfterSwipe = true,
                         modifier = rowModifier
                             .tabZoomTarget(tab?.id)
                             .closeOnMiddleClick(middleClick(targets, isPinned = true)),
@@ -603,6 +606,13 @@ internal fun WorkspacePage(
                     actions = rowActions(unpinnedRowActions, targets, isPinned = false),
                     onAction = { callbacks.onRowAction(it, targets) },
                     onClick = { if (drag == null) callbacks.onTabClick(tab) },
+                    // A swiped row went away by itself, so it does not pour into its close button too.
+                    onSwipeClose = middleClick(targets, isPinned = false)?.takeIf { swipeToClose }?.let { close ->
+                        {
+                            motions.swiped(key)
+                            close()
+                        }
+                    },
                     modifier = rowModifier
                         .tabZoomTarget(tab.id)
                         .closeOnMiddleClick(middleClick(targets, isPinned = false))
@@ -1352,6 +1362,8 @@ internal fun TabRow(
     onIconClick: (() -> Unit)? = null,
     isPrivate: Boolean = false,
     icon: Bitmap? = null,
+    onSwipeClose: (() -> Unit)? = null,
+    staysAfterSwipe: Boolean = false,
 ) {
     val background = when {
         selection == true -> MaterialTheme.colorScheme.secondaryContainer
@@ -1364,6 +1376,7 @@ internal fun TabRow(
             .fillMaxWidth()
             .height(52.dp)
             .padding(vertical = 2.dp)
+            .swipeToClose(onSwipeClose, staysAfterSwipe)
             .clip(RowShape)
             .background(background)
             .clickable(onClick = onClick),

@@ -439,6 +439,20 @@ object DejavuSync {
         syncNow()
     }
 
+    /**
+     * Runs [replace], which replaces this device's workspaces all at once, like restoring a backup, while no sync runs,
+     * then syncs. The next sync with Zen starts over, like after choosing Zen again: it merges what Zen has with what
+     * is here, rather than deleting on Zen what [replace] took away here.
+     */
+    suspend fun <T> replacingWorkspaces(replace: suspend () -> T): T {
+        val result = mutex.withLock {
+            engine?.reset()
+            replace()
+        }
+        syncNow()
+        return result
+    }
+
     private fun prefs(context: Context) = context.getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE)
 
     private fun request() {

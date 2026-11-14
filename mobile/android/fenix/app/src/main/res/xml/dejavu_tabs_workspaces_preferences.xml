@@ -50,4 +50,11 @@
         android:key="@string/pref_key_dejavu_tabs_import_export"
         android:title="@string/dejavu_settings_tabs_import_export"
         android:summary="@string/dejavu_settings_tabs_import_export_summary" />
+
+    <androidx.preference.Preference
+        app:iconSpaceReserved="false"
+        app:widgetLayout="@layout/dejavu_preference_badge"
+        android:key="@string/pref_key_dejavu_backup"
+        android:title="@string/dejavu_settings_backup"
+        android:summary="@string/dejavu_settings_backup_summary" />
 </androidx.preference.PreferenceScreen>

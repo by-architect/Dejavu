@@ -38,6 +38,11 @@ class ShareInteractor(private val controller: ShareController) :
         controller.handleShareToApp(appToShareTo)
     }
 
+    // Dejavu: holding an app offers to add a share action for it.
+    override fun onAddToActions(app: AppShareOption) {
+        controller.handleAddToActions(app)
+    }
+
     override fun onSaveToPDF(tabId: String?) {
         controller.handleSaveToPDF(tabId)
     }

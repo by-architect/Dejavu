@@ -300,7 +300,7 @@ private fun TabAction.appliesToTargets(targets: ActionTargets): Boolean = when (
 /** Whether [this] action can do anything for [targets]. */
 fun RowAction.appliesTo(targets: ActionTargets): Boolean = when (this) {
     is RowAction.BuiltIn -> action.appliesTo(targets)
-    // A custom action sends pages to a server, so it is not offered for private tabs.
+    // A custom action sends pages to a server or shares them to an app, so it is not offered for private tabs.
     is RowAction.Custom -> targets.tabs.none { it.content.private } && targets.links.any { it.first.isNotBlank() }
 }
 

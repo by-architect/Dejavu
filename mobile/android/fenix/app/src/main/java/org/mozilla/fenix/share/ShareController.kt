@@ -44,6 +44,7 @@ import org.mozilla.fenix.R
 import org.mozilla.fenix.components.AppStore
 import org.mozilla.fenix.components.accounts.FenixFxAEntryPoint
 import org.mozilla.fenix.components.appstate.AppAction.ShareAction
+import org.mozilla.fenix.dejavu.settings.offerShareAction
 import org.mozilla.fenix.ext.nav
 import org.mozilla.fenix.share.listadapters.AppShareOption
 
@@ -58,6 +59,9 @@ interface ShareController {
     fun handleShareClosed()
 
     fun handleShareToApp(app: AppShareOption)
+
+    // Dejavu: holding an app offers to add a share action for it.
+    fun handleAddToActions(app: AppShareOption)
 
     /** Handles when a save to PDF action was requested. */
     fun handleSaveToPDF(tabId: String?)
@@ -180,6 +184,13 @@ class DefaultShareController(
                 }
             }
         dismiss(result)
+    }
+
+    // Dejavu: a share action shares to the app held in one tap, from the "More" menu to start with. The share sheet
+    // stays open, so the page can still be shared now.
+    override fun handleAddToActions(app: AppShareOption) {
+        if (app.packageName == ACTION_COPY_LINK_TO_CLIPBOARD) return
+        offerShareAction(context, app.name, app.packageName, app.activityName)
     }
 
     override fun handleSaveToPDF(tabId: String?) {

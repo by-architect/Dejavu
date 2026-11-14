@@ -18,6 +18,7 @@ import org.mozilla.fenix.dejavu.actions.TabAction
 import org.mozilla.fenix.dejavu.browser.BarsLayout
 import org.mozilla.fenix.dejavu.containers.ContainerPick
 import org.mozilla.fenix.dejavu.history.HistoryGrouping
+import org.mozilla.fenix.dejavu.home.HomeButtons
 import org.mozilla.fenix.dejavu.menu.ActionsBarLayout
 import org.mozilla.fenix.dejavu.menu.AddressBarButtons
 import org.mozilla.fenix.dejavu.menu.MoreMenuLayout
@@ -25,7 +26,7 @@ import org.mozilla.fenix.dejavu.menu.MoreMenuLayout
 /**
  * Device local Dejavu preferences: where actions are shown, the custom actions and the menus. They are not synced.
  */
-class DejavuSettings private constructor(context: Context) {
+class DejavuSettings private constructor(private val context: Context) {
     private val prefs = context.getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE)
 
     // Custom actions can hold API tokens in their headers and addresses, so they are encrypted with the Android
@@ -44,6 +45,7 @@ class DejavuSettings private constructor(context: Context) {
     private val _externalLinkWorkspaceId = MutableStateFlow(prefs.getString(KEY_EXTERNAL_LINK_WORKSPACE, null))
     private val _externalLinkContainer =
         MutableStateFlow(ContainerPick.fromKey(prefs.getString(KEY_EXTERNAL_LINK_CONTAINER, null)))
+    private val _externalLinkAsk = MutableStateFlow(prefs.getBoolean(KEY_EXTERNAL_LINK_ASK, false))
     private val _moreMenuRows = MutableStateFlow(
         MoreMenuLayout.normalized(MoreMenuLayout.fromJson(prefs.getString(KEY_MORE_MENU_ROWS, null)) ?: MoreMenuLayout.DEFAULT),
     )
@@ -51,6 +53,10 @@ class DejavuSettings private constructor(context: Context) {
     private val _systemBarsHidden = MutableStateFlow(prefs.getBoolean(KEY_SYSTEM_BARS_HIDDEN, false))
     private val _barsLayout = MutableStateFlow(BarsLayout.fromKey(prefs.getString(KEY_BARS_LAYOUT, null)))
     private val _homeSearchAtBottom = MutableStateFlow(prefs.getBoolean(KEY_HOME_SEARCH_AT_BOTTOM, false))
+    private val _homeButtons =
+        MutableStateFlow(HomeButtons.fromJson(prefs.getString(KEY_HOME_BUTTONS, null)) ?: HomeButtons.DEFAULT)
+    private val _homeMediaPlayer = MutableStateFlow(prefs.getBoolean(KEY_HOME_MEDIA_PLAYER, true))
+    private val _swipeToClose = MutableStateFlow(prefs.getBoolean(KEY_SWIPE_TO_CLOSE, false))
     private val _addressBarButtons = MutableStateFlow(readAddressBarButtons())
     private val _actionsBarKeys = MutableStateFlow(readActionsBar())
     private val _tabSleepMinutes = MutableStateFlow(prefs.getInt(KEY_TAB_SLEEP_MINUTES, DEFAULT_TAB_SLEEP_MINUTES))
@@ -87,6 +93,12 @@ class DejavuSettings private constructor(context: Context) {
     /** Container links from other apps open in, or `null` for the default of their workspace. */
     val externalLinkContainer: StateFlow<ContainerPick?> = _externalLinkContainer.asStateFlow()
 
+    /**
+     * Whether each link from another app first asks for the workspace and the container it opens in, starting from
+     * [externalLinkWorkspaceId] and [externalLinkContainer].
+     */
+    val externalLinkAsk: StateFlow<Boolean> = _externalLinkAsk.asStateFlow()
+
     /** Rows of the browser's "More" menu, as keys of its entries. See [MoreMenuLayout]. */
     val moreMenuRows: StateFlow<List<List<String>>> = _moreMenuRows.asStateFlow()
 
@@ -104,6 +116,15 @@ class DejavuSettings private constructor(context: Context) {
      * the workspaces and the downloads, extensions, bookmarks and history buttons at the top, the other way round.
      */
     val homeSearchAtBottom: StateFlow<Boolean> = _homeSearchAtBottom.asStateFlow()
+
+    /** Where the buttons of the home screen's bars show, see [HomeButtons]. */
+    val homeButtons: StateFlow<HomeButtons> = _homeButtons.asStateFlow()
+
+    /** Whether the home screen shows a player for the media a tab plays. */
+    val homeMediaPlayer: StateFlow<Boolean> = _homeMediaPlayer.asStateFlow()
+
+    /** Whether swiping a tab sideways on the home screen closes it, instead of turning to the next workspace. */
+    val swipeToClose: StateFlow<Boolean> = _swipeToClose.asStateFlow()
 
     /**
      * The buttons beside the address bar the user chose, which every layout of the bars shows, or `null` before they
@@ -220,6 +241,11 @@ class DejavuSettings private constructor(context: Context) {
         prefs.edit { putString(KEY_EXTERNAL_LINK_CONTAINER, pick?.key) }
     }
 
+    fun setExternalLinkAsk(ask: Boolean) {
+        _externalLinkAsk.value = ask
+        prefs.edit { putBoolean(KEY_EXTERNAL_LINK_ASK, ask) }
+    }
+
     fun setEssentialsPerContainer(enabled: Boolean) {
         _essentialsPerContainer.value = enabled
         prefs.edit { putBoolean(KEY_ESSENTIALS_PER_CONTAINER, enabled) }
@@ -258,6 +284,26 @@ class DejavuSettings private constructor(context: Context) {
     fun setHomeSearchAtBottom(atBottom: Boolean) {
         _homeSearchAtBottom.value = atBottom
         prefs.edit { putBoolean(KEY_HOME_SEARCH_AT_BOTTOM, atBottom) }
+    }
+
+    fun setHomeButtons(buttons: HomeButtons) {
+        _homeButtons.value = buttons
+        prefs.edit { putString(KEY_HOME_BUTTONS, buttons.toJson()) }
+    }
+
+    fun resetHomeButtons() {
+        _homeButtons.value = HomeButtons.DEFAULT
+        prefs.edit { remove(KEY_HOME_BUTTONS) }
+    }
+
+    fun setHomeMediaPlayer(shown: Boolean) {
+        _homeMediaPlayer.value = shown
+        prefs.edit { putBoolean(KEY_HOME_MEDIA_PLAYER, shown) }
+    }
+
+    fun setSwipeToClose(enabled: Boolean) {
+        _swipeToClose.value = enabled
+        prefs.edit { putBoolean(KEY_SWIPE_TO_CLOSE, enabled) }
     }
 
     /** The buttons beside the address bar in [layout]: the ones the user chose, or else the ones it starts with. */
@@ -352,6 +398,47 @@ class DejavuSettings private constructor(context: Context) {
         }
     }
 
+    /** Replaces every custom action with [actions], like restoring a backup does. */
+    fun replaceCustomActions(actions: List<CustomAction>) {
+        _customActions.value = actions
+        writeCustomActions()
+    }
+
+    /**
+     * Reads every setting again from the preferences, after something other than these setters wrote them, like
+     * restoring a backup, so that what shows follows them without restarting Dejavu. A setting with a flow of its own
+     * needs a line here too.
+     */
+    fun reload() {
+        val saved = DejavuSettings(context)
+        _customActions.value = saved.customActions.value
+        _pinnedRowKeys.value = saved.pinnedRowKeys.value
+        _unpinnedRowKeys.value = saved.unpinnedRowKeys.value
+        _folderRowKeys.value = saved.folderRowKeys.value
+        _essentialsPerContainer.value = saved.essentialsPerContainer.value
+        _temporaryContainersByDefault.value = saved.temporaryContainersByDefault.value
+        _externalLinkWorkspaceId.value = saved.externalLinkWorkspaceId.value
+        _externalLinkContainer.value = saved.externalLinkContainer.value
+        _externalLinkAsk.value = saved.externalLinkAsk.value
+        _moreMenuRows.value = saved.moreMenuRows.value
+        _moreMenuEditHidden.value = saved.moreMenuEditHidden.value
+        _systemBarsHidden.value = saved.systemBarsHidden.value
+        _barsLayout.value = saved.barsLayout.value
+        _homeSearchAtBottom.value = saved.homeSearchAtBottom.value
+        _homeButtons.value = saved.homeButtons.value
+        _homeMediaPlayer.value = saved.homeMediaPlayer.value
+        _swipeToClose.value = saved.swipeToClose.value
+        _addressBarButtons.value = saved.addressBarButtons.value
+        _actionsBarKeys.value = saved.actionsBarKeys.value
+        _tabSleepMinutes.value = saved.tabSleepMinutes.value
+        _awakeTabLimit.value = saved.awakeTabLimit.value
+        _welcomeSeen.value = saved.welcomeSeen.value
+        _hiddenSelectionKeys.value = saved.hiddenSelectionKeys.value
+        _tipsEnabled.value = saved.tipsEnabled.value
+        _seenTips.value = saved.seenTips.value
+        _seenNewThings.value = saved.seenNewThings.value
+    }
+
     private fun readKeys(key: String, default: List<TabAction>): List<String> =
         prefs.getString(key, null)?.split(",")?.filter { it.isNotBlank() } ?: default.map { it.key }
 
@@ -436,11 +523,15 @@ class DejavuSettings private constructor(context: Context) {
         private const val KEY_TEMPORARY_CONTAINERS_BY_DEFAULT = "temporary_containers_by_default"
         private const val KEY_EXTERNAL_LINK_WORKSPACE = "external_link_workspace"
         private const val KEY_EXTERNAL_LINK_CONTAINER = "external_link_container"
+        private const val KEY_EXTERNAL_LINK_ASK = "external_link_ask"
         private const val KEY_MORE_MENU_ROWS = "more_menu_rows"
         private const val KEY_MORE_MENU_EDIT_HIDDEN = "more_menu_edit_hidden"
         private const val KEY_SYSTEM_BARS_HIDDEN = "system_bars_hidden"
         private const val KEY_BARS_LAYOUT = "bars_layout"
         private const val KEY_HOME_SEARCH_AT_BOTTOM = "home_search_at_bottom"
+        private const val KEY_HOME_BUTTONS = "home_buttons"
+        private const val KEY_HOME_MEDIA_PLAYER = "home_media_player"
+        private const val KEY_SWIPE_TO_CLOSE = "swipe_to_close"
         private const val KEY_ADDRESS_BAR_START = "address_bar_start"
         private const val KEY_ADDRESS_BAR_END = "address_bar_end"
         private const val KEY_ACTIONS_BAR = "actions_bar"

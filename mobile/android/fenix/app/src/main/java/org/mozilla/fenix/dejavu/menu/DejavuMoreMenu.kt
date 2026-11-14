@@ -65,6 +65,7 @@ import mozilla.components.browser.state.state.TabSessionState
 import mozilla.components.ui.icons.R as iconsR
 import org.mozilla.fenix.R
 import org.mozilla.fenix.components.menu.store.WebExtensionMenuItem
+import org.mozilla.fenix.dejavu.actions.icon
 import org.mozilla.fenix.dejavu.browser.navigationBarRoomPadding
 import org.mozilla.fenix.dejavu.browser.shownPopupTheme
 import org.mozilla.fenix.dejavu.browser.statusBarRoomPadding
@@ -115,9 +116,9 @@ internal data class EntryLook(
 internal fun MoreMenuEntry.look(state: MoreMenuState): EntryLook = when (this) {
     is MoreMenuEntry.BuiltIn -> item.look(state)
     is MoreMenuEntry.Tab -> EntryLook(stringResource(action.label), action.icon, enabled = action.canRunOnShownTab(state))
-    // A custom action sends the page to a server, so it does not run on a private tab, like pinning and moving it.
-    is MoreMenuEntry.Custom ->
-        EntryLook(action.name, iconsR.drawable.mozac_ic_lightning_24, enabled = state.isWebPage && !state.isPrivate)
+    // A custom action sends the page to a server or to another app, so it does not run on a private tab, like pinning
+    // and moving it.
+    is MoreMenuEntry.Custom -> EntryLook(action.name, action.icon, enabled = state.isWebPage && !state.isPrivate)
     MoreMenuEntry.Home -> EntryLook(stringResource(R.string.dejavu_actions_bar_home), R.drawable.dejavu_ic_home_24)
     MoreMenuEntry.Search ->
         EntryLook(stringResource(R.string.dejavu_actions_bar_search), R.drawable.dejavu_ic_search_24)

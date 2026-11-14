@@ -24,6 +24,7 @@ import org.mozilla.fenix.GleanMetrics.Events
 import org.mozilla.fenix.HomeActivity.Companion.PRIVATE_BROWSING_MODE
 import org.mozilla.fenix.components.IntentProcessorType
 import org.mozilla.fenix.components.getType
+import org.mozilla.fenix.dejavu.ExternalLinkAsk
 import org.mozilla.fenix.ext.components
 import org.mozilla.fenix.ext.isIntentInternal
 import org.mozilla.fenix.perf.MarkersActivityLifecycleCallbacks
@@ -87,6 +88,15 @@ class IntentReceiverActivity : Activity() {
         }
 
         addReferrerInformation(intent)
+
+        // Dejavu: a link from another app may first ask where it opens. The home screen asks, then opens it.
+        val asks = components.strictMode.allowViolation(StrictMode::allowThreadDiskReads) {
+            ExternalLinkAsk.holds(this, intent, private)
+        }
+        if (asks) {
+            launch(Intent(), IntentProcessorType.OTHER)
+            return
+        }
 
         if (intent.type == INTENT_TYPE_PDF) {
             val referrerIsFenix = this.isIntentInternal()

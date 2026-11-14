@@ -604,6 +604,7 @@ class DejavuExternalLinksFragment : DejavuComposeFragment(R.string.dejavu_settin
         val chosenWorkspace = workspaces.workspaces.firstOrNull { it.id == workspaceId }
         val fenixSettings = requireComponents.settings
         var openInPrivate by remember { mutableStateOf(fenixSettings.openLinksInAPrivateTab) }
+        val ask by settings.externalLinkAsk.collectAsState()
 
         Column(modifier = Modifier.fillMaxSize().verticalScroll(rememberScrollState())) {
             SettingsHint(stringResource(R.string.dejavu_external_links_hint))
@@ -614,11 +615,23 @@ class DejavuExternalLinksFragment : DejavuComposeFragment(R.string.dejavu_settin
                 maxDescriptionLines = Int.MAX_VALUE,
                 checked = openInPrivate,
                 showSwitchAfter = true,
-                modifier = Modifier.settingsCard(index = 0, count = 1),
+                modifier = Modifier.settingsCard(index = 0, count = 2),
                 onClick = { checked ->
                     fenixSettings.openLinksInAPrivateTab = checked
                     openInPrivate = checked
                 },
+            )
+            // Links that open in private tabs never ask: they go to the private workspace.
+            SwitchListItem(
+                label = stringResource(R.string.dejavu_external_links_ask),
+                description = stringResource(R.string.dejavu_external_links_ask_summary),
+                maxLabelLines = Int.MAX_VALUE,
+                maxDescriptionLines = Int.MAX_VALUE,
+                checked = ask && !openInPrivate,
+                enabled = !openInPrivate,
+                showSwitchAfter = true,
+                modifier = Modifier.settingsCard(index = 1, count = 2),
+                onClick = { checked -> settings.setExternalLinkAsk(checked) },
             )
             Column(modifier = Modifier.alpha(if (openInPrivate) DISABLED_ALPHA else 1f)) {
                 SettingsHeader(stringResource(R.string.dejavu_external_links_workspace))

@@ -18,4 +18,9 @@
             app:argType="string"
             app:nullable="true" />
     </fragment>
+
+    <fragment
+        android:id="@+id/dejavuHomeButtonsFragment"
+        android:name="org.mozilla.fenix.dejavu.settings.DejavuHomeButtonsFragment"
+        android:label="@string/dejavu_settings_home_buttons" />
 </navigation>

@@ -150,6 +150,7 @@ open class CustomizationFragment : PreferenceFragmentCompat(), SystemInsetsPadde
         updateToolbarShortcut()
         setupBarsCategory()
         setupHomeSearchCategory()
+        setupHomeSwitches()
         setupSystemBarsSwitch()
 
         // if tab strip is enabled, swipe toolbar to switch tabs should not be enabled so the
@@ -340,6 +341,25 @@ open class CustomizationFragment : PreferenceFragmentCompat(), SystemInsetsPadde
         addToRadioGroup(*choices.toTypedArray())
     }
 
+    /** The home screen's media player and swiping tabs closed there, which Dejavu's own settings keep. */
+    private fun setupHomeSwitches() {
+        val dejavuSettings = dejavuSettings()
+        requirePreference<SwitchPreferenceCompat>(R.string.pref_key_dejavu_home_media_player).apply {
+            isChecked = dejavuSettings.homeMediaPlayer.value
+            onPreferenceChangeListener = Preference.OnPreferenceChangeListener { _, newValue ->
+                dejavuSettings.setHomeMediaPlayer(newValue == true)
+                true
+            }
+        }
+        requirePreference<SwitchPreferenceCompat>(R.string.pref_key_dejavu_swipe_to_close).apply {
+            isChecked = dejavuSettings.swipeToClose.value
+            onPreferenceChangeListener = Preference.OnPreferenceChangeListener { _, newValue ->
+                dejavuSettings.setSwipeToClose(newValue == true)
+                true
+            }
+        }
+    }
+
     /** Hides the Edit button at the bottom of Dejavu's "More" menu, which Dejavu's own settings keep. */
     private fun setupMoreMenuEditButton() {
         val dejavuSettings = dejavuSettings()
@@ -503,6 +523,13 @@ open class CustomizationFragment : PreferenceFragmentCompat(), SystemInsetsPadde
             resources.getString(R.string.pref_key_dejavu_more_menu) ->
                 return openDejavuScreen(R.id.dejavu_more_menu_graph)
             resources.getString(R.string.pref_key_dejavu_bars) -> return openDejavuScreen(R.id.dejavu_bars_graph)
+            resources.getString(R.string.pref_key_dejavu_home_buttons) -> {
+                val navController = findNavController()
+                if (navController.currentDestination?.id == R.id.dejavuBarsFragment) {
+                    navController.slideTo(R.id.dejavuHomeButtonsFragment)
+                }
+                return true
+            }
             resources.getString(R.string.pref_key_website_pull_to_refresh) -> {
                 PullToRefreshInBrowser.enabled.set(requireComponents.settings.isPullToRefreshEnabledInBrowser)
             }

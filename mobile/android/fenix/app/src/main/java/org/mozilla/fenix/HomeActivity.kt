@@ -137,6 +137,8 @@ import org.mozilla.fenix.databinding.ActivityHomeBinding
 import org.mozilla.fenix.debugsettings.data.DefaultDebugSettingsRepository
 import org.mozilla.fenix.debugsettings.gleandebugtools.DefaultGleanDebugToolsStorage
 import org.mozilla.fenix.debugsettings.ui.FenixOverlay
+import org.mozilla.fenix.dejavu.ExternalLinkAsk
+import org.mozilla.fenix.dejavu.actions.ShareChoices
 import org.mozilla.fenix.dejavu.browser.TabSleepMiddleware
 import org.mozilla.fenix.dejavu.settings.DejavuPreferenceCards
 import org.mozilla.fenix.dejavu.settings.PageBackdropCallbacks
@@ -701,6 +703,7 @@ open class HomeActivity : LocaleAwareAppCompatActivity(), NavHostActivity, Crash
         )
         supportFragmentManager.registerFragmentLifecycleCallbacks(DejavuPreferenceCards(), true)
         supportFragmentManager.registerFragmentLifecycleCallbacks(PageBackdropCallbacks(), true)
+        ExternalLinkAsk.askWhenPending(this)
 
         if (components.settings.showContileFeature) {
             components.core.macTopSitesUpdater.startPeriodicWork()
@@ -838,6 +841,9 @@ open class HomeActivity : LocaleAwareAppCompatActivity(), NavHostActivity, Crash
         // Diagnostic breadcrumb for "Display already aquired" crash:
         // https://github.com/mozilla-mobile/android-components/issues/7960
         breadcrumb(message = "onResume()")
+
+        // Dejavu: back from an app shared to with Android's share sheet, offers to add it as a share action.
+        ShareChoices.offerIfChosen(this)
 
         binding.root.doOnLayout {
             if (browsingModeManager.mode.isPrivate) {

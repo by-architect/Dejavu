@@ -162,6 +162,9 @@ fun ComposeView.setDejavuHomeContent(
             val hiddenSelectionKeys by settings.hiddenSelectionKeys.collectAsState()
             val essentialsPerContainer by settings.essentialsPerContainer.collectAsState()
             val searchAtBottom by settings.homeSearchAtBottom.collectAsState()
+            val homeButtons by settings.homeButtons.collectAsState()
+            val showsPlayer by settings.homeMediaPlayer.collectAsState()
+            val swipeToClose by settings.swipeToClose.collectAsState()
             val containerRecords by containerStorage.records.collectAsState()
             val containers = remember(containerRecords) { containerRecords.orEmpty().associateBy { it.contextId } }
             val tabs by fenix.core.store.observeTabsForHome { it.normalTabs }
@@ -170,6 +173,8 @@ fun ComposeView.setDejavuHomeContent(
             val selectedTabId by fenix.core.store.observeAsComposableState { it.selectedTabId }
             // Read only by the downloads button, so download progress redraws nothing else.
             val downloads = fenix.core.store.observeAsComposableState { it.downloadsStatus() }
+            // Read only by the player, so the media moving on redraws nothing else.
+            val media = fenix.core.store.observeAsComposableState { it.homeMedia() }
             val hasClosedTab by fenix.core.store.observeAsComposableState { it.hasClosedTab }
             val hasClipboardLink = rememberClipboardHasLink()
             val restoreComplete by fenix.core.store.observeAsComposableState { it.restoreComplete }
@@ -241,6 +246,9 @@ fun ComposeView.setDejavuHomeContent(
                     hasDataToClear = hasDataToClear,
                     tipsAllowed = !welcomeDue && !syncStatus.askSource && !isSearchActive,
                     searching = isSearchActive,
+                    homeButtons = homeButtons,
+                    media = media.takeIf { showsPlayer },
+                    swipeToClose = swipeToClose,
                 )
 
                 if (showsPage) {

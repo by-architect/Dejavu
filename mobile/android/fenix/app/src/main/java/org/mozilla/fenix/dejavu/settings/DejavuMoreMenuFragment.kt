@@ -18,8 +18,8 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.res.stringResource
 import androidx.core.view.MenuProvider
 import androidx.lifecycle.Lifecycle
-import mozilla.components.ui.icons.R as iconsR
 import org.mozilla.fenix.R
+import org.mozilla.fenix.dejavu.actions.icon
 import org.mozilla.fenix.dejavu.menu.MoreMenuEntry
 
 /**
@@ -63,7 +63,7 @@ internal val MoreMenuEntry.icon: Int
     get() = when (this) {
         is MoreMenuEntry.BuiltIn -> item.icon
         is MoreMenuEntry.Tab -> action.icon
-        is MoreMenuEntry.Custom -> iconsR.drawable.mozac_ic_lightning_24
+        is MoreMenuEntry.Custom -> action.icon
         MoreMenuEntry.Home -> R.drawable.dejavu_ic_home_24
         MoreMenuEntry.Search -> R.drawable.dejavu_ic_search_24
     }

@@ -4,6 +4,9 @@
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
     <string name="pref_key_dejavu_tab_actions" translatable="false">pref_key_dejavu_tab_actions</string>
+    <string name="pref_key_dejavu_home_buttons" translatable="false">pref_key_dejavu_home_buttons</string>
+    <string name="pref_key_dejavu_home_media_player" translatable="false">pref_key_dejavu_home_media_player</string>
+    <string name="pref_key_dejavu_swipe_to_close" translatable="false">pref_key_dejavu_swipe_to_close</string>
     <string name="pref_key_dejavu_containers" translatable="false">pref_key_dejavu_containers</string>
     <string name="pref_key_dejavu_external_links" translatable="false">pref_key_dejavu_external_links</string>
     <string name="pref_key_dejavu_tab_sleep" translatable="false">pref_key_dejavu_tab_sleep</string>
@@ -18,6 +21,7 @@
     <string name="pref_key_dejavu_bars" translatable="false">pref_key_dejavu_bars</string>
     <string name="pref_key_dejavu_passwords_language" translatable="false">pref_key_dejavu_passwords_language</string>
     <string name="pref_key_dejavu_tabs_import_export" translatable="false">pref_key_dejavu_tabs_import_export</string>
+    <string name="pref_key_dejavu_backup" translatable="false">pref_key_dejavu_backup</string>
     <!-- Name of Mozilla's browser, for texts about Mozilla's own services like Firefox Suggest. -->
     <string name="dejavu_firefox_name" translatable="false" tools:ignore="BrandUsage">Firefox</string>
 
@@ -948,4 +952,152 @@
     <string name="dejavu_sidebery_bad_file">This file isn’t a Sidebery snapshot or backup.</string>
     <!-- Shown at the bottom of a web page that asked for a passkey, on Android 13 and older, where Dejavu cannot use passkeys yet. The page shows its own error at the same time. -->
     <string name="dejavu_passkeys_unsupported">Passkeys aren\'t supported on this Android version yet</string>
+    <!-- Description of the close button of the player on the home screen, which shows the media a tab plays. Closing it pauses the media and hides the player until the media plays again. -->
+    <string name="dejavu_media_close">Close player</string>
+    <!-- Place a button of the home screen can show in, chosen in the settings of the home screen buttons: in the bar with the search field, before the search field. -->
+    <string name="dejavu_home_slot_search_start">Before the search bar</string>
+    <!-- Place a button of the home screen can show in: in the bar with the search field, after the search field. -->
+    <string name="dejavu_home_slot_search_end">After the search bar</string>
+    <!-- Place a button of the home screen can show in: in the bar that lists the workspaces, before them. -->
+    <string name="dejavu_home_slot_workspaces_start">Before the workspaces</string>
+    <!-- Place a button of the home screen can show in: in the bar that lists the workspaces, after them. -->
+    <string name="dejavu_home_slot_workspaces_end">After the workspaces</string>
+    <!-- Place a button of the home screen can show in: in the menu of a "More" button (three dots) at the end of the search bar. -->
+    <string name="dejavu_home_slot_menu">In the menu</string>
+    <!-- Place a button of the home screen can show in: nowhere, the button is hidden. -->
+    <string name="dejavu_home_slot_hidden">Hidden</string>
+    <!-- Title of the dialog that asks where a link from another app opens, when "Ask every time" is on in the external links settings. -->
+    <string name="dejavu_external_link_ask_title">Open link in</string>
+    <!-- Button of that dialog that opens the link in the chosen workspace and container. -->
+    <string name="dejavu_external_link_ask_open">Open</string>
+    <!-- Choice of that dialog: the link opens in the default container of the chosen workspace, which has none. -->
+    <string name="dejavu_external_link_ask_default">Workspace’s container</string>
+    <!-- Choice of that dialog: the link opens in the default container of the chosen workspace. %1$s is the container's name. -->
+    <string name="dejavu_external_link_ask_workspace_container">%1$s (workspace’s)</string>
+    <!-- Choice of that dialog: the link opens in a private tab instead, outside any workspace's container. -->
+    <string name="dejavu_external_link_ask_private">Private tab</string>
+    <!-- Switch of the external links settings: each link from another app first asks where it opens. -->
+    <string name="dejavu_external_links_ask">Ask every time</string>
+    <!-- Description of that switch. -->
+    <string name="dejavu_external_links_ask_summary">Each link from another app asks which workspace and container it opens in, starting with the choices below.</string>
+    <!-- Description of the "More" button (three dots) at the end of the home screen's search bar, which opens a menu of the home screen buttons the user put there. -->
+    <string name="dejavu_home_more">More</string>
+    <!-- Entry of the bars settings, in the home screen's group, that opens the settings of the home screen buttons. -->
+    <string name="dejavu_settings_home_buttons">Home screen buttons</string>
+    <!-- Description of that entry. -->
+    <string name="dejavu_settings_home_buttons_summary">Move the buttons between the bars, put them in a menu or hide them</string>
+    <!-- Hint at the top of the settings of the home screen buttons. "More" is the name of the button with three dots. -->
+    <string name="dejavu_home_buttons_hint">Choose where each button of the home screen shows, to give the workspaces more room. Buttons in the menu open from a More button at the end of the search bar.</string>
+    <!-- Description of the button that moves a home screen button one place earlier among the buttons of its place. -->
+    <string name="dejavu_home_buttons_move_earlier">Move earlier</string>
+    <!-- Description of the button that moves a home screen button one place later among the buttons of its place. -->
+    <string name="dejavu_home_buttons_move_later">Move later</string>
+    <!-- Note under the "Hidden" choice for the Settings button, which cannot be hidden. -->
+    <string name="dejavu_home_buttons_settings_note">Settings can’t be hidden, as nothing else on the home screen leads there.</string>
+    <!-- Switch of the bars settings, in the home screen's group: shows a player for the media a tab plays. -->
+    <string name="dejavu_settings_home_media_player">Media player</string>
+    <!-- Description of that switch. -->
+    <string name="dejavu_settings_home_media_player_summary">Shows what a tab plays above the bottom bar, with play and pause</string>
+    <!-- Switch of the bars settings, in the gestures group: swiping a tab sideways on the home screen closes it. -->
+    <string name="dejavu_settings_swipe_to_close">Swipe tabs to close</string>
+    <!-- Description of that switch. -->
+    <string name="dejavu_settings_swipe_to_close_summary">On the home screen, swiping a tab sideways closes it. To switch workspaces, swipe outside the tabs or use the workspace bar.</string>
+    <!-- Entry of the Tabs, workspaces and containers settings, and title of the screen it opens, which saves Dejavu's workspaces and settings to a file and brings them back from it, or from Zen, a browser for computers. -->
+    <string name="dejavu_settings_backup">Back up and restore</string>
+    <!-- Summary of that entry. "Zen" is the name of a browser and stays as it is. -->
+    <string name="dejavu_settings_backup_summary">Save workspaces and settings to a file, or bring them back from a file or from Zen</string>
+    <!-- Text at the top of that screen: what a backup file holds. Essentials are the site icons at the top of the home screen, shown in every workspace. -->
+    <string name="dejavu_backup_hint">A backup holds your workspaces, pinned tabs, folders, essentials, open tabs, containers, wallpapers and Dejavu’s settings. Restore it on this phone or on another one.</string>
+    <!-- Button that saves a backup to a file the user picks. Also the title of the dialog before saving when the user has custom actions. -->
+    <string name="dejavu_backup_save">Back up to a file</string>
+    <!-- Button that opens a backup file to restore it. Also the title of the dialog that confirms restoring. -->
+    <string name="dejavu_backup_restore">Restore from a backup</string>
+    <!-- Text below those buttons. Custom actions are tab actions the user made, which send a request to a web address and can hold tokens or keys that let them into an account. -->
+    <string name="dejavu_backup_private_note">The backup file also holds your custom actions, with any tokens or keys in them. Keep it somewhere private.</string>
+    <!-- Text of the dialog shown before saving a backup when the user has custom actions. -->
+    <string name="dejavu_backup_private_confirm">This backup includes your custom actions, with any tokens or keys they hold. Anyone who gets the file can use them, so keep it somewhere private.</string>
+    <!-- Button of that dialog that goes on to pick where to save the backup. -->
+    <string name="dejavu_backup_save_button">Back up</string>
+    <!-- First line of the dialog that confirms restoring a backup. %1$s is the date and time the backup was made. -->
+    <string name="dejavu_backup_from">Backup from %1$s</string>
+    <!-- Row of the dialogs that confirm restoring, followed by how many workspaces the file holds. -->
+    <string name="dejavu_backup_workspaces">Workspaces</string>
+    <!-- Row of the dialog that confirms restoring a backup, followed by how many open tabs that are not pinned it holds. -->
+    <string name="dejavu_backup_open_tabs">Open tabs</string>
+    <!-- Text of the dialog that confirms restoring a backup, below the rows with what the file holds. -->
+    <string name="dejavu_backup_restore_replaces">Restoring replaces your workspaces, pinned tabs, essentials and Dejavu’s settings on this phone. Tabs open now stay open.</string>
+    <!-- Button of that dialog that restores the backup. -->
+    <string name="dejavu_backup_restore_button">Restore</string>
+    <!-- Shown in the dialogs that confirm restoring, when the workspaces of this phone sync with Zen, a browser for computers, through the Mozilla account. -->
+    <string name="dejavu_backup_sync_note">Your workspaces sync with Zen, so what you restore goes to Zen too, and sync may change it again.</string>
+    <!-- Button that opens files from Zen, a browser for computers, to bring its workspaces here. Also the title of the dialog that confirms it. -->
+    <string name="dejavu_backup_zen_restore">Restore from Zen</string>
+    <!-- Text below that button. "zen-sessions.jsonlz4", "zen-sessions-backup" and "containers.json" are names of files and folders of Zen and stay as they are. -->
+    <string name="dejavu_backup_zen_hint">Zen keeps your workspaces in zen-sessions.jsonlz4 in its profile folder on your computer, with older copies in zen-sessions-backup. Copy one to this phone, with containers.json for your container names, and pick them here.</string>
+    <!-- Text of the dialog that confirms restoring from Zen, above its buttons Add and Replace. -->
+    <string name="dejavu_backup_zen_choice">Add Zen’s workspaces next to yours, or replace yours with them. Tabs open now stay open.</string>
+    <!-- Switch of the dialog that confirms restoring from Zen: whether the tabs Zen has open that are not pinned come along too. -->
+    <string name="dejavu_backup_zen_unpinned">Also open unpinned tabs</string>
+    <!-- Text below that switch. %1$d is how many unpinned tabs come along. They open without loading their pages until they are shown. -->
+    <string name="dejavu_backup_zen_unpinned_count">Unpinned tabs: %1$d. They open without loading.</string>
+    <!-- Shown in that dialog when tabs from Zen use containers whose names the picked files do not hold. "containers.json" is the name of a file of Zen and stays as it is. -->
+    <string name="dejavu_backup_zen_left_out">Some tabs use containers these files don’t name, so they open without one. Pick containers.json from the same Zen profile too to keep them.</string>
+    <!-- Button of that dialog that adds Zen's workspaces next to the ones on this phone. -->
+    <string name="dejavu_backup_zen_add">Add</string>
+    <!-- Button of that dialog that removes the workspaces on this phone and puts Zen's in their place. -->
+    <string name="dejavu_backup_zen_replace">Replace</string>
+    <!-- Short message once a backup is saved. -->
+    <string name="dejavu_backup_saved">Backup saved</string>
+    <!-- Short message when a backup could not be saved. -->
+    <string name="dejavu_backup_save_failed">Couldn’t save the backup. Try again.</string>
+    <!-- Short message once a backup is restored. -->
+    <string name="dejavu_backup_restored">Backup restored</string>
+    <!-- Short message when only part of a backup could be restored, like when a wallpaper picture was missing from the file. -->
+    <string name="dejavu_backup_restore_failed">Couldn’t restore all of the backup. Try again.</string>
+    <!-- Short message when the chosen file is not a backup of Dejavu. -->
+    <string name="dejavu_backup_bad_file">This file isn’t a Dejavu backup.</string>
+    <!-- Short message when the chosen backup was made by a newer version of Dejavu than this one. -->
+    <string name="dejavu_backup_too_new">This backup is from a newer Dejavu. Update Dejavu to restore it.</string>
+    <!-- Short message once workspaces were brought from Zen. -->
+    <string name="dejavu_backup_zen_restored">Restored from Zen</string>
+    <!-- Short message when bringing workspaces from Zen failed. -->
+    <string name="dejavu_backup_zen_failed">Couldn’t restore from Zen. Try again.</string>
+    <!-- Short message when the chosen files hold no workspaces of Zen. "zen-sessions.jsonlz4" and "zen-sessions-backup" are names of a file and a folder of Zen and stay as they are. -->
+    <string name="dejavu_backup_zen_bad_file">Pick zen-sessions.jsonlz4, or one of its copies from zen-sessions-backup.</string>
+    <!-- Choice at the top of the custom action editor: the action sends a web request to a server, like custom actions always did. -->
+    <string name="dejavu_custom_action_kind_request">Send a request</string>
+    <!-- Choice at the top of the custom action editor: the action shares the links of its tabs to an app on the phone, like WhatsApp or Signal. -->
+    <string name="dejavu_custom_action_kind_share">Share to an app</string>
+    <!-- Title above the app a share action shares to, in the custom action editor. -->
+    <string name="dejavu_share_action_app">App</string>
+    <!-- Shown in place of the app before one is chosen. Also the title of the list of apps to choose from. -->
+    <string name="dejavu_share_action_choose_app">Choose an app</string>
+    <!-- Heading in that list above all the apps, after the apps used recently, which have the heading "Recently used". -->
+    <string name="dejavu_share_action_all_apps">All apps</string>
+    <!-- Title above the field for the one person a share action sends to, like a contact in WhatsApp, instead of asking in the app each time. -->
+    <string name="dejavu_share_action_recipient">Send straight to</string>
+    <!-- Label of that field for apps that need a phone number, like WhatsApp, Signal or text messages. -->
+    <string name="dejavu_share_recipient_phone">Phone number with country code</string>
+    <!-- Label of that field for email apps. -->
+    <string name="dejavu_share_recipient_email">Email address</string>
+    <!-- Label of that field for Telegram, which needs the person's username. -->
+    <string name="dejavu_share_recipient_username">Username</string>
+    <!-- Read out by screen readers for the button next to that field, which opens the phone's contacts to pick a phone number or an email address from. -->
+    <string name="dejavu_share_action_pick_contact">Pick a contact</string>
+    <!-- Text below that field. -->
+    <string name="dejavu_share_action_recipient_hint">Leave it empty to pick a chat in the app each time.</string>
+    <!-- Text at the bottom of the editor of a share action. -->
+    <string name="dejavu_share_action_hint">The action shares the links of the tabs it runs on, one link per line. It isn’t offered for private tabs.</string>
+    <!-- Name a share action gets when it sends straight to one person. %1$s is the app, like WhatsApp. %2$s is the person, like Alice, or their phone number. -->
+    <string name="dejavu_share_action_name_recipient">%1$s: %2$s</string>
+    <!-- Short message when a share action runs but its app was uninstalled. %1$s is the name of the action, like WhatsApp. -->
+    <string name="dejavu_share_action_not_installed">The app for %1$s isn’t installed</string>
+    <!-- Short message when a share action runs but its app could not be opened. %1$s is the name of the action, like WhatsApp. -->
+    <string name="dejavu_share_action_failed">Couldn’t open the app for %1$s</string>
+    <!-- Button of the dialog that holding an app in the share sheet opens. Also read out by screen readers for holding an app there. It adds a button that shares to that app in one tap. -->
+    <string name="dejavu_share_add_to_actions">Add to actions</string>
+    <!-- Text of that dialog, whose title is the name of the app. -->
+    <string name="dejavu_share_add_to_actions_text">Add a button to the More menu that shares to this app in one tap.</string>
+    <!-- Short message once a share action is added from the share sheet. %1$s is its name, like WhatsApp. %2$s is where its settings are, like “Settings › Customize › Tab actions”, made of the names of those screens. -->
+    <string name="dejavu_share_added">%1$s is now in the More menu. To move it or send straight to someone, go to %2$s.</string>
 </resources>

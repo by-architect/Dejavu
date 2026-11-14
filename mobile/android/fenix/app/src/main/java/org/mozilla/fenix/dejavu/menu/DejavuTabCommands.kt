@@ -24,6 +24,7 @@ import org.mozilla.fenix.dejavu.NewTabContainerChoice
 import org.mozilla.fenix.dejavu.actions.ActionContext
 import org.mozilla.fenix.dejavu.actions.CustomAction
 import org.mozilla.fenix.dejavu.actions.CustomActionRunner
+import org.mozilla.fenix.dejavu.actions.ShareActionRunner
 import org.mozilla.fenix.dejavu.browser.DejavuSearchStart
 import org.mozilla.fenix.dejavu.browser.NewTabSearch
 import org.mozilla.fenix.dejavu.browser.SavePage
@@ -88,6 +89,12 @@ internal class DejavuTabCommands(
 
     fun runCustomAction(action: CustomAction, workspaces: WorkspaceState) {
         if (tab.content.private) return
+        if (action.share != null) {
+            ShareActionRunner.run(appContext, action, listOf(tab.content.url to tab.content.title))?.let { message ->
+                Toast.makeText(appContext, message, Toast.LENGTH_LONG).show()
+            }
+            return
+        }
         val pin = workspaces.pinOf(tab.id)
         val workspaceId = pin?.workspaceId ?: workspaces.workspaceOf(tab.id)
         val container = tab.contextId?.let { id ->

@@ -96,6 +96,11 @@ internal object PageGenie {
         buttons[button] = bounds
     }
 
+    /** [button] left the screen, so pages no longer pour out of where it was. */
+    fun buttonGone(button: Button) {
+        buttons.remove(button)
+    }
+
     /** Where [button] is now, in the window. */
     fun boundsOf(button: Button): Rect? = buttons[button]?.takeIf { it.isShown }
 

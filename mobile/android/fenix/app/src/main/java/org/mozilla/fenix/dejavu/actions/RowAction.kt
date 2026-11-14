@@ -8,6 +8,7 @@ import androidx.annotation.DrawableRes
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.res.stringResource
 import mozilla.components.ui.icons.R as iconsR
+import org.mozilla.fenix.R
 import org.mozilla.fenix.dejavu.workspaces.SplitOrientation
 
 /** An action that can run on tabs: one of Dejavu's [TabAction]s or a [CustomAction] the user defined. */
@@ -53,8 +54,13 @@ fun RowAction.fits(place: ActionPlace): Boolean = when (this) {
 val RowAction.icon: Int
     get() = when (this) {
         is RowAction.BuiltIn -> action.icon
-        is RowAction.Custom -> iconsR.drawable.mozac_ic_lightning_24
+        is RowAction.Custom -> action.icon
     }
+
+/** The icon of a custom action's buttons: Share's for one that shares to an app, a lightning bolt for the others. */
+@get:DrawableRes
+val CustomAction.icon: Int
+    get() = if (share != null) R.drawable.dejavu_ic_share_24 else iconsR.drawable.mozac_ic_lightning_24
 
 val RowAction.label: String
     @Composable get() = when (this) {

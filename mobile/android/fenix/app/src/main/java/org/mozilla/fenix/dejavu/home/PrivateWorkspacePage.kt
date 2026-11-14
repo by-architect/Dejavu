@@ -96,6 +96,7 @@ internal fun PrivateWorkspacePage(
     onCloseTab: (TabSessionState) -> Unit,
     onNewTab: () -> Unit,
     onCloseAll: () -> Unit,
+    swipeToClose: Boolean = false,
 ) {
     val close = RowAction.BuiltIn(TabAction.CLOSE)
     val motions = rememberRowMotions()
@@ -202,6 +203,14 @@ internal fun PrivateWorkspacePage(
                     onClick = { onTabClick(tab) },
                     isPrivate = true,
                     icon = tab.content.icon,
+                    onSwipeClose = if (swipeToClose) {
+                        {
+                            motions.swiped(tab.id)
+                            onCloseTab(tab)
+                        }
+                    } else {
+                        null
+                    },
                     modifier = Modifier
                         .animateItem(fadeInSpec = null, placementSpec = placement, fadeOutSpec = null)
                         .motionRow(motions, tab.id)

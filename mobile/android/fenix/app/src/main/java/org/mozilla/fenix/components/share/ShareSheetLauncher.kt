@@ -29,6 +29,7 @@ import mozilla.components.support.ktx.kotlin.trimmed
 import mozilla.components.ui.icons.R as iconsR
 import org.mozilla.fenix.R
 import org.mozilla.fenix.components.menu.share.QRCodeGenerator
+import org.mozilla.fenix.dejavu.actions.ShareChoices
 
 internal const val SAVE_PDF_ACTION = "org.mozilla.fenix.ACTION_SAVE_TO_PDF"
 internal const val PRINT_ACTION = "org.mozilla.fenix.ACTION_PRINT"
@@ -105,6 +106,8 @@ private class ContextShareDelegate(private val getContext: () -> Context) : Shar
                 subject = subject,
                 actions = actions,
                 thumbnailUri = thumbnailUri,
+                // Dejavu: hears which app was chosen, to offer it as a share action, see ShareChoices.
+                chosenCallback = ShareChoices.callback(getContext()),
             )
     }
 }
