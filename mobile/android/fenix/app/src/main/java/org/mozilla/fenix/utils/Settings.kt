@@ -20,6 +20,7 @@ import androidx.preference.PreferenceManager
 import java.io.File
 import java.security.InvalidParameterException
 import java.util.concurrent.TimeUnit.MILLISECONDS
+import mozilla.components.compose.base.theme.layout.AcornWindowSize
 import mozilla.components.concept.engine.Engine
 import mozilla.components.concept.engine.Engine.HttpsOnlyMode
 import mozilla.components.feature.automotive.isAndroidAutomotiveAvailable
@@ -1686,11 +1687,48 @@ class Settings(
                 ToolbarPosition.TOP
             }
 
+    /**
+     * Dejavu: whether the window of the activity is large. The application context does not follow split screen or a
+     * resized window, so [HomeActivity] sets this from its own configuration when it starts and when that changes.
+     */
+    @Volatile
+    var isInLargeWindow: Boolean = AcornWindowSize.isLargeWindow(appContext)
+
+    // Dejavu: the sidebar replaces the tab strip only where it is docked, so a narrow window keeps the strip.
+    private val isTabStripReplaced: Boolean
+        get() = isTabSidebarShown(isInLargeWindow)
+
     val shouldShowTabStripAtTop: Boolean
-        get() = isTabStripEnabled && tabStripPosition == ToolbarPosition.TOP
+        get() = isTabStripEnabled && !isTabStripReplaced && tabStripPosition == ToolbarPosition.TOP
 
     val shouldShowTabStripAtBottom: Boolean
-        get() = isTabStripEnabled && tabStripPosition == ToolbarPosition.BOTTOM
+        get() = isTabStripEnabled && !isTabStripReplaced && tabStripPosition == ToolbarPosition.BOTTOM
+
+    /**
+     * Dejavu: whether the tab sidebar shows next to pages in a window that [isLargeWindow] (see
+     * `AcornWindowSize.isLargeWindow`). The one rule the sidebar and everything that makes room for it follow. Where
+     * the sidebar is on, it replaces the tab strip.
+     */
+    fun isTabSidebarShown(isLargeWindow: Boolean): Boolean = isVerticalTabsEnabled && isLargeWindow
+
+    /** Dejavu: shows the home screen in a sidebar next to pages on large windows, on by default on tablets. */
+    var isVerticalTabsEnabled by
+        booleanPreference(
+            appContext.getPreferenceKey(R.string.pref_key_dejavu_sidebar),
+            default = { appContext.isLargeScreenSize() },
+        )
+
+    /** Dejavu: hides the tab sidebar until a swipe from the edge of the screen shows it over the page. */
+    var isVerticalTabsAutoHide by
+        booleanPreference(appContext.getPreferenceKey(R.string.pref_key_dejavu_sidebar_auto_hide), default = false)
+
+    /** Dejavu: draws the handle that pulls out the hidden sidebar. Without it the handle still works, unseen. */
+    var isSidebarHandleShown by
+        booleanPreference(appContext.getPreferenceKey(R.string.pref_key_dejavu_sidebar_handle), default = true)
+
+    /** Dejavu: the width of the tab sidebar in dp, set by dragging its edge, or 0 for the default width. */
+    var sidebarWidthDp by
+        intPreference(appContext.getPreferenceKey(R.string.pref_key_dejavu_sidebar_width), default = 0)
 
     /**
      * Check each active accessibility service to see if it can perform gestures, if any can, then it is *likely* a

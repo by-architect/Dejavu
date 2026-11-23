@@ -6,6 +6,7 @@ package mozilla.components.compose.browser.awesomebar
 
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.compositionLocalOf
 import androidx.compose.ui.graphics.Color
 
 /** Contains the default values used by the AwesomeBar. */
@@ -35,3 +36,7 @@ object AwesomeBarDefaults {
             groupTitle,
         )
 }
+
+// Dejavu: a narrow AwesomeBar, like the tab sidebar, shows a suggestion title on one line.
+/** The most lines a suggestion title takes. */
+val LocalSuggestionTitleMaxLines = compositionLocalOf { 2 }

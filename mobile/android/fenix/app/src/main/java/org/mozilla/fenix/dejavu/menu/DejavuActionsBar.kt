@@ -100,6 +100,8 @@ fun DejavuActionsBar(onEvent: (BrowserToolbarEvent) -> Unit, tabId: String? = nu
     val state = barTab.state
     var asking by remember { mutableStateOf<TabAction?>(null) }
     val unseen = rememberUnseenNewThings()
+    val theme = shownPopupTheme(tabId)
+    val glass = MaterialTheme.colorScheme.surface.copy(alpha = DejavuToolbar.GLASS_BAR_ALPHA)
 
     Box(
         modifier = Modifier
@@ -110,8 +112,9 @@ fun DejavuActionsBar(onEvent: (BrowserToolbarEvent) -> Unit, tabId: String? = nu
             .height(BAR_HEIGHT)
             .tipTarget(Tip.PAGE_MENU, TipGesture.Swipe(dy = -MENU_SWIPE), enabled = tabId == null, drawsItself = true)
             .clip(BAR_SHAPE)
-            .background(MaterialTheme.colorScheme.surface)
-            .workspaceTheme(shownPopupTheme(tabId))
+            // The page shows through the bar, as it does through the address bar.
+            .then(if (theme == null) Modifier.background(glass) else Modifier)
+            .workspaceTheme(theme, baseAlpha = DejavuToolbar.GLASS_BAR_ALPHA)
             .border(1.dp, MaterialTheme.colorScheme.onSurface.copy(alpha = BORDER_ALPHA), BAR_SHAPE),
     ) {
         val buttons = entries.forSplitWays(state.splitWays, state.isSplit).map { entry ->

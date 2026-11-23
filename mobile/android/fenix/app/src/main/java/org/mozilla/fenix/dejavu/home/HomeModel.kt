@@ -187,6 +187,23 @@ data class ActionTargets(
 val TabSessionState.isAwake: Boolean
     get() = engineState.engineSession != null
 
+/**
+ * The open tabs as the home lists them. Two lists are equal when the home would draw them the same: same tabs with the
+ * same address, title, icon, container and awake state, so load progress and other tab state changes leave it as it
+ * is and the home does not recompose for them.
+ */
+class HomeTabs(val tabs: List<TabSessionState>) {
+    override fun equals(other: Any?): Boolean =
+        other is HomeTabs && tabs.size == other.tabs.size &&
+            tabs.indices.all { sameForHome(tabs[it], other.tabs[it]) }
+
+    override fun hashCode(): Int = tabs.fold(tabs.size) { hash, tab -> hash * 31 + tab.id.hashCode() }
+
+    private fun sameForHome(a: TabSessionState, b: TabSessionState): Boolean =
+        a.id == b.id && a.content.url == b.content.url && a.content.title == b.content.title &&
+            a.content.icon == b.content.icon && a.contextId == b.contextId && a.isAwake == b.isAwake
+}
+
 /** The page's title, or the name of its site when the page has no title of its own. */
 val TabSessionState.displayTitle: String
     get() = pageLabel(content.title, content.url)

@@ -54,6 +54,7 @@ import org.mozilla.fenix.dejavu.discover.NewThing
 import org.mozilla.fenix.dejavu.discover.NewThings
 import org.mozilla.fenix.dejavu.discover.newDot
 import org.mozilla.fenix.dejavu.discover.rememberUnseenNewThings
+import org.mozilla.fenix.dejavu.settings.SidebarLook
 import org.mozilla.fenix.dejavu.ui.DejavuDialog
 import org.mozilla.fenix.dejavu.ui.DejavuDialogButton
 import org.mozilla.fenix.dejavu.ui.DejavuDropdownMenu
@@ -112,6 +113,7 @@ private var windowSecuredHere = false
  */
 @Composable
 internal fun PrivateWorkspacePage(
+    look: SidebarLook,
     tabs: List<TabSessionState>,
     selectedTabId: String?,
     onTabClick: (TabSessionState) -> Unit,
@@ -275,6 +277,7 @@ internal fun PrivateWorkspacePage(
                     onClick = { onTabClick(tab) },
                     isPrivate = true,
                     icon = tab.content.icon,
+                    look = look,
                     modifier = Modifier
                         .animateItem(fadeInSpec = null, placementSpec = placement, fadeOutSpec = null)
                         .motionRow(motions, tab.id)

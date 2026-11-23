@@ -14,11 +14,22 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
+        <!-- Dejavu: the tab sidebar on large windows, empty (0dp wide) unless BaseBrowserFragment sets its content. -->
+        <androidx.compose.ui.platform.ComposeView
+            android:id="@+id/tabSidebar"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
         <androidx.coordinatorlayout.widget.CoordinatorLayout
             android:id="@+id/browserLayout"
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="0dp"
             app:layout_constraintHeight_min="1dp"
+            app:layout_constraintStart_toEndOf="@id/tabSidebar"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             tools:context="browser.BrowserFragment">
@@ -119,6 +130,18 @@
                 android:layout_height="wrap_content" />
 
         </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+        <!-- Dejavu: rounds the page corners next to the docked sidebar, shown by BaseBrowserFragment. -->
+        <androidx.compose.ui.platform.ComposeView
+            android:id="@+id/pageCorners"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:visibility="gone"
+            android:importantForAccessibility="noHideDescendants"
+            app:layout_constraintStart_toStartOf="@id/browserLayout"
+            app:layout_constraintEnd_toEndOf="@id/browserLayout"
+            app:layout_constraintTop_toTopOf="@id/browserLayout"
+            app:layout_constraintBottom_toBottomOf="@id/browserLayout" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

@@ -18,6 +18,8 @@ import androidx.compose.runtime.MutableState
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
+import androidx.compose.ui.input.pointer.PointerEventType
+import androidx.compose.ui.input.pointer.pointerInput
 import androidx.compose.ui.platform.ComposeView
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
@@ -138,11 +140,13 @@ object DejavuMouse {
         if (!components.settings.isMouseSupportEnabled) return
         val hovered = mutableStateOf<Hovered?>(null)
         val pill = ComposeView(fragment.requireContext()).apply {
-            setContent { FirefoxTheme { AddressPill(hovered) } }
+            // Like on a computer, the pill moves to the other corner when the mouse reaches it, so it never covers
+            // the link it shows the address of.
+            setContent { FirefoxTheme { AddressPill(hovered, onMouseOver = { this@apply.switchCorner() }) } }
             layoutParams = CoordinatorLayout.LayoutParams(
                 ViewGroup.LayoutParams.WRAP_CONTENT,
                 ViewGroup.LayoutParams.WRAP_CONTENT,
-            ).apply { gravity = Gravity.BOTTOM or Gravity.START }
+            ).apply { gravity = PILL_CORNER }
         }
         browserLayout.addView(pill)
 
@@ -158,6 +162,7 @@ object DejavuMouse {
                             hovered.value = Hovered(url, tab.id)
                         } else {
                             hovered.value = null
+                            pill.updateLayoutParams<CoordinatorLayout.LayoutParams> { gravity = PILL_CORNER }
                         }
                     }
                     val onOpen = { url: String, source: EngineSession? ->
@@ -176,6 +181,13 @@ object DejavuMouse {
         )
     }
 
+    /** Moves [this] pill to the bottom corner it is not in. */
+    private fun View.switchCorner() = updateLayoutParams<CoordinatorLayout.LayoutParams> {
+        gravity = if (gravity == PILL_CORNER) Gravity.BOTTOM or Gravity.END else PILL_CORNER
+    }
+
+    private const val PILL_CORNER = Gravity.BOTTOM or Gravity.START
+
     /** What the started fragment does with the messages of the pages. */
     private class Callbacks(val onHover: (String, EngineSession?) -> Unit, val onOpen: (String, EngineSession?) -> Unit)
 
@@ -184,7 +196,7 @@ object DejavuMouse {
 
     /** The address of the hovered link, in the colors of its tab's workspace, like the bars around the page. */
     @Composable
-    private fun AddressPill(hovered: MutableState<Hovered?>) {
+    private fun AddressPill(hovered: MutableState<Hovered?>, onMouseOver: () -> Unit) {
         val shown = hovered.value ?: return
         val shape = RoundedCornerShape(8.dp)
         Text(
@@ -194,6 +206,13 @@ object DejavuMouse {
             maxLines = 1,
             overflow = TextOverflow.MiddleEllipsis,
             modifier = Modifier
+                .pointerInput(Unit) {
+                    awaitPointerEventScope {
+                        while (true) {
+                            if (awaitPointerEvent().type == PointerEventType.Enter) onMouseOver()
+                        }
+                    }
+                }
                 .padding(start = 8.dp, end = 8.dp, bottom = 8.dp)
                 .clip(shape)
                 .background(MaterialTheme.colorScheme.surface)

@@ -280,6 +280,8 @@ class MenuDialogFragment : BottomSheetDialogFragment() {
                     onEdit = { findNavController().navigate(R.id.dejavu_more_menu_graph) },
                     onDismiss = ::dismiss,
                     splitWay = DejavuMenu.splitWay(arguments),
+                    // Dejavu: the compact panel under the docked sidebar's button.
+                    anchored = DejavuMenu.anchored(arguments),
                 )
                 return@FirefoxTheme
             }

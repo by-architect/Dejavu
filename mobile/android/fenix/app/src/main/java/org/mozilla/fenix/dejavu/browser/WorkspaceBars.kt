@@ -20,7 +20,10 @@ import androidx.compose.ui.layout.onGloballyPositioned
 import androidx.compose.ui.layout.positionInWindow
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.platform.LocalView
+import androidx.compose.ui.unit.dp
+import mozilla.components.browser.state.selector.selectedTab
 import mozilla.components.lib.state.ext.observeAsComposableState
+import org.mozilla.fenix.browser.tabstrip.TabSidebarLayout
 import org.mozilla.fenix.dejavu.home.drawWorkspaceTheme
 import org.mozilla.fenix.dejavu.home.rememberGrainBrush
 import org.mozilla.fenix.dejavu.ui.popupThemeOf
@@ -45,16 +48,38 @@ internal fun shownPopupTheme(tabId: String? = null): WorkspaceTheme? {
 }
 
 /**
- * Draws [theme] over the background, the way the home screen shows the workspace: as one gradient across the whole
- * window, so each part showing it matches the others. The part becomes solid, since a see-through one would show
- * what is behind it through the theme.
+ * The colors the tab sidebar and the page corners beside it take on: [shownPopupTheme], or when it is `null` and
+ * [withOwnGradient], the gradient of the shown tab's workspace, as the home screen shows it.
  */
 @Composable
-internal fun Modifier.workspaceTheme(theme: WorkspaceTheme?): Modifier {
+internal fun shownSidebarTheme(withOwnGradient: Boolean = true): WorkspaceTheme? {
+    val popup = shownPopupTheme()
+    val context = LocalContext.current
+    val tabId by context.components.core.store.observeAsComposableState { state ->
+        state.selectedTab?.takeUnless { it.content.private }?.id
+    }
+    val workspaces by remember(context) { WorkspaceRepository.get(context) }.state.collectAsState()
+    if (popup != null || !withOwnGradient) return popup
+    val workspaceId = tabId?.let(workspaces::workspaceOf)
+    return workspaces.workspaces.firstOrNull { it.id == workspaceId }?.theme
+}
+
+/** [shownSidebarTheme] while the tab sidebar is docked, so the menus opened from it match, else [shownPopupTheme]. */
+@Composable
+internal fun shownMenuTheme(): WorkspaceTheme? =
+    shownSidebarTheme(withOwnGradient = TabSidebarLayout.occupiedWidth > 0.dp)
+
+/**
+ * Draws [theme] over the background, the way the home screen shows the workspace: as one gradient across the whole
+ * window, so each part showing it matches the others. The part becomes solid, since a see-through one would show
+ * what is behind it through the theme, unless [baseAlpha] is below 1.
+ */
+@Composable
+internal fun Modifier.workspaceTheme(theme: WorkspaceTheme?, baseAlpha: Float = 1f): Modifier {
     if (theme == null) return this
     val grain = rememberGrainBrush()
     val root = LocalView.current.rootView
-    val base = MaterialTheme.colorScheme.surface.copy(alpha = 1f)
+    val base = MaterialTheme.colorScheme.surface.copy(alpha = baseAlpha)
     var origin by remember { mutableStateOf(Offset.Zero) }
     return onGloballyPositioned { origin = it.positionInWindow() }
         .drawBehind {
