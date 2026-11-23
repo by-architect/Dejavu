@@ -626,6 +626,9 @@
     <string name="dejavu_loading_colors_workspace_summary">Los colores del espaciu de trabayu de la llingüeta. Les llingüetes privaes y los espacios de trabayu ensin colores amuesen l\'arcu iris.</string>
     <string name="dejavu_loading_colors_custom">Colores personalizaos</string>
     <string name="dejavu_loading_colors_custom_summary">Escueyi hasta trés colores. Toca otra vegada pa camudalos.</string>
-    <string name="dejavu_settings_swipe_to_close">Eslizar les llingüetes pa zarrales</string>
-    <string name="dejavu_settings_swipe_to_close_summary">Na pantalla d\'aniciu, eslizar una llingüeta de llau zárrala. Pa cambiar d\'espaciu de trabayu, esliza fuera de les llingüetes o usa la barra d\'espacios de trabayu.</string>
+    <string name="dejavu_settings_swipe_actions">Aiciones al eslizar</string>
+    <string name="dejavu_settings_swipe_actions_hint">Escueyi lo que fai eslizar una llingüeta na pantalla d\'aniciu. Eslizar fuera de les llingüetes cambia siempre d\'espaciu de trabayu.</string>
+    <string name="dejavu_settings_swipe_right">Eslizar a la drecha</string>
+    <string name="dejavu_settings_swipe_left">Eslizar a la izquierda</string>
+    <string name="dejavu_settings_swipe_switch_workspaces">Cambiar d\'espaciu de trabayu</string>
 </resources>

@@ -626,6 +626,9 @@
     <string name="dejavu_loading_colors_workspace_summary">የትሩ የስራ ቦታ ቀለሞች። የግል ትሮች እና ቀለም የሌላቸው የስራ ቦታዎች ቀስተ ደመናውን ያሳያሉ።</string>
     <string name="dejavu_loading_colors_custom">ብጁ ቀለሞች</string>
     <string name="dejavu_loading_colors_custom_summary">እስከ ሦስት ቀለሞች ይምረጡ። ለመቀየር እንደገና መታ ያድርጉ።</string>
-    <string name="dejavu_settings_swipe_to_close">ለመዝጋት ትሮችን ያንሸራትቱ</string>
-    <string name="dejavu_settings_swipe_to_close_summary">በመነሻ ማያ ገጹ ላይ ትርን ወደ ጎን ማንሸራተት ይዘጋዋል። የስራ ቦታዎችን ለመቀየር ከትሮቹ ውጭ ያንሸራትቱ ወይም የስራ ቦታዎች አሞሌን ይጠቀሙ።</string>
+    <string name="dejavu_settings_swipe_actions">የማንሸራተት እርምጃዎች</string>
+    <string name="dejavu_settings_swipe_actions_hint">በመነሻ ማያ ገጹ ላይ ትርን ማንሸራተት ምን እንደሚያደርግ ይምረጡ። ከትሮቹ ውጭ ማንሸራተት ሁልጊዜ የስራ ቦታዎችን ይቀይራል።</string>
+    <string name="dejavu_settings_swipe_right">ወደ ቀኝ ያንሸራትቱ</string>
+    <string name="dejavu_settings_swipe_left">ወደ ግራ ያንሸራትቱ</string>
+    <string name="dejavu_settings_swipe_switch_workspaces">የስራ ቦታዎችን ቀይር</string>
 </resources>

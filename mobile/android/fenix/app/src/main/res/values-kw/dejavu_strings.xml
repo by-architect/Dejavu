@@ -658,6 +658,9 @@
     <string name="dejavu_loading_colors_workspace_summary">Liwyow tyller-ober an tab. Tabow privedh ha tylleryow-ober heb liwyow a dhiskwedh an gammneves.</string>
     <string name="dejavu_loading_colors_custom">Liwyow personel</string>
     <string name="dejavu_loading_colors_custom_summary">Dewisewgh bys yn tri liw. Tappyewgh arta dh\'aga chanjya.</string>
-    <string name="dejavu_settings_swipe_to_close">Skubel tabow rag aga degea</string>
-    <string name="dejavu_settings_swipe_to_close_summary">War an skrin tre, skubel tab a-denewen a\'n degea. Rag chanjya tyller-ober, skubel yn-mes a\'n tabow po usya an barr tyleryow-ober.</string>
+    <string name="dejavu_settings_swipe_actions">Oberennow skubel</string>
+    <string name="dejavu_settings_swipe_actions_hint">Dewis pyth a wra skubel tab war an skrin tre. Skubel yn-mes a\'n tabow a janj tyller-ober pupprys.</string>
+    <string name="dejavu_settings_swipe_right">Skubel dhe\'n dyhow</string>
+    <string name="dejavu_settings_swipe_left">Skubel dhe\'n kledh</string>
+    <string name="dejavu_settings_swipe_switch_workspaces">Chanjya tyller-ober</string>
 </resources>

@@ -626,6 +626,9 @@
     <string name="dejavu_loading_colors_workspace_summary">Fitxaren laneremuaren koloreak. Fitxa pribatuek eta kolorerik gabeko laneremuek ostadarra erakusten dute.</string>
     <string name="dejavu_loading_colors_custom">Kolore pertsonalizatuak</string>
     <string name="dejavu_loading_colors_custom_summary">Aukeratu gehienez hiru kolore. Sakatu berriro aldatzeko.</string>
-    <string name="dejavu_settings_swipe_to_close">Pasatu fitxak ixteko</string>
-    <string name="dejavu_settings_swipe_to_close_summary">Hasierako pantailan, fitxa bat alboetara pasatzen baduzu, itxi egiten da. Laneremuz aldatzeko, pasatu hatza fitxetatik kanpo edo erabili laneremuen barra.</string>
+    <string name="dejavu_settings_swipe_actions">Pasatze-ekintzak</string>
+    <string name="dejavu_settings_swipe_actions_hint">Aukeratu zer egiten duen hasierako pantailan fitxa bat pasatzeak. Fitxetatik kanpo pasatzeak beti aldatzen du laneremuz.</string>
+    <string name="dejavu_settings_swipe_right">Pasatu eskuinera</string>
+    <string name="dejavu_settings_swipe_left">Pasatu ezkerrera</string>
+    <string name="dejavu_settings_swipe_switch_workspaces">Aldatu laneremuz</string>
 </resources>

@@ -634,6 +634,9 @@
     <string name="dejavu_loading_colors_workspace_summary">Boje radnog prostora kartice. Privatne kartice i radni prostori bez boja prikazuju dugu.</string>
     <string name="dejavu_loading_colors_custom">Prilagođene boje</string>
     <string name="dejavu_loading_colors_custom_summary">Odaberite do tri boje. Dodirnite ponovno da ih promijenite.</string>
-    <string name="dejavu_settings_swipe_to_close">Zatvaranje kartica povlačenjem</string>
-    <string name="dejavu_settings_swipe_to_close_summary">Na početnoj stranici povlačenje kartice ulijevo ili udesno zatvara je. Za prebacivanje radnih prostora povucite izvan kartica ili upotrijebite traku radnih prostora.</string>
+    <string name="dejavu_settings_swipe_actions">Radnje povlačenja</string>
+    <string name="dejavu_settings_swipe_actions_hint">Odaberite što radi povlačenje kartice na početnoj stranici. Povlačenje izvan kartica uvijek mijenja radni prostor.</string>
+    <string name="dejavu_settings_swipe_right">Povlačenje udesno</string>
+    <string name="dejavu_settings_swipe_left">Povlačenje ulijevo</string>
+    <string name="dejavu_settings_swipe_switch_workspaces">Promjena radnog prostora</string>
 </resources>

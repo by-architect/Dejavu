@@ -626,6 +626,9 @@
     <string name="dejavu_loading_colors_workspace_summary">Les couleurs de l\'espace de l\'onglet. Les onglets privés et les espaces sans couleurs affichent l\'arc-en-ciel.</string>
     <string name="dejavu_loading_colors_custom">Couleurs personnalisées</string>
     <string name="dejavu_loading_colors_custom_summary">Choisis jusqu\'à trois couleurs. Touche à nouveau pour les modifier.</string>
-    <string name="dejavu_settings_swipe_to_close">Glisser pour fermer les onglets</string>
-    <string name="dejavu_settings_swipe_to_close_summary">Sur la page d’accueil, faire glisser un onglet sur le côté le ferme. Pour changer d’espace, fais glisser en dehors des onglets ou utilise la barre des espaces.</string>
+    <string name="dejavu_settings_swipe_actions">Actions de glissement</string>
+    <string name="dejavu_settings_swipe_actions_hint">Choisis ce que fait le glissement d’un onglet sur la page d’accueil. Faire glisser en dehors des onglets change toujours d’espace.</string>
+    <string name="dejavu_settings_swipe_right">Glisser vers la droite</string>
+    <string name="dejavu_settings_swipe_left">Glisser vers la gauche</string>
+    <string name="dejavu_settings_swipe_switch_workspaces">Changer d’espace</string>
 </resources>

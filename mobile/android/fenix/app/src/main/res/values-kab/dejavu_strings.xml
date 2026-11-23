@@ -626,6 +626,9 @@
     <string name="dejavu_loading_colors_workspace_summary">Initen n wamkan n umahil n yiccer. Iccaren uslig d yimukan n umahil war initen sseknen-d tislit n wenzar.</string>
     <string name="dejavu_loading_colors_custom">Initen udmawanen</string>
     <string name="dejavu_loading_colors_custom_summary">Fren alamma d kraḍ n yini. Sit tikkelt-nniḍen akken ad ten-tbeddleḍ.</string>
-    <string name="dejavu_settings_swipe_to_close">Zuɣer iccaren akken ad ten-tmedleḍ</string>
-    <string name="dejavu_settings_swipe_to_close_summary">Deg ugdil agejdan, ma tzuɣreḍ iccer ɣer yidis, ad yemdel. I ubeddel n umkan n umahil, zuɣer beṛṛa n yiccaren neɣ seqdec afeggag n yimukan n umahil.</string>
+    <string name="dejavu_settings_swipe_actions">Tigawin n uzuɣer</string>
+    <string name="dejavu_settings_swipe_actions_hint">Fren ayen ara yeg uzuɣer n yiccer deg ugdil agejdan. Azuɣer beṛṛa n yiccaren ad ibeddel yal tikkelt amkan n umahil.</string>
+    <string name="dejavu_settings_swipe_right">Zuɣer ɣer yefus</string>
+    <string name="dejavu_settings_swipe_left">Zuɣer ɣer zelmeḍ</string>
+    <string name="dejavu_settings_swipe_switch_workspaces">Beddel amkan n umahil</string>
 </resources>

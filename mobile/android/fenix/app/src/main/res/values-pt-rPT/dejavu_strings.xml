@@ -634,6 +634,9 @@
     <string name="dejavu_loading_colors_workspace_summary">As cores do espaço de trabalho do separador. Os separadores privados e os espaços de trabalho sem cores mostram o arco-íris.</string>
     <string name="dejavu_loading_colors_custom">Cores personalizadas</string>
     <string name="dejavu_loading_colors_custom_summary">Escolhe até três cores. Toca novamente para as alterar.</string>
-    <string name="dejavu_settings_swipe_to_close">Deslizar separadores para fechar</string>
-    <string name="dejavu_settings_swipe_to_close_summary">Na página inicial, deslizar um separador para o lado fecha-o. Para mudar de espaço de trabalho, desliza fora dos separadores ou usa a barra de espaços de trabalho.</string>
+    <string name="dejavu_settings_swipe_actions">Ações ao deslizar</string>
+    <string name="dejavu_settings_swipe_actions_hint">Escolhe o que faz deslizar um separador na página inicial. Deslizar fora dos separadores muda sempre de espaço de trabalho.</string>
+    <string name="dejavu_settings_swipe_right">Deslizar para a direita</string>
+    <string name="dejavu_settings_swipe_left">Deslizar para a esquerda</string>
+    <string name="dejavu_settings_swipe_switch_workspaces">Mudar de espaço de trabalho</string>
 </resources>

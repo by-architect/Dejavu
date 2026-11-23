@@ -618,6 +618,9 @@
     <string name="dejavu_loading_colors_workspace_summary">탭이 속한 작업 공간의 색상입니다. 사생활 보호 탭과 색상이 없는 작업 공간에서는 무지개가 표시됩니다.</string>
     <string name="dejavu_loading_colors_custom">사용자 지정 색상</string>
     <string name="dejavu_loading_colors_custom_summary">최대 3가지 색상을 선택하세요. 다시 탭하면 바꿀 수 있습니다.</string>
-    <string name="dejavu_settings_swipe_to_close">스와이프해 탭 닫기</string>
-    <string name="dejavu_settings_swipe_to_close_summary">홈 화면에서 탭을 옆으로 스와이프하면 탭이 닫힙니다. 작업 공간을 전환하려면 탭 바깥을 스와이프하거나 작업 공간 표시줄을 사용하세요.</string>
+    <string name="dejavu_settings_swipe_actions">스와이프 작업</string>
+    <string name="dejavu_settings_swipe_actions_hint">홈 화면에서 탭을 스와이프하면 어떤 작업을 할지 선택하세요. 탭 바깥을 스와이프하면 항상 작업 공간이 전환됩니다.</string>
+    <string name="dejavu_settings_swipe_right">오른쪽으로 스와이프</string>
+    <string name="dejavu_settings_swipe_left">왼쪽으로 스와이프</string>
+    <string name="dejavu_settings_swipe_switch_workspaces">작업 공간 전환</string>
 </resources>

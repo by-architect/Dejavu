@@ -626,6 +626,9 @@
     <string name="dejavu_loading_colors_workspace_summary">Цветовете на работното пространство на раздела. Поверителните раздели и пространствата без цветове показват дъгата.</string>
     <string name="dejavu_loading_colors_custom">Цветове по избор</string>
     <string name="dejavu_loading_colors_custom_summary">Изберете до три цвята. Докоснете отново, за да ги промените.</string>
-    <string name="dejavu_settings_swipe_to_close">Затваряне на раздели с плъзгане</string>
-    <string name="dejavu_settings_swipe_to_close_summary">На началния екран плъзгането на раздел настрани го затваря. За да смените работното пространство, плъзнете извън разделите или използвайте лентата с работните пространства.</string>
+    <string name="dejavu_settings_swipe_actions">Действия при плъзгане</string>
+    <string name="dejavu_settings_swipe_actions_hint">Изберете какво прави плъзгането на раздел на началния екран. Плъзгането извън разделите винаги сменя работното пространство.</string>
+    <string name="dejavu_settings_swipe_right">Плъзгане надясно</string>
+    <string name="dejavu_settings_swipe_left">Плъзгане наляво</string>
+    <string name="dejavu_settings_swipe_switch_workspaces">Смяна на работното пространство</string>
 </resources>

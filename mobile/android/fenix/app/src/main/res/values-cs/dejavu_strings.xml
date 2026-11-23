@@ -642,6 +642,9 @@
     <string name="dejavu_loading_colors_workspace_summary">Barvy pracovního prostoru panelu. Anonymní panely a pracovní prostory bez barev zobrazují duhu.</string>
     <string name="dejavu_loading_colors_custom">Vlastní barvy</string>
     <string name="dejavu_loading_colors_custom_summary">Vyberte až tři barvy. Dalším klepnutím je změníte.</string>
-    <string name="dejavu_settings_swipe_to_close">Zavírání panelů přejetím</string>
-    <string name="dejavu_settings_swipe_to_close_summary">Na domovské stránce zavřete panel přejetím do strany. Pracovní prostor přepnete přejetím mimo panely nebo pomocí lišty pracovních prostorů.</string>
+    <string name="dejavu_settings_swipe_actions">Akce přejetí</string>
+    <string name="dejavu_settings_swipe_actions_hint">Vyberte, co udělá přejetí po panelu na domovské stránce. Přejetí mimo panely vždy přepne pracovní prostor.</string>
+    <string name="dejavu_settings_swipe_right">Přejetí doprava</string>
+    <string name="dejavu_settings_swipe_left">Přejetí doleva</string>
+    <string name="dejavu_settings_swipe_switch_workspaces">Přepnout pracovní prostor</string>
 </resources>

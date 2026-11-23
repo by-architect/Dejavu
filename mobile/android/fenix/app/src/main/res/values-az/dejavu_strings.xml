@@ -626,6 +626,9 @@
     <string name="dejavu_loading_colors_workspace_summary">Vərəqin iş sahəsinin rəngləri. Məxfi vərəqlər və rəngsiz iş sahələri göy qurşağını göstərir.</string>
     <string name="dejavu_loading_colors_custom">Xüsusi rənglər</string>
     <string name="dejavu_loading_colors_custom_summary">Üç rəngə qədər seçin. Dəyişmək üçün yenidən toxunun.</string>
-    <string name="dejavu_settings_swipe_to_close">Vərəqləri sürüşdürərək bağla</string>
-    <string name="dejavu_settings_swipe_to_close_summary">Ana ekranda vərəqi yana sürüşdürmək onu bağlayır. İş sahələri arasında keçmək üçün vərəqlərdən kənarda sürüşdürün və ya iş sahələri panelindən istifadə edin.</string>
+    <string name="dejavu_settings_swipe_actions">Sürüşdürmə əməliyyatları</string>
+    <string name="dejavu_settings_swipe_actions_hint">Ana ekranda vərəqi sürüşdürməyin nə edəcəyini seçin. Vərəqlərdən kənarda sürüşdürmək həmişə iş sahələri arasında keçir.</string>
+    <string name="dejavu_settings_swipe_right">Sağa sürüşdür</string>
+    <string name="dejavu_settings_swipe_left">Sola sürüşdür</string>
+    <string name="dejavu_settings_swipe_switch_workspaces">İş sahələri arasında keç</string>
 </resources>

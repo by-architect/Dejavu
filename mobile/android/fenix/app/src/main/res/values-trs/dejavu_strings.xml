@@ -626,6 +626,9 @@
     <string name="dejavu_loading_colors_workspace_summary">Los colores del espacio de trabajo de la pestaña. Las pestañas huìt y los espacios de trabajo sin colores muestran el arcoíris.</string>
     <string name="dejavu_loading_colors_custom">Colores personalizados</string>
     <string name="dejavu_loading_colors_custom_summary">Elige hasta tres colores. Tócalo de nuevo para cambiarlos.</string>
-    <string name="dejavu_settings_swipe_to_close">Deslizar rakïj ñanj para cerrarlas</string>
-    <string name="dejavu_settings_swipe_to_close_summary">En la página de inicio, deslizar una rakïj ñanj hacia un lado la cierra. Para cambiar de espacio de trabajo, desliza fuera de las rakïj ñanj o usa la barra de espacios de trabajo.</string>
+    <string name="dejavu_settings_swipe_actions">Acciones al deslizar</string>
+    <string name="dejavu_settings_swipe_actions_hint">Elige qué hace deslizar una rakïj ñanj en la página de inicio. Deslizar fuera de las rakïj ñanj siempre cambia de espacio de trabajo.</string>
+    <string name="dejavu_settings_swipe_right">Deslizar hacia la derecha</string>
+    <string name="dejavu_settings_swipe_left">Deslizar hacia la izquierda</string>
+    <string name="dejavu_settings_swipe_switch_workspaces">Cambiar de espacio de trabajo</string>
 </resources>

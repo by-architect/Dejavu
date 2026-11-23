@@ -626,6 +626,9 @@
     <string name="dejavu_loading_colors_workspace_summary">Bettiń jumıs maydanınıń reńleri. Jeke betler hám reńsiz jumıs maydanları kempirqosaqtı kórsetedi.</string>
     <string name="dejavu_loading_colors_custom">Arnawlı reńler</string>
     <string name="dejavu_loading_colors_custom_summary">Úshke shekem reń tańlań. Ózgertiw ushın qayta basıń.</string>
-    <string name="dejavu_settings_swipe_to_close">Betlerdi sırǵıtıp jabıw</string>
-    <string name="dejavu_settings_swipe_to_close_summary">Bas ekranda betti qaptalǵa sırǵıtsańız, ol jabıladı. Jumıs maydanların almastırıw ushın betlerden tıs jerde sırǵıtıń yamasa jumıs maydanları panelin paydalanıń.</string>
+    <string name="dejavu_settings_swipe_actions">Sırǵıtıw áreketleri</string>
+    <string name="dejavu_settings_swipe_actions_hint">Bas ekranda betti sırǵıtqanda ne bolatuǵının saylań. Betlerden tıs jerde sırǵıtıw árqashan jumıs maydanın almastıradı.</string>
+    <string name="dejavu_settings_swipe_right">Ońǵa sırǵıtıw</string>
+    <string name="dejavu_settings_swipe_left">Shepke sırǵıtıw</string>
+    <string name="dejavu_settings_swipe_switch_workspaces">Jumıs maydanın almastırıw</string>
 </resources>

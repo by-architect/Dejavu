@@ -618,6 +618,9 @@
     <string name="dejavu_loading_colors_workspace_summary">タブのワークスペースの色です。プライベートタブや色のないワークスペースでは虹色になります。</string>
     <string name="dejavu_loading_colors_custom">カスタムカラー</string>
     <string name="dejavu_loading_colors_custom_summary">最大 3 色を選択します。もう一度タップすると変更できます。</string>
-    <string name="dejavu_settings_swipe_to_close">スワイプでタブを閉じる</string>
-    <string name="dejavu_settings_swipe_to_close_summary">ホーム画面でタブを横にスワイプすると、そのタブを閉じます。ワークスペースを切り替えるには、タブの外側をスワイプするか、ワークスペースのバーを使用します。</string>
+    <string name="dejavu_settings_swipe_actions">スワイプ操作</string>
+    <string name="dejavu_settings_swipe_actions_hint">ホーム画面でタブをスワイプしたときの動作を選びます。タブの外側をスワイプすると、常にワークスペースを切り替えます。</string>
+    <string name="dejavu_settings_swipe_right">右にスワイプ</string>
+    <string name="dejavu_settings_swipe_left">左にスワイプ</string>
+    <string name="dejavu_settings_swipe_switch_workspaces">ワークスペースを切り替え</string>
 </resources>

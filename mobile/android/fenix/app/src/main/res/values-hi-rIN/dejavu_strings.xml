@@ -659,6 +659,9 @@
     <string name="dejavu_loading_colors_workspace_summary">टैब के वर्कस्पेस के कलर। प्राइवेट टैब और बिना कलर वाले वर्कस्पेस इंद्रधनुष दिखाते हैं।</string>
     <string name="dejavu_loading_colors_custom">कस्टम कलर</string>
     <string name="dejavu_loading_colors_custom_summary">तीन तक कलर चुनें। बदलने के लिए फिर से टैप करें।</string>
-    <string name="dejavu_settings_swipe_to_close">टैब बंद करने के लिए स्वाइप करें</string>
-    <string name="dejavu_settings_swipe_to_close_summary">होम स्क्रीन पर किसी टैब को दाएं-बाएं स्वाइप करने से वह बंद हो जाता है। वर्कस्पेस बदलने के लिए टैब के बाहर स्वाइप करें या वर्कस्पेस बार इस्तेमाल करें।</string>
+    <string name="dejavu_settings_swipe_actions">स्वाइप ऐक्शन</string>
+    <string name="dejavu_settings_swipe_actions_hint">चुनें कि होम स्क्रीन पर किसी टैब को स्वाइप करने से क्या हो। टैब के बाहर स्वाइप करने से हमेशा वर्कस्पेस बदलता है।</string>
+    <string name="dejavu_settings_swipe_right">दाएं स्वाइप करें</string>
+    <string name="dejavu_settings_swipe_left">बाएं स्वाइप करें</string>
+    <string name="dejavu_settings_swipe_switch_workspaces">वर्कस्पेस बदलें</string>
 </resources>

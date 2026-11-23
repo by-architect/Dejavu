@@ -626,6 +626,9 @@
     <string name="dejavu_loading_colors_workspace_summary">Беттің жұмыс кеңістігінің түстері. Жекелік беттер мен түссіз жұмыс кеңістіктері кемпірқосақты көрсетеді.</string>
     <string name="dejavu_loading_colors_custom">Таңдауыңызша түстер</string>
     <string name="dejavu_loading_colors_custom_summary">Үш түске дейін таңдаңыз. Өзгерту үшін қайта түртіңіз.</string>
-    <string name="dejavu_settings_swipe_to_close">Беттерді сырғытып жабу</string>
-    <string name="dejavu_settings_swipe_to_close_summary">Басты бетте бетті солға не оңға сырғытсаңыз, ол жабылады. Жұмыс кеңістігін ауыстыру үшін беттерден тыс жерде сырғытыңыз немесе жұмыс кеңістіктері жолағын қолданыңыз.</string>
+    <string name="dejavu_settings_swipe_actions">Сырғыту әрекеттері</string>
+    <string name="dejavu_settings_swipe_actions_hint">Басты бетте бетті сырғытқанда не болатынын таңдаңыз. Беттерден тыс жерде сырғыту әрқашан жұмыс кеңістігін ауыстырады.</string>
+    <string name="dejavu_settings_swipe_right">Оңға сырғыту</string>
+    <string name="dejavu_settings_swipe_left">Солға сырғыту</string>
+    <string name="dejavu_settings_swipe_switch_workspaces">Жұмыс кеңістігін ауыстыру</string>
 </resources>

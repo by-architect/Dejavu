@@ -618,6 +618,9 @@
     <string name="dejavu_loading_colors_workspace_summary">Àwọ̀ ibi-iṣẹ́ táàbù náà. Àwọn táàbù ìkọ̀kọ̀ àti àwọn ibi-iṣẹ́ tí kò ní àwọ̀ máa ń fi òṣùmàrè hàn.</string>
     <string name="dejavu_loading_colors_custom">Àwọ̀ àdáni</string>
     <string name="dejavu_loading_colors_custom_summary">Yan tó àwọ̀ mẹ́ta. Tẹ̀ ẹ́ lẹ́ẹ̀kan sí i láti yí wọn padà.</string>
-    <string name="dejavu_settings_swipe_to_close">Ra àwọn táàbù láti pa wọ́n dé</string>
-    <string name="dejavu_settings_swipe_to_close_summary">Lórí ojú ìwé ìbẹ̀rẹ̀, ríra táàbù kan sí ẹ̀gbẹ́ yóò pa á dé. Láti yí ibi-iṣẹ́ padà, ra ní ìta àwọn táàbù tàbí lo ọ̀pá ibi-iṣẹ́.</string>
+    <string name="dejavu_settings_swipe_actions">Àwọn iṣe ríra</string>
+    <string name="dejavu_settings_swipe_actions_hint">Yan ohun tí ríra táàbù kan lórí ojú ìwé ìbẹ̀rẹ̀ yóò ṣe. Ríra ní ìta àwọn táàbù máa ń yí ibi-iṣẹ́ padà nígbà gbogbo.</string>
+    <string name="dejavu_settings_swipe_right">Ra sí ọ̀tún</string>
+    <string name="dejavu_settings_swipe_left">Ra sí òsì</string>
+    <string name="dejavu_settings_swipe_switch_workspaces">Yí ibi-iṣẹ́ padà</string>
 </resources>

@@ -626,6 +626,9 @@
     <string name="dejavu_loading_colors_workspace_summary">د ټب د ساحې رنګونه. شخصي ټبونه او بې رنګه ساحې شنه زرغونه ښيي.</string>
     <string name="dejavu_loading_colors_custom">دودیز رنګونه</string>
     <string name="dejavu_loading_colors_custom_summary">تر درېیو رنګونو پورې وټاکئ. د بدلولو لپاره بیا ټک وهئ.</string>
-    <string name="dejavu_settings_swipe_to_close">د بندولو لپاره ټبونه کش کړئ</string>
-    <string name="dejavu_settings_swipe_to_close_summary">په کور پرده کې، ټب یوې خوا ته کشول یې بندوي. د ساحې د بدلولو لپاره له ټبونو بهر کش کړئ یا د ساحو نوار وکاروئ.</string>
+    <string name="dejavu_settings_swipe_actions">د کشولو کړنې</string>
+    <string name="dejavu_settings_swipe_actions_hint">وټاکئ چې په کور پرده کې د ټب کشول څه کوي. له ټبونو بهر کشول تل ساحه بدلوي.</string>
+    <string name="dejavu_settings_swipe_right">ښي لور ته کش کړئ</string>
+    <string name="dejavu_settings_swipe_left">کیڼ لور ته کش کړئ</string>
+    <string name="dejavu_settings_swipe_switch_workspaces">ساحه بدل کړئ</string>
 </resources>

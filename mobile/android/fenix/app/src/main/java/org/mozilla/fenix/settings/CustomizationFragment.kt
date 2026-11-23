@@ -176,7 +176,6 @@ open class CustomizationFragment : PreferenceFragmentCompat(), SystemInsetsPadde
         setupMatchPageColorSwitch()
         setupHomeSearchCategory()
         setupSystemBarsSwitch()
-        setupSwipeToCloseSwitch()
 
         // if tab strip is enabled, swipe toolbar to switch tabs should not be enabled so the
         // preference is not shown
@@ -421,18 +420,6 @@ open class CustomizationFragment : PreferenceFragmentCompat(), SystemInsetsPadde
             isChecked = dejavuSettings.matchPageColor.value
             onPreferenceChangeListener = Preference.OnPreferenceChangeListener { _, newValue ->
                 dejavuSettings.setMatchPageColor(newValue == true)
-                true
-            }
-        }
-    }
-
-    /** Swiping tabs closed on the home screen, which Dejavu's own settings keep. */
-    private fun setupSwipeToCloseSwitch() {
-        val dejavuSettings = dejavuSettings()
-        requirePreference<SwitchPreferenceCompat>(R.string.pref_key_dejavu_swipe_to_close).apply {
-            isChecked = dejavuSettings.swipeToClose.value
-            onPreferenceChangeListener = Preference.OnPreferenceChangeListener { _, newValue ->
-                dejavuSettings.setSwipeToClose(newValue == true)
                 true
             }
         }

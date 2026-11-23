@@ -101,6 +101,7 @@ import org.mozilla.fenix.R
 import org.mozilla.fenix.components.appstate.AppAction.PrivateBrowsingLockAction
 import org.mozilla.fenix.dejavu.actions.CustomAction
 import org.mozilla.fenix.dejavu.actions.RowAction
+import org.mozilla.fenix.dejavu.actions.SwipeActions
 import org.mozilla.fenix.dejavu.actions.TabAction
 import org.mozilla.fenix.dejavu.actions.forSplitWays
 import org.mozilla.fenix.dejavu.actions.icon
@@ -249,7 +250,7 @@ interface DejavuHomeInteractor : TabEditor {
  * unlocks them, which asks by itself once they are turned to.
  * While a search screen is open over it ([searching]), the system bars' icons follow the theme, see
  * [SystemBarIconsOver]. The essentials show unless [essentialsShown] is off, without the [hiddenEssentials], see
- * [shownEssentials]. With [swipeToClose], swiping a tab sideways closes it.
+ * [shownEssentials]. Swiping the row of a tab runs one of the [swipeActions], the one chosen for that way.
  */
 @Suppress("LongMethod", "LongParameterList", "CognitiveComplexMethod", "CyclomaticComplexMethod")
 @Composable
@@ -277,7 +278,7 @@ fun DejavuHome(
     searching: Boolean = false,
     essentialsShown: Boolean = true,
     hiddenEssentials: Set<String> = emptySet(),
-    swipeToClose: Boolean = false,
+    swipeActions: SwipeActions = SwipeActions(),
 ) {
     // The private workspace is an extra last page, there while private tabs are open. Shown as its last tabs close, it
     // stays until they poured away and the pages turned to the workspace before it.
@@ -836,7 +837,7 @@ fun DejavuHome(
                                             }
                                         }
                                     },
-                                    swipeToClose = swipeToClose,
+                                    swipeActions = swipeActions,
                                 )
                             }
                             return@HorizontalPager
@@ -925,7 +926,7 @@ fun DejavuHome(
                                     hasDataToClear = hasDataToClear,
                                     dataPour = pour.takeIf { page == pagerState.currentPage },
                                     askedClear = askedClear.takeIf { page == pagerState.currentPage },
-                                    swipeToClose = swipeToClose,
+                                    swipeActions = swipeActions,
                                 )
                             }
                         }

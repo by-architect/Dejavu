@@ -626,6 +626,9 @@
     <string name="dejavu_loading_colors_workspace_summary">Rub\'onil rusamajib\'al ri ruwi\'. Ri ichinan taq ruwi\' chuqa\' ri samajib\'äl majun kib\'onil nikik\'ut ronojel b\'onil.</string>
     <string name="dejavu_loading_colors_custom">Taq ruyon b\'onil</string>
     <string name="dejavu_loading_colors_custom_summary">Tacha\' k\'a oxi\' b\'onil. Tachapa\' chik richin ye\'ajalwachij.</string>
-    <string name="dejavu_settings_swipe_to_close">Tajurula\' ri ruwi\' richin natz\'apij</string>
-    <string name="dejavu_settings_swipe_to_close_summary">Pa ri jay ruxaq, toq najurula\' jun ruwi\' pa ruxkut, nitz\'apitäj. Richin najäl samajib\'äl, tajurula\' akuchi\' majun ruwi\' o tawokisaj rukajtz\'ik taq samajib\'äl.</string>
+    <string name="dejavu_settings_swipe_actions">B\'anob\'äl toq najurula\'</string>
+    <string name="dejavu_settings_swipe_actions_hint">Tacha\' achike nub\'än toq najurula\' jun ruwi\' pa ri jay ruxaq. Toq najurula\' akuchi\' majun ruwi\', junelïk nujäl ri samajib\'äl.</string>
+    <string name="dejavu_settings_swipe_right">Tajurula\' pa wikiq\'ab\'</string>
+    <string name="dejavu_settings_swipe_left">Tajurula\' pa moxq\'ab\'</string>
+    <string name="dejavu_settings_swipe_switch_workspaces">Tajala\' samajib\'äl</string>
 </resources>

@@ -80,6 +80,8 @@ import mozilla.components.browser.state.state.TabSessionState
 import mozilla.components.ui.icons.R as iconsR
 import org.mozilla.fenix.R
 import org.mozilla.fenix.dejavu.actions.RowAction
+import org.mozilla.fenix.dejavu.actions.SwipeActions
+import org.mozilla.fenix.dejavu.actions.SwipeDirection
 import org.mozilla.fenix.dejavu.actions.TabAction
 import org.mozilla.fenix.dejavu.actions.icon
 import org.mozilla.fenix.dejavu.actions.label
@@ -280,7 +282,7 @@ internal fun WorkspacePage(
     hasDataToClear: Boolean = false,
     dataPour: DataPour? = null,
     askedClear: ClearData.Request? = null,
-    swipeToClose: Boolean = false,
+    swipeActions: SwipeActions = SwipeActions(),
 ) {
     val tabsById = remember(tabs) { tabs.associateBy { it.id } }
     val awakeTabIds = remember(tabs) { tabs.filter { it.isAwake }.map { it.id }.toSet() }
@@ -417,6 +419,34 @@ internal fun WorkspacePage(
             ?.takeIf { selection == null && drag == null }
             ?.let { action -> { callbacks.onRowAction(action, targets) } }
 
+    // A swipe runs the action chosen for its way, but not while rows are being picked or dragged. Closing an unpinned
+    // tab swipes its row away, with onAway, while a pinned tab's row comes back once its tab sleeps.
+    fun swipe(
+        direction: SwipeDirection,
+        targets: ActionTargets,
+        isPinned: Boolean,
+        onAway: () -> Unit = {},
+    ): SwipeOption? {
+        val configured = swipeActions.of(direction) ?: return null
+        val action = swipeAction(configured, targets, isPinned)?.takeIf { selection == null && drag == null }
+            ?: return null
+        val closes = configured == RowAction.BuiltIn(TabAction.CLOSE)
+        val ends = when {
+            closes && isPinned -> SwipeEnd.OUT_AND_BACK
+            closes -> SwipeEnd.AWAY
+            else -> SwipeEnd.BACK
+        }
+        return SwipeOption(
+            icon = configured.icon,
+            closes = closes || action == RowAction.BuiltIn(TabAction.DELETE),
+            ends = ends,
+            run = {
+                if (ends == SwipeEnd.AWAY) onAway()
+                callbacks.onRowAction(action, targets)
+            },
+        )
+    }
+
     Box(modifier = Modifier.fillMaxSize()) {
         LazyColumn(
             state = listState,
@@ -516,8 +546,8 @@ internal fun WorkspacePage(
                         onAction = { callbacks.onRowAction(it, targets) },
                         onClick = { if (drag == null) callbacks.onPinClick(item) },
                         onIconClick = resetPin?.let { action -> { if (drag == null) callbacks.onRowAction(action, targets) } },
-                        onSwipeClose = middleClick(targets, isPinned = true).takeIf { swipeToClose },
-                        staysAfterSwipe = true,
+                        swipeRight = swipe(SwipeDirection.RIGHT, targets, isPinned = true),
+                        swipeLeft = swipe(SwipeDirection.LEFT, targets, isPinned = true),
                         modifier = rowModifier
                             .tabZoomTarget(tab?.id)
                             .closeOnMiddleClick(middleClick(targets, isPinned = true)),
@@ -609,13 +639,9 @@ internal fun WorkspacePage(
                     actions = rowActions(unpinnedRowActions, targets, isPinned = false),
                     onAction = { callbacks.onRowAction(it, targets) },
                     onClick = { if (drag == null) callbacks.onTabClick(tab) },
-                    // A swiped row went away by itself, so it does not pour into its close button too.
-                    onSwipeClose = middleClick(targets, isPinned = false)?.takeIf { swipeToClose }?.let { close ->
-                        {
-                            motions.swiped(key)
-                            close()
-                        }
-                    },
+                    // A row swiped away went by itself, so it does not pour into its close button too.
+                    swipeRight = swipe(SwipeDirection.RIGHT, targets, isPinned = false) { motions.swiped(key) },
+                    swipeLeft = swipe(SwipeDirection.LEFT, targets, isPinned = false) { motions.swiped(key) },
                     modifier = rowModifier
                         .tabZoomTarget(tab.id)
                         .closeOnMiddleClick(middleClick(targets, isPinned = false))
@@ -1372,8 +1398,8 @@ internal fun TabRow(
     onIconClick: (() -> Unit)? = null,
     isPrivate: Boolean = false,
     icon: Bitmap? = null,
-    onSwipeClose: (() -> Unit)? = null,
-    staysAfterSwipe: Boolean = false,
+    swipeRight: SwipeOption? = null,
+    swipeLeft: SwipeOption? = null,
 ) {
     val background = when {
         selection == true -> MaterialTheme.colorScheme.secondaryContainer
@@ -1386,7 +1412,7 @@ internal fun TabRow(
             .fillMaxWidth()
             .height(52.dp)
             .padding(vertical = 2.dp)
-            .swipeToClose(onSwipeClose, staysAfterSwipe)
+            .rowSwipe(swipeRight, swipeLeft)
             .clip(RowShape)
             .background(background)
             .clickable(onClick = onClick),

@@ -626,6 +626,9 @@
     <string name="dejavu_loading_colors_workspace_summary">Rengên qada hilpekînê. Hilpekînên taybet û qadên bê reng keskesorê nîşan didin.</string>
     <string name="dejavu_loading_colors_custom">Rengên taybet</string>
     <string name="dejavu_loading_colors_custom_summary">Heta sê rengan hilbijêre. Ji bo guhertinê dîsa bitikîne.</string>
-    <string name="dejavu_settings_swipe_to_close">Ji bo girtinê hilpekînan bikişîne</string>
-    <string name="dejavu_settings_swipe_to_close_summary">Li ser ekrana malê, kişandina hilpekînekê ber bi çep an rastê ve wê digire. Ji bo guhertina qadê, li derveyî hilpekînan bikişîne an darika qadan bi kar bîne.</string>
+    <string name="dejavu_settings_swipe_actions">Çalakiyên kişandinê</string>
+    <string name="dejavu_settings_swipe_actions_hint">Hilbijêre ka kişandina hilpekînekê li ser ekrana malê çi dike. Kişandina li derveyî hilpekînan her tim qadê diguherîne.</string>
+    <string name="dejavu_settings_swipe_right">Ber bi rastê bikişîne</string>
+    <string name="dejavu_settings_swipe_left">Ber bi çepê bikişîne</string>
+    <string name="dejavu_settings_swipe_switch_workspaces">Qadê biguherîne</string>
 </resources>

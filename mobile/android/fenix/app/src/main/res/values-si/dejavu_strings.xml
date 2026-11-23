@@ -626,6 +626,9 @@
     <string name="dejavu_loading_colors_workspace_summary">පටිත්තේ අවකාශයේ වර්ණ. පෞද්ගලික පටිති සහ වර්ණ නැති අවකාශ දේදුන්න පෙන්වයි.</string>
     <string name="dejavu_loading_colors_custom">අභිරුචි වර්ණ</string>
     <string name="dejavu_loading_colors_custom_summary">වර්ණ තුනක් දක්වා තෝරන්න. වෙනස් කිරීමට නැවත තට්ටු කරන්න.</string>
-    <string name="dejavu_settings_swipe_to_close">වැසීමට පටිති ස්වයිප් කරන්න</string>
-    <string name="dejavu_settings_swipe_to_close_summary">මුල් පිටුවේ, පටිත්තක් පැත්තට ස්වයිප් කිරීමෙන් එය වැසේ. අවකාශ මාරු කිරීමට, පටිතිවලින් පිටත ස්වයිප් කරන්න හෝ අවකාශ තීරුව භාවිත කරන්න.</string>
+    <string name="dejavu_settings_swipe_actions">ස්වයිප් ක්‍රියා</string>
+    <string name="dejavu_settings_swipe_actions_hint">මුල් පිටුවේ පටිත්තක් ස්වයිප් කළ විට කුමක් සිදුවිය යුතුද යන්න තෝරන්න. පටිතිවලින් පිටත ස්වයිප් කිරීම සැමවිටම අවකාශ මාරු කරයි.</string>
+    <string name="dejavu_settings_swipe_right">දකුණට ස්වයිප් කරන්න</string>
+    <string name="dejavu_settings_swipe_left">වමට ස්වයිප් කරන්න</string>
+    <string name="dejavu_settings_swipe_switch_workspaces">අවකාශ මාරු කරන්න</string>
 </resources>

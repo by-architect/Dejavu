@@ -626,6 +626,9 @@
     <string name="dejavu_loading_colors_workspace_summary">Fargane til arbeidsområdet for fana. Private faner og arbeidsområde utan fargar viser regnbogen.</string>
     <string name="dejavu_loading_colors_custom">Eigendefinerte fargar</string>
     <string name="dejavu_loading_colors_custom_summary">Vel opptil tre fargar. Trykk igjen for å endre dei.</string>
-    <string name="dejavu_settings_swipe_to_close">Sveip faner for å late dei att</string>
-    <string name="dejavu_settings_swipe_to_close_summary">På startsida lèt du att ei fane ved å sveipe ho til sida. For å byte arbeidsområde, sveip utanfor fanene eller bruk arbeidsområdelinja.</string>
+    <string name="dejavu_settings_swipe_actions">Sveipehandlingar</string>
+    <string name="dejavu_settings_swipe_actions_hint">Vel kva som skjer når du sveipar ei fane på startsida. Sveiping utanfor fanene byter alltid arbeidsområde.</string>
+    <string name="dejavu_settings_swipe_right">Sveip til høgre</string>
+    <string name="dejavu_settings_swipe_left">Sveip til venstre</string>
+    <string name="dejavu_settings_swipe_switch_workspaces">Byt arbeidsområde</string>
 </resources>

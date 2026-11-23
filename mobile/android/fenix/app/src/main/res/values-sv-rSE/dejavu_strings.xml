@@ -626,6 +626,9 @@
     <string name="dejavu_loading_colors_workspace_summary">Färgerna från flikens arbetsyta. Privata flikar och arbetsytor utan färger visar regnbågen.</string>
     <string name="dejavu_loading_colors_custom">Anpassade färger</string>
     <string name="dejavu_loading_colors_custom_summary">Välj upp till tre färger. Tryck igen för att ändra dem.</string>
-    <string name="dejavu_settings_swipe_to_close">Svep för att stänga flikar</string>
-    <string name="dejavu_settings_swipe_to_close_summary">På startskärmen stängs en flik om du sveper den i sidled. Svep utanför flikarna eller använd arbetsytefältet för att växla arbetsyta.</string>
+    <string name="dejavu_settings_swipe_actions">Svepåtgärder</string>
+    <string name="dejavu_settings_swipe_actions_hint">Välj vad som händer när du sveper en flik på startskärmen. Svep utanför flikarna växlar alltid arbetsyta.</string>
+    <string name="dejavu_settings_swipe_right">Svep åt höger</string>
+    <string name="dejavu_settings_swipe_left">Svep åt vänster</string>
+    <string name="dejavu_settings_swipe_switch_workspaces">Växla arbetsyta</string>
 </resources>

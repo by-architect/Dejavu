@@ -618,6 +618,9 @@
     <string name="dejavu_loading_colors_workspace_summary">ពណ៌នៃចន្លោះការងាររបស់ផ្ទាំង។ ផ្ទាំងឯកជន និងចន្លោះការងារគ្មានពណ៌ បង្ហាញឥន្ទធនូ។</string>
     <string name="dejavu_loading_colors_custom">ពណ៌ផ្ទាល់ខ្លួន</string>
     <string name="dejavu_loading_colors_custom_summary">ជ្រើសរើសពណ៌រហូតដល់បី។ ចុចម្ដងទៀតដើម្បីប្ដូរ។</string>
-    <string name="dejavu_settings_swipe_to_close">អូសផ្ទាំងដើម្បីបិទ</string>
-    <string name="dejavu_settings_swipe_to_close_summary">នៅលើទំព័រដើម ការអូសផ្ទាំងទៅចំហៀងនឹងបិទវា។ ដើម្បីប្ដូរចន្លោះការងារ សូមអូសនៅខាងក្រៅផ្ទាំង ឬប្រើរបារចន្លោះការងារ។</string>
+    <string name="dejavu_settings_swipe_actions">សកម្មភាពអូស</string>
+    <string name="dejavu_settings_swipe_actions_hint">ជ្រើសរើសអ្វីដែលការអូសផ្ទាំងនៅលើទំព័រដើមធ្វើ។ ការអូសនៅខាងក្រៅផ្ទាំងតែងតែប្ដូរចន្លោះការងារ។</string>
+    <string name="dejavu_settings_swipe_right">អូសទៅស្ដាំ</string>
+    <string name="dejavu_settings_swipe_left">អូសទៅឆ្វេង</string>
+    <string name="dejavu_settings_swipe_switch_workspaces">ប្ដូរចន្លោះការងារ</string>
 </resources>

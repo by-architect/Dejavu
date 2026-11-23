@@ -6,8 +6,10 @@ package org.mozilla.fenix.dejavu.home
 
 import mozilla.components.browser.state.state.TabSessionState
 import mozilla.components.support.ktx.util.URLStringUtils
+import org.mozilla.fenix.dejavu.actions.ActionPlace
 import org.mozilla.fenix.dejavu.actions.RowAction
 import org.mozilla.fenix.dejavu.actions.TabAction
+import org.mozilla.fenix.dejavu.actions.fits
 import org.mozilla.fenix.dejavu.workspaces.MAX_FOLDER_DEPTH
 import org.mozilla.fenix.dejavu.workspaces.PinnedItem
 import org.mozilla.fenix.dejavu.workspaces.Workspace
@@ -331,6 +333,18 @@ private fun pinnedClose(targets: ActionTargets): RowAction? = when {
 fun middleClickAction(targets: ActionTargets, isPinned: Boolean): RowAction? =
     rowActions(listOf(CloseAction), targets, isPinned)
         .firstOrNull { (it as? RowAction.BuiltIn)?.action != TabAction.UNPIN }
+
+/**
+ * What swiping a row runs when [configured] is the action chosen for that way, or `null` when the row does not swipe
+ * that way. Close does what a middle-click does, so a stray swipe never unpins, and an action that does nothing for the
+ * row, like Pin on a pinned tab, leaves it unswiped. [isPinned] is for the rows of pinned tabs.
+ */
+fun swipeAction(configured: RowAction?, targets: ActionTargets, isPinned: Boolean): RowAction? = when {
+    configured == null -> null
+    configured == CloseAction -> middleClickAction(targets, isPinned)
+    !configured.fits(if (isPinned) ActionPlace.PINNED_ROWS else ActionPlace.UNPINNED_ROWS) -> null
+    else -> configured.takeIf { it.appliesTo(targets) }
+}
 
 /** Folder that a new folder grouping [targets] goes in: their common parent, while it can hold one more level. */
 fun WorkspaceState.newFolderParent(targets: ActionTargets): String? =

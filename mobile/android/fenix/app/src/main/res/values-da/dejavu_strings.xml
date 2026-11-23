@@ -626,6 +626,9 @@
     <string name="dejavu_loading_colors_workspace_summary">Farverne fra fanebladets arbejdsområde. Private faneblade og arbejdsområder uden farver viser regnbuen.</string>
     <string name="dejavu_loading_colors_custom">Tilpassede farver</string>
     <string name="dejavu_loading_colors_custom_summary">Vælg op til tre farver. Tryk igen for at ændre dem.</string>
-    <string name="dejavu_settings_swipe_to_close">Stryg faneblade for at lukke dem</string>
-    <string name="dejavu_settings_swipe_to_close_summary">På startskærmen lukkes et faneblad, når du stryger det til siden. For at skifte arbejdsområde skal du stryge uden for fanebladene eller bruge arbejdsområdelinjen.</string>
+    <string name="dejavu_settings_swipe_actions">Strygehandlinger</string>
+    <string name="dejavu_settings_swipe_actions_hint">Vælg, hvad der sker, når du stryger et faneblad på startskærmen. Når du stryger uden for fanebladene, skifter du altid arbejdsområde.</string>
+    <string name="dejavu_settings_swipe_right">Stryg til højre</string>
+    <string name="dejavu_settings_swipe_left">Stryg til venstre</string>
+    <string name="dejavu_settings_swipe_switch_workspaces">Skift arbejdsområde</string>
 </resources>

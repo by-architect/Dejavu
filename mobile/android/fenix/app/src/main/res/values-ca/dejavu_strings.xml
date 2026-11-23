@@ -634,6 +634,9 @@
     <string name="dejavu_loading_colors_workspace_summary">Els colors de l\'espai de treball de la pestanya. Les pestanyes privades i els espais de treball sense colors mostren l\'arc de Sant Martí.</string>
     <string name="dejavu_loading_colors_custom">Colors personalitzats</string>
     <string name="dejavu_loading_colors_custom_summary">Trieu fins a tres colors. Toqueu de nou per canviar-los.</string>
-    <string name="dejavu_settings_swipe_to_close">Llisca les pestanyes per tancar-les</string>
-    <string name="dejavu_settings_swipe_to_close_summary">A la pàgina d\'inici, lliscar una pestanya cap als costats la tanca. Per canviar d\'espai de treball, llisqueu fora de les pestanyes o feu servir la barra d\'espais de treball.</string>
+    <string name="dejavu_settings_swipe_actions">Accions en lliscar</string>
+    <string name="dejavu_settings_swipe_actions_hint">Trieu què fa lliscar una pestanya a la pàgina d\'inici. Lliscar fora de les pestanyes sempre canvia d\'espai de treball.</string>
+    <string name="dejavu_settings_swipe_right">Lliscar cap a la dreta</string>
+    <string name="dejavu_settings_swipe_left">Lliscar cap a l\'esquerra</string>
+    <string name="dejavu_settings_swipe_switch_workspaces">Canviar d\'espai de treball</string>
 </resources>

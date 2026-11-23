@@ -642,6 +642,9 @@
     <string name="dejavu_loading_colors_workspace_summary">Цвета рабочего пространства вкладки. В приватных вкладках и пространствах без цветов показывается радуга.</string>
     <string name="dejavu_loading_colors_custom">Свои цвета</string>
     <string name="dejavu_loading_colors_custom_summary">Выберите до трёх цветов. Нажмите ещё раз, чтобы изменить их.</string>
-    <string name="dejavu_settings_swipe_to_close">Закрывать вкладки жестом в сторону</string>
-    <string name="dejavu_settings_swipe_to_close_summary">На главной странице вкладка закрывается, если провести по ней в сторону. Чтобы переключить рабочее пространство, проведите за пределами вкладок или используйте панель рабочих пространств.</string>
+    <string name="dejavu_settings_swipe_actions">Действия при смахивании</string>
+    <string name="dejavu_settings_swipe_actions_hint">Выберите, что делает смахивание вкладки на главной странице. Смахивание за пределами вкладок всегда переключает рабочее пространство.</string>
+    <string name="dejavu_settings_swipe_right">Смахнуть вправо</string>
+    <string name="dejavu_settings_swipe_left">Смахнуть влево</string>
+    <string name="dejavu_settings_swipe_switch_workspaces">Переключить рабочее пространство</string>
 </resources>

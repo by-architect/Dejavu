@@ -642,6 +642,9 @@
     <string name="dejavu_loading_colors_workspace_summary">Колеры прасторы, у якой картка. Прыватныя карткі і прасторы без колераў паказваюць вясёлку.</string>
     <string name="dejavu_loading_colors_custom">Уласныя колеры</string>
     <string name="dejavu_loading_colors_custom_summary">Выберыце да трох колераў. Націсніце яшчэ раз, каб змяніць іх.</string>
-    <string name="dejavu_settings_swipe_to_close">Закрываць карткі жэстам убок</string>
-    <string name="dejavu_settings_swipe_to_close_summary">На галоўнай старонцы картка закрываецца, калі правесці па ёй убок. Каб пераключыць прастору, правядзіце па-за карткамі або скарыстайцеся панэллю прастор.</string>
+    <string name="dejavu_settings_swipe_actions">Дзеянні правядзення</string>
+    <string name="dejavu_settings_swipe_actions_hint">Выберыце, што робіць правядзенне па картцы на галоўнай старонцы. Правядзенне па-за карткамі заўсёды пераключае прастору.</string>
+    <string name="dejavu_settings_swipe_right">Правесці ўправа</string>
+    <string name="dejavu_settings_swipe_left">Правесці ўлева</string>
+    <string name="dejavu_settings_swipe_switch_workspaces">Пераключыць прастору</string>
 </resources>

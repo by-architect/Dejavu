@@ -658,6 +658,9 @@
     <string name="dejavu_loading_colors_workspace_summary">ألوان مساحة عمل التبويب. التبويبات الخاصة ومساحات العمل التي بلا ألوان تعرض قوس قزح.</string>
     <string name="dejavu_loading_colors_custom">ألوان مخصّصة</string>
     <string name="dejavu_loading_colors_custom_summary">اختر حتى ثلاثة ألوان. انقر مجددًا لتغييرها.</string>
-    <string name="dejavu_settings_swipe_to_close">إغلاق التبويبات بالسحب</string>
-    <string name="dejavu_settings_swipe_to_close_summary">في الشاشة الرئيسية، يُغلق التبويب عند سحبه جانبيًا. للتبديل بين مساحات العمل، اسحب خارج التبويبات أو استخدم شريط مساحات العمل.</string>
+    <string name="dejavu_settings_swipe_actions">إجراءات السحب</string>
+    <string name="dejavu_settings_swipe_actions_hint">اختر ما يفعله سحب التبويب في الشاشة الرئيسية. السحب خارج التبويبات يبدّل دائمًا بين مساحات العمل.</string>
+    <string name="dejavu_settings_swipe_right">السحب لليمين</string>
+    <string name="dejavu_settings_swipe_left">السحب لليسار</string>
+    <string name="dejavu_settings_swipe_switch_workspaces">التبديل بين مساحات العمل</string>
 </resources>

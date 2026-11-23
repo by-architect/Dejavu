@@ -618,6 +618,9 @@
     <string name="dejavu_loading_colors_workspace_summary">Warna ruang kerja tab. Tab pribadi dan ruang kerja tanpa warna menampilkan pelangi.</string>
     <string name="dejavu_loading_colors_custom">Warna khusus</string>
     <string name="dejavu_loading_colors_custom_summary">Pilih hingga tiga warna. Ketuk lagi untuk mengubahnya.</string>
-    <string name="dejavu_settings_swipe_to_close">Geser tab untuk menutup</string>
-    <string name="dejavu_settings_swipe_to_close_summary">Di beranda, menggeser tab ke samping akan menutupnya. Untuk berpindah ruang kerja, geser di luar tab atau gunakan bilah ruang kerja.</string>
+    <string name="dejavu_settings_swipe_actions">Tindakan geser</string>
+    <string name="dejavu_settings_swipe_actions_hint">Pilih apa yang terjadi saat menggeser tab di beranda. Menggeser di luar tab selalu berpindah ruang kerja.</string>
+    <string name="dejavu_settings_swipe_right">Geser ke kanan</string>
+    <string name="dejavu_settings_swipe_left">Geser ke kiri</string>
+    <string name="dejavu_settings_swipe_switch_workspaces">Pindah ruang kerja</string>
 </resources>

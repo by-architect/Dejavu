@@ -642,6 +642,9 @@
     <string name="dejavu_loading_colors_workspace_summary">Dathan àite-obrach an taba. Seallaidh tabaichean prìobhaideach agus àiteachan-obrach gun dathan am bogha-froise.</string>
     <string name="dejavu_loading_colors_custom">Dathan gnàthaichte</string>
     <string name="dejavu_loading_colors_custom_summary">Tagh suas ri trì dathan. Thoir gnogag a-rithist gus an atharrachadh.</string>
-    <string name="dejavu_settings_swipe_to_close">Grad-shlaighd tabaichean gus an dùnadh</string>
-    <string name="dejavu_settings_swipe_to_close_summary">Air an sgrìn-dachaigh, ma ghrad-shlaighdeas tu taba gu taobh, thèid a dhùnadh. Airson àite-obrach eile a thaghadh, grad-shlaighd taobh a-muigh nan tabaichean no cleachd bàr nan àiteachan-obrach.</string>
+    <string name="dejavu_settings_swipe_actions">Gnìomhan grad-shlaighdidh</string>
+    <string name="dejavu_settings_swipe_actions_hint">Tagh dè thachras nuair a ghrad-shlaighdeas tu taba air an sgrìn-dachaigh. Ma ghrad-shlaighdeas tu taobh a-muigh nan tabaichean, thèid àite-obrach eile a thaghadh an-còmhnaidh.</string>
+    <string name="dejavu_settings_swipe_right">Grad-shlaighd gu deas</string>
+    <string name="dejavu_settings_swipe_left">Grad-shlaighd gu clì</string>
+    <string name="dejavu_settings_swipe_switch_workspaces">Tagh àite-obrach eile</string>
 </resources>

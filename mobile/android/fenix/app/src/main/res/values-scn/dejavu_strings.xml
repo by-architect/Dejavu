@@ -626,6 +626,9 @@
     <string name="dejavu_loading_colors_workspace_summary">Li culuri dû spazziu di travagghiu dâ scheda. Li schedi privati e li spazzii di travagghiu senza culuri ammustranu l\'arcubalenu.</string>
     <string name="dejavu_loading_colors_custom">Culuri pirsunalizzati</string>
     <string name="dejavu_loading_colors_custom_summary">Scegghi finu a tri culuri. Tocca arreri pi canciàrili.</string>
-    <string name="dejavu_settings_swipe_to_close">Tira i schedi pi chiùdirili</string>
-    <string name="dejavu_settings_swipe_to_close_summary">Nnâ schermata principali, tirannu na scheda di ciancu si chiuj. Pi canciari spazziu di travagghiu, tira fora dî schedi o usa a barra dî spazzi di travagghiu.</string>
+    <string name="dejavu_settings_swipe_actions">Azzioni dâ tirata</string>
+    <string name="dejavu_settings_swipe_actions_hint">Scegghi chi fa tirari na scheda nnâ schermata principali. Tirari fora dî schedi cancia sempri spazziu di travagghiu.</string>
+    <string name="dejavu_settings_swipe_right">Tira a dritta</string>
+    <string name="dejavu_settings_swipe_left">Tira a manca</string>
+    <string name="dejavu_settings_swipe_switch_workspaces">Cancia spazziu di travagghiu</string>
 </resources>

@@ -71,7 +71,9 @@ import org.mozilla.fenix.components.menu.MenuAccessPoint
 import org.mozilla.fenix.dejavu.NewTabContainerChoice
 import org.mozilla.fenix.dejavu.actions.ActionPlace
 import org.mozilla.fenix.dejavu.actions.CustomAction
+import org.mozilla.fenix.dejavu.actions.SwipeActions
 import org.mozilla.fenix.dejavu.actions.TabAction
+import org.mozilla.fenix.dejavu.actions.swipeActionOf
 import org.mozilla.fenix.dejavu.browser.ClearData
 import org.mozilla.fenix.dejavu.browser.DejavuSearchOverlay
 import org.mozilla.fenix.dejavu.browser.DejavuSearchStart
@@ -168,7 +170,8 @@ fun ComposeView.setDejavuHomeContent(
             val essentialsShown by settings.essentialsShown.collectAsState()
             val hiddenEssentials by settings.hiddenEssentials.collectAsState()
             val searchAtBottom by settings.homeSearchAtBottom.collectAsState()
-            val swipeToClose by settings.swipeToClose.collectAsState()
+            val swipeRightKey by settings.swipeRightKey.collectAsState()
+            val swipeLeftKey by settings.swipeLeftKey.collectAsState()
             val containerRecords by containerStorage.records.collectAsState()
             val containers = remember(containerRecords) { containerRecords.orEmpty().associateBy { it.contextId } }
             val tabs by fenix.core.store.observeTabsForHome { it.normalTabs }
@@ -251,7 +254,12 @@ fun ComposeView.setDejavuHomeContent(
                     searching = isSearchActive,
                     essentialsShown = essentialsShown,
                     hiddenEssentials = hiddenEssentials,
-                    swipeToClose = swipeToClose,
+                    swipeActions = remember(swipeRightKey, swipeLeftKey, customActions) {
+                        SwipeActions(
+                            right = swipeActionOf(swipeRightKey, customActions),
+                            left = swipeActionOf(swipeLeftKey, customActions),
+                        )
+                    },
                 )
 
                 if (showsPage) {

@@ -618,6 +618,9 @@
     <string name="dejavu_loading_colors_workspace_summary">Warna genah tab puniki. Tab pribadi miwah genah sane nenten madue warna ngedengang bianglala.</string>
     <string name="dejavu_loading_colors_custom">Warna kustom</string>
     <string name="dejavu_loading_colors_custom_summary">Pilih kantos tetiga warna. Tegul malih anggen ngentosin.</string>
-    <string name="dejavu_settings_swipe_to_close">Usap tab anggen nutup</string>
-    <string name="dejavu_settings_swipe_to_close_summary">Ring home page, ngusap tab ka samping nutup tab punika. Anggen ngentosin genah, usap ring sisi tab utawi anggen bar genah.</string>
+    <string name="dejavu_settings_swipe_actions">Aksi ngusap</string>
+    <string name="dejavu_settings_swipe_actions_hint">Pilih napi sane kalaksanayang yening ngusap tab ring home page. Ngusap ring sisi tab setata ngentosin genah.</string>
+    <string name="dejavu_settings_swipe_right">Usap ka tengen</string>
+    <string name="dejavu_settings_swipe_left">Usap ka kiwa</string>
+    <string name="dejavu_settings_swipe_switch_workspaces">Gentosin genah</string>
 </resources>

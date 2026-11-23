@@ -618,6 +618,9 @@
     <string name="dejavu_loading_colors_workspace_summary">分頁所在工作區的顏色。隱私分頁與沒有顏色的工作區會顯示彩虹。</string>
     <string name="dejavu_loading_colors_custom">自訂顏色</string>
     <string name="dejavu_loading_colors_custom_summary">最多可選擇三種顏色。再次點按即可更改。</string>
-    <string name="dejavu_settings_swipe_to_close">滑動關閉分頁</string>
-    <string name="dejavu_settings_swipe_to_close_summary">在主頁上左右滑動分頁即可關閉。若要切換工作區，請在分頁以外的地方滑動，或使用工作區列。</string>
+    <string name="dejavu_settings_swipe_actions">滑動操作</string>
+    <string name="dejavu_settings_swipe_actions_hint">選擇在主頁上滑動分頁時要做什麼。在分頁以外的地方滑動一律會切換工作區。</string>
+    <string name="dejavu_settings_swipe_right">向右滑動</string>
+    <string name="dejavu_settings_swipe_left">向左滑動</string>
+    <string name="dejavu_settings_swipe_switch_workspaces">切換工作區</string>
 </resources>

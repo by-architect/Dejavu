@@ -626,6 +626,9 @@
     <string name="dejavu_loading_colors_workspace_summary">கீற்றின் பணியிட நிறங்கள். கமுக்கக் கீற்றுகளும் நிறமில்லாத பணியிடங்களும் வானவில்லைக் காட்டும்.</string>
     <string name="dejavu_loading_colors_custom">தனிப்பயன் நிறங்கள்</string>
     <string name="dejavu_loading_colors_custom_summary">மூன்று நிறங்கள் வரை தேர்ந்தெடுக்கவும். மாற்ற மீண்டும் தட்டவும்.</string>
-    <string name="dejavu_settings_swipe_to_close">மூட கீற்றுகளை ஸ்வைப் செய்</string>
-    <string name="dejavu_settings_swipe_to_close_summary">முகப்புப் பக்கத்தில், ஒரு கீற்றைப் பக்கவாட்டில் ஸ்வைப் செய்தால் அது மூடப்படும். பணியிடங்களுக்கு இடையே மாற, கீற்றுகளுக்கு வெளியே ஸ்வைப் செய்யவும் அல்லது பணியிடப் பட்டையைப் பயன்படுத்தவும்.</string>
+    <string name="dejavu_settings_swipe_actions">ஸ்வைப் செயல்கள்</string>
+    <string name="dejavu_settings_swipe_actions_hint">முகப்புப் பக்கத்தில் ஒரு கீற்றை ஸ்வைப் செய்தால் என்ன நடக்க வேண்டும் என்பதைத் தேர்ந்தெடுக்கவும். கீற்றுகளுக்கு வெளியே ஸ்வைப் செய்தால் எப்போதும் பணியிடம் மாறும்.</string>
+    <string name="dejavu_settings_swipe_right">வலதுபுறம் ஸ்வைப் செய்</string>
+    <string name="dejavu_settings_swipe_left">இடதுபுறம் ஸ்வைப் செய்</string>
+    <string name="dejavu_settings_swipe_switch_workspaces">பணியிடத்தை மாற்று</string>
 </resources>

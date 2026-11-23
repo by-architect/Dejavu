@@ -650,6 +650,9 @@
     <string name="dejavu_loading_colors_workspace_summary">Livioù egor labour an ivinell. An ivinelloù prevez hag an egorioù labour hep livioù a ziskouez ar ganevedenn.</string>
     <string name="dejavu_loading_colors_custom">Livioù personelaet</string>
     <string name="dejavu_loading_colors_custom_summary">Dibabit betek tri liv. Stokit en-dro evit o cheñch.</string>
-    <string name="dejavu_settings_swipe_to_close">Riklañ an ivinelloù evit o serriñ</string>
-    <string name="dejavu_settings_swipe_to_close_summary">War ar skramm degemer, riklañ un ivinell a-gostez a serr anezhi. Evit cheñch egor labour, riklit e-maez an ivinelloù pe implijit barrenn an egorioù labour.</string>
+    <string name="dejavu_settings_swipe_actions">Oberioù riklañ</string>
+    <string name="dejavu_settings_swipe_actions_hint">Dibabit petra a ra riklañ un ivinell war ar skramm degemer. Riklañ e-maez an ivinelloù a cheñch egor labour bepred.</string>
+    <string name="dejavu_settings_swipe_right">Riklañ a-zehou</string>
+    <string name="dejavu_settings_swipe_left">Riklañ a-gleiz</string>
+    <string name="dejavu_settings_swipe_switch_workspaces">Cheñch egor labour</string>
 </resources>

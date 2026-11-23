@@ -626,6 +626,9 @@
     <string name="dejavu_loading_colors_workspace_summary">De kleuren fan de wurkromte fan it ljepblêd. Priveeljepblêden en wurkromten sûnder kleuren toane de reinbôge.</string>
     <string name="dejavu_loading_colors_custom">Oanpaste kleuren</string>
     <string name="dejavu_loading_colors_custom_summary">Kies oant trije kleuren. Tik nochris om se te wizigjen.</string>
-    <string name="dejavu_settings_swipe_to_close">Ljepblêden feie om te sluten</string>
-    <string name="dejavu_settings_swipe_to_close_summary">Op de thússide slút in ljepblêd as jo it nei de side feie. Om fan wurkromte te wikseljen, fei bûten de ljepblêden of brûk de wurkromtebalke.</string>
+    <string name="dejavu_settings_swipe_actions">Feiaksjes</string>
+    <string name="dejavu_settings_swipe_actions_hint">Kies wat it feien fan in ljepblêd op de thússide docht. Feie bûten de ljepblêden wikselet altyd fan wurkromte.</string>
+    <string name="dejavu_settings_swipe_right">Nei rjochts feie</string>
+    <string name="dejavu_settings_swipe_left">Nei lofts feie</string>
+    <string name="dejavu_settings_swipe_switch_workspaces">Fan wurkromte wikselje</string>
 </resources>

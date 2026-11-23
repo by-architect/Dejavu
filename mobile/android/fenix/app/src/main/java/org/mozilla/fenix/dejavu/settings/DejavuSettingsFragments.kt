@@ -16,20 +16,26 @@ import android.view.ViewGroup
 import androidx.annotation.DrawableRes
 import androidx.annotation.StringRes
 import androidx.compose.foundation.clickable
+import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.heightIn
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.itemsIndexed
 import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.selection.selectable
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.Checkbox
+import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.RadioButton
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.CompositionLocalProvider
@@ -48,6 +54,7 @@ import androidx.compose.ui.platform.ViewCompositionStrategy
 import androidx.compose.ui.res.pluralStringResource
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.semantics.Role
 import androidx.compose.ui.unit.dp
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
@@ -60,9 +67,14 @@ import org.mozilla.fenix.compose.list.SwitchListItem
 import org.mozilla.fenix.dejavu.actions.ActionPlace
 import org.mozilla.fenix.dejavu.actions.CustomAction
 import org.mozilla.fenix.dejavu.actions.RowAction
+import org.mozilla.fenix.dejavu.actions.SwipeActions
+import org.mozilla.fenix.dejavu.actions.SwipeDirection
 import org.mozilla.fenix.dejavu.actions.fits
 import org.mozilla.fenix.dejavu.actions.icon
 import org.mozilla.fenix.dejavu.actions.label
+import org.mozilla.fenix.dejavu.actions.swipeActionOf
+import org.mozilla.fenix.dejavu.actions.swipeChoices
+import org.mozilla.fenix.dejavu.actions.swipes
 import org.mozilla.fenix.dejavu.browser.TabSleepMiddleware
 import org.mozilla.fenix.dejavu.containers.ContainerIcon
 import org.mozilla.fenix.dejavu.containers.ContainerPick
@@ -153,7 +165,7 @@ enum class ActionList(
 
 /**
  * Every action in one list, the user's own included, with where each one shows. Tapping an action chooses its places;
- * the rows and the selection bar can also be set up on screens of their own.
+ * the rows and the selection bar can also be set up on screens of their own, and what swiping a tab runs each way.
  */
 class DejavuTabActionsFragment : DejavuComposeFragment(R.string.dejavu_settings_tab_actions) {
     @Composable
@@ -162,7 +174,14 @@ class DejavuTabActionsFragment : DejavuComposeFragment(R.string.dejavu_settings_
         val customActions by settings.customActions.collectAsState()
         val placements = rememberPlacements(settings)
         val actions = RowAction.all(customActions)
+        val swipeRightKey by settings.swipeRightKey.collectAsState()
+        val swipeLeftKey by settings.swipeLeftKey.collectAsState()
+        val swipes = SwipeActions(
+            right = swipeActionOf(swipeRightKey, customActions),
+            left = swipeActionOf(swipeLeftKey, customActions),
+        )
         var choosing by remember { mutableStateOf<RowAction?>(null) }
+        var choosingSwipe by remember { mutableStateOf<SwipeDirection?>(null) }
 
         Column(modifier = Modifier.fillMaxSize().verticalScroll(rememberScrollState())) {
             SettingsHint(stringResource(R.string.dejavu_settings_tab_actions_hint))
@@ -182,15 +201,28 @@ class DejavuTabActionsFragment : DejavuComposeFragment(R.string.dejavu_settings_
                     onClick = { openList(list) },
                 )
             }
+            SettingsHeader(stringResource(R.string.dejavu_settings_swipe_actions))
+            SwipeDirection.entries.forEachIndexed { index, direction ->
+                IconListItem(
+                    label = stringResource(direction.label),
+                    description = swipes.of(direction)?.label
+                        ?: stringResource(R.string.dejavu_settings_swipe_switch_workspaces),
+                    beforeIconPainter = iconPainter(direction.icon),
+                    modifier = Modifier.settingsCard(index, SwipeDirection.entries.size),
+                    onClick = { choosingSwipe = direction },
+                )
+            }
+            SettingsHint(stringResource(R.string.dejavu_settings_swipe_actions_hint))
             SettingsHeader(stringResource(R.string.dejavu_settings_all_actions))
             actions.forEachIndexed { index, action ->
-                val places = ActionPlace.entries.filter { placements.isIn(action, it) }
+                val places = ActionPlace.entries.filter { placements.isIn(action, it) }.map { it.label } +
+                    SwipeDirection.entries.filter { swipes.of(it)?.key == action.key }.map { it.label }
                 IconListItem(
                     label = action.label,
                     description = if (places.isEmpty()) {
                         stringResource(R.string.dejavu_settings_action_places_none)
                     } else {
-                        places.map { stringResource(it.label) }.joinToString(", ")
+                        places.map { stringResource(it) }.joinToString(", ")
                     },
                     beforeIconPainter = iconPainter(action.icon),
                     modifier = Modifier.settingsCard(index, actions.size),
@@ -204,7 +236,9 @@ class DejavuTabActionsFragment : DejavuComposeFragment(R.string.dejavu_settings_
             ActionPlacesDialog(
                 action = action,
                 placements = placements,
+                swipes = swipes,
                 onPlace = { place, shown -> settings.setPlaced(action, place, shown) },
+                onSwipe = { direction, on -> settings.setSwipeAction(direction, action.key.takeIf { on }) },
                 onEdit = (action as? RowAction.Custom)?.let { custom ->
                     {
                         choosing = null
@@ -212,6 +246,19 @@ class DejavuTabActionsFragment : DejavuComposeFragment(R.string.dejavu_settings_
                     }
                 },
                 onDismiss = { choosing = null },
+            )
+        }
+
+        choosingSwipe?.let { direction ->
+            SwipeActionDialog(
+                direction = direction,
+                chosenKey = swipes.of(direction)?.key,
+                choices = swipeChoices(customActions),
+                onChoose = { key ->
+                    settings.setSwipeAction(direction, key)
+                    choosingSwipe = null
+                },
+                onDismiss = { choosingSwipe = null },
             )
         }
     }
@@ -378,12 +425,18 @@ private fun DejavuSettings.setPlaced(action: RowAction, place: ActionPlace, show
     }
 }
 
-/** Chooses every place [action] shows in. A custom action can be edited from here too, with [onEdit]. */
+/**
+ * Chooses every place [action] shows in, and the ways swiping a tab runs it, which each run one action of all. A custom
+ * action can be edited from here too, with [onEdit].
+ */
+@Suppress("LongParameterList")
 @Composable
 private fun ActionPlacesDialog(
     action: RowAction,
     placements: Placements,
+    swipes: SwipeActions,
     onPlace: (ActionPlace, Boolean) -> Unit,
+    onSwipe: (SwipeDirection, Boolean) -> Unit,
     onEdit: (() -> Unit)?,
     onDismiss: () -> Unit,
 ) {
@@ -415,6 +468,96 @@ private fun ActionPlacesDialog(
                 enabled = fits && !full,
                 onChange = { onPlace(place, it) },
             )
+        }
+        SwipeDirection.entries.forEach { direction ->
+            PlaceRow(
+                label = stringResource(direction.label),
+                note = stringResource(R.string.dejavu_settings_action_place_unavailable).takeUnless { action.swipes },
+                checked = swipes.of(direction)?.key == action.key,
+                enabled = action.swipes,
+                onChange = { onSwipe(direction, it) },
+            )
+        }
+    }
+}
+
+/** Chooses what swiping the row of a tab [direction] runs: one of the [choices], or turning to the next workspace. */
+@Composable
+private fun SwipeActionDialog(
+    direction: SwipeDirection,
+    chosenKey: String?,
+    choices: List<RowAction>,
+    onChoose: (String?) -> Unit,
+    onDismiss: () -> Unit,
+) {
+    DejavuDialog(
+        title = stringResource(direction.label),
+        icon = direction.icon,
+        onDismissRequest = onDismiss,
+        buttons = { DejavuDialogButton(text = stringResource(R.string.dejavu_cancel), onClick = onDismiss) },
+    ) {
+        SwipeChoiceRow(
+            label = stringResource(R.string.dejavu_settings_swipe_switch_workspaces),
+            note = null,
+            icon = null,
+            selected = chosenKey == null,
+            onClick = { onChoose(null) },
+        )
+        choices.forEach { action ->
+            SwipeChoiceRow(
+                label = action.label,
+                note = swipeNote(action),
+                icon = action.icon,
+                selected = action.key == chosenKey,
+                onClick = { onChoose(action.key) },
+            )
+        }
+    }
+}
+
+/** Which tabs [action] runs on when swiped, when it is not all of them. */
+@Composable
+private fun swipeNote(action: RowAction): String? = when {
+    !action.fits(ActionPlace.PINNED_ROWS) -> stringResource(R.string.dejavu_settings_unpinned_tabs)
+    !action.fits(ActionPlace.UNPINNED_ROWS) -> stringResource(R.string.dejavu_settings_pinned_tabs)
+    else -> null
+}
+
+@Composable
+private fun SwipeChoiceRow(
+    label: String,
+    note: String?,
+    @DrawableRes icon: Int?,
+    selected: Boolean,
+    onClick: () -> Unit,
+) {
+    Row(
+        verticalAlignment = Alignment.CenterVertically,
+        modifier = Modifier
+            .fillMaxWidth()
+            .heightIn(min = 48.dp)
+            .selectable(selected = selected, role = Role.RadioButton, onClick = onClick),
+    ) {
+        RadioButton(selected = selected, onClick = null, modifier = Modifier.padding(horizontal = 8.dp))
+        Box(modifier = Modifier.size(24.dp)) {
+            if (icon != null) {
+                Icon(
+                    painter = iconPainter(icon),
+                    contentDescription = null,
+                    tint = MaterialTheme.colorScheme.onSurfaceVariant,
+                )
+            }
+        }
+        Spacer(Modifier.width(12.dp))
+        Column(modifier = Modifier.padding(vertical = 6.dp)) {
+            Text(text = label, style = MaterialTheme.typography.bodyLarge, color = MaterialTheme.colorScheme.onSurface)
+            if (note != null) {
+                Text(
+                    text = note,
+                    style = MaterialTheme.typography.bodySmall,
+                    color = MaterialTheme.colorScheme.onSurfaceVariant,
+                )
+            }
         }
     }
 }

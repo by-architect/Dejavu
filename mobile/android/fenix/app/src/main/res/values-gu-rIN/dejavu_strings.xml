@@ -659,6 +659,9 @@
     <string name="dejavu_loading_colors_workspace_summary">ટૅબના વર્કસ્પેસના રંગો. ખાનગી ટૅબ અને રંગ વગરના વર્કસ્પેસ મેઘધનુષ્ય બતાવે છે.</string>
     <string name="dejavu_loading_colors_custom">કસ્ટમ રંગો</string>
     <string name="dejavu_loading_colors_custom_summary">ત્રણ સુધી રંગો પસંદ કરો. બદલવા માટે ફરી ટૅપ કરો.</string>
-    <string name="dejavu_settings_swipe_to_close">બંધ કરવા માટે ટૅબ્સ સ્વાઇપ કરો</string>
-    <string name="dejavu_settings_swipe_to_close_summary">મુખ્ય પૃષ્ઠ પર, ટૅબને બાજુમાં સ્વાઇપ કરવાથી તે બંધ થાય છે. વર્કસ્પેસ બદલવા માટે, ટૅબ્સની બહાર સ્વાઇપ કરો અથવા વર્કસ્પેસ બારનો ઉપયોગ કરો.</string>
+    <string name="dejavu_settings_swipe_actions">સ્વાઇપ ક્રિયાઓ</string>
+    <string name="dejavu_settings_swipe_actions_hint">મુખ્ય પૃષ્ઠ પર ટૅબને સ્વાઇપ કરવાથી શું થાય તે પસંદ કરો. ટૅબ્સની બહાર સ્વાઇપ કરવાથી હંમેશાં વર્કસ્પેસ બદલાય છે.</string>
+    <string name="dejavu_settings_swipe_right">જમણે સ્વાઇપ કરો</string>
+    <string name="dejavu_settings_swipe_left">ડાબે સ્વાઇપ કરો</string>
+    <string name="dejavu_settings_swipe_switch_workspaces">વર્કસ્પેસ બદલો</string>
 </resources>

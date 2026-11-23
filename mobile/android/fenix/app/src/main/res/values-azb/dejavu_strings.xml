@@ -626,6 +626,9 @@
     <string name="dejavu_loading_colors_workspace_summary">تاغین ایش ساحه‌سینین رنگلری. گیزلی تاغلار و رنگسیز ایش ساحه‌لری گؤی قورشاغینی گؤسترر.</string>
     <string name="dejavu_loading_colors_custom">اؤزل رنگلر</string>
     <string name="dejavu_loading_colors_custom_summary">اوچ رنگه قدر سئچین. دییشمک اوچون یئنیدن توخونون.</string>
-    <string name="dejavu_settings_swipe_to_close">باغلاماق اوچون تاغلاری سوروشدور</string>
-    <string name="dejavu_settings_swipe_to_close_summary">آنا اکراندا بیر تاغی یانا سوروشدورماق اونو باغلاییر. ایش ساحه‌سینی دَییشمک اوچون تاغلاردان کناردا سوروشدورون یا ایش ساحه‌لری پانئلیندن ایستیفاده ادین.</string>
+    <string name="dejavu_settings_swipe_actions">سوروشدورما عملیات‌لاری</string>
+    <string name="dejavu_settings_swipe_actions_hint">آنا اکراندا بیر تاغی سوروشدورماغین نه ائده‌جه‌یینی سئچین. تاغلاردان کناردا سوروشدورماق همیشه ایش ساحه‌سینی دَییشیر.</string>
+    <string name="dejavu_settings_swipe_right">ساغا سوروشدور</string>
+    <string name="dejavu_settings_swipe_left">سولا سوروشدور</string>
+    <string name="dejavu_settings_swipe_switch_workspaces">ایش ساحه‌سینی دَییش</string>
 </resources>

@@ -626,6 +626,9 @@
     <string name="dejavu_loading_colors_workspace_summary">De kleuren van de werkruimte van het tabblad. Privétabbladen en werkruimten zonder kleuren tonen de regenboog.</string>
     <string name="dejavu_loading_colors_custom">Aangepaste kleuren</string>
     <string name="dejavu_loading_colors_custom_summary">Kies maximaal drie kleuren. Tik opnieuw om ze te wijzigen.</string>
-    <string name="dejavu_settings_swipe_to_close">Tabbladen sluiten door te vegen</string>
-    <string name="dejavu_settings_swipe_to_close_summary">Op de startpagina sluit je een tabblad door het opzij te vegen. Veeg buiten de tabbladen of gebruik de werkruimtebalk om van werkruimte te wisselen.</string>
+    <string name="dejavu_settings_swipe_actions">Veegacties</string>
+    <string name="dejavu_settings_swipe_actions_hint">Kies wat vegen over een tabblad op de startpagina doet. Vegen buiten de tabbladen wisselt altijd van werkruimte.</string>
+    <string name="dejavu_settings_swipe_right">Naar rechts vegen</string>
+    <string name="dejavu_settings_swipe_left">Naar links vegen</string>
+    <string name="dejavu_settings_swipe_switch_workspaces">Van werkruimte wisselen</string>
 </resources>

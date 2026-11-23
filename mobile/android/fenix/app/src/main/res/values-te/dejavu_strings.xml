@@ -626,6 +626,9 @@
     <string name="dejavu_loading_colors_workspace_summary">ట్యాబు కార్యస్థలం యొక్క రంగులు. అంతరంగిక ట్యాబులు, రంగులు లేని కార్యస్థలాలు ఇంద్రధనుస్సును చూపిస్తాయి.</string>
     <string name="dejavu_loading_colors_custom">అనుకూల రంగులు</string>
     <string name="dejavu_loading_colors_custom_summary">మూడు రంగుల వరకు ఎంచుకోండి. మార్చడానికి మళ్ళీ తట్టండి.</string>
-    <string name="dejavu_settings_swipe_to_close">ట్యాబులను స్వైప్ చేసి మూసివేయి</string>
-    <string name="dejavu_settings_swipe_to_close_summary">హోమ్ స్క్రీన్‌పై ట్యాబును పక్కకు స్వైప్ చేస్తే అది మూసుకుంటుంది. కార్యస్థలాలను మార్చడానికి ట్యాబుల బయట స్వైప్ చేయండి లేదా కార్యస్థలాల పట్టీని వాడండి.</string>
+    <string name="dejavu_settings_swipe_actions">స్వైప్ చర్యలు</string>
+    <string name="dejavu_settings_swipe_actions_hint">హోమ్ స్క్రీన్‌పై ట్యాబును స్వైప్ చేస్తే ఏమి జరగాలో ఎంచుకోండి. ట్యాబుల బయట స్వైప్ చేస్తే ఎల్లప్పుడూ కార్యస్థలం మారుతుంది.</string>
+    <string name="dejavu_settings_swipe_right">కుడివైపు స్వైప్ చేయండి</string>
+    <string name="dejavu_settings_swipe_left">ఎడమవైపు స్వైప్ చేయండి</string>
+    <string name="dejavu_settings_swipe_switch_workspaces">కార్యస్థలాన్ని మార్చండి</string>
 </resources>

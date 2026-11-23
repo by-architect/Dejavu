@@ -626,6 +626,9 @@
     <string name="dejavu_loading_colors_workspace_summary">I culori di u spaziu di travagliu di l\'unghjetta. L\'unghjette private è i spazii di travagliu senza culori mostranu l\'arcu baleu.</string>
     <string name="dejavu_loading_colors_custom">Culori persunalizati</string>
     <string name="dejavu_loading_colors_custom_summary">Sceglite sin\'à trè culori. Toccate torna per cambialli.</string>
-    <string name="dejavu_settings_swipe_to_close">Fà sguillà l\'unghjette per chjode le</string>
-    <string name="dejavu_settings_swipe_to_close_summary">Nant\'à u screnu d\'accolta, fà sguillà un\'unghjetta di latu la chjode. Per cambià di spaziu di travagliu, fate sguillà fora di l\'unghjette o aduprate a barra di i spazii di travagliu.</string>
+    <string name="dejavu_settings_swipe_actions">Azzioni di sguillata</string>
+    <string name="dejavu_settings_swipe_actions_hint">Sceglite ciò chì face u fattu di fà sguillà un\'unghjetta nant\'à u screnu d\'accolta. Fà sguillà fora di l\'unghjette cambia sempre di spaziu di travagliu.</string>
+    <string name="dejavu_settings_swipe_right">Fà sguillà à diritta</string>
+    <string name="dejavu_settings_swipe_left">Fà sguillà à manca</string>
+    <string name="dejavu_settings_swipe_switch_workspaces">Cambià di spaziu di travagliu</string>
 </resources>

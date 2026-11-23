@@ -626,6 +626,9 @@
     <string name="dejavu_loading_colors_workspace_summary">ٹیب نا ورک سپیس نا رنگاک. زاتی ٹیباک او بے رنگ ورک سپیساک قوس قزح اے پیشان کیرہ.</string>
     <string name="dejavu_loading_colors_custom">کسٹم رنگاک</string>
     <string name="dejavu_loading_colors_custom_summary">مسٹ رنگ اسکان چوائس کبو. بدل کننگ کن پدا ٹیپ کبو.</string>
-    <string name="dejavu_settings_swipe_to_close">بند کننگ کن ٹیباک اے سوائپ کبو</string>
-    <string name="dejavu_settings_swipe_to_close_summary">گھر صفحہ پار ٹیب اس اے پاسہ غا سوائپ کننگ آن او بند مریک۔ ورک سپیس بدل کننگ کن ٹیباک آن پیشن سوائپ کبو یا ورک سپیس بار اے استعمال کبو۔</string>
+    <string name="dejavu_settings_swipe_actions">سوائپ ایکشناک</string>
+    <string name="dejavu_settings_swipe_actions_hint">گھر صفحہ پار ٹیب اس سوائپ کننگ انت کیک، او اے چناؤ کبو۔ ٹیباک آن پیشن سوائپ کننگ ہمیشہ ورک سپیس اے بدل کیک۔</string>
+    <string name="dejavu_settings_swipe_right">راست غا سوائپ</string>
+    <string name="dejavu_settings_swipe_left">چپ غا سوائپ</string>
+    <string name="dejavu_settings_swipe_switch_workspaces">ورک سپیس بدل کبو</string>
 </resources>

@@ -626,6 +626,9 @@
     <string name="dejavu_loading_colors_workspace_summary">Tendayke tembiapo renda sa\'y. Tendayke ñemi ha tembiapo renda sa\'y\'ỹva ohechauka sa\'y opaichagua.</string>
     <string name="dejavu_loading_colors_custom">Sa\'y ojeporavopyre</string>
     <string name="dejavu_loading_colors_custom_summary">Eiporavo mbohapy sa\'y peve. Eikutu jey emoambue hag̃ua.</string>
-    <string name="dejavu_settings_swipe_to_close">Erova tendayke emboty hag̃ua</string>
-    <string name="dejavu_settings_swipe_to_close_summary">Pantalla ñepyrũguápe, erova peteĩ tendayke yke gotyo ha oñemboty. Emoambue hag̃ua tembiapo renda, erova tendayke okápe térã eiporu tembiapo renda barra.</string>
+    <string name="dejavu_settings_swipe_actions">Tembiapokuéra erova jave</string>
+    <string name="dejavu_settings_swipe_actions_hint">Eiporavo mba\'épa ojapo erova peteĩ tendayke pantalla ñepyrũguápe. Erova tendayke okápe omoambue tapiaite tembiapo renda.</string>
+    <string name="dejavu_settings_swipe_right">Erova akatúa gotyo</string>
+    <string name="dejavu_settings_swipe_left">Erova asu gotyo</string>
+    <string name="dejavu_settings_swipe_switch_workspaces">Emoambue tembiapo renda</string>
 </resources>

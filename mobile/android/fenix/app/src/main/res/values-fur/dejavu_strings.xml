@@ -626,6 +626,9 @@
     <string name="dejavu_loading_colors_workspace_summary">I colôrs dal spazi di lavôr de schede. Lis schedis privadis e i spazis di lavôr cence colôrs a mostrin l\'arcobalen.</string>
     <string name="dejavu_loading_colors_custom">Colôrs personalizâts</string>
     <string name="dejavu_loading_colors_custom_summary">Sielç fin a trê colôrs. Tocje di gnûf par cambiâju.</string>
-    <string name="dejavu_settings_swipe_to_close">Scor lis schedis par sierâlis</string>
-    <string name="dejavu_settings_swipe_to_close_summary">Te videade iniziâl, scori une schede di bande le siere. Par cambiâ spazi di lavôr, scor fûr des schedis o dopre la sbare dai spazis di lavôr.</string>
+    <string name="dejavu_settings_swipe_actions">Azions dal scoriment</string>
+    <string name="dejavu_settings_swipe_actions_hint">Sielç ce che al fâs il scori une schede te videade iniziâl. Il scori fûr des schedis al cambie simpri spazi di lavôr.</string>
+    <string name="dejavu_settings_swipe_right">Scori a diestre</string>
+    <string name="dejavu_settings_swipe_left">Scori a çampe</string>
+    <string name="dejavu_settings_swipe_switch_workspaces">Cambiâ spazi di lavôr</string>
 </resources>

@@ -626,6 +626,9 @@
     <string name="dejavu_loading_colors_workspace_summary">Litir vinnusvæðis flipans. Huliðsflipar og vinnusvæði án lita sýna regnbogann.</string>
     <string name="dejavu_loading_colors_custom">Sérsniðnir litir</string>
     <string name="dejavu_loading_colors_custom_summary">Veldu allt að þrjá liti. Ýttu aftur til að breyta þeim.</string>
-    <string name="dejavu_settings_swipe_to_close">Strjúka flipa til að loka þeim</string>
-    <string name="dejavu_settings_swipe_to_close_summary">Á upphafssíðunni lokast flipi þegar honum er strokið til hliðar. Til að skipta um vinnusvæði skaltu strjúka utan flipanna eða nota vinnusvæðastikuna.</string>
+    <string name="dejavu_settings_swipe_actions">Strokaðgerðir</string>
+    <string name="dejavu_settings_swipe_actions_hint">Veldu hvað gerist þegar flipa er strokið á upphafssíðunni. Að strjúka utan flipanna skiptir alltaf um vinnusvæði.</string>
+    <string name="dejavu_settings_swipe_right">Strjúka til hægri</string>
+    <string name="dejavu_settings_swipe_left">Strjúka til vinstri</string>
+    <string name="dejavu_settings_swipe_switch_workspaces">Skipta um vinnusvæði</string>
 </resources>

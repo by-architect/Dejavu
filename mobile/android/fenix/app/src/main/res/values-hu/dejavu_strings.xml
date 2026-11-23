@@ -626,6 +626,9 @@
     <string name="dejavu_loading_colors_workspace_summary">A lap munkaterületének színei. A privát lapok és a szín nélküli munkaterületek a szivárványt mutatják.</string>
     <string name="dejavu_loading_colors_custom">Egyéni színek</string>
     <string name="dejavu_loading_colors_custom_summary">Válasszon legfeljebb három színt. Koppintson újra a módosításukhoz.</string>
-    <string name="dejavu_settings_swipe_to_close">Lapok bezárása húzással</string>
-    <string name="dejavu_settings_swipe_to_close_summary">A kezdőképernyőn egy lap oldalra húzása bezárja a lapot. A munkaterületek közti váltáshoz húzza az ujját a lapokon kívül, vagy használja a munkaterületek sávját.</string>
+    <string name="dejavu_settings_swipe_actions">Húzási műveletek</string>
+    <string name="dejavu_settings_swipe_actions_hint">Válassza ki, mit tegyen egy lap húzása a kezdőképernyőn. A lapokon kívüli húzás mindig munkaterületet vált.</string>
+    <string name="dejavu_settings_swipe_right">Húzás jobbra</string>
+    <string name="dejavu_settings_swipe_left">Húzás balra</string>
+    <string name="dejavu_settings_swipe_switch_workspaces">Munkaterület váltása</string>
 </resources>

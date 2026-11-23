@@ -626,6 +626,9 @@
     <string name="dejavu_loading_colors_workspace_summary">As cores do espazo de traballo da lapela. As lapelas privadas e os espazos de traballo sen cores amosan o arco da vella.</string>
     <string name="dejavu_loading_colors_custom">Cores personalizadas</string>
     <string name="dejavu_loading_colors_custom_summary">Escolle ata tres cores. Toca de novo para cambialas.</string>
-    <string name="dejavu_settings_swipe_to_close">Desprazar as lapelas para pechalas</string>
-    <string name="dejavu_settings_swipe_to_close_summary">Na páxina de inicio, desprazar unha lapela cara a un lado péchaa. Para cambiar de espazo de traballo, despraza fóra das lapelas ou usa a barra de espazos de traballo.</string>
+    <string name="dejavu_settings_swipe_actions">Accións ao desprazar</string>
+    <string name="dejavu_settings_swipe_actions_hint">Escolle que fai desprazar unha lapela na páxina de inicio. Desprazar fóra das lapelas sempre cambia de espazo de traballo.</string>
+    <string name="dejavu_settings_swipe_right">Desprazar cara á dereita</string>
+    <string name="dejavu_settings_swipe_left">Desprazar cara á esquerda</string>
+    <string name="dejavu_settings_swipe_switch_workspaces">Cambiar de espazo de traballo</string>
 </resources>

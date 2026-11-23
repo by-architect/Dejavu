@@ -618,6 +618,9 @@
     <string name="dejavu_loading_colors_workspace_summary">ສີຂອງພື້ນທີ່ເຮັດວຽກຂອງແທັບ. ແທັບສ່ວນຕົວ ແລະ ພື້ນທີ່ເຮັດວຽກທີ່ບໍ່ມີສີ ຈະສະແດງຮຸ້ງ.</string>
     <string name="dejavu_loading_colors_custom">ສີກຳນົດເອງ</string>
     <string name="dejavu_loading_colors_custom_summary">ເລືອກໄດ້ເຖິງສາມສີ. ແຕະອີກຄັ້ງເພື່ອປ່ຽນ.</string>
-    <string name="dejavu_settings_swipe_to_close">ປັດແທັບເພື່ອປິດ</string>
-    <string name="dejavu_settings_swipe_to_close_summary">ຢູ່ໜ້າຈໍຫຼັກ, ການປັດແທັບໄປທາງຂ້າງຈະປິດມັນ. ເພື່ອສະຫຼັບພື້ນທີ່ເຮັດວຽກ, ໃຫ້ປັດຢູ່ນອກແທັບ ຫຼື ໃຊ້ແຖບພື້ນທີ່ເຮັດວຽກ.</string>
+    <string name="dejavu_settings_swipe_actions">ຄຳສັ່ງການປັດ</string>
+    <string name="dejavu_settings_swipe_actions_hint">ເລືອກວ່າການປັດແທັບຢູ່ໜ້າຈໍຫຼັກຈະເຮັດຫຍັງ. ການປັດຢູ່ນອກແທັບຈະສະຫຼັບພື້ນທີ່ເຮັດວຽກສະເໝີ.</string>
+    <string name="dejavu_settings_swipe_right">ປັດໄປຂວາ</string>
+    <string name="dejavu_settings_swipe_left">ປັດໄປຊ້າຍ</string>
+    <string name="dejavu_settings_swipe_switch_workspaces">ສະຫຼັບພື້ນທີ່ເຮັດວຽກ</string>
 </resources>

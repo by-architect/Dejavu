@@ -626,6 +626,9 @@
     <string name="dejavu_loading_colors_workspace_summary">بەتكۈچ تەۋە خىزمەت دائىرىسىنىڭ رەڭلىرى. شەخسىي بەتكۈچلەر ۋە رەڭسىز خىزمەت دائىرىلىرى ھەسەن-ھۈسەننى كۆرسىتىدۇ.</string>
     <string name="dejavu_loading_colors_custom">ئىختىيارىي رەڭلەر</string>
     <string name="dejavu_loading_colors_custom_summary">ئۈچ رەڭگىچە تاللاڭ. ئۆزگەرتىش ئۈچۈن قايتا چېكىڭ.</string>
-    <string name="dejavu_settings_swipe_to_close">بەتكۈچنى سۈرۈپ يېپىش</string>
-    <string name="dejavu_settings_swipe_to_close_summary">باش بەتتە بەتكۈچنى يانغا سۈرسىڭىز ئۇ يېپىلىدۇ. خىزمەت دائىرىسىنى ئالماشتۇرۇش ئۈچۈن بەتكۈچلەرنىڭ سىرتىدا سۈرۈڭ ياكى خىزمەت دائىرىسى بالدىقىنى ئىشلىتىڭ.</string>
+    <string name="dejavu_settings_swipe_actions">سۈرۈش مەشغۇلاتلىرى</string>
+    <string name="dejavu_settings_swipe_actions_hint">باش بەتتە بەتكۈچنى سۈرگەندە نېمە قىلىدىغانلىقىنى تاللاڭ. بەتكۈچلەرنىڭ سىرتىدا سۈرسىڭىز ھەمىشە خىزمەت دائىرىسى ئالمىشىدۇ.</string>
+    <string name="dejavu_settings_swipe_right">ئوڭغا سۈرۈش</string>
+    <string name="dejavu_settings_swipe_left">سولغا سۈرۈش</string>
+    <string name="dejavu_settings_swipe_switch_workspaces">خىزمەت دائىرىسىنى ئالماشتۇرۇش</string>
 </resources>

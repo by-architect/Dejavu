@@ -626,6 +626,9 @@
     <string name="dejavu_loading_colors_workspace_summary">ਟੈਬ ਦੇ ਵਰਕਸਪੇਸ ਦੇ ਰੰਗ। ਪ੍ਰਾਈਵੇਟ ਟੈਬਾਂ ਅਤੇ ਬਿਨਾਂ ਰੰਗਾਂ ਵਾਲੇ ਵਰਕਸਪੇਸ ਸਤਰੰਗੀ ਪੀਂਘ ਦਿਖਾਉਂਦੇ ਹਨ।</string>
     <string name="dejavu_loading_colors_custom">ਕਸਟਮ ਰੰਗ</string>
     <string name="dejavu_loading_colors_custom_summary">ਤਿੰਨ ਤੱਕ ਰੰਗ ਚੁਣੋ। ਬਦਲਣ ਲਈ ਮੁੜ ਟੈਪ ਕਰੋ।</string>
-    <string name="dejavu_settings_swipe_to_close">ਬੰਦ ਕਰਨ ਲਈ ਟੈਬਾਂ ਨੂੰ ਸਵਾਈਪ ਕਰੋ</string>
-    <string name="dejavu_settings_swipe_to_close_summary">ਹੋਮ ਸਫ਼ੇ ‘ਤੇ ਟੈਬ ਨੂੰ ਖੱਬੇ ਜਾਂ ਸੱਜੇ ਸਵਾਈਪ ਕਰਨ ਨਾਲ ਉਹ ਬੰਦ ਹੋ ਜਾਂਦੀ ਹੈ। ਵਰਕਸਪੇਸ ਬਦਲਣ ਲਈ ਟੈਬਾਂ ਤੋਂ ਬਾਹਰ ਸਵਾਈਪ ਕਰੋ ਜਾਂ ਵਰਕਸਪੇਸ ਪੱਟੀ ਵਰਤੋ।</string>
+    <string name="dejavu_settings_swipe_actions">ਸਵਾਈਪ ਕਾਰਵਾਈਆਂ</string>
+    <string name="dejavu_settings_swipe_actions_hint">ਚੁਣੋ ਕਿ ਹੋਮ ਸਫ਼ੇ ‘ਤੇ ਟੈਬ ਨੂੰ ਸਵਾਈਪ ਕਰਨ ਨਾਲ ਕੀ ਹੋਵੇ। ਟੈਬਾਂ ਤੋਂ ਬਾਹਰ ਸਵਾਈਪ ਕਰਨ ਨਾਲ ਹਮੇਸ਼ਾਂ ਵਰਕਸਪੇਸ ਬਦਲਦੀ ਹੈ।</string>
+    <string name="dejavu_settings_swipe_right">ਸੱਜੇ ਸਵਾਈਪ ਕਰੋ</string>
+    <string name="dejavu_settings_swipe_left">ਖੱਬੇ ਸਵਾਈਪ ਕਰੋ</string>
+    <string name="dejavu_settings_swipe_switch_workspaces">ਵਰਕਸਪੇਸ ਬਦਲੋ</string>
 </resources>

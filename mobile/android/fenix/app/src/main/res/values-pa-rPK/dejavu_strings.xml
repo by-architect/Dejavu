@@ -626,6 +626,9 @@
     <string name="dejavu_loading_colors_workspace_summary">ٹیب دی ورک سپیس دے رنگ۔ نجی ٹیباں تے بنا رنگاں والیاں ورک سپیساں پینگھ وکھاندیاں نیں۔</string>
     <string name="dejavu_loading_colors_custom">مرضی دے رنگ</string>
     <string name="dejavu_loading_colors_custom_summary">تن تیکر رنگ چݨو۔ بدلن لئی مڑ ٹیپ کرو۔</string>
-    <string name="dejavu_settings_swipe_to_close">بند کرن لئی ٹیباں سوائپ کرو</string>
-    <string name="dejavu_settings_swipe_to_close_summary">ہوم سکرین تے کسے ٹیب نوں پاسے ول سوائپ کرن نال اوہ بند ہو جاندی اے۔ ورک سپیس بدلن لئی ٹیباں توں باہر سوائپ کرو یا ورک سپیس بار ورتو۔</string>
+    <string name="dejavu_settings_swipe_actions">سوائپ ایکشن</string>
+    <string name="dejavu_settings_swipe_actions_hint">چنو کہ ہوم سکرین تے ٹیب نوں سوائپ کرن نال کی ہووے۔ ٹیباں توں باہر سوائپ کرن نال ہمیشہ ورک سپیس بدلدی اے۔</string>
+    <string name="dejavu_settings_swipe_right">سجے سوائپ کرو</string>
+    <string name="dejavu_settings_swipe_left">کھبے سوائپ کرو</string>
+    <string name="dejavu_settings_swipe_switch_workspaces">ورک سپیس بدلو</string>
 </resources>

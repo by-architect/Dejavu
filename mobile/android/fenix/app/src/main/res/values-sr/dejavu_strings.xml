@@ -634,6 +634,9 @@
     <string name="dejavu_loading_colors_workspace_summary">Боје радног простора језичка. Приватни језичци и радни простори без боја приказују дугу.</string>
     <string name="dejavu_loading_colors_custom">Прилагођене боје</string>
     <string name="dejavu_loading_colors_custom_summary">Изаберите до три боје. Додирните поново да их промените.</string>
-    <string name="dejavu_settings_swipe_to_close">Затварање језичака превлачењем</string>
-    <string name="dejavu_settings_swipe_to_close_summary">На почетном екрану превлачење језичка у страну га затвара. Да бисте променили радни простор, превуците изван језичака или користите траку радних простора.</string>
+    <string name="dejavu_settings_swipe_actions">Радње превлачења</string>
+    <string name="dejavu_settings_swipe_actions_hint">Изаберите шта ради превлачење језичка на почетном екрану. Превлачење изван језичака увек мења радни простор.</string>
+    <string name="dejavu_settings_swipe_right">Превлачење удесно</string>
+    <string name="dejavu_settings_swipe_left">Превлачење улево</string>
+    <string name="dejavu_settings_swipe_switch_workspaces">Промена радног простора</string>
 </resources>

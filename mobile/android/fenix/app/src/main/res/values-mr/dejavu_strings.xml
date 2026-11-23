@@ -626,6 +626,9 @@
     <string name="dejavu_loading_colors_workspace_summary">टॅबच्या कार्यक्षेत्राचे रंग. खाजगी टॅब आणि रंग नसलेली कार्यक्षेत्रे इंद्रधनुष्य दाखवतात.</string>
     <string name="dejavu_loading_colors_custom">सानुकूल रंग</string>
     <string name="dejavu_loading_colors_custom_summary">तीनपर्यंत रंग निवडा. बदलण्यासाठी पुन्हा टॅप करा.</string>
-    <string name="dejavu_settings_swipe_to_close">बंद करण्यासाठी टॅब स्वाइप करा</string>
-    <string name="dejavu_settings_swipe_to_close_summary">मुख्यपृष्ठावर टॅब डावीकडे किंवा उजवीकडे स्वाइप केल्यास तो बंद होतो. कार्यक्षेत्रे बदलण्यासाठी टॅबच्या बाहेर स्वाइप करा किंवा कार्यक्षेत्र पट्टी वापरा.</string>
+    <string name="dejavu_settings_swipe_actions">स्वाइप क्रिया</string>
+    <string name="dejavu_settings_swipe_actions_hint">मुख्यपृष्ठावर टॅब स्वाइप केल्यावर काय व्हावे ते निवडा. टॅबच्या बाहेर स्वाइप केल्यास नेहमी कार्यक्षेत्र बदलते.</string>
+    <string name="dejavu_settings_swipe_right">उजवीकडे स्वाइप करा</string>
+    <string name="dejavu_settings_swipe_left">डावीकडे स्वाइप करा</string>
+    <string name="dejavu_settings_swipe_switch_workspaces">कार्यक्षेत्र बदला</string>
 </resources>

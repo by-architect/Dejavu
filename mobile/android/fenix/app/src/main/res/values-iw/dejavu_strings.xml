@@ -634,6 +634,9 @@
     <string name="dejavu_loading_colors_workspace_summary">הצבעים של מרחב העבודה של הלשונית. לשוניות פרטיות ומרחבי עבודה ללא צבעים מציגים את הקשת.</string>
     <string name="dejavu_loading_colors_custom">צבעים מותאמים אישית</string>
     <string name="dejavu_loading_colors_custom_summary">בחרו עד שלושה צבעים. הקישו שוב כדי לשנות אותם.</string>
-    <string name="dejavu_settings_swipe_to_close">החלקת לשוניות לסגירה</string>
-    <string name="dejavu_settings_swipe_to_close_summary">במסך הבית, החלקת לשונית הצידה סוגרת אותה. כדי לעבור בין מרחבי עבודה, החליקו מחוץ ללשוניות או השתמשו בסרגל מרחבי העבודה.</string>
+    <string name="dejavu_settings_swipe_actions">פעולות החלקה</string>
+    <string name="dejavu_settings_swipe_actions_hint">בחרו מה עושה החלקת לשונית במסך הבית. החלקה מחוץ ללשוניות תמיד עוברת בין מרחבי עבודה.</string>
+    <string name="dejavu_settings_swipe_right">החלקה ימינה</string>
+    <string name="dejavu_settings_swipe_left">החלקה שמאלה</string>
+    <string name="dejavu_settings_swipe_switch_workspaces">מעבר בין מרחבי עבודה</string>
 </resources>

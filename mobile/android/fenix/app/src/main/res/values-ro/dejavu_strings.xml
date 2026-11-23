@@ -634,6 +634,9 @@
     <string name="dejavu_loading_colors_workspace_summary">Culorile spațiului de lucru al filei. Filele private și spațiile de lucru fără culori afișează curcubeul.</string>
     <string name="dejavu_loading_colors_custom">Culori personalizate</string>
     <string name="dejavu_loading_colors_custom_summary">Alege până la trei culori. Atinge din nou pentru a le schimba.</string>
-    <string name="dejavu_settings_swipe_to_close">Glisează filele pentru a le închide</string>
-    <string name="dejavu_settings_swipe_to_close_summary">Pe pagina de start, glisarea laterală a unei file o închide. Pentru a comuta între spațiile de lucru, glisează în afara filelor sau folosește bara spațiilor de lucru.</string>
+    <string name="dejavu_settings_swipe_actions">Acțiuni la glisare</string>
+    <string name="dejavu_settings_swipe_actions_hint">Alege ce face glisarea unei file pe pagina de start. Glisarea în afara filelor comută mereu spațiul de lucru.</string>
+    <string name="dejavu_settings_swipe_right">Glisare spre dreapta</string>
+    <string name="dejavu_settings_swipe_left">Glisare spre stânga</string>
+    <string name="dejavu_settings_swipe_switch_workspaces">Comută spațiul de lucru</string>
 </resources>

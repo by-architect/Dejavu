@@ -626,6 +626,9 @@
     <string name="dejavu_loading_colors_workspace_summary">ടാബിന്റെ പണിയിടത്തിന്റെ നിറങ്ങൾ. സ്വകാര്യ ടാബുകളും നിറങ്ങളില്ലാത്ത പണിയിടങ്ങളും മഴവില്ല് കാണിക്കുന്നു.</string>
     <string name="dejavu_loading_colors_custom">ഇഷ്‌ടാനുസൃത നിറങ്ങൾ</string>
     <string name="dejavu_loading_colors_custom_summary">മൂന്ന് നിറങ്ങൾ വരെ തിരഞ്ഞെടുക്കുക. മാറ്റാൻ വീണ്ടും ടാപ്പ് ചെയ്യുക.</string>
-    <string name="dejavu_settings_swipe_to_close">അടയ്ക്കാൻ ടാബുകൾ സ്വൈപ്പ് ചെയ്യുക</string>
-    <string name="dejavu_settings_swipe_to_close_summary">ഹോം താളിൽ, ഒരു ടാബ് വശത്തേക്ക് സ്വൈപ്പ് ചെയ്താൽ അത് അടയും. പണിയിടങ്ങൾ മാറാൻ, ടാബുകൾക്ക് പുറത്ത് സ്വൈപ്പ് ചെയ്യുക അല്ലെങ്കിൽ പണിയിട ബാർ ഉപയോഗിക്കുക.</string>
+    <string name="dejavu_settings_swipe_actions">സ്വൈപ്പ് പ്രവർത്തനങ്ങൾ</string>
+    <string name="dejavu_settings_swipe_actions_hint">ഹോം താളിൽ ഒരു ടാബ് സ്വൈപ്പ് ചെയ്യുമ്പോൾ എന്തു സംഭവിക്കണമെന്ന് തിരഞ്ഞെടുക്കുക. ടാബുകൾക്ക് പുറത്ത് സ്വൈപ്പ് ചെയ്താൽ എപ്പോഴും പണിയിടം മാറും.</string>
+    <string name="dejavu_settings_swipe_right">വലത്തേക്ക് സ്വൈപ്പ് ചെയ്യുക</string>
+    <string name="dejavu_settings_swipe_left">ഇടത്തേക്ക് സ്വൈപ്പ് ചെയ്യുക</string>
+    <string name="dejavu_settings_swipe_switch_workspaces">പണിയിടം മാറുക</string>
 </resources>

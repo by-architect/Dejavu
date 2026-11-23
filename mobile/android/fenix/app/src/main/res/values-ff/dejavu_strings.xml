@@ -626,6 +626,9 @@
     <string name="dejavu_loading_colors_workspace_summary">Les couleurs de l\'espace de travail de la tabbere. Les tabbeeje suuriiɗe et les espaces sans couleurs affichent l\'arc-en-ciel.</string>
     <string name="dejavu_loading_colors_custom">Couleurs personnalisées</string>
     <string name="dejavu_loading_colors_custom_summary">Choisis jusqu\'à trois couleurs. Touche à nouveau pour les changer.</string>
-    <string name="dejavu_settings_swipe_to_close">Glisser les tabbe pour les fermer</string>
-    <string name="dejavu_settings_swipe_to_close_summary">Sur l\'écran d\'accueil, faire glisser une tabbere sur le côté la ferme. Pour changer d\'espace de travail, fais glisser en dehors des tabbe ou utilise la barre des espaces de travail.</string>
+    <string name="dejavu_settings_swipe_actions">Actions de glissement</string>
+    <string name="dejavu_settings_swipe_actions_hint">Choisis ce que fait le glissement d\'une tabbere sur l\'écran d\'accueil. Faire glisser en dehors des tabbe change toujours d\'espace de travail.</string>
+    <string name="dejavu_settings_swipe_right">Glisser vers la droite</string>
+    <string name="dejavu_settings_swipe_left">Glisser vers la gauche</string>
+    <string name="dejavu_settings_swipe_switch_workspaces">Changer d\'espace de travail</string>
 </resources>

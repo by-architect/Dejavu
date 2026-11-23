@@ -626,6 +626,9 @@
     <string name="dejavu_loading_colors_workspace_summary">Τα χρώματα του χώρου εργασίας της καρτέλας. Οι ιδιωτικές καρτέλες και οι χώροι εργασίας χωρίς χρώματα δείχνουν το ουράνιο τόξο.</string>
     <string name="dejavu_loading_colors_custom">Προσαρμοσμένα χρώματα</string>
     <string name="dejavu_loading_colors_custom_summary">Επιλέξτε έως τρία χρώματα. Πατήστε ξανά για να τα αλλάξετε.</string>
-    <string name="dejavu_settings_swipe_to_close">Κλείσιμο καρτελών με σύρσιμο</string>
-    <string name="dejavu_settings_swipe_to_close_summary">Στην αρχική οθόνη, μια καρτέλα κλείνει αν τη σύρετε πλάγια. Για εναλλαγή χώρου εργασίας, σύρετε έξω από τις καρτέλες ή χρησιμοποιήστε τη γραμμή των χώρων εργασίας.</string>
+    <string name="dejavu_settings_swipe_actions">Ενέργειες σύρσιμου</string>
+    <string name="dejavu_settings_swipe_actions_hint">Επιλέξτε τι κάνει το σύρσιμο μιας καρτέλας στην αρχική οθόνη. Το σύρσιμο έξω από τις καρτέλες αλλάζει πάντα χώρο εργασίας.</string>
+    <string name="dejavu_settings_swipe_right">Σύρσιμο δεξιά</string>
+    <string name="dejavu_settings_swipe_left">Σύρσιμο αριστερά</string>
+    <string name="dejavu_settings_swipe_switch_workspaces">Εναλλαγή χώρου εργασίας</string>
 </resources>

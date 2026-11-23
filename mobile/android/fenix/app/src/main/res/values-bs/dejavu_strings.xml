@@ -634,6 +634,9 @@
     <string name="dejavu_loading_colors_workspace_summary">Boje radnog prostora taba. Privatni tabovi i radni prostori bez boja prikazuju dugu.</string>
     <string name="dejavu_loading_colors_custom">Prilagođene boje</string>
     <string name="dejavu_loading_colors_custom_summary">Odaberite do tri boje. Dodirnite ponovo da ih promijenite.</string>
-    <string name="dejavu_settings_swipe_to_close">Zatvori tabove prevlačenjem</string>
-    <string name="dejavu_settings_swipe_to_close_summary">Na početnom ekranu, prevlačenje taba ustranu ga zatvara. Da promijenite radni prostor, prevucite izvan tabova ili koristite traku radnih prostora.</string>
+    <string name="dejavu_settings_swipe_actions">Radnje prevlačenja</string>
+    <string name="dejavu_settings_swipe_actions_hint">Odaberite šta radi prevlačenje taba na početnom ekranu. Prevlačenje izvan tabova uvijek mijenja radni prostor.</string>
+    <string name="dejavu_settings_swipe_right">Prevlačenje udesno</string>
+    <string name="dejavu_settings_swipe_left">Prevlačenje ulijevo</string>
+    <string name="dejavu_settings_swipe_switch_workspaces">Promjena radnog prostora</string>
 </resources>

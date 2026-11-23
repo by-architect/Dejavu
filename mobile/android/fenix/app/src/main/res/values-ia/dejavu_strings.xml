@@ -626,6 +626,9 @@
     <string name="dejavu_loading_colors_workspace_summary">Le colores del spatio de labor del scheda. Schedas private e spatios de labor sin colores monstra le arco iris.</string>
     <string name="dejavu_loading_colors_custom">Colores personalisate</string>
     <string name="dejavu_loading_colors_custom_summary">Selige usque a tres colores. Tocca de novo pro cambiar los.</string>
-    <string name="dejavu_settings_swipe_to_close">Glissar schedas pro clauder los</string>
-    <string name="dejavu_settings_swipe_to_close_summary">In le schermo initial, glissar un scheda lateralmente lo claude. Pro cambiar de spatio de labor, glissa foras del schedas o usa le barra del spatios de labor.</string>
+    <string name="dejavu_settings_swipe_actions">Actiones de glissamento</string>
+    <string name="dejavu_settings_swipe_actions_hint">Elige lo que glissar un scheda in le schermo initial face. Glissar foras del schedas cambia sempre de spatio de labor.</string>
+    <string name="dejavu_settings_swipe_right">Glissar a dextra</string>
+    <string name="dejavu_settings_swipe_left">Glissar a sinistra</string>
+    <string name="dejavu_settings_swipe_switch_workspaces">Cambiar de spatio de labor</string>
 </resources>

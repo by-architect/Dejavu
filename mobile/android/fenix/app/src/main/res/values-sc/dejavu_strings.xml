@@ -626,6 +626,9 @@
     <string name="dejavu_loading_colors_workspace_summary">Is colores de s\'ispàtziu de traballu de s\'ischeda. Is ischedas privadas e is ispàtzios de traballu chene colores ammustrant s\'arcu de chelu.</string>
     <string name="dejavu_loading_colors_custom">Colores personalizados</string>
     <string name="dejavu_loading_colors_custom_summary">Sèbera finas a tres colores. Toca torra pro ddos cambiare.</string>
-    <string name="dejavu_settings_swipe_to_close">Iscurre is ischedas pro las serrare</string>
-    <string name="dejavu_settings_swipe_to_close_summary">In sa pàgina printzipale, iscùrrere un\'ischeda a costadu la serrat. Pro cambiare ispàtziu de traballu, iscurre a foras de is ischedas o imprea sa barra de is ispàtzios de traballu.</string>
+    <string name="dejavu_settings_swipe_actions">Atziones de iscurrimentu</string>
+    <string name="dejavu_settings_swipe_actions_hint">Sèbera ite faghet s\'iscùrrere de un\'ischeda in sa pàgina printzipale. S\'iscùrrere a foras de is ischedas cambiat semper ispàtziu de traballu.</string>
+    <string name="dejavu_settings_swipe_right">Iscurre a dereta</string>
+    <string name="dejavu_settings_swipe_left">Iscurre a manca</string>
+    <string name="dejavu_settings_swipe_switch_workspaces">Cambia ispàtziu de traballu</string>
 </resources>

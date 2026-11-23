@@ -626,6 +626,9 @@
     <string name="dejavu_loading_colors_workspace_summary">Ang mga kolor sa workspace sa tab. Ang mga pribadong tab ug mga workspace nga walay kolor magpakita sa balangaw.</string>
     <string name="dejavu_loading_colors_custom">Custom nga mga kolor</string>
     <string name="dejavu_loading_colors_custom_summary">Pagpili hangtod sa tulo ka kolor. I-tap pag-usab aron usbon kini.</string>
-    <string name="dejavu_settings_swipe_to_close">I-swipe ang mga tab aron isira</string>
-    <string name="dejavu_settings_swipe_to_close_summary">Sa home screen, ang pag-swipe sa tab patagilid mosira niini. Aron mobalhin og workspace, i-swipe sa gawas sa mga tab o gamita ang bar sa mga workspace.</string>
+    <string name="dejavu_settings_swipe_actions">Mga aksyon sa pag-swipe</string>
+    <string name="dejavu_settings_swipe_actions_hint">Pilia kon unsa ang buhaton sa pag-swipe sa tab sa home screen. Ang pag-swipe sa gawas sa mga tab kanunay mobalhin og workspace.</string>
+    <string name="dejavu_settings_swipe_right">I-swipe pakanan</string>
+    <string name="dejavu_settings_swipe_left">I-swipe pawala</string>
+    <string name="dejavu_settings_swipe_switch_workspaces">Balhin og workspace</string>
 </resources>

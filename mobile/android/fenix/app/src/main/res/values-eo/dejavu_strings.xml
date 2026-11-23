@@ -626,6 +626,9 @@
     <string name="dejavu_loading_colors_workspace_summary">La koloroj de la laborspaco de la langeto. Privataj langetoj kaj laborspacoj sen koloroj montras la ĉielarkon.</string>
     <string name="dejavu_loading_colors_custom">Propraj koloroj</string>
     <string name="dejavu_loading_colors_custom_summary">Elektu ĝis tri kolorojn. Tuŝetu denove por ŝanĝi ilin.</string>
-    <string name="dejavu_settings_swipe_to_close">Ŝovi langetojn por fermi ilin</string>
-    <string name="dejavu_settings_swipe_to_close_summary">Sur la hejmpaĝo, ŝovi langeton flanken fermas ĝin. Por ŝanĝi laborspacon, ŝovu ekster la langetoj aŭ uzu la strion de laborspacoj.</string>
+    <string name="dejavu_settings_swipe_actions">Ŝovaj agoj</string>
+    <string name="dejavu_settings_swipe_actions_hint">Elektu, kion faras ŝovi langeton sur la hejmpaĝo. Ŝovi ekster la langetoj ĉiam ŝanĝas laborspacon.</string>
+    <string name="dejavu_settings_swipe_right">Ŝovi dekstren</string>
+    <string name="dejavu_settings_swipe_left">Ŝovi maldekstren</string>
+    <string name="dejavu_settings_swipe_switch_workspaces">Ŝanĝi laborspacon</string>
 </resources>

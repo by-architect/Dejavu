@@ -626,6 +626,9 @@
     <string name="dejavu_loading_colors_workspace_summary">Таб эш өлкәсенең төсләре. Хосусый таблар һәм төссез эш өлкәләре салават күперен күрсәтә.</string>
     <string name="dejavu_loading_colors_custom">Махсус төсләр</string>
     <string name="dejavu_loading_colors_custom_summary">Өч төскә кадәр сайлагыз. Үзгәртү өчен кабат басыгыз.</string>
-    <string name="dejavu_settings_swipe_to_close">Табларны шудырып ябу</string>
-    <string name="dejavu_settings_swipe_to_close_summary">Баш биттә табны ян-якка шудырсагыз, ул ябыла. Эш өлкәләре арасында күчү өчен таблардан тыш урында шудырыгыз яки эш өлкәләре панелен кулланыгыз.</string>
+    <string name="dejavu_settings_swipe_actions">Шудыру гамәлләре</string>
+    <string name="dejavu_settings_swipe_actions_hint">Баш биттә табны шудырганда нәрсә булачагын сайлагыз. Таблардан тыш урында шудыру һәрвакыт эш өлкәсен алыштыра.</string>
+    <string name="dejavu_settings_swipe_right">Уңга шудыру</string>
+    <string name="dejavu_settings_swipe_left">Сулга шудыру</string>
+    <string name="dejavu_settings_swipe_switch_workspaces">Эш өлкәсен алыштыру</string>
 </resources>

@@ -634,6 +634,9 @@
     <string name="dejavu_loading_colors_workspace_summary">Los colores del espacio de trabajo de la pestaña. Las pestañas privadas y los espacios de trabajo sin colores muestran el arcoíris.</string>
     <string name="dejavu_loading_colors_custom">Colores personalizados</string>
     <string name="dejavu_loading_colors_custom_summary">Elegí hasta tres colores. Tocá de nuevo para cambiarlos.</string>
-    <string name="dejavu_settings_swipe_to_close">Deslizar pestañas para cerrarlas</string>
-    <string name="dejavu_settings_swipe_to_close_summary">En la página de inicio, deslizar una pestaña hacia un costado la cierra. Para cambiar de espacio de trabajo, deslizá fuera de las pestañas o usá la barra de espacios de trabajo.</string>
+    <string name="dejavu_settings_swipe_actions">Acciones al deslizar</string>
+    <string name="dejavu_settings_swipe_actions_hint">Elegí qué hace deslizar una pestaña en la página de inicio. Deslizar fuera de las pestañas siempre cambia de espacio de trabajo.</string>
+    <string name="dejavu_settings_swipe_right">Deslizar hacia la derecha</string>
+    <string name="dejavu_settings_swipe_left">Deslizar hacia la izquierda</string>
+    <string name="dejavu_settings_swipe_switch_workspaces">Cambiar de espacio de trabajo</string>
 </resources>

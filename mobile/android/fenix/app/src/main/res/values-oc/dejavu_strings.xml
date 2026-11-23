@@ -626,6 +626,9 @@
     <string name="dejavu_loading_colors_workspace_summary">Las colors de l\'espaci de trabalh de l\'onglet. Los onglets privats e los espacis de trabalh sens colors mostran l\'arc de Sant Martin.</string>
     <string name="dejavu_loading_colors_custom">Colors personalizadas</string>
     <string name="dejavu_loading_colors_custom_summary">Causissètz fins a tres colors. Tocatz tornamai per las cambiar.</string>
-    <string name="dejavu_settings_swipe_to_close">Far lisar los onglets per los tampar</string>
-    <string name="dejavu_settings_swipe_to_close_summary">Sus l’ecran d’acuèlh, far lisar un onglet de costat lo tampa. Per cambiar d’espaci de trabalh, fasètz lisar fòra dels onglets o utilizatz la barra dels espacis de trabalh.</string>
+    <string name="dejavu_settings_swipe_actions">Accions de lisada</string>
+    <string name="dejavu_settings_swipe_actions_hint">Causissètz çò que fa lo fait de far lisar un onglet sus l’ecran d’acuèlh. Far lisar fòra dels onglets càmbia totjorn d’espaci de trabalh.</string>
+    <string name="dejavu_settings_swipe_right">Far lisar cap a drecha</string>
+    <string name="dejavu_settings_swipe_left">Far lisar cap a esquèrra</string>
+    <string name="dejavu_settings_swipe_switch_workspaces">Cambiar d’espaci de trabalh</string>
 </resources>

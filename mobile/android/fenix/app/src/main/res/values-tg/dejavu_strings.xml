@@ -626,6 +626,9 @@
     <string name="dejavu_loading_colors_workspace_summary">Рангҳои фазои варақа. Варақаҳои хусусӣ ва фазоҳои бе ранг тирукамонро нишон медиҳанд.</string>
     <string name="dejavu_loading_colors_custom">Рангҳои фармоишӣ</string>
     <string name="dejavu_loading_colors_custom_summary">То се рангро интихоб кунед. Барои иваз кардан боз зарба занед.</string>
-    <string name="dejavu_settings_swipe_to_close">Пӯшидани варақаҳо бо кашидан</string>
-    <string name="dejavu_settings_swipe_to_close_summary">Дар саҳифаи асосӣ кашидани варақа ба тараф онро мепӯшад. Барои гузаштан байни фазоҳо берун аз варақаҳо ангушт гузаронед ё навори фазоҳоро истифода баред.</string>
+    <string name="dejavu_settings_swipe_actions">Амалҳои кашидан</string>
+    <string name="dejavu_settings_swipe_actions_hint">Интихоб кунед, ки кашидани варақа дар саҳифаи асосӣ чӣ кор мекунад. Кашидан берун аз варақаҳо ҳамеша фазоро иваз мекунад.</string>
+    <string name="dejavu_settings_swipe_right">Кашидан ба рост</string>
+    <string name="dejavu_settings_swipe_left">Кашидан ба чап</string>
+    <string name="dejavu_settings_swipe_switch_workspaces">Иваз кардани фазо</string>
 </resources>

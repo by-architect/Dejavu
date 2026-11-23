@@ -626,6 +626,9 @@
     <string name="dejavu_loading_colors_workspace_summary">Die Farben des Arbeitsbereichs des Tabs. Private Tabs und Arbeitsbereiche ohne Farben zeigen den Regenbogen.</string>
     <string name="dejavu_loading_colors_custom">Eigene Farben</string>
     <string name="dejavu_loading_colors_custom_summary">Bis zu drei Farben auswählen. Erneut tippen, um sie zu ändern.</string>
-    <string name="dejavu_settings_swipe_to_close">Tabs zum Schließen wischen</string>
-    <string name="dejavu_settings_swipe_to_close_summary">Auf der Startseite wird ein Tab geschlossen, wenn du ihn zur Seite wischst. Um den Arbeitsbereich zu wechseln, wische außerhalb der Tabs oder nutze die Leiste der Arbeitsbereiche.</string>
+    <string name="dejavu_settings_swipe_actions">Wischaktionen</string>
+    <string name="dejavu_settings_swipe_actions_hint">Wähle, was Wischen über einen Tab auf der Startseite tut. Wischen außerhalb der Tabs wechselt immer den Arbeitsbereich.</string>
+    <string name="dejavu_settings_swipe_right">Nach rechts wischen</string>
+    <string name="dejavu_settings_swipe_left">Nach links wischen</string>
+    <string name="dejavu_settings_swipe_switch_workspaces">Arbeitsbereich wechseln</string>
 </resources>

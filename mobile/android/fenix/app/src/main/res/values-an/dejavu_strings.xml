@@ -626,6 +626,9 @@
     <string name="dejavu_loading_colors_workspace_summary">As colors de l\'espacio de treballo d\'a pestanya. As pestanyas privadas y os espacios de treballo sin colors amuestran l\'arco de San Chuan.</string>
     <string name="dejavu_loading_colors_custom">Colors personalizadas</string>
     <string name="dejavu_loading_colors_custom_summary">Tría dica tres colors. Toca de nuevo pa cambiar-las.</string>
-    <string name="dejavu_settings_swipe_to_close">Eslizar as pestanyas ta zarrar-las</string>
-    <string name="dejavu_settings_swipe_to_close_summary">En a pachina d\'inicio, eslizar una pestanya enta os costaus la zarra. Ta cambiar d\'espacio de treballo, esliza fuera d\'as pestanyas u usa a barra d\'espacios de treballo.</string>
+    <string name="dejavu_settings_swipe_actions">Accions d\'eslizar</string>
+    <string name="dejavu_settings_swipe_actions_hint">Tría qué fa eslizar una pestanya en a pachina d\'inicio. Eslizar fuera d\'as pestanyas siempre cambia d\'espacio de treballo.</string>
+    <string name="dejavu_settings_swipe_right">Eslizar enta la dreita</string>
+    <string name="dejavu_settings_swipe_left">Eslizar enta la cucha</string>
+    <string name="dejavu_settings_swipe_switch_workspaces">Cambiar d\'espacio de treballo</string>
 </resources>

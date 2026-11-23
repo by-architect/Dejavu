@@ -626,6 +626,9 @@
     <string name="dejavu_loading_colors_workspace_summary">Välilehden työtilan värit. Yksityiset välilehdet ja työtilat ilman värejä näyttävät sateenkaaren.</string>
     <string name="dejavu_loading_colors_custom">Mukautetut värit</string>
     <string name="dejavu_loading_colors_custom_summary">Valitse enintään kolme väriä. Muuta niitä napauttamalla uudelleen.</string>
-    <string name="dejavu_settings_swipe_to_close">Sulje välilehdet pyyhkäisemällä</string>
-    <string name="dejavu_settings_swipe_to_close_summary">Aloitussivulla välilehti suljetaan pyyhkäisemällä sitä sivuttain. Vaihda työtilaa pyyhkäisemällä välilehtien ulkopuolella tai käytä työtilapalkkia.</string>
+    <string name="dejavu_settings_swipe_actions">Pyyhkäisytoiminnot</string>
+    <string name="dejavu_settings_swipe_actions_hint">Valitse, mitä välilehden pyyhkäisy aloitussivulla tekee. Pyyhkäisy välilehtien ulkopuolella vaihtaa aina työtilaa.</string>
+    <string name="dejavu_settings_swipe_right">Pyyhkäisy oikealle</string>
+    <string name="dejavu_settings_swipe_left">Pyyhkäisy vasemmalle</string>
+    <string name="dejavu_settings_swipe_switch_workspaces">Vaihda työtilaa</string>
 </resources>

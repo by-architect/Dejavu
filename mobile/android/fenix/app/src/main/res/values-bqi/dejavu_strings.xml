@@ -626,6 +626,9 @@
     <string name="dejavu_loading_colors_workspace_summary">رنگ یل فضای بلگه. بلگه یل سیخومی و فضایل بی رنگ رنگین کمون ن نشون ادن.</string>
     <string name="dejavu_loading_colors_custom">رنگ یل سفارشی</string>
     <string name="dejavu_loading_colors_custom_summary">تا سی رنگ وورچین. سی آلشت کردنشون دوباره بزنین.</string>
-    <string name="dejavu_settings_swipe_to_close">سی بستن، بلگه یل ن بکش</string>
-    <string name="dejavu_settings_swipe_to_close_summary">من صفحه اصلی، و بغل کشیڌن یه بلگه اونه می‌بنده. سی آلشت فضا، بیرون ز بلگه یل بکش یا ز نوار فضا یل کار بکش.</string>
+    <string name="dejavu_settings_swipe_actions">کار یل کشیڌن</string>
+    <string name="dejavu_settings_swipe_actions_hint">انتخاب کو کشیڌن یه بلگه من صفحه اصلی چه کاری می‌کنه. کشیڌن بیرون ز بلگه یل همیشه فضا نه آلشت می‌کنه.</string>
+    <string name="dejavu_settings_swipe_right">و راست بکش</string>
+    <string name="dejavu_settings_swipe_left">و چپ بکش</string>
+    <string name="dejavu_settings_swipe_switch_workspaces">آلشت فضا</string>
 </resources>

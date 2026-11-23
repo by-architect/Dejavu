@@ -47,6 +47,7 @@ import mozilla.components.ui.icons.R as iconsR
 import org.mozilla.fenix.R
 import org.mozilla.fenix.components.appstate.AppAction.PrivateBrowsingLockAction
 import org.mozilla.fenix.dejavu.actions.RowAction
+import org.mozilla.fenix.dejavu.actions.SwipeActions
 import org.mozilla.fenix.dejavu.actions.TabAction
 import org.mozilla.fenix.dejavu.browser.closeOnMiddleClick
 import org.mozilla.fenix.dejavu.browser.tabZoomTarget
@@ -119,12 +120,20 @@ internal fun PrivateWorkspacePage(
     onNewTab: () -> Unit,
     onCloseAll: () -> Unit,
     onEmptied: () -> Unit,
-    swipeToClose: Boolean = false,
+    swipeActions: SwipeActions = SwipeActions(),
 ) {
     var editing by remember { mutableStateOf(false) }
     var menuOpen by remember { mutableStateOf(false) }
     val close = RowAction.BuiltIn(TabAction.CLOSE)
     val motions = rememberRowMotions()
+
+    // Private tabs can only be closed, so only a way set to Close swipes them, and their rows away.
+    fun swipeClose(tab: TabSessionState, configured: RowAction?): SwipeOption? =
+        SwipeOption(icon = TabAction.CLOSE.icon, closes = true, ends = SwipeEnd.AWAY) {
+            motions.swiped(tab.id)
+            onCloseTab(tab)
+        }.takeIf { configured == close }
+
     val plan = motions.plan(
         rows = tabs.associate { it.id to setOf(it.id) },
         openTabIds = tabs.mapTo(mutableSetOf()) { it.id },
@@ -276,14 +285,8 @@ internal fun PrivateWorkspacePage(
                     onClick = { onTabClick(tab) },
                     isPrivate = true,
                     icon = tab.content.icon,
-                    onSwipeClose = if (swipeToClose) {
-                        {
-                            motions.swiped(tab.id)
-                            onCloseTab(tab)
-                        }
-                    } else {
-                        null
-                    },
+                    swipeRight = swipeClose(tab, swipeActions.right),
+                    swipeLeft = swipeClose(tab, swipeActions.left),
                     modifier = Modifier
                         .animateItem(fadeInSpec = null, placementSpec = placement, fadeOutSpec = null)
                         .motionRow(motions, tab.id)

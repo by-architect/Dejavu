@@ -618,6 +618,9 @@
     <string name="dejavu_loading_colors_workspace_summary">Warna rohangan tab. Tab nyamuni jeung rohangan tanpa warna mintonkeun katumbiri.</string>
     <string name="dejavu_loading_colors_custom">Warna husus</string>
     <string name="dejavu_loading_colors_custom_summary">Pilih nepi ka tilu warna. Toél deui pikeun ngarobahna.</string>
-    <string name="dejavu_settings_swipe_to_close">Usap tab pikeun nutup</string>
-    <string name="dejavu_settings_swipe_to_close_summary">Dina layar utama, ngusap tab ka sisi bakal nutupna. Pikeun pindah rohangan, usap di luar tab atawa paké bar rohangan.</string>
+    <string name="dejavu_settings_swipe_actions">Aksi ngusap</string>
+    <string name="dejavu_settings_swipe_actions_hint">Pilih naon anu dilakukeun ku ngusap tab dina layar utama. Ngusap di luar tab salawasna pindah rohangan.</string>
+    <string name="dejavu_settings_swipe_right">Usap ka katuhu</string>
+    <string name="dejavu_settings_swipe_left">Usap ka kenca</string>
+    <string name="dejavu_settings_swipe_switch_workspaces">Pindah rohangan</string>
 </resources>

@@ -634,6 +634,9 @@
     <string name="dejavu_loading_colors_workspace_summary">ᱴᱮᱵᱽ ᱨᱮᱭᱟᱜ ᱣᱟᱨᱠᱥᱯᱮᱥ ᱨᱚᱝ ᱠᱚ᱾ ᱱᱤᱡᱮᱨᱟᱜ ᱴᱮᱵᱽ ᱟᱨ ᱨᱚᱝ ᱵᱟᱹᱱᱩᱜ ᱣᱟᱨᱠᱥᱯᱮᱥ ᱨᱟᱢᱫᱷᱮᱬᱩ ᱩᱫᱩᱜᱟ᱾</string>
     <string name="dejavu_loading_colors_custom">ᱠᱩᱥᱤᱭᱟᱜ ᱨᱚᱝ ᱠᱚ</string>
     <string name="dejavu_loading_colors_custom_summary">ᱯᱮ ᱨᱚᱝ ᱦᱟᱹᱵᱤᱡ ᱵᱟᱪᱷᱟᱣ ᱢᱮ᱾ ᱵᱚᱫᱚᱞ ᱞᱟᱹᱜᱤᱫ ᱫᱩᱦᱲᱟᱹ ᱴᱤᱯᱟᱹᱣ ᱢᱮ᱾</string>
-    <string name="dejavu_settings_swipe_to_close">ᱵᱚᱸᱫᱚᱭ ᱞᱟᱹᱜᱤᱫ ᱴᱮᱵᱽ ᱠᱚ ᱥᱣᱟᱭᱤᱯ ᱢᱮ</string>
-    <string name="dejavu_settings_swipe_to_close_summary">ᱦᱚᱢ ᱥᱠᱨᱤᱱ ᱨᱮ, ᱢᱤᱫ ᱴᱮᱵᱽ ᱞᱮᱯᱷᱴ ᱥᱮ ᱨᱟᱭᱤᱴ ᱛᱮ ᱥᱣᱟᱭᱤᱯ ᱠᱟᱛᱮ ᱚᱱᱟ ᱵᱚᱸᱫᱚᱜ ᱟ ᱾ ᱣᱟᱨᱠᱥᱯᱮᱥ ᱵᱚᱫᱚᱞ ᱞᱟᱹᱜᱤᱫ ᱴᱮᱵᱽ ᱠᱚ ᱵᱟᱦᱨᱮ ᱥᱣᱟᱭᱤᱯ ᱢᱮ ᱥᱮ ᱣᱟᱨᱠᱥᱯᱮᱥ ᱵᱟᱨ ᱵᱮᱵᱷᱟᱨ ᱢᱮ ᱾</string>
+    <string name="dejavu_settings_swipe_actions">ᱥᱣᱟᱭᱤᱯ ᱮᱠᱥᱚᱱ ᱠᱚ</string>
+    <string name="dejavu_settings_swipe_actions_hint">ᱦᱚᱢ ᱥᱠᱨᱤᱱ ᱨᱮ ᱢᱤᱫ ᱴᱮᱵᱽ ᱥᱣᱟᱭᱤᱯ ᱠᱟᱛᱮ ᱪᱮᱫ ᱦᱩᱭᱩᱜ ᱚᱱᱟ ᱵᱟᱪᱷᱟᱣ ᱢᱮ ᱾ ᱴᱮᱵᱽ ᱠᱚ ᱵᱟᱦᱨᱮ ᱥᱣᱟᱭᱤᱯ ᱠᱟᱛᱮ ᱡᱷᱚᱛᱚ ᱚᱠᱛᱚ ᱣᱟᱨᱠᱥᱯᱮᱥ ᱵᱚᱫᱚᱞᱚᱜ ᱟ ᱾</string>
+    <string name="dejavu_settings_swipe_right">ᱨᱟᱭᱤᱴ ᱛᱮ ᱥᱣᱟᱭᱤᱯ</string>
+    <string name="dejavu_settings_swipe_left">ᱞᱮᱯᱷᱴ ᱛᱮ ᱥᱣᱟᱭᱤᱯ</string>
+    <string name="dejavu_settings_swipe_switch_workspaces">ᱣᱟᱨᱠᱥᱯᱮᱥ ᱵᱚᱫᱚᱞ</string>
 </resources>

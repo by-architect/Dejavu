@@ -626,6 +626,9 @@
     <string name="dejavu_loading_colors_workspace_summary">Las colurs dal spazi da lavur dal tab. Tabs privats e spazis da lavur senza colurs mussan l\'artg da tschiel.</string>
     <string name="dejavu_loading_colors_custom">Colurs persunalisadas</string>
     <string name="dejavu_loading_colors_custom_summary">Tscherna fin a trais colurs. Tutga anc ina giada per las midar.</string>
-    <string name="dejavu_settings_swipe_to_close">Stritgar tabs per als serrar</string>
-    <string name="dejavu_settings_swipe_to_close_summary">Sin l’ecran da partenza sa serra in tab, sche ti al stritgas da la vart. Per midar il spazi da lavur, stritga ordaifer ils tabs u utilisescha la trav dals spazis da lavur.</string>
+    <string name="dejavu_settings_swipe_actions">Acziuns da stritgar</string>
+    <string name="dejavu_settings_swipe_actions_hint">Tscherna tge che stritgar in tab sin l’ecran da partenza fa. Stritgar ordaifer ils tabs mida adina il spazi da lavur.</string>
+    <string name="dejavu_settings_swipe_right">Stritgar a dretga</string>
+    <string name="dejavu_settings_swipe_left">Stritgar a sanestra</string>
+    <string name="dejavu_settings_swipe_switch_workspaces">Midar il spazi da lavur</string>
 </resources>

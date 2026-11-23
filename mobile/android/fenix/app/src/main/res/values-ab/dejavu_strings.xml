@@ -626,6 +626,9 @@
     <string name="dejavu_loading_colors_workspace_summary">Абларҭа аҭыԥ аԥштәқәа. Ахатә абларҭақәеи аԥштәқәа змам аҭыԥқәеи аԥштәқәа зегьы аарԥшуеит.</string>
     <string name="dejavu_loading_colors_custom">Ахатә аԥштәқәа</string>
     <string name="dejavu_loading_colors_custom_summary">Хԥа рҟынӡа аԥштәқәа алышәх. Ирыԥсахразы еиҭа шәақәыӷәӷәа.</string>
-    <string name="dejavu_settings_swipe_to_close">Абларҭақәа ишьҭыҵны аркра</string>
-    <string name="dejavu_settings_swipe_to_close_summary">Ахатә даҟьаҿы абларҭа аркразы, аганахь ишьҭыҵ. Аҭыԥқәа рыԥсахразы, абларҭақәа ахьыҟам ишьҭыҵ, ма аҭыԥқәа рпанель ахы иазышәырхәа.</string>
+    <string name="dejavu_settings_swipe_actions">Ишьҭыҵра аҟаҵарақәа</string>
+    <string name="dejavu_settings_swipe_actions_hint">Иалышәх ахатә даҟьаҿы абларҭа ишьҭыҵны иҟалаша. Абларҭақәа ахьыҟам ишьҭыҵны есымша аҭыԥқәа шәыԥсахуеит.</string>
+    <string name="dejavu_settings_swipe_right">Арӷьарахь ишьҭыҵ</string>
+    <string name="dejavu_settings_swipe_left">Армарахь ишьҭыҵ</string>
+    <string name="dejavu_settings_swipe_switch_workspaces">Аҭыԥқәа рыԥсахра</string>
 </resources>

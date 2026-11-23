@@ -634,6 +634,9 @@
     <string name="dejavu_loading_colors_workspace_summary">Cilnes darbvietas krāsas. Privātās cilnes un darbvietas bez krāsām rāda varavīksni.</string>
     <string name="dejavu_loading_colors_custom">Pielāgotas krāsas</string>
     <string name="dejavu_loading_colors_custom_summary">Izvēlieties līdz trim krāsām. Pieskarieties vēlreiz, lai tās mainītu.</string>
-    <string name="dejavu_settings_swipe_to_close">Aizvērt cilnes ar vilkšanu</string>
-    <string name="dejavu_settings_swipe_to_close_summary">Sākuma lapā cilni var aizvērt, velkot to uz sāniem. Lai pārslēgtu darbvietu, velciet ārpus cilnēm vai izmantojiet darbvietu joslu.</string>
+    <string name="dejavu_settings_swipe_actions">Vilkšanas darbības</string>
+    <string name="dejavu_settings_swipe_actions_hint">Izvēlieties, ko dara cilnes vilkšana sākuma lapā. Vilkšana ārpus cilnēm vienmēr pārslēdz darbvietu.</string>
+    <string name="dejavu_settings_swipe_right">Vilkt pa labi</string>
+    <string name="dejavu_settings_swipe_left">Vilkt pa kreisi</string>
+    <string name="dejavu_settings_swipe_switch_workspaces">Pārslēgt darbvietu</string>
 </resources>

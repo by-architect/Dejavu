@@ -14,6 +14,8 @@ import org.json.JSONArray
 import org.mozilla.fenix.dejavu.actions.ActionPlace
 import org.mozilla.fenix.dejavu.actions.CustomAction
 import org.mozilla.fenix.dejavu.actions.RowAction
+import org.mozilla.fenix.dejavu.actions.SwipeActions
+import org.mozilla.fenix.dejavu.actions.SwipeDirection
 import org.mozilla.fenix.dejavu.actions.TabAction
 import org.mozilla.fenix.dejavu.browser.BarsLayout
 import org.mozilla.fenix.dejavu.browser.FloatingButtonPlace
@@ -71,7 +73,8 @@ class DejavuSettings private constructor(context: Context) {
     private val _loadingCustomColors = MutableStateFlow(readColors(KEY_LOADING_CUSTOM_COLORS))
     private val _barsLayout = MutableStateFlow(BarsLayout.fromKey(prefs.getString(KEY_BARS_LAYOUT, null)))
     private val _homeSearchAtBottom = MutableStateFlow(prefs.getBoolean(KEY_HOME_SEARCH_AT_BOTTOM, false))
-    private val _swipeToClose = MutableStateFlow(prefs.getBoolean(KEY_SWIPE_TO_CLOSE, false))
+    private val _swipeRightKey = MutableStateFlow(prefs.getString(KEY_SWIPE_RIGHT, null))
+    private val _swipeLeftKey = MutableStateFlow(prefs.getString(KEY_SWIPE_LEFT, null))
     private val _addressBarButtons = MutableStateFlow(readAddressBarButtons())
     private val _actionsBarKeys = MutableStateFlow(readActionsBar())
     private val _tabSleepMinutes = MutableStateFlow(prefs.getInt(KEY_TAB_SLEEP_MINUTES, DEFAULT_TAB_SLEEP_MINUTES))
@@ -172,8 +175,14 @@ class DejavuSettings private constructor(context: Context) {
      */
     val homeSearchAtBottom: StateFlow<Boolean> = _homeSearchAtBottom.asStateFlow()
 
-    /** Whether swiping a tab sideways on the home screen closes it, instead of turning to the next workspace. */
-    val swipeToClose: StateFlow<Boolean> = _swipeToClose.asStateFlow()
+    /**
+     * The key of the action that swiping the row of a tab on the home screen to the right runs, or `null` while that
+     * turns to the next workspace, see [SwipeActions].
+     */
+    val swipeRightKey: StateFlow<String?> = _swipeRightKey.asStateFlow()
+
+    /** The key of the action that swiping the row of a tab to the left runs, as [swipeRightKey] is to the right. */
+    val swipeLeftKey: StateFlow<String?> = _swipeLeftKey.asStateFlow()
 
     /**
      * The buttons beside the address bar the user chose, which every layout of the bars shows, or `null` before they
@@ -399,9 +408,20 @@ class DejavuSettings private constructor(context: Context) {
         prefs.edit { putBoolean(KEY_HOME_SEARCH_AT_BOTTOM, atBottom) }
     }
 
-    fun setSwipeToClose(enabled: Boolean) {
-        _swipeToClose.value = enabled
-        prefs.edit { putBoolean(KEY_SWIPE_TO_CLOSE, enabled) }
+    /** The key of the action that swiping the row of a tab [direction] runs, see [swipeRightKey]. */
+    fun swipeKey(direction: SwipeDirection): StateFlow<String?> = when (direction) {
+        SwipeDirection.RIGHT -> swipeRightKey
+        SwipeDirection.LEFT -> swipeLeftKey
+    }
+
+    /** Sets the action that swiping the row of a tab [direction] runs by its key, `null` to turn workspaces again. */
+    fun setSwipeAction(direction: SwipeDirection, key: String?) {
+        val (flow, prefKey) = when (direction) {
+            SwipeDirection.RIGHT -> _swipeRightKey to KEY_SWIPE_RIGHT
+            SwipeDirection.LEFT -> _swipeLeftKey to KEY_SWIPE_LEFT
+        }
+        flow.value = key
+        prefs.edit { putString(prefKey, key) }
     }
 
     /** The buttons beside the address bar in [layout]: the ones the user chose, or else the ones it starts with. */
@@ -490,6 +510,7 @@ class DejavuSettings private constructor(context: Context) {
         setSelectionAction(key, enabled = true)
         removeFromMoreMenu(key)
         removeFromActionsBar(key)
+        SwipeDirection.entries.filter { swipeKey(it).value == key }.forEach { setSwipeAction(it, null) }
         _addressBarButtons.value?.let { buttons ->
             val kept = AddressBarButtons(buttons.start.takeUnless { it == key }, buttons.end.takeUnless { it == key })
             if (kept != buttons) setAddressBarButtons(kept)
@@ -600,7 +621,8 @@ class DejavuSettings private constructor(context: Context) {
         private const val KEY_HIDDEN_ESSENTIALS = "hidden_essentials"
         private const val KEY_BARS_LAYOUT = "bars_layout"
         private const val KEY_HOME_SEARCH_AT_BOTTOM = "home_search_at_bottom"
-        private const val KEY_SWIPE_TO_CLOSE = "swipe_to_close"
+        private const val KEY_SWIPE_RIGHT = "swipe_right_action"
+        private const val KEY_SWIPE_LEFT = "swipe_left_action"
         private const val KEY_ADDRESS_BAR_START = "address_bar_start"
         private const val KEY_ADDRESS_BAR_END = "address_bar_end"
         private const val KEY_ACTIONS_BAR = "actions_bar"

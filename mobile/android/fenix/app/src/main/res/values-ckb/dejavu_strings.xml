@@ -626,6 +626,9 @@
     <string name="dejavu_loading_colors_workspace_summary">ڕەنگەکانی فەزای بازدەرەکە. بازدەرە تایبەتەکان و فەزا بێ ڕەنگەکان پەلکەزێڕینە پیشان دەدەن.</string>
     <string name="dejavu_loading_colors_custom">ڕەنگی تایبەت</string>
     <string name="dejavu_loading_colors_custom_summary">تا سێ ڕەنگ هەڵبژێرە. دووبارە دەست بنێ بۆ گۆڕینیان.</string>
-    <string name="dejavu_settings_swipe_to_close">داخستنی بازدەرەکان بە ڕاکێشان</string>
-    <string name="dejavu_settings_swipe_to_close_summary">لە پەڕەی سەرەکیدا، ڕاکێشانی بازدەرێک بۆ لای تەنیشت دایدەخات. بۆ گۆڕینی فەزا، لە دەرەوەی بازدەرەکان ڕابکێشە یان شریتی فەزاکان بەکاربهێنە.</string>
+    <string name="dejavu_settings_swipe_actions">کردارەکانی ڕاکێشان</string>
+    <string name="dejavu_settings_swipe_actions_hint">هەڵبژێرە ڕاکێشانی بازدەرێک لە پەڕەی سەرەکیدا چی دەکات. ڕاکێشان لە دەرەوەی بازدەرەکان هەمیشە فەزا دەگۆڕێت.</string>
+    <string name="dejavu_settings_swipe_right">ڕاکێشان بۆ ڕاست</string>
+    <string name="dejavu_settings_swipe_left">ڕاکێشان بۆ چەپ</string>
+    <string name="dejavu_settings_swipe_switch_workspaces">گۆڕینی فەزا</string>
 </resources>

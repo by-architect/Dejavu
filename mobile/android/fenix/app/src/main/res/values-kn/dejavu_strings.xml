@@ -626,6 +626,9 @@
     <string name="dejavu_loading_colors_workspace_summary">ಟ್ಯಾಬ್‌ನ ಕಾರ್ಯಕ್ಷೇತ್ರದ ಬಣ್ಣಗಳು. ಖಾಸಗಿ ಟ್ಯಾಬ್‌ಗಳು ಮತ್ತು ಬಣ್ಣಗಳಿಲ್ಲದ ಕಾರ್ಯಕ್ಷೇತ್ರಗಳು ಕಾಮನಬಿಲ್ಲನ್ನು ತೋರಿಸುತ್ತವೆ.</string>
     <string name="dejavu_loading_colors_custom">ಕಸ್ಟಮ್ ಬಣ್ಣಗಳು</string>
     <string name="dejavu_loading_colors_custom_summary">ಮೂರು ಬಣ್ಣಗಳವರೆಗೆ ಆಯ್ಕೆಮಾಡಿ. ಬದಲಾಯಿಸಲು ಮತ್ತೆ ಟ್ಯಾಪ್ ಮಾಡಿ.</string>
-    <string name="dejavu_settings_swipe_to_close">ಮುಚ್ಚಲು ಟ್ಯಾಬ್‌ಗಳನ್ನು ಸ್ವೈಪ್ ಮಾಡಿ</string>
-    <string name="dejavu_settings_swipe_to_close_summary">ಮುಖಪುಟದಲ್ಲಿ, ಟ್ಯಾಬ್ ಅನ್ನು ಎಡಕ್ಕೆ ಅಥವಾ ಬಲಕ್ಕೆ ಸ್ವೈಪ್ ಮಾಡಿದರೆ ಅದು ಮುಚ್ಚುತ್ತದೆ. ಕಾರ್ಯಕ್ಷೇತ್ರಗಳನ್ನು ಬದಲಾಯಿಸಲು, ಟ್ಯಾಬ್‌ಗಳ ಹೊರಗೆ ಸ್ವೈಪ್ ಮಾಡಿ ಅಥವಾ ಕಾರ್ಯಕ್ಷೇತ್ರ ಪಟ್ಟಿಯನ್ನು ಬಳಸಿ.</string>
+    <string name="dejavu_settings_swipe_actions">ಸ್ವೈಪ್ ಕ್ರಿಯೆಗಳು</string>
+    <string name="dejavu_settings_swipe_actions_hint">ಮುಖಪುಟದಲ್ಲಿ ಟ್ಯಾಬ್ ಅನ್ನು ಸ್ವೈಪ್ ಮಾಡಿದಾಗ ಏನಾಗಬೇಕು ಎಂಬುದನ್ನು ಆರಿಸಿ. ಟ್ಯಾಬ್‌ಗಳ ಹೊರಗೆ ಸ್ವೈಪ್ ಮಾಡಿದರೆ ಯಾವಾಗಲೂ ಕಾರ್ಯಕ್ಷೇತ್ರ ಬದಲಾಗುತ್ತದೆ.</string>
+    <string name="dejavu_settings_swipe_right">ಬಲಕ್ಕೆ ಸ್ವೈಪ್ ಮಾಡಿ</string>
+    <string name="dejavu_settings_swipe_left">ಎಡಕ್ಕೆ ಸ್ವೈಪ್ ಮಾಡಿ</string>
+    <string name="dejavu_settings_swipe_switch_workspaces">ಕಾರ್ಯಕ್ಷೇತ್ರ ಬದಲಾಯಿಸಿ</string>
 </resources>

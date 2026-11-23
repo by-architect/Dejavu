@@ -626,6 +626,9 @@
     <string name="dejavu_loading_colors_workspace_summary">Kaardi tööruumi värvid. Privaatsed kaardid ja värvideta tööruumid näitavad vikerkaart.</string>
     <string name="dejavu_loading_colors_custom">Kohandatud värvid</string>
     <string name="dejavu_loading_colors_custom_summary">Vali kuni kolm värvi. Muutmiseks puuduta uuesti.</string>
-    <string name="dejavu_settings_swipe_to_close">Kaartide sulgemine libistamisega</string>
-    <string name="dejavu_settings_swipe_to_close_summary">Avalehel saab kaardi sulgeda, libistades seda külgsuunas. Tööruumide vahetamiseks libista kaartidest väljaspool või kasuta tööruumide riba.</string>
+    <string name="dejavu_settings_swipe_actions">Libistamise tegevused</string>
+    <string name="dejavu_settings_swipe_actions_hint">Vali, mida teeb kaardi libistamine avalehel. Kaartidest väljaspool libistamine vahetab alati tööruumi.</string>
+    <string name="dejavu_settings_swipe_right">Libista paremale</string>
+    <string name="dejavu_settings_swipe_left">Libista vasakule</string>
+    <string name="dejavu_settings_swipe_switch_workspaces">Vaheta tööruumi</string>
 </resources>

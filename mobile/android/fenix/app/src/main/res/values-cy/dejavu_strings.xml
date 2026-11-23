@@ -658,6 +658,9 @@
     <string name="dejavu_loading_colors_workspace_summary">Lliwiau gweithle\'r tab. Mae tabiau preifat a gweithleoedd heb liwiau yn dangos yr enfys.</string>
     <string name="dejavu_loading_colors_custom">Lliwiau pwrpasol</string>
     <string name="dejavu_loading_colors_custom_summary">Dewiswch hyd at dri lliw. Tapiwch eto i\'w newid.</string>
-    <string name="dejavu_settings_swipe_to_close">Llithro tabiau i’w cau</string>
-    <string name="dejavu_settings_swipe_to_close_summary">Ar y dudalen gartref, mae llithro tab i’r ochr yn ei gau. I newid gweithle, llithrwch y tu allan i’r tabiau neu defnyddiwch far y gweithleoedd.</string>
+    <string name="dejavu_settings_swipe_actions">Gweithredoedd llithro</string>
+    <string name="dejavu_settings_swipe_actions_hint">Dewiswch beth mae llithro tab ar y dudalen gartref yn ei wneud. Mae llithro y tu allan i’r tabiau bob amser yn newid gweithle.</string>
+    <string name="dejavu_settings_swipe_right">Llithro i’r dde</string>
+    <string name="dejavu_settings_swipe_left">Llithro i’r chwith</string>
+    <string name="dejavu_settings_swipe_switch_workspaces">Newid gweithle</string>
 </resources>

@@ -618,6 +618,9 @@
     <string name="dejavu_loading_colors_workspace_summary">สีของพื้นที่ทำงานของแท็บ แท็บส่วนตัวและพื้นที่ทำงานที่ไม่มีสีจะแสดงสีรุ้ง</string>
     <string name="dejavu_loading_colors_custom">สีที่กำหนดเอง</string>
     <string name="dejavu_loading_colors_custom_summary">เลือกได้สูงสุดสามสี แตะอีกครั้งเพื่อเปลี่ยน</string>
-    <string name="dejavu_settings_swipe_to_close">ปัดแท็บเพื่อปิด</string>
-    <string name="dejavu_settings_swipe_to_close_summary">บนหน้าแรก การปัดแท็บไปด้านข้างจะปิดแท็บนั้น หากต้องการสลับพื้นที่ทำงาน ให้ปัดนอกแท็บหรือใช้แถบพื้นที่ทำงาน</string>
+    <string name="dejavu_settings_swipe_actions">การดำเนินการเมื่อปัด</string>
+    <string name="dejavu_settings_swipe_actions_hint">เลือกสิ่งที่จะเกิดขึ้นเมื่อปัดแท็บบนหน้าแรก การปัดนอกแท็บจะสลับพื้นที่ทำงานเสมอ</string>
+    <string name="dejavu_settings_swipe_right">ปัดไปทางขวา</string>
+    <string name="dejavu_settings_swipe_left">ปัดไปทางซ้าย</string>
+    <string name="dejavu_settings_swipe_switch_workspaces">สลับพื้นที่ทำงาน</string>
 </resources>

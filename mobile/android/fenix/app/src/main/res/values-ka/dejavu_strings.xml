@@ -626,6 +626,9 @@
     <string name="dejavu_loading_colors_workspace_summary">ჩანართის სივრცის ფერები. პირადი ჩანართები და უფერო სივრცეები ცისარტყელას აჩვენებს.</string>
     <string name="dejavu_loading_colors_custom">მორგებული ფერები</string>
     <string name="dejavu_loading_colors_custom_summary">აირჩიეთ სამამდე ფერი. შესაცვლელად კვლავ შეეხეთ.</string>
-    <string name="dejavu_settings_swipe_to_close">ჩანართების დახურვა გადაფურცვლით</string>
-    <string name="dejavu_settings_swipe_to_close_summary">საწყის ეკრანზე ჩანართის გვერდულად გადაფურცვლა მას ხურავს. სივრცეების გადასართავად გადაფურცლეთ ჩანართების გარეთ ან გამოიყენეთ სივრცეების ზოლი.</string>
+    <string name="dejavu_settings_swipe_actions">გადაფურცვლის მოქმედებები</string>
+    <string name="dejavu_settings_swipe_actions_hint">აირჩიეთ, რას აკეთებს ჩანართის გადაფურცვლა საწყის ეკრანზე. ჩანართების გარეთ გადაფურცვლა ყოველთვის სივრცეს გადართავს.</string>
+    <string name="dejavu_settings_swipe_right">გადაფურცვლა მარჯვნივ</string>
+    <string name="dejavu_settings_swipe_left">გადაფურცვლა მარცხნივ</string>
+    <string name="dejavu_settings_swipe_switch_workspaces">სივრცის გადართვა</string>
 </resources>

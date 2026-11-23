@@ -642,6 +642,9 @@
     <string name="dejavu_loading_colors_workspace_summary">Barve delovnega prostora zavihka. Zasebni zavihki in delovni prostori brez barv prikazujejo mavrico.</string>
     <string name="dejavu_loading_colors_custom">Barve po meri</string>
     <string name="dejavu_loading_colors_custom_summary">Izberite do tri barve. Znova tapnite, da jih spremenite.</string>
-    <string name="dejavu_settings_swipe_to_close">Zapiranje zavihkov s potegom</string>
-    <string name="dejavu_settings_swipe_to_close_summary">Na domači strani poteg zavihka vstran ga zapre. Za preklop med delovnimi prostori povlecite zunaj zavihkov ali uporabite vrstico delovnih prostorov.</string>
+    <string name="dejavu_settings_swipe_actions">Dejanja potega</string>
+    <string name="dejavu_settings_swipe_actions_hint">Izberite, kaj naredi poteg zavihka na domači strani. Poteg zunaj zavihkov vedno preklopi delovni prostor.</string>
+    <string name="dejavu_settings_swipe_right">Poteg v desno</string>
+    <string name="dejavu_settings_swipe_left">Poteg v levo</string>
+    <string name="dejavu_settings_swipe_switch_workspaces">Preklop delovnega prostora</string>
 </resources>

@@ -626,6 +626,9 @@
     <string name="dejavu_loading_colors_workspace_summary">Ang mga kulay ng workspace ng tab. Ang mga pribadong tab at mga workspace na walang kulay ay nagpapakita ng bahaghari.</string>
     <string name="dejavu_loading_colors_custom">Custom na mga kulay</string>
     <string name="dejavu_loading_colors_custom_summary">Pumili ng hanggang tatlong kulay. I-tap muli para baguhin ang mga ito.</string>
-    <string name="dejavu_settings_swipe_to_close">I-swipe ang mga tab para isara</string>
-    <string name="dejavu_settings_swipe_to_close_summary">Sa home screen, nagsasara ang isang tab kapag in-swipe ito pahalang. Para lumipat ng workspace, mag-swipe sa labas ng mga tab o gamitin ang bar ng mga workspace.</string>
+    <string name="dejavu_settings_swipe_actions">Mga aksyon sa pag-swipe</string>
+    <string name="dejavu_settings_swipe_actions_hint">Piliin kung ano ang ginagawa ng pag-swipe sa isang tab sa home screen. Laging lumilipat ng workspace ang pag-swipe sa labas ng mga tab.</string>
+    <string name="dejavu_settings_swipe_right">I-swipe pakanan</string>
+    <string name="dejavu_settings_swipe_left">I-swipe pakaliwa</string>
+    <string name="dejavu_settings_swipe_switch_workspaces">Lumipat ng workspace</string>
 </resources>

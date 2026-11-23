@@ -634,6 +634,9 @@
     <string name="dejavu_loading_colors_workspace_summary">I coƚori de ƚo spasio de laoro de ła scheda. Łe schede anonime e i spasi de laoro sensa coƚori i mostra l\'arcobałen.</string>
     <string name="dejavu_loading_colors_custom">Coƚori personałizài</string>
     <string name="dejavu_loading_colors_custom_summary">Sièrni fin a tre coƚori. Toca da novo par canbiarli.</string>
-    <string name="dejavu_settings_swipe_to_close">Scori łe schede par sararle</string>
-    <string name="dejavu_settings_swipe_to_close_summary">Inte ła schermada prinsipal, scorendo na scheda de łado ła se sara. Par canbiar spasio de laoro, scori fora de łe schede o dopara ła bara dei spasi de laoro.</string>
+    <string name="dejavu_settings_swipe_actions">Asion de scorimento</string>
+    <string name="dejavu_settings_swipe_actions_hint">Siegli cosa che fa scorer na scheda inte ła schermada prinsipal. Scorer fora de łe schede canbia senpre spasio de laoro.</string>
+    <string name="dejavu_settings_swipe_right">Scori a drita</string>
+    <string name="dejavu_settings_swipe_left">Scori a sanca</string>
+    <string name="dejavu_settings_swipe_switch_workspaces">Canbia spasio de laoro</string>
 </resources>

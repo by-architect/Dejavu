@@ -618,6 +618,9 @@
     <string name="dejavu_loading_colors_workspace_summary">Màu của không gian làm việc chứa thẻ. Thẻ riêng tư và không gian làm việc không có màu sẽ hiển thị cầu vồng.</string>
     <string name="dejavu_loading_colors_custom">Màu tùy chỉnh</string>
     <string name="dejavu_loading_colors_custom_summary">Chọn tối đa ba màu. Nhấn lại để thay đổi.</string>
-    <string name="dejavu_settings_swipe_to_close">Vuốt thẻ để đóng</string>
-    <string name="dejavu_settings_swipe_to_close_summary">Trên trang chủ, vuốt một thẻ sang bên sẽ đóng thẻ đó. Để chuyển không gian làm việc, hãy vuốt bên ngoài các thẻ hoặc dùng thanh không gian làm việc.</string>
+    <string name="dejavu_settings_swipe_actions">Thao tác vuốt</string>
+    <string name="dejavu_settings_swipe_actions_hint">Chọn điều xảy ra khi vuốt một thẻ trên trang chủ. Vuốt bên ngoài các thẻ luôn chuyển không gian làm việc.</string>
+    <string name="dejavu_settings_swipe_right">Vuốt sang phải</string>
+    <string name="dejavu_settings_swipe_left">Vuốt sang trái</string>
+    <string name="dejavu_settings_swipe_switch_workspaces">Chuyển không gian làm việc</string>
 </resources>

@@ -642,6 +642,9 @@
     <string name="dejavu_loading_colors_workspace_summary">Кольори робочого простору вкладки. Приватні вкладки й простори без кольорів показують веселку.</string>
     <string name="dejavu_loading_colors_custom">Власні кольори</string>
     <string name="dejavu_loading_colors_custom_summary">Виберіть до трьох кольорів. Торкніться ще раз, щоб змінити їх.</string>
-    <string name="dejavu_settings_swipe_to_close">Закривати вкладки жестом убік</string>
-    <string name="dejavu_settings_swipe_to_close_summary">На головній сторінці вкладка закривається, якщо провести по ній убік. Щоб перемкнути робочий простір, проведіть поза вкладками або скористайтеся панеллю робочих просторів.</string>
+    <string name="dejavu_settings_swipe_actions">Дії змахування</string>
+    <string name="dejavu_settings_swipe_actions_hint">Виберіть, що робить змахування вкладки на головній сторінці. Змахування поза вкладками завжди перемикає робочий простір.</string>
+    <string name="dejavu_settings_swipe_right">Змахнути праворуч</string>
+    <string name="dejavu_settings_swipe_left">Змахнути ліворуч</string>
+    <string name="dejavu_settings_swipe_switch_workspaces">Перемкнути робочий простір</string>
 </resources>

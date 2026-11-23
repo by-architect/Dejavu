@@ -634,6 +634,9 @@
     <string name="dejavu_loading_colors_workspace_summary">As cores do espaço de trabalho da aba. Abas privativas e espaços de trabalho sem cores mostram o arco-íris.</string>
     <string name="dejavu_loading_colors_custom">Cores personalizadas</string>
     <string name="dejavu_loading_colors_custom_summary">Escolha até três cores. Toque de novo para mudá-las.</string>
-    <string name="dejavu_settings_swipe_to_close">Deslizar abas para fechar</string>
-    <string name="dejavu_settings_swipe_to_close_summary">Na tela inicial, deslizar uma aba para o lado fecha a aba. Para trocar de espaço de trabalho, deslize fora das abas ou use a barra de espaços de trabalho.</string>
+    <string name="dejavu_settings_swipe_actions">Ações ao deslizar</string>
+    <string name="dejavu_settings_swipe_actions_hint">Escolha o que deslizar uma aba na tela inicial faz. Deslizar fora das abas sempre troca de espaço de trabalho.</string>
+    <string name="dejavu_settings_swipe_right">Deslizar para a direita</string>
+    <string name="dejavu_settings_swipe_left">Deslizar para a esquerda</string>
+    <string name="dejavu_settings_swipe_switch_workspaces">Trocar de espaço de trabalho</string>
 </resources>

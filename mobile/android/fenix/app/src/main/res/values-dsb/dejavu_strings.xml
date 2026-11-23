@@ -642,6 +642,9 @@
     <string name="dejavu_loading_colors_workspace_summary">Barwy źěłowego ruma rejtarika. Priwatne rejtariki a źěłowe rumy bźez barwow pokazuju dužku.</string>
     <string name="dejavu_loading_colors_custom">Swójske barwy</string>
     <string name="dejavu_loading_colors_custom_summary">Wubjeŕśo až do tśich barwow. Pótusniśo hyšći raz, aby je změnił.</string>
-    <string name="dejavu_settings_swipe_to_close">Rejtariki pśez pótegnjenje zacyniś</string>
-    <string name="dejavu_settings_swipe_to_close_summary">Na startowem boku se rejtarik zacynja, gaž jen na bok pótegnjoš. Aby źěłowy rum změnił, pótegni zwenka rejtarikow abo wužyj lejstwu źěłowych rumow.</string>
+    <string name="dejavu_settings_swipe_actions">Akcije pótegnjenja</string>
+    <string name="dejavu_settings_swipe_actions_hint">Wubjeŕ, což pótegnjenje rejtarika na startowem boku cyni. Pótegnjenje zwenka rejtarikow pśecej źěłowy rum změnijo.</string>
+    <string name="dejavu_settings_swipe_right">Napšawo pótegnuś</string>
+    <string name="dejavu_settings_swipe_left">Nalěwo pótegnuś</string>
+    <string name="dejavu_settings_swipe_switch_workspaces">Źěłowy rum změniś</string>
 </resources>

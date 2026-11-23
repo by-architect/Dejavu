@@ -626,6 +626,9 @@
     <string name="dejavu_loading_colors_workspace_summary">ट्याबको कार्यक्षेत्रका रङहरू। निजी ट्याबहरू र रङ नभएका कार्यक्षेत्रहरूले इन्द्रेणी देखाउँछन्।</string>
     <string name="dejavu_loading_colors_custom">अनुकूलित रङहरू</string>
     <string name="dejavu_loading_colors_custom_summary">तीनवटासम्म रङ छान्नुहोस्। परिवर्तन गर्न फेरि ट्याप गर्नुहोस्।</string>
-    <string name="dejavu_settings_swipe_to_close">बन्द गर्न ट्याबहरु स्वाइप गर्नुहोस्</string>
-    <string name="dejavu_settings_swipe_to_close_summary">गृह स्क्रिनमा ट्याबलाई दायाँ वा बायाँ स्वाइप गर्दा त्यो बन्द हुन्छ। कार्यक्षेत्र बदल्न ट्याबहरुबाहिर स्वाइप गर्नुहोस् वा कार्यक्षेत्र पट्टी प्रयोग गर्नुहोस्।</string>
+    <string name="dejavu_settings_swipe_actions">स्वाइप कार्यहरु</string>
+    <string name="dejavu_settings_swipe_actions_hint">गृह स्क्रिनमा ट्याब स्वाइप गर्दा के हुने हो छान्नुहोस्। ट्याबहरुबाहिर स्वाइप गर्दा सधैं कार्यक्षेत्र बदलिन्छ।</string>
+    <string name="dejavu_settings_swipe_right">दायाँ स्वाइप गर्नुहोस्</string>
+    <string name="dejavu_settings_swipe_left">बायाँ स्वाइप गर्नुहोस्</string>
+    <string name="dejavu_settings_swipe_switch_workspaces">कार्यक्षेत्र बदल्नुहोस्</string>
 </resources>

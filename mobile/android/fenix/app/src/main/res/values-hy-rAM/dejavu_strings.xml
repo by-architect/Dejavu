@@ -626,6 +626,9 @@
     <string name="dejavu_loading_colors_workspace_summary">Ներդիրի տարածքի գույները։ Գաղտնի ներդիրները և առանց գույների տարածքները ցույց են տալիս ծիածանը։</string>
     <string name="dejavu_loading_colors_custom">Հարմարեցված գույներ</string>
     <string name="dejavu_loading_colors_custom_summary">Ընտրեք մինչև երեք գույն։ Կրկին հպեք՝ դրանք փոխելու համար։</string>
-    <string name="dejavu_settings_swipe_to_close">Սահեցնել ներդիրները՝ փակելու համար</string>
-    <string name="dejavu_settings_swipe_to_close_summary">Գլխավոր էջում ներդիրը կողք սահեցնելը փակում է այն։ Տարածքների միջև անցնելու համար սահեցրեք ներդիրներից դուրս կամ օգտագործեք տարածքների գոտին։</string>
+    <string name="dejavu_settings_swipe_actions">Սահեցման գործողություններ</string>
+    <string name="dejavu_settings_swipe_actions_hint">Ընտրեք, թե ինչ է անում ներդիրը սահեցնելը գլխավոր էջում։ Ներդիրներից դուրս սահեցնելը միշտ փոխում է տարածքը։</string>
+    <string name="dejavu_settings_swipe_right">Սահեցնել աջ</string>
+    <string name="dejavu_settings_swipe_left">Սահեցնել ձախ</string>
+    <string name="dejavu_settings_swipe_switch_workspaces">Փոխել տարածքը</string>
 </resources>

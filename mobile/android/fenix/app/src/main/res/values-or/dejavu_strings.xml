@@ -626,6 +626,9 @@
     <string name="dejavu_loading_colors_workspace_summary">ଟ୍ୟାବ୍‌ର କାର୍ଯ୍ୟକ୍ଷେତ୍ରର ରଙ୍ଗ। ବ୍ୟକ୍ତିଗତ ଟ୍ୟାବ୍ ଏବଂ ରଙ୍ଗ ନଥିବା କାର୍ଯ୍ୟକ୍ଷେତ୍ର ଇନ୍ଦ୍ରଧନୁ ଦେଖାଏ।</string>
     <string name="dejavu_loading_colors_custom">କଷ୍ଟମ୍ ରଙ୍ଗ</string>
     <string name="dejavu_loading_colors_custom_summary">ତିନୋଟି ପର୍ଯ୍ୟନ୍ତ ରଙ୍ଗ ବାଛନ୍ତୁ। ବଦଳାଇବାକୁ ପୁଣି ଟାପ୍ କରନ୍ତୁ।</string>
-    <string name="dejavu_settings_swipe_to_close">ବନ୍ଦ କରିବାକୁ ଟ୍ୟାବ୍ ସ୍ୱାଇପ୍ କରନ୍ତୁ</string>
-    <string name="dejavu_settings_swipe_to_close_summary">ହୋମ୍ ପୃଷ୍ଠାରେ, ଏକ ଟ୍ୟାବ୍‌କୁ ବାମ କିମ୍ବା ଡାହାଣକୁ ସ୍ୱାଇପ୍ କଲେ ତାହା ବନ୍ଦ ହୁଏ। କାର୍ଯ୍ୟକ୍ଷେତ୍ର ବଦଳାଇବାକୁ, ଟ୍ୟାବ୍ ବାହାରେ ସ୍ୱାଇପ୍ କରନ୍ତୁ କିମ୍ବା କାର୍ଯ୍ୟକ୍ଷେତ୍ର ବାର୍ ବ୍ୟବହାର କରନ୍ତୁ।</string>
+    <string name="dejavu_settings_swipe_actions">ସ୍ୱାଇପ୍ କାର୍ଯ୍ୟ</string>
+    <string name="dejavu_settings_swipe_actions_hint">ହୋମ୍ ପୃଷ୍ଠାରେ ଏକ ଟ୍ୟାବ୍‌କୁ ସ୍ୱାଇପ୍ କଲେ କ\'ଣ ହେବ ତାହା ବାଛନ୍ତୁ। ଟ୍ୟାବ୍ ବାହାରେ ସ୍ୱାଇପ୍ କଲେ ସର୍ବଦା କାର୍ଯ୍ୟକ୍ଷେତ୍ର ବଦଳେ।</string>
+    <string name="dejavu_settings_swipe_right">ଡାହାଣକୁ ସ୍ୱାଇପ୍ କରନ୍ତୁ</string>
+    <string name="dejavu_settings_swipe_left">ବାମକୁ ସ୍ୱାଇପ୍ କରନ୍ତୁ</string>
+    <string name="dejavu_settings_swipe_switch_workspaces">କାର୍ଯ୍ୟକ୍ଷେତ୍ର ବଦଳାନ୍ତୁ</string>
 </resources>

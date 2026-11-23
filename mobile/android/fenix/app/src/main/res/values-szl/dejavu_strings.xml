@@ -642,6 +642,9 @@
     <string name="dejavu_loading_colors_workspace_summary">Farby placu karty. Prywatne karty i place bez farbōw pokazujōm dōnga.</string>
     <string name="dejavu_loading_colors_custom">Włosne farby</string>
     <string name="dejavu_loading_colors_custom_summary">Ôbier do trzech farbōw. Tyknij jeszcze roz, żeby je zmiynić.</string>
-    <string name="dejavu_settings_swipe_to_close">Zawiyranie kart przesuniyńciym palca</string>
-    <string name="dejavu_settings_swipe_to_close_summary">Na strōnie dōm przesuniyńcie karty na bok jōm zawiyro. Coby zmiynić plac, przesuń palcym poza kartami abo użyj posku z placami.</string>
+    <string name="dejavu_settings_swipe_actions">Akcyje przesuniyńcia</string>
+    <string name="dejavu_settings_swipe_actions_hint">Wybier, co robi przesuniyńcie karty na strōnie dōm. Przesuniyńcie poza kartami zawdy zmiyniŏ plac.</string>
+    <string name="dejavu_settings_swipe_right">Przesuń na prawo</string>
+    <string name="dejavu_settings_swipe_left">Przesuń na lewo</string>
+    <string name="dejavu_settings_swipe_switch_workspaces">Zmiyń plac</string>
 </resources>

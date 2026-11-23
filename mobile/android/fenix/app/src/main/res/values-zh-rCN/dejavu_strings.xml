@@ -618,6 +618,9 @@
     <string name="dejavu_loading_colors_workspace_summary">标签页所在工作区的颜色。隐私标签页和没有颜色的工作区显示彩虹。</string>
     <string name="dejavu_loading_colors_custom">自定义颜色</string>
     <string name="dejavu_loading_colors_custom_summary">最多选择三种颜色。再次点按可更改。</string>
-    <string name="dejavu_settings_swipe_to_close">滑动关闭标签页</string>
-    <string name="dejavu_settings_swipe_to_close_summary">在主页上，左右滑动标签页即可将其关闭。要切换工作区，请在标签页以外的区域滑动，或使用工作区栏。</string>
+    <string name="dejavu_settings_swipe_actions">滑动操作</string>
+    <string name="dejavu_settings_swipe_actions_hint">选择在主页上滑动标签页时执行的操作。在标签页以外的区域滑动始终会切换工作区。</string>
+    <string name="dejavu_settings_swipe_right">向右滑动</string>
+    <string name="dejavu_settings_swipe_left">向左滑动</string>
+    <string name="dejavu_settings_swipe_switch_workspaces">切换工作区</string>
 </resources>

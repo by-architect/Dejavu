@@ -650,6 +650,9 @@
     <string name="dejavu_loading_colors_workspace_summary">Dathanna spás oibre an chluaisín. Taispeánann cluaisíní príobháideacha agus spásanna oibre gan dathanna an bogha báistí.</string>
     <string name="dejavu_loading_colors_custom">Dathanna saincheaptha</string>
     <string name="dejavu_loading_colors_custom_summary">Roghnaigh suas le trí dhath. Tapáil arís chun iad a athrú.</string>
-    <string name="dejavu_settings_swipe_to_close">Svaidhpeáil cluaisíní chun iad a dhúnadh</string>
-    <string name="dejavu_settings_swipe_to_close_summary">Ar an leathanach baile, dúntar cluaisín má svaidhpeálann tú ó thaobh go taobh é. Chun aistriú idir spásanna oibre, svaidhpeáil lasmuigh de na cluaisíní nó úsáid barra na spásanna oibre.</string>
+    <string name="dejavu_settings_swipe_actions">Gníomhartha svaidhpeála</string>
+    <string name="dejavu_settings_swipe_actions_hint">Roghnaigh cad a dhéanann svaidhpeáil ar chluaisín ar an leathanach baile. Aistríonn svaidhpeáil lasmuigh de na cluaisíní idir spásanna oibre i gcónaí.</string>
+    <string name="dejavu_settings_swipe_right">Svaidhpeáil ar dheis</string>
+    <string name="dejavu_settings_swipe_left">Svaidhpeáil ar chlé</string>
+    <string name="dejavu_settings_swipe_switch_workspaces">Aistrigh spás oibre</string>
 </resources>

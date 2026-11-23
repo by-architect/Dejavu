@@ -618,6 +618,9 @@
     <string name="dejavu_loading_colors_workspace_summary">kule pi kulupu poki pi poki ni. poki pi nasin len en kulupu poki pi kule ala li pana e kule ale.</string>
     <string name="dejavu_loading_colors_custom">kule sina</string>
     <string name="dejavu_loading_colors_custom_summary">o pana e kule wan anu tu anu tu wan. o luka sin la sina ken ante e ona.</string>
-    <string name="dejavu_settings_swipe_to_close">o tawa e poki tawa poka tawa pini e ona</string>
-    <string name="dejavu_settings_swipe_to_close_summary">lon lipu tomo la, sina tawa e poki tawa poka la, ona li pini. sina wile tawa kulupu poki ante la, o tawa e luka lon poki ala, anu o kepeken linja pi kulupu poki.</string>
+    <string name="dejavu_settings_swipe_actions">pali pi tawa poka</string>
+    <string name="dejavu_settings_swipe_actions_hint">o wile e ni: sina tawa e poki lon lipu tomo la, seme li kama. sina tawa lon poki ala la, sina tawa kulupu poki ante.</string>
+    <string name="dejavu_settings_swipe_right">o tawa e poki tawa poka teje</string>
+    <string name="dejavu_settings_swipe_left">o tawa e poki tawa poka soto</string>
+    <string name="dejavu_settings_swipe_switch_workspaces">o tawa kulupu poki ante</string>
 </resources>

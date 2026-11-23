@@ -642,6 +642,9 @@
     <string name="dejavu_loading_colors_workspace_summary">Kolory obszaru roboczego karty. Karty prywatne i obszary robocze bez kolorów pokazują tęczę.</string>
     <string name="dejavu_loading_colors_custom">Własne kolory</string>
     <string name="dejavu_loading_colors_custom_summary">Wybierz do trzech kolorów. Stuknij ponownie, aby je zmienić.</string>
-    <string name="dejavu_settings_swipe_to_close">Zamykanie kart przeciągnięciem</string>
-    <string name="dejavu_settings_swipe_to_close_summary">Na stronie startowej przeciągnięcie karty w bok zamyka ją. Aby przełączyć obszar roboczy, przesuń palcem poza kartami lub użyj paska obszarów roboczych.</string>
+    <string name="dejavu_settings_swipe_actions">Akcje przeciągnięcia</string>
+    <string name="dejavu_settings_swipe_actions_hint">Wybierz, co robi przeciągnięcie karty na stronie startowej. Przeciągnięcie poza kartami zawsze przełącza obszar roboczy.</string>
+    <string name="dejavu_settings_swipe_right">Przeciągnięcie w prawo</string>
+    <string name="dejavu_settings_swipe_left">Przeciągnięcie w lewo</string>
+    <string name="dejavu_settings_swipe_switch_workspaces">Przełącz obszar roboczy</string>
 </resources>

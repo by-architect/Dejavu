@@ -626,6 +626,9 @@
     <string name="dejavu_loading_colors_workspace_summary">I coloî do spaçio de travaggio do feuggio. I feuggi privæ e i spaçi de travaggio sensa coloî mostran l\'arcobaleno.</string>
     <string name="dejavu_loading_colors_custom">Coloî personalizæ</string>
     <string name="dejavu_loading_colors_custom_summary">Çerni scin a trei coloî. Sciacca torna pe cangiâli.</string>
-    <string name="dejavu_settings_swipe_to_close">Fa scorrî i feuggi pe særâli</string>
-    <string name="dejavu_settings_swipe_to_close_summary">Inte a pagina prinçipâ, se ti fæ scorrî un feuggio de lato, o se særa. Pe cangiâ spaçio de travaggio, fa scorrî fêua di feuggi ò adeuvia a barra di spaçi de travaggio.</string>
+    <string name="dejavu_settings_swipe_actions">Açioin de scorrimento</string>
+    <string name="dejavu_settings_swipe_actions_hint">Çerni cose o fa o scorrî un feuggio inte a pagina prinçipâ. Scorrî fêua di feuggi o cangia sempre spaçio de travaggio.</string>
+    <string name="dejavu_settings_swipe_right">Scorri a drita</string>
+    <string name="dejavu_settings_swipe_left">Scorri a manca</string>
+    <string name="dejavu_settings_swipe_switch_workspaces">Cangia spaçio de travaggio</string>
 </resources>

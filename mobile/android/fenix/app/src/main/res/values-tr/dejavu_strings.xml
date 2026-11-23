@@ -626,6 +626,9 @@
     <string name="dejavu_loading_colors_workspace_summary">Sekmenin çalışma alanının renkleri. Gizli sekmeler ve rengi olmayan çalışma alanları gökkuşağını gösterir.</string>
     <string name="dejavu_loading_colors_custom">Özel renkler</string>
     <string name="dejavu_loading_colors_custom_summary">En fazla üç renk seçin. Değiştirmek için yeniden dokunun.</string>
-    <string name="dejavu_settings_swipe_to_close">Sekmeleri kaydırarak kapat</string>
-    <string name="dejavu_settings_swipe_to_close_summary">Ana ekranda bir sekmeyi yana kaydırmak onu kapatır. Çalışma alanını değiştirmek için sekmelerin dışında kaydırın veya çalışma alanı çubuğunu kullanın.</string>
+    <string name="dejavu_settings_swipe_actions">Kaydırma eylemleri</string>
+    <string name="dejavu_settings_swipe_actions_hint">Ana ekranda bir sekmeyi kaydırmanın ne yapacağını seçin. Sekmelerin dışında kaydırmak her zaman çalışma alanını değiştirir.</string>
+    <string name="dejavu_settings_swipe_right">Sağa kaydır</string>
+    <string name="dejavu_settings_swipe_left">Sola kaydır</string>
+    <string name="dejavu_settings_swipe_switch_workspaces">Çalışma alanını değiştir</string>
 </resources>

@@ -626,6 +626,9 @@
     <string name="dejavu_loading_colors_workspace_summary">ٹیب کی ورک اسپیس کے رنگ۔ نجی ٹیب اور بغیر رنگوں والی ورک اسپیسز قوس قزح دکھاتی ہیں۔</string>
     <string name="dejavu_loading_colors_custom">حسبِ ضرورت رنگ</string>
     <string name="dejavu_loading_colors_custom_summary">تین تک رنگ منتخب کریں۔ تبدیل کرنے کے لیے دوبارہ تھپتھپائیں۔</string>
-    <string name="dejavu_settings_swipe_to_close">بند کرنے کے لیے ٹیبز سوائپ کریں</string>
-    <string name="dejavu_settings_swipe_to_close_summary">ہوم اسکرین پر کسی ٹیب کو دائیں بائیں سوائپ کرنے سے وہ بند ہو جاتا ہے۔ ورک اسپیسز بدلنے کے لیے ٹیبز سے باہر سوائپ کریں یا ورک اسپیس بار استعمال کریں۔</string>
+    <string name="dejavu_settings_swipe_actions">سوائپ ایکشنز</string>
+    <string name="dejavu_settings_swipe_actions_hint">منتخب کریں کہ ہوم اسکرین پر کسی ٹیب کو سوائپ کرنے سے کیا ہو۔ ٹیبز سے باہر سوائپ کرنے سے ہمیشہ ورک اسپیس بدلتی ہے۔</string>
+    <string name="dejavu_settings_swipe_right">دائیں سوائپ کریں</string>
+    <string name="dejavu_settings_swipe_left">بائیں سوائپ کریں</string>
+    <string name="dejavu_settings_swipe_switch_workspaces">ورک اسپیس بدلیں</string>
 </resources>

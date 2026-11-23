@@ -642,6 +642,9 @@
     <string name="dejavu_loading_colors_workspace_summary">Kortelės darbo erdvės spalvos. Privačios kortelės ir darbo erdvės be spalvų rodo vaivorykštę.</string>
     <string name="dejavu_loading_colors_custom">Pasirinktinės spalvos</string>
     <string name="dejavu_loading_colors_custom_summary">Pasirinkite iki trijų spalvų. Bakstelėkite dar kartą, kad jas pakeistumėte.</string>
-    <string name="dejavu_settings_swipe_to_close">Užverti korteles perbraukiant</string>
-    <string name="dejavu_settings_swipe_to_close_summary">Pradžios puslapyje perbraukus kortelę į šoną, ji užveriama. Norėdami perjungti darbo erdvę, perbraukite už kortelių ribų arba naudokite darbo erdvių juostą.</string>
+    <string name="dejavu_settings_swipe_actions">Perbraukimo veiksmai</string>
+    <string name="dejavu_settings_swipe_actions_hint">Pasirinkite, ką daro kortelės perbraukimas pradžios puslapyje. Perbraukimas už kortelių ribų visada perjungia darbo erdvę.</string>
+    <string name="dejavu_settings_swipe_right">Perbraukti į dešinę</string>
+    <string name="dejavu_settings_swipe_left">Perbraukti į kairę</string>
+    <string name="dejavu_settings_swipe_switch_workspaces">Perjungti darbo erdvę</string>
 </resources>

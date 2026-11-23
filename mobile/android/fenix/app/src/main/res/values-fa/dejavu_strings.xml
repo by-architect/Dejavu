@@ -626,6 +626,9 @@
     <string name="dejavu_loading_colors_workspace_summary">رنگ‌های فضای کاری زبانه. زبانه‌های خصوصی و فضاهای کاری بدون رنگ، رنگین‌کمان را نشان می‌دهند.</string>
     <string name="dejavu_loading_colors_custom">رنگ‌های سفارشی</string>
     <string name="dejavu_loading_colors_custom_summary">تا سه رنگ انتخاب کنید. برای تغییرشان دوباره ضربه بزنید.</string>
-    <string name="dejavu_settings_swipe_to_close">کشیدن زبانه‌ها برای بستن</string>
-    <string name="dejavu_settings_swipe_to_close_summary">در صفحهٔ اصلی، کشیدن یک زبانه به کنار آن را می‌بندد. برای رفتن به فضای کاری دیگر، بیرون از زبانه‌ها بکشید یا از نوار فضاهای کاری استفاده کنید.</string>
+    <string name="dejavu_settings_swipe_actions">کنش‌های کشیدن</string>
+    <string name="dejavu_settings_swipe_actions_hint">انتخاب کنید کشیدن یک زبانه در صفحهٔ اصلی چه کاری انجام دهد. کشیدن بیرون از زبانه‌ها همیشه فضای کاری را عوض می‌کند.</string>
+    <string name="dejavu_settings_swipe_right">کشیدن به راست</string>
+    <string name="dejavu_settings_swipe_left">کشیدن به چپ</string>
+    <string name="dejavu_settings_swipe_switch_workspaces">رفتن به فضای کاری دیگر</string>
 </resources>

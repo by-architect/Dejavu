@@ -642,6 +642,9 @@
     <string name="dejavu_loading_colors_workspace_summary">Farby pracovného priestoru karty. Súkromné karty a pracovné priestory bez farieb zobrazujú dúhu.</string>
     <string name="dejavu_loading_colors_custom">Vlastné farby</string>
     <string name="dejavu_loading_colors_custom_summary">Vyberte až tri farby. Ďalším ťuknutím ich zmeníte.</string>
-    <string name="dejavu_settings_swipe_to_close">Zatváranie kariet potiahnutím</string>
-    <string name="dejavu_settings_swipe_to_close_summary">Potiahnutím karty do strany na domovskej stránke ju zavriete. Pracovné priestory prepnete potiahnutím mimo kariet alebo pomocou panela pracovných priestorov.</string>
+    <string name="dejavu_settings_swipe_actions">Akcie potiahnutia</string>
+    <string name="dejavu_settings_swipe_actions_hint">Vyberte, čo urobí potiahnutie karty na domovskej stránke. Potiahnutie mimo kariet vždy prepne pracovný priestor.</string>
+    <string name="dejavu_settings_swipe_right">Potiahnutie doprava</string>
+    <string name="dejavu_settings_swipe_left">Potiahnutie doľava</string>
+    <string name="dejavu_settings_swipe_switch_workspaces">Prepnúť pracovný priestor</string>
 </resources>

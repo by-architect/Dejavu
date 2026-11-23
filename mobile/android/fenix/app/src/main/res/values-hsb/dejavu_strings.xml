@@ -642,6 +642,9 @@
     <string name="dejavu_loading_colors_workspace_summary">Barby dźěłoweho ruma rajtarka. Priwatne rajtarki a dźěłowe rumy bjez barbow dźědźel pokazuja.</string>
     <string name="dejavu_loading_colors_custom">Swójske barby</string>
     <string name="dejavu_loading_colors_custom_summary">Wubjerće hač do třoch barbow. Podótkńće so znowa, zo byšće je změnił.</string>
-    <string name="dejavu_settings_swipe_to_close">Rajtarki přez trěće začinić</string>
-    <string name="dejavu_settings_swipe_to_close_summary">Na startowej stronje so rajtark začini, hdyž jón na bok trěješ. Zo by dźěłowy rum změnił, trěj zwonka rajtarkow abo wužij lajstu dźěłowych rumow.</string>
+    <string name="dejavu_settings_swipe_actions">Akcije ćehnjenja</string>
+    <string name="dejavu_settings_swipe_actions_hint">Wubjer, štož ćehnjenje rajtarka na startowej stronje čini. Ćehnjenje zwonka rajtarkow přeco dźěłowy rum změni.</string>
+    <string name="dejavu_settings_swipe_right">Naprawo trěć</string>
+    <string name="dejavu_settings_swipe_left">Nalěwo trěć</string>
+    <string name="dejavu_settings_swipe_switch_workspaces">Dźěłowy rum změnić</string>
 </resources>

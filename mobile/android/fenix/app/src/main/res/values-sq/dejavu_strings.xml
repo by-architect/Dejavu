@@ -626,6 +626,9 @@
     <string name="dejavu_loading_colors_workspace_summary">Ngjyrat e hapësirës së punës së skedës. Skedat private dhe hapësirat e punës pa ngjyra shfaqin ylberin.</string>
     <string name="dejavu_loading_colors_custom">Ngjyra vetjake</string>
     <string name="dejavu_loading_colors_custom_summary">Zgjidhni deri në tri ngjyra. Prekeni sërish për t\'i ndryshuar.</string>
-    <string name="dejavu_settings_swipe_to_close">Mbyllje skedash me fërkim</string>
-    <string name="dejavu_settings_swipe_to_close_summary">Në faqen kreu, fërkimi i një skede për anash e mbyll atë. Për të ndërruar hapësira pune, fërkoni jashtë skedave, ose përdorni shtyllën e hapësirave të punës.</string>
+    <string name="dejavu_settings_swipe_actions">Veprime fërkimi</string>
+    <string name="dejavu_settings_swipe_actions_hint">Zgjidhni ç’bën fërkimi i një skede në faqen kreu. Fërkimi jashtë skedave ndërron përherë hapësirë pune.</string>
+    <string name="dejavu_settings_swipe_right">Fërkim djathtas</string>
+    <string name="dejavu_settings_swipe_left">Fërkim majtas</string>
+    <string name="dejavu_settings_swipe_switch_workspaces">Ndërroni hapësirë pune</string>
 </resources>
