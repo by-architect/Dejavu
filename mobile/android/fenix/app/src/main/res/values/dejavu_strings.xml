@@ -445,6 +445,11 @@
     <string name="pref_key_dejavu_hide_system_bars" translatable="false">pref_key_dejavu_hide_system_bars</string>
     <string name="dejavu_settings_hide_system_bars">Hide status and navigation bars</string>
     <string name="dejavu_settings_hide_system_bars_summary">While a page is shown. Swipe in from the top or bottom edge to see them for a moment.</string>
+    <string name="pref_key_dejavu_match_page_color" translatable="false">pref_key_dejavu_match_page_color</string>
+    <!-- Switch title in Customize, Bars: the status bar, address bar and navigation bar take the background color of the website. -->
+    <string name="dejavu_settings_match_page_color">Match bars to the page color</string>
+    <!-- Summary of that switch: when it is off, the bars keep the colors of the workspace. -->
+    <string name="dejavu_settings_match_page_color_summary">The bars take the background color of the website. Off keeps the workspace colors.</string>
 
     <!-- Settings: Customize, how Dejavu's screens, menus and buttons move -->
     <string name="pref_key_dejavu_animations" translatable="false">pref_key_dejavu_animations</string>
@@ -1061,4 +1066,25 @@
     <string name="dejavu_sidebery_bad_file">This file isn’t a Sidebery snapshot or backup.</string>
     <!-- Shown at the bottom of a web page that asked for a passkey, on Android 13 and older, where Dejavu cannot use passkeys yet. The page shows its own error at the same time. -->
     <string name="dejavu_passkeys_unsupported">Passkeys aren\'t supported on this Android version yet</string>
+    <!-- Settings: Customize, the colors that run through the domain's letters in the address bar while a page loads, in place of a loading bar -->
+    <string name="pref_key_dejavu_loading_colors_rainbow" translatable="false">pref_key_dejavu_loading_colors_rainbow</string>
+    <string name="pref_key_dejavu_loading_colors_workspace" translatable="false">pref_key_dejavu_loading_colors_workspace</string>
+    <string name="pref_key_dejavu_loading_colors_custom" translatable="false">pref_key_dejavu_loading_colors_custom</string>
+    <!-- Title above the three choices of colors that run through the address bar's letters while a page loads. -->
+    <string name="dejavu_loading_colors">Colors while a page loads</string>
+    <!-- The choice of Dejavu's gold and the colors around it, like a rainbow, which Dejavu starts with. -->
+    <string name="dejavu_loading_colors_rainbow">Rainbow</string>
+    <!-- The choice of the colors of the workspace the tab is in: those of its wallpaper, or of its own color theme. -->
+    <string name="dejavu_loading_colors_workspace">Workspace colors</string>
+    <!-- Text under "Workspace colors". Private tabs are in no workspace; a workspace without colors has neither a wallpaper nor a color theme. -->
+    <string name="dejavu_loading_colors_workspace_summary">The colors of the tab\'s workspace. Private tabs and workspaces without colors show the rainbow.</string>
+    <!-- The choice of colors the user picks, as they pick a workspace's own colors. Tapping it opens the color picker. -->
+    <string name="dejavu_loading_colors_custom">Custom colors</string>
+    <!-- Text under "Custom colors". Tapping the choice again opens the color picker again. -->
+    <string name="dejavu_loading_colors_custom_summary">Pick up to three colors. Tap again to change them.</string>
+    <string name="pref_key_dejavu_swipe_to_close" translatable="false">pref_key_dejavu_swipe_to_close</string>
+    <!-- Switch of the bars settings, in the gestures group: swiping a tab sideways on the home screen closes it. -->
+    <string name="dejavu_settings_swipe_to_close">Swipe tabs to close</string>
+    <!-- Description of that switch. -->
+    <string name="dejavu_settings_swipe_to_close_summary">On the home screen, swiping a tab sideways closes it. To switch workspaces, swipe outside the tabs or use the workspace bar.</string>
 </resources>

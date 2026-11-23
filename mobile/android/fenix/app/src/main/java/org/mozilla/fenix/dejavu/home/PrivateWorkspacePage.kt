@@ -119,6 +119,7 @@ internal fun PrivateWorkspacePage(
     onNewTab: () -> Unit,
     onCloseAll: () -> Unit,
     onEmptied: () -> Unit,
+    swipeToClose: Boolean = false,
 ) {
     var editing by remember { mutableStateOf(false) }
     var menuOpen by remember { mutableStateOf(false) }
@@ -275,6 +276,14 @@ internal fun PrivateWorkspacePage(
                     onClick = { onTabClick(tab) },
                     isPrivate = true,
                     icon = tab.content.icon,
+                    onSwipeClose = if (swipeToClose) {
+                        {
+                            motions.swiped(tab.id)
+                            onCloseTab(tab)
+                        }
+                    } else {
+                        null
+                    },
                     modifier = Modifier
                         .animateItem(fadeInSpec = null, placementSpec = placement, fadeOutSpec = null)
                         .motionRow(motions, tab.id)

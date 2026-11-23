@@ -425,6 +425,8 @@
     <string name="dejavu_bars_bottom_summary">ಕ್ರಿಯಾ ಪಟ್ಟಿ ಇಲ್ಲ. ಇನ್ನಷ್ಟು ಮೆನು ತೆರೆಯಲು ವಿಳಾಸ ಪಟ್ಟಿಯನ್ನು ಮೇಲಕ್ಕೆ ಸ್ವೈಪ್ ಮಾಡಿ.</string>
     <string name="dejavu_settings_hide_system_bars">ಸ್ಥಿತಿ ಮತ್ತು ನ್ಯಾವಿಗೇಶನ್ ಬಾರ್‌ಗಳನ್ನು ಮರೆಮಾಡಿ</string>
     <string name="dejavu_settings_hide_system_bars_summary">ಪುಟ ತೋರಿಸುತ್ತಿರುವಾಗ. ಅವುಗಳನ್ನು ಸ್ವಲ್ಪ ಹೊತ್ತು ನೋಡಲು ಮೇಲಿನ ಅಥವಾ ಕೆಳಗಿನ ಅಂಚಿನಿಂದ ಸ್ವೈಪ್ ಮಾಡಿ.</string>
+    <string name="dejavu_settings_match_page_color">ಬಾರ್‌ಗಳನ್ನು ಪುಟದ ಬಣ್ಣಕ್ಕೆ ಹೊಂದಿಸಿ</string>
+    <string name="dejavu_settings_match_page_color_summary">ಬಾರ್‌ಗಳು ವೆಬ್‌ಸೈಟ್‌ನ ಹಿನ್ನೆಲೆ ಬಣ್ಣವನ್ನು ಪಡೆಯುತ್ತವೆ. ಆಫ್ ಮಾಡಿದಾಗ ಕಾರ್ಯಸ್ಥಳದ ಬಣ್ಣಗಳನ್ನು ಇಟ್ಟುಕೊಳ್ಳುತ್ತವೆ.</string>
     <string name="dejavu_bookmarks_export">ಫೈಲ್‌ಗೆ ರಫ್ತು ಮಾಡು</string>
     <plurals name="dejavu_bookmarks_exported">
         <item quantity="one">%1$d ಬುಕ್‌ಮಾರ್ಕ್ ರಫ್ತು ಮಾಡಲಾಗಿದೆ</item>
@@ -618,4 +620,12 @@
     <string name="dejavu_unlock_use_screen_lock">ಪರದೆ ಲಾಕ್ ಬಳಸಿ</string>
     <string name="dejavu_private_hidden">ಖಾಸಗಿ ಟ್ಯಾಬ್‌ಗಳನ್ನು ಮರೆಮಾಡಲಾಗಿದೆ</string>
     <string name="dejavu_private_show">ತೋರಿಸು</string>
+    <string name="dejavu_loading_colors">ಪುಟ ಲೋಡ್ ಆಗುವಾಗ ಬಣ್ಣಗಳು</string>
+    <string name="dejavu_loading_colors_rainbow">ಕಾಮನಬಿಲ್ಲು</string>
+    <string name="dejavu_loading_colors_workspace">ಕಾರ್ಯಕ್ಷೇತ್ರದ ಬಣ್ಣಗಳು</string>
+    <string name="dejavu_loading_colors_workspace_summary">ಟ್ಯಾಬ್‌ನ ಕಾರ್ಯಕ್ಷೇತ್ರದ ಬಣ್ಣಗಳು. ಖಾಸಗಿ ಟ್ಯಾಬ್‌ಗಳು ಮತ್ತು ಬಣ್ಣಗಳಿಲ್ಲದ ಕಾರ್ಯಕ್ಷೇತ್ರಗಳು ಕಾಮನಬಿಲ್ಲನ್ನು ತೋರಿಸುತ್ತವೆ.</string>
+    <string name="dejavu_loading_colors_custom">ಕಸ್ಟಮ್ ಬಣ್ಣಗಳು</string>
+    <string name="dejavu_loading_colors_custom_summary">ಮೂರು ಬಣ್ಣಗಳವರೆಗೆ ಆಯ್ಕೆಮಾಡಿ. ಬದಲಾಯಿಸಲು ಮತ್ತೆ ಟ್ಯಾಪ್ ಮಾಡಿ.</string>
+    <string name="dejavu_settings_swipe_to_close">ಮುಚ್ಚಲು ಟ್ಯಾಬ್‌ಗಳನ್ನು ಸ್ವೈಪ್ ಮಾಡಿ</string>
+    <string name="dejavu_settings_swipe_to_close_summary">ಮುಖಪುಟದಲ್ಲಿ, ಟ್ಯಾಬ್ ಅನ್ನು ಎಡಕ್ಕೆ ಅಥವಾ ಬಲಕ್ಕೆ ಸ್ವೈಪ್ ಮಾಡಿದರೆ ಅದು ಮುಚ್ಚುತ್ತದೆ. ಕಾರ್ಯಕ್ಷೇತ್ರಗಳನ್ನು ಬದಲಾಯಿಸಲು, ಟ್ಯಾಬ್‌ಗಳ ಹೊರಗೆ ಸ್ವೈಪ್ ಮಾಡಿ ಅಥವಾ ಕಾರ್ಯಕ್ಷೇತ್ರ ಪಟ್ಟಿಯನ್ನು ಬಳಸಿ.</string>
 </resources>

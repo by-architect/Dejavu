@@ -38,6 +38,7 @@ import org.mozilla.fenix.dejavu.browser.DejavuToolbar
 import org.mozilla.fenix.dejavu.discover.NewThing
 import org.mozilla.fenix.dejavu.discover.NewThings
 import org.mozilla.fenix.dejavu.settings.dejavuSettings
+import org.mozilla.fenix.dejavu.settings.setupLoadingColorsCategory
 import org.mozilla.fenix.dejavu.settings.slideTo
 import org.mozilla.fenix.e2e.SystemInsetsPaddedFragment
 import org.mozilla.fenix.ext.components
@@ -160,6 +161,8 @@ open class CustomizationFragment : PreferenceFragmentCompat(), SystemInsetsPadde
             bindLightTheme()
             bindAutoBatteryTheme()
             setupRadioGroups()
+            // Dejavu: the colors that run through the address bar while a page loads.
+            setupLoadingColorsCategory()
             setupAnimationSwitches()
             setupMoreMenuEditButton()
             return
@@ -170,8 +173,10 @@ open class CustomizationFragment : PreferenceFragmentCompat(), SystemInsetsPadde
         setupToolbarLayout()
         updateToolbarShortcut()
         setupBarsCategory()
+        setupMatchPageColorSwitch()
         setupHomeSearchCategory()
         setupSystemBarsSwitch()
+        setupSwipeToCloseSwitch()
 
         // if tab strip is enabled, swipe toolbar to switch tabs should not be enabled so the
         // preference is not shown
@@ -404,6 +409,30 @@ open class CustomizationFragment : PreferenceFragmentCompat(), SystemInsetsPadde
             isChecked = dejavuSettings.systemBarsHidden.value
             onPreferenceChangeListener = Preference.OnPreferenceChangeListener { _, newValue ->
                 dejavuSettings.setSystemBarsHidden(newValue == true)
+                true
+            }
+        }
+    }
+
+    /** Tints the bars with the color of the page, which Dejavu's own settings keep. */
+    private fun setupMatchPageColorSwitch() {
+        val dejavuSettings = dejavuSettings()
+        requirePreference<SwitchPreferenceCompat>(R.string.pref_key_dejavu_match_page_color).apply {
+            isChecked = dejavuSettings.matchPageColor.value
+            onPreferenceChangeListener = Preference.OnPreferenceChangeListener { _, newValue ->
+                dejavuSettings.setMatchPageColor(newValue == true)
+                true
+            }
+        }
+    }
+
+    /** Swiping tabs closed on the home screen, which Dejavu's own settings keep. */
+    private fun setupSwipeToCloseSwitch() {
+        val dejavuSettings = dejavuSettings()
+        requirePreference<SwitchPreferenceCompat>(R.string.pref_key_dejavu_swipe_to_close).apply {
+            isChecked = dejavuSettings.swipeToClose.value
+            onPreferenceChangeListener = Preference.OnPreferenceChangeListener { _, newValue ->
+                dejavuSettings.setSwipeToClose(newValue == true)
                 true
             }
         }

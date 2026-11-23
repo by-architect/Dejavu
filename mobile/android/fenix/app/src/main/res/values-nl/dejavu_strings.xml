@@ -425,6 +425,8 @@
     <string name="dejavu_bars_bottom_summary">Geen actiebalk. Veeg de adresbalk omhoog om het menu “Meer” te openen.</string>
     <string name="dejavu_settings_hide_system_bars">Status- en navigatiebalk verbergen</string>
     <string name="dejavu_settings_hide_system_bars_summary">Terwijl een pagina wordt getoond. Veeg vanaf de boven- of onderrand om ze even te zien.</string>
+    <string name="dejavu_settings_match_page_color">Balken aanpassen aan de paginakleur</string>
+    <string name="dejavu_settings_match_page_color_summary">De balken nemen de achtergrondkleur van de website over. Uitgeschakeld behouden ze de kleuren van de werkruimte.</string>
     <string name="dejavu_bookmarks_export">Naar bestand exporteren</string>
     <plurals name="dejavu_bookmarks_exported">
         <item quantity="one">%1$d bladwijzer geëxporteerd</item>
@@ -618,4 +620,12 @@
     <string name="dejavu_unlock_use_screen_lock">Schermvergrendeling gebruiken</string>
     <string name="dejavu_private_hidden">Privétabbladen zijn verborgen</string>
     <string name="dejavu_private_show">Tonen</string>
+    <string name="dejavu_loading_colors">Kleuren tijdens het laden van een pagina</string>
+    <string name="dejavu_loading_colors_rainbow">Regenboog</string>
+    <string name="dejavu_loading_colors_workspace">Werkruimtekleuren</string>
+    <string name="dejavu_loading_colors_workspace_summary">De kleuren van de werkruimte van het tabblad. Privétabbladen en werkruimten zonder kleuren tonen de regenboog.</string>
+    <string name="dejavu_loading_colors_custom">Aangepaste kleuren</string>
+    <string name="dejavu_loading_colors_custom_summary">Kies maximaal drie kleuren. Tik opnieuw om ze te wijzigen.</string>
+    <string name="dejavu_settings_swipe_to_close">Tabbladen sluiten door te vegen</string>
+    <string name="dejavu_settings_swipe_to_close_summary">Op de startpagina sluit je een tabblad door het opzij te vegen. Veeg buiten de tabbladen of gebruik de werkruimtebalk om van werkruimte te wisselen.</string>
 </resources>

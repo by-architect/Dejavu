@@ -458,6 +458,8 @@
     <string name="dejavu_bars_bottom_summary">કોઈ ક્રિયા બાર નહીં. વધુ વિકલ્પ મેનૂ ખોલવા માટે સરનામાં બારને ઉપર સ્વાઇપ કરો.</string>
     <string name="dejavu_settings_hide_system_bars">સ્ટેટસ અને નેવિગેશન બાર છુપાવો</string>
     <string name="dejavu_settings_hide_system_bars_summary">જ્યારે પેજ બતાવાય ત્યારે. તેમને થોડી વાર જોવા માટે ઉપર કે નીચેની કિનારીથી સ્વાઇપ કરો.</string>
+    <string name="dejavu_settings_match_page_color">બારને પૃષ્ઠના રંગ સાથે મેળવો</string>
+    <string name="dejavu_settings_match_page_color_summary">બાર વેબસાઇટનો પૃષ્ઠભૂમિ રંગ લે છે. બંધ હોય ત્યારે તે વર્કસ્પેસના રંગો રાખે છે.</string>
     <string name="dejavu_bookmarks_export">ફાઇલમાં નિકાસ કરો</string>
     <plurals name="dejavu_bookmarks_exported">
         <item quantity="one">%1$d બુકમાર્કની નિકાસ કરી</item>
@@ -651,4 +653,12 @@
     <string name="dejavu_unlock_use_screen_lock">સ્ક્રીન લૉકનો ઉપયોગ કરો</string>
     <string name="dejavu_private_hidden">ખાનગી ટૅબ છુપાયેલી છે</string>
     <string name="dejavu_private_show">બતાવો</string>
+    <string name="dejavu_loading_colors">પેજ લોડ થતી વખતે રંગો</string>
+    <string name="dejavu_loading_colors_rainbow">મેઘધનુષ્ય</string>
+    <string name="dejavu_loading_colors_workspace">વર્કસ્પેસના રંગો</string>
+    <string name="dejavu_loading_colors_workspace_summary">ટૅબના વર્કસ્પેસના રંગો. ખાનગી ટૅબ અને રંગ વગરના વર્કસ્પેસ મેઘધનુષ્ય બતાવે છે.</string>
+    <string name="dejavu_loading_colors_custom">કસ્ટમ રંગો</string>
+    <string name="dejavu_loading_colors_custom_summary">ત્રણ સુધી રંગો પસંદ કરો. બદલવા માટે ફરી ટૅપ કરો.</string>
+    <string name="dejavu_settings_swipe_to_close">બંધ કરવા માટે ટૅબ્સ સ્વાઇપ કરો</string>
+    <string name="dejavu_settings_swipe_to_close_summary">મુખ્ય પૃષ્ઠ પર, ટૅબને બાજુમાં સ્વાઇપ કરવાથી તે બંધ થાય છે. વર્કસ્પેસ બદલવા માટે, ટૅબ્સની બહાર સ્વાઇપ કરો અથવા વર્કસ્પેસ બારનો ઉપયોગ કરો.</string>
 </resources>

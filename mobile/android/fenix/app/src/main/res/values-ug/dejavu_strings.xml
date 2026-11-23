@@ -425,6 +425,8 @@
     <string name="dejavu_bars_bottom_summary">مەشغۇلات بالدىقى يوق. «تېخىمۇ كۆپ» تىزىملىكىنى ئېچىش ئۈچۈن ئادرېس بالدىقىنى ئۈستىگە سۈرۈڭ.</string>
     <string name="dejavu_settings_hide_system_bars">ھالەت ۋە يول باشلاش بالدىقىنى يوشۇرۇش</string>
     <string name="dejavu_settings_hide_system_bars_summary">بەت كۆرسىتىلىۋاتقاندا. ئۇلارنى بىر دەم كۆرۈش ئۈچۈن ئۈستى ياكى ئاستى گىرۋىكىدىن سىيرىڭ.</string>
+    <string name="dejavu_settings_match_page_color">بالداقلارنى بەت رەڭگىگە ماسلاشتۇر</string>
+    <string name="dejavu_settings_match_page_color_summary">بالداقلار توربېكەتنىڭ تەگلىك رەڭگىنى ئالىدۇ. ئېتىك بولغاندا خىزمەت بوشلۇقىنىڭ رەڭگىنى ساقلايدۇ.</string>
     <string name="dejavu_bookmarks_export">ھۆججەتكە چىقار</string>
     <plurals name="dejavu_bookmarks_exported">
         <item quantity="one">%1$d خەتكۈچ چىقىرىلدى</item>
@@ -618,4 +620,12 @@
     <string name="dejavu_unlock_use_screen_lock">ئېكران قۇلۇپىنى ئىشلەت</string>
     <string name="dejavu_private_hidden">شەخسىي بەتكۈچلەر يوشۇرۇلدى</string>
     <string name="dejavu_private_show">كۆرسەت</string>
+    <string name="dejavu_loading_colors">بەت يۈكلىنىۋاتقاندىكى رەڭلەر</string>
+    <string name="dejavu_loading_colors_rainbow">ھەسەن-ھۈسەن</string>
+    <string name="dejavu_loading_colors_workspace">خىزمەت دائىرىسى رەڭلىرى</string>
+    <string name="dejavu_loading_colors_workspace_summary">بەتكۈچ تەۋە خىزمەت دائىرىسىنىڭ رەڭلىرى. شەخسىي بەتكۈچلەر ۋە رەڭسىز خىزمەت دائىرىلىرى ھەسەن-ھۈسەننى كۆرسىتىدۇ.</string>
+    <string name="dejavu_loading_colors_custom">ئىختىيارىي رەڭلەر</string>
+    <string name="dejavu_loading_colors_custom_summary">ئۈچ رەڭگىچە تاللاڭ. ئۆزگەرتىش ئۈچۈن قايتا چېكىڭ.</string>
+    <string name="dejavu_settings_swipe_to_close">بەتكۈچنى سۈرۈپ يېپىش</string>
+    <string name="dejavu_settings_swipe_to_close_summary">باش بەتتە بەتكۈچنى يانغا سۈرسىڭىز ئۇ يېپىلىدۇ. خىزمەت دائىرىسىنى ئالماشتۇرۇش ئۈچۈن بەتكۈچلەرنىڭ سىرتىدا سۈرۈڭ ياكى خىزمەت دائىرىسى بالدىقىنى ئىشلىتىڭ.</string>
 </resources>

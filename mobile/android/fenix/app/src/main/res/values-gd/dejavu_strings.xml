@@ -439,6 +439,8 @@
     <string name="dejavu_bars_bottom_summary">Gun bhàr ghnìomhan. Grad-shlaighd bàr an t-seòlaidh suas gus an clàr-taice Barrachd fhosgladh.</string>
     <string name="dejavu_settings_hide_system_bars">Falaich bàraichean na staid is na seòladaireachd</string>
     <string name="dejavu_settings_hide_system_bars_summary">Fhad \'s a tha duilleag ga shealltainn. Grad-shlaighd a-steach on oir gu h-àrd no gu h-ìosal airson am faicinn greiseag.</string>
+    <string name="dejavu_settings_match_page_color">Cuir bàraichean ri dath na duilleige</string>
+    <string name="dejavu_settings_match_page_color_summary">Gabhaidh na bàraichean dath cùlaibh an làraich-lìn. Nuair a tha e dheth, cumaidh iad dathan na h-àite-obrach.</string>
     <string name="dejavu_bookmarks_export">Às-phortaich gu faidhle</string>
     <plurals name="dejavu_bookmarks_exported">
         <item quantity="one">Chaidh %1$d comharra-lìn às-phortadh</item>
@@ -634,4 +636,12 @@
     <string name="dejavu_unlock_use_screen_lock">Cleachd glas na sgrìn</string>
     <string name="dejavu_private_hidden">Tha na tabaichean prìobhaideach falaichte</string>
     <string name="dejavu_private_show">Seall</string>
+    <string name="dejavu_loading_colors">Dathan fhad \'s a tha duilleag ga luchdadh</string>
+    <string name="dejavu_loading_colors_rainbow">Bogha-froise</string>
+    <string name="dejavu_loading_colors_workspace">Dathan an àite-obrach</string>
+    <string name="dejavu_loading_colors_workspace_summary">Dathan àite-obrach an taba. Seallaidh tabaichean prìobhaideach agus àiteachan-obrach gun dathan am bogha-froise.</string>
+    <string name="dejavu_loading_colors_custom">Dathan gnàthaichte</string>
+    <string name="dejavu_loading_colors_custom_summary">Tagh suas ri trì dathan. Thoir gnogag a-rithist gus an atharrachadh.</string>
+    <string name="dejavu_settings_swipe_to_close">Grad-shlaighd tabaichean gus an dùnadh</string>
+    <string name="dejavu_settings_swipe_to_close_summary">Air an sgrìn-dachaigh, ma ghrad-shlaighdeas tu taba gu taobh, thèid a dhùnadh. Airson àite-obrach eile a thaghadh, grad-shlaighd taobh a-muigh nan tabaichean no cleachd bàr nan àiteachan-obrach.</string>
 </resources>

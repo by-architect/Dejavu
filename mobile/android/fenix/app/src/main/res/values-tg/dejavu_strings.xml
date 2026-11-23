@@ -425,6 +425,8 @@
     <string name="dejavu_bars_bottom_summary">Бе навори амалҳо. Барои кушодани менюи иловагӣ навори нишониро ба боло кашед.</string>
     <string name="dejavu_settings_hide_system_bars">Пинҳон кардани навори ҳолат ва навори паймоиш</string>
     <string name="dejavu_settings_hide_system_bars_summary">Ҳангоми намоиш додани саҳифа. Барои як лаҳза дидани онҳо аз канори боло ё поён ангуштро гузаронед.</string>
+    <string name="dejavu_settings_match_page_color">Мутобиқ кардани навор бо рангҳои саҳифа</string>
+    <string name="dejavu_settings_match_page_color_summary">Навор ранги пасзаминаи сомонаро мегирад. Ҳангоми хомӯш будан рангҳои фазои корӣ боқӣ мемонанд.</string>
     <string name="dejavu_bookmarks_export">Содир кардан ба файл</string>
     <plurals name="dejavu_bookmarks_exported">
         <item quantity="one">%1$d хатбарак содир карда шуд</item>
@@ -618,4 +620,12 @@
     <string name="dejavu_unlock_use_screen_lock">Истифодаи қулфи экран</string>
     <string name="dejavu_private_hidden">Варақаҳои хусусӣ пинҳон шудаанд</string>
     <string name="dejavu_private_show">Нишон додан</string>
+    <string name="dejavu_loading_colors">Рангҳо ҳангоми боркунии саҳифа</string>
+    <string name="dejavu_loading_colors_rainbow">Тирукамон</string>
+    <string name="dejavu_loading_colors_workspace">Рангҳои фазо</string>
+    <string name="dejavu_loading_colors_workspace_summary">Рангҳои фазои варақа. Варақаҳои хусусӣ ва фазоҳои бе ранг тирукамонро нишон медиҳанд.</string>
+    <string name="dejavu_loading_colors_custom">Рангҳои фармоишӣ</string>
+    <string name="dejavu_loading_colors_custom_summary">То се рангро интихоб кунед. Барои иваз кардан боз зарба занед.</string>
+    <string name="dejavu_settings_swipe_to_close">Пӯшидани варақаҳо бо кашидан</string>
+    <string name="dejavu_settings_swipe_to_close_summary">Дар саҳифаи асосӣ кашидани варақа ба тараф онро мепӯшад. Барои гузаштан байни фазоҳо берун аз варақаҳо ангушт гузаронед ё навори фазоҳоро истифода баред.</string>
 </resources>

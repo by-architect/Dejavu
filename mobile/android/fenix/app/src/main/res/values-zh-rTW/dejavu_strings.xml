@@ -418,6 +418,8 @@
     <string name="dejavu_bars_bottom_summary">無操作列。向上滑動網址列即可開啟更多選單。</string>
     <string name="dejavu_settings_hide_system_bars">隱藏狀態列與導覽列</string>
     <string name="dejavu_settings_hide_system_bars_summary">顯示網頁時。從上緣或下緣向內滑動即可短暫顯示。</string>
+    <string name="dejavu_settings_match_page_color">列跟隨網頁顏色</string>
+    <string name="dejavu_settings_match_page_color_summary">列使用網站的背景色。關閉後維持工作區顏色。</string>
     <string name="dejavu_bookmarks_export">匯出至檔案</string>
     <plurals name="dejavu_bookmarks_exported">
         <item quantity="other">已匯出 %1$d 個書籤</item>
@@ -610,4 +612,12 @@
     <string name="dejavu_unlock_use_screen_lock">使用螢幕鎖定</string>
     <string name="dejavu_private_hidden">隱私分頁已隱藏</string>
     <string name="dejavu_private_show">顯示</string>
+    <string name="dejavu_loading_colors">頁面載入時的顏色</string>
+    <string name="dejavu_loading_colors_rainbow">彩虹</string>
+    <string name="dejavu_loading_colors_workspace">工作區顏色</string>
+    <string name="dejavu_loading_colors_workspace_summary">分頁所在工作區的顏色。隱私分頁與沒有顏色的工作區會顯示彩虹。</string>
+    <string name="dejavu_loading_colors_custom">自訂顏色</string>
+    <string name="dejavu_loading_colors_custom_summary">最多可選擇三種顏色。再次點按即可更改。</string>
+    <string name="dejavu_settings_swipe_to_close">滑動關閉分頁</string>
+    <string name="dejavu_settings_swipe_to_close_summary">在主頁上左右滑動分頁即可關閉。若要切換工作區，請在分頁以外的地方滑動，或使用工作區列。</string>
 </resources>

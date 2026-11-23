@@ -425,6 +425,8 @@
     <string name="dejavu_bars_bottom_summary">Ensin barra d\'aiciones. Esliza p\'arriba la barra de direiciones p\'abrir el menú Más.</string>
     <string name="dejavu_settings_hide_system_bars">Anubrir les barres d\'estáu y de navegación</string>
     <string name="dejavu_settings_hide_system_bars_summary">Mentanto s\'amuesa una páxina. Esliza dende\'l berbesu cimeru o baxeru pa veles un momentu.</string>
+    <string name="dejavu_settings_match_page_color">Axustar les barres al color de la páxina</string>
+    <string name="dejavu_settings_match_page_color_summary">Les barres tomen el color de fondu del sitiu web. Si se desactiva, caltienen los colores del espaciu de trabayu.</string>
     <string name="dejavu_bookmarks_export">Esportar a un ficheru</string>
     <plurals name="dejavu_bookmarks_exported">
         <item quantity="one">%1$d marcador esportáu</item>
@@ -618,4 +620,12 @@
     <string name="dejavu_unlock_use_screen_lock">Usar el bloquéu de pantalla</string>
     <string name="dejavu_private_hidden">Les llingüetes privaes tán anubríes</string>
     <string name="dejavu_private_show">Amosar</string>
+    <string name="dejavu_loading_colors">Colores mentanto se carga una páxina</string>
+    <string name="dejavu_loading_colors_rainbow">Arcu iris</string>
+    <string name="dejavu_loading_colors_workspace">Colores del espaciu de trabayu</string>
+    <string name="dejavu_loading_colors_workspace_summary">Los colores del espaciu de trabayu de la llingüeta. Les llingüetes privaes y los espacios de trabayu ensin colores amuesen l\'arcu iris.</string>
+    <string name="dejavu_loading_colors_custom">Colores personalizaos</string>
+    <string name="dejavu_loading_colors_custom_summary">Escueyi hasta trés colores. Toca otra vegada pa camudalos.</string>
+    <string name="dejavu_settings_swipe_to_close">Eslizar les llingüetes pa zarrales</string>
+    <string name="dejavu_settings_swipe_to_close_summary">Na pantalla d\'aniciu, eslizar una llingüeta de llau zárrala. Pa cambiar d\'espaciu de trabayu, esliza fuera de les llingüetes o usa la barra d\'espacios de trabayu.</string>
 </resources>

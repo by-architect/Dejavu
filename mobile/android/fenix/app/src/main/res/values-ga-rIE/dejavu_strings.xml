@@ -446,6 +446,8 @@
     <string name="dejavu_bars_bottom_summary">Níl aon bharra gníomhartha ann. Svaidhpeáil an barra seoltaí suas chun an roghchlár ‘Tuilleadh’ a oscailt.</string>
     <string name="dejavu_settings_hide_system_bars">Folaigh na barraí stádais agus nascleanúna</string>
     <string name="dejavu_settings_hide_system_bars_summary">Fad is atá leathanach ar taispeáint. Svaidhpeáil isteach ón imeall uachtarach nó íochtarach chun iad a fheiceáil ar feadh nóiméid.</string>
+    <string name="dejavu_settings_match_page_color">Meaitseáil na barraí le datha an leathanaigh</string>
+    <string name="dejavu_settings_match_page_color_summary">Glacann na barraí datha cúlra an tsuímh ghréasáin. Nuair atá sé as, coinníonn siad dathanna na spáis oibre.</string>
     <string name="dejavu_bookmarks_export">Easpórtáil go comhad</string>
     <plurals name="dejavu_bookmarks_exported">
         <item quantity="one">Easpórtáladh %1$d leabharmharc</item>
@@ -642,4 +644,12 @@
     <string name="dejavu_unlock_use_screen_lock">Úsáid glas an scáileáin</string>
     <string name="dejavu_private_hidden">Tá na cluaisíní príobháideacha i bhfolach</string>
     <string name="dejavu_private_show">Taispeáin</string>
+    <string name="dejavu_loading_colors">Dathanna agus leathanach á lódáil</string>
+    <string name="dejavu_loading_colors_rainbow">Bogha báistí</string>
+    <string name="dejavu_loading_colors_workspace">Dathanna an spáis oibre</string>
+    <string name="dejavu_loading_colors_workspace_summary">Dathanna spás oibre an chluaisín. Taispeánann cluaisíní príobháideacha agus spásanna oibre gan dathanna an bogha báistí.</string>
+    <string name="dejavu_loading_colors_custom">Dathanna saincheaptha</string>
+    <string name="dejavu_loading_colors_custom_summary">Roghnaigh suas le trí dhath. Tapáil arís chun iad a athrú.</string>
+    <string name="dejavu_settings_swipe_to_close">Svaidhpeáil cluaisíní chun iad a dhúnadh</string>
+    <string name="dejavu_settings_swipe_to_close_summary">Ar an leathanach baile, dúntar cluaisín má svaidhpeálann tú ó thaobh go taobh é. Chun aistriú idir spásanna oibre, svaidhpeáil lasmuigh de na cluaisíní nó úsáid barra na spásanna oibre.</string>
 </resources>

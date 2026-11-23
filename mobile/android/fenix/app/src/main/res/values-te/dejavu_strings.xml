@@ -425,6 +425,8 @@
     <string name="dejavu_bars_bottom_summary">చర్యల పట్టీ లేదు. మరిన్ని మెనూను తెరవడానికి చిరునామా పట్టీని పైకి స్వైప్ చేయండి.</string>
     <string name="dejavu_settings_hide_system_bars">స్టేటస్, నావిగేషన్ బార్‌లను దాచు</string>
     <string name="dejavu_settings_hide_system_bars_summary">పేజీ చూపబడుతున్నప్పుడు. వాటిని ఒక్క క్షణం చూడటానికి పై లేదా కింది అంచు నుండి స్వైప్ చేయండి.</string>
+    <string name="dejavu_settings_match_page_color">బార్‌లను పేజీ రంగుకు సరిపోల్చు</string>
+    <string name="dejavu_settings_match_page_color_summary">బార్‌లు వెబ్‌సైట్ నేపథ్య రంగును తీసుకుంటాయి. ఆఫ్ చేస్తే వర్క్‌స్పేస్ రంగులను ఉంచుతాయి.</string>
     <string name="dejavu_bookmarks_export">ఫైలుకు ఎగుమతి చేయి</string>
     <plurals name="dejavu_bookmarks_exported">
         <item quantity="one">%1$d ఇష్టాంశం ఎగుమతి చేయబడింది</item>
@@ -618,4 +620,12 @@
     <string name="dejavu_unlock_use_screen_lock">స్క్రీన్ లాక్ ఉపయోగించు</string>
     <string name="dejavu_private_hidden">అంతరంగిక ట్యాబులు దాచబడ్డాయి</string>
     <string name="dejavu_private_show">చూపించు</string>
+    <string name="dejavu_loading_colors">పేజీ లోడ్ అవుతున్నప్పుడు రంగులు</string>
+    <string name="dejavu_loading_colors_rainbow">ఇంద్రధనుస్సు</string>
+    <string name="dejavu_loading_colors_workspace">కార్యస్థల రంగులు</string>
+    <string name="dejavu_loading_colors_workspace_summary">ట్యాబు కార్యస్థలం యొక్క రంగులు. అంతరంగిక ట్యాబులు, రంగులు లేని కార్యస్థలాలు ఇంద్రధనుస్సును చూపిస్తాయి.</string>
+    <string name="dejavu_loading_colors_custom">అనుకూల రంగులు</string>
+    <string name="dejavu_loading_colors_custom_summary">మూడు రంగుల వరకు ఎంచుకోండి. మార్చడానికి మళ్ళీ తట్టండి.</string>
+    <string name="dejavu_settings_swipe_to_close">ట్యాబులను స్వైప్ చేసి మూసివేయి</string>
+    <string name="dejavu_settings_swipe_to_close_summary">హోమ్ స్క్రీన్‌పై ట్యాబును పక్కకు స్వైప్ చేస్తే అది మూసుకుంటుంది. కార్యస్థలాలను మార్చడానికి ట్యాబుల బయట స్వైప్ చేయండి లేదా కార్యస్థలాల పట్టీని వాడండి.</string>
 </resources>

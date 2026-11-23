@@ -425,6 +425,8 @@
     <string name="dejavu_bars_bottom_summary">بدون نوار کنش‌ها. برای باز کردن منوی «بیشتر»، نوار نشانی را به بالا بکشید.</string>
     <string name="dejavu_settings_hide_system_bars">پنهان کردن نوار وضعیت و نوار پیمایش</string>
     <string name="dejavu_settings_hide_system_bars_summary">هنگام نمایش یک صفحه. برای دیدن لحظه‌ای آن‌ها، از لبهٔ بالا یا پایین بکشید.</string>
+    <string name="dejavu_settings_match_page_color">هماهنگ‌سازی نوارها با رنگ صفحه</string>
+    <string name="dejavu_settings_match_page_color_summary">نوارها رنگ پس‌زمینهٔ وب‌سایت را می‌گیرند. در حالت خاموش، رنگ‌های فضای کار حفظ می‌شود.</string>
     <string name="dejavu_bookmarks_export">صادر کردن به فایل</string>
     <plurals name="dejavu_bookmarks_exported">
         <item quantity="one">%1$d نشانک صادر شد</item>
@@ -618,4 +620,12 @@
     <string name="dejavu_unlock_use_screen_lock">استفاده از قفل صفحه</string>
     <string name="dejavu_private_hidden">زبانه‌های خصوصی پنهان هستند</string>
     <string name="dejavu_private_show">نمایش</string>
+    <string name="dejavu_loading_colors">رنگ‌ها هنگام بارگیری صفحه</string>
+    <string name="dejavu_loading_colors_rainbow">رنگین‌کمان</string>
+    <string name="dejavu_loading_colors_workspace">رنگ‌های فضای کاری</string>
+    <string name="dejavu_loading_colors_workspace_summary">رنگ‌های فضای کاری زبانه. زبانه‌های خصوصی و فضاهای کاری بدون رنگ، رنگین‌کمان را نشان می‌دهند.</string>
+    <string name="dejavu_loading_colors_custom">رنگ‌های سفارشی</string>
+    <string name="dejavu_loading_colors_custom_summary">تا سه رنگ انتخاب کنید. برای تغییرشان دوباره ضربه بزنید.</string>
+    <string name="dejavu_settings_swipe_to_close">کشیدن زبانه‌ها برای بستن</string>
+    <string name="dejavu_settings_swipe_to_close_summary">در صفحهٔ اصلی، کشیدن یک زبانه به کنار آن را می‌بندد. برای رفتن به فضای کاری دیگر، بیرون از زبانه‌ها بکشید یا از نوار فضاهای کاری استفاده کنید.</string>
 </resources>

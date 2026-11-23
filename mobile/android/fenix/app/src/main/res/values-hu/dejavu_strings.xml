@@ -425,6 +425,8 @@
     <string name="dejavu_bars_bottom_summary">Nincs műveletsáv. Húzza felfelé a címsávot a Továbbiak menü megnyitásához.</string>
     <string name="dejavu_settings_hide_system_bars">Állapotsor és navigációs sáv elrejtése</string>
     <string name="dejavu_settings_hide_system_bars_summary">Amíg egy oldal látható. Húzza be az ujját a felső vagy alsó szélről, hogy egy pillanatra lássa őket.</string>
+    <string name="dejavu_settings_match_page_color">Sávok igazítása az oldal színéhez</string>
+    <string name="dejavu_settings_match_page_color_summary">A sávok átveszik a weboldal háttérszínét. Kikapcsolva a munkaterület színeit tartják meg.</string>
     <string name="dejavu_bookmarks_export">Exportálás fájlba</string>
     <plurals name="dejavu_bookmarks_exported">
         <item quantity="one">%1$d könyvjelző exportálva</item>
@@ -618,4 +620,12 @@
     <string name="dejavu_unlock_use_screen_lock">Képernyőzár használata</string>
     <string name="dejavu_private_hidden">A privát lapok el vannak rejtve</string>
     <string name="dejavu_private_show">Megjelenítés</string>
+    <string name="dejavu_loading_colors">Színek oldalbetöltés közben</string>
+    <string name="dejavu_loading_colors_rainbow">Szivárvány</string>
+    <string name="dejavu_loading_colors_workspace">Munkaterület színei</string>
+    <string name="dejavu_loading_colors_workspace_summary">A lap munkaterületének színei. A privát lapok és a szín nélküli munkaterületek a szivárványt mutatják.</string>
+    <string name="dejavu_loading_colors_custom">Egyéni színek</string>
+    <string name="dejavu_loading_colors_custom_summary">Válasszon legfeljebb három színt. Koppintson újra a módosításukhoz.</string>
+    <string name="dejavu_settings_swipe_to_close">Lapok bezárása húzással</string>
+    <string name="dejavu_settings_swipe_to_close_summary">A kezdőképernyőn egy lap oldalra húzása bezárja a lapot. A munkaterületek közti váltáshoz húzza az ujját a lapokon kívül, vagy használja a munkaterületek sávját.</string>
 </resources>

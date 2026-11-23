@@ -432,6 +432,8 @@
     <string name="dejavu_bars_bottom_summary">Sin barra de acciones. Desliza hacia arriba la barra de direcciones para abrir el menú Más.</string>
     <string name="dejavu_settings_hide_system_bars">Ocultar las barras de estado y de navegación</string>
     <string name="dejavu_settings_hide_system_bars_summary">Mientras se muestra una página. Desliza desde el borde superior o inferior para verlas un momento.</string>
+    <string name="dejavu_settings_match_page_color">Adaptar las barras al color de la página</string>
+    <string name="dejavu_settings_match_page_color_summary">Las barras toman el color de fondo del sitio web. Si se desactiva, conservan los colores del espacio de trabajo.</string>
     <string name="dejavu_bookmarks_export">Exportar a archivo</string>
     <plurals name="dejavu_bookmarks_exported">
         <item quantity="one">%1$d marcador exportado</item>
@@ -626,4 +628,12 @@
     <string name="dejavu_unlock_use_screen_lock">Usar bloqueo de pantalla</string>
     <string name="dejavu_private_hidden">Las pestañas privadas están ocultas</string>
     <string name="dejavu_private_show">Mostrar</string>
+    <string name="dejavu_loading_colors">Colores mientras carga una página</string>
+    <string name="dejavu_loading_colors_rainbow">Arcoíris</string>
+    <string name="dejavu_loading_colors_workspace">Colores del espacio de trabajo</string>
+    <string name="dejavu_loading_colors_workspace_summary">Los colores del espacio de trabajo de la pestaña. Las pestañas privadas y los espacios de trabajo sin colores muestran el arcoíris.</string>
+    <string name="dejavu_loading_colors_custom">Colores personalizados</string>
+    <string name="dejavu_loading_colors_custom_summary">Elige hasta tres colores. Tócalo de nuevo para cambiarlos.</string>
+    <string name="dejavu_settings_swipe_to_close">Deslizar pestañas para cerrarlas</string>
+    <string name="dejavu_settings_swipe_to_close_summary">En la pantalla de inicio, deslizar una pestaña hacia un lado la cierra. Para cambiar de espacio de trabajo, desliza fuera de las pestañas o usa la barra de espacios de trabajo.</string>
 </resources>

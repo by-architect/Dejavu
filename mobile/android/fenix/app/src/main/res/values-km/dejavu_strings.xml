@@ -418,6 +418,8 @@
     <string name="dejavu_bars_bottom_summary">គ្មានរបារសកម្មភាព។ អូសរបារអាសយដ្ឋានឡើងលើ ដើម្បីបើកម៉ឺនុយបន្ថែម។</string>
     <string name="dejavu_settings_hide_system_bars">លាក់របារស្ថានភាព និងរបាររុករក</string>
     <string name="dejavu_settings_hide_system_bars_summary">ពេលទំព័រកំពុងបង្ហាញ។ អូសចូលពីគែមខាងលើ ឬខាងក្រោម ដើម្បីមើលពួកវាមួយភ្លែត។</string>
+    <string name="dejavu_settings_match_page_color">ផ្គូផ្គងរបារទៅនឹងពណ៌ទំព័រ</string>
+    <string name="dejavu_settings_match_page_color_summary">របារប្រើពណ៌ផ្ទៃខាងក្រោយនៃគេហទំព័រ។ នៅពេលបិទ វានៅតែប្រើពណ៌ទីតាំងការងារ។</string>
     <string name="dejavu_bookmarks_export">នាំចេញទៅឯកសារ</string>
     <plurals name="dejavu_bookmarks_exported">
         <item quantity="other">%1$d ចំណាំបាននាំចេញ</item>
@@ -610,4 +612,12 @@
     <string name="dejavu_unlock_use_screen_lock">ប្រើការចាក់សោអេក្រង់</string>
     <string name="dejavu_private_hidden">ផ្ទាំងឯកជនត្រូវបានលាក់</string>
     <string name="dejavu_private_show">បង្ហាញ</string>
+    <string name="dejavu_loading_colors">ពណ៌ពេលកំពុងផ្ទុកទំព័រ</string>
+    <string name="dejavu_loading_colors_rainbow">ឥន្ទធនូ</string>
+    <string name="dejavu_loading_colors_workspace">ពណ៌ចន្លោះការងារ</string>
+    <string name="dejavu_loading_colors_workspace_summary">ពណ៌នៃចន្លោះការងាររបស់ផ្ទាំង។ ផ្ទាំងឯកជន និងចន្លោះការងារគ្មានពណ៌ បង្ហាញឥន្ទធនូ។</string>
+    <string name="dejavu_loading_colors_custom">ពណ៌ផ្ទាល់ខ្លួន</string>
+    <string name="dejavu_loading_colors_custom_summary">ជ្រើសរើសពណ៌រហូតដល់បី។ ចុចម្ដងទៀតដើម្បីប្ដូរ។</string>
+    <string name="dejavu_settings_swipe_to_close">អូសផ្ទាំងដើម្បីបិទ</string>
+    <string name="dejavu_settings_swipe_to_close_summary">នៅលើទំព័រដើម ការអូសផ្ទាំងទៅចំហៀងនឹងបិទវា។ ដើម្បីប្ដូរចន្លោះការងារ សូមអូសនៅខាងក្រៅផ្ទាំង ឬប្រើរបារចន្លោះការងារ។</string>
 </resources>

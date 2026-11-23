@@ -425,6 +425,8 @@
     <string name="dejavu_bars_bottom_summary">Ingen handlingslinje. Stryg adresselinjen op for at åbne Mere-menuen.</string>
     <string name="dejavu_settings_hide_system_bars">Skjul status- og navigationslinjen</string>
     <string name="dejavu_settings_hide_system_bars_summary">Mens en side vises. Stryg ind fra den øverste eller nederste kant for at se dem et øjeblik.</string>
+    <string name="dejavu_settings_match_page_color">Tilpas linjerne til sidens farve</string>
+    <string name="dejavu_settings_match_page_color_summary">Linjerne tager websitets baggrundsfarve. Slået fra beholder de arbejdsområdets farver.</string>
     <string name="dejavu_bookmarks_export">Eksporter til fil</string>
     <plurals name="dejavu_bookmarks_exported">
         <item quantity="one">%1$d bogmærke eksporteret</item>
@@ -618,4 +620,12 @@
     <string name="dejavu_unlock_use_screen_lock">Brug skærmlås</string>
     <string name="dejavu_private_hidden">Private faneblade er skjult</string>
     <string name="dejavu_private_show">Vis</string>
+    <string name="dejavu_loading_colors">Farver mens en side indlæses</string>
+    <string name="dejavu_loading_colors_rainbow">Regnbue</string>
+    <string name="dejavu_loading_colors_workspace">Arbejdsområdets farver</string>
+    <string name="dejavu_loading_colors_workspace_summary">Farverne fra fanebladets arbejdsområde. Private faneblade og arbejdsområder uden farver viser regnbuen.</string>
+    <string name="dejavu_loading_colors_custom">Tilpassede farver</string>
+    <string name="dejavu_loading_colors_custom_summary">Vælg op til tre farver. Tryk igen for at ændre dem.</string>
+    <string name="dejavu_settings_swipe_to_close">Stryg faneblade for at lukke dem</string>
+    <string name="dejavu_settings_swipe_to_close_summary">På startskærmen lukkes et faneblad, når du stryger det til siden. For at skifte arbejdsområde skal du stryge uden for fanebladene eller bruge arbejdsområdelinjen.</string>
 </resources>

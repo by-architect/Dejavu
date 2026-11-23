@@ -439,6 +439,8 @@
     <string name="dejavu_bars_bottom_summary">Brak paska akcji. Przeciągnij pasek adresu w górę, aby otworzyć menu „Więcej”.</string>
     <string name="dejavu_settings_hide_system_bars">Ukryj paski stanu i nawigacji</string>
     <string name="dejavu_settings_hide_system_bars_summary">Gdy wyświetlana jest strona. Przesuń palcem od górnej lub dolnej krawędzi, aby na chwilę je zobaczyć.</string>
+    <string name="dejavu_settings_match_page_color">Dopasuj paski do koloru strony</string>
+    <string name="dejavu_settings_match_page_color_summary">Paski przyjmują kolor tła witryny. Po wyłączeniu zachowują kolory obszaru roboczego.</string>
     <string name="dejavu_bookmarks_export">Eksportuj do pliku</string>
     <plurals name="dejavu_bookmarks_exported">
         <item quantity="one">Wyeksportowano %1$d zakładkę</item>
@@ -634,4 +636,12 @@
     <string name="dejavu_unlock_use_screen_lock">Użyj blokady ekranu</string>
     <string name="dejavu_private_hidden">Karty prywatne są ukryte</string>
     <string name="dejavu_private_show">Pokaż</string>
+    <string name="dejavu_loading_colors">Kolory podczas wczytywania strony</string>
+    <string name="dejavu_loading_colors_rainbow">Tęcza</string>
+    <string name="dejavu_loading_colors_workspace">Kolory obszaru roboczego</string>
+    <string name="dejavu_loading_colors_workspace_summary">Kolory obszaru roboczego karty. Karty prywatne i obszary robocze bez kolorów pokazują tęczę.</string>
+    <string name="dejavu_loading_colors_custom">Własne kolory</string>
+    <string name="dejavu_loading_colors_custom_summary">Wybierz do trzech kolorów. Stuknij ponownie, aby je zmienić.</string>
+    <string name="dejavu_settings_swipe_to_close">Zamykanie kart przeciągnięciem</string>
+    <string name="dejavu_settings_swipe_to_close_summary">Na stronie startowej przeciągnięcie karty w bok zamyka ją. Aby przełączyć obszar roboczy, przesuń palcem poza kartami lub użyj paska obszarów roboczych.</string>
 </resources>

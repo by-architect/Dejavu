@@ -622,7 +622,8 @@ private fun savedPicture(content: ViewGroup, tabId: String, bitmap: Bitmap): Pag
     } else {
         content.statusBarHeight + bar * content.resources.displayMetrics.density
     }
-    return PageShot(bitmap.asImageBitmap(), Offset(0f, pageTop), tabId, Color(bitmap.topEdgeColor()))
+    val edgeColor = content.context.colorAbovePage(bitmap.topEdgeColor())
+    return PageShot(bitmap.asImageBitmap(), Offset(0f, pageTop), tabId, edgeColor)
 }
 
 /**

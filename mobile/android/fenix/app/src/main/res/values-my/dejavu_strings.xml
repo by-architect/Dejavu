@@ -418,6 +418,8 @@
     <string name="dejavu_bars_bottom_summary">လုပ်ဆောင်ချက်ဘား မရှိပါ။ နောက်ထပ် မီနူးကို ဖွင့်ရန် လိပ်စာဘားကို အပေါ်သို့ ပွတ်ဆွဲပါ။</string>
     <string name="dejavu_settings_hide_system_bars">အခြေအနေနှင့် လမ်းညွှန်ဘားများကို ဖျောက်ရန်</string>
     <string name="dejavu_settings_hide_system_bars_summary">စာမျက်နှာ ပြသနေစဉ်။ ခဏကြည့်ရန် အပေါ် သို့မဟုတ် အောက်အစွန်းမှ ပွတ်ဆွဲပါ။</string>
+    <string name="dejavu_settings_match_page_color">ဘားများကို စာမျက်နှာအရောင်နှင့် ကိုက်ညီစေရန်</string>
+    <string name="dejavu_settings_match_page_color_summary">ဘားများသည် ဝဘ်ဆိုက်၏ နောက်ခံအရောင်ကို ယူသည်။ ပိတ်ထားပါက လုပ်ငန်းခွင်အရောင်များကို ထိန်းထားသည်။</string>
     <string name="dejavu_bookmarks_export">ဖိုင်သို့ ထုတ်ယူရန်</string>
     <plurals name="dejavu_bookmarks_exported">
         <item quantity="other">စာမှတ် %1$d ခုကို ထုတ်ယူပြီးပြီ</item>
@@ -610,4 +612,12 @@
     <string name="dejavu_unlock_use_screen_lock">မျက်နှာပြင်လော့ခ် သုံးရန်</string>
     <string name="dejavu_private_hidden">သီးသန့် တက်ဗ်များကို ဖျောက်ထားသည်</string>
     <string name="dejavu_private_show">ပြသရန်</string>
+    <string name="dejavu_loading_colors">စာမျက်နှာ ဖွင့်နေစဉ် အရောင်များ</string>
+    <string name="dejavu_loading_colors_rainbow">သက်တံ</string>
+    <string name="dejavu_loading_colors_workspace">လုပ်ငန်းခွင် အရောင်များ</string>
+    <string name="dejavu_loading_colors_workspace_summary">တက်ဗ်၏ လုပ်ငန်းခွင် အရောင်များ။ သီးသန့် တက်ဗ်များနှင့် အရောင်မရှိသော လုပ်ငန်းခွင်များတွင် သက်တံကို ပြသည်။</string>
+    <string name="dejavu_loading_colors_custom">စိတ်ကြိုက် အရောင်များ</string>
+    <string name="dejavu_loading_colors_custom_summary">အရောင် သုံးမျိုးအထိ ရွေးပါ။ ပြောင်းရန် ထပ်မံ တို့ပါ။</string>
+    <string name="dejavu_settings_swipe_to_close">ပိတ်ရန် တက်ဗ်များကို ပွတ်ဆွဲပါ</string>
+    <string name="dejavu_settings_swipe_to_close_summary">ပင်မစခရင်တွင် တက်ဗ်တစ်ခုကို ဘေးတိုက် ပွတ်ဆွဲလျှင် ၎င်းကို ပိတ်သည်။ လုပ်ငန်းခွင်များ ပြောင်းရန် တက်ဗ်များ၏ အပြင်ဘက်တွင် ပွတ်ဆွဲပါ သို့မဟုတ် လုပ်ငန်းခွင်ဘားကို သုံးပါ။</string>
 </resources>

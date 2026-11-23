@@ -425,6 +425,8 @@
     <string name="dejavu_bars_bottom_summary">د کړنو نوار نشته. د نور مینو د خلاصولو لپاره د پتې نوار پورته کش کړئ.</string>
     <string name="dejavu_settings_hide_system_bars">د حالت او نېویګېشن پټۍ پټې کړئ</string>
     <string name="dejavu_settings_hide_system_bars_summary">کله چې یوه پاڼه ښودل کېږي. د یوې شېبې لپاره د لیدو لپاره له پورتنۍ یا ښکتنۍ څنډې څخه سوایپ کړئ.</string>
+    <string name="dejavu_settings_match_page_color">پټۍ د پاڼې له رنګ سره سمې کړئ</string>
+    <string name="dejavu_settings_match_page_color_summary">پټۍ د وېبپاڼې د شاليد رنګ اخلي. کله چې بندې وي، د کاري ځای رنګونه ساتي.</string>
     <string name="dejavu_bookmarks_export">فایل ته صادرول</string>
     <plurals name="dejavu_bookmarks_exported">
         <item quantity="one">%1$d یادنښه صادره شوه</item>
@@ -618,4 +620,12 @@
     <string name="dejavu_unlock_use_screen_lock">د پردې قلف وکاروئ</string>
     <string name="dejavu_private_hidden">شخصي ټبونه پټ دي</string>
     <string name="dejavu_private_show">ښودل</string>
+    <string name="dejavu_loading_colors">د پاڼې د پورته کېدو پر مهال رنګونه</string>
+    <string name="dejavu_loading_colors_rainbow">شنه زرغونه</string>
+    <string name="dejavu_loading_colors_workspace">د ساحې رنګونه</string>
+    <string name="dejavu_loading_colors_workspace_summary">د ټب د ساحې رنګونه. شخصي ټبونه او بې رنګه ساحې شنه زرغونه ښيي.</string>
+    <string name="dejavu_loading_colors_custom">دودیز رنګونه</string>
+    <string name="dejavu_loading_colors_custom_summary">تر درېیو رنګونو پورې وټاکئ. د بدلولو لپاره بیا ټک وهئ.</string>
+    <string name="dejavu_settings_swipe_to_close">د بندولو لپاره ټبونه کش کړئ</string>
+    <string name="dejavu_settings_swipe_to_close_summary">په کور پرده کې، ټب یوې خوا ته کشول یې بندوي. د ساحې د بدلولو لپاره له ټبونو بهر کش کړئ یا د ساحو نوار وکاروئ.</string>
 </resources>

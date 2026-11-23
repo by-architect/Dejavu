@@ -418,6 +418,8 @@
     <string name="dejavu_bars_bottom_summary">ไม่มีแถบการดำเนินการ ปัดแถบที่อยู่ขึ้นเพื่อเปิดเมนูเพิ่มเติม</string>
     <string name="dejavu_settings_hide_system_bars">ซ่อนแถบสถานะและแถบนำทาง</string>
     <string name="dejavu_settings_hide_system_bars_summary">ขณะแสดงหน้าเว็บ ปัดเข้ามาจากขอบบนหรือขอบล่างเพื่อดูแถบเหล่านี้ชั่วครู่</string>
+    <string name="dejavu_settings_match_page_color">ปรับแถบให้เข้ากับสีของหน้า</string>
+    <string name="dejavu_settings_match_page_color_summary">แถบจะใช้สีพื้นหลังของเว็บไซต์ เมื่อปิดจะคงสีของเวิร์กสเปซไว้</string>
     <string name="dejavu_bookmarks_export">ส่งออกไปยังไฟล์</string>
     <plurals name="dejavu_bookmarks_exported">
         <item quantity="other">ส่งออกที่คั่นหน้า %1$d รายการแล้ว</item>
@@ -610,4 +612,12 @@
     <string name="dejavu_unlock_use_screen_lock">ใช้การล็อกหน้าจอ</string>
     <string name="dejavu_private_hidden">แท็บส่วนตัวถูกซ่อนอยู่</string>
     <string name="dejavu_private_show">แสดง</string>
+    <string name="dejavu_loading_colors">สีขณะโหลดหน้า</string>
+    <string name="dejavu_loading_colors_rainbow">สีรุ้ง</string>
+    <string name="dejavu_loading_colors_workspace">สีของพื้นที่ทำงาน</string>
+    <string name="dejavu_loading_colors_workspace_summary">สีของพื้นที่ทำงานของแท็บ แท็บส่วนตัวและพื้นที่ทำงานที่ไม่มีสีจะแสดงสีรุ้ง</string>
+    <string name="dejavu_loading_colors_custom">สีที่กำหนดเอง</string>
+    <string name="dejavu_loading_colors_custom_summary">เลือกได้สูงสุดสามสี แตะอีกครั้งเพื่อเปลี่ยน</string>
+    <string name="dejavu_settings_swipe_to_close">ปัดแท็บเพื่อปิด</string>
+    <string name="dejavu_settings_swipe_to_close_summary">บนหน้าแรก การปัดแท็บไปด้านข้างจะปิดแท็บนั้น หากต้องการสลับพื้นที่ทำงาน ให้ปัดนอกแท็บหรือใช้แถบพื้นที่ทำงาน</string>
 </resources>

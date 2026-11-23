@@ -425,6 +425,8 @@
     <string name="dejavu_bars_bottom_summary">Ekintza-barrarik ez. Pasatu helbide-barra gora «Gehiago» menua irekitzeko.</string>
     <string name="dejavu_settings_hide_system_bars">Ezkutatu egoera- eta nabigazio-barrak</string>
     <string name="dejavu_settings_hide_system_bars_summary">Orri bat erakusten den bitartean. Pasatu hatza goiko edo beheko ertzetik une batez ikusteko.</string>
+    <string name="dejavu_settings_match_page_color">Egokitu barrak orriaren kolorera</string>
+    <string name="dejavu_settings_match_page_color_summary">Barrek webgunearen atzeko planoko kolorea hartzen dute. Desaktibatuta, laneko eremuaren koloreak mantentzen dituzte.</string>
     <string name="dejavu_bookmarks_export">Esportatu fitxategira</string>
     <plurals name="dejavu_bookmarks_exported">
         <item quantity="one">%1$d laster-marka esportatu da</item>
@@ -618,4 +620,12 @@
     <string name="dejavu_unlock_use_screen_lock">Erabili pantaila-blokeoa</string>
     <string name="dejavu_private_hidden">Fitxa pribatuak ezkutatuta daude</string>
     <string name="dejavu_private_show">Erakutsi</string>
+    <string name="dejavu_loading_colors">Koloreak orria kargatzen den bitartean</string>
+    <string name="dejavu_loading_colors_rainbow">Ostadarra</string>
+    <string name="dejavu_loading_colors_workspace">Laneremuaren koloreak</string>
+    <string name="dejavu_loading_colors_workspace_summary">Fitxaren laneremuaren koloreak. Fitxa pribatuek eta kolorerik gabeko laneremuek ostadarra erakusten dute.</string>
+    <string name="dejavu_loading_colors_custom">Kolore pertsonalizatuak</string>
+    <string name="dejavu_loading_colors_custom_summary">Aukeratu gehienez hiru kolore. Sakatu berriro aldatzeko.</string>
+    <string name="dejavu_settings_swipe_to_close">Pasatu fitxak ixteko</string>
+    <string name="dejavu_settings_swipe_to_close_summary">Hasierako pantailan, fitxa bat alboetara pasatzen baduzu, itxi egiten da. Laneremuz aldatzeko, pasatu hatza fitxetatik kanpo edo erabili laneremuen barra.</string>
 </resources>

@@ -209,6 +209,7 @@ class BrowserFragment : BaseBrowserFragment(), UserInteractionHandler {
             engineView = binding.engineView,
             behindPage = binding.browserWindow,
             layout = binding.browserLayout,
+            matchPageColor = dejavuSettings.matchPageColor,
             restoreTheme = { (activity as? HomeActivity)?.let { it.themeManager.applyStatusBarTheme(it) } },
         ).start(viewLifecycleOwner, components.core.store, components.appStore)
 

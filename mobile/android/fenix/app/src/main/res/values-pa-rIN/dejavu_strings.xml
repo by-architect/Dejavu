@@ -425,6 +425,8 @@
     <string name="dejavu_bars_bottom_summary">ਕੋਈ ਕਾਰਵਾਈ ਪੱਟੀ ਨਹੀਂ। ਹੋਰ ਮੀਨੂ ਖੋਲ੍ਹਣ ਲਈ ਪਤਾ ਪੱਟੀ ਨੂੰ ਉੱਪਰ ਸਵਾਈਪ ਕਰੋ।</string>
     <string name="dejavu_settings_hide_system_bars">ਸਥਿਤੀ ਅਤੇ ਨੈਵੀਗੇਸ਼ਨ ਪੱਟੀਆਂ ਲੁਕਾਓ</string>
     <string name="dejavu_settings_hide_system_bars_summary">ਜਦੋਂ ਪੰਨਾ ਦਿਖਾਇਆ ਜਾਂਦਾ ਹੈ। ਉਹਨਾਂ ਨੂੰ ਇੱਕ ਪਲ ਲਈ ਵੇਖਣ ਲਈ ਉੱਪਰਲੇ ਜਾਂ ਹੇਠਲੇ ਕਿਨਾਰੇ ਤੋਂ ਸਵਾਈਪ ਕਰੋ।</string>
+    <string name="dejavu_settings_match_page_color">ਪੱਟੀਆਂ ਨੂੰ ਸਫ਼ੇ ਦੇ ਰੰਗ ਨਾਲ ਮਿਲਾਓ</string>
+    <string name="dejavu_settings_match_page_color_summary">ਪੱਟੀਆਂ ਵੈੱਬਸਾਈਟ ਦੇ ਪਿਛੋਕੜ ਦਾ ਰੰਗ ਲੈਂਦੀਆਂ ਹਨ। ਬੰਦ ਹੋਣ ਉੱਤੇ ਉਹ ਵਰਕਸਪੇਸ ਦੇ ਰੰਗ ਰੱਖਦੀਆਂ ਹਨ।</string>
     <string name="dejavu_bookmarks_export">ਫ਼ਾਇਲ ਵਿੱਚ ਐਕਸਪੋਰਟ ਕਰੋ</string>
     <plurals name="dejavu_bookmarks_exported">
         <item quantity="one">%1$d ਬੁੱਕਮਾਰਕ ਐਕਸਪੋਰਟ ਕੀਤਾ ਗਿਆ</item>
@@ -618,4 +620,12 @@
     <string name="dejavu_unlock_use_screen_lock">ਸਕਰੀਨ ਲਾਕ ਵਰਤੋ</string>
     <string name="dejavu_private_hidden">ਪ੍ਰਾਈਵੇਟ ਟੈਬਾਂ ਲੁਕਾਈਆਂ ਹੋਈਆਂ ਹਨ</string>
     <string name="dejavu_private_show">ਦਿਖਾਓ</string>
+    <string name="dejavu_loading_colors">ਸਫ਼ਾ ਲੋਡ ਹੁੰਦੇ ਸਮੇਂ ਰੰਗ</string>
+    <string name="dejavu_loading_colors_rainbow">ਸਤਰੰਗੀ ਪੀਂਘ</string>
+    <string name="dejavu_loading_colors_workspace">ਵਰਕਸਪੇਸ ਦੇ ਰੰਗ</string>
+    <string name="dejavu_loading_colors_workspace_summary">ਟੈਬ ਦੇ ਵਰਕਸਪੇਸ ਦੇ ਰੰਗ। ਪ੍ਰਾਈਵੇਟ ਟੈਬਾਂ ਅਤੇ ਬਿਨਾਂ ਰੰਗਾਂ ਵਾਲੇ ਵਰਕਸਪੇਸ ਸਤਰੰਗੀ ਪੀਂਘ ਦਿਖਾਉਂਦੇ ਹਨ।</string>
+    <string name="dejavu_loading_colors_custom">ਕਸਟਮ ਰੰਗ</string>
+    <string name="dejavu_loading_colors_custom_summary">ਤਿੰਨ ਤੱਕ ਰੰਗ ਚੁਣੋ। ਬਦਲਣ ਲਈ ਮੁੜ ਟੈਪ ਕਰੋ।</string>
+    <string name="dejavu_settings_swipe_to_close">ਬੰਦ ਕਰਨ ਲਈ ਟੈਬਾਂ ਨੂੰ ਸਵਾਈਪ ਕਰੋ</string>
+    <string name="dejavu_settings_swipe_to_close_summary">ਹੋਮ ਸਫ਼ੇ ‘ਤੇ ਟੈਬ ਨੂੰ ਖੱਬੇ ਜਾਂ ਸੱਜੇ ਸਵਾਈਪ ਕਰਨ ਨਾਲ ਉਹ ਬੰਦ ਹੋ ਜਾਂਦੀ ਹੈ। ਵਰਕਸਪੇਸ ਬਦਲਣ ਲਈ ਟੈਬਾਂ ਤੋਂ ਬਾਹਰ ਸਵਾਈਪ ਕਰੋ ਜਾਂ ਵਰਕਸਪੇਸ ਪੱਟੀ ਵਰਤੋ।</string>
 </resources>

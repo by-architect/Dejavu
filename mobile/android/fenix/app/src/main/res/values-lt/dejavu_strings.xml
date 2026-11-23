@@ -439,6 +439,8 @@
     <string name="dejavu_bars_bottom_summary">Be veiksmų juostos. Perbraukite adreso lauką aukštyn, kad atvertumėte meniu „Daugiau“.</string>
     <string name="dejavu_settings_hide_system_bars">Slėpti būsenos ir naršymo juostas</string>
     <string name="dejavu_settings_hide_system_bars_summary">Kol rodomas puslapis. Perbraukite nuo viršutinio ar apatinio krašto, kad trumpam jas pamatytumėte.</string>
+    <string name="dejavu_settings_match_page_color">Suderinti juostas su puslapio spalva</string>
+    <string name="dejavu_settings_match_page_color_summary">Juostos perima svetainės fono spalvą. Išjungus išlaiko darbo srities spalvas.</string>
     <string name="dejavu_bookmarks_export">Eksportuoti į failą</string>
     <plurals name="dejavu_bookmarks_exported">
         <item quantity="one">%1$d adresyno įrašas eksportuotas</item>
@@ -634,4 +636,12 @@
     <string name="dejavu_unlock_use_screen_lock">Naudoti ekrano užraktą</string>
     <string name="dejavu_private_hidden">Privačiosios kortelės paslėptos</string>
     <string name="dejavu_private_show">Rodyti</string>
+    <string name="dejavu_loading_colors">Spalvos įkeliant tinklalapį</string>
+    <string name="dejavu_loading_colors_rainbow">Vaivorykštė</string>
+    <string name="dejavu_loading_colors_workspace">Darbo erdvės spalvos</string>
+    <string name="dejavu_loading_colors_workspace_summary">Kortelės darbo erdvės spalvos. Privačios kortelės ir darbo erdvės be spalvų rodo vaivorykštę.</string>
+    <string name="dejavu_loading_colors_custom">Pasirinktinės spalvos</string>
+    <string name="dejavu_loading_colors_custom_summary">Pasirinkite iki trijų spalvų. Bakstelėkite dar kartą, kad jas pakeistumėte.</string>
+    <string name="dejavu_settings_swipe_to_close">Užverti korteles perbraukiant</string>
+    <string name="dejavu_settings_swipe_to_close_summary">Pradžios puslapyje perbraukus kortelę į šoną, ji užveriama. Norėdami perjungti darbo erdvę, perbraukite už kortelių ribų arba naudokite darbo erdvių juostą.</string>
 </resources>

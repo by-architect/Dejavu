@@ -425,6 +425,8 @@
     <string name="dejavu_bars_bottom_summary">Gjin aksjebalke. Fei de adresbalke omheech om it Mear-menu te iepenjen.</string>
     <string name="dejavu_settings_hide_system_bars">Status- en navigaasjebalke ferstopje</string>
     <string name="dejavu_settings_hide_system_bars_summary">Wylst in side toand wurdt. Fei fan de boppe- of ûnderrâne om se efkes te sjen.</string>
+    <string name="dejavu_settings_match_page_color">Balken oan de siidkleur oanpasse</string>
+    <string name="dejavu_settings_match_page_color_summary">De balken nimme de eftergrûnkleur fan de webside oan. Utskeakele hâlde se de kleuren fan de wurkromte.</string>
     <string name="dejavu_bookmarks_export">Nei bestân eksportearje</string>
     <plurals name="dejavu_bookmarks_exported">
         <item quantity="one">%1$d blêdwizer eksportearre</item>
@@ -618,4 +620,12 @@
     <string name="dejavu_unlock_use_screen_lock">Skermbeskoatteling brûke</string>
     <string name="dejavu_private_hidden">Priveeljepblêden binne ferstoppe</string>
     <string name="dejavu_private_show">Toane</string>
+    <string name="dejavu_loading_colors">Kleuren wylst in side laden wurdt</string>
+    <string name="dejavu_loading_colors_rainbow">Reinbôge</string>
+    <string name="dejavu_loading_colors_workspace">Wurkromtekleuren</string>
+    <string name="dejavu_loading_colors_workspace_summary">De kleuren fan de wurkromte fan it ljepblêd. Priveeljepblêden en wurkromten sûnder kleuren toane de reinbôge.</string>
+    <string name="dejavu_loading_colors_custom">Oanpaste kleuren</string>
+    <string name="dejavu_loading_colors_custom_summary">Kies oant trije kleuren. Tik nochris om se te wizigjen.</string>
+    <string name="dejavu_settings_swipe_to_close">Ljepblêden feie om te sluten</string>
+    <string name="dejavu_settings_swipe_to_close_summary">Op de thússide slút in ljepblêd as jo it nei de side feie. Om fan wurkromte te wikseljen, fei bûten de ljepblêden of brûk de wurkromtebalke.</string>
 </resources>

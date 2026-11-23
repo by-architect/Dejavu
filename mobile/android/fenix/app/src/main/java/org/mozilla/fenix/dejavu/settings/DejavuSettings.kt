@@ -17,6 +17,7 @@ import org.mozilla.fenix.dejavu.actions.RowAction
 import org.mozilla.fenix.dejavu.actions.TabAction
 import org.mozilla.fenix.dejavu.browser.BarsLayout
 import org.mozilla.fenix.dejavu.browser.FloatingButtonPlace
+import org.mozilla.fenix.dejavu.browser.LoadingColorsChoice
 import org.mozilla.fenix.dejavu.containers.ContainerPick
 import org.mozilla.fenix.dejavu.history.HistoryGrouping
 import org.mozilla.fenix.dejavu.menu.ActionsBarLayout
@@ -53,6 +54,7 @@ class DejavuSettings private constructor(context: Context) {
     )
     private val _moreMenuEditHidden = MutableStateFlow(prefs.getBoolean(KEY_MORE_MENU_EDIT_HIDDEN, false))
     private val _systemBarsHidden = MutableStateFlow(prefs.getBoolean(KEY_SYSTEM_BARS_HIDDEN, false))
+    private val _matchPageColor = MutableStateFlow(prefs.getBoolean(KEY_MATCH_PAGE_COLOR, true))
     private val _fullScreenView = MutableStateFlow(prefs.getBoolean(KEY_FULL_SCREEN_VIEW, false))
     private val _fullScreenButton = MutableStateFlow(
         FloatingButtonPlace(
@@ -64,8 +66,12 @@ class DejavuSettings private constructor(context: Context) {
     private val _genieEffect = MutableStateFlow(prefs.getBoolean(KEY_GENIE_EFFECT, true))
     private val _accentColor = MutableStateFlow(AccentColor.of(prefs.getString(KEY_ACCENT_COLOR, null)))
     private val _iconStyle = MutableStateFlow(IconStyle.of(prefs.getString(KEY_ICON_STYLE, null)))
+    private val _loadingColors =
+        MutableStateFlow(LoadingColorsChoice.fromKey(prefs.getString(KEY_LOADING_COLORS, null)))
+    private val _loadingCustomColors = MutableStateFlow(readColors(KEY_LOADING_CUSTOM_COLORS))
     private val _barsLayout = MutableStateFlow(BarsLayout.fromKey(prefs.getString(KEY_BARS_LAYOUT, null)))
     private val _homeSearchAtBottom = MutableStateFlow(prefs.getBoolean(KEY_HOME_SEARCH_AT_BOTTOM, false))
+    private val _swipeToClose = MutableStateFlow(prefs.getBoolean(KEY_SWIPE_TO_CLOSE, false))
     private val _addressBarButtons = MutableStateFlow(readAddressBarButtons())
     private val _actionsBarKeys = MutableStateFlow(readActionsBar())
     private val _tabSleepMinutes = MutableStateFlow(prefs.getInt(KEY_TAB_SLEEP_MINUTES, DEFAULT_TAB_SLEEP_MINUTES))
@@ -121,6 +127,9 @@ class DejavuSettings private constructor(context: Context) {
     /** Whether the status bar and the navigation bar are hidden while a page shows. */
     val systemBarsHidden: StateFlow<Boolean> = _systemBarsHidden.asStateFlow()
 
+    /** Whether the bars around a page take the background color of the website, or keep the workspace colors. */
+    val matchPageColor: StateFlow<Boolean> = _matchPageColor.asStateFlow()
+
     /**
      * Whether pages fill the whole screen, without Dejavu's bars and the system bars, until the floating button over
      * them shows the bars again, see [org.mozilla.fenix.dejavu.browser.installFullScreenView].
@@ -148,6 +157,12 @@ class DejavuSettings private constructor(context: Context) {
     /** The style of icons picked in Customize, see [IconStyle]. */
     val iconStyle: StateFlow<IconStyle> = _iconStyle.asStateFlow()
 
+    /** The colors that run through the address bar's letters while a page loads. */
+    val loadingColors: StateFlow<LoadingColorsChoice> = _loadingColors.asStateFlow()
+
+    /** The user's own colors for [LoadingColorsChoice.CUSTOM], as ARGB; none before they picked any. */
+    val loadingCustomColors: StateFlow<List<Int>> = _loadingCustomColors.asStateFlow()
+
     /** Where the bars show around pages, and so where the "More" menu opens from. */
     val barsLayout: StateFlow<BarsLayout> = _barsLayout.asStateFlow()
 
@@ -156,6 +171,9 @@ class DejavuSettings private constructor(context: Context) {
      * the workspaces and the downloads, extensions, bookmarks and history buttons at the top, the other way round.
      */
     val homeSearchAtBottom: StateFlow<Boolean> = _homeSearchAtBottom.asStateFlow()
+
+    /** Whether swiping a tab sideways on the home screen closes it, instead of turning to the next workspace. */
+    val swipeToClose: StateFlow<Boolean> = _swipeToClose.asStateFlow()
 
     /**
      * The buttons beside the address bar the user chose, which every layout of the bars shows, or `null` before they
@@ -310,6 +328,11 @@ class DejavuSettings private constructor(context: Context) {
         prefs.edit { putBoolean(KEY_SYSTEM_BARS_HIDDEN, hidden) }
     }
 
+    fun setMatchPageColor(match: Boolean) {
+        _matchPageColor.value = match
+        prefs.edit { putBoolean(KEY_MATCH_PAGE_COLOR, match) }
+    }
+
     fun setFullScreenView(on: Boolean) {
         _fullScreenView.value = on
         prefs.edit { putBoolean(KEY_FULL_SCREEN_VIEW, on) }
@@ -343,6 +366,16 @@ class DejavuSettings private constructor(context: Context) {
         prefs.edit { putString(KEY_ICON_STYLE, style.key) }
     }
 
+    fun setLoadingColors(choice: LoadingColorsChoice) {
+        _loadingColors.value = choice
+        prefs.edit { putString(KEY_LOADING_COLORS, choice.key) }
+    }
+
+    fun setLoadingCustomColors(colors: List<Int>) {
+        _loadingCustomColors.value = colors
+        prefs.edit { putString(KEY_LOADING_CUSTOM_COLORS, colors.joinToString(",")) }
+    }
+
     fun setEssentialsShown(shown: Boolean) {
         _essentialsShown.value = shown
         prefs.edit { putBoolean(KEY_ESSENTIALS_SHOWN, shown) }
@@ -364,6 +397,11 @@ class DejavuSettings private constructor(context: Context) {
     fun setHomeSearchAtBottom(atBottom: Boolean) {
         _homeSearchAtBottom.value = atBottom
         prefs.edit { putBoolean(KEY_HOME_SEARCH_AT_BOTTOM, atBottom) }
+    }
+
+    fun setSwipeToClose(enabled: Boolean) {
+        _swipeToClose.value = enabled
+        prefs.edit { putBoolean(KEY_SWIPE_TO_CLOSE, enabled) }
     }
 
     /** The buttons beside the address bar in [layout]: the ones the user chose, or else the ones it starts with. */
@@ -461,6 +499,9 @@ class DejavuSettings private constructor(context: Context) {
     private fun readKeys(key: String, default: List<TabAction>): List<String> =
         prefs.getString(key, null)?.split(",")?.filter { it.isNotBlank() } ?: default.map { it.key }
 
+    private fun readColors(key: String): List<Int> =
+        prefs.getString(key, null)?.split(",")?.mapNotNull { it.toIntOrNull() }.orEmpty()
+
     private fun readSet(key: String): Set<String> =
         prefs.getString(key, null)?.split(",")?.filter { it.isNotBlank() }?.toSet().orEmpty()
 
@@ -545,6 +586,7 @@ class DejavuSettings private constructor(context: Context) {
         private const val KEY_MORE_MENU_ROWS = "more_menu_rows"
         private const val KEY_MORE_MENU_EDIT_HIDDEN = "more_menu_edit_hidden"
         private const val KEY_SYSTEM_BARS_HIDDEN = "system_bars_hidden"
+        private const val KEY_MATCH_PAGE_COLOR = "match_page_color"
         private const val KEY_FULL_SCREEN_VIEW = "full_screen_view"
         private const val KEY_FULL_SCREEN_BUTTON_AT_END = "full_screen_button_at_end"
         private const val KEY_FULL_SCREEN_BUTTON_HEIGHT = "full_screen_button_height"
@@ -552,10 +594,13 @@ class DejavuSettings private constructor(context: Context) {
         private const val KEY_GENIE_EFFECT = "genie_effect"
         private const val KEY_ACCENT_COLOR = "accent_color"
         private const val KEY_ICON_STYLE = "icon_style"
+        private const val KEY_LOADING_COLORS = "loading_colors"
+        private const val KEY_LOADING_CUSTOM_COLORS = "loading_custom_colors"
         private const val KEY_ESSENTIALS_SHOWN = "essentials_shown"
         private const val KEY_HIDDEN_ESSENTIALS = "hidden_essentials"
         private const val KEY_BARS_LAYOUT = "bars_layout"
         private const val KEY_HOME_SEARCH_AT_BOTTOM = "home_search_at_bottom"
+        private const val KEY_SWIPE_TO_CLOSE = "swipe_to_close"
         private const val KEY_ADDRESS_BAR_START = "address_bar_start"
         private const val KEY_ADDRESS_BAR_END = "address_bar_end"
         private const val KEY_ACTIONS_BAR = "actions_bar"

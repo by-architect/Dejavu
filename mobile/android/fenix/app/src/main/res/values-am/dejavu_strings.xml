@@ -425,6 +425,8 @@
     <string name="dejavu_bars_bottom_summary">የእርምጃዎች አሞሌ የለም። ተጨማሪ ምናሌውን ለመክፈት የአድራሻ አሞሌን ወደ ላይ ያንሸራትቱ።</string>
     <string name="dejavu_settings_hide_system_bars">የሁኔታ እና የአሰሳ አሞሌዎችን ደብቅ</string>
     <string name="dejavu_settings_hide_system_bars_summary">ገጽ በሚታይበት ጊዜ። ለአፍታ ለማየት ከላይ ወይም ከታች ጠርዝ ያንሸራትቱ።</string>
+    <string name="dejavu_settings_match_page_color">አሞሌዎችን ከገጹ ቀለም ጋር አዛምድ</string>
+    <string name="dejavu_settings_match_page_color_summary">አሞሌዎቹ የድር ጣቢያውን የጀርባ ቀለም ይይዛሉ። ሲጠፋ የስራ ቦታ ቀለሞችን ይዘው ይቆያሉ።</string>
     <string name="dejavu_bookmarks_export">ወደ ፋይል ላክ</string>
     <plurals name="dejavu_bookmarks_exported">
         <item quantity="one">%1$d እልባት ወደ ፋይል ተልኳል</item>
@@ -618,4 +620,12 @@
     <string name="dejavu_unlock_use_screen_lock">የማያ ገጽ መቆለፊያ ይጠቀሙ</string>
     <string name="dejavu_private_hidden">የግል ትሮች ተደብቀዋል</string>
     <string name="dejavu_private_show">አሳይ</string>
+    <string name="dejavu_loading_colors">ገጽ በሚጫንበት ጊዜ ቀለሞች</string>
+    <string name="dejavu_loading_colors_rainbow">ቀስተ ደመና</string>
+    <string name="dejavu_loading_colors_workspace">የስራ ቦታ ቀለሞች</string>
+    <string name="dejavu_loading_colors_workspace_summary">የትሩ የስራ ቦታ ቀለሞች። የግል ትሮች እና ቀለም የሌላቸው የስራ ቦታዎች ቀስተ ደመናውን ያሳያሉ።</string>
+    <string name="dejavu_loading_colors_custom">ብጁ ቀለሞች</string>
+    <string name="dejavu_loading_colors_custom_summary">እስከ ሦስት ቀለሞች ይምረጡ። ለመቀየር እንደገና መታ ያድርጉ።</string>
+    <string name="dejavu_settings_swipe_to_close">ለመዝጋት ትሮችን ያንሸራትቱ</string>
+    <string name="dejavu_settings_swipe_to_close_summary">በመነሻ ማያ ገጹ ላይ ትርን ወደ ጎን ማንሸራተት ይዘጋዋል። የስራ ቦታዎችን ለመቀየር ከትሮቹ ውጭ ያንሸራትቱ ወይም የስራ ቦታዎች አሞሌን ይጠቀሙ።</string>
 </resources>

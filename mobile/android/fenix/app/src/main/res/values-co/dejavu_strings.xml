@@ -425,6 +425,8 @@
     <string name="dejavu_bars_bottom_summary">Nisuna barra d\'azzioni. Fate sguillà in sù a barra d\'indirizzu per apre u menu Più.</string>
     <string name="dejavu_settings_hide_system_bars">Piattà e barre di statu è di navigazione</string>
     <string name="dejavu_settings_hide_system_bars_summary">Mentre ch\'ella hè affissata una pagina. Sguillà da l\'orlu supranu o suttanu per vedele un mumentu.</string>
+    <string name="dejavu_settings_match_page_color">Accurdà e barre à u culore di a pagina</string>
+    <string name="dejavu_settings_match_page_color_summary">E barre piglianu u culore di fondu di u situ web. Disattivatu, tenenu i culori di u spaziu di travagliu.</string>
     <string name="dejavu_bookmarks_export">Espurtà ver di un schedariu</string>
     <plurals name="dejavu_bookmarks_exported">
         <item quantity="one">%1$d indetta espurtata</item>
@@ -618,4 +620,12 @@
     <string name="dejavu_unlock_use_screen_lock">Impiegà l’ammarchjunata di u screnu</string>
     <string name="dejavu_private_hidden">L’unghjette private sò piattate</string>
     <string name="dejavu_private_show">Affissà</string>
+    <string name="dejavu_loading_colors">Culori mentre una pagina si carica</string>
+    <string name="dejavu_loading_colors_rainbow">Arcu baleu</string>
+    <string name="dejavu_loading_colors_workspace">Culori di u spaziu di travagliu</string>
+    <string name="dejavu_loading_colors_workspace_summary">I culori di u spaziu di travagliu di l\'unghjetta. L\'unghjette private è i spazii di travagliu senza culori mostranu l\'arcu baleu.</string>
+    <string name="dejavu_loading_colors_custom">Culori persunalizati</string>
+    <string name="dejavu_loading_colors_custom_summary">Sceglite sin\'à trè culori. Toccate torna per cambialli.</string>
+    <string name="dejavu_settings_swipe_to_close">Fà sguillà l\'unghjette per chjode le</string>
+    <string name="dejavu_settings_swipe_to_close_summary">Nant\'à u screnu d\'accolta, fà sguillà un\'unghjetta di latu la chjode. Per cambià di spaziu di travagliu, fate sguillà fora di l\'unghjette o aduprate a barra di i spazii di travagliu.</string>
 </resources>

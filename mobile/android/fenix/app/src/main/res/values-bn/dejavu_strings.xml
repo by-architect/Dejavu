@@ -458,6 +458,8 @@
     <string name="dejavu_bars_bottom_summary">কোনো অ্যাকশন বার নেই। আরও অপশন মেনু খুলতে ঠিকানা বারটি উপরে সোয়াইপ করুন।</string>
     <string name="dejavu_settings_hide_system_bars">স্ট্যাটাস ও নেভিগেশন বার লুকান</string>
     <string name="dejavu_settings_hide_system_bars_summary">যখন কোনো পেজ দেখানো হয়। এক মুহূর্তের জন্য দেখতে উপরের বা নিচের প্রান্ত থেকে সোয়াইপ করুন।</string>
+    <string name="dejavu_settings_match_page_color">বারগুলোকে পাতার রঙের সাথে মেলান</string>
+    <string name="dejavu_settings_match_page_color_summary">বারগুলো ওয়েবসাইটের ব্যাকগ্রাউন্ড রঙ নেয়। বন্ধ থাকলে ওয়ার্কস্পেসের রঙ থাকে।</string>
     <string name="dejavu_bookmarks_export">ফাইলে এক্সপোর্ট করুন</string>
     <plurals name="dejavu_bookmarks_exported">
         <item quantity="one">%1$d বুকমার্ক এক্সপোর্ট করা হয়েছে</item>
@@ -651,4 +653,12 @@
     <string name="dejavu_unlock_use_screen_lock">স্ক্রিন লক ব্যবহার করুন</string>
     <string name="dejavu_private_hidden">ব্যক্তিগত ট্যাব লুকানো আছে</string>
     <string name="dejavu_private_show">দেখান</string>
+    <string name="dejavu_loading_colors">পেজ লোড হওয়ার সময় রং</string>
+    <string name="dejavu_loading_colors_rainbow">রংধনু</string>
+    <string name="dejavu_loading_colors_workspace">ওয়ার্কস্পেসের রং</string>
+    <string name="dejavu_loading_colors_workspace_summary">ট্যাবের ওয়ার্কস্পেসের রং। ব্যক্তিগত ট্যাব এবং রংবিহীন ওয়ার্কস্পেস রংধনু দেখায়।</string>
+    <string name="dejavu_loading_colors_custom">কাস্টম রং</string>
+    <string name="dejavu_loading_colors_custom_summary">তিনটি পর্যন্ত রং বেছে নিন। বদলাতে আবার ট্যাপ করুন।</string>
+    <string name="dejavu_settings_swipe_to_close">বন্ধ করতে ট্যাব সোয়াইপ করুন</string>
+    <string name="dejavu_settings_swipe_to_close_summary">হোম পাতায় কোনো ট্যাব পাশে সোয়াইপ করলে সেটি বন্ধ হয়। ওয়ার্কস্পেস বদলাতে ট্যাবগুলোর বাইরে সোয়াইপ করুন বা ওয়ার্কস্পেস বার ব্যবহার করুন।</string>
 </resources>

@@ -453,6 +453,8 @@
     <string name="dejavu_bars_bottom_summary">بلا شريط إجراءات. اسحب شريط العنوان لأعلى لفتح قائمة «المزيد».</string>
     <string name="dejavu_settings_hide_system_bars">إخفاء شريطي الحالة والتنقل</string>
     <string name="dejavu_settings_hide_system_bars_summary">أثناء عرض صفحة. اسحب من الحافة العلوية أو السفلية لرؤيتهما لحظة.</string>
+    <string name="dejavu_settings_match_page_color">مطابقة الأشرطة للون الصفحة</string>
+    <string name="dejavu_settings_match_page_color_summary">تأخذ الأشرطة لون خلفية الموقع. عند الإيقاف تحتفظ بألوان مساحة العمل.</string>
     <string name="dejavu_bookmarks_export">صدِّر إلى ملف</string>
     <plurals name="dejavu_bookmarks_exported">
         <item quantity="zero">%1$d علامة مُصدَّرة</item>
@@ -650,4 +652,12 @@
     <string name="dejavu_unlock_use_screen_lock">استخدم قفل الشاشة</string>
     <string name="dejavu_private_hidden">التبويبات الخاصة مخفية</string>
     <string name="dejavu_private_show">اعرض</string>
+    <string name="dejavu_loading_colors">الألوان أثناء تحميل الصفحة</string>
+    <string name="dejavu_loading_colors_rainbow">قوس قزح</string>
+    <string name="dejavu_loading_colors_workspace">ألوان مساحة العمل</string>
+    <string name="dejavu_loading_colors_workspace_summary">ألوان مساحة عمل التبويب. التبويبات الخاصة ومساحات العمل التي بلا ألوان تعرض قوس قزح.</string>
+    <string name="dejavu_loading_colors_custom">ألوان مخصّصة</string>
+    <string name="dejavu_loading_colors_custom_summary">اختر حتى ثلاثة ألوان. انقر مجددًا لتغييرها.</string>
+    <string name="dejavu_settings_swipe_to_close">إغلاق التبويبات بالسحب</string>
+    <string name="dejavu_settings_swipe_to_close_summary">في الشاشة الرئيسية، يُغلق التبويب عند سحبه جانبيًا. للتبديل بين مساحات العمل، اسحب خارج التبويبات أو استخدم شريط مساحات العمل.</string>
 </resources>

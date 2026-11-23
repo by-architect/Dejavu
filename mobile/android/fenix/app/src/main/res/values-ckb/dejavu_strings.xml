@@ -425,6 +425,8 @@
     <string name="dejavu_bars_bottom_summary">بێ شریتی کردارەکان. شریتی ناونیشان بۆ سەرەوە ڕابکێشە بۆ کردنەوەی پێڕستی زیاتر.</string>
     <string name="dejavu_settings_hide_system_bars">شاردنەوەی شریتی دۆخ و ڕێنیشاندەر</string>
     <string name="dejavu_settings_hide_system_bars_summary">کاتێک پەڕەیەک پیشان دەدرێت. لە لێواری سەرەوە یان خوارەوە ڕابکێشە بۆ ئەوەی بۆ ساتێک بیانبینیت.</string>
+    <string name="dejavu_settings_match_page_color">شریتەکان لەگەڵ ڕەنگی پەڕە بگونجێنە</string>
+    <string name="dejavu_settings_match_page_color_summary">شریتەکان ڕەنگی پاشبنەمای وێبسایتەکە وەردەگرن. کاتێک کوژاوەیە، ڕەنگەکانی شوێنی کار دەمێننەوە.</string>
     <string name="dejavu_bookmarks_export">هەناردەکردن بۆ پەڕگە</string>
     <plurals name="dejavu_bookmarks_exported">
         <item quantity="one">%1$d نیشانە هەناردە کرا</item>
@@ -618,4 +620,12 @@
     <string name="dejavu_unlock_use_screen_lock">قوفڵی شاشە بەکاربهێنە</string>
     <string name="dejavu_private_hidden">بازدەرە تایبەتەکان شاردراونەتەوە</string>
     <string name="dejavu_private_show">پیشاندان</string>
+    <string name="dejavu_loading_colors">ڕەنگەکان کاتێک پەڕەیەک باردەکرێت</string>
+    <string name="dejavu_loading_colors_rainbow">پەلکەزێڕینە</string>
+    <string name="dejavu_loading_colors_workspace">ڕەنگەکانی فەزا</string>
+    <string name="dejavu_loading_colors_workspace_summary">ڕەنگەکانی فەزای بازدەرەکە. بازدەرە تایبەتەکان و فەزا بێ ڕەنگەکان پەلکەزێڕینە پیشان دەدەن.</string>
+    <string name="dejavu_loading_colors_custom">ڕەنگی تایبەت</string>
+    <string name="dejavu_loading_colors_custom_summary">تا سێ ڕەنگ هەڵبژێرە. دووبارە دەست بنێ بۆ گۆڕینیان.</string>
+    <string name="dejavu_settings_swipe_to_close">داخستنی بازدەرەکان بە ڕاکێشان</string>
+    <string name="dejavu_settings_swipe_to_close_summary">لە پەڕەی سەرەکیدا، ڕاکێشانی بازدەرێک بۆ لای تەنیشت دایدەخات. بۆ گۆڕینی فەزا، لە دەرەوەی بازدەرەکان ڕابکێشە یان شریتی فەزاکان بەکاربهێنە.</string>
 </resources>

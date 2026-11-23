@@ -439,6 +439,8 @@
     <string name="dejavu_bars_bottom_summary">Žana akcijowa lajsta. Trějće adresowe polo horje, zo by so dalši meni wočinił.</string>
     <string name="dejavu_settings_hide_system_bars">Lajsty statusa a nawigacije schować</string>
     <string name="dejavu_settings_hide_system_bars_summary">Mjeztym zo so strona pokazuje. Ćehńće wot hornjeje abo delnjeje kromy, zo byšće je na wokomik widźeli.</string>
+    <string name="dejavu_settings_match_page_color">Lajsty na barbu strony přiměrić</string>
+    <string name="dejavu_settings_match_page_color_summary">Lajsty přewozmu pozadkowu barbu websydła. Hdyž je wupinjene, zachowaja barby dźěłoweho rumu.</string>
     <string name="dejavu_bookmarks_export">Do dataje eksportować</string>
     <plurals name="dejavu_bookmarks_exported">
         <item quantity="one">%1$d zapołožka je eksportowana</item>
@@ -634,4 +636,12 @@
     <string name="dejavu_unlock_use_screen_lock">Zawěru wobrazowki wužiwać</string>
     <string name="dejavu_private_hidden">Priwatne rajtarki su schowane</string>
     <string name="dejavu_private_show">Pokazać</string>
+    <string name="dejavu_loading_colors">Barby, mjeztym zo so strona začituje</string>
+    <string name="dejavu_loading_colors_rainbow">Dźědźel</string>
+    <string name="dejavu_loading_colors_workspace">Barby dźěłoweho ruma</string>
+    <string name="dejavu_loading_colors_workspace_summary">Barby dźěłoweho ruma rajtarka. Priwatne rajtarki a dźěłowe rumy bjez barbow dźědźel pokazuja.</string>
+    <string name="dejavu_loading_colors_custom">Swójske barby</string>
+    <string name="dejavu_loading_colors_custom_summary">Wubjerće hač do třoch barbow. Podótkńće so znowa, zo byšće je změnił.</string>
+    <string name="dejavu_settings_swipe_to_close">Rajtarki přez trěće začinić</string>
+    <string name="dejavu_settings_swipe_to_close_summary">Na startowej stronje so rajtark začini, hdyž jón na bok trěješ. Zo by dźěłowy rum změnił, trěj zwonka rajtarkow abo wužij lajstu dźěłowych rumow.</string>
 </resources>

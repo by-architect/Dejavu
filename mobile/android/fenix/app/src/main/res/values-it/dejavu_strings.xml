@@ -425,6 +425,8 @@
     <string name="dejavu_bars_bottom_summary">Nessuna barra delle azioni. Scorri verso l’alto la barra degli indirizzi per aprire il menu «Altro».</string>
     <string name="dejavu_settings_hide_system_bars">Nascondi le barre di stato e di navigazione</string>
     <string name="dejavu_settings_hide_system_bars_summary">Mentre è visualizzata una pagina. Scorri dal bordo superiore o inferiore per vederle per un momento.</string>
+    <string name="dejavu_settings_match_page_color">Adatta le barre al colore della pagina</string>
+    <string name="dejavu_settings_match_page_color_summary">Le barre prendono il colore di sfondo del sito web. Se disattivato, mantengono i colori dello spazio di lavoro.</string>
     <string name="dejavu_bookmarks_export">Esporta su file</string>
     <plurals name="dejavu_bookmarks_exported">
         <item quantity="one">%1$d segnalibro esportato</item>
@@ -618,4 +620,12 @@
     <string name="dejavu_unlock_use_screen_lock">Utilizza il blocco schermo</string>
     <string name="dejavu_private_hidden">Le schede anonime sono nascoste</string>
     <string name="dejavu_private_show">Mostra</string>
+    <string name="dejavu_loading_colors">Colori durante il caricamento di una pagina</string>
+    <string name="dejavu_loading_colors_rainbow">Arcobaleno</string>
+    <string name="dejavu_loading_colors_workspace">Colori dello spazio</string>
+    <string name="dejavu_loading_colors_workspace_summary">I colori dello spazio della scheda. Le schede anonime e gli spazi senza colori mostrano l\'arcobaleno.</string>
+    <string name="dejavu_loading_colors_custom">Colori personalizzati</string>
+    <string name="dejavu_loading_colors_custom_summary">Scegli fino a tre colori. Tocca di nuovo per cambiarli.</string>
+    <string name="dejavu_settings_swipe_to_close">Scorri le schede per chiuderle</string>
+    <string name="dejavu_settings_swipe_to_close_summary">Nella schermata iniziale, scorrere lateralmente una scheda la chiude. Per cambiare spazio, scorri fuori dalle schede o usa la barra degli spazi.</string>
 </resources>

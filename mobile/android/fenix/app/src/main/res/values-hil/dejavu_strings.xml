@@ -425,6 +425,8 @@
     <string name="dejavu_bars_bottom_summary">Wala sing bar sang mga aksyon. I-swipe pataas ang bar sang address para maabrihan ang Dugang nga menu.</string>
     <string name="dejavu_settings_hide_system_bars">Tagua ang status kag navigation bar</string>
     <string name="dejavu_settings_hide_system_bars_summary">Samtang ginapakita ang isa ka pahina. I-swipe halin sa ibabaw ukon idalom nga kilid para makita sila sing makadali.</string>
+    <string name="dejavu_settings_match_page_color">Itugma ang mga bar sa kolor sang panid</string>
+    <string name="dejavu_settings_match_page_color_summary">Ang mga bar nagakuha sang kolor sang background sang website. Kon naka-off, magapabilin ang kolor sang workspace.</string>
     <string name="dejavu_bookmarks_export">i-Export sa file</string>
     <plurals name="dejavu_bookmarks_exported">
         <item quantity="one">%1$d ka bookmark ang na-export</item>
@@ -618,4 +620,12 @@
     <string name="dejavu_unlock_use_screen_lock">Gamita ang screen lock</string>
     <string name="dejavu_private_hidden">Natago ang mga pribado nga tab</string>
     <string name="dejavu_private_show">Ipakita</string>
+    <string name="dejavu_loading_colors">Mga kolor samtang nagakarga ang pahina</string>
+    <string name="dejavu_loading_colors_rainbow">Balangaw</string>
+    <string name="dejavu_loading_colors_workspace">Mga kolor sang workspace</string>
+    <string name="dejavu_loading_colors_workspace_summary">Ang mga kolor sang workspace sang tab. Ang pribado nga mga tab kag mga workspace nga wala sing kolor nagapakita sang balangaw.</string>
+    <string name="dejavu_loading_colors_custom">Custom nga mga kolor</string>
+    <string name="dejavu_loading_colors_custom_summary">Magpili tubtob tatlo ka kolor. I-tap liwat para baylohan ini.</string>
+    <string name="dejavu_settings_swipe_to_close">I-swipe ang mga tab para isira</string>
+    <string name="dejavu_settings_swipe_to_close_summary">Sa home screen, ang pag-swipe pakilid sang tab nagasira sini. Para magbalhin sang workspace, mag-swipe sa gwa sang mga tab ukon gamita ang bar sang mga workspace.</string>
 </resources>

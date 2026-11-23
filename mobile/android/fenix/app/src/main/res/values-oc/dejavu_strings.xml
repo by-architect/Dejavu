@@ -425,6 +425,8 @@
     <string name="dejavu_bars_bottom_summary">Cap de barra d’accions. Fasètz lisar la barra d’adreça cap amont per dobrir lo menú Mai.</string>
     <string name="dejavu_settings_hide_system_bars">Amagar las barras d\'estat e de navegacion</string>
     <string name="dejavu_settings_hide_system_bars_summary">Pendent l\'afichatge d\'una pagina. Fasètz lisar dempuèi lo bòrd superior o inferior per las veire un moment.</string>
+    <string name="dejavu_settings_match_page_color">Adaptar las barras a la color de la pagina</string>
+    <string name="dejavu_settings_match_page_color_summary">Las barras prenon la color de fons del site web. Se es desactivat, gardan las colors de l\'espaci de trabalh.</string>
     <string name="dejavu_bookmarks_export">Exportar dins un fichièr</string>
     <plurals name="dejavu_bookmarks_exported">
         <item quantity="one">%1$d marcapagina exportat</item>
@@ -618,4 +620,12 @@
     <string name="dejavu_unlock_use_screen_lock">Utilizar lo verrolhatge d’ecran</string>
     <string name="dejavu_private_hidden">Los onglets privats son amagats</string>
     <string name="dejavu_private_show">Afichar</string>
+    <string name="dejavu_loading_colors">Colors pendent lo cargament d\'una pagina</string>
+    <string name="dejavu_loading_colors_rainbow">Arc de Sant Martin</string>
+    <string name="dejavu_loading_colors_workspace">Colors de l\'espaci de trabalh</string>
+    <string name="dejavu_loading_colors_workspace_summary">Las colors de l\'espaci de trabalh de l\'onglet. Los onglets privats e los espacis de trabalh sens colors mostran l\'arc de Sant Martin.</string>
+    <string name="dejavu_loading_colors_custom">Colors personalizadas</string>
+    <string name="dejavu_loading_colors_custom_summary">Causissètz fins a tres colors. Tocatz tornamai per las cambiar.</string>
+    <string name="dejavu_settings_swipe_to_close">Far lisar los onglets per los tampar</string>
+    <string name="dejavu_settings_swipe_to_close_summary">Sus l’ecran d’acuèlh, far lisar un onglet de costat lo tampa. Per cambiar d’espaci de trabalh, fasètz lisar fòra dels onglets o utilizatz la barra dels espacis de trabalh.</string>
 </resources>

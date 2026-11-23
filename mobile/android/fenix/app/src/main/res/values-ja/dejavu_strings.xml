@@ -418,6 +418,8 @@
     <string name="dejavu_bars_bottom_summary">アクションバーは表示されません。アドレスバーを上にスワイプすると、その他メニューが開きます。</string>
     <string name="dejavu_settings_hide_system_bars">ステータスバーとナビゲーションバーを非表示にする</string>
     <string name="dejavu_settings_hide_system_bars_summary">ページの表示中。上端または下端からスワイプすると、少しの間表示されます。</string>
+    <string name="dejavu_settings_match_page_color">バーをページの色に合わせる</string>
+    <string name="dejavu_settings_match_page_color_summary">バーにウェブサイトの背景色を使います。オフにするとワークスペースの色のままです。</string>
     <string name="dejavu_bookmarks_export">ファイルにエクスポート</string>
     <plurals name="dejavu_bookmarks_exported">
         <item quantity="other">%1$d件のブックマークをエクスポートしました</item>
@@ -610,4 +612,12 @@
     <string name="dejavu_unlock_use_screen_lock">画面ロックを使用</string>
     <string name="dejavu_private_hidden">プライベートタブは非表示です</string>
     <string name="dejavu_private_show">表示</string>
+    <string name="dejavu_loading_colors">ページ読み込み中の色</string>
+    <string name="dejavu_loading_colors_rainbow">虹色</string>
+    <string name="dejavu_loading_colors_workspace">ワークスペースの色</string>
+    <string name="dejavu_loading_colors_workspace_summary">タブのワークスペースの色です。プライベートタブや色のないワークスペースでは虹色になります。</string>
+    <string name="dejavu_loading_colors_custom">カスタムカラー</string>
+    <string name="dejavu_loading_colors_custom_summary">最大 3 色を選択します。もう一度タップすると変更できます。</string>
+    <string name="dejavu_settings_swipe_to_close">スワイプでタブを閉じる</string>
+    <string name="dejavu_settings_swipe_to_close_summary">ホーム画面でタブを横にスワイプすると、そのタブを閉じます。ワークスペースを切り替えるには、タブの外側をスワイプするか、ワークスペースのバーを使用します。</string>
 </resources>

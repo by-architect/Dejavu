@@ -458,6 +458,8 @@
     <string name="dejavu_bars_bottom_summary">कोई ऐक्शन बार नहीं। और विकल्प मेन्यू खोलने के लिए एड्रेस बार को ऊपर स्वाइप करें।</string>
     <string name="dejavu_settings_hide_system_bars">स्टेटस और नेविगेशन बार छिपाएं</string>
     <string name="dejavu_settings_hide_system_bars_summary">जब कोई पेज दिखाया जा रहा हो। उन्हें एक पल के लिए देखने के लिए ऊपर या नीचे के किनारे से स्वाइप करें।</string>
+    <string name="dejavu_settings_match_page_color">बार को पेज के रंग से मिलाएं</string>
+    <string name="dejavu_settings_match_page_color_summary">बार वेबसाइट का बैकग्राउंड रंग लेते हैं। बंद होने पर वे वर्कस्पेस के रंग रखते हैं।</string>
     <string name="dejavu_bookmarks_export">फ़ाइल में एक्सपोर्ट करें</string>
     <plurals name="dejavu_bookmarks_exported">
         <item quantity="one">%1$d बुकमार्क एक्सपोर्ट किया गया</item>
@@ -651,4 +653,12 @@
     <string name="dejavu_unlock_use_screen_lock">स्क्रीन लॉक का इस्तेमाल करें</string>
     <string name="dejavu_private_hidden">प्राइवेट टैब छिपे हुए हैं</string>
     <string name="dejavu_private_show">दिखाएं</string>
+    <string name="dejavu_loading_colors">पेज लोड होते समय कलर</string>
+    <string name="dejavu_loading_colors_rainbow">इंद्रधनुष</string>
+    <string name="dejavu_loading_colors_workspace">वर्कस्पेस के कलर</string>
+    <string name="dejavu_loading_colors_workspace_summary">टैब के वर्कस्पेस के कलर। प्राइवेट टैब और बिना कलर वाले वर्कस्पेस इंद्रधनुष दिखाते हैं।</string>
+    <string name="dejavu_loading_colors_custom">कस्टम कलर</string>
+    <string name="dejavu_loading_colors_custom_summary">तीन तक कलर चुनें। बदलने के लिए फिर से टैप करें।</string>
+    <string name="dejavu_settings_swipe_to_close">टैब बंद करने के लिए स्वाइप करें</string>
+    <string name="dejavu_settings_swipe_to_close_summary">होम स्क्रीन पर किसी टैब को दाएं-बाएं स्वाइप करने से वह बंद हो जाता है। वर्कस्पेस बदलने के लिए टैब के बाहर स्वाइप करें या वर्कस्पेस बार इस्तेमाल करें।</string>
 </resources>

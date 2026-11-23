@@ -425,6 +425,8 @@
     <string name="dejavu_bars_bottom_summary">Nudda barra dî azzioni. Tira ncapu a barra di l\'indirizzu pi grapiri u menù Cchiù.</string>
     <string name="dejavu_settings_hide_system_bars">Ammuccia i barri di statu e di navigazzioni</string>
     <string name="dejavu_settings_hide_system_bars_summary">Mentri chi s\'ammustra na pàggina. Sciddica dû bordu supiriuri o nfiriuri pi vìdirli pi nu mumentu.</string>
+    <string name="dejavu_settings_match_page_color">Adatta i barri a-u culuri da pàggina</string>
+    <string name="dejavu_settings_match_page_color_summary">I barri pigghianu u culuri di fonnu du situ web. Disattivatu, mantennu i culuri di l\'ammenti di travagghiu.</string>
     <string name="dejavu_bookmarks_export">Esporta nta un pricu</string>
     <plurals name="dejavu_bookmarks_exported">
         <item quantity="one">%1$d nzingalibbru esportatu</item>
@@ -618,4 +620,12 @@
     <string name="dejavu_unlock_use_screen_lock">Usa lu bloccu dû schermu</string>
     <string name="dejavu_private_hidden">I schedi privati sunnu ammucciati</string>
     <string name="dejavu_private_show">Ammustra</string>
+    <string name="dejavu_loading_colors">Culuri mentri ca na pàggina si carrica</string>
+    <string name="dejavu_loading_colors_rainbow">Arcubalenu</string>
+    <string name="dejavu_loading_colors_workspace">Culuri dû spazziu di travagghiu</string>
+    <string name="dejavu_loading_colors_workspace_summary">Li culuri dû spazziu di travagghiu dâ scheda. Li schedi privati e li spazzii di travagghiu senza culuri ammustranu l\'arcubalenu.</string>
+    <string name="dejavu_loading_colors_custom">Culuri pirsunalizzati</string>
+    <string name="dejavu_loading_colors_custom_summary">Scegghi finu a tri culuri. Tocca arreri pi canciàrili.</string>
+    <string name="dejavu_settings_swipe_to_close">Tira i schedi pi chiùdirili</string>
+    <string name="dejavu_settings_swipe_to_close_summary">Nnâ schermata principali, tirannu na scheda di ciancu si chiuj. Pi canciari spazziu di travagghiu, tira fora dî schedi o usa a barra dî spazzi di travagghiu.</string>
 </resources>

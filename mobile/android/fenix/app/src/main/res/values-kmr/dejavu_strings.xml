@@ -425,6 +425,8 @@
     <string name="dejavu_bars_bottom_summary">Bêyî darika çalakiyan. Ji bo vekirina menuya zêde, darika navnîşanan ber bi jor ve bikişîne.</string>
     <string name="dejavu_settings_hide_system_bars">Darikên rewşê û navîgasyonê veşêre</string>
     <string name="dejavu_settings_hide_system_bars_summary">Dema rûpelek tê nîşandan. Ji bo ku tu wan ji bo demekê bibînî, ji qeraxa jor an jêr bikişîne.</string>
+    <string name="dejavu_settings_match_page_color">Darikan bi rengê rûpelê re li hev bîne</string>
+    <string name="dejavu_settings_match_page_color_summary">Darik rengê paşxaneya malperê digirin. Dema were girtin, rengên cihê xebatê diparêzin.</string>
     <string name="dejavu_bookmarks_export">Wek dosye derxîne</string>
     <plurals name="dejavu_bookmarks_exported">
         <item quantity="one">%1$d bijare hate derxistin</item>
@@ -618,4 +620,12 @@
     <string name="dejavu_unlock_use_screen_lock">Kilîtkirina ekranê bikar bîne</string>
     <string name="dejavu_private_hidden">Hilpekînên taybet veşartî ne</string>
     <string name="dejavu_private_show">Nîşan bide</string>
+    <string name="dejavu_loading_colors">Reng dema rûpel bar dibe</string>
+    <string name="dejavu_loading_colors_rainbow">Keskesor</string>
+    <string name="dejavu_loading_colors_workspace">Rengên qadê</string>
+    <string name="dejavu_loading_colors_workspace_summary">Rengên qada hilpekînê. Hilpekînên taybet û qadên bê reng keskesorê nîşan didin.</string>
+    <string name="dejavu_loading_colors_custom">Rengên taybet</string>
+    <string name="dejavu_loading_colors_custom_summary">Heta sê rengan hilbijêre. Ji bo guhertinê dîsa bitikîne.</string>
+    <string name="dejavu_settings_swipe_to_close">Ji bo girtinê hilpekînan bikişîne</string>
+    <string name="dejavu_settings_swipe_to_close_summary">Li ser ekrana malê, kişandina hilpekînekê ber bi çep an rastê ve wê digire. Ji bo guhertina qadê, li derveyî hilpekînan bikişîne an darika qadan bi kar bîne.</string>
 </resources>

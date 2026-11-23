@@ -425,6 +425,8 @@
     <string name="dejavu_bars_bottom_summary">Inga handlingslinje. Sveip adresselinja opp for å opne Meir-menyen.</string>
     <string name="dejavu_settings_hide_system_bars">Gøym status- og navigasjonsfeltet</string>
     <string name="dejavu_settings_hide_system_bars_summary">Medan ei side vert vist. Sveip inn frå øvre eller nedre kant for å sjå dei eit augeblikk.</string>
+    <string name="dejavu_settings_match_page_color">Tilpass felta til sidas farge</string>
+    <string name="dejavu_settings_match_page_color_summary">Felta tek bakgrunnsfargen til nettstaden. Slått av held dei på fargane til arbeidsområdet.</string>
     <string name="dejavu_bookmarks_export">Eksporter til fil</string>
     <plurals name="dejavu_bookmarks_exported">
         <item quantity="one">%1$d bokmerke eksportert</item>
@@ -618,4 +620,12 @@
     <string name="dejavu_unlock_use_screen_lock">Bruk skjermlås</string>
     <string name="dejavu_private_hidden">Private faner er gøymde</string>
     <string name="dejavu_private_show">Vis</string>
+    <string name="dejavu_loading_colors">Fargar medan ei side vert lasta</string>
+    <string name="dejavu_loading_colors_rainbow">Regnboge</string>
+    <string name="dejavu_loading_colors_workspace">Fargane til arbeidsområdet</string>
+    <string name="dejavu_loading_colors_workspace_summary">Fargane til arbeidsområdet for fana. Private faner og arbeidsområde utan fargar viser regnbogen.</string>
+    <string name="dejavu_loading_colors_custom">Eigendefinerte fargar</string>
+    <string name="dejavu_loading_colors_custom_summary">Vel opptil tre fargar. Trykk igjen for å endre dei.</string>
+    <string name="dejavu_settings_swipe_to_close">Sveip faner for å late dei att</string>
+    <string name="dejavu_settings_swipe_to_close_summary">På startsida lèt du att ei fane ved å sveipe ho til sida. For å byte arbeidsområde, sveip utanfor fanene eller bruk arbeidsområdelinja.</string>
 </resources>

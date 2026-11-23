@@ -425,6 +425,8 @@
     <string name="dejavu_bars_bottom_summary">Pa shirit veprimesh. Fërkojeni për sipër shtyllën e adresave, që të hapet menuja «Më Tepër».</string>
     <string name="dejavu_settings_hide_system_bars">Fshih shiritat e gjendjes dhe të lëvizjes</string>
     <string name="dejavu_settings_hide_system_bars_summary">Teksa shfaqet një faqe. Rrëshqitni nga skaji i sipërm ose i poshtëm që t\'i shihni për një çast.</string>
+    <string name="dejavu_settings_match_page_color">Përshtat shiritat me ngjyrën e faqes</string>
+    <string name="dejavu_settings_match_page_color_summary">Shiritat marrin ngjyrën e sfondit të sajtit. Kur është çaktivizuar, mbajnë ngjyrat e hapësirës së punës.</string>
     <string name="dejavu_bookmarks_export">Eksporto në kartelë</string>
     <plurals name="dejavu_bookmarks_exported">
         <item quantity="one">%1$d faqerojtës u eksportua</item>
@@ -618,4 +620,12 @@
     <string name="dejavu_unlock_use_screen_lock">Përdor kyçje ekrani</string>
     <string name="dejavu_private_hidden">Skedat private janë të fshehura</string>
     <string name="dejavu_private_show">Shfaqi</string>
+    <string name="dejavu_loading_colors">Ngjyra gjatë ngarkimit të faqes</string>
+    <string name="dejavu_loading_colors_rainbow">Ylber</string>
+    <string name="dejavu_loading_colors_workspace">Ngjyrat e hapësirës së punës</string>
+    <string name="dejavu_loading_colors_workspace_summary">Ngjyrat e hapësirës së punës së skedës. Skedat private dhe hapësirat e punës pa ngjyra shfaqin ylberin.</string>
+    <string name="dejavu_loading_colors_custom">Ngjyra vetjake</string>
+    <string name="dejavu_loading_colors_custom_summary">Zgjidhni deri në tri ngjyra. Prekeni sërish për t\'i ndryshuar.</string>
+    <string name="dejavu_settings_swipe_to_close">Mbyllje skedash me fërkim</string>
+    <string name="dejavu_settings_swipe_to_close_summary">Në faqen kreu, fërkimi i një skede për anash e mbyll atë. Për të ndërruar hapësira pune, fërkoni jashtë skedave, ose përdorni shtyllën e hapësirave të punës.</string>
 </resources>

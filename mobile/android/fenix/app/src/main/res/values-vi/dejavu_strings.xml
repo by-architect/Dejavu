@@ -418,6 +418,8 @@
     <string name="dejavu_bars_bottom_summary">Không có thanh thao tác. Vuốt thanh địa chỉ lên để mở Trình đơn khác.</string>
     <string name="dejavu_settings_hide_system_bars">Ẩn thanh trạng thái và thanh điều hướng</string>
     <string name="dejavu_settings_hide_system_bars_summary">Khi đang hiển thị một trang. Vuốt từ cạnh trên hoặc cạnh dưới để xem chúng trong giây lát.</string>
+    <string name="dejavu_settings_match_page_color">Khớp thanh với màu trang</string>
+    <string name="dejavu_settings_match_page_color_summary">Các thanh lấy màu nền của trang web. Khi tắt, chúng giữ màu của không gian làm việc.</string>
     <string name="dejavu_bookmarks_export">Xuất ra tập tin</string>
     <plurals name="dejavu_bookmarks_exported">
         <item quantity="other">Đã xuất %1$d dấu trang</item>
@@ -610,4 +612,12 @@
     <string name="dejavu_unlock_use_screen_lock">Dùng khóa màn hình</string>
     <string name="dejavu_private_hidden">Các thẻ riêng tư đang bị ẩn</string>
     <string name="dejavu_private_show">Hiển thị</string>
+    <string name="dejavu_loading_colors">Màu khi đang tải trang</string>
+    <string name="dejavu_loading_colors_rainbow">Cầu vồng</string>
+    <string name="dejavu_loading_colors_workspace">Màu của không gian làm việc</string>
+    <string name="dejavu_loading_colors_workspace_summary">Màu của không gian làm việc chứa thẻ. Thẻ riêng tư và không gian làm việc không có màu sẽ hiển thị cầu vồng.</string>
+    <string name="dejavu_loading_colors_custom">Màu tùy chỉnh</string>
+    <string name="dejavu_loading_colors_custom_summary">Chọn tối đa ba màu. Nhấn lại để thay đổi.</string>
+    <string name="dejavu_settings_swipe_to_close">Vuốt thẻ để đóng</string>
+    <string name="dejavu_settings_swipe_to_close_summary">Trên trang chủ, vuốt một thẻ sang bên sẽ đóng thẻ đó. Để chuyển không gian làm việc, hãy vuốt bên ngoài các thẻ hoặc dùng thanh không gian làm việc.</string>
 </resources>

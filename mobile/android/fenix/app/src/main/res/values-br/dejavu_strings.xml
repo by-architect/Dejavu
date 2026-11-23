@@ -446,6 +446,8 @@
     <string name="dejavu_bars_bottom_summary">Barrenn oberioù ebet. Riklit ar varrenn chomlec’h etrezek al laez evit digeriñ ar meuziad Muioc’h.</string>
     <string name="dejavu_settings_hide_system_bars">Kuzhat ar barrennoù stad ha merdeiñ</string>
     <string name="dejavu_settings_hide_system_bars_summary">E-keit ma vez diskouezet ur bajenn. Riklit adalek ar riblenn uhel pe izel evit o gwelout ur pennadig.</string>
+    <string name="dejavu_settings_match_page_color">Klotañ ar barrennoù gant liv ar bajenn</string>
+    <string name="dejavu_settings_match_page_color_summary">Ar barrennoù a gemer liv drekleur al lec\'hienn. Pa vez diweredekaet e talc\'hont liv an egor labour.</string>
     <string name="dejavu_bookmarks_export">Ezporzhiañ en ur restr</string>
     <plurals name="dejavu_bookmarks_exported">
         <item quantity="one">%1$d sined ezporzhiet</item>
@@ -642,4 +644,12 @@
     <string name="dejavu_unlock_use_screen_lock">Implijout prennañ ar skramm</string>
     <string name="dejavu_private_hidden">Kuzhet eo an ivinelloù prevez</string>
     <string name="dejavu_private_show">Diskouez</string>
+    <string name="dejavu_loading_colors">Livioù e-pad ma vez karget ur bajenn</string>
+    <string name="dejavu_loading_colors_rainbow">Kanevedenn</string>
+    <string name="dejavu_loading_colors_workspace">Livioù an egor labour</string>
+    <string name="dejavu_loading_colors_workspace_summary">Livioù egor labour an ivinell. An ivinelloù prevez hag an egorioù labour hep livioù a ziskouez ar ganevedenn.</string>
+    <string name="dejavu_loading_colors_custom">Livioù personelaet</string>
+    <string name="dejavu_loading_colors_custom_summary">Dibabit betek tri liv. Stokit en-dro evit o cheñch.</string>
+    <string name="dejavu_settings_swipe_to_close">Riklañ an ivinelloù evit o serriñ</string>
+    <string name="dejavu_settings_swipe_to_close_summary">War ar skramm degemer, riklañ un ivinell a-gostez a serr anezhi. Evit cheñch egor labour, riklit e-maez an ivinelloù pe implijit barrenn an egorioù labour.</string>
 </resources>

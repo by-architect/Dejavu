@@ -425,6 +425,8 @@
     <string name="dejavu_bars_bottom_summary">بدون نوار کار یل. سی واز کردن منوی دیه، نوار نشۊوی ن و بالا بکش.</string>
     <string name="dejavu_settings_hide_system_bars">قایم کردن نوار وضعیت و ناوبری</string>
     <string name="dejavu_settings_hide_system_bars_summary">وختی یه صفحه نشون داده ابو. سی دیدنشون سی یه لحظه، از لبه بالا یا پایین بکشین.</string>
+    <string name="dejavu_settings_match_page_color">هماهنگ کردن نوارها با رنگ بلگه</string>
+    <string name="dejavu_settings_match_page_color_summary">نوارها رنگ پس‌زمینهٔ وب‌گاه را می‌گیرن. وختی خاموش بوئه، رنگ‌ای فضای کار می‌مونن.</string>
     <string name="dejavu_bookmarks_export">و در بردن بره فایل</string>
     <plurals name="dejavu_bookmarks_exported">
         <item quantity="one">%1$d نشووکا و در برده وابی</item>
@@ -618,4 +620,12 @@
     <string name="dejavu_unlock_use_screen_lock">و کار گرؽڌن قفل صفحه</string>
     <string name="dejavu_private_hidden">بلگه یل سیخومی پنهون وابیڌن</string>
     <string name="dejavu_private_show">نشون دادن</string>
+    <string name="dejavu_loading_colors">رنگ یل گاتی که صفحه بار ابۊ</string>
+    <string name="dejavu_loading_colors_rainbow">رنگین کمون</string>
+    <string name="dejavu_loading_colors_workspace">رنگ یل فضا</string>
+    <string name="dejavu_loading_colors_workspace_summary">رنگ یل فضای بلگه. بلگه یل سیخومی و فضایل بی رنگ رنگین کمون ن نشون ادن.</string>
+    <string name="dejavu_loading_colors_custom">رنگ یل سفارشی</string>
+    <string name="dejavu_loading_colors_custom_summary">تا سی رنگ وورچین. سی آلشت کردنشون دوباره بزنین.</string>
+    <string name="dejavu_settings_swipe_to_close">سی بستن، بلگه یل ن بکش</string>
+    <string name="dejavu_settings_swipe_to_close_summary">من صفحه اصلی، و بغل کشیڌن یه بلگه اونه می‌بنده. سی آلشت فضا، بیرون ز بلگه یل بکش یا ز نوار فضا یل کار بکش.</string>
 </resources>

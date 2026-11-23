@@ -418,6 +418,8 @@
     <string name="dejavu_bars_bottom_summary">linja ilo li lon ala. o tawa sewi e linja pi nasin lipu tawa open e ilo mute.</string>
     <string name="dejavu_settings_hide_system_bars">o len e linja sona e linja tawa</string>
     <string name="dejavu_settings_hide_system_bars_summary">tenpo pi lipu lukin. sina wile lukin lili e ona la, o tawa tan poka sewi anu poka anpa.</string>
+    <string name="dejavu_settings_match_page_color">o sama e linja kepeken kule lipu</string>
+    <string name="dejavu_settings_match_page_color_summary">linja li kepeken kule monsi pi lipu linluwi. ona li weka la, linja li kepeken kule pi ma pali.</string>
     <string name="dejavu_bookmarks_export">o pana e lipu awen tawa lipu sin</string>
     <plurals name="dejavu_bookmarks_exported">
         <item quantity="other">lipu awen %1$d li lon lipu sin</item>
@@ -610,4 +612,12 @@
     <string name="dejavu_unlock_use_screen_lock">o kepeken len pi lipu lukin</string>
     <string name="dejavu_private_hidden">poki pi nasin len li len</string>
     <string name="dejavu_private_show">o pana lukin</string>
+    <string name="dejavu_loading_colors">kule lon tenpo pi kama lipu</string>
+    <string name="dejavu_loading_colors_rainbow">kule ale</string>
+    <string name="dejavu_loading_colors_workspace">kule pi kulupu poki</string>
+    <string name="dejavu_loading_colors_workspace_summary">kule pi kulupu poki pi poki ni. poki pi nasin len en kulupu poki pi kule ala li pana e kule ale.</string>
+    <string name="dejavu_loading_colors_custom">kule sina</string>
+    <string name="dejavu_loading_colors_custom_summary">o pana e kule wan anu tu anu tu wan. o luka sin la sina ken ante e ona.</string>
+    <string name="dejavu_settings_swipe_to_close">o tawa e poki tawa poka tawa pini e ona</string>
+    <string name="dejavu_settings_swipe_to_close_summary">lon lipu tomo la, sina tawa e poki tawa poka la, ona li pini. sina wile tawa kulupu poki ante la, o tawa e luka lon poki ala, anu o kepeken linja pi kulupu poki.</string>
 </resources>

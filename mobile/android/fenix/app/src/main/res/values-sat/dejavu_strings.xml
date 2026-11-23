@@ -432,6 +432,8 @@
     <string name="dejavu_bars_bottom_summary">ᱮᱠᱥᱚᱱ ᱵᱟᱨ ᱵᱟᱹᱱᱩᱜᱼᱟ ᱾ ᱢᱚᱨ ᱢᱮᱱᱩ ᱡᱷᱤᱡᱽ ᱞᱟᱹᱜᱤᱫ ᱴᱷᱤᱠᱟᱱᱟ ᱵᱟᱨ ᱪᱮᱛᱟᱱ ᱛᱮ ᱥᱣᱟᱭᱤᱯ ᱢᱮ ᱾</string>
     <string name="dejavu_settings_hide_system_bars">ᱥᱴᱮᱴᱟᱥ ᱟᱨ ᱱᱮᱵᱷᱤᱜᱮᱥᱚᱱ ᱵᱟᱨ ᱩᱠᱩ ᱢᱮ</string>
     <string name="dejavu_settings_hide_system_bars_summary">ᱡᱚᱠᱷᱚᱱ ᱥᱟᱦᱴᱟ ᱩᱫᱩᱜ ᱠᱟᱱᱟ᱾ ᱛᱤᱱᱟᱹᱜ ᱜᱷᱟᱹᱲᱤᱡ ᱧᱮᱞ ᱞᱟᱹᱜᱤᱫ ᱪᱮᱛᱟᱱ ᱥᱮ ᱞᱟᱛᱟᱨ ᱥᱤᱢᱟᱹ ᱠᱷᱚᱱ ᱥᱣᱟᱭᱤᱯ ᱢᱮ᱾</string>
+    <string name="dejavu_settings_match_page_color">ᱵᱟᱨ ᱠᱚ ᱥᱟᱦᱴᱟ ᱨᱮᱱᱟᱜ ᱨᱚᱝ ᱥᱟᱶ ᱢᱤᱞᱟᱣ ᱢᱮ</string>
+    <string name="dejavu_settings_match_page_color_summary">ᱵᱟᱨ ᱠᱚ ᱣᱮᱵᱥᱟᱭᱤᱴ ᱨᱮᱱᱟᱜ ᱛᱟᱞᱟ ᱨᱚᱝ ᱵᱟᱵᱚᱛ ᱠᱚ ᱫᱚᱦᱚ ᱟ᱾ ᱵᱚᱸᱫ ᱠᱟᱱᱟ ᱥᱟᱶᱛᱮ ᱠᱟᱹᱢᱤ ᱞᱟᱹᱛᱩᱨ ᱨᱚᱝ ᱠᱚ ᱛᱟᱠᱚᱜ ᱟ᱾</string>
     <string name="dejavu_bookmarks_export">ᱨᱮᱫᱽ ᱛᱮ ᱤᱫᱤᱭ ᱢᱮ</string>
     <plurals name="dejavu_bookmarks_exported">
         <item quantity="one">%1$d ᱵᱩᱠᱢᱟᱨᱠ ᱨᱮᱫᱽ ᱛᱮ ᱤᱫᱤ ᱦᱩᱭ ᱮᱱᱟ</item>
@@ -626,4 +628,12 @@
     <string name="dejavu_unlock_use_screen_lock">ᱥᱠᱨᱤᱱ ᱞᱚᱠ ᱵᱮᱵᱷᱟᱨ ᱢᱮ</string>
     <string name="dejavu_private_hidden">ᱱᱤᱡᱮᱨᱟᱠ ᱴᱮᱵᱽ ᱠᱚ ᱩᱠᱩ ᱠᱟᱱᱟ</string>
     <string name="dejavu_private_show">ᱩᱫᱩᱜ ᱢᱮ</string>
+    <string name="dejavu_loading_colors">ᱥᱟᱦᱴᱟ ᱞᱚᱰ ᱚᱠᱛᱮ ᱨᱚᱝ</string>
+    <string name="dejavu_loading_colors_rainbow">ᱨᱟᱢᱫᱷᱮᱬᱩ</string>
+    <string name="dejavu_loading_colors_workspace">ᱣᱟᱨᱠᱥᱯᱮᱥ ᱨᱚᱝ</string>
+    <string name="dejavu_loading_colors_workspace_summary">ᱴᱮᱵᱽ ᱨᱮᱭᱟᱜ ᱣᱟᱨᱠᱥᱯᱮᱥ ᱨᱚᱝ ᱠᱚ᱾ ᱱᱤᱡᱮᱨᱟᱜ ᱴᱮᱵᱽ ᱟᱨ ᱨᱚᱝ ᱵᱟᱹᱱᱩᱜ ᱣᱟᱨᱠᱥᱯᱮᱥ ᱨᱟᱢᱫᱷᱮᱬᱩ ᱩᱫᱩᱜᱟ᱾</string>
+    <string name="dejavu_loading_colors_custom">ᱠᱩᱥᱤᱭᱟᱜ ᱨᱚᱝ ᱠᱚ</string>
+    <string name="dejavu_loading_colors_custom_summary">ᱯᱮ ᱨᱚᱝ ᱦᱟᱹᱵᱤᱡ ᱵᱟᱪᱷᱟᱣ ᱢᱮ᱾ ᱵᱚᱫᱚᱞ ᱞᱟᱹᱜᱤᱫ ᱫᱩᱦᱲᱟᱹ ᱴᱤᱯᱟᱹᱣ ᱢᱮ᱾</string>
+    <string name="dejavu_settings_swipe_to_close">ᱵᱚᱸᱫᱚᱭ ᱞᱟᱹᱜᱤᱫ ᱴᱮᱵᱽ ᱠᱚ ᱥᱣᱟᱭᱤᱯ ᱢᱮ</string>
+    <string name="dejavu_settings_swipe_to_close_summary">ᱦᱚᱢ ᱥᱠᱨᱤᱱ ᱨᱮ, ᱢᱤᱫ ᱴᱮᱵᱽ ᱞᱮᱯᱷᱴ ᱥᱮ ᱨᱟᱭᱤᱴ ᱛᱮ ᱥᱣᱟᱭᱤᱯ ᱠᱟᱛᱮ ᱚᱱᱟ ᱵᱚᱸᱫᱚᱜ ᱟ ᱾ ᱣᱟᱨᱠᱥᱯᱮᱥ ᱵᱚᱫᱚᱞ ᱞᱟᱹᱜᱤᱫ ᱴᱮᱵᱽ ᱠᱚ ᱵᱟᱦᱨᱮ ᱥᱣᱟᱭᱤᱯ ᱢᱮ ᱥᱮ ᱣᱟᱨᱠᱥᱯᱮᱥ ᱵᱟᱨ ᱵᱮᱵᱷᱟᱨ ᱢᱮ ᱾</string>
 </resources>

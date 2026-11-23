@@ -4,17 +4,21 @@
 
 package org.mozilla.fenix.dejavu.browser
 
+import android.content.Context
 import android.view.View
 import android.view.ViewGroup
 import androidx.compose.ui.geometry.Offset
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.ImageBitmap
 import androidx.compose.ui.graphics.asImageBitmap
+import androidx.core.content.ContextCompat
 import androidx.core.view.children
 import java.lang.ref.WeakReference
 import kotlin.coroutines.resume
 import kotlinx.coroutines.suspendCancellableCoroutine
 import mozilla.components.concept.engine.EngineView
+import org.mozilla.fenix.R
+import org.mozilla.fenix.dejavu.settings.DejavuSettings
 import org.mozilla.geckoview.GeckoResult
 import org.mozilla.geckoview.GeckoView
 
@@ -26,9 +30,21 @@ private const val CAPTURE_TIMEOUT_MS = 300L
  * @property bitmap The page, shown as wide as the window.
  * @property offset Where the page was shown in the window.
  * @property tabId The tab showing the page.
- * @property edgeColor The color along the page's top edge, which also showed above the page.
+ * @property edgeColor The color that showed above the page, see [colorAbovePage].
  */
 internal class PageShot(val bitmap: ImageBitmap, val offset: Offset, val tabId: String, val edgeColor: Color)
+
+/**
+ * The color that showed above a page whose top edge is [edgeColor]: that color, as the bars take it on, or the app's
+ * own while the user turned matching the page color off in Customize, see [PageTint].
+ */
+internal fun Context.colorAbovePage(edgeColor: Int): Color = Color(
+    if (DejavuSettings.peek()?.matchPageColor?.value == false) {
+        ContextCompat.getColor(this, R.color.fx_mobile_surface)
+    } else {
+        edgeColor
+    },
+)
 
 /** Pictures of the page shown in the browser, for the screens that open over it or take its place. */
 internal object PagePictures {
@@ -83,7 +99,7 @@ internal object PagePictures {
                 finish(
                     bitmap?.let {
                         val offset = Offset(location[0].toFloat(), location[1].toFloat())
-                        PageShot(it.asImageBitmap(), offset, tabId, Color(it.topEdgeColor()))
+                        PageShot(it.asImageBitmap(), offset, tabId, view.context.colorAbovePage(it.topEdgeColor()))
                     },
                 )
             }

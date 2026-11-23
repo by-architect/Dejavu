@@ -425,6 +425,8 @@
     <string name="dejavu_bars_bottom_summary">പ്രവർത്തന ബാർ ഇല്ല. കൂടുതൽ മെനു തുറക്കാൻ വിലാസ ബാർ മുകളിലേക്ക് സ്വൈപ്പ് ചെയ്യുക.</string>
     <string name="dejavu_settings_hide_system_bars">സ്റ്റാറ്റസ്, നാവിഗേഷൻ ബാറുകൾ മറയ്ക്കുക</string>
     <string name="dejavu_settings_hide_system_bars_summary">ഒരു പേജ് കാണിക്കുമ്പോൾ. അവ ഒരു നിമിഷം കാണാൻ മുകളിലെയോ താഴത്തെയോ അരികിൽ നിന്ന് സ്വൈപ്പ് ചെയ്യുക.</string>
+    <string name="dejavu_settings_match_page_color">ബാറുകൾ താളിന്റെ നിറത്തിനൊപ്പമാക്കുക</string>
+    <string name="dejavu_settings_match_page_color_summary">ബാറുകൾ വെബ്‌സൈറ്റിന്റെ പശ്ചാത്തല നിറം സ്വീകരിക്കുന്നു. ഓഫാക്കിയാൽ വർക്ക്‌സ്‌പേസ് നിറങ്ങൾ നിലനിർത്തുന്നു.</string>
     <string name="dejavu_bookmarks_export">ഫയലിലേക്കു് കയറ്റുമതിക്കുക</string>
     <plurals name="dejavu_bookmarks_exported">
         <item quantity="one">%1$d അടയാളക്കുറിപ്പ് കയറ്റുമതി ചെയ്തു</item>
@@ -618,4 +620,12 @@
     <string name="dejavu_unlock_use_screen_lock">സ്ക്രീൻ ലോക്ക് ഉപയോഗിക്കുക</string>
     <string name="dejavu_private_hidden">സ്വകാര്യ ടാബുകൾ മറച്ചിരിക്കുന്നു</string>
     <string name="dejavu_private_show">കാണിക്കുക</string>
+    <string name="dejavu_loading_colors">പേജ് ലോഡ് ചെയ്യുമ്പോഴുള്ള നിറങ്ങൾ</string>
+    <string name="dejavu_loading_colors_rainbow">മഴവില്ല്</string>
+    <string name="dejavu_loading_colors_workspace">പണിയിടത്തിന്റെ നിറങ്ങൾ</string>
+    <string name="dejavu_loading_colors_workspace_summary">ടാബിന്റെ പണിയിടത്തിന്റെ നിറങ്ങൾ. സ്വകാര്യ ടാബുകളും നിറങ്ങളില്ലാത്ത പണിയിടങ്ങളും മഴവില്ല് കാണിക്കുന്നു.</string>
+    <string name="dejavu_loading_colors_custom">ഇഷ്‌ടാനുസൃത നിറങ്ങൾ</string>
+    <string name="dejavu_loading_colors_custom_summary">മൂന്ന് നിറങ്ങൾ വരെ തിരഞ്ഞെടുക്കുക. മാറ്റാൻ വീണ്ടും ടാപ്പ് ചെയ്യുക.</string>
+    <string name="dejavu_settings_swipe_to_close">അടയ്ക്കാൻ ടാബുകൾ സ്വൈപ്പ് ചെയ്യുക</string>
+    <string name="dejavu_settings_swipe_to_close_summary">ഹോം താളിൽ, ഒരു ടാബ് വശത്തേക്ക് സ്വൈപ്പ് ചെയ്താൽ അത് അടയും. പണിയിടങ്ങൾ മാറാൻ, ടാബുകൾക്ക് പുറത്ത് സ്വൈപ്പ് ചെയ്യുക അല്ലെങ്കിൽ പണിയിട ബാർ ഉപയോഗിക്കുക.</string>
 </resources>

@@ -439,6 +439,8 @@
     <string name="dejavu_bars_bottom_summary">Žedna akcijowa lajsta. Pótegniśo adresowe pólo górjej, aby dalšny meni wócynił.</string>
     <string name="dejavu_settings_hide_system_bars">Lejstwy statusa a nawigacije schowaś</string>
     <string name="dejavu_settings_hide_system_bars_summary">Mjaztym až se bok pokazujo. Póśěgniśo wót górnego abo dolnego kšoma, aby je na wokognuśe wiźeł.</string>
+    <string name="dejavu_settings_match_page_color">Lejstwy na barwu boka pśiměriś</string>
+    <string name="dejavu_settings_match_page_color_summary">Lejstwy pśewzeju slězynowu barwu websedła. Gaž jo wupśěgnjone, wobchowaju barwy źěłowego pśestrjenja.</string>
     <string name="dejavu_bookmarks_export">Do dataje eksportěrowaś</string>
     <plurals name="dejavu_bookmarks_exported">
         <item quantity="one">%1$d cytańske znamje jo eksportěrowane</item>
@@ -634,4 +636,12 @@
     <string name="dejavu_unlock_use_screen_lock">Zawěru wobrazowki wužywaś</string>
     <string name="dejavu_private_hidden">Priwatne rejtariki su schowane</string>
     <string name="dejavu_private_show">Pokazaś</string>
+    <string name="dejavu_loading_colors">Barwy, mjaztym až se bok zacytujo</string>
+    <string name="dejavu_loading_colors_rainbow">Dužka</string>
+    <string name="dejavu_loading_colors_workspace">Barwy źěłowego ruma</string>
+    <string name="dejavu_loading_colors_workspace_summary">Barwy źěłowego ruma rejtarika. Priwatne rejtariki a źěłowe rumy bźez barwow pokazuju dužku.</string>
+    <string name="dejavu_loading_colors_custom">Swójske barwy</string>
+    <string name="dejavu_loading_colors_custom_summary">Wubjeŕśo až do tśich barwow. Pótusniśo hyšći raz, aby je změnił.</string>
+    <string name="dejavu_settings_swipe_to_close">Rejtariki pśez pótegnjenje zacyniś</string>
+    <string name="dejavu_settings_swipe_to_close_summary">Na startowem boku se rejtarik zacynja, gaž jen na bok pótegnjoš. Aby źěłowy rum změnił, pótegni zwenka rejtarikow abo wužyj lejstwu źěłowych rumow.</string>
 </resources>

@@ -168,6 +168,7 @@ fun ComposeView.setDejavuHomeContent(
             val essentialsShown by settings.essentialsShown.collectAsState()
             val hiddenEssentials by settings.hiddenEssentials.collectAsState()
             val searchAtBottom by settings.homeSearchAtBottom.collectAsState()
+            val swipeToClose by settings.swipeToClose.collectAsState()
             val containerRecords by containerStorage.records.collectAsState()
             val containers = remember(containerRecords) { containerRecords.orEmpty().associateBy { it.contextId } }
             val tabs by fenix.core.store.observeTabsForHome { it.normalTabs }
@@ -250,6 +251,7 @@ fun ComposeView.setDejavuHomeContent(
                     searching = isSearchActive,
                     essentialsShown = essentialsShown,
                     hiddenEssentials = hiddenEssentials,
+                    swipeToClose = swipeToClose,
                 )
 
                 if (showsPage) {

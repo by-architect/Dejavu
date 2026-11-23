@@ -425,6 +425,8 @@
     <string name="dejavu_bars_bottom_summary">Sin barra d\'accions. Esliza enta alto a barra d\'adrezas pa ubrir o menú Más.</string>
     <string name="dejavu_settings_hide_system_bars">Amagar as barras d\'estau y de navegación</string>
     <string name="dejavu_settings_hide_system_bars_summary">Mientres se veye una pachina. Esliza dende o canto superior u inferior pa veyer-las un momento.</string>
+    <string name="dejavu_settings_match_page_color">Ajustar as barras a o color d\'a pachina</string>
+    <string name="dejavu_settings_match_page_color_summary">As barras prenen o color de fondo d\'o puesto web. Si se desactiva, mantienen os colors de l\'espacio de treballo.</string>
     <string name="dejavu_bookmarks_export">Exportar a un fichero</string>
     <plurals name="dejavu_bookmarks_exported">
         <item quantity="one">%1$d marcador exportau</item>
@@ -618,4 +620,12 @@
     <string name="dejavu_unlock_use_screen_lock">Usar o bloqueyo de pantalla</string>
     <string name="dejavu_private_hidden">As pestanyas privadas son amagadas</string>
     <string name="dejavu_private_show">Amostrar</string>
+    <string name="dejavu_loading_colors">Colors mientres se carga una pachina</string>
+    <string name="dejavu_loading_colors_rainbow">Arco de San Chuan</string>
+    <string name="dejavu_loading_colors_workspace">Colors de l\'espacio de treballo</string>
+    <string name="dejavu_loading_colors_workspace_summary">As colors de l\'espacio de treballo d\'a pestanya. As pestanyas privadas y os espacios de treballo sin colors amuestran l\'arco de San Chuan.</string>
+    <string name="dejavu_loading_colors_custom">Colors personalizadas</string>
+    <string name="dejavu_loading_colors_custom_summary">Tría dica tres colors. Toca de nuevo pa cambiar-las.</string>
+    <string name="dejavu_settings_swipe_to_close">Eslizar as pestanyas ta zarrar-las</string>
+    <string name="dejavu_settings_swipe_to_close_summary">En a pachina d\'inicio, eslizar una pestanya enta os costaus la zarra. Ta cambiar d\'espacio de treballo, esliza fuera d\'as pestanyas u usa a barra d\'espacios de treballo.</string>
 </resources>

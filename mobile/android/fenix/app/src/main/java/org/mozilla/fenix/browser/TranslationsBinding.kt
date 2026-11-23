@@ -17,6 +17,7 @@ import mozilla.components.browser.state.selector.selectedTab
 import mozilla.components.browser.state.state.BrowserState
 import mozilla.components.browser.state.state.TranslationsState
 import mozilla.components.browser.state.store.BrowserStore
+import mozilla.components.concept.engine.translate.TranslationOperation
 import mozilla.components.concept.engine.translate.initialFromLanguage
 import mozilla.components.concept.engine.translate.initialToLanguage
 import mozilla.components.lib.state.helpers.AbstractBinding
@@ -27,6 +28,7 @@ import org.mozilla.fenix.browser.store.BrowserScreenStore
 import org.mozilla.fenix.components.AppStore
 import org.mozilla.fenix.components.appstate.AppAction.SnackbarAction
 import org.mozilla.fenix.components.appstate.snackbar.SnackbarState
+import org.mozilla.fenix.dejavu.browser.TranslationOffers
 import org.mozilla.fenix.ext.navigateSafe
 import org.mozilla.fenix.translations.TranslationDialogBottomSheet
 import org.mozilla.fenix.translations.TranslationsFlowState
@@ -139,6 +141,7 @@ class TranslationsBinding(
                 }
                 // A translation offer is expected
                 if (isTranslationsActive && sessionTranslationsState.isOfferTranslate) {
+                    TranslationOffers.offered(state.sessionState)
                     browserStore.dispatch(
                         TranslationsAction.TranslateOfferAction(
                             tabId = state.sessionState.id,
@@ -146,6 +149,18 @@ class TranslationsBinding(
                         )
                     )
                     offerToTranslateCurrentPage()
+                } else if (isTranslationsActive && !state.sessionState.readerState.active) {
+                    // Dejavu: offers to translate every site that can be, once while Dejavu runs, see TranslationOffers.
+                    when (TranslationOffers.stepFor(state.sessionState, browserTranslationsState)) {
+                        TranslationOffers.Step.FETCH_SETTINGS -> browserStore.dispatch(
+                            TranslationsAction.OperationRequestedAction(
+                                tabId = state.sessionState.id,
+                                operation = TranslationOperation.FETCH_PAGE_SETTINGS,
+                            ),
+                        )
+                        TranslationOffers.Step.OFFER -> offerToTranslateCurrentPage()
+                        TranslationOffers.Step.NONE -> Unit
+                    }
                 }
 
                 // Trigger automatic popup to show errors

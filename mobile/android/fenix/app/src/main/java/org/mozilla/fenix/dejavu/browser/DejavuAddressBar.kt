@@ -57,6 +57,7 @@ import androidx.compose.ui.unit.dp
 import androidx.core.net.toUri
 import mozilla.components.browser.state.selector.findTab
 import mozilla.components.browser.state.selector.selectedTab
+import mozilla.components.browser.state.state.BrowserState
 import mozilla.components.browser.state.state.TabSessionState
 import mozilla.components.compose.browser.toolbar.ActionContainer
 import mozilla.components.compose.browser.toolbar.R as toolbarR
@@ -69,8 +70,10 @@ import mozilla.components.compose.browser.toolbar.store.BrowserToolbarStore
 import mozilla.components.concept.engine.utils.ABOUT_HOME_URL
 import mozilla.components.lib.state.ext.observeAsComposableState
 import mozilla.components.support.utils.ClipboardHandler
+import mozilla.components.ui.icons.R as iconsR
 import org.mozilla.fenix.R
 import org.mozilla.fenix.components.components
+import org.mozilla.fenix.components.toolbar.DisplayActions
 import org.mozilla.fenix.dejavu.actions.TabAction
 import org.mozilla.fenix.dejavu.containers.DejavuContainerStorage
 import org.mozilla.fenix.dejavu.discover.MENU_SWIPE
@@ -135,6 +138,7 @@ private fun PageAddressBar(store: BrowserToolbarStore) {
     val text = origin.url?.toString()?.takeIf { it.isNotBlank() } ?: origin.title?.takeIf { it.isNotBlank() } ?: hint
     val url by components.core.store.observeAsComposableState { it.selectedTab?.content?.url }
     val loading by components.core.store.observeAsComposableState { it.selectedTab?.content?.loading == true }
+    val translation by components.core.store.observeAsComposableState { it.translationMark() }
     val haptic = LocalHapticFeedback.current
     var menuOpen by remember { mutableStateOf(false) }
     val theme = shownPopupTheme()
@@ -179,9 +183,11 @@ private fun PageAddressBar(store: BrowserToolbarStore) {
                     isHint = text == hint,
                     url = url,
                     loading = loading,
+                    tabId = null,
                     container = containerAction(),
                     onInteraction = { store.dispatch(it) },
                     modifier = Modifier.align(Alignment.Center),
+                    translation = translation,
                 ) {
                     PageCounter(
                         tabId = null,
@@ -266,6 +272,7 @@ private fun DejavuSplitAddressBar(store: BrowserToolbarStore, split: ShownSplit)
         val onInteraction: (BrowserToolbarEvent) -> Unit = if (focused) dispatch else ({ focus() })
         if (stacked) {
             SplitPageRow(
+                tabId = tab.id,
                 title = title,
                 isHint = title == hint,
                 url = tab.content.url,
@@ -293,6 +300,7 @@ private fun DejavuSplitAddressBar(store: BrowserToolbarStore, split: ShownSplit)
                         isHint = title == hint,
                         url = tab.content.url,
                         loading = tab.content.loading,
+                        tabId = tab.id,
                         container = container,
                         onInteraction = onInteraction,
                         modifier = Modifier.align(Alignment.Center),
@@ -363,6 +371,7 @@ private fun DejavuSplitAddressBar(store: BrowserToolbarStore, split: ShownSplit)
 @Suppress("LongParameterList")
 @Composable
 private fun SplitPageRow(
+    tabId: String,
     title: String,
     isHint: Boolean,
     url: String,
@@ -382,6 +391,7 @@ private fun SplitPageRow(
                 color = if (isHint) MaterialTheme.colorScheme.onSurfaceVariant else MaterialTheme.colorScheme.onSurface,
                 domain = domainOf(url),
                 loading = loading,
+                tabId = tabId,
             )
         }
         Box(contentAlignment = Alignment.Center, modifier = Modifier.size(SLOT_SIZE)) {
@@ -406,6 +416,7 @@ internal fun DejavuAddressBarPreview(tab: TabSessionState) {
                     isHint = text == hint,
                     url = tab.content.url,
                     loading = tab.content.loading,
+                    tabId = tab.id,
                     container = containerAction(tab.id),
                     onInteraction = {},
                     modifier = Modifier.align(Alignment.Center),
@@ -557,7 +568,9 @@ private fun PageOrigin.startSearch(store: BrowserToolbarStore, layout: BarsLayou
 /**
  * The rounded field of the address bar: [container] at its start, [text] in the middle, with the domain of [url] in
  * small letters below the text unless the text already says it, and [pageCounter], the tab's [PageCounter], at its
- * end. While the page is [loading], colors run through the domain's letters.
+ * end. While the page is [loading], colors run through the domain's letters, those chosen for the tab with [tabId], or
+ * the shown tab when `null`. A page that can be translated shows the translate button before the page counter, see
+ * [TranslationMark].
  */
 @Suppress("LongParameterList")
 @Composable
@@ -566,9 +579,11 @@ private fun AddressField(
     isHint: Boolean,
     url: String?,
     loading: Boolean,
+    tabId: String?,
     container: Action?,
     onInteraction: (BrowserToolbarEvent) -> Unit,
     modifier: Modifier = Modifier,
+    translation: TranslationMark = TranslationMark.NONE,
     pageCounter: @Composable () -> Unit,
 ) {
     Row(
@@ -582,6 +597,8 @@ private fun AddressField(
         Box(contentAlignment = Alignment.Center, modifier = Modifier.size(SLOT_SIZE)) {
             ActionContainer(actions = listOfNotNull(container), onInteraction = onInteraction)
         }
+        // As wide as the translate button, so the title stays in the middle.
+        if (translation != TranslationMark.NONE) Spacer(Modifier.width(TRANSLATE_SIZE))
         Box(contentAlignment = Alignment.Center, modifier = Modifier.weight(1f)) {
             // The bar's own description already says the title.
             Column(
@@ -597,8 +614,15 @@ private fun AddressField(
                     },
                     domain = url?.let(::domainOf),
                     loading = loading,
+                    tabId = tabId,
                 )
             }
+        }
+        if (translation != TranslationMark.NONE) {
+            TranslateButton(
+                translated = translation == TranslationMark.TRANSLATED,
+                onClick = { onInteraction(DisplayActions.TranslateClicked(Source.AddressBar.PageEnd)) },
+            )
         }
         // As wide as the container's slot, so the title stays in the middle.
         Box(contentAlignment = Alignment.Center, modifier = Modifier.size(SLOT_SIZE)) {
@@ -608,11 +632,57 @@ private fun AddressField(
 }
 
 /**
+ * Whether the shown page can be translated, which the address bar tells with its translate button, so the user sees
+ * it without waiting for Firefox to offer it (#279).
+ */
+internal enum class TranslationMark { NONE, POSSIBLE, TRANSLATED }
+
+/** The [TranslationMark] of the selected tab, the way Firefox's own toolbar decides it on wide screens. */
+internal fun BrowserState.translationMark(): TranslationMark {
+    val tab = selectedTab ?: return TranslationMark.NONE
+    val engine = translationEngine
+    val translations = tab.translationsState
+    return when {
+        engine.isEngineSupported != true || !engine.isTranslationsEnabled || tab.readerState.active ->
+            TranslationMark.NONE
+        translations.isTranslated -> TranslationMark.TRANSLATED
+        translations.isExpectedTranslate -> TranslationMark.POSSIBLE
+        else -> TranslationMark.NONE
+    }
+}
+
+/** The translate button of the address field, highlighted once the page is [translated]. */
+@Composable
+private fun TranslateButton(translated: Boolean, onClick: () -> Unit) {
+    val taps = rememberIconTaps()
+    Box(
+        contentAlignment = Alignment.Center,
+        modifier = Modifier
+            .size(TRANSLATE_SIZE)
+            .clip(CircleShape)
+            .background(if (translated) MaterialTheme.colorScheme.primaryContainer else Color.Transparent)
+            .clickable(onClickLabel = stringResource(R.string.dejavu_menu_translate)) {
+                taps.tap()
+                onClick()
+            },
+    ) {
+        TapIcon(
+            icon = if (translated) iconsR.drawable.mozac_ic_translate_active_24 else iconsR.drawable.mozac_ic_translate_24,
+            taps = taps,
+            contentDescription = stringResource(R.string.dejavu_menu_translate),
+            tint = if (translated) MaterialTheme.colorScheme.onPrimaryContainer else MaterialTheme.colorScheme.onSurface,
+            modifier = Modifier.size(20.dp),
+        )
+    }
+}
+
+/**
  * [text], a page's title, in [color], with its [domain] in small letters below it unless the text already says it.
- * While the page is [loading], colors run through the domain's letters: those below the title, or those in it.
+ * While the page is [loading], colors run through the domain's letters: those below the title, or those in it. They
+ * are the colors chosen for the tab with [tabId], or the shown tab when `null`.
  */
 @Composable
-private fun TitleAndDomain(text: String, color: Color, domain: String?, loading: Boolean) {
+private fun TitleAndDomain(text: String, color: Color, domain: String?, loading: Boolean, tabId: String?) {
     val inTitle = domain?.takeIf { text.contains(it, ignoreCase = true) }
     val titleLayout = remember { arrayOfNulls<TextLayoutResult>(1) }
     Text(
@@ -624,7 +694,7 @@ private fun TitleAndDomain(text: String, color: Color, domain: String?, loading:
         overflow = TextOverflow.Ellipsis,
         onTextLayout = { titleLayout[0] = it },
         modifier = if (inTitle != null) {
-            Modifier.loadingColors(loading) { titleLayout[0]?.rangeOf(text, inTitle) }
+            Modifier.loadingColors(loading, tabId) { titleLayout[0]?.rangeOf(text, inTitle) }
         } else {
             Modifier
         },
@@ -636,7 +706,7 @@ private fun TitleAndDomain(text: String, color: Color, domain: String?, loading:
             color = MaterialTheme.colorScheme.onSurfaceVariant,
             maxLines = 1,
             overflow = TextOverflow.Ellipsis,
-            modifier = Modifier.loadingColors(loading),
+            modifier = Modifier.loadingColors(loading, tabId),
         )
     }
 }
@@ -716,4 +786,5 @@ private val SIDE_ICON_SIZE = 22.dp
 private val SIDE_DOT_INSET = 6.dp
 private val FIELD_PADDING = 4.dp
 private val SLOT_SIZE = 48.dp
+private val TRANSLATE_SIZE = 36.dp
 private val TITLE_END_PADDING = 8.dp

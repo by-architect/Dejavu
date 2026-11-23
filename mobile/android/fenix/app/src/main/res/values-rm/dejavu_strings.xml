@@ -425,6 +425,8 @@
     <string name="dejavu_bars_bottom_summary">Nagina trav d’acziuns. Stritgar si la trav d’adressas per avrir il menu Dapli.</string>
     <string name="dejavu_settings_hide_system_bars">Zuppentar las travs da status e da navigaziun</string>
     <string name="dejavu_settings_hide_system_bars_summary">Durant ch\'ina pagina vegn mussada. Stritgar naven dal ur sura u sut per las vesair per in mument.</string>
+    <string name="dejavu_settings_match_page_color">Adattar las travs al colur da la pagina</string>
+    <string name="dejavu_settings_match_page_color_summary">Las travs surpiglian il colur da fund da la website. Deactivà mantegnan ellas ils colurs da l\'spazi da lavur.</string>
     <string name="dejavu_bookmarks_export">Exportar en ina datoteca</string>
     <plurals name="dejavu_bookmarks_exported">
         <item quantity="one">%1$d segnapagina exportà</item>
@@ -618,4 +620,12 @@
     <string name="dejavu_unlock_use_screen_lock">Utilisar la bloccada dal visur</string>
     <string name="dejavu_private_hidden">Ils tabs privats èn zuppentads</string>
     <string name="dejavu_private_show">Mussar</string>
+    <string name="dejavu_loading_colors">Colurs durant che ina pagina chargia</string>
+    <string name="dejavu_loading_colors_rainbow">Artg da tschiel</string>
+    <string name="dejavu_loading_colors_workspace">Colurs dal spazi da lavur</string>
+    <string name="dejavu_loading_colors_workspace_summary">Las colurs dal spazi da lavur dal tab. Tabs privats e spazis da lavur senza colurs mussan l\'artg da tschiel.</string>
+    <string name="dejavu_loading_colors_custom">Colurs persunalisadas</string>
+    <string name="dejavu_loading_colors_custom_summary">Tscherna fin a trais colurs. Tutga anc ina giada per las midar.</string>
+    <string name="dejavu_settings_swipe_to_close">Stritgar tabs per als serrar</string>
+    <string name="dejavu_settings_swipe_to_close_summary">Sin l’ecran da partenza sa serra in tab, sche ti al stritgas da la vart. Per midar il spazi da lavur, stritga ordaifer ils tabs u utilisescha la trav dals spazis da lavur.</string>
 </resources>

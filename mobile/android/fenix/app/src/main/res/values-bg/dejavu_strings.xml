@@ -425,6 +425,8 @@
     <string name="dejavu_bars_bottom_summary">Без лента с действия. Плъзнете адресната лента нагоре, за да отворите меню „Още“.</string>
     <string name="dejavu_settings_hide_system_bars">Скриване на лентите за състояние и навигация</string>
     <string name="dejavu_settings_hide_system_bars_summary">Докато се показва страница. Плъзнете от горния или долния край, за да ги видите за момент.</string>
+    <string name="dejavu_settings_match_page_color">Лентите в цвета на страницата</string>
+    <string name="dejavu_settings_match_page_color_summary">Лентите вземат фоновия цвят на уебсайта. Когато е изключено, запазват цветовете на работното пространство.</string>
     <string name="dejavu_bookmarks_export">Изнасяне във файл</string>
     <plurals name="dejavu_bookmarks_exported">
         <item quantity="one">%1$d отметка изнесена</item>
@@ -618,4 +620,12 @@
     <string name="dejavu_unlock_use_screen_lock">Използване на заключване на екрана</string>
     <string name="dejavu_private_hidden">Поверителните раздели са скрити</string>
     <string name="dejavu_private_show">Показване</string>
+    <string name="dejavu_loading_colors">Цветове при зареждане на страница</string>
+    <string name="dejavu_loading_colors_rainbow">Дъга</string>
+    <string name="dejavu_loading_colors_workspace">Цветове на работното пространство</string>
+    <string name="dejavu_loading_colors_workspace_summary">Цветовете на работното пространство на раздела. Поверителните раздели и пространствата без цветове показват дъгата.</string>
+    <string name="dejavu_loading_colors_custom">Цветове по избор</string>
+    <string name="dejavu_loading_colors_custom_summary">Изберете до три цвята. Докоснете отново, за да ги промените.</string>
+    <string name="dejavu_settings_swipe_to_close">Затваряне на раздели с плъзгане</string>
+    <string name="dejavu_settings_swipe_to_close_summary">На началния екран плъзгането на раздел настрани го затваря. За да смените работното пространство, плъзнете извън разделите или използвайте лентата с работните пространства.</string>
 </resources>

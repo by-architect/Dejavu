@@ -249,7 +249,7 @@ interface DejavuHomeInteractor : TabEditor {
  * unlocks them, which asks by itself once they are turned to.
  * While a search screen is open over it ([searching]), the system bars' icons follow the theme, see
  * [SystemBarIconsOver]. The essentials show unless [essentialsShown] is off, without the [hiddenEssentials], see
- * [shownEssentials].
+ * [shownEssentials]. With [swipeToClose], swiping a tab sideways closes it.
  */
 @Suppress("LongMethod", "LongParameterList", "CognitiveComplexMethod", "CyclomaticComplexMethod")
 @Composable
@@ -277,6 +277,7 @@ fun DejavuHome(
     searching: Boolean = false,
     essentialsShown: Boolean = true,
     hiddenEssentials: Set<String> = emptySet(),
+    swipeToClose: Boolean = false,
 ) {
     // The private workspace is an extra last page, there while private tabs are open. Shown as its last tabs close, it
     // stays until they poured away and the pages turned to the workspace before it.
@@ -835,6 +836,7 @@ fun DejavuHome(
                                             }
                                         }
                                     },
+                                    swipeToClose = swipeToClose,
                                 )
                             }
                             return@HorizontalPager
@@ -923,6 +925,7 @@ fun DejavuHome(
                                     hasDataToClear = hasDataToClear,
                                     dataPour = pour.takeIf { page == pagerState.currentPage },
                                     askedClear = askedClear.takeIf { page == pagerState.currentPage },
+                                    swipeToClose = swipeToClose,
                                 )
                             }
                         }

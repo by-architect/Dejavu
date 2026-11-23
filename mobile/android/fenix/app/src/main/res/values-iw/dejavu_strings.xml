@@ -432,6 +432,8 @@
     <string name="dejavu_bars_bottom_summary">ללא סרגל פעולות. החליקו את שורת הכתובת למעלה כדי לפתוח את תפריט “עוד”.</string>
     <string name="dejavu_settings_hide_system_bars">הסתרת סרגלי המצב והניווט</string>
     <string name="dejavu_settings_hide_system_bars_summary">בזמן הצגת דף. יש להחליק מהקצה העליון או התחתון כדי לראות אותם לרגע.</string>
+    <string name="dejavu_settings_match_page_color">התאמת הסרגלים לצבע הדף</string>
+    <string name="dejavu_settings_match_page_color_summary">הסרגלים מקבלים את צבע הרקע של האתר. כשהאפשרות כבויה הם שומרים על צבעי סביבת העבודה.</string>
     <string name="dejavu_bookmarks_export">ייצוא לקובץ</string>
     <plurals name="dejavu_bookmarks_exported">
         <item quantity="one">%1$d סימנייה יוצאה</item>
@@ -626,4 +628,12 @@
     <string name="dejavu_unlock_use_screen_lock">שימוש בנעילת מסך</string>
     <string name="dejavu_private_hidden">הלשוניות הפרטיות מוסתרות</string>
     <string name="dejavu_private_show">הצגה</string>
+    <string name="dejavu_loading_colors">צבעים בזמן טעינת דף</string>
+    <string name="dejavu_loading_colors_rainbow">קשת</string>
+    <string name="dejavu_loading_colors_workspace">צבעי מרחב העבודה</string>
+    <string name="dejavu_loading_colors_workspace_summary">הצבעים של מרחב העבודה של הלשונית. לשוניות פרטיות ומרחבי עבודה ללא צבעים מציגים את הקשת.</string>
+    <string name="dejavu_loading_colors_custom">צבעים מותאמים אישית</string>
+    <string name="dejavu_loading_colors_custom_summary">בחרו עד שלושה צבעים. הקישו שוב כדי לשנות אותם.</string>
+    <string name="dejavu_settings_swipe_to_close">החלקת לשוניות לסגירה</string>
+    <string name="dejavu_settings_swipe_to_close_summary">במסך הבית, החלקת לשונית הצידה סוגרת אותה. כדי לעבור בין מרחבי עבודה, החליקו מחוץ ללשוניות או השתמשו בסרגל מרחבי העבודה.</string>
 </resources>

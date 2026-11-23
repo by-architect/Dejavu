@@ -425,6 +425,8 @@
     <string name="dejavu_bars_bottom_summary">Tembiapo barra\'ỹre. Erova kundaharape barra yvate gotyo embojuruja hag̃ua Menu Ambueve.</string>
     <string name="dejavu_settings_hide_system_bars">Mokañy umi barra rekoreko ha jeguata rehegua</string>
     <string name="dejavu_settings_hide_system_bars_summary">Peteĩ kuatiarogue ojehechauka aja. Emosyryry yvate térã yvy gotyo rembe\'ýgui ehecha hag̃ua sapy\'apy\'ánte.</string>
+    <string name="dejavu_settings_match_page_color">Emoĩ barra ñandutirovetã sa\'y ndive</string>
+    <string name="dejavu_settings_match_page_color_summary">Umi barra ojagarra ñandutiregua rapykuere sa\'y. Ojepe\'a vove, opyta tembiapoha sa\'y.</string>
     <string name="dejavu_bookmarks_export">Marandurendápe jegueraha</string>
     <plurals name="dejavu_bookmarks_exported">
         <item quantity="one">%1$d techaukaha ojegueraha</item>
@@ -618,4 +620,12 @@
     <string name="dejavu_unlock_use_screen_lock">Eiporu mba’erechaha jokoha</string>
     <string name="dejavu_private_hidden">Tendayke ñemigua oñeñomi</string>
     <string name="dejavu_private_show">Ehechauka</string>
+    <string name="dejavu_loading_colors">Sa\'y kuatiarogue ojehupi aja</string>
+    <string name="dejavu_loading_colors_rainbow">Sa\'y opaichagua</string>
+    <string name="dejavu_loading_colors_workspace">Tembiapo renda sa\'y</string>
+    <string name="dejavu_loading_colors_workspace_summary">Tendayke tembiapo renda sa\'y. Tendayke ñemi ha tembiapo renda sa\'y\'ỹva ohechauka sa\'y opaichagua.</string>
+    <string name="dejavu_loading_colors_custom">Sa\'y ojeporavopyre</string>
+    <string name="dejavu_loading_colors_custom_summary">Eiporavo mbohapy sa\'y peve. Eikutu jey emoambue hag̃ua.</string>
+    <string name="dejavu_settings_swipe_to_close">Erova tendayke emboty hag̃ua</string>
+    <string name="dejavu_settings_swipe_to_close_summary">Pantalla ñepyrũguápe, erova peteĩ tendayke yke gotyo ha oñemboty. Emoambue hag̃ua tembiapo renda, erova tendayke okápe térã eiporu tembiapo renda barra.</string>
 </resources>

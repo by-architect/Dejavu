@@ -425,6 +425,8 @@
     <string name="dejavu_bars_bottom_summary">ක්‍රියා තීරුවක් නැත. තව මෙනුව විවෘත කිරීමට ලිපින තීරුව ඉහළට අදින්න.</string>
     <string name="dejavu_settings_hide_system_bars">තත්ත්ව සහ සංචාලන තීරු සඟවන්න</string>
     <string name="dejavu_settings_hide_system_bars_summary">පිටුවක් පෙන්වන අතරතුර. ඒවා මොහොතකට බැලීමට ඉහළ හෝ පහළ දාරයේ සිට ස්වයිප් කරන්න.</string>
+    <string name="dejavu_settings_match_page_color">තීරු පිටුවේ වර්ණයට ගළපන්න</string>
+    <string name="dejavu_settings_match_page_color_summary">තීරු වෙබ් අඩවියේ පසුබිම් වර්ණය ගනී. අක්‍රිය විට වැඩබිමේ වර්ණ තබා ගනී.</string>
     <string name="dejavu_bookmarks_export">ගොනුවකට නිර්යාත කරන්න</string>
     <plurals name="dejavu_bookmarks_exported">
         <item quantity="one">පොත්යොමු %1$d ක් නිර්යාත කරන ලදී</item>
@@ -618,4 +620,12 @@
     <string name="dejavu_unlock_use_screen_lock">තිර අගුල භාවිතා කරන්න</string>
     <string name="dejavu_private_hidden">පෞද්ගලික පටිති සඟවා ඇත</string>
     <string name="dejavu_private_show">පෙන්වන්න</string>
+    <string name="dejavu_loading_colors">පිටුව පූරණය වන අතරතුර වර්ණ</string>
+    <string name="dejavu_loading_colors_rainbow">දේදුන්න</string>
+    <string name="dejavu_loading_colors_workspace">අවකාශයේ වර්ණ</string>
+    <string name="dejavu_loading_colors_workspace_summary">පටිත්තේ අවකාශයේ වර්ණ. පෞද්ගලික පටිති සහ වර්ණ නැති අවකාශ දේදුන්න පෙන්වයි.</string>
+    <string name="dejavu_loading_colors_custom">අභිරුචි වර්ණ</string>
+    <string name="dejavu_loading_colors_custom_summary">වර්ණ තුනක් දක්වා තෝරන්න. වෙනස් කිරීමට නැවත තට්ටු කරන්න.</string>
+    <string name="dejavu_settings_swipe_to_close">වැසීමට පටිති ස්වයිප් කරන්න</string>
+    <string name="dejavu_settings_swipe_to_close_summary">මුල් පිටුවේ, පටිත්තක් පැත්තට ස්වයිප් කිරීමෙන් එය වැසේ. අවකාශ මාරු කිරීමට, පටිතිවලින් පිටත ස්වයිප් කරන්න හෝ අවකාශ තීරුව භාවිත කරන්න.</string>
 </resources>

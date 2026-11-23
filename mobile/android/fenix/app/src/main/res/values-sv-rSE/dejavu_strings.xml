@@ -425,6 +425,8 @@
     <string name="dejavu_bars_bottom_summary">Inget åtgärdsfält. Svep adressfältet uppåt för att öppna Mer-menyn.</string>
     <string name="dejavu_settings_hide_system_bars">Dölj status- och navigeringsfältet</string>
     <string name="dejavu_settings_hide_system_bars_summary">Medan en sida visas. Svep in från över- eller underkanten för att se dem en stund.</string>
+    <string name="dejavu_settings_match_page_color">Anpassa fälten efter sidans färg</string>
+    <string name="dejavu_settings_match_page_color_summary">Fälten tar webbplatsens bakgrundsfärg. Avstängt behåller de arbetsytans färger.</string>
     <string name="dejavu_bookmarks_export">Exportera till fil</string>
     <plurals name="dejavu_bookmarks_exported">
         <item quantity="one">%1$d bokmärke exporterat</item>
@@ -618,4 +620,12 @@
     <string name="dejavu_unlock_use_screen_lock">Använd skärmlås</string>
     <string name="dejavu_private_hidden">Privata flikar är dolda</string>
     <string name="dejavu_private_show">Visa</string>
+    <string name="dejavu_loading_colors">Färger medan en sida läses in</string>
+    <string name="dejavu_loading_colors_rainbow">Regnbåge</string>
+    <string name="dejavu_loading_colors_workspace">Arbetsytans färger</string>
+    <string name="dejavu_loading_colors_workspace_summary">Färgerna från flikens arbetsyta. Privata flikar och arbetsytor utan färger visar regnbågen.</string>
+    <string name="dejavu_loading_colors_custom">Anpassade färger</string>
+    <string name="dejavu_loading_colors_custom_summary">Välj upp till tre färger. Tryck igen för att ändra dem.</string>
+    <string name="dejavu_settings_swipe_to_close">Svep för att stänga flikar</string>
+    <string name="dejavu_settings_swipe_to_close_summary">På startskärmen stängs en flik om du sveper den i sidled. Svep utanför flikarna eller använd arbetsytefältet för att växla arbetsyta.</string>
 </resources>

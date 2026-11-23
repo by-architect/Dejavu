@@ -425,6 +425,8 @@
     <string name="dejavu_bars_bottom_summary">کوئی ایکشن بار نئيں۔ ہور مینو کھولن لئی پتہ بار نوں اُتے سوائپ کرو۔</string>
     <string name="dejavu_settings_hide_system_bars">سٹیٹس تے نیویگیشن بار لکاؤ</string>
     <string name="dejavu_settings_hide_system_bars_summary">جدوں کوئی صفحہ وکھایا جا رہیا ہووے۔ اوہناں نوں اک پل لئی ویکھن لئی اُتلے یا تھلے کنارے توں سوائپ کرو۔</string>
+    <string name="dejavu_settings_match_page_color">بارز نوں صفحے دے رنگ نال ملاؤ</string>
+    <string name="dejavu_settings_match_page_color_summary">بارز ویب سائٹ دے پس منظر دا رنگ لیندے نیں۔ بند ہون تے ورک اسپیس دے رنگ رکھدے نیں۔</string>
     <string name="dejavu_bookmarks_export">فائل وچ ایکسپورٹ کرو</string>
     <plurals name="dejavu_bookmarks_exported">
         <item quantity="one">%1$d بُک مارک ایکسپورٹ ہویا</item>
@@ -618,4 +620,12 @@
     <string name="dejavu_unlock_use_screen_lock">سکرین لاک ورتو</string>
     <string name="dejavu_private_hidden">نجی ٹیباں لکیاں ہوئیاں نیں</string>
     <string name="dejavu_private_show">وکھاؤ</string>
+    <string name="dejavu_loading_colors">صفحہ لوڈ ہوندیاں رنگ</string>
+    <string name="dejavu_loading_colors_rainbow">پینگھ</string>
+    <string name="dejavu_loading_colors_workspace">ورک سپیس دے رنگ</string>
+    <string name="dejavu_loading_colors_workspace_summary">ٹیب دی ورک سپیس دے رنگ۔ نجی ٹیباں تے بنا رنگاں والیاں ورک سپیساں پینگھ وکھاندیاں نیں۔</string>
+    <string name="dejavu_loading_colors_custom">مرضی دے رنگ</string>
+    <string name="dejavu_loading_colors_custom_summary">تن تیکر رنگ چݨو۔ بدلن لئی مڑ ٹیپ کرو۔</string>
+    <string name="dejavu_settings_swipe_to_close">بند کرن لئی ٹیباں سوائپ کرو</string>
+    <string name="dejavu_settings_swipe_to_close_summary">ہوم سکرین تے کسے ٹیب نوں پاسے ول سوائپ کرن نال اوہ بند ہو جاندی اے۔ ورک سپیس بدلن لئی ٹیباں توں باہر سوائپ کرو یا ورک سپیس بار ورتو۔</string>
 </resources>

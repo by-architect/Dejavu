@@ -425,6 +425,8 @@
     <string name="dejavu_bars_bottom_summary">Amallar paneli yo\'q. «Ko\'proq» menyusini ochish uchun manzil panelini yuqoriga suring.</string>
     <string name="dejavu_settings_hide_system_bars">Holat va navigatsiya panellarini yashirish</string>
     <string name="dejavu_settings_hide_system_bars_summary">Sahifa ko‘rsatilayotganda. Ularni bir lahza ko‘rish uchun yuqori yoki pastki chetdan suring.</string>
+    <string name="dejavu_settings_match_page_color">Panellarni sahifa rangiga moslash</string>
+    <string name="dejavu_settings_match_page_color_summary">Panellar veb-saytning fon rangini oladi. O\'chirilganda ish maydoni ranglarini saqlaydi.</string>
     <string name="dejavu_bookmarks_export">Faylga eksport qilish</string>
     <plurals name="dejavu_bookmarks_exported">
         <item quantity="one">%1$d xatcho\'p eksport qilindi</item>
@@ -618,4 +620,12 @@
     <string name="dejavu_unlock_use_screen_lock">Ekran qulfidan foydalanish</string>
     <string name="dejavu_private_hidden">Maxfiy varaqlar yashirilgan</string>
     <string name="dejavu_private_show">Ko‘rsatish</string>
+    <string name="dejavu_loading_colors">Sahifa yuklanayotganda ranglar</string>
+    <string name="dejavu_loading_colors_rainbow">Kamalak</string>
+    <string name="dejavu_loading_colors_workspace">Ish maydoni ranglari</string>
+    <string name="dejavu_loading_colors_workspace_summary">Varaq ish maydonining ranglari. Maxfiy varaqlar va rangsiz ish maydonlari kamalakni ko\'rsatadi.</string>
+    <string name="dejavu_loading_colors_custom">Maxsus ranglar</string>
+    <string name="dejavu_loading_colors_custom_summary">Uchtagacha rang tanlang. O\'zgartirish uchun yana bosing.</string>
+    <string name="dejavu_settings_swipe_to_close">Yopish uchun varaqlarni surish</string>
+    <string name="dejavu_settings_swipe_to_close_summary">Bosh sahifada varaqni yon tomonga surish uni yopadi. Ish maydonlarini almashtirish uchun varaqlardan tashqarida suring yoki ish maydonlari panelidan foydalaning.</string>
 </resources>

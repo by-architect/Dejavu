@@ -425,6 +425,8 @@
     <string name="dejavu_bars_bottom_summary">کوئی ایکشن بار نہیں۔ مزید کا مینو کھولنے کے لیے پتہ بار کو اوپر سوائپ کریں۔</string>
     <string name="dejavu_settings_hide_system_bars">اسٹیٹس اور نیویگیشن بار چھپائیں</string>
     <string name="dejavu_settings_hide_system_bars_summary">جب کوئی صفحہ دکھایا جا رہا ہو۔ انہیں ایک لمحے کے لیے دیکھنے کے لیے اوپر یا نیچے کے کنارے سے سوائپ کریں۔</string>
+    <string name="dejavu_settings_match_page_color">بارز کو صفحے کے رنگ سے ملائیں</string>
+    <string name="dejavu_settings_match_page_color_summary">بارز ویب سائٹ کے پس منظر کا رنگ اختیار کرتی ہیں۔ بند ہونے پر وہ ورک اسپیس کے رنگ برقرار رکھتی ہیں۔</string>
     <string name="dejavu_bookmarks_export">فائل میں برآمد کریں</string>
     <plurals name="dejavu_bookmarks_exported">
         <item quantity="one">%1$d بک مارک برآمد ہوا</item>
@@ -618,4 +620,12 @@
     <string name="dejavu_unlock_use_screen_lock">اسکرین لاک استعمال کریں</string>
     <string name="dejavu_private_hidden">نجی ٹیبز چھپے ہوئے ہیں</string>
     <string name="dejavu_private_show">دکھائیں</string>
+    <string name="dejavu_loading_colors">صفحہ لوڈ ہوتے وقت رنگ</string>
+    <string name="dejavu_loading_colors_rainbow">قوس قزح</string>
+    <string name="dejavu_loading_colors_workspace">ورک اسپیس کے رنگ</string>
+    <string name="dejavu_loading_colors_workspace_summary">ٹیب کی ورک اسپیس کے رنگ۔ نجی ٹیب اور بغیر رنگوں والی ورک اسپیسز قوس قزح دکھاتی ہیں۔</string>
+    <string name="dejavu_loading_colors_custom">حسبِ ضرورت رنگ</string>
+    <string name="dejavu_loading_colors_custom_summary">تین تک رنگ منتخب کریں۔ تبدیل کرنے کے لیے دوبارہ تھپتھپائیں۔</string>
+    <string name="dejavu_settings_swipe_to_close">بند کرنے کے لیے ٹیبز سوائپ کریں</string>
+    <string name="dejavu_settings_swipe_to_close_summary">ہوم اسکرین پر کسی ٹیب کو دائیں بائیں سوائپ کرنے سے وہ بند ہو جاتا ہے۔ ورک اسپیسز بدلنے کے لیے ٹیبز سے باہر سوائپ کریں یا ورک اسپیس بار استعمال کریں۔</string>
 </resources>

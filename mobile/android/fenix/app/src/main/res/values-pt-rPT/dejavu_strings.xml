@@ -432,6 +432,8 @@
     <string name="dejavu_bars_bottom_summary">Sem barra de ações. Deslize a barra de endereço para cima para abrir o menu Mais.</string>
     <string name="dejavu_settings_hide_system_bars">Ocultar as barras de estado e de navegação</string>
     <string name="dejavu_settings_hide_system_bars_summary">Enquanto uma página é apresentada. Deslize a partir do limite superior ou inferior para as ver por um momento.</string>
+    <string name="dejavu_settings_match_page_color">Combinar as barras com a cor da página</string>
+    <string name="dejavu_settings_match_page_color_summary">As barras assumem a cor de fundo do site. Desativado, mantêm as cores do espaço de trabalho.</string>
     <string name="dejavu_bookmarks_export">Exportar para ficheiro</string>
     <plurals name="dejavu_bookmarks_exported">
         <item quantity="one">%1$d marcador exportado</item>
@@ -626,4 +628,12 @@
     <string name="dejavu_unlock_use_screen_lock">Utilizar bloqueio de ecrã</string>
     <string name="dejavu_private_hidden">Os separadores privados estão ocultos</string>
     <string name="dejavu_private_show">Mostrar</string>
+    <string name="dejavu_loading_colors">Cores enquanto uma página carrega</string>
+    <string name="dejavu_loading_colors_rainbow">Arco-íris</string>
+    <string name="dejavu_loading_colors_workspace">Cores do espaço de trabalho</string>
+    <string name="dejavu_loading_colors_workspace_summary">As cores do espaço de trabalho do separador. Os separadores privados e os espaços de trabalho sem cores mostram o arco-íris.</string>
+    <string name="dejavu_loading_colors_custom">Cores personalizadas</string>
+    <string name="dejavu_loading_colors_custom_summary">Escolhe até três cores. Toca novamente para as alterar.</string>
+    <string name="dejavu_settings_swipe_to_close">Deslizar separadores para fechar</string>
+    <string name="dejavu_settings_swipe_to_close_summary">Na página inicial, deslizar um separador para o lado fecha-o. Para mudar de espaço de trabalho, desliza fora dos separadores ou usa a barra de espaços de trabalho.</string>
 </resources>

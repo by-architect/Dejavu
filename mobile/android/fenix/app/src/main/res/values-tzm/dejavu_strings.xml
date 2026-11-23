@@ -425,6 +425,8 @@
     <string name="dejavu_bars_bottom_summary">War afeggag n tigawin. Zuɣer afeggag n tansa ɣer sennig akken ad terẓmeḍ Umuɣ Ugar.</string>
     <string name="dejavu_settings_hide_system_bars">Ffer afeggag n waddad d win n yinig</string>
     <string name="dejavu_settings_hide_system_bars_summary">Mi ara d-tettwaskan tasna. Zuɣer seg yiri n ufella neɣ n wadda akken ad ten-twaliḍ cwiṭ.</string>
+    <string name="dejavu_settings_match_page_color">Mmal iferdisen d yini n usebter</string>
+    <string name="dejavu_settings_match_page_color_summary">Iferdisen ad ddun d yini n deffir n usmel web. Ma yettwasexsi, ad qqimen d yiniten n tallunt n umahil.</string>
     <string name="dejavu_bookmarks_export">Sifeḍ ɣer ufaylu</string>
     <plurals name="dejavu_bookmarks_exported">
         <item quantity="one">%1$d n tecraṭ tettwasifeḍ</item>
@@ -618,4 +620,12 @@
     <string name="dejavu_unlock_use_screen_lock">Seqdec asekkeṛ n ugdil</string>
     <string name="dejavu_private_hidden">Iseksal usligen ffren</string>
     <string name="dejavu_private_show">Sken-d</string>
+    <string name="dejavu_loading_colors">Initen mi d-ittwasali usebter</string>
+    <string name="dejavu_loading_colors_rainbow">Tislit n unẓar</string>
+    <string name="dejavu_loading_colors_workspace">Initen n umkan n umahil</string>
+    <string name="dejavu_loading_colors_workspace_summary">Initen n umkan n umahil n useksel. Iseksal uslig d imukan n umahil war initen ssknen tislit n unẓar.</string>
+    <string name="dejavu_loading_colors_custom">Initen udmawanen</string>
+    <string name="dejavu_loading_colors_custom_summary">Sti ar kraḍ n yini. Ssed tikkelt yaḍnin bac ad tn-tbeddled.</string>
+    <string name="dejavu_settings_swipe_to_close">Mdel iseksal s uzuɣer</string>
+    <string name="dejavu_settings_swipe_to_close_summary">G ugdil agejdan, azuɣer n useksel ɣer tama ad t-yemdel. Akken ad tbeddleḍ amkan n umahil, zuɣer beṛṛa n yiseksal neɣ seqdec afeggag n yimukan n umahil.</string>
 </resources>
