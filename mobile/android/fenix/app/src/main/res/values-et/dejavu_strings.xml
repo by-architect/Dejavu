@@ -644,4 +644,6 @@
     <string name="dejavu_sidebar_look_reset">Lähtesta vaikeseadetele</string>
     <string name="dejavu_sidebar_look_pin_buttons">Kinnitusnupud kaartidel</string>
     <string name="dejavu_sidebar_look_pin_buttons_summary">Kaarte saab endiselt kinnitada, lohistades need kinnitatud kaartide juurde</string>
+    <string name="dejavu_search_keyword">Märksõna</string>
+    <string name="dejavu_search_keyword_taken">\"%1$s\" on juba mõne teise märksõna kasutuses.</string>
 </resources>

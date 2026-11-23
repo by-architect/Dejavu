@@ -652,4 +652,6 @@
     <string name="dejavu_sidebar_look_reset">Repor predefinições</string>
     <string name="dejavu_sidebar_look_pin_buttons">Botões de fixar nos separadores</string>
     <string name="dejavu_sidebar_look_pin_buttons_summary">Os separadores ainda podem ser fixados arrastando-os para os separadores fixados</string>
+    <string name="dejavu_search_keyword">Palavra-chave</string>
+    <string name="dejavu_search_keyword_taken">\"%1$s\" já está a ser utilizada por outra palavra-chave.</string>
 </resources>

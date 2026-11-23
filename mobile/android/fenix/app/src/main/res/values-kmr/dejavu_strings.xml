@@ -644,4 +644,6 @@
     <string name="dejavu_sidebar_look_reset">Vegere rewşa bingehîn</string>
     <string name="dejavu_sidebar_look_pin_buttons">Bişkokên derzîkirinê li ser hilpekînan</string>
     <string name="dejavu_sidebar_look_pin_buttons_summary">Hilpekîn hê jî dikarin werin derzîkirin bi kişandina wan bo hilpekînên derzîkirî</string>
+    <string name="dejavu_search_keyword">Peyva sereke</string>
+    <string name="dejavu_search_keyword_taken">\"%1$s\" jixwe ji aliyê peyveke serekî ya din ve tê bikaranîn.</string>
 </resources>

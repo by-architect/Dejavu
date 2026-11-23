@@ -644,4 +644,6 @@
     <string name="dejavu_sidebar_look_reset">Reinitialisar al predefinition</string>
     <string name="dejavu_sidebar_look_pin_buttons">Buttones de fixar sur schedas</string>
     <string name="dejavu_sidebar_look_pin_buttons_summary">Le schedas pote ancora esser fixate trahente los verso le schedas fixate</string>
+    <string name="dejavu_search_keyword">Parola clave</string>
+    <string name="dejavu_search_keyword_taken">\"%1$s\" es ja usate per un altere parola clave.</string>
 </resources>

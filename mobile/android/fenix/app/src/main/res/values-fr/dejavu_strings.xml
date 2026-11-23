@@ -644,4 +644,6 @@
     <string name="dejavu_sidebar_look_reset">Rétablir les valeurs par défaut</string>
     <string name="dejavu_sidebar_look_pin_buttons">Boutons d’épinglage sur les onglets</string>
     <string name="dejavu_sidebar_look_pin_buttons_summary">Les onglets peuvent toujours être épinglés en les faisant glisser vers les onglets épinglés</string>
+    <string name="dejavu_search_keyword">Mot-clé</string>
+    <string name="dejavu_search_keyword_taken">« %1$s » est déjà utilisé par un autre mot-clé.</string>
 </resources>

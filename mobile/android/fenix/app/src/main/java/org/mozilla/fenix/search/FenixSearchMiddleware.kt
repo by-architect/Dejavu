@@ -378,9 +378,16 @@ class FenixSearchMiddleware(
                 parentSessionId: String?,
             ) {
                 val searchEngine = store.state.searchEngineSource.searchEngine
+                // Dejavu: tapping the typed "@ddg cats" suggestion resolves the keyword like submitting does, unless
+                // another engine was picked for this search.
+                val keyword = if (store.state.searchEngineSource is SearchEngineSource.Default) {
+                    useCases.fenixBrowserUseCases.resolveKeyword(searchTerms)
+                } else {
+                    null
+                }
 
                 openToBrowserAndLoad(
-                    url = searchTerms,
+                    url = keyword?.second ?: searchTerms,
                     createNewTab =
                         if (settings.enableHomepageAsNewTab) {
                             false
@@ -388,8 +395,8 @@ class FenixSearchMiddleware(
                             store.state.tabId == null || NewTabSearch.isFor(store.state.tabId)
                         },
                     usePrivateMode = browsingModeManager.mode.isPrivate,
-                    forceSearch = true,
-                    searchEngine = searchEngine,
+                    forceSearch = keyword == null || keyword.first != null,
+                    searchEngine = keyword?.first ?: searchEngine,
                 )
 
                 val searchAccessPoint =

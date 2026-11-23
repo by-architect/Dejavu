@@ -644,4 +644,6 @@
     <string name="dejavu_sidebar_look_reset">முன்னிருப்புக்கு மீட்டமை</string>
     <string name="dejavu_sidebar_look_pin_buttons">கீற்றுகளில் பொருத்து பொத்தான்கள்</string>
     <string name="dejavu_sidebar_look_pin_buttons_summary">பொருத்திய கீற்றுகளுக்கு இழுத்து இன்னும் கீற்றுகளைப் பொருத்தலாம்</string>
+    <string name="dejavu_search_keyword">முக்கிய சொல்</string>
+    <string name="dejavu_search_keyword_taken">\"%1$s\" ஏற்கனவே மற்றொரு முக்கிய சொல்லால் பயன்படுத்தப்படுகிறது.</string>
 </resources>

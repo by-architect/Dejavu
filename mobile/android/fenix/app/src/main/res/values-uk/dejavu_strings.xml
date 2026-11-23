@@ -660,4 +660,6 @@
     <string name="dejavu_sidebar_look_reset">Скинути до типових</string>
     <string name="dejavu_sidebar_look_pin_buttons">Кнопки закріплення на вкладках</string>
     <string name="dejavu_sidebar_look_pin_buttons_summary">Вкладки все ще можна закріпити, перетягнувши їх до закріплених</string>
+    <string name="dejavu_search_keyword">Ключове слово</string>
+    <string name="dejavu_search_keyword_taken">«%1$s» уже використовується іншим ключовим словом.</string>
 </resources>

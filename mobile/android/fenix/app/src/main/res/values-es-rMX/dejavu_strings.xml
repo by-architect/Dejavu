@@ -652,4 +652,6 @@
     <string name="dejavu_sidebar_look_reset">Restablecer valores predeterminados</string>
     <string name="dejavu_sidebar_look_pin_buttons">Botones de fijar en las pestañas</string>
     <string name="dejavu_sidebar_look_pin_buttons_summary">Las pestañas se pueden seguir fijando arrastrándolas a las pestañas fijadas</string>
+    <string name="dejavu_search_keyword">Palabra clave</string>
+    <string name="dejavu_search_keyword_taken">\"%1$s\" ya está en uso por otra palabra clave.</string>
 </resources>

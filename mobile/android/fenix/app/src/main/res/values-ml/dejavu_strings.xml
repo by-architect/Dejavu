@@ -644,4 +644,6 @@
     <string name="dejavu_sidebar_look_reset">സ്ഥിരമായതിലേക്ക് പുനഃസജ്ജമാക്കുക</string>
     <string name="dejavu_sidebar_look_pin_buttons">ടാബുകളിൽ പിൻ ബട്ടണുകൾ</string>
     <string name="dejavu_sidebar_look_pin_buttons_summary">പിൻ ചെയ്ത ടാബുകളിലേക്ക് വലിച്ചിട്ട് ഇപ്പോഴും ടാബുകൾ പിൻ ചെയ്യാം</string>
+    <string name="dejavu_search_keyword">കീവേഡ്</string>
+    <string name="dejavu_search_keyword_taken">\"%1$s\" ഇതിനകം മറ്റൊരു കീവേഡ് ഉപയോഗിക്കുന്നുണ്ട്.</string>
 </resources>

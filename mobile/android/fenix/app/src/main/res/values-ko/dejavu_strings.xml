@@ -636,4 +636,6 @@
     <string name="dejavu_sidebar_look_reset">기본값으로 재설정</string>
     <string name="dejavu_sidebar_look_pin_buttons">탭의 고정 버튼</string>
     <string name="dejavu_sidebar_look_pin_buttons_summary">탭을 고정된 탭 쪽으로 끌어서 계속 고정할 수 있습니다</string>
+    <string name="dejavu_search_keyword">키워드</string>
+    <string name="dejavu_search_keyword_taken">\"%1$s\"은(는) 이미 다른 키워드에서 사용 중입니다.</string>
 </resources>

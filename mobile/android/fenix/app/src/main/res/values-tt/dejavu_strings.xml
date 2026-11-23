@@ -644,4 +644,6 @@
     <string name="dejavu_sidebar_look_reset">Гадәттәгегә кире кайтару</string>
     <string name="dejavu_sidebar_look_pin_buttons">Табларда беркетү төймәләре</string>
     <string name="dejavu_sidebar_look_pin_buttons_summary">Табларны беркетелгән табларга тартып әле дә беркетергә була</string>
+    <string name="dejavu_search_keyword">Ачкыч сүз</string>
+    <string name="dejavu_search_keyword_taken">\"%1$s\" инде башка ачкыч сүз белән кулланыла.</string>
 </resources>

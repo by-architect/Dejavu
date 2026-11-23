@@ -644,4 +644,6 @@
     <string name="dejavu_sidebar_look_reset">Ripristina i valuri predefinuti</string>
     <string name="dejavu_sidebar_look_pin_buttons">Buttuna pi appizzari ê schedi</string>
     <string name="dejavu_sidebar_look_pin_buttons_summary">I schedi si ponnu ancora appizzari strascinànnuli ntê schedi appizzati</string>
+    <string name="dejavu_search_keyword">Palora chiavi</string>
+    <string name="dejavu_search_keyword_taken">\"%1$s\" è già usata di n\'àutra palora chiavi.</string>
 </resources>

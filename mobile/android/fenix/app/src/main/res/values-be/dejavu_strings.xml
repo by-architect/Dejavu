@@ -660,4 +660,6 @@
     <string name="dejavu_sidebar_look_reset">Скінуць да прадвызначаных</string>
     <string name="dejavu_sidebar_look_pin_buttons">Кнопкі замацавання на картках</string>
     <string name="dejavu_sidebar_look_pin_buttons_summary">Карткі ўсё яшчэ можна замацаваць, перацягнуўшы іх да замацаваных</string>
+    <string name="dejavu_search_keyword">Ключавое слова</string>
+    <string name="dejavu_search_keyword_taken">\"%1$s\" ужо выкарыстоўваецца іншым ключавым словам.</string>
 </resources>

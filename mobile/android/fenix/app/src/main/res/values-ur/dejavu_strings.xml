@@ -644,4 +644,6 @@
     <string name="dejavu_sidebar_look_reset">ڈیفالٹ پر ری سیٹ کریں</string>
     <string name="dejavu_sidebar_look_pin_buttons">ٹیبز پر پن بٹن</string>
     <string name="dejavu_sidebar_look_pin_buttons_summary">ٹیبز کو پن کردہ ٹیبز میں گھسیٹ کر اب بھی پن کیا جا سکتا ہے</string>
+    <string name="dejavu_search_keyword">کلیدی لفظ</string>
+    <string name="dejavu_search_keyword_taken">\"%1$s\" پہلے ہی کسی دوسرے کلیدی لفظ کے ذریعہ استعمال ہو رہا ہے۔</string>
 </resources>

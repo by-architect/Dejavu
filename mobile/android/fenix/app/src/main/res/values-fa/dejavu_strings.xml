@@ -644,4 +644,6 @@
     <string name="dejavu_sidebar_look_reset">بازنشانی به پیش‌فرض</string>
     <string name="dejavu_sidebar_look_pin_buttons">دکمه‌های سنجاق روی زبانه‌ها</string>
     <string name="dejavu_sidebar_look_pin_buttons_summary">زبانه‌ها را هنوز می‌توان با کشیدن به میان زبانه‌های سنجاق‌شده سنجاق کرد</string>
+    <string name="dejavu_search_keyword">کلیدواژه</string>
+    <string name="dejavu_search_keyword_taken">«%1$s» از قبل توسط کلیدواژه دیگری استفاده شده است.</string>
 </resources>

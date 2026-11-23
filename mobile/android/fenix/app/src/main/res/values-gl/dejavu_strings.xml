@@ -644,4 +644,6 @@
     <string name="dejavu_sidebar_look_reset">Restabelecer os valores predeterminados</string>
     <string name="dejavu_sidebar_look_pin_buttons">Botóns de fixar nas lapelas</string>
     <string name="dejavu_sidebar_look_pin_buttons_summary">As lapelas aínda se poden fixar arrastrándoas ás lapelas fixadas</string>
+    <string name="dejavu_search_keyword">Palabra chave</string>
+    <string name="dejavu_search_keyword_taken">\"%1$s\" xa o usa outra palabra chave.</string>
 </resources>

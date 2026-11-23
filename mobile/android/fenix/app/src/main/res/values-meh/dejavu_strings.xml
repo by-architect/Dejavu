@@ -644,4 +644,6 @@
     <string name="dejavu_sidebar_look_reset">Restablecer</string>
     <string name="dejavu_sidebar_look_pin_buttons">Botón ña chi\'in pestaña</string>
     <string name="dejavu_sidebar_look_pin_buttons_summary">Kuu chi\'in pestaña tá tava ña nu pestaña ña chi\'in</string>
+    <string name="dejavu_search_keyword">Tutu ku\'va</string>
+    <string name="dejavu_search_keyword_taken">\"%1$s\" ndasa ñuu ni\'ni tutu ku\'va ntii.</string>
 </resources>

@@ -644,4 +644,6 @@
     <string name="dejavu_sidebar_look_reset">Riprìstina is valores predefinidos</string>
     <string name="dejavu_sidebar_look_pin_buttons">Butones pro apicare in sas ischedas</string>
     <string name="dejavu_sidebar_look_pin_buttons_summary">Sas ischedas si podent ancora apicare tragende·las a sas ischedas apicadas</string>
+    <string name="dejavu_search_keyword">Faeddu crae</string>
+    <string name="dejavu_search_keyword_taken">\"%1$s\" ddu impreat giai un\'àtera faeddu crae.</string>
 </resources>

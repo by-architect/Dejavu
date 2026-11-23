@@ -644,4 +644,6 @@
     <string name="dejavu_sidebar_look_reset">Restaurar predeterminaus</string>
     <string name="dejavu_sidebar_look_pin_buttons">Botons de fixar en as pestanyas</string>
     <string name="dejavu_sidebar_look_pin_buttons_summary">As pestanyas se pueden fixar encara arrocegando-las t\'as pestanyas fixadas</string>
+    <string name="dejavu_search_keyword">Palabra clau</string>
+    <string name="dejavu_search_keyword_taken">\"%1$s\" ya la usa unatra palabra clau.</string>
 </resources>

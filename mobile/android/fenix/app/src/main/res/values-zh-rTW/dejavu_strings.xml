@@ -636,4 +636,6 @@
     <string name="dejavu_sidebar_look_reset">還原為預設值</string>
     <string name="dejavu_sidebar_look_pin_buttons">分頁上的釘選按鈕</string>
     <string name="dejavu_sidebar_look_pin_buttons_summary">仍可將分頁拖到已釘選的分頁中來釘選</string>
+    <string name="dejavu_search_keyword">關鍵字</string>
+    <string name="dejavu_search_keyword_taken">「%1$s」已被另一個關鍵字使用。</string>
 </resources>

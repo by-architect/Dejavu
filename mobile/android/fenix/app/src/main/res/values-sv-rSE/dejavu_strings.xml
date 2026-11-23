@@ -644,4 +644,6 @@
     <string name="dejavu_sidebar_look_reset">Återställ till standard</string>
     <string name="dejavu_sidebar_look_pin_buttons">Fäst-knappar på flikar</string>
     <string name="dejavu_sidebar_look_pin_buttons_summary">Flikar kan fortfarande fästas genom att dra dem till de fästa flikarna</string>
+    <string name="dejavu_search_keyword">Nyckelord</string>
+    <string name="dejavu_search_keyword_taken">\"%1$s\" används redan av ett annat nyckelord.</string>
 </resources>

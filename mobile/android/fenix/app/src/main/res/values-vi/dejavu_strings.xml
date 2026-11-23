@@ -636,4 +636,6 @@
     <string name="dejavu_sidebar_look_reset">Đặt lại về mặc định</string>
     <string name="dejavu_sidebar_look_pin_buttons">Nút ghim trên thẻ</string>
     <string name="dejavu_sidebar_look_pin_buttons_summary">Vẫn có thể ghim thẻ bằng cách kéo chúng vào các thẻ đã ghim</string>
+    <string name="dejavu_search_keyword">Từ khóa</string>
+    <string name="dejavu_search_keyword_taken">\"%1$s\" đã được dùng bởi một từ khóa khác.</string>
 </resources>

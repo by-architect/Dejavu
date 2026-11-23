@@ -660,4 +660,6 @@
     <string name="dejavu_sidebar_look_reset">Na standard wróćo stajić</string>
     <string name="dejavu_sidebar_look_pin_buttons">Tłóčatka připjenjenja na rajtarkach</string>
     <string name="dejavu_sidebar_look_pin_buttons_summary">Rajtarki dadźa so dale připjeć, hdyž so k připjatym rajtarkam ćahnu</string>
+    <string name="dejavu_search_keyword">Klučowe słowo</string>
+    <string name="dejavu_search_keyword_taken">\"%1$s\" so hižo wot druheho klučoweho słowa wužiwa.</string>
 </resources>

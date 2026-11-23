@@ -660,4 +660,6 @@
     <string name="dejavu_sidebar_look_reset">Zresetuj do wychodnych</string>
     <string name="dejavu_sidebar_look_pin_buttons">Knefle przipinanio na kartach</string>
     <string name="dejavu_sidebar_look_pin_buttons_summary">Karty idzie dalij przipiōńć, ciōngnōnc je ku przipiyntym kartōm</string>
+    <string name="dejavu_search_keyword">Słowo klucz</string>
+    <string name="dejavu_search_keyword_taken">„%1$s” je już używane bez inksze słowo klucz.</string>
 </resources>

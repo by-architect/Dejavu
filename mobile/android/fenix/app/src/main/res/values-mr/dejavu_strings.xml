@@ -644,4 +644,6 @@
     <string name="dejavu_sidebar_look_reset">डीफॉल्टवर रीसेट करा</string>
     <string name="dejavu_sidebar_look_pin_buttons">टॅबवरील पिन बटणे</string>
     <string name="dejavu_sidebar_look_pin_buttons_summary">टॅब पिन केलेल्या टॅबमध्ये ओढून अजूनही पिन करता येतात</string>
+    <string name="dejavu_search_keyword">कीवर्ड</string>
+    <string name="dejavu_search_keyword_taken">\"%1$s\" आधीच दुसऱ्या कीवर्डने वापरला आहे.</string>
 </resources>

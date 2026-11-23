@@ -644,4 +644,6 @@
     <string name="dejavu_sidebar_look_reset">Varsayılana sıfırla</string>
     <string name="dejavu_sidebar_look_pin_buttons">Sekmelerde sabitleme düğmeleri</string>
     <string name="dejavu_sidebar_look_pin_buttons_summary">Sekmeler sabitlenmiş sekmelere sürüklenerek yine de sabitlenebilir</string>
+    <string name="dejavu_search_keyword">Anahtar kelime</string>
+    <string name="dejavu_search_keyword_taken">\"%1$s\" zaten başka bir anahtar kelime tarafından kullanılıyor.</string>
 </resources>

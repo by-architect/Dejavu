@@ -652,4 +652,6 @@
     <string name="dejavu_sidebar_look_reset">Врати на подразумевано</string>
     <string name="dejavu_sidebar_look_pin_buttons">Дугмад за качење на језичцима</string>
     <string name="dejavu_sidebar_look_pin_buttons_summary">Језичци се и даље могу закачити превлачењем међу закачене језичке</string>
+    <string name="dejavu_search_keyword">Кључна реч</string>
+    <string name="dejavu_search_keyword_taken">„%1$s“ већ користи друга кључна реч.</string>
 </resources>

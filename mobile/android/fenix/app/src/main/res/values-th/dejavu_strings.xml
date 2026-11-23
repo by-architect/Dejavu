@@ -636,4 +636,6 @@
     <string name="dejavu_sidebar_look_reset">รีเซ็ตเป็นค่าเริ่มต้น</string>
     <string name="dejavu_sidebar_look_pin_buttons">ปุ่มปักหมุดบนแท็บ</string>
     <string name="dejavu_sidebar_look_pin_buttons_summary">ยังปักหมุดแท็บได้โดยลากไปไว้ที่แท็บที่ปักหมุด</string>
+    <string name="dejavu_search_keyword">คำหลัก</string>
+    <string name="dejavu_search_keyword_taken">\"%1$s\" ถูกใช้โดยคำหลักอื่นอยู่แล้ว</string>
 </resources>

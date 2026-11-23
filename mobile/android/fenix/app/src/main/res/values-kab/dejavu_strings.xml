@@ -644,4 +644,6 @@
     <string name="dejavu_sidebar_look_reset">Err ɣer wamek yella</string>
     <string name="dejavu_sidebar_look_pin_buttons">Tiqeffalin n usenteḍ ɣef yiccaren</string>
     <string name="dejavu_sidebar_look_pin_buttons_summary">Iccaren zemren mazal ad ttwasenṭḍen s uzuɣer-nsen ɣer yiccaren yettwasenṭḍen</string>
+    <string name="dejavu_search_keyword">Awal n tsura</string>
+    <string name="dejavu_search_keyword_taken">\"%1$s\" yettwaseqdac yakan s wawal-nniḍen n tsura.</string>
 </resources>

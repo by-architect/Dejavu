@@ -644,4 +644,6 @@
     <string name="dejavu_sidebar_look_reset">Връщане по подразбиране</string>
     <string name="dejavu_sidebar_look_pin_buttons">Бутони за закачане на разделите</string>
     <string name="dejavu_sidebar_look_pin_buttons_summary">Разделите все още могат да се закачат, като се плъзнат при закачените</string>
+    <string name="dejavu_search_keyword">Ключова дума</string>
+    <string name="dejavu_search_keyword_taken">\"%1$s\" вече се използва от друга ключова дума.</string>
 </resources>

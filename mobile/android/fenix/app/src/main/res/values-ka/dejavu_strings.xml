@@ -644,4 +644,6 @@
     <string name="dejavu_sidebar_look_reset">ნაგულისხმევზე დაბრუნება</string>
     <string name="dejavu_sidebar_look_pin_buttons">ჩამაგრების ღილაკები ჩანართებზე</string>
     <string name="dejavu_sidebar_look_pin_buttons_summary">ჩანართების ჩამაგრება კვლავ შეიძლება ჩამაგრებულ ჩანართებთან გადატანით</string>
+    <string name="dejavu_search_keyword">საკვანძო სიტყვა</string>
+    <string name="dejavu_search_keyword_taken">„%1$s“ უკვე გამოიყენება სხვა საკვანძო სიტყვის მიერ.</string>
 </resources>

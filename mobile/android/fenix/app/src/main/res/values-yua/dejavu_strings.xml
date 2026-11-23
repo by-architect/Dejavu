@@ -644,4 +644,6 @@
     <string name="dejavu_sidebar_look_reset">Restablecer</string>
     <string name="dejavu_sidebar_look_pin_buttons">U botonil ch\'ak ti\' pestaña</string>
     <string name="dejavu_sidebar_look_pin_buttons_summary">Je\'el u páajtal u ch\'a\'ak pestaña ken a jaal ti\' u pestañail ch\'a\'akbil</string>
+    <string name="dejavu_search_keyword">Ts\'íibil tuukul</string>
+    <string name="dejavu_search_keyword_taken">\"%1$s\" ts\'o\'ok u meyajtal tumen uláak\' ts\'íibil tuukul.</string>
 </resources>

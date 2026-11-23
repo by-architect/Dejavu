@@ -676,4 +676,6 @@
     <string name="dejavu_sidebar_look_reset">إعادة الضبط إلى الافتراضي</string>
     <string name="dejavu_sidebar_look_pin_buttons">أزرار التثبيت على الألسنة</string>
     <string name="dejavu_sidebar_look_pin_buttons_summary">لا يزال بالإمكان تثبيت الألسنة بسحبها إلى الألسنة المثبتة</string>
+    <string name="dejavu_search_keyword">كلمة مفتاحية</string>
+    <string name="dejavu_search_keyword_taken">\"%1$s\" مستخدمة بالفعل في كلمة مفتاحية أخرى.</string>
 </resources>

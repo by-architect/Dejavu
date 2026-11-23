@@ -644,4 +644,6 @@
     <string name="dejavu_sidebar_look_reset">Mbojevy ijypyguápe</string>
     <string name="dejavu_sidebar_look_pin_buttons">Votõ mboja\'ápe tendayképe</string>
     <string name="dejavu_sidebar_look_pin_buttons_summary">Tendayke ikatu gueteri oñemboja ojerekóvo tendayke mbojapyrépe</string>
+    <string name="dejavu_search_keyword">Ñe\'ẽ ñemigua</string>
+    <string name="dejavu_search_keyword_taken">\"%1$s\" oiporu ágã ambue ñe\'ẽ ñemigua.</string>
 </resources>

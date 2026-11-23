@@ -82,6 +82,8 @@ internal class BookmarksMiddleware(
     private val importEvents: () -> Flow<FenixImporterEvent>,
     private val lifecycleScope: CoroutineScope,
     private val chooseExportFile: () -> Unit = {},
+    // Dejavu: after a delete, so the search keywords of deleted bookmarks go too.
+    private val onBookmarksDeleted: () -> Unit = {},
 ) : Middleware<BookmarksState, BookmarksAction> {
 
     private var searchJob: Job? = null
@@ -355,6 +357,7 @@ internal class BookmarksMiddleware(
                     preReductionState.bookmarksDeletionDialogState.guidsToDelete.forEach {
                         bookmarksStorage.deleteNode(it)
                     }
+                    onBookmarksDeleted()
                 }
 
                 if (preReductionState.bookmarksEditFolderState != null) {
@@ -784,6 +787,7 @@ internal class BookmarksMiddleware(
     private fun handleDeleteBookmark(bookmark: BookmarkItem.Bookmark) {
         lifecycleScope.launch {
             bookmarksStorage.deleteNode(bookmark.guid)
+            onBookmarksDeleted()
         }
     }
 
@@ -815,6 +819,7 @@ internal class BookmarksMiddleware(
         lifecycleScope.launch {
             guidToDelete?.let { guid ->
                 bookmarksStorage.deleteNode(guid)
+                onBookmarksDeleted()
             }
 
             if (!getNavController().popBackStack()) {

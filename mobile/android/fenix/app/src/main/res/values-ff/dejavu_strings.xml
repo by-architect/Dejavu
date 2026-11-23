@@ -644,4 +644,6 @@
     <string name="dejavu_sidebar_look_reset">Réinitialiser</string>
     <string name="dejavu_sidebar_look_pin_buttons">Butoŋe tummbingol e tabbe</string>
     <string name="dejavu_sidebar_look_pin_buttons_summary">Tabbe ina mbaawi tummbeede haa jooni so ɗe ndaasaama to tabbe tummbaaɗe</string>
+    <string name="dejavu_search_keyword">Kuutniral</string>
+    <string name="dejavu_search_keyword_taken">\"%1$s\" huutorama e kuutniral goɗɗo.</string>
 </resources>

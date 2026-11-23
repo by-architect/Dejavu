@@ -676,4 +676,6 @@
     <string name="dejavu_sidebar_look_reset">Daswul dhe\'n standard</string>
     <string name="dejavu_sidebar_look_pin_buttons">Botonyow pinna war dabow</string>
     <string name="dejavu_sidebar_look_pin_buttons_summary">Hwath y hyllir pinna tabow orth aga tenna dhe\'n tabow pinnys</string>
+    <string name="dejavu_search_keyword">Ger alhwedh</string>
+    <string name="dejavu_search_keyword_taken">\"%1$s\" yw usys seulabrys gans ger alhwedh aral.</string>
 </resources>

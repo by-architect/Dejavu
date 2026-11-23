@@ -668,4 +668,6 @@
     <string name="dejavu_sidebar_look_reset">Athshocraigh go réamhshocrú</string>
     <string name="dejavu_sidebar_look_pin_buttons">Cnaipí pionnála ar chluaisíní</string>
     <string name="dejavu_sidebar_look_pin_buttons_summary">Is féidir cluaisíní a phionnáil fós trína dtarraingt chuig na cluaisíní pionnáilte</string>
+    <string name="dejavu_search_keyword">Eochairfhocal</string>
+    <string name="dejavu_search_keyword_taken">Tá \"%1$s\" in úsáid cheana ag eochairfhocal eile.</string>
 </resources>

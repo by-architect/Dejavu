@@ -644,4 +644,6 @@
     <string name="dejavu_sidebar_look_reset">Адефолт ахь аиқәыршәара</string>
     <string name="dejavu_sidebar_look_pin_buttons">Анҭыраќәа рҿы ашьҭыхра акнопкақәа</string>
     <string name="dejavu_sidebar_look_pin_buttons_summary">Анҭыраќәа ашьҭыхра ауеит ишьҭыху анҭыраќәа рахь рхыҵхырҭала</string>
+    <string name="dejavu_search_keyword">Ключевое слово</string>
+    <string name="dejavu_search_keyword_taken">\"%1$s\" ауп атрибут ахархәара.</string>
 </resources>

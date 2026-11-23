@@ -644,4 +644,6 @@
     <string name="dejavu_sidebar_look_reset">Վերականգնել կանխադրվածը</string>
     <string name="dejavu_sidebar_look_pin_buttons">Ամրացման կոճակներ ներդիրներին</string>
     <string name="dejavu_sidebar_look_pin_buttons_summary">Ներդիրները դեռ կարելի է ամրացնել՝ քաշելով ամրացված ներդիրների մեջ</string>
+    <string name="dejavu_search_keyword">Բանալի բառ</string>
+    <string name="dejavu_search_keyword_taken">«%1$s»-ը արդեն օգտագործվում է մեկ այլ բանալի բառի կողմից։</string>
 </resources>

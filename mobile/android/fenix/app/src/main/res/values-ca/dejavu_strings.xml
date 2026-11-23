@@ -652,4 +652,6 @@
     <string name="dejavu_sidebar_look_reset">Restableix als valors per defecte</string>
     <string name="dejavu_sidebar_look_pin_buttons">Botons de fixar a les pestanyes</string>
     <string name="dejavu_sidebar_look_pin_buttons_summary">Les pestanyes encara es poden fixar arrossegant-les a les pestanyes fixades</string>
+    <string name="dejavu_search_keyword">Paraula clau</string>
+    <string name="dejavu_search_keyword_taken">\"%1$s\" ja l\'utilitza una altra paraula clau.</string>
 </resources>

@@ -677,4 +677,6 @@
     <string name="dejavu_sidebar_look_reset">મૂળભૂત પર રીસેટ કરો</string>
     <string name="dejavu_sidebar_look_pin_buttons">ટૅબ પર પિન બટન</string>
     <string name="dejavu_sidebar_look_pin_buttons_summary">ટૅબને પિન કરેલાં ટૅબમાં ખેંચીને હજી પણ પિન કરી શકાય છે</string>
+    <string name="dejavu_search_keyword">કીવર્ડ</string>
+    <string name="dejavu_search_keyword_taken">\"%1$s\" પહેલેથી જ બીજા કીવર્ડ દ્વારા વપરાય છે.</string>
 </resources>

@@ -676,4 +676,6 @@
     <string name="dejavu_sidebar_look_reset">Ailosod i’r diofyn</string>
     <string name="dejavu_sidebar_look_pin_buttons">Botymau pinio ar dabiau</string>
     <string name="dejavu_sidebar_look_pin_buttons_summary">Mae modd pinio tabiau o hyd drwy eu llusgo i\'r tabiau wedi\'u pinio</string>
+    <string name="dejavu_search_keyword">Allweddair</string>
+    <string name="dejavu_search_keyword_taken">Mae \"%1$s\" eisoes yn cael ei ddefnyddio gan allweddair arall.</string>
 </resources>

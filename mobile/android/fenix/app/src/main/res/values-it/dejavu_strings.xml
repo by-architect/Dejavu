@@ -644,4 +644,6 @@
     <string name="dejavu_sidebar_look_reset">Ripristina predefiniti</string>
     <string name="dejavu_sidebar_look_pin_buttons">Pulsanti per appuntare sulle schede</string>
     <string name="dejavu_sidebar_look_pin_buttons_summary">Le schede si possono ancora appuntare trascinandole tra le schede appuntate</string>
+    <string name="dejavu_search_keyword">Parola chiave</string>
+    <string name="dejavu_search_keyword_taken">\"%1$s\" è già utilizzata da un\'altra parola chiave.</string>
 </resources>

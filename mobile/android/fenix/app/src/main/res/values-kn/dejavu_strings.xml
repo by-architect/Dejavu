@@ -644,4 +644,6 @@
     <string name="dejavu_sidebar_look_reset">ಡೀಫಾಲ್ಟ್‌ಗೆ ಮರುಹೊಂದಿಸು</string>
     <string name="dejavu_sidebar_look_pin_buttons">ಟ್ಯಾಬ್‌ಗಳಲ್ಲಿ ಪಿನ್ ಬಟನ್‌ಗಳು</string>
     <string name="dejavu_sidebar_look_pin_buttons_summary">ಟ್ಯಾಬ್‌ಗಳನ್ನು ಪಿನ್ ಮಾಡಿದ ಟ್ಯಾಬ್‌ಗಳಿಗೆ ಎಳೆದು ಈಗಲೂ ಪಿನ್ ಮಾಡಬಹುದು</string>
+    <string name="dejavu_search_keyword">ಕೀವರ್ಡ್</string>
+    <string name="dejavu_search_keyword_taken">\"%1$s\" ಅನ್ನು ಈಗಾಗಲೇ ಇನ್ನೊಂದು ಕೀವರ್ಡ್ ಬಳಸುತ್ತಿದೆ.</string>
 </resources>

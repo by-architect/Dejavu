@@ -6,6 +6,9 @@
     <string name="pref_key_dejavu_tab_actions" translatable="false">pref_key_dejavu_tab_actions</string>
     <string name="pref_key_dejavu_containers" translatable="false">pref_key_dejavu_containers</string>
     <string name="pref_key_dejavu_external_links" translatable="false">pref_key_dejavu_external_links</string>
+    <string name="pref_key_dejavu_engine_keywords" translatable="false">pref_key_dejavu_engine_keywords</string>
+    <string name="pref_key_dejavu_bookmark_keywords" translatable="false">pref_key_dejavu_bookmark_keywords</string>
+    <string name="pref_key_dejavu_bookmark_keyword_urls" translatable="false">pref_key_dejavu_bookmark_keyword_urls</string>
     <string name="pref_key_dejavu_tab_sleep" translatable="false">pref_key_dejavu_tab_sleep</string>
     <string name="pref_key_dejavu_safe_browsing" translatable="false">pref_key_dejavu_safe_browsing</string>
     <string name="pref_key_dejavu_jit" translatable="false">pref_key_dejavu_jit</string>
@@ -1116,4 +1119,8 @@
     <string name="dejavu_sidebar_resize">Resize sidebar. Double tap to reset its width</string>
     <!-- Content description of the x on the engine picked with @name in a search field. %1$s is the engine name. -->
     <string name="dejavu_engine_chip_remove">Stop searching with %1$s</string>
+    <!-- Label of the field and menu item where a short word is set that searches a search engine or opens a bookmark when typed before a search. -->
+    <string name="dejavu_search_keyword">Keyword</string>
+    <!-- Shown when a keyword is already used. %1$s is the keyword. -->
+    <string name="dejavu_search_keyword_taken">\"%1$s\" is already used by another keyword.</string>
 </resources>

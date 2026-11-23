@@ -636,4 +636,6 @@
     <string name="dejavu_sidebar_look_reset">o open sin e nasin nanpa wan</string>
     <string name="dejavu_sidebar_look_pin_buttons">nena awen lon poki</string>
     <string name="dejavu_sidebar_look_pin_buttons_summary">sina ken awen e poki kepeken tawa ona lon poki awen</string>
+    <string name="dejavu_search_keyword">nimi alasa</string>
+    <string name="dejavu_search_keyword_taken">nimi \"%1$s\" li kepeken nimi alasa ante.</string>
 </resources>

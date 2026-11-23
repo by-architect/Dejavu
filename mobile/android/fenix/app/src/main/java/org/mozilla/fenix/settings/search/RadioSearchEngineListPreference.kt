@@ -11,8 +11,11 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.CompoundButton
+import android.widget.EditText
 import android.widget.LinearLayout
 import android.widget.RadioGroup
+import android.widget.Toast
+import androidx.appcompat.app.AlertDialog
 import androidx.core.graphics.drawable.toDrawable
 import androidx.core.view.isVisible
 import androidx.navigation.findNavController
@@ -32,6 +35,10 @@ import mozilla.components.support.ktx.android.view.toScope
 import org.mozilla.fenix.GleanMetrics.Events
 import org.mozilla.fenix.R
 import org.mozilla.fenix.databinding.SearchEngineRadioButtonBinding
+import org.mozilla.fenix.dejavu.keywordFor
+import org.mozilla.fenix.dejavu.keywordOwner
+import org.mozilla.fenix.dejavu.withDefaultEngineKeywords
+import org.mozilla.fenix.dejavu.withEngineKeyword
 import org.mozilla.fenix.ext.components
 import org.mozilla.fenix.ext.telemetryName
 
@@ -162,7 +169,7 @@ constructor(
         binding.radioButton.isChecked = isSelected
         binding.radioButton.setOnCheckedChangeListener(this)
         binding.engineText.text = engine.name
-        binding.overflowMenu.isVisible = allowDeletion || isCustomSearchEngine
+        binding.overflowMenu.isVisible = true
         binding.overflowMenu.setOnClickListener {
             SearchEngineMenu(
                     context = context,
@@ -171,6 +178,7 @@ constructor(
                     onItemTapped = {
                         when (it) {
                             is SearchEngineMenu.Item.Edit -> editCustomSearchEngine(wrapper, engine)
+                            is SearchEngineMenu.Item.Keyword -> editKeyword(engine)
                             is SearchEngineMenu.Item.Delete ->
                                 deleteSearchEngine(
                                     context,
@@ -240,6 +248,28 @@ constructor(
         )
     }
 
+    private fun editKeyword(engine: SearchEngine) {
+        val settings = context.components.settings
+        val engineIds = context.components.core.store.state.search.searchEngines.map { it.id }
+        val engineKeywords = settings.engineKeywords.withDefaultEngineKeywords(engineIds)
+        val shown = engineKeywords.keywordFor(engine.id)
+        val input = EditText(context).apply { setText(shown) }
+        AlertDialog.Builder(context)
+            .setTitle(R.string.dejavu_search_keyword)
+            .setView(input)
+            .setPositiveButton(android.R.string.ok) { _, _ ->
+                val keyword = input.text.toString().trim().lowercase()
+                val owner = keywordOwner(keyword, engineKeywords, settings.bookmarkKeywords)
+                if (owner != null && owner != engine.id) {
+                    showKeywordTaken(context, keyword)
+                } else {
+                    settings.engineKeywords = settings.engineKeywords.withEngineKeyword(keyword, engine.id, engineIds)
+                }
+            }
+            .setNegativeButton(android.R.string.cancel, null)
+            .show()
+    }
+
     private fun editCustomSearchEngine(view: View, engine: SearchEngine) {
         val directions =
             DefaultSearchEngineFragmentDirections.actionDefaultEngineFragmentToSaveSearchEngineFragment(engine.id)
@@ -273,9 +303,15 @@ constructor(
         }
 
         context.components.useCases.searchUseCases.removeSearchEngine(engine)
+        // Dejavu: the keyword goes with the engine, so it is free again.
+        val settings = context.components.settings
+        settings.engineKeywords = settings.engineKeywords.filterValues { it != engine.id }
     }
 
     companion object {
         private const val USE_DEFAULT_TAG = "use_default_search_engine"
     }
 }
+
+internal fun showKeywordTaken(context: Context, keyword: String) =
+    Toast.makeText(context, context.getString(R.string.dejavu_search_keyword_taken, keyword), Toast.LENGTH_LONG).show()

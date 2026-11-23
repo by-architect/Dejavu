@@ -677,4 +677,6 @@
     <string name="dejavu_sidebar_look_reset">ডিফল্টে রিসেট করুন</string>
     <string name="dejavu_sidebar_look_pin_buttons">ট্যাবে পিন বোতাম</string>
     <string name="dejavu_sidebar_look_pin_buttons_summary">ট্যাবগুলো পিন করা ট্যাবে টেনে এনে এখনও পিন করা যায়</string>
+    <string name="dejavu_search_keyword">কীওয়ার্ড</string>
+    <string name="dejavu_search_keyword_taken">\"%1$s\" ইতিমধ্যে অন্য একটি কীওয়ার্ডে ব্যবহৃত হচ্ছে।</string>
 </resources>

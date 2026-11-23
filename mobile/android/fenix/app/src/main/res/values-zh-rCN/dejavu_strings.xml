@@ -636,4 +636,6 @@
     <string name="dejavu_sidebar_look_reset">恢复默认</string>
     <string name="dejavu_sidebar_look_pin_buttons">标签页上的固定按钮</string>
     <string name="dejavu_sidebar_look_pin_buttons_summary">仍可将标签页拖到已固定的标签页中来固定它</string>
+    <string name="dejavu_search_keyword">关键词</string>
+    <string name="dejavu_search_keyword_taken">“%1$s”已被另一个关键词使用。</string>
 </resources>

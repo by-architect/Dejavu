@@ -644,4 +644,6 @@
     <string name="dejavu_sidebar_look_reset">Alapértelmezés visszaállítása</string>
     <string name="dejavu_sidebar_look_pin_buttons">Rögzítés gombok a lapokon</string>
     <string name="dejavu_sidebar_look_pin_buttons_summary">A lapok továbbra is rögzíthetők, ha a rögzített lapok közé húzza őket</string>
+    <string name="dejavu_search_keyword">Kulcsszó</string>
+    <string name="dejavu_search_keyword_taken">A(z) \"%1$s\" már használatban van egy másik kulcsszónál.</string>
 </resources>

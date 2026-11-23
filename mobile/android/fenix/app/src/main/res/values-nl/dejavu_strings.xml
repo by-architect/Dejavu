@@ -644,4 +644,6 @@
     <string name="dejavu_sidebar_look_reset">Terugzetten naar standaard</string>
     <string name="dejavu_sidebar_look_pin_buttons">Vastmaakknoppen op tabbladen</string>
     <string name="dejavu_sidebar_look_pin_buttons_summary">Tabbladen kunnen nog steeds worden vastgemaakt door ze naar de vastgemaakte tabbladen te slepen</string>
+    <string name="dejavu_search_keyword">Trefwoord</string>
+    <string name="dejavu_search_keyword_taken">\"%1$s\" wordt al door een ander trefwoord gebruikt.</string>
 </resources>

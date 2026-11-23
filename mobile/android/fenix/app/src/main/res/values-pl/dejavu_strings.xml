@@ -660,4 +660,6 @@
     <string name="dejavu_sidebar_look_reset">Przywróć domyślne</string>
     <string name="dejavu_sidebar_look_pin_buttons">Przyciski przypinania na kartach</string>
     <string name="dejavu_sidebar_look_pin_buttons_summary">Karty nadal można przypiąć, przeciągając je do przypiętych kart</string>
+    <string name="dejavu_search_keyword">Słowo kluczowe</string>
+    <string name="dejavu_search_keyword_taken">„%1$s” jest już używane przez inne słowo kluczowe.</string>
 </resources>

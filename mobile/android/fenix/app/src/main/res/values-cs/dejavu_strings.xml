@@ -660,4 +660,6 @@
     <string name="dejavu_sidebar_look_reset">Obnovit výchozí</string>
     <string name="dejavu_sidebar_look_pin_buttons">Tlačítka připnutí na panelech</string>
     <string name="dejavu_sidebar_look_pin_buttons_summary">Panely jde dál připnout přetažením mezi připnuté panely</string>
+    <string name="dejavu_search_keyword">Klíčové slovo</string>
+    <string name="dejavu_search_keyword_taken">\"%1$s\" už používá jiné klíčové slovo.</string>
 </resources>

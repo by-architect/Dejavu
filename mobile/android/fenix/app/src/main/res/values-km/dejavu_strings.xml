@@ -636,4 +636,6 @@
     <string name="dejavu_sidebar_look_reset">កំណត់ត្រឡប់ទៅលំនាំដើម</string>
     <string name="dejavu_sidebar_look_pin_buttons">ប៊ូតុងខ្ទាស់នៅលើផ្ទាំង</string>
     <string name="dejavu_sidebar_look_pin_buttons_summary">នៅតែអាចខ្ទាស់ផ្ទាំងបាន ដោយអូសវាទៅផ្ទាំងដែលបានខ្ទាស់</string>
+    <string name="dejavu_search_keyword">ពាក្យគន្លឹះ</string>
+    <string name="dejavu_search_keyword_taken">\"%1$s\" ត្រូវបានប្រើរួចហើយដោយពាក្យគន្លឹះផ្សេង។</string>
 </resources>

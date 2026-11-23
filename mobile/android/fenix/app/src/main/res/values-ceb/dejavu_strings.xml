@@ -644,4 +644,6 @@
     <string name="dejavu_sidebar_look_reset">i-Reset sa default</string>
     <string name="dejavu_sidebar_look_pin_buttons">Mga buton sa pag-pin sa mga tab</string>
     <string name="dejavu_sidebar_look_pin_buttons_summary">Ma-pin gihapon ang mga tab pinaagi sa pagguyod niini ngadto sa mga na-pin nga tab</string>
+    <string name="dejavu_search_keyword">Keyword</string>
+    <string name="dejavu_search_keyword_taken">Gigamit na sa laing keyword ang \"%1$s\".</string>
 </resources>

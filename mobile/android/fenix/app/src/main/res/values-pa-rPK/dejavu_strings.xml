@@ -644,4 +644,6 @@
     <string name="dejavu_sidebar_look_reset">ڈیفالٹ تے ری سیٹ کرو</string>
     <string name="dejavu_sidebar_look_pin_buttons">ٹیباں اُتے پِن بٹن</string>
     <string name="dejavu_sidebar_look_pin_buttons_summary">ٹیباں نوں پِن کیتیاں ٹیباں وچ کھچ کے ہالے وی پِن کیتا جا سکدا اے</string>
+    <string name="dejavu_search_keyword">کیورڈ</string>
+    <string name="dejavu_search_keyword_taken">\"%1$s\" پہلاں توں ای کسے ہور کیورڈ ولوں ورتیا جا رہیا اے۔</string>
 </resources>

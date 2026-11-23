@@ -644,4 +644,6 @@
     <string name="dejavu_sidebar_look_reset">اصلي حالت ته راستنېدل</string>
     <string name="dejavu_sidebar_look_pin_buttons">پر ټبونو د ځړولو تڼۍ</string>
     <string name="dejavu_sidebar_look_pin_buttons_summary">ټبونه لا هم د ځړول شويو ټبونو ته په کشولو ځړول کېدای شي</string>
+    <string name="dejavu_search_keyword">کلیدي کلمه</string>
+    <string name="dejavu_search_keyword_taken">\"%1$s\" مخکې له مخکې د بل کلیدي کلمې لخوا کارول کیږي.</string>
 </resources>

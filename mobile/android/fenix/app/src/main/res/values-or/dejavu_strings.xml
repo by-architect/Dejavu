@@ -644,4 +644,6 @@
     <string name="dejavu_sidebar_look_reset">ଡିଫଲ୍ଟକୁ ରିସେଟ୍ କରନ୍ତୁ</string>
     <string name="dejavu_sidebar_look_pin_buttons">ଟ୍ୟାବ୍‌ରେ ପିନ୍ ବଟନ୍</string>
     <string name="dejavu_sidebar_look_pin_buttons_summary">ଟ୍ୟାବ୍‌କୁ ପିନ୍ ହୋଇଥିବା ଟ୍ୟାବ୍‌କୁ ଟାଣି ଏବେ ବି ପିନ୍ କରାଯାଇପାରିବ</string>
+    <string name="dejavu_search_keyword">କୀୱାର୍ଡ</string>
+    <string name="dejavu_search_keyword_taken">\"%1$s\" ପୂର୍ବରୁ ଅନ୍ୟ ଏକ କୀୱାର୍ଡ ଦ୍ୱାରା ବ୍ୟବହୃତ ହେଉଛି।</string>
 </resources>

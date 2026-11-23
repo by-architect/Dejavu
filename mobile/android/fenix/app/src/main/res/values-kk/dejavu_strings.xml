@@ -644,4 +644,6 @@
     <string name="dejavu_sidebar_look_reset">Әдепкіге қалпына келтіру</string>
     <string name="dejavu_sidebar_look_pin_buttons">Беттердегі бекіту батырмалары</string>
     <string name="dejavu_sidebar_look_pin_buttons_summary">Беттерді бекітілген беттерге сүйреп әлі де бекітуге болады</string>
+    <string name="dejavu_search_keyword">Кілт сөз</string>
+    <string name="dejavu_search_keyword_taken">\"%1$s\" басқа кілт сөзбен қолданылып жатыр.</string>
 </resources>

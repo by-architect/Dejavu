@@ -644,4 +644,6 @@
     <string name="dejavu_sidebar_look_reset">පෙරනිමියට යළි සකසන්න</string>
     <string name="dejavu_sidebar_look_pin_buttons">පටිති මත අමුණන බොත්තම්</string>
     <string name="dejavu_sidebar_look_pin_buttons_summary">අමුණා ඇති පටිති වෙත ඇදගෙන යාමෙන් තවමත් පටිති ඇමිණිය හැක</string>
+    <string name="dejavu_search_keyword">මූලපදය</string>
+    <string name="dejavu_search_keyword_taken">\"%1$s\" දැනටමත් වෙනත් මූලපදයක් විසින් භාවිතා කර ඇත.</string>
 </resources>

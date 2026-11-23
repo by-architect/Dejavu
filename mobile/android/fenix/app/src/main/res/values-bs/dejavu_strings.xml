@@ -652,4 +652,6 @@
     <string name="dejavu_sidebar_look_reset">Vrati na podrazumijevano</string>
     <string name="dejavu_sidebar_look_pin_buttons">Dugmad za kačenje na tabovima</string>
     <string name="dejavu_sidebar_look_pin_buttons_summary">Tabovi se i dalje mogu zakačiti prevlačenjem među zakačene tabove</string>
+    <string name="dejavu_search_keyword">Ključna riječ</string>
+    <string name="dejavu_search_keyword_taken">\"%1$s\" već koristi druga ključna riječ.</string>
 </resources>

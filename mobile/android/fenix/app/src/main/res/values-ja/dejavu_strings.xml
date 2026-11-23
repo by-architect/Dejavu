@@ -636,4 +636,6 @@
     <string name="dejavu_sidebar_look_reset">既定値に戻す</string>
     <string name="dejavu_sidebar_look_pin_buttons">タブのピン留めボタン</string>
     <string name="dejavu_sidebar_look_pin_buttons_summary">タブはピン留めしたタブの場所へドラッグしてもピン留めできます</string>
+    <string name="dejavu_search_keyword">キーワード</string>
+    <string name="dejavu_search_keyword_taken">「%1$s」は別のキーワードですでに使われています。</string>
 </resources>

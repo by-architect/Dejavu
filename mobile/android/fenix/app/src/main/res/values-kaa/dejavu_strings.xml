@@ -644,4 +644,6 @@
     <string name="dejavu_sidebar_look_reset">Ádepkige qayta ornatıw</string>
     <string name="dejavu_sidebar_look_pin_buttons">Betlerde bekitiw túymeleri</string>
     <string name="dejavu_sidebar_look_pin_buttons_summary">Betlerdi bekitilgen betlerge súyrep áli de bekitiwge boladı</string>
+    <string name="dejavu_search_keyword">Gilt sóz</string>
+    <string name="dejavu_search_keyword_taken">\"%1$s\" basqa gilt sóz tárepinen aldın paydalanılǵan.</string>
 </resources>

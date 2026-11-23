@@ -644,4 +644,6 @@
     <string name="dejavu_sidebar_look_reset">ਡਿਫਾਲਟ ‘ਤੇ ਮੁੜ-ਸੈੱਟ ਕਰੋ</string>
     <string name="dejavu_sidebar_look_pin_buttons">ਟੈਬਾਂ ਉੱਤੇ ਪਿੰਨ ਬਟਨ</string>
     <string name="dejavu_sidebar_look_pin_buttons_summary">ਟੈਬਾਂ ਨੂੰ ਪਿੰਨ ਕੀਤੀਆਂ ਟੈਬਾਂ ਵਿੱਚ ਖਿੱਚ ਕੇ ਹਾਲੇ ਵੀ ਪਿੰਨ ਕੀਤਾ ਜਾ ਸਕਦਾ ਹੈ</string>
+    <string name="dejavu_search_keyword">ਕੀਵਰਡ</string>
+    <string name="dejavu_search_keyword_taken">\"%1$s\" ਪਹਿਲਾਂ ਹੀ ਕਿਸੇ ਹੋਰ ਕੀਵਰਡ ਵਲੋਂ ਵਰਤਿਆ ਜਾ ਰਿਹਾ ਹੈ।</string>
 </resources>

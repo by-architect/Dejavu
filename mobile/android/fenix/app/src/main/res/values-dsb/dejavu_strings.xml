@@ -660,4 +660,6 @@
     <string name="dejavu_sidebar_look_reset">Na standard slědk stajiś</string>
     <string name="dejavu_sidebar_look_pin_buttons">Tłocaški pśipěśowanja na rejtarikach</string>
     <string name="dejavu_sidebar_look_pin_buttons_summary">Rejtariki daju se dalej pśipěśowaś, gaž se k pśipěśonym rejtarikam śěgnu</string>
+    <string name="dejavu_search_keyword">Klucowe słowo</string>
+    <string name="dejavu_search_keyword_taken">\"%1$s\" se južo wót drugego klucowego słowa wužywa.</string>
 </resources>

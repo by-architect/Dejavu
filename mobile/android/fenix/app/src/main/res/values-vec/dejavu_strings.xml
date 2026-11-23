@@ -652,4 +652,6 @@
     <string name="dejavu_sidebar_look_reset">Reprìstina el predefinìo</string>
     <string name="dejavu_sidebar_look_pin_buttons">Botoni par fisar so łe schede</string>
     <string name="dejavu_sidebar_look_pin_buttons_summary">Łe schede łe se pol ancora fisar strasinàndołe tra łe schede fisàe</string>
+    <string name="dejavu_search_keyword">Parola ciave</string>
+    <string name="dejavu_search_keyword_taken">\"%1$s\" la xe xà doparà da n\'altra parola ciave.</string>
 </resources>

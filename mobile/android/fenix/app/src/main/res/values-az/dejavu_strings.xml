@@ -644,4 +644,6 @@
     <string name="dejavu_sidebar_look_reset">Standarta sıfırla</string>
     <string name="dejavu_sidebar_look_pin_buttons">Vərəqlərdə bərkitmə düymələri</string>
     <string name="dejavu_sidebar_look_pin_buttons_summary">Vərəqləri bərkidilmiş vərəqlərə sürüşdürərək yenə bərkitmək olar</string>
+    <string name="dejavu_search_keyword">Açar söz</string>
+    <string name="dejavu_search_keyword_taken">\"%1$s\" artıq başqa açar söz tərəfindən istifadə olunur.</string>
 </resources>

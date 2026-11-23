@@ -644,4 +644,6 @@
     <string name="dejavu_sidebar_look_reset">Auf Standard zurücksetzen</string>
     <string name="dejavu_sidebar_look_pin_buttons">Anheften-Schaltflächen an Tabs</string>
     <string name="dejavu_sidebar_look_pin_buttons_summary">Tabs lassen sich weiterhin anheften, indem man sie zu den angehefteten Tabs zieht</string>
+    <string name="dejavu_search_keyword">Schlüsselwort</string>
+    <string name="dejavu_search_keyword_taken">\"%1$s\" wird bereits von einem anderen Schlüsselwort verwendet.</string>
 </resources>

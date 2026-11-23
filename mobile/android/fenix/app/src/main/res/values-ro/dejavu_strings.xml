@@ -652,4 +652,6 @@
     <string name="dejavu_sidebar_look_reset">Resetează la implicit</string>
     <string name="dejavu_sidebar_look_pin_buttons">Butoane de fixare pe file</string>
     <string name="dejavu_sidebar_look_pin_buttons_summary">Filele pot fi fixate în continuare trăgându-le printre filele fixate</string>
+    <string name="dejavu_search_keyword">Cuvânt-cheie</string>
+    <string name="dejavu_search_keyword_taken">„%1$s” este deja folosit de alt cuvânt-cheie.</string>
 </resources>

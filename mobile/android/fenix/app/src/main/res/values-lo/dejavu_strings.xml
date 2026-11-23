@@ -636,4 +636,6 @@
     <string name="dejavu_sidebar_look_reset">ຕັ້ງຄືນເປັນຄ່າເລີ່ມຕົ້ນ</string>
     <string name="dejavu_sidebar_look_pin_buttons">ປຸ່ມປັກໝຸດຢູ່ແຖບ</string>
     <string name="dejavu_sidebar_look_pin_buttons_summary">ຍັງປັກໝຸດແຖບໄດ້ໂດຍການລາກໄປຫາແຖບທີ່ປັກໝຸດ</string>
+    <string name="dejavu_search_keyword">ຄຳຫຼັກ</string>
+    <string name="dejavu_search_keyword_taken">\"%1$s\" ຖືກໃຊ້ແລ້ວໂດຍຄຳຫຼັກອື່ນ.</string>
 </resources>

@@ -636,4 +636,6 @@
     <string name="dejavu_sidebar_look_reset">မူလအတိုင်း ပြန်သတ်မှတ်ရန်</string>
     <string name="dejavu_sidebar_look_pin_buttons">တဘ်များပေါ်ရှိ ပင်ထိုးခလုတ်များ</string>
     <string name="dejavu_sidebar_look_pin_buttons_summary">တဘ်များကို ပင်ထိုးထားသောတဘ်များထဲ ဆွဲထည့်၍ ပင်ထိုးနိုင်ဆဲဖြစ်သည်</string>
+    <string name="dejavu_search_keyword">ကီးဝါ့</string>
+    <string name="dejavu_search_keyword_taken">\"%1$s\" ကို အခြားကီးဝါ့တစ်ခုက အသုံးပြုပြီးဖြစ်သည်။</string>
 </resources>

@@ -636,4 +636,6 @@
     <string name="dejavu_sidebar_look_reset">Atur ulang ke default</string>
     <string name="dejavu_sidebar_look_pin_buttons">Tombol sematkan pada tab</string>
     <string name="dejavu_sidebar_look_pin_buttons_summary">Tab masih bisa disematkan dengan menyeretnya ke tab yang disematkan</string>
+    <string name="dejavu_search_keyword">Kata kunci</string>
+    <string name="dejavu_search_keyword_taken">\"%1$s\" sudah digunakan oleh kata kunci lain.</string>
 </resources>

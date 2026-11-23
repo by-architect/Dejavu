@@ -644,4 +644,6 @@
     <string name="dejavu_sidebar_look_reset">Ripristinà i valori predefiniti</string>
     <string name="dejavu_sidebar_look_pin_buttons">Buttoni di puntatura nant\'à l\'unghjette</string>
     <string name="dejavu_sidebar_look_pin_buttons_summary">L\'unghjette ponu sempre esse puntate tirendule versu l\'unghjette puntate</string>
+    <string name="dejavu_search_keyword">Parolla chjave</string>
+    <string name="dejavu_search_keyword_taken">\"%1$s\" hè digià impiegata da un\'altra parolla chjave.</string>
 </resources>

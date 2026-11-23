@@ -644,4 +644,6 @@
     <string name="dejavu_sidebar_look_reset">ڈیفالٹ ٹی ری سیٹ کبو</string>
     <string name="dejavu_sidebar_look_pin_buttons">ٹیباتے پن نا بٹناک</string>
     <string name="dejavu_sidebar_look_pin_buttons_summary">ٹیباتے پن مروکا ٹیباتے کشنگ آن ہم پن کننگ مریک</string>
+    <string name="dejavu_search_keyword">کلیدی لپز</string>
+    <string name="dejavu_search_keyword_taken">\"%1$s\" ہنو دگہ کلیدی لپزء کارمرز بیثک.</string>
 </resources>

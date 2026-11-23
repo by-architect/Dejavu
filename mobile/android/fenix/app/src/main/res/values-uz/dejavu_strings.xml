@@ -644,4 +644,6 @@
     <string name="dejavu_sidebar_look_reset">Odatiy holatga qaytarish</string>
     <string name="dejavu_sidebar_look_pin_buttons">Varaqlardagi qadash tugmalari</string>
     <string name="dejavu_sidebar_look_pin_buttons_summary">Varaqlarni qadalgan varaqlarga sudrab hali ham qadash mumkin</string>
+    <string name="dejavu_search_keyword">Kalit soʻz</string>
+    <string name="dejavu_search_keyword_taken">\"%1$s\" allaqachon boshqa kalit soʻz tomonidan ishlatilmoqda.</string>
 </resources>

@@ -644,4 +644,6 @@
     <string name="dejavu_sidebar_look_reset">Reïnicializar per defaut</string>
     <string name="dejavu_sidebar_look_pin_buttons">Botons d’espinglar suls onglets</string>
     <string name="dejavu_sidebar_look_pin_buttons_summary">Los onglets se pòdon encara espinglar en los fasent lisar cap als onglets espinglats</string>
+    <string name="dejavu_search_keyword">Mot clau</string>
+    <string name="dejavu_search_keyword_taken">\"%1$s\" es ja utilizat per un autre mot clau.</string>
 </resources>

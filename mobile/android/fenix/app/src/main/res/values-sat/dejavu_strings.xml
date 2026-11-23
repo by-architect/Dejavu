@@ -652,4 +652,6 @@
     <string name="dejavu_sidebar_look_reset">ᱰᱤᱯᱷᱚᱞᱴ ᱛᱮ ᱨᱤᱥᱮᱴ ᱢᱮ</string>
     <string name="dejavu_sidebar_look_pin_buttons">ᱴᱮᱵᱽ ᱨᱮ ᱯᱤᱱ ᱵᱩᱛᱟᱹᱢ</string>
     <string name="dejavu_sidebar_look_pin_buttons_summary">ᱴᱮᱵᱽ ᱠᱚ ᱯᱤᱱ ᱟᱠᱟᱱ ᱴᱮᱵᱽ ᱛᱮ ᱚᱨ ᱠᱟᱛᱮ ᱱᱤᱛ ᱦᱚᱸ ᱯᱤᱱ ᱫᱟᱲᱮᱭᱟᱜᱼᱟ</string>
+    <string name="dejavu_search_keyword">ᱠᱤᱣᱟᱨᱰ</string>
+    <string name="dejavu_search_keyword_taken">\"%1$s\" ᱮᱱᱛᱮ ᱮᱴᱟᱜ ᱠᱤᱣᱟᱨᱰ ᱫᱚ ᱵᱮᱵᱷᱟᱨ ᱟᱠᱟᱫᱼᱟ᱾</string>
 </resources>

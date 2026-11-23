@@ -644,4 +644,6 @@
     <string name="dejavu_sidebar_look_reset">Riktheje te parazgjedhja</string>
     <string name="dejavu_sidebar_look_pin_buttons">Butona fiksimi në skeda</string>
     <string name="dejavu_sidebar_look_pin_buttons_summary">Skedat mund të fiksohen ende duke i tërhequr te skedat e fiksuara</string>
+    <string name="dejavu_search_keyword">Fjalëkyç</string>
+    <string name="dejavu_search_keyword_taken">\"%1$s\" përdoret tashmë nga një fjalëkyç tjetër.</string>
 </resources>

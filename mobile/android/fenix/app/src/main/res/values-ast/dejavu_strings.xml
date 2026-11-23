@@ -644,4 +644,6 @@
     <string name="dejavu_sidebar_look_reset">Restaurar los valores predeterminaos</string>
     <string name="dejavu_sidebar_look_pin_buttons">Botones de fixar nes llingüetes</string>
     <string name="dejavu_sidebar_look_pin_buttons_summary">Les llingüetes entá se puen fixar arrastrándoles a les llingüetes fixaes</string>
+    <string name="dejavu_search_keyword">Pallabra clave</string>
+    <string name="dejavu_search_keyword_taken">\"%1$s\" yá la usa otra pallabra clave.</string>
 </resources>

@@ -636,4 +636,6 @@
     <string name="dejavu_sidebar_look_reset">Bẹ̀rẹ̀ padà sí àkọ́kọ́</string>
     <string name="dejavu_sidebar_look_pin_buttons">Àwọn bọ́tìnnì pinni lórí táàbù</string>
     <string name="dejavu_sidebar_look_pin_buttons_summary">A ṣì lè pinni táàbù nípa fífà wọ́n sí àwọn táàbù tí a pinni</string>
+    <string name="dejavu_search_keyword">Ọ̀rọ̀ kọ́kọ́rọ́</string>
+    <string name="dejavu_search_keyword_taken">\"%1$s\" ti wà ní lílò látọwọ́ ọ̀rọ̀ kọ́kọ́rọ́ mìíràn.</string>
 </resources>

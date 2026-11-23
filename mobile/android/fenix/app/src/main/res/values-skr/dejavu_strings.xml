@@ -644,4 +644,6 @@
     <string name="dejavu_sidebar_look_reset">ڈیفالٹ تے ری سیٹ کرو</string>
     <string name="dejavu_sidebar_look_pin_buttons">ٹیباں تے پِن بٹن</string>
     <string name="dejavu_sidebar_look_pin_buttons_summary">ٹیباں کوں پِن تھیاں ٹیباں وچ چھِک کے ہݨ وی پِن کیتا ونڄ سڳدے</string>
+    <string name="dejavu_search_keyword">کی ورڈ</string>
+    <string name="dejavu_search_keyword_taken">\"%1$s\" پہلے ای کہیں ہور کی ورڈ ولوں ورتیا ویندا پئے۔</string>
 </resources>

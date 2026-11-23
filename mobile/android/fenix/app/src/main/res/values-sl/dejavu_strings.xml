@@ -660,4 +660,6 @@
     <string name="dejavu_sidebar_look_reset">Ponastavi na privzeto</string>
     <string name="dejavu_sidebar_look_pin_buttons">Gumbi za pripenjanje na zavihkih</string>
     <string name="dejavu_sidebar_look_pin_buttons_summary">Zavihke lahko še vedno pripnete tako, da jih povlečete med pripete zavihke</string>
+    <string name="dejavu_search_keyword">Ključna beseda</string>
+    <string name="dejavu_search_keyword_taken">\"%1$s\" že uporablja druga ključna beseda.</string>
 </resources>

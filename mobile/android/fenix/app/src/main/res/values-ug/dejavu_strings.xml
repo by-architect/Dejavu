@@ -644,4 +644,6 @@
     <string name="dejavu_sidebar_look_reset">كۆڭۈلدىكىگە قايتۇر</string>
     <string name="dejavu_sidebar_look_pin_buttons">بەتكۈچلەردىكى مىقلاش كۇنۇپكىلىرى</string>
     <string name="dejavu_sidebar_look_pin_buttons_summary">بەتكۈچلەرنى مىقلانغان بەتكۈچلەرگە سۆرەپ يەنىلا مىقلىغىلى بولىدۇ</string>
+    <string name="dejavu_search_keyword">ئاچقۇچلۇق سۆز</string>
+    <string name="dejavu_search_keyword_taken">\"%1$s\" باشقا ئاچقۇچلۇق سۆز تەرىپىدىن ئىشلىتىلگەن.</string>
 </resources>

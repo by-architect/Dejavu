@@ -636,4 +636,6 @@
     <string name="dejavu_sidebar_look_reset">Reset ka utama</string>
     <string name="dejavu_sidebar_look_pin_buttons">Tombol pin ring tab</string>
     <string name="dejavu_sidebar_look_pin_buttons_summary">Tab kantun prasida kapin antuk ngedeng ka tab sane kapin</string>
+    <string name="dejavu_search_keyword">Kruna kunci</string>
+    <string name="dejavu_search_keyword_taken">\"%1$s\" suba kaanggén antuk kruna kunci tiosan.</string>
 </resources>

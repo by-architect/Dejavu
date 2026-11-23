@@ -660,4 +660,6 @@
     <string name="dejavu_sidebar_look_reset">Obnoviť predvolené</string>
     <string name="dejavu_sidebar_look_pin_buttons">Tlačidlá pripnutia na kartách</string>
     <string name="dejavu_sidebar_look_pin_buttons_summary">Karty sa dajú stále pripnúť pretiahnutím medzi pripnuté karty</string>
+    <string name="dejavu_search_keyword">Kľúčové slovo</string>
+    <string name="dejavu_search_keyword_taken">\"%1$s\" už používa iné kľúčové slovo.</string>
 </resources>

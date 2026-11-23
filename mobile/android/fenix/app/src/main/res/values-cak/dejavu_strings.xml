@@ -644,4 +644,6 @@
     <string name="dejavu_sidebar_look_reset">Titzolin pa ruyonil</string>
     <string name="dejavu_sidebar_look_pin_buttons">Taq pitz\'b\'äl richin niyak chi kij ri taq ruwi\'</string>
     <string name="dejavu_sidebar_look_pin_buttons_summary">Ri taq ruwi\' kan yetikïr na niyak toq yejur pa ri taq ruwi\' yakon</string>
+    <string name="dejavu_search_keyword">Etal b\'i\'aj</string>
+    <string name="dejavu_search_keyword_taken">\"%1$s\" xtokisäx chi rij jun chik etal b\'i\'aj.</string>
 </resources>
