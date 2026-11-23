@@ -575,9 +575,11 @@ public class ContentBlocking {
         new Pref<>(
             "urlclassifier.phishTable",
             ContentBlocking.listsToPref(
-                // In official builds, we are allowed to use Google's private phishing
-                // list (see bug 1288840).
-                BuildConfig.MOZILLA_OFFICIAL ? "goog-phish-proto" : "googpub-phish-proto",
+                // Dejavu: artifact builds ship Mozilla's prebuilt libxul (compiled with
+                // MOZILLA_OFFICIAL), whose Safe Browsing V5 table only maps goog-phish-proto.
+                // Using googpub-phish-proto in non-MOZILLA_OFFICIAL Java builds leaves phishing
+                // unmapped (and breaks V5 batch requests if both names are sent).
+                "goog-phish-proto",
                 "moztest-phish-simple"));
 
     /** Construct default settings. */

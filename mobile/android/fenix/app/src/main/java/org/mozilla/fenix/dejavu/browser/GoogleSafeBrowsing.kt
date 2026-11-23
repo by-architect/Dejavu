@@ -18,13 +18,6 @@ import org.mozilla.geckoview.GeckoRuntime
 object GoogleSafeBrowsing {
     private const val GOOGLE_LISTS = "goog"
 
-    /**
-     * The two names of Google's phishing list. GeckoView picks one by how its Java code was built, the engine knows
-     * one by how its library was built, and Dejavu's library comes prebuilt from Mozilla. With both, the engine
-     * downloads the one it knows and leaves out the other.
-     */
-    private val phishingLists = arrayOf("goog-phish-proto", "googpub-phish-proto")
-
     // GeckoView's own lists, which every runtime starts with.
     private val defaults by lazy { ContentBlocking.Settings.Builder().build() }
 
@@ -36,8 +29,7 @@ object GoogleSafeBrowsing {
     @Suppress("SpreadOperator")
     fun applyLists(settings: ContentBlocking.Settings, enabled: Boolean) {
         settings.setSafeBrowsingMalwareTable(*lists(defaults.safeBrowsingMalwareTable, enabled))
-        val phishing = (phishingLists + defaults.safeBrowsingPhishingTable).distinct().toTypedArray()
-        settings.setSafeBrowsingPhishingTable(*lists(phishing, enabled))
+        settings.setSafeBrowsingPhishingTable(*lists(defaults.safeBrowsingPhishingTable, enabled))
     }
 
     /** Turns Safe Browsing on or off in the running [engine] and its [runtime]. */
