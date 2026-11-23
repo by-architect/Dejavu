@@ -196,12 +196,8 @@ class BrowserFragment : BaseBrowserFragment(), UserInteractionHandler {
                 hidden || fullScreen
             },
         )
-        installFullScreenView(binding.browserWindow, dejavuSettings) { on ->
-            if (webAppToolbarShouldBeVisible == !on) return@installFullScreenView
-            webAppToolbarShouldBeVisible = !on
-            (view as? SwipeGestureLayout)?.isSwipeEnabled = !on
-            if (on) expandBrowserView() else collapseBrowserView()
-        }
+        // Dejavu: the docked sidebar keeps the bars hidden when full screen view ends too, see updateBarsShown.
+        installFullScreenView(binding.browserWindow, dejavuSettings, ::updateBarsShown)
         binding.readerViewControlsBar.padForNavigationBar()
         PagePictures.attach(binding.engineView)
         TabZoom.browserComing(requireActivity())

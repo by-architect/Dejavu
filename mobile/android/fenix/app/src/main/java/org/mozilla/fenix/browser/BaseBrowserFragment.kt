@@ -228,6 +228,7 @@ import org.mozilla.fenix.dejavu.browser.installAboutConfigWarning
 import org.mozilla.fenix.dejavu.browser.installDejavuSplitView
 import org.mozilla.fenix.dejavu.browser.installLockedTabCover
 import org.mozilla.fenix.dejavu.browser.installPasskeyWarning
+import org.mozilla.fenix.dejavu.browser.isFullScreenView
 import org.mozilla.fenix.dejavu.browser.leaveHiddenPrivateTab
 import org.mozilla.fenix.dejavu.browser.onStatusBarChange
 import org.mozilla.fenix.dejavu.browser.padForNavigationBar
@@ -2519,12 +2520,23 @@ abstract class BaseBrowserFragment :
             settings.isTabSidebarShown(context.isLargeWindow())
         if (docked == isSidebarChrome) return
         isSidebarChrome = docked
-        webAppToolbarShouldBeVisible = !docked
         // Composed only once docked, so custom tabs and phones do not pay for it.
         if (docked) binding.pageCorners.setContent { FirefoxTheme { PageCorners() } }
         // An auto-hidden sidebar still stands in for the bars, but it floats over the page, so no corners.
         binding.pageCorners.isVisible = docked && !settings.isVerticalTabsAutoHide && binding.tabSidebar.isVisible
-        if (docked) expandBrowserView() else collapseBrowserView()
+        updateBarsShown(context.isFullScreenView)
+    }
+
+    /**
+     * Dejavu: shows the bars only while neither the docked sidebar nor full screen view stands in for them, see
+     * BrowserFragment.
+     */
+    protected fun updateBarsShown(fullScreenView: Boolean) {
+        val shown = !isSidebarChrome && !fullScreenView
+        if (webAppToolbarShouldBeVisible == shown) return
+        webAppToolbarShouldBeVisible = shown
+        (view as? SwipeGestureLayout)?.isSwipeEnabled = shown
+        if (shown) collapseBrowserView() else expandBrowserView()
     }
 
     @VisibleForTesting(otherwise = VisibleForTesting.PROTECTED)

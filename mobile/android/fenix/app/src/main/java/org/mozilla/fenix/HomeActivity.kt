@@ -143,8 +143,8 @@ import org.mozilla.fenix.debugsettings.gleandebugtools.DefaultGleanDebugToolsSto
 import org.mozilla.fenix.debugsettings.ui.FenixOverlay
 import org.mozilla.fenix.dejavu.browser.TabSleepMiddleware
 import org.mozilla.fenix.dejavu.settings.DejavuPreferenceCards
-import org.mozilla.fenix.dejavu.settings.SettingsPane
 import org.mozilla.fenix.dejavu.settings.PageBackdropCallbacks
+import org.mozilla.fenix.dejavu.settings.SettingsPane
 import org.mozilla.fenix.dejavu.shortcuts.KeyboardShortcuts
 import org.mozilla.fenix.dejavu.shortcuts.ShortcutAction
 import org.mozilla.fenix.dejavu.workspaces.WorkspaceLock
