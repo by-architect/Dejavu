@@ -18,6 +18,8 @@ import androidx.compose.runtime.MutableState
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
+import androidx.compose.ui.input.pointer.PointerEventType
+import androidx.compose.ui.input.pointer.pointerInput
 import androidx.compose.ui.platform.ComposeView
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
@@ -137,12 +139,24 @@ object DejavuMouse {
         val components = fragment.requireComponents
         if (!components.settings.isMouseSupportEnabled) return
         val hovered = mutableStateOf<Hovered?>(null)
+        val corner = PillCorner()
         val pill = ComposeView(fragment.requireContext()).apply {
-            setContent { FirefoxTheme { AddressPill(hovered) } }
+            // Like on a computer, the pill moves to the other corner when the mouse reaches it, so it never covers
+            // the link it shows the address of.
+            setContent {
+                FirefoxTheme {
+                    AddressPill(
+                        hovered,
+                        onMouseOver = {
+                            updateLayoutParams<CoordinatorLayout.LayoutParams> { gravity = corner.dodge() }
+                        },
+                    )
+                }
+            }
             layoutParams = CoordinatorLayout.LayoutParams(
                 ViewGroup.LayoutParams.WRAP_CONTENT,
                 ViewGroup.LayoutParams.WRAP_CONTENT,
-            ).apply { gravity = Gravity.BOTTOM or Gravity.START }
+            ).apply { gravity = corner.gravity }
         }
         browserLayout.addView(pill)
 
@@ -158,6 +172,7 @@ object DejavuMouse {
                             hovered.value = Hovered(url, tab.id)
                         } else {
                             hovered.value = null
+                            pill.updateLayoutParams<CoordinatorLayout.LayoutParams> { gravity = corner.reset() }
                         }
                     }
                     val onOpen = { url: String, source: EngineSession? ->
@@ -169,6 +184,7 @@ object DejavuMouse {
                 override fun onStop(owner: LifecycleOwner) {
                     callbacks.clear(this)
                     hovered.value = null
+                    pill.updateLayoutParams<CoordinatorLayout.LayoutParams> { gravity = corner.reset() }
                 }
 
                 override fun onDestroy(owner: LifecycleOwner) = browserLayout.removeView(pill)
@@ -184,7 +200,7 @@ object DejavuMouse {
 
     /** The address of the hovered link, in the colors of its tab's workspace, like the bars around the page. */
     @Composable
-    private fun AddressPill(hovered: MutableState<Hovered?>) {
+    private fun AddressPill(hovered: MutableState<Hovered?>, onMouseOver: () -> Unit) {
         val shown = hovered.value ?: return
         val shape = RoundedCornerShape(8.dp)
         Text(
@@ -194,6 +210,13 @@ object DejavuMouse {
             maxLines = 1,
             overflow = TextOverflow.MiddleEllipsis,
             modifier = Modifier
+                .pointerInput(Unit) {
+                    awaitPointerEventScope {
+                        while (true) {
+                            if (awaitPointerEvent().type == PointerEventType.Enter) onMouseOver()
+                        }
+                    }
+                }
                 .padding(start = 8.dp, end = 8.dp, bottom = 8.dp)
                 .clip(shape)
                 .background(MaterialTheme.colorScheme.surface)
@@ -299,4 +322,27 @@ internal class Registrations<T : Any> {
 
     /** Whether [session] is new, and remembers it. */
     fun add(session: T): Boolean = seen.add(session)
+}
+
+/** Tracks which bottom corner the address pill rests in: start by default, opposite when dodged, reset when hidden. */
+internal class PillCorner {
+    var gravity: Int = START
+        private set
+
+    /** Moves the pill to the opposite bottom corner. */
+    fun dodge(): Int {
+        gravity = if (gravity == START) END else START
+        return gravity
+    }
+
+    /** Returns the pill to its default bottom-start corner. */
+    fun reset(): Int {
+        gravity = START
+        return gravity
+    }
+
+    companion object {
+        const val START = Gravity.BOTTOM or Gravity.START
+        const val END = Gravity.BOTTOM or Gravity.END
+    }
 }

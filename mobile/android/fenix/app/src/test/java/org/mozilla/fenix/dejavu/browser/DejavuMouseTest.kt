@@ -52,4 +52,22 @@ class DejavuMouseTest {
         assertFalse(registrations.add(session))
         assertTrue(registrations.add(Any()))
     }
+
+    @Test
+    fun `pill dodges to the opposite corner and resets to start`() {
+        val corner = PillCorner()
+        assertEquals(PillCorner.START, corner.gravity)
+
+        assertEquals(PillCorner.END, corner.dodge())
+        assertEquals(PillCorner.END, corner.gravity)
+
+        assertEquals(PillCorner.START, corner.dodge())
+        assertEquals(PillCorner.START, corner.gravity)
+
+        assertEquals(PillCorner.END, corner.dodge())
+        assertEquals(PillCorner.START, corner.reset())
+        assertEquals(PillCorner.START, corner.gravity)
+
+        assertEquals(PillCorner.START, corner.reset())
+    }
 }
