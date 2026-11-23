@@ -13,12 +13,19 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.unit.dp
 
+/**
+ * How much of a settings card's color shows over the backdrop of the page, the same as the tiles of the menus and the
+ * search field beside the sidebar. Every card of the settings is drawn with it, so they all look alike.
+ */
+internal const val SETTINGS_CARD_ALPHA = 0.55f
+
 private val OuterRadius = 24.dp
 private val InnerRadius = 6.dp
 
 /**
  * Draws the setting at [index] of a group of [count] settings as part of one rounded card, the way
- * [DejavuPreferenceCards] shows the settings screens of Firefox.
+ * [DejavuPreferenceCards] shows the settings screens of Firefox. On a wide window the screen holding the cards is kept
+ * to [SettingsLayout.MAX_CONTENT_WIDTH_DP] and centered by [DejavuComposeFragment], so the cards are at most that wide.
  */
 @Composable
 fun Modifier.settingsCard(index: Int, count: Int): Modifier {
@@ -28,5 +35,5 @@ fun Modifier.settingsCard(index: Int, count: Int): Modifier {
     val bottom = if (last) OuterRadius else InnerRadius
     return padding(start = 16.dp, end = 16.dp, top = if (first) 0.dp else 2.dp, bottom = if (last) 8.dp else 0.dp)
         .clip(RoundedCornerShape(topStart = top, topEnd = top, bottomStart = bottom, bottomEnd = bottom))
-        .background(MaterialTheme.colorScheme.surfaceContainerHigh)
+        .background(MaterialTheme.colorScheme.surfaceContainerHighest.copy(alpha = SETTINGS_CARD_ALPHA))
 }

@@ -15,6 +15,7 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import mozilla.components.support.base.log.logger.Logger
 import org.mozilla.fenix.R
+import org.mozilla.fenix.dejavu.settings.SettingsSearch
 
 /**
  * Indexes Settings preferences for the Settings Search screen.
@@ -79,7 +80,9 @@ class DefaultFenixSettingsIndexer(
             settings
                 .get()
                 .filter { item ->
-                    item.title.contains(trimmedQuery, ignoreCase = true)
+                    item.title.contains(trimmedQuery, ignoreCase = true) ||
+                        // Dejavu: other words for a setting, such as "freeze" for tab sleep, find it too.
+                        SettingsSearch.matches(item.preferenceKey, trimmedQuery, context::getString)
                 }
                 .distinctBy { it.preferenceKey }
         }

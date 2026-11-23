@@ -13,6 +13,7 @@ import kotlinx.coroutines.Job
 import kotlinx.coroutines.launch
 import mozilla.components.lib.state.Middleware
 import mozilla.components.lib.state.Store
+import org.mozilla.fenix.dejavu.settings.SettingsSearch
 
 /**
  * [Middleware] for the settings search screen.
@@ -73,7 +74,8 @@ class SettingsSearchMiddleware(
                         putString("preference_to_scroll_to", searchItem.preferenceKey)
                         putBoolean("search_in_progress", true)
                     }
-                val fragmentId = searchItem.preferenceFileInformation.fragmentId
+                // Dejavu: a setting with a screen of its own opens that screen, not the one that lists it.
+                val fragmentId = SettingsSearch.screenFor(searchItem, navController.context::getString)
                 if (recentSettingsSearchesRepository != null) {
                     scope.launch(dispatcher) {
                         recentSettingsSearchesRepository.addRecentSearchItem(searchItem)
