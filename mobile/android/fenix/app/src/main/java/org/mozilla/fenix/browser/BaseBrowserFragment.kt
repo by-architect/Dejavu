@@ -207,6 +207,7 @@ import org.mozilla.fenix.components.toolbar.BottomToolbarContainerView
 import org.mozilla.fenix.components.toolbar.BrowserNavigationBar
 import org.mozilla.fenix.components.toolbar.BrowserTabStrip
 import org.mozilla.fenix.components.toolbar.BrowserToolbarComposable
+import org.mozilla.fenix.components.toolbar.PageOriginInteractions
 import org.mozilla.fenix.components.toolbar.ToolbarContainerView
 import org.mozilla.fenix.components.toolbar.ToolbarPosition
 import org.mozilla.fenix.components.toolbar.ToolbarsIntegration
@@ -235,6 +236,7 @@ import org.mozilla.fenix.dejavu.browser.showsLockedTab
 import org.mozilla.fenix.dejavu.browser.shownNavigationBarHeight
 import org.mozilla.fenix.dejavu.browser.shownStatusBarHeight
 import org.mozilla.fenix.dejavu.browser.statusBarHeight
+import org.mozilla.fenix.dejavu.shortcuts.KeyboardShortcuts
 import org.mozilla.fenix.dejavu.ui.DejavuViewPopups
 import org.mozilla.fenix.downloads.DownloadService
 import org.mozilla.fenix.downloads.RenameAndChangeLocationDialogFragment
@@ -293,6 +295,9 @@ abstract class BaseBrowserFragment :
     private var _binding: FragmentBrowserBinding? = null
     internal val binding
         get() = _binding!!
+
+    /** Dejavu: this fragment's Ctrl+L hook, released in onDestroyView so the shortcut does not keep the fragment. */
+    private var focusAddressBarHook: (() -> Unit)? = null
 
     private var loginSelectBar: AutocompletePrompt<Login>? = null
     private var addressSelectBar: AutocompletePrompt<Address>? = null
@@ -1542,6 +1547,11 @@ abstract class BaseBrowserFragment :
         readerModeController: DefaultReaderModeController,
     ): BrowserToolbarComposable {
         val toolbarStore by buildToolbarStore(activity, readerModeController)
+        // A custom tab's toolbar must not take the shortcut from the main browser's.
+        if (customTabSessionId == null) {
+            focusAddressBarHook = { toolbarStore.dispatch(PageOriginInteractions.OriginClicked) }
+            KeyboardShortcuts.focusAddressBar = focusAddressBarHook
+        }
         val components = requireComponents
         val settings = components.settings
         val appStore = components.appStore
@@ -2601,6 +2611,10 @@ abstract class BaseBrowserFragment :
      */
     override fun onDestroyView() {
         super.onDestroyView()
+
+        // Dejavu: the shortcut hook holds this fragment's toolbar store. A newer fragment may already own the shortcut.
+        if (KeyboardShortcuts.focusAddressBar === focusAddressBarHook) KeyboardShortcuts.focusAddressBar = null
+        focusAddressBarHook = null
 
         // Diagnostic breadcrumb for "Display already aquired" crash:
         // https://github.com/mozilla-mobile/android-components/issues/7960

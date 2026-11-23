@@ -662,4 +662,25 @@
     <string name="dejavu_sidebar_look_pin_buttons_summary">Zavihke lahko še vedno pripnete tako, da jih povlečete med pripete zavihke</string>
     <string name="dejavu_search_keyword">Ključna beseda</string>
     <string name="dejavu_search_keyword_taken">\"%1$s\" že uporablja druga ključna beseda.</string>
+    <string name="dejavu_settings_shortcuts">Bližnjice na tipkovnici</string>
+    <string name="dejavu_settings_shortcuts_summary">Spremeni tipke bližnjic za fizično tipkovnico</string>
+    <string name="dejavu_shortcuts_hint">Tapnite bližnjico, da ji dodelite drugo tipko. Bližnjice potrebujejo Ctrl ali Alt.</string>
+    <string name="dejavu_shortcuts_press">Pritisnite novo kombinacijo tipk.</string>
+    <string name="dejavu_shortcuts_taken">%1$s že uporablja »%2$s«. Zamenjaj dodeli »%2$s« trenutno tipko te bližnjice, ali prekličite, da se nič ne spremeni.</string>
+    <string name="dejavu_shortcuts_current">Trenutna: %1$s</string>
+    <string name="dejavu_shortcuts_text_keys">Besedilna polja in spletne strani obdržijo %1$s, dokler imajo fokus.</string>
+    <string name="dejavu_shortcuts_none">Brez</string>
+    <string name="dejavu_shortcuts_save">Shrani</string>
+    <string name="dejavu_shortcuts_swap">Zamenjaj</string>
+    <string name="dejavu_shortcuts_clear">Počisti</string>
+    <string name="dejavu_shortcuts_reset">Ponastavi na privzeto</string>
+    <string name="dejavu_shortcut_next_tab">Naslednji zavihek</string>
+    <string name="dejavu_shortcut_previous_tab">Prejšnji zavihek</string>
+    <string name="dejavu_shortcut_new_tab">Nov zavihek</string>
+    <string name="dejavu_shortcut_close_tab">Zapri zavihek</string>
+    <string name="dejavu_shortcut_restore_tab">Obnovi zaprti zavihek</string>
+    <string name="dejavu_shortcut_address_bar">Uredi naslov</string>
+    <string name="dejavu_shortcut_reload">Znova naloži stran</string>
+    <string name="dejavu_shortcut_tab_n">Pojdi na zavihek %1$d</string>
+    <string name="dejavu_shortcut_last_tab">Pojdi na zadnji zavihek</string>
 </resources>
