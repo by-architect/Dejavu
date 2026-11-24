@@ -140,6 +140,7 @@ import org.mozilla.fenix.debugsettings.ui.FenixOverlay
 import org.mozilla.fenix.dejavu.browser.TabSleepMiddleware
 import org.mozilla.fenix.dejavu.settings.DejavuPreferenceCards
 import org.mozilla.fenix.dejavu.settings.PageBackdropCallbacks
+import org.mozilla.fenix.dejavu.shortcuts.SuggestionKeys
 import org.mozilla.fenix.dejavu.workspaces.WorkspaceLock
 import org.mozilla.fenix.downloads.DownloadSnackbar
 import org.mozilla.fenix.e2e.EdgeToEdgeFragmentLifecycleCallbacks
@@ -1369,6 +1370,8 @@ open class HomeActivity : LocaleAwareAppCompatActivity(), NavHostActivity, Crash
                 }
             }
         }
+        // Dejavu: pick address bar suggestions with a hardware keyboard.
+        if (this !is ExternalAppBrowserActivity && SuggestionKeys.dispatch(event)) return true
         return super.dispatchKeyEvent(event)
     }
 

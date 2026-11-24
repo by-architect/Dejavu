@@ -42,6 +42,7 @@ import mozilla.components.compose.base.theme.layout.AcornWindowSize
 import mozilla.components.compose.browser.awesomebar.AwesomeBar
 import mozilla.components.compose.browser.awesomebar.AwesomeBarDefaults
 import mozilla.components.compose.browser.awesomebar.AwesomeBarOrientation
+import mozilla.components.compose.browser.awesomebar.AwesomeBarSelection
 import mozilla.components.compose.browser.awesomebar.internal.CurrentTabData
 import mozilla.components.compose.browser.awesomebar.internal.CurrentTabDetailsInteractions.CopyClicked
 import mozilla.components.compose.browser.awesomebar.internal.CurrentTabDetailsInteractions.DetailsClicked
@@ -66,6 +67,7 @@ import org.mozilla.fenix.dejavu.browser.NewTabSearch
 import org.mozilla.fenix.dejavu.browser.RecentSearchMenu
 import org.mozilla.fenix.dejavu.browser.RecentSearchMenuDialog
 import org.mozilla.fenix.dejavu.browser.searchScreenBackground
+import org.mozilla.fenix.dejavu.shortcuts.SuggestionKeys
 import org.mozilla.fenix.ext.components
 import org.mozilla.fenix.ext.getRootView
 import org.mozilla.fenix.home.toolbar.edgeToEdgeClipboardBarBackground
@@ -260,6 +262,15 @@ class AwesomeBarComposable(
                                 )
                             }
                         }
+                        // Dejavu: a hardware keyboard picks a suggestion while the focus stays in the address bar.
+                        val selection = remember { AwesomeBarSelection() }
+                        DisposableEffect(selection) {
+                            val keys = SuggestionKeys(selection) { searchStore.dispatch(SuggestionClicked(it)) }
+                            SuggestionKeys.active = keys
+                            onDispose {
+                                if (SuggestionKeys.active === keys) SuggestionKeys.active = null
+                            }
+                        }
                         AwesomeBar(
                             text = state.query,
                             currentTabData = currentTabDetailsToShow,
@@ -292,6 +303,7 @@ class AwesomeBarComposable(
                             onScroll = { view.hideKeyboard() },
                             profiler = components.core.engine.profiler,
                             refreshKey = RecentSearchMenu.changes.collectAsState().value,
+                            selection = selection,
                         )
                         RecentSearchMenuDialog()
                     }

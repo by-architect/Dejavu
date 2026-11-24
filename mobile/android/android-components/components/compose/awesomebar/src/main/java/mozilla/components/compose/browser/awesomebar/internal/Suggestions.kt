@@ -5,12 +5,16 @@
 package mozilla.components.compose.browser.awesomebar.internal
 
 import android.os.Parcelable
+import androidx.compose.foundation.background
+import androidx.compose.foundation.gestures.scrollBy
+import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.LazyListState
 import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.lazy.rememberLazyListState
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.DisposableEffect
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.RememberObserver
 import androidx.compose.runtime.getValue
@@ -24,6 +28,7 @@ import kotlinx.coroutines.flow.distinctUntilChangedBy
 import kotlinx.parcelize.Parcelize
 import mozilla.components.compose.browser.awesomebar.AwesomeBarColors
 import mozilla.components.compose.browser.awesomebar.AwesomeBarOrientation
+import mozilla.components.compose.browser.awesomebar.AwesomeBarSelection
 import mozilla.components.compose.browser.awesomebar.AwesomeBarTestTags
 import mozilla.components.compose.browser.awesomebar.internal.optimizedsuggestions.FlightSuggestion
 import mozilla.components.compose.browser.awesomebar.internal.optimizedsuggestions.SportSuggestion
@@ -34,7 +39,10 @@ import mozilla.components.feature.awesomebar.optimizedsuggestions.SportSuggestio
 import mozilla.components.feature.awesomebar.optimizedsuggestions.SportSuggestionState
 import mozilla.components.feature.awesomebar.optimizedsuggestions.StockSuggestion
 
-@Suppress("LongParameterList")
+/** Dejavu: how strongly the suggestion picked with the keyboard is highlighted. */
+private const val PICKED_ALPHA = 0.12f
+
+@Suppress("LongParameterList", "LongMethod")
 @Composable
 internal fun Suggestions(
     suggestions: Map<AwesomeBar.SuggestionProviderGroup, List<AwesomeBar.SuggestionItem>>,
@@ -47,10 +55,29 @@ internal fun Suggestions(
     onScroll: () -> Unit,
     modifier: Modifier = Modifier,
     contentPadding: PaddingValues = PaddingValues(),
+    selection: AwesomeBarSelection? = null,
 ) {
     val state = rememberLazyListState()
 
     ScrollHandler(state, onScroll)
+
+    // Dejavu: the shown suggestions with their position in the list below, which also holds the group titles.
+    val shownRows = remember(suggestions) {
+        buildList {
+            var listIndex = 0
+            suggestions.forEach { (group, suggestions) ->
+                if (suggestions.isNotEmpty() && !group.title.isNullOrEmpty() && group.displayTitle) listIndex++
+                suggestions.take(group.limit).forEach { add(Triple(group, it, listIndex++)) }
+            }
+        }
+    }
+    LaunchedEffect(shownRows, selection) {
+        selection?.update(shownRows.map { (group, suggestion) -> group to suggestion })
+    }
+    DisposableEffect(selection) {
+        onDispose { selection?.update(emptyList()) }
+    }
+    val pickedRow = selection?.let { shownRows.getOrNull(it.index)?.third }
 
     LazyColumn(
         state = state,
@@ -69,15 +96,18 @@ internal fun Suggestions(
                 items = suggestions.take(group.limit),
                 key = { suggestion -> ItemKey.Suggestion(group.id, suggestion.provider.id, suggestion.id) },
             ) { suggestion ->
-                SuggestionItem(
-                    suggestion = suggestion,
-                    group = group,
-                    colors = colors,
-                    orientation = orientation,
-                    onSuggestionClicked = onSuggestionClicked,
-                    onAutoComplete = onAutoComplete,
-                    onRemoveClicked = onRemoveClicked,
-                )
+                val picked = selection != null && selection.selected?.second === suggestion
+                Box(modifier = if (picked) Modifier.background(colors.title.copy(alpha = PICKED_ALPHA)) else Modifier) {
+                    SuggestionItem(
+                        suggestion = suggestion,
+                        group = group,
+                        colors = colors,
+                        orientation = orientation,
+                        onSuggestionClicked = onSuggestionClicked,
+                        onAutoComplete = onAutoComplete,
+                        onRemoveClicked = onRemoveClicked,
+                    )
+                }
             }
         }
     }
@@ -85,6 +115,19 @@ internal fun Suggestions(
     val currentSuggestions by rememberUpdatedState(suggestions)
     val currentOnVisibilityStateUpdated by rememberUpdatedState(onVisibilityStateUpdated)
     val currentFirstSuggestion by rememberUpdatedState(suggestions.values.firstOrNull())
+
+    // Dejavu: keep the suggestion picked with the keyboard in view, clear of the content padding.
+    LaunchedEffect(pickedRow) {
+        val row = pickedRow ?: return@LaunchedEffect
+        val info = state.layoutInfo
+        val item = info.visibleItemsInfo.firstOrNull { it.index == row }
+        val end = info.viewportEndOffset - info.afterContentPadding
+        when {
+            item == null -> state.scrollToItem(row)
+            item.offset < 0 -> state.scrollBy(item.offset.toFloat())
+            item.offset + item.size > end -> state.scrollBy((item.offset + item.size - end).toFloat())
+        }
+    }
 
     LaunchedEffect(currentFirstSuggestion) {
         if (currentFirstSuggestion != null) {

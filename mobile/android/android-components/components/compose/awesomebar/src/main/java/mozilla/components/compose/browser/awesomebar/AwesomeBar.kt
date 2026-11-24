@@ -55,6 +55,7 @@ private const val CURRENT_TAB_DETAILS_MIN_HEIGHT = 72
  * @param onVisibilityStateUpdated Gets invoked when the list of currently displayed suggestions changes.
  * @param onScroll Gets invoked at the beginning of the user performing a scroll gesture.
  * @param refreshKey Asks the providers for suggestions again whenever it changes, like after some were deleted.
+ * @param selection Dejavu: the suggestion picked with a hardware keyboard, highlighted and kept in view.
  */
 @Composable
 fun AwesomeBar(
@@ -72,6 +73,7 @@ fun AwesomeBar(
     onScroll: () -> Unit = {},
     profiler: Profiler? = null,
     refreshKey: Any? = null,
+    selection: AwesomeBarSelection? = null,
 ) {
     val groups =
         remember(providers) {
@@ -101,6 +103,7 @@ fun AwesomeBar(
         onScroll = onScroll,
         profiler = profiler,
         refreshKey = refreshKey,
+        selection = selection,
     )
 }
 
@@ -120,6 +123,7 @@ fun AwesomeBar(
  * @param onVisibilityStateUpdated Gets invoked when the list of currently displayed suggestions changes.
  * @param onScroll Gets invoked at the beginning of the user performing a scroll gesture.
  * @param refreshKey Asks the providers for suggestions again whenever it changes, like after some were deleted.
+ * @param selection Dejavu: the suggestion picked with a hardware keyboard, highlighted and kept in view.
  */
 @Composable
 @Suppress("LongMethod", "CognitiveComplexMethod")
@@ -138,6 +142,7 @@ fun AwesomeBar(
     onScroll: () -> Unit = {},
     profiler: Profiler? = null,
     refreshKey: Any? = null,
+    selection: AwesomeBarSelection? = null,
 ) {
     val density = LocalDensity.current
     var tabDetailsHeight by remember { mutableStateOf(CURRENT_TAB_DETAILS_MIN_HEIGHT.dp) }
@@ -195,6 +200,7 @@ fun AwesomeBar(
             }
 
         LaunchedEffect(text, fetcher, refreshKey) {
+            selection?.clear()
             fetcher.fetch(text)
         }
 
@@ -221,6 +227,7 @@ fun AwesomeBar(
                         hasTabDetailsAtBottom -> PaddingValues(bottom = tabDetailsHeight)
                         else -> PaddingValues()
                     },
+                selection = selection,
             )
 
             currentTabData?.let {
