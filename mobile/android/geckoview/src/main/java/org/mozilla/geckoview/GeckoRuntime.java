@@ -18,6 +18,7 @@ import android.content.pm.ServiceInfo;
 import android.content.res.Configuration;
 import android.os.Bundle;
 import android.os.Parcel;
+import android.os.ParcelFileDescriptor;
 import android.os.Parcelable;
 import android.os.Process;
 import android.provider.Settings;
@@ -35,6 +36,7 @@ import androidx.lifecycle.OnLifecycleEvent;
 import androidx.lifecycle.ProcessLifecycleOwner;
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.util.ArrayList;
@@ -432,6 +434,24 @@ public final class GeckoRuntime implements Parcelable {
     return null;
   }
 
+  // Dejavu: prebuilt libxul unconditionally calls crash_helper_connect(fds[1]) on Android, where
+  // OwnedFd::from_raw_fd(-1) panics. Passing /dev/null avoids binding :crashhelper while letting
+  // IPCConnector fail cleanly with ENOTSOCK and close the fd.
+  private static int[] disabledCrashHelperFds() {
+    if (!BuildConfig.MOZ_CRASHREPORTER) {
+      return new int[] {-1, -1};
+    }
+    try {
+      final int fd =
+          ParcelFileDescriptor.open(new File("/dev/null"), ParcelFileDescriptor.MODE_READ_ONLY)
+              .detachFd();
+      return new int[] {-1, fd};
+    } catch (final IOException e) {
+      Log.w(LOGTAG, "Could not open /dev/null for disabled crash helper", e);
+      return new int[] {-1, -1};
+    }
+  }
+
   private int[] startCrashHelper() {
     // The crashhelper is only available if we were built with
     // `--enable-crash-reporter`.
@@ -547,7 +567,9 @@ public final class GeckoRuntime implements Parcelable {
     // TODO(m_kato): We have to check environment variables for Zygote process support.
     pm.setAppZygoteEnabled(settings.getAppZygoteProcessEnabled());
 
-    final int[] fds = startCrashHelper();
+    // Dejavu: without a crash handler the engine writes no crash dumps, so do not bind the
+    // :crashhelper service (which otherwise stays running idle in its own process).
+    final int[] fds = crashHandler != null ? startCrashHelper() : disabledCrashHelperFds();
 
     final GeckoThread.InitInfo info =
         GeckoThread.InitInfo.builder()
