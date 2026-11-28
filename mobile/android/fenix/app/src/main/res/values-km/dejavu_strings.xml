@@ -659,4 +659,11 @@
     <string name="dejavu_shortcut_reload">ផ្ទុកទំព័រឡើងវិញ</string>
     <string name="dejavu_shortcut_tab_n">ទៅផ្ទាំង %1$d</string>
     <string name="dejavu_shortcut_last_tab">ទៅផ្ទាំងចុងក្រោយ</string>
+    <string name="dejavu_feature_page_history">ចុចលើចំនួនទំព័រ ដើម្បីត្រឡប់ទៅទំព័រណាមួយ</string>
+    <string name="dejavu_feature_restore_tab">បើកផ្ទាំងដែលបានបិទឡើងវិញពីម៉ឺនុយ</string>
+    <string name="dejavu_feature_sidebery">នាំចូល និងនាំចេញផ្ទាំងជាមួយ Sidebery</string>
+    <string name="dejavu_feature_tab_sidebar">ទុកផ្ទាំងរបស់អ្នកក្នុងរបារចំហៀងលើថេប្លេត</string>
+    <string name="dejavu_feature_floating_search">ការស្វែងរកអណ្ដែតលើទំព័រ នៅលើថេប្លេត</string>
+    <string name="dejavu_feature_settings_panes">មើលការកំណត់ជាពីរផ្នែក នៅលើថេប្លេត</string>
+    <string name="dejavu_feature_search_keywords">ស្វែងរកក្នុងអេនជីនណាមួយដោយប្រើ @ ឬពាក្យគន្លឹះ</string>
 </resources>

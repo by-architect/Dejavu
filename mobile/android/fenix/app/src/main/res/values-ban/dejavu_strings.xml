@@ -659,4 +659,11 @@
     <string name="dejavu_shortcut_reload">Muat malih kaca</string>
     <string name="dejavu_shortcut_tab_n">Lunga ke tab %1$d</string>
     <string name="dejavu_shortcut_last_tab">Lunga ke tab pamuput</string>
+    <string name="dejavu_feature_page_history">Tap angka halaman anggen mawali ka halaman napi ja</string>
+    <string name="dejavu_feature_restore_tab">Bukak malih tab sane katutup saking menu</string>
+    <string name="dejavu_feature_sidebery">Impor lan ekspor tab sareng Sidebery</string>
+    <string name="dejavu_feature_tab_sidebar">Genahang tab ragane ring bilah samping ring tablet</string>
+    <string name="dejavu_feature_floating_search">Pilarian ngambang ring duur halaman ring tablet</string>
+    <string name="dejavu_feature_settings_panes">Cingak setelan ring kalih panel ring tablet</string>
+    <string name="dejavu_feature_search_keywords">Alih ring mesin napi ja nganggen @ utawi kruna kunci</string>
 </resources>

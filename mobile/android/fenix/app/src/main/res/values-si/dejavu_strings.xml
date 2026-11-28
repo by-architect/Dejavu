@@ -667,4 +667,11 @@
     <string name="dejavu_shortcut_reload">පිටුව යළි පූරණය</string>
     <string name="dejavu_shortcut_tab_n">පටිත්ත %1$d වෙත යන්න</string>
     <string name="dejavu_shortcut_last_tab">අවසන් පටිත්තට යන්න</string>
+    <string name="dejavu_feature_page_history">ඕනෑම පිටුවකට ආපසු යාමට පිටු ගණන තට්ටු කරන්න</string>
+    <string name="dejavu_feature_restore_tab">වසා දැමූ පටිති මෙනුවෙන් නැවත විවෘත කරන්න</string>
+    <string name="dejavu_feature_sidebery">Sidebery සමඟ පටිති ආයාත සහ නිර්යාත කරන්න</string>
+    <string name="dejavu_feature_tab_sidebar">ටැබ්ලට්වල ඔබේ පටිති පැති තීරුවක තබාගන්න</string>
+    <string name="dejavu_feature_floating_search">ටැබ්ලට්වල සෙවුම පිටුව මත පාවෙයි</string>
+    <string name="dejavu_feature_settings_panes">ටැබ්ලට්වල සැකසුම් කොටස් දෙකකින් බලන්න</string>
+    <string name="dejavu_feature_search_keywords">\@ හෝ මූලපදයකින් ඕනෑම සෙවුම් යන්ත්‍රයකින් සොයන්න</string>
 </resources>

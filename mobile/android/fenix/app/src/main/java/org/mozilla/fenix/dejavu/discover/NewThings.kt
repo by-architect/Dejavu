@@ -11,6 +11,7 @@ import android.os.StrictMode
 import android.text.SpannableStringBuilder
 import android.text.Spanned
 import android.text.style.ReplacementSpan
+import androidx.annotation.StringRes
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.runtime.Composable
@@ -36,66 +37,130 @@ import androidx.preference.Preference
 import kotlin.math.roundToInt
 import kotlinx.coroutines.launch
 import org.mozilla.fenix.R
+import org.mozilla.fenix.dejavu.features.FeatureTour
+import org.mozilla.fenix.dejavu.features.dataStartVersion
 import org.mozilla.fenix.dejavu.menu.MoreMenuEntry
 import org.mozilla.fenix.dejavu.menu.MoreMenuItem
 import org.mozilla.fenix.dejavu.settings.DejavuSettings
 import org.mozilla.fenix.ext.components
+import org.mozilla.fenix.utils.isLargeScreenSize
 
 /**
- * What the newest version of Dejavu brought, marked with an orange dot until the user looked at it: on the thing
- * itself, and on every step that leads to it, from the settings button of the home screen and the menu through the
- * settings. When a version brings new things, they take the place of these.
+ * What the versions of Dejavu brought, marked with an orange dot until the user looked at it: on the thing itself, and
+ * on every step that leads to it, from the settings button of the home screen and the menu through the settings.
+ *
+ * Only an update brings new things: a thing is new to a Dejavu whose data began with a version before the one that
+ * brought it, so a fresh install has none, and an update has the ones of the versions it went past.
  *
  * @property key Stable identifier used to remember that the user looked at it.
+ * @property version The version that brought it, like "4.1".
+ * @property inSettings Whether it is found through the settings.
+ * @property largeScreens Whether it only does something on large screens, like tablets, the only ones it is new on.
  */
-internal enum class NewThing(val key: String, val inSettings: Boolean = true) {
+internal enum class NewThing(
+    val key: String,
+    val version: String,
+    val inSettings: Boolean = true,
+    val largeScreens: Boolean = false,
+) {
     /** The app icons, in Customize. */
-    APP_ICON("app_icon"),
+    APP_ICON("app_icon", "4.0"),
 
     /** The accent color, in Customize. */
-    ACCENT_COLOR("accent_color"),
+    ACCENT_COLOR("accent_color", "4.0"),
 
     /** The styles of icons, in Customize. */
-    ICON_STYLE("icon_style"),
+    ICON_STYLE("icon_style", "4.0"),
 
     /** The switches that turn the animations off, in Customize. */
-    ANIMATIONS("animations"),
+    ANIMATIONS("animations", "4.0"),
 
     /** The Full screen button for the menu and the bars, found in the menu's settings. */
-    FULL_SCREEN("full_screen"),
+    FULL_SCREEN("full_screen", "4.0"),
 
     /** The full page screenshot button for the menu and the bars, found in the menu's settings. */
-    SCREENSHOT("screenshot"),
+    SCREENSHOT("screenshot", "4.0"),
 
     /** The essentials hidden on this phone, under Tabs, workspaces and containers. */
-    ESSENTIALS("essentials"),
+    ESSENTIALS("essentials", "4.0"),
 
     /** When unlocked workspaces lock again, under Privacy and security. */
-    WORKSPACE_LOCK("workspace_lock"),
+    WORKSPACE_LOCK("workspace_lock", "4.0"),
 
     /** The private browsing settings, back under Privacy and security: the lock of private tabs, and screenshots. */
-    PRIVATE_BROWSING("private_browsing"),
+    PRIVATE_BROWSING("private_browsing", "4.0"),
 
     /**
      * Lock this workspace and Don't save history, in the dialog that edits a workspace, the private one too, found
      * through the menu of each workspace on the home screen rather than in the settings.
      */
-    WORKSPACE_PRIVACY("workspace_privacy", inSettings = false),
+    WORKSPACE_PRIVACY("workspace_privacy", "4.0", inSettings = false),
+
+    /** The keys of the shortcuts for a hardware keyboard, in Customize. */
+    KEYBOARD_SHORTCUTS("keyboard_shortcuts", "4.1"),
+
+    /** The tab sidebar and its look, in Customize's bars. */
+    TAB_SIDEBAR("tab_sidebar", "4.1", largeScreens = true),
+
+    /**
+     * The new chapters of What's new, on top of the settings, which show what has no dot of its own, see
+     * [org.mozilla.fenix.dejavu.features.FeatureTour]. A version that adds a chapter gives it its key and version.
+     */
+    WHATS_NEW("whats_new_4_1", "4.1"),
     ;
 
     companion object {
         /** The new things found in Customize. */
-        val CUSTOMIZE = setOf(APP_ICON, ACCENT_COLOR, ICON_STYLE, ANIMATIONS, FULL_SCREEN, SCREENSHOT)
+        val CUSTOMIZE = setOf(
+            APP_ICON,
+            ACCENT_COLOR,
+            ICON_STYLE,
+            ANIMATIONS,
+            FULL_SCREEN,
+            SCREENSHOT,
+            KEYBOARD_SHORTCUTS,
+            TAB_SIDEBAR,
+        )
 
         /** The new buttons for the menu and the bars, which wait in the menu's settings. */
         val MENU_BUTTONS = setOf(FULL_SCREEN, SCREENSHOT)
+
+        /**
+         * The entries of the Settings screen that lead to new things, by the key of their setting, with the things each
+         * leads to. On wide windows Customize's bars and the menu's settings are entries of their categories too, see
+         * [org.mozilla.fenix.dejavu.settings.SettingsCategories].
+         */
+        val SETTINGS_ENTRIES: List<Pair<Int, Set<NewThing>>> = listOf(
+            R.string.pref_key_dejavu_whats_new to setOf(WHATS_NEW),
+            R.string.pref_key_customize to CUSTOMIZE,
+            R.string.pref_key_dejavu_tabs_workspaces to setOf(ESSENTIALS),
+            R.string.pref_key_dejavu_workspace_lock to setOf(WORKSPACE_LOCK),
+            R.string.pref_key_private_browsing to setOf(PRIVATE_BROWSING),
+            R.string.pref_key_dejavu_bars to setOf(TAB_SIDEBAR),
+            R.string.pref_key_dejavu_more_menu to MENU_BUTTONS,
+        )
+
+        /** The new things the entry of the Settings screen with the key [key] leads to, see [SETTINGS_ENTRIES]. */
+        fun ledToBy(@StringRes key: Int): Set<NewThing> =
+            SETTINGS_ENTRIES.firstOrNull { it.first == key }?.second.orEmpty()
     }
 }
 
+/**
+ * Whether this thing can be new to a Dejavu whose data began with [startVersion]: that version is older than the one
+ * that brought it, and the screen, large when [largeScreen], is one it does something on.
+ */
+internal fun NewThing.cameWithUpdate(startVersion: String, largeScreen: Boolean): Boolean =
+    FeatureTour.compareVersions(startVersion, version) < 0 && (!largeScreens || largeScreen)
+
 /** Which [NewThing]s the user has not looked at yet, see [NewThing]. */
 internal object NewThings {
-    /** Whether the user has not looked at [thing] yet. */
-    fun isNew(context: Context, thing: NewThing): Boolean = thing.key !in settings(context).seenNewThings.value
+    /** Whether [thing] is new to this Dejavu, see [NewThing], and the user has not looked at it yet. */
+    fun isNew(context: Context, thing: NewThing): Boolean = isNew(context, thing, settings(context).seenNewThings.value)
+
+    /** The [NewThing]s new to this Dejavu that the user has not looked at, of the ones whose keys are in [seen]. */
+    fun unseen(context: Context, seen: Set<String>): Set<NewThing> =
+        NewThing.entries.filterTo(mutableSetOf()) { isNew(context, it, seen) }
 
     /** Remembers that the user looked at [thing], which loses its dot everywhere. */
     fun seen(context: Context, thing: NewThing) = settings(context).markNewThingSeen(thing.key)
@@ -115,17 +180,20 @@ internal object NewThings {
         owner.lifecycleScope.launch {
             owner.repeatOnLifecycle(Lifecycle.State.STARTED) {
                 settings(preference.context).seenNewThings.collect { seen ->
-                    preference.showNewDot(things.any { it.key !in seen })
+                    preference.showNewDot(things.any { isNew(preference.context, it, seen) })
                 }
             }
         }
     }
 
+    private fun isNew(context: Context, thing: NewThing, seen: Set<String>): Boolean =
+        thing.key !in seen && thing.cameWithUpdate(context.dataStartVersion(), context.isLargeScreenSize())
+
     private fun settings(context: Context): DejavuSettings =
         context.components.strictMode.allowViolation(StrictMode::allowThreadDiskReads) { DejavuSettings.get(context) }
 }
 
-/** The [NewThing]s the user has not looked at yet, following as they look. */
+/** The [NewThing]s new to this Dejavu that the user has not looked at yet, following as they look. */
 @Composable
 internal fun rememberUnseenNewThings(): Set<NewThing> {
     val context = LocalContext.current
@@ -133,7 +201,7 @@ internal fun rememberUnseenNewThings(): Set<NewThing> {
         context.components.strictMode.allowViolation(StrictMode::allowThreadDiskReads) { DejavuSettings.get(context) }
     }
     val seen by settings.seenNewThings.collectAsState()
-    return remember(seen) { NewThing.entries.filterTo(mutableSetOf()) { it.key !in seen } }
+    return remember(seen) { NewThings.unseen(context, seen) }
 }
 
 /**

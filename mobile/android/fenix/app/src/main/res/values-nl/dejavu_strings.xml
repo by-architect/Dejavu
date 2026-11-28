@@ -667,4 +667,11 @@
     <string name="dejavu_shortcut_reload">Pagina vernieuwen</string>
     <string name="dejavu_shortcut_tab_n">Naar tabblad %1$d</string>
     <string name="dejavu_shortcut_last_tab">Naar laatste tabblad</string>
+    <string name="dejavu_feature_page_history">Tik op de paginateller om naar elke pagina terug te gaan</string>
+    <string name="dejavu_feature_restore_tab">Open gesloten tabbladen opnieuw vanuit het menu</string>
+    <string name="dejavu_feature_sidebery">Importeer en exporteer tabbladen met Sidebery</string>
+    <string name="dejavu_feature_tab_sidebar">Houd je tabbladen in een zijbalk op tablets</string>
+    <string name="dejavu_feature_floating_search">De zoekbalk zweeft boven de pagina op tablets</string>
+    <string name="dejavu_feature_settings_panes">Bekijk instellingen in twee panelen op tablets</string>
+    <string name="dejavu_feature_search_keywords">Zoek met elke zoekmachine via @ of een trefwoord</string>
 </resources>

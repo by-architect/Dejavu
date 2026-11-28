@@ -667,4 +667,11 @@
     <string name="dejavu_shortcut_reload">பக்கத்தை மீளேற்று</string>
     <string name="dejavu_shortcut_tab_n">கீற்று %1$d-க்குச் செல்</string>
     <string name="dejavu_shortcut_last_tab">கடைசிக் கீற்றுக்குச் செல்</string>
+    <string name="dejavu_feature_page_history">எந்தப் பக்கத்திற்கும் திரும்பச் செல்ல பக்க எண்ணிக்கையைத் தட்டவும்</string>
+    <string name="dejavu_feature_restore_tab">மூடிய கீற்றுகளைப் பட்டியிலிருந்து மீண்டும் திறக்கவும்</string>
+    <string name="dejavu_feature_sidebery">Sidebery உடன் கீற்றுகளை இறக்குமதி மற்றும் ஏற்றுமதி செய்யவும்</string>
+    <string name="dejavu_feature_tab_sidebar">டேப்லெட்டுகளில் கீற்றுகளைப் பக்கப்பட்டியில் வைத்திருக்கவும்</string>
+    <string name="dejavu_feature_floating_search">டேப்லெட்டுகளில் தேடல் பக்கத்தின் மேல் மிதக்கும்</string>
+    <string name="dejavu_feature_settings_panes">டேப்லெட்டுகளில் அமைவுகளை இரு பலகங்களில் பார்க்கவும்</string>
+    <string name="dejavu_feature_search_keywords">\@ அல்லது முக்கிய சொல் மூலம் எந்தத் தேடுபொறியிலும் தேடவும்</string>
 </resources>

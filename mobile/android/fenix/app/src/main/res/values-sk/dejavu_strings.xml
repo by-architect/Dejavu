@@ -683,4 +683,11 @@
     <string name="dejavu_shortcut_reload">Znova načítať stránku</string>
     <string name="dejavu_shortcut_tab_n">Prejsť na kartu %1$d</string>
     <string name="dejavu_shortcut_last_tab">Prejsť na poslednú kartu</string>
+    <string name="dejavu_feature_page_history">Ťuknutím na počet stránok sa vrátite na ľubovoľnú stránku</string>
+    <string name="dejavu_feature_restore_tab">Znovu otvorte zatvorené karty z ponuky</string>
+    <string name="dejavu_feature_sidebery">Importujte a exportujte karty so Sidebery</string>
+    <string name="dejavu_feature_tab_sidebar">Majte svoje karty v bočnom paneli na tabletoch</string>
+    <string name="dejavu_feature_floating_search">Vyhľadávanie sa na tabletoch vznáša nad stránkou</string>
+    <string name="dejavu_feature_settings_panes">Prezerajte si nastavenia v dvoch stĺpcoch na tabletoch</string>
+    <string name="dejavu_feature_search_keywords">Hľadajte v ľubovoľnom vyhľadávači cez @ alebo kľúčové slovo</string>
 </resources>

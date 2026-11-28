@@ -31,4 +31,22 @@ class FeatureTourTest {
         assertEquals(0, FeatureTour.compareVersions("2", "2.0"))
         assertTrue(FeatureTour.compareVersions("2.0", "2.0.1") < 0)
     }
+
+    @Test
+    fun `data keeps the version it began with`() {
+        assertEquals("4.1.0", startVersionOf(saved = "4.1.0", began = 0L))
+        assertEquals("4.2.3", startVersionOf(saved = "4.2.3", began = null))
+    }
+
+    @Test
+    fun `data from before 4_1 began with 4_0 when it began after 4_0 came out`() {
+        // 2026-11-21 and 2026-11-13, the days after the first 4.0 build and 3.2.0 came out.
+        assertEquals("4.0", startVersionOf(saved = null, began = 1_795_219_200_000L))
+        assertEquals("3.0", startVersionOf(saved = null, began = 1_794_528_000_000L))
+    }
+
+    @Test
+    fun `data without a start began before 3_0, which kept none`() {
+        assertEquals("1.0", startVersionOf(saved = null, began = null))
+    }
 }

@@ -667,4 +667,11 @@
     <string name="dejavu_shortcut_reload">გვერდის ხელახლა ჩატვირთვა</string>
     <string name="dejavu_shortcut_tab_n">ჩანართ %1$d-ზე გადასვლა</string>
     <string name="dejavu_shortcut_last_tab">ბოლო ჩანართზე გადასვლა</string>
+    <string name="dejavu_feature_page_history">შეეხეთ გვერდების რაოდენობას, რომ დაბრუნდეთ ნებისმიერ გვერდზე</string>
+    <string name="dejavu_feature_restore_tab">ხელახლა გახსენით დახურული ჩანართები მენიუდან</string>
+    <string name="dejavu_feature_sidebery">შემოიტანეთ და გაიტანეთ ჩანართები Sidebery-ით</string>
+    <string name="dejavu_feature_tab_sidebar">პლანშეტებზე ჩანართები გვერდით პანელში შეინახეთ</string>
+    <string name="dejavu_feature_floating_search">პლანშეტებზე ძიება გვერდის თავზე ტივტივებს</string>
+    <string name="dejavu_feature_settings_panes">პლანშეტებზე პარამეტრები ორ პანელში იხილეთ</string>
+    <string name="dejavu_feature_search_keywords">მოძებნეთ ნებისმიერი სისტემით, @-ით ან საკვანძო სიტყვით</string>
 </resources>

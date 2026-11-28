@@ -683,4 +683,11 @@
     <string name="dejavu_shortcut_reload">Znovu načíst stránku</string>
     <string name="dejavu_shortcut_tab_n">Přejít na panel %1$d</string>
     <string name="dejavu_shortcut_last_tab">Přejít na poslední panel</string>
+    <string name="dejavu_feature_page_history">Klepnutím na počet stránek se vrátíte na kteroukoli z nich</string>
+    <string name="dejavu_feature_restore_tab">Obnovujte zavřené panely z nabídky</string>
+    <string name="dejavu_feature_sidebery">Importujte a exportujte panely se Sidebery</string>
+    <string name="dejavu_feature_tab_sidebar">Mějte své panely v bočním panelu na tabletech</string>
+    <string name="dejavu_feature_floating_search">Vyhledávání se na tabletech vznáší nad stránkou</string>
+    <string name="dejavu_feature_settings_panes">Prohlížejte nastavení ve dvou sloupcích na tabletech</string>
+    <string name="dejavu_feature_search_keywords">Hledejte v libovolném vyhledávači přes @ či klíčové slovo</string>
 </resources>

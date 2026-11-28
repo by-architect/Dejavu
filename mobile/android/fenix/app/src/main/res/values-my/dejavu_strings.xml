@@ -659,4 +659,11 @@
     <string name="dejavu_shortcut_reload">စာမျက်နှာ ပြန်ဖွင့်ရန်</string>
     <string name="dejavu_shortcut_tab_n">တဘ် %1$d သို့ သွားရန်</string>
     <string name="dejavu_shortcut_last_tab">နောက်ဆုံးတဘ်သို့ သွားရန်</string>
+    <string name="dejavu_feature_page_history">မည်သည့်စာမျက်နှာသို့မဆို ပြန်သွားရန် စာမျက်နှာအရေအတွက်ကို နှိပ်ပါ</string>
+    <string name="dejavu_feature_restore_tab">ပိတ်ခဲ့သော တက်ဗ်များကို မီနူးမှ ပြန်ဖွင့်ပါ</string>
+    <string name="dejavu_feature_sidebery">Sidebery နှင့် တက်ဗ်များကို တင်သွင်း၊ တင်ပို့ပါ</string>
+    <string name="dejavu_feature_tab_sidebar">တက်ဘလက်များတွင် သင့်တက်ဗ်များကို ဘေးဘားတွင် ထားပါ</string>
+    <string name="dejavu_feature_floating_search">တက်ဘလက်များတွင် ရှာဖွေမှုသည် စာမျက်နှာအထက်တွင် ပေါ်နေသည်</string>
+    <string name="dejavu_feature_settings_panes">တက်ဘလက်များတွင် အပြင်အဆင်များကို အကန့်နှစ်ခုဖြင့် ကြည့်ပါ</string>
+    <string name="dejavu_feature_search_keywords">\@ သို့မဟုတ် ကီးဝါ့ဖြင့် မည်သည့်အင်ဂျင်တွင်မဆို ရှာပါ</string>
 </resources>

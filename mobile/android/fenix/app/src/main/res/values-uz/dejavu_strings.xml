@@ -667,4 +667,11 @@
     <string name="dejavu_shortcut_reload">Sahifani qayta yuklash</string>
     <string name="dejavu_shortcut_tab_n">%1$d-varaqqa oʻtish</string>
     <string name="dejavu_shortcut_last_tab">Oxirgi varaqqa oʻtish</string>
+    <string name="dejavu_feature_page_history">Istalgan sahifaga qaytish uchun sahifalar soniga bosing</string>
+    <string name="dejavu_feature_restore_tab">Yopilgan varaqlarni menyudan qayta oching</string>
+    <string name="dejavu_feature_sidebery">Varaqlarni Sidebery bilan import va eksport qiling</string>
+    <string name="dejavu_feature_tab_sidebar">Planshetlarda varaqlaringizni yon panelda saqlang</string>
+    <string name="dejavu_feature_floating_search">Planshetlarda qidiruv sahifa ustida suzib turadi</string>
+    <string name="dejavu_feature_settings_panes">Planshetlarda sozlamalarni ikki ustunda ko\'ring</string>
+    <string name="dejavu_feature_search_keywords">\@ yoki kalit so\'z bilan istalgan qidiruv tizimida izlang</string>
 </resources>

@@ -667,4 +667,11 @@
     <string name="dejavu_shortcut_reload">Recargar la pagina</string>
     <string name="dejavu_shortcut_tab_n">Anar a l’onglet %1$d</string>
     <string name="dejavu_shortcut_last_tab">Anar al darrièr onglet</string>
+    <string name="dejavu_feature_page_history">Tocatz lo nombre de paginas per tornar a quina pagina que siá</string>
+    <string name="dejavu_feature_restore_tab">Tornatz dobrir los onglets tampats dempuèi lo menú</string>
+    <string name="dejavu_feature_sidebery">Importatz e exportatz d’onglets amb Sidebery</string>
+    <string name="dejavu_feature_tab_sidebar">Gardatz vòstres onglets dins una barra laterala sus tauleta</string>
+    <string name="dejavu_feature_floating_search">Sus tauleta, la recèrca flòta sus la pagina</string>
+    <string name="dejavu_feature_settings_panes">Vejatz los paramètres en dos panèls sus tauleta</string>
+    <string name="dejavu_feature_search_keywords">Cercatz amb quin motor que siá via @ o un mot clau</string>
 </resources>

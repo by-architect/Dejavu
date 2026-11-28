@@ -762,8 +762,10 @@ class DejavuShortcutsFragment : DejavuComposeFragment(R.string.dejavu_settings_s
     @Composable
     override fun DejavuScreen() {
         val settings = remember { dejavuSettings() }
+        val context = LocalContext.current
         val saved by settings.shortcuts.collectAsState()
         var editing by remember { mutableStateOf<ShortcutAction?>(null) }
+        LaunchedEffect(Unit) { NewThings.seen(context, NewThing.KEYBOARD_SHORTCUTS) }
         Column(modifier = Modifier.fillMaxSize().verticalScroll(rememberScrollState())) {
             Text(
                 text = stringResource(R.string.dejavu_shortcuts_hint),

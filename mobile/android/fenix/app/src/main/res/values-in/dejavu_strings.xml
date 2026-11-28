@@ -659,4 +659,11 @@
     <string name="dejavu_shortcut_reload">Muat ulang halaman</string>
     <string name="dejavu_shortcut_tab_n">Buka tab %1$d</string>
     <string name="dejavu_shortcut_last_tab">Buka tab terakhir</string>
+    <string name="dejavu_feature_page_history">Ketuk jumlah laman untuk kembali ke laman mana pun</string>
+    <string name="dejavu_feature_restore_tab">Buka kembali tab yang ditutup dari menu</string>
+    <string name="dejavu_feature_sidebery">Impor dan ekspor tab dengan Sidebery</string>
+    <string name="dejavu_feature_tab_sidebar">Taruh tab Anda di bilah samping pada tablet</string>
+    <string name="dejavu_feature_floating_search">Pencarian melayang di atas laman pada tablet</string>
+    <string name="dejavu_feature_settings_panes">Lihat pengaturan dalam dua panel pada tablet</string>
+    <string name="dejavu_feature_search_keywords">Cari dengan mesin pencari apa pun lewat @ atau kata kunci</string>
 </resources>

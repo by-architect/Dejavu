@@ -667,4 +667,11 @@
     <string name="dejavu_shortcut_reload">Torra a carrigare sa pàgina</string>
     <string name="dejavu_shortcut_tab_n">Bae a s\'ischeda %1$d</string>
     <string name="dejavu_shortcut_last_tab">Bae a s\'ùrtima ischeda</string>
+    <string name="dejavu_feature_page_history">Toca su nùmeru de pàginas pro torrare a cale si siat pàgina</string>
+    <string name="dejavu_feature_restore_tab">Torra a abèrrere is ischedas serradas dae su menu</string>
+    <string name="dejavu_feature_sidebery">Importa e esporta ischedas cun Sidebery</string>
+    <string name="dejavu_feature_tab_sidebar">Mantene is ischedas tuas in una barra laterale in is tablet</string>
+    <string name="dejavu_feature_floating_search">Sa chirca aparit in subra de sa pàgina in is tablet</string>
+    <string name="dejavu_feature_settings_panes">Bide sa cunfiguratzione in duos pannellos in is tablet</string>
+    <string name="dejavu_feature_search_keywords">Chirca in cale si siat motore cun @ o unu faeddu crae</string>
 </resources>

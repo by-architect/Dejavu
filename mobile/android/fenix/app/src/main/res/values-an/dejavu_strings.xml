@@ -667,4 +667,11 @@
     <string name="dejavu_shortcut_reload">Recargar pachina</string>
     <string name="dejavu_shortcut_tab_n">Ir t\'a pestanya %1$d</string>
     <string name="dejavu_shortcut_last_tab">Ir t\'a zaguera pestanya</string>
+    <string name="dejavu_feature_page_history">Toca o contador de pachinas pa tornar a qualsiquier pachina</string>
+    <string name="dejavu_feature_restore_tab">Torna a ubrir pestanyas zarradas dende o menú</string>
+    <string name="dejavu_feature_sidebery">Importa y exporta pestanyas con Sidebery</string>
+    <string name="dejavu_feature_tab_sidebar">Mantiene as pestanyas en una barra lateral en tabletas</string>
+    <string name="dejavu_feature_floating_search">A busqueda flota sobre a pachina en tabletas</string>
+    <string name="dejavu_feature_settings_panes">Veye os achustes en dos panels en tabletas</string>
+    <string name="dejavu_feature_search_keywords">Mira en qualsiquier buscador con @ u una palabra clau</string>
 </resources>

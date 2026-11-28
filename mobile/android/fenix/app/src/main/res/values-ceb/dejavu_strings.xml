@@ -667,4 +667,11 @@
     <string name="dejavu_shortcut_reload">I-reload ang panid</string>
     <string name="dejavu_shortcut_tab_n">Adto sa tab %1$d</string>
     <string name="dejavu_shortcut_last_tab">Adto sa katapusang tab</string>
+    <string name="dejavu_feature_page_history">I-tap ang ihap sa page aron mobalik sa bisan unsang page</string>
+    <string name="dejavu_feature_restore_tab">Ibalik ang gisirado nga mga tab gikan sa menu</string>
+    <string name="dejavu_feature_sidebery">I-import ug i-export ang mga tab gamit ang Sidebery</string>
+    <string name="dejavu_feature_tab_sidebar">Ipabilin ang imong mga tab sa sidebar sa mga tablet</string>
+    <string name="dejavu_feature_floating_search">Ang pagpangita molutaw ibabaw sa page sa mga tablet</string>
+    <string name="dejavu_feature_settings_panes">Tan-awa ang mga setting sa duha ka panel sa mga tablet</string>
+    <string name="dejavu_feature_search_keywords">Pangita sa bisan unsang engine gamit ang @ o keyword</string>
 </resources>

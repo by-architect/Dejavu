@@ -667,4 +667,11 @@
     <string name="dejavu_shortcut_reload">صفحه‌نی تزه‌له</string>
     <string name="dejavu_shortcut_tab_n">%1$d-جی تابا گئت</string>
     <string name="dejavu_shortcut_last_tab">سون تابا گئت</string>
+    <string name="dejavu_feature_page_history">هر صفحه‌یه قاییتماق اوچون صفحه ساییسینا توخونون</string>
+    <string name="dejavu_feature_restore_tab">باغلانمیش تاغلاری منودان یئنی‌دن آچین</string>
+    <string name="dejavu_feature_sidebery">تاغلاری Sidebery ایله ایچری آلین و ایخراج ائدین</string>
+    <string name="dejavu_feature_tab_sidebar">تبلت‌لرده تاغلارینیزی یان پانئلده ساخلایین</string>
+    <string name="dejavu_feature_floating_search">تبلت‌لرده آختاریش صفحه‌نین اوستونده اوزور</string>
+    <string name="dejavu_feature_settings_panes">تبلت‌لرده تنظیم‌لری ایکی پانئلده گؤرون</string>
+    <string name="dejavu_feature_search_keywords">\@ یا آچار سؤزله هر موتوردا آختارین</string>
 </resources>

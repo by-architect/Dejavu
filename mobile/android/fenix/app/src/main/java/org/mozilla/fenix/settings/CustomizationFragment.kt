@@ -92,10 +92,20 @@ open class CustomizationFragment : PreferenceFragmentCompat(), SystemInsetsPadde
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        // Dejavu: orange dots on what is new here, until the user leaves, and on the menu's settings, which hold the
-        // new Full screen and Screenshot buttons.
+        // Dejavu: orange dots on what is new here, until the user leaves, and on the screens that hold new things: the
+        // menu's settings with the new Full screen and Screenshot buttons, the keyboard shortcuts, and the bars with
+        // the tab sidebar.
         findPreference<Preference>(getString(R.string.pref_key_dejavu_more_menu))?.let {
             NewThings.follow(it, NewThing.MENU_BUTTONS, viewLifecycleOwner)
+        }
+        findPreference<Preference>(getString(R.string.pref_key_dejavu_shortcuts))?.let {
+            NewThings.follow(it, setOf(NewThing.KEYBOARD_SHORTCUTS), viewLifecycleOwner)
+        }
+        findPreference<Preference>(getString(R.string.pref_key_dejavu_bars))?.let {
+            NewThings.follow(it, setOf(NewThing.TAB_SIDEBAR), viewLifecycleOwner)
+        }
+        findPreference<Preference>(getString(R.string.pref_key_dejavu_sidebar))?.let {
+            NewThings.mark(it, NewThing.TAB_SIDEBAR)
         }
         findPreference<Preference>(getString(R.string.pref_key_dejavu_animations))?.parent?.let {
             NewThings.mark(it, NewThing.ANIMATIONS)
@@ -148,6 +158,8 @@ open class CustomizationFragment : PreferenceFragmentCompat(), SystemInsetsPadde
             listOf(NewThing.APP_ICON, NewThing.ACCENT_COLOR, NewThing.ICON_STYLE, NewThing.ANIMATIONS).forEach {
                 NewThings.seen(requireContext(), it)
             }
+        } else if (NewThings.isNew(requireContext(), NewThing.TAB_SIDEBAR)) {
+            NewThings.seen(requireContext(), NewThing.TAB_SIDEBAR)
         }
     }
 

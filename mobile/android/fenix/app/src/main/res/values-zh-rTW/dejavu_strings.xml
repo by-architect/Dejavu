@@ -659,4 +659,11 @@
     <string name="dejavu_shortcut_reload">重新載入頁面</string>
     <string name="dejavu_shortcut_tab_n">前往分頁 %1$d</string>
     <string name="dejavu_shortcut_last_tab">前往最後一個分頁</string>
+    <string name="dejavu_feature_page_history">點擊頁數，即可回到任何頁面</string>
+    <string name="dejavu_feature_restore_tab">從選單重新開啟已關閉的分頁</string>
+    <string name="dejavu_feature_sidebery">透過 Sidebery 匯入與匯出分頁</string>
+    <string name="dejavu_feature_tab_sidebar">在平板電腦上將分頁放在側邊欄</string>
+    <string name="dejavu_feature_floating_search">在平板電腦上，搜尋列會浮在頁面上方</string>
+    <string name="dejavu_feature_settings_panes">在平板電腦上以雙欄檢視設定</string>
+    <string name="dejavu_feature_search_keywords">使用 @ 或關鍵字在任何引擎中搜尋</string>
 </resources>

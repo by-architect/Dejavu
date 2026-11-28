@@ -675,4 +675,11 @@
     <string name="dejavu_shortcut_reload">Pārlādēt lapu</string>
     <string name="dejavu_shortcut_tab_n">Pāriet uz cilni %1$d</string>
     <string name="dejavu_shortcut_last_tab">Pāriet uz pēdējo cilni</string>
+    <string name="dejavu_feature_page_history">Pieskarieties lapu skaitam, lai atgrieztos jebkurā lapā</string>
+    <string name="dejavu_feature_restore_tab">Atjaunojiet aizvērtās cilnes no izvēlnes</string>
+    <string name="dejavu_feature_sidebery">Importējiet un eksportējiet cilnes ar Sidebery</string>
+    <string name="dejavu_feature_tab_sidebar">Turiet savas cilnes sānjoslā planšetdatoros</string>
+    <string name="dejavu_feature_floating_search">Planšetdatoros meklēšana peld virs lapas</string>
+    <string name="dejavu_feature_settings_panes">Skatiet iestatījumus divos paneļos planšetdatoros</string>
+    <string name="dejavu_feature_search_keywords">Meklējiet jebkurā meklētājā ar @ vai atslēgvārdu</string>
 </resources>

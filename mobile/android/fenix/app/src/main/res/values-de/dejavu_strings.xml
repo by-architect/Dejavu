@@ -667,4 +667,11 @@
     <string name="dejavu_shortcut_reload">Seite neu laden</string>
     <string name="dejavu_shortcut_tab_n">Zu Tab %1$d wechseln</string>
     <string name="dejavu_shortcut_last_tab">Zum letzten Tab wechseln</string>
+    <string name="dejavu_feature_page_history">Seitenanzahl antippen, um zu jeder Seite zurückzugehen</string>
+    <string name="dejavu_feature_restore_tab">Geschlossene Tabs über das Menü wieder öffnen</string>
+    <string name="dejavu_feature_sidebery">Tabs mit Sidebery importieren und exportieren</string>
+    <string name="dejavu_feature_tab_sidebar">Tabs auf Tablets in einer Seitenleiste behalten</string>
+    <string name="dejavu_feature_floating_search">Die Suche schwebt auf Tablets über der Seite</string>
+    <string name="dejavu_feature_settings_panes">Einstellungen auf Tablets in zwei Spalten sehen</string>
+    <string name="dejavu_feature_search_keywords">Mit @ oder Schlüsselwort in jeder Suchmaschine suchen</string>
 </resources>

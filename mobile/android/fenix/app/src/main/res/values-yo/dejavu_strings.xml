@@ -659,4 +659,11 @@
     <string name="dejavu_shortcut_reload">Tún ojú-ewé gbé</string>
     <string name="dejavu_shortcut_tab_n">Lọ sí táàbù %1$d</string>
     <string name="dejavu_shortcut_last_tab">Lọ sí táàbù tó kẹ́yìn</string>
+    <string name="dejavu_feature_page_history">Tẹ iye ojú-ìwé láti padà sí ojú-ìwé èyíkéyìí</string>
+    <string name="dejavu_feature_restore_tab">Tún ṣí àwọn táàbù tí o tì láti inú menu</string>
+    <string name="dejavu_feature_sidebery">Kó àwọn táàbù wọlé àti jáde pẹ̀lú Sidebery</string>
+    <string name="dejavu_feature_tab_sidebar">Fi àwọn táàbù rẹ sínú ọpá ẹ̀gbẹ́ lórí tábúlẹ́ẹ̀tì</string>
+    <string name="dejavu_feature_floating_search">Lórí tábúlẹ́ẹ̀tì, ìwádìí ń léfòó lórí ojú-ìwé</string>
+    <string name="dejavu_feature_settings_panes">Wo àwọn aatò ní apá méjì lórí tábúlẹ́ẹ̀tì</string>
+    <string name="dejavu_feature_search_keywords">Wá pẹ̀lú ẹ̀rọ ìwádìí èyíkéyìí nípasẹ̀ @ tàbí ọ̀rọ̀ kọ́kọ́rọ́</string>
 </resources>

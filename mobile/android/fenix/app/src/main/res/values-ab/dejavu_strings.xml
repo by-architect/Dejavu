@@ -667,4 +667,11 @@
     <string name="dejavu_shortcut_reload">Адаҟьа ҿыцзаны аҭагалара</string>
     <string name="dejavu_shortcut_tab_n">Анҭыра %1$d ахь аиасра</string>
     <string name="dejavu_shortcut_last_tab">Аҵыхәатәи анҭыра ахь аиасра</string>
+    <string name="dejavu_feature_page_history">Адаҟьа ахь ахынҳәразы, адаҟьақәа рхыԥхьаӡара иақәыӷәӷәа</string>
+    <string name="dejavu_feature_restore_tab">Иаркыз абларҭақәа аменю аҟынтә еиҭах аартра</string>
+    <string name="dejavu_feature_sidebery">Абларҭақәа аимпорти аекспорти Sidebery ала</string>
+    <string name="dejavu_feature_tab_sidebar">Апланшетқәа рҟны абларҭақәа апанель аҿы иаанхоит</string>
+    <string name="dejavu_feature_floating_search">Аԥшаара адаҟьа хыхь апланшетқәа рҟны</string>
+    <string name="dejavu_feature_settings_panes">Апланшетқәа рҟны ҩ-панелк змоу архиарақәа</string>
+    <string name="dejavu_feature_search_keywords">\@ ма ацаԥхатә ажәа ала иарбанзаалак аԥшаага аҟны аԥшаара</string>
 </resources>

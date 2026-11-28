@@ -667,4 +667,11 @@
     <string name="dejavu_shortcut_reload">Recarega pagina</string>
     <string name="dejavu_shortcut_tab_n">Vanni a-o feuggio %1$d</string>
     <string name="dejavu_shortcut_last_tab">Vanni a l\'urtimo feuggio</string>
+    <string name="dejavu_feature_page_history">Tocca o numero de pagine pe tornâ a qualonque pagina</string>
+    <string name="dejavu_feature_restore_tab">Torna a arvî i feuggi særæ da-o menû</string>
+    <string name="dejavu_feature_sidebery">Importa e esporta feuggi con Sidebery</string>
+    <string name="dejavu_feature_tab_sidebar">Tegni i tò feuggi inte \'na bara de-o lòu in sci tablet</string>
+    <string name="dejavu_feature_floating_search">In sci tablet a çerca a galezza in sciâ pagina</string>
+    <string name="dejavu_feature_settings_panes">Amia e inpostaçioin in doî panelli in sci tablet</string>
+    <string name="dejavu_feature_search_keywords">Çerca in qualonque motô con @ ò \'na paròlla ciave</string>
 </resources>

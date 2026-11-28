@@ -667,4 +667,11 @@
     <string name="dejavu_shortcut_reload">Səhifəni yenilə</string>
     <string name="dejavu_shortcut_tab_n">%1$d. vərəqə keç</string>
     <string name="dejavu_shortcut_last_tab">Son vərəqə keç</string>
+    <string name="dejavu_feature_page_history">İstənilən səhifəyə qayıtmaq üçün səhifə sayına toxunun</string>
+    <string name="dejavu_feature_restore_tab">Bağlanmış vərəqləri menyudan yenidən açın</string>
+    <string name="dejavu_feature_sidebery">Vərəqləri Sidebery ilə idxal və ixrac edin</string>
+    <string name="dejavu_feature_tab_sidebar">Planşetlərdə vərəqlərinizi yan paneldə saxlayın</string>
+    <string name="dejavu_feature_floating_search">Planşetlərdə axtarış səhifənin üzərində üzür</string>
+    <string name="dejavu_feature_settings_panes">Planşetlərdə tənzimləmələri iki paneldə görün</string>
+    <string name="dejavu_feature_search_keywords">\@ və ya açar sözlə istənilən mühərrikdə axtarın</string>
 </resources>

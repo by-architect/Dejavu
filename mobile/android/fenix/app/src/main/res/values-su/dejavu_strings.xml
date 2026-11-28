@@ -659,4 +659,11 @@
     <string name="dejavu_shortcut_reload">Muat deui kaca</string>
     <string name="dejavu_shortcut_tab_n">Buka tab %1$d</string>
     <string name="dejavu_shortcut_last_tab">Buka tab panungtung</string>
+    <string name="dejavu_feature_page_history">Toél jumlah kaca pikeun balik deui ka kaca mana waé</string>
+    <string name="dejavu_feature_restore_tab">Buka deui tab nu ditutup tina menu</string>
+    <string name="dejavu_feature_sidebery">Impor jeung ékspor tab maké Sidebery</string>
+    <string name="dejavu_feature_tab_sidebar">Simpen tab anjeun dina bar samping dina tablét</string>
+    <string name="dejavu_feature_floating_search">Pamaluruhan ngambang di luhur kaca dina tablét</string>
+    <string name="dejavu_feature_settings_panes">Tingali setélan jadi dua kolom dina tablét</string>
+    <string name="dejavu_feature_search_keywords">Sungsi dina mesin mana waé ku @ atawa kecap konci</string>
 </resources>

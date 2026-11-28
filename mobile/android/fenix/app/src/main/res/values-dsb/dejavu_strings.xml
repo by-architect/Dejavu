@@ -683,4 +683,11 @@
     <string name="dejavu_shortcut_reload">Bok znowego zacytaś</string>
     <string name="dejavu_shortcut_tab_n">K rejtarikoju %1$d</string>
     <string name="dejavu_shortcut_last_tab">K slědnemu rejtarikoju</string>
+    <string name="dejavu_feature_page_history">Na licbu bokow tłocyś, aby se k bokoju wrośił</string>
+    <string name="dejavu_feature_restore_tab">Zacynjone rejtariki z menija zasej wócyniś</string>
+    <string name="dejavu_feature_sidebery">Rejtariki ze Sidebery importěrowaś a eksportěrowaś</string>
+    <string name="dejavu_feature_tab_sidebar">Rejtariki na tabletach w bocnej rědce źaržaś</string>
+    <string name="dejavu_feature_floating_search">Pytanje pława na tabletach nad bokom</string>
+    <string name="dejavu_feature_settings_panes">Nastajenja na tabletach we dwěma słupoma wiźeś</string>
+    <string name="dejavu_feature_search_keywords">Z @ abo klucowym słowom w kuždej pytnicy pytaś</string>
 </resources>

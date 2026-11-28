@@ -667,4 +667,11 @@
     <string name="dejavu_shortcut_reload">പേജ് വീണ്ടും ലോഡ് ചെയ്യുക</string>
     <string name="dejavu_shortcut_tab_n">ടാബ് %1$d-ലേക്ക് പോകുക</string>
     <string name="dejavu_shortcut_last_tab">അവസാന ടാബിലേക്ക് പോകുക</string>
+    <string name="dejavu_feature_page_history">ഏത് താളിലേക്കും മടങ്ങാൻ താളുകളുടെ എണ്ണത്തിൽ ടാപ്പ് ചെയ്യുക</string>
+    <string name="dejavu_feature_restore_tab">അടച്ച ടാബുകൾ മെനുവിൽ നിന്ന് വീണ്ടും തുറക്കുക</string>
+    <string name="dejavu_feature_sidebery">Sidebery ഉപയോഗിച്ച് ടാബുകൾ ഇമ്പോർട്ടും എക്സ്പോർട്ടും ചെയ്യുക</string>
+    <string name="dejavu_feature_tab_sidebar">ടാബ്‌ലെറ്റുകളിൽ നിങ്ങളുടെ ടാബുകൾ സൈഡ്ബാറിൽ സൂക്ഷിക്കുക</string>
+    <string name="dejavu_feature_floating_search">ടാബ്‌ലെറ്റുകളിൽ തിരയൽ താളിനു മുകളിൽ പൊങ്ങിക്കിടക്കുന്നു</string>
+    <string name="dejavu_feature_settings_panes">ടാബ്‌ലെറ്റുകളിൽ ക്രമീകരണങ്ങള്‍ രണ്ട് പാളികളിൽ കാണുക</string>
+    <string name="dejavu_feature_search_keywords">ഏത് തിരയൽ യന്ത്രത്തിലും @ അല്ലെങ്കിൽ കീവേഡ് വഴി തിരയുക</string>
 </resources>

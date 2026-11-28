@@ -667,4 +667,11 @@
     <string name="dejavu_shortcut_reload">بەتنى قايتا يۈكلەش</string>
     <string name="dejavu_shortcut_tab_n">%1$d-بەتكۈچكە ئۆتۈش</string>
     <string name="dejavu_shortcut_last_tab">ئاخىرقى بەتكۈچكە ئۆتۈش</string>
+    <string name="dejavu_feature_page_history">خالىغان بەتكە قايتىش ئۈچۈن بەت سانىنى چېكىڭ</string>
+    <string name="dejavu_feature_restore_tab">تاقالغان بەتكۈچلەرنى تىزىملىكتىن قايتا ئېچىڭ</string>
+    <string name="dejavu_feature_sidebery">Sidebery ئارقىلىق بەتكۈچلەرنى ئەكىرىڭ ۋە چىقىرىڭ</string>
+    <string name="dejavu_feature_tab_sidebar">تاختا كومپيۇتېرلاردا بەتكۈچلىرىڭىزنى يان تاقاقتا ساقلاڭ</string>
+    <string name="dejavu_feature_floating_search">تاختا كومپيۇتېرلاردا ئىزدەش بەتنىڭ ئۈستىدە لەيلەيدۇ</string>
+    <string name="dejavu_feature_settings_panes">تاختا كومپيۇتېرلاردا تەڭشەكلەرنى ئىككى ئىستوندا كۆرۈڭ</string>
+    <string name="dejavu_feature_search_keywords">\@ ياكى ئاچقۇچلۇق سۆز بىلەن خالىغان موتوردا ئىزدەڭ</string>
 </resources>

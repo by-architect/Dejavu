@@ -11,6 +11,7 @@ import org.junit.Assert.assertTrue
 import org.junit.Test
 import org.junit.runner.RunWith
 import org.mozilla.fenix.R
+import org.mozilla.fenix.dejavu.discover.NewThing
 import org.mozilla.fenix.dejavu.settings.SettingsPane.Step
 import org.robolectric.RobolectricTestRunner
 
@@ -27,6 +28,18 @@ class SettingsCategoriesTest {
         assertEquals(SettingsCategory.SEARCH, categoryOf(R.string.pref_key_search_settings))
         assertEquals(SettingsCategory.PRIVACY, categoryOf(R.string.pref_key_dejavu_tracking_protection))
         assertEquals(SettingsCategory.PRIVACY, categoryOf(R.string.pref_key_delete_browsing_data))
+        assertEquals(SettingsCategory.PRIVACY, categoryOf(R.string.pref_key_dejavu_workspace_lock))
+    }
+
+    @Test
+    fun `the entries that lead to new things are in the categories of what they lead to`() {
+        val categories = NewThing.SETTINGS_ENTRIES.associate { (key, _) -> key to categoryOf(key) }
+
+        assertEquals(SettingsCategory.APPEARANCE, categories[R.string.pref_key_customize])
+        assertEquals(SettingsCategory.APPEARANCE, categories[R.string.pref_key_dejavu_bars])
+        assertEquals(SettingsCategory.CONTROLS, categories[R.string.pref_key_dejavu_more_menu])
+        assertEquals(SettingsCategory.TABS, categories[R.string.pref_key_dejavu_tabs_workspaces])
+        assertEquals(SettingsCategory.PRIVACY, categories[R.string.pref_key_private_browsing])
     }
 
     @Test

@@ -667,4 +667,11 @@
     <string name="dejavu_shortcut_reload">Endurlesa síðu</string>
     <string name="dejavu_shortcut_tab_n">Fara á flipa %1$d</string>
     <string name="dejavu_shortcut_last_tab">Fara á síðasta flipa</string>
+    <string name="dejavu_feature_page_history">Ýttu á síðufjöldann til að fara aftur á hvaða síðu sem er</string>
+    <string name="dejavu_feature_restore_tab">Opnaðu lokaða flipa aftur úr valmyndinni</string>
+    <string name="dejavu_feature_sidebery">Flyttu flipa inn og út með Sidebery</string>
+    <string name="dejavu_feature_tab_sidebar">Hafðu flipana í hliðarstiku á spjaldtölvum</string>
+    <string name="dejavu_feature_floating_search">Leitin svífur yfir síðunni á spjaldtölvum</string>
+    <string name="dejavu_feature_settings_panes">Sjáðu stillingarnar í tveimur dálkum á spjaldtölvum</string>
+    <string name="dejavu_feature_search_keywords">Leitaðu í hvaða leitarvél sem er með @ eða lykilorði</string>
 </resources>

@@ -699,4 +699,11 @@
     <string name="dejavu_shortcut_reload">Dasskarga folen</string>
     <string name="dejavu_shortcut_tab_n">Mos dhe dab %1$d</string>
     <string name="dejavu_shortcut_last_tab">Mos dhe\'n tab diwettha</string>
+    <string name="dejavu_feature_page_history">Gwaska niver an folennow rag dehweles dhe folen vyth</string>
+    <string name="dejavu_feature_restore_tab">Dasygeri tabow degeys a\'n roll</string>
+    <string name="dejavu_feature_sidebery">Ynperthi hag esperthi tabow gans Sidebery</string>
+    <string name="dejavu_feature_tab_sidebar">Gwitha dha dabow yn bar tenewen war skrynyow bras</string>
+    <string name="dejavu_feature_floating_search">War skrynyow bras, an whilas a omdhiskwedh a-ugh an folen</string>
+    <string name="dejavu_feature_settings_panes">Gweles an settyansow yn dew bannel war skrynyow bras</string>
+    <string name="dejavu_feature_search_keywords">Whilas yn jynn vyth gans @ po ger alhwedh</string>
 </resources>

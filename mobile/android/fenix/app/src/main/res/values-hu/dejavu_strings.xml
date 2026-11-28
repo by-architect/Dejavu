@@ -667,4 +667,11 @@
     <string name="dejavu_shortcut_reload">Oldal újratöltése</string>
     <string name="dejavu_shortcut_tab_n">Ugrás a(z) %1$d. lapra</string>
     <string name="dejavu_shortcut_last_tab">Ugrás az utolsó lapra</string>
+    <string name="dejavu_feature_page_history">Koppintson az oldalszámra, hogy bármelyik oldalra visszalépjen</string>
+    <string name="dejavu_feature_restore_tab">Nyissa meg újra a bezárt lapokat a menüből</string>
+    <string name="dejavu_feature_sidebery">Importáljon és exportáljon lapokat a Sideberyvel</string>
+    <string name="dejavu_feature_tab_sidebar">Tartsa a lapjait oldalsávban a táblagépen</string>
+    <string name="dejavu_feature_floating_search">A keresés az oldal fölött lebeg táblagépen</string>
+    <string name="dejavu_feature_settings_panes">Tekintse meg a beállításokat két panelen táblagépen</string>
+    <string name="dejavu_feature_search_keywords">Keressen bármelyik keresővel @ vagy kulcsszó segítségével</string>
 </resources>

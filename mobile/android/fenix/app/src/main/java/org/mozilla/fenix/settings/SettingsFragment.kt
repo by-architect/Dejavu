@@ -245,6 +245,11 @@ class SettingsFragment : PreferenceFragmentCompat(), SystemInsetsPaddedFragment 
             }
         }
 
+        // Dejavu: orange dots lead to what the new versions brought, see NewThings, and go as soon as it was looked at.
+        NewThing.SETTINGS_ENTRIES.forEach { (key, things) ->
+            findPreference<Preference>(getString(key))?.let { NewThings.follow(it, things, viewLifecycleOwner) }
+        }
+
         snackbarBinding.set(
             feature =
                 SnackbarBinding(
@@ -348,11 +353,6 @@ class SettingsFragment : PreferenceFragmentCompat(), SystemInsetsPaddedFragment 
         // Dejavu: when unlocked workspaces lock again.
         requirePreference<Preference>(R.string.pref_key_dejavu_workspace_lock).summary =
             workspaceLockLabel(requireContext(), dejavuSettings().workspaceLockTime.value)
-        // Dejavu: orange dots lead to what the new version brought, see NewThings.
-        NewThings.markAny(requirePreference<Preference>(R.string.pref_key_customize), NewThing.CUSTOMIZE)
-        NewThings.mark(requirePreference<Preference>(R.string.pref_key_dejavu_tabs_workspaces), NewThing.ESSENTIALS)
-        NewThings.mark(requirePreference<Preference>(R.string.pref_key_dejavu_workspace_lock), NewThing.WORKSPACE_LOCK)
-        NewThings.mark(requirePreference<Preference>(R.string.pref_key_private_browsing), NewThing.PRIVATE_BROWSING)
 
         setupPreferences(settings)
 
@@ -397,6 +397,7 @@ class SettingsFragment : PreferenceFragmentCompat(), SystemInsetsPaddedFragment 
                 // Dejavu: what each version brought, its source code, its email, and a way to support it.
                 resources.getString(R.string.pref_key_dejavu_whats_new) -> {
                     DejavuFeatureTourFragment().show(parentFragmentManager, DejavuFeatureTourFragment.TAG)
+                    NewThings.seen(requireContext(), NewThing.WHATS_NEW)
                     null
                 }
 

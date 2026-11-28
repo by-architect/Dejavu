@@ -667,4 +667,11 @@
     <string name="dejavu_shortcut_reload">Ricarica pagina</string>
     <string name="dejavu_shortcut_tab_n">Vai alla scheda %1$d</string>
     <string name="dejavu_shortcut_last_tab">Vai all’ultima scheda</string>
+    <string name="dejavu_feature_page_history">Tocca il numero di pagine per tornare a qualsiasi pagina</string>
+    <string name="dejavu_feature_restore_tab">Riapri le schede chiuse dal menu</string>
+    <string name="dejavu_feature_sidebery">Importa ed esporta schede con Sidebery</string>
+    <string name="dejavu_feature_tab_sidebar">Tieni le schede in una barra laterale sui tablet</string>
+    <string name="dejavu_feature_floating_search">La ricerca fluttua sopra la pagina sui tablet</string>
+    <string name="dejavu_feature_settings_panes">Vedi le impostazioni in due riquadri sui tablet</string>
+    <string name="dejavu_feature_search_keywords">Cerca con qualsiasi motore usando @ o una parola chiave</string>
 </resources>

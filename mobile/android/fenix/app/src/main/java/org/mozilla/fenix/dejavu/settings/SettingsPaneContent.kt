@@ -38,11 +38,15 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.focus.onFocusChanged
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import mozilla.components.ui.icons.R as iconsR
 import org.mozilla.fenix.R
+import org.mozilla.fenix.dejavu.discover.NewThing
+import org.mozilla.fenix.dejavu.discover.newDotAfterText
+import org.mozilla.fenix.dejavu.discover.rememberUnseenNewThings
 import org.mozilla.fenix.dejavu.menu.BORDER_ALPHA
 import org.mozilla.fenix.settings.settingssearch.SettingsSearchItem
 
@@ -80,6 +84,15 @@ internal fun SettingsPaneContent(
     var results by remember { mutableStateOf("" to emptyList<SettingsSearchItem>()) }
     LaunchedEffect(query) { results = query to if (query.isBlank()) emptyList() else search(query) }
     val found = results.second
+    // The categories whose entries lead to new things have the orange dot too, see NewThing.SETTINGS_ENTRIES.
+    val context = LocalContext.current
+    val unseen = rememberUnseenNewThings()
+    val newCategories = remember(unseen) {
+        NewThing.SETTINGS_ENTRIES.filter { (_, things) -> things.any { it in unseen } }
+            .mapTo(mutableSetOf()) { (key, _) ->
+                SettingsCategories.categoryOfKey(context.getString(key), context::getString)
+            }
+    }
     // "No results" is only true once the search of this query is done, not while the one before it is still shown.
     val mode = when {
         query.isBlank() -> ListMode.CATEGORIES
@@ -101,7 +114,12 @@ internal fun SettingsPaneContent(
                 ) {
                     items(SettingsCategory.entries) { category ->
                         NavigationDrawerItem(
-                            label = { Text(stringResource(category.title)) },
+                            label = {
+                                Text(
+                                    text = stringResource(category.title),
+                                    modifier = Modifier.newDotAfterText(category in newCategories),
+                                )
+                            },
                             icon = { Icon(painterResource(category.icon), contentDescription = null) },
                             selected = category == selected,
                             onClick = { onSelect(category) },

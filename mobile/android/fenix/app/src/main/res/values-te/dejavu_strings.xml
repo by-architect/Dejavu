@@ -667,4 +667,11 @@
     <string name="dejavu_shortcut_reload">పేజీ మళ్ళీ లోడ్ చేయి</string>
     <string name="dejavu_shortcut_tab_n">ట్యాబ్ %1$d కు వెళ్ళు</string>
     <string name="dejavu_shortcut_last_tab">చివరి ట్యాబ్‌కు వెళ్ళు</string>
+    <string name="dejavu_feature_page_history">ఏ పేజీకైనా తిరిగి వెళ్ళడానికి పేజీల సంఖ్యను నొక్కండి</string>
+    <string name="dejavu_feature_restore_tab">మూసిన ట్యాబులను మెనూ నుండి మళ్ళీ తెరవండి</string>
+    <string name="dejavu_feature_sidebery">Sideberyతో ట్యాబులను దిగుమతి మరియు ఎగుమతి చేయండి</string>
+    <string name="dejavu_feature_tab_sidebar">టాబ్లెట్లలో మీ ట్యాబులను సైడ్‌బార్‌లో ఉంచండి</string>
+    <string name="dejavu_feature_floating_search">టాబ్లెట్లలో శోధన పేజీపై తేలుతుంది</string>
+    <string name="dejavu_feature_settings_panes">టాబ్లెట్లలో అమరికలను రెండు భాగాలుగా చూడండి</string>
+    <string name="dejavu_feature_search_keywords">\@ లేదా కీవర్డ్‌తో ఏ శోధన యంత్రంలోనైనా వెతకండి</string>
 </resources>

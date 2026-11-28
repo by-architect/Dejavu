@@ -97,7 +97,7 @@ import org.mozilla.fenix.theme.FirefoxTheme
 
 /**
  * A feature the tour shows: its title, where to find it, and its animation. The animations and the GIFs to share
- * them are made by scripts/dejavu-feature-gifs.py, which writes the same titles on the GIFs.
+ * them are made by scripts/make-media-gifs.py in the Kaizen project, which writes the same titles on the GIFs.
  *
  * @property title What the feature does, in a few words.
  * @property animation The phone showing the feature, an animated WebP.
@@ -165,6 +165,29 @@ enum class DejavuFeature(
         R.raw.dejavu_feature_save_page,
         listOf(R.string.preferences_customize, R.string.dejavu_settings_more_menu),
     ),
+    PAGE_HISTORY(R.string.dejavu_feature_page_history, R.raw.dejavu_feature_page_history),
+    RESTORE_TAB(
+        R.string.dejavu_feature_restore_tab,
+        R.raw.dejavu_feature_restore_tab,
+        listOf(R.string.preferences_customize, R.string.dejavu_settings_more_menu),
+    ),
+    SIDEBERY(
+        R.string.dejavu_feature_sidebery,
+        R.raw.dejavu_feature_sidebery,
+        listOf(R.string.dejavu_settings_tabs_workspaces, R.string.dejavu_settings_tabs_import_export),
+    ),
+    TAB_SIDEBAR(
+        R.string.dejavu_feature_tab_sidebar,
+        R.raw.dejavu_feature_tab_sidebar,
+        listOf(R.string.preferences_customize, R.string.dejavu_settings_bars_2),
+    ),
+    FLOATING_SEARCH(R.string.dejavu_feature_floating_search, R.raw.dejavu_feature_floating_search),
+    SETTINGS_PANES(R.string.dejavu_feature_settings_panes, R.raw.dejavu_feature_settings_panes),
+    SEARCH_KEYWORDS(
+        R.string.dejavu_feature_search_keywords,
+        R.raw.dejavu_feature_search_keywords,
+        listOf(R.string.preferences_search, R.string.preferences_default_search_engine),
+    ),
 }
 
 /**
@@ -177,7 +200,10 @@ data class TourChapter(val version: String, val features: List<DejavuFeature>)
 
 /** The tour of what each version of Dejavu brought, which only What's new in the settings shows. */
 object FeatureTour {
-    /** What each version brought, oldest first. A version with something to show adds its chapter at the end. */
+    /**
+     * What each version brought, oldest first. A version with something to show adds its chapter at the end. What an
+     * orange dot already leads to, see [org.mozilla.fenix.dejavu.discover.NewThing], needs no page of its own.
+     */
     val Releases = listOf(
         TourChapter(
             version = "1.0",
@@ -203,6 +229,20 @@ object FeatureTour {
                 DejavuFeature.SAVE_PAGE,
             ),
         ),
+        // The tab features of 4.0, which came early with 3.2.
+        TourChapter(
+            version = "4.0",
+            features = listOf(DejavuFeature.PAGE_HISTORY, DejavuFeature.RESTORE_TAB, DejavuFeature.SIDEBERY),
+        ),
+        TourChapter(
+            version = "4.1",
+            features = listOf(
+                DejavuFeature.TAB_SIDEBAR,
+                DejavuFeature.FLOATING_SEARCH,
+                DejavuFeature.SETTINGS_PANES,
+                DejavuFeature.SEARCH_KEYWORDS,
+            ),
+        ),
     )
 
     /** Compares versions like "2.0" and "1.10" part by part, a missing part counting as 0. */
@@ -224,17 +264,44 @@ object FeatureTour {
  */
 fun Context.wasUpdated(): Boolean = DataStart.wasUpdated(this)
 
-/** When Dejavu's data began, kept as the time of the app's last update then, see [wasUpdated]. */
+/**
+ * The version of Dejavu its data began with, like "4.1.0": the one installed fresh, or the one that ran when its data
+ * was cleared. What later versions brought came with an update. See [startVersionOf] for data from before 4.1.
+ */
+fun Context.dataStartVersion(): String = DataStart.version(this)
+
+/**
+ * The version Dejavu's data began with: the one [saved] when it began, which Dejavu keeps since 4.1. Data from before
+ * that tells only when it began, [began], the app's install time then, which Dejavu keeps since 3.0: after 4.0 came out
+ * it began with 4.0, else with 3.0 or later. Without either it began before 3.0. Those older starts give the first
+ * version they can have begun with, which is enough to tell what came after them.
+ */
+internal fun startVersionOf(saved: String?, began: Long?): String = when {
+    saved != null -> saved
+    began == null -> "1.0"
+    began >= FIRST_4_0_BUILD_MS -> "4.0"
+    else -> "3.0"
+}
+
+/** When Dejavu's data began, kept as the time of the app's last update then and its version, see [wasUpdated]. */
 private object DataStart {
     private const val PREFS_NAME = "dejavu_data_start"
     private const val KEY_UPDATE_TIME = "update_time"
+    private const val KEY_VERSION = "version"
     private const val NONE = -1L
 
     @Volatile
     private var updated: Boolean? = null
 
+    @Volatile
+    private var startVersion: String? = null
+
     fun wasUpdated(context: Context): Boolean = updated ?: synchronized(this) {
         updated ?: decide(context).also { updated = it }
+    }
+
+    fun version(context: Context): String = startVersion ?: synchronized(this) {
+        startVersion ?: readVersion(context).also { startVersion = it }
     }
 
     private fun decide(context: Context): Boolean = runCatching {
@@ -248,12 +315,30 @@ private object DataStart {
                 WorkspaceRepository.get(context).foundSavedState ->
                     info.lastUpdateTime - info.firstInstallTime > UPDATE_MARGIN_MS
                 else -> {
-                    prefs.edit { putLong(KEY_UPDATE_TIME, info.lastUpdateTime) }
+                    prefs.edit {
+                        putLong(KEY_UPDATE_TIME, info.lastUpdateTime)
+                        // Without what a test or debug build adds to it, like "-debug".
+                        putString(KEY_VERSION, info.versionName.orEmpty().substringBefore('-'))
+                    }
                     false
                 }
             }
         }
     }.getOrDefault(false)
+
+    private fun readVersion(context: Context): String {
+        // A fresh start keeps its version first.
+        wasUpdated(context)
+        return runCatching {
+            context.components.strictMode.allowViolation(StrictMode::allowThreadDiskReads) {
+                val prefs = context.getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE)
+                startVersionOf(
+                    saved = prefs.getString(KEY_VERSION, null),
+                    began = prefs.getLong(KEY_UPDATE_TIME, NONE).takeIf { it != NONE },
+                )
+            }
+        }.getOrDefault(startVersionOf(saved = null, began = null))
+    }
 }
 
 /**
@@ -553,3 +638,6 @@ private val WHERE_HEIGHT = 56.dp
 // How small a title gets before it is cut off, as a share of its size.
 private const val MIN_TEXT_SCALE = 0.75f
 private const val UPDATE_MARGIN_MS = 60_000L
+
+// When the first build of Dejavu 4.0 was made, 2026-11-20 14:57:30 UTC: no Dejavu was installed with 4.0 before it.
+private const val FIRST_4_0_BUILD_MS = 1_795_186_650_000L

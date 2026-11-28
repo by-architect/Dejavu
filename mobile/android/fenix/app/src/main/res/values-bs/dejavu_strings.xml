@@ -675,4 +675,11 @@
     <string name="dejavu_shortcut_reload">Ponovo učitaj stranicu</string>
     <string name="dejavu_shortcut_tab_n">Idi na tab %1$d</string>
     <string name="dejavu_shortcut_last_tab">Idi na zadnji tab</string>
+    <string name="dejavu_feature_page_history">Dodirnite broj stranica da se vratite na bilo koju</string>
+    <string name="dejavu_feature_restore_tab">Ponovo otvorite zatvorene tabove iz menija</string>
+    <string name="dejavu_feature_sidebery">Uvezite i izvezite tabove u Sidebery i iz njega</string>
+    <string name="dejavu_feature_tab_sidebar">Držite tabove u bočnoj traci na tabletima</string>
+    <string name="dejavu_feature_floating_search">Pretraga lebdi iznad stranice na tabletima</string>
+    <string name="dejavu_feature_settings_panes">Gledajte postavke u dva okna na tabletima</string>
+    <string name="dejavu_feature_search_keywords">Tražite bilo kojim pretraživačem uz @ ili ključnu riječ</string>
 </resources>

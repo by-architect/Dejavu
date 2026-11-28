@@ -700,4 +700,11 @@
     <string name="dejavu_shortcut_reload">પેજ ફરી લોડ કરો</string>
     <string name="dejavu_shortcut_tab_n">ટૅબ %1$d પર જાઓ</string>
     <string name="dejavu_shortcut_last_tab">છેલ્લા ટૅબ પર જાઓ</string>
+    <string name="dejavu_feature_page_history">કોઈપણ પૃષ્ઠ પર પાછા જવા માટે પૃષ્ઠોની સંખ્યા પર ટૅપ કરો</string>
+    <string name="dejavu_feature_restore_tab">મેનૂમાંથી બંધ કરેલી ટૅબ્સ ફરીથી ખોલો</string>
+    <string name="dejavu_feature_sidebery">Sidebery સાથે ટૅબ્સ આયાત અને નિકાસ કરો</string>
+    <string name="dejavu_feature_tab_sidebar">ટૅબ્લેટ પર તમારી ટૅબ્સ સાઇડબારમાં રાખો</string>
+    <string name="dejavu_feature_floating_search">ટૅબ્લેટ પર શોધ પૃષ્ઠની ઉપર તરે છે</string>
+    <string name="dejavu_feature_settings_panes">ટૅબ્લેટ પર સેટિંગ્સ બે ભાગમાં જુઓ</string>
+    <string name="dejavu_feature_search_keywords">\@ અથવા કીવર્ડ વડે કોઈપણ એન્જિનમાં શોધો</string>
 </resources>

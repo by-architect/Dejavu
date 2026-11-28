@@ -683,4 +683,11 @@
     <string name="dejavu_shortcut_reload">Ath-luchdaich an duilleag</string>
     <string name="dejavu_shortcut_tab_n">Rach gu taba %1$d</string>
     <string name="dejavu_shortcut_last_tab">Rach gun taba mu dheireadh</string>
+    <string name="dejavu_feature_page_history">Brùth air àireamh nan duilleagan gus tilleadh gu tè sam bith</string>
+    <string name="dejavu_feature_restore_tab">Fosgail tabaichean dùinte a-rithist on chlàr-taice</string>
+    <string name="dejavu_feature_sidebery">Ion-phortaich is às-phortaich tabaichean le Sidebery</string>
+    <string name="dejavu_feature_tab_sidebar">Cùm na tabaichean agad ann am bàr-taoibh air tablaidean</string>
+    <string name="dejavu_feature_floating_search">Bidh an lorg a’ fleòdradh os cionn na duilleige air tablaidean</string>
+    <string name="dejavu_feature_settings_panes">Faic na roghainnean ann an dà leòsan air tablaidean</string>
+    <string name="dejavu_feature_search_keywords">Cleachd einnsean-luirg sam bith le @ no prìomh-fhacal</string>
 </resources>

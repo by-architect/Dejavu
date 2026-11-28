@@ -667,4 +667,11 @@
     <string name="dejavu_shortcut_reload">पृष्ठ पुनः लोड गर्नुहोस्</string>
     <string name="dejavu_shortcut_tab_n">ट्याब %1$d मा जानुहोस्</string>
     <string name="dejavu_shortcut_last_tab">अन्तिम ट्याबमा जानुहोस्</string>
+    <string name="dejavu_feature_page_history">कुनै पनि पृष्ठमा फर्कन पृष्ठहरूको सङ्ख्यामा ट्याप गर्नुहोस्</string>
+    <string name="dejavu_feature_restore_tab">बन्द गरिएका ट्याबहरु मेनुबाट फेरि खोल्नुहोस्</string>
+    <string name="dejavu_feature_sidebery">Sidebery सँग ट्याबहरु आयात र निर्यात गर्नुहोस्</string>
+    <string name="dejavu_feature_tab_sidebar">ट्याब्लेटमा आफ्ना ट्याबहरु साइडबारमा राख्नुहोस्</string>
+    <string name="dejavu_feature_floating_search">ट्याब्लेटमा खोजी पृष्ठमाथि तैरिन्छ</string>
+    <string name="dejavu_feature_settings_panes">ट्याब्लेटमा सेटिङ्गहरु दुई प्यानलमा हेर्नुहोस्</string>
+    <string name="dejavu_feature_search_keywords">\@ वा किवर्डले जुनसुकै खोजी इन्जिनमा खोज्नुहोस्</string>
 </resources>

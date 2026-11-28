@@ -675,4 +675,11 @@
     <string name="dejavu_shortcut_reload">Поново учитај страницу</string>
     <string name="dejavu_shortcut_tab_n">Иди на језичак %1$d</string>
     <string name="dejavu_shortcut_last_tab">Иди на последњи језичак</string>
+    <string name="dejavu_feature_page_history">Додирните број страница да се вратите на било коју страницу</string>
+    <string name="dejavu_feature_restore_tab">Поново отворите затворене језичке из менија</string>
+    <string name="dejavu_feature_sidebery">Увезите и извезите језичке преко Sidebery</string>
+    <string name="dejavu_feature_tab_sidebar">Држите језичке у бочној траци на таблетима</string>
+    <string name="dejavu_feature_floating_search">Претрага лебди изнад странице на таблетима</string>
+    <string name="dejavu_feature_settings_panes">Погледајте подешавања у две колоне на таблетима</string>
+    <string name="dejavu_feature_search_keywords">Претражујте било којим претраживачем уз @ или кључну реч</string>
 </resources>

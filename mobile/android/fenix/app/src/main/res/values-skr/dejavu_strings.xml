@@ -667,4 +667,11 @@
     <string name="dejavu_shortcut_reload">ورقہ ولا لوڈ کرو</string>
     <string name="dejavu_shortcut_tab_n">ٹیب %1$d تے ونڄو</string>
     <string name="dejavu_shortcut_last_tab">چھیکڑی ٹیب تے ونڄو</string>
+    <string name="dejavu_feature_page_history">کہیں وی ورقے تے واپس ونڄݨ کیتے ورقیاں دی ڳݨتی تے ٹیپ کرو</string>
+    <string name="dejavu_feature_restore_tab">مینیو کنوں بند ٹیباں ولا کھولو</string>
+    <string name="dejavu_feature_sidebery">Sidebery نال ٹیباں درآمد تے برآمد کرو</string>
+    <string name="dejavu_feature_tab_sidebar">ٹیبلیٹاں تے آپݨیاں ٹیباں سائیڈ بار وچ رکھو</string>
+    <string name="dejavu_feature_floating_search">ٹیبلیٹاں تے ڳولݨ آلی پٹی ورقے اُتے تردی ہے</string>
+    <string name="dejavu_feature_settings_panes">ٹیبلیٹاں تے ترتیباں ݙو حصیاں وچ ݙیکھو</string>
+    <string name="dejavu_feature_search_keywords">\@ یا کی ورڈ نال کہیں وی ڳولݨ انجݨ وچ ڳولو</string>
 </resources>

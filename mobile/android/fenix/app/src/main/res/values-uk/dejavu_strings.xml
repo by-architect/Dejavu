@@ -683,4 +683,11 @@
     <string name="dejavu_shortcut_reload">Перезавантажити сторінку</string>
     <string name="dejavu_shortcut_tab_n">Перейти до вкладки %1$d</string>
     <string name="dejavu_shortcut_last_tab">Перейти до останньої вкладки</string>
+    <string name="dejavu_feature_page_history">Торкніться лічильника сторінок, щоб повернутися до будь-якої з них</string>
+    <string name="dejavu_feature_restore_tab">Відновлюйте закриті вкладки з меню</string>
+    <string name="dejavu_feature_sidebery">Імпортуйте та експортуйте вкладки через Sidebery</string>
+    <string name="dejavu_feature_tab_sidebar">Тримайте вкладки на бічній панелі на планшетах</string>
+    <string name="dejavu_feature_floating_search">Пошук плаває над сторінкою на планшетах</string>
+    <string name="dejavu_feature_settings_panes">Переглядайте налаштування у дві колонки на планшетах</string>
+    <string name="dejavu_feature_search_keywords">Шукайте будь-якою пошуковою системою з @ або ключовим словом</string>
 </resources>

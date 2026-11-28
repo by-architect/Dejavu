@@ -700,4 +700,11 @@
     <string name="dejavu_shortcut_reload">पेज फिर से लोड करें</string>
     <string name="dejavu_shortcut_tab_n">टैब %1$d पर जाएँ</string>
     <string name="dejavu_shortcut_last_tab">आख़िरी टैब पर जाएँ</string>
+    <string name="dejavu_feature_page_history">किसी भी पेज पर वापस जाने के लिए पेज की गिनती पर टैप करें</string>
+    <string name="dejavu_feature_restore_tab">बंद किए गए टैब मेन्यू से फिर से खोलें</string>
+    <string name="dejavu_feature_sidebery">Sidebery के साथ टैब इंपोर्ट और एक्सपोर्ट करें</string>
+    <string name="dejavu_feature_tab_sidebar">टैबलेट पर अपने टैब साइडबार में रखें</string>
+    <string name="dejavu_feature_floating_search">टैबलेट पर सर्च पेज के ऊपर तैरता है</string>
+    <string name="dejavu_feature_settings_panes">टैबलेट पर सेटिंग दो हिस्सों में देखें</string>
+    <string name="dejavu_feature_search_keywords">\@ या कीवर्ड से किसी भी सर्च इंजन में सर्च करें</string>
 </resources>

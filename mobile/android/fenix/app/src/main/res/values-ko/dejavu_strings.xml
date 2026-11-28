@@ -659,4 +659,11 @@
     <string name="dejavu_shortcut_reload">페이지 새로 고침</string>
     <string name="dejavu_shortcut_tab_n">탭 %1$d(으)로 이동</string>
     <string name="dejavu_shortcut_last_tab">마지막 탭으로 이동</string>
+    <string name="dejavu_feature_page_history">페이지 수를 눌러 원하는 페이지로 돌아가세요</string>
+    <string name="dejavu_feature_restore_tab">닫은 탭을 메뉴에서 다시 여세요</string>
+    <string name="dejavu_feature_sidebery">Sidebery를 통해 탭을 가져오고 내보내세요</string>
+    <string name="dejavu_feature_tab_sidebar">태블릿에서는 탭을 사이드바에 두세요</string>
+    <string name="dejavu_feature_floating_search">태블릿에서는 검색창이 페이지 위에 떠 있습니다</string>
+    <string name="dejavu_feature_settings_panes">태블릿에서는 설정을 두 개의 창으로 보세요</string>
+    <string name="dejavu_feature_search_keywords">\@ 또는 키워드로 원하는 엔진에서 검색하세요</string>
 </resources>

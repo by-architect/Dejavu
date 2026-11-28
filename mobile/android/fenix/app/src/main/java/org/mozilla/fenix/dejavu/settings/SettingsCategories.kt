@@ -90,6 +90,7 @@ object SettingsCategories {
         SettingsCategory.PRIVACY to listOf(
             R.string.pref_key_dejavu_passwords_language,
             R.string.pref_key_private_browsing,
+            R.string.pref_key_dejavu_workspace_lock,
             R.string.pref_key_dejavu_tracking_protection,
             R.string.pref_key_ip_protection_settings,
             R.string.pref_key_https_only_settings,

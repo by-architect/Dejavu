@@ -683,4 +683,11 @@
     <string name="dejavu_shortcut_reload">Įkelti tinklalapį iš naujo</string>
     <string name="dejavu_shortcut_tab_n">Eiti į %1$d kortelę</string>
     <string name="dejavu_shortcut_last_tab">Eiti į paskutinę kortelę</string>
+    <string name="dejavu_feature_page_history">Palieskite puslapių skaičių, kad grįžtumėte į bet kurį puslapį</string>
+    <string name="dejavu_feature_restore_tab">Vėl atverkite užvertas korteles iš meniu</string>
+    <string name="dejavu_feature_sidebery">Importuokite ir eksportuokite korteles su Sidebery</string>
+    <string name="dejavu_feature_tab_sidebar">Planšetėse laikykite korteles šoninėje juostoje</string>
+    <string name="dejavu_feature_floating_search">Planšetėse paieška plūduriuoja virš puslapio</string>
+    <string name="dejavu_feature_settings_panes">Planšetėse matykite nuostatas dviejuose skydeliuose</string>
+    <string name="dejavu_feature_search_keywords">Ieškokite bet kurioje ieškyklėje su @ arba raktažodžiu</string>
 </resources>

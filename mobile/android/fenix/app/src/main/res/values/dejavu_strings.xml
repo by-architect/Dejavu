@@ -744,6 +744,20 @@
     <string name="dejavu_feature_wallpaper">Give a workspace a wallpaper</string>
     <!-- Feature tour title, in the chapter of Dejavu 3.0: Save page in the More menu saves the page as one file that opens without internet. -->
     <string name="dejavu_feature_save_page">Save pages to read without internet</string>
+    <!-- Feature tour title, in the chapter of Dejavu 4.0: the number at the right end of the address bar counts the pages of the tab; tapping it lists them, and picking one goes back to it. -->
+    <string name="dejavu_feature_page_history">Tap the page count to go back to any page</string>
+    <!-- Feature tour title, in the chapter of Dejavu 4.0: the More menu and the actions bar can get a button that reopens the tab closed last. -->
+    <string name="dejavu_feature_restore_tab">Reopen closed tabs from the menu</string>
+    <!-- Feature tour title, in the chapter of Dejavu 4.0: workspaces, folders and tabs can be exported to and imported from Sidebery, a tab manager extension for Firefox on computers. "Sidebery" is a name and stays as it is. -->
+    <string name="dejavu_feature_sidebery">Import and export tabs with Sidebery</string>
+    <!-- Feature tour title, in the chapter of Dejavu 4.1: on tablets, the tabs and workspaces stay in a sidebar beside the page. -->
+    <string name="dejavu_feature_tab_sidebar">Keep your tabs in a sidebar on tablets</string>
+    <!-- Feature tour title, in the chapter of Dejavu 4.1: on tablets, searching shows the address bar floating in the middle of the page, with the suggestions below it. -->
+    <string name="dejavu_feature_floating_search">Search floats over the page on tablets</string>
+    <!-- Feature tour title, in the chapter of Dejavu 4.1: on tablets, the settings show the list of their categories beside the settings of the chosen one. -->
+    <string name="dejavu_feature_settings_panes">See settings in two panes on tablets</string>
+    <!-- Feature tour title, in the chapter of Dejavu 4.1: typing "@" and a few letters of a search engine's name, or the engine's keyword, before the search searches with that engine. "@" stays as it is. -->
+    <string name="dejavu_feature_search_keywords">Search any engine with @ or a keyword</string>
 
     <!-- Welcome pages: shown once when a fresh install of Dejavu starts, and again from About. Each page makes one choice, kept at once. Their Back, Next and Skip buttons use dejavu_back, dejavu_features_next and dejavu_features_skip. -->
     <!-- About entry that opens the welcome pages again. -->

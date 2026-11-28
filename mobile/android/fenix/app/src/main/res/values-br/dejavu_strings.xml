@@ -691,4 +691,11 @@
     <string name="dejavu_shortcut_reload">Adkargañ ar bajenn</string>
     <string name="dejavu_shortcut_tab_n">Mont d\'an ivinell %1$d</string>
     <string name="dejavu_shortcut_last_tab">Mont d\'an ivinell diwezhañ</string>
+    <string name="dejavu_feature_page_history">Pouezañ war niver ar pajennoù evit distreiñ d\'unan anezho</string>
+    <string name="dejavu_feature_restore_tab">Digeriñ en-dro ivinelloù serret diwar ar meuziad</string>
+    <string name="dejavu_feature_sidebery">Enporzhiañ hag ezporzhiañ ivinelloù gant Sidebery</string>
+    <string name="dejavu_feature_tab_sidebar">Derc\'hel an ivinelloù en ur varrenn gostez war dabletennoù</string>
+    <string name="dejavu_feature_floating_search">Neuñviñ a ra an enklask a-us d\'ar bajenn war dabletennoù</string>
+    <string name="dejavu_feature_settings_panes">Gwelet an arventennoù e div lodenn war dabletennoù</string>
+    <string name="dejavu_feature_search_keywords">Klask e forzh peseurt lusker gant @ pe ur ger-stur</string>
 </resources>

@@ -667,4 +667,11 @@
     <string name="dejavu_shortcut_reload">Na\'nïnj ñû pájina</string>
     <string name="dejavu_shortcut_tab_n">Gu\'nàj pestaña %1$d</string>
     <string name="dejavu_shortcut_last_tab">Gu\'nàj pestaña ne\' rūkù nïn</string>
+    <string name="dejavu_feature_page_history">Toca el número de páginas para volver a cualquier página</string>
+    <string name="dejavu_feature_restore_tab">Reabre rakïj ñanj cerradas desde el menú</string>
+    <string name="dejavu_feature_sidebery">Importa y exporta rakïj ñanj con Sidebery</string>
+    <string name="dejavu_feature_tab_sidebar">Mantén tus rakïj ñanj en una barra lateral en tabletas</string>
+    <string name="dejavu_feature_floating_search">La búsqueda flota sobre la página en tabletas</string>
+    <string name="dejavu_feature_settings_panes">Ve la configuración en dos paneles en tabletas</string>
+    <string name="dejavu_feature_search_keywords">Busca en cualquier motor con @ o con tutun ra\'a</string>
 </resources>

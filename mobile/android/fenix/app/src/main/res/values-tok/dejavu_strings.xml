@@ -659,4 +659,11 @@
     <string name="dejavu_shortcut_reload">o open sin e lipu</string>
     <string name="dejavu_shortcut_tab_n">o tawa poki nanpa %1$d</string>
     <string name="dejavu_shortcut_last_tab">o tawa poki pini</string>
+    <string name="dejavu_feature_page_history">o luka e nanpa lipu la sina ken tawa lipu pini ale</string>
+    <string name="dejavu_feature_restore_tab">o open sin e poki pini tan ilo mute</string>
+    <string name="dejavu_feature_sidebery">o kama e poki, o pana e poki kepeken Sidebery</string>
+    <string name="dejavu_feature_tab_sidebar">o awen e poki sina lon lipu poka lon ilo suli</string>
+    <string name="dejavu_feature_floating_search">linja alasa li lon sinpin lipu lon ilo suli</string>
+    <string name="dejavu_feature_settings_panes">o lukin e nasin ilo lon lipu tu lon ilo suli</string>
+    <string name="dejavu_feature_search_keywords">o alasa lon ilo alasa ale kepeken @ anu nimi alasa</string>
 </resources>

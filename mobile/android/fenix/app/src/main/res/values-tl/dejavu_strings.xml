@@ -667,4 +667,11 @@
     <string name="dejavu_shortcut_reload">I-reload ang pahina</string>
     <string name="dejavu_shortcut_tab_n">Pumunta sa tab %1$d</string>
     <string name="dejavu_shortcut_last_tab">Pumunta sa huling tab</string>
+    <string name="dejavu_feature_page_history">I-tap ang bilang ng pahina para bumalik sa kahit anong pahina</string>
+    <string name="dejavu_feature_restore_tab">Buksang muli ang mga isinarang tab mula sa menu</string>
+    <string name="dejavu_feature_sidebery">Mag-import at mag-export ng mga tab gamit ang Sidebery</string>
+    <string name="dejavu_feature_tab_sidebar">Panatilihin ang iyong mga tab sa sidebar sa mga tablet</string>
+    <string name="dejavu_feature_floating_search">Lumulutang ang paghahanap sa ibabaw ng pahina sa mga tablet</string>
+    <string name="dejavu_feature_settings_panes">Tingnan ang mga setting sa dalawang panel sa mga tablet</string>
+    <string name="dejavu_feature_search_keywords">Maghanap sa kahit anong search engine gamit ang @ o keyword</string>
 </resources>

@@ -16,6 +16,8 @@ import androidx.preference.PreferenceGroup
 import androidx.recyclerview.widget.RecyclerView
 import java.util.WeakHashMap
 import org.mozilla.fenix.R
+import org.mozilla.fenix.dejavu.discover.NewThing
+import org.mozilla.fenix.dejavu.discover.NewThings
 import org.mozilla.fenix.settings.SettingsFragment
 
 /**
@@ -105,7 +107,17 @@ internal class SettingsCategoryPages(
         // A setting Firefox showed again after the page hid it is the page's to hide again.
         page.hidden.removeAll { it.isVisible }
         if (page.shortcuts == null) page.shortcuts = addShortcuts(fragment, screen, category)
+        page.shortcuts?.let(::markShortcuts)
         keep(screen, page, category, fragment::getString)
+    }
+
+    /** Puts orange dots on the shortcuts that lead to new things, as the entries of the Settings screen have them. */
+    private fun markShortcuts(shortcuts: PreferenceCategory) {
+        SettingsCategories.shortcuts.forEach { shortcut ->
+            shortcuts.findPreference<Preference>("$SHORTCUTS_KEY${shortcut.destination}")?.let {
+                NewThings.markAny(it, NewThing.ledToBy(shortcut.key))
+            }
+        }
     }
 
     /** Hides what is not [category]'s in [group], and returns whether anything in it is left to show. */

@@ -667,4 +667,11 @@
     <string name="dejavu_shortcut_reload">ପୃଷ୍ଠା ପୁନଃ ଲୋଡ୍ କରନ୍ତୁ</string>
     <string name="dejavu_shortcut_tab_n">ଟ୍ୟାବ୍ %1$dକୁ ଯାଆନ୍ତୁ</string>
     <string name="dejavu_shortcut_last_tab">ଶେଷ ଟ୍ୟାବ୍‌କୁ ଯାଆନ୍ତୁ</string>
+    <string name="dejavu_feature_page_history">ଯେକୌଣସି ପୃଷ୍ଠାକୁ ଫେରିବାକୁ ପୃଷ୍ଠା ସଂଖ୍ୟା ଟାପ୍ କରନ୍ତୁ</string>
+    <string name="dejavu_feature_restore_tab">ବନ୍ଦ ହୋଇଥିବା ଟ୍ୟାବ୍‌କୁ ମେନୁରୁ ପୁଣି ଖୋଲନ୍ତୁ</string>
+    <string name="dejavu_feature_sidebery">Sidebery ସହିତ ଟ୍ୟାବ୍ ଆମଦାନି ଓ ରପ୍ତାନି କରନ୍ତୁ</string>
+    <string name="dejavu_feature_tab_sidebar">ଟାବଲେଟ୍‌ରେ ଆପଣଙ୍କ ଟ୍ୟାବ୍‌କୁ ସାଇଡବାରରେ ରଖନ୍ତୁ</string>
+    <string name="dejavu_feature_floating_search">ଟାବଲେଟ୍‌ରେ ସନ୍ଧାନ ପୃଷ୍ଠା ଉପରେ ଭାସେ</string>
+    <string name="dejavu_feature_settings_panes">ଟାବଲେଟ୍‌ରେ ସେଟିଂସମୂହକୁ ଦୁଇଟି ପ୍ୟାନେଲ୍‌ରେ ଦେଖନ୍ତୁ</string>
+    <string name="dejavu_feature_search_keywords">\@ କିମ୍ବା କୀୱାର୍ଡ ସହ ଯେକୌଣସି ଇଞ୍ଜିନ୍‌ରେ ଖୋଜନ୍ତୁ</string>
 </resources>

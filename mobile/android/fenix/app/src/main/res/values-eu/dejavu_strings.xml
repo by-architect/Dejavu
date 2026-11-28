@@ -667,4 +667,11 @@
     <string name="dejavu_shortcut_reload">Berritu orria</string>
     <string name="dejavu_shortcut_tab_n">Joan %1$d. fitxara</string>
     <string name="dejavu_shortcut_last_tab">Joan azken fitxara</string>
+    <string name="dejavu_feature_page_history">Sakatu orri-kontagailua edozein orritara itzultzeko</string>
+    <string name="dejavu_feature_restore_tab">Berrireki itxitako fitxak menutik</string>
+    <string name="dejavu_feature_sidebery">Inportatu eta esportatu fitxak Sideberyrekin</string>
+    <string name="dejavu_feature_tab_sidebar">Eduki zure fitxak alboko barra batean tabletetan</string>
+    <string name="dejavu_feature_floating_search">Bilaketa orriaren gainean flotatzen da tabletetan</string>
+    <string name="dejavu_feature_settings_panes">Ikusi ezarpenak bi paneletan tabletetan</string>
+    <string name="dejavu_feature_search_keywords">Bilatu edozein motorrekin @ edo gako-hitz bat erabiliz</string>
 </resources>

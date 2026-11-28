@@ -667,4 +667,11 @@
     <string name="dejavu_shortcut_reload">Laadi leht uuesti</string>
     <string name="dejavu_shortcut_tab_n">Mine kaardile %1$d</string>
     <string name="dejavu_shortcut_last_tab">Mine viimasele kaardile</string>
+    <string name="dejavu_feature_page_history">Puuduta lehtede arvu, et minna tagasi mis tahes lehele</string>
+    <string name="dejavu_feature_restore_tab">Ava suletud kaardid menüüst uuesti</string>
+    <string name="dejavu_feature_sidebery">Impordi ja ekspordi kaarte Sideberyga</string>
+    <string name="dejavu_feature_tab_sidebar">Hoia tahvelarvutis oma kaardid külgribal</string>
+    <string name="dejavu_feature_floating_search">Otsing hõljub tahvelarvutis lehe kohal</string>
+    <string name="dejavu_feature_settings_panes">Vaata tahvelarvutis sätteid kahes paanis</string>
+    <string name="dejavu_feature_search_keywords">Otsi mis tahes otsingumootoriga @ või märksõna abil</string>
 </resources>

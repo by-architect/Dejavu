@@ -659,4 +659,11 @@
     <string name="dejavu_shortcut_reload">โหลดหน้าใหม่</string>
     <string name="dejavu_shortcut_tab_n">ไปที่แท็บ %1$d</string>
     <string name="dejavu_shortcut_last_tab">ไปที่แท็บสุดท้าย</string>
+    <string name="dejavu_feature_page_history">แตะจำนวนหน้าเพื่อกลับไปยังหน้าใดก็ได้</string>
+    <string name="dejavu_feature_restore_tab">เปิดแท็บที่ปิดไปอีกครั้งจากเมนู</string>
+    <string name="dejavu_feature_sidebery">นำเข้าและส่งออกแท็บด้วย Sidebery</string>
+    <string name="dejavu_feature_tab_sidebar">เก็บแท็บไว้ในแถบข้างเมื่อใช้แท็บเล็ต</string>
+    <string name="dejavu_feature_floating_search">การค้นหาลอยอยู่เหนือหน้าเว็บบนแท็บเล็ต</string>
+    <string name="dejavu_feature_settings_panes">ดูการตั้งค่าแบบสองคอลัมน์บนแท็บเล็ต</string>
+    <string name="dejavu_feature_search_keywords">ค้นหาด้วยเครื่องมือค้นหาใดก็ได้ผ่าน @ หรือคำหลัก</string>
 </resources>

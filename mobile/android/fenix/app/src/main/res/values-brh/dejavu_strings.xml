@@ -667,4 +667,11 @@
     <string name="dejavu_shortcut_reload">پنہ اے پدا لوڈ کر</string>
     <string name="dejavu_shortcut_tab_n">ٹیب %1$d آ ہن</string>
     <string name="dejavu_shortcut_last_tab">آخرو ٹیب آ ہن</string>
+    <string name="dejavu_feature_page_history">ہر صفحہ غا پدا ہننگ کن صفحاک نا گنتی پار ٹیپ کبو</string>
+    <string name="dejavu_feature_restore_tab">بند ٹیباتے مینو آن دوبارہ ملبو</string>
+    <string name="dejavu_feature_sidebery">Sidebery تو ٹیباتے امپورٹ او ایکسپورٹ کبو</string>
+    <string name="dejavu_feature_tab_sidebar">ٹیبلٹاک پار تینا ٹیباتے سائیڈ بار اٹی ایتبو</string>
+    <string name="dejavu_feature_floating_search">ٹیبلٹاک پار پٹ و پول صفحہ نا بُرز آ فلوٹ مریک</string>
+    <string name="dejavu_feature_settings_panes">ٹیبلٹاک پار سیٹنگاتے ایرا پینل اٹی خنبو</string>
+    <string name="dejavu_feature_search_keywords">\@ یا کلیدی لپز تو ہر اینجن اٹ پٹبو</string>
 </resources>

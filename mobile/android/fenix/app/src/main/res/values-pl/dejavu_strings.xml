@@ -683,4 +683,11 @@
     <string name="dejavu_shortcut_reload">Odśwież stronę</string>
     <string name="dejavu_shortcut_tab_n">Przejdź do karty %1$d</string>
     <string name="dejavu_shortcut_last_tab">Przejdź do ostatniej karty</string>
+    <string name="dejavu_feature_page_history">Dotknij liczby stron, aby wrócić do dowolnej strony</string>
+    <string name="dejavu_feature_restore_tab">Przywracaj zamknięte karty z menu</string>
+    <string name="dejavu_feature_sidebery">Importuj i eksportuj karty z Sidebery</string>
+    <string name="dejavu_feature_tab_sidebar">Trzymaj karty w panelu bocznym na tabletach</string>
+    <string name="dejavu_feature_floating_search">Wyszukiwanie unosi się nad stroną na tabletach</string>
+    <string name="dejavu_feature_settings_panes">Przeglądaj ustawienia w dwóch panelach na tabletach</string>
+    <string name="dejavu_feature_search_keywords">Szukaj w dowolnej wyszukiwarce z @ lub słowem kluczowym</string>
 </resources>

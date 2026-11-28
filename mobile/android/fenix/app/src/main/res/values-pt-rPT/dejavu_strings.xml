@@ -675,4 +675,11 @@
     <string name="dejavu_shortcut_reload">Recarregar página</string>
     <string name="dejavu_shortcut_tab_n">Ir para o separador %1$d</string>
     <string name="dejavu_shortcut_last_tab">Ir para o último separador</string>
+    <string name="dejavu_feature_page_history">Toca no número de páginas para voltar a qualquer página</string>
+    <string name="dejavu_feature_restore_tab">Reabre separadores fechados a partir do menu</string>
+    <string name="dejavu_feature_sidebery">Importa e exporta separadores com o Sidebery</string>
+    <string name="dejavu_feature_tab_sidebar">Mantém os teus separadores numa barra lateral em tablets</string>
+    <string name="dejavu_feature_floating_search">A pesquisa flutua sobre a página em tablets</string>
+    <string name="dejavu_feature_settings_panes">Vê as definições em dois painéis em tablets</string>
+    <string name="dejavu_feature_search_keywords">Pesquisa em qualquer motor com @ ou uma palavra-chave</string>
 </resources>

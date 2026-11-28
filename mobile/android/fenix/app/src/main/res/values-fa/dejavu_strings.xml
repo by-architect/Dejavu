@@ -667,4 +667,11 @@
     <string name="dejavu_shortcut_reload">بارگیری دوبارهٔ صفحه</string>
     <string name="dejavu_shortcut_tab_n">رفتن به زبانهٔ %1$d</string>
     <string name="dejavu_shortcut_last_tab">رفتن به آخرین زبانه</string>
+    <string name="dejavu_feature_page_history">روی شمار صفحه‌ها ضربه بزنید تا به هر صفحه‌ای برگردید</string>
+    <string name="dejavu_feature_restore_tab">زبانه‌های بسته‌شده را از منو دوباره باز کنید</string>
+    <string name="dejavu_feature_sidebery">زبانه‌ها را با Sidebery وارد و صادر کنید</string>
+    <string name="dejavu_feature_tab_sidebar">در تبلت، زبانه‌هایتان را در نوار کناری نگه دارید</string>
+    <string name="dejavu_feature_floating_search">در تبلت، جست‌وجو روی صفحه شناور می‌شود</string>
+    <string name="dejavu_feature_settings_panes">در تبلت، تنظیمات را در دو ستون ببینید</string>
+    <string name="dejavu_feature_search_keywords">با @ یا یک کلیدواژه، از هر موتور جست‌وجویی استفاده کنید</string>
 </resources>

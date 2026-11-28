@@ -667,4 +667,11 @@
     <string name="dejavu_shortcut_reload">Վերաբեռնել էջը</string>
     <string name="dejavu_shortcut_tab_n">Անցնել ներդիր %1$d</string>
     <string name="dejavu_shortcut_last_tab">Անցնել վերջին ներդիր</string>
+    <string name="dejavu_feature_page_history">Հպեք էջերի քանակին՝ ցանկացած էջին վերադառնալու համար</string>
+    <string name="dejavu_feature_restore_tab">Վերաբացեք փակված ներդիրները ցանկից</string>
+    <string name="dejavu_feature_sidebery">Ներմուծեք և արտահանեք ներդիրներ Sidebery-ով</string>
+    <string name="dejavu_feature_tab_sidebar">Պլանշետներում պահեք ձեր ներդիրները կողագոտում</string>
+    <string name="dejavu_feature_floating_search">Պլանշետներում որոնումը լողում է էջի վրա</string>
+    <string name="dejavu_feature_settings_panes">Պլանշետներում տեսեք կարգավորումները երկու վահանակում</string>
+    <string name="dejavu_feature_search_keywords">Որոնեք ցանկացած որոնիչով՝ @ կամ բանալի բառով</string>
 </resources>

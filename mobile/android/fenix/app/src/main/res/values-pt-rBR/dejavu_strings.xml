@@ -675,4 +675,11 @@
     <string name="dejavu_shortcut_reload">Recarregar página</string>
     <string name="dejavu_shortcut_tab_n">Ir para a aba %1$d</string>
     <string name="dejavu_shortcut_last_tab">Ir para a última aba</string>
+    <string name="dejavu_feature_page_history">Toque no número de páginas para voltar a qualquer página</string>
+    <string name="dejavu_feature_restore_tab">Reabra abas fechadas pelo menu</string>
+    <string name="dejavu_feature_sidebery">Importe e exporte abas com o Sidebery</string>
+    <string name="dejavu_feature_tab_sidebar">Mantenha suas abas em uma barra lateral em tablets</string>
+    <string name="dejavu_feature_floating_search">A pesquisa flutua sobre a página em tablets</string>
+    <string name="dejavu_feature_settings_panes">Veja as configurações em dois painéis em tablets</string>
+    <string name="dejavu_feature_search_keywords">Pesquise em qualquer mecanismo com @ ou uma palavra-chave</string>
 </resources>

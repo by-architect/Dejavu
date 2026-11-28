@@ -667,4 +667,11 @@
     <string name="dejavu_shortcut_reload">Ladda om sidan</string>
     <string name="dejavu_shortcut_tab_n">Gå till flik %1$d</string>
     <string name="dejavu_shortcut_last_tab">Gå till sista fliken</string>
+    <string name="dejavu_feature_page_history">Tryck på sidantalet för att gå tillbaka till valfri sida</string>
+    <string name="dejavu_feature_restore_tab">Återöppna stängda flikar från menyn</string>
+    <string name="dejavu_feature_sidebery">Importera och exportera flikar med Sidebery</string>
+    <string name="dejavu_feature_tab_sidebar">Ha dina flikar i ett sidofält på surfplattor</string>
+    <string name="dejavu_feature_floating_search">Sökningen svävar över sidan på surfplattor</string>
+    <string name="dejavu_feature_settings_panes">Se inställningarna i två kolumner på surfplattor</string>
+    <string name="dejavu_feature_search_keywords">Sök i valfri sökmotor med @ eller ett nyckelord</string>
 </resources>

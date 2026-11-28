@@ -667,4 +667,11 @@
     <string name="dejavu_shortcut_reload">ገጹን ዳግም ጫን</string>
     <string name="dejavu_shortcut_tab_n">ወደ ትር %1$d ሂድ</string>
     <string name="dejavu_shortcut_last_tab">ወደ መጨረሻው ትር ሂድ</string>
+    <string name="dejavu_feature_page_history">ወደ ማንኛውም ገጽ ለመመለስ የገጽ ቆጣሪውን ይንኩ</string>
+    <string name="dejavu_feature_restore_tab">የተዘጉ ትሮችን ከምናሌው እንደገና ይክፈቱ</string>
+    <string name="dejavu_feature_sidebery">ትሮችን ከSidebery ጋር ያስመጡ እና ይላኩ</string>
+    <string name="dejavu_feature_tab_sidebar">በታብሌቶች ላይ ትሮችዎን በጎን አሞሌ ውስጥ ያቆዩ</string>
+    <string name="dejavu_feature_floating_search">በታብሌቶች ላይ ፍለጋ ከገጹ በላይ ይንሳፈፋል</string>
+    <string name="dejavu_feature_settings_panes">በታብሌቶች ላይ ቅንብሮችን በሁለት ክፍሎች ይመልከቱ</string>
+    <string name="dejavu_feature_search_keywords">በ@ ወይም በቁልፍ ቃል በማንኛውም ፍርግም ይፈልጉ</string>
 </resources>

@@ -675,4 +675,11 @@
     <string name="dejavu_shortcut_reload">ᱥᱟᱦᱴᱟ ᱫᱩᱦᱲᱟᱹ ᱞᱟᱫᱮ ᱢᱮ</string>
     <string name="dejavu_shortcut_tab_n">ᱴᱮᱵᱽ %1$d ᱛᱮ ᱪᱟᱞᱟᱜ ᱢᱮ</string>
     <string name="dejavu_shortcut_last_tab">ᱢᱩᱪᱟᱹᱫ ᱴᱮᱵᱽ ᱛᱮ ᱪᱟᱞᱟᱜ ᱢᱮ</string>
+    <string name="dejavu_feature_page_history">ᱡᱟᱦᱟᱱ ᱥᱟᱦᱴᱟ ᱛᱮ ᱨᱩᱣᱟᱹᱲ ᱞᱟᱹᱜᱤᱫ ᱥᱟᱦᱴᱟ ᱮᱞ ᱚᱛᱟᱭ ᱢᱮ</string>
+    <string name="dejavu_feature_restore_tab">ᱵᱚᱸᱫ ᱟᱠᱟᱱ ᱴᱮᱵᱽ ᱠᱚ ᱢᱮᱱᱩ ᱠᱷᱚᱱ ᱫᱚᱦᱲᱟ ᱡᱷᱤᱡᱽ ᱢᱮ</string>
+    <string name="dejavu_feature_sidebery">Sidebery ᱢᱮᱫ ᱛᱮ ᱴᱮᱵᱽ ᱠᱚ ᱟᱹᱜᱩ ᱟᱨ ᱤᱫᱤ ᱢᱮ</string>
+    <string name="dejavu_feature_tab_sidebar">ᱴᱮᱵᱞᱮᱴ ᱨᱮ ᱟᱢᱟᱜ ᱴᱮᱵᱽ ᱠᱚ ᱥᱟᱭᱰᱵᱟᱨ ᱨᱮ ᱫᱚᱦᱚ ᱢᱮ</string>
+    <string name="dejavu_feature_floating_search">ᱴᱮᱵᱞᱮᱴ ᱨᱮ ᱥᱮᱸᱫᱽᱨᱟ ᱫᱚ ᱥᱟᱦᱴᱟ ᱪᱮᱛᱟᱱ ᱨᱮ ᱩᱫᱩᱜ ᱦᱩᱭ ᱟ</string>
+    <string name="dejavu_feature_settings_panes">ᱴᱮᱵᱞᱮᱴ ᱨᱮ ᱥᱟᱡᱟᱣ ᱠᱚ ᱵᱟᱨᱭᱟ ᱯᱮᱱᱮᱞ ᱨᱮ ᱧᱮᱞ ᱢᱮ</string>
+    <string name="dejavu_feature_search_keywords">\@ ᱥᱮ ᱠᱤᱣᱟᱨᱰ ᱛᱮ ᱡᱟᱦᱟᱱ ᱤᱧᱡᱤᱱ ᱨᱮ ᱥᱮᱸᱫᱽᱨᱟ ᱢᱮ</string>
 </resources>

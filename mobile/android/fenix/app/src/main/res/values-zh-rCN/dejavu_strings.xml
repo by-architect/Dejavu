@@ -659,4 +659,11 @@
     <string name="dejavu_shortcut_reload">重新载入页面</string>
     <string name="dejavu_shortcut_tab_n">转到标签页 %1$d</string>
     <string name="dejavu_shortcut_last_tab">转到最后一个标签页</string>
+    <string name="dejavu_feature_page_history">点按页数，即可返回任意页面</string>
+    <string name="dejavu_feature_restore_tab">从菜单重新打开已关闭的标签页</string>
+    <string name="dejavu_feature_sidebery">通过 Sidebery 导入和导出标签页</string>
+    <string name="dejavu_feature_tab_sidebar">在平板电脑上将标签页放在侧边栏中</string>
+    <string name="dejavu_feature_floating_search">在平板电脑上，搜索栏悬浮在页面上方</string>
+    <string name="dejavu_feature_settings_panes">在平板电脑上以双栏查看设置</string>
+    <string name="dejavu_feature_search_keywords">使用 @ 或关键词在任意引擎中搜索</string>
 </resources>

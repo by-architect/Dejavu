@@ -667,4 +667,11 @@
     <string name="dejavu_shortcut_reload">Sayfayı yenile</string>
     <string name="dejavu_shortcut_tab_n">%1$d. sekmeye git</string>
     <string name="dejavu_shortcut_last_tab">Son sekmeye git</string>
+    <string name="dejavu_feature_page_history">Herhangi bir sayfaya dönmek için sayfa sayısına dokunun</string>
+    <string name="dejavu_feature_restore_tab">Kapatılan sekmeleri menüden yeniden açın</string>
+    <string name="dejavu_feature_sidebery">Sekmeleri Sidebery ile içe ve dışa aktarın</string>
+    <string name="dejavu_feature_tab_sidebar">Tabletlerde sekmelerinizi kenar çubuğunda tutun</string>
+    <string name="dejavu_feature_floating_search">Tabletlerde arama sayfanın üzerinde süzülür</string>
+    <string name="dejavu_feature_settings_panes">Tabletlerde ayarları iki bölmede görüntüleyin</string>
+    <string name="dejavu_feature_search_keywords">\@ veya anahtar kelimeyle istediğiniz motorda arayın</string>
 </resources>

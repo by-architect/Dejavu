@@ -667,4 +667,11 @@
     <string name="dejavu_shortcut_reload">Ricarrica a pàggina</string>
     <string name="dejavu_shortcut_tab_n">Va â scheda %1$d</string>
     <string name="dejavu_shortcut_last_tab">Va â scheda ùrtima</string>
+    <string name="dejavu_feature_page_history">Tocca u nùmmiru di pàggini pi turnari a qualunqui pàggina</string>
+    <string name="dejavu_feature_restore_tab">Grapi arrè i schedi chiusi dô menù</string>
+    <string name="dejavu_feature_sidebery">Mporta e sporta schedi cu Sidebery</string>
+    <string name="dejavu_feature_tab_sidebar">Teni i tò schedi nta na barra laterali nnê tablet</string>
+    <string name="dejavu_feature_floating_search">A ricerca galleggia supra a pàggina nnê tablet</string>
+    <string name="dejavu_feature_settings_panes">Vidi i mpustazzioni nta dui pannelli nnê tablet</string>
+    <string name="dejavu_feature_search_keywords">Cerca nta qualunqui muturi cu @ o na palora chiavi</string>
 </resources>
