@@ -71,6 +71,33 @@ Builds:
     build: ./build.sh
     ndk: 30.0.16248370
 
+  - versionName: 4.0.2
+    versionCode: 2016220112
+    commit: e538ff12efe64db792a7c104d33955cebc8f231b
+    timeout: 36000
+    sudo:
+      - echo "deb https://deb.debian.org/debian bookworm main" > /etc/apt/sources.list.d/bookworm.list
+      - apt-get update
+      - apt-get install -y -t bookworm openjdk-17-jdk-headless
+      - update-java-alternatives -s java-1.17.0-openjdk-amd64
+      - apt-get install -y cmake make m4 pkg-config python-is-python3 python3-venv
+        tcl gyp ninja-build bzip2 libffi-dev libsqlite3-dev binutils-dev clang lld
+        libssl-dev zlib1g-dev nodejs terser rustup
+    output: 
+      ../srclib/MozFennec/obj/gradle/build/mobile/android/fenix/app/outputs/apk/release/app-*-release-unsigned.apk
+    srclibs:
+      - MozFennec@FIREFOX-ANDROID_159_0_BUILD1
+      - MozAppServices@v159.0.1
+      - MozGlean@v70.2.1
+      - MozGleanAS@v70.0.0
+      - wasi-sdk@wasi-sdk-20
+      - llvm@2d287f51eff2a5fbf84458a33f7fb2493cf67965
+      - llvm_android@9e20ac0b949feedcfe3da791189310f6ebcbc7a8
+      - toolchain-utils@d71e320ab860721f764fe7403588641c8a7bc65d
+    prebuild: ./prebuild.sh $$VERSION$$ $$VERCODE$$
+    build: ./build.sh
+    ndk: 30.0.16248370
+
 MaintainerNotes: |-
   Built like Fennec F-Droid: the Repo is dejavubuild, a fork of relan's fennecbuild, and Firefox comes in as the
   MozFennec srclib at a FIREFOX-ANDROID tag. 2.3.4 and 3.0.0 use FIREFOX-ANDROID_159_0_BUILD1, the 159.0 release build, as
@@ -85,8 +112,12 @@ MaintainerNotes: |-
   Google libraries out of the version catalog. UnifiedPush and Fennec's search engine overlay are not used, so there
   is nothing to scanignore.
 
-  Version code scheme: 2016190000 + major * 10000 + minor * 100 + patch of the Dejavu version, so 2.3.4 is
-  2016210304. arm64-v8a only.
+  Version codes are Dejavu's own (3.0.0 is 2016220003, 4.0.2 is 2016220112), as in its "Version <version>
+  (<code>)" commits. prebuild.sh sets the build's code to the recipe's versionCode. arm64-v8a only.
+
+  Auto-update: each Dejavu release is tagged v<version> in dejavubuild, and the tag carries dejavu-version.txt
+  (versionName and versionCode, written by Dejavu's scripts/make-fdroid-patch.sh). The new build copies the last
+  one, so a release on a new Firefox needs its srclibs updated by hand in a merge request instead.
 
   MozAppServices, Glean versions:
   grep 'VERSION =' build/srclib/MozFennec/mobile/android/android-components/plugins/dependencies/src/main/java/ApplicationServices.kt
@@ -104,7 +135,8 @@ MaintainerNotes: |-
   grep 'NDK_VERSION =' build/srclib/MozFennec/python/mozboot/mozboot/android.py
   grep ndkVersion build/srclib/MozGlean/build.gradle build/srclib/MozAppServices/settings.gradle
 
-AutoUpdateMode: None
-UpdateCheckMode: None
-CurrentVersion: 3.0.0
-CurrentVersionCode: 2016220003
+AutoUpdateMode: Version
+UpdateCheckMode: Tags ^v\d+\.\d+\.\d+$
+UpdateCheckData: dejavu-version.txt|versionCode=(\d+)|dejavu-version.txt|versionName=(.+)
+CurrentVersion: 4.0.2
+CurrentVersionCode: 2016220112
